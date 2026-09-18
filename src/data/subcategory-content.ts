@@ -1559,7 +1559,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     ],
   },
   'drukarki-kart': {
-    updatedAt: '2026-09-04',
+    updatedAt: '2026-09-18',
     sectionHeadings: {
       expertAuthority: 'Pomożemy dobrać drukarkę i materiały',
       technicalDeepDive: 'Co warto wiedzieć o druku i kodowaniu kart',
@@ -1569,13 +1569,14 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     },
     modelComparison: {
       heading: 'Porównaj drukarki kart w naszej ofercie',
-      note: 'Magicard 300 oferujemy w wersji S Duo, a model 600 w wersji Duo. Obie drukują automatycznie po dwóch stronach. Przy Zebrze ZC300 wybierz odpowiedni wariant.',
+      note: 'Magicard 300 oferujemy w wersji S Duo, a model 600 w wersji Duo. Obie drukują automatycznie po dwóch stronach. Przy Zebrze ZC300 i ZC350 wybierz odpowiedni wariant.',
       models: [
         { name: 'Magicard Pronto100', href: '/produkt/magicard-pronto100', printing: 'Jednostronny', feeder: '50 kart', connectivity: 'USB, Ethernet' },
         { name: 'Magicard 300', href: '/produkt/magicard-300', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet' },
         { name: 'Magicard 600 Duo', href: '/produkt/magicard-600-duo', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet, Wi-Fi' },
         { name: 'Zebra ZC100', href: '/produkt/zebra-zc100', printing: 'Jednostronny', feeder: '100 kart', connectivity: 'USB; Ethernet opcjonalnie' },
         { name: 'Zebra ZC300', href: '/produkt/zebra-zc300', printing: 'Jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet; Wi-Fi opcjonalnie' },
+        { name: 'Zebra ZC350', href: '/produkt/zebra-zc350', printing: 'Jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet; Wi-Fi opcjonalnie' },
       ],
     },
     definition: {
@@ -1589,6 +1590,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
         'Do regularnego druku obu stron — Magicard 300 S Duo sam obraca kartę. Na rewersie umieścisz kod, dane kontaktowe lub regulamin. Podajnik mieści 100 kart; producent przewiduje pracę przy nakładach do około 10 000 kart rocznie.',
         'Gdy potrzebujesz Wi-Fi i drobnego tekstu — Magicard 600 Duo ma łączność bezprzewodową w standardzie. Druk czarny do 600 × 300 dpi przydaje się przy małych literach i numerach. Kolorowe zdjęcia drukuje w 300 dpi.',
         'Do kart wymagających kodowania — sprawdź warianty Zebra ZC300 z odpowiednim enkoderem. Sam nadruk na karcie RFID nie zapisuje danych w jej chipie. Konfigurację drukarki trzeba dopasować do kart i systemu, w którym będą używane.',
+        'Do kart trudnych do podrobienia i czytanych z odległości — Zebra ZC350 drukuje taśmami specjalnymi z panelem perłowym, metalicznym lub podwójną warstwą ochronną i może mieć koder RFID UHF oraz obudowę zamykaną na klucz.',
         'Zabezpieczenie identyfikatora — wszystkie trzy modele Magicard mają HoloKote i Digital Shredding. Pronto100 korzysta z gotowych znaków wodnych, a modele 300 i 600 pozwalają używać własnych wzorów.',
       ],
     },
@@ -1630,9 +1632,9 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       ],
     },
     faq: [
-      { question: 'Jakie drukarki kart znajdę w ofercie TAKMA?', answer: 'Mamy pięć modeli: [Magicard Pronto100](/produkt/magicard-pronto100), [Magicard 300 S Duo](/produkt/magicard-300), [Magicard 600 Duo](/produkt/magicard-600-duo), [Zebra ZC100](/produkt/zebra-zc100) i [Zebra ZC300](/produkt/zebra-zc300). Do drukarek dobierzesz też taśmy i materiały do czyszczenia.' },
+      { question: 'Jakie drukarki kart znajdę w ofercie TAKMA?', answer: 'Mamy sześć modeli: [Magicard Pronto100](/produkt/magicard-pronto100), [Magicard 300 S Duo](/produkt/magicard-300), [Magicard 600 Duo](/produkt/magicard-600-duo), [Zebra ZC100](/produkt/zebra-zc100), [Zebra ZC300](/produkt/zebra-zc300) i [Zebra ZC350](/produkt/zebra-zc350). Do drukarek dobierzesz też taśmy i materiały do czyszczenia.' },
       { question: 'Czym różnią się Magicard Pronto100, 300 i 600 Duo?', answer: 'Pronto100 jest mała, drukuje jednostronnie i mieści 50 kart w podajniku. Oferowany Magicard 300 S Duo drukuje obie strony i ma podajnik na 100 kart. Magicard 600 Duo dodaje Wi-Fi w standardzie, druk monochromatyczny do 600 × 300 dpi i większą liczbę własnych wzorów HoloKote.' },
-      { question: 'Które modele drukują po obu stronach?', answer: 'Magicard 300 S Duo i Magicard 600 Duo robią to automatycznie. Zebra ZC300 występuje w wersjach jednostronnych i dwustronnych, więc trzeba wybrać właściwy wariant. Pronto100 i ZC100 są drukarkami jednostronnymi.' },
+      { question: 'Które modele drukują po obu stronach?', answer: 'Magicard 300 S Duo i Magicard 600 Duo robią to automatycznie. Zebra ZC300 i ZC350 występują w wersjach jednostronnych i dwustronnych, więc trzeba wybrać właściwy wariant. Pronto100 i ZC100 są drukarkami jednostronnymi.' },
       { question: 'Ile kosztuje drukarka kart i jej eksploatacja?', answer: 'Aktualne ceny netto znajdziesz przy produktach powyżej. Cena zależy między innymi od druku dwustronnego, łączności i enkodera. Do budżetu dolicz karty, taśmę oraz zestaw czyszczący. Jeśli chcesz porównać koszt gotowej karty, [napisz do nas](/kontakt), jaki nadruk planujesz i ile kart potrzebujesz.' },
       { question: 'Czy drukarka kart PVC zapisuje dane RFID?', answer: 'Tylko jeśli wybrana konfiguracja ma odpowiedni enkoder. Można nadrukować zdjęcie na zgodnej karcie RFID bez zapisywania danych w jej chipie. W ZC300 kodowanie jest opcją zależną od wariantu. Magicard 600 Duo 3652-5021/3 z naszej oferty nie ma enkodera.' },
       { question: 'Co daje HoloKote w drukarce Magicard?', answer: 'To znak wodny widoczny pod kątem, który powstaje podczas zwykłego drukowania. Pronto100 ma wzory gotowe, a Magicard 300 i 600 mogą używać własnych znaków. Do HoloKote nie jest potrzebny osobny laminator.' },

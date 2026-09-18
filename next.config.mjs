@@ -224,7 +224,6 @@ const nextConfig = {
 
       // Produkty 404 → konkretne następcy
       { source: '/produkt/zebra-ds8178', destination: '/produkt/zebra-ds8288', permanent: true },
-      { source: '/produkt/zebra-zc350', destination: '/drukarki-kart', permanent: true },
       { source: '/produkt/zebra-module-wifi-zd421', destination: '/produkt/zebra-zd421t', permanent: true },
       { source: '/produkt/zebra-module-ethernet-zd421', destination: '/produkt/zebra-zd421t', permanent: true },
       { source: '/produkt/honeywell-xenon-ultra-1960g', destination: '/skanery-kodow-kreskowych', permanent: true },

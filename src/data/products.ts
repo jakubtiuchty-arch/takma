@@ -556,7 +556,7 @@ export const subcategories: Subcategory[] = [
     description: 'Taśmy barwiące YMCKO i monochromatyczne do drukarek kart Zebra oraz Magicard',
     seoTitle: 'Taśmy do drukarek kart Zebra i Magicard | YMCKO',
     seoDescription: 'Oryginalne taśmy barwiące do drukarek kart Zebra oraz Magicard Pronto100, 300 i 600. Taśmy YMCKO, YMCKOK i monochromatyczne z warstwą Overlay.',
-    longDescription: 'Taśmy barwiące do drukarek kart plastikowych są niezbędne do druku termosublimacyjnego na kartach PVC. Taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) służy do druku pełnokolorowego ze zdjęciami — panele barwne tworzą obraz, a panel Overlay nakłada przezroczystą warstwę ochronną. W tej kategorii znajdują się taśmy do drukarek Zebra ZC100, ZC300 i ZC350 oraz dedykowane materiały Magicard do modeli Pronto100, 300 i 600.',
+    longDescription: 'Taśmy barwiące do drukarek kart plastikowych są niezbędne do druku termosublimacyjnego na kartach PVC. Taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) służy do druku pełnokolorowego ze zdjęciami — panele barwne tworzą obraz, a panel Overlay nakłada przezroczystą warstwę ochronną. W tej kategorii znajdują się taśmy serii 800300 do drukarek Zebra ZC100 i ZC300 (czarna 800300-301 i taśmy jednokolorowe pasują też do ZC350; kolorowe taśmy YMCKO do ZC350 to seria 800350, dostępna na zamówienie) oraz dedykowane materiały Magicard do modeli Pronto100, 300 i 600.',
     icon: 'tag',
     productIds: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc', 'magicard-md100ymcko-s', 'magicard-md200ymcko-s', 'magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', 'magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', 'magicard-ma1000k-black', 'magicard-ma1000k-white', 'magicard-ma1000k-blue', 'magicard-ma1000k-green', 'magicard-ma1000k-red', 'magicard-ma1000k-silver', 'magicard-ma1000k-gold', 'magicard-ma1000k-scratch'],
     productCount: 29,
@@ -46792,6 +46792,7 @@ Parametry według karty specyfikacji Zebra ZC100 i listy gwarancyjnej Zebra (wrz
         },
         {
           name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
           specs: {
             'Druk': 'Jedno-/dwustronny',
             'Rozdzielczość': '300 dpi',
@@ -46873,7 +46874,7 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
       { name: 'Pamięć', value: '2 GB flash' },
       { name: 'Łączność (standard)', value: 'USB 2.0, Ethernet 10/100' },
       { name: 'Łączność (opcja)', value: 'Wi-Fi 802.11ac (konfiguracje ZC31-000W…, ZC32-000W… na zapytanie)' },
-      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny ISO 7811 HiCo/LoCo; koder zbliżeniowy MIFARE ISO 14443 A/B z gniazdem SAM i opcjonalnym odczytem iCLASS ISO 15693; koder stykowy ISO 7816 (EMV L1); UHF EPC Gen2 na zamówienie' },
+      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny ISO 7811 HiCo/LoCo; koder zbliżeniowy MIFARE ISO 14443 A/B z gniazdem SAM i opcjonalnym odczytem iCLASS ISO 15693; koder stykowy smart card ISO 7816 (EMV L1); UHF EPC Gen2 na zamówienie' },
       { name: 'Zabezpieczenia', value: 'Uwierzytelnianie drukarka–host, szyfrowanie danych' },
       { name: 'Sterowniki', value: 'Windows (w tym Server), macOS, Linux — aktualne wersje na stronie wsparcia Zebra' },
       { name: 'Oprogramowanie', value: 'Zebra CardStudio 2.0 (Classic, Standard, Professional, Enterprise)' },
@@ -46902,7 +46903,7 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
     },
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
     relatedAccessories: ['zebra-cleaning-kit-2-zc', 'zebra-cleaning-kit-5-zc', 'zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
-    relatedProducts: ['zebra-zc100', 'magicard-300', 'magicard-600-duo'],
+    relatedProducts: ['zebra-zc350', 'zebra-zc100', 'magicard-300', 'magicard-600-duo'],
     faq: [
       { question: 'Zebra ZC300 jednostronna czy dwustronna — którą wybrać?', answer: 'Jednostronną ZC31-000C000EM00, jeśli rewers karty zostaje pusty albo ma stały nadruk fabryczny. Dwustronną ZC32-000C000EM00, gdy z tyłu ma być kod kreskowy, regulamin, dane kontaktowe lub drugie zdjęcie. ZC32 drukuje obie strony w jednym przebiegu z prędkością 140 kart/h z taśmą YMCKOK, a jednostronnie tak samo jak ZC31: do 200 kart/h. Różnica w cenie to koszt modułu odwracania karty.' },
       { question: 'Jakie kodowanie kart obsługuje ZC300?', answer: 'Trzy rodzaje koderów, każdy w osobnej konfiguracji. Magnetyczny (ZC31-0M0C000EM00, ZC32-0M0C000EM00) zapisuje ścieżki 1–3 HiCo i LoCo według ISO 7811. Zbliżeniowy MIFARE ISO 14443 A/B pracuje z kartami [MIFARE Classic](/produkt/karta-mifare-1k-iso-mfrc1) i [DESFire](/produkt/karta-desfire-ev1-2k-iso-mdev12), ma gniazdo SAM i opcjonalny odczyt iCLASS ISO 15693; stykowy ISO 7816 ma certyfikat EMV L1. Kart 125 kHz (Unique, HID Prox) drukarka nie koduje, ale zadrukuje [karty dualne z drugim chipem](/produkt/karta-dualna-unique-mifare-1k-unq-mfrc1). Konfiguracje z koderem MIFARE i stykowym wyceniamy na zapytanie.' },
@@ -46913,7 +46914,7 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
       { question: 'Jakie taśmy pasują do ZC300?', answer: 'Taśmy Zebra serii 800300, wspólne z ZC100: kolorowa YMCKO na [200 wydruków (800300-250EM)](/produkt/zebra-tasma-ymcko-zc100-zc300) lub [300 wydruków (800300-255EM)](/produkt/zebra-tasma-ymcko-300-zc100-zc300), dwustronna [YMCKOK na 200 kart (800300-360EM)](/produkt/zebra-tasma-ymckok-zc100-zc300), [czarna mono K na 1 500 wydruków (800300-301)](/produkt/zebra-tasma-czarna-zc100-zc300), [biała (800300-309EM)](/produkt/zebra-tasma-biala-zc100-zc300) oraz KdO, KrO, półpanelowa i jednokolorowe. Pełną listę znajdziesz w sekcji „Taśmy do drukarek kart” poniżej.' },
       { question: 'Jakie sterowniki i systemy obsługuje ZC300?', answer: 'Zebra udostępnia sterowniki dla Windows (także wersji Server), macOS i Linux oraz program [CardStudio 2.0](/produkt/zebra-cardstudio). Pobierzesz je ze [strony wsparcia Zebra dla ZC300](https://www.zebra.com/pl/pl/support-downloads/printers/card/zc300.html). Po podłączeniu kablem USB lub do sieci Ethernet wkładasz kasetę z taśmą, ładujesz karty i drukujesz kartę testową; wyświetlacz LCD pokazuje adres IP i stan materiałów. Obsługę krok po kroku opisuje [instrukcja ZC300 po polsku](https://www.serwis-zebry.pl/instrukcje/zebra-zc300/instrukcja-po-polsku).' },
       { question: 'Jaka jest gwarancja na Zebra ZC300?', answer: 'Producent udziela 3 lat gwarancji na drukarkę i głowicę drukującą (lista gwarancyjna Zebra dla ZC100, ZC150 i ZC300). Serwis pogwarancyjny drukarek kart Zebra prowadzi nasz warsztat: [serwis drukarki kart Zebra ZC100/ZC300](https://www.serwis-zebry.pl/blog/serwis-drukarki-kart-zebra-zc100-zc300-diagnostyka-naprawa). Do bieżącej konserwacji służy [zestaw czyszczący ZC100/ZC300](/produkt/zebra-zestaw-czyszczacy-2-karty-zc100-zc300).' },
-      { question: 'Czym różni się ZC300 od ZC350?', answer: 'ZC350 to wyższy model tej samej serii: drukuje do 225 kart/h, obsługuje taśmy specjalne (holograficzne, perłowe, zdrapki) i może mieć koder UHF. ZC350 nie ma obecnie w naszym katalogu; jeśli potrzebujesz taśm specjalnych albo kodowania UHF, napisz przez „Zapytaj o produkt”, a sprawdzimy dostępność.' },
+      { question: 'Czym różni się ZC300 od ZC350?', answer: '[Zebra ZC350](/produkt/zebra-zc350) to wyższy model tej samej serii: drukuje do 225 kart/h, przyjmuje taśmy specjalne serii 800350 (perłową, metaliczną i z podwójną warstwą ochronną), może mieć koder RFID UHF i obudowę zamykaną na klucz. Jeśli karty mają być trudne do podrobienia albo czytane z odległości, wybierz ZC350; do standardowych identyfikatorów wystarczy ZC300, który używa tańszych taśm 800300.' },
       { question: 'Jakie są alternatywy dla Zebra ZC300?', answer: 'Tańszą jednostronną alternatywą jest [Zebra ZC100](/produkt/zebra-zc100). Wśród drukarek dwustronnych masz [Magicard 300](/produkt/magicard-300) i szybszą [Magicard 600 Duo](/produkt/magicard-600-duo) z własnym znakiem wodnym HoloKote. Wszystkie te modele znajdziesz też w sekcji „Podobne drukarki” poniżej.' },
     ],
     comparison: {
@@ -46955,6 +46956,18 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
             'Gwarancja': '3 lata',
           },
         },
+        {
+          name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
+          specs: {
+            'Druk': 'Jedno-/dwustronny',
+            'Prędkość (YMCKO)': '225 kart/h',
+            'Wyświetlacz': 'Kolorowy LCD',
+            'Kodowanie': 'Magnetyczny; MIFARE, stykowy i UHF (opcje)',
+            'Łączność': 'USB, Ethernet; Wi-Fi (opcja)',
+            'Gwarancja': '3 lata',
+          },
+        },
       ],
     },
     downloads: [
@@ -46966,85 +46979,107 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
     updatedAt: '2026-09-18',
     sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc300-series.html',
   },
-  // --- ZC350: zakomentowany — brak w Ingram, odkomentować po podłączeniu drugiego dystrybutora ---
-  /*{
+  {
     id: 'zebra-zc350',
     slug: 'zebra-zc350',
     name: 'Zebra ZC350',
-    shortDescription: 'Zebra ZC350 — zaawansowana drukarka kart plastikowych, taśmy specialty (UV/holo/3D), RFID UHF, 225 kart/h, 3 lata gwarancji',
-    seoTitle: 'Drukarka kart Zebra ZC350 — retransferowa UV hologram',
-    seoDescription: 'Zebra ZC350 (ZC35) — drukarka kart retransferowa z UV i hologramem, RFID UHF. ZC350 Zebra: 225 kart/h, 300 dpi, zabezpieczenia, 3 lata gwarancji. ZC35-000C000EM00.',
-    description: `Dla kogo? Zebra ZC350 to zaawansowana drukarka kart plastikowych dla organizacji wymagających rozszerzonych opcji bezpieczeństwa i personalizacji — idealna do kart RFID UHF (np. kontrola dostępu na dużą odległość), kart wielowarstwowych z zabezpieczeniami UV/holograficznymi i kart inteligentnych z jednoczesnym kodowaniem wielu technologii.
+    shortDescription: 'Zebra ZC350 — drukarka kart plastikowych jedno- lub dwustronna, 300 dpi, taśmy specjalne z zabezpieczeniami, kodery magnetyczny, MIFARE, stykowy i RFID UHF',
+    seoTitle: 'Drukarka kart Zebra ZC350 — taśmy specjalne, kodowanie UHF',
+    seoDescription: 'Drukarka kart Zebra ZC350: do 225 kart/h, jednostronna ZC35 lub dwustronna ZC36, taśmy z zabezpieczeniami, kodery magnetyczny, MIFARE, UHF. PN: ZC35-000C000EM00, ZC36-000C000EM00.',
+    description: `Zebra ZC350 to najwyższy model serii ZC: drukarka kart plastikowych dla firm i instytucji, które chcą drukować identyfikatory trudne do podrobienia, kodować karty w kilku technologiach naraz i mieć drukarkę bezpieczną w miejscu dostępnym dla klientów. Ma to samo wąskie nadwozie i kolorowy wyświetlacz co ZC300, ale drukuje szybciej, przyjmuje taśmy specjalne serii 800350 i może mieć koder RFID UHF oraz zamykaną obudowę.
 
-Drukuje pełnokolorowe karty PVC CR-80 w technologii termosublimacyjnej z rozdzielczością 300 dpi. Dostępna w wersji jednostronnej (ZC35-xxx) i dwustronnej (ZC36-xxx). Prędkość: 225 kart/h kolorowo YMCKO (jednostronnie) lub do 1 000 kart/h monochromatycznie — o 12% szybciej niż ZC300. Podajnik na 100 kart, odbiornik na 100 kart. Obsługuje karty o grubości 0,25–1,27 mm (10–50 mil).
+## Zebra ZC350 w liczbach
 
-Kluczowa przewaga ZC350 nad ZC300: obsługa taśm specialty — UV fluorescencyjnych (weryfikacja autentyczności lampą UV), holograficznych YMCKLL (zabezpieczenie przed kopiowaniem), pearlescent YMCPKO (zmiana koloru pod kątem), scratch-off SDYMCKO (karty zdrapki) i półpanelowych 1/2 YMCKO (400 kart z rolki). Dzięki temu ZC350 drukuje karty o podwyższonym poziomie bezpieczeństwa w jednym przejściu — bez dodatkowej laminatorki.
+Druk termosublimacyjny i termotransferowy w rozdzielczości 300 dpi (11,8 pkt/mm) na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm. Do 225 kart/h w kolorze YMCKO jednostronnie, 150 kart/h dwustronnie z taśmą YMCKOK, do 1 000 kart/h w czerni jednostronnie i 500 kart/h dwustronnie. Podajnik i odbiornik na 100 kart, w wersji dwustronnej dodatkowo kosz odrzutów na 10 kart. USB 2.0 i Ethernet 10/100 w standardzie, 2 GB pamięci flash. Wersja jednostronna: 258 × 157 × 383 mm (wys. × szer. × gł.), 4,0 kg; dwustronna: 258 × 157 × 468 mm, 4,4 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
 
-Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mifare Classic, DESFire EV1/EV2/EV3, HID iCLASS SE/Prox, NTAG, SEOS), RFID UHF (EPCglobal Gen 2, zasięg odczytu do 6 m), smart card kontaktowy (ISO 7816, EMV Level 1) oraz kombinacje — wszystko w jednym przejściu z drukiem.
+## ZC35 czy ZC36
 
-Łączność: USB 2.0 + Ethernet 10/100 standardowo, Wi-Fi 802.11ac opcjonalnie (P1094879-005). Platforma Link-OS ze zdalnym zarządzaniem przez przeglądarkę, SNMP i SDK. Pamięć: 2 GB flash. Kolorowy wyświetlacz LCD. Wymiary: 157 × 383 × 258 mm (jednostronna), waga 4,0 kg — najsmuklejsza w klasie. Zabezpieczenia: blokada pokrywy, szyfrowanie klasy rządowej, uwierzytelnianie drukarka-host.
+ZC35-000C000EM00 drukuje jednostronnie, ZC36-000C000EM00 ma moduł odwracania karty i zadrukowuje obie strony w jednym przebiegu. Obie mają USB i Ethernet, a wersje z koderem pasków magnetycznych (ZC35-0M0C000EM00, ZC36-0M0C000EM00) zapisują ścieżki ISO 7811 w czasie druku. Konfiguracje z koderem zbliżeniowym MIFARE i stykowym, z koderem RFID UHF oraz z modułem Wi-Fi 802.11ac wyceniamy na zapytanie. Kodery są opcjami montowanymi także u klienta, więc drukarkę kupioną bez kodera można rozbudować później.
 
-Gwarancja producenta: 3 lata drukarka + głowica (EMEA). Pełna kompatybilność z taśmami Zebra serii ZC350 (800350-xxx) i kartami PVC Zebra. Oprogramowanie: Zebra CardStudio 2.0 w wersjach od Classic do Enterprise.
+## Taśmy specjalne serii 800350
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+ZC350 rozpoznaje taśmę po chipie w kasecie i pracuje z serią 800350. Kolorowe taśmy YMCKO, YMCKOK i KdO z serii 800300 (ZC100 i ZC300) nie pasują; czarna taśma 800300-301 oraz taśmy jednokolorowe (czerwona, niebieska, złota, srebrna) są wspólne dla całej serii ZC. Podstawowe taśmy ZC350: YMCKO na 200 kart (800350-250EM), YMCKOK na 200 kart dwustronnych (800350-360EM), KdO na 700 kart (800350-370EM), półpanelowa YMCKO na 400 kart i biała na 1 500 kart (800350-309EM). Taśmy specjalne: YMCKLL z podwójną warstwą ochronną, która według Zebry chroni nadruk przez 3–5 lat i pozwala nanieść znak wodny widoczny pod kątem lub w świetle UV; YMCPKO z panelem perłowym, który zmienia kolor pod kątem i utrudnia podrobienie karty; SrDYMCKO ze srebrnym panelem metalicznym do napisów i logo z efektem trójwymiarowym. Dostępność taśm specjalnych zależy od regionu, dlatego sprawdzamy ją przed zamówieniem.
+
+## Kodowanie kart
+
+Koder magnetyczny zapisuje ścieżki 1–3 w standardzie HiCo i LoCo według ISO 7811, w drukarce dwustronnej także na pasku z przodu karty. Koder zbliżeniowy MIFARE ISO 14443 A i B (13,56 MHz) ma gniazdo SAM i opcjonalny odczyt kart iCLASS ISO 15693, a koder stykowy ISO 7816 ma certyfikat EMV poziomu 1 i pracuje w standardzie PC/SC. Stacja stykowa ISO 7816 pozwala podłączyć zewnętrzny koder innego producenta, a koder RFID UHF EPC Gen2 obsługuje karty czytane z odległości, na przykład na parkingach i bramach. Kart 125 kHz (Unique, HID Prox) drukarka nie koduje; do takich systemów zadrukujesz karty dualne z drugim chipem.
+
+## Zabezpieczenia i obsługa
+
+Drukarka uwierzytelnia komputer, z którego przychodzi zlecenie, i szyfruje dane algorytmem AES, więc numer konta czy dane osobowe nie trafiają do nieautoryzowanej aplikacji. Gniazdo Kensington jest w standardzie, a opcjonalna obudowa zamykana na klucz chroni czyste i odrzucone karty w miejscach ogólnodostępnych. Kolorowy wyświetlacz LCD pokazuje animacje i komunikaty także po polsku, a diody przy szczelinie prowadzą podawanie ręczne karty krok po kroku.
+
+## Co jest potrzebne do pierwszego wydruku
+
+Taśma serii 800350, karty PVC i program do projektowania, na przykład Zebra CardStudio 2.0. Sterowniki dla Windows, macOS i Linux pobierzesz ze strony wsparcia Zebra, do której link znajdziesz w sekcji „Pliki do pobrania”. Obsługę ZC350 opisaliśmy po polsku w instrukcji na serwis-zebry.pl, a serwis drukarek kart Zebra prowadzi nasz warsztat.
+
+Parametry według karty specyfikacji Zebra ZC350 i listy gwarancyjnej Zebra (wrzesień 2026).`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
-    images: [],
+    priceFrom: 4312.23,
+    images: ['/images/products/zc350_1.png', '/images/products/zc350_2.png', '/images/products/zc350_3.png'],
+    imageDescriptions: [
+      'Zebra ZC350 — czarna drukarka kart z kolorowym wyświetlaczem LCD i odbiornikiem kart, ujęcie pod kątem od prawej',
+      'Zebra ZC350 — front z wyświetlaczem LCD, podajnikiem i odbiornikiem kart, ujęcie od lewej',
+      'Zebra ZC350 — widok z przodu, wyświetlacz LCD z komunikatem gotowości, diody stanu i przezroczyste podajniki',
+    ],
     tags: ['retail', 'healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
-      { name: 'Metoda druku', value: 'Termosublimacja (dye-sublimation)' },
-      { name: 'Rozdzielczość', value: '300 dpi (11,8 dot/mm)' },
-      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny (ZC35) / Dwustronny (ZC36)' },
-      { name: 'Prędkość druku (YMCKO)', value: '225 kart/h jednostronnie, 150 kart/h dwustronnie' },
-      { name: 'Prędkość druku (mono K)', value: 'Do 1 000 kart/h jednostronnie, 500 kart/h dwustronnie' },
-      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm), CR-79, ISO 7810 ID-1' },
-      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil)' },
-      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm) — automatyczne dostosowanie grubości' },
-      { name: 'Pojemność odbiornika', value: '100 kart — drzwiczki saloon' },
-      { name: 'Podajnik ręczny', value: 'Tak (manual feed slot)' },
-      { name: 'Taśmy specialty', value: 'YMCKLL (holograficzna), YMCPKO (pearlescent), SDYMCKO (3D), 1/2 YMCKO (400 kart)' },
-      { name: 'Wyświetlacz', value: 'Kolorowy LCD graficzny' },
+      { name: 'Metoda druku', value: 'Termosublimacja i termotransfer bezpośrednio na karcie' },
+      { name: 'Rozdzielczość', value: '300 dpi (11,8 pkt/mm)' },
+      { name: 'Druk jedno-/dwustronny', value: 'Jednostronny (ZC35) lub dwustronny (ZC36)' },
+      { name: 'Prędkość druku (YMCKO)', value: 'do 225 kart/h jednostronnie, 150 kart/h dwustronnie (YMCKOK)' },
+      { name: 'Prędkość druku (mono K)', value: 'do 1 000 kart/h jednostronnie, 500 kart/h dwustronnie' },
+      { name: 'Wyświetlacz', value: 'Kolorowy graficzny LCD z animacjami i komunikatami, także po polsku' },
+      { name: 'Taśmy', value: 'Seria 800350: YMCKO, YMCKOK, ½ YMCKO, KdO, KrO, biała; specjalne YMCKLL (podwójna warstwa ochronna), YMCPKO (perłowa), SrDYMCKO (metaliczna); czarna 800300-301 i jednokolorowe wspólne z ZC100/ZC300' },
+      { name: 'Format karty', value: 'CR-80 (85,6 × 54 mm) ISO 7810 ID-1, CR-79' },
+      { name: 'Grubość karty', value: '0,25–1,02 mm (10–40 mil); kodery dla kart 0,76 mm' },
+      { name: 'Materiał kart', value: 'PVC i kompozyt PVC, także karty samoprzylepne' },
+      { name: 'Pojemność podajnika', value: '100 kart (0,76 mm), automatyczna regulacja' },
+      { name: 'Pojemność odbiornika', value: '100 kart (0,76 mm); wersja dwustronna dodatkowo kosz odrzutów na 10 kart' },
       { name: 'Pamięć', value: '2 GB flash' },
-      { name: 'Łączność (standard)', value: 'USB 2.0 + Ethernet 10/100' },
-      { name: 'Łączność (opcja)', value: 'Wi-Fi 802.11ac (P1094879-005)' },
-      { name: 'Kodowanie (opcja)', value: 'Magnetyczny HiCo/LoCo; RFID/NFC (Mifare, DESFire, HID, NTAG); RFID UHF (EPCglobal Gen 2); Smart Card ISO 7816' },
-      { name: 'Zabezpieczenia', value: 'Blokada pokrywy, szyfrowanie klasy rządowej, uwierzytelnianie drukarka-host' },
-      { name: 'Oprogramowanie', value: 'Zebra CardStudio (wersje od Classic do Enterprise)' },
-      { name: 'Zarządzanie', value: 'Link-OS, przeglądarka www, SNMP, SDK' },
-      { name: 'Wymiary jedno. (szer.×gł.×wys.)', value: '157 × 383 × 258 mm' },
-      { name: 'Wymiary dwustr. (szer.×gł.×wys.)', value: '157 × 468 × 258 mm' },
-      { name: 'Waga', value: '4,0 kg (jedn.) / 4,4 kg (dwustr.)' },
-      { name: 'Zasilanie', value: '100 W' },
-      { name: 'Temp. pracy', value: '15–35°C, wilgotność 20–80%' },
-      { name: 'Gwarancja', value: '3 lata drukarka + głowica (EMEA)' },
+      { name: 'Łączność (standard)', value: 'USB 2.0, Ethernet 10/100' },
+      { name: 'Łączność (opcja)', value: 'Wi-Fi 802.11ac (konfiguracje na zapytanie)' },
+      { name: 'Kodowanie (opcja)', value: 'Pasek magnetyczny ISO 7811 HiCo/LoCo; koder zbliżeniowy MIFARE ISO 14443 A/B z gniazdem SAM i odczytem iCLASS ISO 15693; koder stykowy smart card ISO 7816 (EMV L1, PC/SC); stacja stykowa dla koderów zewnętrznych; RFID UHF EPC Gen2; opcje montowane także u klienta' },
+      { name: 'Zabezpieczenia', value: 'Uwierzytelnianie drukarka–host, szyfrowanie danych AES, gniazdo Kensington, opcjonalna obudowa zamykana na klucz' },
+      { name: 'Sterowniki', value: 'Windows (w tym Server), macOS, Linux — aktualne wersje na stronie wsparcia Zebra' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio 2.0 (Classic, Standard, Professional, Enterprise)' },
+      { name: 'Wymiary jednostronna (wys.×szer.×gł.)', value: '258 × 157 × 383 mm' },
+      { name: 'Wymiary dwustronna (wys.×szer.×gł.)', value: '258 × 157 × 468 mm' },
+      { name: 'Waga', value: '4,0 kg (jednostronna), 4,4 kg (dwustronna)' },
+      { name: 'Zasilanie', value: '90–132 V i 190–264 V AC, 47–63 Hz, przełączanie automatyczne' },
+      { name: 'Temperatura pracy', value: '15–35 °C, wilgotność 20–80 % bez kondensacji' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę i głowicę drukującą' },
     ],
-    applications: ['Karty RFID UHF do kontroli dostępu na dużą odległość', 'Identyfikatory z zabezpieczeniami UV/holograficznymi', 'Karty dostępu wielotechnologiczne (Mag+RFID+SC)', 'E-legitymacje z chipem kontaktowym i zbliżeniowym', 'Karty hotelowe z kodowaniem magnetycznym', 'Karty lojalnościowe z elementami scratch-off', 'Przepustki parkingowe z RFID UHF'],
+    applications: ['Identyfikatory z zabezpieczeniami przed kopiowaniem', 'Karty dostępu z kodowaniem MIFARE, stykowym lub UHF', 'Legitymacje szkolne i studenckie', 'Karty członkowskie i lojalnościowe z efektem metalicznym', 'Karty hotelowe i przepustki parkingowe', 'Karty finansowe i prepaid (koder stykowy EMV L1)'],
     variants: [
-      { partNumber: 'ZC35-000C000EM00', name: 'ZC350 jednostronna', availability: 'on-order', attributes: {} },
-      { partNumber: 'ZC36-000C000EM00', name: 'ZC350 dwustronna', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak' } },
-      { partNumber: 'ZC35-0M0C000EM00', name: 'ZC350 jednostr. + Mag', availability: 'on-order', attributes: { 'Koder magnetyczny': 'Tak' } },
-      { partNumber: 'ZC35-F00C000EM00', name: 'ZC350 jednostr. + RFID/NFC', availability: 'on-order', attributes: { 'Koder RFID/NFC': 'Tak' } },
-      { partNumber: 'ZC36-0M0C000EM00', name: 'ZC350 dwustr. + Mag', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
-      { partNumber: 'ZC35-000W000EM00', name: 'ZC350 jednostr. + Wi-Fi', availability: 'on-order', attributes: { 'Wi-Fi': 'Tak' } },
-      { partNumber: 'ZC35-FM0C000EM00', name: 'ZC350 jednostr. + Mag + RFID/SC', availability: 'on-order', attributes: { 'Koder magnetyczny': 'Tak', 'Koder RFID/Smart Card': 'Tak' } },
-      { partNumber: 'ZC36-FM0C000EM00', name: 'ZC350 dwustr. + Mag + RFID UHF', availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak', 'RFID UHF': 'Tak' } },
+      { partNumber: 'ZC35-000C000EM00', name: 'ZC350 jednostronna', priceFrom: 4312.23, availability: 'available', gtin13: '8596375175037', attributes: {} },
+      { partNumber: 'ZC35-0M0C000EM00', name: 'ZC350 jednostronna + koder magnetyczny', priceFrom: 5161.62, availability: 'unavailable', gtin13: '8596375175044', attributes: { 'Koder magnetyczny': 'Tak' } },
+      { partNumber: 'ZC36-000C000EM00', name: 'ZC350 dwustronna', priceFrom: 5488.29, availability: 'available', gtin13: '8596375175068', attributes: { 'Druk dwustronny': 'Tak' } },
+      { partNumber: 'ZC36-0M0C000EM00', name: 'ZC350 dwustronna + koder magnetyczny', priceFrom: 6337.67, availability: 'on-order', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
     ],
-    compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
+    variantAttributeTooltips: {
+      'Druk dwustronny': 'Moduł odwracania karty (ZC36). Awers i rewers w jednym przebiegu, np. zdjęcie z przodu, kod kreskowy i regulamin z tyłu.\n\nDo druku obu stron w kolorze użyj taśmy YMCKOK 800350-360EM. Wersja dwustronna ma też kosz odrzutów na 10 kart.',
+      'Koder magnetyczny': 'Koder pasków magnetycznych ISO 7811, HiCo i LoCo, ścieżki 1–3. Zapisuje dane w czasie druku, w drukarce dwustronnej także na pasku z przodu karty.\n\nTylko karty 0,76 mm z paskiem magnetycznym.',
+    },
+    compatibleAccessories: ['zebra-ribbon-black-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
     relatedAccessories: ['zebra-cleaning-kit-2-zc', 'zebra-cleaning-kit-5-zc', 'zebra-cards-premier-025', 'zebra-cards-premier-076', 'zebra-cardstudio', 'acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
+    relatedProducts: ['zebra-zc300', 'magicard-600-duo', 'zebra-zc100'],
     faq: [
-      { question: 'Czym różni się ZC350 od ZC300?', answer: 'ZC350 obsługuje taśmy specialty (UV fluorescencyjne, holograficzne, scratch-off) do kart z zabezpieczeniami. Dodatkowo ZC350 oferuje kodowanie RFID UHF (EPC Gen2, zasięg do 6 m) — niedostępne w ZC300. Pod względem prędkości druku, rozdzielczości i formy fizycznej oba modele są identyczne.' },
-      { question: 'Do czego potrzebuję taśm specialty?', answer: 'Taśmy UV fluorescencyjne — weryfikacja autentyczności karty pod lampą UV (kontrola na wejściu, karty rządowe). Taśmy holograficzne — zabezpieczenie karty przed kopiowaniem (karty do data center, strefy restricted). Scratch-off — karty zdrapki z ukrytym kodem (karty podarunkowe, PIN-y).' },
-      { question: 'Czy ZC350 obsługuje RFID UHF?', answer: 'Tak. Warianty ZC35-FM0C000EM00 (jednostronny) i ZC36-FM0C000EM00 (dwustronny) mają wbudowany enkoder RFID UHF (EPC Gen2). Zasięg odczytu tagu UHF: do 6 m. Idealne do kontroli dostępu pojazdów, identyfikacji na odległość i logistyki.' },
-      { question: 'Ile kosztuje wydruk jednej karty na ZC350?', answer: 'Druk kolorowy YMCKO jednostronny: ok. 1,23 zł/karta (identycznie jak ZC300). Taśmy specialty (UV, holograficzne): ok. 2–3 zł/karta dodatkowo. Monochromatyczny: ok. 0,55 zł/karta. Plus koszt karty PVC blank: 0,50–15 zł (w zależności od typu — czysta vs RFID UHF).' },
-      { question: 'Jakie technologie RFID obsługuje ZC350?', answer: 'HF/NFC 13,56 MHz: Mifare Classic 1K/4K, DESFire EV1/EV2/EV3, NTAG 213/215/216, HID iCLASS SE, HID Prox (125 kHz), SEOS. UHF 860–960 MHz: EPC Gen2 / ISO 18000-6C. Smart Card kontaktowy: ISO 7816. Wszystko w jednym przejściu z drukiem.' },
-      { question: 'Czy mogę drukować karty z hologramem na ZC350?', answer: 'Tak. ZC350 obsługuje taśmy holograficzne Zebra YMCKLL (seria 800350-xxx) — druk hologramu bezpośrednio na karcie w jednym przejściu razem z kolorem YMCKO. Nie trzeba osobnej laminatorki — ZC350 nanosi hologram w tym samym cyklu druku. Zabezpieczenie przed fałszerstwem na poziomie klasy bankowej.' },
-      { question: 'Jaka jest gwarancja na Zebra ZC350?', answer: '3 lata gwarancji producenta na drukarkę i głowicę drukującą (EMEA), tak samo jak w ZC100 i ZC300. Dodatkowo: blokada pokrywy, szyfrowanie klasy rządowej i uwierzytelnianie drukarka-host zapewniają bezpieczeństwo fizyczne i cyfrowe.' },
-      { question: 'Co zawiera wariant z zestawem startowym?', answer: 'Wariant ZC35-0M0C000EM00 (wybrany domyślnie na BCMarket) zawiera drukarkę z koderem magnetycznym. Zestaw startowy z taśmą YMCKO i kartami PVC dostępny osobno — skontaktuj się z TAKMA po wycenę pakietu.' },
-      { question: 'Jakie są alternatywy dla Zebra ZC350?', answer: 'W klasie drukarek z taśmami specialty i RFID UHF: HID Fargo DTC5500LMX (od ok. 12 000 zł), Evolis Avansia (retransfer, od ok. 15 000 zł), Matica XID8600 (od ok. 18 000 zł). ZC350 oferuje najlepszy stosunek ceny do funkcji — taśmy specialty + RFID UHF + Link-OS za ułamek ceny konkurencji.' },
+      { question: 'Czym różni się Zebra ZC350 od ZC300?', answer: 'Obie mają kolorowy LCD, Ethernet w standardzie, wersje jedno- i dwustronne oraz te same kodery: magnetyczny, MIFARE i stykowy. ZC350 drukuje szybciej (225 zamiast 200 kart/h w kolorze), przyjmuje taśmy specjalne serii 800350 z panelem perłowym, metalicznym i podwójną warstwą ochronną, może mieć koder RFID UHF i obudowę zamykaną na klucz. Jeśli identyfikatory mają być trudne do podrobienia albo czytane z odległości, wybierz ZC350; do standardowych kart wystarczy [Zebra ZC300](/produkt/zebra-zc300).' },
+      { question: 'Jakie taśmy pasują do Zebra ZC350?', answer: 'Kolorowe taśmy z serii 800350: YMCKO na 200 kart (800350-250EM), YMCKOK na 200 kart dwustronnych (800350-360EM), KdO na 700 kart (800350-370EM), półpanelowa YMCKO na 400 kart, biała 800350-309EM oraz specjalne YMCKLL, YMCPKO i SrDYMCKO. Kolorowe taśmy 800300 do ZC100 i ZC300 nie pasują, bo drukarka sprawdza chip kasety. Wspólne dla całej serii ZC są za to [czarna taśma 800300-301](/produkt/zebra-tasma-czarna-zc100-zc300) oraz jednokolorowe: [czerwona](/produkt/zebra-tasma-czerwona-zc100-zc300), [niebieska](/produkt/zebra-tasma-niebieska-zc100-zc300), [złota](/produkt/zebra-tasma-zlota-zc100-zc300) i [srebrna](/produkt/zebra-tasma-srebrna-zc100-zc300). Taśmy 800350 sprowadzamy na zamówienie; napisz przez „Zapytaj o produkt”, jaką ilość kart planujesz.' },
+      { question: 'Do czego służą taśmy specjalne ZC350?', answer: 'YMCKLL ma dwa panele warstwy ochronnej: według Zebry nadruk wytrzymuje 3–5 lat, a w warstwie można osadzić znak wodny widoczny pod kątem lub w świetle UV. YMCPKO dodaje panel perłowy, który zmienia kolor w zależności od kąta patrzenia i jest trudny do skopiowania na zwykłej drukarce. SrDYMCKO ma srebrny panel metaliczny do logo, numerów i napisów z efektem trójwymiarowym. Wszystkie nakłada się w jednym przebiegu razem z kolorowym nadrukiem, bez osobnego laminatora.' },
+      { question: 'Jakie kodowanie kart obsługuje ZC350?', answer: 'Cztery technologie, każda jako opcja: pasek magnetyczny ISO 7811 (HiCo i LoCo, ścieżki 1–3), koder zbliżeniowy MIFARE ISO 14443 A/B z gniazdem SAM i odczytem iCLASS ISO 15693, koder stykowy ISO 7816 z certyfikatem EMV poziomu 1 oraz koder RFID UHF EPC Gen2 do kart czytanych z odległości. Jest też stacja stykowa dla koderów zewnętrznych. Kodery można domówić i zamontować po zakupie. Kart 125 kHz (Unique, HID Prox) drukarka nie koduje, ale zadrukuje [karty dualne z drugim chipem](/produkt/karta-dualna-unique-mifare-1k-unq-mfrc1). Na ZC350 zadrukujesz też gotowe karty [MIFARE Classic](/produkt/karta-mifare-1k-iso-mfrc1) i [DESFire](/produkt/karta-desfire-ev1-2k-iso-mdev12).' },
+      { question: 'ZC350 jednostronna czy dwustronna — którą wybrać?', answer: 'Jednostronną ZC35-000C000EM00, gdy rewers zostaje pusty albo ma stały nadruk. Dwustronną ZC36-000C000EM00, gdy z tyłu ma być kod kreskowy, regulamin, dane kontaktowe lub drugi znak wodny; drukuje obie strony w jednym przebiegu z prędkością 150 kart/h z taśmą YMCKOK i ma kosz odrzutów na 10 kart. Wersje z koderem magnetycznym to ZC35-0M0C000EM00 i ZC36-0M0C000EM00.' },
+      { question: 'Czy ZC350 nadaje się do legitymacji i kart dostępu z chipem?', answer: 'Tak. Do legitymacji z danymi po obu stronach wybierz wersję dwustronną, a zabezpieczenie przed podrobieniem daje taśma YMCPKO lub YMCKLL ze znakiem wodnym. Karty z chipem MIFARE lub DESFire zadrukujesz na każdej wersji; zapis danych w chipie wykona konfiguracja z koderem zbliżeniowym albo Twój system kontroli dostępu. Program [CardStudio 2.0](/produkt/zebra-cardstudio) pobierze dane osób z pliku Excel, CSV lub bazy.' },
+      { question: 'Ile kosztuje wydruk jednej karty na ZC350?', answer: 'Policz z wydajności taśmy: YMCKO 800350-250EM daje 200 kolorowych kart, YMCKOK 800350-360EM 200 kart dwustronnych, [czarna 800300-301](/produkt/zebra-tasma-czarna-zc100-zc300) 1 500 kart, a białe karty PVC kupujesz w opakowaniach po [500 sztuk](/produkt/zebra-karty-pcv-premier-076). Przy cenach z września 2026 kolorowa karta jednostronna kosztuje około 1 zł netto, dwustronna około 1,25 zł, a czarno-biała około 0,35 zł. Taśmy specjalne kosztują więcej; ich cenę podajemy przy wycenie.' },
+      { question: 'Jakie sterowniki i systemy obsługuje ZC350?', answer: 'Zebra udostępnia sterowniki dla Windows (także wersji Server), macOS i Linux oraz program [CardStudio 2.0](/produkt/zebra-cardstudio). Pobierzesz je ze [strony wsparcia Zebra dla ZC350](https://www.zebra.com/pl/pl/support-downloads/printers/card/zc350.html). Sterownik Windows pozwala ograniczyć operatorom dostęp do ustawień jakości i konfiguracji, a wyświetlacz LCD prowadzi obsługę po polsku. Obsługę krok po kroku opisuje [instrukcja ZC350 po polsku](https://www.serwis-zebry.pl/instrukcje/zebra-zc350/instrukcja-po-polsku).' },
+      { question: 'Jak zabezpieczyć ZC350 w miejscu dostępnym dla klientów?', answer: 'Drukarka ma w standardzie gniazdo Kensington, uwierzytelnianie hosta (drukuje tylko z autoryzowanego komputera) i szyfrowanie danych AES. Opcjonalna obudowa zamykana na klucz chroni czyste karty w podajniku i karty odrzucone, więc nikt nie wyjmie z niej półproduktów identyfikatorów. Sterownik pozwala zablokować operatorom zmianę ustawień.' },
+      { question: 'Jaka jest gwarancja na Zebra ZC350?', answer: 'Producent udziela 3 lat gwarancji na drukarkę i głowicę drukującą. Serwis pogwarancyjny drukarek kart Zebra prowadzi nasz warsztat, a do bieżącej konserwacji służy [zestaw czyszczący ZC100/ZC300/ZC350](/produkt/zebra-zestaw-czyszczacy-2-karty-zc100-zc300); Zebra zaleca czyszczenie co 1 000 kart.' },
+      { question: 'Jakie są alternatywy dla Zebra ZC350?', answer: 'Do standardowych identyfikatorów bez taśm specjalnych wystarczy [Zebra ZC300](/produkt/zebra-zc300), a do druku jednostronnego [Zebra ZC100](/produkt/zebra-zc100). Jeśli zależy Ci na znaku wodnym bez dodatkowej taśmy, [Magicard 600 Duo](/produkt/magicard-600-duo) nakłada własny znak HoloKote z panelu ochronnego; [Magicard 300](/produkt/magicard-300) robi to w niższej cenie. Wszystkie te modele znajdziesz też w sekcji „Podobne drukarki” poniżej.' },
     ],
     comparison: {
       title: 'Porównanie drukarek kart Zebra',
@@ -47054,10 +47089,12 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           slug: 'zebra-zc100',
           specs: {
             'Druk': 'Jednostronny',
-            'Taśmy specialty': 'Nie',
-            'Kodowanie': 'Magnetyczny',
-            'RFID UHF': 'Nie',
-            'Łączność': 'USB, Ethernet',
+            'Prędkość (YMCKO)': '150 kart/h',
+            'Wyświetlacz': 'Diody LED',
+            'Taśmy specjalne': 'Nie',
+            'Kodowanie': 'Magnetyczny (opcja)',
+            'Łączność': 'USB; Ethernet (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
         {
@@ -47065,10 +47102,12 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           slug: 'zebra-zc300',
           specs: {
             'Druk': 'Jedno-/dwustronny',
-            'Taśmy specialty': 'Nie',
-            'Kodowanie': 'Mag + RFID/NFC + SC',
-            'RFID UHF': 'Nie',
-            'Łączność': 'USB, Ethernet, Wi-Fi',
+            'Prędkość (YMCKO)': '200 kart/h',
+            'Wyświetlacz': 'Kolorowy LCD',
+            'Taśmy specjalne': 'Nie',
+            'Kodowanie': 'Magnetyczny; MIFARE i stykowy (opcje)',
+            'Łączność': 'USB, Ethernet; Wi-Fi (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
         {
@@ -47076,22 +47115,25 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           slug: 'zebra-zc350',
           highlight: true,
           specs: {
-            'Druk': 'Jedno-/dwustronna',
+            'Druk': 'Jedno-/dwustronny',
             'Prędkość (YMCKO)': '225 kart/h',
-            'Taśmy specialty': 'Holo, pearl, 3D, 1/2',
-            'Kodowanie': 'Mag + RFID/NFC + SC + UHF',
-            'Łączność': 'USB, Ethernet, Wi-Fi',
+            'Wyświetlacz': 'Kolorowy LCD',
+            'Taśmy specjalne': 'Perłowa, metaliczna, ochronna',
+            'Kodowanie': 'Magnetyczny; MIFARE, stykowy i UHF (opcje)',
+            'Łączność': 'USB, Ethernet; Wi-Fi (opcja)',
+            'Gwarancja': '3 lata',
           },
         },
       ],
     },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zc350/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Card/zc350/spec-sheets/zc350-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Zebra ZC350 (PL)', type: 'datasheet', url: '/downloads/zebra-zc350-karta-katalogowa-pl.pdf', size: '372 KB' },
+      { name: 'Sterowniki Windows, macOS, Linux i CardStudio — wsparcie Zebra', type: 'driver', url: 'https://www.zebra.com/pl/pl/support-downloads/printers/card/zc350.html', size: 'Online' },
     ],
-    createdAt: '2026-02-14',
-    sameAs: 'https://www.zebra.com/pl/pl/products/printers/card/zc350.html',
-  },*/
+    createdAt: '2026-09-18',
+    sameAs: 'https://www.zebra.com/pl/pl/products/spec-sheets/printers/card/zc350.html',
+  },
 ]
 
 // ============================================
@@ -47568,7 +47610,7 @@ Taśma wystarcza na 600 wydruków. W zestawie znajduje się także rolka czyszcz
     slug: 'zebra-tasma-ymcko-zc100-zc300',
     name: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300',
     shortDescription: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300 — kolorowa taśma barwiąca YMCKO do drukarek kart Zebra ZC100, ZC300, 200 wydruków pełnokolorowych',
-    description: `Oryginalna taśma barwiąca YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) do drukarek kart plastikowych Zebra ZC100 i ZC300. Każda taśma wystarcza na 200 pełnokolorowych wydruków jednostronnych z warstwą ochronną Overlay (UV). Panele YMCK drukują pełnokolorowe zdjęcia, logo i grafikę, a panel O nakłada przezroczystą warstwę chroniącą nadruk przed zarysowaniami, blaknięciem i promieniowaniem UV. Kompatybilna z drukarkami Zebra ZC100 i ZC300/ZC350 (wszystkie warianty). Part Number: 800300-250EM.`,
+    description: `Oryginalna taśma barwiąca YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) do drukarek kart plastikowych Zebra ZC100 i ZC300. Każda taśma wystarcza na 200 pełnokolorowych wydruków jednostronnych z warstwą ochronną Overlay (UV). Panele YMCK drukują pełnokolorowe zdjęcia, logo i grafikę, a panel O nakłada przezroczystą warstwę chroniącą nadruk przed zarysowaniami, blaknięciem i promieniowaniem UV. Kompatybilna z drukarkami Zebra ZC100 i ZC300 (wszystkie warianty). Part Number: 800300-250EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47582,7 +47624,7 @@ Taśma wystarcza na 600 wydruków. W zestawie znajduje się także rolka czyszcz
     specifications: [
       { name: 'Typ taśmy', value: 'YMCKO (Yellow-Magenta-Cyan-blacK-Overlay)' },
       { name: 'Wydajność', value: '200 wydruków (jednostronnych, pełnokolorowych)' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-250EM' },
       { name: 'Warstwa ochronna', value: 'Overlay — ochrona UV, zarysowania' },
     ],
@@ -47590,7 +47632,7 @@ Taśma wystarcza na 600 wydruków. W zestawie znajduje się także rolka czyszcz
     compatibleAccessories: [],
     faq: [
       { question: 'Ile kart wydrukuję na jednej taśmie YMCKO?', answer: '200 pełnokolorowych wydruków jednostronnych. Każdy wydruk zużywa po jednym panelu Y, M, C, K i O — niezależnie od tego, ile kolorów jest na karcie.' },
-      { question: 'Czy taśma YMCKO pasuje zarówno do ZC100, jak i ZC300?', answer: 'Tak. Taśma 800300-250EM jest kompatybilna ze wszystkimi drukarkami Zebra ZC100, ZC300 i ZC350.' },
+      { question: 'Czy taśma YMCKO pasuje zarówno do ZC100, jak i ZC300?', answer: 'Tak. Taśma 800300-250EM jest kompatybilna z drukarkami Zebra ZC100 i ZC300; do ZC350 służy taśma 800350-250EM.' },
     ],
     downloads: [],
     createdAt: '2026-02-14',
@@ -47627,7 +47669,7 @@ Taśma wystarcza na 600 wydruków. W zestawie znajduje się także rolka czyszcz
     slug: 'zebra-tasma-biala-zc100-zc300',
     name: 'Taśma biała Zebra ZC100/ZC300',
     shortDescription: 'Taśma biała Zebra ZC100/ZC300 — biała taśma barwiąca do drukarek kart Zebra ZC100, ZC300, 1500 wydruków na ciemnych kartach',
-    description: `Oryginalna biała taśma barwiąca (W — White) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych. Służy do nadruku białego tekstu, logo i grafiki na ciemnych lub kolorowych kartach PVC. Kompatybilna z drukarkami Zebra ZC100, ZC300, ZC350. Part Number: 800300-309EM.`,
+    description: `Oryginalna biała taśma barwiąca (W — White) do drukarek kart plastikowych Zebra ZC100 i ZC300. Wystarcza na 1 500 wydruków jednostronnych. Służy do nadruku białego tekstu, logo i grafiki na ciemnych lub kolorowych kartach PVC. Kompatybilna z drukarkami Zebra ZC100, ZC300. Part Number: 800300-309EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47641,7 +47683,7 @@ Taśma wystarcza na 600 wydruków. W zestawie znajduje się także rolka czyszcz
     specifications: [
       { name: 'Typ taśmy', value: 'Monochromatyczna biała (W)' },
       { name: 'Wydajność', value: '1 500 wydruków (jednostronnych)' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-309EM' },
     ],
     applications: ['Nadruk na ciemnych/kolorowych kartach', 'Logo w negatywie', 'Karty firmowe z białym tekstem'],
@@ -47657,7 +47699,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-ymcko-300-zc100-zc300',
     name: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300 — 300 wydruków',
     shortDescription: 'Taśma barwiąca YMCKO do drukarek kart Zebra ZC100 i ZC300 — 300 pełnokolorowych wydruków jednostronnych z warstwą ochronną',
-    description: `Oryginalna taśma barwiąca YMCKO do drukarek kart plastikowych Zebra ZC100, ZC300 i ZC350. Wersja na 300 wydruków, czyli o połowę wydajniejsza od podstawowej taśmy 800300-250EM (200 wydruków), przy niższym koszcie jednej karty.\n\nPanele Y, M i C odpowiadają za pełny kolor, panel K drukuje czarny tekst i kody kreskowe, a panel O nakłada przezroczystą warstwę zabezpieczającą nadruk przed zarysowaniem i blaknięciem. Jeden wydruk zużywa komplet paneli niezależnie od tego, ile kolorów znajduje się na karcie.\n\nNumer katalogowy: 800300-255EM.`,
+    description: `Oryginalna taśma barwiąca YMCKO do drukarek kart plastikowych Zebra ZC100 i ZC300. Wersja na 300 wydruków, czyli o połowę wydajniejsza od podstawowej taśmy 800300-250EM (200 wydruków), przy niższym koszcie jednej karty.\n\nPanele Y, M i C odpowiadają za pełny kolor, panel K drukuje czarny tekst i kody kreskowe, a panel O nakłada przezroczystą warstwę zabezpieczającą nadruk przed zarysowaniem i blaknięciem. Jeden wydruk zużywa komplet paneli niezależnie od tego, ile kolorów znajduje się na karcie.\n\nNumer katalogowy: 800300-255EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47671,7 +47713,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: 'YMCKO (Yellow-Magenta-Cyan-blacK-Overlay)' },
       { name: 'Wydajność', value: '300 wydruków jednostronnych' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-255EM' },
       { name: 'Warstwa ochronna', value: 'Overlay — ochrona przed zarysowaniem i UV' },
     ],
@@ -47679,7 +47721,7 @@ const cardPrinterAccessories: Product[] = [
     compatibleAccessories: [],
     faq: [
       { question: 'Czym różni się ta taśma od 800300-250EM?', answer: 'Wyłącznie wydajnością: 300 wydruków zamiast 200. Skład paneli, jakość nadruku i kompatybilność są identyczne. Przy większych nakładach koszt jednej karty wychodzi niżej.' },
-      { question: 'Czy taśma pasuje do ZC100 i ZC300?', answer: 'Tak, obsługują ją wszystkie drukarki serii ZC100, ZC300 i ZC350.' },
+      { question: 'Czy taśma pasuje do ZC100 i ZC300?', answer: 'Tak, obsługują ją wszystkie drukarki serii ZC100 i ZC300.' },
     ],
     downloads: [],
     createdAt: '2026-09-17',
@@ -47689,7 +47731,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-ymcko-multipack-zc100-zc300',
     name: 'Taśma kolorowa YMCKO Zebra ZC100/ZC300 — opakowanie zbiorcze 800 wydruków',
     shortDescription: 'Opakowanie zbiorcze taśm YMCKO do drukarek Zebra ZC100 i ZC300 o łącznej wydajności 800 pełnokolorowych wydruków',
-    description: `Opakowanie zbiorcze oryginalnych taśm YMCKO do drukarek kart Zebra ZC100, ZC300 i ZC350 o łącznej wydajności 800 wydruków jednostronnych. Rozwiązanie dla działów, które drukują karty seriami i chcą ograniczyć liczbę zamówień oraz koszt pojedynczej karty.\n\nSkład paneli jest taki sam jak w pojedynczej taśmie YMCKO: pełny kolor z paneli Y, M i C, czarny tekst z panelu K oraz przezroczysta warstwa ochronna O. Koszt jednego wydruku wychodzi około 0,59 zł netto wobec około 0,69 zł przy taśmie na 200 wydruków.\n\nNumer katalogowy: 800300-254EM.`,
+    description: `Opakowanie zbiorcze oryginalnych taśm YMCKO do drukarek kart Zebra ZC100 i ZC300 o łącznej wydajności 800 wydruków jednostronnych. Rozwiązanie dla działów, które drukują karty seriami i chcą ograniczyć liczbę zamówień oraz koszt pojedynczej karty.\n\nSkład paneli jest taki sam jak w pojedynczej taśmie YMCKO: pełny kolor z paneli Y, M i C, czarny tekst z panelu K oraz przezroczysta warstwa ochronna O. Koszt jednego wydruku wychodzi około 0,59 zł netto wobec około 0,69 zł przy taśmie na 200 wydruków.\n\nNumer katalogowy: 800300-254EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47703,7 +47745,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: 'YMCKO (Yellow-Magenta-Cyan-blacK-Overlay)' },
       { name: 'Wydajność', value: '800 wydruków jednostronnych (opakowanie zbiorcze)' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-254EM' },
       { name: 'Szerokość taśmy', value: '58 mm' },
     ],
@@ -47721,7 +47763,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-ymckok-zc100-zc300',
     name: 'Taśma kolorowa YMCKOK Zebra ZC100/ZC300 — druk dwustronny',
     shortDescription: 'Taśma YMCKOK do drukarek Zebra ZC100 i ZC300 — kolor z jednej strony karty i czarny nadruk z drugiej, 200 wydruków',
-    description: `Oryginalna taśma YMCKOK do drukarek kart Zebra ZC100, ZC300 i ZC350. Drugi panel czarny (K) pozwala zadrukować rewers karty tekstem, kodem kreskowym albo regulaminem bez zużywania pełnego kompletu paneli kolorowych.\n\nTypowe zastosowanie: awers z kolorowym zdjęciem i logo, rewers z czarnym nadrukiem — dane kontaktowe, kod kreskowy, numer seryjny albo klauzula. Taką kartę wydrukuje drukarka z modułem dwustronnym; w ZC100 i jednostronnym ZC300 kartę trzeba odwrócić ręcznie.\n\nNumer katalogowy: 800300-360EM.`,
+    description: `Oryginalna taśma YMCKOK do drukarek kart Zebra ZC100 i ZC300. Drugi panel czarny (K) pozwala zadrukować rewers karty tekstem, kodem kreskowym albo regulaminem bez zużywania pełnego kompletu paneli kolorowych.\n\nTypowe zastosowanie: awers z kolorowym zdjęciem i logo, rewers z czarnym nadrukiem — dane kontaktowe, kod kreskowy, numer seryjny albo klauzula. Taką kartę wydrukuje drukarka z modułem dwustronnym; w ZC100 i jednostronnym ZC300 kartę trzeba odwrócić ręcznie.\n\nNumer katalogowy: 800300-360EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47735,7 +47777,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: 'YMCKOK (kolor + dwa panele czarne)' },
       { name: 'Wydajność', value: '200 wydruków dwustronnych' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-360EM' },
       { name: 'Warstwa ochronna', value: 'Overlay na stronie kolorowej' },
     ],
@@ -47753,7 +47795,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-polpanelowa-ymcko-zc100-zc300',
     name: 'Taśma półpanelowa YMCKO Zebra ZC100/ZC300 — 400 wydruków',
     shortDescription: 'Taśma półpanelowa YMCKO do drukarek Zebra ZC100 i ZC300 — kolor na fragmencie karty, 400 wydruków',
-    description: `Oryginalna taśma półpanelowa (1/2 YMCKO) do drukarek kart Zebra ZC100, ZC300 i ZC350. Panele kolorowe mają połowę długości karty, więc kolor drukowany jest tylko tam, gdzie jest potrzebny — najczęściej na zdjęciu identyfikacyjnym. Reszta karty powstaje z panelu czarnego i warstwy ochronnej.\n\nDzięki temu z jednej taśmy powstaje 400 kart zamiast 200, a koszt wydruku spada o połowę. Rozwiązanie sprawdza się przy kartach z gotowym, zadrukowanym fabrycznie tłem, gdzie zmienne pozostają tylko zdjęcie i dane osobowe.\n\nNumer katalogowy: 800300-370EM.`,
+    description: `Oryginalna taśma półpanelowa (1/2 YMCKO) do drukarek kart Zebra ZC100 i ZC300. Panele kolorowe mają połowę długości karty, więc kolor drukowany jest tylko tam, gdzie jest potrzebny — najczęściej na zdjęciu identyfikacyjnym. Reszta karty powstaje z panelu czarnego i warstwy ochronnej.\n\nDzięki temu z jednej taśmy powstaje 400 kart zamiast 200, a koszt wydruku spada o połowę. Rozwiązanie sprawdza się przy kartach z gotowym, zadrukowanym fabrycznie tłem, gdzie zmienne pozostają tylko zdjęcie i dane osobowe.\n\nNumer katalogowy: 800300-370EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47767,7 +47809,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: '1/2 YMCKO (panele kolorowe o połowie długości karty)' },
       { name: 'Wydajność', value: '400 wydruków jednostronnych' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-370EM' },
       { name: 'Warstwa ochronna', value: 'Overlay na całej karcie' },
     ],
@@ -47785,7 +47827,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-kdo-zc100-zc300',
     name: 'Taśma czarna KdO Zebra ZC100/ZC300 — 700 wydruków',
     shortDescription: 'Taśma monochromatyczna KdO do drukarek Zebra ZC100 i ZC300 — czerń sublimacyjna z warstwą ochronną, 700 wydruków',
-    description: `Oryginalna taśma KdO do drukarek kart Zebra ZC100, ZC300 i ZC350. Panel Kd to czerń w technologii sublimacyjnej, która oddaje odcienie szarości, więc nadaje się do zdjęć czarno-białych i grafiki z płynnym przejściem tonów. Panel O nakłada przezroczystą warstwę ochronną.\n\nTaśma jest rozwiązaniem pośrednim między czernią żywiczną a pełnym kolorem: karta wychodzi tanio, a zdjęcie zachowuje półtony. Wydajność 700 wydruków jednostronnych.\n\nNumer katalogowy: 800300-320EM.`,
+    description: `Oryginalna taśma KdO do drukarek kart Zebra ZC100 i ZC300. Panel Kd to czerń w technologii sublimacyjnej, która oddaje odcienie szarości, więc nadaje się do zdjęć czarno-białych i grafiki z płynnym przejściem tonów. Panel O nakłada przezroczystą warstwę ochronną.\n\nTaśma jest rozwiązaniem pośrednim między czernią żywiczną a pełnym kolorem: karta wychodzi tanio, a zdjęcie zachowuje półtony. Wydajność 700 wydruków jednostronnych.\n\nNumer katalogowy: 800300-320EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47799,7 +47841,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: 'KdO — czerń sublimacyjna z warstwą ochronną' },
       { name: 'Wydajność', value: '700 wydruków jednostronnych' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-320EM' },
       { name: 'Warstwa ochronna', value: 'Overlay' },
     ],
@@ -47817,7 +47859,7 @@ const cardPrinterAccessories: Product[] = [
     slug: 'zebra-tasma-kro-zc100-zc300',
     name: 'Taśma czarna KrO Zebra ZC100/ZC300 — 700 wydruków',
     shortDescription: 'Taśma monochromatyczna KrO do drukarek Zebra ZC100 i ZC300 — czerń żywiczna z warstwą ochronną, 700 wydruków',
-    description: `Oryginalna taśma KrO do drukarek kart Zebra ZC100, ZC300 i ZC350. Panel Kr to czerń żywiczna: nadruk jest ostry, mocno kontrastowy i odporny na ścieranie, dlatego sprawdza się przy kodach kreskowych, drobnym tekście i numerach seryjnych. Panel O dokłada przezroczystą warstwę ochronną.\n\nTaśma przeznaczona jest do kart, które mają być czytane skanerem — czerń żywiczna daje kontrast wymagany przez czytniki kodów. Wydajność 700 wydruków jednostronnych.\n\nNumer katalogowy: 800300-321EM.`,
+    description: `Oryginalna taśma KrO do drukarek kart Zebra ZC100 i ZC300. Panel Kr to czerń żywiczna: nadruk jest ostry, mocno kontrastowy i odporny na ścieranie, dlatego sprawdza się przy kodach kreskowych, drobnym tekście i numerach seryjnych. Panel O dokłada przezroczystą warstwę ochronną.\n\nTaśma przeznaczona jest do kart, które mają być czytane skanerem — czerń żywiczna daje kontrast wymagany przez czytniki kodów. Wydajność 700 wydruków jednostronnych.\n\nNumer katalogowy: 800300-321EM.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-do-drukarek-kart'],
     manufacturerId: 'zebra',
@@ -47831,7 +47873,7 @@ const cardPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Typ taśmy', value: 'KrO — czerń żywiczna z warstwą ochronną' },
       { name: 'Wydajność', value: '700 wydruków jednostronnych' },
-      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300, ZC350' },
+      { name: 'Kompatybilność', value: 'Zebra ZC100, ZC300 (do ZC350 służy seria 800350)' },
       { name: 'Part Number', value: '800300-321EM' },
       { name: 'Warstwa ochronna', value: 'Overlay' },
     ],

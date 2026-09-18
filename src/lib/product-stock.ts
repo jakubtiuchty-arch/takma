@@ -9,7 +9,7 @@ import type { StockInfo } from '@/lib/ingram'
  * do metadanych, JSON-LD (ProductGroup z Offer per PN, brutto) i HTML. Pozostałe produkty
  * nadal używają statycznych priceFrom z products.ts.
  */
-export const LIVE_OFFER_SLUGS = new Set(['zebra-zd421t', 'zebra-zc100', 'zebra-zc300'])
+export const LIVE_OFFER_SLUGS = new Set(['zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350'])
 
 /** Jeden odczyt na render: metadata, JSON-LD i HTML otrzymują ten sam zestaw ofert. */
 export const getProductStock = cache(async (slug: string): Promise<StockInfo[] | undefined> => {
