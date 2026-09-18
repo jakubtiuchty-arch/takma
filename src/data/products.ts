@@ -46680,25 +46680,13 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
     shortDescription: 'Zebra ZC100 — jednostronna drukarka kart plastikowych, kolor i mono, 300 dpi, USB, opcje Ethernet i koder magnetyczny',
     seoTitle: 'Drukarka kart Zebra ZC100 — jednostronna, kolor, 300 dpi',
     seoDescription: 'Drukarka kart Zebra ZC100: kolorowe karty PVC, 300 dpi, do 150 kart/h, jednostronna. Wersje USB, Ethernet, koder magnetyczny. PN: ZC11-0000000EM00, ZC11-000C000EM00.',
-    description: `Zebra ZC100 to jednostronna drukarka kart plastikowych do identyfikatorów, kart lojalnościowych, członkowskich i legitymacji w nakładach do kilkuset kart rocznie. Drukuje w pełnym kolorze z taśmą YMCKO albo w czerni z taśmą mono na kartach PVC CR-80 i CR-79. Sprawdza się w małych biurach, recepcjach, klubach fitness, szkołach i sklepach, gdzie karta ma powstać w kilkadziesiąt sekund, bez zamawiania jej na zewnątrz.
+    description: `Zebra ZC100 to jednostronna drukarka kart plastikowych do identyfikatorów, kart lojalnościowych, członkowskich i legitymacji, przeznaczona dla małych biur, recepcji, klubów fitness, szkół i sklepów drukujących do kilkuset kart rocznie.
 
-## Zebra ZC100 w liczbach
+Drukuje w technologii termosublimacyjnej w rozdzielczości 300 dpi na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm, w pełnym kolorze (taśma YMCKO) lub monochromatycznie, z prędkością do 150 kart/h w kolorze i do 700 kart/h w czerni. Podajnik i odbiornik mieszczą po 100 kart. W standardzie są port USB 2.0, pamięć 2 GB flash oraz uwierzytelnianie drukarki i hosta z szyfrowaniem danych AES.
 
-Druk jednostronny w rozdzielczości 300 dpi (11,8 pkt/mm). Do 150 kart/h w kolorze YMCKO i do 700 kart/h w czerni. Podajnik i odbiornik na 100 kart o grubości 0,76 mm, obsługa kart 0,25–1,02 mm (10–40 mil). USB 2.0 w standardzie, 2 GB pamięci flash. Obudowa 258 × 157 × 383 mm (wys. × szer. × gł.), 3,9 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
+Dostępne konfiguracje: ZC11-0000000EM00 (USB), ZC11-000C000EM00 (USB i Ethernet 10/100), ZC11-0M00000EM00 (koder pasków magnetycznych ISO 7811) oraz ZC11-0M0C000EM00 (Ethernet i koder magnetyczny). Karta specyfikacji producenta wymienia również moduł Wi-Fi 802.11ac; w ofercie TAKMA dostępne są cztery konfiguracje przewodowe. Komplet QuikCard ZC11-0000Q00EM00 z taśmą YMCKO na 200 wydruków, 200 kartami PVC i licencją CardStudio 2.0 Standard jest oferowany jako osobny zestaw startowy. Drukarka współpracuje z taśmami serii 800300.
 
-## Cztery konfiguracje
-
-ZC11-0000000EM00 to wersja podstawowa z USB. ZC11-000C000EM00 ma dodatkowo Ethernet 10/100, więc drukarkę może współdzielić kilka stanowisk. ZC11-0M00000EM00 zawiera koder pasków magnetycznych ISO 7811 (HiCo i LoCo, ścieżki 1–3, karty 0,76 mm) do kart hotelowych i dostępowych, a ZC11-0M0C000EM00 łączy Ethernet z koderem. Karta specyfikacji Zebra wymienia jeszcze moduł 802.11ac; w TAKMA ZC100 jest dostępna w czterech konfiguracjach przewodowych, a jeśli potrzebujesz Wi-Fi, druku dwustronnego albo kodowania RFID, wybierz Zebra ZC300.
-
-## Co jest potrzebne do pierwszego wydruku
-
-Drukarka, taśma (YMCKO na 200 lub 300 kolorowych kart albo mono K na 1 500 kart), karty PVC i program do projektowania. Komplet QuikCard ZC11-0000Q00EM00 z taśmą YMCKO na 200 wydruków, 200 białymi kartami i licencją Zebra CardStudio 2.0 Standard sprzedajemy jako osobny zestaw startowy. Sterowniki dla Windows, macOS i Linux pobierzesz ze strony wsparcia Zebra, do której link znajdziesz w sekcji „Pliki do pobrania”. Kaseta z taśmą wchodzi do komory od przodu w jednej pozycji, a podajnik sam dopasowuje się do grubości kart.
-
-## Zabezpieczenia i serwis
-
-Drukarka uwierzytelnia komputer, z którego przychodzi zlecenie, i szyfruje dane algorytmem AES, więc nie wydrukuje karty z nieautoryzowanego stanowiska. Serwis drukarek kart Zebra prowadzi nasz warsztat, a obsługę ZC100 opisaliśmy po polsku w instrukcji na serwis-zebry.pl.
-
-Parametry według karty specyfikacji Zebra ZC100 i listy gwarancyjnej Zebra (wrzesień 2026).`,
+Wymiary: 258 × 157 × 383 mm (wys. × szer. × gł.), waga 3,9 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą. Parametry według karty specyfikacji Zebra ZC100.`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -46820,29 +46808,13 @@ Parametry według karty specyfikacji Zebra ZC100 i listy gwarancyjnej Zebra (wrz
     shortDescription: 'Zebra ZC300 — drukarka kart plastikowych jedno- lub dwustronna, 300 dpi, kolorowy LCD, Ethernet w standardzie, kodery magnetyczny, MIFARE i stykowy',
     seoTitle: 'Drukarka kart Zebra ZC300 — jedno- i dwustronna, kodowanie kart',
     seoDescription: 'Drukarka kart Zebra ZC300: kolor 300 dpi, do 200 kart/h, jednostronna ZC31 lub dwustronna ZC32, kodery magnetyczny, MIFARE, stykowy. PN: ZC31-000C000EM00, ZC32-000C000EM00.',
-    description: `Zebra ZC300 to drukarka kart plastikowych dla firm, szkół, hoteli i instytucji, które drukują identyfikatory pracownicze, legitymacje, karty hotelowe i karty dostępu w nakładach od kilkuset do kilku tysięcy sztuk rocznie. W odróżnieniu od ZC100 ma kolorowy wyświetlacz LCD z komunikatami, Ethernet w standardzie, wersję dwustronną i miejsce na kodery: magnetyczny, zbliżeniowy MIFARE i stykowy.
+    description: `Zebra ZC300 to drukarka kart plastikowych do identyfikatorów pracowniczych, legitymacji, kart hotelowych i kart dostępu, przeznaczona dla przedsiębiorstw, szkół i instytucji drukujących od kilkuset do kilku tysięcy kart rocznie.
 
-## Zebra ZC300 w liczbach
+Drukuje w technologii termosublimacyjnej w rozdzielczości 300 dpi na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm, z prędkością do 200 kart/h w kolorze jednostronnie, 140 kart/h dwustronnie (taśma YMCKOK) i do 900 kart/h monochromatycznie. Podajnik i odbiornik mieszczą po 100 kart. W standardzie są USB 2.0, Ethernet 10/100 i kolorowy wyświetlacz LCD z komunikatami o stanie taśmy, kart i błędach; moduł Wi-Fi 802.11ac jest opcją producenta.
 
-Druk termosublimacyjny w rozdzielczości 300 dpi (11,8 pkt/mm) na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm. Do 200 kart/h w kolorze YMCKO jednostronnie, 140 kart/h dwustronnie z taśmą YMCKOK, do 900 kart/h w czerni jednostronnie i 450 kart/h dwustronnie. Podajnik i odbiornik na 100 kart. USB 2.0 i Ethernet 10/100 w standardzie, 2 GB pamięci flash. Wersja jednostronna: 258 × 157 × 383 mm (wys. × szer. × gł.), 4,0 kg; dwustronna: 258 × 157 × 468 mm, 4,4 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
+Model ZC31-000C000EM00 drukuje jednostronnie, ZC32-000C000EM00 dwustronnie w jednym przebiegu. Wersje ZC31-0M0C000EM00 i ZC32-0M0C000EM00 mają koder pasków magnetycznych ISO 7811 (HiCo/LoCo). Konfiguracje z koderem zbliżeniowym MIFARE ISO 14443 A/B i stykowym ISO 7816 oraz z modułem Wi-Fi są dostępne na zapytanie. Drukarka współpracuje z taśmami serii 800300: YMCKO, YMCKOK, KdO, monochromatycznymi i jednokolorowymi. Komplet QuikCard ZC32-000CQ00EM00 z taśmą YMCKOK, 200 kartami PVC i licencją CardStudio 2.0 Standard jest oferowany jako osobny zestaw startowy.
 
-## ZC31 czy ZC32
-
-ZC31-000C000EM00 drukuje jednostronnie. ZC32-000C000EM00 ma moduł odwracania karty i drukuje obie strony w jednym przebiegu, więc na rewersie zmieści się kod kreskowy, regulamin albo dane kontaktowe. Wersje z koderem pasków magnetycznych (ZC31-0M0C000EM00, ZC32-0M0C000EM00) zapisują ścieżki ISO 7811 w czasie druku. Konfiguracje z koderem zbliżeniowym MIFARE i stykowym (ZC31-F00C000EM00, ZC31-FM0C000EM00) oraz z modułem Wi-Fi 802.11ac (ZC31-000W000EM00, ZC32-000W000EM00) wyceniamy na zapytanie, bo dystrybutor nie trzyma ich na magazynie.
-
-## Kodowanie kart
-
-Koder magnetyczny obsługuje karty HiCo i LoCo, ścieżki 1–3, według ISO 7811. Koder zbliżeniowy pracuje z kartami MIFARE ISO 14443 A i B (13,56 MHz), w tym MIFARE Classic i DESFire, ma gniazdo SAM i opcjonalny odczyt kart iCLASS ISO 15693. Koder stykowy ISO 7816 ma certyfikat EMV poziomu 1. Zebra nie deklaruje obsługi kart 125 kHz (Unique, HID Prox); do takich systemów zadrukujesz na ZC300 karty dualne z drugim chipem, bez kodowania w drukarce. Kodowanie odbywa się w tym samym przebiegu co druk.
-
-## Co jest potrzebne do pierwszego wydruku
-
-Taśma (YMCKO na 200 lub 300 kart, YMCKOK na 200 kart dwustronnych albo mono K na 1 500 kart), karty PVC i program do projektowania. Dwustronny komplet QuikCard ZC32-000CQ00EM00 z taśmą YMCKOK, 200 kartami i licencją Zebra CardStudio 2.0 Standard sprzedajemy jako osobny zestaw startowy. Sterowniki dla Windows, macOS i Linux pobierzesz ze strony wsparcia Zebra, do której link znajdziesz w sekcji „Pliki do pobrania”. Wyświetlacz LCD pokazuje stan taśmy, poziom kart i treść błędu, więc obsługa nie wymaga zaglądania do sterownika.
-
-## Zabezpieczenia i serwis
-
-Drukarka uwierzytelnia komputer, z którego przychodzi zlecenie, i szyfruje przesyłane dane. Serwis drukarek kart Zebra prowadzi nasz warsztat, a obsługę ZC300 opisaliśmy po polsku w instrukcji na serwis-zebry.pl.
-
-Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrzesień 2026).`,
+Zabezpieczenia obejmują uwierzytelnianie drukarki i hosta oraz szyfrowanie danych. Wymiary: 258 × 157 × 383 mm (wersja jednostronna) lub 258 × 157 × 468 mm (dwustronna), waga 4,0 kg lub 4,4 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą. Parametry według karty specyfikacji Zebra ZC300.`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
@@ -46986,33 +46958,13 @@ Parametry według karty specyfikacji Zebra ZC300 i listy gwarancyjnej Zebra (wrz
     shortDescription: 'Zebra ZC350 — drukarka kart plastikowych jedno- lub dwustronna, 300 dpi, taśmy specjalne z zabezpieczeniami, kodery magnetyczny, MIFARE, stykowy i RFID UHF',
     seoTitle: 'Drukarka kart Zebra ZC350 — taśmy specjalne, kodowanie UHF',
     seoDescription: 'Drukarka kart Zebra ZC350: do 225 kart/h, jednostronna ZC35 lub dwustronna ZC36, taśmy z zabezpieczeniami, kodery magnetyczny, MIFARE, UHF. PN: ZC35-000C000EM00, ZC36-000C000EM00.',
-    description: `Zebra ZC350 to najwyższy model serii ZC: drukarka kart plastikowych dla firm i instytucji, które chcą drukować identyfikatory trudne do podrobienia, kodować karty w kilku technologiach naraz i mieć drukarkę bezpieczną w miejscu dostępnym dla klientów. Ma to samo wąskie nadwozie i kolorowy wyświetlacz co ZC300, ale drukuje szybciej, przyjmuje taśmy specjalne serii 800350 i może mieć koder RFID UHF oraz zamykaną obudowę.
+    description: `Zebra ZC350 to drukarka kart plastikowych z najwyższego segmentu serii ZC, przeznaczona dla firm i instytucji, które wymagają zabezpieczonych identyfikatorów, kodowania kart w kilku technologiach oraz bezpiecznej pracy urządzenia w miejscach dostępnych dla klientów.
 
-## Zebra ZC350 w liczbach
+Drukuje w technologii termosublimacyjnej w rozdzielczości 300 dpi na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm, z prędkością do 225 kart/h w kolorze jednostronnie, 150 kart/h dwustronnie (taśma YMCKOK) i do 1 000 kart/h monochromatycznie. Podajnik i odbiornik mieszczą po 100 kart. W standardzie są USB 2.0, Ethernet 10/100 i kolorowy wyświetlacz LCD z komunikatami w języku polskim; moduł Wi-Fi 802.11ac jest opcją producenta.
 
-Druk termosublimacyjny i termotransferowy w rozdzielczości 300 dpi (11,8 pkt/mm) na kartach PVC CR-80 i CR-79 o grubości 0,25–1,02 mm. Do 225 kart/h w kolorze YMCKO jednostronnie, 150 kart/h dwustronnie z taśmą YMCKOK, do 1 000 kart/h w czerni jednostronnie i 500 kart/h dwustronnie. Podajnik i odbiornik na 100 kart, w wersji dwustronnej dodatkowo kosz odrzutów na 10 kart. USB 2.0 i Ethernet 10/100 w standardzie, 2 GB pamięci flash. Wersja jednostronna: 258 × 157 × 383 mm (wys. × szer. × gł.), 4,0 kg; dwustronna: 258 × 157 × 468 mm, 4,4 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
+Model ZC35-000C000EM00 drukuje jednostronnie, ZC36-000C000EM00 dwustronnie w jednym przebiegu. Opcjonalne kodery: pasek magnetyczny ISO 7811, koder zbliżeniowy MIFARE ISO 14443 A/B, koder stykowy ISO 7816 (EMV L1) oraz RFID UHF EPC Gen2. Drukarka współpracuje z taśmami serii 800350, w tym z taśmami specjalnymi: YMCKLL z podwójną warstwą ochronną, YMCPKO z panelem perłowym i SrDYMCKO z panelem metalicznym. Czarna taśma 800300-301 i taśmy jednokolorowe są wspólne dla całej serii ZC.
 
-## ZC35 czy ZC36
-
-ZC35-000C000EM00 drukuje jednostronnie, ZC36-000C000EM00 ma moduł odwracania karty i zadrukowuje obie strony w jednym przebiegu. Obie mają USB i Ethernet, a wersje z koderem pasków magnetycznych (ZC35-0M0C000EM00, ZC36-0M0C000EM00) zapisują ścieżki ISO 7811 w czasie druku. Konfiguracje z koderem zbliżeniowym MIFARE i stykowym, z koderem RFID UHF oraz z modułem Wi-Fi 802.11ac wyceniamy na zapytanie. Kodery są opcjami montowanymi także u klienta, więc drukarkę kupioną bez kodera można rozbudować później.
-
-## Taśmy specjalne serii 800350
-
-ZC350 rozpoznaje taśmę po chipie w kasecie i pracuje z serią 800350. Kolorowe taśmy YMCKO, YMCKOK i KdO z serii 800300 (ZC100 i ZC300) nie pasują; czarna taśma 800300-301 oraz taśmy jednokolorowe (czerwona, niebieska, złota, srebrna) są wspólne dla całej serii ZC. Podstawowe taśmy ZC350: YMCKO na 200 kart (800350-250EM), YMCKOK na 200 kart dwustronnych (800350-360EM), KdO na 700 kart (800350-370EM), półpanelowa YMCKO na 400 kart i biała na 1 500 kart (800350-309EM). Taśmy specjalne: YMCKLL z podwójną warstwą ochronną, która według Zebry chroni nadruk przez 3–5 lat i pozwala nanieść znak wodny widoczny pod kątem lub w świetle UV; YMCPKO z panelem perłowym, który zmienia kolor pod kątem i utrudnia podrobienie karty; SrDYMCKO ze srebrnym panelem metalicznym do napisów i logo z efektem trójwymiarowym. Dostępność taśm specjalnych zależy od regionu, dlatego sprawdzamy ją przed zamówieniem.
-
-## Kodowanie kart
-
-Koder magnetyczny zapisuje ścieżki 1–3 w standardzie HiCo i LoCo według ISO 7811, w drukarce dwustronnej także na pasku z przodu karty. Koder zbliżeniowy MIFARE ISO 14443 A i B (13,56 MHz) ma gniazdo SAM i opcjonalny odczyt kart iCLASS ISO 15693, a koder stykowy ISO 7816 ma certyfikat EMV poziomu 1 i pracuje w standardzie PC/SC. Stacja stykowa ISO 7816 pozwala podłączyć zewnętrzny koder innego producenta, a koder RFID UHF EPC Gen2 obsługuje karty czytane z odległości, na przykład na parkingach i bramach. Kart 125 kHz (Unique, HID Prox) drukarka nie koduje; do takich systemów zadrukujesz karty dualne z drugim chipem.
-
-## Zabezpieczenia i obsługa
-
-Drukarka uwierzytelnia komputer, z którego przychodzi zlecenie, i szyfruje dane algorytmem AES, więc numer konta czy dane osobowe nie trafiają do nieautoryzowanej aplikacji. Gniazdo Kensington jest w standardzie, a opcjonalna obudowa zamykana na klucz chroni czyste i odrzucone karty w miejscach ogólnodostępnych. Kolorowy wyświetlacz LCD pokazuje animacje i komunikaty także po polsku, a diody przy szczelinie prowadzą podawanie ręczne karty krok po kroku.
-
-## Co jest potrzebne do pierwszego wydruku
-
-Taśma serii 800350, karty PVC i program do projektowania, na przykład Zebra CardStudio 2.0. Sterowniki dla Windows, macOS i Linux pobierzesz ze strony wsparcia Zebra, do której link znajdziesz w sekcji „Pliki do pobrania”. Obsługę ZC350 opisaliśmy po polsku w instrukcji na serwis-zebry.pl, a serwis drukarek kart Zebra prowadzi nasz warsztat.
-
-Parametry według karty specyfikacji Zebra ZC350 i listy gwarancyjnej Zebra (wrzesień 2026).`,
+Zabezpieczenia obejmują uwierzytelnianie drukarki i hosta, szyfrowanie danych AES, gniazdo Kensington oraz opcjonalną obudowę zamykaną na klucz. Wymiary: 258 × 157 × 383 mm (wersja jednostronna) lub 258 × 157 × 468 mm (dwustronna), waga 4,0 kg lub 4,4 kg. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą. Parametry według karty specyfikacji Zebra ZC350.`,
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
