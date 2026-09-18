@@ -1124,7 +1124,8 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Magicard Pronto100', pattern: 'Pronto', specs: ['Kompatybilność'] },
         { value: 'Magicard 300', pattern: 'Magicard 300', specs: ['Kompatybilność'] },
         { value: 'Magicard 600', pattern: 'Magicard 600', specs: ['Kompatybilność'] },
-        { value: 'Zebra ZC100 / ZC300', pattern: '\\bZC', specs: ['Kompatybilność'] },
+        { value: 'Zebra ZC100 / ZC300', pattern: 'ZC100', specs: ['Kompatybilność'] },
+        { value: 'Zebra ZC350', pattern: 'ZC350', specs: ['Kompatybilność'] },
       ],
     },
     {
@@ -1147,8 +1148,8 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Ile kart wydrukuje jedna taśma. Kolorowe mają mniejszą wydajność niż jednokolorowe.',
       derived: [
         { value: 'do 300 wydruków', pattern: '^(100|200|250|300)\\b', specs: ['Wydajność'] },
-        { value: '600 wydruków', pattern: '^600\\b', specs: ['Wydajność'] },
-        { value: '1 000 wydruków i więcej', pattern: '^1 ?[05]00\\b', specs: ['Wydajność'] },
+        { value: '400 – 800 wydruków', pattern: '^(400|600|700|800)\\b', specs: ['Wydajność'] },
+        { value: '1 000 wydruków i więcej', pattern: '^(1 ?[05]00|2 ?000)\\b', specs: ['Wydajność'] },
       ],
     },
     {
