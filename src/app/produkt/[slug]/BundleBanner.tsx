@@ -37,6 +37,10 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
   })()
   const cardsCount = items.find((i) => i.product.subcategoryIds?.includes('karty-plastikowe'))?.quantity
   const isDuplex = /dwustronn/i.test(printer?.product.specifications.find((s) => s.name === 'Druk jedno-/dwustronny')?.value ?? '')
+  // YMCKOK zużywa jeden komplet paneli na kartę zadrukowaną z obu stron, więc jej wydajność
+  // liczy się w kartach, a nie w stronach
+  const ribbonDuplex = /dwustronn/i.test(ribbon?.product.specifications.find((s) => s.name === 'Wydajność')?.value ?? '')
+  const ribbonUnit = ribbonDuplex ? 'kart z nadrukiem po obu stronach' : 'stron w kolorze'
   const cartBundle = { id: bundle.id, name: bundle.name, slug: bundle.slug, image: bundle.images[0], partNumber: pn, priceNetto: bundle.priceFrom, categoryId: bundle.categoryId }
 
   if (compact) {
@@ -73,7 +77,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
               {bundle.bundleFactory
                 ? 'Komplet Zebry pod jednym numerem katalogowym.'
                 : 'Drukarka jest sprzedawana bez taśmy i kart.'}
-              {ribbonPrints ? ` Taśma wystarcza na ${fmtInt(ribbonPrints)} stron w kolorze.` : ''}
+              {ribbonPrints ? ` Taśma wystarcza na ${fmtInt(ribbonPrints)} ${ribbonUnit}.` : ''}
             </p>
           </div>
           <div className="flex flex-col gap-2 border-t border-slate-100 px-5 py-4 sm:px-6 md:border-t-0 md:border-l md:items-end md:text-right">
@@ -114,7 +118,7 @@ export default function BundleBanner({ bundle, image, compact }: { bundle: Produ
           </h2>
           <p className="mt-2 text-sm text-gray-600">
             {bundle.bundleFactory ? 'Komplet Zebry pod jednym numerem katalogowym.' : 'Drukarka jest sprzedawana bez taśmy i kart.'}
-            {ribbonPrints ? ` Zestaw zawiera taśmę na ${fmtInt(ribbonPrints)} stron w kolorze${isDuplex ? `, czyli do ${fmtInt(ribbonPrints / 2)} kart z nadrukiem po obu stronach` : ''}` : ''}
+            {ribbonPrints ? ` Zestaw zawiera taśmę na ${fmtInt(ribbonPrints)} ${ribbonUnit}${isDuplex && !ribbonDuplex ? `, czyli do ${fmtInt(ribbonPrints / 2)} kart z nadrukiem po obu stronach` : ''}` : ''}
             {ribbonPrints && cardsCount ? ` i opakowanie ${fmtInt(cardsCount * 100)} kart.` : ribbonPrints ? '.' : ''}
           </p>
 

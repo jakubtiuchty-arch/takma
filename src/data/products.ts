@@ -46828,7 +46828,7 @@ Zaawansowane opcje kodowania: pasek magnetyczny HiCo/LoCo, enkoder RFID/NFC (Mif
 
 Łączność: USB 2.0 + Ethernet 10/100 standardowo, Wi-Fi 802.11ac opcjonalnie. Platforma Link-OS ze zdalnym zarządzaniem. Pamięć: 2 GB flash. Wymiary: 202 × 484 × 234 mm (jednostronna), waga 5,3 kg.
 
-Wariant z zestawem startowym (ZC31-000CQ00EM00 / ZC32-000CQ00EM00) zawiera taśmę YMCKO, 200 kart PVC i CardStudio Classic. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
+Komplet QuikCard ZC32-000CQ00EM00 — dwustronna ZC300 z taśmą YMCKOK, 200 kartami PVC i licencją CardStudio 2.0 Standard — sprzedajemy jako osobny zestaw startowy. Gwarancja producenta: 3 lata na drukarkę i głowicę drukującą.
 
 Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     categoryId: 'drukarki-kart',
@@ -46875,11 +46875,9 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { partNumber: 'ZC31-0M0C000EM00', name: 'ZC300 jednostr. + Mag', priceFrom: 5127.84, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak' } },
       { partNumber: 'ZC31-F00C000EM00', name: 'ZC300 jednostr. + RFID/Smart Card', priceFrom: 5763.98, availability: 'available', attributes: { 'Koder RFID/Smart Card': 'Tak' } },
       { partNumber: 'ZC31-FM0C000EM00', name: 'ZC300 jednostr. + Mag + RFID/SC', priceFrom: 6607.82, availability: 'available', attributes: { 'Koder magnetyczny': 'Tak', 'Koder RFID/Smart Card': 'Tak' } },
-      { partNumber: 'ZC31-000CQ00EM00', name: 'ZC300 jednostr. + Zestaw startowy', priceFrom: 4254.10, availability: 'available', attributes: { 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
       { partNumber: 'ZC31-000W000EM00', name: 'ZC300 jednostr. + Wi-Fi', priceFrom: 4920.09, availability: 'available', attributes: { 'Wi-Fi': 'Tak' } },
       { partNumber: 'ZC32-000C000EM00', name: 'ZC300 dwustronna', priceFrom: 5242.70, availability: 'available', attributes: { 'Druk dwustronny': 'Tak' } },
       { partNumber: 'ZC32-0M0C000EM00', name: 'ZC300 dwustr. + Mag', priceFrom: 6296.25, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
-      { partNumber: 'ZC32-000CQ00EM00', name: 'ZC300 dwustr. + Zestaw startowy', priceFrom: 5377.53, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'CardStudio': 'Tak', 'Taśma YMCKO': 'Tak', 'Karty PVC': '200 szt.' } },
       { partNumber: 'ZC32-000W000EM00', name: 'ZC300 dwustr. + Wi-Fi', priceFrom: 6088.50, availability: 'available', attributes: { 'Druk dwustronny': 'Tak', 'Wi-Fi': 'Tak' } },
     ],
     compatibleAccessories: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
@@ -46890,7 +46888,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { question: 'Ile kosztuje wydruk jednej karty na ZC300?', answer: 'Druk kolorowy YMCKO jednostronny: ok. 1,23 zł/karta. Dwustronny YMCKOK: ok. 2,50 zł/karta. Monochromatyczny: ok. 0,55 zł/karta. Plus koszt karty PVC blank: 0,50–4 zł (w zależności od typu — czysta vs RFID).' },
       { question: 'Czym różni się ZC300 od ZC350?', answer: 'ZC300 obsługuje standardowe taśmy YMCKO. ZC350 obsługuje dodatkowo taśmy specialty (UV fluorescencyjne, scratch-off, holograficzne) oraz ma rozszerzone opcje kodowania. Dla większości zastosowań B2B ZC300 jest w pełni wystarczający.' },
       { question: 'Czy mogę drukować e-legitymacje szkolne na ZC300?', answer: 'Tak. ZC300 Dual-sided z enkoderem RFID/NFC (ZC32-xxx z enkoderem contactless) to idealne rozwiązanie do e-legitymacji: zdjęcie + dane na awersie, kod kreskowy + regulamin na rewersie, chip Mifare DESFire do kontroli dostępu, stołówki i biblioteki.' },
-      { question: 'Co zawiera wariant z zestawem startowym?', answer: 'Warianty ZC31-000CQ00EM00 (jednostronny) i ZC32-000CQ00EM00 (dwustronny) zawierają: drukarkę + taśmę YMCKO (200 kolorowych wydruków) + 200 kart PVC blank + licencję CardStudio Classic. Gotowe do pracy od razu.' },
+      { question: 'Co zawiera zestaw startowy?', answer: 'Komplet QuikCard ZC32-000CQ00EM00: dwustronna ZC300, taśma YMCKOK na 200 kart zadrukowanych z obu stron, 200 białych kart PVC 0,76 mm i licencja Zebra CardStudio 2.0 Standard. Stoi u nas jako osobna pozycja — zestaw startowy Zebra ZC300.' },
       { question: 'Jakie są alternatywy dla Zebra ZC300?', answer: 'W podobnej klasie: Evolis Primacy 2 (od ok. 4 800 zł), Magicard 600 (od ok. 5 500 zł), HID Fargo DTC4500e (od ok. 6 000 zł). TAKMA rekomenduje ZC300 ze względu na platformę Link-OS, szerokie opcje kodowania, zdalny monitoring i najlepsze wsparcie serwisowe Zebra w Polsce.' },
     ],
     comparison: {
@@ -49429,6 +49427,76 @@ To drukarka jednostronna z USB. W tym komplecie nie ma Ethernetu ani kodera pask
     ],
     downloads: [],
     createdAt: '2026-09-17',
+  },
+  {
+    id: 'zebra-zc300-zestaw-startowy',
+    slug: 'zebra-zc300-zestaw-startowy',
+    name: 'Zestaw startowy Zebra ZC300: drukarka dwustronna, taśma YMCKOK i 200 kart',
+    shortDescription: 'Komplet Zebra QuikCard w wersji dwustronnej: drukarka kart ZC300 Duo, taśma YMCKOK na 200 kart zadrukowanych z obu stron, 200 białych kart PVC i licencja CardStudio 2.0 Standard.',
+    seoTitle: 'Zestaw startowy Zebra ZC300 — taśma YMCKOK i 200 kart',
+    seoDescription: 'Zebra ZC300 dwustronna w komplecie QuikCard (ZC32-000CQ00EM00): drukarka, taśma YMCKOK na 200 kart, 200 kart PVC i licencja CardStudio 2.0 Standard.',
+    description: `Dwustronna ZC300 w wersji QuikCard, pod jednym numerem katalogowym ZC32-000CQ00EM00. W pudełku jest drukarka z modułem odwracania kart, taśma YMCKOK 800300-360EM na 200 kart zadrukowanych z obu stron, 200 białych kart PVC o grubości 0,76 mm i licencja Zebra CardStudio 2.0 Standard.
+
+Różnicę robi taśma. YMCKOK ma dodatkowy panel czarny, którym drukarka zadrukowuje rewers: regulamin, kod kreskowy, dane kontaktowe. Jedna karta zużywa wtedy jeden komplet paneli, więc 200 wydruków z rolki to 200 gotowych kart dwustronnych, a nie 100.
+
+Oprogramowanie kosztuje osobno ponad 900 zł netto. CardStudio 2.0 Standard czyta dane z Excela, plików CSV i baz przez ODBC, numeruje karty seryjnie i projektuje obie strony karty w jednym układzie.
+
+Drukarka wychodzi z 200 kartami na godzinę w druku jednostronnym i 140 przy dwustronnym. Kolorowy wyświetlacz pokazuje stan taśmy i treść błędu, Ethernet jest w standardzie.
+
+W komplecie nie ma kodera paska magnetycznego ani RFID; wersje z kodowaniem są na karcie samej drukarki. Do druku jednostronnego wystarcza tańszy zestaw startowy z drukarką ZC100.`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'zebra',
+    priceFrom: 5538.87,
+    bundleItems: [
+      { productId: 'zebra-zc300', quantity: 1, variantPn: 'ZC32-000C000EM00', note: 'Dwustronna drukarka kart, 300 dpi, USB i Ethernet, 140 kart na godzinę w kolorze po obu stronach' },
+      { productId: 'zebra-ribbon-ymckok-zc', quantity: 1, note: 'Taśma YMCKOK z dodatkowym panelem czarnym na rewers, 200 kart dwustronnych' },
+      { productId: 'zebra-cardstudio', quantity: 1, variantPn: 'CSR2S-SW00-E', image: '/images/products/cardstudio-standard-licencja.png', note: 'Licencja elektroniczna. Projektowanie obu stron karty, dane z Excela, plików CSV i baz ODBC, numeracja seryjna' },
+    ],
+    bundleExtras: ['200 białych kart PVC 0,76 mm'],
+    bundleFactory: true,
+    bundleBannerCompact: true,
+    images: ['/images/products/zebra-zc300-zestaw-startowy.png'],
+    imageDescriptions: ['Zestaw startowy Zebra ZC300: dwustronna drukarka kart, kaseta z taśmą YMCKOK i białe karty PVC'],
+    tags: ['retail', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Drukarka', value: 'Zebra ZC300, druk dwustronny, 300 dpi, USB 2.0 i Ethernet' },
+      { name: 'Taśma', value: '800300-360EM, kolor YMCKOK z dodatkowym panelem czarnym, 200 kart dwustronnych' },
+      { name: 'Karty', value: '200 szt. białych kart PVC, 0,76 mm, CR-80' },
+      { name: 'Oprogramowanie', value: 'Zebra CardStudio 2.0 Standard, licencja w komplecie' },
+      { name: 'Wydajność zestawu', value: '200 kart zadrukowanych z obu stron' },
+      { name: 'Prędkość druku', value: '140 kart/h dwustronnie, 200 kart/h jednostronnie' },
+      { name: 'Wyświetlacz', value: 'Kolorowy LCD ze stanem taśmy i treścią komunikatów' },
+      { name: 'Format kart', value: 'CR-80 (85,6 × 54 mm), ISO 7810 ID-1' },
+      { name: 'Łączność', value: 'USB 2.0 i Ethernet 10/100, bez kodera magnetycznego i RFID' },
+      { name: 'W pudełku', value: 'Drukarka, zasilacz, kabel USB, podajnik i odbiornik kart, karta czyszcząca' },
+      { name: 'Gwarancja', value: '3 lata na drukarkę i głowicę drukującą' },
+      { name: 'Part Number', value: 'ZC32-000CQ00EM00' },
+    ],
+    applications: [
+      'Identyfikatory pracownicze ze zdjęciem i regulaminem na rewersie',
+      'Legitymacje szkolne i studenckie',
+      'Karty członkowskie z kodem kreskowym na odwrocie',
+      'Karty hotelowe i przepustki dla gości',
+      'Karty lojalnościowe z danymi kontaktowymi na rewersie',
+    ],
+    compatibleAccessories: ['zebra-ribbon-ymckok-zc', 'zebra-ribbon-ymcko-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc'],
+    relatedAccessories: ['zebra-cleaning-kit-2-zc', 'zebra-cleaning-kit-5-zc', 'zebra-cards-premier-076', 'acss-ac-76s', 'acss-wf76-af', 'acss-unqe1bn', 'acss-mfrc1', 'acss-mdev32'],
+    faq: [
+      { question: 'Czym ten zestaw różni się od samej ZC300?', answer: 'Drukarka jest ta sama, dwustronna. W pudełku są dodatkowo taśma YMCKOK, 200 białych kart PVC i licencja CardStudio 2.0 Standard. Te same rzeczy kupowane osobno kosztują ponad 800 zł więcej niż komplet, a ceny składników są na ich kartach.' },
+      { question: 'A jeśli drukuję tylko po jednej stronie?', answer: 'Wtedy taniej wychodzi zestaw startowy z drukarką ZC100: ta sama taśma YMCKO na 200 wydruków, 200 kart i to samo CardStudio, przy niższej cenie drukarki. Zebra ma też jednostronny komplet z ZC300 (ZC31-000CQ00EM00) — sprowadzamy go na zamówienie.' },
+      { question: 'Czy na rewersie można drukować w kolorze?', answer: 'Panelem z taśmy YMCKOK tylko czarnym. Kolor po obu stronach wymaga taśmy YMCKOKO, która dzieli rolkę na dwa pełne komplety paneli i daje mniej kart z rolki.' },
+      { question: 'Która wersja CardStudio jest w zestawie?', answer: 'Standard. Projektuje obie strony karty w jednym układzie, czyta dane z Excela, plików CSV i baz przez ODBC oraz numeruje karty seryjnie. Wersja Classic, od której zaczyna się cennik, danych z zewnątrz nie przyjmuje.' },
+      { question: 'Czy w komplecie jest koder magnetyczny albo RFID?', answer: 'Nie. Wersje ZC300 z paskiem magnetycznym i z kodowaniem RFID są na karcie drukarki, bez materiałów i oprogramowania.' },
+      { question: 'Na ile kart wystarczy zestaw?', answer: 'Na 200 kart zadrukowanych z obu stron: taśma i karty kończą się razem. Potem dokupuje się taśmę 800300-360EM i karty w opakowaniach po 100 lub 500 sztuk.' },
+      { question: 'Jak zestaw jest wysyłany?', answer: 'W jednym kartonie producenta, zwykle w dniu zamówienia przy zamówieniu do 12:00. Kod licencji CardStudio jest w pudełku razem z materiałami.' },
+    ],
+    relatedProducts: ['zebra-zc300', 'zebra-zc100-zestaw-startowy', 'zebra-zc100'],
+    downloads: [],
+    createdAt: '2026-09-18',
   },
 ]
 
