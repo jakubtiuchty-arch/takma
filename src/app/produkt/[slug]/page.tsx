@@ -1323,7 +1323,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                               )
                             }
                             return (
-                              <p key={j} className="text-gray-700 mb-4"><LinkedText text={para} /></p>
+                              <p key={j} className="text-gray-700 mb-4 text-justify hyphens-auto"><LinkedText text={para} /></p>
                             )
                           })}
                         </div>
@@ -1408,7 +1408,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   const linkMatch = paragraph.match(/(.*sekcji )(Powiązane produkty|Akcesoria)( poniżej.*)/)
                   if (linkMatch) {
                     return (
-                      <p key={i} className="text-gray-700 mb-4">
+                      <p key={i} className="text-gray-700 mb-4 text-justify hyphens-auto">
                         {linkMatch[1]}
                         <a href="#akcesoria" className="text-primary-600 font-semibold hover:underline">{linkMatch[2]}</a>
                         {linkMatch[3]}
@@ -1417,7 +1417,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   }
 
                   return (
-                    <p key={i} className="text-gray-700 mb-4">
+                    <p key={i} className="text-gray-700 mb-4 text-justify hyphens-auto">
                       <LinkedText text={paragraph} />
                     </p>
                   )
