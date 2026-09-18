@@ -7,6 +7,20 @@ const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2,
 
 export type BundleItem = { product: Product; quantity: number; price: number; label: string; image: string; note?: string }
 
+/** Ile kart jest w opakowaniu — czytamy ze specyfikacji, bo opakowania mają 100 albo 500 sztuk. */
+export function kartWOpakowaniu(p: Product): number {
+  const opak = p.specifications.find(s => s.name === 'Opakowanie')?.value ?? ''
+  const n = parseInt(opak.replace(/\s/g, ''), 10)
+  return Number.isFinite(n) && n > 0 ? n : 100
+}
+
+/** Etykieta ilości: karty plastikowe liczymy w opakowaniach, resztę w sztukach. */
+export function etykietaIlosci(p: Product, qty: number): string {
+  return p.subcategoryIds?.includes('karty-plastikowe')
+    ? `${qty} opak. (${(qty * kartWOpakowaniu(p)).toLocaleString('pl-PL')} kart)`
+    : `${qty} szt.`
+}
+
 /** Składniki zestawu z cenami. Gdy składnik ma wskazany wariant (np. CardStudio 2.0 Standard),
  *  bierzemy cenę i nazwę tego wariantu, a nie najtańszego z karty. */
 export function resolveItems(bundle: Product, livePrices?: Record<string, number>): BundleItem[] {
@@ -61,7 +75,7 @@ export function BundleContents({ bundle, livePrices }: { bundle: Product; livePr
               <Link href={`/produkt/${product.slug}`} className="font-semibold text-gray-900 leading-snug hover:text-blue-700">
                 {label}
               </Link>
-              <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-gray-700">{product.subcategoryIds?.includes('karty-plastikowe') ? `${quantity} opak. (${quantity * 100} kart)` : `${quantity} szt.`}</span>
+              <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-gray-700">{etykietaIlosci(product, quantity)}</span>
             </div>
             <p className="mt-1 text-sm text-gray-600">{note ?? product.shortDescription}</p>
             {price ? (

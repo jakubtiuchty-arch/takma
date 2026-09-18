@@ -2,16 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Product } from '@/data/products'
 import BundleAddButton from './BundleAddButton'
-import { resolveItems } from './BundleBox'
+import { resolveItems, etykietaIlosci, kartWOpakowaniu } from './BundleBox'
 import { bundlePartNumber } from '@/lib/bundle'
 
 const fmt = (v: number) => v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 const fmtInt = (v: number) => Math.round(v).toLocaleString('pl-PL')
 
-/** Jednostka składnika: karty plastikowe sprzedajemy na opakowania po 100 szt. */
-function unitLabel(p: Product, qty: number) {
-  return p.subcategoryIds?.includes('karty-plastikowe') ? `${qty} opak. (${qty * 100} kart)` : `${qty} szt.`
-}
+
 
 /** Krótka nazwa składnika w banerze: bez PN-u w nawiasie i bez pauzy z liczbą wydruków. */
 function shortName(name: string) {
@@ -38,7 +35,8 @@ export default function BundleBanner({ bundle, image, compact, livePrices }: { b
     const m = (ribbon?.product.specifications.find((s) => s.name === 'Wydajność')?.value ?? '').replace(/\s/g, '').match(/\d+/)
     return m ? parseInt(m[0], 10) : null
   })()
-  const cardsCount = items.find((i) => i.product.subcategoryIds?.includes('karty-plastikowe'))?.quantity
+  const karty = items.find((i) => i.product.subcategoryIds?.includes('karty-plastikowe'))
+  const cardsCount = karty ? karty.quantity * kartWOpakowaniu(karty.product) : undefined
   const isDuplex = /dwustronn/i.test(printer?.product.specifications.find((s) => s.name === 'Druk jedno-/dwustronny')?.value ?? '')
   // YMCKOK zużywa jeden komplet paneli na kartę zadrukowaną z obu stron, więc jej wydajność
   // liczy się w kartach, a nie w stronach
@@ -122,7 +120,7 @@ export default function BundleBanner({ bundle, image, compact, livePrices }: { b
           <p className="mt-2 text-sm text-gray-600">
             {bundle.bundleFactory ? 'Komplet Zebry pod jednym numerem katalogowym.' : 'Drukarka jest sprzedawana bez taśmy i kart.'}
             {ribbonPrints ? ` Zestaw zawiera taśmę na ${fmtInt(ribbonPrints)} ${ribbonUnit}${isDuplex && !ribbonDuplex ? `, czyli do ${fmtInt(ribbonPrints / 2)} kart z nadrukiem po obu stronach` : ''}` : ''}
-            {ribbonPrints && cardsCount ? ` i opakowanie ${fmtInt(cardsCount * 100)} kart.` : ribbonPrints ? '.' : ''}
+            {ribbonPrints && cardsCount ? ` i opakowanie ${fmtInt(cardsCount)} kart.` : ribbonPrints ? '.' : ''}
           </p>
 
           <ul className="mt-4 border-y border-slate-100 divide-y divide-slate-100 text-sm">
@@ -131,7 +129,7 @@ export default function BundleBanner({ bundle, image, compact, livePrices }: { b
                 <Link href={`/produkt/${product.slug}`} className="min-w-0 text-gray-900 hover:text-blue-700">
                   {shortName(label)}
                 </Link>
-                <span className="shrink-0 text-gray-500 tabular-nums">{unitLabel(product, quantity)}</span>
+                <span className="shrink-0 text-gray-500 tabular-nums">{etykietaIlosci(product, quantity)}</span>
               </li>
             ))}
             {(bundle.bundleExtras ?? []).map((extra) => (
