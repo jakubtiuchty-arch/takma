@@ -5,6 +5,8 @@ export interface GuideSection {
   id: string
   heading: string
   content: string // HTML string
+  /** komponent renderowany pod treścią HTML (dane z products.ts, np. żywy ranking) */
+  component?: 'card-printer-ranking' | 'card-printer-usecases'
 }
 
 export interface GuideFAQ {
@@ -56,6 +58,119 @@ export const guideCategoryLabels: Record<Guide['category'], string> = {
 }
 
 export const guides: Guide[] = [
+
+// ============================================================
+// Ranking drukarek kart plastikowych — żywe zestawienie (wpis 18.09.2026)
+// Tabela, zdjęcia i ceny: CardPrinterRanking.tsx (products.ts),
+// oceny i rekomendacje: src/data/rankings/drukarki-kart.ts
+// ============================================================
+{
+  slug: 'jaka-drukarka-do-kart-plastikowych',
+  title: 'Jaka drukarka do kart plastikowych? Ranking i porównanie 2026',
+  seoTitle: 'Jaka drukarka do kart plastikowych? Ranking 2026 | TAKMA',
+  seoDescription: 'Ranking drukarek do kart plastikowych: Zebra ZC100, ZC300, ZC350 oraz Magicard Pronto100, 300 i 600 Duo. Ceny, druk dwustronny, kodowanie, koszt jednej karty.',
+  excerpt: 'Sześć drukarek kart z oferty TAKMA w jednej tabeli: ceny z cennika sklepu, druk jedno- i dwustronny, kodery, zabezpieczenia nadruku i koszt jednej karty. Do tego wskazanie modelu do identyfikatorów pracowniczych, legitymacji szkolnych i kart RFID.',
+  category: 'porownanie' as const,
+  tags: ['drukarki kart', 'ranking', 'porównanie', 'jak wybrać', 'zebra zc100', 'zebra zc300', 'zebra zc350', 'magicard pronto100', 'magicard 300', 'magicard 600 duo', 'karty pvc', 'identyfikatory'],
+  publishedAt: '2026-09-18',
+  updatedAt: '2026-09-18',
+  readTime: '9 min',
+  sections: [
+    {
+      id: 'dla-kogo',
+      heading: 'Kiedy własna drukarka kart ma sens',
+      content: `
+<p>Drukarnia opłaca się przy nakładzie liczonym w tysiącach sztuk. Przy kilkudziesięciu kartach miesięcznie liczy się co innego: nowy pracownik ma dostać identyfikator pierwszego dnia, uczeń legitymację w tygodniu zapisu, gość hotelowy kartę do drzwi przy zameldowaniu. Tu wygrywa drukarka na biurku w kadrach albo na recepcji.</p>
+<p>Sześć modeli z tego zestawienia drukuje na tej samej karcie PVC 85,6 × 54 mm, w tej samej rozdzielczości 300 dpi i tą samą metodą: taśma barwiąca nanosi obraz wprost na kartę. Różnią się czterema rzeczami. Czy zadrukują drugą stronę. Czy zakodują pasek magnetyczny albo chip. Jak zabezpieczą nadruk przed podrobieniem. Ile kart mieści podajnik. Od tych czterech cech zależy cena: od niespełna 3 000 zł netto za Magicard Pronto100 do ponad 6 000 zł netto za dwustronną Zebra ZC350 z koderem magnetycznym.</p>
+<p>Ceny w tabeli poniżej pobierają się z cennika sklepu, tak samo jak na kartach produktów. Zestawienie obejmuje modele, które sprzedajemy i serwisujemy. Drukarek retransferowych w nim nie ma, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji.</p>
+`,
+    },
+    {
+      id: 'kryteria',
+      heading: 'Sześć pytań przed wyborem',
+      content: `
+<h3>Ile kart rocznie</h3>
+<p>Do kilkuset kart rocznie wystarczy model jednostronny z podajnikiem na 50 lub 100 kart. Powyżej tysiąca liczy się prędkość i pojemność podajnika, bo przy serii stu legitymacji nikt nie chce co kwadrans dokładać kart. Pronto100 drukuje do 200 kart na godzinę i mieści 50 kart. ZC350 drukuje 225 kart na godzinę i mieści 100.</p>
+<h3>Jedna strona czy dwie</h3>
+<p>Kod kreskowy, regulamin albo dane kontaktowe na rewersie wymagają drukarki dwustronnej: Magicard 300, Magicard 600 Duo, Zebra ZC300 w wersji ZC32 albo Zebra ZC350 w wersji ZC36. W drukarce jednostronnej kartę można odwrócić ręcznie i puścić drugi raz. Przy dziesięciu kartach to działa. Przy stu już nie, a nadruk na rewersie bywa przesunięty o milimetr.</p>
+<h3>Kodowanie</h3>
+<p>Nadruk na karcie RFID nie zapisuje niczego w chipie. Dane zapisuje system kontroli dostępu przy wydawaniu karty albo koder w drukarce. Kodery mają w tym zestawieniu tylko modele Zebra: magnetyczny w ZC100, magnetyczny, MIFARE i stykowy w ZC300 i ZC350, a ZC350 także UHF. Magicard 300 i 600 Duo w oferowanych wersjach kart nie kodują, choć kartę z chipem zadrukują bez przeszkód.</p>
+<h3>Zabezpieczenie nadruku</h3>
+<p>Magicard nakłada znak wodny HoloKote z panelu ochronnego zwykłej taśmy. Pronto100 ma trzy gotowe wzory, model 300 przyjmuje cztery własne, 600 Duo dziesięć. Zebra ZC350 robi to inaczej: taśmą specjalną z panelem perłowym, metalicznym albo z podwójną warstwą ochronną, kupowaną osobno. ZC100 i ZC300 szyfrują dane w drodze do drukarki, ale samego nadruku nie zabezpieczają.</p>
+<h3>Koszt jednej karty</h3>
+<p>Cena drukarki to mniejsza część rachunku. Biała karta PVC z opakowania po 100 sztuk kosztuje 0,38 zł netto, do tego dochodzi taśma. Kolorowa karta jednostronna z drukarki Zebra wychodzi więc około 1,10 zł, dwustronna z taśmą YMCKOK około 1,35 zł, karta z samym czarnym nadrukiem około 0,40 zł. Taśmy Magicard są droższe w przeliczeniu na kartę, co przy tysiącu kart rocznie daje różnicę rzędu 200–400 zł.</p>
+<table>
+<caption>Taśmy kolorowe i czarna, ceny netto z cennika TAKMA, wrzesień 2026</caption>
+<thead><tr><th>Taśma</th><th>Wydruków</th><th>Cena</th><th>Za kartę</th></tr></thead>
+<tbody>
+<tr><td>Zebra ZC100/ZC300 YMCKO (800300-350EM)</td><td>200</td><td>138 zł</td><td>0,69 zł</td></tr>
+<tr><td>Zebra ZC350 YMCKO (800350-250EM)</td><td>200</td><td>139 zł</td><td>0,70 zł</td></tr>
+<tr><td>Zebra ZC100/ZC300 YMCKOK, dwustronna (800300-550EM)</td><td>200</td><td>189 zł</td><td>0,95 zł</td></tr>
+<tr><td>Zebra czarna (800300-301EM)</td><td>2 000</td><td>76 zł</td><td>0,04 zł</td></tr>
+<tr><td>Magicard Pronto100 YMCKO</td><td>200</td><td>217 zł</td><td>1,09 zł</td></tr>
+<tr><td>Magicard 300 YMCKO</td><td>300</td><td>270 zł</td><td>0,90 zł</td></tr>
+</tbody>
+</table>
+<h3>Łączność i obsługa</h3>
+<p>USB wystarczy przy jednym stanowisku. Ethernet pozwala drukować z kadr i z recepcji na tej samej drukarce; ma go w standardzie każdy model poza ZC100, gdzie jest opcją. Wi-Fi w standardzie ma tylko Magicard 600 Duo. Kolorowy wyświetlacz w ZC300 i ZC350 pokazuje stan taśmy i treść błędu, co przy kilku operatorach oszczędza telefonów do informatyka.</p>
+`,
+    },
+    {
+      id: 'ranking',
+      heading: 'Porównanie sześciu modeli z oferty TAKMA',
+      content: `
+<p>Tabela porządkuje modele od najtańszego. Ceny są cenami netto z cennika sklepu w chwili otwarcia strony. Oceny pod tabelą mówią, komu dany model wystarczy, a komu nie.</p>
+`,
+      component: 'card-printer-ranking',
+    },
+    {
+      id: 'rekomendacje',
+      heading: 'Który model do jakiego zadania',
+      content: `
+<p>Sześć typowych zamówień i model, który w każdym z nich wybieramy jako pierwszy.</p>
+`,
+      component: 'card-printer-usecases',
+    },
+    {
+      id: 'materialy',
+      heading: 'Taśmy, karty i program',
+      content: `
+<p>Do pierwszej karty potrzeba taśmy, kart i programu do projektowania. Zebra ZC100 i ZC300 pracują z taśmami serii 800300, ZC350 z serią 800350; czarna taśma 800300-301EM i taśmy jednokolorowe pasują do wszystkich trzech. Magicard ma osobne taśmy dla Pronto100 oraz dla modeli 300 i 600 Duo. Karty PVC o grubości 0,76 mm w opakowaniach po 100 sztuk oraz karty z chipem MIFARE, DESFire i Unique są wspólne dla wszystkich sześciu modeli.</p>
+<p>Zebra zaleca kartę czyszczącą co około tysiąc wydruków. Do projektowania kart Zebra ma program CardStudio 2.0; do drukarek Magicard program producenta jest opisany w specyfikacji każdego modelu. Zestawy startowe z drukarką, taśmą, 200 kartami i programem mamy dla Pronto100, Magicard 300, ZC100 i ZC300.</p>
+`,
+    },
+    {
+      id: 'uruchomienie',
+      heading: 'Od zamówienia do pierwszej karty',
+      content: `
+<p>Instalacja zajmuje zwykle kwadrans: sterownik ze strony producenta, kaseta z taśmą do komory, karty do podajnika, karta testowa z panelu sterownika. W drukarkach Zebra podajnik sam dopasowuje się do grubości kart, a wyświetlacz ZC300 i ZC350 prowadzi przez wymianę taśmy. Projekt karty robi się raz: szablon z polem na zdjęcie, dane z pliku Excel lub CSV, kod kreskowy, jeśli ma być. Kolejne karty drukuje się z listy.</p>
+<p>Instrukcje po polsku do drukarek Zebra są na serwis-zebry.pl, a naprawy pogwarancyjne drukarek kart wykonuje nasz serwis. Przy wdrożeniu na kilkaset kart, na przykład w szkole, konfigurację dobieramy po rozmowie o liczbie kart, kodowaniu i systemie, w którym karty mają działać.</p>
+`,
+    },
+  ],
+  faq: [
+    { question: 'Która drukarka do kart plastikowych jest najlepsza dla małej firmy?', answer: '<p>Przy kilkudziesięciu kartach miesięcznie i nadruku z jednej strony: <a href="/produkt/magicard-pronto100">Magicard Pronto100</a> albo <a href="/produkt/zebra-zc100">Zebra ZC100</a>. Pronto100 jest tańsza i ma znak wodny HoloKote, ZC100 mieści 100 kart w podajniku i może mieć koder magnetyczny.</p>' },
+    { question: 'Jaka drukarka do legitymacji szkolnych?', answer: '<p>Dwustronna: <a href="/produkt/magicard-300">Magicard 300</a> albo <a href="/produkt/zebra-zc300">Zebra ZC300</a> w wersji ZC32. Legitymacja z chipem do stołówki lub biblioteki wymaga kart MIFARE albo DESFire; dane w chipie zapisuje system szkoły albo ZC300 z koderem zbliżeniowym.</p>' },
+    { question: 'Czy drukarka kart zakoduje kartę RFID?', answer: '<p>Tylko model z koderem. Sam nadruk nie zmienia zawartości chipu. W ofercie kodery mają Zebra ZC100 (magnetyczny), ZC300 i ZC350 (magnetyczny, MIFARE, stykowy), a ZC350 także UHF.</p>' },
+    { question: 'Ile kosztuje drukarka kart plastikowych?', answer: '<p>W ofercie TAKMA od niespełna 3 000 zł netto za Magicard Pronto100 do ponad 6 000 zł netto za dwustronną Zebra ZC350 z koderem magnetycznym. Aktualne ceny są w tabeli powyżej i na kartach produktów.</p>' },
+    { question: 'Ile kosztuje wydruk jednej karty?', answer: '<p>W drukarce Zebra około 1,10 zł netto za kartę kolorową jednostronną, około 1,35 zł za dwustronną i około 0,40 zł za kartę z czarnym nadrukiem. Liczone dla taśm serii 800300 i kart w opakowaniu po 100 sztuk, według cen z września 2026. Taśmy Magicard wychodzą o 0,20–0,40 zł drożej na kartę.</p>' },
+    { question: 'Zebra czy Magicard?', answer: '<p>Magicard, gdy karta ma mieć znak wodny bez dodatkowej taśmy i drukować się dwustronnie w standardzie. Zebra, gdy karta ma być kodowana albo gdy w firmie są już drukarki Zebra i jeden serwis ma obsłużyć wszystko. Producent daje 3 lata gwarancji w obu markach.</p>' },
+    { question: 'Czy zestaw startowy się opłaca?', answer: '<p>Tak, gdy zaczyna się od zera: drukarka, taśma, 200 kart i program w jednej pozycji. Gdy firma ma już program albo potrzebuje wersji z koderem, korzystniej kupić drukarkę w wybranej konfiguracji i materiały osobno.</p>' },
+    { question: 'Dlaczego w zestawieniu nie ma drukarek retransferowych?', answer: '<p>Nie ma ich w ofercie TAKMA, a Zebra ZXP Series 7 i 9 zostały wycofane z produkcji. Retransfer przydaje się przy kartach z nierówną powierzchnią, na przykład ze stykowym chipem, i przy nadruku po samą krawędź. Do identyfikatorów, legitymacji i kart hotelowych wystarcza druk wprost na karcie.</p>' },
+  ],
+  relatedLinks: [
+    { title: 'Magicard Pronto100 — drukarka kart jednostronna', href: '/produkt/magicard-pronto100' },
+    { title: 'Zebra ZC100 — drukarka kart jednostronna', href: '/produkt/zebra-zc100' },
+    { title: 'Magicard 300 — drukarka kart dwustronna', href: '/produkt/magicard-300' },
+    { title: 'Zebra ZC300 — drukarka kart z koderami', href: '/produkt/zebra-zc300' },
+    { title: 'Zebra ZC350 — drukarka kart z taśmami specjalnymi', href: '/produkt/zebra-zc350' },
+    { title: 'Magicard 600 Duo — drukarka kart dwustronna z Wi-Fi', href: '/produkt/magicard-600-duo' },
+    { title: 'Drukarki kart — wszystkie modele', href: '/drukarki-kart' },
+    { title: 'Taśmy do drukarek kart', href: '/tasmy-do-drukarek-kart' },
+    { title: 'Karty PVC', href: '/karty-pvc' },
+    { title: 'Serwis drukarek kart Zebra ZC100 i ZC300 — serwis-zebry.pl', href: 'https://www.serwis-zebry.pl/blog/serwis-drukarki-kart-zebra-zc100-zc300-diagnostyka-naprawa' },
+  ],
+},
 // ============================================================
 // GS1 Sunrise 2027 — migracja na kody 2D w handlu (wpis 17.09.2026)
 // ============================================================

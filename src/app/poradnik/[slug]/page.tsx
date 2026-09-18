@@ -17,7 +17,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!guide) return { title: 'Nie znaleziono' }
 
   return {
-    title: guide.seoTitle,
+    // seoTitle ma już końcówkę „| TAKMA” — absolute pomija szablon z layoutu (bez tego tytuł kończył się „| TAKMA | TAKMA”)
+    title: { absolute: guide.seoTitle },
     description: guide.seoDescription,
     openGraph: {
       title: guide.seoTitle,
