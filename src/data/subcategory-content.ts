@@ -391,6 +391,10 @@ Nawój IN vs OUT: taśmy nawijane stroną barwiącą na zewnątrz (OUT/CSO) lub 
         question: 'Jak długo utrzymuje się wydruk termotransferowy?',
         answer: 'Trwałość zależy od taśmy i materiału etykiety. Taśma woskowa na papierze: kilka miesięcy do 2 lat. Taśma woskowo-żywiczna: 2–5 lat. Taśma żywiczna na etykiecie foliowej (PET): ponad 10 lat, odporna na ścieranie, chemikalia, UV i ekstremalne temperatury. Dla porównania, wydruk termiczny bezpośredni blaknie po kilku tygodniach do miesięcy.',
       },
+      {
+        question: 'Gdzie kupić głowice termotransferowe i nawijarki do drukarek?',
+        answer: 'W kategorii akcesoriów są [głowice termotransferowe do drukarek](/akcesoria-do-drukarek-etykiet) Zebra, Honeywell, TSC, Brother i Citizen w rozdzielczości 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki i nawijarki wewnętrzne. Głowica ma na karcie produktu listę zgodnych modeli, a w razie wątpliwości dobieramy ją po numerze seryjnym drukarki.',
+      },
     ],
     comparisons: [
       {
@@ -1927,11 +1931,11 @@ Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem zmniejszają obcią
 
   'akcesoria-do-drukarek-etykiet': {
     definition: {
-      heading: 'Co to są akcesoria do drukarek etykiet?',
-      content: 'Akcesoria do drukarek etykiet to oryginalne części zamienne i moduły rozszerzające funkcjonalność drukarek termicznych i termotransferowych Zebra. Do najważniejszych kategorii należą: głowice drukujące (203, 300 i 600 dpi) — kluczowy element eksploatacyjny odpowiedzialny za jakość druku; gilotyny (cuttery) do automatycznego odcinania etykiet; odklejaki (dyspensery/peelery) do automatycznego oddzielania etykiet od podkładu; wałki dociskowe (platen rollers) utrzymujące równomierne dociskanie materiału; moduły komunikacyjne (Wi-Fi 802.11ac, Ethernet 10/100, RS-232, Bluetooth 5.0) instalowane w gniazdach MCS; zasilacze sieciowe o różnej mocy i napięciu; moduły baterii do pracy mobilnej; nawijaki podkładu i etykiet; oraz moduły RFID do kodowania znaczników UHF. Dobór odpowiednich akcesoriów wymaga dokładnej weryfikacji kompatybilności z konkretnym modelem drukarki — Part Numbery różnią się nawet między wariantami tego samego modelu (np. ZD621d vs ZD621t).',
+      heading: 'Głowice termotransferowe, gilotyny, odklejaki i nawijarki do drukarek etykiet',
+      content: 'Akcesoria do drukarek etykiet to części zamienne i moduły do drukarek termicznych i termotransferowych Zebra, Honeywell, TSC, Brother i Citizen. W kategorii jest ponad 200 pozycji. Największą grupę tworzą głowice termotransferowe do drukarek w rozdzielczości 203, 300 i 600 dpi: do biurkowych Zebra ZD220, ZD230, ZD421 i ZD621, przemysłowych ZT111, ZT231, ZT411, ZT421, ZT510, ZT610 i ZT620, do Honeywell PC42, PC45, PM45, PM65 i PX940, do TSC serii ML, MB, MH i TTP, do Brother TD oraz Citizen CL-S. Do każdej głowicy pasuje wałek dociskowy w tej samej rozdzielczości.\n\nPozostałe grupy to gilotyny do automatycznego odcinania etykiet, odklejaki oddzielające etykietę od podkładu oraz nawijarki wewnętrzne do Zebra ZT610 i ZT620, Honeywell PM45 i PM65 i TSC MB241T i MH241T, a także nawijak podkładu do Zebra ZT411. Do tego moduły Wi-Fi, Ethernet, RS-232 i Bluetooth, zasilacze, baterie do drukarek mobilnych i moduły RFID UHF. Numer katalogowy części różni się nawet między wariantami tej samej serii, na przykład głowica do ZD621d ma inny numer niż do ZD621t, dlatego przed zakupem sprawdza się model drukarki i rozdzielczość.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać akcesoria do drukarki etykiet Zebra?',
+      heading: 'Jak wybrać akcesoria do drukarki etykiet',
       items: [
         'Kompatybilność z modelem drukarki — to najważniejszy krok. Każde akcesorium Zebra ma dedykowany Part Number przypisany do konkretnego modelu lub serii. Głowica do ZD621d (P1112640-050) jest INNA niż głowica do ZD621t (P1112640-240) — mimo że to ta sama seria ZD621. Przed zakupem zawsze zweryfikuj PN na stronie produktu lub skontaktuj się z nami.',
         'Rozdzielczość głowicy i wałka dociskowego — muszą być zgodne! Jeśli drukarka pracuje w 203 dpi, głowica i wałek muszą być 203 dpi. Wymiana na 300 dpi wymaga zmiany obu elementów jednocześnie. Nie mieszaj rozdzielczości — to najczęstsza przyczyna nieczytelnego druku po wymianie.',
@@ -2053,6 +2057,14 @@ Akcesoria Zebra mają RÓŻNE Part Numbery nawet w obrębie tej samej serii — 
       {
         question: 'Jakie są alternatywy dla oryginalnych akcesoriów Zebra?',
         answer: 'Alternatywy istnieją, ale z istotnymi ograniczeniami. Głowice zamiennikowe (aftermarket): dostępne od firm takich jak SSI, Gulton, Kyocera — tańsze o 30–50%, ale z krótszą żywotność i ryzykiem utraty gwarancji. Zestawy czyszczące: zamienniki są akceptowalne, pod warunkiem że zawierają IPA 99%. Taśmy barwiące (ribbony): zamienniki są popularne i często akceptowalne jakościowo, choć Zebra zaleca certyfikowane materiały. Zasilacze: BEZWZGLĘDNIE oryginalne — zamiennikowy zasilacz bez certyfikatów UL/CE stanowi zagrożenie pożarowe i unieważnia gwarancję. Moduły komunikacyjne (Wi-Fi, Ethernet): BRAK zamienników — wyłącznie oryginalne moduły Zebra. Gilotyny i odklejaki: BRAK zamienników — wyłącznie oryginalne moduły Zebra. Ogólna zasada: na elementach mechanicznych i elektronicznych NIE oszczędzaj.',
+      },
+      {
+        question: 'Jakie głowice termotransferowe do drukarek są w ofercie?',
+        answer: 'Głowice do drukarek Zebra: biurkowe ZD220, ZD230, ZD421 i ZD621 w 203 i 300 dpi oraz przemysłowe ZT111, ZT231, ZT411, ZT421, ZT510, ZT610 i ZT620 w 203, 300 i 600 dpi. Do Honeywell: PC42E-T, PC45, PM45 w 203, 300, 406 i 600 dpi, PM65 i PX940. Do TSC: ML241P, ML341P, MB241T, MH241T, MH261T, MH341T, MH641T, TTP-286MT i TTP-384MT. Do Brother TD oraz Citizen CL-S521. Każda głowica ma na karcie produktu listę zgodnych drukarek i numer katalogowy producenta.',
+      },
+      {
+        question: 'Czy są nawijarki do drukarek termotransferowych?',
+        answer: 'Tak, w wersji wewnętrznej, montowanej w drukarce: nawijak wewnętrzny do Zebra ZT610 i ZT620, nawijak podkładu do Zebra ZT410 i ZT411, nawijaki do Honeywell PM45 i PM65 oraz TSC MB241T i MH241T. Nawijarki zewnętrzne, stojące obok drukarki i zwijające gotowe etykiety w rolkę, dobieramy na zapytanie do średnicy rolki i szerokości etykiet.',
       },
     ],
     comparisons: [

@@ -152,17 +152,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // ────────────────────────────────
     // TIMELINE
     // ────────────────────────────────
-    timeline: [
-      { year: '1969', event: 'Ed Kaplan i Gerhard Cless zakładają Data Specialties w Chicago. Każdy włożył 500 dolarów. Produkcja urządzeń elektromechanicznych — po godzinach, na poddaszu.' },
-      { year: '1982', event: 'Pierwsza drukarka kodów kreskowych o nazwie „The Zebra" — zaprezentowana na targach w Dallas. Firma zmienia kierunek na druk etykiet on-demand.' },
-      { year: '1986', event: 'Zmiana nazwy na Zebra Technologies Corporation. Wprowadzenie druku termotransferowego — technologii, która do dziś dominuje rynek.' },
-      { year: '1991', event: 'IPO na giełdzie NASDAQ (ticker: ZBRA). Cena emisyjna: 15,50 USD za akcję. Przychody roku: 45,6 mln USD, ok. 200 pracowników.' },
-      { year: '1998', event: 'Fuzja z Eltron International — wejście w segment drukarek biurkowych desktop.' },
-      { year: '2007', event: 'Anders Gustafsson zostaje CEO. Pełni tę funkcję do dziś — tylko dwóch CEO w 55+ lat historii firmy.' },
-      { year: '2014', event: 'Przejęcie działu Enterprise od Motorola Solutions za 3,45 mld USD. Portfolio rośnie o terminale mobilne (serie TC, MC), skanery kodów i tablety przemysłowe. 4 500 pracowników Motoroli przechodzi do Zebry.' },
-      { year: '2021', event: 'Przejęcie Fetch Robotics za 290 mln USD (roboty AMR do magazynów) i Adaptive Vision (machine vision). Przychody: 5,63 mld USD — rekord.' },
-      { year: '2024', event: 'Przychody: 4,98 mld USD. 9 900 pracowników w 54 krajach. Siedziba w Lincolnshire, Illinois.' },
-    ],
+    timeline: [],
 
     // ────────────────────────────────
     // O FIRMIE
@@ -431,22 +421,13 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // ────────────────────────────────
     // TIMELINE
     // ────────────────────────────────
-    timeline: [
-      { year: '1966', event: 'Powstaje Intermec w Lynnwood, Washington — firma, która stworzy standardy kodów kreskowych Code 39 (1974) i Code 93. Przez 47 lat będzie niezależnym liderem AutoID.' },
-      { year: '1969', event: 'David Knowles zakłada Metrologic Instruments w Blackwood, New Jersey. Ponad 600 patentów z zakresu skanowania laserowego i imaging — technologia, na której do dziś bazują skanery Honeywell.' },
-      { year: '1987', event: 'Larry Sweeney zakłada Vocollect w Pittsburgh. Technologia voice picking — pracownik słyszy instrukcje w słuchawce, potwierdza głosem, ręce ma wolne. Do dziś standard w dużych magazynach.' },
-      { year: '2007', event: 'Honeywell przejmuje Hand Held Products za 390 mln USD. Wchodzi w rynek skanerów kodów kreskowych — portfolio Voyager, Xenon i Granit trafia pod skrzydła Honeywell.' },
-      { year: '2008', event: 'Przejęcie Metrologic Instruments za 720 mln USD. Honeywell konsoliduje rynek skanerów — łącznie 1,11 mld USD zainwestowane w skanery w 2 lata.' },
-      { year: '2013', event: 'Przejęcie Intermec za 600 mln USD. Honeywell zyskuje terminale mobilne (serie CK, CN), drukarki etykiet (PM, PX) i technologię RFID. Vocollect (kupiony przez Intermec w 2011 za 190 mln USD) przechodzi do Honeywell.' },
-      { year: '2015', event: 'Przejęcie Datamax-O\'Neil za 185 mln USD. Portfolio drukarek rośnie o drukarki mobilne (seria RP) i przemysłowe. Łączna wartość przejęć AutoID Honeywell: 2,58 mld USD.' },
-      { year: '2024', event: 'Przychód SPS (Safety & Productivity Solutions): 10,05 mld USD. Honeywell ogłasza podział na 3 spółki (realizacja 2026) — segment AutoID trafia do Honeywell Automation (~18 mld USD przychodu).' },
-    ],
+    timeline: [],
 
     // ────────────────────────────────
     // O FIRMIE
     // ────────────────────────────────
     aboutParagraphs: [
-      'Honeywell to amerykański konglomerat technologiczny z siedzibą w Charlotte, Karolina Północna. Firma zatrudnia 101 000 pracowników w 70+ krajach, a jej łączny przychód w 2024 roku wyniósł 38,5 mld USD. Segment Safety & Productivity Solutions (SPS), odpowiedzialny za urządzenia AutoID, generuje ok. 10 mld USD rocznie — dwukrotnie więcej niż cała Zebra Technologies.',
+      'Honeywell to amerykański konglomerat technologiczny z siedzibą w Charlotte, Karolina Północna. Firma zatrudnia 101 000 pracowników w 70+ krajach, a jej łączny przychód w 2024 roku wyniósł 38,5 mld USD. Segment Safety & Productivity Solutions (SPS), odpowiedzialny za urządzenia AutoID, generuje ok. 10 mld USD rocznie — dwukrotnie więcej niż cała Zebra Technologies. Dział AutoID powstał z przejęć: Hand Held Products w 2007 roku, Metrologic w 2008, Intermec w 2013 i Datamax-O\'Neil w 2015, skąd pochodzą dzisiejsze skanery Voyager, Xenon i Granit, terminale serii CK i CN oraz drukarki PM i PX.',
       'Portfolio AutoID Honeywell powstało z przejęć: Intermec (terminale i drukarki, 2013), Metrologic i Hand Held Products (skanery, 2007–2008), Datamax-O\'Neil (drukarki mobilne, 2015) i Vocollect (voice picking, przez Intermec). Każda z tych firm była liderem w swoim segmencie — Honeywell połączył je w jeden ekosystem z platformą [Mobility Edge](https://automation.honeywell.com) i programem [Sentinel](https://automation.honeywell.com) zapewniającym najdłuższe wsparcie Android w branży.',
       'TAKMA oferuje pełną gamę produktów Honeywell AutoID: drukarki etykiet od [PC42e-t](/produkt/honeywell-pc42e-t) (od 1 518 zł) po przemysłowe [PX940](/produkt/honeywell-px940), terminale mobilne od [CT32](/produkt/honeywell-ct32) (od 3 389 zł) po ultra-rugged [CK67](/produkt/honeywell-ck67) z 5G, skanery od [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) po przemysłowe [Granit XP](/produkt/honeywell-granit-xp-1990ixr). Ceny netto z dystrybucji Ingram Micro i BlueStar, dostawa z magazynu w Polsce.',
     ],
@@ -688,23 +669,13 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // ────────────────────────────────
     // TIMELINE
     // ────────────────────────────────
-    timeline: [
-      { year: '1994', event: 'Założenie Newland Technology Group w Fuzhou, prowincja Fujian, Chiny. Początkowo firma koncentruje się na terminalach POS i systemach płatniczych.' },
-      { year: '1999', event: 'Newland wprowadza pierwszy własny czytnik kodów kreskowych. Początek dywizji AIDC (Automatic Identification and Data Capture), która stanie się globalnym graczem.' },
-      { year: '2003', event: 'Premiera pierwszego autorskiego chipu dekodującego UIMG (Ultra Intelligent Mega-pixel Imaging). Newland staje się jednym z kilku producentów na świecie z własną technologią dekodowania — obok Zebra i Honeywell.' },
-      { year: '2010', event: 'IPO na giełdzie w Shenzhen (ticker: 000997). Przychody: ok. 200 mln USD. Ponad 3 000 pracowników. Ekspansja na rynki europejskie i azjatyckie.' },
-      { year: '2013', event: 'Newland zostaje nr 1 na świecie w segmencie skanerów POS i terminali płatniczych pod względem wolumenu sprzedaży. Ponad 10 milionów urządzeń rocznie.' },
-      { year: '2017', event: 'Premiera UIMG 5. generacji z prędkością dekodowania >60 fps. Portfel patentów przekracza 100. Wejście w segment terminali mobilnych enterprise (seria MT90 Orca).' },
-      { year: '2020', event: 'Przejęcie Chiyu Technology (kontrola dostępu i IoT). Przychody grupy: ok. 600 mln USD. Ponad 5 000 pracowników w 8 biurach na świecie.' },
-      { year: '2023', event: 'Otwarcie biura europejskiego Newland EMEA w Warszawie (lipiec 2023). Dystrybucja AIDC przez Ingram Micro EMEA. Newland buduje obecność na rynku polskim.' },
-      { year: '2024', event: 'UIMG 6. generacji (>120 fps). Premiera terminali MT93 Megattera i MT95 Kambur Pro II z 5G. Szacowane przychody grupy: ok. 800 mln USD. Pozycja #4 AIDC globalnie (za Zebra, Honeywell, Datalogic).' },
-    ],
+    timeline: [],
 
     // ────────────────────────────────
     // O FIRMIE
     // ────────────────────────────────
     aboutParagraphs: [
-      'Newland Technology Group to chiński producent urządzeń AIDC i systemów POS z siedzibą w Fuzhou (prowincja Fujian). Firma działa od 1994 roku, zatrudnia ponad 5 500 pracowników i jest notowana na giełdzie w Shenzhen (ticker: 000997). Newland jest czwartym co do wielkości producentem urządzeń AIDC na świecie — za Zebrą, Honeywell i Datalogic — oraz numerem jeden w segmencie skanerów POS i terminali płatniczych pod względem wolumenu sprzedaży.',
+      'Newland Technology Group to chiński producent urządzeń AIDC i systemów POS z siedzibą w Fuzhou (prowincja Fujian). Firma działa od 1994 roku, zatrudnia ponad 5 500 pracowników i jest notowana na giełdzie w Shenzhen (ticker: 000997). Pierwszy własny czytnik kodów pokazała w 1999 roku, a od lipca 2023 roku ma biuro europejskie w Warszawie. Newland jest czwartym co do wielkości producentem urządzeń AIDC na świecie — za Zebrą, Honeywell i Datalogic — oraz numerem jeden w segmencie skanerów POS i terminali płatniczych pod względem wolumenu sprzedaży.',
       'Kluczową przewagą technologiczną Newland jest własny chip dekodujący UIMG (Ultra Intelligent Mega-pixel Imaging), rozwijany od 2003 roku. Szósta generacja (2024) dekoduje kody 1D i 2D z prędkością ponad 120 fps — porównywalną z topowymi silnikami Zebra SE55 i Honeywell N7. Newland posiada ponad 120 patentów z zakresu imaging i dekodowania. Dywizja AIDC obejmuje skanery ręczne (serie HR, NVH), terminale mobilne (serie MT, N7) i akcesoria.',
       'Od lipca 2023 roku Newland EMEA ma biuro w Warszawie — jedyne w tej części Europy. Dystrybucja odbywa się przez [Ingram Micro EMEA](https://www.ingrammicro.com) — jednego z największych dystrybutorów IT w Europie. TAKMA oferuje pełną gamę skanerów i terminali Newland z cenami netto aktualizowanymi codziennie, doradztwo przy wyborze modelu, konfigurację EasySet i serwis pogwarancyjny.',
     ],
@@ -910,16 +881,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
     ],
 
-    timeline: [
-      {
-        year: '1993',
-        event: 'Powstaje Magicard. Firma od początku skupia się na drukarkach kart wykorzystywanych m.in. do identyfikacji osób, kontroli dostępu, płatności i przechowywania danych.',
-      },
-      {
-        year: '2021',
-        event: 'Magicard dołącza do Brady Corporation i od tej pory działa jako Magicard by Brady.',
-      },
-    ],
+    timeline: [],
 
     aboutParagraphs: [
       'Magicard działa od 1993 roku i specjalizuje się w drukarkach kart identyfikacyjnych. Urządzenia tej marki służą do przygotowywania identyfikatorów ze zdjęciem, kart dostępu, kart płatniczych oraz nośników danych. Korzystają z nich firmy, szkoły, placówki ochrony zdrowia, administracja i operatorzy infrastruktury.',
