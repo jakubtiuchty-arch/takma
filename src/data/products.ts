@@ -65651,7 +65651,9 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
         answer: 'Standardowo 12 miesięcy w serwisie producenta. Na zapytanie sprzedajemy pakiety Epson CoverPlus, które wydłużają ochronę do 3, 4 lub 5 lat, także w wariancie z naprawą u klienta.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks C3500 (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c3500-karta-katalogowa-pl.pdf', size: '2,0 MB' },
+    ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c3500-%28incl-nicelabel-download%29/p/13675',
     createdAt: '2026-09-19',
   },
