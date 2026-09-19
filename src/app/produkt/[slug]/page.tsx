@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getProductStock, getBundleLivePrices } from '@/lib/product-stock'
+import { getProductStock, getBundleLivePrices, getSchemaOffer } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
 import LiveProductSchema from './LiveProductSchema'
@@ -455,12 +455,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const schemaPartNumber = product.variants?.[0]?.partNumber || specPartNumber || product.id
   // Żywa cena i dostępność z dystrybutorów dla produktu bez wariantów — to, co widzi klient na karcie.
   // Bez niej schema miała statyczny priceFrom albo (przy jego braku) żadnej oferty, choć karta pokazywała cenę.
-  const liveRow = !product.variants?.length && specPartNumber
-    ? initialStock?.find((r) => r.partNumber === specPartNumber)
-    : undefined
-  const liveOffer = liveRow?.found && liveRow.price && liveRow.price > 0
-    ? { price: liveRow.price, availability: liveRow.availability }
-    : undefined
+  const liveOffer = !product.variants?.length ? await getSchemaOffer(specPartNumber) : undefined
   // Check if product has any valid price (> 0) at product or variant level (albo żywa oferta)
   const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
     (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer

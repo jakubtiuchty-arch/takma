@@ -22,6 +22,28 @@ export const getProductStock = cache(async (slug: string): Promise<StockInfo[] |
 })
 
 /**
+ * Cena i dostępność do JSON-LD dla produktu bez wariantów (jeden numer katalogowy).
+ * Karta pobiera cenę z /api/stock dopiero w przeglądarce, więc bez tego schema pokazywała
+ * statyczny priceFrom albo — przy jego braku — nie miała oferty wcale. Google porównuje cenę
+ * w schema z widoczną na stronie, więc obie muszą pochodzić z tego samego źródła.
+ * Błąd bazy albo dystrybutora nie może wywrócić renderu: wtedy zostaje priceFrom.
+ */
+export const getSchemaOffer = cache(async (
+  partNumber: string | undefined,
+): Promise<{ price: number; availability: StockInfo['availability'] } | undefined> => {
+  if (!partNumber) return undefined
+  try {
+    const response = await lookupUnifiedStock([partNumber])
+    const row = (response.body.results ?? [])[0]
+    if (!row?.found || row.price == null || row.price <= 0) return undefined
+    return { price: row.price, availability: row.availability }
+  } catch (error) {
+    console.error('[schema] brak ceny na żywo dla', partNumber, error)
+    return undefined
+  }
+})
+
+/**
  * Ceny netto na żywo dla zestawu startowego i jego składników (PN → cena). Baner „zamiast X zł”
  * i sekcja „Co jest w zestawie” liczą z tego samego źródła co cena drukarki obok.
  * Brak odpowiedzi dystrybutora = pusta mapa, komponenty wracają do priceFrom.
