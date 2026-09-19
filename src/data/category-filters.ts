@@ -1320,16 +1320,14 @@ categoryFilters['akcesoria-do-drukarek-etykiet'] = [
 ]
 
 /**
- * Tusze i etykiety do kolorowych drukarek (Epson ColorWorks): rodzaj i materiał z wiersza
+ * Etykiety do kolorowych drukarek (Epson ColorWorks): rodzaj i materiał z wiersza
  * „Rodzaj”/„Materiał” w specyfikacji, szerokość z nazwy, cena z priceFrom.
  */
-categoryFilters['tusze-i-etykiety-do-kolorowych-drukarek'] = [
+categoryFilters['etykiety-do-kolorowych-drukarek'] = [
   {
     specKey: 'rodzaj',
     label: 'Rodzaj',
     derived: [
-      { value: 'Tusze', pattern: 'SJIC22P', specs: ['Model wkładu'] },
-      { value: 'Pojemnik konserwacyjny', pattern: 'maintenance box', specs: ['Rodzaj'] },
       { value: 'Etykiety wykrojone', pattern: 'wykrojone', specs: ['Rodzaj'] },
       { value: 'Etykiety ciągłe', pattern: 'Etykiety ciągłe', specs: ['Rodzaj'] },
       { value: 'Papier do biletów', pattern: 'biletów', specs: ['Rodzaj'] },

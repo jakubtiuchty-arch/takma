@@ -198,6 +198,7 @@ const nextConfig = {
       { source: '/datalogic', destination: '/terminale-datalogic', permanent: true },
       { source: '/citizen', destination: '/drukarki-etykiet-citizen', permanent: true },
       { source: '/brother', destination: '/drukarki-etykiet-brother', permanent: true },
+      { source: '/tusze-i-etykiety-do-kolorowych-drukarek', destination: '/etykiety-do-kolorowych-drukarek', permanent: true },
       { source: '/skanery-kodow', destination: '/skanery-kodow-kreskowych', permanent: true },
       { source: '/skanery-kodow-zebra', destination: '/skanery-kodow-kreskowych-zebra', permanent: true },
       { source: '/tasmy-wax', destination: '/tasmy-termotransferowe', permanent: true },

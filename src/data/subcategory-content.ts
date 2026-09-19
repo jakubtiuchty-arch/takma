@@ -3528,26 +3528,72 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   },
 
   // ============================================
-  // TUSZE I ETYKIETY DO KOLOROWYCH DRUKAREK (Epson ColorWorks) — 19.09.2026
+  // TUSZE DO KOLOROWYCH DRUKAREK (Epson ColorWorks) — 19.09.2026
   // ============================================
-  'tusze-i-etykiety-do-kolorowych-drukarek': {
+  'tusze-do-kolorowych-drukarek': {
     updatedAt: '2026-09-19',
     definition: {
-      heading: 'Tusze i etykiety do Epson ColorWorks C3500',
-      content: 'Kolorowa drukarka etykiet zużywa trzy rzeczy: tusz w czterech osobnych wkładach, pojemnik konserwacyjny i etykiety z powleczeniem pod tusz. Wkłady SJIC22P zawierają tusz pigmentowy odporny na wodę, pojemnik SJMB3500 zbiera tusz zużyty przy czyszczeniu głowicy, a rolki Epson Premium Matte i High Gloss to papier samoprzylepny, który wchłania tusz i trzyma kolor. Do biletów służy papier Premium Matte Ticket bez kleju. Wszystkie pozycje w tej kategorii pasują do ColorWorks C3500 i C4000.',
+      heading: 'Tusze do Epson ColorWorks C3500',
+      content: 'ColorWorks C3500 drukuje z czterech osobnych wkładów SJIC22P: czarnego, cyan, magenty i żółtego. Tusz jest pigmentowy: cząstki barwnika po wyschnięciu zostają na powierzchni papieru i nie rozpuszczają się ponownie w wodzie, więc etykieta znosi lodówkę, wilgotne dłonie i tarcie w transporcie. Wkład wymienia się tylko wtedy, gdy skończy się dany kolor. Piątym materiałem jest pojemnik konserwacyjny SJMB3500, który zbiera tusz zużyty przy czyszczeniu głowicy; drukarka sama zgłasza jego zapełnienie.',
     },
     buyingGuide: {
-      heading: 'Jak dobrać materiały do kolorowej drukarki etykiet?',
+      heading: 'Jak kupować tusze do kolorowej drukarki etykiet?',
+      items: [
+        'Kolorami, nie kompletami. Zużycie zależy od projektu etykiety: niebieskie logo zużywa cyan i magentę, czarny tekst prawie wyłącznie czarny. Po pierwszym miesiącu drukarka pokaże na wyświetlaczu, które wkłady schodzą najszybciej.',
+        'Zapas na czas dostawy. Jeden komplet CMYK i jeden pojemnik konserwacyjny na półce wystarczą, żeby drukarka nie stanęła w środku partii.',
+        'Tylko oryginalne wkłady. SJIC22P ma chip i pojemność dobraną do głowicy C3500; zamienniki bywają przyczyną zapowietrzenia dysz i utraty gwarancji.',
+        'Pojemnik konserwacyjny to też materiał eksploatacyjny. Po jego zapełnieniu drukarka zatrzymuje druk do czasu wymiany, a wymiana trwa minutę i nie wymaga narzędzi.',
+      ],
+    },
+    expertAuthority: 'TAKMA dobiera tusze razem z drukarką i etykietami: na podstawie pliku etykiety liczymy zużycie każdego koloru i koszt jednej etykiety, żeby klient wiedział, ile wkładów zamawiać i jak często.',
+    technicalDeepDive: 'Wkład czarny SJIC22P(K) ma 32,6 ml, kolorowe SJIC22P(C), (M) i (Y) po 32,5 ml. Głowica piezoelektryczna C3500 ma 360 dysz na kolor i nakłada tusz bez podgrzewania, dlatego wkłady nie mają własnych grzałek i są tańsze niż w drukarkach termicznych typu bubble jet. Przy dłuższych przerwach drukarka uruchamia czyszczenie dysz, które zużywa niewielką ilość tuszu i miejsce w pojemniku konserwacyjnym.',
+    useCases: [
+      { title: 'Etykiety z logo w jednym kolorze', description: 'Firma drukuje etykiety z zielonym logo i czarnym tekstem: zużywa głównie żółty, cyan i czarny, magenta schodzi najwolniej. Zamawia wkłady pojedynczo według stanu na wyświetlaczu.' },
+      { title: 'Etykiety ze zdjęciem produktu', description: 'Producent kosmetyków drukuje etykiety z pełnokolorowym tłem, więc wszystkie cztery wkłady zużywają się równo; trzyma zapas kompletu CMYK.' },
+    ],
+    uniqueInsights: {
+      heading: 'O czym warto pamiętać',
+      items: [
+        { title: 'Liczba etykiet z wkładu zależy od pokrycia', text: 'Etykieta z logo i tekstem zużywa ułamek tuszu, jaki zużywa etykieta ze zdjęciem na całym tle. Dlatego liczymy koszt dla konkretnego projektu, a nie podajemy jednej stawki.' },
+        { title: 'Drukarka lubi pracować regularnie', text: 'Przy długich przestojach głowica wymaga czyszczenia, które zużywa tusz. Jeśli drukujesz raz na kwartał, wydruk wyjdzie drożej niż przy codziennej pracy.' },
+      ],
+    },
+    faq: [
+      { question: 'Ile etykiet wydrukuje jeden wkład?', answer: 'Producent nie podaje jednej liczby, bo zużycie zależy od pokrycia kolorem. Wkład ma około 32,5 ml. Przy etykiecie z logo i tekstem starcza na tysiące sztuk, przy pełnokolorowym tle na kilkaset. Na podstawie pliku etykiety policzymy zużycie dla konkretnego projektu.' },
+      { question: 'Czy tusze SJIC22P pasują do innych drukarek Epson?', answer: 'Nie. Wkłady SJIC22P są przeznaczone do ColorWorks C3500. Inne modele ColorWorks używają własnych wkładów.' },
+      { question: 'Czy trzeba wymieniać wszystkie cztery wkłady naraz?', answer: 'Nie. Każdy kolor jest w osobnym wkładzie i wymienia się tylko ten, który się skończył.' },
+      { question: 'Jak często wymienia się pojemnik konserwacyjny?', answer: 'Przy codziennej pracy zwykle co kilka miesięcy. Drukarka pokazuje komunikat, gdy pojemnik jest pełny, i wtedy zatrzymuje druk do wymiany.' },
+    ],
+    comparisons: [
+      { title: 'Tusz pigmentowy vs barwnikowy', content: 'Pigmentowy (SJIC22P): odporny na wodę i światło, matowe wykończenie, do etykiet produktowych, chemicznych i logistycznych. Barwnikowy: żywsze kolory na papierze błyszczącym, ale rozmazuje się od wilgoci; w C3500 nie jest stosowany.' },
+    ],
+    howToSteps: [
+      { name: 'Sprawdź stan wkładów', text: 'Na wyświetlaczu drukarki widać poziom każdego z czterech kolorów i zapełnienie pojemnika konserwacyjnego.' },
+      { name: 'Zamów kolory, które schodzą', text: 'Dokup wkłady pojedynczo według zużycia; komplet CMYK trzymaj jako zapas.' },
+      { name: 'Wymień bez narzędzi', text: 'Otwórz pokrywę wkładów, wyjmij pusty i wciśnij nowy do zatrzaśnięcia; drukarka sama rozpozna wkład.' },
+    ],
+  },
+
+  // ============================================
+  // ETYKIETY DO KOLOROWYCH DRUKAREK (Epson ColorWorks) — 19.09.2026
+  // ============================================
+  'etykiety-do-kolorowych-drukarek': {
+    updatedAt: '2026-09-19',
+    definition: {
+      heading: 'Etykiety do Epson ColorWorks C3500',
+      content: 'Kolorowa drukarka etykiet potrzebuje papieru z powleczeniem pod tusz pigmentowy: warstwa na wierzchu wchłania tusz i nie pozwala mu się rozlać, dzięki czemu kolory są nasycone, a kody czytelne. Rolki Epson Premium Matte to papier matowy, High Gloss to papier błyszczący, oba samoprzylepne z trwałym klejem akrylowym, w rolkach ciągłych i wykrojonych. Papier Premium Matte Ticket nie ma kleju i służy na bilety. Wszystkie pozycje pasują do ColorWorks C3500 i C4000; tusze SJIC22P i pojemnik konserwacyjny są w osobnej kategorii.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać etykiety do kolorowej drukarki?',
       items: [
         'Matowy czy błyszczący. Premium Matte nie odbija światła, dobrze się na nim czyta drobny tekst i kody, i jest tańszy. High Gloss podnosi nasycenie kolorów i wygląd zdjęć, więc trafia na etykiety produktowe widoczne na półce.',
         'Ciągła czy wykrojona rolka. Rolka ciągła daje etykietę dowolnej długości odcinaną gilotyną, dobra przy wielu formatach z jednej rolki. Rolka wykrojona ma gotowe etykiety o stałym wymiarze, drukarka wykrywa przerwy i drukuje dokładnie w polu.',
         'Szerokość rolki. 51 i 76 mm do małych etykiet produktowych, 102 i 105 mm do etykiet wysyłkowych, kartonowych i formatów 102 × 152 mm.',
         'Bilety. Papier do biletów nie ma kleju ani podkładu, jest grubszy (127 µm) i na rolce mieści się 50 m. Nie nadaje się do naklejania.',
-        'Tusz: kupuj kolorami, nie kompletami. Wymienia się tylko ten wkład, który się skończył, a zużycie kolorów zależy od projektu etykiety. Zapas jednego kompletu CMYK i pojemnika konserwacyjnego wystarcza, by drukarka nie stanęła.',
       ],
     },
-    expertAuthority: 'TAKMA sprzedaje materiały do drukarek etykiet od 25 lat, a do kolorowych drukarek Epson dobieramy je razem z drukarką: sprawdzamy format, rodzaj powierzchni i to, jak etykieta ma się zachować na opakowaniu. Na życzenie drukujemy próbkę projektu klienta na wybranym papierze.',
-    technicalDeepDive: 'Tusz SJIC22P jest pigmentowy: cząstki barwnika po wyschnięciu zostają na powierzchni i nie rozpuszczają się ponownie w wodzie, dlatego etykieta wytrzymuje lodówkę, wilgotne dłonie i tarcie w transporcie. Wkład czarny ma 32,6 ml, kolorowe po 32,5 ml.\n\nPapier Epson ma warstwę przyjmującą tusz: na Premium Matte tusz wsiąka i zasycha matowo, na High Gloss zostaje na błyszczącej powłoce i daje głębsze kolory. Obie rolki mają trwały klej akrylowy na bazie wody i biały podkład kraft. Rolki są nawinięte pod drukarki ColorWorks, więc czujnik przerwy i czarnego znacznika czyta je bez kalibracji.',
+    expertAuthority: 'TAKMA sprzedaje etykiety do drukarek od 25 lat, a do kolorowych drukarek Epson dobieramy je razem z drukarką: sprawdzamy format, rodzaj powierzchni i to, jak etykieta ma się zachować na opakowaniu. Na życzenie drukujemy próbkę projektu klienta na wybranym papierze.',
+    technicalDeepDive: 'Papier Epson ma warstwę przyjmującą tusz: na Premium Matte tusz wsiąka i zasycha matowo, na High Gloss zostaje na błyszczącej powłoce i daje głębsze kolory. Obie rolki mają trwały klej akrylowy na bazie wody i biały podkład kraft. Rolki są nawinięte pod drukarki ColorWorks, więc czujnik przerwy i czarnego znacznika czyta je bez kalibracji.',
     useCases: [
       { title: 'Etykiety produktowe 102 × 76 mm na słoiki', description: 'High Gloss z wykrojeniem 102 × 76 mm, 415 etykiet na rolce, ze zdjęciem produktu i składem drukowanym przed każdą partią.' },
       { title: 'Etykiety wysyłkowe 102 × 152 mm z logo', description: 'Premium Matte 102 × 152 mm, 225 etykiet na rolce: adres, kod kreskowy i logo w kolorze na jednej etykiecie.' },
@@ -3558,13 +3604,11 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
       heading: 'Praktyczne uwagi',
       items: [
         { title: 'Zwykłe etykiety termiczne nie zadziałają', text: 'Papier termiczny nie ma warstwy przyjmującej tusz; nadruk pigmentowy na nim się rozmazuje i schnie godzinami. Do kolorowej drukarki potrzebny jest papier powlekany pod inkjet.' },
-        { title: 'Pojemnik konserwacyjny to też materiał eksploatacyjny', text: 'Drukarka sama zgłasza jego zapełnienie i zatrzymuje druk. Warto mieć jeden zapasowy razem z tuszami.' },
-        { title: 'Kolory zużywają się nierówno', text: 'Etykieta z niebieskim logo zużywa cyan i magentę, a czarny prawie wcale. Po pierwszym miesiącu widać, które wkłady kupować częściej.' },
+        { title: 'Rolka ciągła nie ma zaokrąglonych rogów', text: 'Gilotyna tnie prosto, więc etykieta z rolki ciągłej ma proste rogi. Jeśli etykieta ma wyglądać jak z drukarni, wybierz rolkę wykrojoną z gotowym formatem.' },
       ],
     },
     faq: [
-      { question: 'Ile etykiet wydrukuje jeden wkład?', answer: 'Producent nie podaje jednej liczby, bo zużycie zależy od pokrycia kolorem. Wkład ma około 32,5 ml. Przy etykiecie z logo i tekstem starcza na tysiące sztuk, przy pełnokolorowym tle na kilkaset. Na podstawie pliku etykiety policzymy zużycie dla konkretnego projektu.' },
-      { question: 'Czy tusze SJIC22P pasują do innych drukarek Epson?', answer: 'Nie. Wkłady SJIC22P są przeznaczone do ColorWorks C3500. Inne modele ColorWorks używają własnych wkładów.' },
+      { question: 'Czy do ColorWorks C3500 pasują zwykłe etykiety termiczne?', answer: 'Nie. Papier termiczny nie ma warstwy przyjmującej tusz, nadruk pigmentowy na nim się rozmazuje i długo schnie. Potrzebny jest papier powlekany pod druk atramentowy, taki jak rolki Epson z tej kategorii.' },
       { question: 'Czy etykiety Premium Matte i High Gloss pasują do C4000?', answer: 'Tak, producent podaje zgodność z ColorWorks C3500 i C4000.' },
       { question: 'Czy papier do biletów można naklejać?', answer: 'Nie, Premium Matte Ticket nie ma kleju. Do naklejania służą rolki Premium Matte Label i High Gloss Label.' },
     ],
@@ -3575,7 +3619,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     howToSteps: [
       { name: 'Sprawdź format etykiety w projekcie', text: 'Wymiary etykiety w NiceLabel muszą odpowiadać rolce: dla wykrojonych wybierz rolkę o tym formacie, dla ciągłych ustaw długość w programie.' },
       { name: 'Wybierz powierzchnię', text: 'Matowa do tekstu i kodów, błyszcząca do zdjęć i produktów na półce.' },
-      { name: 'Zamów zapas tuszu', text: 'Po pierwszym miesiącu sprawdź na wyświetlaczu, które kolory schodzą najszybciej, i tych trzymaj więcej.' },
+      { name: 'Policz zużycie', text: 'Etykiety na rolce podziel przez dzienny nakład; zamów tyle rolek, żeby zapas starczył na czas dostawy plus dwa tygodnie.' },
     ],
   },
 }

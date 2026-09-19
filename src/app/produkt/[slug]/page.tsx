@@ -1207,10 +1207,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               )}
               {(showLabelsNav || showFoilNav || showRibbonNav) && (
                 <a
-                  href="#etykiety-papierowe"
+                  href={isColorPrinter ? '#tusze' : '#etykiety-papierowe'}
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
-                  {product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
+                  {isColorPrinter ? 'Tusze i etykiety' : product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
                 </a>
               )}
               {(relatedPlainCards.length > 0 || relatedRfidCards.length > 0) && (
@@ -1237,7 +1237,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Oprogramowanie
                 </a>
               )}
-              {relatedAccessories.length > 0 && (
+              {relatedAccessories.length > 0 && !isColorPrinter && (
                 <a
                   href="#akcesoria"
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
@@ -1563,6 +1563,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
                 b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
+            {isColorPrinter && relatedAccessories.length > 0 && (
+              <RelatedProducts
+                id="tusze"
+                title={`Tusze do ${product.name}`}
+                products={relatedAccessories as typeof products}
+                showDualButtons
+              />
+            )}
             {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
@@ -1578,7 +1586,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
-                title={isColorPrinter ? `Tusze i etykiety do ${product.name}` : product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
+                title={isColorPrinter ? `Etykiety do ${product.name}` : product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
                 labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
                 // drukarki kart: 4 taśmy + „Pokaż pozostałe”, jak sekcja „Karty PVC” niżej
@@ -1663,7 +1671,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
 
             {/* Akcesoria / Powiązane produkty */}
-            {relatedAccessories.length > 0 && (
+            {relatedAccessories.length > 0 && !isColorPrinter && (
               <RelatedProducts
                 id="akcesoria"
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
