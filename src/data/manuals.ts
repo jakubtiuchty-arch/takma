@@ -1150,7 +1150,6 @@ export const manuals: Manual[] = [
     productSlug: 'epson-colorworks-c3500',
     documents: [
       { type: 'user-guide', title: 'Technical Reference Guide TM-C3500 (pełna dokumentacja techniczna)', lang: 'en', file: '/instrukcje/epson-colorworks-c3500-trg-en.pdf', size: '14,5 MB' },
-      { type: 'datasheet', title: 'Karta katalogowa ColorWorks C3500', lang: 'pl', file: '/downloads/epson-colorworks-c3500-karta-katalogowa-pl.pdf', size: '2,0 MB' },
     ],
     polishManual: epsonColorworksC3500Pl,
     keywords: [
