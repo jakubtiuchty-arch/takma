@@ -456,7 +456,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     name: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')} — ${product.name}`,
-    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: film producenta z polskim lektorem i napisami dla drukarki ${product.name}.`,
+    // „dla drukarki X” tylko przy urządzeniach — przy taśmie czy kartach wychodziło „dla drukarki Taśma…”
+    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: film producenta z polskim lektorem i napisami ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
     thumbnailUrl: [`https://www.takma.com.pl${v.poster}`],
     contentUrl: v.url,
     uploadDate: v.published,
@@ -1117,8 +1118,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         {/* Tabs / Details */}
         <div className="mt-12 lg:mt-16">
           <div className="border-b border-gray-200">
-            {/* Zakładki zawijają się do drugiego wiersza zamiast chować za krawędzią (ukryty scrollbar nie zdradzał, że jest więcej) */}
-            <nav className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-x-1 sm:gap-x-3 lg:gap-x-4 -mb-px">
+            {/*
+              Na telefonie zakładki przewijają się w poziomie, od `lg` zawijają do drugiego wiersza.
+              Przy kartach drukarek jest ich kilkanaście i na desktopie ostatnie („Akcesoria”,
+              „Podobne produkty”) wychodziły poza kadr, a ukryty scrollbar tego nie zdradzał.
+            */}
+            <nav className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-x-1 sm:gap-x-3 lg:gap-x-4 lg:flex-wrap lg:justify-center lg:overflow-x-visible -mb-px">
               {showVariants && (
                 <a
                   href="#warianty"
