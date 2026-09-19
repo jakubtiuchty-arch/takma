@@ -18,6 +18,7 @@ const footerLinks = {
     { name: 'Datalogic', href: '/katalog?producent=datalogic' },
     { name: 'Newland', href: '/katalog?producent=newland' },
     { name: 'TSC', href: '/katalog?producent=tsc' },
+    { name: 'Epson', href: '/katalog?producent=epson' },
   ],
   landingi: [
     { name: 'Zebra ZT411', href: 'https://zebrazt411.pl' },
