@@ -3,12 +3,12 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { isLabelPN } from '@/data/products'
+import { isLabelPN, getCatalogNetPrice } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 import { applyStockOverrides, MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrides'
-import { selectPurchasePrice } from '@/lib/price-selection'
+import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -428,15 +428,15 @@ export async function lookupUnifiedStock(partNumbers: string[], showDebug = fals
       const jarltechPackagingUnit = 1
 
       const ingramPLN = ingFound ? ing!.ingramPrice : undefined
-      const bluestarPLN = (bsFound && bs!.unitPrice)
-        ? Math.round((bs!.unitPrice * eurRate / bsPackagingUnit) * 100) / 100
-        : undefined
-
       let jarltechPLN: number | undefined
       if (jlFound && jl!.unitPrice) {
         const rawJarltechPLN = jl!.unitPrice * eurRate
         jarltechPLN = Math.round((rawJarltechPLN / jarltechPackagingUnit) * 100) / 100
       }
+      // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama (patrz lib/price-selection)
+      const bluestarPLN = (bsFound && bs!.unitPrice)
+        ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN, bsPackagingUnit).price
+        : undefined
 
       // Wybór ceny zakupu z bezpiecznikiem dwustronnym — patrz lib/price-selection.
       // Odrzuca źródła rażąco poniżej Ingrama (błąd pakietowy) ORAZ samego Ingrama,
@@ -446,7 +446,7 @@ export async function lookupUnifiedStock(partNumbers: string[], showDebug = fals
         ingram: ingramPLN,
         bluestar: bluestarPLN,
         jarltech: jarltechPLN,
-      })
+      }, getCatalogNetPrice(pn))
       const bestRawPricePLN = selection.best
       if (selection.ingramSuspect) {
         console.warn(`[stock] ${pn}: ${selection.rejected.map((r) => `${r.source} ${r.reason}`).join('; ')}`)

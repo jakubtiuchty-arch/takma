@@ -66659,6 +66659,22 @@ export function isLabelPN(partNumber: string): boolean {
   return getAllLabelPartNumbers().has(partNumber)
 }
 
+// Cena katalogowa (netto) po numerze katalogowym — kotwica dla wyboru ceny zakupu,
+// gdy dystrybutorzy rozjeżdżają się o rząd wielkości (lib/price-selection).
+let _catalogPrices: Map<string, number> | null = null
+export function getCatalogNetPrice(partNumber: string): number | undefined {
+  if (!_catalogPrices) {
+    const m = new Map<string, number>()
+    for (const p of products) {
+      for (const v of (p.variants ?? [])) if (v.priceFrom && v.priceFrom > 0) m.set(v.partNumber, v.priceFrom)
+      const pn = p.specifications?.find(s => s.name === 'Part Number')?.value
+      if (pn && p.priceFrom && p.priceFrom > 0 && !m.has(pn)) m.set(pn, p.priceFrom)
+    }
+    _catalogPrices = m
+  }
+  return _catalogPrices.get(partNumber)
+}
+
 // Helper do filtrowania produktów
 export function filterProducts(params: {
   categoryId?: string

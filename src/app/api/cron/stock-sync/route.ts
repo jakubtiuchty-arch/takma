@@ -2,12 +2,12 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
-import { products, isLabelPN } from '@/data/products'
+import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
-import { selectPurchasePrice } from '@/lib/price-selection'
+import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
 
 export const maxDuration = 300 // 5 minutes
 
@@ -223,12 +223,12 @@ export async function GET(request: NextRequest) {
           const jarltechPackagingUnit = 1
 
           const ingramPLN = ingFound ? ing!.ingramPrice : undefined
-          const bluestarPLN = (bsFound && bs!.unitPrice)
-            ? Math.round((bs!.unitPrice * eurRate / bsPackagingUnit) * 100) / 100
-            : undefined
-
           const jarltechPLN = (jtFound && jt!.unitPrice)
             ? Math.round((jt!.unitPrice * eurRate / jarltechPackagingUnit) * 100) / 100
+            : undefined
+          // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama (patrz lib/price-selection)
+          const bluestarPLN = (bsFound && bs!.unitPrice)
+            ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN, bsPackagingUnit).price
             : undefined
 
           // Bezpiecznik dwustronny — patrz lib/price-selection: odrzuca zarówno źródła
@@ -238,7 +238,7 @@ export async function GET(request: NextRequest) {
             ingram: ingramPLN,
             bluestar: bluestarPLN,
             jarltech: jarltechPLN,
-          })
+          }, getCatalogNetPrice(pn))
           const bestRawPricePLN = selection.best
           if (selection.ingramSuspect) {
             suspectPrices.push(pn)
