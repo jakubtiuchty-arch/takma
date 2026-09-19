@@ -217,6 +217,12 @@ export async function middleware(request: NextRequest) {
       'tsc-gilotyna-ml241p', 'tsc-odklejak-ml241p', 'tsc-modul-wifi-bluetooth',
       // Brother
       // Epson ColorWorks (drukarka, tusze, nośniki)
+      'epson-colorworks-c4000e',
+      'epson-tusz-sjic42p-bk-czarny-c13t52m140',
+      'epson-tusz-sjic42p-mk-czarny-matowy-c13t52m540',
+      'epson-tusz-sjic42p-c-cyan-c13t52m240',
+      'epson-tusz-sjic42p-m-magenta-c13t52m340',
+      'epson-tusz-sjic42p-y-zolty-c13t52m440',
       'epson-colorworks-d3800e',
       'epson-tusz-sjic57p-bk-czarny-c13t58j140',
       'epson-tusz-sjic57p-c-cyan-c13t58j240',
