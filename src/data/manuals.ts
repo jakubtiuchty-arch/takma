@@ -35,6 +35,7 @@ import { newlandMt95KamburProIiiPl } from './manual-content/newland-mt95-kambur-
 import { magicard300Pl } from './manual-content/magicard-300-pl'
 import { magicardPronto100Pl } from './manual-content/magicard-pronto100-pl'
 import { magicard600Pl } from './manual-content/magicard-600-pl'
+import { epsonColorworksC3500Pl } from './manual-content/epson-colorworks-c3500-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -127,6 +128,7 @@ export const brandLogos: Record<string, string> = {
   TSC: '/images/partners/logo_tsc.png',
   Brother: '/images/partners/brother_logo.png',
   Magicard: '/images/partners/logo_magicard.png',
+  Epson: '/images/partners/logo_epson.png',
 }
 
 // --- Metadane typów dokumentów (etykieta + opis) ----------------------------
@@ -1136,6 +1138,30 @@ export const manuals: Manual[] = [
       'magicard 600 holokote',
     ],
     updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'epson-colorworks-c3500',
+    model: 'ColorWorks C3500',
+    name: 'Epson ColorWorks C3500',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Kolorowa drukarka etykiet z tuszem pigmentowym CMYK, gilotyną, USB i Ethernet. Skrócona instrukcja po polsku: zakładanie rolki i papieru składanego, wymiana wkładów i pojemnika konserwacyjnego, wykrywanie nośników, sieć, komunikaty na wyświetlaczu, czyszczenie, specyfikacja.',
+    productSlug: 'epson-colorworks-c3500',
+    documents: [
+      { type: 'user-guide', title: 'Technical Reference Guide TM-C3500 (pełna dokumentacja techniczna)', lang: 'en', file: '/instrukcje/epson-colorworks-c3500-trg-en.pdf', size: '14,5 MB' },
+      { type: 'datasheet', title: 'Karta katalogowa ColorWorks C3500', lang: 'pl', file: '/downloads/epson-colorworks-c3500-karta-katalogowa-pl.pdf', size: '2,0 MB' },
+    ],
+    polishManual: epsonColorworksC3500Pl,
+    keywords: [
+      'epson colorworks c3500 instrukcja',
+      'tm-c3500 instrukcja po polsku',
+      'epson c3500 instrukcja obsługi pdf',
+      'colorworks c3500 wymiana tuszu',
+      'c3500 pojemnik konserwacyjny',
+      'epson c3500 manual pdf',
+    ],
+    updatedAt: '2026-09-19',
   },
 ]
 
