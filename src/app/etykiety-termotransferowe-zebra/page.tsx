@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const sub = getSubcategoryBySlug(SLUG)
   const url = `${siteUrl}/${SLUG}`
   return {
-    title: sub?.seoTitle ?? 'Etykiety termotransferowe Zebra | TAKMA',
+    title: sub?.seoTitle ?? 'Etykiety termotransferowe Zebra — papierowe, foliowe, specjalne',
     description: sub?.seoDescription ?? 'Pełna gama etykiet termotransferowych Zebra: papierowe, foliowe i specjalne.',
     openGraph: {
       images: ['/images/takma-og.png'],
