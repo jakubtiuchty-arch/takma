@@ -2,7 +2,7 @@
 """Jev (TypeSafe): analiza konkurencji dla jednego słowa kluczowego.
 
 Użycie:
-  python3 scripts/jev-konkurencja.py <serp.json> [--nasza=/drukarki-etykiet[,/inna-nasza-strona]] [--limit=15] [--md=raport.md] [--json=wynik.json]
+  python3 scripts/jev-konkurencja.py <serp.json> [--nasza=/drukarki-etykiet[,/inna-nasza-strona|https://inna.domena/strona]] [--limit=15] [--md=raport.md] [--json=wynik.json]
 
 serp.json: {"keyword": "...", "paa": ["pytanie", ...], "organic": [{"position", "url", "title", "domain_rating", "traffic"}, ...]}
 (eksport z Ahrefs serp-overview). Skrypt pobiera każdą stronę z listy oraz naszą stronę, wyciąga z HTML fakty
@@ -123,7 +123,9 @@ def stan(kw, url, pr):
 
 strony = [dict(s) for s in serp['organic'] if s.get('url')][:LIMIT]
 for sciezka_naszej in NASZA.split(','):
-    strony.append({'position': 0, 'url': 'https://www.takma.com.pl' + sciezka_naszej.strip(), 'title': 'nasza strona', 'domain_rating': None, 'traffic': None, 'nasza': True})
+    sciezka_naszej = sciezka_naszej.strip()
+    adres = sciezka_naszej if sciezka_naszej.startswith('http') else 'https://www.takma.com.pl' + sciezka_naszej
+    strony.append({'position': 0, 'url': adres, 'title': 'nasza strona', 'domain_rating': None, 'traffic': None, 'nasza': True})
 wyniki = []
 tokeny = 0
 for s in strony:
@@ -193,7 +195,7 @@ if top:
 for wn in nasze:
     lk = [(m, wn['ocena'][m], med[m]) for m in metryki if wn['ocena'][m] + 0.15 < med[m]]
     pw = [(m, wn['ocena'][m], med[m]) for m in metryki if wn['ocena'][m] > med[m] + 0.15]
-    L.append(f'\n## Nasza strona {urlparse(wn["url"]).path} na tle TOP 10\n')
+    L.append(f'\n## Nasza strona {urlparse(wn["url"]).netloc}{urlparse(wn["url"]).path} na tle TOP 10\n')
     L.append('Luki (ocena poniżej mediany TOP 10):' if lk else 'Brak luk względem mediany TOP 10.')
     for m, n, t in lk: L.append(f'- {m}: nasza {n:.2f}, mediana {t:.2f}')
     L.append('\nPrzewagi:' if pw else '')

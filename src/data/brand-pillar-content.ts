@@ -175,7 +175,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     // SERWIS
     // ────────────────────────────────
     service: [
-      'Serwis urządzeń Zebra realizujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym z zapleczem części zamiennych. Naprawy drukarek (głowice, wałki, moduły sieciowe), terminali (ekrany, baterie, porty ładowania), skanerów (okna skanujące, kable, podstawki). Czas naprawy: 3–5 dni roboczych. Odbiór i dostawa kurierem w całej Polsce.',
+      'Serwis urządzeń Zebra realizujemy we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl) — autoryzowanym centrum serwisowym z zapleczem części zamiennych. Naprawy drukarek (głowice, wałki, moduły sieciowe), terminali (ekrany, baterie, porty ładowania), skanerów (okna skanujące, kable, podstawki). Czas naprawy: 3–5 dni roboczych. Odbiór i dostawa kurierem w całej Polsce. Nowe drukarki, głowice i części Zebra sprzedaje też [sklep prowadzony przez serwis-zebry.pl](https://www.serwis-zebry.pl/sklep/drukarki-etykiet).',
       'Dla terminali i drukarek dostępne są kontrakty [Zebra OneCare](/poradnik/jak-wybrac-terminal-mobilny) — rozszerzona gwarancja producenta z naprawą uszkodzeń przypadkowych (rozbity ekran, pęknięta obudowa, zalanie). Warianty: Essential (naprawa 3 dni), Select (priorytet), Premier (next-day replacement). Kontrakty od 1 do 5 lat — wykupujesz w ciągu 30 dni od zakupu urządzenia. Ceny OneCare widoczne na kartach produktów.',
     ],
 
@@ -293,7 +293,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         question: 'Gdzie są wszystkie drukarki, skanery, terminale i tablety Zebra?',
-        answer: 'Każda grupa ma własną stronę z pełną listą modeli i cenami netto: [drukarki etykiet Zebra](/drukarki-etykiet-zebra) z seriami ZD, ZT i ZQ, [skanery kodów kreskowych Zebra](/skanery-kodow-kreskowych-zebra) z seriami LI i DS, [terminale mobilne Zebra](/terminale-mobilne-zebra), czyli kolektory danych serii TC i MC, oraz [tablety przemysłowe Zebra](/tablety-przemyslowe-zebra) serii ET. Drukarki kart Zebra ZC100, ZC300 i ZC350 są w kategorii [drukarki kart](/drukarki-kart).',
+        answer: 'Każda grupa ma własną stronę z pełną listą modeli i cenami netto: [drukarki etykiet Zebra](/drukarki-etykiet-zebra) z seriami ZD, ZT i ZQ, [skanery kodów kreskowych Zebra](/skanery-kodow-kreskowych-zebra) z seriami LI i DS, [terminale mobilne Zebra](/terminale-mobilne-zebra), czyli kolektory danych serii TC i MC, oraz [tablety przemysłowe Zebra](/tablety-przemyslowe-zebra) serii ET. Drukarki kart Zebra ZC100, ZC300 i ZC350 są w kategorii [drukarki kart](/drukarki-kart). Drukarki etykiet Zebra z cenami na żywo sprzedaje również [sklep Zebra prowadzony przez nasz serwis](https://www.serwis-zebry.pl/sklep/drukarki-etykiet).',
       },
     ],
 

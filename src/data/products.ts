@@ -262,12 +262,12 @@ export const categories: Category[] = [
     id: 'materialy-eksploatacyjne',
     slug: 'materialy-eksploatacyjne',
     name: 'Materiały eksploatacyjne',
-    description: 'Etykiety, taśmy barwiące (ribbon), opaski identyfikacyjne i karty PVC do drukarek Zebra',
-    seoTitle: 'Materiały eksploatacyjne Zebra | Etykiety, taśmy ribbon, opaski',
-    seoDescription: 'Oryginalne materiały eksploatacyjne Zebra: etykiety termotransferowe papierowe i foliowe, etykiety termiczne, taśmy barwiące woskowe i żywiczne, opaski identyfikacyjne, karty PVC. Najniższe ceny, szybka dostawa.',
-    longDescription: 'Kompletna oferta oryginalnych materiałów eksploatacyjnych Zebra Technologies. Etykiety papierowe termotransferowe (Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp) i foliowe (Z-Ultimate 3000T, 8000T CryoCool), etykiety termiczne (Z-Select 2000D, Z-Perform 2000D), taśmy barwiące woskowe (2300 Wax), woskowo-żywiczne (3200 Wax/Resin) i żywiczne (5095 Resin), opaski identyfikacyjne dla służby zdrowia oraz karty PVC do drukarek kart. Wszystkie materiały kalibrowane pod drukarki Zebra — gwarantujemy optymalną jakość druku, trwałość nadruku i minimalizację przestojów.',
+    description: 'Etykiety, taśmy barwiące i opaski Zebra, taśmy do drukarek kart Zebra i Magicard oraz karty PVC i zbliżeniowe',
+    seoTitle: 'Materiały eksploatacyjne Zebra i Magicard | Etykiety, taśmy, karty',
+    seoDescription: 'Etykiety termiczne i termotransferowe, taśmy barwiące i opaski Zebra, taśmy do drukarek kart Zebra ZC i Magicard oraz karty PVC i zbliżeniowe. Ceny netto B2B.',
+    longDescription: 'Materiały do drukarek etykiet i drukarek kart. Do drukarek etykiet Zebra: etykiety papierowe termotransferowe (Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp), foliowe (Z-Ultimate 3000T, PolyPro, 8100T CryoCool), etykiety termiczne (Z-Perform 1000D, Z-Select 2000D Removable, PolyPro 4000D, bezpodkładowe ZeroLiner), taśmy barwiące woskowe, woskowo-żywiczne i żywiczne (od 2100 European Wax po 5100 Premium Resin i 8000 ChemResist) oraz opaski Z-Band dla szpitali. Do drukarek kart: taśmy YMCKO, YMCKOK i monochromatyczne do Zebra ZC100, ZC300 i ZC350, taśmy do Magicard Pronto100, 300 i 600 oraz zestaw YMCK z folią retransferową do Prima 8. Do tego karty PVC (białe Standard, Premium Fotodek, HoloPatch do Magicard, samoprzylepne, srebrne i czarne) i karty zbliżeniowe Unique 125 kHz, MIFARE 1K, DESFire EV1 i EV3 oraz dualne. Etykiety i taśmy pochodzą od producentów drukarek, więc czujniki i głowice pracują tak, jak przewidział producent.',
     icon: 'tag',
-    productCount: 110,
+    productCount: 107,
   },
   {
     id: 'akcesoria',
@@ -65924,6 +65924,10 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Jaka drukarka Zebra do magazynu?', answer: 'Do magazynu polecamy drukarki przemysłowe: [ZT111](/produkt/zebra-zt111) (od 2 081 zł, entry-level), [ZT231](/produkt/zebra-zt231) (od 2 551 zł, LCD + RFID), [ZT411](/produkt/zebra-zt411) (od 5 078 zł, 600 dpi + linerless) lub ZT610 (od 10 431 zł, heavy-duty). Wybór zależy od wolumenu etykiet, wymaganej rozdzielczości i potrzeby opcji jak RFID czy gilotyna.' },
       { question: 'Czy drukarki Zebra można zintegrować z WMS?', answer: 'Tak. Drukarki Zebra obsługują języki ZPL II i EPL2 (standard branżowy), protokół [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) do zdalnego zarządzania, oraz łączność Ethernet/Wi-Fi/USB. Integrują się z każdym systemem WMS, ERP, BaseLinker, Shoper, PrestaShop i innymi platformami. TAKMA pomaga w konfiguracji i integracji.' },
       { question: 'Jakie są alternatywy dla drukarek Zebra?', answer: 'Główne alternatywy to: [Brother](/drukarki-etykiet-brother) (3–5 lat gwarancji z głowicą, BarTender gratis, emulacja ZPL II, od 461 zł), [Honeywell](/drukarki-etykiet-honeywell) (porównywalny segment enterprise, Printer Edge), TSC (tańsze biurkowe i przemysłowe). Zebra dominuje rynek z [ponad 50% udziałem](https://www.zebra.com/us/en/about-zebra.html) i najszerszym ekosystemem (Link-OS, [serwis-zebry.pl](https://www.serwis-zebry.pl), wsparcie globalne).' },
+      {
+        question: 'Czy drukarki Zebra można kupić także w sklepie serwis-zebry.pl?',
+        answer: 'Tak. Nasz serwis prowadzi [sklep z drukarkami etykiet Zebra](https://www.serwis-zebry.pl/sklep/drukarki-etykiet) z cenami na żywo, głowicami i częściami zamiennymi. Zamówienie w obu sklepach obsługuje ten sam zespół TAKMA, a serwis pogwarancyjny drukarek Zebra jest w tym samym miejscu.',
+      },
     ],
   },
   {
