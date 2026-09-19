@@ -85,7 +85,8 @@ export async function middleware(request: NextRequest) {
       'zebra-futeral-zq310', 'zebra-futeral-zq320-plus',
       'zebra-futeral-zq210', 'zebra-futeral-zq220-plus',
       // Drukarki kart
-      'magicard-pronto100', 'magicard-300', 'magicard-600-duo', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
+      'magicard-pronto100', 'magicard-300', 'magicard-600-duo', 'magicard-prima-8', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
+      'magicard-zestaw-tasm-prima-8-ymck-folia-retransferowa-prima-831', 'magicard-zestaw-czyszczacy-prima-8-e9887',
       'magicard-tasma-ymcko-pronto100-100', 'magicard-tasma-ymcko-pronto100-200',
       'magicard-zestaw-czyszczacy-pronto100-e9100',
       'magicard-tasma-ymcko-300-wydrukow-mc300ymcko-s',

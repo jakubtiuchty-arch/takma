@@ -74,6 +74,14 @@ export const cardPrinterVerdicts: CardPrinterVerdict[] = [
     cons: ['Najwyższa cena wśród modeli Magicard', 'Brak kodera w oferowanej wersji'],
     verdict: 'Dla działów, które drukują dwustronnie i chcą ustawić drukarkę tam, gdzie nie ma gniazda sieciowego sieciowego.',
   },
+  {
+    productId: 'magicard-prima-8',
+    table: { druk: 'Retransferowy, jedno- lub dwustronny', predkosc: 'ok. 100 kart/h', kodowanie: 'Stykowy i zbliżeniowy (Prima 815)', lacznosc: 'USB, Ethernet', zabezpieczenia: 'Folia na całej karcie, laminator (opcja)' },
+    bestFor: 'Karty z chipem i identyfikatory na lata',
+    pros: ['Nadruk do samej krawędzi pod folią, także na kartach z chipem', 'Wersja Prima 815 koduje chip stykowy i zbliżeniowy podczas druku'],
+    cons: ['Najwyższa cena w zestawieniu i najwolniejszy druk, około 100 kart/h', 'Sterownik tylko dla Windows'],
+    verdict: 'Jedyna drukarka retransferowa w zestawieniu. Ma sens, gdy karty mają wyglądać jak z drukarni i wytrzymać lata w portfelu albo gdy drukuje się na kartach z chipem, na których druk bezpośredni zostawia ślady. Do prostych identyfikatorów to za dużo drukarki.',
+  },
 ]
 
 export const cardPrinterUseCases: CardPrinterUseCase[] = [
@@ -83,4 +91,5 @@ export const cardPrinterUseCases: CardPrinterUseCase[] = [
   { title: 'Identyfikatory trudne do podrobienia', productId: 'zebra-zc350', reason: 'taśmy specjalne z panelem perłowym, metalicznym lub podwójną warstwą ochronną', alternativeId: 'magicard-600-duo', alternativeReason: 'gdy wystarczy własny wzór znaku wodnego HoloKote' },
   { title: 'Drukarka w sieci Wi-Fi, bez kabla sieciowego', productId: 'magicard-600-duo', reason: 'jedyny model zestawienia z Wi-Fi w standardzie' },
   { title: 'Największe serie i tempo pracy', productId: 'zebra-zc350', reason: 'do 225 kart na godzinę w kolorze i kosz odrzutów w wersji dwustronnej' },
+  { title: 'Karty z chipem i identyfikatory, które mają wytrzymać lata', productId: 'magicard-prima-8', reason: 'druk retransferowy do krawędzi pod folią, także na kartach stykowych i zbliżeniowych; koder w wersji Prima 815', alternativeId: 'zebra-zc350', alternativeReason: 'gdy wystarczy druk bezpośredni z taśmą specjalną i koderem' },
 ]

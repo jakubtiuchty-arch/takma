@@ -1124,6 +1124,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Magicard Pronto100', pattern: 'Pronto', specs: ['Kompatybilność'] },
         { value: 'Magicard 300', pattern: 'Magicard 300', specs: ['Kompatybilność'] },
         { value: 'Magicard 600', pattern: 'Magicard 600', specs: ['Kompatybilność'] },
+        { value: 'Magicard Prima 8', pattern: 'Prima 8', specs: ['Kompatybilność'] },
         { value: 'Zebra ZC100 / ZC300', pattern: 'ZC100', specs: ['Kompatybilność'] },
         { value: 'Zebra ZC350', pattern: 'ZC350', specs: ['Kompatybilność'] },
       ],
