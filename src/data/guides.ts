@@ -76,7 +76,7 @@ export const guides: Guide[] = [
   updatedAt: '2026-09-19',
   readTime: '9 min',
   heroImage: '/images/guides/jaka-drukarka-do-kart-plastikowych.webp',
-  heroImageAlt: 'Trzy biurkowe drukarki kart plastikowych na ciemnym tle, jedna wysuwa gotowy identyfikator',
+  heroImageAlt: 'Drukarki kart Magicard Pronto100, Zebra ZC350 i Magicard 600 Duo na ciemnym tle studia',
   cardImagePosition: '100% center',
   sections: [
     {
