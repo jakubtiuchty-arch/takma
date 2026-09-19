@@ -314,7 +314,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   ? 'netto/opak.'
                   : product.priceTiers
                     ? 'netto/szt.'
-                    : product.categoryId === 'materialy-eksploatacyjne' ? 'netto/rolka' : 'netto'}
+                    : product.categoryId === 'materialy-eksploatacyjne'
+                      // tusze i pojemnik konserwacyjny do drukarek kolorowych sprzedajemy na sztuki, reszta materiałów to rolki
+                      ? (/^(Tusz|Pojemnik)\b/.test(product.name) ? 'netto/szt.' : 'netto/rolka')
+                      : 'netto'}
               </span>
               {czasWysylki && <span className="block text-xs text-gray-500">{czasWysylki}</span>}
             </div>

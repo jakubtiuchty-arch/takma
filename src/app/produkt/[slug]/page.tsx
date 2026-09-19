@@ -302,6 +302,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
   const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
   const isTTprinter = product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
+  // Kolorowa drukarka (Epson ColorWorks): etykiety Zebry do niej nie pasują, w miejscu sekcji etykiet
+  // idą tusze i nośniki z compatibleAccessories.
+  const isColorPrinter = product.subcategoryIds?.includes('kolorowe-drukarki-etykiet') ?? false
   // Wymagany rdzeń taśmy: przemysłowe = 25 mm (1"), biurkowe = 12 mm (1/2").
   // Rolka 12 mm nie wejdzie na wieszaki przemysłówki i odwrotnie — filtrujemy rekomendowane taśmy.
   const printerRibbonCore = product.subcategoryIds?.includes('przemyslowe-drukarki-etykiet')
@@ -983,7 +986,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     </ul>
                     {isLabelPrinter && (
                       <div className="px-4 py-3 border-t border-slate-200 flex items-center justify-between gap-3 flex-wrap text-sm">
-                        <span className="text-gray-600">Bez etykiet{isTTprinter ? ' i taśmy' : ''}: dokupujesz osobno</span>
+                        <span className="text-gray-600">{isColorPrinter ? 'Tusze i rolka startowa w zestawie; kolejne etykiety dokupujesz osobno' : `Bez etykiet${isTTprinter ? ' i taśmy' : ''}: dokupujesz osobno`}</span>
                         {product.starterKits?.length ? (
                           <a href="#komplet" className="inline-flex items-center gap-1 font-semibold text-primary-700 hover:text-primary-800">
                             Komplet na pierwszy wydruk <ArrowRightIcon size={14} />
@@ -1560,7 +1563,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
                 b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
-            {isLabelPrinter && !isTTprinter ? (
+            {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
               <PrinterMaterialVariants
@@ -1575,11 +1578,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
-                title={product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
+                title={isColorPrinter ? `Tusze i etykiety do ${product.name}` : product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
                 labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
                 // drukarki kart: 4 taśmy + „Pokaż pozostałe”, jak sekcja „Karty PVC” niżej
-                initialLimit={product.categoryId === 'drukarki-kart' ? 4 : undefined}
+                initialLimit={product.categoryId === 'drukarki-kart' ? 4 : isColorPrinter ? 8 : undefined}
                 showDualButtons
               />
             ) : null}

@@ -1320,6 +1320,52 @@ categoryFilters['akcesoria-do-drukarek-etykiet'] = [
 ]
 
 /**
+ * Tusze i etykiety do kolorowych drukarek (Epson ColorWorks): rodzaj i materiał z wiersza
+ * „Rodzaj”/„Materiał” w specyfikacji, szerokość z nazwy, cena z priceFrom.
+ */
+categoryFilters['tusze-i-etykiety-do-kolorowych-drukarek'] = [
+  {
+    specKey: 'rodzaj',
+    label: 'Rodzaj',
+    derived: [
+      { value: 'Tusze', pattern: 'SJIC22P', specs: ['Model wkładu'] },
+      { value: 'Pojemnik konserwacyjny', pattern: 'maintenance box', specs: ['Rodzaj'] },
+      { value: 'Etykiety wykrojone', pattern: 'wykrojone', specs: ['Rodzaj'] },
+      { value: 'Etykiety ciągłe', pattern: 'Etykiety ciągłe', specs: ['Rodzaj'] },
+      { value: 'Papier do biletów', pattern: 'biletów', specs: ['Rodzaj'] },
+    ],
+  },
+  {
+    specKey: 'material',
+    label: 'Powierzchnia',
+    derived: [
+      { value: 'Matowa (Premium Matte)', pattern: 'matow', specs: ['Materiał'] },
+      { value: 'Błyszcząca (High Gloss)', pattern: 'błyszcz', specs: ['Materiał'] },
+    ],
+  },
+  {
+    specKey: 'szerokosc',
+    label: 'Szerokość rolki',
+    derived: [
+      { value: '51 mm', pattern: '^51 mm', specs: ['Szerokość', 'Szerokość rolki'] },
+      { value: '76 mm', pattern: '^76 mm', specs: ['Szerokość', 'Szerokość rolki'] },
+      { value: '80 mm', pattern: '^80 mm', specs: ['Szerokość', 'Szerokość rolki'] },
+      { value: '102 mm', pattern: '^102 mm', specs: ['Szerokość', 'Szerokość rolki'] },
+      { value: '105 mm', pattern: '^105 mm', specs: ['Szerokość', 'Szerokość rolki'] },
+    ],
+  },
+  {
+    specKey: 'cena',
+    label: 'Cena netto',
+    derived: [
+      { value: 'do 40 zł', priceMax: 40 },
+      { value: '40 – 70 zł', priceMin: 40, priceMax: 70 },
+      { value: 'powyżej 70 zł', priceMin: 70 },
+    ],
+  },
+]
+
+/**
  * Filtr ceny dla katalogu (/katalog), gdy nie wybrano kategorii. Specyfikacje
  * różnią się między kategoriami — drukarka nie ma przekątnej ekranu, a skaner
  * rozdzielczości druku — więc wspólne zostają producent (budowany z listy

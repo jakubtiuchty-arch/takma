@@ -81,6 +81,14 @@ export const manufacturers: Manufacturer[] = [
     seoDescription: 'Drukarki etykiet Citizen Systems — kompaktowe drukarki biurkowe i przemysłowe z Ethernet w standardzie, Cross-Emulation ZPL/EPL i certyfikatem ENERGY STAR. TAKMA — autoryzowany partner AutoID w Polsce.'
   },
   {
+    id: 'epson',
+    slug: 'epson',
+    name: 'Epson',
+    logo: '/images/partners/logo_epson.png',
+    seoTitle: 'Kolorowe drukarki etykiet Epson ColorWorks | Tusze i etykiety',
+    seoDescription: 'Epson ColorWorks: kolorowe drukarki etykiet z tuszem pigmentowym CMYK oraz oryginalne tusze SJIC22P i etykiety Premium Matte i High Gloss. TAKMA, partner AutoID w Polsce.'
+  },
+  {
     id: 'm3-mobile',
     slug: 'm3-mobile',
     name: 'M3 Mobile',
