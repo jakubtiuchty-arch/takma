@@ -73,8 +73,11 @@ export const guides: Guide[] = [
   category: 'porownanie' as const,
   tags: ['drukarki kart', 'ranking', 'porównanie', 'jak wybrać', 'zebra zc100', 'zebra zc300', 'zebra zc350', 'magicard pronto100', 'magicard 300', 'magicard 600 duo', 'karty pvc', 'identyfikatory'],
   publishedAt: '2026-09-18',
-  updatedAt: '2026-09-18',
+  updatedAt: '2026-09-19',
   readTime: '9 min',
+  heroImage: '/images/guides/jaka-drukarka-do-kart-plastikowych.webp',
+  heroImageAlt: 'Trzy biurkowe drukarki kart plastikowych na ciemnym tle, jedna wysuwa gotowy identyfikator',
+  cardImagePosition: '100% center',
   sections: [
     {
       id: 'dla-kogo',
