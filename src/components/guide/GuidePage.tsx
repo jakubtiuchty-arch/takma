@@ -353,6 +353,22 @@ export default function GuidePage({ guide }: GuidePageProps) {
 
             {/* Main Content */}
             <article className="flex-1 max-w-3xl min-w-0 overflow-x-clip">
+              {/* Oferta nad treścią — poradnik kieruje do kategorii, nie tylko do kart produktów */}
+              {guide.offerBox && (
+                <nav aria-label={guide.offerBox.heading} className="mb-10 rounded-xl border border-gray-200 bg-gray-50 p-5 sm:p-6">
+                  <p className="text-base font-semibold text-gray-900">{guide.offerBox.heading}</p>
+                  {guide.offerBox.text && <p className="mt-1 text-sm text-gray-600">{guide.offerBox.text}</p>}
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {guide.offerBox.links.map(link => (
+                      <li key={link.href}>
+                        <Link href={link.href} className="inline-block rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-900 hover:border-primary-600 hover:text-primary-600 transition-colors">
+                          {link.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              )}
               {/* Content Sections */}
               <div className="space-y-10">
                 {guide.sections.map(section => (

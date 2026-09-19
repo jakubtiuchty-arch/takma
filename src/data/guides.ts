@@ -43,6 +43,8 @@ export interface Guide {
   cardImagePosition?: string
   /** Fit mode for card thumbnails; use contain when the whole artwork must remain visible */
   cardImageFit?: 'cover' | 'contain'
+  /** Ramka z ofertą nad treścią: linki do kategorii i stron marek, na które poradnik ma kierować ruch. */
+  offerBox?: { heading: string; text?: string; links: { title: string; href: string }[] }
   sections: GuideSection[]
   faq: GuideFAQ[]
   relatedLinks: GuideRelatedLink[]
@@ -967,6 +969,16 @@ export const guides: Guide[] = [
   readTime: '12 min',
   heroImage: '/images/guides/hero_jak_wybrac_drukarke.webp',
 
+  offerBox: {
+    heading: 'Drukarki etykiet w ofercie TAKMA',
+    text: 'Ponad 70 modeli Zebra, Honeywell, TSC, Brother i Citizen z cenami netto.',
+    links: [
+      { title: 'Wszystkie drukarki etykiet', href: '/drukarki-etykiet' },
+      { title: 'Biurkowe drukarki etykiet', href: '/biurkowe-drukarki-etykiet' },
+      { title: 'Przemysłowe drukarki etykiet', href: '/przemyslowe-drukarki-etykiet' },
+      { title: 'Mobilne drukarki etykiet', href: '/mobilne-drukarki-etykiet' },
+    ],
+  },
   sections: [
     {
       id: 'definicja',
@@ -1510,6 +1522,16 @@ export const guides: Guide[] = [
   updatedAt: '2026-02-21',
   readTime: '10 min',
 
+  offerBox: {
+    heading: 'Drukarki termiczne i termotransferowe w ofercie TAKMA',
+    text: 'Modele obu technologii z cenami netto, materiały eksploatacyjne w osobnych kategoriach.',
+    links: [
+      { title: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
+      { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
+      { title: 'Wszystkie drukarki etykiet', href: '/drukarki-etykiet' },
+      { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
+    ],
+  },
   sections: [
     {
       id: 'wprowadzenie',
@@ -1948,6 +1970,16 @@ export const guides: Guide[] = [
   heroImage: '/images/guides/drukarki-etykiet-zebra-przewodnik.webp',
   cardImagePosition: '100% center',
 
+  offerBox: {
+    heading: 'Drukarki Zebra w ofercie TAKMA',
+    text: 'Wszystkie modele z tego przewodnika z cenami netto i dostępnością z magazynu.',
+    links: [
+      { title: 'Drukarki etykiet Zebra', href: '/drukarki-etykiet-zebra' },
+      { title: 'Biurkowe drukarki etykiet', href: '/biurkowe-drukarki-etykiet' },
+      { title: 'Przemysłowe drukarki etykiet', href: '/przemyslowe-drukarki-etykiet' },
+      { title: 'Etykiety i taśmy do drukarek Zebra', href: '/etykiety-termotransferowe-zebra' },
+    ],
+  },
   sections: [
     {
       id: 'dlaczego-zebra',
@@ -2579,6 +2611,16 @@ export const guides: Guide[] = [
   readTime: '18 min',
   heroImage: '/images/guides/jak-wybrac-terminal-mobilny-2026.webp',
 
+  offerBox: {
+    heading: 'Terminale mobilne w ofercie TAKMA',
+    text: 'Kolektory danych Zebra, Honeywell, Newland, Datalogic i M3 Mobile z cenami netto.',
+    links: [
+      { title: 'Terminale mobilne i kolektory danych', href: '/terminale-mobilne' },
+      { title: 'Terminale mobilne Zebra', href: '/terminale-mobilne-zebra' },
+      { title: 'Terminale Honeywell', href: '/terminale-honeywell' },
+      { title: 'Terminale Newland', href: '/terminale-newland' },
+    ],
+  },
   sections: [
     {
       id: 'definicja',
@@ -7728,6 +7770,15 @@ export const guides: Guide[] = [
   updatedAt: '2026-03-15',
   readTime: '18 min',
 
+  offerBox: {
+    heading: 'Kolektory danych w ofercie TAKMA',
+    text: 'Terminale do inwentaryzacji ze skanerem 1D/2D, Androidem i stacjami dokującymi, z cenami netto.',
+    links: [
+      { title: 'Terminale mobilne i kolektory danych', href: '/terminale-mobilne' },
+      { title: 'Terminale mobilne Zebra', href: '/terminale-mobilne-zebra' },
+      { title: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
+    ],
+  },
   sections: [
     {
       id: 'dlaczego-kolektor-danych',
@@ -10400,6 +10451,15 @@ export const guides: Guide[] = [
   heroImageAlt: 'Taśma termotransferowa woskowa, woskowo-żywiczna i żywiczna — porównanie trzech typów ribbonów do drukarek etykiet',
   cardImagePosition: '110% center',
 
+  offerBox: {
+    heading: 'Taśmy termotransferowe w ofercie TAKMA',
+    text: 'Taśmy woskowe, woskowo-żywiczne i żywiczne z cenami netto, do drukarek Zebra, Honeywell i TSC.',
+    links: [
+      { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
+      { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
+      { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
+    ],
+  },
   sections: [
     {
       id: 'wstep',
