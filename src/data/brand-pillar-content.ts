@@ -33,31 +33,31 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     categoryTiles: [
       {
         categoryId: 'drukarki-etykiet',
-        name: 'Drukarki etykiet',
+        name: 'Drukarki etykiet Zebra',
         href: '/drukarki-etykiet-zebra',
         description: 'Biurkowe ZD, przemysłowe ZT, mobilne ZQ. Od 576 zł netto.',
       },
       {
         categoryId: 'terminale-mobilne',
-        name: 'Terminale mobilne',
+        name: 'Terminale mobilne Zebra (kolektory danych)',
         href: '/terminale-mobilne-zebra',
         description: 'Serie TC i MC z Androidem. Wi-Fi 6E, IP65–IP68.',
       },
       {
         categoryId: 'skanery-kodow-kreskowych',
-        name: 'Skanery kodów',
+        name: 'Skanery kodów kreskowych Zebra',
         href: '/skanery-kodow-kreskowych-zebra',
         description: 'Ręczne, bezprzewodowe, prezentacyjne. Od 181 zł netto.',
       },
       {
         categoryId: 'tablety-przemyslowe',
-        name: 'Tablety przemysłowe',
-        href: '/tablety-przemyslowe',
+        name: 'Tablety przemysłowe Zebra',
+        href: '/tablety-przemyslowe-zebra',
         description: 'Seria ET: 8″ i 10″. Android i Windows. IP65/IP66.',
       },
       {
         categoryId: 'drukarki-kart',
-        name: 'Drukarki kart',
+        name: 'Drukarki kart Zebra',
         href: '/drukarki-kart',
         description: 'Seria ZC — druk kart plastikowych i identyfikatorów.',
       },
@@ -300,6 +300,10 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       {
         question: 'Czym różni się Zebra TC22 od TC53?',
         answer: '[TC22](/produkt/zebra-tc22) (od 2 417 zł) to entry-level: ekran 6" HD+, skaner SE4710, Wi-Fi 6, IP68, upadki 1,5 m, wsparcie do A16. [TC53](/produkt/zebra-tc53) (od 6 418 zł) to premium: ekran 6" FHD+, skaner SE55 (szybszy, dalszy zasięg), Wi-Fi 6E, procesor Qualcomm 6490, wsparcie do A17, więcej RAM. TC22 to dobry wybór do retail i lekkiego magazynu. TC53 do wymagających środowisk, gdzie liczy się prędkość skanowania i długi cykl życia.',
+      },
+      {
+        question: 'Gdzie są wszystkie drukarki, skanery, terminale i tablety Zebra?',
+        answer: 'Każda grupa ma własną stronę z pełną listą modeli i cenami netto: [drukarki etykiet Zebra](/drukarki-etykiet-zebra) z seriami ZD, ZT i ZQ, [skanery kodów kreskowych Zebra](/skanery-kodow-kreskowych-zebra) z seriami LI i DS, [terminale mobilne Zebra](/terminale-mobilne-zebra), czyli kolektory danych serii TC i MC, oraz [tablety przemysłowe Zebra](/tablety-przemyslowe-zebra) serii ET. Drukarki kart Zebra ZC100, ZC300 i ZC350 są w kategorii [drukarki kart](/drukarki-kart).',
       },
     ],
 

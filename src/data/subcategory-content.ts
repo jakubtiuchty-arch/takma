@@ -633,6 +633,10 @@ Cena drukarki to zwykle 20–40 % wydatków w trzy lata. Resztę pochłaniają e
         question: 'Czy TAKMA dostarcza i serwisuje drukarki etykiet w całej Polsce?',
         answer: 'Tak. Wysyłamy kurierem do firm w całej Polsce: do Warszawy, Łodzi, Poznania, Krakowa, Trójmiasta i mniejszych miejscowości. Serwis drukarek etykiet działa z odbiorem kurierskim, więc naprawa nie wymaga dowożenia sprzętu do Wrocławia. Drukarki Zebra naprawia [serwis-zebry.pl](https://www.serwis-zebry.pl), pozostałe marki nasz [serwis](/serwis).',
       },
+      {
+        question: 'Jakie drukarki etykiet Zebra są w ofercie?',
+        answer: 'W kategorii [drukarki etykiet Zebra](/drukarki-etykiet-zebra) jest ponad 25 modeli: biurkowe ZD220, ZD230, ZD411, ZD421 i ZD621, przemysłowe ZT111, ZT231, ZT411 i ZT610 oraz mobilne ZQ210, ZQ310 Plus, ZQ511 i ZQ630 Plus. Drukarka Zebra kosztuje od 639 zł netto, a serwis prowadzimy pod marką serwis-zebry.pl.',
+      },
     ],
     comparisons: [
       {
@@ -1506,6 +1510,10 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
         question: 'Jakie są alternatywy dla terminali mobilnych Zebra?',
         answer: 'Na polskim rynku dostępni są także: Datalogic (Memor 11/12/20/30/35, Skorpio X5 — włoski producent, dobra jakość, nieco niższe ceny), Honeywell (CT40/CT60, EDA51/EDA52 — amerykański, silny w logistyce), Keyence (BT-W100/BT-A500 — japoński, specjalizacja w produkcji). Zebra dominuje w Polsce z ~40–50% udziałem rynkowym dzięki: najszerszemu portfolio, darmowym narzędziom Mobility DNA, 10-letniemu wsparciu LifeGuard i rozbudowanej sieci serwisowej. TAKMA jako Premier Partner Zebra rekomenduje modele TC/MC — najlepsze wsparcie serwisowe w Polsce.',
       },
+      {
+        question: 'Jakie terminale i kolektory danych Zebra są w ofercie?',
+        answer: 'W kategorii [terminale mobilne Zebra](/terminale-mobilne-zebra) jest ponad 20 modeli: dotykowe TC22, TC27, TC53e i TC58e, terminale gun z klawiaturą MC3400 i MC9400 do magazynu, ekonomiczne MC2200 i MC2700 oraz medyczne HC25, HC50 i HC55. Terminal Zebra kosztuje od 2 261 zł netto.',
+      },
     ],
     comparisons: [
       {
@@ -2220,6 +2228,10 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       {
         question: 'Jakie są alternatywy dla skanera kodów kreskowych?',
         answer: 'Terminal mobilny ze wbudowanym skanerem (Zebra TC22, Datalogic Memor 11): skanowanie + aplikacja WMS na jednym urządzeniu. System RFID (UHF): odczyt wielu tagów jednocześnie bez linii wzroku. Kamera smartfona z aplikacją: do sporadycznego użytku. Dla regularnej pracy B2B dedykowany skaner pozostaje optymalnym wyborem pod względem TCO.',
+      },
+      {
+        question: 'Jakie skanery Zebra są w ofercie?',
+        answer: 'W kategorii [skanery kodów kreskowych Zebra](/skanery-kodow-kreskowych-zebra) jest 20 modeli: przewodowe LI2208, DS2208, DS4608 i DS9308 do kasy i biura, bezprzewodowe DS2278 i DS4678, przemysłowe DS3608 i LI3608 w obudowie odpornej na upadki oraz DS9908 do lady. Skaner Zebra kosztuje od 181 zł netto.',
       },
     ],
     comparisons: [
@@ -2951,6 +2963,10 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       {
         question: 'Jakie są alternatywy dla tabletów przemysłowych?',
         answer: 'Alternatywy w zależności od scenariusza: terminal mobilny 6″ (Zebra TC53/MC3400 od 3 286 zł) — kompaktowość i pistoletowy uchwyt. Laptop rugged (Getac S410, Dell Latitude Rugged) — pełna klawiatura i większy ekran 14″. Tablet konsumencki w etui rugged (iPad + OtterBox) — budżetowa opcja, ale bez skanera, Hot Swap i długiego wsparcia. Dla większości zastosowań B2B tablet przemysłowy oferuje najlepszy kompromis mobilności, wytrzymałości i TCO.',
+      },
+      {
+        question: 'Jakie tablety Zebra są w ofercie?',
+        answer: 'W kategorii [tablety przemysłowe Zebra](/tablety-przemyslowe-zebra) jest 7 modeli serii ET: ET40 i ET45 z Androidem w rozmiarach 8 i 10 cali, ET60 i ET65 w wersjach z Androidem i Windows oraz ET401. Wszystkie mają obudowę w klasie IP65 lub IP66.',
       },
     ],
     comparisons: [

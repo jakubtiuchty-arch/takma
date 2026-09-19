@@ -230,7 +230,7 @@ export const categories: Category[] = [
     slug: 'terminale-mobilne',
     name: 'Terminale mobilne',
     description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
-    seoTitle: 'Terminale mobilne — Zebra, Honeywell, Datalogic, M3, Newland | 41 modeli',
+    seoTitle: 'Terminale mobilne i kolektory danych — Zebra, Honeywell, Datalogic, M3, Newland',
     seoDescription: 'Terminale mobilne enterprise od 5 producentów: Zebra (TC22, TC53, MC9400), Honeywell (CT70, CK67), Datalogic (Memor 30/35, Skorpio X5), M3 Mobile (SM30, UL30), Newland. 41 modeli IP65/IP67/IP68 do magazynu, logistyki i retail. Ceny netto od 2 207 zł.',
     longDescription: 'Profesjonalne terminale mobilne (kolektory danych) klasy enterprise z systemem Android — porównanie 41 modeli od 5 producentów: [Zebra](/terminale-mobilne-zebra) (TC22, TC27, TC53, TC58, MC3400, MC9400, EM45), [Honeywell](/terminale-honeywell) (CT70, CT32, CK67), [Datalogic](/terminale-datalogic) (Memor 30/35, Skorpio X5), [M3 Mobile](/terminale-m3-mobile) (SM30, UL30, US30), [Newland](/terminale-newland) (N7, MT93). Wytrzymałe (IP65–IP68), z czytnikiem 1D/2D, do magazynu, logistyki, produkcji i retail. Ceny netto od 2 207 zł.',
     icon: 'smartphone',
