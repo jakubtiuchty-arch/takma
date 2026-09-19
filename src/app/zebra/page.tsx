@@ -7,7 +7,7 @@ const MANUFACTURER_ID = 'zebra'
 export async function generateMetadata(): Promise<Metadata> {
   const m = getManufacturerById(MANUFACTURER_ID)!
   return {
-    title: `Produkty Zebra Technologies — drukarki, terminale, skanery | TAKMA`,
+    title: `Produkty Zebra Technologies — drukarki, terminale, skanery`,
     description: 'Pełna oferta Zebra Technologies: drukarki etykiet od 576 zł, terminale mobilne, skanery kodów, tablety przemysłowe. Autoryzowany Premier Solution Partner Zebra. Ceny netto, serwis, dostawa 24h.',
     openGraph: {
       title: `Produkty Zebra Technologies | Autoryzowany partner — TAKMA`,

@@ -7,7 +7,7 @@ const MANUFACTURER_ID = 'tsc'
 export async function generateMetadata(): Promise<Metadata> {
   const m = getManufacturerById(MANUFACTURER_ID)!
   return {
-    title: `Produkty TSC — drukarki etykiet półprzemysłowe i przemysłowe | TAKMA`,
+    title: `Produkty TSC — drukarki etykiet półprzemysłowe i przemysłowe`,
     description: 'Drukarki etykiet TSC: kompaktowe półprzemysłowe ML241P i ML341P z emulacją ZPL/EPL/DPL. Ceny netto od 2 223 zł z dystrybucji BlueStar. TAKMA — autoryzowany partner AutoID, 25 lat na rynku.',
     openGraph: {
       title: `Produkty TSC | TAKMA — autoryzowany partner AutoID`,

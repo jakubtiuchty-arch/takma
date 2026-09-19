@@ -7,7 +7,7 @@ const MANUFACTURER_ID = 'newland'
 export async function generateMetadata(): Promise<Metadata> {
   const m = getManufacturerById(MANUFACTURER_ID)!
   return {
-    title: `Produkty Newland AIDC — skanery kodów i terminale mobilne | TAKMA`,
+    title: `Produkty Newland AIDC — skanery kodów i terminale mobilne`,
     description: 'Pełna oferta Newland AIDC: skanery kodów od 181 zł netto (HR11, HR23, HR33, NVH300), terminale mobilne z Androidem (N7, MT93, MT95). Gwarancja 5 lat na skanery, bezpłatny MDM Ndevor. Ceny z dystrybucji Ingram Micro.',
     openGraph: {
       title: `Produkty Newland AIDC | TAKMA — autoryzowany partner AutoID`,

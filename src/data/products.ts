@@ -78,6 +78,8 @@ export interface Product {
   spinVideo?: { file: string; poster: string }
   /** 'faq-last': FAQ i „Pliki do pobrania” na samym dole karty, za materiałami i akcesoriami (test UX na Magicard 300). */
   sectionOrder?: 'faq-last'
+  /** Własna grafika banera serwisowego na dole karty (domyślnie grafika marki z `serwis/_data/brands.ts`). */
+  serviceBannerImage?: string
   /** Zestaw (np. startowy do drukarki kart): składniki z ilościami; produkt zestawu ma własną, stałą cenę
    *  i trafia do koszyka jako jedna pozycja. Karta składnika (drukarki) pokazuje boks „Zestaw startowy”.
    *  `variantPn` wskazuje konkretny wariant składnika (np. CardStudio 2.0 Standard), żeby porównanie cen
@@ -483,7 +485,7 @@ export const subcategories: Subcategory[] = [
     name: 'Etykiety termotransferowe Zebra',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Pełna gama etykiet termotransferowych Zebra — papierowe, foliowe i specjalne. 16 serii, ponad 950 wariantów.',
-    seoTitle: 'Etykiety termotransferowe Zebra — papierowe, foliowe, specjalne | TAKMA',
+    seoTitle: 'Etykiety termotransferowe Zebra — papierowe, foliowe, specjalne',
     seoDescription: 'Pełna gama etykiet termotransferowych Zebra w jednym miejscu: papierowe (Z-Perform, Z-Select), foliowe (Z-Ultimate, PolyPro, PolyE) i specjalistyczne (kriogeniczne, plomby, worki z krwią). 16 serii, ponad 950 wariantów. Doradztwo i próbki.',
     longDescription: 'Etykiety termotransferowe wymagają taśmy barwiącej (ribbon) i dają trwały, odporny na ścieranie nadruk — w odróżnieniu od termicznych (direct thermal), które nie potrzebują taśmy, ale szybciej blakną. To wybór do oznaczeń, które mają przetrwać miesiące lub lata: etykiety produktowe, tabliczki znamionowe, oznaczenia w przemyśle, motoryzacji i elektronice. Oferujemy trzy grupy materiałowe: papierowe (ekonomiczne, do wysyłki i magazynu), foliowe (poliester, polipropylen, polietylen — trwałe na produkty końcowe) oraz specjalne (kriogeniczne, zabezpieczające, do worków z krwią). Łącznie 16 serii Zebra i ponad 950 wariantów rozmiarowych.',
     icon: 'tag',
@@ -558,8 +560,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne taśmy barwiące do drukarek kart Zebra oraz Magicard Pronto100, 300 i 600. Taśmy YMCKO, YMCKOK i monochromatyczne z warstwą Overlay.',
     longDescription: 'Taśmy barwiące do drukarek kart plastikowych są niezbędne do druku termosublimacyjnego na kartach PVC. Taśma YMCKO (Yellow-Magenta-Cyan-blacK-Overlay) służy do druku pełnokolorowego ze zdjęciami — panele barwne tworzą obraz, a panel Overlay nakłada przezroczystą warstwę ochronną. W tej kategorii znajdują się taśmy serii 800300 do drukarek Zebra ZC100 i ZC300, seria 800350 do ZC350 (czarna 800300-301 i taśmy jednokolorowe pasują do obu serii) oraz dedykowane materiały Magicard do modeli Pronto100, 300 i 600.',
     icon: 'tag',
-    productIds: ['zebra-ribbon-ymcko-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc', 'zebra-ribbon-ymcko-zc350', 'zebra-ribbon-ymcko-300-zc350', 'zebra-ribbon-ymckok-zc350', 'zebra-ribbon-half-ymcko-zc350', 'zebra-ribbon-ymcpko-zc350', 'zebra-ribbon-srdymcko-zc350', 'zebra-ribbon-ymckll-zc350', 'zebra-ribbon-kdo-zc350', 'zebra-ribbon-kro-zc350', 'zebra-ribbon-white-zc350', 'magicard-md100ymcko-s', 'magicard-md200ymcko-s', 'magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', 'magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', 'magicard-ma1000k-black', 'magicard-ma1000k-white', 'magicard-ma1000k-blue', 'magicard-ma1000k-green', 'magicard-ma1000k-red', 'magicard-ma1000k-silver', 'magicard-ma1000k-gold', 'magicard-ma1000k-scratch'],
-    productCount: 39,
+    productIds: ['magicard-prima-831', 'zebra-ribbon-ymcko-zc', 'zebra-ribbon-ymcko-300-zc', 'zebra-ribbon-ymcko-multipack-zc', 'zebra-ribbon-ymckok-zc', 'zebra-ribbon-half-ymcko-zc', 'zebra-ribbon-kdo-zc', 'zebra-ribbon-kro-zc', 'zebra-ribbon-black-zc', 'zebra-ribbon-white-zc', 'zebra-ribbon-red-zc', 'zebra-ribbon-blue-zc', 'zebra-ribbon-gold-zc', 'zebra-ribbon-silver-zc', 'zebra-ribbon-ymcko-zc350', 'zebra-ribbon-ymcko-300-zc350', 'zebra-ribbon-ymckok-zc350', 'zebra-ribbon-half-ymcko-zc350', 'zebra-ribbon-ymcpko-zc350', 'zebra-ribbon-srdymcko-zc350', 'zebra-ribbon-ymckll-zc350', 'zebra-ribbon-kdo-zc350', 'zebra-ribbon-kro-zc350', 'zebra-ribbon-white-zc350', 'magicard-md100ymcko-s', 'magicard-md200ymcko-s', 'magicard-mc300ymcko-s', 'magicard-mc250ymcko-s', 'magicard-mc600ko-s', 'magicard-mb300ymcko-s', 'magicard-mb250ymckok-s', 'magicard-mb600ko-s', 'magicard-ma1000k-black', 'magicard-ma1000k-white', 'magicard-ma1000k-blue', 'magicard-ma1000k-green', 'magicard-ma1000k-red', 'magicard-ma1000k-silver', 'magicard-ma1000k-gold', 'magicard-ma1000k-scratch'],
+    productCount: 40,
   },
   {
     id: 'karty-pcv',
@@ -567,7 +569,7 @@ export const subcategories: Subcategory[] = [
     name: 'Karty PVC',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Karty plastikowe i zbliżeniowe do drukarek kart Magicard i Zebra ZC',
-    seoTitle: 'Karty PVC do drukarek kart: plastikowe i zbliżeniowe RFID | TAKMA',
+    seoTitle: 'Karty PVC do drukarek kart: plastikowe i zbliżeniowe RFID',
     seoDescription: 'Karty PVC CR-80 do drukarek Magicard i Zebra ZC: białe i kolorowe karty plastikowe od 38 gr/szt. oraz karty zbliżeniowe Unique, MIFARE, DESFire i NFC. Wysyłka z Wrocławia.',
     longDescription: 'Karty PVC to plastikowe karty w formacie CR-80 (85,6 × 54 mm), na których drukarka kart nanosi identyfikator, legitymację albo kartę lojalnościową. Dzielimy je na dwie grupy. Karty plastikowe bez chipu: białe Standard i Premium, kolorowe, HoloPatch pod znak wodny Magicard i samoprzylepne do naklejania na grube karty dostępu. Karty zbliżeniowe z chipem: Unique 125 kHz do systemów Roger i Satel, MIFARE 1K oraz DESFire EV1 i EV3 na 13,56 MHz tam, gdzie karta ma zapisywać dane albo chronić dostęp szyfrowaniem, NTAG213 i NTAG216 czytane telefonem, a karty dualne z dwoma chipami tam, gdzie parking i drzwi pracują na różnych czytnikach. Wszystkie zadrukowuje się w tej samej drukarce: Zebra ZC100, ZC300, ZC350 albo Magicard Pronto100, 300 i 600 Duo.',
     icon: 'tag',
@@ -581,7 +583,7 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'materialy-eksploatacyjne',
     parentSubcategoryId: 'karty-pcv',
     description: 'Białe, kolorowe, HoloPatch i samoprzylepne karty PVC bez chipu, opakowania 100 i 500 szt.',
-    seoTitle: 'Karty plastikowe PVC do drukarek kart, białe i kolorowe | TAKMA',
+    seoTitle: 'Karty plastikowe PVC do drukarek kart, białe i kolorowe',
     seoDescription: 'Karty plastikowe PVC CR-80 0,76 mm bez chipu: białe Standard od 38 gr/szt., Premium Fotodek, srebrne, czarne, HoloPatch do Magicard i samoprzylepne. Do drukarek Magicard i Zebra ZC.',
     longDescription: 'Karty plastikowe PVC bez chipu to podstawowy materiał do drukarki kart: identyfikatory, legitymacje, karty klubowe i lojalnościowe, wizytówki plastikowe. Wszystkie mają format CR-80 (85,6 × 54 mm) i standardową grubość 0,76 mm, czyli tyle, ile karta bankowa. Białe Standard kosztują niecałe 40 groszy za sztukę, Premium Fotodek dają równiejszy druk zdjęć i mniej brudzą głowicę, srebrne i czarne są barwione w masie i przeznaczone pod taśmy jednokolorowe. Karty HoloPatch mają złote pole, na którym znak wodny HoloKote z drukarki Magicard wygląda jak hologram. Karty samoprzylepne 0,40 mm drukuje się jak zwykłe, a potem nakleja na grube karty clamshell, których drukarka nie przyjmie. Do tego oryginalne karty Zebra Premier w opakowaniach po 500 sztuk.',
     icon: 'tag',
@@ -595,7 +597,7 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'materialy-eksploatacyjne',
     parentSubcategoryId: 'karty-pcv',
     description: 'Karty Unique 125 kHz, MIFARE, DESFire, NTAG i dualne do zadruku w drukarkach kart, sprzedaż na sztuki',
-    seoTitle: 'Karty zbliżeniowe RFID i NFC do zadruku: Unique, MIFARE, DESFire | TAKMA',
+    seoTitle: 'Karty zbliżeniowe RFID i NFC do zadruku: Unique, MIFARE, DESFire',
     seoDescription: 'Karty zbliżeniowe PVC do drukarek kart: Unique 125 kHz od 1,85 zł, MIFARE 1K, DESFire EV1 i EV3, NTAG213/216 i dualne. Białe, do zadruku w Magicard i Zebra ZC, działają z Roger i Satel. Na sztuki, taniej od 100 szt.',
     longDescription: 'Karty zbliżeniowe to białe karty PVC z chipem i anteną zalaminowanymi w środku. Z zewnątrz nie różnią się od zwykłej karty, więc drukarka nanosi na nie zdjęcie i dane tak samo, a jedna karta jest identyfikatorem i kluczem do drzwi. Unique 125 kHz ma numer tylko do odczytu i działa z systemami Roger, Satel i większością domofonów oraz szlabanów. MIFARE Classic 1K ma pamięć z zapisem: dostęp, rejestracja czasu pracy i stołówka na jednej karcie. DESFire EV1 i EV3 szyfrują dane AES i obsługują wiele aplikacji naraz: strefy chronione, e-legitymacje, karty miejskie. NTAG213 i NTAG216 czyta każdy telefon, więc nadają się na wizytówki NFC i linki do opinii. Karty dualne łączą chip 125 kHz i 13,56 MHz, gdy parking pracuje na starych czytnikach, a drzwi na nowych. Sprzedajemy na sztuki, a od 100 i od 1000 sztuk cena za sztukę spada.',
     icon: 'tag',
@@ -46674,6 +46676,165 @@ USB, Ethernet i Wi-Fi są w standardzie. Magicard 600 Duo może więc pracować 
     sameAs: 'https://www.brady.eu/label-printers/magicard-600-duo-card-printer-pid-3652-5021-3',
   },
   {
+    id: 'magicard-prima-8',
+    slug: 'magicard-prima-8',
+    spinVideo: { file: '/video/magicard-prima-8-obrot-360.mp4', poster: '/images/products/magicard-prima-8-obrot-360-poster.webp' },
+    sectionOrder: 'faq-last',
+    serviceBannerImage: '/images/serwis-banner/magicard-prima-8-banner-v2.webp',
+    name: 'Magicard Prima 8',
+    shortDescription: 'Retransferowa drukarka kart: obraz powstaje na folii i jest wprasowywany w kartę, więc nadruk sięga krawędzi i wytrzymuje lata noszenia. Uno, Duo albo Duo z koderem stykowym i zbliżeniowym. Około 100 kart/h, 3 lata gwarancji z drukarką zastępczą',
+    seoTitle: 'Magicard Prima 8 — retransferowa drukarka kart PVC',
+    seoDescription: 'Magicard Prima 8: druk retransferowy 300 dpi od krawędzi do krawędzi, karty PVC, PET, PC i ABS, wersje Uno, Duo i Duo z koderem stykowym i RFID. Około 100 kart/h, 3 lata gwarancji z drukarką zastępczą.',
+    description: `Prima 8 to drukarka do kart, którą Magicard kieruje tam, gdzie karty drukuje się setkami, a nie sztukami, i gdzie mają wyglądać jak z drukarni: identyfikatory w dużej firmie, karty w systemie kontroli dostępu, legitymacje na uczelni, karty miejskie. Zamiast nanosić obraz wprost na kartę, drukuje go na przezroczystej folii i dopiero tę folię wprasowuje w kartę. Stąd dwie różnice widoczne gołym okiem: nadruk sięga samej krawędzi, bez białego marginesu, a grafika jest równie ostra na karcie z chipem, gdzie zwykła drukarka zostawia jaśniejszy ślad wokół styków.
+
+Folia chroni nadruk lepiej niż warstwa ochronna z taśmy YMCKO, więc karta noszona codziennie przy smyczy nie ściera się przez lata. Drukarka radzi sobie z kartami z PVC, PET, poliwęglanu, ABS i PVH o grubości od 0,25 do 1,0 mm, także ze zbliżeniowymi i stykowymi.
+
+Prima 8 jest w trzech wersjach. Uno (Prima 801) drukuje jedną stronę, Duo (Prima 802) obraca kartę i zadrukowuje obie. Prima 815 to Duo z koderem stykowym i zbliżeniowym: zapisze chip MIFARE, DESFire, HID iCLASS albo LEGIC w tym samym przebiegu, w którym drukuje. Koder paska magnetycznego i wersję 600 dpi, która nanosi mikrotekst i znaki CJK wielkości 1,3 punktu, sprowadzamy na zamówienie.
+
+Kolorowa karta jednostronna zajmuje około 36 sekund, czyli sto kart na godzinę. Podajnik i odbiornik mieszczą po 100 kart. Do komputera podłączysz ją przez USB albo Ethernet; sterownik jest dla Windows. Drukarka waży 15,5 kg i zajmuje 34 × 32 cm, więc stoi na biurku, ale nie jest do przenoszenia między pokojami.
+
+Do druku potrzebne są dwie rolki: taśma YMCK i folia retransferowa. Sprzedajemy je w komplecie na 1 000 kart (Prima 831), a do czyszczenia toru kart zestaw E9887 z dziesięcioma kartami i chusteczkami. Sama taśma z folią kosztuje około 1,42 zł na kartę; z blankietem PVC za 0,38 zł wychodzi 1,80 zł.
+
+Magicard daje na Prima 8 trzy lata gwarancji MagiCoverPlus i na czas naprawy podstawia drukarkę zastępczą. Przed wysyłką konfigurujemy drukarkę, a zgłoszenia gwarancyjne załatwiamy my. Laminator do laminatu holograficznego (Prima 451 do Uno, Prima 452 do Duo) sprowadzamy na zamówienie.`,
+    categoryId: 'drukarki-kart',
+    subcategoryIds: [],
+    manufacturerId: 'magicard',
+    priceFrom: 11550,
+    images: [
+      '/images/products/magicard-prima-8-front.png',
+      '/images/products/magicard-prima-8-otwarta.png',
+      '/images/products/magicard-prima-8-laminator-front.png',
+      '/images/products/magicard-prima-8-laminator-prawa.png',
+      '/images/products/magicard-prima-8-laminator-lewa.png',
+    ],
+    imageDescriptions: [
+      'Magicard Prima 8 — widok z przodu z podajnikiem kart',
+      'Magicard Prima 8 z otwartą pokrywą: kaseta taśmy YMCK i folii retransferowej',
+      'Magicard Prima 8 z opcjonalnym laminatorem — widok z przodu',
+      'Magicard Prima 8 z opcjonalnym laminatorem — widok z prawej strony',
+      'Magicard Prima 8 z opcjonalnym laminatorem — widok z lewej strony',
+    ],
+    tags: ['retail', 'healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Technologia druku', value: 'Retransferowa: obraz drukowany w odbiciu lustrzanym na przezroczystej folii, następnie wprasowany w kartę' },
+      { name: 'Rozdzielczość', value: '300 dpi; druk od krawędzi do krawędzi. Wersja 600 dpi (Prima 802-600DPI) na zamówienie' },
+      { name: 'Druk jedno-/dwustronny', value: 'Uno (Prima 801) jednostronny; Duo (Prima 802 i 815) dwustronny automatyczny' },
+      { name: 'Prędkość druku kolorowego', value: 'Około 100 kart/h' },
+      { name: 'Format kart', value: 'CR-80 (85,6 × 54 mm)' },
+      { name: 'Grubość kart', value: '0,25–1,0 mm' },
+      { name: 'Materiały kart', value: 'PVC, PET, PC, PVH, ABS, poliwęglan' },
+      { name: 'Pojemność podajnika', value: '100 kart' },
+      { name: 'Pojemność odbiornika', value: '100 kart' },
+      { name: 'Kodowanie', value: 'Prima 815: koder stykowy ISO 7816 (EMV) oraz zbliżeniowy MIFARE Classic, MIFARE DESFire, HID iCLASS, Prox i LEGIC. Koder paska magnetycznego HiCo/LoCo (ISO 7811, JIS2) na zamówienie. Prima 801 i 802 bez kodera' },
+      { name: 'Zabezpieczenia wizualne', value: 'Laminat holograficzny z opcjonalnym laminatorem Prima 451/452; taśma z panelem UV (Prima 834) na zamówienie' },
+      { name: 'Łączność', value: 'USB 2.0 i Ethernet 10/100' },
+      { name: 'Systemy operacyjne', value: 'Windows (sterownik producenta)' },
+      { name: 'Materiały eksploatacyjne', value: 'Taśma YMCK na 1 000 wydruków i folia retransferowa na 1 000 wydruków; w ofercie jako zestaw Prima 831. Zestaw czyszczący E9887' },
+      { name: 'Wymiary', value: '343 × 320 × 320 mm' },
+      { name: 'Waga', value: '15,5 kg' },
+      { name: 'Zasilanie', value: 'Zasilacz zewnętrzny 100–240 V, 50–60 Hz' },
+      { name: 'Temperatura pracy', value: '15–30 °C' },
+      { name: 'Gwarancja', value: '3 lata MagiCoverPlus z drukarką zastępczą na czas naprawy' },
+    ],
+    applications: [
+      'Identyfikatory pracownicze w dużych firmach, drukowane do krawędzi',
+      'Karty dostępu z chipem stykowym lub zbliżeniowym, kodowane podczas druku',
+      'Legitymacje studenckie i karty biblioteczne na kartach poliwęglanowych',
+      'Karty miejskie, komunikacyjne i członkowskie o wieloletniej trwałości',
+      'Karty z mikrotekstem i zabezpieczeniami w wersji 600 dpi',
+      'Karty lojalnościowe i podarunkowe w jakości druku offsetowego',
+    ],
+    variants: [
+      {
+        partNumber: 'Prima 801',
+        name: 'Uno, jednostronna',
+        priceFrom: 11550,
+        availability: 'available',
+        attributes: { 'Druk': 'Jednostronny', 'Koder': 'Brak' },
+      },
+      {
+        partNumber: 'Prima 802',
+        name: 'Duo, dwustronna',
+        priceFrom: 13200,
+        availability: 'available',
+        attributes: { 'Druk': 'Dwustronny', 'Koder': 'Brak' },
+      },
+      {
+        partNumber: 'Prima 815',
+        name: 'Duo z koderem stykowym i zbliżeniowym',
+        priceFrom: 17050,
+        availability: 'available',
+        attributes: { 'Druk': 'Dwustronny', 'Koder': 'Stykowy i zbliżeniowy' },
+      },
+    ],
+    variantAttributeTooltips: {
+      'Koder': 'Koder zapisuje dane w chipie karty podczas druku. Bez kodera drukarka zadrukuje kartę z chipem, ale danych w nim nie zmieni.',
+    },
+    compatibleAccessories: ['magicard-prima-831', 'magicard-e9887'],
+    relatedAccessories: ['acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq', 'acss-ac-76s', 'acss-wf76-af', 'acss-hp6-76-gd-a', 'acss-pvc1-sa40', 'acss-si76-a-sc', 'acss-bk76-a-sc'],
+    faq: [
+      { question: 'Czym druk retransferowy różni się od druku bezpośredniego?', answer: 'Drukarka bezpośrednia, jak Magicard 300 czy Zebra ZC300, nanosi barwnik wprost na kartę i zostawia wąski biały margines przy krawędzi. Prima 8 drukuje obraz na przezroczystej folii, a potem wprasowuje folię w kartę. Nadruk sięga krawędzi, jest osłonięty folią i wygląda tak samo na gładkiej karcie PVC, jak na karcie z chipem.' },
+      { question: 'Czy Prima 8 zadrukuje karty z chipem i zbliżeniowe?', answer: 'Tak, i to bez jaśniejszej otoczki wokół styków, która zdarza się w drukarkach bezpośrednich. Sam nadruk nie zmienia zawartości chipu. Jeśli karta ma być kodowana podczas druku, potrzebna jest wersja Prima 815 z koderem stykowym i zbliżeniowym.' },
+      { question: 'Uno, Duo czy Prima 815?', answer: 'Uno (Prima 801) zadrukowuje jedną stronę. Duo (Prima 802) obraca kartę i zadrukowuje obie, na przykład zdjęcie z przodu i regulamin z tyłu. Prima 815 to Duo z koderem, który zapisze chip MIFARE, DESFire, HID iCLASS albo LEGIC i chip stykowy w tym samym przebiegu.' },
+      { question: 'Ile kart na godzinę drukuje Prima 8?', answer: 'Około stu kolorowych kart jednostronnych na godzinę. Druk retransferowy ma dwa etapy, druk na folii i wprasowanie, więc jest wolniejszy niż w drukarkach bezpośrednich, ale za to daje pełne pokrycie karty.' },
+      { question: 'Jakie materiały eksploatacyjne są potrzebne?', answer: 'Dwie rolki: taśma kolorowa YMCK i folia retransferowa. Oferujemy je jako zestaw Prima 831 na 1 000 wydruków. Do czyszczenia toru kart służy zestaw E9887 z dziesięcioma kartami czyszczącymi i dziesięcioma chusteczkami.' },
+      { question: 'Czy Prima 8 działa z macOS?', answer: 'Nie. Producent dostarcza sterownik dla Windows. Drukarkę można udostępnić w sieci przez Ethernet i drukować na niej z kilku komputerów z Windows.' },
+      { question: 'Jaka jest gwarancja?', answer: 'Trzy lata MagiCoverPlus. Na czas naprawy gwarancyjnej producent podstawia drukarkę zastępczą, więc druk kart nie staje. Zgłoszenia przyjmujemy my i prowadzimy je do końca.' },
+      { question: 'Czy do Prima 8 można dołożyć laminator?', answer: 'Tak. Laminator Prima 451 pasuje do Uno, Prima 452 do Duo. Nakłada na kartę laminat, także holograficzny, co utrudnia podrobienie karty i jeszcze wydłuża jej trwałość. Sprowadzamy go na zamówienie.' },
+    ],
+    comparison: {
+      title: 'Prima 8 a drukarki druku bezpośredniego',
+      models: [
+        {
+          name: 'Magicard Prima 8',
+          slug: 'magicard-prima-8',
+          highlight: true,
+          specs: {
+            'Druk': 'Retransferowy, do krawędzi karty',
+            'Prędkość (kolor)': 'Około 100 kart/h',
+            'Podajnik / odbiornik': '100 / 100 kart',
+            'Kodowanie': 'Stykowe i zbliżeniowe (Prima 815)',
+            'Łączność': 'USB, Ethernet',
+            'Gwarancja': '3 lata i drukarka zastępcza',
+          },
+        },
+        {
+          name: 'Magicard 600 Duo',
+          slug: 'magicard-600-duo',
+          specs: {
+            'Druk': 'Bezpośredni, dwustronny',
+            'Prędkość (kolor)': 'Do 190 kart/h',
+            'Podajnik / odbiornik': '100 / 100 kart',
+            'Kodowanie': 'Brak w oferowanej wersji',
+            'Łączność': 'USB, Ethernet, Wi-Fi',
+            'Gwarancja': '3 lata',
+          },
+        },
+        {
+          name: 'Zebra ZC350',
+          slug: 'zebra-zc350',
+          specs: {
+            'Druk': 'Bezpośredni, jedno- lub dwustronny',
+            'Prędkość (kolor)': 'Do 225 kart/h',
+            'Podajnik / odbiornik': '100 / 100 kart',
+            'Kodowanie': 'Magnetyczne; MIFARE, stykowe, UHF (opcje)',
+            'Łączność': 'USB, Ethernet',
+            'Gwarancja': '2 lata',
+          },
+        },
+      ],
+    },
+    downloads: [
+      { name: 'Karta katalogowa Magicard Prima 8 (PL)', type: 'datasheet', url: '/downloads/magicard-prima-8-karta-katalogowa-pl.pdf', size: '3,6 MB' },
+    ],
+    updatedAt: '2026-09-19',
+    createdAt: '2026-09-19',
+    sameAs: 'https://magicard.com/printers-and-software/prima-8/',
+  },
+  {
     id: 'zebra-zc100',
     slug: 'zebra-zc100',
     name: 'Zebra ZC100',
@@ -48570,6 +48731,76 @@ W opakowaniu znajduje się 10 kart czyszczących typu T oraz specjalny flamaster
     downloads: [],
     createdAt: '2026-09-04',
     sameAs: 'https://www.magicard.com.pl/karta/30/',
+  },
+  {
+    id: 'magicard-prima-831',
+    slug: 'magicard-zestaw-tasm-prima-8-ymck-folia-retransferowa-prima-831',
+    name: 'Zestaw taśm do Magicard Prima 8: YMCK i folia retransferowa — 1 000 wydruków',
+    shortDescription: 'Komplet do drukarki retransferowej Prima 8: taśma kolorowa YMCK i folia retransferowa, każda na 1 000 wydruków. Obie rolki są potrzebne do druku',
+    seoTitle: 'Taśma YMCK i folia retransferowa Magicard Prima 8 | Prima 831',
+    seoDescription: 'Oryginalny zestaw Magicard Prima 831 do drukarki Prima 8: taśma kolorowa YMCK i folia retransferowa na 1 000 wydruków. Do wersji Uno i Duo.',
+    description: `Drukarka retransferowa drukuje w dwóch krokach i potrzebuje do tego dwóch rolek. Taśma YMCK nanosi żółty, purpurowy, niebieskozielony i czarny na przezroczystą folię, a drukarka wprasowuje folię w kartę. W zestawie Prima 831 są obie rolki, każda na 1 000 wydruków, więc kończą się razem i nie trzeba pilnować dwóch stanów magazynowych.
+
+Zestaw pasuje do Magicard Prima 8 w wersji Uno i Duo, także z koderem (Prima 815). Przy druku dwustronnym jedna karta zużywa dwa panele, więc z kompletu wychodzi około 500 kart zadrukowanych z obu stron. Numer katalogowy: Prima 831.`,
+    categoryId: 'materialy-eksploatacyjne',
+    subcategoryIds: ['tasmy-do-drukarek-kart'],
+    manufacturerId: 'magicard',
+    priceFrom: 1416.80,
+    images: ['/images/products/magicard-prima-831.png'],
+    imageDescriptions: ['Zestaw Magicard Prima 831: kaseta folii retransferowej (zielona) i kaseta taśmy YMCK (żółta)'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Typ taśmy', value: 'YMCK (Yellow, Magenta, Cyan, Black) z folią retransferową' },
+      { name: 'Wydajność', value: '1 000 wydruków jednostronnych' },
+      { name: 'Kompatybilność', value: 'Magicard Prima 8 Uno i Duo (Prima 801, 802, 815)' },
+      { name: 'Zawartość zestawu', value: 'Taśma YMCK na 1 000 wydruków i folia retransferowa na 1 000 wydruków' },
+      { name: 'Part Number', value: 'Prima 831' },
+    ],
+    applications: ['Kolorowe identyfikatory drukowane do krawędzi karty', 'Karty z chipem stykowym i zbliżeniowym', 'Legitymacje i karty członkowskie o wieloletniej trwałości'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Dlaczego w zestawie są dwie rolki?', answer: 'Prima 8 najpierw drukuje obraz na folii retransferowej, a potem wprasowuje folię w kartę. Bez folii drukarka nie zadrukuje karty, bez taśmy nie ma obrazu. Zestaw zawiera obie rolki na tę samą liczbę wydruków.' },
+      { question: 'Ile kart wydrukuję z zestawu?', answer: 'Około 1 000 kart jednostronnych albo około 500 kart zadrukowanych z obu stron.' },
+      { question: 'Czy zestaw pasuje do Prima 8 Duo z koderem?', answer: 'Tak. Taśma i folia są takie same dla Uno, Duo i wersji Prima 815 z koderem.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-19',
+  },
+  {
+    id: 'magicard-e9887',
+    slug: 'magicard-zestaw-czyszczacy-prima-8-e9887',
+    name: 'Zestaw czyszczący Magicard Prima 8',
+    shortDescription: 'Oryginalny zestaw czyszczący E9887 do drukarki retransferowej Magicard Prima 8: 10 kart czyszczących i 10 chusteczek do rolek',
+    seoTitle: 'Zestaw czyszczący Magicard Prima 8 | E9887',
+    seoDescription: 'Oryginalny zestaw czyszczący Magicard E9887 do drukarki Prima 8: 10 kart czyszczących i 10 chusteczek. Czyszczenie toru kart i rolek przy wymianie folii.',
+    description: `Drukarka retransferowa jest wrażliwsza na kurz niż drukarka bezpośrednia, bo każdy pyłek na karcie albo rolce odbija się w folii jako jasny punkt. Zestaw E9887 zawiera 10 kart czyszczących, które przepuszcza się przez tor kart, i 10 chusteczek do przetarcia rolek transportowych.
+
+Czyść drukarkę przy każdej wymianie taśmy i folii albo częściej, jeśli karty leżą w otwartym pudełku. Numer katalogowy: E9887.`,
+    categoryId: 'akcesoria',
+    manufacturerId: 'magicard',
+    priceFrom: 198,
+    images: ['/images/products/magicard-e9887.png'],
+    imageDescriptions: ['Zestaw czyszczący Magicard E9887: karty czyszczące, chusteczki i patyczki do drukarki Prima 8'],
+    tags: ['retail'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Zawartość zestawu', value: '10 kart czyszczących i 10 chusteczek czyszczących' },
+      { name: 'Kompatybilność', value: 'Magicard Prima 8 (Uno, Duo, Prima 815)' },
+      { name: 'Part Number', value: 'E9887' },
+    ],
+    applications: ['Czyszczenie toru prowadzenia kart', 'Czyszczenie rolek transportowych', 'Konserwacja drukarki Prima 8 przy wymianie materiałów'],
+    compatibleAccessories: [],
+    faq: [
+      { question: 'Co zawiera zestaw E9887?', answer: '10 kart czyszczących do toru kart i 10 chusteczek do rolek.' },
+      { question: 'Jak często czyścić Prima 8?', answer: 'Przy każdej wymianie taśmy i folii retransferowej, czyli co około 1 000 wydruków, a częściej w zakurzonym pomieszczeniu.' },
+    ],
+    downloads: [],
+    createdAt: '2026-09-19',
   },
 ]
 

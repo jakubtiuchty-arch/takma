@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.takma.com.pl/magicard',
   },
   openGraph: {
-    title: 'Magicard by Brady — drukarki kart i identyfikatorów | TAKMA',
+    title: 'Magicard by Brady — drukarki kart i identyfikatorów',
     description:
       'Drukarki kart Magicard Pronto100, 300 i 600 Duo, oryginalne taśmy oraz akcesoria. Poznaj brytyjskiego producenta należącego do Brady Corporation.',
     url: 'https://www.takma.com.pl/magicard',

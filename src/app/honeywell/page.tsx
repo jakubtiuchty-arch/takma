@@ -7,7 +7,7 @@ const MANUFACTURER_ID = 'honeywell'
 export async function generateMetadata(): Promise<Metadata> {
   const m = getManufacturerById(MANUFACTURER_ID)!
   return {
-    title: `Produkty Honeywell — drukarki, terminale, skanery | TAKMA`,
+    title: `Produkty Honeywell — drukarki, terminale, skanery`,
     description: 'Pełna oferta Honeywell AutoID: drukarki etykiet od 1 518 zł, terminale mobilne z 5G, skanery Voyager/Xenon/Granit, tablety przemysłowe. Ceny netto z dystrybucji, serwis w Polsce, dostawa 24h.',
     openGraph: {
       title: `Produkty Honeywell | TAKMA — autoryzowany partner AutoID`,

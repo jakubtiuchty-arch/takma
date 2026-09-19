@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Darmowe instrukcje obsługi PDF do urządzeń ze sklepu TAKMA: terminale mobilne, skanery kodów, drukarki etykiet. Zebra, Honeywell, Datalogic, Newland — szybki start, konfiguracja, obsługa po polsku.',
   openGraph: {
       images: ['/images/takma-og.png'],
-    title: 'Instrukcje obsługi PDF — urządzenia auto-ID | TAKMA',
+    title: 'Instrukcje obsługi PDF — urządzenia auto-ID',
     description:
       'Darmowe instrukcje obsługi PDF: terminale, skanery i drukarki etykiet Zebra, Honeywell, Datalogic, Newland. Pobierz lub przeglądaj online.',
     url: 'https://www.takma.com.pl/instrukcje',

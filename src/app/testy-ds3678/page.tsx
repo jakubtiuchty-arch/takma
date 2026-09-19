@@ -21,7 +21,7 @@ import { CheckIcon, ArrowRightIcon } from '@/components/ui/Icons'
 const URL = 'https://www.takma.com.pl/testy-ds3678'
 
 export const metadata: Metadata = {
-  title: 'Testy Zebra DS3678 z maskowaniem kanałów BLE — zgłoś stanowisko | TAKMA',
+  title: 'Testy Zebra DS3678 z maskowaniem kanałów BLE — zgłoś stanowisko',
   description:
     'Wypożycz skaner Zebra DS3678 z maskowaniem kanałów Bluetooth Low Energy na dwa tygodnie i sprawdź go na własnych kodach. Pula ograniczona do 3 stanowisk testowych.',
   alternates: { canonical: URL },

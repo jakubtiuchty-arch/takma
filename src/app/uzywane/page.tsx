@@ -11,7 +11,7 @@ import { getSessionFromCookie } from '@/lib/auth'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Sprzęt używany — terminale, drukarki i skanery Zebra | TAKMA',
+  title: 'Sprzęt używany — terminale, drukarki i skanery Zebra',
   description:
     'Używane terminale, drukarki etykiet i skanery Zebra ze sprawdzonym stanem technicznym. Każdy egzemplarz z gwarancją TAKMA, faktura VAT, wysyłka z Wrocławia.',
   alternates: { canonical: 'https://www.takma.com.pl/uzywane' },

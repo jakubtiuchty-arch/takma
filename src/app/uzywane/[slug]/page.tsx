@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   const cena = `${fmt(s.priceNetto)} zł netto`
   return {
-    title: `${s.name} — używany, ${cena} | TAKMA`,
+    title: `${s.name} — używany, ${cena}`,
     description:
       `${s.name} po serwisie i testach. ${stanOpis(s.conditionGrade).etykieta}, gwarancja ${s.warrantyMonths} mies., ` +
       `faktura VAT. Jedna sztuka, cena ${cena}.`,

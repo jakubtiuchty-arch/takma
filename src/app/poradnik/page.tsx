@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Eksperckie poradniki, porównania i przewodniki po drukarkach etykiet, skanerach kodów kreskowych i terminalach mobilnych. Dane z ponad 500 wdrożeń.',
   openGraph: {
       images: ['/images/takma-og.png'],
-    title: 'Poradniki — drukarki etykiet, skanery, terminale | TAKMA',
+    title: 'Poradniki — drukarki etykiet, skanery, terminale',
     description: 'Eksperckie poradniki, porównania i przewodniki po drukarkach etykiet, skanerach kodów kreskowych i terminalach mobilnych.',
     url: 'https://www.takma.com.pl/poradnik',
   },

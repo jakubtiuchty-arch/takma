@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   },
   description: 'Serwis pogwarancyjny urządzeń AutoID — Wrocław. Diagnostyka 48h GRATIS, autoryzowany serwis Zebra. Drukarki, terminale, skanery Zebra, Honeywell, Datalogic, M3.',
   openGraph: {
-    title: 'Serwis Zebra, Honeywell, Datalogic — drukarki, terminale | TAKMA',
+    title: 'Serwis Zebra, Honeywell, Datalogic — drukarki, terminale',
     description: 'Serwis pogwarancyjny urządzeń AutoID — Wrocław. Diagnostyka 48h GRATIS, autoryzowany serwis Zebra. Drukarki, terminale, skanery Zebra, Honeywell, Datalogic, M3.',
     type: 'website',
     url: 'https://www.takma.com.pl/serwis',
