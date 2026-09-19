@@ -3425,21 +3425,27 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   'etui-kabury-skanerow': {
     definition: {
       heading: 'Etui i kabury do skanerów kodów kreskowych',
-      content: 'Kabury przemysłowe do skanerów Honeywell Granit — noszenie skanera na pasku, obie ręce wolne do pracy. Honeywell HOLSTER-INDUSTRIAL z zintegrowanym klipsem na pasek zapewnia pewne mocowanie skanera na biodrze. Zaprojektowana do środowisk magazynowych i produkcyjnych.',
+      content: 'Kabury, rękawice i paski do skanerów kodów kreskowych: kabura przemysłowa Honeywell HOLSTER-INDUSTRIAL na pasek do skanerów pistoletowych Granit oraz akcesoria do noszenia skanerów pierścieniowych M3 WR10 i WR15, czyli rękawica z uchwytem, spust pierścieniowy, pasek na dłoń i pasek na nadgarstek. Kabura zostawia obie ręce wolne między skanowaniami, a rękawica i spust pozwalają skanować bez odkładania czegokolwiek.',
     },
     buyingGuide: {
       heading: 'Jak dobrać kaburę do skanera?',
       items: [
         'HOLSTER-INDUSTRIAL — do skanerów Granit Ultra 2105i, 2100i, Granit XP 1990i, 1991i, 1980i, 1981i. Zintegrowany klips na pasek.',
         'Dobierz do środowiska — w magazynie kabura na pasek daje szybki dostęp do skanera przy kompletowaniu zamówień i obsłudze wózka widłowego.',
+        'Skanery pierścieniowe M3 WR10 i WR15 — do skanera na palcu dobiera się sposób noszenia: pasek na dłoń (WR10-STRP-W01) do lekkiej pracy, rękawica z uchwytem (WR15-GLOV-GRS) tam, gdzie skaner ma trzymać się pewnie przy przenoszeniu towaru, spust pierścieniowy (WR10-TRIG-S00), gdy operator woli wyzwalać skan palcem zamiast przyciskiem na skanerze.',
+        'Pasek na dłoń i rękawica to elementy osobiste operatora. Przy pracy zmianowej każdy pracownik powinien mieć własny komplet, dlatego zamawia się je w liczbie stanowisk, nie skanerów.',
       ],
     },
     expertAuthority: 'TAKMA od 25 lat wyposaża magazyny i centra logistyczne w kompletne zestawy skanerów z akcesoriami ergonomicznymi.',
-    technicalDeepDive: 'Honeywell HOLSTER-INDUSTRIAL: kabura przemysłowa na pasek z zintegrowanym klipsem. Pasuje do skanerów Granit Ultra 2105i (bezprzewodowy), Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1981i. Czarna, trwała konstrukcja zaprojektowana do intensywnego użytkowania w środowiskach przemysłowych.',
+    technicalDeepDive: 'Honeywell HOLSTER-INDUSTRIAL: kabura przemysłowa na pasek z zintegrowanym klipsem. Pasuje do skanerów Granit Ultra 2105i (bezprzewodowy), Granit Ultra 2100i, Granit XP 1990i/1991i, Granit 1980i/1981i. Czarna, trwała konstrukcja do intensywnej pracy w magazynie i na produkcji.\n\nAkcesoria M3 są wspólne dla skanerów WR10 i WR15: rękawica z uchwytem WR15-GLOV-GRS, spust pierścieniowy WR10-TRIG-S00, pasek na nadgarstek WR10-STRP-N01 i pasek na dłoń WR10-STRP-W01. Skaner wpina się w uchwyt rękawicy albo w pasek, a spust zakłada się na palec wskazujący.',
     useCases: [
       {
         title: 'Magazyn — kompletowanie zamówień',
         description: 'Operator nosi skaner na biodrze, skanuje kody na półkach, odkłada skaner do kabury i przenosi towar obiema rękami. Szybki dostęp, wolne ręce między skanowaniami.',
+      },
+      {
+        title: 'Kompletacja ze skanerem pierścieniowym',
+        description: 'Operator ma skaner WR15 na palcu w rękawicy z uchwytem, skanuje kod na półce ruchem dłoni i od razu bierze towar obiema rękami. Nie odkłada skanera i nie szuka go w kaburze, a spust pierścieniowy uruchamia skan bez sięgania do przycisku.',
       },
     ],
     uniqueInsights: {
@@ -3452,6 +3458,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
       ],
     },
     faq: [
+      { question: 'Czy akcesoria do M3 WR10 pasują do WR15?', answer: 'Tak. Rękawica, spust pierścieniowy i oba paski są wspólne dla WR10 i WR15, więc po wymianie skanera na nowszy model akcesoria zostają.' },
       { question: 'Czy kabura HOLSTER-INDUSTRIAL pasuje do Voyager 1470g?', answer: 'Kabura HOLSTER-INDUSTRIAL jest zaprojektowana do większych skanerów serii Granit (pistoletowa obudowa). Voyager 1470g jest mniejszy i może się nie trzymać pewnie. Do Voyagera zalecamy kabel USB 3 m i odkładanie na biurko lub podstawkę.' },
     ],
     comparisons: [],
