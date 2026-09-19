@@ -585,7 +585,11 @@ export const industryPages: IndustryPage[] = [
       {
         question: 'Jaka jest różnica między Zebra ZD220d a ZD421d do sklepu internetowego?',
         answer: 'Zebra ZD220d (621 zł netto) to budżetowy model entry-level, a ZD421d (1 330 zł) to zaawansowana drukarka biurkowa z modułową architekturą. Kluczowe różnice: (1) Prędkość — ZD421d drukuje o 50% szybciej (152 mm/s vs 102 mm/s), etykieta 100×150 mm w 1 sekundę zamiast 1,5 sekundy. (2) Łączność — ZD220d ma tylko USB, ZD421d oferuje modułowe sloty na Ethernet (LAN), Wi-Fi i RS-232. (3) Rozdzielczość — ZD421d dostępna w 203 i 300 dpi (ZD220d tylko 203 dpi). (4) Opcje — ZD421d obsługuje odklejak i gilotynę, ZD220d tylko odklejak. (5) Pamięć — ZD421d ma 512 MB Flash / 256 MB RAM (vs 256/128 MB w ZD220d). (6) Platforma Link-OS — ZD421d obsługuje zdalne zarządzanie i diagnostykę, ZD220d nie. (7) Gwarancja — ZD421d 36 miesięcy, ZD220d 24 miesiące. Rekomendacja: jeśli drukujesz ponad 50 paczek/dzień lub potrzebujesz sieci — ZD421d. Do 50 paczek przy jednym stanowisku USB — ZD220d wystarczy.'
-      }
+      },
+      {
+        question: 'Czy drukarka etykiet do InPost drukuje etykiety A6?',
+        answer: 'Tak. Etykieta InPost, Allegro i większości kurierów ma 100 × 150 mm, a arkusz A6 to 105 × 148 mm, więc oba formaty mieszczą się w drukarce 4-calowej. Rozmiar etykiety ustawia się raz w sterowniku i w BaseLinker albo panelu kuriera, a drukarka po kalibracji sama wykrywa początek każdej etykiety. Do etykiet A6 na rolce wystarczy model termiczny 203 dpi, bez taśmy barwiącej.',
+      },
     ],
 
     relatedLinks: [

@@ -527,141 +527,120 @@ Wpływ na głowicę: druk termiczny bezpośredni szybciej zużywa głowicę niż
 
   // ===== PARENT CATEGORY: Drukarki etykiet (all label printers overview) =====
   'drukarki-etykiet': {
+    updatedAt: '2026-09-19',
+    sectionHeadings: {
+      expertAuthority: 'Dlaczego TAKMA: sprzedaż i serwis w całej Polsce',
+      technicalDeepDive: 'Prędkość, praca ciągła i koszt w trzy lata',
+      comparisons: 'Marki w ofercie',
+    },
     definition: {
-      heading: 'Czym jest drukarka etykiet i do czego służy?',
-      content: 'Drukarka etykiet to specjalistyczne urządzenie przeznaczone do drukowania etykiet samoprzylepnych, przywieszek, opasek identyfikacyjnych oraz oznaczeń z kodami kreskowymi 1D i 2D. W odróżnieniu od zwykłych drukarek biurowych, drukarki etykiet pracują na rolkach materiału ciągłego lub etykietach wykrojnikowych, co pozwala na szybki, automatyczny druk setek lub tysięcy etykiet bez przerwy. Urządzenia te są fundamentem systemów automatycznej identyfikacji (AutoID) stosowanych w logistyce, magazynowaniu, produkcji, handlu detalicznym, ochronie zdrowia i wielu innych branżach.\n\nDrukarki etykiet dzielą się na dwie główne kategorie ze względu na technologię druku: termiczne bezpośrednie (direct thermal, DT), które drukują na papierze termoczułym bez użycia taśmy barwiącej, oraz termotransferowe (thermal transfer, TT), które przenoszą barwnik z taśmy (ribbon) na etykietę, dając trwały, odporny na warunki zewnętrzne wydruk. Pod względem klasy urządzenia wyróżniamy drukarki biurkowe (desktop) — kompaktowe modele do biura i niewielkich wolumenów, oraz drukarki przemysłowe (industrial) — wytrzymałe urządzenia w metalowej obudowie do pracy ciągłej 24/7 w środowiskach produkcyjnych i magazynowych.\n\nDrukarki etykiet są niezbędne wszędzie tam, gdzie trzeba szybko i precyzyjnie oznaczać produkty, przesyłki, regały magazynowe, próbki laboratoryjne, leki, przewody elektryczne czy komponenty elektroniczne. W Polsce z drukarek etykiet korzystają firmy e-commerce do etykiet kurierskich, zakłady produkcyjne do oznaczeń zgodnych z GS1, apteki do etykiet recepturowych, a także sieci handlowe, szpitale i firmy logistyczne. Niezależnie od branży, właściwie dobrana drukarka etykiet zwiększa wydajność operacyjną, eliminuje błędy ręcznego opisywania i zapewnia zgodność z normami identyfikacji towarów.',
+      heading: 'Drukarki etykiet i kodów kreskowych: co jest w ofercie',
+      content: 'Drukarka etykiet drukuje na rolce etykiet samoprzylepnych, przywieszek lub opasek, najczęściej z kodem kreskowym 1D albo 2D, na papierze termicznym lub przez taśmę barwiącą. W ofercie TAKMA jest ponad 70 modeli Zebra, Honeywell, TSC, Brother i Citizen: od biurkowej Zebra ZD220t od 639 zł netto po przemysłowe drukarki 6-calowe z modułem RFID.\n\nPodział jest prosty. Drukarki biurkowe do 1 000 etykiet dziennie stoją w biurze, sklepie, aptece i magazynie e-commerce. Drukarki przemysłowe z metalową obudową pracują na trzy zmiany na produkcji i w centrach logistycznych. Drukarki mobilne noszone przy pasku drukują etykiety przy regale albo w terenie. Osobno wybiera się technologię: druk termiczny bez taśmy do etykiet kurierskich i cenówek, druk termotransferowy z taśmą barwiącą do etykiet, które mają przetrwać lata.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać drukarkę etykiet? Kompletny przewodnik',
+      heading: 'Jak wybrać drukarkę etykiet',
       items: [
-        'Technologia druku (DT vs TT) — druk termiczny bezpośredni (DT) nie wymaga taśmy barwiącej i jest tańszy w eksploatacji, ale wydruk blaknie po kilku tygodniach do miesięcy. Druk termotransferowy (TT) wykorzystuje taśmę barwiącą i daje trwały wydruk odporny na ścieranie, wilgoć i UV — od kilku miesięcy do ponad 10 lat. Wybierz DT do etykiet tymczasowych (kurierskie, cenówki), TT do etykiet trwałych (produktowe, magazynowe, tabliczki znamionowe). Uwaga: każda drukarka TT może pracować też w trybie DT.',
-        'Dzienny wolumen druku — to kluczowy parametr decydujący o klasie urządzenia. Do 1 000 etykiet dziennie wystarczy drukarka biurkowa (desktop). Przy 1 000–5 000 etykiet rozważ model biurkowy premium lub półprzemysłowy. Powyżej 5 000 etykiet dziennie lub przy pracy ciągłej — wybierz drukarkę przemysłową. Przekraczanie zalecanego wolumenu skraca żywotność głowicy nawet 3-krotnie.',
-        'Rozdzielczość druku (DPI) — standardowe 203 dpi wystarczy do etykiet logistycznych, adresowych i kodów kreskowych EAN/UPC. Rozdzielczość 300 dpi jest potrzebna do małych etykiet z kodami DataMatrix, QR i tekstem poniżej 6 pkt. Rozdzielczość 600 dpi to domena mikroetykiet w elektronice i jubilerstwie. Wyższa rozdzielczość zmniejsza maksymalną prędkość druku o 15–60%.',
-        'Szerokość druku — drukarki 4-calowe (do 108 mm) obsłużą standardowe etykiety logistyczne, adresowe i kurierskie 100×150 mm. Do etykiet paletowych GS1 i dużych oznaczeń przemysłowych potrzebna jest drukarka 6-calowa (do 168 mm). Modele 2-calowe (do 56 mm) służą do wąskich etykiet na przewody i drobne opakowania.',
-        'Łączność i interfejsy — podstawowe modele oferują USB, co wystarcza do jednego stanowiska. Ethernet (LAN) umożliwia udostępnienie drukarki w sieci firmowej i integrację z WMS/ERP. Wi-Fi daje mobilność lokalizacji drukarki. Bluetooth jest przydatny przy podłączeniu do urządzeń mobilnych. Dla floty drukarek zalecane są modele z Ethernet i opcją zdalnego zarządzania.',
-        'Wytrzymałość i jakość wykonania — drukarki biurkowe mają plastikową obudowę i nadają się do pracy biurowej. Drukarki przemysłowe z metalową obudową i ramą są przystosowane do kurzu, wibracji i temperatury hal produkcyjnych. Przy pracy 24/7 szukaj modeli z metalowym mechanizmem druku, aluminiowym wałkiem dociskowym i łatwą wymianą głowicy bez narzędzi.',
-        'Całkowity koszt posiadania (TCO) — nie kieruj się wyłącznie ceną zakupu. Na TCO w skali 3 lat składają się: cena drukarki (20–40%), etykiety (30–50%), taśmy barwiące przy druku TT (10–20%), wymiana głowicy co 12–36 miesięcy (5–15%) oraz ewentualny serwis. Droższy model premium z trwalszą głowicą i szybszym drukiem może być tańszy w TCO niż najtańszy model biurkowy przy dużym wolumenie.',
-        'Kompatybilność z oprogramowaniem i systemami — sprawdź, czy drukarka obsługuje język programowania wymagany przez Twój system (ZPL, EPL, TSPL, DPL). Zmiana języka drukarki może wymagać przebudowy szablonów etykiet (koszt 500–2 000 zł). Upewnij się, że producent oferuje darmowe oprogramowanie do projektowania etykiet (np. ZebraDesigner Essentials, BarTender Starter) oraz sterowniki dla Twojego systemu operacyjnego.',
+        'Ile etykiet dziennie — do 1 000 wystarczy drukarka biurkowa, między 1 000 a 5 000 biurkowa klasy premium albo półprzemysłowa, powyżej 5 000 lub przy pracy ciągłej przemysłowa. Liczy się też szczyt: 300 etykiet w godzinę przed odjazdem kuriera obciąża drukarkę bardziej niż 2 000 rozłożonych na cały dzień.',
+        'Termiczna czy termotransferowa — etykieta kurierska, paragon i cenówka żyją tygodnie, więc wystarczy druk termiczny bez taśmy. Etykieta produktowa, magazynowa, na przewód albo na lek ma być czytelna po latach, w wilgoci i na słońcu, i tu potrzebna jest taśma barwiąca. Drukarka termotransferowa drukuje także termicznie, odwrotnie nie.',
+        'Rozdzielczość — 203 dpi wystarcza do etykiet logistycznych, adresowych i kodów EAN. 300 dpi jest potrzebne przy kodach DataMatrix i QR poniżej 10 mm oraz tekście poniżej 6 punktów. 600 dpi to mikroetykiety w elektronice i jubilerstwie. Wyższa rozdzielczość oznacza wolniejszy druk i głowicę droższą 2–4 razy.',
+        'Szerokość druku — 4 cale (do 108 mm) obsługują etykiety kurierskie 100 × 150 mm i większość etykiet logistycznych. 6 cali (do 168 mm) jest potrzebne do etykiet paletowych GS1. 2 cale (do 56 mm) wystarczają na etykiety przewodów, próbek i drobnych opakowań.',
+        'Łączność — USB wystarcza na jednym stanowisku. Ethernet pozwala drukować z kilku komputerów i wprost z systemu WMS lub ERP. Wi-Fi i Bluetooth są potrzebne, gdy drukarka ma stać z dala od gniazda sieciowego albo współpracować z terminalem mobilnym.',
+        'Język drukarki — systemy magazynowe, kurierskie i ERP w Polsce najczęściej wysyłają etykiety w języku ZPL. Zebra używa go natywnie, Honeywell i TSC mają jego emulację. Drukarka bez obsługi ZPL wymaga przebudowy szablonów, co kosztuje 500–2 000 zł.',
+        'Koszt w trzy lata — na rachunek składają się drukarka, etykiety, taśmy przy druku termotransferowym, głowica wymieniana co 12–36 miesięcy i serwis. Tańsza drukarka z głowicą na 6 miesięcy kosztuje po trzech latach więcej niż model za 2 000 zł z głowicą na 2 lata.',
       ],
     },
-    expertAuthority: 'TAKMA to autoryzowany partner Zebra Technologies z ponad 20-letnim doświadczeniem we wdrażaniu rozwiązań AutoID na polskim rynku. Nasz zespół inżynierów i konsultantów technicznych przeprowadził tysiące wdrożeń drukarek etykiet — od jednoosobowych firm e-commerce po wielozmianowe centra logistyczne obsługujące dziesiątki tysięcy przesyłek dziennie. Oferujemy kompleksową obsługę: dobór modelu na podstawie analizy procesów klienta, konfigurację i integrację z systemami WMS/ERP, szkolenia operatorów oraz pełen serwis pogwarancyjny realizowany przez nasz autoryzowany punkt serwisowy serwis-zebry.pl. Jako jedyny sklep w Polsce prowadzimy cztery wyspecjalizowane podkategorie drukarek etykiet — biurkowe, przemysłowe, termotransferowe i termiczne — z dedykowaną treścią ekspercką na każdej z nich. Dzięki temu nasi klienci korporacyjni, integratorzy systemów i działy IT otrzymują precyzyjne rekomendacje oparte na rzeczywistych danych eksploatacyjnych, a nie wyłącznie na materiałach marketingowych producenta.',
-    technicalDeepDive: `Na rynku drukarek etykiet dominują dwie technologie druku: termiczna bezpośrednia (direct thermal, DT) i termotransferowa (thermal transfer, TT). W druku termicznym bezpośrednim głowica podgrzewa specjalny papier termoczuły, który ciemnieje w miejscu kontaktu — nie wymaga to żadnych dodatkowych materiałów eksploatacyjnych poza etykietami. Wydruk DT jest ekonomiczny i prosty w obsłudze, ale blaknie pod wpływem ciepła, światła UV i tarcia — typowa trwałość to 3-12 miesięcy w zależności od warunków. W druku termotransferowym głowica podgrzewa taśmę barwiącą (ribbon), przenosząc pigment na etykietę. Wydruk TT jest trwały — od kilku miesięcy (taśma woskowa) do ponad 10 lat (taśma żywiczna na folii PET) — i odporny na ścieranie, wilgoć, chemikalia oraz ekstremalne temperatury. Koszt eksploatacji TT jest wyższy o koszt taśmy (~0,005-0,010 zł/etykietę), ale możliwość druku na różnorodnych materiałach (papier, folia PP/PE/PET, tkanina) czyni tę technologię niezbędną w przemyśle, logistyce i farmacji. Każda drukarka termotransferowa obsługuje również tryb DT — co daje pełną elastyczność na jednym urządzeniu.
+    expertAuthority: 'TAKMA sprzedaje i serwisuje drukarki etykiet od 25 lat. Jesteśmy partnerem Zebra, Honeywell, TSC i Brother, a serwis drukarek Zebra prowadzimy pod marką serwis-zebry.pl. Wysyłamy kurierem do firm w całej Polsce, także do Warszawy, Łodzi, Poznania i Krakowa, a naprawy przyjmujemy z odbiorem kurierskim. Przed zakupem dobieramy model, etykiety i taśmę do podanego wolumenu i systemu, po zakupie pomagamy w instalacji sterowników i konfiguracji.',
+    technicalDeepDive: `Drukarki biurkowe drukują od 102 mm/s w modelach ekonomicznych do 203 mm/s w modelach premium, czyli od około 1 500 do 4 000 etykiet 58 × 40 mm na godzinę. Drukarki przemysłowe drukują 200–356 mm/s, około 4 000–6 500 etykiet na godzinę. Ważniejsza od prędkości maksymalnej jest praca ciągła: drukarka biurkowa jest projektowana na 500–3 000 etykiet dziennie, przemysłowa na 10 000 i więcej. Modele 4-calowe pokrywają około 95 % formatów etykiet, 6-calowe są potrzebne do etykiet paletowych GS1-128.
 
-Rozdzielczość druku to jeden z kluczowych parametrów drukarki etykiet, ale jego wybór powinien zależeć od konkretnego zastosowania, a nie od zasady „im więcej, tym lepiej". Standardowa rozdzielczość 203 dpi (8 punktów/mm) wystarcza do 90% zastosowań logistycznych i handlowych — etykiet adresowych, wysyłkowych, kodów kreskowych EAN-13, UPC-A i kodów 1D. Rozdzielczość 300 dpi (12 punktów/mm) jest zalecana przy małych etykietach (poniżej 30×15 mm), drobnych kodach 2D DataMatrix, tekstach poniżej 6 punktów i grafikach wymagających większego detalu. Rozdzielczość 600 dpi (24 punkty/mm) to domena mikroetykiet na komponentach elektronicznych (5×3 mm), oznaczeń PCB i zastosowań, w których wymagana jest precyzja poniżej 0,1 mm. Warto wiedzieć, że wyższa rozdzielczość oznacza wolniejszy druk — przy przejściu z 203 na 300 dpi prędkość spada o 15-30%, a przy 600 dpi nawet o 50-60%. Ponadto głowice 600 dpi są 2-4 razy droższe w wymianie niż głowice 203 dpi.
-
-Prędkość druku różni się znacząco między klasami urządzeń. Drukarki biurkowe (desktop) osiągają od 102 mm/s w modelach ekonomicznych do 203 mm/s w modelach premium — w praktyce od ~1 500 do ~4 000 etykiet standardowego rozmiaru (58x40 mm) na godzinę. Drukarki przemysłowe (industrial) pracują z prędkością od 200 mm/s do 356 mm/s, co przekłada się na ~4 000-6 500 etykiet na godzinę. Kluczowa różnica nie tkwi jednak tylko w prędkości maksymalnej, ale w zdolności do pracy ciągłej — drukarki biurkowe są projektowane do dziennego nakładu 500-3 000 etykiet, podczas gdy przemysłowe obsługują 10 000-100 000+ etykiet dziennie. Szerokość druku to kolejny parametr: modele 4-calowe (104 mm) pokrywają ~95% standardowych formatów, natomiast modele 6-calowe (168 mm) są niezbędne do etykiet paletowych GS1-128 i szerokich oznaczeń magazynowych.
-
-Profesjonalna analiza zakupowa powinna uwzględniać całkowity koszt posiadania (TCO) w perspektywie 3-5 lat, a nie jedynie cenę urządzenia. TCO obejmuje: cenę drukarki (635-15 900 zł), koszt etykiet (0,01-0,05 zł/szt.), koszt taśm barwiących w przypadku TT (0,005-0,010 zł/etykietę), wymianę głowicy co 50-100 km taśmy (400-3 000 zł) oraz serwis. Przykład: firma drukująca 1 000 etykiet TT 58x40 mm dziennie przez 3 lata — drukarka ekonomiczna (635 zł) + etykiety (~220 zł/mies.) + taśmy woskowe (~55 zł/mies.) + 2 wymiany głowicy (~1 200 zł) = TCO ok. 11 500-13 000 zł. Drukarka premium (2 050 zł) z dłuższą żywotnością głowicy może obniżyć TCO do 10 500-12 000 zł.`,
+Cena drukarki to zwykle 20–40 % wydatków w trzy lata. Resztę pochłaniają etykiety (0,01–0,05 zł za sztukę), taśmy barwiące przy druku termotransferowym (0,005–0,010 zł na etykietę), głowica wymieniana po 50–100 km przebiegu, czyli co 12–36 miesięcy, oraz serwis. Chropowate etykiety papierowe skracają żywotność głowicy o 40–60 %, folie PP i PET ją wydłużają, a czyszczenie głowicy izopropanolem co 1 000–2 000 etykiet potrafi ją podwoić.`,
     useCases: [
       {
         title: 'Logistyka i magazyn',
-        description: 'Centra logistyczne i magazyny wymagają szybkiego druku etykiet z kodami kreskowymi na paczki, palety i regały. Przy wolumenie do 3 000 etykiet dziennie sprawdzą się drukarki biurkowe 203 dpi; powyżej 5 000 etykiet — przemysłowe z prędkością 250-356 mm/s. Dla etykiet paletowych GS1-128 niezbędny jest model 6-calowy (168 mm). Integracja z WMS przez Ethernet i obsługa języka ZPL to standard w tej branży.',
+        description: 'Etykiety na paczki, palety i regały. Do 3 000 etykiet dziennie wystarczy drukarka biurkowa 203 dpi, powyżej 5 000 przemysłowa z prędkością 250–356 mm/s. Do etykiet paletowych GS1-128 potrzebny jest model 6-calowy.',
       },
       {
         title: 'E-commerce i wysyłki',
-        description: 'Sklepy internetowe drukują etykiety kurierskie (100x150 mm) dla InPost, DPD, DHL, Poczty Polskiej. Etykiety wysyłkowe żyją 3-7 dni, więc wystarczy druk termiczny bezpośredni (DT) bez taśmy — co obniża koszty eksploatacji o 30-40%. Przy wolumenie do 200 paczek dziennie idealna jest drukarka biurkowa 4-calowa; przy 500+ paczkach warto rozważyć model przemysłowy. Koszt eksploatacji: od 50 zł miesięcznie.',
+        description: 'Etykiety kurierskie 100 × 150 mm, w formacie zbliżonym do A6, dla InPost, DPD, DHL i Poczty Polskiej. Etykieta żyje kilka dni, więc wystarczy druk termiczny bez taśmy, o 30–40 % tańszy w eksploatacji. Do 200 paczek dziennie wystarczy drukarka biurkowa z USB, przy kilku stanowiskach z Ethernet.',
       },
       {
         title: 'Produkcja przemysłowa',
-        description: 'Linie produkcyjne wymagają niezawodnych drukarek przemysłowych z metalową obudową, odpornych na kurz, wibracje i zanieczyszczenia. Etykiety produktowe, tabliczki znamionowe i oznaczenia partii muszą być trwałe — konieczny druk termotransferowy z taśmą żywiczną. Rozdzielczość 300-600 dpi zapewnia czytelność mikroetykiet na komponentach. Kluczowa jest integracja z MES/ERP oraz synchronizacja z taktem linii produkcyjnej.',
+        description: 'Etykiety produktowe, tabliczki znamionowe i oznaczenia partii muszą przetrwać lata, dlatego drukuje się je termotransferowo taśmą żywiczną, przy małych kodach DataMatrix w rozdzielczości 300–600 dpi. Metalowa obudowa drukarki przemysłowej znosi kurz, wibracje i pracę na trzy zmiany.',
       },
       {
         title: 'Handel detaliczny',
-        description: 'Sieci handlowe i sklepy detaliczne drukują cenówki, etykiety promocyjne i oznaczenia regałowe. Etykiety cenowe zmieniają się co 1-4 tygodnie — trwałość druku termicznego jest wystarczająca. Drukarki biurkowe 203 dpi z łatwą obsługą pozwalają każdemu pracownikowi wydrukować cenówki po 5-minutowym szkoleniu. W sieciach z wieloma lokalizacjami ważne jest zdalne zarządzanie flotą drukarek.',
+        description: 'Cenówki, etykiety promocyjne i oznaczenia regałowe zmieniają się co 1–4 tygodnie, więc wystarczy druk termiczny. Drukarka biurkowa 203 dpi z prostą obsługą pozwala każdemu pracownikowi wydrukować cenówki bez szkolenia.',
       },
       {
         title: 'Ochrona zdrowia',
-        description: 'Szpitale, apteki i laboratoria wymagają drukarek zgodnych z regulacjami branżowymi. Etykiety na leki muszą być trwałe (druk TT), opaski identyfikacyjne pacjentów — odporne na wodę i dezynfekcję, a etykiety laboratoryjne — czytelne w lodówce (4°C) i zamrażarce (-20°C). Rozdzielczość 300 dpi do kodów DataMatrix wymaganych przez system weryfikacji leków (FMD/EMVS).',
+        description: 'Etykiety na leki wymagają druku termotransferowego, opaski pacjentów odporności na wodę i dezynfekcję, a etykiety laboratoryjne czytelności w lodówce i zamrażarce do -20 °C. Rozdzielczość 300 dpi jest potrzebna przy małych etykietach na probówki.',
       },
       {
         title: 'Automatyka i kontrola jakości',
-        description: 'Systemy automatycznej identyfikacji w zakładach produkcyjnych wykorzystują drukarki etykiet zintegrowane z liniami montażowymi i stanowiskami testowymi. Wymagana jest drukarka przemysłowa 300-600 dpi z modułem RFID do jednoczesnego druku i kodowania chipów UHF. Etykiety muszą wytrzymać procesy lutowania (do 150°C) i ekspozycji na rozpuszczalniki — co wymaga taśm żywicznych i etykiet z folii poliimidu.',
+        description: 'Drukarki zintegrowane z linią montażową i stanowiskami testowymi, często z modułem RFID do jednoczesnego druku i kodowania chipów UHF, w rozdzielczości 300–600 dpi. Etykiety muszą wytrzymać lutowanie i mycie płytek.',
       },
     ],
     uniqueInsights: {
-      heading: '10 rzeczy, które musisz wiedzieć przed zakupem drukarki etykiet',
+      heading: 'Trzy rzeczy do sprawdzenia przed zakupem',
       items: [
         {
-          title: 'Pułapka TCO: tania drukarka nie znaczy tani druk',
-          text: 'Drukarka za 635 zł, która wymaga wymiany głowicy co 6 miesięcy (600 zł), w perspektywie 3 lat kosztuje więcej niż model za 2 050 zł z głowicą wytrzymującą 24 miesiące. Przed zakupem oblicz TCO: cena drukarki + etykiety + taśmy (jeśli TT) + głowice + serwis. Firmy, które porównują wyłącznie ceny zakupu, przepłacają średnio 15-25% w skali 3 lat.',
+          title: 'Cena drukarki to nie cena druku',
+          text: 'Drukarka za 635 zł z głowicą wymienianą co 6 miesięcy po 600 zł kosztuje w trzy lata więcej niż model za 2 050 zł z głowicą na 24 miesiące. Przed zakupem liczy się sumę: drukarka, etykiety, taśmy, głowice i serwis. Firmy, które porównują tylko cenę zakupu, płacą w trzy lata o 15–25 % więcej.',
         },
         {
-          title: 'Mit DPI: wyższa rozdzielczość to nie zawsze lepszy wybór',
-          text: 'Drukarka 600 dpi drukuje 2-3 razy wolniej niż model 203 dpi, a głowica kosztuje 2-4 razy więcej. Jeśli drukujesz etykiety 100x60 mm z kodem EAN-13, różnica między 203 a 600 dpi jest niewidoczna gołym okiem. Rozdzielczość 300+ dpi ma sens wyłącznie przy etykietach poniżej 30 mm, kodach DataMatrix poniżej 5 mm i tekście poniżej 6 punktów.',
+          title: 'Taśma musi pasować do etykiety',
+          text: 'Taśma woskowa na folii PP daje blady, ścieralny nadruk. Taśma żywiczna na matowym papierze niszczy głowicę. Taśma z nawojem IN zamiast OUT drukuje obraz lustrzany. Zestaw taśma i etykieta sprawdza się przed zakupem: w TAKMA testujemy dobór materiałów bezpłatnie.',
         },
         {
-          title: 'Łączność jest ważniejsza niż myślisz',
-          text: 'Drukarka z samym portem USB jest przywiązana do jednego komputera — to wąskie gardło w firmie z kilkoma stanowiskami. Ethernet pozwala na współdzielenie drukarki w sieci, Wi-Fi dodaje mobilność, a Bluetooth jest kluczowy w aplikacjach mobilnych. Różnica w cenie między modelem USB a Ethernet/Wi-Fi to zwykle 500-1 500 zł, ale oszczędza godziny pracy miesięcznie.',
-        },
-        {
-          title: 'Kompatybilność taśm jest krytyczna dla drukarek TT',
-          text: 'Niewłaściwy dobór taśmy barwiącej do materiału etykiety to najczęstszy błąd użytkowników drukarek termotransferowych. Taśma woskowa na folii PP da blady, ścieralny nadruk. Taśma żywiczna na papierze matowym może uszkodzić głowicę. Błędny nawój (IN zamiast OUT) daje lustrzany obraz. Przed zakupem zawsze testuj kombinację taśma + etykieta — w TAKMA oferujemy bezpłatne testy materiałów.',
-        },
-        {
-          title: 'Żywotność głowicy zależy od materiału etykiety',
-          text: 'Producenci deklarują żywotność głowicy jako 50-100 km taśmy, ale w praktyce chropowate etykiety papierowe skracają ten dystans nawet o 40-60%. Etykiety foliowe (PP, PET) są gładsze i wydłużają życie głowicy. Regularne czyszczenie głowicy izopropanolem co 1 000-2 000 etykiet może podwoić jej żywotność.',
-        },
-        {
-          title: 'Ekosystem oprogramowania: ZPL to standard branżowy',
-          text: 'Język programowania ZPL (Zebra Programming Language) jest obsługiwany przez ponad 90% systemów WMS, ERP i platform kurierskich w Polsce. Wybór drukarki z innym językiem (EPL, TSPL, DPL) może wymagać przebudowy szablonów etykiet (500-2 000 zł) i dodatkowych sterowników. Jeśli planujesz integrację z SAP, Oracle, Microsoft Dynamics lub systemami kurierskimi — ZPL jest najbezpieczniejszym wyborem.',
+          title: 'Czujnik i kalibracja',
+          text: 'Etykiety z czarnym znacznikiem na spodzie wymagają czujnika odbiciowego, etykiety z przerwą czujnika przeziernego. Po każdej zmianie rolki na inny format drukarka wymaga kalibracji, inaczej drukuje w połowie etykiety albo wypuszcza puste.',
         },
       ],
     },
     faq: [
       {
-        question: 'Jaka drukarka etykiet do firmy? Jak dobrać model do potrzeb?',
-        answer: 'Wybór drukarki etykiet do firmy zależy przede wszystkim od trzech czynników: dziennego wolumenu druku, wymaganej trwałości etykiet i budżetu. Dla małej firmy e-commerce drukującej do 200 etykiet kurierskich dziennie wystarczy biurkowa drukarka termiczna od ok. 500 zł netto. Firma magazynowa z nakładem 1 000–5 000 etykiet dziennie potrzebuje biurkowego lub przemysłowego modelu termotransferowego (1 500–5 000 zł). Duże centrum logistyczne z wolumenem powyżej 10 000 etykiet wymaga przemysłowej drukarki z metalową obudową (od 2 500 zł). Kluczowa jest też kompatybilność z systemem WMS/ERP — sprawdź obsługiwany język programowania (ZPL, EPL, TSPL) przed zakupem.',
+        question: 'Jaka drukarka etykiet do firmy?',
+        answer: 'Decydują trzy rzeczy: liczba etykiet dziennie, wymagana trwałość nadruku i system, z którego drukujesz. Mała firma e-commerce z 200 etykietami kurierskimi dziennie potrzebuje [biurkowej drukarki termicznej](/biurkowe-drukarki-etykiet) od 639 zł netto. Magazyn z 1 000–5 000 etykiet dziennie potrzebuje modelu termotransferowego za 1 500–5 000 zł. Centrum logistyczne z ponad 10 000 etykiet dziennie i produkcja na trzy zmiany potrzebują [przemysłowej drukarki etykiet](/przemyslowe-drukarki-etykiet) z metalową obudową od 2 500 zł. Przed zakupem sprawdź, czy system WMS lub ERP wysyła etykiety w języku ZPL, TSPL czy EPL.',
       },
       {
-        question: 'Ile kosztuje drukarka etykiet? Ceny drukarek do etykiet w Polsce',
-        answer: 'Ceny drukarek etykiet w Polsce zaczynają się od ok. 500 zł netto za podstawowe modele biurkowe termiczne z interfejsem USB. Drukarki biurkowe ze średniej półki z Ethernet i wyświetlaczem kosztują 1 500–2 500 zł netto, a modele premium z Wi-Fi, Bluetooth i rozdzielczością 300 dpi — 2 000–3 500 zł netto. Drukarki przemysłowe zaczynają się od ok. 2 500 zł netto (entry-level), przez 5 000–8 000 zł (klasa średnia), do ponad 15 000 zł za modele 6-calowe z RFID i rozdzielczością 600 dpi. Do ceny drukarki należy doliczyć materiały eksploatacyjne: etykiety (od ok. 8 zł za 1 000 szt.) oraz taśmy barwiące w przypadku druku termotransferowego (od ok. 10 zł za rolkę).',
+        question: 'Ile kosztuje drukarka etykiet?',
+        answer: 'Biurkowe drukarki termiczne z USB kosztują od 639 zł netto. Modele biurkowe z Ethernet i wyświetlaczem 1 500–2 500 zł netto, premium z Wi-Fi, Bluetooth i 300 dpi 2 000–3 500 zł netto. Drukarki przemysłowe zaczynają się od około 2 500 zł netto, klasa średnia to 5 000–8 000 zł, a modele 6-calowe z RFID i 600 dpi przekraczają 15 000 zł. Do tego dochodzą etykiety od około 8 zł za 1 000 sztuk i taśmy barwiące od około 10 zł za rolkę przy druku termotransferowym.',
       },
       {
-        question: 'Drukarka termiczna czy termotransferowa — czym się różnią i którą wybrać?',
-        answer: 'Drukarka termiczna bezpośrednia (DT) drukuje na specjalnym papierze termoczułym bez użycia taśmy barwiącej — jest tańsza w eksploatacji, ale wydruk blaknie po kilku tygodniach do miesięcy pod wpływem ciepła, światła i tarcia. Drukarka termotransferowa (TT) wykorzystuje taśmę barwiącą (ribbon), która przenosi trwały barwnik na etykietę — wydruk jest odporny na ścieranie, wilgoć, UV i chemikalia, a jego trwałość sięga od kilku miesięcy do ponad 10 lat. Wybierz drukarkę termiczną do etykiet tymczasowych: kurierskich, wysyłkowych, cenówek, paragonów. Wybierz termotransferową do etykiet trwałych: produktowych, magazynowych, na przewody, tabliczek znamionowych. Ważna uwaga: każda drukarka termotransferowa może również drukować w trybie termicznym bezpośrednim, co czyni ją urządzeniem uniwersalnym.',
+        question: 'Drukarka termiczna czy termotransferowa?',
+        answer: '[Drukarka termiczna](/termiczne-drukarki-etykiet) drukuje na papierze termoczułym bez taśmy. Nadruk blaknie po kilku tygodniach do kilku miesięcy pod wpływem ciepła, światła i tarcia, co wystarcza na etykiety kurierskie, cenówki i paragony. [Drukarka termotransferowa](/termotransferowe-drukarki-etykiet) przenosi barwnik z taśmy, a nadruk wytrzymuje od kilku miesięcy z taśmą woskową do ponad 10 lat z taśmą żywiczną na folii. Do etykiet produktowych, magazynowych, na przewody i tabliczek znamionowych potrzebny jest druk termotransferowy. Każda drukarka termotransferowa drukuje też termicznie.',
       },
       {
-        question: 'Drukarka etykiet biurkowa czy przemysłowa — jaką klasę wybrać?',
-        answer: 'Drukarka biurkowa (desktop) jest kompaktowa, tańsza (od 500 zł netto) i przeznaczona do druku do 1 000–3 000 etykiet dziennie w warunkach biurowych. Drukarka przemysłowa (industrial) ma metalową obudowę, jest 2–5 razy szybsza, obsługuje rolki o większej średnicy (mniej przestojów) i jest zaprojektowana do ciągłej pracy 24/7 w magazynach i na halach produkcyjnych — ale kosztuje od 2 500 do ponad 15 000 zł netto. Zasada doboru: przy dziennym nakładzie do 1 000–3 000 etykiet w biurze lub małym magazynie — biurkowa. Przy wolumenie powyżej 5 000 etykiet, pracy wielozmianowej lub trudnych warunkach środowiskowych (kurz, temperatura, wibracje) — przemysłowa. Przekraczanie zalecanego wolumenu na drukarce biurkowej prowadzi do przyspieszonego zużycia głowicy i awarii.',
+        question: 'Drukarka etykiet biurkowa czy przemysłowa?',
+        answer: '[Biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet) kosztują od 639 zł netto i są projektowane na 1 000–3 000 etykiet dziennie w biurze lub małym magazynie. [Przemysłowe drukarki etykiet](/przemyslowe-drukarki-etykiet) mają metalową obudowę, drukują 2–5 razy szybciej, mieszczą większe rolki i pracują na trzy zmiany na hali, w cenie od 2 500 do ponad 15 000 zł netto. Granica to 3 000–5 000 etykiet dziennie. Drukarka biurkowa obciążona ponad miarę zużywa głowicę w kilka miesięcy.',
       },
       {
-        question: 'Jakie etykiety pasują do drukarki etykiet? Rodzaje materiałów',
-        answer: 'Drukarki etykiet obsługują szeroką gamę materiałów w formie rolek lub arkuszy złożonych w harmonijkę (fanfold). Do druku termicznego bezpośredniego stosuje się papier termiczny ECO (najtańszy, trwałość 3–6 miesięcy) lub papier termiczny TOP z warstwą ochronną (trwałość 12–24 miesiące). Do druku termotransferowego: papier matowy i półbłyszczący z taśmą woskową, papier powlekany z taśmą woskowo-żywiczną, folia polipropylenowa (PP) i poliestrowa (PET) z taśmą żywiczną oraz tkanina satynowa i nylonowa do wszywek odzieżowych. Standardowa szerokość etykiet to 25–108 mm (drukarki 4-calowe) lub do 168 mm (drukarki 6-calowe). Najpopularniejsze rozmiary to 58×40 mm (etykiety produktowe), 100×60 mm (etykiety magazynowe) i 100×150 mm (etykiety kurierskie).',
+        question: 'Jakie etykiety i taśmy pasują do drukarki etykiet?',
+        answer: 'Do druku termicznego służy papier termiczny ECO o trwałości 3–6 miesięcy albo papier TOP z warstwą ochronną o trwałości 12–24 miesiące. Do druku termotransferowego: papier matowy i półbłyszczący z taśmą woskową, papier powlekany z taśmą woskowo-żywiczną, folia PP i PET z taśmą żywiczną oraz tkanina satynowa i nylonowa na wszywki. Drukarki 4-calowe przyjmują etykiety o szerokości 25–108 mm, 6-calowe do 168 mm. Najczęstsze formaty to 58 × 40 mm, 100 × 60 mm i 100 × 150 mm. [Etykiety](/etykiety-termotransferowe-zebra) i [taśmy termotransferowe](/tasmy-termotransferowe) są w osobnych kategoriach.',
       },
       {
-        question: 'Czy drukarka etykiet wymaga specjalnego oprogramowania?',
-        answer: 'Większość drukarek etykiet jest dostarczana z darmowym oprogramowaniem do projektowania i drukowania etykiet — np. ZebraDesigner Essentials (Zebra), BarTender Starter (Seagull Scientific) lub NiceLabel Free. Programy te pozwalają tworzyć szablony etykiet z kodami kreskowymi 1D/2D, tekstem, grafiką i danymi zmiennymi z plików CSV lub baz danych. Do zaawansowanych zastosowań — integracja z systemami ERP/WMS, automatyczne drukowanie z bazy danych, zarządzanie flotą drukarek — dostępne są płatne rozwiązania: BarTender Professional (od ok. 2 000 zł), NiceLabel Designer Pro, Loftware Cloud. Drukarki komunikują się z oprogramowaniem za pomocą sterowników Windows lub języków programowania (ZPL, EPL, TSPL), co umożliwia drukowanie bezpośrednio z systemu bez dodatkowego programu.',
+        question: 'Czy drukarka etykiet wymaga osobnego programu?',
+        answer: 'Do projektowania etykiet producenci dają bezpłatne programy: ZebraDesigner Essentials, BarTender Starter, NiceLabel Free. Pozwalają one ułożyć szablon z kodem kreskowym, tekstem, grafiką i danymi z pliku CSV. Integracja z ERP lub WMS, druk z bazy danych i zarządzanie flotą drukarek wymagają wersji płatnych, na przykład BarTender Professional od około 2 000 zł. Systemy magazynowe i kurierskie drukują też bez programu, wysyłając etykiety wprost do drukarki w języku ZPL, EPL lub TSPL. Licencje są w kategorii [oprogramowanie](/oprogramowanie).',
       },
       {
         question: 'Jak podłączyć drukarkę etykiet do komputera i sieci?',
-        answer: 'Podłączenie drukarki etykiet jest proste i zajmuje zwykle 10–15 minut. Krok 1: połącz drukarkę z komputerem kablem USB lub do sieci kablem Ethernet (ewentualnie skonfiguruj Wi-Fi). Krok 2: pobierz i zainstaluj sterownik ze strony producenta (np. Zebra Setup Utilities, sterownik ZDesigner). Krok 3: załaduj etykiety (i taśmę barwiącą przy druku TT) zgodnie z instrukcją. Krok 4: przeprowadź kalibrację sensora — drukarka wykryje rozmiar etykiet. Krok 5: wydrukuj etykietę testową. Przy połączeniu Ethernet drukarka otrzymuje adres IP i jest widoczna w sieci — można ją udostępnić wielu użytkownikom. Systemy WMS/ERP łączą się z drukarką przez adres IP i wysyłają polecenia druku w języku ZPL, EPL lub TSPL.',
+        answer: 'Instalacja zajmuje 10–15 minut. Drukarkę łączy się kablem USB z komputerem albo kablem Ethernet z siecią, ewentualnie konfiguruje Wi-Fi. Następnie instaluje się sterownik producenta, na przykład Zebra Setup Utilities, ładuje etykiety i taśmę, kalibruje czujnik i drukuje etykietę testową. Drukarka w sieci dostaje adres IP i jest dostępna z wielu stanowisk, a systemy WMS i ERP wysyłają na ten adres polecenia druku.',
       },
       {
-        question: 'Jaka drukarka do etykiet kurierskich i listów przewozowych?',
-        answer: 'Do drukowania etykiet kurierskich i listów przewozowych najlepiej sprawdzi się biurkowa drukarka termiczna (direct thermal) o szerokości druku 4 cale (108 mm) i rozdzielczości 203 dpi. Standardowa etykieta kurierska ma wymiary 100×150 mm lub 100×200 mm — drukarka 4-calowa obsłuży oba formaty. Druk termiczny jest optymalny, ponieważ etykiety kurierskie żyją 3–7 dni i nie wymagają trwałości — a brak taśmy barwiącej obniża koszty eksploatacji o 30–40%. Ważne cechy: obsługa ZPL lub EPL (kompatybilność z systemami kurierskimi InPost, DPD, DHL, UPS, Poczta Polska), minimum 127 mm/s prędkości druku i prosta wymiana rolek. Przy wolumenie powyżej 500 przesyłek dziennie warto rozważyć drukarkę przemysłową, która jest szybsza i obsługuje większe rolki materiałów.',
+        question: 'Jaka drukarka do etykiet kurierskich InPost, DPD i DHL?',
+        answer: 'Biurkowa drukarka termiczna o szerokości druku 4 cale i rozdzielczości 203 dpi. Etykieta kurierska ma 100 × 150 mm albo 100 × 200 mm, czyli format zbliżony do A6, i żyje 3–7 dni, więc taśma barwiąca nie jest potrzebna. Do 200 paczek dziennie wystarczy model z USB, przy kilku stanowiskach pakowania z Ethernet. Modele z integracją BaseLinker i systemami kurierów zebraliśmy na stronie [drukarki etykiet do e-commerce](/drukarki-etykiet-e-commerce).',
+      },
+      {
+        question: 'Czy TAKMA dostarcza i serwisuje drukarki etykiet w całej Polsce?',
+        answer: 'Tak. Wysyłamy kurierem do firm w całej Polsce: do Warszawy, Łodzi, Poznania, Krakowa, Trójmiasta i mniejszych miejscowości. Serwis drukarek etykiet działa z odbiorem kurierskim, więc naprawa nie wymaga dowożenia sprzętu do Wrocławia. Drukarki Zebra naprawia [serwis-zebry.pl](https://www.serwis-zebry.pl), pozostałe marki nasz [serwis](/serwis).',
       },
     ],
     comparisons: [
       {
-        title: 'Drukarki biurkowe vs przemysłowe — który typ wybrać?',
-        content: 'Drukarki biurkowe (desktop) kosztują od 635 zł, zajmują mniej miejsca i wystarczają przy dziennym nakładzie do 3 000 etykiet — idealnie sprawdzają się w biurach, sklepach, aptekach i firmach e-commerce. Drukarki przemysłowe (industrial) zaczynają się od ok. 2 490 zł, mają metalową obudowę, obsługują rolki o większej średnicy (mniej wymian) i są zaprojektowane do pracy ciągłej 24/7 przy wolumenie 10 000-100 000+ etykiet dziennie. Kluczowa granica decyzyjna to 3 000-5 000 etykiet dziennie: poniżej — biurkowa jest wystarczająca i ekonomiczna; powyżej — przemysłowa zwraca się w 5-10 miesięcy dzięki niższym kosztom serwisu i dłuższej żywotności głowicy.',
-      },
-      {
-        title: 'Druk termiczny vs termotransferowy — porównanie technologii',
-        content: 'Druk termiczny bezpośredni (DT) nie wymaga taśmy barwiącej — etykieta jest tańsza w produkcji, a drukarka prostsza w obsłudze. Wadą jest ograniczona trwałość wydruku: 3-12 miesięcy. Druk termotransferowy (TT) wymaga taśmy barwiącej (ribbon), co podnosi koszt o ~0,005-0,010 zł na etykietę, ale daje trwałość od kilku miesięcy (taśma woskowa) do ponad 10 lat (taśma żywiczna). Zasada decyzyjna: etykieta żyje krócej niż 6 miesięcy — DT. Etykieta musi być trwała lub odporna na ścieranie/chemikalia — TT. Każda drukarka TT obsługuje też tryb DT, co daje elastyczność dwóch technologii w jednym urządzeniu.',
-      },
-      {
-        title: 'Zebra vs inne marki — dlaczego Zebra dominuje rynek?',
-        content: 'Zebra Technologies to globalny lider rynku drukarek etykiet z ponad 50% udziałem w segmencie przemysłowym. Przewaga Zebry wynika z najszerszego portfolio modeli (od ekonomicznego ZD220t za 635 zł po flagowy ZT620 za 15 900 zł), języka ZPL będącego branżowym standardem w integracji z WMS/ERP/TMS, globalnej sieci serwisowej oraz ekosystemu oprogramowania (LinkOS, ZebraDesigner, Print DNA) zapewniającego zdalne zarządzanie i diagnostykę. Dla polskich firm B2B kluczowa jest dostępność autoryzowanego serwisu — centra takie jak serwis-zebry.pl zapewniają szybkie naprawy i oryginalne części zamienne.',
+        title: 'Zebra, Honeywell, TSC i Brother',
+        content: 'Zebra ma najszerszą ofertę, od biurkowej ZD220t po przemysłową serię ZT, i język ZPL, którym posługuje się większość systemów magazynowych i kurierskich w Polsce. Honeywell PC45 wyróżnia się ekranem dotykowym i Wi-Fi 6 w cenie biurkowej, z emulacją ZPL. TSC oferuje drukarki biurkowe i przemysłowe z językiem TSPL i emulacją ZPL, zwykle tańsze od odpowiedników Zebra. Brother TD drukuje etykiety i opaski identyfikacyjne z emulacją ZPL II, co przydaje się w ochronie zdrowia. Drukarki Zebra serwisujemy pod marką serwis-zebry.pl, pozostałe w serwisie TAKMA.',
       },
     ],
-    howToSteps: [
-      { name: 'Określ dzienny wolumen druku', text: 'Policz ile etykiet dziennie będziesz drukować. Do 1 000 → drukarka biurkowa. 1 000–5 000 → biurkowa premium lub półprzemysłowa. Powyżej 5 000 → drukarka przemysłowa. Przy pracy 24/7 lub w trudnych warunkach → zawsze przemysłowa.' },
-      { name: 'Wybierz technologię: termiczna czy termotransferowa', text: 'Etykiety tymczasowe (kurierskie, wysyłkowe, cenówki, paragony) → druk termiczny bezpośredni (DT). Etykiety trwałe (produktowe, magazynowe, na przewody, farmaceutyczne) → druk termotransferowy (TT). Mieszane potrzeby → drukarka TT, która obsługuje oba tryby.' },
-      { name: 'Dobierz klasę urządzenia: biurkowa czy przemysłowa', text: 'Biuro, e-commerce, apteka, mały magazyn → drukarka biurkowa (kompaktowa, od 500 zł). Centrum logistyczne, linia produkcyjna, duży magazyn → drukarka przemysłowa (metalowa obudowa, od 2 500 zł). Klucz: warunki pracy i ciągłość działania.' },
-      { name: 'Sprawdź wymagane parametry techniczne', text: 'Szerokość druku: 4 cale (108 mm) dla standardowych etykiet, 6 cali (168 mm) dla paletowych. Rozdzielczość: 203 dpi (standard), 300 dpi (małe etykiety/kody), 600 dpi (mikroetykiety). Łączność: USB (jedno stanowisko), Ethernet (sieć), Wi-Fi (mobilność).' },
-      { name: 'Oblicz całkowity koszt posiadania (TCO) na 3 lata', text: 'Zsumuj: cena drukarki + etykiety (ilość × cena za sztukę × 36 miesięcy) + taśmy barwiące (jeśli TT) + wymiana głowicy co 12–36 mies. + serwis. Porównaj TCO modeli z różnych klas — droższy model może generować niższe koszty całkowite przy dużym wolumenie.' },
-    ],
+    howToSteps: [],
   },
 
   // ============================================
@@ -1559,7 +1538,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     ],
   },
   'drukarki-kart': {
-    updatedAt: '2026-09-18',
+    updatedAt: '2026-09-19',
     sectionHeadings: {
       expertAuthority: 'Pomożemy dobrać drukarkę i materiały',
       technicalDeepDive: 'Co warto wiedzieć o druku i kodowaniu kart',
@@ -1569,11 +1548,12 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
     },
     modelComparison: {
       heading: 'Porównaj drukarki kart w naszej ofercie',
-      note: 'Magicard 300 oferujemy w wersji S Duo, a model 600 w wersji Duo. Obie drukują automatycznie po dwóch stronach. Przy Zebrze ZC300 i ZC350 wybierz odpowiedni wariant.',
+      note: 'Magicard 300 oferujemy w wersji S Duo, a model 600 w wersji Duo. Obie drukują automatycznie po dwóch stronach. Prima 8 drukuje retransferowo: Uno jednostronnie, Duo dwustronnie. Przy Zebrze ZC300 i ZC350 wybierz odpowiedni wariant.',
       models: [
         { name: 'Magicard Pronto100', href: '/produkt/magicard-pronto100', printing: 'Jednostronny', feeder: '50 kart', connectivity: 'USB, Ethernet' },
         { name: 'Magicard 300', href: '/produkt/magicard-300', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet' },
         { name: 'Magicard 600 Duo', href: '/produkt/magicard-600-duo', printing: 'Dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet, Wi-Fi' },
+        { name: 'Magicard Prima 8', href: '/produkt/magicard-prima-8', printing: 'Retransferowy, jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet' },
         { name: 'Zebra ZC100', href: '/produkt/zebra-zc100', printing: 'Jednostronny', feeder: '100 kart', connectivity: 'USB; Ethernet opcjonalnie' },
         { name: 'Zebra ZC300', href: '/produkt/zebra-zc300', printing: 'Jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet; Wi-Fi opcjonalnie' },
         { name: 'Zebra ZC350', href: '/produkt/zebra-zc350', printing: 'Jedno- lub dwustronny', feeder: '100 kart', connectivity: 'USB, Ethernet; Wi-Fi opcjonalnie' },
@@ -1591,7 +1571,8 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
         'Gdy potrzebujesz Wi-Fi i drobnego tekstu — Magicard 600 Duo ma łączność bezprzewodową w standardzie. Druk czarny do 600 × 300 dpi przydaje się przy małych literach i numerach. Kolorowe zdjęcia drukuje w 300 dpi.',
         'Do kart wymagających kodowania — sprawdź warianty Zebra ZC300 z odpowiednim enkoderem. Sam nadruk na karcie RFID nie zapisuje danych w jej chipie. Konfigurację drukarki trzeba dopasować do kart i systemu, w którym będą używane.',
         'Do kart trudnych do podrobienia i czytanych z odległości — Zebra ZC350 drukuje taśmami specjalnymi z panelem perłowym, metalicznym lub podwójną warstwą ochronną i może mieć koder RFID UHF oraz obudowę zamykaną na klucz.',
-        'Zabezpieczenie identyfikatora — wszystkie trzy modele Magicard mają HoloKote i Digital Shredding. Pronto100 korzysta z gotowych znaków wodnych, a modele 300 i 600 pozwalają używać własnych wzorów.',
+        'Do kart z chipem i identyfikatorów na lata — Magicard Prima 8 drukuje obraz na folii i wprasowuje ją w kartę. Nadruk sięga krawędzi i nie ściera się, a wersja Prima 815 koduje chip stykowy i zbliżeniowy podczas druku. Około 100 kart na godzinę.',
+        'Zabezpieczenie identyfikatora — trzy modele Magicard druku bezpośredniego mają HoloKote i Digital Shredding. Pronto100 korzysta z gotowych znaków wodnych, a modele 300 i 600 pozwalają używać własnych wzorów. Prima 8 osłania cały nadruk folią, a z laminatorem nakłada laminat holograficzny.',
       ],
     },
     expertAuthority: 'Podaj nam, ile kart drukujesz w miesiącu, co ma się znaleźć na odwrocie i czy potrzebujesz kodowania. Na tej podstawie dobierzemy model oraz materiały. TAKMA działa w branży AutoID od 25 lat. Oferujemy drukarki Zebra i Magicard, pomagamy w konfiguracji, a urządzenia Zebra obsługujemy również serwisowo.',
@@ -1619,11 +1600,11 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       items: [
         {
           title: 'Do każdej serii pasują inne taśmy kolorowe',
-          text: 'Pronto100 korzysta z taśm YMCKO na 100 lub 200 wydruków. Do Magicard 300 mamy YMCKO na 300 wydruków i czarną KO na 600. Dla 600 Duo dostępne są także taśmy YMCKOK: kolor na przodzie, czarny nadruk na odwrocie. Zgodne materiały znajdziesz przy każdym produkcie.',
+          text: 'Pronto100 korzysta z taśm YMCKO na 100 lub 200 wydruków. Do Magicard 300 mamy YMCKO na 300 wydruków i czarną KO na 600. Dla 600 Duo dostępne są także taśmy YMCKOK: kolor na przodzie, czarny nadruk na odwrocie. Prima 8 potrzebuje dwóch rolek, taśmy YMCK i folii retransferowej; mamy je w zestawie Prima 831 na 1 000 kart. Zgodne materiały znajdziesz przy każdym produkcie.',
         },
         {
           title: 'Zestaw czyszczący też musi pasować',
-          text: 'Do Pronto100 służy E9100, a do Magicard 300 i 600 zestaw 3633-0053. Czyść urządzenie zgodnie z jego instrukcją, właściwymi materiałami. Kurz na kartach i rolkach pogarsza nadruk i może uszkodzić głowicę.',
+          text: 'Do Pronto100 służy E9100, do Magicard 300 i 600 zestaw 3633-0053, a do Prima 8 zestaw E9887 z kartami i chusteczkami. Czyść urządzenie zgodnie z jego instrukcją, właściwymi materiałami. Kurz na kartach i rolkach pogarsza nadruk i może uszkodzić głowicę.',
         },
         {
           title: 'Koszt karty zależy od projektu',
