@@ -1183,6 +1183,143 @@ for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'dru
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
 
 /**
+ * Akcesoria do drukarek etykiet: części (głowice, wałki, gilotyny, odklejaki), interfejsy,
+ * zasilanie i osłony — ponad 200 pozycji pięciu producentów (Zebra, Honeywell, Brother, TSC,
+ * Citizen). Rodzaj bierze się z nazwy produktu (tylko część kart ma wiersz „Typ”), seria
+ * drukarki z wiersza „Kompatybilność” i z nazwy. Lista serii jest długa, ale po zaznaczeniu
+ * producenta zostają w niej tylko jego drukarki (cross-filtrowanie w gridzie).
+ */
+categoryFilters['akcesoria-do-drukarek-etykiet'] = [
+  {
+    specKey: 'producent',
+    label: 'Producent',
+    derived: [
+      { value: 'Zebra', manufacturer: 'zebra' },
+      { value: 'Honeywell', manufacturer: 'honeywell' },
+      { value: 'Brother', manufacturer: 'brother' },
+      { value: 'TSC', manufacturer: 'tsc' },
+      { value: 'Citizen', manufacturer: 'citizen' },
+    ],
+  },
+  {
+    specKey: 'rodzaj',
+    label: 'Rodzaj akcesorium',
+    description: 'Co chcesz wymienić albo dołożyć.\n• Głowica — gdy na wydruku są białe pasy, których nie usuwa czyszczenie\n• Wałek dociskowy — wymienia się razem z głowicą albo gdy etykiety przesuwają się krzywo\n• Gilotyna — drukarka sama odcina etykietę\n• Odklejak — drukarka oddziela etykietę od podkładu i podaje ją gotową do naklejenia\n• Nawijak — zbiera podkład albo gotowe etykiety na rolkę\n• Interfejsy — Ethernet, Wi-Fi, RS-232, LPT do drukarek, które nie mają ich w standardzie',
+    derived: [
+      // „Wałek dociskowy (dla głowicy 203 dpi)” to wałek, nie głowica
+      { value: 'Głowice drukujące', namePattern: '^(?!wałek).*głowic' },
+      { value: 'Wałki dociskowe', namePattern: 'wałek|wałki|platen' },
+      { value: 'Gilotyny (obcinaki)', namePattern: 'gilotyn|obcina|cutter' },
+      { value: 'Odklejaki (dyspensery)', namePattern: 'odklejak|dyspenser' },
+      // „Składany rdzeń do nawijaka” to część nawijaka, nie nawijak — ląduje w „Prowadnice, rdzenie”
+      { value: 'Nawijaki', namePattern: '^(?!składany rdzeń).*nawijak' },
+      { value: 'Interfejsy sieciowe i komunikacyjne', namePattern: 'wi-?fi|ethernet|rs-?232|\\bLPT\\b|równoległ|parallel|interfejs' },
+      { value: 'Moduły RFID, konwertery, klawiatury', namePattern: 'rfid|konwerter|klawiatur' },
+      { value: 'Baterie, ładowarki i zasilacze', namePattern: 'bateri|ładowark|zasilacz' },
+      { value: 'Etui i osłony', namePattern: 'etui|futerał|egzoszkielet' },
+      { value: 'Uchwyty, klipsy i stacje dokujące', namePattern: 'klips|uchwyt|stacj[aęi] (dokując|samochodow)' },
+      { value: 'Kable i adaptery', namePattern: 'kabel|adapter(?! rdzeni)' },
+      { value: 'Prowadnice, rdzenie i pozostałe części', namePattern: 'prowadnic|rdze|mega door|kalibracyjn' },
+    ],
+  },
+  {
+    specKey: 'drukarka',
+    label: 'Do drukarki',
+    description: 'Część musi pasować do serii drukarki — głowica z ZD421 nie wejdzie do ZD621. Model drukarki jest na naklejce pod spodem albo na pasku z tyłu obudowy.',
+    derived: [
+      { value: 'Zebra ZD220 / ZD230', pattern: 'ZD2[23]0', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZD220 / ZD230', namePattern: 'ZD2[23]0' },
+      { value: 'Zebra ZD411 / ZD421', pattern: 'ZD41\\d|ZD42\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZD411 / ZD421', namePattern: 'ZD41\\d|ZD42\\d' },
+      { value: 'Zebra ZD621', pattern: 'ZD62\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZD621', namePattern: 'ZD62\\d' },
+      { value: 'Zebra ZT111 / ZT231', pattern: 'ZT111|ZT2[23]\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZT111 / ZT231', namePattern: 'ZT111|ZT2[23]\\d' },
+      { value: 'Zebra ZT411 / ZT421', pattern: 'ZT41\\d|ZT42\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZT411 / ZT421', namePattern: 'ZT41\\d|ZT42\\d' },
+      { value: 'Zebra ZT510', pattern: 'ZT510', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZT510', namePattern: 'ZT510' },
+      { value: 'Zebra ZT610 / ZT620', pattern: 'ZT61\\d|ZT62\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZT610 / ZT620', namePattern: 'ZT61\\d|ZT62\\d' },
+      { value: 'Zebra ZQ210 / ZQ220 Plus', pattern: 'ZQ2[12]\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZQ210 / ZQ220 Plus', namePattern: 'ZQ2[12]\\d' },
+      { value: 'Zebra ZQ310 / ZQ320 Plus', pattern: 'ZQ3[12]\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZQ310 / ZQ320 Plus', namePattern: 'ZQ3[12]\\d' },
+      { value: 'Zebra ZQ511 / ZQ521', pattern: 'ZQ5[12]\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZQ511 / ZQ521', namePattern: 'ZQ5[12]\\d' },
+      { value: 'Zebra ZQ610 / ZQ620 / ZQ630 Plus', pattern: 'ZQ6[123]\\d', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZQ610 / ZQ620 / ZQ630 Plus', namePattern: 'ZQ6[123]\\d' },
+      { value: 'Zebra ZD510-HC', pattern: 'ZD510', specs: ['Kompatybilność'] },
+      { value: 'Zebra ZD510-HC', namePattern: 'ZD510' },
+      { value: 'Honeywell PC42E-T', pattern: 'PC42E', specs: ['Kompatybilność'] },
+      { value: 'Honeywell PC42E-T', namePattern: 'PC42E' },
+      { value: 'Honeywell PC45d / PC45t', pattern: 'PC45', specs: ['Kompatybilność'] },
+      { value: 'Honeywell PC45d / PC45t', namePattern: 'PC45' },
+      { value: 'Honeywell PM45 / PM45C', pattern: 'PM45', specs: ['Kompatybilność'] },
+      { value: 'Honeywell PM45 / PM45C', namePattern: 'PM45' },
+      { value: 'Honeywell PM65', pattern: 'PM65', specs: ['Kompatybilność'] },
+      { value: 'Honeywell PM65', namePattern: 'PM65' },
+      { value: 'Honeywell PX940', pattern: 'PX940', specs: ['Kompatybilność'] },
+      { value: 'Honeywell PX940', namePattern: 'PX940' },
+      { value: 'Honeywell RP2 / RP2f', pattern: '\\bRP2', specs: ['Kompatybilność'] },
+      { value: 'Honeywell RP2 / RP2f', namePattern: '\\bRP2' },
+      { value: 'Honeywell RP4 / RP4f', pattern: '\\bRP4', specs: ['Kompatybilność'] },
+      { value: 'Honeywell RP4 / RP4f', namePattern: '\\bRP4' },
+      // Brother: TD-4D (TD-4410D…TD-4550DNWB) i TD-4T (TD-4410T…TD-4750TNWBR) różnią się końcówką modelu
+      { value: 'Brother TD-4D', pattern: 'TD-4D\\b|TD-4\\d{3}D(N|NWB)?\\b', specs: ['Kompatybilność'] },
+      { value: 'Brother TD-4D', namePattern: 'TD-4D\\b' },
+      { value: 'Brother TD-4T', pattern: 'TD-4T\\b|TD-4\\d{3}(T|TN|TNWBR?|DNWBT)\\b', specs: ['Kompatybilność'] },
+      { value: 'Brother TD-4T', namePattern: 'TD-4T\\b' },
+      { value: 'Brother TJ-4020TN / 4021TN / 4120TN / 4121TN', pattern: 'TJ-4\\d{3}', specs: ['Kompatybilność'] },
+      { value: 'Brother TJ-4020TN / 4021TN / 4120TN / 4121TN', namePattern: 'TJ-4\\d{3}|\\bdo TJ\\b' },
+      { value: 'Brother RJ-4230B / RJ-4250WB', pattern: 'RJ-4[23]\\d0', specs: ['Kompatybilność'] },
+      { value: 'Brother RJ-4230B / RJ-4250WB', namePattern: 'RJ-4[23]\\d0' },
+      { value: 'TSC TTP-286MT / TTP-384MT', pattern: 'TTP-(286|384)MT', specs: ['Kompatybilność'] },
+      { value: 'TSC TTP-286MT / TTP-384MT', namePattern: 'TTP-(286|384)MT' },
+      { value: 'TSC ML241P / ML341P', pattern: 'ML[23]4[01]P', specs: ['Kompatybilność'] },
+      { value: 'TSC ML241P / ML341P', namePattern: 'ML[23]4[01]P' },
+      { value: 'TSC MB241T / MB341T', pattern: 'MB[23]4[01]', specs: ['Kompatybilność'] },
+      { value: 'TSC MB241T / MB341T', namePattern: 'MB[23]4[01]' },
+      { value: 'TSC MH241T / MH261T / MH341T / MH641T', pattern: 'MH[236][46][01]', specs: ['Kompatybilność'] },
+      { value: 'TSC MH241T / MH261T / MH341T / MH641T', namePattern: 'MH[236][46][01]' },
+      { value: 'Citizen CL-S521 / CL-S621 / CL-S631', pattern: 'CL-S[56][23]1', specs: ['Kompatybilność'] },
+      { value: 'Citizen CL-S521 / CL-S621 / CL-S631', namePattern: 'CL-S[56][23]1' },
+      { value: 'Citizen CL-S400DT', pattern: 'CL-S400', specs: ['Kompatybilność'] },
+      { value: 'Citizen CL-S400DT', namePattern: 'CL-S400' },
+      { value: 'Citizen CL-S700', pattern: 'CL-S70\\d', specs: ['Kompatybilność'] },
+      { value: 'Citizen CL-S700', namePattern: 'CL-S70\\d' },
+      { value: 'Citizen CL-E720 / CL-E730', pattern: 'CL-E7\\d{2}', specs: ['Kompatybilność'] },
+      { value: 'Citizen CL-E720 / CL-E730', namePattern: 'CL-E7\\d{2}' },
+    ],
+  },
+  {
+    specKey: 'rozdzielczosc',
+    label: 'Rozdzielczość',
+    description: 'Dotyczy głowic i wałków. Głowica i wałek muszą mieć tę samą rozdzielczość co drukarka: 203 dpi do zwykłych etykiet, 300 dpi do drobnego tekstu i małych kodów, 600 dpi do mikroetykiet.',
+    derived: [
+      { value: '203 dpi', pattern: '(^|[^0-9])203 ?dpi', specs: ['Rozdzielczość'] },
+      { value: '203 dpi', namePattern: '(^|[^0-9])203 ?dpi' },
+      { value: '300 dpi', pattern: '(^|[^0-9])300 ?dpi', specs: ['Rozdzielczość'] },
+      { value: '300 dpi', namePattern: '(^|[^0-9])300 ?dpi' },
+      { value: '406 dpi', pattern: '(^|[^0-9])406 ?dpi', specs: ['Rozdzielczość'] },
+      { value: '406 dpi', namePattern: '(^|[^0-9])406 ?dpi' },
+      { value: '600 dpi', pattern: '(^|[^0-9])600 ?dpi', specs: ['Rozdzielczość'] },
+      { value: '600 dpi', namePattern: '(^|[^0-9])600 ?dpi' },
+    ],
+  },
+  {
+    specKey: 'cena',
+    label: 'Cena netto',
+    derived: [
+      { value: 'do 300 zł', priceMax: 300 },
+      { value: '300 – 1 000 zł', priceMin: 300, priceMax: 1000 },
+      { value: '1 000 – 2 500 zł', priceMin: 1000, priceMax: 2500 },
+      { value: 'powyżej 2 500 zł', priceMin: 2500 },
+    ],
+  },
+]
+
+/**
  * Filtr ceny dla katalogu (/katalog), gdy nie wybrano kategorii. Specyfikacje
  * różnią się między kategoriami — drukarka nie ma przekątnej ekranu, a skaner
  * rozdzielczości druku — więc wspólne zostają producent (budowany z listy

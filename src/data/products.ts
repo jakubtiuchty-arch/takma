@@ -369,10 +369,10 @@ export const subcategories: Subcategory[] = [
     slug: 'akcesoria-do-drukarek-etykiet',
     name: 'Akcesoria do drukarek etykiet',
     parentCategoryId: 'drukarki-etykiet',
-    description: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra — głowice drukujące, gilotyny, odklejaki, wałki dociskowe, moduły Wi-Fi/Ethernet i zasilacze',
+    description: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: głowice drukujące, gilotyny, odklejaki, wałki dociskowe, moduły Wi-Fi/Ethernet i zasilacze',
     seoTitle: 'Akcesoria do drukarek etykiet Zebra | Głowice, gilotyny, odklejaki',
     seoDescription: 'Oryginalne akcesoria i części zamienne do drukarek etykiet Zebra: głowice drukujące 203/300/600 dpi, gilotyny, odklejaki, wałki dociskowe, moduły Wi-Fi i Ethernet. Ceny netto B2B, szybka dostawa.',
-    longDescription: 'Kompletna oferta oryginalnych akcesoriów i części zamiennych do drukarek etykiet Zebra Technologies — od kompaktowych modeli biurkowych (ZD220, ZD421, ZD621) po przemysłowe maszyny do pracy ciągłej 24/7 (ZT411, ZT610, ZT620). W katalogu znajdziesz głowice drukujące w rozdzielczościach 203, 300 i 600 dpi, gilotyny do automatycznego cięcia etykiet, odklejaki (dyspensery), wałki dociskowe (platen roller), moduły komunikacyjne Wi-Fi/Bluetooth i Ethernet, zasilacze sieciowe, baterie oraz akcesoria specjalistyczne jak nawijaki i moduły RFID. Każde akcesorium jest oryginalne — produkowane przez Zebra Technologies z gwarancją kompatybilności. TAKMA jako autoryzowany partner Zebra oferuje pełne wsparcie techniczne przy doborze części do Twojego modelu drukarki.',
+    longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
     productIds: [
       'zebra-printhead-zd220d-203', 'zebra-printhead-zd220t-203',
@@ -383,7 +383,7 @@ export const subcategories: Subcategory[] = [
       'zebra-printhead-zt111-203', 'zebra-printhead-zt111-300',
       'zebra-printhead-zt411-203', 'zebra-printhead-zt411-300', 'zebra-printhead-zt411-600',
       'zebra-printhead-zt421-203', 'zebra-printhead-zt421-300',
-      'zebra-printhead-zt510-203',
+      'zebra-printhead-zt510-203', 'zebra-printhead-zt510-300',
       'zebra-printhead-zt610-203', 'zebra-printhead-zt610-300', 'zebra-printhead-zt610-600',
       'zebra-printhead-zt620-203', 'zebra-printhead-zt620-300',
       'zebra-platen-roller-zd220d-203', 'zebra-platen-roller-zd220t-203',
@@ -425,8 +425,45 @@ export const subcategories: Subcategory[] = [
       // Akcesoria Honeywell PC45d
       'honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300',
       'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d',
+      // Akcesoria Honeywell PC45t, PC42E-T
+      'honeywell-platen-roller-pc45t', 'honeywell-dispenser-pc45t', 'honeywell-cutter-pc45t',
+      'honeywell-printhead-pc42e-t-203', 'honeywell-printhead-pc42e-t-300', 'honeywell-platen-roller-pc42e-t',
+      'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t',
+      // Akcesoria Honeywell PM45 / PM45C
+      'honeywell-pm45-glowica-203dpi', 'honeywell-pm45-glowica-300dpi', 'honeywell-pm45-glowica-406dpi', 'honeywell-pm45-glowica-600dpi',
+      'honeywell-pm45-walek-dociskowy', 'honeywell-pm45-odklejak', 'honeywell-pm45-nawijak', 'honeywell-pm45-gilotyna',
+      'honeywell-pm45-modul-rfid', 'honeywell-pm45-prowadnica-mediow', 'honeywell-pm45-skladany-rdzen', 'honeywell-pm45-adapter-rdzeni',
+      'honeywell-pm45-modul-wifi-bt', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy',
+      'honeywell-pm45c-odklejak-kit', 'honeywell-pm45c-mega-door-kit',
+      // Akcesoria Honeywell PM65
+      'honeywell-pm65-glowica-203dpi', 'honeywell-pm65-glowica-300dpi', 'honeywell-pm65-walek-dociskowy', 'honeywell-pm65-skladany-rdzen',
+      'honeywell-pm65-gilotyna', 'honeywell-pm65-odklejak', 'honeywell-pm65-nawijak', 'honeywell-pm65-modul-wifi',
+      // Akcesoria Honeywell PX940
+      'honeywell-px940-glowica-203dpi', 'honeywell-px940-glowica-300dpi', 'honeywell-px940-walek-dociskowy', 'honeywell-px940-karta-kalibracyjna',
+      'honeywell-px940-interfejs-rownolegl', 'honeywell-px940-interfejs-przemyslowy', 'honeywell-px940-interfejs-aplikatora', 'honeywell-px940-modul-wifi',
+      // Akcesoria Honeywell RP2f / RP4f (drukarki mobilne)
+      'honeywell-rpf-bateria-2500mah', 'honeywell-rpf-etui-ochronne', 'honeywell-rpf-battery-eliminator',
+      'honeywell-rpf-zasilacz-ac-eu', 'honeywell-rpf-klips-do-paska', 'honeywell-rpf-kabel-zapalniczka',
+      'honeywell-rp4f-bateria-4900mah', 'honeywell-rp4f-etui-ochronne', 'honeywell-rp4f-battery-eliminator',
+      // Akcesoria Brother TD-4D, TD-4T, TJ, RJ
+      'brother-td4d-cutter', 'brother-td4d-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300',
+      'brother-td4d-platen-203', 'brother-td4d-platen-300',
+      'brother-td4t-cutter', 'brother-td4t-peeler',
+      'brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-203', 'brother-tj-printhead-300', 'brother-tj-platen',
+      'brother-rj-bateria', 'brother-rj-ladowarka', 'brother-rj-zasilacz', 'brother-rj-stacja-samochodowa', 'brother-rj-egzoszkielet',
+      // Akcesoria TSC
+      'tsc-printhead-ttp-286mt-203', 'tsc-printhead-ttp-384mt-300', 'tsc-cutter-ttp-286mt',
+      'tsc-printhead-mh261t-203', 'tsc-printhead-ml241p-203', 'tsc-printhead-ml341p-300',
+      'tsc-cutter-ml241p', 'tsc-peeler-ml241p', 'tsc-wifi-bt-module',
+      'tsc-printhead-mb241t-203', 'tsc-cutter-mb241t', 'tsc-peeler-mb241t', 'tsc-rewinder-mb241t',
+      'tsc-printhead-mh341t-300', 'tsc-printhead-mh641t-600', 'tsc-printhead-mh241t-203', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t',
+      // Akcesoria Citizen
+      'citizen-printhead-cl-s521-203', 'citizen-cutter-cl-s521', 'citizen-peeler-cl-s521',
+      'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium',
+      'citizen-parallel-cl-s521', 'citizen-parallel-cl-s400dt',
+      'citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720',
     ],
-    productCount: 108,
+    productCount: 207,
   },
   // --- Podkategorie: Materiały eksploatacyjne ---
   {
