@@ -77,10 +77,9 @@ export const guides: Guide[] = [
   publishedAt: '2026-09-18',
   updatedAt: '2026-09-19',
   readTime: '9 min',
-  heroImage: '/images/guides/jaka-drukarka-do-kart-plastikowych.webp',
-  heroVideo: '/images/guides/jaka-drukarka-do-kart-plastikowych.mp4',
-  heroVideoLoop: true,
-  heroImageAlt: 'Drukarki kart Magicard Pronto100, Zebra ZC350 i Magicard 600 Duo na ciemnym tle studia',
+  heroImage: '/images/guides/jaka-drukarka-do-kart-plastikowych-v2.webp',
+  heroVideo: '/images/guides/jaka-drukarka-do-kart-plastikowych-v2.mp4',
+  heroImageAlt: 'Drukarki kart Zebra ZC350 i Magicard 600 Duo: puste karty PVC wjeżdżają do podajnika, wydrukowany identyfikator wyjeżdża z drukarki',
   cardImagePosition: '100% center',
   sections: [
     {
