@@ -449,9 +449,21 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     } : {}),
   }))
 
-  // Check if product has any valid price (> 0) at product or variant level
+  // Numer katalogowy do schema: wariant → wiersz „Part Number” w specyfikacji → id (produkty bez
+  // wariantów, np. Epson, miały w sku/mpn własny slug zamiast PN)
+  const specPartNumber = product.specifications.find((s) => s.name === 'Part Number')?.value
+  const schemaPartNumber = product.variants?.[0]?.partNumber || specPartNumber || product.id
+  // Żywa cena i dostępność z dystrybutorów dla produktu bez wariantów — to, co widzi klient na karcie.
+  // Bez niej schema miała statyczny priceFrom albo (przy jego braku) żadnej oferty, choć karta pokazywała cenę.
+  const liveRow = !product.variants?.length && specPartNumber
+    ? initialStock?.find((r) => r.partNumber === specPartNumber)
+    : undefined
+  const liveOffer = liveRow?.found && liveRow.price && liveRow.price > 0
+    ? { price: liveRow.price, availability: liveRow.availability }
+    : undefined
+  // Check if product has any valid price (> 0) at product or variant level (albo żywa oferta)
   const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
-    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0))
+    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer
   const magicardOffer = getMagicardOffer(product)
 
   // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
@@ -490,8 +502,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     manufacturer: manufacturer ? { '@type': 'Organization', name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name, ...(manufacturer.id === 'zebra' ? { url: 'https://www.zebra.com' } : {}) } : undefined,
     model: modelName,
     category: category?.name,
-    sku: magicardOffer?.sku || product.variants?.[0]?.partNumber || product.id,
-    mpn: magicardOffer?.sku || product.variants?.[0]?.partNumber || product.id,
+    sku: magicardOffer?.sku || schemaPartNumber,
+    mpn: magicardOffer?.sku || schemaPartNumber,
     datePublished: product.createdAt,
     dateModified: product.updatedAt || product.createdAt,
     inLanguage: 'pl-PL',
@@ -581,9 +593,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         : {
               '@type': 'Offer',
               url: `https://www.takma.com.pl/produkt/${product.slug}`,
-              price: product.priceFrom!.toFixed(2),
+              sku: schemaPartNumber,
+              mpn: schemaPartNumber,
+              price: (liveOffer?.price ?? product.priceFrom!).toFixed(2),
               priceCurrency: 'PLN',
-              availability: availabilitySchemaMap[product.availability],
+              availability: availabilitySchemaMap[liveOffer?.availability ?? product.availability],
               itemCondition: 'https://schema.org/NewCondition',
               priceValidUntil,
               seller: sellerOrg,
