@@ -198,6 +198,9 @@ const nextConfig = {
       { source: '/datalogic', destination: '/terminale-datalogic', permanent: true },
       { source: '/citizen', destination: '/drukarki-etykiet-citizen', permanent: true },
       { source: '/brother', destination: '/drukarki-etykiet-brother', permanent: true },
+      // Slugi z polskimi znakami wracały 301 na /produkt-przeniesiony (middleware porównywał zakodowany URL)
+      { source: '/produkt/zebra-futerał-zq610', destination: '/produkt/zebra-futeral-zq610', permanent: true },
+      { source: '/produkt/epson-tusz-sjic22p-y-żółty-c33s020604', destination: '/produkt/epson-tusz-sjic22p-y-zolty-c33s020604', permanent: true },
       { source: '/tusze-i-etykiety-do-kolorowych-drukarek', destination: '/etykiety-do-kolorowych-drukarek', permanent: true },
       { source: '/skanery-kodow', destination: '/skanery-kodow-kreskowych', permanent: true },
       { source: '/skanery-kodow-zebra', destination: '/skanery-kodow-kreskowych-zebra', permanent: true },

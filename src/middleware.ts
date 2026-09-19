@@ -66,7 +66,11 @@ export async function middleware(request: NextRequest) {
   // Redirecty 1:1 dla Zebra/Datalogic są w next.config.mjs
   // -------------------------------------------------------------------------
   if (pathname.startsWith('/produkt/')) {
-    const slug = pathname.replace('/produkt/', '').replace(/\/$/, '')
+    // Polskie znaki w slugu docierają zakodowane (%C5%BC…), a lista niżej trzyma je zdekodowane —
+    // bez decodeURIComponent takie karty leciały na /produkt-przeniesiony (np. futerał ZQ610).
+    const rawSlug = pathname.replace('/produkt/', '').replace(/\/$/, '')
+    let slug = rawSlug
+    try { slug = decodeURIComponent(rawSlug) } catch { /* zostaw surowy */ }
 
     // Lista slugów istniejących na nowej stronie (nie przekierowuj ich!)
     const existingSlugs = new Set([
@@ -213,6 +217,12 @@ export async function middleware(request: NextRequest) {
       'tsc-gilotyna-ml241p', 'tsc-odklejak-ml241p', 'tsc-modul-wifi-bluetooth',
       // Brother
       // Epson ColorWorks (drukarka, tusze, nośniki)
+      'epson-colorworks-d3800e',
+      'epson-tusz-sjic57p-bk-czarny-c13t58j140',
+      'epson-tusz-sjic57p-c-cyan-c13t58j240',
+      'epson-tusz-sjic57p-m-magenta-c13t58j340',
+      'epson-tusz-sjic57p-y-zolty-c13t58j440',
+      'epson-pojemnik-konserwacyjny-sjmb4000-c33s021601',
       'epson-colorworks-c3500',
       'epson-papier-do-biletow-premium-matte-80mm-50m-c33s045389',
       'epson-papier-do-biletow-premium-matte-102mm-50m-c33s045390',
@@ -236,7 +246,7 @@ export async function middleware(request: NextRequest) {
       'epson-tusz-sjic22p-k-czarny-c33s020601',
       'epson-tusz-sjic22p-c-cyan-c33s020602',
       'epson-tusz-sjic22p-m-magenta-c33s020603',
-      'epson-tusz-sjic22p-y-żółty-c33s020604',
+      'epson-tusz-sjic22p-y-zolty-c33s020604',
       'epson-pojemnik-konserwacyjny-sjmb3500-c33s020580',
       'brother-td-4d', 'brother-td-2020a', 'brother-td-4t',
       'brother-td4d-cutter', 'brother-td4d-peeler',
