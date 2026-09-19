@@ -2,7 +2,7 @@
 """Jev (TypeSafe): analiza konkurencji dla jednego słowa kluczowego.
 
 Użycie:
-  python3 scripts/jev-konkurencja.py <serp.json> [--nasza=/drukarki-etykiet] [--limit=15] [--md=raport.md] [--json=wynik.json]
+  python3 scripts/jev-konkurencja.py <serp.json> [--nasza=/drukarki-etykiet[,/inna-nasza-strona]] [--limit=15] [--md=raport.md] [--json=wynik.json]
 
 serp.json: {"keyword": "...", "paa": ["pytanie", ...], "organic": [{"position", "url", "title", "domain_rating", "traffic"}, ...]}
 (eksport z Ahrefs serp-overview). Skrypt pobiera każdą stronę z listy oraz naszą stronę, wyciąga z HTML fakty
@@ -122,7 +122,8 @@ def stan(kw, url, pr):
 
 
 strony = [dict(s) for s in serp['organic'] if s.get('url')][:LIMIT]
-strony.append({'position': 0, 'url': 'https://www.takma.com.pl' + NASZA, 'title': 'nasza strona', 'domain_rating': None, 'traffic': None, 'nasza': True})
+for sciezka_naszej in NASZA.split(','):
+    strony.append({'position': 0, 'url': 'https://www.takma.com.pl' + sciezka_naszej.strip(), 'title': 'nasza strona', 'domain_rating': None, 'traffic': None, 'nasza': True})
 wyniki = []
 tokeny = 0
 for s in strony:
@@ -155,7 +156,8 @@ for s in strony:
 # ---------- porównanie: nasza strona vs TOP 10 ----------
 ok = [w for w in wyniki if w.get('ok')]
 top = [w for w in ok if not w.get('nasza') and w['position'] <= 10]
-nasza = next((w for w in ok if w.get('nasza')), None)
+nasze = [w for w in ok if w.get('nasza')]
+nasza = nasze[0] if nasze else None
 metryki = ['oferta', 'ceny', 'doradztwo', 'porownanie', 'faq', 'zaufanie', 'dopasowanie']
 med = {m: statistics.median([w['ocena'][m] for w in top]) for m in metryki} if top else {}
 med_slowa = statistics.median([w['profil']['slowa'] for w in top]) if top else 0
@@ -188,13 +190,15 @@ if top:
     L.append(f'- Marki najczęściej obecne: {", ".join(f"{k} ×{v}" for k, v in Counter(m for w in top for m in w["profil"]["marki"]).most_common(8))}.')
     for i, p in enumerate(PAA):
         L.append(f'- PAA „{p}”: średnio {paa_cov[i]:.2f} w TOP 10' + (f', nasza {nasza["ocena"]["paa"][i]:.2f}' if nasza else '') + '.')
-if nasza:
-    L.append('\n## Nasza strona na tle TOP 10\n')
-    L.append('Luki (nasza ocena poniżej mediany TOP 10):' if luki else 'Brak luk względem mediany TOP 10.')
-    for m, n, t in luki: L.append(f'- {m}: nasza {n:.2f}, mediana {t:.2f}')
-    L.append('\nPrzewagi:' if przewagi else '')
-    for m, n, t in przewagi: L.append(f'- {m}: nasza {n:.2f}, mediana {t:.2f}')
-    L.append(f'\nObjętość: nasza strona {nasza["profil"]["slowa"]} słów, mediana TOP 10 {med_slowa:.0f}.')
+for wn in nasze:
+    lk = [(m, wn['ocena'][m], med[m]) for m in metryki if wn['ocena'][m] + 0.15 < med[m]]
+    pw = [(m, wn['ocena'][m], med[m]) for m in metryki if wn['ocena'][m] > med[m] + 0.15]
+    L.append(f'\n## Nasza strona {urlparse(wn["url"]).path} na tle TOP 10\n')
+    L.append('Luki (ocena poniżej mediany TOP 10):' if lk else 'Brak luk względem mediany TOP 10.')
+    for m, n, t in lk: L.append(f'- {m}: nasza {n:.2f}, mediana {t:.2f}')
+    L.append('\nPrzewagi:' if pw else '')
+    for m, n, t in pw: L.append(f'- {m}: nasza {n:.2f}, mediana {t:.2f}')
+    L.append(f'\nObjętość: {wn["profil"]["slowa"]} słów, mediana TOP 10 {med_slowa:.0f}.')
 raport = '\n'.join(L)
 print('\n' + raport)
 if 'md' in opc:
