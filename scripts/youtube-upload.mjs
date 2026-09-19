@@ -154,9 +154,31 @@ async function ustawMiniature(at, videoId, plakat) {
   if (!r.ok) throw new Error(`thumbnails.set: ${r.status} ${await r.text()}`)
 }
 
+/** Nadpisuje tytuł, opis i tagi już opublikowanego filmu (bez ponownego wgrywania pliku). */
+async function aktualizujOpis(at, f) {
+  const meta = {
+    id: f.videoId,
+    snippet: {
+      title: f.tytul,
+      description: f.opis,
+      tags: f.tagi,
+      categoryId: KATEGORIA_NAUKA_I_TECHNIKA,
+      defaultLanguage: 'pl',
+      defaultAudioLanguage: 'pl',
+    },
+  }
+  const r = await fetch('https://www.googleapis.com/youtube/v3/videos?part=snippet', {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${at}`, 'Content-Type': 'application/json; charset=UTF-8' },
+    body: JSON.stringify(meta),
+  })
+  if (!r.ok) throw new Error(`videos.update: ${r.status} ${await r.text()}`)
+}
+
 async function main() {
   const wybrany = arg('film')
   const wszystkie = Boolean(arg('wszystkie'))
+  const tylkoOpisy = Boolean(arg('opisy'))
 
   if (arg('lista') || (!wybrany && !wszystkie)) {
     console.log('Filmy w manifeście:\n')
@@ -196,6 +218,16 @@ async function main() {
   }
 
   const at = await token()
+
+  if (tylkoOpisy) {
+    for (const f of doWgrania) {
+      if (!f.videoId) { console.log(`── ${f.slug}: brak videoId w manifeście, pomijam`); continue }
+      await aktualizujOpis(at, f)
+      console.log(`── ${f.slug}: opis zaktualizowany → https://youtu.be/${f.videoId}`)
+    }
+    return
+  }
+
   for (const f of doWgrania) {
     console.log(`\n── ${f.slug}: ${f.tytul}`)
     const plik = await plikFilmu(f)

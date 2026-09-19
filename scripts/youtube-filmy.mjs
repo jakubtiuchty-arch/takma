@@ -9,12 +9,14 @@
 
 const OPIS_STOPKA = `
 TAKMA — autoryzowany partner i serwis Zebra.
-Drukarki kart, taśmy, karty PVC i serwis: https://www.takma.com.pl
+Drukarki kart, taśmy i karty PVC: https://www.takma.com.pl
+Pomoc techniczna, serwis gwarancyjny i pogwarancyjny: https://www.serwis-zebry.pl
 Telefon: +48 607 819 688`
 
 export default [
   {
     slug: 'rozpakowanie',
+    videoId: 's04iRbCzBqQ',
     plik: '~/Downloads/Zebra ZC100_ZC300_rozpakowanie_PL.mp4',
     blob: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/zebra-zc100-zc300-rozpakowanie-pl-cM8RuNmSEzDwnH2NT5POeqBE3ZSiLM.mp4',
     napisy: 'public/video/napisy/zebra-zc100-zc300-rozpakowanie-pl.vtt',
@@ -35,6 +37,7 @@ ${OPIS_STOPKA}`,
   },
   {
     slug: 'tasma',
+    videoId: 'sz8ixZWbPvM',
     plik: '~/Downloads/Zebra ZC100_ZC300_zakladanie_tasmy_PL.mp4',
     blob: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/zebra-zc100-zc300-zakladanie-tasmy-pl.mp4',
     napisy: 'public/video/napisy/zebra-zc100-zc300-zakladanie-tasmy-pl.vtt',
@@ -55,6 +58,7 @@ ${OPIS_STOPKA}`,
   },
   {
     slug: 'karty',
+    videoId: 'VRy5608Fq3Y',
     plik: '~/Downloads/Zebra ZC100_ZC300_wkladanie_kart_PL.mp4',
     blob: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/zebra-zc100-zc300-wkladanie-kart-pl.mp4',
     napisy: 'public/video/napisy/zebra-zc100-zc300-wkladanie-kart-pl.vtt',
@@ -74,6 +78,7 @@ ${OPIS_STOPKA}`,
   },
   {
     slug: 'czyszczenie',
+    videoId: '3rWB7HKAySQ',
     plik: '~/Downloads/Zebra ZC100_ZC300_czyszczenie_PL.mp4',
     blob: 'https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/zebra-zc100-zc300-czyszczenie-pl.mp4',
     napisy: 'public/video/napisy/zebra-zc100-zc300-czyszczenie-pl.vtt',
@@ -88,7 +93,6 @@ ${OPIS_STOPKA}`,
 1:08 Karta czyszcząca i powrót do pracy
 
 Zestaw czyszczący do ZC100, ZC300 i ZC350: https://www.takma.com.pl/produkt/zebra-zestaw-czyszczacy-2-karty-zc100-zc300
-Serwis drukarek Zebra: https://www.serwis-zebry.pl/serwis-drukarek-zebra
 ${OPIS_STOPKA}`,
     tagi: ['zebra zc100', 'zebra zc300', 'czyszczenie drukarki', 'karta czyszcząca', 'konserwacja', 'drukarka kart', 'identyfikatory', 'takma'],
   },
