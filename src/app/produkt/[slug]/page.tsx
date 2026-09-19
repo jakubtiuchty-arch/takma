@@ -104,7 +104,8 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
 
   // SEO: dynamic title gdy wybrany wariant (rozmiar + PN), inaczej dedykowany lub fallback
   const variantSuffix = variant ? ` ${variantSize ?? ''}${variantPN ? ` — ${variantPN}` : ''}`.trim() : ''
-  const baseTitle = product.seoTitle
+  // Szablon layoutu dokłada „| TAKMA", więc sufiks wpisany w seoTitle trzeba zdjąć (inaczej „| TAKMA | TAKMA")
+  const baseTitle = product.seoTitle?.replace(/\s*\|\s*TAKMA\s*$/, '')
     ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
   const title = variant
     ? `${product.name}${variantSize ? ` ${variantSize}` : ''}${variantPN ? ` (${variantPN})` : ''}`

@@ -34,7 +34,8 @@ def jev(state, questions):
 
 
 # --- strona z produkcji: wstęp i sekcje H2 ---
-h = subprocess.run(['curl', '-s', 'https://www.takma.com.pl' + sciezka], capture_output=True).stdout.decode('utf-8')
+ADRES = sciezka if sciezka.startswith('http') else 'https://www.takma.com.pl' + sciezka
+h = subprocess.run(['curl', '-sL', '--compressed', '-A', 'Mozilla/5.0', ADRES], capture_output=True).stdout.decode('utf-8', 'replace')
 h = re.sub(r'<script.*?</script>|<style.*?</style>', '', h, flags=re.S)
 tekst = lambda s: html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', s))).strip()
 m_t = re.search(r'<title>(.*?)</title>', h, re.S)
@@ -47,7 +48,7 @@ sekcje = [(tekst(czesci[i])[:80], tekst(czesci[i + 1])[:700]) for i in range(1, 
 
 # --- zapytania z GSC dla tej strony ---
 gsc = json.load(open(plik_gsc))
-zap = sorted([g for g in gsc if g['top_url'].rstrip('/').endswith(sciezka)], key=lambda x: -x['impressions'])
+zap = sorted([g for g in gsc if g['top_url'].rstrip('/').endswith(sciezka) and not sciezka.startswith('http')], key=lambda x: -x['impressions'])
 strony = {s['url']: s for s in json.load(open(plik_stron))}
 # W inwentarzu strony kategorii, podkategorii, marek i zastosowań mają typ równy własnemu slugowi,
 # więc kandydatów wybieramy po rdzeniach rzeczowników z adresu (bez przymiotników), odrzucając
