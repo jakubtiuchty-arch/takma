@@ -279,6 +279,10 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
         answer:
           'Główni konkurenci to: Honeywell (seria PC23d/PC43d — biurkowe, PM45 — przemysłowe) — porównywalna jakość, ale słabszy ekosystem software i droższy serwis w Polsce. TSC (seria DA/TE — biurkowe, MH/MB — przemysłowe) — tańsze o 20–30%, ale krótszy cykl życia i ograniczone wsparcie. SATO (seria WS4/CL4NX+) — mocne w Japonii, słaba dystrybucja w Polsce. Dla firm z istniejącą flotą Zebra rekomendujemy pozostanie przy marce ze względu na kompatybilność materiałów, wspólne sterowniki i centralne zarządzanie Link-OS.',
       },
+      {
+        question: 'Czy drukarki Zebra można kupić także w sklepie serwis-zebry.pl?',
+        answer: 'Tak. Nasz serwis prowadzi [sklep z drukarkami etykiet Zebra](https://www.serwis-zebry.pl/sklep/drukarki-etykiet) z cenami na żywo, głowicami i częściami zamiennymi. Zamówienie w obu sklepach obsługuje ten sam zespół TAKMA, a serwis pogwarancyjny drukarek Zebra jest w tym samym miejscu.',
+      },
     ],
     comparisons: [
       {

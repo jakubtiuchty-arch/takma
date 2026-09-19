@@ -65924,10 +65924,6 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Jaka drukarka Zebra do magazynu?', answer: 'Do magazynu polecamy drukarki przemysłowe: [ZT111](/produkt/zebra-zt111) (od 2 081 zł, entry-level), [ZT231](/produkt/zebra-zt231) (od 2 551 zł, LCD + RFID), [ZT411](/produkt/zebra-zt411) (od 5 078 zł, 600 dpi + linerless) lub ZT610 (od 10 431 zł, heavy-duty). Wybór zależy od wolumenu etykiet, wymaganej rozdzielczości i potrzeby opcji jak RFID czy gilotyna.' },
       { question: 'Czy drukarki Zebra można zintegrować z WMS?', answer: 'Tak. Drukarki Zebra obsługują języki ZPL II i EPL2 (standard branżowy), protokół [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) do zdalnego zarządzania, oraz łączność Ethernet/Wi-Fi/USB. Integrują się z każdym systemem WMS, ERP, BaseLinker, Shoper, PrestaShop i innymi platformami. TAKMA pomaga w konfiguracji i integracji.' },
       { question: 'Jakie są alternatywy dla drukarek Zebra?', answer: 'Główne alternatywy to: [Brother](/drukarki-etykiet-brother) (3–5 lat gwarancji z głowicą, BarTender gratis, emulacja ZPL II, od 461 zł), [Honeywell](/drukarki-etykiet-honeywell) (porównywalny segment enterprise, Printer Edge), TSC (tańsze biurkowe i przemysłowe). Zebra dominuje rynek z [ponad 50% udziałem](https://www.zebra.com/us/en/about-zebra.html) i najszerszym ekosystemem (Link-OS, [serwis-zebry.pl](https://www.serwis-zebry.pl), wsparcie globalne).' },
-      {
-        question: 'Czy drukarki Zebra można kupić także w sklepie serwis-zebry.pl?',
-        answer: 'Tak. Nasz serwis prowadzi [sklep z drukarkami etykiet Zebra](https://www.serwis-zebry.pl/sklep/drukarki-etykiet) z cenami na żywo, głowicami i częściami zamiennymi. Zamówienie w obu sklepach obsługuje ten sam zespół TAKMA, a serwis pogwarancyjny drukarek Zebra jest w tym samym miejscu.',
-      },
     ],
   },
   {
