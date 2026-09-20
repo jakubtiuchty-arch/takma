@@ -55,6 +55,10 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Termotransferowe drukarki etykiet: https://www.takma.com.pl/termotransferowe-drukarki-etykiet
   - Termiczne drukarki etykiet: https://www.takma.com.pl/termiczne-drukarki-etykiet
   - Mobilne drukarki etykiet: https://www.takma.com.pl/mobilne-drukarki-etykiet
+  - Kolorowe drukarki etykiet Epson ColorWorks: https://www.takma.com.pl/kolorowe-drukarki-etykiet
+    - Tusze do kolorowych drukarek Epson: https://www.takma.com.pl/tusze-do-kolorowych-drukarek
+    - Etykiety do kolorowych drukarek Epson: https://www.takma.com.pl/etykiety-do-kolorowych-drukarek
+    - Serwis kolorowych drukarek Epson: https://www.takma.com.pl/serwis-kolorowych-drukarek-epson
 - Terminale mobilne: https://www.takma.com.pl/terminale-mobilne
   - Terminale Honeywell: https://www.takma.com.pl/terminale-honeywell
 - Skanery kodów kreskowych: https://www.takma.com.pl/skanery-kodow-kreskowych
@@ -178,6 +182,15 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - Zebra ZQ610 Plus (2", healthcare/retail, od 3 256 zł): https://www.takma.com.pl/produkt/zebra-zq610-plus
 - Zebra ZQ620 Plus (3", healthcare/retail, od 3 622 zł): https://www.takma.com.pl/produkt/zebra-zq620-plus
 - Zebra ZQ630 Plus (4", healthcare/retail, od 4 257 zł): https://www.takma.com.pl/produkt/zebra-zq630-plus
+
+### Kolorowe drukarki etykiet Epson ColorWorks (6 modeli, od 5 653 zł netto)
+Druk atramentowy CMYK na żądanie: etykiety produktowe, GHS/CLP, spożywcze i bilety bez zamawiania etykiet z nadrukiem.
+- Epson ColorWorks C3500 (720 × 360 dpi, do 104 mm, tusz pigmentowy, gilotyna, od 5 653 zł): https://www.takma.com.pl/produkt/epson-colorworks-c3500
+- Epson ColorWorks D3800e (600 × 1200 dpi, do 108 mm, tusz barwnikowy, bilety i wejściówki, od 6 390 zł): https://www.takma.com.pl/produkt/epson-colorworks-d3800e
+- Epson ColorWorks C4000e (1200 × 1200 dpi, do 108 mm, tusz pigmentowy, wersje bk i mk, od 7 434 zł): https://www.takma.com.pl/produkt/epson-colorworks-c4000e
+- Epson ColorWorks C6000 (1200 × 1200 dpi, do 119 mm/s, rolki do 8 cali, wersje Ae i Pe, od 11 186 zł): https://www.takma.com.pl/produkt/epson-colorworks-c6000
+- Epson ColorWorks C6500 (1200 × 1200 dpi, etykiety do 212 mm, wersje Ae i Pe, od 14 592 zł): https://www.takma.com.pl/produkt/epson-colorworks-c6500
+- Epson ColorWorks C8000e (300 mm/s, stała głowica liniowa, worki z tuszem 480 ml, od 32 733 zł): https://www.takma.com.pl/produkt/epson-colorworks-c8000e
 
 ### Technologie druku
 - Termiczna (DT) — druk bezpośredni na papierze termoczułym, tańsza eksploatacja, etykiety blakną po 6-12 miesiącach

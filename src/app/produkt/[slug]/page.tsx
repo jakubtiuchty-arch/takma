@@ -489,6 +489,28 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
   const toIsoDuration = (title: string) => { const m = title.match(/(\d+):(\d{2})\s*$/); return m ? `PT${parseInt(m[1], 10)}M${parseInt(m[2], 10)}S` : undefined }
+  // Filmy producenta osadzone z YouTube: miniatura i adres budowane z identyfikatora,
+  // data publikacji i czas trwania pobrane z YouTube i zapisane w katalogu (pole `published`,
+  // `duration`). Bez VideoObject Google nie wie, że karta ma film, i nie bierze jej do karuzeli.
+  const idYouTube = (url: string) => url.match(/embed\/([A-Za-z0-9_-]+)/)?.[1]
+  const videoOsadzoneJsonLd = (product.videos ?? [])
+    .filter((v) => !v.native && v.published && v.duration && idYouTube(v.url))
+    .map((v) => {
+      const id = idYouTube(v.url)!
+      const tytul = v.title.replace(/\s*·\s*[^·]*$/, '').trim()
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: `${tytul} — ${product.name}`,
+        description: `${tytul}: instruktaż producenta ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+        thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+        embedUrl: v.url,
+        uploadDate: v.published,
+        duration: v.duration,
+        publisher: { '@type': 'Organization', name: 'Epson' },
+      }
+    })
+
   const videoJsonLd = (product.videos ?? []).filter((v) => v.native && v.published && v.poster).map((v) => ({
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
@@ -809,7 +831,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />}
-      {videoJsonLd.map((v, i) => (
+      {[...videoJsonLd, ...videoOsadzoneJsonLd].map((v, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(v) }} />
       ))}
       <script

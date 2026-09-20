@@ -73,7 +73,7 @@ export interface Product {
   videoFile?: string
   /** Kilka filmów (np. instrukcje producenta z YouTube) — sekcja „Wideo” pokazuje je w siatce */
   /** Filmy na karcie: domyślnie iframe (YouTube/Vidyard); `native: true` = własny MP4 (np. z Vercel Blob) z plakatem. */
-  videos?: { url: string; title: string; native?: boolean; poster?: string; /** ścieżka do napisów WebVTT (pl) */ captions?: string; /** data publikacji na stronie (VideoObject.uploadDate) */ published?: string }[]
+  videos?: { url: string; title: string; native?: boolean; poster?: string; /** ścieżka do napisów WebVTT (pl) */ captions?: string; /** data publikacji na stronie (VideoObject.uploadDate) */ published?: string; /** czas trwania w ISO 8601, np. PT3M47S (VideoObject.duration) */ duration?: string }[]
   /** Obrót 360° w galerii: krótki MP4 bez dźwięku (pętla) + plakat na miniaturę. */
   spinVideo?: { file: string; poster: string }
   /** 'faq-last': FAQ i „Pliki do pobrania” na samym dole karty, za materiałami i akcesoriami (test UX na Magicard 300). */
@@ -65561,7 +65561,7 @@ const epsonColorWorks: Product[] = [
     name: 'Epson ColorWorks C3500',
     shortDescription: 'Epson ColorWorks C3500 to biurkowa drukarka etykiet w pełnym kolorze: tusz pigmentowy CMYK w czterech osobnych wkładach, 720 × 360 dpi, do 103 mm/s, etykiety 30–112 mm, gilotyna, USB i Ethernet, NiceLabel w zestawie.',
     seoTitle: 'Epson ColorWorks C3500 – kolorowa drukarka etykiet',
-    seoDescription: 'Epson ColorWorks C3500: kolorowe etykiety na żądanie, tusz pigmentowy CMYK, 720 × 360 dpi, do 103 mm/s, gilotyna, USB i Ethernet. Tusze i etykiety Epson w ofercie TAKMA.',
+    seoDescription: 'Epson ColorWorks C3500 — kolorowa drukarka etykiet, tusz pigmentowy CMYK, 720 dpi, 104 mm, gilotyna. Tusze i etykiety w TAKMA. PN C31CD54012CD.',
     description: `Dla kogo? Epson ColorWorks C3500 to biurkowa drukarka etykiet, która drukuje w pełnym kolorze wtedy, kiedy etykieta jest potrzebna. Kupują ją producenci żywności, kosmetyków i chemii, laboratoria, apteki i hurtownie farmaceutyczne, sklepy z własną marką oraz organizatorzy imprez, którzy drukują bilety. Wspólny mianownik: etykieta ma logo, zdjęcie produktu albo kolorowy piktogram, a nakład zmienia się z dnia na dzień, więc zamawianie gotowych rolek w drukarni się nie opłaca.
 
 C3500 drukuje tuszem pigmentowym z czterech osobnych wkładów SJIC22P (czarny, cyan, magenta, żółty). Pigment nie rozmazuje się po zamoczeniu i nie blaknie na półce, dlatego nadaje się na etykiety produktowe, ostrzegawcze GHS i przywieszki, które mają wyglądać tak samo po miesiącach. Głowica piezoelektryczna ma 360 dysz na kolor i daje rozdzielczość do 720 × 360 dpi; prędkość dochodzi do 103 mm/s. Drukarka przyjmuje etykiety ciągłe, wykrojone i z czarnym znacznikiem o szerokości od 30 do 112 mm, z rolki o średnicy do 101,6 mm albo z papieru składanego, a wbudowana gilotyna odcina każdą etykietę po wydruku.
@@ -65579,6 +65579,58 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
       'Epson ColorWorks C3500 od przodu, z wysuniętą kolorową etykietą produktową',
     ],
     tags: ['retail', 'produkcja', 'magazyn', 'healthcare'],
+    variants: [
+      {
+        partNumber: 'C31CD54012CD',
+        name: 'CW-C3500 z gilotyną',
+        priceFrom: 5653,
+        availability: 'available',
+        attributes: { 'Wykańczanie': 'Gilotyna' },
+      },
+    ],
+    relatedProducts: ['epson-colorworks-d3800e', 'epson-colorworks-c4000e'],
+    comparison: {
+      title: 'Kolorowe drukarki etykiet Epson do 108 mm — C3500, D3800e i C4000e',
+      models: [
+        {
+          name: 'ColorWorks C3500',
+          slug: 'epson-colorworks-c3500',
+          highlight: true,
+          specs: {
+            'Rozdzielczość': '720 × 360 dpi',
+            'Prędkość druku': 'do 103 mm/s',
+            'Szerokość druku': 'do 104 mm',
+            'Rodzaj tuszu': 'Pigmentowy CMYK',
+            'Szerokość nośnika': '30–112 mm',
+            'Gilotyna': 'W standardzie',
+          },
+        },
+        {
+          name: 'ColorWorks D3800e',
+          slug: 'epson-colorworks-d3800e',
+          specs: {
+            'Rozdzielczość': '600 × 1200 dpi',
+            'Prędkość druku': 'do 100 mm/s',
+            'Szerokość druku': 'do 108 mm',
+            'Rodzaj tuszu': 'Barwnikowy CMYK',
+            'Szerokość nośnika': '25–108 mm',
+            'Gilotyna': 'W standardzie',
+          },
+        },
+        {
+          name: 'ColorWorks C4000e',
+          slug: 'epson-colorworks-c4000e',
+          specs: {
+            'Rozdzielczość': '1200 × 1200 dpi',
+            'Prędkość druku': 'do 100 mm/s',
+            'Szerokość druku': 'do 108 mm',
+            'Rodzaj tuszu': 'Pigmentowy CMYK',
+            'Szerokość nośnika': '25–108 mm',
+            'Gilotyna': 'W zestawie, wymieniana samodzielnie',
+          },
+        },
+      ],
+    },
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -66497,7 +66549,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     name: 'Epson ColorWorks D3800e',
     shortDescription: 'Epson ColorWorks D3800e to kolorowa drukarka etykiet z głowicą PrecisionCore i tuszem barwnikowym: do 600 × 1200 dpi, do 100 mm/s, etykiety 25–108 mm, gilotyna, kolorowy wyświetlacz, USB i Ethernet, emulacja ZPL II.',
     seoTitle: 'Epson ColorWorks D3800e – kolorowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks D3800e: kolorowe etykiety w 600 × 1200 dpi, tusz barwnikowy CMYK, do 100 mm/s, gilotyna, USB i Ethernet, emulacja ZPL II. Tusze SJIC57P i etykiety w ofercie TAKMA.',
+    seoDescription: 'Epson ColorWorks D3800e — kolorowa drukarka etykiet 600 × 1200 dpi, do 100 mm/s, gilotyna, ZPL II. Tusze SJIC57P w TAKMA. PN C31CK03202.',
     description: `Dla kogo? Epson ColorWorks D3800e drukuje kolorowe etykiety tam, gdzie liczy się wygląd: winiarnie i browary rzemieślnicze, producenci kosmetyków i żywności premium, cukiernie, sklepy z własną marką, pracownie rękodzieła. Etykieta ze zdjęciem produktu, tłem w firmowych barwach i drobnym opisem składu wychodzi z niej w jakości zbliżonej do drukarni, a nakład ustalasz sam: dziesięć sztuk na próbną partię albo tysiąc na sezon.
 
 D3800e ma głowicę **PrecisionCore**, tę samą rodzinę co większe modele ColorWorks, i drukuje z rozdzielczością do **600 × 1200 dpi** — czterokrotnie gęściej w pionie niż [C3500](/produkt/epson-colorworks-c3500). Prędkość dochodzi do **100 mm/s** przy 300 × 600 dpi i szerokości druku 102 mm. Drukarka przyjmuje etykiety i papier o szerokości od **25 do 108 mm**, z rolki o średnicy do 4 cali albo z papieru składanego, i rozpoznaje etykiety wykrojone, czarne znaczniki oraz papier ciągły. Gilotyna odcina wydruk w standardzie.
@@ -66526,13 +66578,23 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       'Epson ColorWorks D3800e z wysuniętą tacką na wydruki',
     ],
     videos: [
-      { url: 'https://www.youtube-nocookie.com/embed/PUiVduby_DU', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/mk0AFewkab8', title: 'Zakładanie rolki etykiet · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/AS8F98Ts8x0', title: 'Zakładanie papieru składanego · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/LzS_uN5_hQo', title: 'Instalacja sterownika w Windows · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/QoJgLdKGCzM', title: 'Instalacja sterownika w macOS · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/PUiVduby_DU', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN', published: '2026-05-11', duration: 'PT4M46S' },
+      { url: 'https://www.youtube-nocookie.com/embed/mk0AFewkab8', title: 'Zakładanie rolki etykiet · Epson, EN', published: '2026-05-11', duration: 'PT4M8S' },
+      { url: 'https://www.youtube-nocookie.com/embed/AS8F98Ts8x0', title: 'Zakładanie papieru składanego · Epson, EN', published: '2026-05-11', duration: 'PT4M32S' },
+      { url: 'https://www.youtube-nocookie.com/embed/LzS_uN5_hQo', title: 'Instalacja sterownika w Windows · Epson, EN', published: '2026-05-11', duration: 'PT5M29S' },
+      { url: 'https://www.youtube-nocookie.com/embed/QoJgLdKGCzM', title: 'Instalacja sterownika w macOS · Epson, EN', published: '2026-05-11', duration: 'PT8M8S' },
     ],
     tags: ['retail', 'produkcja', 'magazyn'],
+    variants: [
+      {
+        partNumber: 'C31CK03202',
+        name: 'CW-D3800e z gilotyną',
+        priceFrom: 6390.15,
+        availability: 'available',
+        attributes: { 'Wykańczanie': 'Gilotyna' },
+      },
+    ],
+    relatedProducts: ['epson-colorworks-c4000e', 'epson-colorworks-c3500'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -66813,7 +66875,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     name: 'Epson ColorWorks C4000e',
     shortDescription: 'Epson ColorWorks C4000e to kolorowa drukarka etykiet z głowicą PrecisionCore i tuszem pigmentowym: do 1200 × 1200 dpi, do 100 mm/s, etykiety 25–108 mm, gilotyna w zestawie, emulacja ZPL II. Dwie wersje — z czarnym tuszem do etykiet błyszczących (bk) albo matowych (mk).',
     seoTitle: 'Epson ColorWorks C4000e – kolorowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks C4000e: kolorowe etykiety w 1200 × 1200 dpi, tusz pigmentowy, gilotyna, emulacja ZPL II. Wersje bk i mk, tusze SJIC42P i etykiety w ofercie TAKMA.',
+    seoDescription: 'Epson ColorWorks C4000e — kolorowa drukarka etykiet 1200 dpi, tusz pigmentowy, gilotyna, ZPL II. Wersje bk i mk, tusze SJIC42P w TAKMA.',
     description: `Dla kogo? Epson ColorWorks C4000e to najwyższa rozdzielczość spośród biurkowych drukarek ColorWorks: **1200 × 1200 dpi**. Kupują ją firmy, które drukują etykiety produktowe z drobnym składem, mikrotekstem i gęstymi kodami 2D — producenci kosmetyków i suplementów, laboratoria, zakłady chemiczne, wytwórnie żywności premium, a także firmy oznaczające wyroby zgodnie z GHS.
 
 Drukarka pracuje na **tuszu pigmentowym**, tak jak [C3500](/produkt/epson-colorworks-c3500), więc nadruk nie rozmazuje się po zamoczeniu i nie blaknie na świetle — nadaje się na etykiety chłodnicze, chemiczne i logistyczne. Od C3500 różni ją głowica **PrecisionCore**, czterokrotnie wyższa rozdzielczość i nowsza elektronika z kolorowym wyświetlaczem. Prędkość dochodzi do **100 mm/s** przy 300 × 600 dpi i szerokości druku 102 mm; przy najwyższej jakości drukarka zwalnia, bo kładzie znacznie więcej kropli.
@@ -66838,11 +66900,12 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       'Epson ColorWorks C4000e z wysuniętym pojemnikiem konserwacyjnym SJMB4000',
     ],
     videos: [
-      { url: 'https://www.youtube-nocookie.com/embed/uNNfAog6HYI', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/DYLoZk-yVfk', title: 'Zakładanie rolki etykiet · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/ciXpC9SunA4', title: 'Zakładanie papieru składanego · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/uNNfAog6HYI', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN', published: '2022-05-19', duration: 'PT4M46S' },
+      { url: 'https://www.youtube-nocookie.com/embed/DYLoZk-yVfk', title: 'Zakładanie rolki etykiet · Epson, EN', published: '2022-05-19', duration: 'PT3M47S' },
+      { url: 'https://www.youtube-nocookie.com/embed/ciXpC9SunA4', title: 'Zakładanie papieru składanego · Epson, EN', published: '2022-05-19', duration: 'PT4M10S' },
     ],
     tags: ['retail', 'produkcja', 'magazyn', 'healthcare'],
+    relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-d3800e', 'epson-colorworks-c3500'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -66990,7 +67053,9 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
         answer: 'Tak, drukarka emuluje ZPL II, więc gotowe szablony dla drukarek Zebra można wysyłać bez przepisywania. Drukuje też przez sterownik z dowolnego programu na Windows, Mac i Linux, w tym z BarTender i NiceLabel.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks C4000e (EN)', type: 'datasheet', url: '/downloads/epson-colorworks-c4000e-karta-katalogowa-en.pdf', size: '908 KB' },
+    ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/cw-c4000e-series/p/35268',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
@@ -67161,7 +67226,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     name: 'Epson ColorWorks C6000',
     shortDescription: 'Epson ColorWorks C6000 to przemysłowa kolorowa drukarka etykiet 4 cale: PrecisionCore z 800 dyszami na kolor, do 1200 × 1200 dpi, do 119 mm/s, rolki do 8 cali, tusz pigmentowy UltraChrome DL, serwis u klienta. Wersje z gilotyną (Ae) albo odklejakiem (Pe).',
     seoTitle: 'Epson ColorWorks C6000 – przemysłowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks C6000: kolorowe etykiety 1200 × 1200 dpi, do 119 mm/s, rolki 8 cali, tusz pigmentowy. Wersje Ae z gilotyną i Pe z odklejakiem, po dwie odmiany czerni. Tusze SJIC36P w TAKMA.',
+    seoDescription: 'Epson ColorWorks C6000 — przemysłowa drukarka etykiet kolorowych, 1200 dpi, do 119 mm/s, 108 mm. Wersje Ae i Pe, tusze SJIC36P w TAKMA.',
     description: `Dla kogo? ColorWorks C6000 to klasa wyżej niż biurkowe [C4000e](/produkt/epson-colorworks-c4000e) i [C3500](/produkt/epson-colorworks-c3500): drukarka **przemysłowa**, zaprojektowana do pracy ciągłej. Kupują ją zakłady produkcyjne i pakownie, które drukują etykiety całymi zmianami, oraz firmy oznaczające wyroby w dużych seriach — kosmetyki, chemia, żywność, farmacja, logistyka wewnętrzna.
 
 Różnice widać w liczbach. Głowica PrecisionCore ma **800 dysz na każdy kolor**, przez co drukarka osiąga **119 mm/s** przy pełnej szerokości 108 mm, a nie tylko na wąskiej etykiecie. Przyjmuje rolki o średnicy **4, 6 i 8 cali**, więc wymiana nośnika zdarza się kilka razy rzadziej niż w modelach biurkowych. Zasilacz jest **wbudowany**, obudowa waży 23 kg i stoi stabilnie przy ciągłym cięciu. Gwarancja obejmuje **serwis u klienta**, a nie wysyłkę sprzętu do punktu — przy drukarce, która stoi w linii pakowania, to często najważniejszy zapis w ofercie.
@@ -67186,6 +67251,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       'Epson ColorWorks C6000Pe — wersja z odklejakiem etykiet i nawijakiem podkładu',
     ],
     tags: ['produkcja', 'magazyn', 'retail', 'healthcare'],
+    relatedProducts: ['epson-colorworks-c4000e', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -67337,10 +67403,10 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       { name: 'Karta katalogowa Epson ColorWorks C6000Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6000-karta-katalogowa-pl.pdf', size: '1,4 MB' },
     ],
     videos: [
-      { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/ZfKCHLq3cS8', title: 'Zakładanie rolki — wersja z odklejakiem · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/qsyUyxUdh8w', title: 'Podawanie papieru z zewnątrz drukarki · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN', published: '2020-10-05', duration: 'PT3M0S' },
+      { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN', published: '2019-12-19', duration: 'PT3M47S' },
+      { url: 'https://www.youtube-nocookie.com/embed/ZfKCHLq3cS8', title: 'Zakładanie rolki — wersja z odklejakiem · Epson, EN', published: '2019-12-19', duration: 'PT4M34S' },
+      { url: 'https://www.youtube-nocookie.com/embed/qsyUyxUdh8w', title: 'Podawanie papieru z zewnątrz drukarki · Epson, EN', published: '2019-12-19', duration: 'PT3M6S' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6000-series/p/28326',
     sectionOrder: 'faq-last',
@@ -67758,7 +67824,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     name: 'Epson ColorWorks C6500',
     shortDescription: 'Epson ColorWorks C6500 to przemysłowa kolorowa drukarka etykiet 8 cali: szerokość druku do 212 mm, PrecisionCore z 800 dyszami na kolor, do 1200 × 1200 dpi, tusz pigmentowy UltraChrome DL, serwis u klienta. Wersje z gilotyną (Ae) albo odklejakiem (Pe).',
     seoTitle: 'Epson ColorWorks C6500 – drukarka etykiet 8 cali | TAKMA',
-    seoDescription: 'Epson ColorWorks C6500: kolorowe etykiety do 212 mm szerokości, 1200 × 1200 dpi, tusz pigmentowy, rolki 6 cali. Wersje Ae z gilotyną i Pe z odklejakiem, po dwie odmiany czerni. Tusze SJIC36P w TAKMA.',
+    seoDescription: 'Epson ColorWorks C6500 — drukarka etykiet kolorowych do 212 mm, 1200 dpi, tusz pigmentowy. Wersje Ae i Pe, tusze SJIC36P w TAKMA.',
     description: `Dla kogo? ColorWorks C6500 to ta sama maszyna co [C6000](/produkt/epson-colorworks-c6000), tylko dwa razy szersza: drukuje etykiety o szerokości do **212 mm**, a nie 108 mm. Kupują ją zakłady, które oznaczają duże opakowania — beczki i kanistry z chemią, worki, kartony zbiorcze, palety — oraz firmy drukujące etykiety formatu A4 z pełną kartą produktu, instrukcją albo oznaczeniem GHS z kilkoma piktogramami naraz.
 
 Głowica PrecisionCore ma **800 dysz na każdy kolor** i kładzie 212 mm szerokości z prędkością **85 mm/s** przy 300 × 600 dpi. Rozdzielczość sięga **1200 × 1200 dpi**, więc drobny skład i gęste kody 2D zostają czytelne. Tusz jest pigmentowy **UltraChrome DL**: nadruk nie rozmazuje się po zamoczeniu, znosi tarcie i nie blaknie na świetle. Drukarka przyjmuje rolki o średnicy **4 i 6 cali**, waży 26 kg i ma wbudowany zasilacz. Ruchomy czujnik nośnika radzi sobie z etykietami o nietypowym kształcie, bez przestawiania mechaniki.
@@ -67781,6 +67847,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       'Epson ColorWorks C6500 od przodu, z kolorowym wyświetlaczem i panelem sterowania',
     ],
     tags: ['produkcja', 'magazyn', 'retail', 'healthcare'],
+    relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -67932,10 +67999,10 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       { name: 'Karta katalogowa Epson ColorWorks C6500Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6500-karta-katalogowa-pl.pdf', size: '1,6 MB' },
     ],
     videos: [
-      { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/ZfKCHLq3cS8', title: 'Zakładanie rolki — wersja z odklejakiem · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/qsyUyxUdh8w', title: 'Podawanie papieru z zewnątrz drukarki · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN', published: '2020-10-05', duration: 'PT3M0S' },
+      { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN', published: '2019-12-19', duration: 'PT3M47S' },
+      { url: 'https://www.youtube-nocookie.com/embed/ZfKCHLq3cS8', title: 'Zakładanie rolki — wersja z odklejakiem · Epson, EN', published: '2019-12-19', duration: 'PT4M34S' },
+      { url: 'https://www.youtube-nocookie.com/embed/qsyUyxUdh8w', title: 'Podawanie papieru z zewnątrz drukarki · Epson, EN', published: '2019-12-19', duration: 'PT3M6S' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6500-series/p/28377',
     sectionOrder: 'faq-last',
@@ -68117,7 +68184,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     name: 'Epson ColorWorks C8000e',
     shortDescription: 'Epson ColorWorks C8000e to najszybsza kolorowa drukarka etykiet Epsona: stała głowica liniowa PrecisionCore, do 300 mm/s przy 600 × 1200 dpi, worki z tuszem po 480 ml, rolki 8 cali, gilotyna, serwis u klienta.',
     seoTitle: 'Epson ColorWorks C8000e – drukarka etykiet 300 mm/s | TAKMA',
-    seoDescription: 'Epson ColorWorks C8000e: kolorowe etykiety z prędkością 300 mm/s przy 600 × 1200 dpi, stała głowica liniowa, worki z tuszem 480 ml, technologia NVT. Wersje bk i mk. Tusze SJIC48P w TAKMA.',
+    seoDescription: 'Epson ColorWorks C8000e — drukarka etykiet kolorowych 300 mm/s, stała głowica liniowa, tusz 480 ml. Wersje bk i mk, tusze SJIC48P w TAKMA.',
     description: `Dla kogo? ColorWorks C8000e to najszybsza kolorowa drukarka etykiet w ofercie Epsona i jedyna, która dorównuje tempem drukarkom jednokolorowym: **300 mm/s przy 600 × 1200 dpi**. Kupują ją zakłady, w których etykieta powstaje na linii, a nie obok niej — produkcja żywności i napojów, pakownie, magazyny z własną etykietą wysyłkową, wytwórcy oznaczeń GHS i etykiet energetycznych UE.
 
 Różnica wobec [C6000](/produkt/epson-colorworks-c6000) i [C6500](/produkt/epson-colorworks-c6500) jest w konstrukcji głowicy. Tamte modele mają głowicę, która przesuwa się nad etykietą; C8000e ma **stałą głowicę liniową** z 600 dyszami na kolor, która pokrywa całą szerokość druku naraz — stąd trzykrotnie wyższa prędkość przy tej samej szerokości 108 mm. Epson deklaruje, że żaden z głównych elementów głowicy nie wymaga wymiany przez co najmniej **500 km wydruku**, a technologia **NVT** sprawdza dysze i zastępuje brakujące krople sąsiednimi, więc pojedyncza zatkana dysza nie zostawia białej linii na etykiecie.
@@ -68144,6 +68211,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       'Epson ColorWorks C8000e z otwartą komorą tuszu i czterema workami 480 ml',
     ],
     tags: ['produkcja', 'magazyn', 'retail', 'healthcare'],
+    relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c6500'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
@@ -68283,10 +68351,10 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       { name: 'Karta katalogowa Epson ColorWorks C8000e MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c8000e-karta-katalogowa-pl.pdf', size: '1,3 MB' },
     ],
     videos: [
-      { url: 'https://www.youtube-nocookie.com/embed/2RTgICUK_LU', title: 'Ustawienie drukarki po rozpakowaniu · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/pBz2Jm4wvm8', title: 'Zakładanie rolki i składanki · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/d-G4M-BsKEM', title: 'Konfiguracja sterownika w Windows · Epson, EN' },
-      { url: 'https://www.youtube-nocookie.com/embed/UVvtb6JQAb8', title: 'Czyszczenie drukarki · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/2RTgICUK_LU', title: 'Ustawienie drukarki po rozpakowaniu · Epson, EN', published: '2024-06-12', duration: 'PT6M38S' },
+      { url: 'https://www.youtube-nocookie.com/embed/pBz2Jm4wvm8', title: 'Zakładanie rolki i składanki · Epson, EN', published: '2024-06-12', duration: 'PT8M26S' },
+      { url: 'https://www.youtube-nocookie.com/embed/d-G4M-BsKEM', title: 'Konfiguracja sterownika w Windows · Epson, EN', published: '2024-06-12', duration: 'PT6M40S' },
+      { url: 'https://www.youtube-nocookie.com/embed/UVvtb6JQAb8', title: 'Czyszczenie drukarki · Epson, EN', published: '2024-06-12', duration: 'PT3M59S' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-cw-c8000e-series/p/46707',
     sectionOrder: 'faq-last',

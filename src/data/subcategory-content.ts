@@ -3500,9 +3500,13 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   // ============================================
   'kolorowe-drukarki-etykiet': {
     updatedAt: '2026-09-20',
+    sectionHeadings: {
+      howToSteps: 'Jak wdrożyć kolorową drukarkę etykiet',
+      comparisons: 'Kolorowa drukarka a inne sposoby na etykietę',
+    },
     definition: {
       heading: 'Co to jest kolorowa drukarka etykiet?',
-      content: 'Kolorowa drukarka etykiet drukuje na rolce w pełnym kolorze, tak jak biurowa drukarka atramentowa na kartce, tylko na papierze samoprzylepnym z powleczeniem pod tusz i z gilotyną albo odklejakiem na wyjściu. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu: czarny, cyan, magentę i żółty.\n\nCała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury.\n\nW ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
+      content: 'Kolorowa drukarka etykiet to przemysłowe urządzenie atramentowe, które drukuje gotowe etykiety w pełnym kolorze prosto z rolki: rozdzielczość od 720 × 360 do 1200 × 1200 dpi, szerokość druku od 104 do 212 mm, prędkość od 100 do 300 mm/s, ceny od 5 653 zł netto. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu — czarny, cyan, magentę i żółty — a na wyjściu gilotynę albo odklejak.\n\nTo nie jest ta sama klasa co domowe urządzenia na taśmę ZINK za kilkaset złotych. Te drukują naklejki do opisania segregatora; tutaj chodzi o produkcję etykiet w firmie, z tuszem pigmentowym odpornym na wodę i tarcie, z pasem roboczym na całą szerokość etykiety i z wydajnością liczoną w tysiącach sztuk dziennie.\n\nCała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury.\n\nW ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
     },
     comparisonTable: {
       heading: 'Sześć modeli ColorWorks — czym się różnią',
@@ -3564,7 +3568,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
         'Regularność pracy. Drukarka atramentowa czyści dysze, gdy stoi bez pracy, i zużywa przy tym tusz oraz miejsce w pojemniku konserwacyjnym. Jeśli kolorowe etykiety są potrzebne raz na kwartał, taniej zamówić je w drukarni.',
       ],
     },
-    expertAuthority: 'TAKMA dobiera drukarki etykiet od 25 lat. Kolorowe wdrażamy tam, gdzie klient dotąd zamawiał zadrukowane rolki i tracił czas na dostawy albo drukował logo na czarno. Przed zakupem liczymy zużycie tuszu dla konkretnego projektu etykiety, dobieramy papier matowy, błyszczący albo folię i sprawdzamy, czy formaty mieszczą się w wybranym modelu. Na życzenie drukujemy próbkę na maszynie, żeby porównanie z ofertą drukarni opierało się na liczbach, a nie na szacunkach.',
+    expertAuthority: 'TAKMA działa od 2002 roku i dobiera drukarki etykiet dla firm produkcyjnych, spożywczych i chemicznych. W ofercie jest sześć modeli Epson ColorWorks, od C3500 za 5 653 zł netto po C8000e drukującą 300 mm/s, wszystkie z magazynu europejskiego z wysyłką w dwa do trzech dni. Do każdego modelu mamy instrukcję po polsku, karty katalogowe i filmy producenta na karcie produktu, a tusze i etykiety trzymamy na stanie razem z drukarkami.\n\nProwadzimy własny serwis drukarek Epson, więc naprawa nie oznacza odsyłania sprzętu do producenta. Przed zakupem liczymy zużycie tuszu dla konkretnego projektu etykiety, dobieramy papier matowy, błyszczący albo folię i sprawdzamy, czy formaty mieszczą się w wybranym modelu. Na życzenie drukujemy próbkę, żeby porównanie z ofertą drukarni opierało się na liczbach, a nie na szacunkach.',
     technicalDeepDive: `Wszystkie modele ColorWorks drukują czterema kolorami na powlekanym nośniku. Powleczenie wchłania tusz i nie pozwala mu się rozlać — zwykły papier termiczny do drukarek Zebra tej warstwy nie ma i nadruk się na nim rozmazuje. Tusz pigmentowy częściowo wnika w powłokę, a częściowo zostaje na powierzchni, przez co nadruk znosi wodę, tarcie i promieniowanie UV. Tusz barwnikowy wnika w powłokę w całości: daje głębszą czerń i szerszą paletę na papierze błyszczącym, ale gorzej znosi wilgoć.
 
 Czarny tusz występuje w dwóch odmianach. Black ma drobne cząstki pigmentu, które wchodzą w mikropory podłoża błyszczącego i dobrze się z nim wiążą. Matte Black ma cząstki większe, zostające bliżej powierzchni, przez co obraz na papierze matowym i teksturowanym jest żywszy. Wybór odmiany jest trwały — kolorowe wkłady są wspólne, czarnego nie da się zamienić.
@@ -3592,6 +3596,22 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       ],
     },
     faq: [
+      {
+        question: 'Jaka drukarka do kolorowych etykiet?',
+        answer: 'Do etykiet produktowych i GHS w firmie — drukarka atramentowa z tuszem pigmentowym. Przy nakładzie do kilkuset etykiet dziennie i szerokości do 108 mm wystarczy Epson ColorWorks C3500 od 5 653 zł netto albo C4000e z rozdzielczością 1200 dpi. Powyżej tysiąca etykiet dziennie sensowniejsza jest C6000, a przy etykietach szerszych niż 108 mm C6500 z pasem 212 mm. Do biletów i wejściówek, które nie mają kontaktu z wodą, tańsza w eksploatacji jest D3800e z tuszem barwnikowym.',
+      },
+      {
+        question: 'Jak drukować kolorowe etykiety?',
+        answer: 'Potrzebne są trzy rzeczy: drukarka atramentowa do etykiet, rolka z powleczeniem pod tusz i program do projektowania. Projekt przygotowuje się w NiceLabel, BarTender albo Codesoft, ustawia profil nośnika odpowiadający papierowi lub folii, po czym drukarka wykonuje całą etykietę w jednym przebiegu i odcina ją gilotyną. Zwykła drukarka biurowa się nie nada, bo nie prowadzi rolki, nie odcina etykiet i nie drukuje na podłożu samoprzylepnym z powleczeniem.',
+      },
+      {
+        question: 'Czy drukarka do etykiet drukuje w kolorze?',
+        answer: 'Zależy od rodzaju. Popularne drukarki termiczne i termotransferowe drukują jednym kolorem — tym, który ma taśma barwiąca, najczęściej czarnym. Pełny kolor daje dopiero drukarka atramentowa do etykiet, taka jak seria Epson ColorWorks: cztery tusze CMYK, zdjęcia i przejścia tonalne w jednym przebiegu. W tej samej drukarce termotransferowej nie da się uzyskać koloru przez zmianę ustawień.',
+      },
+      {
+        question: 'Jaka jest dobra drukarka do naklejek?',
+        answer: 'Do naklejek firmowych z logo, zdjęciem albo piktogramem dobra jest drukarka atramentowa z rolką samoprzylepną i gilotyną. Przy małych nakładach i szerokości do 104 mm wystarczy Epson ColorWorks C3500; przy większej liczbie wzorów lepiej sprawdzi się C4000e z rozdzielczością 1200 dpi. Jeśli naklejki mają wytrzymać wilgoć, tarcie albo słońce, wybierz model z tuszem pigmentowym, a nie barwnikowym.',
+      },
       { question: 'Czy kolorowa drukarka etykiet zastąpi termotransferową?', answer: 'W etykietach z grafiką tak, w prostych etykietach logistycznych nie. Termotransferowa drukuje szybciej, a taśma i papier są tańsze niż tusz i papier powlekany. Wiele firm ma obie: termotransferową do etykiet wysyłkowych i kolorową do produktowych.' },
       { question: 'Czy tusz nadaje się do etykiet na żywność?', answer: 'Tak. Tusze ColorWorks przy właściwym użyciu spełniają rozporządzenie 1935/2004, rozporządzenie 10/2011 o tworzywach sztucznych, dobrą praktykę produkcyjną 2023/2006, wytyczne EuPIA oraz FDA CFR21. Dotyczy to wszystkich rodzin wkładów w naszej ofercie: SJIC22P, SJIC42P, SJIC36P i SJIC48P.' },
       { question: 'Czy etykiety chemiczne spełnią normę BS5609?', answer: 'Tak, na właściwym podłożu. Norma dotyczy etykiet na substancje niebezpieczne przewożone drogą morską i wymaga odporności na wodę morską, ścieranie i światło. Spełniają ją wydruki tuszem pigmentowym na foliach polipropylenowych; papier matowy do tego nie wystarczy.' },
@@ -3605,10 +3625,10 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       { title: 'Tusz pigmentowy a barwnikowy', content: 'Pigmentowy: odporny na wodę, tarcie i światło, matowe wykończenie, do etykiet produktowych, chemicznych i chłodniczych. Barwnikowy: szersza paleta i głębsza czerń na papierze błyszczącym, do etykiet, które mają przyciągać wzrok na półce, ale nie znoszą wilgoci. W naszej ofercie barwnikowy jest tylko D3800e.' },
     ],
     howToSteps: [
-      { name: 'Policz wersje etykiet i nakład', text: 'Spisz, ile różnych etykiet drukujesz w miesiącu i w jakich ilościach. Dużo wersji w krótkich seriach to główny argument za kolorową drukarką.' },
-      { name: 'Sprawdź format i materiał', text: 'Do 108 mm szerokości druku wystarczy każdy model poza C6500, który bierze etykiety do 212 mm. Papier matowy do etykiet informacyjnych, błyszczący do produktowych, folia polipropylenowa do chemii i GHS.' },
-      { name: 'Policz koszt w kalkulatorze', text: 'Wpisz wymiar etykiety, dzienny nakład i cenę, jaką płacisz drukarni. Zobaczysz koszt sztuki w trzech wariantach i to, po ilu miesiącach drukarka się zwraca.' },
-      { name: 'Prześlij projekt do wyceny', text: 'Na podstawie pliku etykiety zmierzymy zużycie tuszu na maszynie i podamy koszt jednej sztuki dla Twojej grafiki, a nie dla przykładu z broszury.' },
+      { name: 'Rozpakuj i napełnij układ tuszem', text: 'Pierwsze napełnienie zużywa część tuszu na zalanie głowicy i drenów — to jednorazowy koszt startu, a nie wada. Przy C6000, C6500 i C8000e trwa kilkanaście minut, drukarka musi w tym czasie zostać włączona.' },
+      { name: 'Załóż rolkę i ustaw czujnik', text: 'Nośnik prowadzi się inaczej w wersji z gilotyną i w wersji z odklejakiem — filmy producenta na karcie każdego modelu pokazują oba warianty. Po założeniu rolki wykonaj kalibrację czujnika, inaczej drukarka zgubi początek etykiety.' },
+      { name: 'Wgraj profil nośnika', text: 'Do papieru matowego, błyszczącego i folii producent podaje osobne profile. Zły profil to rozmazany tusz albo blade kolory, więc ustaw go raz na starcie, zanim zaczniesz strojić grafikę.' },
+      { name: 'Wydrukuj próbkę i sprawdź kolory', text: 'Pierwszy wydruk porównaj z projektem przy świetle dziennym. Różnice bierze się najczęściej z profilu nośnika albo z konwersji RGB na CMYK w programie, nie z drukarki.' },
       { name: 'Wybierz podłączenie i program', text: 'USB do jednego stanowiska, Ethernet do pracy sieciowej. Projekt zrobisz w NiceLabel, BarTender albo Codesoft, a szablony ZPL II z drukarek Zebra zadziałają dzięki emulacji.' },
     ],
   },

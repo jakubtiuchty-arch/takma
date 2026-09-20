@@ -9,7 +9,13 @@ import type { StockInfo } from '@/lib/ingram'
  * do metadanych, JSON-LD (ProductGroup z Offer per PN, brutto) i HTML. Pozostałe produkty
  * nadal używają statycznych priceFrom z products.ts.
  */
-export const LIVE_OFFER_SLUGS = new Set(['zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350'])
+export const LIVE_OFFER_SLUGS = new Set([
+  'zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
+  // Kolorowe drukarki Epson: cena i stan prosto od dystrybutora, tak jak przy Zebrach.
+  // Bez tego kwota doklejała się dopiero w przeglądarce, a pierwszy HTML miał „? netto”.
+  'epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e',
+  'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e',
+])
 
 /** Jeden odczyt na render: metadata, JSON-LD i HTML otrzymują ten sam zestaw ofert. */
 export const getProductStock = cache(async (slug: string): Promise<StockInfo[] | undefined> => {

@@ -237,7 +237,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const howToJsonLd = content?.howToSteps?.length ? {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}`,
+    name: content.sectionHeadings?.howToSteps ?? `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}`,
     description: `Krok po kroku: wybór, konfiguracja i wdrożenie ${odmienNazwe(subcategory.name)} w firmie.`,
     step: content.howToSteps.map((step, i) => ({
       '@type': 'HowToStep',
@@ -516,7 +516,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 {content.comparisons.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównanie</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.comparisons ?? 'Porównanie'}</h2>
                     <div className="space-y-4">
                       {content.comparisons.map((comp, i) => (
                         <div key={i} className="rounded-xl border border-gray-200 p-4">
@@ -530,7 +530,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 {content.howToSteps?.length > 0 && (
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {odmienNazwe(subcategory.name)}?</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.howToSteps ?? `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}?`}</h2>
                     <ol className="space-y-4">
                       {content.howToSteps.map((step, i) => (
                         <li key={i} className="flex gap-4">
@@ -768,7 +768,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                   {content.comparisons.length > 0 && (
                     <section>
-                      <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównanie</h2>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.comparisons ?? 'Porównanie'}</h2>
                       <div className="space-y-4">
                         {content.comparisons.map((comp, i) => (
                           <div key={i} className="rounded-xl border border-gray-200 p-4">
@@ -782,7 +782,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                   {content.howToSteps?.length > 0 && (
                     <section>
-                      <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać i wdrożyć {odmienNazwe(subcategory.name)}?</h2>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.howToSteps ?? `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}?`}</h2>
                       <ol className="space-y-4">
                         {content.howToSteps.map((step, i) => (
                           <li key={i} className="flex gap-4">
