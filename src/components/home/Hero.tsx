@@ -20,6 +20,8 @@ interface ProductSlide {
   /** Etykieta przycisku — domyślnie „Zobacz więcej" */
   ctaLabel?: string
   imageClassName?: string
+  /** Opis obrazu dla czytników ekranu — domyślnie `name`, ale nagłówek slajdu rzadko opisuje zdjęcie */
+  imageAlt?: string
   /** 'lifestyle' = gradient od prawej, tekst po prawej; 'packshot' = gradient od lewej, tekst po lewej */
   imageType?: 'lifestyle' | 'packshot'
   /** Baner — bez gradientów/overlay'ów, tło dopasowane do koloru obrazu */
@@ -61,6 +63,19 @@ const slides: HeroSlide[] = [
     ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
     : []),
   { type: 'materials' },
+  {
+    type: 'product',
+    image: '/images/hero-colorworks-c8000e.webp',
+    name: 'Kolorowe etykiety prosto z drukarki',
+    slug: 'epson-colorworks-c8000e',
+    href: '/kolorowe-drukarki-etykiet',
+    ctaLabel: 'Zobacz kolorowe drukarki',
+    imageAlt: 'Epson ColorWorks C8000e drukuje kolorową etykietę, z której wystrzeliwuje wybuch tuszu w kolorach CMYK',
+    tagline: 'Koniec z zamawianiem zadrukowanych rolek w drukarni. Logo, zdjęcie produktu i piktogramy GHS drukujesz u siebie — sześć modeli Epson ColorWorks, do 300 mm/s.',
+    imageType: 'packshot',
+    noOverlay: true,
+    bgColor: '#000000',
+  },
   {
     type: 'product',
     image: '/images/zebra-tc501-baner-v2.webp',
@@ -236,7 +251,7 @@ export default function Hero() {
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
               src={slide.image}
-              alt={slide.name}
+              alt={slide.imageAlt ?? slide.name}
               className="absolute left-0 top-0 h-full w-auto object-contain object-left"
               style={{
                 maskImage: 'linear-gradient(to left, transparent 0%, black 20%)',
@@ -264,7 +279,7 @@ export default function Hero() {
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
               src={slide.image}
-              alt={slide.name}
+              alt={slide.imageAlt ?? slide.name}
               className="absolute right-0 top-0 h-full w-auto max-w-[85%] object-contain object-right"
               style={{
                 maskImage: 'linear-gradient(to right, transparent 0%, black 25%)',
@@ -286,7 +301,7 @@ export default function Hero() {
           ) : (
             <Image
               src={slide.image}
-              alt={slide.name}
+              alt={slide.imageAlt ?? slide.name}
               fill
               className={clsx(
                 !isLifestyle ? 'brightness-[1.3] contrast-[1.05]' : '',
