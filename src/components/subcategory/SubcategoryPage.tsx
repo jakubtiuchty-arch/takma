@@ -97,7 +97,7 @@ const serviceBanners: Record<string, { brandName: string; href: string; image: s
   'kolorowe-drukarki-etykiet': {
     brandName: 'Epson ColorWorks',
     href: '/serwis-kolorowych-drukarek-epson',
-    image: '/images/serwis-banner/epson-colorworks-banner.webp',
+    image: '/images/serwis-banner/epson-colorworks-banner-v2.webp',
     eyebrow: 'Serwis Epson ColorWorks',
     lead: 'Zatkane dysze po przestoju, białe pasy na wydruku, pełny pojemnik konserwacyjny, gilotyna i odklejak. Diagnostyka w 48 godzin, odbiór kurierem z całej Polski.',
     cta: 'Zobacz serwis ColorWorks',
