@@ -65,7 +65,7 @@ const slides: HeroSlide[] = [
   { type: 'materials' },
   {
     type: 'product',
-    image: '/images/hero-colorworks-c8000e.webp',
+    image: '/images/hero-colorworks-c8000e-v2.webp',
     name: 'Kolorowe etykiety prosto z drukarki',
     slug: 'epson-colorworks-c8000e',
     href: '/kolorowe-drukarki-etykiet',
