@@ -66524,6 +66524,13 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       'Epson ColorWorks D3800e z otwartą pokrywą i rolką etykiet',
       'Epson ColorWorks D3800e z wysuniętą tacką na wydruki',
     ],
+    videos: [
+      { url: 'https://www.youtube.com/watch?v=PUiVduby_DU', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
+      { url: 'https://www.youtube.com/watch?v=mk0AFewkab8', title: 'Zakładanie rolki etykiet · Epson, EN' },
+      { url: 'https://www.youtube.com/watch?v=AS8F98Ts8x0', title: 'Zakładanie papieru składanego · Epson, EN' },
+      { url: 'https://www.youtube.com/watch?v=LzS_uN5_hQo', title: 'Instalacja sterownika w Windows · Epson, EN' },
+      { url: 'https://www.youtube.com/watch?v=QoJgLdKGCzM', title: 'Instalacja sterownika w macOS · Epson, EN' },
+    ],
     tags: ['retail', 'produkcja', 'magazyn'],
     availability: 'available',
     isNew: true,

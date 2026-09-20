@@ -43,6 +43,7 @@ function inline(text: string) {
 function Block({ block }: { block: ManualBlock }) {
   if (block.type === 'p') return <Text style={s.p}>{inline(block.text)}</Text>
   if (block.type === 'video') return <Text style={s.p}>Film: {block.caption} (do obejrzenia w wersji online instrukcji na takma.com.pl)</Text>
+  if (block.type === 'youtube') return <Text style={s.p}>Film: {block.caption} — youtu.be/{block.id}</Text>
   return (
     <View style={{ marginBottom: 5 }}>
       {block.items.map((it, i) => (

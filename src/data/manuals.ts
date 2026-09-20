@@ -192,6 +192,8 @@ export type ManualBlock =
   | { type: 'list'; ordered?: boolean; items: string[] }
   /** Własny film MP4 (np. instruktaż z polskim lektorem) z plakatem i podpisem; w PDF zostaje sam podpis. */
   | { type: 'video'; src: string; poster?: string; caption: string; /** napisy WebVTT (pl) */ captions?: string }
+  /** Film z YouTube (np. oficjalny instruktaż producenta); w PDF zostaje podpis z adresem. */
+  | { type: 'youtube'; id: string; caption: string }
 
 export interface PolishManualSection {
   title: string

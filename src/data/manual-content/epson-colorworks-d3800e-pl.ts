@@ -25,6 +25,20 @@ export const epsonColorworksD3800ePl: PolishManual = {
       ],
     },
     {
+      title: 'Pierwsze uruchomienie',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rozpakowanie, usunięcie zabezpieczeń transportowych, podłączenie zasilacza i pierwsze ładowanie atramentu. Przy pierwszym włączeniu drukarka napełnia głowicę tuszem z wkładów oznaczonych **SETUP** — to trwa dłużej niż zwykły start i nie należy wtedy wyłączać zasilania.',
+        },
+        {
+          type: 'youtube',
+          id: 'PUiVduby_DU',
+          caption: 'Rozpakowanie i pierwsze uruchomienie CW-D3800 (film Epsona, po angielsku)',
+        },
+      ],
+    },
+    {
       title: 'Jakiego papieru nie wolno zakładać',
       blocks: [
         {
@@ -65,6 +79,29 @@ export const epsonColorworksD3800ePl: PolishManual = {
             'Dioda **wstrzymania** — świeci albo miga, gdy druk jest zatrzymany.',
             'Przyciski: zasilanie, ekran główny, powrót, **cięcie**, strzałki i **OK** do poruszania się po menu.',
           ],
+        },
+      ],
+    },
+    {
+      title: 'Zakładanie papieru',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rolkę zakłada się od przodu: dźwignia zwalniania otwiera pokrywę, prowadnice rolki ustawia się na szerokość papieru i blokuje dźwignią, a początek wstęgi wsuwa do oporu, aż drukarka sama pobierze papier. Po założeniu ustaw jeszcze **prowadnice wysuwania** z przodu — bez tego etykieta po odcięciu przesuwa się na bok.',
+        },
+        {
+          type: 'youtube',
+          id: 'mk0AFewkab8',
+          caption: 'Zakładanie rolki etykiet (film Epsona, po angielsku)',
+        },
+        {
+          type: 'p',
+          text: 'Papier składany podaje się od tyłu: tylna pokrywa, prowadnice składanki na szerokość stosu i prowadnica podawania umieszczona wewnątrz przedniej pokrywy. Stos musi leżeć prosto za drukarką, a perforacja być wyprostowana — załamanie na zgięciu potrafi zostać odczytane jako krawędź etykiety.',
+        },
+        {
+          type: 'youtube',
+          id: 'AS8F98Ts8x0',
+          caption: 'Zakładanie papieru składanego (film Epsona, po angielsku)',
         },
       ],
     },
@@ -227,6 +264,16 @@ export const epsonColorworksD3800ePl: PolishManual = {
         {
           type: 'p',
           text: 'Pułapka przy wdrożeniu na kilku stanowiskach: ustawienia zmienione w **Preferencjach drukowania** albo we właściwościach na karcie Ogólne dotyczą tylko zalogowanego użytkownika. Żeby objęły wszystkich, trzeba je zmienić w **Domyślnych ustawieniach drukowania** na karcie Zaawansowane.',
+        },
+        {
+          type: 'youtube',
+          id: 'LzS_uN5_hQo',
+          caption: 'Instalacja i konfiguracja sterownika w Windows (film Epsona, po angielsku)',
+        },
+        {
+          type: 'youtube',
+          id: 'QoJgLdKGCzM',
+          caption: 'Instalacja sterownika w macOS (film Epsona, po angielsku)',
         },
       ],
     },
