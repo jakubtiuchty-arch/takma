@@ -104,6 +104,14 @@ export const manufacturers: Manufacturer[] = [
     seoTitle: 'Drukarki kart Magicard by Brady | Identyfikatory PVC',
     seoDescription: 'Drukarki kart Magicard by Brady do personalizacji identyfikatorów i kart PVC — druk Direct-to-Card i retransferowy, zabezpieczenia HoloKote oraz kodowanie kart.'
   },
+  {
+    id: 'labelmate',
+    slug: 'labelmate',
+    name: 'Labelmate',
+    logo: '/images/partners/logo_labelmate.png',
+    seoTitle: 'Nawijaki i odwijaki etykiet Labelmate | MC-11, CAT-3, UNI-CAT',
+    seoDescription: 'Nawijaki i odwijaki etykiet Labelmate — MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson ColorWorks. Rolki do 300 mm, etykiety do 255 mm, dwa lata gwarancji.'
+  },
 ]
 
 /** Producent po id (np. 'zebra'). */
