@@ -114,10 +114,6 @@ const navigation: NavItem[] = [
     ],
   },
   {
-    name: 'POS',
-    href: '/terminale-pos',
-  },
-  {
     name: 'Tablety',
     href: '/tablety-przemyslowe',
     children: [

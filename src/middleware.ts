@@ -344,7 +344,7 @@ export async function middleware(request: NextRequest) {
     // Slugi zebra-* / datalogic-* to produkty lub akcesoria na nowej stronie
     // (stare WordPress URLe Zebra obsługiwane są redirectami w next.config.mjs PRZED middleware)
     if (!existingSlugs.has(slug)) {
-      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-') || slug.startsWith('sunmi-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-')
 
       if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)

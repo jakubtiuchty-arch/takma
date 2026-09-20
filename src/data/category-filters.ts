@@ -1226,47 +1226,6 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
-  'terminale-pos': [
-    {
-      specKey: 'typ',
-      label: 'Typ urządzenia',
-      description: 'Gdzie urządzenie pracuje.\n• Ręczny — obsługa przy stoliku, w bramce, przy dostawie\n• Stacjonarny — stanowisko na ladzie\n• Przenośny i stacjonarny — pracuje w ręku, po odstawieniu do stacji działa jak kasa\n• Tablet — zamówienia i płatność bez osobnego terminala',
-      derived: [
-        { value: 'Ręczny', pattern: 'Ręczny terminal', specs: ['Typ'] },
-        { value: 'Stacjonarny', pattern: 'Stacjonarny terminal|Kompaktowy terminal', specs: ['Typ'] },
-        { value: 'Przenośny i stacjonarny', pattern: 'przenośny i stacjonarny', specs: ['Typ'] },
-        { value: 'Tablet', pattern: 'Tablet dla obsługi', specs: ['Typ'] },
-      ],
-    },
-    {
-      specKey: 'drukarka',
-      label: 'Drukarka paragonów',
-      description: 'Czy urządzenie drukuje samo.\n• 58 mm — standardowy paragon, najmniejsza rolka\n• 80 mm — szerszy wydruk i rzadsza wymiana papieru\n• Bez drukarki — paragon wychodzi z osobnego urządzenia',
-      derived: [
-        { value: 'Wbudowana 58 mm', pattern: '58 ?mm', specs: ['Drukarka'] },
-        { value: 'Wbudowana 80 mm', pattern: '80 ?mm(?!/s)', specs: ['Drukarka'] },
-        { value: 'Bez drukarki', notSpecs: ['Drukarka'] },
-      ],
-    },
-    {
-      specKey: 'skaner',
-      label: 'Skaner kodów',
-      description: 'Osobny silnik skanujący, a nie odczyt aparatem.\n• W standardzie — urządzenie skanuje od razu po rozpakowaniu\n• Na zamówienie — wersja ze skanerem sprowadzana osobno',
-      derived: [
-        { value: 'Skaner 2D w standardzie', pattern: 'ilnik 2D(?!.*(?:opcja|na zamówienie))', specs: ['Skaner'] },
-        { value: 'Skaner 2D na zamówienie', pattern: 'opcja|na zamówienie', specs: ['Skaner'] },
-      ],
-    },
-    {
-      specKey: 'cena',
-      label: 'Cena netto',
-      derived: [
-        { value: 'do 1 500 zł', priceMax: 1500 },
-        { value: '1 500 – 2 000 zł', priceMin: 1500, priceMax: 2000 },
-        { value: 'powyżej 2 000 zł', priceMin: 2000 },
-      ],
-    },
-  ],
   'tasmy-do-drukarek-kart': [
     {
       specKey: 'producent',

@@ -105,14 +105,6 @@ export const manufacturers: Manufacturer[] = [
     seoDescription: 'Drukarki kart Magicard by Brady do personalizacji identyfikatorów i kart PVC — druk Direct-to-Card i retransferowy, zabezpieczenia HoloKote oraz kodowanie kart.'
   },
   {
-    id: 'sunmi',
-    slug: 'sunmi',
-    name: 'Sunmi',
-    logo: '/images/partners/logo_sunmi.png',
-    seoTitle: 'Sunmi — terminale POS i kolektory danych z Androidem | TAKMA',
-    seoDescription: 'Urządzenia Sunmi: terminale POS z wbudowaną drukarką, stacjonarne stanowiska kasowe i kolektory danych L3 oraz L2s Pro. Android z GMS, trzy lata gwarancji, ceny netto B2B.'
-  },
-  {
     id: 'labelmate',
     slug: 'labelmate',
     name: 'Labelmate',
