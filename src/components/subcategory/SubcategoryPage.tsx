@@ -48,8 +48,8 @@ function RichText({ text, className }: { text: string; className?: string }) {
  */
 const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
   'kolorowe-drukarki-etykiet': {
-    src: '/images/kolorowe-drukarki-etykiet-hero.webp',
-    alt: 'Wstęga etykiet: po lewej czarno-biały wydruk termotransferowy z kodem kreskowym, w środku wybuch pigmentu CMYK, po prawej gotowe kolorowe etykiety produktowe',
+    src: '/images/kolorowe-drukarki-etykiet-hero-v2.webp',
+    alt: 'Wstęga etykiet z tym samym projektem: po lewej wydruk czarno-biały, w środku wybuch pigmentu CMYK, po prawej ta sama etykieta w pełnym kolorze',
     lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e.',
   },
 }
@@ -227,9 +227,11 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
             className="object-cover object-center"
           />
           {/* Przesłona pod tekst: na wąskim ekranie tekst leży na całym obrazie, więc przyciemniamy
-              go w całości; od sm wystarczy gradient w poziomie, który po prawej odsłania kolor */}
+              go w całości; od sm gradient kończy się na 55 % szerokości, żeby nie zabierał
+              nasycenia wybuchowi koloru, który zaczyna się mniej więcej w połowie kadru.
+              Pozycje stopów tylko z domyślnej skali Tailwinda (co 5 %), inaczej klasa nie powstaje. */}
           <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 from-20% via-slate-950/70 via-35% to-transparent to-55%" />
           <div className="relative container-main py-10 lg:py-16">
             <nav className="flex items-center gap-2 text-sm text-slate-300 mb-6 overflow-x-auto">
               <Link href="/" className="hover:text-white transition-colors whitespace-nowrap">Strona główna</Link>
