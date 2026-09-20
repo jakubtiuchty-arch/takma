@@ -226,9 +226,10 @@ export async function GET(request: NextRequest) {
           const jarltechPLN = (jtFound && jt!.unitPrice)
             ? Math.round((jt!.unitPrice * eurRate / jarltechPackagingUnit) * 100) / 100
             : undefined
-          // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama (patrz lib/price-selection)
+          // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama, a gdy
+          // BlueStar jest jedynym źródłem — cena katalogowa (patrz lib/price-selection)
           const bluestarPLN = (bsFound && bs!.unitPrice)
-            ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN, bsPackagingUnit).price
+            ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN ?? getCatalogNetPrice(pn), bsPackagingUnit).price
             : undefined
 
           // Bezpiecznik dwustronny — patrz lib/price-selection: odrzuca zarówno źródła

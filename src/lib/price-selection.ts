@@ -43,7 +43,10 @@ const OUTLIER_FACTOR = 3
  * zamówienia (nośniki Epson ColorWorks: 7,35 EUR/rolkę, multipleQty 18 → po podzieleniu
  * 1,78 zł za rolkę wartą 32 zł; 19.09.2026). Gdy mamy cenę za sztukę z innego źródła
  * (Jarltech liczy zawsze per sztuka, Ingram też), bierzemy tę interpretację, która leży
- * bliżej niej. Bez odniesienia zostaje dotychczasowe dzielenie.
+ * bliżej niej. Gdy BlueStar jest jedynym dystrybutorem z ceną, odniesieniem jest cena
+ * katalogowa (getCatalogNetPrice) — to cena sprzedaży, więc nie da się jej użyć wprost,
+ * ale rząd wielkości wystarczy, żeby odróżnić pakiet od sztuki. Bez żadnego odniesienia
+ * zostaje dotychczasowe dzielenie.
  */
 export function resolveBlueStarUnitPrice(
   rawPLN: number,

@@ -433,9 +433,10 @@ export async function lookupUnifiedStock(partNumbers: string[], showDebug = fals
         const rawJarltechPLN = jl!.unitPrice * eurRate
         jarltechPLN = Math.round((rawJarltechPLN / jarltechPackagingUnit) * 100) / 100
       }
-      // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama (patrz lib/price-selection)
+      // BlueStar: pakiet czy sztuka rozstrzyga cena za sztukę z Jarltecha/Ingrama, a gdy
+      // BlueStar jest jedynym źródłem — cena katalogowa (patrz lib/price-selection)
       const bluestarPLN = (bsFound && bs!.unitPrice)
-        ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN, bsPackagingUnit).price
+        ? resolveBlueStarUnitPrice(bs!.unitPrice * eurRate, bs!.multipleQty, jarltechPLN ?? ingramPLN ?? getCatalogNetPrice(pn), bsPackagingUnit).price
         : undefined
 
       // Wybór ceny zakupu z bezpiecznikiem dwustronnym — patrz lib/price-selection.
