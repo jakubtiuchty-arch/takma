@@ -65557,10 +65557,10 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
-    images: ['/images/products/epson-colorworks-c3500-front.png', '/images/products/epson-colorworks-c3500-bok.png'],
+    images: ['/images/products/epson-colorworks-c3500-bok.png', '/images/products/epson-colorworks-c3500-front.png'],
     imageDescriptions: [
-      'Epson ColorWorks C3500 od przodu, w trakcie druku kolorowej etykiety produktowej',
-      'Epson ColorWorks C3500 z boku, widoczny panel sterowania z wyświetlaczem LCD i wyjście etykiety',
+      'Epson ColorWorks C3500 w trakcie druku kolorowej etykiety, widoczny panel sterowania z wyświetlaczem LCD',
+      'Epson ColorWorks C3500 od przodu, z wysuniętą kolorową etykietą produktową',
     ],
     tags: ['retail', 'produkcja', 'magazyn', 'healthcare'],
     availability: 'available',
