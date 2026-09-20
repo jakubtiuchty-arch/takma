@@ -1147,7 +1147,7 @@ export const manuals: Manual[] = [
     brand: 'Epson',
     category: 'drukarki-etykiet',
     description:
-      'Kolorowa drukarka etykiet z tuszem barwnikowym, gilotyną i Ethernetem 1000BASE-T. Instrukcja po polsku: dopuszczalne nośniki, zakładanie rolki i składanki, przysłony na płycie dociskowej, wymiana wkładów SJIC57P i zbiornika SJMB4000, czyszczenie głowicy, komunikaty i typowe problemy z wydrukiem.',
+      'Kolorowa drukarka etykiet z tuszem barwnikowym, gilotyną i Ethernetem 1000BASE-T. Instrukcja po polsku: dopuszczalne nośniki, zakładanie rolki i składanki, przysłony na płycie dociskowej, wymiana wkładów SJIC57P i zbiornika SJMB4000, automatyczna kontrola dysz i czyszczenie okresowe, kalibracja czujników, ustawienia sterownika, sieć i integracja z SAP, komunikaty oraz typowe problemy z wydrukiem.',
     productSlug: 'epson-colorworks-d3800e',
     documents: [
       { type: 'user-guide', title: 'Przewodnik użytkownika CW-D3800 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-d3800e-ug-pl.pdf', size: '9,4 MB' },
@@ -1162,6 +1162,8 @@ export const manuals: Manual[] = [
       'colorworks d3800e wymiana tuszu',
       'd3800e zbiornik na zużyty atrament',
       'sjic57p wymiana wkładu',
+      'colorworks d3800e kalibracja czujnika',
+      'epson colorworks sap druk etykiet',
     ],
     updatedAt: '2026-09-20',
   },

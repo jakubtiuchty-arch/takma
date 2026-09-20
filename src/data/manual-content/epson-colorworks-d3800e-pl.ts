@@ -3,12 +3,13 @@ import type { PolishManual } from '@/data/manuals'
 // Skrócona instrukcja po polsku na podstawie oficjalnego „CW-D3800 Series Przewodnik użytkownika”
 // (Epson, M10002100 PL, 90 stron) oraz „CW-D3800 Series Technical Reference Guide” (EN).
 // Zakres: nośniki, budowa, zakładanie papieru, przysłony, tusze i zbiornik na zużyty atrament,
-// czyszczenie, komunikaty z panelu, problemy z jakością, zacięcia i dane techniczne.
+// czyszczenie i automatyczna kontrola dysz, kalibracja czujników, ustawienia sterownika, sieć,
+// narzędzia i SAP, komunikaty z panelu, problemy z jakością, zacięcia i dane techniczne.
 
 export const epsonColorworksD3800ePl: PolishManual = {
   updatedAt: '2026-09-20',
   intro:
-    'Najważniejsze z obsługi Epson ColorWorks D3800e po polsku: jaki papier wolno założyć, a jakiego nie, zakładanie rolki i składanki, ustawienie przysłon na płycie dociskowej, wymiana wkładów SJIC57P i zbiornika na zużyty atrament SJMB4000, czyszczenie głowicy, komunikaty z panelu i typowe problemy z jakością wydruku.',
+    'Najważniejsze z obsługi Epson ColorWorks D3800e po polsku: jaki papier wolno założyć, a jakiego nie, zakładanie rolki i składanki, ustawienie przysłon na płycie dociskowej, wymiana wkładów SJIC57P i zbiornika na zużyty atrament SJMB4000, czyszczenie głowicy, automatyczna kontrola dysz, kalibracja czujników, ustawienia sterownika, integracja z siecią i SAP, komunikaty z panelu oraz typowe problemy z jakością wydruku.',
   sections: [
     {
       title: 'Czym D3800e różni się od innych ColorWorks',
@@ -139,6 +140,114 @@ export const epsonColorworksD3800ePl: PolishManual = {
         {
           type: 'p',
           text: 'Poza głowicą czyści się też **płytę dociskową**, **nóż gilotyny** i obudowę. Przy nożu i płycie pomaga ta sama zasada co przy dyszach: lepiej czyścić regularnie niż reagować dopiero na plamy na etykiecie.',
+        },
+      ],
+    },
+    {
+      title: 'Automatyczna kontrola dysz',
+      blocks: [
+        {
+          type: 'p',
+          text: 'D3800e ma funkcję, o której łatwo nie wiedzieć, a która oszczędza sporo zmarnowanych etykiet: **sama sprawdza dysze**. Test uruchamia się przy włączeniu drukarki, po zamknięciu przedniej pokrywy po zacięciu papieru, tuż przed zaplanowanym czyszczeniem oraz co zadaną liczbę wydruków.',
+        },
+        {
+          type: 'p',
+          text: 'Gdy wynik przekroczy ustawiony próg, drukarka sama czyści głowicę i powtarza test. Jeśli zatkania nie da się usunąć, **drukuje zastępczo sąsiednimi dyszami**, żeby nie zostawić białej linii w kodzie kreskowym. W menu można włączyć i wyłączyć tę kontrolę, ustawić częstotliwość, próg i to, czy po teście ma iść czyszczenie.',
+        },
+        {
+          type: 'p',
+          text: 'Producent zaznacza, że mechanizm nie wykrywa wszystkiego — pojedyncze brakujące krople i skrzywione strugi tuszu potrafią przejść. Przy wydrukach, od których dużo zależy, zaleca czcionki o wysokości **co najmniej 3 punktów** i pozostawienie fabrycznych ustawień kontroli dysz.',
+        },
+      ],
+    },
+    {
+      title: 'Czyszczenie okresowe o zadanej godzinie',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Drukarkę można ustawić tak, żeby czyściła głowicę o konkretnej porze — to najprostszy sposób na problem zaschniętych dysz w firmie, która drukuje nieregularnie. Czyszczenie trwa **od 4 do 17 minut**, więc nie ustawiaj go w środku zmiany.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Drukarka pracuje całą dobę — ustaw czyszczenie na porę bez druku, na przykład w nocy.',
+            'Drukarka jest codziennie wyłączana — ustaw godzinę, o której urządzenie jest wyłączone; czyszczenie ruszy przy następnym włączeniu.',
+            'Jest stała przerwa obiadowa — ustaw ją na tę godzinę.',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Czyszczenie nie ruszy, gdy drukarka jest wyłączona, gdy tuszu jest za mało albo gdy w zbiorniku na zużyty atrament zostało za mało miejsca. W każdym z tych wypadków odbędzie się przy kolejnym włączeniu. Godzina ustawiona bliżej niż 10 minut od bieżącej zadziała dopiero następnego dnia.',
+        },
+      ],
+    },
+    {
+      title: 'Kiedy drukarka nie widzi etykiet',
+      blocks: [
+        {
+          type: 'p',
+          text: 'W urządzeniu są dwa czujniki: jeden szuka krawędzi etykiety, drugi czarnego znacznika. Nietypowy nośnik potrafi być dla nich nieczytelny — wtedy zamiast zmieniać papier warto najpierw przestawić czułość: **[Menu] – [Maintenance] – [Calibration]**.',
+        },
+        {
+          type: 'list',
+          ordered: true,
+          items: [
+            '**Simple Media Detect** — zmienia sam próg wykrywania, trwa krótko. Od tego zacznij.',
+            '**Media Detect** — reguluje czułość obu czujników i próg. Sięgaj po nią dopiero wtedy, gdy prosta kalibracja nie pomogła.',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Przy składance wyprostuj perforację przed kalibracją — załamanie na zgięciu potrafi udawać krawędź etykiety.',
+        },
+      ],
+    },
+    {
+      title: 'Ustawienia sterownika, które realnie zmieniają wydruk',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Pod przyciskiem **Advanced** w sterowniku Windows kryje się kilka rzeczy, po które warto sięgnąć, zanim uzna się nośnik albo drukarkę za winnego:',
+        },
+        {
+          type: 'list',
+          items: [
+            '**Ink Profile** — gęstość tuszu w górę albo w dół. Pierwszy krok przy zbyt bladym lub zalanym wydruku.',
+            '**Ratio of Black to Composite** — ile czerni ma pochodzić z czarnego tuszu, a ile ze złożenia kolorów. Wpływa na wygląd czarnych pól i na zużycie wkładów.',
+            '**Bar Width Adjustment** — korekta grubości kresek przy wbudowanych fontach kodów kreskowych, gdy skaner ma problem z odczytem.',
+            '**Media Hold Pressure** — siła, z jaką płyta przyciąga papier. Do cienkich i sztywnych nośników ustawia się ją inaczej.',
+            '**Drying time per head pass** — dodatkowy czas na wyschnięcie tuszu; ratuje przy smużeniu na papierze błyszczącym.',
+            '**Bidirectional Printing** — druk w obie strony jest szybszy, jednokierunkowy dokładniejszy przy drobnych detalach.',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Osobno ustawia się, **co drukarka robi z papierem po wydruku**: odciąć po ostatniej etykiecie, odciąć na wskazanej etykiecie, nie ciąć i zatrzymać w pozycji odklejania albo cięcia. Domyślnie drukarka nie tnie i zatrzymuje papier w pozycji cięcia.',
+        },
+        {
+          type: 'p',
+          text: 'Pułapka przy wdrożeniu na kilku stanowiskach: ustawienia zmienione w **Preferencjach drukowania** albo we właściwościach na karcie Ogólne dotyczą tylko zalogowanego użytkownika. Żeby objęły wszystkich, trzeba je zmienić w **Domyślnych ustawieniach drukowania** na karcie Zaawansowane.',
+        },
+      ],
+    },
+    {
+      title: 'Sieć, narzędzia i integracja z systemem',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Stan drukarki, ustawienia sieci i konserwację obsługuje **Web Config** — wystarczy przeglądarka i adres IP urządzenia. Flotą drukarek zarządza się przez **Epson Device Admin**, a druk z chmury obsługują **Epson Cloud Solution PORT** i **Loftware Cloud**. Sterowniki są na Windows, macOS i Linux.',
+        },
+        {
+          type: 'p',
+          text: 'Do sprawdzenia konfiguracji służy **arkusz stanu**: [Menu] – [General Settings] – [Network Settings] – [Network Status] – [Print Status Sheet]. Pokazuje wersję firmware, tryb druku i ustawienia wykrywania nośnika. Przy papierze ciągłym szerszym niż 101,6 mm arkusz zajmuje około 415 mm papieru, więc nie drukuj go na resztce rolki.',
+        },
+        {
+          type: 'p',
+          text: 'Ważne przy wdrożeniach **SAP**: D3800e obsługuje druk pośredni (Indirect) i wysokowolumenowy (High Volume), ale **nie obsługuje druku bezpośredniego (Direct)**, który jest standardową metodą w SAP. Jeśli integracja ma iść przez Direct printing, potrzebna jest [C6000 albo C6500](/kolorowe-drukarki-etykiet).',
+        },
+        {
+          type: 'p',
+          text: 'W produkcji przydaje się też **Lock Setting** — blokada panelu, która nie pozwala operatorowi zmienić ustawień nośnika czy jakości. Drukarka drukuje wtedy zawsze tak samo, niezależnie od tego, kto stoi przy niej na zmianie.',
         },
       ],
     },
