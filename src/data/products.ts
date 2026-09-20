@@ -67115,10 +67115,12 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     manufacturerId: 'epson',
     priceFrom: 11186.18,
     images: [
+      '/images/products/epson-colorworks-c6000-etykieta.png',
       '/images/products/epson-colorworks-c6000ae.png',
       '/images/products/epson-colorworks-c6000pe.png',
     ],
     imageDescriptions: [
+      'Epson ColorWorks C6000 z wydrukowaną kolorową etykietą na butelkę wina',
       'Epson ColorWorks C6000Ae — przemysłowa kolorowa drukarka etykiet z gilotyną',
       'Epson ColorWorks C6000Pe — wersja z odklejakiem etykiet i nawijakiem podkładu',
     ],
