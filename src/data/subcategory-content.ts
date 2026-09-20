@@ -46,8 +46,30 @@ export interface ModelRow {
   icon?: string
 }
 
+/** Wiersz zestawienia modeli — wartości w `cells` idą w kolejności `columns`. */
+export interface ComparisonTableRow {
+  model: string
+  href: string
+  /** Jedno zdanie „dla kogo", pokazywane pod nazwą modelu */
+  role?: string
+  cells: string[]
+}
+
+/** Tabela porównawcza modeli w kategorii. Szeroka, więc szablon przewija ją we własnym kontenerze. */
+export interface ComparisonTable {
+  heading: string
+  intro?: string
+  columns: string[]
+  rows: ComparisonTableRow[]
+  note?: string
+}
+
 export interface SubcategoryRichContent {
   updatedAt?: string
+  /** Tabela porównawcza modeli — renderowana pod definicją kategorii. */
+  comparisonTable?: ComparisonTable
+  /** Kalkulator kosztu etykiety pod tabelą; na razie jeden wariant. */
+  calculator?: 'koszt-etykiety'
   sectionHeadings?: {
     expertAuthority?: string
     technicalDeepDive?: string
@@ -3477,53 +3499,115 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   // KOLOROWE DRUKARKI ETYKIET (Epson ColorWorks) — 19.09.2026
   // ============================================
   'kolorowe-drukarki-etykiet': {
-    updatedAt: '2026-09-19',
+    updatedAt: '2026-09-20',
     definition: {
       heading: 'Co to jest kolorowa drukarka etykiet?',
-      content: 'Kolorowa drukarka etykiet drukuje na rolce etykiet w pełnym kolorze, tak jak biurowa drukarka atramentowa drukuje na kartce, tylko na papierze samoprzylepnym z powleczeniem pod tusz i z gilotyną, która odcina każdą etykietę. Zamiast taśmy barwiącej ma cztery wkłady z tuszem pigmentowym: czarnym, cyan, magenta i żółtym. Dzięki temu etykieta z logo w firmowych barwach, zdjęciem produktu albo czerwonym piktogramem GHS powstaje na miejscu w takim nakładzie, jaki jest potrzebny dzisiaj, bez zamawiania zadrukowanych rolek w drukarni i bez magazynu wersji. Epson ColorWorks C3500 to biurkowy model tej klasy: 720 × 360 dpi, do 103 mm/s, etykiety od 30 do 112 mm szerokości, USB i Ethernet.',
+      content: 'Kolorowa drukarka etykiet drukuje na rolce w pełnym kolorze, tak jak biurowa drukarka atramentowa na kartce, tylko na papierze samoprzylepnym z powleczeniem pod tusz i z gilotyną albo odklejakiem na wyjściu. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu: czarny, cyan, magentę i żółty. Cała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury. W ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
     },
+    comparisonTable: {
+      heading: 'Sześć modeli ColorWorks — czym się różnią',
+      intro: 'Wszystkie drukują czterema kolorami na tym samym typie powlekanego nośnika. Różnią się szerokością, tempem, pojemnością tuszu i tym, co robią z etykietą po wydruku.',
+      columns: ['Szerokość druku', 'Prędkość maks.', 'Rozdzielczość', 'Tusz', 'Rolka', 'Odbiór etykiety'],
+      rows: [
+        {
+          model: 'ColorWorks C3500',
+          href: '/produkt/epson-colorworks-c3500',
+          role: 'Wejście w kolor, małe i średnie nakłady',
+          cells: ['104 mm', '103 mm/s', '720 × 360 dpi', 'SJIC22P, 32 ml, pigment', '4 cale', 'Gilotyna'],
+        },
+        {
+          model: 'ColorWorks D3800e',
+          href: '/produkt/epson-colorworks-d3800e',
+          role: 'Etykiety błyszczące, gdzie liczy się głębia koloru',
+          cells: ['108 mm', '100 mm/s', '600 × 1200 dpi', 'SJIC57P, 40 ml, barwnikowy', '4 cale', 'Gilotyna'],
+        },
+        {
+          model: 'ColorWorks C4000e',
+          href: '/produkt/epson-colorworks-c4000e',
+          role: 'Biurko i pomieszczenie czyste, wersje bk i mk',
+          cells: ['108 mm', '100 mm/s', '1200 × 1200 dpi', 'SJIC42P, 50 ml, pigment', '4 cale', 'Gilotyna'],
+        },
+        {
+          model: 'ColorWorks C6000',
+          href: '/produkt/epson-colorworks-c6000',
+          role: 'Praca zmianowa, etykietowanie na linii',
+          cells: ['108 mm', '119 mm/s', '1200 × 1200 dpi', 'SJIC36P, 80 ml, pigment', '4, 6 i 8 cali', 'Gilotyna albo odklejak'],
+        },
+        {
+          model: 'ColorWorks C6500',
+          href: '/produkt/epson-colorworks-c6500',
+          role: 'Szerokie etykiety na beczki, kanistry i kartony',
+          cells: ['212 mm', '85 mm/s', '1200 × 1200 dpi', 'SJIC36P, 80 ml, pigment', '4 i 6 cali', 'Gilotyna albo odklejak'],
+        },
+        {
+          model: 'ColorWorks C8000e',
+          href: '/produkt/epson-colorworks-c8000e',
+          role: 'Produkcja ciągła, tempo drukarki jednokolorowej',
+          cells: ['108 mm', '300 mm/s', '600 × 1200 dpi', 'SJIC48P, 480 ml, pigment', '8 cali', 'Gilotyna'],
+        },
+      ],
+      note: 'Wersje bk i mk różnią się czarnym tuszem: Black ma drobniejsze cząstki pigmentu, które wnikają w pory podłoża błyszczącego, Matte Black większe, zostające bliżej powierzchni papieru matowego. Kolorowe wkłady są wspólne, czarnego nie da się zamienić, więc wersję wybiera się przy zakupie. Wersje Ae mają gilotynę, Pe odklejak z nawijakiem podkładu.',
+    },
+    calculator: 'koszt-etykiety',
     buyingGuide: {
       heading: 'Jak wybrać kolorową drukarkę etykiet?',
       items: [
-        'Co ma być na etykiecie. Jeśli to sam kod kreskowy i czarny tekst, tańsza w eksploatacji będzie drukarka termotransferowa. Kolorowa drukarka opłaca się, gdy etykieta ma logo, zdjęcie, kolorowe pola albo piktogramy ostrzegawcze i zmienia się często.',
-        'Nakład i zmienność. Przy kilkuset etykietach dziennie w kilkunastu wersjach kolorowa drukarka wygrywa z drukarnią, bo nie ma minimalnego nakładu ani czekania na dostawę. Przy jednej wersji w dziesiątkach tysięcy sztuk taniej wychodzi zadruk w drukarni.',
-        'Rodzaj tuszu. Tusz pigmentowy (jak w ColorWorks C3500) nie rozmazuje się od wody i nie blaknie, więc nadaje się na etykiety produktowe i chemiczne. Tusz barwnikowy daje żywsze kolory, ale jest wrażliwy na wilgoć.',
-        'Szerokość i format etykiet. C3500 obsługuje etykiety od 30 do 112 mm szerokości, ciągłe i wykrojone. Sprawdź, czy Twoje formaty mieszczą się w tym zakresie i czy dostawca ma rolki z powleczeniem pod tusz pigmentowy.',
-        'Podłączenie i program. USB wystarczy do jednego stanowiska, Ethernet gdy z drukarki korzysta kilka osób. Projekt etykiety robi się w NiceLabel (w zestawie) albo w BarTender; emulacja ZPL II pozwala użyć szablonów z drukarek Zebra.',
-        'Koszty stałe. Poza tuszem zużywa się pojemnik konserwacyjny i głowica pracuje najlepiej, gdy drukarka drukuje regularnie. Jeśli etykiety kolorowe są potrzebne raz na kwartał, zostań przy zamawianiu ich w drukarni.',
+        'Co jest na etykiecie. Jeśli to kod kreskowy i czarny tekst, taniej wypadnie drukarka termotransferowa. Kolor opłaca się wtedy, gdy zastępuje etykietę zamówioną w drukarni: logo w barwach firmy, zdjęcie produktu, czerwone piktogramy GHS albo kolorowe oznaczenie partii.',
+        'Nakład i liczba wersji. Kilkaset etykiet dziennie w kilkunastu wzorach to sytuacja, w której drukarka wygrywa z drukarnią — nie ma minimalnego nakładu ani czekania na dostawę. Jedna wersja w dziesiątkach tysięcy sztuk nadal jest tańsza z drukarni.',
+        'Szerokość etykiety. Pięć modeli drukuje pas do 108 mm, czyli typową etykietę produktową i wysyłkową. Beczki, kanistry i kartony zbiorcze wymagają C6500 z pasem 212 mm.',
+        'Rodzaj tuszu. Pigmentowy nie rozmazuje się od wody i nie blaknie na świetle, więc idzie na etykiety chłodnicze, chemiczne i produktowe. Barwnikowy (D3800e) daje głębszą czerń i żywsze kolory na papierze błyszczącym, ale jest wrażliwy na wilgoć.',
+        'Odbiór etykiety. Gilotyna odcina etykietę i jest w każdym modelu. Odklejak, dostępny tylko w wersjach Pe modeli C6000 i C6500, oddziela etykietę od podkładu i podaje gotową do naklejenia — to skraca ręczne etykietowanie na linii.',
+        'Pojemność tuszu a tempo. Wkłady mają od 32 ml w C3500 do 480 ml w workach C8000e. Przy druku zmianowym większy zbiornik to rzadsze przestoje i niższy koszt wydruku, przy kilkuset etykietach dziennie różnica jest bez znaczenia.',
+        'Integracja z systemem. Wszystkie modele rozumieją ESC/Label i emulują ZPL II, mają sterowniki Windows, Linux i macOS, wtyczki do BarTender i Codesoft oraz sterownik ABAP do SAP. Flotą zarządza się przez Epson Device Admin, a druk z chmury obsługuje Loftware Cloud.',
+        'Regularność pracy. Drukarka atramentowa czyści dysze, gdy stoi bez pracy, i zużywa przy tym tusz oraz miejsce w pojemniku konserwacyjnym. Jeśli kolorowe etykiety są potrzebne raz na kwartał, taniej zamówić je w drukarni.',
       ],
     },
-    expertAuthority: 'TAKMA dobiera drukarki etykiet od 25 lat. Kolorowe drukarki wdrażamy tam, gdzie klient dotąd zamawiał zadrukowane rolki i tracił czas na dostawy albo drukował logo na czarno. Przed zakupem liczymy koszt tuszu dla konkretnego projektu etykiety, dobieramy papier matowy lub błyszczący i sprawdzamy, czy formaty mieszczą się w drukarce.',
-    technicalDeepDive: 'Głowica piezoelektryczna ColorWorks C3500 ma 360 dysz na każdy z czterech kolorów. Rozdzielczość 720 × 360 dpi oznacza, że w poziomie drukarka stawia dwa razy więcej kropel niż w pionie, co daje ostre krawędzie liter i kodów przy prędkości do 103 mm/s. Tusz pigmentowy składa się z cząstek barwnika zawieszonych w wodzie: po wyschnięciu zostają na powierzchni papieru i nie rozpuszczają się ponownie, dlatego nadruk znosi wilgoć i tarcie.\n\nPapier do kolorowych drukarek ma powleczenie, które wchłania tusz i nie pozwala mu się rozlać. Zwykły papier termiczny do drukarek Zebra nie ma tej warstwy i tusz na nim się rozmazuje. Epson oferuje papier matowy Premium Matte (do etykiet informacyjnych, logistycznych i produktowych) i błyszczący High Gloss (do etykiet, które mają wyglądać jak z drukarni), a także papier do biletów bez kleju.',
+    expertAuthority: 'TAKMA dobiera drukarki etykiet od 25 lat. Kolorowe wdrażamy tam, gdzie klient dotąd zamawiał zadrukowane rolki i tracił czas na dostawy albo drukował logo na czarno. Przed zakupem liczymy zużycie tuszu dla konkretnego projektu etykiety, dobieramy papier matowy, błyszczący albo folię i sprawdzamy, czy formaty mieszczą się w wybranym modelu. Na życzenie drukujemy próbkę na maszynie, żeby porównanie z ofertą drukarni opierało się na liczbach, a nie na szacunkach.',
+    technicalDeepDive: `Wszystkie modele ColorWorks drukują czterema kolorami na powlekanym nośniku. Powleczenie wchłania tusz i nie pozwala mu się rozlać — zwykły papier termiczny do drukarek Zebra tej warstwy nie ma i nadruk się na nim rozmazuje. Tusz pigmentowy częściowo wnika w powłokę, a częściowo zostaje na powierzchni, przez co nadruk znosi wodę, tarcie i promieniowanie UV. Tusz barwnikowy wnika w powłokę w całości: daje głębszą czerń i szerszą paletę na papierze błyszczącym, ale gorzej znosi wilgoć.
+
+Czarny tusz występuje w dwóch odmianach. Black ma drobne cząstki pigmentu, które wchodzą w mikropory podłoża błyszczącego i dobrze się z nim wiążą. Matte Black ma cząstki większe, zostające bliżej powierzchni, przez co obraz na papierze matowym i teksturowanym jest żywszy. Wybór odmiany jest trwały — kolorowe wkłady są wspólne, czarnego nie da się zamienić.
+
+Ruchomy czujnik nośnika pozwala drukować na etykietach o dowolnym kształcie bez dodatkowego wykrawania, a modele C6000 i C6500 w wersji Pe mają wbudowany odklejak, który zdejmuje podkład i podaje etykietę gotową do naklejenia. W C8000e głowica jest stała i pokrywa całą szerokość druku naraz, stąd 300 mm/s; technologia Nozzle Verification Technology sprawdza dysze w trakcie pracy i zastępuje brakujące krople sąsiednimi, żeby zatkana dysza nie zostawiła jasnej linii na każdej etykiecie.
+
+Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywnością, w tym rozporządzenie 1935/2004, rozporządzenie 10/2011, dobrą praktykę produkcyjną 2023/2006, wytyczne EuPIA oraz FDA CFR21. Na podłożach polipropylenowych etykiety chemiczne spełniają normę BS5609, wymaganą przy transporcie morskim substancji niebezpiecznych. Badanie CEC z listopada 2023 wykazało, że praca C4000e w pomieszczeniu czystym nie wpływa na jego certyfikację.`,
     useCases: [
-      { title: 'Producent żywności z dziesiątkami smaków', description: 'Zakład produkujący dżemy i soki ma 40 wersji etykiety różniących się zdjęciem owocu i składem. Zamiast trzymać 40 rolek z drukarni, drukuje etykiety 102 × 76 mm na ColorWorks C3500 z High Gloss przed każdą partią.' },
-      { title: 'Etykiety GHS w hurtowni chemicznej', description: 'Hurtownia rozlewa chemię do mniejszych opakowań i musi oznaczyć każde piktogramami GHS w czerwonej ramce. C3500 drukuje etykietę z właściwymi piktogramami i tekstem dla każdej substancji na bieżąco.' },
-      { title: 'Bilety na wydarzenia', description: 'Organizator koncertów drukuje bilety z kolorową grafiką i kodem kreskowym na papierze Premium Matte Ticket 80 mm, a gilotyna odcina każdy bilet po wydruku.' },
-      { title: 'Laboratorium i apteka', description: 'Kolorowe pola na etykiecie próbki lub leku pozwalają odróżnić kategorie na pierwszy rzut oka, a tusz pigmentowy nie spływa po zamoczeniu.' },
+      { title: 'Producent żywności z dziesiątkami wersji', description: 'Zakład produkujący dżemy i soki ma 40 wersji etykiety różniących się zdjęciem owocu i składem. Zamiast trzymać 40 rolek z drukarni, drukuje etykiety 102 × 76 mm przed każdą partią. Zmiana składu albo alergenu to poprawka w pliku, a nie utylizacja zapasu.' },
+      { title: 'Etykiety GHS w hurtowni chemicznej', description: 'Hurtownia rozlewa chemię do mniejszych opakowań i musi oznaczyć każde piktogramami w czerwonej ramce. Drukarka składa etykietę z właściwymi piktogramami i tekstem dla każdej substancji na bieżąco, a na podłożu polipropylenowym nadruk spełnia BS5609.' },
+      { title: 'Etykiety na leki i próbki', description: 'Kolor na etykiecie medycznej wyróżnia nazwisko pacjenta i dawkowanie, co ogranicza pomyłki. Tusz pigmentowy nie spływa po zamoczeniu, a C4000e może stać w pomieszczeniu czystym.' },
+      { title: 'Etykiety półkowe w sklepie', description: 'Sklep drukuje etykiety na krawędzie półek z logo sieci, ceną i oznaczeniem promocji. Sezonowa zmiana oferty to nowy wydruk tego samego dnia, bez zamówienia w drukarni.' },
+      { title: 'Bilety i identyfikatory', description: 'Organizator drukuje bilety i plakietki gości z kolorową grafiką, zdjęciem i kodem kreskowym na papierze Premium Matte Ticket, a gilotyna odcina każdy po wydruku.' },
+      { title: 'Magazyn i logistyka', description: 'Kolorowe oznaczenie kierunku wysyłki albo statusu partii skraca czas szukania i zmniejsza liczbę pomyłek. Etykieta wysyłkowa z logo i kodem powstaje w jednym przebiegu, bez zadrukowanej wcześniej rolki.' },
     ],
     uniqueInsights: {
       heading: 'O czym warto wiedzieć przed zakupem',
       items: [
-        { title: 'Wkłady wymienia się pojedynczo', text: 'C3500 ma cztery osobne wkłady po około 32,5 ml. Gdy skończy się żółty, wymienia się tylko żółty. To istotne, bo etykiety z logo w jednym kolorze zużywają jeden wkład dużo szybciej niż pozostałe.' },
-        { title: 'Koszt etykiety zależy od pokrycia', text: 'Etykieta z logo i tekstem zużywa ułamek tuszu, jaki zużywa etykieta ze zdjęciem na całym tle. Dlatego liczymy koszt dla konkretnego projektu, a nie podajemy jednej stawki za etykietę.' },
-        { title: 'Drukarka lubi regularną pracę', text: 'Drukarka atramentowa czyści głowicę, gdy stoi bez pracy, a to zużywa tusz i miejsce w pojemniku konserwacyjnym. Jeśli etykiety kolorowe drukujesz raz na kilka miesięcy, zamów je w drukarni.' },
+        { title: 'Wersję czerni wybiera się raz', text: 'Black pod papier błyszczący, Matte Black pod matowy i teksturowany. Kolorowych wkładów to nie dotyczy, ale czarnego nie da się zamienić, więc decyzja zapada przy zamówieniu drukarki, nie później.' },
+        { title: 'Koszt etykiety zależy od pokrycia', text: 'Etykieta z logo i tekstem zużywa ułamek tuszu, jaki zużywa etykieta ze zdjęciem na całym tle. Dlatego liczymy koszt dla konkretnego projektu, a nie podajemy jednej stawki za sztukę.' },
+        { title: 'Wkłady wymienia się pojedynczo', text: 'Gdy skończy się żółty, wymienia się tylko żółty. Przy logo w jednym kolorze firmowym jeden wkład schodzi wyraźnie szybciej niż pozostałe — warto trzymać go na zapas.' },
+        { title: 'Drukarka lubi regularną pracę', text: 'Przy dłuższych przerwach urządzenie czyści dysze, co zużywa tusz i miejsce w pojemniku konserwacyjnym. Sprzęt ma sens tam, gdzie drukuje się co najmniej kilka razy w tygodniu.' },
+        { title: 'Gwarancję można wydłużyć do pięciu lat', text: 'Podstawowa gwarancja to 12 miesięcy, w C6000, C6500 i C8000e z serwisem u klienta. Pakiety CoverPlus przedłużają ją do trzech, czterech albo pięciu lat i obejmują także głowicę.' },
+        { title: 'Nośniki przechodzą testy Epsona', text: 'Program Tested by Epson for ColorWorks sprawdza podłoża pod kątem grubości, przenoszenia tuszu, jakości druku, czytelności kodu i odporności na wodę. Rolki spoza programu potrafią przyjmować tusz nierówno.' },
       ],
     },
     faq: [
-      { question: 'Czy kolorowa drukarka etykiet zastąpi drukarkę termotransferową?', answer: 'W etykietach z grafiką tak, w prostych etykietach logistycznych nie. Termotransferowa drukuje szybciej, a taśma i papier termiczny są tańsze niż tusz i papier powlekany. Wiele firm ma obie: termotransferową do etykiet wysyłkowych i kolorową do etykiet produktowych.' },
-      { question: 'Czy do ColorWorks C3500 pasują etykiety od innych dostawców?', answer: 'Pasują etykiety papierowe z powleczeniem pod tusz pigmentowy o szerokości 30–112 mm na rolce do 101,6 mm. Zwykły papier termiczny lub etykiety termotransferowe nie przyjmą tuszu. W ofercie mamy oryginalne rolki Epson, które są dobrane do tej głowicy.' },
-      { question: 'Czy drukarka drukuje białym kolorem?', answer: 'Nie. C3500 drukuje czterema kolorami CMYK na białym papierze; biel etykiety to kolor podłoża. Do etykiet na ciemnych opakowaniach stosuje się białe etykiety z nadrukiem tła.' },
-      { question: 'Ile trwa wydruk etykiety 102 × 51 mm?', answer: 'Przy prędkości do 103 mm/s etykieta o długości 51 mm schodzi w niecałą sekundę, plus czas odcięcia gilotyną. W trybie najwyższej jakości drukarka zwalnia.' },
+      { question: 'Czy kolorowa drukarka etykiet zastąpi termotransferową?', answer: 'W etykietach z grafiką tak, w prostych etykietach logistycznych nie. Termotransferowa drukuje szybciej, a taśma i papier są tańsze niż tusz i papier powlekany. Wiele firm ma obie: termotransferową do etykiet wysyłkowych i kolorową do produktowych. Kalkulator wyżej pokazuje, przy jakim nakładzie i jakiej cenie etykiety z drukarni kolor się zwraca.' },
+      { question: 'Czy tusz nadaje się do etykiet na żywność?', answer: 'Tak. Tusze ColorWorks przy właściwym użyciu spełniają rozporządzenie 1935/2004, rozporządzenie 10/2011 o tworzywach sztucznych, dobrą praktykę produkcyjną 2023/2006, wytyczne EuPIA oraz FDA CFR21. Dotyczy to wszystkich rodzin wkładów w naszej ofercie: SJIC22P, SJIC42P, SJIC36P i SJIC48P.' },
+      { question: 'Czy etykiety chemiczne spełnią normę BS5609?', answer: 'Tak, na właściwym podłożu. Norma dotyczy etykiet na substancje niebezpieczne przewożone drogą morską i wymaga odporności na wodę morską, ścieranie i światło. Spełniają ją wydruki tuszem pigmentowym na foliach polipropylenowych; papier matowy do tego nie wystarczy.' },
+      { question: 'Czy do drukarki pasują etykiety od innych dostawców?', answer: 'Pasują nośniki z powleczeniem pod tusz, o szerokości mieszczącej się w zakresie danego modelu i na rolce o dopuszczalnej średnicy. Zwykły papier termiczny ani etykiety termotransferowe tuszu nie przyjmą. Epson prowadzi program Tested by Epson for ColorWorks, w którym podłoża innych producentów przechodzą testy jakości druku i odporności.' },
+      { question: 'Czy drukarka drukuje białym kolorem?', answer: 'Nie. Drukarki ColorWorks drukują czterema kolorami CMYK na białym podłożu; biel etykiety to kolor materiału. Do etykiet na ciemnych opakowaniach stosuje się białe etykiety z zadrukowanym tłem.' },
+      { question: 'Ile trwa wydruk etykiety 102 × 51 mm?', answer: 'Przy 100 mm/s etykieta o długości 51 mm schodzi w pół sekundy, przy 300 mm/s w C8000e jeszcze szybciej, plus czas odcięcia gilotyną. W trybie najwyższej jakości, przy 1200 × 1200 dpi, drukarka zwalnia kilkukrotnie — to normalne, bo kładzie znacznie więcej kropli.' },
     ],
     comparisons: [
-      { title: 'Kolorowa drukarka etykiet vs zadrukowane rolki z drukarni', content: 'Drukarnia: niski koszt sztuki przy dużym nakładzie jednej wersji, ale minimalne nakłady, czas dostawy i magazyn wersji. Kolorowa drukarka: wyższy koszt sztuki, za to każda etykieta może być inna, drukowana od ręki, bez odpadu z nieaktualnych wersji. Punkt opłacalności zależy od liczby wersji i częstotliwości zmian.' },
-      { title: 'Kolorowa drukarka vs termotransferowa z kolorową taśmą', content: 'Termotransferowa z kolorową taśmą drukuje jednym kolorem naraz (np. czerwonym na białym), bez zdjęć i przejść tonalnych. Kolorowa drukarka atramentowa oddaje pełną paletę i fotografie, ale wymaga papieru powlekanego i pracuje wolniej.' },
+      { title: 'Kolorowa drukarka a zadrukowane rolki z drukarni', content: 'Drukarnia: niski koszt sztuki przy dużym nakładzie jednej wersji, ale minimalny nakład, czas dostawy i magazyn wersji, które trzeba wyrzucić po zmianie składu. Drukarka: wyższy koszt materiałów na sztukę, za to każda etykieta może być inna, powstaje od ręki i nie zostaje zapas. Punkt opłacalności zależy od liczby wersji i tego, jak często się zmieniają — policz go w kalkulatorze wyżej.' },
+      { title: 'Kolorowa drukarka a termotransferowa z kolorową taśmą', content: 'Termotransferowa z kolorową taśmą kładzie jeden kolor naraz, bez zdjęć i przejść tonalnych, i wymaga osobnego przebiegu na każdy kolor. Kolorowa atramentowa oddaje pełną paletę i fotografie w jednym przejściu, ale pracuje na droższym, powlekanym podłożu.' },
+      { title: 'Tusz pigmentowy a barwnikowy', content: 'Pigmentowy: odporny na wodę, tarcie i światło, matowe wykończenie, do etykiet produktowych, chemicznych i chłodniczych. Barwnikowy: szersza paleta i głębsza czerń na papierze błyszczącym, do etykiet, które mają przyciągać wzrok na półce, ale nie znoszą wilgoci. W naszej ofercie barwnikowy jest tylko D3800e.' },
     ],
     howToSteps: [
-      { name: 'Policz wersje etykiet i nakład', text: 'Spisz, ile różnych etykiet drukujesz w miesiącu i w jakich ilościach. Dużo wersji w małych seriach to argument za kolorową drukarką.' },
-      { name: 'Sprawdź format i materiał', text: 'Formaty do 104 mm szerokości druku; wybierz papier matowy do etykiet informacyjnych albo błyszczący do produktowych.' },
-      { name: 'Prześlij projekt do wyceny', text: 'Na podstawie pliku etykiety policzymy zużycie tuszu i koszt jednej sztuki, żeby porównać go z ofertą drukarni.' },
-      { name: 'Wybierz podłączenie i program', text: 'USB albo Ethernet; NiceLabel jest w zestawie, BarTender i szablony ZPL II też zadziałają.' },
+      { name: 'Policz wersje etykiet i nakład', text: 'Spisz, ile różnych etykiet drukujesz w miesiącu i w jakich ilościach. Dużo wersji w krótkich seriach to główny argument za kolorową drukarką.' },
+      { name: 'Sprawdź format i materiał', text: 'Do 108 mm szerokości druku wystarczy każdy model poza C6500, który bierze etykiety do 212 mm. Papier matowy do etykiet informacyjnych, błyszczący do produktowych, folia polipropylenowa do chemii i GHS.' },
+      { name: 'Policz koszt w kalkulatorze', text: 'Wpisz wymiar etykiety, dzienny nakład i cenę, jaką płacisz drukarni. Zobaczysz koszt sztuki w trzech wariantach i to, po ilu miesiącach drukarka się zwraca.' },
+      { name: 'Prześlij projekt do wyceny', text: 'Na podstawie pliku etykiety zmierzymy zużycie tuszu na maszynie i podamy koszt jednej sztuki dla Twojej grafiki, a nie dla przykładu z broszury.' },
+      { name: 'Wybierz podłączenie i program', text: 'USB do jednego stanowiska, Ethernet do pracy sieciowej. Projekt zrobisz w NiceLabel, BarTender albo Codesoft, a szablony ZPL II z drukarek Zebra zadziałają dzięki emulacji.' },
     ],
   },
 

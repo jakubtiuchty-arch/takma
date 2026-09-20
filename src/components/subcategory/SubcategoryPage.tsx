@@ -15,9 +15,46 @@ import {
   categories,
   brandCategories,
 } from '@/data/products'
-import { subcategoryContent } from '@/data/subcategory-content'
+import { subcategoryContent, type ComparisonTable } from '@/data/subcategory-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
+import KalkulatorKosztuEtykiet from '@/components/subcategory/KalkulatorKosztuEtykiet'
+
+/** Zestawienie modeli. Tabela jest szersza niż telefon, więc przewija się we własnym kontenerze. */
+function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
+  return (
+    <section>
+      <h2 className="text-2xl font-bold text-gray-900 mb-3">{table.heading}</h2>
+      {table.intro && <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{table.intro}</p>}
+      <div className="overflow-x-auto rounded-xl border border-gray-200">
+        <table className="w-full min-w-[46rem] border-collapse text-sm">
+          <thead>
+            <tr className="bg-gray-50 text-left">
+              <th scope="col" className="px-4 py-3 font-semibold text-gray-900">Model</th>
+              {table.columns.map((c) => (
+                <th key={c} scope="col" className="whitespace-nowrap px-4 py-3 font-semibold text-gray-900">{c}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {table.rows.map((row) => (
+              <tr key={row.model} className="border-t border-gray-200 align-top">
+                <th scope="row" className="px-4 py-3 text-left font-medium">
+                  <Link href={row.href} className="text-primary-600 hover:underline">{row.model}</Link>
+                  {row.role && <span className="mt-1 block text-xs font-normal text-gray-500">{row.role}</span>}
+                </th>
+                {row.cells.map((cell, i) => (
+                  <td key={i} className="px-4 py-3 text-gray-700">{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {table.note && <p className="mt-3 text-sm leading-relaxed text-gray-500">{table.note}</p>}
+    </section>
+  )
+}
 
 /** Renders text with \n\n paragraph breaks and \n line breaks within paragraphs */
 function RichText({ text, className }: { text: string; className?: string }) {
@@ -350,6 +387,20 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
                   <p className="text-gray-600 leading-relaxed sm:text-justify">{content.definition.content}</p>
                 </section>
+
+                {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} />}
+
+                {content.calculator === 'koszt-etykiety' && (
+                  <section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-3">Termotransfer czy kolor? Policz koszt etykiety</h2>
+                    <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">
+                      Decyzja sprowadza się do jednego: czy kolor na etykiecie zastąpi rolkę zamawianą w drukarni.
+                      Wpisz swój format, dzienny nakład i cenę, jaką dziś płacisz za gotową etykietę — kalkulator
+                      pokaże koszt sztuki w trzech wariantach i moment, w którym drukarka się zwraca.
+                    </p>
+                    <KalkulatorKosztuEtykiet />
+                  </section>
+                )}
 
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.buyingGuide.heading}</h2>
