@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
 import FilterableProductGrid, { FilterDefinition, CategoryNavItem } from '@/components/subcategory/FilterableProductGrid'
@@ -38,6 +39,14 @@ function RichText({ text, className }: { text: string; className?: string }) {
       })}
     </div>
   )
+}
+
+/** Podkategorie z ciemnym hero na górze. Bez wpisu strona zostaje przy jasnym nagłówku. */
+const heroImages: Record<string, { src: string; alt: string }> = {
+  'kolorowe-drukarki-etykiet': {
+    src: '/images/kolorowe-drukarki-etykiet-hero.webp',
+    alt: 'Wstęga etykiet: po lewej czarno-biały wydruk termotransferowy z kodem kreskowym, w środku wybuch pigmentu CMYK, po prawej gotowe kolorowe etykiety produktowe',
+  },
 }
 
 /** Konfiguracja filtrów w sidebarze per subcategory */
@@ -167,6 +176,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     url: `https://www.takma.com.pl/${subcategory.slug}`,
   }
 
+  const hero = heroImages[slug]
+
   const productWord = products.length === 1
     ? 'produkt'
     : products.length < 5
@@ -200,46 +211,93 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
 
+      {hero && (
+        <section className="relative bg-slate-950 text-white overflow-hidden">
+          <Image
+            src={hero.src}
+            alt={hero.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Przesłona pod tekst: na wąskim ekranie tekst leży na całym obrazie, więc przyciemniamy
+              go w całości; od sm wystarczy gradient w poziomie, który po prawej odsłania kolor */}
+          <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent" />
+          <div className="relative container-main py-10 lg:py-16">
+            <nav className="flex items-center gap-2 text-sm text-slate-300 mb-6 overflow-x-auto">
+              <Link href="/" className="hover:text-white transition-colors whitespace-nowrap">Strona główna</Link>
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+              <Link href={`/${parentCategory.slug}`} className="hover:text-white transition-colors whitespace-nowrap">
+                {parentCategory.name}
+              </Link>
+              {parentSubcategory && (
+                <>
+                  <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+                  <Link href={`/${parentSubcategory.slug}`} className="hover:text-white transition-colors whitespace-nowrap">
+                    {parentSubcategory.name}
+                  </Link>
+                </>
+              )}
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+              <span className="text-white font-medium whitespace-nowrap">{subcategory.name}</span>
+            </nav>
+            <h1 className="text-3xl lg:text-4xl font-bold mb-3 max-w-xl">{subcategory.name}</h1>
+            <p className="text-slate-200 max-w-xl">
+              <LinkedText text={subcategory.longDescription} />
+            </p>
+            <p className="text-slate-400 text-sm mt-3">
+              {products.length} {productWord}
+            </p>
+          </div>
+        </section>
+      )}
+
       <div className="container-main py-8 lg:py-12">
-        {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
-          <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
-            Strona główna
-          </Link>
-          <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
-          <Link
-            href={`/${parentCategory.slug}`}
-            className="hover:text-primary-600 transition-colors whitespace-nowrap"
-          >
-            {parentCategory.name}
-          </Link>
-          {parentSubcategory && (
-            <>
+        {!hero && (
+          <>
+            {/* Breadcrumbs */}
+            <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
+              <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
+                Strona główna
+              </Link>
               <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
               <Link
-                href={`/${parentSubcategory.slug}`}
+                href={`/${parentCategory.slug}`}
                 className="hover:text-primary-600 transition-colors whitespace-nowrap"
               >
-                {parentSubcategory.name}
+                {parentCategory.name}
               </Link>
-            </>
-          )}
-          <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
-          <span className="text-gray-900 font-medium whitespace-nowrap">{subcategory.name}</span>
-        </nav>
+              {parentSubcategory && (
+                <>
+                  <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
+                  <Link
+                    href={`/${parentSubcategory.slug}`}
+                    className="hover:text-primary-600 transition-colors whitespace-nowrap"
+                  >
+                    {parentSubcategory.name}
+                  </Link>
+                </>
+              )}
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
+              <span className="text-gray-900 font-medium whitespace-nowrap">{subcategory.name}</span>
+            </nav>
 
-        {/* H1 + intro */}
-        <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-            {subcategory.name}
-          </h1>
-          <p className="text-gray-600 sm:text-justify">
-            <LinkedText text={subcategory.longDescription} />
-          </p>
-          <p className="text-gray-500 text-sm mt-3">
-            {products.length} {productWord}
-          </p>
-        </div>
+            {/* H1 + intro */}
+            <div className="mb-8">
+              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+                {subcategory.name}
+              </h1>
+              <p className="text-gray-600 sm:text-justify">
+                <LinkedText text={subcategory.longDescription} />
+              </p>
+              <p className="text-gray-500 text-sm mt-3">
+                {products.length} {productWord}
+              </p>
+            </div>
+          </>
+        )}
 
         {/* Sidebar + Content layout */}
         {(sidebarFilters[slug] || categoryFilters[slug]) ? (
