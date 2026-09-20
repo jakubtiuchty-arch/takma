@@ -67333,7 +67333,9 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
         answer: 'Tak. Drukarka rozumie polecenia ESC/Label, pracuje na sterownikach Windows i Linux i drukuje z programów do etykiet, w tym BarTender i NiceLabel. Integracja z systemem magazynowym albo ERP odbywa się tak samo jak przy zwykłej drukarce sieciowej — przez Ethernet.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks C6000Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6000-karta-katalogowa-pl.pdf', size: '1,4 MB' },
+    ],
     videos: [
       { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN' },
       { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN' },
@@ -67926,7 +67928,9 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
         answer: 'Tak. Drukarka rozumie polecenia ESC/Label i emuluje ZPL II, pracuje na sterownikach Windows i Linux i drukuje z programów do etykiet, w tym BarTender i NiceLabel. Do systemu magazynowego albo ERP podłącza się ją przez Ethernet, tak samo jak zwykłą drukarkę sieciową.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks C6500Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6500-karta-katalogowa-pl.pdf', size: '1,6 MB' },
+    ],
     videos: [
       { url: 'https://www.youtube-nocookie.com/embed/IL2g3yWFtqE', title: 'Pierwsze napełnianie układu tuszem · Epson, EN' },
       { url: 'https://www.youtube-nocookie.com/embed/ING_3NaSbz8', title: 'Zakładanie rolki — wersja z gilotyną · Epson, EN' },
