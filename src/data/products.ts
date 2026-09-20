@@ -66630,7 +66630,9 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
         answer: 'Tak, drukarka emuluje ZPL II, więc gotowe szablony etykiet dla drukarek Zebra można wysyłać bez przepisywania. Drukuje też przez sterownik Windows z dowolnego programu, w tym z BarTender i NiceLabel.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks D3800e (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-d3800e-karta-katalogowa-pl.pdf', size: '965 KB' },
+    ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/drukarka-etykiet-colorworks-d3800e-z-atramentem-wodnym/p/57462',
     createdAt: '2026-09-19',
   },
