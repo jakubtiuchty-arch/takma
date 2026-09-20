@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import OsadzenieYouTube from '@/components/ui/OsadzenieYouTube'
 
 /**
  * Filmy na karcie produktu, budowane pod telefon.
@@ -27,7 +27,6 @@ function idYouTube(url: string): string | undefined {
 }
 
 function Odtwarzacz({ video }: { video: ProductVideo }) {
-  const [gra, setGra] = useState(false)
   const id = idYouTube(video.url)
 
   if (video.native) {
@@ -46,10 +45,10 @@ function Odtwarzacz({ video }: { video: ProductVideo }) {
     )
   }
 
-  if (!id || gra) {
+  if (!id) {
     return (
       <iframe
-        src={id ? `https://www.youtube-nocookie.com/embed/${id}${gra ? '?autoplay=1' : ''}` : video.url}
+        src={video.url}
         className="h-full w-full"
         allowFullScreen
         allow="autoplay; fullscreen; picture-in-picture"
@@ -59,27 +58,7 @@ function Odtwarzacz({ video }: { video: ProductVideo }) {
     )
   }
 
-  return (
-    <button
-      type="button"
-      onClick={() => setGra(true)}
-      className="group relative h-full w-full"
-      aria-label={`Odtwórz film: ${video.title}`}
-    >
-      {/* Miniatura z YouTube — zwykły img, bo to jedno statyczne zdjęcie na kafel */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
-        alt=""
-        loading="lazy"
-        className="h-full w-full object-cover"
-      />
-      <span className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-black/10" />
-      <span className="absolute left-1/2 top-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/70 transition-transform group-hover:scale-105">
-        <span className="ml-1 block h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-white" />
-      </span>
-    </button>
-  )
+  return <OsadzenieYouTube id={id} tytul={video.title} />
 }
 
 export default function ProductVideos({ videos }: { videos: ProductVideo[] }) {

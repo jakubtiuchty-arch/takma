@@ -43,7 +43,8 @@ function inline(text: string) {
 function Block({ block }: { block: ManualBlock }) {
   if (block.type === 'p') return <Text style={s.p}>{inline(block.text)}</Text>
   if (block.type === 'video') return <Text style={s.p}>Film: {block.caption} (do obejrzenia w wersji online instrukcji na takma.com.pl)</Text>
-  if (block.type === 'youtube') return <Text style={s.p}>Film: {block.caption} — youtu.be/{block.id}</Text>
+  // Adres w osobnej linii — doklejony do podpisu potrafił się złamać w połowie i psuł identyfikator filmu.
+  if (block.type === 'youtube') return <Text style={s.p}>Film: {block.caption}{'\n'}youtu.be/{block.id}</Text>
   return (
     <View style={{ marginBottom: 5 }}>
       {block.items.map((it, i) => (
@@ -86,10 +87,9 @@ export function ManualPdfDoc({ manual, logoSrc }: { manual: Manual; logoSrc?: st
           <Text style={{ flex: 1 }}>
             ul. Poświęcka 1a, 51-128 Wrocław · takma@takma.com.pl · +48 607 819 688 · +48 71 781 71 28
           </Text>
-          <Text
-            style={{ marginLeft: 12 }}
-            render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
-          />
+          {/* Bez numeru strony: `render` w elemencie fixed nie rysuje w @react-pdf 4.3.2 nic,
+              a przy dłuższych instrukcjach (trafiło na C6500) wywraca cały render błędem
+              „unsupported number" — węzeł zostaje bez wymiarów po drugim przebiegu układu. */}
         </View>
       </Page>
     </Document>

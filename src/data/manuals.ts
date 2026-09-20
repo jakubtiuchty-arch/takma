@@ -38,6 +38,8 @@ import { magicard600Pl } from './manual-content/magicard-600-pl'
 import { epsonColorworksC3500Pl } from './manual-content/epson-colorworks-c3500-pl'
 import { epsonColorworksD3800ePl } from './manual-content/epson-colorworks-d3800e-pl'
 import { epsonColorworksC4000ePl } from './manual-content/epson-colorworks-c4000e-pl'
+import { epsonColorworksC6000Pl } from './manual-content/epson-colorworks-c6000-pl'
+import { epsonColorworksC6500Pl } from './manual-content/epson-colorworks-c6500-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -1142,6 +1144,60 @@ export const manuals: Manual[] = [
       'magicard 600 holokote',
     ],
     updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'epson-colorworks-c6000',
+    model: 'ColorWorks C6000',
+    name: 'Epson ColorWorks C6000',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa kolorowa drukarka etykiet 4 cale, w wersjach z gilotyną (Ae) i odklejakiem (Pe). Instrukcja po polsku: odczytanie wersji z numeru modelu, wybór czerni przy pierwszym uruchomieniu, nośniki do 112 mm i rolki do 8 cali, zakładanie papieru, praca z odwijakiem i nawijakiem, wymiana wkładów SJIC36P i zbiornika SJMB6000/6500, kontrola dysz i czyszczenie okresowe, ustawienia sterownika, kody kreskowe, port EXT I/O do aplikatora, druk z SAP oraz komunikaty i zacięcia.',
+    productSlug: 'epson-colorworks-c6000',
+    documents: [
+      { type: 'user-guide', title: 'Przewodnik użytkownika CW-C6000 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-c6000-c6500-ug-pl.pdf', size: '3,2 MB' },
+      { type: 'quick-start', title: 'Rozpakowanie i pierwsze uruchomienie (arkusz Start Here)', lang: 'pl', file: '/instrukcje/epson-colorworks-c6000-c6500-qs-pl.pdf', size: '4,7 MB' },
+      { type: 'programming', title: 'Technical Reference Guide CW-C6000/C6500 (pełna dokumentacja techniczna, rev. P)', lang: 'en', file: '/instrukcje/epson-colorworks-c6000-c6500-trg-en.pdf', size: '24,6 MB' },
+    ],
+    polishManual: epsonColorworksC6000Pl,
+    keywords: [
+      'epson colorworks c6000 instrukcja',
+      'cw-c6000 instrukcja po polsku',
+      'epson c6000 instrukcja obsługi pdf',
+      'colorworks c6000 wymiana tuszu',
+      'sjic36p wymiana wkładu',
+      'colorworks c6000 zakładanie rolki',
+      'c6000 odklejak peeler ustawienia',
+      'colorworks c6000 czyszczenie noża',
+    ],
+    updatedAt: '2026-09-20',
+  },
+  {
+    slug: 'epson-colorworks-c6500',
+    model: 'ColorWorks C6500',
+    name: 'Epson ColorWorks C6500',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Przemysłowa kolorowa drukarka etykiet 8 cali, w wersjach z gilotyną (Ae) i odklejakiem (Pe). Instrukcja po polsku: co zmienia szerokość 212 mm, wybór czerni przy pierwszym uruchomieniu, nośniki do 215,9 mm i limit rolki do 6 cali, zakładanie papieru, praca z odwijakiem, wymiana wkładów SJIC36P i zbiornika SJMB6000/6500, kontrola dysz i czyszczenie okresowe, ustawienia sterownika, kody kreskowe, port EXT I/O do aplikatora, druk z SAP oraz komunikaty i zacięcia.',
+    productSlug: 'epson-colorworks-c6500',
+    documents: [
+      { type: 'user-guide', title: 'Przewodnik użytkownika CW-C6500 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-c6000-c6500-ug-pl.pdf', size: '3,2 MB' },
+      { type: 'quick-start', title: 'Rozpakowanie i pierwsze uruchomienie (arkusz Start Here)', lang: 'pl', file: '/instrukcje/epson-colorworks-c6000-c6500-qs-pl.pdf', size: '4,7 MB' },
+      { type: 'programming', title: 'Technical Reference Guide CW-C6000/C6500 (pełna dokumentacja techniczna, rev. P)', lang: 'en', file: '/instrukcje/epson-colorworks-c6000-c6500-trg-en.pdf', size: '24,6 MB' },
+    ],
+    polishManual: epsonColorworksC6500Pl,
+    keywords: [
+      'epson colorworks c6500 instrukcja',
+      'cw-c6500 instrukcja po polsku',
+      'epson c6500 instrukcja obsługi pdf',
+      'colorworks c6500 szerokie etykiety',
+      'sjic36p wymiana wkładu',
+      'colorworks c6500 zakładanie rolki',
+      'c6500 etykiety ghs beczki',
+      'colorworks c6500 czyszczenie noża',
+    ],
+    updatedAt: '2026-09-20',
   },
   {
     slug: 'epson-colorworks-c4000e',
