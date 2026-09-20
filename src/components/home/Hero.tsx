@@ -534,13 +534,13 @@ export default function Hero() {
             isTransitioning ? 'opacity-0' : 'opacity-100'
           )}
         >
-          <div className="relative mx-auto h-0 max-w-[1400px]">
+          <div className="relative mx-auto h-0 max-w-[1600px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/kropla-magenta.png" alt="" className="absolute left-[59%] -bottom-[19px] w-[62px] drop-shadow-[0_7px_9px_rgba(0,0,0,0.26)]" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/kropla-zolta.png" alt="" className="absolute left-[67.5%] -bottom-[12px] w-[40px] drop-shadow-[0_6px_8px_rgba(0,0,0,0.24)]" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/kropla-cyan.png" alt="" className="absolute left-[73.5%] -bottom-[7px] w-[26px] drop-shadow-[0_4px_6px_rgba(0,0,0,0.22)]" />
+            <img
+              src="/images/rozprysk-krople.png"
+              alt=""
+              className="absolute right-[15%] -bottom-[22px] w-[52%] max-w-[740px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)]"
+            />
           </div>
         </div>
       )}
