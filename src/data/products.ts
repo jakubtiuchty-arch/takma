@@ -68280,6 +68280,12 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       },
     ],
     downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/2RTgICUK_LU', title: 'Ustawienie drukarki po rozpakowaniu · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/pBz2Jm4wvm8', title: 'Zakładanie rolki i składanki · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/d-G4M-BsKEM', title: 'Konfiguracja sterownika w Windows · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/UVvtb6JQAb8', title: 'Czyszczenie drukarki · Epson, EN' },
+    ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-cw-c8000e-series/p/46707',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-20',

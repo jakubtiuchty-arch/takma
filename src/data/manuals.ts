@@ -40,6 +40,7 @@ import { epsonColorworksD3800ePl } from './manual-content/epson-colorworks-d3800
 import { epsonColorworksC4000ePl } from './manual-content/epson-colorworks-c4000e-pl'
 import { epsonColorworksC6000Pl } from './manual-content/epson-colorworks-c6000-pl'
 import { epsonColorworksC6500Pl } from './manual-content/epson-colorworks-c6500-pl'
+import { epsonColorworksC8000ePl } from './manual-content/epson-colorworks-c8000e-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -1144,6 +1145,33 @@ export const manuals: Manual[] = [
       'magicard 600 holokote',
     ],
     updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'epson-colorworks-c8000e',
+    model: 'ColorWorks C8000e',
+    name: 'Epson ColorWorks C8000e',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Najszybsza kolorowa drukarka etykiet Epsona: stała głowica liniowa, 300 mm/s, tusz w workach 480 ml. Instrukcja po polsku: wybór czerni przy pierwszym uruchomieniu, nośniki razem ze znacznikami z otworami, ładowanie rolki i składanki, przewijarka TU-RC8000, wymiana pakietów SJIC48P i zbiornika SJMB7500, kontrola dysz, prześwit głowica–nośnik, czyszczenie, kody kreskowe, sieć i druk z SAP oraz komunikaty i zacięcia.',
+    productSlug: 'epson-colorworks-c8000e',
+    documents: [
+      { type: 'user-guide', title: 'Przewodnik użytkownika CW-C8000 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-c8000e-ug-pl.pdf', size: '4,2 MB' },
+      { type: 'quick-start', title: 'Rozpakowanie i pierwsze uruchomienie (arkusz Start Here)', lang: 'pl', file: '/instrukcje/epson-colorworks-c8000e-qs-pl.pdf', size: '6,8 MB' },
+      { type: 'programming', title: 'Technical Reference Guide CW-C8000 Series (pełna dokumentacja techniczna, rev. G)', lang: 'en', file: '/instrukcje/epson-colorworks-c8000e-trg-en.pdf', size: '28,7 MB' },
+    ],
+    polishManual: epsonColorworksC8000ePl,
+    keywords: [
+      'epson colorworks c8000e instrukcja',
+      'cw-c8000 instrukcja po polsku',
+      'epson c8000e instrukcja obsługi pdf',
+      'colorworks c8000e wymiana tuszu',
+      'sjic48p wymiana pakietu',
+      'sjmb7500 pojemnik konserwacyjny',
+      'colorworks c8000e przewijarka tu-rc8000',
+      'c8000e prześwit głowica nośnik',
+    ],
+    updatedAt: '2026-09-20',
   },
   {
     slug: 'epson-colorworks-c6000',
