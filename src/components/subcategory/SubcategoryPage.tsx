@@ -304,13 +304,6 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
           </>
         )}
 
-        {/* Ze stroną z hero pełny opis kategorii (z linkami) idzie tutaj, nad siatkę */}
-        {hero && (
-          <p className="text-gray-600 sm:text-justify mb-8">
-            <LinkedText text={subcategory.longDescription} />
-          </p>
-        )}
-
         {/* Sidebar + Content layout */}
         {(sidebarFilters[slug] || categoryFilters[slug]) ? (
           /* Layout z filtrami — FilterableProductGrid renderuje sidebar (kategorie+filtry) + grid; konfiguracja tu (materiały) albo w category-filters.ts (reguły pochodne) */
