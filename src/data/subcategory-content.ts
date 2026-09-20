@@ -3760,23 +3760,23 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       intro: 'Kolumna „Rolka” podaje maksymalną średnicę i masę gotowego nawoju. Prędkość odnosi się do początku rolki z gilzą 76 mm.',
       columns: ['Nośnik', 'Rolka', 'Gilza', 'Prędkość', 'Przeznaczenie'],
       rows: [
-        { model: 'MC-11', href: '/produkt/labelmate-mc-11', role: 'Drukarki biurkowe', cells: ['do 115 mm', '220 mm / 4 kg', '25–101 mm (ACH)', '50 cm/s', 'ZD421t, ZD621t, TD-4T, C3500'] },
-        { model: 'CAT-3-STANDARD', href: '/produkt/labelmate-cat-3-standard', role: 'Druk przemysłowy 4 cale', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '125 cm/s', 'ZT411, ZT610, PM45'] },
+        { model: 'MC-11', href: '/produkt/labelmate-mc-11', role: 'Drukarki biurkowe', cells: ['do 115 mm', '220 mm / 4 kg', '25–101 mm (ACH)', '50 cm/s', 'Zebra ZD421t, Brother TD-4T'] },
+        { model: 'CAT-3-STANDARD', href: '/produkt/labelmate-cat-3-standard', role: 'Druk przemysłowy 4 cale', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '125 cm/s', 'Zebra ZT411, Honeywell PM45'] },
         { model: 'CAT-3-ACH', href: '/produkt/labelmate-cat-3-ach', role: 'Zmienne średnice gilz', cells: ['do 155 mm', '280 mm / 7 kg', '25–101 mm (ACH)', '125 cm/s', 'Druk zleceniowy'] },
-        { model: 'CAT-3-10-INCHES', href: '/produkt/labelmate-cat-3-10-inches', role: 'Szeroki nośnik', cells: ['do 255 mm', '300 mm / 10 kg', '76 mm', '125 cm/s', 'ZT421, ZT620, PM65'] },
-        { model: 'UNI-CAT-STANDARD', href: '/produkt/labelmate-uni-cat-standard', role: 'Nawijarka i odwijak', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '80 cm/s', 'Epson ColorWorks'] },
-        { model: 'UNI-CAT-CHUCK', href: '/produkt/labelmate-uni-cat-chuck', role: 'Częsta zmiana rolek', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '80 cm/s', 'ColorWorks, druk zleceniowy'] },
+        { model: 'CAT-3-10-INCHES', href: '/produkt/labelmate-cat-3-10-inches', role: 'Szeroki nośnik', cells: ['do 255 mm', '300 mm / 10 kg', '76 mm', '125 cm/s', 'Zebra ZT421, Honeywell PM65'] },
+        { model: 'UNI-CAT-STANDARD', href: '/produkt/labelmate-uni-cat-standard', role: 'Nawijarka i odwijak', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '80 cm/s', 'Drukarki atramentowe'] },
+        { model: 'UNI-CAT-CHUCK', href: '/produkt/labelmate-uni-cat-chuck', role: 'Częsta zmiana rolek', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '80 cm/s', 'Atrament, druk zleceniowy'] },
       ],
       note: 'Wszystkie modele nawijają w obu kierunkach i objęte są dwuletnią gwarancją producenta, z rocznym okresem na zasilacz.',
     },
     buyingGuide: {
       heading: 'Jak dobrać nawijarkę do drukarki',
       items: [
-        'Szerokość nośnika, nie etykiety — nawijarka przyjmuje cały materiał wraz z podkładem. Drukarka czterocalowa podaje nośnik do 118 mm, co pokrywa model o zakresie 155 mm. Drukarka sześciocalowa (ZT421, ZT620, PM65) wymaga trzonu dziesięciocalowego o zakresie 255 mm.',
+        'Szerokość nośnika, nie etykiety — nawijarka przyjmuje cały materiał wraz z podkładem. Drukarka czterocalowa podaje nośnik do 118 mm, co pokrywa model o zakresie 155 mm. Drukarka sześciocalowa (Zebra ZT421 i ZT620, Honeywell PM65) wymaga trzonu dziesięciocalowego o zakresie 255 mm.',
         'Średnica i masa gotowego nawoju — model MC-11 przyjmuje 220 mm i 4 kg, modele CAT-3 oraz UNI-CAT od 280 do 300 mm i od 7 do 10 kg. Rolka etykiet o średnicy 300 mm i szerokości 150 mm waży około 8 kg, zatem limit masy ma znaczenie praktyczne.',
         'Średnica gilzy po obu stronach procesu — drukarki biurkowe pracują na gilzie 25 mm, przemysłowe na 76 mm. Jeżeli gotowa rolka trafia do aplikatora, jego wymagania określają średnicę. Modele z rozsuwanym uchwytem (ACH) obejmują zakres 25–101 mm bez dokupywania trzonów.',
         'Prędkość drukarki — modele CAT-3 nawijają do 125 cm/s i nadążają za każdą drukarką termotransferową dostępną na rynku. UNI-CAT osiąga 80 cm/s, przy czym dobiera tempo samodzielnie na podstawie ruchu nośnika.',
-        'Druk atramentowy — drukarki Epson ColorWorks cofają nośnik przed każdym zadaniem w celu ustawienia głowicy. Urządzenie pozbawione obsługi tego ruchu utrzymuje materiał napięty, co prowadzi do utraty rejestracji wydruku. Do drukarek ColorWorks przeznaczone są wyłącznie modele UNI-CAT.',
+        'Druk atramentowy — drukarki atramentowe cofają nośnik przed każdym zadaniem w celu ustawienia głowicy. Urządzenie pozbawione obsługi tego ruchu utrzymuje materiał napięty, co prowadzi do utraty rejestracji wydruku. W takim procesie sprawdzą się wyłącznie modele UNI-CAT.',
         'Częstotliwość wymiany rolki — przy jednym zleceniu dziennie wystarcza trzon standardowy. Przy wymianie co godzinę szybkozłączny trzon Quick-Chuck skraca tę czynność do jednego ruchu dźwigni.',
         'Miejsce za drukarką — model MC-11 zajmuje 220 × 305 mm, CAT-3-10-INCHES 300 × 455 mm. Nawijarka powinna stać naprzeciw wylotu nośnika, aby materiał przemieszczał się po linii prostej.',
       ],
@@ -3788,16 +3788,16 @@ Moment dobiera się do rodzaju nośnika. Wartość zbyt niska skutkuje luźnym n
 
 Kierunek nawijania również podlega wyborowi. Nawój do wewnątrz, czyli etykietami do środka rolki, chroni nadruk podczas transportu. Nawój na zewnątrz ułatwia dalszą obsługę, gdy rolka trafia bezpośrednio do aplikatora, ponieważ etykieta odchodzi od gilzy gotowa do naklejenia. Wszystkie modele Labelmate obsługują oba kierunki.
 
-Odrębnego omówienia wymagają drukarki atramentowe. Urządzenia ColorWorks cofają nośnik o kilka centymetrów przed każdym zadaniem w celu ustawienia głowicy. Nawijarka pozbawiona obsługi tego ruchu utrzymuje materiał napięty, w wyniku czego drukarka pokonuje opór i traci rejestrację wydruku — objawia się to przesunięciem etykiet o kilka milimetrów albo zgłoszeniem błędu czujnika. Modele UNI-CAT wykrywają cofanie, zwalniają nośnik i po zakończeniu ruchu wracają do nawijania.`,
+Odrębnego omówienia wymagają drukarki atramentowe, na przykład Epson ColorWorks. Urządzenia tej klasy cofają nośnik o kilka centymetrów przed każdym zadaniem w celu ustawienia głowicy. Nawijarka pozbawiona obsługi tego ruchu utrzymuje materiał napięty, w wyniku czego drukarka pokonuje opór i traci rejestrację wydruku — objawia się to przesunięciem etykiet o kilka milimetrów albo zgłoszeniem błędu czujnika. Modele UNI-CAT wykrywają cofanie, zwalniają nośnik i po zakończeniu ruchu wracają do nawijania.`,
     useCases: [
       {
-        title: 'Zakład spożywczy — 6 000 etykiet na zmianę z drukarki ZT411',
+        title: 'Zakład spożywczy — 6 000 etykiet na zmianę z drukarki Honeywell PM45',
         description: 'Drukarka pracuje bez nadzoru operatora, a nawijarka CAT-3-STANDARD zbiera nośnik w rolkę o średnicy 300 mm. Obsługa podchodzi do stanowiska raz na zmianę, aby zdjąć gotowy nawój i założyć pustą gilzę. We wcześniejszej organizacji pracy pracownik odrywał etykiety co kilkadziesiąt sekund.',
         icon: 'produkcja',
       },
       {
-        title: 'Produkcja kosmetyków — etykiety kolorowe z drukarki ColorWorks C6000',
-        description: 'Drukarka realizuje serie po 500–2 000 etykiet i przed każdą z nich cofa nośnik. Model UNI-CAT-STANDARD rozpoznaje ten ruch, dzięki czemu rejestracja wydruku pozostaje stabilna, a gotowa rolka trafia bezpośrednio na aplikator linii butelkowania.',
+        title: 'Produkcja kosmetyków — kolorowe etykiety z drukarki atramentowej',
+        description: 'Drukarka atramentowa realizuje serie po 500–2 000 etykiet i przed każdą z nich cofa nośnik. Model UNI-CAT-STANDARD rozpoznaje ten ruch, dzięki czemu rejestracja wydruku pozostaje stabilna, a gotowa rolka trafia bezpośrednio na aplikator linii butelkowania.',
         icon: 'retail',
       },
       {
@@ -3807,7 +3807,7 @@ Odrębnego omówienia wymagają drukarki atramentowe. Urządzenia ColorWorks cof
       },
       {
         title: 'Magazyn — etykiety paletowe 150 × 210 mm',
-        description: 'Drukarka ZT421 podaje nośnik o szerokości 178 mm, przekraczającej zakres standardowej nawijarki. Model CAT-3-10-INCHES dysponuje trzonem dziesięciocalowym o zakresie 255 mm oraz dopuszczalną masą nawoju 10 kg, odpowiadającą pełnej rolce etykiet foliowych.',
+        description: 'Drukarka Zebra ZT421 podaje nośnik o szerokości 178 mm, przekraczającej zakres standardowej nawijarki. Model CAT-3-10-INCHES dysponuje trzonem dziesięciocalowym o zakresie 255 mm oraz dopuszczalną masą nawoju 10 kg, odpowiadającą pełnej rolce etykiet foliowych.',
         icon: 'magazyn-wms',
       },
     ],
@@ -3820,7 +3820,7 @@ Odrębnego omówienia wymagają drukarki atramentowe. Urządzenia ColorWorks cof
         },
         {
           title: 'Klasyczna nawijarka zaburza pracę drukarki atramentowej',
-          text: 'Najczęstszy błąd doboru przy drukarkach ColorWorks polega na zastosowaniu urządzenia bez obsługi cofania nośnika. Po kilku dniach pracy etykiety zaczynają wychodzić przesunięte. Przyczyna ma charakter mechaniczny i nie daje się usunąć ustawieniem sterownika.',
+          text: 'Najczęstszy błąd doboru przy drukarkach atramentowych polega na zastosowaniu urządzenia bez obsługi cofania nośnika. Po kilku dniach pracy etykiety zaczynają wychodzić przesunięte. Przyczyna ma charakter mechaniczny i nie daje się usunąć ustawieniem sterownika.',
         },
         {
           title: 'O średnicy gilzy decyduje dalszy etap procesu',
@@ -3838,8 +3838,8 @@ Odrębnego omówienia wymagają drukarki atramentowe. Urządzenia ColorWorks cof
         answer: 'Nawijarka zwija zadrukowany nośnik za drukarką. Odwijak podaje rolkę do drukarki ze stałym naciągiem. Modele UNI-CAT realizują obie funkcje i po uruchomieniu samoczynnie rozpoznają kierunek ruchu materiału.',
       },
       {
-        question: 'Która nawijarka jest przeznaczona do drukarek Epson ColorWorks?',
-        answer: 'Model UNI-CAT-STANDARD albo UNI-CAT-CHUCK. Wyłącznie te urządzenia obsługują cofanie nośnika, które drukarki ColorWorks wykonują przed każdym zadaniem; nawijarka pozbawiona tej funkcji powoduje przesunięcia wydruku. Do modeli <a href="/produkt/epson-colorworks-c6000">C6000</a> i <a href="/produkt/epson-colorworks-c6500">C6500</a> Labelmate oferuje dodatkowo płytę pozycjonującą LMX602, którą dołączamy do zamówienia na życzenie.',
+        question: 'Która nawijarka jest przeznaczona do drukarek atramentowych, na przykład Epson ColorWorks?',
+        answer: 'Model UNI-CAT-STANDARD albo UNI-CAT-CHUCK. Wyłącznie te urządzenia obsługują cofanie nośnika, które drukarka atramentowa wykonuje przed każdym zadaniem; nawijarka pozbawiona tej funkcji powoduje przesunięcia wydruku.',
       },
       {
         question: 'Czy nawijarka współpracuje z każdą drukarką etykiet?',

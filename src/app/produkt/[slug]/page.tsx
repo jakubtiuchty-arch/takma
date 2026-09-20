@@ -366,7 +366,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedPlainCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-plastikowe'))
   const relatedRfidCards = allRelated.filter((p) => p!.subcategoryIds?.includes('karty-zblizeniowe'))
   const relatedSoftware = allRelated.filter((p) => p!.categoryId === 'oprogramowanie')
-  const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie')
+  // Nawijaki zewnętrzne to osobne urządzenia, nie części do drukarki — dostają własną
+  // sekcję z jednym zdaniem wyjaśnienia, zamiast ginąć wśród głowic albo tuszy.
+  const relatedRewinders = allRelated.filter((p) => p!.subcategoryIds?.includes('nawijarki-do-etykiet'))
+  const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie' && !p!.subcategoryIds?.includes('nawijarki-do-etykiet'))
 
   // Zestaw startowy: karta drukarki pokazuje boks zestawu, którego jest składnikiem (tylko urządzenia, nie taśmy/karty)
   const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems
@@ -1282,6 +1285,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
               )}
+              {relatedRewinders.length > 0 && (
+                <a
+                  href="#nawijaki"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Nawijaki
+                </a>
+              )}
               {relatedProductsList.length > 0 && (
                 <a
                   href="#podobne-produkty"
@@ -1714,6 +1725,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
+                showDualButtons
+              />
+            )}
+
+            {/* Nawijaki zewnętrzne — osobne urządzenia, nie części drukarki */}
+            {relatedRewinders.length > 0 && (
+              <RelatedProducts
+                id="nawijaki"
+                title="Nawijaki zewnętrzne"
+                lead="Nawijak stoi za drukarką i zwija zadrukowany nośnik w równą rolkę, dzięki czemu urządzenie kończy zlecenie bez udziału operatora. Modele Labelmate dobieramy do szerokości nośnika i średnicy gilzy."
+                products={relatedRewinders as typeof products}
                 showDualButtons
               />
             )}

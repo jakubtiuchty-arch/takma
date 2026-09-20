@@ -68586,11 +68586,11 @@ const labelmateRewinders: Product[] = [
     shortDescription: 'Biurkowa nawijarka etykiet Labelmate MC-11: rolki do 220 mm, nośnik do 115 mm, regulowany uchwyt gilzy 25–101 mm, prędkość do 50 cm/s.',
     seoTitle: 'Labelmate MC-11 — nawijarka etykiet do drukarki biurkowej | TAKMA',
     seoDescription: 'Nawijarka etykiet Labelmate MC-11 (LMR003) do drukarek biurkowych: rolki do 220 mm, nośnik do 115 mm, gilza 25–101 mm, 50 cm/s. Dwa lata gwarancji, cena netto.',
-    description: `Najmniejsza nawijarka w ofercie Labelmate, przeznaczona do współpracy z drukarkami biurkowymi: [ZD421t](/produkt/zebra-zd421t), [ZD621t](/produkt/zebra-zd621t), Brother TD-4T czy [ColorWorks C3500](/produkt/epson-colorworks-c3500). Urządzenie zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką i zajmuje **220 × 305 mm** powierzchni blatu.
+    description: `Najmniejsza nawijarka w ofercie Labelmate, przeznaczona do drukarek biurkowych. Urządzenie zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką i zajmuje **220 × 305 mm** powierzchni blatu, czyli niewiele więcej niż kartka A4.
 
-Regulowany uchwyt gilzy obejmuje zakres **25–101 mm**, co pozwala nawijać zarówno na gilzę 25 mm stosowaną w drukarkach biurkowych, jak i na 76 mm z drukarek przemysłowych. Siłę nawijania ustawia się potencjometrem umieszczonym na obudowie: mniejszą przy cienkim papierze, większą przy sztywnej folii. Silnik pracuje w obu kierunkach, a wewnętrzny kołnierz prowadzi krawędź nośnika, dzięki czemu nawój zachowuje równy bok.
+Regulowany uchwyt gilzy obejmuje zakres **25–101 mm**, co pozwala nawijać zarówno na gilzę 25 mm, jak i 76 mm. Siłę nawijania ustawia się potencjometrem umieszczonym na obudowie: mniejszą przy cienkim papierze, większą przy sztywnej folii. Silnik pracuje w obu kierunkach, a wewnętrzny kołnierz prowadzi krawędź nośnika, dzięki czemu nawój zachowuje równy bok.
 
-Ograniczenia konstrukcyjne: rolka o średnicy do **220 mm** i masie do **4 kg**, nośnik do **115 mm** szerokości, prędkość do **50 cm/s**. Przy szerszym materiale lub drukarce przemysłowej pracującej całą zmianę właściwym wyborem jest [CAT-3-STANDARD](/produkt/labelmate-cat-3-standard).
+Ograniczenia konstrukcyjne: rolka o średnicy do **220 mm** i masie do **4 kg**, nośnik do **115 mm** szerokości, prędkość do **50 cm/s**. Przy szerszym materiale lub drukarce pracującej całą zmianę właściwym wyborem jest [CAT-3-STANDARD](/produkt/labelmate-cat-3-standard).
 
 Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     categoryId: 'akcesoria',
@@ -68629,11 +68629,11 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     shortDescription: 'Nawijarka etykiet Labelmate CAT-3-STANDARD do druku przemysłowego: rolki do 300 mm i 8 kg, nośnik do 155 mm, gilza 76 mm, prędkość do 125 cm/s.',
     seoTitle: 'Labelmate CAT-3-STANDARD — nawijarka etykiet przemysłowa | TAKMA',
     seoDescription: 'Nawijarka etykiet Labelmate CAT-3-STANDARD (LMR004): rolki do 300 mm i 8 kg, nośnik do 155 mm, gilza 76 mm, 125 cm/s. Sterowanie momentem z panelu, cena netto.',
-    description: `Podstawowa nawijarka do zastosowań przemysłowych. Silnik osiąga **125 cm/s** na początku rolki z gilzą 76 mm, a więc więcej, niż wynosi maksymalna prędkość podawania nośnika w drukarkach [ZT411](/produkt/zebra-zt411) i [PM45](/produkt/honeywell-pm45).
+    description: `Podstawowa nawijarka do zastosowań przemysłowych. Silnik osiąga **125 cm/s** na początku rolki z gilzą 76 mm, a więc więcej, niż wynosi maksymalna prędkość podawania nośnika w drukarkach etykiet dostępnych na rynku.
 
 Moment obrotowy oraz kierunek nawijania ustawia się z panelu na froncie urządzenia. Dwa zakresy momentu pozwalają obsłużyć zarówno lekki papier, jak i ciężką rolkę folii; z tego samego zapasu siły korzystają przecinarki Labelmate. Obudowa została wykonana ze stali, a antypoślizgowe nóżki utrzymują urządzenie w miejscu, co znosi konieczność mocowania do stołu.
 
-Trzon w wersji standardowej przyjmuje gilzę **76 mm**; wykonania pod 38, 40, 44, 50, 70 i 100 mm producent realizuje na zamówienie. Maksymalny nawój to **300 mm** średnicy i **8 kg**, nośnik do **155 mm** szerokości. Gdy średnica gilzy zmienia się pomiędzy zleceniami, właściwym wyborem jest [CAT-3-ACH](/produkt/labelmate-cat-3-ach) z rozsuwanym uchwytem.
+Trzon w wersji standardowej przyjmuje gilzę **76 mm**; wykonania pod 38, 40, 44, 50, 70 i 100 mm producent realizuje na zamówienie. Maksymalny nawój to **300 mm** średnicy i **8 kg**, nośnik do **155 mm** szerokości — zakres pokrywający drukarki czterocalowe, na przykład [ZT411](/produkt/zebra-zt411). Gdy średnica gilzy zmienia się pomiędzy zleceniami, właściwym wyborem jest [CAT-3-ACH](/produkt/labelmate-cat-3-ach) z rozsuwanym uchwytem.
 
 Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     categoryId: 'akcesoria',
@@ -68715,7 +68715,7 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     shortDescription: 'Szeroka nawijarka etykiet Labelmate CAT-3-10-INCHES: nośnik do 255 mm, rolki do 300 mm i 10 kg, prędkość do 125 cm/s.',
     seoTitle: 'Labelmate CAT-3-10-INCHES — nawijarka etykiet do 255 mm | TAKMA',
     seoDescription: 'Nawijarka etykiet Labelmate CAT-3-10-INCHES (LMR007) do szerokiego nośnika: materiał do 255 mm, rolki do 300 mm i 10 kg, 125 cm/s. Cena netto B2B.',
-    description: `Wersja CAT-3 przeznaczona do szerokiego nośnika. Trzon o długości 10 cali pozwala nawijać materiał do **255 mm** szerokości, a więc obejmuje pełen zakres drukarek sześciocalowych: [ZT421](/produkt/zebra-zt421), [ZT620](/produkt/zebra-zt620), [PM65](/produkt/honeywell-pm65) oraz PX65.
+    description: `Wersja CAT-3 przeznaczona do szerokiego nośnika. Trzon o długości 10 cali pozwala nawijać materiał do **255 mm** szerokości, a więc obejmuje pełen zakres drukarek sześciocalowych, na przykład [ZT421](/produkt/zebra-zt421).
 
 Urządzenie przyjmuje rolkę o średnicy **300 mm** i masie **10 kg**. Prędkość, sterowanie z panelu i dwa zakresy momentu pozostają takie same jak w pozostałych modelach CAT-3. Wymiary wynoszą 300 × 455 × 320 mm, co czyni ten model najgłębszym w rodzinie — przed zamówieniem zalecamy sprawdzenie miejsca za drukarką.
 
@@ -68760,7 +68760,7 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     seoDescription: 'Labelmate UNI-CAT-STANDARD (LMR042) — nawijarka i odwijak etykiet do Epson ColorWorks i drukarek przemysłowych: rolki do 300 mm, nośnik do 155 mm, 80 cm/s.',
     description: `UNI-CAT łączy funkcje nawijarki i odwijaka w jednym urządzeniu, bez przełącznika trybu pracy. Po uruchomieniu rozpoznaje kierunek ruchu nośnika i dostosowuje się do drukarki: nawija, pozostaje w gotowości albo podaje materiał. Prędkość dobiera samodzielnie, do **80 cm/s**.
 
-Zasadnicza różnica wobec rodziny [CAT-3](/produkt/labelmate-cat-3-standard) dotyczy druku atramentowego. Drukarki [Epson ColorWorks](/kolorowe-drukarki-etykiet) oraz inne urządzenia wrażliwe na naciąg cofają nośnik przed każdym zadaniem; klasyczna nawijarka utrzymuje wtedy materiał napięty, przez co drukarka traci rejestrację wydruku. UNI-CAT rozpoznaje ten ruch i zwalnia nośnik. Z tego powodu do modeli [C6000](/produkt/epson-colorworks-c6000), [C6500](/produkt/epson-colorworks-c6500) i [C8000e](/produkt/epson-colorworks-c8000e) proponujemy wyłącznie to urządzenie. Do pary C6000/C6500 Labelmate oferuje ponadto płytę pozycjonującą LMX602, którą dołączamy do zamówienia na życzenie.
+Zasadnicza różnica wobec rodziny [CAT-3](/produkt/labelmate-cat-3-standard) dotyczy drukarek atramentowych i innych urządzeń wrażliwych na naciąg, które cofają nośnik przed każdym zadaniem. Klasyczna nawijarka utrzymuje wtedy materiał napięty, przez co drukarka traci rejestrację wydruku. UNI-CAT rozpoznaje ten ruch i zwalnia nośnik, a po jego zakończeniu wraca do nawijania. Do drukarek [Epson ColorWorks](/kolorowe-drukarki-etykiet) proponujemy wyłącznie ten model i wersję [UNI-CAT-CHUCK](/produkt/labelmate-uni-cat-chuck); do pary C6000/C6500 producent ma dodatkowo płytę pozycjonującą LMX602, którą dołączamy do zamówienia na życzenie.
 
 Nawijanie odbywa się do wewnątrz oraz na zewnątrz. Panel sterowania jest dotykowy, pozbawiony elementów ruchomych, wyposażony we wskaźniki LED. Prowadnica nośnika wchodzi w skład zestawu, dzięki czemu nawój zachowuje równy bok bez dodatkowych kołnierzy.
 
@@ -68806,7 +68806,7 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     seoDescription: 'Labelmate UNI-CAT-CHUCK (LMR044) — nawijarka i odwijak etykiet z trzonem Quick-Chuck 76 mm: nośnik do 170 mm, rolki do 300 mm i 10 kg, 80 cm/s.',
     description: `UNI-CAT w wykonaniu z szybkozłącznym trzonem Quick-Chuck. Gilzę zakłada się i zdejmuje jednym ruchem dźwigni, bez odkręcania kołnierzy, co ma znaczenie przy zleceniach zmienianych kilkakrotnie w ciągu zmiany.
 
-Elektronika pozostaje wspólna z modelem [UNI-CAT-STANDARD](/produkt/labelmate-uni-cat-standard): samoczynne rozpoznanie trybu pracy, obsługa cofania nośnika w drukarkach atramentowych, dobór prędkości do **80 cm/s**, nawijanie do wewnątrz i na zewnątrz oraz dotykowy panel ze wskaźnikami LED.
+Elektronika pozostaje wspólna z modelem [UNI-CAT-STANDARD](/produkt/labelmate-uni-cat-standard): samoczynne rozpoznanie trybu nawijarka/odwijak, obsługa cofania nośnika w drukarkach wrażliwych na naciąg, dobór prędkości do **80 cm/s**, nawijanie do wewnątrz i na zewnątrz oraz dotykowy panel ze wskaźnikami LED.
 
 Trzon Quick-Chuck ma średnicę **76 mm** i długość 170 mm, co przekłada się na nośnik do **170 mm** szerokości; producent wykonuje również trzony 220 i 270 mm. Rolka do **300 mm** średnicy i **10 kg** — najwyższa dopuszczalna masa nawoju wśród nawijarek w naszej ofercie.
 

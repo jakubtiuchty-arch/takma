@@ -13,6 +13,8 @@ interface RelatedProductsProps {
   labels?: boolean
   id?: string
   showDualButtons?: boolean
+  /** Jedno zdanie pod nagłówkiem — dla sekcji, w których sama nazwa nie mówi, po co to komu. */
+  lead?: string
 }
 
 const ROW_SIZE = 4 // ilość kart w jednym wierszu (desktop xl:grid-cols-4)
@@ -129,7 +131,7 @@ function DimensionFilters({
   )
 }
 
-export default function RelatedProducts({ title, products, initialLimit, labels, id, showDualButtons }: RelatedProductsProps) {
+export default function RelatedProducts({ title, products, initialLimit, labels, id, showDualButtons, lead }: RelatedProductsProps) {
   // Dla etykiet termicznych pokazujemy od razu 2 wiersze (8 kafelków serii) gdy produktów >4
   const defaultRows = labels && products.length > ROW_SIZE ? 2 : 1
   const [visibleRows, setVisibleRows] = useState(defaultRows)
@@ -236,12 +238,14 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
 
   return (
     <section id={id}>
-      <div className="flex items-baseline justify-between mb-6">
+      <div className="flex items-baseline justify-between mb-2">
         <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
         {products.length > limit && (
           <span className="text-sm text-gray-500">{products.length} produktów</span>
         )}
       </div>
+      {lead && <p className="mb-6 max-w-3xl text-gray-600 leading-relaxed">{lead}</p>}
+      {!lead && <div className="mb-4" />}
       <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} />
       <div className="mt-5 text-center flex justify-center gap-3">
         {hasMore && (
