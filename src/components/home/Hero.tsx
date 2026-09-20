@@ -36,6 +36,9 @@ interface ProductSlide {
   lightArtifacts?: boolean
   /** Bez powolnego zoomu obrazu (np. gdy ruch daje samo wideo) */
   noZoom?: boolean
+  /** Ile milisekund slajd ma stać, zanim karuzela pójdzie dalej. Bez tego obowiązuje INTERVAL —
+   *  za krótko, gdy slajd niesie film z fabułą, którą trzeba obejrzeć do końca. */
+  hold?: number
 }
 
 interface InfoSlide {
@@ -61,12 +64,15 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   {
     type: 'product',
-    image: '/images/hero-colorworks-c8000e-v2.webp',
+    image: '/images/hero-colorworks-poster.webp',
+    video: '/video/hero-colorworks.mp4',
+    noZoom: true,
+    hold: 10500,
     name: 'Kolorowe etykiety prosto z drukarki',
     slug: 'epson-colorworks-c8000e',
     href: '/kolorowe-drukarki-etykiet',
     ctaLabel: 'Zobacz kolorowe drukarki',
-    imageAlt: 'Epson ColorWorks C8000e drukuje kolorową etykietę, z której wystrzeliwuje wybuch tuszu w kolorach CMYK',
+    imageAlt: 'Właścicielka manufaktury herbaty odbiera z drukarki Epson ColorWorks kolorową etykietę i nakleja ją na pudełko',
     tagline: 'Kolorowa etykieta z logo, zdjęciem produktu albo oznaczeniem GHS powstaje na miejscu, w nakładzie na bieżący dzień. Posiadamy w ofercie sześć modeli Epson ColorWorks, o prędkości do 300 mm/s. Zapraszamy do zapoznania się z ofertą.',
     imageType: 'packshot',
     noOverlay: true,
@@ -154,9 +160,11 @@ export default function Hero() {
 
   useEffect(() => {
     if (isMobile) return
-    const timer = setInterval(next, INTERVAL)
-    return () => clearInterval(timer)
-  }, [next, isMobile])
+    const biezacy = slides[current]
+    const czas = (biezacy.type === 'product' && biezacy.hold) || INTERVAL
+    const timer = setTimeout(next, czas)
+    return () => clearTimeout(timer)
+  }, [next, isMobile, current])
 
   // Na mobile zawsze info slide
   const activeIndex = isMobile ? 0 : current
