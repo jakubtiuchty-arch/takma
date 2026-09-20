@@ -68272,7 +68272,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       },
       {
         question: 'Co daje technologia NVT?',
-        answer: 'NVT (Nozzle Verification Technology) sprawdza dysze w trakcie pracy i gdy któraś przestaje podawać tusz, zastępuje jej krople sąsiednimi dyszami. Bez tego pojedyncza zatkana dysza zostawia widoczną jasną linię wzdłuż całej etykiety, co przy stałej głowicy liniowej byłoby dużym problemem — głowica nie przesuwa się, więc błąd powtarzałby się w tym samym miejscu na każdym wydruku.',
+        answer: 'NVT (Nozzle Verification Technology) sprawdza dysze i gdy któraś przestaje podawać tusz, zastępuje jej krople sąsiednimi — maksymalnie za 16 dysz. Bez tego pojedyncza zatkana dysza zostawia jasną linię wzdłuż całej etykiety, co przy stałej głowicy liniowej jest większym problemem niż w modelach z głowicą przesuwną: głowica stoi w miejscu, więc błąd powtarza się w tym samym punkcie na każdym wydruku. Drukarka sprawdza dysze po włączeniu, po zacięciu i przy czyszczeniu okresowym, ale **kontrola w trakcie drukowania jest fabrycznie wyłączona** — przy pracy na długich seriach warto ją włączyć i ustawić interwał (od 1 do 25 000 wydruków). Jak to zrobić, opisujemy w [instrukcji po polsku](/instrukcje/epson-colorworks-c8000e/instrukcja-po-polsku).',
       },
       {
         question: 'Kiedy C8000e zwraca się wobec C6000?',
