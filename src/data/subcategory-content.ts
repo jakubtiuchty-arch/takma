@@ -3533,8 +3533,8 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   'tusze-do-kolorowych-drukarek': {
     updatedAt: '2026-09-19',
     definition: {
-      heading: 'Tusze do Epson ColorWorks C3500',
-      content: 'ColorWorks C3500 drukuje z czterech osobnych wkładów SJIC22P: czarnego, cyan, magenty i żółtego. Tusz jest pigmentowy: cząstki barwnika po wyschnięciu zostają na powierzchni papieru i nie rozpuszczają się ponownie w wodzie, więc etykieta znosi lodówkę, wilgotne dłonie i tarcie w transporcie. Wkład wymienia się tylko wtedy, gdy skończy się dany kolor. Piątym materiałem jest pojemnik konserwacyjny SJMB3500, który zbiera tusz zużyty przy czyszczeniu głowicy; drukarka sama zgłasza jego zapełnienie.',
+      heading: 'Tusze do Epson ColorWorks',
+      content: 'Każda drukarka ColorWorks ma cztery osobne zbiorniki na tusz: czarny, cyan, magentę i żółty. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki pozostałych. Tusz jest pigmentowy (poza D3800e, gdzie jest barwnikowy): cząstki po wyschnięciu zostają na powierzchni papieru i nie rozpuszczają się ponownie w wodzie, więc etykieta znosi lodówkę, wilgotne dłonie i tarcie w transporcie. Rodziny wkładów nie są wymienne — SJIC22P pasuje do C3500, SJIC42P do C4000e, SJIC57P do D3800e, SJIC36P do C6000 i C6500, a C8000e pracuje na workach SJIC48P po 480 ml. Do kompletu idzie pojemnik konserwacyjny, który zbiera tusz zużyty przy czyszczeniu głowicy; drukarka sama zgłasza jego zapełnienie.',
     },
     buyingGuide: {
       heading: 'Jak kupować tusze do kolorowej drukarki etykiet?',
@@ -3581,7 +3581,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     updatedAt: '2026-09-19',
     definition: {
       heading: 'Etykiety do Epson ColorWorks',
-      content: 'Kolorowa drukarka etykiet potrzebuje papieru z powleczeniem pod tusz pigmentowy: warstwa na wierzchu wchłania tusz i nie pozwala mu się rozlać, dzięki czemu kolory są nasycone, a kody czytelne. Rolki Epson Premium Matte to papier matowy, High Gloss to papier błyszczący, oba samoprzylepne z trwałym klejem akrylowym, w rolkach ciągłych i wykrojonych. Papier Premium Matte Ticket nie ma kleju i służy na bilety. Rolki 33–50-metrowe są do modeli biurkowych C3500, C4000e i D3800e, rolki produkcyjne z 800–2310 etykietami do przemysłowej C6000, a rolki 203 i 210 mm — w tym folia BOPP — do C6500 z pasem druku 212 mm. Tusze i pojemniki konserwacyjne są w osobnej kategorii.',
+      content: 'Kolorowa drukarka etykiet potrzebuje papieru z powleczeniem pod tusz pigmentowy: warstwa na wierzchu wchłania tusz i nie pozwala mu się rozlać, dzięki czemu kolory są nasycone, a kody czytelne. Rolki Epson Premium Matte to papier matowy, High Gloss to papier błyszczący, oba samoprzylepne z trwałym klejem akrylowym, w rolkach ciągłych i wykrojonych. Papier Premium Matte Ticket nie ma kleju i służy na bilety. Rolki 33–50-metrowe są do modeli biurkowych C3500, C4000e i D3800e, rolki produkcyjne z 800–2310 etykietami do przemysłowej C6000, a rolki 203 i 210 mm — w tym folia BOPP — do C6500 z pasem druku 212 mm. C8000e bierze te same rolki 4-calowe co C6000. Tusze i pojemniki konserwacyjne są w osobnej kategorii.',
     },
     buyingGuide: {
       heading: 'Jak dobrać etykiety do kolorowej drukarki?',
