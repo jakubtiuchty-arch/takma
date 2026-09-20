@@ -437,6 +437,74 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
+  'kolorowe-drukarki-etykiet': [
+    {
+      specKey: 'klasa',
+      label: 'Klasa urządzenia',
+      description: 'Do jakiego obciążenia drukarka jest zbudowana.\n• Biurkowa — od kilkudziesięciu do kilkuset etykiet dziennie, stoi na blacie obok stanowiska\n• Przemysłowa — druk całymi zmianami, większe rolki, cięższa obudowa i gwarancja z serwisem u klienta',
+      derived: [
+        { value: 'Biurkowa', notSpecs: ['Klasa urządzenia'] },
+        { value: 'Przemysłowa', pattern: 'przemysłowa', specs: ['Klasa urządzenia'] },
+      ],
+    },
+    {
+      specKey: 'szerokosc',
+      label: 'Szerokość druku',
+      description: 'Najszersza etykieta, jaką drukarka zadrukuje.\n• Do 108 mm (4 cale) — etykiety produktowe, chłodnicze i wysyłkowe; ten format wybiera większość firm\n• Do 212 mm (8 cali) — etykiety na beczki, kanistry i kartony zbiorcze, także formaty zbliżone do A4',
+      derived: [
+        { value: 'do 108 mm (4 cale)', pattern: '10[48] ?mm', specs: ['Szerokość druku'] },
+        { value: 'do 212 mm (8 cali)', pattern: '212 ?mm', specs: ['Szerokość druku'] },
+      ],
+    },
+    {
+      specKey: 'predkosc',
+      label: 'Prędkość druku',
+      description: 'Ile milimetrów etykiety powstaje w sekundę. Przy 100 mm/s etykieta o wysokości 150 mm wychodzi w półtorej sekundy.\n• Do 100 mm/s — pojedyncze etykiety i krótkie serie\n• 100–150 mm/s — praca przez całą zmianę\n• Powyżej 150 mm/s — etykietowanie na linii produkcyjnej',
+      derived: [
+        { value: 'do 100 mm/s', pattern: '(8[0-9]|9[0-9]|100) ?mm/s', specs: ['Prędkość druku'] },
+        { value: '100–150 mm/s', pattern: '(10[1-9]|1[1-4][0-9]) ?mm/s', specs: ['Prędkość druku'] },
+        { value: 'powyżej 150 mm/s', pattern: '(1[5-9][0-9]|[2-9][0-9]{2}) ?mm/s', specs: ['Prędkość druku'] },
+      ],
+    },
+    {
+      specKey: 'tusz',
+      label: 'Rodzaj tuszu',
+      description: 'Czym drukarka nanosi kolor.\n• Pigmentowy — po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle; etykiety chłodnicze, chemiczne i produktowe\n• Barwnikowy — mocniejsze, głębsze kolory na papierze błyszczącym, ale nadruk jest wrażliwy na wilgoć',
+      derived: [
+        { value: 'Pigmentowy', pattern: 'pigmentow', specs: ['Technologia druku'] },
+        { value: 'Barwnikowy', pattern: 'barwnikow', specs: ['Technologia druku'] },
+      ],
+    },
+    {
+      specKey: 'wykonczenie',
+      label: 'Odbiór etykiety',
+      description: 'Co dzieje się z etykietą po wydruku.\n• Gilotyna — drukarka odcina każdą etykietę; konieczna przy rolkach ciągłych, na których długość ustawia się w projekcie\n• Odklejak — oddziela etykietę od podkładu i podaje gotową do naklejenia, a podkład nawija na szpulę. To osobna wersja drukarki, nie dokładana opcja',
+      derived: [
+        { value: 'Gilotyna', pattern: 'automatyczna|w zestawie|w standardzie', specs: ['Gilotyna'] },
+        { value: 'Gilotyna', pattern: 'gilotyn', specs: ['Wersje'] },
+        { value: 'Odklejak (wersja Pe)', pattern: 'odklejak', specs: ['Wersje'] },
+      ],
+    },
+    {
+      specKey: 'rozdzielczosc',
+      label: 'Rozdzielczość',
+      description: 'Gęstość kropel tuszu.\n• 720 × 360 dpi — logo, piktogramy i kody kreskowe w typowej etykiecie produktowej\n• 600 × 1200 dpi — drobny skład i gęste kody 2D\n• 1200 × 1200 dpi — zdjęcia produktu i mikrotekst',
+      derived: [
+        { value: '720 × 360 dpi', pattern: '720 ?× ?360', specs: ['Rozdzielczość'] },
+        { value: '600 × 1200 dpi', pattern: 'do 600 ?× ?1200', specs: ['Rozdzielczość'] },
+        { value: '1200 × 1200 dpi', pattern: '1200 ?× ?1200', specs: ['Rozdzielczość'] },
+      ],
+    },
+    {
+      specKey: 'cena',
+      label: 'Cena netto',
+      derived: [
+        { value: 'do 10 000 zł', priceMax: 10000 },
+        { value: '10 000 – 20 000 zł', priceMin: 10000, priceMax: 20000 },
+        { value: 'powyżej 20 000 zł', priceMin: 20000 },
+      ],
+    },
+  ],
   'drukarki-etykiet': [
     {
       specKey: 'producent',
