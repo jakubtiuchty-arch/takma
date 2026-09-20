@@ -16,6 +16,14 @@ export type ServiceBrand = {
   heroImage?: string
   /** Baner serwisowy na końcu kart produktów tej marki (Higgsfield, 21:9) */
   bannerImage?: string
+  /** Jak wkomponować baner: 'contain' (grafika z wtopionymi krawędziami, domyślnie)
+   *  albo 'cover' (zwykłe zdjęcie wypełniające panel, przykryte gradientem). */
+  bannerFit?: 'contain' | 'cover'
+  /** Kadr przy `cover` — panel jest bardzo szeroki, więc widoczny pas trzeba wskazać. */
+  bannerPosition?: string
+  /** Własne zdanie i przycisk na banerze; bez nich komponent użyje tekstów domyślnych. */
+  bannerLead?: string
+  bannerCta?: string
   /** Override wariantu cennika. Dla marek które mają np. drukarki + terminale
    *  (jak Honeywell) ustaw 'all'. Domyślnie wyliczane z category. */
   pricingVariant?: 'printers' | 'devices' | 'cardPrinters' | 'all'
@@ -564,6 +572,10 @@ export const serviceBrands: ServiceBrand[] = [
     heroDescription: 'Naprawiamy wszystkie ColorWorks: od biurkowej C3500 po przemysłową C8000e. Najczęściej zatkane dysze, pełny pojemnik konserwacyjny i gilotyna. Diagnostyka w 48 godzin, kurier odbiera z całej Polski.',
     heroImage: '/images/serwis-hero/epson-colorworks-hero.webp',
     bannerImage: '/images/serwis-banner/epson-colorworks-banner-v2.webp',
+    bannerFit: 'cover',
+    bannerPosition: '62% 62%',
+    bannerLead: 'Zatkane dysze po przestoju, białe pasy na wydruku, pełny pojemnik konserwacyjny, gilotyna i odklejak. Diagnostyka w 48 godzin, odbiór kurierem z całej Polski.',
+    bannerCta: 'Zobacz serwis ColorWorks',
     crossSell: 'kolorowe drukarki etykiet, tusze SJIC, pojemniki konserwacyjne i nośniki Epson w cenach B2B',
     heroLead: 'Drukarka atramentowa psuje się inaczej niż termotransferowa. Zamiast głowicy i wałka wymieniamy najczęściej pojemnik konserwacyjny, przepłukujemy dysze po kilku tygodniach przestoju i kalibrujemy czujnik nośnika. Naprawiamy modele z bieżącej oferty — C3500, D3800e, C4000e, C6000, C6500 i C8000e — oraz starsze C7500. Diagnostyka w 48 godzin, urządzenie wraca z wydrukiem testowym CMYK.',
     metaTitle: 'Serwis Epson ColorWorks — naprawa kolorowych drukarek etykiet | TAKMA',

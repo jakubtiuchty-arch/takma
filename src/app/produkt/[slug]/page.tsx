@@ -57,7 +57,7 @@ import { activePromo } from '@/data/promos'
 import ContextAvailabilityBadge from './ContextAvailabilityBadge'
 import ComparisonTable from './ComparisonTable'
 import SpecsAccordion from './SpecsAccordion'
-import { getBrandBySlug as getServiceBrandBySlug } from '@/app/serwis/_data/brands'
+import { getBrandBySlug as getServiceBrandBySlug, brandUrl } from '@/app/serwis/_data/brands'
 import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
@@ -1731,7 +1731,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {(() => {
               const sb = getServiceBrandBySlug(product.manufacturerId)
               // karta może mieć własną grafikę banera (np. Prima 8 zamiast Magicard 300)
-              if (sb?.bannerImage) return <ServiceBanner brandName={sb.name} brandSlug={sb.slug} image={product.serviceBannerImage ?? sb.bannerImage} />
+              if (sb?.bannerImage) return (
+                <ServiceBanner
+                  brandName={sb.name}
+                  href={brandUrl(sb)}
+                  image={product.serviceBannerImage ?? sb.bannerImage}
+                  imageFit={sb.bannerFit}
+                  imagePosition={sb.bannerPosition}
+                  lead={sb.bannerLead}
+                  cta={sb.bannerCta}
+                />
+              )
 
               // Zebra: urządzenia z wariantami oraz części serwisowe (głowice, wałki, obcinaki, odklejaki)
               // części serwisowe stoją w kategoriach materiałów i akcesoriów, więc bez wpisu w mapie

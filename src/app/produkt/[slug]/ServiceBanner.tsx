@@ -35,8 +35,9 @@ export default function ServiceBanner({
    *  Inline style, bo Tailwind nie wygeneruje klasy z wartości podanej w propsie. */
   imagePosition?: string
 }) {
-  const zewnetrzny = Boolean(href)
+  // Adres zaczynający się od „/” to nasza strona — otwieramy w tej samej karcie.
   const adres = href ?? `/serwis/${brandSlug}`
+  const zewnetrzny = adres.startsWith('http')
   const tekstCta = cta ?? `Sprawdź serwis urządzeń ${brandName}`
 
   return (
