@@ -44,6 +44,7 @@ import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
 import { BundleContents } from './BundleBox'
 import BundleBanner from './BundleBanner'
+import ProductVideos from '@/components/product/ProductVideos'
 import ServiceBanner from './ServiceBanner'
 import { serviceLinks } from '@/components/ui/ServiceBanner'
 import PromoBanner from './PromoBanner'
@@ -212,13 +213,6 @@ export async function generateStaticParams() {
   return products.map((product) => ({
     slug: product.slug,
   }))
-}
-
-/** YouTube nie osadza adresów „watch?v=" ani „youtu.be/" — zamieniamy je na formę embed.
- *  Inne adresy (Vidyard, własne MP4) zostają bez zmian. */
-function adresOsadzenia(url: string): string {
-  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/)
-  return m ? `https://www.youtube-nocookie.com/embed/${m[1]}` : url
 }
 
 export default async function ProductPage({ params, searchParams }: ProductPageProps) {
@@ -749,44 +743,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {product.videos?.length ? (
               <section id="video">
                 <VideoTracker />
-                <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
-                {/* Zdanie zależy od zestawu filmów: przy pełnym cyklu mówimy o kolejności, przy dwóch nie ma czego porządkować. */}
-                <p className="mb-4 text-sm text-gray-500">
-                  {product.videos.every((v) => v.native)
-                    ? `Filmy producenta z polskim lektorem i napisami${product.videos.length > 2 ? ', w kolejności od rozpakowania do czyszczenia.' : '.'}`
-                    : `Instruktaże producenta${product.videos.length > 2 ? ', w kolejności od rozpakowania po konfigurację sterownika.' : '.'}`}
-                </p>
-                <div className="grid gap-5 sm:grid-cols-2">
-                  {product.videos.map((v) => (
-                    <figure key={v.url}>
-                      <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
-                        {v.native ? (
-                          <video
-                            src={v.url}
-                            poster={v.poster}
-                            className="w-full h-full object-contain bg-black"
-                            controls
-                            preload="none"
-                            playsInline
-                            title={v.title}
-                          >
-                            {v.captions && <track kind="subtitles" src={v.captions} srcLang="pl" label="Polski" default />}
-                          </video>
-                        ) : (
-                          <iframe
-                            src={adresOsadzenia(v.url)}
-                            className="w-full h-full"
-                            allowFullScreen
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            title={v.title}
-                            loading="lazy"
-                          />
-                        )}
-                      </div>
-                      <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
-                    </figure>
-                  ))}
-                </div>
+                <ProductVideos videos={product.videos} />
               </section>
             ) : null}
 
