@@ -19,15 +19,40 @@ import { subcategoryContent, type ComparisonTable } from '@/data/subcategory-con
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
 import KalkulatorKosztuEtykiet from '@/components/subcategory/KalkulatorKosztuEtykiet'
+import SekcjaZwijana from '@/components/subcategory/SekcjaZwijana'
 import BrandServiceBanner from '@/app/produkt/[slug]/ServiceBanner'
 
-/** Zestawienie modeli. Tabela jest szersza niż telefon, więc przewija się we własnym kontenerze. */
+/**
+ * Zestawienie modeli. Sześć kolumn nie mieści się na telefonie, a przewijanie w bok gubi
+ * nazwę modelu, więc poniżej md każdy model dostaje własną kartę z parami parametr–wartość.
+ * Od md wraca zwykła tabela.
+ */
 function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
   return (
     <section>
       <h2 className="text-2xl font-bold text-gray-900 mb-3">{table.heading}</h2>
       {table.intro && <p className="text-gray-600 leading-relaxed mb-4 sm:text-justify">{table.intro}</p>}
-      <div className="overflow-x-auto rounded-xl border border-gray-200">
+
+      <div className="space-y-3 md:hidden">
+        {table.rows.map((row) => (
+          <div key={row.model} className="rounded-xl border border-gray-200">
+            <div className="border-b border-gray-200 px-4 py-3">
+              <Link href={row.href} className="font-semibold text-primary-600">{row.model}</Link>
+              {row.role && <p className="mt-0.5 text-xs leading-relaxed text-gray-500">{row.role}</p>}
+            </div>
+            <dl className="divide-y divide-gray-100 text-sm">
+              {table.columns.map((c, i) => (
+                <div key={c} className="flex gap-3 px-4 py-2">
+                  <dt className="w-[42%] shrink-0 text-xs leading-5 text-gray-500">{c}</dt>
+                  <dd className="flex-1 text-gray-900">{row.cells[i]}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        ))}
+      </div>
+
+      <div className="hidden overflow-x-auto rounded-xl border border-gray-200 md:block">
         <table className="w-full min-w-[46rem] border-collapse text-sm">
           <thead>
             <tr className="bg-gray-50 text-left">
@@ -405,7 +430,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               <div className="mt-12 space-y-10">
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
-                  <p className="text-gray-600 leading-relaxed sm:text-justify">{content.definition.content}</p>
+                  <RichText text={content.definition.content} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                 </section>
 
                 {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} />}
@@ -424,6 +449,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.buyingGuide.heading}</h2>
+                  <SekcjaZwijana etykieta="Pokaż wszystkie punkty">
                   <ul className="space-y-3">
                     {content.buyingGuide.items.map((item, i) => {
                       const dashIndex = item.indexOf(' — ')
@@ -443,6 +469,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                       )
                     })}
                   </ul>
+                  </SekcjaZwijana>
                 </section>
 
                 <section className="bg-gray-50 rounded-xl p-6">
@@ -452,11 +479,14 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
-                  <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                  <SekcjaZwijana etykieta="Rozwiń opis">
+                    <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                  </SekcjaZwijana>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">Scenariusze zastosowań</h2>
+                  <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {content.useCases.map((uc, i) => (
                       <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
@@ -465,10 +495,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                       </div>
                     ))}
                   </div>
+                  </SekcjaZwijana>
                 </section>
 
                 <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
                   <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
+                  <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
                   <div className="space-y-4">
                     {content.uniqueInsights.items.map((item, i) => (
                       <div key={i}>
@@ -479,6 +511,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                       </div>
                     ))}
                   </div>
+                  </SekcjaZwijana>
                 </section>
 
                 {content.comparisons.length > 0 && (
@@ -486,7 +519,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównanie</h2>
                     <div className="space-y-4">
                       {content.comparisons.map((comp, i) => (
-                        <div key={i} className="border-l-4 border-primary-500 pl-4">
+                        <div key={i} className="rounded-xl border border-gray-200 p-4">
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
                           <RichText text={comp.content} className="text-gray-600 text-sm leading-relaxed space-y-2" />
                         </div>
@@ -663,11 +696,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 <div className="mt-12 space-y-10">
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
-                    <p className="text-gray-600 leading-relaxed sm:text-justify">{content.definition.content}</p>
+                    <RichText text={content.definition.content} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                   </section>
 
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.buyingGuide.heading}</h2>
+                    <SekcjaZwijana etykieta="Pokaż wszystkie punkty">
                     <ul className="space-y-3">
                       {content.buyingGuide.items.map((item, i) => {
                         const dashIndex = item.indexOf(' — ')
@@ -687,6 +721,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                         )
                       })}
                     </ul>
+                    </SekcjaZwijana>
                   </section>
 
                   <section className="bg-gray-50 rounded-xl p-6">
@@ -696,11 +731,14 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
+                    <SekcjaZwijana etykieta="Rozwiń opis">
                     <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                  </SekcjaZwijana>
                   </section>
 
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Scenariusze zastosowań</h2>
+                    <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {content.useCases.map((uc, i) => (
                         <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
@@ -709,10 +747,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                         </div>
                       ))}
                     </div>
+                    </SekcjaZwijana>
                   </section>
 
                   <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
                     <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
+                    <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
                     <div className="space-y-4">
                       {content.uniqueInsights.items.map((item, i) => (
                         <div key={i}>
@@ -723,6 +763,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                         </div>
                       ))}
                     </div>
+                    </SekcjaZwijana>
                   </section>
 
                   {content.comparisons.length > 0 && (
@@ -730,7 +771,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                       <h2 className="text-2xl font-bold text-gray-900 mb-4">Porównanie</h2>
                       <div className="space-y-4">
                         {content.comparisons.map((comp, i) => (
-                          <div key={i} className="border-l-4 border-primary-500 pl-4">
+                          <div key={i} className="rounded-xl border border-gray-200 p-4">
                             <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
                             <RichText text={comp.content} className="text-gray-600 text-sm leading-relaxed space-y-2" />
                           </div>

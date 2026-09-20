@@ -657,7 +657,7 @@ export default function FilterableProductGrid({
               value={sortowanie}
               onChange={e => setSortowanie(e.target.value as typeof sortowanie)}
               aria-label="Sortowanie listy produktów"
-              className="border border-gray-200 rounded-lg px-2.5 py-1.5 text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-primary-500/30"
+              className="border border-gray-200 rounded-lg px-2.5 py-2 text-base text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-primary-500/30 sm:py-1.5 sm:text-sm"
             >
               <option value="domyslne">Domyślnie</option>
               <option value="cena-rosnaco">Cena rosnąco</option>

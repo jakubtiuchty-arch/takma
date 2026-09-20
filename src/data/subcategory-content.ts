@@ -3502,7 +3502,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     updatedAt: '2026-09-20',
     definition: {
       heading: 'Co to jest kolorowa drukarka etykiet?',
-      content: 'Kolorowa drukarka etykiet drukuje na rolce w pełnym kolorze, tak jak biurowa drukarka atramentowa na kartce, tylko na papierze samoprzylepnym z powleczeniem pod tusz i z gilotyną albo odklejakiem na wyjściu. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu: czarny, cyan, magentę i żółty. Cała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury. W ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
+      content: 'Kolorowa drukarka etykiet drukuje na rolce w pełnym kolorze, tak jak biurowa drukarka atramentowa na kartce, tylko na papierze samoprzylepnym z powleczeniem pod tusz i z gilotyną albo odklejakiem na wyjściu. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu: czarny, cyan, magentę i żółty.\n\nCała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury.\n\nW ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
     },
     comparisonTable: {
       heading: 'Sześć modeli ColorWorks — czym się różnią',
