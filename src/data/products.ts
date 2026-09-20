@@ -68096,11 +68096,13 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     manufacturerId: 'epson',
     priceFrom: 32733.67,
     images: [
+      '/images/products/epson-colorworks-c8000e.png',
       '/images/products/epson-colorworks-c8000e-etykieta.png',
       '/images/products/epson-colorworks-c8000e-front.png',
       '/images/products/epson-colorworks-c8000e-tusze.png',
     ],
     imageDescriptions: [
+      'Epson ColorWorks C8000e pod kątem, widoczny panel sterowania i prawy bok z gniazdami',
       'Epson ColorWorks C8000e z wydrukowaną kolorową etykietą',
       'Epson ColorWorks C8000e od przodu, z panelem sterowania i wyświetlaczem LCD',
       'Epson ColorWorks C8000e z otwartą komorą tuszu i czterema workami 480 ml',
