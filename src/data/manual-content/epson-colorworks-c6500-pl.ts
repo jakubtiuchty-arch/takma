@@ -311,17 +311,8 @@ export const epsonColorworksC6500Pl: PolishManual = {
           text: 'Obudowę przecieraj suchą albo lekko zwilżoną ściereczką. Bez alkoholu, benzyny, rozcieńczalnika i rozpuszczalników ketonowych — odkształcają plastik i gumę. Wnętrze czyści się przy wyłączonym zasilaniu i wyjętym papierze.',
         },
         {
-          type: 'list',
-          items: [
-            '**Nóż (wersja Ae)** — osad z kleju zeskrob płaskim śrubokrętem o końcówce **1,8–3,0 mm**, od obu końców ku środkowi, opierając końcówkę o dno szczeliny wysuwania. Przy 212 mm ostrza roboty jest więcej niż w modelach wąskich, więc nie skracaj tego zabiegu.',
-            '**Mechanizm ściągania (wersja Pe)** — rolka, płatek z alkoholem, najlepiej codziennie.',
-            '**Prowadnice papieru i płyta dociskowa** — płatek z alkoholem; na płycie czyść wyłącznie pole wskazane w instrukcji, po podniesieniu uchwytu na papier.',
-            '**Rolka podajnika i rolka przytrzymująca** — tylko **klejącą stroną etykiety**: przyłóż, powoli odrywaj, obracaj rolkę ręką, aż zejdzie pył i klej. Inne materiały uszkadzają powierzchnię rolki.',
-          ],
-        },
-        {
           type: 'p',
-          text: 'Rolkę podajnika producent zaleca czyścić **raz w tygodniu**. To pierwsza rzecz do sprawdzenia przy zamazanych wydrukach i powtarzających się zacięciach.',
+          text: '**Nóż (wersja Ae).** Osad z kleju zeskrob płaskim śrubokrętem o końcówce **1,8–3,0 mm**, od obu końców ku środkowi, opierając końcówkę o dno szczeliny wysuwania. Przy 212 mm ostrza roboty jest więcej niż w modelach wąskich, więc nie skracaj tego zabiegu.',
         },
         {
           type: 'youtube',
@@ -329,9 +320,26 @@ export const epsonColorworksC6500Pl: PolishManual = {
           caption: 'Czyszczenie noża w wersji z gilotyną (film Epsona, po angielsku)',
         },
         {
+          type: 'p',
+          text: '**Mechanizm ściągania (wersja Pe).** Rolka, płatek kosmetyczny z alkoholem, najlepiej codziennie — klej i pył papierowy zbierają się tam najszybciej.',
+        },
+        {
           type: 'youtube',
           id: '8yu7_egPL74',
           caption: 'Czyszczenie mechanizmu ściągania etykiet w wersji Pe (film Epsona, po angielsku)',
+        },
+        {
+          type: 'p',
+          text: '**Prowadnice krawędziowe.** Na szerokiej wstędze mają najwięcej do powiedzenia: osad na prowadnicy przesuwa papier na bok, a przy 212 mm widać to na wydruku od razu. Płatek z alkoholem, przy wyjętym papierze.',
+        },
+        {
+          type: 'youtube',
+          id: 'iXoz-g8EaSo',
+          caption: 'Czyszczenie prowadnic krawędziowych (film Epsona, po angielsku)',
+        },
+        {
+          type: 'p',
+          text: '**Płyta dociskowa.** Podnieś uchwyt na papier i zetrzyj klej wyłącznie z pola wskazanego w instrukcji; sąsiedniego obszaru nie wolno czyścić.',
         },
         {
           type: 'youtube',
@@ -339,19 +347,22 @@ export const epsonColorworksC6500Pl: PolishManual = {
           caption: 'Czyszczenie płyty dociskowej (film Epsona, po angielsku)',
         },
         {
+          type: 'p',
+          text: '**Rolka podajnika papieru.** Tylko **klejącą stroną etykiety**: przyłóż, powoli odrywaj, obracaj rolkę ręką, aż zejdzie pył i klej. Inne materiały uszkadzają powierzchnię rolki. Producent zaleca **raz w tygodniu** — to pierwsza rzecz do sprawdzenia przy zamazanych wydrukach i powtarzających się zacięciach.',
+        },
+        {
           type: 'youtube',
           id: 'Ig2f5opUIpc',
           caption: 'Czyszczenie rolki podajnika papieru (film Epsona, po angielsku)',
         },
         {
-          type: 'youtube',
-          id: 'O1bNKM3qJZg',
-          caption: 'Czyszczenie rolki przytrzymującej papier (film Epsona, po angielsku)',
+          type: 'p',
+          text: '**Rolka przytrzymująca papier.** Ta sama metoda, tylko dostajesz się do niej po podniesieniu dźwigni zwalniania i otwarciu przedniej pokrywy.',
         },
         {
           type: 'youtube',
-          id: 'iXoz-g8EaSo',
-          caption: 'Czyszczenie prowadnic papieru (film Epsona, po angielsku)',
+          id: 'O1bNKM3qJZg',
+          caption: 'Czyszczenie rolki przytrzymującej papier (film Epsona, po angielsku)',
         },
       ],
     },
@@ -540,6 +551,11 @@ export const epsonColorworksC6500Pl: PolishManual = {
           type: 'youtube',
           id: 'arZ_-Ve3pxA',
           caption: 'Usuwanie zaciętego papieru w wersji z gilotyną (film Epsona, po angielsku)',
+        },
+        {
+          type: 'youtube',
+          id: 'G7iJvrpU_dk',
+          caption: 'Usuwanie zaciętego papieru w wersji z odklejakiem (film Epsona, po angielsku)',
         },
       ],
     },
