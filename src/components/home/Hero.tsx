@@ -64,8 +64,8 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   {
     type: 'product',
-    image: '/images/hero-colorworks-poster.webp',
-    video: '/video/hero-colorworks.mp4',
+    image: '/images/hero-colorworks-poster-v2.webp',
+    video: '/video/hero-colorworks-v2.mp4',
     noZoom: true,
     hold: 10500,
     name: 'Kolorowe etykiety prosto z drukarki',
