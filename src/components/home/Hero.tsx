@@ -67,7 +67,7 @@ const slides: HeroSlide[] = [
     href: '/kolorowe-drukarki-etykiet',
     ctaLabel: 'Zobacz kolorowe drukarki',
     imageAlt: 'Epson ColorWorks C8000e drukuje kolorową etykietę, z której wystrzeliwuje wybuch tuszu w kolorach CMYK',
-    tagline: 'Koniec z zamawianiem zadrukowanych rolek w drukarni. Logo, zdjęcie produktu i piktogramy GHS drukujesz u siebie — sześć modeli Epson ColorWorks, do 300 mm/s.',
+    tagline: 'Kolorowa etykieta z logo, zdjęciem produktu albo oznaczeniem GHS powstaje na miejscu, w nakładzie na bieżący dzień. Posiadamy w ofercie sześć modeli Epson ColorWorks, o prędkości do 300 mm/s. Zapraszamy do zapoznania się z ofertą.',
     imageType: 'packshot',
     noOverlay: true,
     bgColor: '#000000',
