@@ -36,6 +36,7 @@ import { magicard300Pl } from './manual-content/magicard-300-pl'
 import { magicardPronto100Pl } from './manual-content/magicard-pronto100-pl'
 import { magicard600Pl } from './manual-content/magicard-600-pl'
 import { epsonColorworksC3500Pl } from './manual-content/epson-colorworks-c3500-pl'
+import { epsonColorworksD3800ePl } from './manual-content/epson-colorworks-d3800e-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -1138,6 +1139,31 @@ export const manuals: Manual[] = [
       'magicard 600 holokote',
     ],
     updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'epson-colorworks-d3800e',
+    model: 'ColorWorks D3800e',
+    name: 'Epson ColorWorks D3800e',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Kolorowa drukarka etykiet z tuszem barwnikowym, gilotyną i Ethernetem 1000BASE-T. Instrukcja po polsku: dopuszczalne nośniki, zakładanie rolki i składanki, przysłony na płycie dociskowej, wymiana wkładów SJIC57P i zbiornika SJMB4000, czyszczenie głowicy, komunikaty i typowe problemy z wydrukiem.',
+    productSlug: 'epson-colorworks-d3800e',
+    documents: [
+      { type: 'user-guide', title: 'Przewodnik użytkownika CW-D3800 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-d3800e-ug-pl.pdf', size: '9,4 MB' },
+      { type: 'quick-start', title: 'Rozpakowanie i pierwsze uruchomienie (arkusz Start Here)', lang: 'pl', file: '/instrukcje/epson-colorworks-d3800e-qs-pl.pdf', size: '5,3 MB' },
+      { type: 'programming', title: 'Technical Reference Guide CW-D3800 Series (pełna dokumentacja techniczna)', lang: 'en', file: '/instrukcje/epson-colorworks-d3800e-trg-en.pdf', size: '24,8 MB' },
+    ],
+    polishManual: epsonColorworksD3800ePl,
+    keywords: [
+      'epson colorworks d3800e instrukcja',
+      'cw-d3800 instrukcja po polsku',
+      'epson d3800e instrukcja obsługi pdf',
+      'colorworks d3800e wymiana tuszu',
+      'd3800e zbiornik na zużyty atrament',
+      'sjic57p wymiana wkładu',
+    ],
+    updatedAt: '2026-09-20',
   },
   {
     slug: 'epson-colorworks-c3500',
