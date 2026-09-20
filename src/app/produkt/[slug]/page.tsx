@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getProductStock, getBundleLivePrices, getSchemaOffer } from '@/lib/product-stock'
+import { getProductStock, getBundleLivePrices, getSchemaOffer, getSchemaOffers } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
 import LiveProductSchema from './LiveProductSchema'
@@ -430,32 +430,57 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   // Build isRelatedTo from accessories and compatible labels
   // Use @id reference instead of nested Product to avoid GSC "missing offers" error
-  const relatedProductsForSchema = [
+  const schemaRelatedProducts = [
     ...relatedAccessories.slice(0, 5),
     ...compatibleConsumables.slice(0, 3),
-  ].filter(Boolean).map((p) => product.manufacturerId === 'magicard' ? {
-    '@id': `https://www.takma.com.pl/produkt/${p!.slug}`,
-  } : ({
-    '@type': 'Product' as const,
-    name: p!.name,
-    url: `https://www.takma.com.pl/produkt/${p!.slug}`,
-    ...(p!.priceFrom && p!.priceFrom > 0 ? {
-      offers: {
-        '@type': 'Offer' as const,
-        price: p!.priceFrom.toFixed(2),
-        priceCurrency: 'PLN',
-        availability: availabilitySchemaMap[p!.availability],
-      },
-    } : {}),
-  }))
+  ].filter(Boolean)
 
   // Numer katalogowy do schema: wariant → wiersz „Part Number” w specyfikacji → id (produkty bez
   // wariantów, np. Epson, miały w sku/mpn własny slug zamiast PN)
   const specPartNumber = product.specifications.find((s) => s.name === 'Part Number')?.value
   const schemaPartNumber = product.variants?.[0]?.partNumber || specPartNumber || product.id
+  const partNumberOf = (p: { specifications?: { name: string; value: string }[] }) =>
+    p.specifications?.find((s) => s.name === 'Part Number')?.value
+
+  // Ceny na żywo do schema — jednym zapytaniem dla wariantów i akcesoriów. Google porównuje cenę
+  // w schema z ceną widoczną na karcie, a karta liczy z /api/stock, nie ze statycznego priceFrom.
+  const schemaLivePartNumbers = [
+    ...(product.variants ?? []).map((v) => v.partNumber),
+    ...schemaRelatedProducts.map((p) => partNumberOf(p!)),
+  ].filter((pn): pn is string => !!pn)
+  // Karty z `liveOffers` renderują własny JSON-LD (LiveProductSchema) z tego samego snapshotu,
+  // więc drugie zapytanie byłoby zmarnowane.
+  const liveSchemaOffers = !liveOffers && schemaLivePartNumbers.length > 0
+    ? await getSchemaOffers(Array.from(new Set(schemaLivePartNumbers)).join(','))
+    : undefined
+
+  const relatedProductsForSchema = schemaRelatedProducts.map((p) => {
+    if (product.manufacturerId === 'magicard') return { '@id': `https://www.takma.com.pl/produkt/${p!.slug}` }
+    const live = liveSchemaOffers?.get(partNumberOf(p!) ?? '')
+    const price = live?.price ?? (p!.priceFrom && p!.priceFrom > 0 ? p!.priceFrom : undefined)
+    return {
+      '@type': 'Product' as const,
+      name: p!.name,
+      url: `https://www.takma.com.pl/produkt/${p!.slug}`,
+      ...(price ? {
+        offers: {
+          '@type': 'Offer' as const,
+          price: price.toFixed(2),
+          priceCurrency: 'PLN',
+          availability: availabilitySchemaMap[live?.availability ?? p!.availability],
+        },
+      } : {}),
+    }
+  })
+
   // Żywa cena i dostępność z dystrybutorów dla produktu bez wariantów — to, co widzi klient na karcie.
   // Bez niej schema miała statyczny priceFrom albo (przy jego braku) żadnej oferty, choć karta pokazywała cenę.
   const liveOffer = !product.variants?.length ? await getSchemaOffer(specPartNumber) : undefined
+  /** Cena i dostępność wariantu: najpierw dystrybutor, potem statyczny katalog. */
+  const variantLivePrice = (v: { partNumber: string; priceFrom?: number }) =>
+    liveSchemaOffers?.get(v.partNumber)?.price ?? (v.priceFrom && v.priceFrom > 0 ? v.priceFrom : undefined)
+  const variantLiveAvailability = (v: { partNumber: string; availability: keyof typeof availabilitySchemaMap }) =>
+    liveSchemaOffers?.get(v.partNumber)?.availability ?? v.availability
   // Check if product has any valid price (> 0) at product or variant level (albo żywa oferta)
   const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
     (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer
@@ -539,9 +564,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     ...(hasValidPrice ? {
       offers: magicardOffer ?? (product.variants && product.variants.length > 0
         ? (() => {
-            const variantPrices = product.variants.filter((v) => v.priceFrom && v.priceFrom > 0).map((v) => v.priceFrom!)
-            const lowPrice = variantPrices.length > 0 ? Math.min(...variantPrices) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
-            const highPrice = variantPrices.length > 0 ? Math.max(...variantPrices) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
+            // Cena wariantu: dystrybutor → katalog. Musi zgadzać się z ceną na karcie.
+            const wyceny = product.variants.map((v) => ({ v, price: variantLivePrice(v) }))
+            const zCena = wyceny.filter((x) => x.price && x.price > 0)
+            const ceny = zCena.map((x) => x.price!)
+            const lowPrice = ceny.length > 0 ? Math.min(...ceny) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
+            const highPrice = ceny.length > 0 ? Math.max(...ceny) : lowPrice
+            // Dostępność agregatu wynika z wariantów: dostępny > w dostawie > niedostępny
+            const dostepnosci = product.variants.map((v) => variantLiveAvailability(v))
+            const dostepnoscAgregatu = dostepnosci.includes('available') ? 'available'
+              : dostepnosci.includes('on-order') ? 'on-order'
+              : dostepnosci.length > 0 ? 'unavailable'
+              : product.availability
             return {
             '@type': 'AggregateOffer' as const,
             url: `https://www.takma.com.pl/produkt/${product.slug}`,
@@ -549,40 +583,21 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             highPrice: (highPrice || lowPrice)!.toFixed(2),
             priceCurrency: 'PLN',
             offerCount: product.variants.length,
-            availability: availabilitySchemaMap[product.availability],
+            availability: availabilitySchemaMap[dostepnoscAgregatu],
             priceValidUntil: priceValidUntil,
-            offers: (() => {
-              const variantsWithPrice = product.variants!.filter((v) => v.priceFrom && v.priceFrom > 0)
-              if (variantsWithPrice.length > 0) {
-                return variantsWithPrice.map((v) => ({
-                  '@type': 'Offer' as const,
-                  url: `https://www.takma.com.pl/produkt/${product.slug}`,
-                  sku: v.partNumber,
-                  mpn: v.partNumber,
-                  name: `${product.name} — ${v.name}`,
-                  price: v.priceFrom!.toFixed(2),
-                  priceCurrency: 'PLN',
-                  availability: availabilitySchemaMap[v.availability],
-                  itemCondition: 'https://schema.org/NewCondition',
-                  priceValidUntil,
-                  seller: sellerOrg,
-                }))
-              }
-              // Fallback: variants without individual prices — use product-level priceFrom
-              return product.variants!.map((v) => ({
-                '@type': 'Offer' as const,
-                url: `https://www.takma.com.pl/produkt/${product.slug}`,
-                sku: v.partNumber,
-                mpn: v.partNumber,
-                name: `${product.name} — ${v.name}`,
-                price: product.priceFrom!.toFixed(2),
-                priceCurrency: 'PLN',
-                availability: availabilitySchemaMap[v.availability],
-                itemCondition: 'https://schema.org/NewCondition',
-                priceValidUntil,
-                seller: sellerOrg,
-              }))
-            })(),
+            offers: (zCena.length > 0 ? zCena : wyceny.map((x) => ({ ...x, price: product.priceFrom }))).map(({ v, price }) => ({
+              '@type': 'Offer' as const,
+              url: `https://www.takma.com.pl/produkt/${product.slug}`,
+              sku: v.partNumber,
+              mpn: v.partNumber,
+              name: `${product.name} — ${v.name}`,
+              price: price!.toFixed(2),
+              priceCurrency: 'PLN',
+              availability: availabilitySchemaMap[variantLiveAvailability(v)],
+              itemCondition: 'https://schema.org/NewCondition',
+              priceValidUntil,
+              seller: sellerOrg,
+            })),
           }
           })()
         : {

@@ -44,6 +44,30 @@ export const getSchemaOffer = cache(async (
 })
 
 /**
+ * To samo dla wielu numerów naraz: warianty w AggregateOffer i akcesoria w `isRelatedTo`.
+ * Bez tego schema wariantów brała statyczny priceFrom i rozjeżdżała się z ceną na karcie
+ * (drukarki Epson: 1–2 %, worki SJIC48P: 3 %). Klucz to numery po przecinku, żeby `cache`
+ * miał porównywalny argument. Błąd dystrybutora = pusta mapa, wszystko wraca do priceFrom.
+ */
+export const getSchemaOffers = cache(async (
+  partNumbersKey: string,
+): Promise<Map<string, { price: number; availability: StockInfo['availability'] }>> => {
+  const out = new Map<string, { price: number; availability: StockInfo['availability'] }>()
+  const partNumbers = partNumbersKey.split(',').filter(Boolean)
+  if (partNumbers.length === 0) return out
+  try {
+    const response = await lookupUnifiedStock(partNumbers)
+    for (const row of response.body.results ?? []) {
+      if (!row?.found || row.price == null || row.price <= 0) continue
+      out.set(row.partNumber, { price: row.price, availability: row.availability })
+    }
+  } catch (error) {
+    console.error('[schema] brak cen na żywo dla', partNumbers.join(', '), error)
+  }
+  return out
+})
+
+/**
  * Ceny netto na żywo dla zestawu startowego i jego składników (PN → cena). Baner „zamiast X zł”
  * i sekcja „Co jest w zestawie” liczą z tego samego źródła co cena drukarki obok.
  * Brak odpowiedzi dystrybutora = pusta mapa, komponenty wracają do priceFrom.
