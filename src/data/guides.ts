@@ -974,6 +974,7 @@ export const guides: Guide[] = [
     heading: 'Drukarki etykiet w ofercie TAKMA',
     text: 'Ponad 70 modeli Zebra, Honeywell, TSC, Brother i Citizen z cenami netto.',
     links: [
+      { title: 'Kolorowe drukarki etykiet Epson ColorWorks', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Wszystkie drukarki etykiet', href: '/drukarki-etykiet' },
       { title: 'Biurkowe drukarki etykiet', href: '/biurkowe-drukarki-etykiet' },
       { title: 'Przemysłowe drukarki etykiet', href: '/przemyslowe-drukarki-etykiet' },
@@ -1527,6 +1528,7 @@ export const guides: Guide[] = [
     heading: 'Drukarki termiczne i termotransferowe w ofercie TAKMA',
     text: 'Modele obu technologii z cenami netto, materiały eksploatacyjne w osobnych kategoriach.',
     links: [
+      { title: 'Kolorowe drukarki etykiet — trzecia opcja', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
       { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
       { title: 'Wszystkie drukarki etykiet', href: '/drukarki-etykiet' },
@@ -10457,6 +10459,7 @@ export const guides: Guide[] = [
     heading: 'Taśmy termotransferowe w ofercie TAKMA',
     text: 'Taśmy woskowe, woskowo-żywiczne i żywiczne z cenami netto, do drukarek Zebra, Honeywell i TSC.',
     links: [
+      { title: 'Kolorowe drukarki etykiet — druk bez taśmy', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { title: 'Etykiety termotransferowe', href: '/etykiety-termotransferowe-zebra' },
       { title: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },

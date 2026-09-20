@@ -31,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/zebra`, lastModified: new Date('2026-03-12') },
     { url: `${baseUrl}/honeywell`, lastModified: new Date('2026-03-12') },
     { url: `${baseUrl}/newland`, lastModified: new Date('2026-03-13') },
+    { url: `${baseUrl}/epson`, lastModified: new Date('2026-09-20') },
   ]
 
   const staticPages: MetadataRoute.Sitemap = [

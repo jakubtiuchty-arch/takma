@@ -390,6 +390,10 @@ Nawój IN vs OUT: taśmy nawijane stroną barwiącą na zewnątrz (OUT/CSO) lub 
     },
     faq: [
       {
+        question: 'Czy drukarka termotransferowa wydrukuje etykietę w kolorze?',
+        answer: 'Jednym kolorem naraz, tym z taśmy barwiącej, i bez zdjęć ani przejść tonalnych. Każdy kolejny kolor to osobny przebieg z inną taśmą. Gdy etykieta ma mieć logo w barwach firmy, czerwony romb GHS albo zdjęcie produktu, potrzebna jest drukarka atramentowa — zobacz <a href="/kolorowe-drukarki-etykiet">kolorowe drukarki etykiet</a>.',
+      },
+      {
         question: 'Czym się różni drukarka termiczna od termotransferowej?',
         answer: 'Drukarka termiczna bezpośrednia (direct thermal) drukuje na papierze termicznym za pomocą nagrzanej głowicy — nie wymaga taśmy barwiącej, ale wydruk blaknie z czasem. Drukarka termotransferowa używa dodatkowej taśmy barwiącej (ribbon), która przenosi barwnik na etykietę — wydruk jest trwały i odporny na ścieranie, wilgoć i UV. W skrócie: termiczna = tańsza eksploatacja, do etykiet tymczasowych; termotransferowa = trwały druk, do etykiet długoterminowych.',
       },
@@ -623,6 +627,10 @@ Cena drukarki to zwykle 20–40 % wydatków w trzy lata. Resztę pochłaniają e
       ],
     },
     faq: [
+      {
+        question: 'Czy jest drukarka etykiet, która drukuje w kolorze?',
+        answer: 'Tak, ale to osobna klasa urządzeń. Drukarki termiczne i termotransferowe kładą jeden kolor — ten, który ma taśma barwiąca. Pełny kolor daje dopiero drukarka atramentowa do etykiet z czterema tuszami CMYK, na przykład seria Epson ColorWorks od 5 653 zł netto. Opłaca się tam, gdzie dziś zamawiasz zadrukowane rolki w drukarni: etykiety produktowe z logo, piktogramy GHS, etykiety spożywcze ze zdjęciem. Sześć modeli opisaliśmy na stronie <a href="/kolorowe-drukarki-etykiet">kolorowe drukarki etykiet</a>.',
+      },
       {
         question: 'Jaka drukarka etykiet do firmy?',
         answer: 'Decydują trzy rzeczy: liczba etykiet dziennie, wymagana trwałość nadruku i system, z którego drukujesz. Mała firma e-commerce z 200 etykietami kurierskimi dziennie potrzebuje [biurkowej drukarki termicznej](/biurkowe-drukarki-etykiet) od 639 zł netto. Magazyn z 1 000–5 000 etykiet dziennie potrzebuje modelu termotransferowego za 1 500–5 000 zł. Centrum logistyczne z ponad 10 000 etykiet dziennie i produkcja na trzy zmiany potrzebują [przemysłowej drukarki etykiet](/przemyslowe-drukarki-etykiet) z metalową obudową od 2 500 zł. Przed zakupem sprawdź, czy system WMS lub ERP wysyła etykiety w języku ZPL, TSPL czy EPL.',
@@ -3506,7 +3514,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     },
     definition: {
       heading: 'Co to jest kolorowa drukarka etykiet?',
-      content: 'Kolorowa drukarka etykiet to przemysłowe urządzenie atramentowe, które drukuje gotowe etykiety w pełnym kolorze prosto z rolki: rozdzielczość od 720 × 360 do 1200 × 1200 dpi, szerokość druku od 104 do 212 mm, prędkość od 100 do 300 mm/s, ceny od 5 653 zł netto. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu — czarny, cyan, magentę i żółty — a na wyjściu gilotynę albo odklejak.\n\nTo nie jest ta sama klasa co domowe urządzenia na taśmę ZINK za kilkaset złotych. Te drukują naklejki do opisania segregatora; tutaj chodzi o produkcję etykiet w firmie, z tuszem pigmentowym odpornym na wodę i tarcie, z pasem roboczym na całą szerokość etykiety i z wydajnością liczoną w tysiącach sztuk dziennie.\n\nCała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury.\n\nW ofercie jest sześć modeli Epson ColorWorks: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
+      content: 'Kolorowa drukarka etykiet to przemysłowe urządzenie atramentowe, które drukuje gotowe etykiety w pełnym kolorze prosto z rolki: rozdzielczość od 720 × 360 do 1200 × 1200 dpi, szerokość druku od 104 do 212 mm, prędkość od 100 do 300 mm/s, ceny od 5 653 zł netto. Zamiast taśmy barwiącej ma cztery zbiorniki tuszu — czarny, cyan, magentę i żółty — a na wyjściu gilotynę albo odklejak.\n\nTo nie jest ta sama klasa co domowe urządzenia na taśmę ZINK za kilkaset złotych. Te drukują naklejki do opisania segregatora; tutaj chodzi o produkcję etykiet w firmie, z tuszem pigmentowym odpornym na wodę i tarcie, z pasem roboczym na całą szerokość etykiety i z wydajnością liczoną w tysiącach sztuk dziennie.\n\nCała etykieta powstaje w jednym przebiegu, więc znika podział na zamówioną w drukarni rolkę z kolorowym tłem i dodrukowywane później dane zmienne. W praktyce oznacza to koniec minimalnych nakładów, czekania na dostawę i magazynu wersji, które trzeba wyrzucić po zmianie składu albo receptury.\n\nW ofercie jest sześć modeli <a href="/epson">Epson ColorWorks</a>: od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s.',
     },
     comparisonTable: {
       heading: 'Sześć modeli ColorWorks — czym się różnią',

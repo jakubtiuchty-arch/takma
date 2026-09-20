@@ -226,6 +226,7 @@ export const industryPages: IndustryPage[] = [
       }
     ],
     relatedLinks: [
+      { title: 'Kolorowe drukarki etykiet — piktogramy GHS i etykiety produktowe', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZT111 — kompaktowa drukarka entry-level do produkcji', href: '/produkt/zebra-zt111' },
       { title: 'Zebra ZT231 — wszechstronna drukarka przemysłowa', href: '/produkt/zebra-zt231' },
@@ -593,6 +594,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Kolorowe drukarki etykiet — etykiety produktowe z logo', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do sklepu internetowego', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD230d — następca ZD220d z Ethernet', href: '/produkt/zebra-zd230d' },
@@ -947,6 +949,7 @@ export const industryPages: IndustryPage[] = [
     ],
 
     relatedLinks: [
+      { title: 'Kolorowe drukarki etykiet — etykiety spożywcze ze zdjęciem', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka termiczna 4"', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD230d — drukarka z opcją gilotyny i Wi-Fi', href: '/produkt/zebra-zd230d' },
@@ -1702,6 +1705,7 @@ export const industryPages: IndustryPage[] = [
       }
     ],
     relatedLinks: [
+      { title: 'Kolorowe drukarki etykiet — etykiety z oznaczeniem kolorem', href: '/kolorowe-drukarki-etykiet' },
       { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
       { title: 'Zebra ZD220d — najtańsza drukarka do małej apteki', href: '/produkt/zebra-zd220d' },
       { title: 'Zebra ZD421d — uniwersalna drukarka do apteki szpitalnej', href: '/produkt/zebra-zd421d' },

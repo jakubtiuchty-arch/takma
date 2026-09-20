@@ -35,6 +35,7 @@ const partnerLogos: { name: string; logo: string; href?: string; logoClassName?:
   { name: 'Datalogic', logo: '/images/partners/logo_datalogic.png' },
   { name: 'TSC', logo: '/images/partners/logo_tsc.png' },
   { name: 'Citizen', logo: '/images/partners/logo_citizen.png' },
+  { name: 'Epson', logo: '/images/partners/logo_epson.png', href: '/epson' },
   { name: 'Godex', logo: '/images/partners/logo-godex.png' },
   { name: 'SATO', logo: '/images/partners/logo_sato.png' },
   { name: 'Newland', logo: '/images/partners/logo_newland.png', href: '/newland' },

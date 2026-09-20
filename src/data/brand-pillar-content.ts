@@ -810,6 +810,135 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   // ============================================
   // MAGICARD BY BRADY
   // ============================================
+  epson: {
+    heroText: 'Epson ColorWorks to kolorowe drukarki etykiet: urządzenia atramentowe, które drukują gotową etykietę z logo, zdjęciem albo piktogramem GHS prosto z rolki, bez zamawiania zadrukowanych rolek w drukarni. W ofercie TAKMA jest sześć modeli, od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s, a do nich oryginalne tusze i etykiety.',
+
+    categoryTiles: [
+      {
+        categoryId: 'drukarki-etykiet',
+        name: 'Kolorowe drukarki etykiet Epson',
+        href: '/kolorowe-drukarki-etykiet',
+        description: 'Sześć modeli ColorWorks: C3500, D3800e, C4000e, C6000, C6500 i C8000e, z cenami netto i stanem magazynowym.',
+      },
+      {
+        categoryId: 'materialy-eksploatacyjne',
+        name: 'Tusze do drukarek Epson',
+        href: '/tusze-do-kolorowych-drukarek',
+        description: 'Oryginalne wkłady SJIC do każdego modelu ColorWorks, w wersji pigmentowej i barwnikowej.',
+      },
+      {
+        categoryId: 'materialy-eksploatacyjne',
+        name: 'Etykiety do drukarek Epson',
+        href: '/etykiety-do-kolorowych-drukarek',
+        description: 'Papier matowy i błyszczący oraz folia polipropylenowa z powleczeniem pod tusz pigmentowy.',
+      },
+    ],
+
+    featuredSlugs: [
+      'epson-colorworks-c3500',
+      'epson-colorworks-c4000e',
+      'epson-colorworks-c6000',
+      'epson-colorworks-c8000e',
+    ],
+
+    technologies: [
+      {
+        name: 'PrecisionCore',
+        badge: 'Głowica drukująca',
+        description: 'Piezoelektryczna głowica Epsona, w której każdą dyszą steruje osobny element. Nie nagrzewa tuszu, więc głowica nie zużywa się tak jak termiczna i pracuje z tuszem pigmentowym bez ograniczeń.',
+      },
+      {
+        name: 'Tusz pigmentowy UltraChrome DL',
+        badge: 'Odporność',
+        description: 'Cząstki pigmentu leżą na powierzchni nośnika i nie rozpuszczają się w wodzie. Etykieta znosi wilgoć, tarcie i światło, dlatego nadaje się na opakowania chemiczne, produkty chłodzone i etykiety GHS.',
+      },
+      {
+        name: 'Stała głowica liniowa',
+        badge: 'C8000e',
+        description: 'Głowica na całej szerokości pasa nie przesuwa się nad etykietą, tylko drukuje w jednym przejściu. Stąd 300 mm/s w C8000e, czyli tempo linii pakującej, a nie pojedynczego stanowiska.',
+      },
+      {
+        name: 'Emulacja ZPL II',
+        badge: 'Zgodność',
+        description: 'Drukarki ColorWorks przyjmują polecenia ZPL II, więc szablony etykiet przygotowane dla drukarek Zebra działają bez przepisywania integracji z systemem magazynowym czy ERP.',
+      },
+    ],
+
+    industries: [
+      {
+        name: 'Produkcja i chemia',
+        description: 'Etykiety GHS i CLP z czerwonym rombem, oznaczenia partii i etykiety na beczki oraz kanistry. Tusz pigmentowy na folii spełnia wymagania dotyczące odporności na wodę i tarcie.',
+        products: 'ColorWorks C6000, C6500, C8000e',
+      },
+      {
+        name: 'Żywność i napoje',
+        description: 'Etykiety produktowe ze zdjęciem, składem i datą, drukowane na bieżąco. Znika minimalny nakład z drukarni i magazyn wersji, które trzeba wyrzucić po zmianie receptury.',
+        products: 'ColorWorks C3500, C4000e, C6000',
+      },
+      {
+        name: 'E-commerce i handel',
+        description: 'Etykiety produktowe z logo w barwach firmy, oznaczenia promocji i zestawów. Każda etykieta może być inna, bez czekania na dostawę zadrukowanych rolek.',
+        products: 'ColorWorks C3500, C4000e',
+      },
+      {
+        name: 'Wydarzenia i transport osób',
+        description: 'Bilety, wejściówki i opaski drukowane na żądanie, z kodem kreskowym i grafiką w jednym przebiegu.',
+        products: 'ColorWorks D3800e',
+      },
+    ],
+
+    timeline: [],
+
+    aboutParagraphs: [
+      'Epson produkuje drukarki atramentowe od lat 80. i to samo rozwiązanie techniczne, które zna się z drukarek biurowych, przeniósł do etykiet przemysłowych. Seria ColorWorks powstała dla firm, które dotąd zamawiały zadrukowane rolki w drukarni i dopiero na nich dodrukowywały dane zmienne — kod, datę, numer partii.',
+      'Różnica wobec drukarek termotransferowych jest zasadnicza: te kładą jeden kolor naraz, ten z taśmy barwiącej, a ColorWorks drukuje pełną paletę CMYK w jednym przejściu, razem ze zdjęciem i przejściami tonalnymi. Kosztem jest droższe podłoże z powleczeniem pod tusz, zyskiem — brak minimalnych nakładów i magazynu wersji.',
+    ],
+
+    partnership: [
+      'TAKMA prowadzi sprzedaż drukarek ColorWorks razem z oryginalnymi tuszami i etykietami, bo dobór nośnika decyduje o tym, czy wydruk będzie odporny na wodę i tarcie. Przed zakupem liczymy zużycie tuszu dla konkretnego projektu etykiety i podajemy koszt jednej sztuki dla Twojej grafiki, a nie dla przykładu z broszury.',
+    ],
+
+    service: [
+      'Prowadzimy własny serwis kolorowych drukarek Epson, więc naprawa nie oznacza odsyłania urządzenia do producenta. Szczegóły i zakres napraw opisaliśmy na stronie <a href="/serwis-kolorowych-drukarek-epson">serwis kolorowych drukarek Epson</a>.',
+      'Do każdego modelu mamy instrukcję po polsku, karty katalogowe i filmy producenta na karcie produktu: pierwsze napełnienie układu tuszem, zakładanie rolki w wersji z gilotyną i z odklejakiem oraz podawanie nośnika z zewnątrz.',
+    ],
+
+    comparisonIntro: '',
+    comparison: [],
+
+    whyBuyItems: [
+      { title: 'Ceny i stan z dystrybucji', text: 'Na każdej karcie widać cenę netto i liczbę sztuk w magazynie europejskim, prosto od dystrybutora. Wysyłka 2-3 dni.' },
+      { title: 'Tusze i etykiety na stanie', text: 'Drukarka bez odpowiedniego nośnika nie da odporności na wodę. Trzymamy oryginalne tusze SJIC i etykiety z powleczeniem razem z drukarkami.' },
+      { title: 'Własny serwis', text: 'Naprawy kolorowych drukarek Epson robimy u siebie, bez odsyłania sprzętu do producenta.' },
+      { title: 'Policzony koszt etykiety', text: 'Przed zakupem mierzymy zużycie tuszu dla Twojego projektu i podajemy koszt sztuki, żeby porównanie z drukarnią opierało się na liczbach.' },
+    ],
+
+    faq: [
+      {
+        question: 'Która drukarka Epson ColorWorks do etykiet produktowych?',
+        answer: 'Przy nakładzie do kilkuset etykiet dziennie i szerokości do 108 mm wystarczy C3500 albo C4000e z rozdzielczością 1200 dpi. Powyżej tysiąca etykiet dziennie sensowniejsza jest C6000, a przy etykietach szerszych niż 108 mm — C6500 z pasem 212 mm.',
+      },
+      {
+        question: 'Czym różni się tusz pigmentowy od barwnikowego w drukarkach Epson?',
+        answer: 'Pigmentowy jest odporny na wodę, tarcie i światło, daje matowe wykończenie i idzie na etykiety produktowe, chemiczne i chłodnicze. Barwnikowy ma szerszą paletę i głębszą czerń na papierze błyszczącym, ale nie znosi wilgoci. W ofercie barwnikowy jest tylko D3800e, przeznaczony do biletów i wejściówek.',
+      },
+      {
+        question: 'Czy do drukarki Epson ColorWorks pasują etykiety innych dostawców?',
+        answer: 'Muszą mieć powleczenie pod tusz atramentowy — zwykła etykieta termiczna albo termotransferowa nie przyjmie tuszu i wydruk się rozmaże. Do każdego rodzaju nośnika producent podaje osobny profil, który trzeba ustawić w sterowniku.',
+      },
+      {
+        question: 'Czy drukarki Epson ColorWorks współpracują z systemem magazynowym?',
+        answer: 'Tak. Drukarki przyjmują polecenia ZPL II, więc szablony przygotowane dla drukarek Zebra działają bez przepisywania integracji. Projekt etykiety zrobisz w NiceLabel, BarTender albo Codesoft.',
+      },
+    ],
+
+    guideLinks: [
+      { title: 'Kolorowe drukarki etykiet — jak wybrać', href: '/kolorowe-drukarki-etykiet' },
+      { title: 'Jak wybrać drukarkę etykiet?', href: '/poradnik/jak-wybrac-drukarke-etykiet' },
+      { title: 'Drukarka termiczna vs termotransferowa', href: '/poradnik/drukarka-termiczna-vs-termotransferowa' },
+    ],
+  },
+
   magicard: {
     heroText: 'Brytyjskie drukarki do kart plastikowych i identyfikatorów. Magicard łączy prostą personalizację kart z wbudowanymi zabezpieczeniami, takimi jak znak wodny HoloKote. W ofercie TAKMA znajdziesz modele Pronto100, 300 i 600 Duo, a także dopasowane taśmy i zestawy czyszczące.',
 
