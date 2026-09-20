@@ -31,6 +31,9 @@ PLOTNA = {
     'akcesoria': (800, 800), 'materialy-eksploatacyjne': (800, 800), 'oprogramowanie': (800, 800),
     'terminale-mobilne': (600, 1200), 'skanery-kodow-kreskowych': (600, 1200),
     'tablety-przemyslowe': (1200, 800),
+    # POS-y mają bardzo różne proporcje: monitor 15,6" stojąco, tablet 11" poziomo,
+    # ręczny terminal z drukarką — kwadrat mieści każdy z nich bez przycięcia.
+    'terminale-pos': (1200, 1200),
 }
 ROZSZERZENIA = ('.jpg', '.jpeg', '.png', '.webp', '.heic', '.tif', '.tiff', '.bmp')
 
