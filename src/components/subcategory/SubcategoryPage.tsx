@@ -94,7 +94,7 @@ function RichText({ text, className }: { text: string; className?: string }) {
             {lines.map((line, j) => (
               <span key={j}>
                 {j > 0 && <br />}
-                {line}
+                <LinkedText text={line} />
               </span>
             ))}
           </p>
