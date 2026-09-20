@@ -64,12 +64,28 @@ export interface ComparisonTable {
   note?: string
 }
 
+/** Wskazówka „co wybrać": dwie kolumny sytuacji plus zestawienie kosztu materiałów z cennika. */
+export interface DecisionGuide {
+  heading: string
+  intro: string
+  columns: { title: string; items: string[] }[]
+  costs: {
+    heading: string
+    /** Dwa warianty tej samej etykiety — pozycje składowe i suma. */
+    variants: { label: string; items: { name: string; value: string }[]; total: string; totalNote?: string }[]
+    note: string
+  }
+  verdict: string
+}
+
 export interface SubcategoryRichContent {
   updatedAt?: string
   /** Tabela porównawcza modeli — renderowana pod definicją kategorii. */
   comparisonTable?: ComparisonTable
   /** Kalkulator kosztu etykiety pod tabelą; na razie jeden wariant. */
   calculator?: 'koszt-etykiety'
+  /** Kiedy wybrać termotransfer, a kiedy kolor — pod opisem kategorii. */
+  decisionGuide?: DecisionGuide
   sectionHeadings?: {
     expertAuthority?: string
     technicalDeepDive?: string
@@ -3548,7 +3564,60 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
       ],
       note: 'Wersje bk i mk różnią się czarnym tuszem: Black ma drobniejsze cząstki pigmentu, które wnikają w pory podłoża błyszczącego, Matte Black większe, zostające bliżej powierzchni papieru matowego. Kolorowe wkłady są wspólne, czarnego nie da się zamienić, więc wersję wybiera się przy zakupie. Wersje Ae mają gilotynę, Pe odklejak z nawijakiem podkładu.',
     },
-    calculator: 'koszt-etykiety',
+    // Kalkulator kosztu etykiety wyłączony do czasu, aż Epson poda, jak liczy zużycie tuszu —
+    // stawki materiałów w nim były szacunkami, a nie danymi producenta.
+    // calculator: 'koszt-etykiety',
+    decisionGuide: {
+      heading: 'Termotransfer czy kolor? Jak to policzyć',
+      intro: 'Kolorowa drukarka nie konkuruje z termotransferową, tylko z drukarnią. Jeśli dziś drukujesz czarny kod na białej etykiecie, kolor będzie droższy i nic nie wniesie. Jeśli kupujesz w drukarni rolki z kolorowym tłem i dodrukowujesz na nich dane, kolor zastępuje oba kroki naraz.',
+      columns: [
+        {
+          title: 'Zostań przy termotransferze, gdy',
+          items: [
+            'na etykiecie jest kod, tekst i data — kolor niczego nie zmienia',
+            'drukujesz duże, powtarzalne nakłady jednego wzoru',
+            'etykieta ma znosić mróz, rozpuszczalniki albo tarcie — do tego jest taśma żywiczna na foliach',
+            'drukujesz nieregularnie, raz na tydzień albo rzadziej: drukarka atramentowa czyści dysze na postoju i zużywa przy tym tusz',
+            'potrzebujesz szerokości powyżej 212 mm albo prędkości powyżej 300 mm/s',
+          ],
+        },
+        {
+          title: 'Przejdź na kolor, gdy',
+          items: [
+            'kupujesz w drukarni rolki zadrukowane kolorem i dodrukowujesz na nich dane zmienne',
+            'masz kilkanaście wersji etykiety w krótkich seriach i magazyn gotowych rolek',
+            'przepis wymaga koloru: piktogramy GHS, oznaczenia alergenów, kodowanie partii barwą',
+            'etykieta jest handlowa i ma wyglądać jak z drukarni',
+            'zmiana składu albo receptury ma być poprawką w pliku, a nie utylizacją zapasu',
+          ],
+        },
+      ],
+      costs: {
+        heading: 'Ile kosztuje jedna etykieta 102 × 152 mm',
+        variants: [
+          {
+            label: 'Termotransfer, jeden kolor',
+            items: [
+              { name: 'Etykieta Zebra Z-Perform 1000T, rolka 952 szt.', value: '7,9 gr' },
+              { name: 'Taśma woskowa Zebra 2300, 110 mm × 450 m', value: '1,3 gr' },
+            ],
+            total: '9,2 gr',
+            totalNote: 'Z rolki taśmy schodzi około 2 900 etykiet tej długości.',
+          },
+          {
+            label: 'ColorWorks, pełny kolor',
+            items: [
+              { name: 'Etykieta Epson Premium Matte, rolka 800 szt.', value: '14,0 gr' },
+              { name: 'Tusz SJIC42P, 50 ml za 149,52 zł', value: '2,99 zł/ml' },
+            ],
+            total: '14,0 gr + tusz',
+            totalNote: 'Do tego dochodzi pojemnik konserwacyjny.',
+          },
+        ],
+        note: 'Ceny netto z naszego cennika. Sam nośnik pod tusz jest już prawie dwa razy droższy od zwykłej etykiety papierowej, a taśma dokłada do termotransferu grosz z małym ogonkiem. Ile tuszu schodzi na jedną etykietę, zależy od pokrycia — inaczej liczy się logo z tekstem, inaczej zdjęcie na całym tle. Podamy tę liczbę dla konkretnego projektu: prześlij plik etykiety, a zmierzymy zużycie na maszynie.',
+      },
+      verdict: 'Dlatego porównanie „9 groszy do 14 groszy plus tusz" prowadzi donikąd. Właściwe pytanie brzmi: ile płacisz dziś w drukarni za gotową kolorową etykietę i ile z niej zostaje w koszu przy zmianie wzoru.',
+    },
     buyingGuide: {
       heading: 'Jak wybrać kolorową drukarkę etykiet?',
       items: [
@@ -3590,7 +3659,7 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       ],
     },
     faq: [
-      { question: 'Czy kolorowa drukarka etykiet zastąpi termotransferową?', answer: 'W etykietach z grafiką tak, w prostych etykietach logistycznych nie. Termotransferowa drukuje szybciej, a taśma i papier są tańsze niż tusz i papier powlekany. Wiele firm ma obie: termotransferową do etykiet wysyłkowych i kolorową do produktowych. Kalkulator wyżej pokazuje, przy jakim nakładzie i jakiej cenie etykiety z drukarni kolor się zwraca.' },
+      { question: 'Czy kolorowa drukarka etykiet zastąpi termotransferową?', answer: 'W etykietach z grafiką tak, w prostych etykietach logistycznych nie. Termotransferowa drukuje szybciej, a taśma i papier są tańsze niż tusz i papier powlekany. Wiele firm ma obie: termotransferową do etykiet wysyłkowych i kolorową do produktowych. Zestawienie kosztu jednej etykiety w obu technologiach jest wyżej, w sekcji „Termotransfer czy kolor”.' },
       { question: 'Czy tusz nadaje się do etykiet na żywność?', answer: 'Tak. Tusze ColorWorks przy właściwym użyciu spełniają rozporządzenie 1935/2004, rozporządzenie 10/2011 o tworzywach sztucznych, dobrą praktykę produkcyjną 2023/2006, wytyczne EuPIA oraz FDA CFR21. Dotyczy to wszystkich rodzin wkładów w naszej ofercie: SJIC22P, SJIC42P, SJIC36P i SJIC48P.' },
       { question: 'Czy etykiety chemiczne spełnią normę BS5609?', answer: 'Tak, na właściwym podłożu. Norma dotyczy etykiet na substancje niebezpieczne przewożone drogą morską i wymaga odporności na wodę morską, ścieranie i światło. Spełniają ją wydruki tuszem pigmentowym na foliach polipropylenowych; papier matowy do tego nie wystarczy.' },
       { question: 'Czy do drukarki pasują etykiety od innych dostawców?', answer: 'Pasują nośniki z powleczeniem pod tusz, o szerokości mieszczącej się w zakresie danego modelu i na rolce o dopuszczalnej średnicy. Zwykły papier termiczny ani etykiety termotransferowe tuszu nie przyjmą. Epson prowadzi program Tested by Epson for ColorWorks, w którym podłoża innych producentów przechodzą testy jakości druku i odporności.' },

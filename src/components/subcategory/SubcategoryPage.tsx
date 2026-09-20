@@ -19,6 +19,7 @@ import { subcategoryContent, type ComparisonTable } from '@/data/subcategory-con
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
 import KalkulatorKosztuEtykiet from '@/components/subcategory/KalkulatorKosztuEtykiet'
+import WskazowkaWyboru from '@/components/subcategory/WskazowkaWyboru'
 import SekcjaZwijana from '@/components/subcategory/SekcjaZwijana'
 import BrandServiceBanner from '@/app/produkt/[slug]/ServiceBanner'
 
@@ -434,6 +435,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 </section>
 
                 {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} />}
+
+                {content.decisionGuide && <WskazowkaWyboru guide={content.decisionGuide} />}
 
                 {content.calculator === 'koszt-etykiety' && (
                   <section>
