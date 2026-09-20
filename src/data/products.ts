@@ -65730,6 +65730,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c3500-%28incl-nicelabel-download%29/p/13675',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-bilety-c33s045389',
@@ -66706,6 +66707,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/drukarka-etykiet-colorworks-d3800e-z-atramentem-wodnym/p/57462',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-sjic57p-bk',
@@ -67059,6 +67061,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/cw-c4000e-series/p/35268',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-sjic42p-bk',
@@ -67411,6 +67414,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6000-series/p/28326',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-sjic36p-k',
@@ -68007,6 +68011,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6500-series/p/28377',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-sjic36p-mk',
@@ -68359,6 +68364,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-cw-c8000e-series/p/46707',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
+    updatedAt: '2026-09-20',
   },
   {
     id: 'epson-sjic48p-bk',

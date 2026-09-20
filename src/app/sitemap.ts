@@ -37,7 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: lastUpdated },
     { url: `${baseUrl}/katalog`, lastModified: lastUpdated },
-    { url: `${baseUrl}/drukarki-etykiet`, lastModified: lastUpdated },
+    { url: `${baseUrl}/drukarki-etykiet`, lastModified: new Date('2026-09-20') },
     { url: `${baseUrl}/drukarki-kart`, lastModified: lastUpdated },
     { url: `${baseUrl}/drukarki-opasek`, lastModified: lastUpdated },
     { url: `${baseUrl}/materialy-eksploatacyjne`, lastModified: lastUpdated },
@@ -72,6 +72,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const reworkedLandingLastMod: Record<string, Date> = {
     'tasmy-termotransferowe': new Date('2026-05-31'),
     'etykiety-termiczne-zebra': new Date('2026-06-03'),
+    'kolorowe-drukarki-etykiet': new Date('2026-09-20'),
+    'tusze-do-kolorowych-drukarek': new Date('2026-09-20'),
+    'etykiety-do-kolorowych-drukarek': new Date('2026-09-20'),
+    'termotransferowe-drukarki-etykiet': new Date('2026-09-20'),
   }
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
@@ -121,9 +125,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   ]
 
+  // Strony branżowe z odesłaniem do kolorowych drukarek — data z dnia dodania linku.
+  const industryLastMod: Record<string, Date> = {
+    'drukarki-etykiet-produkcja': new Date('2026-09-20'),
+    'drukarki-etykiet-e-commerce': new Date('2026-09-20'),
+    'drukarki-etykiet-gastronomia': new Date('2026-09-20'),
+    'drukarki-etykiet-apteka': new Date('2026-09-20'),
+  }
   const industryLandingPages: MetadataRoute.Sitemap = industryPages.map((page) => ({
     url: `${baseUrl}/${page.slug}`,
-    lastModified: lastUpdated,
+    lastModified: industryLastMod[page.slug] ?? lastUpdated,
   }))
 
   // Data z wpisu treści, jeśli jest — inaczej wspólna data statyczna.
