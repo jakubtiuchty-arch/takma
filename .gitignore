@@ -51,3 +51,18 @@ TC201/
 /Karty*/
 .image-backup/
 ET401_acc/
+/Prima8/
+/ZC350/
+
+# Materiały od producentów: dokumentacja, zestawy marketingowe, wideo (setki MB).
+# To, co idzie na stronę, leży przetworzone w public/ — oryginały zostają lokalnie.
+/EPSON/
+/CT37/
+
+# Instalatory oprogramowania — MSI i ZIP-y idą do Vercel Blob, nie do repozytorium.
+# MagicardHUB ma 127 MB, czyli powyżej twardego limitu GitHuba.
+/BETA MagicardHUB*.zip
+
+# Wyniki pracy skryptów
+/output/
+__pycache__/
