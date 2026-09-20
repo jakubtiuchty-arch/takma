@@ -386,6 +386,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedProductsList = (product.relatedProducts || [])
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
+  /** Na kartach kolorowych drukarek „Podobne drukarki” idą na sam dół, pod FAQ i pliki. */
+  const podobneNaDole = isColorPrinter
   const relatedProductsTitle = product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
@@ -735,6 +737,15 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               )}
             </div>
   )
+
+  const podobneProduktyJsx = relatedProductsList.length > 0 ? (
+    <RelatedProducts
+      id="podobne-produkty"
+      title={relatedProductsTitle}
+      products={relatedProductsList as typeof products}
+      initialLimit={4}
+    />
+  ) : null
 
   const faqAndFilesJsx = (
     <>
@@ -1693,17 +1704,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* Podobne produkty */}
-            {relatedProductsList.length > 0 && (
-              <RelatedProducts
-                id="podobne-produkty"
-                title={relatedProductsTitle}
-                products={relatedProductsList as typeof products}
-                initialLimit={4}
-              />
-            )}
+            {/* Podobne produkty. Na kartach kolorowych drukarek schodzą pod FAQ i pliki —
+                alternatywy pokazujemy dopiero, gdy klient przeczyta wszystko o tym modelu. */}
+            {!podobneNaDole && podobneProduktyJsx}
 
             {faqLast && faqAndFilesJsx}
+
+            {podobneNaDole && podobneProduktyJsx}
 
             {/* Baner serwisowy na samym końcu karty: marki z własną grafiką (bannerImage) oraz Zebra,
                 której serwis prowadzimy pod serwis-zebry.pl. Pozostałe marki mają boks wyżej. */}
