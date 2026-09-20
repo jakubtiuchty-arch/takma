@@ -59,10 +59,6 @@ const promoSaleActive = new Date() <= new Date(`${ZEBRA_CEE_PROMO.endDate}T23:59
 
 const slides: HeroSlide[] = [
   { type: 'info' },
-  ...(promoSaleActive
-    ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
-    : []),
-  { type: 'materials' },
   {
     type: 'product',
     image: '/images/hero-colorworks-c8000e-v2.webp',
@@ -76,6 +72,10 @@ const slides: HeroSlide[] = [
     noOverlay: true,
     bgColor: '#000000',
   },
+  ...(promoSaleActive
+    ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
+    : []),
+  { type: 'materials' },
   {
     type: 'product',
     image: '/images/zebra-tc501-baner-v2.webp',
