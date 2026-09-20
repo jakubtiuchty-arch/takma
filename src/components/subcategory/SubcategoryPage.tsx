@@ -41,11 +41,16 @@ function RichText({ text, className }: { text: string; className?: string }) {
   )
 }
 
-/** Podkategorie z ciemnym hero na górze. Bez wpisu strona zostaje przy jasnym nagłówku. */
-const heroImages: Record<string, { src: string; alt: string }> = {
+/**
+ * Podkategorie z ciemnym hero na górze. Bez wpisu strona zostaje przy jasnym nagłówku.
+ * `lead` to krótkie zdanie pod H1 — bez linków, bo z hero się nie wychodzi; pełny opis
+ * kategorii (z linkami) renderuje się niżej, nad siatką produktów.
+ */
+const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
   'kolorowe-drukarki-etykiet': {
     src: '/images/kolorowe-drukarki-etykiet-hero.webp',
     alt: 'Wstęga etykiet: po lewej czarno-biały wydruk termotransferowy z kodem kreskowym, w środku wybuch pigmentu CMYK, po prawej gotowe kolorowe etykiety produktowe',
+    lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e.',
   },
 }
 
@@ -224,7 +229,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
           {/* Przesłona pod tekst: na wąskim ekranie tekst leży na całym obrazie, więc przyciemniamy
               go w całości; od sm wystarczy gradient w poziomie, który po prawej odsłania kolor */}
           <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
           <div className="relative container-main py-10 lg:py-16">
             <nav className="flex items-center gap-2 text-sm text-slate-300 mb-6 overflow-x-auto">
               <Link href="/" className="hover:text-white transition-colors whitespace-nowrap">Strona główna</Link>
@@ -243,10 +248,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
               <span className="text-white font-medium whitespace-nowrap">{subcategory.name}</span>
             </nav>
-            <h1 className="text-3xl lg:text-4xl font-bold mb-3 max-w-xl">{subcategory.name}</h1>
-            <p className="text-slate-200 max-w-xl">
-              <LinkedText text={subcategory.longDescription} />
-            </p>
+            <h1 className="text-3xl lg:text-4xl font-bold mb-3 max-w-lg">{subcategory.name}</h1>
+            <p className="text-slate-200 max-w-md">{hero.lead}</p>
             <p className="text-slate-400 text-sm mt-3">
               {products.length} {productWord}
             </p>
@@ -297,6 +300,13 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               </p>
             </div>
           </>
+        )}
+
+        {/* Ze stroną z hero pełny opis kategorii (z linkami) idzie tutaj, nad siatkę */}
+        {hero && (
+          <p className="text-gray-600 sm:text-justify mb-8">
+            <LinkedText text={subcategory.longDescription} />
+          </p>
         )}
 
         {/* Sidebar + Content layout */}
