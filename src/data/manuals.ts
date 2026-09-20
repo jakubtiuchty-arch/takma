@@ -177,7 +177,7 @@ export const PL_MANUAL_SLUG = 'instrukcja-po-polsku'
 export const docBanner: Record<ManualDocType, string> = {
   'quick-start': '/images/instrukcje/banner-quick-start.webp',
   'user-guide': '/images/instrukcje/banner-user-guide.webp',
-  programming: '/images/instrukcje/banner-user-guide.webp',
+  programming: '/images/instrukcje/banner-programming.webp',
   service: '/images/instrukcje/banner-user-guide.webp',
   datasheet: '/images/instrukcje/banner-user-guide.webp',
 }
