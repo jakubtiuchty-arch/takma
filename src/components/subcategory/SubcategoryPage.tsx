@@ -19,6 +19,7 @@ import { subcategoryContent, type ComparisonTable } from '@/data/subcategory-con
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
 import KalkulatorKosztuEtykiet from '@/components/subcategory/KalkulatorKosztuEtykiet'
+import BrandServiceBanner from '@/app/produkt/[slug]/ServiceBanner'
 
 /** Zestawienie modeli. Tabela jest szersza niż telefon, więc przewija się we własnym kontenerze. */
 function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
@@ -88,6 +89,20 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
     src: '/images/kolorowe-drukarki-etykiet-hero-v5.webp',
     alt: 'Wstęga etykiet z tym samym projektem: po lewej wydruk czarno-biały, w środku wybuch pigmentu CMYK, po prawej ta sama etykieta w pełnym kolorze',
     lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e.',
+  },
+}
+
+/** Baner serwisowy na dole kategorii — dla marek, których serwis prowadzimy sami. */
+const serviceBanners: Record<string, { brandName: string; href: string; image: string; eyebrow: string; lead: string; cta: string; imageAlt: string; imagePosition?: string }> = {
+  'kolorowe-drukarki-etykiet': {
+    brandName: 'Epson ColorWorks',
+    href: '/serwis-kolorowych-drukarek-epson',
+    image: '/images/serwis-banner/epson-colorworks-banner.webp',
+    eyebrow: 'Serwis Epson ColorWorks',
+    lead: 'Zatkane dysze po przestoju, białe pasy na wydruku, pełny pojemnik konserwacyjny, gilotyna i odklejak. Diagnostyka w 48 godzin, odbiór kurierem z całej Polski.',
+    cta: 'Zobacz serwis ColorWorks',
+    imageAlt: 'Kolorowa drukarka etykiet z otwartą pokrywą na stole serwisowym, obok narzędzia i cztery wkłady CMYK',
+    imagePosition: '62% 62%',
   },
 }
 
@@ -219,6 +234,11 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
   }
 
   const hero = heroImages[slug]
+  const banerSerwisu = serviceBanners[slug]
+  // Podkategoria jednej marki (np. Epson ColorWorks) nie może pokazywać banera serwisu Zebry.
+  const jedynyProducent = products.length > 0 && products.every((p) => p.manufacturerId === products[0].manufacturerId)
+    ? products[0].manufacturerId
+    : undefined
 
   const productWord = products.length === 1
     ? 'produkt'
@@ -516,7 +536,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               </div>
             )}
 
-            <ServiceBanner categoryId={subcategory.parentCategoryId} />
+            <ServiceBanner categoryId={subcategory.parentCategoryId} manufacturerId={jedynyProducent} />
+            {banerSerwisu && (
+              <div className="mt-10">
+                <BrandServiceBanner {...banerSerwisu} imageFit="cover" />
+              </div>
+            )}
 
             {/* Cross-links */}
             {siblings.length > 0 && (
@@ -755,7 +780,12 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 </div>
               )}
 
-              <ServiceBanner categoryId={subcategory.parentCategoryId} />
+              <ServiceBanner categoryId={subcategory.parentCategoryId} manufacturerId={jedynyProducent} />
+            {banerSerwisu && (
+              <div className="mt-10">
+                <BrandServiceBanner {...banerSerwisu} imageFit="cover" />
+              </div>
+            )}
 
               {siblings.length > 0 && (
                 <div className="mt-12 pt-8 border-t border-gray-200">

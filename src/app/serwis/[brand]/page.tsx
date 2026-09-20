@@ -6,12 +6,15 @@ import { RmaProcessSteps } from '../_components/RmaProcessSteps'
 import { PricingTable } from '../_components/PricingTable'
 import { ServiceManagerContact } from '../_components/ServiceManagerContact'
 import RepairForm from '../_components/RepairForm'
-import { getBrandBySlug, getAllBrandSlugs, type ServiceBrand } from '../_data/brands'
+import { getBrandBySlug, getAllBrandSlugs, brandUrl, type ServiceBrand } from '../_data/brands'
 
 type Props = { params: { brand: string } }
 
 export function generateStaticParams() {
-  return getAllBrandSlugs().map(brand => ({ brand }))
+  // Marki z własnym adresem (pole `path`) generują się we własnych trasach, nie tutaj.
+  return getAllBrandSlugs()
+    .filter((slug) => !getBrandBySlug(slug)?.path)
+    .map(brand => ({ brand }))
 }
 
 export function generateMetadata({ params }: Props): Metadata {
@@ -20,12 +23,12 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: { absolute: brand.metaTitle },
     description: brand.metaDescription,
-    alternates: { canonical: `https://www.takma.com.pl/serwis/${brand.slug}` },
+    alternates: { canonical: `https://www.takma.com.pl${brandUrl(brand)}` },
     openGraph: {
       images: [brand.ogImage ?? '/images/takma-og.png'],
       type: 'website',
       locale: 'pl_PL',
-      url: `https://www.takma.com.pl/serwis/${brand.slug}`,
+      url: `https://www.takma.com.pl${brandUrl(brand)}`,
       title: brand.heroTitle,
       description: brand.heroDescription,
     },
@@ -64,7 +67,7 @@ export default function BrandServicePage({ params }: Props) {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
           { '@type': 'ListItem', position: 2, name: 'Serwis', item: 'https://www.takma.com.pl/serwis' },
-          { '@type': 'ListItem', position: 3, name: `Serwis ${brand.name}`, item: `https://www.takma.com.pl/serwis/${brand.slug}` },
+          { '@type': 'ListItem', position: 3, name: `Serwis ${brand.name}`, item: `https://www.takma.com.pl${brandUrl(brand)}` },
         ],
       },
     ],
@@ -364,7 +367,7 @@ function OtherBrandsLinks({ currentSlug }: { currentSlug: string }) {
           {otherBrands.map(b => (
             <Link
               key={b.slug}
-              href={`/serwis/${b.slug}`}
+              href={brandUrl(b)}
               className="block p-4 rounded-xl border border-gray-200 bg-gray-50 hover:bg-white hover:border-lime-500 hover:shadow-md transition-all text-center"
             >
               <span className="font-semibold text-gray-900">Serwis {b.name}</span>

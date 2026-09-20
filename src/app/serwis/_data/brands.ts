@@ -1,5 +1,7 @@
 export type ServiceBrand = {
   slug: string
+  /** Własny adres strony, gdy marka nie siedzi pod /serwis/<slug>. */
+  path?: string
   name: string
   logoSrc: string
   logoAlt: string
@@ -548,10 +550,86 @@ export const serviceBrands: ServiceBrand[] = [
       { q: 'Dajecie gwarancję na naprawę Brother?', a: 'Tak — 3 miesiące na wymienioną głowicę, 3 miesiące na baterię i wałek dociskowy, 6 miesięcy na naprawę elektroniki. Szczegółowe warunki gwarancji przekazujemy w kosztorysie przed rozpoczęciem naprawy.' },
     ],
   },
+  {
+    slug: 'epson',
+    path: '/serwis-kolorowych-drukarek-epson',
+    name: 'Epson ColorWorks',
+    logoSrc: '/images/partners/logo_epson.png',
+    logoAlt: 'Serwis kolorowych drukarek etykiet Epson ColorWorks — C3500, C4000e, C6000, C6500, C8000e',
+    category: 'drukarki',
+    pricingVariant: 'printers',
+    shortDesc: 'Kolorowe drukarki etykiet C3500, C4000e, C6000, C6500, C8000e',
+    products: 'Kolorowe drukarki etykiet Epson ColorWorks: C3500, D3800e, C4000e, C6000, C6500, C7500 i C8000e',
+    heroTitle: 'Serwis kolorowych drukarek etykiet Epson ColorWorks',
+    heroDescription: 'Naprawa drukarek Epson ColorWorks: C3500, D3800e, C4000e, C6000, C6500, C7500 i C8000e. Zatkane dysze, białe pasy na wydruku, pełny pojemnik konserwacyjny, gilotyna, odklejak, czujnik nośnika. Diagnostyka w 48 godzin, odbiór kurierem z całej Polski.',
+    bannerImage: '/images/serwis-banner/epson-colorworks-banner.webp',
+    crossSell: 'kolorowe drukarki etykiet, tusze SJIC, pojemniki konserwacyjne i nośniki Epson w cenach B2B',
+    heroLead: 'Serwis kolorowych drukarek etykiet Epson ColorWorks w TAKMA we Wrocławiu obejmuje modele z bieżącej oferty — C3500, D3800e, C4000e, C6000, C6500 i C8000e — oraz starsze C7500 i C7500G. Drukarka atramentowa zużywa się inaczej niż termotransferowa: zamiast głowicy i wałka najczęściej wymieniamy pojemnik konserwacyjny, czyścimy dysze po dłuższym przestoju i kalibrujemy czujnik nośnika. Diagnostyka w 48 godzin, urządzenie wraca z wydrukiem testowym CMYK, kurier odbiera z całej Polski.',
+    metaTitle: 'Serwis Epson ColorWorks — naprawa kolorowych drukarek etykiet | TAKMA',
+    metaDescription: 'Serwis kolorowych drukarek etykiet Epson ColorWorks: C3500, C4000e, C6000, C6500, C8000e. Zatkane dysze, białe pasy, pojemnik konserwacyjny, gilotyna. Diagnostyka 48h, cała Polska.',
+    relatedLinks: [
+      { label: 'Epson ColorWorks C3500 — karta produktu', href: '/produkt/epson-colorworks-c3500' },
+      { label: 'Epson ColorWorks C4000e — karta produktu', href: '/produkt/epson-colorworks-c4000e' },
+      { label: 'Epson ColorWorks C6000 — karta produktu', href: '/produkt/epson-colorworks-c6000' },
+      { label: 'Epson ColorWorks C8000e — karta produktu', href: '/produkt/epson-colorworks-c8000e' },
+      { label: 'Instrukcja ColorWorks C3500 po polsku', href: '/instrukcje/epson-colorworks-c3500/instrukcja-po-polsku' },
+      { label: 'Tusze i pojemniki konserwacyjne', href: '/tusze-do-kolorowych-drukarek' },
+      { label: 'Etykiety do kolorowych drukarek', href: '/etykiety-do-kolorowych-drukarek' },
+      { label: 'Wszystkie kolorowe drukarki etykiet', href: '/kolorowe-drukarki-etykiet' },
+    ],
+    educationalSection: {
+      heading: 'Co obejmuje serwis drukarek Epson ColorWorks?',
+      paragraphs: [
+        'ColorWorks to atramentowe drukarki etykiet: zamiast głowicy termicznej i taśmy barwiącej mają głowicę piezoelektryczną i cztery zbiorniki tuszu CMYK. Zużywają się w nich inne elementy niż w drukarkach termotransferowych — przede wszystkim pojemnik konserwacyjny, który zbiera tusz z czyszczenia dysz, a dalej gilotyna, wałki podające i czujnik nośnika. Sama głowica jest projektowana na cały okres życia urządzenia; w C8000e Epson deklaruje co najmniej 500 km wydruku bez wymiany jej głównych elementów.',
+        'Większość zgłoszeń, które trafiają do nas z ColorWorks, to nie awarie, tylko skutki przestoju albo złego nośnika: zaschnięte dysze po kilku tygodniach bez druku, rozmazany nadruk na papierze bez powleczenia pod tusz, przesunięty wydruk po zmianie rolki bez kalibracji. Dlatego diagnostykę zaczynamy od wydruku testowego dysz i sprawdzenia nośnika, zanim zaproponujemy wymianę czegokolwiek.',
+        'Drukarki C6000, C6500 i C8000e mają w gwarancji producenta serwis u klienta — w tym okresie technik Epsona przyjeżdża na miejsce i nie trzeba nigdzie wysyłać urządzenia. Zgłoszenie możemy poprowadzić za klienta. Modele biurkowe C3500, C4000e i D3800e klient dostarcza do serwisu; po gwarancji naprawiamy wszystkie na oryginalnych częściach.',
+      ],
+      bullets: [
+        { title: 'Czyszczenie i odblokowanie dysz', description: 'Białe albo blade pasy wzdłuż etykiety po przerwie w pracy. Cykl czyszczenia z poziomu panelu, w cięższych przypadkach płukanie głowicy i wymiana pojemnika konserwacyjnego, który przy takim czyszczeniu szybko się zapełnia.' },
+        { title: 'Wymiana pojemnika konserwacyjnego', description: 'SJMB3500 do C3500, SJMB4000 do C4000e i D3800e, SJMB6000 do C6000 i C6500, SJMB7500 do C7500 i C8000e. Wymiana jest prosta i klient robi ją sam — częściej doradzamy zapas niż przyjmujemy drukarkę.' },
+        { title: 'Gilotyna i odklejak', description: 'Poszarpane cięcie, zacięcie etykiety, komunikat o błędzie cięcia. Wymiana ostrza, czyszczenie toru, kalibracja. W wersjach Pe modeli C6000 i C6500 naprawiamy też odklejak i nawijak podkładu.' },
+        { title: 'Czujnik nośnika i tor papieru', description: 'Przesunięty nadruk, drukarka gubi przerwę między etykietami albo czarny znacznik. Kalibracja ruchomego czujnika, czyszczenie i wymiana wałków podających, sprawdzenie ustawienia rolki.' },
+        { title: 'Elektronika i sieć', description: 'Płyta główna, zasilacz, moduł Ethernet, adapter Wi-Fi OT-WL06, aktualizacja firmware, ustawienie stałego adresu IP i ponowna konfiguracja sterownika ESC/Label albo emulacji ZPL II.' },
+        { title: 'Dobór nośnika i profilu koloru', description: 'Rozmazany albo blady wydruk bywa winą papieru, nie drukarki. Sprawdzamy, czy nośnik ma powleczenie pod tusz, dobieramy matowy, błyszczący albo folię i ustawiamy profil ICC pod konkretny materiał.' },
+      ],
+    },
+    seriesList: [
+      { series: 'Serwis ColorWorks C3500', description: 'Biurkowy model z tuszem pigmentowym SJIC22P. Najczęściej: czyszczenie dysz, pojemnik SJMB3500, gilotyna, kalibracja czujnika nośnika.', typicalDevices: 'C3500, TM-C3500' },
+      { series: 'Serwis ColorWorks C4000e i D3800e', description: 'Biurkowe modele z kolorowym panelem LCD. C4000e pracuje na tuszu pigmentowym SJIC42P, D3800e na barwnikowym SJIC57P. Wspólny pojemnik SJMB4000, wymienna gilotyna.', typicalDevices: 'C4000e (bk i mk), D3800e, CW-C4000' },
+      { series: 'Serwis ColorWorks C6000 i C6500', description: 'Modele przemysłowe, w wersjach Ae z gilotyną i Pe z odklejakiem. Naprawa odklejaka i nawijaka podkładu, kalibracja czujnika, wymiana pojemnika SJMB6000. W gwarancji serwis u klienta.', typicalDevices: 'C6000Ae, C6000Pe, C6500Ae, C6500Pe, D6000, D6500' },
+      { series: 'Serwis ColorWorks C7500 i C8000e', description: 'Maszyny do pracy ciągłej, z tuszem w workach i stałą głowicą liniową w C8000e. Pojemnik SJMB7500, kontrola dysz NVT, regulacja odstępu głowicy pod grube nośniki.', typicalDevices: 'C7500, C7500G, C8000e (bk i mk)' },
+    ],
+    commonIssues: [
+      { title: 'Białe lub blade pasy wzdłuż etykiety', description: 'Zaschnięte dysze po przerwie w pracy, rzadziej zapowietrzony wkład. Wydruk testowy dysz, cykl czyszczenia, przy braku poprawy płukanie głowicy. Po serii czyszczeń sprawdzamy zapełnienie pojemnika konserwacyjnego.' },
+      { title: 'Komunikat o pełnym pojemniku konserwacyjnym', description: 'Pojemnik zebrał tusz z czyszczenia dysz i trzeba go wymienić. To materiał eksploatacyjny, nie usterka — wymienia się go bez narzędzi. Podpowiadamy właściwy symbol: SJMB3500, SJMB4000, SJMB6000 albo SJMB7500.' },
+      { title: 'Nadruk rozmazuje się albo nie schnie', description: 'Najczęściej nośnik bez powleczenia pod tusz: zwykły papier termiczny albo etykiety termotransferowe tuszu nie przyjmą. Sprawdzamy materiał i dobieramy właściwy, a przy podłożach nietypowych ustawiamy profil ICC i tryb jakości.' },
+      { title: 'Wydruk przesunięty, drukarka gubi etykiety', description: 'Rozkalibrowany czujnik nośnika albo źle założona rolka. Kalibracja czujnika przerwy i czarnego znacznika, czyszczenie okienka czujnika, sprawdzenie prowadnic i średnicy rolki.' },
+      { title: 'Zacięcie etykiety, poszarpane cięcie', description: 'Zużyte ostrze gilotyny, brud w torze albo nośnik grubszy niż dopuszczalny. Wymiana ostrza, czyszczenie toru, w C4000e gilotyna jest wymieniana samodzielnie i często wystarczy sam moduł.' },
+      { title: 'Odklejak nie oddziela etykiety (wersje Pe)', description: 'Podkład zrywa się albo nie nawija na szpulę. Regulacja napięcia, wymiana wałka odklejaka, kalibracja czujnika obecności etykiety. Dotyczy C6000Pe i C6500Pe.' },
+      { title: 'Drukarka nie rozpoznaje wkładu', description: 'Brudne styki, uszkodzony chip albo wkład z innego modelu — rodziny SJIC22P, SJIC42P, SJIC57P, SJIC36P i SJIC48P nie są wymienne. Czyszczenie styków, sprawdzenie symbolu wkładu, wymiana gniazda przy uszkodzeniu.' },
+      { title: 'Kolory odbiegają od projektu', description: 'Brak profilu ICC dla nośnika, zły tryb jakości albo mylona wersja czerni: Black do podłoży błyszczących, Matte Black do matowych. Ustawiamy profil, dobieramy tryb i drukujemy wzornik do porównania.' },
+      { title: 'Drukarka niewidoczna w sieci', description: 'Uszkodzone gniazdo Ethernet, wadliwy adapter Wi-Fi OT-WL06 albo zmiana adresacji. Naprawa złącza, wymiana modułu, ustawienie stałego IP, ponowna instalacja sterownika ESC/Label lub konfiguracja emulacji ZPL II.' },
+    ],
+    faqs: [
+      { q: 'Czy naprawiacie drukarki Epson ColorWorks po gwarancji?', a: 'Tak. Po okresie gwarancji naprawiamy C3500, D3800e, C4000e, C6000, C6500, C7500 i C8000e na oryginalnych częściach Epsona. W okresie gwarancji prowadzimy zgłoszenie do producenta: modele C6000, C6500 i C8000e mają serwis u klienta, więc technik przyjeżdża na miejsce, a biurkowe C3500, C4000e i D3800e klient dostarcza do serwisu.' },
+      { q: 'Dlaczego drukarka ColorWorks drukuje białe pasy?', a: 'Prawie zawsze to zaschnięte dysze po przerwie w druku, a nie uszkodzona głowica. Zacznij od wydruku testowego dysz i cyklu czyszczenia z panelu drukarki. Jeśli pas wraca w tym samym miejscu po dwóch czyszczeniach, przyjmujemy urządzenie do płukania głowicy. Przy okazji warto sprawdzić pojemnik konserwacyjny, bo każde czyszczenie go zapełnia.' },
+      { q: 'Co ile wymienia się pojemnik konserwacyjny?', a: 'Nie ma sztywnego terminu — decyduje liczba cykli czyszczenia, a ta zależy od tego, jak regularnie drukarka pracuje. Urządzenie samo zgłasza zapełnienie z wyprzedzeniem. Wymiana zajmuje chwilę i nie wymaga serwisu, warto tylko trzymać zapasowy pojemnik, bo przy pełnym drukarka przestaje drukować.' },
+      { q: 'Czy do ColorWorks można użyć zamienników tuszu?', a: 'Odradzamy. Wkłady mają chip, a tusz pigmentowy Epsona jest dobrany do konkretnej głowicy piezoelektrycznej i do powleczenia nośników. Zamienniki potrafią zapowietrzać dysze i pozbawiają nadruk zgodności z przepisami o kontakcie z żywnością oraz z normą BS5609 przy etykietach chemicznych.' },
+      { q: 'Ile trwa naprawa drukarki ColorWorks?', a: 'Diagnostyka w 48 godzin od dostarczenia. Typowa naprawa — czyszczenie głowicy, gilotyna, czujnik, wałki — 3 do 5 dni roboczych. Części do starszych modeli, jak C7500, sprowadzamy w 7 do 14 dni.' },
+      { q: 'Drukarka stała kilka tygodni i teraz nie drukuje. Co robić?', a: 'Nie ponawiaj wydruku w kółko, bo zużyjesz tusz i zapełnisz pojemnik konserwacyjny. Zrób wydruk testowy dysz, uruchom czyszczenie i odczekaj kilkanaście minut, potem powtórz test. Jeśli brakuje całego koloru, przywieź drukarkę — dysze wymagają płukania. Na przyszłość: drukarka atramentowa lubi pracować co najmniej raz w tygodniu.' },
+      { q: 'Czy mogę wysłać drukarkę ColorWorks z innego miasta?', a: 'Tak, obsługujemy całą Polskę. Kurier odbiera urządzenie zwykle w ciągu 24 godzin od zgłoszenia przez formularz. Przed wysyłką wyjmij rolkę i zabezpiecz wkłady w drukarce, a samo urządzenie zapakuj w oryginalny karton — głowica atramentowa źle znosi transport bez zabezpieczenia.' },
+      { q: 'Czy serwisujecie też starsze modele C7500?', a: 'Tak. C7500 i C7500G naprawiamy na częściach dostępnych u producenta, w tym pojemniki SJMB7500 wspólne z C8000e. Przy poważniejszej awarii porównujemy koszt naprawy z ceną nowej C8000e, bo nowszy model drukuje trzy razy szybciej i ma większe zbiorniki tuszu.' },
+    ],
+  },
 ]
 
 export function getBrandBySlug(slug: string): ServiceBrand | undefined {
   return serviceBrands.find(b => b.slug === slug)
+}
+
+/** Adres strony marki — własny `path` albo domyślne /serwis/<slug>. */
+export function brandUrl(brand: Pick<ServiceBrand, 'slug' | 'path'>): string {
+  return brand.path ?? `/serwis/${brand.slug}`
 }
 
 export function getAllBrandSlugs(): string[] {

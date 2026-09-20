@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { serviceBrands } from '../_data/brands'
+import { serviceBrands, brandUrl } from '../_data/brands'
 
 export function SupportedBrandsGrid() {
   return (
@@ -18,7 +18,7 @@ export function SupportedBrandsGrid() {
           {serviceBrands.map((brand) => (
             <Link
               key={brand.slug}
-              href={`/serwis/${brand.slug}`}
+              href={brandUrl(brand)}
               className="flex flex-col items-center text-center group rounded-xl p-3 hover:bg-gray-50 transition-colors"
             >
               <div className="flex items-center justify-center h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44">

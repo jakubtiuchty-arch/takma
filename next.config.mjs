@@ -32,6 +32,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: '/serwis/epson', destination: '/serwis-kolorowych-drukarek-epson', permanent: true },
       // podkategoria kart przeniesiona z błędnej pisowni „PCV” na „PVC” (2026-09-09)
       { source: '/karty-pcv', destination: '/karty-pvc', permanent: true },
       // =====================================================

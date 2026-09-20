@@ -19,7 +19,7 @@ import { brandCategoryContent } from '@/data/brand-category-content'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
 import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
-import { serviceBrands } from '@/app/serwis/_data/brands'
+import { serviceBrands, brandUrl } from '@/app/serwis/_data/brands'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.takma.com.pl'
@@ -53,9 +53,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/mapa-strony`, lastModified: lastUpdated },
   ]
 
-  // Strony serwisowe per marka (/serwis/honeywell … /serwis/magicard)
+  // Strony serwisowe per marka (/serwis/honeywell … /serwis-kolorowych-drukarek-epson)
   const serviceBrandPages: MetadataRoute.Sitemap = serviceBrands.map((brand) => ({
-    url: `${baseUrl}/serwis/${brand.slug}`,
+    url: `${baseUrl}${brandUrl(brand)}`,
     lastModified: brand.slug === 'magicard' ? new Date('2026-09-11') : lastUpdated,
   }))
 

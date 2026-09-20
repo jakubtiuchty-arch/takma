@@ -17,6 +17,7 @@ export default function ServiceBanner({
   cta,
   imageAlt,
   imageFit = 'contain',
+  imagePosition = '65% 28%',
 }: {
   brandName: string
   /** strona serwisowa u nas; pomijana, gdy podano zewnętrzny `href` */
@@ -30,6 +31,9 @@ export default function ServiceBanner({
   imageAlt?: string
   /** 'cover' dla zdjęć kadrowanych szeroko — wypełniają panel i schodzą w gradient */
   imageFit?: 'contain' | 'cover'
+  /** Kadr przy `cover`; panel jest bardzo szeroki, więc pas widoczny na zdjęciu trzeba wskazać.
+   *  Inline style, bo Tailwind nie wygeneruje klasy z wartości podanej w propsie. */
+  imagePosition?: string
 }) {
   const zewnetrzny = Boolean(href)
   const adres = href ?? `/serwis/${brandSlug}`
@@ -48,7 +52,8 @@ export default function ServiceBanner({
             alt={imageAlt ?? `Serwis urządzeń ${brandName}`}
             fill
             sizes="(min-width: 768px) 900px, 100vw"
-            className="object-cover object-[65%_28%]"
+            className="object-cover"
+            style={{ objectPosition: imagePosition }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0c1424] via-[#0c1424]/85 to-[#0c1424]/10" />
         </>
