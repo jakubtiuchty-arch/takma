@@ -3581,7 +3581,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     updatedAt: '2026-09-19',
     definition: {
       heading: 'Etykiety do Epson ColorWorks',
-      content: 'Kolorowa drukarka etykiet potrzebuje papieru z powleczeniem pod tusz pigmentowy: warstwa na wierzchu wchłania tusz i nie pozwala mu się rozlać, dzięki czemu kolory są nasycone, a kody czytelne. Rolki Epson Premium Matte to papier matowy, High Gloss to papier błyszczący, oba samoprzylepne z trwałym klejem akrylowym, w rolkach ciągłych i wykrojonych. Papier Premium Matte Ticket nie ma kleju i służy na bilety. Rolki 33–50-metrowe są do modeli biurkowych C3500, C4000e i D3800e, rolki produkcyjne z 800–2310 etykietami do przemysłowej C6000. Tusze i pojemniki konserwacyjne są w osobnej kategorii.',
+      content: 'Kolorowa drukarka etykiet potrzebuje papieru z powleczeniem pod tusz pigmentowy: warstwa na wierzchu wchłania tusz i nie pozwala mu się rozlać, dzięki czemu kolory są nasycone, a kody czytelne. Rolki Epson Premium Matte to papier matowy, High Gloss to papier błyszczący, oba samoprzylepne z trwałym klejem akrylowym, w rolkach ciągłych i wykrojonych. Papier Premium Matte Ticket nie ma kleju i służy na bilety. Rolki 33–50-metrowe są do modeli biurkowych C3500, C4000e i D3800e, rolki produkcyjne z 800–2310 etykietami do przemysłowej C6000, a rolki 203 i 210 mm — w tym folia BOPP — do C6500 z pasem druku 212 mm. Tusze i pojemniki konserwacyjne są w osobnej kategorii.',
     },
     buyingGuide: {
       heading: 'Jak dobrać etykiety do kolorowej drukarki?',
@@ -3590,7 +3590,8 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
         'Ciągła czy wykrojona rolka. Rolka ciągła daje etykietę dowolnej długości odcinaną gilotyną, dobra przy wielu formatach z jednej rolki. Rolka wykrojona ma gotowe etykiety o stałym wymiarze, drukarka wykrywa przerwy i drukuje dokładnie w polu.',
         'Szerokość rolki. 51 i 76 mm do małych etykiet produktowych, 102 i 105 mm do etykiet wysyłkowych, kartonowych i formatów 102 × 152 mm.',
         'Bilety. Papier do biletów nie ma kleju ani podkładu, jest grubszy (127 µm) i na rolce mieści się 50 m. Nie nadaje się do naklejania.',
-        'Wielkość rolki pod model drukarki. C3500, C4000e i D3800e biorą rolki do 4 cali średnicy, czyli 33–50 m papieru. C6000 pracuje na rolkach produkcyjnych z 800–2310 etykietami, które w mniejszej drukarce po prostu się nie zmieszczą.',
+        'Wielkość rolki pod model drukarki. C3500, C4000e i D3800e biorą rolki do 4 cali średnicy, czyli 33–50 m papieru. C6000 pracuje na rolkach produkcyjnych z 800–2310 etykietami, które w mniejszej drukarce po prostu się nie zmieszczą. C6500 dokłada rolki 203 i 210 mm szerokości, bo drukuje pas do 212 mm.',
+        'Papier czy folia. Papier powlekany wystarcza na etykiety produktowe i logistyczne. Folia BOPP nie rozmięka w wilgoci i znosi kontakt z olejami czy detergentami, więc idzie na kosmetyki, chemię i opakowania myte przed wysyłką; w ofercie jest w rolkach 203 mm do C6500.',
       ],
     },
     expertAuthority: 'TAKMA sprzedaje etykiety do drukarek od 25 lat, a do kolorowych drukarek Epson dobieramy je razem z drukarką: sprawdzamy format, rodzaj powierzchni i to, jak etykieta ma się zachować na opakowaniu. Na życzenie drukujemy próbkę projektu klienta na wybranym papierze.',
