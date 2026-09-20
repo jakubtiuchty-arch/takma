@@ -410,8 +410,22 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     url: 'https://www.takma.com.pl',
   }
 
-  // Extract model name from product name (e.g. "Zebra ZD230d" → "ZD230d")
-  const modelName = manufacturer ? product.name.replace(manufacturer.name, '').trim() : product.name
+  // Oznaczenie modelu do schema.org — wszystko, co stoi w nazwie ZA marką:
+  // „Zebra ZD230d" → „ZD230d", „Nawijarka etykiet Labelmate MC-11" → „MC-11".
+  // Samo wycięcie marki zostawiało opis i podwójną spację („Drukarka etykiet  PM45")
+  // w 492 z 924 kart, bo marka rzadko stoi na początku nazwy.
+  const modelName = (() => {
+    if (!manufacturer) return product.name
+    const i = product.name.indexOf(manufacturer.name)
+    if (i < 0) return product.name
+    // „Moduł RFID UHF do Zebra ZT411" — za marką stoi model DRUKARKI, nie tej części.
+    // Lepiej pominąć pole (jest opcjonalne) niż podać cudze oznaczenie; część i tak
+    // ma własny identyfikator w sku/mpn.
+    if (/\b(do|dla)$/i.test(product.name.slice(0, i).trim())) return undefined
+    const zaMarka = product.name.slice(i + manufacturer.name.length).trim()
+    // marka na końcu nazwy: zostaje to, co przed nią
+    return zaMarka || product.name.slice(0, i).trim() || product.name
+  })()
 
   // Extract specs for JSON-LD additionalProperty — dynamicznie z specifications[]
   const weightSpec = product.specifications.find(s => s.name.toLowerCase().includes('waga'))

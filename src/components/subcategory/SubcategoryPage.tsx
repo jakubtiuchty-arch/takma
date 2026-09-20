@@ -210,7 +210,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     description: subcategory.seoDescription,
     url: `https://www.takma.com.pl/${subcategory.slug}`,
     numberOfItems: products.length,
-    dateModified: '2026-02-22',
+    // data z treści kategorii; stała w kodzie zostawała nieaktualna przy każdej zmianie
+    dateModified: content?.updatedAt ?? '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: products.map((p, i) => ({
@@ -221,6 +222,8 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
     },
   }
 
+  // Google dopuszcza <a> w treści odpowiedzi, ale adres ma być pełny — w strukturze
+  // danych nie ma względem czego rozwinąć „/produkt/…".
   const faqJsonLd = content?.faq?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -229,7 +232,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
       name: f.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: f.answer,
+        text: f.answer.replace(/href="\//g, 'href="https://www.takma.com.pl/'),
       },
     })),
   } : null
@@ -430,7 +433,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               <div className="mt-12 space-y-10">
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
-                  <RichText text={content.definition.content} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                  <RichText text={content.definition.content} className="definition-content text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                 </section>
 
                 {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} />}
@@ -696,7 +699,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 <div className="mt-12 space-y-10">
                   <section>
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
-                    <RichText text={content.definition.content} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                    <RichText text={content.definition.content} className="definition-content text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                   </section>
 
                   <section>
