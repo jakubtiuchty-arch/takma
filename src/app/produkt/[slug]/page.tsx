@@ -1576,7 +1576,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {isColorPrinter && relatedAccessories.length > 0 && (
               <RelatedProducts
                 id="tusze"
-                title={`Tusze do ${product.name}`}
+                title="Tusze"
                 products={relatedAccessories as typeof products}
                 showDualButtons
               />
@@ -1596,7 +1596,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
                 id="etykiety-papierowe"
-                title={isColorPrinter ? `Etykiety do ${product.name}` : product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
+                title={isColorPrinter ? 'Etykiety' : product.categoryId === 'drukarki-kart' ? 'Taśmy do drukarek kart' : product.categoryId === 'drukarki-opasek' ? 'Opaski identyfikacyjne' : 'Etykiety papierowe termotransferowe'}
                 products={compatibleConsumables as typeof products}
                 labels={product.categoryId !== 'drukarki-kart' && product.categoryId !== 'drukarki-opasek'}
                 // drukarki kart: 4 taśmy + „Pokaż pozostałe”, jak sekcja „Karty PVC” niżej
