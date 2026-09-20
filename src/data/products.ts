@@ -65676,6 +65676,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
       { name: 'Karta katalogowa Epson ColorWorks C3500 (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c3500-karta-katalogowa-pl.pdf', size: '2,0 MB' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c3500-%28incl-nicelabel-download%29/p/13675',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
   },
   {
@@ -66525,11 +66526,11 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       'Epson ColorWorks D3800e z wysuniętą tacką na wydruki',
     ],
     videos: [
-      { url: 'https://www.youtube.com/watch?v=PUiVduby_DU', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
-      { url: 'https://www.youtube.com/watch?v=mk0AFewkab8', title: 'Zakładanie rolki etykiet · Epson, EN' },
-      { url: 'https://www.youtube.com/watch?v=AS8F98Ts8x0', title: 'Zakładanie papieru składanego · Epson, EN' },
-      { url: 'https://www.youtube.com/watch?v=LzS_uN5_hQo', title: 'Instalacja sterownika w Windows · Epson, EN' },
-      { url: 'https://www.youtube.com/watch?v=QoJgLdKGCzM', title: 'Instalacja sterownika w macOS · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/PUiVduby_DU', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/mk0AFewkab8', title: 'Zakładanie rolki etykiet · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/AS8F98Ts8x0', title: 'Zakładanie papieru składanego · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/LzS_uN5_hQo', title: 'Instalacja sterownika w Windows · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/QoJgLdKGCzM', title: 'Instalacja sterownika w macOS · Epson, EN' },
     ],
     tags: ['retail', 'produkcja', 'magazyn'],
     availability: 'available',
@@ -66641,6 +66642,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       { name: 'Karta katalogowa Epson ColorWorks D3800e (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-d3800e-karta-katalogowa-pl.pdf', size: '965 KB' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/drukarka-etykiet-colorworks-d3800e-z-atramentem-wodnym/p/57462',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
   },
   {
@@ -66985,6 +66987,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     ],
     downloads: [],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/cw-c4000e-series/p/35268',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
   },
   {
@@ -67327,6 +67330,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     ],
     downloads: [],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6000-series/p/28326',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
   },
   {
@@ -67913,6 +67917,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     ],
     downloads: [],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6500-series/p/28377',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
   },
   {
@@ -68255,6 +68260,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     ],
     downloads: [],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-cw-c8000e-series/p/46707',
+    sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
   },
   {

@@ -214,6 +214,13 @@ export async function generateStaticParams() {
   }))
 }
 
+/** YouTube nie osadza adresów „watch?v=" ani „youtu.be/" — zamieniamy je na formę embed.
+ *  Inne adresy (Vidyard, własne MP4) zostają bez zmian. */
+function adresOsadzenia(url: string): string {
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/)
+  return m ? `https://www.youtube-nocookie.com/embed/${m[1]}` : url
+}
+
 export default async function ProductPage({ params, searchParams }: ProductPageProps) {
   const { slug } = await params
   const { pn } = await searchParams
@@ -493,7 +500,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     '@type': 'VideoObject',
     name: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')} — ${product.name}`,
     // „dla drukarki X” tylko przy urządzeniach — przy taśmie czy kartach wychodziło „dla drukarki Taśma…”
-    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: film producenta z polskim lektorem i napisami ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: ${v.native ? 'film producenta z polskim lektorem i napisami' : 'instruktaż producenta'} ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
     thumbnailUrl: [`https://www.takma.com.pl${v.poster}`],
     contentUrl: v.url,
     uploadDate: v.published,
@@ -745,8 +752,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
                 {/* Zdanie zależy od zestawu filmów: przy pełnym cyklu mówimy o kolejności, przy dwóch nie ma czego porządkować. */}
                 <p className="mb-4 text-sm text-gray-500">
-                  Filmy producenta z polskim lektorem i napisami
-                  {product.videos.length > 2 ? ', w kolejności od rozpakowania do czyszczenia.' : '.'}
+                  {product.videos.every((v) => v.native)
+                    ? `Filmy producenta z polskim lektorem i napisami${product.videos.length > 2 ? ', w kolejności od rozpakowania do czyszczenia.' : '.'}`
+                    : `Instruktaże producenta${product.videos.length > 2 ? ', w kolejności od rozpakowania po konfigurację sterownika.' : '.'}`}
                 </p>
                 <div className="grid gap-5 sm:grid-cols-2">
                   {product.videos.map((v) => (
@@ -766,7 +774,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                           </video>
                         ) : (
                           <iframe
-                            src={v.url}
+                            src={adresOsadzenia(v.url)}
                             className="w-full h-full"
                             allowFullScreen
                             allow="autoplay; fullscreen; picture-in-picture"
