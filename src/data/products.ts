@@ -66793,10 +66793,12 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     manufacturerId: 'epson',
     priceFrom: 7433.72,
     images: [
+      '/images/products/epson-colorworks-c4000e-etykieta.png',
       '/images/products/epson-colorworks-c4000e-front.png',
       '/images/products/epson-colorworks-c4000e-pojemnik.png',
     ],
     imageDescriptions: [
+      'Epson ColorWorks C4000e z wydrukowaną kolorową etykietą na butelkę wina',
       'Epson ColorWorks C4000e od przodu, z kolorowym wyświetlaczem i panelem sterowania',
       'Epson ColorWorks C4000e z wysuniętym pojemnikiem konserwacyjnym SJMB4000',
     ],
