@@ -39,8 +39,6 @@ interface ProductSlide {
   /** Ile milisekund slajd ma stać, zanim karuzela pójdzie dalej. Bez tego obowiązuje INTERVAL —
    *  za krótko, gdy slajd niesie film z fabułą, którą trzeba obejrzeć do końca. */
   hold?: number
-  /** Krople tuszu wychodzące poza dolną krawędź hero, na jasny pasek pod nim. */
-  krople?: boolean
 }
 
 interface InfoSlide {
@@ -76,7 +74,6 @@ const slides: HeroSlide[] = [
     imageType: 'packshot',
     noOverlay: true,
     bgColor: '#000000',
-    krople: true,
   },
   ...(promoSaleActive
     ? ([{ type: 'promoSale', image: '/images/hero-promo-zebra-v3.webp' }] as PromoSaleSlide[])
@@ -174,10 +171,7 @@ export default function Hero() {
   const isImageLeft = slide.type === 'product' && slide.imageLeft
   const sectionBg = slide.type === 'promoSale' ? '#0a0d08' : slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
-  const krople = slide.type === 'product' && slide.krople
-
   return (
-    <div className="relative">
     <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
       {/* Tło — gradient mesh (nie dla info ani banner) */}
       {slide.type !== 'info' && slide.type !== 'materials' && slide.type !== 'promoSale' && !isBanner && <div className="absolute inset-0 bg-gradient-mesh-dark" />}
@@ -522,28 +516,5 @@ export default function Hero() {
         ))}
       </div>
     </section>
-
-      {/* Krople tuszu przekraczające dolną krawędź hero. Leżą poza sekcją, bo ta przycina
-          zawartość; dolna część każdej kropli wchodzi na jasny pasek pod hero i dostaje cień,
-          żeby czytało się to jako wyjście poza kadr, a nie jako naklejka. */}
-      {krople && (
-        <div
-          aria-hidden
-          className={clsx(
-            'pointer-events-none absolute inset-x-0 bottom-0 z-30 hidden sm:block transition-opacity duration-700 ease-in-out',
-            isTransitioning ? 'opacity-0' : 'opacity-100'
-          )}
-        >
-          <div className="relative mx-auto h-0 max-w-[1600px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/rozprysk-krople.png"
-              alt=""
-              className="absolute right-[15%] -bottom-[22px] w-[52%] max-w-[740px] drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)]"
-            />
-          </div>
-        </div>
-      )}
-    </div>
   )
 }
