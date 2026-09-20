@@ -66837,6 +66837,11 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       'Epson ColorWorks C4000e od przodu, z kolorowym wyświetlaczem i panelem sterowania',
       'Epson ColorWorks C4000e z wysuniętym pojemnikiem konserwacyjnym SJMB4000',
     ],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/uNNfAog6HYI', title: 'Rozpakowanie i pierwsze uruchomienie · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/DYLoZk-yVfk', title: 'Zakładanie rolki etykiet · Epson, EN' },
+      { url: 'https://www.youtube-nocookie.com/embed/ciXpC9SunA4', title: 'Zakładanie papieru składanego · Epson, EN' },
+    ],
     tags: ['retail', 'produkcja', 'magazyn', 'healthcare'],
     availability: 'available',
     isNew: true,

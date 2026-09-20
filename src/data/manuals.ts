@@ -37,6 +37,7 @@ import { magicardPronto100Pl } from './manual-content/magicard-pronto100-pl'
 import { magicard600Pl } from './manual-content/magicard-600-pl'
 import { epsonColorworksC3500Pl } from './manual-content/epson-colorworks-c3500-pl'
 import { epsonColorworksD3800ePl } from './manual-content/epson-colorworks-d3800e-pl'
+import { epsonColorworksC4000ePl } from './manual-content/epson-colorworks-c4000e-pl'
 
 // ---------------------------------------------------------------------------
 // Instrukcje obsługi / dokumentacja PDF do urządzeń ze sklepu TAKMA.
@@ -1141,6 +1142,32 @@ export const manuals: Manual[] = [
       'magicard 600 holokote',
     ],
     updatedAt: '2026-09-11',
+  },
+  {
+    slug: 'epson-colorworks-c4000e',
+    model: 'ColorWorks C4000e',
+    name: 'Epson ColorWorks C4000e',
+    brand: 'Epson',
+    category: 'drukarki-etykiet',
+    description:
+      'Kolorowa drukarka etykiet z tuszem pigmentowym, w wersjach bk i mk. Instrukcja po polsku: wybór czarnego tuszu przy pierwszym uruchomieniu i jakie nośniki z niego wynikają, zakładanie rolki i składanki, przysłony, wymiana wkładów SJIC42P i zbiornika SJMB4000, czyszczenie głowicy i noża, kontrola dysz, kalibracja czujników, komunikaty i problemy z wydrukiem.',
+    productSlug: 'epson-colorworks-c4000e',
+    documents: [
+      { type: 'user-guide', title: 'Przewodnik użytkownika CW-C4000 Series (oryginał Epsona po polsku)', lang: 'pl', file: '/instrukcje/epson-colorworks-c4000e-ug-pl.pdf', size: '2,2 MB' },
+      { type: 'quick-start', title: 'Rozpakowanie i pierwsze uruchomienie (arkusz Start Here)', lang: 'pl', file: '/instrukcje/epson-colorworks-c4000e-qs-pl.pdf', size: '8,7 MB' },
+      { type: 'programming', title: 'Technical Reference Guide CW-C4000 Series (pełna dokumentacja techniczna, rev. L)', lang: 'en', file: '/instrukcje/epson-colorworks-c4000e-trg-en.pdf', size: '24,2 MB' },
+    ],
+    polishManual: epsonColorworksC4000ePl,
+    keywords: [
+      'epson colorworks c4000e instrukcja',
+      'cw-c4000 instrukcja po polsku',
+      'epson c4000e instrukcja obsługi pdf',
+      'colorworks c4000e wymiana tuszu',
+      'sjic42p wymiana wkładu',
+      'c4000e czarny matowy czy błyszczący',
+      'colorworks c4000e czyszczenie noża',
+    ],
+    updatedAt: '2026-09-20',
   },
   {
     slug: 'epson-colorworks-d3800e',
