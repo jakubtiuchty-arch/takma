@@ -68279,7 +68279,9 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
         answer: 'Przy wolumenie. C8000e kosztuje około trzech razy więcej niż C6000, ale drukuje trzy razy szybciej i ma dziesięć razy większe zbiorniki tuszu, więc niższy koszt wydruku i mniej przestojów. Granica opłacalności zależy od dziennej liczby etykiet i od tego, ile kosztuje przestój linii — policzymy to na Twoich liczbach, jeśli podasz nakład.',
       },
     ],
-    downloads: [],
+    downloads: [
+      { name: 'Karta katalogowa Epson ColorWorks C8000e MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c8000e-karta-katalogowa-pl.pdf', size: '1,3 MB' },
+    ],
     videos: [
       { url: 'https://www.youtube-nocookie.com/embed/2RTgICUK_LU', title: 'Ustawienie drukarki po rozpakowaniu · Epson, EN' },
       { url: 'https://www.youtube-nocookie.com/embed/pBz2Jm4wvm8', title: 'Zakładanie rolki i składanki · Epson, EN' },
