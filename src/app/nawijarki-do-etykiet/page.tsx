@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { getSubcategoryBySlug } from '@/data/products'
 import SubcategoryPage from '@/components/subcategory/SubcategoryPage'
 
-const SLUG = 'nawijaki-etykiet'
+const SLUG = 'nawijarki-do-etykiet'
 
 export async function generateMetadata(): Promise<Metadata> {
   const sub = getSubcategoryBySlug(SLUG)!

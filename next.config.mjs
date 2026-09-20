@@ -35,6 +35,8 @@ const nextConfig = {
       { source: '/serwis/epson', destination: '/serwis-kolorowych-drukarek-epson', permanent: true },
       // podkategoria kart przeniesiona z błędnej pisowni „PCV” na „PVC” (2026-09-09)
       { source: '/karty-pcv', destination: '/karty-pvc', permanent: true },
+      // nawijaki → nawijarki: „nawijarka do etykiet” ma 100 wyszukiwań/mies., „nawijak etykiet” 70 (2026-09-20)
+      { source: '/nawijaki-etykiet', destination: '/nawijarki-do-etykiet', permanent: true },
       // =====================================================
       // INSTRUKCJE — stare PDF-y instrukcji (/downloads) → kanoniczny dom /instrukcje
       // PL PDF → strona po polsku; EN PDF → hub modelu

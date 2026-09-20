@@ -109,8 +109,8 @@ export const manufacturers: Manufacturer[] = [
     slug: 'labelmate',
     name: 'Labelmate',
     logo: '/images/partners/logo_labelmate.png',
-    seoTitle: 'Nawijaki i odwijaki etykiet Labelmate | MC-11, CAT-3, UNI-CAT',
-    seoDescription: 'Nawijaki i odwijaki etykiet Labelmate — MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson ColorWorks. Rolki do 300 mm, etykiety do 255 mm, dwa lata gwarancji.'
+    seoTitle: 'Nawijarki i odwijaki do etykiet Labelmate | MC-11, CAT-3, UNI-CAT',
+    seoDescription: 'Nawijarki i odwijaki do etykiet Labelmate — MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson ColorWorks. Rolki do 300 mm, nośnik do 255 mm, dwa lata gwarancji.'
   },
 ]
 

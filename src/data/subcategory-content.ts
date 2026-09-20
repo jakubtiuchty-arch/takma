@@ -3749,138 +3749,138 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       { name: 'Policz zużycie', text: 'Etykiety na rolce podziel przez dzienny nakład; zamów tyle rolek, żeby zapas starczył na czas dostawy plus dwa tygodnie.' },
     ],
   },
-  'nawijaki-etykiet': {
+  'nawijarki-do-etykiet': {
     updatedAt: '2026-09-20',
     definition: {
-      heading: 'Co robi nawijak etykiet i kiedy się przydaje',
-      content: 'Nawijak etykiet (ang. label rewinder) to zewnętrzne urządzenie, które stoi za drukarką i zwija zadrukowaną wstęgę w równą rolkę. Bez niego etykiety spadają na podłogę albo skręcają się na blacie, a ktoś musi stać przy drukarce i pilnować wydruku. Z nawijakiem drukarka dochodzi do końca zlecenia sama, a gotowa rolka trafia do aplikatora, na kolejne stanowisko albo prosto do klienta.\n\nOdwijak pracuje w drugą stronę: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie musi ciągnąć ciężkiego nawoju. W drukarkach atramentowych dochodzi jeszcze cofanie wstęgi między zadaniami — tam potrzeba urządzenia, które ten ruch rozpozna i odda materiał.\n\nW ofercie mamy sześć modeli <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 do drukarki biurkowej, CAT-3 do druku przemysłowego i UNI-CAT, który sam rozpoznaje, czy ma nawijać, czy odwijać.',
+      heading: 'Czym jest nawijarka do etykiet',
+      content: 'Nawijarka do etykiet (ang. label rewinder), nazywana również nawijakiem, to zewnętrzne urządzenie ustawiane za drukarką, które zwija zadrukowany nośnik w równą rolkę. Bez niego etykiety opadają na podłogę albo zwijają się na blacie, a operator musi nadzorować przebieg wydruku. Zastosowanie nawijarki pozwala drukarce zakończyć zlecenie samodzielnie, a gotowy nawój trafia do aplikatora, na kolejne stanowisko albo bezpośrednio do odbiorcy.\n\nOdwijak realizuje zadanie odwrotne: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie pokonuje ciężaru nawoju. W drukarkach atramentowych dochodzi cofanie nośnika pomiędzy zadaniami, które wymaga urządzenia rozpoznającego ten ruch i zwalniającego materiał.\n\nPosiadamy w ofercie sześć modeli belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz UNI-CAT, który samoczynnie rozpoznaje tryb pracy.',
     },
     comparisonTable: {
-      heading: 'Sześć nawijaków Labelmate w jednym zestawieniu',
-      intro: 'Kolumna „Rolka” podaje maksymalną średnicę i masę gotowego nawoju. Prędkość dotyczy początku rolki z gilzą 76 mm.',
-      columns: ['Etykiety', 'Rolka', 'Gilza', 'Prędkość', 'Do jakich drukarek'],
+      heading: 'Zestawienie sześciu modeli Labelmate',
+      intro: 'Kolumna „Rolka” podaje maksymalną średnicę i masę gotowego nawoju. Prędkość odnosi się do początku rolki z gilzą 76 mm.',
+      columns: ['Nośnik', 'Rolka', 'Gilza', 'Prędkość', 'Przeznaczenie'],
       rows: [
-        { model: 'MC-11', href: '/produkt/labelmate-mc-11', role: 'Biurko, mało miejsca', cells: ['do 115 mm', '220 mm / 4 kg', '25–101 mm (ACH)', '50 cm/s', 'ZD421t, ZD621t, TD-4T, C3500'] },
+        { model: 'MC-11', href: '/produkt/labelmate-mc-11', role: 'Drukarki biurkowe', cells: ['do 115 mm', '220 mm / 4 kg', '25–101 mm (ACH)', '50 cm/s', 'ZD421t, ZD621t, TD-4T, C3500'] },
         { model: 'CAT-3-STANDARD', href: '/produkt/labelmate-cat-3-standard', role: 'Druk przemysłowy 4 cale', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '125 cm/s', 'ZT411, ZT610, PM45'] },
         { model: 'CAT-3-ACH', href: '/produkt/labelmate-cat-3-ach', role: 'Zmienne średnice gilz', cells: ['do 155 mm', '280 mm / 7 kg', '25–101 mm (ACH)', '125 cm/s', 'Druk zleceniowy'] },
-        { model: 'CAT-3-10-INCHES', href: '/produkt/labelmate-cat-3-10-inches', role: 'Szeroki materiał', cells: ['do 255 mm', '300 mm / 10 kg', '76 mm', '125 cm/s', 'ZT421, ZT620, PM65'] },
-        { model: 'UNI-CAT-STANDARD', href: '/produkt/labelmate-uni-cat-standard', role: 'Nawijak i odwijak w jednym', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '80 cm/s', 'Epson ColorWorks'] },
-        { model: 'UNI-CAT-CHUCK', href: '/produkt/labelmate-uni-cat-chuck', role: 'Rolka zmieniana co chwilę', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '80 cm/s', 'ColorWorks, druk zleceniowy'] },
+        { model: 'CAT-3-10-INCHES', href: '/produkt/labelmate-cat-3-10-inches', role: 'Szeroki nośnik', cells: ['do 255 mm', '300 mm / 10 kg', '76 mm', '125 cm/s', 'ZT421, ZT620, PM65'] },
+        { model: 'UNI-CAT-STANDARD', href: '/produkt/labelmate-uni-cat-standard', role: 'Nawijarka i odwijak', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '80 cm/s', 'Epson ColorWorks'] },
+        { model: 'UNI-CAT-CHUCK', href: '/produkt/labelmate-uni-cat-chuck', role: 'Częsta zmiana rolek', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '80 cm/s', 'ColorWorks, druk zleceniowy'] },
       ],
-      note: 'Każdy model nawija w obie strony i ma dwa lata gwarancji producenta, rok na zasilacz.',
+      note: 'Wszystkie modele nawijają w obu kierunkach i objęte są dwuletnią gwarancją producenta, z rocznym okresem na zasilacz.',
     },
     buyingGuide: {
-      heading: 'Jak dobrać nawijak do drukarki',
+      heading: 'Jak dobrać nawijarkę do drukarki',
       items: [
-        'Szerokość wstęgi, nie etykiety. Nawijak przyjmuje cały materiał razem z podkładem. Drukarka czterocalowa podaje do 118 mm, więc wystarczy model 155 mm. Drukarka sześciocalowa (ZT421, ZT620, PM65) wypuszcza wstęgę do 178 mm i wtedy potrzebny jest trzon dziesięciocalowy z zakresem 255 mm.',
-        'Średnica i masa gotowej rolki. MC-11 uniesie 220 mm i 4 kg, CAT-3 oraz UNI-CAT — 300 mm i od 7 do 10 kg. Rolka etykiet o średnicy 300 mm i szerokości 150 mm waży z grubsza 8 kg, więc to granica realna, nie papierowa.',
-        'Średnica gilzy po obu stronach. Drukarki biurkowe pracują na gilzie 25 mm, przemysłowe na 76 mm. Jeśli gotowa rolka idzie dalej do aplikatora, to on narzuca średnicę. Modele z rozsuwanym uchwytem (ACH) obejmują cały zakres 25–101 mm i nie wymagają dokupywania trzonów.',
-        'Prędkość drukarki. CAT-3 nawija do 125 cm/s i nadąży za każdą drukarką termotransferową na rynku. UNI-CAT ma 80 cm/s, ale dobiera tempo sam, obserwując wstęgę.',
-        'Druk atramentowy to osobny przypadek. Epson ColorWorks cofa wstęgę przed każdym zadaniem, żeby ustawić głowicę. Nawijak bez obsługi tego ruchu trzyma materiał napięty i drukarka gubi rejestrację. Do ColorWorks bierz wyłącznie UNI-CAT.',
-        'Jak często zmieniasz rolkę. Przy jednym zleceniu dziennie zwykły trzon wystarczy. Przy zmianie co godzinę szybkozłączny Quick-Chuck skraca wymianę do jednego ruchu dźwigni.',
-        'Miejsce za drukarką. Najmniejszy MC-11 zajmuje 220 × 305 mm, najgłębszy CAT-3-10-INCHES — 300 × 455 mm. Nawijak musi stać na wprost wylotu, nie z boku, bo wstęga ma iść prosto.',
+        'Szerokość nośnika, nie etykiety — nawijarka przyjmuje cały materiał wraz z podkładem. Drukarka czterocalowa podaje nośnik do 118 mm, co pokrywa model o zakresie 155 mm. Drukarka sześciocalowa (ZT421, ZT620, PM65) wymaga trzonu dziesięciocalowego o zakresie 255 mm.',
+        'Średnica i masa gotowego nawoju — model MC-11 przyjmuje 220 mm i 4 kg, modele CAT-3 oraz UNI-CAT od 280 do 300 mm i od 7 do 10 kg. Rolka etykiet o średnicy 300 mm i szerokości 150 mm waży około 8 kg, zatem limit masy ma znaczenie praktyczne.',
+        'Średnica gilzy po obu stronach procesu — drukarki biurkowe pracują na gilzie 25 mm, przemysłowe na 76 mm. Jeżeli gotowa rolka trafia do aplikatora, jego wymagania określają średnicę. Modele z rozsuwanym uchwytem (ACH) obejmują zakres 25–101 mm bez dokupywania trzonów.',
+        'Prędkość drukarki — modele CAT-3 nawijają do 125 cm/s i nadążają za każdą drukarką termotransferową dostępną na rynku. UNI-CAT osiąga 80 cm/s, przy czym dobiera tempo samodzielnie na podstawie ruchu nośnika.',
+        'Druk atramentowy — drukarki Epson ColorWorks cofają nośnik przed każdym zadaniem w celu ustawienia głowicy. Urządzenie pozbawione obsługi tego ruchu utrzymuje materiał napięty, co prowadzi do utraty rejestracji wydruku. Do drukarek ColorWorks przeznaczone są wyłącznie modele UNI-CAT.',
+        'Częstotliwość wymiany rolki — przy jednym zleceniu dziennie wystarcza trzon standardowy. Przy wymianie co godzinę szybkozłączny trzon Quick-Chuck skraca tę czynność do jednego ruchu dźwigni.',
+        'Miejsce za drukarką — model MC-11 zajmuje 220 × 305 mm, CAT-3-10-INCHES 300 × 455 mm. Nawijarka powinna stać naprzeciw wylotu nośnika, aby materiał przemieszczał się po linii prostej.',
       ],
     },
-    expertAuthority: 'TAKMA sprzedaje i serwisuje drukarki etykiet od ponad dwudziestu lat, a nawijaki dobieramy do nich na co dzień. Najczęściej trafiają do firm, które właśnie przeszły z gotowych rolek zamawianych w drukarni na druk u siebie i po tygodniu zorientowały się, że ktoś musi te etykiety zbierać. Jeśli nie wiesz, który model pasuje do Twojego sprzętu, napisz, jaką masz drukarkę i jak szeroki materiał drukujesz. Odpiszemy jednym modelem, a nie listą sześciu.',
-    technicalDeepDive: `Nawijak nie ciągnie wstęgi na siłę. Silnik pracuje na zadanym momencie, nie na zadanej prędkości: rolka nabiera średnicy, prędkość obwodowa rośnie, a naciąg zostaje ten sam. Dlatego producenci podają prędkość maksymalną „na początku rolki z gilzą 76 mm” — przy pełnym nawoju 300 mm te same obroty dają zupełnie inny przesuw wstęgi.
+    expertAuthority: 'TAKMA prowadzi sprzedaż i serwis drukarek etykiet od ponad dwudziestu lat, a dobór nawijarek należy do codziennej praktyki naszego zespołu. Urządzenia te trafiają najczęściej do firm, które zastąpiły gotowe rolki zamawiane w drukarni drukiem realizowanym we własnym zakresie. Prosimy o kontakt z podaniem modelu drukarki oraz szerokości stosowanego nośnika — wskażemy model odpowiadający Państwa procesowi.',
+    technicalDeepDive: `Nawijarka nie przeciąga nośnika siłą. Silnik pracuje przy zadanym momencie obrotowym, a nie przy zadanej prędkości: w miarę przyrostu średnicy nawoju rośnie prędkość obwodowa, natomiast naciąg pozostaje na tym samym poziomie. Z tego powodu producenci podają prędkość maksymalną w odniesieniu do początku rolki z gilzą 76 mm — przy pełnym nawoju o średnicy 300 mm te same obroty odpowiadają innemu przesuwowi materiału.
 
-Moment ustawia się pod materiał. Za mały i rolka wychodzi luźna, wstęga się marszczy. Za duży i cienki papier się rozciąga, a etykiety przesuwają się względem podkładu. CAT-3 ma dwa zakresy momentu przełączane na panelu, co pokrywa rozpiętość od papieru 60 g po sztywną folię poliestrową.
+Moment dobiera się do rodzaju nośnika. Wartość zbyt niska skutkuje luźnym nawojem i marszczeniem materiału, zbyt wysoka — rozciągnięciem cienkiego papieru i przesunięciem etykiet względem podkładu. Modele CAT-3 udostępniają dwa zakresy momentu przełączane z panelu, co pokrywa materiały od papieru 60 g po sztywną folię poliestrową.
 
-Kierunek nawijania też jest decyzją. Nawój do wewnątrz, czyli etykietami do środka rolki, chroni nadruk w transporcie. Nawój na zewnątrz jest wygodniejszy, gdy rolka idzie prosto do aplikatora, bo etykieta odchodzi od gilzy gotowa do naklejenia. Wszystkie modele Labelmate obsługują oba kierunki.
+Kierunek nawijania również podlega wyborowi. Nawój do wewnątrz, czyli etykietami do środka rolki, chroni nadruk podczas transportu. Nawój na zewnątrz ułatwia dalszą obsługę, gdy rolka trafia bezpośrednio do aplikatora, ponieważ etykieta odchodzi od gilzy gotowa do naklejenia. Wszystkie modele Labelmate obsługują oba kierunki.
 
-Drukarki atramentowe wymagają czegoś więcej. ColorWorks przed każdym zadaniem cofa wstęgę o kilka centymetrów. Nawijak, który tego ruchu nie rozpozna, trzyma materiał napięty — drukarka walczy z oporem i gubi rejestrację, a objawia się to etykietami przesuniętymi o parę milimetrów albo błędem czujnika. UNI-CAT wykrywa cofanie, luzuje wstęgę i po zakończeniu ruchu wraca do nawijania.`,
+Odrębnego omówienia wymagają drukarki atramentowe. Urządzenia ColorWorks cofają nośnik o kilka centymetrów przed każdym zadaniem w celu ustawienia głowicy. Nawijarka pozbawiona obsługi tego ruchu utrzymuje materiał napięty, w wyniku czego drukarka pokonuje opór i traci rejestrację wydruku — objawia się to przesunięciem etykiet o kilka milimetrów albo zgłoszeniem błędu czujnika. Modele UNI-CAT wykrywają cofanie, zwalniają nośnik i po zakończeniu ruchu wracają do nawijania.`,
     useCases: [
       {
-        title: 'Zakład spożywczy — 6 000 etykiet na zmianę z ZT411',
-        description: 'Drukarka pracuje bez operatora, a CAT-3-STANDARD zbiera wstęgę w rolkę 300 mm. Pracownik podchodzi raz na zmianę: zdejmuje gotowy nawój i zakłada pustą gilzę. Wcześniej ktoś stał przy drukarce i odrywał etykiety co kilkadziesiąt sekund.',
+        title: 'Zakład spożywczy — 6 000 etykiet na zmianę z drukarki ZT411',
+        description: 'Drukarka pracuje bez nadzoru operatora, a nawijarka CAT-3-STANDARD zbiera nośnik w rolkę o średnicy 300 mm. Obsługa podchodzi do stanowiska raz na zmianę, aby zdjąć gotowy nawój i założyć pustą gilzę. We wcześniejszej organizacji pracy pracownik odrywał etykiety co kilkadziesiąt sekund.',
         icon: 'produkcja',
       },
       {
-        title: 'Kosmetyki — kolorowe etykiety z ColorWorks C6000',
-        description: 'C6000 drukuje serie po 500–2 000 etykiet i przed każdą cofa wstęgę. UNI-CAT-STANDARD ten ruch rozpoznaje, więc rejestracja się nie sypie, a gotowa rolka jedzie prosto na aplikator przy linii butelkowania.',
+        title: 'Produkcja kosmetyków — etykiety kolorowe z drukarki ColorWorks C6000',
+        description: 'Drukarka realizuje serie po 500–2 000 etykiet i przed każdą z nich cofa nośnik. Model UNI-CAT-STANDARD rozpoznaje ten ruch, dzięki czemu rejestracja wydruku pozostaje stabilna, a gotowa rolka trafia bezpośrednio na aplikator linii butelkowania.',
         icon: 'retail',
       },
       {
         title: 'Druk zleceniowy — kilkanaście zamówień dziennie',
-        description: 'Każdy klient podaje inną specyfikację nawoju: gilza 25, 40 albo 76 mm, etykiety do wewnątrz albo na zewnątrz. CAT-3-ACH obsługuje cały zakres rozsuwanym uchwytem, bez dokupywania trzonów, a kierunek zmienia się przyciskiem na panelu.',
+        description: 'Każdy odbiorca określa odmienną specyfikację nawoju: gilzę 25, 40 albo 76 mm oraz kierunek nawijania. Model CAT-3-ACH obejmuje cały zakres średnic rozsuwanym uchwytem, bez konieczności dokupywania trzonów, a kierunek zmienia się przyciskiem na panelu.',
         icon: 'logistyka',
       },
       {
         title: 'Magazyn — etykiety paletowe 150 × 210 mm',
-        description: 'ZT421 podaje wstęgę 178 mm, której zwykły nawijak nie przyjmie. CAT-3-10-INCHES ma trzon dziesięciocalowy i zakres do 255 mm, a nawój może ważyć 10 kg — tyle, ile wychodzi z pełnej rolki etykiet foliowych.',
+        description: 'Drukarka ZT421 podaje nośnik o szerokości 178 mm, przekraczającej zakres standardowej nawijarki. Model CAT-3-10-INCHES dysponuje trzonem dziesięciocalowym o zakresie 255 mm oraz dopuszczalną masą nawoju 10 kg, odpowiadającą pełnej rolce etykiet foliowych.',
         icon: 'magazyn-wms',
       },
     ],
     uniqueInsights: {
-      heading: 'Czego nie widać w katalogu',
+      heading: 'Zagadnienia pominięte w specyfikacjach',
       items: [
         {
           title: 'Prędkość maksymalna dotyczy pustej gilzy',
-          text: 'Każdy producent podaje prędkość „na początku rolki”. Gdy nawój urośnie do 300 mm, te same obroty przekładają się na kilkakrotnie szybszy przesuw wstęgi, a naciąg przy stałym momencie spada. Zapas prędkości ma więc sens nawet przy wolniejszej drukarce.',
+          text: 'Producenci podają prędkość odniesioną do początku rolki. Po osiągnięciu średnicy 300 mm te same obroty odpowiadają kilkakrotnie większemu przesuwowi nośnika, a naciąg przy stałym momencie maleje. Zapas prędkości zachowuje zatem znaczenie również przy wolniejszej drukarce.',
         },
         {
-          title: 'Zwykły nawijak psuje druk atramentowy',
-          text: 'To najczęstsza pomyłka przy ColorWorks: klient kupuje tani nawijak, a po tygodniu etykiety zaczynają wychodzić przesunięte. Przyczyna jest mechaniczna — drukarka cofa wstęgę, nawijak jej nie oddaje. Ustawieniem w sterowniku tego się nie obejdzie.',
+          title: 'Klasyczna nawijarka zaburza pracę drukarki atramentowej',
+          text: 'Najczęstszy błąd doboru przy drukarkach ColorWorks polega na zastosowaniu urządzenia bez obsługi cofania nośnika. Po kilku dniach pracy etykiety zaczynają wychodzić przesunięte. Przyczyna ma charakter mechaniczny i nie daje się usunąć ustawieniem sterownika.',
         },
         {
-          title: 'O gilzie decyduje nie drukarka, tylko to, co dalej',
-          text: 'Rolka nawinięta na gilzę 25 mm i ta sama na 76 mm zachowują się inaczej w aplikatorze i na odwijaku u odbiorcy. Zanim wybierzesz uchwyt, sprawdź, gdzie ta rolka pojedzie po zdjęciu z nawijaka.',
+          title: 'O średnicy gilzy decyduje dalszy etap procesu',
+          text: 'Rolka nawinięta na gilzę 25 mm zachowuje się w aplikatorze inaczej niż ta sama rolka na gilzie 76 mm. Przed wyborem uchwytu należy ustalić, do jakiego urządzenia trafi gotowy nawój.',
         },
         {
-          title: 'Nic się nie przykręca do stołu',
-          text: 'Nawijaki Labelmate mają stalową obudowę i gumowe nóżki, więc stoją własnym ciężarem. Przy ciężkiej rolce to zaleta, bo urządzenie można przestawić do innej drukarki w minutę, bez demontażu.',
+          title: 'Urządzenie nie wymaga mocowania do stołu',
+          text: 'Nawijarki Labelmate mają stalową obudowę i gumowe nóżki, dzięki czemu pozostają stabilne pod ciężarem rolki. Przeniesienie urządzenia do innej drukarki nie wymaga demontażu.',
         },
       ],
     },
     faq: [
       {
-        question: 'Czym różni się nawijak od odwijaka?',
-        answer: 'Nawijak zwija zadrukowaną wstęgę za drukarką. Odwijak podaje rolkę do drukarki ze stałym naciągiem. Modele UNI-CAT robią jedno i drugie — po włączeniu same rozpoznają, w którą stronę idzie materiał.',
+        question: 'Czym różni się nawijarka od odwijaka?',
+        answer: 'Nawijarka zwija zadrukowany nośnik za drukarką. Odwijak podaje rolkę do drukarki ze stałym naciągiem. Modele UNI-CAT realizują obie funkcje i po uruchomieniu samoczynnie rozpoznają kierunek ruchu materiału.',
       },
       {
-        question: 'Który nawijak pasuje do Epson ColorWorks?',
-        answer: 'UNI-CAT-STANDARD albo UNI-CAT-CHUCK. Tylko te modele obsługują cofanie wstęgi, które ColorWorks wykonuje przed każdym zadaniem; nawijak bez tej funkcji powoduje przesunięcia wydruku. Do <a href="/produkt/epson-colorworks-c6000">C6000</a> i <a href="/produkt/epson-colorworks-c6500">C6500</a> Labelmate robi dodatkowo płytę pozycjonującą LMX602, którą dopisujemy do zamówienia na życzenie.',
+        question: 'Która nawijarka jest przeznaczona do drukarek Epson ColorWorks?',
+        answer: 'Model UNI-CAT-STANDARD albo UNI-CAT-CHUCK. Wyłącznie te urządzenia obsługują cofanie nośnika, które drukarki ColorWorks wykonują przed każdym zadaniem; nawijarka pozbawiona tej funkcji powoduje przesunięcia wydruku. Do modeli <a href="/produkt/epson-colorworks-c6000">C6000</a> i <a href="/produkt/epson-colorworks-c6500">C6500</a> Labelmate oferuje dodatkowo płytę pozycjonującą LMX602, którą dołączamy do zamówienia na życzenie.',
       },
       {
-        question: 'Czy nawijak zadziała z każdą drukarką etykiet?',
-        answer: 'Tak, bo nie łączy się z drukarką elektrycznie — ma własny zasilacz i podąża za wstęgą. Liczy się mechanika: szerokość materiału, średnica gilzy i średnica gotowej rolki. Wyjątkiem jest sterowanie sygnałem z drukarki, które ma wersja MC-11+ (LMR032) — sprowadzamy ją na zamówienie.',
+        question: 'Czy nawijarka współpracuje z każdą drukarką etykiet?',
+        answer: 'Tak. Urządzenie nie łączy się z drukarką elektrycznie — pracuje z własnego zasilacza i podąża za ruchem nośnika. Znaczenie mają wyłącznie parametry mechaniczne: szerokość materiału, średnica gilzy oraz średnica gotowego nawoju. Sterowanie sygnałem z drukarki oferuje wersja MC-11+ (LMR032), którą sprowadzamy na zamówienie.',
       },
       {
-        question: 'Jaką gilzę przyjmuje nawijak?',
-        answer: 'Modele STANDARD i 10-INCHES mają trzon pod gilzę 76 mm, a na zamówienie pod 38, 40, 44, 50, 70 i 100 mm. Modele ACH mają rozsuwany uchwyt obejmujący zakres 25–101 mm bez wymiany trzonu. UNI-CAT-CHUCK używa szybkozłącznego trzonu 76 mm.',
+        question: 'Jaką gilzę przyjmuje nawijarka?',
+        answer: 'Modele STANDARD i 10-INCHES wyposażono w trzon pod gilzę 76 mm, a na zamówienie pod 38, 40, 44, 50, 70 i 100 mm. Modele ACH mają rozsuwany uchwyt obejmujący zakres 25–101 mm bez wymiany trzonu. Model UNI-CAT-CHUCK wykorzystuje szybkozłączny trzon 76 mm.',
       },
       {
-        question: 'Można nawijać etykietami do środka i na zewnątrz?',
-        answer: 'Tak, oba kierunki przełącza się na panelu. Nawój do wewnątrz chroni nadruk w transporcie, na zewnątrz jest wygodniejszy, gdy rolka idzie prosto do aplikatora.',
+        question: 'Czy urządzenie nawija etykietami do wewnątrz i na zewnątrz?',
+        answer: 'Tak, oba kierunki przełącza się z panelu. Nawój do wewnątrz chroni nadruk podczas transportu, nawój na zewnątrz ułatwia podanie rolki do aplikatora.',
       },
       {
-        question: 'Ile waży rolka, którą nawijak uniesie?',
-        answer: 'MC-11 przyjmie 4 kg, CAT-3-ACH 7 kg, CAT-3-STANDARD i UNI-CAT-STANDARD po 8 kg, a CAT-3-10-INCHES i UNI-CAT-CHUCK po 10 kg. Dla porównania: rolka etykiet o średnicy 300 mm i szerokości 150 mm waży około 8 kg.',
+        question: 'Jaka jest dopuszczalna masa nawijanej rolki?',
+        answer: 'Model MC-11 przyjmuje 4 kg, CAT-3-ACH 7 kg, CAT-3-STANDARD oraz UNI-CAT-STANDARD po 8 kg, natomiast CAT-3-10-INCHES i UNI-CAT-CHUCK po 10 kg. Dla porównania rolka etykiet o średnicy 300 mm i szerokości 150 mm waży około 8 kg.',
       },
     ],
     comparisons: [
       {
         title: 'MC-11 czy CAT-3?',
-        verdict: 'Drukarka biurkowa — MC-11. Przemysłowa — CAT-3.',
-        content: 'MC-11 jest mniejszy, tańszy i wolniejszy: 115 mm wstęgi, rolka 220 mm, 50 cm/s. CAT-3 przyjmie 155 mm i rolkę 300 mm, nadąży przy 125 cm/s, ale zajmie o połowę więcej blatu. Granica przebiega dokładnie tam, gdzie kończą się drukarki biurkowe.',
+        verdict: 'Drukarka biurkowa — MC-11. Drukarka przemysłowa — CAT-3.',
+        content: 'Model MC-11 jest mniejszy, tańszy i wolniejszy: nośnik do 115 mm, rolka 220 mm, 50 cm/s. Rodzina CAT-3 przyjmuje 155 mm i nawój 300 mm oraz osiąga 125 cm/s, zajmuje jednak o połowę większą powierzchnię blatu. Granica doboru przebiega wraz z klasą drukarki.',
       },
       {
         title: 'CAT-3 czy UNI-CAT?',
-        verdict: 'Termotransfer — CAT-3. Atrament albo praca w obie strony — UNI-CAT.',
-        content: 'CAT-3 jest szybszy (125 wobec 80 cm/s) i tańszy o kilkaset złotych. UNI-CAT sam rozpoznaje tryb pracy, dobiera prędkość do drukarki i obsługuje cofanie wstęgi. Przy druku termotransferowym CAT-3 wystarczy. Gdy w grę wchodzi drukarka atramentowa albo chcesz jednego urządzenia do nawijania i odwijania, dopłata za UNI-CAT się zwraca.',
+        verdict: 'Druk termotransferowy — CAT-3. Druk atramentowy lub praca dwukierunkowa — UNI-CAT.',
+        content: 'Rodzina CAT-3 osiąga wyższą prędkość (125 wobec 80 cm/s) i jest tańsza o kilkaset złotych. UNI-CAT samoczynnie rozpoznaje tryb pracy, dobiera prędkość do drukarki i obsługuje cofanie nośnika. Przy druku termotransferowym wystarcza CAT-3. Gdy w procesie występuje drukarka atramentowa albo jedno urządzenie ma pełnić funkcję nawijarki i odwijaka, uzasadniona jest dopłata do modelu UNI-CAT.',
       },
       {
         title: 'Trzon stały czy rozsuwany uchwyt (ACH)?',
-        verdict: 'Jedna gilza — trzon stały. Zmienne zlecenia — ACH.',
-        content: 'Trzon stały jest sztywniejszy i uniesie większy nawój: 300 mm i 8 kg wobec 280 mm i 7 kg. Rozsuwany uchwyt obsługuje każdą gilzę od 25 do 101 mm bez dokupywania osprzętu i przezbraja się w kilkanaście sekund, bez narzędzi.',
+        verdict: 'Jedna średnica gilzy — trzon stały. Zmienne zlecenia — uchwyt ACH.',
+        content: 'Trzon stały zachowuje większą sztywność i przyjmuje większy nawój: 300 mm i 8 kg wobec 280 mm i 7 kg. Rozsuwany uchwyt obsługuje każdą gilzę w zakresie od 25 do 101 mm bez dokupywania osprzętu, a przezbrojenie trwa kilkanaście sekund i nie wymaga narzędzi.',
       },
     ],
     howToSteps: [
-      { name: 'Zmierz wstęgę, nie etykietę', text: 'Nawijak przyjmuje cały materiał razem z podkładem. Sprawdź szerokość rolki zakładanej do drukarki, a nie szerokość samej etykiety.' },
-      { name: 'Sprawdź gilzę po obu stronach', text: 'Jedna średnica wchodzi do drukarki, druga wychodzi z nawijaka. Jeżeli rolka jedzie dalej do aplikatora, to on decyduje o gilzie.' },
-      { name: 'Ustal docelową wielkość rolki', text: 'Policz, ile etykiet ma się zmieścić w jednym nawoju, i porównaj z limitem średnicy: 220 mm w MC-11, 280 mm w modelach ACH, 300 mm w pozostałych.' },
-      { name: 'Ustaw moment przy pierwszym wydruku', text: 'Zacznij od najniższego ustawienia i zwiększaj, aż wstęga przestanie się marszczyć, a rolka będzie twarda w dotyku. Zbyt duży moment rozciąga cienki papier.' },
-      { name: 'Zostaw miejsce za drukarką', text: 'Modele CAT-3 i UNI-CAT mają 320 mm wysokości i od 350 do 455 mm głębokości. Nawijak musi stać naprzeciw wylotu, żeby wstęga szła prosto.' },
+      { name: 'Pomiar szerokości nośnika', text: 'Nawijarka przyjmuje cały materiał wraz z podkładem. Podstawą doboru jest szerokość rolki zakładanej do drukarki, a nie szerokość samej etykiety.' },
+      { name: 'Ustalenie średnicy gilzy', text: 'Jedna średnica dotyczy rolki wchodzącej do drukarki, druga — nawoju powstającego na nawijarce. Jeżeli gotowa rolka trafia do aplikatora, jego wymagania mają pierwszeństwo.' },
+      { name: 'Określenie wielkości docelowego nawoju', text: 'Liczbę etykiet przypadającą na jedną rolkę należy porównać z limitem średnicy: 220 mm w modelu MC-11, 280 mm w modelach ACH, 300 mm w pozostałych.' },
+      { name: 'Ustawienie momentu przy pierwszym wydruku', text: 'Regulację rozpoczyna się od najniższej wartości i zwiększa do chwili, w której nośnik przestaje się marszczyć, a nawój pozostaje zwarty. Zbyt wysoki moment rozciąga cienki papier.' },
+      { name: 'Zapewnienie miejsca za drukarką', text: 'Modele CAT-3 i UNI-CAT mają 320 mm wysokości oraz od 350 do 455 mm głębokości. Urządzenie powinno stać naprzeciw wylotu nośnika, aby materiał przemieszczał się po linii prostej.' },
     ],
   },
 }

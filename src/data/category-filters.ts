@@ -1175,31 +1175,31 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
-  'nawijaki-etykiet': [
+  'nawijarki-do-etykiet': [
     {
       specKey: 'typ',
       label: 'Typ urządzenia',
-      description: 'Co urządzenie robi ze wstęgą.\n• Nawijak — zwija zadrukowany materiał za drukarką\n• Nawijak i odwijak — ten sam sprzęt zwija albo podaje rolkę, sam rozpoznaje kierunek; wymagany przy drukarkach atramentowych, które cofają wstęgę',
+      description: 'Funkcja, jaką urządzenie pełni wobec nośnika.\n• Nawijarka — zwija zadrukowany materiał za drukarką\n• Nawijarka i odwijak — jedno urządzenie zwija albo podaje rolkę i samoczynnie rozpoznaje kierunek; wymagane przy drukarkach atramentowych, które cofają nośnik',
       derived: [
-        { value: 'Nawijak', pattern: 'Nawijak zewnętrzny', specs: ['Typ'] },
-        { value: 'Nawijak i odwijak', pattern: 'Nawijak i odwijak', specs: ['Typ'] },
+        { value: 'Nawijarka', pattern: 'Nawijarka zewnętrzna', specs: ['Typ'] },
+        { value: 'Nawijarka i odwijak', pattern: 'Nawijarka i odwijak', specs: ['Typ'] },
       ],
     },
     {
       specKey: 'szerokosc',
-      label: 'Szerokość etykiet',
-      description: 'Najszersza wstęga, jaką nawijak przyjmie — razem z podkładem, nie samą etykietę.\n• do 115 mm — drukarki biurkowe\n• do 155 mm — drukarki przemysłowe 4-calowe\n• do 170 i 255 mm — drukarki 6-calowe i szeroki materiał',
+      label: 'Szerokość nośnika',
+      description: 'Najszerszy materiał, jaki urządzenie przyjmie — wraz z podkładem, a nie sama etykieta.\n• do 115 mm — drukarki biurkowe\n• do 155 mm — drukarki przemysłowe czterocalowe\n• do 170 i 255 mm — drukarki sześciocalowe i nośnik szeroki',
       derived: [
-        { value: 'do 115 mm', pattern: '115 ?mm', specs: ['Maks. szerokość etykiet'] },
-        { value: 'do 155 mm', pattern: '155 ?mm', specs: ['Maks. szerokość etykiet'] },
-        { value: 'do 170 mm', pattern: '170 ?mm', specs: ['Maks. szerokość etykiet'] },
-        { value: 'do 255 mm', pattern: '255 ?mm', specs: ['Maks. szerokość etykiet'] },
+        { value: 'do 115 mm', pattern: '115 ?mm', specs: ['Maks. szerokość nośnika'] },
+        { value: 'do 155 mm', pattern: '155 ?mm', specs: ['Maks. szerokość nośnika'] },
+        { value: 'do 170 mm', pattern: '170 ?mm', specs: ['Maks. szerokość nośnika'] },
+        { value: 'do 255 mm', pattern: '255 ?mm', specs: ['Maks. szerokość nośnika'] },
       ],
     },
     {
       specKey: 'gilza',
       label: 'Uchwyt gilzy',
-      description: 'Na czym powstaje rolka.\n• Trzon stały — jedna średnica gilzy, sztywniejszy i uniesie większy nawój\n• Rozsuwany (ACH) — każda gilza od 25 do 101 mm bez wymiany osprzętu\n• Szybkozłączny Quick-Chuck — zakładanie i zdejmowanie jednym ruchem dźwigni',
+      description: 'Element, na którym powstaje nawój.\n• Trzon stały — jedna średnica gilzy, większa sztywność i dopuszczalna masa rolki\n• Rozsuwany (ACH) — każda gilza w zakresie 25–101 mm bez wymiany osprzętu\n• Szybkozłączny Quick-Chuck — zakładanie i zdejmowanie jednym ruchem dźwigni',
       derived: [
         { value: 'Trzon stały 76 mm', pattern: 'Trzon 76 ?mm|Trzon 10', specs: ['Uchwyt gilzy'] },
         { value: 'Rozsuwany 25–101 mm (ACH)', pattern: '25–101', specs: ['Uchwyt gilzy'] },
@@ -1209,7 +1209,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'predkosc',
       label: 'Prędkość nawijania',
-      description: 'Tempo na początku rolki z gilzą 76 mm.\n• do 50 cm/s — drukarki biurkowe\n• do 80 cm/s — dobierane automatycznie do drukarki\n• do 125 cm/s — nadąża za najszybszymi drukarkami termotransferowymi',
+      description: 'Wartość odniesiona do początku rolki z gilzą 76 mm.\n• do 50 cm/s — drukarki biurkowe\n• do 80 cm/s — dobierana automatycznie do pracy drukarki\n• do 125 cm/s — nadąża za najszybszymi drukarkami termotransferowymi',
       derived: [
         { value: 'do 50 cm/s', pattern: '50 ?cm/s', specs: ['Prędkość nawijania'] },
         { value: 'do 80 cm/s', pattern: '80 ?cm/s', specs: ['Prędkość nawijania'] },
