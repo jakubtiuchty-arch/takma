@@ -120,6 +120,11 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
     alt: 'Głowica nawijarki Labelmate: na chromowanym trzonie przed stalową tarczą powstaje równy nawój etykiet, a wstęga wchodzi do niego z lewej strony kadru',
     lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Dziewięć modeli Labelmate — od biurkowego MC-PRO po dwukierunkowy UNI-CAT.',
   },
+  'dyspensery-etykiet': {
+    src: '/images/dyspensery-etykiet-hero.webp',
+    alt: 'Dyspenser etykiet Labelmate na czarnym tle: nad chromowanym wałkiem odklejającym stoi w powietrzu etykieta odklejona od wstęgi, a puste podłoże schodzi w dół i odpływa w lewo',
+    lead: 'Etykieta odchodzi od podłoża sama i czeka odklejona na krawędzi, gotowa do zdjęcia jedną ręką. Cztery modele Labelmate — do 115 albo 165 mm szerokości, w wersji na etykiety papierowe albo z czujnikiem fotoelektrycznym do przezroczystych.',
+  },
 }
 
 /** Baner serwisowy na dole kategorii — dla marek, których serwis prowadzimy sami. */
