@@ -61,12 +61,12 @@ function Odtwarzacz({ video }: { video: ProductVideo }) {
   return <OsadzenieYouTube id={id} tytul={video.title} />
 }
 
-export default function ProductVideos({ videos }: { videos: ProductVideo[] }) {
+export default function ProductVideos({ videos, naglowek }: { videos: ProductVideo[]; naglowek?: string }) {
   const wlasne = videos.every((v) => v.native)
 
   return (
     <>
-      <h2 className="text-2xl font-bold text-gray-900 mb-1">Filmy: obsługa drukarki</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-1">{naglowek ?? 'Filmy: obsługa drukarki'}</h2>
       <p className="mb-4 text-sm text-gray-500">
         {wlasne
           ? `Filmy producenta z polskim lektorem i napisami${videos.length > 2 ? ', w kolejności od rozpakowania do czyszczenia.' : '.'}`

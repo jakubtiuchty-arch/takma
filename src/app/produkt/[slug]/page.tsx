@@ -793,7 +793,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {product.videos?.length ? (
               <section id="video">
                 <VideoTracker />
-                <ProductVideos videos={product.videos} />
+                <ProductVideos videos={product.videos} naglowek={isDevice && product.categoryId !== 'akcesoria' ? undefined : 'Filmy: urządzenie w pracy'} />
               </section>
             ) : null}
 
