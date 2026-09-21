@@ -109,16 +109,17 @@ function RichText({ text, className }: { text: string; className?: string }) {
  * `lead` to krótkie zdanie pod H1 — bez linków, bo z hero się nie wychodzi; pełny opis
  * kategorii (z linkami) renderuje się niżej, nad siatką produktów.
  */
-const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+const heroImages: Record<string, { src: string; alt: string; lead: string; /** niższy pasek — dla kategorii, gdzie kadr nie potrzebuje tyle wysokości */ kompaktowe?: boolean }> = {
   'kolorowe-drukarki-etykiet': {
     src: '/images/kolorowe-drukarki-etykiet-hero-v5.webp',
     alt: 'Wstęga etykiet z tym samym projektem: po lewej wydruk czarno-biały, w środku wybuch pigmentu CMYK, po prawej ta sama etykieta w pełnym kolorze',
     lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e.',
   },
   'nawijarki-do-etykiet': {
-    src: '/images/nawijarki-do-etykiet-hero.webp',
-    alt: 'Luźna wstęga zadrukowanych etykiet skręca się w powietrzu i po prawej stronie kadru zwija w równy, ciasny nawój na gilzie',
-    lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Sześć modeli Labelmate: MC-11 do biurka, CAT-3 do druku przemysłowego i dwukierunkowy UNI-CAT.',
+    src: '/images/nawijarki-do-etykiet-hero-v2.webp',
+    alt: 'Głowica nawijarki Labelmate: na chromowanym trzonie przed stalową tarczą powstaje równy nawój etykiet, a wstęga wchodzi do niego z lewej strony kadru',
+    lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Sześć modeli Labelmate — od biurkowego MC-11 po dwukierunkowy UNI-CAT.',
+    kompaktowe: true,
   },
 }
 
@@ -322,7 +323,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               Pozycje stopów tylko z domyślnej skali Tailwinda (co 5 %), inaczej klasa nie powstaje. */}
           <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 from-20% via-slate-950/70 via-35% to-transparent to-55%" />
-          <div className="relative container-main py-10 lg:py-16">
+          <div className={`relative container-main ${hero.kompaktowe ? 'py-7 lg:py-9' : 'py-10 lg:py-16'}`}>
             <nav className="flex items-center gap-2 text-sm text-slate-300 mb-6 overflow-x-auto">
               <Link href="/" className="hover:text-white transition-colors whitespace-nowrap">Strona główna</Link>
               <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
@@ -340,11 +341,13 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
               <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
               <span className="text-white font-medium whitespace-nowrap">{subcategory.name}</span>
             </nav>
-            <h1 className="text-3xl lg:text-4xl font-bold mb-3 max-w-lg">{subcategory.name}</h1>
+            <h1 className={`font-bold mb-2 max-w-lg ${hero.kompaktowe ? 'text-2xl lg:text-3xl' : 'text-3xl lg:text-4xl mb-3'}`}>{subcategory.name}</h1>
             <p className="text-slate-200 max-w-md">{hero.lead}</p>
-            <p className="text-slate-400 text-sm mt-3">
-              {products.length} {productWord}
-            </p>
+            {!hero.kompaktowe && (
+              <p className="text-slate-400 text-sm mt-3">
+                {products.length} {productWord}
+              </p>
+            )}
           </div>
         </section>
       )}
