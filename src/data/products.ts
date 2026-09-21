@@ -498,8 +498,8 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'drukarki-etykiet',
     description: 'Zewnętrzne nawijarki i odwijaki Labelmate do drukarek etykiet — rolki do 300 mm, nośnik do 255 mm szerokości',
     seoTitle: 'Nawijarki do etykiet Labelmate | Nawijak zewnętrzny do drukarki',
-    seoDescription: 'Nawijarki i odwijaki do etykiet Labelmate MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson ColorWorks. Rolki do 300 mm, nośnik do 255 mm, ceny netto B2B.',
-    longDescription: 'Nawijarka zewnętrzna zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką, dzięki czemu urządzenie kończy zlecenie bez udziału operatora, a odwijak podaje rolkę do drukarki ze stałym naciągiem. Posiadamy w ofercie dziewięć modeli Labelmate: MC-11 i MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz dwukierunkowy UNI-CAT.',
+    seoDescription: 'Nawijarki, przewijarki i odwijaki do etykiet Labelmate MC-PRO, MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson. Rolki do 300 mm, ceny netto B2B.',
+    longDescription: 'Nawijarka zewnętrzna, nazywana też przewijarką, zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką, dzięki czemu urządzenie kończy zlecenie bez udziału operatora, a odwijak podaje rolkę do drukarki ze stałym naciągiem. Posiadamy w ofercie dziewięć modeli Labelmate: MC-11 i MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz dwukierunkowy UNI-CAT.',
     icon: 'settings',
     productIds: [
       'labelmate-mc-pro-chuck', 'labelmate-mc-11',
@@ -68384,6 +68384,8 @@ Moment obrotowy oraz kierunek nawijania ustawia się z panelu na froncie urządz
 
 Trzon w wersji standardowej przyjmuje gilzę **76 mm**; wykonania pod 38, 40, 44, 50, 70 i 100 mm producent realizuje na zamówienie. Maksymalny nawój to **300 mm** średnicy i **8 kg**, nośnik do **155 mm** szerokości — zakres pokrywający drukarki czterocalowe, na przykład [ZT411](/produkt/zebra-zt411). Gdy średnica gilzy zmienia się pomiędzy zleceniami, właściwym wyborem jest [CAT-3-ACH](/produkt/labelmate-cat-3-ach) z rozsuwanym uchwytem.
 
+Producent robi też wersję **CAT-3-1-INCH** wyłącznie pod gilzę 25,4 mm (nośnik 155 mm, rolka do 220 mm) — sprowadzamy ją na zamówienie.
+
 Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['nawijarki-do-etykiet'],
@@ -68702,6 +68704,8 @@ Zasadnicza różnica wobec rodziny [CAT-3](/produkt/labelmate-cat-3-standard) do
 Nawijanie odbywa się do wewnątrz oraz na zewnątrz. Panel sterowania jest dotykowy, pozbawiony elementów ruchomych, wyposażony we wskaźniki LED. Prowadnica nośnika wchodzi w skład zestawu, dzięki czemu nawój zachowuje równy bok bez dodatkowych kołnierzy.
 
 Trzon w wersji standardowej przyjmuje gilzę **76 mm** (na zamówienie 38, 40, 44, 50, 70 i 100 mm), rolka do **300 mm** średnicy i **8 kg**, nośnik do **155 mm** szerokości.
+
+Rodzina ma jeszcze trzy wykonania sprowadzane na zamówienie: **UNI-CAT-1-INCH** pod gilzę 25,4 mm, **UNI-CAT-10-INCHES** na nośnik do 255 mm oraz **UNI-CAT-R16 i XL** na rolki do 400 mm średnicy i 14 kg. Jeśli któryś z tych wymiarów jest potrzebny, prosimy o kontakt.
 
 Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     categoryId: 'akcesoria',

@@ -3753,7 +3753,7 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
     updatedAt: '2026-09-20',
     definition: {
       heading: 'Czym jest nawijarka do etykiet',
-      content: 'Nawijarka do etykiet (ang. label rewinder), nazywana również nawijakiem, to zewnętrzne urządzenie ustawiane za drukarką, które zwija zadrukowany nośnik w równą rolkę. Bez niego etykiety opadają na podłogę albo zwijają się na blacie, a operator musi nadzorować przebieg wydruku. Zastosowanie nawijarki pozwala drukarce zakończyć zlecenie samodzielnie, a gotowy nawój trafia do aplikatora, na kolejne stanowisko albo bezpośrednio do odbiorcy.\n\nOdwijak realizuje zadanie odwrotne: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie pokonuje ciężaru nawoju. W drukarkach atramentowych dochodzi cofanie nośnika pomiędzy zadaniami, które wymaga urządzenia rozpoznającego ten ruch i zwalniającego materiał.\n\nPosiadamy w ofercie dziewięć modeli belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 i najnowszy MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz UNI-CAT, który samoczynnie rozpoznaje tryb pracy.',
+      content: 'Nawijarka do etykiet (ang. label rewinder), nazywana również nawijakiem albo przewijarką, to zewnętrzne urządzenie ustawiane za drukarką, które zwija zadrukowany nośnik w równą rolkę. Bez niego etykiety opadają na podłogę albo zwijają się na blacie, a operator musi nadzorować przebieg wydruku. Zastosowanie nawijarki pozwala drukarce zakończyć zlecenie samodzielnie, a gotowy nawój trafia do aplikatora, na kolejne stanowisko albo bezpośrednio do odbiorcy.\n\nOdwijak realizuje zadanie odwrotne: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie pokonuje ciężaru nawoju. W drukarkach atramentowych dochodzi cofanie nośnika pomiędzy zadaniami, które wymaga urządzenia rozpoznającego ten ruch i zwalniającego materiał.\n\nPosiadamy w ofercie dziewięć modeli belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 i najnowszy MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz UNI-CAT, który samoczynnie rozpoznaje tryb pracy.',
     },
     comparisonTable: {
       heading: 'Zestawienie dziewięciu modeli Labelmate',
@@ -3836,6 +3836,10 @@ Odrębnego omówienia wymagają drukarki atramentowe, na przykład Epson ColorWo
       ],
     },
     faq: [
+      {
+        question: 'Nawijarka, nawijak czy przewijarka — czy to to samo urządzenie?',
+        answer: 'Tak, wszystkie trzy nazwy dotyczą tego samego sprzętu, który zwija zadrukowany nośnik w rolkę za drukarką. „Przewijarka" pojawia się w polskich dokumentach producenta, „nawijak" w cennikach dystrybutorów, a „nawijarka" w mowie potocznej obsługi. W naszym katalogu używamy nazwy nawijarka i odwijak, żeby odróżnić kierunek pracy.',
+      },
       {
         question: 'Czym różni się nawijarka od odwijaka?',
         answer: 'Nawijarka zwija zadrukowany nośnik za drukarką. Odwijak podaje rolkę do drukarki ze stałym naciągiem. Modele UNI-CAT realizują obie funkcje i po uruchomieniu samoczynnie rozpoznają kierunek ruchu materiału.',
