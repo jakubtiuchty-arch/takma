@@ -124,6 +124,20 @@ function toIngramItemId(partNumber: string): string {
   if (upper.startsWith('TD') || upper.startsWith('PA')) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
   if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
+  // Datalogic — skanery ręczne. Ich kody katalogowe zaczynają się od liter, więc do 21.09.2026
+  // przelatywały przez wszystkie warunki i wpadały w domyślne 'ZB', czyli pytaliśmy Ingrama
+  // o skaner Datalogic jako o produkt Zebry i dostawaliśmy „brak danych".
+  //
+  // Wzorce muszą być wąskie, bo dwie rodziny kolidują z Honeywellem: PowerScan to PD96xx,
+  // PD95xx, PM96xx i PBT96xx, a Honeywell ma drukarki PD45 i PM45. Stąd cyfra w warunku.
+  // Touch celowo pomijamy — TD należy do Brothera.
+  if (
+    /^(QD2|QW2|QBT2|QM2)/.test(upper) ||          // QuickScan
+    /^(GD4|GBT4|GM4|GPS4)/.test(upper) ||          // Gryphon
+    /^(PD9|PM9|PBT9|PD8|PM8|PBT8)/.test(upper) ||  // PowerScan
+    /^MG\d/.test(upper) ||                         // Magellan
+    /^HD3/.test(upper)                             // Heron
+  ) return 'DT' + upper
   // Honeywell products (terminals CT/CK/EDA, printers PX/PM/PD/PC, scanners 14xx/19xx/21xx, accessories/batteries 50xxx/225xxx)
   if (upper.startsWith('CT7') || upper.startsWith('CT3') || upper.startsWith('CT4') || upper.startsWith('CK') || upper.startsWith('EDA') || upper.startsWith('RT') || upper.startsWith('PX') || upper.startsWith('PM') || upper.startsWith('PD') || upper.startsWith('PC4') || upper.startsWith('RP') || upper.startsWith('LNX') || upper.startsWith('501') || upper.startsWith('225') || upper.startsWith('211') || upper.startsWith('220') || upper.startsWith('280') || upper.startsWith('510') || upper.startsWith('750') || upper.startsWith('2105') || upper.startsWith('2100') || upper.startsWith('1990') || upper.startsWith('1991') || upper.startsWith('1962') || upper.startsWith('1960') || upper.startsWith('1470') || upper.startsWith('1472')) return 'ON' + upper
   // Newland products (terminals N7-*, MT93-*, MT95-*, accessories NLS-*, TPUN7*, SPN7*, BTY7*, BTY-MT*, HS-MT*, SPMT*)
