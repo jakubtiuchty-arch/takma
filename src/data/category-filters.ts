@@ -1179,10 +1179,10 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'etykiety',
       label: 'Rodzaj etykiet',
-      description: 'Czym różnią się wersje RS i U.\n• Zwykłe — czujnik odbiciowy, wystarczy do etykiet papierowych i foliowych z nadrukiem\n• Także przezroczyste i czarne — czujnik fotoelektryczny; etykieta przezroczysta nie odbija światła, więc zwykły czujnik jej nie widzi',
+      description: 'Czym różnią się wersje RS i U.\n• Papierowe i foliowe — czujnik odbiciowy; wystarczy, gdy wszystkie etykiety mają nadruk na nieprzezroczystym podłożu\n• Także przezroczyste i czarne — czujnik fotoelektryczny; etykieta przezroczysta nie odbija światła, więc czujnik odbiciowy jej nie widzi i urządzenie podaje dwie naraz albo staje',
       derived: [
-        { value: 'Zwykłe (wersja RS)', pattern: 'odbiciowy', specs: ['Obsługiwane etykiety'] },
-        { value: 'Także przezroczyste i czarne (wersja U)', pattern: 'fotoelektryczny', specs: ['Obsługiwane etykiety'] },
+        { value: 'Papierowe i foliowe (RS)', pattern: 'odbiciowy', specs: ['Obsługiwane etykiety'] },
+        { value: 'Także przezroczyste i czarne (U)', pattern: 'fotoelektryczny', specs: ['Obsługiwane etykiety'] },
       ],
     },
     {
