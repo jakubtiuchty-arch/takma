@@ -499,13 +499,14 @@ export const subcategories: Subcategory[] = [
     description: 'Zewnętrzne nawijarki i odwijaki Labelmate do drukarek etykiet — rolki do 300 mm, nośnik do 255 mm szerokości',
     seoTitle: 'Nawijarki do etykiet Labelmate | Nawijak zewnętrzny do drukarki',
     seoDescription: 'Nawijarki i odwijaki do etykiet Labelmate MC-11, CAT-3 i UNI-CAT do drukarek Zebra, Honeywell i Epson ColorWorks. Rolki do 300 mm, nośnik do 255 mm, ceny netto B2B.',
-    longDescription: 'Nawijarka zewnętrzna zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką, dzięki czemu urządzenie kończy zlecenie bez udziału operatora, a odwijak podaje rolkę do drukarki ze stałym naciągiem. Posiadamy w ofercie sześć modeli Labelmate w trzech rodzinach: MC-11 do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz dwukierunkowy UNI-CAT.',
+    longDescription: 'Nawijarka zewnętrzna zwija zadrukowany nośnik w równą rolkę bezpośrednio za drukarką, dzięki czemu urządzenie kończy zlecenie bez udziału operatora, a odwijak podaje rolkę do drukarki ze stałym naciągiem. Posiadamy w ofercie dziewięć modeli Labelmate: MC-11 i MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz dwukierunkowy UNI-CAT.',
     icon: 'settings',
     productIds: [
-      'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach',
-      'labelmate-cat-3-10-inches', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck',
+      'labelmate-mc-pro-chuck', 'labelmate-mc-11',
+      'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck', 'labelmate-cat-3-10-inches',
+      'labelmate-uni-cat-standard', 'labelmate-uni-cat-ach', 'labelmate-uni-cat-chuck',
     ],
-    productCount: 6,
+    productCount: 9,
   },
   // --- Podkategorie: Materiały eksploatacyjne ---
   {
@@ -1360,7 +1361,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd421t-203', 'zebra-printhead-zd421t-300', 'zebra-platen-roller-zd421t-203', 'zebra-platen-roller-zd421t-300', 'zebra-cutter-zd421t', 'zebra-dispenser-zd421t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd421t-203', 'zebra-printhead-zd421t-300', 'zebra-platen-roller-zd421t-203', 'zebra-platen-roller-zd421t-300', 'zebra-cutter-zd421t', 'zebra-dispenser-zd421t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     starterKits: [
       { title: 'Etykiety papierowe', description: 'Papierowa etykieta i woskowa taśma do zwykłych oznaczeń w suchym pomieszczeniu.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier-v3.webp', partNumbers: ['3007206-T', '02300GS11007'] },
       { title: 'Etykiety foliowe', description: 'Mała etykieta z folii i żywiczna taśma do znakowania sprzętu, który się ściera i moczy.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia-v3.webp', partNumbers: ['3011159', '05095GS06407'] },
@@ -1585,7 +1586,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZD421d od ZD421t?',
@@ -2005,7 +2006,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd621t-203', 'zebra-printhead-zd621t-300', 'zebra-platen-roller-zd621t-203', 'zebra-platen-roller-zd621t-300', 'zebra-cutter-zd621t', 'zebra-dispenser-zd621t', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd621t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd621t-203', 'zebra-printhead-zd621t-300', 'zebra-platen-roller-zd621t-203', 'zebra-platen-roller-zd621t-300', 'zebra-cutter-zd621t', 'zebra-dispenser-zd621t', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd621t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym ZD621t różni się od ZD421t?',
@@ -2346,7 +2347,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd621d-203', 'zebra-printhead-zd621d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd621d-203', 'zebra-printhead-zd621d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZD621d od ZD621t?',
@@ -3091,7 +3092,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd220d-203', 'zebra-platen-roller-zd220d-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd220d-203', 'zebra-platen-roller-zd220d-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym się różni ZD220d od ZD220t?',
@@ -3330,7 +3331,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd220d-203', 'zebra-platen-roller-zd220d-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd220d-203', 'zebra-platen-roller-zd220d-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym się różni ZD230d od ZD220d?',
@@ -3619,7 +3620,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym Zebra ZD220t różni się od GC420t?',
@@ -3911,7 +3912,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym się różni ZD230t od ZD220t?',
@@ -4343,7 +4344,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety linerless (bez podkładu) w gastronomii i logistyce',
       'Druk opasek identyfikacyjnych w szpitalach (wariant healthcare)',
     ],
-    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/zh-cn/public/products/printers/desktop/pc45/documents/pc45-direct-thermal-and-thermal-transfer-desktop-printer-datasheet-en.pdf', size: 'PDF' },
@@ -4528,7 +4529,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Druk etykiet RFID UHF (wariant z modułem RFID)',
       'Etykiety cenowe i produktowe w retail (w trybie DT bez ribbonu)',
     ],
-    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45t', 'honeywell-dispenser-pc45t', 'honeywell-cutter-pc45t', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45t', 'honeywell-dispenser-pc45t', 'honeywell-cutter-pc45t', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet' as const, url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/zh-cn/public/products/printers/desktop/pc45/documents/pc45-direct-thermal-and-thermal-transfer-desktop-printer-datasheet-en.pdf', size: 'PDF' },
@@ -4719,7 +4720,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Oznaczenia laboratoryjne i apteczne (etykiety na leki, próbki, produkty galenowe)',
       'Etykiety adresowe i logistyczne w firmach kurierskich i e-commerce',
     ],
-    relatedAccessories: ['honeywell-printhead-pc42e-t-203', 'honeywell-printhead-pc42e-t-300', 'honeywell-platen-roller-pc42e-t', 'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['honeywell-printhead-pc42e-t-203', 'honeywell-printhead-pc42e-t-300', 'honeywell-platen-roller-pc42e-t', 'honeywell-odklejak-pc42e-t', 'honeywell-gilotyna-pc42e-t', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet' as const, url: '/downloads/sps-pss-pc42e-t-printer-dts-a4.pdf', size: 'PDF, 97 KB' },
@@ -4918,7 +4919,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['brother-td4d-cutter', 'brother-td4d-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['brother-td4d-cutter', 'brother-td4d-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Jakie etykiety pasują do Brother TD-4D?',
@@ -5380,7 +5381,7 @@ Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch
       'zebra-labels-zperform1000-70x30',
       'zebra-labels-zperform1000-102x152',
     ],
-    relatedAccessories: ['brother-td4t-cutter', 'brother-td4t-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-mc-11', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['brother-td4t-cutter', 'brother-td4t-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym jest Brother TD-4T i czym się różni od TD-4D?',
@@ -5585,7 +5586,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety identyfikacyjne na środki trwałe (inwentaryzacja)',
       'Etykiety logistyczne i transportowe',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -5793,7 +5794,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety laboratoryjne i diagnostyczne',
       'Oznaczenia magazynowe wymagające drobnych kodów',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -5988,7 +5989,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety cenowe i produktowe w handlu detalicznym',
       'Etykiety identyfikacyjne na środki trwałe (inwentaryzacja)',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -6367,7 +6368,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     downloads: [
       { name: 'Karta katalogowa CL-S521II (PL)', type: 'datasheet', url: '/downloads/citizen-cl-s521ii-datasheet.pdf', size: '2,0 MB' },
     ],
-    relatedAccessories: ['citizen-printhead-cl-s521-203', 'citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['citizen-printhead-cl-s521-203', 'citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s531ii', 'citizen-cl-e300', 'zebra-zd421d'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-s521ii',
@@ -6582,7 +6583,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     downloads: [
       { name: 'Karta katalogowa CL-S531II (PL)', type: 'datasheet', url: '/downloads/citizen-cl-s531ii-datasheet.pdf', size: '2,0 MB' },
     ],
-    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s521ii', 'citizen-cl-e303', 'zebra-zd421d'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-s531ii',
@@ -6799,7 +6800,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     downloads: [
       { name: 'Karta katalogowa CL-S621II (PL)', type: 'datasheet', url: '/downloads/citizen-cl-s621ii-datasheet.pdf', size: '3,7 MB' },
     ],
-    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s631ii', 'citizen-cl-e321', 'zebra-zd421t'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-s621ii',
@@ -7006,7 +7007,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     downloads: [
       { name: 'Karta katalogowa CL-S631II (PL)', type: 'datasheet', url: '/downloads/citizen-cl-s631ii-datasheet.pdf', size: '383 KB' },
     ],
-    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s621ii', 'citizen-cl-e321', 'zebra-zd421t'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-s631ii',
@@ -7051,7 +7052,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety na leki i produkty kosmetyczne w aptekach i drogeriach',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['citizen-peeler-cl-s521', 'citizen-cutter-cl-s521', 'citizen-parallel-cl-s400dt', 'labelmate-cat-3-standard'],
+    relatedAccessories: ['citizen-peeler-cl-s521', 'citizen-cutter-cl-s521', 'citizen-parallel-cl-s400dt', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
     keyParams: {
       rodzajDruku: 'Termiczna bezpośrednia (DT)',
       rozdzielczosc: '203 dpi (8 dots/mm)',
@@ -7391,7 +7392,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt111-203', 'zebra-printhead-zt111-300', 'zebra-platen-roller-zt111', 'zebra-cutter-zt111', 'zebra-dispenser-zt111', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['zebra-printhead-zt111-203', 'zebra-printhead-zt111-300', 'zebra-platen-roller-zt111', 'zebra-cutter-zt111', 'zebra-dispenser-zt111', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-mc-pro-chuck', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT231 od ZT111?',
@@ -7625,7 +7626,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt111-203', 'zebra-printhead-zt111-300', 'zebra-platen-roller-zt111', 'zebra-cutter-zt111', 'zebra-dispenser-zt111', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['zebra-printhead-zt111-203', 'zebra-printhead-zt111-300', 'zebra-platen-roller-zt111', 'zebra-cutter-zt111', 'zebra-dispenser-zt111', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-mc-pro-chuck', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT111 od drukarki biurkowej ZD421?',
@@ -7889,7 +7890,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt411-203', 'zebra-printhead-zt411-300', 'zebra-printhead-zt411-600', 'zebra-platen-zt411', 'zebra-cutter-zt411', 'zebra-dispenser-zt411', 'zebra-rewind-zt411', 'zebra-resolution-converter-zt411', 'zebra-keyboard-zkdu', 'zebra-lpt-zt411', 'zebra-rfid-zt411', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['zebra-printhead-zt411-203', 'zebra-printhead-zt411-300', 'zebra-printhead-zt411-600', 'zebra-platen-zt411', 'zebra-cutter-zt411', 'zebra-dispenser-zt411', 'zebra-rewind-zt411', 'zebra-resolution-converter-zt411', 'zebra-keyboard-zkdu', 'zebra-lpt-zt411', 'zebra-rfid-zt411', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-mc-pro-chuck', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT411 od ZT410?',
@@ -8401,7 +8402,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       'zebra-labels-zperform1000-102x38',
       'zebra-labels-zperform1000-102x76',
     ],
-    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-203', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-203', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brother-tj-4020tn-karta-produktu.pdf', size: '611 KB' },
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/brother-tj-4020tn-instrukcja-obslugi-pl.pdf', size: '6,8 MB' },
@@ -8605,7 +8606,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       'zebra-labels-zperform1000-102x38',
       'zebra-labels-zperform1000-102x76',
     ],
-    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-203', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-203', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brother-tj-4020tn-karta-produktu.pdf', size: '611 KB' },
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/brother-tj-4020tn-instrukcja-obslugi-pl.pdf', size: '6,8 MB' },
@@ -8805,7 +8806,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       'zebra-labels-zperform1000-102x38',
       'zebra-labels-zperform1000-102x76',
     ],
-    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-300', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-300', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brother-tj-4020tn-karta-produktu.pdf', size: '611 KB' },
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/brother-tj-4020tn-instrukcja-obslugi-pl.pdf', size: '6,8 MB' },
@@ -9001,7 +9002,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       'zebra-labels-zperform1000-102x38',
       'zebra-labels-zperform1000-102x76',
     ],
-    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-300', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['brother-tj-peeler', 'brother-tj-cutter', 'brother-tj-printhead-300', 'brother-tj-platen', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brother-tj-4020tn-karta-produktu.pdf', size: '611 KB' },
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: '/downloads/brother-tj-4020tn-instrukcja-obslugi-pl.pdf', size: '6,8 MB' },
@@ -9146,7 +9147,7 @@ Pełna [specyfikacja techniczna CL-E720](/downloads/datasheet-cl-e720-pl.pdf).`,
       'Handel — etykiety cenowe, promocyjne, regałowe',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-e720dt', 'citizen-cl-e730', 'zebra-zt231', 'tsc-mb241t'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e720',
@@ -9257,7 +9258,7 @@ Pełna [specyfikacja techniczna CL-E720DT](/downloads/datasheet-cl-e720dt-pl.pdf
       'Gastronomia — etykiety dat ważności, składników',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-e720', 'citizen-cl-s521ii', 'zebra-zd421d', 'honeywell-pc45d'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e720dt',
@@ -9373,7 +9374,7 @@ Pełna [specyfikacja techniczna CL-E730](/downloads/datasheet-cl-e730-pl.pdf).`,
       'Kosmetyki i biżuteria — małe etykiety z drobnym drukiem',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s703iii', 'citizen-cl-e720', 'zebra-zt231', 'zebra-zt411'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-e730',
@@ -9503,7 +9504,7 @@ Pełna [specyfikacja techniczna CL-S700III](/downloads/datasheet-cl-s700iii-pl.p
       'Handel — etykiety cenowe, wagowe, promocyjne',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s703iii', 'citizen-cl-e720', 'zebra-zt231', 'honeywell-pd45'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/en/products/printer/label/cl-s700iii',
@@ -9636,7 +9637,7 @@ Pełna [specyfikacja techniczna CL-S703III](/downloads/datasheet-cl-s703iii-pl.p
       'Produkcja — etykiety WIP, oznaczenia produktów, karty kanban',
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['citizen-cl-s700iii', 'citizen-cl-e730', 'zebra-zt231', 'zebra-zt411'],
     createdAt: '2026-03-22',
     sameAs: 'https://www.citizen-systems.com/en/products/printer/label/cl-s703iii',
@@ -9786,7 +9787,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt510-203', 'zebra-printhead-zt510-300', 'zebra-platen-zt510', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['zebra-printhead-zt510-203', 'zebra-printhead-zt510-300', 'zebra-platen-zt510', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym jest Zebra ZT510 i do czego służy?',
@@ -10045,7 +10046,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt610-203', 'zebra-printhead-zt610-300', 'zebra-printhead-zt610-600', 'zebra-platen-zt610', 'zebra-cutter-zt610', 'zebra-rewind-zt610', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['zebra-printhead-zt610-203', 'zebra-printhead-zt610-300', 'zebra-printhead-zt610-600', 'zebra-platen-zt610', 'zebra-cutter-zt610', 'zebra-rewind-zt610', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT610 od 110Xi4?',
@@ -10508,7 +10509,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Druk etykiet do identyfikacji próbek i leków w ochronie zdrowia',
       'Etykiety na części i komponenty w branży automotive i elektronicznej',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PD45 (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-pd45-data-sheet-en.pdf', size: 'PDF, 127 KB' },
@@ -10722,7 +10723,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety na części i komponenty w branży automotive i elektronicznej',
       'Automatyczne aplikowanie etykiet z odklejakiem i nawijakiem wewnętrznym',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PD45S (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-pd45s-datasheet-en.pdf', size: 'PDF, 129 KB' },
@@ -10991,7 +10992,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety RFID UHF do identyfikacji palet i zasobów',
       'Automatyczne aplikowanie etykiet z interfejsem aplikatora i PLC',
     ],
-    relatedAccessories: ['honeywell-pm45-glowica-203dpi', 'honeywell-pm45-glowica-300dpi', 'honeywell-pm45-glowica-406dpi', 'honeywell-pm45-glowica-600dpi', 'honeywell-pm45-walek-dociskowy', 'honeywell-pm45-odklejak', 'honeywell-pm45-nawijak', 'honeywell-pm45-gilotyna', 'honeywell-pm45-modul-rfid', 'honeywell-pm45-prowadnica-mediow', 'honeywell-pm45-skladany-rdzen', 'honeywell-pm45-adapter-rdzeni', 'honeywell-pm45-modul-wifi-bt', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy', 'honeywell-pm45c-odklejak-kit', 'honeywell-pm45c-mega-door-kit', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['honeywell-pm45-glowica-203dpi', 'honeywell-pm45-glowica-300dpi', 'honeywell-pm45-glowica-406dpi', 'honeywell-pm45-glowica-600dpi', 'honeywell-pm45-walek-dociskowy', 'honeywell-pm45-odklejak', 'honeywell-pm45-nawijak', 'honeywell-pm45-gilotyna', 'honeywell-pm45-modul-rfid', 'honeywell-pm45-prowadnica-mediow', 'honeywell-pm45-skladany-rdzen', 'honeywell-pm45-adapter-rdzeni', 'honeywell-pm45-modul-wifi-bt', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy', 'honeywell-pm45c-odklejak-kit', 'honeywell-pm45c-mega-door-kit', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PM45/PM45C (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-pm45-pm45c-industrial-printer-datasheet-en.pdf', size: 'PDF, 219 KB' },
@@ -11513,7 +11514,7 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
       'Standalone druk z aplikacjami C#/Fingerprint (bez PC)',
       'Automatyczne aplikowanie etykiet z interfejsem aplikatora i I/O',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PX45/PX65 Series (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-px45-px65-series-printers-datasheet-en.pdf', size: 'PDF, 577 KB' },
@@ -57161,7 +57162,7 @@ TSC ML241P posiada certyfikat ENERGY STAR. Obudowa i opakowanie w 100% nadają s
       'Bluetooth': 'Bluetooth 5.0 MFi — bezprzewodowe parowanie z terminalem mobilnym, tabletem lub smartfonem. Certyfikat Apple MFi zapewnia kompatybilność z iOS',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-ml241p-203', 'tsc-printhead-ml341p-300', 'tsc-cutter-ml241p', 'tsc-peeler-ml241p', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-ml241p-203', 'tsc-printhead-ml341p-300', 'tsc-cutter-ml241p', 'tsc-peeler-ml241p', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mb241t', 'tsc-ml341p', 'zebra-zt111', 'zebra-zt231'],
     faq: [
       {
@@ -57370,7 +57371,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
       },
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-ml341p-300', 'tsc-cutter-ml241p', 'tsc-peeler-ml241p', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-ml341p-300', 'tsc-cutter-ml241p', 'tsc-peeler-ml241p', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mb341t', 'tsc-ml241p', 'zebra-zt231', 'zebra-zt111'],
     faq: [
       {
@@ -57577,7 +57578,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       'Wyświetlacz': 'Dotykowy LCD 3,5" — kolorowy ekran z menu konfiguracyjnym, kreatory ustawień i diagnostyka. W wersji MB241 (bez T) dostępny jest LCD 2,3" bez dotyku',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-mb241t-203', 'tsc-cutter-mb241t', 'tsc-peeler-mb241t', 'tsc-rewinder-mb241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-mb241t-203', 'tsc-cutter-mb241t', 'tsc-peeler-mb241t', 'tsc-rewinder-mb241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mh241t', 'tsc-mb341t', 'tsc-ml241p', 'tsc-ml341p', 'zebra-zt231'],
     faq: [
       {
@@ -57784,7 +57785,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       'Wyświetlacz': 'Dotykowy LCD 3,5" — kolorowy ekran z menu konfiguracyjnym, kreatory ustawień i diagnostyka. W wersji MB341 (bez T) dostępny jest LCD 2,3" bez dotyku',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-cutter-mb241t', 'tsc-peeler-mb241t', 'tsc-rewinder-mb241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-cutter-mb241t', 'tsc-peeler-mb241t', 'tsc-rewinder-mb241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mh341t', 'tsc-mh241t', 'tsc-mb241t', 'tsc-ml341p', 'zebra-zt231', 'zebra-zt411'],
     faq: [
       {
@@ -57992,7 +57993,7 @@ TSC MH241T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       'Wyświetlacz': 'Dotykowy LCD 4,3" — kolorowy ekran rezystancyjny 480×272 px z menu konfiguracyjnym, kreatory ustawień i diagnostyka. W wersji MH241 (bez T) dostępny jest LCD bez dotyku',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-mh241t-203', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-mh241t-203', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mh341t', 'tsc-mh641t', 'tsc-mb241t', 'tsc-mb341t', 'zebra-zt411', 'zebra-zt231'],
     faq: [
       {
@@ -58199,7 +58200,7 @@ TSC MH341T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       'Wyświetlacz': 'Dotykowy LCD 4,3" — kolorowy ekran rezystancyjny 480×272 px z menu konfiguracyjnym, kreatory ustawień i diagnostyka. W wersji MH341 (bez T) dostępny jest LCD 3,5" bez dotyku',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-mh341t-300', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-mh341t-300', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mh241t', 'tsc-mh641t', 'tsc-mb341t', 'zebra-zt411', 'zebra-zt231'],
     faq: [
       {
@@ -58406,7 +58407,7 @@ TSC MH641T ma certyfikat ENERGY STAR i 100% recyclable obudowę. System TSC Sens
       'Wyświetlacz': 'Dotykowy LCD 4,3" — kolorowy ekran rezystancyjny 480×272 px z menu konfiguracyjnym, kreatory ustawień i diagnostyka. W wersji MH641 (bez T) dostępny jest LCD bez dotyku',
     },
     compatibleAccessories: [],
-    relatedAccessories: ['tsc-printhead-mh641t-600', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach'],
+    relatedAccessories: ['tsc-printhead-mh641t-600', 'tsc-cutter-mh241t', 'tsc-rewinder-mh241t', 'tsc-wifi-bt-module', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck'],
     relatedProducts: ['tsc-mh241t', 'tsc-mh341t', 'zebra-zt411', 'zebra-zt610'],
     faq: [
       {
@@ -65438,7 +65439,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
       'epson-etykiety-c33s045542',
       'epson-etykiety-c33s045543',
     ],
-    relatedAccessories: ['epson-sjic22p-k', 'epson-sjic22p-c', 'epson-sjic22p-m', 'epson-sjic22p-y', 'epson-sjmb3500', 'labelmate-uni-cat-standard', 'labelmate-mc-11'],
+    relatedAccessories: ['epson-sjic22p-k', 'epson-sjic22p-c', 'epson-sjic22p-m', 'epson-sjic22p-y', 'epson-sjmb3500', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
     faq: [
       {
         question: 'Czym kolorowa drukarka etykiet różni się od termotransferowej?',
@@ -66389,7 +66390,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       'epson-etykiety-c33s045534',
       'epson-etykiety-c33s045535',
     ],
-    relatedAccessories: ['epson-sjic57p-bk', 'epson-sjic57p-c', 'epson-sjic57p-m', 'epson-sjic57p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard'],
+    relatedAccessories: ['epson-sjic57p-bk', 'epson-sjic57p-c', 'epson-sjic57p-m', 'epson-sjic57p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
     comparison: {
       title: 'ColorWorks D3800e a ColorWorks C3500',
       models: [
@@ -66734,7 +66735,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       'epson-etykiety-c33s045542',
       'epson-etykiety-c33s045543',
     ],
-    relatedAccessories: ['epson-sjic42p-bk', 'epson-sjic42p-mk', 'epson-sjic42p-c', 'epson-sjic42p-m', 'epson-sjic42p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard', 'labelmate-mc-11'],
+    relatedAccessories: ['epson-sjic42p-bk', 'epson-sjic42p-mk', 'epson-sjic42p-c', 'epson-sjic42p-m', 'epson-sjic42p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
     comparison: {
       title: 'ColorWorks C4000e, C3500 i D3800e',
       models: [
@@ -67081,7 +67082,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck'],
+    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
     comparison: {
       title: 'ColorWorks C6000 a modele biurkowe',
       models: [
@@ -67678,7 +67679,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-chuck'],
+    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck'],
     comparison: {
       title: 'ColorWorks C6500 a C6000',
       models: [
@@ -68031,7 +68032,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic48p-bk', 'epson-sjic48p-mk', 'epson-sjic48p-c', 'epson-sjic48p-m', 'epson-sjic48p-y', 'epson-sjmb7500', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck'],
+    relatedAccessories: ['epson-sjic48p-bk', 'epson-sjic48p-mk', 'epson-sjic48p-c', 'epson-sjic48p-m', 'epson-sjic48p-y', 'epson-sjmb7500', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
     comparison: {
       title: 'ColorWorks C8000e a C6000 i C6500',
       models: [
@@ -68513,6 +68514,165 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
       { name: 'Karta katalogowa Labelmate CAT-3 (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-cat-3-karta-katalogowa.pdf', size: '0,7 MB' },
     ],
     createdAt: '2026-09-20',
+  },
+  {
+    id: 'labelmate-cat-3-chuck',
+    slug: 'labelmate-cat-3-chuck',
+    name: 'Nawijarka etykiet Labelmate CAT-3-CHUCK',
+    shortDescription: 'Nawijarka etykiet Labelmate CAT-3-CHUCK z szybkozłącznym trzonem 76 mm: nośnik do 170 mm, rolki do 300 mm i 10 kg, prędkość do 125 cm/s.',
+    seoTitle: 'Labelmate CAT-3-CHUCK — nawijarka z szybkozłącznym trzonem | TAKMA',
+    seoDescription: 'Nawijarka etykiet Labelmate CAT-3-CHUCK (LMR006) z trzonem Quick-Chuck 76 mm: nośnik do 170 mm, rolki do 300 mm i 10 kg, 125 cm/s. Cena netto B2B.',
+    description: `Odmiana [CAT-3-STANDARD](/produkt/labelmate-cat-3-standard) z szybkozłącznym trzonem Quick-Chuck. Gilzę blokuje się i zwalnia jednym ruchem, bez odkręcania kołnierzy — przy zmianie zlecenia kilka razy na zmianę ta różnica składa się na kilkanaście minut dziennie.
+
+Prędkość, sterowanie momentem i kierunkiem z panelu oraz dwa zakresy momentu pozostają takie same jak w całej rodzinie CAT-3: **125 cm/s** na początku rolki z gilzą 76 mm, stalowa obudowa, antypoślizgowe nóżki.
+
+Trzon standardowy ma średnicę **76 mm** i obsługuje nośnik do **170 mm** szerokości; producent wykonuje również trzony pod 220 i 270 mm oraz pod gilze 38, 40, 44 i 70 mm. Rolka do **300 mm** średnicy i **10 kg**.
+
+Gdy średnica gilzy zmienia się z każdym zleceniem, wygodniejszy będzie [CAT-3-ACH](/produkt/labelmate-cat-3-ach) z rozsuwanym uchwytem; przy jednej stałej gilzie i szerokim nośniku — [CAT-3-10-INCHES](/produkt/labelmate-cat-3-10-inches).
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['nawijarki-do-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 3419.74,
+    images: ['/images/products/LMR006.png'],
+    imageDescriptions: ['Nawijarka etykiet Labelmate CAT-3-CHUCK z szybkozłącznym trzonem Quick-Chuck'],
+    tags: ['produkcja', 'magazyn', 'logistyka'],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'LMR006' },
+      { name: 'Typ', value: 'Nawijarka zewnętrzna, dwukierunkowa' },
+      { name: 'Maks. szerokość nośnika', value: '170 mm (trzony 220 i 270 mm na zamówienie)' },
+      { name: 'Maks. średnica rolki', value: '300 mm' },
+      { name: 'Maks. masa rolki', value: '10 kg' },
+      { name: 'Uchwyt gilzy', value: 'Szybkozłączny trzon Quick-Chuck 76 mm (38/40/44/70 mm na zamówienie)' },
+      { name: 'Prędkość nawijania', value: 'do 125 cm/s' },
+      { name: 'Regulacja', value: 'Moment i kierunek z panelu, dwa zakresy momentu' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '300 × 385 × 320 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Częsta zmiana rolek przy druku przemysłowym', 'Druk zleceniowy', 'Przygotowanie rolek pod aplikator'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-10-inches'],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/NJTBwRVNpi0', title: 'Nawijarka i odwijak CAT-3 w pracy · Labelmate, EN', published: '2019-08-02', duration: 'PT1M47S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate CAT-3 (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-cat-3-karta-katalogowa.pdf', size: '0,7 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+  {
+    id: 'labelmate-uni-cat-ach',
+    slug: 'labelmate-uni-cat-ach',
+    name: 'Nawijarka i odwijak etykiet Labelmate UNI-CAT-ACH',
+    shortDescription: 'Labelmate UNI-CAT-ACH z rozsuwanym uchwytem gilzy 25–101 mm: nawija i odwija, obsługuje cofanie nośnika, rolki do 280 mm, nośnik do 155 mm.',
+    seoTitle: 'Labelmate UNI-CAT-ACH — nawijarka z regulowaną gilzą | TAKMA',
+    seoDescription: 'Labelmate UNI-CAT-ACH (LMR043) — nawijarka i odwijak z rozsuwanym uchwytem gilzy 25–101 mm, obsługą cofania nośnika, rolką do 280 mm i nośnikiem do 155 mm.',
+    description: `Ta sama elektronika co w [UNI-CAT-STANDARD](/produkt/labelmate-uni-cat-standard), tylko zamiast trzonu pod jedną gilzę urządzenie ma **rozsuwany uchwyt w zakresie 25–101 mm**. Obejmuje to wszystkie gilze spotykane w drukarkach etykiet, od 25 mm w modelach biurkowych po 76 mm w przemysłowych, a przezbrojenie trwa kilkanaście sekund i nie wymaga narzędzi.
+
+Urządzenie samo rozpoznaje, czy ma nawijać, czy odwijać, i dobiera prędkość do drukarki — do **80 cm/s**. Obsługuje cofanie nośnika, które drukarki atramentowe wykonują przed każdym zadaniem, więc nadaje się do [Epson ColorWorks](/kolorowe-drukarki-etykiet) tak samo jak pozostałe modele UNI-CAT. Nawija do wewnątrz i na zewnątrz, panel jest dotykowy ze wskaźnikami LED, a prowadnica nośnika wchodzi w skład zestawu.
+
+Za uniwersalność uchwytu płaci się nieco mniejszym nawojem: **280 mm** średnicy i **7 kg** wobec 300 mm i 8 kg w wersji standardowej. Nośnik do **155 mm** szerokości, wymiary 280 × 310 × 310 mm.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['nawijarki-do-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 3473.73,
+    images: ['/images/products/LMR043.png'],
+    imageDescriptions: ['Nawijarka i odwijak etykiet Labelmate UNI-CAT-ACH z rozsuwanym uchwytem gilzy'],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'LMR043' },
+      { name: 'Typ', value: 'Nawijarka i odwijak, dwukierunkowa' },
+      { name: 'Maks. szerokość nośnika', value: '155 mm' },
+      { name: 'Maks. średnica rolki', value: '280 mm' },
+      { name: 'Maks. masa rolki', value: '7 kg' },
+      { name: 'Uchwyt gilzy', value: 'Rozsuwany (ACH), 25–101 mm' },
+      { name: 'Prędkość nawijania', value: 'do 80 cm/s, dobierana automatycznie' },
+      { name: 'Tryb pracy', value: 'Samoczynne rozpoznanie: nawijanie, postój, odwijanie' },
+      { name: 'Druk atramentowy', value: 'Obsługa cofania nośnika (back-feed)' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '280 × 310 × 310 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Nawijanie na gilzy o różnych średnicach', 'Podawanie rolki ze stałym naciągiem', 'Druk atramentowy i termotransferowy na jednym stanowisku'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-cat-3-ach'],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/v5iot6-nKjw', title: 'Praca z drukarką Epson ColorWorks · Labelmate, EN', published: '2022-03-30', duration: 'PT2M23S' },
+      { url: 'https://www.youtube-nocookie.com/embed/pOouPvgbLDE', title: 'Konfiguracja z drukarką Zebra · Labelmate, EN', published: '2026-03-11', duration: 'PT1M30S' },
+      { url: 'https://vimeo.com/445543954', title: 'UNI-CAT — przegląd funkcji · Labelmate, EN', poster: '/images/products/labelmate-uni-cat-przeglad-poster.webp', published: '2020-08-07', duration: 'PT3M21S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate UNI-CAT (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-uni-cat-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+  {
+    id: 'labelmate-mc-pro-chuck',
+    slug: 'labelmate-mc-pro-chuck',
+    name: 'Nawijarka etykiet Labelmate MC-PRO CHUCK',
+    shortDescription: 'Labelmate MC-PRO CHUCK ze stałym naciągiem wstęgi i obsługą jednym przyciskiem: nośnik do 110 mm, rolki do 220 mm, prędkość do 90 cm/s.',
+    seoTitle: 'Labelmate MC-PRO CHUCK — nawijarka ze stałym naciągiem | TAKMA',
+    seoDescription: 'Labelmate MC-PRO CHUCK (LMR066): nawijarka ze Smart Tension Control, obsługą jednym przyciskiem i szybkozłącznym trzonem 76 mm. Nośnik do 110 mm, 90 cm/s.',
+    description: `Najnowsza konstrukcja Labelmate, pokazana w lipcu 2026. MC-PRO różni się od starszych nawijarek jednym: **nie ustawia się w nim nic**. Urządzenie samo rozpoznaje prędkość drukarki, kierunek ruchu nośnika i cofanie wstęgi przed zadaniem, a obsługa sprowadza się do jednego przycisku — start, stop, pauza.
+
+Sercem jest **Smart Tension Control**: układ utrzymuje stały naciąg wstęgi od pustej gilzy po pełną rolkę, niezależnie od prędkości i średnicy nawoju. W praktyce oznacza to rolkę nawiniętą równomiernie na całej długości, bez luźnych warstw u dołu i zbyt ciasnych u góry — taką, która wchodzi do aplikatora bez poprawek. Silnik pracuje bez gwałtownych przyspieszeń i nagłych zatrzymań, co producent wiąże z mniejszym zużyciem mechaniki.
+
+Parametry: nośnik do **110 mm** szerokości, rolka do **220 mm** średnicy i **4 kg**, prędkość do **90 cm/s** na początku rolki z gilzą 76 mm. Trzon jest szybkozłączny, pod gilzę 76 mm. Wymiary 220 × 280 × 282 mm.
+
+Do MC-PRO producent robi płyty pozycjonujące pod konkretne drukarki — między innymi [ColorWorks C3500](/produkt/epson-colorworks-c3500), [C4000e](/produkt/epson-colorworks-c4000e), [C6000](/produkt/epson-colorworks-c6000) i [C8000e](/produkt/epson-colorworks-c8000e) oraz [ZT111](/produkt/zebra-zt111), [ZT231](/produkt/zebra-zt231) i [ZT411](/produkt/zebra-zt411). Sprowadzamy je na zamówienie; wystarczy podać model drukarki.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['nawijarki-do-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 1979.85,
+    images: ['/images/products/LMR066.png', '/images/products/LMR066-2.png'],
+    imageDescriptions: [
+      'Nawijarka etykiet Labelmate MC-PRO CHUCK od frontu, z szybkozłącznym trzonem',
+      'Labelmate MC-PRO CHUCK z boku — tarcza, trzon i podstawa',
+    ],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'LMR066' },
+      { name: 'Typ', value: 'Nawijarka zewnętrzna ze stałym naciągiem' },
+      { name: 'Maks. szerokość nośnika', value: '110 mm' },
+      { name: 'Maks. średnica rolki', value: '220 mm' },
+      { name: 'Maks. masa rolki', value: '4 kg' },
+      { name: 'Uchwyt gilzy', value: 'Szybkozłączny trzon Quick-Chuck 76 mm' },
+      { name: 'Prędkość nawijania', value: 'do 90 cm/s' },
+      { name: 'Naciąg wstęgi', value: 'Smart Tension Control — stały od gilzy po pełną rolkę' },
+      { name: 'Obsługa', value: 'Jeden przycisk: start, stop, pauza; bez konfiguracji' },
+      { name: 'Druk atramentowy', value: 'Samoczynne rozpoznanie prędkości, kierunku i cofania nośnika' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '220 × 280 × 282 mm' },
+      { name: 'Zasilanie', value: '15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Nawijanie bez ustawiania parametrów', 'Druk atramentowy z cofaniem wstęgi', 'Rolki pod aplikator automatyczny', 'Stanowisko obsługiwane przez zmieniających się operatorów'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-mc-11', 'labelmate-uni-cat-standard', 'labelmate-cat-3-standard'],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/YgYTLlBozAQ', title: 'MC-PRO — premiera i zasada działania · Labelmate, EN', published: '2026-07-10', duration: 'PT2M10S' },
+      { url: 'https://www.youtube-nocookie.com/embed/bEB1SZUwXM0', title: 'Praca z drukarką Epson ColorWorks C8000 · Labelmate, EN', published: '2026-09-15', duration: 'PT2M37S' },
+      { url: 'https://www.youtube-nocookie.com/embed/pVikRF1pj4Y', title: 'Praca z drukarką Epson ColorWorks C4000e · Labelmate, EN', published: '2026-09-15', duration: 'PT2M45S' },
+      { url: 'https://www.youtube-nocookie.com/embed/DlceDLioZQc', title: 'Praca z drukarką Zebra ZT231 · Labelmate, EN', published: '2026-09-15', duration: 'PT2M20S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate MC-PRO (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-mc-pro-karta-katalogowa.pdf', size: '0,8 MB' },
+    ],
+    createdAt: '2026-09-21',
   },
   {
     id: 'labelmate-uni-cat-standard',

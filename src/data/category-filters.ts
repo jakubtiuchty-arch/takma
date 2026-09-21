@@ -1188,8 +1188,9 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'szerokosc',
       label: 'Szerokość nośnika',
-      description: 'Najszerszy materiał, jaki urządzenie przyjmie — wraz z podkładem, a nie sama etykieta.\n• do 115 mm — drukarki biurkowe\n• do 155 mm — drukarki przemysłowe czterocalowe\n• do 170 i 255 mm — drukarki sześciocalowe i nośnik szeroki',
+      description: 'Najszerszy materiał, jaki urządzenie przyjmie — wraz z podkładem, a nie sama etykieta.\n• do 110 i 115 mm — drukarki biurkowe\n• do 155 mm — drukarki przemysłowe czterocalowe\n• do 170 i 255 mm — drukarki sześciocalowe i nośnik szeroki',
       derived: [
+        { value: 'do 110 mm', pattern: '110 ?mm', specs: ['Maks. szerokość nośnika'] },
         { value: 'do 115 mm', pattern: '115 ?mm', specs: ['Maks. szerokość nośnika'] },
         { value: 'do 155 mm', pattern: '155 ?mm', specs: ['Maks. szerokość nośnika'] },
         { value: 'do 170 mm', pattern: '170 ?mm', specs: ['Maks. szerokość nośnika'] },
@@ -1209,10 +1210,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'predkosc',
       label: 'Prędkość nawijania',
-      description: 'Wartość odniesiona do początku rolki z gilzą 76 mm.\n• do 50 cm/s — drukarki biurkowe\n• do 80 cm/s — dobierana automatycznie do pracy drukarki\n• do 125 cm/s — nadąża za najszybszymi drukarkami termotransferowymi',
+      description: 'Wartość odniesiona do początku rolki z gilzą 76 mm.\n• do 50 cm/s — drukarki biurkowe\n• do 80 i 90 cm/s — dobierana automatycznie do pracy drukarki\n• do 125 cm/s — nadąża za najszybszymi drukarkami termotransferowymi',
       derived: [
         { value: 'do 50 cm/s', pattern: '50 ?cm/s', specs: ['Prędkość nawijania'] },
         { value: 'do 80 cm/s', pattern: '80 ?cm/s', specs: ['Prędkość nawijania'] },
+        { value: 'do 90 cm/s', pattern: '90 ?cm/s', specs: ['Prędkość nawijania'] },
         { value: 'do 125 cm/s', pattern: '125 ?cm/s', specs: ['Prędkość nawijania'] },
       ],
     },

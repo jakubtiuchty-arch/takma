@@ -118,7 +118,7 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
   'nawijarki-do-etykiet': {
     src: '/images/nawijarki-do-etykiet-hero-v2.webp',
     alt: 'Głowica nawijarki Labelmate: na chromowanym trzonie przed stalową tarczą powstaje równy nawój etykiet, a wstęga wchodzi do niego z lewej strony kadru',
-    lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Sześć modeli Labelmate — od biurkowego MC-11 po dwukierunkowy UNI-CAT.',
+    lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Dziewięć modeli Labelmate — od biurkowego MC-PRO po dwukierunkowy UNI-CAT.',
   },
 }
 

@@ -3753,18 +3753,21 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
     updatedAt: '2026-09-20',
     definition: {
       heading: 'Czym jest nawijarka do etykiet',
-      content: 'Nawijarka do etykiet (ang. label rewinder), nazywana również nawijakiem, to zewnętrzne urządzenie ustawiane za drukarką, które zwija zadrukowany nośnik w równą rolkę. Bez niego etykiety opadają na podłogę albo zwijają się na blacie, a operator musi nadzorować przebieg wydruku. Zastosowanie nawijarki pozwala drukarce zakończyć zlecenie samodzielnie, a gotowy nawój trafia do aplikatora, na kolejne stanowisko albo bezpośrednio do odbiorcy.\n\nOdwijak realizuje zadanie odwrotne: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie pokonuje ciężaru nawoju. W drukarkach atramentowych dochodzi cofanie nośnika pomiędzy zadaniami, które wymaga urządzenia rozpoznającego ten ruch i zwalniającego materiał.\n\nPosiadamy w ofercie sześć modeli belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz UNI-CAT, który samoczynnie rozpoznaje tryb pracy.',
+      content: 'Nawijarka do etykiet (ang. label rewinder), nazywana również nawijakiem, to zewnętrzne urządzenie ustawiane za drukarką, które zwija zadrukowany nośnik w równą rolkę. Bez niego etykiety opadają na podłogę albo zwijają się na blacie, a operator musi nadzorować przebieg wydruku. Zastosowanie nawijarki pozwala drukarce zakończyć zlecenie samodzielnie, a gotowy nawój trafia do aplikatora, na kolejne stanowisko albo bezpośrednio do odbiorcy.\n\nOdwijak realizuje zadanie odwrotne: podaje rolkę do drukarki ze stałym naciągiem, dzięki czemu silnik posuwu nie pokonuje ciężaru nawoju. W drukarkach atramentowych dochodzi cofanie nośnika pomiędzy zadaniami, które wymaga urządzenia rozpoznającego ten ruch i zwalniającego materiał.\n\nPosiadamy w ofercie dziewięć modeli belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w trzech rodzinach: MC-11 i najnowszy MC-PRO do drukarek biurkowych, CAT-3 do zastosowań przemysłowych oraz UNI-CAT, który samoczynnie rozpoznaje tryb pracy.',
     },
     comparisonTable: {
-      heading: 'Zestawienie sześciu modeli Labelmate',
+      heading: 'Zestawienie dziewięciu modeli Labelmate',
       intro: 'Kolumna „Rolka” podaje maksymalną średnicę i masę gotowego nawoju. Prędkość odnosi się do początku rolki z gilzą 76 mm.',
       columns: ['Nośnik', 'Rolka', 'Gilza', 'Prędkość', 'Przeznaczenie'],
       rows: [
+        { model: 'MC-PRO CHUCK', href: '/produkt/labelmate-mc-pro-chuck', role: 'Stały naciąg, jeden przycisk', cells: ['do 110 mm', '220 mm / 4 kg', '76 mm Quick-Chuck', '90 cm/s', 'Drukarki biurkowe i atramentowe'] },
         { model: 'MC-11', href: '/produkt/labelmate-mc-11', role: 'Drukarki biurkowe', cells: ['do 115 mm', '220 mm / 4 kg', '25–101 mm (ACH)', '50 cm/s', 'Zebra ZD421t, Brother TD-4T'] },
         { model: 'CAT-3-STANDARD', href: '/produkt/labelmate-cat-3-standard', role: 'Druk przemysłowy 4 cale', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '125 cm/s', 'Zebra ZT411, Honeywell PM45'] },
         { model: 'CAT-3-ACH', href: '/produkt/labelmate-cat-3-ach', role: 'Zmienne średnice gilz', cells: ['do 155 mm', '280 mm / 7 kg', '25–101 mm (ACH)', '125 cm/s', 'Druk zleceniowy'] },
+        { model: 'CAT-3-CHUCK', href: '/produkt/labelmate-cat-3-chuck', role: 'Częsta zmiana gilzy', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '125 cm/s', 'Druk zleceniowy'] },
         { model: 'CAT-3-10-INCHES', href: '/produkt/labelmate-cat-3-10-inches', role: 'Szeroki nośnik', cells: ['do 255 mm', '300 mm / 10 kg', '76 mm', '125 cm/s', 'Zebra ZT421, Honeywell PM65'] },
         { model: 'UNI-CAT-STANDARD', href: '/produkt/labelmate-uni-cat-standard', role: 'Nawijarka i odwijak', cells: ['do 155 mm', '300 mm / 8 kg', '76 mm', '80 cm/s', 'Drukarki atramentowe'] },
+        { model: 'UNI-CAT-ACH', href: '/produkt/labelmate-uni-cat-ach', role: 'Zmienne gilzy, praca w obie strony', cells: ['do 155 mm', '280 mm / 7 kg', '25–101 mm (ACH)', '80 cm/s', 'Atrament i termotransfer'] },
         { model: 'UNI-CAT-CHUCK', href: '/produkt/labelmate-uni-cat-chuck', role: 'Częsta zmiana rolek', cells: ['do 170 mm', '300 mm / 10 kg', '76 mm Quick-Chuck', '80 cm/s', 'Atrament, druk zleceniowy'] },
       ],
       note: 'Wszystkie modele nawijają w obu kierunkach i objęte są dwuletnią gwarancją producenta, z rocznym okresem na zasilacz.',
