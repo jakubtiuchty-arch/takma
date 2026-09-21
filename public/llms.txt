@@ -29,6 +29,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 - Newland — partner handlowy
 - Godex — partner handlowy
 - Citizen — partner handlowy
+- Labelmate — partner handlowy (nawijarki, odwijaki i dyspensery etykiet)
 
 ## Doświadczenie
 - Firma założona w 2001 roku (25+ lat na rynku)
@@ -196,6 +197,25 @@ Druk atramentowy CMYK na żądanie: etykiety produktowe, GHS/CLP, spożywcze i b
 - Termiczna (DT) — druk bezpośredni na papierze termoczułym, tańsza eksploatacja, etykiety blakną po 6-12 miesiącach
 - Termotransferowa (TT) — druk z taśmą barwiącą (ribbon), etykiety trwałe latami, odporne na UV, wodę i chemikalia
 - Porównanie szczegółowe: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
+
+## Akcesoria do obsługi rolek etykiet — Labelmate
+
+Belgijski producent urządzeń do nawijania, odwijania i wydawania etykiet. Uzupełniają drukarkę tam, gdzie zadrukowana wstęga ma trafić na aplikator albo gdzie etykiety nakłada operator.
+
+### Dyspensery etykiet (podajniki, 4 modele, od 2 120 zł netto)
+Odklejają etykietę od podkładu i zatrzymują ją gotową do pobrania; po zdjęciu podają kolejną. Wersja RS ma czujnik odbiciowy (etykiety papierowe i foliowe z nadrukiem), wersja U czujnik fotoelektryczny (także przezroczyste i czarne).
+- Labelmate LD-115-RS (nośnik do 115 mm, etykiety od 6 mm, od 2 120 zł): https://www.takma.com.pl/produkt/labelmate-ld-115-rs
+- Labelmate LD-115-U (nośnik do 115 mm, także etykiety przezroczyste, od 2 479 zł): https://www.takma.com.pl/produkt/labelmate-ld-115-u
+- Labelmate LD-165-RS (nośnik do 165 mm, etykiety od 6 mm, od 2 335 zł): https://www.takma.com.pl/produkt/labelmate-ld-165-rs
+- Labelmate LD-165-U (nośnik do 165 mm, etykiety od 20 mm, od 2 694 zł): https://www.takma.com.pl/produkt/labelmate-ld-165-u
+- Kategoria: https://www.takma.com.pl/dyspensery-etykiet
+
+### Nawijarki i odwijaki etykiet (9 modeli, od 1 656 zł netto)
+Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwijają ją do kontroli.
+- Labelmate MC-11 (biurkowa, nośnik do 115 mm): https://www.takma.com.pl/produkt/labelmate-mc-11
+- Labelmate CAT-3 (nośnik do 155 mm, nawijanie i odwijanie): https://www.takma.com.pl/produkt/labelmate-cat-3-standard
+- Labelmate UNI-CAT (dwukierunkowa, nośnik do 155 mm): https://www.takma.com.pl/produkt/labelmate-uni-cat-standard
+- Kategoria: https://www.takma.com.pl/nawijarki-do-etykiet
 
 ## Terminale mobilne M3 Mobile
 - Wszystkie modele M3 Mobile (9 terminali, ceny i dostępność): https://www.takma.com.pl/terminale-m3-mobile

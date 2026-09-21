@@ -3753,10 +3753,10 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
     updatedAt: '2026-09-21',
     definition: {
       heading: 'Czym jest dyspenser etykiet',
-      content: 'Dyspenser etykiet, nazywany również podajnikiem, odkleja etykietę od podkładu i zatrzymuje ją nad czujnikiem, w położeniu gotowym do pobrania. Po zdjęciu etykiety urządzenie natychmiast podaje kolejną. Rolka pozostaje na trzonie, zużyty podkład nawija się na osobną szpulę, a operatorowi pozostaje jedna czynność: przyłożenie etykiety do produktu.\n\nRóżnicę wobec pracy z rolki trzymanej w ręku łatwo oszacować. Odspojenie narożnika etykiety od podkładu zajmuje kilka sekund, a przy cienkich materiałach kończy się zagięciem albo rozdarciem etykiety. Dyspenser ogranicza tę czynność do pojedynczego chwytu. Przy kilkuset etykietach na zmianę oszczędność staje się wyraźna w łącznym czasie pakowania.\n\nUrządzeń z tej kategorii nie należy mylić z <strong>aplikatorem</strong>, który nakłada etykietę na produkt samodzielnie. Dyspenser wykonuje czynność wcześniejszą: przygotowuje etykietę do naklejenia, którego dokonuje operator.\n\nPosiadamy w ofercie cztery modele belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w dwóch szerokościach i dwóch wersjach czujnika.',
+      content: 'Dyspenser etykiet samoprzylepnych, nazywany również podajnikiem etykiet, odkleja etykietę od podkładu i zatrzymuje ją nad czujnikiem, w położeniu gotowym do pobrania. Po zdjęciu etykiety urządzenie natychmiast podaje kolejną. Rolka pozostaje na trzonie, zużyty podkład nawija się na osobną szpulę, a operatorowi pozostaje jedna czynność: przyłożenie etykiety do produktu.\n\nRóżnicę wobec pracy z rolki trzymanej w ręku łatwo oszacować. Odspojenie narożnika etykiety od podkładu zajmuje kilka sekund, a przy cienkich materiałach kończy się zagięciem albo rozdarciem etykiety. Dyspenser ogranicza tę czynność do pojedynczego chwytu. Przy kilkuset etykietach na zmianę oszczędność staje się wyraźna w łącznym czasie pakowania.\n\nUrządzeń z tej kategorii nie należy mylić z **aplikatorem**, który nakłada etykietę na produkt samodzielnie. Dyspenser wykonuje czynność wcześniejszą: przygotowuje etykietę do naklejenia, którego dokonuje operator.\n\nPosiadamy w ofercie cztery modele belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w dwóch szerokościach i dwóch wersjach czujnika.',
     },
     comparisonTable: {
-      heading: 'Zestawienie czterech modeli Labelmate',
+      heading: 'Zestawienie czterech podajników Labelmate',
       intro: 'Zestawienie obejmuje wyłącznie parametry, którymi modele się różnią. Średnica i masa rolki, zakres gilzy, prędkość podawania oraz klasa ochrony są wspólne dla wszystkich czterech urządzeń i zostały wymienione pod tabelą.',
       columns: ['Szerokość etykiet', 'Najkrótsza etykieta', 'Obsługiwane etykiety', 'Miejsce na blacie'],
       rows: [
@@ -3832,12 +3832,16 @@ Osobną decyzją jest wybór między dyspenserem a odklejakiem wbudowanym w druk
     },
     faq: [
       {
+        question: 'Czy podajnik etykiet działa automatycznie, czy trzeba go obsługiwać?',
+        answer: 'Dyspensery Labelmate serii LD są automatyczne. Po zdjęciu etykiety czujnik wykrywa, że krawędź zwolniła miejsce, i silnik podaje kolejną bez żadnej komendy. Operator nie naciska przycisku ani nie przesuwa wstęgi. Ręcznej obsługi wymagają tylko dwie czynności: założenie rolki i ustawienie jednego pokrętła przy zmianie formatu etykiety.',
+      },
+      {
         question: 'Czym różni się dyspenser od aplikatora etykiet?',
         answer: 'Dyspenser odkleja etykietę od podkładu i podaje ją w położeniu gotowym do pobrania, a nakłada ją operator. Aplikator nakłada etykietę na produkt samodzielnie, zwykle na linii produkcyjnej. Są to dwie odmienne klasy urządzeń, znacznie różniące się ceną. W tej kategorii prezentujemy dyspensery.',
       },
       {
         question: 'Czym różnią się wersje RS i U?',
-        answer: 'Rodzajem czujnika. Wersja RS ma czujnik odbiciowy i obsługuje etykiety papierowe oraz foliowe z nadrukiem. Wersja U ma czujnik fotoelektryczny, który rozpoznaje również etykiety przezroczyste i czarne. Jeżeli w asortymencie występują etykiety przezroczyste, wersja U pozostaje jedynym rozwiązaniem, które zadziała.',
+        answer: 'Rodzajem czujnika. LD-115-RS i LD-165-RS mają czujnik odbiciowy i obsługują etykiety papierowe oraz foliowe z nadrukiem. LD-115-U i LD-165-U mają czujnik fotoelektryczny, który rozpoznaje również etykiety przezroczyste i czarne. Jeżeli w asortymencie występują etykiety przezroczyste, wersja U pozostaje jedynym rozwiązaniem, które zadziała.',
       },
       {
         question: 'Czy dyspenser zastąpi odklejak w drukarce?',
@@ -3845,7 +3849,11 @@ Osobną decyzją jest wybór między dyspenserem a odklejakiem wbudowanym w druk
       },
       {
         question: 'Jaką gilzę i jaką rolkę przyjmuje dyspenser?',
-        answer: 'Trzon o średnicy 35 mm przyjmuje gilze od 38 do 76 mm, a więc oba formaty stosowane w drukarkach etykiet. Rolka może mieć do 220 mm średnicy i 6 kg masy. Wykonania XL na rolki do 300 mm producent realizuje na zamówienie.',
+        answer: 'We wszystkich czterech modelach Labelmate serii LD trzon o średnicy 35 mm przyjmuje gilze od 38 do 76 mm, a więc oba formaty stosowane w drukarkach etykiet. Rolka może mieć do 220 mm średnicy i 6 kg masy. Wykonania XL na rolki do 300 mm producent realizuje na zamówienie.',
+      },
+      {
+        question: 'Jaki model zastąpił starsze dyspensery Labelmate LD-100 i LD-200?',
+        answer: 'Aktualna linia Labelmate to LD-115, LD-165, LD-225 oraz LD-300-UNI. Miejsce LD-100 zajmuje dziś LD-115, a LD-200 — LD-165. Starsze oznaczenia nadal krążą w wyszukiwarkach i w starych zapytaniach ofertowych, ale producent ich nie wytwarza. W ofercie TAKMA są cztery modele: LD-115-RS, LD-115-U, LD-165-RS i LD-165-U.',
       },
       {
         question: 'Ile trwa przygotowanie urządzenia do pracy?',
@@ -3857,6 +3865,16 @@ Osobną decyzją jest wybór między dyspenserem a odklejakiem wbudowanym w druk
       },
     ],
     comparisons: [
+      {
+        title: 'Podajnik bierny, aplikator ręczny czy dyspenser automatyczny?',
+        verdict: 'Trzy tańsze klasy nie odklejają etykiety. Robi to dopiero dyspenser automatyczny.',
+        content: 'Sprzęt do wydawania etykiet dzieli się na cztery poziomy i różnica w cenie wynika z tego, ile pracy zostaje przy operatorze. Bierny podajnik, czyli uchwyt na rolkę z krawędzią do odrywania, kosztuje od kilkudziesięciu do czterystu złotych i sam niczego nie odkleja — etykietę nadal trzeba oddzielić palcami. Aplikator ręczny za trzysta do czterystu złotych nakłada etykietę dociśnięciem rolki do opakowania, ale operator trzyma urządzenie w dłoni, a kształt opakowania musi być powtarzalny. Automat wejściowy za kilkaset do tysiąca kilkuset złotych odkleja już samodzielnie, jednak przyjmuje węższy nośnik i lżejszą rolkę. Czwarty poziom to dyspenser automatyczny klasy stanowiskowej, czyli urządzenia opisane na tej stronie: rolka do 220 mm średnicy i 6 kg, nośnik do 165 mm, praca przez całą zmianę bez zajmowania rąk. Kosztuje od około 2 100 zł netto.',
+      },
+      {
+        title: 'Kiedy wystarczy rozwiązanie ręczne?',
+        verdict: 'Do kilkudziesięciu etykiet dziennie. Powyżej różnicę pokrywa czas odzyskany na stanowisku.',
+        content: 'Rozstrzyga dobowa liczba etykiet, nie wielkość firmy. Przy kilkunastu czy kilkudziesięciu sztukach dziennie ręczne oddzielenie etykiety od podkładu nie buduje żadnej kolejki i tańsza klasa sprzętu w zupełności wystarcza. Powyżej mniej więcej stu etykiet na zmianę rachunek się odwraca: każda sztuka to kilka sekund na odnalezienie narożnika, a do tego pewien odsetek etykiet zagiętych albo rozdartych, które trzeba drukować ponownie. Przy takim wolumenie różnica w cenie wobec aplikatora ręcznego zwraca się w kilka miesięcy. Drugim, niezależnym od liczby sztuk powodem jest materiał: etykiety foliowe i przezroczyste odchodzą od podkładu oporniej niż papierowe i ręcznie zdejmuje się je wyraźnie gorzej.',
+      },
       {
         title: 'Wersja RS czy U?',
         verdict: 'Etykiety papierowe — RS. Przezroczyste albo czarne w asortymencie — U.',

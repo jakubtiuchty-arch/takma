@@ -245,6 +245,10 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
               <div className="w-2 h-2 bg-blue-500 rounded-full" />
               <span className="text-gray-600">
                 W drodze: <strong className="text-gray-900">{stock!.inDelivery} szt.</strong>
+                {/* Przy pozycjach z magazynu podajemy termin wysyłki, a tutaj dotąd nie było go wcale.
+                    Dystrybutor nie przekazuje daty dostawy per numer katalogowy, więc zamiast jej
+                    zmyślać mówimy wprost, kiedy klient ją pozna. */}
+                <span className="ml-1 text-gray-400">— termin potwierdzamy przy zamówieniu</span>
               </span>
             </div>
           )}

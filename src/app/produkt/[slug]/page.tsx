@@ -534,7 +534,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         name: `${tytul} — ${product.name}`,
         description: `${tytul}: instruktaż producenta ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
         ...(miniatura ? { thumbnailUrl: [miniatura] } : {}),
-        embedUrl: v.url,
+        // Google odrzuca VideoObject, gdy embedUrl wskazuje stronę oglądania zamiast odtwarzacza.
+        embedUrl: serwis === 'youtube'
+          ? `https://www.youtube.com/embed/${id}`
+          : `https://player.vimeo.com/video/${id}`,
         uploadDate: v.published,
         duration: v.duration,
         publisher: { '@type': 'Organization', name: manufacturer?.name ?? 'TAKMA' },
@@ -720,7 +723,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   // JSON-LD: FAQPage — structured data for product FAQ
-  const faqJsonLd = !liveOffers && product.faq && product.faq.length > 0 ? {
+  //
+  // Warunek `!liveOffers` stał tu razem z resztą schematu, który na kartach z ceną żywą
+  // zastępuje `LiveProductSchema`. Ten komponent oddaje jednak wyłącznie Product/ProductGroup,
+  // więc przy okazji znikał także schemat pytań — na czternastu kartach z sekcją `faq`,
+  // między innymi całej serii Epson ColorWorks i drukarkach kart Zebry. FAQPage to osobny typ
+  // i nie koliduje z niczym, co renderuje LiveProductSchema.
+  const faqJsonLd = product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({
@@ -1753,7 +1762,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="dyspensery"
                 title="Dyspensery etykiet"
-                lead="Dyspenser odkleja etykietę od podkładu i zatrzymuje ją gotową do wzięcia, a po zdjęciu podaje następną. Przydaje się tam, gdzie etykiety nakleja się ręcznie — przy pakowaniu, w aptece, na kontroli."
+                lead="Dyspenser odkleja etykietę od podkładu i zatrzymuje ją w położeniu gotowym do pobrania, a po zdjęciu podaje kolejną. Sprawdza się tam, gdzie etykiety nakłada operator: przy pakowaniu, w aptece, na kontroli jakości. Pełne zestawienie w kategorii [dyspensery etykiet](/dyspensery-etykiet)."
                 products={relatedDispensers as typeof products}
                 showDualButtons
               />
