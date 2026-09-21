@@ -1762,7 +1762,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="dyspensery"
                 title="Dyspensery etykiet"
-                lead="Dyspenser odkleja etykietę od podkładu i zatrzymuje ją w położeniu gotowym do pobrania, a po zdjęciu podaje kolejną. Sprawdza się tam, gdzie etykiety nakłada operator: przy pakowaniu, w aptece, na kontroli jakości. Pełne zestawienie w kategorii [dyspensery etykiet](/dyspensery-etykiet)."
+                categoryHref="/dyspensery-etykiet"
                 products={relatedDispensers as typeof products}
                 showDualButtons
               />
@@ -1773,7 +1773,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="nawijaki"
                 title="Nawijaki zewnętrzne"
-                lead="Nawijak stoi za drukarką i zwija zadrukowany nośnik w równą rolkę, dzięki czemu urządzenie kończy zlecenie bez udziału operatora. Modele Labelmate dobieramy do szerokości nośnika i średnicy gilzy."
+                categoryHref="/nawijarki-do-etykiet"
                 products={relatedRewinders as typeof products}
                 showDualButtons
               />

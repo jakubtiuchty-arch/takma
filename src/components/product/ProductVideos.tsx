@@ -100,21 +100,24 @@ export default function ProductVideos({ videos, naglowek }: { videos: ProductVid
           : `Instruktaże producenta${videos.length > 2 ? ', w kolejności od rozpakowania po konfigurację sterownika.' : '.'}`}
       </p>
 
-      {/* Telefon: karuzela z zatrzymywaniem na kafelku. Od sm zwykła siatka.
-          `items-start`, bo kafelki o różnych proporcjach mają różną wysokość i nie mają się rozciągać. */}
-      <div className="-mx-4 flex snap-x snap-mandatory items-start gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
+      {/* Telefon: karuzela z zatrzymywaniem na kafelku. Od sm kafelki pakują się od lewej.
+          Siatka dwukolumnowa dawała każdemu filmowi połowę szerokości, więc wąska rolka
+          wisiała pośrodku swojej kolumny, a między nią a sąsiadem robiła się dziura.
+          `items-start`, bo kafelki o różnych proporcjach mają różną wysokość. */}
+      <div className="-mx-4 flex snap-x snap-mandatory items-start gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:justify-start sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
         {videos.map((v) => {
           const pion = czyPion(v.aspect)
           return (
             <figure
               key={v.url}
-              /* Szerokość ustawiamy na całym kafelku, nie na samym obrazie, żeby podpis stał pod filmem,
-                 a nie przy krawędzi kolumny. Pionowy liczymy ze stałej wysokości — rolka na całą
-                 szerokość kolumny byłaby wyższa niż reszta sekcji. */
+              /* Szerokość ustawiamy na całym kafelku, nie na samym obrazie, żeby podpis stał pod filmem.
+                 Pionowy dostaje szerokość wyliczoną ze stałej wysokości i nie rośnie; poziomy dzieli
+                 wiersz z sąsiadem, ale nie przekracza 600 px, żeby przy jednym filmie nie rozlał się
+                 na całą szerokość treści. */
               className={
                 pion
-                  ? 'w-[62vw] shrink-0 snap-start sm:mx-auto sm:w-[var(--szerokosc-kafla)] sm:shrink'
-                  : 'w-[82vw] shrink-0 snap-start sm:w-auto sm:shrink'
+                  ? 'w-[62vw] shrink-0 snap-start sm:w-[var(--szerokosc-kafla)] sm:shrink-0'
+                  : 'w-[82vw] shrink-0 snap-start sm:w-auto sm:max-w-[600px] sm:shrink sm:grow sm:basis-[420px]'
               }
               style={pion ? ({ '--szerokosc-kafla': `${szerokoscPionowego(v.aspect)}px` } as CSSProperties) : undefined}
             >
