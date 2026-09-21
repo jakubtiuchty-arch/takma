@@ -492,6 +492,21 @@ export const subcategories: Subcategory[] = [
     productCount: 207,
   },
   {
+    id: 'dyspensery-etykiet',
+    slug: 'dyspensery-etykiet',
+    name: 'Dyspensery etykiet',
+    parentCategoryId: 'drukarki-etykiet',
+    description: 'Dyspensery i podajniki etykiet Labelmate — odklejają etykietę z podkładu i podają ją gotową do naklejenia',
+    seoTitle: 'Dyspensery etykiet Labelmate | Podajnik etykiet samoprzylepnych',
+    seoDescription: 'Dyspensery i podajniki etykiet samoprzylepnych Labelmate LD-115 i LD-165: automatyczne odklejanie, nośnik do 165 mm, rolka do 220 mm. Ceny netto B2B.',
+    longDescription: 'Dyspenser etykiet odkleja etykietę od podkładu i zatrzymuje ją tuż przed czujnikiem, gotową do wzięcia. Gdy operator ją zdejmie, urządzenie samo podaje następną. Na stanowisku pakowania oznacza to koniec dłubania paznokciem w rogu etykiety. Posiadamy w ofercie cztery modele Labelmate w dwóch szerokościach i dwóch wersjach czujnika.',
+    icon: 'tag',
+    productIds: [
+      'labelmate-ld-115-rs', 'labelmate-ld-165-rs', 'labelmate-ld-115-u', 'labelmate-ld-165-u',
+    ],
+    productCount: 4,
+  },
+  {
     id: 'nawijarki-do-etykiet',
     slug: 'nawijarki-do-etykiet',
     name: 'Nawijarki i odwijaki do etykiet',
@@ -1361,7 +1376,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd421t-203', 'zebra-printhead-zd421t-300', 'zebra-platen-roller-zd421t-203', 'zebra-platen-roller-zd421t-300', 'zebra-cutter-zd421t', 'zebra-dispenser-zd421t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd421t-203', 'zebra-printhead-zd421t-300', 'zebra-platen-roller-zd421t-203', 'zebra-platen-roller-zd421t-300', 'zebra-cutter-zd421t', 'zebra-dispenser-zd421t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     starterKits: [
       { title: 'Etykiety papierowe', description: 'Papierowa etykieta i woskowa taśma do zwykłych oznaczeń w suchym pomieszczeniu.', facts: ['Magazyn, półka, wysyłka', 'Wnętrze, ponad rok trwałości', 'Najtańszy komplet'], image: '/images/kits/zd421t-papier-v3.webp', partNumbers: ['3007206-T', '02300GS11007'] },
       { title: 'Etykiety foliowe', description: 'Mała etykieta z folii i żywiczna taśma do znakowania sprzętu, który się ściera i moczy.', facts: ['Sprzęt, majątek, inwentaryzacja', 'Odporna na wilgoć i ścieranie', 'Wnętrze, do roku użytkowania'], image: '/images/kits/zd421t-folia-v3.webp', partNumbers: ['3011159', '05095GS06407'] },
@@ -1586,7 +1601,7 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-zd421', 'zebra-module-rs232-zd421', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym różni się Zebra ZD421d od ZD421t?',
@@ -2006,7 +2021,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd621t-203', 'zebra-printhead-zd621t-300', 'zebra-platen-roller-zd621t-203', 'zebra-platen-roller-zd621t-300', 'zebra-cutter-zd621t', 'zebra-dispenser-zd621t', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd621t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd621t-203', 'zebra-printhead-zd621t-300', 'zebra-platen-roller-zd621t-203', 'zebra-platen-roller-zd621t-300', 'zebra-cutter-zd621t', 'zebra-dispenser-zd621t', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd621t', 'zebra-battery-zd420', 'zebra-battery-module-zd420t', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym ZD621t różni się od ZD421t?',
@@ -2347,7 +2362,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['zebra-printhead-zd621d-203', 'zebra-printhead-zd621d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd621d-203', 'zebra-printhead-zd621d-300', 'zebra-platen-roller-zd421d-203', 'zebra-platen-roller-zd421d-300', 'zebra-dispenser-zd421d', 'zebra-battery-module-zd421d', 'zebra-module-ethernet-rs232-zd621', 'zebra-module-wifi-zd421', 'zebra-power-supply-zd421-zd621', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym różni się Zebra ZD621d od ZD621t?',
@@ -3620,7 +3635,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym Zebra ZD220t różni się od GC420t?',
@@ -3912,7 +3927,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-labels-zultimate-75x150',
       'zebra-labels-zultimate-70x32',
     ],
-    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['zebra-printhead-zd220t-203', 'zebra-platen-roller-zd220t-203', 'zebra-power-supply-zd220', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym się różni ZD230t od ZD220t?',
@@ -4344,7 +4359,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety linerless (bez podkładu) w gastronomii i logistyce',
       'Druk opasek identyfikacyjnych w szpitalach (wariant healthcare)',
     ],
-    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45d', 'honeywell-dispenser-pc45d', 'honeywell-cutter-pc45d', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/zh-cn/public/products/printers/desktop/pc45/documents/pc45-direct-thermal-and-thermal-transfer-desktop-printer-datasheet-en.pdf', size: 'PDF' },
@@ -4529,7 +4544,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Druk etykiet RFID UHF (wariant z modułem RFID)',
       'Etykiety cenowe i produktowe w retail (w trybie DT bez ribbonu)',
     ],
-    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45t', 'honeywell-dispenser-pc45t', 'honeywell-cutter-pc45t', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['honeywell-printhead-pc45-203', 'honeywell-printhead-pc45-300', 'honeywell-platen-roller-pc45t', 'honeywell-dispenser-pc45t', 'honeywell-cutter-pc45t', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa (EN)', type: 'datasheet' as const, url: 'https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/zh-cn/public/products/printers/desktop/pc45/documents/pc45-direct-thermal-and-thermal-transfer-desktop-printer-datasheet-en.pdf', size: 'PDF' },
@@ -4919,7 +4934,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       'zebra-z-perform-1000d-110-tag',
       'zebra-8000d-jewelry',
     ],
-    relatedAccessories: ['brother-td4d-cutter', 'brother-td4d-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['brother-td4d-cutter', 'brother-td4d-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Jakie etykiety pasują do Brother TD-4D?',
@@ -5381,7 +5396,7 @@ Brother TD-4T integruje się z systemami WMS (Comarch WMS, SAP WM), ERP (Comarch
       'zebra-labels-zperform1000-70x30',
       'zebra-labels-zperform1000-102x152',
     ],
-    relatedAccessories: ['brother-td4t-cutter', 'brother-td4t-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['brother-td4t-cutter', 'brother-td4t-peeler', 'brother-td4d-printhead-203', 'brother-td4d-printhead-300', 'brother-td4d-platen-203', 'brother-td4d-platen-300', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym jest Brother TD-4T i czym się różni od TD-4D?',
@@ -5989,7 +6004,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       'Etykiety cenowe i produktowe w handlu detalicznym',
       'Etykiety identyfikacyjne na środki trwałe (inwentaryzacja)',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -6368,7 +6383,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     downloads: [
       { name: 'Karta katalogowa CL-S521II (PL)', type: 'datasheet', url: '/downloads/citizen-cl-s521ii-datasheet.pdf', size: '2,0 MB' },
     ],
-    relatedAccessories: ['citizen-printhead-cl-s521-203', 'citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck'],
+    relatedAccessories: ['citizen-printhead-cl-s521-203', 'citizen-cutter-cl-s521', 'citizen-peeler-cl-s521', 'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium', 'citizen-parallel-cl-s521', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     relatedProducts: ['citizen-cl-s531ii', 'citizen-cl-e300', 'zebra-zd421d'],
     createdAt: '2026-03-21',
     sameAs: 'https://www.citizen-systems.com/eu/en/label-printers/cl-s521ii',
@@ -8146,7 +8161,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-76058',
       'zebra-tt-66131',
     ],
-    relatedAccessories: ['zebra-printhead-zt421-203', 'zebra-printhead-zt421-300', 'zebra-platen-zt421', 'zebra-ethernet-zt421', 'zebra-module-wifi-zt111', 'zebra-lpt-zt411', 'zebra-rfid-zt411', 'zebra-cutter-zt421', 'zebra-dispenser-zt411', 'zebra-resolution-converter-zt421', 'zebra-keyboard-zkdu', 'labelmate-cat-3-10-inches'],
+    relatedAccessories: ['zebra-printhead-zt421-203', 'zebra-printhead-zt421-300', 'zebra-platen-zt421', 'zebra-ethernet-zt421', 'zebra-module-wifi-zt111', 'zebra-lpt-zt411', 'zebra-rfid-zt411', 'zebra-cutter-zt421', 'zebra-dispenser-zt411', 'zebra-resolution-converter-zt421', 'zebra-keyboard-zkdu', 'labelmate-cat-3-10-inches', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT421 od ZT411?',
@@ -10300,7 +10315,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'zebra-tt-3001627',
       'zebra-tt-3008040-t',
     ],
-    relatedAccessories: ['zebra-printhead-zt620-203', 'zebra-printhead-zt620-300', 'zebra-platen-zt620', 'zebra-cutter-zt620', 'zebra-rewind-zt620', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-10-inches'],
+    relatedAccessories: ['zebra-printhead-zt620-203', 'zebra-printhead-zt620-300', 'zebra-platen-zt620', 'zebra-cutter-zt620', 'zebra-rewind-zt620', 'zebra-module-wifi-zt111', 'zebra-keyboard-zkdu', 'labelmate-cat-3-10-inches', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     faq: [
       {
         question: 'Czym różni się Zebra ZT620 od 170Xi4?',
@@ -11258,7 +11273,7 @@ Emulacja wielu języków — PM65 obsługuje ZSim2 (emulacja ZPL-II), DPL, IPL, 
       'Automatyczne aplikowanie etykiet z interfejsem aplikatora',
       'Etykiety traceability na liniach produkcyjnych w trybie ciągłym',
     ],
-    relatedAccessories: ['honeywell-pm65-glowica-203dpi', 'honeywell-pm65-glowica-300dpi', 'honeywell-pm65-walek-dociskowy', 'honeywell-pm65-skladany-rdzen', 'honeywell-pm65-gilotyna', 'honeywell-pm65-odklejak', 'honeywell-pm65-nawijak', 'honeywell-pm65-modul-wifi', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy', 'labelmate-cat-3-10-inches'],
+    relatedAccessories: ['honeywell-pm65-glowica-203dpi', 'honeywell-pm65-glowica-300dpi', 'honeywell-pm65-walek-dociskowy', 'honeywell-pm65-skladany-rdzen', 'honeywell-pm65-gilotyna', 'honeywell-pm65-odklejak', 'honeywell-pm65-nawijak', 'honeywell-pm65-modul-wifi', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy', 'labelmate-cat-3-10-inches', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PM45/PM65 Series (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-pm45-pm65-series-printer-datasheet-en.pdf', size: 'PDF, 609 KB' },
@@ -65439,7 +65454,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
       'epson-etykiety-c33s045542',
       'epson-etykiety-c33s045543',
     ],
-    relatedAccessories: ['epson-sjic22p-k', 'epson-sjic22p-c', 'epson-sjic22p-m', 'epson-sjic22p-y', 'epson-sjmb3500', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
+    relatedAccessories: ['epson-sjic22p-k', 'epson-sjic22p-c', 'epson-sjic22p-m', 'epson-sjic22p-y', 'epson-sjmb3500', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
       {
         question: 'Czym kolorowa drukarka etykiet różni się od termotransferowej?',
@@ -66735,7 +66750,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       'epson-etykiety-c33s045542',
       'epson-etykiety-c33s045543',
     ],
-    relatedAccessories: ['epson-sjic42p-bk', 'epson-sjic42p-mk', 'epson-sjic42p-c', 'epson-sjic42p-m', 'epson-sjic42p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
+    relatedAccessories: ['epson-sjic42p-bk', 'epson-sjic42p-mk', 'epson-sjic42p-c', 'epson-sjic42p-m', 'epson-sjic42p-y', 'epson-sjmb4000', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     comparison: {
       title: 'ColorWorks C4000e, C3500 i D3800e',
       models: [
@@ -67082,7 +67097,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
+    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     comparison: {
       title: 'ColorWorks C6000 a modele biurkowe',
       models: [
@@ -67679,7 +67694,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck'],
+    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     comparison: {
       title: 'ColorWorks C6500 a C6000',
       models: [
@@ -68032,7 +68047,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic48p-bk', 'epson-sjic48p-mk', 'epson-sjic48p-c', 'epson-sjic48p-m', 'epson-sjic48p-y', 'epson-sjmb7500', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach'],
+    relatedAccessories: ['epson-sjic48p-bk', 'epson-sjic48p-mk', 'epson-sjic48p-c', 'epson-sjic48p-m', 'epson-sjic48p-y', 'epson-sjmb7500', 'labelmate-uni-cat-standard', 'labelmate-uni-cat-chuck', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     comparison: {
       title: 'ColorWorks C8000e a C6000 i C6500',
       models: [
@@ -68800,6 +68815,243 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
   },
 ]
 
+// ── Dyspensery etykiet Labelmate: odklejają etykietę i podają ją gotową do naklejenia ──
+// Wersje RS (czujnik odbiciowy, etykiety zwykłe) i U (fotoelektryczny, także przezroczyste).
+const labelmateDyspensery: Product[] = [
+  {
+    id: 'labelmate-ld-115-rs',
+    slug: 'labelmate-ld-115-rs',
+    name: 'Dyspenser etykiet Labelmate LD-115-RS',
+    shortDescription: 'Dyspenser etykiet Labelmate LD-115-RS: odkleja i podaje etykiety do 115 mm szerokości, od 6 mm długości, rolka do 220 mm.',
+    seoTitle: 'Labelmate LD-115-RS — dyspenser etykiet do 115 mm | TAKMA',
+    seoDescription: 'Dyspenser etykiet Labelmate LD-115-RS (LMD030): automatyczne odklejanie etykiet do 115 mm, od 6 mm długości, rolka do 220 mm, IP50. Cena netto B2B.',
+    description: `Dyspenser odkleja etykietę od podkładu i zatrzymuje ją tuż przed czujnikiem — operator zdejmuje gotową, a urządzenie natychmiast podaje następną. Na stanowisku pakowania znika najbardziej irytująca czynność całego procesu: podważanie rogu etykiety paznokciem.
+
+Czujnik odbiciowy siedzi pod etykietą i wykrywa jej krawędź natarcia. Ustawienie sprowadza się do jednego pokrętła długości etykiety i zajmuje **mniej niż 30 sekund**. Prędkość podawania reguluje się płynnie od **2,67 do 16,7 cm/s**, więc urządzenie da się dopasować do tempa pracy konkretnego stanowiska.
+
+Model obsługuje etykiety do **115 mm** szerokości i od **6 mm** długości, rolki do **220 mm** średnicy i **6 kg**. Trzon 35 mm przyjmuje gilze od 38 do 76 mm. Obudowa ma klasę **IP50**, a wymiary 223 × 305 × 308,5 mm pozwalają postawić dyspenser na zwykłym blacie.
+
+Wersja RS jest przeznaczona do etykiet zwykłych. Jeśli w grę wchodzą etykiety **przezroczyste albo czarne**, potrzebna jest wersja uniwersalna [LD-115-U](/produkt/labelmate-ld-115-u). Do szerszego materiału — [LD-165-RS](/produkt/labelmate-ld-165-rs).
+
+Producent robi też wykonania **XL** ze stali nierdzewnej, na rolki do 300 mm — sprowadzamy je na zamówienie.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['dyspensery-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 2119.56,
+    images: ['/images/products/LMD030.png', '/images/products/LMD030-2.png', '/images/products/LMD030-3.png'],
+    imageDescriptions: [
+      'Dyspenser etykiet Labelmate LD-115-RS z pokrętłem długości etykiety',
+      'LD-115-RS pod kątem — prowadnica materiału i wałek podający',
+      'LD-115-RS od przodu — okno odbioru etykiety i czujnik',
+    ],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'LMD030' },
+      { name: 'Typ', value: 'Dyspenser etykiet, odklejanie i podawanie' },
+      { name: 'Maks. szerokość etykiet', value: '115 mm' },
+      { name: 'Min. długość etykiety', value: '6 mm' },
+      { name: 'Obsługiwane etykiety', value: 'Zwykłe (czujnik odbiciowy)' },
+      { name: 'Maks. średnica rolki', value: '220 mm' },
+      { name: 'Maks. masa rolki', value: '6 kg' },
+      { name: 'Uchwyt gilzy', value: 'Trzon 35 mm, gilze od 38 do 76 mm' },
+      { name: 'Prędkość podawania', value: 'od 2,67 do 16,7 cm/s' },
+      { name: 'Klasa ochrony', value: 'IP50' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '223 × 305 × 308,5 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Stanowisko pakowania', 'Oznaczanie wyrobów w produkcji', 'Apteka i laboratorium', 'Kompletacja zamówień'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-ld-115-u', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
+    videos: [
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+  {
+    id: 'labelmate-ld-165-rs',
+    slug: 'labelmate-ld-165-rs',
+    name: 'Dyspenser etykiet Labelmate LD-165-RS',
+    shortDescription: 'Dyspenser etykiet Labelmate LD-165-RS: odkleja i podaje etykiety do 165 mm szerokości, od 6 mm długości, rolka do 220 mm.',
+    seoTitle: 'Labelmate LD-165-RS — dyspenser etykiet do 165 mm | TAKMA',
+    seoDescription: 'Dyspenser etykiet Labelmate LD-165-RS (LMD031): automatyczne odklejanie etykiet do 165 mm, od 6 mm długości, rolka do 220 mm, IP50. Cena netto B2B.',
+    description: `Szersza odmiana [LD-115-RS](/produkt/labelmate-ld-115-rs) — ta sama mechanika i ten sam czujnik odbiciowy, tylko na materiał do **165 mm** szerokości. To zakres, który pokrywa etykiety wysyłkowe i opakowania zbiorcze, gdzie 115 mm już nie wystarcza.
+
+Zasada pracy się nie zmienia: dyspenser odkleja etykietę od podkładu, zatrzymuje ją przed czujnikiem i po zdjęciu natychmiast podaje kolejną. Ustawienie to jedno pokrętło i **mniej niż 30 sekund**, prędkość regulowana od **2,67 do 16,7 cm/s**.
+
+Etykiety od **6 mm** długości, rolki do **220 mm** średnicy i **6 kg**, trzon 35 mm na gilze od 38 do 76 mm, klasa **IP50**. Wymiary 273 × 305 × 308,5 mm.
+
+Wersja RS obsługuje etykiety zwykłe. Do przezroczystych i czarnych przeznaczona jest [LD-165-U](/produkt/labelmate-ld-165-u).
+
+Producent robi też wykonania **XL** ze stali nierdzewnej, na rolki do 300 mm, oraz model **LD-225** na materiał do 225 mm — sprowadzamy je na zamówienie.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['dyspensery-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 2335.1,
+    images: ['/images/products/LMD031.png', '/images/products/LMD031-2.png', '/images/products/LMD031-3.png'],
+    imageDescriptions: [
+      'Dyspenser etykiet Labelmate LD-165-RS na materiał do 165 mm',
+      'LD-165-RS pod kątem — prowadnica materiału i wałek podający',
+      'LD-165-RS od przodu — okno odbioru etykiety i czujnik',
+    ],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'available' as const,
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'LMD031' },
+      { name: 'Typ', value: 'Dyspenser etykiet, odklejanie i podawanie' },
+      { name: 'Maks. szerokość etykiet', value: '165 mm' },
+      { name: 'Min. długość etykiety', value: '6 mm' },
+      { name: 'Obsługiwane etykiety', value: 'Zwykłe (czujnik odbiciowy)' },
+      { name: 'Maks. średnica rolki', value: '220 mm' },
+      { name: 'Maks. masa rolki', value: '6 kg' },
+      { name: 'Uchwyt gilzy', value: 'Trzon 35 mm, gilze od 38 do 76 mm' },
+      { name: 'Prędkość podawania', value: 'od 2,67 do 16,7 cm/s' },
+      { name: 'Klasa ochrony', value: 'IP50' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '273 × 305 × 308,5 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Stanowisko pakowania', 'Oznaczanie wyrobów w produkcji', 'Apteka i laboratorium', 'Kompletacja zamówień'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-ld-115-rs', 'labelmate-ld-165-u', 'labelmate-ld-115-u'],
+    videos: [
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+  {
+    id: 'labelmate-ld-115-u',
+    slug: 'labelmate-ld-115-u',
+    name: 'Dyspenser etykiet Labelmate LD-115-U',
+    shortDescription: 'Dyspenser etykiet Labelmate LD-115-U: wersja uniwersalna — odkleja także etykiety przezroczyste i czarne, do 115 mm szerokości.',
+    seoTitle: 'Labelmate LD-115-U — dyspenser do etykiet przezroczystych | TAKMA',
+    seoDescription: 'Dyspenser etykiet Labelmate LD-115-U (LMD035): wersja uniwersalna do etykiet przezroczystych i czarnych, do 115 mm, od 6 mm długości. Cena netto B2B.',
+    description: `Wersja uniwersalna dyspensera 115 mm. Różnica wobec [LD-115-RS](/produkt/labelmate-ld-115-rs) sprowadza się do czujnika: zamiast odbiciowego pracuje tu układ fotoelektryczny, który radzi sobie **z każdym rodzajem etykiety — również przezroczystą i czarną**.
+
+To nie jest niuans. Etykieta przezroczysta nie odbija światła tak jak papierowa, więc zwykły czujnik jej nie widzi i dyspenser albo się zatrzymuje, albo podaje dwie naraz. W kosmetykach, chemii i napojach, gdzie etykieta ma być niewidoczna na opakowaniu, wersja uniwersalna jest jedynym sensownym wyborem.
+
+Pozostałe parametry jak w wersji RS: etykiety do **115 mm** szerokości i od **6 mm** długości, rolki do **220 mm** i **6 kg**, trzon 35 mm na gilze 38–76 mm, prędkość od **2,67 do 16,7 cm/s**, klasa **IP50**, wymiary 223 × 305 × 308,5 mm. Ustawienie zajmuje mniej niż 30 sekund.
+
+Do szerszego materiału — [LD-165-U](/produkt/labelmate-ld-165-u). Wykonania **XL** ze stali nierdzewnej na rolki do 300 mm sprowadzamy na zamówienie.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['dyspensery-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 2478.8,
+    images: ['/images/products/LMD035.png', '/images/products/LMD035-2.png', '/images/products/LMD035-3.png'],
+    imageDescriptions: [
+      'Dyspenser etykiet Labelmate LD-115-U w wersji uniwersalnej',
+      'LD-115-U pod kątem — czujnik fotoelektryczny i prowadnica',
+      'LD-115-U od przodu — okno odbioru etykiety',
+    ],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'on-order' as const,
+    isNew: true,
+    isBestseller: true,
+    specifications: [
+      { name: 'Part Number', value: 'LMD035' },
+      { name: 'Typ', value: 'Dyspenser etykiet, odklejanie i podawanie' },
+      { name: 'Maks. szerokość etykiet', value: '115 mm' },
+      { name: 'Min. długość etykiety', value: '6 mm' },
+      { name: 'Obsługiwane etykiety', value: 'Wszystkie, także przezroczyste i czarne (czujnik fotoelektryczny)' },
+      { name: 'Maks. średnica rolki', value: '220 mm' },
+      { name: 'Maks. masa rolki', value: '6 kg' },
+      { name: 'Uchwyt gilzy', value: 'Trzon 35 mm, gilze od 38 do 76 mm' },
+      { name: 'Prędkość podawania', value: 'od 2,67 do 16,7 cm/s' },
+      { name: 'Klasa ochrony', value: 'IP50' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '223 × 305 × 308,5 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Stanowisko pakowania', 'Oznaczanie wyrobów w produkcji', 'Apteka i laboratorium', 'Kompletacja zamówień'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-ld-115-rs', 'labelmate-ld-165-u', 'labelmate-ld-165-rs'],
+    videos: [
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+  {
+    id: 'labelmate-ld-165-u',
+    slug: 'labelmate-ld-165-u',
+    name: 'Dyspenser etykiet Labelmate LD-165-U',
+    shortDescription: 'Dyspenser etykiet Labelmate LD-165-U: wersja uniwersalna do etykiet przezroczystych i czarnych, materiał do 165 mm szerokości.',
+    seoTitle: 'Labelmate LD-165-U — dyspenser 165 mm do etykiet przezroczystych | TAKMA',
+    seoDescription: 'Dyspenser etykiet Labelmate LD-165-U (LMD036): wersja uniwersalna do etykiet przezroczystych i czarnych, materiał do 165 mm, rolka do 220 mm. Cena netto.',
+    description: `Najszerszy dyspenser Labelmate, jaki mamy na stanie, i zarazem wersja uniwersalna. Obsługuje materiał do **165 mm** i **każdy rodzaj etykiety, także przezroczystą i czarną** — dzięki czujnikowi fotoelektrycznemu zamiast odbiciowego.
+
+Jedna różnica wobec pozostałych modeli jest istotna przy doborze: minimalna długość etykiety wynosi tu **20 mm**, a nie 6 mm jak w [LD-115-U](/produkt/labelmate-ld-115-u) i wersjach RS. Przy bardzo krótkich etykietach trzeba więc sięgnąć po model 115 mm.
+
+Reszta bez zmian: rolki do **220 mm** średnicy i **6 kg**, trzon 35 mm na gilze od 38 do 76 mm, prędkość podawania od **2,67 do 16,7 cm/s**, klasa **IP50**, wymiary 273 × 305 × 308,5 mm, ustawienie poniżej 30 sekund.
+
+Jeśli etykiety są zwykłe, papierowe, taniej wypada [LD-165-RS](/produkt/labelmate-ld-165-rs). Wykonania **XL** ze stali nierdzewnej i model **LD-225** na materiał do 225 mm sprowadzamy na zamówienie.
+
+Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['dyspensery-etykiet'],
+    manufacturerId: 'labelmate',
+    priceFrom: 2694.35,
+    images: ['/images/products/LMD036.png', '/images/products/LMD036-2.png', '/images/products/LMD036-3.png'],
+    imageDescriptions: [
+      'Dyspenser etykiet Labelmate LD-165-U w wersji uniwersalnej',
+      'LD-165-U pod kątem — czujnik fotoelektryczny i prowadnica',
+      'LD-165-U od przodu — okno odbioru etykiety',
+    ],
+    tags: ['produkcja', 'magazyn', 'retail'],
+    availability: 'on-order' as const,
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'LMD036' },
+      { name: 'Typ', value: 'Dyspenser etykiet, odklejanie i podawanie' },
+      { name: 'Maks. szerokość etykiet', value: '165 mm' },
+      { name: 'Min. długość etykiety', value: '20 mm' },
+      { name: 'Obsługiwane etykiety', value: 'Wszystkie, także przezroczyste i czarne (czujnik fotoelektryczny)' },
+      { name: 'Maks. średnica rolki', value: '220 mm' },
+      { name: 'Maks. masa rolki', value: '6 kg' },
+      { name: 'Uchwyt gilzy', value: 'Trzon 35 mm, gilze od 38 do 76 mm' },
+      { name: 'Prędkość podawania', value: 'od 2,67 do 16,7 cm/s' },
+      { name: 'Klasa ochrony', value: 'IP50' },
+      { name: 'Wymiary (szer. × gł. × wys.)', value: '273 × 305 × 308,5 mm' },
+      { name: 'Zasilanie', value: '100–240 V, 50 Hz / 15 V DC 4,33 A' },
+      { name: 'Gwarancja', value: '2 lata (zasilacz: 1 rok)' },
+    ],
+    applications: ['Stanowisko pakowania', 'Oznaczanie wyrobów w produkcji', 'Apteka i laboratorium', 'Kompletacja zamówień'],
+    compatibleAccessories: [],
+    relatedProducts: ['labelmate-ld-115-u', 'labelmate-ld-165-rs', 'labelmate-ld-115-rs'],
+    videos: [
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
+    createdAt: '2026-09-21',
+  },
+]
+
 const rawProductList: Product[] = [
   ...desktopPrinters,
   ...industrialLightPrinters,
@@ -68878,6 +69130,7 @@ const rawProductList: Product[] = [
   ...m3UL30,
   ...m3UL30Accessories,
   ...labelmateRewinders,
+  ...labelmateDyspensery,
 ]
 
 // ── Migracja TT: usuń 139 starych produktów (1 SKU = 1 produkt) zastąpionych

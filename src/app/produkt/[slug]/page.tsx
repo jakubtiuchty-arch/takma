@@ -369,7 +369,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Nawijaki zewnętrzne to osobne urządzenia, nie części do drukarki — dostają własną
   // sekcję z jednym zdaniem wyjaśnienia, zamiast ginąć wśród głowic albo tuszy.
   const relatedRewinders = allRelated.filter((p) => p!.subcategoryIds?.includes('nawijarki-do-etykiet'))
-  const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie' && !p!.subcategoryIds?.includes('nawijarki-do-etykiet'))
+  const relatedDispensers = allRelated.filter((p) => p!.subcategoryIds?.includes('dyspensery-etykiet'))
+  const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie' && !p!.subcategoryIds?.includes('nawijarki-do-etykiet') && !p!.subcategoryIds?.includes('dyspensery-etykiet'))
 
   // Zestaw startowy: karta drukarki pokazuje boks zestawu, którego jest składnikiem (tylko urządzenia, nie taśmy/karty)
   const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems
@@ -1295,6 +1296,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 </a>
               )}
+              {relatedDispensers.length > 0 && (
+                <a
+                  href="#dyspensery"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Dyspensery
+                </a>
+              )}
               {relatedRewinders.length > 0 && (
                 <a
                   href="#nawijaki"
@@ -1735,6 +1744,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
                 products={relatedAccessories as typeof products}
                 initialLimit={4}
+                showDualButtons
+              />
+            )}
+
+            {/* Dyspensery — osobne urządzenia stanowiskowe, nie części drukarki */}
+            {relatedDispensers.length > 0 && (
+              <RelatedProducts
+                id="dyspensery"
+                title="Dyspensery etykiet"
+                lead="Dyspenser odkleja etykietę od podkładu i zatrzymuje ją gotową do wzięcia, a po zdjęciu podaje następną. Przydaje się tam, gdzie etykiety nakleja się ręcznie — przy pakowaniu, w aptece, na kontroli."
+                products={relatedDispensers as typeof products}
                 showDualButtons
               />
             )}

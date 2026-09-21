@@ -1175,6 +1175,43 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
+  'dyspensery-etykiet': [
+    {
+      specKey: 'etykiety',
+      label: 'Rodzaj etykiet',
+      description: 'Czym różnią się wersje RS i U.\n• Zwykłe — czujnik odbiciowy, wystarczy do etykiet papierowych i foliowych z nadrukiem\n• Także przezroczyste i czarne — czujnik fotoelektryczny; etykieta przezroczysta nie odbija światła, więc zwykły czujnik jej nie widzi',
+      derived: [
+        { value: 'Zwykłe (wersja RS)', pattern: 'odbiciowy', specs: ['Obsługiwane etykiety'] },
+        { value: 'Także przezroczyste i czarne (wersja U)', pattern: 'fotoelektryczny', specs: ['Obsługiwane etykiety'] },
+      ],
+    },
+    {
+      specKey: 'szerokosc',
+      label: 'Szerokość etykiet',
+      description: 'Najszersza etykieta, którą dyspenser odklei.\n• do 115 mm — etykiety produktowe i apteczne\n• do 165 mm — etykiety wysyłkowe i opakowania zbiorcze',
+      derived: [
+        { value: 'do 115 mm', pattern: '115 ?mm', specs: ['Maks. szerokość etykiet'] },
+        { value: 'do 165 mm', pattern: '165 ?mm', specs: ['Maks. szerokość etykiet'] },
+      ],
+    },
+    {
+      specKey: 'dlugosc',
+      label: 'Min. długość etykiety',
+      description: 'Najkrótsza etykieta, którą urządzenie rozpozna. Przy bardzo małych etykietach ma to znaczenie rozstrzygające.',
+      derived: [
+        { value: 'od 6 mm', pattern: '^6 ?mm', specs: ['Min. długość etykiety'] },
+        { value: 'od 20 mm', pattern: '^20 ?mm', specs: ['Min. długość etykiety'] },
+      ],
+    },
+    {
+      specKey: 'cena',
+      label: 'Cena netto',
+      derived: [
+        { value: 'do 2 400 zł', priceMax: 2400 },
+        { value: 'powyżej 2 400 zł', priceMin: 2400 },
+      ],
+    },
+  ],
   'nawijarki-do-etykiet': [
     {
       specKey: 'typ',

@@ -97,6 +97,7 @@ const navigation: NavItem[] = [
       { name: 'Drukarki kart', href: '/drukarki-kart' },
       { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
       { name: 'Nawijarki do etykiet', href: '/nawijarki-do-etykiet' },
+      { name: 'Dyspensery etykiet', href: '/dyspensery-etykiet' },
     ],
   },
   {
