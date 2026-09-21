@@ -3749,6 +3749,138 @@ Tusze ColorWorks spełniają wymagania dla materiałów do kontaktu z żywności
       { name: 'Policz zużycie', text: 'Etykiety na rolce podziel przez dzienny nakład; zamów tyle rolek, żeby zapas starczył na czas dostawy plus dwa tygodnie.' },
     ],
   },
+  'dyspensery-etykiet': {
+    updatedAt: '2026-09-21',
+    definition: {
+      heading: 'Czym jest dyspenser etykiet',
+      content: 'Dyspenser etykiet, nazywany też podajnikiem, odkleja etykietę od podkładu i zatrzymuje ją tuż nad czujnikiem, gotową do wzięcia. Kiedy operator ją zdejmie, urządzenie natychmiast podaje następną. Rolka zostaje na trzonie, podkład nawija się osobno, a ręce mają do wykonania tylko jedną czynność: przyłożyć etykietę do produktu.\n\nRóżnica wobec pracy z gołej rolki jest prosta do policzenia. Oderwanie etykiety z podkładu i podważenie rogu paznokciem zajmuje kilka sekund i tyle samo razy dziennie psuje etykietę albo wydłuża pakowanie. Dyspenser skraca ten ruch do jednego chwytu, a przy kilkuset etykietach na zmianę różnica robi się widoczna w czasie trwania procesu.\n\nUrządzenia z tej kategorii nie należy mylić z <strong>aplikatorem</strong>, który nakleja etykietę na produkt samodzielnie. Dyspenser wykonuje krok wcześniej: przygotowuje etykietę, a nakleja ją człowiek.\n\nPosiadamy w ofercie cztery modele belgijskiego producenta <a href="https://labelmate.com" rel="nofollow">Labelmate</a> w dwóch szerokościach i dwóch wersjach czujnika.',
+    },
+    comparisonTable: {
+      heading: 'Zestawienie czterech modeli Labelmate',
+      intro: 'Modele różnią się dwiema rzeczami: szerokością obsługiwanego materiału i rodzajem czujnika. Reszta konstrukcji jest wspólna.',
+      columns: ['Szerokość etykiet', 'Min. długość', 'Rodzaj etykiet', 'Rolka', 'Wymiary'],
+      rows: [
+        { model: 'LD-115-RS', href: '/produkt/labelmate-ld-115-rs', role: 'Podstawowy wybór do 115 mm', cells: ['do 115 mm', 'od 6 mm', 'Zwykłe', '220 mm / 6 kg', '223 × 305 × 308,5 mm'] },
+        { model: 'LD-115-U', href: '/produkt/labelmate-ld-115-u', role: 'Etykiety przezroczyste i czarne', cells: ['do 115 mm', 'od 6 mm', 'Wszystkie', '220 mm / 6 kg', '223 × 305 × 308,5 mm'] },
+        { model: 'LD-165-RS', href: '/produkt/labelmate-ld-165-rs', role: 'Szerszy materiał', cells: ['do 165 mm', 'od 6 mm', 'Zwykłe', '220 mm / 6 kg', '273 × 305 × 308,5 mm'] },
+        { model: 'LD-165-U', href: '/produkt/labelmate-ld-165-u', role: 'Szeroki materiał, każdy rodzaj etykiety', cells: ['do 165 mm', 'od 20 mm', 'Wszystkie', '220 mm / 6 kg', '273 × 305 × 308,5 mm'] },
+      ],
+      note: 'Wszystkie modele mają trzon 35 mm przyjmujący gilze od 38 do 76 mm, prędkość podawania od 2,67 do 16,7 cm/s, klasę ochrony IP50 i dwa lata gwarancji producenta, z rocznym okresem na zasilacz.',
+    },
+    buyingGuide: {
+      heading: 'Jak dobrać dyspenser etykiet',
+      items: [
+        'Rodzaj etykiety przesądza o wersji — wersja RS ma czujnik odbiciowy i widzi etykiety papierowe oraz foliowe z nadrukiem. Etykieta przezroczysta albo czarna nie odbija światła w sposób, jakiego ten czujnik oczekuje, więc urządzenie zatrzymuje się lub podaje dwie sztuki naraz. W takim procesie konieczna jest wersja U z czujnikiem fotoelektrycznym.',
+        'Szerokość materiału, a nie samej etykiety — dyspenser prowadzi całą wstęgę razem z podkładem. Modele 115 mm pokrywają etykiety produktowe i apteczne, modele 165 mm — wysyłkowe i oznaczenia opakowań zbiorczych.',
+        'Najkrótsza etykieta w asortymencie — trzy modele rozpoznają etykiety od 6 mm długości, natomiast LD-165-U wymaga co najmniej 20 mm. Przy drobnych etykietach na fiolki czy próbki ta jedna liczba rozstrzyga o wyborze modelu.',
+        'Średnica i masa rolki — wszystkie cztery modele przyjmują rolkę do 220 mm średnicy i 6 kg. Przy większym zapasie potrzebne są wykonania XL na rolki do 300 mm, sprowadzane na zamówienie.',
+        'Średnica gilzy — trzon ma 35 mm i przyjmuje gilze od 38 do 76 mm, czyli oba formaty spotykane w drukarkach etykiet. Osobnych adapterów nie trzeba dokupywać.',
+        'Miejsce na stanowisku — modele 115 mm zajmują 223 × 305 mm blatu, modele 165 mm o pięć centymetrów więcej na szerokość. Urządzenie powinno stać po stronie ręki, którą operator bierze etykietę.',
+        'Warunki pracy — klasa IP50 oznacza ochronę przed kurzem, ale nie przed zachlapaniem. Do mokrych stref pakowania potrzebne jest osłonięte stanowisko.',
+      ],
+    },
+    expertAuthority: 'TAKMA prowadzi sprzedaż i serwis sprzętu do znakowania od ponad dwudziestu lat, a dyspensery trafiają najczęściej tam, gdzie etykieta powstaje na drukarce, ale nakleja ją człowiek: do pakowni sklepów internetowych, na kontrolę jakości, do aptek i laboratoriów. Prosimy o kontakt z podaniem szerokości i najkrótszej długości etykiety oraz informacji, czy w asortymencie są etykiety przezroczyste — te trzy dane wystarczą, aby wskazać właściwy model.',
+    technicalDeepDive: `Czujnik siedzi pod wstęgą i wykrywa krawędź natarcia etykiety. W wersji RS jest to układ odbiciowy: nadajnik wysyła światło, a odbiornik mierzy, ile go wróciło. Papier odbija dużo, prześwit między etykietami znacznie mniej — na tej różnicy opiera się rozpoznanie. Wersja U pracuje na układzie fotoelektrycznym, który mierzy przepuszczalność materiału, a nie jego połysk, dzięki czemu radzi sobie z etykietą przezroczystą i z czarną.
+
+Ustawienie sprowadza się do jednego pokrętła długości etykiety i zajmuje mniej niż pół minuty. Czujnik jest przesuwany w poprzek wstęgi, więc urządzenie obsługuje także etykiety nietypowo ukształtowane i układy, w których obok siebie biegną dwa pasy etykiet. Prowadnica materiału wchodzi w skład wyposażenia standardowego i utrzymuje wstęgę w osi.
+
+Prędkość podawania reguluje się płynnie od 2,67 do 16,7 cm/s. Wolniejsze ustawienie sprawdza się przy etykietach dużych i sztywnych, które przy szybkim podaniu potrafią odskoczyć; szybsze — przy drobnych etykietach i wysokim tempie pakowania.
+
+Osobną decyzją jest wybór między dyspenserem a odklejakiem wbudowanym w drukarkę. Odklejak pracuje tylko w trakcie druku i wstrzymuje kolejny wydruk do czasu zdjęcia etykiety, więc wiąże tempo pakowania z tempem drukarki. Dyspenser jest niezależny: rolkę można zadrukować wcześniej, całą serią, a etykiety wydawać wtedy, kiedy produkt dojedzie na stanowisko. Przy pakowaniu partiami to zwykle wygodniejszy układ.`,
+    useCases: [
+      {
+        title: 'Pakownia sklepu internetowego — 400 paczek dziennie',
+        description: 'Etykiety produktowe drukowane są rano całą serią, a dyspenser wydaje je w tempie pakowania. Operator ma obie ręce przy paczce i tylko sięga po gotową etykietę. Wcześniej ten sam ruch wymagał odnalezienia rogu na podkładzie i podważenia go paznokciem.',
+        icon: 'logistyka',
+      },
+      {
+        title: 'Kosmetyki — etykiety przezroczyste na butelkach',
+        description: 'Etykieta ma być niewidoczna na opakowaniu, więc podłoże jest przezroczyste. Czujnik odbiciowy takiej etykiety nie rozpozna, dlatego na stanowisko wchodzi wersja U z czujnikiem fotoelektrycznym.',
+        icon: 'retail',
+      },
+      {
+        title: 'Apteka i laboratorium — drobne etykiety na fiolki',
+        description: 'Etykiety mają po kilkanaście milimetrów długości, a nakleja się je na okrągłe, wąskie opakowania. Liczy się model rozpoznający etykiety od 6 mm, czyli LD-115-RS albo LD-115-U.',
+        icon: 'produkcja',
+      },
+      {
+        title: 'Produkcja — oznaczenia opakowań zbiorczych',
+        description: 'Etykiety wysyłkowe o szerokości 150 mm nie mieszczą się w modelu 115 mm. Stanowisko dostaje LD-165, a rolka o średnicy 220 mm wystarcza na zmianę bez wymiany.',
+        icon: 'magazyn-wms',
+      },
+    ],
+    uniqueInsights: {
+      heading: 'Zagadnienia pominięte w specyfikacjach',
+      items: [
+        {
+          title: 'Etykieta przezroczysta zatrzymuje zwykły dyspenser',
+          text: 'To najczęstsza przyczyna reklamacji w tej kategorii. Urządzenie działa bez zarzutu na etykietach papierowych, a po zmianie zlecenia na folię przezroczystą zaczyna podawać dwie sztuki naraz albo staje. Przyczyna leży w zasadzie działania czujnika, nie w ustawieniu, więc nie da się jej obejść regulacją.',
+        },
+        {
+          title: 'Minimalna długość etykiety różni się między modelami tej samej serii',
+          text: 'Trzy z czterech modeli rozpoznają etykiety od 6 mm, ale LD-165-U wymaga 20 mm. Przy asortymencie mieszanym, w którym obok etykiet wysyłkowych są drobne oznaczenia, wybór szerszego modelu potrafi zamknąć drogę do tych mniejszych.',
+        },
+        {
+          title: 'Dyspenser nie zastępuje odklejaka w drukarce — rozwiązuje inny problem',
+          text: 'Odklejak wiąże tempo pakowania z tempem druku, bo drukarka czeka na zdjęcie etykiety. Dyspenser pozwala zadrukować rolkę wcześniej i wydawać etykiety niezależnie. Przy pakowaniu partiami to dwie różne organizacje pracy, nie dwa sposoby na to samo.',
+        },
+        {
+          title: 'Czujnik przesuwa się w poprzek wstęgi',
+          text: 'Dzięki temu urządzenie obsługuje etykiety o nietypowych kształtach i wstęgi z dwoma pasami etykiet obok siebie. W praktyce oznacza to, że jeden dyspenser obsłuży asortyment, który przy czujniku stałym wymagałby dwóch ustawień albo dwóch urządzeń.',
+        },
+      ],
+    },
+    faq: [
+      {
+        question: 'Czym różni się dyspenser od aplikatora etykiet?',
+        answer: 'Dyspenser odkleja etykietę od podkładu i podaje ją gotową do wzięcia, a nakleja ją człowiek. Aplikator nakłada etykietę na produkt samodzielnie, zwykle na linii produkcyjnej. To dwie różne klasy urządzeń i różne pieniądze — w tej kategorii mamy dyspensery.',
+      },
+      {
+        question: 'Czym różnią się wersje RS i U?',
+        answer: 'Rodzajem czujnika. Wersja RS ma czujnik odbiciowy i obsługuje etykiety zwykłe, papierowe i foliowe z nadrukiem. Wersja U ma czujnik fotoelektryczny, który rozpoznaje także etykiety przezroczyste i czarne. Jeśli w asortymencie są etykiety przezroczyste, wersja U jest jedynym działającym wyborem.',
+      },
+      {
+        question: 'Czy dyspenser zastąpi odklejak w drukarce?',
+        answer: 'Rozwiązuje inny problem. Odklejak działa w trakcie druku i wstrzymuje kolejną etykietę do czasu zdjęcia poprzedniej, więc tempo pakowania zależy od drukarki. Dyspenser pracuje niezależnie: rolkę można zadrukować wcześniej całą serią, a etykiety wydawać w tempie stanowiska.',
+      },
+      {
+        question: 'Jaką gilzę i jaką rolkę przyjmuje dyspenser?',
+        answer: 'Trzon ma 35 mm i przyjmuje gilze od 38 do 76 mm, czyli oba formaty stosowane w drukarkach etykiet. Rolka może mieć do 220 mm średnicy i 6 kg. Wykonania XL na rolki do 300 mm producent robi na zamówienie.',
+      },
+      {
+        question: 'Ile trwa przygotowanie urządzenia do pracy?',
+        answer: 'Poniżej trzydziestu sekund. Zakłada się rolkę, przeprowadza wstęgę przez prowadnicę i ustawia jedno pokrętło długości etykiety. Przy zmianie na inny format regulacja ogranicza się do tego samego pokrętła.',
+      },
+      {
+        question: 'Czy dyspenser poradzi sobie z etykietami o nietypowym kształcie?',
+        answer: 'Tak, ponieważ czujnik przesuwa się w poprzek wstęgi i można go ustawić w miejscu, w którym etykieta ma pełną szerokość. Ta sama regulacja obsługuje wstęgi z dwoma pasami etykiet obok siebie.',
+      },
+    ],
+    comparisons: [
+      {
+        title: 'Wersja RS czy U?',
+        verdict: 'Etykiety papierowe — RS. Przezroczyste albo czarne w asortymencie — U.',
+        content: 'Wersja RS jest tańsza o około 350 zł i w zupełności wystarcza, gdy wszystkie etykiety są papierowe lub foliowe z pełnym nadrukiem. Wersja U ma czujnik fotoelektryczny i rozpoznaje każdy rodzaj materiału. Jeśli choć jedno zlecenie w roku obejmuje etykiety przezroczyste, dopłata zwraca się przy pierwszym takim zleceniu.',
+      },
+      {
+        title: 'Model 115 mm czy 165 mm?',
+        verdict: 'Etykiety produktowe — 115 mm. Wysyłkowe i opakowania zbiorcze — 165 mm.',
+        content: 'Szerszy model kosztuje około 220 zł więcej i zajmuje o pięć centymetrów więcej blatu. Warto wziąć go wtedy, gdy w asortymencie są etykiety powyżej 115 mm — w przeciwnym razie nic nie daje. Uwaga na LD-165-U: wymaga etykiet od 20 mm długości, podczas gdy pozostałe trzy modele rozpoznają je od 6 mm.',
+      },
+      {
+        title: 'Dyspenser czy drukarka z odklejakiem?',
+        verdict: 'Druk na bieżąco — odklejak. Druk partiami i pakowanie osobno — dyspenser.',
+        content: 'Odklejak to opcja w drukarce, zwykle za 300–600 zł, i działa wyłącznie podczas druku. Dyspenser jest osobnym urządzeniem za 2 100–2 700 zł, ale uniezależnia wydawanie etykiet od drukowania. Gdy etykiety powstają rano całą serią, a pakowanie trwa cały dzień, odklejak nie pomoże — drukarka musiałaby stać włączona i czekać przy każdej sztuce.',
+      },
+    ],
+    howToSteps: [
+      { name: 'Ustalenie rodzaju etykiet', text: 'Podstawą wyboru wersji jest materiał. Etykiety papierowe i foliowe z nadrukiem obsługuje wersja RS; przezroczyste i czarne wymagają wersji U.' },
+      { name: 'Pomiar szerokości wstęgi', text: 'Mierzy się cały materiał razem z podkładem, a nie samą etykietę. Do 115 mm wystarczy model mniejszy, powyżej — model 165 mm.' },
+      { name: 'Sprawdzenie najkrótszej etykiety', text: 'Trzy modele rozpoznają etykiety od 6 mm, LD-165-U od 20 mm. Przy asortymencie z drobnymi etykietami ta liczba rozstrzyga o modelu.' },
+      { name: 'Ustawienie długości etykiety', text: 'Po założeniu rolki i przeprowadzeniu wstęgi przez prowadnicę reguluje się jedno pokrętło, aż etykieta zatrzymuje się w całości nad czujnikiem.' },
+      { name: 'Dobranie prędkości do stanowiska', text: 'Zakres od 2,67 do 16,7 cm/s. Duże i sztywne etykiety podaje się wolniej, żeby nie odskakiwały; drobne — szybciej, w tempie pakowania.' },
+    ],
+  },
   'nawijarki-do-etykiet': {
     updatedAt: '2026-09-20',
     definition: {
