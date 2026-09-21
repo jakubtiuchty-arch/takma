@@ -8,6 +8,21 @@ export function absoluteProductImageUrl(image: string): string {
   return new URL(image, SITE_URL).href
 }
 
+/**
+ * Data ważności ceny w ofercie — rok od wygenerowania strony.
+ *
+ * Google traktuje `priceValidUntil` jako pole zalecane w `Offer`: bez niego Search Console
+ * zgłasza ostrzeżenie, a data z przeszłości potrafi sprawić, że cena w ogóle przestaje się
+ * pokazywać w wyniku wyszukiwania. Rok do przodu jest bezpieczny w obie strony.
+ *
+ * Trzymamy to w jednym miejscu, bo oferty budują dwa moduły: ten i `product-variant-offers`.
+ */
+export function cenaWaznaDo(): string {
+  const zaRok = new Date()
+  zaRok.setFullYear(zaRok.getFullYear() + 1)
+  return zaRok.toISOString().split('T')[0]
+}
+
 /** Te same dane ręcznej oferty dla renderowania serwerowego, UI i JSON-LD. */
 export function getMagicardStock(product: Product): StockInfo[] | undefined {
   if (product.manufacturerId !== 'magicard') return undefined
@@ -48,6 +63,7 @@ export function getMagicardOffer(product: Product) {
     sku: stock.partNumber,
     price: stock.priceBrutto!.toFixed(2),
     priceCurrency: 'PLN',
+    priceValidUntil: cenaWaznaDo(),
     availability: stock.totalStock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
     itemCondition: 'https://schema.org/NewCondition',
     seller: { '@type': 'Organization' as const, name: 'TAKMA', url: SITE_URL },

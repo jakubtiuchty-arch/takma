@@ -1,7 +1,7 @@
 import type { Product } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { getManufacturerById } from '@/data/manufacturers'
-import { absoluteProductImageUrl } from './magicard-offer'
+import { absoluteProductImageUrl, cenaWaznaDo } from './magicard-offer'
 
 /** Marka z karty produktu. Wcześniej stała „Zebra" — po dodaniu Epsona i Labelmate do ofert
  *  żywych ich karty ogłaszały w danych strukturalnych cudzą markę. */
@@ -27,6 +27,7 @@ function ofertaZeStanu(row: StockInfo | undefined, url: string) {
     url,
     price: (Math.round(row.price * 123) / 100).toFixed(2),
     priceCurrency: 'PLN',
+    priceValidUntil: cenaWaznaDo(),
     availability: row.availability === 'available' ? 'https://schema.org/InStock'
       : row.availability === 'on-order' ? 'https://schema.org/BackOrder' : 'https://schema.org/OutOfStock',
     itemCondition: 'https://schema.org/NewCondition',
