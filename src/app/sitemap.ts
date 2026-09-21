@@ -76,6 +76,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'tusze-do-kolorowych-drukarek': new Date('2026-09-20'),
     'etykiety-do-kolorowych-drukarek': new Date('2026-09-20'),
     'termotransferowe-drukarki-etykiet': new Date('2026-09-20'),
+    'nawijarki-do-etykiet': new Date('2026-09-21'),
+    'dyspensery-etykiet': new Date('2026-09-21'),
   }
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))

@@ -15,13 +15,28 @@ export const LIVE_OFFER_SLUGS = new Set([
   // Bez tego kwota doklejała się dopiero w przeglądarce, a pierwszy HTML miał „? netto”.
   'epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e',
   'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e',
+  // Nawijarki, odwijaki i dyspensery Labelmate — ten sam powód co przy Epsonach:
+  // bez tego w HTML z serwera zamiast kwoty stało „Sprawdzanie stanów magazynowych…”,
+  // a schemat produktu podawał cenę netto zamiast brutto jak reszta ofert żywych.
+  'labelmate-mc-11', 'labelmate-mc-pro-chuck',
+  'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck', 'labelmate-cat-3-10-inches',
+  'labelmate-uni-cat-standard', 'labelmate-uni-cat-ach', 'labelmate-uni-cat-chuck',
+  'labelmate-ld-115-rs', 'labelmate-ld-165-rs', 'labelmate-ld-115-u', 'labelmate-ld-165-u',
 ])
 
 /** Jeden odczyt na render: metadata, JSON-LD i HTML otrzymują ten sam zestaw ofert. */
 export const getProductStock = cache(async (slug: string): Promise<StockInfo[] | undefined> => {
   if (!LIVE_OFFER_SLUGS.has(slug)) return undefined
   const product = getProductBySlug(slug)
-  const partNumbers = product?.variants?.map(variant => variant.partNumber) ?? []
+  // Karty bez wariantów (nawijarki i dyspensery Labelmate) mają jeden numer katalogowy
+  // w specyfikacji. Bez tej gałęzi lista numerów była pusta i oferta żywa nie powstawała,
+  // więc dopisanie slugu wyżej samo z siebie nic by nie dało.
+  const partNumbers = product?.variants?.length
+    ? product.variants.map(variant => variant.partNumber)
+    : [product?.specifications?.find(spec => spec.name === 'Part Number')?.value].filter(
+        (pn): pn is string => Boolean(pn),
+      )
+  if (partNumbers.length === 0) return undefined
   const response = await lookupUnifiedStock(partNumbers)
   // Do komponentów klienta nie przekazujemy cen zakupu u dystrybutora.
   return (response.body.results ?? []).map(({ ingramPrice: _purchasePrice, ...stock }) => stock)

@@ -343,6 +343,17 @@ export async function middleware(request: NextRequest) {
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy
     // Slugi zebra-* / datalogic-* to produkty lub akcesoria na nowej stronie
     // (stare WordPress URLe Zebra obsługiwane są redirectami w next.config.mjs PRZED middleware)
+    // Wycofane karty, dla których mamy dziś całą kategorię — lepszy cel niż strona przebudowy,
+    // która ma noindex. Nawijak Godex T10 zbierał na tym adresie wyświetlenia na „nawijak etykiet”,
+    // a trafiał przez trzy przeskoki na stronę wyłączoną z indeksu.
+    const WYCOFANE_DO_KATEGORII: Record<string, string> = {
+      'nawijak-etykiet-godex-t10': '/nawijarki-do-etykiet',
+    }
+    const kategoriaZastepcza = WYCOFANE_DO_KATEGORII[slug]
+    if (kategoriaZastepcza && !existingSlugs.has(slug)) {
+      return NextResponse.redirect(new URL(kategoriaZastepcza, request.url), 301)
+    }
+
     if (!existingSlugs.has(slug)) {
       const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-')
 
