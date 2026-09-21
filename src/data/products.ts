@@ -67678,7 +67678,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       'epson-etykiety-c33s045740',
       'epson-etykiety-c33s045741',
     ],
-    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000'],
+    relatedAccessories: ['epson-sjic36p-k', 'epson-sjic36p-mk', 'epson-sjic36p-c', 'epson-sjic36p-m', 'epson-sjic36p-y', 'epson-sjmb6000', 'labelmate-uni-cat-chuck'],
     comparison: {
       title: 'ColorWorks C6500 a C6000',
       models: [
@@ -68560,6 +68560,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     videos: [
       { url: 'https://www.youtube-nocookie.com/embed/v5iot6-nKjw', title: 'Praca z drukarką Epson ColorWorks · Labelmate, EN', published: '2022-03-30', duration: 'PT2M23S' },
       { url: 'https://www.youtube-nocookie.com/embed/pOouPvgbLDE', title: 'Konfiguracja z drukarką Zebra · Labelmate, EN', published: '2026-03-11', duration: 'PT1M30S' },
+      { url: 'https://vimeo.com/1169849965', title: 'Rozpakowanie i pierwsze uruchomienie · Labelmate, EN', poster: '/images/products/labelmate-uni-cat-unboxing-poster.webp', published: '2026-03-03', duration: 'PT2M0S' },
+      { url: 'https://vimeo.com/445543954', title: 'UNI-CAT — przegląd funkcji · Labelmate, EN', poster: '/images/products/labelmate-uni-cat-przeglad-poster.webp', published: '2020-08-07', duration: 'PT3M21S' },
     ],
     downloads: [
       { name: 'Karta katalogowa Labelmate UNI-CAT (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-uni-cat-karta-katalogowa.pdf', size: '0,9 MB' },
@@ -68577,7 +68579,7 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
 
 Elektronika pozostaje wspólna z modelem [UNI-CAT-STANDARD](/produkt/labelmate-uni-cat-standard): samoczynne rozpoznanie trybu nawijarka/odwijak, obsługa cofania nośnika w drukarkach wrażliwych na naciąg, dobór prędkości do **80 cm/s**, nawijanie do wewnątrz i na zewnątrz oraz dotykowy panel ze wskaźnikami LED.
 
-Trzon Quick-Chuck ma średnicę **76 mm** i długość 170 mm, co przekłada się na nośnik do **170 mm** szerokości; producent wykonuje również trzony 220 i 270 mm. Rolka do **300 mm** średnicy i **10 kg** — najwyższa dopuszczalna masa nawoju wśród nawijarek w naszej ofercie.
+Trzon Quick-Chuck ma średnicę **76 mm** i długość 170 mm, co przekłada się na nośnik do **170 mm** szerokości. Producent wykonuje również trzony **220 i 270 mm** (LMX484 i LMX485) — ten pierwszy obejmuje pełną szerokość nośnika drukarki [ColorWorks C6500](/produkt/epson-colorworks-c6500), która przyjmuje materiał do 215,9 mm. Trzony sprowadzamy na zamówienie. Rolka do **300 mm** średnicy i **10 kg** — najwyższa dopuszczalna masa nawoju wśród nawijarek w naszej ofercie.
 
 Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     categoryId: 'akcesoria',
@@ -68610,6 +68612,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     videos: [
       { url: 'https://www.youtube-nocookie.com/embed/v5iot6-nKjw', title: 'Praca z drukarką Epson ColorWorks · Labelmate, EN', published: '2022-03-30', duration: 'PT2M23S' },
       { url: 'https://www.youtube-nocookie.com/embed/pOouPvgbLDE', title: 'Konfiguracja z drukarką Zebra · Labelmate, EN', published: '2026-03-11', duration: 'PT1M30S' },
+      { url: 'https://vimeo.com/923279406', title: 'Praca z drukarką Epson ColorWorks C6500 · Labelmate, EN', poster: '/images/products/labelmate-uni-cat-chuck-c6500-poster.webp', published: '2024-03-14', duration: 'PT1M15S' },
+      { url: 'https://vimeo.com/536715422', title: 'Kontrola i weryfikacja etykiet na nawoju · Labelmate, EN', poster: '/images/products/labelmate-uni-cat-chuck-kontrola-poster.webp', published: '2021-04-14', duration: 'PT1M59S' },
     ],
     downloads: [
       { name: 'Karta katalogowa Labelmate UNI-CAT (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-uni-cat-karta-katalogowa.pdf', size: '0,9 MB' },

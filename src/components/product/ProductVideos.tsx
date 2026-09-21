@@ -1,6 +1,6 @@
 'use client'
 
-import OsadzenieYouTube from '@/components/ui/OsadzenieYouTube'
+import OsadzenieFilmu, { type SerwisFilmu } from '@/components/ui/OsadzenieFilmu'
 
 /**
  * Filmy na karcie produktu, budowane pod telefon.
@@ -21,13 +21,16 @@ export interface ProductVideo {
   captions?: string
 }
 
-/** Identyfikator filmu z adresu YouTube (embed, watch albo youtu.be). */
-function idYouTube(url: string): string | undefined {
-  return url.match(/(?:embed\/|watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/)?.[1]
+/** Serwis i identyfikator filmu z adresu. Vimeo rozpoznajemy po domenie, resztę traktujemy jak YouTube. */
+function zrodloFilmu(url: string): { serwis: SerwisFilmu; id: string } | undefined {
+  const vimeo = url.match(/vimeo\.com\/(?:video\/)?(\d{6,})/)?.[1]
+  if (vimeo) return { serwis: 'vimeo', id: vimeo }
+  const yt = url.match(/(?:embed\/|watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{6,})/)?.[1]
+  return yt ? { serwis: 'youtube', id: yt } : undefined
 }
 
 function Odtwarzacz({ video }: { video: ProductVideo }) {
-  const id = idYouTube(video.url)
+  const zrodlo = zrodloFilmu(video.url)
 
   if (video.native) {
     return (
@@ -45,7 +48,7 @@ function Odtwarzacz({ video }: { video: ProductVideo }) {
     )
   }
 
-  if (!id) {
+  if (!zrodlo) {
     return (
       <iframe
         src={video.url}
@@ -58,7 +61,7 @@ function Odtwarzacz({ video }: { video: ProductVideo }) {
     )
   }
 
-  return <OsadzenieYouTube id={id} tytul={video.title} />
+  return <OsadzenieFilmu id={zrodlo.id} serwis={zrodlo.serwis} plakat={video.poster} tytul={video.title} />
 }
 
 export default function ProductVideos({ videos, naglowek }: { videos: ProductVideo[]; naglowek?: string }) {

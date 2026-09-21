@@ -511,22 +511,32 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Filmy producenta osadzone z YouTube: miniatura i adres budowane z identyfikatora,
   // data publikacji i czas trwania pobrane z YouTube i zapisane w katalogu (pole `published`,
   // `duration`). Bez VideoObject Google nie wie, że karta ma film, i nie bierze jej do karuzeli.
-  const idYouTube = (url: string) => url.match(/embed\/([A-Za-z0-9_-]+)/)?.[1]
+  // Filmy stoją na YouTubie albo na Vimeo. YouTube ma miniaturę pod stałym adresem, Vimeo nie —
+  // tam plakat trzymamy u siebie i podajemy w polu `poster`.
+  const zrodloFilmu = (url: string) => {
+    const vimeo = url.match(/vimeo\.com\/(?:video\/)?(\d{6,})/)?.[1]
+    if (vimeo) return { serwis: 'vimeo' as const, id: vimeo }
+    const yt = url.match(/embed\/([A-Za-z0-9_-]+)/)?.[1]
+    return yt ? { serwis: 'youtube' as const, id: yt } : undefined
+  }
   const videoOsadzoneJsonLd = (product.videos ?? [])
-    .filter((v) => !v.native && v.published && v.duration && idYouTube(v.url))
+    .filter((v) => !v.native && v.published && v.duration && zrodloFilmu(v.url))
     .map((v) => {
-      const id = idYouTube(v.url)!
+      const { serwis, id } = zrodloFilmu(v.url)!
+      const miniatura = serwis === 'youtube'
+        ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+        : v.poster && absoluteProductImageUrl(v.poster)
       const tytul = v.title.replace(/\s*·\s*[^·]*$/, '').trim()
       return {
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
         name: `${tytul} — ${product.name}`,
         description: `${tytul}: instruktaż producenta ${isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
-        thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+        ...(miniatura ? { thumbnailUrl: [miniatura] } : {}),
         embedUrl: v.url,
         uploadDate: v.published,
         duration: v.duration,
-        publisher: { '@type': 'Organization', name: 'Epson' },
+        publisher: { '@type': 'Organization', name: manufacturer?.name ?? 'TAKMA' },
       }
     })
 
