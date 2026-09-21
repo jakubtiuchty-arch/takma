@@ -68557,7 +68557,13 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     applications: ['Nawijanie etykiet z drukarki Epson ColorWorks', 'Podawanie rolki do drukarki ze stałym naciągiem', 'Druk przemysłowy na zmianie ciągłej'],
     compatibleAccessories: [],
     relatedProducts: ['labelmate-uni-cat-chuck', 'labelmate-cat-3-standard', 'labelmate-mc-11'],
-    downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/v5iot6-nKjw', title: 'Praca z drukarką Epson ColorWorks · Labelmate, EN', published: '2022-03-30', duration: 'PT2M23S' },
+      { url: 'https://www.youtube-nocookie.com/embed/pOouPvgbLDE', title: 'Konfiguracja z drukarką Zebra · Labelmate, EN', published: '2026-03-11', duration: 'PT1M30S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate UNI-CAT (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-uni-cat-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
     createdAt: '2026-09-20',
   },
   {
@@ -68601,7 +68607,13 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     applications: ['Częsta zmiana rolek przy druku zleceniowym', 'Nawijanie etykiet z drukarki Epson ColorWorks', 'Nawoje o masie do 10 kg'],
     compatibleAccessories: [],
     relatedProducts: ['labelmate-uni-cat-standard', 'labelmate-cat-3-10-inches', 'labelmate-cat-3-standard'],
-    downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/v5iot6-nKjw', title: 'Praca z drukarką Epson ColorWorks · Labelmate, EN', published: '2022-03-30', duration: 'PT2M23S' },
+      { url: 'https://www.youtube-nocookie.com/embed/pOouPvgbLDE', title: 'Konfiguracja z drukarką Zebra · Labelmate, EN', published: '2026-03-11', duration: 'PT1M30S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate UNI-CAT (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-uni-cat-karta-katalogowa.pdf', size: '0,9 MB' },
+    ],
     createdAt: '2026-09-20',
   },
 ]
