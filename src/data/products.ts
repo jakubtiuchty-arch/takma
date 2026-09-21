@@ -499,7 +499,7 @@ export const subcategories: Subcategory[] = [
     description: 'Dyspensery i podajniki etykiet Labelmate — odklejają etykietę z podkładu i podają ją gotową do naklejenia',
     seoTitle: 'Dyspensery etykiet Labelmate | Podajnik etykiet samoprzylepnych',
     seoDescription: 'Dyspensery i podajniki etykiet samoprzylepnych Labelmate LD-115 i LD-165: automatyczne odklejanie, nośnik do 165 mm, rolka do 220 mm. Ceny netto B2B.',
-    longDescription: 'Dyspenser etykiet odkleja etykietę od podkładu i zatrzymuje ją tuż przed czujnikiem, gotową do wzięcia. Gdy operator ją zdejmie, urządzenie samo podaje następną. Na stanowisku pakowania oznacza to koniec dłubania paznokciem w rogu etykiety. Posiadamy w ofercie cztery modele Labelmate w dwóch szerokościach i dwóch wersjach czujnika.',
+    longDescription: 'Dyspenser etykiet odkleja etykietę od podkładu i zatrzymuje ją przed czujnikiem, w położeniu gotowym do pobrania. Po zdjęciu etykiety urządzenie podaje kolejną. Na stanowisku pakowania eliminuje to najbardziej uciążliwą czynność, czyli odspajanie narożnika etykiety od podkładu. Posiadamy w ofercie cztery modele Labelmate w dwóch szerokościach i dwóch wersjach czujnika.',
     icon: 'tag',
     productIds: [
       'labelmate-ld-115-rs', 'labelmate-ld-165-rs', 'labelmate-ld-115-u', 'labelmate-ld-165-u',

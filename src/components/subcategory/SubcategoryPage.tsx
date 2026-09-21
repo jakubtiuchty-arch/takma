@@ -122,8 +122,8 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
   },
   'dyspensery-etykiet': {
     src: '/images/dyspensery-etykiet-hero-v2.webp',
-    alt: 'Dyspenser etykiet Labelmate na czarnym tle: na chromowanej krawędzi gotowa etykieta odeszła od wstęgi i zwisa po froncie urządzenia, podwijając się z powrotem ku obudowie, a puste podłoże nawija się na szpulę po prawej',
-    lead: 'Etykieta odchodzi od podłoża sama i czeka odklejona na krawędzi, gotowa do zdjęcia jedną ręką. Cztery modele Labelmate — do 115 albo 165 mm szerokości, w wersji na etykiety papierowe albo z czujnikiem fotoelektrycznym do przezroczystych.',
+    alt: 'Dyspenser etykiet Labelmate na czarnym tle: na chromowanej krawędzi gotowa etykieta odeszła od wstęgi i zwisa po froncie urządzenia, podwijając się z powrotem ku obudowie, a puste podkłady nawijają się na szpulę po prawej',
+    lead: 'Etykieta odchodzi od podkładu samoczynnie i zatrzymuje się na krawędzi urządzenia, gotowa do pobrania jedną ręką. Cztery modele Labelmate — do 115 albo 165 mm szerokości, w wersji na etykiety papierowe albo z czujnikiem fotoelektrycznym do przezroczystych.',
   },
 }
 
