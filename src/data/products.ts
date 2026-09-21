@@ -68410,7 +68410,12 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     applications: ['Nawijanie etykiet przy drukarce przemysłowej', 'Praca ciągła na zmianie produkcyjnej', 'Przygotowanie rolek pod aplikator automatyczny'],
     compatibleAccessories: [],
     relatedProducts: ['labelmate-cat-3-ach', 'labelmate-cat-3-10-inches', 'labelmate-uni-cat-standard'],
-    downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/NJTBwRVNpi0', title: 'Nawijarka i odwijak CAT-3 w pracy · Labelmate, EN', published: '2019-08-02', duration: 'PT1M47S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate CAT-3 (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-cat-3-karta-katalogowa.pdf', size: '0,7 MB' },
+    ],
     createdAt: '2026-09-20',
   },
   {
@@ -68453,7 +68458,12 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     applications: ['Nawijanie etykiet na gilzy o różnych średnicach', 'Druk zleceniowy dla wielu odbiorców', 'Obsługa drukarki biurkowej i przemysłowej na jednym stanowisku'],
     compatibleAccessories: [],
     relatedProducts: ['labelmate-cat-3-standard', 'labelmate-cat-3-10-inches', 'labelmate-mc-11'],
-    downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/NJTBwRVNpi0', title: 'Nawijarka i odwijak CAT-3 w pracy · Labelmate, EN', published: '2019-08-02', duration: 'PT1M47S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate CAT-3 (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-cat-3-karta-katalogowa.pdf', size: '0,7 MB' },
+    ],
     createdAt: '2026-09-20',
   },
   {
@@ -68496,7 +68506,12 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     applications: ['Nawijanie szerokiego nośnika z drukarki 6-calowej', 'Etykiety logistyczne i paletowe', 'Oznaczenia wielkoformatowe w produkcji'],
     compatibleAccessories: [],
     relatedProducts: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-uni-cat-chuck'],
-    downloads: [],
+    videos: [
+      { url: 'https://www.youtube-nocookie.com/embed/NJTBwRVNpi0', title: 'Nawijarka i odwijak CAT-3 w pracy · Labelmate, EN', published: '2019-08-02', duration: 'PT1M47S' },
+    ],
+    downloads: [
+      { name: 'Karta katalogowa Labelmate CAT-3 (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-cat-3-karta-katalogowa.pdf', size: '0,7 MB' },
+    ],
     createdAt: '2026-09-20',
   },
   {
