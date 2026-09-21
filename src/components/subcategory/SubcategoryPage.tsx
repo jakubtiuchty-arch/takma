@@ -115,6 +115,11 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
     alt: 'Wstęga etykiet z tym samym projektem: po lewej wydruk czarno-biały, w środku wybuch pigmentu CMYK, po prawej ta sama etykieta w pełnym kolorze',
     lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e.',
   },
+  'nawijarki-do-etykiet': {
+    src: '/images/nawijarki-do-etykiet-hero.webp',
+    alt: 'Luźna wstęga zadrukowanych etykiet skręca się w powietrzu i po prawej stronie kadru zwija w równy, ciasny nawój na gilzie',
+    lead: 'Zadrukowany nośnik wychodzi z drukarki luzem, a kończy jako równa rolka gotowa do aplikatora. Sześć modeli Labelmate: MC-11 do biurka, CAT-3 do druku przemysłowego i dwukierunkowy UNI-CAT.',
+  },
 }
 
 /** Baner serwisowy na dole kategorii — dla marek, których serwis prowadzimy sami. */
