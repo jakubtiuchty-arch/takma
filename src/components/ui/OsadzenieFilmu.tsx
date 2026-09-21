@@ -32,6 +32,7 @@ export default function OsadzenieFilmu({
   plakat?: string
 }) {
   const [gra, setGra] = useState(false)
+  const [miniaturaPadla, setMiniaturaPadla] = useState(false)
   const miniatura = plakat ?? (serwis === 'youtube' ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : undefined)
 
   if (gra) {
@@ -53,13 +54,16 @@ export default function OsadzenieFilmu({
       className="group relative h-full w-full bg-black"
       aria-label={`Odtwórz film: ${tytul}`}
     >
-      {/* Miniatura: jedno statyczne zdjęcie na kafel, więc zwykły img */}
-      {miniatura && (
+      {/* Miniatura: jedno statyczne zdjęcie na kafel, więc zwykły img.
+          Gdy nie wejdzie, chowamy ją — zostaje czarny kafel z przyciskiem play,
+          czyli coś, co wygląda na zamierzone, a nie ikona zepsutego pliku. */}
+      {miniatura && !miniaturaPadla && (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={miniatura}
           alt=""
           loading="lazy"
+          onError={() => setMiniaturaPadla(true)}
           className="h-full w-full object-cover"
         />
       )}
