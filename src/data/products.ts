@@ -73,7 +73,7 @@ export interface Product {
   videoFile?: string
   /** Kilka filmów (np. instrukcje producenta z YouTube) — sekcja „Wideo” pokazuje je w siatce */
   /** Filmy na karcie: domyślnie iframe (YouTube/Vidyard); `native: true` = własny MP4 (np. z Vercel Blob) z plakatem. */
-  videos?: { url: string; title: string; native?: boolean; poster?: string; /** ścieżka do napisów WebVTT (pl) */ captions?: string; /** data publikacji na stronie (VideoObject.uploadDate) */ published?: string; /** czas trwania w ISO 8601, np. PT3M47S (VideoObject.duration) */ duration?: string }[]
+  videos?: { url: string; title: string; native?: boolean; poster?: string; /** ścieżka do napisów WebVTT (pl) */ captions?: string; /** data publikacji na stronie (VideoObject.uploadDate) */ published?: string; /** czas trwania w ISO 8601, np. PT3M47S (VideoObject.duration) */ duration?: string; /** proporcje filmu, gdy nie są 16:9 — np. '9/16' dla pionowej rolki, '4/3' dla starszych nagrań. Kafel przyjmuje ten kształt, żeby film wypełniał go bez pasów po bokach. */ aspect?: string }[]
   /** Obrót 360° w galerii: krótki MP4 bez dźwięku (pętla) + plakat na miniaturę. */
   spinVideo?: { file: string; poster: string }
   /** 'faq-last': FAQ i „Pliki do pobrania” na samym dole karty, za materiałami i akcesoriami (test UX na Magicard 300). */
@@ -68869,8 +68869,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     compatibleAccessories: [],
     relatedProducts: ['labelmate-ld-115-u', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     videos: [
-      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
-      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S', aspect: '9/16' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S', aspect: '4/3' },
     ],
     downloads: [
       { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
@@ -68928,8 +68928,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     compatibleAccessories: [],
     relatedProducts: ['labelmate-ld-115-rs', 'labelmate-ld-165-u', 'labelmate-ld-115-u'],
     videos: [
-      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
-      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S', aspect: '9/16' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S', aspect: '4/3' },
     ],
     downloads: [
       { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
@@ -68985,8 +68985,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     compatibleAccessories: [],
     relatedProducts: ['labelmate-ld-115-rs', 'labelmate-ld-165-u', 'labelmate-ld-165-rs'],
     videos: [
-      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
-      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S', aspect: '9/16' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S', aspect: '4/3' },
     ],
     downloads: [
       { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },
@@ -69042,8 +69042,8 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
     compatibleAccessories: [],
     relatedProducts: ['labelmate-ld-115-u', 'labelmate-ld-165-rs', 'labelmate-ld-115-rs'],
     videos: [
-      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S' },
-      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S' },
+      { url: 'https://vimeo.com/1142073512', title: 'Przygotowanie dyspensera do pracy · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-setup-poster.webp', published: '2025-12-01', duration: 'PT50S', aspect: '9/16' },
+      { url: 'https://vimeo.com/1142059952', title: 'Zasada działania dyspensera · Labelmate, EN', poster: '/images/products/labelmate-dyspenser-zasada-poster.webp', published: '2025-12-01', duration: 'PT2M0S', aspect: '4/3' },
     ],
     downloads: [
       { name: 'Karta katalogowa dyspenserów Labelmate LD (PL i EN)', type: 'datasheet', url: '/datasheets/labelmate-dyspensery-karta-katalogowa.pdf', size: '0,9 MB' },

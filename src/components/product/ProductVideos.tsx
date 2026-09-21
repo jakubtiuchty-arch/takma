@@ -1,5 +1,7 @@
 'use client'
 
+import type { CSSProperties } from 'react'
+
 import OsadzenieFilmu, { type SerwisFilmu } from '@/components/ui/OsadzenieFilmu'
 
 /**
@@ -19,6 +21,28 @@ export interface ProductVideo {
   native?: boolean
   poster?: string
   captions?: string
+  /** Proporcje filmu, gdy nie są 16:9 — np. '9/16' albo '4/3'. */
+  aspect?: string
+}
+
+/** Wysokość pionowego kafla. Rolka w kolumnie szerokiej na 400 px byłaby wysoka na 700 px. */
+const WYSOKOSC_PIONOWEGO = 420
+
+function proporcje(aspect?: string): [number, number] {
+  const [w, h] = (aspect ?? '16/9').split('/').map(Number)
+  return Number.isFinite(w) && Number.isFinite(h) && w > 0 && h > 0 ? [w, h] : [16, 9]
+}
+
+/** Pion poznajemy po proporcjach: licznik mniejszy od mianownika. */
+function czyPion(aspect?: string): boolean {
+  const [w, h] = proporcje(aspect)
+  return w < h
+}
+
+/** Szerokość pionowego kafelka wynika ze stałej wysokości i proporcji filmu. */
+function szerokoscPionowego(aspect?: string): number {
+  const [w, h] = proporcje(aspect)
+  return Math.round(WYSOKOSC_PIONOWEGO * (w / h))
 }
 
 /** Serwis i identyfikator filmu z adresu. Vimeo rozpoznajemy po domenie, resztę traktujemy jak YouTube. */
@@ -76,16 +100,32 @@ export default function ProductVideos({ videos, naglowek }: { videos: ProductVid
           : `Instruktaże producenta${videos.length > 2 ? ', w kolejności od rozpakowania po konfigurację sterownika.' : '.'}`}
       </p>
 
-      {/* Telefon: karuzela z zatrzymywaniem na kafelku. Od sm zwykła siatka. */}
-      <div className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
-        {videos.map((v) => (
-          <figure key={v.url} className="w-[82vw] shrink-0 snap-start sm:w-auto sm:shrink">
-            <div className="aspect-video overflow-hidden rounded-xl bg-gray-100">
-              <Odtwarzacz video={v} />
-            </div>
-            <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
-          </figure>
-        ))}
+      {/* Telefon: karuzela z zatrzymywaniem na kafelku. Od sm zwykła siatka.
+          `items-start`, bo kafelki o różnych proporcjach mają różną wysokość i nie mają się rozciągać. */}
+      <div className="-mx-4 flex snap-x snap-mandatory items-start gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0">
+        {videos.map((v) => {
+          const pion = czyPion(v.aspect)
+          return (
+            <figure
+              key={v.url}
+              /* Szerokość ustawiamy na całym kafelku, nie na samym obrazie, żeby podpis stał pod filmem,
+                 a nie przy krawędzi kolumny. Pionowy liczymy ze stałej wysokości — rolka na całą
+                 szerokość kolumny byłaby wyższa niż reszta sekcji. */
+              className={
+                pion
+                  ? 'w-[62vw] shrink-0 snap-start sm:mx-auto sm:w-[var(--szerokosc-kafla)] sm:shrink'
+                  : 'w-[82vw] shrink-0 snap-start sm:w-auto sm:shrink'
+              }
+              style={pion ? ({ '--szerokosc-kafla': `${szerokoscPionowego(v.aspect)}px` } as CSSProperties) : undefined}
+            >
+              {/* Kafel przyjmuje proporcje filmu, więc obraz wypełnia go co do piksela — bez pasów po bokach. */}
+              <div className="overflow-hidden rounded-xl bg-gray-100" style={{ aspectRatio: v.aspect ?? '16/9' }}>
+                <Odtwarzacz video={v} />
+              </div>
+              <figcaption className="mt-2 text-sm text-gray-600">{v.title}</figcaption>
+            </figure>
+          )
+        })}
       </div>
 
       {videos.length > 2 && (
