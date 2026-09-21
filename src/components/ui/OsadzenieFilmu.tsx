@@ -35,6 +35,17 @@ export default function OsadzenieFilmu({
   const [miniaturaPadla, setMiniaturaPadla] = useState(false)
   const miniatura = plakat ?? (serwis === 'youtube' ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : undefined)
 
+  /**
+   * Samo `onError` nie wystarcza. Kafel przychodzi z serwera gotowym HTML-em, więc przeglądarka
+   * zaczyna pobierać miniaturę, zanim React zdąży się podpiąć. Jeśli pobranie nie uda się w tym
+   * oknie, zdarzenia już nie ma kogo obsłużyć i ikona zepsutego pliku zostaje na stałe — tak
+   * wyglądał kafel dyspensera po chwilowym błędzie pobrania. Przy podpięciu sprawdzamy więc stan
+   * obrazka wprost: `complete` przy zerowej szerokości znaczy, że próba się skończyła i nie weszła.
+   */
+  const sprawdzPoPodpieciu = (img: HTMLImageElement | null) => {
+    if (img?.complete && img.naturalWidth === 0) setMiniaturaPadla(true)
+  }
+
   if (gra) {
     return (
       <iframe
@@ -60,6 +71,7 @@ export default function OsadzenieFilmu({
       {miniatura && !miniaturaPadla && (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
+          ref={sprawdzPoPodpieciu}
           src={miniatura}
           alt=""
           loading="lazy"
