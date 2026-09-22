@@ -976,7 +976,9 @@ model UsedDevice {
 model PriceConcession {
   id          String   @id @default(cuid())
   /// Skąd cena: ZEBRA = dokument Price Concession z PartnerConnect,
-  /// JARLTECH = oferta dystrybutora wystawiona na tę koncesję.
+  /// JARLTECH = oferta dystrybutora wystawiona na tę koncesję,
+  /// CENNIK = cennik zakupowy producenta z arkusza,
+  /// TRADEUP = lista numerów programu Zebra Trade UP (rabat od ceny katalogowej).
   source      String   @default("ZEBRA")
   requestId   String   // numer koncesji, np. 81463572
   revision    String?  // rewizja dokumentu, np. 1.0
@@ -1014,7 +1016,7 @@ model PriceConcessionItem {
   minQty      Int     @default(1)
   maxQty      Int?
   listPrice   Int?    // setne części waluty (eurocenty)
-  unitPrice   Int     // cena specjalna zakupu, setne części waluty
+  unitPrice   Int     // cena specjalna zakupu, setne części waluty; przy TRADEUP 0 — kwotę liczy się z rabatu i bieżącej ceny katalogowej
   discountPct Float?  // łączny rabat z dokumentu
 
   /// Ile sztuk już wykorzystaliśmy — limit dotyczy całej koncesji, a nie

@@ -1173,3 +1173,14 @@ Otwarte na kolejne sesje:
 - **Sprawdzone:** `tsc` bez błędów; `podsumowanieAds()` na żywym koncie zwraca obie zmiany i poprawne teksty reguł; panel na localhost:3000 renderuje nową kolumnę budżetu i szary pasek przy DSA.
 - **Wdrożenie:** commit i push na obie gałęzie 22.09 wieczorem, za zgodą usera. Dzisiejszy mail był jeszcze ze starego kodu — jutrzejszy o 20:00 będzie już z poprawką. Cron nie był uruchamiany ponownie (wyszedłby drugi mail).
 - **Do zrobienia:** ocena przesunięcia budżetów 30.09.2026 — koszt konwersji DSA przy 75 zł i czy SW Modele przy 35 zł w ogóle konwertuje.
+
+## Lista Zebra Trade UP w cenach specjalnych + podpowiedź w ofertowniku (22.09.2026, wieczór)
+
+- **Nowy rodzaj dokumentu w `/admin/koncesje`: lista numerów Zebra Trade UP** (`source: 'TRADEUP'`, stały `requestId: 'TRADE-UP'`, więc nowa lista zastępuje poprzednią). Import rozpoznaje ją po treści PDF-a. Lista nie podaje okresu promocji, więc pierwsze wysłanie wraca z kodem 422, a formularz pyta o daty i warunki programu; przy kolejnej wersji podpowiada je z poprzedniej.
+- **Kwota liczona w chwili wystawiania oferty.** Lista daje rabat od ceny katalogowej, nie cenę — `koncesjeDlaPn()` bierze cenę katalogową z BlueStar (`listPrice`, osobno dla każdego numeru, bo zapytanie zbiorcze zeruje się na jednym niedostępnym numerze) i liczy zakup. Zmiana cennika producenta nie zostawi w podpowiedzi starej kwoty. Gdy BlueStar nie zna ceny, zostaje sam rabat, bez przycisku.
+- **Ofertownik:** „Cena z Trade UP … EUR ≈ … zł — … % od ceny katalogowej …”, przycisk „użyj jako ceny zakupu”, zwinięte „warunki”. Stoi obok koncesji, najtańsza pierwsza.
+- **Ekstrakcja PDF, tryb `komorki`:** PDF tnie numer katalogowy na kilka elementów tekstu. Kawałki jednej komórki stykają się (odstęp poniżej 0,5 pt), kolumny dzieli ponad 25 pt; wiersz grupowany z tolerancją 2 pt zamiast zaokrąglania Y, bo pojedyncze komórki są przesunięte o ułamek punktu. Koncesje i oferty Jarltecha zostają przy starym trybie i mają pierwszeństwo w rozpoznawaniu.
+- **Poufność: repozytorium jest publiczne.** W kodzie jest tylko układ tabeli; numery, rabaty, okres i warunki programu trafiają wyłącznie do bazy. Samego PDF-a nie commitować.
+- **Przy okazji:** kwoty w euro w podpowiedzi z przecinkiem dziesiętnym; przypomnienie mailowe dla listy Trade UP bez tabeli pozycji, a nagłówek cennika nie udaje już koncesji; „ważna”/„ważny” w komunikacie importu.
+- **Sprawdzone lokalnie:** import prawdziwej listy, biuletyn programu odrzucony z czytelnym komunikatem, odwrócony okres odrzucony, podpowiedzi w edycji istniejącej oferty (Playwright), `tsc` bez błędów.
+- **Kolejność wdrożenia:** testowy import usunięty przed pushem, żeby produkcja na starym kodzie nie pokazywała w ofertowniku ceny 0,00 zł; listę wczytujemy ponownie dopiero po udanym deployu. Następna wersja listy — przez panel, daty i warunki podpowie z poprzedniej.

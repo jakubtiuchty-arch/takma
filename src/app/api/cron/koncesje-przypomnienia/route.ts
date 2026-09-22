@@ -75,11 +75,17 @@ export async function GET(request: NextRequest) {
         naglowek:
           k.source === 'JARLTECH'
             ? `Oferta Jarltecha ${k.docNumber ?? ''} do koncesji ${k.requestId} — ${k.reseller}`
-            : `Koncesja ${k.requestId}${k.revision ? ` rev. ${k.revision}` : ''} — ${k.reseller}`,
+            : k.source === 'TRADEUP'
+              ? `Program Zebra Trade UP — lista${k.revision ? ` z ${k.revision}` : ''}, ${k.items.length} numerów`
+              : k.source === 'CENNIK'
+                ? `Cennik ${k.distributor ?? k.requestId} — ${k.reseller}`
+                : `Koncesja ${k.requestId}${k.revision ? ` rev. ${k.revision}` : ''} — ${k.reseller}`,
         endUser: k.endUser,
         dniDoKonca: Math.max(0, Math.ceil((k.endDate.getTime() - teraz.getTime()) / 86_400_000)),
         dataKonca: k.endDate.toLocaleDateString('pl-PL'),
-        pozycje: k.items.map((i) => ({
+        // Lista Trade UP ma kilkaset numerów bez cen — w mailu wystarczy termin,
+        // a numery są w panelu.
+        pozycje: k.source === 'TRADEUP' ? [] : k.items.map((i) => ({
           partNumber: i.partNumber,
           cena: `${kwota(i.unitPrice)} ${k.currency}`,
           cenaPln: zl(k.currency === 'PLN' ? i.unitPrice : Math.round(i.unitPrice * kurs)),
@@ -91,9 +97,12 @@ export async function GET(request: NextRequest) {
     const najblizszy = Math.min(
       ...lista.map((k) => Math.max(0, Math.ceil((k.endDate.getTime() - teraz.getTime()) / 86_400_000))),
     )
+    const kiedy = najblizszy === 0 ? 'dzisiaj' : `za ${najblizszy} dni`
     const temat =
       lista.length === 1
-        ? `Cena specjalna ${lista[0].source === 'JARLTECH' ? `z oferty ${lista[0].docNumber ?? lista[0].requestId}` : `${lista[0].requestId}`} kończy się ${najblizszy === 0 ? 'dzisiaj' : `za ${najblizszy} dni`}`
+        ? lista[0].source === 'TRADEUP'
+          ? `Program Zebra Trade UP kończy się ${kiedy}`
+          : `Cena specjalna ${lista[0].source === 'JARLTECH' ? `z oferty ${lista[0].docNumber ?? lista[0].requestId}` : `${lista[0].requestId}`} kończy się ${kiedy}`
         : `${lista.length} ceny specjalne kończą się w ciągu ${DNI_PRZED} dni`
 
     const wynik = await sendEmail({

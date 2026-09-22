@@ -1,4 +1,5 @@
 import { prisma } from '@/lib/db'
+import { lookupStock } from '@/lib/bluestar'
 
 /**
  * Koncesje cenowe Zebry (Price Concession).
@@ -12,11 +13,11 @@ import { prisma } from '@/lib/db'
  */
 
 /** Skąd pochodzi cena specjalna. */
-export type ZrodloKoncesji = 'ZEBRA' | 'JARLTECH' | 'CENNIK'
+export type ZrodloKoncesji = 'ZEBRA' | 'JARLTECH' | 'CENNIK' | 'TRADEUP'
 
 /** Wartość z bazy na typ — nieznane źródło traktujemy jak koncesję Zebry. */
 export const zrodloCeny = (s: string): ZrodloKoncesji =>
-  s === 'JARLTECH' || s === 'CENNIK' ? s : 'ZEBRA'
+  s === 'JARLTECH' || s === 'CENNIK' || s === 'TRADEUP' ? s : 'ZEBRA'
 
 /** Wiersz tabeli „Price Concession Items" po sparsowaniu PDF-a. */
 export interface PozycjaKoncesji {
@@ -41,6 +42,8 @@ export interface DaneKoncesji {
   currency: string
   startDate: Date
   endDate: Date
+  /** Warunki, które mają stać przy podpowiedzi w kreatorze oferty. */
+  note?: string
   items: PozycjaKoncesji[]
 }
 
@@ -293,14 +296,93 @@ export function cennikJakoDokument(
 }
 
 /**
+ * Lista numerów programu Zebra Trade UP.
+ *
+ * Inaczej niż koncesja nie podaje ceny, tylko rabat od ceny katalogowej
+ * producenta — kwotę liczymy dopiero przy ofercie, z bieżącego cennika
+ * (patrz koncesjeDlaPn), żeby zmiana cennika nie zostawiła w podpowiedzi
+ * starej kwoty. Nie ma w niej też okresu promocji: stoi w osobnym biuletynie
+ * programu, więc daty przychodzą z formularza importu.
+ *
+ * Dokument jest poufny, dlatego w kodzie nie ma z niego nic poza układem
+ * tabeli — numery, rabaty i warunki żyją wyłącznie w bazie.
+ */
+export const czyListaTradeUp = (tekst: string) =>
+  // Koncesja albo oferta Jarltecha na transakcję z Trade UP może zawierać te
+  // same słowa — ich parsery mają pierwszeństwo.
+  !/PC Request ID/i.test(tekst) &&
+  !/Jarltech/i.test(tekst) &&
+  /Trade\s*UP/i.test(tekst) &&
+  /Recommended\s+Discount/i.test(tekst) &&
+  /Part\s+Number/i.test(tekst)
+
+/**
+ * Tekst musi pochodzić z ekstrakcji sklejającej sąsiadujące kawałki komórki
+ * (tekstZPdf w trybie komórek), bo PDF zapisuje numer katalogowy jako kilka
+ * elementów tekstu. Wiersz ma wtedy cztery kolumny:
+ *   linia produktów | rodzina | numer katalogowy | rabat%
+ */
+export function parsujListeTradeUp(tekst: string): { rewizja?: string; items: PozycjaKoncesji[] } {
+  const items: PozycjaKoncesji[] = []
+  const widziane = new Set<string>()
+  for (const l of tekst.split('\n')) {
+    const k = l.split('\t').map((c) => c.trim())
+    if (k.length < 3) continue
+    const rabat = k[k.length - 1].match(/^(\d{1,2}(?:[.,]\d+)?)\s*%$/)?.[1]
+    const pn = k[k.length - 2]
+    if (!rabat || !/^[A-Z0-9][A-Z0-9-]{5,}$/.test(pn) || widziane.has(pn)) continue
+    widziane.add(pn)
+    items.push({
+      partNumber: pn,
+      // Rodzina mówi handlowcowi więcej niż linia produktów, więc stoi pierwsza.
+      description: [k[k.length - 3], k.slice(0, -3).join(' ')].filter(Boolean).join(' · ') || undefined,
+      minQty: 1,
+      unitPrice: 0,
+      discountPct: Number(rabat.replace(',', '.')),
+    })
+  }
+  if (items.length === 0)
+    throw new Error(
+      'To dokument programu Trade UP, ale bez numerów katalogowych — wczytaj listę numerów z rabatami, nie biuletyn programu.'
+    )
+
+  // Data wydania listy stoi w stopce każdej strony, po tytule dokumentu.
+  const d = tekst.match(/Discounts[^\n]*?(\d{2})-(\d{2})-(\d{4})/)
+  return { rewizja: d ? `${d[1]}.${d[2]}.${d[3]}` : undefined, items }
+}
+
+/** Lista Trade UP jako dokument cenowy — okres i warunki programu podaje człowiek. */
+export function tradeUpJakoDokument(
+  lista: { rewizja?: string; items: PozycjaKoncesji[] },
+  meta: { startDate: Date; endDate: Date; uwagi?: string }
+): DaneKoncesji {
+  return {
+    source: 'TRADEUP',
+    // Stały numer: nowa lista zastępuje poprzednią, a nie leży obok niej.
+    requestId: 'TRADE-UP',
+    revision: lista.rewizja,
+    reseller: 'TAKMA',
+    currency: 'EUR',
+    startDate: meta.startDate,
+    endDate: meta.endDate,
+    note: meta.uwagi?.trim() || undefined,
+    items: lista.items,
+  }
+}
+
+/**
  * Rozpoznaje dokument po treści. Ceny specjalne przychodzą dwiema drogami:
  * koncesja od Zebry i oparta na niej oferta dystrybutora — obie trafiają do
- * tej samej tabeli, więc w kreatorze oferty widać je obok siebie.
+ * tej samej tabeli, więc w kreatorze oferty widać je obok siebie. Listę
+ * Trade UP rozpoznaje wcześniej route importu, bo potrzebuje innej ekstrakcji
+ * tekstu i dat z formularza.
  */
 export function parsujDokumentCenowy(tekst: string, nazwaPliku?: string): DaneKoncesji {
   if (/PC Request ID/i.test(tekst)) return parsujKoncesje(tekst, nazwaPliku)
   if (/Jarltech/i.test(tekst)) return parsujOferteJarltech(tekst)
-  throw new Error('Nie rozpoznaję dokumentu — czytam koncesje Zebry z PartnerConnect i oferty Jarltecha.')
+  throw new Error(
+    'Nie rozpoznaję dokumentu — czytam koncesje Zebry z PartnerConnect, oferty Jarltecha i listy numerów Zebra Trade UP.'
+  )
 }
 
 /**
@@ -345,17 +427,39 @@ export interface TrafienieKoncesji {
   endDate: Date
   dniDoKonca: number
   currency: string
-  unitPrice: number      // w walucie koncesji (setne)
-  unitPricePln: number   // przeliczone na grosze
+  unitPrice: number      // w walucie koncesji (setne); 0 = nie da się policzyć
+  unitPricePln: number   // przeliczone na grosze; 0 = nie da się policzyć
   maxQty: number | null
   usedQty: number
   pozostaloSztuk: number | null
   itemId: string
+  /** Rabat z dokumentu w procentach — przy Trade UP to jedyna liczba, jaką daje lista. */
+  rabatPct: number | null
+  /** Cena katalogowa producenta (setne waluty), od której liczy się rabat Trade UP. */
+  cenaKatalogowa: number | null
+  /** Warunki dokumentu wpisane przy imporcie — stoją pod podpowiedzią. */
+  uwagi: string | null
+  opis: string | null
+}
+
+/**
+ * Cena katalogowa producenta w setnych euro. Podaje ją tylko BlueStar, więc
+ * pytamy go w chwili wystawiania oferty — o każdy numer osobno, bo przy
+ * zapytaniu zbiorczym jeden niedostępny numer zeruje odpowiedź dla wszystkich.
+ */
+async function cenaKatalogowa(partNumber: string): Promise<number | null> {
+  try {
+    const [wynik] = await lookupStock([partNumber])
+    return wynik?.found && wynik.listPrice && wynik.listPrice > 0 ? Math.round(wynik.listPrice * 100) : null
+  } catch {
+    return null
+  }
 }
 
 /**
  * Aktywne koncesje dla numeru katalogowego. Zwraca posortowane od najtańszej —
- * bywa, że ten sam PN ma koncesję i dla TAKMY, i dla Scantera.
+ * bywa, że ten sam PN ma koncesję i dla TAKMY, i dla Scantera. Pozycje bez
+ * policzalnej ceny idą na koniec.
  */
 export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKoncesji[]> {
   const teraz = new Date()
@@ -368,11 +472,21 @@ export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKonces
   })
   if (pozycje.length === 0) return []
 
-  const kurs = await kursEur()
+  const tradeUp = pozycje.some((p) => p.concession.source === 'TRADEUP')
+  const [kurs, katalog] = await Promise.all([kursEur(), tradeUp ? cenaKatalogowa(partNumber) : Promise.resolve(null)])
 
-  return pozycje
-    .map((p) => ({
-      source: zrodloCeny(p.concession.source),
+  const wynik: TrafienieKoncesji[] = pozycje.map((p) => {
+    const source = zrodloCeny(p.concession.source)
+    // Trade UP daje rabat od ceny katalogowej, a nie kwotę. Liczymy ją z
+    // cennika pobranego teraz; bez ceny katalogowej zostaje sam rabat.
+    const unitPrice =
+      source === 'TRADEUP'
+        ? katalog != null && p.discountPct != null
+          ? Math.round(katalog * (1 - p.discountPct / 100))
+          : 0
+        : p.unitPrice
+    return {
+      source,
       requestId: p.concession.requestId,
       docNumber: p.concession.docNumber,
       revision: p.concession.revision,
@@ -382,12 +496,19 @@ export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKonces
       endDate: p.concession.endDate,
       dniDoKonca: Math.ceil((p.concession.endDate.getTime() - teraz.getTime()) / 86_400_000),
       currency: p.concession.currency,
-      unitPrice: p.unitPrice,
-      unitPricePln: p.concession.currency === 'PLN' ? p.unitPrice : Math.round(p.unitPrice * kurs),
+      unitPrice,
+      unitPricePln: p.concession.currency === 'PLN' ? unitPrice : Math.round(unitPrice * kurs),
       maxQty: p.maxQty,
       usedQty: p.usedQty,
       pozostaloSztuk: p.maxQty != null ? Math.max(0, p.maxQty - p.usedQty) : null,
       itemId: p.id,
-    }))
-    .sort((a, b) => a.unitPricePln - b.unitPricePln)
+      rabatPct: p.discountPct,
+      cenaKatalogowa: source === 'TRADEUP' ? katalog : p.listPrice,
+      uwagi: p.concession.note,
+      opis: p.description,
+    }
+  })
+
+  const klucz = (t: TrafienieKoncesji) => (t.unitPricePln > 0 ? t.unitPricePln : Number.MAX_SAFE_INTEGER)
+  return wynik.sort((a, b) => klucz(a) - klucz(b))
 }

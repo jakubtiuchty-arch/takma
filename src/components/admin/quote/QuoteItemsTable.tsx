@@ -38,18 +38,26 @@ function PriceInput({ value, onChange }: { value: number; onChange: (grosze: num
 }
 
 export interface TrafienieKoncesji {
-  /** CENNIK = cennik zakupowy producenta, bez limitu sztuk i klienta końcowego */
-  source: 'ZEBRA' | 'JARLTECH' | 'CENNIK'
+  /**
+   * CENNIK = cennik zakupowy producenta, bez limitu sztuk i klienta końcowego;
+   * TRADEUP = lista programu Zebra Trade UP — rabat od ceny katalogowej.
+   */
+  source: 'ZEBRA' | 'JARLTECH' | 'CENNIK' | 'TRADEUP'
   requestId: string
   docNumber: string | null
+  revision: string | null
   reseller: string
   endUser: string | null
   distributor: string | null
+  /** 0 = ceny nie da się policzyć (Trade UP bez ceny katalogowej w BlueStar) */
   unitPrice: number
   currency: string
   unitPricePln: number
   pozostaloSztuk: number | null
   dniDoKonca: number
+  rabatPct: number | null
+  cenaKatalogowa: number | null
+  uwagi: string | null
 }
 
 function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: number; koncesje?: TrafienieKoncesji[] }) {
@@ -88,17 +96,34 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
         {/* Ceny specjalne — pokazujemy, nie wstawiamy sami. Cena formalnie
             dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca.
             Ten sam numer bywa i w koncesji Zebry, i w ofercie dystrybutora —
-            wtedy widać obie, bo mówią o innej kwocie. */}
+            wtedy widać obie, bo mówią o innej kwocie. Trade UP podaje rabat,
+            a kwotę serwer liczy z bieżącej ceny katalogowej; gdy BlueStar jej
+            nie zna, zostaje sam rabat i nie ma czego wstawić jako zakupu. */}
         {koncesje.map((koncesja) => (
           <div key={`${koncesja.source}-${koncesja.requestId}`} className="mt-1 px-1 text-xs leading-relaxed">
             <span className="text-emerald-700 font-medium">
-              {koncesja.source === 'CENNIK' ? 'Cena z cennika ' : 'Cena specjalna '}
-              {koncesja.currency === 'PLN'
-                ? `${formatPrice(koncesja.unitPricePln)} zł`
-                : `${(koncesja.unitPrice / 100).toFixed(2)} ${koncesja.currency} ≈ ${formatPrice(koncesja.unitPricePln)} zł`}
+              {koncesja.source === 'TRADEUP'
+                ? koncesja.unitPricePln > 0
+                  ? 'Cena z Trade UP '
+                  : 'Trade UP'
+                : koncesja.source === 'CENNIK'
+                  ? 'Cena z cennika '
+                  : 'Cena specjalna '}
+              {koncesja.unitPricePln > 0 &&
+                (koncesja.currency === 'PLN'
+                  ? `${formatPrice(koncesja.unitPricePln)} zł`
+                  : `${formatPrice(koncesja.unitPrice)} ${koncesja.currency} ≈ ${formatPrice(koncesja.unitPricePln)} zł`)}
             </span>
             <span className="text-gray-500">
-              {koncesja.source === 'CENNIK' ? (
+              {koncesja.source === 'TRADEUP' ? (
+                <>
+                  {koncesja.rabatPct != null ? ` — ${koncesja.rabatPct.toLocaleString('pl-PL')} % od ceny katalogowej` : ' — rabat od ceny katalogowej'}
+                  {koncesja.cenaKatalogowa != null
+                    ? ` ${formatPrice(koncesja.cenaKatalogowa)} ${koncesja.currency}`
+                    : ' (BlueStar nie podał ceny katalogowej — kwotę potwierdź u dystrybutora)'}
+                  , lista {koncesja.revision ? `z ${koncesja.revision}` : 'programu'}, program jeszcze {koncesja.dniDoKonca} dni
+                </>
+              ) : koncesja.source === 'CENNIK' ? (
                 <>
                   {` — cennik ${koncesja.distributor ?? koncesja.requestId}, obowiązuje jeszcze ${koncesja.dniDoKonca} dni`}
                 </>
@@ -114,7 +139,7 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
                 </>
               )}
             </span>
-            {item.purchasePrice !== koncesja.unitPricePln && (
+            {koncesja.unitPricePln > 0 && item.purchasePrice !== koncesja.unitPricePln && (
               <button
                 type="button"
                 onClick={() => updateItem(item.id, { purchasePrice: koncesja.unitPricePln })}
@@ -122,6 +147,14 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
               >
                 użyj jako ceny zakupu
               </button>
+            )}
+            {/* Warunki są te same dla każdej pozycji z dokumentu — rozwinięte
+                pod każdym numerem zajmowałyby pół tabeli. */}
+            {koncesja.uwagi && (
+              <details className="text-gray-400">
+                <summary className="cursor-pointer select-none hover:text-gray-600">warunki</summary>
+                <p className="mt-0.5">{koncesja.uwagi}</p>
+              </details>
             )}
           </div>
         ))}

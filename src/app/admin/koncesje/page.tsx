@@ -33,6 +33,17 @@ export default async function KoncesjePage() {
 
   const Karta = ({ k, wygasla }: { k: (typeof koncesje)[number]; wygasla: boolean }) => {
     const dni = Math.ceil((k.endDate.getTime() - teraz.getTime()) / 86_400_000)
+    // Lista Trade UP nie ma cen ani limitów — tylko rabat od ceny katalogowej,
+    // z której kwotę liczy dopiero kreator oferty.
+    const tradeUp = k.source === 'TRADEUP'
+    const nazwaDokumentu =
+      k.source === 'CENNIK'
+        ? `cennik ${k.distributor ?? k.requestId}`
+        : tradeUp
+          ? `lista Zebra Trade UP${k.revision ? ` z ${k.revision}` : ''}`
+          : k.source === 'JARLTECH'
+            ? `oferta Jarltecha ${k.docNumber ?? ''} → ${etykietaPowiazania(k.requestId)}`
+            : `PC ${k.requestId}`
     // Dokumentów będzie przybywać, a każdy ma po kilkanaście numerów — karty
     // startują zwinięte, żeby lista mieściła się na ekranie. Nagłówek niesie
     // tyle, ile trzeba do wyboru: kto, na co i do kiedy. Liczby pozycji ani
@@ -55,23 +66,22 @@ export default async function KoncesjePage() {
               <p className="font-semibold text-gray-900">
                 {k.reseller}
                 <span className="ml-2 text-sm font-normal text-gray-500">
-                  {k.source === 'CENNIK'
-                    ? `cennik ${k.distributor ?? k.requestId}`
-                    : k.source === 'JARLTECH'
-                      ? `oferta Jarltecha ${k.docNumber ?? ''} → ${etykietaPowiazania(k.requestId)}`
-                      : `PC ${k.requestId}`}
-                  {k.revision ? ` rev. ${k.revision}` : ''}
+                  {nazwaDokumentu}
+                  {k.revision && !tradeUp ? ` rev. ${k.revision}` : ''}
                 </span>
               </p>
               <p className="text-sm text-gray-500 mt-0.5">
                 {k.endUser ? <>klient końcowy: {k.endUser} · </> : null}
                 {k.source === 'CENNIK'
                   ? `${k.items.length} ${k.items.length === 1 ? 'pozycja' : k.items.length < 5 ? 'pozycje' : 'pozycji'} w cenniku`
-                  : `zakup przez ${k.distributor || '—'}`}
+                  : tradeUp
+                    ? `${k.items.length} numerów w programie · rabat od ceny katalogowej producenta`
+                    : `zakup przez ${k.distributor || '—'}`}
               </p>
               <p className="text-sm mt-1 text-gray-500">
                 {k.startDate.toLocaleDateString('pl-PL')} – {k.endDate.toLocaleDateString('pl-PL')}
               </p>
+              {k.note && <p className="text-sm mt-1 text-gray-500 max-w-2xl">{k.note}</p>}
             </div>
           </div>
           <div className="flex items-center gap-4 shrink-0">
@@ -103,42 +113,65 @@ export default async function KoncesjePage() {
             <UsunKoncesje
               id={k.id}
               etykieta={
-                k.source === 'CENNIK'
-                  ? `cennik ${k.distributor ?? k.requestId}`
+                k.source === 'CENNIK' || tradeUp
+                  ? nazwaDokumentu
                   : `${k.source === 'JARLTECH' ? `oferta ${k.docNumber ?? k.requestId}` : k.requestId} (${k.reseller})`
               }
             />
           </div>
         </summary>
 
-        <table className="w-full text-sm border-t border-gray-200">
-          <thead className="bg-gray-50 text-gray-500">
-            <tr>
-              <th className="text-left font-medium px-5 py-2">Numer katalogowy</th>
-              <th className="text-right font-medium px-3 py-2">Cena specjalna</th>
-              <th className="text-right font-medium px-3 py-2">≈ PLN</th>
-              <th className="text-right font-medium px-3 py-2">Rabat</th>
-              <th className="text-right font-medium px-3 py-2">Limit</th>
-              <th className="text-right font-medium px-5 py-2">Wykorzystano</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-100">
-            {k.items.map((i) => (
-              <WierszPozycji
-                key={i.id}
-                id={i.id}
-                partNumber={i.partNumber}
-                description={i.description}
-                cena={`${kwota(i.unitPrice)} ${k.currency}`}
-                cenaPln={`${zl(k.currency === 'PLN' ? i.unitPrice : Math.round(i.unitPrice * kurs))} zł`}
-                rabat={i.discountPct != null ? `${i.discountPct.toFixed(1)}%` : '—'}
-                maxQty={i.maxQty}
-                usedQty={i.usedQty}
-                zablokowany={wygasla}
-              />
-            ))}
-          </tbody>
-        </table>
+        {tradeUp ? (
+          <table className="w-full text-sm border-t border-gray-200">
+            <thead className="bg-gray-50 text-gray-500">
+              <tr>
+                <th className="text-left font-medium px-5 py-2">Numer katalogowy</th>
+                <th className="text-left font-medium px-3 py-2">Rodzina</th>
+                <th className="text-right font-medium px-5 py-2">Rabat od ceny katalogowej</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {k.items.map((i) => (
+                <tr key={i.id}>
+                  <td className="px-5 py-2 font-mono text-gray-900">{i.partNumber}</td>
+                  <td className="px-3 py-2 text-gray-500">{i.description ?? '—'}</td>
+                  <td className="px-5 py-2 text-right tabular-nums text-gray-900">
+                    {i.discountPct != null ? `${i.discountPct.toLocaleString('pl-PL')} %` : '—'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <table className="w-full text-sm border-t border-gray-200">
+            <thead className="bg-gray-50 text-gray-500">
+              <tr>
+                <th className="text-left font-medium px-5 py-2">Numer katalogowy</th>
+                <th className="text-right font-medium px-3 py-2">Cena specjalna</th>
+                <th className="text-right font-medium px-3 py-2">≈ PLN</th>
+                <th className="text-right font-medium px-3 py-2">Rabat</th>
+                <th className="text-right font-medium px-3 py-2">Limit</th>
+                <th className="text-right font-medium px-5 py-2">Wykorzystano</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {k.items.map((i) => (
+                <WierszPozycji
+                  key={i.id}
+                  id={i.id}
+                  partNumber={i.partNumber}
+                  description={i.description}
+                  cena={`${kwota(i.unitPrice)} ${k.currency}`}
+                  cenaPln={`${zl(k.currency === 'PLN' ? i.unitPrice : Math.round(i.unitPrice * kurs))} zł`}
+                  rabat={i.discountPct != null ? `${i.discountPct.toFixed(1)}%` : '—'}
+                  maxQty={i.maxQty}
+                  usedQty={i.usedQty}
+                  zablokowany={wygasla}
+                />
+              ))}
+            </tbody>
+          </table>
+        )}
       </details>
     )
   }
@@ -147,10 +180,11 @@ export default async function KoncesjePage() {
     <div className="max-w-5xl">
       <h1 className="text-2xl font-bold text-gray-900 mb-1">Ceny specjalne</h1>
       <p className="text-sm text-gray-500 mb-5">
-        Koncesje Zebry, oferty Jarltecha wystawione na te koncesje i cenniki zakupowe producentów. Gdy w
-        kreatorze oferty dodasz numer objęty aktywnym dokumentem, zobaczysz podpowiedź z ceną zakupu i
-        pozostałym limitem sztuk.
-        Koncesja mówi, ile Zebra pozwala zapłacić; oferta dystrybutora — ile faktycznie zapłacimy.
+        Koncesje Zebry, oferty Jarltecha wystawione na te koncesje, lista numerów Zebra Trade UP i cenniki
+        zakupowe producentów. Gdy w kreatorze oferty dodasz numer objęty aktywnym dokumentem, zobaczysz
+        podpowiedź z ceną zakupu i pozostałym limitem sztuk.
+        Koncesja mówi, ile Zebra pozwala zapłacić; oferta dystrybutora — ile faktycznie zapłacimy. Przy
+        Trade UP kwotę liczymy w chwili wystawiania oferty z bieżącej ceny katalogowej w BlueStar.
         Kliknij kartę, żeby zobaczyć numery i ceny. Na tydzień przed końcem idzie przypomnienie mailem:
         ceny TAKMY na handlowy@takma.com.pl, ceny Scantera na biuro@scanter.pl.
       </p>

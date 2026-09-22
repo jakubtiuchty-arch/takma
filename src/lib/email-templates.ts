@@ -1178,10 +1178,13 @@ export function buildKoncesjeWygasajaEmail(data: {
         `<strong>Ko&#324;czy si&#281; ${d.dniDoKonca === 0 ? 'dzisiaj' : `za ${d.dniDoKonca} ${dniSlowo(d.dniDoKonca)}`}</strong> &mdash; ostatni dzie&#324; ${esc(d.dataKonca)}` +
         (d.endUser ? `<br />klient ko&#324;cowy: ${esc(d.endUser)}` : ''),
       ) +
-      emailTable(
-        ['Numer katalogowy', 'Cena specjalna', '&#8776; PLN', 'Zosta&#322;o'],
-        d.pozycje.map((p) => [esc(p.partNumber), esc(p.cena), esc(p.cenaPln), esc(p.zostalo)]),
-      ),
+      // Dokument bez pozycji w mailu (lista programu) — sam termin, bez pustej tabeli.
+      (d.pozycje.length
+        ? emailTable(
+            ['Numer katalogowy', 'Cena specjalna', '&#8776; PLN', 'Zosta&#322;o'],
+            d.pozycje.map((p) => [esc(p.partNumber), esc(p.cena), esc(p.cenaPln), esc(p.zostalo)]),
+          )
+        : ''),
     )
     .join(emailDivider())
 
