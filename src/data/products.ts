@@ -15410,7 +15410,11 @@ const scanners: Product[] = [
     seoTitle: 'Datalogic QuickScan QD2590 — skaner 2D 1 MP, USB-C, 5 lat gwarancji | od 319 zł',
     seoDescription: 'Datalogic QuickScan QD2590 — przewodowy skaner 2D z matrycą 1 Mpix. Czyta kody z ekranów i przez pleksę, zasięg EAN-13 do 51 cm, IP52, pięć lat gwarancji. Cena od 319 zł netto.',
     shortDescription: 'Datalogic QuickScan QD2590 — przewodowy skaner 2D z matrycą 1 Mpix, USB-C i RS-232',
-    description: `Dla kogo? QuickScan QD2590 to przewodowy skaner 2D na stanowisko kasowe, do apteki, recepcji i lekkiego magazynu. Matryca 1 megapiksela odróżnia go od tańszego QW2520 z matrycą VGA: czyta drobniejszy druk i sięga dalej.
+    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
+
+**QD2590 jest w tej czwórce modelem wyjściowym.** Ma pełną optykę i komplet interfejsów, a kabel oznacza, że nie trzeba pilnować ładowania.
+
+Dla kogo? QuickScan QD2590 to przewodowy skaner 2D na stanowisko kasowe, do apteki, recepcji i lekkiego magazynu.
 
 Odczytuje kody jednowymiarowe, dwuwymiarowe, pocztowe, złożone i warstwowe, a także DotCode oraz znaki wodne Digimarc, które trafiają dziś na opakowania produktów konsumenckich. Radzi sobie z kodem wyświetlonym na ekranie telefonu, czyli z kuponem, biletem i e-receptą, oraz z odczytem przez szybę z pleksy na stanowisku kasowym.
 
@@ -15503,15 +15507,19 @@ Konfiguracja przez bezpłatny program Datalogic Aladdin: ustawienia wybiera się
     seoTitle: 'Datalogic QuickScan QW2520 — skaner 2D USB, 5 lat gwarancji | od 230 zł',
     seoDescription: 'Datalogic QuickScan QW2520 — przewodowy skaner 2D z matrycą VGA i złączem USB-C. Czyta kody z ekranów telefonów, IP52, pięć lat gwarancji. Cena od 230 zł netto.',
     shortDescription: 'Datalogic QuickScan QW2520 — przewodowy skaner 2D z matrycą VGA, najtańszy w serii',
-    description: `Dla kogo? QuickScan QW2520 to najtańszy skaner 2D w serii QuickScan 2500, przeznaczony na stanowisko kasowe w sklepie, do punktu usługowego i do biura. Sprawdza się tam, gdzie kody są drukowane porządnie i w standardowej wielkości.
+    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
 
-Różnica wobec droższego QD2590 sprowadza się do matrycy: QW2520 ma matrycę VGA zamiast megapikselowej. W praktyce oznacza to krótszy zasięg i wyższy próg rozdzielczości — najdrobniejszy odczytywany Code 39 ma 0,127 mm zamiast 0,077 mm. Przy etykietach sklepowych i kodach z ekranu telefonu różnicy nie widać; przy drobnym druku laboratoryjnym albo kodzie Data Matrix na małym elemencie już tak.
+**QW2520 to najtańsze wejście w serię.** Różnica wobec QD2590 to jedna rzecz: matryca VGA zamiast megapikselowej, a w ślad za nią krótszy zasięg, wyższy próg rozdzielczości, brak znaków wodnych Digimarc i brak portu RS-232. Oszczędność wynosi około 90 zł netto.
+
+Dla kogo? QuickScan QW2520 to najtańszy skaner 2D w serii QuickScan 2500, przeznaczony na stanowisko kasowe w sklepie, do punktu usługowego i do biura. Sprawdza się tam, gdzie kody są drukowane porządnie i w standardowej wielkości.
+
+W liczbach ta różnica wygląda tak: najdrobniejszy odczytywany Code 39 ma 0,127 mm zamiast 0,077 mm. Przy etykietach sklepowych i kodach z ekranu telefonu nie widać jej wcale; przy drobnym druku laboratoryjnym albo kodzie Data Matrix na małym elemencie już tak.
 
 Celowanie prowadzi niebieska kropka, a potwierdzenie odczytu daje zielona plamka rzucana na kod. Odczyt rusza sam w chwili podniesienia skanera, bez naciskania spustu.
 
 Obudowa znosi wielokrotne upadki z 1,5 metra na beton, spust wytrzymuje dziesięć milionów naciśnięć, a gwarancja producenta obejmuje pięć lat. Konfigurację prowadzi bezpłatny program Datalogic Aladdin.
 
-Uwaga przy doborze: QW2520 nie odczytuje znaków wodnych Digimarc i ma wyłącznie złącze USB. Jeśli stanowisko wymaga RS-232 albo emulacji klawiatury przez port szeregowy, właściwym wyborem jest QD2590.`,
+Jeśli stanowisko wymaga RS-232 albo emulacji klawiatury przez port szeregowy, właściwym wyborem jest QD2590.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'datalogic',
@@ -15588,13 +15596,17 @@ Uwaga przy doborze: QW2520 nie odczytuje znaków wodnych Digimarc i ma wyłączn
     seoTitle: 'Datalogic QuickScan QBT2500 — skaner Bluetooth 2D z bazą, zasięg 50 m | od 733 zł',
     seoDescription: 'Datalogic QuickScan QBT2500 — bezprzewodowy skaner 2D Bluetooth 4.0 z bazą ładującą BC2090. Zasięg 50 m, 115 000 odczytów na ładowaniu, pięć lat gwarancji. Cena od 733 zł netto.',
     shortDescription: 'Datalogic QuickScan QBT2500 — skaner 2D Bluetooth z bazą ładującą, zasięg 50 m',
-    description: `Dla kogo? QuickScan QBT2500 to bezprzewodowa wersja serii QuickScan 2500, przeznaczona tam, gdzie kod trzeba donieść do towaru zamiast towar do kasy: do przyjęcia dostaw, kompletacji, inwentaryzacji i obsługi klienta na sali sprzedaży.
+    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
+
+**QBT2500 to QD2590 bez kabla, na Bluetoothie.** Optyka, obudowa i odporność są identyczne; dochodzi akumulator, baza ładująca i łączność z dowolnym urządzeniem obsługującym profil SPP.
+
+Dla kogo? QuickScan QBT2500 to bezprzewodowa wersja serii QuickScan 2500, przeznaczona tam, gdzie kod trzeba donieść do towaru zamiast towar do kasy: do przyjęcia dostaw, kompletacji, inwentaryzacji i obsługi klienta na sali sprzedaży.
 
 Łączność Bluetooth 4.0 klasy 1 daje zasięg do 50 metrów w otwartej przestrzeni. Skaner pracuje z bazą BC2090, która jednocześnie ładuje akumulator i pośredniczy w komunikacji z komputerem, oraz łączy się bezpośrednio z telefonem i tabletem w profilu SPP.
 
 Akumulator litowo-jonowy 3250 mAh wystarcza na 115 000 odczytów, czyli w praktyce na kilka zmian. Ładowanie kablem USB-C trwa trzy godziny, przez bazę cztery.
 
-Optyka jest ta sama co w przewodowym QD2590: matryca megapikselowa, odczyt kodów jedno- i dwuwymiarowych, pocztowych, złożonych, DotCode i znaków wodnych Digimarc, celowanie dwoma niebieskimi trójkątami i zielona plamka potwierdzająca odczyt.
+Odczytuje kody jedno- i dwuwymiarowe, pocztowe, złożone, DotCode i znaki wodne Digimarc. Celowanie prowadzą dwa niebieskie trójkąty, a zielona plamka potwierdza udany odczyt.
 
 Obudowa znosi wielokrotne upadki z 1,5 metra na beton, a gwarancja producenta obejmuje pięć lat. Jeśli stanowisko leży w hali z gęstym ruchem Wi-Fi, warto rozważyć bliźniaczy QM2500 z radiem STAR w paśmie 433 MHz, które nie konkuruje o to samo pasmo.`,
     categoryId: 'skanery-kodow-kreskowych',
@@ -15689,15 +15701,19 @@ Obudowa znosi wielokrotne upadki z 1,5 metra na beton, a gwarancja producenta ob
     seoTitle: 'Datalogic QuickScan QM2500 — skaner radiowy 433 MHz z bazą, poza pasmem Wi-Fi | od 715 zł',
     seoDescription: 'Datalogic QuickScan QM2500 — bezprzewodowy skaner 2D z radiem STAR 433 MHz, które nie konkuruje z Wi-Fi. Baza BC2090, 115 000 odczytów na ładowaniu, pięć lat gwarancji. Od 715 zł netto.',
     shortDescription: 'Datalogic QuickScan QM2500 — skaner 2D z radiem STAR 433 MHz, dla hal z gęstym Wi-Fi',
-    description: `Dla kogo? QuickScan QM2500 to bezprzewodowy skaner 2D dla magazynu i hali produkcyjnej, gdzie pasmo 2,4 GHz jest już zajęte przez sieć bezprzewodową, terminale i inne urządzenia.
+    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
 
-Od bliźniaczego QBT2500 różni go wyłącznie sposób łączności. QM2500 pracuje na własnym radiu Datalogic STAR w paśmie 433 MHz, czyli poza pasmem Wi-Fi i Bluetootha. W gęstym środowisku radiowym przekłada się to na odczyty bez opóźnień i bez gubienia połączenia, bo urządzenie nie konkuruje o to samo pasmo co reszta hali.
+**QM2500 to bliźniak QBT2500 z innym radiem.** Obudowa, optyka i baza są te same — różnicą jest pasmo: 433 MHz zamiast 2,4 GHz.
+
+Dla kogo? QuickScan QM2500 to bezprzewodowy skaner 2D dla magazynu i hali produkcyjnej, gdzie pasmo 2,4 GHz jest już zajęte przez sieć bezprzewodową, terminale i inne urządzenia.
+
+Radio Datalogic STAR pracuje w paśmie 433 MHz, poza pasmem Wi-Fi i Bluetootha. W gęstym środowisku radiowym przekłada się to na odczyty bez opóźnień i bez gubienia połączenia, bo urządzenie nie konkuruje o to samo pasmo co reszta hali.
 
 Cena obu modeli jest zbliżona, więc wybór sprowadza się do jednego pytania: czy skaner ma rozmawiać wprost z telefonem lub tabletem, czy ma pewnie pracować w hali. Bluetooth w QBT2500 łączy się z dowolnym urządzeniem obsługującym profil SPP. Radio STAR w QM2500 wymaga bazy BC2090, ale daje łączność odporną na zakłócenia.
 
 Zasięg w otwartej przestrzeni wynosi 30 metrów. Akumulator litowo-jonowy 3250 mAh wystarcza na 115 000 odczytów, a ładowanie przez bazę trwa cztery godziny.
 
-Optyka jest identyczna jak w pozostałych modelach serii: matryca megapikselowa, odczyt kodów jedno- i dwuwymiarowych, pocztowych, złożonych, DotCode i znaków wodnych Digimarc, celowanie dwoma niebieskimi trójkątami i zielona plamka potwierdzająca odczyt. Obudowa znosi wielokrotne upadki z 1,5 metra, a gwarancja producenta obejmuje pięć lat.`,
+Odczytuje kody jedno- i dwuwymiarowe, pocztowe, złożone, DotCode i znaki wodne Digimarc. Obudowa znosi wielokrotne upadki z 1,5 metra, a gwarancja producenta obejmuje pięć lat.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'datalogic',
