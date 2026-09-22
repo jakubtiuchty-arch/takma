@@ -1142,3 +1142,11 @@ Otwarte na kolejne sesje:
 - **Czego NIE ruszano:** DSA i Shopping. DSA okazało się najlepszą kampanią w koncie — 28 konwersji przy CPC 2,52 zł, czyli więcej niż wszystkie pozostałe razem (24,5). Moja pierwotna uwaga, że „DSA licytuje przeciwko własnej kampanii", opierała się na dwóch wierszach i była nietrafiona.
 - **Druga nietrafiona uwaga:** napisałem, że nie sprzedajemy Magicarda 600. Sprzedajemy — Magicard 600 Duo, obok 300, Prima 8, Pronto100 i HUB. Lead z 17.09 dotyczył Magicarda 300, więc te kliknięcia się zwróciły.
 - **Nowe w kodzie: `adsMutate()` w `src/lib/googleAds.ts`.** Klient umiał dotąd tylko czytać. `partialFailure` włączone celowo — przy wsadzie jedna odrzucona operacja nie przewraca reszty, ale HTTP nadal jest 200, więc `partialFailureError` trzeba odczytać ręcznie. Przed wysyłką warto puścić z `validateOnly`.
+
+## Konwersje Ads — diagnoza i wyłączenie Search na etykiety (22.09.2026)
+
+- **Wstrzymana kampania „SW Etykiety i taśmy [API]" (id 24033298463).** Przez 90 dni wydała 1 118,30 zł i przyniosła **jedną** konwersję „Zakup (marża) — offline" wartą 163,65 zł. Shopping na tym samym asortymencie: 997,41 zł i cztery takie konwersje. Koszt konwersji 372,77 zł wobec 86,73 zł.
+- Uwaga do tempa: z 1 118 zł aż 986 zł poszło w ostatnich 30 dniach — kampania była świeżo rozkręcana, więc wstrzymanie łapie ją, zanim koszt urósł dalej.
+- **Cztery akcje konwersji nazywają się identycznie** — „takma.com.pl/ GA4 - ExactMetrics (web)" — a mają różne kategorie: PURCHASE, CONTACT, CONTACT i SUBMIT_LEAD_FORM. W raportach nie da się ich rozróżnić, bo segment zwraca samą nazwę.
+- **Większość konwersji liczy się po złotówce.** Za 30 dni: 28 + 18 + 15 = 61 konwersji o wartości 1,00 zł. Tylko jedna akcja GA4 niesie realne kwoty (13 konwersji, 36 232 zł).
+- **Najważniejszy sygnał jest wyłączony z licytowania.** „Zakup (marża) — offline" ma 16,1 konwersji i **7 555,89 zł faktycznej marży**, ale `primary_for_goal: false` i `include_in_conversions_metric: false`. Google przy ustalaniu stawek go nie widzi — optymalizuje pod 61 konwersji po złotówce, a ignoruje jedyną akcję mówiącą o zysku. **Do decyzji, bo zmiana wpływa na stawki w całym koncie.**
