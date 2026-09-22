@@ -3,6 +3,7 @@ import Link from 'next/link'
 const TABS = [
   { key: 'przeglad', href: '/admin/analytics', label: 'Przegląd' },
   { key: 'konwersje', href: '/admin/analytics/konwersje', label: 'Konwersje' },
+  { key: 'ads', href: '/admin/analytics/ads', label: 'Google Ads' },
   { key: 'dzien', href: '/admin/analytics/dzien', label: 'Dzień po dniu' },
   { key: 'gsc', href: '/admin/analytics/gsc', label: 'Search Console' },
 ] as const

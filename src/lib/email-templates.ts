@@ -1205,3 +1205,82 @@ export function buildKoncesjeWygasajaEmail(data: {
       ),
   })
 }
+
+/**
+ * Wieczorne podsumowanie Google Ads. Układ jest ułożony pod czytanie na telefonie
+ * w drodze do domu: najpierw trzy liczby, które decydują (dziś, tydzień, zamówienia),
+ * potem to, co wymaga reakcji, a tabele dopiero na końcu.
+ *
+ * Liczby przychodzą już sformatowane — szablon nie zna się na groszach ani na
+ * tym, które okno jest domknięte, a które nie.
+ */
+export function buildAdsDigestEmail(data: {
+  dzien: string
+  godzina: string
+  kafle: { label: string; value: string; sub?: string }[]
+  uwagi: string[]
+  kampanie: { nazwa: string; koszt: string; konwersje: string; kosztKonw: string; budzet: string }[]
+  frazy: { fraza: string; koszt: string; klikniecia: string }[]
+  sklep: { label: string; value: string; bold?: boolean }[]
+  komentarz?: string
+}): string {
+  const kafle = data.kafle
+    .map(
+      (k) =>
+        `<td class="tile-cell" width="33%" valign="top" style="padding:0 6px">` +
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8fafc;border:1px solid #e2e8f0;border-radius:8px">` +
+        `<tr><td style="padding:14px 12px">` +
+        `<div style="font-size:12px;color:#64748b;line-height:1.3">${esc(k.label)}</div>` +
+        `<div style="font-size:22px;font-weight:700;color:#0f172a;margin-top:4px;line-height:1.2">${esc(k.value)}</div>` +
+        (k.sub ? `<div style="font-size:11px;color:#94a3b8;margin-top:3px;line-height:1.3">${esc(k.sub)}</div>` : '') +
+        `</td></tr></table></td>`,
+    )
+    .join('')
+
+  const uwagi = data.uwagi.length
+    ? emailSectionTitle('Do sprawdzenia') +
+      emailInfoAmber(
+        data.uwagi
+          .map((u) => `<div style="padding:4px 0">&bull;&nbsp;${esc(u)}</div>`)
+          .join(''),
+      )
+    : emailInfoGreen('Reguły kontrolne nie zgłosiły dziś nic do poprawy.')
+
+  const komentarz = data.komentarz
+    ? emailSectionTitle('Komentarz') + emailMessageBox(esc(data.komentarz))
+    : ''
+
+  return emailLayout({
+    preheader: `${data.kafle[0]?.value ?? ''} dzisiaj · ${data.uwagi.length} rzecz${data.uwagi.length === 1 ? '' : 'y'} do sprawdzenia`,
+    content:
+      emailHeader({
+        title: 'Google Ads &mdash; podsumowanie dnia',
+        subtitle: `${esc(data.dzien)}, stan na godz. ${esc(data.godzina)}`,
+        accent: 'blue',
+        zebra: false,
+      }) +
+      emailBody(
+        `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 -6px 4px"><tr>${kafle}</tr></table>` +
+        uwagi +
+        komentarz +
+        emailSectionTitle('Kampanie (7 dni zako&#324;czonych wczoraj)') +
+        emailTable(
+          ['Kampania', 'Koszt', 'Konw.', 'Koszt/konw.', 'Bud&#380;et'],
+          data.kampanie.map((k) => [esc(k.nazwa), esc(k.koszt), esc(k.konwersje), esc(k.kosztKonw), esc(k.budzet)]),
+        ) +
+        (data.frazy.length
+          ? emailSectionTitle('Has&#322;a bez konwersji &mdash; najdro&#380;sze') +
+            emailTable(
+              ['Has&#322;o', 'Klikni&#281;cia', 'Koszt'],
+              data.frazy.map((f) => [esc(f.fraza), esc(f.klikniecia), esc(f.koszt)]),
+            )
+          : '') +
+        emailSectionTitle('Co z tego wysz&#322;o w sklepie (30 dni)') +
+        emailTotalBox(data.sklep) +
+        emailText(
+          '<span style="font-size:13px;color:#64748b">Liczone z bazy sklepu po identyfikatorze klikni&#281;cia, a nie z konwersji Google. Klient, kt&#243;ry zadzwoni&#322; albo wr&#243;ci&#322; p&#243;&#378;niej bez parametru w adresie, nie zostanie przypisany &mdash; mar&#380;a wy&#380;ej jest wi&#281;c doln&#261; granic&#261;, a nie wynikiem kampanii.</span>',
+        ) +
+        emailButton('Otwórz panel Google Ads', 'https://www.takma.com.pl/admin/analytics/ads', '#1e40af'),
+      ),
+  })
+}

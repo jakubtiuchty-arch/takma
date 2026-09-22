@@ -61,7 +61,7 @@ interface GaqlRow {
   campaignBudget?: { amountMicros?: string }
   searchTermView?: { searchTerm?: string }
   adGroupCriterion?: { keyword?: { text?: string; matchType?: string } }
-  segments?: { date?: string }
+  segments?: { date?: string; conversionActionName?: string }
   metrics?: {
     costMicros?: string
     impressions?: string
@@ -69,6 +69,9 @@ interface GaqlRow {
     ctr?: number
     conversions?: number
     conversionsValue?: number
+    // all_* obejmuje też akcje pomocnicze (spoza kolumny „Konwersje”)
+    allConversions?: number
+    allConversionsValue?: number
     costPerConversion?: string
     searchImpressionShare?: number
     searchBudgetLostImpressionShare?: number
