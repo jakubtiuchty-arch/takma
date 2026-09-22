@@ -9,6 +9,7 @@ export const revalidate = 0
 
 const zl = (v: number) => `${v.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł`
 const zl0 = (v: number) => `${Math.round(v).toLocaleString('pl-PL')} zł`
+const l1 = (v: number) => v.toFixed(1).replace('.', ',')
 
 /** Nazwy kampanii w koncie mają ogony typu „- MB - Verseo” i „[API]” — w tabeli tylko przeszkadzają. */
 function skrocNazwe(n: string): string {
@@ -53,7 +54,7 @@ function WykresDni({ dni, budzet }: { dni: PodsumowanieAds['dni']; budzet: numbe
           <div
             key={d.data}
             className="flex-1 h-full flex flex-col justify-end relative group"
-            title={`${d.data}: ${zl(d.koszt)}, ${d.klikniecia} kliknięć, ${d.konwersje.toFixed(1)} konwersji`}
+            title={`${d.data}: ${zl(d.koszt)}, ${d.klikniecia} kliknięć, ${l1(d.konwersje)} konwersji`}
           >
             {d.konwersje > 0 && (
               <div
@@ -80,7 +81,10 @@ function WykresDni({ dni, budzet }: { dni: PodsumowanieAds['dni']; budzet: numbe
 function PasekBudzetu({ k }: { k: KampaniaAds }) {
   const utracone = k.utraconeBudzet ?? 0
   if (!utracone) return <span className="text-gray-300">—</span>
-  const mocne = utracone > 0.15 && k.konwersje > 0
+  // Po podwyżce w oknie sygnał „dołóż budżet” jest już wykonany, a odsetek
+  // opisuje w części starą kwotę. Po obniżce zostaje, bo ostrzega przed cięciem.
+  const podniesiony = !!k.zmianaBudzetu && k.zmianaBudzetu.na > k.zmianaBudzetu.z
+  const mocne = utracone > 0.15 && k.konwersje > 0 && !podniesiony
   return (
     <span className="inline-flex items-center gap-1.5">
       <span className="w-12 h-1.5 rounded-full bg-gray-100 overflow-hidden inline-block align-middle">
@@ -178,7 +182,7 @@ export default async function AdsPage() {
             <Card label={`Dziś do ${godzinaKonta()}`} value={zl0(p.dzis.koszt)} cur={p.dzis.koszt} prev={p.okno7.koszt / 7} compareLabel="vs śr. dzienna" />
             <Card label="Wczoraj" value={zl0(p.wczoraj.koszt)} cur={p.wczoraj.koszt} prev={p.wczorajTydzienTemu.koszt} compareLabel="vs tydzień temu" />
             <Card label="Koszt (7 dni)" value={zl0(p.okno7.koszt)} cur={p.okno7.koszt} prev={p.poprzednie7.koszt} compareLabel="vs poprzednie 7" />
-            <Card label="Konwersje Ads (7 dni)" value={p.okno7.konwersje.toFixed(1)} cur={p.okno7.konwersje} prev={p.poprzednie7.konwersje} compareLabel="vs poprzednie 7" />
+            <Card label="Konwersje Ads (7 dni)" value={l1(p.okno7.konwersje)} cur={p.okno7.konwersje} prev={p.poprzednie7.konwersje} compareLabel="vs poprzednie 7" />
           </div>
 
           {/* Druga linia kafli to już nie Ads, tylko baza sklepu. Celowo bez porównań
@@ -232,12 +236,23 @@ export default async function AdsPage() {
                       <td className="py-2 text-right tabular-nums whitespace-nowrap text-xs"><Zmiana teraz={k.koszt} przed={k.kosztPoprzednio} /></td>
                       <td className="py-2 text-right tabular-nums">{fmt(k.klikniecia)}</td>
                       <td className={`py-2 text-right tabular-nums ${k.konwersje === 0 && k.koszt > 150 ? 'text-red-600 font-medium' : ''}`}>
-                        {k.konwersje.toFixed(1)}
+                        {l1(k.konwersje)}
                       </td>
                       <td className="py-2 text-right tabular-nums whitespace-nowrap text-gray-600">
                         {k.konwersje > 0 ? zl(k.koszt / k.konwersje) : '—'}
                       </td>
-                      <td className="py-2 text-right tabular-nums whitespace-nowrap text-gray-500">{zl0(k.budzetDzienny)}</td>
+                      <td className="py-2 text-right tabular-nums whitespace-nowrap text-gray-500">
+                        {k.zmianaBudzetu ? (
+                          <>
+                            <div>{zl0(k.zmianaBudzetu.z)} → {zl0(k.budzetDzienny)}</div>
+                            <div className="text-[11px] text-gray-400">
+                              od {k.zmianaBudzetu.data.slice(8, 10)}.{k.zmianaBudzetu.data.slice(5, 7)}
+                            </div>
+                          </>
+                        ) : (
+                          zl0(k.budzetDzienny)
+                        )}
+                      </td>
                       <td className="py-2 text-right whitespace-nowrap text-xs"><PasekBudzetu k={k} /></td>
                     </tr>
                   ))}
@@ -253,7 +268,7 @@ export default async function AdsPage() {
                   {p.akcje.map((a) => (
                     <tr key={a.nazwa}>
                       <td className="py-1.5 pr-2 text-gray-800">{a.nazwa}</td>
-                      <td className="py-1.5 text-right tabular-nums text-gray-700">{a.konwersje.toFixed(1)}</td>
+                      <td className="py-1.5 text-right tabular-nums text-gray-700">{l1(a.konwersje)}</td>
                       <td className="py-1.5 pl-3 text-right tabular-nums text-gray-400 whitespace-nowrap">{zl(a.wartosc)}</td>
                     </tr>
                   ))}

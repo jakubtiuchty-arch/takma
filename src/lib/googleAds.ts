@@ -58,7 +58,14 @@ async function getAccessToken(): Promise<string> {
 
 interface GaqlRow {
   campaign?: { id?: string; name?: string; status?: string; advertisingChannelType?: string }
-  campaignBudget?: { amountMicros?: string }
+  campaignBudget?: { amountMicros?: string; resourceName?: string }
+  // Historia zmian konta. W old/newResource są tylko pola, które się zmieniły.
+  changeEvent?: {
+    changeDateTime?: string
+    changeResourceName?: string
+    oldResource?: { campaignBudget?: { amountMicros?: string } }
+    newResource?: { campaignBudget?: { amountMicros?: string } }
+  }
   searchTermView?: { searchTerm?: string }
   adGroupCriterion?: { keyword?: { text?: string; matchType?: string } }
   segments?: { date?: string; conversionActionName?: string }

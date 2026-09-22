@@ -728,7 +728,6 @@ model ShipmentTrackingEvent {
   @@map("shipment_tracking_events")
 }
 
-// Codzienna analiza AI ruchu z GA4 (panel /admin/analytics). 1 wpis = 1 dzień.
 // Wieczorne podsumowanie Google Ads: snapshot liczb + analiza AI.
 // Osobno od GaDigest, bo tamten opisuje ruch, a ten pieniądze.
 model AdsDigest {
@@ -741,6 +740,7 @@ model AdsDigest {
   @@map("ads_digest")
 }
 
+// Codzienna analiza AI ruchu z GA4 (panel /admin/analytics). 1 wpis = 1 dzień.
 model GaDigest {
   id        String   @id @default(cuid())
   date      String   @unique // YYYY-MM-DD (dzień analizy = wczoraj)

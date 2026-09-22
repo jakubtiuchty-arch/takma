@@ -49,6 +49,12 @@ export interface KampaniaAds {
   wartosc: number
   /** Udział wyświetleń utracony przez zbyt niski budżet (0..1). */
   utraconeBudzet?: number
+  /**
+   * Zmiana kwoty budżetu w oknie 7 dni: kwota sprzed pierwszej zmiany, obecna
+   * i ile dni okna przypadło jeszcze na starą kwotę. Dzień zmiany liczy się
+   * do starych, bo zmiana zrobiona wieczorem prawie go nie dotyka.
+   */
+  zmianaBudzetu?: { data: string; z: number; na: number; dniStarych: number }
 }
 
 export interface AkcjaKonwersji {
@@ -147,6 +153,7 @@ async function wynikSklepu(odDni: number): Promise<WynikSklepu> {
 function zbudujUwagi(p: Omit<PodsumowanieAds, 'uwagi'>): string[] {
   const u: string[] = []
   const zl = (v: number) => `${v.toFixed(2).replace('.', ',')} zł`
+  const l1 = (v: number) => v.toFixed(1).replace('.', ',')
 
   // 1. Dzień bieżący wyraźnie drożej niż zwykle — łapiemy jeszcze zanim się skończy.
   const sredniaDzienna = p.okno7.koszt / 7
@@ -156,18 +163,30 @@ function zbudujUwagi(p: Omit<PodsumowanieAds, 'uwagi'>): string[] {
     )
   }
 
+  // Zmiana budżetu w oknie zmienia wymowę reguł 2 i 3: liczby z 7 dni opisują
+  // wtedy w części starą kwotę. Bez tego dopisku reguła 3 zestawiała odsetek
+  // zmierzony przy starym budżecie z nowym i podpowiadała zmianę, która już zaszła.
+  const poZmianie = (k: KampaniaAds) => {
+    const zb = k.zmianaBudzetu
+    if (!zb) return ''
+    return ` Budżet zmieniono ${zb.data.slice(8, 10)}.${zb.data.slice(5, 7)} z ${zl(zb.z)} na ${zl(zb.na)}/dzień; ${zb.dniStarych} z 7 dni okna to jeszcze stara kwota.`
+  }
+
   // 2. Kampanie palące budżet bez efektu. Próg 150 zł, żeby nie alarmować o szumie.
   for (const k of p.kampanie) {
     if (k.koszt > 150 && k.konwersje === 0) {
-      u.push(`Kampania „${k.nazwa}” wydała ${zl(k.koszt)} w 7 dni przy zerze konwersji.`)
+      u.push(`Kampania „${k.nazwa}” wydała ${zl(k.koszt)} w 7 dni przy zerze konwersji.${poZmianie(k)}`)
     }
   }
 
   // 3. Kampanie, którym brakuje budżetu — tu dokładanie pieniędzy ma sens.
   for (const k of p.kampanie) {
     if ((k.utraconeBudzet ?? 0) > 0.15 && k.konwersje > 0) {
+      const proc = `${(k.utraconeBudzet! * 100).toFixed(0)} %`
       u.push(
-        `Kampania „${k.nazwa}” traci ${(k.utraconeBudzet! * 100).toFixed(0)} % wyświetleń przez budżet (${zl(k.budzetDzienny)}/dzień) i ma ${k.konwersje.toFixed(1)} konwersji. Budżet ją ogranicza.`,
+        k.zmianaBudzetu
+          ? `Kampania „${k.nazwa}” straciła ${proc} wyświetleń przez budżet i ma ${l1(k.konwersje)} konwersji.${poZmianie(k)}`
+          : `Kampania „${k.nazwa}” traci ${proc} wyświetleń przez budżet (${zl(k.budzetDzienny)}/dzień) i ma ${l1(k.konwersje)} konwersji. Budżet ją ogranicza.`,
       )
     }
   }
@@ -175,7 +194,7 @@ function zbudujUwagi(p: Omit<PodsumowanieAds, 'uwagi'>): string[] {
   // 4. Koszt rośnie, a konwersje nie nadążają.
   if (p.poprzednie7.koszt > 100 && p.okno7.koszt > p.poprzednie7.koszt * 1.3 && p.okno7.konwersje <= p.poprzednie7.konwersje) {
     u.push(
-      `Koszt tygodnia wzrósł z ${zl(p.poprzednie7.koszt)} do ${zl(p.okno7.koszt)}, a konwersje stoją (${p.poprzednie7.konwersje.toFixed(1)} → ${p.okno7.konwersje.toFixed(1)}).`,
+      `Koszt tygodnia wzrósł z ${zl(p.poprzednie7.koszt)} do ${zl(p.okno7.koszt)}, a konwersje stoją (${l1(p.poprzednie7.konwersje)} → ${l1(p.okno7.konwersje)}).`,
     )
   }
 
@@ -209,7 +228,7 @@ export async function podsumowanieAds(): Promise<PodsumowanieAds> {
   const poprz7Od = dataKonta(14)
   const poprz7Do = dataKonta(8)
 
-  const [wierszeDni, kampanieTeraz, kampaniePrzed, wierszeAkcji, wierszeFraz, sklep7, sklep30] = await Promise.all([
+  const [wierszeDni, kampanieTeraz, kampaniePrzed, wierszeAkcji, wierszeFraz, wierszeZmian, sklep7, sklep30] = await Promise.all([
     adsQuery(`
       SELECT segments.date, metrics.cost_micros, metrics.clicks, metrics.impressions,
              metrics.conversions, metrics.conversions_value
@@ -218,7 +237,7 @@ export async function podsumowanieAds(): Promise<PodsumowanieAds> {
       ORDER BY segments.date`),
     adsQuery(`
       SELECT campaign.id, campaign.name, campaign.status, campaign.advertising_channel_type,
-             campaign_budget.amount_micros,
+             campaign_budget.amount_micros, campaign_budget.resource_name,
              metrics.cost_micros, metrics.clicks, metrics.conversions, metrics.conversions_value,
              metrics.search_budget_lost_impression_share
       FROM campaign
@@ -241,6 +260,22 @@ export async function podsumowanieAds(): Promise<PodsumowanieAds> {
       WHERE segments.date BETWEEN '${okno7Od}' AND '${okno7Do}'
       ORDER BY metrics.cost_micros DESC
       LIMIT 200`),
+    // Zmiany kwot budżetów od początku okna 7 dni. change_event wymaga LIMIT,
+    // sięga najwyżej 30 dni wstecz, a daty podaje w strefie konta. Górna
+    // granica z godziną, bo sama data oznacza północ i ucina dzień bieżący.
+    // To dodatek do reguł, więc błąd tego zapytania nie może zatrzymać maila.
+    adsQuery(`
+      SELECT change_event.change_date_time, change_event.change_resource_name,
+             change_event.old_resource, change_event.new_resource
+      FROM change_event
+      WHERE change_event.change_date_time >= '${okno7Od}'
+        AND change_event.change_date_time <= '${dzis} 23:59:59'
+        AND change_event.change_resource_type = 'CAMPAIGN_BUDGET'
+      ORDER BY change_event.change_date_time
+      LIMIT 500`).catch((e) => {
+      console.error('[Ads] historia zmian budżetów niedostępna:', e instanceof Error ? e.message.slice(0, 200) : e)
+      return []
+    }),
     wynikSklepu(7),
     wynikSklepu(30),
   ])
@@ -266,6 +301,31 @@ export async function podsumowanieAds(): Promise<PodsumowanieAds> {
   }
 
   const wOknie = (od: string, doo: string) => dni.filter((d) => d.data >= od && d.data <= doo)
+
+  // --- zmiany budżetów ---------------------------------------------------
+  // Zdarzenia idą rosnąco po czasie: „z” zostaje z pierwszej zmiany w oknie,
+  // „na” i data z ostatniej. Zmiana innego pola budżetu (np. nazwy) nie niesie
+  // kwoty i jest pomijana.
+  const zmianyBudzetow = new Map<string, { data: string; z: number; na: number }>()
+  for (const r of wierszeZmian) {
+    const e = r.changeEvent
+    const stara = e?.oldResource?.campaignBudget?.amountMicros
+    const nowa = e?.newResource?.campaignBudget?.amountMicros
+    if (!e?.changeResourceName || !e.changeDateTime || !stara || !nowa) continue
+    const wczesniej = zmianyBudzetow.get(e.changeResourceName)
+    zmianyBudzetow.set(e.changeResourceName, {
+      data: e.changeDateTime.slice(0, 10),
+      z: wczesniej ? wczesniej.z : mikro(stara),
+      na: mikro(nowa),
+    })
+  }
+  const dniOkna7 = wOknie(okno7Od, okno7Do)
+  const zmianaBudzetu = (zasob?: string): KampaniaAds['zmianaBudzetu'] => {
+    const zm = zasob ? zmianyBudzetow.get(zasob) : undefined
+    // Podwyżka i powrót do tej samej kwoty w jednym oknie to brak zmiany.
+    if (!zm || zm.z === zm.na) return undefined
+    return { ...zm, dniStarych: dniOkna7.filter((d) => d.data <= zm.data).length }
+  }
 
   // --- kampanie ----------------------------------------------------------
   const przedWgId = new Map<string, { koszt: number; konwersje: number }>()
@@ -293,6 +353,7 @@ export async function podsumowanieAds(): Promise<PodsumowanieAds> {
       konwersjePoprzednio: przed?.konwersje ?? 0,
       wartosc: lb(r.metrics?.conversionsValue),
       utraconeBudzet: r.metrics?.searchBudgetLostImpressionShare as number | undefined,
+      zmianaBudzetu: zmianaBudzetu(r.campaignBudget?.resourceName),
     }
   })
 

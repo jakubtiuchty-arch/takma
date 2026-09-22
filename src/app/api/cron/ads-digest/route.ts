@@ -23,6 +23,9 @@ function skrocNazwe(n: string): string {
   return n.replace(/\s*\[API\]\s*$/, '').replace(/\s*-\s*(MB|DK)\s*-\s*Verseo\s*$/i, '').trim()
 }
 
+/** „22.09” z „2026-09-22”. */
+const dzienMiesiac = (d: string) => `${d.slice(8, 10)}.${d.slice(5, 7)}`
+
 /**
  * Komentarz od modelu. Dostaje te same liczby co mail, plus jawnie napisane,
  * czego NIE wolno mu wnioskować — bez tego dopisywał tezy o konwersjach
@@ -33,10 +36,13 @@ async function komentarz(p: PodsumowanieAds): Promise<string> {
 
   const kampanie = p.kampanie
     .filter((k) => k.koszt > 0)
-    .map(
-      (k) =>
-        `  - ${skrocNazwe(k.nazwa)}${k.status === 'PAUSED' ? ' [wstrzymana]' : ''}: ${zl(k.koszt)} (poprzedni tydzień ${zl(k.kosztPoprzednio)}), ${k.klikniecia} kliknięć, ${k.konwersje.toFixed(1)} konwersji (poprzednio ${k.konwersjePoprzednio.toFixed(1)}), budżet ${zl(k.budzetDzienny)}/dzień, traci przez budżet ${((k.utraconeBudzet ?? 0) * 100).toFixed(0)}%`,
-    )
+    .map((k) => {
+      const zb = k.zmianaBudzetu
+      const budzet = zb
+        ? `budżet ${zl(k.budzetDzienny)}/dzień od ${dzienMiesiac(zb.data)}, wcześniej ${zl(zb.z)} (${zb.dniStarych} z 7 dni okna na starej kwocie)`
+        : `budżet ${zl(k.budzetDzienny)}/dzień`
+      return `  - ${skrocNazwe(k.nazwa)}${k.status === 'PAUSED' ? ' [wstrzymana]' : ''}: ${zl(k.koszt)} (poprzedni tydzień ${zl(k.kosztPoprzednio)}), ${k.klikniecia} kliknięć, ${k.konwersje.toFixed(1)} konwersji (poprzednio ${k.konwersjePoprzednio.toFixed(1)}), ${budzet}, traci przez budżet ${((k.utraconeBudzet ?? 0) * 100).toFixed(0)}%`
+    })
     .join('\n')
 
   const prompt = `Jesteś analitykiem Google Ads sklepu B2B TAKMA (sprzęt Zebra, Honeywell, Datalogic: drukarki etykiet, drukarki kart, skanery, terminale, materiały eksploatacyjne). Konto jest wspólne ze stroną serwisową serwis-zebry.pl, dlatego w rozbiciu konwersji widać także akcje tamtej strony.
@@ -73,6 +79,7 @@ ${p.uwagi.map((u) => `  - ${u}`).join('\n') || '  - nic'}
 - Nie wyciągaj wniosków o skuteczności z dnia bieżącego ani z wczorajszego: konwersje domykają się przez 24-48 godzin. Do ocen używaj okna 7 dni.
 - Nie powtarzaj reguł kontrolnych słowo w słowo — one już są w mailu wyżej.
 - Nie proponuj działań, których nie da się wykonać w Google Ads albo na stronie sklepu.
+- Jeśli budżet kampanii zmieniono w oknie 7 dni, jej koszt, konwersje i utrata wyświetleń przez budżet opisują w części starą kwotę. Nie proponuj ponownie zmiany, która już zaszła, i nie oceniaj nowej kwoty, dopóki większość okna przypada na starą.
 - Nie pisz ogólników („warto monitorować", „kluczowe znaczenie"). Każde zdanie ma mieć liczbę albo nazwę.
 
 ## Zadanie
@@ -146,9 +153,11 @@ export async function GET(request: NextRequest) {
       .map((k) => ({
         nazwa: skrocNazwe(k.nazwa),
         koszt: zl0(k.koszt),
-        konwersje: k.konwersje.toFixed(1),
+        konwersje: k.konwersje.toFixed(1).replace('.', ','),
         kosztKonw: k.konwersje > 0 ? zl0(k.koszt / k.konwersje) : '—',
-        budzet: `${zl0(k.budzetDzienny)}/dz.`,
+        budzet: k.zmianaBudzetu
+          ? `${zl0(k.zmianaBudzetu.z)} → ${zl0(k.budzetDzienny)}/dz.`
+          : `${zl0(k.budzetDzienny)}/dz.`,
       })),
     frazy: p.frazyBezKonwersji.slice(0, 8).map((f) => ({
       fraza: f.fraza,
