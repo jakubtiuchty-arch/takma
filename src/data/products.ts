@@ -47554,7 +47554,7 @@ Zabezpieczenia obejmują uwierzytelnianie drukarki i hosta oraz szyfrowanie dany
       { partNumber: 'ZC31-F00C000EM00', name: 'ZC300 jednostronna + koder MIFARE i stykowy', priceFrom: 5763.98, availability: 'unavailable', gtin13: '8596375234147', attributes: { 'Koder MIFARE i stykowy': 'Tak' } },
       { partNumber: 'ZC31-FM0C000EM00', name: 'ZC300 jednostronna + koder magnetyczny, MIFARE i stykowy', priceFrom: 6607.82, availability: 'unavailable', gtin13: '8596375234154', attributes: { 'Koder magnetyczny': 'Tak', 'Koder MIFARE i stykowy': 'Tak' } },
       { partNumber: 'ZC31-000W000EM00', name: 'ZC300 jednostronna + Wi-Fi', priceFrom: 4920.09, availability: 'unavailable', attributes: { 'Wi-Fi': 'Tak' } },
-      { partNumber: 'ZC32-000C000EM00', name: 'ZC300 dwustronna', priceFrom: 5242.70, availability: 'available', gtin13: '8596375175013', attributes: { 'Druk dwustronny': 'Tak' } },
+      { partNumber: 'ZC32-000C000EM00', name: 'ZC300 dwustronna', priceFrom: 4573, availability: 'available', gtin13: '8596375175013', attributes: { 'Druk dwustronny': 'Tak' } },
       { partNumber: 'ZC32-0M0C000EM00', name: 'ZC300 dwustronna + koder magnetyczny', priceFrom: 6296.25, availability: 'available', gtin13: '8596375175020', attributes: { 'Druk dwustronny': 'Tak', 'Koder magnetyczny': 'Tak' } },
       { partNumber: 'ZC32-000W000EM00', name: 'ZC300 dwustronna + Wi-Fi', priceFrom: 6088.50, availability: 'unavailable', attributes: { 'Druk dwustronny': 'Tak', 'Wi-Fi': 'Tak' } },
     ],

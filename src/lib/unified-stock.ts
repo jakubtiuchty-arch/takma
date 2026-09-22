@@ -464,6 +464,7 @@ export async function lookupUnifiedStock(partNumbers: string[], showDebug = fals
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
       }
 
+
       // Availability & delivery text
       let availability: StockInfo['availability']
       let deliveryText: string

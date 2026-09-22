@@ -1124,3 +1124,12 @@ Otwarte na kolejne sesje:
 - Treść obu kart mówi wprost, czym się różnią i kiedy który wybrać: Bluetooth łączy się wprost z telefonem i tabletem, radio STAR wymaga bazy, ale pracuje poza pasmem Wi-Fi, więc w hali z gęstą siecią nie gubi połączenia. Ceny są zbliżone, więc to jedyne kryterium wyboru.
 - **Cztery modele QuickScan nie dawały się odróżnić** (user: „nie czaję czym się te skanery różnią"). Każda karta opisywała siebie, ale żadna nie ustawiała modelu wobec pozostałych trzech, więc czytelnik nie miał punktu odniesienia. Wspólny wstęp na wszystkich czterech kartach mówi teraz wprost, że to jeden skaner w czterech wariantach różniących się **tylko matrycą i sposobem połączenia**: QD2590 przewodowy z matrycą 1 Mpix jako punkt odniesienia, QW2520 ten sam z tańszą matrycą VGA, QBT2500 i QM2500 to QD2590 bez kabla — na Bluetoothie albo na radiu 433 MHz.
 - Po wstępie każda karta dodaje jedno zdanie o swoim miejscu w czwórce, a dalej leci opis własny. Usunięte przy tym sześć akapitów, które po dodaniu wstępu mówiły to samo drugi raz — kontrola na wyrenderowanych stronach: zero powtórzonych zdań na każdej z czterech kart, opisy po 1650–1730 znaków.
+
+## Cena ZC32-000C000EM00 obniżona do 4573 zł netto (22.09.2026)
+
+- **Nowy mechanizm: `MANUAL_NET_PRICES` w `stock-overrides.ts`.** Wcześniej cena zawsze wychodziła z zakupu razy marża, więc nie dało się jej ustalić decyzją handlową. Mapa PN → cena netto plus powód i data.
+- Nałożenie siedzi w `applyStockOverrides`, **nie** w ścieżce żywej `unified-stock`. Pierwsza próba tam nie zadziałała, bo `/api/stock` serwował z `StockCache` policzoną wcześniej cenę — a przy nocnym syncu cena i tak by wróciła. Przez `applyStockOverrides` przechodzą wszystkie cztery ścieżki: odczyt z cache, wyliczenie na żywo, fallback i sync.
+- `StockLike` rozszerzone o `price` i `priceBrutto`. `ingramPrice` zostaje prawdziwy, żeby audyt marży widział faktyczny koszt.
+- `priceFrom` wariantu w `products.ts` zrównane do 4573, żeby kafelek w katalogu nie kłócił się z kartą.
+- **Uzasadnienie i ryzyko:** cena opiera się na zakupie 4163 zł z rabatu Trade UP 62 %, dostępnego **wyłącznie z voucherem i oddaniem starego sprzętu**. Standardowy zakup to 4710,87 zł, więc sprzedaż bez Trade UP daje **2,9 % straty**. Wpis ma datę wygaśnięcia promocji (31.12.2026) — po niej trzeba go usunąć.
+- Pozycja rynkowa: 5624,79 zł brutto wobec najtańszej oferty na Ceneo 5625,56 zł. **Przewaga wynosi 77 groszy** — wystarczy, że ktokolwiek ruszy cenę, i pierwsze miejsce znika.

@@ -152,9 +152,34 @@ interface StockLike {
   stockDE?: number
   totalStock?: number
   inDelivery?: number
+  price?: number
+  priceBrutto?: number
 }
 
 /** Nakłada korekty na pojedynczy wiersz stanu (mutuje i zwraca ten sam obiekt). */
+/**
+ * Ręcznie ustalona cena sprzedaży netto per Part Number.
+ *
+ * Normalnie cena wychodzi z ceny zakupu razy marża, więc podąża za cennikiem
+ * dystrybutora. Tu ustawiamy ją wprost, bo wynika z decyzji handlowej, a nie
+ * z bieżącego kosztu — przykładem jest Zebra Trade UP, gdzie zakup jest niższy
+ * od standardowego, ale **tylko przy zamówieniu z voucherem i oddaniu starego
+ * sprzętu**. Bez tej ścieżki kupujemy drożej i sprzedaż poniżej kosztu.
+ *
+ * Dlatego każdy wpis musi mieć powód i datę, a przy wygaśnięciu promocji
+ * (Trade UP: 31.12.2026) trzeba go usunąć, żeby cena wróciła do rachunku
+ * z żywego kosztu.
+ */
+export const MANUAL_NET_PRICES = new Map<string, { netto: number; powod: string }>([
+  [
+    'ZC32-000C000EM00',
+    {
+      netto: 4573,
+      powod: 'Zebra Trade UP (rabat 62 %, zakup 4163 zł) — cena na pierwsze miejsce w rankingu Ceneo; wymaga vouchera i oddania starego sprzętu. Ustawione 22.09.2026, wygasa z promocją 31.12.2026.',
+    },
+  ],
+])
+
 export function applyStockOverrides<T extends StockLike>(row: T): T {
   const partNumber = row.partNumber.toUpperCase()
   const manualStock = MANUAL_STOCK_OVERRIDES.get(partNumber)
@@ -168,6 +193,15 @@ export function applyStockOverrides<T extends StockLike>(row: T): T {
     row.availability = 'available'
     row.deliveryText = manualStock.deliveryText
     return row
+  }
+
+  // Cena ustalona ręcznie ma pierwszeństwo przed rachunkiem z kosztu i przed
+  // wartością zapisaną w StockCache. Nakładamy ją tutaj, bo przez tę funkcję
+  // przechodzą wszystkie ścieżki: odczyt z cache, wyliczenie na żywo i nocny sync.
+  const recznaCena = MANUAL_NET_PRICES.get(partNumber)
+  if (recznaCena && row.price != null) {
+    row.price = recznaCena.netto
+    row.priceBrutto = Math.round(recznaCena.netto * 1.23 * 100) / 100
   }
 
   if (row.found && PRELAUNCH_PNS.has(partNumber)) {
