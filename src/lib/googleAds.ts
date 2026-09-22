@@ -105,6 +105,42 @@ export async function adsQuery(query: string): Promise<GaqlRow[]> {
   return rows
 }
 
+/**
+ * Mutacja dowolnego zasobu Ads (np. `campaignCriteria`, `adGroupCriteria`).
+ *
+ * `partialFailure` włączone celowo: przy wsadzie wykluczeń jedna odrzucona
+ * operacja (np. duplikat już istniejącego wykluczenia) nie może przewrócić
+ * całej reszty. Odrzucone wracają w `partialFailureError` i trzeba je odczytać,
+ * bo HTTP nadal jest 200.
+ */
+export async function adsMutate(
+  zasob: string,
+  operations: unknown[],
+  opcje: { validateOnly?: boolean } = {},
+): Promise<{ wykonane: number; bledy: string[] }> {
+  const token = await getAccessToken()
+  const cid = process.env.GOOGLE_ADS_CUSTOMER_ID!
+  const loginCid = process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID
+  const res = await fetch(`https://googleads.googleapis.com/${API_VERSION}/customers/${cid}/${zasob}:mutate`, {
+    method: 'POST',
+    headers: {
+      authorization: `Bearer ${token}`,
+      'content-type': 'application/json',
+      'developer-token': process.env.GOOGLE_ADS_DEVELOPER_TOKEN!,
+      ...(loginCid ? { 'login-customer-id': loginCid } : {}),
+    },
+    body: JSON.stringify({ operations, partialFailure: true, validateOnly: opcje.validateOnly ?? false }),
+  })
+  const json = await res.json()
+  if (!res.ok) throw new Error(`Ads mutate ${res.status}: ${JSON.stringify(json).slice(0, 400)}`)
+  const bledy: string[] = []
+  const pf = json.partialFailureError
+  if (pf?.details) {
+    for (const d of pf.details) for (const e of d.errors || []) bledy.push(e.message || JSON.stringify(e))
+  }
+  return { wykonane: (json.results || []).filter((r: unknown) => r && Object.keys(r).length).length, bledy }
+}
+
 // --- Typy panelu -------------------------------------------------------------
 
 export interface AdsCampaign {

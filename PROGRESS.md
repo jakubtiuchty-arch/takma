@@ -1133,3 +1133,12 @@ Otwarte na kolejne sesje:
 - `priceFrom` wariantu w `products.ts` zrównane do 4573, żeby kafelek w katalogu nie kłócił się z kartą.
 - **Uzasadnienie i ryzyko:** cena opiera się na zakupie 4163 zł z rabatu Trade UP 62 %, dostępnego **wyłącznie z voucherem i oddaniem starego sprzętu**. Standardowy zakup to 4710,87 zł, więc sprzedaż bez Trade UP daje **2,9 % straty**. Wpis ma datę wygaśnięcia promocji (31.12.2026) — po niej trzeba go usunąć.
 - Pozycja rynkowa: 5624,79 zł brutto wobec najtańszej oferty na Ceneo 5625,56 zł. **Przewaga wynosi 77 groszy** — wystarczy, że ktokolwiek ruszy cenę, i pierwsze miejsce znika.
+
+## Wykluczenia krzyżowe w kampaniach Verseo (22.09.2026)
+
+- **Dwie kampanie Verseo licytowały te same frazy.** Na „zebra zd421d" jedna płaciła 16,75 zł za kliknięcie, druga 2,19 zł za to samo zapytanie. Łącznie 38 fraz nakładało się między wszystkimi kampaniami, co kosztowało 303 zł na 30 dni.
+- Wdrożone **23 wykluczenia w dopasowaniu ścisłym**: 12 w „SW Modele produktów – DK", 11 w „SW Zebra – takma.com.pl". Szacowana oszczędność **124 zł / 30 dni**. Ścisłe, nie frazowe — blokują dokładnie te zapytania, które się dublowały, bez ryzyka ucięcia szerszego ruchu.
+- **Zabezpieczenie:** fraza nie jest wykluczana z kampanii, w której przyniosła konwersję. Reguła: zostaje tam, gdzie CPC było niższe.
+- **Czego NIE ruszano:** DSA i Shopping. DSA okazało się najlepszą kampanią w koncie — 28 konwersji przy CPC 2,52 zł, czyli więcej niż wszystkie pozostałe razem (24,5). Moja pierwotna uwaga, że „DSA licytuje przeciwko własnej kampanii", opierała się na dwóch wierszach i była nietrafiona.
+- **Druga nietrafiona uwaga:** napisałem, że nie sprzedajemy Magicarda 600. Sprzedajemy — Magicard 600 Duo, obok 300, Prima 8, Pronto100 i HUB. Lead z 17.09 dotyczył Magicarda 300, więc te kliknięcia się zwróciły.
+- **Nowe w kodzie: `adsMutate()` w `src/lib/googleAds.ts`.** Klient umiał dotąd tylko czytać. `partialFailure` włączone celowo — przy wsadzie jedna odrzucona operacja nie przewraca reszty, ale HTTP nadal jest 200, więc `partialFailureError` trzeba odczytać ręcznie. Przed wysyłką warto puścić z `validateOnly`.
