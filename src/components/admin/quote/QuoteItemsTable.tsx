@@ -60,7 +60,92 @@ export interface TrafienieKoncesji {
   uwagi: string | null
 }
 
-function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: number; koncesje?: TrafienieKoncesji[] }) {
+/** Stan u dystrybutorów z /api/admin/dostepnosc. */
+interface Dostepnosc {
+  found: boolean
+  stockPL: number
+  stockDE: number
+  inDelivery: number
+  incomingDate: string | null
+  lastSync: string
+}
+
+/**
+ * Kropka odróżnia stan od podpowiedzi cenowych, które też są zielone.
+ * „Dostępny” zostaje stonowany; kolorem krzyczą tylko problemy.
+ */
+function Kropka({ kolor }: { kolor: string }) {
+  return <span className={`inline-block w-1.5 h-1.5 rounded-full align-middle mr-1.5 ${kolor}`} />
+}
+
+/**
+ * Czy towar jest, zanim oferta pójdzie do klienta. Liczy się to, co leży u
+ * dystrybutorów teraz (PL + magazyny UE), porównane z ilością w ofercie;
+ * dostawa w drodze to tylko informacja — status zostaje dwustanowy, jak w
+ * sklepie, a wyjątkiem jest „za mało”, bo tego sklep nie musi wiedzieć.
+ */
+function LiniaDostepnosci({ d, ilosc, sprawdzam }: { d?: Dostepnosc; ilosc: number; sprawdzam: boolean }) {
+  if (!d) {
+    return sprawdzam ? <div className="mt-1 px-1 text-xs text-gray-400">Sprawdzam stan u dystrybutorów…</div> : null
+  }
+  if (!d.found) {
+    return (
+      <div className="mt-1 px-1 text-xs text-gray-400">
+        <Kropka kolor="bg-gray-300" />
+        Brak danych o stanie — dystrybutorzy nie podają tego numeru
+      </div>
+    )
+  }
+
+  const naStanie = d.stockPL + d.stockDE
+  const gdzie = [
+    d.stockPL > 0 ? `${d.stockPL} szt. w PL (24 h)` : '',
+    d.stockDE > 0 ? `${d.stockDE} szt. w UE (2–3 dni)` : '',
+  ]
+    .filter(Boolean)
+    .join(', ')
+  const dostawa =
+    d.inDelivery > 0
+      ? `w dostawie ${d.inDelivery} szt.${d.incomingDate ? `, ok. ${new Date(d.incomingDate).toLocaleDateString('pl-PL')}` : ''}`
+      : ''
+  const godzina = new Date(d.lastSync).toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' })
+
+  const [status, kropka, kolor, opis]: [string, string, string, string[]] =
+    naStanie >= ilosc
+      ? ['Dostępny', 'bg-emerald-500', 'text-gray-900', [gdzie, dostawa]]
+      : naStanie > 0
+        ? [
+            'Za mało',
+            'bg-amber-500',
+            'text-amber-700',
+            // Suma ma sens tylko przy dwóch magazynach — przy jednym powtarzałaby liczbę.
+            [`w ofercie ${ilosc} szt., na stanie ${d.stockPL > 0 && d.stockDE > 0 ? `${naStanie}: ` : ''}${gdzie}`, dostawa],
+          ]
+        : ['Niedostępny', 'bg-red-500', 'text-red-600', [dostawa || 'brak u dystrybutorów']]
+
+  return (
+    <div className="mt-1 px-1 text-xs leading-relaxed">
+      <Kropka kolor={kropka} />
+      <span className={`font-medium ${kolor}`}>{status}</span>
+      <span className="text-gray-500"> — {opis.filter(Boolean).join('; ')}</span>
+      <span className="text-gray-400"> · stan z {godzina}</span>
+    </div>
+  )
+}
+
+function ItemRow({
+  item,
+  index,
+  koncesje = [],
+  dostepnosc,
+  sprawdzamStan,
+}: {
+  item: QuoteItemData
+  index: number
+  koncesje?: TrafienieKoncesji[]
+  dostepnosc?: Dostepnosc
+  sprawdzamStan: boolean
+}) {
   const { updateItem, removeItem, reorderItems } = useQuoteStore()
   const isCatalog = item.source === 'catalog'
 
@@ -93,6 +178,7 @@ function ItemRow({ item, index, koncesje = [] }: { item: QuoteItemData; index: n
         {item.partNumber && (
           <span className="text-xs text-gray-400 font-mono px-1">{item.partNumber}</span>
         )}
+        {item.partNumber && <LiniaDostepnosci d={dostepnosc} ilosc={item.quantity} sprawdzam={sprawdzamStan} />}
         {/* Ceny specjalne — pokazujemy, nie wstawiamy sami. Cena formalnie
             dotyczy jednej szansy sprzedaży, więc decyzja należy do handlowca.
             Ten sam numer bywa i w koncesji Zebry, i w ofercie dystrybutora —
@@ -281,6 +367,37 @@ export default function QuoteItemsTable() {
   const [koncesje, setKoncesje] = useState<Record<string, TrafienieKoncesji[]>>({})
   const numery = items.map((i) => i.partNumber).filter(Boolean).join(',')
 
+  /**
+   * Stan u dystrybutorów — tak samo raz dla wszystkich pozycji. Poprzedni
+   * wynik zostaje na ekranie, dopóki nie przyjdzie nowy; „sprawdzam” widać
+   * tylko przy numerze, o którym jeszcze nic nie wiemy.
+   */
+  const [dostepnosc, setDostepnosc] = useState<Record<string, Dostepnosc>>({})
+  const [sprawdzamStan, setSprawdzamStan] = useState(false)
+
+  useEffect(() => {
+    if (!numery) {
+      setDostepnosc({})
+      return
+    }
+    let aktualne = true
+    setSprawdzamStan(true)
+    fetch(`/api/admin/dostepnosc?pn=${encodeURIComponent(numery)}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (aktualne) setDostepnosc((d?.wgPn ?? {}) as Record<string, Dostepnosc>)
+      })
+      .catch(() => {
+        /* bez stanu tabela działa dalej */
+      })
+      .finally(() => {
+        if (aktualne) setSprawdzamStan(false)
+      })
+    return () => {
+      aktualne = false
+    }
+  }, [numery])
+
   useEffect(() => {
     if (!numery) {
       setKoncesje({})
@@ -326,7 +443,14 @@ export default function QuoteItemsTable() {
         </thead>
         <tbody>
           {items.map((item, i) => (
-            <ItemRow key={item.id} item={item} index={i} koncesje={item.partNumber ? koncesje[item.partNumber] : undefined} />
+            <ItemRow
+              key={item.id}
+              item={item}
+              index={i}
+              koncesje={item.partNumber ? koncesje[item.partNumber] : undefined}
+              dostepnosc={item.partNumber ? dostepnosc[item.partNumber] : undefined}
+              sprawdzamStan={sprawdzamStan}
+            />
           ))}
         </tbody>
       </table>

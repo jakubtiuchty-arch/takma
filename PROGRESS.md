@@ -1184,3 +1184,11 @@ Otwarte na kolejne sesje:
 - **Przy okazji:** kwoty w euro w podpowiedzi z przecinkiem dziesiętnym; przypomnienie mailowe dla listy Trade UP bez tabeli pozycji, a nagłówek cennika nie udaje już koncesji; „ważna”/„ważny” w komunikacie importu.
 - **Sprawdzone lokalnie:** import prawdziwej listy, biuletyn programu odrzucony z czytelnym komunikatem, odwrócony okres odrzucony, podpowiedzi w edycji istniejącej oferty (Playwright), `tsc` bez błędów.
 - **Kolejność wdrożenia:** testowy import usunięty przed pushem, żeby produkcja na starym kodzie nie pokazywała w ofertowniku ceny 0,00 zł; listę wczytujemy ponownie dopiero po udanym deployu. Następna wersja listy — przez panel, daty i warunki podpowie z poprzedniej.
+
+## Dostępność u dystrybutorów w pozycjach oferty (22.09.2026, noc)
+
+- **Kreator oferty pokazuje stan przy każdej pozycji z numerem katalogowym:** kropka + „Dostępny” / „Za mało” / „Niedostępny” / „Brak danych”, potem gdzie leży towar (PL z wysyłką 24 h, magazyny UE 2–3 dni), dostawa w drodze z terminem, jeśli dystrybutor go podaje, i godzina odczytu. „Za mało” porównuje ilość w ofercie z tym, co leży teraz u dystrybutorów (PL + UE) — dostawa w drodze się nie wlicza.
+- **Nowy `GET /api/admin/dostepnosc?pn=…`** (tylko zalogowani): `lookupUnifiedStock` z nowym `maxWiekCacheMs` = 1 h — wpis w StockCache starszy niż godzina idzie do dystrybutorów na żywo i zapisuje się z powrotem do cache. Sklep zostaje przy dobie. O każdy numer pytamy osobno, bo BlueStar przy zapytaniu zbiorczym zeruje odpowiedź, gdy jeden numer jest u niego niedostępny.
+- **Czasy:** pierwsze sprawdzenie 5 numerów na żywo 7,6 s, drugie z cache 1,4 s. W trakcie przy nowym numerze widać „Sprawdzam stan u dystrybutorów…”.
+- **Sprawdzone Playwrightem, bez zapisu oferty:** wszystkie cztery stany (ZT61043-T2E0100Z przy 40 szt. → „Za mało”, CK67-BTSC-001 → „Niedostępny — w dostawie 4660 szt.”, nieznany numer → „Brak danych”); `tsc` bez błędów.
+- **Znany drobiazg:** termin dostawy (`incomingDate`) przychodzi tylko ze ścieżki na żywo — StockCache nie ma tej kolumny, więc przy odczycie z cache go nie widać.

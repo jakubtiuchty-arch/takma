@@ -61,8 +61,18 @@ function stockResponse(body: StockResponse['body'], init?: { status?: number; he
   return { body, status: init?.status ?? 200, headers: init?.headers }
 }
 
-/** Wspólne źródło ofert dla API i renderowania po stronie serwera. */
-export async function lookupUnifiedStock(partNumbers: string[], showDebug = false): Promise<StockResponse> {
+/**
+ * Wspólne źródło ofert dla API i renderowania po stronie serwera.
+ *
+ * `maxWiekCacheMs` skraca ważność wpisu w StockCache — starszy idzie do
+ * dystrybutorów na żywo (i zapisuje się z powrotem do cache). Sklepowi
+ * wystarcza doba, ale kreator oferty sprawdza stan tuż przed wysłaniem.
+ */
+export async function lookupUnifiedStock(
+  partNumbers: string[],
+  showDebug = false,
+  opcje: { maxWiekCacheMs?: number } = {}
+): Promise<StockResponse> {
   // Dystrybutorzy bez API: jeśli cały request dotyczy ręcznie utrzymywanych
   // stanów, odpowiedz od razu i nie czekaj na integracje zewnętrzne.
   if (partNumbers.every(pn => MANUAL_STOCK_OVERRIDES.has(pn.toUpperCase()))) {
@@ -95,7 +105,7 @@ export async function lookupUnifiedStock(partNumbers: string[], showDebug = fals
     // override (StockCache may be stale because previous stock-sync ran while
     // jarltech-sync was still syncing).
     // ============================================
-    const CACHE_MAX_AGE_MS = 24 * 60 * 60 * 1000 // 24h
+    const CACHE_MAX_AGE_MS = opcje.maxWiekCacheMs ?? 24 * 60 * 60 * 1000 // domyślnie 24h
     // Jarltech: wpisy starsze niż 7 dni traktujemy jak BRAK wpisu — jarltech-sync
     // rotuje pulę (~350 PN/przebieg), a stęchły stan (112 szt. z kwietnia przy
     // realnym 0) nie może zawyżać override'u. Brak wpisu = odpala się live
