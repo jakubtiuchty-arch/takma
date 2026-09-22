@@ -1108,3 +1108,13 @@ Otwarte na kolejne sesje:
 - **Dane handlowe po naprawie** (ceny sprzedażowe PLN, stan DE): QD2220-BKK1S 218,39 zł / 195 szt.; QW2520-BKK1S 290,10 zł / 794; QD2590-BKK1S 414,14 zł / 241; PD9630-SRK1 1527,66 zł / 45; PM9600-SR433RBK10 3555,95 zł / 50; GD4520-BKK1B 1148,33 zł / 0.
 - Jarltech dla porównania trzyma QD2220-BKK1S 1274 szt., QD2590-BKK1S 862, QW2520-BKK1S 368 (+814 w drodze), a Gryphona GD4520 zero. Dwa niezależne źródła zgodnie pokazują, że obrotowa jest linia QuickScan, nie Gryphon.
 - **Pułapka, w którą sam wszedłem**: próbne zapytania o nieistniejące PN-y zapisały 59 wpisów `found:false` w `StockCache` i unified zaczął je serwować zamiast pytać na żywo. Czyszczenie działa tylko przez alias projektu — `npx tsx --tsconfig tsconfig.json` ze skryptem w katalogu repo i importem `@/lib/db`; Prisma 7 generuje klienta do `src/generated/prisma` w TypeScripcie, więc z scratchpadu ani gołym node nie da się go załadować.
+
+## Skanery Datalogic QuickScan 2500 — pierwsze trzy karty (22.09.2026)
+
+- Dodane `datalogic-quickscan-qd2590`, `-qw2520` i `-qbt2500`. Dwa pierwsze w podkategorii `skanery-przewodowe`, trzeci w `skanery-bezprzewodowe`.
+- **Numery katalogowe wzięte ze zrzutu z BlueStar, nie zgadywane** — moje wcześniejsze próby miały złe końcówki. Obrotowe są warianty bez `S`: `QD2590-BKK1` (1079 szt. łącznie), `QW2520-BKK1` (640), `QBT2500-BK-BTK1` (223). Warianty z końcówką `S` mają stany bliskie zeru.
+- Ceny sklepowe z żywego zapytania: QD2590 od 319,25 zł (sam skaner), QW2520 od 230,15 zł, QBT2500 733,39 zł. Każda karta ma warianty z osobnymi PN-ami i cenami.
+- Parametry przepisane z karty katalogowej serii, którą dostałem od usera — matryca 1 Mpix w QD2590 i QBT2500 wobec VGA w QW2520, zasięgi per typ kodu, IP52, upadki z 1,5 m, 10 mln naciśnięć spustu i **pięć lat gwarancji**. PDF wgrany do `public/datasheets/`.
+- Zdjęcia: trzy rendery od usera przepuszczone przez `obrob-zdjecia.py --kategoria=skanery-kodow-kreskowych` (płótno 600×1200). Producent publikuje wyłącznie jeden render na serię, a obrazy podpisane per model na jego stronie to banery marketingowe z tekstem — stąd materiały musiały przyjść z zewnątrz.
+- **QM2500 (radio STAR) pominięty** — brak osobnego zdjęcia, a wygląda identycznie jak QBT2500. Wspomniany w opisie QBT2500 jako alternatywa dla hal z gęstym Wi-Fi.
+- Różnica QD2590 wobec QW2520 opisana wprost w treści, bo to jedyna rzecz, która je dzieli: matryca megapikselowa kontra VGA, czyli najdrobniejszy Code 39 0,077 mm wobec 0,127 mm, dłuższy zasięg, obsługa znaków wodnych Digimarc i interfejs RS-232, którego QW2520 nie ma.
