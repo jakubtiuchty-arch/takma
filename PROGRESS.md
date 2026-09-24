@@ -1192,3 +1192,12 @@ Otwarte na kolejne sesje:
 - **Czasy:** pierwsze sprawdzenie 5 numerów na żywo 7,6 s, drugie z cache 1,4 s. W trakcie przy nowym numerze widać „Sprawdzam stan u dystrybutorów…”.
 - **Sprawdzone Playwrightem, bez zapisu oferty:** wszystkie cztery stany (ZT61043-T2E0100Z przy 40 szt. → „Za mało”, CK67-BTSC-001 → „Niedostępny — w dostawie 4660 szt.”, nieznany numer → „Brak danych”); `tsc` bez błędów.
 - **Znany drobiazg:** termin dostawy (`incomingDate`) przychodzi tylko ze ścieżki na żywo — StockCache nie ma tej kolumny, więc przy odczycie z cache go nie widać.
+
+## BlueStar: jedna nieznana pozycja nie zeruje już całej paczki (22.09.2026, noc)
+
+- **Problem:** BlueStar odrzuca całe zapytanie, gdy choć jednego numeru nie prowadzi — kod 200, komunikat („Item X does not exist.” albo „X is not available.”) i pusta lista dla wszystkich. Synchronizacja stanów pyta paczkami po 10, więc jeden wycofany numer zabierał stan i cenę dziewięciu pozostałym. Numer dostępny tylko w BlueStar lądował w StockCache jako `found: false`, „Brak danych z dystrybutora”, bez ceny.
+- **Skala (22.09, wieczór):** z 458 wpisów `found: false` BlueStar prowadzi 110; 30 ma towar na stanie (np. CK67-X0N-58S1A0G 417 szt., ET4010B-001C2B0P-A6 98 szt., BTRY-MC2X-49MA-01 66 szt., ZT62062-T1E0100Z 10 szt.), 15 kolejnych w dostawie. Sklep pokazywał je bez ceny i jako niedostępne.
+- **Poprawka w `src/lib/bluestar.ts`:** `sendPriceRequest` zwraca też komunikat błędu z API; nowa `zapytajOdpornie()` wyrzuca z paczki numer wskazany w komunikacie (porównanie całych słów) i ponawia resztę, a gdy komunikat nikogo nie wskazuje — pyta o każdy numer osobno. Błędy HTTP i sieci bez zmian (pusta lista + ERROR_COOLDOWN). Działa w synchronizacji i w ścieżce na żywo, bo obie idą przez `lookupStock`.
+- **Sprawdzone na żywym API:** jeden nieznany numer w środku paczki, dwa nieznane, wycofany ZC31-000W000EM00 w paczce kart ZC, trzy „ofiary” z cache z nieznanym numerem — za każdym razem prawidłowe numery wracają ze stanem. `tsc` bez błędów.
+- **Po wdrożeniu:** synchronizacja bierze najpierw numery bez ceny, więc 458 wpisów bez danych odświeży się w pierwszym przebiegu (8:00).
+

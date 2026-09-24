@@ -170,7 +170,12 @@ function enqueue<T>(fn: () => Promise<T>): Promise<T> {
 // ZAPYTANIE O CENY
 // ============================================
 
-async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceItem[]> {
+/**
+ * `blad` to komunikat, który BlueStar zwraca z kodem 200 obok pustej listy —
+ * np. gdy jednego numeru z paczki nie prowadzi. Błędy HTTP i sieci zostają
+ * błędami: pusta lista bez komunikatu i blokada ERROR_COOLDOWN.
+ */
+async function sendPriceRequest(partNumbers: string[]): Promise<{ items: BlueStarPriceItem[]; blad?: string }> {
   try {
     const token = await getAccessToken()
 
@@ -226,13 +231,14 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
       const errorText = await response.text()
       console.error(`[BlueStar Price] HTTP ${response.status}: ${errorText}`)
       lastErrorAt = Date.now()
-      return []
+      return { items: [] }
     }
 
     const data: BlueStarPriceResponse = await response.json()
 
-    if (data.error || data.message) {
-      console.warn(`[BlueStar Price] API error: ${data.error || data.message}`)
+    const blad = data.error || data.message
+    if (blad) {
+      console.warn(`[BlueStar Price] API error: ${blad}`)
     }
 
     const items = data.items || []
@@ -242,7 +248,7 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
       console.log('[BlueStar Price] RAW item fields:', Object.keys(items[0]))
       console.log('[BlueStar Price] RAW first item:', JSON.stringify(items[0], null, 2))
     }
-    return items
+    return { items, blad }
 
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
@@ -251,8 +257,55 @@ async function sendPriceRequest(partNumbers: string[]): Promise<BlueStarPriceIte
       console.error('[BlueStar Price] Błąd:', error)
     }
     lastErrorAt = Date.now()
-    return []
+    return { items: [] }
   }
+}
+
+/**
+ * Numery z paczki, które wskazuje komunikat BlueStar („Item X does not
+ * exist.", „X is not available"). Porównujemy całe słowa, żeby numer
+ * będący początkiem innego nie wyrzucił z paczki obu.
+ */
+function numeryZKomunikatu(komunikat: string, numery: string[]): string[] {
+  const slowa = new Set(
+    komunikat
+      .split(/[\s,;:'"()]+/)
+      .map((s) => s.replace(/\.+$/, '').toUpperCase())
+      .filter(Boolean)
+  )
+  return numery.filter((pn) => slowa.has(pn.toUpperCase()))
+}
+
+/**
+ * Zapytanie o paczkę odporne na jeden nieznany numer.
+ *
+ * BlueStar odrzuca całą paczkę, gdy choć jednego numeru nie prowadzi — zwraca
+ * kod 200, komunikat i pustą listę dla wszystkich. W synchronizacji stanów
+ * (paczki po 10) jeden wycofany numer zabierał więc stan i cenę dziewięciu
+ * pozostałym, a numer dostępny tylko w BlueStar lądował w sklepie jako „brak
+ * danych z dystrybutora". Wyrzucamy wskazany numer i pytamy o resztę; gdy
+ * komunikat nikogo nie wskazuje, pytamy o każdy numer osobno.
+ */
+async function zapytajOdpornie(partNumbers: string[]): Promise<BlueStarPriceItem[]> {
+  let doZapytania = partNumbers
+  for (let proba = 0; proba < partNumbers.length && doZapytania.length > 0; proba++) {
+    const { items, blad } = await enqueue(() => sendPriceRequest(doZapytania))
+    if (items.length > 0 || !blad || doZapytania.length === 1) return items
+
+    const odrzucone = numeryZKomunikatu(blad, doZapytania)
+    if (odrzucone.length === 0) {
+      console.warn(`[BlueStar] Paczka odrzucona bez wskazania numeru — pytam o ${doZapytania.length} PN pojedynczo`)
+      const pojedynczo: BlueStarPriceItem[] = []
+      for (const pn of doZapytania) {
+        const { items: jeden } = await enqueue(() => sendPriceRequest([pn]))
+        pojedynczo.push(...jeden)
+      }
+      return pojedynczo
+    }
+    console.warn(`[BlueStar] Paczka odrzucona przez ${odrzucone.join(', ')} — ponawiam bez nich`)
+    doZapytania = doZapytania.filter((pn) => !odrzucone.includes(pn))
+  }
+  return []
 }
 
 // ============================================
@@ -295,7 +348,7 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
   console.log(`[BlueStar] Sprawdzam ${uncached.length} PN: ${uncached.join(', ')}`)
 
   // Kolejka — jeden request na raz
-  const items = await enqueue(() => sendPriceRequest(uncached))
+  const items = await zapytajOdpornie(uncached)
 
   // Jeśli brak wyników
   if (items.length === 0) {
