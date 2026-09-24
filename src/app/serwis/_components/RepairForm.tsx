@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { normalizujNip, bladNipu } from '@/lib/nip'
 import { trackGenerateLead, trackFormSubmit } from '@/lib/ga-events'
 import * as z from 'zod'
 import { RegistrationLightbox } from './RegistrationLightbox'
@@ -25,7 +26,13 @@ const repairFormSchema = z.object({
   email: z.string().email('Nieprawidlowy adres email'),
   phone: z.string().min(9, 'Nieprawidlowy numer telefonu'),
   company: z.string().min(1, 'Nazwa firmy jest wymagana'),
-  nip: z.string().min(10, 'NIP musi miec 10 cyfr').max(10, 'NIP musi miec 10 cyfr'),
+  // Polski NIP (kreski, spacje, prefiks PL zdejmowane) albo numer VAT z innego kraju UE — lib/nip.ts
+  nip: z.string()
+    .transform(normalizujNip)
+    .superRefine((nip, ctx) => {
+      const blad = bladNipu(nip)
+      if (blad) ctx.addIssue({ code: 'custom', message: blad })
+    }),
 
   // KROK 2: Szczegóły urządzenia
   deviceType: z.enum(['drukarka', 'drukarka-kart', 'terminal', 'skaner', 'tablet', 'akcesoria', 'inne'], {
@@ -443,8 +450,8 @@ export default function RepairForm() {
                     id="nip"
                     type="text"
                     className={`w-full px-3 py-2 border rounded-full focus:ring-2 focus:ring-blue-500 focus:border-transparent ${errors.nip ? 'border-red-500' : 'border-gray-300'}`}
-                    placeholder="np. 1234567890"
-                    maxLength={10}
+                    placeholder="np. 1234567890 lub CZ12345678"
+                    maxLength={16}
                   />
                   {errors.nip && (
                     <p className="mt-1 text-sm text-red-500">{errors.nip.message}</p>
