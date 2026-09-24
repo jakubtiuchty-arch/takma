@@ -1207,3 +1207,13 @@ Otwarte na kolejne sesje:
 - **Poprawka:** nowy `src/lib/proforma-pdf/` (react-pdf, układ i czcionki jak w PDF oferty; `ensureFonts` wyeksportowane z `quote-pdf/render.ts`). `sendProformaEmail` dołącza `pro-forma-<nr>-TAKMA.pdf`; gdy PDF się nie wygeneruje, mail wychodzi bez załącznika. W treści maila zdanie o załączniku i poprawiona literówka „zaksiegowaniu”.
 - **Ponowna wysyłka:** `/api/admin/resend-order-email` z `proformaOnly: true` wysyła samą pro formę z PDF, z datą złożenia zamówienia.
 - **Sprawdzone:** PDF wygenerowany lokalnie z danych zamówienia z bazy (pozycja, dostawa, uwagi, dane do przelewu), `tsc` bez błędów.
+
+## QuickScan QD2590 i QW2520: 15 zdjęć z portalu partnerskiego Datalogic (24.09.2026)
+
+- **Źródło:** Image Gallery na partnernet.datalogic.com. Wyszukiwanie po „QD2590” nic nie zwraca — pliki są podpisane nazwą serii, `PLP-QD2500-BLACK-…-HR.jpg` (19 ujęć).
+- **Cztery pliki przyszły urwane na 1 MiB** (brak znacznika końca JPEG): `LEFT-FACING-IN-STAND`, `LEFT-FACING2`, `RIGHT-FACING-IN-FLEX-STAND`, `LEFT-FACING-IN-COLLAPSIBLE-STAND-PHASES`. Do ponownego pobrania; reszta obrobiona.
+- **Obróbka:** `obrob-zdjecia.py --kategoria=skanery-kodow-kreskowych` (600×1200). Trzy ujęcia z lustrzanym odbiciem na podłodze (`LEFT-FACING`, `FRONT-VIEW`, `BOTTOM-VIEW`) — BiRefNet zostawiał odbicie jako szarą plamę. Pomogło wybielenie w źródle pikseli jasnych i bezbarwnych (V > 150, S < 60) przed wycięciem tła; przy `FRONT-VIEW` zostaje wersja bez wybielania, bo wybielanie robiło dziury w połysku głowicy.
+- **QD2590:** 15 nowych zdjęć (`datalogic-quickscan-qd2590-2…16.png`) przed dotychczasowym, kolejność: sam skaner, oświetlenie, okienkiem w dół, podstawki (auto, uchwyt, elastyczne ramię, składana), zbliżenia.
+- **QW2520:** te same pliki (obudowa identyczna, 148 × 68 × 126 mm, 145 g), bez `FRONT-VIEW` — przez szybkę widać moduł optyczny, a QW2520 ma inny (VGA, pojedynczy celownik). Tak samo QM2500 korzysta z plików QBT2500.
+- **Opisy podstawek bez „w zestawie”:** na zdjęciach są cztery różne podstawki, a w wariancie `QD2590-BKK1B` jest jedna (`STD-AUTO-QD25-BK`).
+- **Sprawdzone:** `tsc` bez błędów, obie karty na localhost:3000 renderują galerię (1/16 i 1/15), zero nieładujących się obrazów (Playwright).
