@@ -1,20 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
-import { sendOrderConfirmation, sendAdminNotification } from '@/lib/email'
+import { sendOrderConfirmation, sendAdminNotification, sendProformaEmail } from '@/lib/email'
 
 export const maxDuration = 30
 
 /**
  * POST /api/admin/resend-order-email
- * Body: { orderId?: string, orderNumber?: string, secret: string }
+ * Body: { orderId?: string, orderNumber?: string, secret: string, proformaOnly?: boolean }
  *
  * Ręczne ponowne wysłanie maili zamówieniowych (do klienta + do admina).
+ * `proformaOnly: true` — tylko pro forma z PDF w załączniku, z datą złożenia zamówienia.
  * Akceptuje orderId (Prisma ID) lub orderNumber (np. "20260316112014").
  * Wymaga ADMIN_JWT_SECRET w body.
  */
 export async function POST(request: NextRequest) {
   try {
-    const { orderId, orderNumber, secret } = await request.json()
+    const { orderId, orderNumber, secret, proformaOnly } = await request.json()
 
     if (!secret || secret !== process.env.ADMIN_JWT_SECRET) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
@@ -63,6 +64,28 @@ export async function POST(request: NextRequest) {
       totalBrutto: order.totalBrutto / 100,
       paymentMethod: order.stripeSessionId ? 'ONLINE' : 'PROFORMA',
       customerNotes: order.customerNotes,
+    }
+
+    if (proformaOnly) {
+      const proforma = await sendProformaEmail({
+        orderNumber: order.orderNumber,
+        items: emailData.items,
+        customer: {
+          company: order.customer.company,
+          nip: order.customer.nip,
+          contactName: `${order.customer.firstName} ${order.customer.lastName}`.trim(),
+          email: order.customer.email,
+          phone: order.customer.phone,
+          address: order.customer.address || '',
+        },
+        subtotalNetto: emailData.subtotalNetto,
+        shippingNetto: emailData.shippingNetto,
+        vatAmount: emailData.vatAmount,
+        totalBrutto: emailData.totalBrutto,
+        notes: order.customerNotes,
+        issuedAt: order.createdAt,
+      })
+      return NextResponse.json({ orderNumber: order.orderNumber, customerEmail: order.customer.email, proforma })
     }
 
     const [confirmResult, adminResult] = await Promise.allSettled([

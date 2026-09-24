@@ -1201,3 +1201,9 @@ Otwarte na kolejne sesje:
 - **Sprawdzone na żywym API:** jeden nieznany numer w środku paczki, dwa nieznane, wycofany ZC31-000W000EM00 w paczce kart ZC, trzy „ofiary” z cache z nieznanym numerem — za każdym razem prawidłowe numery wracają ze stanem. `tsc` bez błędów.
 - **Po wdrożeniu:** synchronizacja bierze najpierw numery bez ceny, więc 458 wpisów bez danych odświeży się w pierwszym przebiegu (8:00).
 
+## Pro forma w PDF w załączniku maila (24.09.2026)
+
+- **Problem:** mail z pro formą miał tylko treść HTML, bez pliku. Klientka musiała przekazać pro formę do działu zakupów, który przyjmuje wyłącznie PDF.
+- **Poprawka:** nowy `src/lib/proforma-pdf/` (react-pdf, układ i czcionki jak w PDF oferty; `ensureFonts` wyeksportowane z `quote-pdf/render.ts`). `sendProformaEmail` dołącza `pro-forma-<nr>-TAKMA.pdf`; gdy PDF się nie wygeneruje, mail wychodzi bez załącznika. W treści maila zdanie o załączniku i poprawiona literówka „zaksiegowaniu”.
+- **Ponowna wysyłka:** `/api/admin/resend-order-email` z `proformaOnly: true` wysyła samą pro formę z PDF, z datą złożenia zamówienia.
+- **Sprawdzone:** PDF wygenerowany lokalnie z danych zamówienia z bazy (pozycja, dostawa, uwagi, dane do przelewu), `tsc` bez błędów.

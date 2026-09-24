@@ -441,6 +441,7 @@ export async function POST(request: NextRequest) {
       shippingNetto,
       vatAmount,
       totalBrutto,
+      notes: notes || null,
     }
 
     // Wyślij 3 maile równolegle: potwierdzenie klient, powiadomienie admin, proforma klient

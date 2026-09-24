@@ -517,9 +517,13 @@ export function buildProformaEmail(data: {
   shippingNetto: number
   vatAmount: number
   totalBrutto: number
+  issuedAt?: Date
+  /** pro forma w PDF jest w załączniku */
+  hasPdf?: boolean
 }): string {
-  const today = new Date().toLocaleDateString('pl-PL')
-  const dueDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString('pl-PL')
+  const issuedAt = data.issuedAt ?? new Date()
+  const today = issuedAt.toLocaleDateString('pl-PL', { timeZone: 'Europe/Warsaw' })
+  const dueDate = new Date(issuedAt.getTime() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString('pl-PL', { timeZone: 'Europe/Warsaw' })
   const shippingLabel = data.shippingNetto > 0 ? `${fmtPLN(data.shippingNetto)} z&#322;` : 'Gratis'
 
   const itemRows = data.items.map((i, idx) => {
@@ -537,8 +541,11 @@ export function buildProformaEmail(data: {
   return emailLayout({
     preheader: `Pro forma ${data.orderNumber} — ${fmtPLN(data.totalBrutto)} zł brutto — opłać przelew`,
     content:
-      emailHeader({ title: 'PRO FORMA', subtitle: `Nr: PF/${esc(data.orderNumber)}/${new Date().getFullYear()}`, accent: 'blue' }) +
+      emailHeader({ title: 'PRO FORMA', subtitle: `Nr: PF/${esc(data.orderNumber)}/${issuedAt.getFullYear()}`, accent: 'blue' }) +
       emailBody(
+        (data.hasPdf
+          ? emailText('Pro form&#281; w formacie PDF przesy&#322;amy w za&#322;&#261;czniku. Mo&#380;na j&#261; przekaza&#263; do dzia&#322;u zakup&#243;w lub ksi&#281;gowo&#347;ci.')
+          : '') +
         // Daty
         `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 16px;background-color:#f9fafb;border-radius:8px;border:1px solid #e5e7eb">
           <tr>
@@ -594,7 +601,7 @@ export function buildProformaEmail(data: {
         // Dane do przelewu
         emailBankDetails(data.orderNumber) +
 
-        emailText('<span style="color:#6b7280;font-size:13px">Pro forma wa&#380;na 7 dni od daty wystawienia. Po zaksi&#281;gowaniu wp&#322;aty zam&#243;wienie zostanie zrealizowane. Faktura VAT zostanie wystawiona po zaksiegowaniu p&#322;atno&#347;ci.</span>') +
+        emailText('<span style="color:#6b7280;font-size:13px">Pro forma wa&#380;na 7 dni od daty wystawienia. Po zaksi&#281;gowaniu wp&#322;aty zrealizujemy zam&#243;wienie i wystawimy faktur&#281; VAT.</span>') +
         emailSignature()
       ),
   })

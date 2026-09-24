@@ -12,7 +12,7 @@ import { quoteHasZebra } from '@/lib/quote-zebra'
 const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.takma.com.pl'
 
 let fontsRegistered = false
-function ensureFonts() {
+export function ensureFonts() {
   if (fontsRegistered) return
   Font.register({
     family: 'DejaVu',

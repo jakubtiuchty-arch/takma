@@ -7,6 +7,7 @@ import {
   buildRepairSubmittedEmail,
   buildRepairSubmittedAdminEmail,
 } from './email-templates'
+import { renderProformaPdf, proformaPdfFilename } from './proforma-pdf/render'
 
 // Lazy-init Resend client — read env at call-time, not module-load time
 // Fixes Vercel cold-start issue where env vars may not be available at top-level
@@ -116,12 +117,24 @@ export async function sendProformaEmail(data: {
   shippingNetto: number
   vatAmount: number
   totalBrutto: number
+  notes?: string | null
+  /** data wystawienia — przy ponownej wysyłce data złożenia zamówienia */
+  issuedAt?: Date
 }) {
+  // Dział zakupów klienta potrzebuje pliku, sama treść maila nie wystarcza.
+  // Gdy PDF się nie wygeneruje, mail i tak wychodzi — bez załącznika.
+  let attachments: { filename: string; content: Buffer }[] | undefined
+  try {
+    attachments = [{ filename: proformaPdfFilename(data.orderNumber), content: await renderProformaPdf(data) }]
+  } catch (err) {
+    console.error(`[Proforma PDF] ${data.orderNumber}:`, err)
+  }
   return sendEmail({
     to: data.customer.email,
     from: 'TAKMA Zamówienia <noreply@serwis-zebry.pl>',
     subject: `Pro forma ${data.orderNumber} — ${data.totalBrutto.toFixed(2)} zł brutto — TAKMA`,
-    html: buildProformaEmail(data),
+    html: buildProformaEmail({ ...data, hasPdf: !!attachments }),
+    attachments,
   })
 }
 
