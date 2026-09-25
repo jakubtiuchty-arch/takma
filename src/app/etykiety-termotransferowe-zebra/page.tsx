@@ -12,6 +12,10 @@ import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
 
 const siteUrl = 'https://www.takma.com.pl'
 const SLUG = 'etykiety-termotransferowe'
+/** Adres strony. Podkategoria ma `id` 'etykiety-termotransferowe', ale `slug`
+ *  'etykiety-termotransferowe-zebra' — stary adres bez „-zebra” przekierowuje
+ *  tutaj, więc canonical na niego tworzył pętlę. */
+const PAGE_URL = `${siteUrl}/etykiety-termotransferowe-zebra`
 
 interface Tile {
   sub: TransferLabelSubcategory
@@ -53,7 +57,7 @@ const TILES: Tile[] = [
 
 export async function generateMetadata(): Promise<Metadata> {
   const sub = getSubcategoryBySlug(SLUG)
-  const url = `${siteUrl}/${SLUG}`
+  const url = PAGE_URL
   return {
     title: sub?.seoTitle ?? 'Etykiety termotransferowe Zebra — papierowe, foliowe, specjalne',
     description: sub?.seoDescription ?? 'Pełna gama etykiet termotransferowych Zebra: papierowe, foliowe i specjalne.',
@@ -95,7 +99,7 @@ const FAQ = [
 ]
 
 export default function Page() {
-  const url = `${siteUrl}/${SLUG}`
+  const url = PAGE_URL
   const counts = {
     papierowe: getTransferLabelSeriesBySubcategory('papierowe').length,
     foliowe: getTransferLabelSeriesBySubcategory('foliowe').length,
