@@ -12,8 +12,8 @@ import { guides } from '@/data/guides'
 import { manuals, docSlug, PL_MANUAL_SLUG } from '@/data/manuals'
 import { industryPages } from '@/data/industry-content'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
-import { transferLabelSeries } from '@/data/transfer-label-series'
-import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { transferLabelSeries, getTransferLabelSeriesByProductId } from '@/data/transfer-label-series'
+import { transferRibbonSeries, getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
 import { PROMOTIONS } from '@/data/promotions'
@@ -60,10 +60,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: brand.slug === 'magicard' ? new Date('2026-09-11') : lastUpdated,
   }))
 
-  const productPages: MetadataRoute.Sitemap = products.map((product) => ({
-    url: `${baseUrl}/produkt/${product.slug}`,
-    lastModified: new Date(product.updatedAt || product.createdAt),
-  }))
+  // Rodzic etykiety lub taśmy ze stroną serii przekierowuje na nią (308 w /produkt/[slug]),
+  // więc jego adres nie jest kanoniczny — w mapie zostaje tylko strona serii.
+  const przekierowujeNaSerie = (product: (typeof products)[number]) =>
+    (isThermalLabelProduct(product) && thermalLabelSeries.some(s => s.productId === product.id)) ||
+    (isTransferLabelProduct(product) && !!getTransferLabelSeriesByProductId(product.id)) ||
+    (isRibbonProduct(product) && !!getRibbonSeriesByProductId(product.id))
+
+  const productPages: MetadataRoute.Sitemap = products
+    .filter((product) => !przekierowujeNaSerie(product))
+    .map((product) => ({
+      url: `${baseUrl}/produkt/${product.slug}`,
+      lastModified: new Date(product.updatedAt || product.createdAt),
+    }))
 
   // Stare flat slugi TT (etykiety-termotransferowe-papierowe/-foliowe/-specjalne)
   // 301-redirectują na zagnieżdżony URL /etykiety-termotransferowe-zebra/{sub} — wykluczamy.
