@@ -1224,6 +1224,7 @@ Otwarte na kolejne sesje:
 - **Powiększenie:** `obrob-zdjecia.py --wypelnienie=0.936` (0,78 × 1,2). Zmierzone na wynikach: obiekt 560 px szerokości zamiast 466, front w bazie 1118 px wysokości zamiast 933; cień nie dotyka krawędzi płótna.
 - Pliki nadpisane pod tymi samymi nazwami, więc opisy alternatywne QM2500 (korzysta z `.png`, `-2`, `-3`, `-4`) nadal pasują do treści zdjęć.
 - Front w bazie miał pod podstawą szary pas odbicia (był też w poprzedniej wersji) — wybielony w źródle przed wycięciem tła. W ujęciach z czerwonym światłem jasne bezbarwne piksele to połysk obudowy, nie odbicie, więc tam bez wybielania.
+- **Ujęcia w bazie od prawej i od lewej na szerszym płótnie 1040×1200** (`--plotno=1040x1200 --wypelnienie=0.73 --zasieg=0.024`). Na 600×1200 skaner w bazie jest ograniczony szerokością (560 z 600 px) i wychodził niższy od ujęć z oświetleniem (660–734 px wobec 876). Galeria dopasowuje obraz do wysokości ramki, więc przy wspólnej wysokości płótna 1200 liczy się wysokość obiektu: teraz 872–873 px. Cień 25 px, jak na pozostałych. Sprawdzone Playwrightem: miniatury i duży podgląd w tej samej skali.
 
 ## Magicard 600 Duo: wariant Smart 3652-5023/S (25.09.2026)
 
