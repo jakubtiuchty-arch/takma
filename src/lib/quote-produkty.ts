@@ -1,5 +1,3 @@
-import { readFile } from 'fs/promises'
-import path from 'path'
 import { products, type Product } from '@/data/products'
 
 /**
@@ -53,28 +51,17 @@ export function kartyKatalogoweOferty(items: { productId?: string | null }[]): K
 }
 
 /**
- * Nasze karty (`/datasheets/…`) pobieramy spod adresu serwisu, a gdy tam ich nie
- * ma (świeżo dodany plik przed wdrożeniem, serwer lokalny) — czytamy z `public/`.
+ * Pobranie karty spod jej adresu (nasze leżą w `public/datasheets`, więc też pod
+ * adresem serwisu). Bez odczytu z dysku: ścieżka do `public/` w kodzie serwera
+ * sprawia, że Next dołącza cały katalog do funkcji — 1,38 GB przy limicie 250 MB.
  */
 async function pobierzPdf(url: string, opcje: { tylkoPoczatek?: boolean } = {}): Promise<Buffer> {
-  let blad: unknown
-  try {
-    const res = await fetch(url, {
-      headers: opcje.tylkoPoczatek ? { Range: 'bytes=0-1023' } : undefined,
-      signal: AbortSignal.timeout(opcje.tylkoPoczatek ? 8_000 : 15_000),
-    })
-    if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status })
-    return Buffer.from(await res.arrayBuffer())
-  } catch (err) {
-    blad = err
-  }
-  if (url.startsWith(`${SITE_URL}/`)) {
-    const sciezka = path.join(process.cwd(), 'public', decodeURIComponent(new URL(url).pathname))
-    if (sciezka.startsWith(path.join(process.cwd(), 'public') + path.sep)) {
-      try { return await readFile(sciezka) } catch { /* zostaje błąd z sieci */ }
-    }
-  }
-  throw blad
+  const res = await fetch(url, {
+    headers: opcje.tylkoPoczatek ? { Range: 'bytes=0-1023' } : undefined,
+    signal: AbortSignal.timeout(opcje.tylkoPoczatek ? 8_000 : 15_000),
+  })
+  if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status })
+  return Buffer.from(await res.arrayBuffer())
 }
 
 const MAX_PLIK = 10 * 1024 * 1024
