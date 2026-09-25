@@ -109,11 +109,12 @@ const nextConfig = {
       // DS3678-SR ma własną stronę → redirect zebra-ds3678 usunięty
       // LI3608-SR i LI3608-ER mają własne strony → redirecty usunięte
       { source: '/produkt/zebra-li3678:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
-      // DS8108/DS8178 family
-      { source: '/produkt/zebra-ds8108/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
-      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
-      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
-      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178-hc/:path*', destination: '/produkt/zebra-ds8178', permanent: true },
+      // DS8108/DS8178 family — jeden skok na następcę: przewodowy DS8108 → DS8208, bezprzewodowy DS8178 → DS8288
+      // (/produkt/zebra-ds8178 sam jest przekierowaniem na DS8288, dlatego nie może być tu celem)
+      { source: '/produkt/zebra-ds8108/:path*', destination: '/produkt/zebra-ds8208', permanent: true },
+      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8208', permanent: true },
+      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178/:path*', destination: '/produkt/zebra-ds8288', permanent: true },
+      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178-hc/:path*', destination: '/produkt/zebra-ds8288', permanent: true },
       // Legacy 1D laser → LI2208 (imager successor)
       { source: '/produkt/zebra-ls2208/:path*', destination: '/produkt/zebra-li2208', permanent: true },
 

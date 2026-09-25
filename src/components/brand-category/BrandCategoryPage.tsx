@@ -17,6 +17,7 @@ import {
 import { brandCategoryContent } from '@/data/brand-category-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
+import { najnizszaCena, zlote, wstawCeneOd } from '@/lib/cena-od'
 
 /** Strip Markdown links from text for schema JSON-LD (Google doesn't parse Markdown) */
 function stripMarkdownLinks(text: string): string {
@@ -207,12 +208,10 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   }))
 
   // Pasek faktów pod H1 — zadanie użytkownika z wyszukiwarki to modele i ceny.
-  const cenyOd = allProducts.map(p => p.priceFrom).filter((c): c is number => !!c && c > 0)
-  const najtansza = cenyOd.length ? Math.min(...cenyOd) : null
+  // `najnizszaCena` liczy też cenę w tytule strony (`wstawCeneOd`), więc obie liczby są te same.
+  const najtansza = najnizszaCena(allProducts)
   const dostepneOdReki = allProducts.filter(p => p.availability === 'available').length
   const zKlawiatura = allProducts.filter(p => p.specifications.some(sp => /^Klawiatur/i.test(sp.name))).length
-  // pl-PL nie grupuje czterocyfrowych liczb, a „2269 zł" czyta się gorzej niż „2 269 zł"
-  const zlote = (v: number) => String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0')
 
   // Schema JSON-LD
   const breadcrumbJsonLd = {
@@ -233,7 +232,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     '@type': 'CollectionPage',
     '@id': `https://www.takma.com.pl/${bc.slug}#kolekcja`,
     name: bc.name,
-    description: bc.seoDescription,
+    description: wstawCeneOd(bc.seoDescription, bc),
     url: `https://www.takma.com.pl/${bc.slug}`,
     inLanguage: 'pl-PL',
     ...(content?.updatedAt ? { dateModified: content.updatedAt } : {}),
@@ -370,7 +369,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                                       <td className="px-3 py-2.5 font-medium text-gray-900 align-top"><LinkedText text={row.model} /></td>
                                       <td className="px-3 py-2.5 text-gray-500 text-xs leading-relaxed align-top"><LinkedText text={row.specs} /></td>
                                       <td className="px-3 py-2.5 text-primary-600 font-semibold whitespace-nowrap align-top">{row.price || '—'}</td>
-                                      <td className="px-3 py-2.5 text-gray-600 text-xs align-top">{row.desc || '—'}</td>
+                                      <td className="px-3 py-2.5 text-gray-600 text-xs align-top">{row.desc ? <LinkedText text={row.desc} /> : '—'}</td>
                                     </tr>
                                   ))}
                                 </tbody>
@@ -382,7 +381,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                                   <p className="font-semibold text-gray-900 text-sm"><LinkedText text={row.model} /></p>
                                   {row.price && <p className="text-primary-600 font-semibold text-sm mt-0.5">{row.price}</p>}
                                   <p className="text-gray-500 text-xs leading-relaxed mt-2"><LinkedText text={row.specs} /></p>
-                                  {row.desc && <p className="text-gray-600 text-xs mt-2">{row.desc}</p>}
+                                  {row.desc && <p className="text-gray-600 text-xs mt-2"><LinkedText text={row.desc} /></p>}
                                 </li>
                               ))}
                             </ul>
@@ -479,7 +478,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 </section>
 
                 {content.tcoComparisons && content.tcoComparisons.length > 0 && (
-                  <Accordion id="tco" heading="Ile kosztuje flota przez 3 lata">
+                  <Accordion id="tco" heading={content.sectionHeadings?.tco || 'Koszt posiadania (TCO)'}>
                     <div className="space-y-4">
                                                   {content.tcoComparisons?.map((tco, ti) => (
                             <div key={ti} className="bg-primary-50/60 border border-primary-100 rounded-xl p-5 mt-2">
@@ -709,7 +708,9 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
             <a href="#modele" className="hover:text-primary-600 transition-colors">Porównanie modeli</a>
             <a href="#jak-wybrac" className="hover:text-primary-600 transition-colors">Jak wybrać</a>
             <a href="#zastosowania" className="hover:text-primary-600 transition-colors">Zastosowania</a>
-            <a href="#porownanie" className="hover:text-primary-600 transition-colors">M3 a konkurencja</a>
+            {content.comparisons.length > 0 && (
+              <a href="#porownanie" className="hover:text-primary-600 transition-colors">{content.sectionHeadings?.comparisons || 'Porównanie'}</a>
+            )}
             <a href="#faq" className="hover:text-primary-600 transition-colors">Pytania i odpowiedzi</a>
           </nav>
         )}

@@ -3,7 +3,16 @@
 
 import { SubcategoryRichContent } from './subcategory-content'
 
-export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
+/**
+ * Wpis strony marka + kategoria: pola jak na stronie podkategorii plus nagłówek
+ * sekcji TCO. Horyzont kosztów różni się między stronami (3 albo 5 lat), więc
+ * nagłówek nie może siedzieć na sztywno w szablonie.
+ */
+export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHeadings'> & {
+  sectionHeadings?: NonNullable<SubcategoryRichContent['sectionHeadings']> & { tco?: string }
+}
+
+export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
   'drukarki-kart-magicard': {
     updatedAt: '2026-09-19',
     sectionHeadings: {
@@ -708,104 +717,105 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
   },
 
   'skanery-kodow-kreskowych-zebra': {
+    updatedAt: '2026-09-25',
+    sectionHeadings: {
+      comparisons: 'Porównania marek i typów skanerów',
+      howToSteps: 'Jak wdrożyć skanery Zebra w firmie',
+      tco: 'Ile kosztują skanery przez 5 lat',
+    },
     definition: {
-      heading: 'Skanery kodów kreskowych Zebra — lider technologii imaging na świecie',
+      heading: 'Czytnik czy skaner kodów kreskowych Zebra?',
       content:
-        'Zebra Technologies jest największym producentem profesjonalnych skanerów kodów kreskowych na świecie, z udziałem przekraczającym 35% w segmencie enterprise [źródło: zebra.com](https://www.zebra.com/us/en/about-zebra.html). Skanery Zebra (serie DS, LI, CS, SP, MP) to urządzenia klasy przemysłowej zaprojektowane do pracy w handlu detalicznym, aptekach, magazynach, na liniach produkcyjnych, w szpitalach i punktach logistycznych. Technologia PRZYM (Pattern Recognition for Intelligent Zero-Margin decoding) — autorska platforma obrazowania Zebra — zapewnia najszybsze w branży dekodowanie kodów 1D i 2D, w tym uszkodzonych, zabrudzonych i słabo wydrukowanych. Skanery Zebra obsługują wszystkie popularne symbologie: EAN-13, Code 128, QR Code, DataMatrix, PDF417, Aztec, GS1 DataBar — oraz kody wyświetlane na ekranach smartfonów i tabletów (e-paragony, kupony, bilety, e-recepty). Oferta Zebra obejmuje pełne spektrum: od ekonomicznego [DS2208](/produkt/zebra-ds2208) (od 352 zł netto) z gwarancją 5 lat, przez skanery ultra-rugged DS3608/LI3608 do ekstremalnych warunków magazynowych, po prezentacyjne DS9308/MP7600 do kas hands-free. Platforma [DataCapture DNA](https://www.zebra.com/us/en/software/mobile-computer-software/datawedge.html) — pakiet darmowych narzędzi (123Scan, Scanner Management Service, Scan-to-Connect) — umożliwia masową konfigurację, zdalne zarządzanie flotą skanerów i integrację z dowolnym systemem POS/WMS/ERP bez pisania kodu.',
+        '„Czytnik kodów kreskowych” i „skaner kodów kreskowych” to dwie nazwy tego samego urządzenia: odczytuje kod i przesyła jego treść do komputera, kasy albo terminala. W sklepach i aptekach częściej mówi się „czytnik”, w katalogach producentów „skaner”. Skanery Zebry wywodzą się z Symbol Technologies. W 2014 roku Zebra przejęła dział Enterprise firmy Motorola Solutions, do którego Symbol należał od 2007 roku. Z portfolio Symbolu pochodzi popularny w kasach LS2208. Jego następcami są liniowy [LI2208](/produkt/zebra-li2208) i imager 2D [DS2208](/produkt/zebra-ds2208). W naszej ofercie są dwie serie: DS to imagery 2D, które czytają kody 1D i 2D (QR, Data Matrix, PDF417, Aztec), także z ekranów telefonów, a LI to imagery liniowe, które czytają tylko kody 1D.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać skaner kodów kreskowych Zebra? 7 kryteriów',
+      heading: 'Zakup skanera kodów kreskowych Zebra: 7 kryteriów',
       items: [
-        'Typ kodów do odczytu — skanery 1D (laserowe, seria LI) czytają tylko kody liniowe (EAN-13, Code 128, Code 39). Skanery 2D (imager, seria DS) czytają kody 1D + 2D (QR, DataMatrix, PDF417, Aztec) + kody z ekranów. W 2026 rekomendujemy wyłącznie skanery 2D — różnica cenowa to ok. 50–100 zł, a kody 2D są coraz powszechniejsze (e-paragony, GS1 DataMatrix na lekach, e-bilety). Zebra [DS2208](/produkt/zebra-ds2208) 2D (od 352 zł) to entry-level obsługujący wszystkie symbologie.',
-        'Przewodowy czy bezprzewodowy — przewodowy USB (DS2208, DS4608, DS9308): stałe stanowisko kasowe, apteka, biuro — niezawodne połączenie, brak baterii do ładowania, niższa cena. Bezprzewodowy Bluetooth (LI4278, DS8178, CS6080): swoboda ruchu w promieniu do 100 m, idealny do inwentaryzacji, kompletacji, magazynu — bateria na 50 000–100 000 skanów. Reguła: stałe stanowisko → przewodowy. Mobilna praca → bezprzewodowy.',
-        'Wytrzymałość i klasa ochrony — biuro/kasa (IP42/IP52): DS2208, DS4608 — łagodne warunki, okazjonalne upadki z 1,2–1,5 m. Magazyn (IP65/IP67): DS3608, LI3608 — upadki z 2,4 m na beton, pyłoszczelność, odporność na wodę. Chłodnia/outdoor (IP67/IP68): DS3678 — pełna wodoodporność, praca w temperaturach -30°C do +50°C. Linia produkcyjna: skanery stacjonarne (SP7208, SP7218) z obudową do zabudowy.',
-        'Szybkość i zasięg skanowania — DS2208: 220 skanów/s, zasięg do 36,8 cm — wystarczający na kasie. DS4608: 1 280 skanów/s, zasięg do 55 cm — kasy wysokoobrotowe. DS3608/LI3608: 1 200 skanów/s, zasięg do 6,1 m (Extended Range) — skanowanie z daleka w magazynach bez drabiny. DS9308: 1 120 skanów/s, wielokierunkowe pole 44,5° — prezentacyjny hands-free na kasie.',
-        'Tryb pracy — ręczny (handheld): operator celuje i naciska spust — DS2208, DS4608, DS3608. Prezentacyjny (hands-free): skaner stacjonarny na ladzie/kasie, produkty przesuwane przed oknem — DS9308, SP7208, MP7600. Hybrydowy (handheld + hands-free): DS4608 na podstawce — tryb automatyczny gdy leży, ręczny gdy podniesiony. Companion (wearable): CS6080 przypinany do palca lub nadgarstka — skanowanie bez podnoszenia urządzenia.',
-        'Integracja z systemem POS/WMS — interfejs USB HID (emulacja klawiatury): Plug and Play — skaner „wpisuje" kod do aktywnego pola, działa z każdym programem bez sterowników. Interfejs RS-232 (port szeregowy): starsze systemy POS/WMS z dedykowanym portem COM. Bluetooth HID/SSI: bezprzewodowe parowanie z komputerem, tabletem lub terminalem mobilnym. Aplikacja Zebra 123Scan: masowa konfiguracja skanerów — prefiksy, sufiksy, wybór symbologii, tryb pracy — przez skanowanie jednego kodu QR.',
-        'Budżet i gwarancja — [DS2208](/produkt/zebra-ds2208) (od 352 zł, gwarancja 5 lat): najlepsza wartość w segmencie entry-level, do kas i aptek. DS4608 (od ~900 zł, gwarancja 5 lat): kasy wysokoobrotowe, retail z dużym ruchem. DS3608 ultra-rugged (od ~2 500 zł, gwarancja 3 lata): ciężkie warunki magazynowe. DS9308 prezentacyjny (od ~1 800 zł, gwarancja 3 lata): kasy hands-free. Koszt 5-letniego użytkowania DS2208: ~352 zł (zakup) + ~0 zł (serwis — 5 lat gwarancji) = 352 zł. To ~6 zł/miesiąc.',
+        'Typ kodów do odczytu — Skanery 1D z serii LI (imager liniowy) czytają tylko kody liniowe: EAN-13, Code 128, Code 39. Skanery 2D z serii DS czytają dodatkowo kody QR, Data Matrix, PDF417 i Aztec, także z ekranu telefonu. Przy nowym zakupie polecamy 2D: kody Data Matrix są na opakowaniach leków (weryfikacja FMD), a kody QR na e-biletach i w aplikacjach lojalnościowych.',
+        'Przewodowy czy bezprzewodowy — Przewodowy (USB): DS2208, DS4608, DS8208, DS9308. Pasuje do stałego stanowiska, np. kasy, apteki albo biura, nie ma baterii i jest tańszy. Bezprzewodowy (Bluetooth): DS2278, DS4678, DS8288, DS3678. Przydaje się przy inwentaryzacji i kompletacji. Ze stacją Class 1 zasięg wynosi do 100 m, a bateria wystarcza na 50 000–110 000 skanów na jednym ładowaniu, zależnie od modelu.',
+        'Wytrzymałość i klasa szczelności — Na kasę i do biura wystarczą DS2208, LI2208 i DS4608 z klasą IP52 (upadki z 1,5–1,8 m). Do magazynu, na rampę i do chłodni są ultra-rugged DS3608 i DS3678 (IP65 i IP68, upadki z 3 m na beton) oraz liniowy LI3608 (IP65 i IP68, upadki z 2,4 m). Przewodowe DS3608 (SR, HD, XR) i LI3608 pracują od −30°C, bezprzewodowy DS3678 od −20°C. Na produkcji, gdzie kody są wybite albo wygrawerowane w metalu, potrzebny jest skaner DPM, np. [DS4678-DPE](/produkt/zebra-ds4678-dpe).',
+        'Zasięg odczytu — [DS2208](/produkt/zebra-ds2208) czyta kod EAN-13 z odległości 1,2–36,8 cm, co wystarcza na kasie. DS4608 i DS8208 sięgają ok. 70 cm (kod UPC 13 mil). [DS3608-SR](/produkt/zebra-ds3608-sr) czyta większe kody (40 mil) z odległości do 1,5 m. Do regałów wysokiego składowania są wersje XR: [DS3608-XR](/produkt/zebra-ds3608-xr) i bezprzewodowy [DS3678-XR](/produkt/zebra-ds3678-xr) czytają kody 100 mil z odległości do 32 m, a liniowy [LI3608-ER](/produkt/zebra-li3608-er) do 19,8 m na etykietach odblaskowych. Zasięg zależy od wielkości kodu, więc warto go sprawdzić na etykietach używanych w firmie.',
+        'Tryb pracy — Ręczny: operator celuje i naciska spust (DS2208, DS4608, DS3608). DS2208 i DS4608 w podstawce przechodzą w tryb automatyczny i czytają kod bez naciskania spustu. Prezentacyjny: skaner stoi na ladzie, a towar przesuwa się przed oknem ([DS9308](/produkt/zebra-ds9308) od 995 zł). Hybrydowy: [DS9908](/produkt/zebra-ds9908) pracuje na ladzie, a do dużych towarów zdejmuje się go ze stojaka.',
+        'Integracja z systemem POS i WMS — USB HID (emulacja klawiatury) działa bez sterowników: skaner wpisuje kod do aktywnego pola w dowolnym programie. RS-232 służy do starszych kas i systemów z portem COM. Bluetooth (profil HID albo SPP) pozwala sparować skaner z komputerem, tabletem albo terminalem mobilnym. Prefiksy, sufiksy i listę symbologii ustawia się w bezpłatnym programie Zebra 123Scan, który drukuje też kod konfiguracyjny do zeskanowania na kolejnych skanerach.',
+        'Budżet i gwarancja — [LI2208](/produkt/zebra-li2208) od 181 zł (1D) i [DS2208](/produkt/zebra-ds2208) od 352 zł (2D) mają 5 lat gwarancji. [DS4608](/produkt/zebra-ds4608) do kas z dużym ruchem kosztuje od 814 zł, również z 5-letnią gwarancją. Ultra-rugged [DS3608-SR](/produkt/zebra-ds3608-sr) od 1 287 zł i prezentacyjny [DS9308](/produkt/zebra-ds9308) od 995 zł mają 3 lata gwarancji.',
       ],
     },
     expertAuthority:
-      'TAKMA jest autoryzowanym Premier Solution Partnerem Zebra Technologies z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Skonfigurowaliśmy i wdrożyliśmy tysiące skanerów kodów kreskowych Zebra — od pojedynczych stanowisk kasowych w aptekach i sklepach, po floty 200+ skanerów w centrach dystrybucyjnych i sieciach handlowych. Jako certyfikowany Printer Repair Specialist Zebra zapewniamy nie tylko sprzedaż i doradztwo, ale także konfigurację (123Scan, prefiksy/sufiksy, wybór symbologii), szkolenie operatorów i serwis gwarancyjny oraz pogwarancyjny we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Każda rekomendacja na tej stronie opiera się na danych z tysięcy realnych wdrożeń — wiemy, które modele najlepiej sprawdzają się w aptekach (DS2208-HC), na kasach supermarketów (DS9308) i w magazynach z WMS (DS3608-ER).',
-    technicalDeepDive: `Pełne portfolio skanerów kodów kreskowych Zebra — od ekonomicznych 2D do ultra-rugged i prezentacyjnych — pozwala dobrać urządzenie idealnie dopasowane do stanowiska pracy. Zestawienie kluczowych parametrów:\n\n• DS2208 (handheld 2D, przewodowy): imager CMOS area, 220 skanów/s, zasięg 0,5–36,8 cm, kody 1D/2D + ekrany, USB HID Plug&Play, IP52, upadki 1,5 m, 115 g, gwarancja 60 mies. (5 lat), od 352 zł netto — uniwersalny entry-level do kas, aptek, biur, bibliotek. Następca legendarnego LS2208.\n\n• DS2208-HC (wersja healthcare): identyczna specyfikacja + obudowa antybakteryjna odporna na środki dezynfekcyjne (IPA, chlorheksydyna, Oxivir) — do aptek szpitalnych, laboratoriów i placówek medycznych.\n\n• DS4608 (handheld 2D, high-performance): imager PRZYM 1280 skanów/s, zasięg do 55 cm, tryb handheld + hands-free na podstawce, IP52, upadki 1,8 m, od ~900 zł — do kas wysokoobrotowych w supermarketach i sieciach handlowych. Opcja DS4608-HC dla healthcare.\n\n• DS8108/DS8178 (handheld 2D, mid-range): DS8108 przewodowy / DS8178 bezprzewodowy Bluetooth, 500+ skanów/s, zasięg do 61 cm, IP52/IP43, upadki 1,8 m — dla retail i logistyki lekkiej. Szybsza wersja DS2208 do stanowisk z dużym ruchem.\n\n• LI4278 (handheld 1D, bezprzewodowy): laserowy skaner liniowy 1D, Bluetooth 2.1, zasięg 100 m, bateria 57 000 skanów, IP43, upadki 1,8 m — dla stanowisk z kodami wyłącznie 1D (starsze systemy). W 2026 rekomendujemy przejście na 2D.\n\n• DS3608/LI3608 (handheld, ultra-rugged): DS3608 (2D) / LI3608 (1D), IP67, upadki 2,4 m na beton, -30°C do +50°C, zasięg do 6,1 m (Extended Range), 1 200 skanów/s — do ciężkich warunków magazynowych, chłodni, doków załadunkowych. Wersje bezprzewodowe: DS3678/LI3678.\n\n• CS6080 (companion scanner, wearable): mini-skaner przypinany do palca lub nadgarstka, Bluetooth 5.0, 27 g, bateria 590 mAh (8 000 skanów), 2D imager, IP65, upadki 1,8 m — do kompletacji hands-free w magazynach, parowania z terminalem mobilnym lub smartfonem.\n\n• DS9308 (prezentacyjny, hands-free): wielokierunkowy imager 2D, pole skanowania 44,5°, 1 120 skanów/s, zasięg do 31 cm, USB/RS-232, IP52, od ~1 800 zł — do kas supermarketów, aptek, bibliotek. Produkty przesuwane przed oknem — bez naciskania przycisku.\n\n• SP7208 (wbudowany, in-counter): skaner zabudowany w blat kasy lub ladę — automatyczny odczyt 2D przy przesuwaniu produktu. Do zintegrowanych stanowisk POS w dużych sieciach handlowych.\n\n• MP7600 (multi-plane): skaner z sześcioma płaszczyznami skanowania — odczytuje kody z dowolnej strony produktu bez precyzyjnego celowania. Najszybszy model prezentacyjny Zebra do kas z ruchem 1 000+ transakcji/dzień.`,
+      'TAKMA działa na rynku AutoID od 2001 roku i jest partnerem Zebra Technologies w programie Zebra Premier Partner. Skanery Zebra dobieramy do stanowisk w aptekach, sklepach, magazynach i na produkcji. Na życzenie konfigurujemy je przed wysyłką w programie 123Scan: prefiksy i sufiksy, lista symbologii, tryb pracy. Naprawy gwarancyjne i pogwarancyjne prowadzimy razem z [serwisem skanerów Zebra](https://www.serwis-zebry.pl/serwis-skanerow-zebra). Firma, która ma już od nas drukarki etykiet i terminale Zebra, ma jednego dostawcę i jeden serwis dla całego sprzętu.',
+    technicalDeepDive: `Zestawienie parametrów skanerów Zebra. Ceny netto dotyczą najtańszej konfiguracji modelu.\n\n• DS2208 (ręczny 2D, przewodowy): imager 640 × 480 px, zasięg 1,2–36,8 cm (EAN-13 13 mil), kody 1D i 2D, także z ekranów, USB HID bez sterowników, IP52, upadki z 1,5 m, 162 g, gwarancja 5 lat, od 352 zł netto — kasa, apteka, biuro, biblioteka.\n\n• DS2208-HC (wersja do placówek medycznych): parametry jak DS2208, obudowa odporna na środki dezynfekcyjne — apteki szpitalne, laboratoria, przychodnie.\n\n• DS4608 (ręczny 2D, do kas z dużym ruchem): imager 1280 × 800 px z PRZM, zasięg do 71 cm (SR, UPC 13 mil), praca w ręku albo w podstawce, wersja HD do małych kodów, IP52, upadki z 1,8 m, gwarancja 5 lat, od 814 zł netto — kasy supermarketów i sieci handlowych.\n\n• DS8108/DS8178 (ręczny 2D, poprzednia generacja): DS8108 przewodowy, DS8178 bezprzewodowy Bluetooth, wycofane z produkcji — następcy to przewodowy [DS8208](/produkt/zebra-ds8208) i bezprzewodowy [DS8288](/produkt/zebra-ds8288).\n\n• LI4278 (ręczny 1D, bezprzewodowy): imager liniowy 1D z Bluetooth, wycofany z produkcji — do nowych stanowisk bezprzewodowy [DS2278](/produkt/zebra-ds2278) (2D) albo przewodowy [LI2208](/produkt/zebra-li2208) (1D).\n\n• DS3608/LI3608 (ręczne, ultra-rugged, przewodowe): DS3608 (2D) i LI3608 (1D), IP65 i IP68, upadki na beton z 3 m (DS3608) i 2,4 m (LI3608), praca od −30°C, zasięg do 32 m (DS3608-XR, kody 100 mil) i do 19,8 m (LI3608-ER), od 1 287 zł netto (DS3608-SR) — magazyny, chłodnie, doki załadunkowe. Wersje bezprzewodowe: [DS3678](/produkt/zebra-ds3678-sr) i LI3678.\n\n• CS6080 (kieszonkowy skaner 2D, companion): Bluetooth 5.0, 83 g, bateria 745 mAh (13 000 skanów), IP65, upadki z 1,8 m, gwarancja 3 lata — noszony na smyczy i parowany z terminalem albo smartfonem, do obsługi klienta na sali sprzedaży.\n\n• DS9308 (prezentacyjny): imager 2D z PRZM, pole widzenia 52° × 33°, zasięg do 22,4 cm (UPC 13 mil), USB i RS-232, IP52, upadki z 1,5 m, gwarancja 3 lata, od 995 zł netto — kasy, apteki, biblioteki. Towar przesuwa się przed oknem bez naciskania spustu.\n\n• SP7208 (wbudowany w ladę): skaner 2D zabudowany w blat kasy — odczyt przy przesuwaniu towaru nad oknem, w stanowiskach POS dużych sieci handlowych.\n\n• MP7000 (skaner-waga wbudowany w ladę): skaner bioptyczny z kilkoma płaszczyznami skanowania, czyta kody 1D i 2D z różnych stron produktu — kasy w supermarketach, także samoobsługowe.`,
     tcoComparisons: [
       {
         title: 'TCO 5 lat — sieć 10 kas (skanery)',
         variants: [
           {
-            label: '10× Zebra DS2208',
+            label: '10× Zebra DS2208 z kablem USB i podstawką',
             items: [
-              { name: 'Skanery (352 zł × 10)', cost: '3 520 zł' },
-              { name: 'Podstawki', cost: '0 zł (w komplecie)' },
-              { name: 'Kable USB', cost: '0 zł (w komplecie)' },
-              { name: 'Serwis 5 lat', cost: '0 zł (gwarancja)' },
+              { name: 'Skanery DS2208-SR7U2100SGW (388 zł × 10)', cost: '3 880 zł' },
+              { name: 'Kable USB i podstawki', cost: '0 zł (w zestawie)' },
+              { name: 'Naprawy usterek przez 5 lat', cost: '0 zł (gwarancja)' },
             ],
-            total: '3 520 zł (~6 zł/mies./stanowisko)',
+            total: '3 880 zł (ok. 6,50 zł miesięcznie na kasę)',
           },
           {
-            label: '10× tani skaner chiński',
+            label: '10× skaner bez marki (założenia)',
             items: [
               { name: 'Skanery (200 zł × 10)', cost: '2 000 zł' },
-              { name: '2 awarie × 3 szt. (wymiana)', cost: '1 200 zł' },
+              { name: 'Wymiana 6 sztuk po awarii w 3 lata', cost: '1 200 zł' },
               { name: 'Ponowny zakup po 3 latach', cost: '2 000 zł' },
               { name: 'Przestoje i konfiguracja', cost: 'trudne do oszacowania' },
             ],
-            total: '~5 200 zł (3 lata) + ponowny zakup',
+            total: 'ok. 5 200 zł w 5 lat',
           },
         ],
-        conclusion: 'Zebra DS2208 jest tańsza w 5-letnim TCO mimo wyższej ceny zakupu — dzięki gwarancji 5 lat i zerowym kosztom serwisu.',
+        conclusion: 'Przy takich założeniach DS2208 jest tańszy w okresie pięciu lat mimo wyższej ceny zakupu. Różnicę robi 5 lat gwarancji producenta: usterki w tym czasie naprawia producent bez opłat. Gwarancja nie obejmuje uszkodzeń mechanicznych.',
       },
     ],
     useCases: [
       {
         title: 'Kasa fiskalna i POS — DS2208 / DS4608 / DS9308',
         description:
-          'Skaner na kasie to podstawowe narzędzie w handlu detalicznym. DS2208 (od 352 zł) — uniwersalny entry-level obsługujący kody 1D/2D i e-paragony z ekranów, USB Plug&Play, działa z każdym programem kasowym bez sterowników. DS4608 (~900 zł) — do kas wysokoobrotowych w supermarketach, 1 280 skanów/s, tryb hands-free na podstawce. DS9308 prezentacyjny (~1 800 zł) — produkty przesuwane przed oknem, bez naciskania przycisku — oszczędza 1–2 s na transakcji (przy 500 transakcji/dzień = 8–17 minut). Wszystkie obsługują GS1 DataBar, kody lojalnościowe i e-kupony.',
+          '[DS2208](/produkt/zebra-ds2208) (od 352 zł) czyta kody 1D i 2D, także e-paragony i kupony z ekranu telefonu. Podłączony przez USB działa z każdym programem kasowym bez sterowników. [DS4608](/produkt/zebra-ds4608) (od 814 zł) ma matrycę 1280 × 800 px i lepiej czyta zniszczone i słabo wydrukowane kody, a w podstawce pracuje w trybie automatycznym. [DS9308](/produkt/zebra-ds9308) (od 995 zł) stoi na ladzie: kasjer przesuwa towar przed oknem i nie naciska spustu, więc ma wolne obie ręce.',
       },
       {
-        title: 'Apteka i weryfikacja leków — DS2208-HC',
+        title: 'Apteka i weryfikacja leków — DS2208 / DS4678',
         description:
-          'Dyrektywa antyfałszywkowa (Falsified Medicines Directive / FMD) wymaga weryfikacji kodu DataMatrix na opakowaniu każdego leku w systemie KOWAL/NMVS. DS2208-HC z obudową antybakteryjną (od ~400 zł) spełnia te wymogi: odczytuje DataMatrix 2D na małych opakowaniach leków, działa z systemami aptecznymi (Kamsoft, Infofarm, Pharmindex) przez USB HID. Dezynfekcja obudowy alkoholem izopropylowym i chlorheksydyną nie powoduje degradacji plastiku. Gwarancja 5 lat eliminuje koszt wymiany.',
+          'Dyrektywa o sfałszowanych lekach (Falsified Medicines Directive, FMD) wymaga weryfikacji kodu Data Matrix z opakowania leku w krajowym systemie, w Polsce w systemie KOWAL. To kod 2D, więc potrzebny jest imager, a nie skaner liniowy. [DS2208](/produkt/zebra-ds2208) (od 352 zł, 5 lat gwarancji) czyta Data Matrix z małych opakowań i łączy się z programem aptecznym przez USB jako klawiatura. Gdy przy stanowisku przeszkadza kabel, sprawdza się bezprzewodowy [DS4678](/produkt/zebra-ds4678) (od 1 126 zł).',
       },
       {
-        title: 'Magazyn WMS i kompletacja — DS3608-ER / CS6080',
+        title: 'Magazyn WMS i regały wysokiego składowania — DS3608-XR / DS3678-XR',
         description:
-          'W magazynie z regałami wysokiego składowania kluczowy jest zasięg skanera. DS3608-ER (Extended Range) skanuje kody z odległości do 6,1 m — eliminuje konieczność wchodzenia na drabiny. Obudowa IP67 wytrzymuje upadki z 2,4 m na beton i pracę w temperaturach -30°C (chłodnie). CS6080 (companion scanner, 27 g) przypięty do palca pozwala na skanowanie hands-free podczas kompletacji — obie ręce wolne do podnoszenia produktów. Parowanie Bluetooth z terminalem mobilnym Zebra [TC53](/produkt/zebra-tc53)/[MC3400](/produkt/zebra-mc3400).',
+          'Przy wysokich regałach liczy się zasięg. [DS3608-XR](/produkt/zebra-ds3608-xr) i bezprzewodowy [DS3678-XR](/produkt/zebra-ds3678-xr) czytają duże kody lokalizacji (100 mil) z odległości do 32 m, a zwykłą etykietę UPC do 3,7 m, więc magazynier nie wchodzi na drabinę. Obudowa IP65 i IP68 wytrzymuje upadki z 3 m na beton. Do chłodni lepszy jest przewodowy DS3608 (praca od −30°C), bezprzewodowy DS3678 pracuje od −20°C. Skaner bezprzewodowy paruje się przez Bluetooth z terminalem Zebra [TC53](/produkt/zebra-tc53) albo [MC3400](/produkt/zebra-mc3400), gdy operator potrzebuje też ekranu z danymi z WMS.',
       },
       {
-        title: 'Logistyka i przyjęcie towaru — DS4608 / LI3608',
+        title: 'Przyjęcie towaru i rampa — DS4608 / DS3678 / LI3608',
         description:
-          'Na rampie załadunkowej i w strefie przyjęć towaru DS4608 w trybie hands-free na podstawce skanuje etykiety paletowe, listy przewozowe i kody przesyłek. LI3608 (ultra-rugged, bezprzewodowy) do skanowania palet na placu — IP67, praca w deszczu, upadki 2,4 m, bateria na 50 000+ skanów. Integracja z WMS: zeskanowany kod automatycznie przypisuje dostawę do lokalizacji magazynowej. Szybkość przyjęcia wzrasta o 30–50% w porównaniu z ręcznym wpisywaniem.',
+          'W strefie przyjęć [DS4608](/produkt/zebra-ds4608) w podstawce czyta etykiety paletowe i listy przewozowe podsuwane pod okno. Na placu i na rampie, gdzie nie ma gniazdek, sprawdza się bezprzewodowy [DS3678-SR](/produkt/zebra-ds3678-sr): IP65 i IP68, upadki z 3 m, bateria na 100 000 skanów. Gdy etykiety mają tylko kody 1D, wystarczy przewodowy [LI3608-SR](/produkt/zebra-li3608-sr) (IP65 i IP68, upadki z 2,4 m). Jego bezprzewodowa wersja to LI3678. Zeskanowany kod trafia do WMS i przypisuje dostawę do lokalizacji.',
       },
       {
-        title: 'Produkcja i kontrola jakości — DS3608-HP / SP7208',
+        title: 'Produkcja i kontrola jakości — DS3608-HD / DS4678-DPE',
         description:
-          'Na linii produkcyjnej skanery weryfikują kody komponentów, rejestrują numer serii i kontrolują traceability (ISO 9001, IATF 16949, GS1). DS3608-HP (High Performance) odczytuje mikroskopijne kody DPM (Direct Part Marking) grawerowane laserowo na metalowych i plastikowych częściach. SP7208 (in-counter) zabudowany w stanowisko kontrolne — automatyczny odczyt bez interwencji operatora. Każdy skan rejestrowany w systemie MES zapewnia pełną identyfikowalność produktu od surowca po wysyłkę.',
+          'Na linii produkcyjnej skaner potwierdza numer komponentu i partii, a system MES zapisuje historię produktu (identyfikowalność wg ISO 9001, IATF 16949 i GS1). [DS3608-HD](/produkt/zebra-ds3608-hd) czyta bardzo małe kody, od 3 mil, np. na płytkach elektroniki. Kody DPM wybite albo wygrawerowane laserem w metalu i plastiku czyta [DS4678-DPE](/produkt/zebra-ds4678-dpe). Przewodowe DS3608 obsługują też protokoły EtherNet/IP, Profinet i Modbus TCP do połączenia ze sterownikiem PLC.',
       },
       {
         title: 'Punkt obsługi klienta i biblioteka — DS2208 / DS9308',
         description:
-          'W bibliotekach DS2208 skanuje kody ISBN na książkach do systemu bibliotecznego (ALEPH, Prolib, MOL). W punktach obsługi klienta (urzędy, banki, poczta) skanuje kody z dokumentów, e-biletów i potwierdzeń rezerwacji z ekranów smartfonów. DS9308 prezentacyjny w okienku kasowym — klient sam przykłada telefon z kodem, bez podawania urządzenia do ręki. Prosty interfejs USB HID nie wymaga instalacji sterowników.',
+          'W bibliotekach DS2208 skanuje kody ISBN na książkach do systemu bibliotecznego (ALEPH, Prolib, MOL). W punktach obsługi klienta (urzędy, banki, poczta) skanuje kody z dokumentów, e-biletów i potwierdzeń rezerwacji z ekranów smartfonów. DS9308 prezentacyjny w okienku kasowym: klient sam przykłada telefon z kodem i nie podaje go obsłudze. Interfejs USB HID nie wymaga instalacji sterowników.',
       },
     ],
     uniqueInsights: {
-      heading: 'Czego sprzedawcy skanerów nie powiedzą',
+      heading: 'Co warto wiedzieć przed zakupem skanera Zebra',
       items: [
         {
-          title: 'PRZYM — technologia dekodowania, której nie ma nikt inny',
-          text: 'PRZYM (Pattern Recognition for Intelligent Zero-Margin decoding) to autorska platforma obrazowania Zebra, która dekoduje kody kreskowe nawet gdy są uszkodzone (do 50% zniszczenia), zamazane, słabo wydrukowane lub pokryte folią stretch. W testach porównawczych PRZYM dekoduje o 20–30% więcej „trudnych" kodów niż konkurencyjna technologia Honeywell Adaptus. To bezpośrednio przekłada się na mniej błędów „no read" na kasie (irytacja klienta) i w magazynie (opóźnienia kompletacji). W [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra) testowaliśmy skanery z 8 producentów — Zebra DS4608 z PRZYM konsekwentnie wygrywała na kodach niskojakościowych.',
+          title: 'PRZM: odczyt uszkodzonych i słabo wydrukowanych kodów',
+          text: 'PRZM Intelligent Imaging to oprogramowanie dekodujące w imagerach Zebry, m.in. [DS2208](/produkt/zebra-ds2208), [DS4608](/produkt/zebra-ds4608), [DS8208](/produkt/zebra-ds8208), [DS9308](/produkt/zebra-ds9308) i [DS9908](/produkt/zebra-ds9908). Pomaga przy kodach zniszczonych, zabrudzonych, wyblakłych i pod folią stretch. Na kasie oznacza to rzadsze ręczne wpisywanie kodu, w magazynie mniej powtórzonych skanów. Przy słabej jakości etykiet lepiej sprawdza się DS4608 z matrycą 1280 × 800 px (DS2208: 640 × 480 px).',
         },
         {
-          title: 'DataCapture DNA — ekosystem zarządzania, który oszczędza godziny IT',
-          text: 'Pakiet [DataCapture DNA](https://www.zebra.com/us/en/software/mobile-computer-software/datawedge.html) obejmuje: 123Scan (masowa konfiguracja skanerów — wygeneruj profil na PC, wydrukuj kod konfiguracyjny, zeskanuj jednym skanerem → gotowe), Scanner Management Service (SMS) do zdalnego monitorowania floty skanerów (stan baterii, wersja firmware, liczba skanów, błędy), Scan-to-Connect do szybkiego parowania Bluetooth. Przy flocie 50+ skanerów 123Scan oszczędza 10–20 godzin konfiguracji. Honeywell Remote MasterMind oferuje podobne funkcje, ale za dodatkową opłatą licencyjną.',
+          title: '123Scan: jedna konfiguracja dla całej floty',
+          text: 'Zebra udostępnia bezpłatny program 123Scan (Windows). Profil skanera (symbologie, prefiksy, sufiksy, tryb pracy) zapisuje się raz i wgrywa do kolejnych skanerów po USB albo drukuje jako kod konfiguracyjny do zeskanowania. Program aktualizuje też oprogramowanie skanera i tworzy raport z jego ustawień. Przy większej flocie Scanner Management Service pozwala zdalnie zmienić konfigurację i wgrać aktualizację na skanerach podłączonych do komputerów w sieci.',
         },
         {
-          title: 'Gwarancja 5 lat — ukryty koszt tańszych marek',
-          text: 'Zebra [DS2208](/produkt/zebra-ds2208) ma gwarancję 60 miesięcy (5 lat) — jedną z najdłuższych w branży. Datalogic QuickScan: 3 lata. Honeywell Voyager: 3 lata. Tanie marki (Netum, Tera, Eyoyo): 12 miesięcy. Przy cenie DS2208 = 352 zł i 5 latach gwarancji: koszt 70 zł/rok. Tani skaner za 150 zł z gwarancją 1 rok i żywotnością 2 lata: koszt 75 zł/rok + ryzyko przestoju (wymiana, konfiguracja). Zebra jest tańsza w ujęciu rocznym — i o niebo niezawodniejsza.',
-        },
-        {
-          title: 'Kompatybilność kabli i podstawek — ochrona inwestycji przy upgrade',
-          text: 'Zebra projektuje skanery z myślą o backward compatibility. Kable USB i RS-232 z DS2208 pasują do DS4608. Podstawki i uchwyty serii DS2200 kompatybilne z DS4600. Przy upgrade z DS2208 na DS4608 wymieniasz tylko skaner — kabel, podstawka i konfiguracja zostają. Honeywell i Datalogic zmieniają złącza między generacjami, wymuszając zakup nowych kabli (~30–50 zł × 100 stanowisk = 3 000–5 000 zł dodatkowego kosztu).',
+          title: 'Wspólne kable i podstawki',
+          text: 'Ten sam [kabel USB Zebra CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22) (od 88 zł) pasuje do DS2208, DS2278, DS4608, DS4678, DS9308 i DS9908, a [podstawka gooseneck 20-71043-04R](/produkt/zebra-podstawka-ds22) (od 121 zł) do DS2208, DS2278 i DS4608. Przy wymianie DS2208 na DS4608 kabel i podstawka zostają na stanowisku.',
         },
       ],
     },
@@ -813,111 +823,116 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Ile kosztuje skaner kodów kreskowych Zebra?',
         answer:
-          'Ceny skanerów kodów kreskowych Zebra zaczynają się od 352 zł netto za model [DS2208](/produkt/zebra-ds2208) (przewodowy 2D imager, USB, gwarancja 5 lat). Skanery mid-range (DS4608, DS8108) kosztują 700–1 200 zł. Modele ultra-rugged do magazynów (DS3608, LI3608) — 1 800–3 000 zł. Skanery prezentacyjne hands-free (DS9308) — od ok. 1 800 zł. Skanery wbudowane (SP7208) i multi-plane (MP7600) — 3 000–5 000 zł. Ceny netto w TAKMA aktualizowane codziennie.',
+          'Najtańszy jest liniowy [LI2208](/produkt/zebra-li2208) od 181 zł netto, który czyta tylko kody 1D (np. EAN-13, Code 128). Najtańszy imager 2D to [DS2208](/produkt/zebra-ds2208) od 352 zł netto, a jego wersja bezprzewodowa [DS2278](/produkt/zebra-ds2278) kosztuje od 449 zł. Do kas z dużym ruchem są [DS4608](/produkt/zebra-ds4608) od 814 zł i [DS8208](/produkt/zebra-ds8208) od 1 027 zł, a prezentacyjne [DS9308](/produkt/zebra-ds9308) od 995 zł i [DS9908](/produkt/zebra-ds9908) od 1 169 zł. Ultra-rugged do magazynu: [DS3608-SR](/produkt/zebra-ds3608-sr) od 1 287 zł, bezprzewodowy [DS3678-SR](/produkt/zebra-ds3678-sr) od 2 111 zł, dalekiego zasięgu [DS3608-XR](/produkt/zebra-ds3608-xr) od 2 417 zł. Ceny netto dotyczą najtańszej konfiguracji; kabel, podstawka albo baza podnoszą cenę zestawu.',
+      },
+      {
+        question: 'Czym się różni czytnik kodów kreskowych od skanera?',
+        answer:
+          'Niczym, to dwie nazwy tego samego urządzenia. Różnice między modelami wynikają z technologii odczytu. Czytnik liniowy 1D, np. [Zebra LI2208](/produkt/zebra-li2208), czyta wzdłuż jednej linii kody kreskowe takie jak EAN-13 czy Code 128. Imager 2D, np. [Zebra DS2208](/produkt/zebra-ds2208), rejestruje obraz kodu, więc czyta też kody QR, Data Matrix i PDF417, również z ekranu telefonu. Drugi podział dotyczy podłączenia (kabel USB albo Bluetooth) i formy: skaner ręczny, prezentacyjny na ladę albo terminal mobilny z wbudowanym skanerem.',
       },
       {
         question: 'Czym różni się skaner 1D od 2D i który wybrać?',
         answer:
-          'Skaner 1D (laserowy, seria LI) odczytuje tylko kody liniowe: EAN-13, Code 128, Code 39 — wystarczający gdy firma używa wyłącznie tradycyjnych kodów kreskowych. Skaner 2D (imager, seria DS) odczytuje kody 1D + 2D (QR, DataMatrix, PDF417, Aztec) + kody z ekranów smartfonów. W 2026 rekomendujemy wyłącznie skanery 2D — różnica cenowa to ok. 50–100 zł, a kody 2D są coraz powszechniejsze: e-paragony, GS1 DataMatrix na lekach (wymóg FMD), e-bilety, kody lojalnościowe. Zebra [DS2208](/produkt/zebra-ds2208) (2D) za 352 zł to najtańszy profesjonalny imager na rynku.',
+          'Skaner 1D (Zebra LI2208, LI3608) odczytuje tylko kody kreskowe liniowe, np. EAN-13 na towarach albo Code 128 na etykietach logistycznych. Wystarczy, gdy firma używa wyłącznie takich kodów. Skaner 2D (seria DS) czyta też kody QR, Data Matrix, PDF417 i Aztec, również z ekranów telefonów. Do nowych stanowisk lepszy jest 2D, bo kody Data Matrix i QR trafiają już do aptek, kas i punktów obsługi klienta. Różnica w cenie: [LI2208](/produkt/zebra-li2208) od 181 zł, [DS2208](/produkt/zebra-ds2208) od 352 zł.',
       },
       {
         question: 'Skaner przewodowy czy bezprzewodowy — co wybrać?',
         answer:
-          'Przewodowy (USB/RS-232): stałe stanowisko kasowe, apteka, biuro, okienko pocztowe — niezawodne połączenie, brak baterii do ładowania, niższa cena (DS2208 od 352 zł). Bezprzewodowy (Bluetooth): praca mobilna — inwentaryzacja, kompletacja w magazynie, skanowanie na rampie załadunkowej. Zasięg Bluetooth do 100 m, bateria na 50 000–100 000 skanów (cały dzień). Cena bezprzewodowego wyższa o 200–500 zł. Reguła: jeśli skaner leży na jednym stanowisku → przewodowy. Jeśli operator chodzi z nim → bezprzewodowy.',
+          'Przewodowy (USB albo RS-232) wybiera się na stałe stanowisko: kasa, apteka, biuro, okienko pocztowe. Nie ma baterii i jest tańszy. Bezprzewodowy (Bluetooth) służy do pracy w ruchu: inwentaryzacja, kompletacja, rampa. Wersja bez kabla kosztuje więcej: [DS2278](/produkt/zebra-ds2278) od 449 zł wobec 352 zł za [DS2208](/produkt/zebra-ds2208), [DS3678-SR](/produkt/zebra-ds3678-sr) od 2 111 zł wobec 1 287 zł za DS3608-SR.',
       },
       {
         question: 'Jaka jest wytrzymałość skanerów Zebra (IP, upadki)?',
         answer:
-          'Skanery Zebra posiadają certyfikację IP i MIL-STD. DS2208: IP52 (ochrona przed kurzem i kroplami), upadki z 1,5 m — warunki biurowe i kasowe. DS4608: IP52, upadki z 1,8 m — kasy wysokoobrotowe. DS8108/DS8178: IP52/IP43, upadki z 1,8 m. DS3608/LI3608: IP67 (pełna pyłoszczelność + zanurzenie w wodzie 1 m), upadki z 2,4 m na beton, praca -30°C do +50°C — magazyny, chłodnie, doki. CS6080: IP65, upadki z 1,8 m. DS9308: IP52 — stanowisko kasowe. Na każdy model dostępne są etui ochronne zwiększające odporność o dodatkowe 0,3–0,6 m.',
+          'Zależy od modelu. [DS2208](/produkt/zebra-ds2208) i [LI2208](/produkt/zebra-li2208): IP52 (ochrona przed pyłem i kroplami wody), upadki z 1,5 m. [DS4608](/produkt/zebra-ds4608): IP52, upadki z 1,8 m. [DS8208](/produkt/zebra-ds8208): IP52, upadki z 3 m wg MIL-STD. [DS9308](/produkt/zebra-ds9308): IP52, upadki z 1,5 m. Ultra-rugged [DS3608](/produkt/zebra-ds3608-sr) i bezprzewodowy [DS3678](/produkt/zebra-ds3678-sr): IP65 i IP68 (pyłoszczelne, wytrzymują zanurzenie w wodzie), upadki z 3 m na beton. [LI3608](/produkt/zebra-li3608-sr): IP65 i IP68, upadki z 2,4 m.',
       },
       {
         question: 'Jak podłączyć skaner Zebra do kasy fiskalnej / systemu POS?',
         answer:
-          'Skanery Zebra działają w trybie USB HID (emulacja klawiatury) — wystarczy podłączyć kabel USB do komputera lub kasy. Skaner natychmiast „wpisuje" zeskanowany kod do aktywnego pola w programie kasowym (Subiekt, WF-MAG, Comarch ERP, InsERT, PC-Market) — jak gdyby operator wpisał kod ręcznie na klawiaturze. Nie wymaga instalacji sterowników. Zaawansowana konfiguracja (prefiksy/sufiksy, wybór symbologii, tryb ciągły) — przez darmową aplikację Zebra 123Scan lub skanowanie kodów konfiguracyjnych z instrukcji.',
+          'Skanery Zebra działają w trybie USB HID (emulacja klawiatury) — wystarczy podłączyć kabel USB do komputera lub kasy. Skaner natychmiast „wpisuje” zeskanowany kod do aktywnego pola w programie kasowym (Subiekt, WF-MAG, Comarch ERP, PC-Market) — tak jakby operator wpisał kod na klawiaturze. Nie wymaga instalacji sterowników. Zaawansowana konfiguracja (prefiksy i sufiksy, wybór symbologii, tryb ciągły) — przez bezpłatną aplikację Zebra 123Scan lub skanowanie kodów konfiguracyjnych z instrukcji.',
       },
       {
         question: 'Jaki jest zasięg skanowania skanerów Zebra?',
         answer:
-          'Zasięg zależy od modelu i typu kodu: DS2208 — 0,5–36,8 cm (kody standardowe na kasie). DS4608 — 1–55 cm (kasy wysokoobrotowe). DS8108 — 1–61 cm. DS3608-SR (Standard Range) — 2–120 cm. DS3608-ER (Extended Range) — do 6,1 m dla kodów liniowych, do 3,6 m dla kodów 2D — skanowanie z daleka w magazynach. CS6080 — 5–80 cm. DS9308 prezentacyjny — 0,5–31 cm (pole 44,5°). Do magazynów z regałami powyżej 3 m rekomendujemy DS3608-ER lub terminal mobilny z SE55/SE58 (zasięg do 30 m).',
+          'Zależy od modelu i wielkości kodu. [DS2208](/produkt/zebra-ds2208): 1,2–36,8 cm dla kodu EAN-13 (13 mil), czyli typowo na kasie. [DS4608](/produkt/zebra-ds4608): do 71 cm, [DS8208](/produkt/zebra-ds8208): do 70 cm (kod UPC 13 mil). [DS9308](/produkt/zebra-ds9308) prezentacyjny: do 22,4 cm, z polem widzenia 52°. [DS3608-SR](/produkt/zebra-ds3608-sr): do 71 cm dla kodu Code 128 20 mil i do 1,5 m dla 40 mil. [DS3608-XR](/produkt/zebra-ds3608-xr) i [DS3678-XR](/produkt/zebra-ds3678-xr): etykieta UPC do 3,7 m, duże kody 100 mil do 32 m. Liniowy [LI3608-ER](/produkt/zebra-li3608-er): do 19,8 m na etykietach odblaskowych. Do regałów wysokiego składowania polecamy wersje XR albo terminal mobilny z silnikiem dalekiego zasięgu.',
       },
       {
         question: 'Jaka jest gwarancja na skanery Zebra?',
         answer:
-          'Standardowa gwarancja Zebra na skanery: DS2208 / DS4608 — 60 miesięcy (5 lat). DS3608 / LI3608 / DS3678 — 36 miesięcy (3 lata). DS9308 — 36 miesięcy. CS6080 — 12 miesięcy. Opcjonalnie Zebra OneCare wydłuża gwarancję do 5 lat z ochroną przed uszkodzeniami przypadkowymi. Serwis pogwarancyjny w Polsce: TAKMA + [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra) z naprawami ekspresowymi i wymianą wadliwych egzemplarzy. DS2208 z gwarancją 5 lat = 352 zł / 5 lat = 70 zł/rok — najtańsza ochrona na rynku.',
+          'Pięć lat (60 miesięcy) gwarancji producenta mają [LI2208](/produkt/zebra-li2208), [DS2208](/produkt/zebra-ds2208), [DS4608](/produkt/zebra-ds4608), [DS8208](/produkt/zebra-ds8208) i [DS9908](/produkt/zebra-ds9908). Trzy lata mają DS2278, DS4678, DS8288, DS9308 oraz ultra-rugged DS3608, LI3608 i DS3678. Baterie w DS2278 i DS3678 mają rok gwarancji. Kontrakt Zebra OneCare wydłuża ochronę i może obejmować uszkodzenia przypadkowe. Naprawy gwarancyjne i pogwarancyjne w Polsce prowadzimy razem z [serwisem skanerów Zebra](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
       },
       {
         question: 'Który skaner Zebra do magazynu z WMS?',
         answer:
-          'Do lekkiego magazynu (przyjęcie/wydanie towaru, inwentaryzacja): DS2208 przewodowy (352 zł) na stałym stanowisku + CS6080 bezprzewodowy (na palec) do kompletacji. Do średniego magazynu z regałami: DS3608-ER bezprzewodowy (zasięg 6,1 m) — skanowanie kodów z daleka bez drabiny. Do ciężkiego magazynu/chłodni: DS3678-ER bezprzewodowy z IP67 i pracą do -30°C. Alternatywa: terminal mobilny Zebra [TC53](/produkt/zebra-tc53)/[MC3400](/produkt/zebra-mc3400) ze wbudowanym skanerem + wyświetlaczem WMS. Rekomendacja: jeśli operator potrzebuje tylko skanować → skaner standalone. Jeśli potrzebuje widzieć dane WMS → terminal mobilny.',
+          'Do lekkiego magazynu (przyjęcie i wydanie towaru przy komputerze): przewodowy [DS2208](/produkt/zebra-ds2208) od 352 zł, a do inwentaryzacji bezprzewodowy [DS2278](/produkt/zebra-ds2278) od 449 zł. Do magazynu z wysokimi regałami: bezprzewodowy [DS3678-XR](/produkt/zebra-ds3678-xr) od 3 237 zł (duże kody do 32 m) albo przewodowy [DS3608-XR](/produkt/zebra-ds3608-xr) od 2 417 zł. Do chłodni: przewodowy [DS3608-SR](/produkt/zebra-ds3608-sr) od 1 287 zł (praca od −30°C, IP65 i IP68). Gdy operator ma widzieć dane z WMS, lepszy jest terminal mobilny Zebra [TC53](/produkt/zebra-tc53) albo [MC3400](/produkt/zebra-mc3400) z wbudowanym skanerem.',
       },
       {
         question: 'Jak konserwować i czyścić skaner kodów kreskowych?',
         answer:
-          'Czyszczenie okna skanera: miękka szmatka z alkoholem izopropylowym (IPA 70%) co tydzień lub gdy spadnie jakość odczytu. Nie używać rozpuszczalników, acetonu, benzyny — uszkadzają powłokę antyodblaskową. Obudowa: ściereczka z łagodnym detergentem lub chusteczki dezynfekujące (modele HC). Kabel USB: sprawdzić złącze co miesiąc — luźne połączenie powoduje przerywany odczyt. Wymiana kabla: co 2–3 lata przy intensywnym użytkowaniu (zagięcia przy złączu). Firmware: aktualizacja przez 123Scan — nowe symbologie i poprawki dekodowania. Skanery Zebra nie wymagają kalibracji — fabryczne ustawienie jest trwałe.',
+          'Czyszczenie okna skanera: miękka szmatka z alkoholem izopropylowym (IPA 70%) co tydzień lub gdy spadnie jakość odczytu. Nie używać rozpuszczalników, acetonu ani benzyny, bo uszkadzają powłokę antyodblaskową. Obudowa: ściereczka z łagodnym detergentem lub chusteczki dezynfekujące. Kabel USB: sprawdzić złącze co miesiąc, bo luźne połączenie powoduje przerywany odczyt. Przy intensywnym użytkowaniu kabel wymienia się zwykle co 2–3 lata (zagięcia przy złączu). Oprogramowanie skanera aktualizuje się w 123Scan: dochodzą nowe symbologie i poprawki dekodowania. Skanery Zebra nie wymagają kalibracji.',
       },
       {
         question: 'Jak odblokować skaner Zebra, gdy przestał czytać kody?',
         answer:
-          'W większości przypadków to nie awaria, tylko ustawienie zapisane w pamięci skanera. Kolejność sprawdzania: (1) skaner piszczy, ale nic nie trafia do aplikacji — wyłączony jest interfejs albo skaner pracuje w trybie [DataWedge](/terminale-mobilne-zebra) zamiast klawiatury (HID); (2) skaner nie reaguje na konkretny rodzaj kodu — wyłączona symbologia (fabrycznie nieaktywne są m.in. Code 39 Full ASCII, GS1 DataBar Expanded); (3) model bezprzewodowy nie odpowiada — zgubił parowanie z bazą, wystarczy odłożyć go do bazy i zeskanować kod parowania z jej spodu. Ustawienia kasujemy kodem „Set Factory Defaults" z instrukcji modelu albo aplikacją 123Scan po USB. Skaner zablokowany hasłem zdarza się wyłącznie po konfiguracji przez poprzedniego integratora — wtedy potrzebny jest plik konfiguracyjny albo reset w serwisie.',
+          'W większości przypadków to nie awaria, tylko ustawienie zapisane w pamięci skanera. Kolejność sprawdzania: (1) skaner piszczy, ale nic nie trafia do aplikacji — skaner pracuje w innym trybie USB (np. wirtualny port COM albo SNAPI) zamiast klawiatury HID; (2) skaner nie reaguje na konkretny rodzaj kodu — ta symbologia jest wyłączona (fabrycznie nieaktywny jest np. Code 39 Full ASCII); (3) model bezprzewodowy nie odpowiada — zgubił parowanie z bazą, wystarczy zeskanować kod parowania z naklejki na bazie. Ustawienia kasuje się kodem „Set Factory Defaults” z instrukcji modelu albo programem 123Scan po USB. Blokada hasłem zdarza się zwykle po konfiguracji przez poprzedniego integratora — wtedy potrzebny jest plik konfiguracyjny albo reset w serwisie.',
       },
       {
         question: 'Jaka jest aplikacja do skanera Zebra?',
         answer:
-          'Zależy od tego, do czego skaner jest podłączony. Do komputera: 123Scan (Windows, bezpłatna) — konfiguruje symbologie, prefiksy i sufiksy, generuje kody konfiguracyjne i raporty, aktualizuje firmware. Do telefonu i tabletu: Scanner Control App (Android, iOS) — parowanie po Bluetooth i podgląd odczytów. Na terminalach z Androidem skanerem steruje DataWedge — wbudowana warstwa, która wkleja odczyt do dowolnej aplikacji bez pisania kodu. Programiści korzystają z Zebra Scanner SDK (Windows, Linux, Android). Do samego skanowania na stanowisku POS żadna aplikacja nie jest potrzebna — skaner w trybie HID zachowuje się jak klawiatura.',
+          'Zależy od tego, do czego skaner jest podłączony. Do komputera: 123Scan (Windows, bezpłatna) — konfiguruje symbologie, prefiksy i sufiksy, generuje kody konfiguracyjne i raporty, aktualizuje oprogramowanie skanera. Do telefonu i tabletu: Scanner Control App (Android, iOS) — parowanie po Bluetooth i podgląd odczytów. Na terminalach z Androidem skanerem steruje DataWedge — wbudowana warstwa, która wkleja odczyt do dowolnej aplikacji bez pisania kodu. Programiści korzystają z Zebra Scanner SDK. Do samego skanowania na stanowisku POS żadna aplikacja nie jest potrzebna — skaner w trybie HID zachowuje się jak klawiatura.',
       },
       {
         question: 'Jakie są alternatywy dla skanerów kodów kreskowych Zebra?',
         answer:
-          'Główni konkurenci to: Honeywell (Voyager 1472g, Hyperion 1300g, Granit 1910i — szeroka oferta, porównywalny segment cenowy, dobra jakość, ale gwarancja krótsza o 2 lata od Zebra DS2208). Datalogic (QuickScan QW2520, Gryphon GM4500, PowerScan PD9531 — włoska jakość, tańsze o 10–15% w segmencie budget, dobry serwis w PL). Newland (HR2260, FR4080 — chińskie, budżetowe, krótka żywotność). Keyence (SR-2000, SR-5000 — japońskie, specjalizacja w produkcji, drogie). Dla firm z istniejącą infrastrukturą Zebra (drukarki, terminale) rekomendujemy pozostanie przy marce — wspólna platforma zarządzania ([DataCapture DNA](https://www.zebra.com/us/en/software/mobile-computer-software/datawedge.html) + Mobility DNA + Link-OS) i kompatybilność kabli/podstawek.',
+          'Najczęściej porównywane marki to Honeywell, Datalogic i Newland; wszystkie trzy mamy w ofercie. Honeywell: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) od 358 zł z 5-letnią gwarancją i linia Granit do magazynów, więcej na stronie [skanery Honeywell](/skanery-honeywell). Datalogic: [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) od 230 zł, również z 5-letnią gwarancją. Newland: budżetowe skanery 2D, np. [HR23 Dorada](/produkt/newland-hr23-dorada) od 260 zł, więcej na stronie [skanery Newland](/skanery-kodow-kreskowych-newland). Firmom, które mają już drukarki i terminale Zebra, polecamy zostać przy tej marce: jeden serwis, a w modelach DS2208, DS2278 i DS4608 te same kable i podstawki.',
       },
     ],
     comparisons: [
       {
-        title: 'Skanery Zebra vs Honeywell — porównanie liderów rynku',
+        title: 'Skanery Zebra a Honeywell',
         content:
-          'Zebra i Honeywell to dwaj najwięksi producenci skanerów kodów kreskowych, kontrolujący łącznie ponad 55% rynku globalnego. Zebra [DS2208](/produkt/zebra-ds2208) (352 zł, gwarancja 5 lat) vs Honeywell Voyager 1472g (~380 zł, gwarancja 3 lata) — Zebra wygrywa ceną i gwarancją. DS4608 (PRZYM) vs Honeywell Hyperion 1950g (Adaptus) — w testach na trudnych kodach PRZYM dekoduje o 20–30% więcej. DS3608 vs Honeywell Granit 1980i — porównywalna wytrzymałość (IP67, upadki 2,4 m), Honeywell nieznacznie tańszy. DS9308 prezentacyjny vs Honeywell Solaris 7980g — Zebra szybsza (1 120 vs 1 000 skanów/s). Kluczowa różnica: Zebra oferuje [DataCapture DNA](https://www.zebra.com/us/en/software/mobile-computer-software/datawedge.html) (123Scan, SMS) w standardzie, Honeywell wymaga osobnej licencji na Remote MasterMind. Dla firm z ekosystemem Zebra (drukarki, terminale) — wspólna platforma zarządzania to decydujący argument.',
+          'Ceny i gwarancje w naszym sklepie, w porównywalnych konfiguracjach. Przewodowe 2D do kasy, z kablem USB i podstawką: Zebra [DS2208](/produkt/zebra-ds2208) i Honeywell [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) kosztują po 388 zł, oba mają 5 lat gwarancji. Bezprzewodowe zestawy z bazą i kablem USB: Zebra [DS2278](/produkt/zebra-ds2278) 761 zł i Honeywell [Voyager XP 1472g](/produkt/honeywell-voyager-xp-1472g) 775 zł, oba z 3-letnią gwarancją. Do kas z dużym ruchem, z kablem USB: Zebra [DS4608](/produkt/zebra-ds4608) SR 883 zł i Honeywell [Xenon Ultra 1960](/produkt/honeywell-xenon-ultra-1960) SR 1 245 zł, oba z 5-letnią. Ultra-rugged do magazynu, z kablem USB: Zebra [DS3608-SR](/produkt/zebra-ds3608-sr) 1 376 zł (IP65 i IP68, upadki z 3 m) i Honeywell [Granit XP 1990i SR](/produkt/honeywell-granit-xp-1990isr) 1 726 zł (IP67 i IP65, upadki z 3 m), oba z 3-letnią. W modelach do kasy ceny są niemal równe, w droższych klasach tańsza jest Zebra. Jeśli firma ma już drukarki i terminale Zebra, przemawia za nią też jeden serwis dla całego sprzętu. Pełna oferta drugiej marki: [skanery Honeywell](/skanery-honeywell).',
       },
       {
-        title: 'Skanery Zebra vs Datalogic — ekosystem kontra cena',
+        title: 'Skanery Zebra a Datalogic',
         content:
-          'Datalogic (QuickScan, Gryphon, PowerScan) to trzeci producent skanerów na świecie, pozycjonowany cenowo o 10–15% niżej od Zebry w segmencie budget. Datalogic QuickScan QW2520 (~300 zł) vs Zebra [DS2208](/produkt/zebra-ds2208) (352 zł) — Datalogic tańszy o ~50 zł, ale z gwarancją 3 lata (vs 5 lat Zebra) i niższą szybkością dekodowania. Datalogic Gryphon GM4500 (bezprzewodowy) vs Zebra DS8178 — porównywalna funkcjonalność, Datalogic zazwyczaj tańszy o 5–10%. PowerScan PD9531 (ultra-rugged) vs Zebra DS3608 — Datalogic mocny w sektorze produkcyjnym z technologią DPM. Zebra wyróżnia się ekosystemem (DataCapture DNA, kompatybilność z drukarkami i terminalami) oraz najdłuższą gwarancją. Datalogic jest dobrym wyborem jako tańsza alternatywa do pojedynczych stanowisk.',
+          'W najprostszych modelach 2D tańszy jest Datalogic: [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) z kablem USB kosztuje 250 zł, a Zebra [DS2208](/produkt/zebra-ds2208) z kablem USB 373 zł. Oba mają 5 lat gwarancji, klasę IP52 i wytrzymują upadki z 1,5 m. W bezprzewodowych zestawach z bazą i kablem USB ceny są zbliżone: Datalogic [QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500) 733 zł, Zebra [DS2278](/produkt/zebra-ds2278) 761 zł. QBT2500 ma 5 lat gwarancji, DS2278 3 lata (bateria rok). Skanerów ultra-rugged i dalekiego zasięgu Datalogic nie prowadzimy; w tej klasie mamy Zebrę (DS3608, DS3678) i Honeywell (Granit). Datalogic dobrze sprawdza się jako tańszy skaner na pojedyncze stanowisko.',
       },
       {
-        title: 'Skaner ręczny (handheld) vs prezentacyjny (hands-free) — kiedy co wybrać?',
+        title: 'Skaner ręczny (handheld) a prezentacyjny (hands-free)',
         content:
-          'Skaner ręczny (DS2208, DS4608, DS3608): operator bierze do ręki, celuje i naciska spust. Zalety: precyzyjne celowanie na konkretny kod (ważne gdy produkty leżą blisko siebie), niższa cena (od 352 zł), uniwersalność (kasa + inwentaryzacja). Skaner prezentacyjny (DS9308, SP7208, MP7600): stacjonarny na ladzie, klient/operator przesuwa produkt przed oknem. Zalety: hands-free — operator ma wolne ręce do pakowania, oszczędność 1–2 s/transakcji, mniej zmęczenia nadgarstka. Wady: wyższa cena (od ~1 800 zł), wymaga więcej miejsca. Reguła: do 200 transakcji/dzień → handheld ([DS2208](/produkt/zebra-ds2208)). 200–500 → handheld na podstawce (DS4608). 500+ → prezentacyjny (DS9308) lub in-counter (SP7208). Supermarket z 1 000+ transakcji → MP7600 multi-plane.',
+          'Skaner ręczny (DS2208, DS4608, DS3608) operator bierze do ręki, celuje i naciska spust. Łatwo nim trafić w jeden z kilku kodów na opakowaniu, jest tańszy (od 352 zł za model 2D) i przydaje się też poza kasą. Skaner prezentacyjny ([DS9308](/produkt/zebra-ds9308) od 995 zł, hybrydowy [DS9908](/produkt/zebra-ds9908) od 1 169 zł) stoi na ladzie, a towar przesuwa się przed oknem. Kasjer ma wolne obie ręce, ale skaner zajmuje więcej miejsca. Nasza reguła: do 200 transakcji dziennie skaner ręczny ([DS2208](/produkt/zebra-ds2208)), 200–500 skaner ręczny w podstawce (DS4608), powyżej 500 skaner prezentacyjny (DS9308 lub DS9908). Kasy taśmowe w supermarketach używają skanerów wbudowanych w ladę, np. Zebra MP7000.',
       },
       {
-        title: 'Skaner przewodowy vs bezprzewodowy — TCO porównanie',
+        title: 'Skaner przewodowy a bezprzewodowy: koszt stanowiska',
         content:
-          'Przewodowy [DS2208](/produkt/zebra-ds2208) (352 zł): TCO 5 lat = 352 zł + 0 zł (kabel USB w zestawie, 5 lat gwarancji) = 352 zł. Bezprzewodowy DS8178 (~1 100 zł): TCO 5 lat = 1 100 zł + stacja ładowania (~300 zł) + 1 wymiana baterii (~100 zł) = 1 500 zł. Różnica: 1 148 zł/stanowisko. Kiedy bezprzewodowy się opłaca? Gdy operator chodzi po sklepie/magazynie i potrzebuje swobody ruchu. Inwentaryzacja: bezprzewodowy oszczędza 30–50% czasu (brak plątania się w kablach). Przyjęcie towaru na rampie: bezprzewodowy konieczny (brak gniazdek USB). Kasa stacjonarna: przewodowy zawsze lepszy — niezawodny, tańszy, zero ładowania.',
+          'Przewodowy [DS2208](/produkt/zebra-ds2208) z kablem USB i podstawką kosztuje 388 zł i ma 5 lat gwarancji. Bezprzewodowy [DS2278](/produkt/zebra-ds2278) w zestawie z bazą i kablem USB kosztuje 761 zł; gwarancja wynosi 3 lata na skaner i rok na baterię, a zapasowy akumulator kosztuje 142 zł. Na jednym stanowisku to ok. 370 zł różnicy na start. Bezprzewodowy opłaca się tam, gdzie operator chodzi: inwentaryzacja, sala sprzedaży, rampa bez gniazdek. Na stałej kasie przewodowy jest tańszy, nie trzeba go ładować i nie traci połączenia.',
       },
       {
-        title: 'Skaner standalone vs terminal mobilny ze skanerem — co wybrać?',
+        title: 'Skaner a terminal mobilny ze skanerem',
         content:
-          'Skaner standalone (DS2208, DS3608): dekoduje kod i wysyła go do komputera/kasy. Nie ma ekranu, nie wyświetla danych WMS, nie uruchamia aplikacji. Cena: 352–3 000 zł. Zaleta: prosty, niezawodny, tani, 5 lat gwarancji. Terminal mobilny ze skanerem ([TC22](/produkt/zebra-tc22), [TC53](/produkt/zebra-tc53), [MC3400](/produkt/zebra-mc3400)): komputer z Androidem + skaner + ekran + klawiatura. Uruchamia aplikację WMS, wyświetla instrukcje kompletacji, zbiera dane. Cena: 2 417–8 594 zł. Kiedy skaner: operator skanuje na kasie/stanowisku z komputerem (dane wyświetlane na monitorze PC). Kiedy terminal: operator pracuje mobilnie w magazynie i potrzebuje widzieć dane WMS na swoim urządzeniu. Hybryda: skaner CS6080 na palcu + terminal [TC22](/produkt/zebra-tc22) na pasku — skanowanie hands-free z dostępem do WMS na ekranie.',
+          'Skaner (DS2208, DS3608) odczytuje kod i przesyła go do komputera albo kasy. Nie ma ekranu i nie uruchamia aplikacji. Skanery Zebra kosztują u nas od 181 zł (LI2208), a najdroższy model bazowy, DS3678-XR, od 3 237 zł. Terminal mobilny ([TC22](/produkt/zebra-tc22) od 2 417 zł, [MC3400](/produkt/zebra-mc3400) od 4 637 zł, [TC53](/produkt/zebra-tc53) od 6 999 zł) to komputer z Androidem, ekranem i wbudowanym skanerem, na którym działa aplikacja WMS. Skaner wybiera się, gdy operator pracuje przy komputerze i dane widzi na monitorze. Terminal, gdy chodzi po magazynie i potrzebuje danych z WMS na urządzeniu. Oba rozwiązania można połączyć: bezprzewodowy [DS3678](/produkt/zebra-ds3678-sr) sparowany przez Bluetooth z terminalem [TC22](/produkt/zebra-tc22) daje zasięg i wytrzymałość skanera oraz ekran terminala.',
       },
     ],
     howToSteps: [
       {
         name: 'Analiza potrzeb i stanowisk',
-        text: 'Zdefiniuj: ile stanowisk wymaga skanera? Jakie typy kodów (1D/2D/ekrany)? Stałe stanowisko (kasa) czy praca mobilna (inwentaryzacja)? Jakie warunki (biuro/magazyn/chłodnia)? Ile skanowań dziennie? Czy system POS/WMS wymaga konkretnego interfejsu (USB/RS-232/Bluetooth)? Skonsultuj się z doradcą TAKMA — dobierzemy optymalny model na podstawie Twoich parametrów i budżetu.',
+        text: 'Do ustalenia: liczba stanowisk ze skanerem, rodzaje kodów (1D, 2D, kody z ekranów), stałe stanowisko czy praca w ruchu, warunki (biuro, magazyn, chłodnia), liczba skanów dziennie i interfejs wymagany przez system POS lub WMS (USB, RS-232, Bluetooth). Z tymi danymi doradca TAKMA dobierze model i budżet.',
       },
       {
         name: 'Wybór modelu i interfejsu',
-        text: 'Kasa/apteka/biuro: DS2208 USB (352 zł) — uniwersalny 2D, Plug&Play. Kasa wysokoobrotowa: DS4608 USB (900 zł) lub DS9308 prezentacyjny (1 800 zł). Magazyn lekki: DS2208 + podstawka. Magazyn z WMS: DS3608-ER bezprzewodowy (zasięg 6,1 m) lub CS6080 companion. Chłodnia/dock: DS3678-ER (IP67, -30°C). Produkcja DPM: DS3608-HP. Kompletacja hands-free: CS6080 na palcu + terminal Zebra.',
+        text: 'Kasa, apteka, biuro: DS2208 (od 352 zł, z kablem USB od 373 zł). Kasa z dużym ruchem: DS4608 (od 814 zł) albo prezentacyjny DS9308 (od 995 zł). Tylko kody 1D: LI2208 (od 181 zł). Praca w ruchu: bezprzewodowy DS2278 (od 449 zł). Magazyn z wysokimi regałami: DS3608-XR (od 2 417 zł) albo bezprzewodowy DS3678-XR (od 3 237 zł). Chłodnia: przewodowy DS3608 (praca od −30°C). Kody DPM na produkcji: DS4678-DPE (od 1 268 zł).',
       },
       {
         name: 'Konfiguracja i masowe wdrożenie',
-        text: 'Podłącz skaner USB — działa od razu jako emulacja klawiatury (HID). Opcjonalna konfiguracja: pobierz Zebra 123Scan (darmowy, Windows). Utwórz profil: wybrane symbologie, prefiksy/sufiksy, tryb ciągły/pojedynczy, głośność bipa. Wydrukuj kody konfiguracyjne. Zeskanuj jednym skanerem kod konfiguracyjny → gotowe. Przy flocie 50+ skanerów: 123Scan konfiguruje wszystkie urządzenia z jednego profilu w minuty. Firmware: zaktualizuj przez 123Scan do najnowszej wersji.',
+        text: 'Skaner USB działa po podłączeniu jako klawiatura (HID). Do zmiany ustawień służy bezpłatny program Zebra 123Scan (Windows): profil z symbologiami, prefiksami i sufiksami, trybem pracy i głośnością sygnału zapisuje się raz, a potem wgrywa do kolejnych skanerów po USB albo drukuje jako kod konfiguracyjny. Przy okazji warto zaktualizować w 123Scan oprogramowanie skanera.',
       },
       {
         name: 'Integracja z systemem POS/WMS/ERP',
-        text: 'USB HID: skaner wpisuje kod do aktywnego pola — działa natychmiast z: Subiekt GT/nexo, Comarch ERP Optima/XL, WF-MAG, InsERT, PC-Market, SAP, Oracle. RS-232: konfiguracja portu COM w programie kasowym (baud rate 9600, 8-N-1). Bluetooth SSI: parowanie z komputerem lub terminalem mobilnym Zebra. Przetestuj odczyt na próbce każdego typu kodu używanego w firmie (EAN-13, Code 128, QR, DataMatrix). Skonfiguruj prefiksy/sufiksy jeśli system tego wymaga.',
+        text: 'USB HID: skaner wpisuje kod do aktywnego pola i od razu działa z programami Subiekt GT i nexo, Comarch ERP Optima i XL, WF-MAG, PC-Market, SAP czy Oracle. RS-232: konfiguracja portu COM w programie kasowym (np. 9600 bodów, 8-N-1). Bluetooth: parowanie z komputerem albo terminalem mobilnym Zebra. Warto sprawdzić odczyt na próbce każdego typu kodu używanego w firmie (EAN-13, Code 128, QR, Data Matrix) i ustawić prefiksy lub sufiksy, jeśli system ich wymaga.',
       },
       {
         name: 'Szkolenie i plan konserwacji',
-        text: 'Szkolenie operatorów (30 min): prawidłowy kąt i odległość skanowania, obsługa trybu hands-free/handheld, wymiana kabla USB/baterii, rozpoznawanie błędów (brak odczytu → sprawdź jakość kodu, wyczyść okno). Plan konserwacji: czyszczenie okna skanera IPA 70% co tydzień. Sprawdzenie kabla USB co miesiąc. Aktualizacja firmware co 6 miesięcy (123Scan). Gwarancja DS2208 = 5 lat bez dodatkowych kosztów. Serwis pogwarancyjny: TAKMA + [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
+        text: 'Szkolenie operatorów (30 min): kąt i odległość skanowania, tryb ręczny i automatyczny w podstawce, wymiana kabla USB albo baterii, co robić przy braku odczytu (sprawdzić jakość kodu, wyczyścić okno). Plan konserwacji: czyszczenie okna alkoholem izopropylowym co tydzień, przegląd kabla USB co miesiąc, aktualizacja oprogramowania w 123Scan co 6 miesięcy. Serwis gwarancyjny i pogwarancyjny: TAKMA i [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra).',
       },
     ],
   },
@@ -1066,7 +1081,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Czym różnią się skanery Newland od Zebra?',
         answer:
-          'Newland: gwarancja 5 lat na wszystko, ceny 30–50% niższe, BT 5.0 z zasięgiem 100 m (vs BT 4.0/4.1 i 10 m u Zebry), OCR w HR33 w standardzie. Zebra: lider enterprise (35%+ rynku), ekosystem DataCapture DNA (123Scan, SMS, Scan-to-Connect), technologia PRZYM dekodowania, największa sieć serwisowa w PL (we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra)), kompatybilność z drukarkami i terminalami Zebra. Dla firm z istniejącym ekosystemem Zebra → Zebra. Dla nowych wdrożeń z ograniczonym budżetem → Newland.',
+          'Newland: gwarancja 5 lat na wszystko, ceny 30–50% niższe, BT 5.0 z zasięgiem 100 m (vs BT 4.0/4.1 i 10 m u Zebry), OCR w HR33 w standardzie. Zebra: lider enterprise (35%+ rynku), ekosystem DataCapture DNA (123Scan, SMS, Scan-to-Connect), technologia PRZM dekodowania, największa sieć serwisowa w PL (we współpracy z [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-skanerow-zebra)), kompatybilność z drukarkami i terminalami Zebra. Dla firm z istniejącym ekosystemem Zebra → Zebra. Dla nowych wdrożeń z ograniczonym budżetem → Newland.',
       },
       {
         question: 'Jaki skaner Newland do apteki?',
@@ -1101,29 +1116,29 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       {
         question: 'Newland vs Zebra vs Honeywell — porównanie',
         answer:
-          'Newland: gwarancja 5 lat na wszystko, BT 5.0/100 m, OCR w HR33 w standardzie, ceny 30–50% niższe. Słabość: mniejsza sieć serwisowa, brak ekosystemu z drukarkami. Zebra: lider enterprise, DataCapture DNA, PRZYM dekodowanie, największa sieć serwisowa, ekosystem z drukarkami/terminalami. Słabość: ceny wyższe, BT 4.0/4.1 z zasięgiem 10 m. Honeywell: Adaptus dekodowanie, Remote MasterMind (płatny), szeroka oferta. Słabość: gwarancja 2–3 lata, wyższe ceny od Newland. Rekomendacja: budżet → Newland. Ekosystem → Zebra. Specyficzne modele → kontakt z doradcą TAKMA.',
+          'Newland: gwarancja 5 lat na wszystko, BT 5.0/100 m, OCR w HR33 w standardzie, ceny 30–50% niższe. Słabość: mniejsza sieć serwisowa, brak ekosystemu z drukarkami. Zebra: lider enterprise, DataCapture DNA, PRZM dekodowanie, największa sieć serwisowa, ekosystem z drukarkami/terminalami. Słabość: ceny wyższe, BT 4.0/4.1 z zasięgiem 10 m. Honeywell: Adaptus dekodowanie, Remote MasterMind (płatny), szeroka oferta. Słabość: gwarancja 2–3 lata, wyższe ceny od Newland. Rekomendacja: budżet → Newland. Ekosystem → Zebra. Specyficzne modele → kontakt z doradcą TAKMA.',
       },
       {
         question: 'Jakie są alternatywy dla skanerów Newland?',
         answer:
-          'W segmencie budżetowym (do 400 zł): Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D, gwarancja 5 lat) — bezpośredni rywal HR23 Dorada. Datalogic QuickScan QW2520 (~300 zł, gwarancja 3 lata). W segmencie mid-range: Zebra [DS4608](/produkt/zebra-ds4608) (~900 zł, PRZYM, 1 280 skanów/s). W segmencie bezprzewodowym: Zebra DS2278 (~780 zł, BT 4.0, 10 m), DS8178 (~1 800 zł, bateria 83 h). W segmencie DPM: Zebra DS3608-DP (~5 000 zł). Newland oferuje najlepszą relację cena/jakość w każdym segmencie — z gwarancją 5 lat i BT 5.0/100 m.',
+          'W segmencie budżetowym (do 400 zł): Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D, gwarancja 5 lat) — bezpośredni rywal HR23 Dorada. Datalogic QuickScan QW2520 (~300 zł, gwarancja 3 lata). W segmencie mid-range: Zebra [DS4608](/produkt/zebra-ds4608) (~900 zł, PRZM, 1 280 skanów/s). W segmencie bezprzewodowym: Zebra DS2278 (~780 zł, BT 4.0, 10 m), DS8178 (~1 800 zł, bateria 83 h). W segmencie DPM: Zebra DS3608-DP (~5 000 zł). Newland oferuje najlepszą relację cena/jakość w każdym segmencie — z gwarancją 5 lat i BT 5.0/100 m.',
       },
     ],
     comparisons: [
       {
         title: 'Newland HR23 Dorada vs Zebra DS2208 — pojedynek entry-level',
         content:
-          '[HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł, 2D CMOS 640×480) vs Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D CMOS). Newland: 81 zł tańszy, GS1 Ready, IP52, 1,5 m upadki, 137 g, gwarancja 5 lat. Zebra: platforma DataCapture DNA (123Scan, SMS), PRZYM dekodowanie (lepsze na uszkodzonych kodach), 220 skanów/s, 115 g, gwarancja 5 lat. Zasięg EAN-13: HR23 do 280 mm vs DS2208 do 368 mm — Zebra dalej. W testach na „czystych" kodach — oba porównywalne. Na kodach niskojakościowych — Zebra PRZYM dekoduje nieco więcej. Rekomendacja: budżet → HR23 Dorada. Duży ruch / niskojakościowe kody → DS2208.',
+          '[HR23 Dorada](/produkt/newland-hr23-dorada) (od 271 zł, 2D CMOS 640×480) vs Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D CMOS). Newland: 81 zł tańszy, GS1 Ready, IP52, 1,5 m upadki, 137 g, gwarancja 5 lat. Zebra: platforma DataCapture DNA (123Scan, SMS), PRZM dekodowanie (lepsze na uszkodzonych kodach), 220 skanów/s, 115 g, gwarancja 5 lat. Zasięg EAN-13: HR23 do 280 mm vs DS2208 do 368 mm — Zebra dalej. W testach na „czystych" kodach — oba porównywalne. Na kodach niskojakościowych — Zebra PRZM dekoduje nieco więcej. Rekomendacja: budżet → HR23 Dorada. Duży ruch / niskojakościowe kody → DS2208.',
       },
       {
         title: 'Newland HR33 Marlin BT vs Zebra DS8178 — bezprzewodowy premium',
         content:
-          '[HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (od 688 zł, megapikselowy 1280×800, BT 5.0, OCR, laser) vs Zebra DS8178 (od ~1 800 zł, 2D imager, BT 4.1, PRZYM). Newland: 1 112 zł tańszy (!), BT 5.0 z zasięgiem 100 m (vs 10 m), OCR w standardzie (vs opcja PRZL), batch 15 000 kodów, gwarancja 5 lat (vs 3 lata). Zebra: bateria 83 h (vs 15 h), ekosystem DataCapture DNA, PRZYM dla uszkodzonych kodów, IP52/IP43. HR33 BT ma obiektywnie lepsze parametry bezprzewodowe (BT 5.0, 100 m, OCR) za 38% ceny Zebry. DS8178 wygrywa żywotnością baterii i ekosystemem.',
+          '[HR33 Marlin BT](/produkt/newland-hr33-marlin-bt) (od 688 zł, megapikselowy 1280×800, BT 5.0, OCR, laser) vs Zebra DS8178 (od ~1 800 zł, 2D imager, BT 4.1, PRZM). Newland: 1 112 zł tańszy (!), BT 5.0 z zasięgiem 100 m (vs 10 m), OCR w standardzie (vs opcja PRZL), batch 15 000 kodów, gwarancja 5 lat (vs 3 lata). Zebra: bateria 83 h (vs 15 h), ekosystem DataCapture DNA, PRZM dla uszkodzonych kodów, IP52/IP43. HR33 BT ma obiektywnie lepsze parametry bezprzewodowe (BT 5.0, 100 m, OCR) za 38% ceny Zebry. DS8178 wygrywa żywotnością baterii i ekosystemem.',
       },
       {
         title: 'Newland NVH300 vs Zebra DS3608-DP — DPM przemysłowy',
         content:
-          '[NVH300 Angler DP](/produkt/newland-nvh300) (od 1 008 zł, CMOS 1280×960, IP64, 1,8 m, tri-color LED) vs Zebra DS3608-DP (od ~5 000 zł, CMOS megapikselowy, IP67, 2,4 m, PRZYM DPM). Newland: 5× tańszy, unikalne 3-kolorowe LED (białe + czerwone + niebieskie) z automatycznym doborem, gwarancja 5 lat (vs 3 lata Zebra). Zebra: wyższe IP67 (vs IP64), większe upadki 2,4 m (vs 1,8 m), PRZYM DPM (najlepszy algorytm DPM na rynku), wersja bezprzewodowa DS3678-DP, szerszy ekosystem. NVH300 to rozsądny wybór dla firm wdrażających DPM — za 1 008 zł zamiast 5 000 zł.',
+          '[NVH300 Angler DP](/produkt/newland-nvh300) (od 1 008 zł, CMOS 1280×960, IP64, 1,8 m, tri-color LED) vs Zebra DS3608-DP (od ~5 000 zł, CMOS megapikselowy, IP67, 2,4 m, PRZM DPM). Newland: 5× tańszy, unikalne 3-kolorowe LED (białe + czerwone + niebieskie) z automatycznym doborem, gwarancja 5 lat (vs 3 lata Zebra). Zebra: wyższe IP67 (vs IP64), większe upadki 2,4 m (vs 1,8 m), PRZM DPM (najlepszy algorytm DPM na rynku), wersja bezprzewodowa DS3678-DP, szerszy ekosystem. NVH300 to rozsądny wybór dla firm wdrażających DPM — za 1 008 zł zamiast 5 000 zł.',
       },
       {
         title: 'Newland przewodowy vs bezprzewodowy — kiedy się opłaca?',
@@ -1918,6 +1933,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
       useCases: 'Gdzie sprawdza się który terminal',
       comparisons: 'M3 Mobile a Zebra i Honeywell',
       howToSteps: 'Jak wdrożyć terminale M3 Mobile w magazynie',
+      tco: 'Ile kosztuje flota przez 3 lata',
     },
     definition: {
       heading: 'Terminale M3 Mobile — koreański producent enterprise z AI i 5G',
@@ -2450,7 +2466,7 @@ export const brandCategoryContent: Record<string, SubcategoryRichContent> = {
         },
         {
           title: 'AI decoding — skaner, który uczy się Twoich kodów',
-          text: 'Granit Ultra [2100i](/produkt/honeywell-granit-ultra-2100i) / [2105i](/produkt/honeywell-granit-ultra-2105i) to pierwsze skanery ręczne z wbudowanym dekodowaniem AI. Algorytmy analizują wzorce kodów spotykanych w danym środowisku i dynamicznie optymalizują parametry obrazowania. Efekt: im dłużej skaner pracuje w magazynie, tym szybciej dekoduje lokalne kody. W testach Honeywell: +45% szybsze skanowanie kodów trudnych (zabrudzonych, uszkodzonych, pokrytych folią stretch) vs Granit XP. Zebra PRZYM (Pattern Recognition for Intelligent Zero-Margin) w DS4608 to porównywalna technologia, ale bez elementu uczenia maszynowego — parametry są stałe.',
+          text: 'Granit Ultra [2100i](/produkt/honeywell-granit-ultra-2100i) / [2105i](/produkt/honeywell-granit-ultra-2105i) to pierwsze skanery ręczne z wbudowanym dekodowaniem AI. Algorytmy analizują wzorce kodów spotykanych w danym środowisku i dynamicznie optymalizują parametry obrazowania. Efekt: im dłużej skaner pracuje w magazynie, tym szybciej dekoduje lokalne kody. W testach Honeywell: +45% szybsze skanowanie kodów trudnych (zabrudzonych, uszkodzonych, pokrytych folią stretch) vs Granit XP. Zebra PRZM w DS4608 to porównywalna technologia, ale bez elementu uczenia maszynowego — parametry są stałe.',
         },
         {
           title: 'Superkondensator w Xenon Ultra 1962 — pełne ładowanie w 10 sekund',
