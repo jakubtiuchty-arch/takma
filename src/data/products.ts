@@ -70169,6 +70169,23 @@ export const brandCategories: BrandCategory[] = [
     ],
   },
   {
+    id: 'skanery-datalogic',
+    slug: 'skanery-datalogic',
+    manufacturerId: 'datalogic',
+    categoryId: 'skanery-kodow-kreskowych',
+    name: 'Skanery kodów kreskowych Datalogic',
+    seoTitle: 'Skanery kodów kreskowych Datalogic QuickScan — od 230 zł netto, 5 lat gwarancji',
+    seoDescription: 'Skanery Datalogic QuickScan 2500: przewodowe QW2520 i QD2590, bezprzewodowe QBT2500 (Bluetooth) i QM2500 (radio 433 MHz). Skanery 2D, pięć lat gwarancji producenta. Ceny od 230 zł netto.',
+    longDescription: 'Skanery Datalogic w naszej ofercie to seria QuickScan 2500: jeden skaner 2D w czterech wersjach. Przewodowy [QW2520](/produkt/datalogic-quickscan-qw2520) (od 230 zł netto) ma matrycę VGA i wystarcza do kasy, punktu usługowego i biura. Przewodowy [QD2590](/produkt/datalogic-quickscan-qd2590) (od 319 zł) ma matrycę 1 Mpix, czyta drobniejsze kody i znaki wodne Digimarc, a do tego ma port RS-232. [QBT2500](/produkt/datalogic-quickscan-qbt2500) (od 733 zł) to QD2590 bez kabla, łączony przez Bluetooth z bazą, telefonem albo tabletem, z zasięgiem do 50 m. [QM2500](/produkt/datalogic-quickscan-qm2500) (od 715 zł) pracuje na radiu 433 MHz, poza pasmem Wi-Fi, więc sprawdza się w halach z gęstą siecią bezprzewodową. Wszystkie cztery mają tę samą obudowę: IP52, upadki z 1,5 m na beton, spust na 10 mln naciśnięć i pięć lat gwarancji producenta. Konfiguracja przez bezpłatny program Datalogic Aladdin.',
+    faq: [
+      { question: 'Który skaner Datalogic wybrać do kasy?', answer: 'Do kasy w sklepie, punktu usługowego i biura wystarczy [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) od 230 zł netto. Czyta kody 1D i 2D, także z ekranu telefonu. Jeśli kody są drobne albo kasa wymaga portu RS-232, lepszy będzie [QD2590](/produkt/datalogic-quickscan-qd2590) od 319 zł.' },
+      { question: 'Czym różni się QD2590 od QW2520?', answer: 'Tylko matrycą. QD2590 ma matrycę 1 Mpix, więc czyta Code 39 o szerokości modułu 0,077 mm (QW2520: 0,127 mm), ma dłuższy zasięg i obsługuje znaki wodne Digimarc. QD2590 ma też port RS-232, którego QW2520 nie ma. Obudowa, odporność i gwarancja są takie same.' },
+      { question: 'QBT2500 czy QM2500 — który bezprzewodowy?', answer: '[QBT2500](/produkt/datalogic-quickscan-qbt2500) łączy się przez Bluetooth z bazą albo bezpośrednio z telefonem i tabletem, zasięg do 50 m. [QM2500](/produkt/datalogic-quickscan-qm2500) pracuje na radiu 433 MHz i zawsze przez bazę, zasięg do 30 m. Radio 433 MHz nie konkuruje z Wi-Fi, dlatego QM2500 lepiej sprawdza się w magazynie z wieloma punktami dostępowymi. Ceny obu są zbliżone.' },
+      { question: 'Jaką gwarancję mają skanery Datalogic QuickScan?', answer: 'Pięć lat gwarancji producenta na wszystkie cztery modele serii QuickScan 2500, przewodowe i bezprzewodowe. W tej samej klasie cenowej wiele skanerów ma dwa lata.' },
+      { question: 'Jak skonfigurować skaner Datalogic?', answer: 'Bezpłatnym programem Datalogic Aladdin: ustawienia wybiera się w oknie programu i wysyła do skanera kablem albo drukuje jako kody konfiguracyjne do zeskanowania. Emulacja klawiatury przez USB działa bez sterownika, więc skaner zwykle pracuje od razu po podłączeniu.' },
+    ],
+  },
+  {
     id: 'drukarki-etykiet-honeywell',
     slug: 'drukarki-etykiet-honeywell',
     manufacturerId: 'honeywell',

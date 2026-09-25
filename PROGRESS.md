@@ -1233,6 +1233,13 @@ Otwarte na kolejne sesje:
 - Poprawione treści, które mówiły, że 600 Duo w ofercie nie ma enkodera: spec „Kodowanie” i FAQ na karcie oraz dwa miejsca w `subcategory-content.ts` (drukarki kart).
 - Sprawdzone na localhost (Playwright): tabela wariantów 5750 / 8030 zł, oba „Dostępny”, `tsc` bez błędów w `src`.
 
+## Strona /skanery-datalogic i link w menu „Skanery” (25.09.2026)
+
+- W rozwijanym menu „Skanery” była Zebra, Honeywell i Newland, a Datalogic nie miał własnej strony. Dodane: wpis `skanery-datalogic` w `brandCategories` (`products.ts`), `src/app/skanery-datalogic/page.tsx` (wzór strony Newland), link „Skanery Datalogic” w `Navbar.tsx` między Honeywellem a Newlandem, strona w liście filtrów skanerów i Datalogic w filtrze producenta. Sitemapa bierze stronę sama z `brandCategories`.
+- Treść: opis serii QuickScan 2500 (cztery modele i czym się różnią) plus pięć pytań FAQ. Bez rozbudowanej treści w `brand-category-content.ts` — ten plik równolegle edytowała inna sesja, a `BrandCategoryPage` działa bez niego.
+- Sprawdzone na localhost:3000 (Playwright): 200, tytuł i H1, cztery karty QuickScan, link w menu; `tsc` bez błędów w `src`.
+- **Do poprawki poza tym zadaniem:** filtr „Bezprzewodowy (Bluetooth)” liczy też QM2500, który ma radio 433 MHz, nie Bluetooth.
+
 ## Oferta mailem: linki do sklepu i karty katalogowe w załącznikach (25.09.2026)
 
 - **Linki:** nazwa pozycji w mailu ofertowym i w PDF oferty prowadzi do karty w sklepie (`/produkt/<slug>?pn=<PN>` — `?pn=` zaznacza wariant z oferty). Tylko pozycje z `productId`; ręczne (151 z 360 pozycji w bazie) zostają bez linku. `productId` to `id`, nie `slug` — w 532 produktach się różnią, stąd wyszukanie w `quote-produkty.ts`. Nad tabelą w mailu zdanie, że nazwa prowadzi do sklepu (tylko gdy jest choć jeden link).

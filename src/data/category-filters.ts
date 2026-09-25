@@ -779,6 +779,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'Zebra', manufacturer: 'zebra' },
         { value: 'Honeywell', manufacturer: 'honeywell' },
+        { value: 'Datalogic', manufacturer: 'datalogic' },
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
       ],
@@ -1328,7 +1329,7 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
   categoryFilters[brand] = categoryFilters['terminale-mobilne']
 }
 // Skanery: strony marek i podkategorie dostają ten sam zestaw — grupy z jedną wartością (Producent, Rodzaj) chowają się same
-for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/pierscieniowe']) {
+for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
 for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell']) {
