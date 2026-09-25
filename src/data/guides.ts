@@ -5626,31 +5626,31 @@ export const guides: Guide[] = [
 },
 {
   slug: 'skanery-kodow-kreskowych-zebra-przewodnik',
-  title: 'Skanery kodów kreskowych Zebra — jak wybrać? Przewodnik 2026',
+  title: 'Który skaner Zebra do kasy, apteki, magazynu i chłodni? Poradnik 2026',
   seoTitle: 'Jak wybrać skaner kodów kreskowych Zebra — poradnik 2026 | DS2208, DS3608, DS8208',
-  seoDescription: 'Czytniki i skanery kodów kreskowych Zebra — porównanie 2026: DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Tabela, ceny, TCO, drzewo decyzyjne, 18 FAQ.',
-  excerpt: 'DS2208 od 352 zł do kasy, DS3608-XR do 32 m w magazynie, DS9308 hands-free do apteki. Pełne porównanie 10+ skanerów Zebra — specyfikacja, ceny, TCO i drzewo decyzyjne.',
+  seoDescription: 'Jak dobrać skaner Zebra do stanowiska: DS2208 do kasy i apteki, DS9308 hands-free, DS8208 do supermarketu, DS3608 do magazynu i chłodni (od −30°C).',
+  excerpt: 'Jak dobrać skaner Zebra do kasy, apteki, supermarketu, magazynu i chłodni. Tryb pracy, zasięg, odporność, gwarancja i drzewo decyzyjne w 5 pytaniach.',
   category: 'przewodnik',
   tags: ['skaner Zebra', 'skaner kodów kreskowych', 'DS2208', 'DS3608', 'DS9308', 'DS8208', 'DS4608', 'DS9908', 'skaner do apteki', 'skaner do magazynu', 'skaner do kasy', 'czytnik kodów', 'skaner 2D', 'skaner ultra-rugged', 'czytnik kodów kreskowych', 'czytnik kodów kreskowych Zebra', 'czytnik Zebra', 'czytnik do apteki', 'czytnik do kasy fiskalnej', 'skaner bezprzewodowy Zebra', 'DS2278', 'jak wybrać skaner kodów kreskowych'],
   publishedAt: '2026-03-13',
-  updatedAt: '2026-03-13',
+  updatedAt: '2026-09-25',
   readTime: '22 min',
   heroImage: '/images/guides/skanery-kodow-kreskowych-zebra-jak-wybrac-hero.webp',
   sections: [
     {
       id: 'podsumowanie',
-      heading: 'Skanery kodów kreskowych Zebra — dobierz czytnik w 30 sekund',
-      content: `<p><strong>Zebra Technologies</strong> oferuje ponad 10 modeli skanerów (czytników) kodów kreskowych — od kasowego DS2208 za 352 zł po ultra-rugged DS3608-XR z zasięgiem 32 m za 2 417 zł. Który wybrać? To zależy od trzech rzeczy: <strong>gdzie skanujesz</strong> (kasa, apteka, magazyn, chłodnia), <strong>z jakiej odległości</strong> (5 cm–32 m) i <strong>czy potrzebujesz kabla</strong> (przewodowy vs Bluetooth).</p>
+      heading: 'Dobór skanera Zebra w skrócie',
+      content: `<p><strong>Zebra Technologies</strong> produkuje ponad 10 modeli skanerów (czytników) kodów kreskowych, od kasowego DS2208 po ultra-rugged DS3608-XR, który odczytuje kody z odległości do 32 m. O wyborze decydują <strong>miejsce pracy</strong> (kasa, apteka, magazyn, chłodnia), <strong>odległość skanowania</strong> (od kilku centymetrów do 32 m) i <strong>sposób podłączenia</strong> (kabel albo Bluetooth).</p>
 
-<p><strong>Zebra DS2208</strong> — najtańszy czytnik kodów kreskowych Zebra, skaner 2D USB z sensorem 640×480, zasięgiem 36,8 cm, odpornością IP52, upadkami z 1,5 m i 5-letnią gwarancją. Cena od 352 zł netto. Następca legendarnego LS2208. Do kas, aptek i biur.</p>
+<p><strong>Zebra DS2208</strong> — najtańszy czytnik 2D Zebra w ofercie TAKMA, skaner USB z sensorem 640×480, zasięgiem 36,8 cm, odpornością IP52, upadkami z 1,5 m i 5-letnią gwarancją. Cena od 352 zł netto. Następca LS2208. Do kas, aptek i biur.</p>
 
 <p><strong>Zebra DS3608</strong> — seria ultra-rugged skanerów przemysłowych IP65+IP68 z upadkami z 3 m, pracą od -30°C do +50°C i Industrial Ethernet. Warianty: SR (152 cm, od 1 287 zł), HP (203 cm), HD (3 mil), XR (32 m, od 2 417 zł). Do magazynów, chłodni i przemysłu.</p>
 
 <p><strong>Zebra DS8208</strong> — premium czytnik kodów kreskowych z sensorem 2 MP PRZM, najszybszy skaner ręczny Zebra. Cena od 1 027 zł netto, 5 lat gwarancji. Do supermarketów z dużym ruchem.</p>
 
-<p>Pełna oferta: <a href="/skanery-kodow-kreskowych">skanery kodów kreskowych</a> · <a href="/skanery-kodow-kreskowych-zebra">skanery Zebra</a>.</p>
+<p>Oferta w sklepie: <a href="/skanery-kodow-kreskowych-zebra">czytniki i skanery kodów kreskowych Zebra — ceny i dostępność</a>. Modele innych marek: <a href="/skanery-kodow-kreskowych">skanery kodów kreskowych</a>.</p>
 
-<div style="background:#f8fee6;border-left:4px solid #A8F000;padding:16px;border-radius:8px;margin:16px 0">
+<div style="background:#f8fee6;border:1px solid #d9f99d;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Szybki dobór:</p>
 <ul style="margin:8px 0 0 0">
 <li><strong>Kasa / apteka / biuro</strong> → <a href="/produkt/zebra-ds2208">DS2208</a> od 352 zł (przewodowy) lub <a href="/produkt/zebra-ds2278">DS2278</a> od 449 zł (Bluetooth)</li>
