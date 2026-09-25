@@ -1217,3 +1217,10 @@ Otwarte na kolejne sesje:
 - **QW2520:** te same pliki (obudowa identyczna, 148 × 68 × 126 mm, 145 g), bez `FRONT-VIEW` — przez szybkę widać moduł optyczny, a QW2520 ma inny (VGA, pojedynczy celownik). Tak samo QM2500 korzysta z plików QBT2500.
 - **Opisy podstawek bez „w zestawie”:** na zdjęciach są cztery różne podstawki, a w wariancie `QD2590-BKK1B` jest jedna (`STD-AUTO-QD25-BK`).
 - **Sprawdzone:** `tsc` bez błędów, obie karty na localhost:3000 renderują galerię (1/16 i 1/15), zero nieładujących się obrazów (Playwright).
+
+## QuickScan QBT2500: pięć zdjęć, powiększonych o 20 % (25.09.2026)
+
+- Decyzja usera: na karcie zostaje pięć ujęć — główne od prawej z czerwonym oświetleniem, potem od lewej z oświetleniem, w bazie od prawej, od lewej i od frontu. Wypadły ujęcia okienkiem w dół (pliki `-6`, `-7` usunięte, nieużywane), spód ze stykami (`-8`) i sama baza BC2090 (`-9`) — te dwa zostają w repo, bo korzysta z nich QM2500.
+- **Powiększenie:** `obrob-zdjecia.py --wypelnienie=0.936` (0,78 × 1,2). Zmierzone na wynikach: obiekt 560 px szerokości zamiast 466, front w bazie 1118 px wysokości zamiast 933; cień nie dotyka krawędzi płótna.
+- Pliki nadpisane pod tymi samymi nazwami, więc opisy alternatywne QM2500 (korzysta z `.png`, `-2`, `-3`, `-4`) nadal pasują do treści zdjęć.
+- Front w bazie miał pod podstawą szary pas odbicia (był też w poprzedniej wersji) — wybielony w źródle przed wycięciem tła. W ujęciach z czerwonym światłem jasne bezbarwne piksele to połysk obudowy, nie odbicie, więc tam bez wybielania.
