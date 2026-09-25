@@ -1224,3 +1224,11 @@ Otwarte na kolejne sesje:
 - **Powiększenie:** `obrob-zdjecia.py --wypelnienie=0.936` (0,78 × 1,2). Zmierzone na wynikach: obiekt 560 px szerokości zamiast 466, front w bazie 1118 px wysokości zamiast 933; cień nie dotyka krawędzi płótna.
 - Pliki nadpisane pod tymi samymi nazwami, więc opisy alternatywne QM2500 (korzysta z `.png`, `-2`, `-3`, `-4`) nadal pasują do treści zdjęć.
 - Front w bazie miał pod podstawą szary pas odbicia (był też w poprzedniej wersji) — wybielony w źródle przed wycięciem tła. W ujęciach z czerwonym światłem jasne bezbarwne piksele to połysk obudowy, nie odbicie, więc tam bez wybielania.
+
+## Magicard 600 Duo: wariant Smart 3652-5023/S (25.09.2026)
+
+- Nowy wariant `3652-5023/S` na karcie `magicard-600-duo`: dwustronny, Wi-Fi, **enkoder kart chipowych stykowych i zbliżeniowych** (MIFARE, DESFire, iCLASS — wg opisów dystrybutorów Magicard, karta katalogowa PL podaje tylko „kodowanie kart inteligentnych”). W karcie katalogowej ten numer to „Magicard 600 Duo Smart” (`3652-5023/3`); w sklepie numer z faktury ACSS, `/S`.
+- **Cena 8030 zł netto** = zakup w ACSS + 10 %, tak jak Prima 8 i karty ACSS. Cena zakupu tylko u usera, nie w repo.
+- Dostępność: wpis w `MANUAL_STOCK_OVERRIDES` jak przy `3652-5021/3` (ACSS nie ma API; bez wpisu karta pokazywała „Brak danych z dystrybutora” i „Niedostępny”). **Do potwierdzenia:** czy ACSS realnie wysyła Smart w 24 h.
+- Poprawione treści, które mówiły, że 600 Duo w ofercie nie ma enkodera: spec „Kodowanie” i FAQ na karcie oraz dwa miejsca w `subcategory-content.ts` (drukarki kart).
+- Sprawdzone na localhost (Playwright): tabela wariantów 5750 / 8030 zł, oba „Dostępny”, `tsc` bez błędów w `src`.
