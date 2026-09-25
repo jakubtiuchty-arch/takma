@@ -1,23 +1,37 @@
 'use client'
 
-import { useState, useTransition } from 'react'
+import { useEffect, useState, useTransition } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { updateQuoteStatus, sendQuoteEmail, duplicateQuote, deleteQuote } from '@/actions/admin-quotes'
+import { updateQuoteStatus, sendQuoteEmail, duplicateQuote, deleteQuote, sprawdzKartyKatalogowe } from '@/actions/admin-quotes'
 import { QuoteStatus } from '@/generated/prisma/client'
+import type { KartaKatalogowa } from '@/lib/quote-produkty'
 
 interface QuoteActionsProps {
   quoteId: string
   quoteNumber: string
   status: QuoteStatus
   hasEmail: boolean
+  /** karty katalogowe produktów z pozycji — do zaznaczenia przy wysyłce */
+  kartyKatalogowe?: KartaKatalogowa[]
 }
 
-export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }: QuoteActionsProps) {
+export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail, kartyKatalogowe = [] }: QuoteActionsProps) {
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
   const [message, setMessage] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
+  const [wybraneKarty, setWybraneKarty] = useState<string[]>([])
+  /** url → null (sprawdzam), '' (dostępna) albo powód niedostępności */
+  const [stanKart, setStanKart] = useState<Record<string, string | null>>({})
+
+  useEffect(() => {
+    if (!kartyKatalogowe.length) return
+    setStanKart(Object.fromEntries(kartyKatalogowe.map(k => [k.url, null])))
+    sprawdzKartyKatalogowe(quoteId)
+      .then(wyniki => setStanKart(Object.fromEntries(wyniki.map(w => [w.url, w.ok ? '' : w.powod ?? 'niedostępna']))))
+      .catch(() => setStanKart(Object.fromEntries(kartyKatalogowe.map(k => [k.url, '']))))
+  }, [quoteId, kartyKatalogowe.length]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSendEmail = () => {
     if (!hasEmail) {
@@ -25,9 +39,15 @@ export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }:
       return
     }
     startTransition(async () => {
-      const result = await sendQuoteEmail(quoteId)
-      setMessage(result.success ? 'Oferta wysłana emailem' : `Błąd: ${result.error}`)
-      setTimeout(() => setMessage(''), 3000)
+      const result = await sendQuoteEmail(quoteId, { kartyKatalogowe: wybraneKarty })
+      if (!result.success) {
+        setMessage(`Błąd: ${result.error}`)
+      } else {
+        const karty = 'kartyDolaczone' in result && result.kartyDolaczone ? ` z ${result.kartyDolaczone} ${result.kartyDolaczone === 1 ? 'kartą katalogową' : 'kartami katalogowymi'}` : ''
+        const pominiete = 'kartyPominiete' in result && result.kartyPominiete?.length ? `. Nie udało się pobrać: ${result.kartyPominiete.join(', ')}` : ''
+        setMessage(`Oferta wysłana emailem${karty}${pominiete}`)
+      }
+      setTimeout(() => setMessage(''), 8000)
     })
   }
 
@@ -87,6 +107,33 @@ export default function QuoteActions({ quoteId, quoteNumber, status, hasEmail }:
           </svg>
           Pobierz PDF
         </button>
+
+        {hasEmail && status !== 'SENT' && status !== 'ACCEPTED' && kartyKatalogowe.length > 0 && (
+          <fieldset className="rounded-lg border border-gray-200 px-3 py-2.5">
+            <legend className="px-1 text-xs font-medium text-gray-600">Dołącz do maila karty katalogowe</legend>
+            <div className="space-y-1.5">
+              {kartyKatalogowe.map(k => (
+                <label key={k.url} className={`flex items-start gap-2 text-sm ${stanKart[k.url] ? 'text-gray-400' : 'text-gray-700'}`}>
+                  <input
+                    type="checkbox"
+                    className="mt-0.5"
+                    disabled={stanKart[k.url] !== ''}
+                    checked={wybraneKarty.includes(k.url)}
+                    onChange={e => setWybraneKarty(w => (e.target.checked ? [...w, k.url] : w.filter(u => u !== k.url)))}
+                  />
+                  <span>
+                    {k.produkt}
+                    <span className="block text-xs text-gray-400">
+                      {k.nazwa}
+                      {stanKart[k.url] === null && ' · sprawdzam…'}
+                      {stanKart[k.url] ? ` · nie da się dołączyć: ${stanKart[k.url]}` : ''}
+                    </span>
+                  </span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        )}
 
         {hasEmail && status !== 'SENT' && status !== 'ACCEPTED' && (
           <button

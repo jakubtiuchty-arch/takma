@@ -7504,7 +7504,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       ],
     },
     downloads: [
-      { name: 'Karta katalogowa ZT231 (EN)', type: 'manual', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Industrial/zt231/spec-sheets/zt231-spec-sheet-en-gb.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa ZT231 (PL)', type: 'datasheet', url: '/datasheets/zt231-spec-sheet-pl-pl.pdf', size: '0,4 MB' },
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://serwis-zebry.pl/instrukcje/zebra-zt231', size: 'Online' },
       { name: 'Sterowniki Windows', type: 'software', url: 'https://serwis-zebry.pl/sterowniki', size: 'Online' },
     ],

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
+import { Document, Page, View, Text, Image, Link, StyleSheet } from '@react-pdf/renderer'
 import { stawkaVat } from '@/lib/quotes-stawki'
 
 /**
@@ -17,6 +17,8 @@ export interface QuotePdfItem {
   priceNetto: number
   totalNetto: number
   catalogPriceNetto?: number | null
+  /** karta produktu w sklepie — nazwa pozycji staje się linkiem */
+  productUrl?: string | null
 }
 
 export interface QuotePdfData {
@@ -184,7 +186,9 @@ export function QuotePdfDoc({ q }: { q: QuotePdfData }) {
             <View key={it.position} style={s.tr} wrap={false}>
               <Text style={s.colLp}>{it.position}</Text>
               <View style={s.colName}>
-                <Text style={s.name}>{it.productName}</Text>
+                {it.productUrl
+                  ? <Link src={it.productUrl} style={[s.name, { textDecoration: 'underline' }]}>{it.productName}</Link>
+                  : <Text style={s.name}>{it.productName}</Text>}
                 {it.partNumber ? <Text style={s.pn}>PN: {it.partNumber}</Text> : null}
               </View>
               <Text style={s.colQty}>{it.quantity} szt.</Text>

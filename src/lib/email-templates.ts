@@ -853,6 +853,8 @@ export function buildQuoteEmail(data: {
     catalogPriceNetto?: number | null
     /** id produktu z katalogu — po nim rozpoznajemy producenta */
     productId?: string | null
+    /** karta produktu w sklepie — nazwa pozycji staje się linkiem */
+    productUrl?: string | null
   }[]
   subtotalNetto: number
   vatAmount: number
@@ -866,6 +868,8 @@ export function buildQuoteEmail(data: {
   orderUrl?: string | null
   /** oferta poszła z PDF w załączniku — dopisek pod przyciskiem */
   pdfAttached?: boolean
+  /** nazwy produktów, których karty katalogowe są w załącznikach */
+  kartyKatalogowe?: string[]
 }): string {
   const items = [...data.items].sort((a, b) => a.position - b.position)
 
@@ -885,7 +889,9 @@ export function buildQuoteEmail(data: {
       : `${fmtPLN(item.priceNetto / 100)} z&#322;`
     return [
       String(item.position),
-      `${esc(item.productName)}${item.partNumber ? `<br /><span style="font-size:12px;color:#6b7280">PN: ${esc(item.partNumber)}</span>` : ''}`,
+      `${item.productUrl
+        ? `<a href="${esc(item.productUrl)}" style="color:#1d4ed8;text-decoration:underline">${esc(item.productName)}</a>`
+        : esc(item.productName)}${item.partNumber ? `<br /><span style="font-size:12px;color:#6b7280">PN: ${esc(item.partNumber)}</span>` : ''}`,
       String(item.quantity),
       priceCell,
       `${fmtPLN(item.totalNetto / 100)} z&#322;`,
@@ -912,7 +918,9 @@ export function buildQuoteEmail(data: {
       emailHeader({ title: 'Oferta handlowa', subtitle: `Nr: ${esc(data.quoteNumber)}`, accent: 'blue' }) +
       emailBody(
         emailGreeting(contactName) +
-        emailText('Przesy&#322;amy ofert&#281; na poni&#380;sze produkty:') +
+        emailText(items.some(i => i.productUrl)
+          ? 'Przesy&#322;amy ofert&#281; na poni&#380;sze produkty. Nazwa produktu prowadzi do jego strony w naszym sklepie.'
+          : 'Przesy&#322;amy ofert&#281; na poni&#380;sze produkty:') +
         emailTable(['Lp.', 'Produkt', 'Ilo&#347;&#263;', 'Cena netto', 'Razem netto'], rows) +
         emailTotalBox([
           { label: 'Netto:', value: `${fmtPLN(data.subtotalNetto / 100)} z&#322;` },
@@ -930,6 +938,9 @@ export function buildQuoteEmail(data: {
         (data.orderUrl ? emailButton('Zamów w cenach z oferty', data.orderUrl, '#15803d', 'lg') : '') +
         (data.pdfAttached
           ? `<p style="margin:0 0 8px;text-align:center;font-size:13px;color:#6b7280">Oferta r&#243;wnie&#380; do pobrania z za&#322;&#261;cznika.</p>`
+          : '') +
+        (data.kartyKatalogowe?.length
+          ? `<p style="margin:0 0 8px;text-align:center;font-size:13px;color:#6b7280">W za&#322;&#261;cznikach ${data.kartyKatalogowe.length === 1 ? 'karta katalogowa' : 'karty katalogowe'}: ${data.kartyKatalogowe.map(esc).join(', ')}.</p>`
           : '') +
         (data.notes ? emailInfoAmber(esc(data.notes)) : '') +
         serviceBox +

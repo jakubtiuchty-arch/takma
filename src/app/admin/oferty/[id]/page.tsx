@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import { QuoteStatus } from '@/generated/prisma/client'
 import QuoteActions from './QuoteActions'
 import { stawkaVat } from '@/lib/quotes-stawki'
+import { kartyKatalogoweOferty } from '@/lib/quote-produkty'
 
 const statusLabels: Record<QuoteStatus, string> = {
   REQUESTED: 'Zapytanie klienta',
@@ -179,7 +180,7 @@ export default async function QuoteDetailPage({ params }: PageProps) {
 
         {/* Sidebar */}
         <div className="space-y-6">
-          <QuoteActions quoteId={quote.id} quoteNumber={quote.quoteNumber} status={quote.status} hasEmail={!!quote.clientEmail} />
+          <QuoteActions quoteId={quote.id} quoteNumber={quote.quoteNumber} status={quote.status} hasEmail={!!quote.clientEmail} kartyKatalogowe={kartyKatalogoweOferty(quote.items)} />
 
           {/* Client */}
           <div className="bg-white rounded-xl border border-gray-200 p-6">

@@ -5,6 +5,7 @@ import { generateQuoteNumber, calculateQuoteTotals } from '@/lib/quotes'
 import { sendEmail } from '@/lib/email'
 import { buildQuoteEmail } from '@/lib/email-templates'
 import { renderQuotePdf, quotePdfFilename } from '@/lib/quote-pdf/render'
+import { linkDoSklepu, kartyKatalogoweOferty, pobierzKartyKatalogowe, sprawdzKarte } from '@/lib/quote-produkty'
 import { randomBytes } from 'crypto'
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
@@ -122,7 +123,18 @@ export async function updateQuoteStatus(quoteId: string, status: 'REQUESTED' | '
   return { success: true }
 }
 
-export async function sendQuoteEmail(quoteId: string) {
+/** Dostępność kart katalogowych z pozycji oferty — panel sprawdza ją przed wysyłką. */
+export async function sprawdzKartyKatalogowe(quoteId: string) {
+  const items = await prisma.quoteItem.findMany({ where: { quoteId }, select: { productId: true } })
+  const karty = kartyKatalogoweOferty(items)
+  return Promise.all(karty.map(async k => ({ url: k.url, ...(await sprawdzKarte(k.url)) })))
+}
+
+/**
+ * `kartyKatalogowe` — adresy kart katalogowych zaznaczonych przy wysyłce;
+ * serwer bierze tylko te, które należą do produktów z pozycji oferty.
+ */
+export async function sendQuoteEmail(quoteId: string, opcje: { kartyKatalogowe?: string[] } = {}) {
   const quote = await prisma.quote.findUnique({
     where: { id: quoteId },
     include: { items: true },
@@ -170,10 +182,15 @@ export async function sendQuoteEmail(quoteId: string) {
     console.error('[Oferta] PDF nie wygenerował się, wysyłka bez załącznika:', err)
   }
 
+  const karty = opcje.kartyKatalogowe?.length
+    ? await pobierzKartyKatalogowe(opcje.kartyKatalogowe, kartyKatalogoweOferty(quote.items))
+    : { zalaczniki: [], dolaczone: [], pominiete: [] }
+  const wszystkieZalaczniki = [...(attachments ?? []), ...karty.zalaczniki]
+
   const result = await sendEmail({
     to: quote.clientEmail,
     subject: `Oferta ${quote.quoteNumber} — TAKMA`,
-    attachments,
+    attachments: wszystkieZalaczniki.length ? wszystkieZalaczniki : undefined,
     html: buildQuoteEmail({
       quoteNumber: quote.quoteNumber,
       clientContact: quote.clientContact,
@@ -186,6 +203,7 @@ export async function sendQuoteEmail(quoteId: string) {
         totalNetto: item.totalNetto,
         catalogPriceNetto: item.catalogPriceNetto,
         productId: item.productId,
+        productUrl: linkDoSklepu(item.productId, item.partNumber),
       })),
       subtotalNetto: quote.subtotalNetto,
       vatAmount: quote.vatAmount,
@@ -197,6 +215,7 @@ export async function sendQuoteEmail(quoteId: string) {
       freebiesNote: quote.freebiesNote,
       orderUrl,
       pdfAttached: Boolean(attachments),
+      kartyKatalogowe: karty.dolaczone,
     }),
   })
 
@@ -209,7 +228,7 @@ export async function sendQuoteEmail(quoteId: string) {
     revalidatePath(`/admin/oferty/${quoteId}`)
   }
 
-  return result
+  return { ...result, kartyDolaczone: karty.dolaczone.length, kartyPominiete: karty.pominiete }
 }
 
 export async function priceRfqQuote(rfqQuoteId: string, input: {

@@ -2,6 +2,7 @@ import { createElement } from 'react'
 import { Font, renderToBuffer } from '@react-pdf/renderer'
 import { QuotePdfDoc, type QuotePdfData } from './QuotePdf'
 import { quoteHasZebra } from '@/lib/quote-zebra'
+import { linkDoSklepu } from '@/lib/quote-produkty'
 
 /**
  * Renderuje ofertę do PDF (Buffer). Czcionka i logotypy idą z public/ pod
@@ -34,6 +35,7 @@ export async function renderQuotePdf(quote: QuoteForPdf): Promise<Buffer> {
   ensureFonts()
   const data: QuotePdfData = {
     ...quote,
+    items: quote.items.map(it => ({ ...it, productUrl: linkDoSklepu(it.productId, it.partNumber) })),
     issuedAt: quote.issuedAt ?? new Date(),
     // baner serwisu tylko przy sprzęcie Zebry — jedna reguła dla maila i PDF
     zebraService: quoteHasZebra(quote.items),
