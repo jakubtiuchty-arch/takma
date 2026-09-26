@@ -69646,6 +69646,12 @@ export const products: Product[] = rawProductList
     relatedProducts: relinkAll(p.relatedProducts),
   }))
 
+// Liczba produktów kategorii z danych, nie wpisana ręcznie — wpisy rozjechały się
+// z katalogiem (np. „Drukarki etykiet (39)” przy 78 produktach, 25.09.2026).
+for (const category of categories) {
+  category.productCount = products.filter(p => p.categoryId === category.id).length
+}
+
 // Helper do pobrania produktu po slug
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find(p => p.slug === slug)

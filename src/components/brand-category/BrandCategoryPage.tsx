@@ -107,7 +107,8 @@ function Ikona({ nazwa, rozmiar = 40 }: { nazwa?: string; rozmiar?: number }) {
   )
 }
 
-/** Ikony kolejnych kryteriów poradnika zakupowego (kolejność jak w danych). */
+/** Ikony kolejnych kryteriów poradnika zakupowego terminali (kolejność jak w danych).
+ *  Zestaw ikon opisuje terminale, więc na stronach drukarek czy skanerów kryteria są bez ikon. */
 const IKONY_KRYTERIOW = ['klawiatura-fizyczna', 'skaner-daleki', 'wifi-hala', 'ai-kontrola', 'bateria-hotswap', 'budzet']
 
 /** Telefon i formularz — klient, który już wie, czego chce, nie ma dziś na tej stronie gdzie kliknąć. */
@@ -210,7 +211,6 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   // Pasek faktów pod H1 — zadanie użytkownika z wyszukiwarki to modele i ceny.
   // `najnizszaCena` liczy też cenę w tytule strony (`wstawCeneOd`), więc obie liczby są te same.
   const najtansza = najnizszaCena(allProducts)
-  const dostepneOdReki = allProducts.filter(p => p.availability === 'available').length
   const zKlawiatura = allProducts.filter(p => p.specifications.some(sp => /^Klawiatur/i.test(sp.name))).length
 
   // Schema JSON-LD
@@ -407,7 +407,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                       return (
                         <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">
                           <summary className="flex items-center gap-3 cursor-pointer px-5 py-3.5 bg-white hover:bg-gray-50 transition-colors">
-                            <Ikona nazwa={IKONY_KRYTERIOW[i]} rozmiar={28} />
+                            <Ikona nazwa={bc.categoryId === 'terminale-mobilne' ? IKONY_KRYTERIOW[i] : undefined} rozmiar={28} />
                             <span className="font-medium text-gray-900 flex-1 pr-4">{tytul}</span>
                             <ChevronRightIcon size={18} className="text-gray-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-90" />
                           </summary>
@@ -435,7 +435,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
                 <ContactBlock
                   heading="Nie wiesz, który model wybrać?"
-                  text={`Dobierzemy konfigurację do waszej aplikacji i magazynu — skaner, klawiaturę, baterię i akcesoria. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.`}
+                  text={content.contactText ?? `Dobierzemy konfigurację do waszej aplikacji i magazynu — skaner, klawiaturę, baterię i akcesoria. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.`}
                 />
 
                 <section id="o-marce" className="scroll-mt-24 definition-content">
@@ -643,7 +643,6 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
             <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-gray-300">
               <li><span className="text-white font-semibold">{allProducts.length}</span> {productWord}</li>
               {najtansza && <li>ceny netto <span className="text-white font-semibold">od {zlote(najtansza)} zł</span></li>}
-              {dostepneOdReki > 0 && <li><span className="text-white font-semibold">{dostepneOdReki} z {allProducts.length}</span> dostępnych od ręki</li>}
               {zKlawiatura > 0 && <li>klawiatura fizyczna w <span className="text-white font-semibold">{zKlawiatura}</span> modelach</li>}
             </ul>
 
@@ -692,7 +691,6 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               <p className="text-gray-600 text-sm mt-3">
                 {allProducts.length} {productWord}
                 {najtansza && <> · ceny netto od {zlote(najtansza)} zł</>}
-                {dostepneOdReki > 0 && <> · {dostepneOdReki} z {allProducts.length} dostępnych od ręki</>}
                 {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} modelach</>}
                 {content?.updatedAt && (
                   <span className="text-gray-500"> · ceny sprawdzone {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>

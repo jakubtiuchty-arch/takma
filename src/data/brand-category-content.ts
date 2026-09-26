@@ -10,6 +10,8 @@ import { SubcategoryRichContent } from './subcategory-content'
  */
 export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHeadings'> & {
   sectionHeadings?: NonNullable<SubcategoryRichContent['sectionHeadings']> & { tco?: string }
+  /** tekst bloku „Nie wiesz, który model wybrać?” — domyślny opisuje terminale */
+  contactText?: string
 }
 
 export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
