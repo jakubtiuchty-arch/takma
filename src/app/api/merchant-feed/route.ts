@@ -71,6 +71,7 @@ function buildItem(opts: {
   gtin?: string
   itemGroupId?: string
   productType?: string
+  googleProductCategory?: string
 }): string {
   const lines = [
     '    <item>',
@@ -88,6 +89,7 @@ function buildItem(opts: {
   if (opts.gtin) lines.push(`      <g:gtin>${escapeXml(opts.gtin)}</g:gtin>`)
   if (opts.itemGroupId) lines.push(`      <g:item_group_id>${escapeXml(opts.itemGroupId)}</g:item_group_id>`)
   if (opts.productType) lines.push(`      <g:product_type>${escapeXml(opts.productType)}</g:product_type>`)
+  if (opts.googleProductCategory) lines.push(`      <g:google_product_category>${opts.googleProductCategory}</g:google_product_category>`)
   lines.push('    </item>')
   return lines.join('\n')
 }
@@ -103,6 +105,21 @@ interface StockRow {
   availability: string
   totalStock: number
   found: boolean
+}
+
+/** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet. */
+const GOOGLE_CATEGORY: Record<string, string> = {
+  'drukarki-etykiet': '952',
+}
+
+/** Typ urządzenia na początku tytułu. Nazwy modeli („Zebra ZD421t”) nie mówią, że to drukarka,
+ *  a Google dopasowuje oferty do zapytań w rodzaju „drukarka etykiet zebra”. */
+function typUrzadzenia(product: Product): string | null {
+  if (product.categoryId !== 'drukarki-etykiet' || /drukark/i.test(product.name)) return null
+  const sub = product.subcategoryIds ?? []
+  if (sub.includes('mobilne-drukarki-etykiet')) return 'Mobilna drukarka etykiet'
+  if (sub.includes('kolorowe-drukarki-etykiet')) return 'Kolorowa drukarka etykiet'
+  return 'Drukarka etykiet'
 }
 
 /** Pierwszy obraz nadający się do Merchant Center.
@@ -195,7 +212,8 @@ export async function GET() {
     // "Uchwyt pistoletowy" wyzwala klasyfikator GMC "Guns and Parts" (odrzucenie) —
     // w feedzie neutralna nazwa; na stronie produktu nazwa bez zmian
     const rawTitle = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
-    const title = rawTitle.replace(/uchwyt pistoletowy/gi, 'Rękojeść skanera (trigger)')
+    const typ = typUrzadzenia(c.product)
+    const title = truncate(`${typ ? `${typ} ` : ''}${rawTitle}`.replace(/uchwyt pistoletowy/gi, 'Rękojeść skanera (trigger)'), 146) // truncate dopisuje „...”, limit Google to 150 znaków
 
     items.push(buildItem({
       id: c.pn,
@@ -210,6 +228,7 @@ export async function GET() {
       gtin,
       itemGroupId: c.variant ? c.product.slug : undefined,
       productType,
+      googleProductCategory: GOOGLE_CATEGORY[c.product.categoryId],
     }))
     seenPns.add(c.pn)
   }
