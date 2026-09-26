@@ -15579,9 +15579,9 @@ Jeśli stanowisko wymaga RS-232 albo emulacji klawiatury przez port szeregowy, w
     manufacturerId: 'datalogic',
     priceFrom: 230,
     images: [
-      '/images/products/datalogic-quickscan-qw2520.png',
       '/images/products/datalogic-quickscan-qbt2500-4.png',
       '/images/products/datalogic-quickscan-qbt2500-5.png',
+      '/images/products/datalogic-quickscan-qw2520.png',
       '/images/products/datalogic-quickscan-qd2590-2.png',
       '/images/products/datalogic-quickscan-qd2590-3.png',
       '/images/products/datalogic-quickscan-qd2590-4.png',
@@ -15598,9 +15598,9 @@ Jeśli stanowisko wymaga RS-232 albo emulacji klawiatury przez port szeregowy, w
       '/images/products/datalogic-quickscan-qd2590-16.png',
     ],
     imageDescriptions: [
-      'Datalogic QuickScan QW2520 — ujęcie pod kątem, czarna obudowa z niebieskim spustem i kablem',
-      'QuickScan QW2520, ujęcie od prawej — czerwone oświetlenie odczytu włączone',
-      'QuickScan QW2520, ujęcie od lewej z włączonym oświetleniem odczytu',
+      'Datalogic QuickScan QW2520 z włączonym czerwonym oświetleniem odczytu, zwrócony w prawo',
+      'QuickScan QW2520 z włączonym oświetleniem odczytu, zwrócony w lewo',
+      'QuickScan QW2520 — ujęcie pod kątem, czarna obudowa z niebieskim spustem i kablem',
       'QuickScan QW2520, ujęcie od lewej — czarna obudowa z logo QuickScan i kablem',
       'QuickScan QW2520, ujęcie od prawej — profil rękojeści i niebieski spust',
       'QuickScan QW2520 z włączonym czerwonym oświetleniem odczytu, ujęcie od prawej',
