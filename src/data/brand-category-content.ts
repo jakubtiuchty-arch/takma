@@ -138,104 +138,102 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
     ],
   },
   'drukarki-etykiet-zebra': {
+    updatedAt: '2026-09-25',
+    contactText: 'Dobierzemy model, rozdzielczość i materiały do waszych etykiet — od drukarki na biurko po linię produkcyjną. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.',
     definition: {
-      heading: 'Drukarki etykiet Zebra — ponad 50% rynku enterprise na świecie',
+      heading: 'Serie drukarek etykiet Zebra: ZD, ZT i ZQ',
       content:
-        'Zebra Technologies to niekwestionowany lider światowego rynku drukarek etykiet z kodami kreskowymi, posiadający ponad 50% udziału w segmencie enterprise [źródło: zebra.com](https://www.zebra.com/us/en/about-zebra.html). Drukarki etykiet Zebra są standardem branżowym — wykorzystują je największe firmy logistyczne, sieci handlowe, centra dystrybucyjne i zakłady produkcyjne na całym świecie.\n\nPlatforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) umożliwia centralne zarządzanie flotą drukarek z dowolnego miejsca, a język programowania ZPL II (Zebra Programming Language) stał się de facto standardem integracji z systemami WMS, ERP i TMS.\n\nOferta drukarek etykiet Zebra obejmuje pełne spektrum zastosowań: serie biurkowe ZD2xx (modele ekonomiczne ZD220, ZD230) i ZD4xx (średnia klasa ZD411, [ZD421](/produkt/zebra-zd421t)), premium desktop ZD6xx ([ZD621](/produkt/zebra-zd621t)), drukarki przemysłowe ZT1xx (entry-level [ZT111](/produkt/zebra-zt111)), ZT2xx ([ZT231](/produkt/zebra-zt231)), ZT4xx (zaawansowane ZT411, ZT421), ZT6xx (heavy-duty ZT610, ZT620) oraz mobilne ZQ2xx–ZQ6xx do pracy w terenie.\n\nPakiet oprogramowania PrintDNA — w tym Print Station, Browser Print, Visibility Services i PDF Direct — zapewnia zerową konfigurację, zdalne aktualizacje firmware i monitoring stanu głowic w czasie rzeczywistym. Inwestycja w drukarkę Zebra to inwestycja w ekosystem, który skaluje się wraz z rozwojem firmy. Szczegółowy [przewodnik po seriach drukarek Zebra ZD i ZT](/poradnik/drukarki-etykiet-zebra-przewodnik) pomoże dobrać właściwy model. Jeśli szukasz pomocy w wyborze — przeczytaj nasz [poradnik jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
+        'Zebra Technologies produkuje drukarki etykiet z kodami kreskowymi dla logistyki, handlu, produkcji i ochrony zdrowia. Drukarki Zebra pracują w centrach dystrybucyjnych, sieciach handlowych i zakładach produkcyjnych na całym świecie.\n\nPlatforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) umożliwia centralne zarządzanie flotą drukarek z dowolnego miejsca, a język programowania ZPL II (Zebra Programming Language) stał się de facto standardem integracji z systemami WMS, ERP i TMS.\n\nOferta drukarek etykiet Zebra obejmuje pełne spektrum zastosowań: serie biurkowe ZD2xx (modele ekonomiczne ZD220, ZD230) i ZD4xx (średnia klasa ZD411, [ZD421](/produkt/zebra-zd421t)), premium desktop ZD6xx ([ZD621](/produkt/zebra-zd621t)), drukarki przemysłowe ZT1xx (entry-level [ZT111](/produkt/zebra-zt111)), ZT2xx ([ZT231](/produkt/zebra-zt231)), ZT4xx (zaawansowane ZT411, ZT421), ZT5xx ([ZT510](/produkt/zebra-zt510)), ZT6xx (heavy-duty ZT610, ZT620) oraz mobilne ZQ2xx–ZQ6xx do pracy w terenie.\n\nOprogramowanie Zebra DNA (wcześniej Print DNA) — w tym Print Station, Browser Print, Visibility Services i PDF Direct — ułatwia konfigurację, zdalne aktualizacje firmware i monitorowanie stanu drukarek. Inwestycja w drukarkę Zebra to inwestycja w ekosystem, który skaluje się wraz z rozwojem firmy. Szczegółowy [przewodnik po seriach drukarek Zebra ZD i ZT](/poradnik/drukarki-etykiet-zebra-przewodnik) pomoże dobrać właściwy model. Jeśli szukasz pomocy w wyborze — przeczytaj nasz [poradnik jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
     },
     buyingGuide: {
       heading: 'Jak wybrać drukarkę etykiet Zebra? 7 kryteriów wyboru drukarki Zebra',
       items: [
-        'Dzienny wolumen druku — do 1 000 etykiet/dzień wystarczy drukarka biurkowa ([ZD220](/produkt/zebra-zd220d) od 649 zł, [ZD421](/produkt/zebra-zd421t) od 1 472 zł). Przy 1 000–5 000 etykiet/dzień wybierz model przemysłowy ([ZT231](/produkt/zebra-zt231) od 2 551 zł, ZT411 od 5 078 zł). Praca w terenie lub magazynie bez stałego stanowiska? Drukarka mobilna ZQ serii 300–600.',
-        'Technologia druku — druk termiczny bezpośredni (modele „d") nie wymaga taśmy i jest tańszy w eksploatacji, ale etykiety blaknął w 6–12 miesięcy. Druk termotransferowy (modele „t") z taśmą woskową, woskowo-żywiczną lub żywiczną daje etykiety trwałe latami — niezbędny do etykiet produktowych, magazynowych i chemicznie odpornych.',
+        'Dzienny wolumen druku — do 1 000 etykiet/dzień wystarczy drukarka biurkowa ([ZD220](/produkt/zebra-zd220d) od 633 zł, [ZD421](/produkt/zebra-zd421d) od 1 434 zł). Przy 1 000–5 000 etykiet/dzień wybierz model przemysłowy ([ZT231](/produkt/zebra-zt231) od 2 496 zł, ZT411 od 5 811 zł). Praca w terenie lub magazynie bez stałego stanowiska? Drukarka mobilna ZQ serii 300–600.',
+        'Technologia druku — druk termiczny bezpośredni (modele „d") nie wymaga taśmy i jest tańszy w eksploatacji, ale nadruk z czasem blednie, szybciej na słońcu i w cieple. Druk termotransferowy (modele „t") z taśmą woskową, woskowo-żywiczną lub żywiczną daje etykiety trwałe latami — niezbędny do etykiet produktowych, magazynowych i chemicznie odpornych.',
         'Rozdzielczość druku — 203 dpi to standard dla etykiet logistycznych i adresowych (kody 1D). 300 dpi zalecane do etykiet z kodami 2D (DataMatrix, QR) o rozmiarze poniżej 10 mm i tekstu poniżej 6 pkt. 600 dpi ([ZT411](/produkt/zebra-zt411), [ZT610](/produkt/zebra-zt610)) do mikroetykiet elektronicznych, jubilerskich i farmaceutycznych.',
-        'Prędkość druku — od 102 mm/s ([ZD220](/produkt/zebra-zd220d), wystarczająca do 300 etykiet/dzień) przez 152–203 mm/s ([ZD421](/produkt/zebra-zd421t), [ZD621](/produkt/zebra-zd621t)) do 356 mm/s ([ZT411](/produkt/zebra-zt411), [ZT610](/produkt/zebra-zt610)). Przy 2 000+ etykiet dziennie różnica między 152 a 356 mm/s to ponad 30 minut oszczędności.',
-        'Łączność i integracja — USB jest standardem we wszystkich modelach. Ethernet (LAN) to must-have przy pracy w sieci z WMS. Wi-Fi 802.11ac/ax umożliwia elastyczne rozmieszczenie drukarek. Bluetooth 5.0 w modelach mobilnych do parowania z terminalami. [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) zapewnia zdalne zarządzanie całą flotą z jednej konsoli.',
-        'Opcje dodatkowe — RFID encoder (ZD621R, ZT411R, ZT421R) do etykiet UHF RFID. Tryb linerless (bez podkładu) oszczędza do 40% materiału. Gilotyna automatyczna do odcinania etykiet. Odklejak/dyspenser do aplikacji peel-and-present. Rewinder do nawijania wydrukowanych etykiet na rolkę.',
-        'Całkowity koszt posiadania (TCO) — tańsza drukarka Zebra nie zawsze oznacza niższy koszt. [ZD220](/produkt/zebra-zd220d) (649 zł) przy 500 etykietach/dzień zużyje głowicę co 6–8 miesięcy (wymiana ~400 zł). [ZD621](/produkt/zebra-zd621t) (1 944 zł) ma głowicę wytrzymującą 18–24 miesiące. Po 3 latach TCO może być identyczny — ale ZD621 drukuje 2× szybciej i obsługuje więcej materiałów. Więcej o TCO w naszym [poradniku jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
+        'Prędkość druku — od 102 mm/s ([ZD220](/produkt/zebra-zd220d)) przez 152–203 mm/s ([ZD421](/produkt/zebra-zd421t), [ZD621](/produkt/zebra-zd621t)) do 356 mm/s ([ZT411](/produkt/zebra-zt411), [ZT610](/produkt/zebra-zt610)). Przy 2 000 etykiet dziennie różnica między 152 a 356 mm/s to od ok. 7 minut (etykiety 100×50 mm) do ok. 19 minut (100×150 mm) samego druku.',
+        'Łączność i integracja — USB jest standardem we wszystkich modelach. Ethernet (LAN) to must-have przy pracy w sieci z WMS. Wi-Fi 802.11ac/ax umożliwia elastyczne rozmieszczenie drukarek. Bluetooth w modelach mobilnych (wersje 4.1–5.3, zależnie od modelu) do parowania z terminalami. [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) zapewnia zdalne zarządzanie całą flotą z jednej konsoli.',
+        'Opcje dodatkowe — RFID encoder (ZD621R, ZT411R, ZT421R) do etykiet UHF RFID. Druk bez podkładu (linerless, w ZD621d i ZT411, tylko termiczny) mieści na rolce do 50% więcej etykiet. Gilotyna automatyczna do odcinania etykiet. Odklejak/dyspenser do aplikacji peel-and-present. Rewinder do nawijania wydrukowanych etykiet na rolkę.',
+        'Całkowity koszt posiadania (TCO) — tańsza drukarka Zebra nie zawsze oznacza niższy koszt. [ZD220](/produkt/zebra-zd220d) (od 633 zł) drukuje 102 mm/s, a [ZD621](/produkt/zebra-zd621d) (od 1 976 zł) 203 mm/s, ma w standardzie Ethernet i obsługuje więcej materiałów. Przy dużym wolumenie liczy się też koszt głowic: do ZD220 ok. 490 zł, do ZD421t ok. 510 zł. Więcej o TCO w naszym [poradniku jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).',
       ],
     },
     expertAuthority:
-      'TAKMA jest autoryzowanym Premier Solution Partnerem Zebra Technologies oraz certyfikowanym Printer Repair Specialistem z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasz zespół serwisowy, dostępny pod adresem [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra), wykonuje naprawy i kalibracje drukarek Zebra na poziomie komponentów — od wymiany głowic termicznych, przez regulację mechanizmów podających, po diagnostykę płyt głównych. Każda rekomendacja drukarek Zebra na tej stronie opiera się na danych z tysięcy realnych wdrożeń i serwisów, nie na materiałach marketingowych. Pomagamy dobrać model, skonfigurować integrację z WMS/ERP, przeszkolić operatorów i zapewnić ciągłość druku przez cały cykl życia urządzenia.',
-    technicalDeepDive: `Pełna macierz modeli drukarek etykiet Zebra — od ekonomicznych biurkowych po ciężkie przemysłowe — pozwala dobrać urządzenie idealnie dopasowane do wolumenu, prędkości i wymagań materiałowych. Zestawienie kluczowych parametrów:\n\n• ZD220 (biurkowa entry-level): 102 mm/s, 203 dpi, szerokość 108 mm, od 649 zł netto — idealna do 300 etykiet/dzień w małych firmach i punktach sprzedaży.\n• ZD421 (biurkowa mid-range): 152 mm/s, 203/300 dpi, modułowa budowa, od 1 472 zł netto — dla e-commerce i magazynów do 1 000 etykiet/dzień.\n• ZD621 (biurkowa premium): 203 mm/s, 203/300 dpi, kolorowy LCD, pełna modułowość, od 1 944 zł netto — najszybsza biurkowa Zebra, do 1 500 etykiet/dzień.\n• ZT111 (przemysłowa entry): 254 mm/s, 203/300 dpi, metalowa obudowa, od 2 081 zł netto — pierwszy krok do druku przemysłowego.\n• ZT231 (przemysłowa mid-range): 304 mm/s, 203/300 dpi, 4-calowa, od 2 551 zł netto — optymalny stosunek ceny do wydajności dla magazynów.\n• ZT411 (przemysłowa zaawansowana): 356 mm/s, 203/300/600 dpi, opcja RFID, od 5 078 zł netto — flagowy model do produkcji i logistyki.\n• ZT610 (przemysłowa heavy-duty): 356 mm/s, 203/300/600 dpi, metalowa konstrukcja, od 10 431 zł netto — do najtrudniejszych warunków przemysłowych, 24/7.\n• ZT620 (przemysłowa wide-format): 305 mm/s, 203/300 dpi, szerokość 168 mm (6,6"), od 12 416 zł netto — jedyna Zebra do etykiet szerokoformatowych (palety, kontenery).\nŻywotność głowicy termicznej w drukarkach biurkowych wynosi typowo 50–100 km taśmy (300 000–600 000 etykiet standardowych). W modelach przemysłowych głowice wytrzymują 150–300 km (1–2 mln etykiet). To kluczowy czynnik TCO — przy intensywnym użytkowaniu biurkowa drukarka wymaga wymiany głowicy 2–3× częściej niż przemysłowa.`,
+      'TAKMA działa na rynku AutoID od 2001 roku, jest partnerem Zebra Technologies w programie Zebra Premier Partner i ma status Zebra Printer Repair Specialist. Nasz zespół serwisowy, dostępny pod adresem [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra), wykonuje naprawy i kalibracje drukarek Zebra na poziomie komponentów — od wymiany głowic termicznych, przez regulację mechanizmów podających, po diagnostykę płyt głównych. Pomagamy dobrać model, skonfigurować integrację z WMS/ERP, przeszkolić operatorów i zapewnić ciągłość druku przez cały cykl życia urządzenia.',
+    technicalDeepDive: `Najczęściej wybierane modele drukarek etykiet Zebra — od ekonomicznych biurkowych po ciężkie przemysłowe. Zestawienie kluczowych parametrów:\n\n• ZD220 (biurkowa entry-level): 102 mm/s, 203 dpi, szerokość druku 104 mm, od 633 zł netto — do małych firm i punktów sprzedaży.\n• ZD421 (biurkowa mid-range): 152 mm/s, 203/300 dpi, modułowa budowa, od 1 434 zł netto — dla e-commerce i magazynów do 1 000 etykiet/dzień.\n• ZD621 (biurkowa premium): 203 mm/s, 203/300 dpi, opcjonalny kolorowy dotykowy LCD 4,3", pełna modułowość, od 1 976 zł netto (z LCD od 2 276 zł) — najszybsza biurkowa Zebra, do 1 500 etykiet/dzień.\n• ZT111 (przemysłowa entry): 254 mm/s, 203/300 dpi, metalowa rama i obudowa z tworzywa, od 2 214 zł netto — pierwszy krok do druku przemysłowego.\n• ZT231 (przemysłowa mid-range): 304 mm/s, 203/300 dpi, 4-calowa, od 2 496 zł netto — optymalny stosunek ceny do wydajności dla magazynów.\n• ZT411 (przemysłowa zaawansowana): 356 mm/s, 203/300/600 dpi, opcja RFID, od 5 811 zł netto — do produkcji i logistyki.\n• ZT610 (przemysłowa heavy-duty): 356 mm/s, 203/300/600 dpi, metalowa konstrukcja, od 10 148 zł netto — do najtrudniejszych warunków przemysłowych, 24/7.\n• ZT620 (przemysłowa wide-format): 305 mm/s, 203/300 dpi, szerokość 168 mm (6,6"), od 12 038 zł netto — 6-calowa, podobnie jak ZT421, do etykiet paletowych i kontenerowych.\nNa głowicę drukującą Zebra udziela gwarancji 12 miesięcy lub miliona cali wydruku (ok. 25 km), zależnie od tego, co nastąpi wcześniej. Rzeczywista trwałość zależy od materiałów, czystości głowicy i ustawienia zaczernienia, dlatego przy dużych wolumenach koszt głowic warto uwzględnić w TCO.`,
     tcoComparisons: [
       {
         title: 'TCO 3 lata — 500 etykiet/dzień (100×50 mm, termotransfer)',
         variants: [
           {
-            label: 'Biurkowa ZD421',
+            label: 'Biurkowa ZD421t',
             items: [
-              { name: 'Drukarka ZD421', cost: '1 472 zł' },
+              { name: 'Drukarka ZD421t', cost: '1 676 zł' },
               { name: 'Etykiety (36 mies.)', cost: '~6 480 zł' },
               { name: 'Taśmy woskowe (36 mies.)', cost: '~1 980 zł' },
-              { name: '2× wymiana głowicy', cost: '~900 zł' },
+              { name: '2× wymiana głowicy', cost: '~1 020 zł' },
             ],
-            total: '~10 830 zł',
+            total: '~11 150 zł',
           },
           {
             label: 'Przemysłowa ZT231',
             items: [
-              { name: 'Drukarka ZT231', cost: '2 551 zł' },
+              { name: 'Drukarka ZT231', cost: '2 496 zł' },
               { name: 'Etykiety (36 mies.)', cost: '~5 760 zł' },
               { name: 'Taśmy woskowe (36 mies.)', cost: '~1 800 zł' },
-              { name: '1× wymiana głowicy', cost: '~1 100 zł' },
+              { name: '1× wymiana głowicy', cost: '~1 430 zł' },
             ],
-            total: '~11 210 zł',
+            total: '~11 490 zł',
           },
         ],
-        conclusion: 'Różnica zaledwie 380 zł — ale ZT231 drukuje 2× szybciej i jest gotowy na skalowanie wolumenu.',
+        conclusion: 'Różnica ok. 340 zł na korzyść ZD421t — ale ZT231 drukuje 2× szybciej i poradzi sobie z większym wolumenem.',
       },
     ],
     useCases: [
       {
         title: 'E-commerce i fulfillment — ZD421d / ZD230d',
         description:
-          'Drukarki termiczne bezpośrednie idealne do etykiet kurierskich i wysyłkowych. ZD421d (152 mm/s) obsłuży sklep wysyłający 100–500 paczek dziennie, z opcją odklejaka do szybkiego naklejania. ZD230d (152 mm/s) to ekonomiczna alternatywa dla mniejszych wolumenów do 200 paczek/dzień. Obie obsługują etykiety 4-calowe wszystkich polskich kurierów (DPD, InPost, DHL, UPS, GLS). Koszt wydruku: ~0,01 zł/etykietę. Sprawdź [konfigurację drukarki Zebra z BaseLinkerem](/poradnik/drukarka-zebra-baselinker-konfiguracja) i nasze [porównanie drukarek Zebra do e-commerce](/drukarki-etykiet-e-commerce).',
+          'Drukarki termiczne bezpośrednie idealne do etykiet kurierskich i wysyłkowych. ZD421d (152 mm/s) obsłuży sklep wysyłający 100–500 paczek dziennie, z opcją odklejaka do szybkiego naklejania. ZD230d (152 mm/s) to ekonomiczna alternatywa dla mniejszych wolumenów do 200 paczek/dzień. Obie obsługują etykiety 4-calowe wszystkich polskich kurierów (DPD, InPost, DHL, UPS, GLS). Sprawdź [konfigurację drukarki Zebra z BaseLinkerem](/poradnik/drukarka-zebra-baselinker-konfiguracja) i nasze [porównanie drukarek Zebra do e-commerce](/drukarki-etykiet-e-commerce).',
       },
       {
         title: 'Magazyn WMS — ZT231 / ZT411',
         description:
-          'Drukarki przemysłowe do intensywnej pracy w magazynach z systemem WMS. ZT231 (304 mm/s, od 2 551 zł) to optymalny wybór dla magazynów drukujących 1 000–3 000 etykiet lokalizacyjnych i produktowych dziennie. ZT411 (356 mm/s, od 5 078 zł) z opcją 600 dpi i RFID encoder sprawdzi się w centrach dystrybucyjnych wymagających mikroetykiet lub znakowania RFID. Oba modele z Ethernetem i Link-OS do integracji z SAP WM, Oracle WMS czy Comarch WMS.',
+          'Drukarki przemysłowe do intensywnej pracy w magazynach z systemem WMS. ZT231 (304 mm/s, od 2 496 zł) to optymalny wybór dla magazynów drukujących 1 000–3 000 etykiet lokalizacyjnych i produktowych dziennie. ZT411 (356 mm/s, od 5 811 zł) z opcją 600 dpi i RFID encoder sprawdzi się w centrach dystrybucyjnych wymagających mikroetykiet lub znakowania RFID. Oba modele z Ethernetem i Link-OS do integracji z SAP WM, Oracle WMS czy Comarch WMS.',
       },
       {
         title: 'Produkcja i linie montażowe — ZT411 / ZT610',
         description:
-          'Drukarki przemysłowe do ciągłej pracy 24/7 na liniach produkcyjnych. ZT411 (356 mm/s) z rozdzielczością 600 dpi drukuje mikroetykiety na komponenty elektroniczne i podzespoły. ZT610 (356 mm/s, od 10 431 zł) w pełni metalowej obudowie wytrzymuje wibracje i zapylenie hali produkcyjnej. Tryb termotransferowy z taśmą żywiczną zapewnia etykiety odporne na chemikalia, temperaturę i ścieranie.',
+          'Drukarki przemysłowe do ciągłej pracy 24/7 na liniach produkcyjnych. ZT411 w rozdzielczości 600 dpi (do 152 mm/s) drukuje mikroetykiety na komponenty elektroniczne i podzespoły. ZT610 (356 mm/s, od 10 148 zł) w pełni metalowej obudowie wytrzymuje wibracje i zapylenie hali produkcyjnej. Tryb termotransferowy z taśmą żywiczną zapewnia etykiety odporne na chemikalia, temperaturę i ścieranie.',
       },
       {
         title: 'Apteka i healthcare — ZD411d',
         description:
-          'Kompaktowa drukarka biurkowa idealna do etykiet aptecznych, opasek na nadgarstek i etykiet próbek laboratoryjnych. Rozdzielczość 300 dpi zapewnia czytelność małych etykiet na opakowania leków. Tryb termotransferowy gwarantuje trwałość wydruku przez cały okres ważności leku (do 36 miesięcy). Opcjonalny odklejak przyspiesza naklejanie etykiet na małe buteleczki i fiolki. Certyfikacja Zebra Healthcare zapewnia zgodność z regulacjami branżowymi.',
+          'Kompaktowa drukarka biurkowa do etykiet aptecznych, opasek na nadgarstek i etykiet próbek laboratoryjnych. Rozdzielczość 300 dpi zapewnia czytelność małych etykiet na opakowania leków. ZD411d drukuje termicznie, bez taśmy; do etykiet, które mają wytrzymać cały okres ważności leku, lepsza jest termotransferowa [ZD411t](/produkt/zebra-zd411t). Opcjonalny odklejak przyspiesza naklejanie etykiet na małe buteleczki i fiolki.',
       },
       {
         title: 'Logistyka i transport — ZT421 (6") / ZQ630 Plus (mobilna)',
         description:
-          'ZT421 z szerokim polem druku 168 mm (6,6") drukuje etykiety paletowe, etykiety GS1-128 i duże kody kreskowe widoczne z odległości na magazynie. ZQ630 Plus to mobilna drukarka 3-calowa do kierowców — drukuje potwierdzenia dostawy, etykiety zwrotów i dokumenty CMR bezpośrednio przy samochodzie dostawczym. Bluetooth 5.0 do parowania z terminalem TC22/TC27, bateria na pełną zmianę.',
+          'ZT421 z szerokim polem druku 168 mm (6,6") drukuje etykiety paletowe, etykiety GS1-128 i duże kody kreskowe widoczne z odległości na magazynie. ZQ630 Plus to mobilna drukarka 4-calowa (104 mm) do kierowców — drukuje potwierdzenia dostawy i etykiety zwrotów bezpośrednio przy samochodzie dostawczym. Bluetooth 4.2 (z modułem Wi-Fi 6 — Bluetooth 5.3) do parowania z terminalem TC22/TC27, bateria na pełną zmianę.',
       },
       {
         title: 'Retail i POS — ZD220d',
         description:
-          'Najtańsza drukarka etykiet Zebra (od 639 zł netto) idealna do drukowania etykiet cenowych, oznaczeń półkowych i etykiet promocyjnych w sklepach detalicznych. Technologia termiczna bezpośrednia eliminuje koszt taśmy barwiącej — wystarczą same etykiety. Prosty interfejs USB i kompaktowe wymiary pozwalają umieścić drukarkę przy kasie lub na zapleczu. Drukuje do 300 etykiet dziennie przy bardzo niskim koszcie eksploatacji (~15 zł/miesiąc w [materiałach eksploatacyjnych](/etykiety-termiczne-zebra)).',
+          'Najtańsza biurkowa drukarka termiczna Zebra (od 633 zł netto) do drukowania etykiet cenowych, oznaczeń półkowych i etykiet promocyjnych w sklepach detalicznych. Technologia termiczna bezpośrednia eliminuje koszt taśmy barwiącej — wystarczą same etykiety. Prosty interfejs USB i kompaktowe wymiary pozwalają umieścić drukarkę przy kasie lub na zapleczu. Przy druku termicznym jedynym materiałem eksploatacyjnym są [etykiety termiczne](/etykiety-termiczne-zebra).',
       },
     ],
     uniqueInsights: {
       heading: 'Czego sprzedawcy drukarek Zebra nie powiedzą',
       items: [
         {
-          title: 'Link-OS — zdalne zarządzanie flotą, którego nie ma nikt inny',
-          text: 'Platforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) to największa przewaga Zebry nad konkurencją (Honeywell, TSC, SATO). Umożliwia zdalne aktualizacje firmware, monitorowanie stanu głowic, podgląd poziomu materiałów i konfigurację ustawień — dla setek drukarek jednocześnie, z jednej konsoli webowej. W firmie z 50+ drukarkami to oszczędność dziesiątek godzin pracy IT miesięcznie. Żaden inny producent nie oferuje tak zaawansowanego fleet managementu w standardzie.',
+          title: 'Link-OS — zdalne zarządzanie flotą drukarek',
+          text: 'System [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) pozwala zdalnie aktualizować firmware, sprawdzać stan głowic i materiałów oraz zmieniać ustawienia wielu drukarek naraz. Do zarządzania większą flotą z jednej konsoli służy licencjonowane oprogramowanie Zebra Printer Profile Manager Enterprise.',
         },
         {
-          title: 'PrintDNA — zero-touch deployment oszczędza dni wdrożenia',
-          text: 'Pakiet PrintDNA pozwala wdrożyć nową drukarkę Zebra w minuty, nie godziny. Profile konfiguracji (formaty etykiet, ustawienia sieciowe, parametry druku) przesyłane są automatycznie po podłączeniu drukarki do sieci — bez ręcznego programowania każdego urządzenia. Przy wymianie drukarki na nową konfiguracja migruje automatycznie. Konkurenci wymagają manualnej konfiguracji każdego egzemplarza.',
+          title: 'Zebra DNA — szybsze wdrożenie kolejnych drukarek',
+          text: 'Narzędzia Zebra DNA pozwalają przygotować profil konfiguracji (formaty etykiet, ustawienia sieci, parametry druku) i wgrać go na kolejne drukarki, zamiast ustawiać każdą ręcznie. Przy wymianie drukarki ustawienia można przenieść ze starego egzemplarza na nowy.',
         },
         {
-          title: 'Gwarancja na głowicę — ukryty koszt tańszych marek',
-          text: 'Zebra oferuje gwarancję na głowicę termiczną proporcjonalną do przebiegu (np. 50 km taśmy dla modeli biurkowych). Wielu konkurentów (szczególnie marki azjatyckie) wyklucza głowicę z gwarancji lub ogranicza ją do 3 miesięcy. Przy koszcie głowicy 400–1 500 zł to istotny element TCO. W [serwisie serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra) widzimy, że oryginalne głowice Zebra wytrzymują średnio 30–50% dłużej niż zamienniki.',
-        },
-        {
-          title: 'Wartość rezydualna — Zebra zachowuje cenę jak żadna inna marka',
-          text: 'Drukarki Zebra na rynku wtórnym zachowują 40–60% wartości po 3 latach użytkowania (vs 15–25% dla marek budget). To dlatego, że używane Zebry są poszukiwane — stabilne sterowniki, łatwo dostępne części zamienne, globalny serwis. Przy planowaniu upgrade floty, odsprzedaż starych drukarek Zebra może pokryć 30–40% kosztu nowych urządzeń.',
+          title: 'Gwarancja na głowicę drukującą',
+          text: 'Zebra obejmuje głowicę drukującą gwarancją 12 miesięcy lub miliona cali wydruku (ok. 25 km), zależnie od tego, co nastąpi wcześniej. Głowica kosztuje od ok. 490 zł w drukarkach biurkowych do ok. 5 800 zł w przemysłowych, więc przy dużych wolumenach to istotny element TCO. Diagnozę i wymianę głowic wykonuje [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra).',
         },
       ],
     },
@@ -243,52 +241,52 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         question: 'Ile kosztuje drukarka etykiet Zebra?',
         answer:
-          'Ceny drukarek etykiet Zebra zaczynają się od 639 zł netto za model biurkowy [ZD220d](/produkt/zebra-zd220d) (termiczny bezpośredni). Drukarki biurkowe termotransferowe kosztują od 1 472 zł ([ZD421t](/produkt/zebra-zd421t)) do 1 944 zł ([ZD621t](/produkt/zebra-zd621t)). Modele przemysłowe zaczynają się od 2 081 zł ([ZT111](/produkt/zebra-zt111)) i sięgają 12 416 zł ([ZT620](/produkt/zebra-zt620) wide-format). Ceny netto w TAKMA są aktualizowane codziennie na podstawie notowań hurtowych.',
+          'Najtańsza drukarka w tej kategorii to mobilna [ZQ220 Plus](/produkt/zebra-zq220-plus) od 561 zł netto, która drukuje paragony i etykiety na nośniku do 80 mm. Najtańsze biurkowe to [ZD220d](/produkt/zebra-zd220d) (termiczna) od 633 zł i [ZD220t](/produkt/zebra-zd220t) (termotransferowa) od 650 zł. Z biurkowych termotransferowych [ZD421t](/produkt/zebra-zd421t) kosztuje od 1 676 zł, a [ZD621t](/produkt/zebra-zd621t) od 2 213 zł. Modele przemysłowe zaczynają się od 2 214 zł ([ZT111](/produkt/zebra-zt111)), a 6-calowa [ZT620](/produkt/zebra-zt620) kosztuje od 12 038 zł.',
       },
       {
         question: 'Jaka jest różnica między drukarką termiczną a termotransferową Zebra?',
         answer:
-          'Drukarki termiczne bezpośrednie (modele z literą „d", np. [ZD421d](/produkt/zebra-zd421d)) drukują ciepłem bezpośrednio na papierze termicznym — nie wymagają taśmy, ale wydruk blaknie w 6–12 miesięcy. Drukarki termotransferowe (modele „t", np. [ZD421t](/produkt/zebra-zd421t)) używają taśmy barwiącej (ribbon) przenoszącej barwnik na etykietę — wydruk jest trwały latami, odporny na UV, wilgoć i chemikalia. Wybór zależy od przeznaczenia: etykiety kurierskie → termiczna, etykiety produktowe/magazynowe → termotransferowa.',
+          'Drukarki termiczne bezpośrednie (modele z literą „d", np. [ZD421d](/produkt/zebra-zd421d)) drukują ciepłem bezpośrednio na papierze termicznym — nie wymagają taśmy, ale wydruk z czasem blednie, szybciej na słońcu i w cieple. Drukarki termotransferowe (modele „t", np. [ZD421t](/produkt/zebra-zd421t)) używają taśmy barwiącej (ribbon) przenoszącej barwnik na etykietę — wydruk jest trwały latami, odporny na UV, wilgoć i chemikalia. Wybór zależy od przeznaczenia: etykiety kurierskie → termiczna, etykiety produktowe/magazynowe → termotransferowa.',
       },
       {
         question: 'Czy drukarka Zebra współpracuje z moim systemem WMS/ERP?',
         answer:
-          'Tak — drukarki Zebra obsługują język ZPL II, który jest standardem branżowym wspieranym przez praktycznie wszystkie systemy WMS (SAP WM, Oracle WMS, Comarch WMS, Asseco WAPRO) i ERP (SAP, Microsoft Dynamics, Comarch ERP). Dodatkowo platforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) udostępnia REST API, sterowniki Windows/Linux/macOS oraz SDK dla Java, .NET i Androida. Integracja z polskimi systemami kurierskimi (InPost, DPD, DHL, GLS) jest natywna przez moduły druku etykiet.',
+          'Tak — drukarki Zebra (poza mobilnymi ZQ210 i ZQ220 Plus, które używają języków CPCL i ESC/POS) obsługują język ZPL II, który jest standardem branżowym wspieranym przez praktycznie wszystkie systemy WMS (SAP WM, Oracle WMS, Comarch WMS, Asseco WAPRO) i ERP (SAP, Microsoft Dynamics, Comarch ERP). Dodatkowo platforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) udostępnia sterowniki Windows/Linux/macOS oraz SDK dla Java, .NET i Androida. Integracja z polskimi systemami kurierskimi (InPost, DPD, DHL, GLS) jest natywna przez moduły druku etykiet.',
       },
       {
         question: 'Jak długo wytrzymuje głowica termiczna w drukarce Zebra?',
         answer:
-          'Żywotność głowicy zależy od modelu i intensywności użytkowania. W drukarkach biurkowych ([ZD220](/produkt/zebra-zd220t)–[ZD621](/produkt/zebra-zd621t)) głowica wytrzymuje 50–100 km taśmy, co odpowiada 300 000–600 000 etykiet standardowych (100×50 mm). W modelach przemysłowych ([ZT231](/produkt/zebra-zt231)–ZT620) żywotność wynosi 150–300 km (1–2 mln etykiet). Kluczowe czynniki wpływające na trwałość to: jakość etykiet (certyfikowane materiały wydłużają żywotność o 30–50%), regularna konserwacja i unikanie druku na suchej głowicy.',
+          'Zebra obejmuje głowicę gwarancją 12 miesięcy lub miliona cali wydruku (ok. 25 km), zależnie od tego, co nastąpi wcześniej. Rzeczywista trwałość zależy od rodzaju etykiet i taśmy, ustawienia zaczernienia, prędkości druku i regularnego czyszczenia. Etykiety i taśmy dobrane do drukarki oraz czyszczenie głowicy alkoholem izopropylowym przy każdej wymianie rolki wydłużają jej żywotność.',
       },
       {
         question: 'Którą drukarkę Zebra wybrać do małej firmy / e-commerce?',
         answer:
-          'Dla małej firmy wysyłającej do 100 paczek dziennie rekomendujemy [ZD230d](/produkt/zebra-zd230d) (ok. 780 zł) — termiczną, prostą w obsłudze, z USB. Przy 100–500 paczkach dziennie lepszy będzie [ZD421d](/produkt/zebra-zd421d) (ok. 1 472 zł) z opcją Ethernetu i odklejaka. Jeśli oprócz etykiet kurierskich drukujesz też etykiety produktowe wymagające trwałości, wybierz model termotransferowy [ZD421t](/produkt/zebra-zd421t). Wszystkie te drukarki obsługują etykiety 4-calowe kompatybilne z kurierami InPost, DPD, DHL, UPS i GLS.',
+          'Dla małej firmy wysyłającej do 100 paczek dziennie rekomendujemy [ZD230d](/produkt/zebra-zd230d) (od 1 083 zł) — termiczną, prostą w obsłudze, z USB. Przy 100–500 paczkach dziennie lepszy będzie [ZD421d](/produkt/zebra-zd421d) (od 1 434 zł) z opcją Ethernetu i odklejaka. Jeśli oprócz etykiet kurierskich drukujesz też etykiety produktowe wymagające trwałości, wybierz model termotransferowy [ZD421t](/produkt/zebra-zd421t). Wszystkie te drukarki obsługują etykiety 4-calowe kompatybilne z kurierami InPost, DPD, DHL, UPS i GLS.',
       },
       {
         question: 'Czy mogę drukować etykiety RFID na drukarce Zebra?',
         answer:
-          'Tak — Zebra oferuje modele z wbudowanym encoderem RFID UHF: ZD621R (biurkowa), ZT411R i ZT421R (przemysłowe). Drukarki te jednocześnie drukują grafikę na etykiecie i programują chip RFID zawarty w inlay. Obsługują standardy EPC Gen2 / ISO 18000-63. Enkodowanie RFID jest kluczowe w logistyce (śledzenie palet), retail (inwentaryzacja RFID) i healthcare (identyfikacja próbek). Ceny modeli RFID są wyższe o ok. 2 000–4 000 zł od wersji standardowych — sprawdź [ZT411](/produkt/zebra-zt411) jako bazę dla wersji RFID.',
+          'Tak — Zebra oferuje modele z wbudowanym encoderem RFID UHF: ZD621R (biurkowa), ZT411R i ZT421R (przemysłowe). Drukarki te jednocześnie drukują grafikę na etykiecie i programują chip RFID zawarty w inlay. Obsługują standardy EPC Gen2 / ISO 18000-63. Enkodowanie RFID jest kluczowe w logistyce (śledzenie palet), retail (inwentaryzacja RFID) i healthcare (identyfikacja próbek). Punktem wyjścia do konfiguracji RFID jest [ZT411](/produkt/zebra-zt411).',
       },
       {
         question: 'Jak serwisować drukarkę etykiet Zebra?',
         answer:
-          'Podstawowa konserwacja obejmuje: czyszczenie głowicy termicznej alkoholem izopropylowym co 1 000 etykiet, czyszczenie wałka dociskowego co tydzień, usuwanie pyłu z czujników mediów co miesiąc. Zebra dostarcza narzędzia diagnostyczne w PrintDNA (Print Touch, Visibility Services) do monitorowania stanu głowicy i przewidywania wymiany. W przypadku poważniejszych usterek — naprawy na poziomie komponentów realizuje [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra) (autoryzowany Printer Repair Specialist). Oryginalne części zamienne (głowice, wałki, gilotyny) dostępne w TAKMA.',
+          'Podstawowa konserwacja obejmuje: czyszczenie głowicy termicznej alkoholem izopropylowym co 1 000 etykiet, czyszczenie wałka dociskowego co tydzień, usuwanie pyłu z czujników mediów co miesiąc. Do zdalnego monitorowania stanu drukarek Zebra udostępnia m.in. usługę Visibility Services. W przypadku poważniejszych usterek — naprawy na poziomie komponentów realizuje [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra) (Zebra Printer Repair Specialist). Oryginalne części zamienne (głowice, wałki, gilotyny) dostępne w TAKMA.',
       },
       {
         question: 'Ile prądu zużywa drukarka etykiet Zebra?',
         answer:
-          'Drukarki biurkowe Zebra zużywają średnio 40–80 W podczas druku i 2–5 W w trybie czuwania. Modele przemysłowe pobierają 200–400 W przy pełnej prędkości. Roczny koszt energii dla drukarki biurkowej pracującej 8h dziennie to ok. 50–80 zł (przy cenie 0,85 zł/kWh). Dla przemysłowej pracującej 24/7: ok. 200–400 zł rocznie. To pomijalny element TCO w porównaniu z kosztami materiałów eksploatacyjnych (etykiety + taśmy).',
+          'Zużycie energii zależy od modelu i intensywności druku; najwięcej prądu drukarka pobiera podczas nagrzewania głowicy. Zasilacze przemysłowych ZT510, ZT610 i ZT620 mają moc znamionową 250 W, a drukarki biurkowe znacznie mniejszą, zwłaszcza w trybie czuwania. Koszt energii jest niewielki w porównaniu z kosztem etykiet i taśm.',
       },
       {
         question: 'Czy drukarka Zebra obsługuje drukowanie bez podkładu (linerless)?',
         answer:
-          'Tak — wybrane modele Zebra obsługują etykiety linerless (bez podkładu silikonowego): [ZD421](/produkt/zebra-zd421t) z opcją linerless platen, [ZD621](/produkt/zebra-zd621t) oraz modele przemysłowe ZT411/ZT421. Druk linerless eliminuje odpad w postaci podkładu, oszczędzając do 40% materiału i redukując koszty utylizacji. Wymaga specjalnego wałka dociskowego (linerless platen roller) i etykiet z klejem aktywowanym ciepłem. W TAKMA oferujemy kompletne zestawy linerless: drukarka + wałek + etykiety.',
+          'Tak — druk bez podkładu obsługują [ZD621d](/produkt/zebra-zd621d) w wersjach linerless i przemysłowa [ZT411](/produkt/zebra-zt411), w obu przypadkach tylko w druku termicznym. Etykiety linerless, np. Zebra ZeroLiner, mają na wierzchu warstwę silikonową i klej kauczukowy, a na rolce mieszczą do 50% więcej etykiet niż etykiety z podkładem. Druk bez podkładu nie zostawia odpadu z podkładu, ale wymaga specjalnego wałka dociskowego.',
       },
       {
         question: 'Jakie są alternatywy dla drukarek etykiet Zebra?',
         answer:
-          'Główni konkurenci to: Honeywell (seria PC23d/PC43d — biurkowe, PM45 — przemysłowe) — porównywalna jakość, ale słabszy ekosystem software i droższy serwis w Polsce. TSC (seria DA/TE — biurkowe, MH/MB — przemysłowe) — tańsze o 20–30%, ale krótszy cykl życia i ograniczone wsparcie. SATO (seria WS4/CL4NX+) — mocne w Japonii, słaba dystrybucja w Polsce. Dla firm z istniejącą flotą Zebra rekomendujemy pozostanie przy marce ze względu na kompatybilność materiałów, wspólne sterowniki i centralne zarządzanie Link-OS.',
+          'Najczęściej porównywane marki, które również mamy w ofercie, to [Honeywell](/drukarki-etykiet-honeywell) (biurkowe PC42e-t od 807 zł i PC45, przemysłowe PM45), [TSC](/drukarki-etykiet-tsc) (przemysłowe ML241P od 2 181 zł), [Brother](/drukarki-etykiet-brother) i [Citizen](/drukarki-etykiet-citizen). Dla firm z istniejącą flotą Zebra rekomendujemy pozostanie przy marce ze względu na kompatybilność materiałów, wspólne sterowniki i zarządzanie przez Link-OS.',
       },
       {
         question: 'Czy drukarki Zebra można kupić także w sklepie serwis-zebry.pl?',
@@ -299,27 +297,27 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         title: 'Drukarki etykiet Zebra vs Honeywell — które wybrać?',
         content:
-          'Zebra i Honeywell to dwaj najwięksi gracze na rynku drukarek etykiet. Zebra dominuje w segmencie enterprise z ponad 50% udziałem rynkowym, głównie dzięki platformie [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) i ekosystemowi PrintDNA. Honeywell ma mocną pozycję w sektorze przemysłowym (seria PM45, PX940) i oferuje drukarki z trwałą metalową konstrukcją. Kluczowe różnice: Zebra oferuje lepsze zdalne zarządzanie flotą (Link-OS vs Honeywell Operational Intelligence), szerszy wybór modeli w każdym segmencie cenowym i znacznie lepszą dostępność [serwisu w Polsce](https://www.serwis-zebry.pl/serwis-drukarek-zebra). Honeywell wyróżnia się w druku przemysłowym high-end (rozdzielczość 600 dpi) i w zintegrowanych rozwiązaniach z własnymi terminalami i skanerami. Pod względem TCO drukarki obu marek są porównywalne w segmencie premium. W segmencie ekonomicznym Zebra ([ZD220](/produkt/zebra-zd220d) od 639 zł) jest tańsza od Honeywell (PC23d od ok. 800 zł). Nasza rekomendacja: Zebra dla firm budujących flotę od zera lub rozbudowujących istniejącą infrastrukturę Zebra; Honeywell dla zakładów z istniejącym ekosystemem Honeywell.',
+          'Zebra i Honeywell to dwaj najwięksi gracze na rynku drukarek etykiet. Siłą Zebry jest platforma [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) i oprogramowanie Zebra DNA. Honeywell ma mocną pozycję w sektorze przemysłowym (seria PM45, PX940) i oferuje drukarki z trwałą metalową konstrukcją. Kluczowe różnice: Zebra oferuje lepsze zdalne zarządzanie flotą (Link-OS vs Honeywell Operational Intelligence), szerszy wybór modeli w każdym segmencie cenowym i znacznie lepszą dostępność [serwisu w Polsce](https://www.serwis-zebry.pl/serwis-drukarek-zebra). Honeywell wyróżnia się zintegrowanymi rozwiązaniami z własnymi terminalami i skanerami. Pod względem TCO drukarki obu marek są porównywalne w segmencie premium. W segmencie ekonomicznym Zebra jest tańsza: [ZD220t](/produkt/zebra-zd220t) od 650 zł wobec [Honeywell PC42e-t](/produkt/honeywell-pc42e-t) od 807 zł. Nasza rekomendacja: Zebra dla firm budujących flotę od zera lub rozbudowujących istniejącą infrastrukturę Zebra; Honeywell dla zakładów z istniejącym ekosystemem Honeywell.',
       },
       {
         title: 'Drukarki etykiet Zebra vs TSC — cena kontra ekosystem',
         content:
-          'TSC (Taiwan Semiconductor Corporation) to trzeci producent drukarek etykiet na świecie, pozycjonowany jako tańsza alternatywa dla Zebry. Drukarki TSC są średnio 20–30% tańsze: np. TSC DA220 (odpowiednik [ZD220](/produkt/zebra-zd220d)) kosztuje ok. 490 zł vs 639 zł za Zebrę. Jednak niższa cena zakupu nie zawsze oznacza niższy TCO. Głowice TSC mają krótszą żywotność (30–70 km vs 50–100 km u Zebry), sterowniki są mniej stabilne z polskimi systemami WMS, a serwis w Polsce ograniczony do kilku punktów. Zebra oferuje platformę [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) do zdalnego zarządzania, czego TSC nie ma (TSC Console jest znacznie prostszy). Dla pojedynczej drukarki w małej firmie TSC może być racjonalnym wyborem. Dla floty 5+ drukarek w środowisku produkcyjnym lub logistycznym Zebra szybko odrabia różnicę cenową niższymi kosztami serwisu, dłuższą żywotnością i lepszą integracją.',
+          'TSC Auto ID Technology to tajwański producent drukarek etykiet, pozycjonowany jako tańsza alternatywa dla Zebry. W TAKMA mamy przemysłowe drukarki TSC, np. [ML241P](/produkt/tsc-ml241p) od 2 181 zł. Przy wyborze między markami decyduje nie tylko cena zakupu: Zebra oferuje system [Link-OS](https://www.zebra.com/us/en/software/printer-software/link-os.html) do zdalnego zarządzania flotą, a TSC prostsze narzędzie TSC Console. Dla pojedynczej drukarki w małej firmie TSC może być racjonalnym wyborem. We flocie kilku drukarek w produkcji lub logistyce przewagą Zebry jest wspólne zarządzanie wszystkimi urządzeniami i ta sama platforma w drukarkach biurkowych, przemysłowych i mobilnych.',
       },
       {
         title: 'Drukarki biurkowe vs przemysłowe Zebra — kiedy przejść na wyższą klasę?',
         content:
-          'Granica między drukarką biurkową (ZD2xx–ZD6xx) a przemysłową (ZT1xx–ZT6xx) nie przebiega przy konkretnej liczbie etykiet, ale zależy od kombinacji czynników. Reguła praktyczna: jeśli drukujesz powyżej 1 000 etykiet dziennie, pracujesz na więcej niż jednej zmianie, potrzebujesz rolek o dużej średnicy (powyżej 127 mm) lub drukarka stoi na hali produkcyjnej/magazynowej (pył, wilgoć, temperatura) — czas na model przemysłowy. Drukarki biurkowe mają plastikową obudowę, mniejsze rolki (do 127 mm zewnętrznej średnicy), prędkość do 203 mm/s i głowice o żywotności 50–100 km. Przemysłowe oferują metalową konstrukcję, rolki do 203 mm, prędkość do 356 mm/s i głowice 150–300 km. Najczęstszy błąd: kupowanie najtańszej biurkowej [ZD220](/produkt/zebra-zd220d) do magazynu z 2 000 etykiet/dzień — głowica padnie po 4 miesiącach, czas druku będzie 3× dłuższy niż na [ZT231](/produkt/zebra-zt231), a drukarka nie wytrzyma warunków magazynowych.',
+          'Granica między drukarką biurkową (ZD2xx–ZD6xx) a przemysłową (ZT1xx–ZT6xx) nie przebiega przy konkretnej liczbie etykiet, ale zależy od kombinacji czynników. Reguła praktyczna: jeśli drukujesz powyżej 1 000 etykiet dziennie, pracujesz na więcej niż jednej zmianie, potrzebujesz rolek o dużej średnicy (powyżej 127 mm) lub drukarka stoi na hali produkcyjnej/magazynowej (pył, wilgoć, temperatura) — czas na model przemysłowy. Drukarki biurkowe mają plastikową obudowę, mniejsze rolki (do 127 mm zewnętrznej średnicy), prędkość do 203 mm/s. Przemysłowe oferują metalową konstrukcję, rolki do 203 mm i prędkość do 356 mm/s. Najczęstszy błąd: kupowanie najtańszej biurkowej [ZD220](/produkt/zebra-zd220d) do magazynu z 2 000 etykiet/dzień — druk potrwa trzy razy dłużej niż na [ZT231](/produkt/zebra-zt231), a biurkowa drukarka szybciej się zużyje w warunkach magazynowych.',
       },
       {
         title: 'Zebra ZD421 vs ZD621 — czy warto dopłacić za premium?',
         content:
-          '[ZD421](/produkt/zebra-zd421t) (od 1 472 zł) i [ZD621](/produkt/zebra-zd621t) (od 1 944 zł) to najlepiej sprzedające się biurkowe drukarki etykiet Zebra. Różnica 472 zł to zaledwie 32% ceny — ale co za nią dostajesz? ZD621 drukuje szybciej (203 vs 152 mm/s — o 33% więcej etykiet w tym samym czasie), ma kolorowy ekran LCD 2,6" zamiast wskaźników LED, wbudowany zegar czasu rzeczywistego (RTC) do stemplowania dat na etykietach bez komputera oraz opcję wydruku 300 dpi w modelu biurkowym z pełnym LCD. Konstrukcja ZD621 jest solidniejsza — podwójna ścianka obudowy, metalowy mechanizm głowicy. W praktyce: przy 500+ etykietach dziennie ZD621 oszczędza 15–20 minut pracy operatora dzięki szybszemu drukowi i łatwiejszej nawigacji po menu. Rekomendacja: ZD421 dla stanowisk z niskim wolumenem (do 500 etykiet/dzień) i ograniczonym budżetem. ZD621 dla stanowisk głównych z wyższym wolumenem i potrzebą informacji na wyświetlaczu. Pełne porównanie obu drukarek Zebra: [ZD421 vs ZD621](/poradnik/zebra-zd421-vs-zd621-porownanie).',
+          '[ZD421t](/produkt/zebra-zd421t) (od 1 676 zł) i [ZD621t](/produkt/zebra-zd621t) (od 2 213 zł) to najczęściej wybierane biurkowe drukarki etykiet Zebra. Różnica wynosi 537 zł. Co daje dopłata? ZD621 drukuje szybciej (203 wobec 152 mm/s, o 33% więcej etykiet w tym samym czasie), ma w standardzie Ethernet i RS-232, w części wersji kolorowy dotykowy ekran LCD 4,3" zamiast wskaźników LED, a w wersji termicznej ZD621d także druk bez podkładu. Przy 500 etykietach dziennie szybszy druk skraca pracę o 1–2 minuty, więc dopłata ma sens głównie tam, gdzie potrzebny jest wyświetlacz, Ethernet w standardzie albo druk bez podkładu. Rekomendacja: ZD421 dla stanowisk z niskim wolumenem (do 500 etykiet/dzień) i ograniczonym budżetem. ZD621 dla stanowisk głównych z wyższym wolumenem i potrzebą informacji na wyświetlaczu. Pełne porównanie obu drukarek Zebra: [ZD421 vs ZD621](/poradnik/zebra-zd421-vs-zd621-porownanie).',
       },
       {
         title: 'Druk termiczny vs termotransferowy w drukarkach Zebra',
         content:
-          'Wybór technologii druku to jedna z kluczowych decyzji przy zakupie drukarki Zebra. Druk termiczny bezpośredni (direct thermal, modele „d") wykorzystuje papier termoczuły, który ciemnieje pod wpływem ciepła głowicy — nie wymaga taśmy barwiącej, co obniża koszt eksploatacji o 30–40%. Wadą jest ograniczona trwałość wydruku (6–12 miesięcy) i wrażliwość na ciepło, UV i wilgoć. Druk termotransferowy (thermal transfer, modele „t") przenosi barwnik z taśmy (ribbon) na etykietę — wydruk jest trwały latami, odporny na chemikalia, temperaturę do 150°C (taśma żywiczna) i promieniowanie UV. Koszt taśmy to ok. 40–70 zł/miesiąc przy 500 etykietach/dzień. Zastosowania: etykiety kurierskie InPost/DPD/DHL, paragony, wagi → drukarki termiczne Zebra. Etykiety produktowe, magazynowe, na kable, chemikalia, żywność → termotransferowa. Modele Zebra z literą „t" (np. [ZD421t](/produkt/zebra-zd421t), [ZD621t](/produkt/zebra-zd621t)) obsługują OBE technologie (termiczną i TT), więc dają pełną elastyczność.',
+          'Wybór technologii druku to jedna z kluczowych decyzji przy zakupie drukarki Zebra. Druk termiczny bezpośredni (direct thermal, modele „d") wykorzystuje papier termoczuły, który ciemnieje pod wpływem ciepła głowicy — nie wymaga taśmy barwiącej, więc odpada jej koszt. Wadą jest ograniczona trwałość wydruku i wrażliwość na ciepło, UV i wilgoć. Druk termotransferowy (thermal transfer, modele „t") przenosi barwnik z taśmy (ribbon) na etykietę — wydruk jest trwały latami, odporny na chemikalia, temperaturę do 150°C (taśma żywiczna) i promieniowanie UV. Koszt taśmy to ok. 40–70 zł/miesiąc przy 500 etykietach/dzień. Zastosowania: etykiety kurierskie InPost/DPD/DHL, paragony, wagi → drukarki termiczne Zebra. Etykiety produktowe, magazynowe, na kable, chemikalia, żywność → termotransferowa. Modele Zebra z literą „t" (np. [ZD421t](/produkt/zebra-zd421t), [ZD621t](/produkt/zebra-zd621t)) obsługują obie technologie (termiczną i TT), więc dają pełną elastyczność.',
       },
     ],
     howToSteps: [
@@ -329,19 +327,19 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       },
       {
         name: 'Instalacja fizyczna i podłączenie',
-        text: 'Ustaw drukarkę na stabilnej, płaskiej powierzchni w odległości max 1,5 m od komputera/sieci. Podłącz kabel zasilający i interfejs komunikacyjny (USB, Ethernet lub skonfiguruj Wi-Fi przez USB Setup Wizard). Zainstaluj sterownik Zebra z pakietu ZebraDesigner lub użyj sterownika Windows Generic / CUPS dla Linux. Załaduj rolkę etykiet i (opcjonalnie) taśmę barwiącą.',
+        text: 'Ustaw drukarkę na stabilnej, płaskiej powierzchni. Podłącz kabel zasilający i interfejs komunikacyjny (USB, Ethernet albo Wi-Fi skonfigurowane w programie Zebra Setup Utilities). Zainstaluj sterownik ZDesigner dla Windows albo CUPS dla Linuksa. Załaduj rolkę etykiet i (opcjonalnie) taśmę barwiącą.',
       },
       {
         name: 'Konfiguracja i kalibracja',
-        text: 'Przeprowadź kalibrację czujnika mediów (automatyczną lub ręczną) — drukarka musi wykryć rozmiar etykiet i typ materiału (ciągły, z przerwami, z czarną znaczką). Ustaw prędkość druku, ciemność (darkness), tryb wydruku (tear-off, peel-off, cutter) i kierunek druku. W drukarce z LCD (ZD621, ZT411+) wszystko konfigurujesz z poziomu panelu. W modelach bez LCD — przez narzędzie Zebra Setup Utilities.',
+        text: 'Przeprowadź kalibrację czujnika mediów (automatyczną lub ręczną) — drukarka musi wykryć rozmiar etykiet i typ materiału (ciągły, z przerwami, z czarną znaczką). Ustaw prędkość druku, zaczernienie (darkness), tryb wydruku (tear-off, peel-off, cutter) i kierunek druku. W drukarce z LCD (ZD621, ZT411+) wszystko konfigurujesz z poziomu panelu. W modelach bez LCD — przez narzędzie Zebra Setup Utilities.',
       },
       {
         name: 'Integracja z systemem WMS/ERP',
-        text: 'Skonfiguruj szablony etykiet w języku ZPL II lub za pomocą wizualnego projektanta ZebraDesigner Pro. Zintegruj drukarki z systemem WMS/ERP przez sterownik druku, bezpośredni socket TCP (port 9100) lub REST API Link-OS. Przetestuj druk próbnych etykiet ze wszystkimi kodami kreskowymi (1D, 2D) i polskimi znakami. Zarejestruj drukarkę w konsoli Link-OS do zdalnego monitorowania.',
+        text: 'Skonfiguruj szablony etykiet w języku ZPL II lub za pomocą wizualnego projektanta ZebraDesigner Pro. Zintegruj drukarki z systemem WMS/ERP przez sterownik druku albo bezpośredni socket TCP (port 9100). Przetestuj druk próbnych etykiet ze wszystkimi kodami kreskowymi (1D, 2D) i polskimi znakami.',
       },
       {
         name: 'Szkolenie operatorów i plan konserwacji',
-        text: 'Przeszkol operatorów z wymiany etykiet i taśmy, podstawowej kalibracji, czyszczenia głowicy (co 1 000 etykiet alkoholem izopropylowym) i rozpoznawania typowych błędów (media out, ribbon out, head open). Ustal harmonogram konserwacji: czyszczenie wałka co tydzień, czujników co miesiąc, przegląd serwisowy co 12 miesięcy. Zarejestruj drukarkę w TAKMA — zapewniamy wsparcie techniczne, części zamienne i naprawy ekspresowe przez serwis-zebry.pl.',
+        text: 'Przeszkol operatorów z wymiany etykiet i taśmy, podstawowej kalibracji, czyszczenia głowicy (co 1 000 etykiet alkoholem izopropylowym) i rozpoznawania typowych błędów (media out, ribbon out, head open). Ustal harmonogram konserwacji: czyszczenie wałka co tydzień, czujników co miesiąc, przegląd serwisowy co 12 miesięcy. Wsparcie techniczne, części zamienne i naprawy zapewnia serwis-zebry.pl.',
       },
     ],
   },
