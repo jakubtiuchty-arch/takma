@@ -203,15 +203,30 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
     nazwa = []
   }
 
-  for (const l of linie) {
+  const liczba = (s?: string) => /^\d+$/.test((s || '').trim())
+  // Stałe wiersze pod każdą pozycją — żaden z nich nie jest już nazwą.
+  const metryczka = /^(Cena detaliczna|numer produktu producenta|Aktualny stan magazynowy|Prognozowana data dostawy):/i
+  // Nazwa handlowa zawija się w wąskiej kolumnie „Opis" (najdłuższy wiersz
+  // w ofertach ma 22 znaki), a opis techniczny pod nią idzie na całą
+  // szerokość strony.
+  const kolumnaOpisu = (t: string) => t.length > 0 && t.length <= 24 && !t.includes('\t') && !metryczka.test(t)
+
+  for (let i = 0; i < linie.length; i++) {
+    const l = linie[i]
     const c = l.split('\t')
     // Wiersz pozycji: Poz | Rewizja | Nr Jarltecha | opis | ilość | serwisy… |
     // cena jedn. | rabat% | suma. Kolumn serwisowych bywa różna liczba, więc
     // liczymy od końca — suma i rabat zawsze zamykają wiersz.
-    const naglowekPozycji =
-      c.length >= 8 && /^\d+$/.test(c[0].trim()) && /^\d+$/.test((c[1] || '').trim()) && /^\d+$/.test((c[4] || '').trim())
+    //
+    // Pierwszy wiersz opisu bywa osadzony punkt wyżej niż reszta pozycji i po
+    // zaokrągleniu współrzędnej trafia do osobnej linii nad nią. W wierszu
+    // pozycji brakuje wtedy kolumny opisu, a ilość stoi o pole wcześniej —
+    // bez tego przypadku pozycja zlewała się z poprzednią i ta dostawała jej
+    // numer katalogowy.
+    const zOpisem = c.length >= 8 && liczba(c[0]) && liczba(c[1]) && liczba(c[4])
+    const bezOpisu = !zOpisem && c.length >= 7 && liczba(c[0]) && liczba(c[1]) && liczba(c[3])
 
-    if (naglowekPozycji) {
+    if (zOpisem || bezOpisu) {
       zamknij()
       const rabatOstatni = /%$/.test(c[c.length - 2]?.trim() || '')
       const cena = c[c.length - (rabatOstatni ? 3 : 2)]?.trim() || ''
@@ -220,16 +235,19 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
       biezaca = {
         partNumber: c[2].trim(),
         minQty: 1,
-        maxQty: Number(c[4]) || undefined,
+        maxQty: Number(zOpisem ? c[4] : c[3]) || undefined,
         unitPrice: kwotaPl(cena),
         discountPct: Number.isFinite(rabat) ? rabat : undefined,
       }
-      nazwa = [c[3]?.trim() || '']
+      const poczatek = zOpisem ? c[3].trim() : kolumnaOpisu(linie[i - 1]?.trim() || '') ? linie[i - 1].trim() : ''
+      nazwa = poczatek ? [poczatek] : []
       nazwaOtwarta = true
       continue
     }
 
     if (!biezaca) continue
+
+    if (metryczka.test(l.trim())) nazwaOtwarta = false
 
     const pn = l.match(/numer produktu producenta:\s*(\S+)/i)?.[1]
     if (pn) { biezaca.partNumber = pn; continue }
@@ -237,17 +255,13 @@ export function parsujOferteJarltech(tekst: string): DaneKoncesji {
     const detaliczna = l.match(/Cena detaliczna:\s*([\d.,]+)/i)?.[1]
     if (detaliczna) { biezaca.listPrice = kwotaPl(detaliczna); continue }
 
-    // Nazwa handlowa łamie się na kilka wierszy i zawsze zaczyna się wielką
-    // literą. Pierwsza linia, która tak nie wygląda, to już opis techniczny
-    // („portable data collection device…") — od niej nazwy nie zbieramy, bo
-    // inaczej dokleiłby się cały akapit i stopka dokumentu.
+    // Pierwsza linia spoza kolumny opisu to już opis techniczny („portable
+    // data collection device…", „Rubber boot, fits for: …") — od niej nazwy
+    // nie zbieramy, bo inaczej dokleiłby się cały akapit i stopka dokumentu.
+    // Wielkość litery nic nie mówi: nazwa łamie się też w środku wyrazu
+    // („charging-/communic" → „ation station, USB").
     if (nazwaOtwarta) {
-      const t = l.trim()
-      // Nazwa łamie się w środku wyliczenia („…8-Pin, USB-C, BT, Wi-Fi," →
-      // „eSIM, 5G, NFC,"), więc po przecinku na końcu bierzemy też wiersz
-      // zaczynający się małą literą.
-      const dalszyCiag = /,$/.test(nazwa[nazwa.length - 1] || '')
-      if (!l.includes('\t') && nazwa.length < 10 && (/^[A-ZĄĆĘŁŃÓŚŹŻ]/.test(t) || dalszyCiag)) nazwa.push(t)
+      if (kolumnaOpisu(l.trim()) && nazwa.length < 10) nazwa.push(l.trim())
       else nazwaOtwarta = false
     }
   }
