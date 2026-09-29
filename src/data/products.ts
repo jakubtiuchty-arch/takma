@@ -61028,7 +61028,9 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA
         name: 'M3 SL20+ 8/128 GB',
         attributes: { 'RAM / Flash': '8/128 GB' },
         priceFrom: 2431.53,
-        availability: 'available' as const,
+        // Jarltech wycofał pozycję (API: „No active item"), a Ingram i BlueStar
+        // jej nie prowadzą — bez żywego stanu tabela i feedy biorą tę wartość.
+        availability: 'unavailable' as const,
       },
     ],
     specifications: [
