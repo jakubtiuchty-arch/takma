@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import type { AccessoryNavigation as Navigation } from '@/lib/accessory-navigation'
+import { getRequiredAccessoryConditionText } from '@/lib/required-accessory-copy'
 
 export default function AccessoryNavigation({ navigation, accessoryName }: { navigation?: Navigation; accessoryName: string }) {
   if (!navigation || (!navigation.models.length && !navigation.configurations.length)) return null
@@ -18,7 +19,7 @@ export default function AccessoryNavigation({ navigation, accessoryName }: { nav
                 {product.image && <Image src={product.image} alt="" width={96} height={96} sizes="96px" className="mb-3 h-24 w-24 self-center object-contain" />}
                 <span className="text-sm font-semibold leading-5 text-gray-900">{product.name}</span>
                 {product.partNumber && <span className="mt-1 text-xs text-gray-500">PN: {product.partNumber}</span>}
-                {product.condition && <span className="mt-2 text-sm leading-5 text-gray-700">Potrzebne do: {product.condition}</span>}
+                {product.condition && <span className="mt-2 text-sm leading-5 text-gray-700">{getRequiredAccessoryConditionText(product.condition)}</span>}
                 <span aria-hidden="true" className="mt-auto pt-3 text-sm font-semibold text-primary-600">Zobacz produkt →</span>
               </Link>
             </li>

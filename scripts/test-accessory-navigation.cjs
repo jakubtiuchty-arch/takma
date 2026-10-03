@@ -1,4 +1,10 @@
 const fs = require('fs'), ts = require('typescript'), assert = require('node:assert/strict');
+const Module = require('node:module');
+const originalLoad = Module._load;
+Module._load = function(request, parent, isMain) {
+  if (request === '@/lib/required-accessory-copy') return originalLoad.call(this, require.resolve('../src/lib/required-accessory-copy.ts'), parent, isMain);
+  return originalLoad.call(this, request, parent, isMain);
+};
 for (const extension of ['.ts', '.tsx']) require.extensions[extension] = (m, file) => m._compile(ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true } }).outputText, file);
 const { products } = require('../src/data/products.ts');
 const { buildAccessoryNavigation, accessoryModelIds } = require('../src/lib/accessory-navigation.ts');

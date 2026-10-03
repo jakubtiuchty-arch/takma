@@ -46,6 +46,7 @@ import RequiredAccessories, { getRequiredAccessories } from './RequiredAccessori
 import AccessoryDescriptionBlock from './AccessoryDescriptionBlock'
 import AccessoryNavigation from './AccessoryNavigation'
 import { accessoryModelIds, buildAccessoryNavigation } from '@/lib/accessory-navigation'
+import { removeRequiredAccessoryBlocks } from '@/lib/required-accessory-copy'
 import { BundleContents } from './BundleBox'
 import BundleBanner from './BundleBanner'
 import ProductVideos from '@/components/product/ProductVideos'
@@ -281,7 +282,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const requiredAccessories = getRequiredAccessories(product.description)
   const descriptionForDisplay = requiredAccessories.length
-    ? product.description.replace(/(?:## Co jest potrzebne do użycia\?\n\n)?\*\*Wymagane(?: dla [^*\n]+)? — sprzedawane osobno\*\*\n\n[\s\S]*?(?:Dokup tylko te elementy, których jeszcze nie masz|Dobierz przewód do urządzenia lub stacji|Elementy są sprzedawane osobno\. Dobierz je do opisanej konfiguracji)\./g, '').trim()
+    ? removeRequiredAccessoryBlocks(product.description)
     : product.description
 
   const category = getCategoryById(product.categoryId)

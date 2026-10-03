@@ -71,7 +71,7 @@ export default function RequiredAccessories({ items, productName }: { items: Ret
           <p className="mt-1 text-sm leading-5 text-gray-700">{copy.description}</p>
         </div>
       </div>
-      <RequiredAccessoryList items={items} />
+      <RequiredAccessoryList items={items} showCommonRequirement={items.some(item => !!item.condition)} />
     </section>
   )
 }

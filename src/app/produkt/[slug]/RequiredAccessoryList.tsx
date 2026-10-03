@@ -10,11 +10,11 @@ import { useStockData } from './StockInfo'
 import type { RequiredAccessoryItem } from './RequiredAccessories'
 import { getRequiredAccessoryConditionText } from '@/lib/required-accessory-copy'
 
-export default function RequiredAccessoryList({ items, idPrefix = 'required-stock' }: { items: RequiredAccessoryItem[]; idPrefix?: string }) {
+export default function RequiredAccessoryList({ items, idPrefix = 'required-stock', showCommonRequirement = false }: { items: RequiredAccessoryItem[]; idPrefix?: string; showCommonRequirement?: boolean }) {
   const { addItem, closeDrawer, openDrawer, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [announcement, setAnnouncement] = useState('')
-  const partNumbers = useMemo(() => items.flatMap(item => item.pn ? [item.pn] : []), [items])
+  const partNumbers = useMemo(() => Array.from(new Set(items.flatMap(item => item.pn && item.slug ? [item.pn] : []))), [items])
   const { stockData, loading } = useStockData(partNumbers)
 
   useEffect(() => setMounted(true), [])
@@ -63,17 +63,18 @@ export default function RequiredAccessoryList({ items, idPrefix = 'required-stoc
               <div className="min-w-0">
                 {item.slug ? <Link href={`/produkt/${item.slug}`} className="text-sm font-semibold leading-5 text-gray-900 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">{item.name}</Link> : <p className="text-sm font-semibold leading-5 text-gray-900">{item.name}</p>}
                 {item.pn && <p className="mt-1 break-all font-mono text-xs text-gray-500">{item.pn}</p>}
-                {item.condition && <p className="mt-2 text-xs leading-5 text-gray-700">{getRequiredAccessoryConditionText(item.condition)}</p>}
-                <p id={stockId} className="mt-1 text-xs" aria-busy={!ready}>
+                {item.condition ? <p className="mt-2 text-xs leading-5 text-gray-700">{getRequiredAccessoryConditionText(item.condition)}</p> : showCommonRequirement && <p className="mt-2 text-xs font-medium leading-5 text-gray-700">Ten element jest wymagany przy każdym sposobie użycia.</p>}
+                {!item.slug && <p className="mt-2 text-xs leading-5 text-gray-600">Dobierz element do posiadanego zestawu.</p>}
+                {item.slug && <p id={stockId} className="mt-1 text-xs" aria-busy={!ready}>
                   {!ready ? <span className="text-gray-500">Sprawdzanie dostępności…</span> : (
                     <>
                       <span className={available ? 'font-medium text-green-700' : 'font-medium text-red-700'}>{available ? 'Dostępny' : 'Niedostępny'}</span>
                       {live && quantity > 0 && <span className="text-gray-500"> · {quantity} szt.</span>}
                     </>
                   )}
-                </p>
+                </p>}
               </div>
-              <div className="col-start-2 flex flex-wrap items-center justify-between gap-2 sm:col-start-auto sm:flex-col sm:items-end">
+              {item.slug && <div className="col-start-2 flex flex-wrap items-center justify-between gap-2 sm:col-start-auto sm:flex-col sm:items-end">
                 <p className="whitespace-nowrap text-sm font-bold text-gray-950">
                   {price && price > 0 ? <>{price.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł <span className="text-xs font-normal text-gray-500">netto</span></> : <span className="text-xs font-normal text-gray-500">Cena na zapytanie</span>}
                 </p>
@@ -88,7 +89,7 @@ export default function RequiredAccessoryList({ items, idPrefix = 'required-stoc
                   {inCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
                   {inCart ? 'W koszyku' : 'Do koszyka'}
                 </button>
-              </div>
+              </div>}
             </li>
           )
         })}
