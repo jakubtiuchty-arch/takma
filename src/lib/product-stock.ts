@@ -57,7 +57,7 @@ export const getSchemaOffer = cache(async (
     const response = await lookupUnifiedStock([partNumber])
     const row = (response.body.results ?? [])[0]
     if (!row?.found || row.price == null || row.price <= 0) return undefined
-    return { price: row.price, availability: row.availability }
+    return { price: row.price, availability: row.stockPL + row.stockDE > 0 ? 'available' : 'unavailable' }
   } catch (error) {
     console.error('[schema] brak ceny na żywo dla', partNumber, error)
     return undefined
@@ -80,7 +80,7 @@ export const getSchemaOffers = cache(async (
     const response = await lookupUnifiedStock(partNumbers)
     for (const row of response.body.results ?? []) {
       if (!row?.found || row.price == null || row.price <= 0) continue
-      out.set(row.partNumber, { price: row.price, availability: row.availability })
+      out.set(row.partNumber, { price: row.price, availability: row.stockPL + row.stockDE > 0 ? 'available' : 'unavailable' })
     }
   } catch (error) {
     console.error('[schema] brak cen na żywo dla', partNumbers.join(', '), error)

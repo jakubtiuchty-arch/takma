@@ -8,6 +8,8 @@ import { SearchIcon, CloseIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import type { Product, Category } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackSearch } from '@/lib/ga-events'
+import { findSearchModel, modelProductIds } from '@/lib/model-search'
+import { findPartNumberSearch, productSearchPartNumbers } from '@/lib/part-number-search'
 
 interface SearchBarProps {
   fullWidth?: boolean
@@ -62,7 +64,7 @@ function wczytajDane(): Promise<SearchData> {
 // Buduj indeks wyszukiwania raz
 function buildSearchIndex({ products, manufacturers }: Katalog): IndexEntry[] {
   return products.map((p) => {
-    const partNumbers = (p.variants || []).map((v) => v.partNumber.toLowerCase())
+    const partNumbers = productSearchPartNumbers(p).map(pn => pn.toLowerCase())
     const variantNames = (p.variants || []).map((v) => v.name.toLowerCase())
     const specValues = p.specifications.map((s) => `${s.name} ${s.value}`.toLowerCase())
     const manufacturer = manufacturers.find((m) => m.id === p.manufacturerId)
@@ -131,6 +133,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
       const queryLower = q.toLowerCase().trim()
       const queryNormalized = queryLower.replace(/\s+/g, '')
       const queryTokens = queryLower.split(/\s+/).filter(Boolean)
+      const model = findSearchModel(q, katalog.products)
+      const modelIds = model ? modelProductIds(model) : undefined
+      const pnSearch = model ? undefined : findPartNumberSearch(q, katalog.products)
       const found: (SearchResult & { _score: number })[] = []
 
       // Szukaj w produktach
@@ -138,7 +143,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         const { product, searchText, partNumbers } = entry
 
         // Sprawdź czy wszystkie tokeny pasują
-        const allMatch = queryTokens.every((token) => searchText.includes(token))
+        const allMatch = modelIds ? modelIds.has(product.id) : pnSearch ? pnSearch.matches.has(product.id) : queryTokens.every((token) => searchText.includes(token))
         if (!allMatch) continue
 
         // Scoring — im wyższy, tym lepszy match
@@ -156,7 +161,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         if (idLower.includes(queryNormalized)) score += 50    // id contains
         if (shortDescLower.includes(queryNormalized)) score += 20  // shortDescription
         // PN match gets high score
-        const matchedPN = partNumbers.find((pn) => pn.includes(queryNormalized))
+        const matchedPN = pnSearch?.matches.get(product.id)?.[0] ?? partNumbers.find((pn) => pn.includes(queryNormalized))
         if (matchedPN) score += 90
 
         // Bonus: główne produkty (z wariantami) wyżej niż akcesoria
@@ -172,7 +177,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         // zamiast czystej strony produktu.
         const queryMatchesName =
           nameLower.includes(queryNormalized) || nameLower.replace(/\s+/g, '').includes(queryNormalized)
-        const matchedVariant = matchedPN && !queryMatchesName
+        const matchedVariant = pnSearch
+          ? product.variants?.find(v => v.partNumber === matchedPN)
+          : matchedPN && !queryMatchesName
           ? product.variants?.find((v) => v.partNumber.toLowerCase().includes(queryNormalized))
           : null
 
@@ -201,8 +208,8 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             href: variantHref,
           })
         } else {
-          // Dla produktu — weź PN pierwszego wariantu (do live price lookup)
-          const firstVariantPN = product.variants?.[0]?.partNumber
+          // Use the original PN spelling for stock lookup and the visible label.
+          const firstVariantPN = pnSearch ? matchedPN : productSearchPartNumbers(product)[0]
           const category = categories.find((c) => c.id === product.categoryId)
           found.push({
             _score: score,
@@ -224,6 +231,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
 
       // Szukaj w kategoriach
       for (const cat of categories) {
+        if (pnSearch) continue
         const catText = `${cat.name} ${cat.description}`.toLowerCase()
         if (queryTokens.every((t) => catText.includes(t))) {
           found.push({
@@ -480,6 +488,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                         <p className="text-xs text-gray-500 truncate mt-0.5">
                           {highlightMatch(result.subtitle, query)}
                         </p>
+                        {result.type === 'product' && result.partNumber && <p className="mt-1 text-xs font-medium text-gray-700">PN: {result.partNumber}</p>}
                       </div>
 
                       {/* Price — hidden on mobile */}

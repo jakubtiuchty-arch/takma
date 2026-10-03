@@ -21,8 +21,8 @@ interface VariantsTableProps {
 
 const availabilityConfig: Record<string, { label: string; variant: 'success' | 'warning' | 'danger' }> = {
   available: { label: 'Dostępny', variant: 'success' },
-  check: { label: 'Na zamówienie', variant: 'warning' },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' },
+  check: { label: 'Niedostępny', variant: 'danger' },
+  'on-order': { label: 'Niedostępny', variant: 'danger' },
   unavailable: { label: 'Niedostępny', variant: 'danger' },
 }
 

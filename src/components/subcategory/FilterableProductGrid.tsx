@@ -6,6 +6,7 @@ import type { ProductCardData } from '@/components/product/ProductGrid'
 import ProductGrid from '@/components/product/ProductGrid'
 import { FilterIcon, CloseIcon, ChevronDownIcon, HelpCircleIcon } from '@/components/ui/Icons'
 import { trackFilterUsed } from '@/lib/ga-events'
+import { readCatalogFilterState, writeCatalogFilterState } from '@/lib/catalog-filter-state'
 
 export interface FilterDefinition {
   specKey: string
@@ -17,6 +18,8 @@ export interface FilterDefinition {
   style?: 'checkbox' | 'dropdown'
   /** Łopatologiczne wyjaśnienie dla klienta — pojawia się w tooltipie po najechaniu na ikonę ? */
   description?: string
+  defaultCollapsed?: boolean
+  prominent?: boolean
   /**
    * Filtr pochodny (serializowalny, bo komponent jest kliencki): produkt dostaje wartość reguły, gdy spełnia jej warunki.
    * Produkt może mieć kilka wartości (np. Łączność: USB + Ethernet). Gdy `derived` jest ustawione, `specKey` służy tylko jako id.
@@ -116,7 +119,7 @@ function FilterInfoTooltip({ text }: { text: string }) {
 
   return (
     <>
-      {/* span z rolą button, nie <button>: nagłówek grupy filtrów sam jest <button>, a zagnieżdżony button psuje hydrację */}
+      {/* Osobny cel klawiatury i kliknięcia; ikona nie jest częścią przycisku nagłówka. */}
       <span
         ref={btnRef}
         role="button"
@@ -191,6 +194,9 @@ interface FilterableProductGridProps {
   listName?: string
   /** Ile kafli pokazać od razu (reszta po kliknięciu). Katalog ma setki pozycji. */
   maxInitial?: number
+  /** Optional persistent catalog filters; category pages retain their existing behavior. */
+  urlFilterPrefix?: string
+  loadingMessage?: string
 }
 
 function extractNumeric(val: string): number {
@@ -221,6 +227,8 @@ export default function FilterableProductGrid({
   showDualButtons = false,
   listName,
   maxInitial,
+  urlFilterPrefix,
+  loadingMessage,
 }: FilterableProductGridProps) {
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
 
@@ -237,10 +245,11 @@ export default function FilterableProductGrid({
   }, [])
   useEffect(() => () => { if (sidebarScrollTimer.current) clearTimeout(sidebarScrollTimer.current) }, [])
   const [expandedGroups, setExpandedGroups] = useState<Record<string, boolean>>(
-    () => Object.fromEntries(filters.map(f => [fId(f), true]))
+    () => Object.fromEntries(filters.map(f => [fId(f), !f.defaultCollapsed]))
   )
   const [showMobileFilters, setShowMobileFilters] = useState(false)
   const [sortowanie, setSortowanie] = useState<'domyslne' | 'cena-rosnaco' | 'cena-malejaco' | 'nazwa'>('domyslne')
+  const [urlReady, setUrlReady] = useState(false)
 
   // Mapa filter ID → transform
   const filterLookup = useMemo(
@@ -268,6 +277,31 @@ export default function FilterableProductGrid({
     }
     return result
   }, [products, filters])
+
+  const urlOptions = useRef(allFilterOptions)
+  // Authored options remain valid before live prices/stock arrive, even at zero results.
+  urlOptions.current = Object.fromEntries(filters.map(f => [fId(f), f.derived ? Array.from(new Set(f.derived.map(r => r.value))) : allFilterOptions[fId(f)] ?? []]))
+  useEffect(() => {
+    if (!urlFilterPrefix) return
+    const restore = () => {
+      const state = readCatalogFilterState(window.location.search, urlOptions.current, urlFilterPrefix)
+      setActiveFilters(state.selected)
+      setSortowanie(state.sort)
+      setUrlReady(true)
+    }
+    restore()
+    window.addEventListener('popstate', restore)
+    return () => window.removeEventListener('popstate', restore)
+  }, [urlFilterPrefix])
+
+  useEffect(() => {
+    if (!urlFilterPrefix || !urlReady) return
+    const query = writeCatalogFilterState(window.location.search, activeFilters, sortowanie, urlFilterPrefix)
+    const url = window.location.pathname + (query ? '?' + query : '') + window.location.hash
+    if (url !== window.location.pathname + window.location.search + window.location.hash) {
+      window.history.replaceState(window.history.state, '', url)
+    }
+  }, [activeFilters, sortowanie, urlFilterPrefix, urlReady])
 
   // Opcje z cross-filtrowaniem — dla dropdownów: tylko wartości dostępne przy aktywnych INNYCH filtrach
   const filteredOptions = useMemo(() => {
@@ -444,31 +478,38 @@ export default function FilterableProductGrid({
             const isDropdown = filter.style === 'dropdown'
             // Dropdowny: cross-filtrowane opcje; Checkboxy: pełna lista (count robi cross-filtrowanie)
             const options = isDropdown ? filteredOptions[id] : allFilterOptions[id]
-            if (!options || options.length <= 1) return null
             const selected = activeFilters[id] || new Set()
+            if (!options?.length && !selected.size) return null
+            if (urlFilterPrefix && !filteredOptions[id]?.length && !selected.size) return null
+            // A single feature is useful when only some products have it (e.g. fast charging).
+            const baseOptions = allFilterOptions[id] ?? []
+            if (baseOptions.length === 1 && !selected.size && products.every(p => productValues(p, filter).includes(baseOptions[0]))) return null
+            const visibleOptions = Array.from(new Set([...(options ?? []), ...Array.from(selected)]))
 
             // ── Dropdown ──
             if (isDropdown) {
               const currentValue = selected.size > 0 ? Array.from(selected)[0] : ''
               const isActive = currentValue !== ''
               return (
-                <div key={id}>
-                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5 flex items-center gap-1.5">
+                <div key={id} className={filter.prominent ? 'p-3 bg-primary-50 border-2 border-primary-300 rounded-xl' : undefined}>
+                  <span className={`${filter.prominent ? 'text-sm font-bold text-primary-800 mb-2' : 'text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5'} flex items-center gap-1.5`}>
                     {filter.label}
                     {filter.description && <FilterInfoTooltip text={filter.description} />}
                   </span>
                   <select
+                    aria-label={filter.label}
                     value={currentValue}
                     onChange={e => setDropdownFilter(id, e.target.value)}
-                    className={`w-full px-3 py-2 border rounded-lg text-sm font-medium transition-colors appearance-none cursor-pointer pr-8 outline-none focus:outline-none focus:ring-0 ${
+                    className={`w-full px-3 border rounded-lg text-sm transition-colors appearance-none cursor-pointer pr-8 outline-none ${filter.prominent ? 'py-3 font-semibold focus:ring-2 focus:ring-primary-300' : 'py-2 font-medium focus:outline-none focus:ring-0'} ${
                       isActive
                         ? 'bg-primary-50 border-primary-400 text-primary-700'
+                        : filter.prominent ? 'bg-white border-primary-300 text-gray-900 hover:border-primary-500'
                         : 'bg-white border-gray-200 text-gray-700 hover:border-gray-300'
                     }`}
                     style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='${isActive ? '%234f46e5' : '%236b7280'}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 8px center' }}
                   >
                     <option value="">Wszystkie</option>
-                    {options.map(opt => (
+                    {visibleOptions.map(opt => (
                       <option key={opt} value={opt}>{filter.displayMap?.[opt] || opt}</option>
                     ))}
                   </select>
@@ -477,16 +518,18 @@ export default function FilterableProductGrid({
             }
 
             // ── Checkbox (accordion) ──
-            const isExpanded = expandedGroups[id] !== false
+            const isExpanded = expandedGroups[id] ?? !filter.defaultCollapsed
             return (
               <div key={id} className="border border-gray-200 rounded-lg overflow-hidden">
+                <div className="flex items-center pr-3 hover:bg-gray-50 transition-colors">
                 <button
+                  aria-label={filter.label}
+                  aria-expanded={isExpanded}
                   onClick={() => toggleGroup(id)}
                   className="flex items-center justify-between gap-2 w-full px-3 py-2.5 text-sm font-medium text-gray-900 text-left hover:bg-gray-50 transition-colors"
                 >
                   <span className="flex items-center gap-1.5 min-w-0 flex-wrap">
                     {filter.label}
-                    {filter.description && <FilterInfoTooltip text={filter.description} />}
                     {selected.size > 0 && (
                       <span className="bg-primary-600 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center leading-none">
                         {selected.size}
@@ -498,10 +541,12 @@ export default function FilterableProductGrid({
                     className={`text-gray-400 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
                   />
                 </button>
+                {filter.description && <FilterInfoTooltip text={filter.description} />}
+                </div>
 
                 {isExpanded && (
                   <div className="px-3 pb-3 space-y-1">
-                    {options.map(value => {
+                    {visibleOptions.map(value => {
                       const isSelected = selected.has(value)
                       const displayLabel = filter.displayMap?.[value] || value
 
@@ -623,6 +668,7 @@ export default function FilterableProductGrid({
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 sticky top-0 bg-white">
                 <span className="font-semibold text-gray-900">Filtry i kategorie</span>
                 <button
+                  aria-label="Zamknij filtry"
                   onClick={() => setShowMobileFilters(false)}
                   className="p-1.5 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
                 >
@@ -647,6 +693,7 @@ export default function FilterableProductGrid({
 
       {/* Siatka produktów */}
       <div className="flex-1 min-w-0">
+        {loadingMessage && <p role="status" className="mb-3 text-sm text-gray-500">{loadingMessage}</p>}
         <div className="flex items-center justify-between gap-3 mb-4">
           <span className="text-sm text-gray-500">
             {sortedProducts.length} {productWord}

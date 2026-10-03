@@ -125,9 +125,17 @@ export async function lookupUnifiedStock(
     const freshCache = new Map<string, typeof cachedRows[0]>()
     for (const row of cachedRows) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
-      if (age >= CACHE_MAX_AGE_MS) continue
+      if (age >= CACHE_MAX_AGE_MS || (!row.found && age >= 5 * 60 * 1000)) continue
+
+      // Ponownie porównaj rażąco zawyżoną cenę z ceną katalogową i źródłami.
+      const catalogPrice = getCatalogNetPrice(row.partNumber)
+      if (catalogPrice && row.price && row.price > catalogPrice * 3) continue
 
       const j = jarltechCacheMap.get(row.partNumber)
+      // Potwierdzony wpis Jarltech musi zastąpić wcześniejsze nieznalezienie,
+      // również przy zerowym zapasie i oczekiwanej dostawie.
+      if (j?.found && !row.found) continue
+
       // Override gdy Jarltech ma więcej inventory niż StockCache.stockDE.
       // Usunęlismy warunek `j.lastSync > row.lastSync` — jeśli jarltech-sync nie zaktualizował
       // wpisu (np. padł w środku batcha), ale poprzedni sync miał prawdziwe dane, nadal lepiej
@@ -178,22 +186,27 @@ export async function lookupUnifiedStock(
         ])
 
         for (const item of liveData) {
-          if (!item.found || item.inventory <= 0) {
+          if (!item.found) {
             liveFallbackResults.push({ pn: item.partNumber, overridden: false, inventory: item.inventory })
             continue
           }
           const c = freshCache.get(item.partNumber)
           if (!c) continue
           const newStockDE = Math.max(c.stockDE, item.inventory)
-          const newTotalStock = c.stockPL + newStockDE + c.inDelivery
+          const inDelivery = Math.max(c.inDelivery, item.incomingQty)
+          const newTotalStock = c.stockPL + newStockDE + inDelivery
+          const margin = isRibbonPN(item.partNumber) ? RIBBON_MARGIN : isLabelPN(item.partNumber) ? LABEL_MARGIN : MARGIN
+          const price = c.price ?? (item.unitPrice ? Math.round(item.unitPrice * await getEurPlnRate() * margin * 100) / 100 : null)
           freshCache.set(item.partNumber, {
             ...c,
+            found: true,
+            price,
+            priceBrutto: price == null ? null : Math.round(price * VAT * 100) / 100,
             stockDE: newStockDE,
+            inDelivery,
             totalStock: newTotalStock,
-            availability: c.stockPL > 0 ? c.availability : 'available',
-            deliveryText: c.stockPL > 0
-              ? c.deliveryText
-              : `Dostepny — wysylka 2-3 dni (${newStockDE} szt.)`,
+            availability: c.stockPL > 0 || newStockDE > 0 ? 'available' : inDelivery > 0 ? 'on-order' : 'unavailable',
+            deliveryText: c.stockPL > 0 ? c.deliveryText : item.deliveryText,
             lastSync: new Date(),
           })
           overriddenPNs.push(item.partNumber)
@@ -266,7 +279,11 @@ export async function lookupUnifiedStock(
             return prisma.stockCache.update({
               where: { partNumber: pn },
               data: {
+                found: c.found,
+                price: c.price,
+                priceBrutto: c.priceBrutto,
                 stockDE: c.stockDE,
+                inDelivery: c.inDelivery,
                 totalStock: c.totalStock,
                 availability: c.availability,
                 deliveryText: c.deliveryText,
@@ -458,7 +475,11 @@ export async function lookupUnifiedStock(
         bluestar: bluestarPLN,
         jarltech: jarltechPLN,
       }, getCatalogNetPrice(pn))
-      const bestRawPricePLN = selection.best
+      const catalogPrice = getCatalogNetPrice(pn)
+      // Jedno błędne źródło nie może zastąpić zweryfikowanej ceny katalogowej.
+      const bestRawPricePLN = catalogPrice && selection.best && selection.best > catalogPrice * 3
+        ? undefined
+        : selection.best
       if (selection.ingramSuspect) {
         console.warn(`[stock] ${pn}: ${selection.rejected.map((r) => `${r.source} ${r.reason}`).join('; ')}`)
       }

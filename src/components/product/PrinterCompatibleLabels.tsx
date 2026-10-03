@@ -71,7 +71,7 @@ function getVariantData(spec: { productId: string; partNumber: string }): Varian
 
 const AVAILABILITY_CONFIG = {
   available: { label: 'Dostępny', variant: 'success' as const },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+  'on-order': { label: 'Niedostępny', variant: 'danger' as const },
   unavailable: { label: 'Niedostępny', variant: 'danger' as const },
 }
 

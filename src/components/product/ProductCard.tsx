@@ -33,6 +33,7 @@ function getPartNumbers(product: ProductCardData): string[] {
  * od razu widzi wszystkie 200+ wariantów rozmiarowych z filtrem szerokość/wysokość/gilza.
  */
 function getProductHref(product: ProductCardData): string {
+  if (product.href) return product.href
   if (product.subcategoryIds?.includes('etykiety-termiczne')) {
     const seriesSlug = product.slug.replace(/^zebra-/, '')
     return `/etykiety-termiczne-zebra/serie/${seriesSlug}`
@@ -65,7 +66,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const liveStatus = anyFound ? (() => {
     for (const pn of partNumbers) {
       const stock = stockData.get(pn)
-      if (stock?.found && stock.totalStock > 0) return 'available' as const
+      if (stock?.found && stock.stockPL + stock.stockDE > 0) return 'available' as const
     }
     return 'unavailable' as const
   })() : null
@@ -89,7 +90,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
     const posortuj = (lista: typeof znalezione) => lista.map(s => s.price!).sort((a, b) => a - b)
-    const naStanie = posortuj(znalezione.filter(s => s.totalStock > 0))
+    const naStanie = posortuj(znalezione.filter(s => s.stockPL + s.stockDE > 0))
     return naStanie[0] ?? posortuj(znalezione)[0] ?? staticPrice
   }, [stockLoading, anyFound, partNumbers, stockData, staticPrice])
 
@@ -112,12 +113,12 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   })()
 
   const liveAvailability = liveStatus ?? product.availability
-  // 'on-order' jest zamawialne (przedsprzedaż) — dzwonek tylko dla twardego braku
-  const isUnavailable = liveAvailability === 'unavailable'
+  // Brak stanu magazynowego pokazujemy jako niedostępność.
+  const isUnavailable = liveAvailability !== 'available'
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const },
-    'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+    'on-order': { label: 'Niedostępny', variant: 'danger' as const },
     unavailable: { label: 'Niedostępny', variant: 'danger' as const },
   }
 
@@ -211,7 +212,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
     const availDot = {
       available: 'bg-green-500',
-      'on-order': 'bg-yellow-500',
+      'on-order': 'bg-red-500',
       unavailable: 'bg-red-400',
     }
 

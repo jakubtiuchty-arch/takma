@@ -65,4 +65,5 @@ ET401_acc/
 
 # Wyniki pracy skryptów
 /output/
+/work/
 __pycache__/

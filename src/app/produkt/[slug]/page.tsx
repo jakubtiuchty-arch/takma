@@ -42,6 +42,10 @@ import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariant
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
+import RequiredAccessories, { getRequiredAccessories } from './RequiredAccessories'
+import AccessoryDescriptionBlock from './AccessoryDescriptionBlock'
+import AccessoryNavigation from './AccessoryNavigation'
+import { accessoryModelIds, buildAccessoryNavigation } from '@/lib/accessory-navigation'
 import { BundleContents } from './BundleBox'
 import BundleBanner from './BundleBanner'
 import ProductVideos from '@/components/product/ProductVideos'
@@ -73,6 +77,8 @@ interface ProductPageProps {
   params: Promise<{ slug: string }>
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
+
+const accessoryNavigation = buildAccessoryNavigation(products)
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
 function pickVariant(product: ReturnType<typeof getProductBySlug>, pn: string | string[] | undefined) {
@@ -273,6 +279,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     }
   }
 
+  const requiredAccessories = getRequiredAccessories(product.description)
+  const descriptionForDisplay = requiredAccessories.length
+    ? product.description.replace(/(?:## Co jest potrzebne do użycia\?\n\n)?\*\*Wymagane(?: dla [^*\n]+)? — sprzedawane osobno\*\*\n\n[\s\S]*?(?:Dokup tylko te elementy, których jeszcze nie masz|Dobierz przewód do urządzenia lub stacji|Elementy są sprzedawane osobno\. Dobierz je do opisanej konfiguracji)\./g, '').trim()
+    : product.description
+
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const subcats = getSubcategoriesForProduct(product)
@@ -285,7 +296,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const, description: 'Produkt dostępny od ręki' },
-    'on-order': { label: 'Na zamówienie', variant: 'warning' as const, description: 'Czas realizacji: 7-14 dni' },
+    'on-order': { label: 'Niedostępny', variant: 'danger' as const, description: 'Produkt chwilowo niedostępny' },
     unavailable: { label: 'Niedostępny', variant: 'danger' as const, description: 'Produkt chwilowo niedostępny' },
   }
 
@@ -402,7 +413,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // JSON-LD: Product schema
   const availabilitySchemaMap = {
     available: 'https://schema.org/InStock',
-    'on-order': 'https://schema.org/PreOrder',
+    'on-order': 'https://schema.org/OutOfStock',
     unavailable: 'https://schema.org/OutOfStock',
   }
 
@@ -445,8 +456,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     'NPU/AI', 'System operacyjny', '5G',
   ]
 
+  const mcAccessoryModels = products.filter(p => accessoryModelIds.includes(p.id) && p.relatedAccessories?.includes(product.id))
+  const mcAccessoryPropertyKeys = mcAccessoryModels.length > 0 ? [
+    'Kompatybilność', 'Zawartość zestawu', 'Elementy poza zestawem',
+    'Komunikacja', 'Ładowanie', 'Liczba terminali', 'Liczba zapasowych baterii',
+    'Pojemność', 'Zasilanie', 'Montaż', 'Wariant', 'Układ', 'Liczba klawiszy',
+  ] : []
   const dynamicAdditionalProps = product.specifications
-    .filter(s => additionalPropertyKeys.some(key => s.name === key))
+    .filter(s => [...additionalPropertyKeys, ...mcAccessoryPropertyKeys].includes(s.name))
     .map(s => ({ '@type': 'PropertyValue' as const, name: s.name, value: s.value }))
 
   // Build isRelatedTo from accessories and compatible labels
@@ -580,6 +597,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     category: category?.name,
     sku: magicardOffer?.sku || schemaPartNumber,
     mpn: magicardOffer?.sku || schemaPartNumber,
+    ...(mcAccessoryModels.length > 0 ? {
+      isAccessoryOrSparePartFor: mcAccessoryModels.map(p => ({ '@id': `https://www.takma.com.pl/produkt/${p.slug}` })),
+    } : {}),
     datePublished: product.createdAt,
     dateModified: product.updatedAt || product.createdAt,
     inLanguage: 'pl-PL',
@@ -1004,6 +1024,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Program testów DS3678 — tylko 5 wariantów tej rodziny, znika po zebraniu puli */}
             <Ds3678DemoBanner productSlug={product.slug} />
+
+            <RequiredAccessories items={requiredAccessories} productName={product.name} />
 
             {/* CTA — bezpłatne oprogramowanie ma „Pobierz” zamiast koszyka */}
             <div className="space-y-3">
@@ -1467,7 +1489,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 // Fallback — standardowy renderer dla pozostałych produktów
                 return (
                   <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
-                    {product.description.split('\n\n').map((paragraph, i) => {
+                    {descriptionForDisplay.split('\n\n').filter(paragraph => paragraph.trim()).map((paragraph, i) => {
                   const trimmed = paragraph.trim()
 
                   // ## Heading → <h3>
@@ -1476,11 +1498,37 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     return <h3 key={i} className="text-lg font-bold text-gray-900 mt-8 mb-3">{headingMatch[1]}</h3>
                   }
 
+                  if (product.categoryId === 'akcesoria' && /\]\(\/produkt\//.test(trimmed)) {
+                    return <AccessoryDescriptionBlock key={i} text={trimmed} blockId={`description-stock-${i}`} excludedIds={requiredAccessories.map(item => item.id)} />
+                  }
+
                   // Lista bullet: każda linia zaczyna się od "- " → <ul>
                   if (trimmed.split('\n').every(l => l.trim().startsWith('- '))) {
                     const items = trimmed.split('\n').map(l => l.replace(/^\s*-\s*/, ''))
+                    const elementLinks = items.map(item => item.match(/^\[([^\]]+)\]\((\/produkt\/[^)]+)\)$/))
+                    if (elementLinks.every(Boolean)) {
+                      return (
+                        <ul key={i} className="not-prose grid gap-3 sm:grid-cols-2 mb-5 list-none p-0">
+                          {elementLinks.map((match, j) => {
+                            const [, label, href] = match!
+                            const pnMatch = label.match(/^(.*) \(([^)]+)\)$/)
+                            return (
+                              <li key={j}>
+                                <Link href={href} className="flex h-full items-center justify-between gap-4 rounded-xl border border-gray-200 bg-gray-50 p-4 hover:border-primary-400 hover:bg-white transition-colors">
+                                  <span className="min-w-0">
+                                    <span className="block font-semibold text-gray-900">{pnMatch?.[1] ?? label}</span>
+                                    {pnMatch && <span className="mt-1 block text-xs font-mono text-gray-500 break-all">PN: {pnMatch[2]}</span>}
+                                  </span>
+                                  <span className="shrink-0 text-sm font-semibold text-primary-600">Zobacz →</span>
+                                </Link>
+                              </li>
+                            )
+                          })}
+                        </ul>
+                      )
+                    }
                     return (
-                      <ul key={i} className="list-disc pl-5 space-y-1.5 mb-4 text-gray-700 marker:text-gray-400">
+                      <ul key={i} className="list-disc pl-5 space-y-3 mb-4 text-gray-700 marker:text-gray-400">
                         {items.map((item, j) => (
                           <li key={j}><LinkedText text={item} /></li>
                         ))}
@@ -1518,6 +1566,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 </span>
               </div>
             </section>
+
+            {/* Powiązania akcesorium: zgodne urządzenia i ograniczona lista konfiguracji. */}
+            {product.categoryId === 'akcesoria' && <AccessoryNavigation navigation={accessoryNavigation.get(product.id)} accessoryName={product.name} />}
 
             {/* Drukarki kart Magicard: bezpłatny program Magicard HUB do pobrania z naszej strony */}
             {product.manufacturerId === 'magicard' && product.categoryId === 'drukarki-kart' && (
