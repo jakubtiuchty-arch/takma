@@ -3,6 +3,7 @@ for (const ext of ['.ts', '.tsx']) require.extensions[ext] = (m, file) => m._com
 const originalLoad = Module._load;
 Module._load = function(id, parent, main) {
   if (id === '@/data/products') return originalLoad.call(this, path.resolve('src/data/products.ts'), parent, main);
+  if (id === '@/lib/required-accessory-copy') return originalLoad.call(this, path.resolve('src/lib/required-accessory-copy.ts'), parent, main);
   if (id === './RequiredAccessoryList') return { default: () => null };
   return originalLoad.call(this, id, parent, main);
 };
@@ -71,4 +72,29 @@ assert(!android.relatedAccessories.includes('zebra-battery-et6xw-36wh'));
 assert(!windows.relatedAccessories.includes('zebra-battery-et6xa-36wh'));
 assert(!byId.has('zebra-tc53-50-16000-671r'));
 assert(!byId.has('zebra-tc53-sg-ngtc5-scrnp-450'));
+// Conditional requirements must not imply that every use needs an extra purchase.
+const { createElement } = require('react');
+const { renderToStaticMarkup } = require('react-dom/server');
+const RequiredAccessories = require('../src/app/produkt/[slug]/RequiredAccessories.tsx').default;
+const { getRequiredAccessoryConditionText } = require('../src/lib/required-accessory-copy.ts');
+const requiredHtml = p => renderToStaticMarkup(createElement(RequiredAccessories, { items: getRequiredAccessories(p.description), productName: p.name }));
+const cableHtml = requiredHtml(byId.get('zebra-cable-usbc-et4x'));
+assert(cableHtml.includes('Do zasilania stacji lub ładowarki potrzebujesz zasilacza.'));
+assert(cableHtml.includes('Przy połączeniu przewodu z komputerem nie jest potrzebny.'));
+assert(!cableHtml.includes('Aby korzystać z tego produktu'));
+const beltHolster = products.find(p => p.description.includes('**Wymagane dla noszenia przy biodrze'));
+assert(requiredHtml(beltHolster).includes('Dobierz elementy do sposobu użycia.'));
+assert(!requiredHtml(beltHolster).includes('potrzebujesz poniższych elementów'));
+const usbDock = products.find(p => p.description.includes('**Wymagane — sprzedawane osobno**') && p.description.includes('**Wymagane dla połączenia USB'));
+assert(requiredHtml(usbDock).includes('Sprawdź, których elementów potrzebujesz.'));
+const plainDock = byId.get('zebra-tc201-crd-tcvtb-1d');
+assert(requiredHtml(plainDock).includes('Aby korzystać ze stacji, potrzebujesz poniższych elementów.'));
+for (const p of products) for (const item of getRequiredAccessories(p.description)) {
+  if (!item.condition) continue;
+  const sentence = getRequiredAccessoryConditionText(item.condition);
+  assert(/^[A-ZŻŹĆĄŚĘŁÓŃ].*\.$/.test(sentence), p.id + ': complete condition sentence');
+  for (const model of item.condition.match(/(?:TC|MC|ET)\d+|CRDCUP-[A-Z0-9-]+/g) ?? []) {
+    assert(sentence.includes(model), p.id + ': retain technical condition ' + model);
+  }
+}
 console.log(`PASS: ${accessoryModelIds.length} devices, ${scoped.size} unique accessories, ${links} links, ${requirements} requirements, 4 consolidated PN pairs, images, SEO, encoding and exact PN search.`);

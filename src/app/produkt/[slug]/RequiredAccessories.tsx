@@ -1,5 +1,6 @@
 import { products } from '@/data/products'
 import RequiredAccessoryList from './RequiredAccessoryList'
+import { getRequiredAccessoriesCopy } from '@/lib/required-accessory-copy'
 
 export interface RequiredAccessoryItem {
   id: string
@@ -60,13 +61,14 @@ export default function RequiredAccessories({ items, productName }: { items: Ret
         : /^Kabura\b/i.test(productName)
           ? 'z kabury'
           : /^Uchwyt\b/i.test(productName) ? 'z uchwytu' : 'z tego produktu'
+  const copy = getRequiredAccessoriesCopy(items.map(item => item.condition), subject)
   return (
     <section id="wymagane-elementy" aria-labelledby="wymagane-elementy-heading" className="my-5 overflow-hidden rounded-2xl border-2 border-amber-300 bg-white scroll-mt-24">
       <div className="flex items-start gap-3 bg-amber-50 px-4 py-4 sm:px-5">
         <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-200 text-lg font-bold text-amber-950">!</span>
         <div>
-          <h2 id="wymagane-elementy-heading" className="text-base font-bold text-gray-950">Aby korzystać {subject}, potrzebujesz poniższych elementów.</h2>
-          <p className="mt-1 text-sm leading-5 text-gray-700">Elementy te nie są dołączone do zestawu.{items.some(item => item.condition) && ' Dobierz je do modelu lub konfiguracji.'}</p>
+          <h2 id="wymagane-elementy-heading" className="text-base font-bold text-gray-950">{copy.heading}</h2>
+          <p className="mt-1 text-sm leading-5 text-gray-700">{copy.description}</p>
         </div>
       </div>
       <RequiredAccessoryList items={items} />
