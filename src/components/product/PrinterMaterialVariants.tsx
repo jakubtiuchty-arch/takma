@@ -37,7 +37,7 @@ interface Pick { product: Product; variant: ProductVariant; title: string }
 
 const AVAIL = {
   available: { label: 'Dostępny', variant: 'success' as const },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+  'on-order': { label: 'Niedostępny', variant: 'danger' as const },
   unavailable: { label: 'Niedostępny', variant: 'danger' as const },
 }
 

@@ -1,0 +1,58 @@
+const fs = require('fs'), ts = require('typescript'), assert = require('node:assert/strict');
+require.extensions['.ts'] = (m, file) => m._compile(ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText, file);
+const { products, filterProducts } = require('../src/data/products.ts');
+const { findSearchModel } = require('../src/lib/model-search.ts');
+const { getCatalogFacets, buildAccessoryFilters } = require('../src/lib/catalog-filters.ts');
+const { readCatalogFilterState, writeCatalogFilterState } = require('../src/lib/catalog-filter-state.ts');
+const { withLiveCatalogData } = require('../src/lib/catalog-live.ts');
+const pn = p => p.specifications.find(s => s.name === 'Part Number')?.value;
+const byPn = value => { const p = products.find(p => pn(p) === value); assert(p, value); return p; };
+const model = findSearchModel('tc501', products);
+const list = filterProducts({ search: 'tc501' });
+assert.equal(list.length, 102);
+assert.equal(list[0].id, 'zebra-tc501');
+assert(!list.some(p => p.id === 'zebra-tc701'));
+assert.deepEqual(new Set(list.slice(1).map(p => p.id)), new Set(model.relatedAccessories));
+for (const q of ['TC501', ' tc501 ', 'Zebra TC501', 'TC 501']) assert.deepEqual(filterProducts({ search: q }).map(p => p.id), list.map(p => p.id));
+assert(filterProducts({ search: 'RAM-GDS-CHARGE-V3C-3U' }).some(p => pn(p) === 'RAM-GDS-CHARGE-V3C-3U'));
+for (const id of ['zebra-tc22', 'zebra-tc27', 'zebra-tc53e', 'zebra-mc3400', 'zebra-mc9450', 'zebra-et65', 'zebra-tc701']) {
+ const device = products.find(p => p.id === id); const results = filterProducts({search: device.name});
+ assert.equal(results[0].id, id); assert(results.every(p => p.id === id || device.relatedAccessories.includes(p.id) || device.compatibleAccessories.includes(p.id)));
+}
+const filters = buildAccessoryFilters(list, products, model);
+const apply = selected => list.filter(p => Object.entries(selected).every(([key,value]) => filters.find(f => f.specKey === key).derived.some(rule => rule.value === value && rule.slugs.includes(p.slug))));
+const ethernet5 = apply({'katalog-rodzaj-akcesorium':'Stacje biurkowe', 'katalog-funkcja-stacji':'Ethernet', 'katalog-liczba-terminali':'5', 'katalog-oslona-terminala':'Do terminala z osłoną', 'katalog-zasilacz-w-zestawie':'Z zasilaczem'});
+assert.deepEqual(ethernet5.map(pn), ['CRD-TC5AB-5SE5D-1']);
+const dock = getCatalogFacets(byPn('CRDCUP-TC5A-1DF'));
+assert.deepEqual(dock['funkcja-stacji'], ['Tylko ładowanie']); // USB-C power is not USB data.
+assert.deepEqual(dock['liczba-terminali'], ['1']);
+const charger = list.find(p => /^Ładowarka 4 baterii/.test(p.name));
+assert.deepEqual(getCatalogFacets(charger)['liczba-baterii'], ['4']);
+const glassPack = list.find(p => /^Szkło ochronne.*3 szt\./.test(p.name));
+assert.deepEqual(getCatalogFacets(glassPack)['liczba-sztuk'], ['3']);
+assert.deepEqual(getCatalogFacets(byPn('CRD-TC5A-5SC5DF-1'))['zasilacz-w-zestawie'], ['Z zasilaczem']);
+assert.deepEqual(getCatalogFacets(byPn('CRD-TC5A-5SC5DF'))['zasilacz-w-zestawie'], ['Bez zasilacza']);
+assert.equal(getCatalogFacets(byPn('SHIM-CRD-TC7A'))['rodzaj-akcesorium'][0], 'Części i modernizacja stacji');
+assert(!getCatalogFacets(byPn('PWR-WUA5V45W1EU'))['funkcja-stacji']);
+assert.equal(getCatalogFacets(byPn('RAM-HOL-ZE41-NPU'))['rodzaj-akcesorium'][0], 'Stacje i uchwyty pojazdowe');
+assert.equal(getCatalogFacets(byPn('BTRY-TC5A7A-WC-01'))['wariant-baterii'][0], 'Do ładowania bezprzewodowego');
+assert.equal(getCatalogFacets(byPn('BTRY-TC5A7A-EC-01'))['pojemnosc-baterii'][0], '7240 mAh');
+// A mention of an unsupported connection must never enable that facet.
+const negative = {...byPn('CRDCUP-TC5A-1DF'), name:'Stacja bez komunikacji', description:'Stacja nie obsługuje Ethernet.', specifications:[{name:'Komunikacja',value:'Nie obsługuje Ethernet. Tylko ładowanie.'}]};
+assert.deepEqual(getCatalogFacets(negative)['funkcja-stacji'], ['Tylko ładowanie']);
+const selected = {'katalog-funkcja-stacji': new Set(['Ethernet', 'USB — transmisja danych']), 'katalog-liczba-terminali':new Set(['5'])};
+const options = Object.fromEntries(filters.map(f => [f.specKey, f.derived.map(r => r.value)]));
+const url = writeCatalogFilterState('?szukaj=tc501&producent=zebra', selected, 'cena-rosnaco', 'f.');
+const state = readCatalogFilterState(url, options, 'f.');
+assert.deepEqual(state.selected, selected); assert.equal(state.sort, 'cena-rosnaco'); assert.equal(new URLSearchParams(url).get('szukaj'), 'tc501');
+assert.deepEqual(readCatalogFilterState('?f.katalog-liczba-terminali=999&f.sortuj=bad',options,'f.').selected,{});
+assert.equal(new URLSearchParams(writeCatalogFilterState(url, {}, 'domyslne', 'f.')).get('szukaj'), 'tc501');
+const p = byPn('PWR-WUA5V45W1EU');
+assert.equal(withLiveCatalogData(p,new Map([[pn(p),{found:true,stockPL:0,stockDE:0,inDelivery:50,price:103}]])).availability,'unavailable');
+assert.equal(withLiveCatalogData(p,new Map([[pn(p),{found:true,stockPL:0,stockDE:17,price:97}]])).priceFrom,97);
+const v = {...p,variants:[{partNumber:'cheap'},{partNumber:'stocked'}]};
+assert.equal(withLiveCatalogData(v,new Map([['cheap',{found:true,stockPL:0,stockDE:0,price:50}],['stocked',{found:true,stockPL:1,stockDE:0,price:100}]])).priceFrom,100);
+assert.equal(withLiveCatalogData(p,new Map([[pn(p),{found:false,stockPL:0,stockDE:0}]])),p);
+fs.mkdirSync('work/catalog-filters', {recursive:true});
+fs.writeFileSync('work/catalog-filters/tc501-facets.json',JSON.stringify(list.map(p=>({id:p.id,pn:pn(p),name:p.name,facets:getCatalogFacets(p)})),null,2));
+console.log('PASS: model search, exact TC501 accessory set, 7 other families, 5-slot Ethernet/boot/power combination, conservative features, live stock/price and URL roundtrip.');

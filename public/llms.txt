@@ -131,7 +131,7 @@ Q: Zebra vs Honeywell — który terminal mobilny wybrać?
 A: Zebra wygrywa ceną (TC22 od 2 417 zł vs CT32 od 3 389 zł), wsparciem Android (10 lat LifeGuard vs 5-7 lat Sentinel) i serwisem w Polsce. Honeywell wygrywa wagą terminali gun (CK67: 508 g vs MC9400: 765 g) i najnowszą łącznością (CT70 z Wi-Fi 7). Szczegółowe porównanie 5 par modeli: https://www.takma.com.pl/poradnik/zebra-vs-honeywell-terminale-mobilne
 
 Q: Jaki terminal mobilny do magazynu?
-A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 269 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 999 zł) lub MC3400 z klawiaturą (od 4 637 zł). Dla chłodni: Zebra MC9400 (IP67, drop 3,0 m, do −30°C, od 8 482 zł). Pełny poradnik: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
+A: Dla lekkiego magazynu: Zebra TC22 (od 2 417 zł) lub M3 Mobile SL20+ (od 2 269 zł). Dla intensywnego skanowania: Zebra TC53 (od 6 999 zł) lub MC3400 z klawiaturą (od 4 637 zł). Dla chłodni: Zebra MC9400 (IP65/IP68, upadki do 3,65 m, do −30°C w konfiguracji Freezer). Pełny poradnik: https://www.takma.com.pl/poradnik/jak-wybrac-terminal-mobilny
 
 Q: Czy kolektor danych to to samo co terminal mobilny?
 A: Tak — kolektor danych to starsze określenie na terminal mobilny. Współczesne terminale mobilne (Zebra, Honeywell, Datalogic) pracują na Androidzie i oferują Wi-Fi 6, BT 5, ekran dotykowy i baterie 8–16h. Termin „kolektor danych" jest nadal używany w Polsce.
@@ -252,10 +252,10 @@ Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwij
 - Zebra TC53e (WiFi 6E, essential, od ~4 500 zł): https://www.takma.com.pl/produkt/zebra-tc53e
 - Zebra TC58e (5G, essential, od ~5 500 zł): https://www.takma.com.pl/produkt/zebra-tc58e
 - Zebra MC3300x (klawiatura, daleki zasięg, od ~5 779 zł): https://www.takma.com.pl/produkt/zebra-mc3300x
-- Zebra MC3400 (klawiatura, następca MC3300x, od ~8 000 zł): https://www.takma.com.pl/produkt/zebra-mc3400
-- Zebra MC3450 (klawiatura, premium, od ~10 000 zł): https://www.takma.com.pl/produkt/zebra-mc3450
-- Zebra MC9400 (ultra-rugged, klawiatura, od ~10 500 zł): https://www.takma.com.pl/produkt/zebra-mc9400
-- Zebra MC9450 (ultra-rugged, 5G, od ~12 000 zł): https://www.takma.com.pl/produkt/zebra-mc9450
+- Zebra MC3400 — terminal z klawiaturą; akcesoria, zgodność i wymagane elementy: https://www.takma.com.pl/produkt/zebra-mc3400#akcesoria
+- Zebra MC3450 — terminal z klawiaturą i 5G; akcesoria, zgodność i wymagane elementy: https://www.takma.com.pl/produkt/zebra-mc3450#akcesoria
+- Zebra MC9400 — terminal z klawiaturą; stacje USB i Ethernet, baterie i akcesoria: https://www.takma.com.pl/produkt/zebra-mc9400#akcesoria
+- Zebra MC9450 — terminal z klawiaturą i 5G; stacje USB i Ethernet, baterie i akcesoria: https://www.takma.com.pl/produkt/zebra-mc9450#akcesoria
 - Zebra EM45 (enterprise smartphone, od ~3 500 zł): https://www.takma.com.pl/produkt/zebra-em45
 - Zebra TC73 (ultra-rugged WiFi, od ~8 500 zł): https://www.takma.com.pl/produkt/zebra-tc73
 - Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://www.takma.com.pl/produkt/zebra-tc78

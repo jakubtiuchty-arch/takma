@@ -5,7 +5,7 @@ import { useSmartPrice } from './SmartPriceContext'
 
 const config = {
   available: { label: 'Dostępny', variant: 'success' as const },
-  'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+  'on-order': { label: 'Niedostępny', variant: 'danger' as const },
   unavailable: { label: 'Niedostępny', variant: 'danger' as const },
 }
 
@@ -28,8 +28,8 @@ export default function ContextAvailabilityBadge({
   const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
   if (requireConfirmedStock) {
     const stock = displayedPn ? stockData.get(displayedPn) : undefined
-    if (loading || !stock?.found) return <Badge variant="warning">Dostępność do potwierdzenia</Badge>
-    const availability = stock.availability
+    if (loading || !stock?.found) return <Badge variant="danger">{feminine ? 'Niedostępna' : 'Niedostępny'}</Badge>
+    const availability = stock.stockPL + stock.stockDE > 0 ? 'available' : 'unavailable'
     return <Badge variant={config[availability].variant}>{config[availability].label}</Badge>
   }
 
@@ -51,7 +51,7 @@ export default function ContextAvailabilityBadge({
   if (displayedPn) {
     const stock = stockData.get(displayedPn)
     if (stock?.found) {
-      if (stock.totalStock > 0) liveAvailability = 'available'
+      if (stock.stockPL + stock.stockDE > 0) liveAvailability = 'available'
       else if (stock.inDelivery > 0) liveAvailability = 'on-order'
       else liveAvailability = 'unavailable'
     } else if (treatUnknownAsUnavailable) {
@@ -66,7 +66,7 @@ export default function ContextAvailabilityBadge({
       const stock = stockData.get(pn)
       if (stock?.found) {
         anyFound = true
-        if (stock.totalStock > 0) { liveAvailability = 'available'; break }
+        if (stock.stockPL + stock.stockDE > 0) { liveAvailability = 'available'; break }
       }
     }
     if (anyFound && liveAvailability !== 'available') {

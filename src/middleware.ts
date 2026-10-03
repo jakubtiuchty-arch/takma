@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { jwtVerify } from 'jose'
 import { OLD_TT_SLUG_REDIRECTS } from '@/data/transfer-label-migration'
 import { OLD_RIBBON_SLUG_REDIRECTS } from '@/data/ribbon-redirects'
+import { accessorySlugRedirects } from '@/data/accessory-redirects'
 
 const ADMIN_SECRET = new TextEncoder().encode(
   process.env.ADMIN_JWT_SECRET || ''
@@ -29,6 +30,12 @@ export async function middleware(request: NextRequest) {
   // -------------------------------------------------------------------------
   // 301 Redirects — zmienione URLe
   // -------------------------------------------------------------------------
+  const accessorySlug = pathname.match(/^\/produkt\/([^/]+)\/?$/)?.[1]
+  if (accessorySlug && accessorySlugRedirects[accessorySlug]) {
+    const target = request.nextUrl.clone()
+    target.pathname = `/produkt/${accessorySlugRedirects[accessorySlug]}`
+    return NextResponse.redirect(target, 301)
+  }
   const redirects: Record<string, string> = {
     '/poradnik/m3-mobile-sm24-sm25-porownanie': '/poradnik/m3-sm24-sm25-porownanie',
     '/produkt/m3-mobile-sm24': '/produkt/m3-sm24',
@@ -338,6 +345,9 @@ export async function middleware(request: NextRequest) {
       // Zestawy startowe drukarek kart
       'magicard-300-zestaw-startowy', 'magicard-tasma-ymckok-300-250-mc250ymcko-s',
       'magicard-600-duo-zestaw-startowy', 'magicard-pronto100-zestaw-startowy',
+      // Zasilanie i mocowanie RAM do stacji MC9400 / MC9450
+      'ram-gds-charge-v17u', 'ram-gds-charge-v18u', 'ram-101u-247-4',
+      'ram-b-166u', 'ram-b-238u',
     ])
 
     // Jeśli slug NIE istnieje na nowej stronie → redirect do strony przebudowy

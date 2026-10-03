@@ -244,7 +244,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   // ── JSON-LD: Product schema z pojedynczym Offer ────────────────────
   const availabilityMap = {
     available: 'https://schema.org/InStock',
-    'on-order': 'https://schema.org/PreOrder',
+    'on-order': 'https://schema.org/OutOfStock',
     unavailable: 'https://schema.org/OutOfStock',
   }
   const priceValidUntil = new Date(new Date().setFullYear(new Date().getFullYear() + 1))

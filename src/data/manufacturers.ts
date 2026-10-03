@@ -17,6 +17,30 @@ export interface Manufacturer {
 
 export const manufacturers: Manufacturer[] = [
   {
+    id: 'isiris',
+    slug: 'isiris',
+    name: 'Isiris',
+    logo: '',
+    seoTitle: 'Isiris | Mocowania do terminali',
+    seoDescription: 'Mocowania Isiris z przyssawką i otworami AMPS. Dobierz osobny uchwyt do modelu terminala.'
+  },
+  {
+    id: 'proclip',
+    slug: 'proclip',
+    name: 'ProClip',
+    logo: '',
+    seoTitle: 'ProClip | Stacje pojazdowe i mocowania',
+    seoDescription: 'Stacje ładujące i mocowania ProClip do terminali Zebra. Dobierz uchwyt, zasilanie i podstawę do pojazdu.'
+  },
+  {
+    id: 'ram',
+    slug: 'ram',
+    name: 'RAM Mounts',
+    logo: '/images/manufacturers/ram.png',
+    seoTitle: 'RAM Mounts | Mocowania i stacje pojazdowe',
+    seoDescription: 'Mocowania, stacje pojazdowe i zasilacze RAM Mounts. Dobierz zestaw do terminala i miejsca montażu.'
+  },
+  {
     id: 'zebra',
     slug: 'zebra',
     name: 'Zebra',

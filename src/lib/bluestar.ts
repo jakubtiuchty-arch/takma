@@ -365,7 +365,10 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
   }
 
   for (const pn of uncached) {
-    const found = byItemNo.get(pn.toUpperCase())
+    // BlueStar dla stacji ET65 pomija myślnik w VEHDK-CON / VEHDK-PTA.
+    // Używaj dopasowania bez myślników tylko przy jednoznacznej odpowiedzi.
+    const matches = items.filter(item => item.itemNo.toUpperCase().replace(/-/g, '') === pn.toUpperCase().replace(/-/g, ''))
+    const found = byItemNo.get(pn.toUpperCase()) ?? (matches.length === 1 ? matches[0] : undefined)
 
     if (!found || found.unitPrice <= 0) {
       setCached(pn, makeEmptyResult(pn, now))

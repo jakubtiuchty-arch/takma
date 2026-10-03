@@ -12,9 +12,18 @@ import {
   manufacturers,
   brandCategories,
   filterProducts,
+  products as catalogProducts,
   ProductTag,
   getSubcategoriesForCategory,
+  isThermalLabelProduct,
+  isTransferLabelProduct,
+  variantSizeSlug,
 } from '@/data/products'
+import { findSearchModel } from '@/lib/model-search'
+import { findPartNumberSearch } from '@/lib/part-number-search'
+import { buildAccessoryFilters } from '@/lib/catalog-filters'
+import { catalogPartNumbers, withLiveCatalogData } from '@/lib/catalog-live'
+import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
 const tagOptions: { value: ProductTag; label: string }[] = [
   { value: 'magazyn', label: 'Magazyn' },
@@ -42,7 +51,7 @@ function CatalogContent() {
   // Parametry z adresu zawężają listę (linki z reklam, wyszukiwarki i strony
   // głównej), a reszta filtrowania dzieje się już w sidebarze — tak samo jak na
   // stronach kategorii.
-  const products = useMemo(
+  const matchingProducts = useMemo(
     () =>
       filterProducts({
         categoryId: categoryParam || undefined,
@@ -56,9 +65,30 @@ function CatalogContent() {
 
   const selectedCategory = categories.find((c) => c.slug === categoryParam)
   const selectedManufacturer = manufacturers.find((m) => m.slug === manufacturerParam)
+  const searchModel = useMemo(() => findSearchModel(searchParam, catalogProducts), [searchParam])
+  const exactPnSearch = useMemo(() => searchModel ? undefined : findPartNumberSearch(searchParam, catalogProducts), [searchParam, searchModel])
+  const exactPartNumber = exactPnSearch?.exact ? exactPnSearch.matches.values().next().value?.[0] : undefined
+  const accessoryBrowsing = !!searchModel || categoryParam === 'akcesoria' ||
+    (matchingProducts.length > 0 && matchingProducts.filter(p => p.categoryId === 'akcesoria').length > matchingProducts.length / 2)
+  const stockPns = useMemo(() => accessoryBrowsing ? Array.from(new Set(matchingProducts.flatMap(catalogPartNumbers))) : [], [accessoryBrowsing, matchingProducts])
+  const { stockData, loading: stockLoading } = useStockData(stockPns)
+  const products = useMemo(() => matchingProducts.map(product => {
+    const p = accessoryBrowsing ? withLiveCatalogData(product, stockData) : product
+    const variant = exactPartNumber ? p.variants?.find(v => v.partNumber === exactPartNumber) : undefined
+    if (!variant) return p
+    const href = isThermalLabelProduct(p) || isTransferLabelProduct(p)
+      ? `/produkt/${p.slug}/${variantSizeSlug(variant)}/${variant.partNumber}`
+      : `/produkt/${p.slug}?pn=${encodeURIComponent(variant.partNumber)}`
+    return { ...p, href }
+  }), [matchingProducts, accessoryBrowsing, stockData, exactPartNumber])
 
-  /** Wybrana kategoria wnosi swoje filtry (te same co na jej stronie); bez niej zostaje producent i cena. */
+  /** Model i akcesoria mają filtry doboru; pozostałe kategorie używają swoich filtrów. */
   const filters = useMemo<FilterDefinition[]>(() => {
+    if (accessoryBrowsing) return [
+      ...buildAccessoryFilters(products, catalogProducts, searchModel),
+      { specKey: 'katalog-producent', label: 'Producent', defaultCollapsed: true, derived: manufacturers.map(m => ({ value: m.name, manufacturer: m.id })) },
+      { ...filtrCenaKatalogu, defaultCollapsed: true },
+    ]
     const zKategorii = selectedCategory ? categoryFilters[selectedCategory.slug] : undefined
     if (zKategorii) return zKategorii
     return [
@@ -69,7 +99,7 @@ function CatalogContent() {
       },
       filtrCenaKatalogu,
     ]
-  }, [selectedCategory])
+  }, [selectedCategory, accessoryBrowsing, products, searchModel])
 
   const categoryNav = useMemo(
     () =>
@@ -127,7 +157,7 @@ function CatalogContent() {
     <div className="container-main py-8 lg:py-12">
       <div className="mb-6">
         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-          {selectedCategory
+          {searchModel ? `${searchModel.name} — urządzenie i akcesoria` : exactPartNumber ? `Wyniki dla PN ${exactPartNumber}` : selectedCategory
             ? selectedCategory.name
             : selectedManufacturer
               ? `Produkty ${selectedManufacturer.name}`
@@ -138,6 +168,9 @@ function CatalogContent() {
 
         {selectedCategory && (
           <p className="text-gray-600 mb-4 max-w-3xl">{selectedCategory.longDescription}</p>
+        )}
+        {accessoryBrowsing && !exactPartNumber && (
+          <p className="mt-3 max-w-3xl text-gray-600">Wybierz rodzaj akcesorium. Następnie dobierz funkcję stacji, liczbę terminali lub wersję zestawu.</p>
         )}
 
         {chipy.length > 0 && (
@@ -171,6 +204,7 @@ function CatalogContent() {
       ) : (
         /* Ten sam sidebar co na kategoriach: nawigacja po kategoriach + checkboxy z licznikiem */
         <FilterableProductGrid
+          key={[categoryParam, manufacturerParam, searchParam, isNewParam, tagsParam?.join(',')].join('|')}
           products={products}
           filters={filters}
           categoryNav={categoryNav}
@@ -178,6 +212,8 @@ function CatalogContent() {
           filtersFirst
           maxInitial={48}
           listName="katalog"
+          urlFilterPrefix="f."
+          loadingMessage={stockLoading && accessoryBrowsing ? 'Sprawdzanie cen i dostępności…' : undefined}
         />
       )}
     </div>

@@ -245,7 +245,7 @@ export function LiveAvailabilityBadge({
 
   const config = {
     available: { label: 'Dostępny', variant: 'success' as const },
-    'on-order': { label: 'Na zamówienie', variant: 'warning' as const },
+    'on-order': { label: 'Niedostępny', variant: 'danger' as const },
     unavailable: { label: 'Niedostępny', variant: 'danger' as const },
   }
 
@@ -261,7 +261,7 @@ export function LiveAvailabilityBadge({
   let hasStock = false
   for (const pn of partNumbers) {
     const stock = stockData.get(pn)
-    if (stock?.found && stock.totalStock > 0) {
+    if (stock?.found && stock.stockPL + stock.stockDE > 0) {
       hasStock = true
       break
     }

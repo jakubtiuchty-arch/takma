@@ -126,7 +126,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     // Priorytet: WYŚWIETLANY wariant (karta wariantu). Jego stan decyduje, nie „dowolny wariant serii".
     if (displayedPn) {
       const s = stockData.get(displayedPn)
-      if (s?.found) return s.totalStock <= 0
+      if (s?.found) return s.stockPL + s.stockDE <= 0
     }
     if (partNumbers.length > 0) {
       let anyFound = false
@@ -134,13 +134,13 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
         const stock = stockData.get(pn)
         if (stock?.found) {
           anyFound = true
-          if (stock.totalStock > 0) return false
+          if (stock.stockPL + stock.stockDE > 0) return false
         }
       }
       if (anyFound) return true
     }
     if (!hasVariants) {
-      return product.availability === 'unavailable'
+      return product.availability !== 'available'
     }
     return false
   })()

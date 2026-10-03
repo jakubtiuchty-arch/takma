@@ -119,13 +119,6 @@ function AvailabilityBadge({ value }: { value: ProductVariant['availability'] })
       </span>
     )
   }
-  if (value === 'on-order') {
-    return (
-      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100">
-        Na zamówienie
-      </span>
-    )
-  }
   return (
     <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-red-50 text-red-700 border border-red-100">
       Niedostępny

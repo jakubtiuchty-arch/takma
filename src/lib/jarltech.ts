@@ -97,8 +97,8 @@ async function getAccessToken(): Promise<string> {
 
   const data = await res.json()
   cachedToken = data.access_token
-  // Cache na expires_in minus 5 minut buforu
-  tokenExpiresAt = Date.now() + ((data.expires_in || 3600) - 300) * 1000
+  // Bufor krótszy od ważności tokenów 300 s.
+  tokenExpiresAt = Date.now() + ((data.expires_in || 3600) - 30) * 1000
 
   console.log(`[Jarltech Auth] Token OK, wazny ${data.expires_in}s`)
   return cachedToken!

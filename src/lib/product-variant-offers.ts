@@ -29,7 +29,7 @@ function ofertaZeStanu(row: StockInfo | undefined, url: string) {
     priceCurrency: 'PLN',
     priceValidUntil: cenaWaznaDo(),
     availability: row.availability === 'available' ? 'https://schema.org/InStock'
-      : row.availability === 'on-order' ? 'https://schema.org/BackOrder' : 'https://schema.org/OutOfStock',
+      : 'https://schema.org/OutOfStock',
     itemCondition: 'https://schema.org/NewCondition',
     seller: { '@type': 'Organization' as const, name: 'TAKMA', url: 'https://www.takma.com.pl' },
   }

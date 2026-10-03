@@ -24,7 +24,7 @@ export type ProductCardData = Pick<
   | 'priceFrom'
   | 'priceTiers'
   | 'availability'
->
+> & { href?: string }
 import ProductCard from './ProductCard'
 import clsx from 'clsx'
 
