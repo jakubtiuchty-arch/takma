@@ -1037,10 +1037,9 @@ export const manuals: Manual[] = [
     name: 'Newland MT95 Kambur Pro III',
     brand: 'Newland',
     category: 'terminale',
-    // Sklep oferuje rewizję Pro II — boks „Kup" kieruje do dostępnego produktu.
     description:
-      'Wytrzymały terminal mobilny Android 15 ze skanerem 2D, 5G/4G (dual SIM + eSIM), NFC, czytnikiem linii papilarnych i microSD. Skrócona instrukcja po polsku — bateria, karty, skanowanie, ScanSettings, sieci, Whitelist Manager.',
-    productSlug: 'newland-mt95-kambur-pro-ii',
+      'Wytrzymały terminal mobilny Android 15 ze skanerem 2D, 5G/4G (nano-SIM i eSIM), NFC, czytnikiem linii papilarnych i microSD. Skrócona instrukcja po polsku — bateria, karty, skanowanie, ScanSettings, sieci, Whitelist Manager.',
+    productSlug: 'newland-mt95-kambur-pro-iii',
     documents: [
       { type: 'user-guide', title: 'Pełna instrukcja obsługi MT95 Kambur Pro III (User Guide)', lang: 'en', file: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
     ],
@@ -1052,7 +1051,7 @@ export const manuals: Manual[] = [
       'newland mt95 scansettings',
       'newland mt95 kambur manual pdf',
     ],
-    updatedAt: '2026-06-24',
+    updatedAt: '2026-10-04',
   },
   {
     slug: 'magicard-300',

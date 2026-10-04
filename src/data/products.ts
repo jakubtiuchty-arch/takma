@@ -1,6 +1,7 @@
 // TAKMA - Katalog produktów Zebra Technologies
 // Dane zebrane z oficjalnych źródeł Zebra
 
+import { newlandMt95KamburProIii } from './newland-mt95-kambur-pro-iii'
 import { transferLabelProducts } from './transfer-label-products'
 import { transferRibbonProducts } from './transfer-ribbon-products'
 import { OLD_TT_PRODUCT_IDS, OLD_TT_ID_TO_SERIES } from './transfer-label-migration'
@@ -96112,6 +96113,7 @@ const rawProductList: Product[] = [
   ...tc201Accessories,
   ...et6xAccessories,
   ...newlandMobileComputers,
+  newlandMt95KamburProIii,
   ...newlandN7Accessories,
   ...newlandMT93Accessories,
   ...newlandMT95Accessories,

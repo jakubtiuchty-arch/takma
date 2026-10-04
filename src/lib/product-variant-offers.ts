@@ -2,6 +2,7 @@ import type { Product } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { getManufacturerById } from '@/data/manufacturers'
 import { absoluteProductImageUrl, cenaWaznaDo } from './magicard-offer'
+import { activeSupplierOffer } from '@/data/supplier-offers'
 
 /** Marka z karty produktu. Wcześniej stała „Zebra" — po dodaniu Epsona i Labelmate do ofert
  *  żywych ich karty ogłaszały w danych strukturalnych cudzą markę. */
@@ -20,14 +21,14 @@ function markaProduktu(product: Product) {
 }
 
 /** Oferta z żywego stanu. Cena brutto, bo taką widzi kupujący i taka idzie do feedu. */
-function ofertaZeStanu(row: StockInfo | undefined, url: string) {
+function ofertaZeStanu(row: StockInfo | undefined, url: string, priceValidUntil: string) {
   if (!row?.found || row.price == null || row.price <= 0) return undefined
   return {
     '@type': 'Offer' as const,
     url,
     price: (Math.round(row.price * 123) / 100).toFixed(2),
     priceCurrency: 'PLN',
-    priceValidUntil: cenaWaznaDo(),
+    priceValidUntil,
     availability: row.availability === 'available' ? 'https://schema.org/InStock'
       : 'https://schema.org/OutOfStock',
     itemCondition: 'https://schema.org/NewCondition',
@@ -51,12 +52,13 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const url = `https://www.takma.com.pl/produkt/${product.slug}`
   const stock = new Map(rows.map(row => [row.partNumber, row]))
   const marka = markaProduktu(product)
+  const priceValidUntil = activeSupplierOffer(product.slug)?.endsAt.slice(0, 10) ?? cenaWaznaDo()
 
   // Karta bez wariantów (nawijarki i dyspensery Labelmate) to zwykły Product z jedną ofertą.
   // ProductGroup z pustym hasVariant nie niósł żadnej oferty — Google widział produkt bez ceny.
   if (!product.variants?.length) {
     const partNumber = product.specifications?.find(spec => spec.name === 'Part Number')?.value
-    const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url)
+    const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url, priceValidUntil)
     return {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -101,7 +103,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         isVariantOf: { '@id': `${url}#product-group` },
         additionalProperty: Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
         // Bez potwierdzonej ceny nie tworzymy pozornej oferty ani dostępności.
-        ...(hasPrice ? { offers: ofertaZeStanu(row, variantUrl) } : {}),
+        ...(hasPrice ? { offers: ofertaZeStanu(row, variantUrl, priceValidUntil) } : {}),
       }
     }),
   }

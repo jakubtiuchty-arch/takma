@@ -10,6 +10,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'newland-mt95-kambur-pro-iii',
   'zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
   // Kolorowe drukarki Epson: cena i stan prosto od dystrybutora, tak jak przy Zebrach.
   // Bez tego kwota doklejała się dopiero w przeglądarce, a pierwszy HTML miał „? netto”.

@@ -53,6 +53,8 @@ import ProductVideos from '@/components/product/ProductVideos'
 import ServiceBanner from './ServiceBanner'
 import { serviceLinks } from '@/components/ui/ServiceBanner'
 import PromoBanner from './PromoBanner'
+import SupplierOfferNotice from './SupplierOfferNotice'
+import { activeSupplierOffer } from '@/data/supplier-offers'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
@@ -418,7 +420,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     unavailable: 'https://schema.org/OutOfStock',
   }
 
-  const priceValidUntil = new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
+  const priceValidUntil = activeSupplierOffer(product.slug)?.endsAt.slice(0, 10)
+    ?? new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
 
   const sellerOrg = {
     '@type': 'Organization',
@@ -1002,6 +1005,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 />
               )}
             />
+
+            <SupplierOfferNotice productSlug={product.slug} initialOffer={activeSupplierOffer(product.slug)} />
 
             {/* Promocja producencka (np. Zebra CEE Voucher) — znika po terminie */}
             {(() => {
