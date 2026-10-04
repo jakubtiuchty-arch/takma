@@ -10,6 +10,7 @@ import { useCartStore } from '@/store/cartStore'
 import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackAddToCart, trackSelectItem } from '@/lib/ga-events'
+import { getProductImageFrameStyle } from '@/lib/product-image-frame'
 
 interface ProductCardProps {
   product: ProductCardData
@@ -158,7 +159,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           className="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center group relative overflow-hidden"
         >
           {hasRealImage ? (
-            <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" sizes="96px" />
+            <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" style={getProductImageFrameStyle(product.images[0])} sizes="96px" />
           ) : (
             <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
           )}
@@ -271,10 +272,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       {/* Image */}
       <Link
         href={productHref}
-        className="relative aspect-[4/3] bg-white flex items-center justify-center overflow-hidden"
+        className={`relative ${getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" sizes="(max-width: 1024px) 45vw, 22vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : (
           <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}

@@ -9,6 +9,7 @@ import { trackAddToCart } from '@/lib/ga-events'
 import { useStockData } from './StockInfo'
 import type { RequiredAccessoryItem } from './RequiredAccessories'
 import { getRequiredAccessoryConditionText } from '@/lib/required-accessory-copy'
+import { getProductImageFrameStyle } from '@/lib/product-image-frame'
 
 export default function RequiredAccessoryList({ items, idPrefix = 'required-stock', showCommonRequirement = false }: { items: RequiredAccessoryItem[]; idPrefix?: string; showCommonRequirement?: boolean }) {
   const { addItem, closeDrawer, openDrawer, isInCart } = useCartStore()
@@ -58,7 +59,7 @@ export default function RequiredAccessoryList({ items, idPrefix = 'required-stoc
           return (
             <li key={`${item.id}-${item.condition ?? 'common'}`} className="m-0 grid list-none grid-cols-[56px_minmax(0,1fr)] items-center gap-3 px-4 py-4 sm:grid-cols-[56px_minmax(0,1fr)_auto] sm:px-5">
               {item.slug ? <Link href={`/produkt/${item.slug}`} aria-label={`Zobacz produkt: ${item.name}`} className="self-start rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">
-                {item.image && <Image src={item.image} alt="" width={56} height={56} sizes="56px" className="h-14 w-14 object-contain" />}
+                {item.image && <Image src={item.image} alt="" width={56} height={56} sizes="56px" className="h-14 w-14 object-contain" style={getProductImageFrameStyle(item.image)} />}
               </Link> : <span aria-hidden="true" className="flex h-14 w-14 items-center justify-center rounded-lg bg-gray-50 text-2xl text-gray-400">!</span>}
               <div className="min-w-0">
                 {item.slug ? <Link href={`/produkt/${item.slug}`} className="text-sm font-semibold leading-5 text-gray-900 hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">{item.name}</Link> : <p className="text-sm font-semibold leading-5 text-gray-900">{item.name}</p>}

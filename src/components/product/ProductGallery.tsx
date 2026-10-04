@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
+import { getProductImageFrameStyle } from '@/lib/product-image-frame'
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/ui/Icons'
 
 /** Obrót 360° jako ostatni slajd galerii: krótki MP4 bez dźwięku w pętli, miniatura z plakatem i znaczkiem 360°. */
@@ -24,6 +25,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
   const slideCount = displayImages.length + (spin ? 1 : 0)
   const spinIndex = spin ? displayImages.length : -1
   const isSpin = activeIndex === spinIndex
+  const imageFrameStyle = isSpin ? undefined : getProductImageFrameStyle(displayImages[activeIndex])
 
   const goToPrev = () => {
     setActiveIndex((prev) => (prev === 0 ? slideCount - 1 : prev - 1))
@@ -36,7 +38,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
   return (
     <div className="space-y-4">
       {/* Main image */}
-      <figure className="relative aspect-[4/3] sm:aspect-square bg-white rounded-2xl overflow-hidden group">
+      <figure className={clsx('relative bg-white rounded-2xl overflow-hidden group', imageFrameStyle ? 'aspect-square' : 'aspect-[4/3] sm:aspect-square')}>
         {isSpin && spin ? (
           <video
             key="spin"
@@ -56,6 +58,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
             alt={imageDescriptions?.[activeIndex] || `${productName} — zdjęcie ${activeIndex + 1}`}
             fill
             className="object-contain p-4"
+            style={imageFrameStyle}
             sizes="(max-width: 768px) 100vw, 50vw"
             priority={activeIndex === 0}
           />
@@ -135,6 +138,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
                   alt={imageDescriptions?.[index] || `${productName} — miniatura ${index + 1}`}
                   fill
                   className="object-contain p-1"
+                  style={getProductImageFrameStyle(src)}
                   sizes="(max-width: 374px) 64px, 80px"
                 />
               ) : (

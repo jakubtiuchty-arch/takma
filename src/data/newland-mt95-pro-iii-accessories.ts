@@ -15,7 +15,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-mcd9557-1c-cutout-v2.png"
+      "/images/products/newland-nls-mcd9557-1c-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Stacja Newland MT95 Kambur Pro III — ładowanie 1 terminala — NLS-MCD9557-1C"
@@ -92,7 +92,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-mcd9557-1cc-cutout-v2.png"
+      "/images/products/newland-nls-mcd9557-1cc-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Stacja Newland MT95 Kambur Pro III — ładowanie i komunikacja USB — NLS-MCD9557-1CC"
@@ -173,7 +173,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-bty-mt9557-01-original-v1.png"
+      "/images/products/newland-nls-bty-mt9557-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Bateria Newland MT95 Kambur Pro III — NLS-BTY-MT9557-01"
@@ -234,7 +234,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-mpg9557-01-original-v1.png"
+      "/images/products/newland-nls-mpg9557-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Uchwyt pistoletowy Newland MT95 Kambur Pro III — NLS-MPG9557-01"
@@ -295,7 +295,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-rb9557-01-original-v1.png"
+      "/images/products/newland-nls-rb9557-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Osłona ochronna Newland MT95 Kambur Pro III — NLS-RB9557-01"
@@ -356,7 +356,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-sp-mt9557-original-v1.png"
+      "/images/products/newland-nls-sp-mt9557-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Szkło ochronne Newland MT95 Kambur Pro III — NLS-SP-MT9557"
@@ -417,7 +417,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-hs-mt-001-original-v1.png"
+      "/images/products/newland-nls-hs-mt-001-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Pasek na rękę Newland MT93 / MT95 Pro III — NLS-HS-MT-001"
@@ -482,7 +482,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-hs105-original-v1.png"
+      "/images/products/newland-hs105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Kabura Newland HS105 do MT95 i MT93 — HS105"
@@ -550,7 +550,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-adp710-original-v1.png"
+      "/images/products/newland-adp710-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Zasilacz USB Newland ADP710 — wtyki EU/UK/US — ADP710"
@@ -627,7 +627,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-cbl-tc-n7-original-v1.png"
+      "/images/products/newland-cbl-tc-n7-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Przewód USB-A – USB-C Newland — 1 m — CBL-TC-N7"
@@ -697,7 +697,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-ad60-d-m-original-v1.png"
+      "/images/products/newland-ad60-d-m-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Zasilacz Newland 19 V / 3,2 A do połączonych stacji — AD60-D-M"
@@ -768,7 +768,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-cpa-univ-original-v1.png"
+      "/images/products/newland-nls-cpa-univ-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Ładowarka samochodowa Newland USB-A / USB-C — przewód 1,5 m — NLS-CPA-UNIV"
@@ -845,7 +845,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-cc-mt95-01-original-v1.png"
+      "/images/products/newland-nls-cc-mt95-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Stacja samochodowa Newland MT95 Kambur Pro III — NLS-CC-MT95-01"
@@ -922,7 +922,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-ccsm-01-original-v1.png"
+      "/images/products/newland-nls-ccsm-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Uchwyt z przyssawką Newland do stacji samochodowej — NLS-CCSM-01"
@@ -995,7 +995,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-cpa-ccmt93-01-original-v1.png"
+      "/images/products/newland-nls-cpa-ccmt93-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Zasilacz samochodowy Newland do stacji MT93 / MT95 — Molex — NLS-CPA-CCMT93-01"
@@ -1066,7 +1066,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-nls-dcc-ccmt93-01-original-v1.png"
+      "/images/products/newland-nls-dcc-ccmt93-01-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Zestaw zasilania Newland do stacji MT93 / MT95 — instalacja 12/24 V — NLS-DCC-CCMT93-01"
@@ -1141,7 +1141,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-bt105-original-v1.png"
+      "/images/products/newland-bt105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Pasek do kabury Newland BT105 — 150 cm — BT105"
@@ -1205,7 +1205,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-mc105-original-v1.png"
+      "/images/products/newland-mc105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Metalowy klips Newland MC105 do kabury — MC105"
@@ -1265,7 +1265,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-rc105-original-v1.png"
+      "/images/products/newland-rc105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Obrotowy klips Newland RC105 do kabury — RC105"
@@ -1325,7 +1325,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-ns105-original-v1.png"
+      "/images/products/newland-ns105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Pasek na szyję Newland NS105 do kabury — 135 cm — NS105"
@@ -1389,7 +1389,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-pt105-original-v1.png"
+      "/images/products/newland-pt105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Klapka ochronna Newland PT105 do kabury — PT105"
@@ -1449,7 +1449,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-ms105-original-v1.png"
+      "/images/products/newland-ms105-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Pasek mocujący Newland MS105 do kabury — wózek widłowy — MS105"
@@ -1510,7 +1510,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     ],
     "manufacturerId": "newland",
     "images": [
-      "/images/products/newland-hs106-original-v1.png"
+      "/images/products/newland-hs106-catalog-v3.png"
     ],
     "imageDescriptions": [
       "Kabura Newland HS106 do terminali z uchwytem — MT67, MT93, N7 — HS106"

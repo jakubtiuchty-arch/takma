@@ -79,3 +79,39 @@ Pliki wynikowe:
 - Testy required-accessory-copy, accessory-catalog i accessory-navigation — PASS.
 - TypeScript `--noEmit --incremental false` — PASS.
 - Przeglądarka: czyste zdjęcie terminala; magazyn PL i EU; rozwinięcie banera; stacje 1C/1CC i wymagania. ADP710 dodany bezpośrednio z boxu do koszyka z ceną 128,24 zł netto. Po sprawdzeniu usunięto testową pozycję.
+
+## 4 października 2026 — ujednolicenie wszystkich zdjęć akcesoriów
+
+Obrobiono 23 zdjęcia katalogowe. Karta MT95 Kambur Pro III nadal zawiera 22 potwierdzone akcesoria; HS106 pozostaje poza jej powiązaniami. Użyto wbudowanego imagegen w trybie edycji, po jednym zdjęciu na PN. Wyniki: PNG RGBA 1254×1254, przezroczyste tło, bez cienia pod produktem. Znak wodny: tylko subtelny napis TAKMA na powierzchni produktu. Oryginały zachowano.
+
+Instrukcje wspólne: zachować rzeczywistą konstrukcję, proporcje, kąt, kolory, oznaczenia i wszystkie elementy zestawu. Usunąć białe tło, zewnętrzne cienie, szare smugi i aureole. Nie dodawać portów, części, symboli ani logotypu TAKMA. Szkło pozostaje cienką półprzezroczystą płytką, bez ramki telefonu. Przy przewodach uciętych w oryginale odtworzyć jedynie prostą dolną pętlę, bez zmiany złączy. Pełne instrukcje i wyniki wywołań zachowano w roboczym archiwum photo-result-*.json.
+
+Granice produktu odczytano z kanału alfa (próg 8/255), bez modyfikowania pikseli. Metadane product-image-frames.json pozwalają wyśrodkować każdy produkt i pokazać jego dłuższy wymiar na 82% kwadratowego kadru. Pozostaje co najmniej 9% marginesu. Ten sam sposób prezentacji działa w kartach katalogu, galerii i wymaganych akcesoriach. Inne zdjęcia zachowują poprzedni układ.
+
+Pliki wynikowe w public:
+
+- `/images/products/newland-nls-mcd9557-1c-catalog-v3.png` — NLS-MCD9557-1C
+- `/images/products/newland-nls-mcd9557-1cc-catalog-v3.png` — NLS-MCD9557-1CC
+- `/images/products/newland-nls-bty-mt9557-01-catalog-v3.png` — NLS-BTY-MT9557-01
+- `/images/products/newland-nls-mpg9557-01-catalog-v3.png` — NLS-MPG9557-01
+- `/images/products/newland-nls-rb9557-01-catalog-v3.png` — NLS-RB9557-01
+- `/images/products/newland-nls-sp-mt9557-catalog-v3.png` — NLS-SP-MT9557
+- `/images/products/newland-nls-hs-mt-001-catalog-v3.png` — NLS-HS-MT-001
+- `/images/products/newland-hs105-catalog-v3.png` — HS105
+- `/images/products/newland-adp710-catalog-v3.png` — ADP710
+- `/images/products/newland-cbl-tc-n7-catalog-v3.png` — CBL-TC-N7
+- `/images/products/newland-ad60-d-m-catalog-v3.png` — AD60-D-M
+- `/images/products/newland-nls-cpa-univ-catalog-v3.png` — NLS-CPA-UNIV
+- `/images/products/newland-nls-cc-mt95-01-catalog-v3.png` — NLS-CC-MT95-01
+- `/images/products/newland-nls-ccsm-01-catalog-v3.png` — NLS-CCSM-01
+- `/images/products/newland-nls-cpa-ccmt93-01-catalog-v3.png` — NLS-CPA-CCMT93-01
+- `/images/products/newland-nls-dcc-ccmt93-01-catalog-v3.png` — NLS-DCC-CCMT93-01
+- `/images/products/newland-bt105-catalog-v3.png` — BT105
+- `/images/products/newland-mc105-catalog-v3.png` — MC105
+- `/images/products/newland-rc105-catalog-v3.png` — RC105
+- `/images/products/newland-ns105-catalog-v3.png` — NS105
+- `/images/products/newland-pt105-catalog-v3.png` — PT105
+- `/images/products/newland-ms105-catalog-v3.png` — MS105
+- `/images/products/newland-hs106-catalog-v3.png` — HS106
+
+Weryfikacja: przejrzano wszystkie 23 zdjęcia w siatce kontrolnej. Test newland-accessories obejmuje powiązania i dokładne PN oraz geometrię wszystkich kadrów: 82%, wyśrodkowanie, marginesy i brak zmiany innych zdjęć.
