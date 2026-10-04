@@ -64,10 +64,14 @@ export function wykryjAnomalie(dane: {
   const zrodla = (Object.entries(dane.ceny) as [string, number | undefined][])
     .filter((e): e is [string, number] => e[1] != null && e[1] > 0)
 
+  // Dwa źródła: tańsze wobec droższego. Trzy: każde wobec mediany wszystkich — mediana
+  // z dwóch pozostałych to ich średnia, którą drogi Ingram zawyżał (alarm na Jarltechu
+  // 659 zł przy BlueStarze 704 zł i Ingramie 1162 zł; 4.10.2026, pierwszy przebieg).
   if (!nosnik && zrodla.length >= 2) {
+    const odniesienieDla = (zrodlo: string) =>
+      zrodla.length === 2 ? zrodla.find(([z]) => z !== zrodlo)![1] : mediana(zrodla.map(([, c]) => c))
     for (const [zrodlo, cena] of zrodla) {
-      const pozostale = zrodla.filter(([z]) => z !== zrodlo).map(([, c]) => c)
-      const odniesienie = mediana(pozostale)
+      const odniesienie = odniesienieDla(zrodlo)
       if (cena < PROG_DYSTRYBUTOR * odniesienie) {
         wynik.push({
           partNumber,
@@ -75,7 +79,7 @@ export function wykryjAnomalie(dane: {
           source: zrodlo,
           price: cena,
           reference: odniesienie,
-          details: `${zrodlo}: ${zl(cena)} = ${proc(cena, odniesienie)} ceny pozostałych dystrybutorów (${zrodla.filter(([z]) => z !== zrodlo).map(([z, c]) => `${z} ${zl(c)}`).join(', ')})`,
+          details: `${zrodlo}: ${zl(cena)} = ${proc(cena, odniesienie)} ${zrodla.length === 2 ? 'ceny drugiego dystrybutora' : 'mediany dystrybutorów'} (${zrodla.filter(([z]) => z !== zrodlo).map(([z, c]) => `${z} ${zl(c)}`).join(', ')})`,
         })
         break // jeden alarm tego rodzaju na numer wystarczy
       }
