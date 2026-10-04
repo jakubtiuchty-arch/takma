@@ -998,6 +998,7 @@ export const manuals: Manual[] = [
     productSlug: 'newland-n7-cachalot-pro-ii',
     documents: [
       { type: 'user-guide', title: 'Pełna instrukcja obsługi N7 Cachalot Pro II (User Guide)', lang: 'en', file: '/instrukcje/newland-n7-cachalot-pro-ii-ug-en.pdf', size: '3,8 MB' },
+      { type: 'programming', title: 'Aplikacje systemowe terminali Newland — skaner, Whitelist Manager, Admin Tool (APP User Guide)', lang: 'en', file: '/instrukcje/newland-android-app-ug-en.pdf', size: '5,3 MB' },
     ],
     polishManual: newlandN7CachalotProIiPl,
     keywords: [
@@ -1007,7 +1008,7 @@ export const manuals: Manual[] = [
       'newland n7 scansettings',
       'newland n7 cachalot pro ii manual pdf',
     ],
-    updatedAt: '2026-06-24',
+    updatedAt: '2026-10-04',
   },
   {
     slug: 'newland-mt93-megattera',
@@ -1020,6 +1021,7 @@ export const manuals: Manual[] = [
     productSlug: 'newland-mt93-megattera',
     documents: [
       { type: 'user-guide', title: 'Pełna instrukcja obsługi MT93 Megattera (User Guide)', lang: 'en', file: '/instrukcje/newland-mt93-megattera-ug-en.pdf', size: '7,1 MB' },
+      { type: 'programming', title: 'Aplikacje systemowe terminali Newland — skaner, Whitelist Manager, Admin Tool (APP User Guide)', lang: 'en', file: '/instrukcje/newland-android-app-ug-en.pdf', size: '5,3 MB' },
     ],
     polishManual: newlandMt93MegatteraPl,
     keywords: [
@@ -1029,7 +1031,7 @@ export const manuals: Manual[] = [
       'newland mt93 scansettings',
       'newland mt93 megattera manual pdf',
     ],
-    updatedAt: '2026-06-24',
+    updatedAt: '2026-10-04',
   },
   {
     slug: 'newland-mt95-kambur-pro-iii',
@@ -1042,6 +1044,7 @@ export const manuals: Manual[] = [
     productSlug: 'newland-mt95-kambur-pro-iii',
     documents: [
       { type: 'user-guide', title: 'Pełna instrukcja obsługi MT95 Kambur Pro III (User Guide)', lang: 'en', file: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
+      { type: 'programming', title: 'Aplikacje systemowe terminali Newland — skaner, Whitelist Manager, Admin Tool (APP User Guide)', lang: 'en', file: '/instrukcje/newland-android-app-ug-en.pdf', size: '5,3 MB' },
     ],
     polishManual: newlandMt95KamburProIiiPl,
     keywords: [
@@ -1050,6 +1053,8 @@ export const manuals: Manual[] = [
       'newland mt95 kambur pro iii instrukcja obsługi pdf',
       'newland mt95 scansettings',
       'newland mt95 kambur manual pdf',
+      'newland whitelist manager',
+      'newland admin tool instrukcja',
     ],
     updatedAt: '2026-10-04',
   },

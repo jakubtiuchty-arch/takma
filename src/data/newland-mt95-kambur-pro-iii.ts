@@ -128,6 +128,7 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
   downloads: [
     { name: 'Karta katalogowa MT95 Kambur Pro III (EN)', type: 'datasheet', url: '/datasheets/newland-mt95-kambur-pro-iii-en.pdf', size: 'PDF' },
     { name: 'Instrukcja obsługi MT95 Kambur Pro III (EN)', type: 'manual', url: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
+    { name: 'Instrukcja aplikacji systemowych Newland: skaner, Whitelist Manager, Admin Tool (EN)', type: 'pdf', url: '/instrukcje/newland-android-app-ug-en.pdf', size: '5,3 MB' },
   ],
   sameAs: 'https://www.newland-id.com/en/products/mobile-computers/mt95-kambur-pro-iii',
   createdAt: '2026-10-04',
