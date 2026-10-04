@@ -38,6 +38,14 @@ export interface PriceSelection {
 const OUTLIER_FACTOR = 3
 
 /**
+ * Ingram poniżej tego ułamka ceny Jarltecha → cenę zakupu liczymy z Jarltecha (decyzja 4.10.2026).
+ * Tego dnia Ingram podawał przez API (YourPrice) dla ok. 150 numerów Zebry ceny o 40–48% niższe
+ * niż Jarltech, np. ZD421t ZD4A042-30EM00EZ 902,80 zł wobec ok. 1480 zł — sklep pokazywał ceny
+ * poniżej całego rynku. Realne różnice między dystrybutorami mieszczą się w kilkunastu procentach.
+ */
+const INGRAM_LOW_VS_JARLTECH = 0.75
+
+/**
  * BlueStar `unitPrice` bywa ceną PAKIETU (etykiety Zebra: karton 4 rolki, PN 3011713),
  * ale bywa też ceną ZA SZTUKĘ, a `multipleQty` jest wtedy tylko wielokrotnością
  * zamówienia (nośniki Epson ColorWorks: 7,35 EUR/rolkę, multipleQty 18 → po podzieleniu
@@ -71,6 +79,16 @@ export function selectPurchasePrice(prices: SourcePrices, catalogAnchorPLN?: num
 
   const rejected: PriceSelection['rejected'] = []
   if (entries.length === 0) return { rejected, ingramSuspect: false }
+
+  // Ingram odstający w DÓŁ wobec Jarltecha → podstawą ceny jest Jarltech
+  if (prices.ingram && prices.jarltech && prices.ingram < prices.jarltech * INGRAM_LOW_VS_JARLTECH) {
+    rejected.push({
+      source: 'ingram',
+      price: prices.ingram,
+      reason: `cena ${prices.ingram.toFixed(2)} zł to ${Math.round((prices.ingram / prices.jarltech) * 100)}% ceny Jarltecha (${prices.jarltech.toFixed(2)} zł) — liczymy z Jarltecha`,
+    })
+    return { best: prices.jarltech, source: 'jarltech', rejected, ingramSuspect: true }
+  }
 
   // 0) Źródła rozjechane ≥ 3× i znana cena katalogowa → wygrywa źródło najbliższe
   //    katalogowi (w skali logarytmicznej). Minimum w takiej sytuacji to prawie zawsze
