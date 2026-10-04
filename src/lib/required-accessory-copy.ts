@@ -21,6 +21,12 @@ export function getRequiredAccessoriesCopy(conditions: (string | undefined)[], s
     }
   }
   const choices = Array.from(new Set(conditions.filter((condition): condition is string => !!condition)))
+  if (choices.length === 2 && choices.includes('zasilania pojedynczej stacji') && choices.includes('zasilania połączonych stacji')) {
+    return {
+      heading: 'Wybierz zasilacz do liczby stacji.',
+      description: 'Do jednej stacji użyj ADP710. Do połączonych stacji użyj AD60-D-M. Wybierz jeden zasilacz. Jest sprzedawany osobno.',
+    }
+  }
   const powerChoices = choices.filter(condition => /^(?:zasilania z |instalacji |ładowania z gniazda|ładowania w pojeździe)/.test(condition))
   const mountChoices = choices.filter(condition => /^(?:montażu|mocowania) (?:na|do)/.test(condition))
   if (choices.includes('codziennego ładowania baterii') && choices.includes('ładowania przez port Micro-USB')) {

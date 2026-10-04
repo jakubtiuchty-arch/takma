@@ -3,7 +3,7 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { isLabelPN, getCatalogNetPrice } from '@/data/products'
+import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
@@ -13,6 +13,13 @@ import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selec
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
 const LABEL_MARGIN = 1.15  // 15% marży dla etykiet (termiczne + termotransferowe)
+// Katalog Newland: uzupełnij brakujące dane Jarltech także przy zapasie w PL.
+// Nowe numery nie trafiają od razu do rotacyjnego synchronizatora.
+const newlandPNs = new Set(products.filter(p => p.manufacturerId === 'newland').flatMap(p =>
+  p.variants?.length ? p.variants.map(v => v.partNumber) :
+    p.specifications.filter(s => s.name === 'Part Number').map(s => s.value)
+))
+
 const VAT = 1.23           // 23% VAT
 
 // ============================================
@@ -48,6 +55,20 @@ async function getEurPlnRate(): Promise<number> {
   } catch (error) {
     console.warn(`[EUR/PLN] Blad NBP, fallback ${EUR_RATE_FALLBACK}:`, error)
     return cachedEurRate ?? EUR_RATE_FALLBACK
+  }
+}
+
+async function readLiveJarltechWithDeadline(partNumbers: string[]): Promise<JarltechStockInfo[]> {
+  let timeout: ReturnType<typeof setTimeout> | undefined
+  try {
+    return await Promise.race([
+      jarltechLive(partNumbers),
+      new Promise<JarltechStockInfo[]>((_, reject) => {
+        timeout = setTimeout(() => reject(new Error('jarltech-live-timeout')), 10_000)
+      }),
+    ])
+  } finally {
+    if (timeout) clearTimeout(timeout)
   }
 }
 
@@ -164,26 +185,22 @@ export async function lookupUnifiedStock(
 
     // ============================================
     // STEP 1b: Live Jarltech fallback
-    // Gdy StockCache mówi "unavailable" ALE JarltechStockCache nie ma wpisu
+    // Gdy brak wpisu Jarltech: niedostępne PN oraz nowe numery Newland, nawet z zapasem PL
     // (jarltech-sync nie dotarł do tego PN), wywołaj live Jarltech API.
-    // Limit 3 PN / request żeby nie blokować listingów. Timeout 10s.
+    // Listing mieszany: limit 3 PN. Newland: do 24 PN, concurrency 4 w integracji. Timeout 10s.
     // Fire-and-forget write-through do JarltechStockCache dla przyszłych requestów.
     // ============================================
     const liveFallbackCandidates = Array.from(freshCache.values())
-      .filter(c => c.availability === 'unavailable' && !jarltechCacheMap.has(c.partNumber))
-      .slice(0, 3)
+      .filter(c => !jarltechCacheMap.has(c.partNumber) && (c.availability === 'unavailable' || newlandPNs.has(c.partNumber)))
+      .sort((a, b) => Number(newlandPNs.has(b.partNumber)) - Number(newlandPNs.has(a.partNumber)))
+      .slice(0, partNumbers.every(pn => newlandPNs.has(pn)) ? 24 : 3)
       .map(c => c.partNumber)
 
     const liveFallbackResults: { pn: string; overridden: boolean; inventory: number }[] = []
 
     if (liveFallbackCandidates.length > 0) {
       try {
-        const liveData = await Promise.race([
-          jarltechLive(liveFallbackCandidates),
-          new Promise<JarltechStockInfo[]>((_, reject) =>
-            setTimeout(() => reject(new Error('jarltech-live-timeout')), 10_000)
-          ),
-        ])
+        const liveData = await readLiveJarltechWithDeadline(liveFallbackCandidates)
 
         for (const item of liveData) {
           if (!item.found) {
@@ -336,7 +353,22 @@ export async function lookupUnifiedStock(
         const cached = await prisma.jarltechStockCache.findMany({
           where: { partNumber: { in: uncachedPNs }, lastSync: { gte: jtFreshSince } },
         })
-        return cached.map(c => ({
+        const missingNewland = uncachedPNs.filter(pn => newlandPNs.has(pn) && !cached.some(c => c.partNumber === pn))
+        const live: JarltechStockInfo[] = missingNewland.length ? await readLiveJarltechWithDeadline(missingNewland.slice(0, 24))
+          .catch(err => { console.warn('[stock] Jarltech live fallback failed:', err); return [] }) : []
+        // Zapis potwierdzonych ofert jest częścią odczytu — kolejny render nie gubi DE.
+        await Promise.all(live.filter(item => item.found).map(item => {
+          const data = {
+            found: true, unitPrice: item.unitPrice ?? null, currency: item.currency ?? 'EUR',
+            inventory: item.inventory, incomingQty: item.incomingQty, incomingDate: item.incomingDate ?? null,
+            totalStock: item.totalStock, jarltechId: item.jarltechId ?? null,
+            availability: item.availability, deliveryText: item.deliveryText,
+          }
+          return prisma.jarltechStockCache.upsert({
+            where: { partNumber: item.partNumber }, create: { partNumber: item.partNumber, ...data }, update: data,
+          }).catch(err => console.warn('[stock] Jarltech cache write failed:', item.partNumber, err))
+        }))
+        return [...live, ...cached.map(c => ({
           partNumber: c.partNumber,
           found: c.found,
           unitPrice: c.unitPrice ?? undefined,
@@ -349,7 +381,7 @@ export async function lookupUnifiedStock(
           availability: c.availability as 'available' | 'on-order' | 'unavailable',
           deliveryText: c.deliveryText ?? '',
           lastSync: c.lastSync.toISOString(),
-        }))
+        }))]
       } catch (err) {
         console.error('[API /stock] Jarltech cache read error:', err)
         return []

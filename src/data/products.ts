@@ -2,6 +2,7 @@
 // Dane zebrane z oficjalnych źródeł Zebra
 
 import { newlandMt95KamburProIii } from './newland-mt95-kambur-pro-iii'
+import { newlandMt95ProIiiAccessories } from './newland-mt95-pro-iii-accessories'
 import { transferLabelProducts } from './transfer-label-products'
 import { transferRibbonProducts } from './transfer-ribbon-products'
 import { OLD_TT_PRODUCT_IDS, OLD_TT_ID_TO_SERIES } from './transfer-label-migration'
@@ -96055,6 +96056,15 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
   },
 ]
 
+// Nowe akcesoria Newland są dostępne także w właściwych podkategoriach katalogu.
+for (const subcategory of subcategories) {
+  const additions = newlandMt95ProIiiAccessories.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...desktopPrinters,
   ...industrialLightPrinters,
@@ -96114,6 +96124,7 @@ const rawProductList: Product[] = [
   ...et6xAccessories,
   ...newlandMobileComputers,
   newlandMt95KamburProIii,
+  ...newlandMt95ProIiiAccessories,
   ...newlandN7Accessories,
   ...newlandMT93Accessories,
   ...newlandMT95Accessories,

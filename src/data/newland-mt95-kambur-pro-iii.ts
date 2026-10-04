@@ -1,4 +1,5 @@
 import type { Product } from './products'
+import { newlandMt95ProIiiAccessoryIds } from './newland-mt95-pro-iii-accessories'
 
 export const newlandMt95KamburProIii: Product = {
   id: 'newland-mt95-kambur-pro-iii',
@@ -51,11 +52,11 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
   manufacturerId: 'newland',
   priceFrom: 2814.99,
   images: [
-    '/images/products/newland-mt95-kambur-pro-iii-front.png',
-    '/images/products/newland-mt95-kambur-pro-iii-back.png',
-    '/images/products/newland-mt95-kambur-pro-iii-sides.png',
+    '/images/products/newland-mt95-kambur-pro-iii-front-cutout-v2.png',
+    '/images/products/newland-mt95-kambur-pro-iii-back-cutout-v2.png',
+    '/images/products/newland-mt95-kambur-pro-iii-sides-cutout-v2.png',
   ],
-  imageDescriptions: ['Widok z przodu', 'Widok z tyłu', 'Widoki boków obudowy'],
+  imageDescriptions: ['Newland MT95 Kambur Pro III — widok z przodu, ekran 6 cali i przyciski skanowania', 'Newland MT95 Kambur Pro III — widok z tyłu, kamera i wymienna bateria', 'Newland MT95 Kambur Pro III — oba boki obudowy i przyciski'],
   tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
   availability: 'available',
   isNew: true,
@@ -96,6 +97,7 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
     availability: 'available',
   }],
   compatibleAccessories: [],
+  relatedAccessories: newlandMt95ProIiiAccessoryIds,
   relatedProducts: ['zebra-tc22', 'zebra-tc501'],
   faq: [
     { question: 'Czy MT95 Kambur Pro III obsługuje 5G i eSIM?', answer: 'Tak. Wariant NLS-MT9557-W5 obsługuje 5G, kartę nano-SIM i eSIM. Umożliwia połączenia głosowe i transmisję danych. Potrzebujesz aktywnej usługi operatora.' },

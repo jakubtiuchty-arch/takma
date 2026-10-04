@@ -1,5 +1,6 @@
 import { cache } from 'react'
 import { getProductBySlug, products } from '@/data/products'
+import { newlandMt95ProIiiAccessories } from '@/data/newland-mt95-pro-iii-accessories'
 import { bundleItemPartNumber, bundlePartNumber } from '@/lib/bundle'
 import { lookupUnifiedStock } from '@/lib/unified-stock'
 import type { StockInfo } from '@/lib/ingram'
@@ -11,6 +12,7 @@ import type { StockInfo } from '@/lib/ingram'
  */
 export const LIVE_OFFER_SLUGS = new Set([
   'newland-mt95-kambur-pro-iii',
+  ...newlandMt95ProIiiAccessories.map(product => product.slug),
   'zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
   // Kolorowe drukarki Epson: cena i stan prosto od dystrybutora, tak jak przy Zebrach.
   // Bez tego kwota doklejała się dopiero w przeglądarce, a pierwszy HTML miał „? netto”.
