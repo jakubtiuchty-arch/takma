@@ -65,8 +65,8 @@ export function wykryjAnomalie(dane: {
     .filter((e): e is [string, number] => e[1] != null && e[1] > 0)
 
   // Dwa źródła: tańsze wobec droższego. Trzy: każde wobec mediany wszystkich — mediana
-  // z dwóch pozostałych to ich średnia, którą drogi Ingram zawyżał (alarm na Jarltechu
-  // 659 zł przy BlueStarze 704 zł i Ingramie 1162 zł; 4.10.2026, pierwszy przebieg).
+  // z dwóch pozostałych to ich średnia, którą drogi Ingram zawyżał — pierwszy przebieg
+  // (4.10.2026) zgłaszał Jarltecha zgodnego z BlueStarem jako anomalię.
   if (!nosnik && zrodla.length >= 2) {
     const odniesienieDla = (zrodlo: string) =>
       zrodla.length === 2 ? zrodla.find(([z]) => z !== zrodlo)![1] : mediana(zrodla.map(([, c]) => c))
