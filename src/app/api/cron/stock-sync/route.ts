@@ -8,6 +8,7 @@ import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
 import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
+import { wykryjAnomalie, zapiszIZglosAnomalie, type Anomalia } from '@/lib/price-watchdog'
 
 export const maxDuration = 300 // 5 minutes
 
@@ -113,9 +114,20 @@ export async function GET(request: NextRequest) {
   const suspectPrices: string[] = []
   let found = 0
   let errors = 0
+  // Stróż cen: anomalie z tego przebiegu i numery zsynchronizowane z ceną
+  const anomalie: Anomalia[] = []
+  const przetworzone: string[] = []
+  // Pełna pula nie mieści się w maxDuration — kończymy wcześniej, żeby zdążyć ze stróżem
+  const KONIEC_PETLI_MS = (maxDuration - 30) * 1000
+  let przerwano = false
   const totalBatches = Math.ceil(allPNs.length / BATCH_SIZE)
 
   for (let i = 0; i < allPNs.length; i += BATCH_SIZE) {
+    if (Date.now() - startTime > KONIEC_PETLI_MS) {
+      przerwano = true
+      console.log(`[Stock Sync] Limit czasu — przerywam po ${i} PN, reszta w kolejnym przebiegu`)
+      break
+    }
     const batch = allPNs.slice(i, i + BATCH_SIZE)
     const batchNum = Math.floor(i / BATCH_SIZE) + 1
 
@@ -257,6 +269,18 @@ export async function GET(request: NextRequest) {
             ingramPrice = bestRawPricePLN
           }
 
+          if (price != null) {
+            przetworzone.push(pn)
+            anomalie.push(...wykryjAnomalie({
+              partNumber: pn,
+              ceny: { ingram: ingramPLN, bluestar: bluestarPLN, jarltech: jarltechPLN },
+              cenaSprzedazy: price,
+              poprzedniaCena: stanCache.get(pn)?.price ?? null,
+              katalog: getCatalogNetPrice(pn),
+              nosnik: isRibbon || isLabel,
+            }))
+          }
+
           // Availability & delivery text
           let availability: string
           let deliveryText: string
@@ -328,6 +352,15 @@ export async function GET(request: NextRequest) {
   const elapsed = Math.round((Date.now() - startTime) / 1000)
   console.log(`[Stock Sync] Done in ${elapsed}s: ${synced}/${allPNs.length} synced, ${found} found, ${errors} errors`)
 
+  // Stróż cen — mail tylko o nowych anomaliach (lib/price-watchdog)
+  let straznik: Awaited<ReturnType<typeof zapiszIZglosAnomalie>> | { blad: string } | null = null
+  try {
+    straznik = await zapiszIZglosAnomalie(anomalie, przetworzone)
+  } catch (err) {
+    console.error('[Stock Sync] Stróż cen nie zadziałał:', err)
+    straznik = { blad: err instanceof Error ? err.message : String(err) }
+  }
+
   if (suspectPrices.length) {
     console.warn(`[Stock Sync] Cena Ingrama odrzucona jako odstająca dla ${suspectPrices.length} PN: ${suspectPrices.slice(0, 20).join(', ')}`)
   }
@@ -340,6 +373,8 @@ export async function GET(request: NextRequest) {
     errors,
     // PN-y, przy których cena Ingrama była odstająca — warto zgłosić dystrybutorowi
     suspectIngramPrices: suspectPrices,
+    przerwanoNaLimicieCzasu: przerwano,
+    straznikCen: straznik,
     elapsedSeconds: elapsed,
     timestamp: new Date().toISOString(),
   })

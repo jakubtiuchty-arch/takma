@@ -553,6 +553,22 @@ model Invoice {
 // Stock Cache (universal stock sync — all products except M3/Jarltech)
 // ---------------------------------------------------------------------------
 
+/// Anomalie cen dystrybutorów wykryte przy synchronizacji — stróż mailowy (lib/price-watchdog, 4.10.2026).
+/// Jeden rekord na numer i rodzaj alarmu; notifiedAt = mail już wysłany.
+model PriceAnomaly {
+  partNumber  String
+  kind        String // 'dystrybutor-nisko' | 'ponizej-katalogu' | 'spadek'
+  source      String // 'ingram' | 'bluestar' | 'jarltech' | 'sklep'
+  price       Float
+  reference   Float
+  details     String
+  firstSeenAt DateTime  @default(now())
+  lastSeenAt  DateTime  @default(now())
+  notifiedAt  DateTime?
+
+  @@id([partNumber, kind])
+}
+
 model StockCache {
   partNumber   String   @id
   found        Boolean  @default(false)

@@ -39,9 +39,9 @@ const OUTLIER_FACTOR = 3
 
 /**
  * Ingram poniżej tego ułamka ceny Jarltecha → cenę zakupu liczymy z Jarltecha (decyzja 4.10.2026).
- * Tego dnia Ingram podawał przez API (YourPrice) dla ok. 150 numerów Zebry ceny o 40–48% niższe
- * niż Jarltech, np. ZD421t ZD4A042-30EM00EZ 902,80 zł wobec ok. 1480 zł — sklep pokazywał ceny
- * poniżej całego rynku. Realne różnice między dystrybutorami mieszczą się w kilkunastu procentach.
+ * Tego dnia Ingram podawał przez API dla ok. 150 numerów Zebry ceny o 40–48% niższe niż Jarltech,
+ * więc sklep pokazywał ceny poniżej całego rynku. Realne różnice między dystrybutorami mieszczą się
+ * w kilkunastu procentach.
  */
 const INGRAM_LOW_VS_JARLTECH = 0.75
 
