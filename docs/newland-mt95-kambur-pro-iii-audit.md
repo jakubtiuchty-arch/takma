@@ -115,3 +115,7 @@ Pliki wynikowe w public:
 - `/images/products/newland-hs106-catalog-v3.png` — HS106
 
 Weryfikacja: przejrzano wszystkie 23 zdjęcia w siatce kontrolnej. Test newland-accessories obejmuje powiązania i dokładne PN oraz geometrię wszystkich kadrów: 82%, wyśrodkowanie, marginesy i brak zmiany innych zdjęć.
+
+### Korekta wielkości zdjęć — 4 października 2026
+
+Na prośbę użytkownika zmniejszono wszystkie 23 zdjęcia akcesoriów o 15% w obu wymiarach. Dłuższy wymiar produktu zajmuje teraz 69,7% kadru (82% × 0,85). Wyśrodkowanie, proporcje i pliki źródłowe zachowano. Zmiana obejmuje karty katalogu, galerie i miniatury wymaganych elementów. Test geometrii sprawdza nową wielkość i co najmniej 15,15% marginesu z każdej strony.
