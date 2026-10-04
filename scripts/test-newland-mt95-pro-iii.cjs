@@ -43,6 +43,7 @@ try {
   assert.equal(schema.hasVariant[0].offers.price, '3462.44');
   assert.equal(schema.hasVariant[0].offers.priceValidUntil, '2027-03-31');
   assert.equal(schema.hasVariant[0].sku, 'NLS-MT9557-W5');
+  assert(!schema.hasVariant[0].description.includes('..'), 'schema description must not duplicate sentence punctuation');
 } finally { Date.now = originalNow; }
 const dimensions = JSON.parse(fs.readFileSync('src/data/product-image-dims.json'));
 for (const image of p.images) {
@@ -60,5 +61,17 @@ for (const text of [p.name, p.shortDescription, p.description, p.seoTitle, p.seo
 for (const id of p.relatedProducts) assert(products.some(p => p.id === id));
 assert.equal(p.comparison.models.filter(m => m.highlight).length, 1);
 assert(p.seoTitle.length <= 65 && p.seoDescription.length <= 165);
+assert(!/TC22|TC501/.test([p.description,p.shortDescription,p.seoTitle,p.seoDescription,...p.faq.flatMap(q=>[q.question,q.answer])].join(' ')), 'competitor comparisons belong only in the comparison table');
+assert.deepEqual(p.comparison.models.map(m=>m.name),['Zebra TC22','Newland MT95 Kambur Pro III','Zebra TC501']);
+assert(p.faq.some(q=>q.question==='Do czego służy MT95 Kambur Pro III?'));
+assert(p.faq.some(q=>q.question==='Jakie kody odczytuje MT95 Kambur Pro III?'));
+const segmenter=new Intl.Segmenter('pl',{granularity:'sentence'});
+for(const text of [p.description.replace(/^## .+$/gm,''),p.shortDescription,...p.faq.map(q=>q.answer)]){
+ for(const {segment} of segmenter.segment(text)){
+  const count=segment.trim().split(/\s+/).length;
+  assert(count<=25,`Polish plain-language target exceeded (${count} words): ${segment}`);
+ }
+}
+assert(fs.readFileSync('public/llms.txt','utf8').includes(`https://www.takma.com.pl/produkt/${slug}`));
 assert.equal(p.updatedAt, '2026-10-04');
 console.log('PASS: unique MT9557 PN, search, complete kit, battery, assets, manual, links, metadata and promotion expiry (Warsaw).');

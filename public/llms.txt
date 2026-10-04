@@ -238,6 +238,7 @@ Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwij
 - Honeywell CK67 (ultra-rugged gun, FlexRange XLR 24 m, 5G, od 7 765 zł): https://www.takma.com.pl/produkt/honeywell-ck67
 
 ## Terminale mobilne Newland
+- [Newland MT95 Kambur Pro III](https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-iii): terminal NLS-MT9557-W5 z Androidem 15, skanerem 2D CM60E, 5G, eSIM i Wi-Fi 6. Bateria 5100 mAh obsługuje wymianę bez wyłączania terminala. Zestaw zawiera zasilacz EU/UK i przewód USB-C.
 - Newland MT93 Megattera (najtańszy enterprise terminal, od 2 207 zł): https://www.takma.com.pl/produkt/newland-mt93-megattera-standard-plus
 - Newland N7 Cachalot Pro II (klawiatura fizyczna, od 3 346 zł): https://www.takma.com.pl/produkt/newland-n7-cachalot-pro-ii
 - Newland MT95 Kambur Pro II (5G, IP67, od 3 546 zł): https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-ii

@@ -93,7 +93,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         '@type': 'Product',
         '@id': `${url}#${variant.partNumber}`,
         name: `${product.name} ${variant.name}`,
-        description: `${product.shortDescription}. Wariant: ${variant.name}.`,
+        description: `${product.shortDescription.trim().replace(/[.!?]+$/, '')}. Wariant: ${variant.name.trim().replace(/[.!?]+$/, '')}.`,
         sku: variant.partNumber,
         mpn: variant.partNumber,
         ...(variant.gtin13 ? { gtin13: variant.gtin13 } : {}),

@@ -5,26 +5,32 @@ export const newlandMt95KamburProIii: Product = {
   id: 'newland-mt95-kambur-pro-iii',
   slug: 'newland-mt95-kambur-pro-iii',
   name: 'Newland MT95 Kambur Pro III',
-  shortDescription: 'Terminal mobilny z Androidem 15, skanerem 2D CM60E i 5G. Wi-Fi 6, eSIM, bateria 5100 mAh z wymianą hot-swap. Zestaw z zasilaczem i przewodem USB-C.',
+  shortDescription: 'Newland MT95 Kambur Pro III odczytuje kody 1D i 2D skanerem CM60E. Ma system Android 15, 5G, eSIM i Wi-Fi 6. Baterię 5100 mAh możesz wymienić bez wyłączania terminala. Zestaw zawiera zasilacz i przewód USB-C.',
   description: `Newland MT95 Kambur Pro III to terminal mobilny do skanowania kodów w magazynie, sklepie i podczas dostaw. Obsługuje kody 1D i 2D. Sieć 5G umożliwia przesyłanie danych poza zasięgiem firmowego Wi-Fi.
 
 ## Skanowanie kodów i praca z aplikacjami
 
 Skaner CM60E odczytuje między innymi kody EAN, QR, Data Matrix i PDF417. Celownik laserowy wskazuje miejsce skanowania. Funkcja Acuscan pomaga wybrać jeden kod, gdy kilka kodów znajduje się obok siebie.
 
-Terminal ma Android 15 z usługami Google Mobile Services i certyfikacją Android Enterprise Recommended. Procesor ma osiem rdzeni i częstotliwość 2,4 GHz. Pamięć obejmuje 6 GB RAM i 64 GB pamięci na dane. Kartą microSD możesz rozszerzyć pamięć o maksymalnie 2 TB.
+Terminal korzysta z systemu Android 15 i usług Google Mobile Services. Ma certyfikację Android Enterprise Recommended. Procesor ma osiem rdzeni i częstotliwość 2,4 GHz.
+
+Terminal ma 6 GB pamięci RAM i 64 GB pamięci na dane. Kartą microSD możesz rozszerzyć pamięć o maksymalnie 2 TB.
 
 ## Łączność w budynku i w terenie
 
 Wi-Fi 6 obsługuje pasma 2,4 i 5 GHz. Wariant NLS-MT9557-W5 obsługuje połączenia głosowe i transmisję danych przez sieć komórkową. Możesz użyć karty nano-SIM lub eSIM. Aby korzystać z sieci komórkowej, potrzebujesz aktywnej usługi operatora.
 
-Bluetooth 5.2 umożliwia połączenie z urządzeniami bezprzewodowymi. Odbiornik GNSS obsługuje GPS, Galileo, BeiDou i GLONASS. Moduł NFC służy do odczytu zgodnych kart i znaczników. Czytnik linii papilarnych znajduje się z boku obudowy.
+Bluetooth 5.2 umożliwia połączenie z urządzeniami bezprzewodowymi. Odbiornik GNSS obsługuje GPS, Galileo, BeiDou i GLONASS.
+
+Moduł NFC służy do odczytu zgodnych kart i znaczników. Czytnik linii papilarnych znajduje się z boku obudowy.
 
 ## Bateria i odporność
 
 Bateria ma pojemność 5100 mAh. Funkcja hot-swap umożliwia wymianę baterii bez wyłączania terminala. Port USB-C obsługuje szybkie ładowanie o mocy do 18 W.
 
-Ekran ma przekątną 6 cali i rozdzielczość 720 × 1440 pikseli. Szkło Gorilla Glass chroni jego powierzchnię. Obudowa ma klasę ochrony IP67. Terminal wytrzymuje upadek z wysokości 1,5 m na beton. Zakres temperatury pracy wynosi od −20 do +50°C.
+Ekran ma przekątną 6 cali i rozdzielczość 720 × 1440 pikseli. Szkło Gorilla Glass chroni jego powierzchnię.
+
+Obudowa ma klasę ochrony IP67. Terminal wytrzymuje upadek z wysokości 1,5 m na beton. Temperatura pracy wynosi od −20 do +50°C.
 
 ## Co zawiera zestaw NLS-MT9557-W5?
 
@@ -38,15 +44,11 @@ Ekran ma przekątną 6 cali i rozdzielczość 720 × 1440 pikseli. Szkło Gorill
 
 Do ładowania przez USB-C nie musisz dokupować zasilacza ani przewodu. Stacja ładująca, zapasowa bateria i uchwyt pistoletowy są opcjonalne. Nie są dołączone do zestawu.
 
-## Kiedy wybrać MT95 Kambur Pro III?
-
-To propozycja między [Zebra TC22](/produkt/zebra-tc22) a [Zebra TC501](/produkt/zebra-tc501). TC22 sprawdzi się przy pracy w zasięgu Wi-Fi. MT95 Kambur Pro III dodaje 5G, eSIM i lokalizację GNSS w gotowym zestawie z zasilaczem. TC501 oferuje Wi-Fi 7, większą pamięć i więcej wariantów skanera. Dobierz model do aplikacji, wymaganej łączności i warunków pracy.
-
 ## Akcesoria i obsługa
 
 Przy doborze akcesoriów używaj numeru PN terminala: NLS-MT9557-W5. Stacja NLS-MCD9557-1C, bateria NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01 są przeznaczone do wersji Pro III. Nie dobieraj akcesoriów wyłącznie po nazwie MT95. Starszy Kambur Pro II ma inne numery części.
 
-Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarządzania Ndevor. Planowane aktualizacje bezpieczeństwa obejmują okres do IV kwartału 2029 roku.`,
+Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarządzania Ndevor. Plan aktualizacji bezpieczeństwa obejmuje okres do IV kwartału 2029 roku.`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: ['terminale-newland'],
   manufacturerId: 'newland',
@@ -103,7 +105,8 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
     { question: 'Czy MT95 Kambur Pro III obsługuje 5G i eSIM?', answer: 'Tak. Wariant NLS-MT9557-W5 obsługuje 5G, kartę nano-SIM i eSIM. Umożliwia połączenia głosowe i transmisję danych. Potrzebujesz aktywnej usługi operatora.' },
     { question: 'Czy zestaw zawiera zasilacz i przewód?', answer: 'Tak. Zestaw NLS-MT9557-W5 zawiera zasilacz EU/UK i przewód USB-C. Zawiera także baterię, osłonę, pasek na rękę i folię na ekran. Stacja ładująca jest opcjonalna.' },
     { question: 'Jaką baterię ma MT95 Kambur Pro III?', answer: 'Bateria ma pojemność 5100 mAh. Obsługuje wymianę hot-swap bez wyłączania terminala. Port USB-C umożliwia ładowanie o mocy do 18 W.' },
-    { question: 'Czym MT95 Kambur Pro III różni się od Zebra TC22 i TC501?', answer: 'TC22 jest terminalem do pracy w sieci Wi-Fi. MT95 Kambur Pro III ma dodatkowo 5G, eSIM i GNSS. TC501 oferuje Wi-Fi 7, większą pamięć oraz więcej wariantów skanera. Wybór zależy od aplikacji i warunków pracy.' },
+    { question: 'Do czego służy MT95 Kambur Pro III?', answer: 'Newland MT95 Kambur Pro III służy do odczytu kodów w magazynie, sklepie i podczas dostaw. Obsługuje kody 1D i 2D. Sieć 5G umożliwia przesyłanie danych poza zasięgiem firmowego Wi-Fi.' },
+    { question: 'Jakie kody odczytuje MT95 Kambur Pro III?', answer: 'Skaner CM60E w terminalu Newland MT95 Kambur Pro III odczytuje kody 1D i 2D, między innymi EAN, QR, Data Matrix i PDF417. Funkcja Acuscan pomaga wybrać jeden kod, gdy kilka kodów znajduje się obok siebie.' },
     { question: 'Czy akcesoria Kambur Pro II pasują do Pro III?', answer: 'Nie zakładaj zgodności na podstawie nazwy MT95. Dla Pro III przewidziano między innymi stację NLS-MCD9557-1C, baterię NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01. Sprawdź PN przed zamówieniem.' },
   ],
   comparison: {
@@ -114,8 +117,8 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
       { name: 'Zebra TC501', slug: 'zebra-tc501', specs: { 'Wi-Fi': 'Wi-Fi 7', 'Sieć komórkowa': '5G w wariantach WAN', 'Pamięć RAM / Flash': '8 / 128 lub 12 / 256 GB', 'Skaner': 'SR500, SR560 lub AC670', 'Ekran': '6 cali, AMOLED, 1080 × 2160', 'Zastosowanie': 'Rozbudowane aplikacje i wybór skanera' } },
     ],
   },
-  seoTitle: 'Newland MT95 Kambur Pro III — terminal 5G, Android 15 | TAKMA',
-  seoDescription: 'Newland MT95 Kambur Pro III: skaner 2D CM60E, 5G, eSIM, Wi-Fi 6 i bateria 5100 mAh hot-swap. Zestaw z zasilaczem EU i USB-C. Sprawdź cenę i dostępność.',
+  seoTitle: 'Newland MT95 Kambur Pro III — terminal 5G, 2D | TAKMA',
+  seoDescription: 'Newland MT95 Kambur Pro III to terminal 5G ze skanerem 2D i Androidem 15. Zestaw zawiera zasilacz i przewód USB-C. Sprawdź cenę i dostępność.',
   downloads: [
     { name: 'Karta katalogowa MT95 Kambur Pro III (EN)', type: 'datasheet', url: '/datasheets/newland-mt95-kambur-pro-iii-en.pdf', size: 'PDF' },
     { name: 'Instrukcja obsługi MT95 Kambur Pro III (EN)', type: 'manual', url: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
