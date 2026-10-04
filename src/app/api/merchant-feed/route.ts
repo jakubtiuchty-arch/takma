@@ -13,6 +13,7 @@ import {
 } from '@/data/products'
 import { prisma } from '@/lib/db'
 import { isValidGtin } from '@/lib/allegro/gtin'
+import { gtinyDrukarkiZebra } from '@/lib/gtin-drukarek-zebra'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -68,7 +69,8 @@ function buildItem(opts: {
   availability: string
   brand: string
   mpn: string
-  gtin?: string
+  /** Do 10 kodów — Google łączy ofertę z produktem po dowolnym z nich */
+  gtiny?: string[]
   itemGroupId?: string
   productType?: string
   googleProductCategory?: string
@@ -86,7 +88,7 @@ function buildItem(opts: {
     `      <g:mpn>${escapeXml(opts.mpn)}</g:mpn>`,
     `      <g:condition>new</g:condition>`,
   ]
-  if (opts.gtin) lines.push(`      <g:gtin>${escapeXml(opts.gtin)}</g:gtin>`)
+  for (const g of (opts.gtiny ?? []).slice(0, 10)) lines.push(`      <g:gtin>${escapeXml(g)}</g:gtin>`)
   if (opts.itemGroupId) lines.push(`      <g:item_group_id>${escapeXml(opts.itemGroupId)}</g:item_group_id>`)
   if (opts.productType) lines.push(`      <g:product_type>${escapeXml(opts.productType)}</g:product_type>`)
   if (opts.googleProductCategory) lines.push(`      <g:google_product_category>${opts.googleProductCategory}</g:google_product_category>`)
@@ -196,7 +198,11 @@ export async function GET() {
       stripMarkdown(c.product.description || c.product.shortDescription || ''),
       5000,
     )
-    const gtin = eanMap.get(c.pn.toUpperCase())
+    // Kod z ProductEan + kody drukarek Zebra z katalogu (ten sam model ma kody na różne rynki);
+    // bez duplikatów tego samego kodu zapisanego w 12 i 13 cyfrach
+    const gtiny = [eanMap.get(c.pn.toUpperCase()), ...gtinyDrukarkiZebra(c.pn)]
+      .filter((g): g is string => isValidGtin(g))
+      .filter((g, i, a) => a.findIndex((x) => x.padStart(14, '0') === g.padStart(14, '0')) === i)
 
     // Strony statyczne wariantów istnieją tylko dla etykiet/taśm — urządzenia
     // przez ?pn= (bez tego Google dostawał 404 dla 45% ofert; szczegóły: ceneo-feed).
@@ -225,7 +231,7 @@ export async function GET() {
       availability,
       brand,
       mpn: c.pn,
-      gtin,
+      gtiny,
       itemGroupId: c.variant ? c.product.slug : undefined,
       productType,
       googleProductCategory: GOOGLE_CATEGORY[c.product.categoryId],
