@@ -7,7 +7,7 @@ export function getProductImageFrameStyle(src: string): CSSProperties | undefine
   if (!bounds) return undefined
 
   const [left, top, right, bottom] = bounds
-  const scale = (0.82 * 0.85) / Math.max(right - left, bottom - top)
+  const scale = (0.82 * 0.85 * 0.95) / Math.max(right - left, bottom - top)
   const x = (0.5 - (left + right) / 2) * 100
   const y = (0.5 - (top + bottom) / 2) * 100
 

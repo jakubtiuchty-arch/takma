@@ -119,3 +119,5 @@ Weryfikacja: przejrzano wszystkie 23 zdjęcia w siatce kontrolnej. Test newland-
 ### Korekta wielkości zdjęć — 4 października 2026
 
 Na prośbę użytkownika zmniejszono wszystkie 23 zdjęcia akcesoriów o 15% w obu wymiarach. Dłuższy wymiar produktu zajmuje teraz 69,7% kadru (82% × 0,85). Wyśrodkowanie, proporcje i pliki źródłowe zachowano. Zmiana obejmuje karty katalogu, galerie i miniatury wymaganych elementów. Test geometrii sprawdza nową wielkość i co najmniej 15,15% marginesu z każdej strony.
+
+Kolejna korekta tego samego dnia: zmniejszono zdjęcia o dodatkowe 5% względem poprzedniej wersji. Dłuższy wymiar produktu zajmuje 66,215% kadru (82% × 0,85 × 0,95), a minimalny margines wynosi 16,8925%. Test geometrii uwzględnia tę korektę dla wszystkich 23 zdjęć.
