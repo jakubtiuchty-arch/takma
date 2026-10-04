@@ -98,6 +98,12 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
     priceFrom: 2814.99,
     availability: 'available',
   }],
+  variantAttributeTooltips: {
+    'Skaner': 'CM60E odczytuje kody 1D i 2D.\n• Odczytuje między innymi EAN, QR, Data Matrix i PDF417.\n• Funkcja Acuscan pomaga wybrać jeden kod, gdy kilka kodów znajduje się obok siebie.',
+    'Pamięć': 'Wariant ma 6 GB pamięci RAM i 64 GB pamięci na dane.\n• Pamięć RAM służy do pracy aplikacji.\n• Pamięć na dane przechowuje aplikacje i pliki.\n• Karta microSD rozszerza pamięć o maksymalnie 2 TB.',
+    'Łączność': 'Wariant NLS-MT9557-W5 obsługuje 5G, Wi-Fi 6, nano-SIM i eSIM.\n• Wi-Fi 6 służy do połączenia z siecią bezprzewodową.\n• Sieć 5G umożliwia połączenia głosowe i transmisję danych.\n• Aby korzystać z sieci komórkowej, potrzebujesz aktywnej usługi operatora.',
+    'Zestaw': 'Zestaw NLS-MT9557-W5 zawiera terminal i elementy do jego ładowania.\n• Zasilacz EU/UK i przewód USB-C są dołączone do zestawu.\n• Zestaw zawiera także baterię, osłonę, pasek na rękę i folię na ekran.\n• Stacja ładująca jest opcjonalna i nie jest dołączona do zestawu.',
+  },
   compatibleAccessories: [],
   relatedAccessories: newlandMt95ProIiiAccessoryIds,
   relatedProducts: ['zebra-tc22', 'zebra-tc501'],

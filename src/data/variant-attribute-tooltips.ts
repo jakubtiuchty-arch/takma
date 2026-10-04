@@ -19,7 +19,7 @@ export const variantAttributeTooltips: Record<string, string> = {
   'Kabel RS232': 'Kabel szeregowy RS-232 w zestawie.\n• Do starszych systemów i kas',
   'LPT': 'Port równoległy (Centronics).\n• Do starszych systemów bez USB i sieci',
   'Interfejs': 'Sposób podłączenia do komputera lub kasy.\n• USB — najczęstszy\n• RS-232 — starsze systemy, kasy fiskalne\n• Multi-IF — kilka interfejsów, wybór kablem',
-  'Łączność': 'Jak urządzenie łączy się z komputerem, kasą lub siecią.\n• Kabel spiralny — praca przy ladzie\n• Kabel prosty — stanowisko stałe\n• Bluetooth ze stacją, Wi-Fi — bez kabla',
+  'Łączność': 'Ta kolumna pokazuje dostępne sposoby połączenia.\n• Dobierz połączenie do sieci i urządzeń, z których korzystasz.\n• Dostępne interfejsy podano w danym wariancie.',
   'LCD': 'Wyświetlacz stanu i ustawień.\n• Kalibracja i diagnostyka bez komputera',
   'Ekran': 'Rodzaj panelu sterowania.\n• Ikonowy — diody i przyciski, najprostsza obsługa\n• LCD — podgląd stanu i ustawień\n• Dotykowy — pełna konfiguracja na urządzeniu',
   'Wyświetlacz': 'Rodzaj i przekątna ekranu.\n• Dotykowy — konfiguracja bez komputera',
@@ -48,7 +48,7 @@ export const variantAttributeTooltips: Record<string, string> = {
   'Długość': 'Długość nawoju taśmy.\n• 74–110 m — drukarki biurkowe\n• 300–450 m — drukarki przemysłowe',
   'Etykiet w rolce': 'Liczba etykiet na rolce.\n• Zależy od wysokości etykiety i średnicy rolki, którą przyjmuje drukarka',
   // ── terminale i tablety ───────────────────────────────────────────────────
-  'Skaner': 'Moduł skanujący (silnik).\n• SE4710, SE4770 — kody 1D/2D ze standardowej odległości\n• SE4850, SE58 — z daleka, regały wysokiego składowania\n• DPM — kody wybite na metalu i plastiku',
+  'Skaner': 'Ta kolumna pokazuje moduł do odczytu kodów.\n• Rodzaj modułu określa obsługiwane kody i zakres odczytu.\n• W tabeli podano moduł dostępny w danym wariancie.',
   'Pamięć': 'RAM / pamięć flash.\n• Więcej RAM — kilka aplikacji naraz\n• Więcej flash — aplikacje, mapy, dane offline\n• Do prostego skanowania w WMS wystarcza mniejsza',
   'RAM': 'Pamięć operacyjna.\n• Więcej — płynniejsza praca przy kilku aplikacjach',
   'RAM / Flash': 'Pamięć operacyjna / pamięć na dane i aplikacje.\n• Większa — rozbudowane aplikacje, praca offline',
@@ -91,7 +91,7 @@ export const variantAttributeTooltips: Record<string, string> = {
   'Baza prezentacyjna': 'Baza do skanowania bez brania do ręki w zestawie.\n• Np. przy kasie',
   'Zasilacz': 'Zasilacz sieciowy w zestawie.\n• Bez tego oznaczenia — dokupić osobno lub zasilać z USB',
   'Kabel': 'Rodzaj kabla w zestawie.\n• USB lub RS-232 — zależnie od systemu\n• Spiralny — praca przy ladzie',
-  'Zestaw': 'Zawartość opakowania.\n• Kit — skaner z kablem, czasem z podstawką\n• Sam skaner — bez kabla, do dokupienia',
+  'Zestaw': 'Ta kolumna pokazuje elementy dołączone do wariantu.\n• Sprawdź pełną zawartość zestawu w opisie produktu.\n• Akcesoria sprzedawane osobno nie są częścią zestawu.',
   'Kolor': 'Kolor obudowy.\n• Biały — apteki, placówki medyczne\n• Czarny — magazyn, handel',
   'Region': 'Region certyfikacji i pasm radiowych.\n• Do Polski — wariant europejski',
   // ── dodatki do drukarek (opisy przeniesione z komponentu tabeli) ─────────

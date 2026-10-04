@@ -73,5 +73,14 @@ for(const text of [p.description.replace(/^## .+$/gm,''),p.shortDescription,...p
  }
 }
 assert(fs.readFileSync('public/llms.txt','utf8').includes(`https://www.takma.com.pl/produkt/${slug}`));
+const {variantAttributeTooltips: sharedTooltips} = require('../src/data/variant-attribute-tooltips.ts');
+for (const key of Object.keys(p.variants[0].attributes)) {
+  assert(p.variantAttributeTooltips[key], `missing product-specific tooltip: ${key}`);
+  assert(!/SE\d{4}|SE58|Zebra|DPM/.test(p.variantAttributeTooltips[key]), `unrelated scanner detail in ${key}`);
+}
+assert(p.variantAttributeTooltips.Skaner.includes('CM60E'));
+for (const key of ['Skaner', 'Łączność', 'Zestaw']) {
+  assert(!/SE\d{4}|SE58|DPM|Zebra|Kabel spiralny|Sam skaner/.test(sharedTooltips[key]), `shared ${key} tooltip must not assume a brand or product type`);
+}
 assert.equal(p.updatedAt, '2026-10-04');
 console.log('PASS: unique MT9557 PN, search, complete kit, battery, assets, manual, links, metadata and promotion expiry (Warsaw).');
