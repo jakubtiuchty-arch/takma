@@ -459,7 +459,7 @@ export default function AboutPage() {
             <h3 className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-6">
               Nasze certyfikaty Zebra Technologies
             </h3>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-8 sm:gap-x-12">
               <div className="text-center">
                 <Image
                   src="/images/certifications/zebra-premier-solution-partner.png"
@@ -483,6 +483,15 @@ export default function AboutPage() {
                   src="/images/certifications/zebra-printer-repair-specialist.png"
                   alt="Zebra Premier Solution Partner — Printer Repair Specialist — autoryzowany serwis TAKMA"
                   width={220}
+                  height={48}
+                  className="mx-auto"
+                />
+              </div>
+              <div className="text-center">
+                <Image
+                  src="/images/certifications/zebra-printer-repair-specialist-card-printer.png"
+                  alt="Zebra Premier Solution Partner — Printer Repair Specialist — Card Printer — autoryzowany serwis drukarek kart TAKMA"
+                  width={228}
                   height={48}
                   className="mx-auto"
                 />

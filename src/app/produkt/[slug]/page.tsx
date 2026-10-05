@@ -1622,6 +1622,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
                     <Image width={1823} height={540} sizes="162px" loading="lazy" src="/images/certyfikat-1-zebra.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist" className="h-10 sm:h-12 w-auto" />
                   </div>
+                  <div className="bg-white rounded-xl px-3 py-2 shadow-sm">
+                    <Image width={1891} height={540} sizes="168px" loading="lazy" src="/images/certyfikat-4-zebra.png" alt="Zebra Premier Solution Partner — Printer Repair Specialist — Card Printer" className="h-10 sm:h-12 w-auto" />
+                  </div>
                   <a href="https://www.zebra.com/pl/pl/partners/partner-application-locator/partner-details.html?id=001i0000019OwOUAA0&viewType=nav" target="_blank" rel="noopener" className="bg-white rounded-xl px-3 py-2 shadow-sm hover:shadow-md transition-shadow">
                     <Image width={1823} height={540} sizes="162px" loading="lazy" src="/images/certyfikat-3-zebra.png" alt="Zebra Premier Solution Partner" className="h-10 sm:h-12 w-auto" />
                   </a>

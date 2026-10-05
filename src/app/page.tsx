@@ -374,7 +374,7 @@ export default function HomePage() {
                 Certyfikaty Zebra
               </h3>
               <p className="text-sm sm:text-base text-[#0A1A2F]/80 font-medium leading-relaxed max-w-2xl mx-auto">
-                TAKMA jako jeden z nielicznych partnerów Zebra w Polsce posiada 3 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
+                TAKMA jako jeden z nielicznych partnerów Zebra w Polsce posiada 4 oficjalne certyfikaty potwierdzające najwyższe kompetencje w sprzedaży i serwisie.
               </p>
             </div>
           </div>
@@ -383,6 +383,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-6 mt-6 lg:mt-8">
             {[
               { badge: '/images/certyfikat-1-zebra.png', doc: '/images/Certyfikaty/Repair_Specialist.png', alt: 'Zebra Printer Repair Specialist — certyfikat autoryzowanego serwisu TAKMA', title: 'Certyfikat Printer Repair Specialist' },
+              { badge: '/images/certyfikat-4-zebra.png', doc: '/images/Certyfikaty/Repair_Specialist_Card_Printer.png', alt: 'Zebra Printer Repair Specialist — Card Printer — certyfikat autoryzowanego serwisu drukarek kart TAKMA', title: 'Certyfikat Printer Repair Specialist — Card Printer' },
               { badge: '/images/certyfikat-2-zebra.png', doc: '/images/Certyfikaty/Public_sector_specialist.png', alt: 'Zebra Public Sector Specialist — certyfikat specjalisty sektora publicznego TAKMA', title: 'Certyfikat Public Sector Specialist' },
               { badge: '/images/certyfikat-3-zebra.png', doc: '/images/Certyfikaty/Premier.png', alt: 'Zebra Premier Solution Partner — certyfikat partnerstwa TAKMA', title: 'Certyfikat Premier Solution Partner' },
             ].map((cert) => (
