@@ -1,5 +1,7 @@
 'use client'
 
+import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Badge, Button } from '@/components/ui'
@@ -86,14 +88,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   // magazynie — inaczej kafel obiecuje cenę konfiguracji, której nie da się
   // kupić od ręki. Gdy nic nie ma stanu, pokazujemy najtańszą cenę katalogową.
   const displayPrice = useMemo(() => {
-    if (stockLoading || !anyFound) return staticPrice
+    if (stockLoading || !anyFound) return isZebraTerminalProduct(product) ? undefined : staticPrice
     const znalezione = partNumbers
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
     const posortuj = (lista: typeof znalezione) => lista.map(s => s.price!).sort((a, b) => a - b)
     const naStanie = posortuj(znalezione.filter(s => s.stockPL + s.stockDE > 0))
-    return naStanie[0] ?? posortuj(znalezione)[0] ?? staticPrice
-  }, [stockLoading, anyFound, partNumbers, stockData, staticPrice])
+    return naStanie[0] ?? posortuj(znalezione)[0] ?? (isZebraTerminalProduct(product) ? undefined : staticPrice)
+  }, [stockLoading, anyFound, partNumbers, stockData, staticPrice, product])
 
   // Czas wysyłki liczymy z pól stanu, nie z gotowego tekstu — ten w cache'u
   // bywa zapisany bez polskich znaków i różni się między źródłami.
@@ -113,7 +115,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     return null
   })()
 
-  const liveAvailability = liveStatus ?? product.availability
+  const liveAvailability = liveStatus ?? (isZebraTerminalProduct(product) ? 'unavailable' : product.availability)
   // Brak stanu magazynowego pokazujemy jako niedostępność.
   const isUnavailable = liveAvailability !== 'available'
 

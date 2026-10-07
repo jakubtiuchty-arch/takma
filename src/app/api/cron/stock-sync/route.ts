@@ -1,3 +1,4 @@
+import { zebraTerminalPartNumbers } from '@/lib/zebra-terminal-catalog'
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
@@ -93,7 +94,9 @@ export async function GET(request: NextRequest) {
     (await prisma.stockCache.findMany({ select: { partNumber: true, price: true, lastSync: true } }))
       .map((r) => [r.partNumber, r]),
   )
-  const allPNs = [...wszystkiePNs].sort((a, b) => {
+  // Terminale mają osobny pełny synchronizator z aktualnymi ofertami wszystkich źródeł.
+  // Ten przebieg nie może zastąpić ich ceną z wielodniowego cache Jarltech.
+  const allPNs = [...wszystkiePNs].filter(pn => !zebraTerminalPartNumbers.has(pn)).sort((a, b) => {
     const ra = stanCache.get(a)
     const rb = stanCache.get(b)
     const bezCenyA = !ra || ra.price == null ? 0 : 1

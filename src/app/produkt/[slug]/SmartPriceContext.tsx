@@ -1,5 +1,7 @@
 'use client'
 
+import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
+
 import { createContext, useContext, useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Product } from '@/data/products'
@@ -130,11 +132,15 @@ export function SmartPriceProvider({
   }, [pnKey, manualStockData])
 
   const state = useMemo<SmartPriceState>(() => {
-    if (product.slug === 'zebra-zd421t') {
+    // TC201 ma warianty bez ceny katalogowej. Nie pokazuj dla nich ceny
+    // podstawowego modelu Wi-Fi, gdy dystrybutor nie podał ceny danego PN.
+    const fallbackPrice = product.slug === 'zebra-tc201' ? undefined : product.priceFrom
+    if (product.slug === 'zebra-zd421t' || isZebraTerminalProduct(product)) {
       const selected = selectProductVariant(product, Array.from(stockData.values()), urlPn)
-      const stock = selected ? stockData.get(selected.partNumber) : undefined
+      const selectedPn = selected?.partNumber ?? product.specifications.find(spec => spec.name === 'Part Number')?.value
+      const stock = selectedPn ? stockData.get(selectedPn) : undefined
       return {
-        displayedPn: selected?.partNumber,
+        displayedPn: selectedPn,
         price: stock?.found && stock.price && stock.price > 0 ? stock.price : undefined,
         variantName: selected?.name,
         isFallback: false, loading, stockData, partNumbers,
@@ -152,7 +158,7 @@ export function SmartPriceProvider({
       const livePrice = (stock?.found && stock?.price) ? stock.price : null
       return {
         displayedPn: urlVariant.partNumber,
-        price: livePrice ?? urlVariant.price ?? product.priceFrom ?? undefined,
+        price: livePrice ?? urlVariant.price ?? fallbackPrice ?? undefined,
         isFallback: false,
         loading,
         stockData,
@@ -173,7 +179,7 @@ export function SmartPriceProvider({
       const best = (preferredPn && allVariants.find(v => v.partNumber === preferredPn)) || (withPrice.length > 0 ? withPrice[0] : allVariants[0])
       return {
         displayedPn: best.partNumber,
-        price: best.price ?? product.priceFrom ?? undefined,
+        price: best.price ?? fallbackPrice ?? undefined,
         isFallback: false,
         loading,
         stockData,
@@ -188,7 +194,7 @@ export function SmartPriceProvider({
       const best = (preferredPn && allVariants.find(v => v.partNumber === preferredPn)) || (withPrice.length > 0 ? withPrice[0] : allVariants[0])
       return {
         displayedPn: best.partNumber,
-        price: best.price ?? product.priceFrom ?? undefined,
+        price: best.price ?? fallbackPrice ?? undefined,
         isFallback: false,
         loading: false,
         stockData,
@@ -229,7 +235,7 @@ export function SmartPriceProvider({
 
     const stock = stockData.get(best.partNumber)
     const livePrice = (stock?.found && stock?.price) ? stock.price : null
-    const price = livePrice ?? best.price ?? product.priceFrom ?? undefined
+    const price = livePrice ?? best.price ?? fallbackPrice ?? undefined
 
     return {
       displayedPn: best.partNumber,

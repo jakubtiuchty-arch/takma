@@ -1,5 +1,7 @@
 'use client'
 
+import { isZebraTerminalSlug } from '@/lib/zebra-terminal-pricing'
+
 import { useEffect, useState, useMemo, useRef } from 'react'
 import { variantAttributeTooltips } from '@/data/variant-attribute-tooltips'
 import { createPortal } from 'react-dom'
@@ -243,10 +245,10 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
     ? availabilityConfig[stock!.availability]
-    : productSlug === 'zebra-zd421t' ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
-  const effectiveAvailability = liveSignal ? stock!.availability : productSlug === 'zebra-zd421t' ? 'unavailable' : variant.availability
+    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+  const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : productSlug === 'zebra-zd421t' ? undefined : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (
@@ -336,10 +338,10 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
     ? availabilityConfig[stock!.availability]
-    : productSlug === 'zebra-zd421t' ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
-  const effectiveAvailability = liveSignal ? stock!.availability : productSlug === 'zebra-zd421t' ? 'unavailable' : variant.availability
+    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+  const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : productSlug === 'zebra-zd421t' ? undefined : variant.priceFrom
+  const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
   const cartPrice = variant.promoPrice || livePrice
 
   return (

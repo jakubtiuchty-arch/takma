@@ -373,6 +373,17 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
   // Kolejka — jeden request na raz, żeby nie zalewać Ingram
   const { products, errors } = await enqueue(() => sendPnARequest(xmlBody))
 
+  // Błąd jednej pozycji może ukryć inne numery w odpowiedzi zbiorczej.
+  // Sprawdź brakujące pozycje osobno przed zapisaniem negatywnego wyniku.
+  if (uncached.length > 1 && errors.some(error => error.includes('line_errors'))) {
+    const received = new Set(products.flatMap(product => [product.vpn.toUpperCase(), product.itemId.toUpperCase()]))
+    for (const pn of uncached) {
+      if (received.has(pn.toUpperCase()) || received.has(toIngramItemId(pn))) continue
+      const retry = await enqueue(() => sendPnARequest(buildPnARequest([toIngramItemId(pn)])))
+      products.push(...retry.products)
+    }
+  }
+
   // Jeśli same błędy i żadnych produktów — oznacz cooldown
   if (products.length === 0 && errors.length > 0) {
     lastErrorAt = Date.now()

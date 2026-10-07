@@ -9,6 +9,8 @@ import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
 import { applyStockOverrides, MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrides'
 import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
+import { zebraTerminalPartNumbers, stockCacheMaxAge } from '@/lib/zebra-terminal-catalog'
+import { selectTerminalPurchasePrice, ZEBRA_TERMINAL_CACHE_MAX_AGE_MS, ZEBRA_TERMINAL_PRICE_MULTIPLIER } from '@/lib/zebra-terminal-pricing'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -64,7 +66,8 @@ async function readLiveJarltechWithDeadline(partNumbers: string[]): Promise<Jarl
     return await Promise.race([
       jarltechLive(partNumbers),
       new Promise<JarltechStockInfo[]>((_, reject) => {
-        timeout = setTimeout(() => reject(new Error('jarltech-live-timeout')), 10_000)
+        timeout = setTimeout(() => reject(new Error('jarltech-live-timeout')),
+          partNumbers.some(pn => zebraTerminalPartNumbers.has(pn)) ? 30_000 : 10_000)
       }),
     ])
   } finally {
@@ -140,19 +143,22 @@ export async function lookupUnifiedStock(
       prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers }, lastSync: { gte: jtFreshSince } } }),
     ])
 
-    const jarltechCacheMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
+    const jarltechCacheMap = new Map(jarltechRows
+      .filter(j => !zebraTerminalPartNumbers.has(j.partNumber) || cacheCheckTime.getTime() - j.lastSync.getTime() < ZEBRA_TERMINAL_CACHE_MAX_AGE_MS)
+      .map(j => [j.partNumber, j]))
     const overriddenPNs: string[] = []
 
     const freshCache = new Map<string, typeof cachedRows[0]>()
     for (const row of cachedRows) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
-      if (age >= CACHE_MAX_AGE_MS || (!row.found && age >= 5 * 60 * 1000)) continue
+      if (age >= stockCacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000)) continue
 
       // Ponownie porównaj rażąco zawyżoną cenę z ceną katalogową i źródłami.
       const catalogPrice = getCatalogNetPrice(row.partNumber)
       if (catalogPrice && row.price && row.price > catalogPrice * 3) continue
 
       const j = jarltechCacheMap.get(row.partNumber)
+      if (zebraTerminalPartNumbers.has(row.partNumber) && (!j || j.lastSync.getTime() > row.lastSync.getTime())) continue
       // Potwierdzony wpis Jarltech musi zastąpić wcześniejsze nieznalezienie,
       // również przy zerowym zapasie i oczekiwanej dostawie.
       if (j?.found && !row.found) continue
@@ -353,22 +359,24 @@ export async function lookupUnifiedStock(
         const cached = await prisma.jarltechStockCache.findMany({
           where: { partNumber: { in: uncachedPNs }, lastSync: { gte: jtFreshSince } },
         })
+        const liveTerminalPNs = uncachedPNs.filter(pn => zebraTerminalPartNumbers.has(pn) && !cached.some(c => c.partNumber === pn && Date.now() - c.lastSync.getTime() < ZEBRA_TERMINAL_CACHE_MAX_AGE_MS))
         const missingNewland = uncachedPNs.filter(pn => newlandPNs.has(pn) && !cached.some(c => c.partNumber === pn))
-        const live: JarltechStockInfo[] = missingNewland.length ? await readLiveJarltechWithDeadline(missingNewland.slice(0, 24))
+        const livePNs = Array.from(new Set([...liveTerminalPNs, ...missingNewland.slice(0, 24)]))
+        const live: JarltechStockInfo[] = livePNs.length ? await readLiveJarltechWithDeadline(livePNs)
           .catch(err => { console.warn('[stock] Jarltech live fallback failed:', err); return [] }) : []
         // Zapis potwierdzonych ofert jest częścią odczytu — kolejny render nie gubi DE.
-        await Promise.all(live.filter(item => item.found).map(item => {
+        await Promise.all(live.filter(item => item.found || zebraTerminalPartNumbers.has(item.partNumber)).map(item => {
           const data = {
-            found: true, unitPrice: item.unitPrice ?? null, currency: item.currency ?? 'EUR',
+            found: item.found, unitPrice: item.unitPrice ?? null, currency: item.currency ?? 'EUR',
             inventory: item.inventory, incomingQty: item.incomingQty, incomingDate: item.incomingDate ?? null,
             totalStock: item.totalStock, jarltechId: item.jarltechId ?? null,
-            availability: item.availability, deliveryText: item.deliveryText,
+            availability: item.availability, deliveryText: item.deliveryText, lastSync: new Date(),
           }
           return prisma.jarltechStockCache.upsert({
             where: { partNumber: item.partNumber }, create: { partNumber: item.partNumber, ...data }, update: data,
           }).catch(err => console.warn('[stock] Jarltech cache write failed:', item.partNumber, err))
         }))
-        return [...live, ...cached.map(c => ({
+        return [...live, ...cached.filter(c => !livePNs.includes(c.partNumber)).map(c => ({
           partNumber: c.partNumber,
           found: c.found,
           unitPrice: c.unitPrice ?? undefined,
@@ -502,11 +510,10 @@ export async function lookupUnifiedStock(
       // Odrzuca źródła rażąco poniżej Ingrama (błąd pakietowy) ORAZ samego Ingrama,
       // gdy to on podaje cenę odstającą w górę (ET401EA-3V101F2P-A6: 164 922 zł
       // wobec 547 EUR w Jarltechu).
-      const selection = selectPurchasePrice({
-        ingram: ingramPLN,
-        bluestar: bluestarPLN,
-        jarltech: jarltechPLN,
-      }, getCatalogNetPrice(pn))
+      const sourcePrices = { ingram: ingramPLN, bluestar: bluestarPLN, jarltech: jarltechPLN }
+      const selection = zebraTerminalPartNumbers.has(pn)
+        ? selectTerminalPurchasePrice(sourcePrices, { ingram: (ing?.stockPL ?? 0) + (ing?.stockDE ?? 0), bluestar: bs?.inventory ?? 0, jarltech: jl?.inventory ?? 0 }, getCatalogNetPrice(pn))
+        : selectPurchasePrice(sourcePrices, getCatalogNetPrice(pn))
       const catalogPrice = getCatalogNetPrice(pn)
       // Jedno błędne źródło nie może zastąpić zweryfikowanej ceny katalogowej.
       const bestRawPricePLN = catalogPrice && selection.best && selection.best > catalogPrice * 3
@@ -521,7 +528,7 @@ export async function lookupUnifiedStock(
       let ingramPrice: number | undefined
 
       if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-        const marginForPN = isRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
+        const marginForPN = zebraTerminalPartNumbers.has(pn) ? ZEBRA_TERMINAL_PRICE_MULTIPLIER : isRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
         price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
         priceBrutto = Math.round(price * VAT * 100) / 100
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
@@ -569,7 +576,7 @@ export async function lookupUnifiedStock(
 
     // Write-through: save live results to StockCache for future requests
     // Fire-and-forget — don't block the response
-    Promise.all(
+    const cacheWrite = Promise.all(
       results.map(r =>
         prisma.stockCache.upsert({
           where: { partNumber: r.partNumber },
@@ -601,6 +608,9 @@ export async function lookupUnifiedStock(
         }).catch(err => console.error(`[API /stock] Cache write error for ${r.partNumber}:`, err))
       )
     ).catch(() => {})
+
+    // Cron i terminale muszą zakończyć trwały zapis ceny przed odpowiedzią.
+    if (partNumbers.some(pn => zebraTerminalPartNumbers.has(pn))) await cacheWrite
 
     // Merge cached results with live results for partially-cached requests
     const finalResults: StockInfo[] = partNumbers.map(pn => {

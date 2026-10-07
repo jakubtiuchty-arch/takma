@@ -1,3 +1,4 @@
+import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
 import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
@@ -104,18 +105,19 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
 
   const initialStock = await getProductStock(product.slug)
   const offerVariant = initialStock ? selectProductVariant(product, initialStock, Array.isArray(pn) ? pn[0] : pn) : undefined
-  const offerStock = initialStock?.find(row => row.partNumber === offerVariant?.partNumber)
-  const currentNetPrice = initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : product.priceFrom
+  const offerStock = initialStock?.find(row => row.partNumber === (offerVariant?.partNumber ?? product.specifications.find(spec => spec.name === 'Part Number')?.value))
+  const variant = pickVariant(product, pn)
+  const staticNetPrice = product.slug === 'zebra-tc201' && variant ? variant.priceFrom : product.priceFrom
+  const currentNetPrice = initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : staticNetPrice
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
-  const variant = pickVariant(product, pn)
   const variantSize = variant?.attributes['Rozmiar']
   const variantPN = variant?.partNumber
 
   // SEO: dynamic title gdy wybrany wariant (rozmiar + PN), inaczej dedykowany lub fallback
   const variantSuffix = variant ? ` ${variantSize ?? ''}${variantPN ? ` — ${variantPN}` : ''}`.trim() : ''
   // Szablon layoutu dokłada „| TAKMA", więc sufiks wpisany w seoTitle trzeba zdjąć (inaczej „| TAKMA | TAKMA")
-  const baseTitle = product.seoTitle?.replace(/\s*\|\s*TAKMA\s*$/, '')
+  const baseTitle = (isZebraTerminalProduct(product) ? product.seoTitle?.replace(/\s*(?:\||—|,)?\s*od\s+[\d\s.,]+\s*zł(?:\s+netto)?/ig, '') : product.seoTitle)?.replace(/\s*\|\s*TAKMA\s*$/, '')
     ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
   const title = variant
     ? `${product.name}${variantSize ? ` ${variantSize}` : ''}${variantPN ? ` (${variantPN})` : ''}`
@@ -141,15 +143,15 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const fallbackDesc = variant
     ? `${variantPrefix}${product.shortDescription}.${variantPrice} Doradztwo techniczne i serwis.`
     : `${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
-  const metaDescription = !variant && product.seoDescription
+  const metaDescription = !variant && product.seoDescription && !isZebraTerminalProduct(product)
     ? product.seoDescription
     : smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
   const ogDescription = variant
     ? `${variantPrefix}${product.shortDescription}.${variantPrice} Zamów w TAKMA.`
-    : product.priceFrom
-      ? `${product.shortDescription}. Od ${product.priceFrom.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
+    : currentNetPrice
+      ? `${product.shortDescription}. Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
       : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path) i prawdziwe wymiary pliku

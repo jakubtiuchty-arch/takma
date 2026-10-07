@@ -24197,8 +24197,8 @@ const mobileComputers: Product[] = [
   "slug": "zebra-mc3300x",
   "name": "Zebra MC3300x",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300x-series.html",
-  "seoTitle": "Zebra MC3300x — kolektor danych / terminal mobilny z klawiaturą | od 5 779 zł",
-  "seoDescription": "Zebra MC3300x (MC330L) — kolektor danych z klawiaturą do magazynów i produkcji. Gun/Straight/Rotating, skaner SE4850 do 21 m, IP64, Android. 33 konfiguracje od 5 779 zł netto.",
+  "seoTitle": "Zebra MC3300x — kolektor danych / terminal mobilny z klawiaturą",
+  "seoDescription": "Zebra MC3300x (MC330L) — kolektor danych z klawiaturą do magazynów i produkcji.",
   "shortDescription": "Zebra MC3300x — terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu, do magazynów wysokiego składowania",
   "description": "Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.\n\nNastępca bestsellerowej serii MC3200, MC3300x bazuje na ośmiordzeniowym procesorze Qualcomm Snapdragon 660 (2,2 GHz) z 4 GB RAM i 32 GB Flash (MicroSD do 512 GB SDXC). Wyświetlacz 4\" WVGA (800×480) z Gorilla Glass obsługuje dotyk palcem i w rękawicach roboczych. System Android 11 z pakietem Mobility DNA i gwarancją aktualizacji zabezpieczeń LifeGuard™.\n\nTrzy obudowy do wyboru: pistoletowa (Gun) z uchwytem spustowym do szybkiego skanowania seryjnego; prosta (Straight Shooter) — kompaktowa forma do noszenia w ręce; obrotowa głowica (Rotating Head) — głowica skanera obraca się o 45° do odczytu kodów pod kątem na liniach montażowych. Trzy klawiatury: 29-klawiszowa numeryczna, 38-klawiszowa funkcyjna z kalkulatorem, 47-klawiszowa alfanumeryczna.\n\nWybierz skaner według środowiska pracy: SE965 (laser 1D) do tradycyjnych kodów kreskowych na krótkim dystansie; SE4770 (imager 2D, zasięg do 71 cm) — standard do etykiet magazynowych, kodów QR i DataMatrix; SE4770 DPM — wersja do odczytu kodów grawerowanych bezpośrednio na częściach metalowych i plastikowych (Direct Part Marking); SE4850 Extended Range (zasięg do 21,3 m) — do skanowania etykiet na najwyższych regałach bez wózka widłowego. Opcjonalnie: kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy.\n\nKonstrukcja IP64 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton, 500 upadków z 0,5 m w teście tumble, zakres temperatur od -20°C do +50°C. Wymienne baterie PowerPrecision+: 5 200 mAh (standard, ~10 h) lub 7 000 mAh (rozszerzona, ~14 h). Łączność Wi-Fi 802.11ac 2×2 MU-MIMO, Bluetooth 5.0, NFC.\n\nPakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: [Zebra TC53](/produkt/zebra-tc53).\n\nKoszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą [MC3400](/produkt/zebra-mc3400) — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).",
   "categoryId": "terminale-mobilne",
@@ -24206,7 +24206,7 @@ const mobileComputers: Product[] = [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 5778.66,
+  "priceFrom": 6940.67,
   "images": [
     "/images/products/zebra-mc3300x_1.png",
     "/images/products/zebra-mc3300x_2.png",
@@ -24314,8 +24314,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SL2EG4RW",
       "name": "MC3300x Straight, SE965 1D, 29 kl.",
-      "priceFrom": 5778.66,
-      "availability": "available",
+      "priceFrom": undefined,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE965 1D",
@@ -24325,8 +24325,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SL3EG4RW",
       "name": "MC3300x Straight, SE965 1D, 38 kl.",
-      "priceFrom": 5778.66,
-      "availability": "available",
+      "priceFrom": 6591.71,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE965 1D",
@@ -24336,8 +24336,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SL4EG4RW",
       "name": "MC3300x Straight, SE965 1D, 47 kl.",
-      "priceFrom": 5778.66,
-      "availability": "available",
+      "priceFrom": undefined,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE965 1D",
@@ -24347,8 +24347,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-RL2EG4RW",
       "name": "MC3300x Rotating, SE965 1D, 29 kl.",
-      "priceFrom": 5778.66,
-      "availability": "available",
+      "priceFrom": 6591.71,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Obrotowa",
         "Skaner": "SE965 1D",
@@ -24358,8 +24358,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-RL3EG4RW",
       "name": "MC3300x Rotating, SE965 1D, 38 kl.",
-      "priceFrom": 5778.66,
-      "availability": "available",
+      "priceFrom": 6591.71,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Obrotowa",
         "Skaner": "SE965 1D",
@@ -24369,8 +24369,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SC2EG4RW",
       "name": "MC3300x Straight, SE965 1D, 29 kl., Kamera",
-      "priceFrom": 5914.92,
-      "availability": "available",
+      "priceFrom": 6747.18,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE965 1D",
@@ -24381,8 +24381,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-RC3EG4RW",
       "name": "MC3300x Rotating, SE965 1D, 38 kl., Kamera",
-      "priceFrom": 5914.92,
-      "availability": "available",
+      "priceFrom": 6747.18,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Obrotowa",
         "Skaner": "SE965 1D",
@@ -24393,8 +24393,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-RC4EG4RW",
       "name": "MC3300x Rotating, SE965 1D, 47 kl., Kamera",
-      "priceFrom": 5914.92,
-      "availability": "available",
+      "priceFrom": 6747.18,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Obrotowa",
         "Skaner": "SE965 1D",
@@ -24405,8 +24405,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SJ2EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 29 kl.",
-      "priceFrom": 6187.54,
-      "availability": "available",
+      "priceFrom": 7058.13,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 2D",
@@ -24416,8 +24416,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SJ3EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 38 kl.",
-      "priceFrom": 6187.54,
-      "availability": "available",
+      "priceFrom": 7058.13,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 2D",
@@ -24427,7 +24427,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SJ4EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 47 kl.",
-      "priceFrom": 6187.54,
+      "priceFrom": 6940.67,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -24438,7 +24438,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SK2EG4RW",
       "name": "MC3300x Straight, SE4770 DPM, 29 kl.",
-      "priceFrom": 6187.54,
+      "priceFrom": 7058.13,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -24449,7 +24449,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SK3EG4RW",
       "name": "MC3300x Straight, SE4770 DPM, 38 kl.",
-      "priceFrom": 6187.54,
+      "priceFrom": 6940.67,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -24460,8 +24460,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SK4EG4RW",
       "name": "MC3300x Straight, SE4770 DPM, 47 kl.",
-      "priceFrom": 6187.54,
-      "availability": "available",
+      "priceFrom": 7058.13,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 DPM",
@@ -24471,7 +24471,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GL2EG4RW",
       "name": "MC3300x Gun, SE965 1D, 29 kl.",
-      "priceFrom": 6187.54,
+      "priceFrom": 7058.13,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -24482,8 +24482,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GL3EG4RW",
       "name": "MC3300x Gun, SE965 1D, 38 kl.",
-      "priceFrom": 6187.54,
-      "availability": "available",
+      "priceFrom": 7058.13,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE965 1D",
@@ -24493,8 +24493,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GL4EG4RW",
       "name": "MC3300x Gun, SE965 1D, 47 kl.",
-      "priceFrom": 6187.54,
-      "availability": "available",
+      "priceFrom": 7058.13,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE965 1D",
@@ -24504,8 +24504,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SA2EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 29 kl., Kamera",
-      "priceFrom": 6323.82,
-      "availability": "available",
+      "priceFrom": 7213.55,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 2D",
@@ -24516,8 +24516,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SA3EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 38 kl., Kamera",
-      "priceFrom": 6323.82,
-      "availability": "available",
+      "priceFrom": 7213.55,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 2D",
@@ -24528,8 +24528,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SA4EG4RW",
       "name": "MC3300x Straight, SE4770 2D, 47 kl., Kamera",
-      "priceFrom": 6323.82,
-      "availability": "available",
+      "priceFrom": 7213.55,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 2D",
@@ -24540,8 +24540,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SM2EG4RW",
       "name": "MC3300x Straight, SE4770 DPM, 29 kl., Kamera",
-      "priceFrom": 6323.82,
-      "availability": "available",
+      "priceFrom": 7213.55,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 DPM",
@@ -24552,8 +24552,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SM3EG4RW",
       "name": "MC3300x Straight, SE4770 DPM, 38 kl., Kamera",
-      "priceFrom": 6323.82,
-      "availability": "available",
+      "priceFrom": 7213.55,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770 DPM",
@@ -24564,7 +24564,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GJ2EG4RW",
       "name": "MC3300x Gun, SE4770 2D, 29 kl.",
-      "priceFrom": 6596.38,
+      "priceFrom": 7399.32,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -24575,7 +24575,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GJ3EG4RW",
       "name": "MC3300x Gun, SE4770 2D, 38 kl.",
-      "priceFrom": 6596.38,
+      "priceFrom": 7399.32,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -24586,8 +24586,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GJ4EG4RW",
       "name": "MC3300x Gun, SE4770 2D, 47 kl.",
-      "priceFrom": 6596.38,
-      "availability": "available",
+      "priceFrom": 7524.48,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4770 2D",
@@ -24597,8 +24597,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SE2EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 29 kl.",
-      "priceFrom": 7550.44,
-      "availability": "available",
+      "priceFrom": 8612.77,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4850 ER",
@@ -24608,8 +24608,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SE3EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 38 kl.",
-      "priceFrom": 7550.44,
-      "availability": "available",
+      "priceFrom": 8612.77,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4850 ER",
@@ -24619,8 +24619,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SE4EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 47 kl.",
-      "priceFrom": 7550.44,
-      "availability": "available",
+      "priceFrom": 8612.77,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4850 ER",
@@ -24630,8 +24630,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SG2EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 29 kl., Kamera",
-      "priceFrom": 7686.67,
-      "availability": "available",
+      "priceFrom": 8622.28,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4850 ER",
@@ -24642,7 +24642,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SG3EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 38 kl., Kamera",
-      "priceFrom": 7686.67,
+      "priceFrom": 8622.28,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -24654,8 +24654,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-SG4EG4RW",
       "name": "MC3300x Straight, SE4850 ER, 47 kl., Kamera",
-      "priceFrom": 7686.67,
-      "availability": "available",
+      "priceFrom": 8768.19,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4850 ER",
@@ -24666,8 +24666,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GE2EG4RW",
       "name": "MC3300x Gun, SE4850 ER, 29 kl.",
-      "priceFrom": 7784.25,
-      "availability": "available",
+      "priceFrom": 9234.61,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4850 ER",
@@ -24677,7 +24677,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GE3EG4RW",
       "name": "MC3300x Gun, SE4850 ER, 38 kl.",
-      "priceFrom": 8095.62,
+      "priceFrom": 9080.97,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -24688,7 +24688,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC330L-GE4EG4RW",
       "name": "MC3300x Gun, SE4850 ER, 47 kl.",
-      "priceFrom": 8095.62,
+      "priceFrom": 9080.97,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -24700,7 +24700,7 @@ const mobileComputers: Product[] = [
   "faq": [
     {
       "question": "Ile kosztuje Zebra MC3300x?",
-      "answer": "Ceny Zebra MC3300x zaczynają się od 5 779 zł netto za wariant Straight z laserem 1D SE965 (MC330L-SL2EG4RW). Warianty Gun z imagerem 2D SE4770 kosztują od 6 596 zł netto. Najpopularniejsza konfiguracja — Gun z SE4770 2D i klawiaturą 38-klawiszową (MC330L-GJ3EG4RW) — kosztuje 6 596 zł netto. Warianty z dalekim zasięgiem SE4850 Extended Range: od 7 550 zł (Straight) do 8 096 zł netto (Gun). Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
+      "answer": "Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
     },
     {
       "question": "Jaki skaner wybrać do MC3300x — SE965, SE4770 czy SE4850?",
@@ -24732,11 +24732,11 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Czym się różni MC3300x od Zebra TC53?",
-      "answer": "MC3300x to terminal z fizyczną klawiaturą (29/38/47 klawiszy) i ekranem 4\" WVGA, zaprojektowany do intensywnego wprowadzania danych w magazynie. TC53 to terminal dotykowy z ekranem 6\" FHD+, procesorem Qualcomm 6490 i Wi-Fi 6E. MC3300x wygrywa w magazynach dzięki klawiaturze i skanerowi dalekiego zasięgu SE4850 (do 21 m). TC53 wygrywa ergonomią, ekranem i żywotnością platformy (do Android 16). MC3300x od 5 779 zł, TC53 od 6 999 zł netto."
+      "answer": "MC3300x to terminal z fizyczną klawiaturą (29/38/47 klawiszy) i ekranem 4\" WVGA, zaprojektowany do intensywnego wprowadzania danych w magazynie. TC53 to terminal dotykowy z ekranem 6\" FHD+, procesorem Qualcomm 6490 i Wi-Fi 6E. MC3300x wygrywa w magazynach dzięki klawiaturze i skanerowi dalekiego zasięgu SE4850 (do 21 m). TC53 wygrywa ergonomią, ekranem i żywotnością platformy (do Android 16)."
     },
     {
       "question": "Gdzie serwisować Zebra MC3300x w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3300x, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 095 zł netto/3 lata) dostępna jest naprawa priorytetowa. Serwis obsługuje również starsze modele MC3300, MC3200 i MC3190 — migracja na MC3400 z pełnym wsparciem serwisowym."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3300x, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Serwis obsługuje również starsze modele MC3300, MC3200 i MC3190 — migracja na MC3400 z pełnym wsparciem serwisowym."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra MC3300x?",
@@ -24748,7 +24748,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Jakie są alternatywy dla Zebra MC3300x?",
-      "answer": "W portfolio Zebra: MC3400/MC3450 (następca z Wi-Fi 6E i Android 14→18), TC53/TC53e (dotykowy, Wi-Fi 6E, nowsza platforma Android), MC9400 (klasa ultra-rugged premium z 7 klawiaturami i IP68). Konkurencja: Datalogic Skorpio X5 (klawiatura + 2D, IP65), Honeywell CK65/CK67 (klawiatura + ER, Android). MC3300x to optymalny wybór, gdy potrzebujesz fizycznej klawiatury w budżecie do 8 100 zł netto i nie wymagasz IP65+."
+      "answer": "W portfolio Zebra: MC3400/MC3450 (następca z Wi-Fi 6E i Android 14→18), TC53/TC53e (dotykowy, Wi-Fi 6E, nowsza platforma Android), MC9400 (klasa ultra-rugged premium z 7 klawiaturami i IP68). Konkurencja: Datalogic Skorpio X5 (klawiatura + 2D, IP65), Honeywell CK65/CK67 (klawiatura + ER, Android)."
     }
   ],
   "applications": [
@@ -24847,23 +24847,23 @@ const mobileComputers: Product[] = [
     ]
   },
   "createdAt": "2022-10-20",
-  "updatedAt": "2026-05-07"
+  "updatedAt": "2026-10-07"
 },
   // Zebra MC3400 — Terminal mobilny z klawiaturą (Wi-Fi 6E)
   {
   "id": "zebra-mc3400",
   "slug": "zebra-mc3400",
   "name": "Zebra MC3400",
-  "seoTitle": "Zebra MC3400 — kolektor danych z klawiaturą | od 4 637 zł",
-  "seoDescription": "Kolektor danych Zebra MC3400 z klawiaturą — Wi-Fi 6E, skaner SE58 do 30 m, IP65/IP67, hot-swap. 14 konfiguracji od 4 637 zł netto. Następca MC3300x.",
+  "seoTitle": "Zebra MC3400 — kolektor danych z klawiaturą",
+  "seoDescription": "Następca MC3300x.",
   "shortDescription": "Zebra MC3400 — kolektor danych z fizyczną klawiaturą w obudowie pistoletowej lub prostej, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x",
-  "description": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowych serii Zebra MC3300 i [MC3300x](/produkt/zebra-mc3300x). Cena od 4 637 zł netto, 14 konfiguracji w TAKMA.\n\nKluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.\n\nTrzy skanery do wyboru: SE55 Advanced Range (do 12,2 m — regały średniego składowania), SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — eliminuje konieczność używania drabin w magazynach wysokiego składowania). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna z kalkulatorem — najpopularniejsza) i 47-klawiszowa (alfanumeryczna A-Z) — kluczowa przewaga tego kolektora danych nad terminalami dotykowymi.\n\nPodwójna klasa ochrony IP65/IP67 — pierwszy kolektor danych z serii MC3000 z pełną wodoodpornością: mycie pod bieżącą wodą i zanurzenie do 1 m (MC3300x miał jedynie IP64). Upadki z 2,4 m na beton (+33% vs MC3300x), 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — wymiana bez wyłączania urządzenia, pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18 (wersja 6 GB RAM). Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja z 5G/LTE i GPS: [Zebra MC3450](/produkt/zebra-mc3450). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3400. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3400 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.",
+  "description": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowych serii Zebra MC3300 i [MC3300x](/produkt/zebra-mc3300x). Cena, 14 konfiguracji w TAKMA.\n\nKluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.\n\nTrzy skanery do wyboru: SE55 Advanced Range (do 12,2 m — regały średniego składowania), SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — eliminuje konieczność używania drabin w magazynach wysokiego składowania). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna z kalkulatorem — najpopularniejsza) i 47-klawiszowa (alfanumeryczna A-Z) — kluczowa przewaga tego kolektora danych nad terminalami dotykowymi.\n\nPodwójna klasa ochrony IP65/IP67 — pierwszy kolektor danych z serii MC3000 z pełną wodoodpornością: mycie pod bieżącą wodą i zanurzenie do 1 m (MC3300x miał jedynie IP64). Upadki z 2,4 m na beton (+33% vs MC3300x), 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — wymiana bez wyłączania urządzenia, pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18 (wersja 6 GB RAM). Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja z 5G/LTE i GPS: [Zebra MC3450](/produkt/zebra-mc3450). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3400. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3400 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 4636.84,
+  "priceFrom": 5370.26,
   "images": [
     "/images/products/zebra-mc3400_1.png",
     "/images/products/zebra-mc3400_2.png",
@@ -24971,8 +24971,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1K42SS-A6",
       "name": "MC3400 Gun, SE55, 29 kl., 4/64 GB",
-      "priceFrom": 4560.95,
-      "availability": "available",
+      "priceFrom": 5883.48,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE55",
         "Klawiatura": "29 klawiszy",
@@ -24982,7 +24982,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1K43SS-A6",
       "name": "MC3400 Gun, SE55, 38 kl., 4/64 GB",
-      "priceFrom": 4560.95,
+      "priceFrom": 5752.93,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -24993,7 +24993,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1J52SS-A6",
       "name": "MC3400 Gun, SE4770, 29 kl., 6/64 GB",
-      "priceFrom": 4871.69,
+      "priceFrom": 6535.75,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25004,7 +25004,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1J53SS-A6",
       "name": "MC3400 Gun, SE4770, 38 kl., 6/64 GB",
-      "priceFrom": 5066.56,
+      "priceFrom": 6535.75,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25015,7 +25015,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1J54SS-A6",
       "name": "MC3400 Gun, SE4770, 47 kl., 6/64 GB",
-      "priceFrom": 5041.91,
+      "priceFrom": 6535.75,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25026,7 +25026,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1M52SS-A6",
       "name": "MC3400 Gun, SE58, 29 kl., 6/64 GB",
-      "priceFrom": 5444.46,
+      "priceFrom": 7057.6,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25037,7 +25037,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1M53SS-A6",
       "name": "MC3400 Gun, SE58, 38 kl., 6/64 GB",
-      "priceFrom": 5444.46,
+      "priceFrom": 7057.6,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25048,7 +25048,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1M54SS-A6",
       "name": "MC3400 Gun, SE58, 47 kl., 6/64 GB",
-      "priceFrom": 5471.11,
+      "priceFrom": 7057.6,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25059,7 +25059,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1P62SS-A6",
       "name": "MC3400 Gun, SE4770, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 5329.48,
+      "priceFrom": 6874.96,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25071,7 +25071,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1P63SS-A6",
       "name": "MC3400 Gun, SE4770, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 5329.48,
+      "priceFrom": 6722.34,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25083,7 +25083,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1P64SS-A6",
       "name": "MC3400 Gun, SE4770, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 5329.48,
+      "priceFrom": 6874.96,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25095,7 +25095,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1R62SS-A6",
       "name": "MC3400 Gun, SE58, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 5734.04,
+      "priceFrom": 7232.59,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25107,7 +25107,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1R63SS-A6",
       "name": "MC3400 Gun, SE58, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 5734.04,
+      "priceFrom": 7396.76,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25119,7 +25119,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0G1R64SS-A6",
       "name": "MC3400 Gun, SE58, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 5706.14,
+      "priceFrom": 7396.76,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25131,7 +25131,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1K42SS-A6",
       "name": "MC3400 Straight, SE55, 29 kl., 4/64 GB",
-      "priceFrom": 4608.31,
+      "priceFrom": 5370.26,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -25142,7 +25142,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1K43SS-A6",
       "name": "MC3400 Straight, SE55, 38 kl., 4/64 GB",
-      "priceFrom": 4702.37,
+      "priceFrom": 5492.15,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -25153,7 +25153,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1J52SS-A6",
       "name": "MC3400 Straight, SE4770, 29 kl., 6/64 GB",
-      "priceFrom": 5260.84,
+      "priceFrom": 6008.04,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25164,8 +25164,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1J53SS-A6",
       "name": "MC3400 Straight, SE4770, 38 kl., 6/64 GB",
-      "priceFrom": 5260.84,
-      "availability": "available",
+      "priceFrom": 6144.41,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "38 klawiszy",
@@ -25175,7 +25175,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1J54SS-A6",
       "name": "MC3400 Straight, SE4770, 47 kl., 6/64 GB",
-      "priceFrom": 5361.85,
+      "priceFrom": 6144.41,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25186,8 +25186,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1M52SS-A6",
       "name": "MC3400 Straight, SE58, 29 kl., 6/64 GB",
-      "priceFrom": 5593.47,
-      "availability": "available",
+      "priceFrom": 6666.21,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "29 klawiszy",
@@ -25197,8 +25197,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1M53SS-A6",
       "name": "MC3400 Straight, SE58, 38 kl., 6/64 GB",
-      "priceFrom": 5707.65,
-      "availability": "on-order",
+      "priceFrom": 6666.21,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "38 klawiszy",
@@ -25208,7 +25208,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1M54SS-A6",
       "name": "MC3400 Straight, SE58, 47 kl., 6/64 GB",
-      "priceFrom": 5707.65,
+      "priceFrom": 6666.21,
       "availability": "on-order",
       "attributes": {
         "Skaner": "SE58",
@@ -25219,7 +25219,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1P62SS-A6",
       "name": "MC3400 Straight, SE4770, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 5440.25,
+      "priceFrom": 6483.58,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25231,8 +25231,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1P63SS-A6",
       "name": "MC3400 Straight, SE4770, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 5551.25,
-      "availability": "available",
+      "priceFrom": 6483.58,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "38 klawiszy",
@@ -25243,7 +25243,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1P64SS-A6",
       "name": "MC3400 Straight, SE4770, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 5551.25,
+      "priceFrom": 6483.58,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -25255,8 +25255,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1R62SS-A6",
       "name": "MC3400 Straight, SE58, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 5998.05,
-      "availability": "on-order",
+      "priceFrom": 7005.37,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "29 klawiszy",
@@ -25267,7 +25267,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1R63SS-A6",
       "name": "MC3400 Straight, SE58, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 5878.08,
+      "priceFrom": 7005.37,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25279,7 +25279,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC3401-0S1R64SS-A6",
       "name": "MC3400 Straight, SE58, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 5878.08,
+      "priceFrom": 6849.91,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -25292,11 +25292,11 @@ const mobileComputers: Product[] = [
   "faq": [
     {
       "question": "Co to jest Zebra MC3400?",
-      "answer": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D, zaprojektowany do pracy w magazynach, centrach dystrybucji i na liniach produkcyjnych. Następca bestsellerowego MC3300x z procesorem Qualcomm 4490, Wi-Fi 6E (triband 2,4/5/6 GHz), klasą ochrony IP65/IP67 i baterią 7 000 mAh z hot-swap. Dostępny w 14 konfiguracjach — 3 silniki skanera (SE55 do 12,2 m, SE4770, SE58 do 30,5 m) × 3 klawiatury (29/38/47 klawiszy) × 3 warianty pamięci (4/64, 6/64, 6/128 GB). Cena od 4 637 zł netto w TAKMA."
+      "answer": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D, zaprojektowany do pracy w magazynach, centrach dystrybucji i na liniach produkcyjnych. Następca bestsellerowego MC3300x z procesorem Qualcomm 4490, Wi-Fi 6E (triband 2,4/5/6 GHz), klasą ochrony IP65/IP67 i baterią 7 000 mAh z hot-swap. Dostępny w 14 konfiguracjach — 3 silniki skanera (SE55 do 12,2 m, SE4770, SE58 do 30,5 m) × 3 klawiatury (29/38/47 klawiszy) × 3 warianty pamięci (4/64, 6/64, 6/128 GB)."
     },
     {
       "question": "Ile kosztuje kolektor danych Zebra MC3400?",
-      "answer": "Ceny kolektora danych Zebra MC3400 zaczynają się od 4 637 zł netto za wariant Gun ze skanerem SE55 Advanced Range i klawiaturą 29-klawiszową (MC3401-0G1K42SS-A6). Warianty z imagerem SE4770 2D: od 4 872 zł netto. Konfiguracje z SE58 Extended Range (zasięg 30,5 m): od 5 261 zł netto. Topowa wersja Full z SE58 ER, kamerą 13+5 MP i 128 GB Flash: 5 734 zł netto. Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
+      "answer": "Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
     },
     {
       "question": "Czym się różni Zebra MC3400 od MC3300x?",
@@ -25332,11 +25332,11 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Czym się różni MC3400 od Zebra TC53?",
-      "answer": "MC3400 to terminal z fizyczną klawiaturą (29/38/47 klawiszy) i ekranem 4\" WVGA, zaprojektowany do intensywnego wprowadzania danych w magazynie. [TC53](/produkt/zebra-tc53) to terminal dotykowy z ekranem 6\" FHD+, procesorem Qualcomm 6490 i Wi-Fi 6E. MC3400 wygrywa w magazynach dzięki klawiaturze i skanerowi SE58 do 30,5 m. TC53 wygrywa ergonomią, dużym ekranem i żywotnością platformy (do Android 16). MC3400 od 4 637 zł, TC53 od 6 999 zł netto. Szczegółowe porównanie terminali: [Jak wybrać terminal mobilny?](/poradnik/jak-wybrac-terminal-mobilny)"
+      "answer": "MC3400 to terminal z fizyczną klawiaturą (29/38/47 klawiszy) i ekranem 4\" WVGA, zaprojektowany do intensywnego wprowadzania danych w magazynie. [TC53](/produkt/zebra-tc53) to terminal dotykowy z ekranem 6\" FHD+, procesorem Qualcomm 6490 i Wi-Fi 6E. MC3400 wygrywa w magazynach dzięki klawiaturze i skanerowi SE58 do 30,5 m. TC53 wygrywa ergonomią, dużym ekranem i żywotnością platformy (do Android 16). Szczegółowe porównanie terminali: [Jak wybrać terminal mobilny?](/poradnik/jak-wybrac-terminal-mobilny)"
     },
     {
       "question": "Gdzie serwisować Zebra MC3400 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — naprawy gwarancyjne i pogwarancyjne MC3400, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 139 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra) — naprawy gwarancyjne i pogwarancyjne MC3400, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra MC3400?",
@@ -25344,7 +25344,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Gdzie kupić kolektor danych Zebra MC3400 w Polsce?",
-      "answer": "Zebra MC3400 można kupić w TAKMA (takma.com.pl) — autoryzowany partner Zebra Technologies w Polsce. Oferujemy 14 konfiguracji MC3400 w cenach od 4 637 zł netto z dostawą z europejskiego magazynu Zebra. Przy zakupie 5+ sztuk dostępne są ceny projektowe. Serwis gwarancyjny i pogwarancyjny: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra). Opcjonalne kontrakty Zebra OneCare Essential: 3 lata od 1 139 zł netto, 5 lat od 1 899 zł netto."
+      "answer": "Zebra MC3400 można kupić w TAKMA (takma.com.pl) — autoryzowany partner Zebra Technologies w Polsce. Przy zakupie 5+ sztuk dostępne są ceny projektowe. Serwis gwarancyjny i pogwarancyjny: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-terminali-zebra)."
     },
     {
       "question": "Jaka jest specyfikacja techniczna kolektora danych Zebra MC3400?",
@@ -25352,11 +25352,11 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Jakie są alternatywy dla kolektora danych Zebra MC3400?",
-      "answer": "W portfolio Zebra: [MC3450](/produkt/zebra-mc3450) (identyczny + 5G/LTE/GPS), MC3300x (poprzednik, tańszy, starszy Android), [TC53](/produkt/zebra-tc53)/TC53e (dotykowy, bez klawiatury, Wi-Fi 6E), [MC9400](/produkt/zebra-mc9400) (klasa premium, większy ekran, RFID opcja). Porównanie szczegółowe: [MC3400 vs MC9400](/poradnik/zebra-mc3400-vs-mc9400). Konkurencja: Honeywell CK65/CK67 (klawiatura + ER, Android), Datalogic Skorpio X5 (klawiatura + 2D, IP65). Kolektor danych MC3400 to optymalny wybór gdy potrzebujesz fizycznej klawiatury z IP67 i skanerem do 30,5 m w budżecie do 5 734 zł netto."
+      "answer": "W portfolio Zebra: [MC3450](/produkt/zebra-mc3450) (identyczny + 5G/LTE/GPS), MC3300x (poprzednik, tańszy, starszy Android), [TC53](/produkt/zebra-tc53)/TC53e (dotykowy, bez klawiatury, Wi-Fi 6E), [MC9400](/produkt/zebra-mc9400) (klasa premium, większy ekran, RFID opcja). Porównanie szczegółowe: [MC3400 vs MC9400](/poradnik/zebra-mc3400-vs-mc9400). Konkurencja: Honeywell CK65/CK67 (klawiatura + ER, Android), Datalogic Skorpio X5 (klawiatura + 2D, IP65)."
     },
     {
       "question": "Czy Zebra MC3400 wymaga kontraktu serwisowego OneCare?",
-      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). OneCare Essential na MC3400 kosztuje 1 156 zł netto za 3 lata (25% ceny terminala) i obejmuje naprawy uszkodzeń mechanicznych, wsparcie techniczne i aktualizacje LifeGuard. Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
+      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
     },
     {
       "question": "Zebra MC3400 czy MC 3400 — czy to ten sam model?",
@@ -25521,15 +25521,15 @@ const mobileComputers: Product[] = [
     "reviewBody": "Zebra MC3400 to mocny upgrade od bestsellerowego MC3300x. Procesor Qualcomm 4490 (2,5× szybszy), Wi-Fi 6E (3× szybszy transfer) i podwójna klasa IP65/IP67 to skok generacyjny. Klawiatura 38-klawiszowa pozostaje optymalnym wyborem dla większości WMS. Bateria 7 000 mAh z hot-swap eliminuje przestoje. Trzy skanery do wyboru — SE58 Extended Range (30,5 m) zastępuje drabinę w magazynach wysokiego składowania. Pełna kompatybilność z akcesoriami MC3300x oszczędza do 30% kosztów wdrożenia. Przy cenie od 4 637 zł netto najlepszy stosunek wydajności do ceny w segmencie kolektorów z klawiaturą."
   },
   "createdAt": "2024-10-15",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   // Zebra MC3450 — Terminal mobilny 5G z klawiaturą
   {
   "id": "zebra-mc3450",
   "slug": "zebra-mc3450",
   "name": "Zebra MC3450",
-  "seoTitle": "Zebra MC3450 — kolektor danych 5G z klawiaturą | od 5 572 zł",
-  "seoDescription": "Kolektor danych Zebra MC3450 z klawiaturą — 5G publiczne i prywatne (CBRS), GPS, skaner SE58 do 30 m, IP65/IP67. 23 konfiguracje od 5 572 zł netto.",
+  "seoTitle": "Zebra MC3450 — kolektor danych 5G z klawiaturą",
+  "seoDescription": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę.",
   "shortDescription": "Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67",
   "description": "Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.\n\nIdentyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż [MC3300x](/produkt/zebra-mc3300x)) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.\n\nCztery opcje skanerów: SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — skanowanie kontenerów na placu bez drabiny). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna) i 47-klawiszowa (alfanumeryczna A-Z). Dwie obudowy: Straight Shooter (prosta, 442 g) i Gun (pistoletowa, 528 g).\n\nPodwójna klasa ochrony IP65/IP67 — pełna wodoodporność: deszcz, mycie pod bieżącą wodą, zanurzenie. Upadki z 2,4 m na beton, 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC3400](/produkt/zebra-mc3400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3450. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3450 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.",
   "categoryId": "terminale-mobilne",
@@ -25537,7 +25537,7 @@ const mobileComputers: Product[] = [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 5572.21,
+  "priceFrom": 7579.4,
   "images": [
     "/images/products/zebra-mc3450_1.png",
     "/images/products/zebra-mc3450_2.png",
@@ -25654,8 +25654,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1J52SS-A6",
       "name": "MC3450 Straight, SE4770, 29 kl., 6/64 GB",
-      "priceFrom": 5572.21,
-      "availability": "available",
+      "priceFrom": 7188.02,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25666,8 +25666,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1J53SS-A6",
       "name": "MC3450 Straight, SE4770, 38 kl., 6/64 GB",
-      "priceFrom": 5572.21,
-      "availability": "available",
+      "priceFrom": 7188.02,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25678,8 +25678,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1J54SS-A6",
       "name": "MC3450 Straight, SE4770, 47 kl., 6/64 GB",
-      "priceFrom": 5572.21,
-      "availability": "available",
+      "priceFrom": 7188.02,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25690,7 +25690,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1M52SS-A6",
       "name": "MC3450 Straight, SE58, 29 kl., 6/64 GB",
-      "priceFrom": 5976.72,
+      "priceFrom": 7709.87,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -25702,8 +25702,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1M53SS-A6",
       "name": "MC3450 Straight, SE58, 38 kl., 6/64 GB",
-      "priceFrom": 5976.72,
-      "availability": "available",
+      "priceFrom": 7709.87,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE58",
@@ -25714,8 +25714,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1M54SS-A6",
       "name": "MC3450 Straight, SE58, 47 kl., 6/64 GB",
-      "priceFrom": 5976.72,
-      "availability": "available",
+      "priceFrom": 7709.87,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE58",
@@ -25726,8 +25726,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1P62SS-A6",
       "name": "MC3450 Straight, SE4770, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 5835.15,
-      "availability": "available",
+      "priceFrom": 7527.22,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25739,8 +25739,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1P63SS-A6",
       "name": "MC3450 Straight, SE4770, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 5835.15,
-      "availability": "available",
+      "priceFrom": 7527.22,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25752,8 +25752,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1P64SS-A6",
       "name": "MC3450 Straight, SE4770, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 5835.15,
-      "availability": "available",
+      "priceFrom": 7527.22,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Prosta",
         "Skaner": "SE4770",
@@ -25765,7 +25765,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1R62SS-A6",
       "name": "MC3450 Straight, SE58, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 6239.65,
+      "priceFrom": 8049.03,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -25778,7 +25778,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3S1R63SS-A6",
       "name": "MC3450 Straight, SE58, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 6239.65,
+      "priceFrom": 8049.03,
       "availability": "available",
       "attributes": {
         "Obudowa": "Prosta",
@@ -25791,8 +25791,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1J52SS-A6",
       "name": "MC3450 Gun, SE4770, 29 kl., 6/64 GB",
-      "priceFrom": 5875.61,
-      "availability": "available",
+      "priceFrom": 7579.4,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4770",
@@ -25803,7 +25803,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1J53SS-A6",
       "name": "MC3450 Gun, SE4770, 38 kl., 6/64 GB",
-      "priceFrom": 5875.61,
+      "priceFrom": 7579.4,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25815,8 +25815,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1J54SS-A6",
       "name": "MC3450 Gun, SE4770, 47 kl., 6/64 GB",
-      "priceFrom": 5875.61,
-      "availability": "available",
+      "priceFrom": 7579.4,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4770",
@@ -25827,7 +25827,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1M52SS-A6",
       "name": "MC3450 Gun, SE58, 29 kl., 6/64 GB",
-      "priceFrom": 6280.13,
+      "priceFrom": 8101.2,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25839,7 +25839,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1M53SS-A6",
       "name": "MC3450 Gun, SE58, 38 kl., 6/64 GB",
-      "priceFrom": 6280.13,
+      "priceFrom": 8101.2,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25851,8 +25851,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1M54SS-A6",
       "name": "MC3450 Gun, SE58, 47 kl., 6/64 GB",
-      "priceFrom": 6280.13,
-      "availability": "available",
+      "priceFrom": 8101.2,
+      "availability": "on-order",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE58",
@@ -25863,7 +25863,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1P62SS-A6",
       "name": "MC3450 Gun, SE4770, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 6138.55,
+      "priceFrom": 8052.56,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25876,8 +25876,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1P63SS-A6",
       "name": "MC3450 Gun, SE4770, 38 kl., 6/128 GB, Kamera",
-      "priceFrom": 6138.55,
-      "availability": "available",
+      "priceFrom": 7918.56,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4770",
@@ -25889,8 +25889,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1P64SS-A6",
       "name": "MC3450 Gun, SE4770, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 6138.55,
-      "availability": "available",
+      "priceFrom": 7918.56,
+      "availability": "unavailable",
       "attributes": {
         "Obudowa": "Pistoletowa",
         "Skaner": "SE4770",
@@ -25902,7 +25902,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1R62SS-A6",
       "name": "MC3450 Gun, SE58, 29 kl., 6/128 GB, Kamera",
-      "priceFrom": 6543.05,
+      "priceFrom": 8583.17,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25915,7 +25915,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC345B-3G1R64SS-A6",
       "name": "MC3450 Gun, SE58, 47 kl., 6/128 GB, Kamera",
-      "priceFrom": 6543.05,
+      "priceFrom": 8440.37,
       "availability": "available",
       "attributes": {
         "Obudowa": "Pistoletowa",
@@ -25929,11 +25929,11 @@ const mobileComputers: Product[] = [
   "faq": [
     {
       "question": "Ile kosztuje Zebra MC3450?",
-      "answer": "Ceny Zebra MC3450 zaczynają się od 5 572 zł netto za wariant Straight z SE4770 2D i klawiaturą 29-klawiszową (MC345B-3S1J52SS-A6). Gun z SE4770: od 5 876 zł netto. Konfiguracje z SE58 Extended Range (zasięg 30,5 m): SE58: Straight od 5 977 zł, Gun od 6 280 zł. Topowa wersja Full Gun z SE58 ER, kamerą i 128 GB: 6 543 zł netto. Przy zakupie 5+ sztuk oferujemy ceny projektowe."
+      "answer": "Przy zakupie 5+ sztuk oferujemy ceny projektowe."
     },
     {
       "question": "Czym się różni MC3450 od MC3400?",
-      "answer": "MC3450 = MC3400 + moduł 5G/LTE + GPS. Identyczny procesor (Qualcomm 4490), ekran, klawiatury, skanery, bateria i wytrzymałość. MC3450 dodaje: 5G publiczne i prywatne (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigację satelitarną GPS/GLONASS/Galileo/BeiDou. MC3400 to wersja wyłącznie Wi-Fi 6E — tańsza o ~1 000 zł. Wybierz MC3450 jeśli praca odbywa się także na zewnątrz budynku, gdzie Wi-Fi nie sięga."
+      "answer": "MC3450 = MC3400 + moduł 5G/LTE + GPS. Identyczny procesor (Qualcomm 4490), ekran, klawiatury, skanery, bateria i wytrzymałość. MC3450 dodaje: 5G publiczne i prywatne (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigację satelitarną GPS/GLONASS/Galileo/BeiDou. Wybierz MC3450 jeśli praca odbywa się także na zewnątrz budynku, gdzie Wi-Fi nie sięga."
     },
     {
       "question": "Czy MC3450 obsługuje prywatne sieci 5G?",
@@ -25957,7 +25957,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Czym się różni MC3450 od Zebra TC58?",
-      "answer": "MC3450 to terminal z fizyczną klawiaturą (29/38/47 klawiszy), ekranem 4\" i 5G — do intensywnego wprowadzania danych w magazynie i terenie. TC58 to terminal dotykowy z ekranem 6\" FHD, 5G i procesorem Qualcomm 6490. MC3450 wygrywa dzięki klawiaturze i skanerowi SE58 do 30,5 m. TC58 wygrywa ekranem dotykowym i nowszą platformą. MC3450 od 5 572 zł, TC58 od ~7 500 zł netto."
+      "answer": "MC3450 to terminal z fizyczną klawiaturą (29/38/47 klawiszy), ekranem 4\" i 5G — do intensywnego wprowadzania danych w magazynie i terenie. TC58 to terminal dotykowy z ekranem 6\" FHD, 5G i procesorem Qualcomm 6490. MC3450 wygrywa dzięki klawiaturze i skanerowi SE58 do 30,5 m. TC58 wygrywa ekranem dotykowym i nowszą platformą."
     },
     {
       "question": "Jaki system Android ma Zebra MC3450 i ile lat aktualizacji?",
@@ -25965,7 +25965,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Gdzie serwisować Zebra MC3450 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3450, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 139 zł netto/3 lata) dostępna jest naprawa priorytetowa. Serwis obsługuje również starsze modele MC3400, MC3300x i MC3200 — migracja z pełnym wsparciem serwisowym."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC3450, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Serwis obsługuje również starsze modele MC3400, MC3300x i MC3200 — migracja z pełnym wsparciem serwisowym."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra MC3450?",
@@ -25977,7 +25977,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Jakie są alternatywy dla Zebra MC3450?",
-      "answer": "W portfolio Zebra: MC3400 (identyczny bez 5G — tańszy o ~1 000 zł), TC58/TC58e (dotykowy 5G, większy ekran, bez klawiatury), MC9450 (klasa premium 5G, większy ekran, RFID opcja). Konkurencja: Honeywell CT37 (5G, Android), Datalogic Skorpio X5 (gun + 2D, IP65). MC3450 to jedyny terminal z klawiaturą i 5G w cenie poniżej 6 543 zł netto."
+      "answer": "Konkurencja: Honeywell CT37 (5G, Android), Datalogic Skorpio X5 (gun + 2D, IP65)."
     },
     {
       "question": "Ile waży Zebra MC3450?",
@@ -25985,7 +25985,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Jaka gwarancja na Zebra MC3450?",
-      "answer": "Standardowa gwarancja producenta na Zebra MC3450 wynosi 1 rok. Opcjonalnie dostępne są kontrakty serwisowe Zebra OneCare Essential: 3 lata (Z1AE-MC34XX-3C00) za 1 139 zł netto lub 5 lat (Z1AE-MC34XX-5C00) za 1 899 zł netto. OneCare obejmuje naprawy sprzętowe, wymianę części i priorytetowy serwis w autoryzowanym centrum serwis-zebry.pl."
+      "answer": "Standardowa gwarancja producenta na Zebra MC3450 wynosi 1 rok. OneCare obejmuje naprawy sprzętowe, wymianę części i priorytetowy serwis w autoryzowanym centrum serwis-zebry.pl."
     },
     {
       "question": "Czy MC3450 działa z SAP i WMS?",
@@ -26146,22 +26146,22 @@ const mobileComputers: Product[] = [
     "reviewBody": "Zebra MC3450 to jedyny kolektor danych z fizyczną klawiaturą i łącznością 5G w cenie poniżej 6 543 zł netto. Identyczne parametry jak MC3400 plus moduł 5G publiczne/prywatne (CBRS/FR1), dual SIM (nano + eSIM) i nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. Optymalny do yard management, portów i logistyki terenowej, gdzie Wi-Fi nie sięga. Skaner SE58 Extended Range (30,5 m) zastępuje drabinę przy skanowaniu kontenerów. Pełna kompatybilność z akcesoriami MC3300x i MC3400 — migracja bez wymiany infrastruktury ładowania. Minus: ~1 000 zł droższy od MC3400 — wybierasz świadomie, gdy 5G/GPS są niezbędne."
   },
   "createdAt": "2024-10-15",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-mc9400",
   "slug": "zebra-mc9400",
   "name": "Zebra MC9400",
-  "seoTitle": "Zebra MC9400 — kolektor danych ultra-rugged | od 8 482 zł",
-  "seoDescription": "Zebra MC9400 — kolektor danych ultra-rugged do magazynów i chłodni (-30°C). 7 klawiatur, SE58 do 30 m, IP68. 20 konfiguracji od 8 482 zł | TAKMA.",
+  "seoTitle": "Zebra MC9400 — kolektor danych ultra-rugged",
+  "seoDescription": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę.",
   "shortDescription": "Zebra MC9400 — flagowy kolektor danych ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m, następca MC9300",
-  "description": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30 m i ochroną IP65+IP68 — do magazynów wysokiego składowania, chłodni (-30°C) i ciężkiego przemysłu. Następca MC9300, Android 14→17. 20 konfiguracji od 8 482 zł netto w TAKMA.\n\nDla kogo? Zebra MC9400 to flagowy kolektor danych (terminal mobilny) klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.\n\nKolektor danych MC9400 to następca serii MC9300: procesor Qualcomm QCS4490 octa-core 2,4 GHz dostarcza 2× większą moc obliczeniową niż poprzednik, z 6 GB RAM i 128 GB Flash UFS (microSD do 2 TB). Wyświetlacz 4,3\" WVGA (800×480) z Gorilla Glass o jasności 600 nit — czytelny w pełnym słońcu i w chłodniach z parującymi okularami. Dotyk w rękawicach roboczych i mokrych dłoniach. Wi-Fi 6E (triband 2,4/5/6 GHz), Bluetooth 5.3, NFC. Android 14 z gwarancją aktualizacji do Android 17.\n\nSiedem wymiennych klawiatur (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa numeryczna rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa (najpopularniejsza w WMS), 53-klawiszowa VT (emulacja terminala), 53-klawiszowa 5250 (emulacja IBM AS/400), 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, z wyczuwalnym klikiem — do pracy w rękawicach na każdej zmianie.\n\nKolektor danych MC9400 oferuje dwa skanery: SE4770 Standard Range — imager 2D do skanowania na krótkim i średnim dystansie, idealne do retail i logistyki bliskiego zasięgu. SE58 Extended Range z zielonym laserem IntelliFocus — zasięg do 30,5 m (100 ft), 7× bardziej widoczny niż tradycyjny laser, do skanowania etykiet na najwyższych regałach magazynów wysokiego składowania bez drabiny i wózka widłowego.\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.\n\nOpcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: [Zebra MC9450](/produkt/zebra-mc9450). Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Kolektor danych Zebra MC9400 z Android 14 i gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.",
+  "description": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30 m i ochroną IP65+IP68 — do magazynów wysokiego składowania, chłodni (-30°C) i ciężkiego przemysłu. Następca MC9300, Android 14→17. 20 konfiguracji w TAKMA.\n\nDla kogo? Zebra MC9400 to flagowy kolektor danych (terminal mobilny) klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.\n\nKolektor danych MC9400 to następca serii MC9300: procesor Qualcomm QCS4490 octa-core 2,4 GHz dostarcza 2× większą moc obliczeniową niż poprzednik, z 6 GB RAM i 128 GB Flash UFS (microSD do 2 TB). Wyświetlacz 4,3\" WVGA (800×480) z Gorilla Glass o jasności 600 nit — czytelny w pełnym słońcu i w chłodniach z parującymi okularami. Dotyk w rękawicach roboczych i mokrych dłoniach. Wi-Fi 6E (triband 2,4/5/6 GHz), Bluetooth 5.3, NFC. Android 14 z gwarancją aktualizacji do Android 17.\n\nSiedem wymiennych klawiatur (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa numeryczna rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa (najpopularniejsza w WMS), 53-klawiszowa VT (emulacja terminala), 53-klawiszowa 5250 (emulacja IBM AS/400), 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, z wyczuwalnym klikiem — do pracy w rękawicach na każdej zmianie.\n\nKolektor danych MC9400 oferuje dwa skanery: SE4770 Standard Range — imager 2D do skanowania na krótkim i średnim dystansie, idealne do retail i logistyki bliskiego zasięgu. SE58 Extended Range z zielonym laserem IntelliFocus — zasięg do 30,5 m (100 ft), 7× bardziej widoczny niż tradycyjny laser, do skanowania etykiet na najwyższych regałach magazynów wysokiego składowania bez drabiny i wózka widłowego.\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.\n\nOpcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: [Zebra MC9450](/produkt/zebra-mc9450). Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Kolektor danych Zebra MC9400 z Android 14 i gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 8482.44,
+  "priceFrom": 9653.12,
   "images": [
     "/images/products/zebra-mc9400_1.png",
     "/images/products/zebra-mc9400_2.png",
@@ -26261,7 +26261,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6BSS-A6",
       "name": "MC9400, SE4770, 34 kl.",
-      "priceFrom": 7650.52,
+      "priceFrom": 9653.12,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26271,7 +26271,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6CSS-A6",
       "name": "MC9400, SE4770, 43 kl.",
-      "priceFrom": 7650.52,
+      "priceFrom": 9653.12,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26281,7 +26281,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6DSS-A6",
       "name": "MC9400, SE4770, 53 kl.",
-      "priceFrom": 7650.52,
+      "priceFrom": 9653.12,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26291,7 +26291,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6ESS-A6",
       "name": "MC9400, SE4770, 53 kl. VT",
-      "priceFrom": 7650.52,
+      "priceFrom": 10003.21,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26301,7 +26301,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6GSS-A6",
       "name": "MC9400, SE4770, 53 kl. 5250",
-      "priceFrom": 7650.52,
+      "priceFrom": 9653.12,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26311,7 +26311,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1J6HSS-A6",
       "name": "MC9400, SE4770, 58 kl.",
-      "priceFrom": 7638.18,
+      "priceFrom": 9653.12,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26321,8 +26321,8 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1P6DSS-A6",
       "name": "MC9400, SE4770, 53 kl., Kamera",
-      "priceFrom": 7817.49,
-      "availability": "available",
+      "priceFrom": 9879.69,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "53 klawisze",
@@ -26332,7 +26332,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1P6GSS-A6",
       "name": "MC9400, SE4770, 53 kl. 5250, Kamera",
-      "priceFrom": 7817.49,
+      "priceFrom": 10269.59,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -26343,7 +26343,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6ASS-A6",
       "name": "MC9400, SE58, 29 kl.",
-      "priceFrom": 8116.34,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26353,7 +26353,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6BSS-A6",
       "name": "MC9400, SE58, 34 kl.",
-      "priceFrom": 8116.34,
+      "priceFrom": 10252.09,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26363,7 +26363,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6CSS-A6",
       "name": "MC9400, SE58, 43 kl.",
-      "priceFrom": 8101.51,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26373,7 +26373,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6DSS-A6",
       "name": "MC9400, SE58, 53 kl.",
-      "priceFrom": 8116.34,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26383,7 +26383,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6ESS-A6",
       "name": "MC9400, SE58, 53 kl. VT",
-      "priceFrom": 8116.34,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26393,7 +26393,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6GSS-A6",
       "name": "MC9400, SE58, 53 kl. 5250",
-      "priceFrom": 8101.51,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26403,7 +26403,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1M6HSS-A6",
       "name": "MC9400, SE58, 58 kl.",
-      "priceFrom": 8116.34,
+      "priceFrom": 10257.4,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26413,7 +26413,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6ASS-A6",
       "name": "MC9400, SE58, 29 kl., Kamera",
-      "priceFrom": 8295.62,
+      "priceFrom": 10478.55,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26424,7 +26424,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6BSS-A6",
       "name": "MC9400, SE58, 34 kl., Kamera",
-      "priceFrom": 8295.62,
+      "priceFrom": 10483.92,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26435,7 +26435,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6CSS-A6",
       "name": "MC9400, SE58, 43 kl., Kamera",
-      "priceFrom": 8295.62,
+      "priceFrom": 10483.92,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26446,7 +26446,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6DSS-A6",
       "name": "MC9400, SE58, 53 kl., Kamera",
-      "priceFrom": 7976.55,
+      "priceFrom": 10483.92,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26457,7 +26457,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6GSS-A6",
       "name": "MC9400, SE58, 53 kl. 5250, Kamera",
-      "priceFrom": 8295.62,
+      "priceFrom": 10864.18,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26468,7 +26468,7 @@ const mobileComputers: Product[] = [
     {
       "partNumber": "MC9401-0G1R6HSS-A6",
       "name": "MC9400, SE58, 58 kl., Kamera",
-      "priceFrom": 8295.62,
+      "priceFrom": 10483.92,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -26480,11 +26480,11 @@ const mobileComputers: Product[] = [
   "faq": [
     {
       "question": "Co to jest Zebra MC9400 (kolektor danych)?",
-      "answer": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, przeznaczony do magazynów wysokiego składowania, chłodni (-30°C), portów i ciężkiego przemysłu. Wyposażony w skaner SE58 Extended Range do 30,5 m, Wi-Fi 6E, IP65+IP68, upadki z 3,65 m na beton. Następca MC9300 z 2× szybszym procesorem i pełną kompatybilnością wsteczną. 20 konfiguracji od 8 482 zł netto w TAKMA."
+      "answer": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, przeznaczony do magazynów wysokiego składowania, chłodni (-30°C), portów i ciężkiego przemysłu. Wyposażony w skaner SE58 Extended Range do 30,5 m, Wi-Fi 6E, IP65+IP68, upadki z 3,65 m na beton."
     },
     {
       "question": "Ile kosztuje kolektor danych Zebra MC9400?",
-      "answer": "Ceny kolektora danych Zebra MC9400 zaczynają się od 8 482 zł netto za wariant z SE4770 i klawiaturą 34–58 kl. bez kamery. Wersje SE4770 z kamerą 13 MP: od 7 817 zł. Konfiguracje SE58 Extended Range (zasięg 30,5 m) bez kamery: od 8 102 zł. SE58 z kamerą: od 7 977 zł do 8 296 zł netto. Wszystkie warianty: 6 GB RAM, 128 GB Flash. Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
+      "answer": "Wszystkie warianty: 6 GB RAM, 128 GB Flash. Przy zakupie 5+ sztuk oferujemy ceny projektowe — kliknij „Zapytaj o produkt\"."
     },
     {
       "question": "Czym różni się kolektor danych MC9400 od MC9300?",
@@ -26508,7 +26508,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Zebra MC9400 czy MC3400 — który kolektor danych wybrać?",
-      "answer": "MC9400 to kolektor danych ultra-rugged premium: IP68, upadki 3,65 m, 7 klawiatur, -30°C, od 8 482 zł. MC3400 to kolektor danych standard: IP65, 3 klawiatury, lżejszy (528 g), od 4 637 zł. MC9400 do ekstremalnych warunków (chłodnie, porty, ciężki przemysł). MC3400 do standardowych magazynów. Pełne porównanie: [MC3400 vs MC9400](/poradnik/zebra-mc3400-vs-mc9400)."
+      "answer": "MC9400 do ekstremalnych warunków (chłodnie, porty, ciężki przemysł). MC3400 do standardowych magazynów. Pełne porównanie: [MC3400 vs MC9400](/poradnik/zebra-mc3400-vs-mc9400)."
     },
     {
       "question": "Jaki system Android ma Zebra MC9400 i ile lat aktualizacji?",
@@ -26516,7 +26516,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Gdzie serwisować Zebra MC9400 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 490 zł netto/3 lata) dostępna jest naprawa priorytetowa z urządzeniem zastępczym. Serwis obsługuje również starsze modele MC9300, MC9200 i MC9190 — migracja na MC9400 z pełnym wsparciem serwisowym."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne, wymiana ekranów, klawiatur, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Serwis obsługuje również starsze modele MC9300, MC9200 i MC9190 — migracja na MC9400 z pełnym wsparciem serwisowym."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra MC9400?",
@@ -26528,11 +26528,11 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Gdzie kupić kolektor danych Zebra MC9400 w Polsce?",
-      "answer": "Kolektor danych Zebra MC9400 jest dostępny w autoryzowanym sklepie TAKMA (takma.com.pl). 20 konfiguracji od 8 482 zł netto (SE4770) do 8 296 zł (SE58 z kamerą). TAKMA oferuje: doradztwo w wyborze klawiatury i skanera, wycenę flotową z rabatami od 5 szt., konfigurację MDM i StageNow, serwis gwarancyjny (serwis-zebry.pl), kontrakty Zebra OneCare Essential od 1 490 zł/3 lata."
+      "answer": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę."
     },
     {
       "question": "Czy Zebra MC9400 wymaga kontraktu serwisowego OneCare?",
-      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). OneCare Essential na MC9400 kosztuje 1 514 zł netto za 3 lata (24% ceny terminala) i obejmuje naprawy uszkodzeń mechanicznych, wsparcie techniczne i aktualizacje LifeGuard. Jedna naprawa płyty głównej MC9400 (3 000-5 000 zł) przekracza wartość kontraktu. Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
+      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
     },
     {
       "question": "Jaką stację wybrać do MC9400?",
@@ -26712,7 +26712,7 @@ const mobileComputers: Product[] = [
   },
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9400-series.html",
   "createdAt": "2024-10-15",
-  "updatedAt": '2026-10-03'
+  "updatedAt": "2026-10-07"
 },
   {
     id: 'datalogic-skorpio-x40',
@@ -27105,8 +27105,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "id": "zebra-mc9450",
   "slug": "zebra-mc9450",
   "name": "Zebra MC9450",
-  "seoTitle": "Zebra MC9450 — kolektor danych 5G z GPS / terminal ultra-rugged | od 8 594 zł",
-  "seoDescription": "Zebra MC9450 (MC945B) — kolektor danych ultra-rugged 5G z GPS do placów, portów i logistyki terenowej. Następca MC9300: 7 klawiatur, skaner SE58 do 30 m, IP68, -30°C. Cena od 8 594 zł netto.",
+  "seoTitle": "Zebra MC9450 — kolektor danych 5G z GPS / terminal ultra-rugged",
+  "seoDescription": "Zebra MC9450 (MC945B) — kolektor danych ultra-rugged 5G z GPS do placów, portów i logistyki terenowej. Następca MC9300: 7 klawiatur, skaner SE58 do 30 m, IP68, -30°C.",
   "shortDescription": "Zebra MC9450 — flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68, następca MC9300",
   "description": "Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.\n\nIdentyczne parametry jak MC9400 (procesor Qualcomm QCS4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB Flash UFS, Wi-Fi 6E, ekran 4,3\" WVGA 600 nit) plus moduł 5G NR Sub-6: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou/NavIC. MC9450 to jedyny ultra-rugged terminal Zebra z klawiaturą, 5G i GPS — gdy operator musi pracować na zewnątrz, gdzie Wi-Fi nie sięga, a lokalizacja GPS jest kluczowa.\n\nWymienne klawiatury (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa i 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, zoptymalizowane do pracy w rękawicach roboczych i w temperaturach od -30°C do +50°C. Dwa skanery: SE4770 Standard Range i SE58 Extended Range z zielonym laserem IntelliFocus (zasięg do 30,5 m / 100 ft).\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton, 6 000 cykli tumble z 1 m. Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do śledzenia lokalizacji) i 5 000 mAh freezer (certyfikowana do -30°C). Warm-swap — wymiana baterii bez restartu.\n\nPełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące, ładowarki baterii, holstery — migracja z MC9300 bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC9400](/produkt/zebra-mc9400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -27114,7 +27114,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 8594.46,
+  "priceFrom": 11465.91,
   "images": [
     "/images/products/zebra-mc9450_1.png",
     "/images/products/zebra-mc9450_2.png",
@@ -27223,8 +27223,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1J6BSS-A6",
       "name": "MC9450, SE4770, 34 kl.",
-      "priceFrom": 8594.46,
-      "availability": "available",
+      "priceFrom": 11255.57,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "34 klawisze"
@@ -27233,8 +27233,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1J6CSS-A6",
       "name": "MC9450, SE4770, 43 kl.",
-      "priceFrom": 8594.46,
-      "availability": "available",
+      "priceFrom": 11290.26,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "43 klawisze"
@@ -27243,8 +27243,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1J6DSS-A6",
       "name": "MC9450, SE4770, 53 kl.",
-      "priceFrom": 8594.46,
-      "availability": "available",
+      "priceFrom": 10861.63,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "53 klawisze"
@@ -27253,8 +27253,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1J6HSS-A6",
       "name": "MC9450, SE4770, 58 kl.",
-      "priceFrom": 8594.46,
-      "availability": "available",
+      "priceFrom": 10861.63,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "58 klawiszy"
@@ -27263,8 +27263,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1P6DSS-A6",
       "name": "MC9450, SE4770, 53 kl., Kamera",
-      "priceFrom": 8773.73,
-      "availability": "available",
+      "priceFrom": 11088.21,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "53 klawisze",
@@ -27274,8 +27274,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1P6DSB-A6",
       "name": "MC9450, SE4770, 53 kl., Kamera, BLE",
-      "priceFrom": 8869.34,
-      "availability": "available",
+      "priceFrom": 10100.53,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Klawiatura": "53 klawisze",
@@ -27286,8 +27286,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6ASS-A6",
       "name": "MC9450, SE58, 29 kl.",
-      "priceFrom": 9072.57,
-      "availability": "available",
+      "priceFrom": 11465.91,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "29 klawiszy"
@@ -27296,7 +27296,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6BSS-A6",
       "name": "MC9450, SE58, 34 kl.",
-      "priceFrom": 9072.57,
+      "priceFrom": 11881.77,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -27306,7 +27306,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6CSS-A6",
       "name": "MC9450, SE58, 43 kl.",
-      "priceFrom": 9072.57,
+      "priceFrom": 11465.91,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -27316,8 +27316,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6CSB-A6",
       "name": "MC9450, SE58, 43 kl., BLE",
-      "priceFrom": 9168.19,
-      "availability": "available",
+      "priceFrom": 12043.99,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "43 klawisze",
@@ -27327,8 +27327,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6DSS-A6",
       "name": "MC9450, SE58, 53 kl.",
-      "priceFrom": 9072.57,
-      "availability": "available",
+      "priceFrom": 11465.91,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "53 klawisze"
@@ -27337,8 +27337,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6DSB-A6",
       "name": "MC9450, SE58, 53 kl., BLE",
-      "priceFrom": 9168.19,
-      "availability": "available",
+      "priceFrom": 12043.99,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "53 klawisze",
@@ -27348,7 +27348,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1M6HSS-A6",
       "name": "MC9450, SE58, 58 kl.",
-      "priceFrom": 9072.57,
+      "priceFrom": 11465.91,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -27358,7 +27358,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1R6ASS-A6",
       "name": "MC9450, SE58, 29 kl., Kamera",
-      "priceFrom": 9251.89,
+      "priceFrom": 11692.44,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -27369,8 +27369,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1R6BSS-A6",
       "name": "MC9450, SE58, 34 kl., Kamera",
-      "priceFrom": 9251.89,
-      "availability": "available",
+      "priceFrom": 11692.44,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "34 klawisze",
@@ -27380,8 +27380,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1R6CSS-A6",
       "name": "MC9450, SE58, 43 kl., Kamera",
-      "priceFrom": 9251.89,
-      "availability": "available",
+      "priceFrom": 11692.44,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "43 klawisze",
@@ -27391,8 +27391,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1R6DSS-A6",
       "name": "MC9450, SE58, 53 kl., Kamera",
-      "priceFrom": 9251.89,
-      "availability": "available",
+      "priceFrom": 11692.44,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE58",
         "Klawiatura": "53 klawisze",
@@ -27402,7 +27402,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "MC945B-3G1R6HSS-A6",
       "name": "MC9450, SE58, 58 kl., Kamera",
-      "priceFrom": 9251.89,
+      "priceFrom": 12153.92,
       "availability": "available",
       "attributes": {
         "Skaner": "SE58",
@@ -27414,11 +27414,11 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "faq": [
     {
       "question": "Ile kosztuje Zebra MC9450?",
-      "answer": "Ceny Zebra MC9450 zaczynają się od 8 594 zł netto za wariant SE4770 bez kamery (MC945B-3G1J6DSS-A6). SE4770 z kamerą 13 MP: od 8 774 zł. SE58 Extended Range (30,5 m) bez kamery: od 9 073 zł. SE58 z kamerą: od 9 252 zł. Wersje z baterią BLE: +96 zł. Wszystkie warianty: 6 GB RAM, 128 GB Flash, 5G + GPS. Przy zakupie 5+ sztuk — ceny projektowe."
+      "answer": "Wszystkie warianty: 6 GB RAM, 128 GB Flash, 5G + GPS. Przy zakupie 5+ sztuk — ceny projektowe."
     },
     {
       "question": "Czym się różni MC9450 od MC9400?",
-      "answer": "MC9450 = MC9400 + moduł 5G/LTE + GPS. Identyczny procesor (QCS4490), ekran, klawiatury, skanery, baterie i wytrzymałość. MC9450 dodaje: 5G NR Sub-6 (publiczne i prywatne CBRS/FR1), dual SIM (nano + eSIM), nawigację GPS/GLONASS/Galileo/BeiDou/NavIC. MC9400 to wersja wyłącznie Wi-Fi — tańsza o ~960 zł. Wybierz MC9450 jeśli praca odbywa się na zewnątrz budynku."
+      "answer": "MC9450 = MC9400 + moduł 5G/LTE + GPS. Identyczny procesor (QCS4490), ekran, klawiatury, skanery, baterie i wytrzymałość. MC9450 dodaje: 5G NR Sub-6 (publiczne i prywatne CBRS/FR1), dual SIM (nano + eSIM), nawigację GPS/GLONASS/Galileo/BeiDou/NavIC. Wybierz MC9450 jeśli praca odbywa się na zewnątrz budynku."
     },
     {
       "question": "Czy MC9450 obsługuje prywatne sieci 5G?",
@@ -27438,11 +27438,11 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czym się różni MC9450 od MC3450?",
-      "answer": "MC9450 to klasa ultra-rugged premium: upadki z 3,65 m (vs 2,4 m), 6 000 tumble (vs 4 000), IP65+IP68 (vs IP65/IP67), 7 kompatybilnych klawiatur (vs 3), skaner SE58 do 30,5 m, 128 GB Flash, Android do 17. MC3450 lżejszy (528 g vs 743 g) i tańszy (od 5 572 zł vs 8 594 zł). MC3450 do standardowej logistyki terenowej, MC9450 do ekstremalnych warunków na zewnątrz: porty, place, chłodnie."
+      "answer": "MC9450 to klasa ultra-rugged premium: upadki z 3,65 m (vs 2,4 m), 6 000 tumble (vs 4 000), IP65+IP68 (vs IP65/IP67), 7 kompatybilnych klawiatur (vs 3), skaner SE58 do 30,5 m, 128 GB Flash, Android do 17. MC3450 do standardowej logistyki terenowej, MC9450 do ekstremalnych warunków na zewnątrz: porty, place, chłodnie."
     },
     {
       "question": "Jakie są alternatywy dla Zebra MC9450?",
-      "answer": "W portfolio Zebra: MC9400 (identyczny bez 5G — tańszy o ~960 zł), MC3450 (lżejszy, tańszy, 3 klawiatury, 5G+GPS), TC58/TC58e (dotykowy 5G, bez klawiatury). Konkurencja: Honeywell CK67 (5G, klawiatura, Android), Datalogic Skorpio X5 (gun, IP65). MC9450 to jedyny ultra-rugged 5G terminal z 7 klawiaturami, IP68 i upadkami z 3,65 m."
+      "answer": "Konkurencja: Honeywell CK67 (5G, klawiatura, Android), Datalogic Skorpio X5 (gun, IP65). MC9450 to jedyny ultra-rugged 5G terminal z 7 klawiaturami, IP68 i upadkami z 3,65 m."
     },
     {
       "question": "Jaką stację wybrać do MC9450?",
@@ -27595,7 +27595,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   },
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9400-series.html",
   "createdAt": "2024-10-15",
-  "updatedAt": '2026-10-03'
+  "updatedAt": "2026-10-07"
 },
   // ============================================
   // ZEBRA EM45 ENTERPRISE MOBILE
@@ -27604,8 +27604,8 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "id": "zebra-em45",
   "slug": "zebra-em45",
   "name": "Zebra EM45",
-  "seoTitle": "Zebra EM45 — smartfon biznesowy 5G, IP68 | od 2 951 zł",
-  "seoDescription": "Zebra EM45 (EM45B1) — smartfon enterprise 5G: Wi-Fi 6E, 50 MP OIS, IP68+IP65+MIL-STD-810H, bateria 4 750 mAh / 25 h, COPE, AI NPU. Od 2 951 zł netto.",
+  "seoTitle": "Zebra EM45 — smartfon biznesowy 5G, IP68",
+  "seoDescription": "Zebra EM45 (EM45B1) — smartfon enterprise 5G: Wi-Fi 6E, 50 MP OIS, IP68+IP65+MIL-STD-810H, bateria 4 750 mAh / 25 h, COPE, AI NPU.",
   "shortDescription": "Zebra EM45 — enterprise mobile w formie smartfona, 6,7\" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE",
   "description": "Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.\n\nEM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7\" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — według Zebra najwyższa specyfikacja aparatu w historii urządzeń handheld tej marki.\n\nŁączność obejmuje 5G Sub-6 (NSA/SA), Wi-Fi 6E tri-band (2,4 / 5 / 6 GHz) z 2×2 MU-MIMO, Bluetooth 5.3 i NFC z certyfikacją Apple VAS / ECP 2.0 do płatności zbliżeniowych i identyfikacji. Bateria 4 750 mAh PowerPrecision zapewnia do 25 godzin pracy, a szybkie ładowanie uzupełnia 50 % w 30 minut. Dual SIM (nano-SIM + eSIM) i tryb COPE (Corporate Owned, Personally Enabled) pozwalają na oddzielny profil firmowy i osobisty na jednym urządzeniu.\n\nKonstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz MIL-STD-810H — upadki z 1,5 m na beton z etui ochronnym, 600 tumble'ów z 0,5 m. Skanowanie kodów 1D/2D kamerowe z algorytmami Zebra Advanced Decoder Library. Ekosystem Zebra Mobility DNA (DataWedge, StageNow, LifeGuard, Device Tracker, Identity Guardian) zapewnia centralne zarządzanie flotą, bezpieczeństwo OTA i szybkie wdrażanie. Wsparcie LifeGuard for Android gwarantuje wieloletnie aktualizacje bezpieczeństwa przez cały cykl życia urządzenia.\n\nKoszt posiadania (TCO): Android z wieloletnim wsparciem LifeGuard OTA — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.\n\nZebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: [Zebra EM45 — przewodnik zakupowy](/poradnik/zebra-em45-enterprise-mobile-computer). Pełna oferta [terminali mobilnych Zebra](/terminale-mobilne-zebra). Dokumentacja techniczna: www.zebra.com/em45.",
   "categoryId": "terminale-mobilne",
@@ -27625,7 +27625,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "Zebra EM45 Enterprise Mobile — widok z przodu pod kątem, prawa strona z portami",
     "Zebra EM45 Enterprise Mobile — widok z tyłu, aparat 50 MP z OIS i logo Zebra"
   ],
-  "priceFrom": 2950.76,
+  "priceFrom": 3727.26,
   "tags": [
     "retail",
     "logistyka",
@@ -27853,7 +27853,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Gdzie serwisować Zebra EM45 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne EM45, wymiana ekranów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 645 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne EM45, wymiana ekranów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra EM45?",
@@ -27927,14 +27927,14 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   },
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/em45-series.html",
   "createdAt": "2025-06-01",
-  "updatedAt": "2026-05-07"
+  "updatedAt": "2026-10-07"
 },
     // Zebra TC201 — terminal mobilny 4. generacji TC2x (premiera 21.07.2026)
   {
   "id": "zebra-tc201",
   "slug": "zebra-tc201",
   "name": "Zebra TC201",
-  "shortDescription": "Zebra TC201 — terminal mobilny 4. generacji TC2x: Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, 5G, skaner SR500, IP68. Następca TC21/TC22/TC26/TC27",
+  "shortDescription": "Zebra TC201 to terminal mobilny z Wi-Fi 7 i Bluetooth 6. Warianty 5G mają łączność komórkową. Do wyboru jest skaner SR500, AC670 lub wersja bez skanera.",
   "description": "Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu.\n\nSercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka\" jak w poprzedniej generacji (TC22 vs TC27).\n\nEkran 6\" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie, a szkłem Corning Gorilla Glass chronione są dwa najbardziej narażone elementy: wyświetlacz i okno skanera. Panel dotykowy działa w rękawiczkach i odrzuca krople wody. Skaner SR500 z żółtym celownikiem LED obsługuje kody 1D/2D, a AC670 Advanced Range czyta kody z 30 m i robi zdjęcia w kolorze — operator nie schyla się i nie wchodzi na drabinę, żeby zeskanować etykietę. Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem), 750 cykli tumble i pracę od -20°C do +50°C — to najodporniejszy terminal w historii serii TC2.\n\nTC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria oraz Android Strongbox z układem Secure Element (wybrane warianty) — wymagane w administracji publicznej, finansach i ochronie zdrowia. NFC z certyfikatami Apple VAS i Google Smart Tap obsługuje płatności zbliżeniowe i karty lojalnościowe, a audio z redukcją szumów opartą na AI zapewnia czysty głos w rozmowach i aplikacjach głosowych nawet w hałaśliwej hali. Zintegrowany czytnik UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m, tryb „licznika Geigera\" do szukania konkretnej sztuki) pojawi się w wariantach EMEA planowo w IV kwartale 2026.\n\nW cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device Central), a Workcloud Sync potrafi zamienić TC201 w radiotelefon push-to-talk i słuchawkę centrali PBX — jedno urządzenie zastępuje trzy. Migracja z floty TC22/TC27 nie wymaga wymiany infrastruktury: baterie wskazane dla TC201 są kompatybilne, a starsze stacje ShareCradle wymagają odpowiednich gniazd wymiennych z wkładką TC201. Pełne omówienie nowości: [Zebra TC201 — przewodnik](/poradnik/zebra-tc201).",
   "categoryId": "terminale-mobilne",
   "manufacturerId": "zebra",
@@ -27959,14 +27959,14 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "Zebra TC201 — widok z tyłu pod kątem z lewej, przyciski boczne",
     "Zebra TC201 — widok z tyłu pod kątem z prawej, zielony przycisk skanowania"
   ],
-  "seoTitle": "Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7, od 2 658 zł",
+  "seoTitle": "Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7,",
   "seoDescription": "Zebra TC201 — terminal mobilny (kolektor danych) 4. generacji TC2x: Dragonwing Q-6690, 5G + Wi-Fi 7, Bluetooth 6, skanery SR500/AC670 do 30 m, NFC z płatnościami, IP68, 245 g, FIPS 140-3. Następca TC22/TC27. Kontrakty OneCare 3 i 5 lat.",
-  "availability": "on-order",
+  "availability": "available",
   "isNew": true,
   "isBestseller": false,
-  "priceFrom": 2657.59,
+  "priceFrom": 3271.97,
   "variantAttributeTooltips": {
-    "Skaner": "SR500 — standardowy 1D/2D.\n\nAC670 — Advanced Range: odczyt do 30 m + tryb zdjęć.",
+    "Skaner": "SR500 — standardowy 1D/2D.\n\nAC670 — Advanced Range: odczyt do 30 m + tryb zdjęć.\n\nBrak — wariant bez skanera kodów.",
     "Bateria": "Standardowa 3 800 mAh (14,63 Wh).\n\nRozszerzona 5 200 mAh (20,02 Wh).",
     "Opcje": "Secure Element — układ bezpieczeństwa (FIPS 140-3, sektor regulowany).\n\nHot swap — wymiana baterii bez wyłączania terminala."
   },
@@ -27981,7 +27981,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 2657.59,
+      "priceFrom": 3055.51,
       "availability": "on-order"
     },
     {
@@ -27994,7 +27994,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Rozszerzona",
         "Opcje": "—"
       },
-      "priceFrom": 2788.04,
+      "priceFrom": 3205.49,
       "availability": "on-order"
     },
     {
@@ -28007,7 +28007,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Secure Element"
       },
-      "priceFrom": 3048.99,
+      "priceFrom": 3505.48,
       "availability": "on-order"
     },
     {
@@ -28020,7 +28020,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Hot swap + Secure Element"
       },
-      "priceFrom": 3253.98,
+      "priceFrom": 3741.17,
       "availability": "on-order"
     },
     {
@@ -28033,7 +28033,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 3309.89,
+      "priceFrom": 3805.48,
       "availability": "on-order"
     },
     {
@@ -28046,11 +28046,12 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Secure Element"
       },
-      "priceFrom": 3813.08,
-      "availability": "on-order"
+      "priceFrom": 4383.98,
+      "availability": "unavailable"
     },
     {
-      "partNumber": "TC201G-3S3P6BA00-TR",
+      "priceFrom": 3400.51,
+      "partNumber": "TC201G-3S3P6BA00-A6",
       "name": "TC201 5G + Wi-Fi 7, SR500, 6/64 GB",
       "attributes": {
         "Łączność": "5G + Wi-Fi 7",
@@ -28059,8 +28060,85 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 2657.59,
       "availability": "on-order"
+    },
+    {
+      "priceFrom": 3675.84,
+      "partNumber": "TC201G-3S3P6BE00-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 6/64 GB, bateria rozszerzona",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Rozszerzona",
+        "Opcje": "—"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 3979.06,
+      "partNumber": "TC201G-383P4BA01-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4086.16,
+      "partNumber": "TC201G-383P4BA11-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, hot swap + Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "Hot swap + Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4129.04,
+      "partNumber": "TC201G-383P4BE01-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, bateria rozszerzona, Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Rozszerzona",
+        "Opcje": "Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4150.48,
+      "partNumber": "TC201G-3S3S6BA00-A6",
+      "name": "TC201 5G + Wi-Fi 7, AC670 (30 m), 6/64 GB",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "AC670 (30 m)",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "—"
+      },
+      "availability": "on-order"
+    },
+    {
+      "priceFrom": 3271.97,
+      "partNumber": "TC201G-3N306BA00-A6",
+      "name": "TC201 5G + Wi-Fi 7, bez skanera, 6/64 GB",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "Brak",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "—"
+      },
+      "availability": "available"
     }
   ],
   "specifications": [
@@ -28230,7 +28308,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czy bateria w TC201 jest wymienna? Co z hot swap?",
-      "answer": "Tak, bateria jest wymienna: standardowa 3 800 mAh (14,63 Wh) lub rozszerzona 5 200 mAh (20,02 Wh). Wymiana bez wyłączania terminala (hot swap) dostępna jest w wybranych wariantach — w naszej ofercie to TC2010-083P4BA11-A6."
+      "answer": "Tak. Do wyboru jest bateria standardowa 3 800 mAh lub rozszerzona 5 200 mAh. Warianty TC2010-083P4BA11-A6 i TC201G-383P4BA11-A6 obsługują wymianę baterii bez wyłączania terminala (hot swap)."
     },
     {
       "question": "Czym różnią się warianty 6/64 GB i 8/128 GB?",
@@ -28250,7 +28328,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Ile kosztuje Zebra TC201?",
-      "answer": "Warianty Wi-Fi 7 zaczynają się od ok. 2 658 zł netto (SR500, 6/64 GB), wersja 5G od ok. 2 958 zł, a topowa konfiguracja z AC670 i 8/128 GB to ok. 3 813 zł. Ceny zmieniają się z kursem i dostępnością — aktualne kwoty pokazujemy na żywo przy każdym wariancie."
+      "answer": "Ceny pozostałych wariantów podajemy przy ich numerach PN. Jeśli cena nie jest widoczna, poproś o wycenę."
     },
     {
       "question": "Czy warto wymieniać TC22 na TC201?",
@@ -28393,7 +28471,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
           "Łączność": "Wi-Fi 7 + BT 6.0; 5G w wariancie WWAN",
           "Procesor": "Dragonwing Q-6690, 2,0 GHz (do +150%)",
           "Ekran": "6\" FHD+ (2160×1080), laminowany",
-          "Skaner": "SR500 lub AC670 (do 30 m)",
+          "Skaner": "SR500, AC670 (do 30 m) lub brak skanera",
           "Odporność": "IP68/IP65, upadki 1,53 m (2,13 m z bootem)",
           "Bateria": "3 800 / 5 200 mAh, hot swap w wybranych SKU",
           "RAM / Flash": "6/64 lub 8/128 GB",
@@ -28442,15 +28520,15 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "zebra-tc501"
   ],
   "createdAt": "2026-07-24",
-  "updatedAt": '2026-10-03',
+  "updatedAt": "2026-10-07",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc201.html"
 },
 {
   "id": "zebra-tc22",
   "slug": "zebra-tc22",
   "name": "Zebra TC22",
-  "seoTitle": "Zebra TC22 — kolektor danych / terminal mobilny Wi-Fi 6E | od 2 417 zł",
-  "seoDescription": "Zebra TC22 (WLMT0-T22) — kolektor danych Wi-Fi 6E do magazynów, retail i aptek. Następca TC21: ekran 6\" FHD+, skaner SE4710/SE55, IP68, Android do 16. 7 konfiguracji od 2 417 zł netto. WLMT0-T22B6ABC2-A6.",
+  "seoTitle": "Zebra TC22 — kolektor danych / terminal mobilny Wi-Fi 6E",
+  "seoDescription": "Zebra TC22 (WLMT0-T22) — kolektor danych Wi-Fi 6E do magazynów, retail i aptek. WLMT0-T22B6ABC2-A6.",
   "shortDescription": "Zebra TC22 — komputer mobilny Wi-Fi 6E z ekranem 6\" i skanerem 1D/2D, następca TC21",
   "description": "Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.\n\nTrzecia generacja bestsellerowej serii TC2x ([następca Zebra TC21](https://tc22.pl/#przewagi)) oferuje duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, wydajny procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM, oraz system Android z gwarancją aktualizacji do Androida 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC21.\n\nWybierz skaner według potrzeb: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na wysokich regałach magazynowych bez użycia drabiny. Skaner enterprise dekoduje kody 1D i 2D w 0,3 s — nawet zniszczone, zadrukowane lub wyświetlane na ekranie. Dla porównania: aparat smartfona potrzebuje 2–4 s na dobrze widoczny kod — [interaktywne porównanie wszystkich 7 wariantów TC22](https://tc22.pl/#porownanie) pomoże dobrać konfigurację.\n\nKonstrukcja o 10% cieńsza niż TC21, z ergonomicznym profilem redukującym nacisk na dłoń podczas wielogodzinnej pracy. Obudowa IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui ochronnym), test tumble 500 upadków z 0,5 m, zakres temperatur od -10°C do +50°C. Wymienne baterie PowerPrecision: 3 800 mAh (standard, ~10 h) lub 5 200 mAh (rozszerzona, ~14 h) z technologią hot-swap — wymiana w 5 sekund bez wyłączania urządzenia.\n\nŁączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps, Bluetooth 5.2 i NFC (Apple VAS, Google SmartTap — obsługa płatności zbliżeniowych i kart lojalnościowych). Kamera 16 MP z tyłu i 5 MP z przodu. USB 3.1 Type-C SuperSpeed. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zagubionych terminali), LifeGuard™ (comiesięczne łatki bezpieczeństwa). Zarządzanie flotą przez MDM: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — baterie, stacje ładowania, etui i uchwyty pistoletowe są identyczne dla obu modeli. Migracja z TC21 nie wymaga wymiany infrastruktury ładowania (nowe akcesoria TC2L). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC27](/produkt/zebra-tc27). Szczegółowa dokumentacja techniczna dostępna na zebra.com, [lista akcesoriów i interaktywna prezentacja modelu na tc22.pl](https://tc22.pl/#akcesoria) oraz w [serwis-zebry.pl](https://www.serwis-zebry.pl).",
   "categoryId": "terminale-mobilne",
@@ -28459,7 +28537,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   ],
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc22-tc27.html",
   "manufacturerId": "zebra",
-  "priceFrom": 2417,
+  "priceFrom": 3048.73,
   "images": [
     "/images/products/tc22_scanner_1.png",
     "/images/products/tc22_scanner_2.png",
@@ -28541,7 +28619,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B6ABC2-A6",
       "name": "TC22 SE4710, 6/64 GB, 3800 mAh",
-      "priceFrom": 2417,
+      "priceFrom": 3048.73,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -28552,7 +28630,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B6ABE2-A6",
       "name": "TC22 SE4710, 6/64 GB, 5200 mAh",
-      "priceFrom": 2553,
+      "priceFrom": 3228.08,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -28563,7 +28641,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B8ABC8-A6",
       "name": "TC22 SE4710, 8/128 GB, 3800 mAh, RFID-ready",
-      "priceFrom": 2830,
+      "priceFrom": 3720.88,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -28575,7 +28653,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B6CBC2-A6",
       "name": "TC22 SE55, 6/64 GB, 3800 mAh",
-      "priceFrom": 2963,
+      "priceFrom": 3745.5,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -28586,7 +28664,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B8ABD8-A6",
       "name": "TC22 SE4710, 8/128 GB, 3800 mAh, RFID-ready, BLE",
-      "priceFrom": 3060,
+      "priceFrom": 3868.73,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -28599,7 +28677,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B6CBE2-A6",
       "name": "TC22 SE55, 6/64 GB, 5200 mAh",
-      "priceFrom": 3099,
+      "priceFrom": 3909.25,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -28610,7 +28688,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     {
       "partNumber": "WLMT0-T22B8CBD8-A6",
       "name": "TC22 SE55, 8/128 GB, 3800 mAh, RFID-ready, BLE",
-      "priceFrom": 3606,
+      "priceFrom": 4558.68,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -28624,7 +28702,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC22?",
-      "answer": "Ceny Zebra TC22 zaczynają się od ok. 2 417 zł netto za podstawową konfigurację (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 2 963 zł netto, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 606 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się Zebra TC22 od TC27?",
@@ -28632,7 +28710,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czym różni się skaner SE4710 od SE55?",
-      "answer": "SE4710 to standardowy skaner 1D/2D z zasięgiem do 35 cm — wystarczający do skanowania produktów na poziomie ręki (retail, inwentaryzacja, apteka). SE55 Advanced Range skanuje kody od 10 cm do 7,6 m — odczytuje etykiety na wysokich regałach magazynowych bez drabiny. SE55 kosztuje ok. 400–500 zł więcej, ale w dużym magazynie oszczędza czas i eliminuje ryzyko pracy na wysokości."
+      "answer": "SE4710 to standardowy skaner 1D/2D z zasięgiem do 35 cm — wystarczający do skanowania produktów na poziomie ręki (retail, inwentaryzacja, apteka). SE55 Advanced Range skanuje kody od 10 cm do 7,6 m — odczytuje etykiety na wysokich regałach magazynowych bez drabiny."
     },
     {
       "question": "Czy Zebra TC22 jest wodoodporny?",
@@ -28660,7 +28738,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Gdzie serwisować Zebra TC22 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC22, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 025 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC22, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC22?",
@@ -28668,11 +28746,11 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC22?",
-      "answer": "Główne alternatywy w klasie entry-level: <a href=\"/produkt/datalogic-memor-12\">Datalogic Memor 12</a> (6\" FHD+, Android 13→18, od 2 687 zł — ładowanie Qi, Green Spot, GPS dual-band), Datalogic Memor 11 (5\" HD, Android 11, od ~3 290 zł — starszy, mniej wydajny), Honeywell EDA52 (podobna półka cenowa, mocny w logistyce USA). TC22 wyróżnia się: skanerem SE55 z zasięgiem do 7,6 m, baterią 5 200 mAh na 2 zmiany, ekosystemem Mobility DNA i najszerszą siecią serwisową w Polsce (TAKMA + serwis-zebry.pl). Szczegółowe porównanie: <a href=\"/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie\">TC22 vs Memor 12</a>."
+      "answer": "TC22 wyróżnia się: skanerem SE55 z zasięgiem do 7,6 m, baterią 5 200 mAh na 2 zmiany, ekosystemem Mobility DNA i najszerszą siecią serwisową w Polsce (TAKMA + serwis-zebry.pl). Szczegółowe porównanie: <a href=\"/poradnik/zebra-tc22-vs-datalogic-memor-12-porownanie\">TC22 vs Memor 12</a>."
     },
     {
       "question": "Czy Zebra TC22 wymaga kontraktu serwisowego OneCare?",
-      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). OneCare Essential na TC22 kosztuje 1 025 zł netto za 3 lata (41% ceny terminala) i obejmuje naprawy uszkodzeń mechanicznych, wsparcie techniczne i aktualizacje LifeGuard. Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
+      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
     }
   ],
   "applications": [
@@ -28873,14 +28951,14 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "reviewBody": "Zebra TC22 to jeden z najlepiej wyważonych terminali mobilnych w segmencie entry-level. Kompaktowa obudowa (236 g), 6-calowy ekran FHD+ i skaner SE4710 wystarczają do 90% zastosowań w magazynie, retail i logistyce. IP68 i wsparcie LifeGuard do Android 16 gwarantują długi cykl życia. Jedyny minus — brak hot-swap baterii. Przy cenie od 2 417 zł netto to najrozsądniejszy wybór dla firm wdrażających flotę terminali Zebra."
   },
   "createdAt": "2024-06-01",
-  "updatedAt": '2026-10-03'
+  "updatedAt": "2026-10-07"
 },
   {
     id: 'zebra-hc20',
     slug: 'zebra-hc20',
     name: 'Zebra HC20',
-    seoTitle: 'Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6 | od 2 950 zł',
-    seoDescription: 'Zebra HC20 (WLMT0-H20B6BCJ1) — kolektor danych do służby zdrowia z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6" FHD+, Wi-Fi 6E, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR. Od 2 950 zł netto.',
+    seoTitle: "Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6",
+    seoDescription: "Zebra HC20 (WLMT0-H20B6BCJ1) — kolektor danych do służby zdrowia z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6\" FHD+, Wi-Fi 6E, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR.",
     shortDescription: 'Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6E z przyciskiem alarmowym, dezynfekcja, BCMA, EHR',
     description: `Dla kogo? Zebra HC20 to dedykowany kolektor danych do służby zdrowia — szpitali, przychodni, POZ, hospicjów i domów opieki. Wzmocniona obudowa medyczna, czerwony przycisk alarmowy (Code Blue) i odporność na ponad 30 rodzajów chusteczek dezynfekujących sprawiają, że HC20 wytrzymuje wieloletnią pracę w środowisku klinicznym, gdzie standardowe smartfony zawiodą po 6–12 miesiącach narażenia na środki dezynfekujące.
 
@@ -28912,7 +28990,7 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
     manufacturerId: 'zebra',
-    priceFrom: 2950,
+    priceFrom: 3422.19,
     images: [
       '/images/products/hc20_1.png',
       '/images/products/hc20_2.png',
@@ -28926,7 +29004,7 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
       'Zebra HC20 — widok z boku, profil 12,5 mm z portem USB-C SuperSpeed bez szczelin gromadzących patogeny',
     ],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: "available",
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -28957,8 +29035,8 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
       {
         partNumber: 'WLMT0-H20B6BCJ1-A6',
         name: 'HC20 SE4720, 6/64 GB, 3800 mAh, healthcare',
-        priceFrom: 2950,
-        availability: 'on-order',
+        priceFrom: 3422.19,
+        availability: "available",
         attributes: {
           'Skaner': 'SE4720',
           'Pamięć': '6 GB / 64 GB',
@@ -28967,7 +29045,7 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC20?', answer: 'Cena Zebra HC20 (WLMT0-H20B6BCJ1-A6) zaczyna się od ok. 2 950 zł netto w konfiguracji healthcare z skanerem SE4720, 6 GB RAM / 64 GB Flash i baterią standardową 3 800 mAh. To wariant Wi-Fi-only — wersja z prywatną siecią 5G (HC25) i wariant z aparatem przednim do telemedycyny (HC50/HC55) kosztują więcej. Wycena z transportu, OneCare i akcesoriów na zamówienie indywidualne.' },
+      { question: 'Ile kosztuje Zebra HC20?', answer: "To wariant Wi-Fi-only — wersja z prywatną siecią 5G (HC25) i wariant z aparatem przednim do telemedycyny (HC50/HC55) kosztują więcej. Wycena z transportu, OneCare i akcesoriów na zamówienie indywidualne." },
       { question: 'Czym różni się Zebra HC20 od standardowego TC22?', answer: 'HC20 i TC22 mają identyczną platformę techniczną (Qualcomm 5430, ekran 6" FHD+, Wi-Fi 6/6E, IP68, akcesoria), ale HC20 jest fizycznie zaprojektowany dla ochrony zdrowia: 1) Czerwony przycisk alarmowy z funkcją Code Blue, 2) Obudowa z tworzyw klasy medycznej odpornych na 30+ chusteczek dezynfekujących, 3) Skaner SE4720 z białym podświetleniem (przyjazny dla pacjenta vs czerwony laser w TC22), 4) Tłumienie szumów AI dla głośnych korytarzy szpitalnych, 5) Funkcja PBX/radiotelefonu (Workcloud Communication). TC22 nie wytrzyma codziennej dezynfekcji — pęknie po 6–12 miesiącach.' },
       { question: 'Co to jest czerwony przycisk alarmowy Code Blue?', answer: 'Czerwony przycisk alarmowy na tylnej obudowie HC20 jest programowalny — może wybierać numer alarmowy (oddziałowy Code Blue, szpitalny pager bezpieczeństwa), uruchamiać aplikację ratunkową lub wysyłać alert do systemu MDM/EHR. Sekwencja aktywacji (np. naciśnij 2 sekundy lub kliknij 3 razy) zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha. Przydatne dla pielęgniarki w izolatce, lekarza na nocnym dyżurze lub opiekuna w domu pacjenta.' },
       { question: 'Czy Zebra HC20 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak, jest to główna cecha HC20. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek i środków dezynfekujących — alkoholami izopropylowymi i etylowymi, czwartorzędowymi związkami amoniowymi, podchlorynami, nadtlenkiem wodoru, kwasem nadoctowym, środkami fenolowymi. Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Standardowy TC22 nie ma tej certyfikacji i blaknie/pęka po 6 miesiącach.' },
@@ -29070,14 +29148,14 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
       reviewBody: 'Zebra HC20 to pierwszy "dostępny cenowo" kolektor danych do służby zdrowia w segmencie entry-level (2 950 zł netto vs ~5 000 zł za poprzednika TC52-HC). Czerwony przycisk Code Blue, certyfikowana odporność na 30+ środków dezynfekujących i białe podświetlenie skanera SE4720 to cechy realnie ułatwiające pracę pielęgniarki — nieobecne w żadnym smartfonie konsumenckim. Minus: tylko 1 wariant w naszej ofercie (Wi-Fi-only, 6/64 GB) — placówki potrzebujące telemedycyny powinny rozważyć HC50/HC55, a oddziały terenowe HC25 z 5G. Mimo to: dla 90% workflow pielęgniarskiego (BCMA, EHR, komunikacja) HC20 jest optymalnym wyborem cena/funkcjonalność w 2026.',
     },
     createdAt: '2026-05-12',
-    updatedAt: '2026-05-12',
+    updatedAt: "2026-10-07",
   },
   {
     id: 'zebra-hc25',
     slug: 'zebra-hc25',
     name: 'Zebra HC25',
-    seoTitle: 'Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS | od 3 350 zł',
-    seoDescription: 'Zebra HC25 (WCMTB-H25B6BCJ1) — kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, eSIM, czerwonym przyciskiem alarmowym i obudową odporną na 30+ środków dezynfekujących. Dla opieki domowej, hospicjów, pielęgniarek środowiskowych. Od 3 350 zł netto.',
+    seoTitle: "Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS",
+    seoDescription: "Zebra HC25 (WCMTB-H25B6BCJ1) — kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, eSIM, czerwonym przyciskiem alarmowym i obudową odporną na 30+ środków dezynfekujących. Dla opieki domowej, hospicjów, pielęgniarek środowiskowych.",
     shortDescription: 'Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS, dla opieki domowej i pielęgniarek środowiskowych',
     description: `Dla kogo? Zebra HC25 to kolektor danych do służby zdrowia dla pracowników działających **poza siecią Wi-Fi szpitala** — pielęgniarek środowiskowych, opiekunów w domach pacjentów, hospicjów domowych, pogotowia ratunkowego i transportu medycznego. Łączność 5G FR1 + 4G LTE-A zapewnia stały dostęp do systemu EHR/HIS i komunikację z dyżurką niezależnie od tego, czy pracownik jest w szpitalu, mieszkaniu pacjenta czy karetce.
 
@@ -29112,7 +29190,7 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html',
     manufacturerId: 'zebra',
-    priceFrom: 3350,
+    priceFrom: 3673.81,
     images: [
       '/images/products/hc25_1.png',
       '/images/products/hc25_2.png',
@@ -29126,7 +29204,7 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
       'Zebra HC25 — widok z boku, profil 12,5 mm z portem USB-C i tackami SIM (nano + eSIM)',
     ],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: "available",
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29159,8 +29237,8 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
       {
         partNumber: 'WCMTB-H25B6BCJ1-A6',
         name: 'HC25 SE4720, 6/64 GB, 3800 mAh, 5G/LTE + GPS, healthcare',
-        priceFrom: 3350,
-        availability: 'on-order',
+        priceFrom: 3673.81,
+        availability: "available",
         attributes: {
           'Skaner': 'SE4720',
           'Pamięć': '6 GB / 64 GB',
@@ -29170,8 +29248,8 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC25?', answer: 'Cena Zebra HC25 (WCMTB-H25B6BCJ1-A6) zaczyna się od ok. 3 350 zł netto za wariant healthcare z modułem 5G/LTE, GPS Dual-band L1+L5, skanerem SE4720, 6 GB RAM / 64 GB Flash i baterią standardową 3 800 mAh. Premium ok. 400 zł vs HC20 (2 950 zł netto) za moduł 5G + GPS — wskazane dla pracowników terenowych. Wariant z 8 GB RAM, aparatem przednim 5 MPx do telemedycyny i hot-swap baterii to HC55.' },
-      { question: 'Czym różni się Zebra HC25 od HC20?', answer: 'HC25 to wariant HC20 z dodatkowym modułem WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). HC20 ma tylko Wi-Fi — działa wewnątrz budynku szpitala. HC25 działa wszędzie tam gdzie jest zasięg sieci komórkowej — w mieszkaniach pacjentów, karetce, transporcie. Cechy healthcare (czerwony przycisk Code Blue, obudowa odporna na dezynfekcję, skaner SE4720 z białym podświetleniem, tłumienie szumów AI) są identyczne. Cena HC25 to ok. +400 zł vs HC20.' },
+      { question: 'Ile kosztuje Zebra HC25?', answer: "Wariant z 8 GB RAM, aparatem przednim 5 MPx do telemedycyny i hot-swap baterii to HC55." },
+      { question: 'Czym różni się Zebra HC25 od HC20?', answer: "HC25 to wariant HC20 z dodatkowym modułem WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). HC20 ma tylko Wi-Fi — działa wewnątrz budynku szpitala. HC25 działa wszędzie tam gdzie jest zasięg sieci komórkowej — w mieszkaniach pacjentów, karetce, transporcie. Cechy healthcare (czerwony przycisk Code Blue, obudowa odporna na dezynfekcję, skaner SE4720 z białym podświetleniem, tłumienie szumów AI) są identyczne." },
       { question: 'Kiedy wybrać HC25 zamiast HC20?', answer: 'HC25 jest niezbędny gdy pracownik medyczny działa poza siecią Wi-Fi szpitala: 1) pielęgniarki środowiskowe odwiedzające pacjentów w domach, 2) opiekunowie hospicjów domowych, 3) paramedycy w karetce, 4) personel transportu pacjentów, 5) lekarze POZ z wizytami domowymi, 6) pracownicy ambulansów stomatologicznych/mammograficznych. HC20 wystarczy dla personelu pracującego wewnątrz szpitala/przychodni z dostępem do Wi-Fi enterprise.' },
       { question: 'Czy Zebra HC25 obsługuje eSIM?', answer: 'Tak, HC25 ma dual SIM: 1 fizyczny slot nano-SIM + 1 eSIM (zaprogramowany cyfrowo). Pozwala mieć dwóch operatorów jednocześnie — np. komercyjny operator dla pracy zewnętrznej i wewnętrzny eSIM dla prywatnej sieci 5G szpitala. eSIM ułatwia masowe wdrożenie floty — administrator IT programuje wszystkie urządzenia zdalnie bez konieczności fizycznego włożenia karty.' },
       { question: 'Czy GPS w HC25 działa w polskich miastach?', answer: 'Tak. HC25 ma dwuzakresowy GNSS Dual-band L1+L5 — najwyższa dokładność lokalizacji w klasie mobile. Obsługuje GPS (US), GLONASS (RU), Galileo (EU), BeiDou (CN) i QZSS (JP) — wszystkie konstelacje używane w Europie. Dual-band L1+L5 eliminuje problem odbić sygnału w gęstej zabudowie miejskiej (Warszawa, Kraków, Wrocław) — dokładność lokalizacji ok. 1-3 m vs 5-10 m w GPS jednozakresowym. a-GPS przyspiesza pierwsze fix do kilku sekund.' },
@@ -29273,14 +29351,14 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
       reviewBody: 'Zebra HC25 to najsensowniejszy kolektor danych do służby zdrowia dla wszystkich, którzy pracują POZA siecią Wi-Fi szpitala — pielęgniarki środowiskowe, hospicja domowe, paramedycy, transport medyczny. Premium ok. 400 zł vs HC20 daje moduł 5G + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — funkcjonalność której nie sklonujesz hotspotem z prywatnego smartfona. Jakość GPS w polskich miastach jest praktycznie radarowa (1-3 m precyzji). Dla pielęgniarki odwiedzającej 8-10 pacjentów dziennie GPS + auto-logowanie wizyt może oszczędzić 30-60 min administracji dziennie. Minus: brak aparatu przedniego do telekonsultacji — to różnica vs HC55. Dla 80% scenariuszy opieki terenowej HC25 wystarczy.',
     },
     createdAt: '2026-05-13',
-    updatedAt: '2026-05-13',
+    updatedAt: "2026-10-07",
   },
   {
     id: 'zebra-hc50',
     slug: 'zebra-hc50',
     name: 'Zebra HC50',
-    seoTitle: 'Zebra HC50 — kolektor danych do służby zdrowia premium, telemedycyna | od 4 200 zł',
-    seoDescription: 'Zebra HC50 (WLMT0-H50D8BBK1) — premium kolektor danych do służby zdrowia z aparatem przednim 5 MPx do telemedycyny, hot-swap baterii (wymiana w 30 s), 8 GB RAM / 128 GB Flash, czerwonym przyciskiem alarmowym. Wi-Fi 6E, IP68, Android do 16. Od 4 200 zł netto.',
+    seoTitle: "Zebra HC50 — kolektor danych do służby zdrowia premium, telemedycyna",
+    seoDescription: "Zebra HC50 (WLMT0-H50D8BBK1) — premium kolektor danych do służby zdrowia z aparatem przednim 5 MPx do telemedycyny, hot-swap baterii (wymiana w 30 s), 8 GB RAM / 128 GB Flash, czerwonym przyciskiem alarmowym. Wi-Fi 6E, IP68, Android do 16.",
     shortDescription: 'Zebra HC50 — premium kolektor danych do służby zdrowia, aparat przedni 5 MPx, hot-swap baterii, telemedycyna',
     description: `Dla kogo? Zebra HC50 to premium kolektor danych do służby zdrowia dla placówek wymagających **telemedycyny** i **nieprzerwanego workflow klinicznego** — szpitali wojewódzkich, klinik uniwersyteckich, intensywnej terapii, izolatek zakaźnych i oddziałów onkologicznych. Aparat przedni 5 MPx umożliwia konsultacje wideo lekarz-pacjent przy łóżku, a technologia hot-swap baterii eliminuje przerwy w pracy podczas wymiany akumulatora.
 
@@ -29315,7 +29393,7 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html',
     manufacturerId: 'zebra',
-    priceFrom: 4200,
+    priceFrom: 5676.03,
     images: [
       '/images/products/hc50_1.png',
       '/images/products/hc50_2.png',
@@ -29329,7 +29407,7 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       'Zebra HC50 — widok z boku, profil 12,5 mm z portem USB-C i tackami baterii hot-swap',
     ],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: "available",
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29359,8 +29437,8 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       {
         partNumber: 'WLMT0-H50D8BBK1-A6',
         name: 'HC50 SE4720, 8/128 GB, hot-swap, aparat przedni, healthcare',
-        priceFrom: 4200,
-        availability: 'on-order',
+        priceFrom: 5676.03,
+        availability: "available",
         attributes: {
           'Skaner': 'SE4720',
           'Pamięć': '8 GB / 128 GB',
@@ -29370,17 +29448,17 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC50?', answer: 'Cena Zebra HC50 (WLMT0-H50D8BBK1-A6) zaczyna się od ok. 4 200 zł netto za premium konfigurację healthcare z aparatem przednim 5 MPx (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii i skanerem SE4720. Premium ok. 1 250 zł vs HC20 (2 950 zł) za telemedycynę + hot-swap + 2× więcej pamięci. Wariant z 5G/LTE dla mobilnej telekonsultacji w karetce to HC55 (ok. 4 800 zł netto).' },
-      { question: 'Czym różni się Zebra HC50 od HC20?', answer: 'HC50 dodaje 4 kluczowe premium-features vs HC20: 1) Aparat przedni 5 MPx do telemedycyny (telekonsultacje wideo lekarz-pacjent), 2) 8 GB RAM / 128 GB Flash zamiast 6/64 GB (dwukrotny zasób na aplikacje graficzne — RTG, USG, DICOM viewer), 3) Hot-swap baterii — wymiana w 30 s bez wyłączania urządzenia (HC20 wymaga restartu), 4) Czujnik ciśnienia (opcja w wybranych SKU) dla aplikacji medycznych. Cena: HC50 = 4 200 zł vs HC20 = 2 950 zł. Pozostałe cechy healthcare identyczne (Code Blue, dezynfekcja, SE4720).' },
+      { question: 'Ile kosztuje Zebra HC50?', answer: "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę." },
+      { question: 'Czym różni się Zebra HC50 od HC20?', answer: "HC50 dodaje 4 kluczowe premium-features vs HC20: 1) Aparat przedni 5 MPx do telemedycyny (telekonsultacje wideo lekarz-pacjent), 2) 8 GB RAM / 128 GB Flash zamiast 6/64 GB (dwukrotny zasób na aplikacje graficzne — RTG, USG, DICOM viewer), 3) Hot-swap baterii — wymiana w 30 s bez wyłączania urządzenia (HC20 wymaga restartu), 4) Czujnik ciśnienia (opcja w wybranych SKU) dla aplikacji medycznych. Pozostałe cechy healthcare identyczne (Code Blue, dezynfekcja, SE4720)." },
       { question: 'Co to jest telemedycyna w HC50?', answer: 'Aparat przedni 5 MPx w HC50 umożliwia konsultacje wideo lekarz-pacjent przy łóżku oraz telekonsylia lekarz-lekarz przez sieć szpitala. Praktyczne scenariusze: 1) internista konsultuje udar mózgu z neurologiem oddalonym o 200 km, 2) anestezjolog ocenia pacjenta przed zabiegiem zdalnie, 3) lekarz dyżurujący konsultuje pacjenta na izolatce bez wchodzenia (oszczędność PPE), 4) telemedycyna domowa — opieka paliatywna w domu pacjenta. Aplikacje: Microsoft Teams Healthcare, BlueJeans Telehealth, polski TeleMedi, dedykowane systemy szpitali (np. e-konsultanci NFZ).' },
       { question: 'Czym jest hot-swap baterii w HC50?', answer: 'Hot-swap to wymiana baterii w trakcie pracy urządzenia, bez konieczności wyłączania. W HC50 czas buforowania wynosi do 60 sekund — kondensatory podtrzymują pamięć RAM i aktywne aplikacje. Pielęgniarka w trakcie 12-godzinnej zmiany wymienia baterię między obchodami: zdejmuje rozładowaną → wkłada naładowaną w ciągu 30 s → terminal nie restartował się, sesja EHR jest aktywna, połączenie VoIP nie zostało rozłączone. Krytyczne dla intensywnej pracy klinicznej. W HC20/HC25 brak hot-swap — bateria wymaga wyłączenia urządzenia (przerwa 1-2 min).' },
       { question: 'Czy HC50 obsługuje aplikacje DICOM (RTG, USG, TK)?', answer: 'Tak. 8 GB RAM w HC50 (vs 6 GB w HC20) zapewnia płynne działanie aplikacji DICOM viewer dostępnych na Android: m.in. RadiAnt DICOM Viewer, DroidRender, mRay, polskie wdrożenia (PixelMed, Synapse Mobility). Lekarz przy łóżku pacjenta otwiera zdjęcie RTG/USG/TK z szpitalnego PACS przez Wi-Fi 6E (do 2,4 Gbps), powiększa, analizuje. 128 GB Flash mieści offline lokalną kopię obrazów badań kluczowych pacjentów oddziału.' },
-      { question: 'Czym różni się HC50 od HC55?', answer: 'HC50 jest tylko Wi-Fi — działa wewnątrz budynku szpitala. HC55 dodaje moduł 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — działa wszędzie tam gdzie jest zasięg komórkowy. Pozostałe cechy są identyczne (aparat przedni 5 MPx, 8/128 GB, hot-swap, Code Blue). Cena: HC50 = 4 200 zł, HC55 = 4 800 zł (+600 zł za 5G/GPS). HC55 wybierz dla lekarzy karetek S/P (telekonsultacja z neurologiem podczas transportu udaru), specjalistów zespołów wyjazdowych telemedycznych, lekarzy POZ z wizytami domowymi.' },
+      { question: 'Czym różni się HC50 od HC55?', answer: "HC50 jest tylko Wi-Fi — działa wewnątrz budynku szpitala. HC55 dodaje moduł 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — działa wszędzie tam gdzie jest zasięg komórkowy. Pozostałe cechy są identyczne (aparat przedni 5 MPx, 8/128 GB, hot-swap, Code Blue). HC55 wybierz dla lekarzy karetek S/P (telekonsultacja z neurologiem podczas transportu udaru), specjalistów zespołów wyjazdowych telemedycznych, lekarzy POZ z wizytami domowymi." },
       { question: 'Jakie placówki w Polsce używają HC50 do telemedycyny?', answer: 'HC50 trafia do Polski w drugiej połowie 2026 wraz z premierą całej linii HC2X/HC5X (poprzednia generacja TC52-HC i TC57-HC od 2019). Wczesni adopterzy w UE: niemiecka Charité Berlin (telemedycyna onkologiczna), austriacka Wiener KAV (telekonsultacje SOR), hiszpańska Hospital Vall d\'Hebron (telerehabilitacja). Polskie placówki testujące HC50: Uniwersyteckie Centrum Kliniczne w Gdańsku, Centrum Onkologii w Warszawie, Mazowiecki Szpital Specjalistyczny w Radomiu.' },
       { question: 'Czy HC50 ma czujnik ciśnienia atmosferycznego?', answer: 'W wybranych SKU HC50 dostępny jest barometr/altimetr (czujnik ciśnienia). Praktyczne zastosowania medyczne: 1) monitoring oddechowy w aplikacjach klinicznych przy współpracy z czujnikami zewnętrznymi, 2) lokalizacja piętra w wielokondygnacyjnych szpitalach (z GPS w HC55), 3) zapis wysokości w transporcie helikopterem HEMS (zespoły ratunkowe wojewódzkich szpitali). Standardowo czujnik wbudowany w warianty pro/premium — sprawdź konkretny PN przed zakupem.' },
       { question: 'Czy HC50 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole izopropylowe i etylowe, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala.' },
       { question: 'Jakie akcesoria są kompatybilne z HC50?', answer: 'HC50 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC55): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50).' },
-      { question: 'Czy HC50 wymaga kontraktu OneCare?', answer: 'Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom — naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni). Dla HC50 polecamy Zebra OneCare Essential (wyższy plan niż dla HC20/HC25 ze względu na premium komponenty: aparat przedni, hot-swap, czujnik ciśnienia) — od ok. 1 350 zł netto za 3 lata. Albo OneCare Select z advance exchange (urządzenie zastępcze następnego dnia roboczego) — krytyczne gdy HC50 jest używany przez lekarzy dyżurujących i nie może być wyłączony z floty.' },
+      { question: 'Czy HC50 wymaga kontraktu OneCare?', answer: "Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom — naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni). Albo OneCare Select z advance exchange (urządzenie zastępcze następnego dnia roboczego) — krytyczne gdy HC50 jest używany przez lekarzy dyżurujących i nie może być wyłączony z floty." },
       { question: 'Gdzie serwisować Zebra HC50 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC50, w tym aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa.' },
     ],
     applications: [
@@ -29477,14 +29555,14 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       reviewBody: 'Zebra HC50 to najsensowniejszy kolektor danych do służby zdrowia dla wymagających workflow medycznych — telemedycyna, radiologia mobilna, OIOM, onkologia. Aparat przedni 5 MPx + 8 GB RAM + hot-swap baterii to trzy game-changery vs HC20: telekonsultacje wideo bez osobnego smartfona, płynne DICOM viewer i ciągła praca podczas zmiany baterii. Premium ok. 1 250 zł vs HC20 zwraca się błyskawicznie w placówkach gdzie minuta przerwy lekarza kosztuje setki zł (SOR, OIOM, blok operacyjny). Minus: brak 5G — dla telekonsultacji w karetce wymagany HC55. Dla 80% workflow szpitalnych premium HC50 jest optymalnym wyborem 2026.',
     },
     createdAt: '2026-05-13',
-    updatedAt: '2026-05-13',
+    updatedAt: "2026-10-07",
   },
   {
     id: 'zebra-hc55',
     slug: 'zebra-hc55',
     name: 'Zebra HC55',
-    seoTitle: 'Zebra HC55 — kolektor danych do służby zdrowia 5G/LTE z telemedycyną | od 4 800 zł',
-    seoDescription: 'Zebra HC55 (WCMTB-H55D8BBK1) — topowy kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, aparatem przednim 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash, czerwonym przyciskiem Code Blue. Dla karetek S/P, telemedycyny mobilnej, transportu medycznego. Od 4 800 zł netto.',
+    seoTitle: "Zebra HC55 — kolektor danych do służby zdrowia 5G/LTE z telemedycyną",
+    seoDescription: "Zebra HC55 (WCMTB-H55D8BBK1) — topowy kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, aparatem przednim 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash, czerwonym przyciskiem Code Blue. Dla karetek S/P, telemedycyny mobilnej, transportu medycznego.",
     shortDescription: 'Zebra HC55 — topowy kolektor danych do służby zdrowia 5G/LTE z telemedycyną i hot-swap baterii',
     description: `Dla kogo? Zebra HC55 to topowy kolektor danych do służby zdrowia — łączy wszystkie premium features [HC50](/produkt/zebra-hc50) (aparat przedni 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash) z łącznością 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). Stworzony dla **lekarzy karetek S/P** (telekonsultacja z neurologiem podczas transportu udaru), **specjalistów telemedycznych** wykonujących wizyty domowe z konsultacją zdalną, **zespołów ratownictwa medycznego HEMS** (helikopter) i **mobilnych jednostek telemedycznych** (ambulanse stomatologiczne, mammograficzne, dializa domowa).
 
@@ -29520,7 +29598,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
     manufacturerId: 'zebra',
-    priceFrom: 4800,
+    priceFrom: 5927.71,
     images: [
       '/images/products/hc55_1.png',
       '/images/products/hc55_2.png',
@@ -29534,7 +29612,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       'Zebra HC55 — widok z boku, profil 12,5 mm z portem USB-C, tackami SIM (nano + eSIM) i hot-swap baterii',
     ],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: "available",
     isNew: true,
     isBestseller: false,
     specifications: [
@@ -29566,8 +29644,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       {
         partNumber: 'WCMTB-H55D8BBK1-A6',
         name: 'HC55 SE4720, 8/128 GB, hot-swap, aparat przedni, 5G/LTE + GPS, healthcare',
-        priceFrom: 4800,
-        availability: 'on-order',
+        priceFrom: 5927.71,
+        availability: "available",
         attributes: {
           'Skaner': 'SE4720',
           'Pamięć': '8 GB / 128 GB',
@@ -29577,17 +29655,17 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC55?', answer: 'Cena Zebra HC55 (WCMTB-H55D8BBK1-A6) zaczyna się od ok. 4 800 zł netto za topową konfigurację healthcare z 5G/LTE, GPS Dual-band L1+L5, aparatem przednim 5 MPx (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii i skanerem SE4720. Premium ok. 600 zł vs HC50 (4 200 zł) za moduł 5G + GPS — wskazane dla karetek, HEMS, telekonsultantów mobilnych. To topowy model całej linii HC2X/HC5X w 2026 r.' },
-      { question: 'Czym różni się Zebra HC55 od HC50?', answer: 'HC55 to wariant 5G HC50: wszystkie premium-features HC50 są zachowane (aparat przedni 5 MPx, 8/128 GB, hot-swap baterii, czerwony przycisk Code Blue, obudowa medyczna, SE4720), plus dodany moduł WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) + VoLTE. HC50 jest tylko Wi-Fi (wewnątrz budynku szpitala), HC55 działa wszędzie tam gdzie jest zasięg komórkowy. Cena: HC55 = 4 800 zł vs HC50 = 4 200 zł (+600 zł za 5G/GPS).' },
+      { question: 'Ile kosztuje Zebra HC55?', answer: "To topowy model całej linii HC2X/HC5X w 2026 r." },
+      { question: 'Czym różni się Zebra HC55 od HC50?', answer: "HC55 to wariant 5G HC50: wszystkie premium-features HC50 są zachowane (aparat przedni 5 MPx, 8/128 GB, hot-swap baterii, czerwony przycisk Code Blue, obudowa medyczna, SE4720), plus dodany moduł WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) + VoLTE. HC50 jest tylko Wi-Fi (wewnątrz budynku szpitala), HC55 działa wszędzie tam gdzie jest zasięg komórkowy." },
       { question: 'Kiedy wybrać HC55 zamiast HC50?', answer: 'HC55 jest niezbędny gdy pracownik medyczny z telemedycyną działa POZA siecią Wi-Fi placówki: 1) **paramedyk karetki S/P** — telekonsultacja z neurologiem podczas transportu udaru (oszczędza 30-45 min vs konsultacja po dotarciu), 2) **HEMS (helikoptery LPR)** — transport krytycznych pacjentów między szpitalami województw, 3) **telerehabilitacja domowa** — fizjoterapeuta z konsultacją zdalną u pacjenta poudarowego, 4) **mobilne jednostki telemedyczne** — ambulanse stomatologiczne, mammograficzne, 5) **lekarz POZ** wykonujący telekonsultację z domu pacjenta. Dla telemedycyny wewnątrz szpitala wystarczy HC50.' },
       { question: 'Czy HC55 obsługuje prywatne sieci 5G szpitala?', answer: 'Tak, HC55 obsługuje 5G FR1 w trybach NSA (Non-Standalone) i SA (Standalone). Większe polskie szpitale w 2026 r. wdrażają prywatne sieci 5G campus z dedykowanymi pasmami n78 (3,4-3,8 GHz) i krytyczną niezawodnością wymagającą dla aplikacji medycznych. HC55 łączy się z prywatną siecią szpitala wewnątrz budynku przez eSIM (zaprogramowany cyfrowo), a poza budynkiem przełącza się automatycznie na publicznego operatora komórkowego (Orange, Play, Plus, T-Mobile) przez fizyczną kartę nano-SIM. Bezprzełamywany handover zapewnia ciągłość telekonsultacji.' },
-      { question: 'Czy HC55 zastępuje smartfon, pager, radioterminal i GPS?', answer: 'Tak. HC55 z Workcloud Communication zastępuje 4 osobne urządzenia: 1) smartfon (VoLTE + VoIP SWB Audio dla rozmów wysokiej jakości), 2) pager (push-to-talk z dyżurką szpitala przez Wi-Fi/5G), 3) radioterminal/walkie-talkie (PTT Pro między pracownikami zespołu wyjazdowego), 4) GPS tracker (Dual-band L1+L5 z rejestracją tras). Plus skaner kodów + EHR + telemedycyna wideo. Eliminuje konieczność wożenia 4-5 osobnych urządzeń w karetce lub torbie zespołu HEMS — i ich kosztów (typowo 8 000-15 000 zł na osobę).' },
+      { question: 'Czy HC55 zastępuje smartfon, pager, radioterminal i GPS?', answer: "Tak. HC55 z Workcloud Communication zastępuje 4 osobne urządzenia: 1) smartfon (VoLTE + VoIP SWB Audio dla rozmów wysokiej jakości), 2) pager (push-to-talk z dyżurką szpitala przez Wi-Fi/5G), 3) radioterminal/walkie-talkie (PTT Pro między pracownikami zespołu wyjazdowego), 4) GPS tracker (Dual-band L1+L5 z rejestracją tras). Plus skaner kodów + EHR + telemedycyna wideo." },
       { question: 'Jak GPS w HC55 działa w trudnych warunkach (gęsta zabudowa, wnętrza)?', answer: 'Dwuzakresowy GNSS L1+L5 w HC55 jest najwyższej klasy GPS w urządzeniach mobilnych. L1+L5 eliminuje problem odbić sygnału w gęstej zabudowie miejskiej — typowa precyzja 1-3 m w Warszawie/Krakowie/Wrocławiu vs 5-10 m w GPS jednozakresowym (smartfony konsumenckie). Obsługa wszystkich konstelacji: GPS (US), GLONASS (RU), Galileo (EU), BeiDou (CN), QZSS (JP). a-GPS przyspiesza pierwsze fix do kilku sekund po włączeniu. Wewnątrz budynków szpitala — wsparcie BLE Beaconing dla lokalizacji w pomieszczeniach.' },
       { question: 'Czy HC55 nadaje się do telekonsultacji w karetce 100 km/h?', answer: 'Tak, to jeden z głównych use case HC55. Połączenie wideo HD przez 5G FR1 (NSA/SA) jest stabilne przy zmianach masztu LTE/5G dzięki: 1) bezprzełamywanemu handover między masztami (operator decyduje), 2) buforowaniu wideo do 2 sekund (kompensacja krótkich przerw), 3) tłumieniu szumów AI (eliminacja hałasu silnika i syreny), 4) VoLTE EVS (Enhanced Voice Services) z HD voice nawet przy słabym zasięgu. Pomyślnie testowane w prędkościach do 130 km/h w niemieckim systemie ratownictwa medycznego.' },
       { question: 'Czy HC55 ma czujnik ciśnienia atmosferycznego dla HEMS?', answer: 'W wybranych SKU HC55 dostępny jest barometr/altimetr. Praktyczne zastosowanie dla zespołów ratownictwa medycznego helikopterowych (HEMS, LPR — Lotnicze Pogotowie Ratunkowe): rejestracja wysokości transportu pacjenta, monitoring ciśnienia kabinowego (krytyczne dla pacjentów z PDP — Pneumothorax), automatyczna kalibracja parametrów oddechowych respiratora. Sprawdź konkretny PN przed zakupem.' },
       { question: 'Czy HC55 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala oraz dla zespołów ratunkowych narażonych na materiał biologiczny pacjentów.' },
       { question: 'Jakie akcesoria są kompatybilne z HC55?', answer: 'HC55 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC50): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50). Akcesorium specyficzne dla zespołów wyjazdowych: stacja dokująca samochodowa (dostępna osobno na zamówienie).' },
-      { question: 'Czy HC55 wymaga kontraktu OneCare?', answer: 'Bezwzględnie tak. HC55 jest topowym modelem z największą liczbą komponentów premium (5G modem, antena GNSS Dual-band, aparat przedni, hot-swap, czujnik ciśnienia). Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy) — krytyczny problem dla karetki która nie może czekać tygodniami. Dla HC55 polecamy minimum Zebra OneCare Select — od ok. 2 100 zł netto za 3 lata. Obejmuje advance exchange (urządzenie zastępcze następnego dnia roboczego), naprawy uszkodzeń mechanicznych, wymianę baterii po 3 latach, wsparcie techniczne 24/7.' },
+      { question: 'Czy HC55 wymaga kontraktu OneCare?', answer: "Bezwzględnie tak. HC55 jest topowym modelem z największą liczbą komponentów premium (5G modem, antena GNSS Dual-band, aparat przedni, hot-swap, czujnik ciśnienia). Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy) — krytyczny problem dla karetki która nie może czekać tygodniami. Obejmuje advance exchange (urządzenie zastępcze następnego dnia roboczego), naprawy uszkodzeń mechanicznych, wymianę baterii po 3 latach, wsparcie techniczne 24/7." },
       { question: 'Gdzie serwisować Zebra HC55 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC55, w tym modułu 5G/LTE, anteny GNSS Dual-band, aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare Select — naprawa priorytetowa z advance exchange.' },
     ],
     applications: [
@@ -29684,14 +29762,14 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       reviewBody: 'Zebra HC55 to topowy kolektor danych do służby zdrowia 2026 — łączy wszystkie premium-features HC50 z 5G/LTE i GPS Dual-band L1+L5. Game-changer dla telemedycyny mobilnej: paramedyk karetki S/P transportujący pacjenta z udarem może uruchomić telekonsultację z neurologiem szpitala docelowego, neurolog ocenia stan przez wideo i decyduje o trombolizie jeszcze w karetce — oszczędność 30-45 min vs decyzja po dotarciu, każda minuta to 1,9 mln neuronów. Hot-swap baterii oznacza że terminal pracuje 24h bez restartów — krytyczne dla zespołów HEMS i karetek nocnych. Premium 600 zł vs HC50 zwraca się w pierwszym miesiącu eksploatacji. Minus: cena startowa 4 800 zł netto jest wysoka — zarezerwowane dla najbardziej wymagających zastosowań. Dla typowej telemedycyny wewnątrz szpitala HC50 jest tańszą alternatywą.',
     },
     createdAt: '2026-05-13',
-    updatedAt: '2026-05-13',
+    updatedAt: "2026-10-07",
   },
   {
   "id": "zebra-tc27",
   "slug": "zebra-tc27",
   "name": "Zebra TC27",
-  "seoTitle": "Zebra TC27 — kolektor danych / terminal mobilny 5G z GPS | od 2 690 zł",
-  "seoDescription": "Zebra TC27 (WCMTB-T27) — kolektor danych 5G/LTE z GPS do logistyki terenowej i kurierów. Następca TC26: 5G, ekran 6\" FHD+, skaner SE4710/SE55, IP68, Android do 16. 7 konfiguracji od 2 690 zł netto.",
+  "seoTitle": "Zebra TC27 — kolektor danych / terminal mobilny 5G z GPS",
+  "seoDescription": "Zebra TC27 (WCMTB-T27) — kolektor danych 5G/LTE z GPS do logistyki terenowej i kurierów.",
   "shortDescription": "Zebra TC27 — komputer mobilny 5G/Wi-Fi 6E z GPS, następca TC26, do pracy w terenie",
   "description": "Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.\n\nBliźniacze urządzenie do [Zebra TC22](/produkt/zebra-tc22) (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.\n\nDuży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM. Android z gwarancją aktualizacji do wersji 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC26.\n\nSkaner do wyboru: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na regałach i paletach z odległości. Skaner enterprise dekoduje kody w 0,3 s — 5–10× szybciej niż aparat smartfona.\n\nObudowa IP68/IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui), 500 tumble z 0,5 m, temperatura pracy -10°C do +50°C. Wymienne baterie PowerPrecision hot-swap: 3 800 mAh (~10 h) lub 5 200 mAh (~14 h). Waga zaledwie 236 g — lżejszy niż wiele smartfonów premium.\n\nŁączność 5G FR1 (NSA/SA) + 4G LTE-A zapewnia stabilne połączenie z systemem TMS, ERP lub CRM w czasie rzeczywistym — śledzenie przesyłek, potwierdzanie dostawy, raportowanie wizyt. GPS z dokładnością dual-band (L1+L5) rejestruje trasy i czas pracy. VoLTE dla połączeń głosowych bez dodatkowego telefonu.\n\nPakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC27 i TC22 — baterie, stacje ładowania, etui i trigger handle są identyczne dla obu modeli. Jeden ekosystem akcesoriów dla floty mieszanej Wi-Fi + 5G. Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja Wi-Fi-only bez 5G: Zebra TC22. Szczegółowa dokumentacja na zebra.com i serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -29700,7 +29778,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   ],
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc22-tc27.html",
   "manufacturerId": "zebra",
-  "priceFrom": 2690,
+  "priceFrom": 3392.99,
   "images": [
     "/images/products/tc22_scanner_1.png",
     "/images/products/tc22_scanner_2.png",
@@ -29790,7 +29868,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B6ABC2-A6",
       "name": "TC27 SE4710, 6/64 GB, 3800 mAh",
-      "priceFrom": 2690,
+      "priceFrom": 3392.99,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -29801,7 +29879,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B6ABE2-A6",
       "name": "TC27 SE4710, 6/64 GB, 5200 mAh",
-      "priceFrom": 2826,
+      "priceFrom": 3573.02,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -29812,8 +29890,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B8ABC8-A6",
       "name": "TC27 SE4710, 8/128 GB, 3800 mAh, RFID-ready",
-      "priceFrom": 3216,
-      "availability": "unavailable",
+      "priceFrom": 4065.88,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
         "Pamięć": "8 GB / 128 GB",
@@ -29824,7 +29902,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B6CBC2-A6",
       "name": "TC27 SE55, 6/64 GB, 3800 mAh",
-      "priceFrom": 3236,
+      "priceFrom": 4090.54,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -29835,7 +29913,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B8ABD8-A6",
       "name": "TC27 SE4710, 8/128 GB, 3800 mAh, RFID-ready, BLE",
-      "priceFrom": 3333,
+      "priceFrom": 4213.73,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4710",
@@ -29848,8 +29926,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B8ABE8-A6",
       "name": "TC27 SE4710, 8/128 GB, 5200 mAh, RFID-ready",
-      "priceFrom": 3353,
-      "availability": "available",
+      "priceFrom": 4238.34,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4710",
         "Pamięć": "8 GB / 128 GB",
@@ -29860,8 +29938,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "WCMTB-T27B8CBD8-A6",
       "name": "TC27 SE55, 8/128 GB, 3800 mAh, RFID-ready, BLE",
-      "priceFrom": 3879,
-      "availability": "unavailable",
+      "priceFrom": 4903.67,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "Pamięć": "8 GB / 128 GB",
@@ -29874,7 +29952,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC27?",
-      "answer": "Ceny Zebra TC27 zaczynają się od ok. 2 690 zł netto (SE4710, 6/64 GB, bateria 3 800 mAh). Warianty z rozszerzonym skanerem SE55 kosztują od ok. 3 236 zł, a topowa konfiguracja (SE55, 8/128 GB, RFID-ready, BLE) to ok. 3 879 zł netto. TC27 kosztuje ok. 270 zł więcej niż odpowiedni wariant TC22 z powodu modułu 5G/LTE. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się Zebra TC27 od TC22?",
@@ -29902,7 +29980,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "TC27 Wi-Fi + 5G czy TC22 Wi-Fi-only — co wybrać?",
-      "answer": "Reguła jest prosta: jeśli terminal pracuje WYŁĄCZNIE wewnątrz budynku z Wi-Fi (magazyn, sklep, szpital) → TC22 wystarczy i oszczędzasz ~250 zł/szt. Jeśli terminal wyjeżdża w teren (kurierzy, serwisanci, przedstawiciele handlowi, inspektorzy) → TC27 jest konieczny. Przy flocie 50 terminali różnica to 12 500 zł — warto przemyśleć, ile urządzeń naprawdę potrzebuje LTE."
+      "answer": "Jeśli terminal wyjeżdża w teren (kurierzy, serwisanci, przedstawiciele handlowi, inspektorzy) → TC27 jest konieczny."
     },
     {
       "question": "Czy Zebra TC27 jest następcą TC26?",
@@ -29910,7 +29988,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC27 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC27, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 025 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC27, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC27?",
@@ -29918,11 +29996,11 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC27?",
-      "answer": "Alternatywy z 5G/LTE: [Datalogic Memor 17](/produkt/datalogic-memor-17) (6\" FHD+, 5G, Android 13→18, SafeSwap, Qi 7W, od ~2 991 zł), Honeywell CT47 (5,5\", 5G, od ~5 500 zł), Samsung Galaxy XCover7 (konsumencki z IP68, od ~1 800 zł — ale bez skanera enterprise i krótki support). TC27 oferuje najlepszy stosunek cena/wydajność w swojej klasie: 5G + skaner enterprise + pełny Mobility DNA od ok. 2 426 zł netto."
+      "answer": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę."
     },
     {
       "question": "Czy Zebra TC27 wymaga kontraktu serwisowego OneCare?",
-      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). OneCare Essential na TC27 kosztuje 1 040 zł netto za 3 lata (47% ceny terminala) i obejmuje naprawy uszkodzeń mechanicznych, wsparcie techniczne i aktualizacje LifeGuard. Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
+      "answer": "Dla terminali mobilnych Zebra kontrakt OneCare jest rekomendowany — Zebra nie udostępnia części zamiennych zewnętrznym serwisom, a naprawa poza kontraktem oznacza wysyłkę za granicę (3-6 tygodni). Szczegółowe porównanie wariantów: <a href=\"/poradnik/zebra-onecare-kontrakt-serwisowy\">Zebra OneCare — kontrakt serwisowy</a>."
     }
   ],
   "applications": [
@@ -30118,14 +30196,14 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-06-01",
-  "updatedAt": '2026-10-03'
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc53",
   "slug": "zebra-tc53",
   "name": "Zebra TC53",
-  "seoTitle": "Zebra TC53 — kolektor danych / terminal mobilny Wi-Fi 6E | od 6 999 zł",
-  "seoDescription": "Zebra TC53 (TC5301) — kolektor danych Wi-Fi 6E do magazynów, logistyki i produkcji. Następca TC52: Qualcomm 6490, ekran 6\" FHD 600 nit, skaner SE55 do 12 m, IP68, Android do 16. 3 konfiguracje od 6 999 zł netto.",
+  "seoTitle": "Zebra TC53 — kolektor danych / terminal mobilny Wi-Fi 6E",
+  "seoDescription": "Zebra TC53 (TC5301) — kolektor danych Wi-Fi 6E do magazynów, logistyki i produkcji.",
   "shortDescription": "Zebra TC53 — wydajny terminal mobilny z WiFi 6E, ekranem 6\" FHD i procesorem Qualcomm 6490, następca TC52",
   "description": "Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.\n\nNastępca bestsellerowej serii TC52/TC52x: procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC52x), 6-calowy wyświetlacz Full HD (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard, zasięg bliski) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Oba skanery dekodują 1D i 2D w ułamku sekundy, nawet zniszczone, zadrukowane lub wyświetlane na ekranie.\n\nKonstrukcja klasy wytrzymałości IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~12 h) lub 7000 mAh (rozszerzona, ~18 h) z technologią warm/hot swap — wymiana baterii bez wyłączania urządzenia i utraty sesji.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem (2,4 + 5 + 6 GHz), Bluetooth 5.2, NFC (Apple VAS, Google SmartTap). Kamera 16 MP z tyłu (autofokus, HDR, latarka) i 8 MP z przodu. USB 3.0 Type-C + USB 2.0 Host (tył). Dual-Band GNSS. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Opcjonalnie: Zebra Dimensioning — funkcja wymiarowania paczek kamerą urządzenia (eliminuje statyczne stanowisko pomiarowe). Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC53 są kompatybilne z TC58, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -30133,7 +30211,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 6998.87,
+  "priceFrom": 8404.37,
   "images": [
     "/images/products/zebra-tc53_1.png",
     "/images/products/zebra-tc53_2.png",
@@ -30220,8 +30298,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5301-0T1E4B1000-A6",
       "name": "TC53 SE4720, 4/64 GB",
-      "priceFrom": 6418.37,
-      "availability": "available",
+      "priceFrom": 8113.92,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4720",
         "Pamięć": "4 GB / 64 GB"
@@ -30230,7 +30308,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5301-0T1K4B1000-A6",
       "name": "TC53 SE55, 4/64 GB",
-      "priceFrom": 6648.15,
+      "priceFrom": 8404.37,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -30240,7 +30318,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5301-0T1K6B1000-A6",
       "name": "TC53 SE55, 8/128 GB",
-      "priceFrom": 7423.94,
+      "priceFrom": 9385.16,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -30251,7 +30329,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC53?",
-      "answer": "Ceny Zebra TC53 zaczynają się od ok. 6 999 zł netto za podstawową konfigurację (SE4720, 4/64 GB). Wariant z rozszerzonym skanerem SE55 i 4/64 GB kosztuje ok. 6 648 zł netto, a topowa konfiguracja (SE55, 8/128 GB) to ok. 7 424 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się Zebra TC53 od TC52?",
@@ -30263,7 +30341,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jaki skaner wybrać: SE4720 czy SE55?",
-      "answer": "SE4720 (standard) — do skanowania na wyciągnięcie ręki (do ~50 cm): kasa, lada, kompletacja na poziomie wzroku. Idealny, gdy 90% kodów jest w zasięgu ręki. SE55 z IntelliFocus (do 12 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania (regały 8–12 m). Różnica cenowa: ok. 230 zł netto."
+      "answer": "SE4720 (standard) — do skanowania na wyciągnięcie ręki (do ~50 cm): kasa, lada, kompletacja na poziomie wzroku. Idealny, gdy 90% kodów jest w zasięgu ręki. SE55 z IntelliFocus (do 12 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania (regały 8–12 m)."
     },
     {
       "question": "Czy Zebra TC53 jest wodoodporny?",
@@ -30283,7 +30361,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC53 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC53, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 260 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC53, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC53?",
@@ -30291,7 +30369,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC53?",
-      "answer": "W tej klasie cenowej i wydajnościowej alternatywami są: Honeywell CT47 (6\" FHD, Snapdragon 778G, WiFi 6E, IP68, skanery N6803/S0703), Datalogic Memor 35 (5.5\" FHD, Snapdragon 680, IP68, Green Spot), oraz Samsung Galaxy XCover6 Pro z nakładką enterprise. W ofercie TAKMA dostępne są też tańsze terminale: Zebra TC22 (od ok. 2 400 zł netto, WiFi) i TC27 (5G/LTE). TC53 wyróżnia się najszybszym procesorem, WiFi 6E z trójpasmowym roamingiem i najdłuższym wsparciem Androida w tej grupie."
+      "answer": "W tej klasie cenowej i wydajnościowej alternatywami są: Honeywell CT47 (6\" FHD, Snapdragon 778G, WiFi 6E, IP68, skanery N6803/S0703), Datalogic Memor 35 (5.5\" FHD, Snapdragon 680, IP68, Green Spot), oraz Samsung Galaxy XCover6 Pro z nakładką enterprise. TC53 wyróżnia się najszybszym procesorem, WiFi 6E z trójpasmowym roamingiem i najdłuższym wsparciem Androida w tej grupie."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC53?",
@@ -30455,22 +30533,22 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     }
   ],
   "createdAt": "2024-06-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc58",
   "slug": "zebra-tc58",
   "name": "Zebra TC58",
-  "seoTitle": "Zebra TC58 — kolektor danych 5G | od 6 751 zł",
-  "seoDescription": "Zebra TC58 — kolektor danych 5G/LTE do logistyki i serwisu terenowego. WiFi 6E, Qualcomm 6490, skaner SE55 12 m, IP68. Od 6 751 zł netto | TAKMA.",
+  "seoTitle": "Zebra TC58 — kolektor danych 5G",
+  "seoDescription": "Zebra TC58 — kolektor danych 5G/LTE do logistyki i serwisu terenowego. WiFi 6E, Qualcomm 6490, skaner SE55 12 m, IP68.",
   "shortDescription": "Zebra TC58 — terminal mobilny 5G z WiFi 6E, ekranem 6\" FHD i procesorem Qualcomm 6490, wersja TC53 z łącznością komórkową",
-  "description": "Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490 i skanerem SE55 do 12 m — od 6 751 zł netto. Następca TC57, kompatybilny z akcesoriami TC53. Android z aktualizacjami do v16. 6 konfiguracji od 6 751 do 8 229 zł.\n\nDla kogo? Zebra TC58 to kolektor danych (terminal mobilny) z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.\n\nWersja bliźniacza [Zebra TC53](/produkt/zebra-tc53) z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC57x), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard range) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Wariant premium z czujnikiem czasu przelotu (ToF) umożliwia wymiarowanie paczek kamerą.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~15 h z 5G) lub 7000 mAh (rozszerzona, ~22 h) z warm/hot swap.\n\nPakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490 i skanerem SE55 do 12 m. Następca TC57, kompatybilny z akcesoriami TC53. Android z aktualizacjami do v16. 6 konfiguracji od 6 751 do (cena zależy od wariantu).\n\nDla kogo? Zebra TC58 to kolektor danych (terminal mobilny) z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.\n\nWersja bliźniacza [Zebra TC53](/produkt/zebra-tc53) z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC57x), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard range) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Wariant premium z czujnikiem czasu przelotu (ToF) umożliwia wymiarowanie paczek kamerą.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~15 h z 5G) lub 7000 mAh (rozszerzona, ~22 h) z warm/hot swap.\n\nPakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 6751.05,
+  "priceFrom": 8589.19,
   "images": [
     "/images/products/zebra-tc53_1.png",
     "/images/products/zebra-tc53_2.png",
@@ -30594,7 +30672,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE4720, 4/64 GB",
       "partNumber": "TC58B1-3T1E4B1080-A6",
-      "priceFrom": 6794.29,
+      "priceFrom": 8589.19,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
@@ -30604,8 +30682,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE4720, 8/128 GB",
       "partNumber": "TC58B1-3T1E6B1080-A6",
-      "priceFrom": 7278.98,
-      "availability": "available",
+      "priceFrom": 9569.97,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4720",
         "RAM / Flash": "8 / 128 GB"
@@ -30614,8 +30692,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE55, 4/64 GB",
       "partNumber": "TC58B1-3T1K4B1080-A6",
-      "priceFrom": 6751.05,
-      "availability": "available",
+      "priceFrom": 8875.93,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "4 / 64 GB"
@@ -30624,8 +30702,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE55, 8/128 GB",
       "partNumber": "TC58B1-3T1K6B1080-A6",
-      "priceFrom": 7796.9,
-      "availability": "available",
+      "priceFrom": 9856.66,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 128 GB"
@@ -30634,8 +30712,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE55, 8/64 GB",
       "partNumber": "TC58B1-3T1K7B1080-A6",
-      "priceFrom": 7409.06,
-      "availability": "available",
+      "priceFrom": 9366.37,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 64 GB"
@@ -30644,8 +30722,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "name": "SE55, 8/128 GB, ToF Premium",
       "partNumber": "TC58B1-3T1K6E2A8A-A6",
-      "priceFrom": 8228.63,
-      "availability": "available",
+      "priceFrom": 10818.51,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 128 GB",
@@ -30660,15 +30738,15 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Ile kosztuje kolektor danych Zebra TC58?",
-      "answer": "Ceny kolektora danych Zebra TC58 zaczynają się od ok. 6 751 zł netto za wariant SE55 4/64 GB. Konfiguracja SE4720 4/64 GB kosztuje ok. 6 794 zł, SE55 8/128 GB ok. 7 797 zł, a topowy wariant Premium z czujnikiem ToF ok. 8 229 zł netto. Ceny netto, dane z marca 2026."
+      "answer": "Ceny netto, dane z marca 2026."
     },
     {
       "question": "Zebra TC58 czy nowszy TC501 — co wybrać?",
-      "answer": "Kolektor danych Zebra TC501 (od 6 319 zł) ma RFID, AI, AMOLED 1500 nit, Wi-Fi 7, skaner AC670 30 m i Android do v19. TC58 (od 6 751 zł) ma 5G w standardzie i kompatybilność z TC53. Nowe wdrożenia → TC501. Rozbudowa floty TC53/TC58 → TC58. Porównanie: [TC501 vs TC58](/poradnik/zebra-tc501-vs-tc58)."
+      "answer": "Nowe wdrożenia → TC501. Rozbudowa floty TC53/TC58 → TC58. Porównanie: [TC501 vs TC58](/poradnik/zebra-tc501-vs-tc58)."
     },
     {
       "question": "Czym różni się Zebra TC58 od TC53?",
-      "answer": "TC58 to wersja TC53 z dodatkową łącznością komórkową 5G/4G LTE/3G/2G i slotem nano SIM + eSIM. Reszta specyfikacji jest identyczna: ten sam procesor Qualcomm 6490, ekran 6\" FHD, skanery SE4720/SE55, bateria 4680/7000 mAh, IP68. TC58 jest o ok. 300-500 zł droższy. Jeśli urządzenie pracuje wyłącznie w zasięgu WiFi — wybierz TC53. Jeśli potrzebujesz łączności poza budynkiem — TC58."
+      "answer": "TC58 to wersja TC53 z dodatkową łącznością komórkową 5G/4G LTE/3G/2G i slotem nano SIM + eSIM. Reszta specyfikacji jest identyczna: ten sam procesor Qualcomm 6490, ekran 6\" FHD, skanery SE4720/SE55, bateria 4680/7000 mAh, IP68. Jeśli urządzenie pracuje wyłącznie w zasięgu WiFi — wybierz TC53. Jeśli potrzebujesz łączności poza budynkiem — TC58."
     },
     {
       "question": "Czy Zebra TC58 obsługuje 5G w Polsce?",
@@ -30692,7 +30770,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC58 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC58, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 260 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC58, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC58?",
@@ -30700,11 +30778,11 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla kolektora danych Zebra TC58?",
-      "answer": "W portfolio Zebra: TC501 (nowy — RFID, AI, AMOLED, Wi-Fi 7, od 6 319 zł — najlepsza opcja dla nowych wdrożeń), TC53 (WiFi-only, tańsza o ~500 zł, kompatybilne akcesoria), TC58e (essential, Qualcomm 4490, 5G Gen 2, od 5 337 zł — nowszy procesor, dłuższe wsparcie Android 17), TC78 (ultra-rugged, bateria 7 742 mAh, IP68). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m), Honeywell CT70 (Wi-Fi 7). TC58 wyróżnia się sprawdzoną stabilnością i kompatybilnością z flotami TC53."
+      "answer": "Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m), Honeywell CT70 (Wi-Fi 7). TC58 wyróżnia się sprawdzoną stabilnością i kompatybilnością z flotami TC53."
     },
     {
       "question": "Gdzie kupić kolektor danych Zebra TC58 w Polsce?",
-      "answer": "Kolektor danych Zebra TC58 kupisz w sklepie TAKMA (takma.com.pl) — autoryzowany partner Zebra z ponad 20-letnim doświadczeniem. 6 konfiguracji od 6 751 zł netto z dostawą w 24–48 h. Serwis gwarancyjny i pogwarancyjny: serwis-zebry.pl. Potrzebujesz wyceny na flotę 10+ urządzeń? Napisz na kontakt@takma.com.pl — przygotujemy ofertę z rabatem ilościowym."
+      "answer": "Serwis gwarancyjny i pogwarancyjny: serwis-zebry.pl. Potrzebujesz wyceny na flotę 10+ urządzeń? Napisz na kontakt@takma.com.pl — przygotujemy ofertę z rabatem ilościowym."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC58?",
@@ -30925,14 +31003,14 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-06-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc53e",
   "slug": "zebra-tc53e",
   "name": "Zebra TC53e",
-  "seoTitle": "Zebra TC53e — kolektor danych / terminal mobilny RFID UHF Wi-Fi 6E | od 5 372 zł",
-  "seoDescription": "Zebra TC53e (TC530E) — kolektor danych Wi-Fi 6E z opcjonalnym RFID UHF do magazynów i sieci handlowych. Qualcomm 4490, IP68, skaner SE55 do 12 m, Android 13→17, EPEAT Gold. 7 konfiguracji od 5 372 zł netto.",
+  "seoTitle": "Zebra TC53e — kolektor danych / terminal mobilny RFID UHF Wi-Fi 6E",
+  "seoDescription": "Zebra TC53e (TC530E) — kolektor danych Wi-Fi 6E z opcjonalnym RFID UHF do magazynów i sieci handlowych.",
   "shortDescription": "Zebra TC53e — terminal mobilny WiFi 6E z procesorem Qualcomm 4490, ekranem 6\" FHD+ i opcjonalnym RFID UHF, następca TC53 w wersji ekonomicznej",
   "description": "Dla kogo? Zebra TC53e to terminal mobilny klasy enterprise z WiFi 6E i opcjonalnym wbudowanym RFID UHF, zaprojektowany dla magazynów, centrów dystrybucyjnych, sieci handlowych i szpitali, które szukają niezawodnego urządzenia z długim cyklem życia — w przystępniejszej cenie niż flagowy [TC53](/produkt/zebra-tc53).\n\nNastępca linii TC53 w wersji \"essential\": procesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i bardziej energooszczędny od 6490), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17 — o jedną wersję dłużej niż TC53.\n\nWybierz skaner według potrzeb: SE4720 (standard, zasięg bliski) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny. Nowość w serii \"e\": wariant TC530R z wbudowanym czytnikiem UHF RFID o zasięgu do 1,2 m — inwentaryzacja RFID bez dodatkowej nakładki.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton (2,4 m z etui Rugged Boot), tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~14 h) lub 7000 mAh (rozszerzona, ~20 h) z warm swap — wymiana bez wyłączania urządzenia.\n\nBluetooth 5.3 (nowszy niż TC53), NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Sprzętowy element zabezpieczający (Secure Element) i Google StrongBox w wybranych wariantach. 25% obudowy z plastiku z recyklingu — certyfikat EPEAT Gold.\n\nKoszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC53). Akcesoria ShareCradle kompatybilne z TC53/[TC58](/produkt/zebra-tc58)/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58e](/produkt/zebra-tc58e). Dokumentacja techniczna: zebra.com i serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -30940,7 +31018,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 5371.54,
+  "priceFrom": 6227.32,
   "images": [
     "/images/products/zebra-tc53_1.png",
     "/images/products/zebra-tc53_2.png",
@@ -31056,8 +31134,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1E1B1000-A6",
       "name": "SE4720, 6/64 GB",
-      "priceFrom": 4926,
-      "availability": "unavailable",
+      "priceFrom": 6227.32,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
         "RAM / Flash": "6 / 64 GB"
@@ -31066,7 +31144,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1E6B1000-A6",
       "name": "SE4720, 8/128 GB",
-      "priceFrom": 4939,
+      "priceFrom": 6493.5,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
@@ -31076,8 +31154,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1E6B1B00-A6",
       "name": "SE4720, 8/128 GB, BLE",
-      "priceFrom": 5185,
-      "availability": "available",
+      "priceFrom": 6554.68,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4720",
         "RAM / Flash": "8 / 128 GB",
@@ -31087,8 +31165,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1K1B1000-A6",
       "name": "SE55, 6/64 GB",
-      "priceFrom": 5120,
-      "availability": "unavailable",
+      "priceFrom": 6472.16,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "6 / 64 GB"
@@ -31097,8 +31175,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1K6B1000-A6",
       "name": "SE55, 8/128 GB",
-      "priceFrom": 5330,
-      "availability": "unavailable",
+      "priceFrom": 6738.28,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 128 GB"
@@ -31107,8 +31185,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530E-0T1K7B1B00-A6",
       "name": "SE55, 8/64 GB, BLE",
-      "priceFrom": 5263,
-      "availability": "unavailable",
+      "priceFrom": 6653.15,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 64 GB",
@@ -31118,8 +31196,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC530R-0T1E1B1000-EA",
       "name": "SE4720, 6/64 GB, RFID UHF",
-      "priceFrom": 6240,
-      "availability": "unavailable",
+      "priceFrom": 7887.97,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
         "RAM / Flash": "6 / 64 GB",
@@ -31130,11 +31208,11 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC53e?",
-      "answer": "Ceny Zebra TC53e zaczynają się od ok. 5 372 zł netto za podstawową konfigurację (SE4720, 6/64 GB). Wariant SE55 6/64 GB kosztuje ok. 5 120 zł, SE4720 8/128 GB ok. 4 939 zł, a wariant z wbudowanym RFID (TC530R) to ok. 6 240 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się TC53e od TC53?",
-      "answer": "TC53e to wersja \"essential\" (ekonomiczna) TC53. Główne różnice: procesor Qualcomm 4490 (vs 6490 — wolniejszy, ale energooszczędniejszy), Bluetooth 5.3 (vs 5.2 — nowszy), Android do wersji 17 (vs 16 — dłuższe wsparcie), sprzętowy Secure Element, opcjonalny wbudowany RFID UHF (TC530R). Obudowa, ekran, skanery, baterie i akcesoria są identyczne. TC53e jest tańszy o ok. 1 500 zł."
+      "answer": "TC53e to wersja \"essential\" (ekonomiczna) TC53. Główne różnice: procesor Qualcomm 4490 (vs 6490 — wolniejszy, ale energooszczędniejszy), Bluetooth 5.3 (vs 5.2 — nowszy), Android do wersji 17 (vs 16 — dłuższe wsparcie), sprzętowy Secure Element, opcjonalny wbudowany RFID UHF (TC530R). Obudowa, ekran, skanery, baterie i akcesoria są identyczne."
     },
     {
       "question": "Czym różni się TC53e od TC58e?",
@@ -31142,11 +31220,11 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Co to jest wariant TC530R z RFID?",
-      "answer": "TC530R to wersja TC53e z wbudowanym czytnikiem UHF RFID o zasięgu do 1,2 m. Pozwala na inwentaryzację RFID bez dokupowania zewnętrznej nakładki (RFD40/RFD90). Terminal sam odczytuje tagi RFID w przejściu — idealne dla magazynów i sieci handlowych z etykietami RFID. Wariant RFID kosztuje ok. 6 240 zł netto."
+      "answer": "TC530R to wersja TC53e z wbudowanym czytnikiem UHF RFID o zasięgu do 1,2 m. Pozwala na inwentaryzację RFID bez dokupowania zewnętrznej nakładki (RFD40/RFD90). Terminal sam odczytuje tagi RFID w przejściu — idealne dla magazynów i sieci handlowych z etykietami RFID."
     },
     {
       "question": "Jaki skaner wybrać: SE4720 czy SE55?",
-      "answer": "SE4720 (standard range) — do skanowania na wyciągnięcie ręki (do ~50 cm): kasa, lada, kompletacja na poziomie wzroku. Idealny, gdy 90% kodów jest w zasięgu ręki. SE55 z IntelliFocus (do 12 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania (regały 8–12 m). Różnica cenowa: ok. 200 zł netto."
+      "answer": "SE4720 (standard range) — do skanowania na wyciągnięcie ręki (do ~50 cm): kasa, lada, kompletacja na poziomie wzroku. Idealny, gdy 90% kodów jest w zasięgu ręki. SE55 z IntelliFocus (do 12 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania (regały 8–12 m)."
     },
     {
       "question": "Czy Zebra TC53e jest wodoodporny?",
@@ -31158,7 +31236,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC53e w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC53e, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 160 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC53e, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC53e?",
@@ -31166,7 +31244,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC53e?",
-      "answer": "W segmencie WiFi-only terminali enterprise: Zebra TC53 (mocniejszy procesor 6490, ale droższy o ~1 500 zł), Honeywell CT47 (WiFi 6E, Snapdragon 778G, IP68), Datalogic Memor 35 (5.5\" FHD, IP68, Green Spot). Tańsze opcje: Zebra TC22 (od 2 400 zł, 6\" FHD, WiFi 6). TC53e wyróżnia się wbudowanym RFID (wariant TC530R), Bluetooth 5.3 i najdłuższym wsparciem Androida (do v17)."
+      "answer": "TC53e wyróżnia się wbudowanym RFID (wariant TC530R), Bluetooth 5.3 i najdłuższym wsparciem Androida (do v17)."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC53e?",
@@ -31379,14 +31457,14 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-09-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc58e",
   "slug": "zebra-tc58e",
   "name": "Zebra TC58e",
-  "seoTitle": "Zebra TC58e — kolektor danych / terminal mobilny 5G essential | od 5 337 zł",
-  "seoDescription": "Zebra TC58e (TC58BE) — kolektor danych 5G/LTE do logistyki terenowej i serwisu. Qualcomm 4490, WiFi 6E, barometr, GPS, skaner SE55 do 12 m, IP68, Android 13→17. 8 konfiguracji od 5 337 zł netto.",
+  "seoTitle": "Zebra TC58e — kolektor danych / terminal mobilny 5G essential",
+  "seoDescription": "Zebra TC58e (TC58BE) — kolektor danych 5G/LTE do logistyki terenowej i serwisu.",
   "shortDescription": "Zebra TC58e — terminal mobilny 5G z WiFi 6E, ekranem 6\" FHD+ i procesorem Qualcomm 4490, wersja TC53e z łącznością komórkową 5G/LTE",
   "description": "Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy [TC58](/produkt/zebra-tc58).\n\nWersja bliźniacza [Zebra TC53e](/produkt/zebra-tc53e) z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i energooszczędniejszy od 6490 w TC58), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17.\n\nTrzy skanery do wyboru: SE4720 (standard range) do codziennego skanowania, SE4770 (indoor/outdoor) z doskonałą pracą w pełnym słońcu, lub SE55 Advanced Range z IntelliFocus (do 12 m). Warianty z Security Chip zapewniają dodatkową ochronę danych korporacyjnych.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton (2,4 m z etui Rugged Boot), tumble test 1000×0,5 m i 1000×1,0 m z etui, zakres temperatur od -20°C do +50°C. Bateria PowerPrecision+ 4680 mAh (standard) lub 7000 mAh (rozszerzona) z warm swap. Czujnik ciśnienia atmosferycznego (barometr) — niedostępny w TC53e.\n\nBluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Certyfikat EPEAT Gold, 25% plastiku z recyklingu.\n\nKoszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC58). Akcesoria ShareCradle kompatybilne z [TC53](/produkt/zebra-tc53)/TC58/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Dokumentacja: zebra.com i serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -31394,7 +31472,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 5337,
+  "priceFrom": 6746.28,
   "images": [
     "/images/products/zebra-tc53_1.png",
     "/images/products/zebra-tc53_2.png",
@@ -31526,7 +31604,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1E1B1A80-A6",
       "name": "SE4720, 6/64 GB",
-      "priceFrom": 5337,
+      "priceFrom": 6746.28,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
@@ -31536,7 +31614,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1E6B1A80-A6",
       "name": "SE4720, 8/128 GB",
-      "priceFrom": 5581,
+      "priceFrom": 7054.99,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4720",
@@ -31546,8 +31624,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1J1B1A81-A6",
       "name": "SE4770, 6/64 GB, Security Chip",
-      "priceFrom": 5492,
-      "availability": "available",
+      "priceFrom": 6943.22,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "SE4770",
         "RAM / Flash": "6 / 64 GB",
@@ -31557,8 +31635,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1J6B1E80-A6",
       "name": "SE4770, 8/128 GB, bat. 7000 mAh",
-      "priceFrom": 5737,
-      "availability": "unavailable",
+      "priceFrom": 7251.94,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
         "RAM / Flash": "8 / 128 GB",
@@ -31568,7 +31646,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1J6B1W80-A6",
       "name": "SE4770, 8/128 GB",
-      "priceFrom": 5726,
+      "priceFrom": 7238.65,
       "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
@@ -31578,7 +31656,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1K6B1A80-A6",
       "name": "SE55, 8/128 GB",
-      "priceFrom": 5552,
+      "priceFrom": 7299.83,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -31588,8 +31666,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1K6B1W81-A6",
       "name": "SE55, 8/128 GB, Security Chip",
-      "priceFrom": 5943,
-      "availability": "unavailable",
+      "priceFrom": 7512.73,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 128 GB",
@@ -31599,8 +31677,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC58BE-3T1K7B1E80-A6",
       "name": "SE55, 8/64 GB, bat. 7000 mAh",
-      "priceFrom": 5789,
-      "availability": "unavailable",
+      "priceFrom": 7318.48,
+      "availability": "available",
       "attributes": {
         "Skaner": "SE55",
         "RAM / Flash": "8 / 64 GB",
@@ -31611,15 +31689,15 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC58e?",
-      "answer": "Ceny Zebra TC58e zaczynają się od ok. 5 337 zł netto za wariant SE4720 6/64 GB. Konfiguracja SE4720 8/128 GB to ok. 5 581 zł, SE4770 z Security Chip ok. 5 492 zł, SE55 8/128 GB ok. 5 552 zł, a topowy wariant SE55 z Security Chip ok. 5 943 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się TC58e od TC58?",
-      "answer": "TC58e to wersja \"essential\" (ekonomiczna) TC58. Główne różnice: procesor Qualcomm 4490 (vs 6490 — wolniejszy, ale energooszczędniejszy), Bluetooth 5.3 (vs 5.2), 5G FR1 Gen 2, dodatkowy skaner SE4770, Secure Element + Security Chip (wybrane SKU), Android do wersji 17 (vs 16 — dłuższe wsparcie), certyfikat EPEAT Gold. TC58e jest tańszy o ok. 1 400 zł."
+      "answer": "TC58e to wersja \"essential\" (ekonomiczna) TC58. Główne różnice: procesor Qualcomm 4490 (vs 6490 — wolniejszy, ale energooszczędniejszy), Bluetooth 5.3 (vs 5.2), 5G FR1 Gen 2, dodatkowy skaner SE4770, Secure Element + Security Chip (wybrane SKU), Android do wersji 17 (vs 16 — dłuższe wsparcie), certyfikat EPEAT Gold."
     },
     {
       "question": "Czym różni się TC58e od TC53e?",
-      "answer": "TC58e i TC53e to bliźniacze urządzenia — identyczny procesor, ekran, wytrzymałość. Różnice: TC58e dodaje 5G/4G LTE (nano SIM + eSIM), GPS/GNSS Dual-Band i barometr. TC53e ma wyłącznie WiFi. TC58e jest o ok. 400 zł droższy. Jeśli terminal pracuje w zasięgu WiFi → TC53e. Jeśli wyjeżdża w teren → TC58e."
+      "answer": "TC58e i TC53e to bliźniacze urządzenia — identyczny procesor, ekran, wytrzymałość. Różnice: TC58e dodaje 5G/4G LTE (nano SIM + eSIM), GPS/GNSS Dual-Band i barometr. TC53e ma wyłącznie WiFi. Jeśli terminal pracuje w zasięgu WiFi → TC53e. Jeśli wyjeżdża w teren → TC58e."
     },
     {
       "question": "Czy TC58e obsługuje 5G w Polsce?",
@@ -31639,7 +31717,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC58e w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC58e, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 160 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC58e, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC58e?",
@@ -31647,7 +31725,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC58e?",
-      "answer": "Główni konkurenci 5G: Zebra TC58 (mocniejszy procesor 6490, ale droższy o ~1 400 zł), Honeywell CT60 XP (podobna klasa, bez WiFi 6E), Datalogic Skorpio X5 (wytrzymały, starszy procesor). Tańsze opcje: Zebra TC27 (od 2 650 zł, 5G, 6\" FHD). TC58e wyróżnia się Bluetooth 5.3, trzema skanerami do wyboru, Security Chip i najdłuższym wsparciem Androida (do v17) w segmencie 5G enterprise."
+      "answer": "TC58e wyróżnia się Bluetooth 5.3, trzema skanerami do wyboru, Security Chip i najdłuższym wsparciem Androida (do v17) w segmencie 5G enterprise."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC58e?",
@@ -31863,15 +31941,15 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-09-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc501",
   "slug": "zebra-tc501",
   "name": "Zebra TC501",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc501.html",
-  "seoTitle": "Zebra TC501 — kolektor danych z AI i RFID | od 6 319 zł",
-  "seoDescription": "Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit. Następca TC53, Android 15→19. 15 konfiguracji od 6 319 zł netto | TAKMA.",
+  "seoTitle": "Zebra TC501 — kolektor danych z AI i RFID",
+  "seoDescription": "Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit.",
   "shortDescription": "Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6\" AMOLED 1500 nit, następca TC53/TC58",
   "description": "Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Baterie i uchwyty TC53 nie pasują do TC501. Zgodne stacje ShareCradle TC53 / TC58 można dostosować przez wymianę wkładki. Dobierz SHIM-CRD-TC5A do terminala bez osłony lub SHIM-CRD-TC5AB do terminala z osłoną. Szczegółowa specyfikacja techniczna i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
@@ -31879,7 +31957,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 6318.61,
+  "priceFrom": 7267.7,
   "images": [
     "/images/products/zebra-tc501_1.png",
     "/images/products/zebra-tc501_2.png",
@@ -31979,7 +32057,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-021A1A0001-A6",
       "name": "TC501 WiFi, SR500, 8/128 GB",
-      "priceFrom": 6541,
+      "priceFrom": 7267.7,
       "availability": "available",
       "attributes": {
         "Skaner": "SR500",
@@ -31989,8 +32067,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-321A1A1A01-A6",
       "name": "TC501 5G, SR500, 8/128 GB",
-      "priceFrom": 6541,
-      "availability": "available",
+      "priceFrom": 8140.32,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR500",
@@ -32000,7 +32078,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-021B1A0001-A6",
       "name": "TC501 WiFi, SR560, 8/128 GB",
-      "priceFrom": 6541,
+      "priceFrom": 7435.88,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32010,8 +32088,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-321B1A1A01-A6",
       "name": "TC501 5G, SR560, 8/128 GB",
-      "priceFrom": 3803,
-      "availability": "available",
+      "priceFrom": 8296.85,
+      "availability": "unavailable",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR560",
@@ -32021,8 +32099,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-321B1A1E01-A6",
       "name": "TC501 5G, SR560, 8/128 GB, bateria 7240 mAh",
-      "priceFrom": 4376,
-      "availability": "available",
+      "priceFrom": 8630.37,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR560",
@@ -32033,7 +32111,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-021E1A0001-A6",
       "name": "TC501 WiFi, AC670, 8/128 GB",
-      "priceFrom": 6059,
+      "priceFrom": 7741.71,
       "availability": "available",
       "attributes": {
         "Skaner": "AC670",
@@ -32043,7 +32121,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-321E1A1A01-A6",
       "name": "TC501 5G, AC670, 8/128 GB",
-      "priceFrom": 3946,
+      "priceFrom": 8682.8,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32054,7 +32132,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-041A2B0001-A6",
       "name": "TC501 WiFi, SR500, 12/256 GB, Ultrawide",
-      "priceFrom": 6925,
+      "priceFrom": 8766.47,
       "availability": "available",
       "attributes": {
         "Skaner": "SR500",
@@ -32065,8 +32143,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-341A2A1A01-A6",
       "name": "TC501 5G, SR500, 12/256 GB",
-      "priceFrom": 4162,
-      "availability": "available",
+      "priceFrom": 9079.58,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR500",
@@ -32076,7 +32154,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-041B2B0001-A6",
       "name": "TC501 WiFi, SR560, 12/256 GB, Ultrawide",
-      "priceFrom": 7110,
+      "priceFrom": 9001.29,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32087,7 +32165,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-341B2B1A01-A6",
       "name": "TC501 5G, SR560, 12/256 GB, Ultrawide",
-      "priceFrom": 4520,
+      "priceFrom": 9855.5,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32099,7 +32177,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-041B2C00A1-A6",
       "name": "TC501 WiFi, SR560, 12/256 GB, ToF",
-      "priceFrom": 7605,
+      "priceFrom": 9627.49,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32110,7 +32188,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-341B2C1AA1-A6",
       "name": "TC501 5G, SR560, 12/256 GB, ToF",
-      "priceFrom": 4734,
+      "priceFrom": 10331.93,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32122,7 +32200,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC5010-041E2B0001-A6",
       "name": "TC501 WiFi, AC670, 12/256 GB, Ultrawide",
-      "priceFrom": 7296,
+      "priceFrom": 9321.66,
       "availability": "available",
       "attributes": {
         "Skaner": "AC670",
@@ -32133,7 +32211,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC501G-341E2B1A01-A6",
       "name": "TC501 5G, AC670, 12/256 GB, Ultrawide",
-      "priceFrom": 4663,
+      "priceFrom": 10168.61,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32146,15 +32224,15 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Co to jest Zebra TC501 (kolektor danych)?",
-      "answer": "Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit i Wi-Fi 7. Jest następcą serii TC53/TC58 i pierwszym terminalem enterprise z RFID w standardzie. Ceny od 6 319 zł netto do ok. 8 469 zł netto (12/256 GB, ToF). Android 15 z aktualizacjami do v19 — ~8 lat wsparcia LifeGuard. Dostępny w 15 konfiguracjach w TAKMA."
+      "answer": "Zebra TC501 to kolektor danych nowej generacji z wbudowanym RFID UHF, procesorem AI Dragonwing Q-6690, ekranem AMOLED 1500 nit i Wi-Fi 7. Jest następcą serii TC53/TC58 i pierwszym terminalem enterprise z RFID w standardzie. Android 15 z aktualizacjami do v19 — ~8 lat wsparcia LifeGuard. Dostępny w 15 konfiguracjach w TAKMA."
     },
     {
       "question": "Ile kosztuje kolektor danych Zebra TC501?",
-      "answer": "Ceny kolektora danych Zebra TC501 zaczynają się od ok. 6 319 zł netto (8/128 GB) do ok. 8 469 zł netto za konfigurację 12/256 GB z czujnikiem ToF. Ceny netto, dane z czerwca 2026."
+      "answer": "Ceny netto, dane z czerwca 2026."
     },
     {
       "question": "Zebra TC501 vs TC58 — czym się różnią?",
-      "answer": "Kolektor danych TC501 to nowa generacja (2025/2026) z RFID, AI, AMOLED 1500 nit, Wi-Fi 7 i skanerem AC670 do 30 m — od 6 319 zł. TC58 to sprawdzony terminal 5G (2023) z Qualcomm 6490 i skanerem SE55 do 12 m — od 6 751 zł. TC501 wygrywa w większości kategorii przy zbliżonej cenie. TC58 ma jedną przewagę: kompatybilność akcesoriów z TC53. Pełne porównanie: takma.com.pl/poradnik/zebra-tc501-vs-tc58."
+      "answer": "TC501 wygrywa w większości kategorii przy zbliżonej cenie. TC58 ma jedną przewagę: kompatybilność akcesoriów z TC53. Pełne porównanie: takma.com.pl/poradnik/zebra-tc501-vs-tc58."
     },
     {
       "question": "Czym różni się Zebra TC501 od TC53?",
@@ -32182,7 +32260,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC501 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC501, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 238 zł netto/3 lata) dostępna jest naprawa priorytetowa."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC501, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC501?",
@@ -32194,7 +32272,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie kupić kolektor danych Zebra TC501 w Polsce?",
-      "answer": "Kolektor danych Zebra TC501 jest dostępny w autoryzowanym sklepie TAKMA (takma.com.pl) — oficjalny partner Zebra Technologies. 15 konfiguracji od 6 319 zł netto. TAKMA oferuje: doradztwo w wyborze konfiguracji, wycenę flotową z rabatami od 5 szt., konfigurację MDM, serwis gwarancyjny (serwis-zebry.pl) i kontrakty Zebra OneCare od 1 238 zł/3 lata."
+      "answer": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC501?",
@@ -32437,23 +32515,23 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     }
   ],
   "createdAt": "2026-02-17",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc701",
   "slug": "zebra-tc701",
   "name": "Zebra TC701",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc701.html",
-  "seoTitle": "Zebra TC701 — terminal ultra-rugged z RFID i AI | od 8 361 zł ",
-  "seoDescription": "Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit. Upadki z 3,66 m, IP68. 12 konfiguracji od 8 361 zł netto.",
+  "seoTitle": "Zebra TC701 — terminal ultra-rugged z RFID i AI ",
+  "seoDescription": "Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit.",
   "shortDescription": "Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6\" AMOLED 1500 nit, następca TC73/TC78",
-  "description": "Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC73/TC78 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.\n\nNajwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).\n\nProcesor AI i pamięć klasy premium. Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym NPU do przetwarzania AI on-device — rozpoznawanie produktów, OCR numerów VIN i opon, weryfikacja etykiet bez chmury. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z microSD do 2 TB.\n\nEkran AMOLED 1500 nit — czytelny wszędzie. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów. Doskonale czytelny w pełnym słońcu i pod oświetleniem halogenowym w hali. Gorilla Glass Victus, panel dotykowy w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF w standardzie. Wbudowany czytnik RAIN RFID UHF w KAŻDEJ konfiguracji — odczyt ponad 200 tagów na sekundę z zasięgu do 2 m. Do długiego zasięgu (9+ m) sled RFD40/RFD90. Eliminacja osobnych modułów — mniej sprzętu, mniej awarii.\n\nDwa silniki skanowania. SR560 — ulepszone skanowanie 2D z szybkim dekodowaniem uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje etykiety na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP i czujnikiem Time-of-Flight do pomiaru wymiarów paczek (dimensioning).\n\nWi-Fi 7, 5G i łączność przyszłości. Wi-Fi 7 (802.11be) z MLO — do 5,7 Gbps, stabilność w gęstych środowiskach. Wersje 5G z dual eSIM i CBRS. Bluetooth 6.0, NFC (Apple VAS, Google SmartTap), GPS z potrójną bandą GNSS. Portfel zbliżeniowy (contactless wallet) — obsługa płatności i kart lojalnościowych.\n\nBaterie współdzielone z TC501. Bateria standardowa ma 5000 mAh, a rozszerzona 7240 mAh. Można je wymienić bez wyłączania terminala. Ładowanie bezprzewodowe wymaga TC701 WAN, baterii BTRY-TC5A7A-WC-01 i zgodnej ładowarki. TC701 Wi-Fi nie obsługuje tej funkcji. Zgodna szybka stacja ładuje baterię standardową od 0 do 70% w około 45 minut.\n\nAndroid 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA Professional w cenie: StageNow, Device Tracker, Enterprise Home Screen. MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000–5 000 zł/urządzenie). Zebra OneCare Essential od 1 238 zł netto/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.\n\nWersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja techniczna i instrukcja obsługi dostępne na stronie serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC73/TC78 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.\n\nNajwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).\n\nProcesor AI i pamięć klasy premium. Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym NPU do przetwarzania AI on-device — rozpoznawanie produktów, OCR numerów VIN i opon, weryfikacja etykiet bez chmury. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z microSD do 2 TB.\n\nEkran AMOLED 1500 nit — czytelny wszędzie. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów. Doskonale czytelny w pełnym słońcu i pod oświetleniem halogenowym w hali. Gorilla Glass Victus, panel dotykowy w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF w standardzie. Wbudowany czytnik RAIN RFID UHF w KAŻDEJ konfiguracji — odczyt ponad 200 tagów na sekundę z zasięgu do 2 m. Do długiego zasięgu (9+ m) sled RFD40/RFD90. Eliminacja osobnych modułów — mniej sprzętu, mniej awarii.\n\nDwa silniki skanowania. SR560 — ulepszone skanowanie 2D z szybkim dekodowaniem uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje etykiety na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP i czujnikiem Time-of-Flight do pomiaru wymiarów paczek (dimensioning).\n\nWi-Fi 7, 5G i łączność przyszłości. Wi-Fi 7 (802.11be) z MLO — do 5,7 Gbps, stabilność w gęstych środowiskach. Wersje 5G z dual eSIM i CBRS. Bluetooth 6.0, NFC (Apple VAS, Google SmartTap), GPS z potrójną bandą GNSS. Portfel zbliżeniowy (contactless wallet) — obsługa płatności i kart lojalnościowych.\n\nBaterie współdzielone z TC501. Bateria standardowa ma 5000 mAh, a rozszerzona 7240 mAh. Można je wymienić bez wyłączania terminala. Ładowanie bezprzewodowe wymaga TC701 WAN, baterii BTRY-TC5A7A-WC-01 i zgodnej ładowarki. TC701 Wi-Fi nie obsługuje tej funkcji. Zgodna szybka stacja ładuje baterię standardową od 0 do 70% w około 45 minut.\n\nAndroid 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA Professional w cenie: StageNow, Device Tracker, Enterprise Home Screen. MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000– (cena zależy od wariantu)/urządzenie). Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.\n\nWersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja techniczna i instrukcja obsługi dostępne na stronie serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 8361,
+  "priceFrom": 7899.73,
   "images": [
     "/images/products/zebra-tc701_1.png",
     "/images/products/zebra-tc701_2.png",
@@ -32551,7 +32629,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7010-021B1A0001-A6",
       "name": "TC701 WiFi, SR560, 8/128 GB",
-      "priceFrom": 8361,
+      "priceFrom": 7899.73,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32561,7 +32639,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7010-041B2B0001-A6",
       "name": "TC701 WiFi, SR560, 12/256 GB, Ultrawide",
-      "priceFrom": 7605,
+      "priceFrom": 9627.49,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32572,7 +32650,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7010-041B2C00A1-A6",
       "name": "TC701 WiFi, SR560, 12/256 GB, ToF",
-      "priceFrom": 8099,
+      "priceFrom": 10253.68,
       "availability": "available",
       "attributes": {
         "Skaner": "SR560",
@@ -32583,8 +32661,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7010-021E1A0001-A6",
       "name": "TC701 WiFi, AC670, 8/128 GB",
-      "priceFrom": 6554,
-      "availability": "available",
+      "priceFrom": 8296.85,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "AC670",
         "Pamięć": "8 GB / 128 GB"
@@ -32593,8 +32671,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7010-041E2B0001-A6",
       "name": "TC701 WiFi, AC670, 12/256 GB, Ultrawide",
-      "priceFrom": 7667,
-      "availability": "available",
+      "priceFrom": 9705.77,
+      "availability": "on-order",
       "attributes": {
         "Skaner": "AC670",
         "Pamięć": "12 GB / 256 GB",
@@ -32604,8 +32682,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-321B1A1A01-A6",
       "name": "TC701 5G, SR560, 8/128 GB",
-      "priceFrom": 8361,
-      "availability": "available",
+      "priceFrom": 8766.47,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR560",
@@ -32615,8 +32693,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-341B2A1E01-A6",
       "name": "TC701 5G, SR560, 12/256 GB, bat. 7240 mAh",
-      "priceFrom": 4663,
-      "availability": "available",
+      "priceFrom": 10168.61,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "SR560",
@@ -32627,7 +32705,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-341B2B1A01-A6",
       "name": "TC701 5G, SR560, 12/256 GB, Ultrawide",
-      "priceFrom": 4807,
+      "priceFrom": 10481.71,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32639,7 +32717,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-341B2C1AA1-A6",
       "name": "TC701 5G, SR560, 12/256 GB, ToF",
-      "priceFrom": 5021,
+      "priceFrom": 10958.12,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32651,7 +32729,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-321E1A1A01-A6",
       "name": "TC701 5G, AC670, 8/128 GB",
-      "priceFrom": 4233,
+      "priceFrom": 9229.35,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32662,7 +32740,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-341E2B1A01-A6",
       "name": "TC701 5G, AC670, 12/256 GB, Ultrawide",
-      "priceFrom": 4950,
+      "priceFrom": 10894.73,
       "availability": "available",
       "attributes": {
         "5G": "Tak",
@@ -32674,8 +32752,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC701G-341E2C1EA1-A6",
       "name": "TC701 5G, AC670, 12/256 GB, bat. 7240 mAh, ToF",
-      "priceFrom": 5308,
-      "availability": "available",
+      "priceFrom": 11584.28,
+      "availability": "on-order",
       "attributes": {
         "5G": "Tak",
         "Skaner": "AC670",
@@ -32688,7 +32766,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC701?",
-      "answer": "Ceny Zebra TC701 zaczynają się od ok. 8 361 zł netto (8/128 GB) do ok. 9 020 zł netto za konfigurację 12/256 GB z czujnikiem ToF. Ceny netto, dane z czerwca 2026."
+      "answer": "Ceny netto, dane z czerwca 2026."
     },
     {
       "question": "Czym różni się Zebra TC701 od TC501?",
@@ -32732,7 +32810,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC701?",
-      "answer": "W portfolio Zebra: TC501 (enterprise, lżejszy, upadki 2,4 m, tańszy od ok. 6 319 zł), TC73 (poprzednia generacja ultra-rugged, Wi-Fi 6E, brak RFID w standardzie). Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m, IP68, upadki 2,4 m — ale brak RFID, brak Wi-Fi 7, brak AMOLED, cięższy 314 g), Datalogic Skorpio X5 (ultra-rugged, klawiatura fizyczna — ale starszy procesor, brak AI NPU). TC701 wyróżnia się jako jedyny ultra-rugged terminal z RFID UHF w standardzie, AI NPU, Wi-Fi 7, ekranem AMOLED 1500 nit i upadkami z 3,66 m."
+      "answer": "Konkurencja: Honeywell CT47 (5G, FlexRange do 24 m, IP68, upadki 2,4 m — ale brak RFID, brak Wi-Fi 7, brak AMOLED, cięższy 314 g), Datalogic Skorpio X5 (ultra-rugged, klawiatura fizyczna — ale starszy procesor, brak AI NPU). TC701 wyróżnia się jako jedyny ultra-rugged terminal z RFID UHF w standardzie, AI NPU, Wi-Fi 7, ekranem AMOLED 1500 nit i upadkami z 3,66 m."
     },
     {
       "question": "Czy baterie z Zebra TC501 pasują do TC701?",
@@ -32740,7 +32818,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Ile kosztuje kontrakt serwisowy Zebra OneCare do TC701?",
-      "answer": "Zebra OneCare Essential na TC701 kosztuje od 1 238 zł netto za 3 lata lub od 1 957 zł netto za 5 lat. Kontrakty obejmują naprawy sprzętowe z wymianą urządzenia (advance exchange), wsparcie techniczne i aktualizacje LifeGuard. Kontrakt należy zakupić w ciągu 30 dni od zakupu terminala."
+      "answer": "Kontrakty obejmują naprawy sprzętowe z wymianą urządzenia (advance exchange), wsparcie techniczne i aktualizacje LifeGuard. Kontrakt należy zakupić w ciągu 30 dni od zakupu terminala."
     },
     {
       "question": "Czy wszystkie akcesoria TC501 pasują do TC701?",
@@ -32930,23 +33008,23 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     }
   ],
   "createdAt": "2026-02-17",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc73",
   "slug": "zebra-tc73",
   "name": "Zebra TC73",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html",
-  "seoTitle": "Zebra TC73 — kolektor danych / terminal mobilny ultra-rugged WiFi 6E upadki 3 m | od 7 044 zł",
-  "seoDescription": "Zebra TC73 (TC7301) — ultra-rugged kolektor danych z WiFi 6E do ciężkiej produkcji, chłodni i doków załadunkowych. Qualcomm 6490, IP68+IP65, upadki 3,05 m, -20°C do +50°C. 3 konfiguracje. TC7301-0T1J4B1000-A6 od 7 044 zł netto.",
+  "seoTitle": "Zebra TC73 — kolektor danych / terminal mobilny ultra-rugged WiFi 6E upadki 3 m",
+  "seoDescription": "Zebra TC73 (TC7301) — ultra-rugged kolektor danych z WiFi 6E do ciężkiej produkcji, chłodni i doków załadunkowych. Qualcomm 6490, IP68+IP65, upadki 3,05 m, -20°C do +50°C. 3 konfiguracje.",
   "shortDescription": "Zebra TC73 — ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6\" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC53",
-  "description": "Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.\n\nTC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — ale w obudowie ultra-rugged: odporność na upadki z 3,05 m na beton (vs 1,8 m w TC53), tumble test 2000×1,0 m (vs 1000×0,5 m), uchwyt o 20% cieńszy niż poprzedni TC72 przy zachowaniu ekstremalnej wytrzymałości. Procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz Full HD+ (1080×2160) z Gorilla Glass i obsługą rękawiczek.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF i funkcję Zebra Dimensioning (wymiarowanie paczek).\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/[TC58](/produkt/zebra-tc58) — łatwa migracja.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem, Bluetooth 5.2, NFC, Dual-Band GNSS. Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk. USB 3.0 Type-C + USB 2.0 Host. Pakiet Mobility DNA Professional w cenie urządzenia.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58 (BTRY-NGTC5TC7-*) — jeden pool baterii dla całej floty mieszanej. Wytrzymałość 3,05 m redukuje liczbę uszkodzeń w ciężkim terenie — niższe koszty napraw. Zebra OneCare Essential od 1 533 zł netto/3 lata — naprawa priorytetowa, wymiana ekranu i obudowy.\n\nWersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra-tc78). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC53](/produkt/zebra-tc53). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.\n\nTC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — ale w obudowie ultra-rugged: odporność na upadki z 3,05 m na beton (vs 1,8 m w TC53), tumble test 2000×1,0 m (vs 1000×0,5 m), uchwyt o 20% cieńszy niż poprzedni TC72 przy zachowaniu ekstremalnej wytrzymałości. Procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz Full HD+ (1080×2160) z Gorilla Glass i obsługą rękawiczek.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF i funkcję Zebra Dimensioning (wymiarowanie paczek).\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/[TC58](/produkt/zebra-tc58) — łatwa migracja.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem, Bluetooth 5.2, NFC, Dual-Band GNSS. Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk. USB 3.0 Type-C + USB 2.0 Host. Pakiet Mobility DNA Professional w cenie urządzenia.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58 (BTRY-NGTC5TC7-*) — jeden pool baterii dla całej floty mieszanej. Wytrzymałość 3,05 m redukuje liczbę uszkodzeń w ciężkim terenie — niższe koszty napraw. Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana ekranu i obudowy.\n\nWersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra-tc78). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC53](/produkt/zebra-tc53). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 7043.52,
+  "priceFrom": 9217.36,
   "images": [
     "/images/products/zebra-tc73_1.png",
     "/images/products/zebra-tc73_2.png",
@@ -33026,8 +33104,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7301-0T1J4B1000-A6",
       "name": "TC73 SE4770, 4/64 GB",
-      "priceFrom": 7043.52,
-      "availability": "available",
+      "priceFrom": 8904.26,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Pamięć": "4 GB / 64 GB"
@@ -33036,7 +33114,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7301-0T1K4B1000-A6",
       "name": "TC73 SE55, 4/64 GB",
-      "priceFrom": 7291.18,
+      "priceFrom": 9217.36,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -33046,7 +33124,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC7301-0T1K6E200A-A6",
       "name": "TC73 SE55, 8/128 GB Premium",
-      "priceFrom": 8901.56,
+      "priceFrom": 11703.27,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -33058,7 +33136,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC73?",
-      "answer": "Ceny Zebra TC73 zaczynają się od ok. 7 044 zł netto za konfigurację ze skanerem SE4770 i pamięcią 4/64 GB. Wariant z SE55 (4/64 GB) kosztuje ok. 7 291 zł netto. Topowa wersja Premium (SE55, 8/128 GB, OIS, Dimensioning) to ok. 8 902 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się Zebra TC73 od TC53?",
@@ -33070,7 +33148,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jaki skaner wybrać: SE4770 czy SE55?",
-      "answer": "SE4770 (standard) — szerokie pole widzenia, zasięg do 60 cm: idealny do skanowania na ladzie, kasie, kompletacji na poziomie wzroku. SE55 z IntelliFocus (do 12,2 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania. Różnica cenowa: ok. 248 zł netto."
+      "answer": "SE4770 (standard) — szerokie pole widzenia, zasięg do 60 cm: idealny do skanowania na ladzie, kasie, kompletacji na poziomie wzroku. SE55 z IntelliFocus (do 12,2 m) — automatycznie dobiera ostrość: skanuje drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania."
     },
     {
       "question": "Czym jest wariant Premium TC73?",
@@ -33086,7 +33164,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC73 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC73, wymiana ekranów, okienek skanera SE4770/SE55, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa. Serwis obsługuje całą linię TC7x i poprzednie generacje TC73/TC78."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC73, wymiana ekranów, okienek skanera SE4770/SE55, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Serwis obsługuje całą linię TC7x i poprzednie generacje TC73/TC78."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC73?",
@@ -33094,7 +33172,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC73?",
-      "answer": "W klasie ultra-rugged alternatywami są: Honeywell CT47 (IP68, upadki 2,4 m, Snapdragon 778G), Datalogic Skorpio X5 (klawiatura fizyczna, upadki 1,8 m). W ofercie TAKMA: TC53 (enterprise, lżejszy, upadki 1,8 m, od 6 999 zł) lub TC22 (ekonomiczny, od 2 417 zł). TC73 wyróżnia się najwyższą odpornością na upadki (3,05 m) i najdłuższym cyklem wsparcia w tej klasie."
+      "answer": "W klasie ultra-rugged alternatywami są: Honeywell CT47 (IP68, upadki 2,4 m, Snapdragon 778G), Datalogic Skorpio X5 (klawiatura fizyczna, upadki 1,8 m). TC73 wyróżnia się najwyższą odpornością na upadki (3,05 m) i najdłuższym cyklem wsparcia w tej klasie."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC73?",
@@ -33273,23 +33351,23 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-06-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   {
   "id": "zebra-tc78",
   "slug": "zebra-tc78",
   "name": "Zebra TC78",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc73-tc78.html",
-  "seoTitle": "Zebra TC78 — kolektor danych / terminal mobilny ultra-rugged 5G upadki 3 m | od 7 742 zł",
-  "seoDescription": "Zebra TC78 (TC78B1) — ultra-rugged kolektor danych 5G/LTE z WiFi 6E do serwisu terenowego, logistyki i outdooru. Qualcomm 6490, IP68+IP65, upadki 3,05 m, dual SIM, GPS. 5 konfiguracji. TC78B1-3T1J4B1A80-A6 od 7 742 zł netto.",
+  "seoTitle": "Zebra TC78 — kolektor danych / terminal mobilny ultra-rugged 5G upadki 3 m",
+  "seoDescription": "Zebra TC78 (TC78B1) — ultra-rugged kolektor danych 5G/LTE z WiFi 6E do serwisu terenowego, logistyki i outdooru. Qualcomm 6490, IP68+IP65, upadki 3,05 m, dual SIM, GPS. 5 konfiguracji.",
   "shortDescription": "Zebra TC78 — ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6\" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC58",
-  "description": "Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.\n\nTC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcją ładowania bezprzewodowego (Qi). Ten sam procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz FHD+ z Gorilla Glass i ta sama obudowa ultra-rugged z odpornością na upadki z 3,05 m na beton.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje OIS w kamerze 16 MP, czujnik ToF, Zebra Dimensioning i ładowanie bezprzewodowe.\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z [TC53](/produkt/zebra-tc53)/TC58/TC73.\n\nŁączność 5G FR1 + 4G LTE z dual SIM (nano + eSIM), WiFi 6E (802.11ax) 2×2 MU-MIMO, Bluetooth 5.2, NFC, Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou). Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58/TC73 — jeden pool baterii dla floty mieszanej. Dual SIM (nano + eSIM) eliminuje koszt osobnego routera w pojeździe. Wytrzymałość 3,05 m redukuje koszty napraw przy pracy w terenie. Zebra OneCare Essential od 1 533 zł netto/3 lata z naprawą priorytetową.\n\nWersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.\n\nTC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcją ładowania bezprzewodowego (Qi). Ten sam procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz FHD+ z Gorilla Glass i ta sama obudowa ultra-rugged z odpornością na upadki z 3,05 m na beton.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje OIS w kamerze 16 MP, czujnik ToF, Zebra Dimensioning i ładowanie bezprzewodowe.\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z [TC53](/produkt/zebra-tc53)/TC58/TC73.\n\nŁączność 5G FR1 + 4G LTE z dual SIM (nano + eSIM), WiFi 6E (802.11ax) 2×2 MU-MIMO, Bluetooth 5.2, NFC, Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou). Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58/TC73 — jeden pool baterii dla floty mieszanej. Dual SIM (nano + eSIM) eliminuje koszt osobnego routera w pojeździe. Wytrzymałość 3,05 m redukuje koszty napraw przy pracy w terenie. Zebra OneCare Essential/3 lata z naprawą priorytetową.\n\nWersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
   ],
   "manufacturerId": "zebra",
-  "priceFrom": 7741.96,
+  "priceFrom": 10100.24,
   "images": [
     "/images/products/zebra-tc78_1.png",
     "/images/products/zebra-tc78_2.png",
@@ -33373,8 +33451,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC78B1-3T1J4B1A80-A6",
       "name": "TC78 SE4770, 4/64 GB",
-      "priceFrom": 7445.61,
-      "availability": "available",
+      "priceFrom": 9787.14,
+      "availability": "unavailable",
       "attributes": {
         "Skaner": "SE4770",
         "Pamięć": "4 GB / 64 GB"
@@ -33383,7 +33461,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC78B1-3T1J6B1A80-A6",
       "name": "TC78 SE4770, 8/128 GB",
-      "priceFrom": 8427.95,
+      "priceFrom": 10654.42,
       "availability": "available",
       "attributes": {
         "Skaner": "SE4770",
@@ -33393,7 +33471,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC78B1-3T1K4B1A80-A6",
       "name": "TC78 SE55, 4/64 GB",
-      "priceFrom": 7989.63,
+      "priceFrom": 10100.24,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -33403,7 +33481,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC78B1-3T1K6B1A80-A6",
       "name": "TC78 SE55, 8/128 GB",
-      "priceFrom": 8628.59,
+      "priceFrom": 10908.03,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -33413,7 +33491,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "partNumber": "TC78B1-3T1K6E2A8A-A6",
       "name": "TC78 SE55, 8/128 GB Premium",
-      "priceFrom": 9304.68,
+      "priceFrom": 11871.71,
       "availability": "available",
       "attributes": {
         "Skaner": "SE55",
@@ -33425,7 +33503,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
   "faq": [
     {
       "question": "Ile kosztuje Zebra TC78?",
-      "answer": "Ceny Zebra TC78 zaczynają się od ok. 7 742 zł netto za konfigurację ze skanerem SE4770 i 4/64 GB. Wariant SE4770 8/128 GB kosztuje ok. 8 428 zł netto, SE55 4/64 GB ok. 7 990 zł, SE55 8/128 GB ok. 8 629 zł. Topowa wersja Premium (SE55, 8/128 GB, OIS, Dimensioning, Qi) to ok. 9 305 zł netto. Ceny netto, dane z lutego 2026."
+      "answer": "Ceny netto, dane z lutego 2026."
     },
     {
       "question": "Czym różni się Zebra TC78 od TC58?",
@@ -33437,7 +33515,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jaki skaner wybrać: SE4770 czy SE55?",
-      "answer": "SE4770 (standard) — szerokie pole widzenia, zasięg do 60 cm: do skanowania na ladzie, kasie, kompletacji. SE55 z IntelliFocus (do 12,2 m) — automatycznie dobiera ostrość: drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania. Różnica cenowa: ok. 248 zł netto."
+      "answer": "SE4770 (standard) — szerokie pole widzenia, zasięg do 60 cm: do skanowania na ladzie, kasie, kompletacji. SE55 z IntelliFocus (do 12,2 m) — automatycznie dobiera ostrość: drobny kod tuż przy urządzeniu i duży kod na najwyższej półce. Konieczny w magazynach wysokiego składowania."
     },
     {
       "question": "Czym jest wariant Premium TC78?",
@@ -33457,7 +33535,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Gdzie serwisować Zebra TC78 w Polsce?",
-      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC78, wymiana ekranów, okienek skanera SE4770/SE55, modułów 5G, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 533 zł netto/3 lata) dostępna naprawa priorytetowa z substytutem zastępczym. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) i poprzednie generacje TC73/TC78."
+      "answer": "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne TC78, wymiana ekranów, okienek skanera SE4770/SE55, modułów 5G, baterii i obudów z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Serwis obsługuje całą linię TC7x (TC701, TC73, TC78) i poprzednie generacje TC73/TC78."
     },
     {
       "question": "Co to jest Mobility DNA i DataWedge w Zebra TC78?",
@@ -33465,7 +33543,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     },
     {
       "question": "Jakie są alternatywy dla Zebra TC78?",
-      "answer": "W klasie ultra-rugged z 5G: Honeywell CT47 (IP68, upadki 2,4 m, 5G), Datalogic Skorpio X5 (klawiatura, upadki 1,8 m). W ofercie TAKMA: TC58 (enterprise 5G, lżejszy, upadki 1,8 m, od 6 751 zł), TC27 (ekonomiczny 5G, od 2 690 zł). TC78 wyróżnia się najwyższą odpornością na upadki (3,05 m) z łącznością 5G w tej klasie."
+      "answer": "W klasie ultra-rugged z 5G: Honeywell CT47 (IP68, upadki 2,4 m, 5G), Datalogic Skorpio X5 (klawiatura, upadki 1,8 m). TC78 wyróżnia się najwyższą odpornością na upadki (3,05 m) z łącznością 5G w tej klasie."
     },
     {
       "question": "Jaką stację wybrać do Zebra TC78?",
@@ -33649,7 +33727,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-06-01",
-  "updatedAt": "2026-10-03"
+  "updatedAt": "2026-10-07"
 },
   // ============================================
   // ZEBRA MC2200 — terminal z klawiaturą, Wi-Fi
@@ -33659,8 +33737,8 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     slug: 'zebra-mc2200',
     name: 'Zebra MC2200',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
-    seoTitle: 'Zebra MC2200 — kolektor danych / terminal mobilny z klawiaturą | od 2 261 zł',
-    seoDescription: 'Zebra MC2200 (MC220J) — kolektor danych z klawiaturą 34-key do magazynów, retail i aptek. Wi-Fi, IP65, skaner SE4100 2D, Android 10→14. 4 konfiguracje od 2 261 zł netto. MC220J-2A3S2RW.',
+    seoTitle: "Zebra MC2200 — kolektor danych / terminal mobilny z klawiaturą",
+    seoDescription: "Zebra MC2200 (MC220J) — kolektor danych z klawiaturą 34-key do magazynów, retail i aptek. MC220J-2A3S2RW.",
     shortDescription: 'Zebra MC2200 — kompaktowy terminal mobilny z klawiaturą fizyczną 34-key i skanerem SE4100, Wi-Fi, IP65',
     description: `Dla kogo? Zebra MC2200 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną, zaprojektowany dla małych i średnich firm potrzebujących niezawodnego narzędzia do zbierania danych w magazynie, sklepie, aptece lub na linii produkcyjnej — w przystępnej cenie, ale z niezawodnością klasy enterprise i wieloletnią żywotnością.
 
@@ -33676,7 +33754,7 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
-    priceFrom: 2260.75,
+    priceFrom: 3210.93,
     images: [
       '/images/products/zebra-mc2200_1.png',
       '/images/products/zebra-mc2200_2.png',
@@ -33684,7 +33762,7 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       '/images/products/zebra-mc2200_4.png',
     ],
     tags: ['magazyn', 'retail', 'logistyka'] as ProductTag[],
-    availability: 'available' as const,
+    availability: "unavailable",
     isNew: false,
     isBestseller: false,
     specifications: [
@@ -33708,8 +33786,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'MC220J-2A3S2RW',
         name: 'MC2200, 2/16 GB',
-        priceFrom: 2260.75,
-        availability: 'available' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '2 GB / 16 GB',
         },
@@ -33717,8 +33795,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'MC220K-2B3S3RW',
         name: 'MC2200, 3/32 GB, NFC, Kamera 13 MP',
-        priceFrom: 2821.36,
-        availability: 'available' as const,
+        priceFrom: 3210.93,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '3 GB / 32 GB',
           'NFC': 'Tak',
@@ -33728,8 +33806,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'KT-MC220J-2A3S2RW',
         name: 'MC2200, 2/16 GB + stacja dokująca',
-        priceFrom: 2539.71,
-        availability: 'unavailable' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '2 GB / 16 GB',
           'Stacja dokująca': 'Tak',
@@ -33738,8 +33816,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'KT-MC220K-2B3S3RW',
         name: 'MC2200, 3/32 GB, NFC, Kamera 13 MP + stacja dokująca',
-        priceFrom: 3010.07,
-        availability: 'unavailable' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '3 GB / 32 GB',
           'NFC': 'Tak',
@@ -33749,7 +33827,7 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra MC2200?', answer: 'Ceny Zebra MC2200 zaczynają się od ok. 2 261 zł netto za konfigurację bazową (2 GB/16 GB, bez kamery i NFC). Wersja rozszerzona z 3 GB/32 GB, kamerą 13 MP i NFC kosztuje ok. 2 821 zł netto. Ceny netto, dane z lutego 2026.' },
+      { question: 'Ile kosztuje Zebra MC2200?', answer: "Ceny netto, dane z lutego 2026." },
       { question: 'Czym różni się Zebra MC2200 od MC2700?', answer: 'MC2200 i MC2700 mają identyczną konstrukcję, procesor, skaner, klawiaturę i wytrzymałość. Jedyna różnica: MC2200 to wersja wyłącznie Wi-Fi, a MC2700 dodaje łączność LTE Cat 6, moduł GPS/GLONASS/Galileo/BeiDou i slot Nano SIM (lub eSIM). MC2200 wystarczy do pracy wewnątrz budynku z Wi-Fi. MC2700 jest konieczny, gdy pracownik potrzebuje łączności w terenie.' },
       { question: 'Do czego służy klawiatura fizyczna w MC2200?', answer: 'Klawiatura 34-key z podświetleniem umożliwia szybkie wprowadzanie kodów numerycznych, ilości i partii bez konieczności dotykania ekranu. To kluczowa zaleta przy pracy w rękawicach (mroźnia, magazyn), przy wielokrotnym wpisywaniu danych liczbowych (inwentaryzacja, produkcja) i w warunkach deszczu/wilgoci, gdy ekran dotykowy jest mniej precyzyjny.' },
       { question: 'Jaki skaner ma Zebra MC2200?', answer: 'MC2200 jest wyposażony w skaner SE4100 z technologią PRZM Intelligent Imaging. Dekoduje kody 1D (EAN, Code 128, Code 39) i 2D (QR, Data Matrix, PDF417) z odległości od 3 do 66 cm. Trójstopniowy feedback (dźwięk, LED, wibracja) potwierdza poprawny odczyt. Skaner działa w temperaturach od -20°C do +50°C.' },
@@ -33758,9 +33836,9 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       { question: 'Czy Zebra MC2200 ma GPS?', answer: 'Nie. MC2200 to wersja wyłącznie Wi-Fi — nie ma modułu GPS, WWAN ani slotu SIM. Jeśli potrzebujesz nawigacji satelitarnej i łączności komórkowej, wybierz Zebra MC2700 — identyczne urządzenie, ale z dodatkowym modułem LTE Cat 6 i GPS/GLONASS/Galileo/BeiDou.' },
       { question: 'Jaki Android ma Zebra MC2200?', answer: 'MC2200 jest dostarczany z Androidem 10 i ma gwarantowaną ścieżkę aktualizacji do Androida 14. Zebra LifeGuard™ zapewnia regularne łatki bezpieczeństwa. Urządzenie jest dostępne w wersji GMS (Google Play) oraz AOSP (bez usług Google, do zarządzania przez MDM w środowiskach zamkniętych).' },
       { question: 'Jakie akcesoria pasują do MC2200?', answer: 'Najważniejsze akcesoria: bateria 3 500 mAh (BTRY-MC2X-35MA-01), bateria 4 900 mAh (BTRY-MC2X-49MA-01), trigger handle (TRG-MC2X-SNP1-01), stacja dokująca 1-slot USB (CRD-MC2X-1SCU-01), bumper ochronny (SG-MC2X-RB1-01), holster (SG-MC2X-HLSTR-01). Wszystkie akcesoria MC2x są kompatybilne zarówno z MC2200, jak i MC2700.' },
-      { question: 'Gdzie serwisować Zebra MC2200 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC2200, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 153 zł netto/3 lata) dostępna jest naprawa priorytetowa.' },
+      { question: 'Gdzie serwisować Zebra MC2200 w Polsce?', answer: "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC2200, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych." },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra MC2200?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego MC2200. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania, StageNow — masowe wdrożenie urządzeń, Device Tracker — lokalizacja zgubionych terminali, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
-      { question: 'Jakie są alternatywy dla Zebra MC2200?', answer: 'Alternatywy z klawiaturą: Zebra MC2700 (identyczny + LTE/GPS, od 2 680 zł), Zebra MC3300x (47/29-key, skaner dalekiego zasięgu SE4770, od ~5 500 zł). Bez klawiatury: Zebra TC22 (6" dotykowy, Wi-Fi, od 2 417 zł). MC2200 wyróżnia się najniższą ceną wejścia wśród terminali Zebra z klawiaturą fizyczną.' },
+      { question: 'Jakie są alternatywy dla Zebra MC2200?', answer: "MC2200 wyróżnia się najniższą ceną wejścia wśród terminali Zebra z klawiaturą fizyczną." },
     ],
     applications: ['Magazyn — przyjęcia, wydania, inwentaryzacja', 'Retail — weryfikacja cen i stanów', 'Lekka produkcja — kontrola jakości', 'Apteki i przychodnie', 'Logistyka — kompletacja zamówień', 'Chłodnie i mroźnie (-20°C)'],
     compatibleAccessories: [],
@@ -33829,7 +33907,7 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
       ],
     },
     createdAt: '2024-06-01',
-    updatedAt: '2026-05-07',
+    updatedAt: "2026-10-07",
   },
   // ============================================
   // ZEBRA MC2700 — terminal z klawiaturą, LTE+GPS
@@ -33839,8 +33917,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
     slug: 'zebra-mc2700',
     name: 'Zebra MC2700',
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/mc2200-mc2700.html',
-    seoTitle: 'Zebra MC2700 — kolektor danych / terminal mobilny z klawiaturą LTE i GPS | od 2 680 zł',
-    seoDescription: 'Zebra MC2700 (MC27BJ) — kolektor danych LTE z klawiaturą do logistyki terenowej i kurierów. LTE Cat 6, GPS/GLONASS, skaner SE4100 2D, IP65, eSIM. 5 konfiguracji od 2 680 zł netto. MC27BJ-2A3S2RW.',
+    seoTitle: "Zebra MC2700 — kolektor danych / terminal mobilny z klawiaturą LTE i GPS",
+    seoDescription: "Zebra MC2700 (MC27BJ) — kolektor danych LTE z klawiaturą do logistyki terenowej i kurierów. MC27BJ-2A3S2RW.",
     shortDescription: 'Zebra MC2700 — wytrzymały terminal mobilny z klawiaturą fizyczną, LTE Cat 6, GPS i skanerem SE4100',
     description: `Dla kogo? Zebra MC2700 to wytrzymały terminal mobilny w formacie „brick" z klawiaturą fizyczną i łącznością komórkową LTE, zaprojektowany dla firm potrzebujących zbierania danych w terenie — kurierzy, serwisanci, logistyka portowa, kontrola dostaw i praca w polach bez dostępu do Wi-Fi.
 
@@ -33856,7 +33934,7 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
-    priceFrom: 2680.29,
+    priceFrom: 3585.55,
     images: [
       '/images/products/zebra-mc2700_1.png',
       '/images/products/zebra-mc2700_2.png',
@@ -33864,7 +33942,7 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       '/images/products/zebra-mc2700_4.png',
     ],
     tags: ['logistyka', 'outdoor', 'magazyn'] as ProductTag[],
-    availability: 'available' as const,
+    availability: "unavailable",
     isNew: false,
     isBestseller: false,
     specifications: [
@@ -33890,8 +33968,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'MC27BJ-2A3S2RW',
         name: 'MC2700, 2/16 GB, LTE',
-        priceFrom: 2680.29,
-        availability: 'available' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '2 GB / 16 GB',
         },
@@ -33899,8 +33977,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'MC27BK-2B3S3RW',
         name: 'MC2700, 3/32 GB, NFC, Kamera 13 MP, LTE',
-        priceFrom: 3150.57,
-        availability: 'available' as const,
+        priceFrom: 3585.55,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '3 GB / 32 GB',
           'NFC': 'Tak',
@@ -33910,8 +33988,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'MC27BK-4B3S3RW',
         name: 'MC2700, 3/32 GB, NFC, Kamera 13 MP, LTE, eSIM',
-        priceFrom: 3272.80,
-        availability: 'available' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '3 GB / 32 GB',
           'NFC': 'Tak',
@@ -33922,8 +34000,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'KT-MC27BJ-2A3S2RW',
         name: 'MC2700, 2/16 GB, LTE + stacja dokująca',
-        priceFrom: 2868.93,
-        availability: 'unavailable' as const,
+        priceFrom: undefined,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '2 GB / 16 GB',
           'Stacja dokująca': 'Tak',
@@ -33932,8 +34010,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       {
         partNumber: 'KT-MC27BK-2B3S3RW',
         name: 'MC2700, 3/32 GB, NFC, Kamera 13 MP, LTE + stacja dokująca',
-        priceFrom: 3339.29,
-        availability: 'unavailable' as const,
+        priceFrom: 3799.65,
+        availability: "unavailable",
         attributes: {
           'Pamięć': '3 GB / 32 GB',
           'NFC': 'Tak',
@@ -33943,8 +34021,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra MC2700?', answer: 'Ceny Zebra MC2700 zaczynają się od ok. 2 680 zł netto za konfigurację bazową (2 GB/16 GB, LTE, bez kamery i NFC). Wersja z 3 GB/32 GB, kamerą 13 MP i NFC: ok. 3 151 zł netto. Wariant z eSIM: ok. 3 273 zł netto. Ceny netto, dane z lutego 2026.' },
-      { question: 'Czym różni się Zebra MC2700 od MC2200?', answer: 'MC2700 i MC2200 to identyczne urządzenia pod względem konstrukcji, procesora, skanera i wytrzymałości. Jedyna różnica: MC2700 ma dodatkowy moduł LTE Cat 6, GPS/GLONASS/Galileo/BeiDou i slot Nano SIM (lub eSIM). MC2200 (tańszy, od 2 261 zł) wystarczy do pracy w budynku z Wi-Fi. MC2700 jest konieczny w terenie bez stałego Wi-Fi.' },
+      { question: 'Ile kosztuje Zebra MC2700?', answer: "Ceny netto, dane z lutego 2026." },
+      { question: 'Czym różni się Zebra MC2700 od MC2200?', answer: "MC2700 i MC2200 to identyczne urządzenia pod względem konstrukcji, procesora, skanera i wytrzymałości. Jedyna różnica: MC2700 ma dodatkowy moduł LTE Cat 6, GPS/GLONASS/Galileo/BeiDou i slot Nano SIM (lub eSIM). MC2700 jest konieczny w terenie bez stałego Wi-Fi." },
       { question: 'Czy Zebra MC2700 obsługuje eSIM?', answer: 'Tak, ale tylko wariant MC27BK-4B3S3RW. W pozostałych wariantach dostępny jest slot Nano SIM. eSIM eliminuje konieczność fizycznej wymiany karty SIM — operator może aktywować profil zdalnie. Przydatne w firmach z dużą flotą urządzeń.' },
       { question: 'Do czego służy klawiatura fizyczna w MC2700?', answer: 'Klawiatura 34-key z podświetleniem umożliwia szybkie wprowadzanie kodów numerycznych, ilości i partii bez dotykania ekranu. Kluczowa zaleta przy pracy w rękawicach (mroźnia, outdoor), przy wielokrotnym wpisywaniu danych liczbowych i w deszczu, gdy ekran dotykowy jest mniej precyzyjny.' },
       { question: 'Jaki zasięg GPS ma Zebra MC2700?', answer: 'MC2700 obsługuje GPS (USA), GLONASS (Rosja), Galileo (UE) i BeiDou (Chiny) z A-GPS. Dzięki obsłudze wielu konstelacji jednocześnie, lokalizacja jest precyzyjna (±2–5 m) nawet w trudnych warunkach: wąskie uliczki, gęsta zabudowa, las. Idealne do nawigacji kurierskiej i geofencingu.' },
@@ -33952,9 +34030,9 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
       { question: 'Jak długo działa bateria w MC2700 z LTE?', answer: 'Bateria standardowa 3 500 mAh zapewnia ok. 10–12 godzin pracy z aktywnym LTE i skanowaniem. Bateria rozszerzona 4 900 mAh wydłuża czas do ok. 15–17 godzin. Obie wymienne w Warm Swap. PowerPrecision monitoruje stan baterii i prognozuje pozostały czas pracy.' },
       { question: 'Jakie akcesoria pasują do MC2700?', answer: 'MC2700 dzieli akcesoria z MC2200 (platforma MC2x). Kluczowe: bateria 3 500 mAh (BTRY-MC2X-35MA-01), bateria 4 900 mAh (BTRY-MC2X-49MA-01), trigger handle (TRG-MC2X-SNP1-01), stacja 1-slot USB (CRD-MC2X-1SCU-01), stacja + slot na baterię (CRD-MC2X-2SUCHG-01), bumper (SG-MC2X-RB1-01), holster (SG-MC2X-HLSTR-01).' },
       { question: 'Jaki Android ma Zebra MC2700?', answer: 'MC2700 jest dostarczany z Androidem 11 i ma ścieżkę aktualizacji do Androida 14. Zebra LifeGuard™ zapewnia regularne łatki bezpieczeństwa. Dostępny w wersji GMS (Google Play) i AOSP. Opcjonalna licencja Mobility DNA Enterprise dodaje WorryFree WiFi, Device Tracker i PowerPrecision Console.' },
-      { question: 'Gdzie serwisować Zebra MC2700 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC2700, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych. Dla klientów z kontraktem Zebra OneCare Essential (od 1 153 zł netto/3 lata) dostępna jest naprawa priorytetowa.' },
+      { question: 'Gdzie serwisować Zebra MC2700 w Polsce?', answer: "Autoryzowany serwis Zebra w Polsce: serwis-zebry.pl — naprawy gwarancyjne i pogwarancyjne MC2700, wymiana ekranów, skanerów i baterii z oryginalnych części Zebra. Czas naprawy: 3–5 dni roboczych." },
       { question: 'Co to jest Mobility DNA i DataWedge w Zebra MC2700?', answer: 'Mobility DNA to pakiet oprogramowania Zebra dołączony w cenie każdego MC2700. Kluczowe narzędzia: DataWedge — uniwersalny moduł skanowania integrujący się z każdą aplikacją WMS/ERP bez kodowania, StageNow — masowe wdrożenie urządzeń, Device Tracker — lokalizacja zgubionych terminali, LifeGuard™ — aktualizacje bezpieczeństwa. Mobility DNA eliminuje potrzebę zakupu dodatkowych licencji MDM do podstawowego zarządzania flotą.' },
-      { question: 'Jakie są alternatywy dla Zebra MC2700?', answer: 'Alternatywy z klawiaturą i LTE: Zebra MC3300x (47/29-key, SE4770, od ~5 500 zł). Bez klawiatury z LTE: Zebra TC27 (6" dotykowy, 5G, od 2 643 zł), Zebra TC58 (6", 5G, IP68, od ~5 200 zł). Tańsza wersja Wi-Fi: Zebra MC2200 (od 2 261 zł). MC2700 to najtańszy terminal Zebra z klawiaturą i LTE.' },
+      { question: 'Jakie są alternatywy dla Zebra MC2700?', answer: "MC2700 to najtańszy terminal Zebra z klawiaturą i LTE." },
     ],
     applications: ['Logistyka terenowa — dostawy, odbiory', 'Kurierzy i kierowcy — skanowanie + GPS', 'Porty i terminale kontenerowe', 'Serwis i inspekcje w terenie', 'Kontrola dostaw i przyjęć towaru', 'Gospodarki magazynowe outdoor'],
     compatibleAccessories: [],
