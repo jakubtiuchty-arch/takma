@@ -11,7 +11,7 @@ export function isZebraTerminalProduct(product: Pick<Product, 'manufacturerId' |
 }
 
 export function isZebraTerminalSlug(slug: string) {
-  return /^zebra-(?:tc|mc|hc|em)\d/.test(slug)
+  return /^zebra-(?:tc|mc|hc|em)\d+[a-z]*$/.test(slug)
 }
 
 /** Koszt realizacji zamówienia: preferuj dostawcę, który ma daną konfigurację. */

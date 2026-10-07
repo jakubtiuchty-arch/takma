@@ -344,7 +344,8 @@ export async function lookupUnifiedStock(
       }
 
       return stockResponse(response, {
-        headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
+        headers: { 'Cache-Control': partNumbers.some(pn => zebraTerminalPartNumbers.has(pn))
+          ? 'private, no-store' : 'public, s-maxage=300, stale-while-revalidate=600' },
       })
     }
 
@@ -605,9 +606,12 @@ export async function lookupUnifiedStock(
             availability: r.availability,
             deliveryText: r.deliveryText,
           },
-        }).catch(err => console.error(`[API /stock] Cache write error for ${r.partNumber}:`, err))
+        }).catch(err => {
+          console.error(`[API /stock] Cache write error for ${r.partNumber}:`, err)
+          if (zebraTerminalPartNumbers.has(r.partNumber)) throw err
+        })
       )
-    ).catch(() => {})
+    )
 
     // Cron i terminale muszą zakończyć trwały zapis ceny przed odpowiedzią.
     if (partNumbers.some(pn => zebraTerminalPartNumbers.has(pn))) await cacheWrite
@@ -702,7 +706,9 @@ export async function lookupUnifiedStock(
 
     // Nie cachuj pustych odpowiedzi — mogą wynikać z timeoutu dystrybutora
     const anyFound = finalResults.some(r => r.found)
-    const cacheHeader = anyFound
+    const cacheHeader = partNumbers.some(pn => zebraTerminalPartNumbers.has(pn))
+      ? 'private, no-store'
+      : anyFound
       ? 'public, s-maxage=300, stale-while-revalidate=600'
       : 'public, s-maxage=30, stale-while-revalidate=30'
 

@@ -19,15 +19,19 @@ Module._load = function (id, parent, main) {
 }
 global.fetch = async () => ({ ok: true, json: async () => ({ rates: [{ mid: 4 }] }) })
 const { lookupUnifiedStock } = require('../src/lib/unified-stock.ts')
-const { selectTerminalPurchasePrice } = require('../src/lib/zebra-terminal-pricing.ts')
+const { selectTerminalPurchasePrice, isZebraTerminalSlug } = require('../src/lib/zebra-terminal-pricing.ts')
 const { stockCacheMaxAge } = require('../src/lib/zebra-terminal-catalog.ts')
 async function main() {
+  assert.equal(isZebraTerminalSlug('zebra-tc53e'), true)
+  assert.equal(isZebraTerminalSlug('zebra-tc201-btry-tc2l'), false)
   assert.equal(stockCacheMaxAge(pn, 86400000), 3600000)
   assert.equal(stockCacheMaxAge(pn, 0), 0)
   assert.equal(stockCacheMaxAge('ZD4A042-30EM00EZ', 86400000), 86400000)
   cached = [{ partNumber: pn, found: true, price: 440, ingramPrice: 400, stockPL: 10, stockDE: 0, inDelivery: 0, totalStock: 10, availability: 'available', lastSync: new Date(Date.now() - 7200000) }]
   jtCached = [{ ...jt, unitPrice: 100, lastSync: new Date(Date.now() - 7200000) }]
-  let row = (await lookupUnifiedStock([pn])).body.results[0]
+  const response = await lookupUnifiedStock([pn])
+  assert.equal(response.headers['Cache-Control'], 'private, no-store', 'CDN must not prolong a terminal price snapshot')
+  let row = response.body.results[0]
   assert.equal(row.price, 990, 'old supplier quote must not lower the refreshed selling price')
   assert.equal(row.ingramPrice, 900)
   assert.equal(supplierCalls, 1, 'stale Jarltech price must be checked live')
@@ -42,6 +46,8 @@ async function main() {
   row = (await lookupUnifiedStock([pn])).body.results[0]
   assert.equal(row.found, false)
   assert.equal(row.price, undefined, 'no supplier price must never become a catalog-price offer')
+  prisma.stockCache.upsert = async () => { throw new Error('fixture DB write failure') }
+  assert.equal((await lookupUnifiedStock([pn], false, { maxWiekCacheMs: 0 })).status, 500, 'failed durable writes must not be reported as a successful cron refresh')
   console.log('PASS: terminal freshness, stale supplier rejection, available purchase cost, 10% markup, durable write, missing quote')
 }
 main().catch(error => { console.error(error); process.exitCode = 1 })
