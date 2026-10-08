@@ -411,7 +411,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     .filter((p) => !isLabel || p!.categoryId === 'drukarki-etykiet')
   /** Powiązania drukarek kolorowych i etykiet idą pod FAQ i pliki. */
   const podobneNaDole = isColorPrinter || isLabel
-  const relatedProductsTitle = isLabel ? 'Pasuje do drukarek'
+  const relatedProductsTitle = isLabel ? 'Drukarki zgodne z tymi etykietami'
     : product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
