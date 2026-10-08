@@ -27932,7 +27932,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "id": "zebra-tc201",
   "slug": "zebra-tc201",
   "name": "Zebra TC201",
-  "shortDescription": "Zebra TC201 — terminal mobilny 4. generacji TC2x: Qualcomm Dragonwing Q-6690, Wi-Fi 7, Bluetooth 6, 5G, skaner SR500, IP68. Następca TC21/TC22/TC26/TC27",
+  "shortDescription": "Zebra TC201 to terminal mobilny z Wi-Fi 7 i Bluetooth 6. Warianty 5G mają łączność komórkową. Do wyboru jest skaner SR500, AC670 lub wersja bez skanera.",
   "description": "Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu.\n\nSercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka\" jak w poprzedniej generacji (TC22 vs TC27).\n\nEkran 6\" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie, a szkłem Corning Gorilla Glass chronione są dwa najbardziej narażone elementy: wyświetlacz i okno skanera. Panel dotykowy działa w rękawiczkach i odrzuca krople wody. Skaner SR500 z żółtym celownikiem LED obsługuje kody 1D/2D, a AC670 Advanced Range czyta kody z 30 m i robi zdjęcia w kolorze — operator nie schyla się i nie wchodzi na drabinę, żeby zeskanować etykietę. Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem), 750 cykli tumble i pracę od -20°C do +50°C — to najodporniejszy terminal w historii serii TC2.\n\nTC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria oraz Android Strongbox z układem Secure Element (wybrane warianty) — wymagane w administracji publicznej, finansach i ochronie zdrowia. NFC z certyfikatami Apple VAS i Google Smart Tap obsługuje płatności zbliżeniowe i karty lojalnościowe, a audio z redukcją szumów opartą na AI zapewnia czysty głos w rozmowach i aplikacjach głosowych nawet w hałaśliwej hali. Zintegrowany czytnik UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m, tryb „licznika Geigera\" do szukania konkretnej sztuki) pojawi się w wariantach EMEA planowo w IV kwartale 2026.\n\nW cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device Central), a Workcloud Sync potrafi zamienić TC201 w radiotelefon push-to-talk i słuchawkę centrali PBX — jedno urządzenie zastępuje trzy. Migracja z floty TC22/TC27 nie wymaga wymiany infrastruktury: baterie wskazane dla TC201 są kompatybilne, a starsze stacje ShareCradle wymagają odpowiednich gniazd wymiennych z wkładką TC201. Pełne omówienie nowości: [Zebra TC201 — przewodnik](/poradnik/zebra-tc201).",
   "categoryId": "terminale-mobilne",
   "manufacturerId": "zebra",
@@ -27957,14 +27957,14 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "Zebra TC201 — widok z tyłu pod kątem z lewej, przyciski boczne",
     "Zebra TC201 — widok z tyłu pod kątem z prawej, zielony przycisk skanowania"
   ],
-  "seoTitle": "Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7, od 2 658 zł",
+  "seoTitle": "Zebra TC201 — terminal mobilny 4. gen | 5G, Wi-Fi 7,",
   "seoDescription": "Zebra TC201 — terminal mobilny (kolektor danych) 4. generacji TC2x: Dragonwing Q-6690, 5G + Wi-Fi 7, Bluetooth 6, skanery SR500/AC670 do 30 m, NFC z płatnościami, IP68, 245 g, FIPS 140-3. Następca TC22/TC27. Kontrakty OneCare 3 i 5 lat.",
-  "availability": "on-order",
+  "availability": "available",
   "isNew": true,
   "isBestseller": false,
-  "priceFrom": 2657.59,
+  "priceFrom": 3271.97,
   "variantAttributeTooltips": {
-    "Skaner": "SR500 — standardowy 1D/2D.\n\nAC670 — Advanced Range: odczyt do 30 m + tryb zdjęć.",
+    "Skaner": "SR500 — standardowy 1D/2D.\n\nAC670 — Advanced Range: odczyt do 30 m + tryb zdjęć.\n\nBrak — wariant bez skanera kodów.",
     "Bateria": "Standardowa 3 800 mAh (14,63 Wh).\n\nRozszerzona 5 200 mAh (20,02 Wh).",
     "Opcje": "Secure Element — układ bezpieczeństwa (FIPS 140-3, sektor regulowany).\n\nHot swap — wymiana baterii bez wyłączania terminala."
   },
@@ -27979,7 +27979,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 2657.59,
+      "priceFrom": 3055.51,
       "availability": "on-order"
     },
     {
@@ -27992,7 +27992,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Rozszerzona",
         "Opcje": "—"
       },
-      "priceFrom": 2788.04,
+      "priceFrom": 3205.49,
       "availability": "on-order"
     },
     {
@@ -28005,7 +28005,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Secure Element"
       },
-      "priceFrom": 3048.99,
+      "priceFrom": 3505.48,
       "availability": "on-order"
     },
     {
@@ -28018,7 +28018,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Hot swap + Secure Element"
       },
-      "priceFrom": 3253.98,
+      "priceFrom": 3741.17,
       "availability": "on-order"
     },
     {
@@ -28031,7 +28031,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 3309.89,
+      "priceFrom": 3805.48,
       "availability": "on-order"
     },
     {
@@ -28044,11 +28044,12 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "Secure Element"
       },
-      "priceFrom": 3813.08,
-      "availability": "on-order"
+      "priceFrom": 4383.98,
+      "availability": "unavailable"
     },
     {
-      "partNumber": "TC201G-3S3P6BA00-TR",
+      "priceFrom": 3400.51,
+      "partNumber": "TC201G-3S3P6BA00-A6",
       "name": "TC201 5G + Wi-Fi 7, SR500, 6/64 GB",
       "attributes": {
         "Łączność": "5G + Wi-Fi 7",
@@ -28057,8 +28058,85 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
         "Bateria": "Standardowa",
         "Opcje": "—"
       },
-      "priceFrom": 2657.59,
       "availability": "on-order"
+    },
+    {
+      "priceFrom": 3675.84,
+      "partNumber": "TC201G-3S3P6BE00-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 6/64 GB, bateria rozszerzona",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Rozszerzona",
+        "Opcje": "—"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 3979.06,
+      "partNumber": "TC201G-383P4BA01-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4086.16,
+      "partNumber": "TC201G-383P4BA11-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, hot swap + Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "Hot swap + Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4129.04,
+      "partNumber": "TC201G-383P4BE01-A6",
+      "name": "TC201 5G + Wi-Fi 7, SR500, 8/128 GB, bateria rozszerzona, Secure Element",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "SR500",
+        "Pamięć": "8/128 GB",
+        "Bateria": "Rozszerzona",
+        "Opcje": "Secure Element"
+      },
+      "availability": "available"
+    },
+    {
+      "priceFrom": 4150.48,
+      "partNumber": "TC201G-3S3S6BA00-A6",
+      "name": "TC201 5G + Wi-Fi 7, AC670 (30 m), 6/64 GB",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "AC670 (30 m)",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "—"
+      },
+      "availability": "on-order"
+    },
+    {
+      "priceFrom": 3271.97,
+      "partNumber": "TC201G-3N306BA00-A6",
+      "name": "TC201 5G + Wi-Fi 7, bez skanera, 6/64 GB",
+      "attributes": {
+        "Łączność": "5G + Wi-Fi 7",
+        "Skaner": "Brak",
+        "Pamięć": "6/64 GB",
+        "Bateria": "Standardowa",
+        "Opcje": "—"
+      },
+      "availability": "available"
     }
   ],
   "specifications": [
@@ -28228,7 +28306,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czy bateria w TC201 jest wymienna? Co z hot swap?",
-      "answer": "Tak, bateria jest wymienna: standardowa 3 800 mAh (14,63 Wh) lub rozszerzona 5 200 mAh (20,02 Wh). Wymiana bez wyłączania terminala (hot swap) dostępna jest w wybranych wariantach — w naszej ofercie to TC2010-083P4BA11-A6."
+      "answer": "Tak. Do wyboru jest bateria standardowa 3 800 mAh lub rozszerzona 5 200 mAh. Warianty TC2010-083P4BA11-A6 i TC201G-383P4BA11-A6 obsługują wymianę baterii bez wyłączania terminala (hot swap)."
     },
     {
       "question": "Czym różnią się warianty 6/64 GB i 8/128 GB?",
@@ -28248,7 +28326,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Ile kosztuje Zebra TC201?",
-      "answer": "Warianty Wi-Fi 7 zaczynają się od ok. 2 658 zł netto (SR500, 6/64 GB), wersja 5G od ok. 2 958 zł, a topowa konfiguracja z AC670 i 8/128 GB to ok. 3 813 zł. Ceny zmieniają się z kursem i dostępnością — aktualne kwoty pokazujemy na żywo przy każdym wariancie."
+      "answer": "Ceny pozostałych wariantów podajemy przy ich numerach PN. Jeśli cena nie jest widoczna, poproś o wycenę."
     },
     {
       "question": "Czy warto wymieniać TC22 na TC201?",
@@ -28391,7 +28469,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
           "Łączność": "Wi-Fi 7 + BT 6.0; 5G w wariancie WWAN",
           "Procesor": "Dragonwing Q-6690, 2,0 GHz (do +150%)",
           "Ekran": "6\" FHD+ (2160×1080), laminowany",
-          "Skaner": "SR500 lub AC670 (do 30 m)",
+          "Skaner": "SR500, AC670 (do 30 m) lub brak skanera",
           "Odporność": "IP68/IP65, upadki 1,53 m (2,13 m z bootem)",
           "Bateria": "3 800 / 5 200 mAh, hot swap w wybranych SKU",
           "RAM / Flash": "6/64 lub 8/128 GB",
@@ -28440,7 +28518,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     "zebra-tc501"
   ],
   "createdAt": "2026-07-24",
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-10-07",
   "sameAs": "https://www.zebra.com/us/en/products/mobile-computers/handheld/tc201.html"
 },
 {

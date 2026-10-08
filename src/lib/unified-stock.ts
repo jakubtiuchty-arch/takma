@@ -1,3 +1,5 @@
+import { selectTerminalPurchasePrice } from '@/lib/zebra-terminal-pricing'
+import { isTc201PartNumber, tc201CacheMaxAge } from '@/lib/tc201-stock-policy'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
@@ -119,19 +121,20 @@ export async function lookupUnifiedStock(
       prisma.jarltechStockCache.findMany({ where: { partNumber: { in: partNumbers }, lastSync: { gte: jtFreshSince } } }),
     ])
 
-    const jarltechCacheMap = new Map(jarltechRows.map(j => [j.partNumber, j]))
+    const jarltechCacheMap = new Map(jarltechRows.filter(j => cacheCheckTime.getTime() - j.lastSync.getTime() < tc201CacheMaxAge(j.partNumber, JT_CACHE_MAX_AGE_MS)).map(j => [j.partNumber, j]))
     const overriddenPNs: string[] = []
 
     const freshCache = new Map<string, typeof cachedRows[0]>()
     for (const row of cachedRows) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
-      if (age >= CACHE_MAX_AGE_MS || (!row.found && age >= 5 * 60 * 1000)) continue
+      if (age >= tc201CacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000)) continue
 
       // Ponownie porównaj rażąco zawyżoną cenę z ceną katalogową i źródłami.
       const catalogPrice = getCatalogNetPrice(row.partNumber)
       if (catalogPrice && row.price && row.price > catalogPrice * 3) continue
 
       const j = jarltechCacheMap.get(row.partNumber)
+      if (isTc201PartNumber(row.partNumber) && (!j || j.lastSync > row.lastSync)) continue
       // Potwierdzony wpis Jarltech musi zastąpić wcześniejsze nieznalezienie,
       // również przy zerowym zapasie i oczekiwanej dostawie.
       if (j?.found && !row.found) continue
@@ -336,7 +339,14 @@ export async function lookupUnifiedStock(
         const cached = await prisma.jarltechStockCache.findMany({
           where: { partNumber: { in: uncachedPNs }, lastSync: { gte: jtFreshSince } },
         })
-        return cached.map(c => ({
+        const fresh = cached.filter(c => cacheCheckTime.getTime() - c.lastSync.getTime() < tc201CacheMaxAge(c.partNumber, JT_CACHE_MAX_AGE_MS))
+        const livePNs = uncachedPNs.filter(pn => isTc201PartNumber(pn) && !fresh.some(c => c.partNumber === pn))
+        const live = livePNs.length ? await jarltechLive(livePNs) : []
+        await Promise.all(live.filter(item => item.found).map(item => {
+          const data = { found: item.found, unitPrice: item.unitPrice ?? null, currency: item.currency ?? "EUR", inventory: item.inventory, incomingQty: item.incomingQty, incomingDate: item.incomingDate ?? null, totalStock: item.totalStock, jarltechId: item.jarltechId ?? null, availability: item.availability, deliveryText: item.deliveryText, lastSync: new Date(item.lastSync) }
+          return prisma.jarltechStockCache.upsert({ where: { partNumber: item.partNumber }, create: { partNumber: item.partNumber, ...data }, update: data })
+        }))
+        return [...live, ...fresh.map(c => ({
           partNumber: c.partNumber,
           found: c.found,
           unitPrice: c.unitPrice ?? undefined,
@@ -349,7 +359,7 @@ export async function lookupUnifiedStock(
           availability: c.availability as 'available' | 'on-order' | 'unavailable',
           deliveryText: c.deliveryText ?? '',
           lastSync: c.lastSync.toISOString(),
-        }))
+        }))]
       } catch (err) {
         console.error('[API /stock] Jarltech cache read error:', err)
         return []
@@ -470,11 +480,10 @@ export async function lookupUnifiedStock(
       // Odrzuca źródła rażąco poniżej Ingrama (błąd pakietowy) ORAZ samego Ingrama,
       // gdy to on podaje cenę odstającą w górę (ET401EA-3V101F2P-A6: 164 922 zł
       // wobec 547 EUR w Jarltechu).
-      const selection = selectPurchasePrice({
-        ingram: ingramPLN,
-        bluestar: bluestarPLN,
-        jarltech: jarltechPLN,
-      }, getCatalogNetPrice(pn))
+      const sourcePrices = { ingram: ingramPLN, bluestar: bluestarPLN, jarltech: jarltechPLN }
+      const selection = isTc201PartNumber(pn)
+        ? selectTerminalPurchasePrice(sourcePrices, { ingram: (ing?.stockPL ?? 0) + (ing?.stockDE ?? 0), bluestar: bs?.inventory ?? 0, jarltech: jl?.inventory ?? 0 }, getCatalogNetPrice(pn))
+        : selectPurchasePrice(sourcePrices, getCatalogNetPrice(pn))
       const catalogPrice = getCatalogNetPrice(pn)
       // Jedno błędne źródło nie może zastąpić zweryfikowanej ceny katalogowej.
       const bestRawPricePLN = catalogPrice && selection.best && selection.best > catalogPrice * 3
@@ -536,8 +545,8 @@ export async function lookupUnifiedStock(
     results.forEach(applyStockOverrides)
 
     // Write-through: save live results to StockCache for future requests
-    // Fire-and-forget — don't block the response
-    Promise.all(
+    // TC201 waits for persistence so server renders and subsequent requests share this snapshot.
+    const writeThrough = Promise.all(
       results.map(r =>
         prisma.stockCache.upsert({
           where: { partNumber: r.partNumber },
@@ -569,6 +578,8 @@ export async function lookupUnifiedStock(
         }).catch(err => console.error(`[API /stock] Cache write error for ${r.partNumber}:`, err))
       )
     ).catch(() => {})
+
+    if (uncachedPNs.some(isTc201PartNumber)) await writeThrough
 
     // Merge cached results with live results for partially-cached requests
     const finalResults: StockInfo[] = partNumbers.map(pn => {

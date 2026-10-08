@@ -1,3 +1,4 @@
+import { isTc201PartNumber } from '@/lib/tc201-stock-policy'
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { lookupStock as ingramLookup } from '@/lib/ingram'
@@ -73,7 +74,7 @@ function collectAllPartNumbers(): string[] {
     }
   }
 
-  return Array.from(pnSet)
+  return Array.from(pnSet).filter(pn => !isTc201PartNumber(pn))
 }
 
 export async function GET(request: NextRequest) {

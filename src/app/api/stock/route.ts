@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { lookupUnifiedStock } from '@/lib/unified-stock'
 
+export const maxDuration = 60
+
 export async function GET(request: NextRequest) {
   const showDebug = request.nextUrl.searchParams.get('debug') === '1'
   const pnParam = request.nextUrl.searchParams.get('pn')
