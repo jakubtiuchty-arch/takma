@@ -8216,7 +8216,7 @@ export const guides: Guide[] = [
       <td>Koszt drukarki Zebra (netto)</td>
       <td>od 2 500 zł</td>
       <td>od 3 500 zł</td>
-      <td>od 7 899 zł</td>
+      <td><a href="/produkt/zebra-zt610">Sprawdź cenę ZT610 Micro Label</a></td>
     </tr>
   </tbody>
 </table>
@@ -8305,7 +8305,7 @@ export const guides: Guide[] = [
 
 <p>Wersja Rewind (T2E) jest przeznaczona do pracy z aplikatorami automatycznymi — odklejone etykiety trafiają bezpośrednio na głowicę aplikatora, a podkład jest nawijany wewnątrz drukarki. Wersja Tear jest idealna do ręcznego odrywania lub do zastosowań, gdzie etykieta pozostaje na podkładzie i jest naklejana ręcznie.</p>
 
-<p>Aktualną cenę i dostępność obu konfiguracji znajdziesz na <a href="/produkt/zebra-zt610">karcie produktu Zebra ZT610</a> — warianty ZT61A46 są oznaczone jako Micro Label z ceną promocyjną. Promocja obowiązuje do 30.06.2026.</p>`
+<p>Aktualną cenę i dostępność obu konfiguracji znajdziesz na <a href="/produkt/zebra-zt610">karcie produktu Zebra ZT610</a> — wybierz wariant ZT61A46 Micro Label.</p>`
     },
     {
       id: 'materialy-eksploatacyjne',
@@ -8435,8 +8435,8 @@ export const guides: Guide[] = [
     <tr>
       <td>Cena netto</td>
       <td>od 11 747 zł</td>
-      <td>od 17 761 zł</td>
-      <td><strong>od 7 899 zł (promocja)</strong></td>
+      <td><a href="/produkt/zebra-zt610">Sprawdź aktualną cenę</a></td>
+      <td><a href="/produkt/zebra-zt610">Sprawdź aktualną cenę</a></td>
     </tr>
   </tbody>
 </table>
@@ -8577,7 +8577,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Ile kosztuje drukarka do mikroetykiet 600 dpi?',
-      answer: 'Ceny drukarek Zebra 600 dpi (netto): <a href="/produkt/zebra-zt411">Zebra ZT411 600 dpi</a> od 11 747 zł, <a href="/produkt/zebra-zt610">Zebra ZT610 Micro Label</a> w promocji od 7 899 zł (cena regularna od 17 578 zł). Promocja na ZT610 Micro Label obowiązuje do 30.06.2026 — sprawdź aktualną cenę na karcie produktu. Koszt głowicy 600 dpi (wymiana co 50-150 km druku) to ok. 2 400 zł.'
+      answer: 'Aktualne ceny netto drukarek 600 dpi znajdziesz na kartach <a href="/produkt/zebra-zt411">Zebra ZT411</a> i <a href="/produkt/zebra-zt610">Zebra ZT610 Micro Label</a>. Wybierz rozdzielczość i wyposażenie w tabeli wariantów.'
     },
     {
       question: 'Czy ZT610 Micro Label obsługuje RFID?',
