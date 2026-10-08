@@ -402,13 +402,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     ? products.filter((p) => p.categoryId === 'drukarki-kart' && (p.relatedAccessories || []).includes(product.id))
     : []
 
-  // Podobne produkty (relatedProducts) — dynamiczny tytuł per kategoria
+  const isLabel = product.categoryId === 'materialy-eksploatacyjne'
+    && !!product.subcategoryIds?.some((id) => id.startsWith('etykiety-'))
+  // Na kartach etykiet powiązane produkty wskazują kompatybilne drukarki.
   const relatedProductsList = (product.relatedProducts || [])
     .map((id) => products.find((p) => p.id === id))
     .filter(Boolean)
-  /** Na kartach kolorowych drukarek „Podobne drukarki” idą na sam dół, pod FAQ i pliki. */
-  const podobneNaDole = isColorPrinter
-  const relatedProductsTitle = product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
+    .filter((p) => !isLabel || p!.categoryId === 'drukarki-etykiet')
+  /** Powiązania drukarek kolorowych i etykiet idą pod FAQ i pliki. */
+  const podobneNaDole = isColorPrinter || isLabel
+  const relatedProductsTitle = isLabel ? 'Pasuje do drukarek'
+    : product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
     : 'Podobne produkty'
@@ -805,6 +809,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     <RelatedProducts
       id="podobne-produkty"
       title={relatedProductsTitle}
+      description={isLabel ? product.specifications.find((s) => s.name === 'Kompatybilność')?.value : undefined}
       products={relatedProductsList as typeof products}
       initialLimit={4}
     />

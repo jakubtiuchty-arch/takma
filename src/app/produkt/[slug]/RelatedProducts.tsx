@@ -8,6 +8,7 @@ import { ArrowRightIcon } from '@/components/ui/Icons'
 
 interface RelatedProductsProps {
   title: string
+  description?: string
   products: Product[]
   initialLimit?: number
   labels?: boolean
@@ -131,7 +132,7 @@ function DimensionFilters({
   )
 }
 
-export default function RelatedProducts({ title, products, initialLimit, labels, id, showDualButtons, categoryHref }: RelatedProductsProps) {
+export default function RelatedProducts({ title, description, products, initialLimit, labels, id, showDualButtons, categoryHref }: RelatedProductsProps) {
   // Dla etykiet termicznych pokazujemy od razu 2 wiersze (8 kafelków serii) gdy produktów >4
   const defaultRows = labels && products.length > ROW_SIZE ? 2 : 1
   const [visibleRows, setVisibleRows] = useState(defaultRows)
@@ -248,7 +249,7 @@ export default function RelatedProducts({ title, products, initialLimit, labels,
           <span className="text-sm text-gray-500">{products.length} produktów</span>
         ) : null}
       </div>
-      <div className="mb-4" />
+      {description ? <p className="text-sm text-gray-600 mb-4">{description}</p> : <div className="mb-4" />}
       <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} />
       <div className="mt-5 text-center flex justify-center gap-3">
         {hasMore && (
