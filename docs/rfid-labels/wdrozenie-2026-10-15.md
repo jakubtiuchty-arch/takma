@@ -28,6 +28,18 @@ Lokalna sieć zwracała niewłaściwy certyfikat T-Mobile dla API BlueStar. Nie 
 
 ## Źródła per karta
 
+### Wynik końcowej kontroli wdrożenia
+
+- Wersja aplikacji: `22dca398`; wdrożenie Vercel `dpl_6iQ2U39Nxz2dzbD4a24GoosLUSUJ`, projekt `takma`. Uwzględniono wcześniejszy commit panelu magazynu `f97ddb73`.
+- Wersję produkcyjną najpierw zbudowano bez podpinania domen. Kontrolę chronionej wersji wykonano przez autoryzację Vercel CLI. Ochrona wdrożenia pozostała włączona.
+- Sprawdzono 21 kart / 25 PN: HTTP 200, ceny brutto i dostępność w ProductGroup zgodne z API, canonical, BreadcrumbList, cena za rolkę i obecność w sitemap. Wszystkie 25 PN miały zapas podczas kontroli.
+- ZBR2200: pole galerii 576,5 × 576,5 px, identyczne jak w obu kartach wzorcowych; brak przewijania strony w bok. Metal Skin Delta: ten sam wymiar pola, poprawna skala zdjęcia i warunek T5 On-Metal.
+- Koszyk: dodanie wiersza ZIPRT3019418 zachowało PN oraz cenę 1323,95 zł netto, mimo innego wariantu w głównym boksie. Po teście wyczyszczono lokalny koszyk.
+- Zgodne drukarki: 4 karty początkowo, 5 po „Pokaż pozostałe”, ponownie 4 po „Zwiń”.
+- Telefon 390 × 844: brak przewijania strony w bok; zmiana wariantu na ZIPRM3017413 ustawiła cenę 114,63 zł netto. Po kontroli przywrócono domyślny rozmiar widoku.
+- Po promocji sprawdzono ponownie publiczny sklep: 21 kart i 25 PN, filtry ograniczają listę do 2 kart DT i przywracają 21 po wyłączeniu filtra.
+- Publiczny adres: https://www.takma.com.pl/etykiety-rfid-zebra . Kwoty i zapasy są migawką testową; sklep pobiera bieżące dane dystrybucji.
+
 ### zebra-etykiety-rfid-bt713-pp-przemyslowe
 
 PN: ZIPRT3016014
