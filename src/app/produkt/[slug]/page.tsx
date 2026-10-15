@@ -1729,8 +1729,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {onMetalLabelIds.length > 0 && (
               <PrinterMaterialVariants
                 id="etykiety-rfid-on-metal"
-                title="Etykiety RFID Silverline — tylko T5 On-Metal"
-                description="Te etykiety wymagają wersji ZT411 RFID On-Metal: ZT41142-T5E00G0Z lub ZT41143-T5E00G0Z. Nie pasują do standardowej wersji T0. Do nadruku potrzebujesz zgodnej taśmy barwiącej. Przed drukiem wykonaj kalibrację materiału i RFID."
+                title="Etykiety RFID na metal — do wersji ZT411 On-Metal"
+                description="Etykiety Silverline wymagają specjalnej wersji drukarki Zebra ZT411 RFID On-Metal, przystosowanej do grubszych etykiet na metal. Wybierz numer katalogowy ZT41142-T5E00G0Z (203 dpi) lub ZT41143-T5E00G0Z (300 dpi). Standardowa Zebra ZT411 RFID nie obsługuje tych etykiet. Do nadruku potrzebujesz zgodnej taśmy barwiącej. Przed drukiem wykonaj kalibrację materiału i RFID."
                 productIds={onMetalLabelIds}
                 kind="rfid"
                 printWidthMm={printWidthMm}
