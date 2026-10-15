@@ -8,7 +8,7 @@ export const zt231RfidAdditionalAccessories: Product[] = [
     name: `Głowica ${dpi} dpi Zebra ZT231 RFID — ${pn}`,
     shortDescription: `Głowica ${dpi} dpi do drukarki Zebra ZT231R RFID. Dobierz część do rozdzielczości i wersji urządzenia.`,
     description: `Głowica Zebra ${pn} służy do druku w rozdzielczości ${dpi} dpi w drukarce ZT231R RFID. Jest częścią z indywidualnym numerem seryjnym. Nie dobieraj jej wyłącznie po nazwie ZT231. Przed wymianą sprawdź rozdzielczość, wersję RFID i numer seryjny drukarki. Sama wymiana głowicy nie służy do zmiany rozdzielczości urządzenia.`,
-    images: [`/images/products/${pn}.jpg`],
+    images: [pn === 'P1123335-156' ? '/images/products/P1123335-156-framed.png' : `/images/products/${pn}.jpg`],
     specifications: [{ name: 'Part Number', value: pn }, { name: 'Kompatybilność', value: `Zebra ZT231R RFID, ${dpi} dpi` }, { name: 'Rozdzielczość', value: `${dpi} dpi` }],
   })),
   {
