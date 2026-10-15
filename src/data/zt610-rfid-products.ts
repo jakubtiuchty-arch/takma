@@ -111,14 +111,12 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i czę
     { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
   ],
   variants: [
-    { partNumber: 'ZT61042-T0E01C0Z', name: '203 dpi — RFID', attributes: { 'Rozdzielczość': '203 dpi', 'Obsługa etykiet': 'Odrywanie', 'Łączność': 'Ethernet, USB, RS-232, Bluetooth 4.0' }, availability: 'unavailable' },
-    { partNumber: 'ZT61043-T0E01C0Z', name: '300 dpi — RFID', attributes: { 'Rozdzielczość': '300 dpi', 'Obsługa etykiet': 'Odrywanie', 'Łączność': 'Ethernet, USB, RS-232, Bluetooth 4.0' }, availability: 'unavailable' },
-    { partNumber: 'ZT61046-T0E01C0Z', name: '600 dpi — RFID', attributes: { 'Rozdzielczość': '600 dpi', 'Obsługa etykiet': 'Odrywanie', 'Łączność': 'Ethernet, USB, RS-232, Bluetooth 4.0' }, availability: 'unavailable' },
+    { partNumber: 'ZT61042-T0E01C0Z', name: '203 dpi — RFID', attributes: { 'Rozdzielczość': '203 dpi' }, availability: 'unavailable' },
+    { partNumber: 'ZT61043-T0E01C0Z', name: '300 dpi — RFID', attributes: { 'Rozdzielczość': '300 dpi' }, availability: 'unavailable' },
+    { partNumber: 'ZT61046-T0E01C0Z', name: '600 dpi — RFID', attributes: { 'Rozdzielczość': '600 dpi' }, availability: 'unavailable' },
   ],
   variantAttributeTooltips: {
     'Rozdzielczość': 'Dotyczy jakości nadruku. Nie określa zasięgu RFID. Wersja RFID 600 dpi nie jest wersją Micro Label.',
-    'Obsługa etykiet': 'Każdy pokazany PN ma ręczne odrywanie etykiet. Obcinacz i wewnętrzny nawijak są akcesoriami sprzedawanymi osobno.',
-    'Łączność': 'Wszystkie pokazane PN mają również USB Host. Wi-Fi wymaga osobnego modułu.',
   },
   applications: ['Druk i kodowanie etykiet RFID na towary oraz opakowania', 'Oznaczanie części i pojemników na produkcji', 'Przygotowanie etykiet RFID do śledzenia dostaw', 'Oznaczanie wyposażenia zgodnymi etykietami UHF'],
   compatibleAccessories: [],
