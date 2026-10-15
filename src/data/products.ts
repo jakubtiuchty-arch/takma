@@ -1,3 +1,4 @@
+import { zt421RfidAdditionalAccessories } from './zt421-rfid-products'
 import { zt231RfidAdditionalAccessories } from './zt231-rfid-accessories'
 import { rfidPrinterCategory } from './rfid-printer-category'
 import { rfidPrinterProducts } from './rfid-printer-products'
@@ -330,11 +331,11 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
     productIds: [
-      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 36,
+    productCount: 37,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -348,12 +349,12 @@ export const subcategories: Subcategory[] = [
     icon: 'printer',
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
-      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510',
+      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 47,
+    productCount: 48,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -503,8 +504,9 @@ export const subcategories: Subcategory[] = [
 
       ...zt411RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
+      ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 214,
+    productCount: 215,
   },
   {
     id: 'dyspensery-etykiet',
@@ -8040,26 +8042,26 @@ Porównaj funkcje i koszty urządzeń w poradniku [ZT231 vs ZT411](/poradnik/zeb
     id: 'zebra-zt421',
     slug: 'zebra-zt421',
     name: 'Zebra ZT421',
-    shortDescription: 'Zebra ZT421 — przemysłowa drukarka etykiet 6" z ekranem dotykowym 4,3", następca ZT420. 203/300 dpi, do 305 mm/s, RFID opcja, Link-OS',
-    seoTitle: 'Drukarka etykiet Zebra ZT421 — przemysłowa 6" RFID | od 9 416 zł',
-    seoDescription: 'Zebra ZT421 — przemysłowa 6" RFID UHF do etykiet paletowych i logistyki GS1. 168 mm, ZT42162-T0E0000Z od 9 416 zł netto.',
-    description: `Zebra ZT421 to najlepszy wybór dla centrów dystrybucyjnych i magazynów potrzebujących szerokoformatowej drukarki przemysłowej 6" do etykiet paletowych GS1-128 i oznaczeń compliance.
+    shortDescription: 'Przemysłowa drukarka Zebra ZT421 do szerokich etykiet logistycznych i paletowych. Druk do 168 mm, 203 lub 300 dpi, ekran dotykowy 4,3 cala.',
+    seoTitle: 'Zebra ZT421 — przemysłowa drukarka etykiet do 168 mm',
+    seoDescription: 'Zebra ZT421 drukuje szerokie etykiety paletowe i logistyczne do 168 mm. Warianty 203 i 300 dpi, Ethernet oraz opcje obsługi etykiet. Sprawdź ofertę TAKMA.',
+    description: `Zebra ZT421 to przemysłowa drukarka etykiet o szerokości druku do 168 mm. Służy do nadruku kodów kreskowych, tekstu i grafiki na szerokich etykietach logistycznych, paletowych i produktowych.
 
-Zebra ZT421 to przemysłowa drukarka etykiet klasy mid-range o szerokości druku 6,6" (168 mm) — bezpośredni następca modelu Zebra ZT420 i szersza wersja drukarki ZT411. Zaprojektowana do druku szerokich etykiet paletowych, logistycznych i compliance labels, ZT421 łączy wytrzymałą metalową konstrukcję z kolorowym ekranem dotykowym 4,3" i platformą zarządzania Link-OS. Dostępna w dwóch rozdzielczościach: 203 dpi (standard logistyczny, 305 mm/s) i 300 dpi (drobne kody 2D i etykiety produktowe, 305 mm/s).
+Wybierz ZT421, gdy nadruk przekracza szerokość 104 mm dostępną w modelu ZT411. Większa powierzchnia mieści rozbudowane dane wysyłki, oznaczenia partii i instrukcje na opakowaniach zbiorczych. Drukarka przygotowuje między innymi etykiety GS1-128, SSCC oraz formaty A5, jeśli szerokość materiału mieści się w jej zakresie.
 
-ZT421 drukuje z prędkością do 305 mm/s (12 ips) w obu rozdzielczościach — szerokość druku 168 mm (6,6") obsługuje etykiety od 51 do 178 mm, co pozwala na druk etykiet paletowych GS1 (150×100 mm), oznaczeń A5, szerokich etykiet wysyłkowych i compliance labels wymagających większej powierzchni. Głowica E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku. Drukarka obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") i taśmy barwiące (ribbony) o długości 450 m na rdzeniu 25,4 mm (1") w szerokości 51–174 mm.
+Dostępne są konfiguracje 203 i 300 dpi. Obie rozdzielczości pozwalają drukować z prędkością do 305 mm/s. Wybierz 203 dpi do dużych kodów i typowych etykiet logistycznych. Wersja 300 dpi pozwala uzyskać więcej szczegółów w drobnym tekście, małych kodach 2D i grafice.
 
-Kolorowy dotykowy wyświetlacz 4,3" (resistive touch) — identyczny jak w ZT411 — wyświetla status drukarki, poziom mediów, komunikaty błędów i umożliwia konfigurację bez komputera. Standardowe interfejsy: USB 2.0, USB Host, RS-232, Ethernet 10/100 i Bluetooth 4.1 (z opcją Wi-Fi 802.11ac). Opcjonalny moduł RFID UHF pozwala na kodowanie tagów RFID bezpośrednio podczas druku — adaptacyjna technologia Zebra eliminuje skomplikowane wytyczne rozmieszczenia tagów na szerokich etykietach.
+ZT421 drukuje termotransferowo z taśmą barwiącą lub termicznie bezpośrednio na etykietach termoczułych. Mieści rolkę o średnicy do 203 mm na gilzie 76 mm. Obsługuje taśmy do 450 m długości, o szerokości 51–174 mm. Dobierz rodzaj taśmy do materiału etykiety i wymaganej odporności nadruku.
 
-Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja i diagnostyka w chmurze. Print DNA dostarcza narzędzia: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu) i PrintSecure (ochrona cyberbezpieczeństwa). ZT421 obsługuje języki ZPL II, EPL2, XML i ZBI 2.0 (opcja) z pełną kompatybilnością wsteczną — szablony z ZT420, ZT620 i ZM600 działają bez zmian.
+Metalowa rama, składana pokrywa i boczny załadunek ułatwiają pracę z szerokimi rolkami. Kolorowy ekran dotykowy 4,3 cala służy do ustawień i odczytu komunikatów. Standardowe interfejsy obejmują USB, dwa porty USB Host, RS-232, Ethernet 10/100 i Bluetooth 4.1. Fabryczne Wi-Fi ma wariant ZT42162-T0EC000Z. Pozostałe konfiguracje możesz rozbudować odpowiednim modułem.
 
-Opcje obsługi mediów: odklejak (peeler) z nawijakiem etykiet (full rewind) do automatycznego odklejania i nawijania, gilotyna (cutter) do automatycznego cięcia z tacką zbierającą. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek rolek o szerokości do 178 mm.
+Podstawowe warianty umożliwiają odrywanie wydrukowanej etykiety. Konfiguracje T2 mają obcinacz. Wersje T4 mają odklejak i wewnętrzny nawijak. Przed zakupem wybierz sposób odbioru wydruku oraz odpowiedni PN. Nawijak pełnej rolki jest opcją fabryczną, a nie standardowym wyposażeniem drukarki.
 
-Podsumowanie: Dla kogo jest Zebra ZT421? To optymalny wybór gdy potrzebujesz szerokich etykiet powyżej 104 mm — etykiety paletowe GS1-128 (150×100 mm), oznaczenia A5, szerokie etykiety compliance, etykiety na duże produkty i opakowania zbiorcze. Magazyny z etykietowaniem palet (SSCC/GS1), centra dystrybucyjne, logistyka 3PL, produkcja z dużymi opakowaniami, retail (oznaczenia regałowe). Cena od 9 416 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+Link-OS i narzędzia Zebra DNA wspierają konfigurację, diagnostykę oraz zarządzanie drukarką. Przed wymianą starszego urządzenia sprawdź szablony ZPL, ustawienia materiałów i wymagane połączenia z systemem.
 
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
+Te konfiguracje służą do nadruku i nie zawierają fabrycznego kodera RFID. Rozbudowa wymaga dobrania zgodnego zestawu do konkretnego urządzenia. Jeśli potrzebujesz drukarki z fabrycznym koderem, wybierz [Zebra ZT421 RFID](/produkt/zebra-zt421-rfid).
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części zużywające się mają ochronę ograniczoną do 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -8087,27 +8089,27 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Szerokość mediów', value: '51–178 mm' },
       { name: 'Max długość etykiety', value: '2 591 mm (203 dpi) / 1 143 mm (300 dpi)' },
       { name: 'Max średnica rolki', value: '203 mm (8") na rdzeniu 76 mm (3")' },
-      { name: 'Typy mediów', value: 'Ciągłe, wykrojnikowe, z nacięciami, czarny znacznik, linerless' },
+      { name: 'Typy mediów', value: 'Ciągłe, wykrojnikowe, z nacięciami, czarny znacznik' },
       { name: 'Długość taśmy (ribbon)', value: '450 m na rdzeniu 25,4 mm (1")' },
       { name: 'Szerokość taśmy (ribbon)', value: '51–174 mm' },
       { name: 'Pamięć', value: '256 MB SDRAM + 512 MB Flash' },
       { name: 'Wyświetlacz', value: 'Kolorowy dotykowy 4,3" (resistive touch)' },
       { name: 'Interfejsy', value: 'USB 2.0, USB Host, RS-232, Ethernet 10/100, Bluetooth 4.1' },
       { name: 'Opcjonalne interfejsy', value: 'Wi-Fi 802.11ac, port LPT (parallel), port aplikatora' },
-      { name: 'Języki programowania', value: 'ZPL / ZPL II, EPL / EPL2, XML, ZBI 2.0 (opcja)' },
+      { name: 'Języki programowania', value: 'ZPL / ZPL II; EPL / EPL2 w modelach 203 dpi; XML; ZBI 2.0 jako opcja' },
       { name: 'Głowica', value: 'E3™ Element Energy™ Equalizer' },
       { name: 'Czujniki mediów', value: 'Ruchome transmisyjne i refleksyjne' },
       { name: 'Konstrukcja', value: 'Metalowa rama i metalowe obudowy, dwuskrzydłowe drzwi' },
       { name: 'Opcje mediów', value: 'Odklejak, gilotyna, nawijak etykiet (full rewind)' },
-      { name: 'Opcje RFID', value: 'UHF RFID (zestaw do montażu w terenie)' },
+      { name: 'Rozbudowa', value: 'Wymaga dobrania zgodnego zestawu do urządzenia; oferowane PN bez fabrycznego kodera RFID' },
       { name: 'Wymiary (S×G×W)', value: '495 × 336 × 324 mm' },
-      { name: 'Waga', value: '14,2 kg' },
+      { name: 'Waga', value: '18,14 kg' },
       { name: 'Temp. pracy (TT)', value: '5–40°C' },
       { name: 'Temp. pracy (DT)', value: '0–40°C' },
       { name: 'Wilgotność pracy', value: '20–85% bez kondensacji' },
       { name: 'Zasilanie', value: '100–240 VAC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'ENERGY STAR, CE, FCC Class B, IEC 62368-1' },
-      { name: 'Gwarancja', value: '2 lata (rozszerzenie: Zebra OneCare)' },
+      { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykiety paletowe GS1-128, SSCC — szerokie compliance labels',
@@ -8116,10 +8118,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'Etykietowanie palet w centrach dystrybucyjnych i 3PL',
       'Etykiety magazynowe na regały, lokacje i palety',
       'Etykiety compliance w retail (oznaczenia regałowe)',
-      'Kodowanie RFID UHF na szerokich etykietach — asset tracking',
       'Cross-docking i sortowanie paczek w centrach logistycznych',
       'Etykiety na kartonach zbiorczych — case labeling',
-      'Druk etykiet linerless bez podkładu — ekologiczne rozwiązanie',
     ],
     variants: [
       // ── 203 dpi ──
@@ -8194,7 +8194,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy ZT421 obsługuje RFID?',
-        answer: 'Tak — ZT421 obsługuje opcjonalny moduł UHF RFID instalowany w terenie. Adaptacyjna technologia kodowania Zebra automatycznie kalibruje pozycję tagu RFID na szerokich etykietach. Obsługiwane standardy: EPC Gen 2 V1.2, ISO 18000-63. Zakres częstotliwości: 860–960 MHz. Idealne do etykietowania palet RFID, asset tracking i zarządzania zapasami w magazynach.',
+        answer: 'Pokazane PN nie mają fabrycznego kodera RFID. Rozbudowa wymaga dobrania zgodnego zestawu do konkretnego urządzenia. Gotowe konfiguracje do druku i kodowania znajdziesz na osobnej karcie [Zebra ZT421 RFID](/produkt/zebra-zt421-rfid).',
       },
       {
         question: 'Jakie taśmy barwiące (ribbony) pasują do ZT421?',
@@ -8234,9 +8234,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość': '305 mm/s',
             'Szerokość druku': '168 mm (6,6")',
             'Wyświetlacz': 'Kolorowy dotykowy 4,3"',
-            'RFID UHF': 'Opcja',
             'Bluetooth': '4.1 (standard)',
-            'Waga': '14,2 kg',
+            'Waga': '18,14 kg',
             'Cena od': '9 416 zł',
           },
         },
@@ -8248,7 +8247,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość': '305 mm/s',
             'Szerokość druku': '168 mm (6,6")',
             'Wyświetlacz': 'Kolorowy dotykowy',
-            'RFID UHF': 'Opcja',
             'Bluetooth': '4.1 (standard)',
             'Waga': '23 kg',
             'Cena od': '~15 900 zł',
@@ -8262,10 +8260,10 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://www.serwis-zebry.pl/blog/serwis-drukarki-zebra-zt411-zt421-diagnostyka-naprawa', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt400-series-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['zebra-zt620', 'zebra-zt411', 'honeywell-pm65', 'honeywell-px65'],
+    relatedProducts: ['zebra-zt421-rfid', 'zebra-zt620', 'zebra-zt411', 'honeywell-pm65', 'honeywell-px65'],
     createdAt: '2023-03-20',
     sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt400-series/zt421.html',
-    updatedAt: '2026-02-12',
+    updatedAt: '2026-10-15',
   },
   {
     id: 'brother-tj-4020tn',
@@ -54570,13 +54568,13 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt421-203',
     slug: 'zebra-glowica-203dpi-zt421',
     name: 'Głowica 203 dpi do drukarki Zebra ZT420, ZT421',
-    shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT420, ZT421 — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT420 i ZT421 (6")',
-    description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT420 i ZT421 (seria 6"). Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm. Żywotność ok. 50–150 km druku.',
+    shortDescription: 'Głowica 203 dpi do Zebra ZT420 i ZT421, także wersji RFID. PN P1058930-012; szerokość druku do 168 mm.',
+    description: 'Głowica Zebra P1058930-012 służy do druku w rozdzielczości 203 dpi w ZT420 i ZT421, także wersjach RFID. Obsługuje szerokość druku do 168 mm. Przed zamówieniem sprawdź model, PN głowicy i rozdzielczość urządzenia. Wymiana samej głowicy nie służy do zmiany rozdzielczości drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 2032.00,
-    images: ['/images/products/P1058930-009.png'],
+    images: ['/images/products/zt421-printhead-framed.png'],
     imageDescriptions: ['Głowica 203 dpi do drukarki Zebra ZT420, ZT421'],
     tags: ['produkcja', 'magazyn'],
     availability: 'available',
@@ -54586,7 +54584,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
       { name: 'Part Number', value: 'P1058930-012' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
       { name: 'Szerokość druku', value: '168 mm (6,6")' },
-      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421' },
+      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421, także wersje RFID' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -54597,13 +54595,13 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-printhead-zt421-300',
     slug: 'zebra-glowica-300dpi-zt421',
     name: 'Głowica 300 dpi do drukarki Zebra ZT420, ZT421',
-    shortDescription: 'Głowica 300 dpi do drukarki Zebra ZT420, ZT421 — oryginalna głowica drukująca 300 dpi do drukarek Zebra ZT420 i ZT421 (6")',
-    description: 'Oryginalna głowica drukująca Zebra 300 dpi (12 dots/mm) do drukarek przemysłowych ZT420 i ZT421 (seria 6"). Do drobnych kodów 2D i szczegółowych etykiet na szerokich mediach 168 mm.',
+    shortDescription: 'Głowica 300 dpi do Zebra ZT420 i ZT421, także wersji RFID. PN P1058930-013; szerokość druku do 168 mm.',
+    description: 'Głowica Zebra P1058930-013 służy do druku w rozdzielczości 300 dpi w ZT420 i ZT421, także wersjach RFID. Obsługuje szerokość druku do 168 mm. Przed zamówieniem sprawdź model, PN głowicy i rozdzielczość urządzenia. Wymiana samej głowicy nie służy do zmiany rozdzielczości drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 3166.04,
-    images: ['/images/products/P1058930-010.png'],
+    images: ['/images/products/zt421-printhead-framed.png'],
     imageDescriptions: ['Głowica 300 dpi do drukarki Zebra ZT420, ZT421'],
     tags: ['produkcja', 'magazyn'],
     availability: 'available',
@@ -54613,7 +54611,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
       { name: 'Part Number', value: 'P1058930-013' },
       { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
       { name: 'Szerokość druku', value: '168 mm (6,6")' },
-      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421' },
+      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421, także wersje RFID' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -54638,7 +54636,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1058930-081' },
-      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421' },
+      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421, także wersje RFID' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -54674,13 +54672,13 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt421',
     slug: 'zebra-gilotyna-zt421',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT421',
-    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT421 — moduł gilotyny do automatycznego odcinania etykiet w drukarce ZT421 (6")',
-    description: 'Oryginalny moduł gilotyny Zebra do drukarki przemysłowej ZT421 (6"). Automatyczne odcinanie etykiet po wydruku. Montaż w terenie — nie wymaga serwisu fabrycznego.',
+    shortDescription: 'Obcinacz Zebra P1058930-190 z tacką do ZT420 i ZT421, także wersji RFID.',
+    description: 'Zebra P1058930-190 to zestaw obcinacza z tacką do drukarek ZT420 i ZT421, także wersji RFID. Odcina materiał po wydruku. Przy etykietach RFID ustaw cięcie między wkładkami, aby nie uszkodzić anteny ani układu. Przed montażem sprawdź konfigurację drukarki i parametry materiału.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 3655.30,
-    images: ['/images/products/P1058930-189.png'],
+    images: ['/images/products/P1058930-190-framed.png'],
     imageDescriptions: ['Gilotyna (cutter) do drukarki Zebra ZT421'],
     tags: ['produkcja', 'magazyn'],
     availability: 'unavailable',
@@ -54688,7 +54686,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1058930-190' },
-      { name: 'Kompatybilność', value: 'Zebra ZT421' },
+      { name: 'Kompatybilność', value: 'Zebra ZT420, ZT421, także wersje RFID' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -96148,6 +96146,7 @@ const rawProductList: Product[] = [
   ...zd621rAdditionalAccessories,
   ...zt411RfidAdditionalAccessories,
   ...zt231RfidAdditionalAccessories,
+  ...zt421RfidAdditionalAccessories,
   ...industrialLightPrinters,
   ...industrialPrinters,
   ...mobilePrinters,
