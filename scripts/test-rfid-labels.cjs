@@ -13,6 +13,7 @@ require.extensions['.ts'] = (module, filename) => module._compile(ts.transpileMo
 const { rfidLabelProducts, rfidLabelPartNumbers } = require('../src/data/rfid-label-products.ts')
 const { products, isLabelPN, getSubcategoryBySlug, filterProducts } = require('../src/data/products.ts')
 const { productVariantSchema, selectProductVariant } = require('../src/lib/product-variant-offers.ts')
+const { rfidLabelIdsForPrinter, rfidLabelPrinterLinks } = require('../src/data/rfid-label-compatibility.ts')
 assert.equal(rfidLabelProducts.length, 21)
 assert.equal(rfidLabelPartNumbers.size, 25)
 assert.equal(getSubcategoryBySlug('etykiety-rfid-zebra').productIds.length, 21)
@@ -43,10 +44,38 @@ for (const p of rfidLabelProducts) {
 }
 for(const pn of ['10026764','10026766','10026768','10026770']) assert(!rfidLabelPartNumbers.has(pn))
 const mobile=rfidLabelProducts.find(p=>p.slug.endsWith('zbr2100-mobilne'))
-assert.deepEqual(mobile.relatedProducts,['zebra-zq521-rfid','zebra-zq630-plus-rfid'])
-assert(mobile.specifications.some(s=>s.name==='Kompatybilność'&&/57 mm/.test(s.value)&&/66 mm/.test(s.value)))
-for(const p of rfidLabelProducts.filter(p=>/silverline|metal-skin/.test(p.slug))){
+assert.deepEqual(mobile.relatedProducts,[])
+assert(mobile.specifications.some(s=>s.name==='Kompatybilność'&&/średnicę gotowej rolki/.test(s.value)))
+for(const p of rfidLabelProducts.filter(p=>/silverline/.test(p.slug))){
   assert.deepEqual(p.relatedProducts,['zebra-zt411-rfid'])
   assert(p.specifications.some(s=>s.name==='Kompatybilność'&&/T5 On-Metal/.test(s.value)))
 }
-console.log('PASS: 21 cards / 25 PN; no samples or FCC; label pricing classification; PN search; live schema and missing offers; differing variant columns; conditional compatibility; assets and SEO uniqueness')
+// Każda relacja działa w obie strony, bez utraty wymagań adaptera lub T5.
+for(const p of rfidLabelProducts){
+  const link=rfidLabelPrinterLinks[p.id]
+  assert.deepEqual(p.relatedProducts,link?.printerIds??[])
+  for(const printerId of p.relatedProducts){
+    const printer=products.find(p=>p.id===printerId)
+    assert(printer.subcategoryIds.includes('drukarki-rfid'))
+    assert(rfidLabelIdsForPrinter(printerId,link.requirement==='on-metal-t5').includes(p.id))
+    if(link.requirement==='adapter-76') assert(printer.subcategoryIds.includes('biurkowe-drukarki-etykiet'))
+    if(link.requirement==='on-metal-t5') assert(printer.variants.some(v=>/-T5/.test(v.partNumber)))
+    const width=printerId==='zebra-zd611r'?54:104
+    for(const v of p.variants){
+      const mm=Number(v.name.match(/^(\d+(?:[.,]\d+)?)/)[1].replace(',','.'))
+      assert(mm<=width,`${v.partNumber}: ${mm} mm exceeds ${printerId}`)
+    }
+  }
+}
+assert.equal(rfidLabelIdsForPrinter('zebra-zd621r').length,5)
+assert.equal(rfidLabelIdsForPrinter('zebra-zd611r').length,2)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt411-rfid').length,7)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt411-rfid',true).length,5)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt421-rfid').length,5)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt620-rfid').length,5)
+for(const id of ['zebra-zq511-rfid','zebra-zq521-rfid','zebra-zq630-plus-rfid','zebra-zt411','zebra-zd621t']){
+  assert.deepEqual(rfidLabelIdsForPrinter(id),[])
+  assert.deepEqual(rfidLabelIdsForPrinter(id,true),[])
+}
+for(const p of rfidLabelProducts.filter(p=>/metal-skin|bt713/.test(p.slug))) assert.deepEqual(p.relatedProducts,[])
+console.log('PASS: 21 cards / 25 PN; pricing, PN search, live schema, assets, SEO; bidirectional RFID links; widths; adapter/T5 requirements; unconfirmed rolls excluded')

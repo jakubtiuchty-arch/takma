@@ -4,7 +4,7 @@
     "slug": "zebra-etykiety-rfid-bt713-pp-przemyslowe",
     "name": "Etykiety RFID Zebra BT713 PP — przemysłowe",
     "shortDescription": "25×15 mm. Polipropylen matowy. Druk z taśmą barwiącą. Cena za rolkę.",
-    "description": "Małe etykiety BT713 służą do identyfikacji niewielkich opakowań, kosmetyków i elementów. Format 25 × 15 mm ogranicza miejsce potrzebne na oznaczenie. Wkładka RFID umożliwia zapis identyfikatora, a biała powierzchnia pozwala dodać czytelny nadruk. Dobierz rozmiar tekstu i kodu do dostępnego pola.\n\nMateriał: Polipropylen matowy. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Zebra ZT231 RFID, Zebra ZT610 RFID. Gilza 76 mm; rolka do 200 mm. Sprawdź położenie wkładki, grubość i kalibrację RFID. ZT411 wymaga podkładu o szerokości co najmniej 25,4 mm; nie jest tu bezwarunkowo wskazana.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID. Po zmianie PN sprawdź ustawienia ponownie. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3016014. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nDo metalu dobierz etykietę przeznaczoną do tej powierzchni, np. [Silverline](/etykiety-rfid-zebra). Ta rodzina służy do typowych zastosowań na powierzchniach niemetalowych. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
+    "description": "Małe etykiety BT713 służą do identyfikacji niewielkich opakowań, kosmetyków i elementów. Format 25 × 15 mm ogranicza miejsce potrzebne na oznaczenie. Wkładka RFID umożliwia zapis identyfikatora, a biała powierzchnia pozwala dodać czytelny nadruk. Dobierz rozmiar tekstu i kodu do dostępnego pola.\n\nMateriał: Polipropylen matowy. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Dobierz drukarkę do szerokości podkładu i skoku wkładek dla formatu 25 × 15 mm. Gilza 76 mm; rolka do 200 mm. Przed drukiem sprawdź prowadzenie materiału i kalibrację RFID.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID. Po zmianie PN sprawdź ustawienia ponownie. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3016014. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nDo metalu dobierz etykietę przeznaczoną do tej powierzchni, np. [Silverline](/etykiety-rfid-zebra). Ta rodzina służy do typowych zastosowań na powierzchniach niemetalowych. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
     "categoryId": "materialy-eksploatacyjne",
     "subcategoryIds": [
       "etykiety-rfid"
@@ -60,7 +60,7 @@
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra ZT231 RFID, Zebra ZT610 RFID. Gilza 76 mm; rolka do 200 mm. Sprawdź położenie wkładki, grubość i kalibrację RFID. ZT411 wymaga podkładu o szerokości co najmniej 25,4 mm; nie jest tu bezwarunkowo wskazana."
+        "value": "Dobierz drukarkę do szerokości podkładu i skoku wkładek dla formatu 25 × 15 mm. Gilza 76 mm; rolka do 200 mm. Przed drukiem sprawdź prowadzenie materiału i kalibrację RFID."
       },
       {
         "name": "Rozmiar",
@@ -90,10 +90,7 @@
       }
     ],
     "compatibleAccessories": [],
-    "relatedProducts": [
-      "zebra-zt231-rfid",
-      "zebra-zt610-rfid"
-    ],
+    "relatedProducts": [],
     "faq": [
       {
         "question": "Czy cena dotyczy jednej etykiety czy rolki?",
@@ -1663,7 +1660,7 @@
     "slug": "zebra-etykiety-rfid-zbr2100-mobilne",
     "name": "Etykiety RFID Zebra ZBR2100 mobilne",
     "shortDescription": "102×51 mm, 102×152 mm. Papier Z-Select 2000D. Druk bez taśmy barwiącej. Cena za rolkę.",
-    "description": "Mobilne etykiety ZBR2100 służą do przygotowania oznaczenia przy towarze. Warianty 102 × 51 mm i 102 × 152 mm mają gilzę 19 mm oraz czarny znacznik pozycjonujący. Nadruk powstaje bez taśmy barwiącej. Szerokość 102 mm wymaga drukarki mobilnej klasy 4 cale; nie pasuje do ZQ511 RFID.\n\nMateriał: Papier Z-Select 2000D. Druk termiczny bezpośredni — bez taśmy barwiącej. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: ZQ521 RFID: rolka do 57 mm. ZQ630 Plus RFID: rolka do 66 mm. Gilza 19 mm, czarny znacznik. Potwierdź średnicę gotowej rolki przed zakupem.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID. Po zmianie PN sprawdź ustawienia ponownie. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Porównaj warianty w tabeli i wybierz właściwy PN. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nDo metalu dobierz etykietę przeznaczoną do tej powierzchni, np. [Silverline](/etykiety-rfid-zebra). Ta rodzina służy do typowych zastosowań na powierzchniach niemetalowych. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Przy wyborze miejsca użycia uwzględnij warunki przechowywania nadruku termicznego.",
+    "description": "Mobilne etykiety ZBR2100 służą do przygotowania oznaczenia przy towarze. Warianty 102 × 51 mm i 102 × 152 mm mają gilzę 19 mm oraz czarny znacznik pozycjonujący. Nadruk powstaje bez taśmy barwiącej. Szerokość 102 mm wymaga drukarki mobilnej klasy 4 cale; nie pasuje do ZQ511 RFID.\n\nMateriał: Papier Z-Select 2000D. Druk termiczny bezpośredni — bez taśmy barwiącej. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Wybierz drukarkę mobilną RFID z czujnikiem czarnego znacznika, gilzą 19 mm i szerokością druku co najmniej 102 mm. Przed zakupem sprawdź średnicę gotowej rolki oraz limit drukarki. Etykiety 102 mm nie pasują do ZQ511 RFID.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID. Po zmianie PN sprawdź ustawienia ponownie. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Porównaj warianty w tabeli i wybierz właściwy PN. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nDo metalu dobierz etykietę przeznaczoną do tej powierzchni, np. [Silverline](/etykiety-rfid-zebra). Ta rodzina służy do typowych zastosowań na powierzchniach niemetalowych. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Przy wyborze miejsca użycia uwzględnij warunki przechowywania nadruku termicznego.",
     "categoryId": "materialy-eksploatacyjne",
     "subcategoryIds": [
       "etykiety-rfid"
@@ -1715,7 +1712,7 @@
       },
       {
         "name": "Kompatybilność",
-        "value": "ZQ521 RFID: rolka do 57 mm. ZQ630 Plus RFID: rolka do 66 mm. Gilza 19 mm, czarny znacznik. Potwierdź średnicę gotowej rolki przed zakupem."
+        "value": "Wybierz drukarkę mobilną RFID z czujnikiem czarnego znacznika, gilzą 19 mm i szerokością druku co najmniej 102 mm. Przed zakupem sprawdź średnicę gotowej rolki oraz limit drukarki. Etykiety 102 mm nie pasują do ZQ511 RFID."
       },
       {
         "name": "Rolek w kartonie",
@@ -1754,10 +1751,7 @@
       }
     ],
     "compatibleAccessories": [],
-    "relatedProducts": [
-      "zebra-zq521-rfid",
-      "zebra-zq630-plus-rfid"
-    ],
+    "relatedProducts": [],
     "faq": [
       {
         "question": "Czy cena dotyczy jednej etykiety czy rolki?",
@@ -2452,7 +2446,7 @@
     "slug": "zebra-etykiety-rfid-metal-skin-delta",
     "name": "Etykiety RFID Zebra Metal Skin Delta",
     "shortDescription": "70×30 mm. Poliester z pianką. Do znakowania metalu; wymagana konfiguracja On-Metal. Cena za rolkę.",
-    "description": "Metal Skin Delta to etykiety RFID 70 × 30 mm do metalowych przedmiotów. Służą do identyfikacji wyposażenia, urządzeń i elementów majątku. Rolka zawiera 500 etykiet na gilzie 76 mm. Format pozostawia miejsce na widoczny identyfikator przy zachowaniu konstrukcji wkładki przeznaczonej do metalu.\n\nMateriał: Poliester z pianką. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Zebra ZT411 RFID wyłącznie w konfiguracji T5 On-Metal. Dobierz ustawienia do konkretnego materiału i jego grubości.\n\nDo tej rodziny potrzebujesz drukarki obsługującej materiał On-Metal. Zwykła wersja ZT411 RFID T0 nie zastępuje konfiguracji T5. Przed drukiem dobierz położenie kodera i skok etykiety. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3019300. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nNie stosuj zwykłej etykiety RFID jako zamiennika tej konstrukcji na metalu. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
+    "description": "Metal Skin Delta to etykiety RFID 70 × 30 mm do metalowych przedmiotów. Służą do identyfikacji wyposażenia, urządzeń i elementów majątku. Rolka zawiera 500 etykiet na gilzie 76 mm. Format pozostawia miejsce na widoczny identyfikator przy zachowaniu konstrukcji wkładki przeznaczonej do metalu.\n\nMateriał: Poliester z pianką. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Dobierz drukarkę do grubości etykiety, szerokości podkładu, skoku wkładek i położenia anteny RFID. Sama obsługa UHF lub wersja On-Metal nie wystarcza do doboru tego materiału.\n\nDobierz drukarkę do pełnej specyfikacji rolki. Przeznaczenie etykiety na metal nie określa wymaganej wersji drukarki. Przed drukiem dobierz położenie kodera i skok etykiety. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3019300. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nNie stosuj zwykłej etykiety RFID jako zamiennika tej konstrukcji na metalu. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
     "categoryId": "materialy-eksploatacyjne",
     "subcategoryIds": [
       "etykiety-rfid"
@@ -2508,7 +2502,7 @@
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra ZT411 RFID wyłącznie w konfiguracji T5 On-Metal. Dobierz ustawienia do konkretnego materiału i jego grubości."
+        "value": "Dobierz drukarkę do grubości etykiety, szerokości podkładu, skoku wkładek i położenia anteny RFID. Sama obsługa UHF lub wersja On-Metal nie wystarcza do doboru tego materiału."
       },
       {
         "name": "Rozmiar",
@@ -2542,9 +2536,7 @@
       }
     ],
     "compatibleAccessories": [],
-    "relatedProducts": [
-      "zebra-zt411-rfid"
-    ],
+    "relatedProducts": [],
     "faq": [
       {
         "question": "Czy cena dotyczy jednej etykiety czy rolki?",
@@ -2581,7 +2573,7 @@
     "slug": "zebra-etykiety-rfid-metal-skin-titanium",
     "name": "Etykiety RFID Zebra Metal Skin Titanium",
     "shortDescription": "45×6 mm. Poliester z pianką. Do znakowania metalu; wymagana konfiguracja On-Metal. Cena za rolkę.",
-    "description": "Metal Skin Titanium to niskoprofilowe etykiety RFID 45 × 6 mm do małych metalowych elementów. Wąski format pozwala oznaczać sprzęt elektroniczny i wyposażenie, gdzie większa etykieta się nie mieści. Rolka zawiera 500 etykiet. Mała wysokość wymaga doboru pola nadruku, skoku materiału i ustawień kodowania.\n\nMateriał: Poliester z pianką. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Zebra ZT411 RFID wyłącznie w konfiguracji T5 On-Metal. Dobierz ustawienia do konkretnego materiału i jego grubości.\n\nDo tej rodziny potrzebujesz drukarki obsługującej materiał On-Metal. Zwykła wersja ZT411 RFID T0 nie zastępuje konfiguracji T5. Przed drukiem dobierz położenie kodera i skok etykiety. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3019299. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nNie stosuj zwykłej etykiety RFID jako zamiennika tej konstrukcji na metalu. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
+    "description": "Metal Skin Titanium to niskoprofilowe etykiety RFID 45 × 6 mm do małych metalowych elementów. Wąski format pozwala oznaczać sprzęt elektroniczny i wyposażenie, gdzie większa etykieta się nie mieści. Rolka zawiera 500 etykiet. Mała wysokość wymaga doboru pola nadruku, skoku materiału i ustawień kodowania.\n\nMateriał: Poliester z pianką. Druk termotransferowy — wymaga odpowiedniej taśmy barwiącej, sprzedawanej osobno. Etykieta pozwala połączyć tekst lub kod kreskowy z identyfikatorem zapisanym w układzie RAIN UHF RFID. Sam nadruk kodu nie zapisuje danych w układzie RFID.\n\nZgodność z drukarkami: Dobierz drukarkę do grubości etykiety, szerokości podkładu, skoku wkładek i położenia anteny RFID. Sama obsługa UHF lub wersja On-Metal nie wystarcza do doboru tego materiału.\n\nDobierz drukarkę do pełnej specyfikacji rolki. Przeznaczenie etykiety na metal nie określa wymaganej wersji drukarki. Przed drukiem dobierz położenie kodera i skok etykiety. Dobierz konfigurację RFID do regionu użytkowania i czytnika.\n\nNumer PN określa rozmiar, nawój i wkładkę RFID. Numer katalogowy tej wersji to ZIPRT3019299. Cena dotyczy jednej rolki. Liczbę etykiet na rolce i rolek w kartonie podano w parametrach.\n\nNie stosuj zwykłej etykiety RFID jako zamiennika tej konstrukcji na metalu. Do odczytu danych potrzebujesz zgodnego czytnika UHF. Skaner kodów kreskowych odczyta tylko nadrukowany kod.\n\nSprawdź [drukarki RFID](/drukarki-rfid) i dobierz urządzenie do formatu rolki oraz nakładu. Do wykonania nadruku dobierz także [taśmę termotransferową](/tasmy-termotransferowe).",
     "categoryId": "materialy-eksploatacyjne",
     "subcategoryIds": [
       "etykiety-rfid"
@@ -2637,7 +2629,7 @@
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra ZT411 RFID wyłącznie w konfiguracji T5 On-Metal. Dobierz ustawienia do konkretnego materiału i jego grubości."
+        "value": "Dobierz drukarkę do grubości etykiety, szerokości podkładu, skoku wkładek i położenia anteny RFID. Sama obsługa UHF lub wersja On-Metal nie wystarcza do doboru tego materiału."
       },
       {
         "name": "Rozmiar",
@@ -2671,9 +2663,7 @@
       }
     ],
     "compatibleAccessories": [],
-    "relatedProducts": [
-      "zebra-zt411-rfid"
-    ],
+    "relatedProducts": [],
     "faq": [
       {
         "question": "Czy cena dotyczy jednej etykiety czy rolki?",

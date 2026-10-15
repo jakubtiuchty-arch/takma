@@ -34,6 +34,7 @@ function widthMm(v: ProductVariant): number | null {
 }
 
 interface Pick { product: Product; variant: ProductVariant; title: string }
+type MaterialKind = 'label' | 'ribbon' | 'rfid'
 
 const AVAIL = {
   available: { label: 'Dostępny', variant: 'success' as const },
@@ -42,7 +43,7 @@ const AVAIL = {
 }
 
 function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
-  pick: Pick; kind: 'label' | 'ribbon'; stockInfo?: StockInfo; stockLoading: boolean; printerSlug?: string
+  pick: Pick; kind: MaterialKind; stockInfo?: StockInfo; stockLoading: boolean; printerSlug?: string
 }) {
   const { product, variant, title } = pick
   const { addItem, isInCart } = useCartStore()
@@ -55,10 +56,12 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
   const liveSignal = !!stockInfo && (stockInfo.found || stockInfo.totalStock > 0)
   const avail = liveSignal ? stockInfo!.availability : variant.availability
   // Taśmy: cena tylko live — statyczne priceFrom jest nieaktualne i myliło (344,75 → 32,68 zł). Etykiety: fallback zostaje.
-  const price = liveSignal && stockInfo!.price ? stockInfo!.price : (kind === 'ribbon' ? undefined : variant.priceFrom)
+  const price = liveSignal && stockInfo!.price ? stockInfo!.price : (kind !== 'label' ? undefined : variant.priceFrom)
   const cfg = AVAIL[avail]
   // ?drukarka= niesie kontekst drukarki na kartę etykiety, żeby dobór taśmy nie polecił rolki 450 m do ZD421t (audyt ZD-07)
-  const href = `/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}${kind === 'label' && printerSlug ? `?drukarka=${printerSlug}` : ''}`
+  const href = kind === 'rfid'
+    ? `/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`
+    : `/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}${kind === 'label' && printerSlug ? `?drukarka=${printerSlug}` : ''}`
   const fullName = `Zebra ${title} ${size}`.trim()
   const cartId = `${product.slug}__${variant.partNumber}`
   const inCart = mounted ? isInCart(cartId) : false
@@ -104,12 +107,13 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
 }
 
 export default function PrinterMaterialVariants({
-  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8, printerSlug,
+  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8, printerSlug, description,
 }: {
   id: string
   title: string
   productIds: string[]
-  kind: 'label' | 'ribbon'
+  kind: MaterialKind
+  description?: string
   printWidthMm?: number
   /** Dozwolony rdzeń (gilza) dla danej drukarki. Taśmy: pojedyncza wartość
    *  ('12' biurkowa / '25' przemysłowa). Etykiety: lista akceptowanych gilz
@@ -136,7 +140,7 @@ export default function PrinterMaterialVariants({
   // od najszerszego (najbardziej uniwersalny dla danej drukarki).
   // Taśma jest zwykle nieco szersza niż głowica (104 mm głowica → ~110 mm taśma),
   // więc dla taśm dajemy większą tolerancję niż dla etykiet.
-  const tol = kind === 'ribbon' ? 12 : 2
+  const tol = kind === 'ribbon' ? 12 : kind === 'rfid' ? 0 : 2
   // Budujemy listy per-seria, a potem przeplatamy je round-robin (najpierw po 1 z każdej serii,
   // potem po 2…) — żeby rekomendacje pokazywały różnorodność klas (np. wosk / wosk-żywica / żywica),
   // a nie były zdominowane przez jedną serię.
@@ -146,7 +150,7 @@ export default function PrinterMaterialVariants({
     if (!product?.variants) continue
     const t = cleanTitle(product.name)
     const fitting = product.variants
-      .map(v => ({ v, w: widthMm(v) }))
+      .map(v => ({ v, w: widthMm(v) ?? (kind === 'rfid' ? widthMm({ ...v, attributes: { Rozmiar: v.name ?? '' } }) : null) }))
       .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
       // Formaty specjalne (kartridż ZD421c, rolki 30 m do P4T/RP4T) mają te same wymiary co zwykła rolka,
       // ale inny mechanizm — atrybut 'Format' wyklucza je z doboru do drukarek z rolką (audyt ZD-01)
@@ -170,6 +174,7 @@ export default function PrinterMaterialVariants({
   const partNumbers = candidates.map(p => p.variant.partNumber)
   const { stockData, loading } = useStockData(partNumbers)
   const [mobileExpanded, setMobileExpanded] = useState(false)
+  const [rfidExpanded, setRfidExpanded] = useState(false)
 
   if (candidates.length === 0) return null
 
@@ -190,16 +195,19 @@ export default function PrinterMaterialVariants({
 
   return (
     <section id={id}>
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">{title}</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <h2 className={`text-2xl font-bold text-gray-900 ${description ? 'mb-2' : 'mb-4'}`}>{title}</h2>
+      {description && <p className="text-sm text-gray-600 mb-4">{description}</p>}
+      <div id={kind === 'rfid' ? `${id}-lista` : undefined} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {shown.map((pick, i) => (
-          <div key={`${pick.product.slug}-${pick.variant.partNumber}`} className={i >= MOBILE_LIMIT && !mobileExpanded ? 'hidden md:block' : ''}>
+          <div key={`${pick.product.slug}-${pick.variant.partNumber}`} className={kind === 'rfid'
+            ? i >= MOBILE_LIMIT && !rfidExpanded ? 'hidden' : ''
+            : i >= MOBILE_LIMIT && !mobileExpanded ? 'hidden md:block' : ''}>
             <Card pick={pick} kind={kind}
               stockInfo={stockData.get(pick.variant.partNumber)} stockLoading={loading} printerSlug={printerSlug} />
           </div>
         ))}
       </div>
-      {hasMoreMobile && !mobileExpanded && (
+      {kind !== 'rfid' && hasMoreMobile && !mobileExpanded && (
         <div className="mt-4 md:hidden">
           <button type="button" onClick={() => setMobileExpanded(true)}
             className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50">
@@ -207,9 +215,17 @@ export default function PrinterMaterialVariants({
           </button>
         </div>
       )}
+      {kind === 'rfid' && hasMoreMobile && (
+        <div className="mt-5 text-center flex justify-center gap-3">
+          <button type="button" aria-expanded={rfidExpanded} aria-controls={`${id}-lista`} onClick={() => setRfidExpanded(value => !value)}
+            className="inline-flex items-center gap-2 px-6 py-2.5 text-sm font-medium text-primary-700 bg-primary-50 hover:bg-primary-100 border border-primary-200 rounded-xl transition-colors">
+            {rfidExpanded ? 'Zwiń' : `Pokaż pozostałe (${shown.length - MOBILE_LIMIT})`}
+          </button>
+        </div>
+      )}
       <div className="mt-5 pt-4 border-t border-gray-100 text-center">
-        <Link href={`/produkt/${productIds[0]}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800">
-          Zobacz wszystkie rozmiary <ArrowRightIcon size={14} />
+        <Link href={kind === 'rfid' ? '/etykiety-rfid-zebra' : `/produkt/${productIds[0]}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-600 hover:text-primary-800">
+          {kind === 'rfid' ? 'Zobacz wszystkie etykiety RFID' : 'Zobacz wszystkie rozmiary'} <ArrowRightIcon size={14} />
         </Link>
       </div>
     </section>

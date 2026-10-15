@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { getProductStock, getBundleLivePrices, getSchemaOffer, getSchemaOffers } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
+import { rfidLabelIdsForPrinter } from '@/data/rfid-label-compatibility'
 import LiveProductSchema from './LiveProductSchema'
 import {
   products,
@@ -319,6 +320,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
   const isRfidPrinter = product.subcategoryIds?.includes('drukarki-rfid') ?? false
+  const rfidLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id) : []
+  const onMetalLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id, true) : []
   const isLabelPrinter = product.categoryId === 'drukarki-etykiet' && !isRfidPrinter
   const isTTprinter = (product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false) && !isRfidPrinter
   // Kolorowa drukarka (Epson ColorWorks): etykiety Zebry do niej nie pasują, w miejscu sekcji etykiet
@@ -1303,9 +1306,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Do pobrania
                 </a>
               )}
-              {(showLabelsNav || showFoilNav || showRibbonNav) && (
+              {(showLabelsNav || showFoilNav || showRibbonNav || rfidLabelIds.length > 0 || onMetalLabelIds.length > 0) && (
                 <a
-                  href={isColorPrinter ? '#tusze' : '#etykiety-papierowe'}
+                  href={isColorPrinter ? '#tusze' : rfidLabelIds.length > 0 ? '#etykiety-rfid' : onMetalLabelIds.length > 0 ? '#etykiety-rfid-on-metal' : '#etykiety-papierowe'}
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {isColorPrinter ? 'Tusze i etykiety' : product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
@@ -1709,6 +1712,32 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
                 b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
+            {rfidLabelIds.length > 0 && (
+              <PrinterMaterialVariants
+                id="etykiety-rfid"
+                title="Etykiety RFID"
+                description={product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
+                  ? 'Te rolki mają gilzę 76 mm i wymagają zgodnych adapterów gilz. Średnica rolki wynosi do 127 mm. Przed drukiem wykonaj kalibrację materiału i RFID. Do etykiet termotransferowych potrzebujesz także taśmy barwiącej.'
+                  : 'Rolki na gilzie 76 mm, o średnicy do 200 mm. Przed drukiem wykonaj kalibrację materiału i RFID. Do nadruku potrzebujesz zgodnej taśmy barwiącej.'}
+                productIds={rfidLabelIds}
+                kind="rfid"
+                printWidthMm={printWidthMm}
+                maxTotal={24}
+                printerSlug={product.slug}
+              />
+            )}
+            {onMetalLabelIds.length > 0 && (
+              <PrinterMaterialVariants
+                id="etykiety-rfid-on-metal"
+                title="Etykiety RFID Silverline — tylko T5 On-Metal"
+                description="Te etykiety wymagają wersji ZT411 RFID On-Metal: ZT41142-T5E00G0Z lub ZT41143-T5E00G0Z. Nie pasują do standardowej wersji T0. Do nadruku potrzebujesz zgodnej taśmy barwiącej. Przed drukiem wykonaj kalibrację materiału i RFID."
+                productIds={onMetalLabelIds}
+                kind="rfid"
+                printWidthMm={printWidthMm}
+                maxTotal={24}
+                printerSlug={product.slug}
+              />
+            )}
             {isColorPrinter && relatedAccessories.length > 0 && (
               <RelatedProducts
                 id="tusze"
