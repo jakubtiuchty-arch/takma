@@ -372,12 +372,12 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
-      'zebra-zq511', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
+      'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
       'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus',
       'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3',
       'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l',
     ],
-    productCount: 31,
+    productCount: 32,
   },
   {
     id: 'mobilne-drukarki-etykiet',
@@ -389,8 +389,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie: na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
-    productCount: 17,
+    productIds: ['zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
+    productCount: 18,
   },
   rfidPrinterCategory,
   {
@@ -12075,32 +12075,42 @@ const mobilePrinters: Product[] = [
     id: 'zebra-zq511',
     slug: 'zebra-zq511',
     name: 'Zebra ZQ511',
-    shortDescription: 'Zebra ZQ511 — wzmocniona mobilna drukarka etykiet 3", MIL-STD-810G, IP54, upadki z 2 m',
-    seoTitle: 'Mobilna drukarka Zebra ZQ511 — wzmocniona 3" MIL-STD | od 2 287 zł',
-    seoDescription: 'Zebra ZQ511 — mobilna 3" MIL-STD dla kurierów, magazynów i serwisu. IP54, -20°C, BT+Wi-Fi. ZQ51-BUE001E-00 od 2 287 zł netto.',
-    description: `Zebra ZQ511 to najlepszy wybór dla firm kurierskich i magazynów potrzebujących wzmocnionej mobilnej drukarki 3" do druku paragonów i etykiet w najtrudniejszych warunkach terenowych.
+    shortDescription: 'Mobilna drukarka termiczna do etykiet i potwierdzeń. Druk do 72 mm, 203 dpi, bateria wymienna i obudowa IP54. Wyposażenie zależy od PN.',
+    seoTitle: 'Zebra ZQ511 — mobilna drukarka etykiet do 72 mm',
+    seoDescription: 'Zebra ZQ511 do druku etykiet i potwierdzeń w terenie. 203 dpi, szerokość do 72 mm, Bluetooth lub Wi-Fi. Dobierz PN, baterię i akcesoria w TAKMA.',
+    description: `Zebra ZQ511 to mobilna drukarka termiczna do etykiet i potwierdzeń. Przygotowuje nadruk przy towarze, podczas dostawy lub pracy serwisowej.
 
-Zebra ZQ511 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm), zaprojektowana do najtrudniejszych warunków pracy w terenie, magazynie i dostawie. Następca modelu ZQ510.
+## Druk etykiet o szerokości do 72 mm
 
-Certyfikat wojskowy MIL-STD-810G, odporność na upadki z 2 metrów na beton, 1300 upadków obrotowych z 1 m (IEC68-2-32) i klasa ochrony IP54 (IP65 z egzoszkieletem) — ZQ511 wytrzyma wszystko, co spotka ją w codziennej pracy kuriera, magazyniera czy serwisanta.
+ZQ511 drukuje termicznie bezpośrednio, bez taśmy barwiącej. Ma rozdzielczość 203 dpi. Obsługuje materiał o szerokości 35–80 mm i rolki o średnicy do 51 mm. Maksymalna prędkość 127 mm/s dotyczy włączonego Draft Mode.
 
-Bateria PowerPrecision+ 3250 mAh zapewnia druk 800+ etykiet na jednym ładowaniu. Dual-radio: Bluetooth 4.1 + Wi-Fi 802.11ac (2,4/5 GHz) do jednoczesnej pracy z terminalem mobilnym i siecią firmową. Opcja druku etykiet bez podkładu (linerless) redukuje odpady o 40%. Obsługa CPCL, ZPL i ZBI 2.x — pełna kompatybilność z istniejącymi systemami WMS i ERP.
+Do etykiet wysyłkowych 100 × 150 mm wybierz szerszy model, np. [Zebra ZQ521](/produkt/zebra-zq521). Dla ZQ511 dobierz format, sposób wykrywania etykiety i szablon do maksymalnej szerokości nadruku 72 mm.
 
-Temperatura pracy od -20°C do +55°C pozwala na pracę w chłodniach, na rampach załadunkowych i w pełnym słońcu. Wbudowany NFC (Zebra Print Touch) umożliwia błyskawiczne parowanie jednym dotknięciem.
+## Wybór konfiguracji
 
-Zebra ZQ511 to flagowa mobilna drukarka etykiet z serii ZQ500, przeznaczona do profesjonalnych zastosowań w logistyce, dostawach, magazynie i serwisie terenowym. Łączy wyjątkową wytrzymałość klasy wojskowej (MIL-STD-810G) z zaawansowaną łącznością bezprzewodową i inteligentnym zarządzaniem flotą przez Link-OS.
+Warianty BUE mają Bluetooth. Warianty BUW mają dodatkowo Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz. NFC Print Touch ułatwia parowanie. Integracja z systemem wymaga obsługi wybranego połączenia i formatu wydruku.
 
-Drukarka drukuje etykiety samoprzylepne, paragony i etykiety linerless o szerokości do 72 mm z prędkością do 127 mm/s w rozdzielczości 203 dpi. Tryb Draft Mode dodatkowo przyspiesza druk tekstu. Wbudowana pamięć 256 MB RAM i 512 MB Flash obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami.
+PN ZQ51-BUE001E-00 i ZQ51-BUW001E-00 są oferowane bez baterii. Pozostałe PN w tabeli mają standardową baterię PowerPrecision+ o nominalnej pojemności 3250 mAh. Opcjonalna bateria rozszerzona ma 6500 mAh. Czas pracy zależy od nadruku, połączeń, temperatury i formatu materiału.
 
-Konstrukcja odporna na upadki z 2 metrów na beton (3 m z egzoszkieletem), 1300 upadków obrotowych z 1 m, klasa IP54 (IP65 z egzoszkieletem). Temperatura pracy od -20°C do +55°C z trybem Cold Temperature Compensation dla optymalnej jakości druku w niskich temperaturach.
+Wersje ZQ51-BUE100E-00 oraz ZQ51-BUW100E-00 są przeznaczone do materiału linerless, bez podkładu. Do pozostałych konfiguracji dobierz materiał z podkładem. Nie zmieniaj typu rolki bez sprawdzenia zgodności PN.
 
-Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
+## Obudowa i praca w terenie
 
-Zebra ZQ511 zastępuje model ZQ510. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3" (ZQ511) i 4" (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ511R).
+ZQ511 waży około 630 g z baterią standardową i ma wymiary 150 × 120 × 62 mm. Obudowa ma klasę IP54 oraz odporność na upadki z 2 m na beton. Opcjonalny egzoszkielet zwiększa ochronę do IP65 i odporność na upadki do 3 m.
 
-Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
+Zakres temperatury pracy wynosi od −20 do 55°C. Dobierz materiał termiczny do temperatury i wymaganej trwałości nadruku. Link-OS oraz narzędzia Zebra DNA wspierają konfigurację i zarządzanie drukarką.
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+## Ładowanie i wyposażenie
+
+Baterię w drukarce możesz ładować zgodnym zasilaczem sieciowym, np. P1031365-042 z przewodem EU. Wyjętą baterię można ładować w zgodnej ładowarce 1-, 3- lub 6-gniazdowej. Przewód USB służy do komunikacji i nie zastępuje zasilacza do ładowania.
+
+Do montażu w pojeździe dobierz stację lub płytę, odpowiednie ramię i zasilanie. Sprawdź napięcie instalacji przed wyborem adaptera. Osłony dobierz do modelu ZQ511; etui i egzoszkielet szerszej ZQ521 mają inne numery PN.
+
+## Gwarancja
+
+Drukarka ma 24 miesiące gwarancji, a bateria 12 miesięcy. Głowica w regionie EMEA ma ochronę przez 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.
+
+PN na tej karcie wykonują nadruk bez kodowania UHF. Do zapisu danych w układzie etykiety wybierz [Zebra ZQ511 RFID](/produkt/zebra-zq511-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12117,7 +12127,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     keyParams: {
       rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
       rozdzielczosc: '203 dpi (8 dots/mm)',
-      predkoscDruku: 'do 127 mm/s (5 ips)',
+      predkoscDruku: 'do 127 mm/s z Draft Mode',
       szerokoscDruku: 'max. 72 mm (2,83")',
       szerokoscEtykiet: '35–80 mm',
     },
@@ -12129,7 +12139,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Maks. długość druku', value: '990 mm (39")' },
       { name: 'Szerokość nośnika', value: '35–80 mm' },
       { name: 'Maks. średnica rolki', value: '51 mm (2")' },
-      { name: 'Typy nośników', value: 'Etykiety z przerwą, z czarną linią, ciągłe, linerless, RFID' },
+      { name: 'Typy nośników', value: 'Etykiety z przerwą, z czarnym znacznikiem, ciągłe; linerless w odpowiednich PN' },
       { name: 'Pamięć RAM', value: '256 MB (8 MB dla użytkownika)' },
       { name: 'Pamięć Flash', value: '512 MB (64 MB dla użytkownika)' },
       { name: 'Bluetooth', value: '4.1 EDR + LE (BT 5.2 ready)' },
@@ -12153,7 +12163,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'System operacyjny drukarki', value: 'Link-OS' },
       { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
       { name: 'Certyfikat ENERGY STAR', value: 'Tak' },
-      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+      { name: 'Gwarancja', value: 'Drukarka 24 miesiące; bateria 12 miesięcy; głowica EMEA 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie w dostawie',
@@ -12274,74 +12284,26 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       ],
     },
     faq: [
-      {
-        question: 'Czym Zebra ZQ511 różni się od poprzednika ZQ510?',
-        answer: 'ZQ511 to następca ZQ510 z istotnymi ulepszeniami: wyższa odporność na upadki (2 m vs 1,5 m na beton), Wi-Fi 802.11ac (5 GHz) vs 802.11n, bateria PowerPrecision+ z monitorowaniem stanu, USB 2.0 OTG, obsługa Link-OS do zdalnego zarządzania flotą, tryb Draft Mode do szybszego druku tekstu. Obudowa i akcesoria są kompatybilne z serią ZQ500/ZQ600.',
-      },
-      {
-        question: 'Ile etykiet wydrukuję na jednej baterii ZQ511?',
-        answer: 'Na standardowej baterii 3250 mAh wydrukujesz ok. 800–1000 etykiet standardowego rozmiaru (50×25 mm). Na rozszerzonej baterii 6500 mAh — ok. 1600–2000 etykiet. W praktyce wystarcza to na 8–12 godzin pracy bez ładowania. Baterie są wymienne hot-swap — wymiana trwa 5 sekund bez wyłączania drukarki.',
-      },
-      {
-        question: 'Czy ZQ511 jest odporna na upadki i wodę?',
-        answer: 'Tak — ZQ511 spełnia wojskowy standard MIL-STD-810G. Wytrzymuje upadek z 2 m na beton (3 m z egzoszkieletem), 1300 upadków obrotowych z 1 m. Klasa IP54 chroni przed pyłem i bryzgami (IP65 z egzoszkieletem — pył całkowicie + strumień wody). Temperatura pracy od -20°C do +55°C.',
-      },
-      {
-        question: 'Jakie etykiety pasują do Zebra ZQ511?',
-        answer: 'ZQ511 obsługuje etykiety termiczne (direct thermal) o szerokości 35–80 mm: samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), linerless (bez podkładu) — wymaga wersji z silikonowym wałkiem. Maksymalna średnica rolki: 51 mm. Do etykiet wysyłkowych 100×150 mm potrzebujesz modelu 4-calowego ZQ521.',
-      },
-      {
-        question: 'Czym różni się ZQ511 od ZQ521?',
-        answer: 'Główna różnica to szerokość druku: ZQ511 drukuje etykiety do 72 mm (3 cale), ZQ521 do 104 mm (4 cale). ZQ511 jest lżejsza (630 g vs 860 g) i bardziej kompaktowa — idealna do małych etykiet produktowych i pokwitowań. ZQ521 jest lepsza do pełnowymiarowych etykiet wysyłkowych (100×150 mm). Oba modele mają tę samą wytrzymałość, łączność i baterie.',
-      },
-      {
-        question: 'Czy ZQ511 obsługuje druk etykiet bez podkładu (linerless)?',
-        answer: 'Tak — wersje ZQ51-BUE100E-00 i ZQ51-BUW100E-00 mają silikonowy wałek dociskowy do druku linerless. Etykiety linerless nie mają podkładu (liner), co redukuje odpady o ok. 40% i pozwala zmieścić więcej etykiet na rolce. Uwaga: wersje linerless nie mają podwójnego paska do odrywania.',
-      },
-      {
-        question: 'Z jakimi urządzeniami mogę sparować ZQ511?',
-        answer: 'ZQ511 łączy się przez Bluetooth 4.1 z terminalami Zebra (TC52, TC57, TC72, TC77, MC93, MC33), smartfonami Android/iOS i tabletami. NFC (Zebra Print Touch) umożliwia parowanie jednym dotknięciem. Wi-Fi 802.11ac (w wersjach BUW) pozwala drukować z dowolnego urządzenia w sieci firmowej — WMS, ERP, serwer druku.',
-      },
-      {
-        question: 'Jak długo ładuje się bateria ZQ511?',
-        answer: 'Bateria 3250 mAh ładuje się w ok. 2,5–3 godziny w ładowarce 1-gniazdowej (SAC-MPP-1BCHGEU1-01) lub 3-gniazdowej (SAC-MPP-3BCHGEU1-01). Temperatura ładowania: 0°C do 40°C. Ładowarki wielogniazdowe są zalecane dla flot — kontrolowane ładowanie wydłuża żywotność baterii o 30%.',
-      },
-      {
-        question: 'Czy ZQ511 nadaje się do pracy w chłodni i mroźni?',
-        answer: 'Tak — ZQ511 pracuje w temperaturze od -20°C do +55°C, co wystarcza do chłodni (+2°C do +8°C) i krótkich wejść do mroźni (-20°C). Tryb Cold Temperature Compensation automatycznie optymalizuje parametry druku w niskich temperaturach. Do ciągłej pracy poniżej -20°C zalecamy model z rozszerzoną baterią 6500 mAh.',
-      },
-      {
-        question: 'Ile kosztuje eksploatacja ZQ511 miesięcznie?',
-        answer: 'Przy 300 etykietach dziennie (6 600/mies.): etykiety termiczne ~120 zł/mies., amortyzacja baterii ~25 zł/mies., amortyzacja głowicy ~20 zł/mies. = ok. 165 zł/mies. Koszt pojedynczej etykiety: 0,01–0,02 zł. ZQ511 drukuje termicznie — nie wymaga taśmy barwiącej (ribbon), co obniża koszty o ~30% vs druk termotransferowy.',
-      },
-      {
-        question: 'Jaki jest koszt wymiany głowicy drukującej ZQ511?',
-        answer: 'Głowica drukująca ZQ511 wytrzymuje ok. 50–70 km druku (przy etykietach 50×25 mm to ok. 2 miliony etykiet). Wymiana głowicy to koszt ~500–700 zł. Regularne czyszczenie alkoholem izopropylowym co 2–3 rolki etykiet wydłuża żywotność głowicy nawet dwukrotnie.',
-      },
-      {
-        question: 'Czy mogę zarządzać flotą drukarek ZQ511 zdalnie?',
-        answer: 'Tak — ZQ511 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Obsługa SNMP do integracji z istniejącymi narzędziami IT.',
-      },
-      {
-        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
-        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
-      },
-      {
-        question: 'Jakie są alternatywy dla Zebra ZQ511?',
-        answer: 'Alternatywami są: Zebra ZQ521 (szersza, 4"), Honeywell RP4f, Brother RJ-3250WBL.',
-      },
+      { question: 'Jak szeroką etykietę wydrukuje ZQ511?', answer: 'Szerokość nadruku wynosi do 72 mm. Materiał może mieć szerokość 35–80 mm, a rolka średnicę do 51 mm. Do formatu 100 × 150 mm wybierz szerszy model ZQ521.' },
+      { question: 'Które PN mają Wi-Fi?', answer: 'Konfiguracje BUW mają Wi-Fi 802.11ac i Bluetooth. Warianty BUE mają Bluetooth. Sprawdź również wyposażenie w baterię oraz obsługę materiału linerless.' },
+      { question: 'Czy każda ZQ511 ma baterię?', answer: 'Nie. PN ZQ51-BUE001E-00 i ZQ51-BUW001E-00 są oferowane bez baterii. Pozostałe konfiguracje w tabeli mają baterię standardową 3250 mAh. Zasilacz lub ładowarkę dobierz osobno.' },
+      { question: 'Ile etykiet wydrukuję na jednej baterii?', answer: 'Wynik zależy od formatu, pokrycia nadrukiem, połączeń i temperatury. Bateria standardowa ma nominalnie 3250 mAh, a rozszerzona 6500 mAh. Zmierz czas pracy dla docelowego zadania.' },
+      { question: 'Czy ZQ511 obsługuje linerless?', answer: 'Tak, w wariantach ZQ51-BUE100E-00 i ZQ51-BUW100E-00. Pozostałe PN dobierz do materiału z podkładem. Wersje linerless nie mają podwójnej listwy do odrywania.' },
+      { question: 'Czy ZQ511 może pracować w niskiej temperaturze?', answer: 'Zakres pracy wynosi od −20 do 55°C. Baterię ładuj w temperaturze od 0 do 40°C. Sprawdź także dopuszczalną temperaturę używanej etykiety. Większa bateria nie rozszerza zakresu temperatury drukarki.' },
+      { question: 'Jak ładować baterię ZQ511?', answer: 'Zasilacz P1031365-042 z przewodem EU ładuje baterię w drukarce. Wyjętą baterię można ładować w zgodnej ładowarce. Przewód USB nie zastępuje zasilacza do ładowania.' },
+      { question: 'Czy ZQ511 koduje etykiety RFID?', answer: 'PN na tej karcie wykonują nadruk bez kodowania UHF. Do zapisu i kontroli wkładki wybierz [Zebra ZQ511 RFID](/produkt/zebra-zq511-rfid). Sam nadruk nie koduje układu etykiety.' },
     ],
     editorialReview: {
       ratingValue: 4.7,
       bestRating: 5,
-      reviewBody: 'Zebra ZQ511 to najlepszy wybór dla firm szukających wytrzymałej mobilnej drukarki 3-calowej. Certyfikat MIL-STD-810G i IP54 gwarantują niezawodność w najtrudniejszych warunkach. Dual-radio BT + Wi-Fi i bateria PowerPrecision+ z monitorowaniem stanu wyróżniają ją na tle konkurencji. Jedynym minusem jest brak opcji druku termotransferowego — ale w zastosowaniach mobilnych druk termiczny jest standardem.',
+      reviewBody: 'ZQ511 drukuje etykiety do 72 mm i potwierdzenia w terenie. Waży około 630 g z baterią standardową. Przy wyborze PN sprawdź łączność, baterię i rodzaj materiału. Obudowa IP54 oraz wymienna bateria wspierają pracę poza biurkiem.',
     },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq511/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/zq511-zq521-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq511-zq521-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['zebra-zq521', 'zebra-zq620-plus', 'zebra-zq320-plus', 'zebra-zq220-plus'],
+    relatedProducts: ['zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq620-plus', 'zebra-zq320-plus', 'zebra-zq220-plus'],
     createdAt: '2026-02-13',
     sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq500-series/zq511.html',
   },
@@ -56780,16 +56742,14 @@ const mobilePrinterAccessories: Product[] = [
     id: 'zebra-soft-case-zq5',
     slug: 'zebra-etui-pasek-zq511',
     name: 'Etui z paskiem na ramię do Zebra ZQ511',
-    shortDescription: 'Etui z paskiem na ramię do Zebra ZQ511 — miękkie etui ochronne z paskiem na ramię do drukarki ZQ510/ZQ511',
-    description: `Oryginalne etui ochronne Zebra z paskiem na ramię do mobilnej drukarki ZQ510/ZQ511. Chroni drukarkę przed zarysowaniami i drobnymi uderzeniami. Pasek na ramię odciąża biodra i zmniejsza zmęczenie przy wielogodzinnej pracy.
-
-Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet.`,
+    shortDescription: 'Miękkie etui z paskiem na ramię do Zebra ZQ510 i ZQ511, także RFID. PN P1063406-038.',
+    description: 'Etui Zebra P1063406-038 z paskiem na ramię jest przeznaczone do drukarek ZQ510 i ZQ511, także RFID. Zapewnia dodatkową osłonę w czasie przenoszenia. Klapy umożliwiają dostęp do portów oraz baterii standardowej lub rozszerzonej. Etui nie można używać z klipsem do paska ani wielogniazdową stacją MCR. Pasek jest w zestawie. Drukarka widoczna na zdjęciu jest sprzedawana osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 249.17,
-    images: ['/images/products/P1063406-038.png'],
-    imageDescriptions: ['Etui z paskiem na ramię do Zebra ZQ511'],
+    images: ['/images/products/P1063406-038-framed.webp'],
+    imageDescriptions: ['Etui P1063406-038 z paskiem do Zebra ZQ511; drukarka na zdjęciu jest sprzedawana osobno'],
     tags: ['logistyka', 'outdoor'],
     availability: 'available',
     isNew: false,
@@ -56808,10 +56768,8 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     id: 'zebra-exoskeleton-zq5',
     slug: 'zebra-egzoszkielet-zq511',
     name: 'Egzoszkielet ochronny do Zebra ZQ511',
-    shortDescription: 'Egzoszkielet ochronny do Zebra ZQ511 — obudowa wzmocniona, podnosi IP do IP65 i drop spec do 3 m',
-    description: `Egzoszkielet ochronny Zebra do drukarki mobilnej ZQ510/ZQ511. Podnosi klasę ochrony z IP54 do IP65 (pełna ochrona przed pyłem i strumieniem wody) oraz odporność na upadki z 2 m do 3 m na beton.
-
-Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Nie utrudnia wymiany baterii ani rolek etykiet.`,
+    shortDescription: 'Egzoszkielet P1063406-043 do Zebra ZQ510 i ZQ511, także RFID. Ochrona IP65 i odporność na upadki do 3 m.',
+    description: 'Egzoszkielet Zebra P1063406-043 do ZQ510 i ZQ511, także RFID, zwiększa ochronę do IP65 oraz odporność na upadki do 3 m. Obsługuje baterię standardową i rozszerzoną. Współpracuje ze stacją pojedynczą i czterogniazdową stacją drukarek serii ZQ500. Drukarka jest sprzedawana osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',

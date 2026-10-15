@@ -11,7 +11,7 @@ export const zq521RfidAccessoryIds = [
 
 const additions = [
   { id: 'zebra-zq5-vehicle-cradle', slug: 'zebra-stacja-pojazdowa-p1063406-062', pn: 'P1063406-062', name: 'Stacja pojazdowa Zebra ZQ500', image: 'P1063406-062-framed.webp', description: 'Stacja Zebra P1063406-062 mocuje i ładuje jedną drukarkę serii ZQ500, także ZQ521 RFID. Pasuje do wersji z baterią standardową lub rozszerzoną oraz z egzoszkieletem. Aby korzystać ze stacji, potrzebujesz osobnego zasilacza sieciowego albo adaptera pojazdowego zgodnego z napięciem instalacji. Ramię RAM do montażu w pojeździe dobierz osobno. Drukarka i zasilacz nie są częścią zestawu.' },
-  { id: 'zebra-zq5-power-station-4', slug: 'zebra-stacja-4-drukarek-p1063406-053', pn: 'P1063406-053', name: 'Stacja ładująca 4 drukarki Zebra ZQ500 EU', image: 'P1063406-053.webp', description: 'Stacja Zebra P1063406-053 ładuje do czterech drukarek serii ZQ500 jednocześnie, także ZQ521 RFID. Obsługuje baterie standardowe i rozszerzone oraz drukarki w egzoszkielecie. Zestaw obejmuje zasilacz i przewód sieciowy EU/CH. Drukarki widoczne na zdjęciu są sprzedawane osobno.' },
+  { id: 'zebra-zq5-power-station-4', slug: 'zebra-stacja-4-drukarek-p1063406-053', pn: 'P1063406-053', name: 'Stacja ładująca 4 drukarki Zebra ZQ500 EU', image: 'P1063406-053.webp', description: 'Stacja Zebra P1063406-053 ładuje do czterech drukarek serii ZQ500 jednocześnie, także ZQ521 RFID. Obsługuje baterie standardowe i rozszerzone oraz drukarki w egzoszkielecie. Zestaw obejmuje zasilacz i przewód europejski typu C. Drukarki widoczne na zdjęciu są sprzedawane osobno.' },
   { id: 'zebra-zq5-rugged-strap', slug: 'zebra-pasek-na-ramie-p1063406-035', pn: 'P1063406-035', name: 'Wzmocniony pasek na ramię Zebra ZQ500', image: 'P1063406-035.webp', description: 'Pasek Zebra P1063406-035 służy do noszenia drukarki serii ZQ500 na ramieniu, także modelu ZQ521 RFID. Ma metalowe zaczepy i długość 56 cali, około 142 cm. Drukarka jest sprzedawana osobno.' },
   { id: 'zebra-zq5-mounting-plate', slug: 'zebra-plyta-montazowa-p1063406-042', pn: 'P1063406-042', name: 'Płyta montażowa Zebra ZQ500', image: 'P1063406-042-framed.webp', description: 'Płyta Zebra P1063406-042 umożliwia stałe zamocowanie drukarki serii ZQ500 na zgodnym ramieniu RAM. Pasuje także do ZQ521 RFID. Ramię RAM, drukarka i zasilanie są sprzedawane osobno. Płyta nie jest potrzebna przy użyciu stacji pojazdowej P1063406-062 z ramieniem RAM. Nie zastępuje stacji ładującej.' },
 ]
@@ -22,7 +22,7 @@ export const zq521RfidAdditionalAccessories: Product[] = additions.map(a => ({
   images: [`/images/products/${a.image}`], imageDescriptions: [`${a.name} — ${a.pn}${a.pn === 'P1063406-053' ? '; drukarki na zdjęciu są sprzedawane osobno' : ''}`],
   tags: ['magazyn', 'logistyka'], availability: 'unavailable', isNew: false, isBestseller: false,
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Kompatybilność', value: 'Zebra ZQ510, ZQ511, ZQ520, ZQ521, także wersje RFID' }],
-  applications: [], compatibleAccessories: [], relatedAccessories: ['zebra-zq521-rfid', 'zebra-zq521', 'zebra-zq511'],
+  applications: [], compatibleAccessories: [], relatedAccessories: ['zebra-zq521-rfid', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq511'],
   downloads: [{ name: 'Katalog akcesoriów do drukarek mobilnych Zebra (EN)', type: 'pdf', url: accessoryGuide, size: 'PDF' }], createdAt: '2026-10-15',
 }))
 
