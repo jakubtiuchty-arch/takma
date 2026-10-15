@@ -4,6 +4,7 @@ import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
+import { rfidLabelPartNumbers } from '@/data/rfid-label-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import type { JarltechStockInfo } from '@/lib/jarltech'
@@ -152,6 +153,10 @@ export async function lookupUnifiedStock(
     for (const row of cachedRows) {
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
       if (age >= stockCacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000)) continue
+      // Nowe materiały RFID były odpytywane przed rejestracją w katalogu etykiet.
+      // Stary wpis ma marżę urządzeń 10%. Odśwież go, aby wszystkie kanały używały 15% dla rolek.
+      if (rfidLabelPartNumbers.has(row.partNumber) && row.ingramPrice && row.price &&
+        Math.abs(row.price - Math.round(row.ingramPrice * LABEL_MARGIN * 100) / 100) > 0.02) continue
 
       // Ponownie porównaj rażąco zawyżoną cenę z ceną katalogową i źródłami.
       const catalogPrice = getCatalogNetPrice(row.partNumber)

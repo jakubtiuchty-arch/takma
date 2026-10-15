@@ -234,7 +234,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
   // Google dopuszcza <a> w treści odpowiedzi, ale adres ma być pełny — w strukturze
   // danych nie ma względem czego rozwinąć „/produkt/…".
-  const faqJsonLd = content?.faq?.length ? {
+  const faqJsonLd = slug !== 'etykiety-rfid-zebra' && content?.faq?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: content.faq.map((f) => ({

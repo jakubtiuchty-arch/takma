@@ -67,3 +67,4 @@ ET401_acc/
 /output/
 /work/
 __pycache__/
+.env*

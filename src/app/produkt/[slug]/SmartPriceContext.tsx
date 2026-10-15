@@ -135,7 +135,7 @@ export function SmartPriceProvider({
     // TC201 ma warianty bez ceny katalogowej. Nie pokazuj dla nich ceny
     // podstawowego modelu Wi-Fi, gdy dystrybutor nie podał ceny danego PN.
     const fallbackPrice = product.slug === 'zebra-tc201' ? undefined : product.priceFrom
-    if (product.slug === 'zebra-zd421t' || isZebraTerminalProduct(product)) {
+    if (product.slug === 'zebra-zd421t' || isZebraTerminalProduct(product) || product.subcategoryIds?.includes('etykiety-rfid')) {
       const selected = selectProductVariant(product, Array.from(stockData.values()), urlPn)
       const selectedPn = selected?.partNumber ?? product.specifications.find(spec => spec.name === 'Part Number')?.value
       const stock = selectedPn ? stockData.get(selectedPn) : undefined

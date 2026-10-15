@@ -1,3 +1,4 @@
+import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
 // Rich content for subcategory pages (SEO/AEO/GEO)
 // Generated from competitor analysis and expert knowledge
@@ -102,6 +103,7 @@ export interface SubcategoryRichContent {
 }
 
 export const subcategoryContent: Record<string, SubcategoryRichContent> = {
+  'etykiety-rfid-zebra': rfidLabelContent,
   'drukarki-rfid': rfidPrinterContent,
   'biurkowe-drukarki-etykiet': {
     definition: {

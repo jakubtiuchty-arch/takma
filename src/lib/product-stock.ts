@@ -1,3 +1,4 @@
+import { rfidLabelSlugs } from '@/data/rfid-label-products'
 import { zq511RfidAccessorySlugs } from '@/data/zq511-rfid-products'
 import { zq521RfidAdditionalAccessories, zq521RfidExistingAccessorySlugs } from '@/data/zq521-rfid-products'
 import { zq630RfidAdditionalAccessories, zq630RfidExistingAccessorySlugs } from '@/data/zq630-plus-rfid-products'
@@ -22,6 +23,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...Array.from(rfidLabelSlugs),
   ...Array.from(zebraTerminalSlugs),
   'newland-mt95-kambur-pro-iii',
   ...newlandMt95ProIiiAccessories.map(product => product.slug),

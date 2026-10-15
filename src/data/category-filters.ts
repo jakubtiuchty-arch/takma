@@ -7,6 +7,18 @@ import type { FilterDefinition } from '@/components/subcategory/FilterableProduc
  * bo trafiają do komponentu klienckiego. Kolejność reguł = kolejność opcji w filtrze.
  */
 export const categoryFilters: Record<string, FilterDefinition[]> = {
+  'etykiety-rfid-zebra': [
+    { specKey: 'Typ druku', label: 'Metoda druku', derived: [
+      { value: 'Termiczny bez taśmy', pattern: 'termiczny bezpośredni', specs: ['Typ druku'] },
+      { value: 'Termotransferowy', pattern: 'termotransferowy', specs: ['Typ druku'] },
+    ] },
+    { specKey: 'Format rolki', label: 'Rodzaj rolki', derived: [
+      { value: 'Przemysłowa', pattern: '^Przemysłowa', specs: ['Format rolki'] },
+      { value: 'Biurkowa', pattern: '^Biurkowa', specs: ['Format rolki'] },
+      { value: 'Mobilna', pattern: '^Mobilna', specs: ['Format rolki'] },
+    ] },
+    { specKey: 'Materiał', label: 'Materiał' },
+  ],
   'drukarki-kart': [
     {
       specKey: 'producent',

@@ -79,6 +79,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Rodzic ma slug 'etykiety-termotransferowe-zebra' i jest dodawany w transferCategoryPages niżej.
   // Daty świeżości dla przebudowanych landingów (spójne z dateModified w schema na stronie).
   const reworkedLandingLastMod: Record<string, Date> = {
+    'etykiety-rfid-zebra': new Date('2026-10-15'),
     'tasmy-termotransferowe': new Date('2026-05-31'),
     'etykiety-termiczne-zebra': new Date('2026-06-03'),
     'kolorowe-drukarki-etykiet': new Date('2026-09-20'),

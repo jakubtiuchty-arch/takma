@@ -1,3 +1,5 @@
+import { rfidLabelProducts } from './rfid-label-products'
+import { rfidLabelCategory } from './rfid-label-category'
 import { zq521RfidAdditionalAccessories } from './zq521-rfid-products'
 import { zq630RfidAdditionalAccessories } from './zq630-plus-rfid-products'
 import { zd611rAdditionalAccessories } from './zd611r-accessories'
@@ -310,6 +312,7 @@ export const categories: Category[] = [
 
 // Podkategorie drukarek (SEO landing pages)
 export const subcategories: Subcategory[] = [
+  rfidLabelCategory,
   {
     id: 'biurkowe-drukarki-etykiet',
     slug: 'biurkowe-drukarki-etykiet',
@@ -95975,6 +95978,7 @@ for (const subcategory of subcategories) {
 }
 
 const rawProductList: Product[] = [
+  ...rfidLabelProducts,
   ...desktopPrinters,
   ...rfidPrinterProducts,
   ...zd621rAdditionalAccessories,
@@ -96173,7 +96177,7 @@ export function getProductBySlug(slug: string): Product | undefined {
 
 // PN-y etykiet (termiczne + termotransferowe) — do osobnej marży i kartonów.
 // NIE obejmuje taśm (tasmy-termotransferowe) — te mają isRibbonPN.
-const LABEL_SUBCATEGORY_IDS = new Set(['etykiety-termiczne', 'etykiety-termotransferowe'])
+const LABEL_SUBCATEGORY_IDS = new Set(['etykiety-termiczne', 'etykiety-termotransferowe', 'etykiety-rfid'])
 let _labelPNs: Set<string> | null = null
 export function getAllLabelPartNumbers(): Set<string> {
   if (_labelPNs) return _labelPNs

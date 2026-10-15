@@ -143,7 +143,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
         ) : (
           <span className="text-lg sm:text-xl font-medium text-gray-700">Cena na zapytanie</span>
         )}
-        {price && <span className="text-sm text-gray-500">netto{hasTiers || isPack ? ` / ${unit}` : ''}</span>}
+        {price && <span className="text-sm text-gray-500">netto{product.subcategoryIds?.includes('etykiety-rfid') ? ' / rolka' : hasTiers || isPack ? ` / ${unit}` : ''}</span>}
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
       {(loading || price) && (
