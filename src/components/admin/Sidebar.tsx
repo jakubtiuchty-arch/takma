@@ -26,6 +26,15 @@ const navItems = [
     ),
   },
   {
+    label: 'Etykiety na magazynie',
+    href: '/admin/etykiety-na-magazynie',
+    icon: (
+      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5h18M4.5 7.5V20h15V7.5M3 4h18v3.5H3V4zm6 8h6" />
+      </svg>
+    ),
+  },
+  {
     label: 'Leady',
     href: '/admin/leady',
     icon: (
