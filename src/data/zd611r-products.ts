@@ -98,7 +98,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 36 miesięcy dla urządzeń kupion
     { name: 'Akcesoria do ZD611R (EN) — strona 9', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/desktop-printer-guide-accessory-en-us.pdf#page=9', size: 'PDF' },
     { name: 'Katalog części ZD611R (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/manual/zd611r-manual-parts-catalog-en-us.pdf', size: 'PDF' },
     { name: 'Instrukcja obsługi ZD611R (EN)', type: 'manual', url: 'https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/zd611r-ug-en.pdf', size: 'PDF' },
-    { name: 'Sterowniki i wsparcie Zebra ZD611R', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/desktop/zd611r.html', size: 'Online' },
+    { name: 'Sterowniki i wsparcie Zebra ZD611R', type: 'driver', url: 'https://www.zebra.com/gb/en/support-downloads/printers/desktop/zd611.html', size: 'Online' },
   ],
   relatedProducts: ['zebra-zd621r', 'zebra-zt231-rfid', 'zebra-zd411t'], createdAt: '2026-10-15',
   sameAs: 'https://www.zebra.com/gb/en/products/printers/desktop/zd600-series/zd611r.html',
