@@ -323,10 +323,11 @@ export function cennikJakoDokument(
  */
 export const czyListaTradeUp = (tekst: string) =>
   // Koncesja albo oferta Jarltecha na transakcję z Trade UP może zawierać te
-  // same słowa — ich parsery mają pierwszeństwo.
+  // same słowa — ich parsery mają pierwszeństwo. Nowsze listy tną nazwę
+  // programu na „Trade U P”, stąd odstęp dopuszczony też wewnątrz „UP”.
   !/PC Request ID/i.test(tekst) &&
   !/Jarltech/i.test(tekst) &&
-  /Trade\s*UP/i.test(tekst) &&
+  /Trade\s*U\s*P/i.test(tekst) &&
   /Recommended\s+Discount/i.test(tekst) &&
   /Part\s+Number/i.test(tekst)
 
@@ -340,16 +341,21 @@ export function parsujListeTradeUp(tekst: string): { rewizja?: string; items: Po
   const items: PozycjaKoncesji[] = []
   const widziane = new Set<string>()
   for (const l of tekst.split('\n')) {
-    const k = l.split('\t').map((c) => c.trim())
+    // Nowsze listy tną numer na kilka komórek, a myślnik bywa osobnym kawałkiem
+    // albo początkiem następnej („CS6080 | -HC4F00BVMWW", „ZQ21 -A0E12KE | - 00")
+    // — sklejamy myślnik z sąsiadami, zanim podzielimy wiersz na kolumny.
+    const k = l.replace(/\s*-\s*/g, '-').split('\t').map((c) => c.trim()).filter(Boolean)
     if (k.length < 3) continue
     const rabat = k[k.length - 1].match(/^(\d{1,2}(?:[.,]\d+)?)\s*%$/)?.[1]
     const pn = k[k.length - 2]
     if (!rabat || !/^[A-Z0-9][A-Z0-9-]{5,}$/.test(pn) || widziane.has(pn)) continue
     widziane.add(pn)
+    const opis = k.slice(0, -2)
+    if (/^new$/i.test(opis[0] ?? '')) opis.shift() // kolumna „Status" z nowszych list
     items.push({
       partNumber: pn,
       // Rodzina mówi handlowcowi więcej niż linia produktów, więc stoi pierwsza.
-      description: [k[k.length - 3], k.slice(0, -3).join(' ')].filter(Boolean).join(' · ') || undefined,
+      description: [opis[opis.length - 1], opis.slice(0, -1).join(' ')].filter(Boolean).join(' · ') || undefined,
       minQty: 1,
       unitPrice: 0,
       discountPct: Number(rabat.replace(',', '.')),
@@ -360,9 +366,10 @@ export function parsujListeTradeUp(tekst: string): { rewizja?: string; items: Po
       'To dokument programu Trade UP, ale bez numerów katalogowych — wczytaj listę numerów z rabatami, nie biuletyn programu.'
     )
 
-  // Data wydania listy stoi w stopce każdej strony, po tytule dokumentu.
-  const d = tekst.match(/Discounts[^\n]*?(\d{2})-(\d{2})-(\d{4})/)
-  return { rewizja: d ? `${d[1]}.${d[2]}.${d[3]}` : undefined, items }
+  // Data wydania listy stoi w stopce każdej strony, po tytule dokumentu —
+  // w starszych listach jako „14-04-2026”, w nowszych jako „14.09.26”.
+  const d = tekst.match(/Discounts[^\n]*?(\d{2})[.-](\d{2})[.-](\d{4}|\d{2})\b/)
+  return { rewizja: d ? `${d[1]}.${d[2]}.${d[3].length === 2 ? `20${d[3]}` : d[3]}` : undefined, items }
 }
 
 /** Lista Trade UP jako dokument cenowy — okres i warunki programu podaje człowiek. */
