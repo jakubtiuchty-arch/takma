@@ -15,3 +15,10 @@
 - Przed publikacją porównaj zmienioną stronę z istniejącą kartą wzorcową, także wizualnie. Sprawdź rozmiary zdjęć, odstępy, przyciski oraz rozwijanie i zwijanie sekcji.
 - Akcesoria na karcie produktu: początkowo pokaż pierwszy rząd (4 produkty na komputerze), a pozostałe udostępnij przez istniejące rozwijanie „Pokaż pozostałe” i zwijanie „Zwiń”. Zachowaj standardowy rozmiar zdjęć i jeden wspólny dział „Akcesoria”, chyba że użytkownik poleci inaczej.
 - Zdjęcia produktów: przed publikacją zmierz wymiary pola zdjęcia oraz udział widocznego produktu w kadrze i porównaj z co najmniej dwiema istniejącymi kartami podobnych produktów. Sam identyczny rozmiar pola nie wystarcza. Jeśli produkt jest za duży, popraw skalę i białe marginesy w Imagen (`image_gen`), zachowaj konstrukcję produktu i ponownie sprawdź wynik na stronie. Nie zmieniaj układu kafelków, aby dopasować pojedyncze zdjęcie.
+
+## Wdrożenia produkcyjne
+
+- Każdą zmianę najpierw zapisz w commicie i wypchnij na gałąź `claude/takma-frontend-build-RrM9E`.
+- Produkcję wdrażaj wyłącznie z Gita, z tej gałęzi. Nie uruchamiaj lokalnych wdrożeń produkcyjnych przez `vercel --prod`, `vercel deploy --prod`, `--prebuilt --prod` ani ręcznego promowania lokalnego wdrożenia.
+- Przed pushem pobierz aktualny stan gałęzi i zachowaj zmiany dodane przez innych. Funkcje przeznaczone na produkcję muszą być zapisane w repozytorium; nie mogą istnieć wyłącznie w osobnym folderze roboczym.
+- Widok `/admin/etykiety-na-magazynie`, jego pozycja w menu i obsługa danych są częścią strony produkcyjnej. Przy kolejnych zmianach zachowaj je na gałęzi produkcyjnej i sprawdź ich obecność we wdrożeniu z Gita.
