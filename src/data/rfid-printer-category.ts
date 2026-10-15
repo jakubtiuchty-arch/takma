@@ -11,8 +11,8 @@ export const rfidPrinterCategory: Subcategory = {
   seoDescription: 'Drukarki RFID do druku i kodowania etykiet UHF. Poznaj typy urządzeń, ich zastosowania i wymagania. Dobierz drukarkę, etykiety oraz konfigurację z TAKMA.',
   longDescription: 'Drukarki RFID drukują tekst, grafikę i kody kreskowe oraz zapisują dane w układzie etykiety RFID. Modele RAIN UHF RFID służą do znakowania towarów, opakowań i wyposażenia. Wybierz urządzenie do stanowiska pracy, linii produkcyjnej lub drukowania w magazynie. TAKMA pomoże dobrać drukarkę, etykiety i konfigurację do Twojego procesu.',
   icon: 'printer',
-  productIds: ['zebra-zd621r', 'zebra-zt411-rfid'],
-  productCount: 2,
+  productIds: ['zebra-zd621r', 'zebra-zt411-rfid', 'zebra-zt610-rfid'],
+  productCount: 3,
 }
 
 export const rfidPrinterContent: SubcategoryRichContent = {

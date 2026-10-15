@@ -1,6 +1,7 @@
 import type { Product } from './products'
 import { zd621rAccessoryIds } from './zd621r-accessories'
 import { zt411RfidProduct } from './zt411-rfid-products'
+import { zt610RfidProduct } from './zt610-rfid-products'
 
 export const rfidPrinterProducts: Product[] = [
   {
@@ -110,4 +111,5 @@ Akcesoria do rozbudowy obejmują moduł Wi-Fi, odklejak, obcinacz i adaptery gil
     sameAs: 'https://www.zebra.com/ap/en/products/printers/desktop/zd600-series/zd621r.html',
   },
   zt411RfidProduct,
+  zt610RfidProduct,
 ]

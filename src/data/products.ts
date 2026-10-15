@@ -329,11 +329,11 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
     productIds: [
-      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 34,
+    productCount: 35,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -348,11 +348,11 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
       'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510',
-      'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 45,
+    productCount: 46,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -9910,44 +9910,48 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     id: 'zebra-zt610',
     slug: 'zebra-zt610',
     name: 'Zebra ZT610',
-    shortDescription: 'Zebra ZT610 — przemysłowa drukarka etykiet 4" klasy heavy-duty, następca 110Xi4. 203/300/600 dpi, do 356 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT610 — 600 dpi, RFID | od 10 431 zł',
-    seoDescription: 'Zebra ZT610 — drukarka przemysłowa heavy-duty 4", 600 dpi, RFID UHF, 356 mm/s, Link-OS. Następca 110Xi4. 12 konfiguracji od 10 431 zł netto | TAKMA.',
-    description: `Zebra ZT610 to najlepszy wybór dla centrów dystrybucyjnych i linii produkcyjnych wymagających najwyższej klasy drukarki przemysłowej 4" z trwałością Xi i rozdzielczością do 600 dpi. [Jak wybrać drukarkę etykiet?](/poradnik/jak-wybrac-drukarke-etykiet) — poradnik kupującego.
+    shortDescription: 'Przemysłowa drukarka Zebra ZT610 do standardowych etykiet. Druk do 104 mm, rozdzielczość 203, 300 lub 600 dpi i warianty Micro Label.',
+    seoTitle: 'Zebra ZT610 — przemysłowa drukarka etykiet 203–600 dpi',
+    seoDescription: 'Zebra ZT610 do standardowego druku etykiet: 203, 300 lub 600 dpi, szerokość do 104 mm. Porównaj konfiguracje i warianty Micro Label w TAKMA.',
+    description: `Zebra ZT610 to przemysłowa drukarka etykiet o szerokości druku do 104 mm. Drukuje tekst, grafikę i kody kreskowe metodą termotransferową lub termiczną bezpośrednią. Ta oferta obejmuje konfiguracje bez fabrycznego modułu RFID. Dobór urządzenia opisuje [poradnik o drukarkach etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-## Następca legendarnej 110Xi4
+## Następca 110Xi4
 
-Zebra ZT610 to przemysłowa drukarka etykiet klasy heavy-duty, będąca bezpośrednim następcą legendarnej serii 110Xi4 — jednej z najdłużej produkowanych i najszerzej stosowanych drukarek przemysłowych na świecie. ZT610 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w najbardziej wymagających środowiskach produkcyjnych, magazynowych i logistycznych.
+ZT610 należy do przemysłowej serii ZT600 i zastępuje model 110Xi4. Służy do regularnego druku etykiet w zakładach produkcyjnych, magazynach i centrach dystrybucyjnych. Ma metalową konstrukcję, 1 GB pamięci RAM i 2 GB pamięci Flash.
 
 ## Metalowa konstrukcja i boczne ładowanie mediów
 
-Konstrukcja ZT610 to całkowicie metalowa obudowa z dwuczęściową pokrywą bi-fold i powiększonym oknem inspekcyjnym. Boczny system ładowania mediów (Easy Side-Loading) pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej — wymiana trwa dosłownie kilkanaście sekund. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), z nacięciem (notch) i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 104 mm, co przekłada się na ostre kody kreskowe i czytelny tekst nawet przy prędkości 356 mm/s.
+Metalowa obudowa ma składaną pokrywę z oknem do kontroli materiałów. Etykiety i taśmę wkłada się z boku drukarki. Urządzenie obsługuje rolki o średnicy do 203 mm na gilzie 76 mm. Czujniki transmisyjny i refleksyjny wykrywają materiał oraz znaczniki etykiet.
+
+Do druku termotransferowego potrzebujesz taśmy barwiącej. Drukarka obsługuje taśmy o długości do 450 m, szerokości 51–110 mm i gilzie 25,4 mm. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy.
 
 ## Trzy rozdzielczości: 203, 300 i 600 dpi
 
-ZT610 jest dostępna w trzech rozdzielczościach: 203 dpi (standard do etykiet logistycznych), 300 dpi (do małych kodów 2D i cenówek) oraz 600 dpi (do mikro-etykiet elektronicznych, jubilerskich i farmaceutycznych o wysokości nawet 3 mm). Prędkość druku zależy od rozdzielczości: 356 mm/s przy 203 dpi, 305 mm/s przy 300 dpi i 152 mm/s przy 600 dpi. Drukarka obsługuje media o szerokości od 20 mm do 114 mm i rolki o średnicy do 203 mm na rdzeniu 76 mm — to oznacza rzadsze wymiany i mniej przestojów w pracy ciągłej.
+Wybierz 203 dpi do większych etykiet logistycznych lub 300 dpi do drobniejszych tekstów i kodów. Wersja 600 dpi służy do bardziej szczegółowego nadruku. Maksymalna prędkość wynosi 356 mm/s przy 203 dpi, 305 mm/s przy 300 dpi i 152 mm/s przy 600 dpi. Rozdzielczość oraz wyposażenie określa numer PN w tabeli wariantów.
 
-## Wyświetlacz, Link-OS i Zebra Print DNA
+## Wyświetlacz, Link-OS i Zebra DNA
 
-Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma kolorowy LCD bez dotyku) zmienia kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości kilku metrów. Uproszczona nawigacja ikonowa grupuje funkcje logicznie, eliminując potrzebę szkolenia. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Cloud Connect (integracja z chmurą), Profile Manager (centralne zarządzanie flotą) oraz Visibility Services (monitorowanie stanu drukarek w czasie rzeczywistym). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje — drukarka może pobierać dane z plików, baz danych lub czytników i drukować bez komputera.
+Kolorowy ekran 4,3 cala służy do ustawiania parametrów i sprawdzania stanu drukarki. Rodzaj ekranu zależy od konfiguracji. System Link-OS oraz narzędzia Zebra DNA wspierają konfigurację, diagnostykę i zarządzanie urządzeniem. Dostępność poszczególnych funkcji zależy od wersji oprogramowania i licencji.
 
-## Łączność i RFID UHF
+## Łączność
 
-Łączność standardowa obejmuje USB 2.0, RS-232 Serial, Gigabit Ethernet (10/100/1000) i Bluetooth 4.1 oraz dwa porty USB Host do integracji plug-and-play z czytnikami kodów i pamięciami USB. Dwa otwarte sloty komunikacyjne pozwalają na rozbudowę o Wi-Fi 802.11ac, port równoległy (LPT) lub dodatkowy interfejs Ethernet. RFID UHF (EPC Gen 2 V2, ISO 18000-63) jest instalowany w terenie w zaledwie 5 minut — bez konieczności wysyłki do serwisu.
+Drukarka ma USB, USB Host, RS-232 i Gigabit Ethernet. Dostępność Wi-Fi zależy od PN lub zamontowanego modułu rozszerzeń. Wybierz interfejs zgodny ze swoim stanowiskiem i systemem do druku etykiet.
+
+Standardową ZT610 można rozbudować o RFID po sprawdzeniu zgodności konfiguracji. Gotowe wersje do druku i kodowania UHF znajdziesz na karcie [Zebra ZT610 RFID](/produkt/zebra-zt610-rfid). Wersja Micro Label nie obsługuje tej rozbudowy.
 
 ## Dla kogo jest Zebra ZT610?
 
-Zebra ZT610 to idealna drukarka dla zakładów produkcyjnych, centrów dystrybucji, magazynów wysokiego składowania i firm logistycznych, które potrzebują niezawodnego druku 24/7 z opcją 600 dpi do specjalistycznych zastosowań. Zastępuje modele 110Xi4 i ZM400 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania. Szukasz lżejszej alternatywy? [ZT411](/produkt/zebra-zt411) to mid-range 4". Potrzebujesz szerokich etykiet? [ZT620](/produkt/zebra-zt620) drukuje do 168 mm.
+ZT610 służy do drukowania oznaczeń części, opakowań i lokalizacji magazynowych. Wersje o wyższej rozdzielczości umożliwiają przygotowanie drobniejszych kodów oraz numerów seryjnych. Materiał etykiety i taśmę dobierz do powierzchni oraz warunków użytkowania.
+
+Do druku o mniejszym obciążeniu sprawdź [ZT411](/produkt/zebra-zt411). Jeśli potrzebujesz szerokości druku do 168 mm, sprawdź [ZT620](/produkt/zebra-zt620).
 
 ## ZT610 Micro Label — druk mikroetykiet od 3 mm
 
-Nowa wersja do druku mikroetykiet — ZT610 Micro Label (seria ZT61A) — drukuje etykiety od 3 mm z ulepszoną rejestracją, dedykowaną głowicą 600 dpi i firmware Link-OS 7.5+. Idealna do jubilerstwa, farmacji i elektroniki. Szczegółowe porównanie w [poradniku o drukarkach do mikroetykiet 600 dpi](/poradnik/drukarka-do-mikroetykiet-600-dpi).
+ZT610 Micro Label z rodziny ZT61A to osobna konfiguracja 600 dpi do mikroetykiet. Ma zmodyfikowany tor materiałów i ustawienia rejestracji druku. Nie obsługuje obcinacza ani RFID. Szczegóły znajdziesz w [poradniku o drukarkach do mikroetykiet 600 dpi](/poradnik/drukarka-do-mikroetykiet-600-dpi).
 
 ## Koszt posiadania (TCO)
 
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia. Serwis przemysłowych drukarek Zebra w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra).
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Przy porównaniu kosztów uwzględnij drukarkę, etykiety, taśmy barwiące, części zużywające się oraz serwis. Obcinacz, nawijak i moduły łączności dobierz do sposobu pracy. Ich obecność w sekcji akcesoriów nie oznacza, że są dołączone do każdego wariantu. Serwis opisujemy na stronie [serwis-zebry.pl](https://www.serwis-zebry.pl/serwis-drukarek-zebra).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -10001,7 +10005,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wilgotność', value: '20–85% bez kondensacji' },
       { name: 'Wymiary (D×S×W)', value: '505 × 268 × 396 mm' },
       { name: 'Waga', value: '22,7 kg' },
-      { name: 'RFID UHF (opcja)', value: 'EPC Gen 2 V2, ISO 18000-63, montaż w terenie 5 min' },
+      { name: 'Rozbudowa o RFID', value: 'Opcjonalna po sprawdzeniu konfiguracji; nie dotyczy wersji Micro Label' },
       { name: 'Certyfikaty', value: 'IEC 60950, FCC-B, CE, cTUVus, ENERGY STAR' },
       { name: 'Zastępuje model', value: '110Xi4, ZM400' },
     ],
@@ -10014,7 +10018,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'Elektronika — etykiety PCB, identyfikacja komponentów SMD',
       'Logistyka kontraktowa — druk 24/7, integracja z WMS, wieloformatowe etykiety',
       'Chemia i petrochemia — etykiety GHS, odporne na chemikalia (resin)',
-      'RFID — kodowanie tagów UHF, inwentaryzacja, supply chain',
       'Druk mikro-etykiet — jubilerstwo, farmacja, elektronika (600 dpi)',
     ],
     variants: [
@@ -10088,8 +10091,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         answer: 'Tak. ZT610 jest dostępna w wersji 600 dpi (24 dots/mm) — modele ZT61046-*. Prędkość druku przy 600 dpi to 152 mm/s, a maksymalna długość ciągła 762 mm. Rozdzielczość 600 dpi jest niezbędna do mikro-etykiet o wysokości 3–5 mm (jubilerstwo, farmacja, elektronika), bardzo drobnych kodów 2D (DataMatrix, QR) i tekstu poniżej 4 pkt.',
       },
       {
-        question: 'Jak szybko można zainstalować moduł RFID w ZT610?',
-        answer: 'Moduł RFID UHF (EPC Gen 2 V2, ISO 18000-63) jest field-installable — instalacja w terenie trwa ok. 5 minut i nie wymaga narzędzi ani wysyłki do serwisu. Adaptacyjna technologia kodowania automatycznie kalibruje się do różnych tagów RFID, co eliminuje konieczność ręcznych regulacji.',
+        question: 'Czy standardową ZT610 można rozbudować o RFID?',
+        answer: 'Tak, po sprawdzeniu zgodności konkretnej konfiguracji i dobraniu modułu. Wersja Micro Label nie obsługuje RFID. Jeśli potrzebujesz gotowej drukarki z fabrycznym modułem, wybierz [Zebra ZT610 RFID](/produkt/zebra-zt610-rfid).',
       },
       {
         question: 'Jaki jest koszt eksploatacji ZT610 przy 5 000 etykiet dziennie?',
@@ -10125,7 +10128,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Ile kosztuje drukarka Zebra ZT610?',
-        answer: 'Zebra ZT610 jest dostępna w 12 konfiguracjach od 10 431 zł netto (203 dpi, LCD). Ceny zależą od rozdzielczości i wyposażenia: 203 dpi od ~10 400 zł, 300 dpi od ~10 750 zł, 600 dpi od ~17 750 zł. Wersja ZT610 Micro Label (ZT61A) do druku mikroetykiet jest dostępna w promocji od 7 899 zł netto (do 30.06.2026). Ceny obejmują drukarkę — akcesoria (gilotyna, odklejak, Wi-Fi, RFID) doliczane osobno. Aktualne ceny z dostępnością w tabeli wariantów powyżej.',
+        answer: 'Cena zależy od rozdzielczości, numeru PN i wyposażenia. Aktualne ceny oraz dostępność sprawdzisz w tabeli wariantów. Etykiety, taśmy oraz akcesoria do rozbudowy są sprzedawane osobno.',
       },
       {
         question: 'Gdzie kupić Zebra ZT610 w Polsce?',
@@ -54723,7 +54726,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     slug: 'zebra-glowica-203dpi-zt610',
     name: 'Głowica 203 dpi do drukarki Zebra ZT610, ZT610R',
     shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT610, ZT610R — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT610 i ZT610R',
-    description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT610 i ZT610R. Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła. Żywotność ok. 50–150 km druku.',
+    description: 'Głowica Zebra P1083320-010 do drukarek ZT610 i ZT610R o rozdzielczości 203 dpi. Dobierz ją do rozdzielczości urządzenia. Wymiana samej głowicy nie służy do zmiany rozdzielczości.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -54755,7 +54758,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     manufacturerId: 'zebra',
     priceFrom: 2360.53,
     images: ['/images/products/P1083320-011.png'],
-    imageDescriptions: ['Głowica 300 dpi do drukarki Zebra ZT510, ZT610, ZT610R'],
+    imageDescriptions: ['Głowica 300 dpi do drukarki Zebra ZT610, ZT610R'],
     tags: ['produkcja', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -54851,7 +54854,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     slug: 'zebra-nawijak-wewnetrzny-zt610',
     name: 'Wewnętrzny nawijak do drukarki Zebra ZT610, ZT610R',
     shortDescription: 'Wewnętrzny nawijak do drukarki Zebra ZT610, ZT610R — moduł nawijaka wewnętrznego do drukarek Zebra ZT610 i ZT610R',
-    description: 'Oryginalny moduł nawijaka wewnętrznego Zebra do drukarek ZT610 i ZT610R. Nawija gotowe etykiety wewnątrz drukarki po odklejeniu od podkładu.',
+    description: 'Oryginalny moduł nawijaka wewnętrznego Zebra do drukarek ZT610 i ZT610R. Nawija gotowe etykiety z podkładem albo sam podkład w trybie odklejania. Dobierz tryb pracy do konfiguracji drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
