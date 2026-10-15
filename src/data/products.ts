@@ -1,3 +1,4 @@
+import { zd611rAdditionalAccessories } from './zd611r-accessories'
 import { zt421RfidAdditionalAccessories } from './zt421-rfid-products'
 import { zt231RfidAdditionalAccessories } from './zt231-rfid-accessories'
 import { rfidPrinterCategory } from './rfid-printer-category'
@@ -317,8 +318,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
-    productCount: 25,
+    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
+    productCount: 26,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -348,13 +349,13 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
     productIds: [
-      'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
+      'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 49,
+    productCount: 50,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -414,6 +415,7 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
     productIds: [
+      ...zd611rAdditionalAccessories.map(accessory => accessory.id),
       'zebra-printhead-zd220d-203', 'zebra-printhead-zd220t-203',
       'zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300',
       'zebra-printhead-zd421t-203', 'zebra-printhead-zd421t-300',
@@ -506,7 +508,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 215,
+    productCount: 222,
   },
   {
     id: 'dyspensery-etykiet',
@@ -53420,11 +53422,9 @@ Idealne rozwiązanie dla drukarek zakupionych w wersji bazowej (tylko USB), któ
   {
     id: 'zebra-module-rs232-zd421',
     slug: 'zebra-interfejs-rs232-zd411-zd421',
-    name: 'Interfejs RS-232 do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t',
-    shortDescription: 'Interfejs RS-232 do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t — moduł interfejsu szeregowego RS-232 do drukarek ZD411 i ZD421',
-    description: `Moduł interfejsu szeregowego RS-232 Zebra do drukarek ZD411d, ZD411t, ZD421d i ZD421t. Umożliwia podłączenie drukarki do urządzeń i systemów wykorzystujących komunikację szeregową.
-
-Instalacja w slocie modularnym drukarki.`,
+    name: 'Interfejs RS-232 Zebra ZD411 / ZD421 / ZD611R — P1112640-016',
+    shortDescription: 'Moduł RS-232 P1112640-016 do zgodnych drukarek Zebra ZD411, ZD421, ZD611 oraz ZD611R.',
+    description: `Moduł Zebra P1112640-016 umożliwia komunikację szeregową RS-232 w zgodnych drukarkach ZD411d, ZD411t, ZD421d, ZD421t, ZD611d, ZD611t i ZD611R. Przed montażem sprawdź zajęcie gniazda interfejsu oraz potrzebę zachowania Ethernetu. Przewód szeregowy jest sprzedawany osobno. Klawiatura ZKDU wymaga zgodnego portu RS-232 i formularza etykiety.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -53438,22 +53438,21 @@ Instalacja w slocie modularnym drukarki.`,
     specifications: [
       { name: 'Part Number', value: 'P1112640-016' },
       { name: 'Typ', value: 'Interfejs szeregowy RS-232' },
-      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD611d, ZD611t, ZD611R' },
       { name: 'Instalacja', value: 'Slot modularny' },
     ],
     applications: ['Komunikacja szeregowa', 'Integracja z systemami legacy'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd611r'],
     downloads: [],
     createdAt: '2023-06-01',
   },
   {
     id: 'zebra-module-wifi-zd421',
     slug: 'zebra-modul-wifi-zd411-zd421-zd621',
-    name: 'Moduł Wi-Fi do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d',
-    shortDescription: 'Moduł Wi-Fi do drukarek Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d — moduł bezprzewodowy Wi-Fi do drukarek ZD411, ZD421 i ZD621',
-    description: `Moduł bezprzewodowy Wi-Fi Zebra do drukarek ZD411d, ZD411t, ZD421d, ZD421t i ZD621d. Prosta instalacja w slocie modularnym.
-
-Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć Wi-Fi.`,
+    name: 'Moduł Wi-Fi Zebra ZD411 / ZD421 / ZD611R / ZD621 — P1112640-017C',
+    shortDescription: 'Moduł P1112640-017C dodaje Wi-Fi 802.11ac i Bluetooth 4.1 do zgodnych drukarek Zebra, także ZD611R. Wersja dla krajów poza USA, Kanadą i Japonią.',
+    description: `Moduł Zebra P1112640-017C dodaje Wi-Fi 802.11ac i Bluetooth 4.1 do zgodnej drukarki. Jest przeznaczony dla krajów poza USA, Kanadą i Japonią. Pasuje do ZD411d, ZD411t, ZD421d, ZD421t, ZD621d, ZD611d, ZD611t oraz ZD611R. Przed montażem sprawdź wersję urządzenia i oprogramowania. Moduł jest sprzedawany osobno; nie jest wyposażeniem standardowych PN ZD611R.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -53467,11 +53466,12 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     specifications: [
       { name: 'Part Number', value: 'P1112640-017C' },
       { name: 'Typ', value: 'Moduł Wi-Fi' },
-      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d' },
+      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d, ZD611d, ZD611t, ZD611R' },
       { name: 'Instalacja', value: 'Slot modularny, bez narzędzi' },
     ],
     applications: ['Druk bezprzewodowy', 'Druk z urządzeń mobilnych'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd611r'],
     downloads: [],
     createdAt: '2023-06-01',
   },
@@ -96147,6 +96147,7 @@ const rawProductList: Product[] = [
   ...desktopPrinters,
   ...rfidPrinterProducts,
   ...zd621rAdditionalAccessories,
+  ...zd611rAdditionalAccessories,
   ...zt411RfidAdditionalAccessories,
   ...zt231RfidAdditionalAccessories,
   ...zt421RfidAdditionalAccessories,

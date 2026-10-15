@@ -1,4 +1,5 @@
 import type { Product } from './products'
+import { zd611rProduct } from './zd611r-products'
 import { zd621rAccessoryIds } from './zd621r-accessories'
 import { zt411RfidProduct } from './zt411-rfid-products'
 import { zt610RfidProduct } from './zt610-rfid-products'
@@ -118,4 +119,5 @@ Akcesoria do rozbudowy obejmują moduł Wi-Fi, odklejak, obcinacz i adaptery gil
   zt231RfidProduct,
   zt421RfidProduct,
   zt620RfidProduct,
+  zd611rProduct,
 ]
