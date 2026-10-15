@@ -331,11 +331,11 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
     productIds: [
-      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 37,
+    productCount: 38,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -350,11 +350,11 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
-      'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 48,
+    productCount: 49,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -10185,24 +10185,26 @@ Przy porównaniu kosztów uwzględnij drukarkę, etykiety, taśmy barwiące, cz�
     id: 'zebra-zt620',
     slug: 'zebra-zt620',
     name: 'Zebra ZT620',
-    shortDescription: 'Zebra ZT620 — przemysłowa drukarka etykiet 6" klasy heavy-duty, następca 170Xi4. 203/300 dpi, do 305 mm/s, ekran dotykowy 4,3", RFID opcja, Link-OS, praca 24/7',
-    seoTitle: 'Drukarka etykiet Zebra ZT620 — heavy-duty 6" RFID | od 12 416 zł',
-    seoDescription: 'Zebra ZT620 — heavy-duty 6" RFID do etykiet paletowych i przemysłu. 305 mm/s, LCD 4,3". ZT62062-T0E0100Z od 12 416 zł netto.',
-    description: `Zebra ZT620 to najlepszy wybór dla magazynów wysokiego składowania i centrów dystrybucji wymagających szerokoformatowej drukarki przemysłowej 6" klasy heavy-duty do pracy 24/7.
+    shortDescription: 'Przemysłowa drukarka Zebra ZT620 do szerokich etykiet paletowych, logistycznych i produktowych. Druk do 168 mm, 203 lub 300 dpi, Gigabit Ethernet.',
+    seoTitle: 'Zebra ZT620 — przemysłowa drukarka etykiet do 168 mm',
+    seoDescription: 'Zebra ZT620 do szerokich etykiet paletowych i przemysłowych. Druk do 168 mm, 203 lub 300 dpi, Gigabit Ethernet i opcje obsługi etykiet. Sprawdź ofertę TAKMA.',
+    description: `Zebra ZT620 to przemysłowa drukarka etykiet o szerokości druku do 168 mm. Wykonuje nadruk kodów kreskowych, tekstu i grafiki na szerokich etykietach paletowych, logistycznych oraz produktowych.
 
-Zebra ZT620 to przemysłowa drukarka etykiet klasy heavy-duty o szerokości druku 168 mm (6,6"), będąca bezpośrednim następcą legendarnej serii 170Xi4 — najszerzej stosowanej szerokoformatowej drukarki przemysłowej na świecie. ZT620 łączy sprawdzoną wytrzymałość metalowej konstrukcji Xi z nowoczesną platformą Link-OS, kolorowym ekranem dotykowym 4,3" i pamięcią 1 GB RAM / 2 GB Flash. Drukarka jest zaprojektowana do nieprzerwanej pracy 24/7 w centrach dystrybucji, magazynach wysokiego składowania i zakładach produkcyjnych, gdzie wymagane są szerokie etykiety paletowe, logistyczne i wysyłkowe.
+Wybierz ZT620, gdy nadruk przekracza 104 mm szerokości, a stanowisko wymaga dużych rolek i metalowej obudowy. Drukarka służy do oznaczania opakowań zbiorczych, palet, beczek oraz pojemników. Może przygotowywać etykiety GS1-128, SSCC i oznaczenia chemiczne. Wymagana trwałość nadruku zależy także od doboru materiału etykiety oraz taśmy.
 
-Konstrukcja ZT620 to całkowicie metalowa obudowa z dwuczęściową pokrywą bi-fold i powiększonym oknem inspekcyjnym. Boczny system ładowania mediów (Easy Side-Loading) pozwala na wymianę rolek etykiet i taśm barwiących bez konieczności wyjmowania drukarki z linii produkcyjnej — wymiana trwa dosłownie kilkanaście sekund. Podwójne czujniki mediów (transmisyjny i refleksyjny) automatycznie rozpoznają różne typy etykiet: ciągłe, wykrojnikowe (die-cut), z nacięciem (notch) i z czarnym znacznikiem (black-mark). Głowica drukująca z technologią E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm, co jest kluczowe przy druku szerokich etykiet paletowych z kodami kreskowymi GS1-128 i etykietami GHS.
+Dostępne są rozdzielczości 203 i 300 dpi. Wersja 203 dpi drukuje z prędkością do 305 mm/s. Wersja 300 dpi drukuje do 203 mm/s i umożliwia uzyskanie większej szczegółowości tekstu, kodów 2D oraz grafiki. ZT620 nie występuje w rozdzielczości 600 dpi.
 
-ZT620 jest dostępna w dwóch rozdzielczościach: 203 dpi (standard do etykiet logistycznych i paletowych) oraz 300 dpi (do małych kodów 2D, cenówek i szczegółowych etykiet produktowych). Prędkość druku wynosi 305 mm/s przy obu rozdzielczościach — to oznacza, że 1 000 etykiet wysyłkowych 150×100 mm wydrukujesz w niecałe 6 minut. Drukarka obsługuje media o szerokości od 51 mm do 178 mm i rolki o średnicy do 203 mm na rdzeniu 76 mm — szerokie rolki oznaczają rzadsze wymiany i mniej przestojów w pracy ciągłej.
+Drukarka obsługuje termotransfer z taśmą barwiącą oraz druk termiczny bezpośredni na etykietach termoczułych. Przy odrywaniu i cięciu szerokość materiału wynosi 51–178 mm. Rolka może mieć średnicę do 203 mm na gilzie 76 mm. Taśma barwiąca ma długość do 450 m i szerokość 51–174 mm.
 
-Kolorowy dotykowy wyświetlacz 4,3" (opcja — wersja bazowa ma kolorowy LCD) zmienia kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości kilku metrów. Uproszczona nawigacja ikonowa grupuje funkcje logicznie, eliminując potrzebę szkolenia. Link-OS z pakietem Zebra Print DNA obejmuje: PrintSecure (szyfrowanie komunikacji), Cloud Connect (integracja z chmurą), Profile Manager (centralne zarządzanie flotą) oraz Visibility Services (monitorowanie stanu drukarek w czasie rzeczywistym). Opcjonalny ZBI 2.0 (Zebra BASIC Interpreter) pozwala na autonomiczne aplikacje — drukarka może pobierać dane z plików, baz danych lub czytników i drukować bez komputera.
+Metalowa rama, składana pokrywa i boczny załadunek ułatwiają obsługę szerokich materiałów. ZT620 waży 26 kg i wymaga stałego stanowiska. Ma 1 GB RAM, 2 GB pamięci Flash oraz kolorowy ekran 4,3 cala. Link-OS i narzędzia Zebra DNA wspierają konfigurację, diagnostykę i zarządzanie drukarką.
 
-Zebra ZT620 to idealna drukarka dla centrów dystrybucji, magazynów cross-docking, zakładów chemicznych (etykiety GHS) i firm logistycznych 3PL, które potrzebują niezawodnego druku szerokich etykiet 24/7. Zastępuje modele 170Xi4 i ZM600 z pełną kompatybilnością wsteczną szablonów ZPL — migracja nie wymaga modyfikacji oprogramowania.
+Interfejsy obejmują USB 2.0, USB Host, RS-232, Gigabit Ethernet i Bluetooth 4.0. Konfiguracje z Wi-Fi mają osobne numery PN. Do pozostałych wariantów możesz dobrać zgodny moduł bezprzewodowy. Przed wymianą starszej drukarki sprawdź szablony ZPL, ustawienia mediów i sposób komunikacji z systemem.
 
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
+Podstawowe warianty umożliwiają ręczne odrywanie etykiet. Konfiguracje T1 mają obcinacz, a T2 — odklejak z nawijakiem. Nawijak może zwijać wydrukowane etykiety lub sam podkład w trybie odklejania. Wybierz właściwy sposób odbioru wydruku przed zakupem. Obcinacz i nawijak są też dostępne jako zgodne zestawy rozbudowy.
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Pokazane na tej karcie PN nie mają fabrycznego kodera RFID. Rozbudowa wymaga dobrania zgodnego zestawu do konkretnego urządzenia. Jeśli potrzebujesz gotowej konfiguracji do druku i kodowania, wybierz [Zebra ZT620 RFID](/produkt/zebra-zt620-rfid).
+
+Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części zużywające się mają ochronę ograniczoną do 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -10220,14 +10222,14 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     keyParams: {
       rodzajDruku: 'Termotransferowa / termiczna',
       rozdzielczosc: '203 / 300 dpi',
-      predkoscDruku: 'do 305 mm/s',
+      predkoscDruku: 'do 305 mm/s (203 dpi) lub 203 mm/s (300 dpi)',
       szerokoscDruku: '168 mm',
       szerokoscEtykiet: '51–178 mm',
     },
     specifications: [
       { name: 'Metoda druku', value: 'Termotransferowa / termiczna bezpośrednia' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm) / 300 dpi (12 dots/mm)' },
-      { name: 'Maks. prędkość druku', value: '305 mm/s (12 ips)' },
+      { name: 'Maks. prędkość druku', value: '305 mm/s przy 203 dpi (12 ips); 203 mm/s przy 300 dpi (8 ips)' },
       { name: 'Maks. szerokość druku', value: '168 mm (6,6")' },
       { name: 'Maks. długość ciągła (203 dpi)', value: '3810 mm' },
       { name: 'Maks. długość ciągła (300 dpi)', value: '2540 mm' },
@@ -10241,7 +10243,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Typy taśm', value: 'Woskowa, woskowo-żywiczna, żywiczna' },
       { name: 'Pamięć RAM', value: '1 GB' },
       { name: 'Pamięć Flash', value: '2 GB' },
-      { name: 'Wyświetlacz', value: 'Kolorowy LCD / dotykowy 4,3" (opcja)' },
+      { name: 'Wyświetlacz', value: 'Kolorowy ekran 4,3 cala' },
       { name: 'USB', value: 'USB 2.0 High-Speed + 2× USB Host' },
       { name: 'Ethernet', value: 'Gigabit 10/100/1000' },
       { name: 'Serial', value: 'RS-232' },
@@ -10249,9 +10251,9 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Wi-Fi', value: '802.11ac (opcja)' },
       { name: 'Sloty rozszerzeń', value: '2 otwarte sloty komunikacyjne' },
       { name: 'Czujniki mediów', value: 'Transmisyjny + refleksyjny' },
-      { name: 'Języki programowania', value: 'ZPL, ZPL II, XML, EPL' },
+      { name: 'Języki programowania', value: 'ZPL, ZPL II, XML' },
       { name: 'System operacyjny', value: 'Link-OS' },
-      { name: 'RFID', value: 'Opcja — UHF EPC Gen 2 V2, ISO 18000-63, RAIN' },
+      { name: 'Rozbudowa', value: 'Zgodny zestaw dobierany do urządzenia; oferowane PN bez fabrycznego kodera RFID' },
       { name: 'ZBI 2.0', value: 'Opcja — Zebra BASIC Interpreter' },
       { name: 'Konstrukcja', value: 'Metalowa rama, składana pokrywa bi-fold' },
       { name: 'Wymiary (D×S×W)', value: '505 × 341 × 396 mm' },
@@ -10259,6 +10261,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Zasilanie', value: '90–265 VAC, 47–63 Hz, 250 W' },
       { name: 'Temperatura pracy', value: '5–40°C (TT) / 0–40°C (DT)' },
       { name: 'Wilgotność', value: '20–85% bez kondensacji' },
+      { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykiety paletowe GS1-128 w centrach dystrybucji',
@@ -10341,11 +10344,11 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaką prędkość druku ma Zebra ZT620?',
-        answer: 'ZT620 drukuje z prędkością do 305 mm/s (12 ips) zarówno przy 203 dpi, jak i 300 dpi. W praktyce oznacza to ok. 1 000 etykiet wysyłkowych 150×100 mm w niecałe 6 minut. To wystarczająca prędkość dla większości centrów dystrybucji pracujących w trybie 24/7.',
+        answer: 'Wersja 203 dpi drukuje do 305 mm/s (12 ips). Wersja 300 dpi drukuje do 203 mm/s (8 ips). Rzeczywista wydajność zależy od materiału, zawartości etykiety i ustawień zadania.',
       },
       {
         question: 'Czy Zebra ZT620 obsługuje RFID?',
-        answer: 'Tak. ZT620 może być zamówiona z fabrycznym modułem RFID UHF (EPC Gen 2 V2, ISO 18000-63, RAIN RFID) lub może być uaktualniona w terenie — bez konieczności wysyłania drukarki do serwisu. Moduł RFID pozwala na jednoczesne drukowanie i kodowanie tagów RFID na szerokich etykietach paletowych.',
+        answer: 'Pokazane PN nie zawierają fabrycznego kodera RFID. Rozbudowa wymaga dobrania zgodnego zestawu do urządzenia. Gotowe warianty do druku i kodowania znajdziesz na osobnej karcie [Zebra ZT620 RFID](/produkt/zebra-zt620-rfid).',
       },
       {
         question: 'Jaką taśmę barwiącą wybrać do ZT620?',
@@ -10353,11 +10356,11 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy ZT620 ma ekran dotykowy?',
-        answer: 'ZT620 jest dostępna w dwóch wersjach wyświetlacza: z kolorowym LCD (modele E0100Z) i z kolorowym dotykowym ekranem 4,3" (modele E0200Z). Oba ekrany zmieniają kolor na czerwony podczas błędów, co pozwala operatorom zidentyfikować problem z odległości. Wersja dotykowa oferuje wygodniejszą nawigację ikonową.',
+        answer: 'Rodzina ZT620 obejmuje drukarki z kolorowym ekranem 4,3 cala. Aktualne urządzenia mają ekran dotykowy. Przy doborze części lub porównywaniu ze starszą drukarką uwzględnij jej numer seryjny i typ panelu.',
       },
       {
         question: 'Czy ZT620 zastępuje drukarki ZM600 i 170Xi4?',
-        answer: 'Tak. Zebra ZT620 oficjalnie zastępuje modele 170Xi4 i ZM600 (6"). ZT610 zastępuje 110Xi4 i ZM400 (4"). Wszystkie szablony ZPL i EPL ze starszych modeli działają bez zmian. Link-OS dodaje nowe możliwości zarządzania, których starsze modele nie miały.',
+        answer: 'ZT620 zastępuje modele 170Xi4 i ZM600 w klasie drukarek 6-calowych. Przed wymianą urządzenia sprawdź szablony ZPL, interfejsy oraz ustawienia mediów. Części i moduły starszych drukarek nie są automatycznie zgodne z ZT620.',
       },
       {
         question: 'Ile waży Zebra ZT620 i jakie ma wymiary?',
@@ -10365,7 +10368,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jak przejść z Zebra 170Xi4 na ZT620?',
-        answer: 'ZT620 jest bezpośrednim następcą 170Xi4. Obsługuje ten sam język ZPL/ZPL II, więc istniejące szablony etykiet będą działać bez zmian. Szerokość druku pozostaje 6" (168 mm). Zmieniły się part numbery akcesoriów (głowice, obcinacze). Ethernet jest teraz standardem, Wi-Fi jest opcją. Migracja nie wymaga zmian w systemie WMS/ERP — wystarczy zainstalować nowe sterowniki.',
+        answer: 'Zachowaj szerokość etykiety w zakresie obsługiwanym przez ZT620. Sprawdź szablony ZPL, rozdzielczość, połączenie z systemem i sposób odbioru etykiet. Dobierz nowe części oraz materiały według specyfikacji ZT620. Przed wdrożeniem wykonaj próbny wydruk.',
       },
       {
         question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
@@ -10388,7 +10391,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość druku': 'do 356 mm/s',
             'Pamięć': '1 GB RAM / 2 GB Flash',
             'Wyświetlacz': 'Kolorowy LCD / dotykowy 4,3"',
-            'RFID': 'Opcja (upgrade w terenie)',
             'Waga': '22,7 kg',
             'Zastępuje': '110Xi4, ZM400',
           },
@@ -10402,7 +10404,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Prędkość druku': 'do 305 mm/s',
             'Pamięć': '1 GB RAM / 2 GB Flash',
             'Wyświetlacz': 'Kolorowy LCD / dotykowy 4,3"',
-            'RFID': 'Opcja (upgrade w terenie)',
             'Waga': '26 kg',
             'Zastępuje': '170Xi4, ZM600',
           },
@@ -10414,7 +10415,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
       { name: 'ZT600 Series Spec Sheet (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt600-series-specification-sheet-en-us.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['zebra-zt421', 'honeywell-px65', 'honeywell-pm65', 'zebra-zt610'],
+    relatedProducts: ['zebra-zt620-rfid', 'zebra-zt421', 'honeywell-px65', 'honeywell-pm65', 'zebra-zt610'],
     createdAt: '2022-08-15',
     sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt600-series/zt620.html',
   },
@@ -54879,7 +54880,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     slug: 'zebra-glowica-203dpi-zt620',
     name: 'Głowica 203 dpi do drukarki Zebra ZT620, ZT620R',
     shortDescription: 'Głowica 203 dpi do drukarki Zebra ZT620, ZT620R — oryginalna głowica drukująca 203 dpi do drukarek Zebra ZT620 i ZT620R',
-    description: 'Oryginalna głowica drukująca Zebra 203 dpi (8 dots/mm) do drukarek przemysłowych ZT620 i ZT620R. Technologia E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości 168 mm. Żywotność ok. 50–150 km druku.',
+    description: 'Głowica Zebra P1083320-015 służy do druku w rozdzielczości 203 dpi w ZT620 i ZT620 RFID. Obsługuje szerokość druku do 168 mm. Przed zamówieniem sprawdź model, PN głowicy oraz rozdzielczość urządzenia. Wymiana samej głowicy nie służy do zmiany rozdzielczości drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -54936,7 +54937,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 301.09,
-    images: ['/images/products/P1083320-033.jpg'],
+    images: ['/images/products/P1083320-033-framed.png'],
     imageDescriptions: ['Wałek dociskowy do drukarki Zebra ZT620, ZT620R'],
     tags: ['produkcja', 'magazyn'],
     availability: 'available',
@@ -54955,19 +54956,20 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     id: 'zebra-cutter-zt620',
     slug: 'zebra-gilotyna-zt620',
     name: 'Gilotyna (cutter) do drukarki Zebra ZT620, ZT620R',
-    shortDescription: 'Gilotyna (cutter) do drukarki Zebra ZT620, ZT620R — moduł gilotyny do automatycznego odcinania etykiet w drukarkach ZT620 i ZT620R',
-    description: 'Oryginalny moduł gilotyny Zebra do drukarek przemysłowych ZT620 i ZT620R. Automatyczne odcinanie szerokich etykiet po wydruku. Montaż w terenie — nie wymaga serwisu fabrycznego.',
+    shortDescription: 'Obcinacz Zebra P1083320-135 do ZT620 i ZT620 RFID. Zestaw z płytą PCBA P1081294-02 i oprogramowaniem V25.',
+    description: 'Zebra P1083320-135 to zestaw obcinacza do drukarek ZT620 i ZT620 RFID. Ma płytę PCBA P1081294-02 z oprogramowaniem V25. Przed montażem sprawdź zgodność oprogramowania drukarki i obcinacza. Przy etykietach RFID ustaw cięcie między wkładkami, aby nie uszkodzić anteny ani układu. Zestaw zastępuje starszy obcinacz P1083320-119.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     images: ['/images/products/P1083320-119.jpg'],
     imageDescriptions: ['Gilotyna (cutter) do drukarki Zebra ZT620, ZT620R'],
     tags: ['produkcja', 'magazyn'],
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: false,
     isBestseller: false,
     specifications: [
-      { name: 'Part Number', value: 'P1083320-119' },
+      { name: 'Part Number', value: 'P1083320-135' },
+      { name: 'Płyta i oprogramowanie obcinacza', value: 'PCBA P1081294-02, V25' },
       { name: 'Kompatybilność', value: 'Zebra ZT620, ZT620R' },
     ],
     applications: [],
@@ -54980,7 +54982,7 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
     slug: 'zebra-nawijak-wewnetrzny-zt620',
     name: 'Wewnętrzny nawijak do drukarki Zebra ZT620, ZT620R',
     shortDescription: 'Wewnętrzny nawijak do drukarki Zebra ZT620, ZT620R — moduł nawijaka wewnętrznego do drukarek Zebra ZT620 i ZT620R',
-    description: 'Oryginalny moduł nawijaka wewnętrznego Zebra do drukarek ZT620 i ZT620R. Nawija gotowe etykiety wewnątrz drukarki po odklejeniu od podkładu.',
+    description: 'Zebra P1083320-085 to zestaw nawijaka wewnętrznego do ZT620 i ZT620 RFID. Zwija pełną rolkę wydrukowanych etykiet na gilzę 76 mm albo nawija sam podkład w trybie odklejania. Nie nawija odklejonych etykiet samoprzylepnych bez podkładu. Przed montażem sprawdź konfigurację drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
