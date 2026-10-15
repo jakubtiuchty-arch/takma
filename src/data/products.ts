@@ -1,3 +1,4 @@
+import { zq521RfidAdditionalAccessories } from './zq521-rfid-products'
 import { zq630RfidAdditionalAccessories } from './zq630-plus-rfid-products'
 import { zd611rAdditionalAccessories } from './zd611r-accessories'
 import { zt421RfidAdditionalAccessories } from './zt421-rfid-products'
@@ -371,12 +372,12 @@ export const subcategories: Subcategory[] = [
     productIds: [
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
-      'zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus',
+      'zebra-zq511', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
       'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus',
       'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3',
       'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l',
     ],
-    productCount: 30,
+    productCount: 31,
   },
   {
     id: 'mobilne-drukarki-etykiet',
@@ -388,8 +389,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie: na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
-    productCount: 16,
+    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
+    productCount: 17,
   },
   rfidPrinterCategory,
   {
@@ -417,6 +418,7 @@ export const subcategories: Subcategory[] = [
     icon: 'settings',
     productIds: [
       ...zq630RfidAdditionalAccessories.map(a => a.id),
+      ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
       'zebra-printhead-zd220d-203', 'zebra-printhead-zd220t-203',
       'zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300',
@@ -510,7 +512,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 227,
+    productCount: 231,
   },
   {
     id: 'dyspensery-etykiet',
@@ -12347,34 +12349,34 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     id: 'zebra-zq521',
     slug: 'zebra-zq521',
     name: 'Zebra ZQ521',
-    shortDescription: 'Zebra ZQ521 — wzmocniona mobilna drukarka etykiet 4", MIL-STD-810G, IP54, upadki z 2,1 m, etykiety wysyłkowe 100×150',
-    seoTitle: 'Mobilna drukarka Zebra ZQ521 — 4" etykiety 100×150 mm | od 2 979 zł',
-    seoDescription: 'Zebra ZQ521 — mobilna 4" do etykiet 100×150 mm dla kurierów i logistyki. IP54, -20°C. ZQ52-BUE001E-00 od 2 979 zł netto.',
-    description: `Zebra ZQ521 to najlepszy wybór dla firm kurierskich i logistycznych potrzebujących wzmocnionej mobilnej drukarki 4" do druku pełnowymiarowych etykiet wysyłkowych w terenie.
+    shortDescription: 'Mobilna drukarka termiczna do etykiet i potwierdzeń. Druk do 104 mm, 203 dpi, bateria wymienna i obudowa IP54. Łączność zależy od PN.',
+    seoTitle: 'Zebra ZQ521 — mobilna drukarka etykiet do 104 mm',
+    seoDescription: 'Zebra ZQ521 drukuje etykiety wysyłkowe i potwierdzenia w terenie. 203 dpi, druk do 104 mm, Bluetooth lub Wi-Fi. Wybierz PN i akcesoria w TAKMA.',
+    description: `Zebra ZQ521 to mobilna drukarka termiczna do etykiet i potwierdzeń. Drukuje przy towarze, na rampie lub podczas dostawy, bez taśmy barwiącej.
 
-Zebra ZQ521 to wzmocniona mobilna drukarka etykiet i paragonów o szerokości druku 4 cale (104 mm), zaprojektowana do profesjonalnego druku pełnowymiarowych etykiet wysyłkowych bezpośrednio w terenie. Następca modelu ZQ520 i starszy brat kompaktowej ZQ511.
+## Etykiety wysyłkowe i potwierdzenia
 
-Certyfikat wojskowy MIL-STD-810G, odporność na upadki z 2,1 metra na beton, 1300 upadków obrotowych z 1 m (IEC68-2-32) i klasa ochrony IP54 (IP65 z egzoszkieletem) — ZQ521 jest stworzona do najtrudniejszych warunków pracy kuriera, magazyniera i serwisanta.
+Rozdzielczość wynosi 203 dpi, a szerokość nadruku do 104 mm. Drukarka obsługuje materiał o szerokości 50,8–113 mm i rolki o średnicy do 57 mm. Format 100 × 150 mm wymaga dobrania zgodnej rolki i szablonu. Maksymalna prędkość 127 mm/s dotyczy włączonego Draft Mode.
 
-Bateria PowerPrecision+ 3250 mAh zapewnia druk 600+ pełnowymiarowych etykiet wysyłkowych na jednym ładowaniu. Opcjonalna bateria rozszerzona 6500 mAh podwaja zasięg pracy. Dual-radio: Bluetooth 4.1 + Wi-Fi 802.11ac (2,4/5 GHz) do jednoczesnej pracy z terminalem mobilnym i siecią firmową.
+Wybierz etykiety termiczne z podkładem albo konfigurację linerless, jeśli potrzebujesz materiału bez podkładu. Wersje ZQ52-BUE100E-00 i ZQ52-BUW100E-00 są przeznaczone do linerless. Nie zakładaj zgodności tego materiału z pozostałymi PN.
 
-Kluczowa przewaga ZQ521 nad ZQ511: szerokość druku 104 mm pozwala drukować standardowe etykiety wysyłkowe 100×150 mm (4×6") bez obcinania — standard dla kurierów DPD, InPost, DHL, UPS i GLS. ZQ511 (3") jest lepsza do mniejszych etykiet produktowych i pokwitowań.
+## Dobór łączności i baterii według PN
 
-Opcja druku etykiet bez podkładu (linerless) redukuje odpady o 40%. Obsługa CPCL, ZPL i ZBI 2.x — pełna kompatybilność z istniejącymi systemami WMS i ERP. Temperatura pracy od -20°C do +55°C pozwala na pracę w chłodniach, na rampach załadunkowych i w pełnym słońcu. Wbudowany NFC (Zebra Print Touch) umożliwia błyskawiczne parowanie jednym dotknięciem.
+Warianty BUE mają Bluetooth. Warianty BUW mają dodatkowo Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz. NFC Print Touch ułatwia parowanie ze zgodnym urządzeniem. Integracja z systemem wymaga obsługi formatu wydruku i wybranego połączenia.
 
-Zebra ZQ521 to flagowa mobilna drukarka etykiet 4-calowa z serii ZQ500, przeznaczona do profesjonalnych zastosowań w logistyce last-mile, dostawach, magazynie i cross-dockingu. Łączy wyjątkową wytrzymałość klasy wojskowej (MIL-STD-810G) z zaawansowaną łącznością bezprzewodową i inteligentnym zarządzaniem flotą przez Link-OS.
+ZQ52-BUE001E-00 jest oferowany bez baterii. Pozostałe konfiguracje w tabeli mają baterię standardową PowerPrecision+ o nominalnej pojemności 3250 mAh. Opcjonalna bateria rozszerzona ma 6500 mAh. Czas pracy zależy od nadruku, formatu etykiety, połączeń i temperatury.
 
-Drukarka drukuje etykiety samoprzylepne, paragony i etykiety linerless o szerokości do 113 mm z prędkością do 127 mm/s w rozdzielczości 203 dpi. Tryb Draft Mode dodatkowo przyspiesza druk tekstu. Wbudowana pamięć 256 MB RAM i 512 MB Flash obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami.
+## Praca w terenie
 
-Konstrukcja odporna na upadki z 2,1 metra na beton, 1300 upadków obrotowych z 1 m, klasa IP54 (IP65 z egzoszkieletem). Temperatura pracy od -20°C do +55°C z trybem Cold Temperature Compensation dla optymalnej jakości druku w niskich temperaturach.
+Obudowa ma klasę IP54. Drukarka toleruje upadki z 2,1 m na beton. Opcjonalny egzoszkielet zwiększa ochronę do IP65 i odporność na upadki do 3 m. Zakres temperatury pracy wynosi od −20 do 55°C. Z baterią standardową urządzenie waży około 790 g.
 
-Bateria PowerPrecision+ Li-Ion 3250 mAh (opcjonalnie 6500 mAh) z technologią monitorowania stanu baterii. Dual-radio: Bluetooth 4.1 (EDR + LE) i Wi-Fi 802.11ac (2,4/5 GHz) z jednoczesną pracą obu interfejsów. NFC (Zebra Print Touch) do parowania jednym dotknięciem. USB 2.0 OTG do serwisu.
+Link-OS oraz narzędzia Zebra DNA wspierają konfigurację i zarządzanie drukarką. Do ładowania dobierz zasilacz sieciowy lub zgodną ładowarkę wyjętej baterii. W pojeździe sprawdź napięcie instalacji przed wyborem adaptera.
 
-Zebra ZQ521 zastępuje model ZQ520. Baterie PowerPrecision+ i ładowarki są współdzielone w ramach serii ZQ5x0 (ZQ511, ZQ521), natomiast etui i egzoszkielety mają dedykowane wersje dla modelu 3-calowego (ZQ511) i 4-calowego (ZQ521). Dostępna w wersjach Bluetooth-only i Bluetooth + Wi-Fi, z opcją druku etykiet bez podkładu (linerless) i wersją RFID (ZQ521R).
+## Gwarancja
 
-Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
+Drukarka ma 24 miesiące gwarancji, a bateria 12 miesięcy. Ochrona głowicy w regionie EMEA wynosi 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.
 
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+PN na tej karcie wykonują nadruk bez kodowania UHF. Jeśli potrzebujesz również zapisu danych w układzie etykiety, wybierz [Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12392,7 +12394,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     keyParams: {
       rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
       rozdzielczosc: '203 dpi (8 dots/mm)',
-      predkoscDruku: 'do 127 mm/s (5 ips)',
+      predkoscDruku: 'do 127 mm/s z Draft Mode',
       szerokoscDruku: 'max. 104 mm (4,09")',
       szerokoscEtykiet: '50,8–113 mm',
     },
@@ -12404,7 +12406,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Maks. długość druku', value: '990 mm (39")' },
       { name: 'Szerokość nośnika', value: '50,8–113 mm' },
       { name: 'Maks. średnica rolki', value: '57 mm (2,24")' },
-      { name: 'Typy nośników', value: 'Etykiety z przerwą, z czarną linią, ciągłe, linerless, RFID' },
+      { name: 'Typy nośników', value: 'Etykiety z przerwą, z czarnym znacznikiem, ciągłe; linerless w odpowiednich PN' },
       { name: 'Pamięć RAM', value: '256 MB (8 MB dla użytkownika)' },
       { name: 'Pamięć Flash', value: '512 MB (64 MB dla użytkownika)' },
       { name: 'Bluetooth', value: '4.1 EDR + LE (BT 5.2 ready)' },
@@ -12428,7 +12430,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'System operacyjny drukarki', value: 'Link-OS' },
       { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
       { name: 'Certyfikat ENERGY STAR', value: 'Tak' },
-      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+      { name: 'Gwarancja', value: 'Drukarka 24 miesiące; bateria 12 miesięcy; głowica EMEA 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykiety wysyłkowe 100×150 mm (kurierzy DPD, InPost, DHL, UPS)',
@@ -12542,74 +12544,26 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       ],
     },
     faq: [
-      {
-        question: 'Czym Zebra ZQ521 różni się od ZQ511?',
-        answer: 'Główna różnica to szerokość druku: ZQ521 drukuje etykiety do 104 mm (4 cale), a ZQ511 do 72 mm (3 cale). ZQ521 obsługuje standardowe etykiety wysyłkowe 100×150 mm (format kurierski DPD, InPost, DHL) — ZQ511 ich nie wydrukuje. ZQ521 jest cięższa (790 g vs 630 g) i nieco większa, ale ma identyczną wytrzymałość MIL-STD-810G, łączność i kompatybilność z akcesoriami serii ZQ500.',
-      },
-      {
-        question: 'Czy ZQ521 wydrukuje etykiety wysyłkowe 100×150 mm?',
-        answer: 'Tak — to główne zastosowanie ZQ521. Etykiety 100×150 mm (4×6") to standard kurierski stosowany przez DPD, InPost, DHL, UPS, GLS i FedEx. ZQ521 drukuje je bezpośrednio z rolki w terenie, bez potrzeby wracania do biura. Do mniejszych etykiet produktowych (do 72 mm) wystarczy lżejszy model ZQ511.',
-      },
-      {
-        question: 'Ile etykiet wysyłkowych wydrukuję na jednej baterii?',
-        answer: 'Na standardowej baterii 3250 mAh wydrukujesz ok. 600–800 etykiet wysyłkowych 100×150 mm. Na rozszerzonej baterii 6500 mAh — ok. 1200–1600 etykiet. W praktyce wystarcza to na 6–10 godzin pracy kuriera. Baterie są wymienne hot-swap — wymiana trwa 5 sekund bez wyłączania drukarki.',
-      },
-      {
-        question: 'Czy ZQ521 jest odporna na upadki i wodę?',
-        answer: 'Tak — ZQ521 spełnia wojskowy standard MIL-STD-810G. Wytrzymuje upadek z 2,1 m na beton, 1300 upadków obrotowych z 1 m. Klasa IP54 chroni przed pyłem i bryzgami (IP65 z egzoszkieletem — pył całkowicie + strumień wody). Temperatura pracy od -20°C do +55°C — działa w chłodniach i w pełnym słońcu.',
-      },
-      {
-        question: 'Jakie etykiety pasują do Zebra ZQ521?',
-        answer: 'ZQ521 obsługuje etykiety termiczne (direct thermal) o szerokości 50,8–113 mm: samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), linerless (bez podkładu). Maksymalna średnica rolki: 57 mm. Najpopularniejsze formaty: 100×150 mm (etykiety wysyłkowe), 100×50 mm (etykiety logistyczne), 102×76 mm (etykiety produktowe).',
-      },
-      {
-        question: 'Czy ZQ521 obsługuje druk linerless (bez podkładu)?',
-        answer: 'Tak — wersje ZQ52-BUE100E-00 i ZQ52-BUW100E-00 mają silikonowy wałek dociskowy do druku linerless. Etykiety linerless nie mają podkładu (liner), co redukuje odpady o ok. 40% i pozwala zmieścić więcej etykiet na rolce. Idealne rozwiązanie dla kurierów — mniej wymian rolek w ciągu dnia.',
-      },
-      {
-        question: 'Z jakimi terminalami mogę sparować ZQ521?',
-        answer: 'ZQ521 łączy się przez Bluetooth 4.1 z terminalami Zebra (TC52, TC57, TC72, TC77, MC93, MC33), Honeywell (CT40, CT60, EDA52), smartfonami Android/iOS i tabletami. NFC (Zebra Print Touch) umożliwia parowanie jednym dotknięciem. Wi-Fi 802.11ac (w wersjach BUW) pozwala drukować z dowolnego urządzenia w sieci firmowej.',
-      },
-      {
-        question: 'Czym ZQ521 różni się od poprzednika ZQ520?',
-        answer: 'ZQ521 to następca ZQ520 z istotnymi ulepszeniami: wyższa odporność na upadki (2,1 m vs 1,5 m), Wi-Fi 802.11ac (5 GHz) vs 802.11n, bateria PowerPrecision+ z monitorowaniem stanu, USB 2.0 OTG, obsługa Link-OS do zdalnego zarządzania flotą. Obudowa i akcesoria ZQ500/ZQ600 są kompatybilne.',
-      },
-      {
-        question: 'Jak długo ładuje się bateria ZQ521?',
-        answer: 'Bateria 3250 mAh ładuje się w ok. 2,5–3 godziny w ładowarce 1-gniazdowej (SAC-MPP-1BCHGEU1-01) lub 3-gniazdowej (SAC-MPP-3BCHGEU1-01). Ładowarki wielogniazdowe są zalecane dla flot kurierskich — kontrolowane ładowanie wydłuża żywotność baterii o 30%. Bateria rozszerzona 6500 mAh ładuje się ok. 5 godzin.',
-      },
-      {
-        question: 'Czy ZQ521 nadaje się do pracy w chłodni?',
-        answer: 'Tak — ZQ521 pracuje w temperaturze od -20°C do +55°C, co wystarcza do chłodni (+2°C do +8°C) i krótkich wejść do mroźni (-20°C). Tryb Cold Temperature Compensation automatycznie optymalizuje parametry druku w niskich temperaturach. Do ciągłej pracy w mroźni zalecamy model z rozszerzoną baterią 6500 mAh.',
-      },
-      {
-        question: 'Ile kosztuje eksploatacja ZQ521 miesięcznie?',
-        answer: 'Przy 200 etykietach wysyłkowych dziennie (4 400/mies.): etykiety termiczne 100×150 mm ~160 zł/mies., amortyzacja baterii ~25 zł/mies., amortyzacja głowicy ~25 zł/mies. = ok. 210 zł/mies. Koszt pojedynczej etykiety: 0,03–0,05 zł. ZQ521 drukuje termicznie — nie wymaga taśmy barwiącej, co obniża koszty o ~30% vs druk termotransferowy.',
-      },
-      {
-        question: 'Czy mogę zarządzać flotą drukarek ZQ521 zdalnie?',
-        answer: 'Tak — ZQ521 działa na systemie Link-OS, który umożliwia zdalne zarządzanie flotą: aktualizacja firmware, konfiguracja ustawień, monitorowanie stanu baterii i głowicy, diagnostyka błędów, wysyłanie szablonów etykiet. Dostępne przez Zebra Profile Manager (chmura) lub Zebra Printer Management (on-premise). Idealne dla firm z 10+ drukarkami mobilnymi.',
-      },
-      {
-        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
-        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
-      },
-      {
-        question: 'Jakie są alternatywy dla Zebra ZQ521?',
-        answer: 'W klasie mobilnych 4-calowych: [Brother RJ-4230B](/produkt/brother-rj-4230b) (tańsza o ~750 zł, 3 lata gwarancji z głowicą, emulacja ZPL II), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria 4 900 mAh, 2 m drop), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (premium, linerless). W klasie 3-calowej: [Zebra ZQ511](/produkt/zebra-zq511) (MIL-STD-810G).',
-      },
+      { question: 'Czym ZQ521 różni się od ZQ511?', answer: 'ZQ521 drukuje do 104 mm, a ZQ511 do 72 mm. ZQ521 obsługuje szersze etykiety i waży około 790 g z baterią. Osłony dobierz do modelu drukarki.' },
+      { question: 'Czy ZQ521 wydrukuje etykiety 100 × 150 mm?', answer: 'Tak, jeśli rolka i szablon są zgodne z drukarką. Sprawdź szerokość materiału, średnicę rolki do 57 mm i sposób wykrywania etykiety. Drukarka wykonuje nadruk termiczny bezpośredni.' },
+      { question: 'Który PN ma Wi-Fi?', answer: 'Warianty BUW mają Wi-Fi 802.11ac i Bluetooth. Warianty BUE mają Bluetooth. Wyposażenie w baterię i obsługa linerless również zależą od PN.' },
+      { question: 'Czy każda konfiguracja ma baterię?', answer: 'Nie. ZQ52-BUE001E-00 jest wersją bez baterii. Pozostałe PN w tabeli obejmują baterię standardową 3250 mAh. Zasilacz lub ładowarkę dobierz osobno.' },
+      { question: 'Ile etykiet wydrukuje jedna bateria?', answer: 'Wynik zależy od wielkości etykiety, pokrycia nadrukiem, połączeń i temperatury. Bateria standardowa ma nominalnie 3250 mAh, a rozszerzona 6500 mAh. Przeprowadź pomiar dla docelowego zadania.' },
+      { question: 'Czy ZQ521 obsługuje linerless?', answer: 'Tak, w konfiguracjach ZQ52-BUE100E-00 i ZQ52-BUW100E-00. Pozostałe PN na tej karcie dobierz do materiału z podkładem. Nie zmieniaj typu rolki bez sprawdzenia zgodności konfiguracji.' },
+      { question: 'Jak ładować ZQ521?', answer: 'Baterię w drukarce można ładować zgodnym zasilaczem, np. P1031365-042 z przewodem EU. Wyjętą baterię można ładować w zgodnej ładowarce. Przewód USB nie zastępuje zasilacza do ładowania.' },
+      { question: 'Czy ZQ521 koduje etykiety RFID?', answer: 'PN na tej karcie wykonują nadruk bez kodowania UHF. Do zapisu i kontroli wkładki wybierz [Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid). Sam nadruk nie koduje układu etykiety.' },
     ],
     editorialReview: {
       ratingValue: 4.6,
       bestRating: 5,
-      reviewBody: 'Zebra ZQ521 to najlepszy wybór dla firm potrzebujących mobilnego druku pełnowymiarowych etykiet wysyłkowych 100×150 mm. Certyfikat MIL-STD-810G i IP54 gwarantują niezawodność w najtrudniejszych warunkach — od rampy załadunkowej po chłodnię. Dual-radio BT + Wi-Fi i bateria PowerPrecision+ z monitorowaniem stanu wyróżniają ją na tle konkurencji. Jedyny minus to większa waga (790 g) w porównaniu z 3-calową ZQ511 (630 g) — ale za to drukujesz standardowe etykiety kurierskie bez ograniczeń.',
+      reviewBody: 'ZQ521 drukuje etykiety do 104 mm w terenie. Dobierz PN według łączności, baterii i rodzaju materiału. Ochrona IP54 oraz wymienna bateria wspierają pracę poza biurkiem. Przy wyborze uwzględnij masę urządzenia i maksymalną średnicę rolki 57 mm.',
     },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq521/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/zq511-zq521-spec-sheet-pl-pl.pdf', size: 'PDF' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq511-zq521-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['zebra-zq511', 'zebra-zq630-plus', 'zebra-zq620-plus', 'zebra-zq320-plus'],
+    relatedProducts: ['zebra-zq521-rfid', 'zebra-zq511', 'zebra-zq630-plus', 'zebra-zq620-plus', 'zebra-zq320-plus'],
     createdAt: '2026-02-13',
     sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq500-series/zq521.html',
   },
@@ -56692,10 +56646,8 @@ const mobilePrinterAccessories: Product[] = [
     id: 'zebra-battery-zq5-standard',
     slug: 'zebra-bateria-3250mah-zq511-zq521',
     name: 'Bateria 3250 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
-    shortDescription: 'Bateria 3250 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus — oryginalna bateria PowerPrecision+ 3250 mAh do drukarek mobilnych Zebra',
-    description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 3250 mAh do mobilnych drukarek etykiet ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630. Technologia PowerPrecision+ monitoruje stan baterii i informuje o konieczności wymiany.
-
-Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateria wystarcza na 800–1000 etykiet standardowego rozmiaru. Czas ładowania: 2,5–3 godziny.`,
+    shortDescription: 'Bateria zapasowa PowerPrecision+ 3250 mAh do ZQ511, ZQ521, ich wersji RFID oraz zgodnych ZQ610 i ZQ620, także Plus.',
+    description: 'Bateria Zebra BTRY-MPP-34MA1-01 PowerPrecision+ Li-Ion ma nominalnie 3250 mAh. Pasuje do ZQ511, ZQ521, ich wersji RFID oraz zgodnych modeli ZQ610 i ZQ620, także Plus. Umożliwia monitorowanie stanu baterii. Nie jest baterią do ZQ630. Czas pracy zależy od zadania i temperatury. Wymień baterię zgodnie z instrukcją drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -56710,7 +56662,7 @@ Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateri
       { name: 'Part Number', value: 'BTRY-MPP-34MA1-01' },
       { name: 'Pojemność', value: '3250 mAh' },
       { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
-      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630, QLn' },
+      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ich wersje RFID, zgodne ZQ610 i ZQ620, także Plus' },
     ],
     applications: ['Bateria zapasowa', 'Praca wielozmianowa'],
     compatibleAccessories: [],
@@ -56721,10 +56673,8 @@ Wymienna hot-swap — wymiana w 5 sekund bez wyłączania drukarki. Jedna bateri
     id: 'zebra-battery-zq5-extended',
     slug: 'zebra-bateria-6500mah-zq511-zq521',
     name: 'Bateria wzmocniona 6500 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus',
-    shortDescription: 'Bateria wzmocniona 6500 mAh do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 Plus — bateria rozszerzona PowerPrecision+ 6500 mAh, podwójna żywotność',
-    description: `Oryginalna bateria rozszerzona Zebra PowerPrecision+ Li-Ion 6500 mAh — podwójna pojemność w porównaniu ze standardową baterią 3250 mAh. Zapewnia druk 1600–2000 etykiet na jednym ładowaniu, wystarczający na pełną zmianę intensywnej pracy.
-
-Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPrecision+ z monitorowaniem stanu baterii. Wymienna hot-swap.`,
+    shortDescription: 'Bateria rozszerzona PowerPrecision+ 6500 mAh do ZQ511, ZQ521, ich wersji RFID oraz zgodnych ZQ610 i ZQ620, także Plus.',
+    description: 'Bateria Zebra BTRY-MPP-EXT1-01 PowerPrecision+ Li-Ion ma nominalnie 6500 mAh. Pasuje do ZQ511, ZQ521, ich wersji RFID oraz zgodnych modeli ZQ610 i ZQ620, także Plus. Ma dwukrotnie większą nominalną pojemność od baterii 3250 mAh. Rzeczywisty czas pracy zależy od zadania i temperatury. Nie jest baterią do ZQ630. Sprawdź zgodność stacji lub osłony z baterią rozszerzoną.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -56739,7 +56689,7 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
       { name: 'Part Number', value: 'BTRY-MPP-EXT1-01' },
       { name: 'Pojemność', value: '6500 mAh' },
       { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
-      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630' },
+      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ich wersje RFID, zgodne ZQ610 i ZQ620, także Plus' },
     ],
     applications: ['Praca wielozmianowa', 'Intensywne drukowanie', 'Praca w niskich temperaturach'],
     compatibleAccessories: [],
@@ -56887,17 +56837,15 @@ Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w
   {
     id: 'zebra-usb-cable-zq5',
     slug: 'zebra-kabel-usb-twist-lock-zq5-zq6',
-    name: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — kabel USB Micro-B z blokadą Twist Lock do drukarek mobilnych Zebra serii ZQ500/ZQ600',
-    description: `Oryginalny kabel USB Zebra z blokadą Twist Lock do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Blokada Twist Lock zapobiega przypadkowemu odłączeniu kabla podczas pracy.
-
-Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`,
+    name: 'Przewód USB z Twist Lock do Zebra ZQ511 / ZQ521',
+    shortDescription: 'Przewód USB Micro-B–USB-A z blokadą Twist Lock do serii Zebra ZQ500, także ZQ521 RFID. Długość 1,8 m.',
+    description: 'Przewód Zebra P1063406-045 łączy drukarkę serii ZQ500 lub jej zgodną stację z komputerem. Ma złącza USB Micro-B i USB-A oraz długość 1,8 m. Blokada Twist Lock zabezpiecza połączenie. Służy do komunikacji, konfiguracji i aktualizacji. Do ładowania baterii dobierz zgodny zasilacz. Nie jest przewodem Mini-B do ZQ630.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 74.77,
     images: ['/images/products/P1063406-045.png'],
-    imageDescriptions: ['Kabel USB z Twist Lock do Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus'],
+    imageDescriptions: ['Przewód USB z Twist Lock do Zebra ZQ511 / ZQ521'],
     tags: ['logistyka'],
     availability: 'available',
     isNew: false,
@@ -56905,7 +56853,7 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
     specifications: [
       { name: 'Part Number', value: 'P1063406-045' },
       { name: 'Typ', value: 'Kabel USB Micro-B z Twist Lock' },
-      { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630' },
+      { name: 'Kompatybilność', value: 'ZQ510, ZQ511, ZQ520, ZQ521; także wersje RFID' },
     ],
     applications: ['Aktualizacja firmware', 'Serwis', 'Konfiguracja'],
     compatibleAccessories: [],
@@ -56971,10 +56919,8 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
     id: 'zebra-soft-case-zq521',
     slug: 'zebra-etui-pasek-zq521',
     name: 'Etui z paskiem na ramię do Zebra ZQ521',
-    shortDescription: 'Etui z paskiem na ramię do Zebra ZQ521 — miękkie etui ochronne z paskiem na ramię do drukarki ZQ520/ZQ521 (4")',
-    description: `Oryginalne etui ochronne Zebra z paskiem na ramię do mobilnej drukarki ZQ520/ZQ521 (4-calowej). Chroni drukarkę przed zarysowaniami i drobnymi uderzeniami. Pasek na ramię odciąża biodra i zmniejsza zmęczenie przy wielogodzinnej pracy kuriera.
-
-Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia dostęp do wydrukowanych etykiet. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521).`,
+    shortDescription: 'Miękkie etui z paskiem na ramię do Zebra ZQ520 i ZQ521, także RFID. PN P1063406-037.',
+    description: 'Etui Zebra P1063406-037 z paskiem na ramię chroni drukarkę ZQ520 lub ZQ521, także RFID. Umożliwia dostęp do baterii standardowej lub rozszerzonej i do portów przez klapy. Nie można go używać z klipsem do paska ani wielogniazdową stacją MCR. Pasek jest częścią zestawu. Drukarka jest sprzedawana osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -56999,10 +56945,8 @@ Etui umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewnia do
     id: 'zebra-exoskeleton-zq521',
     slug: 'zebra-egzoszkielet-zq521',
     name: 'Egzoszkielet ochronny do Zebra ZQ521',
-    shortDescription: 'Egzoszkielet ochronny do Zebra ZQ521 — obudowa wzmocniona 4", podnosi IP do IP65 i drop spec do 3 m',
-    description: `Egzoszkielet ochronny Zebra do drukarki mobilnej ZQ520/ZQ521 (4-calowej). Podnosi klasę ochrony z IP54 do IP65 (pełna ochrona przed pyłem i strumieniem wody) oraz odporność na upadki z 2,1 m do 3 m na beton.
-
-Niezbędny do pracy na zewnątrz (deszcz, śnieg), na rampach załadunkowych i w środowiskach o podwyższonym ryzyku upadków. Wersja dedykowana do drukarek 4-calowych (ZQ520/ZQ521). Nie utrudnia wymiany baterii ani rolek etykiet.`,
+    shortDescription: 'Egzoszkielet P1063406-044 do ZQ520 i ZQ521, także RFID. Ochrona IP65 i odporność na upadki do 3 m.',
+    description: 'Egzoszkielet Zebra P1063406-044 do ZQ520 i ZQ521, także RFID, zwiększa ochronę do IP65 i odporność na upadki do 3 m. Pasuje do baterii standardowej i rozszerzonej. Współpracuje z czterogniazdową stacją drukarek oraz stacją pojedynczą serii ZQ500. Drukarka jest sprzedawana osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -96078,6 +96022,7 @@ const rawProductList: Product[] = [
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
   ...zq630RfidAdditionalAccessories,
+  ...zq521RfidAdditionalAccessories,
   ...zt411RfidAdditionalAccessories,
   ...zt231RfidAdditionalAccessories,
   ...zt421RfidAdditionalAccessories,
