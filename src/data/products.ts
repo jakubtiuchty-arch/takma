@@ -1,3 +1,4 @@
+import { zt231RfidAdditionalAccessories } from './zt231-rfid-accessories'
 import { rfidPrinterCategory } from './rfid-printer-category'
 import { rfidPrinterProducts } from './rfid-printer-products'
 import { zd621rAdditionalAccessories } from './zd621r-accessories'
@@ -329,11 +330,11 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
     productIds: [
-      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 35,
+    productCount: 36,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -347,12 +348,12 @@ export const subcategories: Subcategory[] = [
     icon: 'printer',
     productIds: [
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
-      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510',
+      'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 46,
+    productCount: 47,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -501,8 +502,9 @@ export const subcategories: Subcategory[] = [
       'citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720',
 
       ...zt411RfidAdditionalAccessories.map(accessory => accessory.id),
+      ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 211,
+    productCount: 214,
   },
   {
     id: 'dyspensery-etykiet',
@@ -7274,30 +7276,28 @@ const industrialLightPrinters: Product[] = [
     id: 'zebra-zt231',
     slug: 'zebra-zt231',
     name: 'Zebra ZT231',
-    shortDescription: 'Zebra ZT231 — drukarka przemysłowa 4" z kolorowym ekranem dotykowym 4,3", metalową konstrukcją i prędkością druku do 304 mm/s, następca ZT230',
-    seoTitle: 'Drukarka przemysłowa Zebra ZT231 — 203/300 dpi 4" | od 2 551 zł',
-    seoDescription: 'Drukarka przemysłowa Zebra ZT231 — 4" do magazynu, logistyki i produkcji. Druk termiczny i termotransferowy, 203/300 dpi, kolorowy LCD 4,3". Od 2 551 zł netto.',
-    description: `Zebra ZT231 to najlepszy wybór dla firm produkcyjnych i magazynów przechodzących z biurkowych drukarek etykiet na przemysłowe, które potrzebują kompaktowej drukarki z ekranem dotykowym i metalową konstrukcją.
+    shortDescription: 'Przemysłowa drukarka Zebra ZT231 do standardowych etykiet. Warianty termiczne i termotransferowe, 203 lub 300 dpi, ekran dotykowy 4,3 cala.',
+    seoTitle: 'Zebra ZT231 — przemysłowa drukarka etykiet 203 i 300 dpi',
+    seoDescription: 'Zebra ZT231 do druku etykiet magazynowych i produktowych. Warianty termiczne i termotransferowe, 203 lub 300 dpi. Porównaj PN i wyposażenie w TAKMA.',
+    description: `Zebra ZT231 to przemysłowa drukarka etykiet o szerokości druku do 104 mm. Służy do drukowania tekstu, grafiki i kodów kreskowych w magazynie oraz na produkcji. Ta oferta obejmuje konfiguracje bez fabrycznego modułu RFID.
 
-Zebra ZT231 to przemysłowa drukarka etykiet klasy light-industrial zaprojektowana jako bezpośredni następca popularnego modelu ZT230. Łączy kompaktowe wymiary (432 × 241 × 279 mm) z wytrzymałą metalową ramą i metalowymi obudowami, zapewniając trwałość na poziomie klasy przemysłowej przy jednoczesnej oszczędności przestrzeni na stanowisku pracy. Dwuskrzydłowe drzwi mediów (bi-fold) wymagają jedynie 10 cm wolnej przestrzeni nad drukarką do otwarcia — idealne rozwiązanie do ciasnych pomieszczeń produkcyjnych i magazynowych.
+ZT231 zastępuje model ZT230. Ma metalową ramę, metalową obudowę oraz składaną pokrywę z oknem do kontroli materiałów. Etykiety i taśmę barwiącą ładuje się z boku drukarki. Kolorowy ekran dotykowy 4,3 cala służy do ustawiania parametrów, kalibracji materiału i sprawdzania stanu urządzenia.
 
-Kolorowy dotykowy wyświetlacz 4,3" (resistive touch) z intuicyjnym menu umożliwia szybką konfigurację, dostęp do kreatorów ustawień i filmów instruktażowych. Trójkolorowe diody LED sygnalizują status drukarki na pierwszy rzut oka. Boczna ścieżka podawania materiałów z kolorowymi znacznikami upraszcza wymianę etykiet i ribbona — nawet dla niedoświadczonych operatorów.
+Wybierz 203 dpi do większych etykiet logistycznych lub 300 dpi do drobniejszego tekstu i kodów. Maksymalna prędkość nadruku wynosi około 305 mm/s przy 203 dpi i 203 mm/s przy 300 dpi. Metodę druku, rozdzielczość i wyposażenie określa PN w tabeli wariantów.
 
-ZT231 drukuje z prędkością do 304 mm/s (12 ips) przy rozdzielczości 203 dpi i 203 mm/s (8 ips) przy 300 dpi — to najszybsza drukarka w swojej klasie cenowej. Maksymalna szerokość druku wynosi 104 mm (4,09"), a obsługiwana szerokość mediów od 19,4 do 114 mm. Głowica drukująca E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku, gwarantując ostry tekst, czytelne kody kreskowe i wysoką jakość grafik.
+Wersje termiczne drukują na etykietach termoczułych i nie wymagają taśmy barwiącej. Wersje termotransferowe drukują z użyciem odpowiedniej taśmy. Dobierz etykietę i taśmę do powierzchni produktu oraz warunków użytkowania.
 
-Drukarka obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") lub 152 mm na rdzeniu 25 mm — ponad dwa razy więcej materiału niż drukarki biurkowe. Taśmy barwiące o długości 450 m i szerokości 51–110 mm na rdzeniu 25,4 mm redukują częstotliwość wymiany materiałów eksploatacyjnych. Ruchome czujniki transmisyjne i refleksyjne oferują pełną elastyczność w obsłudze różnych typów mediów: ciągłych, wykrojnikowych, z nacięciami i czarnym znacznikiem.
+Drukarka mieści rolkę o średnicy do 203 mm na gilzie 76 mm albo do 152 mm na gilzie 25 mm. Obsługuje taśmy barwiące o długości do 450 m. Czujniki transmisyjny i refleksyjny umożliwiają pracę z różnymi sposobami oznaczenia materiału.
 
-Standardowe interfejsy: USB 2.0, RS-232, Ethernet 10/100, USB Host i Bluetooth Low Energy (NFC Print Touch do parowania z urządzeniami mobilnymi). Opcjonalnie: karta Wi-Fi 802.11ac, dodatkowy port Ethernet i port aplikatora. Drukarka jest w pełni kompatybilna wsteczna z językami ZPL/ZPL II i EPL/EPL2 (EPL na modelach 203 dpi) — istniejące szablony etykiet działają bez zmian. Emulacja drukarek innych producentów eliminuje konieczność przepisywania kodu.
+Standardowe interfejsy obejmują USB 2.0, USB Host, RS-232, Ethernet 10/100 i Bluetooth Low Energy. NFC Print Touch i Bluetooth Low Energy to odrębne funkcje. Dostępność Wi-Fi zależy od numeru PN lub zamontowanej karty rozszerzeń. Narzędzia Zebra DNA wspierają konfigurację i zarządzanie drukarką; część funkcji wymaga licencji.
 
-Platforma Zebra Print DNA zapewnia kompletny zestaw narzędzi IT: Printer Profile Manager Enterprise do zdalnego zarządzania flotą, PrintSecure do ochrony przed cyberatakami, Visibility Services do monitoringu statusu i Cloud Connect do integracji z chmurą. Analityka on-board oraz wykrywanie uszkodzonych elementów głowicy (printhead element out detection) pomagają planować konserwację predykcyjną. Certyfikat ENERGY STAR potwierdza niskie zużycie energii.
+Dobierz sposób podawania etykiet do stanowiska. Dostępne konfiguracje obejmują ręczne odrywanie, odklejak, obcinacz i odklejak z nawijakiem podkładu. Odklejak bez nawijaka i wersja z nawijakiem to różne konfiguracje. Sprawdź wyposażenie wybranego PN przed zamówieniem.
 
-Kluczowa przewaga ZT231 nad modelem ZT111: kolorowy ekran dotykowy 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s) i emulacja drukarek EPL/EPL2. ZT231 jest idealnym wyborem dla firm produkcyjnych, logistycznych i magazynowych, które potrzebują niezawodnej drukarki przemysłowej o kompaktowych wymiarach i intuicyjnej obsłudze — bez kompromisów w zakresie prędkości, jakości druku i możliwości rozbudowy.
+ZT231 można rozbudować o RFID po sprawdzeniu zgodności urządzenia i dobraniu modułu. Gotowe wersje do druku i kodowania UHF znajdziesz na osobnej karcie [Zebra ZT231 RFID](/produkt/zebra-zt231-rfid).
 
-Zebra ZT231 to uniwersalna drukarka etykiet klasy light-industrial, która sprawdzi się jako drukarka kodów kreskowych w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych. Jako drukarka termotransferowa obsługuje trwałe etykiety na taśmach woskowych, woskowo-żywicznych i żywicznych — od papierowych etykiet magazynowych po syntetyczne oznaczenia produktów. Jeśli potrzebujesz 600 dpi, linerless lub nawijaka full rewind, rozważ model [ZT411](/produkt/zebra-zt411) — pełne porównanie z cenami i TCO: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
+Jeśli potrzebujesz drukarki o większej prędkości lub innych opcjach rozbudowy, sprawdź [Zebra ZT411](/produkt/zebra-zt411). Różnice w wyposażeniu opisuje [porównanie ZT231 i ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
 
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Przy porównaniu kosztów uwzględnij drukarkę, etykiety, taśmy barwiące, części zużywające się i serwis. Akcesoria do rozbudowy są sprzedawane osobno. Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i części zużywających się wynosi 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -7334,20 +7334,20 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Rdzeń taśmy', value: '25,4 mm (1")' },
       { name: 'Pamięć', value: '256 MB SDRAM + 256 MB Flash' },
       { name: 'Wyświetlacz', value: 'Kolorowy dotykowy 4,3" (resistive touch)' },
-      { name: 'Interfejsy', value: 'USB 2.0, RS-232, Ethernet 10/100, USB Host, BLE (NFC)' },
+      { name: 'Interfejsy', value: 'USB 2.0, RS-232, Ethernet 10/100, USB Host, Bluetooth Low Energy' },
       { name: 'Opcjonalne interfejsy', value: 'Wi-Fi 802.11ac, 2. port Ethernet, port aplikatora' },
       { name: 'Języki programowania', value: 'ZPL / ZPL II, EPL / EPL2 (203 dpi), ZBI 2.0 (opcja)' },
       { name: 'Głowica', value: 'E3™ Element Energy™ Equalizer' },
       { name: 'Czujniki mediów', value: 'Ruchome transmisyjne i refleksyjne' },
       { name: 'Konstrukcja', value: 'Metalowa rama i metalowe obudowy, dwuskrzydłowe drzwi' },
-      { name: 'Wymiary (S×G×W)', value: '432 × 241 × 279 mm' },
+      { name: 'Wymiary (G×S×W)', value: '432 × 241 × 279 mm' },
       { name: 'Waga', value: '9,1 kg' },
       { name: 'Temp. pracy (TT)', value: '5–40°C' },
       { name: 'Temp. pracy (DT)', value: '0–40°C' },
       { name: 'Wilgotność pracy', value: '20–85% bez kondensacji' },
       { name: 'Zasilanie', value: '100–240 VAC, 50/60 Hz' },
       { name: 'Certyfikaty', value: 'ENERGY STAR, CE, FCC Class B, IEC 62368-1' },
-      { name: 'Gwarancja', value: '1 rok (rozszerzenie: Zebra OneCare)' },
+      { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykietowanie produktów na linii produkcyjnej',
@@ -7423,6 +7423,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     ],
     relatedAccessories: ['zebra-printhead-zt111-203', 'zebra-printhead-zt111-300', 'zebra-platen-roller-zt111', 'zebra-cutter-zt111', 'zebra-dispenser-zt111', 'zebra-module-wifi-zt111', 'zebra-module-ethernet-zt111', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-mc-pro-chuck', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
+      { question: 'Czy ZT231 można rozbudować o RFID?', answer: 'Tak, po sprawdzeniu zgodności urządzenia i dobraniu modułu. Ta oferta obejmuje konfiguracje bez fabrycznego RFID. Gotowe drukarki do kodowania UHF znajdziesz na karcie [Zebra ZT231 RFID](/produkt/zebra-zt231-rfid).' },
       {
         question: 'Czym różni się Zebra ZT231 od ZT111?',
         answer: 'ZT231 to wyższy model w linii drukarek przemysłowych Zebra. Kluczowe różnice: kolorowy dotykowy wyświetlacz 4,3" (vs 5-kolorowe diody LED i 3 przyciski w ZT111), metalowe obudowy (vs plastikowe w ZT111), wyższa prędkość druku 304 mm/s (vs 254 mm/s) i emulacja drukarek EPL/EPL2. ZT231 waży 9,1 kg (vs 7,7 kg) i jest przeznaczona do bardziej wymagających środowisk przemysłowych.',
@@ -7457,7 +7458,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czym różni się ZT231 od droższego modelu ZT411?',
-        answer: 'ZT411 to drukarka klasy mid-range industrial z wyższą prędkością druku (356 mm/s vs 304 mm/s, +17%), opcjonalną rozdzielczością 600 dpi, obsługą etykiet linerless, większą pamięcią Flash (512 vs 256 MB) i 2-letnią gwarancją (vs 1 rok). ZT411 jest przeznaczona do intensywnych zastosowań >5 000 etykiet/dzień. ZT231 wystarcza dla 80% zastosowań i jest tańsza o 2 400 PLN. Pełne porównanie z TCO i scenariuszami: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
+        answer: 'ZT411 drukuje szybciej przy 203 dpi, ma opcję 600 dpi i inne możliwości rozbudowy. ZT231 oferuje 203 lub 300 dpi oraz mniejszą obudowę. Obie drukarki w regionie EMEA mają 24 miesiące gwarancji na urządzenie. Wyposażenie porównuj dla konkretnych PN. Szczegóły: [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).',
       },
       {
         question: 'Gdzie serwisować drukarki Zebra przemysłowe w Polsce?',
@@ -7469,7 +7470,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Jaka jest gwarancja na drukarkę Zebra ZT231?',
-        answer: 'Zebra ZT231 objęta jest 1-roczną gwarancją producenta na wady materiałowe i wykonanie. Gwarancję można rozszerzyć w ramach kontraktów Zebra OneCare Essential (serwis w centrum naprawczym) lub OneCare Select (wymiana urządzenia). Autoryzowany serwis drukarek Zebra w Polsce: serwis-zebry.pl.',
+        answer: 'Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i części zużywających się wynosi 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej. Dodatkowy zakres serwisu zależy od wybranego kontraktu Zebra OneCare.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZT231?',
@@ -96146,6 +96147,7 @@ const rawProductList: Product[] = [
   ...rfidPrinterProducts,
   ...zd621rAdditionalAccessories,
   ...zt411RfidAdditionalAccessories,
+  ...zt231RfidAdditionalAccessories,
   ...industrialLightPrinters,
   ...industrialPrinters,
   ...mobilePrinters,

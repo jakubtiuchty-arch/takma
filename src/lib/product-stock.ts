@@ -1,4 +1,5 @@
 import { cache } from 'react'
+import { zt231RfidAdditionalAccessories, zt231RfidExistingAccessorySlugs } from '@/data/zt231-rfid-accessories'
 import { zt610RfidAccessorySlugs } from '@/data/zt610-rfid-products'
 import { zebraTerminalSlugs } from '@/lib/zebra-terminal-catalog'
 import { zd621rAdditionalAccessories } from '@/data/zd621r-accessories'
@@ -22,6 +23,9 @@ export const LIVE_OFFER_SLUGS = new Set([
   'zebra-zd621r',
   'zebra-zt411-rfid',
   'zebra-zt610-rfid',
+  'zebra-zt231-rfid',
+  ...zt231RfidAdditionalAccessories.map(accessory => accessory.slug),
+  ...zt231RfidExistingAccessorySlugs,
   ...zt610RfidAccessorySlugs,
   ...zt411RfidAdditionalAccessories.map(accessory => accessory.slug),
   ...zt411RfidExistingAccessorySlugs,
