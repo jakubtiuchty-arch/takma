@@ -1,5 +1,7 @@
 import { cache } from 'react'
 import { zebraTerminalSlugs } from '@/lib/zebra-terminal-catalog'
+import { zd621rAdditionalAccessories } from '@/data/zd621r-accessories'
+import { zt411RfidAdditionalAccessories, zt411RfidExistingAccessorySlugs } from '@/data/zt411-rfid-accessories'
 import { getProductBySlug, products } from '@/data/products'
 import { newlandMt95ProIiiAccessories } from '@/data/newland-mt95-pro-iii-accessories'
 import { bundleItemPartNumber, bundlePartNumber } from '@/lib/bundle'
@@ -15,6 +17,12 @@ export const LIVE_OFFER_SLUGS = new Set([
   ...Array.from(zebraTerminalSlugs),
   'newland-mt95-kambur-pro-iii',
   ...newlandMt95ProIiiAccessories.map(product => product.slug),
+  'zebra-tc201',
+  'zebra-zd621r',
+  'zebra-zt411-rfid',
+  ...zt411RfidAdditionalAccessories.map(accessory => accessory.slug),
+  ...zt411RfidExistingAccessorySlugs,
+  ...zd621rAdditionalAccessories.map(accessory => accessory.slug),
   'zebra-zd421t', 'zebra-zc100', 'zebra-zc300', 'zebra-zc350',
   // Kolorowe drukarki Epson: cena i stan prosto od dystrybutora, tak jak przy Zebrach.
   // Bez tego kwota doklejała się dopiero w przeglądarce, a pierwszy HTML miał „? netto”.

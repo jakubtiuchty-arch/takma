@@ -81,7 +81,6 @@ const nextConfig = {
       // =====================================================
       // ZEBRA DRUKARKI PRZEMYSŁOWE — tylko zmiany slugów
       // =====================================================
-      { source: '/produkt/zebra-zt411-rfid/:path*', destination: '/produkt/zebra-zt411', permanent: true },
       { source: '/produkt/zebra-zt620-2/:path*', destination: '/produkt/zebra-zt620', permanent: true },
       { source: '/produkt/zebra-zt220/:path*', destination: '/produkt/zebra-zt231', permanent: true },
       { source: '/produkt/zebra-zt230/:path*', destination: '/produkt/zebra-zt231', permanent: true },

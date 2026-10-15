@@ -1,3 +1,7 @@
+import { rfidPrinterCategory } from './rfid-printer-category'
+import { rfidPrinterProducts } from './rfid-printer-products'
+import { zd621rAdditionalAccessories } from './zd621r-accessories'
+import { zt411RfidAdditionalAccessories } from './zt411-rfid-accessories'
 // TAKMA - Katalog produktów Zebra Technologies
 // Dane zebrane z oficjalnych źródeł Zebra
 
@@ -22,6 +26,8 @@ export interface Product {
   subcategoryIds?: string[]
   manufacturerId: string
   priceFrom?: number
+  /** Karta sprzedażowa bez ceny i stanu: konfigurację wyceniamy po zapytaniu. */
+  quoteOnly?: boolean
   /** Rabat ilościowy dla sprzedaży na sztuki: cena za sztukę od danego progu (patrz src/lib/price-tiers.ts). */
   priceTiers?: { minQty: number; priceNetto: number }[]
   /** Gotowe komplety materiałów do pierwszego wydruku na karcie drukarki: PN-y z katalogu, ceny live (audyt ZD421t, ZD-10) */
@@ -205,7 +211,7 @@ export const categories: Category[] = [
     seoDescription: 'Profesjonalne drukarki etykiet i kodów kreskowych — biurkowe, przemysłowe, termiczne i termotransferowe. Zebra, Honeywell, TSC. Porównanie modeli, ceny od 639 zł netto, doradztwo techniczne.',
     longDescription: 'Oferujemy pełną gamę drukarek etykiet czołowych producentów: Zebra Technologies, Honeywell, Brother, TSC i innych. Drukarki biurkowe do biura i punktu sprzedaży, przemysłowe do pracy 24/7, termiczne i termotransferowe — znajdziesz model dopasowany do swoich potrzeb.',
     icon: 'printer',
-    productCount: 39,
+    productCount: 40,
   },
   {
     id: 'drukarki-kart',
@@ -309,8 +315,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
-    productCount: 24,
+    productIds: ['zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
+    productCount: 25,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -323,11 +329,11 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
     productIds: [
-      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
+      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510', 'zebra-zt610', 'zebra-zt620', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 33,
+    productCount: 34,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -340,13 +346,13 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
     productIds: [
-      'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t',
-      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt421', 'zebra-zt510',
+      'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r',
+      'zebra-zt231', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt620', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 43,
+    productCount: 45,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -381,6 +387,7 @@ export const subcategories: Subcategory[] = [
     productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
     productCount: 15,
   },
+  rfidPrinterCategory,
   {
     id: 'kolorowe-drukarki-etykiet',
     slug: 'kolorowe-drukarki-etykiet',
@@ -492,8 +499,10 @@ export const subcategories: Subcategory[] = [
       'citizen-ethernet-compact', 'citizen-ethernet-premium', 'citizen-wifi-premium',
       'citizen-parallel-cl-s521', 'citizen-parallel-cl-s400dt',
       'citizen-cutter-cl-e720', 'citizen-ethernet-cl-e720', 'citizen-wifi-cl-e720', 'citizen-peeler-cl-e720',
+
+      ...zt411RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 207,
+    productCount: 211,
   },
   {
     id: 'dyspensery-etykiet',
@@ -1744,9 +1753,9 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
     id: 'zebra-zd621t',
     slug: 'zebra-zd621t',
     name: 'Zebra ZD621t',
-    shortDescription: 'Zebra ZD621t — flagowa drukarka biurkowa 4" z kolorowym LCD, najszybsza w klasie (203 mm/s), obcinacz/odklejak/RFID',
+    shortDescription: 'Zebra ZD621t — biurkowa drukarka termotransferowa 4". Do 203 mm/s; ekran LCD, obcinacz i odklejak zależą od konfiguracji.',
     seoTitle: 'Zebra ZD621t - biurkowa drukarka etykiet | od 2 264 zł',
-    seoDescription: 'Zebra ZD621t — flagowa biurkowa 4" TT dla produkcji, pharma i retail. LCD 4,3", RFID, 203/300 dpi. ZD6A042-30EF00EZ od 2 264 zł netto.',
+    seoDescription: 'Zebra ZD621t — biurkowa drukarka termotransferowa 4". Warianty 203/300 dpi, LCD, odklejak i obcinacz. Sprawdź konfiguracje w TAKMA.',
     description: `Zebra ZD621t to najlepszy wybór dla firm drukujących ponad 500 etykiet dziennie, które potrzebują najszybszej biurkowej drukarki termotransferowej z kolorowym ekranem LCD i wbudowanym Ethernet.
 
 Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, zaprojektowana z myślą o firmach wymagających najwyższej wydajności, niezawodności i zaawansowanych funkcji zarządzania. Jako najszybsza 4-calowa drukarka biurkowa Zebra, ZD621t osiąga prędkość druku do 203 mm/s (8 cali na sekundę) — o 33% szybciej niż ZD421t (152 mm/s) i dwukrotnie szybciej niż budżetowy model ZD220t (102 mm/s). Rozdzielczość 203 dpi w wersji standardowej lub 300 dpi w wersji opcjonalnej zapewnia doskonałą jakość nawet przy bardzo małych kodach kreskowych 2D (QR Code, DataMatrix) i drobnym tekście. Drukarka obsługuje druk termotransferowy z użyciem taśmy barwiącej (ribbon) oraz druk termiczny bezpośredni (direct thermal), co czyni ją najbardziej wszechstronną drukarką biurkową w ofercie Zebra.
@@ -1764,10 +1773,9 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 2213.13,
-    images: ['/images/products/zd621t_lcd_1_s.png', '/images/products/zd621t_lcd_2_s.png', '/images/products/zd621t_2_s.png', '/images/products/zd621t_cutter_2_s.png', '/images/products/zd621t_peeler_2_s.png'],
+    images: ['/images/products/zd621t_lcd_1_s.png', '/images/products/zd621t_2_s.png', '/images/products/zd621t_cutter_2_s.png', '/images/products/zd621t_peeler_2_s.png'],
     imageDescriptions: [
       'Drukarka etykiet Zebra ZD621t z kolorowym dotykowym wyświetlaczem LCD 4,3 cala — widok z przodu',
-      'Zebra ZD621t z ekranem LCD — widok pod kątem, widoczne porty USB, Ethernet i RS-232',
       'Drukarka biurkowa Zebra ZD621t — widok ogólny bez wyświetlacza',
       'Zebra ZD621t z obcinaczem (cutter) do automatycznego cięcia etykiet',
       'Zebra ZD621t z odklejakiem (peeler/dispenser) do automatycznego oddzielania etykiet od podłoża',
@@ -2142,7 +2150,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Rozwiązywanie problemów', type: 'manual', url: 'https://serwis-zebry.pl/blog/serwis-drukarki-zebra-zd621-diagnostyka-naprawa', size: 'Online' },
       { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd621-spec-sheet-en-us.pdf', size: 'PDF' },
     ],
-    relatedProducts: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pd45', 'zebra-zt111', 'zebra-zd621d'],
+    relatedProducts: ['zebra-zd621r', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pd45', 'zebra-zt111', 'zebra-zd621d'],
     createdAt: '2026-03-24',
     sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd600-series/zd621.html',
   },
@@ -7765,30 +7773,24 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     id: 'zebra-zt411',
     slug: 'zebra-zt411',
     name: 'Zebra ZT411',
-    shortDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" z ekranem dotykowym 4,3", następca ZT410. 203/300/600 dpi, do 356 mm/s, Link-OS',
-    seoTitle: 'Zebra ZT411 - drukarka etykiet | od 5 078 zł',
-    seoDescription: 'Zebra ZT411 — przemysłowa drukarka etykiet 4" dla produkcji, logistyki i pharma. 203/300/600 dpi, linerless. ZT41142-T0E0000Z od 5 078 zł netto.',
-    description: `Zebra ZT411 to najlepszy wybór dla zakładów produkcyjnych i centrów logistycznych wymagających wytrzymałej drukarki etykiet przemysłowej klasy z rozdzielczością 203/300/600 dpi.
+    shortDescription: 'Przemysłowa drukarka etykiet Zebra ZT411 z ekranem dotykowym 4,3 cala. Warianty 203, 300 i 600 dpi do magazynu i produkcji.',
+    seoTitle: 'Zebra ZT411 — przemysłowa drukarka etykiet',
+    seoDescription: 'Zebra ZT411 do etykiet wysyłkowych, magazynowych i produktowych. Warianty 203, 300 i 600 dpi, ekran dotykowy, odklejak, obcinacz i nawijak.',
+    description: `Zebra ZT411 to przemysłowa drukarka etykiet o szerokości druku do 104 mm. Służy do przygotowania etykiet wysyłkowych, magazynowych i produktowych oraz oznaczeń na potrzeby produkcji.
 
-Zebra ZT411 to przemysłowa drukarka etykiet klasy mid-range z kolorowym ekranem dotykowym 4,3" — bezpośredni następca legendarnego modelu Zebra ZT410. Zaprojektowana do intensywnej pracy w magazynach, centrach dystrybucyjnych i na liniach produkcyjnych, ZT411 łączy wytrzymałą metalową konstrukcję z intuicyjnym interfejsem dotykowym i platformą zarządzania Link-OS. Dostępna w trzech rozdzielczościach: 203 dpi (standard logistyczny, 356 mm/s), 300 dpi (drobne kody 2D i etykiety cenowe, 254 mm/s) i 600 dpi (mikro-etykiety elektroniczne i jubilerskie, 152 mm/s).
+Drukarka obsługuje druk termotransferowy z taśmą barwiącą i druk termiczny bezpośredni na odpowiednich etykietach termoczułych. Wybierz rozdzielczość 203, 300 lub 600 dpi. Rozdzielczość 203 dpi sprawdza się przy większych kodach kreskowych. Wyższą rozdzielczość wybierz do drobnego tekstu, małych kodów 2D i małych etykiet. Maksymalna prędkość druku przy 203 dpi wynosi 356 mm/s.
 
-ZT411 drukuje z prędkością do 356 mm/s (14 ips) w rozdzielczości 203 dpi — 40% szybciej niż ZT231 (304 mm/s) i ponad dwukrotnie szybciej niż drukarki biurkowe ZD421 (152 mm/s). Szerokość druku 104 mm (4,09") obsługuje etykiety od 25,4 do 114 mm. Głowica E3™ Element Energy™ Equalizer zapewnia równomierny rozkład ciepła na całej szerokości nadruku. Drukarka obsługuje rolki mediów o średnicy do 203 mm (8") na rdzeniu 76 mm (3") i taśmy barwiące (ribbony) o długości 450 m na rdzeniu 25,4 mm (1") w szerokości 51–110 mm.
+ZT411 mieści rolkę etykiet o średnicy do 203 mm na gilzie 76 mm. Przy druku termotransferowym używa taśmy barwiącej o długości do 450 m i szerokości 51–110 mm. Dobierz materiał etykiety oraz taśmę do powierzchni produktu i wymaganej trwałości nadruku.
 
-Kolorowy dotykowy wyświetlacz 4,3" (resistive touch) to kluczowe ulepszenie względem ZT410 (monochromatyczny LCD) — wyświetla status drukarki, poziom mediów, komunikaty błędów i umożliwia konfigurację bez komputera. Standardowe interfejsy: USB 2.0, USB Host, RS-232, Ethernet 10/100 i Bluetooth 4.1 (z opcją Wi-Fi 802.11ac). Opcjonalny moduł RFID UHF pozwala na kodowanie tagów RFID bezpośrednio podczas druku — adaptacyjna technologia eliminuje skomplikowane wytyczne rozmieszczenia tagów.
+Kolorowy ekran dotykowy 4,3 cala umożliwia ustawienie parametrów druku, kalibrację materiału i odczyt komunikatów urządzenia. Metalowa obudowa i składana pokrywa ułatwiają obsługę stanowiska w magazynie lub zakładzie produkcyjnym.
 
-Platforma Link-OS umożliwia zdalne zarządzanie flotą drukarek z poziomu Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja i diagnostyka w chmurze. Print DNA dostarcza narzędzia: Browser Print (druk z przeglądarki), Visibility Services (monitoring statusu) i PrintSecure (ochrona cyberbezpieczeństwa). ZT411 obsługuje języki ZPL II, EPL2 (203 dpi), XML i ZBI 2.0 (opcja) z pełną kompatybilnością wsteczną — szablony z ZT410, ZT420, S4M i 105SL Plus działają bez zmian.
+Standardowe interfejsy obejmują USB, USB Host, RS-232, Ethernet 10/100 i Bluetooth 4.1. Wi-Fi zależy od wybranego PN lub dodatkowego modułu. Link-OS i narzędzia Zebra do zarządzania drukarkami umożliwiają konfigurację urządzeń oraz obsługę drukowania w firmowej sieci.
 
-Opcje obsługi mediów: odklejak (peeler) do automatycznego odklejania etykiet od podłoża, gilotyna (cutter) do automatycznego cięcia, nawijak podkładu (liner takeup) i nawijak etykiet (full rewind). Wersje D9E wyposażone są w gilotynę linerless do druku etykiet bez podkładu. Dwuskrzydłowe drzwi mediów z dużym przezroczystym oknem ułatwiają załadunek i kontrolę poziomu materiałów.
+Warianty różnią się sposobem obsługi etykiet. Dostępne konfiguracje obejmują odklejak, obcinacz, nawijak podkładu lub nawijak etykiet. Wersje D9E drukują termicznie etykiety linerless, czyli bez podkładu. Wybierz odpowiedni PN w tabeli wariantów i sprawdź wyposażenie przed zamówieniem.
 
-Podsumowanie: Dla kogo jest Zebra ZT411? To optymalny wybór dla firm potrzebujących przemysłowej drukarki etykiet z dotykowym ekranem, RFID i trzema rozdzielczościami — magazyny z dużym wolumenem etykiet (10 000+/dzień), centra dystrybucyjne, linie produkcyjne z etykietowaniem inline, farmacja i healthcare (etykiety laboratoryjne, banku krwi), retail (etykiety cenowe, compliance). Cena od 5 078 zł netto. Oferowana przez TAKMA — autoryzowanego partnera Zebra Technologies z 20-letnim doświadczeniem w branży AutoID.
+Możliwość rozbudowy o moduł RFID zależy od konfiguracji drukarki. Jeśli potrzebujesz urządzenia z fabrycznym modułem, wybierz [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).
 
-Zebra ZT411 to uniwersalna drukarka etykiet przemysłowa i drukarka kodów kreskowych dla wymagających środowisk produkcyjnych. Jako drukarka termotransferowa obsługuje wszystkie rodzaje taśm barwiących — od woskowych po żywiczne. To najczęściej wybierana drukarka przemysłowa Zebra 4" do intensywnego etykietowania. Porównanie z tańszym modelem ZT231 (ceny, TCO, scenariusze): [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie).
-
-Potrzebujesz pełnego konfiguratora wariantów ZT411 z aktualnym cennikiem, kalkulatorem ROI dla druku linerless i porównaniem ZT411 vs ZT421? Odwiedź naszą dedykowaną landing page: [zebrazt411.pl](https://zebrazt411.pl) — 16 wariantów ZT411 z Part Numbers, FAQ i przewodnikami po rozdzielczościach 203/300/600 dpi oraz RFID UHF.
-
-Całkowity koszt posiadania (TCO) jest kluczowy dla przemysłowych drukarek etykiet: uwzględnij koszt ribbonów (~0,01–0,02 zł/etykietę), głowic drukujących (200–800 zł), wałków i serwisu. Przemysłowe drukarki Zebra serii ZT oferują niższy TCO dzięki wytrzymałej metalowej obudowie, długowiecznym głowicom i modułowej konstrukcji umożliwiającej naprawę zamiast wymiany urządzenia.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Porównaj funkcje i koszty urządzeń w poradniku [ZT231 vs ZT411](/poradnik/zebra-zt231-vs-zt411-porownanie). Więcej informacji o konfiguracjach znajdziesz też na [zebrazt411.pl](https://zebrazt411.pl).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -7830,7 +7832,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Czujniki mediów', value: 'Ruchome transmisyjne i refleksyjne' },
       { name: 'Konstrukcja', value: 'Metalowa rama i metalowe obudowy, dwuskrzydłowe drzwi' },
       { name: 'Opcje mediów', value: 'Odklejak, gilotyna, nawijak podkładu, nawijak etykiet, linerless' },
-      { name: 'Opcje RFID', value: 'UHF RFID (zestaw do montażu w terenie)' },
+      { name: 'Opcje RFID', value: 'Opcjonalna rozbudowa; zgodność zależy od konfiguracji drukarki' },
       { name: 'Wymiary (S×G×W)', value: '262 × 495 × 394 mm' },
       { name: 'Waga', value: '12,5 kg' },
       { name: 'Temp. pracy (TT)', value: '5–40°C' },
@@ -7847,7 +7849,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       'Kompletacja zamówień — picking/packing w centrach dystrybucyjnych',
       'Etykiety magazynowe na regały, lokacje i palety',
       'Etykiety laboratoryjne, próbek i banku krwi (healthcare)',
-      'Kodowanie RFID UHF — asset tracking i zarządzanie zapasami',
+      'Druk kodów kreskowych do identyfikacji produktów i wyposażenia',
       'Cross-docking i sortowanie paczek w centrach logistycznych',
       'Etykiety cenowe i oznaczenia sklepowe (retail compliance)',
       'Druk etykiet linerless bez podkładu — ekologiczne rozwiązanie',
@@ -7934,8 +7936,8 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         answer: 'ZT411 oferuje 5 opcji: (1) Odklejak (peeler) — automatycznie oddziela etykietę od podłoża, gotową do naklejenia. (2) Gilotyna (cutter) — automatycznie odcina etykietę po wydruku. (3) Nawijak podkładu (liner takeup) — nawija zużyty liner na szpulę, utrzymuje porządek. (4) Nawijak etykiet (full rewind) — nawija etykiety z podkładem na szpulę do późniejszego użycia/aplikatora. (5) Gilotyna linerless — do etykiet bez podkładu (ekologicznych). Każda opcja jest konfigurowalna fabrycznie.',
       },
       {
-        question: 'Czy ZT411 obsługuje RFID?',
-        answer: 'Tak — ZT411 obsługuje opcjonalny moduł UHF RFID (P1058930-500C) instalowany w terenie. Adaptacyjna technologia kodowania Zebra automatycznie kalibruje pozycję tagu RFID, eliminując ręczne wytyczne rozmieszczenia. Obsługiwane standardy: EPC Gen 2 V2, ISO 18000-6C. Idealne do zarządzania zapasami, asset tracking, logistyki i retail (RFID inventory).',
+        question: 'Czy pokazane warianty mają fabryczny moduł RFID?',
+        answer: 'Nie. Możliwość rozbudowy zależy od konfiguracji drukarki. Urządzenia z fabrycznym modułem znajdziesz na karcie [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).',
       },
       {
         question: 'Jakie taśmy barwiące (ribbony) pasują do ZT411?',
@@ -8000,7 +8002,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
             'Rozdzielczość': '203 / 300 / 600 dpi',
             'Prędkość': '356 mm/s',
             'Wyświetlacz': 'Kolorowy dotykowy 4,3"',
-            'RFID UHF': 'Opcja',
+            'RFID UHF': 'Opcja rozbudowy',
             'Pamięć Flash': '512 MB',
             'Waga': '12,5 kg',
             'Cena od': '5 078 zł',
@@ -8031,7 +8033,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     relatedProducts: ['zebra-zt610', 'zebra-zt231', 'honeywell-pm45', 'honeywell-px45', 'zebra-zt421'],
     createdAt: '2023-03-20',
     sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt400-series/zt411.html',
-    updatedAt: '2026-02-12',
+    updatedAt: '2026-10-15',
   },
   {
     id: 'zebra-zt421',
@@ -53333,52 +53335,52 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
   {
     id: 'zebra-battery-zd420',
     slug: 'zebra-bateria-zd410-zd420-zd620',
-    name: 'Bateria do drukarki Zebra ZD421, ZD621',
-    shortDescription: 'Bateria do drukarki Zebra ZD421, ZD621 — oryginalna bateria umożliwiająca mobilną pracę drukarki',
-    description: `Oryginalna bateria Zebra umożliwiająca mobilną pracę drukarek ZD410, ZD420d, ZD420t, ZD421t, ZD620d, ZD620t i ZD621t bez podłączenia do zasilania sieciowego.
-
-Wymaga dodatkowego modułu na baterię (P1080383-600) do zainstalowania w drukarce.`,
+    name: 'Bateria do drukarek Zebra ZD421 / ZD621 / ZD621R',
+    shortDescription: 'Bateria Zebra P1080383-603 zasila zgodne drukarki biurkowe bez podłączenia do sieci elektrycznej.',
+    description: `Bateria Zebra P1080383-603 zasila zgodne drukarki biurkowe bez podłączenia do sieci elektrycznej. Do użycia z ZD621R potrzebujesz podstawy P1080383-600. Podstawa jest sprzedawana osobno. W pozostałych modelach dobierz podstawę do wersji obudowy.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1431.60,
     images: ['/images/products/P1080383-603.png'],
-    imageDescriptions: ['Bateria do drukarki Zebra ZD421, ZD621'],
+    imageDescriptions: ['Bateria do drukarek Zebra ZD421 / ZD621 / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1080383-603' },
-      { name: 'Kompatybilność', value: 'Zebra ZD410, ZD420, ZD421, ZD620, ZD621' },
+      { name: 'Kompatybilność', value: 'Zebra ZD410, ZD420, ZD421, ZD620, ZD621, ZD621R — z podstawą odpowiednią do modelu' },
     ],
     applications: ['Mobilne drukowanie', 'Praca bez zasilania sieciowego'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2023-01-01',
   },
   {
     id: 'zebra-battery-module-zd420t',
     slug: 'zebra-modul-baterie-zd420t-zd620t',
-    name: 'Moduł na baterię do drukarki Zebra ZD421t, ZD621t',
-    shortDescription: 'Moduł na baterię do drukarki Zebra ZD421t, ZD621t — moduł umożliwiający zamontowanie baterii w drukarce ZD421t / ZD621t',
-    description: `Moduł Zebra umożliwiający zamontowanie baterii (P1080383-603) w drukarkach ZD420t, ZD421t, ZD620t i ZD621t. Wymagany do pracy drukarki na baterii.`,
+    name: 'Podstawa baterii Zebra ZD421t / ZD621t / ZD621R',
+    shortDescription: 'Podstawa Zebra P1080383-600 umożliwia zamontowanie baterii w drukarkach ZD420t, ZD421t, ZD620t i ZD621t oraz ZD621R.',
+    description: `Podstawa Zebra P1080383-600 umożliwia zamontowanie baterii w drukarkach ZD420t, ZD421t, ZD620t i ZD621t oraz ZD621R. Do pracy bez zasilania sieciowego potrzebujesz także baterii P1080383-603. Bateria jest sprzedawana osobno.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 246.10,
     images: ['/images/products/P1080383-600.png'],
-    imageDescriptions: ['Moduł na baterię do drukarki Zebra ZD421t, ZD621t'],
+    imageDescriptions: ['Podstawa baterii Zebra ZD421t / ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1080383-600' },
-      { name: 'Kompatybilność', value: 'Zebra ZD420t, ZD421t, ZD620t, ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD420t, ZD421t, ZD620t, ZD621t, ZD621R' },
     ],
     applications: ['Montaż baterii', 'Mobilne drukowanie'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2023-01-01',
   },
@@ -53843,17 +53845,15 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
   {
     id: 'zebra-printhead-zd621t-203',
     slug: 'zebra-glowica-203dpi-zd621t',
-    name: 'Głowica 203dpi do drukarki Zebra ZD621t',
-    shortDescription: 'Głowica 203dpi do drukarki Zebra ZD621t — oryginalna głowica drukująca 203 dpi do drukarki Zebra ZD621t',
-    description: `Oryginalna głowica drukująca Zebra 203 dpi do drukarki termotransferowej ZD621t. Zapewnia ostrą, wyraźną jakość druku kodów kreskowych i tekstu w standardowej rozdzielczości.
-
-Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotność drukarki. Zalecana w przypadku widocznego spadku jakości druku lub uszkodzenia mechanicznego.`,
+    name: 'Głowica 203 dpi Zebra ZD621t / ZD621R',
+    shortDescription: 'Głowica Zebra P1112640-240 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 203 dpi.',
+    description: `Głowica Zebra P1112640-240 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 203 dpi. Nie służy do zmiany drukarki 300 dpi na 203 dpi. Przed wymianą sprawdź rozdzielczość urządzenia.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 509.00,
     images: ['/images/products/P1112640-240.png'],
-    imageDescriptions: ['Głowica 203dpi do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Głowica 203 dpi Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -53861,27 +53861,26 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     specifications: [
       { name: 'Part Number', value: 'P1112640-240' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R — wyłącznie wersje 203 dpi' },
     ],
     applications: ['Wymiana głowicy', 'Serwis drukarki'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-printhead-zd621t-300',
     slug: 'zebra-glowica-300dpi-zd621t',
-    name: 'Głowica 300dpi do drukarki Zebra ZD621t',
-    shortDescription: 'Głowica 300dpi do drukarki Zebra ZD621t — oryginalna głowica drukująca 300 dpi do drukarki Zebra ZD621t',
-    description: `Oryginalna głowica drukująca Zebra 300 dpi do drukarki termotransferowej ZD621t. Wyższa rozdzielczość zapewnia doskonałą jakość druku małych kodów kreskowych, drobnego tekstu i grafik.
-
-Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym.`,
+    name: 'Głowica 300 dpi Zebra ZD621t / ZD621R',
+    shortDescription: 'Głowica Zebra P1112640-241 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 300 dpi.',
+    description: `Głowica Zebra P1112640-241 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 300 dpi. Nie służy do zmiany drukarki 203 dpi na 300 dpi. Przed wymianą sprawdź rozdzielczość urządzenia.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 979.00,
     images: ['/images/products/P1112640-241.png'],
-    imageDescriptions: ['Głowica 300dpi do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Głowica 300 dpi Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -53889,81 +53888,78 @@ Zalecana wymiana po widocznym spadku jakości druku lub uszkodzeniu mechanicznym
     specifications: [
       { name: 'Part Number', value: 'P1112640-241' },
       { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R — wyłącznie wersje 300 dpi' },
     ],
     applications: ['Wymiana głowicy', 'Serwis drukarki'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-platen-roller-zd621t-203',
     slug: 'zebra-walek-dociskowy-203dpi-zd621t',
-    name: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD621t',
-    shortDescription: 'Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD621t — oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 203 dpi',
-    description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD621t wyposażonych w głowicę 203 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej, co przekłada się na wysoką jakość wydruku.
-
-Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
+    name: 'Wałek dociskowy 203 dpi Zebra ZD621t / ZD621R',
+    shortDescription: 'Wałek Zebra P1112640-251 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 203 dpi.',
+    description: `Wałek Zebra P1112640-251 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 203 dpi. Dociska materiał do głowicy podczas druku. Do wersji 300 dpi wybierz wałek P1112640-252.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 123.00,
     images: ['/images/products/P1112640-251.png'],
-    imageDescriptions: ['Wałek dociskowy (dla głowicy 203dpi) do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Wałek dociskowy 203 dpi Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1112640-251' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t (głowica 203 dpi)' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R — wersje 203 dpi' },
     ],
     applications: ['Wymiana wałka dociskowego', 'Serwis drukarki'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-platen-roller-zd621t-300',
     slug: 'zebra-walek-dociskowy-300dpi-zd621t',
-    name: 'Wałek dociskowy (dla głowicy 300dpi) do drukarki Zebra ZD621t',
-    shortDescription: 'Wałek dociskowy (dla głowicy 300dpi) do drukarki Zebra ZD621t — oryginalny wałek dociskowy do drukarki Zebra ZD621t z głowicą 300 dpi',
-    description: `Oryginalny wałek dociskowy Zebra przeznaczony do drukarek ZD621t wyposażonych w głowicę 300 dpi. Zapewnia równomierny docisk materiału do głowicy drukującej.
-
-Wymiana wałka zalecana w przypadku widocznych śladów zużycia lub nierównomiernego druku.`,
+    name: 'Wałek dociskowy 300 dpi Zebra ZD621t / ZD621R',
+    shortDescription: 'Wałek Zebra P1112640-252 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 300 dpi.',
+    description: `Wałek Zebra P1112640-252 jest częścią zamienną do drukarek ZD621t i ZD621R w wersji 300 dpi. Dociska materiał do głowicy podczas druku. Do wersji 203 dpi wybierz wałek P1112640-251.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 123.00,
     images: ['/images/products/P1112640-252.png'],
-    imageDescriptions: ['Wałek dociskowy (dla głowicy 300dpi) do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Wałek dociskowy 300 dpi Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1112640-252' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t (głowica 300 dpi)' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R — wersje 300 dpi' },
     ],
     applications: ['Wymiana wałka dociskowego', 'Serwis drukarki'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-cutter-zd621t',
     slug: 'zebra-gilotyna-zd621t',
-    name: 'Gilotyna do drukarki Zebra ZD621t',
-    shortDescription: 'Gilotyna do drukarki Zebra ZD621t — moduł gilotyny do automatycznego odcinania etykiet w drukarce ZD621t',
-    description: `Moduł gilotyny Zebra do drukarki ZD621t. Automatycznie odcina etykiety po wydrukowaniu, usprawniając pracę i eliminując konieczność ręcznego odrywania.
-
-Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z gilotyną.`,
+    name: 'Obcinacz Zebra ZD621t / ZD621R',
+    shortDescription: 'Obcinacz Zebra P1112640-232 automatycznie odcina materiał po wydruku w drukarkach ZD621t i ZD621R.',
+    description: `Obcinacz Zebra P1112640-232 automatycznie odcina materiał po wydruku w drukarkach ZD621t i ZD621R. Montuje się go zamiast standardowej osłony przedniej. Przy etykietach RFID ustaw cięcie między wkładkami; nie przecinaj układu ani anteny.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 571.00,
     images: ['/images/products/P1112640-232.png'],
-    imageDescriptions: ['Gilotyna do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Obcinacz Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -53971,27 +53967,26 @@ Prosty montaż — wystarczy wymienić przednią pokrywę drukarki na moduł z g
     specifications: [
       { name: 'Part Number', value: 'P1112640-232' },
       { name: 'Typ', value: 'Gilotyna automatyczna' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R' },
     ],
     applications: ['Automatyczne odcinanie etykiet', 'Przyśpieszenie druku'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-dispenser-zd621t',
     slug: 'zebra-dyspenser-zd621t',
-    name: 'Dyspenser do drukarki Zebra ZD421c, ZD621t',
-    shortDescription: 'Dyspenser do drukarki Zebra ZD421c, ZD621t — moduł odklejaka (dyspensera) etykiet do drukarek ZD421c i ZD621t',
-    description: `Moduł dyspensera (odklejaka) Zebra do drukarek ZD421c i ZD621t. Automatycznie odkleja etykietę od podkładu po wydrukowaniu, gotową do natychmiastowego naklejenia.
-
-Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną etykietę i od razu ją aplikuje.`,
+    name: 'Odklejak Zebra ZD421c / ZD621t / ZD621R',
+    shortDescription: 'Odklejak Zebra P1112640-233 oddziela etykietę od podkładu po wydruku.',
+    description: `Odklejak Zebra P1112640-233 oddziela etykietę od podkładu po wydruku. Pasuje do drukarek ZD421c, ZD621t i ZD621R. Przy etykietach RFID sprawdź działanie odklejania na wybranym materiale.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 153.00,
     images: ['/images/products/P1112640-233.png'],
-    imageDescriptions: ['Dyspenser do drukarki Zebra ZD421c, ZD621t'],
+    imageDescriptions: ['Odklejak Zebra ZD421c / ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka', 'retail'],
     availability: 'available',
     isNew: false,
@@ -53999,27 +53994,26 @@ Znacząco przyspiesza proces etykietowania — operator pobiera już odklejoną 
     specifications: [
       { name: 'Part Number', value: 'P1112640-233' },
       { name: 'Typ', value: 'Dyspenser / odklejak etykiet' },
-      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t, ZD621R' },
     ],
     applications: ['Odklejanie etykiet', 'Szybkie etykietowanie'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-module-ethernet-rs232-zd621',
     slug: 'zebra-modul-ethernet-rs232-zd621t',
-    name: 'Moduł Ethernet i RS-232 do drukarki Zebra ZD621t',
-    shortDescription: 'Moduł Ethernet i RS-232 do drukarki Zebra ZD621t — moduł rozszerzający łączność o Ethernet 10/100 i RS-232',
-    description: `Moduł Ethernet i RS-232 Zebra do drukarki ZD621t. Umożliwia jednoczesne podłączenie drukarki do sieci LAN i komunikację szeregową RS-232.
-
-Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.`,
+    name: 'Moduł Ethernet i RS-232 Zebra ZD621t / ZD621R',
+    shortDescription: 'Moduł Zebra P1112640-238 zawiera port Ethernet oraz port szeregowy RS-232.',
+    description: `Moduł Zebra P1112640-238 zawiera port Ethernet oraz port szeregowy RS-232. Służy jako część zamienna do drukarek ZD621t i ZD621R. Opisane warianty ZD621R mają już oba porty; nie potrzebujesz tego modułu do pierwszego uruchomienia.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 302.00,
     images: ['/images/products/P1112640-238.png'],
-    imageDescriptions: ['Moduł Ethernet i RS-232 do drukarki Zebra ZD621t'],
+    imageDescriptions: ['Moduł Ethernet i RS-232 Zebra ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -54027,28 +54021,27 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi.`,
     specifications: [
       { name: 'Part Number', value: 'P1112640-238' },
       { name: 'Typ', value: 'Moduł Ethernet 10/100 + RS-232' },
-      { name: 'Kompatybilność', value: 'Zebra ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD621t, ZD621R' },
       { name: 'Instalacja', value: 'Slot modularny, bez narzędzi' },
     ],
     applications: ['Rozszerzenie łączności', 'Podłączenie do sieci LAN', 'Komunikacja RS-232'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-module-wifi-zd621t',
     slug: 'zebra-modul-wifi-zd421c-zd621t',
-    name: 'Moduł WiFi do drukarki Zebra ZD421c, ZD621t',
-    shortDescription: 'Moduł WiFi do drukarki Zebra ZD421c, ZD621t — moduł bezprzewodowy Wi-Fi do drukarek ZD421c i ZD621t',
-    description: `Moduł bezprzewodowy Wi-Fi Zebra do drukarek ZD421c i ZD621t. Prosta instalacja w slocie modularnym.
-
-Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć Wi-Fi.`,
+    name: 'Moduł Wi-Fi 5 Zebra ZD421c / ZD621t / ZD621R',
+    shortDescription: 'Moduł Zebra P1112640-239C dodaje Wi-Fi 5 (802.11ac) i Bluetooth 4.1 do zgodnych drukarek ZD421c, ZD621t i ZD621R.',
+    description: `Moduł Zebra P1112640-239C dodaje Wi-Fi 5 (802.11ac) i Bluetooth 4.1 do zgodnych drukarek ZD421c, ZD621t i ZD621R. Wersja C jest przeznaczona na rynki poza USA, Kanadą i Japonią. Nie jest modułem Wi-Fi 6. Wariant ZD621R ZD6A143-30ERR2EZ ma już fabryczne Wi-Fi 6.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 534.00,
     images: ['/images/products/P1112640-239C.png'],
-    imageDescriptions: ['Moduł WiFi do drukarki Zebra ZD421c, ZD621t'],
+    imageDescriptions: ['Moduł Wi-Fi 5 Zebra ZD421c / ZD621t / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -54056,28 +54049,27 @@ Umożliwia druk bezprzewodowy z komputerów, tabletów i smartfonów przez sieć
     specifications: [
       { name: 'Part Number', value: 'P1112640-239C' },
       { name: 'Typ', value: 'Moduł Wi-Fi' },
-      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t' },
+      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t, ZD621R — wersja regionalna poza USA, Kanadą i Japonią' },
       { name: 'Instalacja', value: 'Slot modularny, bez narzędzi' },
     ],
     applications: ['Druk bezprzewodowy', 'Druk z urządzeń mobilnych'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
   {
     id: 'zebra-power-supply-zd421-zd621',
     slug: 'zebra-zasilacz-zd411-zd421-zd621',
-    name: 'Zasilacz sieciowy do drukarki Zebra ZD411, ZD421, ZD621',
-    shortDescription: 'Zasilacz sieciowy do drukarki Zebra ZD411, ZD421, ZD621 — oryginalny zasilacz sieciowy do drukarek Zebra ZD411, ZD421 i ZD621',
-    description: `Oryginalny zasilacz sieciowy Zebra do drukarek biurkowych serii ZD411, ZD421 i ZD621. Zapewnia stabilne zasilanie drukarki.
-
-Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego stanowiska.`,
+    name: 'Zasilacz Zebra 75 W, 24 V do ZD421 / ZD621 / ZD621R',
+    shortDescription: 'Zasilacz Zebra P1079903-026 dostarcza napięcie 24 V i moc 75 W.',
+    description: `Zasilacz Zebra P1079903-026 dostarcza napięcie 24 V i moc 75 W. Zestaw zawiera przewody zasilające EU oraz US. Służy jako zasilacz zapasowy lub zamienny do zgodnych drukarek, w tym ZD621R. Zasilacz jest już dołączony do opisanych wariantów ZD621R.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 555.00,
     images: ['/images/products/P1079903-026.png'],
-    imageDescriptions: ['Zasilacz sieciowy do drukarki Zebra ZD411, ZD421, ZD621'],
+    imageDescriptions: ['Zasilacz Zebra 75 W, 24 V do ZD421 / ZD621 / ZD621R'],
     tags: ['magazyn', 'logistyka'],
     availability: 'available',
     isNew: false,
@@ -54085,10 +54077,11 @@ Zalecany jako zamiennik uszkodzonego zasilacza lub jako zapasowy do drugiego sta
     specifications: [
       { name: 'Part Number', value: 'P1079903-026' },
       { name: 'Napięcie wejściowe', value: '100–240V AC, 50/60 Hz' },
-      { name: 'Kompatybilność', value: 'Zebra ZD411, ZD421, ZD621' },
+      { name: 'Kompatybilność', value: 'Zebra ZD410, ZD420, ZD421c, ZD500, ZD500R, ZD620, ZD621d, ZD621t, ZD621R oraz pozostałe modele zgodne z PN' },
     ],
     applications: ['Wymiana zasilacza', 'Zasilanie drukarki'],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
@@ -54493,24 +54486,26 @@ Instalacja w slocie modularnym drukarki — prosta wymiana bez narzędzi. Idealn
   {
     id: 'zebra-keyboard-zkdu',
     slug: 'zebra-klawiatura-zkdu-001-00',
-    name: 'Klawiatura do drukarek Zebra (ZKDU-001-00)',
-    shortDescription: 'Klawiatura do drukarek Zebra (ZKDU-001-00) — zewnętrzna klawiatura do drukarek przemysłowych Zebra, standalone printing',
-    description: 'Klawiatura Zebra ZKDU-001-00 do drukarek przemysłowych. Umożliwia druk bez komputera — bezpośredni wybór formatu etykiet i wprowadzanie zmiennych danych.',
+    name: 'Klawiatura Zebra ZKDU — ZKDU-001-00',
+    shortDescription: 'Klawiatura Zebra ZKDU-001-00 umożliwia wprowadzanie zmiennych danych do formatów etykiet zapisanych w drukarce.',
+    description: `Klawiatura Zebra ZKDU-001-00 umożliwia wprowadzanie zmiennych danych do formatów etykiet zapisanych w drukarce. Współpracuje ze zgodnymi drukarkami Zebra z portem RS-232, w tym ZD621R. Wymaga wcześniej przygotowanego formatu etykiety ZPL lub EPL.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 1041.53,
-    images: [],
+    images: ['/images/products/ZKDU-001-00.png'],
+    imageDescriptions: ['Klawiatura z wyświetlaczem Zebra ZKDU-001-00'],
     tags: ['produkcja', 'magazyn'],
     availability: 'unavailable',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'ZKDU-001-00' },
-      { name: 'Kompatybilność', value: 'Drukarki Zebra z portem RS-232' },
+      { name: 'Kompatybilność', value: 'Zgodne drukarki Zebra z portem RS-232, w tym ZD621R' },
     ],
     applications: [],
     compatibleAccessories: [],
+    relatedAccessories: ['zebra-zd621r'],
     downloads: [],
     createdAt: '2025-01-01',
   },
@@ -96145,6 +96140,9 @@ for (const subcategory of subcategories) {
 
 const rawProductList: Product[] = [
   ...desktopPrinters,
+  ...rfidPrinterProducts,
+  ...zd621rAdditionalAccessories,
+  ...zt411RfidAdditionalAccessories,
   ...industrialLightPrinters,
   ...industrialPrinters,
   ...mobilePrinters,

@@ -22,6 +22,7 @@ export type ProductCardData = Pick<
   | 'specifications'
   | 'variants'
   | 'priceFrom'
+  | 'quoteOnly'
   | 'priceTiers'
   | 'availability'
 > & { href?: string }

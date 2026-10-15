@@ -117,7 +117,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   const liveAvailability = liveStatus ?? (isZebraTerminalProduct(product) ? 'unavailable' : product.availability)
   // Brak stanu magazynowego pokazujemy jako niedostępność.
-  const isUnavailable = liveAvailability !== 'available'
+  const isUnavailable = !product.quoteOnly && liveAvailability !== 'available'
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const },
@@ -125,7 +125,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     unavailable: { label: 'Niedostępny', variant: 'danger' as const },
   }
 
-  const availability = availabilityConfig[liveAvailability]
+  const availability = product.quoteOnly
+    ? { label: 'Na zapytanie', variant: 'info' as const }
+    : availabilityConfig[liveAvailability]
 
   const gaItem = () => ({
     item_id: product.id,
@@ -347,7 +349,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   href={productHref}
                   className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                 >
-                  Zobacz więcej
+                  {product.quoteOnly ? 'Zapytaj o produkt' : 'Zobacz więcej'}
+                </Link>
+              ) : (product.variants?.length ?? 0) > 1 ? (
+                <Link
+                  href={`${productHref}#warianty`}
+                  className="flex-1 flex items-center justify-center text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
+                >
+                  Wybierz wariant
                 </Link>
               ) : (
                 <button
@@ -380,7 +389,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   : 'text-white bg-primary-600 hover:bg-primary-700'
               }`}
             >
-              Zobacz więcej
+              {product.quoteOnly ? 'Zapytaj o produkt' : 'Zobacz więcej'}
             </Link>
           )}
         </div>

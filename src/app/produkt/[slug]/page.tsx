@@ -318,8 +318,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     .filter(Boolean)
 
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
-  const isLabelPrinter = product.categoryId === 'drukarki-etykiet'
-  const isTTprinter = product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false
+  const isRfidPrinter = product.subcategoryIds?.includes('drukarki-rfid') ?? false
+  const isLabelPrinter = product.categoryId === 'drukarki-etykiet' && !isRfidPrinter
+  const isTTprinter = (product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false) && !isRfidPrinter
   // Kolorowa drukarka (Epson ColorWorks): etykiety Zebry do niej nie pasują, w miejscu sekcji etykiet
   // idą tusze i nośniki z compatibleAccessories.
   const isColorPrinter = product.subcategoryIds?.includes('kolorowe-drukarki-etykiet') ?? false
@@ -1002,7 +1003,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Badge dostępności (z SmartPriceContext) siedzi w prawym górnym rogu boksu ceny */}
             <SmartPrice
               product={product}
-              badge={product.download ? undefined : (
+              badge={product.download ? undefined : product.quoteOnly ? (
+                <Badge variant="info">Na zapytanie</Badge>
+              ) : (
                 <ContextAvailabilityBadge
                   staticAvailability={product.availability}
                   requireConfirmedStock={liveOffers}
@@ -1045,7 +1048,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {product.download ? (
                 <DownloadButton product={product} />
               ) : (
-                <AddToRFQButton product={product} />
+                !product.quoteOnly && <AddToRFQButton product={product} />
               )}
               <AskAboutProductButton productName={product.name} productSlug={product.slug} />
             </div>

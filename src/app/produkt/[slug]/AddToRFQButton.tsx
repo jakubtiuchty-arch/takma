@@ -167,7 +167,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
 
   // Niedostępny → "Powiadom o dostępności"
   if (isUnavailable) {
-    const pn = partNumbers[0] || product.id
+    const pn = displayedPn || partNumbers[0] || product.id
     return <NotifyForm partNumber={pn} productName={product.name} compact={compact} />
   }
 

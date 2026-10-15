@@ -1,3 +1,4 @@
+import { rfidPrinterContent } from './rfid-printer-category'
 // Rich content for subcategory pages (SEO/AEO/GEO)
 // Generated from competitor analysis and expert knowledge
 
@@ -101,6 +102,7 @@ export interface SubcategoryRichContent {
 }
 
 export const subcategoryContent: Record<string, SubcategoryRichContent> = {
+  'drukarki-rfid': rfidPrinterContent,
   'biurkowe-drukarki-etykiet': {
     definition: {
       heading: 'Co to jest biurkowa drukarka etykiet?',

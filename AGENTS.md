@@ -8,3 +8,9 @@
 - Przy pisaniu i poprawianiu treści dla klientów stosuj [standard języka TAKMA](docs/standard-jezyka.md), oparty na ASD-STE100.
 - W języku polskim stosuj adaptację zasad prostego języka technicznego; nie deklaruj formalnej zgodności polskiego tekstu z angielskim standardem.
 - Dotyczy to także opisów akcesoriów, krótkich opisów, komunikatów i metadanych SEO. Zachowuj wymagania techniczne, zgodność modeli i oryginalne numery PN.
+
+## Spójność wyglądu i działania strony
+
+- Przy każdej zmianie strony najpierw sprawdź analogiczne istniejące karty lub sekcje i użyj tych samych komponentów, układu oraz sposobu działania. Nie wprowadzaj własnych wzorców bez wyraźnego polecenia użytkownika.
+- Przed publikacją porównaj zmienioną stronę z istniejącą kartą wzorcową, także wizualnie. Sprawdź rozmiary zdjęć, odstępy, przyciski oraz rozwijanie i zwijanie sekcji.
+- Akcesoria na karcie produktu: początkowo pokaż pierwszy rząd (4 produkty na komputerze), a pozostałe udostępnij przez istniejące rozwijanie „Pokaż pozostałe” i zwijanie „Zwiń”. Zachowaj standardowy rozmiar zdjęć i jeden wspólny dział „Akcesoria”, chyba że użytkownik poleci inaczej.
