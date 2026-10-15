@@ -7,6 +7,57 @@ import type { FilterDefinition } from '@/components/subcategory/FilterableProduc
  * bo trafiają do komponentu klienckiego. Kolejność reguł = kolejność opcji w filtrze.
  */
 export const categoryFilters: Record<string, FilterDefinition[]> = {
+  'drukarki-rfid': [
+    {
+      specKey: 'rodzaj',
+      label: 'Rodzaj drukarki',
+      description: 'Wybierz miejsce pracy drukarki.\n• Biurkowa — przy stanowisku pracy\n• Przemysłowa — w magazynie lub na produkcji\n• Mobilna — drukowanie przy towarze, z zasilaniem z baterii',
+      derived: [
+        { value: 'Biurkowa', subcategory: 'biurkowe-drukarki-etykiet' },
+        { value: 'Przemysłowa', subcategory: 'przemyslowe-drukarki-etykiet' },
+        { value: 'Mobilna', subcategory: 'mobilne-drukarki-etykiet' },
+      ],
+    },
+    {
+      specKey: 'rozdzielczosc',
+      label: 'Rozdzielczość',
+      description: 'Rozdzielczość dotyczy nadruku, a nie zasięgu RFID. Filtr pokazuje modele z oferowanym wariantem o danej rozdzielczości. Właściwy numer katalogowy wybierz na karcie drukarki.',
+      derived: [
+        { value: '203 dpi', pattern: '\\b203\\b', specs: ['Rozdzielczość'] },
+        { value: '300 dpi', pattern: '\\b300\\b', specs: ['Rozdzielczość'] },
+        { value: '600 dpi', pattern: '\\b600\\b', specs: ['Rozdzielczość'] },
+      ],
+    },
+    {
+      specKey: 'szerokosc',
+      label: 'Szerokość druku',
+      description: 'Maksymalna szerokość nadruku. Sprawdź też szerokość podkładu, średnicę rolki i gilzę. W ZD611R limit wynosi 56 mm przy 203 dpi lub 54 mm przy 300 dpi.',
+      derived: [
+        { value: '2 cale (54–56 mm)', pattern: '\\b(?:54|56)\\s*mm', specs: ['Szerokość druku'] },
+        { value: '3 cale (72 mm)', pattern: '\\b72\\s*mm', specs: ['Szerokość druku'] },
+        { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|108)\\s*mm', specs: ['Szerokość druku'] },
+        { value: '6 cali (168 mm)', pattern: '\\b168\\s*mm', specs: ['Szerokość druku'] },
+      ],
+    },
+    {
+      specKey: 'metoda-druku',
+      label: 'Metoda druku',
+      description: 'Druk termiczny wymaga etykiet termoczułych i nie wymaga taśmy. Druk termotransferowy wymaga taśmy barwiącej. W obu metodach kodowanie wymaga zgodnych etykiet RFID.',
+      derived: [
+        { value: 'Termiczny bez taśmy', pattern: 'termiczny bezpośredni', specs: ['Metoda druku'] },
+        { value: 'Termiczny bez taśmy', subcategory: 'termiczne-drukarki-etykiet' },
+        { value: 'Termotransferowy', subcategory: 'termotransferowe-drukarki-etykiet' },
+      ],
+    },
+    {
+      specKey: 'etykiety-na-metal',
+      label: 'Etykiety na metal',
+      description: 'Pokazuje model z oferowaną wersją do grubszych etykiet Silverline na metal. Na karcie ZT411 wybierz wersję On-Metal. Standardowa ZT411 RFID nie obsługuje tych etykiet.',
+      derived: [
+        { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid'] },
+      ],
+    },
+  ],
   'etykiety-rfid-zebra': [
     { specKey: 'Typ druku', label: 'Metoda druku', derived: [
       { value: 'Termiczny bez taśmy', pattern: 'termiczny bezpośredni', specs: ['Typ druku'] },
