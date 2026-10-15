@@ -1,3 +1,4 @@
+import { zq630RfidAdditionalAccessories } from './zq630-plus-rfid-products'
 import { zd611rAdditionalAccessories } from './zd611r-accessories'
 import { zt421RfidAdditionalAccessories } from './zt421-rfid-products'
 import { zt231RfidAdditionalAccessories } from './zt231-rfid-accessories'
@@ -371,11 +372,11 @@ export const subcategories: Subcategory[] = [
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
       'zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus',
-      'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus',
+      'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus',
       'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3',
       'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l',
     ],
-    productCount: 29,
+    productCount: 30,
   },
   {
     id: 'mobilne-drukarki-etykiet',
@@ -387,8 +388,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie: na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
-    productCount: 15,
+    productIds: ['zebra-zq511', 'zebra-zq521', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
+    productCount: 16,
   },
   rfidPrinterCategory,
   {
@@ -415,6 +416,7 @@ export const subcategories: Subcategory[] = [
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
     productIds: [
+      ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
       'zebra-printhead-zd220d-203', 'zebra-printhead-zd220t-203',
       'zebra-printhead-zd421d-203', 'zebra-printhead-zd421d-300',
@@ -508,7 +510,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 222,
+    productCount: 227,
   },
   {
     id: 'dyspensery-etykiet',
@@ -13110,28 +13112,20 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     id: 'zebra-zq630-plus',
     slug: 'zebra-zq630-plus',
     name: 'Zebra ZQ630 Plus',
-    shortDescription: 'Zebra ZQ630 Plus — mobilna drukarka etykiet 4", Wi-Fi 5/6, kolorowy LCD, IP54, bateria 6800 mAh, linerless',
-    seoTitle: 'Mobilna drukarka Zebra ZQ630 Plus — 4" Wi-Fi 6 magazyn | od 4 257 zł',
-    seoDescription: 'Zebra ZQ630 Plus — mobilna 4" Wi-Fi 6 do magazynów i logistyki. 100×150 mm, linerless, 6800 mAh. ZQ63-AUFAE14-00 od 4 257 zł netto.',
-    description: `Zebra ZQ630 Plus to najlepszy wybór dla firm kurierskich i logistycznych, które potrzebują mobilnego druku etykiet wysyłkowych 100×150 mm w terenie.
+    shortDescription: 'Mobilna drukarka Zebra ZQ630 Plus drukuje etykiety i pokwitowania do 104 mm. Łączność Bluetooth lub Wi-Fi zależy od PN.',
+    seoTitle: 'Zebra ZQ630 Plus — mobilna drukarka etykiet do 104 mm',
+    seoDescription: 'Zebra ZQ630 Plus do mobilnego druku etykiet i pokwitowań. Druk 203 dpi, Bluetooth lub Wi-Fi zależnie od PN. Sprawdź konfiguracje i akcesoria TAKMA.',
+    description: `Zebra ZQ630 Plus to mobilna drukarka termiczna do etykiet i pokwitowań. Przygotowuje nadruk przy stanowisku magazynowym, na rampie lub podczas obsługi dostaw.
 
-Zebra ZQ630 Plus to najpotężniejsza mobilna drukarka etykiet z serii ZQ600 Plus — jedyna 4-calowa (do 104 mm szerokości druku) drukarka przenośna Zebra nowej generacji. Drukuje etykiety wysyłkowe 100×150 mm, etykiety paletowe i pokwitowania bez konieczności stacji biurkowej.
+Drukarka ma 203 dpi, szerokość nadruku do 104 mm i prędkość do 115 mm/s. Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Dobierz rolkę do szerokości materiału, średnicy gilzy i sposobu wykrywania etykiety.
 
-Następca modelu ZQ630 — wyposażona w kolorowy wyświetlacz LCD 288×240 px, bateria PowerPrecision+ 6800 mAh (4-cell, 7.4V) zapewniającą najdłuższy czas pracy w serii ZQ600 Plus. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
+Łączność zależy od numeru PN. Dostępne konfiguracje obejmują Bluetooth, Wi-Fi 5 albo Wi-Fi 6. Wariant linerless wymaga odpowiedniego wałka i materiału bez podkładu. Zwykłe etykiety z podkładem oraz linerless nie są zamienne w każdej konfiguracji.
 
-Opcjonalna łączność Wi-Fi 6 (802.11ax) z Bluetooth 5.3 i szybkim roamingiem (Fast Transition / 802.11r) lub Wi-Fi 5 (ac) z BT 4.2. NFC (Zebra Print Touch) umożliwia parowanie jednym dotknięciem z terminalem mobilnym. RS-232C do integracji ze starszymi systemami, Ethernet 10/100 Mbps w stacji dokującej.
+Kolorowy ekran pokazuje stan urządzenia i połączeń. Wymienna bateria PowerPrecision+ zasila drukarkę podczas pracy mobilnej. Czas pracy zależy od materiału, pokrycia nadrukiem, połączeń i temperatury. Do ładowania dobierz zgodny zasilacz lub ładowarkę baterii.
 
-Klasa ochrony IP54, odporność na upadki z 1,83 m (6 ft) na beton i 500 upadków obrotowych. Temperatura pracy od -20°C do +50°C. Obsługuje media o szerokości 50,8–111 mm (linered) i 50,8–109 mm (linerless), rolki o średnicy do 66,8 mm z gilzą 19 mm lub 34,9 mm.
+ZQ630 Plus ma IP54 i toleruje wielokrotne upadki z 1,83 m na beton. Możesz używać jej z odpowiednim klipsem, paskiem albo uchwytem do wózka. Przed montażem sprawdź zgodność akcesoriów i zasilania.
 
-Zebra ZQ630 Plus to jedyna mobilna drukarka 4-calowa z serii ZQ600 Plus, łącząca szerokoformatowy druk etykiet (do 111 mm) z mobilnością. Wydrukujesz na niej standardowe etykiety kurierskie 100×150 mm, etykiety paletowe GS1-128 i kompletne dokumenty transportowe — bez powrotu do biurka.
-
-Kolorowy wyświetlacz LCD (288×240 px) informuje o stanie baterii, łączności, kolejce wydruków i diagnostyce. Bateria 6800 mAh (4-cell) zapewnia druk setek dużych etykiet na jednym ładowaniu — ponad 2× więcej niż baterie 3250 mAh w mniejszych modelach ZQ610/ZQ620 Plus.
-
-Waga 1,113 kg z baterią to o 383 g więcej niż ZQ620 Plus (730 g), ale wciąż poniżej 1,2 kg — akceptowalna dla pracy mobilnej z paskiem na ramię lub klipsem do paska. Pamięć 512 MB Flash (128 MB dla użytkownika) i 256 MB RAM obsługuje złożone formaty etykiet z kodami 1D/2D, grafiką i logotypami.
-
-Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Oferowane na tej karcie PN bez kodera UHF wykonują nadruk. Jeśli potrzebujesz także zapisu danych w etykiecie, wybierz [Zebra ZQ630 Plus RFID](/produkt/zebra-zq630-plus-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -13174,7 +13168,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'RS-232', value: '14-pin RS-232C do 115,2 Kbps' },
       { name: 'NFC', value: 'Tak (Zebra Print Touch)' },
       { name: 'Ethernet', value: '10/100 Mbps (w stacji dokującej)' },
-      { name: 'Bateria', value: 'PowerPrecision+ Li-Ion 6800 mAh (4-cell, 7,4V)' },
+      { name: 'Bateria', value: 'PowerPrecision+ Li-Ion 6600 mAh nominalnie (4-cell, 7,4V)' },
       { name: 'Klasa ochrony', value: 'IP54' },
       { name: 'Odporność na upadki', value: '1,83 m (6 ft) na beton — wielokrotne' },
       { name: 'Upadki obrotowe (tumble)', value: '500×' },
@@ -13190,7 +13184,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
       { name: 'Zarządzanie flotą', value: 'Link-OS, Profile Manager, Printer Management' },
       { name: 'Certyfikaty', value: 'FCC, CE, TUV, CSA' },
-      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+      { name: 'Gwarancja', value: '12 miesięcy; bateria: 12 miesięcy; głowica EMEA: 12 miesięcy lub milion cali druku' },
     ],
     applications: [
       'Etykiety wysyłkowe 100×150 mm w dostawach',
@@ -13207,28 +13201,28 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     variants: [
       {
         partNumber: 'ZQ63-AUFAE14-00',
-        name: 'Bluetooth 4.2, bateria 6800 mAh',
+        name: 'Bluetooth 4.2, bateria 6600 mAh nominalnie',
         attributes: {},
         priceFrom: 4258.25,
         availability: 'available',
       },
       {
         partNumber: 'ZQ63-AUWAE14-00',
-        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6800 mAh',
+        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6600 mAh nominalnie',
         attributes: { 'Wi-Fi': 'Wi-Fi 5 (ac)' },
         priceFrom: 4789.64,
         availability: 'available',
       },
       {
         partNumber: 'ZQ63-AUXAE14-00',
-        name: 'Bluetooth 5.3 + Wi-Fi 6 (ax), bateria 6800 mAh',
+        name: 'Bluetooth 5.3 + Wi-Fi 6 (ax), bateria 6600 mAh nominalnie',
         attributes: { 'Wi-Fi': 'Wi-Fi 6 (ax)' },
         priceFrom: 4789.64,
         availability: 'available',
       },
       {
         partNumber: 'ZQ63-AUW2E14-00',
-        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6800 mAh, linerless',
+        name: 'Bluetooth 4.2 + Wi-Fi 5 (ac), bateria 6600 mAh nominalnie, linerless',
         attributes: { 'Wi-Fi': 'Wi-Fi 5 (ac)', 'Linerless': 'Tak' },
         priceFrom: 5058.09,
         availability: 'unavailable',
@@ -13254,7 +13248,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
           specs: {
             'Szerokość druku': '104 mm (4")',
             'Prędkość': '115 mm/s',
-            'Bateria': '6800 mAh (4-cell)',
+            'Bateria': '6600 mAh nominalnie (4-cell)',
             'Drop spec': '1,83 m na beton',
             'IP': 'IP54',
             'Waga': '1 113 g',
@@ -13299,65 +13293,18 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       ],
     },
     faq: [
-      {
-        question: 'Czym Zebra ZQ630 Plus różni się od ZQ620 Plus?',
-        answer: 'ZQ630 Plus to 4-calowa (104 mm druku) mobilna drukarka — największa w serii ZQ600 Plus. ZQ620 Plus drukuje do 72 mm (3"). ZQ630 Plus ma dedykowaną baterię 6800 mAh (4-cell) zapewniającą znacznie dłuższy czas pracy, waży 1,113 kg vs 730 g. Obsługuje media do 111 mm szerokości — mieści standardowe etykiety wysyłkowe 100×150 mm. Obie mają kolorowy LCD, te same opcje Wi-Fi 5/6 i IP54.',
-      },
-      {
-        question: 'Czy na ZQ630 Plus wydrukuję etykietę kurierską 100×150 mm?',
-        answer: 'Tak — ZQ630 Plus to jedyna mobilna drukarka Zebra z serii ZQ600 Plus, która obsługuje etykiety o pełnej szerokości 100 mm (do 111 mm). Standardowe etykiety kurierskie InPost, DPD, DHL 100×150 mm drukują się bez problemu. Dla mniejszych etykiet (do 79 mm) wystarczy tańsza ZQ620 Plus.',
-      },
-      {
-        question: 'Ile etykiet wydrukuję na baterii 6800 mAh?',
-        answer: 'Bateria 6800 mAh (4-cell, 7.4V) w ZQ630 Plus zapewnia druk ok. 500–800 standardowych etykiet (100×150 mm) na jednym ładowaniu. Dokładna liczba zależy od pokrycia druku, temperatury otoczenia i ustawień Wi-Fi. Bateria 6800 mAh nie jest wymienna na mniejsze — ZQ630 Plus używa wyłącznie baterii 4-cell.',
-      },
-      {
-        question: 'Czy ZQ630 Plus jest odporna na upadki i wodę?',
-        answer: 'ZQ630 Plus spełnia klasę ochrony IP54 (ochrona przed pyłem i bryzgami wody) i wytrzymuje wielokrotne upadki z 1,83 m (6 stóp) na beton oraz 500 upadków obrotowych (tumble). Temperatura pracy od -20°C do +50°C pozwala na pracę w chłodniach i na rampach załadunkowych. To najwyższy drop spec w serii ZQ600 Plus (ZQ610/ZQ620 Plus: 1,52 m).',
-      },
-      {
-        question: 'Jakie etykiety pasują do Zebra ZQ630 Plus?',
-        answer: 'ZQ630 Plus obsługuje etykiety termiczne o szerokości 50,8–111 mm (linered) lub 50,8–109 mm (linerless): samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), die-cut i linerless. Gilza 19 mm lub 34,9 mm, maks. średnica rolki 66,8 mm. Etykiety wysyłkowe 100×150 mm, 100×100 mm, 76×51 mm — wszystkie pasują.',
-      },
-      {
-        question: 'Czy ZQ630 Plus obsługuje druk linerless?',
-        answer: 'Tak — wariant ZQ63-AUW2E14-00 ma silikonowy wałek dociskowy do druku etykiet bez podkładu (linerless, media 50,8–109 mm). Etykiety linerless redukują odpady o ok. 40% i zmieszczą więcej etykiet na rolce. Warianty z literą A (np. ZQ63-AUFAE14-00) mają standardowy wałek do etykiet z podkładem.',
-      },
-      {
-        question: 'Czy ZQ630 Plus jest kompatybilna z akcesoriami ZQ620 Plus?',
-        answer: 'Częściowo — ładowarki (SAC-MPP-1BCHGEU1-01, SAC-MPP-3BCHGEU1-01), zasilacz sieciowy (P1031365-042), kabel USB (P1031365-055) i klips do paska (P1031365-028) są współdzielone. Bateria jest inna — ZQ630 Plus używa wyłącznie 4-cell 6800 mAh (BTRY-MPP-68MA1-01), nie kompatybilnej z mniejszymi modelami. Futerał jest też dedykowany dla ZQ630 Plus.',
-      },
-      {
-        question: 'Jak długo ładuje się bateria ZQ630 Plus?',
-        answer: 'Bateria 6800 mAh (4-cell) ładuje się w ok. 4–5 godzin w ładowarce 1-gniazdowej (SAC-MPP-1BCHGEU1-01). Ładowanie kontrolowane przez PowerPrecision+ wydłuża żywotność baterii. Nie stosuj ładowarek nieoryginalnych — mogą uszkodzić baterię i unieważnić gwarancję.',
-      },
-      {
-        question: 'Do jakich zastosowań nadaje się ZQ630 Plus?',
-        answer: 'ZQ630 Plus to drukarka do zadań wymagających mobilnego druku etykiet 4-calowych: dostawy kurierskie (etykiety 100×150 mm drukowane na rampie), inwentaryzacja magazynu (etykiety na regały i palety), serwis terenowy (etykiety identyfikacyjne na sprzęt), logistyka cross-dock (etykiety transportowe GS1-128). Wszędzie gdzie potrzebujesz dużych etykiet bez powrotu do biurka.',
-      },
-      {
-        question: 'Ile kosztuje Zebra ZQ630 Plus i jakie są warianty?',
-        answer: 'Ceny ZQ630 Plus zaczynają się od 4 257 zł netto za wariant Bluetooth (ZQ63-AUFAE14-00). Z Wi-Fi 5: 4 789 zł, z Wi-Fi 6: 4 789 zł. Wariant linerless z Wi-Fi 5: 5 057 zł. Wszystkie warianty mają baterię 6800 mAh, kolorowy LCD i IP54. Wi-Fi 6 zapewnia szybszy roaming i lepszą łączność w dużych magazynach.',
-      },
-      {
-        question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
-        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
-      },
-      {
-        question: 'Jakie są alternatywy dla Zebra ZQ630 Plus?',
-        answer: 'W klasie mobilnych 4-calowych: [Zebra ZQ521](/produkt/zebra-zq521) (tańsza, MIL-STD-810G, PowerPrecision+), [Brother RJ-4230B](/produkt/brother-rj-4230b) (najtańsza w klasie, 3 lata gwarancji, emulacja ZPL), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria). W klasie 3-calowej: [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) (węższa, Wi-Fi 6).',
-      },
+      { question: 'Do czego służy Zebra ZQ630 Plus?', answer: 'Do mobilnego druku termicznego etykiet i pokwitowań. Szerokość nadruku wynosi do 104 mm. Dobierz format rolki i sposób wykrywania etykiety do konkretnego PN.' },
+      { question: 'Czy ZQ630 Plus koduje etykiety RFID?', answer: 'PN na tej karcie nie mają kodera UHF. Do druku i kodowania radiowego wybierz [Zebra ZQ630 Plus RFID](/produkt/zebra-zq630-plus-rfid). Sam nadruk na etykiecie z wkładką nie koduje tej wkładki.' },
+      { question: 'Czy każda konfiguracja ma Wi-Fi?', answer: 'Nie. Wyposażenie zależy od numeru PN. Sprawdź wariant Bluetooth, Wi-Fi 5 lub Wi-Fi 6 w tabeli. Nie dobieraj konfiguracji wyłącznie na podstawie nazwy rodziny.' },
+      { question: 'Czy można drukować na etykietach linerless?', answer: 'Tylko w konfiguracji z wałkiem do materiału bez podkładu. Dobierz właściwy PN i zgodny materiał. Standardowa wersja do etykiet z podkładem nie zastępuje wersji linerless.' },
+      { question: 'Ile etykiet wydrukuje jedna bateria?', answer: 'Wynik zależy od formatu etykiety, pokrycia nadrukiem, połączeń, temperatury i stanu baterii. Sprawdź czas pracy na własnym zadaniu. Nie przyjmuj stałej liczby etykiet dla każdego zastosowania.' },
+      { question: 'Czy drukarka potrzebuje taśmy barwiącej?', answer: 'Nie. ZQ630 Plus drukuje termicznie bezpośrednio na materiale termoczułym. Do ładowania dobierz zgodny zasilacz albo ładowarkę baterii.' },
     ],
-    editorialReview: {
-      ratingValue: 4.5,
-      bestRating: 5,
-      reviewBody: 'Zebra ZQ630 Plus to jedyna mobilna drukarka 4-calowa z nowej generacji ZQ600 Plus — idealna gdy potrzebujesz drukować etykiety wysyłkowe 100×150 mm w terenie. Bateria 6800 mAh (4-cell) zapewnia najdłuższy czas pracy w serii. Kolorowy LCD i Wi-Fi 6 to standard premium. Waga 1,113 kg jest wyższa niż u mniejszych modeli, ale akceptowalna z paskiem na ramię. Opcja linerless i szerokie media do 111 mm czynią ją najbardziej wszechstronną mobilną drukarką Zebra.',
-    },
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq630-plus/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa ZQ600 Plus (PL)', type: 'datasheet', url: '/datasheets/zq600-series-spec-sheet-pl-pl.pdf', size: '0,5 MB' },
     ],
-    relatedProducts: ['zebra-zq521', 'zebra-zq620-plus', 'zebra-zq511'],
+    relatedProducts: ['zebra-zq630-plus-rfid', 'zebra-zq521', 'zebra-zq620-plus', 'zebra-zq511'],
     createdAt: '2026-02-14',
     sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
   },
@@ -56803,10 +56750,8 @@ Kompatybilna z drukarkami ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Technologia PowerPr
     id: 'zebra-charger-1slot-zq5',
     slug: 'zebra-ladowarka-1-gniazdowa-zq5-zq6',
     name: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Ładowarka 1-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — ładowarka pojedyncza do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus',
-    description: `Oryginalna ładowarka Zebra 1-gniazdowa do baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii o 30% w porównaniu z ładowaniem przez USB.
-
-Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy EU. Idealna do pojedynczych stanowisk roboczych.`,
+    shortDescription: 'Ładowarka Zebra SAC-MPP-1BCHGEU1-01 ładuje jedną zgodną baterię PowerPrecision+ drukarek ZQ500 i ZQ600, także ZQ630 Plus RFID.',
+    description: `Ładowarka Zebra SAC-MPP-1BCHGEU1-01 ładuje jedną zgodną baterię PowerPrecision+ drukarek ZQ500 i ZQ600, także ZQ630 Plus RFID. Zestaw ma zasilanie sieciowe i przewód EU. Bateria oraz drukarka są sprzedawane osobno. Przed zakupem sprawdź numer PN baterii.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -56832,10 +56777,8 @@ Czas ładowania baterii 3250 mAh: ok. 2,5–3 godziny. Zawiera zasilacz sieciowy
     id: 'zebra-charger-3slot-zq5',
     slug: 'zebra-ladowarka-3-gniazdowa-zq5-zq6',
     name: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Ładowarka 3-gniazdowa do baterii Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — ładowarka 3-gniazdowa do baterii PowerPrecision+ serii ZQ500/ZQ600 Plus, do flot mobilnych',
-    description: `Oryginalna ładowarka Zebra 3-gniazdowa do jednoczesnego ładowania 3 baterii PowerPrecision+ drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630. Kontrolowane ładowanie wydłuża żywotność baterii.
-
-Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawiera zasilacz sieciowy EU. Kompaktowa konstrukcja na blat lub regał.`,
+    shortDescription: 'Ładowarka Zebra SAC-MPP-3BCHGEU1-01 ładuje do trzech zgodnych baterii PowerPrecision+ jednocześnie.',
+    description: `Ładowarka Zebra SAC-MPP-3BCHGEU1-01 ładuje do trzech zgodnych baterii PowerPrecision+ jednocześnie. Pasuje do baterii serii ZQ500 i ZQ600, także ZQ630 Plus RFID. Zestaw obejmuje zasilacz i przewód sieciowy EU. Baterie oraz drukarki są sprzedawane osobno.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -56861,10 +56804,8 @@ Idealna do flot mobilnych — wystarczy jedna ładowarka na 3 stanowiska. Zawier
     id: 'zebra-ac-adapter-zq5',
     slug: 'zebra-zasilacz-ac-zq5-zq6',
     name: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Zasilacz AC do drukarki Zebra ZQ511 / ZQ521 / ZQ610 / ZQ620 / ZQ630 Plus — zasilacz sieciowy AC do drukarek mobilnych Zebra serii ZQ/QLn',
-    description: `Oryginalny zasilacz sieciowy Zebra AC do drukarek mobilnych ZQ511, ZQ521, ZQ610, ZQ620, ZQ630, QLn220, QLn320, QLn420. Umożliwia jednoczesne zasilanie drukarki i ładowanie baterii z gniazdka sieciowego.
-
-Przydatny przy pracy stacjonarnej (np. punkt serwisowy, recepcja) lub jako zapasowy zasilacz na stanowisko ładowania.`,
+    shortDescription: 'Zasilacz Zebra P1031365-042 ładuje baterię w zgodnej drukarce mobilnej ZQ500, ZQ600 lub QLn, także ZQ630 Plus RFID.',
+    description: `Zasilacz Zebra P1031365-042 ładuje baterię w zgodnej drukarce mobilnej ZQ500, ZQ600 lub QLn, także ZQ630 Plus RFID. Zestaw zawiera przewód sieciowy EU. Podczas ładowania drukarka może wykonywać zadania. Drukarka i bateria nie są częścią zestawu.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -57001,26 +56942,22 @@ Używany do serwisu, aktualizacji firmware i konfiguracji drukarki z komputera.`
   {
     id: 'zebra-battery-zq630',
     slug: 'zebra-bateria-6800mah-zq630-plus',
-    name: 'Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus',
-    shortDescription: 'Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus — oryginalna bateria PowerPrecision+ 6800 mAh 4-cell, dedykowana do ZQ630 Plus',
-    description: `Oryginalna bateria zapasowa Zebra PowerPrecision+ Li-Ion 6800 mAh (4-cell) dedykowana do mobilnej drukarki etykiet ZQ630 Plus. Większa pojemność niż standardowe baterie 3250/6500 mAh z serii ZQ500/ZQ600 — zapewnia najdłuższy czas pracy w całej rodzinie drukarek mobilnych Zebra.
-
-Technologia PowerPrecision+ monitoruje stan baterii, informuje o konieczności wymiany i optymalizuje ładowanie. Wymienna hot-swap — wymiana baterii bez wyłączania drukarki. Napięcie 7,4 VDC, pojemność nominalna 6600 mAh / minimalna 6,8 Ah.
-
-Jedna bateria wystarcza na 1200–1500 etykiet standardowego rozmiaru (100×150 mm). Czas ładowania w ładowarce 1-gniazdowej: ok. 4–5 godzin.`,
+    name: 'Bateria PowerPrecision+ Zebra ZQ630 Plus / RFID — BTRY-MPP-68MA1-01',
+    shortDescription: 'Bateria Zebra BTRY-MPP-68MA1-01 zasila ZQ630 i ZQ630 Plus, także wersje RFID, oraz QLn420.',
+    description: `Bateria Zebra BTRY-MPP-68MA1-01 zasila ZQ630 i ZQ630 Plus, także wersje RFID, oraz QLn420. Ma nominalnie 6600 mAh i 47,5 Wh. PowerPrecision+ udostępnia dane o stanie baterii. Ładuj ją w drukarce ze zgodnym zasilaczem albo w zgodnej ładowarce baterii. Przed wymianą postępuj zgodnie z instrukcją urządzenia.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
     priceFrom: 582.41,
     images: ['/images/products/BTRY-MPP-68MA1-01.png'],
-    imageDescriptions: ['Bateria 6800 mAh (4-cell) do Zebra ZQ630 Plus'],
+    imageDescriptions: ['Bateria 6600 mAh (nominalnie) (4-cell) do Zebra ZQ630 Plus'],
     tags: ['logistyka', 'magazyn', 'outdoor'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'BTRY-MPP-68MA1-01' },
-      { name: 'Pojemność', value: '6800 mAh (4-cell)' },
+      { name: 'Pojemność', value: '6600 mAh (nominalnie) (4-cell)' },
       { name: 'Napięcie', value: '7,4 VDC' },
       { name: 'Technologia', value: 'Li-Ion PowerPrecision+' },
       { name: 'Kompatybilność', value: 'Zebra ZQ630 Plus' },
@@ -57148,11 +57085,9 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
   {
     id: 'zebra-belt-clip-zq610',
     slug: 'zebra-klips-paska-zq610',
-    name: 'Klips do paska do Zebra ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Klips do paska do Zebra ZQ610 / ZQ620 / ZQ630 Plus — klips montażowy do paska, mocowanie drukarki mobilnej na biodrze',
-    description: `Oryginalny klips Zebra do mocowania mobilnej drukarki ZQ610/ZQ620/ZQ630 (Plus) na pasku. Umożliwia noszenie drukarki na biodrze bez użycia futerału — szybki dostęp do urządzenia i wygodna praca jednoręczna.
-
-Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do standardowych pasków o szerokości do 50 mm.`,
+    name: 'Klipsy do paska Zebra ZQ600 / QLn, 20 szt. — P1031365-028',
+    shortDescription: 'Zestaw Zebra P1031365-028 zawiera 20 zapasowych klipsów do paska.',
+    description: `Zestaw Zebra P1031365-028 zawiera 20 zapasowych klipsów do paska. Klipsy pasują do zgodnych drukarek ZQ600 i QLn, w tym ZQ630 Plus RFID. Zastępują klips dołączony do konfiguracji drukarki. Przed użyciem sprawdź poprawność mocowania.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -57176,11 +57111,9 @@ Solidna metalowa konstrukcja z mechanizmem szybkiego zwalniania. Pasuje do stand
   {
     id: 'zebra-usb-cable-zq610',
     slug: 'zebra-kabel-usb-zq610',
-    name: 'Kabel USB do Zebra ZQ610 / ZQ620 / ZQ630 Plus',
-    shortDescription: 'Kabel USB do Zebra ZQ610 / ZQ620 / ZQ630 Plus — kabel USB Micro-B do drukarek mobilnych serii ZQ600/ZQ600 Plus',
-    description: `Oryginalny kabel USB Zebra do drukarek mobilnych serii ZQ610/ZQ620/ZQ630 (Plus). Złącze USB 2.0 Micro-B do podłączenia drukarki do komputera w celu konfiguracji, aktualizacji firmware i serwisu.
-
-Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
+    name: 'Przewód USB Mini-B Zebra ZQ600 / QLn — P1031365-055',
+    shortDescription: 'Przewód Zebra P1031365-055 łączy port USB komputera ze złączem Mini-B zgodnej drukarki ZQ600 lub QLn, także ZQ630 Plus RFID.',
+    description: `Przewód Zebra P1031365-055 łączy port USB komputera ze złączem Mini-B zgodnej drukarki ZQ600 lub QLn, także ZQ630 Plus RFID. Służy do przesyłania danych, konfiguracji i aktualizacji oprogramowania. Nie zastępuje zasilacza do ładowania baterii ZQ630 Plus RFID.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -57193,7 +57126,7 @@ Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1031365-055' },
-      { name: 'Typ', value: 'Kabel USB Micro-B' },
+      { name: 'Typ', value: 'Kabel USB Mini-B' },
       { name: 'Kompatybilność', value: 'ZQ610, ZQ620, ZQ630, ZQ610 Plus, ZQ620 Plus, ZQ630 Plus' },
     ],
     applications: ['Aktualizacja firmware', 'Serwis', 'Konfiguracja'],
@@ -57205,10 +57138,8 @@ Kabel z blokadą zapobiega przypadkowemu odłączeniu podczas pracy.`,
     id: 'zebra-cable-db9-zq610',
     slug: 'zebra-kabel-db9-zq610',
     name: 'Kabel RS-232 DB9 do Zebra ZQ610 / QLn220',
-    shortDescription: 'Kabel RS-232 DB9 do Zebra ZQ610 / QLn220 — kabel szeregowy RS-232C z wtyczką DB9 do drukarek mobilnych Zebra',
-    description: `Oryginalny kabel szeregowy RS-232C Zebra z wtyczką DB9 do drukarek mobilnych ZQ610, ZQ610 Plus, QLn220. Umożliwia komunikację z systemami POS, wagami i innymi urządzeniami z interfejsem RS-232.
-
-Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym. Przydatny w integracji ze starszymi systemami kasowymi i wagowymi.`,
+    shortDescription: 'Przewód szeregowy Zebra P1031365-053 łączy zgodną drukarkę ZQ600 lub QLn z portem DB9 komputera.',
+    description: `Przewód szeregowy Zebra P1031365-053 łączy zgodną drukarkę ZQ600 lub QLn z portem DB9 komputera. Pasuje także do ZQ630 Plus RFID. Ma długość 1,83 m. Przed podłączeniem sprawdź złącza i ustawienia transmisji. Nie jest przewodem USB.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -57232,11 +57163,9 @@ Długość kabla zapewnia wygodne podłączenie drukarki na stanowisku roboczym.
   {
     id: 'zebra-car-charger-zq5',
     slug: 'zebra-zasilacz-samochodowy-zq5',
-    name: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610 / ZQ630 Plus',
-    shortDescription: 'Zasilacz samochodowy (zapalniczka) do Zebra ZQ511 / ZQ610 / ZQ630 Plus — zasilacz 12/24V do gniazda zapalniczki, ładowanie drukarki mobilnej w pojeździe',
-    description: `Oryginalny zasilacz samochodowy Zebra do gniazda zapalniczki (12/24V DC). Umożliwia ładowanie baterii i zasilanie mobilnej drukarki etykiet bezpośrednio w pojeździe — podczas trasy kurierskiej, na rampie załadunkowej lub w samochodzie serwisowym.
-
-Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczne wykrywanie napięcia 12V/24V.`,
+    name: 'Zasilacz samochodowy 12 V Zebra ZQ500 / ZQ600 — P1031359',
+    shortDescription: 'Zasilacz Zebra P1031359 podłącza zgodną drukarkę ZQ500, ZQ600 lub QLn do gniazda zapalniczki 12 V.',
+    description: `Zasilacz Zebra P1031359 podłącza zgodną drukarkę ZQ500, ZQ600 lub QLn do gniazda zapalniczki 12 V. Pasuje także do ZQ630 Plus RFID. Łączy się z gniazdem zasilania drukarki i ładuje jej baterię. Nie podłączaj go do instalacji 24 V. Do instalacji 12–24 V dobierz właściwy wariant, np. P1063406-031.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
@@ -57249,7 +57178,7 @@ Kompatybilny z drukarkami ZQ511, ZQ521, ZQ610, ZQ620 i ZQ630 (Plus). Automatyczn
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1031359' },
-      { name: 'Typ', value: 'Zasilacz samochodowy 12/24V DC' },
+      { name: 'Typ', value: 'Zasilacz samochodowy 12 V DC' },
       { name: 'Kompatybilność', value: 'ZQ511, ZQ521, ZQ610, ZQ620, ZQ630 (Plus)' },
     ],
     applications: ['Ładowanie w pojeździe', 'Trasa kurierska', 'Serwis mobilny'],
@@ -96148,6 +96077,7 @@ const rawProductList: Product[] = [
   ...rfidPrinterProducts,
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
+  ...zq630RfidAdditionalAccessories,
   ...zt411RfidAdditionalAccessories,
   ...zt231RfidAdditionalAccessories,
   ...zt421RfidAdditionalAccessories,

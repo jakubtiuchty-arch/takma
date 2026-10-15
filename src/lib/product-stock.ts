@@ -1,3 +1,4 @@
+import { zq630RfidAdditionalAccessories, zq630RfidExistingAccessorySlugs } from '@/data/zq630-plus-rfid-products'
 import { zd611rAdditionalAccessories, zd611rExistingAccessorySlugs } from '@/data/zd611r-accessories'
 import { cache } from 'react'
 import { zt620RfidAccessorySlugs } from '@/data/zt620-rfid-products'
@@ -25,6 +26,9 @@ export const LIVE_OFFER_SLUGS = new Set([
   'zebra-tc201',
   'zebra-zd621r',
   'zebra-zd611r',
+  'zebra-zq630-plus-rfid',
+  ...zq630RfidAdditionalAccessories.map(a => a.slug),
+  ...zq630RfidExistingAccessorySlugs,
   ...zd611rAdditionalAccessories.map(accessory => accessory.slug),
   ...zd611rExistingAccessorySlugs,
   'zebra-zt411-rfid',
