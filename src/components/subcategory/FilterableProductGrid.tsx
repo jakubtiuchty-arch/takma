@@ -7,6 +7,8 @@ import ProductGrid from '@/components/product/ProductGrid'
 import { FilterIcon, CloseIcon, ChevronDownIcon, HelpCircleIcon } from '@/components/ui/Icons'
 import { trackFilterUsed } from '@/lib/ga-events'
 import { readCatalogFilterState, writeCatalogFilterState } from '@/lib/catalog-filter-state'
+import { catalogPartNumbers, withLiveCatalogData } from '@/lib/catalog-live'
+import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
 export interface FilterDefinition {
   specKey: string
@@ -197,6 +199,8 @@ interface FilterableProductGridProps {
   /** Optional persistent catalog filters; category pages retain their existing behavior. */
   urlFilterPrefix?: string
   loadingMessage?: string
+  /** Kategorie z ofertami dynamicznymi sortują po tej samej cenie co kafelki. */
+  useLivePrices?: boolean
 }
 
 function extractNumeric(val: string): number {
@@ -217,7 +221,7 @@ function fId(f: FilterDefinition): string {
 }
 
 export default function FilterableProductGrid({
-  products,
+  products: baseProducts,
   filters,
   categoryNav,
   variant = 'grid',
@@ -229,7 +233,14 @@ export default function FilterableProductGrid({
   maxInitial,
   urlFilterPrefix,
   loadingMessage,
+  useLivePrices = false,
 }: FilterableProductGridProps) {
+  const pricePartNumbers = useMemo(() => useLivePrices
+    ? Array.from(new Set(baseProducts.flatMap(catalogPartNumbers))) : [], [baseProducts, useLivePrices])
+  const { stockData: livePrices } = useStockData(pricePartNumbers)
+  const products = useMemo(() => useLivePrices
+    ? baseProducts.map(product => withLiveCatalogData(product, livePrices)) : baseProducts,
+  [baseProducts, livePrices, useLivePrices])
   const [activeFilters, setActiveFilters] = useState<Record<string, Set<string>>>({})
 
   // Pasek przewijania sidebara pojawia się tylko podczas przewijania (jak natywne paski macOS);

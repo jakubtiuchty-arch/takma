@@ -1,6 +1,6 @@
 # Sidebar drukarek RFID — 15.10.2026
 
-Dodano wyłącznie konfigurację `categoryFilters['drukarki-rfid']`. Istniejący `SubcategoryPage` wybiera `FilterableProductGrid`, z checkboxami, licznikami, łączeniem warunków, czyszczeniem i mobilną szufladą. Bez nowego komponentu i zmian w kartach, zdjęciach lub integracji cen.
+Dodano konfigurację `categoryFilters['drukarki-rfid']` i opcjonalne przekazywanie cen live do istniejącej siatki filtrów. Istniejący `SubcategoryPage` wybiera `FilterableProductGrid`, z checkboxami, licznikami, łączeniem warunków, czyszczeniem i mobilną szufladą. Bez nowego komponentu i zmian w kartach, zdjęciach lub źródle cen. Tryb cen live włączono wyłącznie dla tej kategorii.
 
 ## Dane i zakres
 
@@ -27,3 +27,9 @@ Przeglądarka lokalna:
 - Telefon 390 × 844: otwarcie szuflady, wybór biurkowych, „Pokaż 2”, ZD621R i ZD611R, ponowne otwarcie i czyszczenie. Bez przewijania poziomego. Przywrócono domyślny rozmiar widoku.
 
 TypeScript zakończony poprawnie. Pierwszy odczyt typów zbiegał się z odtwarzaniem `.next` przez serwer deweloperski; ponowiono go po zakończeniu generowania plików. Lokalna baza i połączenia do dystrybutorów były wyłączone; odczyt ofert w przeglądarce przekierowano na publiczne API sklepu. Wdrożenie wyłącznie przez commit i push na `claude/takma-frontend-build-RrM9E`.
+
+## Sortowanie cen live
+
+Standardowy panel pokazuje także sortowanie cenowe. W RFID brak statycznego `priceFrom`, dlatego opcjonalny tryb `useLivePrices` uzupełnia dane siatki tym samym hookiem i pomocnikiem `withLiveCatalogData`, które korzystają ze wspólnego cache i batchera ofert. Nie zmienia pozostałych kategorii ani cen kafelków. Typy pomocnika dopuszczają minimalny zestaw danych karty, bez przenoszenia opisów produktów.
+
+Sprawdzono rosnąco: ZD621R 4200,50 zł → ZD611R 4699,42 zł → ZT231 5005,89 zł → ZQ511 6199,85 zł → ZQ521 6828,86 zł → ZQ630 Plus 7403,90 zł → ZT411 7896,42 zł → ZT610 9984,92 zł → ZT421 11 205,65 zł → ZT620 13 152,94 zł. Malejąco kolejność odwrotna. Po połączeniu malejącego sortowania z filtrem mobilnych: ZQ630 Plus, ZQ521, ZQ511. To migawka weryfikacyjna, a nie statyczne ceny oferty. Przywrócono widok domyślny.

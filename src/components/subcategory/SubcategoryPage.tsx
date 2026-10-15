@@ -406,6 +406,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
             products={products}
             filters={sidebarFilters[slug] || categoryFilters[slug]}
             filtersFirst={!sidebarFilters[slug]}
+            useLivePrices={slug === 'drukarki-rfid'}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)
               const catBrands = brandCategories.filter(b => b.categoryId === cat.id)
