@@ -10418,6 +10418,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     relatedProducts: ['zebra-zt620-rfid', 'zebra-zt421', 'honeywell-px65', 'honeywell-pm65', 'zebra-zt610'],
     createdAt: '2022-08-15',
     sameAs: 'https://www.zebra.com/us/en/products/printers/industrial/zt600-series/zt620.html',
+    updatedAt: '2026-10-15',
   },
   {
     id: 'honeywell-pd45',
