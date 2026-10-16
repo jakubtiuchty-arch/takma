@@ -4,7 +4,7 @@ const parts = [
   { key: 'glowica-203dpi', pn: '1-040084-900', name: 'Głowica 203 dpi do Honeywell PX65', image: 'head', match: 'PX65 203 dpi', description: 'Głowica 1-040084-900 zastępuje zużytą głowicę 203 dpi w Honeywell PX65, także w wersji RFID. Nie jest bezpośrednim zamiennikiem głowicy 300 dpi. Przed zakupem sprawdź rozdzielczość i numer seryjny drukarki.' },
   { key: 'glowica-300dpi', pn: '1-040085-900', name: 'Głowica 300 dpi do Honeywell PX65', image: 'head', match: 'PX65 300 dpi', description: 'Głowica 1-040085-900 zastępuje zużytą głowicę 300 dpi w Honeywell PX65, także w wersji RFID. Nie służy do samodzielnej zmiany rozdzielczości drukarki 203 dpi. Przed zakupem sprawdź konfigurację urządzenia.' },
   { key: 'walek-dociskowy', pn: '1-010110-90', name: 'Wałek dociskowy do Honeywell PX65', image: 'roller', match: 'PX65 203 i 300 dpi', description: 'Wałek dociskowy 1-010110-90 do Honeywell PX65, także w wersji RFID. Dociska materiał do głowicy drukującej. Zestaw zawiera łożyska. Przed wymianą sprawdź numer seryjny urządzenia.' },
-  { key: 'wifi-row', pn: '50147002-002', name: 'Moduł Wi-Fi ROW do Honeywell PX65', image: 'wifi', match: 'PX65; region ROW / Europa', description: 'Zestaw 50147002-002 dodaje Wi-Fi 802.11a/b/g/n/ac do Honeywell PX65. Wersja ROW jest przeznaczona do Europy i pozostałych obsługiwanych krajów poza Ameryką Północną. Montaż wewnątrz drukarki wymaga autoryzowanego technika. Przed zamówieniem sprawdź konfigurację i numer seryjny drukarki.' },
+  { key: 'wifi-row', pn: '50147002-002', name: 'Moduł Wi-Fi ROW do Honeywell PX45 i PX65', image: 'wifi', match: 'PX45 i PX65; region ROW / Europa', description: 'Zestaw 50147002-002 dodaje Wi-Fi 802.11a/b/g/n/ac do Honeywell PX45 i PX65. W PX45A02EU0000300 Wi-Fi jest fabryczne; zestaw służy do wersji bez Wi-Fi. Wersja ROW jest przeznaczona do Europy i pozostałych obsługiwanych krajów poza Ameryką Północną. Montaż wewnątrz drukarki wymaga autoryzowanego technika. Przed zamówieniem sprawdź konfigurację i numer seryjny drukarki.' },
   { key: 'obcinacz', pn: '1-041584-900', name: 'Obcinacz do Honeywell PX65', image: 'cutter', match: 'PX65; materiał i tryb cięcia wymagają doboru', description: 'Obcinacz 1-041584-900 do Honeywell PX65. Przy etykietach RFID ustaw cięcie między wkładkami. Ostrze nie może przecinać anteny ani układu elektronicznego. Przed montażem sprawdź grubość materiału, odstęp między etykietami i wyposażenie drukarki.' },
 ]
 
@@ -20,7 +20,7 @@ export const honeywellPx65RfidAccessories: Product[] = parts.map(a => ({
   tags: ['magazyn', 'logistyka', 'produkcja'], availability: 'unavailable', isNew: true, isBestseller: false,
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: a.match }],
   applications: ['Serwis lub rozbudowa zgodnej konfiguracji PX65'],
-  compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['honeywell-px65-rfid', 'honeywell-px65'],
+  compatibleAccessories: [], relatedAccessories: [], relatedProducts: a.key === 'wifi-row' ? ['honeywell-px65-rfid', 'honeywell-px65', 'honeywell-px45-rfid', 'honeywell-px45'] : ['honeywell-px65-rfid', 'honeywell-px65'],
   downloads: [{ name: 'Konfiguracje i akcesoria PX45 / PX65 (EN)', type: 'manual', url: '/downloads/honeywell-px45-px65-konfiguracje-en.pdf', size: 'PDF' }],
   createdAt: '2026-10-16',
 }))

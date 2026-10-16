@@ -1,3 +1,4 @@
+import { honeywellPx45RfidAccessories } from './honeywell-px45-rfid-products'
 import { satoCl6nxPlusRfidAccessories } from './sato-cl6nx-plus-rfid-products'
 import { satoCl4nxPlusRfidAccessories } from './sato-cl4nx-plus-rfid-products'
 import { honeywellPx65RfidAccessories } from './honeywell-px65-rfid-products'
@@ -349,12 +350,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['sato-cl6nx-plus-rfid', 'sato-cl4nx-plus-rfid', 'honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['honeywell-px45-rfid', 'sato-cl6nx-plus-rfid', 'sato-cl4nx-plus-rfid', 'honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 53,
+    productCount: 54,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -366,14 +367,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['sato-cl6nx-plus-rfid', 'sato-cl4nx-plus-rfid', 'honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['honeywell-px45-rfid', 'sato-cl6nx-plus-rfid', 'sato-cl4nx-plus-rfid', 'honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 70,
+    productCount: 71,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -432,7 +433,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: [...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: [...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -529,7 +530,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 276,
+    productCount: 280,
   },
   {
     id: 'dyspensery-etykiet',
@@ -11238,24 +11239,26 @@ Rozbudowa o RFID wymaga doboru zgodnego zestawu regionalnego oraz potwierdzenia 
     slug: 'honeywell-px45',
     name: 'Drukarka etykiet Honeywell PX45',
     shortDescription: 'Honeywell PX45 — przemysłowa drukarka etykiet premium 4″, metalowa obudowa, QuickMount, do 300 mm/s',
-    description: `Dla kogo? Honeywell PX45 to premium drukarka przemysłowa 4-calowa przeznaczona do pracy ciągłej 24/7 na liniach produkcyjnych, w centrach dystrybucji i magazynach, gdzie wymagana jest niezawodność klasy mission-critical i wydajność powyżej 10 000 etykiet dziennie.
+    description: `Honeywell PX45 to przemysłowa drukarka etykiet o szerokości nadruku do 110 mm w termotransferze lub 112 mm w druku termicznym bezpośrednim. Służy do przygotowania oznaczeń produktowych, logistycznych i produkcyjnych.
 
-Kluczowa przewaga — całkowicie metalowa obudowa i magnetyczna technologia QuickMount wyróżniają PX45 na tle konkurencji. Wymiana głowicy trwa około 30 sekund bez narzędzi, co minimalizuje przestoje serwisowe. PX45 obsługuje rozdzielczości 203, 300 i 406 dpi — wariant 406 dpi idealny do mikro-etykiet farmaceutycznych i oznaczeń komponentów elektronicznych.
+Metalowa obudowa chroni mechanizm druku. Głowica QuickMount umożliwia wymianę bez narzędzi. Wybierz 203 lub 300 dpi do standardowych oznaczeń albo 406 dpi do drobnego tekstu i szczegółowych kodów. Maksymalna prędkość wynosi 300 mm/s przy 203 i 300 dpi oraz 250 mm/s przy 406 dpi. Materiał i ustawienia mogą ograniczyć prędkość.
 
-Zastosowania — etykiety produktowe i logistyczne na liniach pakowania, etykiety wysyłkowe GS1-128/SSCC w centrach dystrybucyjnych, oznakowanie komponentów i PCB w przemyśle elektronicznym (406 dpi), etykiety GHS na pojemniki z chemikaliami, etykiety na opony i części samochodowe w branży automotive, etykiety identyfikacyjne na produkty spożywcze i farmaceutyczne zgodne z regulacjami FDA.
+Drukarka obsługuje materiał o szerokości 25,4–120 mm. Rolka może mieć średnicę do 213 mm na gilzie 38–76 mm. Do termotransferu dobierz etykietę i taśmę barwiącą. Druk termiczny bezpośredni wymaga materiału termoczułego.
 
-Inteligentny druk — PX45 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, XML i PDF — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Platforma Honeywell Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek z poziomu przeglądarki.
+Ethernet, USB i RS-232 pozwalają podłączyć drukarkę do stanowiska lub sieci. Wi-Fi, interfejs równoległy, gilotyna i nawijak zależą od numeru PN. Nie dokupuj wyposażenia, które ma już wybrana konfiguracja. Wewnętrzny nawijak z czujnikiem LTS jest opcją fabryczną.
 
-Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px45-industrial-printer).`,
+Fingerprint i C# Smart Printing pozwalają uruchamiać odpowiednio przygotowane aplikacje na drukarce. Przed migracją z innego urządzenia sprawdź zgodność szablonów i poleceń. PrintSet oraz narzędzia zarządzania ułatwiają konfigurację urządzenia.
+
+Rodzina umożliwia rozbudowę o zgodny moduł RFID. Fabryczne europejskie konfiguracje do kodowania etykiet opisuje osobna karta [Honeywell PX45 RFID](/produkt/honeywell-px45-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 10508.30,
     images: ['/images/products/PX45_2.png', '/images/products/PX45_1.png', '/images/products/PX45_3.png'],
     imageDescriptions: [
-      'Honeywell PX45 — widok z boku, metalowa obudowa i mechanizm druku',
-      'Honeywell PX45 — drukarka przemysłowa premium, widok z przodu z wyświetlaczem LCD i klawiaturą',
-      'Honeywell PX45 — widok z otwartą pokrywą, magnetyczna głowica QuickMount',
+      'Honeywell PX45 — widok pod kątem z lewym bokiem, ekranem i klawiaturą',
+      'Honeywell PX45 — widok pod kątem z prawym bokiem',
+      'Honeywell PX45 — widok z przodu z ekranem i klawiaturą',
     ],
     tags: ['magazyn', 'logistyka', 'produkcja'] as ProductTag[],
     availability: 'available' as const,
@@ -11272,7 +11275,7 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
       'Druk': 'TT+DT — druk termotransferowy (z taśmą ribbon) i termiczny bezpośredni.',
     },
     seoTitle: 'Honeywell PX45 — drukarka przemysłowa premium 4″ | Cena, warianty, specyfikacja',
-    seoDescription: 'Honeywell PX45 — premium drukarka przemysłowa 4″ z metalową obudową i QuickMount. 203/300/406 dpi, do 300 mm/s, Wi-Fi, RFID opcja, emulacja ZPL. Ceny od 10 508 zł netto. 14 wariantów.',
+    seoDescription: 'Honeywell PX45: przemysłowy druk etykiet 203, 300 lub 406 dpi, do 300 mm/s, metalowa obudowa i QuickMount. Porównaj konfiguracje, ceny i akcesoria.',
     variants: [
       {
         partNumber: 'PX45A00000000200',
@@ -11418,11 +11421,10 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
       'Mikro-etykiety farmaceutyczne i HIBC na fiolki (406 dpi)',
       'Etykiety wysyłkowe i logistyczne GS1-128 w centrach dystrybucji',
       'Oznakowanie komponentów elektronicznych i PCB (406 dpi)',
-      'Etykiety RFID UHF do śledzenia zasobów i palet',
       'Standalone druk z aplikacjami C#/Fingerprint (bez PC)',
       'Automatyczne aplikowanie etykiet z interfejsem aplikatora i I/O',
     ],
-    relatedAccessories: ['labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
+    relatedAccessories: [...honeywellPx45RfidAccessories.map(a => a.id), 'honeywell-px65-wifi-row', 'labelmate-cat-3-standard', 'labelmate-cat-3-ach', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     compatibleAccessories: [],
     downloads: [
       { name: 'Karta katalogowa PX45/PX65 Series (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-px45-px65-series-printers-datasheet-en.pdf', size: 'PDF, 577 KB' },
@@ -11435,7 +11437,7 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
       { question: 'Honeywell PX45 czy Zebra ZT610 — porównanie', answer: 'Oba to drukarki premium z metalową obudową. [Zebra ZT610](/produkt/zebra-zt610) jest szybsza (356 vs 300 mm/s), ma 600 dpi, 1 GB RAM, rolki do 254 mm OD i dotykowy ekran 4,3″. PX45 jest lżejsza (12,6 vs ~20 kg), bardziej kompaktowa i ma QuickMount głowicę. ZT610 cena od ~10 430 zł, PX45 od 10 508 zł — zbliżony segment cenowy, ale ZT610 oferuje więcej pamięci i rozdzielczości.' },
       { question: 'Czy PX45 zastępuje PX4ie?', answer: 'Tak. Honeywell PX45 to następca PX4ie — współdzieli głowice drukujące (1-040082-900, 1-040083-900), obcinarkę i wałek. PX45 dodaje: Wi-Fi 802.11ac, platformę Printer Edge do zdalnego zarządzania, lepszą emulację ZPL (ZSim2) i obsługę C# Smart Printing. Migracja z PX4ie jest prosta — te same języki programowania (Fingerprint, DP, IPL).' },
       { question: 'Jak szybko można wymienić głowicę w PX45?', answer: 'Dzięki magnetycznej technologii QuickMount wymiana głowicy w PX45 trwa około 30 sekund bez narzędzi — wystarczy odsunąć głowicę i zatrzasnąć nową. To unikalna cecha linii PX — w Zebra ZT411/ZT610 wymiana wymaga odkręcania śrub. Głowice: 203 dpi (1-040082-900, od 1 327 zł), 300 dpi (1-040083-900, od 1 397 zł), 406 dpi (850-812-900, od 3 524 zł).' },
-      { question: 'Czy Honeywell PX45 obsługuje RFID?', answer: 'Tak. PX45 obsługuje opcjonalny moduł RFID UHF (EPC Gen 2 V2.1, ISO 18000-6C, 865–928 MHz). Moduł RFID europejski: PN 50147010-002 (869 MHz). Umożliwia jednoczesne drukowanie i kodowanie etykiet RFID na linii produkcyjnej.' },
+      { question: 'Czy Honeywell PX45 obsługuje RFID?', answer: 'Rodzina umożliwia rozbudowę o zgodny moduł RFID. Gotowe konfiguracje europejskie znajdziesz na karcie [Honeywell PX45 RFID](/produkt/honeywell-px45-rfid).' },
       { question: 'Czy PX45 obsługuje szablony Zebra ZPL?', answer: 'Tak. PX45 obsługuje emulację ZSim2 (ZPL-II) — szablony etykiet Zebra działają bez zmian. Ponadto obsługuje: Fingerprint (FP), Direct Protocol (DP), IPL (Intermec), DPL (Datamax), C# Smart Printing, XML i PDF. Migracja z dowolnej marki bez przepisywania kodu etykiet.' },
       { question: 'Jakie taśmy (ribbony) pasują do PX45?', answer: 'PX45 obsługuje taśmy termotransferowe na rdzeniu 25 mm (1″), szerokość do 110 mm, długość do 450 m. Kompatybilna z taśmami wax, wax/resin i full resin. Obsługuje nawijanie CSI i CSO — w tym popularne taśmy Zebra CSO.' },
       { question: 'Jakie są alternatywy dla Honeywell PX45?', answer: 'Główne alternatywy premium: [Zebra ZT610](/produkt/zebra-zt610) (flagship, 600 dpi, 1 GB RAM, od ~10 430 zł), [Zebra ZT411](/produkt/zebra-zt411) (mid-range, tańsza od ~5 100 zł, dotykowy ekran). W linii Honeywell: [PM45](/produkt/honeywell-pm45) (mid-range, 600 dpi, LTE, od 4 823 zł), [PM65](/produkt/honeywell-pm65) (6-calowa, od 5 554 zł). PX45 wyróżnia się metalową obudową, QuickMount głowicą i standalone C# Smart Printing.' },
@@ -95824,6 +95826,7 @@ const rawProductList: Product[] = [
   ...desktopPrinters,
   ...rfidPrinterProducts,
   ...honeywellPx65RfidAccessories,
+  ...honeywellPx45RfidAccessories,
   ...brotherRfidAdditionalAccessories,
   ...brotherTjAdditionalAccessories,
   ...tscMbRfidAdditionalAccessories,

@@ -1,3 +1,4 @@
+import { honeywellPx45RfidAccessories } from '@/data/honeywell-px45-rfid-products'
 import { satoCl6nxPlusRfidAccessories } from '@/data/sato-cl6nx-plus-rfid-products'
 import { satoCl4nxPlusRfidAccessories } from '@/data/sato-cl4nx-plus-rfid-products'
 import { honeywellPx65RfidAccessories } from '@/data/honeywell-px65-rfid-products'
@@ -32,6 +33,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'honeywell-px45-rfid', ...honeywellPx45RfidAccessories.map(a => a.slug),
   'sato-cl6nx-plus-rfid', ...satoCl6nxPlusRfidAccessories.map(a => a.slug),
   'sato-cl4nx-plus-rfid', ...satoCl4nxPlusRfidAccessories.map(a => a.slug),
   'honeywell-px65-rfid', ...honeywellPx65RfidAccessories.map(a => a.slug),
