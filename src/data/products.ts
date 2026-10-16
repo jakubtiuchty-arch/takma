@@ -1,3 +1,4 @@
+import { honeywellPx65RfidAccessories } from './honeywell-px65-rfid-products'
 import { satoCl6SxrRfidAccessories } from './sato-cl6-sxr-rfid-products'
 import { satoCl4SxrRfidAccessories } from './sato-cl4-sxr-rfid-products'
 import { satoCt4RfidAccessories } from './sato-ct4-rfid-products'
@@ -346,12 +347,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 50,
+    productCount: 51,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -363,14 +364,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['honeywell-px65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 67,
+    productCount: 68,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -493,6 +494,7 @@ export const subcategories: Subcategory[] = [
       'honeywell-pm45-modul-rfid', 'honeywell-pm45-prowadnica-mediow', 'honeywell-pm45-skladany-rdzen', 'honeywell-pm45-adapter-rdzeni',
       'honeywell-pm45-modul-wifi-bt', 'honeywell-pm45-interfejs-aplikatora', 'honeywell-pm45-interfejs-przemyslowy',
       'honeywell-pm45c-odklejak-kit', 'honeywell-pm45c-mega-door-kit',
+      ...honeywellPx65RfidAccessories.map(a => a.id),
       // Akcesoria Honeywell PM65
       'honeywell-pm65-glowica-203dpi', 'honeywell-pm65-glowica-300dpi', 'honeywell-pm65-walek-dociskowy', 'honeywell-pm65-skladany-rdzen',
       'honeywell-pm65-gilotyna', 'honeywell-pm65-odklejak', 'honeywell-pm65-nawijak', 'honeywell-pm65-modul-wifi',
@@ -525,7 +527,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 263,
+    productCount: 268,
   },
   {
     id: 'dyspensery-etykiet',
@@ -11214,11 +11216,11 @@ Rozbudowa o RFID wymaga doboru zgodnego zestawu regionalnego oraz potwierdzenia 
             'Łączność': 'USB, Ethernet, RS-232',
             'Wi-Fi': 'Opcja (802.11ac)',
             'GPIO / I/O': 'Opcja (8-kanałowe I/O)',
-            'RFID': 'Brak',
-            'Obudowa': 'Metalowa IP64, QuickMount',
-            'Waga': '12,6 kg',
+            'RFID': 'Opcja, osobne wersje',
+            'Obudowa': 'Metalowa, QuickMount',
+            'Waga': '14,1 kg',
             'Cena od': '10 648 zł',
-            'Najlepszy do': 'Heavy-duty 24/7, IP64, druk przemysłowy',
+            'Najlepszy do': 'Szerokie etykiety, druk przemysłowy',
           },
         },
       ],
@@ -11487,25 +11489,25 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
     id: 'honeywell-px65',
     slug: 'honeywell-px65',
     name: 'Drukarka etykiet Honeywell PX65',
-    shortDescription: 'Honeywell PX65 — przemysłowa drukarka etykiet 6″ klasy heavy-duty, IP64, QuickMount, C# Smart Printing, 12,6 kg',
-    description: `Dla kogo? Honeywell PX65 to premium drukarka przemysłowa 6-calowa klasy heavy-duty przeznaczona do pracy ciągłej 24/7 w centrach dystrybucji, na liniach produkcyjnych i w magazynach paletowych, gdzie wymagane jest drukowanie szerokich etykiet do 170 mm — etykiet paletowych GS1-128/SSCC, oznaczeń GHS na pojemniki z chemikaliami i etykiet na kartony zbiorcze.
+    shortDescription: 'Przemysłowa drukarka szerokich etykiet na kartony i palety. 203 lub 300 dpi, nadruk do 167,4 mm i do 225 mm/s. Wyposażenie zależy od PN.',
+    description: `Honeywell PX65 drukuje szerokie etykiety logistyczne i oznaczenia produktów. Obsługuje materiał o szerokości 76–170 mm. Maksymalna szerokość nadruku wynosi 167,4 mm.
 
-Kluczowa przewaga — PX65 waży zaledwie 12,6 kg, co czyni ją najlżejszą drukarką 6-calową w swojej klasie (dla porównania Zebra ZT620 waży 26 kg). Obudowa IP64 chroni mechanizm przed pyłem i zachlapaniem wodą. Magnetyczna technologia QuickMount umożliwia wymianę głowicy w poniżej minuty bez narzędzi, minimalizując przestoje na linii produkcyjnej.
+Wersje 203 i 300 dpi drukują z prędkością do 225 mm/s. Dobierz rozdzielczość do wielkości tekstu i kodów. Termotransfer wymaga taśmy barwiącej. Druk termiczny bezpośredni wymaga odpowiedniego materiału.
 
-Zastosowania — etykiety paletowe i logistyczne SSCC/GS1-128 w centrach dystrybucyjnych, oznakowanie kartonów zbiorczych i kontenerów, etykiety GHS na beczki i pojemniki z substancjami chemicznymi, szerokie etykiety wysyłkowe w branży e-commerce i 3PL, etykiety identyfikacyjne na duże komponenty w przemyśle automotive i elektronicznym, etykiety na opony i produkty farmaceutyczne.
+Ethernet, USB i RS-232 umożliwiają podłączenie do stanowiska lub sieci. Wi-Fi, obcinacz oraz odklejak z nawijakiem zależą od PN. Porównaj wyposażenie w tabeli wariantów.
 
-Inteligentny druk — PX65 może hostować standalone aplikacje w C# i Fingerprint, eliminując potrzebę zewnętrznego PC. Obsługuje emulacje ZSim2 (ZPL-II), DPL, IPL, Fingerprint, Direct Protocol, XML i PDF — migracja z drukarek Zebra, Datamax czy Intermec nie wymaga przepisywania szablonów etykiet. Platforma Honeywell Operational Intelligence umożliwia zdalne zarządzanie flotą drukarek z poziomu przeglądarki. PX65 to bezpośredni następca modelu Intermec PX6ie z zachowaniem kompatybilności z akcesoriami i aplikatorem.
+Magnetyczne mocowanie QuickMount ułatwia wymianę głowicy. Fingerprint, Direct Protocol, IPL, ZSim2 i DPL umożliwiają przygotowanie zadań z systemu nadrzędnego. Przed migracją sprawdź zgodność szablonów i poleceń.
 
-Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px65-industrial-printer).`,
+Rozbudowa o RFID wymaga zgodnego zestawu regionalnego. Fabryczne konfiguracje UHF EU znajdziesz na osobnej karcie [Honeywell PX65 RFID](/produkt/honeywell-px65-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
     priceFrom: 10647.85,
     images: ['/images/products/PX65_2.png', '/images/products/PX65_1.png', '/images/products/PX65_3.png'],
     imageDescriptions: [
-      'Honeywell PX65 — widok z boku, metalowa obudowa IP64 i mechanizm druku',
+      'Honeywell PX65 — widok z boku, obudowa drukarki, panel LCD i klawiatura',
       'Honeywell PX65 — drukarka przemysłowa 6-calowa heavy-duty, widok z przodu z wyświetlaczem LCD i klawiaturą',
-      'Honeywell PX65 — widok z otwartą pokrywą, magnetyczna głowica QuickMount i rolka mediów 6″',
+      'Honeywell PX65 — widok pod kątem z prawym bokiem',
     ],
     tags: ['magazyn', 'produkcja', 'logistyka'] as ProductTag[],
     applications: [
@@ -11529,8 +11531,8 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
     variantAttributeTooltips: {
       'Druk': 'TT+DT — druk termotransferowy (z taśmą ribbon) i termiczny bezpośredni.',
     },
-    seoTitle: 'Honeywell PX65 — drukarka przemysłowa 6″ heavy-duty IP64 | Cena, warianty',
-    seoDescription: 'Honeywell PX65 — premium drukarka przemysłowa 6″ z IP64, QuickMount i C# Smart Printing. 203/300 dpi, do 225 mm/s, 12,6 kg, emulacja ZPL. Ceny od 10 648 zł netto. 12 wariantów.',
+    seoTitle: 'Honeywell PX65 — drukarka etykiet 6 cali 203 i 300 dpi | TAKMA',
+    seoDescription: 'Honeywell PX65 do szerokich etykiet: 203 lub 300 dpi, nadruk do 167,4 mm. Porównaj warianty z Ethernetem, Wi-Fi, obcinaczem lub nawijakiem.',
     variants: [
       {
         partNumber: 'PX65A00000000200',
@@ -11636,64 +11638,28 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
       { name: 'Języki drukarki', value: 'Fingerprint, ZSim2 (ZPL-II), DPL, IPL, Direct Protocol, C# Smart Printing, PDF, XML' },
       { name: 'Głowica', value: 'Magnetyczna QuickMount — wymiana beznarzędziowa' },
       { name: 'Czujniki', value: 'Szczelinowy, refleksyjny, ciągły, linia czarna, koniec mediów, koniec taśmy' },
-      { name: 'Klasa ochrony', value: 'IP64' },
       { name: 'Temperatura pracy', value: '+5°C do +40°C' },
       { name: 'Temperatura przechowywania', value: '-20°C do +70°C' },
       { name: 'Wilgotność', value: '20–80% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240 V AC, 45–65 Hz, 400 W' },
-      { name: 'Wymiary (S × W × G)', value: '482 × 238 × 335 mm' },
-      { name: 'Waga', value: '12,6 kg' },
+      { name: 'Wymiary (S × G × W)', value: '335 × 482 × 238 mm' },
+      { name: 'Waga', value: '14,1 kg' },
       { name: 'Opcje fabryczne', value: 'Gilotyna, odklejak z nawijakiem podkładu, moduł Wi-Fi, port LPT, I/O przemysłowe, RFID UHF' },
       { name: 'Następca modelu', value: 'Intermec PX6ie' },
-      { name: 'Gwarancja', value: '12 miesięcy (głowica: 12 mies. / 25 km wydruku)' },
+      { name: 'Gwarancja', value: '1 rok gwarancji fabrycznej; części zużywające się na odrębnych warunkach' },
     ],
     compatibleAccessories: [],
-    relatedAccessories: ['labelmate-cat-3-10-inches', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
+    relatedAccessories: [...honeywellPx65RfidAccessories.map(a => a.id), 'labelmate-cat-3-10-inches', 'labelmate-ld-165-rs', 'labelmate-ld-165-u'],
     downloads: [
       { name: 'Karta katalogowa PX45/PX65 (EN)', type: 'datasheet' as const, url: '/downloads/sps-ppr-px45-px65-series-printers-datasheet-en.pdf', size: '564 KB' },
       { name: 'Instrukcja szybkiego startu PX65 (EN)', type: 'manual' as const, url: '/downloads/sps-ppr-px65-en-qs.pdf', size: '1,3 MB' },
     ],
     faq: [
-      {
-        question: 'Dla kogo jest drukarka Honeywell PX65?',
-        answer: 'Honeywell PX65 to przemysłowa drukarka 6-calowa klasy heavy-duty przeznaczona dla centrów dystrybucji, magazynów paletowych, produkcji chemicznej (etykiety GHS) i logistyki 3PL. Drukarka zaprojektowana do pracy ciągłej 24/7 na szerokich etykietach do 170 mm.',
-      },
-      {
-        question: 'Jaką rozdzielczość ma Honeywell PX65?',
-        answer: 'Honeywell PX65 jest dostępna w wersjach 203 dpi (8 dots/mm) i 300 dpi (12 dots/mm). 203 dpi wystarcza do etykiet logistycznych i paletowych, 300 dpi do małych kodów kreskowych i etykiet farmaceutycznych z drobnym tekstem.',
-      },
-      {
-        question: 'Czym różni się Honeywell PX65 od PX45?',
-        answer: 'Honeywell PX45 to wersja 4-calowa (maks. 110 mm druku), a PX65 to wersja 6-calowa (maks. 167,4 mm). PX45 jest szybsza (305 mm/s vs 225 mm/s) i oferuje opcję 406 dpi, której PX65 nie ma. Oba modele współdzielą platformę — firmware, języki programowania i część akcesoriów są kompatybilne.',
-      },
-      {
-        question: 'Czym różni się Honeywell PX65 od Zebra ZT620?',
-        answer: 'Honeywell PX65 jest o 50% lżejsza (12,6 kg vs 26 kg), ma certyfikat IP64, magnetyczną głowicę QuickMount i obsługuje rdzenie 1,5″ i 3″. Zebra ZT620 jest szybsza (305 mm/s vs 225 mm/s), ma 4x więcej pamięci (1 GB RAM), dotykowy ekran 4,3″ i Bluetooth. PX65 jest tańsza o 10–25%.',
-      },
-      {
-        question: 'Czym różni się Honeywell PX65 od PM65?',
-        answer: 'Honeywell PM65 to entry-level drukarka 6-calowa z ekranem dotykowym, Wi-Fi 6 i niższą ceną. PX65 to heavy-duty do pracy 24/7 z certyfikatem IP64, C# Smart Printing i magnetyczną głowicą QuickMount. PX65 jest bardziej wytrzymała i przeznaczona do ekstremalnych warunków przemysłowych.',
-      },
-      {
-        question: 'Czy Honeywell PX65 obsługuje język ZPL?',
-        answer: 'Tak, Honeywell PX65 obsługuje ZSim2 — pełną emulację języka ZPL-II. Szablony etykiet zaprojektowane dla drukarek Zebra działają na PX65 bez żadnych modyfikacji. Dodatkowo obsługuje Fingerprint, IPL, DPL, Direct Protocol, C#, XML i PDF.',
-      },
-      {
-        question: 'Co to jest QuickMount i dlaczego to ważne?',
-        answer: 'QuickMount to magnetyczny system wymiany głowicy drukującej w drukarkach Honeywell PX. Wymiana głowicy trwa poniżej minuty bez narzędzi — głowica zatrzaskuje się magnetycznie. To minimalizuje przestoje serwisowe w porównaniu z tradycyjnymi śrubowymi mocowaniami stosowanymi w drukarkach konkurencji.',
-      },
-      {
-        question: 'Jaka jest prędkość druku Honeywell PX65?',
-        answer: 'Honeywell PX65 drukuje z prędkością 100–225 mm/s (do 9 ips) zarówno przy 203 dpi, jak i 300 dpi. To oznacza około 500–700 etykiet paletowych 150×100 mm na godzinę w zależności od złożoności szablonu.',
-      },
-      {
-        question: 'Czy Honeywell PX65 zastępuje PX6ie?',
-        answer: 'Tak, Honeywell PX65 jest bezpośrednim następcą drukarki Intermec PX6ie. Zachowuje kompatybilność z akcesoriami i aplikatorem PX6ie. Dodaje kolorowy wyświetlacz LCD, ulepszoną łączność (Wi-Fi 5, IPv6), C# Smart Printing i certyfikat IP64.',
-      },
-      {
-        question: 'Jakie są alternatywy dla Honeywell PX65?',
-        answer: 'Bezpośrednie alternatywy to: [Zebra ZT620](/produkt/zebra-zt620) (szybsza, ekran dotykowy, droższa), [Honeywell PM65](/produkt/honeywell-pm65) (entry-level 6″, tańsza), SATO CL6NX Plus (305 mm/s, konkurencja z Japonii). W niższym budżecie — [Honeywell PX45](/produkt/honeywell-px45) (4″, do węższych etykiet).',
-      },
+      { question: 'Jaką rozdzielczość ma Honeywell PX65?', answer: 'Dostępne są wersje 203 i 300 dpi. Dobierz rozdzielczość do wielkości tekstu i kodów na etykiecie.' },
+      { question: 'Czy każda PX65 ma Wi-Fi lub obcinacz?', answer: 'Nie. Te elementy zależą od PN. Wyposażenie poszczególnych konfiguracji pokazuje tabela wariantów.' },
+      { question: 'Czy PX65 można rozbudować o RFID?', answer: 'Tak, po doborze zgodnego zestawu regionalnego i konfiguracji. Fabryczne wersje UHF EU są na karcie [Honeywell PX65 RFID](/produkt/honeywell-px65-rfid).' },
+      { question: 'Co to jest QuickMount?', answer: 'To magnetyczne mocowanie głowicy drukującej. Ułatwia wymianę głowicy na część o zgodnej rozdzielczości.' },
+      { question: 'Czy szablony ZPL działają bez zmian?', answer: 'PX65 obsługuje emulację ZSim2. Przed migracją sprawdź zgodność szablonów i używanych poleceń.' },
     ],
     comparison: {
       title: 'Porównanie drukarek szerokich Honeywell 6" — PM65 vs PX65',
@@ -11728,11 +11694,11 @@ Pełna [specyfikacja techniczna na stronie producenta](https://automation.honeyw
             'Łączność': 'USB, Ethernet, RS-232',
             'Wi-Fi': 'Opcja (802.11ac)',
             'GPIO / I/O': 'Opcja (8-kanałowe I/O)',
-            'RFID': 'Brak',
-            'Obudowa': 'Metalowa IP64, QuickMount',
-            'Waga': '12,6 kg',
+            'RFID': 'Opcja, osobne wersje',
+            'Obudowa': 'Metalowa, QuickMount',
+            'Waga': '14,1 kg',
             'Cena od': '10 648 zł',
-            'Najlepszy do': 'Heavy-duty 24/7, IP64, druk przemysłowy',
+            'Najlepszy do': 'Szerokie etykiety, druk przemysłowy',
           },
         },
       ],
@@ -95855,6 +95821,7 @@ const rawProductList: Product[] = [
   ...rfidLabelProducts,
   ...desktopPrinters,
   ...rfidPrinterProducts,
+  ...honeywellPx65RfidAccessories,
   ...brotherRfidAdditionalAccessories,
   ...brotherTjAdditionalAccessories,
   ...tscMbRfidAdditionalAccessories,
