@@ -27,6 +27,7 @@ export const LIVE_OFFER_SLUGS = new Set([
   'tsc-alpha-40l-rfid', ...tscAlpha40lRfidAccessories.map(a => a.slug),
   'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid',
   'printronix-glowica-6-cali-p220360-001', 'printronix-glowica-6-cali-p220361-001',
+  'tsc-printronix-t6604e-rfid', 'printronix-glowica-rfid-p220359-001',
   'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid',
   'printronix-wifi-p220015-901', 'printronix-glowica-rfid-p220357-001', 'printronix-glowica-rfid-p220358-001',
   'tsc-mb241tr', 'tsc-mb341tr', 'tsc-modul-wifi-bluetooth',

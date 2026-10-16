@@ -11,8 +11,8 @@ export const rfidPrinterCategory: Subcategory = {
   seoDescription: 'Drukarki RFID do druku i kodowania etykiet UHF. Poznaj typy urządzeń, ich zastosowania i wymagania. Dobierz drukarkę, etykiety oraz konfigurację z TAKMA.',
   longDescription: 'Drukarki RFID drukują tekst, grafikę i kody kreskowe oraz zapisują dane w układzie etykiety RFID. Modele RAIN UHF RFID służą do znakowania towarów, opakowań i wyposażenia. Wybierz urządzenie do stanowiska pracy, linii produkcyjnej lub drukowania w magazynie. TAKMA pomoże dobrać drukarkę, etykiety i konfigurację do Twojego procesu.',
   icon: 'printer',
-  productIds: ['zebra-zd621r', 'zebra-zt411-rfid', 'zebra-zt610-rfid', 'zebra-zt231-rfid', 'zebra-zt421-rfid', 'zebra-zt620-rfid', 'zebra-zd611r', 'zebra-zq630-plus-rfid', 'zebra-zq521-rfid', 'zebra-zq511-rfid', 'tsc-alpha-40l-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr'],
-  productCount: 21,
+  productIds: ['zebra-zd621r', 'zebra-zt411-rfid', 'zebra-zt610-rfid', 'zebra-zt231-rfid', 'zebra-zt421-rfid', 'zebra-zt620-rfid', 'zebra-zd611r', 'zebra-zq630-plus-rfid', 'zebra-zq521-rfid', 'zebra-zq511-rfid', 'tsc-alpha-40l-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr'],
+  productCount: 22,
 }
 
 export const rfidPrinterContent: SubcategoryRichContent = {

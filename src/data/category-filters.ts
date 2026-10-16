@@ -62,7 +62,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid'] },
         { value: 'Etykiety na metal do 1,0 mm', slugs: ['brother-tj-4021tnr', 'brother-tj-4121tnr'] },
         { value: 'Etykiety na metal do 1,65 mm', slugs: ['tsc-mb241tr', 'tsc-mb341tr'] },
-        { value: 'Etykiety na metal — T6000e', slugs: ['tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid'] },
+        { value: 'Etykiety na metal — T6000e', slugs: ['tsc-printronix-t6604e-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid'] },
       ],
     },
   ],
