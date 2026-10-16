@@ -16,7 +16,7 @@ export const rfidPrinterCategory: Subcategory = {
 }
 
 export const rfidPrinterContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-15',
+  updatedAt: '2026-10-16',
   sectionHeadings: {
     technicalDeepDive: 'Kodowanie RFID, zgodność etykiet i koszty pracy',
     useCases: 'Gdzie stosuje się drukarki RFID?',
@@ -24,7 +24,7 @@ export const rfidPrinterContent: SubcategoryRichContent = {
   },
   definition: {
     heading: 'Co to jest drukarka RFID i jak działa?',
-    content: 'Drukarka RFID to drukarka etykiet z modułem do radiowego zapisu danych. Podczas przygotowania etykiety drukuje widoczny tekst lub kod i koduje jej układ elektroniczny. Gotową etykietę można odczytać skanerem kodów kreskowych albo zgodnym czytnikiem RFID. Odczyt radiowy nie wymaga bezpośredniej widoczności nadruku.\n\nW tej kategorii opisujemy drukarki do etykiet RAIN UHF RFID. Współpracują one z odpowiednimi etykietami i czytnikami UHF. Nie należy utożsamiać ich z urządzeniami do kart NFC lub MIFARE. Sam interfejs Bluetooth, Wi-Fi albo NFC w drukarce nie oznacza obsługi kodowania etykiet RFID.',
+    content: 'Drukarka RFID to drukarka etykiet z modułem do radiowego zapisu danych. Podczas przygotowania etykiety drukuje widoczny tekst lub kod i koduje jej układ elektroniczny. Gotową etykietę można odczytać skanerem kodów kreskowych albo zgodnym czytnikiem RFID. Odczyt radiowy nie wymaga bezpośredniej widoczności nadruku.\n\nW tej kategorii opisujemy drukarki do etykiet RAIN UHF RFID. Współpracują one z odpowiednimi etykietami i czytnikami UHF. Nie należy utożsamiać ich z urządzeniami do kart NFC lub MIFARE. Sam interfejs Bluetooth, Wi-Fi albo NFC w drukarce nie oznacza obsługi kodowania etykiet RFID.\n\nDo stanowiska biurkowego sprawdź [Zebra ZD621R](/produkt/zebra-zd621r). Do druku przemysłowego porównaj [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid). Do etykietowania przy towarze sprawdź mobilną [Zebra ZQ630 Plus RFID](/produkt/zebra-zq630-plus-rfid). W każdym przypadku dobierz format rolki i konfigurację do procesu.',
   },
   buyingGuide: {
     heading: 'Jak dobrać drukarkę RFID do magazynu lub produkcji?',
@@ -40,7 +40,7 @@ export const rfidPrinterContent: SubcategoryRichContent = {
     ],
   },
   expertAuthority: 'W TAKMA dobieramy urządzenia AutoID i materiały do znakowania. Przy zapytaniu o drukarkę RFID podaj rozmiar etykiety, rodzaj powierzchni i planowany nakład. Dodaj nazwę systemu, z którego chcesz drukować. Na tej podstawie ustalimy wymagania dotyczące urządzenia, etykiet i konfiguracji.',
-  technicalDeepDive: 'Drukarki RAIN UHF RFID obsługują zgodne etykiety z anteną i układem elektronicznym. Ta wkładka nosi nazwę inlay. Jej wymiary mogą być mniejsze niż wymiary całej etykiety. Położenie wkładki wpływa na poprawny zapis danych w drukarce.\n\nW standardzie EPC UHF Gen2 identyfikator EPC służy do identyfikacji oznaczonego obiektu. Nadrukowany kod kreskowy i zapisany EPC mogą korzystać z różnych formatów. System musi zachować właściwe powiązanie obu identyfikatorów. Nie zakładaj, że numer katalogowy pustej rolki jest identyfikatorem każdego oznaczonego towaru.\n\nRozdzielczość 203 lub 300 dpi opisuje jakość nadruku, a nie zasięg RFID. Zasięg zależy między innymi od etykiety, czytnika, anteny, powierzchni i otoczenia. Większa pamięć układu również nie oznacza automatycznie dłuższego zasięgu. Przed wdrożeniem sprawdź odczyt na docelowym produkcie.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID zgodnie z instrukcją urządzenia. Po zmianie typu etykiet sprawdź ustawienia ponownie. Błędnie zakodowana etykieta nie powinna trafić do użycia. Sposób oznaczenia i obsługi błędu zależy od modelu oraz konfiguracji.\n\nKoszt pracy obejmuje drukarkę, etykiety RFID, ewentualną taśmę barwiącą, oprogramowanie i integrację. Uwzględnij też testy odczytu oraz obsługę błędnych etykiet. Cenę porównuj dla konkretnego PN i zestawu materiałów. Sama cena podstawowej wersji drukarki nie określa kosztu stanowiska RFID.',
+  technicalDeepDive: 'Drukarki RAIN UHF RFID obsługują zgodne etykiety z anteną i układem elektronicznym. Ta wkładka nosi nazwę inlay. Jej wymiary mogą być mniejsze niż wymiary całej etykiety. Położenie wkładki wpływa na poprawny zapis danych w drukarce. Zobacz dostępne [etykiety RFID Zebra](/etykiety-rfid-zebra). Przed zakupem sprawdź zgodność konkretnego PN z modelem i konfiguracją drukarki.\n\nW standardzie EPC UHF Gen2 identyfikator EPC służy do identyfikacji oznaczonego obiektu. Nadrukowany kod kreskowy i zapisany EPC mogą korzystać z różnych formatów. System musi zachować właściwe powiązanie obu identyfikatorów. Nie zakładaj, że numer katalogowy pustej rolki jest identyfikatorem każdego oznaczonego towaru.\n\nRozdzielczość 203 lub 300 dpi opisuje jakość nadruku, a nie zasięg RFID. Zasięg zależy między innymi od etykiety, czytnika, anteny, powierzchni i otoczenia. Większa pamięć układu również nie oznacza automatycznie dłuższego zasięgu. Przed wdrożeniem sprawdź odczyt na docelowym produkcie.\n\nPrzed pierwszym drukiem wykonaj kalibrację materiału i RFID zgodnie z instrukcją urządzenia. Po zmianie typu etykiet sprawdź ustawienia ponownie. Błędnie zakodowana etykieta nie powinna trafić do użycia. Sposób oznaczenia i obsługi błędu zależy od modelu oraz konfiguracji.\n\nKoszt pracy obejmuje drukarkę, etykiety RFID, ewentualną taśmę barwiącą, oprogramowanie i integrację. Uwzględnij też testy odczytu oraz obsługę błędnych etykiet. Cenę porównuj dla konkretnego PN i zestawu materiałów. Sama cena podstawowej wersji drukarki nie określa kosztu stanowiska RFID.',
   useCases: [
     {
       title: 'Stanowisko biurkowe',
@@ -79,7 +79,7 @@ export const rfidPrinterContent: SubcategoryRichContent = {
   comparisons: [
     { title: 'Drukarka RFID a zwykła drukarka etykiet', content: 'Zwykła [drukarka etykiet](/drukarki-etykiet) przygotowuje nadruk. Drukarka RFID dodatkowo zapisuje dane radiowo w układzie zgodnej etykiety. Samo zadrukowanie etykiety z wkładką RFID nie koduje tej wkładki.' },
     { title: 'RFID a kod kreskowy', content: 'Kod kreskowy wymaga odczytu optycznego. RFID umożliwia radiowy odczyt identyfikatora bez bezpośredniej widoczności nadruku. Oba sposoby mogą działać na tej samej etykiecie. Wybór zależy od procesu, czytników i systemu ewidencji.' },
-    { title: 'Druk termiczny a termotransferowy w RFID', content: 'RFID określa sposób zapisu i odczytu danych elektronicznych. Druk termiczny lub termotransferowy określa sposób wykonania nadruku. [Druk termotransferowy](/termotransferowe-drukarki-etykiet) wymaga taśmy barwiącej, a [termiczny bezpośredni](/termiczne-drukarki-etykiet) wymaga materiału termoczułego.' },
+    { title: 'Druk termiczny a termotransferowy w RFID', content: 'RFID określa sposób zapisu i odczytu danych elektronicznych. Druk termiczny lub termotransferowy określa sposób wykonania nadruku. [Druk termotransferowy](/termotransferowe-drukarki-etykiet) wymaga [taśmy termotransferowej](/tasmy-termotransferowe), a [termiczny bezpośredni](/termiczne-drukarki-etykiet) wymaga materiału termoczułego.' },
   ],
   howToSteps: [],
   faq: [
