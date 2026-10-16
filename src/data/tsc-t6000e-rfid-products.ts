@@ -90,12 +90,12 @@ ${dpi === 203 ? 'Jeśli potrzebujesz drobniejszego nadruku, sprawdź [T6304e RFI
 export const tscT6000eRfidAccessories: Product[] = [{
   id: 'printronix-t6000e-wifi', slug: 'printronix-wifi-p220015-901', name: 'Moduł Wi-Fi Printronix P220015-901',
   shortDescription: 'Zestaw Wi-Fi 802.11a/b/g/n/ac do drukarek Printronix T6000e, w tym wersji RFID.',
-  description: 'Printronix P220015-901 to zestaw rozbudowy łączności Wi-Fi 802.11a/b/g/n/ac do serii T6000e. Pasuje także do T6204e RFID i T6304e RFID. Jest sprzedawany osobno. Montaż zleć serwisowi zgodnie z instrukcją urządzenia. Moduł nie dodaje kodera RFID ani weryfikatora ODV-2D. Drukarka nie jest częścią zestawu.',
+  description: 'Printronix P220015-901 to zestaw rozbudowy łączności Wi-Fi 802.11a/b/g/n/ac do serii T6000e. Pasuje także do T6204e RFID, T6304e RFID, T6206e RFID i T6306e RFID. Jest sprzedawany osobno. Montaż zleć serwisowi zgodnie z instrukcją urządzenia. Moduł nie dodaje kodera RFID ani weryfikatora ODV-2D. Drukarka nie jest częścią zestawu.',
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'tsc', tags: ['magazyn', 'produkcja'],
   images: ['/images/products/printronix-p220015-901.webp'], imageDescriptions: ['Zestaw Wi-Fi Printronix P220015-901 — moduł, antena i elementy montażowe'],
-  specifications: [{ name: 'Part Number', value: 'P220015-901' }, { name: 'Wi-Fi', value: '802.11a/b/g/n/ac' }, { name: 'Zgodność', value: 'Printronix T6000e, w tym T6204e RFID i T6304e RFID' }, { name: 'Montaż', value: 'Serwisowy' }],
+  specifications: [{ name: 'Part Number', value: 'P220015-901' }, { name: 'Wi-Fi', value: '802.11a/b/g/n/ac' }, { name: 'Zgodność', value: 'Printronix T6000e 4 i 6 cali, w tym wersje RFID' }, { name: 'Montaż', value: 'Serwisowy' }],
   applications: ['Połączenie drukarki T6000e z siecią Wi-Fi'], availability: 'unavailable', isNew: false, isBestseller: false,
-  compatibleAccessories: [], relatedAccessories: ids, downloads: [], createdAt: '2026-10-16',
+  compatibleAccessories: [], relatedAccessories: [...ids, 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid'], downloads: [], createdAt: '2026-10-16',
 }, ...[
   { dpi: 203, pn: 'P220357-001', model: 'T6204e', printer: ids[0] },
   { dpi: 300, pn: 'P220358-001', model: 'T6304e', printer: ids[1] },
