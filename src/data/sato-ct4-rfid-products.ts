@@ -66,7 +66,7 @@ Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok ochrony dotyczy kwal
 
 Porównaj także [Zebra ZD621R](/produkt/zebra-zd621r) oraz [TSC TH240R](/produkt/tsc-th240r).`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'retail', 'logistyka'],
-  images: ['/images/products/sato-ct4-rfid-main.webp'], imageDescriptions: ['SATO CT4-LX RFID — biurkowa drukarka z ekranem dotykowym, widok z przodu'],
+  images: ['/images/products/sato-ct4-rfid-angle.webp'], imageDescriptions: ['SATO CT4-LX RFID — biurkowa drukarka z ekranem dotykowym, widok pod kątem z prawym bokiem'],
   availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: { szerokoscEtykiet: '22–115 mm; dobór RFID zależy od wkładki', rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID', rozdzielczosc: '203 lub 305 dpi', szerokoscDruku: '104 mm', predkoscDruku: 'do 203 mm/s (203 dpi), do 152 mm/s (305 dpi)' },
   specifications: [
