@@ -1,0 +1,21 @@
+const assert = require('node:assert/strict')
+const ts = require('typescript')
+const fs = require('node:fs')
+const vm = require('node:vm')
+const code = ts.transpileModule(fs.readFileSync('src/lib/warehouse-sizes.ts', 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS } }).outputText
+const box = { exports: {} }; vm.runInNewContext(code, box)
+const { warehouseSize, warehouseSizes } = box.exports
+const p = (variant, category = 'thermal') => ({ variant, category })
+assert.equal(warehouseSize(p('25×76 mm, gilza 25 mm')), '25 × 76 mm')
+assert.equal(warehouseSize(p('50.80 x 31,750 mm, rdzeń 19 mm')), '50,8 × 31,75 mm')
+assert.equal(warehouseSize(p('110 mm × 74 m, wosk', 'ribbon')), '110 mm × 74 m')
+assert.equal(warehouseSize(p('110×74000 mm', 'ribbon')), '110 mm × 74 m')
+assert.equal(warehouseSize(p('10 × 15 cm')), '100 × 150 mm')
+assert.equal(warehouseSize(p('gilza 25 mm')), null)
+assert.equal(warehouseSize(p('')), null)
+const products = [p('100x150 mm'), p('25×76 mm'), p('25.0 x 76,0 mm, gilza 76 mm')]
+assert.equal(JSON.stringify(warehouseSizes(products)), JSON.stringify(['25 × 76 mm', '100 × 150 mm']))
+products.push(p('51×32 mm'))
+assert.equal(JSON.stringify(warehouseSizes(products)), JSON.stringify(['25 × 76 mm', '51 × 32 mm', '100 × 150 mm']))
+assert.equal(JSON.stringify(warehouseSizes([p('50.8x32 mm'), p('50.12x32 mm')])), JSON.stringify(['50,12 × 32 mm', '50,8 × 32 mm']))
+console.log('PASS: exact dimensions, decimal normalization, duplicate removal, numeric order, new sizes, ribbon units and missing dimensions')
