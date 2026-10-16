@@ -32,6 +32,9 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Warianty RFID przeniesione z ogólnej karty TD-4T na własne karty.
+      { source: '/produkt/brother-td-4t', has: [{ type: 'query', key: 'pn', value: 'TD4650TNWBRZ1' }], destination: '/produkt/brother-td-4650tnwbr', permanent: true },
+      { source: '/produkt/brother-td-4t', has: [{ type: 'query', key: 'pn', value: 'TD4750TNWBRZ1' }], destination: '/produkt/brother-td-4750tnwbr', permanent: true },
       { source: '/serwis/epson', destination: '/serwis-kolorowych-drukarek-epson', permanent: true },
       // podkategoria kart przeniesiona z błędnej pisowni „PCV” na „PVC” (2026-09-09)
       { source: '/karty-pcv', destination: '/karty-pvc', permanent: true },

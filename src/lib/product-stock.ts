@@ -23,6 +23,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'brother-td-4t',
+  'brother-uchwyt-rolki-pa-rh-001', 'brother-td4t-obcinarka', 'brother-td4t-odklejak',
   ...Array.from(rfidLabelSlugs),
   ...Array.from(zebraTerminalSlugs),
   'newland-mt95-kambur-pro-iii',

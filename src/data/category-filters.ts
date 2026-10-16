@@ -8,6 +8,10 @@ import type { FilterDefinition } from '@/components/subcategory/FilterableProduc
  */
 export const categoryFilters: Record<string, FilterDefinition[]> = {
   'drukarki-rfid': [
+    { specKey: 'producent', label: 'Producent', derived: [
+      { value: 'Zebra', manufacturer: 'zebra' },
+      { value: 'Brother', manufacturer: 'brother' },
+    ] },
     {
       specKey: 'rodzaj',
       label: 'Rodzaj drukarki',
@@ -35,7 +39,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '2 cale (54–56 mm)', pattern: '\\b(?:54|56)\\s*mm', specs: ['Szerokość druku'] },
         { value: '3 cale (72 mm)', pattern: '\\b72\\s*mm', specs: ['Szerokość druku'] },
-        { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|108)\\s*mm', specs: ['Szerokość druku'] },
+        { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|105[,.]7|108)\\s*mm', specs: ['Szerokość druku'] },
         { value: '6 cali (168 mm)', pattern: '\\b168\\s*mm', specs: ['Szerokość druku'] },
       ],
     },
