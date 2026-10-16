@@ -42,7 +42,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '2 cale (54–56 mm)', pattern: '\\b(?:54|56)\\s*mm', specs: ['Szerokość druku'] },
         { value: '3 cale (72 mm)', pattern: '\\b72\\s*mm', specs: ['Szerokość druku'] },
         { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|105[,.]7|107|108)\\s*mm', specs: ['Szerokość druku'] },
-        { value: '6 cali (166–168 mm)', pattern: '\\b(?:166[,.]4|168)\\s*mm', specs: ['Szerokość druku'] },
+        { value: '6 cali (152–168 mm)', pattern: '\\b(?:152|165[,.]3|166[,.]4|167[,.]5|168)\\s*mm', specs: ['Szerokość druku'] },
       ],
     },
     {

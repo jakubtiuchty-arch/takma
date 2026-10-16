@@ -1,3 +1,4 @@
+import { satoCl6SxrRfidAccessories } from '@/data/sato-cl6-sxr-rfid-products'
 import { satoCl4SxrRfidAccessories } from '@/data/sato-cl4-sxr-rfid-products'
 import { satoCt4RfidAccessories } from '@/data/sato-ct4-rfid-products'
 import { tscThRfidAccessories } from '@/data/tsc-th-rfid-products'
@@ -27,6 +28,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'sato-cl6-sxr-rfid', ...satoCl6SxrRfidAccessories.map(a => a.slug),
   'sato-cl4-sxr-rfid', ...satoCl4SxrRfidAccessories.map(a => a.slug),
   'sato-ct4-lx-rfid', ...satoCt4RfidAccessories.map(a => a.slug),
   'tsc-th240r', 'tsc-th340r', ...tscThRfidAccessories.map(a => a.slug),
