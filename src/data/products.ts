@@ -30297,7 +30297,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     "outdoor"
   ],
   "availability": "available",
-  "isNew": true,
+  "isNew": false,
   "isBestseller": false,
   "specifications": [
     {
@@ -30468,6 +30468,10 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     {
       "question": "Co to jest Zebra TC58 (kolektor danych)?",
       "answer": "Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490, ekranem 6\" FHD+ i skanerem SE55 do 12 m. Następca serii TC57 — z 5G, WiFi 6E, dual SIM (nano + eSIM) i IP68. Zaprojektowany do pracy kurierskiej, serwisu terenowego i logistyki rozproszonej poza zasięgiem WiFi."
+    },
+    {
+      "question": "Czy Zebra TC58 jest jeszcze w sprzedaży?",
+      "answer": "Zebra kończy sprzedaż modelu TC58. Producent przyjmuje ostatnie zamówienia do 29 października 2026 r. i realizuje ostatnie dostawy do 30 grudnia 2026 r. Po 29 października 2026 r. sprzedajemy TC58 do wyczerpania zapasów. Serwis i wsparcie techniczne dla TC58 Zebra zapewnia do 30 grudnia 2030 r. Następcą TC58 jest [Zebra TC501](/produkt/zebra-tc501), dostępny także w wersji z łącznością 5G."
     },
     {
       "question": "Ile kosztuje kolektor danych Zebra TC58?",
@@ -30736,7 +30740,7 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
     ]
   },
   "createdAt": "2024-06-01",
-  "updatedAt": "2026-10-07"
+  "updatedAt": "2026-10-16"
 },
   {
   "id": "zebra-tc53e",

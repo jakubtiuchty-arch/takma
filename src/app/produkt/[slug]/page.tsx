@@ -57,6 +57,8 @@ import { serviceLinks } from '@/components/ui/ServiceBanner'
 import PromoBanner from './PromoBanner'
 import SupplierOfferNotice from './SupplierOfferNotice'
 import { activeSupplierOffer } from '@/data/supplier-offers'
+import EndOfSaleNotice from './EndOfSaleNotice'
+import { endOfSaleFor } from '@/data/end-of-sale'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
@@ -1020,6 +1022,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             />
 
             <SupplierOfferNotice productSlug={product.slug} initialOffer={activeSupplierOffer(product.slug)} />
+
+            {/* Koniec sprzedaży ogłoszony przez producenta — daty i następca z src/data/end-of-sale.ts */}
+            {(() => {
+              const eos = endOfSaleFor(product.slug)
+              return eos ? <EndOfSaleNotice info={eos} /> : null
+            })()}
 
             {/* Promocja producencka (np. Zebra CEE Voucher) — znika po terminie */}
             {(() => {
