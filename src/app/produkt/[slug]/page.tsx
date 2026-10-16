@@ -819,6 +819,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       description={isLabel ? product.specifications.find((s) => s.name === 'Kompatybilność')?.value : undefined}
       products={relatedProductsList as typeof products}
       initialLimit={4}
+      keepCollapsedLinks={product.subcategoryIds?.includes('etykiety-rfid')}
     />
   ) : null
 

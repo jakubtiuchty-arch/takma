@@ -36,6 +36,8 @@ interface ProductGridProps {
   showDualButtons?: boolean
   /** Max products to show initially (rest behind "Pokaż więcej"). Reduces page size for SEO. */
   maxInitial?: number
+  /** Zachowaj linki w HTML, ukrywając kafle od tego indeksu. */
+  hiddenAfter?: number
   /** Nazwa listy w GA4 — przekazywana do kafli (`select_item`). */
   listName?: string
 }
@@ -48,6 +50,7 @@ export default function ProductGrid({
   columns = 4,
   showDualButtons = false,
   maxInitial,
+  hiddenAfter,
   listName,
 }: ProductGridProps) {
   // Bez `maxInitial` komponent NIE stronicuje — pokazuje dokładnie to, co dostał.
@@ -124,7 +127,11 @@ export default function ProductGrid({
   return (
     <>
       <div className={clsx('grid gap-4 sm:gap-6', gridCols[columns])}>
-        {displayedProducts.map((product) => (
+        {displayedProducts.map((product, index) => hiddenAfter !== undefined ? (
+          <div key={product.id} className={index >= hiddenAfter ? 'hidden' : 'contents'}>
+            <ProductCard product={product} variant="grid" showDualButtons={showDualButtons} listName={listName} />
+          </div>
+        ) : (
           <ProductCard key={product.id} product={product} variant="grid" showDualButtons={showDualButtons} listName={listName} />
         ))}
       </div>

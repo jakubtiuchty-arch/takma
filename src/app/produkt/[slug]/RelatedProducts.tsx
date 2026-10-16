@@ -16,6 +16,8 @@ interface RelatedProductsProps {
   showDualButtons?: boolean
   /** Odnośnik do kategorii obok nagłówka — sekcja wskazuje pełną ofertę bez akapitu wstępnego. */
   categoryHref?: string
+  /** Renderuj również zwinięte kafle, aby linki były obecne bez kliknięcia. */
+  keepCollapsedLinks?: boolean
 }
 
 const ROW_SIZE = 4 // ilość kart w jednym wierszu (desktop xl:grid-cols-4)
@@ -132,7 +134,7 @@ function DimensionFilters({
   )
 }
 
-export default function RelatedProducts({ title, description, products, initialLimit, labels, id, showDualButtons, categoryHref }: RelatedProductsProps) {
+export default function RelatedProducts({ title, description, products, initialLimit, labels, id, showDualButtons, categoryHref, keepCollapsedLinks = false }: RelatedProductsProps) {
   // Dla etykiet termicznych pokazujemy od razu 2 wiersze (8 kafelków serii) gdy produktów >4
   const defaultRows = labels && products.length > ROW_SIZE ? 2 : 1
   const [visibleRows, setVisibleRows] = useState(defaultRows)
@@ -233,7 +235,7 @@ export default function RelatedProducts({ title, description, products, initialL
   // Tryb domyślny: początkowo initialLimit kafelków, klik = pokaż wszystkie pozostałe
   const limit = Math.min(initialLimit ?? products.length, products.length)
   const capped = showAll ? products.length : limit
-  const visible = products.slice(0, capped)
+  const visible = keepCollapsedLinks ? products : products.slice(0, capped)
   const hasMore = capped < products.length
   const isExpanded = showAll && products.length > limit
 
@@ -250,7 +252,7 @@ export default function RelatedProducts({ title, description, products, initialL
         ) : null}
       </div>
       {description ? <p className="text-sm text-gray-600 mb-4">{description}</p> : <div className="mb-4" />}
-      <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} />
+      <ProductGrid products={visible} columns={4} showDualButtons={showDualButtons} hiddenAfter={keepCollapsedLinks ? capped : undefined} />
       <div className="mt-5 text-center flex justify-center gap-3">
         {hasMore && (
           <button

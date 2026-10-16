@@ -17,7 +17,7 @@ export const rfidLabelCategory: Subcategory = {
 }
 
 export const rfidLabelContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-15',
+  updatedAt: '2026-10-16',
   definition: {
     heading: 'Co to jest etykieta RFID i do czego służy?',
     content: 'Etykieta RFID ma antenę i układ elektroniczny. Czytnik UHF odczytuje zapisany identyfikator radiowo. Dzięki temu nie musi widzieć nadrukowanego kodu. Na tej samej etykiecie możesz umieścić tekst, kod kreskowy lub QR. Nadruk i zapis RFID są osobnymi operacjami.\n\nW tej kategorii znajdziesz etykiety Zebra RAIN UHF RFID na rolkach. Służą do identyfikacji towarów, opakowań, części i wyposażenia. Nie są to znaczniki NFC. Dobierz materiał do powierzchni przedmiotu, a format rolki do konkretnej drukarki RFID.',
@@ -34,7 +34,7 @@ export const rfidLabelContent: SubcategoryRichContent = {
     ],
   },
   expertAuthority: 'Podaj nam PN drukarki, rozmiar etykiety, znakowaną powierzchnię i planowany nakład. Jeśli używasz już RFID, dodaj nazwę czytnika oraz format identyfikatora. TAKMA pomoże dobrać materiał i ustawienia stanowiska.',
-  technicalDeepDive: 'Rolki przemysłowe RFID Zebra mają zwykle gilzę 76 mm i średnicę do 200 mm. Rolki biurkowe z tej oferty mają gilzę 76 mm i średnicę do 127 mm. ZD611R i ZD621R wymagają odpowiedniego adaptera gilzy. Przy wąskich etykietach sprawdź również szerokość podkładu.\n\nMobilne etykiety ZBR2100 mają gilzę 19 mm i czarny znacznik. ZQ521 RFID mieści rolkę do 57 mm, a ZQ630 Plus RFID do 66 mm. Przed zakupem potwierdź średnicę gotowej rolki dla danego PN. Format 102 mm jest za szeroki do ZQ511 RFID.\n\nSilverline i Metal Skin wymagają doboru konfiguracji do materiałów na metal. Przy ZT411 wybierz odpowiednią wersję T5 On-Metal. Standardowa wersja T0 nie jest zamiennikiem. Po założeniu nowego materiału wykonaj kalibrację etykiet i RFID zgodnie z instrukcją urządzenia.',
+  technicalDeepDive: 'Rolki przemysłowe RFID Zebra mają zwykle gilzę 76 mm i średnicę do 200 mm. Rolki biurkowe z tej oferty mają gilzę 76 mm i średnicę do 127 mm. [Zebra ZD611R](/produkt/zebra-zd611r) i [Zebra ZD621R](/produkt/zebra-zd621r) wymagają odpowiedniego adaptera gilzy. Przy wąskich etykietach sprawdź również szerokość podkładu.\n\nMobilne etykiety ZBR2100 mają gilzę 19 mm i czarny znacznik. ZQ521 RFID mieści rolkę do 57 mm, a ZQ630 Plus RFID do 66 mm. Przed zakupem potwierdź średnicę gotowej rolki dla danego PN. Format 102 mm jest za szeroki do ZQ511 RFID.\n\nSilverline i Metal Skin wymagają doboru konfiguracji do materiałów na metal. Do etykiet Silverline w [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) wybierz wersję T5 On-Metal. Standardowa wersja T0 nie jest zamiennikiem. Po założeniu nowego materiału wykonaj kalibrację etykiet i RFID zgodnie z instrukcją urządzenia.',
   useCases: [
     { title: 'Produkty i opakowania', description: 'Rodziny BT713, BT781, BT793 oraz ZBR2000, ZBR2100 i ZBR2200 służą do identyfikacji produktów i opakowań. Dobierz rozmiar do miejsca naklejenia oraz ilości danych na nadruku.' },
     { title: 'Logistyka i pojemniki', description: 'Etykiety z większym polem nadruku mieszczą dane logistyczne i kody. Czytnik RFID odczytuje identyfikator powiązany z rekordem w WMS lub ERP.' },
@@ -55,7 +55,7 @@ export const rfidLabelContent: SubcategoryRichContent = {
   faq: [
     { question: 'Czy cena etykiet RFID dotyczy rolki?', answer: 'Tak. Cena na kartach dotyczy jednej rolki. W parametrach znajdziesz liczbę etykiet na rolce i rolek w kartonie. Liczby te zależą od PN.' },
     { question: 'Czy każda drukarka Zebra koduje RFID?', answer: 'Nie. Potrzebujesz drukarki w konfiguracji RFID. Do Silverline i innych grubszych materiałów na metal dobierz właściwą wersję On-Metal.' },
-    { question: 'Czy do etykiet RFID potrzebuję taśmy barwiącej?', answer: 'Do etykiet termotransferowych TT potrzebujesz taśmy. Etykiety termiczne bezpośrednie DT drukują bez niej. Technologia RFID sama nie określa metody nadruku.' },
+    { question: 'Czy do etykiet RFID potrzebuję taśmy barwiącej?', answer: 'Do etykiet termotransferowych TT potrzebujesz [taśmy termotransferowej](/tasmy-termotransferowe). Etykiety termiczne bezpośrednie DT drukują bez niej. Technologia RFID sama nie określa metody nadruku.' },
     { question: 'Czy etykiety RFID można nakleić na metal?', answer: 'Do metalu wybierz konstrukcję przeznaczoną do tej powierzchni, np. Silverline lub Metal Skin. Zwykła etykieta UHF nie jest jej automatycznym zamiennikiem.' },
   ],
   howToSteps: [],
