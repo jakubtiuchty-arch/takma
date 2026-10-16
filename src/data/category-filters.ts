@@ -59,9 +59,9 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'etykiety-na-metal',
       label: 'Etykiety na metal',
-      description: 'ZT411 wymaga wersji On-Metal do etykiet Silverline. Brother TJ-4021TNR i TJ-4121TNR obsługują zgodne etykiety na metal do 1,0 mm. TSC TH240R i TH340R z anteną wewnętrzną i ręcznym odrywaniem obsługują wybrane etykiety do 1,35 mm. TSC MB241TR i MB341TR z ręcznym odrywaniem obsługują zgodne etykiety do 1,65 mm. T6000e obsługuje zgodne etykiety na metal dobrane do konfiguracji. Sprawdź wkładkę, format rolki i kalibrację.',
+      description: 'ZT411 wymaga wersji On-Metal do etykiet Silverline. SATO CL4NX Plus RFID ma zestaw On-Metal w PN WWCLP272ZWPREU; wybrane cienkie etykiety SATO Thin On-Metal mogą działać także bez zestawu. Brother TJ-4021TNR i TJ-4121TNR obsługują zgodne etykiety na metal do 1,0 mm. TSC TH240R i TH340R z anteną wewnętrzną i ręcznym odrywaniem obsługują wybrane etykiety do 1,35 mm. TSC MB241TR i MB341TR z ręcznym odrywaniem obsługują zgodne etykiety do 1,65 mm. T6000e obsługuje zgodne etykiety na metal dobrane do konfiguracji. Sprawdź wkładkę, format rolki i kalibrację.',
       derived: [
-        { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid'] },
+        { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid', 'sato-cl4nx-plus-rfid'] },
         { value: 'Etykiety na metal do 1,0 mm', slugs: ['brother-tj-4021tnr', 'brother-tj-4121tnr'] },
         { value: 'Etykiety na metal do 1,35 mm', slugs: ['tsc-th240r', 'tsc-th340r'] },
         { value: 'Etykiety na metal do 1,65 mm', slugs: ['tsc-mb241tr', 'tsc-mb341tr'] },

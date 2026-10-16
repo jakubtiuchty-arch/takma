@@ -1,3 +1,4 @@
+import { satoCl4nxPlusRfidProducts } from './sato-cl4nx-plus-rfid-products'
 import { honeywellPx65RfidProducts } from './honeywell-px65-rfid-products'
 import { honeywellPm45RfidProducts } from './honeywell-pm45-rfid-products'
 import { satoCl6SxrRfidProducts } from './sato-cl6-sxr-rfid-products'
@@ -26,6 +27,7 @@ export const rfidPrinterProducts: Product[] = [
   ...satoCt4RfidProducts,
   ...satoCl4SxrRfidProducts,
   ...satoCl6SxrRfidProducts,
+  ...satoCl4nxPlusRfidProducts,
   ...honeywellPm45RfidProducts,
   ...honeywellPx65RfidProducts,
   ...tscThRfidProducts,

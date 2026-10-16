@@ -1,3 +1,4 @@
+import { satoCl4nxPlusRfidAccessories } from '@/data/sato-cl4nx-plus-rfid-products'
 import { honeywellPx65RfidAccessories } from '@/data/honeywell-px65-rfid-products'
 import { pm45RfidAccessorySlugs } from '@/data/honeywell-pm45-rfid-products'
 import { satoCl6SxrRfidAccessories } from '@/data/sato-cl6-sxr-rfid-products'
@@ -30,6 +31,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'sato-cl4nx-plus-rfid', ...satoCl4nxPlusRfidAccessories.map(a => a.slug),
   'honeywell-px65-rfid', ...honeywellPx65RfidAccessories.map(a => a.slug),
   'honeywell-pm65-glowica-203dpi', 'honeywell-pm65-walek-dociskowy',
   'honeywell-pm65-modul-wifi', 'honeywell-pm65-odklejak', 'honeywell-pm65-skladany-rdzen',
