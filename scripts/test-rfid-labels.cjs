@@ -13,7 +13,7 @@ require.extensions['.ts'] = (module, filename) => module._compile(ts.transpileMo
 const { rfidLabelProducts, rfidLabelPartNumbers } = require('../src/data/rfid-label-products.ts')
 const { products, isLabelPN, getSubcategoryBySlug, filterProducts } = require('../src/data/products.ts')
 const { productVariantSchema, selectProductVariant } = require('../src/lib/product-variant-offers.ts')
-const { rfidLabelIdsForPrinter, rfidLabelPrinterLinks } = require('../src/data/rfid-label-compatibility.ts')
+const { rfidLabelIdsForPrinter, rfidLabelPrinterLinks, rfidLabelRequirementForPrinter } = require('../src/data/rfid-label-compatibility.ts')
 assert.equal(rfidLabelProducts.length, 21)
 assert.equal(rfidLabelPartNumbers.size, 25)
 assert.equal(getSubcategoryBySlug('etykiety-rfid-zebra').productIds.length, 21)
@@ -58,7 +58,7 @@ for(const p of rfidLabelProducts){
     const printer=products.find(p=>p.id===printerId)
     assert(printer.subcategoryIds.includes('drukarki-rfid'))
     assert(rfidLabelIdsForPrinter(printerId,link.requirement==='on-metal-t5').includes(p.id))
-    if(link.requirement==='adapter-76') assert(printer.subcategoryIds.includes('biurkowe-drukarki-etykiet'))
+    if(rfidLabelRequirementForPrinter(p.id,printerId)==='adapter-76') assert(printer.subcategoryIds.includes('biurkowe-drukarki-etykiet'))
     if(link.requirement==='on-metal-t5') assert(printer.variants.some(v=>/-T5/.test(v.partNumber)))
     const width=printerId==='zebra-zd611r'?54:104
     for(const v of p.variants){
@@ -69,13 +69,33 @@ for(const p of rfidLabelProducts){
 }
 assert.equal(rfidLabelIdsForPrinter('zebra-zd621r').length,5)
 assert.equal(rfidLabelIdsForPrinter('zebra-zd611r').length,2)
-assert.equal(rfidLabelIdsForPrinter('zebra-zt411-rfid').length,7)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt411-rfid').length,12)
 assert.equal(rfidLabelIdsForPrinter('zebra-zt411-rfid',true).length,5)
-assert.equal(rfidLabelIdsForPrinter('zebra-zt421-rfid').length,5)
-assert.equal(rfidLabelIdsForPrinter('zebra-zt620-rfid').length,5)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt421-rfid').length,9)
+assert.equal(rfidLabelIdsForPrinter('zebra-zt620-rfid').length,9)
 for(const id of ['zebra-zq511-rfid','zebra-zq521-rfid','zebra-zq630-plus-rfid','zebra-zt411','zebra-zd621t']){
   assert.deepEqual(rfidLabelIdsForPrinter(id),[])
   assert.deepEqual(rfidLabelIdsForPrinter(id,true),[])
 }
 for(const p of rfidLabelProducts.filter(p=>/metal-skin|bt713/.test(p.slug))) assert.deepEqual(p.relatedProducts,[])
 console.log('PASS: 21 cards / 25 PN; pricing, PN search, live schema, assets, SEO; bidirectional RFID links; widths; adapter/T5 requirements; unconfirmed rolls excluded')
+
+// Listy walidacji mają puste pola dla MB/TH i innych wkładek. Nie oznaczają zgodności.
+const tscIds = ['tsc-printronix-t6204e-rfid','tsc-printronix-t6304e-rfid','tsc-printronix-t6604e-rfid','tsc-printronix-t6206e-rfid','tsc-printronix-t6306e-rfid']
+for (const id of tscIds) {
+  assert.deepEqual(rfidLabelIdsForPrinter(id), [
+    'zebra-etykiety-rfid-bt573-pp-przemyslowe',
+    'zebra-etykiety-rfid-bt573-pet-biurkowe',
+    'zebra-etykiety-rfid-bt793-biurkowe',
+  ])
+  assert.deepEqual(rfidLabelIdsForPrinter(id,true), [])
+}
+const unsupportedBrands = products.filter(p=>p.subcategoryIds?.includes('drukarki-rfid') && !p.id.startsWith('zebra-') && !tscIds.includes(p.id))
+for (const printer of unsupportedBrands) assert.deepEqual(rfidLabelIdsForPrinter(printer.id), [], printer.id)
+assert.equal(rfidLabelRequirementForPrinter('zebra-etykiety-rfid-bt793-biurkowe','zebra-zd611r'),'adapter-76')
+assert.equal(rfidLabelRequirementForPrinter('zebra-etykiety-rfid-bt793-biurkowe','zebra-zt411-rfid'),'standard')
+assert.equal(rfidLabelRequirementForPrinter('zebra-etykiety-rfid-bt793-biurkowe',tscIds[0]),'standard')
+assert.equal(rfidLabelRequirementForPrinter('zebra-etykiety-rfid-bt793-biurkowe','brother-td-4650tnwbr'),undefined)
+assert(!rfidLabelIdsForPrinter('zebra-zt421-rfid').includes('zebra-etykiety-rfid-bt781-pp-biurkowe'))
+assert(!rfidLabelIdsForPrinter('zebra-zd611r').includes('zebra-etykiety-rfid-zbr2000-biurkowe'))
+console.log('PASS: 34 RFID printers audited; per-printer adapter rules; validated T6000e inlays; unsupported combinations excluded')

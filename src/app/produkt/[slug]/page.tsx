@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { getProductStock, getBundleLivePrices, getSchemaOffer, getSchemaOffers } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
-import { rfidLabelIdsForPrinter } from '@/data/rfid-label-compatibility'
+import { rfidLabelIdsForPrinter, rfidLabelRequirementForPrinter } from '@/data/rfid-label-compatibility'
 import LiveProductSchema from './LiveProductSchema'
 import {
   products,
@@ -323,6 +323,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // ── Dobór materiałów do drukarki: technologia + szerokość głowicy ──────────
   const isRfidPrinter = product.subcategoryIds?.includes('drukarki-rfid') ?? false
   const rfidLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id) : []
+  const needsRfidCoreAdapter = rfidLabelIds.some(labelId => rfidLabelRequirementForPrinter(labelId, product.id) === 'adapter-76')
   const onMetalLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id, true) : []
   const isLabelPrinter = product.categoryId === 'drukarki-etykiet' && !isRfidPrinter
   const isTTprinter = (product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false) && !isRfidPrinter
@@ -1724,9 +1725,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <PrinterMaterialVariants
                 id="etykiety-rfid"
                 title="Etykiety RFID"
-                description={product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
+                description={needsRfidCoreAdapter
                   ? 'Te rolki mają gilzę 76 mm i wymagają zgodnych adapterów gilz. Średnica rolki wynosi do 127 mm. Przed drukiem wykonaj kalibrację materiału i RFID. Do etykiet termotransferowych potrzebujesz także taśmy barwiącej.'
-                  : 'Rolki na gilzie 76 mm, o średnicy do 200 mm. Przed drukiem wykonaj kalibrację materiału i RFID. Do nadruku potrzebujesz zgodnej taśmy barwiącej.'}
+                  : 'Rolki na gilzie 76 mm, o średnicy do 200 mm. Przed drukiem wykonaj kalibrację materiału i RFID. Do etykiet termotransferowych potrzebujesz zgodnej taśmy barwiącej. Etykiety termiczne nie wymagają taśmy.'}
                 productIds={rfidLabelIds}
                 kind="rfid"
                 printWidthMm={printWidthMm}
