@@ -1,3 +1,4 @@
+import { tscThRfidAccessories } from '@/data/tsc-th-rfid-products'
 import { tscAlpha40lRfidAccessories } from '@/data/tsc-alpha40l-rfid-products'
 import { rfidLabelSlugs } from '@/data/rfid-label-products'
 import { zq511RfidAccessorySlugs } from '@/data/zq511-rfid-products'
@@ -24,6 +25,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'tsc-th240r', 'tsc-th340r', ...tscThRfidAccessories.map(a => a.slug),
   'tsc-alpha-40l-rfid', ...tscAlpha40lRfidAccessories.map(a => a.slug),
   'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid',
   'printronix-glowica-6-cali-p220360-001', 'printronix-glowica-6-cali-p220361-001',

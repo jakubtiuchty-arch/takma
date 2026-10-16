@@ -1,3 +1,4 @@
+import { tscThRfidProducts } from './tsc-th-rfid-products'
 import { tscAlpha40lRfidProduct } from './tsc-alpha40l-rfid-products'
 import { tscT6006eRfidProducts } from './tsc-t6006e-rfid-products'
 import { tscT6000eRfidProducts } from './tsc-t6000e-rfid-products'
@@ -17,6 +18,7 @@ import { zt421RfidProduct } from './zt421-rfid-products'
 import { zt620RfidProduct } from './zt620-rfid-products'
 
 export const rfidPrinterProducts: Product[] = [
+  ...tscThRfidProducts,
   tscAlpha40lRfidProduct,
   ...brotherRfidProducts,
   ...brotherTjRfidProducts,

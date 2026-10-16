@@ -196,13 +196,14 @@ export async function lookupUnifiedStock(
 
     // ============================================
     // STEP 1b: Live Jarltech fallback
-    // Gdy brak wpisu Jarltech: niedostępne PN oraz nowe numery Newland, nawet z zapasem PL
+    // Gdy brak wpisu Jarltech: PN bez dostępnego zapasu (także z oczekiwaną dostawą)
+    // oraz nowe numery Newland, nawet z zapasem PL
     // (jarltech-sync nie dotarł do tego PN), wywołaj live Jarltech API.
     // Listing mieszany: limit 3 PN. Newland: do 24 PN, concurrency 4 w integracji. Timeout 10s.
     // Fire-and-forget write-through do JarltechStockCache dla przyszłych requestów.
     // ============================================
     const liveFallbackCandidates = Array.from(freshCache.values())
-      .filter(c => !jarltechCacheMap.has(c.partNumber) && (c.availability === 'unavailable' || newlandPNs.has(c.partNumber)))
+      .filter(c => !jarltechCacheMap.has(c.partNumber) && (c.availability !== 'available' || newlandPNs.has(c.partNumber)))
       .sort((a, b) => Number(newlandPNs.has(b.partNumber)) - Number(newlandPNs.has(a.partNumber)))
       .slice(0, partNumbers.every(pn => newlandPNs.has(pn)) ? 24 : 3)
       .map(c => c.partNumber)
