@@ -73,7 +73,7 @@ Gwarancja fabryczna na drukarkę wynosi 1 rok. Części zużywające się podleg
 
 Do samego nadruku sprawdź [Honeywell PX45](/produkt/honeywell-px45). Do szerszych etykiet sprawdź [Honeywell PX65 RFID](/produkt/honeywell-px65-rfid). W klasie czterocalowej porównaj [Honeywell PM45 RFID](/produkt/honeywell-pm45-rfid) i [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'honeywell',
-  images: ['/images/products/honeywell-px45-rfid-final.webp', '/images/products/PX45_1.png', '/images/products/PX45_3.png'],
+  images: ['/images/products/honeywell-px45-rfid-aligned.webp', '/images/products/PX45_1.png', '/images/products/PX45_3.png'],
   imageDescriptions: ['Honeywell PX45 RFID — drukarka przemysłowa z ekranem i klawiaturą, widok pod kątem z lewym bokiem', 'Honeywell PX45 RFID — widok pod kątem z prawym bokiem', 'Honeywell PX45 RFID — widok z przodu, ekran LCD i klawiatura'],
   tags: ['magazyn', 'logistyka', 'produkcja'], availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID EU', rozdzielczosc: '203 lub 300 dpi', predkoscDruku: 'Do 300 mm/s; kodowanie zależy od materiału', szerokoscDruku: 'Do 110 mm TT / 112 mm DT', szerokoscEtykiet: '25,4–120 mm; RFID wymaga doboru wkładki' },
