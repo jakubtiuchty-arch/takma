@@ -346,12 +346,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 49,
+    productCount: 50,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -363,14 +363,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 66,
+    productCount: 67,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -10707,16 +10707,18 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     id: 'honeywell-pm45',
     slug: 'honeywell-pm45',
     name: 'Drukarka etykiet Honeywell PM45',
-    shortDescription: 'Honeywell PM45 — przemysłowa drukarka etykiet 4", do 350 mm/s, 203/300/406/600 dpi, Gigabit Ethernet, opcja LTE/RFID, następca PM43',
+    shortDescription: 'Honeywell PM45 — przemysłowa drukarka etykiet 4", do 350 mm/s, 203/300/406/600 dpi, Ethernet, wyposażenie zależne od PN',
     seoTitle: 'Honeywell PM45 | Drukarka przemysłowa 4" do 350 mm/s od 4 823 zł',
-    seoDescription: 'Honeywell PM45 — drukarka przemysłowa Honeywell PM45 TT/DT, 203/300/406/600 dpi, do 350 mm/s, Gigabit Ethernet, BT 5.0, opcja WWAN LTE i RFID UHF. Drukarka etykiet Honeywell PM45 od 4 823 zł netto. PN: PM45A00, PM45A10, PM45A12.',
-    description: `Dla kogo? Honeywell PM45 to przemysłowa drukarka etykiet klasy industrial przeznaczona dla zakładów produkcyjnych, centrów logistycznych, magazynów dystrybucyjnych i firm farmaceutycznych, które potrzebują niezawodnego druku etykiet 24/7 w dużych wolumenach. Honeywell PM45 to flagowa drukarka 4" w ofercie Honeywell — następca popularnych modeli PM43 i PM43c.
+    seoDescription: 'Honeywell PM45 — drukarka przemysłowa Honeywell PM45 TT/DT, 203/300/406/600 dpi, do 350 mm/s, Ethernet, opcjonalne Wi-Fi i Bluetooth. Drukarka etykiet Honeywell PM45 od 4 823 zł netto. PN: PM45A00, PM45A10, PM45A12.',
+    description: `Honeywell PM45 to przemysłowa drukarka etykiet do magazynu, logistyki i produkcji. Ta karta obejmuje konfiguracje do nadruku bez fabrycznego kodera RFID.
 
-Honeywell PM45 oferuje cztery rozdzielczości druku (203/300/406/600 dpi) i prędkość do 350 mm/s — idealne połączenie do druku od standardowych etykiet wysyłkowych po mikro-etykiety farmaceutyczne i oznaczenia komponentów elektronicznych. Metalowa obudowa z szybkodostępnym mechanizmem wymiany głowicy i mediów minimalizuje przestoje na linii produkcyjnej.
+Wybierz 203, 300, 406 lub 600 dpi. Maksymalna prędkość zależy od rozdzielczości: do 350, 300, 250 lub 150 mm/s. Wyższa rozdzielczość pomaga drukować drobny tekst i małe kody 2D.
 
-Kluczowa przewaga Honeywell PM45 to łączność: Gigabit Ethernet (1000 Mbps), opcjonalny modem WWAN CAT4 LTE (pierwsza przemysłowa drukarka z modemem komórkowym), Bluetooth 5.0 i Wi-Fi 802.11ac. Interfejs przemysłowy (8 I/O cyfrowych + 4 przekaźniki analogowe) umożliwia natywną integrację z PLC i systemami automatyki. Platforma C# Smart Printing pozwala programować aplikacje standalone bezpośrednio na drukarce — bez serwera.
+Warianty termotransferowe używają taśmy barwiącej. Druk termiczny bezpośredni wymaga właściwego materiału termoczułego. Drukarka przyjmuje rolkę o średnicy do 213 mm i taśmę do 450 m.
 
-Specyfikacja techniczna zgodna z danymi producenta.`,
+Wyposażenie zależy od PN. Porównaj ekran, łączność, odklejak i nawijak w tabeli wariantów. Nie przypisuj funkcji opcjonalnych każdej konfiguracji.
+
+Rozbudowa o RFID wymaga zgodnego zestawu i doboru regionalnego modułu. Fabryczne konfiguracje z koderem UHF EU znajdziesz na osobnej karcie [Honeywell PM45 RFID](/produkt/honeywell-pm45-rfid).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -10861,7 +10863,7 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
       { name: 'Wyświetlacz (Full Touch)', value: 'LCD 3,5" kolorowy dotykowy (12 języków, obsługa w rękawicach)' },
       { name: 'Wyświetlacz (Icon)', value: 'LED z ikonami + przycisk Feed' },
       { name: 'USB', value: 'USB 2.0 Host (2 porty: przód + tył) + USB 2.0 Device' },
-      { name: 'Ethernet', value: 'Gigabit 10/100/1000 Mbps' },
+      { name: 'Ethernet', value: '10/100 Mb/s' },
       { name: 'RS-232', value: 'Do 115,2 kB/s (DB9)' },
       { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac — opcja' },
       { name: 'Bluetooth', value: '5.0 Classic + BLE — opcja' },
