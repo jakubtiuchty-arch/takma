@@ -67,7 +67,7 @@ Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok obejmuje kwalifikuj�
 
 Do węższych etykiet porównaj [SATO CL4NX Plus RFID](/produkt/sato-cl4nx-plus-rfid). W klasie sześciocalowej sprawdź także [SATO CL6-SXR RFID](/produkt/sato-cl6-sxr-rfid), [Zebra ZT421 RFID](/produkt/zebra-zt421-rfid) i [Zebra ZT620 RFID](/produkt/zebra-zt620-rfid).`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka', 'produkcja'],
-  images: ['/images/products/sato-cl6nx-plus-rfid.webp'], imageDescriptions: ['SATO CL6NX Plus RFID — przemysłowa drukarka etykiet, widok z przodu i prawego boku'],
+  images: ['/images/products/sato-cl6nx-plus-rfid-sized.webp'], imageDescriptions: ['SATO CL6NX Plus RFID — przemysłowa drukarka etykiet, widok z przodu i prawego boku'],
   availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID', rozdzielczosc: '203 / 305 dpi', szerokoscDruku: 'Do 167,5 mm przy ustawieniu Left-justify', szerokoscEtykiet: '50–180 mm z podkładem; dobór wkładki RFID', predkoscDruku: 'Do 254 mm/s (203 dpi) / 203 mm/s (305 dpi)' },
   specifications: [
