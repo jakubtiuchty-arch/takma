@@ -1,3 +1,4 @@
+import { tscAlpha40lRfidAccessories } from './tsc-alpha40l-rfid-products'
 import { tscT6006eRfidAccessories } from './tsc-t6006e-rfid-products'
 import { tscT6000eRfidAccessories } from './tsc-t6000e-rfid-products'
 import { tscMbRfidAdditionalAccessories } from './tsc-mb-rfid-products'
@@ -377,7 +378,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, idealne do etykiet wysyłkowych i paragonów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — nie wymagają taśmy barwiącej, obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
-    productIds: [
+    productIds: ['tsc-alpha-40l-rfid', 
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
       'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
@@ -385,7 +386,7 @@ export const subcategories: Subcategory[] = [
       'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3',
       'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l',
     ],
-    productCount: 32,
+    productCount: 33,
   },
   {
     id: 'mobilne-drukarki-etykiet',
@@ -397,8 +398,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie: na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
-    productCount: 18,
+    productIds: ['tsc-alpha-40l-rfid', 'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
+    productCount: 19,
   },
   rfidPrinterCategory,
   {
@@ -424,7 +425,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: ['printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: [...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -520,7 +521,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 239,
+    productCount: 245,
   },
   {
     id: 'dyspensery-etykiet',
@@ -95848,6 +95849,7 @@ const rawProductList: Product[] = [
   ...tscMbRfidAdditionalAccessories,
   ...tscT6000eRfidAccessories,
   ...tscT6006eRfidAccessories,
+  ...tscAlpha40lRfidAccessories,
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
   ...zq630RfidAdditionalAccessories,
