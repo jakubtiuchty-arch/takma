@@ -1,3 +1,4 @@
+import { bixolonRfidProducts } from './bixolon-rfid-products'
 import { honeywellPx45RfidProducts } from './honeywell-px45-rfid-products'
 import { satoCl6nxPlusRfidProducts } from './sato-cl6nx-plus-rfid-products'
 import { satoCl4nxPlusRfidProducts } from './sato-cl4nx-plus-rfid-products'
@@ -26,6 +27,7 @@ import { zt421RfidProduct } from './zt421-rfid-products'
 import { zt620RfidProduct } from './zt620-rfid-products'
 
 export const rfidPrinterProducts: Product[] = [
+  ...bixolonRfidProducts,
   ...satoCt4RfidProducts,
   ...satoCl4SxrRfidProducts,
   ...satoCl6SxrRfidProducts,

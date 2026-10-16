@@ -14,6 +14,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       { value: 'TSC', manufacturer: 'tsc' },
       { value: 'SATO', manufacturer: 'sato' },
       { value: 'Honeywell', manufacturer: 'honeywell' },
+      { value: 'BIXOLON', manufacturer: 'bixolon' },
     ] },
     {
       specKey: 'rodzaj',
