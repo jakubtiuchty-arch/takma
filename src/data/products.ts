@@ -346,12 +346,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['honeywell-pm65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 51,
+    productCount: 50,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -363,14 +363,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['honeywell-pm65-rfid', 'honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['honeywell-pm45-rfid', 'sato-cl6-sxr-rfid', 'sato-cl4-sxr-rfid', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'tsc-printronix-t6206e-rfid', 'tsc-printronix-t6306e-rfid', 'tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-printronix-t6604e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 68,
+    productCount: 67,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -10989,7 +10989,7 @@ USB, RS-232 i Ethernet umożliwiają podłączenie do stanowiska lub sieci. Ekra
 
 Języki Fingerprint, Direct Protocol, IPL, ZSim2 i DPL ułatwiają integrację. Przed migracją sprawdź zgodność szablonów i poleceń z używanym systemem.
 
-Rozbudowa o RFID wymaga zgodnego zestawu regionalnego. Fabryczną wersję z koderem UHF EU znajdziesz na osobnej karcie [Honeywell PM65 RFID](/produkt/honeywell-pm65-rfid).`,
+Rozbudowa o RFID wymaga doboru zgodnego zestawu regionalnego oraz potwierdzenia konfiguracji i dostępności.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'honeywell',
@@ -11175,7 +11175,7 @@ Rozbudowa o RFID wymaga zgodnego zestawu regionalnego. Fabryczną wersję z kode
       { question: 'Honeywell PM65 czy Zebra ZT620 — co wybrać?', answer: 'Honeywell PM65 jest ~2× tańsza niż [Zebra ZT620](/produkt/zebra-zt620) (od 5 554 vs ~12 400 zł netto) i o połowę lżejsza (13,7 vs 26 kg). PM65 ma nowszą łączność (Wi-Fi 6, BT 5.2 vs Wi-Fi 5, BT 4.0). ZT620 wygrywa pamięcią (1 GB RAM / 2 GB Flash vs 256 MB / 512 MB), wyświetlaczem (4,3" kolorowy), Gigabit Ethernet i natywną obsługą ZPL (bez emulacji). Dla budżetowych wdrożeń logistycznych → PM65. Dla ekosystemu Zebra i heavy-duty 24/7 → ZT620.' },
       { question: 'Czy Honeywell PM65 obsługuje szablony Zebra ZPL?', answer: 'Tak. Honeywell PM65 obsługuje emulację ZSim2 (ZPL-II) — szablony etykiet zaprojektowane dla drukarek Zebra działają bez zmian. Ponadto PM65 obsługuje: Fingerprint (FP), Direct Protocol (DP), IPL (Intermec), DPL (Datamax), C# Smart Printing, XML i PDF. Migracja z Zebra, Datamax lub Intermec nie wymaga przepisywania kodu etykiet.' },
       { question: 'Do jakich zastosowań nadaje się drukarka 6-calowa?', answer: 'Drukarka 6-calowa (szerokość druku do 167 mm) jest niezbędna gdy etykieta standardowa 4" jest za wąska: etykiety paletowe GS1-128/SSCC, etykiety GHS na beczki i pojemniki z substancjami chemicznymi (wymóg prawny), oznaczenia na kontenerach i kartonach zbiorczych, szerokie etykiety wysyłkowe, etykiety identyfikacyjne na duże komponenty przemysłowe. Honeywell PM65 obsługuje media do 178 mm szerokości.' },
-      { question: 'Czy Honeywell PM65 można rozbudować o RFID?', answer: 'Tak, po doborze zgodnego modułu regionalnego i konfiguracji. Fabryczną wersję UHF EU opisuje osobna karta [Honeywell PM65 RFID](/produkt/honeywell-pm65-rfid).' },
+      { question: 'Czy Honeywell PM65 można rozbudować o RFID?', answer: 'Tak, po doborze zgodnego modułu regionalnego i konfiguracji. Przed zamówieniem rozbudowy trzeba potwierdzić zgodność i dostępność zestawu.' },
       { question: 'Jakie głowice pasują do Honeywell PM65?', answer: 'Honeywell PM65 obsługuje 2 głowice drukujące: 203 dpi (PM65-TPH-203, od 1 957 zł netto) i 300 dpi (PM65-TPH-300, od 2 516 zł netto). Wymiana głowicy beznarzędziowa (tool-free) — szybki serwis na linii produkcyjnej. Wałek dociskowy (PM65-PR) — od 335 zł netto.' },
       { question: 'Czy Honeywell PM65 ma Wi-Fi 6?', answer: 'Tak. Warianty PM65A12xxxxxxxxx posiadają moduł Wi-Fi 802.11ax (Wi-Fi 6) + Bluetooth 5.2. Wi-Fi 6 zapewnia wyższą przepustowość, mniejsze opóźnienia i lepszą wydajność w środowiskach z wieloma urządzeniami (np. hale magazynowe z dziesiątkami drukarek). Dla istniejących instalacji dostępny jest też moduł Wi-Fi jako osobne akcesorium (PM65-WL-ROW).' },
       { question: 'Jakie taśmy (ribbony) pasują do Honeywell PM65?', answer: 'PM65 obsługuje taśmy termotransferowe na rdzeniu 1" (25,4 mm) o szerokości 50,8–172,7 mm i długości do 450 m. Kompatybilna z taśmami CSI (ink inside) i CSO (ink outside) — w tym popularne taśmy Zebra z nawijaniem CSO. Szerokość taśmy powinna być 5–10 mm większa od szerokości etykiety.' },
@@ -55859,7 +55859,7 @@ Dedykowany dla wersji kompaktowej PM45C (nie pasuje do pełnowymiarowego PM45).`
     slug: 'honeywell-pm65-odklejak',
     name: 'Odklejak etykiet do Honeywell PM65',
     shortDescription: 'Odklejak PM65-LD do Honeywell PM65. Wymaga nawijaka.',
-    description: 'Odklejak PM65-LD ułatwia podawanie etykiet z mocnym klejem w Honeywell PM65. Wymaga nawijaka. Wersja RFID PM65A1000EU30202 ma nawijak fabryczny. Przed montażem sprawdź podawanie docelowego materiału RFID i konfigurację drukarki.',
+    description: 'Odklejak PM65-LD ułatwia podawanie etykiet z mocnym klejem w Honeywell PM65. Wymaga nawijaka. Przed montażem sprawdź podawanie docelowego materiału RFID i konfigurację drukarki.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'honeywell',

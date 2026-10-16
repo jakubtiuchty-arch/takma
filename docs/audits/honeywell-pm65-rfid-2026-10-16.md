@@ -38,3 +38,7 @@ Wszystkie sześć kart dodano do LIVE_OFFER_SLUGS: cena i stan po PN trafiają d
 ## Publikacja
 
 Wyłącznie commit i push na `claude/takma-frontend-build-RrM9E`, następnie automatyczne wdrożenie Vercel z Gita. Wynik kontroli produkcji zapisany w wiadomości końcowej i zrzucie ekranu.
+
+## Usunięcie z oferty na polecenie użytkownika
+
+16.10.2026 użytkownik polecił usunąć PM65 RFID z powodu braku oferty w podłączonej dystrybucji. Usunięto kartę, wpisy kategorii i odnośniki ze zwykłej PM65. Zachowano zwykłą PM65, istniejące akcesoria, ich poprawione opisy i odczyt cen z API. Kategoria RFID ponownie 28 modeli, przemysłowe 50, termotransferowe 67. Dokument pozostaje historycznym audytem.
