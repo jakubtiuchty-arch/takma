@@ -5,7 +5,7 @@ const parts = [
   { key: 'head-203', pn: 'R37901800', name: 'Głowica 203 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R37901800 do SATO CL4NX Plus 203 dpi, także z UHF RFID. Nie pasuje do wersji 305 dpi i nie służy do zmiany rozdzielczości drukarki.' },
   { key: 'head-305', pn: 'R37901900', name: 'Głowica 305 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R37901900 do SATO CL4NX Plus 305 dpi, także z UHF RFID. Nie pasuje do wersji 203 dpi i nie służy do zmiany rozdzielczości drukarki.' },
   { key: 'platen', pn: 'R37901501', name: 'Wałek dociskowy SATO CL4NX Plus', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R37901501 do SATO CL4NX Plus, także z UHF RFID. Wskaźnik Pure Line pomaga ocenić zużycie powierzchni wałka.' },
-  { key: 'cutter', pn: 'WWCL05100', name: 'Obcinak gilotynowy SATO CL4NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw obcinaka gilotynowego WWCL05100 do SATO CL4NX Plus. Przy RFID ustaw cięcie między wkładkami. Obcinak obsługuje materiał o grubości 0,060–0,268 mm. Nie stosuj go do grubych etykiet On-Metal bez potwierdzenia zgodności. Ten zestaw nie jest obcinakiem rotacyjnym WWCLP5500.' },
+  { key: 'cutter', pn: 'WWCL05100', name: 'Gilotyna SATO CL4NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw gilotyny WWCL05100 do SATO CL4NX Plus. Przy RFID ustaw cięcie między wkładkami. Gilotyna obsługuje materiał o grubości 0,060–0,268 mm. Nie stosuj jej do grubych etykiet On-Metal bez potwierdzenia zgodności. Ten zestaw nie jest obcinakiem rotacyjnym WWCLP5500.' },
 ]
 
 export const satoCl4nxPlusRfidAccessories: Product[] = parts.map(a => ({
@@ -59,7 +59,7 @@ Drukarka obsługuje język SBPL i aplikacje AEP. Zadanie RFID musi zawierać pol
 
 Głowica R37901800 pasuje do wersji 203 dpi. Wersja 305 dpi wymaga głowicy R37901900. Wałek R37901501 pasuje do obu pokazanych rozdzielczości. Dobierz części do numeru seryjnego drukarki.
 
-Obcinak gilotynowy WWCL05100 wymaga doboru materiału i ustawienia cięcia między wkładkami. Obsługuje grubość 0,060–0,268 mm. Grube etykiety On-Metal mogą przekraczać ten zakres. Obcinak rotacyjny WWCLP5500 nie obsługuje pracy z RFID. Montaż wyposażenia zleć serwisowi.
+Gilotyna WWCL05100 wymaga doboru materiału i ustawienia cięcia między wkładkami. Obsługuje grubość 0,060–0,268 mm. Grube etykiety On-Metal mogą przekraczać ten zakres. Obcinak rotacyjny WWCLP5500 nie obsługuje pracy z RFID. Montaż wyposażenia zleć serwisowi.
 
 ## Gwarancja
 
