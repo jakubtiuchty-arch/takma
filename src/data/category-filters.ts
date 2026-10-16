@@ -39,7 +39,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '2 cale (54–56 mm)', pattern: '\\b(?:54|56)\\s*mm', specs: ['Szerokość druku'] },
         { value: '3 cale (72 mm)', pattern: '\\b72\\s*mm', specs: ['Szerokość druku'] },
-        { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|105[,.]7|108)\\s*mm', specs: ['Szerokość druku'] },
+        { value: '4 cale (104–108 mm)', pattern: '\\b(?:104|105[,.]7|107|108)\\s*mm', specs: ['Szerokość druku'] },
         { value: '6 cali (168 mm)', pattern: '\\b168\\s*mm', specs: ['Szerokość druku'] },
       ],
     },
@@ -56,9 +56,10 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'etykiety-na-metal',
       label: 'Etykiety na metal',
-      description: 'Pokazuje model z oferowaną wersją do grubszych etykiet Silverline na metal. Na karcie ZT411 wybierz wersję On-Metal. Standardowa ZT411 RFID nie obsługuje tych etykiet.',
+      description: 'ZT411 wymaga wersji On-Metal do etykiet Silverline. Brother TJ-4021TNR i TJ-4121TNR obsługują zgodne etykiety na metal do 1,0 mm. Nie oznacza to zgodności z każdą etykietą; sprawdź wkładkę, format rolki i kalibrację.',
       derived: [
         { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid'] },
+        { value: 'Etykiety na metal do 1,0 mm', slugs: ['brother-tj-4021tnr', 'brother-tj-4121tnr'] },
       ],
     },
   ],

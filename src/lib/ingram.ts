@@ -120,8 +120,8 @@ function toIngramItemId(partNumber: string): string {
   if (upper.startsWith('ZB') || upper.startsWith('SB') || upper.startsWith('N1') || upper.startsWith('ON') || upper.startsWith('DT') || upper.startsWith('DI') || upper.startsWith('CZ')) return upper
   // Citizen products (printers CL-E*, CL-S*, CT-S*, CX*, numeric 1000xxx/2000xxx)
   if (upper.startsWith('CL') || upper.startsWith('CT-S') || upper.startsWith('CX') || upper.startsWith('1000') || upper.startsWith('2000')) return 'CZ' + upper
-  // Brother products (printers TD*, accessories PA*)
-  if (upper.startsWith('TD') || upper.startsWith('PA')) return 'DI' + upper
+  // Brother products (TD/TJ printers, PA accessories, BPA service parts)
+  if (upper.startsWith('TD') || /^TJ\d/.test(upper) || upper.startsWith('PA') || /^BPA(?:HA|PRL)/.test(upper)) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
   if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
   // Datalogic — skanery ręczne. Ich kody katalogowe zaczynają się od liter, więc do 21.09.2026

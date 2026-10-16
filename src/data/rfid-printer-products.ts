@@ -1,3 +1,4 @@
+import { brotherTjRfidProducts } from './brother-tj-rfid-products'
 import { brotherRfidProducts } from './brother-rfid-products'
 import { zq511RfidProduct } from './zq511-rfid-products'
 import { zq521RfidProduct } from './zq521-rfid-products'
@@ -13,6 +14,7 @@ import { zt620RfidProduct } from './zt620-rfid-products'
 
 export const rfidPrinterProducts: Product[] = [
   ...brotherRfidProducts,
+  ...brotherTjRfidProducts,
   {
     id: 'zebra-zd621r',
     slug: 'zebra-zd621r',

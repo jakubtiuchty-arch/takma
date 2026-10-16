@@ -1,3 +1,4 @@
+import { brotherTjAdditionalAccessories } from './brother-tj-rfid-products'
 import { brotherRfidAdditionalAccessories } from './brother-rfid-products'
 import { rfidLabelProducts } from './rfid-label-products'
 import { rfidLabelCategory } from './rfid-label-category'
@@ -337,12 +338,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: [
+    productIds: ['brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 38,
+    productCount: 40,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -354,14 +355,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 52,
+    productCount: 54,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -420,7 +421,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: ['brother-td4t-roll-holder',
+    productIds: ['brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -516,7 +517,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 232,
+    productCount: 233,
   },
   {
     id: 'dyspensery-etykiet',
@@ -8336,6 +8337,8 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     seoDescription: 'Brother TJ-4021TN — drukarka etykiet 4", 203 dpi, 254 mm/s, ekran dotykowy 3,5". Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 3 803 zł | TAKMA.',
     description: `Dla kogo? Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala w serii półprzemysłowych drukarek Brother TJ — przeznaczona dla firm, które potrzebują wygodnej konfiguracji i podglądu statusu drukarki bezpośrednio na wyświetlaczu, bez komputera. Brother TJ-4021TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
+Do druku i kodowania etykiet UHF RFID wybierz [Brother TJ-4021TNR](/produkt/brother-tj-4021tnr). Model TJ-4021TN nie ma kodera RFID.
+
 Brother TJ-4021TN oferuje rozdzielczość 203 dpi i prędkość druku do 254 mm/s (10 ips) — identycznie jak bazowy model [TJ-4020TN](/produkt/brother-tj-4020tn). Kluczowa różnica to kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi: konfiguracja sieci, podgląd statusu druku, ustawienia czujników i kalibracja — bezpośrednio na panelu drukarki. Potrzebujesz rozdzielczości 300 dpi? Sprawdź [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (LED) lub [TJ-4121TN](/produkt/brother-tj-4121tn) (ekran dotykowy + 300 dpi).
 
 Kluczowa przewaga Brother TJ-4021TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych, co redukuje częstotliwość wymiany i przestoje na linii produkcyjnej. Drukarka obsługuje taśmy woskowe, woskowo-żywiczne i żywiczne o szerokości 40–110 mm.
@@ -8732,7 +8735,9 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     seoDescription: 'Brother TJ-4121TN — drukarka etykiet 4", 300 dpi, 178 mm/s, ekran 3,5". Kody 2D, taśmy 450 m, ZPL II, 5 lat gwarancji. Od 4 780 zł netto | TAKMA.',
     description: `Dla kogo? Brother TJ-4121TN to flagowy model w serii półprzemysłowych drukarek Brother TJ — łączy rozdzielczość 300 dpi z kolorowym ekranem dotykowym 3,5 cala. Przeznaczony dla firm, które potrzebują precyzyjnego druku małych etykiet, kodów 2D i grafiki z jednoczesną wygodą obsługi bezpośrednio na wyświetlaczu. Brother TJ-4121TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
-Brother TJ-4121TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi. To jedyny model w serii TJ łączący obie premium-cechy: wysoką rozdzielczość i ekran dotykowy. Jeśli wystarczy Ci 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran, od 3 803 zł). Jeśli 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (LED, od 4 109 zł).
+Do druku i kodowania etykiet UHF RFID wybierz [Brother TJ-4121TNR](/produkt/brother-tj-4121tnr). Model TJ-4121TN nie ma kodera RFID.
+
+Brother TJ-4121TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi. Model łączy rozdzielczość 300 dpi z ekranem dotykowym. Jeśli wystarczy Ci 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran, od 3 803 zł). Jeśli 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (LED, od 4 109 zł).
 
 Kluczowa przewaga Brother TJ-4121TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala). Rozdzielczość 300 dpi zapewnia czytelne kody DataMatrix i QR nawet w rozmiarach poniżej 10 × 10 mm — kluczowe w produkcji elektroniki, farmacji i etykietowaniu przewodów.
 
@@ -83504,9 +83509,9 @@ const brotherPrinterAccessories: Product[] = [
   {
     id: 'brother-tj-peeler',
     slug: 'brother-tj-odklejak',
-    name: 'Odklejak Brother PALP005 do TJ',
-    shortDescription: 'Odklejak etykiet Brother PALP005 z nawijakiem podłoża — do drukarek Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN',
-    description: 'Oryginalny odklejak etykiet (peeler) Brother PALP005 z nawijakiem podłoża do drukarek serii Brother TJ. Automatycznie oddziela etykietę od podkładu (liner) w momencie wydruku, gotowa do natychmiastowej aplikacji. Montaż przez autoryzowanego dealera. Kompatybilny z modelami TJ-4020TN, TJ-4021TN, TJ-4120TN i TJ-4121TN.',
+    name: 'Odklejak Brother PALP005 do TJ — zwykłe etykiety',
+    shortDescription: 'Odklejak etykiet Brother PALP005 z nawijakiem podłoża — do drukarek Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN; TJ-4021TNR i TJ-4121TNR tylko do zwykłych etykiet',
+    description: 'Brother PA-LP-005 oddziela wydrukowaną etykietę od podkładu i nawija podkład. Pasuje do drukarek TJ-4020TN, TJ-4021TN, TJ-4120TN i TJ-4121TN. W modelach TJ-4021TNR i TJ-4121TNR służy wyłącznie do zwykłych etykiet. Akcesorium nie jest zgodne z etykietami RFID. Montaż zleć autoryzowanemu sprzedawcy Brother.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
@@ -83517,11 +83522,10 @@ const brotherPrinterAccessories: Product[] = [
       { name: 'Part Number', value: 'PALP005' },
       { name: 'Typ', value: 'Odklejak etykiet z nawijakiem podłoża (peeler + liner take-up)' },
       { name: 'Montaż', value: 'Przez autoryzowanego dealera' },
-      { name: 'Kompatybilność', value: 'Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN' },
+      { name: 'Kompatybilność', value: 'Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN; TJ-4021TNR i TJ-4121TNR tylko do zwykłych etykiet' },
     ],
     applications: ['Automatyczne odklejanie etykiet z podkładu', 'Szybka aplikacja etykiet na produkty i paczki'],
-    priceFrom: 800,
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     compatibleAccessories: [],
@@ -83533,9 +83537,9 @@ const brotherPrinterAccessories: Product[] = [
   {
     id: 'brother-tj-cutter',
     slug: 'brother-tj-obcinarka',
-    name: 'Obcinarka Brother PACU004 do TJ',
-    shortDescription: 'Obcinarka Brother PACU004 — automatyczna gilotyna do drukarek Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN',
-    description: 'Oryginalny moduł obcinarki automatycznej Brother PACU004 do drukarek serii Brother TJ. Automatycznie odcina etykietę po wydruku — idealna do etykiet o zmiennej długości. Montaż przez autoryzowanego dealera. Kompatybilna z modelami TJ-4020TN, TJ-4021TN, TJ-4120TN i TJ-4121TN.',
+    name: 'Obcinarka Brother PACU004 do TJ — zwykłe etykiety',
+    shortDescription: 'Obcinarka Brother PACU004 — automatyczna gilotyna do drukarek Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN; TJ-4021TNR i TJ-4121TNR tylko do zwykłych etykiet',
+    description: 'Brother PA-CU-004 automatycznie odcina materiał po wydruku. Maksymalna szerokość cięcia wynosi 114 mm. Pasuje do drukarek TJ-4020TN, TJ-4021TN, TJ-4120TN i TJ-4121TN. W modelach TJ-4021TNR i TJ-4121TNR służy wyłącznie do zwykłych etykiet. Akcesorium nie jest zgodne z etykietami RFID. Montaż zleć autoryzowanemu sprzedawcy Brother.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
@@ -83547,11 +83551,10 @@ const brotherPrinterAccessories: Product[] = [
       { name: 'Typ', value: 'Obcinarka automatyczna (cutter)' },
       { name: 'Max szerokość cięcia', value: '114 mm' },
       { name: 'Montaż', value: 'Przez autoryzowanego dealera' },
-      { name: 'Kompatybilność', value: 'Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN' },
+      { name: 'Kompatybilność', value: 'Brother TJ-4020TN, TJ-4021TN, TJ-4120TN, TJ-4121TN; TJ-4021TNR i TJ-4121TNR tylko do zwykłych etykiet' },
     ],
     applications: ['Automatyczne cięcie etykiet po wydruku', 'Etykiety o zmiennej długości'],
-    priceFrom: 700,
-    availability: 'on-order',
+    availability: 'unavailable',
     isNew: true,
     isBestseller: false,
     compatibleAccessories: [],
@@ -95836,6 +95839,7 @@ const rawProductList: Product[] = [
   ...desktopPrinters,
   ...rfidPrinterProducts,
   ...brotherRfidAdditionalAccessories,
+  ...brotherTjAdditionalAccessories,
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
   ...zq630RfidAdditionalAccessories,
