@@ -1,3 +1,4 @@
+import { tscT6000eRfidAccessories } from './tsc-t6000e-rfid-products'
 import { tscMbRfidAdditionalAccessories } from './tsc-mb-rfid-products'
 import { brotherTjAdditionalAccessories } from './brother-tj-rfid-products'
 import { brotherRfidAdditionalAccessories } from './brother-rfid-products'
@@ -339,12 +340,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 42,
+    productCount: 44,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -356,14 +357,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 56,
+    productCount: 58,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -422,7 +423,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: ['tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: ['printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -518,7 +519,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 234,
+    productCount: 237,
   },
   {
     id: 'dyspensery-etykiet',
@@ -95844,6 +95845,7 @@ const rawProductList: Product[] = [
   ...brotherRfidAdditionalAccessories,
   ...brotherTjAdditionalAccessories,
   ...tscMbRfidAdditionalAccessories,
+  ...tscT6000eRfidAccessories,
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
   ...zq630RfidAdditionalAccessories,
