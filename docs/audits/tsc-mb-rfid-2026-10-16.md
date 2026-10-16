@@ -17,7 +17,7 @@ Konfiguracje i akcesoria potwierdza [katalog BlueStar](https://shop.bluestoreinc
 ## Źródła producenta
 
 - [Seria MB241 i FAQ](https://emea.tscprinters.com/en/products/mb-series-4-inch-performance-industrial-printers)
-- [Karta katalogowa](https://fs.tscprinters.com/system/files/mb241_series_en_web_20250331.pdf), kopia `/downloads/tsc-mb241-karta-produktu-en.pdf`.
+- [Karta katalogowa](https://images.bluestarinc-emea.com/pdf/4951-datasheet.pdf), kopia `/downloads/tsc-mb241-karta-produktu-en.pdf`.
 - [Instrukcja rewizja D](https://fs.tscprinters.com/system/files/31-1680005-00_mb241_user-manual_en_d.pdf), kopia `/downloads/tsc-mb241-instrukcja-en.pdf`.
 
 203 dpi: 304,8 mm/s i 107 mm. 300 dpi: 228,6 mm/s i 105,7 mm. RFID Gen2 v2 / ISO 18000-63, minimalny pitch15,9 mm. Rolka203,2 mm, taśma450m. FAQ zastrzega grubość1,65mm dla RFID tear-off, nie dla wszystkich konfiguracji. Gwarancja2lata, głowica12m lub25km, wałek12m lub50km, pierwszy z limitów.
