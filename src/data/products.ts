@@ -55810,7 +55810,6 @@ Dedykowany dla wersji kompaktowej PM45C (nie pasuje do pełnowymiarowego PM45).`
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'honeywell',
-    priceFrom: 271.43,
     images: ['/images/products/PM65-CC.png'],
     imageDescriptions: ['Składany rdzeń (collapsible core) do drukarki przemysłowej Honeywell PM65'],
     tags: ['produkcja', 'logistyka', 'magazyn'] as ProductTag[],
