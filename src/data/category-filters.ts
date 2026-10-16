@@ -31,7 +31,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '203 dpi', pattern: '\\b203\\b', specs: ['Rozdzielczość'] },
         { value: '300 / 305 dpi', pattern: '\\b(?:300|305)\\b', specs: ['Rozdzielczość'] },
-        { value: '600 dpi', pattern: '\\b600\\b', specs: ['Rozdzielczość'] },
+        { value: '600 / 609 dpi', pattern: '\\b(?:600|609)\\b', specs: ['Rozdzielczość'] },
       ],
     },
     {

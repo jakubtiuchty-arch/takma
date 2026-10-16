@@ -1,3 +1,4 @@
+import { satoCl4SxrRfidProducts } from './sato-cl4-sxr-rfid-products'
 import { satoCt4RfidProducts } from './sato-ct4-rfid-products'
 import { tscThRfidProducts } from './tsc-th-rfid-products'
 import { tscAlpha40lRfidProduct } from './tsc-alpha40l-rfid-products'
@@ -20,6 +21,7 @@ import { zt620RfidProduct } from './zt620-rfid-products'
 
 export const rfidPrinterProducts: Product[] = [
   ...satoCt4RfidProducts,
+  ...satoCl4SxrRfidProducts,
   ...tscThRfidProducts,
   tscAlpha40lRfidProduct,
   ...brotherRfidProducts,
