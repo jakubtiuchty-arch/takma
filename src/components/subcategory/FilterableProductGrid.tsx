@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import Link from 'next/link'
 import type { ProductCardData } from '@/components/product/ProductGrid'
 import ProductGrid from '@/components/product/ProductGrid'
@@ -90,7 +91,7 @@ function productValues(product: ProductCardData, def: FilterDefinition): string[
   return spec ? [applyTransform(spec.value, def.transform)] : []
 }
 
-/** Ikona ? z tooltipem — fixed position żeby uciekać przed overflow-hidden kontenera */
+/** Portal omija przycinanie i warstwy przewijanego, przyklejonego sidebara. */
 function FilterInfoTooltip({ text }: { text: string }) {
   const [show, setShow] = useState(false)
   const [coords, setCoords] = useState<{ top: number; left: number } | null>(null)
@@ -100,9 +101,10 @@ function FilterInfoTooltip({ text }: { text: string }) {
     if (!btnRef.current) return
     const rect = btnRef.current.getBoundingClientRect()
     // Centruj horyzontalnie na ikonie, pozycjonuj ABOVE
+    const halfWidth = Math.min(288, window.innerWidth - 16) / 2
     const left = Math.min(
-      Math.max(rect.left + rect.width / 2, 140), // nie wyjedź za lewą krawędź
-      window.innerWidth - 140, // nie wyjedź za prawą
+      Math.max(rect.left + rect.width / 2, halfWidth + 8),
+      window.innerWidth - halfWidth - 8,
     )
     setCoords({ top: rect.top - 8, left })
   }, [])
@@ -137,7 +139,7 @@ function FilterInfoTooltip({ text }: { text: string }) {
       >
         <HelpCircleIcon size={14} />
       </span>
-      {show && coords && (
+      {show && coords && createPortal(
         <span
           role="tooltip"
           style={{
@@ -147,7 +149,7 @@ function FilterInfoTooltip({ text }: { text: string }) {
             transform: 'translate(-50%, -100%)',
             zIndex: 9999,
           }}
-          className="w-72 px-3.5 py-2.5 rounded-md bg-gray-900 text-white text-xs font-normal leading-snug text-left shadow-lg normal-case tracking-normal pointer-events-none"
+          className="w-72 max-w-[calc(100vw-1rem)] px-3.5 py-2.5 rounded-md bg-gray-900 text-white text-xs font-normal leading-snug text-left shadow-lg normal-case tracking-normal pointer-events-none"
         >
           {/* pierwsza linia = definicja (pogrubiona), linie „• …” = opcje w punktach; zwykły tekst = akapit */}
           {(() => {
@@ -165,7 +167,8 @@ function FilterInfoTooltip({ text }: { text: string }) {
             )
           })()}
           <span className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-4 border-x-transparent border-t-4 border-t-gray-900" />
-        </span>
+        </span>,
+        document.body
       )}
     </>
   )
