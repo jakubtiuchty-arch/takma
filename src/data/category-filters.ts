@@ -12,6 +12,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       { value: 'Zebra', manufacturer: 'zebra' },
       { value: 'Brother', manufacturer: 'brother' },
       { value: 'TSC', manufacturer: 'tsc' },
+      { value: 'SATO', manufacturer: 'sato' },
     ] },
     {
       specKey: 'rodzaj',
@@ -29,7 +30,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Rozdzielczość dotyczy nadruku, a nie zasięgu RFID. Filtr pokazuje modele z oferowanym wariantem o danej rozdzielczości. Właściwy numer katalogowy wybierz na karcie drukarki.',
       derived: [
         { value: '203 dpi', pattern: '\\b203\\b', specs: ['Rozdzielczość'] },
-        { value: '300 dpi', pattern: '\\b300\\b', specs: ['Rozdzielczość'] },
+        { value: '300 / 305 dpi', pattern: '\\b(?:300|305)\\b', specs: ['Rozdzielczość'] },
         { value: '600 dpi', pattern: '\\b600\\b', specs: ['Rozdzielczość'] },
       ],
     },

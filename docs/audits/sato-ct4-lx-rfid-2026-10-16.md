@@ -1,0 +1,20 @@
+# SATO CT4-LX UHF RFID — 16.10.2026
+
+## Zakres
+Jedna karta sato-ct4-lx-rfid; 6 europejskich PN UHF, bez HF, obcinaka i odklejaka w konfiguracjach bazowych. Cztery akcesoria mają oddzielne PN i dział Akcesoria wspólny, standardowe komponenty, bez zmian CSS. Zebry zachowują pierwszych 10 miejsc kategorii. SATO dodane do filtra producenta; filtr 300/305 dpi uwzględnia rzeczywiste 305 dpi SATO.
+
+## Źródła
+- https://shop.bluestoreinc.com/en/ct4-lx-rfid-series — EU/UK i UHF potwierdzone dla WWCT03242, WWCT03242ZNAR, WWCT03242ZWAR oraz WWCT04242, WWCT04242ZNAR, WWCT04242ZWAR. ZNAR=RTC, ZWAR=WiFi/BT+RTC. BlueStar API konta TAKMA zwraca ceny dla wszystkich sześciu PN; WWCT03242ZNAR ma 2 sztuki, inne 0. Katalog ma etykietę restricted item; możliwość zamówienia podlega warunkom dostawcy. Nie składano zamówienia ani nie zmieniano uprawnień.
+- https://www.satoeurope.com/resources/ct4-lx.php — dokumentacja, instrukcja i sterowniki.
+- https://images.bluestarinc-emea.com/pdf/3628-datasheet.pdf — oryginalna karta producenta pobrana przez dystrybucję (2 strony). Starsza karta zawiera rozbieżne zakresy szerokości materiału 203/305; nie przenoszono błędnego 128 mm jako szerokości druku. Druk 104 mm, 203/305 dpi, maks. 8/6 ips, ekran 4.3 cala, USB i Ethernet Gigabit.
+- https://www.satoeurope.com/pdf/products/printers/sato-ct4-lx-brochure.pdf — materiał: szerokość etykiety 22–115 mm; rolka RFID maks.115 mm, zewnętrzny nawój; taśma100m, szerokość45–111mm, gilza12.7mm. UHF ISO18000-63. Brak obietnicy obsługi etykiet na metal.
+- https://www.satoeurope.com/pdf/products/printers/sato-ct4-lx-parts-list.pdf oraz pobrany odpowiednik https://www.satoamerica.com/content/dam/sato/sales/content/us/en/support-downloads/documentation/parts-lists/current/CT4-LX-HC-Parts-List.pdf.coredownload.inline.pdf — katalog 16 stron. WWCT0503N RTC, WWCT0505N WLAN/BT, WWCT0506N RS232; WWCT0502N odklejak dodatkowo w katalogu RFID BlueStar. API zwraca ceny dla wszystkich4, zapasy0. Części G00674000 i K00605900 niedostępne w API, nie dodano ich do sprzedaży. Głowicy nie dobierano na podstawie podobieństwa nazwy.
+- https://www.satoeurope.com/service-and-support/warranty.php — podstawowa1rok; dodatkowy rok warunkowy regionalnie, bez bezwarunkowego2lat. Głowica/wałek limity1rok/30kmTT lub15kmDT, pierwszylimit. Potrzebny dowód zakupu i zgodne materiały.
+- https://www.manual.sato-global.com/printer/ct4-lx/main/index.html — instrukcja online.
+- https://www.sato-global.com/support/rfid-config-guide/ — dobór wkładek i konfiguracja.
+
+## Obrazy
+Zdjęcie główne wyodrębnione z autentycznego PDF producenta, strona1, obiekt26, 978x1260. Przycięcie/białe marginesy i skala przez image_gen, zachowana obudowa, bez dodawania badge RFID. Finalny raster1254kwadrat; produkt78.2%wysokości kadru. Wzorce: ZD621R80.6%, TH240R73.4%; pole galerii identyczne576.5px. Akcesoria: brak pewnych zdjęć RTC/RS232/odklejaka w znalezionych sklepach (zamiast produktu publikowano logo). Użyto izolowanych rysunków katalogu producenta (strona2; oznaczenia1,2,3,Fig13), oznaczonych jako rysunki w altach i opisach. Nie przedstawiono schematów jako zdjęć. Ilustracje odtworzone przez image_gen z rysunków, poglądowe; dobór zawsze PN i nr seryjny. Pola akcesoriów282.25x211.69px, 4 w standardowym rzędzie.
+
+## Kontrole
+TypeScript i ESLint. Kontrola unikatowości ID/slug, plików obrazów, zgodności odnośników akcesoriów i liczników kategorii: RFID25, biurkowe31, TT64, akcesoria255. Przeglądarka: wszystkie6PN i aktualne cenyPLN, dostępnyRTC203=10378.85netto/2EU, bazowy203=9958.75netto/0, bazowy305=10420.87netto/0. Bez wpisanych na sztywno cen produktu. Źródła danych prywatnych nie są commitowane. Wdrożenie wyłącznie po commicie i pushu na gałąź produkcyjną. Zachowane filtry rozmiarów magazynu i trasa admina.

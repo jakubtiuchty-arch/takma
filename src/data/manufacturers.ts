@@ -16,6 +16,7 @@ export interface Manufacturer {
 }
 
 export const manufacturers: Manufacturer[] = [
+  { id: 'sato', slug: 'sato', name: 'SATO', logo: '/images/partners/logo_sato.jpg', seoTitle: 'Drukarki RFID i akcesoria SATO | TAKMA', seoDescription: 'Drukarki etykiet SATO z UHF RFID oraz zgodne moduły. Wybierz konfigurację, sprawdź ceny i dostępność.' },
   {
     id: 'isiris',
     slug: 'isiris',
