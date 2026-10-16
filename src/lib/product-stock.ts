@@ -23,6 +23,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  'tsc-mb241tr', 'tsc-mb341tr', 'tsc-modul-wifi-bluetooth',
+  'tsc-glowica-mb241t-203dpi', 'tsc-glowica-mb341t-300dpi',
   'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-modul-wifi-pa-wi-002',
   'brother-tj-obcinarka', 'brother-tj-odklejak',
   'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'brother-td-4t',

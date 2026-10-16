@@ -1,3 +1,4 @@
+import { tscMbRfidAdditionalAccessories } from './tsc-mb-rfid-products'
 import { brotherTjAdditionalAccessories } from './brother-tj-rfid-products'
 import { brotherRfidAdditionalAccessories } from './brother-rfid-products'
 import { rfidLabelProducts } from './rfid-label-products'
@@ -338,12 +339,12 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Przemysłowe drukarki etykiet do pracy ciągłej 24/7. Metalowa obudowa, do 600 dpi, RFID. Zebra, Honeywell, TSC. Porównanie modeli, ceny, doradztwo techniczne.',
     longDescription: 'Drukarki przemysłowe (industrial) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — przeznaczone są do pracy ciągłej 24/7 w wymagających środowiskach produkcyjnych, magazynowych i logistycznych. Metalowa konstrukcja, zaawansowane interfejsy sieciowe, kolorowe wyświetlacze i opcje takie jak moduł RFID, obcinacz czy odklejak czynią je niezastąpionymi w operacjach o dużym wolumenie druku. W ofercie modele od entry-level po flagowe urządzenia 6-calowe od wiodących producentów.',
     icon: 'printer',
-    productIds: ['brother-tj-4021tnr', 'brother-tj-4121tnr',
+    productIds: ['tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 40,
+    productCount: 42,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -355,14 +356,14 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termotransferowe Zebra, Honeywell, TSC, Brother — druk z taśmą barwiącą (ribbon). 42 modele biurkowe i przemysłowe od 639 zł. Trwały wydruk do 10 lat. Ceny netto.',
     longDescription: 'Drukarki termotransferowe (thermal transfer) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — wykorzystują taśmę barwiącą (ribbon) do przenoszenia obrazu na etykietę. Dzięki temu wydruk jest odporny na ścieranie, wilgoć, temperaturę i promienie UV — idealne rozwiązanie do etykiet produktowych, oznaczeń trwałych, etykiet na przewody i oznaczeń w przemyśle. W ofercie zarówno kompaktowe modele biurkowe, jak i wydajne drukarki przemysłowe do pracy 24/7.',
     icon: 'printer',
-    productIds: ['brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
+    productIds: ['tsc-mb241tr', 'tsc-mb341tr', 'brother-tj-4021tnr', 'brother-tj-4121tnr', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr',
       'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r',
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510',
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
     ],
-    productCount: 54,
+    productCount: 56,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -421,7 +422,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: ['brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: ['tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -517,7 +518,7 @@ export const subcategories: Subcategory[] = [
       ...zt231RfidAdditionalAccessories.map(accessory => accessory.id),
       ...zt421RfidAdditionalAccessories.map(accessory => accessory.id),
     ],
-    productCount: 233,
+    productCount: 234,
   },
   {
     id: 'dyspensery-etykiet',
@@ -84238,6 +84239,8 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
     seoDescription: 'TSC MB241T — przemysłowa drukarka etykiet 4", 305 mm/s, bifold door, dotykowy LCD 3,5", obsługa hang-tagów do 0,28 mm, RFID opcja. Od 2 779 zł netto.',
     description: `TSC MB241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) (industrial) 4" ze składanym mechanizmem drzwi bifold, która zajmuje o 24% mniej miejsca na stanowisku niż drukarki z tradycyjnie uchylną pokrywą. Dla firm produkcyjnych, logistycznych i magazynowych wymagających drukarki przemysłowej o dużej prędkości (305 mm/s) z metalową konstrukcją i dotykowym wyświetlaczem.
 
+Do druku i kodowania etykiet UHF RFID wybierz [TSC MB241TR](/produkt/tsc-mb241tr). Pokazany PN zwykłej MB241T nie obejmuje kodera RFID.
+
 TSC MB241T to najszybsza drukarka 4" w ofercie TSC — prędkość 305 mm/s — o 1 mm/s więcej niż [Zebra ZT231](/produkt/zebra-zt231) (304 mm/s), a cena jest zbliżona. Dotykowy ekran LCD 3,5" (vs LCD 2,3" w [TSC ML241P](/produkt/tsc-ml241p)), podwójna pamięć 256 MB (RAM + Flash), obsługa grubych mediów do 0,28 mm (hang-tagi, kartonowe metki) i opcja RFID UHF (fabryczna lub jako upgrade). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
 
 Drukarka do etykiet logistycznych GS1, etykiet produktowych, metek odzieżowych (hang-tags), etykiet compliance na liniach produkcyjnych, etykietowania w farmacji i food & beverage. Opcje: gilotyna (full cut), odklejak (peel-off), nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth) i RFID UHF.
@@ -84344,7 +84347,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       },
       {
         question: 'Czy TSC MB241T obsługuje druk RFID?',
-        answer: 'Tak — TSC MB241T jest dostępna w wersji RFID (MB241TR) lub jako upgrade z zestawem RFID tear-off/cutter. RFID: RAIN UHF Passive (GS1 EPC Gen2 v2 / ISO 18000-63), antena zewnętrzna nad mediami, obsługa etykiet on-metal do 1,65 mm grubości. Wersja RFID w dystrybucji na zamówienie.',
+        answer: 'Pokazany PN MB241T nie ma kodera RFID. Wersję z fabrycznym RFID znajdziesz na osobnej karcie [TSC MB241TR](/produkt/tsc-mb241tr). Rozbudowa wymaga właściwego zestawu i montażu; zwykła gilotyna nie zastępuje modułu RFID.',
       },
       {
         question: 'Czy TSC MB241T obsługuje hang-tagi (metki odzieżowe)?',
@@ -84443,10 +84446,12 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
     id: 'tsc-mb341t',
     slug: 'tsc-mb341t',
     name: 'TSC MB341T',
-    shortDescription: 'TSC MB341T — drukarka przemysłowa 4" 300 dpi z dotykowym LCD 3,5", 305 mm/s, bifold door, emulacja ZPL',
+    shortDescription: 'TSC MB341T — drukarka przemysłowa 4" 300 dpi z dotykowym LCD 3,5", 228,6 mm/s, bifold door, emulacja ZPL',
     seoTitle: 'TSC MB341T — drukarka etykiet 4" 300 dpi | od 3 273 zł',
-    seoDescription: 'TSC MB341T — przemysłowa drukarka etykiet 4" 300 dpi, 305 mm/s przy 300 dpi (ZT231 zwolni do 203), bifold door, hang-tagi do 0,28 mm, RFID opcja. Od 3 273 zł.',
-    description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MB241T](/produkt/tsc-mb241t). Wyższa rozdzielczość (300 vs 203 dpi) przy zachowaniu pełnej prędkości 305 mm/s — to jedyna drukarka 4" w tej klasie cenowej, która utrzymuje 12 ips przy 300 dpi. Dla porównania [Zebra ZT231](/produkt/zebra-zt231) w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
+    seoDescription: 'TSC MB341T — przemysłowa drukarka etykiet 4" 300 dpi, do 228,6 mm/s, bifold door, hang-tagi do 0,28 mm, RFID opcja. Od 3 273 zł.',
+    description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MB241T](/produkt/tsc-mb241t). Drukuje w rozdzielczości 300 dpi z prędkością do 228,6 mm/s i szerokością do 105,7 mm. Dla porównania [Zebra ZT231](/produkt/zebra-zt231) w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
+
+Do druku i kodowania etykiet UHF RFID wybierz [TSC MB341TR](/produkt/tsc-mb341tr). Pokazany PN zwykłej MB341T nie obejmuje kodera RFID.
 
 Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości (DataMatrix, QR), etykiety farmaceutyczne, laboratoryjne, jubilerskie i metki odzieżowe wymagające ostrego wydruku. TSC MB341T oferuje te same cechy co MB241T: metalowa konstrukcja, składane drzwi bifold (-24% miejsca), dotykowy LCD 3,5", 256 MB RAM/Flash, emulacja ZPL II/EPL/DPL i opcja RFID UHF.
 
@@ -84472,15 +84477,15 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
     keyParams: {
       rodzajDruku: 'Termotransferowa + termiczna (TT + DT)',
       rozdzielczosc: '300 dpi (12 dots/mm)',
-      predkoscDruku: 'do 305 mm/s (12 ips)',
-      szerokoscDruku: 'max. 107 mm (4,21")',
+      predkoscDruku: 'do 228,6 mm/s (9 ips)',
+      szerokoscDruku: 'max. 105,7 mm (4,16")',
       szerokoscEtykiet: '20–120 mm',
     },
     specifications: [
       { name: 'Rodzaj druku', value: 'Termotransferowy + termiczny bezpośredni (TT + DT)' },
       { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
-      { name: 'Prędkość druku', value: 'do 305 mm/s (12 ips) — pełna prędkość przy 300 dpi' },
-      { name: 'Szerokość druku', value: 'max. 107 mm (4,21")' },
+      { name: 'Prędkość druku', value: 'do 228,6 mm/s (9 ips)' },
+      { name: 'Szerokość druku', value: 'max. 105,7 mm (4,16")' },
       { name: 'Maks. długość etykiety', value: '25 400 mm (1000")' },
       { name: 'Min. długość etykiety', value: '5 mm' },
       { name: 'Szerokość mediów', value: '20–120 mm' },
@@ -84539,7 +84544,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
     faq: [
       {
         question: 'Czym różni się TSC MB341T od TSC MB241T?',
-        answer: 'Jedyna różnica to rozdzielczość: MB341T drukuje w 300 dpi (12 dots/mm), <a href="/produkt/tsc-mb241t">MB241T</a> w 203 dpi (8 dots/mm). Co ważne, MB341T utrzymuje pełną prędkość 305 mm/s nawet przy 300 dpi — konkurencyjna <a href="/produkt/zebra-zt231">Zebra ZT231</a> przy 300 dpi zwalnia do 203 mm/s. Wymiary, waga, interfejsy, opcje i cena chassis są identyczne.',
+        answer: 'MB341T ma 300 dpi, druk do 228,6 mm/s i szerokość do 105,7 mm. MB241T ma 203 dpi, druk do 304,8 mm/s i szerokość do 107 mm. Oba modele mają ekran dotykowy 3,5 cala.',
       },
       {
         question: 'Kiedy potrzebuję 300 dpi zamiast 203 dpi?',
@@ -84547,7 +84552,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       },
       {
         question: 'TSC MB341T czy Zebra ZT231 300 dpi — którą wybrać?',
-        answer: 'TSC MB341T drukuje w 300 dpi z prędkością 305 mm/s. <a href="/produkt/zebra-zt231">Zebra ZT231</a> w trybie 300 dpi zwalnia do 203 mm/s (8 ips) — o 33% wolniej. MB341T: bifold door, hang-tagi do 0,28 mm, 256 MB Flash, gwarancja 24 mies. ZT231: natywne ZPL, dotykowy LCD 4,3", ekosystem Link-OS. Ceny: MB341T od 3 273 zł, ZT231 300 dpi od ok. 3 326 zł (termiczna) lub 3 421 zł (termotransfer).',
+        answer: 'TSC MB341T drukuje w 300 dpi z prędkością 228,6 mm/s. <a href="/produkt/zebra-zt231">Zebra ZT231</a> w trybie 300 dpi zwalnia do 203 mm/s (8 ips) . MB341T: bifold door, hang-tagi do 0,28 mm, 256 MB Flash, gwarancja 24 mies. ZT231: natywne ZPL, dotykowy LCD 4,3", ekosystem Link-OS. Ceny: MB341T od 3 273 zł, ZT231 300 dpi od ok. 3 326 zł (termiczna) lub 3 421 zł (termotransfer).',
       },
       {
         question: 'Czy TSC MB341T obsługuje język ZPL (Zebra)?',
@@ -84575,7 +84580,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       },
       {
         question: 'Jaka jest alternatywa dla TSC MB341T?',
-        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-ml341p">TSC ML341P</a> (kompaktowa, 152 mm/s, od 2 595 zł), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi opcja, 203 mm/s przy 300 dpi, od ok. 3 326 zł), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (203/300/600 dpi, 356 mm/s, od 5 078 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mb241t">TSC MB241T</a> (305 mm/s, od 2 779 zł).',
+        answer: 'W klasie 300 dpi: <a href="/produkt/tsc-ml341p">TSC ML341P</a> (kompaktowa, 152 mm/s, od 2 595 zł), <a href="/produkt/zebra-zt231">Zebra ZT231</a> (300 dpi opcja, 203 mm/s przy 300 dpi, od ok. 3 326 zł), <a href="/produkt/zebra-zt411">Zebra ZT411</a> (203/300/600 dpi, 356 mm/s, od 5 078 zł). Jeśli 203 dpi wystarcza: <a href="/produkt/tsc-mb241t">TSC MB241T</a> (304,8 mm/s, od 2 779 zł).',
       },
     ],
     comparison: {
@@ -84587,8 +84592,8 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
           highlight: true,
           specs: {
             'Rozdzielczość': '300 dpi',
-            'Prędkość druku': '305 mm/s',
-            'Szerokość druku': '107 mm',
+            'Prędkość druku': '228,6 mm/s',
+            'Szerokość druku': '105,7 mm',
             'Wyświetlacz': 'Dotykowy LCD 3,5"',
             'Max rolka': '8" OD',
             'Waga': '9,1 kg',
@@ -86083,8 +86088,8 @@ const tscPrinterAccessories: Product[] = [
     id: 'tsc-wifi-bt-module',
     slug: 'tsc-modul-wifi-bluetooth',
     name: 'Moduł Wi-Fi + Bluetooth TSC',
-    shortDescription: 'Moduł slot-in TSC WF-COM-2002 — Wi-Fi 802.11ac + Bluetooth 5.0 do drukarek TSC ML241P/ML341P/MB241T/MB341T',
-    description: 'Moduł slot-in TSC WF-COM-2002 dodający łączność Wi-Fi 802.11ac (dual-band 2,4 + 5 GHz) oraz Bluetooth 5.0 do drukarek TSC ML241P, ML341P, MB241T i MB341T. Montaż bez narzędzi — moduł wsuwany w dedykowany slot. Alternatywa dla wariantu fabrycznego z BT.',
+    shortDescription: 'Moduł slot-in TSC WF-COM-2002 — Wi-Fi 802.11ac + Bluetooth 5.0 do drukarek TSC ML241P/ML341P/MB241T/MB341T/MB241TR/MB341TR',
+    description: 'Moduł slot-in TSC WF-COM-2002 dodający łączność Wi-Fi 802.11ac (dual-band 2,4 + 5 GHz) oraz Bluetooth 5.0 do drukarek TSC ML241P, ML341P, MB241T, MB341T, MB241TR i MB341TR. Montaż bez narzędzi — moduł wsuwany w dedykowany slot. Alternatywa dla wariantu fabrycznego z BT.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'tsc',
@@ -86095,12 +86100,11 @@ const tscPrinterAccessories: Product[] = [
       { name: 'Part Number', value: 'WF-COM-2002' },
       { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac (dual-band 2,4 + 5 GHz)' },
       { name: 'Bluetooth', value: '5.0' },
-      { name: 'Kompatybilność', value: 'TSC ML241P, ML341P, MB241T, MB341T (modele z Wi-Fi Ready slot)' },
+      { name: 'Kompatybilność', value: 'TSC ML241P, ML341P, MB241T, MB341T, MB241TR, MB341TR (modele z Wi-Fi Ready slot)' },
       { name: 'Instalacja', value: 'Slot-in — montaż bez narzędzi' },
     ],
     applications: ['Łączność bezprzewodowa w sieci firmowej', 'Parowanie BT z terminalem mobilnym'],
-    priceFrom: 998,
-    availability: 'available' as const,
+    availability: 'unavailable' as const,
     isNew: true,
     isBestseller: false,
     compatibleAccessories: [],
@@ -86112,9 +86116,9 @@ const tscPrinterAccessories: Product[] = [
   {
     id: 'tsc-printhead-mb241t-203',
     slug: 'tsc-glowica-mb241t-203dpi',
-    name: 'Głowica TSC MB241T 203 dpi',
-    shortDescription: 'Głowica drukująca TSC PH-MB240-0001 — 203 dpi do drukarek TSC MB241T i MB241',
-    description: 'Oryginalna głowica drukująca TSC PH-MB240-0001 o rozdzielczości 203 dpi (8 dots/mm). Kompatybilna z drukarkami TSC MB241T, MB241, MB240T i MB240. Zalecana wymiana co 25 km druku lub po zauważeniu pogorszenia jakości wydruku.',
+    name: 'Głowica TSC MB241T / MB241TR 203 dpi',
+    shortDescription: 'Głowica drukująca TSC PH-MB240-0001 — 203 dpi do drukarek TSC MB241T, MB241 i MB241TR',
+    description: 'Oryginalna głowica drukująca TSC PH-MB240-0001 o rozdzielczości 203 dpi (8 dots/mm). Kompatybilna z drukarkami TSC MB241T, MB241, MB241TR, MB240T i MB240. Głowica wykonuje nadruk i nie dodaje funkcji RFID. Wymianę wykonaj zgodnie z instrukcją urządzenia.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'tsc',
@@ -86124,11 +86128,10 @@ const tscPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Part Number', value: 'PH-MB240-0001' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
-      { name: 'Kompatybilność', value: 'TSC MB241T, MB241, MB240T, MB240' },
+      { name: 'Kompatybilność', value: 'TSC MB241T, MB241, MB241TR, MB240T, MB240' },
       { name: 'Typ', value: 'Głowica termiczna' },
     ],
     applications: ['Wymiana zużytej głowicy', 'Konserwacja prewencyjna'],
-    priceFrom: 710.59,
     availability: 'unavailable' as const,
     isNew: true,
     isBestseller: false,
@@ -95840,6 +95843,7 @@ const rawProductList: Product[] = [
   ...rfidPrinterProducts,
   ...brotherRfidAdditionalAccessories,
   ...brotherTjAdditionalAccessories,
+  ...tscMbRfidAdditionalAccessories,
   ...zd621rAdditionalAccessories,
   ...zd611rAdditionalAccessories,
   ...zq630RfidAdditionalAccessories,

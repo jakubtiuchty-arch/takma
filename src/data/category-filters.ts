@@ -11,6 +11,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     { specKey: 'producent', label: 'Producent', derived: [
       { value: 'Zebra', manufacturer: 'zebra' },
       { value: 'Brother', manufacturer: 'brother' },
+      { value: 'TSC', manufacturer: 'tsc' },
     ] },
     {
       specKey: 'rodzaj',
@@ -56,10 +57,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'etykiety-na-metal',
       label: 'Etykiety na metal',
-      description: 'ZT411 wymaga wersji On-Metal do etykiet Silverline. Brother TJ-4021TNR i TJ-4121TNR obsługują zgodne etykiety na metal do 1,0 mm. Nie oznacza to zgodności z każdą etykietą; sprawdź wkładkę, format rolki i kalibrację.',
+      description: 'ZT411 wymaga wersji On-Metal do etykiet Silverline. Brother TJ-4021TNR i TJ-4121TNR obsługują zgodne etykiety na metal do 1,0 mm. TSC MB241TR i MB341TR z ręcznym odrywaniem obsługują zgodne etykiety do 1,65 mm. Sprawdź wkładkę, format rolki i kalibrację.',
       derived: [
         { value: 'Dostępna wersja On-Metal', slugs: ['zebra-zt411-rfid'] },
         { value: 'Etykiety na metal do 1,0 mm', slugs: ['brother-tj-4021tnr', 'brother-tj-4121tnr'] },
+        { value: 'Etykiety na metal do 1,65 mm', slugs: ['tsc-mb241tr', 'tsc-mb341tr'] },
       ],
     },
   ],
