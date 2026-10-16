@@ -52,8 +52,8 @@ Obcinak PA-CU-003 i odklejak PA-LP-004 są akcesoriami do zwykłych etykiet. Bro
 PN ${code} oznacza wersję z wbudowanym koderem RFID. Warianty TN i TNWB na karcie [Brother TD-4T](/produkt/brother-td-4t) wykonują nadruk bez kodowania RFID. Wybierz wersję TNWBR, jeśli chcesz zapisywać identyfikatory radiowe.`,
     categoryId: 'drukarki-etykiet', manufacturerId: 'brother',
     subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
-    images: [`/images/products/${model.toLowerCase()}-framed.webp`],
-    imageDescriptions: [`Brother ${model} — biurkowa drukarka UHF RFID, widok pod kątem`],
+    images: [dpi === 203 ? '/images/products/td-4650tnwbr-right-framed.webp' : `/images/products/${model.toLowerCase()}-framed.webp`],
+    imageDescriptions: [`Brother ${model} — biurkowa drukarka UHF RFID, widok z przodu i z lewego boku`],
     tags: ['magazyn', 'retail', 'produkcja'], availability: 'unavailable', isNew: true, isBestseller: false,
     keyParams: { rodzajDruku: 'Termotransferowy lub termiczny bezpośredni; kodowanie UHF RFID', rozdzielczosc: `${dpi} dpi`, predkoscDruku: `do ${speed} mm/s`, szerokoscDruku: `do ${width} mm`, szerokoscEtykiet: '20–112 mm' },
     specifications: [

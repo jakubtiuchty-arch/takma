@@ -1,5 +1,15 @@
 # Brother TD-4650TNWBR / TD-4750TNWBR — 16.10.2026
 
+## Korekta kierunku zdjęcia TD-4650TNWBR
+
+Na polecenie użytkownika wybrano drugi oryginalny kąt z galerii producenta: TD4650TNWBR_right.png, https://bie-p-001-delivery.sitecorecontenthub.cloud/api/public/content/33d244a784da46c6b5dced83f41a18f5?v=16bb38cf. Widok przedstawia przód oraz lewy bok, zgodnie z TD-4750TNWBR. Nie odbijano fotografii lustrzanie.
+
+Nowy zasób: public/images/products/td-4650tnwbr-right-framed.webp. Wbudowany image_gen dopasował wyłącznie skalę i białe tło. Wynik: /Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-8bfe1ae2-cd1b-4f3c-a96e-2fe5fe91ff45.png. Konwersja WebP nie zmienia wymiarów ani skali. Obiekt zajmuje 86,5% × 74,2% kadru 1254 × 1254 px; wzorce: ZD621R 86,8% × 80,1%, TD-4750TNWBR 80,7% × 67,4%. Zachowano komponent galerii i rozmiary pól. Poprzedni zasób pozostaje dostępny pod dawnym adresem.
+
+Prompt:
+
+> Use case: precise-object-edit. Edit target: this EXACT real manufacturer photograph of Brother TD-4650TNWBR, showing its left side with the front face on the RIGHT side of the image. Change ONLY product scale and white canvas margins. Preserve exact original viewing angle, printer geometry, seams, latch, output slot, LCD and every button, texture and Brother/RFID lettering. Do not mirror, rotate, redesign, redraw, add or remove anything. Center the entire photographed printer on a pure opaque white square canvas. Uniformly enlarge the printer so its widest visible extent is approximately 80 percent of canvas width, maintaining original proportions and balanced white margins on all sides. No crop, no added text, no decoration. Keep shadow subtle. Output one square catalog photo.
+
 ## Zakres
 
 Dwie osobne karty RFID, po jednym PN: TD4650TNWBRZ1 i TD4750TNWBRZ1. PN usunięte z wariantów ogólnej karty TD-4T; zostają tam cztery warianty TN/TNWB i linki do RFID. Stare adresy TD-4T z tymi PN przekierowują kodem 308 na właściwe karty. Nie zmieniono komponentów ani CSS kart. W tabelach jednego PN atrybuty są puste; porównanie obu modeli zawiera wyłącznie rozdzielczość, szerokość i prędkość nadruku.
