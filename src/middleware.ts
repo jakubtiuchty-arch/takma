@@ -365,7 +365,7 @@ export async function middleware(request: NextRequest) {
     }
 
     if (!existingSlugs.has(slug)) {
-      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('printronix-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-')
 
       if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)
