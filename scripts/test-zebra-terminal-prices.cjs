@@ -1,5 +1,5 @@
 const fs = require('node:fs'), path = require('node:path'), Module = require('node:module'), assert = require('node:assert/strict'), ts = require('typescript')
-require.extensions['.ts'] = (m, f) => m._compile(ts.transpileModule(fs.readFileSync(f, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText, f)
+require.extensions['.ts'] = (m, f) => m._compile(ts.transpileModule(fs.readFileSync(f, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true } }).outputText, f)
 const pn = 'TC201G-3S3P6BA00-A6'
 let cached = [], jtCached = [], supplierCalls = 0, written = []
 let ing = { partNumber: pn, found: true, ingramPrice: 900, stockPL: 10, stockDE: 0, inDelivery: 0 }
@@ -23,6 +23,9 @@ const { selectTerminalPurchasePrice, isZebraTerminalSlug } = require('../src/lib
 const { stockCacheMaxAge } = require('../src/lib/zebra-terminal-catalog.ts')
 async function main() {
   assert.equal(isZebraTerminalSlug('zebra-tc53e'), true)
+  assert.equal(isZebraTerminalSlug('zebra-tc22r'), true)
+  assert.equal(isZebraTerminalSlug('zebra-em45-rfid'), true)
+  assert.equal(isZebraTerminalSlug('zebra-em45-exoskeleton'), false)
   assert.equal(isZebraTerminalSlug('zebra-tc201-btry-tc2l'), false)
   assert.equal(stockCacheMaxAge(pn, 86400000), 3600000)
   assert.equal(stockCacheMaxAge(pn, 0), 0)

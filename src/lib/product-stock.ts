@@ -1,3 +1,4 @@
+import { rfidTerminalAccessories } from '@/data/rfid-terminal-products'
 import { bixolonRfidAccessories } from '@/data/bixolon-rfid-products'
 import { honeywellPx45RfidAccessories } from '@/data/honeywell-px45-rfid-products'
 import { satoCl6nxPlusRfidAccessories } from '@/data/sato-cl6nx-plus-rfid-products'
@@ -34,6 +35,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...rfidTerminalAccessories.map(product => product.slug),
   'bixolon-xt5-40nr', 'bixolon-xd5-40tr', ...bixolonRfidAccessories.map(a => a.slug),
   'honeywell-px45-rfid', ...honeywellPx45RfidAccessories.map(a => a.slug),
   'sato-cl6nx-plus-rfid', ...satoCl6nxPlusRfidAccessories.map(a => a.slug),

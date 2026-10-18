@@ -7,6 +7,13 @@ import type { FilterDefinition } from '@/components/subcategory/FilterableProduc
  * bo trafiają do komponentu klienckiego. Kolejność reguł = kolejność opcji w filtrze.
  */
 export const categoryFilters: Record<string, FilterDefinition[]> = {
+  'terminale-rfid': [
+    { specKey: 'producent', label: 'Producent', derived: [{ value: 'Zebra', manufacturer: 'zebra' }] },
+    { specKey: 'lacznosc', label: 'Łączność komórkowa', derived: [
+      { value: 'Z 5G', pattern: '^5G,', specs: ['Łączność'] },
+      { value: 'Bez 5G', pattern: 'bez 5G', specs: ['Łączność'] },
+    ] },
+  ],
   'drukarki-rfid': [
     { specKey: 'producent', label: 'Producent', derived: [
       { value: 'Zebra', manufacturer: 'zebra' },

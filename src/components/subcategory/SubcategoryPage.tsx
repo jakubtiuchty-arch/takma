@@ -460,7 +460,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
             products={products}
             filters={sidebarFilters[slug] || categoryFilters[slug]}
             filtersFirst={!sidebarFilters[slug]}
-            useLivePrices={slug === 'drukarki-rfid'}
+            useLivePrices={slug === 'drukarki-rfid' || slug === 'terminale-rfid'}
             urlFilterPrefix={slug === 'drukarki-rfid' ? 'f.' : undefined}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)

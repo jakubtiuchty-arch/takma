@@ -1,3 +1,5 @@
+import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
+import { rfidTerminalCategory } from './rfid-terminal-category'
 import { bixolonRfidAccessories } from './bixolon-rfid-products'
 import { honeywellPx45RfidAccessories } from './honeywell-px45-rfid-products'
 import { satoCl6nxPlusRfidAccessories } from './sato-cl6nx-plus-rfid-products'
@@ -411,6 +413,7 @@ export const subcategories: Subcategory[] = [
     productCount: 19,
   },
   rfidPrinterCategory,
+  rfidTerminalCategory,
   {
     id: 'kolorowe-drukarki-etykiet',
     slug: 'kolorowe-drukarki-etykiet',
@@ -27536,15 +27539,15 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Jakie są różnice między Zebra EM45 a Zebra EM45 RFID?",
-      "answer": "Wersja EM45 RFID ma wbudowany czytnik UHF RFID odczytujący do 20 tagów na sekundę z zasięgu 1,2 m — idealne do inwentaryzacji bez dodatkowych urządzeń. Standardowy EM45 nie posiada czytnika RFID. Pozostałe specyfikacje są identyczne: procesor Qualcomm 5430 z NPU, 8 GB DDR5, wyświetlacz 6,7\" 120 Hz, bateria 4 750 mAh, 5G i Wi-Fi 6E. Wersja RFID jest droższa i waży 250 g (vs 243 g)."
+      "answer": "Standardowy EM45 z oznaczeniem EM45B1 nie ma wbudowanego UHF. Do odczytu znaczników wybierz osobny model [Zebra EM45 RFID](/produkt/zebra-em45-rfid), dostępny w wersji europejskiej EM45B2-3T106B0-EA."
     },
     {
       "question": "Zebra EM45 czy Samsung Galaxy XCover 7 — co wybrać do firmy?",
-      "answer": "EM45 oferuje pełny ekosystem enterprise: Mobility DNA, LifeGuard (do 10 lat aktualizacji), StageNow (masowe wdrażanie), Identity Guardian (biometria MFA), Workcloud Communication (PTT) oraz opcjonalny RFID. Samsung XCover 7 jest tańszy, ale nie oferuje zarządzania flotą klasy enterprise, wsparcia RFID ani tak długiego cyklu aktualizacji. EM45 to lepszy wybór przy flotach powyżej kilkunastu urządzeń, gdzie TCO jest niższe dzięki centralnemu zarządzaniu i dłuższemu cyklowi życia."
+      "answer": "EM45 oferuje pełny ekosystem enterprise: Mobility DNA, LifeGuard (do 10 lat aktualizacji), StageNow (masowe wdrażanie), Identity Guardian (biometria MFA), Workcloud Communication (PTT). Standardowy EM45 nie ma UHF; osobny model [EM45 RFID](/produkt/zebra-em45-rfid) obsługuje znaczniki UHF. Samsung XCover 7 jest tańszy, ale nie oferuje zarządzania flotą klasy enterprise, wsparcia RFID ani tak długiego cyklu aktualizacji. EM45 to lepszy wybór przy flotach powyżej kilkunastu urządzeń, gdzie TCO jest niższe dzięki centralnemu zarządzaniu i dłuższemu cyklowi życia."
     },
     {
       "question": "Czym Zebra EM45 różni się od terminala mobilnego TC53?",
-      "answer": "EM45 ma formę smartfona (10,7 mm, 243 g), profil osobisty + firmowy (COPE), aparat 50 MP OIS i opcjonalny RFID. TC53 to klasyczny terminal mobilny z dedykowanym skanerem SE55 (zasięg do 12 m), wymienną baterią, programowalnymi klawiszami bocznymi i wyższą wytrzymałością (upadki z 2,4 m). EM45 wybierz dla menedżerów, sprzedawców i pracowników terenowych. TC53 wybierz do magazynu, logistyki i ciężkich warunków, gdzie liczy się szybkość skanowania."
+      "answer": "EM45 ma formę smartfona (10,7 mm, 243 g), profil osobisty + firmowy (COPE), aparat 50 MP OIS i łączność 5G. TC53 to klasyczny terminal mobilny z dedykowanym skanerem SE55 (zasięg do 12 m), wymienną baterią, programowalnymi klawiszami bocznymi i wyższą wytrzymałością (upadki z 2,4 m). EM45 wybierz dla menedżerów, sprzedawców i pracowników terenowych. TC53 wybierz do magazynu, logistyki i ciężkich warunków, gdzie liczy się szybkość skanowania."
     },
     {
       "question": "Jak długo działa bateria w Zebra EM45?",
@@ -27594,7 +27597,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
           "Łączność": "5G, Wi-Fi 6E, BT 5.3, NFC",
           "Bateria": "4 750 mAh — do 25 h, 50% w 30 min",
           "Odporność": "IP65 + IP68, MIL-STD-810H, 1,5 m",
-          "Skanowanie": "Zebra decoder (1D/2D) + RFID (opcja)",
+          "Skanowanie": "Odczyt aparatem 1D/2D; bez wbudowanego UHF",
           "Zarządzanie flotą": "Mobility DNA, LifeGuard, StageNow",
           "Wsparcie OS": "Wieloletnie (LifeGuard OTA)",
           "Waga / grubość": "243 g / 10,7 mm",
@@ -49133,7 +49136,7 @@ const em45Accessories: Product[] = [
     seoTitle: 'Zebra CRD-EM4X-1SNWS-01 — stacja dokująca Workstation Connect do EM45',
     seoDescription: 'Stacja dokująca Zebra CRD-EM4X-1SNWS-01 do EM45 — HDMI, Ethernet, 4x USB-A, jack 3,5 mm. Zamień smartfon w komputer stacjonarny. Stacja dokująca Zebra EM45, dock EM45. PN: CRD-EM4X-1SNWS-01.',
     shortDescription: 'Zebra CRD-EM4X-1SNWS-01 — stacja dokująca Workstation Connect do EM45, HDMI + Ethernet + 4x USB-A',
-    description: 'Stacja dokująca Zebra Workstation Connect Cradle (CRD-EM4X-1SNWS-01) zamienia Zebra EM45 w pełnoprawny komputer stacjonarny. Po umieszczeniu w stacji urządzenie uruchamia tryb Workstation Connect z pełnym pulpitem Android na monitorze podłączonym przez HDMI. Port Ethernet (10/100/1000 Mbps) zapewnia stabilne połączenie sieciowe, a 4 porty USB-A (2x USB 3.0, 2x USB 2.0) obsługują klawiaturę, mysz, drukarkę i inne urządzenia peryferyjne. Wyjście audio jack 3,5 mm do słuchawek lub głośników. Stacja ładuje EM45 podczas pracy. Porty zabezpieczone śrubami przed nieautoryzowanym dostępem. Kompatybilna z EM45 w etui ochronnym (SG-EM45EXO1-01). Wymagany zasilacz PWR-BGA12V50W0WW i kabel DC CBL-DC-388A2-01 — sprzedawane osobno.',
+    description: 'Stacja dokująca Zebra Workstation Connect Cradle (CRD-EM4X-1SNWS-01) zamienia Zebra EM45 w pełnoprawny komputer stacjonarny. Po umieszczeniu w stacji urządzenie uruchamia tryb Workstation Connect z pełnym pulpitem Android na monitorze podłączonym przez HDMI. Port Ethernet (10/100/1000 Mbps) zapewnia stabilne połączenie sieciowe, a 4 porty USB-A (2x USB 3.0, 2x USB 2.0) obsługują klawiaturę, mysz, drukarkę i inne urządzenia peryferyjne. Wyjście audio jack 3,5 mm do słuchawek lub głośników. Stacja ładuje EM45 podczas pracy. Porty zabezpieczone śrubami przed nieautoryzowanym dostępem. Kompatybilna z EM45 w etui ochronnym (SG-EM45EXO1-01). Aby korzystać ze stacji, potrzebujesz poniższych elementów:\n\n- [Zasilacz PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w)\n- [Przewód DC CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01)\n- [Przewód sieciowy EU 50-16000-220R](/produkt/zebra-tc201-50-16000-220r)\n\nElementy te nie są dołączone do zestawu.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'zebra',
@@ -49177,7 +49180,7 @@ const em45Accessories: Product[] = [
       },
       {
         question: 'Czy zasilacz jest w zestawie?',
-        answer: 'Nie. Zasilacz PWR-BGA12V50W0WW i kabel DC CBL-DC-388A2-01 należy dokupić osobno.',
+        answer: 'Nie. Zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-388A2-01 i przewód sieciowy EU 50-16000-220R są sprzedawane osobno.',
       },
     ],
     createdAt: '2025-06-01',
@@ -95826,10 +95829,21 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
+for (const subcategory of subcategories) {
+  if (subcategory.id === 'akcesoria-do-terminali' || rfidTerminalAccessories.some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = rfidTerminalAccessories.filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...rfidLabelProducts,
   ...desktopPrinters,
   ...rfidPrinterProducts,
+  ...rfidTerminalProducts,
+  ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
   ...bixolonRfidAccessories,
   ...honeywellPx45RfidAccessories,
