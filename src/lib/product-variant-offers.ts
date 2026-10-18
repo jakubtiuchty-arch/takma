@@ -21,7 +21,7 @@ function markaProduktu(product: Product) {
 }
 
 /** Oferta z żywego stanu. Cena brutto, bo taką widzi kupujący i taka idzie do feedu. */
-function ofertaZeStanu(row: StockInfo | undefined, url: string, priceValidUntil: string) {
+function ofertaZeStanu(row: StockInfo | undefined, url: string, priceValidUntil: string, rfidTerminal = false) {
   if (!row?.found || row.price == null || row.price <= 0) return undefined
   return {
     '@type': 'Offer' as const,
@@ -31,6 +31,10 @@ function ofertaZeStanu(row: StockInfo | undefined, url: string, priceValidUntil:
     priceValidUntil,
     availability: row.availability === 'available' ? 'https://schema.org/InStock'
       : 'https://schema.org/OutOfStock',
+    // Te karty pozwalają zgłosić powiadomienie, nie złożyć zamówienia bez zapasu.
+    ...(rfidTerminal && row.availability === 'on-order' && row.inDelivery > 0 ? {
+      description: 'Produkt chwilowo niedostępny. Oczekujemy dostawy; możesz włączyć powiadomienie o dostępności.',
+    } : {}),
     itemCondition: 'https://schema.org/NewCondition',
     seller: { '@type': 'Organization' as const, name: 'TAKMA', url: 'https://www.takma.com.pl' },
   }
@@ -51,14 +55,23 @@ export function selectProductVariant(product: Product, rows: StockInfo[], pn?: s
 export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const url = `https://www.takma.com.pl/produkt/${product.slug}`
   const stock = new Map(rows.map(row => [row.partNumber, row]))
+  const rfidTerminal = product.subcategoryIds?.includes('terminale-rfid') ?? false
+  const commonProperties = rfidTerminal ? product.specifications
+    .filter(spec => spec.name !== 'Part Number')
+    .map(spec => ({ '@type': 'PropertyValue', name: spec.name, value: spec.value })) : []
+  const facts = rfidTerminal ? {
+    model: product.name.replace(/^Zebra\s+/, ''),
+    category: 'Terminale RFID',
+    additionalProperty: commonProperties,
+  } : {}
   const marka = markaProduktu(product)
   const priceValidUntil = activeSupplierOffer(product.slug)?.endsAt.slice(0, 10) ?? cenaWaznaDo()
 
   // Karta bez wariantów (nawijarki i dyspensery Labelmate) to zwykły Product z jedną ofertą.
   // ProductGroup z pustym hasVariant nie niósł żadnej oferty — Google widział produkt bez ceny.
-  if (!product.variants?.length) {
-    const partNumber = product.specifications?.find(spec => spec.name === 'Part Number')?.value
-    const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url, priceValidUntil)
+  if (!product.variants?.length || (rfidTerminal && product.variants.length === 1)) {
+    const partNumber = product.variants?.[0]?.partNumber ?? product.specifications?.find(spec => spec.name === 'Part Number')?.value
+    const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url, priceValidUntil, rfidTerminal)
     return {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -68,6 +81,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
       description: product.shortDescription,
       ...(partNumber ? { sku: partNumber, mpn: partNumber } : {}),
       ...marka,
+      ...facts,
       image: product.images.map(absoluteProductImageUrl),
       ...(product.sameAs ? { sameAs: product.sameAs } : {}),
       ...(oferta ? { offers: oferta } : {}),
@@ -83,6 +97,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
     description: product.shortDescription,
     productGroupID: product.id,
     ...marka,
+    ...facts,
     image: product.images.map(absoluteProductImageUrl),
     ...(product.sameAs ? { sameAs: product.sameAs } : {}),
     hasVariant: (product.variants ?? []).map(variant => {
@@ -101,9 +116,12 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         image: product.images.map(absoluteProductImageUrl),
         brand: marka.brand,
         isVariantOf: { '@id': `${url}#product-group` },
-        additionalProperty: Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+        additionalProperty: [
+          ...commonProperties.filter(property => property.name !== 'Pamięć' && !(property.name in variant.attributes)),
+          ...Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+        ],
         // Bez potwierdzonej ceny nie tworzymy pozornej oferty ani dostępności.
-        ...(hasPrice ? { offers: ofertaZeStanu(row, variantUrl, priceValidUntil) } : {}),
+        ...(hasPrice ? { offers: ofertaZeStanu(row, variantUrl, priceValidUntil, rfidTerminal) } : {}),
       }
     }),
   }

@@ -45,9 +45,9 @@ export const rfidTerminalProducts: Product[] = [
     "name": "Zebra TC22R",
     "seoH1": "Zebra TC22R",
     "seoTitle": "Zebra TC22R — terminal UHF RFID | TAKMA",
-    "seoDescription": "Zebra TC22R z wbudowanym UHF RFID odczytuje do 1300 znaczników/s. Ekran 6 cali, skaner SE4710, 6/64 GB i bateria 7000 mAh.",
+    "seoDescription": "Zebra TC22R z UHF RFID do 1300 znaczników/s, skanerem SE4710 i baterią 7000 mAh. Sprawdź europejski PN, cenę, dostępność oraz zgodne akcesoria.",
     "shortDescription": "Zebra TC22R z wbudowanym UHF RFID odczytuje do 1300 znaczników/s. Ekran 6 cali, skaner SE4710, 6/64 GB i bateria 7000 mAh.",
-    "description": "Zebra TC22R to terminal Android z wbudowanym czytnikiem UHF RFID i uchwytem pistoletowym. Służy do inwentaryzacji, wyszukiwania towarów oraz kontroli przyjęć i wydań.\n\nCzytnik odczytuje do 1300 znaczników na sekundę. Nominalny zasięg anteny wynosi do 12,2 m. Rzeczywisty zasięg zależy od etykiety, powierzchni produktu, ustawionej mocy i otoczenia. Europejski PN TC2205-0G1250SS-E8 pracuje w paśmie UHF 865–868 MHz i obsługuje EPC Class 1 Gen 2 oraz Gen 2 V2.\n\nSkaner SE4710 odczytuje kody kreskowe 1D i 2D. Aparaty 16 MP z tyłu i 5 MP z przodu umożliwiają dokumentowanie pracy. Ekran dotykowy 6 cali ma rozdzielczość 1080 × 2160 pikseli i jasność 450 nitów.\n\nProcesor Qualcomm 5430, 6 GB RAM i 64 GB pamięci Flash obsługują aplikacje magazynowe na Androidzie. Wi-Fi 6E łączy terminal z siecią firmową. Urządzenie ma także Bluetooth 5.2, NFC i port USB-C. Ten PN nie ma modemu 5G.\n\nWymienna bateria 7000 mAh zasila terminal i czytnik RFID. Obudowa ma klasę ochrony IP65. Urządzenie waży 569 g i wytrzymuje wielokrotne upadki z 1,5 m na beton. Temperatura pracy wynosi od −10°C do +50°C.\n\nTC22R jest kompletnym urządzeniem RFID. Nie wymaga dokupienia uchwytu RFD40 ani RFD90. Zwykły [Zebra TC22](/produkt/zebra-tc22) to inny model. Jego baterii, osłon i stacji nie należy dobierać do TC22R wyłącznie na podstawie podobnej nazwy.\n\nW zestawie znajduje się terminal z baterią 7000 mAh. Zasilacz, przewód do ładowania i stacje są sprzedawane osobno. Dobierz jedną metodę ładowania oraz wymagane dla niej elementy. Do odczytu RFID potrzebujesz aplikacji obsługującej czytnik oraz zgodnych znaczników UHF.\n\nPorównaj kompaktowy [Zebra EM45 RFID](/produkt/zebra-em45-rfid) do odczytu z małej odległości. Pozostałe urządzenia znajdziesz w kategorii [terminale RFID](/terminale-rfid).",
+    "description": "Zebra TC22R to terminal Android z wbudowanym czytnikiem UHF RFID i uchwytem pistoletowym. Służy do inwentaryzacji, wyszukiwania towarów oraz kontroli przyjęć i wydań.\n\n## Odczyt UHF RFID i zasięg\n\nCzytnik odczytuje do 1300 znaczników na sekundę. Nominalny zasięg anteny wynosi do 12,2 m. Rzeczywisty zasięg zależy od etykiety, powierzchni produktu, ustawionej mocy i otoczenia. Europejski PN TC2205-0G1250SS-E8 pracuje w paśmie UHF 865–868 MHz i obsługuje EPC Class 1 Gen 2 oraz Gen 2 V2.\n\n## Skaner kodów, ekran i łączność\n\nSkaner SE4710 odczytuje kody kreskowe 1D i 2D. Aparaty 16 MP z tyłu i 5 MP z przodu umożliwiają dokumentowanie pracy. Ekran dotykowy 6 cali ma rozdzielczość 1080 × 2160 pikseli i jasność 450 nitów.\n\nProcesor Qualcomm 5430, 6 GB RAM i 64 GB pamięci Flash obsługują aplikacje magazynowe na Androidzie. Wi-Fi 6E łączy terminal z siecią firmową. Urządzenie ma także Bluetooth 5.2, NFC i port USB-C. Ten PN nie ma modemu 5G.\n\n## Bateria i odporność\n\nWymienna bateria 7000 mAh zasila terminal i czytnik RFID. Obudowa ma klasę ochrony IP65. Urządzenie waży 569 g i wytrzymuje wielokrotne upadki z 1,5 m na beton. Temperatura pracy wynosi od −10°C do +50°C.\n\n## Czy TC22R wymaga uchwytu RFID?\n\nTC22R jest kompletnym urządzeniem RFID. Nie wymaga dokupienia uchwytu RFD40 ani RFD90. Zwykły [Zebra TC22](/produkt/zebra-tc22) to inny model. Jego baterii, osłon i stacji nie należy dobierać do TC22R wyłącznie na podstawie podobnej nazwy.\n\n## Co zawiera zestaw i jak dobrać ładowanie?\n\nW zestawie znajduje się terminal z baterią 7000 mAh. Zasilacz, przewód do ładowania i stacje są sprzedawane osobno. Dobierz jedną metodę ładowania oraz wymagane dla niej elementy. Do odczytu RFID potrzebujesz aplikacji obsługującej czytnik oraz zgodnych znaczników UHF.\n\n## TC22R, EM45 RFID czy TC53e-RFID?\n\nTC22R wybierz do szybkiego liczenia wielu znaczników z większej odległości. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma 5G i odczytuje kody aparatem. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. Porównaj wszystkie [terminale RFID](/terminale-rfid).",
     "priceFrom": 6446.83,
     "images": [
       "/images/products/tc22r-top-view-media-v2.webp",
@@ -240,9 +240,9 @@ export const rfidTerminalProducts: Product[] = [
     "name": "Zebra EM45 RFID",
     "seoH1": "Zebra EM45 RFID",
     "seoTitle": "Zebra EM45 RFID — terminal UHF RFID | TAKMA",
-    "seoDescription": "Zebra EM45 RFID to terminal Android z wbudowanym UHF do 1,2 m. Ma 5G, Wi-Fi 6E, ekran 6,7 cala i pamięć 8/128 GB.",
+    "seoDescription": "Zebra EM45 RFID: UHF do 1,2 m i 20 znaczników/s, 5G, Wi-Fi 6E oraz pamięć 8/128 GB. Sprawdź europejski PN, aktualną cenę, dostępność i akcesoria.",
     "shortDescription": "Zebra EM45 RFID to terminal Android z wbudowanym UHF do 1,2 m. Ma 5G, Wi-Fi 6E, ekran 6,7 cala i pamięć 8/128 GB.",
-    "description": "Zebra EM45 RFID to terminal Android z wbudowanym czytnikiem UHF RFID w obudowie smartfona. Służy do sprawdzania towarów, identyfikacji wyposażenia i pracy w terenie.\n\nCzytnik UHF umożliwia odczyt znaczników z odległości do 1,2 m. Taki zasięg pozwala sprawdzić wybrany produkt lub grupę pobliskich przedmiotów. Rzeczywisty zasięg zależy od znacznika, materiału i otoczenia. Europejski PN EM45B2-3T106B0-EA obsługuje pasmo 865–868 MHz.\n\nEM45 RFID ma ekran 6,7 cala Full HD+ z odświeżaniem do 120 Hz. Procesor Qualcomm 5430 współpracuje z 8 GB RAM i 128 GB pamięci Flash. Łączność 5G i Wi-Fi 6E umożliwia pracę w sieci firmowej i poza jej zasięgiem. Urządzenie obsługuje także Bluetooth 5.3, NFC oraz nano-SIM i eSIM.\n\nAparat tylny 50 MP z optyczną stabilizacją obrazu służy do dokumentowania towarów i zdarzeń. Oprogramowanie Zebra umożliwia odczyt kodów kreskowych aparatem. Ten model nie ma osobnego modułu skanera laserowego ani skanera SE4710.\n\nBateria 4750 mAh zapewnia do 25 godzin pracy w warunkach testowych producenta. Szybkie ładowanie uzupełnia do 50% energii w około 30 minut. Rzeczywisty czas pracy zależy między innymi od użycia RFID, ekranu i sieci komórkowej. Obudowa ma klasy ochrony IP65 i IP68.\n\nWybierz wersję EM45B2 z RFID, jeśli chcesz odczytywać znaczniki UHF bez osobnego czytnika. Zwykły [Zebra EM45](/produkt/zebra-em45) o oznaczeniu EM45B1 nie ma wbudowanego UHF. NFC nie zastępuje czytnika UHF do etykiet magazynowych.\n\nZestaw EM45B2-3T106B0-EA zawiera urządzenie z baterią i przewód USB-C. Zasilacz sieciowy, osłona, szkło ochronne i stacja Workstation Connect są sprzedawane osobno. Do pracy z RFID potrzebujesz także zgodnych znaczników i aplikacji obsługującej czytnik.\n\nDo szybkiego liczenia większej liczby znaczników porównaj [Zebra TC22R](/produkt/zebra-tc22r). Sprawdź całą kategorię [terminali RFID](/terminale-rfid).",
+    "description": "Zebra EM45 RFID to terminal Android z wbudowanym czytnikiem UHF RFID w obudowie smartfona. Służy do sprawdzania towarów, identyfikacji wyposażenia i pracy w terenie.\n\n## Odczyt UHF RFID z małej odległości\n\nCzytnik UHF odczytuje do 20 znaczników na sekundę z odległości do 1,2 m. Taki zasięg pozwala sprawdzić wybrany produkt lub grupę pobliskich przedmiotów. Rzeczywisty zasięg zależy od znacznika, materiału i otoczenia. Europejski PN EM45B2-3T106B0-EA obsługuje pasmo 865–868 MHz.\n\n## Ekran, pamięć i łączność 5G\n\nEM45 RFID ma ekran 6,7 cala Full HD+ z odświeżaniem do 120 Hz. Procesor Qualcomm 5430 współpracuje z 8 GB RAM i 128 GB pamięci Flash. Łączność 5G i Wi-Fi 6E umożliwia pracę w sieci firmowej i poza jej zasięgiem. Urządzenie obsługuje także Bluetooth 5.3, NFC oraz nano-SIM i eSIM.\n\n## Jak EM45 RFID odczytuje kody kreskowe?\n\nAparat tylny 50 MP z optyczną stabilizacją obrazu służy do dokumentowania towarów i zdarzeń. Oprogramowanie Zebra umożliwia odczyt kodów kreskowych aparatem. Ten model nie ma osobnego modułu skanera laserowego ani skanera SE4710.\n\n## Bateria i warunki pracy\n\nBateria 4750 mAh zapewnia do 25 godzin pracy w warunkach testowych producenta. Szybkie ładowanie uzupełnia do 50% energii w około 30 minut. Rzeczywisty czas pracy zależy między innymi od użycia RFID, ekranu i sieci komórkowej. Obudowa ma klasy ochrony IP65 i IP68. Temperatura pracy wynosi od 0°C do +50°C. EM45 RFID nie jest przeznaczony do pracy w temperaturze poniżej 0°C.\n\n## EM45 RFID a zwykły EM45\n\nWybierz wersję EM45B2 z RFID, jeśli chcesz odczytywać znaczniki UHF bez osobnego czytnika. Zwykły [Zebra EM45](/produkt/zebra-em45) o oznaczeniu EM45B1 nie ma wbudowanego UHF. NFC nie zastępuje czytnika UHF do etykiet magazynowych.\n\n## Co zawiera zestaw?\n\nZestaw EM45B2-3T106B0-EA zawiera urządzenie z baterią i przewód USB-C. Zasilacz sieciowy, osłona, szkło ochronne i stacja Workstation Connect są sprzedawane osobno. Do pracy z RFID potrzebujesz także zgodnych znaczników i aplikacji obsługującej czytnik.\n\n## EM45 RFID, TC22R czy TC53e-RFID?\n\nEM45 RFID wybierz do odczytu UHF z bliska i pracy z łącznością 5G. Do szybkiego liczenia wielu znaczników porównaj [Zebra TC22R](/produkt/zebra-tc22r). Jeśli potrzebujesz osobnego skanera kodów i Wi-Fi, sprawdź [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid). Wszystkie modele znajdziesz w kategorii [terminale RFID](/terminale-rfid).",
     "priceFrom": 3925.39,
     "images": [
       "/images/products/em45-rfid-original-front-media-v2.webp",
@@ -319,7 +319,7 @@ export const rfidTerminalProducts: Product[] = [
     "specifications": [
       {
         "name": "Czytnik RFID",
-        "value": "Zintegrowany UHF krótkiego zasięgu"
+        "value": "Zintegrowany UHF krótkiego zasięgu; do 20 znaczników/s"
       },
       {
         "name": "Zasięg RFID",
@@ -368,6 +368,10 @@ export const rfidTerminalProducts: Product[] = [
       {
         "name": "Klasa ochrony",
         "value": "IP65 i IP68"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "0°C do +50°C"
       },
       {
         "name": "Gwarancja",
@@ -419,6 +423,10 @@ export const rfidTerminalProducts: Product[] = [
       {
         "question": "Czy zasilacz jest w zestawie?",
         "answer": "Nie. Zestaw zawiera przewód USB-C, a zasilacz sieciowy jest sprzedawany osobno. Zgodny model Zebra to PWR-WUA5V45W1EU."
+      },
+      {
+        "question": "Czy EM45 RFID może pracować w temperaturze poniżej 0°C?",
+        "answer": "Nie. Temperatura pracy EM45 RFID wynosi od 0°C do +50°C. Do chłodniejszych pomieszczeń dobierz terminal z odpowiednim zakresem temperatur."
       }
     ]
   }

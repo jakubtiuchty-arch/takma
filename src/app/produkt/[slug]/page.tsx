@@ -139,24 +139,26 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
 
   // SEO: dedykowany opis lub fallback na dynamiczny — uzupełniony rozmiarem wariantu
   const priceText = currentNetPrice ? ` Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : ''
-  const variantsText = !variant && product.variants?.length ? ` ${product.variants.length} wariantów.` : ''
+  const variantCount = product.variants?.length ?? 0
+  const variantsText = !variant && variantCount ? ` ${variantCount} ${variantCount === 1 ? 'wariant' : variantCount % 100 >= 12 && variantCount % 100 <= 14 ? 'wariantów' : [2, 3, 4].includes(variantCount % 10) ? 'warianty' : 'wariantów'}.` : ''
   const variantPrice = initialStock !== undefined ? (currentNetPrice ? ` Cena ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
   const variantPrefix = variant
     ? `${product.name}${variantSize ? ` w rozmiarze ${variantSize}` : ''}${variantPN ? ` (PN: ${variantPN})` : ''}. `
     : ''
+  const shortDescriptionSentence = `${product.shortDescription.trim().replace(/[.!?]+$/, '')}.`
   const fallbackDesc = variant
-    ? `${variantPrefix}${product.shortDescription}.${variantPrice} Doradztwo techniczne i serwis.`
-    : `${product.shortDescription}.${priceText}${variantsText} Doradztwo techniczne i serwis.`
-  const metaDescription = !variant && product.seoDescription && !isZebraTerminalProduct(product)
+    ? `${variantPrefix}${shortDescriptionSentence}${variantPrice} Doradztwo techniczne i serwis.`
+    : `${shortDescriptionSentence}${priceText}${variantsText} Doradztwo techniczne i serwis.`
+  const metaDescription = !variant && product.seoDescription && (!isZebraTerminalProduct(product) || product.subcategoryIds?.includes('terminale-rfid'))
     ? product.seoDescription
     : smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
   const ogDescription = variant
-    ? `${variantPrefix}${product.shortDescription}.${variantPrice} Zamów w TAKMA.`
+    ? `${variantPrefix}${shortDescriptionSentence}${variantPrice} Zamów w TAKMA.`
     : currentNetPrice
-      ? `${product.shortDescription}. Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
-      : `${product.shortDescription}. Sprawdź i zamów w TAKMA.`
+      ? `${shortDescriptionSentence} Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
+      : `${shortDescriptionSentence} Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path) i prawdziwe wymiary pliku
   // (mapa generowana skryptem scripts/generate-image-dims.mjs; bez wpisu nie deklarujemy wymiarów)
