@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/datasheets/zebra-tc22r-en.pdf",
+    "source": "https://www.jarltech.com/sites/default/files/documents/product/datasheet/en/TC22R_EN.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 158187,
+    "pages": 3,
+    "sha256": "e2fbcbcb14aac921f7cce1bae200411be019821c83e4fb5f4940494d9a44c526",
+    "referencesUpdated": 1
+  },
+  {
+    "path": "/instrukcje/zebra-tc22r-qs-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/tc22r-qsg-en.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 858359,
+    "pages": 24,
+    "sha256": "980f1929ba4d444e69464b2e330bf7910ef877a6f0ce4657d41bf2fe813e2025",
+    "referencesUpdated": 1
+  },
+  {
+    "path": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+    "source": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 1089493,
+    "pages": 10,
+    "sha256": "78c060ce3b8f86209b2dee600a0a394f999556d2c60a8d1d418e3781b8ca4758",
+    "referencesUpdated": 8
+  },
+  {
+    "path": "/datasheets/zebra-em45-rfid-en.pdf",
+    "source": "https://www.jarltech.com/sites/default/files/documents/product/datasheet/en/em45-rfid-spec-sheet-en-us.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 263004,
+    "pages": 4,
+    "sha256": "767cd1b6c6fc03eac4b3d0af9d7ca5b5f9a81f49736e76003dee767237e68285",
+    "referencesUpdated": 1
+  },
+  {
+    "path": "/instrukcje/zebra-em45-rfid-qs-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/em45-rfid-qsg-en.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 7083612,
+    "pages": 12,
+    "sha256": "fb4bbd0abfaa78a2251eb6f78f9c8ef022ef274107e87be4e5d127a9e788002a",
+    "referencesUpdated": 1
+  },
+  {
+    "path": "/instrukcje/zebra-em45-rfid-akcesoria-en.pdf",
+    "source": "https://www.jarltech.com/sites/default/files/documents/product/accessory_guide/en/em45-rfid-guide-accessory-en-us.pdf",
+    "downloadedAt": "2026-10-18",
+    "bytes": 2418156,
+    "pages": 12,
+    "sha256": "5ed245f5321b613c0feb49fb7ae98813afec6cbda31758a7b673b97e68889949",
+    "referencesUpdated": 1
+  }
+]

@@ -20,20 +20,20 @@ export const rfidTerminalProducts: Product[] = [
       {
         "name": "Karta katalogowa Zebra TC22R (EN)",
         "type": "datasheet",
-        "url": "https://www.jarltech.com/sites/default/files/documents/product/datasheet/en/TC22R_EN.pdf",
-        "size": "PDF"
+        "url": "/datasheets/zebra-tc22r-en.pdf",
+        "size": "154 kB"
       },
       {
         "name": "Instrukcja uruchomienia Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://docs.zebra.com/us/en/mobile-computers/handheld/tc2-series/tc22r-qsg.html",
-        "size": "Online"
+        "url": "/instrukcje/zebra-tc22r-qs-en.pdf",
+        "size": "838 kB"
       },
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18",
@@ -215,20 +215,20 @@ export const rfidTerminalProducts: Product[] = [
       {
         "name": "Karta katalogowa Zebra EM45 RFID (EN)",
         "type": "datasheet",
-        "url": "https://www.zebra.com/us/en/products/spec-sheets/mobile-computers/handheld/em45-rfid.html",
-        "size": "Online"
+        "url": "/datasheets/zebra-em45-rfid-en.pdf",
+        "size": "257 kB"
       },
       {
         "name": "Instrukcja uruchomienia Zebra EM45 RFID (EN)",
         "type": "manual",
-        "url": "https://docs.zebra.com/us/en/mobile-computers/handheld/em45-series/em45-rfid-qsg/c-em45-smartphone-quick-start-guide-landing-page.html",
-        "size": "Online"
+        "url": "/instrukcje/zebra-em45-rfid-qs-en.pdf",
+        "size": "6,8 MB"
       },
       {
         "name": "Katalog akcesoriów Zebra EM45 RFID (EN)",
         "type": "manual",
-        "url": "https://www.jarltech.com/sites/default/files/documents/product/accessory_guide/en/em45-rfid-guide-accessory-en-us.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-em45-rfid-akcesoria-en.pdf",
+        "size": "2,3 MB"
       }
     ],
     "createdAt": "2026-10-18",
@@ -467,8 +467,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -517,8 +517,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -567,8 +567,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -617,8 +617,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -667,8 +667,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -717,8 +717,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
@@ -767,8 +767,8 @@ export const rfidTerminalAccessories: Product[] = [
       {
         "name": "Katalog akcesoriów Zebra TC22R (EN)",
         "type": "manual",
-        "url": "https://www.zpsstore.com/content/product_downloads/zebra/Zebra%20TC22R%20Integrated%20Handheld%20RFID%20Reader%20Accessory%20Guide.pdf",
-        "size": "PDF"
+        "url": "/instrukcje/zebra-tc22r-akcesoria-en.pdf",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-18"
