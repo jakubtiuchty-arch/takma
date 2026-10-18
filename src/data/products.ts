@@ -1791,7 +1791,9 @@ Zebra ZD621t to flagowa, premium drukarka etykiet w segmencie biurkowym Zebra, z
 
 Wyróżniającą cechą ZD621t jest kolorowy dotykowy wyświetlacz LCD 4,3 cala (rozdzielczość 480 x 272 pikseli) — jedyny taki ekran w całej gamie biurkowych drukarek Zebra. Wyświetlacz oferuje intuicyjne menu konfiguracyjne z kreatorami ustawień krok po kroku, animacje rozwiązywania problemów oraz instrukcje ładowania mediów i kalibracji. Dzięki niemu operator może samodzielnie skonfigurować drukarkę, zmienić ustawienia i zdiagnozować problemy bez potrzeby podłączania komputera. Dodatkowo 5 diod LED informuje o statusie urządzenia na pierwszy rzut oka. ZD621t obsługuje taśmy barwiące o długości 74 m lub 300 m — rolka 300-metrowa zapewnia stosunek 4:1 wymiany taśmy do mediów, co znacząco redukuje przestoje i podnosi produktywność przy dużych nakładach druku.
 
-Modułowa architektura ZD621t oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia bezprzewodowego Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze, bez konieczności fizycznego dostępu do urządzenia. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek, odklejak (peeler/dispenser) do automatycznego odrywania etykiet od podłoża, a także wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) obsługującym standardy EPC Gen 2 V2, ISO/IEC 18000-63 i RAIN RFID.
+Modułowa architektura ZD621t oparta na systemie MCS (Modular Connectivity Slot) pozwala na elastyczną rozbudowę łączności — od standardowej konfiguracji z portami USB 2.0, USB Host, Ethernet (LAN) i RS-232, po opcjonalny moduł podwójnego radia bezprzewodowego Bluetooth 4.1 i Wi-Fi 802.11ac, który można doinstalować fabrycznie lub w terenie bez narzędzi. Platforma Link-OS umożliwia zdalne zarządzanie całą flotą drukarek z jednego miejsca za pomocą Printer Profile Manager Enterprise — aktualizacje firmware, konfiguracja, diagnostyka i zabezpieczenia realizowane są zdalnie, w chmurze, bez konieczności fizycznego dostępu do urządzenia. Funkcja PrintSecure chroni dane druku przed nieautoryzowanym dostępem, a Print DNA dostarcza pakiet narzędzi programistycznych i diagnostycznych klasy enterprise. Opcjonalnie dostępny jest obcinacz (cutter) do automatycznego cięcia etykiet i przywieszek, odklejak (peeler/dispenser) do automatycznego odrywania etykiet od podłoża.
+
+Do druku i kodowania etykiet UHF RFID wybierz [Zebra ZD621R](/produkt/zebra-zd621r). Ta karta obejmuje wersję ZD621t bez kodera RFID.
 
 ZD621t to drukarka stworzona do środowisk o wysokim nakładzie druku, w których liczy się szybkość, ciągłość pracy i łatwość zarządzania. W porównaniu do ZD421t oferuje szybszy druk, kolorowy wyświetlacz dotykowy i wbudowany port Ethernet w standardzie. W porównaniu do ZD220t jest to skok o dwie klasy wyżej — od prostego urządzenia USB do w pełni sieciowej, zarządzanej platformy druku etykiet. Drukarka obsługuje języki programowania ZPL II i EPL2 z pełną kompatybilnością wsteczną, co ułatwia migrację z wcześniejszych modeli Zebra. ZD621t jest dostępna również w wersji healthcare (ZD621t-HC) z obudową odporną na środki dezynfekujące i zasilaczem zgodnym z IEC 60601-1. Zebra ZD621t jest objęta 36-miesięczną gwarancją producenta na drukarkę i 12-miesięczną na głowicę (standardowa gwarancja Zebra od kwietnia 2024). Opcjonalnie gwarancję można rozszerzyć do 5 lat kontraktem Zebra OneCare Essential lub Select.
 
@@ -84222,16 +84224,16 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
     id: 'tsc-mb241t',
     slug: 'tsc-mb241t',
     name: 'TSC MB241T',
-    shortDescription: 'TSC MB241T — drukarka przemysłowa 4" z dotykowym LCD 3,5", 305 mm/s, bifold door, RFID opcja, emulacja ZPL',
+    shortDescription: 'TSC MB241T — drukarka przemysłowa 4" z dotykowym LCD 3,5", 305 mm/s, bifold door, emulacja ZPL',
     seoTitle: 'TSC MB241T — drukarka przemysłowa 4" | od 2 779 zł',
     seoDescription: 'TSC MB241T — przemysłowa drukarka etykiet 4", 203 dpi, 305 mm/s, bifold door, dotykowy LCD 3,5", hang-tagi do 0,28 mm. Wersja z RFID UHF: TSC MB241TR.',
     description: `TSC MB241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) (industrial) 4" ze składanym mechanizmem drzwi bifold, która zajmuje o 24% mniej miejsca na stanowisku niż drukarki z tradycyjnie uchylną pokrywą. Dla firm produkcyjnych, logistycznych i magazynowych wymagających drukarki przemysłowej o dużej prędkości (305 mm/s) z metalową konstrukcją i dotykowym wyświetlaczem.
 
 Do druku i kodowania etykiet UHF RFID wybierz [TSC MB241TR](/produkt/tsc-mb241tr). Pokazany PN zwykłej MB241T nie obejmuje kodera RFID.
 
-TSC MB241T to najszybsza drukarka 4" w ofercie TSC — prędkość 305 mm/s — o 1 mm/s więcej niż [Zebra ZT231](/produkt/zebra-zt231) (304 mm/s), a cena jest zbliżona. Dotykowy ekran LCD 3,5" (vs LCD 2,3" w [TSC ML241P](/produkt/tsc-ml241p)), podwójna pamięć 256 MB (RAM + Flash), obsługa grubych mediów do 0,28 mm (hang-tagi, kartonowe metki) i opcja RFID UHF (fabryczna lub jako upgrade). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
+TSC MB241T to najszybsza drukarka 4" w ofercie TSC — prędkość 305 mm/s — o 1 mm/s więcej niż [Zebra ZT231](/produkt/zebra-zt231) (304 mm/s), a cena jest zbliżona. Dotykowy ekran LCD 3,5" (vs LCD 2,3" w [TSC ML241P](/produkt/tsc-ml241p)), podwójna pamięć 256 MB (RAM + Flash), obsługa grubych mediów do 0,28 mm (hang-tagi, kartonowe metki). Automatyczna emulacja ZPL II, EPL i DPL (tryb TSPL-EZD) pozwala zastąpić drukarkę Zebra bez zmian w systemie WMS/ERP.
 
-Drukarka do etykiet logistycznych GS1, etykiet produktowych, metek odzieżowych (hang-tags), etykiet compliance na liniach produkcyjnych, etykietowania w farmacji i food & beverage. Opcje: gilotyna (full cut), odklejak (peel-off), nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth) i RFID UHF.
+Drukarka do etykiet logistycznych GS1, etykiet produktowych, metek odzieżowych (hang-tags), etykiet compliance na liniach produkcyjnych, etykietowania w farmacji i food & beverage. Opcje: gilotyna (full cut), odklejak (peel-off), nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth).
 
 TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR. System TSC Sense Care monitoruje stan głowicy, przebieg i ilość cięć gilotyny — dane integrują się z SOTI Connect i TSC Console do zdalnego zarządzania flotą drukarek.`,
     categoryId: 'drukarki-etykiet',
@@ -84281,7 +84283,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       { name: 'Kody 2D', value: 'PDF-417, Micro PDF 417, DataMatrix, QR Code, Aztec, MaxiCode, TLC 39' },
       { name: 'Czujniki', value: 'Gap (przerwy), Black Mark (czarna kreska), ribbon encoder, ribbon end, otwarcie głowicy — pozycja regulowana' },
       { name: 'RTC', value: 'Tak (zegar czasu rzeczywistego)' },
-      { name: 'RFID', value: 'Opcja fabryczna: RAIN UHF (GS1 EPC Gen2 v2 / ISO 18000-63), antena zewnętrzna, on-metal do 1,65 mm' },
+      { name: 'RFID', value: 'Brak kodera RFID w pokazanym PN' },
       { name: 'Konstrukcja', value: 'Metalowy mechanizm drukujący na metalowej ramie, składane drzwi bifold, okno podglądu mediów' },
       { name: 'Zasilanie', value: 'Wewnętrzne, AC 100–240 V, 50–60 Hz, wyjście DC 24 V / 3,75 A (90 W)' },
       { name: 'Wymiary (S × W × G)', value: '248 × 274 × 436 mm' },
@@ -84331,7 +84333,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       },
       {
         question: 'TSC MB241T czy Zebra ZT231 — którą drukarkę wybrać?',
-        answer: 'TSC MB241T: 305 mm/s, Zebra ZT231: 304 mm/s — praktycznie bez różnicy. TSC MB241T: dotykowy LCD 3,5", składane drzwi bifold (-24% miejsca), grubsze media do 0,28 mm, fabryczna opcja RFID, 256 MB RAM, cena od 2 779 zł. <a href="/produkt/zebra-zt231">Zebra ZT231</a>: dotykowy LCD 4,3", ekosystem Link-OS, opcja RFID, szersze wsparcie serwisowe w PL, cena od 2 551 zł. Wybierz TSC, gdy potrzebujesz bifold door i hang-tagów. Wybierz Zebra, gdy zależy Ci na Link-OS i serwisie.',
+        answer: 'TSC MB241T: 305 mm/s, Zebra ZT231: 304 mm/s — praktycznie bez różnicy. TSC MB241T: dotykowy LCD 3,5", składane drzwi bifold (-24% miejsca), grubsze media do 0,28 mm, 256 MB RAM, cena od 2 779 zł. <a href="/produkt/zebra-zt231">Zebra ZT231</a>: dotykowy LCD 4,3", ekosystem Link-OS, opcja RFID, szersze wsparcie serwisowe w PL, cena od 2 551 zł. Wybierz TSC, gdy potrzebujesz bifold door i hang-tagów. Wybierz Zebra, gdy zależy Ci na Link-OS i serwisie.',
       },
       {
         question: 'Czy TSC MB241T obsługuje druk RFID?',
@@ -84347,7 +84349,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
       },
       {
         question: 'Jakie akcesoria są dostępne do TSC MB241T?',
-        answer: 'Opcje dealer (instalacja serwisowa): gilotyna full cut (CUT-MB240-0001), odklejak peel-off (PEL-MB240-0001), nawijak wewnętrzny 5" OD (REW-MB240-0001), GPIO, linerless tear-off kit, linerless cutter kit, <a href="/produkt/tsc-modul-wifi-bluetooth">moduł Wi-Fi + BT 5.0</a>, RFID tear-off/cutter upgrade. Opcje fabryczne: Bluetooth 5.0 MFi, RFID z tear lub cutter.',
+        answer: 'Opcje dealer (instalacja serwisowa): gilotyna full cut (CUT-MB240-0001), odklejak peel-off (PEL-MB240-0001), nawijak wewnętrzny 5" OD (REW-MB240-0001), GPIO, linerless tear-off kit, linerless cutter kit, <a href="/produkt/tsc-modul-wifi-bluetooth">moduł Wi-Fi + BT 5.0</a>. Opcja fabryczna: Bluetooth 5.0 MFi.',
       },
       {
         question: 'Ile kosztuje TSC MB241T?',
@@ -84441,9 +84443,9 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
 
 Do druku i kodowania etykiet UHF RFID wybierz [TSC MB341TR](/produkt/tsc-mb341tr). Pokazany PN zwykłej MB341T nie obejmuje kodera RFID.
 
-Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości (DataMatrix, QR), etykiety farmaceutyczne, laboratoryjne, jubilerskie i metki odzieżowe wymagające ostrego wydruku. TSC MB341T oferuje te same cechy co MB241T: metalowa konstrukcja, składane drzwi bifold (-24% miejsca), dotykowy LCD 3,5", 256 MB RAM/Flash, emulacja ZPL II/EPL/DPL i opcja RFID UHF.
+Dla firm drukujących małe etykiety z drobnym tekstem, kody 2D o wysokiej gęstości (DataMatrix, QR), etykiety farmaceutyczne, laboratoryjne, jubilerskie i metki odzieżowe wymagające ostrego wydruku. TSC MB341T oferuje te same cechy co MB241T: metalowa konstrukcja, składane drzwi bifold (-24% miejsca), dotykowy LCD 3,5", 256 MB RAM/Flash, emulacja ZPL II/EPL/DPL.
 
-Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth) i RFID UHF. System TSC Sense Care monitoruje przebieg głowicy i integruje się z SOTI Connect do zdalnego zarządzania flotą.`,
+Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", linerless kit, [moduł Wi-Fi + Bluetooth](/produkt/tsc-modul-wifi-bluetooth). System TSC Sense Care monitoruje przebieg głowicy i integruje się z SOTI Connect do zdalnego zarządzania flotą.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'tsc',
@@ -84491,7 +84493,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       { name: 'Kody 2D', value: 'PDF-417, Micro PDF 417, DataMatrix, QR Code, Aztec, MaxiCode, TLC 39' },
       { name: 'Czujniki', value: 'Gap (przerwy), Black Mark (czarna kreska), ribbon encoder, ribbon end, otwarcie głowicy — pozycja regulowana' },
       { name: 'RTC', value: 'Tak (zegar czasu rzeczywistego)' },
-      { name: 'RFID', value: 'Opcja fabryczna: RAIN UHF (GS1 EPC Gen2 v2 / ISO 18000-63), antena zewnętrzna, on-metal do 1,65 mm' },
+      { name: 'RFID', value: 'Brak kodera RFID w pokazanym PN' },
       { name: 'Konstrukcja', value: 'Metalowy mechanizm drukujący na metalowej ramie, składane drzwi bifold, okno podglądu mediów' },
       { name: 'Zasilanie', value: 'Wewnętrzne, AC 100–240 V, 50–60 Hz, wyjście DC 24 V / 3,75 A (90 W)' },
       { name: 'Wymiary (S × W × G)', value: '248 × 274 × 436 mm' },
@@ -84509,7 +84511,6 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       'Etykiety produktowe i magazynowe',
       'Kody kreskowe na liniach produkcyjnych',
       'Etykiety compliance z drobnym drukiem',
-      'Etykiety RFID UHF (opcja fabryczna)',
     ],
     variants: [
       {
@@ -84548,7 +84549,7 @@ Opcje rozbudowy: gilotyna full cut, odklejak peel-off, nawijak wewnętrzny 5", l
       },
       {
         question: 'Jaka jest różnica między TSC MB341T a TSC ML341P?',
-        answer: 'Obie drukarki mają 300 dpi, ale MB341T jest szybsza (305 vs 152 mm/s), ma dotykowy LCD 3,5" (vs 2,3" bez dotyku), obsługuje grubsze media do 0,28 mm (vs 0,19 mm) i oferuje opcje linerless i RFID. <a href="/produkt/tsc-ml341p">ML341P</a> jest niższa (245 vs 274 mm), lżejsza (7,7 vs 9,1 kg) i tańsza (od 2 595 zł). ML341P — kompaktowość, MB341T — szybkość i wszechstronność.',
+        answer: 'Obie drukarki mają 300 dpi, ale MB341T jest szybsza (305 vs 152 mm/s), ma dotykowy LCD 3,5" (vs 2,3" bez dotyku), obsługuje grubsze media do 0,28 mm (vs 0,19 mm) i oferuje opcję linerless. <a href="/produkt/tsc-ml341p">ML341P</a> jest niższa (245 vs 274 mm), lżejsza (7,7 vs 9,1 kg) i tańsza (od 2 595 zł). ML341P — kompaktowość, MB341T — szybkość i wszechstronność.',
       },
       {
         question: 'Czy TSC MB341T obsługuje hang-tagi i grube media?',
