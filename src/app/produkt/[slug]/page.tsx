@@ -807,6 +807,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     alt={`Logo ${manufacturer.name}`}
                     className={manufacturer.slug === 'magicard'
                       ? 'h-12 lg:h-[3.6rem] w-auto'
+                      : manufacturer.slug === 'brady'
+                      ? 'h-7 lg:h-[2.1rem] w-auto'
                       : 'h-10 lg:h-12 w-auto'}
                   />
                 </Link>
