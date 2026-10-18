@@ -7,14 +7,15 @@ export const rfidTerminalCategory: Subcategory = {
   "parentCategoryId": "terminale-mobilne",
   "description": "Terminale mobilne z czytnikiem UHF RFID do inwentaryzacji i identyfikacji towarów.",
   "seoTitle": "Terminale RFID UHF do magazynu i inwentaryzacji | TAKMA",
-  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj Zebra TC22R i EM45 RFID. Europejskie PN, aktualne ceny, stany i akcesoria.",
+  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj Zebra TC22R, TC53e-RFID i EM45 RFID. Europejskie PN, aktualne ceny, stany i akcesoria.",
   "longDescription": "Terminale RFID odczytują znaczniki radiowe bez celowania w kod kreskowy. W tej kategorii znajdziesz terminale Android z wbudowanym czytnikiem UHF do inwentaryzacji, identyfikacji wyposażenia i kontroli towarów. Porównaj zasięg, sposób odczytu kodów oraz łączność. Dobierz wersję europejską i akcesoria do konkretnego modelu.",
   "icon": "smartphone",
   "productIds": [
     "zebra-tc22r",
-    "zebra-em45-rfid"
+    "zebra-em45-rfid",
+    "zebra-tc53e-rfid"
   ],
-  "productCount": 2
+  "productCount": 3
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
@@ -23,7 +24,7 @@ export const rfidTerminalContent: SubcategoryRichContent = {
   updatedAt: '2026-10-18',
   definition: {
     heading: 'Co to jest terminal RFID?',
-    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
+    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal RFID do inwentaryzacji?',

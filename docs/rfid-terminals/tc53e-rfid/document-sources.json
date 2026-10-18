@@ -1,0 +1,23 @@
+[
+  {
+    "path": "/datasheets/zebra-tc53e-rfid-en.pdf",
+    "source": "https://www.jarltech.com/sites/default/files/documents/product/datasheet/en/TC53e_TC58e_EN_0.pdf",
+    "sha256": "0b7f8321ed43562177bdeed540e382cca2bd6aeb3e1c4e996b9b7bc5ab6df606",
+    "bytes": 490244,
+    "retrievedAt": "2026-10-18"
+  },
+  {
+    "path": "/instrukcje/zebra-tc53e-rfid-qs-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/tc53e-rfid-qsg-en.pdf",
+    "sha256": "bbee5f600361e187e0e4b7a82844f1be94491ad6f1b3d5f7f24158805c62cd3a",
+    "bytes": 812499,
+    "retrievedAt": "2026-10-18"
+  },
+  {
+    "path": "/instrukcje/zebra-tc53e-rfid-akcesoria-en.pdf",
+    "source": "https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/tc53-tc58-tc53e-tc58e-tc53e-rfid-guide-accessory-en-us.pdf",
+    "sha256": "8451bb2df4524b00af137632223e5f312d0863cb3d6372ee5fc7889c5fe34543",
+    "bytes": 7035566,
+    "retrievedAt": "2026-10-18"
+  }
+]

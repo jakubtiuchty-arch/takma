@@ -1,6 +1,8 @@
 import type { Product } from './products'
+import { tc53eRfidProduct } from './tc53e-rfid-product'
 
 export const rfidTerminalProducts: Product[] = [
+  tc53eRfidProduct,
   {
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [
