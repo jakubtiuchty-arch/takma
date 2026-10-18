@@ -946,6 +946,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'Zebra', manufacturer: 'zebra' },
         { value: 'Honeywell', manufacturer: 'honeywell' },
+        { value: 'Brady', manufacturer: 'brady' },
       ],
     },
     {
@@ -975,6 +976,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Czy tablet ma wbudowany czytnik kodów.\n• Wbudowany — skanowanie bez dodatkowego urządzenia; magazyn, inwentaryzacja\n• Bez skanera — tablet do aplikacji i dokumentów; kody przez kamerę lub zewnętrzny skaner',
       derived: [
         { value: 'Wbudowany', pattern: '\\S', specs: ['Skaner', 'Skaner kodów'] },
+        { value: 'Bez skanera', slugs: ['brady-rt710'] },
         { value: 'Bez skanera', notSpecs: ['Skaner', 'Skaner kodów'] },
       ],
     },
