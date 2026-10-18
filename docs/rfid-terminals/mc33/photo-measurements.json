@@ -1,0 +1,34 @@
+{
+  "mc3330xr-front-v1.webp": {
+    "canvas": [
+      887,
+      1774
+    ],
+    "objectHeightRatio": 0.811,
+    "objectWidthRatio": 0.561
+  },
+  "mc3390xr-front-v1.webp": {
+    "canvas": [
+      887,
+      1774
+    ],
+    "objectHeightRatio": 0.838,
+    "objectWidthRatio": 0.531
+  },
+  "tc53e-rfid-front-straight-v2.webp": {
+    "canvas": [
+      887,
+      1774
+    ],
+    "objectHeightRatio": 0.805,
+    "objectWidthRatio": 0.754
+  },
+  "zebra-mc3400_1.png": {
+    "canvas": [
+      600,
+      1200
+    ],
+    "objectHeightRatio": 0.901,
+    "objectWidthRatio": 0.635
+  }
+}

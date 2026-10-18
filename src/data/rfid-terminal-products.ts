@@ -1,7 +1,9 @@
 import type { Product } from './products'
 import { tc53eRfidProduct } from './tc53e-rfid-product'
+import { mc33RfidProducts, mc33RfidAccessories } from './mc33-rfid-products'
 
 export const rfidTerminalProducts: Product[] = [
+  ...mc33RfidProducts,
   tc53eRfidProduct,
   {
     "categoryId": "terminale-mobilne",
@@ -433,6 +435,7 @@ export const rfidTerminalProducts: Product[] = [
 ]
 
 export const rfidTerminalAccessories: Product[] = [
+  ...mc33RfidAccessories,
   {
     "id": "zebra-tc22r-cradle-1slot",
     "slug": "zebra-tc22r-cradle-1slot",

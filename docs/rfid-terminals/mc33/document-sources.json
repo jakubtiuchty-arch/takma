@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/datasheets/zebra-mc3330xr-en.pdf",
+    "source": "https://www.jarltech.com/sites/default/files/documents/product/datasheet/en/zebra_mc3300.pdf",
+    "bytes": 343305,
+    "sha256": "bb5b90c7b1dc71bb29cc81b66a88988f30e125bbaf01c9ada6339b9633034b6e",
+    "retrievedAt": "2026-10-18",
+    "note": "Oryginalne strony 5–8 zestawienia; treść stron bez zmian."
+  },
+  {
+    "path": "/datasheets/zebra-mc3390xr-en.pdf",
+    "source": "https://rfid4ustore.com/content/data_sheet/mc3390xr-spec-sheet-en-us.pdf",
+    "bytes": 1215822,
+    "sha256": "b7ad40af85203c4c81afa88ef3550d121a948a759b3167053b681a6208e1f8bb",
+    "retrievedAt": "2026-10-18",
+    "note": "Oryginalny PDF Zebra."
+  },
+  {
+    "path": "/instrukcje/zebra-mc3330xr-qs-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/mc3330xr-qrg-en.pdf",
+    "bytes": 4906364,
+    "sha256": "01466895162c680f1844658e05475f08f0bf6f01f9fb98d37e0186026fc76cde",
+    "retrievedAt": "2026-10-18",
+    "note": ""
+  },
+  {
+    "path": "/instrukcje/zebra-mc3390xr-qs-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/mc3390xr-qrg-en.pdf",
+    "bytes": 4395157,
+    "sha256": "e0888df0427659837d3b256c7476ec4b532fe88cb9e5e7dc23a2de68c16498fe",
+    "retrievedAt": "2026-10-18",
+    "note": ""
+  },
+  {
+    "path": "/instrukcje/zebra-mc3300xr-akcesoria-en.pdf",
+    "source": "https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/mc3300r-series-accessory-guide-en-us.pdf",
+    "bytes": 914109,
+    "sha256": "4ccf296f09307cb8b9e3da40060c5d4e43cf1cd94b55cba1f59cc69e11fa13db",
+    "retrievedAt": "2026-10-18",
+    "note": ""
+  },
+  {
+    "path": "/instrukcje/zebra-mc3300xr-integracja-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/mc3300xr-ig.pdf",
+    "bytes": 10921143,
+    "sha256": "5a846b156f7ef8be76531ff4e21a0abf3e631d10b27071c9e6f7613186dd42c9",
+    "retrievedAt": "2026-10-18",
+    "note": ""
+  }
+]
