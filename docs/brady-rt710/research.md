@@ -45,7 +45,7 @@ Dodano dwie potwierdzone fotografie:
 - MBL-HDST-USBC: https://www.midwestbarcodingsolutions.com/mbl-hdst-usbc/ — zdjęcie https://cdn11.bigcommerce.com/s-tjvqt45f8d/images/stencil/500x659/products/153935/460577/mbl-hdst-usbc__95473.1761678299.jpg?c=1 . Potwierdzenie wyglądu i PN także w [katalogu CT32 producenta](https://www.bluestarinc.com/hubfs/CT32%20Accessory%20Guide.pdf?hsLang=en-us).
 - 340-053-003-DB9P: https://www.atlasrfidstore.com/honeywell-rugged-keyboard-for-honeywell-vehicle-docks/ — zdjęcie https://cdn11.bigcommerce.com/s-ka7ofex/images/stencil/1280w/products/5468/22648/Honeywell_Rugged_Keyboard_For_Honeywell_Vehicle_Docks__52113.1745249016.png?c=2 . Potwierdzenie PN także w [katalogu Thor producenta](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/vehicle-mount-computers/common/documents/sps-ppr-thor-vm-series-accessories-guide-en.pdf).
 
-Imagen dostosował białe marginesy, następnie WebP jakości 92. Pola zdjęć i komponenty pozostają standardowe. Porównano fotografie ze zdjęciami RT10-PWR i RT10-HS-1; kontrola objęła także faktyczną wielkość części w polu oraz rozwijanie 4 → 15 → 4 akcesoriów.
+Próba dopasowania marginesów przez Imagen zmieniała oznaczenia klawiszy, więc wynik odrzucono. Zachowano fotografie źródłowe bez zmian konstrukcji i kompozycji; zapis WebP jakości 95. Skalę ustawia istniejący mechanizm product-image-frames, używany już przez inne akcesoria. Pola zdjęć i komponenty pozostają standardowe. Porównano fotografie ze zdjęciami RT10-PWR i RT10-HS-1; kontrola objęła także faktyczną wielkość części w polu oraz rozwijanie 4 → 15 → 4 akcesoriów.
 
 ### Pozostałe fotografie — nierozwiązane
 
