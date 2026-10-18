@@ -1,4 +1,6 @@
 {
   "front": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web004/tc53e-tc53e-rfid-photography-website-front-right-facing-3x2-3600.jpg",
-  "back": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web004/tc53e-rfid-photography-website-back-3x2-3600.jpg"
+  "back": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web004/tc53e-rfid-photography-website-back-3x2-3600.jpg",
+  "front-straight": "https://www.jarltech.com/sites/default/files/images/product/main/ZEB_TC53e_TC58e_black_front_shop.png",
+  "front-straight-selection": "Lewy terminal Wi-Fi, bez oznaczenia 5G; pojedyncze urządzenie wyodrębnione w image_gen, widok na wprost."
 }

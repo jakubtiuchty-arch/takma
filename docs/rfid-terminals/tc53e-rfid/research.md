@@ -13,3 +13,7 @@ Dokumenty w oryginale na serwerze TAKMA; pochodzenie i SHA256 w document-sources
 ## Kontrola zdjęć i wyglądu
 
 Zdjęcia przód/tył dopasowane w image_gen bez zmiany konstrukcji urządzenia. Kadr 887 × 1774 px; wysokość widocznego urządzenia: przód 83,0%, tył 81,3%. Wzorce: EM45 RFID 81,6%, zwykły TC53e 87,8%. Porównano standardowe pola galerii oraz kafelki w kategorii. Użyto istniejących komponentów, akcesoria początkowo 4 i rozwijanie 22/zwijanie 4.
+
+### Korekta zdjęcia głównego
+
+Na polecenie użytkownika główny kadr zmieniono na widok na wprost. Źródło Jarltech ZEB_TC53e_TC58e_black_front_shop.png: wybrano lewy model Wi-Fi bez oznaczenia 5G. image_gen wyodrębnił pojedynczy terminal i dopasował białe marginesy. Kadr 887 × 1774 px; obiekt zajmuje 80,5% wysokości i 75,5% szerokości. Wzorzec EM45 RFID: 81,6% i 77,8%; zwykły TC53e: 87,8% i 85,0%. Zdjęcie pod kątem zachowano jako drugie, tył jako trzecie.

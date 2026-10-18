@@ -144,10 +144,12 @@ export const tc53eRfidProduct: Product = {
   ],
   "priceFrom": 7863.48,
   "images": [
+    "/images/products/tc53e-rfid-front-straight-v2.webp",
     "/images/products/tc53e-rfid-front-v1.webp",
     "/images/products/tc53e-rfid-back-v1.webp"
   ],
   "imageDescriptions": [
+    "Zebra TC53e-RFID — widok z przodu na wprost",
     "Zebra TC53e-RFID — ekran i skaner SE4720, widok z przodu pod kątem",
     "Zebra TC53e-RFID — tylna obudowa z oznaczeniem UHF RFID"
   ],
