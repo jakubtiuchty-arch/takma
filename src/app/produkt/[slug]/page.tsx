@@ -62,6 +62,7 @@ import { endOfSaleFor } from '@/data/end-of-sale'
 import PriceIncreaseNotice from './PriceIncreaseNotice'
 import { priceIncreaseFor } from '@/data/price-increase'
 import ZipShipBanner from '@/components/promo/ZipShipBanner'
+import BrotherTjPromoBanner from '@/components/promo/BrotherTjPromoBanner'
 import MagicardHubBanner from '@/components/promo/MagicardHubBanner'
 import Ds3678DemoBanner from '@/components/promo/Ds3678DemoBanner'
 import { SmartPriceProvider } from './SmartPriceContext'
@@ -1054,6 +1055,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {(isThermalLabel || isTransferLabel || isRibbonProduct(product)) && (
               <ZipShipBanner context={product.name} variant="card" />
             )}
+
+            {/* Promocja Brother TJ 300 dpi — rabat do 50%, cena w wycenie */}
+            <BrotherTjPromoBanner productSlug={product.slug} productName={product.name} />
 
             {/* Program testów DS3678 — tylko 5 wariantów tej rodziny, znika po zebraniu puli */}
             <Ds3678DemoBanner productSlug={product.slug} />

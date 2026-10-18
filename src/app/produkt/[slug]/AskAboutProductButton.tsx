@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { MailIcon, CloseIcon, CheckIcon } from '@/components/ui/Icons'
 import Turnstile from '@/components/Turnstile'
-import { KODY_RABATOWE_AUTO } from '@/data/promos'
+import { KODY_RABATOWE_AUTO, activePromo } from '@/data/promos'
 import { trackGenerateLead, trackFormSubmit, trackPromoCodeIssued } from '@/lib/ga-events'
 
 interface AskAboutProductButtonProps {
@@ -48,6 +48,9 @@ function InquiryModal({
   )
   const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
+  // tylko odpowiedź API mówi, czy kod naprawdę wyszedł (ZipShip i promocje po terminie go nie dostają)
+  const [kodWyslany, setKodWyslany] = useState(false)
+  const kodRabatowy = promo && KODY_RABATOWE_AUTO && !!activePromo(productSlug)
   const [loadedAt] = useState(() => Date.now())
   const [turnstileToken, setTurnstileToken] = useState('')
   const nameRef = useRef<HTMLInputElement>(null)
@@ -86,10 +89,11 @@ function InquiryModal({
         body: JSON.stringify({ name, email, phone, message, productName, productSlug, promo, _ts: loadedAt, _hp: '', turnstileToken }),
       })
       if (res.ok) {
+        const dane = await res.json().catch(() => null)
+        setKodWyslany(!!dane?.kod)
         setStatus('done')
         trackGenerateLead(promo ? `zamowienie_promo_${productSlug}` : `zapytanie_produkt_${productSlug}`)
         trackFormSubmit(promo ? 'zamowienie_promo' : 'zapytanie_produkt', `/produkt/${productSlug}`)
-        const dane = await res.json().catch(() => null)
         if (dane?.kod) trackPromoCodeIssued(productSlug)
       } else {
         setStatus('error')
@@ -140,12 +144,14 @@ function InquiryModal({
               <CheckIcon size={28} className="text-green-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              {promo && KODY_RABATOWE_AUTO ? 'Kod jest w drodze' : 'Zapytanie wysłane'}
+              {kodWyslany ? 'Kod jest w drodze' : 'Zapytanie wysłane'}
             </h3>
             <p className="text-sm text-gray-500 mb-6">
-              {promo && KODY_RABATOWE_AUTO
+              {kodWyslany
                 ? 'Wysłaliśmy na Twój adres kod rabatowy wraz z instrukcją zamówienia. Sprawdź skrzynkę — wiadomość dociera w ciągu kilku minut.'
-                : 'Odpowiemy najszybciej jak to możliwe — zwykle w ciągu 1 godziny roboczej.'}
+                : promo
+                  ? 'Dziękujemy. Odeślemy wycenę w ciągu jednego dnia roboczego.'
+                  : 'Odpowiemy najszybciej jak to możliwe — zwykle w ciągu 1 godziny roboczej.'}
             </p>
             <button
               onClick={onClose}
@@ -157,7 +163,7 @@ function InquiryModal({
         ) : (
           <form onSubmit={handleSubmit} className="px-4 py-4 sm:px-6 sm:py-5 space-y-3 sm:space-y-4">
             <p className="text-sm text-gray-500 -mt-1">
-              {promo && KODY_RABATOWE_AUTO
+              {kodRabatowy
                 ? 'Wypełnij formularz, a wyślemy Ci kod rabatowy do zamówienia w cenie promocyjnej.'
                 : 'Wypełnij formularz, a nasz doradca skontaktuje się z Tobą.'}
             </p>

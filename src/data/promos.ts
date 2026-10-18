@@ -136,3 +136,25 @@ export function ds3678DemoActive(): boolean {
 export function ds3678DemoSlotsLeft(): number {
   return Math.max(0, DS3678_DEMO.slots - DS3678_DEMO.slotsTaken)
 }
+
+/**
+ * Promocja Brother na półprzemysłowe drukarki TJ 300 dpi: rabat do 50% od ceny
+ * z karty. Ceny na karcie zostają bez zmian, cenę promocyjną podajemy w wycenie.
+ * Daty liczone po kalendarzu w Europe/Warsaw (start od początku dnia, koniec
+ * po całym dniu endDate). `endDate: null` = bez daty końca.
+ */
+export const BROTHER_TJ_PROMO = {
+  slugs: ['brother-tj-4120tn', 'brother-tj-4121tn'],
+  percent: 50,
+  startDate: '2026-10-18',
+  endDate: null as string | null,
+}
+
+export function brotherTjPromoFor(productSlug: string, now = Date.now()): typeof BROTHER_TJ_PROMO | null {
+  if (!BROTHER_TJ_PROMO.slugs.includes(productSlug)) return null
+  // 'sv-SE' formatuje datę jako RRRR-MM-DD, więc porównujemy zwykłe napisy
+  const dzis = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Warsaw' }).format(now)
+  if (dzis < BROTHER_TJ_PROMO.startDate) return null
+  if (BROTHER_TJ_PROMO.endDate && dzis > BROTHER_TJ_PROMO.endDate) return null
+  return BROTHER_TJ_PROMO
+}
