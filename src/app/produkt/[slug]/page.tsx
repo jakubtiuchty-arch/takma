@@ -1527,7 +1527,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
                 // Fallback — standardowy renderer dla pozostałych produktów
                 return (
-                  <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
+                  <div className={`prose prose-gray max-w-none text-[15px] leading-relaxed ${product.id === 'zebra-ws501-r' ? '[&_a]:!no-underline [&_a]:font-semibold' : ''}`}>
                     {descriptionForDisplay.split('\n\n').filter(paragraph => paragraph.trim()).map((paragraph, i) => {
                   const trimmed = paragraph.trim()
 
