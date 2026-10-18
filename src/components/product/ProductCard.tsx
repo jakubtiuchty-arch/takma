@@ -58,6 +58,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const manufacturer = getManufacturerById(product.manufacturerId)
   const inRFQ = mounted ? isInCart(product.id) : false
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
+  const placeholderLogo = product.manufacturerId === 'brady' && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
@@ -164,6 +165,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         >
           {hasRealImage ? (
             <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" style={getProductImageFrameStyle(product.images[0])} sizes="96px" />
+          ) : placeholderLogo ? (
+            <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 h-auto grayscale opacity-30" />
           ) : (
             <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
           )}
@@ -280,6 +283,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       >
         {hasRealImage ? (
           <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
+        ) : placeholderLogo ? (
+          <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
         ) : (
           <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}
