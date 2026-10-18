@@ -1,0 +1,35 @@
+{
+  "ws501r-main-v1.webp": {
+    "canvas": [
+      1254,
+      1254
+    ],
+    "objectBoundsPixels": [
+      1098,
+      1050
+    ],
+    "objectLongSideIn584pxHero": 483.3
+  },
+  "zebra-mc3400_1.png": {
+    "canvas": [
+      600,
+      1200
+    ],
+    "objectBoundsPixels": [
+      381,
+      1081
+    ],
+    "objectLongSideIn584pxHero": 497.3
+  },
+  "tc53e-rfid-front-straight-v2.webp": {
+    "canvas": [
+      887,
+      1774
+    ],
+    "objectBoundsPixels": [
+      669,
+      1428
+    ],
+    "objectLongSideIn584pxHero": 444.3
+  }
+}

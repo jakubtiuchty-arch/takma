@@ -11,7 +11,7 @@ export function isZebraTerminalProduct(product: Pick<Product, 'manufacturerId' |
 }
 
 export function isZebraTerminalSlug(slug: string) {
-  return slug === 'zebra-tc53e-rfid' || slug === 'zebra-em45-rfid' || /^zebra-(?:tc|mc|hc|em)\d+[a-z]*$/.test(slug)
+  return slug === 'zebra-ws501-r' || slug === 'zebra-tc53e-rfid' || slug === 'zebra-em45-rfid' || /^zebra-(?:tc|mc|hc|em)\d+[a-z]*$/.test(slug)
 }
 
 /** Koszt realizacji zamówienia: preferuj dostawcę, który ma daną konfigurację. */

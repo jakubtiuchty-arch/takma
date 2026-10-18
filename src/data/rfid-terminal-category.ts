@@ -15,9 +15,10 @@ export const rfidTerminalCategory: Subcategory = {
     "zebra-em45-rfid",
     "zebra-tc53e-rfid",
     "zebra-mc3330xr",
-    "zebra-mc3390xr"
+    "zebra-mc3390xr",
+    "zebra-ws501-r"
   ],
-  "productCount": 5
+  "productCount": 6
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
@@ -26,7 +27,7 @@ export const rfidTerminalContent: SubcategoryRichContent = {
   updatedAt: '2026-10-18',
   definition: {
     heading: 'Co to jest terminal RFID?',
-    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
+    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal RFID do inwentaryzacji?',

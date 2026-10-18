@@ -1,0 +1,19 @@
+{
+  "main": {
+    "source": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-graphics/spec-sheet-assets/ws501-r-spec-sheet-asset-photography.jpg.imgo.jpg",
+    "processing": "image_gen: wyodrębnienie środkowego widoku z mocowaniem BOH, białe tło; WebP"
+  },
+  "angle": {
+    "source": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web008/ws501-rfid-photography-website-product-back-right-3x2-3600.jpg",
+    "processing": "image_gen: białe marginesy; WebP. Przykładowe mocowanie na palce opisane w alt."
+  },
+  "accessorySource": "https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/ws50-guide-accessory-en-us.pdf",
+  "accessories": {
+    "CRD-WS5X-2SRD-01": "Oryginalny obraz 46, strona 8",
+    "CRD-WS5X-10SRD-01": "Oryginalny obraz 51, strona 9; image_gen: białe tło i dodatkowe marginesy",
+    "BTRY-WS5X-24MA-01": "Oryginalny obraz 82, strona 12",
+    "SAC-WS5X-4S24-01": "Oryginalny obraz 67, strona 11",
+    "SAC-WS5X-20S24-01": "Oryginalny obraz 75, strona 12",
+    "CBL-WS5X-USBA-01": "https://www.ers-online.co.uk/files/products/images/20898_cbl-ws5x-usba-01.jpg"
+  }
+}

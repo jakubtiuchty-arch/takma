@@ -2,7 +2,7 @@ import type { Product } from '@/data/products'
 
 export const accessoryModelIds = [
   'zebra-et65', 'zebra-et65w', 'zebra-tc201', 'zebra-tc22', 'zebra-tc27',
-  'zebra-mc3330xr', 'zebra-mc3390xr', 'zebra-mc3400', 'zebra-mc3450', 'zebra-mc9400', 'zebra-mc9450',
+  'zebra-ws501-r', 'zebra-mc3330xr', 'zebra-mc3390xr', 'zebra-mc3400', 'zebra-mc3450', 'zebra-mc9400', 'zebra-mc9450',
   'zebra-tc53', 'zebra-tc58', 'zebra-tc53e', 'zebra-tc53e-rfid', 'zebra-tc58e',
   'zebra-tc73', 'zebra-tc78', 'zebra-tc501', 'zebra-tc701',
 ]

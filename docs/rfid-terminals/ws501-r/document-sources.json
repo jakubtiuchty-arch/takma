@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/datasheets/zebra-ws501-r-en.pdf",
+    "source": "https://productphoto.tecsys.dk/DOCUMENTS/ZEB/ws501-r-spec-sheet-en-us.pdf",
+    "sha256": "e0cb3a85791cd0546514e1901c0b9bfeb8b4bce55df00aac045dd80b248e8d10",
+    "bytes": 154598,
+    "retrievedAt": "2026-10-18"
+  },
+  {
+    "path": "/instrukcje/zebra-ws501-r-obsluga-en.pdf",
+    "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/ws501rfid-prg-en.pdf",
+    "sha256": "80d270221d1e4ee339184f344870062efd34cd7289d4486bdbf0c04b4c4a2be3",
+    "bytes": 4448755,
+    "retrievedAt": "2026-10-18"
+  }
+]
