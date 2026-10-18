@@ -1,0 +1,508 @@
+[
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-left-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-left-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-left-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-left-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-right-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-right-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-right-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-right-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-top-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-top-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-top-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-top-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-back-right-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-right-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-right-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-back-right-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-right-top-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-right-top-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-right-top-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-right-top-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-front-left-top-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-left-top-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-front-left-top-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-front-left-top-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-right-view",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-right-view-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-right-view-no-shadow.tif",
+    "image": "/images/products/tc22r-right-view-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-left-view",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-left-view-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-left-view-no-shadow.tif",
+    "image": "/images/products/tc22r-left-view-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-back-left-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-left-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-left-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-back-left-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-top-view",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-top-view-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-top-view-no-shadow.tif",
+    "image": "/images/products/tc22r-top-view-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "tc22r",
+    "name": "tc22r-back-facing",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-facing-no-shadow.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/tc22r-photography-product-back-facing-no-shadow.tif",
+    "image": "/images/products/tc22r-back-facing-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-utility-front",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front.png",
+    "image": "/images/products/em45-rfid-utility-front-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-utility-front-left",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front-left.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front-left.png",
+    "image": "/images/products/em45-rfid-utility-front-left-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-utility-front-right",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front-right.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-front-right.png",
+    "image": "/images/products/em45-rfid-utility-front-right-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-utility-back-left",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-back-left.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-back-left.png",
+    "image": "/images/products/em45-rfid-utility-back-left-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-utility-back-right",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-back-right.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-utility-back-right.png",
+    "image": "/images/products/em45-rfid-utility-back-right-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-beauty-front-back",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-front-back.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-front-back.png",
+    "image": "/images/products/em45-rfid-beauty-front-back-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-beauty-camera-ports",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-camera-ports.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-camera-ports.png",
+    "image": "/images/products/em45-rfid-beauty-camera-ports-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-beauty-back-to-back",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-back-to-back.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0025/em45-rfid-photography-product-render-beauty-back-to-back.png",
+    "image": "/images/products/em45-rfid-beauty-back-to-back-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-horizontal",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-horizontal.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-horizontal.png",
+    "image": "/images/products/em45-rfid-original-back-horizontal-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-tilted-left-fragment",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-tilted-left-fragment.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-tilted-left-fragment.tif",
+    "image": "/images/products/em45-rfid-original-back-tilted-left-fragment-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-fragment",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-fragment.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-fragment.png",
+    "image": "/images/products/em45-rfid-original-back-fragment-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-top-fragment",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-fragment.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-fragment.png",
+    "image": "/images/products/em45-rfid-original-back-top-fragment-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-collaboration",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-collaboration.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-collaboration.tif",
+    "image": "/images/products/em45-rfid-original-collaboration-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-with-shadow",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-with-shadow.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-with-shadow.png",
+    "image": "/images/products/em45-rfid-original-back-with-shadow-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-top-bottom",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-bottom.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-bottom.png",
+    "image": "/images/products/em45-rfid-original-back-top-bottom-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-bottom",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-bottom.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-bottom.png",
+    "image": "/images/products/em45-rfid-original-bottom-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front.tif",
+    "image": "/images/products/em45-rfid-original-front-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front-back-chat",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back-chat.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back-chat.png",
+    "image": "/images/products/em45-rfid-original-front-back-chat-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front-left",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-left.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-left.png",
+    "image": "/images/products/em45-rfid-original-front-left-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-item-found",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-item-found.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-item-found.png",
+    "image": "/images/products/em45-rfid-original-item-found-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back-top-down",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-down.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back-top-down.png",
+    "image": "/images/products/em45-rfid-original-back-top-down-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front-right",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-right.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-right.png",
+    "image": "/images/products/em45-rfid-original-front-right-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-locating-items",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-locating-items.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-locating-items.png",
+    "image": "/images/products/em45-rfid-original-locating-items-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-left",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-left.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-left.tif",
+    "image": "/images/products/em45-rfid-original-left-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-nfc-payment",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-nfc-payment.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-nfc-payment.png",
+    "image": "/images/products/em45-rfid-original-nfc-payment-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-tap-to-pay",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-tap-to-pay.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-tap-to-pay.png",
+    "image": "/images/products/em45-rfid-original-tap-to-pay-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-right",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-right.tif",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-right.tif",
+    "image": "/images/products/em45-rfid-original-right-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-ptt",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-ptt.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-ptt.png",
+    "image": "/images/products/em45-rfid-original-ptt-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-beauty",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product.png",
+    "image": "/images/products/em45-rfid-original-beauty-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-back",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-back.png",
+    "image": "/images/products/em45-rfid-original-back-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front-back-combined",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back-combined.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back-combined.png",
+    "image": "/images/products/em45-rfid-original-front-back-combined-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-stacked",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-stacked.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-stacked.png",
+    "image": "/images/products/em45-rfid-original-stacked-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-front-back",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-front-back.png",
+    "image": "/images/products/em45-rfid-original-front-back-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  },
+  {
+    "model": "em45-rfid",
+    "name": "em45-rfid-original-top",
+    "asset": "/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-top.png",
+    "source": "https://medialibrary.zebra.com/content/media-library/en/partner/details/image.html/content/dam/zebra_dam/global/photography/product/0021/em45-rfid-beauty-product-top.png",
+    "image": "/images/products/em45-rfid-original-top-media-v2.webp",
+    "dimensions": [
+      887,
+      1774
+    ]
+  }
+]
