@@ -60,3 +60,13 @@ Dla 13 pozostałych PN nie znaleziono potwierdzonych osobnych fotografii częśc
 - POSGuys RT710-BTEC-001, RT710-SP-1, RT710-VD-KB4, RT710-3PN-PWRCVRT: „Image Unavailable”.
 
 Brakujące PN: RT710-BTSC-001, RT710-BTEC-001, RT710-CD, RT710-DD, RT710-VD-TH1, RT710-VD-VS1, RT710-VD-KB1, RT710-VD-KB2, RT710-VD-KB4, RT710-SP-1, RT710-MNT-VS, USBC-2-HDMI, RT710-3PN-PWRCVRT. Bez wymyślania konstrukcji, zdjęć starszego RT10 ani podstawiania grafiki marki za zdjęcie akcesorium.
+
+## Lokalne dokumenty do pobrania — 18.10.2026
+
+Trzy pliki PDF pobrane 18.10.2026 z adresów producenta wymienionych powyżej są teraz zapisane w repozytorium bez zmian treści:
+
+- Karta katalogowa, Rev A 08/26: `/datasheets/brady-rt710-en.pdf`.
+- Instrukcja uruchomienia: `/instrukcje/brady-rt710-qs-en.pdf`.
+- Informacje o bateriach, Rev A: `/instrukcje/brady-rt710-baterie-en-de.pdf`.
+
+Sprawdzono nagłówek `%PDF-`, odczyt metadanych i struktury przez pdfinfo. Karta RT710 używa lokalnych adresów. Źródła producenta pozostają wyłącznie w dokumentacji roboczej.

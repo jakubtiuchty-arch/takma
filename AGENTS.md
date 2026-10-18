@@ -22,3 +22,9 @@
 - Produkcję wdrażaj wyłącznie z Gita, z tej gałęzi. Nie uruchamiaj lokalnych wdrożeń produkcyjnych przez `vercel --prod`, `vercel deploy --prod`, `--prebuilt --prod` ani ręcznego promowania lokalnego wdrożenia.
 - Przed pushem pobierz aktualny stan gałęzi i zachowaj zmiany dodane przez innych. Funkcje przeznaczone na produkcję muszą być zapisane w repozytorium; nie mogą istnieć wyłącznie w osobnym folderze roboczym.
 - Widok `/admin/etykiety-na-magazynie`, jego pozycja w menu i obsługa danych są częścią strony produkcyjnej. Przy kolejnych zmianach zachowaj je na gałęzi produkcyjnej i sprawdź ich obecność we wdrożeniu z Gita.
+
+## Pliki do pobrania
+
+- Nowe dokumenty do pobrania zapisuj na infrastrukturze TAKMA, np. w `public/datasheets/` lub `public/instrukcje/`, i podpinaj lokalne adresy. Nie kieruj przycisków pobierania PDF do serwerów producentów ani dystrybutorów.
+- Zachowuj oryginalną treść dokumentów. Adres źródłowy, wersję i datę pozyskania zapisuj w dokumentacji roboczej.
+- Przed publikacją sprawdź, czy plik jest rzeczywistym PDF, a nie stroną błędu HTML. Po wdrożeniu sprawdź pobieranie z domeny TAKMA, kod 200 i typ pliku. Nie dodawaj odnośnika do dokumentu, którego nie udało się pozyskać.

@@ -202,19 +202,19 @@ export const bradyRt710Products: Product[] = [
       {
         "name": "Karta katalogowa Brady RT710 (EN)",
         "type": "datasheet",
-        "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/tablets/rt10/documents/brady-ips-rt710-datasheet-ltr1.pdf",
+        "url": "/datasheets/brady-rt710-en.pdf",
         "size": "PDF"
       },
       {
         "name": "Instrukcja uruchomienia RT710 (EN)",
         "type": "manual",
-        "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/tablets/rt10/documents/brady-ips-rt710-a-en-6qs.pdf",
+        "url": "/instrukcje/brady-rt710-qs-en.pdf",
         "size": "PDF"
       },
       {
         "name": "Informacje o bateriach RT710 (EN i DE)",
         "type": "manual",
-        "url": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/tablets/rt10/documents/brady-ips-rt710-bat-ml-in.pdf",
+        "url": "/instrukcje/brady-rt710-baterie-en-de.pdf",
         "size": "PDF"
       }
     ],
