@@ -240,7 +240,7 @@ export const ws501RAccessories: Product[] = [
     "manufacturerId": "zebra",
     "priceFrom": 471.05,
     "images": [
-      "/images/products/ws501r-battery-2400-v1.webp"
+      "/images/products/ws501r-battery-2400-v2.webp"
     ],
     "imageDescriptions": [
       "Bateria 2400 mAh Zebra WS501-R — BTRY-WS5X-24MA-01"
