@@ -35,8 +35,8 @@ export const zq521RfidExistingAccessorySlugs = [
 
 export const zq521RfidProduct: Product = {
   id: 'zebra-zq521-rfid', slug: 'zebra-zq521-rfid', name: 'Zebra ZQ521 RFID', seoH1: 'Zebra ZQ521 RFID',
-  seoTitle: 'Zebra ZQ521 RFID — mobilna drukarka i koder UHF',
-  seoDescription: 'Zebra ZQ521 RFID drukuje i koduje etykiety UHF przy towarze. PN ZQ52-BUW030E-00, druk do 104 mm, Wi-Fi i Bluetooth. Sprawdź cenę oraz akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZQ521 RFID — drukarka RFID UHF 203 dpi',
+  seoDescription: 'Zebra ZQ521 RFID: mobilna drukarka i koder UHF 203 dpi do etykiet 4-calowych. Nadruk do 104 mm, Wi-Fi i Bluetooth, IP54, bateria PowerPrecision+.',
   shortDescription: 'Mobilna drukarka i koder RAIN UHF RFID. Druk do 104 mm, Wi-Fi 802.11ac, Bluetooth 4.1, bateria 3250 mAh i obudowa IP54.',
   description: `Zebra ZQ521 RFID to mobilna drukarka termiczna z koderem RAIN UHF RFID. Drukuje etykietę i zapisuje jej identyfikator bezpośrednio przy towarze.
 
@@ -44,7 +44,7 @@ export const zq521RfidProduct: Product = {
 
 Drukarka służy do oznaczania kartonów, pojemników, części i wyposażenia. Pracownik może przygotować etykietę w miejscu jej naklejenia. Kodowanie obsługuje UHF EPC Gen2 v2, ISO/IEC 18000-63 i RAIN RFID. Technologia Adaptive Encoding ułatwia kalibrację wkładki RFID.
 
-Dla zgodnych etykiet minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem sprawdź zapis i odczyt na docelowej powierzchni. Powiąż identyfikator EPC z rekordem w systemie magazynowym i ustal obsługę błędnego kodowania.
+Dla zgodnych etykiet minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem zakoduj kilka etykiet próbnych na docelowej powierzchni. Powiąż identyfikator EPC z rekordem w systemie magazynowym i ustal obsługę błędnego kodowania.
 
 ZQ521 RFID koduje i sprawdza etykietę w torze materiałów. Do radiowej inwentaryzacji całej półki potrzebujesz osobnego czytnika UHF i oprogramowania.
 
@@ -56,7 +56,7 @@ Wi-Fi pracuje w pasmach 2,4 i 5 GHz. Dwa interfejsy radiowe mogą działać jedn
 
 ## Etykiety z czarnym znacznikiem
 
-Wersja RFID wymaga materiału z czarnym znacznikiem. Nie wykrywa przerw między etykietami. Sprawdź położenie znacznika i wkładki RFID, szerokość materiału oraz średnicę rolki. Oferowany PN jest przeznaczony do etykiet z podkładem.
+Wersja RFID wymaga materiału z czarnym znacznikiem. Nie wykrywa przerw między etykietami. Oferowany PN jest przeznaczony do etykiet z podkładem. Mobilne rolki RFID są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam format etykiety i gilzę. Dobierzemy rolkę do ZQ521 RFID o średnicy do 57 mm i sprawdzimy położenie wkładki.
 
 ZQ521 RFID drukuje termicznie bezpośrednio, bez taśmy barwiącej. Rozdzielczość wynosi 203 dpi, a maksymalna szerokość nadruku 104 mm. Szerokość materiału wynosi 50,8–113 mm, a średnica rolki do 57 mm. Maksymalna prędkość 127 mm/s dotyczy włączonego trybu Draft Mode. Kodowanie RFID może zmniejszyć wydajność zadania.
 
@@ -64,7 +64,7 @@ ZQ521 RFID drukuje termicznie bezpośrednio, bez taśmy barwiącej. Rozdzielczo�
 
 Wymienna bateria PowerPrecision+ ma nominalnie 3250 mAh. Opcjonalna bateria rozszerzona ma 6500 mAh. Czas pracy zależy od formatu etykiety, nadruku, kodowania, połączeń i temperatury. Ekran LCD pokazuje stan baterii i połączeń. Link-OS wspiera konfigurację i zarządzanie drukarką.
 
-Drukarka waży około 0,79 kg z baterią standardową. Ma klasę IP54 i odporność na upadki z 2,1 m na beton. Pracuje w temperaturze od −20 do 55°C. Opcjonalny [egzoszkielet P1063406-044](/produkt/zebra-egzoszkielet-zq521) zwiększa ochronę do IP65 i odporność na upadki do 3 m. Dobierz także etykietę do warunków pracy.
+Drukarka waży około 0,79 kg z baterią standardową. Ma klasę IP54 i odporność na upadki z 2 m na beton. Pracuje w temperaturze od −20 do 55°C. Opcjonalny [egzoszkielet P1063406-044](/produkt/zebra-egzoszkielet-zq521) zwiększa ochronę do IP65 i odporność na upadki do 3 m. Dobierz także etykietę do warunków pracy.
 
 ## Ładowanie i wyposażenie
 
@@ -101,7 +101,7 @@ Gwarancja na drukarkę wynosi 24 miesiące, a na baterię 12 miesięcy. Głowica
     { name: 'Pamięć', value: '256 MB RAM, 512 MB Flash; użytkownik: 8 MB RAM i 64 MB Flash' },
     { name: 'System i języki', value: 'Link-OS; CPCL, ZPL, ZBI 2.x' },
     { name: 'Klasa ochrony', value: 'IP54; IP65 z opcjonalnym egzoszkieletem' },
-    { name: 'Odporność na upadki', value: '2,1 m na beton; do 3 m z egzoszkieletem' },
+    { name: 'Odporność na upadki', value: '2 m na beton; do 3 m z egzoszkieletem' },
     { name: 'Temperatura pracy', value: '−20 do 55°C' },
     { name: 'Wymiary (dł. × szer. × wys.)', value: '158 × 155 × 67 mm' },
     { name: 'Masa z baterią standardową', value: 'Około 0,79 kg' },

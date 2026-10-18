@@ -36,6 +36,8 @@ const nextConfig = {
       { source: '/produkt/brother-td-4t', has: [{ type: 'query', key: 'pn', value: 'TD4650TNWBRZ1' }], destination: '/produkt/brother-td-4650tnwbr', permanent: true },
       { source: '/produkt/brother-td-4t', has: [{ type: 'query', key: 'pn', value: 'TD4750TNWBRZ1' }], destination: '/produkt/brother-td-4750tnwbr', permanent: true },
       { source: '/serwis/epson', destination: '/serwis-kolorowych-drukarek-epson', permanent: true },
+      // Bateria BTRY-MPP-68MA1-01 ma 6600 mAh, adres miał błędnie „6800mah” (2026-10-17).
+      { source: '/produkt/zebra-bateria-6800mah-zq630-plus', destination: '/produkt/zebra-bateria-6600mah-zq630-plus', permanent: true },
       // podkategoria kart przeniesiona z błędnej pisowni „PCV” na „PVC” (2026-09-09)
       { source: '/karty-pcv', destination: '/karty-pvc', permanent: true },
       // nawijaki → nawijarki: „nawijarka do etykiet” ma 100 wyszukiwań/mies., „nawijak etykiet” 70 (2026-09-20)

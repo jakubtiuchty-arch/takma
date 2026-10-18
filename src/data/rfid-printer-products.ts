@@ -49,8 +49,8 @@ export const rfidPrinterProducts: Product[] = [
     name: 'Zebra ZD621R',
     seoH1: 'Zebra ZD621R',
     shortDescription: 'Biurkowa drukarka Zebra ZD621R drukuje i koduje etykiety RAIN UHF RFID. Ma ekran dotykowy i wersje 203 oraz 300 dpi.',
-    seoTitle: 'Zebra ZD621R — biurkowa drukarka etykiet RFID',
-    seoDescription: 'Zebra ZD621R drukuje i koduje etykiety RAIN UHF RFID. Wybierz 203 lub 300 dpi, etykiety i taśmę. Zapytaj TAKMA o konfigurację.',
+    seoTitle: 'Zebra ZD621R — drukarka RFID UHF 203/300 dpi',
+    seoDescription: 'Zebra ZD621R: biurkowa drukarka i koder RAIN UHF 203 lub 300 dpi z modułem RE40. Druk do 108 mm, ekran dotykowy 4,3 cala, Ethernet, wersja z Wi-Fi 6.',
     description: `Zebra ZD621R to biurkowa drukarka i koder etykiet RAIN UHF RFID o szerokości do 4 cali. Drukuje tekst i kody kreskowe oraz zapisuje dane w układzie zgodnej etykiety.
 
 Wbudowany moduł Zebra RE40 obsługuje etykiety zgodne z EPC UHF Gen2 v2.1 i ISO/IEC 18000-63. Technologia Adaptive Encoding ułatwia kalibrację kodowania dla różnych wkładek RFID. Przed wdrożeniem sprawdź zapis i odczyt etykiety na docelowym produkcie.
@@ -142,7 +142,7 @@ Akcesoria do rozbudowy obejmują moduł Wi-Fi, odklejak, obcinacz i adaptery gil
     ],
     downloads: [
       { name: 'Karta katalogowa ZD621R (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd600-rfid-series-spec-sheet-en-us.pdf', size: 'PDF' },
-      { name: 'Katalog akcesoriów do drukarek biurkowych Zebra (EN) — ZD621R, strona 6', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/desktop-printer-guide-accessory-en-us.pdf#page=6', size: '2 MB' },
+      { name: 'Katalog akcesoriów do drukarek biurkowych Zebra (EN) — ZD621R, strona 6', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/desktop-printer-guide-accessory-en-us.pdf#page=6', size: '2,9 MB' },
       { name: 'Sterowniki i instrukcje ZD621', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/desktop/zd621.html', size: 'Online' },
     ],
     relatedProducts: ['zebra-zd621t'],

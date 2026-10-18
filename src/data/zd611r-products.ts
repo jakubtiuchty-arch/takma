@@ -4,8 +4,8 @@ import { zd611rAccessoryIds } from './zd611r-accessories'
 // Dwa standardowe PN EU/ROW, model 1025997 w Solutions Pathway, 15.10.2026.
 export const zd611rProduct: Product = {
   id: 'zebra-zd611r', slug: 'zebra-zd611r', name: 'Zebra ZD611R', seoH1: 'Zebra ZD611R',
-  seoTitle: 'Zebra ZD611R — biurkowa drukarka RFID do wąskich etykiet',
-  seoDescription: 'Zebra ZD611R drukuje i koduje wąskie etykiety RAIN UHF RFID. Wersje 203 i 300 dpi, Ethernet, ekran dotykowy. Sprawdź ceny, dostępność i akcesoria.',
+  seoTitle: 'Zebra ZD611R — drukarka RFID UHF 203/300 dpi',
+  seoDescription: 'Zebra ZD611R: 2-calowa biurkowa drukarka i koder RAIN UHF 203 lub 300 dpi do wąskich etykiet 15–60 mm. Ethernet, ekran dotykowy 4,3 cala.',
   shortDescription: 'Biurkowa drukarka Zebra ZD611R drukuje i koduje wąskie etykiety RAIN UHF RFID. Wersje 203 i 300 dpi, Ethernet oraz ekran dotykowy 4,3 cala.',
   description: `Zebra ZD611R to biurkowa drukarka i koder wąskich etykiet RAIN UHF RFID. Wykonuje nadruk i zapisuje identyfikator w układzie elektronicznym etykiety.
 
@@ -90,7 +90,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 36 miesięcy dla urządzeń kupion
     { question: 'Czy obie rozdzielczości mają tę samą szerokość druku?', answer: 'Nie. Wersja 203 dpi drukuje do 56 mm, a wersja 300 dpi do 54 mm. Szerokość materiału może wynosić do 60 mm. Obszar nadruku musi mieścić się w limicie wybranego wariantu.' },
     { question: 'Czy ZD611R ma Wi-Fi i Bluetooth do drukowania?', answer: 'Oferowane PN nie mają fabrycznego Wi-Fi. Mają Ethernet, USB i USB Host. BLE 5 służy do konfiguracji. Do drukowania bezprzewodowego potrzebujesz zgodnego modułu Wi-Fi i Bluetooth.' },
     { question: 'Czy drukarka wymaga taśmy barwiącej?', answer: 'Druk termotransferowy wymaga taśmy 74 m, o szerokości 33–58 mm, na gilzie 12,7 mm. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy. Obie metody kodowania wymagają etykiety z wkładką RFID.' },
-    { question: 'Czy ZD611R odczyta towary na regale?', answer: 'Nie. Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do inwentaryzacji radiowej potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania.' },
+    { question: 'Czy ZD611R odczyta towary na regale?', answer: 'Nie. ZD611R zapisuje i sprawdza wkładkę podczas wydruku. Do inwentaryzacji radiowej potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania.' },
     { question: 'Czy podane PN będą nadal dostępne?', answer: 'Zakończenie sprzedaży ZD6A122-T0EER2EZ i ZD6A123-T0EER2EZ zaplanowano na 1 stycznia 2027 r. Ostatnie wysyłki mają nastąpić do 31 stycznia 2027 r., do wyczerpania zapasów. Przed zakupem potwierdź możliwość realizacji.' },
   ],
   downloads: [

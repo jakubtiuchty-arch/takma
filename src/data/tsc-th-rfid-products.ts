@@ -47,65 +47,109 @@ export const tscThRfidAccessories: Product[] = [
   downloads: [{ name: 'Instrukcja serii TH/DH, w tym RFID (EN)', type: 'manual', url: manual, size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
+type ThCopy = Pick<Product, 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'faq'>
+
+const thCopy: Record<string, ThCopy> = {
+  TH240R: {
+    seoTitle: 'TSC TH240R — drukarka RFID UHF 203 dpi',
+    seoDescription: 'TSC TH240R: biurkowa drukarka i koder UHF RFID 203 dpi. Druk do 108 mm z prędkością 203 mm/s, ekran dotykowy, wersje z Ethernetem lub Wi-Fi.',
+    shortDescription: 'Biurkowa drukarka i koder UHF RFID 203 dpi do etykiet logistycznych i oznaczeń towarów. Druk do 108 mm z prędkością do 203 mm/s, ekran dotykowy 3,5 cala, Ethernet.',
+    description: `TSC TH240R to biurkowa drukarka z fabrycznym koderem UHF RFID i głowicą 203 dpi. Drukuje etykietę i w tym samym przebiegu zapisuje identyfikator EPC w jej wkładce. Pasuje na stanowisko przyjęć towaru, pakowania i na zaplecze sklepu.
+
+## Kiedy wystarczy 203 dpi
+
+Głowica 203 dpi ma 8 punktów na milimetr, więc jeden punkt ma ok. 0,125 mm. Taka rozdzielczość wystarcza do etykiet wysyłkowych, oznaczeń kartonów i pojemników oraz kodów EAN-13 i GS1-128 w typowej wielkości. TH240R drukuje z prędkością do 203 mm/s na szerokości do 108 mm. Jeden wydruk może mieć do 25 400 mm długości.
+
+Na etykiecie z bardzo drobnym tekstem albo z małym kodem DataMatrix lepiej sprawdzi się [TSC TH340R](/produkt/tsc-th340r) z głowicą 300 dpi. Obie drukarki mają ten sam koder RFID, więc zasięg odczytu etykiety od rozdzielczości nie zależy.
+
+## Zapis danych w etykiecie UHF
+
+Koder obsługuje pasywne etykiety RAIN UHF w standardzie GS1 EPC Gen2 v2 i ISO 18000-63. Wkładki kolejnych etykiet mogą być oddalone o 15,9 mm. Po założeniu nowej rolki uruchom kalibrację podawania i RFID. Drukarka sprawdza każdy zapis i według ustawień oznacza etykietę z błędem kodowania.
+
+Etykiety na metal o grubości do 1,35 mm obsługuje konfiguracja z anteną wewnętrzną i ręcznym odrywaniem. Szablon zadania musi zawierać polecenia RFID w TSPL lub ZPL. Bez nich drukarka wykona sam nadruk.
+
+## Dwie wersje do wyboru
+
+- TH240R-A001-0002 — USB, USB Host, RS-232 i Ethernet 10/100.
+- TH240R-A001-0102 — te same porty oraz Wi-Fi 802.11a/b/g/n/ac i Bluetooth.
+
+Obie wersje mają kolorowy ekran dotykowy 3,5 cala, zegar RTC, sygnalizator dźwiękowy i ręczne odrywanie etykiet. W pudełku są zasilacz, przewód zasilający EU, przewód USB i skrócona instrukcja.
+
+## Rolka, taśma i rozbudowa
+
+Wewnątrz mieści się rolka o średnicy do 127 mm na gilzie 25,4–38,1 mm. Szerokość materiału wynosi 15–120 mm. Taśma barwiąca może mieć 300 m na gilzie 25,4 mm albo 110 m na gilzie 12,7 mm. Większą rolkę podawaj z [uchwytu zewnętrznego OP-COM-0002](/produkt/tsc-uchwyt-rolki-op-com-0002) na gilzie 76,2 mm.
+
+Wersję z Ethernetem rozbudujesz o Wi-Fi i Bluetooth [modułem SP-TH240-0041](/produkt/tsc-modul-wifi-sp-th240-0041) albo o sam Bluetooth [modułem SP-TH240-0044](/produkt/tsc-modul-bluetooth-sp-th240-0044). Wybierz jeden z nich.
+
+Rolki RFID do TH240R są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety i gilzę rolki. Dobierzemy materiał do TH240R i sprawdzimy położenie wkładki względem anteny.
+
+## Gwarancja i głowica
+
+Drukarka ma 3 lata gwarancji. Głowica jest objęta ochroną przez 12 miesięcy lub 25 km druku, a wałek przez 12 miesięcy lub 50 km. Obowiązuje limit osiągnięty wcześniej. Zamienna głowica 203 dpi ma numer PH-TH240-0001.
+
+Do większej liczby etykiet dziennie porównaj przemysłową [TSC MB241TR](/produkt/tsc-mb241tr). W klasie biurkowej sprawdź też [Zebra ZD621R](/produkt/zebra-zd621r).`,
+    faq: [
+      { question: 'Czy TH240R nada się do etykiet wysyłkowych z kodem GS1-128?', answer: 'Tak. Rozdzielczość 203 dpi jest typowa dla etykiet logistycznych i kodów kreskowych na kartonach. TH240R drukuje je na szerokości do 108 mm i zapisuje identyfikator EPC we wkładce UHF.' },
+      { question: 'Która wersja TH240R ma Wi-Fi?', answer: 'TH240R-A001-0102. Ma Wi-Fi 802.11a/b/g/n/ac, Bluetooth i porty przewodowe. TH240R-A001-0002 łączy się przez USB, RS-232 i Ethernet.' },
+      { question: 'Jak długą etykietę wydrukuje TH240R?', answer: 'Do 25 400 mm na jednym wydruku. Wersja 300 dpi, TH340R, drukuje do 11 430 mm.' },
+      { question: 'Czy do TH240R trzeba dokupić moduł RFID?', answer: 'Nie. Koder UHF jest fabrycznie zamontowany w obu wersjach. Potrzebujesz etykiet z wkładką UHF i szablonu z poleceniami kodowania.' },
+      { question: 'Czy TH240R koduje etykiety na metal?', answer: 'Tak, etykiety o grubości do 1,35 mm, przy antenie wewnętrznej i ręcznym odrywaniu. Podaj nam typ etykiety i powierzchnię przedmiotu. Dobierzemy materiał i sprawdzimy kodowanie.' },
+      { question: 'Jaki numer ma głowica do TH240R?', answer: 'Głowica 203 dpi PH-TH240-0001. Głowica 300 dpi PH-TH240-0002 pasuje do TH340R. Przy zamówieniu części podaj numer seryjny drukarki.' },
+    ],
+  },
+  TH340R: {
+    seoTitle: 'TSC TH340R — drukarka RFID UHF 300 dpi',
+    seoDescription: 'TSC TH340R: biurkowa drukarka i koder UHF RFID 300 dpi do drobnego tekstu i małych kodów 2D. Druk do 105,7 mm, Ethernet, opcja z Wi-Fi i Bluetooth.',
+    shortDescription: 'Biurkowa drukarka i koder UHF RFID 300 dpi do etykiet produktowych z drobnym tekstem i małymi kodami 2D. Druk do 105,7 mm z prędkością do 152 mm/s, ekran dotykowy 3,5 cala.',
+    description: `TSC TH340R łączy głowicę 300 dpi z fabrycznym koderem UHF RFID. Wybierz ją do etykiet, na których obok identyfikatora EPC musi zmieścić się drobny tekst: skład, numer partii, data ważności albo mały kod QR.
+
+## Co daje głowica 300 dpi
+
+Rozdzielczość 300 dpi oznacza 11,8 punktu na milimetr. Punkt ma ok. 0,085 mm, czyli jest o jedną trzecią mniejszy niż przy 203 dpi. Krawędzie znaków i modułów kodu są wyraźniejsze. Ma to znaczenie przy metkach odzieżowych, etykietach kosmetyków, oznaczeniach podzespołów elektronicznych i probówek.
+
+Szerokość nadruku wynosi 105,7 mm, a prędkość do 152 mm/s. Jeden wydruk może mieć do 11 430 mm długości. Do etykiet kartonowych z dużym kodem kreskowym wystarczy [TSC TH240R](/produkt/tsc-th240r): drukuje do 203 mm/s i ma ten sam koder.
+
+## Jak przebiega kodowanie
+
+TH340R zapisuje dane w pasywnych etykietach RAIN UHF (GS1 EPC Gen2 v2, ISO 18000-63). Najmniejszy rozstaw wkładek to 15,9 mm. Nie umieszczaj małego kodu 2D bezpośrednio nad układem wkładki. Nierówna powierzchnia nad układem pogarsza jakość nadruku. Po każdej zmianie rolki wykonaj kalibrację RFID.
+
+Polecenia kodowania wysyłaj w TSPL lub ZPL. Drukarka weryfikuje zapis i oznacza etykietę, której nie udało się zakodować. Etykiety na metal do 1,35 mm wymagają anteny wewnętrznej i trybu ręcznego odrywania.
+
+## Konfiguracje TH340R
+
+TH340R-A001-0002 pracuje w sieci przewodowej: ma USB, USB Host, RS-232 i Ethernet 10/100. TH340R-A001-0102 ma dodatkowo Wi-Fi 802.11a/b/g/n/ac i Bluetooth. Każda wersja ma ekran dotykowy 3,5 cala, zegar RTC i ręczne odrywanie etykiet. Zasilacz, przewód zasilający EU i przewód USB są w zestawie.
+
+Na stanowisko bez sieci przewodowej możesz też dokupić do wersji -0002 [moduł Wi-Fi z Bluetooth SP-TH240-0041](/produkt/tsc-modul-wifi-sp-th240-0041).
+
+## Materiały do drobnego nadruku
+
+Rolka wewnętrzna ma do 127 mm średnicy, materiał 15–120 mm szerokości. Przy druku termotransferowym drobny tekst wymaga gładkiej powierzchni etykiety i taśmy dobranej do materiału. Taśma ma szerokość 40–110 mm i długość do 300 m na gilzie 25,4 mm. Etykieta termiczna nie potrzebuje taśmy, ale nadruk na niej gorzej znosi światło i ciepło.
+
+Ofertę materiałów znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem prześlij nam projekt etykiety. Dobierzemy rolkę do TH340R tak, aby wkładka nie leżała pod drobnym nadrukiem.
+
+## Serwis
+
+Gwarancja na drukarkę wynosi 3 lata. Głowica ma ochronę przez 12 miesięcy lub 25 km druku, a wałek przez 12 miesięcy lub 50 km. Decyduje wcześniejszy limit. Zamienna głowica 300 dpi ma numer PH-TH240-0002.
+
+W tej samej klasie porównaj [SATO CT4-LX RFID](/produkt/sato-ct4-lx-rfid) z głowicą 305 dpi.`,
+    faq: [
+      { question: 'Kiedy wybrać TH340R zamiast TH240R?', answer: 'Gdy etykieta ma drobny tekst, mały kod 2D albo logo z cienkimi liniami. TH340R drukuje 11,8 punktu na milimetr, a TH240R 8 punktów. TH240R jest za to szybsza: 203 mm/s zamiast 152 mm/s.' },
+      { question: 'Czy 300 dpi zwiększa zasięg odczytu RFID?', answer: 'Nie. Zasięg zależy od wkładki, anteny czytnika i powierzchni przedmiotu. Rozdzielczość wpływa tylko na jakość nadruku.' },
+      { question: 'Czy TH340R ma obcinak albo odklejak?', answer: 'Nie. Obie wersje mają ręczne odrywanie etykiet. Jeśli potrzebujesz innego sposobu odbioru, opisz nam etykietę. Dobierzemy konfigurację, w której nóż nie przetnie wkładki.' },
+      { question: 'Czy Wi-Fi można dodać później?', answer: 'Tak. Do TH340R-A001-0002 pasuje moduł Wi-Fi z Bluetooth SP-TH240-0041 albo moduł samego Bluetooth SP-TH240-0044. Montaż zleć serwisowi.' },
+      { question: 'Jakie taśmy pasują do TH340R?', answer: 'Taśmy o szerokości 40–110 mm, do 300 m na gilzie 25,4 mm lub do 110 m na gilzie 12,7 mm. Do drobnego tekstu wybierz taśmę dobraną do powierzchni etykiety.' },
+    ],
+  },
+}
+
 export const tscThRfidProducts: Product[] = [
-  { model: 'TH240R', dpi: 203, width: '108', speed: '203', head: 'PH-TH240-0001', headId: 'tsc-th-head-203', other: ids[1] },
-  { model: 'TH340R', dpi: 300, width: '105,7', speed: '152', head: 'PH-TH240-0002', headId: 'tsc-th-head-300', other: ids[0] },
-].map(({ model, dpi, width, speed, head, headId, other }) => {
+  { model: 'TH240R', dpi: 203, width: '108', speed: '203', headId: 'tsc-th-head-203', other: ids[1] },
+  { model: 'TH340R', dpi: 300, width: '105,7', speed: '152', headId: 'tsc-th-head-300', other: ids[0] },
+].map(({ model, dpi, width, speed, headId, other }) => {
   const slug = `tsc-${model.toLowerCase()}`
   return {
     id: slug, slug, name: `TSC ${model}`, seoH1: `TSC ${model}`,
-    seoTitle: `TSC ${model} — biurkowa drukarka RFID ${dpi} dpi | TAKMA`,
-    seoDescription: `TSC ${model}: drukarka UHF RFID ${dpi} dpi, ekran dotykowy i Ethernet. Wersje EU oraz Wi-Fi z Bluetooth. Sprawdź ceny, stany i zgodne akcesoria.`,
-    shortDescription: `Biurkowa drukarka i koder UHF RFID ${dpi} dpi. Druk do ${width} mm, ekran dotykowy 3,5 cala, Ethernet i taśma barwiąca do 300 m. Wersje EU.`,
-    description: `TSC ${model} to biurkowa drukarka z fabrycznym koderem UHF RFID. Drukuje tekst, grafikę i kody oraz zapisuje dane w układzie zgodnej etykiety.
-
-## ${dpi === 203 ? 'Kodowanie RFID na stanowisku magazynowym i w sklepie' : 'Nadruk 300 dpi do drobnego tekstu i szczegółowych kodów'}
-
-${dpi === 203 ? 'TH240R ma rozdzielczość 203 dpi. Służy do przygotowania etykiet na towary, kartony i pojemniki przy stanowisku pracy.' : 'TH340R ma rozdzielczość 300 dpi. Ułatwia przygotowanie drobnego tekstu i szczegółowych kodów na etykietach produktów.'} Maksymalna szerokość druku wynosi ${width} mm, a prędkość nadruku do ${speed} mm/s.
-
-Prędkość zadania RFID zależy od wkładki, ilości danych i ustawień. Rozdzielczość nadruku nie określa zasięgu radiowego. Do kodowania potrzebujesz szablonu z poleceniami RFID i zgodnego materiału.
-
-## Europejskie konfiguracje z Ethernetem lub Wi-Fi
-
-Wybierz wariant do swojego stanowiska:
-- ${model}-A001-0002 — USB, USB Host, RS-232 i Ethernet 10/100; bez Wi-Fi i Bluetooth.
-- ${model}-A001-0102 — te same porty oraz Wi-Fi 802.11a/b/g/n/ac z Bluetooth.
-
-Oba PN obejmują UHF RFID, kolorowy ekran dotykowy 3,5 cala, zegar czasu rzeczywistego oraz sygnalizator dźwiękowy. Zestaw zawiera zasilacz, przewód zasilający EU, przewód USB i skróconą instrukcję. Etykiety oraz taśmy barwiące są sprzedawane osobno.
-
-Pokazane wersje mają ręczne odrywanie etykiet. Nie obejmują obcinaka ani odklejaka. Inne sposoby podawania wymagają doboru odpowiedniej konfiguracji RFID i materiału.
-
-## Etykiety RAIN UHF i kalibracja
-
-Koder obsługuje pasywne etykiety RAIN UHF zgodne z GS1 EPC Gen2 v2 i ISO 18000-63. Minimalny rozstaw kolejnych etykiet RFID wynosi 15,9 mm. Wykonaj kalibrację podawania i RFID po każdej zmianie materiału.
-
-Wybrane etykiety na metal o grubości do 1,35 mm wymagają zgodnej konfiguracji z anteną wewnętrzną i ręcznego odrywania. Sam limit grubości nie potwierdza zgodności każdej etykiety. Sprawdź wkładkę, jej położenie, szerokość podkładu oraz zapis i odczyt na docelowym przedmiocie.
-
-Drukarka kontroluje zapis danych. Może oznaczyć błędną etykietę zgodnie z wybranym trybem obsługi błędów. Pokazane PN mają UHF RFID. Funkcje HF lub NFC wymagają odrębnej konfiguracji i nie są częścią tych zestawów.
-
-## Materiał i taśma barwiąca
-
-Szerokość materiału wynosi 15–120 mm. Drukarka mieści rolkę o średnicy do 127 mm na gilzie 25,4–38,1 mm. Zakres mechaniczny materiału nie zastępuje wymagań konkretnej wkładki RFID.
-
-Druk termotransferowy wymaga taśmy barwiącej. Możesz użyć taśmy do 300 m na gilzie 25,4 mm albo do 110 m na gilzie 12,7 mm. Szerokość taśmy wynosi 40–110 mm. Druk termiczny bezpośredni wymaga etykiety termoczułej i nie wymaga taśmy.
-
-[Zewnętrzny uchwyt OP-COM-0002](/produkt/tsc-uchwyt-rolki-op-com-0002) służy do podawania materiału z rolki ustawionej za drukarką. Ma szpindel do gilzy 76,2 mm. Przed użyciem RFID sprawdź prowadzenie materiału i kalibrację.
-
-## Łączność i integracja z systemem
-
-Wersja podstawowa pracuje przewodowo. [Moduł SP-TH240-0041](/produkt/tsc-modul-wifi-sp-th240-0041) dodaje Wi-Fi i Bluetooth. [Moduł SP-TH240-0044](/produkt/tsc-modul-bluetooth-sp-th240-0044) dodaje sam Bluetooth. Są to alternatywy; wariant z fabrycznym Wi-Fi nie wymaga ich zakupu.
-
-TSPL-EZD obsługuje emulacje EPL, ZPL, ZPL II i DPL dla nadruku. Polecenia RFID wymagają obsługi TSPL lub ZPL w aplikacji. Powiąż identyfikator EPC z rekordem towaru w WMS albo ERP i ustal obsługę błędów kodowania. Sam wydruk PDF nie zapisuje danych w etykiecie RFID.
-
-TSC Console wspiera konfigurację urządzenia. SOTI Connect wymaga osobnej licencji. Do radiowej inwentaryzacji regałów potrzebujesz osobnego czytnika UHF i oprogramowania.
-
-## Serwis i gwarancja
-
-Właściwa głowica do ${model} ma numer ${head} i rozdzielczość ${dpi} dpi. Przed zakupem części podaj model i numer seryjny. Głowice 203 i 300 dpi nie są automatycznymi zamiennikami.
-
-Gwarancja na drukarkę wynosi 3 lata. Głowica ma ochronę przez 12 miesięcy lub 25 km druku. Wałek ma ochronę przez 12 miesięcy lub 50 km druku. Dla części z limitem przebiegu obowiązuje warunek, który nastąpi wcześniej.
-
-Porównaj także [${dpi === 203 ? 'TH340R' : 'TH240R'}](/produkt/${other}) z rozdzielczością ${dpi === 203 ? '300' : '203'} dpi oraz [Zebra ZD621R](/produkt/zebra-zd621r). Do większych rolek i pracy na stanowisku przemysłowym sprawdź [TSC MB241TR](/produkt/tsc-mb241tr).`,
+    ...thCopy[model],
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'tsc',
     tags: ['magazyn', 'retail', 'logistyka'], images: ['/images/products/tsc-th-rfid-main.webp'],
     imageDescriptions: [`TSC ${model} — drukarka biurkowa w obudowie z ekranem dotykowym, widok pod kątem`],
@@ -135,14 +179,6 @@ Porównaj także [${dpi === 203 ? 'TH340R' : 'TH240R'}](/produkt/${other}) z roz
     ] },
     compatibleAccessories: [], relatedAccessories: [...sharedAccessories, headId],
     applications: ['Druk i kodowanie etykiet UHF na towary i opakowania', 'Etykietowanie na stanowisku magazynowym i w sklepie', 'Przygotowanie oznaczeń wyposażenia'],
-    faq: [
-      { question: 'Czym różnią się dwa europejskie warianty?', answer: `${model}-A001-0002 ma połączenia przewodowe. ${model}-A001-0102 dodaje Wi-Fi i Bluetooth. Rozdzielczość, RFID, ekran dotykowy, ręczne odrywanie oraz zestaw zasilający EU są wspólne.` },
-      { question: 'Czy trzeba dokupić moduł RFID?', answer: 'Nie. Pokazane PN mają fabryczny koder UHF RFID. Dobierz zgodne etykiety i szablon z poleceniami kodowania. Sam nadruk nie zapisuje danych radiowych.' },
-      { question: 'Czy obsługuje etykiety RFID na metal?', answer: 'Wybrane etykiety do 1,35 mm wymagają zgodnej konfiguracji z anteną wewnętrzną i ręcznego odrywania. Potwierdź wkładkę, położenie i materiał. Sprawdź zapis i odczyt na docelowej powierzchni.' },
-      { question: 'Czy obcinak lub odklejak są w zestawie?', answer: 'Nie. Pokazane PN mają ręczne odrywanie. Dobór obcinaka lub odklejaka wymaga potwierdzenia wersji RFID i konstrukcji etykiety. Obcinak musi ciąć poza wkładką.' },
-      { question: 'Czy moduły Wi-Fi i Bluetooth trzeba kupić razem?', answer: 'Nie. Moduł Wi-Fi z Bluetooth i moduł samego Bluetooth są alternatywami. Wariant z fabrycznym Wi-Fi i Bluetooth nie wymaga żadnego z nich.' },
-      { question: 'Jaka głowica pasuje do tego modelu?', answer: `${model} wymaga głowicy ${dpi} dpi o PN ${head}. Przed zakupem podaj numer seryjny. Nie dobieraj głowicy wyłącznie po wspólnej obudowie serii TH.` },
-    ],
     downloads: [{ name: 'Karta serii TH/DH (EN)', type: 'datasheet', url: datasheet, size: 'PDF' }, { name: 'Instrukcja serii TH/DH, w tym RFID (EN)', type: 'manual', url: manual, size: 'PDF' }, { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: support, size: 'Online' }],
     relatedProducts: [other, 'zebra-zd621r', 'brother-td-4650tnwbr', 'tsc-mb241tr'], createdAt: '2026-10-16', sameAs: support,
   } satisfies Product

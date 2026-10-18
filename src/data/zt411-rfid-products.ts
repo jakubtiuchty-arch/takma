@@ -8,8 +8,8 @@ export const zt411RfidProduct: Product = {
   slug: 'zebra-zt411-rfid',
   name: 'Zebra ZT411 RFID',
   seoH1: 'Zebra ZT411 RFID',
-  seoTitle: 'Zebra ZT411 RFID — przemysłowa drukarka etykiet UHF',
-  seoDescription: 'Zebra ZT411 RFID drukuje i koduje etykiety RAIN UHF. Warianty 203 i 300 dpi, Wi-Fi 6 oraz On-metal. Sprawdź ceny i dostępność w TAKMA.',
+  seoTitle: 'Zebra ZT411 RFID — drukarka RFID UHF 203/300 dpi',
+  seoDescription: 'Zebra ZT411 RFID: przemysłowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk 104 mm do 356 mm/s, wersja z Wi-Fi 6 i wersja On-metal do etykiet na metal.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT411 RFID drukuje i koduje etykiety RAIN UHF. Wybierz 203 lub 300 dpi, Wi-Fi 6 albo wersję On-metal.',
   description: `Zebra ZT411 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID. Drukuje tekst, grafikę i kody kreskowe oraz zapisuje dane w układzie etykiety.
 
@@ -83,7 +83,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
   compatibleAccessories: [],
   relatedAccessories: zt411RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT411 RFID różni się od zwykłej ZT411?', answer: 'ZT411 RFID ma moduł do radiowego zapisu i odczytu układu etykiety podczas jej przygotowania. Zwykła ZT411 bez modułu RFID wykonuje tylko nadruk. Ta karta obejmuje drukarki z fabrycznym modułem RFID.' },
+    { question: 'Czym ZT411 RFID różni się od zwykłej ZT411?', answer: 'ZT411 RFID ma moduł do radiowego zapisu i odczytu układu etykiety podczas jej przygotowania. Zwykła ZT411 bez modułu RFID wykonuje tylko nadruk. Wszystkie warianty ZT411 RFID mają moduł fabrycznie.' },
     { question: 'Kiedy wybrać wersję On-metal?', answer: 'Wybierz ją do zgodnych, grubszych etykiet RFID przeznaczonych na metal. Warianty T5 obsługują materiał do 1,5 mm. Przed zakupem sprawdź konkretną etykietę oraz jej zgodność z drukarką i oznaczanym przedmiotem.' },
     { question: 'Który wariant ma Wi-Fi 6?', answer: 'W tej ofercie fabryczne Wi-Fi 6 i Bluetooth 5.3 ma ZT41142-T0EG0G0Z. Pozostałe PN mają Bluetooth 4.1 oraz łączność przewodową. Moduły Wi-Fi do rozbudowy są sprzedawane osobno.' },
     { question: 'Czy drukarka może odczytać zawartość całej półki?', answer: 'Nie. Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do inwentaryzacji półki potrzebujesz czytnika UHF RFID i odpowiedniego oprogramowania.' },

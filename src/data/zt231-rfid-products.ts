@@ -4,8 +4,8 @@ import { zt231RfidAccessoryIds } from './zt231-rfid-accessories'
 // Dwa fabryczne PN EU/ROW, model 1111130 w Zebra Solutions Pathway, 15.10.2026.
 export const zt231RfidProduct: Product = {
   id: 'zebra-zt231-rfid', slug: 'zebra-zt231-rfid', name: 'Zebra ZT231 RFID', seoH1: 'Zebra ZT231 RFID',
-  seoTitle: 'Zebra ZT231 RFID — drukarka i koder etykiet UHF',
-  seoDescription: 'Zebra ZT231 RFID drukuje i koduje etykiety RAIN UHF. Wybierz 203 lub 300 dpi. Sprawdź PN, ceny, dostępność i zgodne akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZT231 RFID — drukarka RFID UHF 203/300 dpi',
+  seoDescription: 'Zebra ZT231 RFID: przemysłowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk 104 mm do 305 mm/s, moduł RE40, ekran dotykowy 4,3 cala, Ethernet.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT231 RFID drukuje i koduje etykiety RAIN UHF. Warianty 203 i 300 dpi, druk do 104 mm i ekran dotykowy 4,3 cala.',
   description: `Zebra ZT231 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID. Drukuje tekst, grafikę i kody kreskowe oraz zapisuje dane w układzie elektronicznym etykiety. Służy do przygotowania oznaczeń produktów, opakowań i pojemników.
 
@@ -13,7 +13,7 @@ export const zt231RfidProduct: Product = {
 
 Wbudowany moduł Zebra RE40 obsługuje etykiety zgodne z EPC UHF Gen2 v2.1 i ISO/IEC 18000-63. Adaptacyjne kodowanie dobiera ustawienia do zgodnej wkładki RFID. Kalibrację materiału i RFID wykonaj przed rozpoczęciem pracy oraz po zmianie typu etykiet.
 
-Minimalny format etykiety RFID zależy od jej wkładki, położenia anteny i konstrukcji materiału. Sam poprawny nadruk nie potwierdza zapisu danych radiowych. Przed wdrożeniem sprawdź zapis i odczyt etykiety na docelowym produkcie.
+Minimalny format etykiety RFID zależy od jej wkładki, położenia anteny i konstrukcji materiału. Nadruk i zapis RFID to dwie osobne operacje. Przed wdrożeniem wydrukuj serię próbną i sprawdź odczyt na docelowym produkcie.
 
 ## Dwa warianty z fabrycznym RFID
 
@@ -37,7 +37,7 @@ Drukarka korzysta z Link-OS oraz poleceń ZPL i ZPL II. Integracja z WMS lub ERP
 
 Obcinacz, odklejak, karta Wi-Fi i interfejs aplikatora są sprzedawane osobno. Obcinacz musi ciąć między wkładkami RFID. Odklejak P1123335-042 nie zawiera nawijaka podkładu. Wersję z nawijakiem podkładu dobiera się jako konfigurację fabryczną; nie ma jej w pokazanych PN.
 
-Do wymiany głowicy w ZT231R dobierz P1123335-156 dla 203 dpi albo P1123335-157 dla 300 dpi. Sprawdź też numer seryjny i wersję urządzenia. Zwykłych głowic ZT231 nie traktuj jako automatycznych zamienników głowicy RFID.
+Do wymiany głowicy w ZT231R dobierz P1123335-156 dla 203 dpi albo P1123335-157 dla 300 dpi. Przed zamówieniem głowicy podaj nam numer seryjny drukarki. Potwierdzimy zgodność z wersją RFID.
 
 Jeśli potrzebujesz standardowego nadruku, sprawdź [Zebra ZT231](/produkt/zebra-zt231). Do większych obciążeń i innych konfiguracji RFID sprawdź [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).
 
@@ -83,13 +83,13 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i czę
   applications: ['Druk i kodowanie etykiet RFID na produkty oraz opakowania', 'Oznaczanie części i pojemników na produkcji', 'Przygotowanie etykiet RFID do przyjęć i wysyłek', 'Oznaczanie wyposażenia zgodnymi etykietami UHF'],
   compatibleAccessories: [], relatedAccessories: zt231RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT231 RFID różni się od zwykłej ZT231?', answer: 'ZT231 RFID ma moduł RE40 do kodowania układu etykiety UHF. Ta karta obejmuje drukarki z fabrycznym RFID. [Zwykła ZT231](/produkt/zebra-zt231) bez tego modułu wykonuje tylko nadruk.' },
-    { question: 'Które numery PN obejmuje ta oferta?', answer: 'ZT23142-T0E00CFZ ma 203 dpi, a ZT23143-T0E00CFZ ma 300 dpi. Oba mają RFID Global poza USA, Kanadą i Japonią, przewody EU i UK oraz ręczne odrywanie etykiet.' },
+    { question: 'Czym ZT231 RFID różni się od zwykłej ZT231?', answer: 'ZT231 RFID ma fabryczny moduł RE40 do kodowania układu etykiety UHF. [Zwykła ZT231](/produkt/zebra-zt231) bez tego modułu wykonuje tylko nadruk.' },
+    { question: 'Które numery PN są dostępne?', answer: 'ZT23142-T0E00CFZ ma 203 dpi, a ZT23143-T0E00CFZ ma 300 dpi. Oba mają RFID Global poza USA, Kanadą i Japonią, przewody EU i UK oraz ręczne odrywanie etykiet.' },
     { question: 'Czy te warianty mają Wi-Fi?', answer: 'Nie mają fabrycznego Wi-Fi. Każdy ma USB, USB Host, RS-232, Ethernet 10/100 i Bluetooth Low Energy. Karta P1083320-037C dodaje Wi-Fi 802.11ac; Bluetooth 4.2 tej karty nie jest dostępny w ZT231.' },
-    { question: 'Czy mogę zamontować zwykłą głowicę ZT231?', answer: 'Nie dobieraj głowicy wyłącznie po nazwie ZT231. Do wersji RFID katalog wskazuje P1123335-156 dla 203 dpi i P1123335-157 dla 300 dpi. Przed wymianą sprawdź rozdzielczość, numer seryjny i generację urządzenia.' },
+    { question: 'Czy mogę zamontować zwykłą głowicę ZT231?', answer: 'Do wersji RFID dobierz głowicę P1123335-156 dla 203 dpi lub P1123335-157 dla 300 dpi. Przed wymianą podaj nam numer seryjny drukarki. Sprawdzimy rozdzielczość i generację urządzenia.' },
     { question: 'Czy etykiety i taśma są w zestawie?', answer: 'Nie. Etykiety RFID, taśma barwiąca i akcesoria są sprzedawane osobno. Przy druku termicznym bezpośrednim taśma nie jest potrzebna. Etykieta musi mieć wkładkę RFID zgodną z drukarką.' },
     { question: 'Czy drukarka odczyta produkty na regale?', answer: 'Nie. Drukarka koduje etykietę podczas jej przygotowania. Do odczytu produktów na regale potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    { question: 'Czy odklejak ma nawijak podkładu?', answer: 'Odklejak P1123335-042 nie zawiera nawijaka podkładu. Wersję z nawijakiem dobiera się jako konfigurację fabryczną. Nie jest częścią dwóch PN przedstawionych w tej ofercie.' },
+    { question: 'Czy odklejak ma nawijak podkładu?', answer: 'Odklejak P1123335-042 nie zawiera nawijaka podkładu. Wersję z nawijakiem dobiera się jako konfigurację fabryczną. Dostępne PN ZT23142-T0E00CFZ i ZT23143-T0E00CFZ jej nie mają.' },
   ],
   downloads: [
     { name: 'Karta katalogowa ZT231 RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt231-rfid-spec-sheet-en-us.pdf', size: 'PDF' },

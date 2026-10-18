@@ -4,52 +4,114 @@ const ids = ['tsc-printronix-t6204e-rfid', 'tsc-printronix-t6304e-rfid', 'tsc-pr
 const datasheet = '/downloads/tsc-printronix-t6000e-karta-produktu-en.pdf'
 const support = 'https://emea.tscprinters.com/en/products/t6000e-series-4-inch-enterprise-industrial-rfid-printers'
 
+type T6Copy = Pick<Product, 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'faq'>
+
+const t6Copy: Record<string, T6Copy> = {
+  T6204e: {
+    seoTitle: 'Printronix T6204e RFID — drukarka RFID UHF 203 dpi',
+    seoDescription: 'TSC Printronix T6204e RFID: przemysłowa drukarka i koder UHF 203 dpi. Druk 104 mm z prędkością 355,6 mm/s, taśma 450 m, Ethernet i RS-232.',
+    shortDescription: 'Przemysłowa drukarka i koder UHF RFID 203 dpi do dużych serii etykiet logistycznych. Druk do 104 mm z prędkością do 355,6 mm/s, taśma barwiąca do 450 m.',
+    description: `TSC Printronix T6204e RFID to najszybsza 4-calowa drukarka RFID w serii T6000e. Głowica 203 dpi drukuje do 355,6 mm/s, a koder UHF zapisuje identyfikator EPC w każdej etykiecie. Wybierz ją do etykiet wysyłkowych, kartonowych i paletowych drukowanych w dużych seriach.
+
+## Wydajność przy etykietach logistycznych
+
+Rozdzielczość 203 dpi daje 8 punktów na milimetr. Wystarcza do kodów GS1-128, SSCC i adresów na etykietach o szerokości do 104 mm. Taśma barwiąca o długości 450 m ogranicza liczbę przestojów na wymianę materiału.
+
+PN T6E2R4-2100-02 ma koder UHF RFID, porty USB, RS-232 i Ethernet 10/100 oraz przewód zasilający EU. Etykiety odbierasz przez odrywanie.
+
+## Kodowanie i kontrola zapisu
+
+Koder obsługuje pasywne wkładki RAIN UHF (EPC Gen2 v2, ISO 18000-63) w rozstawie od 15,9 mm. Jeśli zapis się nie powiedzie, drukarka przekreśla etykietę i drukuje kolejną. Liczniki pokazują liczbę dobrych i odrzuconych etykiet, więc łatwo ocenić straty materiału w zmianie.
+
+Polecenia RFID przyjmuje w językach PGL, ZGL, STGL i MGL. ZGL emuluje język ZPL i ułatwia przeniesienie szablonów z drukarek Zebra. Przed uruchomieniem produkcji wydrukuj serię próbną na docelowym materiale.
+
+## Materiał, taśma i opcje
+
+Szerokość materiału wynosi 25,4–114,3 mm, tak samo jak szerokość taśmy. Gilza taśmy ma 25,4 mm. Zgodne etykiety RFID na metal wymagają dobrania wkładki i ustawień anteny do konkretnego przedmiotu.
+
+Do pracy w Wi-Fi dokup [moduł Printronix P220015-901](/produkt/printronix-wifi-p220015-901). W modelach 4-calowych dostępny jest też weryfikator kodów ODV-2D. To osobna opcja, której ten PN nie zawiera.
+
+Do drobniejszego nadruku wybierz [T6304e RFID](/produkt/tsc-printronix-t6304e-rfid) z głowicą 300 dpi. Do etykiet szerszych niż 104 mm sprawdź [T6206e RFID](/produkt/tsc-printronix-t6206e-rfid). Na mniejsze stanowisko wystarczy [TSC MB241TR](/produkt/tsc-mb241tr).`,
+    faq: [
+      { question: 'Dla kogo jest T6204e RFID?', answer: 'Dla magazynów i działów wysyłki, które drukują dużo etykiet logistycznych z kodem SSCC lub GS1-128. Model drukuje do 355,6 mm/s, najszybciej w 4-calowej serii T6000e.' },
+      { question: 'Czy T6204e RFID oznacza etykiety z błędem kodowania?', answer: 'Tak. Etykietę, której nie udało się zakodować, drukarka przekreśla i drukuje ponownie. Liczniki zapisują liczbę poprawnych i odrzuconych etykiet.' },
+      { question: 'Czy szablony z drukarki Zebra zadziałają na T6204e RFID?', answer: 'Drukarka ma emulację ZGL, zgodną z językiem ZPL. Przed wdrożeniem prześlij nam szablon z poleceniami RFID. Sprawdzimy, czy wymaga zmian.' },
+      { question: 'Jaką głowicę zamówić do T6204e RFID?', answer: 'Głowica RFID 203 dpi P220357-001 do wersji V2/V3. Podaj numer seryjny drukarki, a sprawdzimy wersję sprzętową.' },
+    ],
+  },
+  T6304e: {
+    seoTitle: 'Printronix T6304e RFID — drukarka RFID UHF 300 dpi',
+    seoDescription: 'TSC Printronix T6304e RFID: przemysłowa drukarka i koder UHF 300 dpi do etykiet produktowych i części. Druk 104 mm z prędkością 304,8 mm/s.',
+    shortDescription: 'Przemysłowa drukarka i koder UHF RFID 300 dpi do etykiet produktowych i oznaczeń części. Druk do 104 mm, prędkość do 304,8 mm/s, taśma do 450 m.',
+    description: `TSC Printronix T6304e RFID drukuje z rozdzielczością 300 dpi i koduje wkładki UHF. Wybierz ją, gdy na 4-calowej etykiecie obok identyfikatora EPC jest dużo tekstu, mały kod DataMatrix albo numer seryjny części.
+
+## 300 dpi przy prędkości przemysłowej
+
+Głowica ma 11,8 punktu na milimetr. Kod 2D o module 0,25 mm drukuje się z 3 punktów, a nie z 2, jak przy 203 dpi. Krawędzie są ostrzejsze, a skaner łatwiej odczytuje mały kod. Mimo wyższej rozdzielczości drukarka osiąga do 304,8 mm/s.
+
+Ten model sprawdza się przy etykietach identyfikacyjnych części w produkcji, etykietach produktowych z opisem w kilku językach i przy oznaczeniach środków trwałych. Szerokość nadruku wynosi 104 mm.
+
+## Etykiety UHF w obiegu produkcyjnym
+
+T6304e RFID koduje pasywne etykiety RAIN UHF zgodne z EPC Gen2 v2 i ISO 18000-63. Odstęp kolejnych wkładek może wynosić 15,9 mm. Do oznaczania metalowych części dobierz etykietę na metal razem z ustawieniem anteny. Prześlij nam rysunek lub zdjęcie przedmiotu. Wskażemy materiał i miejsce naklejenia do testu.
+
+Etykieta z nieudanym zapisem zostaje przekreślona i wydrukowana ponownie. Kodowanie obsługują języki PGL, ZGL, STGL i MGL.
+
+## Wyposażenie T6E3R4-2100-02
+
+Ten PN ma koder UHF RFID, USB, RS-232, Ethernet 10/100, kolorowy wyświetlacz 3,5 cala z przyciskami oraz przewód zasilający EU. Etykiety odbiera się przez odrywanie. Wi-Fi dodaje [moduł P220015-901](/produkt/printronix-wifi-p220015-901). Weryfikator ODV-2D do kontroli jakości kodów jest osobną opcją modeli 4-calowych.
+
+Materiał może mieć 25,4–114,3 mm szerokości. Taśma ma do 450 m długości na gilzie 25,4 mm. Przy drobnym nadruku wybierz taśmę żywiczną lub woskowo-żywiczną dobraną do powierzchni etykiety.
+
+Do szybkiego druku etykiet kartonowych wybierz [T6204e RFID](/produkt/tsc-printronix-t6204e-rfid). Do bardzo małych etykiet sprawdź [T6604e RFID](/produkt/tsc-printronix-t6604e-rfid) z głowicą 600 dpi.`,
+    faq: [
+      { question: 'Czym T6304e RFID różni się od T6204e RFID?', answer: 'Rozdzielczością i prędkością. T6304e RFID ma 300 dpi i drukuje do 304,8 mm/s. T6204e RFID ma 203 dpi i drukuje do 355,6 mm/s. Koder RFID i szerokość druku 104 mm są takie same.' },
+      { question: 'Czy T6304e RFID nadaje się do oznaczania metalowych części?', answer: 'Tak, z etykietami RFID na metal. Przed zamówieniem przekaż nam zdjęcie części i miejsce naklejenia. Dobierzemy etykietę i sprawdzimy zapis oraz odczyt.' },
+      { question: 'Czy weryfikator ODV-2D jest w zestawie?', answer: 'Nie. ODV-2D to osobna opcja modeli 4-calowych. PN T6E3R4-2100-02 ma koder RFID, Ethernet i ręczne odrywanie.' },
+      { question: 'Jaka głowica pasuje do T6304e RFID?', answer: 'Głowica RFID 300 dpi P220358-001 do wersji V2/V3. Przy zamówieniu podaj numer seryjny drukarki.' },
+    ],
+  },
+  T6604e: {
+    seoTitle: 'Printronix T6604e RFID — drukarka RFID UHF 600 dpi',
+    seoDescription: 'TSC Printronix T6604e RFID: przemysłowa drukarka i koder UHF 600 dpi do małych etykiet, mikrokodów 2D i drobnego tekstu. Druk 104 mm, 152,4 mm/s.',
+    shortDescription: 'Przemysłowa drukarka i koder UHF RFID 600 dpi do bardzo małych etykiet i mikrokodów 2D. Druk do 104 mm z prędkością do 152,4 mm/s.',
+    description: `TSC Printronix T6604e RFID ma głowicę 600 dpi, najdokładniejszą w serii T6000e. Służy do małych etykiet RFID, na których trzeba zmieścić czytelny tekst i kod 2D o bardzo małym module.
+
+## Kiedy potrzebujesz 600 dpi
+
+Głowica drukuje 23,6 punktu na milimetr. Jeden punkt ma ok. 0,042 mm. Taka rozdzielczość pozwala wydrukować mikrokod DataMatrix i czytelny tekst o wysokości ok. 1 mm. Stosuje się ją przy oznaczaniu elektroniki, wyrobów medycznych, biżuterii i próbek laboratoryjnych.
+
+Prędkość wynosi do 152,4 mm/s, czyli mniej niż w wersjach 203 i 300 dpi. Szerokość nadruku pozostaje 104 mm. Jeśli etykieta ma zwykły kod kreskowy i kilka linii tekstu, szybsza będzie [T6304e RFID](/produkt/tsc-printronix-t6304e-rfid).
+
+## Mała etykieta z wkładką UHF
+
+Mała etykieta zostawia mało miejsca na wkładkę i nadruk. Sprawdź, czy wkładka mieści się w obrysie etykiety. Mikrokodu nie drukuj bezpośrednio nad układem wkładki. Minimalny rozstaw wkładek wynosi 15,9 mm.
+
+Koder obsługuje wkładki RAIN UHF zgodne z EPC Gen2 v2 i ISO 18000-63. Każdy zapis jest sprawdzany. Nieudana etykieta zostaje przekreślona, a drukarka drukuje następną. Przed serią przekaż nam projekt etykiety. Dobierzemy materiał i taśmę, a następnie wykonamy wydruk próbny.
+
+## Materiały do druku 600 dpi
+
+Przy tej rozdzielczości jakość nadruku zależy od gładkości powierzchni i rodzaju taśmy. Do etykiet foliowych zwykle wybiera się taśmę żywiczną. Drukarka przyjmuje taśmę do 450 m na gilzie 25,4 mm i materiał o szerokości 25,4–114,3 mm.
+
+PN T6E6R4-2100-02 ma koder UHF, porty USB, RS-232 i Ethernet 10/100, wyświetlacz 3,5 cala oraz przewód zasilający EU. Etykiety odbiera się przez odrywanie. Wi-Fi dodaje osobny [moduł P220015-901](/produkt/printronix-wifi-p220015-901). Weryfikator ODV-2D jest dostępny jako osobna opcja.`,
+    faq: [
+      { question: 'Do jakich etykiet wybrać T6604e RFID?', answer: 'Do małych etykiet z mikrokodem 2D i drobnym tekstem, np. na elektronice, wyrobach medycznych i biżuterii. Głowica 600 dpi drukuje punkty o wielkości ok. 0,042 mm.' },
+      { question: 'Czy T6604e RFID drukuje wolniej niż T6304e RFID?', answer: 'Tak. T6604e RFID drukuje do 152,4 mm/s, a T6304e RFID do 304,8 mm/s. Wyższą rozdzielczość wybierz tylko wtedy, gdy wymaga jej treść etykiety.' },
+      { question: 'Jaka najmniejsza etykieta RFID zmieści się w T6604e RFID?', answer: 'Ogranicza ją wkładka UHF i rozstaw od 15,9 mm. Prześlij nam wymiary etykiety i projekt nadruku. Dobierzemy wkładkę, która zmieści się w obrysie.' },
+      { question: 'Który numer głowicy pasuje do T6604e RFID?', answer: 'Głowica RFID 600 dpi P220359-001 do wersji V2/V3. Podaj numer seryjny drukarki, a potwierdzimy wersję sprzętową.' },
+    ],
+  },
+}
+
 export const tscT6000eRfidProducts: Product[] = [
-  { model: 'T6204e', pn: 'T6E2R4-2100-02', dpi: 203, speed: '355,6', head: 'P220357-001' },
-  { model: 'T6304e', pn: 'T6E3R4-2100-02', dpi: 300, speed: '304,8', head: 'P220358-001' },
-  { model: 'T6604e', pn: 'T6E6R4-2100-02', dpi: 600, speed: '152,4', head: 'P220359-001' },
-].map(({ model, pn, dpi, speed, head }) => {
+  { model: 'T6204e', pn: 'T6E2R4-2100-02', dpi: 203, speed: '355,6' },
+  { model: 'T6304e', pn: 'T6E3R4-2100-02', dpi: 300, speed: '304,8' },
+  { model: 'T6604e', pn: 'T6E6R4-2100-02', dpi: 600, speed: '152,4' },
+].map(({ model, pn, dpi, speed }) => {
   const slug = `tsc-printronix-${model.toLowerCase()}-rfid`
   return {
     id: slug, slug, name: `TSC Printronix ${model} RFID`, seoH1: `TSC Printronix ${model} RFID`,
-    seoTitle: `Printronix ${model} RFID — drukarka ${dpi} dpi, EU | TAKMA`,
-    seoDescription: `TSC Printronix ${model} RFID: drukarka przemysłowa 4 cale, ${dpi} dpi, konfiguracja EU. Ethernet, taśma 450 m. Sprawdź cenę, stan i akcesoria.`,
-    shortDescription: `Przemysłowa drukarka i koder UHF RFID ${dpi} dpi. Szerokość druku 104 mm, Ethernet i taśma barwiąca do 450 m. Konfiguracja europejska z ręcznym odrywaniem.`,
-    description: `TSC Printronix ${model} RFID to przemysłowa drukarka i koder etykiet UHF RFID z serii T6000e. Przygotowuje nadruk oraz zapisuje dane w układzie zgodnej etykiety. PN ${pn} obejmuje RFID, Ethernet i przewód zasilający EU.
-
-## ${dpi === 203 ? 'Druk i kodowanie etykiet w magazynie oraz produkcji' : dpi === 300 ? 'Nadruk 300 dpi do drobnego tekstu i kodów' : 'Nadruk 600 dpi do małych kodów i szczegółowych oznaczeń'}
-
-${dpi === 203 ? 'T6204e ma rozdzielczość 203 dpi i drukuje z prędkością do 355,6 mm/s. Służy do przygotowania oznaczeń towarów, kartonów, pojemników i wyposażenia.' : dpi === 300 ? 'T6304e ma rozdzielczość 300 dpi do drobniejszego tekstu i szczegółowych kodów. Maksymalna prędkość nadruku wynosi 304,8 mm/s.' : 'T6604e ma rozdzielczość 600 dpi do drobnego tekstu, małych kodów 2D i szczegółowej grafiki. Maksymalna prędkość nadruku wynosi 152,4 mm/s. Przed rozpoczęciem serii dobierz materiał i taśmę oraz sprawdź czytelność gotowego oznaczenia.'} Maksymalna szerokość nadruku wynosi 104 mm.
-
-Prędkość zadania RFID zależy od materiału, ilości danych i ustawień kodowania. Rozdzielczość druku nie określa zasięgu odczytu radiowego.
-
-## UHF RFID do etykiet standardowych i na metal
-
-Drukarka obsługuje pasywne etykiety RAIN UHF, zgodne z EPC Gen2 v2 i ISO 18000-63. Obsługuje także zgodne etykiety na metal. Dobierz konstrukcję materiału, położenie wkładki i ustawienia anteny do konkretnego zastosowania.
-
-Minimalny rozstaw kolejnych etykiet RFID wynosi 15,9 mm. Po zmianie typu materiału wykonaj kalibrację podawania oraz RFID. Przed rozpoczęciem serii sprawdź zapis danych i odczyt na docelowym przedmiocie.
-
-Drukarka kontroluje poprawność kodowania. Może oznaczyć błędną etykietę i wydrukować ją ponownie zgodnie z ustawieniami obsługi błędów. Liczniki pomagają śledzić poprawnie zakodowane i odrzucone etykiety.
-
-## Materiały i taśma barwiąca
-
-Obsługiwany materiał ma szerokość 25,4–114,3 mm. Druk termotransferowy wymaga taśmy barwiącej. Drukarka mieści taśmę do 450 m, o szerokości 25,4–114,3 mm i gilzie 25,4 mm.
-
-Druk termiczny bezpośredni wymaga materiału termoczułego i nie wymaga taśmy. W obu metodach kodowanie RFID wymaga odpowiedniej wkładki. Zwykłej etykiety bez układu RFID nie można zakodować radiowo. Materiały są sprzedawane osobno.
-
-## Łączność i integracja
-
-Standard obejmuje USB, RS-232 i Ethernet 10/100. Kolorowy wyświetlacz 3,5 cala oraz przyciski służą do konfiguracji urządzenia. Wi-Fi wymaga osobno kupowanego modułu [P220015-901](/produkt/printronix-wifi-p220015-901).
-
-Obsługa emulacji języków drukarek ułatwia przygotowanie szablonów. Kodowanie RFID wymaga właściwych poleceń oraz powiązania identyfikatora EPC z danymi w WMS lub ERP. Sam nadruk kodu kreskowego lub wydruk PDF nie zapisuje danych radiowych.
-
-## Wyposażenie i części zamienne
-
-Pokazany PN ma ręczne odrywanie etykiet. Nie obejmuje obcinaka, nawijaka ani weryfikatora kodów ODV-2D. ODV-2D jest odrębną opcją kontroli jakości nadruku. Obecność RFID nie oznacza wyposażenia w ten weryfikator.
-
-Głowica RFID ${dpi} dpi o numerze ${head} jest przeznaczona do odpowiednich urządzeń T6000e w wersji V2/V3. Przed zakupem części potwierdź wersję sprzętową i numer seryjny drukarki. Nie zastępuj jej głowicą oznaczoną Non-RFID ani częścią o innej rozdzielczości.
-
-${dpi === 203 ? 'Jeśli potrzebujesz drobniejszego nadruku, sprawdź [T6304e RFID](/produkt/tsc-printronix-t6304e-rfid) z rozdzielczością 300 dpi.' : 'Jeśli priorytetem jest szybszy nadruk, sprawdź [T6204e RFID](/produkt/tsc-printronix-t6204e-rfid) z rozdzielczością 203 dpi.'} Do kompaktowego stanowiska RFID sprawdź także [TSC MB241TR](/produkt/tsc-mb241tr) i [MB341TR](/produkt/tsc-mb341tr).`,
+    ...t6Copy[model],
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'tsc',
     tags: ['magazyn', 'logistyka', 'produkcja'], images: ['/images/products/printronix-t6000e-rfid.png'], imageDescriptions: [`Printronix ${model} RFID — przemysłowa drukarka 4 cale z wyświetlaczem i wysuniętą etykietą`],
     availability: 'unavailable', isNew: true, isBestseller: false,
@@ -77,13 +139,6 @@ ${dpi === 203 ? 'Jeśli potrzebujesz drobniejszego nadruku, sprawdź [T6304e RFI
     ] },
     applications: ['Druk i kodowanie etykiet RFID na towary oraz opakowania', 'Oznaczanie pojemników i wyposażenia', 'Przygotowanie oznaczeń do procesów produkcyjnych i logistycznych'],
     compatibleAccessories: [], relatedAccessories: ['printronix-t6000e-wifi', `printronix-t6000e-head-${dpi}-rfid`],
-    faq: [
-      { question: `Czy ${model} w tej konfiguracji ma RFID?`, answer: `Tak. PN ${pn} obejmuje UHF RFID i przewód zasilający EU. Konfiguracje T6000e bez RFID mają inne numery katalogowe.` },
-      { question: 'Czy Wi-Fi i ODV-2D są w zestawie?', answer: 'Nie. Ten PN ma USB, RS-232 i Ethernet oraz ręczne odrywanie. Wi-Fi wymaga opcjonalnego modułu. Weryfikator ODV-2D jest osobną opcją, niezależną od kodera RFID.' },
-      { question: 'Czy można drukować etykiety RFID na metal?', answer: 'Tak, po dobraniu zgodnego materiału, wkładki i ustawień. Samo określenie „na metal” nie potwierdza zgodności każdej etykiety. Sprawdź zapis i odczyt na docelowym przedmiocie.' },
-      { question: 'Jak dobrać głowicę do wersji RFID?', answer: `Dla ${dpi} dpi wybierz ${head} do wersji V2/V3. Przed zakupem potwierdź numer seryjny i wersję sprzętową. Głowica Non-RFID nie jest automatycznym zamiennikiem.` },
-      { question: 'Czy drukarka odczyta towary na regałach?', answer: 'Nie służy do radiowej inwentaryzacji regałów. Przygotowuje etykiety w swoim torze materiałów. Do odczytu towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    ],
     downloads: [{ name: 'Karta katalogowa T6000e i RFID (EN)', type: 'datasheet', url: datasheet, size: 'PDF' }, { name: 'Instrukcje, sterowniki i wsparcie TSC Printronix', type: 'driver', url: support, size: 'Online' }],
     relatedProducts: [...ids.filter(id => id !== slug), 'tsc-mb241tr', 'tsc-mb341tr', 'zebra-zt411-rfid'], createdAt: '2026-10-16', sameAs: support,
   } satisfies Product
@@ -105,7 +160,7 @@ export const tscT6000eRfidAccessories: Product[] = [{
 ].map(({ dpi, pn, model, printer }): Product => ({
   id: `printronix-t6000e-head-${dpi}-rfid`, slug: `printronix-glowica-rfid-${pn.toLowerCase()}`, name: `Głowica Printronix ${model} RFID ${dpi} dpi — V2/V3`,
   shortDescription: `Głowica ${pn}, ${dpi} dpi, 4 cale, RFID do odpowiednich drukarek T6000e V2/V3. Przed zakupem sprawdź wersję sprzętową.`,
-  description: `Printronix ${pn} to głowica drukująca ${dpi} dpi do 4-calowych drukarek T6000e RFID w wersji V2/V3, w tym odpowiedniej wersji ${model}. Przed zakupem podaj numer seryjny i potwierdź wersję sprzętową. Nie traktuj tej części jako uniwersalnej głowicy do całej rodziny T6000e. Nie zastępuje głowicy o innej rozdzielczości ani części Non-RFID. Głowica wykonuje nadruk i nie dodaje kodera RFID. Zestaw obejmuje jedną głowicę. Zdjęcie jest poglądowe. Wymianę zleć serwisowi.`,
+  description: `Printronix ${pn} to głowica drukująca ${dpi} dpi do 4-calowych drukarek T6000e RFID w wersji V2/V3, w tym odpowiedniej wersji ${model}. Przed zakupem podaj numer seryjny i potwierdź wersję sprzętową. Nie zastępuje głowicy o innej rozdzielczości ani części Non-RFID. Głowica wykonuje nadruk i nie dodaje kodera RFID. Zestaw obejmuje jedną głowicę. Zdjęcie jest poglądowe. Wymianę zleć serwisowi.`,
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'tsc', tags: ['magazyn', 'produkcja'],
   images: ['/images/products/printronix-rfid-printhead.webp'], imageDescriptions: [`Głowica Printronix ${pn} do T6000e RFID V2/V3 — zdjęcie poglądowe`],
   specifications: [{ name: 'Part Number', value: pn }, { name: 'Rozdzielczość', value: `${dpi} dpi` }, { name: 'Szerokość', value: '4 cale' }, { name: 'Zgodność', value: `${model} RFID w wersji V2/V3; wymagane potwierdzenie wersji i numeru seryjnego` }],

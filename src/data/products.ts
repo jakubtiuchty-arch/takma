@@ -10907,15 +10907,15 @@ Rozbudowa o RFID wymaga zgodnego zestawu i doboru regionalnego modułu. Fabryczn
     ],
     faq: [
       { question: 'Ile kosztuje drukarka Honeywell PM45?', answer: 'Ceny Honeywell PM45 zaczynają się od 4 823 zł netto za wariant DT-only PM45A00000000210 (203 dpi, wyświetlacz ikonowy). Wariant TT+DT z ekranem dotykowym i Ethernet (PM45A10000000200) — od 5 149 zł netto. Wersja z BT+Wi-Fi (PM45A12000000200) — od 7 006 zł netto. Warianty 600 dpi od 9 983 zł netto.' },
-      { question: 'Czym Honeywell PM45 różni się od PD45/PD45S?', answer: 'Honeywell PM45 to pełna drukarka przemysłowa (full industrial), podczas gdy [Honeywell PD45](/produkt/honeywell-pd45) / [PD45S](/produkt/honeywell-pd45s) to klasa semi-industrial. PM45 ma: 4 rozdzielczości (vs 2 w PD45), wyższą prędkość (350 vs 200–250 mm/s), Gigabit Ethernet (vs 100 Mbps), podwojoną pamięć Flash (512 vs 128–256 MB), interfejs przemysłowy I/O, opcję RFID UHF i WWAN LTE. PD45 jest tańsza (od 2 274 zł) — dla mniejszych wolumenów.' },
+      { question: 'Czym Honeywell PM45 różni się od PD45/PD45S?', answer: 'Honeywell PM45 to pełna drukarka przemysłowa (full industrial), podczas gdy [Honeywell PD45](/produkt/honeywell-pd45) / [PD45S](/produkt/honeywell-pd45s) to klasa semi-industrial. PM45 ma: 4 rozdzielczości (vs 2 w PD45), wyższą prędkość (350 vs 200–250 mm/s), podwojoną pamięć Flash (512 vs 128–256 MB), interfejs przemysłowy I/O, opcję RFID UHF i WWAN LTE. PD45 jest tańsza — dla mniejszych wolumenów.' },
       { question: 'Czy Honeywell PM45 obsługuje szablony Zebra ZPL?', answer: 'Tak. Honeywell PM45 obsługuje emulację ZSim2 (ZPL-II) — szablony etykiet zaprojektowane dla drukarek Zebra działają bez zmian. Ponadto PM45 obsługuje: Fingerprint (FP), Direct Protocol (DP), IPL (Intermec), DPL (Datamax), C# Smart Printing i XML. Migracja z Zebra, Datamax lub Intermec nie wymaga przepisywania kodu etykiet.' },
-      { question: 'Honeywell PM45 czy Zebra ZT411 — co wybrać?', answer: 'Honeywell PM45 wygrywa: 4 rozdzielczości (vs 3 w ZT411), szybszy druk 300 dpi (12 vs 10 ips), Gigabit Ethernet, BT 5.0, modem LTE, interfejs przemysłowy (I/O + relays), C# Smart Printing, niższa cena (od 4 823 vs 5 080+ zł), 6 emulacji języków. [Zebra ZT411](/produkt/zebra-zt411) wygrywa: większy ekran 4,3", głowica E3 Element Energy Equalizer, 2 lata gwarancji (vs 1 rok), ekosystem Link-OS / Print DNA, serwis [serwis-zebry.pl](https://www.serwis-zebry.pl), opcja linerless. Dla integracji z PLC → PM45. Dla ekosystemu Zebra → ZT411.' },
-      { question: 'Honeywell PM45 czy Zebra ZT610 — co wybrać?', answer: 'Honeywell PM45 kosztuje ponad 2× mniej niż [Zebra ZT610](/produkt/zebra-zt610) (od 4 823 vs 10 430+ zł), oferując porównywalną specyfikację druku. PM45 ma lepszą łączność (Gigabit ETH, BT 5.0, LTE). ZT610 wygrywa pamięcią (1 GB RAM / 2 GB Flash vs 256 MB / 512 MB), wyświetlaczem (4,3" vs 3,5"), gwarancją (2 lata) i ekosystemem Zebra. Dla budżetowych wdrożeń przemysłowych → PM45. Dla premium 24/7 z ekosystemem Zebra → ZT610.' },
-      { question: 'Czy Honeywell PM45 obsługuje RFID?', answer: 'Tak. Honeywell PM45 obsługuje opcjonalny moduł RFID UHF (EPC Class 1 Gen2, ISO 18000-6C) do kodowania i druku etykiet RFID. To jedyna drukarka Honeywell w segmencie 4" z opcją RFID. Minimalna wysokość etykiety RFID: 25,4 mm (1"). Alternatywa Zebra z RFID: [Zebra ZT411](/produkt/zebra-zt411).' },
+      { question: 'Honeywell PM45 czy Zebra ZT411 — co wybrać?', answer: 'Honeywell PM45 wygrywa: 4 rozdzielczości (vs 3 w ZT411), szybszy druk 300 dpi (12 vs 10 ips), BT 5.0, modem LTE, interfejs przemysłowy (I/O + relays), C# Smart Printing, 6 emulacji języków. [Zebra ZT411](/produkt/zebra-zt411) wygrywa: większy ekran 4,3", głowica E3 Element Energy Equalizer, 2 lata gwarancji (vs 1 rok), ekosystem Link-OS / Print DNA, serwis [serwis-zebry.pl](https://www.serwis-zebry.pl), opcja linerless. Dla integracji z PLC → PM45. Dla ekosystemu Zebra → ZT411.' },
+      { question: 'Honeywell PM45 czy Zebra ZT610 — co wybrać?', answer: 'Honeywell PM45 i [Zebra ZT610](/produkt/zebra-zt610) mają porównywalną specyfikację druku. PM45 ma opcjonalny Bluetooth 5.0 i modem LTE. ZT610 wygrywa pamięcią (1 GB RAM / 2 GB Flash vs 256 MB / 512 MB), wyświetlaczem (4,3" vs 3,5"), gwarancją (2 lata) i ekosystemem Zebra. Dla budżetowych wdrożeń przemysłowych → PM45. Dla premium 24/7 z ekosystemem Zebra → ZT610.' },
+      { question: 'Czy Honeywell PM45 obsługuje RFID?', answer: 'Tak. Fabryczne konfiguracje z koderem UHF RFID dla Europy znajdziesz na karcie [Honeywell PM45 RFID](/produkt/honeywell-pm45-rfid). Inne wersje PM45 można rozbudować o zgodny [moduł RFID UHF](/produkt/honeywell-pm45-modul-rfid). Moduł koduje etykiety EPC Class 1 Gen2 (ISO 18000-6C). Minimalna wysokość etykiety RFID: 25,4 mm (1"). Fabryczny koder RFID w segmencie 4" ma też [Honeywell PX45 RFID](/produkt/honeywell-px45-rfid). Alternatywa Zebra z RFID: [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).' },
       { question: 'Czy Honeywell PM45 ma modem LTE?', answer: 'Tak. Honeywell PM45 jako pierwsza przemysłowa drukarka etykiet na rynku oferuje opcjonalny modem WWAN CAT4 LTE (M2M/IoT). Umożliwia druk i zarządzanie drukarką przez sieć komórkową — idealne dla lokalizacji bez infrastruktury Wi-Fi/Ethernet (place budowy, magazyny tymczasowe, eventy).' },
       { question: 'Jakie głowice pasują do Honeywell PM45?', answer: 'Honeywell PM45 obsługuje 4 głowice drukujące: 203 dpi (50180236-001, od 1 713 zł), 300 dpi (50180237-001, od 2 175 zł), 406 dpi (50180238-001, od 3 624 zł), 600 dpi (50180234-001, od 3 485 zł). Wymiana głowicy bez narzędzi — szybki serwis na linii produkcyjnej. Wałek dociskowy (50180235-001) — od 229 zł.' },
       { question: 'Czym Honeywell PM45 różni się od PM45C?', answer: 'PM45C to kompaktowa wersja PM45 — identyczne parametry druku, ale mniejsza obudowa (432 × 181 × 253 mm vs 483 × 295 × 284 mm). PM45C mieści krótsze ribbony (229 m vs 450 m) i mniejsze rolki (152 mm vs 213 mm). PM45C jest idealna do ciasnych przestrzeni na liniach produkcyjnych i w szafach sterowniczych. Opcja "Mega Door" zwiększa pojemność mediów PM45C.' },
-      { question: 'Jakie są alternatywy dla Honeywell PM45?', answer: 'Główne alternatywy drukarek przemysłowych 4": [Zebra ZT411](/produkt/zebra-zt411) (od 5 080 zł, RFID opcja, LCD 4,3", Print DNA), [Zebra ZT610](/produkt/zebra-zt610) (premium, od 10 430 zł, 1 GB RAM), [Honeywell PD45S](/produkt/honeywell-pd45s) (semi-industrial, od 2 785 zł, tańsza alternatywa). PM45 wyróżnia się najszerszą łącznością (Gigabit ETH + BT 5.0 + LTE) i interfejsem przemysłowym do integracji z PLC.' },
+      { question: 'Jakie są alternatywy dla Honeywell PM45?', answer: 'Główne alternatywy drukarek przemysłowych 4": [Zebra ZT411](/produkt/zebra-zt411) (LCD 4,3", Print DNA; z koderem RFID jako [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid)), [Zebra ZT610](/produkt/zebra-zt610) (premium, 1 GB RAM), [Honeywell PD45S](/produkt/honeywell-pd45s) (semi-industrial, tańsza alternatywa). PM45 wyróżnia się opcjonalnym Bluetooth 5.0, modemem LTE i interfejsem przemysłowym do integracji z PLC.' },
     ],
     comparison: {
       title: 'Porównanie drukarek przemysłowych Honeywell 4" — PD45 vs PD45S vs PM45',
@@ -10963,7 +10963,7 @@ Rozbudowa o RFID wymaga zgodnego zestawu i doboru regionalnego modułu. Fabryczn
             'Prędkość': 'do 350 mm/s',
             'Szerokość druku': '108 mm (4,25")',
             'Wyświetlacz': 'LED / Dotykowy LCD 3,5"',
-            'Łączność': 'USB (×2), Gigabit Ethernet, RS-232',
+            'Łączność': 'USB (×2), Ethernet 10/100, RS-232',
             'Wi-Fi': 'Opcja (802.11ac + BT 5.0 + LTE)',
             'GPIO / I/O': 'Opcja (8 I/O + 4 przekaźniki)',
             'RFID': 'Opcja (UHF)',
@@ -10976,7 +10976,7 @@ Rozbudowa o RFID wymaga zgodnego zestawu i doboru regionalnego modułu. Fabryczn
     },
     relatedProducts: ['honeywell-px45', 'honeywell-pm65', 'zebra-zt411', 'honeywell-pd45s', 'zebra-zt610'],
     createdAt: '2026-03-09',
-    updatedAt: '2026-03-09',
+    updatedAt: '2026-10-17',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/pm45-industrial-printer',
   },
   // Honeywell PM65 — drukarka przemysłowa 6-calowa
@@ -11397,7 +11397,7 @@ Rodzina umożliwia rozbudowę o zgodny moduł RFID. Fabryczne europejskie konfig
       { name: 'Pamięć Flash', value: '512 MB' },
       { name: 'Wyświetlacz', value: 'LCD 2,36″ z klawiaturą' },
       { name: 'USB', value: 'USB 2.0 Device + Host (High Speed)' },
-      { name: 'Ethernet', value: '10/100/1000 Mbps (Gigabit)' },
+      { name: 'Ethernet', value: '10/100 Mb/s' },
       { name: 'RS-232', value: 'Do 115,2 kB/s' },
       { name: 'Wi-Fi', value: '802.11 a/b/g/n/ac — opcja' },
       { name: 'Parallel', value: 'IEEE 1284 — opcja' },
@@ -11433,8 +11433,8 @@ Rodzina umożliwia rozbudowę o zgodny moduł RFID. Fabryczne europejskie konfig
     ],
     faq: [
       { question: 'Ile kosztuje drukarka Honeywell PX45?', answer: 'Ceny Honeywell PX45 zaczynają się od 10 508 zł netto za wariant bazowy PX45A00000000200 (203 dpi, Ethernet). Wariant 300 dpi — od 10 648 zł, 406 dpi — od 12 642 zł. Z nawijakiem: od 12 194 zł. Z Wi-Fi: od 12 280 zł. Najdroższy wariant z Wi-Fi + gilotyna (PX45A02000030200) — od 16 020 zł netto.' },
-      { question: 'Czym Honeywell PX45 różni się od PM45?', answer: 'PX45 to linia premium (następca PX4ie), [PM45](/produkt/honeywell-pm45) to linia mid-range. PX45 ma: całkowicie metalową obudowę, magnetyczną głowicę QuickMount (wymiana ~30 s), Gigabit Ethernet i wydajność >10 000 etykiet/dzień. PM45 wygrywa: szybszym drukiem (350 vs 300 mm/s), dotykowym ekranem, rozdzielczością 600 dpi, opcją modemu LTE i niższą ceną (od 4 823 zł). PX45 dla najtrudniejszych warunków mission-critical, PM45 dla standardowych zastosowań przemysłowych.' },
-      { question: 'Honeywell PX45 czy Zebra ZT411 — co wybrać?', answer: '[Zebra ZT411](/produkt/zebra-zt411) jest szybsza (356 vs 300 mm/s), ma dotykowy ekran 4,3″, rolki do 254 mm OD, 2 lata gwarancji i niższą cenę (od ~5 100 zł). PX45 ma trwalszą metalową obudowę, magnetyczną głowicę QuickMount, Gigabit Ethernet i natywną emulację Fingerprint/DP/IPL. PX45 lepszy dla firm już używających drukarek Honeywell/Intermec i wymagających mission-critical niezawodności.' },
+      { question: 'Czym Honeywell PX45 różni się od PM45?', answer: 'PX45 to linia premium (następca PX4ie), [PM45](/produkt/honeywell-pm45) to linia mid-range. PX45 ma: całkowicie metalową obudowę, magnetyczną głowicę QuickMount (wymiana ~30 s) i wydajność >10 000 etykiet/dzień. PM45 wygrywa: szybszym drukiem (350 vs 300 mm/s), dotykowym ekranem, rozdzielczością 600 dpi, opcją modemu LTE i niższą ceną (od 4 823 zł). PX45 dla najtrudniejszych warunków mission-critical, PM45 dla standardowych zastosowań przemysłowych.' },
+      { question: 'Honeywell PX45 czy Zebra ZT411 — co wybrać?', answer: '[Zebra ZT411](/produkt/zebra-zt411) jest szybsza (356 vs 300 mm/s), ma dotykowy ekran 4,3″, rolki do 254 mm OD, 2 lata gwarancji i niższą cenę (od ~5 100 zł). PX45 ma trwalszą metalową obudowę, magnetyczną głowicę QuickMount i natywną emulację Fingerprint/DP/IPL. PX45 lepszy dla firm już używających drukarek Honeywell/Intermec i wymagających mission-critical niezawodności.' },
       { question: 'Honeywell PX45 czy Zebra ZT610 — porównanie', answer: 'Oba to drukarki premium z metalową obudową. [Zebra ZT610](/produkt/zebra-zt610) jest szybsza (356 vs 300 mm/s), ma 600 dpi, 1 GB RAM, rolki do 254 mm OD i dotykowy ekran 4,3″. PX45 jest lżejsza (12,6 vs ~20 kg), bardziej kompaktowa i ma QuickMount głowicę. ZT610 cena od ~10 430 zł, PX45 od 10 508 zł — zbliżony segment cenowy, ale ZT610 oferuje więcej pamięci i rozdzielczości.' },
       { question: 'Czy PX45 zastępuje PX4ie?', answer: 'Tak. Honeywell PX45 to następca PX4ie — współdzieli głowice drukujące (1-040082-900, 1-040083-900), obcinarkę i wałek. PX45 dodaje: Wi-Fi 802.11ac, platformę Printer Edge do zdalnego zarządzania, lepszą emulację ZPL (ZSim2) i obsługę C# Smart Printing. Migracja z PX4ie jest prosta — te same języki programowania (Fingerprint, DP, IPL).' },
       { question: 'Jak szybko można wymienić głowicę w PX45?', answer: 'Dzięki magnetycznej technologii QuickMount wymiana głowicy w PX45 trwa około 30 sekund bez narzędzi — wystarczy odsunąć głowicę i zatrzasnąć nową. To unikalna cecha linii PX — w Zebra ZT411/ZT610 wymiana wymaga odkręcania śrub. Głowice: 203 dpi (1-040082-900, od 1 327 zł), 300 dpi (1-040083-900, od 1 397 zł), 406 dpi (850-812-900, od 3 524 zł).' },
@@ -11455,7 +11455,7 @@ Rodzina umożliwia rozbudowę o zgodny moduł RFID. Fabryczne europejskie konfig
             'Prędkość': 'do 300 mm/s',
             'Szerokość druku': '110 mm (4,3")',
             'Wyświetlacz': 'LCD 2,36" z klawiaturą',
-            'Łączność': 'USB, Gigabit Ethernet, RS-232',
+            'Łączność': 'USB, Ethernet 10/100, RS-232',
             'Wi-Fi': 'Opcja (802.11ac)',
             'Obudowa': 'Metalowa, QuickMount głowica',
             'Weryfikacja kodów': 'Brak',
@@ -11487,7 +11487,7 @@ Rodzina umożliwia rozbudowę o zgodny moduł RFID. Fabryczne europejskie konfig
     },
     relatedProducts: ['honeywell-px65', 'honeywell-pm45', 'zebra-zt610', 'zebra-zt411', 'honeywell-pm65'],
     createdAt: '2026-03-09',
-    updatedAt: '2026-03-09',
+    updatedAt: '2026-10-17',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/printers/industrial-printers/px45-industrial-printer',
   },
   {
@@ -55431,7 +55431,9 @@ Idealny do druku biletów, paragonów, etykiet bez podkładu i nośników ciąg�
     shortDescription: 'Moduł RFID UHF (RFID Tag Kit) do Honeywell PM45 (50180233-001) — kodowanie etykiet EPC Class 1 Gen2.',
     description: `Oryginalny moduł RFID UHF do drukarki przemysłowej Honeywell PM45. Umożliwia jednoczesne drukowanie i kodowanie etykiet RFID UHF (EPC Class 1 Gen2, ISO 18000-6C). Montaż w terenie.
 
-Minimalna wysokość etykiety RFID: 25,4 mm (1"). Wymagane inlaye RFID UHF kompatybilne z modułem.`,
+Minimalna wysokość etykiety RFID: 25,4 mm (1"). Wymagane inlaye RFID UHF kompatybilne z modułem.
+
+Drukarkę z fabrycznie zamontowanym koderem UHF RFID dla Europy znajdziesz na karcie [Honeywell PM45 RFID](/produkt/honeywell-pm45-rfid).`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'honeywell',
@@ -55454,6 +55456,7 @@ Minimalna wysokość etykiety RFID: 25,4 mm (1"). Wymagane inlaye RFID UHF kompa
     relatedAccessories: [],
     downloads: [],
     createdAt: '2026-03-09',
+    updatedAt: '2026-10-17',
   },
   {
     id: 'honeywell-pm45-prowadnica-mediow',
@@ -56691,7 +56694,7 @@ const mobilePrinterAccessories: Product[] = [
   },
   {
     id: 'zebra-battery-zq630',
-    slug: 'zebra-bateria-6800mah-zq630-plus',
+    slug: 'zebra-bateria-6600mah-zq630-plus',
     name: 'Bateria PowerPrecision+ Zebra ZQ630 Plus / RFID — BTRY-MPP-68MA1-01',
     shortDescription: 'Bateria Zebra BTRY-MPP-68MA1-01 zasila ZQ630 i ZQ630 Plus, także wersje RFID, oraz QLn420.',
     description: `Bateria Zebra BTRY-MPP-68MA1-01 zasila ZQ630 i ZQ630 Plus, także wersje RFID, oraz QLn420. Ma nominalnie 6600 mAh i 47,5 Wh. PowerPrecision+ udostępnia dane o stanie baterii. Ładuj ją w drukarce ze zgodnym zasilaczem albo w zgodnej ładowarce baterii. Przed wymianą postępuj zgodnie z instrukcją urządzenia.`,
@@ -84221,7 +84224,7 @@ Obsługuje rolki do 8" OD (203 mm) na rdzeniu 1" lub 3" — rzadsza wymiana mate
     name: 'TSC MB241T',
     shortDescription: 'TSC MB241T — drukarka przemysłowa 4" z dotykowym LCD 3,5", 305 mm/s, bifold door, RFID opcja, emulacja ZPL',
     seoTitle: 'TSC MB241T — drukarka przemysłowa 4" | od 2 779 zł',
-    seoDescription: 'TSC MB241T — przemysłowa drukarka etykiet 4", 305 mm/s, bifold door, dotykowy LCD 3,5", obsługa hang-tagów do 0,28 mm, RFID opcja. Od 2 779 zł netto.',
+    seoDescription: 'TSC MB241T — przemysłowa drukarka etykiet 4", 203 dpi, 305 mm/s, bifold door, dotykowy LCD 3,5", hang-tagi do 0,28 mm. Wersja z RFID UHF: TSC MB241TR.',
     description: `TSC MB241T to [drukarka przemysłowa](/przemyslowe-drukarki-etykiet) (industrial) 4" ze składanym mechanizmem drzwi bifold, która zajmuje o 24% mniej miejsca na stanowisku niż drukarki z tradycyjnie uchylną pokrywą. Dla firm produkcyjnych, logistycznych i magazynowych wymagających drukarki przemysłowej o dużej prędkości (305 mm/s) z metalową konstrukcją i dotykowym wyświetlaczem.
 
 Do druku i kodowania etykiet UHF RFID wybierz [TSC MB241TR](/produkt/tsc-mb241tr). Pokazany PN zwykłej MB241T nie obejmuje kodera RFID.
@@ -84433,7 +84436,7 @@ TSC MB241T ma 100% recyclable obudowę i opakowanie oraz certyfikat ENERGY STAR.
     name: 'TSC MB341T',
     shortDescription: 'TSC MB341T — drukarka przemysłowa 4" 300 dpi z dotykowym LCD 3,5", 228,6 mm/s, bifold door, emulacja ZPL',
     seoTitle: 'TSC MB341T — drukarka etykiet 4" 300 dpi | od 3 273 zł',
-    seoDescription: 'TSC MB341T — przemysłowa drukarka etykiet 4" 300 dpi, do 228,6 mm/s, bifold door, hang-tagi do 0,28 mm, RFID opcja. Od 3 273 zł.',
+    seoDescription: 'TSC MB341T — przemysłowa drukarka etykiet 4" 300 dpi, do 228,6 mm/s, bifold door, hang-tagi do 0,28 mm. Wersja z koderem UHF RFID: TSC MB341TR.',
     description: `TSC MB341T to wersja 300 dpi [drukarki przemysłowej](/przemyslowe-drukarki-etykiet) [TSC MB241T](/produkt/tsc-mb241t). Drukuje w rozdzielczości 300 dpi z prędkością do 228,6 mm/s i szerokością do 105,7 mm. Dla porównania [Zebra ZT231](/produkt/zebra-zt231) w trybie 300 dpi zwalnia do 203 mm/s (8 ips).
 
 Do druku i kodowania etykiet UHF RFID wybierz [TSC MB341TR](/produkt/tsc-mb341tr). Pokazany PN zwykłej MB341T nie obejmuje kodera RFID.

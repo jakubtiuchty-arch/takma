@@ -4,6 +4,90 @@ const ids = ['tsc-mb241tr', 'tsc-mb341tr']
 const manual = '/downloads/tsc-mb241-instrukcja-en.pdf'
 const datasheet = '/downloads/tsc-mb241-karta-produktu-en.pdf'
 
+type MbCopy = Pick<Product, 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'faq'>
+
+const mbCopy: Record<string, MbCopy> = {
+  MB241TR: {
+    seoTitle: 'TSC MB241TR — drukarka RFID UHF 203 dpi',
+    seoDescription: 'TSC MB241TR: przemysłowa drukarka i koder UHF RFID 203 dpi. Druk 107 mm z prędkością 304,8 mm/s, rolka 203 mm, taśma 450 m, ekran dotykowy.',
+    shortDescription: 'Przemysłowa drukarka i koder UHF RFID 203 dpi. Druk do 107 mm z prędkością do 304,8 mm/s, rolka do 203,2 mm, taśma 450 m i ekran dotykowy 3,5 cala.',
+    description: `TSC MB241TR to drukarka przemysłowa z fabrycznym koderem UHF RFID i głowicą 203 dpi. Mieści rolkę etykiet o średnicy do 203,2 mm i taśmę 450 m. Pasuje do linii pakowania, magazynu i działu wysyłki.
+
+## Większe rolki niż w drukarce biurkowej
+
+Rolka etykiet może mieć do 203,2 mm średnicy na gilzie 25,4–76,2 mm. Taśma barwiąca ma do 450 m długości, a jej szerokość wynosi 40–110 mm. Przy takiej pojemności rzadziej zatrzymujesz pracę na wymianę materiału. Składana pokrywa komory materiału potrzebuje mniej miejsca przy otwieraniu.
+
+Głowica 203 dpi drukuje 8 punktów na milimetr. Wystarcza do etykiet kartonowych, wysyłkowych i lokalizacyjnych. MB241TR drukuje z prędkością do 304,8 mm/s na szerokości do 107 mm. Jeden wydruk może mieć do 25 400 mm długości.
+
+## Kodowanie wkładek UHF
+
+Koder zapisuje pasywne etykiety RAIN UHF zgodne z EPC Gen2 v2 i ISO 18000-63. Wkładki mogą być ułożone co 15,9 mm. W wersji z ręcznym odrywaniem drukarka obsługuje etykiety RFID na metal o grubości do 1,65 mm. Kalibrację materiału i RFID wykonaj przy pierwszej rolce i po każdej zmianie materiału.
+
+Polecenia kodowania wysyłaj w TSPL lub ZPL. Drukarka korzysta z języka TSPL-EZD, który emuluje także inne języki drukarek etykiet.
+
+## Wyposażenie MB241TR-A001-0202
+
+- koder UHF RFID, wersja EU/EMEA,
+- ręczne odrywanie etykiet,
+- kolorowy ekran dotykowy 3,5 cala,
+- USB, USB Host, RS-232, Ethernet i zegar RTC.
+
+Wi-Fi jako opcja: moduł [WF-COM-2002](/produkt/tsc-modul-wifi-bluetooth). Dodaje Wi-Fi i Bluetooth i jest sprzedawany osobno. Wersja RFID z obcinakiem to osobna konfiguracja fabryczna. Zwykła gilotyna z serii MB jej nie zastąpi.
+
+Rolki etykiet RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary etykiety, gilzę i średnicę rolki. Dobierzemy materiał do MB241TR i położenie wkładki.
+
+## Gwarancja i porównanie
+
+Drukarka ma 2 lata gwarancji. Głowica ma ochronę przez 12 miesięcy lub 25 km druku, wałek przez 12 miesięcy lub 50 km. Obowiązuje warunek, który wystąpi wcześniej. Zamienna głowica 203 dpi ma numer PH-MB240-0001.
+
+Do samego nadruku wystarczy [TSC MB241T](/produkt/tsc-mb241t). Do drobnego nadruku wybierz [MB341TR](/produkt/tsc-mb341tr) z głowicą 300 dpi.`,
+    faq: [
+      { question: 'Czym MB241TR różni się od zwykłej MB241T?', answer: 'Zwykła MB241T nie ma kodera RFID. Do kodowania etykiet wybierz MB241TR. Obie drukarki mają głowicę 203 dpi i ekran dotykowy 3,5 cala.' },
+      { question: 'Czy MB241TR ma Wi-Fi?', answer: 'Nie w standardzie. Wi-Fi jako opcja: moduł WF-COM-2002, który dodaje także Bluetooth. Standardowo drukarka ma Ethernet, USB, USB Host i RS-232.' },
+      { question: 'Jak gruba może być etykieta RFID na metal?', answer: 'Do 1,65 mm w wersji z ręcznym odrywaniem. Podaj nam typ etykiety i powierzchnię przedmiotu. Dobierzemy etykietę i ustawienia zapisu.' },
+      { question: 'Czy do MB241TR można dołożyć zwykłą gilotynę MB?', answer: 'Nie. Wersja RFID z obcinakiem to osobna konfiguracja fabryczna. Jeśli potrzebujesz cięcia etykiet RFID, zapytaj nas o tę wersję.' },
+      { question: 'Jak duża rolka zmieści się w MB241TR?', answer: 'Rolka o średnicy do 203,2 mm na gilzie 25,4–76,2 mm. Taśma barwiąca może mieć do 450 m.' },
+    ],
+  },
+  MB341TR: {
+    seoTitle: 'TSC MB341TR — drukarka RFID UHF 300 dpi',
+    seoDescription: 'TSC MB341TR: przemysłowa drukarka i koder UHF RFID 300 dpi do etykiet produktowych z małymi kodami 2D. Druk 105,7 mm, 228,6 mm/s, taśma 450 m.',
+    shortDescription: 'Przemysłowa drukarka i koder UHF RFID 300 dpi do etykiet produktowych z drobnym tekstem. Druk do 105,7 mm z prędkością do 228,6 mm/s, ekran dotykowy.',
+    description: `TSC MB341TR drukuje z rozdzielczością 300 dpi i koduje etykiety UHF. Wybierz ją do etykiet produktowych i identyfikacyjnych, na których jest drobny tekst, numer seryjny i mały kod 2D.
+
+## Drobny nadruk w drukarce przemysłowej
+
+Głowica ma 11,8 punktu na milimetr. Moduł kodu DataMatrix o wielkości 0,25 mm drukuje się z 3 punktów. Kod jest ostrzejszy niż przy 203 dpi i łatwiej go odczytać skanerem. Ten model sprawdza się przy etykietach części w produkcji, etykietach elektroniki i oznaczeniach wyrobów z opisem w kilku językach.
+
+Prędkość druku wynosi do 228,6 mm/s, a szerokość do 105,7 mm. Najdłuższy wydruk ma 11 430 mm. Do etykiet wysyłkowych z dużymi kodami szybsza jest [MB241TR](/produkt/tsc-mb241tr): drukuje do 304,8 mm/s.
+
+## Etykieta RFID i miejsce na nadruk
+
+MB341TR koduje pasywne wkładki RAIN UHF w standardzie EPC Gen2 v2 i ISO 18000-63, z rozstawem od 15,9 mm. Nie drukuj małego kodu 2D bezpośrednio nad układem wkładki. Nierówna powierzchnia nad układem pogarsza jakość nadruku. W wersji z ręcznym odrywaniem drukarka obsługuje etykiety na metal o grubości do 1,65 mm.
+
+Szablon musi zawierać polecenia RFID w TSPL lub ZPL. Bez nich drukarka wykona tylko nadruk.
+
+## Materiały i taśmy
+
+Materiał może mieć 20–120 mm szerokości, a rolka do 203,2 mm średnicy. Taśma ma do 450 m długości i 40–110 mm szerokości. Do drobnego tekstu na etykietach foliowych wybierz taśmę żywiczną. Etykiety papierowe zwykle drukuje się taśmą woskowo-żywiczną.
+
+Ofertę etykiet znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem prześlij nam projekt etykiety. Dobierzemy rolkę do MB341TR tak, aby wkładka nie kolidowała z drobnym nadrukiem.
+
+## Konfiguracja MB341TR-A001-0202
+
+Wersja EU/EMEA ma koder UHF RFID i ręczne odrywanie etykiet. Ma ekran dotykowy 3,5 cala, zegar RTC, USB, USB Host, RS-232 i Ethernet. Wi-Fi jako opcja: moduł [WF-COM-2002](/produkt/tsc-modul-wifi-bluetooth) z Bluetooth.
+
+Gwarancja na drukarkę wynosi 2 lata. Głowica ma 12 miesięcy lub 25 km druku, wałek 12 miesięcy lub 50 km. Zamienna głowica 300 dpi ma numer [PH-MB240-0002](/produkt/tsc-glowica-mb341t-300dpi). Bez kodera RFID ten sam nadruk wykona [TSC MB341T](/produkt/tsc-mb341t).`,
+    faq: [
+      { question: 'Kiedy MB341TR jest lepsza od MB241TR?', answer: 'Gdy etykieta ma drobny tekst lub mały kod 2D. MB341TR ma 300 dpi, a MB241TR 203 dpi. MB241TR drukuje szybciej: do 304,8 mm/s zamiast 228,6 mm/s.' },
+      { question: 'Czy zwykła MB341T zakoduje etykietę RFID?', answer: 'Nie. Zwykła MB341T nie ma kodera RFID. Do kodowania etykiet wybierz MB341TR.' },
+      { question: 'Jaka taśma pasuje do drobnego nadruku w MB341TR?', answer: 'Do etykiet foliowych wybierz taśmę żywiczną, do papierowych zwykle woskowo-żywiczną. Taśma może mieć 40–110 mm szerokości i do 450 m długości.' },
+      { question: 'Jaką głowicę zamówić do MB341TR?', answer: 'Głowicę 300 dpi PH-MB240-0002. Pasuje także do MB341T. Przed wymianą odłącz zasilanie i poczekaj, aż głowica ostygnie.' },
+      { question: 'Czy MB341TR odczytuje etykiety na regałach?', answer: 'Nie. Drukarka koduje etykietę w swoim torze materiału. Do inwentaryzacji regałów potrzebny jest czytnik UHF RFID.' },
+    ],
+  },
+}
+
 export const tscMbRfidProducts: Product[] = [
   { model: 'MB241TR', pn: 'MB241TR-A001-0202', dpi: 203, width: '107', speed: '304,8', head: 'tsc-printhead-mb241t-203', ordinary: 'tsc-mb241t', other: ids[1] },
   { model: 'MB341TR', pn: 'MB341TR-A001-0202', dpi: 300, width: '105,7', speed: '228,6', head: 'tsc-printhead-mb341t-300', ordinary: 'tsc-mb341t', other: ids[0] },
@@ -11,46 +95,7 @@ export const tscMbRfidProducts: Product[] = [
   const slug = `tsc-${model.toLowerCase()}`
   return {
     id: slug, slug, name: `TSC ${model}`, seoH1: `TSC ${model}`,
-    seoTitle: `TSC ${model} — drukarka RFID ${dpi} dpi, EU | TAKMA`,
-    seoDescription: `TSC ${model}: przemysłowa drukarka UHF RFID ${dpi} dpi w wersji EU. Ekran dotykowy, Ethernet, taśma 450 m. Sprawdź cenę, dostępność i akcesoria.`,
-    shortDescription: `Przemysłowa drukarka UHF RFID ${dpi} dpi w wersji EU/EMEA. Druk do ${width} mm, ekran dotykowy 3,5 cala, Ethernet i ręczne odrywanie etykiet.`,
-    description: `TSC ${model} to przemysłowa drukarka z wbudowanym koderem UHF RFID. Drukuje tekst i kody oraz zapisuje dane w układzie zgodnej etykiety. PN ${pn} oznacza wersję EU/EMEA z ręcznym odrywaniem etykiet.
-
-## ${dpi === 203 ? 'RFID do etykiet towarów i opakowań' : 'Nadruk 300 dpi i kodowanie RFID'}
-
-${dpi === 203 ? 'Model MB241TR ma rozdzielczość 203 dpi i maksymalną prędkość nadruku 304,8 mm/s. Szerokość druku wynosi do 107 mm. Służy do przygotowania oznaczeń produktów, opakowań i pojemników.' : 'Model MB341TR ma rozdzielczość 300 dpi do drobniejszego tekstu i szczegółowych kodów. Maksymalna prędkość nadruku wynosi 228,6 mm/s, a szerokość druku 105,7 mm.'}
-
-Prędkość zadania RFID zależy także od etykiety, ilości danych i ustawień kodowania. Rozdzielczość druku nie określa zasięgu odczytu radiowego.
-
-## Etykiety UHF RFID i materiały na metal
-
-Koder obsługuje pasywne etykiety RAIN UHF, zgodne z EPC Gen2 v2 i ISO 18000-63. Minimalny rozstaw kolejnych etykiet wynosi 15,9 mm. Kalibrację materiału i RFID wykonaj przed rozpoczęciem serii oraz po zmianie materiału.
-
-Pokazana konfiguracja z ręcznym odrywaniem obsługuje zgodne etykiety RFID na metal o grubości do 1,65 mm. Limit grubości nie potwierdza zgodności każdej etykiety. Dobierz wkładkę, jej położenie i format rolki. Przed zakupem większej partii sprawdź zapis i odczyt na docelowym przedmiocie.
-
-## Rolki i taśmy barwiące
-
-Seria MB241 obsługuje materiał o szerokości 20–120 mm, rolki o średnicy do 203,2 mm i gilzy 25,4–76,2 mm. Druk termotransferowy wymaga taśmy barwiącej. Urządzenie mieści taśmę do 450 m, o szerokości 40–110 mm.
-
-Druk termiczny bezpośredni wymaga materiału termoczułego i nie wymaga taśmy. W obu metodach kodowanie RFID wymaga odpowiedniej wkładki. Etykiety i taśmy są sprzedawane osobno.
-
-## Łączność i obsługa
-
-Kolorowy ekran dotykowy 3,5 cala służy do konfiguracji materiału, druku i RFID. Standard obejmuje USB, USB Host, RS-232, Ethernet i zegar czasu rzeczywistego. Określenie Wi-Fi Ready oznacza przygotowanie do montażu modułu, a nie wbudowaną łączność bezprzewodową.
-
-Opcjonalny [WF-COM-2002](/produkt/tsc-modul-wifi-bluetooth) dodaje Wi-Fi i Bluetooth. Jest sprzedawany osobno. Składana pokrywa ułatwia dostęp do materiałów przy ograniczonym miejscu z boku drukarki.
-
-## Integracja i właściwe akcesoria
-
-Drukarka korzysta z TSPL-EZD. Kodowanie RFID wymaga odpowiednich poleceń TSPL lub ZPL oraz zgodnego oprogramowania. Sam nadruk kodu kreskowego lub wydruk PDF nie zapisuje danych w układzie RFID.
-
-Do serwisu dobierz głowicę ${dpi} dpi: ${dpi === 203 ? 'PH-MB240-0001' : 'PH-MB240-0002'}. Głowice o innej rozdzielczości nie są zamiennikami do prostego przełożenia. Pokazany PN nie zawiera obcinaka ani odklejaka. Wersja RFID z obcinakiem wymaga innej konfiguracji; nie zastępuje jej zwykła gilotyna MB.
-
-Jeśli potrzebujesz wyłącznie nadruku, sprawdź [TSC ${model.replace('TR', 'T')}](/produkt/${ordinary}). ${dpi === 203 ? 'Do drobniejszego nadruku wybierz [MB341TR](/produkt/tsc-mb341tr) z rozdzielczością 300 dpi.' : 'Jeśli priorytetem jest szybszy nadruk, sprawdź [MB241TR](/produkt/tsc-mb241tr) z rozdzielczością 203 dpi.'}
-
-## Gwarancja
-
-Gwarancja na drukarkę wynosi 2 lata. Dla głowicy obowiązuje 12 miesięcy lub 25 km druku. Dla wałka dociskowego obowiązuje 12 miesięcy lub 50 km druku. Przy limitach czasu i przebiegu decyduje warunek, który wystąpi wcześniej.`,
+    ...mbCopy[model],
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'tsc',
     tags: ['magazyn', 'logistyka', 'produkcja'], images: ['/images/products/tsc-mb-rfid-framed.webp'], imageDescriptions: [`TSC ${model} — drukarka RFID z ekranem dotykowym i przednią osłoną anteny`],
     availability: 'unavailable', isNew: true, isBestseller: false,
@@ -78,13 +123,6 @@ Gwarancja na drukarkę wynosi 2 lata. Dla głowicy obowiązuje 12 miesięcy lub 
     ] },
     applications: ['Druk i kodowanie etykiet RFID na towary i opakowania', 'Oznaczanie pojemników oraz wyposażenia', 'Przygotowanie etykiet do procesów magazynowych i produkcyjnych'],
     compatibleAccessories: [], relatedAccessories: ['tsc-wifi-bt-module', head],
-    faq: [
-      { question: `Czy TSC ${model} ma fabryczne RFID?`, answer: `Tak. PN ${pn} obejmuje koder UHF RFID w wersji EU/EMEA i ręczne odrywanie etykiet. Zwykłej wersji ${model.replace('TR', 'T')} bez potwierdzonego wyposażenia nie traktuj jako odpowiednika.` },
-      { question: 'Czy Wi-Fi Ready oznacza Wi-Fi w zestawie?', answer: 'Nie. Potrzebny jest osobno kupowany moduł WF-COM-2002. Standard obejmuje Ethernet, USB, USB Host i RS-232.' },
-      { question: 'Czy drukarka obsługuje etykiety RFID na metal?', answer: 'Pokazana konfiguracja z ręcznym odrywaniem obsługuje zgodne etykiety na metal do 1,65 mm grubości. Należy sprawdzić wkładkę, położenie anteny, format rolki i kalibrację. Limit nie dotyczy automatycznie wersji z obcinakiem.' },
-      { question: 'Czy można dołożyć zwykły obcinak MB?', answer: 'Nie traktuj zwykłej gilotyny MB jako zamiennika modułu RFID z obcinakiem. Pokazany PN ma ręczne odrywanie. Inną konfigurację trzeba dobrać osobno.' },
-      { question: 'Czy drukarka odczyta towary na półkach?', answer: 'Nie służy do radiowej inwentaryzacji regałów. Przygotowuje etykiety w swoim torze materiałów. Do odczytu towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    ],
     downloads: [{ name: 'Karta katalogowa serii MB241 (EN)', type: 'datasheet', url: datasheet, size: 'PDF' }, { name: 'Instrukcja obsługi serii MB241 z RFID (EN)', type: 'manual', url: manual, size: 'PDF' }, { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/downloads', size: 'Online' }],
     relatedProducts: [other, ordinary, 'brother-tj-4021tnr', 'zebra-zt231-rfid'], createdAt: '2026-10-16',
   } satisfies Product

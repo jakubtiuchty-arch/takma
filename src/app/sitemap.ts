@@ -16,6 +16,7 @@ import { transferLabelSeries, getTransferLabelSeriesByProductId } from '@/data/t
 import { transferRibbonSeries, getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
+import { subcategoryContent } from '@/data/subcategory-content'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
 import { UZYWANE_WIDOCZNE } from '@/lib/used-devices'
@@ -92,10 +93,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
     .filter((sub) => sub.slug !== 'etykiety-termotransferowe-zebra')
-    .map((sub) => ({
-      url: `${baseUrl}/${sub.slug}`,
-      lastModified: reworkedLandingLastMod[sub.slug] ?? lastUpdated,
-    }))
+    .map((sub) => {
+      // Późniejsza z dwóch dat: ręcznej z listy wyżej i `updatedAt` treści podkategorii
+      // (ta sama, co `dateModified` w CollectionPage na stronie).
+      const zTresci = subcategoryContent[sub.slug]?.updatedAt
+      const daty = [reworkedLandingLastMod[sub.slug], zTresci ? new Date(zTresci) : undefined]
+        .filter((d): d is Date => !!d && !Number.isNaN(d.getTime()))
+      return {
+        url: `${baseUrl}/${sub.slug}`,
+        lastModified: daty.length ? new Date(Math.max(...daty.map(d => d.getTime()))) : lastUpdated,
+      }
+    })
 
   // Hub promocji + landingi. Wygasłe promocje zostają w mapie: podstrona nadal
   // odpowiada 200 z komunikatem „oferta zakończona", więc nie chcemy jej wypisywać.

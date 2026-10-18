@@ -45,16 +45,16 @@ export const zt421RfidAdditionalAccessories: Product[] = [{
 export const zt421RfidProduct: Product = {
   id: 'zebra-zt421-rfid', slug: 'zebra-zt421-rfid',
   name: 'Zebra ZT421 RFID', seoH1: 'Zebra ZT421 RFID',
-  seoTitle: 'Zebra ZT421 RFID — drukarka i koder etykiet do 168 mm',
-  seoDescription: 'Zebra ZT421 RFID drukuje i koduje etykiety RAIN UHF do 168 mm. Warianty 203 i 300 dpi, ceny, dostępność i akcesoria. Dobierz konfigurację w TAKMA.',
+  seoTitle: 'Zebra ZT421 RFID — drukarka RFID UHF 203/300 dpi',
+  seoDescription: 'Zebra ZT421 RFID: 6-calowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk do 168 mm z prędkością do 305 mm/s, Ethernet, Bluetooth, ekran 4,3 cala.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT421 RFID drukuje i koduje szerokie etykiety RAIN UHF. Druk do 168 mm, rozdzielczość 203 lub 300 dpi.',
   description: `Zebra ZT421 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID o szerokości druku do 168 mm. Przygotowuje nadruk i zapisuje identyfikator w układzie elektronicznym etykiety.
 
 Wybierz ten model, gdy etykieta wymaga większej powierzchni niż oferują drukarki z nadrukiem do 104 mm. ZT421 RFID służy do znakowania kartonów, palet, pojemników i wyrobów. Dane nadruku oraz identyfikator EPC mogą być powiązane z tym samym rekordem w systemie WMS lub ERP.
 
-Ta oferta obejmuje dwie konfiguracje z fabrycznym koderem RFID dla regionu ROW oraz przewodami zasilającymi EU i UK. ZT42162-T0E00L0Z ma rozdzielczość 203 dpi, a ZT42163-T0E00L0Z — 300 dpi. Obie wersje drukują z prędkością do 305 mm/s. Wybierz 300 dpi do drobnego tekstu, niewielkich kodów 2D i szczegółowej grafiki. Rozdzielczość określa szczegółowość nadruku, a nie zasięg odczytu RFID.
+Dostępne są dwie konfiguracje z fabrycznym koderem RFID dla regionu ROW oraz przewodami zasilającymi EU i UK. ZT42162-T0E00L0Z ma rozdzielczość 203 dpi, a ZT42163-T0E00L0Z — 300 dpi. Wersja 203 dpi drukuje z prędkością do 305 mm/s, a wersja 300 dpi do 254 mm/s. Wybierz 300 dpi do drobnego tekstu, niewielkich kodów 2D i szczegółowej grafiki. Rozdzielczość określa szczegółowość nadruku, a nie zasięg odczytu RFID.
 
-Moduł RFID obsługuje etykiety zgodne z EPC UHF Gen2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Adaptacyjne kodowanie ułatwia dobór położenia wkładki oraz kalibrację. Minimalny odstęp kolejnych wkładek wynosi 16 mm przy odpowiednio dobranym materiale. Przed wdrożeniem sprawdź zapis oraz odczyt wybranej etykiety na docelowym przedmiocie.
+Moduł RFID obsługuje etykiety zgodne z EPC UHF Gen2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Adaptacyjne kodowanie ułatwia dobór położenia wkładki oraz kalibrację. Minimalny odstęp kolejnych wkładek wynosi 16 mm przy odpowiednio dobranym materiale. Przed wdrożeniem wydrukuj serię próbną wybranej etykiety na docelowym przedmiocie.
 
 Drukarka obsługuje druk termotransferowy z taśmą barwiącą oraz druk termiczny bezpośredni na etykietach termoczułych. W obu metodach kodowanie wymaga etykiety z wkładką RFID. Rolka może mieć średnicę do 203 mm na gilzie 76 mm. Taśma barwiąca ma długość do 450 m i szerokość 51–174 mm. Przy standardowym odrywaniu szerokość materiału wynosi 51–178 mm.
 
@@ -77,7 +77,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
   tags: ['magazyn', 'logistyka', 'produkcja'], availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: {
     rodzajDruku: 'Termotransferowy lub termiczny bezpośredni; kodowanie RAIN UHF RFID',
-    rozdzielczosc: '203 lub 300 dpi', predkoscDruku: 'do 305 mm/s',
+    rozdzielczosc: '203 lub 300 dpi', predkoscDruku: 'do 305 mm/s (203 dpi) lub 254 mm/s (300 dpi)',
     szerokoscDruku: 'do 168 mm', szerokoscEtykiet: '51–178 mm przy odrywaniu',
   },
   specifications: [
@@ -85,7 +85,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     { name: 'Metoda druku', value: 'Termotransferowy lub termiczny bezpośredni' },
     { name: 'RFID', value: 'EPC UHF Gen2 v2.1, ISO/IEC 18000-63, RAIN RFID' },
     { name: 'Rozdzielczość', value: '203 lub 300 dpi — zależnie od PN' },
-    { name: 'Prędkość druku', value: 'do 305 mm/s; prędkość kodowania zależy od etykiety i danych' },
+    { name: 'Prędkość druku', value: 'do 305 mm/s (203 dpi) lub 254 mm/s (300 dpi); prędkość kodowania zależy od etykiety i danych' },
     { name: 'Szerokość druku', value: 'do 168 mm' },
     { name: 'Szerokość mediów', value: '51–178 mm przy odrywaniu i cięciu; 51–171 mm przy odklejaniu i nawijaniu' },
     { name: 'Minimalny odstęp wkładek RFID', value: '16 mm; wymaga doboru i kalibracji materiału' },
@@ -110,11 +110,11 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
   applications: ['Druk i kodowanie szerokich etykiet RFID na kartony i palety', 'Identyfikacja pojemników w obiegu magazynowym', 'Przygotowanie etykiet RFID powiązanych z danymi WMS lub ERP', 'Znakowanie wyrobów i opakowań zbiorczych na produkcji'],
   compatibleAccessories: [], relatedAccessories: zt421RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT421 RFID różni się od zwykłej ZT421?', answer: 'ZT421 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Zwykła ZT421 bez tego modułu wykonuje nadruk. Jeśli nie potrzebujesz identyfikacji radiowej, wybierz standardową ZT421.' },
+    { question: 'Co odróżnia ZT421 RFID od standardowej ZT421?', answer: 'ZT421 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Zwykła ZT421 bez tego modułu wykonuje nadruk. Jeśli nie potrzebujesz identyfikacji radiowej, wybierz standardową ZT421.' },
     { question: 'Kiedy wybrać ZT421 RFID zamiast ZT411 RFID?', answer: 'Wybierz ZT421 RFID, gdy potrzebujesz nadruku szerszego niż 104 mm. ZT421 RFID drukuje do 168 mm, a ZT411 RFID do 104 mm. W obu przypadkach dopasuj wkładkę RFID, format rolki i materiał do urządzenia oraz zastosowania.' },
     { question: 'Które numery PN są dostępne na tej karcie?', answer: 'ZT42162-T0E00L0Z to wersja 203 dpi. ZT42163-T0E00L0Z ma 300 dpi. Obie konfiguracje obejmują fabryczne RFID ROW, przewody EU i UK, Ethernet, USB, RS-232, Bluetooth 4.1 i USB Host.' },
     { question: 'Czy te warianty mają Wi-Fi?', answer: 'Nie. Oba PN mają Bluetooth 4.1 oraz połączenia przewodowe. Wi-Fi możesz dodać przez zgodny moduł Wi-Fi 5 P1083320-037C albo Wi-Fi 6 P1083320-037G. Moduły są sprzedawane osobno.' },
-    { question: 'Czy ZT421 RFID nadaje się do grubych etykiet na metal?', answer: 'Ta oferta obejmuje standardową ZT421 RFID, z materiałem o grubości do 0,25 mm. Nie jest to wersja On-metal. Do grubych etykiet przeznaczonych na metal sprawdź odpowiednią konfigurację ZT411 RFID On-metal.' },
+    { question: 'Czy ZT421 RFID nadaje się do grubych etykiet na metal?', answer: 'Dostępne PN to standardowa ZT421 RFID, z materiałem o grubości do 0,25 mm. Nie jest to wersja On-metal. Do grubych etykiet przeznaczonych na metal sprawdź odpowiednią konfigurację ZT411 RFID On-metal.' },
     { question: 'Czy drukarka odczyta towary na całej półce?', answer: 'Nie. Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do radiowej inwentaryzacji półki potrzebujesz czytnika UHF RFID oraz oprogramowania magazynowego.' },
     { question: 'Czy etykiety i taśma są w zestawie?', answer: 'Nie. Dobierz je osobno do rozmiaru nadruku, wkładki RFID i powierzchni znakowanego przedmiotu. Druk termotransferowy wymaga taśmy barwiącej. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy.' },
   ],

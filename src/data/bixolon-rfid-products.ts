@@ -31,7 +31,7 @@ export const bixolonRfidAccessories: Product[] = [
     tags: ['magazyn', 'retail'], priceFrom: 75.12, availability: 'available', isNew: true, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'LES-400G' }, { name: 'Zgodność', value: 'BIXOLON XD5-40tR' }, { name: 'Średnica rolki', value: 'Do 203 mm' }, { name: 'Średnica gilzy', value: '25,4–38,1 mm' }],
     applications: ['Podawanie etykiet z większej rolki'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xd5-40tr'],
-    downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=59', size: 'PDF' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
+    downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=62', size: 'PDF' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
   },
 ]
 
@@ -42,10 +42,10 @@ const commonDownloads: Product['downloads'] = [
 export const bixolonRfidProducts: Product[] = [
   {
     id: 'bixolon-xt5-40nr', slug: 'bixolon-xt5-40nr', name: 'BIXOLON XT5-40NR', seoH1: 'BIXOLON XT5-40NR',
-    seoTitle: 'BIXOLON XT5-40NR — drukarka RFID 203, 300 i 600 dpi | TAKMA',
-    seoDescription: 'BIXOLON XT5-40NR, XT5-43NR i XT5-46NR: przemysłowe drukarki UHF RFID EU. Porównaj PN, rozdzielczość i prędkość. Sprawdź ceny, stany i głowice.',
+    seoTitle: 'BIXOLON XT5-40NR — drukarka RFID UHF 203–600 dpi',
+    seoDescription: 'BIXOLON XT5-40NR, XT5-43NR i XT5-46NR: przemysłowe drukarki i kodery UHF RFID 203, 300 lub 600 dpi. Druk do 356 mm/s, taśma 450 m, Ethernet.',
     shortDescription: 'Przemysłowa drukarka i koder UHF RFID EU. Trzy warianty: 203, 300 i 600 dpi. Ekran dotykowy 4,3 cala, Ethernet, USB i RS-232. Rolki do 203 mm i taśmy do 450 m.',
-    description: `BIXOLON XT5-40NR drukuje etykiety i zapisuje dane w ich układach UHF RFID. Służy do znakowania produktów, kartonów i wyposażenia. Rodzina obejmuje XT5-40NR, XT5-43NR i XT5-46NR. W tej ofercie znajdziesz konfiguracje do pracy w Europie.
+    description: `BIXOLON XT5-40NR drukuje etykiety i zapisuje dane w ich układach UHF RFID. Służy do znakowania produktów, kartonów i wyposażenia. Rodzina obejmuje XT5-40NR, XT5-43NR i XT5-46NR. Dostępne konfiguracje są przeznaczone do pracy w Europie.
 
 ## Wybierz rozdzielczość i prędkość
 
@@ -57,7 +57,7 @@ Wersja 203 dpi służy do standardowych oznaczeń. Rozdzielczość 300 lub 600 d
 
 Pokazane PN mają koder UHF dla pasma 865–868 MHz. Obsługują ISO 18000-6C i EPC Class 1 Gen2. Minimalny odstęp między wkładkami wynosi 16 mm. Nie trzeba dokupować osobnego modułu RFID do tych konfiguracji.
 
-Przed wdrożeniem dobierz wkładkę i wykonaj kalibrację. Sprawdź zapis oraz odczyt na docelowym produkcie. Sama zgodność wymiarów etykiety nie wystarcza. Do metalu lub opakowań z płynem potrzebujesz odpowiednio dobranej etykiety i testu odczytu.
+Przed wdrożeniem dobierz wkładkę i wykonaj kalibrację. Do metalu lub opakowań z płynem potrzebujesz odpowiednio dobranej etykiety. Materiały do XT5 są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary, gilzę i powierzchnię przedmiotu. Dobierzemy rolkę do XT5 i sprawdzimy kodowanie.
 
 Przygotuj zadanie z poleceniami zapisu RFID. Sam nadruk kodu kreskowego nie zapisuje identyfikatora EPC. Powiąż EPC z danymi w WMS lub ERP. Do odczytu oznaczeń poza drukarką potrzebujesz czytnika UHF.
 
@@ -77,7 +77,7 @@ SLCS, BPL-Z, BPL-E i BPL-D umożliwiają przygotowanie nadruku z systemu nadrzę
 
 Głowica AE04-00043A-AS pasuje do XT5-40NR 203 dpi. AE04-00043B-AS służy do XT5-43NR 300 dpi. AE04-00043C-AS służy do XT5-46NR 600 dpi. To części zamienne, a nie obowiązkowe dodatki do nowej drukarki.
 
-Dobieraj głowicę do tej samej rozdzielczości. Przed zakupem części podaj numer seryjny urządzenia. Gilotyna, odklejak i nawijak wymagają osobnego doboru do wersji RFID. Nie traktuj dowolnego zestawu do zwykłej XT5 jako zgodnego rozszerzenia.
+Dobieraj głowicę do tej samej rozdzielczości. Przed zakupem części podaj numer seryjny urządzenia. Gilotynę, odklejak i nawijak dobierz do wersji RFID. Przed zamówieniem podaj nam PN drukarki, a wskażemy zgodny zestaw.
 
 Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr). W tej klasie przemysłowej sprawdź także [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) i [TSC MB241TR](/produkt/tsc-mb241tr).`,
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'bixolon',
@@ -105,7 +105,7 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
     compatibleAccessories: [], relatedAccessories: headParts.map(a => `bixolon-xt5-glowica-${a.dpi}`),
     applications: ['Druk i kodowanie etykiet produktowych UHF', 'Znakowanie kartonów i wyposażenia', 'Przygotowanie etykiet dla WMS i ERP'],
     faq: [
-      { question: 'Czy wszystkie wersje XT5 mają RFID?', answer: 'Nie. Ta karta obejmuje trzy PN z fabrycznym koderem UHF EU: XT5-40NRES, XT5-43NRES/BEG i XT5-46NRES/BEG. Zwykła XT5 bez takiego wyposażenia nie koduje etykiet RFID.' },
+      { question: 'Czy wszystkie wersje XT5 mają RFID?', answer: 'Nie. Fabryczny koder UHF EU mają XT5-40NRES, XT5-43NRES/BEG i XT5-46NRES/BEG. Zwykła XT5 bez kodera nie zapisuje danych w etykietach RFID.' },
       { question: 'Co różni XT5-40NR, XT5-43NR i XT5-46NR?', answer: 'Rozdzielczość, maksymalna prędkość i szerokość nadruku. Warianty mają odpowiednio 203, 300 i 600 dpi oraz prędkości do 356, 254 i 127 mm/s. Wspólne wyposażenie obejmuje koder UHF EU, ekran dotykowy i połączenia przewodowe.' },
       { question: 'Czy pokazane PN mają Wi-Fi?', answer: 'Nie. Oferowane konfiguracje mają połączenia przewodowe. Łączność bezprzewodowa wymaga osobnego doboru konfiguracji.' },
       { question: 'Czy drukarka RFID może drukować zwykłe etykiety?', answer: 'Tak. Może wykonywać sam nadruk bez kodowania. Przy etykietach RFID zadanie musi dodatkowo zawierać polecenia zapisu danych.' },
@@ -115,10 +115,10 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
   },
   {
     id: 'bixolon-xd5-40tr', slug: 'bixolon-xd5-40tr', name: 'BIXOLON XD5-40tR', seoH1: 'BIXOLON XD5-40tR',
-    seoTitle: 'BIXOLON XD5-40tR — biurkowa drukarka RFID UHF EU | TAKMA',
-    seoDescription: 'BIXOLON XD5-40tR, PN XD5-40tREK: biurkowa drukarka UHF RFID 203 dpi. Ethernet, USB i RS-232. Sprawdź cenę, stan i uchwyt rolki LES-400G.',
+    seoTitle: 'BIXOLON XD5-40tR — drukarka RFID UHF 203 dpi',
+    seoDescription: 'BIXOLON XD5-40tR: biurkowa drukarka i koder UHF RFID 203 dpi. Druk 108 mm z prędkością 152 mm/s, taśma 300 m, Ethernet, USB i RS-232.',
     shortDescription: 'Biurkowa drukarka i koder UHF RFID EU, 203 dpi, do 152 mm/s. Druk do 108 mm. USB, USB Host, RS-232 i Ethernet. Taśmy do 300 m i opcjonalny uchwyt większej rolki.',
-    description: `BIXOLON XD5-40tR drukuje etykiety i zapisuje dane w ich układach UHF RFID. To biurkowe urządzenie do stanowiska w magazynie, handlu lub produkcji. Ta oferta obejmuje PN XD5-40tREK z głowicą 203 dpi i połączeniami przewodowymi.
+    description: `BIXOLON XD5-40tR drukuje etykiety i zapisuje dane w ich układach UHF RFID. To biurkowe urządzenie do stanowiska w magazynie, handlu lub produkcji. Dostępny PN XD5-40tREK ma głowicę 203 dpi i połączenia przewodowe.
 
 ## Nadruk i kodowanie na jednym stanowisku
 
@@ -126,7 +126,7 @@ XD5-40tREK drukuje z prędkością do 152 mm/s i szerokością do 108 mm. Obsłu
 
 Koder UHF dla Europy pracuje w paśmie 865–868 MHz. Obsługuje ISO 18000-6C i EPC Class 1 Gen2. Minimalny odstęp między wkładkami RFID wynosi 16 mm. Kodowanie może wymagać niższej prędkości niż sam nadruk.
 
-Przed pierwszą pracą dobierz etykietę, wykonaj kalibrację i sprawdź odczyt na znakowanym przedmiocie. Szerokość rolki nie określa zgodności wkładki RFID. Po zmianie materiału sprawdź ustawienia ponownie.
+Przed pierwszą pracą wykonaj kalibrację. Po zmianie materiału sprawdź ustawienia ponownie. Gotowe rolki z wkładką UHF zobaczysz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety i gilzę. Dobierzemy rolkę do XD5-40tR i położenie wkładki.
 
 ## Etykiety, rolki i taśmy
 

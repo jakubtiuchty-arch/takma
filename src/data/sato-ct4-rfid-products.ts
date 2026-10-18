@@ -23,8 +23,8 @@ export const satoCt4RfidAccessories: Product[] = accessories.map(a => ({
 
 export const satoCt4RfidProducts: Product[] = [{
   id, slug: id, name: 'SATO CT4-LX RFID', seoH1: 'SATO CT4-LX RFID',
-  seoTitle: 'SATO CT4-LX RFID — drukarka UHF 203 i 305 dpi | TAKMA',
-  seoDescription: 'SATO CT4-LX UHF RFID: druk i kodowanie etykiet, 203 lub 305 dpi, ekran 4,3 cala. Wersje EU z Ethernetem lub Wi-Fi. Ceny, stany i akcesoria.',
+  seoTitle: 'SATO CT4-LX RFID — drukarka RFID UHF 203/305 dpi',
+  seoDescription: 'SATO CT4-LX RFID: biurkowa drukarka i koder UHF 203 lub 305 dpi. Druk 104 mm, ekran dotykowy 4,3 cala, Gigabit Ethernet, opcja z Wi-Fi i RTC.',
   shortDescription: 'Biurkowa drukarka i koder UHF RFID. Warianty 203 lub 305 dpi, nadruk do 104 mm, ekran dotykowy 4,3 cala i Ethernet. Wi-Fi, Bluetooth i RTC zależą od PN.',
   description: `SATO CT4-LX RFID drukuje etykiety i zapisuje dane w pasywnych wkładkach UHF. To biurkowa drukarka do stanowiska magazynowego, sklepu i znakowania wyposażenia.
 
@@ -46,7 +46,7 @@ Drukarka weryfikuje zapis. Może oznaczać uszkodzone lub nieczytelne transponde
 
 ## Rolki i taśmy barwiące
 
-Dla etykiet RFID maksymalna średnica rolki wynosi 115 mm. Materiał RFID powinien być nawinięty etykietą na zewnątrz. Zakres mechaniczny materiału nie potwierdza zgodności konkretnej wkładki. Przed zakupem materiału sprawdź jego gilzę, podkład i położenie anteny.
+Dla etykiet RFID maksymalna średnica rolki wynosi 115 mm. Materiał RFID powinien być nawinięty etykietą na zewnątrz. Materiały RFID są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary etykiety, gilzę i rodzaj podkładu. Dobierzemy rolkę do CT4-LX RFID i położenie wkładki.
 
 Do druku termotransferowego dobierz taśmę do 100 m na gilzie 12,7 mm, o szerokości 45–111 mm, barwnikiem na zewnątrz. Druk termiczny bezpośredni wymaga etykiety termoczułej i nie używa taśmy. Do zwykłych etykiet rolka może mieć do 128 mm średnicy; ten limit nie dotyczy rolek RFID.
 
@@ -62,7 +62,7 @@ Pokazane warianty mają ręczne odrywanie etykiet. Odklejak WWCT0502N jest osobn
 
 ## Gwarancja i serwis
 
-Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok ochrony dotyczy kwalifikujących się produktów i wymaga spełnienia warunków regionalnych. Ustal zakres ochrony dla zamawianego PN. Głowica i wałek mają odrębne limity: 1 rok lub 30 km przy druku termotransferowym, albo 1 rok lub 15 km przy druku termicznym. Obowiązuje pierwszy osiągnięty limit. Zachowaj dowód zakupu i używaj materiałów zatwierdzonych przez SATO.
+Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok ochrony dotyczy kwalifikujących się produktów i wymaga spełnienia warunków regionalnych. O zakres ochrony dla wybranego PN zapytaj przy zamówieniu. Głowica i wałek mają odrębne limity: 1 rok lub 30 km przy druku termotransferowym, albo 1 rok lub 15 km przy druku termicznym. Obowiązuje pierwszy osiągnięty limit. Zachowaj dowód zakupu i używaj materiałów zatwierdzonych przez SATO.
 
 Porównaj także [Zebra ZD621R](/produkt/zebra-zd621r) oraz [TSC TH240R](/produkt/tsc-th240r).`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'retail', 'logistyka'],
@@ -91,7 +91,7 @@ Porównaj także [Zebra ZD621R](/produkt/zebra-zd621r) oraz [TSC TH240R](/produk
   compatibleAccessories: [], relatedAccessories: satoCt4RfidAccessories.map(a => a.id),
   applications: ['Druk i kodowanie etykiet UHF na towary oraz opakowania', 'Znakowanie produktów przy stanowisku sklepowym', 'Przygotowanie oznaczeń wyposażenia'],
   faq: [
-    { question: 'Czy wszystkie CT4-LX mają RFID?', answer: 'Nie. Ta karta obejmuje konkretne PN z fabrycznym UHF RFID. Wersje zwykłe i HF mają inne numery katalogowe.' },
+    { question: 'Czy wszystkie CT4-LX mają RFID?', answer: 'Nie. Koder UHF RFID mają warianty RFID z tabeli, np. WWCT03242 i WWCT04242. Wersje zwykłe i HF mają inne numery katalogowe.' },
     { question: 'Czy 305 dpi to pomyłka?', answer: 'Nie. CT412LX ma 12 punktów/mm, czyli 305 dpi. CT408LX ma 8 punktów/mm, czyli 203 dpi.' },
     { question: 'Czy trzeba dokupić Wi-Fi albo zegar?', answer: 'Zależy od PN. Warianty ZNAR mają RTC, a ZWAR mają RTC oraz Wi-Fi i Bluetooth. Podstawowe WWCT03242 i WWCT04242 nie mają tych opcji.' },
     { question: 'Jaką rolkę RFID można zastosować?', answer: 'Średnica rolki RFID wynosi maksymalnie 115 mm, a etykiety muszą być nawinięte na zewnątrz. Dobierz gilzę, wkładkę i podkład do urządzenia, a następnie wykonaj test kodowania.' },

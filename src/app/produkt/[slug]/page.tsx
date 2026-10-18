@@ -709,7 +709,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   // JSON-LD: BreadcrumbList
-  const brandCategory = brandCategories.find(
+  // Drukarki RFID nie są podstroną marki: „Drukarki etykiet Zebra › Drukarki RFID” sugerowało
+  // kategorię samych Zebr, a SATO i BIXOLON (bez strony marki) miały krótszą ścieżkę.
+  const brandCategory = primarySubcategory?.id === 'drukarki-rfid' ? undefined : brandCategories.find(
     (bc) => bc.manufacturerId === product.manufacturerId && bc.categoryId === product.categoryId
   )
 

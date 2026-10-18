@@ -19,8 +19,8 @@ export const zq511RfidAccessorySlugs = [
 
 export const zq511RfidProduct: Product = {
   id: 'zebra-zq511-rfid', slug: 'zebra-zq511-rfid', name: 'Zebra ZQ511 RFID', seoH1: 'Zebra ZQ511 RFID',
-  seoTitle: 'Zebra ZQ511 RFID — mobilna drukarka i koder UHF',
-  seoDescription: 'Zebra ZQ511 RFID do mobilnego druku i kodowania etykiet UHF do 72 mm. PN ZQ51-BUW030E-00, Wi-Fi i Bluetooth. Dobierz konfigurację oraz akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZQ511 RFID — drukarka RFID UHF 203 dpi',
+  seoDescription: 'Zebra ZQ511 RFID: mobilna drukarka i koder UHF 203 dpi do etykiet szerokości 35–80 mm. Nadruk do 72 mm, Wi-Fi i Bluetooth, IP54, upadek z 2 m.',
   shortDescription: 'Mobilna drukarka i koder RAIN UHF RFID. Druk do 72 mm, Wi-Fi 802.11ac, Bluetooth 4.1, bateria 3250 mAh i obudowa IP54.',
   description: `Zebra ZQ511 RFID to mobilna drukarka termiczna z koderem RAIN UHF RFID. Przygotowuje nadruk i zapisuje dane w etykietach o szerokości druku do 72 mm.
 
@@ -28,7 +28,7 @@ export const zq511RfidProduct: Product = {
 
 ZQ511 RFID służy do oznaczania produktów, pojemników, części i wyposażenia. Pracownik drukuje oraz koduje etykietę w miejscu jej naklejenia. Urządzenie waży około 630 g z baterią standardową. Wymiary wynoszą 150 × 120 × 62 mm.
 
-Koder obsługuje UHF EPC Gen2 v2, ISO/IEC 18000-63 i RAIN RFID. Adaptive Encoding ułatwia kalibrację materiału. Dla zgodnych etykiet minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem sprawdź zapis i odczyt etykiety na docelowym produkcie.
+Koder obsługuje UHF EPC Gen2 v2, ISO/IEC 18000-63 i RAIN RFID. Adaptive Encoding ułatwia kalibrację materiału. Dla zgodnych etykiet minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem wydrukuj serię próbną na docelowym produkcie.
 
 Powiąż identyfikator EPC z danymi w systemie magazynowym. Ustal format danych i sposób obsługi błędnego kodowania. Drukarka sprawdza etykietę w swoim torze materiałów. Do radiowej inwentaryzacji całej półki potrzebujesz osobnego czytnika UHF i oprogramowania.
 
@@ -40,7 +40,7 @@ Wi-Fi obsługuje pasma 2,4 i 5 GHz oraz roaming 802.11r. Może pracować jednocz
 
 ## Materiał z czarnym znacznikiem
 
-ZQ511 RFID wymaga czarnego znacznika na materiale. Nie wykrywa przerw między etykietami. Do kodowania potrzebna jest zgodna wkładka UHF RFID. Sprawdź jej położenie, rozmiar etykiety i kalibrację drukarki.
+ZQ511 RFID wymaga czarnego znacznika na materiale. Nie wykrywa przerw między etykietami. Rolki RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety, położenie znacznika i gilzę. Dobierzemy rolkę do ZQ511 RFID o średnicy do 51 mm.
 
 Szerokość materiału wynosi 35–80 mm, a maksymalna średnica rolki 51 mm. Rozdzielczość nadruku wynosi 203 dpi. Maksymalna prędkość 127 mm/s dotyczy włączonego Draft Mode. Kodowanie i kontrola wkładki mogą zmniejszyć wydajność zadania. Zmierz ją dla docelowej etykiety i formatu danych.
 

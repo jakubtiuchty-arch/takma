@@ -6723,7 +6723,7 @@ export const guides: Guide[] = [
   category: 'porownanie' as const,
   tags: ['drukarki-etykiet', 'porownanie', 'zebra', 'zd421', 'zd621', 'biurkowa', 'termotransferowa', 'tco', 'drukarka-do-etykiet'],
   publishedAt: '2026-03-15',
-  updatedAt: '2026-03-15',
+  updatedAt: '2026-10-17',
   readTime: '18 min',
   heroImage: '/images/guides/zebra-zd421-zebra-zd621-porownanie-drukarek-etykiet.webp',
 
@@ -6910,7 +6910,7 @@ export const guides: Guide[] = [
       content: `<p><strong>Drukarka termotransferowa Zebra ZD621t oferuje trzy opcje niedostępne w ZD421t:</strong> RFID UHF, odklejak fabryczny i gilotynę fabryczną.</p>
 
 <h3>RFID UHF (ZD621R)</h3>
-<p>Wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) drukuje etykietę i koduje chip RFID jednocześnie. Standardy: EPC Gen 2 V2, RAIN, ISO 18000-63. Drukarka etykiet Zebra ZD421t NIE ma wersji RFID — jeśli planujesz wdrożenie RFID, ZD621R to jedyna opcja biurkowa Zebra.</p>
+<p>Wersja ZD621R z wbudowanym koderem RFID UHF (moduł Zebra RE40) drukuje etykietę i koduje chip RFID jednocześnie. Standardy: EPC Gen 2 V2, RAIN, ISO 18000-63. Drukarka etykiet Zebra ZD421t NIE ma wersji RFID — jeśli planujesz wdrożenie RFID na etykietach 4-calowych, wybierz ZD621R. Do etykiet o szerokości do 56 mm Zebra oferuje biurkową <a href="/produkt/zebra-zd611r">ZD611R</a> z koderem RFID UHF.</p>
 <p>Zastosowania RFID: retail (Decathlon, Reserved), inwentaryzacja magazynowa RFID, szpitale (śledzenie aktywów medycznych).</p>
 
 <h3>Odklejak fabryczny (peeler/dispenser)</h3>
@@ -6919,7 +6919,7 @@ export const guides: Guide[] = [
 <h3>Gilotyna fabryczna (cutter)</h3>
 <p>Automatyczne cięcie etykiet i tagów po wydrukowaniu. Dopłata: ~690 PLN (203 dpi). Do przywieszek cenowych, etykiet na sznurku, tagów RFID do cięcia.</p>
 
-<p><strong>Werdykt:</strong> Jeśli planujesz RFID — drukarka etykiet Zebra ZD621R to jedyna opcja biurkowa Zebra. Odklejak za 201 PLN dopłaty jest opłacalny przy >500 etykiet/dzień. Gilotyna za 690 PLN ma sens przy druku przywieszek i tagów.</p>`
+<p><strong>Werdykt:</strong> Jeśli planujesz RFID na etykietach 4-calowych — wybierz drukarkę etykiet Zebra ZD621R. Do etykiet do 56 mm Zebra ma biurkową <a href="/produkt/zebra-zd611r">ZD611R</a>. Odklejak za 201 PLN dopłaty jest opłacalny przy >500 etykiet/dzień. Gilotyna za 690 PLN ma sens przy druku przywieszek i tagów.</p>`
     },
     {
       id: 'gwarancja-serwis',

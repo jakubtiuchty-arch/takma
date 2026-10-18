@@ -25,8 +25,8 @@ export const tscAlpha40lRfidAccessories: Product[] = accessories.map(a => ({
 
 export const tscAlpha40lRfidProduct: Product = {
   id, slug: id, name: 'TSC Alpha-40L RFID', seoH1: 'TSC Alpha-40L RFID',
-  seoTitle: 'TSC Alpha-40L RFID — mobilna drukarka UHF, EU | TAKMA',
-  seoDescription: 'TSC Alpha-40L RFID: mobilna drukarka 203 dpi, druk do 104 mm. Europejskie wersje Bluetooth oraz Wi-Fi. Sprawdź ceny, stany i akcesoria w TAKMA.',
+  seoTitle: 'TSC Alpha-40L RFID — drukarka RFID UHF 203 dpi',
+  seoDescription: 'TSC Alpha-40L RFID: mobilna drukarka i koder UHF 203 dpi. Druk 104 mm, bateria 6200 mAh, IP54, wersje z Bluetooth lub z Wi-Fi i Bluetooth.',
   shortDescription: 'Mobilna drukarka termiczna i koder RAIN UHF RFID. Druk do 104 mm, bateria 6200 mAh oraz warianty Bluetooth i Wi-Fi. Europejski zasilacz w zestawie.',
   description: `TSC Alpha-40L RFID to mobilna drukarka termiczna z koderem RAIN UHF RFID. Przygotowuje nadruk i zapisuje dane w układzie etykiety bezpośrednio przy towarze.
 
@@ -50,7 +50,7 @@ Alpha-40L RFID obsługuje pasywne etykiety UHF zgodne z GS1 EPC Gen2 v2 i ISO 18
 
 Szerokość materiału z podkładem wynosi 50,8–112 mm. Zalecana maksymalna średnica rolki RFID wynosi 62 mm. Limit 67 mm dotyczy materiału bez RFID. Gilza ma 25,4 mm; adaptery umożliwiają użycie gilz 19,1 i 38,1 mm. Minimalny rozstaw kolejnych etykiet RFID wynosi 15,9 mm. Dobierz także wkładkę, grubość materiału i jej położenie względem anteny.
 
-Wersja RFID pracuje z ręcznym odrywaniem etykiet. Nie ma trybu odklejania. Nie obsługuje etykiet RFID na metal ani układów HF/NFC. Etykiety są sprzedawane osobno. Przed wdrożeniem sprawdź kodowanie i odczyt na docelowym przedmiocie.
+Wersja RFID pracuje z ręcznym odrywaniem etykiet. Nie ma trybu odklejania. Nie obsługuje etykiet RFID na metal ani układów HF/NFC. Etykiety są sprzedawane osobno. Ofertę znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary etykiety i rodzaj znacznika. Dobierzemy rolkę mobilną o średnicy do 62 mm i sprawdzimy położenie wkładki.
 
 ## Kontrola zapisu i integracja z systemem
 
@@ -107,7 +107,7 @@ Gwarancja na drukarkę wynosi 2 lata, a na baterię 1 rok. Głowica ma ochronę 
     { question: 'Czy USB-C ładuje baterię?', answer: 'Nie. USB-C służy do komunikacji. Do ładowania użyj zasilacza z zestawu lub zgodnej stacji ładującej. Wyjętą baterię można ładować w osobnej ładowarce.' },
     { question: 'Czy rolka RFID może mieć średnicę 67 mm?', answer: 'Dla etykiet RFID zalecana maksymalna średnica rolki wynosi 62 mm. Limit 67 mm dotyczy materiału bez RFID. Sprawdź także wkładkę, gilzę i szerokość podkładu.' },
     { question: 'Czy drukarka obsługuje etykiety z przerwą i na metal?', answer: 'Obsługuje zgodne etykiety UHF z przerwą lub czarnym znacznikiem. Nie obsługuje etykiet RFID na metal. Wersja RFID pracuje tylko z ręcznym odrywaniem, bez odklejania.' },
-    { question: 'Czy zwykłą Alpha-40L można rozbudować o RFID?', answer: 'Nie. RFID jest wyposażeniem fabrycznym odpowiedniej konfiguracji. Wybierz PN z oznaczeniem A40LR. Zwykły wariant A40L nie zastępuje tej wersji.' },
+    { question: 'Czy zwykłą Alpha-40L można rozbudować o RFID?', answer: 'Nie. RFID jest wyposażeniem fabrycznym odpowiedniej konfiguracji. Do kodowania etykiet wybierz PN z oznaczeniem A40LR.' },
     { question: 'Czy urządzenie policzy towary na półce?', answer: 'Koduje i sprawdza etykietę w torze materiałów. Do inwentaryzacji regałów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
   ],
   downloads: [

@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { unstable_cache } from 'next/cache'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
 import FilterableProductGrid, { FilterDefinition, CategoryNavItem } from '@/components/subcategory/FilterableProductGrid'
@@ -21,13 +23,29 @@ import LinkedText from '@/components/ui/LinkedText'
 import KalkulatorKosztuEtykiet from '@/components/subcategory/KalkulatorKosztuEtykiet'
 import SekcjaZwijana from '@/components/subcategory/SekcjaZwijana'
 import BrandServiceBanner from '@/app/produkt/[slug]/ServiceBanner'
+import { uzupelnijTrescRfid, type CenyRfid } from '@/data/rfid-printer-category'
+import { lookupUnifiedStock } from '@/lib/unified-stock'
+import { catalogPartNumbers, withLiveCatalogData } from '@/lib/catalog-live'
+import type { Product } from '@/data/products'
+import type { StockInfo } from '@/lib/ingram'
+
+/**
+ * Link z nazwy wiersza. Adres z parametrami („?f.rodzaj=…”) prowadzi do listy na tej samej
+ * stronie z ustawionymi filtrami — wymaga pełnego wczytania, bo lista czyta filtry z adresu
+ * tylko przy starcie, a nawigacja next/link zostawiłaby poprzedni stan filtrów.
+ */
+function LinkWiersza({ href, className, children }: { href: string; className: string; children: ReactNode }) {
+  return href.includes('?')
+    ? <a href={href} className={className}>{children}</a>
+    : <Link href={href} className={className}>{children}</Link>
+}
 
 /**
  * Zestawienie modeli. Sześć kolumn nie mieści się na telefonie, a przewijanie w bok gubi
  * nazwę modelu, więc poniżej md każdy model dostaje własną kartę z parami parametr–wartość.
  * Od md wraca zwykła tabela.
  */
-function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
+function TabelaPorownawcza({ table, kolumnaModelu = 'Model' }: { table: ComparisonTable; kolumnaModelu?: string }) {
   return (
     <section>
       <h2 className="text-2xl font-bold text-gray-900 mb-3">{table.heading}</h2>
@@ -37,14 +55,16 @@ function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
         {table.rows.map((row) => (
           <div key={row.model} className="rounded-xl border border-gray-200">
             <div className="border-b border-gray-200 px-4 py-3">
-              <Link href={row.href} className="font-semibold text-primary-600">{row.model}</Link>
+              {row.href
+                ? <LinkWiersza href={row.href} className="font-semibold text-primary-600">{row.model}</LinkWiersza>
+                : <span className="font-semibold text-gray-900">{row.model}</span>}
               {row.role && <p className="mt-0.5 text-xs leading-relaxed text-gray-500">{row.role}</p>}
             </div>
             <dl className="divide-y divide-gray-100 text-sm">
               {table.columns.map((c, i) => (
                 <div key={c} className="flex gap-3 px-4 py-2">
                   <dt className="w-[42%] shrink-0 text-xs leading-5 text-gray-500">{c}</dt>
-                  <dd className="flex-1 text-gray-900">{row.cells[i]}</dd>
+                  <dd className="flex-1 text-gray-900"><LinkedText text={row.cells[i]} /></dd>
                 </div>
               ))}
             </dl>
@@ -56,7 +76,7 @@ function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
         <table className="w-full min-w-[46rem] border-collapse text-sm">
           <thead>
             <tr className="bg-gray-50 text-left">
-              <th scope="col" className="px-4 py-3 font-semibold text-gray-900">Model</th>
+              <th scope="col" className="px-4 py-3 font-semibold text-gray-900">{kolumnaModelu}</th>
               {table.columns.map((c) => (
                 <th key={c} scope="col" className="whitespace-nowrap px-4 py-3 font-semibold text-gray-900">{c}</th>
               ))}
@@ -66,11 +86,13 @@ function TabelaPorownawcza({ table }: { table: ComparisonTable }) {
             {table.rows.map((row) => (
               <tr key={row.model} className="border-t border-gray-200 align-top">
                 <th scope="row" className="px-4 py-3 text-left font-medium">
-                  <Link href={row.href} className="text-primary-600 hover:underline">{row.model}</Link>
+                  {row.href
+                    ? <LinkWiersza href={row.href} className="text-primary-600 hover:underline">{row.model}</LinkWiersza>
+                    : <span className="text-gray-900">{row.model}</span>}
                   {row.role && <span className="mt-1 block text-xs font-normal text-gray-500">{row.role}</span>}
                 </th>
                 {row.cells.map((cell, i) => (
-                  <td key={i} className="px-4 py-3 text-gray-700">{cell}</td>
+                  <td key={i} className="px-4 py-3 text-gray-700"><LinkedText text={cell} /></td>
                 ))}
               </tr>
             ))}
@@ -168,6 +190,35 @@ const sidebarFilters: Record<string, FilterDefinition[]> = {
   ],
 }
 
+/**
+ * Wiersze StockCache dla kategorii z cenami w treści (FAQ, tabela). Godzina w cache
+ * zamienia stronę w ISR: dystrybutorzy nie są odpytywani przy każdym wejściu. Błąd
+ * rzuca wyjątek, żeby pusty wynik nie został zapamiętany na godzinę.
+ */
+const wierszeCen = unstable_cache(async (numery: string[]): Promise<StockInfo[]> => {
+  const { body, status } = await lookupUnifiedStock(numery)
+  if (status !== 200 || !body.results) throw new Error(`stock ${status}`)
+  // Ceny zakupu u dystrybutora nie mogą trafić do HTML ani do cache strony.
+  return body.results.map(({ ingramPrice: _cenaZakupu, ...wiersz }) => wiersz)
+}, ['ceny-kategorii'], { revalidate: 3600 })
+
+/** Cena „od” każdej drukarki według reguły kafla (`withLiveCatalogData`); przy błędzie pusta mapa. */
+async function cenyOdNaZywo(produkty: Product[]): Promise<CenyRfid> {
+  try {
+    const numery = Array.from(new Set(produkty.flatMap(catalogPartNumbers))).sort()
+    const dane = new Map((await wierszeCen(numery)).map(w => [w.partNumber, w]))
+    const ceny: CenyRfid = {}
+    for (const p of produkty) {
+      const cena = withLiveCatalogData(p, dane).priceFrom
+      if (cena && cena > 0) ceny[p.slug] = cena
+    }
+    return ceny
+  } catch (error) {
+    console.error('[kategoria] brak cen na żywo', error)
+    return {}
+  }
+}
+
 interface SubcategoryPageProps {
   slug: string
 }
@@ -177,14 +228,17 @@ function odmienNazwe(name: string): string {
   return name.charAt(0).toLowerCase() + name.slice(1)
 }
 
-export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
+export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const subcategory = getSubcategoryBySlug(slug)!
   const parentCategory = getCategoryById(subcategory.parentCategoryId)!
   const parentSubcategory = subcategory.parentSubcategoryId
     ? getSubcategoryById(subcategory.parentSubcategoryId)
     : undefined
   const products = getProductsBySubcategory(subcategory.id)
-  const content = subcategoryContent[slug]
+  // Kategoria RFID liczy z kart produktów tabelę typów, liczbę modeli i ceny w FAQ.
+  const content = slug === 'drukarki-rfid' && subcategoryContent[slug]
+    ? uzupelnijTrescRfid(subcategoryContent[slug], products, await cenyOdNaZywo(products))
+    : subcategoryContent[slug]
 
   // Siblings: subcategories at the same level
   const siblings = subcategory.parentSubcategoryId
@@ -407,6 +461,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
             filters={sidebarFilters[slug] || categoryFilters[slug]}
             filtersFirst={!sidebarFilters[slug]}
             useLivePrices={slug === 'drukarki-rfid'}
+            urlFilterPrefix={slug === 'drukarki-rfid' ? 'f.' : undefined}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)
               const catBrands = brandCategories.filter(b => b.categoryId === cat.id)
@@ -447,7 +502,7 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   <RichText text={content.definition.content} className="definition-content text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                 </section>
 
-                {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} />}
+                {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} kolumnaModelu={slug === 'drukarki-rfid' ? 'Typ' : undefined} />}
 
                 {content.calculator === 'koszt-etykiety' && (
                   <section>
@@ -487,19 +542,19 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 </section>
 
                 <section className="bg-gray-50 rounded-xl p-6">
-                  <h2 className="text-lg font-bold text-gray-900 mb-2">Dlaczego TAKMA?</h2>
+                  <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
                   <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
                   <SekcjaZwijana etykieta="Rozwiń opis">
                     <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                   </SekcjaZwijana>
                 </section>
 
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Scenariusze zastosowań</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
                   <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {content.useCases.map((uc, i) => (
@@ -739,19 +794,19 @@ export default function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   </section>
 
                   <section className="bg-gray-50 rounded-xl p-6">
-                    <h2 className="text-lg font-bold text-gray-900 mb-2">Dlaczego TAKMA?</h2>
+                    <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
                   </section>
 
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-3">Parametry techniczne i koszty</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
                     <SekcjaZwijana etykieta="Rozwiń opis">
                     <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                   </SekcjaZwijana>
                   </section>
 
                   <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Scenariusze zastosowań</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
                     <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {content.useCases.map((uc, i) => (

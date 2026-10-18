@@ -56,6 +56,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Termotransferowe drukarki etykiet: https://www.takma.com.pl/termotransferowe-drukarki-etykiet
   - Termiczne drukarki etykiet: https://www.takma.com.pl/termiczne-drukarki-etykiet
   - Mobilne drukarki etykiet: https://www.takma.com.pl/mobilne-drukarki-etykiet
+  - Drukarki RFID (druk i kodowanie etykiet RAIN UHF RFID): https://www.takma.com.pl/drukarki-rfid — biurkowe, przemysłowe 4- i 6-calowe oraz mobilne drukarki Zebra, SATO, Honeywell, TSC, Brother i BIXOLON w rozdzielczości od 203 do 609 dpi. RAIN UHF RFID opiera się na standardzie EPC UHF Gen2 v2 (ISO/IEC 18000-63), a w Europie pracuje w paśmie 865–868 MHz (ETSI). Aktualne ceny są na stronie kategorii.
   - Kolorowe drukarki etykiet Epson ColorWorks: https://www.takma.com.pl/kolorowe-drukarki-etykiet
     - Tusze do kolorowych drukarek Epson: https://www.takma.com.pl/tusze-do-kolorowych-drukarek
     - Etykiety do kolorowych drukarek Epson: https://www.takma.com.pl/etykiety-do-kolorowych-drukarek

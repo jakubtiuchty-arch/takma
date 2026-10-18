@@ -28,15 +28,15 @@ export const zq630RfidAdditionalAccessories: Product[] = additions.map(a => ({
 }))
 
 export const zq630RfidExistingAccessorySlugs = [
-  'zebra-zasilacz-ac-zq5-zq6', 'zebra-bateria-6800mah-zq630-plus', 'zebra-ladowarka-1-gniazdowa-zq5-zq6',
+  'zebra-zasilacz-ac-zq5-zq6', 'zebra-bateria-6600mah-zq630-plus', 'zebra-ladowarka-1-gniazdowa-zq5-zq6',
   'zebra-ladowarka-3-gniazdowa-zq5-zq6', 'zebra-zasilacz-samochodowy-zq5', 'zebra-kabel-usb-zq610',
   'zebra-kabel-db9-zq610', 'zebra-klips-paska-zq610',
 ]
 
 export const zq630PlusRfidProduct: Product = {
   id: 'zebra-zq630-plus-rfid', slug: 'zebra-zq630-plus-rfid', name: 'Zebra ZQ630 Plus RFID', seoH1: 'Zebra ZQ630 Plus RFID',
-  seoTitle: 'Zebra ZQ630 Plus RFID — mobilna drukarka i koder UHF',
-  seoDescription: 'Zebra ZQ630 Plus RFID v2 drukuje i koduje etykiety UHF przy towarze. PN ZQ63-RUXAE16-00, Wi-Fi 6, Bluetooth 5.3. Sprawdź cenę i akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZQ630 Plus RFID — drukarka RFID UHF 203 dpi',
+  seoDescription: 'Zebra ZQ630 Plus RFID: mobilna drukarka i koder UHF 203 dpi z obsługą Gen2X. Nadruk do 104 mm, Wi-Fi 6, Bluetooth 5.3, rolka do 66 mm, IP54.',
   shortDescription: 'Mobilna drukarka Zebra ZQ630 Plus RFID v2 drukuje i koduje etykiety RAIN UHF przy towarze. Druk do 104 mm, Wi-Fi 6 i Bluetooth 5.3.',
   description: `Zebra ZQ630 Plus RFID to mobilna drukarka i koder etykiet RAIN UHF RFID. Przygotowuje nadruk i zapisuje identyfikator w etykiecie bezpośrednio przy towarze.
 
@@ -44,19 +44,19 @@ export const zq630PlusRfidProduct: Product = {
 
 Drukarka służy do oznaczania produktów, kartonów, pojemników oraz wyposażenia. Możesz nosić ją przy sobie albo zamontować na zgodnym wózku. Identyfikator EPC zapisany w etykiecie powiąż z rekordem w systemie magazynowym. Do integracji ustal źródło danych, format identyfikatora i obsługę błędnego kodowania.
 
-Wbudowany moduł obsługuje UHF EPC Gen2, ISO/IEC 18000-63 i RAIN RFID. Aktualna wersja v2 obsługuje także Gen2X. Adaptacyjne kodowanie ułatwia kalibrację. Dla zgodnych materiałów minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem sprawdź zapis i odczyt wybranej etykiety na docelowej powierzchni.
+Wbudowany moduł obsługuje UHF EPC Gen2, ISO/IEC 18000-63 i RAIN RFID. Aktualna wersja v2 obsługuje także Gen2X. Adaptacyjne kodowanie ułatwia kalibrację. Dla zgodnych materiałów minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem zakoduj serię próbną na docelowej powierzchni.
 
 Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do radiowego odczytu towarów na półkach potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania.
 
 ## Aktualny PN v2 z Wi-Fi 6
 
-Ta oferta obejmuje ZQ63-RUXAE16-00: wersję v2 dla grupy regionalnej E, z angielskimi czcionkami i kodowaniem RFID. Ma Wi-Fi 6, Bluetooth 5.3, wałek do etykiet z podkładem oraz gilzę 19 mm. Pasek na ramię i klips do paska są częścią konfiguracji. Starszy PN ZQ63-RUXAE14-00 został wycofany.
+Dostępny PN ZQ63-RUXAE16-00 to wersja v2 dla grupy regionalnej E, z angielskimi czcionkami i kodowaniem RFID. Ma Wi-Fi 6, Bluetooth 5.3, wałek do etykiet z podkładem oraz gilzę 19 mm. Pasek na ramię i klips do paska są częścią konfiguracji. Starszy PN ZQ63-RUXAE14-00 został wycofany.
 
 Wi-Fi 6 obsługuje pasma 2,4 i 5 GHz. Bluetooth umożliwia bezpośrednie połączenie ze zgodnym terminalem lub komputerem. NFC Print Touch ułatwia parowanie; nie służy do kodowania etykiet UHF. Ethernet 10/100 wymaga osobnej [stacji P1050667-020](/produkt/zebra-stacja-ethernet-p1050667-020).
 
 ## Etykiety RFID z czarnym znacznikiem
 
-ZQ630 Plus RFID wymaga materiału z czarnym znacznikiem. Nie wykrywa przerw między etykietami. Nie przenoś automatycznie rolek dobranych do zwykłej ZQ630 Plus. Sprawdź położenie znacznika, wkładkę RFID, szerokość materiału i format rolki.
+ZQ630 Plus RFID wymaga materiału z czarnym znacznikiem. Nie wykrywa przerw między etykietami. Rolki do zwykłej ZQ630 Plus mogą nie mieć czarnego znacznika ani wkładki. Etykiety RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam format etykiety. Dobierzemy rolkę do ZQ630 Plus RFID: gilzę 19 mm, średnicę do 66 mm i położenie wkładki.
 
 Drukarka wykonuje nadruk termiczny bezpośredni, bez taśmy barwiącej. Ma 203 dpi i drukuje z prędkością do 115 mm/s. Kodowanie może zmniejszyć wydajność zadania. Maksymalna szerokość nadruku wynosi 104 mm, a szerokość materiału 51–112 mm. Rolka może mieć średnicę do 66 mm. Oferowany PN ma gilzę 19 mm i nie jest wersją linerless.
 
@@ -113,7 +113,7 @@ Gwarancja na drukarkę wynosi 12 miesięcy. Głowica w regionie EMEA ma ochronę
   compatibleAccessories: [], relatedAccessories: zq630RfidAccessoryIds,
   faq: [
     { question: 'Czym ZQ630 Plus RFID różni się od zwykłej ZQ630 Plus?', answer: 'Wersja RFID ma koder UHF do zapisu i kontroli układu etykiety. Zwykła ZQ630 Plus wykonuje nadruk. Wersja RFID wymaga czarnego znacznika na materiale i nie wykrywa przerw między etykietami.' },
-    { question: 'Jaki PN obejmuje ta oferta?', answer: 'Oferujemy ZQ63-RUXAE16-00: aktualną wersję v2, grupę regionalną E, Wi-Fi 6, Bluetooth 5.3, wałek do materiału z podkładem i gilzę 19 mm. Starszy ZQ63-RUXAE14-00 jest wycofany.' },
+    { question: 'Jaki PN jest dostępny?', answer: 'Oferujemy ZQ63-RUXAE16-00: aktualną wersję v2, grupę regionalną E, Wi-Fi 6, Bluetooth 5.3, wałek do materiału z podkładem i gilzę 19 mm. Starszy ZQ63-RUXAE14-00 jest wycofany.' },
     { question: 'Czy mogę użyć zwykłej rolki etykiet z przerwą?', answer: 'Nie dobieraj jej wyłącznie na podstawie wymiarów. ZQ630 Plus RFID wymaga materiału z czarnym znacznikiem i nie wykrywa przerw. Do kodowania potrzebna jest dodatkowo zgodna wkładka RFID. Sprawdź materiał i wykonaj kalibrację.' },
     { question: 'Czy ta drukarka wymaga taśmy barwiącej?', answer: 'Nie. Drukuje termicznie bezpośrednio na materiale termoczułym. Kodowanie UHF wymaga etykiety z wkładką RFID. Oferowany PN jest wersją do materiału na podkładzie, a nie linerless.' },
     { question: 'Czy zasilacz jest w komplecie?', answer: 'Zasilacz do ładowania dobierz osobno, np. P1031365-042 z przewodem EU. Alternatywą jest zgodna ładowarka wyjętej baterii. Pasek na ramię i klips do paska są częścią oferowanego PN.' },

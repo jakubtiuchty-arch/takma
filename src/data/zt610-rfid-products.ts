@@ -28,8 +28,8 @@ export const zt610RfidProduct: Product = {
   slug: 'zebra-zt610-rfid',
   name: 'Zebra ZT610 RFID',
   seoH1: 'Zebra ZT610 RFID',
-  seoTitle: 'Zebra ZT610 RFID — drukarka i koder etykiet UHF',
-  seoDescription: 'Zebra ZT610 RFID drukuje i koduje etykiety RAIN UHF. Warianty 203, 300 i 600 dpi, druk do 104 mm. Sprawdź ceny, dostępność i akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZT610 RFID — drukarka RFID UHF 203–600 dpi',
+  seoDescription: 'Zebra ZT610 RFID: przemysłowa drukarka i koder RAIN UHF 203, 300 lub 600 dpi. Druk 104 mm do 356 mm/s, Gigabit Ethernet, kolorowy ekran 4,3 cala.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT610 RFID drukuje i koduje etykiety RAIN UHF. Wybierz 203, 300 lub 600 dpi. Szerokość druku wynosi do 104 mm.',
   description: `Zebra ZT610 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID. Wykonuje nadruk oraz zapisuje dane w układzie elektronicznym etykiety. Służy do przygotowania oznaczeń towarów, opakowań, części i pojemników.
 
@@ -41,7 +41,7 @@ Drukarka sprawdza etykietę w swoim torze materiałów. Do odczytu oznaczonych t
 
 ## Warianty 203, 300 i 600 dpi z fabrycznym RFID
 
-Ta karta obejmuje trzy konfiguracje EU/ROW z fabrycznym modułem RFID. PN ZT61042-T0E01C0Z ma 203 dpi, ZT61043-T0E01C0Z ma 300 dpi, a ZT61046-T0E01C0Z ma 600 dpi. Każdy wariant ma tryb ręcznego odrywania etykiet. Obcinacz i nawijak są sprzedawane osobno.
+Dostępne są trzy konfiguracje EU/ROW z fabrycznym modułem RFID. PN ZT61042-T0E01C0Z ma 203 dpi, ZT61043-T0E01C0Z ma 300 dpi, a ZT61046-T0E01C0Z ma 600 dpi. Każdy wariant ma tryb ręcznego odrywania etykiet. Obcinacz i nawijak są sprzedawane osobno.
 
 Wybierz 203 dpi do większych oznaczeń logistycznych. Wersje 300 i 600 dpi umożliwiają druk drobniejszego tekstu oraz kodów. Rozdzielczość opisuje nadruk i nie określa zasięgu odczytu RFID. Wersji RFID 600 dpi nie należy utożsamiać z ZT610 Micro Label, która nie obsługuje RFID.
 
@@ -49,7 +49,7 @@ Wybierz 203 dpi do większych oznaczeń logistycznych. Wersje 300 i 600 dpi umo�
 
 Szerokość druku wynosi do 104 mm. Maksymalna prędkość nadruku wynosi 356 mm/s przy 203 dpi, 305 mm/s przy 300 dpi i 152 mm/s przy 600 dpi. Rzeczywista wydajność kodowania zależy od etykiety, ilości danych i ustawień zadania.
 
-Drukarka mieści rolkę etykiet o średnicy do 203 mm na gilzie 76 mm. Obsługuje materiał o grubości 0,058–0,25 mm. Do druku termotransferowego potrzebujesz taśmy barwiącej o długości do 450 m. Druk termiczny bezpośredni wymaga odpowiednich etykiet termoczułych i nie wymaga taśmy. W obu metodach kodowanie wymaga etykiety z wkładką RFID.
+Drukarka mieści rolkę etykiet o średnicy do 203 mm na gilzie 76 mm. Obsługuje materiał o grubości 0,058–0,25 mm. Do druku termotransferowego potrzebujesz taśmy barwiącej o długości do 450 m. Druk termiczny bezpośredni wymaga odpowiednich etykiet termoczułych i nie wymaga taśmy. Niezależnie od metody druku do kodowania potrzebna jest etykieta z wkładką RFID.
 
 ## Łączność i obsługa stanowiska
 
@@ -122,8 +122,8 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i czę
   compatibleAccessories: [],
   relatedAccessories: zt610RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT610 RFID różni się od zwykłej ZT610?', answer: 'ZT610 RFID ma moduł do radiowego zapisu i odczytu układu etykiety podczas jej przygotowania. Ta karta obejmuje konfiguracje z fabrycznym RFID. [Zwykła ZT610](/produkt/zebra-zt610) bez takiego modułu wykonuje tylko nadruk.' },
-    { question: 'Jakie numery PN obejmuje ta oferta?', answer: 'ZT61042-T0E01C0Z ma 203 dpi, ZT61043-T0E01C0Z ma 300 dpi, a ZT61046-T0E01C0Z ma 600 dpi. Są to konfiguracje EU/ROW z RFID, przewodami zasilającymi EU i UK oraz ręcznym odrywaniem etykiet.' },
+    { question: 'Co ma ZT610 RFID, czego nie ma zwykła ZT610?', answer: 'ZT610 RFID ma moduł do radiowego zapisu i odczytu układu etykiety podczas jej przygotowania. Dostępne warianty mają RFID fabrycznie. [Zwykła ZT610](/produkt/zebra-zt610) bez takiego modułu wykonuje tylko nadruk.' },
+    { question: 'Jakie numery PN są dostępne?', answer: 'ZT61042-T0E01C0Z ma 203 dpi, ZT61043-T0E01C0Z ma 300 dpi, a ZT61046-T0E01C0Z ma 600 dpi. Są to konfiguracje EU/ROW z RFID, przewodami zasilającymi EU i UK oraz ręcznym odrywaniem etykiet.' },
     { question: 'Czy ZT610 RFID 600 dpi to wersja Micro Label?', answer: 'Nie. Wersja RFID 600 dpi drukuje i koduje zgodne etykiety UHF. ZT610 Micro Label z rodziny ZT61A służy do druku mikroetykiet i nie obsługuje RFID. Minimalny rozmiar etykiety RFID zależy od konkretnej wkładki i materiału.' },
     { question: 'Czy ZT610 RFID ma Wi-Fi?', answer: 'Pokazane PN nie mają fabrycznego Wi-Fi. Mają Ethernet, USB, USB Host, RS-232 i Bluetooth 4.0. Opcjonalny moduł P1083320-037G dodaje Wi-Fi 6 i Bluetooth 5.3.' },
     { question: 'Czy drukarka odczyta wszystkie produkty na półce?', answer: 'Nie. Drukarka koduje etykietę w swoim torze materiałów. Do inwentaryzacji oznaczonych produktów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },

@@ -26,8 +26,8 @@ export const zt620RfidAccessorySlugs = [
 export const zt620RfidProduct: Product = {
   id: 'zebra-zt620-rfid', slug: 'zebra-zt620-rfid',
   name: 'Zebra ZT620 RFID', seoH1: 'Zebra ZT620 RFID',
-  seoTitle: 'Zebra ZT620 RFID — przemysłowa drukarka i koder do 168 mm',
-  seoDescription: 'Zebra ZT620 RFID drukuje i koduje szerokie etykiety RAIN UHF. Warianty 203 i 300 dpi, Gigabit Ethernet, ceny i dostępność. Sprawdź akcesoria w TAKMA.',
+  seoTitle: 'Zebra ZT620 RFID — drukarka RFID UHF 203/300 dpi',
+  seoDescription: 'Zebra ZT620 RFID: 6-calowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk do 168 mm z prędkością do 305 mm/s, Gigabit Ethernet, Bluetooth 4.0.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT620 RFID do druku i kodowania szerokich etykiet RAIN UHF. Druk do 168 mm, 203 lub 300 dpi, Gigabit Ethernet.',
   description: `Zebra ZT620 RFID to przemysłowa drukarka i koder szerokich etykiet RAIN UHF RFID. Wykonuje nadruk do 168 mm i zapisuje dane w układzie elektronicznym etykiety.
 
@@ -113,13 +113,13 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
   applications: ['Druk i kodowanie szerokich etykiet RFID na kartony oraz palety', 'Oznaczanie pojemników i opakowań zbiorczych na produkcji', 'Przygotowanie identyfikatorów EPC powiązanych z danymi WMS lub ERP', 'Znakowanie wyrobów zgodnymi etykietami RAIN UHF'],
   compatibleAccessories: [], relatedAccessories: zt620RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT620 RFID różni się od zwykłej ZT620?', answer: 'ZT620 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Standardowe konfiguracje [ZT620](/produkt/zebra-zt620) bez tego modułu wykonują tylko nadruk. Dobierz wariant do potrzeby kodowania RFID.' },
-    { question: 'Jakie PN obejmuje ta oferta?', answer: 'ZT62062-T0E01C0Z ma 203 dpi, a ZT62063-T0E01C0Z — 300 dpi. Oba PN obejmują fabryczne RFID Global ROW, przewody zasilające EU i UK oraz ręczne odrywanie etykiet. Nie mają fabrycznego Wi-Fi, obcinacza ani nawijaka.' },
+    { question: 'Kiedy wybrać ZT620 RFID, a kiedy standardową ZT620?', answer: 'ZT620 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Standardowe konfiguracje [ZT620](/produkt/zebra-zt620) bez tego modułu wykonują tylko nadruk. Dobierz wariant do potrzeby kodowania RFID.' },
+    { question: 'Jakie PN są dostępne?', answer: 'ZT62062-T0E01C0Z ma 203 dpi, a ZT62063-T0E01C0Z — 300 dpi. Oba PN obejmują fabryczne RFID Global ROW, przewody zasilające EU i UK oraz ręczne odrywanie etykiet. Nie mają fabrycznego Wi-Fi, obcinacza ani nawijaka.' },
     { question: 'Czy obie rozdzielczości drukują z tą samą prędkością?', answer: 'Nie. Wersja 203 dpi drukuje do 305 mm/s, czyli 12 ips. Wersja 300 dpi drukuje do 203 mm/s, czyli 8 ips. Rzeczywista wydajność kodowania zależy także od wkładki RFID, ilości danych i ustawień.' },
     { question: 'Kiedy wybrać ZT620 RFID zamiast ZT610 RFID?', answer: 'Wybierz ZT620 RFID, jeśli nadruk przekracza szerokość 104 mm. ZT620 RFID drukuje do 168 mm. ZT610 RFID drukuje do 104 mm i oferuje także rozdzielczość 600 dpi, której nie ma ZT620 RFID.' },
     { question: 'Czy drukarka ma Wi-Fi?', answer: 'Oferowane PN nie mają fabrycznego Wi-Fi. Mają Gigabit Ethernet, USB, USB Host, RS-232 i Bluetooth 4.0. Do rozbudowy dobierz moduł Wi-Fi 5 P1083320-037C albo Wi-Fi 6 P1083320-037G. Moduły są sprzedawane osobno.' },
     { question: 'Czy ZT620 RFID może drukować grube etykiety na metal?', answer: 'Ta drukarka obsługuje materiał o grubości do 0,25 mm. Nie jest wersją On-metal. Do grubych etykiet na metal sprawdź odpowiedni wariant [ZT411 RFID On-metal](/produkt/zebra-zt411-rfid) i potwierdź zgodność konkretnego materiału.' },
-    { question: 'Czy drukarka odczyta całą półkę magazynową?', answer: 'Nie. Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do inwentaryzacji towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
+    { question: 'Czy drukarka odczyta całą półkę magazynową?', answer: 'Nie. Drukarka zapisuje i weryfikuje wkładkę tylko w chwili drukowania etykiety. Do inwentaryzacji towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
     { question: 'Czy nawijak i materiały są w zestawie?', answer: 'Nie. Nawijak, obcinacz, etykiety RFID, taśmę barwiącą i dodatkowe moduły dobierz osobno. Nawijak P1083320-085 obsługuje zwijanie etykiet albo podkładu w trybie odklejania. Do druku termicznego bezpośredniego nie potrzebujesz taśmy barwiącej.' },
   ],
   downloads: [

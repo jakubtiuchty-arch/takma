@@ -4,6 +4,9 @@ import { rfidPrinterCategory as category } from '@/data/rfid-printer-category'
 
 const url = `https://www.takma.com.pl/${category.slug}`
 
+// Ceny w FAQ i tabeli „Którą drukarkę RFID wybrać?” pochodzą ze stanów dystrybutorów.
+export const revalidate = 3600
+
 export const metadata: Metadata = {
   title: { absolute: category.seoTitle },
   description: category.seoDescription,
