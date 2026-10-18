@@ -27,6 +27,107 @@ export interface BrandPillarData {
 }
 
 export const brandPillarContent: Record<string, BrandPillarData> = {
+  brady: {
+  "heroText": "Tablety przemysłowe Brady i zgodne akcesoria do magazynu, produkcji oraz pracy na wózku. Porównaj warianty RT710, ceny i dostępność. Dobierz baterię, stację oraz klawiaturę.",
+  "categoryTiles": [
+    {
+      "categoryId": "tablety-przemyslowe",
+      "name": "Tablety przemysłowe Brady",
+      "href": "/tablety-brady",
+      "description": "RT710 z ekranem 10,1 cala, Androidem 16 i Wi-Fi 7."
+    },
+    {
+      "categoryId": "akcesoria",
+      "name": "Akcesoria Brady",
+      "href": "/katalog?producent=brady&kategoria=akcesoria",
+      "description": "Baterie, stacje, klawiatury i elementy montażowe do RT710."
+    }
+  ],
+  "featuredSlugs": [
+    "brady-rt710"
+  ],
+  "technologies": [
+    {
+      "name": "Mobility Edge",
+      "badge": "Android",
+      "description": "Platforma RT710 obsługuje aplikacje Android. Warunki aktualizacji systemu zależą od gwarancji lub umowy serwisowej."
+    },
+    {
+      "name": "Wi-Fi 7",
+      "badge": "Łączność",
+      "description": "Warianty RT710 L0 łączą się z siecią przez Wi-Fi. Te konfiguracje nie mają modemu WWAN."
+    },
+    {
+      "name": "Wymienna bateria",
+      "badge": "Zasilanie",
+      "description": "Dobierz baterię standardową lub rozszerzoną. Wersja RT710-L0N-50C0104G nie zawiera baterii."
+    }
+  ],
+  "industries": [
+    {
+      "name": "Magazyn",
+      "description": "Listy kompletacyjne i inwentaryzacja na ekranie tabletu.",
+      "products": "RT710 ze skanerem S0703 lub S0803 FlexRange"
+    },
+    {
+      "name": "Produkcja",
+      "description": "Obsługa zleceń, formularzy i dokumentacji na stanowisku.",
+      "products": "RT710 ze stacją biurkową"
+    },
+    {
+      "name": "Transport wewnętrzny",
+      "description": "Dostęp do aplikacji z pojazdu po dobraniu stacji i mocowania.",
+      "products": "RT710 ze stacją pojazdową i klawiaturą"
+    }
+  ],
+  "timeline": [],
+  "aboutParagraphs": [
+    "Brady dostarcza urządzenia i materiały do identyfikacji, gromadzenia danych oraz obsługi procesów przemysłowych. W ofercie TAKMA znajdują się tablet RT710 i akcesoria do tego modelu.",
+    "RT710 łączy ekran 10,1 cala z Androidem 16, Wi-Fi 7 i obudową IP66/IP68. Konfiguracje różnią się pamięcią, skanerem i zawartością zestawu. Wybierz konkretny numer PN przed zamówieniem."
+  ],
+  "partnership": [],
+  "service": [],
+  "comparisonIntro": "",
+  "comparison": [],
+  "whyBuyItems": [
+    {
+      "title": "Dobór konfiguracji",
+      "text": "Sprawdź skaner, pamięć i zawartość zestawu przy konkretnym PN."
+    },
+    {
+      "title": "Zgodne akcesoria",
+      "text": "Dobierz baterie i stacje do RT710. Nie przenoś zgodności ze starszych modeli RT10."
+    },
+    {
+      "title": "Ceny i dostępność",
+      "text": "Sprawdź bieżący stan przy wybranym wariancie. Dostawa oczekiwana nie oznacza dostępności od ręki."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jakie produkty Brady są w TAKMA?",
+      "answer": "Obecnie oferujemy tablet przemysłowy RT710 i zgodne akcesoria: baterie, stacje, klawiatury oraz elementy montażowe."
+    },
+    {
+      "question": "Czy tablet RT710 jest dostępny z 5G?",
+      "answer": "PN oferowane na tej karcie mają oznaczenie L0 i korzystają z Wi-Fi 7. Nie zawierają radia WWAN."
+    },
+    {
+      "question": "Czy RT710 zawiera baterię i stację?",
+      "answer": "Zawartość zależy od PN. Wersja bez skanera RT710-L0N-50C0104G nie zawiera baterii. Stacje zamawia się osobno."
+    }
+  ],
+  "guideLinks": [
+    {
+      "title": "Dobierz wariant Brady RT710",
+      "href": "/produkt/brady-rt710"
+    },
+    {
+      "title": "Porównaj tablety przemysłowe",
+      "href": "/tablety-przemyslowe"
+    }
+  ]
+},
   zebra: {
     heroText: 'Drukarki etykiet, terminale mobilne, skanery kodów kreskowych, tablety przemysłowe, materiały eksploatacyjne i akcesoria — pełna oferta Zebra Technologies z cenami netto i dostawą z magazynu w Polsce.',
 

@@ -96352,6 +96352,17 @@ export function getProductsByTags(tags: ProductTag[]): Product[] {
 
 export const brandCategories: BrandCategory[] = [
   {
+  "id": "tablety-przemyslowe-brady",
+  "slug": "tablety-brady",
+  "manufacturerId": "brady",
+  "categoryId": "tablety-przemyslowe",
+  "name": "Tablety przemysłowe Brady",
+  "seoTitle": "Tablety przemysłowe Brady RT710 | TAKMA",
+  "seoDescription": "Tablety Brady RT710 z Androidem 16, ekranem 10,1 cala i Wi-Fi 7. Porównaj skanery, pamięć i PN. Dobierz baterie, stacje oraz klawiatury.",
+  "longDescription": "Brady RT710 to tablet przemysłowy z ekranem 10,1 cala i Androidem 16. Warianty L0 mają Wi-Fi 7 i nie zawierają modemu WWAN. Wybierz skaner S0703 Standard Range, S0803 FlexRange lub wersję bez skanera. Sprawdź zawartość zestawu przy konkretnym PN. Baterie, stacje i klawiatury dobierzesz na karcie produktu.",
+  "faq": []
+},
+  {
     id: 'drukarki-etykiet-zebra',
     slug: 'drukarki-etykiet-zebra',
     manufacturerId: 'zebra',

@@ -35,3 +35,28 @@ Warianty nazw image-3 do image-8 zwracają identyczny plik co image (potwierdzon
 Próg różnicy od bieli 30/255. EDA10A: 1200 × 800, ramka produktu 79% × 78%. Zebra ET40: 1200 × 800, 89,1% × 76,8%. RT710: 1536 × 1024, 82,4% × 80,8%. Bez zmian CSS i układu kart. Kontrola w przeglądarce obejmuje pole zdjęcia, odstępy, galerię, tabelę różnic oraz standardowe rozwijanie akcesoriów.
 
 Opis produktu, FAQ i metadane są napisane od nowa według polskiej adaptacji standardu języka TAKMA. Źródła i rozbieżności pozostają w tej dokumentacji roboczej.
+
+## Uzupełnienie: producent i fotografie akcesoriów
+
+Brady ma teraz własną stronę `/brady`, stronę tabletów `/tablety-brady`, link w menu tabletów i stopce, logo na kartach oraz wpis w mapie strony. Strony korzystają z tych samych komponentów BrandPillarPage i BrandCategoryPage co pozostałe marki. Bez nowego układu. Logo: [Brady Corporation, kopia wektorowa z odnośnikiem do oficjalnego źródła](https://commons.wikimedia.org/wiki/File:Brady_Corporation_logo.svg), plik `https://upload.wikimedia.org/wikipedia/commons/3/35/Brady_Corporation_logo.svg`.
+
+Dodano dwie potwierdzone fotografie:
+
+- MBL-HDST-USBC: https://www.midwestbarcodingsolutions.com/mbl-hdst-usbc/ — zdjęcie https://cdn11.bigcommerce.com/s-tjvqt45f8d/images/stencil/500x659/products/153935/460577/mbl-hdst-usbc__95473.1761678299.jpg?c=1 . Potwierdzenie wyglądu i PN także w [katalogu CT32 producenta](https://www.bluestarinc.com/hubfs/CT32%20Accessory%20Guide.pdf?hsLang=en-us).
+- 340-053-003-DB9P: https://www.atlasrfidstore.com/honeywell-rugged-keyboard-for-honeywell-vehicle-docks/ — zdjęcie https://cdn11.bigcommerce.com/s-ka7ofex/images/stencil/1280w/products/5468/22648/Honeywell_Rugged_Keyboard_For_Honeywell_Vehicle_Docks__52113.1745249016.png?c=2 . Potwierdzenie PN także w [katalogu Thor producenta](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/mobile-computers/vehicle-mount-computers/common/documents/sps-ppr-thor-vm-series-accessories-guide-en.pdf).
+
+Imagen dostosował białe marginesy, następnie WebP jakości 92. Pola zdjęć i komponenty pozostają standardowe. Porównano fotografie ze zdjęciami RT10-PWR i RT10-HS-1; kontrola objęła także faktyczną wielkość części w polu oraz rozwijanie 4 → 15 → 4 akcesoriów.
+
+### Pozostałe fotografie — nierozwiązane
+
+Dla 13 pozostałych PN nie znaleziono potwierdzonych osobnych fotografii części. Nie oznacza to, że producent nie ma ich w niepublicznym pakiecie materiałów. Publiczny katalog Jarltech nie wystawia osobnych fotografii. BlueStar SKU info wymaga osobnego zalogowania do portalu; nie obchodzono tej blokady. Odrzucono obrazy:
+
+- Etiden RT710-DD / RT710-BTEC-001: pole zdjęcia zawiera `brady-logo_3.jpg`, a nie część.
+- Antegis RT710-VD-KB4: `BDY_RT710_front_shop.png` — sam tablet zamiast klawiatury.
+- Aspekt RT710-VD-VS1 i RT710-3PN-PWRCVRT: cały tablet ze stacją i klawiaturą, nie sam sprzedawany element.
+- Webmaxx RT710-VD-VS1: ogólny kolaż baterii, skanera, zasilacza i akcesoriów innych urządzeń.
+- 1st-task RT710-BTEC-001: `no-picture.jpg`.
+- Barcodefactory 340-053-003-DB9P: ogólny obraz `generic-honeywell-parts-and-accessories.png`; użyto zamiast niego zweryfikowanej fotografii Atlas.
+- POSGuys RT710-BTEC-001, RT710-SP-1, RT710-VD-KB4, RT710-3PN-PWRCVRT: „Image Unavailable”.
+
+Brakujące PN: RT710-BTSC-001, RT710-BTEC-001, RT710-CD, RT710-DD, RT710-VD-TH1, RT710-VD-VS1, RT710-VD-KB1, RT710-VD-KB2, RT710-VD-KB4, RT710-SP-1, RT710-MNT-VS, USBC-2-HDMI, RT710-3PN-PWRCVRT. Bez wymyślania konstrukcji, zdjęć starszego RT10 ani podstawiania grafiki marki za zdjęcie akcesorium.

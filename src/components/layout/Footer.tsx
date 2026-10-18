@@ -12,6 +12,7 @@ const footerLinks = {
     { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
   ],
   producenci: [
+    { name: 'Brady', href: '/brady' },
     { name: 'Zebra', href: '/katalog?producent=zebra' },
     { name: 'Honeywell', href: '/katalog?producent=honeywell' },
     { name: 'Brother', href: '/katalog?producent=brother' },

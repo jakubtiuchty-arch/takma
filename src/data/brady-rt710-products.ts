@@ -923,8 +923,8 @@ export const bradyRt710Accessories: Product[] = [
       "akcesoria-do-tabletow"
     ],
     "priceFrom": 3228.96,
-    "images": [],
-    "imageDescriptions": [],
+    "images": ["/images/products/brady-rt710-keyboard-101-v1.webp"],
+    "imageDescriptions": ["Klawiatura 340-053-003-DB9P — 101 przycisków i sterowanie kursorem"],
     "tags": [
       "magazyn",
       "logistyka"
@@ -974,8 +974,8 @@ export const bradyRt710Accessories: Product[] = [
       "akcesoria-do-tabletow"
     ],
     "priceFrom": 161.52,
-    "images": [],
-    "imageDescriptions": [],
+    "images": ["/images/products/brady-rt710-headset-v1.webp"],
+    "imageDescriptions": ["Zestaw słuchawkowy MBL-HDST-USBC — słuchawka, przycisk PTT i wtyczka USB-C"],
     "tags": [
       "magazyn",
       "logistyka"

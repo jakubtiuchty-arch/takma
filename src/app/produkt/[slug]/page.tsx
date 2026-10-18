@@ -796,7 +796,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               </div>
               {manufacturer?.logo && (
                 <Link
-                  href={['zebra', 'honeywell', 'newland', 'epson'].includes(manufacturer.slug)
+                  href={['zebra', 'honeywell', 'newland', 'epson', 'brady'].includes(manufacturer.slug)
                     ? `/${manufacturer.slug}`
                     : `/katalog?producent=${manufacturer.slug}`}
                   className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"

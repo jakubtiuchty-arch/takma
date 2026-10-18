@@ -1416,7 +1416,7 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
 for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
-for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell']) {
+for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady']) {
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }
 // Drukarki etykiet — strony marek: ten sam zestaw co kategoria (Producent chowa się sam)
