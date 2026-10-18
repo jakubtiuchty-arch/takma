@@ -1,0 +1,146 @@
+[
+  {
+    "image": 0,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      115,
+      176
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 1,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      175,
+      65
+    ],
+    "longSide": 175
+  },
+  {
+    "image": 2,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      172,
+      176
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 3,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      145,
+      176
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 4,
+    "field": [
+      286,
+      215
+    ],
+    "visibleObject": [
+      176,
+      97
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 5,
+    "field": [
+      286,
+      215
+    ],
+    "visibleObject": [
+      176,
+      75
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 6,
+    "field": [
+      286,
+      215
+    ],
+    "visibleObject": [
+      176,
+      99
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 7,
+    "field": [
+      286,
+      215
+    ],
+    "visibleObject": [
+      176,
+      117
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 8,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      176,
+      99
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 9,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      176,
+      137
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 10,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      176,
+      150
+    ],
+    "longSide": 176
+  },
+  {
+    "image": 11,
+    "field": [
+      286,
+      216
+    ],
+    "visibleObject": [
+      176,
+      167
+    ],
+    "longSide": 176
+  }
+]

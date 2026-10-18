@@ -40,3 +40,12 @@ Zachowano istniejące komponenty. Dla jednego PN tabela zachowuje wyłącznie PN
 ## Kontrole
 
 TypeScript i lint bez błędów. Przeglądarka: H1, meta/OG/Twitter, śródtytuły, schemat Product z UHF i konkretnymi parametrami, akcesoria 4→12→4, telefon 390 px bez przepełnienia. Wszystkie nowe linki produktowe i identyfikatory akcesoriów istnieją. Dokumenty: PDF, HTTP200, application/pdf.
+
+
+## Korekta wyglądu po uwagach użytkownika
+
+Linki do wyposażenia ładowania i porównywanych terminali korzystają z istniejącego renderera listy kart (jak na kartach stacji TC22R), zamiast licznych linków śródtekstowych. Zachowano adresy produktów. Usunięto odziedziczone punkty i wcięcia list tylko w rendererze takich kart, przez jawne klasy list-none/p-0. Standardowe listy punktowane pozostają bez zmian.
+
+W sekcji akcesoriów WS501-R zastosowano opcjonalną normalizację widocznego obiektu. Nie zmieniono proporcji pola zdjęcia ani siatki. Pozostałe karty nie otrzymują flagi uniformImage; test MC3330xR i TC53e-RFID potwierdził brak zmiany transformacji. Pomiar granic PNG uwzględnia kanał alfa, aby przezroczyste tło nie było traktowane jako produkt. Dla 12 gotowych obrazów w polu 286 × 215–216 px widoczny najdłuższy bok ma 175–176 px. Raport: accessory-card-measurements.json.
+
+Sprawdzono wszystkie 12 kafli po rozwinięciu, działanie 4→12→4, osiem kart z linkami bez podkreślenia oraz widok 390 px bez przepełnienia. TypeScript bez błędów. Lint: istniejące, niezwiązane ostrzeżenie o img w page.tsx:808; brak nowych ostrzeżeń. Kontrola geometrii dla wszystkich 12 plików przy proporcjach 1:1 i 4:3 potwierdza wyśrodkowanie i brak przycięcia.

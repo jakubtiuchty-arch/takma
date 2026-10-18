@@ -1547,12 +1547,12 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     const elementLinks = items.map(item => item.match(/^\[([^\]]+)\]\((\/produkt\/[^)]+)\)$/))
                     if (elementLinks.every(Boolean)) {
                       return (
-                        <ul key={i} className="not-prose grid gap-3 sm:grid-cols-2 mb-5 list-none p-0">
+                        <ul key={i} className="not-prose grid gap-3 sm:grid-cols-2 mb-5 !list-none !p-0">
                           {elementLinks.map((match, j) => {
                             const [, label, href] = match!
                             const pnMatch = label.match(/^(.*) \(([^)]+)\)$/)
                             return (
-                              <li key={j}>
+                              <li key={j} className="!list-none !m-0 !p-0">
                                 <Link href={href} className="flex h-full items-center justify-between gap-4 rounded-xl border border-gray-200 bg-gray-50 p-4 hover:border-primary-400 hover:bg-white transition-colors">
                                   <span className="min-w-0">
                                     <span className="block font-semibold text-gray-900">{pnMatch?.[1] ?? label}</span>
@@ -1870,7 +1870,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="akcesoria"
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                products={relatedAccessories as typeof products}
+                products={product.id === 'zebra-ws501-r' ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true })) : relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
               />
