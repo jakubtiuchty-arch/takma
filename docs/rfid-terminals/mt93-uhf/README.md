@@ -24,3 +24,7 @@ Pomiar w measurements.json: pole główne 584×584, wysokość widocznego Newlan
 ## Kontrole przed pushem
 
 TypeScript bez błędów, lint bez nowych ostrzeżeń (istniejące ostrzeżenie img na stronie produktu). Przeglądarka: Product/InStock, PN, cena dodatnia, metaopis, wszystkie linki w opisie 200, linki niepodkreślone i semibold, lokalne PDF-y 200/application/pdf/%PDF-, akcesoria 4→7→4, mobilny 390 px bez przewijania poziomego, kategoria 7 modeli i sześć Zebr na górze, /admin/etykiety-na-magazynie przekierowuje do logowania. Wyniki w local-results.json. Wdrożenie wyłącznie przez Git na claude/takma-frontend-build-RrM9E.
+
+## Korekta skali zdjęcia głównego
+
+Na polecenie użytkownika zmniejszono widoczny produkt o około 25% liniowo względem v1. Imagen: wyłącznie zmniejszenie całego urządzenia i dodanie białych marginesów, zachowanie konstrukcji. Nowy plik public/images/products/mt93-uhf-main-v2.webp, wynik exec-a79ba035-cbc9-42eb-a5e8-71016e39964b.png. Pole galerii bez zmian 584×584. Wysokość widocznego urządzenia około 59% pola (wcześniej 78,4%). Porównano z dotychczasowymi zdjęciami TC22R 77,6% i MC3330xR 77,1%; zgodnie z korektą użytkownika Newland ma celowo większy biały margines. Sprawdzono kartę produktu i kafelek kategorii w przeglądarce.

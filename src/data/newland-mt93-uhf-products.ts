@@ -24,7 +24,7 @@ export const newlandMt93UhfProducts: Product[] = [
       "logistyka"
     ],
     "images": [
-      "/images/products/mt93-uhf-main-v1.webp",
+      "/images/products/mt93-uhf-main-v2.webp",
       "/images/products/mt93-uhf-side-v1.webp",
       "/images/products/mt93-uhf-antenna-v1.webp"
     ],
