@@ -551,3 +551,16 @@
     scroll-padding-top: 11rem;
   }
 }
+
+/* Inline editorial links across RFID categories, products and linked accessories. */
+.rfid-text-links [data-text-link],
+.rfid-text-links .prose a {
+  color: #2563eb;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.rfid-text-links [data-text-link]:hover,
+.rfid-text-links .prose a:hover {
+  color: #1e40af;
+}

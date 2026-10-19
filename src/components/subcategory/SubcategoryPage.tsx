@@ -1,3 +1,4 @@
+import { isRfidContentCategory } from '@/lib/rfid-content'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -36,8 +37,8 @@ import type { StockInfo } from '@/lib/ingram'
  */
 function LinkWiersza({ href, className, children }: { href: string; className: string; children: ReactNode }) {
   return href.includes('?')
-    ? <a href={href} className={className}>{children}</a>
-    : <Link href={href} className={className}>{children}</Link>
+    ? <a data-text-link="true" href={href} className={className}>{children}</a>
+    : <Link data-text-link="true" href={href} className={className}>{children}</Link>
 }
 
 /**
@@ -408,7 +409,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
         </section>
       )}
 
-      <div className="container-main py-8 lg:py-12">
+      <div className={`container-main py-8 lg:py-12 ${isRfidContentCategory(slug) ? 'rfid-text-links' : ''}`}>
         {!hero && (
           <>
             {/* Breadcrumbs */}

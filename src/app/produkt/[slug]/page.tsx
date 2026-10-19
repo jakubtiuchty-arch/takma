@@ -1,3 +1,4 @@
+import { isRfidContentProduct } from '@/lib/rfid-content'
 import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
 import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
@@ -241,6 +242,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     notFound()
   }
 
+  const rfidTextLinks = isRfidContentProduct(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
@@ -943,7 +945,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         />
       )}
 
-      <div className="container-main py-6 lg:py-10">
+      <div className={`container-main py-6 lg:py-10 ${rfidTextLinks ? 'rfid-text-links' : ''}`}>
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-primary-600 transition-colors">
@@ -1007,6 +1009,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {showVariants && product.variants!.length > 1 && (
               <a
                 href="#warianty"
+                data-text-link="true"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-gray-900 underline underline-offset-4 decoration-primary-400 hover:decoration-primary-600 transition-colors mb-1"
               >
                 {product.variants!.length} {product.variants!.length === 1 ? 'wariant' : product.variants!.length < 5 ? 'warianty' : 'wariantów'} do wyboru ↓
@@ -1527,7 +1530,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
                 // Fallback — standardowy renderer dla pozostałych produktów
                 return (
-                  <div className={`prose prose-gray max-w-none text-[15px] leading-relaxed ${product.id === 'zebra-ws501-r' ? '[&_a]:!no-underline [&_a]:font-semibold' : ''}`}>
+                  <div className="prose prose-gray max-w-none text-[15px] leading-relaxed">
                     {descriptionForDisplay.split('\n\n').filter(paragraph => paragraph.trim()).map((paragraph, i) => {
                   const trimmed = paragraph.trim()
 
@@ -1537,7 +1540,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                     return <h3 key={i} className="text-lg font-bold text-gray-900 mt-8 mb-3">{headingMatch[1]}</h3>
                   }
 
-                  if (product.categoryId === 'akcesoria' && /\]\(\/produkt\//.test(trimmed)) {
+                  if (!rfidTextLinks && product.categoryId === 'akcesoria' && /\]\(\/produkt\//.test(trimmed)) {
                     return <AccessoryDescriptionBlock key={i} text={trimmed} blockId={`description-stock-${i}`} excludedIds={requiredAccessories.map(item => item.id)} />
                   }
 
@@ -1545,7 +1548,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   if (trimmed.split('\n').every(l => l.trim().startsWith('- '))) {
                     const items = trimmed.split('\n').map(l => l.replace(/^\s*-\s*/, ''))
                     const elementLinks = items.map(item => item.match(/^\[([^\]]+)\]\((\/produkt\/[^)]+)\)$/))
-                    if (elementLinks.every(Boolean)) {
+                    if (!rfidTextLinks && elementLinks.every(Boolean)) {
                       return (
                         <ul key={i} className="not-prose grid gap-3 sm:grid-cols-2 mb-5 !list-none !p-0">
                           {elementLinks.map((match, j) => {

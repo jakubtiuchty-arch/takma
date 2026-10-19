@@ -47,9 +47,9 @@ function HtmlLinkText({ text }: { text: string }) {
           const [, href, label] = htmlMatch
           const isExternal = href.startsWith('http')
           if (isExternal) {
-            return <a key={i} href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
+            return <a key={i} data-text-link="true" href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
           }
-          return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
+          return <Link key={i} data-text-link="true" href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
         }
         return <TooltipText key={i} text={part} />
       })}
@@ -68,9 +68,9 @@ export default function LinkedText({ text }: { text: string }) {
           const [, label, href] = linkMatch
           const isExternal = href.startsWith('http')
           if (isExternal) {
-            return <a key={i} href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
+            return <a key={i} data-text-link="true" href={href} target="_blank" rel="noopener" className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</a>
           }
-          return <Link key={i} href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
+          return <Link key={i} data-text-link="true" href={href} className="text-primary-600 hover:text-primary-800 underline decoration-primary-300">{label}</Link>
         }
         return <HtmlLinkText key={i} text={part} />
       })}
