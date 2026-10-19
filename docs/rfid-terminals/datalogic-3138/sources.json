@@ -1,0 +1,39 @@
+{
+  "checked": "2026-10-19",
+  "manufacturer": "https://www.datalogic.com/eng/retail-healthcare/rfid-readers/3138-rfid-sled-pd-883.html",
+  "partNumbers": "https://apps.datalogic.com/e-catalog/ec-RFID.aspx",
+  "documents": [
+    {
+      "url": "https://cdn.datalogic.com/Download?iddwnfile=43036",
+      "local": "/datasheets/datalogic-3138-rfid-en.pdf",
+      "version": "DS-RFID-SLED-EN Rev B 20253009; download entry 19.02.2026"
+    },
+    {
+      "url": "https://www.datalogic.com/PdfCreate/ModelsAndAccessories/101",
+      "local": "/instrukcje/datalogic-3138-pn-akcesoria-en.pdf"
+    },
+    {
+      "url": "https://cdn.datalogic.com/Download?iddwnfile=41838",
+      "local": "/instrukcje/datalogic-memor-12-17-akcesoria-en.pdf"
+    }
+  ],
+  "photos": {
+    "main": {
+      "source": "https://www.tsl.com/wp-content/uploads/3138-UHF-RFID-Reader-Datasheet.pdf",
+      "page": 1,
+      "image": "0-0",
+      "processing": "imagegen background and margins; final exec-da1098eb-c176-47e0-9bc6-cc0717885cb7.png; earlier mockups rejected"
+    },
+    "set": {
+      "source": "https://www.datalogic.com/upload/products/RFID/RFIDSled3138.png",
+      "caption": "Optional terminal sold separately"
+    },
+    "accessories": {
+      "cradle": "Datalogic datasheet p2 image1",
+      "adapter-m11": "Datalogic datasheet p2 image4",
+      "adapter-m12": "Datalogic datasheet p2 image5",
+      "adapter-m30": "Datalogic datasheet p2 image6; confirmed Memor 30/35 accessory guide p7",
+      "psu": "TSL OEM datasheet p5 image0; 45W USB-C PD kit; Datalogic PN from eCatalog/spec. Exact commercial kit packaging may differ."
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "image": "datalogic-3138",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      115,
+      152,
+      1111,
+      1120
+    ],
+    "longestSideFraction": 0.794
+  },
+  {
+    "image": "rfd40-standard",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      108,
+      128,
+      1130,
+      1167
+    ],
+    "longestSideFraction": 0.829
+  },
+  {
+    "image": "rfd9030",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      137,
+      139,
+      1104,
+      1113
+    ],
+    "longestSideFraction": 0.777
+  }
+]

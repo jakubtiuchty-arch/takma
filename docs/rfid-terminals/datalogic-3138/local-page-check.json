@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "datalogic-3138-rfid",
+    "status": 200,
+    "accessories": 5,
+    "pdfs": 3,
+    "schema": "ProductGroup",
+    "links": 13
+  },
+  {
+    "stock": [
+      {
+        "partNumber": "DLR-SLED02-EU",
+        "found": true,
+        "price": 4342.75,
+        "priceBrutto": 5341.58,
+        "ingramPrice": 3947.95,
+        "stockPL": 0,
+        "stockDE": 2,
+        "inDelivery": 0,
+        "totalStock": 2,
+        "availability": "available",
+        "deliveryText": "Dostepny — wysylka 2-3 dni (2 szt.)",
+        "lastSync": "2026-10-19T17:58:45.352Z"
+      },
+      {
+        "partNumber": "DLR-SLED03-EU",
+        "found": true,
+        "price": 4342.75,
+        "priceBrutto": 5341.58,
+        "ingramPrice": 3947.95,
+        "stockPL": 0,
+        "stockDE": 0,
+        "inDelivery": 0,
+        "totalStock": 0,
+        "availability": "unavailable",
+        "deliveryText": "Niedostepny",
+        "lastSync": "2026-10-19T17:58:45.353Z"
+      }
+    ]
+  }
+]

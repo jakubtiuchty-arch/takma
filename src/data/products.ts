@@ -1,3 +1,4 @@
+import { datalogic3138Products, datalogic3138Accessories } from './datalogic-3138-products'
 import { rfd90Products, rfd90Accessories } from './rfd90-products'
 import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
@@ -95812,8 +95813,8 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
@@ -95827,6 +95828,8 @@ const rawProductList: Product[] = [
   ...rfidPrinterProducts,
   ...rfidTerminalProducts,
   ...rfd40Products,
+  ...datalogic3138Products,
+  ...datalogic3138Accessories,
   ...rfd90Products,
   ...rfd90Accessories,
   ...rfd40Accessories,
@@ -96017,6 +96020,17 @@ function relinkOldRibbons(ids: string[] | undefined): string[] | undefined {
 
 function relinkAll(ids: string[] | undefined): string[] | undefined {
   return relinkOldRibbons(relinkTtRefs(ids))
+}
+
+// Adapter ePop-Loq jest dobierany do konkretnej rodziny Memor.
+for (const [id, adapterId] of Object.entries({
+  'datalogic-memor-12': 'datalogic-3138-adapter-m12',
+  'datalogic-memor-17': 'datalogic-3138-adapter-m12',
+  'datalogic-memor-30': 'datalogic-3138-adapter-m30',
+  'datalogic-memor-35': 'datalogic-3138-adapter-m30',
+})) {
+  const terminal = rawProductList.find(product => product.id === id)
+  if (terminal) terminal.relatedAccessories = Array.from(new Set([...(terminal.relatedAccessories ?? []), adapterId]))
 }
 
 export const products: Product[] = rawProductList

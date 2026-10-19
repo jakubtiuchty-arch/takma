@@ -1,3 +1,4 @@
+import { datalogic3138Products, datalogic3138Accessories } from '@/data/datalogic-3138-products'
 import { rfd90Accessories } from '@/data/rfd90-products'
 import { rfd40Accessories } from '@/data/rfd40-products'
 import { rfidTerminalAccessories } from '@/data/rfid-terminal-products'
@@ -37,6 +38,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...datalogic3138Products.map(product => product.slug),
+  ...datalogic3138Accessories.map(product => product.slug),
   ...rfidTerminalAccessories.map(product => product.slug),
   ...rfd40Accessories.map(product => product.slug),
   ...rfd90Accessories.map(product => product.slug),

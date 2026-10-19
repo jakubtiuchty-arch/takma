@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "datalogic-3138-rfid",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fdatalogic-3138-cradle-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fdatalogic-3138-psu-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fdatalogic-3138-adapter-m30-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fdatalogic-3138-adapter-m12-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        }
+      }
+    ]
+  },
+  {
+    "slug": "zebra-rfd40-standard",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fzebra-tc22r-battery.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-usb-cup-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-adapter-tc22-econnex-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-cradle-tc22-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        }
+      }
+    ]
+  },
+  {
+    "slug": "zebra-rfd9030",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fzebra-tc22r-battery.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-cradle-universal-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd90-adapter-tc73-econnex-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        }
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-battery-charger-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        }
+      }
+    ]
+  }
+]
