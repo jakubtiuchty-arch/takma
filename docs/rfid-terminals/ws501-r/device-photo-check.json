@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-19",
+  "referenceHeroFields": [
+    {
+      "slug": "zebra-ws501-r",
+      "box": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fws501r-device-main-v2.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-tc53e-rfid",
+      "box": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53e-rfid-front-straight-v2.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-em45-rfid",
+      "box": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fem45-rfid-original-front-media-v2.webp&w=3840&q=75"
+    }
+  ],
+  "visibleLongSideFraction": {
+    "WS501-R": 0.854,
+    "TC53e-RFID": 0.805,
+    "EM45 RFID": 0.816
+  },
+  "result": "To samo pole 584×584 px, oryginalne proporcje urządzenia; galeria bez opcjonalnych mocowań."
+}
