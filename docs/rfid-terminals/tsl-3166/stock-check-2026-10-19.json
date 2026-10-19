@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "partNumber": "3166-ES1-EU",
+      "found": true,
+      "price": 6517.72,
+      "priceBrutto": 8016.8,
+      "stockPL": 0,
+      "stockDE": 4,
+      "inDelivery": 0,
+      "totalStock": 4,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (4 szt.)",
+      "lastSync": "2026-10-19T20:50:46.344Z"
+    },
+    {
+      "partNumber": "3166-EX1-EU",
+      "found": true,
+      "price": 5955.04,
+      "priceBrutto": 7324.7,
+      "stockPL": 0,
+      "stockDE": 3,
+      "inDelivery": 0,
+      "totalStock": 3,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (3 szt.)",
+      "lastSync": "2026-10-19T20:50:46.344Z"
+    },
+    {
+      "partNumber": "1166-CRD-01-KIT",
+      "found": true,
+      "price": 680.8,
+      "priceBrutto": 837.38,
+      "stockPL": 0,
+      "stockDE": 1,
+      "inDelivery": 0,
+      "totalStock": 1,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (1 szt.)",
+      "lastSync": "2026-10-19T20:50:49.708Z"
+    },
+    {
+      "partNumber": "IEC-1.8M-EU",
+      "found": true,
+      "price": 28.51,
+      "priceBrutto": 35.07,
+      "stockPL": 0,
+      "stockDE": 2,
+      "inDelivery": 0,
+      "totalStock": 2,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (2 szt.)",
+      "lastSync": "2026-10-19T20:50:49.708Z"
+    },
+    {
+      "partNumber": "1166-BC-EU",
+      "found": true,
+      "price": 703.25,
+      "priceBrutto": 865,
+      "stockPL": 0,
+      "stockDE": 0,
+      "inDelivery": 0,
+      "totalStock": 0,
+      "availability": "unavailable",
+      "deliveryText": "Niedostepny",
+      "lastSync": "2026-10-19T20:50:49.709Z"
+    },
+    {
+      "partNumber": "1166-00-BA-3000",
+      "found": true,
+      "price": 380.73,
+      "priceBrutto": 468.3,
+      "stockPL": 0,
+      "stockDE": 0,
+      "inDelivery": 0,
+      "totalStock": 0,
+      "availability": "unavailable",
+      "deliveryText": "Niedostepny",
+      "lastSync": "2026-10-19T20:50:49.708Z"
+    }
+  ],
+  "count": 6,
+  "found": 6,
+  "_source": "stock-cache"
+}

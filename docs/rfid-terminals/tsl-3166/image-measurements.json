@@ -1,0 +1,62 @@
+[
+  {
+    "image": "tsl-3166-main-v1.webp",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      245,
+      266,
+      996,
+      1011
+    ],
+    "heightPercent": 59.5,
+    "widthPercent": 60.0
+  },
+  {
+    "image": "tsl-3166-front-v1.webp",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      358,
+      224,
+      894,
+      1036
+    ],
+    "heightPercent": 64.8,
+    "widthPercent": 42.8
+  },
+  {
+    "image": "rfd40-standard-main-v1.webp",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      109,
+      128,
+      1128,
+      1164
+    ],
+    "heightPercent": 82.7,
+    "widthPercent": 81.3
+  },
+  {
+    "image": "datalogic-3138-main-v1.webp",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      115,
+      152,
+      1109,
+      1119
+    ],
+    "heightPercent": 77.2,
+    "widthPercent": 79.3
+  }
+]

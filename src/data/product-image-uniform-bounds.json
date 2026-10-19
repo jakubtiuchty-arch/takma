@@ -414,5 +414,37 @@
     234,
     1211,
     1068
+  ],
+  "/images/products/tsl-3166-cradle-v1.webp": [
+    1254,
+    1254,
+    40,
+    423,
+    1192,
+    938
+  ],
+  "/images/products/tsl-3166-cord-v1.webp": [
+    1254,
+    1254,
+    53,
+    288,
+    1198,
+    945
+  ],
+  "/images/products/tsl-3166-battery-v1.webp": [
+    1254,
+    1254,
+    54,
+    264,
+    1201,
+    1019
+  ],
+  "/images/products/tsl-3166-charger-v1.webp": [
+    1254,
+    1254,
+    68,
+    530,
+    1103,
+    1066
   ]
 }
