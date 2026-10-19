@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "zebra-rfd9030",
+    "links": [
+      {
+        "text": "RFD9090",
+        "href": "/produkt/zebra-rfd9090",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "ADP-RFD90-TC7X-2E",
+        "href": "/produkt/zebra-rfd90-adapter-tc73-econnex",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "ADP-RFD90-TC2X-1R",
+        "href": "/produkt/zebra-rfd90-adapter-tc21-bluetooth",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "stację uniwersalną RFD40/RFD90",
+        "href": "/produkt/zebra-rfd40-cradle-universal",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "zasilacza 50 W",
+        "href": "/produkt/zebra-zasilacz-50w",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "przewodu DC CBL-DC-388A1-01",
+        "href": "/produkt/zebra-kabel-zasilajacy-388",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "przewodu sieciowego EU",
+        "href": "/produkt/zebra-tc201-50-16000-220r",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "ładowarka 4 baterii",
+        "href": "/produkt/zebra-rfd40-battery-charger",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "RFD40 Premium Plus",
+        "href": "/produkt/zebra-rfd40-premium-plus",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "Uchwyty RFID",
+        "href": "/uchwyty-rfid",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      }
+    ]
+  },
+  {
+    "slug": "zebra-rfd9090",
+    "links": [
+      {
+        "text": "RFD9030",
+        "href": "/produkt/zebra-rfd9030",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "ADP-RFD90-TC7X-1E",
+        "href": "/produkt/zebra-rfd90-adapter-tc72-econnex",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "ADP-RFD90-TC7X-2E",
+        "href": "/produkt/zebra-rfd90-adapter-tc73-econnex",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "BTRY-RFD49-70MA1-01",
+        "href": "/produkt/zebra-tc22r-battery",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "Stacja uniwersalna",
+        "href": "/produkt/zebra-rfd40-cradle-universal",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "zasilacza 50 W PWR-BGA12V50W0WW",
+        "href": "/produkt/zebra-zasilacz-50w",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "przewodu DC CBL-DC-388A1-01",
+        "href": "/produkt/zebra-kabel-zasilajacy-388",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "przewodu sieciowego EU",
+        "href": "/produkt/zebra-tc201-50-16000-220r",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "RFD9030",
+        "href": "/produkt/zebra-rfd9030",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      },
+      {
+        "text": "Uchwyty RFID",
+        "href": "/uchwyty-rfid",
+        "color": "rgb(37, 99, 235)",
+        "weight": "600",
+        "decoration": "none"
+      }
+    ]
+  }
+]

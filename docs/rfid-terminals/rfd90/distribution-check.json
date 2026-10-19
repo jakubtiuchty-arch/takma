@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-19",
+  "eurPln": 4.3661,
+  "multiplier": 1.1,
+  "rows": {
+    "RFD9031-G30G700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 5606.55,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 5968.24,
+          "physicalStock": 14
+        }
+      ],
+      "salePLN": 6565.06,
+      "availability": "available"
+    },
+    "RFD9031-G60G700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 6588.14,
+          "physicalStock": 104
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 7013.18,
+          "physicalStock": 1
+        }
+      ],
+      "salePLN": 7246.95,
+      "availability": "available"
+    },
+    "RFD9091-G60G700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 7289.29,
+          "physicalStock": 12
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 7759.56,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 8018.22,
+      "availability": "available"
+    },
+    "ADP-RFD90-TC2X-1R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 196.87,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 209.57,
+          "physicalStock": 12
+        }
+      ],
+      "salePLN": 230.53,
+      "availability": "available"
+    },
+    "ADP-RFD90-TC5X-2E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 390.72,
+          "physicalStock": 5
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 415.91,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 429.79,
+      "availability": "available"
+    },
+    "ADP-RFD90-TC7X-1E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 390.72,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 415.91,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 429.79,
+      "availability": "unavailable"
+    },
+    "ADP-RFD90-TC7X-2E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 390.72,
+          "physicalStock": 42
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 415.91,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 429.79,
+      "availability": "available"
+    },
+    "ADP-RFD90-TC5X-2R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 212.59,
+          "physicalStock": 1
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 226.34,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 233.85,
+      "availability": "available"
+    },
+    "ADP-RFD90-TC7X-2R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 196.87,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 209.57,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 216.56,
+      "availability": "unavailable"
+    },
+    "CR90-1S0T-TC2-G-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 469.49,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 499.79,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 516.44,
+      "availability": "unavailable"
+    },
+    "CR90-1S0T-TC7-G-02": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 469.49,
+          "physicalStock": 102
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 499.79,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 516.44,
+      "availability": "available"
+    },
+    "CRD1S0T-RFD49-UNIV-CHG-1R": {
+      "offers": [
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 539.78,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 593.76,
+      "availability": "unavailable"
+    },
+    "SG-RFD90-HLSTR1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 840.61,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 894.88,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 924.67,
+      "availability": "unavailable"
+    },
+    "BTRY-RFD49-70MA1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 392.56,
+          "physicalStock": 93
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 417.88,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "purchasePLN": 434.6,
+          "physicalStock": 0
+        }
+      ],
+      "salePLN": 431.82,
+      "availability": "available"
+    },
+    "SAC-TC8X-4SCHG-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 927.05,
+          "physicalStock": 12
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 927.05,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "purchasePLN": 964.13,
+          "physicalStock": 2
+        }
+      ],
+      "salePLN": 1019.75,
+      "availability": "available"
+    },
+    "PWR-BGA12V50W0WW": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 167.27,
+          "physicalStock": 457
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 167.27,
+          "physicalStock": 828
+        }
+      ],
+      "salePLN": 184.0,
+      "availability": "available"
+    },
+    "CBL-DC-388A1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 30.69,
+          "physicalStock": 488
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 30.69,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "purchasePLN": 30.69,
+          "physicalStock": 91
+        }
+      ],
+      "salePLN": 33.76,
+      "availability": "available"
+    },
+    "50-16000-220R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "purchasePLN": 34.14,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "purchasePLN": 34.14,
+          "physicalStock": 1386
+        }
+      ],
+      "salePLN": 37.55,
+      "availability": "available"
+    }
+  }
+}

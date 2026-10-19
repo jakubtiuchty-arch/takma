@@ -881,12 +881,12 @@ export const rfd40Accessories: Product[] = [
   {
     "id": "zebra-rfd40-cradle-universal",
     "slug": "zebra-rfd40-cradle-universal",
-    "name": "Stacja uniwersalna Zebra RFD40",
-    "seoH1": "Stacja uniwersalna Zebra RFD40",
-    "seoTitle": "Stacja uniwersalna Zebra RFD40 | TAKMA",
-    "seoDescription": "Stacja uniwersalna Zebra RFD40, PN CRD1S0T-RFD49-UNIV-CHG-1R. Ładuje jeden RFD40 bez terminala lub w zgodnym zestawie uniwersalnym.",
-    "shortDescription": "Ładuje jeden RFD40 bez terminala lub w zgodnym zestawie uniwersalnym. Tylny port USB-A pozwala ładować terminal osobnym przewodem. Nie jest stacją transmisji danych.",
-    "description": "Ładuje jeden RFD40 bez terminala lub w zgodnym zestawie uniwersalnym. Tylny port USB-A pozwala ładować terminal osobnym przewodem. Nie jest stacją transmisji danych. Aby korzystać ze stacji, potrzebujesz [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Elementy te są sprzedawane osobno.",
+    "name": "Stacja uniwersalna Zebra RFD40 / RFD90",
+    "seoH1": "Stacja uniwersalna Zebra RFD40 / RFD90",
+    "seoTitle": "Stacja uniwersalna Zebra RFD40 / RFD90 | TAKMA",
+    "seoDescription": "Ładuje jeden RFD40 lub RFD90 bez terminala lub w zgodnym zestawie uniwersalnym. PN CRD1S0T-RFD49-UNIV-CHG-1R.",
+    "shortDescription": "Ładuje jeden RFD40 lub RFD90 bez terminala lub w zgodnym zestawie uniwersalnym. Tylny port USB-A pozwala ładować terminal osobnym przewodem. Nie jest stacją transmisji danych.",
+    "description": "Ładuje jeden RFD40 lub RFD90 bez terminala lub w zgodnym zestawie uniwersalnym. Tylny port USB-A pozwala ładować terminal osobnym przewodem. Nie jest stacją transmisji danych. Aby korzystać ze stacji, potrzebujesz [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Elementy te są sprzedawane osobno.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali"
@@ -904,7 +904,7 @@ export const rfd40Accessories: Product[] = [
       "/images/products/rfd40-cradle-universal-v1.webp"
     ],
     "imageDescriptions": [
-      "Stacja uniwersalna Zebra RFD40 — CRD1S0T-RFD49-UNIV-CHG-1R"
+      "Stacja uniwersalna Zebra RFD40 / RFD90 — CRD1S0T-RFD49-UNIV-CHG-1R"
     ],
     "specifications": [
       {
@@ -913,7 +913,7 @@ export const rfd40Accessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra RFD40 Standard, Premium i Premium Plus"
+        "value": "Zebra RFD40 i RFD90"
       }
     ],
     "applications": [
@@ -926,12 +926,20 @@ export const rfd40Accessories: Product[] = [
         "url": "/instrukcje/zebra-rfd40-akcesoria-en.pdf",
         "type": "manual",
         "size": "2874 kB"
+      },
+      {
+        "name": "Katalog akcesoriów Zebra RFD90 (EN)",
+        "url": "/instrukcje/zebra-rfd90-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "1738 kB"
       }
     ],
     "relatedProducts": [
       "zebra-rfd40-standard",
       "zebra-rfd40-premium",
-      "zebra-rfd40-premium-plus"
+      "zebra-rfd40-premium-plus",
+      "zebra-rfd9030",
+      "zebra-rfd9090"
     ],
     "createdAt": "2026-10-19",
     "updatedAt": "2026-10-19"
@@ -997,12 +1005,12 @@ export const rfd40Accessories: Product[] = [
   {
     "id": "zebra-rfd40-battery-charger",
     "slug": "zebra-rfd40-battery-charger",
-    "name": "Ładowarka 4 baterii Zebra RFD40",
-    "seoH1": "Ładowarka 4 baterii Zebra RFD40",
-    "seoTitle": "Ładowarka 4 baterii Zebra RFD40 | TAKMA",
-    "seoDescription": "Ładowarka 4 baterii Zebra RFD40, PN SAC-TC8X-4SCHG-01. Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01.",
-    "shortDescription": "Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01. Baterie są sprzedawane osobno. Nie ładuje całych uchwytów RFD40.",
-    "description": "Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01. Baterie są sprzedawane osobno. Nie ładuje całych uchwytów RFD40. Aby korzystać ze stacji, potrzebujesz [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Elementy te są sprzedawane osobno.",
+    "name": "Ładowarka 4 baterii Zebra RFD40 / RFD90",
+    "seoH1": "Ładowarka 4 baterii Zebra RFD40 / RFD90",
+    "seoTitle": "Ładowarka 4 baterii Zebra RFD40 / RFD90 | TAKMA",
+    "seoDescription": "Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01. PN SAC-TC8X-4SCHG-01.",
+    "shortDescription": "Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01. Baterie są sprzedawane osobno. Nie ładuje całych uchwytów RFD40 ani RFD90.",
+    "description": "Ładuje do czterech zapasowych baterii BTRY-RFD49-70MA1-01. Baterie są sprzedawane osobno. Nie ładuje całych uchwytów RFD40 ani RFD90. Aby korzystać ze stacji, potrzebujesz [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Elementy te są sprzedawane osobno.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali"
@@ -1020,7 +1028,7 @@ export const rfd40Accessories: Product[] = [
       "/images/products/rfd40-battery-charger-v1.webp"
     ],
     "imageDescriptions": [
-      "Ładowarka 4 baterii Zebra RFD40 — SAC-TC8X-4SCHG-01"
+      "Ładowarka 4 baterii Zebra RFD40 / RFD90 — SAC-TC8X-4SCHG-01"
     ],
     "specifications": [
       {
@@ -1029,7 +1037,7 @@ export const rfd40Accessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra RFD40 Standard, Premium i Premium Plus"
+        "value": "Zebra RFD40 i RFD90"
       }
     ],
     "applications": [
@@ -1042,12 +1050,20 @@ export const rfd40Accessories: Product[] = [
         "url": "/instrukcje/zebra-rfd40-akcesoria-en.pdf",
         "type": "manual",
         "size": "2874 kB"
+      },
+      {
+        "name": "Katalog akcesoriów Zebra RFD90 (EN)",
+        "url": "/instrukcje/zebra-rfd90-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "1738 kB"
       }
     ],
     "relatedProducts": [
       "zebra-rfd40-standard",
       "zebra-rfd40-premium",
-      "zebra-rfd40-premium-plus"
+      "zebra-rfd40-premium-plus",
+      "zebra-rfd9030",
+      "zebra-rfd9090"
     ],
     "createdAt": "2026-10-19",
     "updatedAt": "2026-10-19"

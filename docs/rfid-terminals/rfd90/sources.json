@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-19",
+  "sources": {
+    "specification": "https://medialibrary.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/RFID/hand-held_reader/rfd90/spec-sheet/rfd90-uhf-rfid-sled-spec-sheet-en-us.pdf",
+    "manual": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/rfd90-prg-en.pdf",
+    "accessories": "https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/rfd90-series-guide-accessory-en-us.pdf",
+    "manufacturer": "https://www.zebra.com/us/en/products/rfid/rfid-handhelds/rfd90.html",
+    "supplier": "https://www.jarltech.com/en/zebra-rfd90"
+  },
+  "accessoryGuideVersion": "December 2023",
+  "documents": "Original PDF bytes hosted in public/datasheets and public/instrukcje",
+  "accessoryImages": {
+    "adapter-tc21-bluetooth": "p5-0.png",
+    "adapter-tc53-econnex": "p3-2.png",
+    "adapter-tc72-econnex": "p3-1.png",
+    "adapter-tc73-econnex": "p4-0.png",
+    "adapter-tc53-bluetooth": "p5-2.png",
+    "adapter-tc73-bluetooth": "p6-1.png",
+    "holster": "p8-2.png"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "image": "rfd9030",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      137,
+      139,
+      1104,
+      1113
+    ],
+    "longestSideFraction": 0.777
+  },
+  {
+    "image": "rfd9090",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      127,
+      128,
+      1167,
+      1102
+    ],
+    "longestSideFraction": 0.829
+  },
+  {
+    "image": "rfd40-standard",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      108,
+      128,
+      1130,
+      1167
+    ],
+    "longestSideFraction": 0.829
+  },
+  {
+    "image": "rfd40-plus",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      136,
+      134,
+      1118,
+      1121
+    ],
+    "longestSideFraction": 0.787
+  }
+]
