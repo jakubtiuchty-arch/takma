@@ -279,10 +279,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       {/* Image */}
       <Link
         href={productHref}
-        className={`relative ${getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
+        className={`relative ${!product.uniformImage && getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={product.uniformImage ? getUniformProductImageStyle(product.images[0], getProductImageFrameStyle(product.images[0]) ? 1 : 4 / 3, product.uniformImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={product.uniformImage ? getUniformProductImageStyle(product.images[0], 4 / 3, product.uniformImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : placeholderLogo ? (
           <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
         ) : (

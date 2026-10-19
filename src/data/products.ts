@@ -1,3 +1,4 @@
+import { newlandMt93UhfProducts, newlandMt93UhfAccessories } from './newland-mt93-uhf-products'
 import { honeywellIh45Products, honeywellIh45Accessories } from './honeywell-ih45-products'
 import { datalogic3138Products, datalogic3138Accessories } from './datalogic-3138-products'
 import { rfd90Products, rfd90Accessories } from './rfd90-products'
@@ -95814,14 +95815,16 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
 }
 
 const rawProductList: Product[] = [
+  ...newlandMt93UhfProducts,
+  ...newlandMt93UhfAccessories,
   ...bradyRt710Products,
   ...bradyRt710Accessories,
   ...rfidLabelProducts,

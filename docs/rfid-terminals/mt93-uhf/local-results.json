@@ -1,0 +1,91 @@
+[
+  {
+    "slug": "newland-mt93-megattera-pro-uhf",
+    "mainField": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    }
+  },
+  {
+    "accessoryFields": [
+      {
+        "x": 112,
+        "y": 247.875,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 422,
+        "y": 247.875,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 732,
+        "y": 247.875,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 1042,
+        "y": 247.875,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 112,
+        "y": 705.375,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 422,
+        "y": 705.375,
+        "width": 286,
+        "height": 214.5
+      },
+      {
+        "x": 732,
+        "y": 705.375,
+        "width": 286,
+        "height": 214.5
+      }
+    ]
+  },
+  {
+    "slug": "zebra-tc22r",
+    "mainField": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    }
+  },
+  {
+    "slug": "zebra-mc3330xr",
+    "mainField": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    }
+  },
+  {
+    "stock": {
+      "partNumber": "NLS-MT9356-W4-UHF1",
+      "found": true,
+      "price": 3746.51,
+      "priceBrutto": 4608.21,
+      "ingramPrice": 3405.92,
+      "stockPL": 0,
+      "stockDE": 10,
+      "inDelivery": 0,
+      "totalStock": 10,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (10 szt.)",
+      "lastSync": "2026-10-19T19:58:46.031Z"
+    }
+  }
+]

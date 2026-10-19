@@ -559,7 +559,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
       "magazyn",
       "logistyka"
     ],
-    "availability": "available",
+    "availability": "unavailable",
     "isNew": false,
     "isBestseller": false,
     "specifications": [
@@ -594,6 +594,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
       "newland-nls-mcd9557-1cc"
     ],
     "relatedProducts": [
+      "newland-mt93-megattera-pro-uhf",
       "newland-mt95-kambur-pro-iii"
     ],
     "faq": [
@@ -612,7 +613,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     "sameAs": "https://www.newland-id.com/en/products/charging-power/adp710",
     "createdAt": "2026-10-04",
     "updatedAt": "2026-10-04",
-    "priceFrom": 128.24
+    "priceFrom": 128.12
   },
   {
     "id": "newland-cbl-tc-n7",
@@ -665,6 +666,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
       "newland-adp710"
     ],
     "relatedProducts": [
+      "newland-mt93-megattera-pro-uhf",
       "newland-mt95-kambur-pro-iii"
     ],
     "faq": [
@@ -735,6 +737,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
       "newland-nls-mcd9557-1c"
     ],
     "relatedProducts": [
+      "newland-mt93-megattera-pro-uhf",
       "newland-mt95-kambur-pro-iii"
     ],
     "faq": [
@@ -753,7 +756,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     "sameAs": "https://www.newland-id.com/en/products/charging-power/ad60-d-m",
     "createdAt": "2026-10-04",
     "updatedAt": "2026-10-04",
-    "priceFrom": 197.05
+    "priceFrom": 196.86
   },
   {
     "id": "newland-nls-cpa-univ",
@@ -812,6 +815,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
+      "newland-mt93-megattera-pro-uhf",
       "newland-mt95-kambur-pro-iii"
     ],
     "faq": [
@@ -830,7 +834,7 @@ export const newlandMt95ProIiiAccessories: Product[] = [
     "sameAs": "https://www.newland-id.com/en/products/charging-power/nls-cpa-univ",
     "createdAt": "2026-10-04",
     "updatedAt": "2026-10-04",
-    "priceFrom": 136.62
+    "priceFrom": 136.36
   },
   {
     "id": "newland-nls-cc-mt95-01",

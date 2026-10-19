@@ -7,7 +7,7 @@ export const rfidTerminalCategory: Subcategory = {
   "parentCategoryId": "terminale-mobilne",
   "description": "Terminale mobilne z czytnikiem UHF RFID do inwentaryzacji i identyfikacji towarów.",
   "seoTitle": "Terminale RFID UHF do magazynu i inwentaryzacji | TAKMA",
-  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj Zebra TC22R, TC53e-RFID i EM45 RFID. Europejskie PN, aktualne ceny, stany i akcesoria.",
+  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj urządzenia Zebra i Newland. Sprawdź europejskie PN, ceny, stany i akcesoria.",
   "longDescription": "Terminale RFID odczytują znaczniki radiowe bez celowania w kod kreskowy. W tej kategorii znajdziesz terminale Android z wbudowanym czytnikiem UHF do inwentaryzacji, identyfikacji wyposażenia i kontroli towarów. Porównaj zasięg, sposób odczytu kodów oraz łączność. Dobierz wersję europejską i akcesoria do konkretnego modelu.",
   "icon": "smartphone",
   "productIds": [
@@ -16,18 +16,19 @@ export const rfidTerminalCategory: Subcategory = {
     "zebra-tc53e-rfid",
     "zebra-mc3330xr",
     "zebra-mc3390xr",
-    "zebra-ws501-r"
+    "zebra-ws501-r",
+    "newland-mt93-megattera-pro-uhf"
   ],
-  "productCount": 6
+  "productCount": 7
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const rfidTerminalContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-18',
+  updatedAt: '2026-10-19',
   definition: {
     heading: 'Co to jest terminal RFID?',
-    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
+    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. [Newland MT93 Megattera Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma uchwyt z czytnikiem Impinj E710, baterię 10 000 mAh i 4G. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal RFID do inwentaryzacji?',
@@ -52,6 +53,7 @@ export const rfidTerminalContent: SubcategoryRichContent = {
     { title: 'Obsługa RFID w aplikacji', text: 'Samo działanie kodów kreskowych nie potwierdza obsługi czytnika UHF przez program magazynowy.' },
   ] },
   comparisons: [
+    { title: 'MT93 Pro UHF czy TC22R?', content: '[Newland MT93 Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma Android 13, pamięć 4/64 GB, modem 4G i baterię 10 000 mAh. [Zebra TC22R](/produkt/zebra-tc22r) to alternatywa z ekranem 6 cali i innym wyposażeniem. Porównaj zgodność aplikacji oraz sposób ładowania.' },
     { title: 'TC22R czy EM45 RFID?', content: '[TC22R](/produkt/zebra-tc22r) ma uchwyt pistoletowy, skaner SE4710 i czytnik do szybkiego liczenia znaczników. [EM45 RFID](/produkt/zebra-em45-rfid) ma format smartfona, 5G i UHF do 1,2 m. Wybór zależy od sposobu pracy.' },
   ],
   faq: [

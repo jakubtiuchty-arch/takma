@@ -1874,7 +1874,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="akcesoria"
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                products={(product.id === 'zebra-ws501-r' || product.subcategoryIds?.includes('uchwyty-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true, uniformImageFraction: product.subcategoryIds?.includes('uchwyty-rfid') ? 0.66 : undefined })) : relatedAccessories as typeof products}
+                products={(product.id === 'zebra-ws501-r' || product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.includes('uchwyty-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true, uniformImageFraction: (product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.includes('uchwyty-rfid')) ? 0.66 : undefined })) : relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
               />

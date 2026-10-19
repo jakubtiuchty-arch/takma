@@ -1,0 +1,263 @@
+[
+  {
+    "slug": "newland-mt93-megattera-pro-uhf",
+    "field": [
+      584,
+      584
+    ],
+    "visibleBounds": [
+      131,
+      64,
+      485,
+      522
+    ],
+    "visibleHeightPercent": 78.4
+  },
+  {
+    "slug": "zebra-tc22r",
+    "field": [
+      584,
+      584
+    ],
+    "visibleBounds": [
+      185,
+      59,
+      399,
+      512
+    ],
+    "visibleHeightPercent": 77.6
+  },
+  {
+    "slug": "zebra-mc3330xr",
+    "field": [
+      584,
+      584
+    ],
+    "visibleBounds": [
+      215,
+      70,
+      370,
+      520
+    ],
+    "visibleHeightPercent": 77.1
+  },
+  {
+    "accessory": 0,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      98,
+      37,
+      188,
+      179
+    ],
+    "visibleLongestSidePercent": 65.7
+  },
+  {
+    "accessory": 1,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      72,
+      64,
+      212,
+      154
+    ],
+    "visibleLongestSidePercent": 64.8
+  },
+  {
+    "accessory": 2,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      105,
+      37,
+      180,
+      180
+    ],
+    "visibleLongestSidePercent": 66.2,
+    "method": "Manual edge measurement; glass is lighter than automatic threshold. Element border excluded."
+  },
+  {
+    "accessory": 3,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      84,
+      37,
+      202,
+      179
+    ],
+    "visibleLongestSidePercent": 65.7
+  },
+  {
+    "accessory": 4,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      78,
+      36,
+      208,
+      179
+    ],
+    "visibleLongestSidePercent": 66.5
+  },
+  {
+    "accessory": 5,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      103,
+      40,
+      183,
+      179
+    ],
+    "visibleLongestSidePercent": 64.7
+  },
+  {
+    "accessory": 6,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      72,
+      56,
+      213,
+      158
+    ],
+    "visibleLongestSidePercent": 65.6
+  },
+  {
+    "reference": "zebra-rfd40-standard",
+    "accessory": 0,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      118,
+      38,
+      168,
+      179
+    ],
+    "visibleLongestSidePercent": 65.3
+  },
+  {
+    "reference": "zebra-rfd40-standard",
+    "accessory": 1,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      72,
+      50,
+      214,
+      167
+    ],
+    "visibleLongestSidePercent": 65.7
+  },
+  {
+    "reference": "zebra-rfd40-standard",
+    "accessory": 2,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      72,
+      64,
+      214,
+      153
+    ],
+    "visibleLongestSidePercent": 65.7
+  },
+  {
+    "reference": "zebra-rfd40-standard",
+    "accessory": 3,
+    "field": [
+      286,
+      216
+    ],
+    "visibleBounds": [
+      72,
+      41,
+      214,
+      176
+    ],
+    "visibleLongestSidePercent": 65.7
+  },
+  {
+    "reference": "datalogic-3138-rfid",
+    "accessory": 0,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      72,
+      56,
+      214,
+      159
+    ],
+    "visibleLongestSidePercent": 66.0
+  },
+  {
+    "reference": "datalogic-3138-rfid",
+    "accessory": 1,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      72,
+      81,
+      214,
+      134
+    ],
+    "visibleLongestSidePercent": 66.0
+  },
+  {
+    "reference": "datalogic-3138-rfid",
+    "accessory": 2,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      72,
+      63,
+      214,
+      152
+    ],
+    "visibleLongestSidePercent": 66.0
+  },
+  {
+    "reference": "datalogic-3138-rfid",
+    "accessory": 3,
+    "field": [
+      286,
+      215
+    ],
+    "visibleBounds": [
+      72,
+      64,
+      212,
+      151
+    ],
+    "visibleLongestSidePercent": 65.1
+  }
+]
