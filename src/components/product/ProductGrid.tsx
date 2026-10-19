@@ -25,7 +25,7 @@ export type ProductCardData = Pick<
   | 'quoteOnly'
   | 'priceTiers'
   | 'availability'
-> & { href?: string; uniformImage?: boolean }
+> & { href?: string; uniformImage?: boolean; uniformImageFraction?: number }
 import ProductCard from './ProductCard'
 import clsx from 'clsx'
 

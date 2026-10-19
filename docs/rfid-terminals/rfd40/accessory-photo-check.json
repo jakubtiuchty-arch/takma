@@ -1,0 +1,347 @@
+[
+  {
+    "slug": "zebra-rfd40-standard",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fzebra-tc22r-battery.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          118,
+          37,
+          168,
+          180
+        ],
+        "visibleLongSide": 143
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-usb-cup-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          50,
+          214,
+          168
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-adapter-tc22-econnex-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          64,
+          214,
+          153
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-cradle-tc22-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 247.625,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          41,
+          214,
+          176
+        ],
+        "visibleLongSide": 142
+      }
+    ]
+  },
+  {
+    "slug": "zebra-rfd40-premium",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fzebra-tc22r-battery.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          118,
+          36,
+          168,
+          179
+        ],
+        "visibleLongSide": 143
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-usb-cup-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          49,
+          214,
+          167
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-adapter-tc22-econnex-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          63,
+          214,
+          152
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-cradle-tc22-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 248,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          40,
+          214,
+          175
+        ],
+        "visibleLongSide": 142
+      }
+    ]
+  },
+  {
+    "slug": "zebra-rfd40-premium-plus",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fzebra-tc22r-battery.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 248.125,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          118,
+          36,
+          168,
+          179
+        ],
+        "visibleLongSide": 143
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-usb-cup-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 248.125,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          49,
+          214,
+          167
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-adapter-tc22-econnex-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 248.125,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          63,
+          214,
+          152
+        ],
+        "visibleLongSide": 142
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-cradle-tc22-v2.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 248.125,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          72,
+          40,
+          214,
+          175
+        ],
+        "visibleLongSide": 142
+      }
+    ]
+  },
+  {
+    "slug": "zebra-tc53e-rfid",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53-family-single-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 247.5,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          58,
+          58,
+          230,
+          169
+        ],
+        "visibleLongSide": 172
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53-family-battery-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 247.5,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          84,
+          26,
+          198,
+          194
+        ],
+        "visibleLongSide": 168
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53-family-boot-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 247.5,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          97,
+          23,
+          189,
+          195
+        ],
+        "visibleLongSide": 172
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53-family-screen-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 247.5,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          81,
+          21,
+          205,
+          194
+        ],
+        "visibleLongSide": 173
+      }
+    ]
+  },
+  {
+    "slug": "zebra-mc3330xr",
+    "images": [
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2FCRD-MC33-2SUCHG-01-mc3400-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 112,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          61,
+          28,
+          228,
+          189
+        ],
+        "visibleLongSide": 167
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fmc33rfid-battery-5200-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 422,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          69,
+          16,
+          220,
+          193
+        ],
+        "visibleLongSide": 177
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2FCBL-MC33-USBCHG-01-mc3400-quality-v1.png&w=3840&q=75",
+        "field": {
+          "x": 732,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          55,
+          54,
+          230,
+          165
+        ],
+        "visibleLongSide": 175
+      },
+      {
+        "src": "/_next/image?url=%2Fimages%2Fproducts%2Fmc33rfid-screen-protector-v1.webp&w=3840&q=75",
+        "field": {
+          "x": 1042,
+          "y": 248.25,
+          "width": 286,
+          "height": 214.5
+        },
+        "visibleBounds": [
+          202,
+          196,
+          206,
+          200
+        ],
+        "visibleLongSide": 4
+      }
+    ]
+  }
+]

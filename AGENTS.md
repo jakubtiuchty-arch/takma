@@ -16,6 +16,8 @@
 - Akcesoria na karcie produktu: początkowo pokaż pierwszy rząd (4 produkty na komputerze), a pozostałe udostępnij przez istniejące rozwijanie „Pokaż pozostałe” i zwijanie „Zwiń”. Zachowaj standardowy rozmiar zdjęć i jeden wspólny dział „Akcesoria”, chyba że użytkownik poleci inaczej.
 - Zdjęcia produktów: przed publikacją zmierz wymiary pola zdjęcia oraz udział widocznego produktu w kadrze i porównaj z co najmniej dwiema istniejącymi kartami podobnych produktów. Sam identyczny rozmiar pola nie wystarcza. Jeśli produkt jest za duży, popraw skalę i białe marginesy w Imagen (`image_gen`), zachowaj konstrukcję produktu i ponownie sprawdź wynik na stronie. Nie zmieniaj układu kafelków, aby dopasować pojedyncze zdjęcie.
 
+- Akcesoria RFD40: zachowuj standardowe pole zdjęcia 4:3 i wspólną linię tytułów w rzędzie. Nie dodawaj wpisów wymuszających kwadratowe pola dla pojedynczych akcesoriów. Widoczny produkt ma zajmować około 66% wysokości pola; sprawdzaj pierwszy rząd i całą rozwiniętą listę na dwóch kartach wzorcowych.
+
 ## Wdrożenia produkcyjne
 
 - Każdą zmianę najpierw zapisz w commicie i wypchnij na gałąź `claude/takma-frontend-build-RrM9E`.

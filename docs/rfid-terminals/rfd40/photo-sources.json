@@ -17,5 +17,5 @@
     "CBL-RFD49-USB1-01": "strona 41, lewy obraz",
     "SG-RFD40-HLSTR1-01": "strona 15, lewy obraz"
   },
-  "accessoryProcessing": "Oryginalne obrazy z PDF; kompresja WebP, wspólny istniejący mechanizm centrowania na podstawie granic produktu."
+  "accessoryProcessing": "Oryginalne obrazy z PDF; v2 nakładki USB, adaptera TC22/TC27 i stacji TC22/TC27: image_gen — białe marginesy. W siatce wszystkie akcesoria RFD40 mają standardowe pole 4:3; widoczny produkt zajmuje 66% wysokości pola. Brak kwadratowych pól wymuszanych na pojedynczych akcesoriach."
 }

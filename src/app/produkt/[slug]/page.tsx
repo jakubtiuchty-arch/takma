@@ -425,6 +425,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const podobneNaDole = isColorPrinter || isLabel
   const relatedProductsTitle = isLabel ? 'Drukarki zgodne z tymi etykietami'
     : product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
+    : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Podobne uchwyty RFID'
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
     : 'Podobne produkty'
@@ -1873,7 +1874,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="akcesoria"
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                products={(product.id === 'zebra-ws501-r' || product.subcategoryIds?.includes('uchwyty-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true })) : relatedAccessories as typeof products}
+                products={(product.id === 'zebra-ws501-r' || product.subcategoryIds?.includes('uchwyty-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true, uniformImageFraction: product.subcategoryIds?.includes('uchwyty-rfid') ? 0.66 : undefined })) : relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
               />

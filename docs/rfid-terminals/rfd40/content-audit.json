@@ -1,0 +1,48 @@
+{
+  "before": [
+    {
+      "pages": [
+        "zebra-rfd40-standard",
+        "zebra-rfd40-premium"
+      ],
+      "identicalLongParagraphs": 8
+    },
+    {
+      "pages": [
+        "zebra-rfd40-standard",
+        "zebra-rfd40-premium-plus"
+      ],
+      "identicalLongParagraphs": 8
+    },
+    {
+      "pages": [
+        "zebra-rfd40-premium",
+        "zebra-rfd40-premium-plus"
+      ],
+      "identicalLongParagraphs": 8
+    }
+  ],
+  "after": [
+    {
+      "pages": [
+        "zebra-rfd40-standard",
+        "zebra-rfd40-premium"
+      ],
+      "identicalLongParagraphs": 1
+    },
+    {
+      "pages": [
+        "zebra-rfd40-standard",
+        "zebra-rfd40-premium-plus"
+      ],
+      "identicalLongParagraphs": 1
+    },
+    {
+      "pages": [
+        "zebra-rfd40-premium",
+        "zebra-rfd40-premium-plus"
+      ],
+      "identicalLongParagraphs": 1
+    }
+  ]
+}

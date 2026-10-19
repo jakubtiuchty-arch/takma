@@ -20,13 +20,13 @@ export function getProductImageFrameStyle(src: string): CSSProperties | undefine
 }
 
 /** Equal visible long side within an unchanged image field; enabled by the parent section. */
-export function getUniformProductImageStyle(src: string, aspectRatio = 4 / 3): CSSProperties | undefined {
+export function getUniformProductImageStyle(src: string, aspectRatio = 4 / 3, visibleFraction = 0.82): CSSProperties | undefined {
   const bounds = (uniformBounds as Record<string, number[]>)[src]
   if (!bounds) return getProductImageFrameStyle(src)
 
   const [sourceWidth, sourceHeight, left, top, right, bottom] = bounds
   const containScale = Math.min(aspectRatio / sourceWidth, 1 / sourceHeight)
-  const scale = 0.82 / (Math.max(right - left, bottom - top) * containScale)
+  const scale = visibleFraction / (Math.max(right - left, bottom - top) * containScale)
   const x = (sourceWidth / 2 - (left + right) / 2) * containScale / aspectRatio * 100
   const y = (sourceHeight / 2 - (top + bottom) / 2) * containScale * 100
 
