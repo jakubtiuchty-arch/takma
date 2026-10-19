@@ -24,13 +24,13 @@ export const ws501RProduct: Product = {
     "produkcja"
   ],
   "images": [
-    "/images/products/ws501r-device-main-v2.webp",
     "/images/products/ws501r-device-front-left-v2.webp",
+    "/images/products/ws501r-device-main-v2.webp",
     "/images/products/ws501r-device-back-right-v2.webp"
   ],
   "imageDescriptions": [
-    "Zebra WS501-R — terminal RFID bez opcjonalnego mocowania",
     "Zebra WS501-R — widok z przodu i lewego boku bez mocowania",
+    "Zebra WS501-R — terminal RFID bez opcjonalnego mocowania",
     "Zebra WS501-R — widok z tyłu i prawego boku bez mocowania"
   ],
   "specifications": [
