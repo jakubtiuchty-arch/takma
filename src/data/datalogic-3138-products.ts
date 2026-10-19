@@ -303,7 +303,7 @@ export const datalogic3138Accessories: Product[] = [
       "magazyn"
     ],
     "images": [
-      "/images/products/datalogic-3138-adapter-m30-v1.webp"
+      "/images/products/datalogic-3138-adapter-m30-v2.webp"
     ],
     "imageDescriptions": [
       "Adapter ePop-Loq Datalogic 3138 do Memor 30/35 — AH-SLED02"

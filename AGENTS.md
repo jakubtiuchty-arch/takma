@@ -18,6 +18,8 @@
 
 - Akcesoria RFD40: zachowuj standardowe pole zdjęcia 4:3 i wspólną linię tytułów w rzędzie. Nie dodawaj wpisów wymuszających kwadratowe pola dla pojedynczych akcesoriów. Widoczny produkt ma zajmować około 66% wysokości pola; sprawdzaj pierwszy rząd i całą rozwiniętą listę na dwóch kartach wzorcowych.
 
+- Nie publikuj rozmytych ani rozpikselowanych zdjęć z małych wycinków PDF. Użyj Imagen (`image_gen`) do poprawy jakości, zachowując kształt i konstrukcję produktu. Przed pushem sprawdź ostrość w dużej galerii oraz na kafelku, a także zgodność z oryginałem.
+
 ## Wdrożenia produkcyjne
 
 - Każdą zmianę najpierw zapisz w commicie i wypchnij na gałąź `claude/takma-frontend-build-RrM9E`.
