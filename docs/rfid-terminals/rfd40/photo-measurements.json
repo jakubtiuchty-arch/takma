@@ -1,0 +1,210 @@
+{
+  "rfd40-adapter-tc22-bluetooth-v1.webp": {
+    "size": [
+      568,
+      402
+    ],
+    "bounds": [
+      8,
+      28,
+      558,
+      370
+    ],
+    "longSideFraction": 0.9683
+  },
+  "rfd40-plus-original-v1.webp": {
+    "size": [
+      1500,
+      1000
+    ],
+    "bounds": [
+      325,
+      60,
+      1175,
+      914
+    ],
+    "longSideFraction": 0.5693
+  },
+  "rfd40-usb-cup-v1.webp": {
+    "size": [
+      680,
+      497
+    ],
+    "bounds": [
+      84,
+      15,
+      615,
+      458
+    ],
+    "longSideFraction": 0.7809
+  },
+  "rfd40-battery-charger-v1.webp": {
+    "size": [
+      446,
+      528
+    ],
+    "bounds": [
+      3,
+      0,
+      445,
+      528
+    ],
+    "longSideFraction": 1.0
+  },
+  "rfd40-adapter-tc21-econnex-v1.webp": {
+    "size": [
+      613,
+      401
+    ],
+    "bounds": [
+      0,
+      0,
+      611,
+      399
+    ],
+    "longSideFraction": 0.9967
+  },
+  "rfd40-adapter-tc21-bluetooth-v1.webp": {
+    "size": [
+      616,
+      424
+    ],
+    "bounds": [
+      10,
+      42,
+      609,
+      384
+    ],
+    "longSideFraction": 0.9724
+  },
+  "rfd40-standard-original-v1.webp": {
+    "size": [
+      1500,
+      1000
+    ],
+    "bounds": [
+      260,
+      60,
+      1194,
+      932
+    ],
+    "longSideFraction": 0.6227
+  },
+  "rfd40-cradle-tc22-v1.webp": {
+    "size": [
+      744,
+      618
+    ],
+    "bounds": [
+      174,
+      127,
+      555,
+      489
+    ],
+    "longSideFraction": 0.5121
+  },
+  "rfd40-adapter-tc53-econnex-v1.webp": {
+    "size": [
+      785,
+      471
+    ],
+    "bounds": [
+      83,
+      32,
+      687,
+      422
+    ],
+    "longSideFraction": 0.7694
+  },
+  "rfd40-premium-main-v1.webp": {
+    "size": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      138,
+      107,
+      1118,
+      1152
+    ],
+    "longSideFraction": 0.8333
+  },
+  "rfd40-standard-main-v1.webp": {
+    "size": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      108,
+      127,
+      1130,
+      1167
+    ],
+    "longSideFraction": 0.8293
+  },
+  "rfd40-cradle-universal-v1.webp": {
+    "size": [
+      405,
+      401
+    ],
+    "bounds": [
+      1,
+      1,
+      405,
+      401
+    ],
+    "longSideFraction": 0.9975
+  },
+  "rfd40-plus-main-v1.webp": {
+    "size": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      135,
+      134,
+      1119,
+      1121
+    ],
+    "longSideFraction": 0.7871
+  },
+  "rfd40-holster-v1.webp": {
+    "size": [
+      639,
+      582
+    ],
+    "bounds": [
+      76,
+      57,
+      573,
+      521
+    ],
+    "longSideFraction": 0.7778
+  },
+  "rfd40-premium-original-v1.webp": {
+    "size": [
+      1500,
+      2442
+    ],
+    "bounds": [
+      1,
+      1,
+      1500,
+      2442
+    ],
+    "longSideFraction": 0.9996
+  },
+  "rfd40-adapter-tc22-econnex-v1.webp": {
+    "size": [
+      653,
+      450
+    ],
+    "bounds": [
+      17,
+      31,
+      629,
+      413
+    ],
+    "longSideFraction": 0.9372
+  }
+}

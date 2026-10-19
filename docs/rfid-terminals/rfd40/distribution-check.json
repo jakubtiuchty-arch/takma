@@ -1,0 +1,357 @@
+{
+  "checkedAt": "2026-10-19",
+  "eurPln": 4.3661,
+  "note": "Zakup netto; ceny sprzedaży: uchwyty i akcesoria ×1.10 — reguła aktualnego API. Tylko fizyczne stany; dostawy planowane pominięte.",
+  "items": {
+    "RFD4030-G00B700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 3503.0093520000005,
+          "physicalStock": 224
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 3729.0423490000003,
+          "physicalStock": 2027
+        }
+      ],
+      "saleNetPLN": 3853.31,
+      "availability": "available"
+    },
+    "RFD4031-G00B700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 4473.418738,
+          "physicalStock": 26
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 4762.017948000001,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 4920.76,
+      "availability": "available"
+    },
+    "RFD4031-G10B700-E8": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 5034.375266,
+          "physicalStock": 197
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 5359.169445,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 5537.82,
+      "availability": "available"
+    },
+    "ADP-RFD40-TC2X-1E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 212.585409,
+          "physicalStock": 2
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 226.33862400000004,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 233.85,
+      "availability": "available"
+    },
+    "ADP-RFD40-TC2X-2E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 212.585409,
+          "physicalStock": 36
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 226.33862400000004,
+          "physicalStock": 204
+        }
+      ],
+      "saleNetPLN": 233.85,
+      "availability": "available"
+    },
+    "ADP-RFD40-EC5X-1E": {
+      "offers": [],
+      "saleNetPLN": null,
+      "availability": "unavailable"
+    },
+    "ADP-RFD40-TC5X-2E": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 196.86744900000002,
+          "physicalStock": 182
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 209.57280000000003,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 216.56,
+      "availability": "available"
+    },
+    "ADP-RFD40-TC2X-1R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 66.626686,
+          "physicalStock": 4
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 70.905464,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 73.29,
+      "availability": "available"
+    },
+    "ADP-RFD40-TC2X-2R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 66.626686,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 70.905464,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 73.29,
+      "availability": "unavailable"
+    },
+    "ADP-RFD40-BT-1R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 323.87729800000005,
+          "physicalStock": 118
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 344.79091700000004,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 356.27,
+      "availability": "available"
+    },
+    "BTRY-RFD49-70MA1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 392.556051,
+          "physicalStock": 93
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 417.879431,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 434.6,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 431.82,
+      "availability": "available"
+    },
+    "CRD1S0T-RFD49-UNIV-CHG-1R": {
+      "offers": [
+        {
+          "supplier": "Jarltech",
+          "costPLN": 539.780943,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 593.76,
+      "availability": "unavailable"
+    },
+    "CR40-1S0T-TC2-G-02": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 507.07885400000004,
+          "physicalStock": 254
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 539.824604,
+          "physicalStock": 113
+        }
+      ],
+      "saleNetPLN": 557.79,
+      "availability": "available"
+    },
+    "SAC-TC8X-4SCHG-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 927.0540130000002,
+          "physicalStock": 12
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 927.0540130000002,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 964.13,
+          "physicalStock": 2
+        }
+      ],
+      "saleNetPLN": 1019.75,
+      "availability": "available"
+    },
+    "CBL-RFD49-USB1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 245.37482000000003,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 261.18010200000003,
+          "physicalStock": 11
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 271.63,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 287.3,
+      "availability": "available"
+    },
+    "SG-RFD40-HLSTR1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 840.6052330000001,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 894.8758560000001,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 930.68,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 924.67,
+      "availability": "unavailable"
+    },
+    "CBL-TC5X-USBC2A-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 34.14290200000001,
+          "physicalStock": 4955
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 34.14290200000001,
+          "physicalStock": 3651
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 34.14,
+          "physicalStock": 2461
+        }
+      ],
+      "saleNetPLN": 37.55,
+      "availability": "available"
+    },
+    "PWR-WUA5V12W0EU": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 92.60498100000001,
+          "physicalStock": 5272
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 92.60498100000001,
+          "physicalStock": 3917
+        }
+      ],
+      "saleNetPLN": 101.86,
+      "availability": "available"
+    },
+    "PWR-BGA12V50W0WW": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 167.26529100000002,
+          "physicalStock": 5
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 167.26529100000002,
+          "physicalStock": 0
+        }
+      ],
+      "saleNetPLN": 184.0,
+      "availability": "available"
+    },
+    "CBL-DC-388A1-01": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 30.693683000000004,
+          "physicalStock": 563
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 30.693683000000004,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Ingram",
+          "costPLN": 30.69,
+          "physicalStock": 92
+        }
+      ],
+      "saleNetPLN": 33.76,
+      "availability": "available"
+    },
+    "50-16000-220R": {
+      "offers": [
+        {
+          "supplier": "BlueStar",
+          "costPLN": 34.14290200000001,
+          "physicalStock": 0
+        },
+        {
+          "supplier": "Jarltech",
+          "costPLN": 34.14290200000001,
+          "physicalStock": 1415
+        }
+      ],
+      "saleNetPLN": 37.55,
+      "availability": "available"
+    }
+  }
+}

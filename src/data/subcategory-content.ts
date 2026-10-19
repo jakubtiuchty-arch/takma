@@ -1,3 +1,4 @@
+import { rfidSledContent } from './rfid-sled-category'
 import { rfidTerminalContent } from './rfid-terminal-category'
 import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
@@ -107,6 +108,7 @@ export const subcategoryContent: Record<string, SubcategoryRichContent> = {
   'etykiety-rfid-zebra': rfidLabelContent,
   'drukarki-rfid': rfidPrinterContent,
   'terminale-rfid': rfidTerminalContent,
+  'uchwyty-rfid': rfidSledContent,
   'biurkowe-drukarki-etykiet': {
     definition: {
       heading: 'Co to jest biurkowa drukarka etykiet?',

@@ -1,0 +1,21 @@
+{
+  "acquiredAt": "2026-10-19",
+  "mainProcessing": "image_gen: białe tło, usunięcie cienia i dodanie marginesów; kompresja WebP. Same uchwyty, bez terminali i adapterów.",
+  "standard": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web002/rfd40-standard-photography-product-front-left-facing-with-shadow-3x2-3600.jpg",
+  "premium": "https://medialibrary.zebra.com/content/dam/zebra_dam/global/photography/product/0008/rfd40-premium-standalone-photography-product-back-left-facing-no-shadow.png",
+  "premiumOriginalGallery": "https://medialibrary.zebra.com/content/dam/zebra_dam/global/photography/product/0008/rfd40-premium-standalone-photography-product-front-facing-no-shadow.png",
+  "premiumPlus": "https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web002/rfd40-premium-plus-photography-product-front-left-facing-without-shadow-3x2-3600.jpg",
+  "accessoryGuideImages": {
+    "ADP-RFD40-TC2X-1E": "strona 5, lewy obraz",
+    "ADP-RFD40-TC2X-2E": "strona 5, środkowy obraz",
+    "ADP-RFD40-TC5X-2E": "strona 7, prawy obraz",
+    "ADP-RFD40-TC2X-1R": "strona 8, lewy obraz",
+    "ADP-RFD40-TC2X-2R": "strona 8, prawy obraz",
+    "CR40-1S0T-TC2-G-02": "strona 19, lewy obraz",
+    "CRD1S0T-RFD49-UNIV-CHG-1R": "strona 23, lewy obraz",
+    "SAC-TC8X-4SCHG-01": "strona 39, prawy obraz",
+    "CBL-RFD49-USB1-01": "strona 41, lewy obraz",
+    "SG-RFD40-HLSTR1-01": "strona 15, lewy obraz"
+  },
+  "accessoryProcessing": "Oryginalne obrazy z PDF; kompresja WebP, wspólny istniejący mechanizm centrowania na podstawie granic produktu."
+}

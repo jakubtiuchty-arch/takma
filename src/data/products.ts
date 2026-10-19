@@ -1,3 +1,5 @@
+import { rfd40Products, rfd40Accessories } from './rfd40-products'
+import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
@@ -415,6 +417,7 @@ export const subcategories: Subcategory[] = [
   },
   rfidPrinterCategory,
   rfidTerminalCategory,
+  rfidSledCategory,
   {
     id: 'kolorowe-drukarki-etykiet',
     slug: 'kolorowe-drukarki-etykiet',
@@ -95808,8 +95811,8 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || rfidTerminalAccessories.some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = rfidTerminalAccessories.filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
@@ -95822,6 +95825,8 @@ const rawProductList: Product[] = [
   ...desktopPrinters,
   ...rfidPrinterProducts,
   ...rfidTerminalProducts,
+  ...rfd40Products,
+  ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
   ...bixolonRfidAccessories,

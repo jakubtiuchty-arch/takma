@@ -50,10 +50,10 @@
   "/images/products/PWR-BGA12V50W0WW-tc201-card-quality-v3.png": [
     1254,
     1254,
-    89,
+    88,
     324,
     1166,
-    925
+    926
   ],
   "/images/products/PWR-BGA12V108W0WW-tc22-tc27-quality-v1.png": [
     1254,
@@ -66,9 +66,9 @@
   "/images/products/CBL-DC-388A1-01-mc3400-quality-v1.png": [
     1254,
     1254,
-    66,
+    65,
     333,
-    1233,
+    1234,
     992
   ],
   "/images/products/CBL-DC-381A1-01-tc22-tc27-quality-v1.png": [
@@ -82,7 +82,7 @@
   "/images/products/50-16000-220R-tc201-card-quality-v3.png": [
     1254,
     1254,
-    89,
+    88,
     173,
     1131,
     1061
@@ -91,8 +91,104 @@
     1254,
     1254,
     78,
-    115,
+    114,
     1187,
     1170
+  ],
+  "/images/products/rfd40-adapter-tc21-econnex-v1.webp": [
+    613,
+    401,
+    0,
+    0,
+    611,
+    399
+  ],
+  "/images/products/rfd40-adapter-tc22-econnex-v1.webp": [
+    653,
+    450,
+    17,
+    31,
+    629,
+    413
+  ],
+  "/images/products/rfd40-adapter-tc53-econnex-v1.webp": [
+    785,
+    471,
+    83,
+    32,
+    687,
+    422
+  ],
+  "/images/products/rfd40-adapter-tc21-bluetooth-v1.webp": [
+    616,
+    424,
+    10,
+    42,
+    609,
+    384
+  ],
+  "/images/products/rfd40-adapter-tc22-bluetooth-v1.webp": [
+    568,
+    402,
+    8,
+    28,
+    558,
+    370
+  ],
+  "/images/products/rfd40-cradle-universal-v1.webp": [
+    405,
+    401,
+    1,
+    1,
+    405,
+    401
+  ],
+  "/images/products/rfd40-cradle-tc22-v1.webp": [
+    744,
+    618,
+    174,
+    127,
+    555,
+    489
+  ],
+  "/images/products/rfd40-battery-charger-v1.webp": [
+    446,
+    528,
+    3,
+    0,
+    445,
+    528
+  ],
+  "/images/products/rfd40-usb-cup-v1.webp": [
+    680,
+    497,
+    84,
+    15,
+    615,
+    458
+  ],
+  "/images/products/rfd40-holster-v1.webp": [
+    639,
+    582,
+    76,
+    57,
+    573,
+    521
+  ],
+  "/images/products/zebra-tc22r-battery.png": [
+    298,
+    522,
+    84,
+    60,
+    222,
+    446
+  ],
+  "/images/products/CBL-TC5X-USBC2A-01-tc201-card-quality-v3.png": [
+    1254,
+    1254,
+    50,
+    362,
+    1206,
+    923
   ]
 }

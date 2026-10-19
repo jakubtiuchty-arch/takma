@@ -55,13 +55,13 @@ export function selectProductVariant(product: Product, rows: StockInfo[], pn?: s
 export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const url = `https://www.takma.com.pl/produkt/${product.slug}`
   const stock = new Map(rows.map(row => [row.partNumber, row]))
-  const rfidTerminal = product.subcategoryIds?.includes('terminale-rfid') ?? false
+  const rfidTerminal = product.subcategoryIds?.some(id => id === 'terminale-rfid' || id === 'uchwyty-rfid') ?? false
   const commonProperties = rfidTerminal ? product.specifications
     .filter(spec => spec.name !== 'Part Number')
     .map(spec => ({ '@type': 'PropertyValue', name: spec.name, value: spec.value })) : []
   const facts = rfidTerminal ? {
     model: product.name.replace(/^Zebra\s+/, ''),
-    category: 'Terminale RFID',
+    category: product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
     additionalProperty: commonProperties,
   } : {}
   const marka = markaProduktu(product)

@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-19",
+  "pages": [
+    {
+      "slug": "zebra-rfd40-standard",
+      "hero": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-standard-main-v1.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-rfd40-premium",
+      "hero": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-premium-main-v1.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-rfd40-premium-plus",
+      "hero": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-plus-main-v1.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-tc53e-rfid",
+      "hero": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Ftc53e-rfid-front-straight-v2.webp&w=3840&q=75"
+    },
+    {
+      "slug": "zebra-em45-rfid",
+      "hero": {
+        "x": 112,
+        "y": 232,
+        "width": 584,
+        "height": 584
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fem45-rfid-original-front-media-v2.webp&w=3840&q=75"
+    }
+  ],
+  "heroVisibleLongSidePx": {
+    "RFD40 Standard": 458,
+    "RFD40 Premium": 460,
+    "RFD40 Premium Plus": 434,
+    "TC53e-RFID": 444,
+    "EM45 RFID": 450
+  },
+  "checks": [
+    "3 karty i poprawne PN w schema Product",
+    "Ceny i fizyczne stany z aktualnego API",
+    "Pierwszy rząd 4 akcesoriów, rozwijanie do 14/16 i zwijanie",
+    "Lokalne PDF: 200, application/pdf, magic bytes %PDF-",
+    "Filtr SE4100 ogranicza listę do Premium Plus",
+    "Brak poziomego przewijania na telefonie",
+    "Panel /admin/etykiety-na-magazynie zachowuje przekierowanie do logowania",
+    "TypeScript bez błędów, lint: wyłącznie wcześniejsze ostrzeżenia img",
+    "Regresja cen terminali i nawigacji akcesoriów"
+  ]
+}

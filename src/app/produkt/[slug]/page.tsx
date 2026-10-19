@@ -150,7 +150,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const fallbackDesc = variant
     ? `${variantPrefix}${shortDescriptionSentence}${variantPrice} Doradztwo techniczne i serwis.`
     : `${shortDescriptionSentence}${priceText}${variantsText} Doradztwo techniczne i serwis.`
-  const metaDescription = !variant && product.seoDescription && (!isZebraTerminalProduct(product) || product.subcategoryIds?.includes('terminale-rfid'))
+  const metaDescription = !variant && product.seoDescription && (!isZebraTerminalProduct(product) || product.subcategoryIds?.some(id => id === 'terminale-rfid' || id === 'uchwyty-rfid'))
     ? product.seoDescription
     : smartTruncate(fallbackDesc, 160)
 
@@ -1873,7 +1873,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <RelatedProducts
                 id="akcesoria"
                 title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                products={product.id === 'zebra-ws501-r' ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true })) : relatedAccessories as typeof products}
+                products={(product.id === 'zebra-ws501-r' || product.subcategoryIds?.includes('uchwyty-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true })) : relatedAccessories as typeof products}
                 initialLimit={4}
                 showDualButtons
               />

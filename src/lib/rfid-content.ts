@@ -1,7 +1,7 @@
 import { products } from '@/data/products'
 
-const categoryIds = new Set(['drukarki-rfid', 'etykiety-rfid', 'terminale-rfid'])
-const categorySlugs = new Set(['drukarki-rfid', 'etykiety-rfid-zebra', 'terminale-rfid'])
+const categoryIds = new Set(['drukarki-rfid', 'etykiety-rfid', 'terminale-rfid', 'uchwyty-rfid'])
+const categorySlugs = new Set(['drukarki-rfid', 'etykiety-rfid-zebra', 'terminale-rfid', 'uchwyty-rfid'])
 const rfidProducts = products.filter(product => product.subcategoryIds?.some(id => categoryIds.has(id)))
 const productIds = new Set(rfidProducts.flatMap(product => [
   product.id,

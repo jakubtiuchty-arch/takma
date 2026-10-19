@@ -1,0 +1,22 @@
+{
+  "acquiredAt": "2026-10-19",
+  "accessoryGuideVersion": "2026",
+  "files": [
+    {
+      "localFilename": "zebra-rfd40-standard-en.pdf",
+      "source": "https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/rfd40-spec-sheet-en-us.pdf"
+    },
+    {
+      "localFilename": "zebra-rfd40-premium-plus-en.pdf",
+      "source": "https://medialibrary.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/RFID/hand-held_reader/rfd40/spec-sheet/rfd40-prem-prem-plus-spec-sheet-en-us.pdf"
+    },
+    {
+      "localFilename": "zebra-rfd40-akcesoria-en.pdf",
+      "source": "https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/rfd40-standard-guide-accessory-en-us.pdf"
+    },
+    {
+      "localFilename": "zebra-rfd40-premium-obsluga-en.pdf",
+      "source": "https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/rfd4031-prg-en.pdf"
+    }
+  ]
+}
