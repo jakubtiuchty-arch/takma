@@ -1,3 +1,4 @@
+import { honeywellIh45Products, honeywellIh45Accessories } from '@/data/honeywell-ih45-products'
 import { datalogic3138Products, datalogic3138Accessories } from '@/data/datalogic-3138-products'
 import { rfd90Accessories } from '@/data/rfd90-products'
 import { rfd40Accessories } from '@/data/rfd40-products'
@@ -38,6 +39,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...honeywellIh45Products.map(product => product.slug),
+  ...honeywellIh45Accessories.map(product => product.slug),
   ...datalogic3138Products.map(product => product.slug),
   ...datalogic3138Accessories.map(product => product.slug),
   ...rfidTerminalAccessories.map(product => product.slug),

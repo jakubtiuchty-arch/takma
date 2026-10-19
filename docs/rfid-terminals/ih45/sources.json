@@ -1,0 +1,23 @@
+{
+  "checked": "2026-10-19",
+  "product": "https://automation.honeywell.com/us/en/products/productivity-solutions/mobile-computers/rfid/readers/ih45-rfid-handheld-reader",
+  "sources": {
+    "spec": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/rfid/readers/ih45/documents/sps-ppr-ih45-rfid-reader-datasheet-en.pdf",
+    "quick": "https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/ppr/en-us/public/products/rfid/readers/ih45/documents/sps-ppr-ih45-rfid-en-qs.pdf",
+    "accessories": "https://www.jarltech.com/sites/default/files/documents/product/accessory_guide/en/IH40_IH45_Accessories_Guide.pdf",
+    "ct37": "https://www.ers-online.co.uk/files/products/files/CT37-Configuration-Guide-RevB.pdf",
+    "ct47": "https://4041669.fs1.hubspotusercontent-na1.net/hubfs/4041669/CT47%20Configuration%20Guide-min.pdf",
+    "cordSpec": "https://www.jarltech.com/sites/default/files/documents/product/accessory_guide/en/honeywell_ct45.pdf",
+    "warranty": "https://www.jarltech.com/en/honeywell-ih45"
+  },
+  "photos": {
+    "main": "Honeywell scene7 sps-pss-IH45-primary-1200x798 + CT37 guide p30 exploded body + official Quick Start p2 diagram. Imagegen removes optional terminal/bracket, battery door closed, enlarges white margins. Final exec-c1898075-949d-40ff-bc9d-ef631f89de27.png",
+    "set": "Same manufacturer scene7 photo with optional terminal, imagegen clarity/margins; exec-8ac11a3f-0aaf-4f9c-8212-2fc23c6ea366.png",
+    "battery": "IH40/IH45 accessory guide p2, image10 (left ROW battery); exec-59612d41-1efc-411e-a459-e19fb6b159bd.png",
+    "cradle": "IH40/IH45 accessory guide p3 image2; exec-19f6b1aa-1aec-423e-ae5a-e7f7eb1d80a3.png",
+    "adapter-ct37": "CT37 configuration guide p30 image6 bracket + image7 screws; exec-8a996d78-f99d-457b-8a33-762c7c6dc049.png",
+    "adapter-ct47": "CT47 configuration guide p55 image7 booted bracket; exec-f2318f4d-3e6d-4d13-896e-b4e1affcdeff.png",
+    "wrist": "CT37 configuration guide p30 image2; exec-9f448a09-a0aa-447b-aedc-b6acb134ac48.png",
+    "cord-eu": "No trustworthy exact PN photo found. Existing Honeywell brand asset embedded as a grey SVG placeholder, matching the existing Brady pattern. Never substituted US plug photo."
+  }
+}

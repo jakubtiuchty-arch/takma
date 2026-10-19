@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "honeywell-ih45",
+    "field": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    },
+    "src": "/_next/image?url=%2Fimages%2Fproducts%2Fih45-main-v1.webp&w=3840&q=75"
+  },
+  {
+    "slug": "zebra-rfd40-standard",
+    "field": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    },
+    "src": "/_next/image?url=%2Fimages%2Fproducts%2Frfd40-standard-main-v1.webp&w=3840&q=75"
+  },
+  {
+    "slug": "datalogic-3138-rfid",
+    "field": {
+      "x": 112,
+      "y": 232,
+      "width": 584,
+      "height": 584
+    },
+    "src": "/_next/image?url=%2Fimages%2Fproducts%2Fdatalogic-3138-main-v1.webp&w=3840&q=75"
+  }
+]
