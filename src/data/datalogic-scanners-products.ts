@@ -1454,7 +1454,7 @@ export const datalogicScannerAccessories: Product[] = [
     "seoTitle": "Przewód USB-A Datalogic 90A052258 | TAKMA",
     "seoDescription": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem.",
-    "description": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem.\n\nPodłącz przewód do QD2590, QW2520 lub GD4690. W modelach QBT2500, QM2500, GBT4600 i GM4600 przewód podłącza się do zgodnej bazy. Nie służy do bezpośredniego ładowania gniazda USB-C czytnika.\n\n## Zawartość i połączenie\n\nOpakowanie zawiera sam przewód. Skaner, baza i zasilacz są sprzedawane osobno. Jeśli masz zestaw USB z tym przewodem, nie musisz kupować drugiego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590), [Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520), [Datalogic QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500), [Datalogic QuickScan QM2500](/produkt/datalogic-quickscan-qm2500), [Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690), [Datalogic Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600), [Datalogic Gryphon GM4600](/produkt/datalogic-gryphon-gm4600). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem.\n\nPodłącz przewód do QD2590, QW2520 lub GD4690. W modelach QBT2500, QM2500, GBT4600 i GM4600 przewód podłącza się do zgodnej bazy. Nie służy do bezpośredniego ładowania gniazda USB-C czytnika.\n\n## Zawartość i połączenie\n\nOpakowanie zawiera sam przewód. Skaner, baza i zasilacz są sprzedawane osobno. Jeśli masz zestaw USB z tym przewodem, nie musisz kupować drugiego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590), [Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520), [Datalogic QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500), [Datalogic QuickScan QM2500](/produkt/datalogic-quickscan-qm2500), [Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690), [Datalogic Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600), [Datalogic Gryphon GM4600](/produkt/datalogic-gryphon-gm4600). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Dodatkowe zgodne modele\n\nPrzewód obsługuje także QD2220, GD4220, GD4290 i Heron HD3130/HD3430. W GBT4200 i GM4200 podłącza się go do zgodnej bazy WLC4190.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1494,7 +1494,14 @@ export const datalogicScannerAccessories: Product[] = [
       "datalogic-quickscan-qm2500",
       "datalogic-gryphon-gd4690",
       "datalogic-gryphon-gbt4600",
-      "datalogic-gryphon-gm4600"
+      "datalogic-gryphon-gm4600",
+      "datalogic-quickscan-qd2220",
+      "datalogic-gryphon-gd4220",
+      "datalogic-gryphon-gd4290",
+      "datalogic-gryphon-gbt4200",
+      "datalogic-gryphon-gm4200",
+      "datalogic-heron-hd3130",
+      "datalogic-heron-hd3430"
     ],
     "relatedAccessories": [],
     "downloads": [
@@ -1522,7 +1529,7 @@ export const datalogicScannerAccessories: Product[] = [
     "seoTitle": "Podstawka Datalogic QuickScan QW2520 | TAKMA",
     "seoDescription": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520.",
-    "description": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520.\n\nUstaw czytnik na stanowisku i dobierz położenie podstawki. Podstawka nie jest bazą radiową i nie ładuje akumulatora.\n\n## Co zawiera produkt\n\nTa pozycja obejmuje samą podstawkę. Czytnik oraz przewód USB są sprzedawane osobno. Zestaw QW2520-BKK1S zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520.\n\nUstaw czytnik na stanowisku i dobierz położenie podstawki. Podstawka nie jest bazą radiową i nie ładuje akumulatora.\n\n## Co zawiera produkt\n\nTa pozycja obejmuje samą podstawkę. Czytnik oraz przewód USB są sprzedawane osobno. Zestaw QW2520-BKK1S zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## QuickScan QD2220\n\nPodstawka pasuje także do QD2220. Jest częścią zestawu QD2220-BKK1S.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1556,7 +1563,8 @@ export const datalogicScannerAccessories: Product[] = [
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-quickscan-qw2520"
+      "datalogic-quickscan-qw2520",
+      "datalogic-quickscan-qd2220"
     ],
     "relatedAccessories": [],
     "downloads": [
@@ -1646,7 +1654,7 @@ export const datalogicScannerAccessories: Product[] = [
     "seoTitle": "Podstawka Flex Datalogic QuickScan QD2590 | TAKMA",
     "seoDescription": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590.",
-    "description": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590.\n\nElastyczne ramię pozwala ustawić położenie czytnika nad stanowiskiem. Wybierz tryb odczytu w ustawieniach skanera.\n\n## Samodzielne akcesorium\n\nTa pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Podstawka nie ładuje i nie zapewnia połączenia radiowego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590.\n\nElastyczne ramię pozwala ustawić położenie czytnika nad stanowiskiem. Wybierz tryb odczytu w ustawieniach skanera.\n\n## Samodzielne akcesorium\n\nTa pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Podstawka nie ładuje i nie zapewnia połączenia radiowego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## QuickScan QD2220\n\nPodstawka pasuje także do przewodowego QD2220.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1680,7 +1688,8 @@ export const datalogicScannerAccessories: Product[] = [
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-quickscan-qd2590"
+      "datalogic-quickscan-qd2590",
+      "datalogic-quickscan-qd2220"
     ],
     "relatedAccessories": [],
     "downloads": [
@@ -1965,7 +1974,7 @@ export const datalogicScannerAccessories: Product[] = [
     "seoTitle": "Podstawka Datalogic Gryphon GD4690 | TAKMA",
     "seoDescription": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690.",
-    "description": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690.\n\nRamię podstawki pozwala ustawić czytnik nad stanowiskiem. Skonfiguruj tryb prezentacyjny zgodnie z instrukcją skanera.\n\n## Podstawka i baza to różne elementy\n\nPodstawka nie ładuje i nie obsługuje transmisji radiowej. Nie zastępuje baz WLC4690 do modeli GBT4600 i GM4600. Ta pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Zestaw GD4690-BKK1S-HP zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690.\n\nRamię podstawki pozwala ustawić czytnik nad stanowiskiem. Skonfiguruj tryb prezentacyjny zgodnie z instrukcją skanera.\n\n## Podstawka i baza to różne elementy\n\nPodstawka nie ładuje i nie obsługuje transmisji radiowej. Nie zastępuje baz WLC4690 do modeli GBT4600 i GM4600. Ta pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Zestaw GD4690-BKK1S-HP zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Gryphon 4200\n\nPodstawka pasuje także do przewodowych GD4220 i GD4290. Nie zastępuje bazy ładującej modeli bezprzewodowych.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1999,7 +2008,9 @@ export const datalogicScannerAccessories: Product[] = [
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-gryphon-gd4690"
+      "datalogic-gryphon-gd4690",
+      "datalogic-gryphon-gd4220",
+      "datalogic-gryphon-gd4290"
     ],
     "relatedAccessories": [],
     "downloads": [

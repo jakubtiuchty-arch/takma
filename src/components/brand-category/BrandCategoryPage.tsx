@@ -255,7 +255,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   }
 
   const faqItems = content?.faq ?? bc.faq
-  const faqJsonLd = faqItems.length > 0 ? {
+  const faqJsonLd = bc.slug !== 'skanery-datalogic' && faqItems.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqItems.map(f => ({
@@ -284,7 +284,9 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               <div className="mt-12 space-y-10">
                 <section id="modele" className="scroll-mt-24">
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.technicalDeepDive || 'Parametry techniczne i koszty'}</h2>
-                  {(() => {
+                  {bc.slug === 'skanery-datalogic' ? (
+                    <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-4" />
+                  ) : (() => {
                     const allLines = content.technicalDeepDive.split('\n').filter(Boolean)
                     const bulletLines = allLines.filter((l) => l.startsWith('• '))
                     const textLines = allLines.filter((l) => !l.startsWith('• '))

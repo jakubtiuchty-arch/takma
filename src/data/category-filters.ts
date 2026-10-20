@@ -1421,7 +1421,26 @@ for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skan
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
 categoryFilters['skanery-datalogic'] = [
-  ...categoryFilters['skanery-kodow-kreskowych'],
+  ...categoryFilters['skanery-kodow-kreskowych'].map(def => {
+    if (def.specKey === 'szczelnosc') return {
+      ...def,
+      description: 'Klasa ochrony obudowy. IP30 i IP40 nie zapewniają ochrony przed wodą. Wyższą odporność na pył i wodę porównaj według klasy konkretnego modelu.',
+      derived: [
+        { value: 'IP30', pattern: 'IP30', specs: ['Klasa ochrony'] },
+        ...(def.derived ?? []).map(rule => rule.value === 'IP42–IP52' ? { ...rule, value: 'IP40–IP52' } : rule),
+      ],
+    }
+    if (def.specKey === 'interfejs') return {
+      ...def,
+      derived: [{ value: 'USB', pattern: 'USB', specs: ['Interfejsy', 'Interfejs'] }, ...(def.derived ?? [])],
+    }
+    if (def.specKey === 'upadki') return {
+      ...def,
+      description: 'Wysokość testu upadku na beton. Liczba upadków i warunki zależą od modelu; szczegóły sprawdzisz na karcie produktu.',
+      derived: [...(def.derived ?? []), { value: '2 m', pattern: '(^|[^0-9,.])2([,.]0)? ?m', specs: ['Odporność na upadki'] }],
+    }
+    return def
+  }),
   {
     specKey: 'radio-skanera',
     label: 'Łączność bezprzewodowa',

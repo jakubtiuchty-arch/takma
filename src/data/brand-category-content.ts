@@ -1,3 +1,4 @@
+import { datalogicScannerCategory } from './datalogic-scanner-category'
 // Rich SEO content for brand+category pages (e.g. /drukarki-etykiet-zebra)
 // Uses the same interface as subcategory pages for consistent rendering
 
@@ -15,6 +16,7 @@ export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHead
 }
 
 export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
+  'skanery-datalogic': datalogicScannerCategory,
   'drukarki-kart-magicard': {
     updatedAt: '2026-09-19',
     sectionHeadings: {

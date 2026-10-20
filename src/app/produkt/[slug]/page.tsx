@@ -242,7 +242,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     notFound()
   }
 
-  const rfidTextLinks = isRfidContentProduct(product.id) || product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-') || product.id.startsWith('datalogic-powerscan-')
+  const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-)/.test(product.id)
+  const rfidTextLinks = isRfidContentProduct(product.id) || datalogicScannerContent
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
@@ -775,7 +776,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // więc przy okazji znikał także schemat pytań — na czternastu kartach z sekcją `faq`,
   // między innymi całej serii Epson ColorWorks i drukarkach kart Zebry. FAQPage to osobny typ
   // i nie koliduje z niczym, co renderuje LiveProductSchema.
-  const faqJsonLd = !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
+  const faqJsonLd = !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({

@@ -958,5 +958,285 @@
     101,
     907,
     1070
+  ],
+  "/images/products/datalogic-quickscan-qd2220-1-v1.webp": [
+    796,
+    1015,
+    133,
+    81,
+    718,
+    996
+  ],
+  "/images/products/datalogic-quickscan-qd2220-2-v1.webp": [
+    1316,
+    1350,
+    486,
+    324,
+    861,
+    966
+  ],
+  "/images/products/datalogic-gryphon-gd4220-1-v1.webp": [
+    2698,
+    2723,
+    777,
+    244,
+    2305,
+    2272
+  ],
+  "/images/products/datalogic-gryphon-gd4290-1-v1.webp": [
+    2698,
+    2723,
+    777,
+    244,
+    2305,
+    2272
+  ],
+  "/images/products/datalogic-gryphon-gbt4200-1-v1.webp": [
+    675,
+    864,
+    48,
+    54,
+    606,
+    819
+  ],
+  "/images/products/datalogic-gryphon-gbt4200-2-v1.webp": [
+    1500,
+    1459,
+    143,
+    171,
+    1351,
+    1284
+  ],
+  "/images/products/datalogic-gryphon-gm4200-1-v1.webp": [
+    675,
+    864,
+    48,
+    54,
+    606,
+    819
+  ],
+  "/images/products/datalogic-gryphon-gm4200-2-v1.webp": [
+    1500,
+    1459,
+    143,
+    171,
+    1351,
+    1284
+  ],
+  "/images/products/datalogic-heron-hd3130-1-v1.webp": [
+    900,
+    900,
+    115,
+    16,
+    798,
+    874
+  ],
+  "/images/products/datalogic-heron-hd3130-2-v1.webp": [
+    900,
+    900,
+    102,
+    14,
+    793,
+    881
+  ],
+  "/images/products/datalogic-heron-hd3430-1-v1.webp": [
+    900,
+    900,
+    191,
+    17,
+    734,
+    888
+  ],
+  "/images/products/datalogic-heron-hd3430-2-v1.webp": [
+    900,
+    900,
+    183,
+    26,
+    720,
+    884
+  ],
+  "/images/products/datalogic-td1120-1-v1.webp": [
+    900,
+    900,
+    72,
+    188,
+    832,
+    698
+  ],
+  "/images/products/datalogic-td1120-2-v1.webp": [
+    1500,
+    1500,
+    281,
+    419,
+    1351,
+    1103
+  ],
+  "/images/products/datalogic-td1170-1-v1.webp": [
+    900,
+    900,
+    72,
+    188,
+    832,
+    698
+  ],
+  "/images/products/datalogic-td1170-2-v1.webp": [
+    1500,
+    1500,
+    281,
+    419,
+    1351,
+    1103
+  ],
+  "/images/products/datalogic-td1130-1-v1.webp": [
+    900,
+    900,
+    72,
+    188,
+    832,
+    698
+  ],
+  "/images/products/datalogic-td1130-2-v1.webp": [
+    1500,
+    1500,
+    281,
+    419,
+    1351,
+    1103
+  ],
+  "/images/products/datalogic-powerscan-pd9130-1-v1.webp": [
+    1200,
+    1200,
+    109,
+    136,
+    946,
+    1094
+  ],
+  "/images/products/datalogic-powerscan-pd9130-2-v1.webp": [
+    900,
+    900,
+    98,
+    99,
+    726,
+    818
+  ],
+  "/images/products/datalogic-powerscan-pbt9100-1-v1.webp": [
+    450,
+    432,
+    49,
+    4,
+    371,
+    290
+  ],
+  "/images/products/datalogic-powerscan-pm9100-1-v1.webp": [
+    1254,
+    1254,
+    120,
+    74,
+    1083,
+    1176
+  ],
+  "/images/products/datalogic-powerscan-pd9531-dpm-1-v1.webp": [
+    900,
+    900,
+    99,
+    76,
+    778,
+    835
+  ],
+  "/images/products/datalogic-powerscan-pd9531-dpm-2-v1.webp": [
+    900,
+    900,
+    134,
+    74,
+    814,
+    833
+  ],
+  "/images/products/datalogic-powerscan-pbt9501-dpm-1-v1.webp": [
+    800,
+    800,
+    82,
+    89,
+    647,
+    720
+  ],
+  "/images/products/datalogic-powerscan-pm9501-dpm-1-v1.webp": [
+    2000,
+    2000,
+    98,
+    55,
+    1746,
+    1941
+  ],
+  "/images/products/datalogic-handheld-wlc4190-bk-bt-1-v1.webp": [
+    1200,
+    975,
+    134,
+    75,
+    1111,
+    878
+  ],
+  "/images/products/datalogic-handheld-wlc4190-bk-433-1-v1.webp": [
+    1200,
+    975,
+    134,
+    75,
+    1111,
+    878
+  ],
+  "/images/products/datalogic-handheld-rbp-gm4200-1-v1.webp": [
+    1254,
+    1254,
+    70,
+    124,
+    1221,
+    1144
+  ],
+  "/images/products/datalogic-handheld-bc9030-bt-1-v1.webp": [
+    801,
+    1041,
+    245,
+    89,
+    590,
+    960
+  ],
+  "/images/products/datalogic-handheld-bc9030-433-1-v1.webp": [
+    1254,
+    1254,
+    143,
+    293,
+    1118,
+    964
+  ],
+  "/images/products/datalogic-handheld-usb-90a052065-1-v1.webp": [
+    1254,
+    1254,
+    70,
+    243,
+    1175,
+    1011
+  ],
+  "/images/products/datalogic-handheld-rs232-90a051230-1-v1.webp": [
+    880,
+    750,
+    182,
+    223,
+    687,
+    525
+  ],
+  "/images/products/datalogic-handheld-cab-438-1-v1.webp": [
+    800,
+    800,
+    35,
+    28,
+    766,
+    770
+  ],
+  "/images/products/datalogic-handheld-cab-524-1-v1.webp": [
+    800,
+    800,
+    89,
+    226,
+    718,
+    573
   ]
 }
