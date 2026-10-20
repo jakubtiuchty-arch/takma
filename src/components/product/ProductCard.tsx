@@ -61,8 +61,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const placeholderLogo = product.manufacturerId === 'brady' && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
   // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
-  const uniformGridImage = product.uniformImage || product.id === 'unitech-rp300'
-  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : product.uniformImageFraction
+  const datalogicScannerImage = product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-')
+  const uniformGridImage = product.uniformImage || product.id === 'unitech-rp300' || datalogicScannerImage
+  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : datalogicScannerImage ? 0.62 : product.uniformImageFraction
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&

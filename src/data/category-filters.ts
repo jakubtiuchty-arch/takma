@@ -873,10 +873,10 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'rodzaj',
       label: 'Rodzaj',
-      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth i stacja, praca do 100 m od bazy\n• Prezentacyjny — stoi na ladzie, kod podsuwa się pod okno\n• Pierścieniowy — na palcu, obie ręce wolne; magazyn',
+      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth lub radio producenta; zasięg zależy od modelu i otoczenia\n• Prezentacyjny — stoi na ladzie, kod podsuwa się pod okno\n• Pierścieniowy — na palcu, obie ręce wolne; magazyn',
       derived: [
         { value: 'Przewodowy', subcategory: 'skanery-przewodowe' },
-        { value: 'Bezprzewodowy (Bluetooth)', subcategory: 'skanery-bezprzewodowe' },
+        { value: 'Bezprzewodowy', subcategory: 'skanery-bezprzewodowe' },
         { value: 'Prezentacyjny', subcategory: 'skanery-prezentacyjne' },
         { value: 'Pierścieniowy', subcategory: 'skanery-pierscieniowe' },
       ],
@@ -926,7 +926,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'interfejs',
       label: 'Interfejs',
-      description: 'Jak podłączyć skaner. USB mają wszystkie modele.\n• RS-232 — kasy fiskalne, wagi, starsze systemy\n• Keyboard Wedge — skaner udaje klawiaturę, bez sterowników\n• Ethernet przemysłowy — sterowniki PLC na linii produkcyjnej',
+      description: 'Jak podłączyć skaner. Sprawdź interfejs oraz przewód wymagany przez konkretny PN.\n• RS-232 — kasy fiskalne, wagi, starsze systemy\n• Keyboard Wedge — interfejs klawiaturowy; nie jest tym samym co USB HID\n• Ethernet przemysłowy — sterowniki PLC na linii produkcyjnej',
       derived: [
         { value: 'RS-232', pattern: 'RS-?232', specs: ['Interfejsy', 'Interfejs'] },
         { value: 'Keyboard Wedge', pattern: 'Keyboard Wedge|KBW|emulacja klawiatury', specs: ['Interfejsy', 'Interfejs'] },
@@ -1420,6 +1420,18 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
 for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
+categoryFilters['skanery-datalogic'] = [
+  ...categoryFilters['skanery-kodow-kreskowych'],
+  {
+    specKey: 'radio-skanera',
+    label: 'Łączność bezprzewodowa',
+    description: 'Bluetooth i STAR wymagają zgodnego urządzenia lub bazy. Bazy Bluetooth i STAR nie są zamienne do transmisji danych.',
+    derived: [
+      { value: 'Bluetooth', pattern: 'Bluetooth', specs: ['Łączność'] },
+      { value: 'STAR 433 MHz', pattern: 'STAR', specs: ['Łączność'] },
+    ],
+  },
+]
 for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady']) {
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }

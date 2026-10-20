@@ -670,7 +670,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         </section>
       ) : null}
 
-      <div className="container-main py-8 lg:py-10">
+      <div className={`container-main py-8 lg:py-10 ${bc.slug === 'skanery-datalogic' ? 'rfid-text-links' : ''}`}>
         {bc.heroImage ? (
           <RichText text={bc.longDescription} className="text-gray-600 leading-relaxed space-y-3 mb-6" />
         ) : (
@@ -718,6 +718,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
           <FilterableProductGrid
             products={produktyDoSiatki}
             filters={filters}
+            useLivePrices={bc.slug === 'skanery-datalogic'}
             columns={3}
             filtersFirst
             showDualButtons

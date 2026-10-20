@@ -1,3 +1,4 @@
+import { datalogicQuickScanProducts, datalogicGryphonProducts, datalogicScannerAccessories } from './datalogic-scanners-products'
 import { unitechRp300Products, unitechRp300Accessories } from './unitech-rp300-products'
 import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
 import { rfidReaderCategory } from './rfid-reader-category'
@@ -15159,466 +15160,7 @@ TAKMA jest partnerem Citizen w Polsce — oferujemy doradztwo, konfigurację i s
 // ============================================
 
 const scanners: Product[] = [
-  {
-    id: 'datalogic-quickscan-qd2590',
-    slug: 'datalogic-quickscan-qd2590',
-    name: 'Datalogic QuickScan QD2590',
-    sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html',
-    seoTitle: 'Datalogic QuickScan QD2590 — skaner 2D 1 MP, USB-C, 5 lat gwarancji | od 319 zł',
-    seoDescription: 'Datalogic QuickScan QD2590 — przewodowy skaner 2D z matrycą 1 Mpix. Czyta kody z ekranów i przez pleksę, zasięg EAN-13 do 51 cm, IP52, pięć lat gwarancji. Cena od 319 zł netto.',
-    shortDescription: 'Datalogic QuickScan QD2590 — przewodowy skaner 2D z matrycą 1 Mpix, USB-C i RS-232',
-    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
-
-**QD2590 jest w tej czwórce modelem wyjściowym.** Ma pełną optykę i komplet interfejsów, a kabel oznacza, że nie trzeba pilnować ładowania.
-
-Dla kogo? QuickScan QD2590 to przewodowy skaner 2D na stanowisko kasowe, do apteki, recepcji i lekkiego magazynu.
-
-Odczytuje kody jednowymiarowe, dwuwymiarowe, pocztowe, złożone i warstwowe, a także DotCode oraz znaki wodne Digimarc, które trafiają dziś na opakowania produktów konsumenckich. Radzi sobie z kodem wyświetlonym na ekranie telefonu, czyli z kuponem, biletem i e-receptą, oraz z odczytem przez szybę z pleksy na stanowisku kasowym.
-
-Celowanie prowadzą dwa niebieskie trójkąty, a potwierdzenie udanego odczytu daje zielona plamka rzucana wprost na kod. Operator nie musi patrzeć na ekran ani czekać na dźwięk. Technologia Motionix uruchamia odczyt w chwili podniesienia skanera z podstawki.
-
-Obudowa znosi wielokrotne upadki z 1,5 metra na beton, a spust wytrzymuje dziesięć milionów naciśnięć. Producent daje pięć lat gwarancji, czyli dwa razy więcej niż typowe dwa lata w tej półce cenowej.
-
-Konfiguracja przez bezpłatny program Datalogic Aladdin: ustawienia wybiera się w oknie programu, a skaner przyjmuje je kablem albo przez wydrukowane kody. Interfejs USB-C, USB, RS-232 i emulacja klawiatury działa bez sterownika.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-przewodowe'],
-    manufacturerId: 'datalogic',
-    priceFrom: 319,
-    images: [
-      '/images/products/datalogic-quickscan-qd2590-2.png',
-      '/images/products/datalogic-quickscan-qd2590-3.png',
-      '/images/products/datalogic-quickscan-qd2590-4.png',
-      '/images/products/datalogic-quickscan-qd2590-5.png',
-      '/images/products/datalogic-quickscan-qd2590-6.png',
-      '/images/products/datalogic-quickscan-qd2590-7.png',
-      '/images/products/datalogic-quickscan-qd2590-8.png',
-      '/images/products/datalogic-quickscan-qd2590-9.png',
-      '/images/products/datalogic-quickscan-qd2590-10.png',
-      '/images/products/datalogic-quickscan-qd2590-11.png',
-      '/images/products/datalogic-quickscan-qd2590-12.png',
-      '/images/products/datalogic-quickscan-qd2590-13.png',
-      '/images/products/datalogic-quickscan-qd2590-14.png',
-      '/images/products/datalogic-quickscan-qd2590-15.png',
-      '/images/products/datalogic-quickscan-qd2590-16.png',
-      '/images/products/datalogic-quickscan-qd2590.png',
-    ],
-    imageDescriptions: [
-      'Datalogic QuickScan QD2590, ujęcie od lewej — czarna obudowa z logo QuickScan i kablem',
-      'QuickScan QD2590, ujęcie od prawej — profil rękojeści i niebieski spust',
-      'QuickScan QD2590 z włączonym czerwonym oświetleniem odczytu, ujęcie od prawej',
-      'QuickScan QD2590 położony okienkiem do dołu, ujęcie od prawej',
-      'QuickScan QD2590 w podstawce do pracy bez trzymania, ujęcie od prawej',
-      'QuickScan QD2590 w uchwycie biurkowym, ujęcie od prawej',
-      'QuickScan QD2590 w uchwycie biurkowym, ujęcie od lewej',
-      'QuickScan QD2590 w podstawce z elastycznym ramieniem, ujęcie od lewej',
-      'QuickScan QD2590 w składanej podstawce, ujęcie od prawej',
-      'QuickScan QD2590 w składanej podstawce, ujęcie od lewej',
-      'QuickScan QD2590 w składanej podstawce rozłożonej do pionu, ujęcie od lewej',
-      'QuickScan QD2590 w złożonej podstawce, leżący płasko na blacie',
-      'QuickScan QD2590 od góry — logo Datalogic i napis QuickScan na obudowie',
-      'QuickScan QD2590 od frontu — okienko odczytu z modułem optycznym i niebieski spust',
-      'QuickScan QD2590 od spodu — wyjście kabla z odciążeniem',
-      'QuickScan QD2590 od frontu z włączonym oświetleniem odczytu',
-    ],
-    tags: ['retail', 'healthcare', 'magazyn'],
-    availability: 'available',
-    isNew: true,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D przewodowy' },
-      { name: 'Matryca', value: '1 Mpix (1280 × 800)' },
-      { name: 'Skanowane kody 1D', value: 'EAN/UPC, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar' },
-      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, DataMatrix, Micro QR, Aztec, MaxiCode, China Han Xin, DotCode' },
-      { name: 'Kody warstwowe i złożone', value: 'PDF417, MicroPDF417, GS1 Composites, UPC/EAN Composites' },
-      { name: 'Znaki wodne', value: 'Digimarc' },
-      { name: 'Kody pocztowe', value: 'Australian Post, British Post, China Post, IMB, Japanese Post, KIX Post, Planet Code, Postnet, Royal Mail 4SCC' },
-      { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
-      { name: 'Zasięg EAN/UPC 13 mil', value: '0,5 – 51,0 cm' },
-      { name: 'Zasięg Code 39 10 mil', value: '0,5 – 38,0 cm' },
-      { name: 'Zasięg QR Code 20 mil', value: '0 – 37,0 cm' },
-      { name: 'Rozdzielczość maksymalna', value: 'Code 39 0,077 mm (3 mil), Data Matrix 0,127 mm (5 mil), QR 0,17 mm (6,7 mil)' },
-      { name: 'Minimalny kontrast druku', value: '15%' },
-      { name: 'Interfejsy', value: 'USB-C, USB, RS-232, emulacja klawiatury (multi-interface)' },
-      { name: 'Zasilanie', value: '5 VDC, pobór poniżej 400 mA przy pracy' },
-      { name: 'Tolerancja ruchu', value: '30 IPS' },
-      { name: 'Kąt odczytu', value: 'Pitch ±65°, roll 360°, skew ±65°' },
-      { name: 'Celownik', value: 'Niebieski LED 468 nm' },
-      { name: 'Oświetlenie', value: 'Czerwony LED 624 nm' },
-      { name: 'Potwierdzenie odczytu', value: 'Green Spot, brzęczyk z regulacją tonu i głośności' },
-      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
-      { name: 'Odporność spustu', value: '10 mln naciśnięć' },
-      { name: 'Klasa ochrony IP', value: 'IP52' },
-      { name: 'Odporność ESD', value: '16 kV (wyładowanie powietrzne)' },
-      { name: 'Temperatura pracy', value: '0°C do +50°C' },
-      { name: 'Wilgotność', value: '0–95% bez kondensacji' },
-      { name: 'Światło otoczenia', value: '0–110 000 lux' },
-      { name: 'Konfiguracja', value: 'Datalogic Aladdin 3.0 (bezpłatny)' },
-      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
-      { name: 'Wymiary', value: '148 × 68 × 126 mm' },
-      { name: 'Waga', value: '145 g' },
-      { name: 'Kolory', value: 'Czarny, biały' },
-      { name: 'Part Number', value: 'QD2590-BKK1' },
-    ],
-    variants: [
-      {
-        partNumber: 'QD2590-BK',
-        name: 'QD2590 czarny — sam skaner, bez kabla',
-        priceFrom: 319,
-        availability: 'available',
-        attributes: { 'Kabel': 'Brak', 'Podstawka': 'Brak', 'Kolor': 'Czarny' },
-      },
-      {
-        partNumber: 'QD2590-BKK1',
-        name: 'QD2590 czarny — zestaw z kablem USB',
-        priceFrom: 345,
-        availability: 'available',
-        attributes: { 'Kabel': 'USB', 'Podstawka': 'Brak', 'Kolor': 'Czarny' },
-      },
-      {
-        partNumber: 'QD2590-BKK1B',
-        name: 'QD2590 czarny — zestaw z kablem USB i podstawką',
-        priceFrom: 375,
-        availability: 'available',
-        attributes: { 'Kabel': 'USB', 'Podstawka': 'STD-AUTO-QD25-BK', 'Kolor': 'Czarny' },
-      },
-    ],
-    applications: ['Stanowisko kasowe', 'Apteka', 'Przyjęcie towaru', 'Inwentaryzacja'],
-    compatibleAccessories: [],
-    relatedProducts: ['datalogic-quickscan-qw2520', 'datalogic-quickscan-qbt2500'],
-    downloads: [
-      { name: 'Karta katalogowa serii QuickScan 2500 (EN)', type: 'datasheet', url: '/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf', size: '0,5 MB' },
-    ],
-    createdAt: '2026-09-22',
-  },
-  {
-    id: 'datalogic-quickscan-qw2520',
-    slug: 'datalogic-quickscan-qw2520',
-    name: 'Datalogic QuickScan QW2520',
-    sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html',
-    seoTitle: 'Datalogic QuickScan QW2520 — skaner 2D USB, 5 lat gwarancji | od 230 zł',
-    seoDescription: 'Datalogic QuickScan QW2520 — przewodowy skaner 2D z matrycą VGA i złączem USB-C. Czyta kody z ekranów telefonów, IP52, pięć lat gwarancji. Cena od 230 zł netto.',
-    shortDescription: 'Datalogic QuickScan QW2520 — przewodowy skaner 2D z matrycą VGA, najtańszy w serii',
-    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
-
-**QW2520 to najtańsze wejście w serię.** Różnica wobec QD2590 to jedna rzecz: matryca VGA zamiast megapikselowej, a w ślad za nią krótszy zasięg, wyższy próg rozdzielczości, brak znaków wodnych Digimarc i brak portu RS-232. Oszczędność wynosi około 90 zł netto.
-
-Dla kogo? QuickScan QW2520 to najtańszy skaner 2D w serii QuickScan 2500, przeznaczony na stanowisko kasowe w sklepie, do punktu usługowego i do biura. Sprawdza się tam, gdzie kody są drukowane porządnie i w standardowej wielkości.
-
-W liczbach ta różnica wygląda tak: najdrobniejszy odczytywany Code 39 ma 0,127 mm zamiast 0,077 mm. Przy etykietach sklepowych i kodach z ekranu telefonu nie widać jej wcale; przy drobnym druku laboratoryjnym albo kodzie Data Matrix na małym elemencie już tak.
-
-Celowanie prowadzi niebieska kropka, a potwierdzenie odczytu daje zielona plamka rzucana na kod. Odczyt rusza sam w chwili podniesienia skanera, bez naciskania spustu.
-
-Obudowa znosi wielokrotne upadki z 1,5 metra na beton, spust wytrzymuje dziesięć milionów naciśnięć, a gwarancja producenta obejmuje pięć lat. Konfigurację prowadzi bezpłatny program Datalogic Aladdin.
-
-Jeśli stanowisko wymaga RS-232 albo emulacji klawiatury przez port szeregowy, właściwym wyborem jest QD2590.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-przewodowe'],
-    manufacturerId: 'datalogic',
-    priceFrom: 230,
-    images: [
-      '/images/products/datalogic-quickscan-qbt2500-4.png',
-      '/images/products/datalogic-quickscan-qbt2500-5.png',
-      '/images/products/datalogic-quickscan-qw2520.png',
-      '/images/products/datalogic-quickscan-qd2590-2.png',
-      '/images/products/datalogic-quickscan-qd2590-3.png',
-      '/images/products/datalogic-quickscan-qd2590-4.png',
-      '/images/products/datalogic-quickscan-qd2590-5.png',
-      '/images/products/datalogic-quickscan-qd2590-6.png',
-      '/images/products/datalogic-quickscan-qd2590-7.png',
-      '/images/products/datalogic-quickscan-qd2590-8.png',
-      '/images/products/datalogic-quickscan-qd2590-9.png',
-      '/images/products/datalogic-quickscan-qd2590-10.png',
-      '/images/products/datalogic-quickscan-qd2590-11.png',
-      '/images/products/datalogic-quickscan-qd2590-12.png',
-      '/images/products/datalogic-quickscan-qd2590-13.png',
-      '/images/products/datalogic-quickscan-qd2590-14.png',
-      '/images/products/datalogic-quickscan-qd2590-16.png',
-    ],
-    imageDescriptions: [
-      'Datalogic QuickScan QW2520 z włączonym czerwonym oświetleniem odczytu, zwrócony w prawo',
-      'QuickScan QW2520 z włączonym oświetleniem odczytu, zwrócony w lewo',
-      'QuickScan QW2520 — ujęcie pod kątem, czarna obudowa z niebieskim spustem i kablem',
-      'QuickScan QW2520, ujęcie od lewej — czarna obudowa z logo QuickScan i kablem',
-      'QuickScan QW2520, ujęcie od prawej — profil rękojeści i niebieski spust',
-      'QuickScan QW2520 z włączonym czerwonym oświetleniem odczytu, ujęcie od prawej',
-      'QuickScan QW2520 położony okienkiem do dołu, ujęcie od prawej',
-      'QuickScan QW2520 w podstawce do pracy bez trzymania, ujęcie od prawej',
-      'QuickScan QW2520 w uchwycie biurkowym, ujęcie od prawej',
-      'QuickScan QW2520 w uchwycie biurkowym, ujęcie od lewej',
-      'QuickScan QW2520 w podstawce z elastycznym ramieniem, ujęcie od lewej',
-      'QuickScan QW2520 w składanej podstawce, ujęcie od prawej',
-      'QuickScan QW2520 w składanej podstawce, ujęcie od lewej',
-      'QuickScan QW2520 w składanej podstawce rozłożonej do pionu, ujęcie od lewej',
-      'QuickScan QW2520 w złożonej podstawce, leżący płasko na blacie',
-      'QuickScan QW2520 od góry — logo Datalogic i napis QuickScan na obudowie',
-      'QuickScan QW2520 od spodu — wyjście kabla z odciążeniem',
-    ],
-    tags: ['retail', 'healthcare'],
-    availability: 'available',
-    isNew: true,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D przewodowy' },
-      { name: 'Matryca', value: 'VGA (640 × 480)' },
-      { name: 'Skanowane kody 1D', value: 'EAN/UPC, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar' },
-      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, DataMatrix, Aztec, MaxiCode, China Han Xin, DotCode' },
-      { name: 'Kody warstwowe i złożone', value: 'PDF417, MicroPDF417, GS1 Composites, UPC/EAN Composites' },
-      { name: 'Znaki wodne', value: 'Nie obsługuje' },
-      { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
-      { name: 'Zasięg EAN/UPC 13 mil', value: '1,0 – 40,0 cm' },
-      { name: 'Zasięg Code 39 10 mil', value: '0,5 – 37,0 cm' },
-      { name: 'Zasięg QR Code 20 mil', value: '1,0 – 33,0 cm' },
-      { name: 'Rozdzielczość maksymalna', value: 'Code 39 0,127 mm (5 mil), Data Matrix 0,152 mm (6 mil), QR 0,17 mm (6,7 mil)' },
-      { name: 'Minimalny kontrast druku', value: '15% (przy określonej konfiguracji)' },
-      { name: 'Interfejsy', value: 'USB-C, USB' },
-      { name: 'Zasilanie', value: '5 VDC, pobór poniżej 400 mA przy pracy' },
-      { name: 'Tolerancja ruchu', value: '30 IPS' },
-      { name: 'Kąt odczytu', value: 'Pitch ±65°, roll 360°, skew ±65°' },
-      { name: 'Celownik', value: 'Niebieski LED 468 nm' },
-      { name: 'Oświetlenie', value: 'Czerwony LED 624 nm' },
-      { name: 'Potwierdzenie odczytu', value: 'Green Spot, brzęczyk z regulacją tonu i głośności' },
-      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
-      { name: 'Odporność spustu', value: '10 mln naciśnięć' },
-      { name: 'Klasa ochrony IP', value: 'IP52' },
-      { name: 'Odporność ESD', value: '16 kV (wyładowanie powietrzne)' },
-      { name: 'Temperatura pracy', value: '0°C do +50°C' },
-      { name: 'Wilgotność', value: '0–95% bez kondensacji' },
-      { name: 'Światło otoczenia', value: '0–110 000 lux' },
-      { name: 'Konfiguracja', value: 'Datalogic Aladdin 3.0 (bezpłatny)' },
-      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
-      { name: 'Wymiary', value: '148 × 68 × 126 mm' },
-      { name: 'Waga', value: '145 g' },
-      { name: 'Kolory', value: 'Czarny' },
-      { name: 'Part Number', value: 'QW2520-BKK1' },
-    ],
-    variants: [
-      {
-        partNumber: 'QW2520-BK',
-        name: 'QW2520 czarny — sam skaner, bez kabla',
-        priceFrom: 230,
-        availability: 'available',
-        attributes: { 'Kabel': 'Brak', 'Podstawka': 'Brak', 'Kolor': 'Czarny' },
-      },
-      {
-        partNumber: 'QW2520-BKK1',
-        name: 'QW2520 czarny — zestaw z kablem USB',
-        priceFrom: 250,
-        availability: 'available',
-        attributes: { 'Kabel': 'USB', 'Podstawka': 'Brak', 'Kolor': 'Czarny' },
-      },
-    ],
-    applications: ['Stanowisko kasowe', 'Punkt usługowy', 'Biuro', 'Biblioteka'],
-    compatibleAccessories: [],
-    relatedProducts: ['datalogic-quickscan-qd2590', 'datalogic-quickscan-qbt2500'],
-    downloads: [
-      { name: 'Karta katalogowa serii QuickScan 2500 (EN)', type: 'datasheet', url: '/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf', size: '0,5 MB' },
-    ],
-    createdAt: '2026-09-22',
-  },
-  {
-    id: 'datalogic-quickscan-qbt2500',
-    slug: 'datalogic-quickscan-qbt2500',
-    name: 'Datalogic QuickScan QBT2500',
-    sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html',
-    seoTitle: 'Datalogic QuickScan QBT2500 — skaner Bluetooth 2D z bazą, zasięg 50 m | od 733 zł',
-    seoDescription: 'Datalogic QuickScan QBT2500 — bezprzewodowy skaner 2D Bluetooth 4.0 z bazą ładującą BC2090. Zasięg 50 m, 115 000 odczytów na ładowaniu, pięć lat gwarancji. Cena od 733 zł netto.',
-    shortDescription: 'Datalogic QuickScan QBT2500 — skaner 2D Bluetooth z bazą ładującą, zasięg 50 m',
-    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
-
-**QBT2500 to QD2590 bez kabla, na Bluetoothie.** Optyka, obudowa i odporność są identyczne; dochodzi akumulator, baza ładująca i łączność z dowolnym urządzeniem obsługującym profil SPP.
-
-Dla kogo? QuickScan QBT2500 to bezprzewodowa wersja serii QuickScan 2500, przeznaczona tam, gdzie kod trzeba donieść do towaru zamiast towar do kasy: do przyjęcia dostaw, kompletacji, inwentaryzacji i obsługi klienta na sali sprzedaży.
-
-Łączność Bluetooth 4.0 klasy 1 daje zasięg do 50 metrów w otwartej przestrzeni. Skaner pracuje z bazą BC2090, która jednocześnie ładuje akumulator i pośredniczy w komunikacji z komputerem, oraz łączy się bezpośrednio z telefonem i tabletem w profilu SPP.
-
-Akumulator litowo-jonowy 3250 mAh wystarcza na 115 000 odczytów, czyli w praktyce na kilka zmian. Ładowanie kablem USB-C trwa trzy godziny, przez bazę cztery.
-
-Odczytuje kody jedno- i dwuwymiarowe, pocztowe, złożone, DotCode i znaki wodne Digimarc. Celowanie prowadzą dwa niebieskie trójkąty, a zielona plamka potwierdza udany odczyt.
-
-Obudowa znosi wielokrotne upadki z 1,5 metra na beton, a gwarancja producenta obejmuje pięć lat. Jeśli stanowisko leży w hali z gęstym ruchem Wi-Fi, warto rozważyć bliźniaczy QM2500 z radiem STAR w paśmie 433 MHz, które nie konkuruje o to samo pasmo.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-bezprzewodowe'],
-    manufacturerId: 'datalogic',
-    priceFrom: 733,
-    images: [
-      '/images/products/datalogic-quickscan-qbt2500-4.png',
-      '/images/products/datalogic-quickscan-qbt2500-5.png',
-      '/images/products/datalogic-quickscan-qbt2500.png',
-      '/images/products/datalogic-quickscan-qbt2500-2.png',
-      '/images/products/datalogic-quickscan-qbt2500-3.png',
-    ],
-    imageDescriptions: [
-      'Datalogic QuickScan QBT2500, ujęcie od prawej — czerwone oświetlenie odczytu włączone',
-      'QuickScan QBT2500, ujęcie od lewej z włączonym oświetleniem odczytu',
-      'QuickScan QBT2500 w bazie ładującej BC2090, ujęcie od prawej — widoczne diody zasilania i ładowania',
-      'QuickScan QBT2500 w bazie ładującej, ujęcie od lewej — skaner odchylony do przodu, gotowy do chwytu',
-      'QuickScan QBT2500 w bazie od frontu — dwa niebieskie punkty celownika i podświetlony spust',
-    ],
-    tags: ['retail', 'magazyn', 'logistyka'],
-    availability: 'available',
-    isNew: true,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy' },
-      { name: 'Matryca', value: '1 Mpix (1280 × 800)' },
-      { name: 'Łączność', value: 'Bluetooth 4.0, profil SPP, Certified Class 1' },
-      { name: 'Pasmo', value: '2,4 GHz' },
-      { name: 'Zasięg', value: 'Do 50 m w otwartej przestrzeni' },
-      { name: 'Akumulator', value: 'Li-Ion 3250 mAh' },
-      { name: 'Odczytów na ładowaniu', value: '115 000' },
-      { name: 'Czas ładowania', value: '3 h kablem USB-C, 4 h przez bazę' },
-      { name: 'Baza', value: 'BC2090 — ładowanie i komunikacja' },
-      { name: 'Interfejsy bazy', value: 'USB-C, USB, RS-232, emulacja klawiatury (multi-interface)' },
-      { name: 'Skanowane kody 1D', value: 'EAN/UPC, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar' },
-      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, DataMatrix, Aztec, MaxiCode, China Han Xin, DotCode' },
-      { name: 'Kody warstwowe i złożone', value: 'PDF417, MicroPDF417, GS1 Composites, UPC/EAN Composites' },
-      { name: 'Znaki wodne', value: 'Digimarc' },
-      { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
-      { name: 'Zasięg EAN/UPC 13 mil', value: '0,5 – 51,0 cm' },
-      { name: 'Rozdzielczość maksymalna', value: 'Code 39 0,077 mm (3 mil), Data Matrix 0,127 mm (5 mil), QR 0,17 mm (6,7 mil)' },
-      { name: 'Tolerancja ruchu', value: '30 IPS' },
-      { name: 'Kąt odczytu', value: 'Pitch ±65°, roll 360°, skew ±65°' },
-      { name: 'Celownik', value: 'Niebieski LED 468 nm' },
-      { name: 'Oświetlenie', value: 'Czerwony LED 624 nm' },
-      { name: 'Potwierdzenie odczytu', value: 'Green Spot, brzęczyk z regulacją tonu i głośności' },
-      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
-      { name: 'Odporność spustu', value: '10 mln naciśnięć' },
-      { name: 'Klasa ochrony IP', value: 'IP52' },
-      { name: 'Odporność ESD', value: '16 kV (wyładowanie powietrzne)' },
-      { name: 'Temperatura pracy', value: '0°C do +50°C' },
-      { name: 'Wilgotność', value: '0–95% bez kondensacji' },
-      { name: 'Światło otoczenia', value: '0–110 000 lux' },
-      { name: 'Konfiguracja', value: 'Datalogic Aladdin 3.0 (bezpłatny)' },
-      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
-      { name: 'Wymiary', value: '159 × 68 × 107 mm' },
-      { name: 'Waga', value: '206,5 g z akumulatorem' },
-      { name: 'Kolory', value: 'Czarny' },
-      { name: 'Part Number', value: 'QBT2500-BK-BTK1' },
-    ],
-    variants: [
-      {
-        partNumber: 'QBT2500-BK-BTK1',
-        name: 'QBT2500 czarny — zestaw z bazą BC2090 i kablem USB',
-        priceFrom: 733,
-        availability: 'available',
-        attributes: { 'Baza': 'BC2090', 'Kabel': 'USB', 'Kolor': 'Czarny' },
-      },
-    ],
-    applications: ['Przyjęcie dostaw', 'Kompletacja zamówień', 'Inwentaryzacja', 'Obsługa klienta na sali'],
-    compatibleAccessories: [],
-    relatedProducts: ['datalogic-quickscan-qm2500', 'datalogic-quickscan-qd2590', 'datalogic-quickscan-qw2520'],
-    downloads: [
-      { name: 'Karta katalogowa serii QuickScan 2500 (EN)', type: 'datasheet', url: '/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf', size: '0,5 MB' },
-    ],
-    createdAt: '2026-09-22',
-  },
-  {
-    id: 'datalogic-quickscan-qm2500',
-    slug: 'datalogic-quickscan-qm2500',
-    name: 'Datalogic QuickScan QM2500',
-    sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html',
-    seoTitle: 'Datalogic QuickScan QM2500 — skaner radiowy 433 MHz z bazą, poza pasmem Wi-Fi | od 715 zł',
-    seoDescription: 'Datalogic QuickScan QM2500 — bezprzewodowy skaner 2D z radiem STAR 433 MHz, które nie konkuruje z Wi-Fi. Baza BC2090, 115 000 odczytów na ładowaniu, pięć lat gwarancji. Od 715 zł netto.',
-    shortDescription: 'Datalogic QuickScan QM2500 — skaner 2D z radiem STAR 433 MHz, dla hal z gęstym Wi-Fi',
-    description: `Seria QuickScan 2500 to jeden skaner w czterech wariantach, różniących się tylko dwiema rzeczami: matrycą i sposobem połączenia z komputerem. Punktem odniesienia jest przewodowy QD2590 z matrycą megapikselową. QW2520 to ten sam skaner z tańszą matrycą VGA i samym USB. QBT2500 i QM2500 to QD2590 bez kabla — pierwszy łączy się Bluetoothem wprost z telefonem lub tabletem, drugi własnym radiem 433 MHz przez bazę, poza pasmem Wi-Fi.
-
-**QM2500 to bliźniak QBT2500 z innym radiem.** Obudowa, optyka i baza są te same — różnicą jest pasmo: 433 MHz zamiast 2,4 GHz.
-
-Dla kogo? QuickScan QM2500 to bezprzewodowy skaner 2D dla magazynu i hali produkcyjnej, gdzie pasmo 2,4 GHz jest już zajęte przez sieć bezprzewodową, terminale i inne urządzenia.
-
-Radio Datalogic STAR pracuje w paśmie 433 MHz, poza pasmem Wi-Fi i Bluetootha. W gęstym środowisku radiowym przekłada się to na odczyty bez opóźnień i bez gubienia połączenia, bo urządzenie nie konkuruje o to samo pasmo co reszta hali.
-
-Cena obu modeli jest zbliżona, więc wybór sprowadza się do jednego pytania: czy skaner ma rozmawiać wprost z telefonem lub tabletem, czy ma pewnie pracować w hali. Bluetooth w QBT2500 łączy się z dowolnym urządzeniem obsługującym profil SPP. Radio STAR w QM2500 wymaga bazy BC2090, ale daje łączność odporną na zakłócenia.
-
-Zasięg w otwartej przestrzeni wynosi 30 metrów. Akumulator litowo-jonowy 3250 mAh wystarcza na 115 000 odczytów, a ładowanie przez bazę trwa cztery godziny.
-
-Odczytuje kody jedno- i dwuwymiarowe, pocztowe, złożone, DotCode i znaki wodne Digimarc. Obudowa znosi wielokrotne upadki z 1,5 metra, a gwarancja producenta obejmuje pięć lat.`,
-    categoryId: 'skanery-kodow-kreskowych',
-    subcategoryIds: ['skanery-bezprzewodowe'],
-    manufacturerId: 'datalogic',
-    priceFrom: 715,
-    images: [
-      '/images/products/datalogic-quickscan-qbt2500.png',
-      '/images/products/datalogic-quickscan-qbt2500-2.png',
-      '/images/products/datalogic-quickscan-qbt2500-3.png',
-      '/images/products/datalogic-quickscan-qbt2500-4.png',
-      '/images/products/datalogic-quickscan-qbt2500-8.png',
-      '/images/products/datalogic-quickscan-qbt2500-9.png',
-    ],
-    imageDescriptions: [
-      'Datalogic QuickScan QM2500 w bazie ładującej BC2090, ujęcie od prawej — obudowa wspólna z wersją Bluetooth',
-      'QuickScan QM2500 w bazie ładującej, ujęcie od lewej',
-      'QuickScan QM2500 w bazie od frontu — dwa niebieskie punkty celownika',
-      'QuickScan QM2500 trzymany w dłoni z włączonym oświetleniem odczytu',
-      'QuickScan QM2500 od spodu — styki ładowania akumulatora',
-      'Baza ładująca BC2090 bez skanera — ta sama co w wersji Bluetooth',
-    ],
-    tags: ['magazyn', 'logistyka', 'produkcja'],
-    availability: 'available',
-    isNew: true,
-    isBestseller: false,
-    specifications: [
-      { name: 'Typ skanera', value: 'Imager 2D bezprzewodowy' },
-      { name: 'Matryca', value: '1 Mpix (1280 × 800)' },
-      { name: 'Łączność', value: 'Datalogic STAR Cordless System (radio własne)' },
-      { name: 'Pasmo', value: '433,92 MHz — poza pasmem Wi-Fi i Bluetooth' },
-      { name: 'Zasięg', value: 'Do 30 m w otwartej przestrzeni' },
-      { name: 'Akumulator', value: 'Li-Ion 3250 mAh' },
-      { name: 'Odczytów na ładowaniu', value: '115 000' },
-      { name: 'Czas ładowania', value: '4 h przez bazę' },
-      { name: 'Moc wypromieniowana', value: 'Poniżej 6,3 mW' },
-      { name: 'Baza', value: 'BC2090 — ładowanie i komunikacja' },
-      { name: 'Interfejsy bazy', value: 'USB-C, USB, RS-232, emulacja klawiatury (multi-interface)' },
-      { name: 'Skanowane kody 1D', value: 'EAN/UPC, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar' },
-      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, DataMatrix, Aztec, MaxiCode, China Han Xin, DotCode' },
-      { name: 'Kody warstwowe i złożone', value: 'PDF417, MicroPDF417, GS1 Composites, UPC/EAN Composites' },
-      { name: 'Znaki wodne', value: 'Digimarc' },
-      { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
-      { name: 'Zasięg EAN/UPC 13 mil', value: '0,5 – 51,0 cm' },
-      { name: 'Rozdzielczość maksymalna', value: 'Code 39 0,077 mm (3 mil), Data Matrix 0,127 mm (5 mil), QR 0,17 mm (6,7 mil)' },
-      { name: 'Tolerancja ruchu', value: '30 IPS' },
-      { name: 'Kąt odczytu', value: 'Pitch ±65°, roll 360°, skew ±65°' },
-      { name: 'Celownik', value: 'Niebieski LED 468 nm' },
-      { name: 'Oświetlenie', value: 'Czerwony LED 624 nm' },
-      { name: 'Potwierdzenie odczytu', value: 'Green Spot, brzęczyk z regulacją tonu i głośności' },
-      { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
-      { name: 'Odporność spustu', value: '10 mln naciśnięć' },
-      { name: 'Klasa ochrony IP', value: 'IP52' },
-      { name: 'Odporność ESD', value: '16 kV (wyładowanie powietrzne)' },
-      { name: 'Temperatura pracy', value: '0°C do +50°C' },
-      { name: 'Wilgotność', value: '0–95% bez kondensacji' },
-      { name: 'Światło otoczenia', value: '0–110 000 lux' },
-      { name: 'Konfiguracja', value: 'Datalogic Aladdin 3.0 (bezpłatny)' },
-      { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
-      { name: 'Wymiary', value: '159 × 68 × 107 mm' },
-      { name: 'Waga', value: '206,5 g z akumulatorem' },
-      { name: 'Kolory', value: 'Czarny' },
-      { name: 'Part Number', value: 'QM2500-BK-433K1' },
-    ],
-    variants: [
-      {
-        partNumber: 'QM2500-BK-433',
-        name: 'QM2500 czarny — zestaw z bazą BC2090',
-        priceFrom: 715,
-        availability: 'available',
-        attributes: { 'Baza': 'BC2090', 'Kabel': 'Brak', 'Kolor': 'Czarny' },
-      },
-      {
-        partNumber: 'QM2500-BK-433K1',
-        name: 'QM2500 czarny — zestaw z bazą BC2090 i kablem USB',
-        priceFrom: 733,
-        availability: 'available',
-        attributes: { 'Baza': 'BC2090', 'Kabel': 'USB', 'Kolor': 'Czarny' },
-      },
-    ],
-    applications: ['Magazyn z gęstym Wi-Fi', 'Hala produkcyjna', 'Przyjęcie dostaw', 'Inwentaryzacja'],
-    compatibleAccessories: [],
-    relatedProducts: ['datalogic-quickscan-qbt2500', 'datalogic-quickscan-qd2590'],
-    downloads: [
-      { name: 'Karta katalogowa serii QuickScan 2500 (EN)', type: 'datasheet', url: '/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf', size: '0,5 MB' },
-    ],
-    createdAt: '2026-09-22',
-  },
+  ...datalogicQuickScanProducts,
   {
     id: 'zebra-ds2208',
     slug: 'zebra-ds2208',
@@ -95829,7 +95371,16 @@ for (const subcategory of subcategories) {
   }
 }
 
+for (const subcategory of subcategories) {
+  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
+  ...datalogicGryphonProducts, ...datalogicScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,
@@ -96616,22 +96167,41 @@ export const brandCategories: BrandCategory[] = [
     ],
   },
   {
-    id: 'skanery-datalogic',
-    slug: 'skanery-datalogic',
-    manufacturerId: 'datalogic',
-    categoryId: 'skanery-kodow-kreskowych',
-    name: 'Skanery kodów kreskowych Datalogic',
-    seoTitle: 'Skanery kodów kreskowych Datalogic QuickScan — od 230 zł netto, 5 lat gwarancji',
-    seoDescription: 'Skanery Datalogic QuickScan 2500: przewodowe QW2520 i QD2590, bezprzewodowe QBT2500 (Bluetooth) i QM2500 (radio 433 MHz). Skanery 2D, pięć lat gwarancji producenta. Ceny od 230 zł netto.',
-    longDescription: 'Skanery Datalogic w naszej ofercie to seria QuickScan 2500: jeden skaner 2D w czterech wersjach. Przewodowy [QW2520](/produkt/datalogic-quickscan-qw2520) (od 230 zł netto) ma matrycę VGA i wystarcza do kasy, punktu usługowego i biura. Przewodowy [QD2590](/produkt/datalogic-quickscan-qd2590) (od 319 zł) ma matrycę 1 Mpix, czyta drobniejsze kody i znaki wodne Digimarc, a do tego ma port RS-232. [QBT2500](/produkt/datalogic-quickscan-qbt2500) (od 733 zł) to QD2590 bez kabla, łączony przez Bluetooth z bazą, telefonem albo tabletem, z zasięgiem do 50 m. [QM2500](/produkt/datalogic-quickscan-qm2500) (od 715 zł) pracuje na radiu 433 MHz, poza pasmem Wi-Fi, więc sprawdza się w halach z gęstą siecią bezprzewodową. Wszystkie cztery mają tę samą obudowę: IP52, upadki z 1,5 m na beton, spust na 10 mln naciśnięć i pięć lat gwarancji producenta. Konfiguracja przez bezpłatny program Datalogic Aladdin.',
-    faq: [
-      { question: 'Który skaner Datalogic wybrać do kasy?', answer: 'Do kasy w sklepie, punktu usługowego i biura wystarczy [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) od 230 zł netto. Czyta kody 1D i 2D, także z ekranu telefonu. Jeśli kody są drobne albo kasa wymaga portu RS-232, lepszy będzie [QD2590](/produkt/datalogic-quickscan-qd2590) od 319 zł.' },
-      { question: 'Czym różni się QD2590 od QW2520?', answer: 'Tylko matrycą. QD2590 ma matrycę 1 Mpix, więc czyta Code 39 o szerokości modułu 0,077 mm (QW2520: 0,127 mm), ma dłuższy zasięg i obsługuje znaki wodne Digimarc. QD2590 ma też port RS-232, którego QW2520 nie ma. Obudowa, odporność i gwarancja są takie same.' },
-      { question: 'QBT2500 czy QM2500 — który bezprzewodowy?', answer: '[QBT2500](/produkt/datalogic-quickscan-qbt2500) łączy się przez Bluetooth z bazą albo bezpośrednio z telefonem i tabletem, zasięg do 50 m. [QM2500](/produkt/datalogic-quickscan-qm2500) pracuje na radiu 433 MHz i zawsze przez bazę, zasięg do 30 m. Radio 433 MHz nie konkuruje z Wi-Fi, dlatego QM2500 lepiej sprawdza się w magazynie z wieloma punktami dostępowymi. Ceny obu są zbliżone.' },
-      { question: 'Jaką gwarancję mają skanery Datalogic QuickScan?', answer: 'Pięć lat gwarancji producenta na wszystkie cztery modele serii QuickScan 2500, przewodowe i bezprzewodowe. W tej samej klasie cenowej wiele skanerów ma dwa lata.' },
-      { question: 'Jak skonfigurować skaner Datalogic?', answer: 'Bezpłatnym programem Datalogic Aladdin: ustawienia wybiera się w oknie programu i wysyła do skanera kablem albo drukuje jako kody konfiguracyjne do zeskanowania. Emulacja klawiatury przez USB działa bez sterownika, więc skaner zwykle pracuje od razu po podłączeniu.' },
-    ],
-  },
+  "id": "skanery-datalogic",
+  "slug": "skanery-datalogic",
+  "manufacturerId": "datalogic",
+  "categoryId": "skanery-kodow-kreskowych",
+  "name": "Skanery kodów kreskowych Datalogic",
+  "seoTitle": "Skanery Datalogic — QuickScan i Gryphon 4600 | TAKMA",
+  "seoDescription": "Skanery kodów Datalogic: QuickScan 2500 i Gryphon 4600. Porównaj USB, Bluetooth i STAR 433 MHz. Ceny, stany, zestawy, akcesoria i dokumenty.",
+  "longDescription": "Skanery Datalogic odczytują kody 1D i 2D z etykiet oraz ekranów. QuickScan 2500 obejmuje przewodowe QW2520 i QD2590 oraz bezprzewodowe QBT2500 i QM2500. Gryphon 4600 rozszerza wybór o przewodowy GD4690, Bluetooth GBT4600 oraz STAR GM4600 433 MHz.\n\nDo stałego stanowiska USB wybierz [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Jeśli potrzebujesz RS-232 i matrycy 1 MP, porównaj [QD2590](/produkt/datalogic-quickscan-qd2590). [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690) ma optykę HP z dwiema matrycami i szerszym zakresem odczytu.\n\nDo pracy bez przewodu wybierz sposób transmisji. [QBT2500](/produkt/datalogic-quickscan-qbt2500) używa Bluetooth 5.0, a [GBT4600](/produkt/datalogic-gryphon-gbt4600) Bluetooth 5.2 i ładowania indukcyjnego. [QM2500](/produkt/datalogic-quickscan-qm2500) oraz [GM4600](/produkt/datalogic-gryphon-gm4600) korzystają z radia STAR 433 MHz. Bazy STAR i Bluetooth nie są zamienne do transmisji danych.\n\nPrzed zakupem porównaj zawartość zestawu według PN. Sam skaner może nie zawierać przewodu. Zestaw bezprzewodowy może obejmować bazę, ale nie zawierać zewnętrznego zasilacza. Szczegóły, zgodne akcesoria i pliki do pobrania znajdziesz na każdej karcie.",
+  "faq": [
+    {
+      "question": "Który skaner Datalogic wybrać do kasy?",
+      "answer": "Do USB porównaj [QW2520](/produkt/datalogic-quickscan-qw2520) z matrycą VGA oraz [QD2590](/produkt/datalogic-quickscan-qd2590) z matrycą 1 MP i USB/RS-232. [GD4690](/produkt/datalogic-gryphon-gd4690) ma dwie matryce HP. Wybór zależy od kodów, odległości i interfejsu stanowiska."
+    },
+    {
+      "question": "Czy każdy bezprzewodowy Datalogic ma Bluetooth?",
+      "answer": "Nie. QBT2500 i GBT4600 mają Bluetooth. Oferowane QM2500 i GM4600 pracują w systemie STAR 433 MHz i wymagają zgodnej bazy."
+    },
+    {
+      "question": "Czy skanery odczytują QR z telefonu?",
+      "answer": "Tak. QuickScan 2500 i Gryphon 4600 odczytują kody 1D i 2D z ekranów. Wynik zależy od wielkości, jakości, kontrastu i jasności kodu."
+    },
+    {
+      "question": "Czym różni się QuickScan od Gryphon 4600?",
+      "answer": "QuickScan 2500 służy do codziennego odczytu na kasie i przy towarze. Gryphon 4600 HP ma dwie matryce, zielony celownik i szerszy zakres odczytu. Bezprzewodowe Gryphon 4600 mają ładowanie indukcyjne."
+    },
+    {
+      "question": "Czy przewód, baza i zasilacz są w zestawie?",
+      "answer": "Zależy od PN. Na kartach rozdzielamy sam czytnik od zestawów z przewodem lub bazą. Zasilacz zewnętrzny nie jest dołączony do opisanych zestawów USB Gryphon 4600."
+    },
+    {
+      "question": "Czy skanery Datalogic obsługują RFID?",
+      "answer": "Przedstawione QuickScan i Gryphon to skanery optyczne. Do UHF potrzebny jest [uchwyt RFID](/uchwyty-rfid) lub [terminal RFID](/terminale-rfid)."
+    }
+  ]
+},
   {
     id: 'drukarki-etykiet-honeywell',
     slug: 'drukarki-etykiet-honeywell',
