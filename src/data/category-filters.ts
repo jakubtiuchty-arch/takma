@@ -910,7 +910,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'do 1,5 m', pattern: '(^|[^0-9,.])1[,.][0-5][0-9]? ?m', specs: ['Odporność na upadki', 'Upadki'] },
         { value: '1,8 m', pattern: '1[,.]8 ?m', specs: ['Odporność na upadki', 'Upadki'] },
-        { value: '2,4–3 m (przemysłowe)', pattern: '(^|[^0-9,.])(2[,.]4|3([,.]0)?) ?m', specs: ['Odporność na upadki', 'Upadki'] },
+        { value: '2,4–3 m (przemysłowe)', pattern: '(^|[^0-9,.])(2[,.][4-9]|3([,.]0)?) ?m', specs: ['Odporność na upadki', 'Upadki'] },
       ],
     },
     {

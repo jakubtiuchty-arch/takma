@@ -742,5 +742,61 @@
     87,
     994,
     1146
+  ],
+  "/images/products/datalogic-powerscan-pd9630-main-v1.webp": [
+    875,
+    1200,
+    209,
+    151,
+    682,
+    958
+  ],
+  "/images/products/datalogic-powerscan-pd9630-left-v1.webp": [
+    1200,
+    1091,
+    139,
+    224,
+    1060,
+    840
+  ],
+  "/images/products/datalogic-powerscan-pbt9600-main-v1.webp": [
+    1024,
+    1024,
+    167,
+    67,
+    858,
+    960
+  ],
+  "/images/products/datalogic-powerscan-pm9600-main-v1.webp": [
+    2000,
+    2000,
+    291,
+    176,
+    1476,
+    1812
+  ],
+  "/images/products/datalogic-powerscan-base-v1.webp": [
+    1200,
+    886,
+    131,
+    90,
+    1011,
+    736
+  ],
+  "/images/products/datalogic-powerscan-battery-v1.webp": [
+    761,
+    1200,
+    268,
+    163,
+    501,
+    825
+  ],
+  "/images/products/datalogic-powerscan-cab552-v1.webp": [
+    5184,
+    3456,
+    1516,
+    909,
+    3797,
+    1672
   ]
 }

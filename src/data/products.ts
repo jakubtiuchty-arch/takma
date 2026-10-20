@@ -1,3 +1,4 @@
+import { datalogicPowerScanProducts, datalogicPowerScanAccessories } from './datalogic-powerscan-products'
 import { datalogicQuickScanProducts, datalogicGryphonProducts, datalogicScannerAccessories } from './datalogic-scanners-products'
 import { unitechRp300Products, unitechRp300Accessories } from './unitech-rp300-products'
 import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
@@ -95372,7 +95373,7 @@ for (const subcategory of subcategories) {
 }
 
 for (const subcategory of subcategories) {
-  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
+  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95380,7 +95381,7 @@ for (const subcategory of subcategories) {
 }
 
 const rawProductList: Product[] = [
-  ...datalogicGryphonProducts, ...datalogicScannerAccessories,
+  ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,
@@ -96172,9 +96173,9 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "datalogic",
   "categoryId": "skanery-kodow-kreskowych",
   "name": "Skanery kodów kreskowych Datalogic",
-  "seoTitle": "Skanery Datalogic — QuickScan i Gryphon 4600 | TAKMA",
-  "seoDescription": "Skanery kodów Datalogic: QuickScan 2500 i Gryphon 4600. Porównaj USB, Bluetooth i STAR 433 MHz. Ceny, stany, zestawy, akcesoria i dokumenty.",
-  "longDescription": "Skanery Datalogic odczytują kody 1D i 2D z etykiet oraz ekranów. QuickScan 2500 obejmuje przewodowe QW2520 i QD2590 oraz bezprzewodowe QBT2500 i QM2500. Gryphon 4600 rozszerza wybór o przewodowy GD4690, Bluetooth GBT4600 oraz STAR GM4600 433 MHz.\n\nDo stałego stanowiska USB wybierz [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Jeśli potrzebujesz RS-232 i matrycy 1 MP, porównaj [QD2590](/produkt/datalogic-quickscan-qd2590). [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690) ma optykę HP z dwiema matrycami i szerszym zakresem odczytu.\n\nDo pracy bez przewodu wybierz sposób transmisji. [QBT2500](/produkt/datalogic-quickscan-qbt2500) używa Bluetooth 5.0, a [GBT4600](/produkt/datalogic-gryphon-gbt4600) Bluetooth 5.2 i ładowania indukcyjnego. [QM2500](/produkt/datalogic-quickscan-qm2500) oraz [GM4600](/produkt/datalogic-gryphon-gm4600) korzystają z radia STAR 433 MHz. Bazy STAR i Bluetooth nie są zamienne do transmisji danych.\n\nPrzed zakupem porównaj zawartość zestawu według PN. Sam skaner może nie zawierać przewodu. Zestaw bezprzewodowy może obejmować bazę, ale nie zawierać zewnętrznego zasilacza. Szczegóły, zgodne akcesoria i pliki do pobrania znajdziesz na każdej karcie.",
+  "seoTitle": "Skanery Datalogic — QuickScan, Gryphon i PowerScan",
+  "seoDescription": "Skanery Datalogic: QuickScan, Gryphon i przemysłowe PowerScan 9600. Porównaj USB, Bluetooth oraz STAR 433 MHz. Sprawdź ceny, stany, PN i akcesoria.",
+  "longDescription": "Skanery Datalogic odczytują kody 1D i 2D z etykiet oraz ekranów. QuickScan 2500 obejmuje przewodowe QW2520 i QD2590 oraz bezprzewodowe QBT2500 i QM2500. Gryphon 4600 rozszerza wybór o przewodowy GD4690, Bluetooth GBT4600 oraz STAR GM4600 433 MHz.\n\nDo stałego stanowiska USB wybierz [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Jeśli potrzebujesz RS-232 i matrycy 1 MP, porównaj [QD2590](/produkt/datalogic-quickscan-qd2590). [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690) ma optykę HP z dwiema matrycami i szerszym zakresem odczytu.\n\nDo pracy bez przewodu wybierz sposób transmisji. [QBT2500](/produkt/datalogic-quickscan-qbt2500) używa Bluetooth 5.0, a [GBT4600](/produkt/datalogic-gryphon-gbt4600) Bluetooth 5.2 i ładowania indukcyjnego. [QM2500](/produkt/datalogic-quickscan-qm2500) oraz [GM4600](/produkt/datalogic-gryphon-gm4600) korzystają z radia STAR 433 MHz. Bazy STAR i Bluetooth nie są zamienne do transmisji danych.\n\nDo magazynu i produkcji porównaj PowerScan 9600 z ochroną IP65/IP67. [PD9630](/produkt/datalogic-powerscan-pd9630) pracuje przewodowo. [PBT9600](/produkt/datalogic-powerscan-pbt9600) używa Bluetooth 5.0, a [PM9600](/produkt/datalogic-powerscan-pm9600) radia STAR 433 MHz. Każdy model oferuje optykę SR lub HP.\n\nPrzed zakupem porównaj zawartość zestawu według PN. Sam skaner może nie zawierać przewodu. Zestaw bezprzewodowy może obejmować bazę, ale nie zawierać zewnętrznego zasilacza. Szczegóły, zgodne akcesoria i pliki do pobrania znajdziesz na każdej karcie.",
   "faq": [
     {
       "question": "Który skaner Datalogic wybrać do kasy?",
@@ -96182,7 +96183,7 @@ export const brandCategories: BrandCategory[] = [
     },
     {
       "question": "Czy każdy bezprzewodowy Datalogic ma Bluetooth?",
-      "answer": "Nie. QBT2500 i GBT4600 mają Bluetooth. Oferowane QM2500 i GM4600 pracują w systemie STAR 433 MHz i wymagają zgodnej bazy."
+      "answer": "Nie. QBT2500, GBT4600 i PBT9600 mają Bluetooth. Oferowane QM2500, GM4600 oraz PM9600 pracują w systemie STAR 433 MHz i wymagają zgodnej bazy."
     },
     {
       "question": "Czy skanery odczytują QR z telefonu?",
