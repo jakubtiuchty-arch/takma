@@ -1,3 +1,4 @@
+import { tsl3128Products } from './tsl-3128-products'
 import { tsl3138Products, tsl3138Accessories } from './tsl-3138-products'
 import { tsl3166Products, tsl3166Accessories } from './tsl-3166-products'
 import { newlandMt93UhfProducts, newlandMt93UhfAccessories } from './newland-mt93-uhf-products'
@@ -95825,6 +95826,7 @@ for (const subcategory of subcategories) {
 }
 
 const rawProductList: Product[] = [
+  ...tsl3128Products,
   ...tsl3138Products, ...tsl3138Accessories,
   ...tsl3166Products,
   ...tsl3166Accessories,

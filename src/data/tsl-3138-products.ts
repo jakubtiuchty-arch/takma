@@ -50,7 +50,7 @@ export const tsl3138Products: Product[] = [
     "seoTitle": "TSL 3138 — uchwyt RFID ze skanerem 2D, USB-C | TAKMA",
     "seoDescription": "TSL 3138, PN 3138-ES1-EU: UHF 865–868 MHz, skaner 1D/2D i USB-C. Impinj E710, pamięć 32 GB. Sprawdź cenę, stan oraz zgodne akcesoria.",
     "shortDescription": "Uchwyt UHF RFID ze skanerem kodów 1D/2D, Impinj E710 i pamięcią 32 GB. Wersja europejska z USB-C. Zasilacz USB-C PD dobierz osobno.",
-    "description": "TSL 3138 to uchwyt UHF RFID do liczenia, wyszukiwania i identyfikacji oznakowanych towarów. Oferowany PN 3138-ES1-EU ma skaner kodów 1D/2D oraz uchwyt z baterią i portem USB-C. Czytnik przesyła dane do zgodnej aplikacji na telefonie, terminalu lub komputerze.\n\n## Europejski PN 3138-ES1-EU\n\nTa konfiguracja pracuje w paśmie 865–868 MHz, określanym jako ETSI Lower Band. Nie jest wersją 916–919 MHz ani amerykańską 902–928 MHz. Przy zamawianiu dodatkowych urządzeń zachowaj pełny numer PN.\n\nSkaner odczytuje kody 1D oraz 2D, w tym QR, Data Matrix i PDF417. Funkcja Command Scan umożliwia zmianę ustawień czytnika przez skanowanie specjalnych kodów konfiguracyjnych. Odczyt kodów kreskowych i odczyt znaczników UHF to osobne funkcje.\n\n## Impinj E710, antena kołowa i pamięć 32 GB\n\nModuł Impinj E710 obsługuje znaczniki EPC Class 1 Gen 2 v2. Antena ma prawoskrętną polaryzację kołową. Wydajność wynosi do 1200 znaczników na sekundę w warunkach testowych. Czytnik umożliwia także zapis danych w zgodnych znacznikach.\n\nNominalny zasięg odczytu wynosi do 9 m, a zapisu do 4 m. Wynik zależy od etykiety, materiału towaru, liczby znaczników i otoczenia. Przed wdrożeniem wykonaj próbę na używanych opakowaniach.\n\nWbudowana pamięć 32 GB zapisuje odczyty EPC z datą i godziną. Tryb wsadowy pozwala zbierać dane bez bieżącego połączenia z urządzeniem nadrzędnym. Odbiór i wykorzystanie danych zależą od konfiguracji aplikacji.\n\n## Połączenie z telefonem lub terminalem\n\nBluetooth 4.2 obsługuje SPP, HID, BLE oraz Apple iAP2. NFC ułatwia parowanie. Przez USB czytnik współpracuje z urządzeniem obsługującym USB CDC. Dostępność funkcji zależy od systemu i aplikacji obsługującej protokół TSL ASCII 3.\n\nMocowanie telefonu lub terminala wymaga właściwego adaptera ePop-Loq. Adapter dobierz do dokładnego modelu urządzenia oraz sposobu połączenia. Adapter, telefon i licencja programu magazynowego są sprzedawane osobno. Czytnik nie ma własnego ekranu ani systemu Android.\n\n## USB-C i wymienny Power Handle\n\nPower Handle to odłączany uchwyt z baterią 7,3 V o energii 25,4 Wh. W oferowanym PN ma port USB-C. Możesz ładować go z czytnikiem albo po odłączeniu od urządzenia.\n\nAby ładować tę wersję, potrzebujesz zasilacza USB-C z Power Delivery o mocy co najmniej 30 W. Możesz wybrać [zasilacz TSL 45 W USBC-PSU-KIT45](/produkt/tsl-zasilacz-usb-c-45w). Zasilacz nie jest częścią zestawu czytnika. Zwykły zasilacz USB bez wymaganej obsługi PD nie zastępuje tego wyposażenia.\n\n[Zapasowy Power Handle 31PH-01](/produkt/tsl-power-handle-usb-c) zawiera przewód USB-C. Pozwala przygotować naładowany uchwyt na wymianę. Opcjonalny [moduł Hot Swap 31-HS-01](/produkt/tsl-hot-swap-31-hs-01) podtrzymuje zasilanie czytnika podczas zmiany Power Handle. Sam moduł nie zastępuje baterii ani zasilacza.\n\nStacja ze stykami ładowania jest przeznaczona do konfiguracji z 8-Way Power Pins. Oferowany 3138-ES1-EU ładuje się bezpośrednio przez USB-C i jej nie wymaga.\n\n## Masa, odporność i zawartość zestawu\n\nTSL 3138 waży 550 g z Power Handle. Wymiary wynoszą 158 × 98 × 170 mm. Obudowa ma klasę ochrony IP54. Odporność na upadki wynosi 1,2 m w temperaturze pokojowej, w warunkach testowych. Temperatura pracy to od −10°C do +50°C.\n\nZestaw 3138-ES1-EU zawiera czytnik z Power Handle USB-C i przewód USB-C. Zasilacz, adapter mocujący, telefon oraz moduł Hot Swap są opcjonalne. Gwarancja na czytnik wynosi 12 miesięcy przy prawidłowym użytkowaniu i bez modyfikacji.\n\n## Kiedy wybrać TSL 3138?\n\nWybierz tę konfigurację, jeśli potrzebujesz odczytu UHF, skanera kodów i ładowania USB-C. Jeśli potrzebujesz obudowy IP67, porównaj [TSL 3166](/produkt/tsl-3166). Przed zakupem sprawdź obsługę czytnika w używanym programie.\n\nPozostałe [uchwyty RFID](/uchwyty-rfid) porównasz w jednej kategorii. Urządzenia z własnym ekranem i systemem znajdziesz w kategorii [Terminale RFID](/terminale-rfid).",
+    "description": "TSL 3138 to uchwyt UHF RFID do liczenia, wyszukiwania i identyfikacji oznakowanych towarów. Oferowany PN 3138-ES1-EU ma skaner kodów 1D/2D oraz uchwyt z baterią i portem USB-C. Czytnik przesyła dane do zgodnej aplikacji na telefonie, terminalu lub komputerze.\n\n## Europejski PN 3138-ES1-EU\n\nTa konfiguracja pracuje w paśmie 865–868 MHz, określanym jako ETSI Lower Band. Nie jest wersją 916–919 MHz ani amerykańską 902–928 MHz. Przy zamawianiu dodatkowych urządzeń zachowaj pełny numer PN.\n\nSkaner odczytuje kody 1D oraz 2D, w tym QR, Data Matrix i PDF417. Funkcja Command Scan umożliwia zmianę ustawień czytnika przez skanowanie specjalnych kodów konfiguracyjnych. Odczyt kodów kreskowych i odczyt znaczników UHF to osobne funkcje.\n\n## Impinj E710, antena kołowa i pamięć 32 GB\n\nModuł Impinj E710 obsługuje znaczniki EPC Class 1 Gen 2 v2. Antena ma prawoskrętną polaryzację kołową. Wydajność wynosi do 1200 znaczników na sekundę w warunkach testowych. Czytnik umożliwia także zapis danych w zgodnych znacznikach.\n\nNominalny zasięg odczytu wynosi do 9 m, a zapisu do 4 m. Wynik zależy od etykiety, materiału towaru, liczby znaczników i otoczenia. Przed wdrożeniem wykonaj próbę na używanych opakowaniach.\n\nWbudowana pamięć 32 GB zapisuje odczyty EPC z datą i godziną. Tryb wsadowy pozwala zbierać dane bez bieżącego połączenia z urządzeniem nadrzędnym. Odbiór i wykorzystanie danych zależą od konfiguracji aplikacji.\n\n## Połączenie z telefonem lub terminalem\n\nBluetooth 4.2 obsługuje SPP, HID, BLE oraz Apple iAP2. NFC ułatwia parowanie. Przez USB czytnik współpracuje z urządzeniem obsługującym USB CDC. Dostępność funkcji zależy od systemu i aplikacji obsługującej protokół TSL ASCII 3.\n\nMocowanie telefonu lub terminala wymaga właściwego adaptera ePop-Loq. Adapter dobierz do dokładnego modelu urządzenia oraz sposobu połączenia. Adapter, telefon i licencja programu magazynowego są sprzedawane osobno. Czytnik nie ma własnego ekranu ani systemu Android.\n\n## USB-C i wymienny Power Handle\n\nPower Handle to odłączany uchwyt z baterią 7,3 V o energii 25,4 Wh. W oferowanym PN ma port USB-C. Możesz ładować go z czytnikiem albo po odłączeniu od urządzenia.\n\nAby ładować tę wersję, potrzebujesz zasilacza USB-C z Power Delivery o mocy co najmniej 30 W. Możesz wybrać [zasilacz TSL 45 W USBC-PSU-KIT45](/produkt/tsl-zasilacz-usb-c-45w). Zasilacz nie jest częścią zestawu czytnika. Zwykły zasilacz USB bez wymaganej obsługi PD nie zastępuje tego wyposażenia.\n\n[Zapasowy Power Handle 31PH-01](/produkt/tsl-power-handle-usb-c) zawiera przewód USB-C. Pozwala przygotować naładowany uchwyt na wymianę. Opcjonalny [moduł Hot Swap 31-HS-01](/produkt/tsl-hot-swap-31-hs-01) podtrzymuje zasilanie czytnika podczas zmiany Power Handle. Sam moduł nie zastępuje baterii ani zasilacza.\n\nStacja ze stykami ładowania jest przeznaczona do konfiguracji z 8-Way Power Pins. Oferowany 3138-ES1-EU ładuje się bezpośrednio przez USB-C i jej nie wymaga.\n\n## Masa, odporność i zawartość zestawu\n\nTSL 3138 waży 550 g z Power Handle. Wymiary wynoszą 158 × 98 × 170 mm. Obudowa ma klasę ochrony IP54. Odporność na upadki wynosi 1,2 m w temperaturze pokojowej, w warunkach testowych. Temperatura pracy to od −10°C do +50°C.\n\nZestaw 3138-ES1-EU zawiera czytnik z Power Handle USB-C i przewód USB-C. Zasilacz, adapter mocujący, telefon oraz moduł Hot Swap są opcjonalne. Gwarancja na czytnik wynosi 12 miesięcy przy prawidłowym użytkowaniu i bez modyfikacji.\n\n## Kiedy wybrać TSL 3138?\n\nWybierz tę konfigurację, jeśli potrzebujesz odczytu UHF, skanera kodów i ładowania USB-C. Jeśli potrzebujesz obudowy IP67, porównaj [TSL 3166](/produkt/tsl-3166). Przed zakupem sprawdź obsługę czytnika w używanym programie.\n\nJeśli nie potrzebujesz skanera kodów i wystarczy Ci opcjonalna karta pamięci, porównaj [TSL 3128](/produkt/tsl-3128).\n\nPozostałe [uchwyty RFID](/uchwyty-rfid) porównasz w jednej kategorii. Urządzenia z własnym ekranem i systemem znajdziesz w kategorii [Terminale RFID](/terminale-rfid).",
     "specifications": [
       {
         "name": "Part Number",
@@ -190,6 +190,7 @@ export const tsl3138Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "downloads": [
+      {"name": "Karta katalogowa TSL 3128 z PN i akcesoriami (EN)", "url": "/datasheets/tsl-3128-en.pdf", "type": "datasheet", "size": "983 kB"},
       {
         "name": "Karta katalogowa TSL 3138 (EN)",
         "url": "/datasheets/tsl-3138-en.pdf",
@@ -210,7 +211,7 @@ export const tsl3138Accessories: Product[] = [
       "kable-zasilacze-terminali"
     ],
     "shortDescription": "Zasilacz 45 W z Power Delivery i adapterami wtyczek EU, UK, US oraz AU. Do ładowania TSL 3138 z Power Handle USB-C.",
-    "description": "Zasilacz USBC-PSU-KIT45 dostarcza zasilanie USB-C Power Delivery o mocy do 45 W. Ładuje TSL 3138 z uchwytem Power Handle USB-C. Zestaw zawiera wymienne wtyki EU, UK, US i AU.\n\n## Podłączenie czytnika\n\nDo połączenia użyj przewodu USB-C dołączonego do czytnika lub zapasowego Power Handle 31PH-01. Zasilacz jest sprzedawany osobno od urządzenia. Do oferowanego [TSL 3138-ES1-EU](/produkt/tsl-3138) nie potrzebujesz stacji dokującej.\n\nMożesz także ładować odłączony [Power Handle 31PH-01](/produkt/tsl-power-handle-usb-c). Nie podłączaj zasilacza bezpośrednio do styków wersji Power Handle bez USB-C.",
+    "description": "Zasilacz USBC-PSU-KIT45 dostarcza zasilanie USB-C Power Delivery o mocy do 45 W. Ładuje TSL 3128 i 3138 z uchwytem Power Handle USB-C. Zestaw zawiera wymienne wtyki EU, UK, US i AU.\n\n## Podłączenie czytnika\n\nDo połączenia użyj przewodu USB-C dołączonego do czytnika lub zapasowego Power Handle 31PH-01. Zasilacz jest sprzedawany osobno od urządzenia. Do [TSL 3128-EX1-EU](/produkt/tsl-3128) i [TSL 3138-ES1-EU](/produkt/tsl-3138) nie potrzebujesz stacji dokującej.\n\nMożesz także ładować odłączony [Power Handle 31PH-01](/produkt/tsl-power-handle-usb-c). Nie podłączaj zasilacza bezpośrednio do styków wersji Power Handle bez USB-C.",
     "seoTitle": "Zasilacz USB-C PD 45 W TSL | TAKMA",
     "seoDescription": "Zasilacz 45 W z Power Delivery i adapterami wtyczek EU, UK, US oraz AU. Do ładowania TSL 3138 z Power Handle USB-C. Sprawdź cenę i stan.",
     "specifications": [
@@ -224,6 +225,7 @@ export const tsl3138Accessories: Product[] = [
       }
     ],
     "relatedProducts": [
+      "tsl-3128",
       "tsl-3138"
     ]
   },
@@ -252,6 +254,7 @@ export const tsl3138Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "downloads": [
+      {"name": "Karta katalogowa TSL 3128 z PN i akcesoriami (EN)", "url": "/datasheets/tsl-3128-en.pdf", "type": "datasheet", "size": "983 kB"},
       {
         "name": "Karta katalogowa TSL 3138 (EN)",
         "url": "/datasheets/tsl-3138-en.pdf",
@@ -272,7 +275,7 @@ export const tsl3138Accessories: Product[] = [
       "baterie-do-terminali"
     ],
     "shortDescription": "Wymienny uchwyt z baterią i portem USB-C do TSL 3128 i 3138. Zawiera przewód USB-C. Zasilacz dobierz osobno.",
-    "description": "Power Handle 31PH-01 to wymienny uchwyt z baterią i portem USB-C do czytników TSL 3128 i 3138. Zestaw zawiera przewód USB-C. Uchwyt możesz ładować po odłączeniu od czytnika.\n\n## Zapasowe zasilanie czytnika\n\nAby ładować uchwyt, potrzebujesz zasilacza USB-C Power Delivery o mocy co najmniej 30 W. Możesz użyć [zasilacza TSL 45 W](/produkt/tsl-zasilacz-usb-c-45w). Zasilacz i czytnik są sprzedawane osobno.\n\nJeśli chcesz podtrzymać zasilanie podczas wymiany, dobierz [moduł Hot Swap 31-HS-01](/produkt/tsl-hot-swap-31-hs-01). Bez tego modułu nie zakładaj zachowania połączenia podczas wyjmowania Power Handle.\n\nTen PN ma USB-C. Jest inną konfiguracją niż 31PH-02 ze stykami ładowania. Dobierz wyposażenie do [TSL 3138](/produkt/tsl-3138).",
+    "description": "Power Handle 31PH-01 to wymienny uchwyt z baterią i portem USB-C do czytników TSL 3128 i 3138. Zestaw zawiera przewód USB-C. Uchwyt możesz ładować po odłączeniu od czytnika.\n\n## Zapasowe zasilanie czytnika\n\nAby ładować uchwyt, potrzebujesz zasilacza USB-C Power Delivery o mocy co najmniej 30 W. Możesz użyć [zasilacza TSL 45 W](/produkt/tsl-zasilacz-usb-c-45w). Zasilacz i czytnik są sprzedawane osobno.\n\nJeśli chcesz podtrzymać zasilanie podczas wymiany, dobierz [moduł Hot Swap 31-HS-01](/produkt/tsl-hot-swap-31-hs-01). Bez tego modułu nie zakładaj zachowania połączenia podczas wyjmowania Power Handle.\n\nTen PN ma USB-C. Jest inną konfiguracją niż 31PH-02 ze stykami ładowania. Dobierz wyposażenie do [TSL 3128](/produkt/tsl-3128) lub [TSL 3138](/produkt/tsl-3138).",
     "seoTitle": "Power Handle USB-C TSL 3128 / 3138 | TAKMA",
     "seoDescription": "Wymienny uchwyt z baterią i portem USB-C do TSL 3128 i 3138. Zawiera przewód USB-C. Zasilacz dobierz osobno. Sprawdź cenę i stan.",
     "specifications": [
@@ -286,6 +289,7 @@ export const tsl3138Accessories: Product[] = [
       }
     ],
     "relatedProducts": [
+      "tsl-3128",
       "tsl-3138"
     ]
   },
@@ -314,6 +318,7 @@ export const tsl3138Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "downloads": [
+      {"name": "Karta katalogowa TSL 3128 z PN i akcesoriami (EN)", "url": "/datasheets/tsl-3128-en.pdf", "type": "datasheet", "size": "983 kB"},
       {
         "name": "Karta katalogowa TSL 3138 (EN)",
         "url": "/datasheets/tsl-3138-en.pdf",
@@ -334,7 +339,7 @@ export const tsl3138Accessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "shortDescription": "Moduł do TSL 3128 i 3138. Podtrzymuje zasilanie podczas wymiany Power Handle. Zapasowy uchwyt z baterią zamów osobno.",
-    "description": "Moduł 31-HS-01 podtrzymuje zasilanie czytnika TSL 3128 lub 3138 podczas wymiany Power Handle. Pozwala zachować połączenie z urządzeniem nadrzędnym. Obsługuje wersje Power Handle z USB-C oraz ze stykami 8-Way Power Pins.\n\n## Wymiana Power Handle\n\nModuł jest opcjonalnym wyposażeniem. Nie jest zapasową baterią do codziennej pracy ani ładowarką. Do wymiany potrzebujesz osobnego, naładowanego Power Handle.\n\nDo oferowanej wersji [TSL 3138](/produkt/tsl-3138) możesz dobrać [Power Handle USB-C 31PH-01](/produkt/tsl-power-handle-usb-c). Aby go ładować, potrzebujesz właściwego [zasilacza USB-C PD](/produkt/tsl-zasilacz-usb-c-45w). Czytnik, Power Handle i zasilacz są sprzedawane osobno.",
+    "description": "Moduł 31-HS-01 podtrzymuje zasilanie czytnika TSL 3128 lub 3138 podczas wymiany Power Handle. Pozwala zachować połączenie z urządzeniem nadrzędnym. Obsługuje wersje Power Handle z USB-C oraz ze stykami 8-Way Power Pins.\n\n## Wymiana Power Handle\n\nModuł jest opcjonalnym wyposażeniem. Nie jest zapasową baterią do codziennej pracy ani ładowarką. Do wymiany potrzebujesz osobnego, naładowanego Power Handle.\n\nDo oferowanych wersji [TSL 3128](/produkt/tsl-3128) i [TSL 3138](/produkt/tsl-3138) możesz dobrać [Power Handle USB-C 31PH-01](/produkt/tsl-power-handle-usb-c). Aby go ładować, potrzebujesz właściwego [zasilacza USB-C PD](/produkt/tsl-zasilacz-usb-c-45w). Czytnik, Power Handle i zasilacz są sprzedawane osobno.",
     "seoTitle": "Moduł Hot Swap TSL 31-HS-01 | TAKMA",
     "seoDescription": "Moduł do TSL 3128 i 3138. Podtrzymuje zasilanie podczas wymiany Power Handle. Zapasowy uchwyt z baterią zamów osobno. Sprawdź cenę i stan.",
     "specifications": [
@@ -348,6 +353,7 @@ export const tsl3138Accessories: Product[] = [
       }
     ],
     "relatedProducts": [
+      "tsl-3128",
       "tsl-3138"
     ]
   }

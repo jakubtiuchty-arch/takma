@@ -1,0 +1,32 @@
+[
+  {
+    "image": "main",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      245,
+      256,
+      1004,
+      1037
+    ],
+    "heightPercent": 62.4,
+    "widthPercent": 60.6
+  },
+  {
+    "image": "rear",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      468,
+      236,
+      785,
+      1003
+    ],
+    "heightPercent": 61.2,
+    "widthPercent": 25.4
+  }
+]
