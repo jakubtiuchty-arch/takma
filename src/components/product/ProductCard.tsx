@@ -62,8 +62,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const productHref = getProductHref(product)
   // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
   const datalogicScannerImage = product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-')
+  const datalogicHandheldImage = /^(?:datalogic-quickscan-(?:qd2590|qw2520|qbt2500|qm2500)|datalogic-gryphon-(?:gd4690|gbt4600|gm4600))$/.test(product.id)
   const uniformGridImage = product.uniformImage || product.id === 'unitech-rp300' || datalogicScannerImage
-  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : datalogicScannerImage ? 0.62 : product.uniformImageFraction
+  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : product.uniformImageFraction
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&

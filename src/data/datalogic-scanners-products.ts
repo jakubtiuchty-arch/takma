@@ -17,9 +17,11 @@ export const datalogicQuickScanProducts: Product[] = [
     "manufacturerId": "datalogic",
     "priceFrom": 312.72,
     "images": [
+      "/images/products/datalogic-quickscan-2500-corded-front-partner-v1.webp",
       "/images/products/datalogic-qd2590-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic QuickScan QD2590 — sam czytnik bez podstawki, widok z przodu",
       "Datalogic QuickScan QD2590 — skaner przewodowy"
     ],
     "tags": [
@@ -179,9 +181,11 @@ export const datalogicQuickScanProducts: Product[] = [
     "manufacturerId": "datalogic",
     "priceFrom": 225.82,
     "images": [
+      "/images/products/datalogic-qw2520-clean-main-v2.webp",
       "/images/products/datalogic-qw2520-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic QuickScan QW2520 — sam czytnik bez podstawki, pionowe ujęcie pod kątem",
       "Datalogic QuickScan QW2520 — skaner przewodowy"
     ],
     "tags": [
@@ -328,9 +332,11 @@ export const datalogicQuickScanProducts: Product[] = [
     "manufacturerId": "datalogic",
     "priceFrom": 722.04,
     "images": [
+      "/images/products/datalogic-quickscan-2500-wireless-right-partner-v1.webp",
       "/images/products/datalogic-qbt2500-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic QuickScan QBT2500 — sam czytnik bez podstawki, pionowe ujęcie pod kątem",
       "Datalogic QuickScan QBT2500 — skaner z bazą BC2090"
     ],
     "tags": [
@@ -483,9 +489,11 @@ export const datalogicQuickScanProducts: Product[] = [
     "manufacturerId": "datalogic",
     "priceFrom": 703.96,
     "images": [
+      "/images/products/datalogic-quickscan-2500-wireless-right-partner-v1.webp",
       "/images/products/datalogic-qm2500-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic QuickScan QM2500 — sam czytnik bez podstawki, pionowe ujęcie pod kątem",
       "Datalogic QuickScan QM2500 — skaner z bazą BC2090"
     ],
     "tags": [
@@ -660,13 +668,13 @@ export const datalogicGryphonProducts: Product[] = [
     "seoDescription": "Gryphon GD4690: przewodowy skaner 1D i 2D HP z dwiema matrycami. Wybierz sam czytnik, zestaw USB lub z podstawką. Ceny, stany i akcesoria.",
     "shortDescription": "Skaner 1D i 2D HP z dwiema matrycami, USB i RS-232. Zasilanie przewodowe, IP52 i 5 lat gwarancji.",
     "images": [
-      "/images/products/datalogic-gd4690-angle-v2.webp",
+      "/images/products/datalogic-gryphon-4600-corded-partner-v1.webp",
       "/images/products/datalogic-gd4690-rear-angle-v1.webp",
       "/images/products/datalogic-gd4690-back-v1.webp",
       "/images/products/datalogic-gd4690-catalog-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Gryphon GD4690 — widok pod kątem z oknem odczytu i rękojeścią",
+      "Datalogic Gryphon GD4690 — sam czytnik, pionowe ujęcie pod kątem",
       "Datalogic Gryphon GD4690 — widok tylnej części pod kątem, przewód w rękojeści",
       "Datalogic Gryphon GD4690 — widok od tyłu z przewodem",
       "Datalogic Gryphon GD4690 — widok z góry"
@@ -825,14 +833,14 @@ export const datalogicGryphonProducts: Product[] = [
     "seoDescription": "Gryphon GBT4600: skaner 2D Bluetooth 5.2 z ładowaniem indukcyjnym. Zestawy USB z akumulatorem lub SuperCap. Porównaj PN, ceny i stany.",
     "shortDescription": "Skaner 1D i 2D Bluetooth 5.2 z ładowaniem indukcyjnym. Wybierz zestaw z akumulatorem 3250 mAh lub SuperCap 1000 F.",
     "images": [
+      "/images/products/datalogic-gryphon-4600-wireless-front-partner-v1.webp",
       "/images/products/datalogic-gryphon-4600-wireless-cradle-angle-v2.webp",
-      "/images/products/datalogic-gryphon-4600-wireless-front-v1.webp",
       "/images/products/datalogic-gryphon-4600-wireless-back-v1.webp",
       "/images/products/datalogic-gbt4600-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic Gryphon GBT4600 — sam czytnik, pionowy widok z przodu",
       "Datalogic Gryphon GBT4600 z bazą WLC4690-BK-BT — widok pod kątem",
-      "Datalogic Gryphon GBT4600 — widok z przodu, okno odczytu",
       "Datalogic Gryphon GBT4600 — widok od tyłu, rękojeść bez przewodu",
       "Datalogic Gryphon GBT4600 — widok z góry"
     ],
@@ -983,14 +991,14 @@ export const datalogicGryphonProducts: Product[] = [
     "seoDescription": "Gryphon GM4600: skaner 1D i 2D HP STAR 433 MHz do sklepu i magazynu. Zestaw USB z bazą WLC4690-BK-433. Cena, dostępność i akcesoria.",
     "shortDescription": "Skaner 1D i 2D HP STAR 433 MHz z ładowaniem indukcyjnym. Zestaw z bazą WLC4690-BK-433 i przewodem USB.",
     "images": [
+      "/images/products/datalogic-gryphon-4600-wireless-front-partner-v1.webp",
       "/images/products/datalogic-gryphon-4600-wireless-cradle-angle-v2.webp",
-      "/images/products/datalogic-gryphon-4600-wireless-front-v1.webp",
       "/images/products/datalogic-gryphon-4600-wireless-back-v1.webp",
       "/images/products/datalogic-gm4600-catalog-v1.webp"
     ],
     "imageDescriptions": [
+      "Datalogic Gryphon GM4600 — sam czytnik, pionowy widok z przodu",
       "Datalogic Gryphon GM4600 z bazą WLC4690-BK-433 — widok pod kątem",
-      "Datalogic Gryphon GM4600 — widok z przodu, okno odczytu",
       "Datalogic Gryphon GM4600 — widok od tyłu, rękojeść bez przewodu",
       "Datalogic Gryphon GM4600 — widok z góry"
     ],
