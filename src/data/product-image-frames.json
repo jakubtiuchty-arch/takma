@@ -105,5 +105,16 @@
   "/images/products/datalogic-powerscan-pm9600-main-v1.webp": [0.1455,0.088,0.738,0.906],
   "/images/products/datalogic-powerscan-base-v1.webp": [0.10916666666666666,0.10158013544018059,0.8425,0.8306997742663657],
   "/images/products/datalogic-powerscan-battery-v1.webp": [0.35216819973718794,0.13583333333333333,0.6583442838370565,0.6875],
-  "/images/products/datalogic-powerscan-cab552-v1.webp": [0.2924382716049383,0.2630208333333333,0.732445987654321,0.4837962962962963]
+  "/images/products/datalogic-powerscan-cab552-v1.webp": [0.2924382716049383,0.2630208333333333,0.732445987654321,0.4837962962962963],
+  "/images/products/datalogic-powerscan-cab553-accessory-v1.webp": [0.08984375,0.28515625,0.9114583333333334,0.7021484375],
+  "/images/products/datalogic-powerscan-cab549-accessory-v1.webp": [0.12745681953543775,0.3244397011739594,0.8939845145920191,0.6595517609391676],
+  "/images/products/datalogic-powerscan-cab548-accessory-v1.webp": [0.23333333333333334,0.375,0.7645833333333333,0.6194029850746269],
+  "/images/products/datalogic-powerscan-psu18-accessory-v1.webp": [0.12280701754385964,0.23285486443381181,0.9186602870813397,0.8022328548644339],
+  "/images/products/datalogic-powerscan-eu-cord-accessory-v1.webp": [0.10366826156299841,0.2647527910685805,0.9441786283891547,0.6921850079744817],
+  "/images/products/datalogic-powerscan-psu60-accessory-v1.webp": [0.07416267942583732,0.20972886762360446,0.9138755980861244,0.8628389154704944],
+  "/images/products/datalogic-powerscan-holder-accessory-v1.webp": [0.15473032714412024,0.10916666666666666,0.7692307692307693,0.5683333333333334],
+  "/images/products/datalogic-powerscan-stand-accessory-v1.webp": [0.24111675126903553,0.085,0.7918781725888325,0.8366666666666667],
+  "/images/products/datalogic-powerscan-case-accessory-v1.webp": [0.18,0.16338028169014085,0.7825,0.612206572769953],
+  "/images/products/datalogic-powerscan-m2-accessory-v1.webp": [0.13875,0.0975,0.87625,0.89875],
+  "/images/products/datalogic-powerscan-m4-accessory-v1.webp": [0.13133333333333333,0.13733333333333334,0.852,0.8653333333333333]
 }
