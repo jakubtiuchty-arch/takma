@@ -64,3 +64,14 @@ Wzorce: Zebra DS2208 oraz Honeywell Voyager XP 1470g. Obie galerie miały pole 5
 ## Kontrola
 
 TypeScript, lint zmienionych plików, integralność linków/PN/plików, 11 kart HTTP 200 z danymi Product, warianty i stany lokalnie. Panel magazynu nadal wymaga logowania (307). Po wdrożeniu należy sprawdzić kategorię, galerię i kafelki akcesoriów na produkcji.
+
+## Uzupełnienie zdjęć — 20.10.2026
+
+Po uwadze dotyczącej widoków z góry znaleziono dodatkowe oryginalne ujęcia:
+
+- GD4690, ujęcie pod kątem: https://www.snapweb.net/catalogo/images/lettori/datalogic/gryphon%204600/gryphon4600_corded_right-light.jpg
+- GD4690, tył i ujęcie tylne pod kątem: galeria PN https://scanshop.ee/en/products/datalogic-gryphon-gd4690-barcode-scanner-gd4690-bk-hp
+- Bezprzewodowy z bazą, przód i tył: galeria PN https://www.snapweb.net/scheda-prodotto/gbt4600-bk-btk1-hp-datalogic-mod-gryphon-gbt4600-103559
+- Oficjalna galeria rodziny: https://www.datalogic.com/upload/prod_line2/Gryphon4600/3.jpg oraz 4.jpg, 5.jpg i 6.jpg. Materiały zastosowań i Healthcare nie zostały użyte jako główne zdjęcia czarnych modeli.
+
+Nowe główne zdjęcia pokazują GD4690 pod kątem oraz bezprzewodowy czytnik z bazą. Baza jest częścią wszystkich oferowanych zestawów GBT i GM. Galerie zawierają po cztery zdjęcia, w tym dotychczasowy widok z góry. Zdjęcie obudowy bezprzewodowej jest wspólne dla GBT/GM; nie zmieniano geometrii ani konfiguracji sprzętu w Imagen. Ujednolicono klarowność i białe tło głównych zdjęć, zmierzono granice widocznego produktu. Zachowano skalę kafelków 62% wysokości pola i istniejący układ 4:3, porównując z QuickScan QD2590 i QBT2500.

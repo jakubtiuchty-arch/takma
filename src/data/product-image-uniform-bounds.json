@@ -654,5 +654,53 @@
     325,
     1100,
     1009
+  ],
+  "/images/products/datalogic-gd4690-angle-v2.webp": [
+    1254,
+    1254,
+    275,
+    69,
+    1053,
+    1109
+  ],
+  "/images/products/datalogic-gd4690-rear-angle-v1.webp": [
+    2048,
+    2048,
+    77,
+    111,
+    1977,
+    1855
+  ],
+  "/images/products/datalogic-gd4690-back-v1.webp": [
+    2048,
+    2048,
+    681,
+    113,
+    1407,
+    2047
+  ],
+  "/images/products/datalogic-gryphon-4600-wireless-cradle-angle-v2.webp": [
+    1254,
+    1254,
+    106,
+    203,
+    1184,
+    1043
+  ],
+  "/images/products/datalogic-gryphon-4600-wireless-front-v1.webp": [
+    900,
+    857,
+    252,
+    44,
+    641,
+    739
+  ],
+  "/images/products/datalogic-gryphon-4600-wireless-back-v1.webp": [
+    900,
+    857,
+    315,
+    112,
+    579,
+    773
   ]
 }
