@@ -1,0 +1,18 @@
+[
+  {
+    "key": "datasheet",
+    "source": "https://www.ute.com/common/frontend/download?path=%2Fuploads%2Fimages%2FDownloads%2FMarketing+Material%2FRFID+reader%2FRP300_RevD.pdf&name="
+  },
+  {
+    "key": "quickstart",
+    "source": "https://www.ute.com/common/frontend/download?path=%2Fuploads%2Fimages%2FDownloads%2FTechnical+Material%2FRFID%2FRP300+QSG+V1_4_20260813.pdf&name="
+  },
+  {
+    "key": "accessories",
+    "source": "https://www.ute.com/common/frontend/download?path=%2Fuploads%2Fimages%2FDownloads%2FMarketing+Material%2FMobile+computer%2FRP300+Accessories+brochure_2026.pdf&name="
+  },
+  {
+    "key": "cradle-guide",
+    "source": "https://www.ute.com/common/frontend/download?path=%2Fuploads%2Fimages%2FDownloads%2FTechnical+Material%2FRFID%2FRP300+Single+Slot+Charging+Cradle+QSG+V1_1_20260128.pdf&name="
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "partNumber": "RP300-37E830G",
+    "found": true,
+    "price": 2304.17,
+    "priceBrutto": 2834.13,
+    "stockPL": 0,
+    "stockDE": 2,
+    "inDelivery": 0,
+    "totalStock": 2,
+    "availability": "available",
+    "deliveryText": "Dostepny — wysylka 2-3 dni (2 szt.)",
+    "lastSync": "2026-10-20T16:58:12.928Z"
+  },
+  {
+    "partNumber": "RP300-37EA30G",
+    "found": true,
+    "price": 2539.7,
+    "priceBrutto": 3123.83,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 0,
+    "totalStock": 0,
+    "availability": "unavailable",
+    "deliveryText": "Niedostepny",
+    "lastSync": "2026-10-20T16:58:12.475Z"
+  },
+  {
+    "partNumber": "5000-900148G",
+    "found": true,
+    "price": 383.35,
+    "priceBrutto": 471.52,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 0,
+    "totalStock": 0,
+    "availability": "unavailable",
+    "deliveryText": "Niedostepny",
+    "lastSync": "2026-10-20T17:03:59.822Z"
+  },
+  {
+    "partNumber": "1010-900072G",
+    "found": true,
+    "price": 92.04,
+    "priceBrutto": 113.21,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 0,
+    "totalStock": 0,
+    "availability": "unavailable",
+    "deliveryText": "Niedostepny",
+    "lastSync": "2026-10-20T17:04:00.799Z"
+  },
+  {
+    "partNumber": "3210-900047G",
+    "found": true,
+    "price": 234.86,
+    "priceBrutto": 288.88,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 0,
+    "totalStock": 0,
+    "availability": "unavailable",
+    "deliveryText": "Niedostepny",
+    "lastSync": "2026-10-20T17:04:01.881Z"
+  },
+  {
+    "partNumber": "3210-900048G",
+    "found": true,
+    "price": 116.75,
+    "priceBrutto": 143.6,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 0,
+    "totalStock": 0,
+    "availability": "unavailable",
+    "deliveryText": "Niedostepny",
+    "lastSync": "2026-10-20T17:04:02.386Z"
+  },
+  {
+    "partNumber": "1550-905940G",
+    "found": true,
+    "price": 30.15,
+    "priceBrutto": 37.08,
+    "stockPL": 0,
+    "stockDE": 0,
+    "inDelivery": 71,
+    "totalStock": 71,
+    "availability": "on-order",
+    "deliveryText": "W dostawie (71 szt.)",
+    "lastSync": "2026-10-20T17:04:02.926Z"
+  }
+]

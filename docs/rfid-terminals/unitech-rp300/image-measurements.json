@@ -1,0 +1,86 @@
+{
+  "/images/products/unitech-rp300-holder660-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      370,
+      40,
+      876,
+      1207
+    ],
+    "rawFraction": 0.9306,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-cradle-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      182,
+      181,
+      1085,
+      1133
+    ],
+    "rawFraction": 0.7592,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-cord-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      80,
+      156,
+      1069,
+      1028
+    ],
+    "rawFraction": 0.7887,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-holder530-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      398,
+      48,
+      856,
+      1204
+    ],
+    "rawFraction": 0.9219,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-set-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      187,
+      68,
+      1072,
+      1153
+    ],
+    "rawFraction": 0.8652,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-main-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      133,
+      206,
+      1144,
+      1112
+    ],
+    "rawFraction": 0.8062,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp300-psu-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      115,
+      380,
+      1137,
+      959
+    ],
+    "rawFraction": 0.815,
+    "renderedLongSideFraction": 0.66215
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "built-in image_gen",
+  "paths": {
+    "main": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-a22c08f7-97ce-44b3-9f82-fcf5ca404cf4.png",
+    "set": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-6148b7de-1131-40d3-811b-2768fb6bfa1d.png",
+    "cradle": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-c0ef6a52-c149-4935-986d-4e707ea252bb.png",
+    "psu": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-9d59afdc-2cf2-47fa-8736-c8035fad43f1.png",
+    "holder660": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-84db75ef-27c1-47a8-b361-62844acf4e9d.png",
+    "holder530": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-6a51a109-f3c3-4236-9c76-7fd93e2c7767.png",
+    "cord": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-68182e95-b2e1-498a-a703-870c3af7004a.png"
+  },
+  "prompt": "Faithful enhancement, white background, generous margins. Standalone RP300 from official brochure; optional terminal explicitly captioned. Single empty cradle; single PSU; holders and included screws only; EU C5 cord connector geometry preserved."
+}

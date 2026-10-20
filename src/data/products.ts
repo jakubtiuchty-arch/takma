@@ -1,3 +1,4 @@
+import { unitechRp300Products, unitechRp300Accessories } from './unitech-rp300-products'
 import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
 import { rfidReaderCategory } from './rfid-reader-category'
 import { tsl3128Products } from './tsl-3128-products'
@@ -95821,14 +95822,15 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
 }
 
 const rawProductList: Product[] = [
+  ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,
   ...tsl3138Products, ...tsl3138Accessories,
