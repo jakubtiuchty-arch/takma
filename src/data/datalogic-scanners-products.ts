@@ -152,7 +152,12 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "createdAt": "2026-09-22",
     "seoH1": "Datalogic QuickScan QD2590",
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-std-auto-qd25-bk",
+      "datalogic-quickscan-std-autflx-qd25-bk",
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-quickscan-hld-q040-bk"
+    ],
     "faq": [
       {
         "question": "Czy zestaw zawiera przewód do komputera?",
@@ -303,7 +308,10 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "createdAt": "2026-09-22",
     "seoH1": "Datalogic QuickScan QW2520",
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-std-qw25-bk",
+      "datalogic-quickscan-usb-90a052258"
+    ],
     "faq": [
       {
         "question": "Czy zestaw zawiera przewód do komputera?",
@@ -460,7 +468,13 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "createdAt": "2026-09-22",
     "seoH1": "Datalogic QuickScan QBT2500",
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-bc2090-bk",
+      "datalogic-quickscan-rbp-qbt25-bk",
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
     "faq": [
       {
         "question": "Czy zestaw zawiera przewód do komputera?",
@@ -628,7 +642,13 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "createdAt": "2026-09-22",
     "seoH1": "Datalogic QuickScan QM2500",
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-bc2090-bk-433",
+      "datalogic-quickscan-rbp-qbt25-bk",
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
     "faq": [
       {
         "question": "Czy zestaw zawiera przewód do komputera?",
@@ -712,7 +732,9 @@ export const datalogicGryphonProducts: Product[] = [
       }
     ],
     "relatedAccessories": [
-      "datalogic-gryphon-4600-presentation-base"
+      "datalogic-gryphon-4600-presentation-base",
+      "datalogic-gryphon-std-g041-bk",
+      "datalogic-quickscan-usb-90a052258"
     ],
     "applications": [
       "Stanowisko kasowe",
@@ -866,7 +888,10 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "relatedAccessories": [
       "datalogic-gryphon-4600-base-bluetooth",
-      "datalogic-gryphon-4600-battery"
+      "datalogic-gryphon-4600-battery",
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
     ],
     "applications": [
       "Obsługa klienta",
@@ -1013,7 +1038,10 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "relatedAccessories": [
       "datalogic-gryphon-4600-base-433",
-      "datalogic-gryphon-4600-battery"
+      "datalogic-gryphon-4600-battery",
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
     ],
     "applications": [
       "Przyjęcie dostaw",
@@ -1254,7 +1282,11 @@ export const datalogicScannerAccessories: Product[] = [
     "applications": [
       "Akcesorium do skanera"
     ],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
     "relatedProducts": [
       "datalogic-gryphon-gbt4600"
     ],
@@ -1325,7 +1357,11 @@ export const datalogicScannerAccessories: Product[] = [
     "applications": [
       "Akcesorium do skanera"
     ],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
     "relatedProducts": [
       "datalogic-gryphon-gm4600"
     ],
@@ -1409,5 +1445,578 @@ export const datalogicScannerAccessories: Product[] = [
         "size": "676 kB"
       }
     ]
+  },
+  {
+    "id": "datalogic-quickscan-usb-90a052258",
+    "slug": "datalogic-quickscan-usb-90a052258",
+    "name": "Przewód USB-A Datalogic 90A052258",
+    "seoH1": "Przewód USB-A Datalogic 90A052258",
+    "seoTitle": "Przewód USB-A Datalogic 90A052258 | TAKMA",
+    "seoDescription": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem.",
+    "description": "Prosty przewód USB-A łączy zgodny skaner przewodowy lub bazę bezprzewodową z komputerem.\n\nPodłącz przewód do QD2590, QW2520 lub GD4690. W modelach QBT2500, QM2500, GBT4600 i GM4600 przewód podłącza się do zgodnej bazy. Nie służy do bezpośredniego ładowania gniazda USB-C czytnika.\n\n## Zawartość i połączenie\n\nOpakowanie zawiera sam przewód. Skaner, baza i zasilacz są sprzedawane osobno. Jeśli masz zestaw USB z tym przewodem, nie musisz kupować drugiego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590), [Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520), [Datalogic QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500), [Datalogic QuickScan QM2500](/produkt/datalogic-quickscan-qm2500), [Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690), [Datalogic Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600), [Datalogic Gryphon GM4600](/produkt/datalogic-gryphon-gm4600). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 64.15,
+    "images": [
+      "/images/products/datalogic-quickscan-usb-90a052258-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Przewód USB-A Datalogic 90A052258 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "90A052258"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QD2590, QW2520, QBT2500, QM2500, GD4690, GBT4600, GM4600"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qd2590",
+      "datalogic-quickscan-qw2520",
+      "datalogic-quickscan-qbt2500",
+      "datalogic-quickscan-qm2500",
+      "datalogic-gryphon-gd4690",
+      "datalogic-gryphon-gbt4600",
+      "datalogic-gryphon-gm4600"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-corded-en.pdf",
+        "size": "3159 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-std-qw25-bk",
+    "slug": "datalogic-quickscan-std-qw25-bk",
+    "name": "Podstawka Datalogic QuickScan QW2520",
+    "seoH1": "Podstawka Datalogic QuickScan QW2520",
+    "seoTitle": "Podstawka Datalogic QuickScan QW2520 | TAKMA",
+    "seoDescription": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520.",
+    "description": "STD-QW25-BK to czarna podstawka do przewodowego skanera QuickScan QW2520.\n\nUstaw czytnik na stanowisku i dobierz położenie podstawki. Podstawka nie jest bazą radiową i nie ładuje akumulatora.\n\n## Co zawiera produkt\n\nTa pozycja obejmuje samą podstawkę. Czytnik oraz przewód USB są sprzedawane osobno. Zestaw QW2520-BKK1S zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 44.63,
+    "images": [
+      "/images/products/datalogic-quickscan-std-qw25-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Podstawka Datalogic QuickScan QW2520 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "STD-QW25-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QW2520"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qw2520"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-corded-en.pdf",
+        "size": "3159 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-std-auto-qd25-bk",
+    "slug": "datalogic-quickscan-std-auto-qd25-bk",
+    "name": "Podstawka Datalogic QuickScan QD2590",
+    "seoH1": "Podstawka Datalogic QuickScan QD2590",
+    "seoTitle": "Podstawka Datalogic QuickScan QD2590 | TAKMA",
+    "seoDescription": "STD-AUTO-QD25-BK to czarna podstawka do przewodowego skanera QuickScan QD2590. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "STD-AUTO-QD25-BK to czarna podstawka do przewodowego skanera QuickScan QD2590.",
+    "description": "STD-AUTO-QD25-BK to czarna podstawka do przewodowego skanera QuickScan QD2590.\n\nPodstawka utrzymuje czytnik na stanowisku. Pozwala odkładać skaner po odczycie lub korzystać z trybu prezentacyjnego zgodnie z ustawieniami czytnika.\n\n## Wybór zestawu\n\nTa pozycja zawiera samą podstawkę. Zestaw QD2590-BKK1B obejmuje już tę podstawkę. Podstawka nie zastępuje przewodu transmisyjnego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 72.51,
+    "images": [
+      "/images/products/datalogic-quickscan-std-auto-qd25-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Podstawka Datalogic QuickScan QD2590 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "STD-AUTO-QD25-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QD2590"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qd2590"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-corded-en.pdf",
+        "size": "3159 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-std-autflx-qd25-bk",
+    "slug": "datalogic-quickscan-std-autflx-qd25-bk",
+    "name": "Podstawka Flex Datalogic QuickScan QD2590",
+    "seoH1": "Podstawka Flex Datalogic QuickScan QD2590",
+    "seoTitle": "Podstawka Flex Datalogic QuickScan QD2590 | TAKMA",
+    "seoDescription": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590.",
+    "description": "STD-AUTFLX-QD25-BK to czarna podstawka z elastycznym ramieniem do skanera QuickScan QD2590.\n\nElastyczne ramię pozwala ustawić położenie czytnika nad stanowiskiem. Wybierz tryb odczytu w ustawieniach skanera.\n\n## Samodzielne akcesorium\n\nTa pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Podstawka nie ładuje i nie zapewnia połączenia radiowego.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 72.51,
+    "images": [
+      "/images/products/datalogic-quickscan-std-autflx-qd25-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Podstawka Flex Datalogic QuickScan QD2590 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "STD-AUTFLX-QD25-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QD2590"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qd2590"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-corded-en.pdf",
+        "size": "3159 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-bc2090-bk",
+    "slug": "datalogic-quickscan-bc2090-bk",
+    "name": "Baza Bluetooth Datalogic QuickScan QBT2500",
+    "seoH1": "Baza Bluetooth Datalogic QuickScan QBT2500",
+    "seoTitle": "Baza Bluetooth Datalogic QuickScan QBT2500 | TAKMA",
+    "seoDescription": "BC2090-BK to czarna baza komunikacyjna i ładująca do czytnika QuickScan QBT2500 z Bluetooth. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "BC2090-BK to czarna baza komunikacyjna i ładująca do czytnika QuickScan QBT2500 z Bluetooth.",
+    "description": "BC2090-BK to czarna baza komunikacyjna i ładująca do czytnika QuickScan QBT2500 z Bluetooth.\n\nBaza łączy QBT2500 z komputerem i ładuje akumulator po odłożeniu czytnika. Do połączenia USB dobierz [przewód 90A052258](/produkt/datalogic-quickscan-usb-90a052258).\n\n## Dobierz transmisję i zasilanie\n\nDo QM2500 433 MHz potrzebujesz [bazy BC2090-BK-433](/produkt/datalogic-quickscan-bc2090-bk-433). Bazy Bluetooth i STAR nie są zamienne.\n\nDo zewnętrznego zasilania bazy użyj [zasilacza 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) oraz [przewodu sieciowego EU](/produkt/datalogic-powerscan-6003-0940). Ta pozycja obejmuje samą bazę. Czytnik, przewody i zasilacz są sprzedawane osobno.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "stacje-ladowarki-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 405.09,
+    "images": [
+      "/images/products/datalogic-quickscan-bc2090-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Baza Bluetooth Datalogic QuickScan QBT2500 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "BC2090-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QBT2500"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qbt2500"
+    ],
+    "relatedAccessories": [
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-cordless-en.pdf",
+        "size": "7401 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-bc2090-bk-433",
+    "slug": "datalogic-quickscan-bc2090-bk-433",
+    "name": "Baza STAR 433 MHz Datalogic QuickScan QM2500",
+    "seoH1": "Baza STAR 433 MHz Datalogic QuickScan QM2500",
+    "seoTitle": "Baza STAR 433 MHz Datalogic QuickScan QM2500 | TAKMA",
+    "seoDescription": "BC2090-BK-433 to czarna baza komunikacyjna i ładująca do czytnika QuickScan QM2500 w wersji 433 MHz. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "BC2090-BK-433 to czarna baza komunikacyjna i ładująca do czytnika QuickScan QM2500 w wersji 433 MHz.",
+    "description": "BC2090-BK-433 to czarna baza komunikacyjna i ładująca do czytnika QuickScan QM2500 w wersji 433 MHz.\n\nBaza odbiera dane z QM2500 przez radio STAR 433 MHz. Ładuje akumulator po odłożeniu czytnika. Do komputera podłącz ją przez zgodny przewód transmisyjny.\n\n## Wymagane wyposażenie\n\nDo połączenia USB wybierz [przewód 90A052258](/produkt/datalogic-quickscan-usb-90a052258). Do zewnętrznego zasilania bazy dobierz [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940).\n\nTa pozycja obejmuje samą bazę. Pozostałe elementy są sprzedawane osobno. Do QBT2500 z Bluetooth wybierz [BC2090-BK](/produkt/datalogic-quickscan-bc2090-bk). Ta baza nie obsługuje transmisji Bluetooth ani wersji STAR 910 MHz.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QM2500](/produkt/datalogic-quickscan-qm2500). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "stacje-ladowarki-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 405.09,
+    "images": [
+      "/images/products/datalogic-quickscan-bc2090-bk-433-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Baza STAR 433 MHz Datalogic QuickScan QM2500 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "BC2090-BK-433"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QM2500"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qm2500"
+    ],
+    "relatedAccessories": [
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-cordless-en.pdf",
+        "size": "7401 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-rbp-qbt25-bk",
+    "slug": "datalogic-quickscan-rbp-qbt25-bk",
+    "name": "Akumulator Datalogic QuickScan QBT2500 / QM2500",
+    "seoH1": "Akumulator Datalogic QuickScan QBT2500 / QM2500",
+    "seoTitle": "Akumulator Datalogic QuickScan QBT2500 / QM2500 | TAKMA",
+    "seoDescription": "RBP-QBT25-BK to wymienny akumulator do bezprzewodowych skanerów QuickScan QBT2500 i QM2500. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "RBP-QBT25-BK to wymienny akumulator do bezprzewodowych skanerów QuickScan QBT2500 i QM2500.",
+    "description": "RBP-QBT25-BK to wymienny akumulator do bezprzewodowych skanerów QuickScan QBT2500 i QM2500.\n\nAkumulator zastępuje zużyty akumulator lub służy jako zapas do czytnika. Pasuje do bezprzewodowej rodziny QuickScan 2500.\n\n## Wymiana i ładowanie\n\nPrzed wymianą wyłącz czytnik i postępuj zgodnie z instrukcją. Ładuj akumulator w zgodnym czytniku. Ta pozycja zawiera sam akumulator. Czytnik i baza są sprzedawane osobno. Nie pasuje do przewodowych QD2590 i QW2520.\n\n## Zgodne skanery\n\n[Datalogic QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500), [Datalogic QuickScan QM2500](/produkt/datalogic-quickscan-qm2500). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "baterie-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 117.14,
+    "images": [
+      "/images/products/datalogic-quickscan-rbp-qbt25-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Akumulator Datalogic QuickScan QBT2500 / QM2500 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "RBP-QBT25-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QBT2500, QM2500"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qbt2500",
+      "datalogic-quickscan-qm2500"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-cordless-en.pdf",
+        "size": "7401 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-quickscan-hld-q040-bk",
+    "slug": "datalogic-quickscan-hld-q040-bk",
+    "name": "Uchwyt Datalogic QuickScan QD2590",
+    "seoH1": "Uchwyt Datalogic QuickScan QD2590",
+    "seoTitle": "Uchwyt Datalogic QuickScan QD2590 | TAKMA",
+    "seoDescription": "HLD-Q040-BK to czarny uchwyt do odkładania skanera QuickScan QD2590. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "HLD-Q040-BK to czarny uchwyt do odkładania skanera QuickScan QD2590.",
+    "description": "HLD-Q040-BK to czarny uchwyt do odkładania skanera QuickScan QD2590.\n\nUchwyt porządkuje miejsce odkładania czytnika przy stanowisku. Nie jest bazą komunikacyjną ani ładowarką.\n\n## Sam uchwyt\n\nCzytnik oraz przewód są sprzedawane osobno. Do pracy w podstawce z elastycznym ramieniem wybierz [STD-AUTFLX-QD25-BK](/produkt/datalogic-quickscan-std-autflx-qd25-bk).\n\n## Zgodne skanery\n\n[Datalogic QuickScan QD2590](/produkt/datalogic-quickscan-qd2590). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 53,
+    "images": [
+      "/images/products/datalogic-quickscan-hld-q040-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Uchwyt Datalogic QuickScan QD2590 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "HLD-Q040-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "QD2590"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-quickscan-qd2590"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa serii QuickScan 2500 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-quickscan-2500-karta-katalogowa.pdf",
+        "size": "0,5 MB"
+      },
+      {
+        "name": "Instrukcja QuickScan 2500 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-quickscan-corded-en.pdf",
+        "size": "3159 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-gryphon-std-g041-bk",
+    "slug": "datalogic-gryphon-std-g041-bk",
+    "name": "Podstawka Datalogic Gryphon GD4690",
+    "seoH1": "Podstawka Datalogic Gryphon GD4690",
+    "seoTitle": "Podstawka Datalogic Gryphon GD4690 | TAKMA",
+    "seoDescription": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690.",
+    "description": "STD-G041-BK to czarna podstawka do przewodowego skanera Gryphon GD4690.\n\nRamię podstawki pozwala ustawić czytnik nad stanowiskiem. Skonfiguruj tryb prezentacyjny zgodnie z instrukcją skanera.\n\n## Podstawka i baza to różne elementy\n\nPodstawka nie ładuje i nie obsługuje transmisji radiowej. Nie zastępuje baz WLC4690 do modeli GBT4600 i GM4600. Ta pozycja zawiera samą podstawkę. Czytnik i przewód są sprzedawane osobno. Zestaw GD4690-BKK1S-HP zawiera już tę podstawkę.\n\n## Zgodne skanery\n\n[Datalogic Gryphon GD4690](/produkt/datalogic-gryphon-gd4690). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 97.61,
+    "images": [
+      "/images/products/datalogic-gryphon-std-g041-bk-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Podstawka Datalogic Gryphon GD4690 — samo akcesorium"
+    ],
+    "tags": [
+      "retail",
+      "magazyn"
+    ],
+    "availability": "available",
+    "isNew": false,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "STD-G041-BK"
+      },
+      {
+        "name": "Zgodność",
+        "value": "GD4690"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-gryphon-gd4690"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Gryphon 4600 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-gryphon-4600-en.pdf",
+        "size": "676 kB"
+      },
+      {
+        "name": "Instrukcja Gryphon GD4600 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/datalogic-gryphon-corded-en.pdf",
+        "size": "3441 kB"
+      }
+    ],
+    "createdAt": "2026-10-20",
+    "updatedAt": "2026-10-20"
   }
 ]

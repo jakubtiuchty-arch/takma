@@ -1005,12 +1005,12 @@ export const datalogicPowerScanAccessories: Product[] = [
   {
     "id": "datalogic-powerscan-8-0935",
     "slug": "datalogic-powerscan-8-0935",
-    "name": "Zasilacz 12 V Datalogic PowerScan 8-0935",
-    "seoH1": "Zasilacz 12 V Datalogic PowerScan 8-0935",
-    "seoTitle": "Zasilacz 12 V Datalogic PowerScan 8-0935 | TAKMA",
-    "seoDescription": "Zasilacz 12 V Datalogic PowerScan 8-0935. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
+    "name": "Zasilacz 12 V Datalogic 8-0935",
+    "seoH1": "Zasilacz 12 V Datalogic 8-0935",
+    "seoTitle": "Zasilacz 12 V Datalogic 8-0935 | TAKMA",
+    "seoDescription": "Zasilacz 12 V Datalogic 8-0935. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
     "shortDescription": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.",
-    "description": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.\n\n## Wymagany przewód sieciowy\n\nAby podłączyć zasilacz do gniazda, potrzebujesz [przewodu sieciowego EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód sieciowy nie jest dołączony. Baza i przewód transmisyjny są sprzedawane osobno.\n\nZasilacz jest częścią kompletnych zestawów USB EU PBT9600 i PM9600 oferowanych na kartach czytników. Nie dokupuj go, jeśli masz już ten element.\n\nDo ładowarek MC-P096-M2 i MC-P096-M4 wybierz [zasilacz 12 V / 5 A 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.\n\n## Bazy QuickScan i Gryphon\n\nZasilacz obsługuje także bazy QuickScan BC2090 i Gryphon WLC4690. Zasila bazę, a nie gniazdo USB-C czytnika QuickScan.\n\n## Wymagany przewód sieciowy\n\nAby podłączyć zasilacz do gniazda, potrzebujesz [przewodu sieciowego EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód sieciowy nie jest dołączony. Baza i przewód transmisyjny są sprzedawane osobno.\n\nZasilacz jest częścią kompletnych zestawów USB EU PBT9600 i PM9600 oferowanych na kartach czytników. Nie dokupuj go, jeśli masz już ten element.\n\nDo ładowarek MC-P096-M2 i MC-P096-M4 wybierz [zasilacz 12 V / 5 A 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1021,7 +1021,7 @@ export const datalogicPowerScanAccessories: Product[] = [
       "/images/products/datalogic-powerscan-psu18-accessory-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz 12 V Datalogic PowerScan 8-0935 — zdjęcie akcesorium"
+      "Zasilacz 12 V Datalogic 8-0935 — zdjęcie akcesorium"
     ],
     "tags": [
       "magazyn",
@@ -1049,7 +1049,11 @@ export const datalogicPowerScanAccessories: Product[] = [
     "relatedProducts": [
       "datalogic-powerscan-pd9630",
       "datalogic-powerscan-pbt9600",
-      "datalogic-powerscan-pm9600"
+      "datalogic-powerscan-pm9600",
+      "datalogic-quickscan-qbt2500",
+      "datalogic-quickscan-qm2500",
+      "datalogic-gryphon-gbt4600",
+      "datalogic-gryphon-gm4600"
     ],
     "downloads": [],
     "createdAt": "2026-10-20",
@@ -1106,7 +1110,11 @@ export const datalogicPowerScanAccessories: Product[] = [
     "relatedProducts": [
       "datalogic-powerscan-pd9630",
       "datalogic-powerscan-pbt9600",
-      "datalogic-powerscan-pm9600"
+      "datalogic-powerscan-pm9600",
+      "datalogic-quickscan-qbt2500",
+      "datalogic-quickscan-qm2500",
+      "datalogic-gryphon-gbt4600",
+      "datalogic-gryphon-gm4600"
     ],
     "downloads": [],
     "createdAt": "2026-10-20",
