@@ -1,3 +1,4 @@
+import { unitechRp902Products, unitechRp902Accessories } from '@/data/unitech-rp902-products'
 import { tsl3128Products } from '@/data/tsl-3128-products'
 import { tsl3138Products, tsl3138Accessories } from '@/data/tsl-3138-products'
 import { tsl3166Products, tsl3166Accessories } from '@/data/tsl-3166-products'
@@ -43,6 +44,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...unitechRp902Products.map(product => product.slug),
+  ...unitechRp902Accessories.map(product => product.slug),
   ...tsl3128Products.map(product => product.slug),
   ...tsl3138Products.map(product => product.slug),
   ...tsl3138Accessories.map(product => product.slug),

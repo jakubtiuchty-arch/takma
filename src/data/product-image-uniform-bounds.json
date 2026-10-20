@@ -470,5 +470,53 @@
     414,
     1215,
     850
+  ],
+  "/images/products/unitech-rp902-cradle-v1.webp": [
+    1254,
+    1254,
+    168,
+    255,
+    1106,
+    1025
+  ],
+  "/images/products/unitech-rp902-cable-v1.webp": [
+    1254,
+    1254,
+    143,
+    405,
+    1111,
+    892
+  ],
+  "/images/products/unitech-rp902-battery-v1.webp": [
+    1254,
+    1254,
+    146,
+    179,
+    1085,
+    1089
+  ],
+  "/images/products/unitech-rp902-main-v1.webp": [
+    1254,
+    1254,
+    419,
+    230,
+    858,
+    1075
+  ],
+  "/images/products/unitech-rp902-psu-v1.webp": [
+    1254,
+    1254,
+    131,
+    369,
+    1163,
+    849
+  ],
+  "/images/products/unitech-rp902-rear-v1.webp": [
+    1254,
+    1254,
+    233,
+    125,
+    1021,
+    1101
   ]
 }

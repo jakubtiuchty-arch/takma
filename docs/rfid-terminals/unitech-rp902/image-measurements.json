@@ -1,0 +1,74 @@
+{
+  "/images/products/unitech-rp902-cradle-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      168,
+      255,
+      1106,
+      1025
+    ],
+    "rawFraction": 0.748,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp902-cable-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      143,
+      405,
+      1111,
+      892
+    ],
+    "rawFraction": 0.7719,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp902-battery-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      146,
+      179,
+      1085,
+      1089
+    ],
+    "rawFraction": 0.7488,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp902-main-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      419,
+      230,
+      858,
+      1075
+    ],
+    "rawFraction": 0.6738,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp902-psu-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      131,
+      369,
+      1163,
+      849
+    ],
+    "rawFraction": 0.823,
+    "renderedLongSideFraction": 0.66215
+  },
+  "/images/products/unitech-rp902-rear-v1.webp": {
+    "width": 1254,
+    "height": 1254,
+    "bounds": [
+      233,
+      125,
+      1021,
+      1101
+    ],
+    "rawFraction": 0.7783,
+    "renderedLongSideFraction": 0.66215
+  }
+}

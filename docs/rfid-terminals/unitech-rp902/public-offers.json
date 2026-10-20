@@ -1,0 +1,102 @@
+[
+  {
+    "results": [
+      {
+        "partNumber": "RP902-33E8S0G",
+        "found": true,
+        "price": 1151.85,
+        "priceBrutto": 1416.78,
+        "stockPL": 0,
+        "stockDE": 26,
+        "inDelivery": 39,
+        "totalStock": 65,
+        "availability": "available",
+        "deliveryText": "Dostepny — wysylka 2-3 dni (26 szt.)",
+        "lastSync": "2026-10-20T05:27:14.422Z"
+      }
+    ],
+    "count": 1,
+    "found": 1,
+    "_source": "live"
+  },
+  {
+    "results": [
+      {
+        "partNumber": "5000-900096G",
+        "found": true,
+        "price": 199.35,
+        "priceBrutto": 245.2,
+        "stockPL": 0,
+        "stockDE": 29,
+        "inDelivery": 0,
+        "totalStock": 29,
+        "availability": "available",
+        "deliveryText": "Dostepny — wysylka 2-3 dni (29 szt.)",
+        "lastSync": "2026-10-20T05:27:14.796Z"
+      }
+    ],
+    "count": 1,
+    "found": 1,
+    "_source": "live"
+  },
+  {
+    "results": [
+      {
+        "partNumber": "1400-900066G",
+        "found": true,
+        "price": 62.02,
+        "priceBrutto": 76.28,
+        "stockPL": 0,
+        "stockDE": 0,
+        "inDelivery": 0,
+        "totalStock": 0,
+        "availability": "unavailable",
+        "deliveryText": "Niedostepny",
+        "lastSync": "2026-10-20T05:27:15.174Z"
+      }
+    ],
+    "count": 1,
+    "found": 1,
+    "_source": "live"
+  },
+  {
+    "results": [
+      {
+        "partNumber": "1010-900067G",
+        "found": true,
+        "price": 87.35,
+        "priceBrutto": 107.44,
+        "stockPL": 0,
+        "stockDE": 199,
+        "inDelivery": 0,
+        "totalStock": 199,
+        "availability": "available",
+        "deliveryText": "Dostepny — wysylka 2-3 dni (199 szt.)",
+        "lastSync": "2026-10-20T05:27:15.567Z"
+      }
+    ],
+    "count": 1,
+    "found": 1,
+    "_source": "live"
+  },
+  {
+    "results": [
+      {
+        "partNumber": "1550-905919G",
+        "found": true,
+        "price": 22.78,
+        "priceBrutto": 28.02,
+        "stockPL": 0,
+        "stockDE": 0,
+        "inDelivery": 0,
+        "totalStock": 0,
+        "availability": "unavailable",
+        "deliveryText": "Niedostepny",
+        "lastSync": "2026-10-20T05:27:15.951Z"
+      }
+    ],
+    "count": 1,
+    "found": 1,
+    "_source": "live"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "mode": "built-in image_gen",
+  "paths": {
+    "main": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-a315ff90-cf89-451f-b135-95aa57066a48.png",
+    "rear": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-40d41ed4-abbd-4e27-b199-0843b5396490.png",
+    "cradle": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-b20210cb-f5ce-4316-8714-706755df3cc9.png",
+    "battery": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-a43cd2bf-59d2-41da-9b09-3ae9a8d3729b.png",
+    "psu": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-88fefb95-2ada-4ee1-87c3-d7fb583d8ab7.png",
+    "cable": "/Users/jakubtiuchty/.codex/generated_images/01a120b0-d464-76c0-9d63-537cb9a66124/exec-f682bae0-3e4e-4fa6-a1b9-3745fa9a459d.png"
+  },
+  "prompt": "Faithful catalog cleanup; preserve hardware; white background; generous margins; empty cradle only. Battery revision preserves soft original label without invented text."
+}

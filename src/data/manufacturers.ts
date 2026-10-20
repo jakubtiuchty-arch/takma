@@ -16,6 +16,7 @@ export interface Manufacturer {
 }
 
 export const manufacturers: Manufacturer[] = [
+  { id: 'unitech', slug: 'unitech', name: 'Unitech', logo: '/images/manufacturers/unitech.svg', seoTitle: 'Unitech — czytniki RFID i akcesoria | TAKMA', seoDescription: 'Czytniki UHF RFID Unitech w wersjach europejskich. Sprawdź ceny i stany. Dobierz zgodne baterie, stacje i wyposażenie do ładowania.' },
   { id: 'tsl', slug: 'tsl', name: 'TSL', logo: '/images/manufacturers/tsl.webp', seoTitle: 'TSL — czytniki UHF RFID i akcesoria | TAKMA', seoDescription: 'Czytniki RFID TSL 3128, 3138 i 3166 w wersjach europejskich. Porównaj warianty ze skanerem kodów i bez niego. Sprawdź ceny, stany i zgodne akcesoria.' },
   { id: 'brady', slug: 'brady', name: 'Brady', logo: '/images/manufacturers/brady.svg', seoTitle: 'Brady — producent tabletów i akcesoriów | TAKMA', seoDescription: 'Tablety przemysłowe Brady RT710 z Androidem. Sprawdź konfiguracje, ceny i dostępność. Dobierz baterie, stacje oraz klawiatury.' },
   { id: 'bixolon', slug: 'bixolon', name: 'BIXOLON', logo: '/images/manufacturers/bixolon.jpg', seoTitle: 'Drukarki RFID i akcesoria BIXOLON | TAKMA', seoDescription: 'Biurkowe i przemysłowe drukarki BIXOLON z UHF RFID. Porównaj PN, ceny i dostępność. Dobierz zgodne akcesoria.' },

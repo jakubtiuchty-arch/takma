@@ -54,6 +54,7 @@ const navigation: NavItem[] = [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
+      { name: 'Czytniki RFID', href: '/czytniki-rfid' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
       { name: 'Terminale Newland', href: '/terminale-newland' },
       { name: 'Terminale Honeywell', href: '/terminale-honeywell' },

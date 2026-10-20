@@ -1,3 +1,5 @@
+import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
+import { rfidReaderCategory } from './rfid-reader-category'
 import { tsl3128Products } from './tsl-3128-products'
 import { tsl3138Products, tsl3138Accessories } from './tsl-3138-products'
 import { tsl3166Products, tsl3166Accessories } from './tsl-3166-products'
@@ -425,6 +427,7 @@ export const subcategories: Subcategory[] = [
   rfidPrinterCategory,
   rfidTerminalCategory,
   rfidSledCategory,
+  rfidReaderCategory,
   {
     id: 'kolorowe-drukarki-etykiet',
     slug: 'kolorowe-drukarki-etykiet',
@@ -95818,14 +95821,15 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
 }
 
 const rawProductList: Product[] = [
+  ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,
   ...tsl3138Products, ...tsl3138Accessories,
   ...tsl3166Products,
