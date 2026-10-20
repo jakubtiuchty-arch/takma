@@ -13,6 +13,7 @@
 
 - Przy każdej zmianie strony najpierw sprawdź analogiczne istniejące karty lub sekcje i użyj tych samych komponentów, układu oraz sposobu działania. Nie wprowadzaj własnych wzorców bez wyraźnego polecenia użytkownika.
 - Przed publikacją porównaj zmienioną stronę z istniejącą kartą wzorcową, także wizualnie. Sprawdź rozmiary zdjęć, odstępy, przyciski oraz rozwijanie i zwijanie sekcji.
+- Po wdrożeniu sprawdź zdjęcia na produkcji także w kategorii i w kafelkach produktów powiązanych, obok co najmniej dwóch podobnych produktów. Zmierz proporcje pola, widoczny obiekt i wyrównanie nazw. Kontrola samej galerii produktu nie wystarcza.
 - Akcesoria na karcie produktu: początkowo pokaż pierwszy rząd (4 produkty na komputerze), a pozostałe udostępnij przez istniejące rozwijanie „Pokaż pozostałe” i zwijanie „Zwiń”. Zachowaj standardowy rozmiar zdjęć i jeden wspólny dział „Akcesoria”, chyba że użytkownik poleci inaczej.
 - Zdjęcia produktów: przed publikacją zmierz wymiary pola zdjęcia oraz udział widocznego produktu w kadrze i porównaj z co najmniej dwiema istniejącymi kartami podobnych produktów. Sam identyczny rozmiar pola nie wystarcza. Jeśli produkt jest za duży, popraw skalę i białe marginesy w Imagen (`image_gen`), zachowaj konstrukcję produktu i ponownie sprawdź wynik na stronie. Nie zmieniaj układu kafelków, aby dopasować pojedyncze zdjęcie.
 

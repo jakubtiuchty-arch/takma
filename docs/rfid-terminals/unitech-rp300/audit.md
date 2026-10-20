@@ -22,3 +22,11 @@ Jedna sekcjaAkcesoria:4widoczne,piąte poPokażpozostałe;Zwińdziała. Tabela P
 
 ## Kontrola
 TypeScript iESLint bezbłędów. Wszystkie6kart,4PDFikategoriaHTTP200. ObaPN mają właściweceny i schemaInStock/OutOfStock. Powiązania i rejestracja podkategorii poprawne. /admin/etykiety-na-magazynie zachowane307dologowania. Produkcja wyłącznieGit.
+
+## Korekta kafelka po zgłoszeniu użytkownika
+
+Przyczyną rozbieżności był warunek w ProductCard: wpis w product-image-frames zmieniał pole RP300 na kwadratowe. TSL3128 i3138 miały pola4:3. Sama kontrola galerii nie wykryła błędu w kategorii.
+
+Dla RP300 zastosowano istniejącą normalizację obrazu w standardowym polu4:3. Widoczny długi bok ma58% wysokości pola, dopasowane do zdjęć TSL z naturalnymi marginesami i paddingiem. Pozostałe produkty i galeria RP300 zachowują dotychczasowe ustawienia.
+
+Pomiar lokalny przy1280px: TSL3138,TSL3128,RP300 mają pola293.664×220.242px. Tytuły TSL3128 iRP300 mają identyczne y2117.469px w ostatnim rzędzie. Porównanie wizualne potwierdziło podobną wielkość sprzętu. AGENTS.md uzupełniono o kontrolę kategorii i kafelków powiązanych na produkcji po wdrożeniu.

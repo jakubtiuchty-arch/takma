@@ -60,6 +60,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
   const placeholderLogo = product.manufacturerId === 'brady' && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
+  // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
+  const uniformGridImage = product.uniformImage || product.id === 'unitech-rp300'
+  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : product.uniformImageFraction
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&
@@ -279,10 +282,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       {/* Image */}
       <Link
         href={productHref}
-        className={`relative ${!product.uniformImage && getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
+        className={`relative ${!uniformGridImage && getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={product.uniformImage ? getUniformProductImageStyle(product.images[0], 4 / 3, product.uniformImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={uniformGridImage ? getUniformProductImageStyle(product.images[0], 4 / 3, gridImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : placeholderLogo ? (
           <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
         ) : (
