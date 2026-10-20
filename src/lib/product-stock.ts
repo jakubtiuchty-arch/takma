@@ -1,3 +1,4 @@
+import { tsl3138Products, tsl3138Accessories } from '@/data/tsl-3138-products'
 import { tsl3166Products, tsl3166Accessories } from '@/data/tsl-3166-products'
 import { newlandMt93UhfProducts, newlandMt93UhfAccessories } from '@/data/newland-mt93-uhf-products'
 import { honeywellIh45Products, honeywellIh45Accessories } from '@/data/honeywell-ih45-products'
@@ -41,6 +42,8 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...tsl3138Products.map(product => product.slug),
+  ...tsl3138Accessories.map(product => product.slug),
   ...tsl3166Products.map(product => product.slug),
   ...tsl3166Accessories.map(product => product.slug),
   ...newlandMt93UhfProducts.map(product => product.slug),

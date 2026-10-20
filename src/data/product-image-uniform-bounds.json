@@ -446,5 +446,29 @@
     530,
     1103,
     1066
+  ],
+  "/images/products/tsl-3138-battery-v1.webp": [
+    1254,
+    1254,
+    380,
+    212,
+    970,
+    1030
+  ],
+  "/images/products/tsl-3138-hotswap-v1.webp": [
+    1254,
+    1254,
+    115,
+    326,
+    1115,
+    982
+  ],
+  "/images/products/tsl-3138-psu-v1.webp": [
+    1254,
+    1254,
+    67,
+    414,
+    1215,
+    850
   ]
 }

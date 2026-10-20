@@ -16,7 +16,7 @@ export interface Manufacturer {
 }
 
 export const manufacturers: Manufacturer[] = [
-  { id: 'tsl', slug: 'tsl', name: 'TSL', logo: '/images/manufacturers/tsl.webp', seoTitle: 'TSL — czytniki UHF RFID i akcesoria | TAKMA', seoDescription: 'Czytniki RFID TSL 3166 w wersjach europejskich. Porównaj warianty ze skanerem kodów i bez niego. Sprawdź ceny, stany i zgodne akcesoria.' },
+  { id: 'tsl', slug: 'tsl', name: 'TSL', logo: '/images/manufacturers/tsl.webp', seoTitle: 'TSL — czytniki UHF RFID i akcesoria | TAKMA', seoDescription: 'Czytniki RFID TSL 3138 i 3166 w wersjach europejskich. Porównaj warianty ze skanerem kodów i bez niego. Sprawdź ceny, stany i zgodne akcesoria.' },
   { id: 'brady', slug: 'brady', name: 'Brady', logo: '/images/manufacturers/brady.svg', seoTitle: 'Brady — producent tabletów i akcesoriów | TAKMA', seoDescription: 'Tablety przemysłowe Brady RT710 z Androidem. Sprawdź konfiguracje, ceny i dostępność. Dobierz baterie, stacje oraz klawiatury.' },
   { id: 'bixolon', slug: 'bixolon', name: 'BIXOLON', logo: '/images/manufacturers/bixolon.jpg', seoTitle: 'Drukarki RFID i akcesoria BIXOLON | TAKMA', seoDescription: 'Biurkowe i przemysłowe drukarki BIXOLON z UHF RFID. Porównaj PN, ceny i dostępność. Dobierz zgodne akcesoria.' },
   { id: 'sato', slug: 'sato', name: 'SATO', logo: '/images/partners/logo_sato.jpg', seoTitle: 'Drukarki RFID i akcesoria SATO | TAKMA', seoDescription: 'Drukarki etykiet SATO z UHF RFID oraz zgodne moduły. Wybierz konfigurację, sprawdź ceny i dostępność.' },

@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "partNumber": "3138-ES1-EU",
+      "found": true,
+      "price": 5049.89,
+      "priceBrutto": 6211.36,
+      "stockPL": 0,
+      "stockDE": 5,
+      "inDelivery": 0,
+      "totalStock": 5,
+      "availability": "available",
+      "deliveryText": "Dostepny — wysylka 2-3 dni (5 szt.)",
+      "lastSync": "2026-10-20T04:26:55.735Z"
+    },
+    {
+      "partNumber": "31PH-01",
+      "found": true,
+      "price": 605.03,
+      "priceBrutto": 744.19,
+      "stockPL": 0,
+      "stockDE": 0,
+      "inDelivery": 0,
+      "totalStock": 0,
+      "availability": "unavailable",
+      "deliveryText": "Niedostepny",
+      "lastSync": "2026-10-20T04:26:55.735Z"
+    },
+    {
+      "partNumber": "31-HS-01",
+      "found": true,
+      "price": 183.78,
+      "priceBrutto": 226.05,
+      "stockPL": 0,
+      "stockDE": 0,
+      "inDelivery": 0,
+      "totalStock": 0,
+      "availability": "unavailable",
+      "deliveryText": "Niedostepny",
+      "lastSync": "2026-10-20T04:26:55.735Z"
+    },
+    {
+      "partNumber": "USBC-PSU-KIT45",
+      "found": true,
+      "price": 246.81,
+      "priceBrutto": 303.58,
+      "stockPL": 0,
+      "stockDE": 0,
+      "inDelivery": 5,
+      "totalStock": 5,
+      "availability": "on-order",
+      "deliveryText": "W dostawie (5 szt.)",
+      "lastSync": "2026-10-20T04:26:55.735Z"
+    }
+  ],
+  "count": 4,
+  "found": 4,
+  "_source": "live"
+}

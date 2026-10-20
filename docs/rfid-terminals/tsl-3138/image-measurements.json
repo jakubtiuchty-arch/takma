@@ -1,0 +1,77 @@
+[
+  {
+    "key": "main",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      201,
+      222,
+      998,
+      1047
+    ],
+    "heightPercent": 65.9,
+    "widthPercent": 63.6
+  },
+  {
+    "key": "front",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      372,
+      223,
+      876,
+      1096
+    ],
+    "heightPercent": 69.7,
+    "widthPercent": 40.3
+  },
+  {
+    "key": "battery",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      380,
+      212,
+      970,
+      1030
+    ],
+    "heightPercent": 65.3,
+    "widthPercent": 47.1
+  },
+  {
+    "key": "hotswap",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      115,
+      326,
+      1115,
+      982
+    ],
+    "heightPercent": 52.4,
+    "widthPercent": 79.8
+  },
+  {
+    "key": "psu",
+    "canvas": [
+      1254,
+      1254
+    ],
+    "bbox": [
+      67,
+      414,
+      1215,
+      850
+    ],
+    "heightPercent": 34.8,
+    "widthPercent": 91.6
+  }
+]
