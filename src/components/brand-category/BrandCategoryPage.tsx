@@ -551,6 +551,13 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               </div>
             )}
 
+            {bc.detailedDescription && (
+              <section className="mt-12 definition-content">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Jak wybrać {odmien(bc.name)}?</h2>
+                <RichText text={bc.detailedDescription} className="text-gray-600 leading-relaxed sm:text-justify space-y-3" />
+              </section>
+            )}
+
             {/* Fallback FAQ if no rich content */}
             {!content && bc.faq.length > 0 && (
               <div className="mt-12">
