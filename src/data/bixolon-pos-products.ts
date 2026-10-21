@@ -88,7 +88,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-330IIIESK/BEG",
         "name": "SRP-330III — USB, RS-232, Ethernet",
         "attributes": {
-          "Interfejsy": "USB, RS-232, Ethernet"
+          "Port dodatkowy": "Ethernet"
         },
         "priceFrom": 593.06,
         "availability": "available"
@@ -96,9 +96,7 @@ export const bixolonPosProducts: Product[] = [
       {
         "partNumber": "SRP-330IIISK/BEG",
         "name": "SRP-330III — USB, RS-232",
-        "attributes": {
-          "Interfejsy": "USB, RS-232"
-        },
+        "attributes": {},
         "priceFrom": 491.57,
         "availability": "available"
       }
@@ -131,7 +129,10 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Port dodatkowy": "Złącze przewodowe dodane do USB i RS-232.\n\n• Ethernet — przewodowa sieć lokalna.\n\n• Puste pole — wariant ma tylko złącza standardowe."
+    }
   },
   {
     "id": "bixolon-srp-350v",
@@ -222,10 +223,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350VK/BEG",
         "name": "SRP-350V — USB",
         "attributes": {
-          "Model": "SRP-350V",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "300 mm/s",
-          "Interfejsy": "USB"
+          "Odmiana": "SRP-350V"
         },
         "priceFrom": 571.69,
         "availability": "available"
@@ -234,10 +232,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350VSK/BEG",
         "name": "SRP-350V — USB, RS-232",
         "attributes": {
-          "Model": "SRP-350V",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "300 mm/s",
-          "Interfejsy": "USB, RS-232"
+          "Odmiana": "SRP-350V",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 571.69,
         "availability": "available"
@@ -246,10 +242,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352VK/BEG",
         "name": "SRP-352V — USB",
         "attributes": {
-          "Model": "SRP-352V",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "270 mm/s",
-          "Interfejsy": "USB"
+          "Odmiana": "SRP-352V"
         },
         "priceFrom": 571.69,
         "availability": "unavailable"
@@ -258,10 +251,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352VSK/BEG",
         "name": "SRP-352V — USB, RS-232",
         "attributes": {
-          "Model": "SRP-352V",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "270 mm/s",
-          "Interfejsy": "USB, RS-232"
+          "Odmiana": "SRP-352V",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 571.69,
         "availability": "unavailable"
@@ -296,7 +287,11 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Odmiana": "Odmiana drukarki w rodzinie SRP-350V.\n\n• SRP-350V — 180 dpi, do 300 mm/s.\n\n• SRP-352V — 203 dpi, do 270 mm/s.",
+      "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Puste pole — wariant ma tylko złącza standardowe."
+    }
   },
   {
     "id": "bixolon-srp-350plusv",
@@ -387,11 +382,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350PLUSVK/BEG",
         "name": "SRP-350plusV — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-350plusV",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "400 mm/s",
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-350plusV"
         },
         "priceFrom": 667.89,
         "availability": "available"
@@ -400,11 +391,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350plusVSK/BEG",
         "name": "SRP-350plusV — USB, RS-232, Ethernet",
         "attributes": {
-          "Model": "SRP-350plusV",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "400 mm/s",
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-350plusV",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 699.91,
         "availability": "available"
@@ -413,10 +401,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350plusVBaK/BEG",
         "name": "SRP-350plusV — USB, Ethernet, Bluetooth",
         "attributes": {
-          "Model": "SRP-350plusV",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "400 mm/s",
-          "Interfejsy": "USB, Ethernet",
+          "Odmiana": "SRP-350plusV",
           "Łączność bezprzewodowa": "Bluetooth"
         },
         "priceFrom": 881.61,
@@ -426,11 +411,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350PlusVPWK",
         "name": "SRP-350plusV — USB, Ethernet, PoweredUSB",
         "attributes": {
-          "Model": "SRP-350plusV",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "400 mm/s",
-          "Interfejsy": "USB, Ethernet, PoweredUSB",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-350plusV",
+          "Port dodatkowy": "PoweredUSB"
         },
         "priceFrom": 641.16,
         "availability": "unavailable"
@@ -439,10 +421,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-350PLUSVWDAK/BEG",
         "name": "SRP-350plusV — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Model": "SRP-350plusV",
-          "Rozdzielczość": "180 dpi",
-          "Prędkość druku": "400 mm/s",
-          "Interfejsy": "USB, Ethernet",
+          "Odmiana": "SRP-350plusV",
           "Łączność bezprzewodowa": "Wi-Fi"
         },
         "priceFrom": 935.04,
@@ -452,10 +431,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352plusVBaK/BEG",
         "name": "SRP-352plusV — USB, Ethernet, Bluetooth",
         "attributes": {
-          "Model": "SRP-352plusV",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "370 mm/s",
-          "Interfejsy": "USB, Ethernet",
+          "Odmiana": "SRP-352plusV",
           "Łączność bezprzewodowa": "Bluetooth"
         },
         "priceFrom": 881.61,
@@ -465,11 +441,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352plusVK/BEG",
         "name": "SRP-352plusV — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-352plusV",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "370 mm/s",
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-352plusV"
         },
         "priceFrom": 667.89,
         "availability": "unavailable"
@@ -478,11 +450,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352plusVSK/BEG",
         "name": "SRP-352plusV — USB, RS-232, Ethernet",
         "attributes": {
-          "Model": "SRP-352plusV",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "370 mm/s",
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-352plusV",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 699.91,
         "availability": "unavailable"
@@ -491,10 +460,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-352plusVWDaK/BEG",
         "name": "SRP-352plusV — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Model": "SRP-352plusV",
-          "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "370 mm/s",
-          "Interfejsy": "USB, Ethernet",
+          "Odmiana": "SRP-352plusV",
           "Łączność bezprzewodowa": "Wi-Fi"
         },
         "priceFrom": 935.04,
@@ -530,7 +496,11 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Odmiana": "Odmiana drukarki w rodzinie SRP-350plusV.\n\n• SRP-350plusV — 180 dpi, do 400 mm/s.\n\n• SRP-352plusV — 203 dpi, do 370 mm/s.",
+      "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe."
+    }
   },
   {
     "id": "bixolon-srp-380",
@@ -619,9 +589,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-382K/BEG",
         "name": "SRP-382 — USB",
         "attributes": {
-          "Model": "SRP-382",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB"
+          "Odmiana": "SRP-382"
         },
         "priceFrom": 868.22,
         "availability": "unavailable"
@@ -630,9 +598,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-380EK",
         "name": "SRP-380 — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-380",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, Ethernet"
+          "Odmiana": "SRP-380",
+          "Port dodatkowy": "Ethernet"
         },
         "priceFrom": 951.03,
         "availability": "unavailable"
@@ -641,9 +608,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-380K",
         "name": "SRP-380 — USB",
         "attributes": {
-          "Model": "SRP-380",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB"
+          "Odmiana": "SRP-380"
         },
         "priceFrom": 868.22,
         "availability": "unavailable"
@@ -652,9 +617,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-380PWK",
         "name": "SRP-380 — USB, PoweredUSB",
         "attributes": {
-          "Model": "SRP-380",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, PoweredUSB"
+          "Odmiana": "SRP-380",
+          "Port dodatkowy": "PoweredUSB"
         },
         "priceFrom": 833.51,
         "availability": "unavailable"
@@ -663,9 +627,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-380SK",
         "name": "SRP-380 — USB, RS-232",
         "attributes": {
-          "Model": "SRP-380",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, RS-232"
+          "Odmiana": "SRP-380",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 927.03,
         "availability": "unavailable"
@@ -674,9 +637,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-382EK/BEG",
         "name": "SRP-382 — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-382",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB, Ethernet"
+          "Odmiana": "SRP-382",
+          "Port dodatkowy": "Ethernet"
         },
         "priceFrom": 951.03,
         "availability": "unavailable"
@@ -685,9 +647,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-382PWK",
         "name": "SRP-382 — USB, PoweredUSB",
         "attributes": {
-          "Model": "SRP-382",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB, PoweredUSB"
+          "Odmiana": "SRP-382",
+          "Port dodatkowy": "PoweredUSB"
         },
         "priceFrom": 833.51,
         "availability": "unavailable"
@@ -696,9 +657,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-382SK",
         "name": "SRP-382 — USB, RS-232",
         "attributes": {
-          "Model": "SRP-382",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB, RS-232"
+          "Odmiana": "SRP-382",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 927.03,
         "availability": "unavailable"
@@ -733,7 +693,11 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Odmiana": "Odmiana drukarki w rodzinie SRP-380.\n\n• SRP-380 — 180 dpi, do 350 mm/s.\n\n• SRP-382 — 203 dpi, do 350 mm/s.",
+      "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• Ethernet — przewodowa sieć lokalna.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe."
+    }
   },
   {
     "id": "bixolon-srp-380plus",
@@ -949,7 +913,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-Q200EWDK",
         "name": "SRP-Q200 — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
+          "Port dodatkowy": "Ethernet",
           "Łączność bezprzewodowa": "Wi-Fi"
         },
         "priceFrom": 654.5,
@@ -959,8 +923,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-Q200SK",
         "name": "SRP-Q200 — USB, RS-232",
         "attributes": {
-          "Interfejsy": "USB, RS-232",
-          "Łączność bezprzewodowa": "Brak"
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 480.87,
         "availability": "unavailable"
@@ -995,7 +958,10 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Ethernet — przewodowa sieć lokalna."
+    }
   },
   {
     "id": "bixolon-srp-q300",
@@ -1213,10 +1179,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-F310IICOSK",
         "name": "SRP-F310II — USB, RS-232, Ethernet",
         "attributes": {
-          "Model": "SRP-F310II",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-F310II",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 761.36,
         "availability": "unavailable"
@@ -1225,10 +1189,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-F310IICOK/BEG",
         "name": "SRP-F310II — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-F310II",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-F310II"
         },
         "priceFrom": 721.32,
         "availability": "unavailable"
@@ -1237,9 +1198,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-F310IICOWDK",
         "name": "SRP-F310II — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Model": "SRP-F310II",
-          "Rozdzielczość": "180 dpi",
-          "Interfejsy": "USB, Ethernet",
+          "Odmiana": "SRP-F310II",
           "Łączność bezprzewodowa": "Wi-Fi"
         },
         "priceFrom": 868.22,
@@ -1249,10 +1208,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-F312IICOK",
         "name": "SRP-F312II — USB, Ethernet",
         "attributes": {
-          "Model": "SRP-F312II",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-F312II"
         },
         "priceFrom": 721.32,
         "availability": "unavailable"
@@ -1261,10 +1217,8 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-F312IICOSK",
         "name": "SRP-F312II — USB, RS-232, Ethernet",
         "attributes": {
-          "Model": "SRP-F312II",
-          "Rozdzielczość": "203 dpi",
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Odmiana": "SRP-F312II",
+          "Port dodatkowy": "RS-232"
         },
         "priceFrom": 761.36,
         "availability": "unavailable"
@@ -1300,7 +1254,11 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Odmiana": "Odmiana drukarki w rodzinie SRP-F310II.\n\n• SRP-F310II — 180 dpi, do 350 mm/s.\n\n• SRP-F312II — 203 dpi, do 350 mm/s.",
+      "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Puste pole — wariant ma tylko złącza standardowe."
+    }
   },
   {
     "id": "bixolon-srp-s300ii",
@@ -1399,7 +1357,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIBAK/BEG",
         "name": "SRP-S300II — USB, Ethernet, Bluetooth",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Bluetooth",
           "Materiał": "Re-stick / potwierdzenia"
         },
@@ -1410,8 +1367,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIK/BEG",
         "name": "SRP-S300II — USB, Ethernet",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Re-stick / potwierdzenia"
         },
         "priceFrom": 1474.86,
@@ -1421,8 +1376,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIPWK/BEG",
         "name": "SRP-S300II — USB, Ethernet, PoweredUSB",
         "attributes": {
-          "Interfejsy": "USB, Ethernet, PoweredUSB",
-          "Łączność bezprzewodowa": "Brak",
+          "Port dodatkowy": "PoweredUSB",
           "Materiał": "Re-stick / potwierdzenia"
         },
         "priceFrom": 1497.04,
@@ -1432,8 +1386,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IISK/BEG",
         "name": "SRP-S300II — USB, RS-232, Ethernet",
         "attributes": {
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Port dodatkowy": "RS-232",
           "Materiał": "Re-stick / potwierdzenia"
         },
         "priceFrom": 1537.7,
@@ -1443,7 +1396,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIWDAK/BEG",
         "name": "SRP-S300II — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Materiał": "Re-stick / potwierdzenia"
         },
@@ -1454,7 +1406,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIXBaK/BEG",
         "name": "SRP-S300II Linerless — USB, Ethernet, Bluetooth",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Bluetooth",
           "Materiał": "Linerless Extreme"
         },
@@ -1465,8 +1416,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIXK/BEG",
         "name": "SRP-S300II Linerless — USB, Ethernet",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Linerless Extreme"
         },
         "priceFrom": 1729.91,
@@ -1476,8 +1425,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIXPWK/BEG",
         "name": "SRP-S300II Linerless — USB, Ethernet, PoweredUSB",
         "attributes": {
-          "Interfejsy": "USB, Ethernet, PoweredUSB",
-          "Łączność bezprzewodowa": "Brak",
+          "Port dodatkowy": "PoweredUSB",
           "Materiał": "Linerless Extreme"
         },
         "priceFrom": 1752.09,
@@ -1487,8 +1435,7 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIXSK/BEG",
         "name": "SRP-S300II Linerless — USB, RS-232, Ethernet",
         "attributes": {
-          "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Port dodatkowy": "RS-232",
           "Materiał": "Linerless Extreme"
         },
         "priceFrom": 1796.45,
@@ -1498,7 +1445,6 @@ export const bixolonPosProducts: Product[] = [
         "partNumber": "SRP-S300IIXWDaK/BEG",
         "name": "SRP-S300II Linerless — USB, Ethernet, Wi-Fi",
         "attributes": {
-          "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Materiał": "Linerless Extreme"
         },
@@ -1535,7 +1481,11 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-21",
+    "variantAttributeTooltips": {
+      "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe.",
+      "Materiał": "Materiał, do którego przygotowano wariant.\n\n• Re-stick / potwierdzenia — paragony i etykiety Re-stick z klejem do ponownego przyklejenia.\n\n• Linerless Extreme — etykiety bez podkładu Linerless Extreme; warianty z literą X w PN."
+    }
   }
 ]
 
