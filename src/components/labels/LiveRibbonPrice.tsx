@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Badge } from '@/components/ui'
 import { useCartStore } from '@/store/cartStore'
 import { PlusIcon, CheckIcon } from '@/components/ui/Icons'
+import { timeoutSignal } from '@/lib/timeout-signal'
 
 type Availability = 'available' | 'on-order' | 'unavailable'
 
@@ -34,7 +35,7 @@ export function LiveRibbonProvider({
   useEffect(() => {
     let cancelled = false
     fetch(`/api/stock?pn=${partNumber}`, {
-      signal: AbortSignal.timeout(15000),
+      signal: timeoutSignal(15000),
       cache: 'no-store',
     })
       .then(r => r.ok ? r.json() : null)
@@ -134,7 +135,7 @@ export function LiveRibbonAvailability() {
     return <span className="inline-block h-6 w-24 bg-slate-100 rounded-full animate-pulse" />
   }
   if (!availability) return null
-  const cfg = AVAILABILITY_LABEL[availability]
+  const cfg = AVAILABILITY_LABEL[availability] ?? AVAILABILITY_LABEL.unavailable
   return <Badge variant={cfg.variant} size="sm">{cfg.label}</Badge>
 }
 

@@ -104,7 +104,7 @@ function VariantCard({
   const liveAvailability = liveSignal ? stockInfo!.availability : variant.availability
   const livePrice = liveSignal && stockInfo!.price ? stockInfo!.price : variant.priceFrom
   const isUnavailable = liveAvailability === 'unavailable'
-  const availability = AVAILABILITY_CONFIG[liveAvailability]
+  const availability = AVAILABILITY_CONFIG[liveAvailability] ?? AVAILABILITY_CONFIG.unavailable
 
   // URL wariantu: /produkt/[slug]/[size]/[pn] — statyczny, indeksowalny per SKU
   const sizeSlug = rozmiar ? thermalSizeSlug(rozmiar) : ''

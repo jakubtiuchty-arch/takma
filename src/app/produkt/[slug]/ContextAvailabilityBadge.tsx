@@ -35,9 +35,9 @@ export default function ContextAvailabilityBadge({
 
   // Forma żeńska (taśma): każdy stan poza „dostępna" pokazujemy jako „Niedostępna".
   const labelFor = (a: 'available' | 'on-order' | 'unavailable') =>
-    feminine ? (a === 'available' ? 'Dostępna' : 'Niedostępna') : config[a].label
+    feminine ? (a === 'available' ? 'Dostępna' : 'Niedostępna') : (config[a] ?? config.unavailable).label
   const variantFor = (a: 'available' | 'on-order' | 'unavailable') =>
-    feminine && a === 'on-order' ? ('danger' as const) : config[a].variant
+    feminine && a === 'on-order' ? ('danger' as const) : (config[a] ?? config.unavailable).variant
 
   // Podczas ładowania — pokaż statyczną dostępność
   if (loading) {

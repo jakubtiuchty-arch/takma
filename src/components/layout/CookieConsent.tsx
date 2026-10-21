@@ -11,7 +11,10 @@ export default function CookieConsent() {
 
   useEffect(() => {
     setMounted(true)
-    const stored = localStorage.getItem('takma-cookie-consent')
+    // localStorage rzuca SecurityError przy zablokowanych danych witryny (np. w rendererze
+    // Google). Bez try/catch wyjątek zamieniał całą stronę na ekran błędu.
+    let stored: string | null = null
+    try { stored = localStorage.getItem('takma-cookie-consent') } catch { /* brak dostępu */ }
     if (!stored) {
       setConsent('pending')
     } else {
@@ -19,15 +22,14 @@ export default function CookieConsent() {
     }
   }, [])
 
-  const handleAccept = () => {
-    localStorage.setItem('takma-cookie-consent', 'accepted')
-    setConsent('accepted')
+  const zapisz = (wybor: ConsentState) => {
+    try { localStorage.setItem('takma-cookie-consent', wybor) } catch { /* brak dostępu */ }
+    setConsent(wybor)
   }
 
-  const handleReject = () => {
-    localStorage.setItem('takma-cookie-consent', 'rejected')
-    setConsent('rejected')
-  }
+  const handleAccept = () => zapisz('accepted')
+
+  const handleReject = () => zapisz('rejected')
 
   if (!mounted || consent !== 'pending') return null
 

@@ -57,7 +57,7 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
   const avail = liveSignal ? stockInfo!.availability : variant.availability
   // Taśmy: cena tylko live — statyczne priceFrom jest nieaktualne i myliło (344,75 → 32,68 zł). Etykiety: fallback zostaje.
   const price = liveSignal && stockInfo!.price ? stockInfo!.price : (kind !== 'label' ? undefined : variant.priceFrom)
-  const cfg = AVAIL[avail]
+  const cfg = AVAIL[avail] ?? AVAIL.unavailable
   // ?drukarka= niesie kontekst drukarki na kartę etykiety, żeby dobór taśmy nie polecił rolki 450 m do ZD421t (audyt ZD-07)
   const href = kind === 'rfid'
     ? `/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`

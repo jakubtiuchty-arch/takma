@@ -244,8 +244,8 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
-    ? availabilityConfig[stock!.availability]
-    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+    ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
+    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
   const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
   const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
@@ -337,8 +337,8 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   const avail = liveSignal
-    ? availabilityConfig[stock!.availability]
-    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability]
+    ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
+    : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
   const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
   const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
   const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom

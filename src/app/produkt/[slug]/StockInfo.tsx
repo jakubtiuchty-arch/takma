@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Badge } from '@/components/ui'
 import type { StockInfo as StockInfoType } from '@/lib/ingram'
+import { timeoutSignal } from '@/lib/timeout-signal'
 
 // ============================================
 // GLOBAL STOCK CACHE
@@ -47,7 +48,7 @@ async function executeBatch() {
     const responses = await Promise.all(
       chunks.map(async (chunk) => {
         const res = await fetch(`/api/stock?pn=${chunk.join(',')}`, {
-          signal: AbortSignal.timeout(30000), // 30s max — nigdy wiecej nieskonczony spinner
+          signal: timeoutSignal(30000), // 30s max — nigdy wiecej nieskonczony spinner
         })
         if (!res.ok) throw new Error('Fetch failed')
         return res.json()
@@ -250,12 +251,14 @@ export function LiveAvailabilityBadge({
   }
 
   if (loading || partNumbers.length === 0 || stockData.size === 0) {
-    return <Badge variant={config[staticAvailability].variant}>{config[staticAvailability].label}</Badge>
+    const c = config[staticAvailability] ?? config.unavailable
+    return <Badge variant={c.variant}>{c.label}</Badge>
   }
 
   const anyFound = partNumbers.some(pn => stockData.get(pn)?.found)
   if (!anyFound) {
-    return <Badge variant={config[staticAvailability].variant}>{config[staticAvailability].label}</Badge>
+    const c = config[staticAvailability] ?? config.unavailable
+    return <Badge variant={c.variant}>{c.label}</Badge>
   }
 
   let hasStock = false

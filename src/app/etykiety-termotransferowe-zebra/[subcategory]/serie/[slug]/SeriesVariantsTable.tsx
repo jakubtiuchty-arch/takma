@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { thermalSizeSlug, type ProductVariant } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
+import { timeoutSignal } from '@/lib/timeout-signal'
 import { ChevronDownIcon, HelpCircleIcon, SearchIcon, CloseIcon } from '@/components/ui/Icons'
 import { LABEL_CORE } from '@/data/label-core'
 
@@ -263,7 +264,7 @@ export default function SeriesVariantsTable({
     Promise.all(
       chunks.map(chunk =>
         fetch(`/api/stock?pn=${chunk.join(',')}`, {
-          signal: AbortSignal.timeout(15000),
+          signal: timeoutSignal(15000),
           cache: 'no-store',
         })
           .then(r => (r.ok ? r.json() : { results: [] }))

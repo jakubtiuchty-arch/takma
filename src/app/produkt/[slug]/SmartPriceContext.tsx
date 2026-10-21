@@ -6,6 +6,7 @@ import { createContext, useContext, useMemo, useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Product } from '@/data/products'
 import type { StockInfo as StockResult } from '@/lib/ingram'
+import { timeoutSignal } from '@/lib/timeout-signal'
 import { activePromo } from '@/data/promos'
 import { getMagicardStock } from '@/lib/magicard-offer'
 import { selectProductVariant } from '@/lib/product-variant-offers'
@@ -95,7 +96,7 @@ export function SmartPriceProvider({
     Promise.all(
       chunks.map(chunk =>
         fetch(`/api/stock?pn=${chunk.join(',')}`, {
-          signal: AbortSignal.timeout(15000),
+          signal: timeoutSignal(15000),
           cache: 'no-store',
         })
           .then(r => {

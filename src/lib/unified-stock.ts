@@ -26,6 +26,13 @@ const newlandPNs = new Set(products.filter(p => p.manufacturerId === 'newland').
 
 const VAT = 1.23           // 23% VAT
 
+// StockCache trzyma dostępność jako zwykły tekst. Wartość spoza zbioru (np. null albo „limited”)
+// trafiała do klienta i wywracała kartę produktu w przeglądarce, więc sprowadzamy ją do „unavailable”.
+const DOSTEPNOSCI = new Set(['available', 'on-order', 'unavailable'])
+function normalizujDostepnosc(v: string | null | undefined): StockInfo['availability'] {
+  return v && DOSTEPNOSCI.has(v) ? (v as StockInfo['availability']) : 'unavailable'
+}
+
 // Cena kartonowa i cena kontraktu serwisowego liczone z ceny zakupu — patrz lib/ceny-pochodne.
 const kartonyPN = mapaKartonow(products)
 const planySerwisowePN = numeryPlanowSerwisowych(products)
@@ -298,7 +305,7 @@ export async function lookupUnifiedStock(
           stockDE: c.stockDE,
           inDelivery: c.inDelivery,
           totalStock: c.totalStock,
-          availability: c.availability as StockInfo['availability'],
+          availability: normalizujDostepnosc(c.availability),
           deliveryText: c.deliveryText ?? 'Brak danych',
           lastSync: c.lastSync.toISOString(),
         }
@@ -400,7 +407,7 @@ export async function lookupUnifiedStock(
           incomingDate: c.incomingDate ?? undefined,
           totalStock: c.totalStock,
           jarltechId: c.jarltechId ?? undefined,
-          availability: c.availability as 'available' | 'on-order' | 'unavailable',
+          availability: normalizujDostepnosc(c.availability),
           deliveryText: c.deliveryText ?? '',
           lastSync: c.lastSync.toISOString(),
         }))]
@@ -647,7 +654,7 @@ export async function lookupUnifiedStock(
           stockDE: cached.stockDE,
           inDelivery: cached.inDelivery,
           totalStock: cached.totalStock,
-          availability: cached.availability as StockInfo['availability'],
+          availability: normalizujDostepnosc(cached.availability),
           deliveryText: cached.deliveryText ?? 'Brak danych',
           lastSync: cached.lastSync.toISOString(),
         }

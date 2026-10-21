@@ -136,7 +136,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   const availability = product.quoteOnly
     ? { label: 'Na zapytanie', variant: 'info' as const }
-    : availabilityConfig[liveAvailability]
+    : availabilityConfig[liveAvailability] ?? availabilityConfig.unavailable
 
   const gaItem = () => ({
     item_id: product.id,
