@@ -6,6 +6,7 @@ import { prisma } from '@/lib/db'
 import { getSessionFromCookie } from '@/lib/auth'
 
 export async function setTenderStatus(id: string, status: 'new' | 'watched' | 'dismissed') {
+  if (!['new', 'watched', 'dismissed'].includes(status)) throw new Error('Nieprawidłowy status')
   const session = await getSessionFromCookie()
   if (!session) throw new Error('Unauthorized')
   await prisma.tender.update({ where: { id }, data: { status } })

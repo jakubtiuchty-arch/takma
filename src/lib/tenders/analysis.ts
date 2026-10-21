@@ -60,12 +60,14 @@ Zwróć WYŁĄCZNIE JSON: {"score":50,"reason":"...","decision":"unknown","parts
       return [part]
     })
     const incomplete = bundle.incomplete || unverified
-    const analysis: TenderAnalysis = { ...result, parts, documents: bundle.evidence, incomplete, version: 2 }
+    const analysis: TenderAnalysis = { ...result, parts, documents: bundle.evidence, incomplete, version: 2,
+      ...(unverified ? { decision: 'unknown' as const, reason: 'Wykryto możliwy zakres dla TAKMA, ale nie potwierdzono szczegółów części cytatem. Sprawdź dokumentację.' } : {}),
+    }
     if (incomplete) analysis.warnings.push('Dokumentacja lub dowody są niepełne. Sprawdź załączniki i możliwość oferty na całą część.')
     // Wynik nie usuwa kandydata. Niepełna analiza trafia też do widoku Do przejrzenia.
-    const score = result.score
+    const score = unverified ? Math.min(59, result.score) : result.score
     await prisma.tender.updateMany({ where: { id, contentHash: n.contentHash, amendedAt: n.amendedAt }, data: {
-      score, aiReason: result.reason, analysis, analysisStatus: incomplete ? 'review' : 'done',
+      score, aiReason: analysis.reason, analysis, analysisStatus: incomplete ? 'review' : 'done',
       analysisError: null, analyzedAt: new Date(), analysisAttempts: { increment: 1 }, nextCheckAt: new Date(Date.now() + 24 * 3600000),
     } })
     return { ok: true, score, incomplete }
