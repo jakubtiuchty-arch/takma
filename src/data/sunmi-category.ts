@@ -13,7 +13,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
     useCases: 'Który SUNMI do danego zadania?',
     comparisons: 'Różnice, które rozstrzygają wybór',
   },
-  technicalDeepDive: 'Porównaj sposób wpisywania danych, odczyt kodów i potrzebę drukowania. Poniższe zestawienie opisuje oferowane konfiguracje. Szczegóły poszczególnych PN znajdziesz na kartach produktów.',
+  technicalDeepDive: 'Porównaj sposób wpisywania danych, odczyt kodów i potrzebę drukowania. Poniższe zestawienie opisuje oferowane konfiguracje. Szczegóły poszczególnych PN są na kartach produktów.',
   modelTable: [
     { name: 'SUNMI L3', href: '/produkt/sunmi-l3', role: 'Duży ekran do pracy z towarem', priceFrom: '', specs: [{ label: 'Ekran', value: '6,75 cala' }, { label: 'Odczyt', value: 'SS1111, SE4710 lub bez modułu' }, { label: 'Sieć', value: 'Wi-Fi 5, LTE' }], bestFor: 'Przyjęcia i kompletacja; skaner oraz tylne POGO według PN.' },
     { name: 'SUNMI L2Ks', href: '/produkt/sunmi-l2ks', role: 'Kolektor z klawiaturą', priceFrom: '', specs: [{ label: 'Ekran', value: '4 cale' }, { label: 'Klawiatura', value: '23 klawisze' }, { label: 'Odczyt', value: 'SE4770 lub SS1111' }], bestFor: 'Częste wpisywanie ilości i lokalizacji.' },
@@ -37,15 +37,15 @@ export const sunmiCategory: BrandCategoryRichContent = {
     { title: 'Wydruk przy kliencie', description: 'V3 i V3H drukują na papierze 58 mm. Do szerszego papieru wybierz V3 Plus. Wbudowana drukarka termiczna nie zastępuje polskiego urządzenia fiskalnego.' },
   ],
   uniqueInsights: { heading: 'Zgodność akcesoriów ma znaczenie', items: [
-    { title: 'Uchwyt L3 wymaga tylnych POGO', text: 'C14004144 pasuje do oferowanych PN P09070073 i P09070030. Nie wystarczy sama nazwa L3.' },
+    { title: 'Uchwyt L3 wymaga tylnych POGO', text: 'C14004144 pasuje do oferowanych PN P09070073 i P09070030. Pozostałe PN L3 w ofercie nie mają tylnych styków POGO.' },
     { title: 'Osłona a stacja L2H i L2s Pro', text: 'C14000144 wymaga zdjęcia osłony. C14004067 obsługuje terminale z osłoną i bez niej.' },
-    { title: 'V3 Plus ma osobne wyposażenie', text: 'Pasek C20000086 pasuje do V3, V3H i V3 Plus. Nie przenoś tej zgodności na stacje oraz osłony.' },
+    { title: 'V3 Plus ma osobne wyposażenie', text: 'Pasek na dłoń C20000086 pasuje do V3, V3H i V3 Plus. Stacja C14004112 i osłona C20000095 pasują do V3 i V3H.' },
   ] },
   comparisons: [
     { title: 'L2Ks czy terminal dotykowy?', content: '[L2Ks](/produkt/sunmi-l2ks) ma 23 fizyczne klawisze. Wybierz go do częstego wpisywania ilości. [L3](/produkt/sunmi-l3) ma większy ekran do rozbudowanych list i formularzy.' },
     { title: 'V3, V3H czy V3 Plus?', content: '[V3](/produkt/sunmi-v3) ma 3/32 GB i drukarkę 58 mm. [V3H](/produkt/sunmi-v3h) zwiększa pamięć do 4/64 GB i dodaje czytnik linii papilarnych. [V3 Plus](/produkt/sunmi-v3-plus) obsługuje papier 58–80 mm, Wi-Fi 6E i Android 14.' },
   ],
-  expertAuthority: 'Dobierzemy terminal do aplikacji, sposobu odczytu i sieci. Podaj wymagania programu oraz rodzaj kodów. Inne marki porównasz w kategorii [terminale mobilne](/terminale-mobilne).',
+  expertAuthority: 'Dobierzemy terminal do aplikacji, sposobu odczytu i sieci. Podaj wymagania programu oraz rodzaj kodów. Terminale innych marek są w kategorii [terminale mobilne](/terminale-mobilne).',
   howToSteps: [],
   faq: [
     { question: 'Który SUNMI ma fizyczną klawiaturę?', answer: 'L2Ks ma ekran 4 cale i 23 klawisze. Pozostałe pokazane tu modele obsługuje się przede wszystkim przez ekran dotykowy.' },
