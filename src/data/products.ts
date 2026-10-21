@@ -370,11 +370,11 @@ categories.push({
 categories.push({
   "id": "drukarki-pos",
   "slug": "drukarki-pos",
-  "name": "Drukarki POS",
-  "description": "Stacjonarne drukarki termiczne do potwierdzeń i biletów",
-  "seoTitle": "Drukarki POS — Epson i BIXOLON, ceny i stany",
-  "seoDescription": "Drukarki POS Epson i BIXOLON: termiczne, igłowe, atramentowe i hybrydowe. Porównaj PN, interfejsy, ceny, stany i zgodne akcesoria.",
-  "longDescription": "Drukarki POS Epson i BIXOLON do potwierdzeń, biletów, formularzy i zgodnych etykiet. Porównaj technologię druku, sposób podawania papieru i połączenie z aplikacją. To urządzenia niefiskalne.",
+  "name": "Drukarki POS i drukarki paragonów",
+  "description": "Niefiskalne drukarki paragonów, bonów, formularzy i etykiet do stanowisk POS",
+  "seoTitle": "Drukarki POS i drukarki paragonów — Epson, BIXOLON",
+  "seoDescription": "Drukarki POS Epson i BIXOLON: niefiskalne drukarki paragonów i bonów na papier 58 lub 80 mm, termiczne, igłowe i atramentowe. Ceny netto, stany i PN.",
+  "longDescription": "Drukarki POS Epson i BIXOLON do stanowisk sprzedaży: niefiskalne drukarki paragonów i bonów, drukarki igłowe i atramentowe do formularzy oraz drukarki etykiet do zamówień. Wybierz papier 58 lub 80 mm i port: USB, Ethernet, RS-232, Wi-Fi albo Bluetooth. Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). To urządzenia niefiskalne: nie zastępują kasy ani drukarki fiskalnej.",
   "icon": "printer",
   "productCount": 25
 })

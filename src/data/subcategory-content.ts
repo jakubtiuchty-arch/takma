@@ -88,6 +88,8 @@ export interface SubcategoryRichContent {
   modelComparison?: {
     heading: string
     note: string
+    /** Własne nagłówki kolumn; bez tego pola szablon zostaje przy „Druk / Podajnik / Łączność”. */
+    columns?: { printing?: string; feeder?: string; connectivity?: string }
     models: { name: string; href: string; printing: string; feeder: string; connectivity: string }[]
   }
   definition: { heading: string; content: string }
