@@ -187,3 +187,26 @@ Decyzje i wyłączenia:
 - RS20: kolejność zdjęć bez zmian. `cipherlab-rs20-1.webp` (800 px) pokazuje sam przód, `cipherlab-rs20-front.webp` (1600 px) przód i tył; opisy dopasowano do plików.
 - Do potwierdzenia u dostawcy, bez zmian w danych: Wi-Fi 5 / 6 w RK26 AK266M4DFNG41 i AK26EM4DNEG41; pasek w zestawie ARS20RBNNNN02 (zdjęcie pokazuje samą osłonę).
 - Zdjęcie przodu RK96 z uchwytem: niepobrane (wymaga zgody na pobranie pliku). Kandydaci na stronie producenta: https://cdn.cipherlab.com/comm/upimage/p-251031-06412.webp , p-251015-06055.jpg, p-251015-06056.jpg.
+
+## Nowe akcesoria i zdjęcie RK96 (22.10.2026, gałąź zdj/cipherlab2)
+
+Ceny i stany z `https://www.takma.com.pl/api/stock?pn=…` (22.10.2026, pole `price`):
+| Karta | PN | Cena netto PLN | Stan PL / DE / dostawa | Dostępność |
+|---|---|---:|---|---|
+| Zasilacz USB CipherLab EU do RK96, RS38 i RS38H | BPOWER0000142 | 167.73 | 0 / 0 / 0 | unavailable |
+| Folia ochronna na ekran CipherLab RS38 (5 szt.) | XRS3800X01504 | 201.33 | 0 / 11 / 0 | available |
+| Czytnik UHF RFID CipherLab RS36 | ARS35UHFNNEE1 | 4657.31 | 0 / 22 / 0 | available |
+
+Źródła zgodności i zawartości zestawu (nie w treści dla klienta):
+- BPOWER0000142: Jarltech, lista akcesoriów RK96 — https://jarltech.com/en/cipherlab-rk96-series („CipherLab Power Adapter, EU (clrs38pseu – BPOWER0000142) … Power Adapter USB-A, EU, 100-240V, incl. Cable USB-A/C”; waga 0,13 kg). ERS dla wersji UK BPOWER0000144: „suitable for” RS38H, RK96, RS38 — https://www.ers-online.co.uk/a13670/bpower0000144-uk-power-adapter . Producent nie wymienia zasilacza na stronach modeli ani w kartach katalogowych.
+- XRS3800X01504: ERS, akcesoria RS38 — https://www.ers-online.co.uk/RS38/accessories/all („Screen Protecter (5 pcs) for RS38”, GTIN 5715063397176); karta katalogowa RS38 wymienia „Screen protector”.
+- ARS35UHFNNEE1: Jarltech, lista akcesoriów RS36 — https://jarltech.com/en/cipherlab-rs36-series („UHF RFID Reader, Frequency: 865-868 MHz, incl.: EU adapter and Battery, fits for: RS36”); ERS — https://www.ers-online.co.uk/RS36/accessories/all ; karta katalogowa RS36: „UHF RFID Reader (work with standard battery only)”; strona RS36 producenta: „UHF RFID read and write capabilities”. Jarltech oznacza PN jako wycofywany z oferty, z następcą „clrs363536” — do obserwacji.
+
+Zdjęcia:
+- `/images/products/cipherlab-xrs3800x01504.webp` — https://www.cipherlab.com/files/RS38_Accessories-08.webp (500 px, konwersja do WebP bez obróbki, jak pozostałe akcesoria).
+- `/images/products/cipherlab-ars35uhfnnee1.webp` — https://www.cipherlab.com/files/RS35_Accessories_UHF_gun.jpg (350 px, ze strony RS36 producenta).
+- BPOWER0000142: brak zdjęcia wersji EU u producenta, w Jarltech i ERS (ERS ma tylko wersję UK z innym wtykiem, 200 px). Karta ma `placeholder.svg`.
+- RK96: wszystkie oferowane PN mają uchwyt pistoletowy. Producent ma dla RK96 trzy packshoty (p-251031-06412 przód, p-251015-06055 bok, p-251015-06056 bok z uchwytem). Ujęcie z przodu nie pokazuje uchwytu, bo uchwyt jest za obudową. Pierwszym zdjęciem jest teraz `cipherlab-rk96-3.webp` (p-251015-06056, bok z uchwytem); pliki bez zmian.
+- Większe zdjęcia akcesoriów: strony modeli RS20, RS36, RS38, RS38H, RK26 i RK96 podają zdjęcia akcesoriów 350–500 px, te same co obecne pliki. ERS ma 200–275 px, Jarltech nie ma zdjęć akcesoriów. Pliki bez zmian.
+
+Wymagane elementy stacji (ARS20CHCNNNS1, ARS20CHCNNNR1, ARK25CCCNU201, ARK95CCCNU201): nie podpięto BPOWER0000142. Producent ani dystrybutorzy nie potwierdzają, że ten zasilacz zasila stacje. Jarltech: ARK25CCCNU201 i ARK95CCCNU201 „incl.: connection cable (micro-USB)”; wersje US (ARK25CCCNU101, ARK95CCCNU102) są opisywane jako z zasilaczem US. Do wyjaśnienia u dostawcy.

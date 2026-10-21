@@ -1040,7 +1040,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne etui ochronne, kabury, uchwyty pistoletowe (trigger handle), rubber boot, paski na rękę i smycze do terminali Zebra MC3300x, MC2200, TC22, TC27, TC53. Ceny netto B2B.',
     longDescription: 'Akcesoria ochronne i ergonomiczne do terminali mobilnych Zebra. Rubber boot (etui ochronne z gumy TPU) absorbuje upadki i chroni ekran — dostępne w wersjach straight shooter i gun grip. Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem do intensywnego skanowania kodów kreskowych zmniejszają zmęczenie nadgarstka przy wielogodzinnej pracy. Kabury (holster) z klipsem obrotowym do pasa i smycze (lanyard) na nadgarstek zabezpieczają terminal przed przypadkowym upuszczeniem. Paski na rękę (hand strap) z regulacją ułatwiają obsługę jedną ręką.',
     icon: 'shield',
-    productIds: [...cipherlabAccessories.filter(p => /Osłona|Uchwyt|Pasek|Kabura|Klips/.test(p.name)).map(p => p.id),
+    productIds: [...cipherlabAccessories.filter(p => /Osłona|Uchwyt|Pasek|Kabura|Klips|Folia/.test(p.name)).map(p => p.id),
       'zebra-mc33-rubber-boot-gun', 'zebra-mc33-rubber-boot-straight', 'zebra-mc33-holster',
       'zebra-mc2x-trigger', 'zebra-mc2x-rubber-boot', 'zebra-mc2x-rubber-boot-trigger',
       'zebra-mc2x-holster', 'zebra-mc2x-handstrap',
