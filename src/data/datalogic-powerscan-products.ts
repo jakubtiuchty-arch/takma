@@ -1473,9 +1473,9 @@ export const datalogicPowerScanAccessories: Product[] = [
     "name": "Zasilacz 12 V 5 A Datalogic 90ACC0350",
     "seoH1": "Zasilacz 12 V 5 A Datalogic 90ACC0350",
     "seoTitle": "Zasilacz 12 V 5 A Datalogic 90ACC0350 | TAKMA",
-    "seoDescription": "Zasilacz 12 V / 5 A (60 W) Datalogic 90ACC0350 do ładowarek akumulatorów PowerScan MC-P096-M2 i MC-P096-M4. PN: 90ACC0350.",
+    "seoDescription": "Zasilacz 12 V / 5 A (60 W) Datalogic 90ACC0350 do ładowarek akumulatorów PowerScan MC-P096-M2, MC-P096-M4 i MC-P090. PN: 90ACC0350.",
     "shortDescription": "90ACC0350 to zasilacz 12 V / 5 A do ładowarek akumulatorów Datalogic MC-P096-M2 i MC-P096-M4. Zasila ładowarkę, a nie sam czytnik.",
-    "description": "90ACC0350 to zasilacz 12 V / 5 A do ładowarek akumulatorów Datalogic MC-P096-M2 i MC-P096-M4. Zasila ładowarkę, a nie sam czytnik.\n\n## Elementy do podłączenia\n\nDo podłączenia do sieci służy [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód nie jest dołączony. Ładowarka i akumulatory są sprzedawane osobno.\n\nZasilacz służy do [ładowarki MC-P096-M2](/produkt/datalogic-powerscan-mc-p096-m2) i [ładowarki MC-P096-M4](/produkt/datalogic-powerscan-mc-p096-m4). Zasilacz 8-0935 do baz BC9630 nie zastępuje 90ACC0350.\n\nLista zgodnych czytników jest poniżej. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "90ACC0350 to zasilacz 12 V / 5 A do ładowarek akumulatorów Datalogic MC-P096-M2 i MC-P096-M4. Zasila ładowarkę, a nie sam czytnik.\n\n## Elementy do podłączenia\n\nDo podłączenia do sieci służy [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód nie jest dołączony. Ładowarka i akumulatory są sprzedawane osobno.\n\nZasilacz służy do [ładowarki MC-P096-M2](/produkt/datalogic-powerscan-mc-p096-m2) i [ładowarki MC-P096-M4](/produkt/datalogic-powerscan-mc-p096-m4). Zasila także [ładowarkę MC-P090](/produkt/datalogic-handheld-mc-p090) do akumulatorów RBP-PM91 (PowerScan 9100 i 9501 DPM Evo). Zasilacz 8-0935 do baz BC9630 nie zastępuje 90ACC0350.\n\nLista zgodnych czytników jest poniżej. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1514,18 +1514,22 @@ export const datalogicPowerScanAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "MC-P096-M2, MC-P096-M4"
+        "value": "MC-P096-M2, MC-P096-M4, MC-P090"
       }
     ],
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
       "datalogic-powerscan-pbt9600",
-      "datalogic-powerscan-pm9600"
+      "datalogic-powerscan-pm9600",
+      "datalogic-powerscan-pbt9100",
+      "datalogic-powerscan-pm9100",
+      "datalogic-powerscan-pbt9501-dpm",
+      "datalogic-powerscan-pm9501-dpm"
     ],
     "downloads": [],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-22",
     "relatedAccessories": [
       "datalogic-powerscan-6003-0940"
     ]

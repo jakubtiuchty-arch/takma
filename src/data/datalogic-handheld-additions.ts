@@ -437,7 +437,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-rbp-gm4200",
       "datalogic-quickscan-usb-90a052258",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-usb-90a052361",
+      "datalogic-handheld-usb-90a052356"
     ],
     "relatedProducts": [
       "datalogic-gryphon-gm4200"
@@ -461,7 +463,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-gryphon-gm4200",
@@ -560,7 +562,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-rbp-gm4200",
       "datalogic-quickscan-usb-90a052258",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-usb-90a052361",
+      "datalogic-handheld-usb-90a052356"
     ],
     "relatedProducts": [
       "datalogic-gryphon-gm4600"
@@ -588,7 +592,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-heron-hd3130",
@@ -1419,7 +1423,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-bc9030-bt",
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91",
+      "datalogic-handheld-mc-p090"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pbt9600"
@@ -1443,7 +1449,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pm9100",
@@ -1540,7 +1546,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-bc9030-433",
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91",
+      "datalogic-handheld-mc-p090"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pm9600"
@@ -1564,7 +1572,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pd9531-dpm",
@@ -1574,7 +1582,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PD9531 DPM Evo — przewodowy skaner DPM | TAKMA",
     "seoDescription": "Skaner przemysłowy Datalogic PowerScan PD9531 DPM Evo — przewodowy czytnik kodów 1D/2D i oznaczeń DPM. Czytnik DPM Datalogic PD9531, USB, RS-232 i KBW, IP65, 3 lata gwarancji. PD9531 Datalogic z przewodem USB lub bez. PN: PD9531-DPM, PD9531-DPMK1.",
     "shortDescription": "Datalogic PowerScan PD9531 DPM Evo — przemysłowy przewodowy skaner kodów 1D/2D do oznaczeń DPM na częściach, USB, RS-232 i KBW, IP65.",
-    "description": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner kodów 1D i 2D do oznaczeń naniesionych bezpośrednio na częściach (DPM). Odczytuje także standardowe kody na papierowych etykietach.\n\nOptyka DPM służy do kodów wykonanych laserem, trawieniem chemicznym i drukiem atramentowym. Kody Data Matrix odczytuje także po znakowaniu mikroudarowym (dot peen). Białe światło oświetla kod, a celownik wskazuje obszar odczytu. Green Spot i dwie diody potwierdzają wynik.\n\nPD9531 DPM Evo obsługuje USB, RS-232 i Keyboard Wedge. PD9531-DPM to sam czytnik, bez przewodu. Zestaw PD9531-DPMK1 zawiera czytnik i przewód USB CAB-550.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersje bezprzewodowe to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm) z Bluetooth i [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm) z radiem STAR. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner kodów 1D i 2D do oznaczeń naniesionych bezpośrednio na częściach (DPM). Odczytuje także standardowe kody na papierowych etykietach.\n\nOptyka DPM służy do kodów wykonanych laserem, trawieniem chemicznym i drukiem atramentowym. Kody Data Matrix odczytuje także po znakowaniu mikroudarowym (dot peen). Białe światło oświetla kod, a celownik wskazuje obszar odczytu. Green Spot i dwie diody potwierdzają wynik.\n\nPD9531 DPM Evo obsługuje USB, RS-232 i Keyboard Wedge. PD9531-DPM to sam czytnik, bez przewodu. Zestaw PD9531-DPMK1 zawiera czytnik i [przewód USB CAB-550](/produkt/datalogic-handheld-cab-550).\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersje bezprzewodowe to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm) z Bluetooth i [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm) z radiem STAR. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1651,7 +1659,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "przewodowy odczyt oznaczeń bezpośrednio na częściach"
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-handheld-cab-550"
+    ],
     "relatedProducts": [
       "datalogic-powerscan-pd9630"
     ],
@@ -1678,7 +1688,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pbt9501-dpm",
@@ -1760,7 +1770,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-bc9030-bt",
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91",
+      "datalogic-handheld-mc-p090"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pd9531-dpm"
@@ -1784,7 +1796,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pm9501-dpm",
@@ -1877,7 +1889,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-bc9030-433",
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91",
+      "datalogic-handheld-mc-p090"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pbt9501-dpm"
@@ -1905,7 +1919,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   }
 ]
 
@@ -1918,7 +1932,7 @@ export const datalogicAdditionalAccessories: Product[] = [
     "seoTitle": "Baza Bluetooth Datalogic WLC4190-BK-BT do Gryphon GBT4200",
     "seoDescription": "Baza Bluetooth Datalogic WLC4190-BK-BT do skanera Gryphon GBT4200: transmisja danych i ładowanie indukcyjne. PN: WLC4190-BK-BT.",
     "shortDescription": "Baza WLC4190-BK-BT komunikuje się z Gryphon GBT4200 przez Bluetooth i ładuje go indukcyjnie.",
-    "description": "Baza WLC4190-BK-BT komunikuje się z Gryphon GBT4200 przez Bluetooth i ładuje go indukcyjnie. Do połączenia USB z komputerem jest wymagany przewód USB, np. 90A052258. Nie zastępuje bazy STAR do GM4200.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. USB 90A052361 (1,2 m) lub 90A052356 (3 m). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GBT4200](/produkt/datalogic-gryphon-gbt4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Baza WLC4190-BK-BT komunikuje się z Gryphon GBT4200 przez Bluetooth i ładuje go indukcyjnie. Do połączenia USB z komputerem jest wymagany przewód USB, np. 90A052258. Nie zastępuje bazy STAR do GM4200.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. [USB 90A052361 (1,2 m)](/produkt/datalogic-handheld-usb-90a052361) lub [USB 90A052356 (3 m)](/produkt/datalogic-handheld-usb-90a052356). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GBT4200](/produkt/datalogic-gryphon-gbt4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1954,7 +1968,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "relatedAccessories": [
       "datalogic-powerscan-8-0935",
       "datalogic-powerscan-6003-0940",
-      "datalogic-quickscan-usb-90a052258"
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-handheld-usb-90a052361",
+      "datalogic-handheld-usb-90a052356"
     ],
     "relatedProducts": [
       "datalogic-gryphon-gbt4200"
@@ -1968,7 +1984,7 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-handheld-wlc4190-bk-433",
@@ -1978,7 +1994,7 @@ export const datalogicAdditionalAccessories: Product[] = [
     "seoTitle": "Baza STAR 433 MHz Datalogic WLC4190-BK-433 do Gryphon GM4200",
     "seoDescription": "Baza STAR 433 MHz Datalogic WLC4190-BK-433 do skanera Gryphon GM4200: odbiór danych i ładowanie indukcyjne. PN: WLC4190-BK-433.",
     "shortDescription": "Baza WLC4190-BK-433 odbiera dane z Gryphon GM4200 w paśmie STAR 433 MHz i ładuje czytnik indukcyjnie.",
-    "description": "Baza WLC4190-BK-433 odbiera dane z Gryphon GM4200 w paśmie STAR 433 MHz i ładuje czytnik indukcyjnie. Nie jest bazą Bluetooth ani wersją 910 MHz.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. USB 90A052361 (1,2 m) lub 90A052356 (3 m). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GM4200](/produkt/datalogic-gryphon-gm4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Baza WLC4190-BK-433 odbiera dane z Gryphon GM4200 w paśmie STAR 433 MHz i ładuje czytnik indukcyjnie. Nie jest bazą Bluetooth ani wersją 910 MHz.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. [USB 90A052361 (1,2 m)](/produkt/datalogic-handheld-usb-90a052361) lub [USB 90A052356 (3 m)](/produkt/datalogic-handheld-usb-90a052356). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GM4200](/produkt/datalogic-gryphon-gm4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2014,7 +2030,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "relatedAccessories": [
       "datalogic-powerscan-8-0935",
       "datalogic-powerscan-6003-0940",
-      "datalogic-quickscan-usb-90a052258"
+      "datalogic-quickscan-usb-90a052258",
+      "datalogic-handheld-usb-90a052361",
+      "datalogic-handheld-usb-90a052356"
     ],
     "relatedProducts": [
       "datalogic-gryphon-gm4200"
@@ -2028,7 +2046,7 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-handheld-rbp-gm4200",
@@ -2088,6 +2106,156 @@ export const datalogicAdditionalAccessories: Product[] = [
     "updatedAt": "2026-10-20"
   },
   {
+    "id": "datalogic-handheld-rbp-pm91",
+    "slug": "datalogic-handheld-rbp-pm91",
+    "name": "Akumulator Datalogic PowerScan RBP-PM91",
+    "seoH1": "Akumulator Datalogic PowerScan RBP-PM91",
+    "seoTitle": "Akumulator Datalogic PowerScan RBP-PM91 | TAKMA",
+    "seoDescription": "Akumulator Li-Ion Datalogic RBP-PM91 (RBP-9001), 3350 mAh, wymienny, do PowerScan PBT9100, PM9100, PBT9501 DPM Evo i PM9501 DPM Evo. PN: RBP-PM91.",
+    "shortDescription": "RBP-PM91 to wymienny akumulator Li-Ion 3350 mAh do bezprzewodowych PowerScan 9100 i 9501 DPM Evo.",
+    "description": "RBP-PM91 (RBP-9001) to wymienny akumulator Li-Ion 3350 mAh do bezprzewodowych czytników PowerScan PBT9100, PM9100, PBT9501 DPM Evo i PM9501 DPM Evo. Pozwala zastąpić rozładowany lub zużyty akumulator bez wymiany czytnika. Nie jest przeznaczony do przewodowych PD9130 i PD9531 DPM Evo.\n\n## Ładowanie akumulatora\n\nAkumulator ładuje się w czytniku umieszczonym w bazie [BC9030-BT](/produkt/datalogic-handheld-bc9030-bt) lub [BC9030-433](/produkt/datalogic-handheld-bc9030-433). Zapasowe akumulatory ładuje się poza czytnikiem w [ładowarce MC-P090](/produkt/datalogic-handheld-mc-p090). Baza i ładowarka są sprzedawane osobno.\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PM9100](/produkt/datalogic-powerscan-pm9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "baterie-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 189.33,
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "produkcja"
+    ],
+    "availability": "available",
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "RBP-PM91"
+      },
+      {
+        "name": "Typ akcesorium",
+        "value": "Akumulator Li-Ion, wymienny"
+      },
+      {
+        "name": "Pojemność",
+        "value": "3350 mAh"
+      },
+      {
+        "name": "Zgodność",
+        "value": "PBT9100, PM9100, PBT9501-DPM, PM9501-DPM"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-powerscan-pbt9100",
+      "datalogic-powerscan-pm9100",
+      "datalogic-powerscan-pbt9501-dpm",
+      "datalogic-powerscan-pm9501-dpm"
+    ],
+    "relatedAccessories": [
+      "datalogic-handheld-mc-p090",
+      "datalogic-handheld-bc9030-bt",
+      "datalogic-handheld-bc9030-433"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa PowerScan 9100 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-powerscan9100-en.pdf",
+        "size": "355 KB"
+      },
+      {
+        "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
+        "size": "453 KB"
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "datalogic-handheld-mc-p090",
+    "slug": "datalogic-handheld-mc-p090",
+    "name": "Ładowarka 4 akumulatorów Datalogic PowerScan MC-P090",
+    "seoH1": "Ładowarka 4 akumulatorów Datalogic PowerScan MC-P090",
+    "seoTitle": "Ładowarka 4 akumulatorów Datalogic PowerScan MC-P090 | TAKMA",
+    "seoDescription": "Ładowarka 4 akumulatorów Datalogic MC-P090 (MC-9000) do akumulatorów RBP-PM91 (PowerScan PBT9100, PM9100, PBT9501 DPM Evo, PM9501 DPM Evo). Zasilacz 90ACC0350 osobno. PN: MC-P090.",
+    "shortDescription": "MC-P090 to czterostanowiskowa ładowarka zapasowych akumulatorów RBP-PM91 do PowerScan 9100 i 9501 DPM Evo. Ładuje cztery akumulatory jednocześnie, poza czytnikami.",
+    "description": "MC-P090 (MC-9000) to czterostanowiskowa ładowarka zapasowych akumulatorów RBP-PM91 do PowerScan PBT9100, PM9100, PBT9501 DPM Evo i PM9501 DPM Evo. Ładuje cztery akumulatory jednocześnie, poza czytnikami.\n\n## Wymagane zasilanie\n\nDo pracy ładowarki potrzebne są poniższe elementy. Elementy te nie są dołączone do zestawu.\n\n- [Zasilacz 12 V / 5 A 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n- [Przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940).\n\n## Akumulatory\n\nŁadowarka obsługuje [akumulatory RBP-PM91](/produkt/datalogic-handheld-rbp-pm91). Akumulatory nie są dołączone.\n\nLista zgodnych czytników jest poniżej. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "stacje-ladowarki-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 771.83,
+    "images": [
+      "/images/products/datalogic-handheld-mc-p090-1-v1.webp"
+    ],
+    "imageDescriptions": [
+      "Ładowarka Datalogic MC-P090 — czarna ładowarka z czterema gniazdami na akumulatory i żółtym panelem z diodami"
+    ],
+    "tags": [
+      "magazyn",
+      "produkcja"
+    ],
+    "availability": "available",
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "MC-P090"
+      },
+      {
+        "name": "Liczba ładowanych akumulatorów",
+        "value": "4"
+      },
+      {
+        "name": "Akumulator",
+        "value": "RBP-PM91"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "12 V DC; 90ACC0350, osobno"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-powerscan-pbt9100",
+      "datalogic-powerscan-pm9100",
+      "datalogic-powerscan-pbt9501-dpm",
+      "datalogic-powerscan-pm9501-dpm"
+    ],
+    "relatedAccessories": [
+      "datalogic-powerscan-90acc0350",
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa PowerScan 9100 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-powerscan9100-en.pdf",
+        "size": "355 KB"
+      },
+      {
+        "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
+        "size": "453 KB"
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
     "id": "datalogic-handheld-bc9030-bt",
     "slug": "datalogic-handheld-bc9030-bt",
     "name": "Baza Bluetooth Datalogic PowerScan BC9030-BT",
@@ -2131,7 +2299,8 @@ export const datalogicAdditionalAccessories: Product[] = [
     "relatedAccessories": [
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pbt9100",
@@ -2146,7 +2315,7 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-handheld-bc9030-433",
@@ -2192,7 +2361,8 @@ export const datalogicAdditionalAccessories: Product[] = [
     "relatedAccessories": [
       "datalogic-handheld-cab-438",
       "datalogic-powerscan-8-0935",
-      "datalogic-powerscan-6003-0940"
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-rbp-pm91"
     ],
     "relatedProducts": [
       "datalogic-powerscan-pm9100",
@@ -2207,7 +2377,7 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-handheld-usb-90a052065",
@@ -2266,6 +2436,140 @@ export const datalogicAdditionalAccessories: Product[] = [
     ],
     "createdAt": "2026-10-20",
     "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-handheld-usb-90a052361",
+    "slug": "datalogic-handheld-usb-90a052361",
+    "name": "Przewód USB z zasilaniem Datalogic 90A052361 — 1,2 m",
+    "seoH1": "Przewód USB z zasilaniem Datalogic 90A052361 — 1,2 m",
+    "seoTitle": "Przewód USB z zasilaniem Datalogic 90A052361 do bazy WLC4190 — 1,2 m",
+    "seoDescription": "Przewód USB-A Datalogic 90A052361, 1,2 m, z wejściem zasilania zewnętrznego, do baz WLC4190 skanerów Gryphon GBT4200 i GM4200. PN: 90A052361.",
+    "shortDescription": "Przewód 90A052361 łączy bazę Datalogic WLC4190 z portem USB-A komputera i ma wejście zasilania zewnętrznego.",
+    "description": "Przewód 90A052361 łączy bazę Datalogic WLC4190 z portem USB-A komputera. Ma długość 1,2 m i wejście zasilania zewnętrznego. Jest przeznaczony do baz z ładowaniem indukcyjnym i przenosi wyższy prąd (High Current). Wersja 3 m to [90A052356](/produkt/datalogic-handheld-usb-90a052356).\n\n## Zasilanie zewnętrzne\n\nDo wejścia zasilania podłącza się [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Zasilacz i przewód sieciowy nie są dołączone. Przewód 90A052258 z zestawów GBT4200 i GM4200 nie ma wejścia zasilania.\n\n## Zgodne bazy i czytniki\n\n[Baza WLC4190-BK-BT](/produkt/datalogic-handheld-wlc4190-bk-bt) do [GBT4200](/produkt/datalogic-gryphon-gbt4200) i [baza WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433) do [GM4200](/produkt/datalogic-gryphon-gm4200). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 95.87,
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "retail"
+    ],
+    "availability": "available",
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "90A052361"
+      },
+      {
+        "name": "Interfejs",
+        "value": "USB-A, wejście zasilania zewnętrznego"
+      },
+      {
+        "name": "Długość",
+        "value": "1,2 m, prosty"
+      },
+      {
+        "name": "Zgodność",
+        "value": "WLC4190-BK-BT, WLC4190-BK-433"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-gryphon-gbt4200",
+      "datalogic-gryphon-gm4200"
+    ],
+    "relatedAccessories": [
+      "datalogic-handheld-wlc4190-bk-bt",
+      "datalogic-handheld-wlc4190-bk-433",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-usb-90a052356"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Gryphon 4200 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-gryphon4200-en.pdf",
+        "size": "427 KB"
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "datalogic-handheld-usb-90a052356",
+    "slug": "datalogic-handheld-usb-90a052356",
+    "name": "Przewód USB z zasilaniem Datalogic 90A052356 — 3 m",
+    "seoH1": "Przewód USB z zasilaniem Datalogic 90A052356 — 3 m",
+    "seoTitle": "Przewód USB z zasilaniem Datalogic 90A052356 do bazy WLC4190 — 3 m",
+    "seoDescription": "Przewód USB-A Datalogic 90A052356, 3 m, z wejściem zasilania zewnętrznego, do baz WLC4190 skanerów Gryphon GBT4200 i GM4200. PN: 90A052356.",
+    "shortDescription": "Przewód 90A052356 łączy bazę Datalogic WLC4190 z portem USB-A komputera i ma wejście zasilania zewnętrznego.",
+    "description": "Przewód 90A052356 łączy bazę Datalogic WLC4190 z portem USB-A komputera. Ma długość 3 m i wejście zasilania zewnętrznego. Jest przeznaczony do baz z ładowaniem indukcyjnym i przenosi wyższy prąd (High Current). Wersja 1,2 m to [90A052361](/produkt/datalogic-handheld-usb-90a052361).\n\n## Zasilanie zewnętrzne\n\nDo wejścia zasilania podłącza się [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Zasilacz i przewód sieciowy nie są dołączone. Przewód 90A052258 z zestawów GBT4200 i GM4200 nie ma wejścia zasilania.\n\n## Zgodne bazy i czytniki\n\n[Baza WLC4190-BK-BT](/produkt/datalogic-handheld-wlc4190-bk-bt) do [GBT4200](/produkt/datalogic-gryphon-gbt4200) i [baza WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433) do [GM4200](/produkt/datalogic-gryphon-gm4200). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 130.71,
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "retail"
+    ],
+    "availability": "available",
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "90A052356"
+      },
+      {
+        "name": "Interfejs",
+        "value": "USB-A, wejście zasilania zewnętrznego"
+      },
+      {
+        "name": "Długość",
+        "value": "3 m, prosty"
+      },
+      {
+        "name": "Zgodność",
+        "value": "WLC4190-BK-BT, WLC4190-BK-433"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-gryphon-gbt4200",
+      "datalogic-gryphon-gm4200"
+    ],
+    "relatedAccessories": [
+      "datalogic-handheld-wlc4190-bk-bt",
+      "datalogic-handheld-wlc4190-bk-433",
+      "datalogic-powerscan-8-0935",
+      "datalogic-powerscan-6003-0940",
+      "datalogic-handheld-usb-90a052361"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Gryphon 4200 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-gryphon4200-en.pdf",
+        "size": "427 KB"
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-handheld-rs232-90a051230",
@@ -2441,5 +2745,65 @@ export const datalogicAdditionalAccessories: Product[] = [
     ],
     "createdAt": "2026-10-20",
     "updatedAt": "2026-10-20"
+  },
+  {
+    "id": "datalogic-handheld-cab-550",
+    "slug": "datalogic-handheld-cab-550",
+    "name": "Przewód USB Datalogic PowerScan CAB-550",
+    "seoH1": "Przewód USB Datalogic PowerScan CAB-550",
+    "seoTitle": "Przewód USB Datalogic PowerScan CAB-550 | TAKMA",
+    "seoDescription": "Spiralny przewód USB-A Datalogic CAB-550, 2,4 m, do przewodowego czytnika PowerScan PD9531 DPM Evo. PN: CAB-550.",
+    "shortDescription": "CAB-550 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9531 DPM Evo.",
+    "description": "CAB-550 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9531 DPM Evo. Ma długość 2,4 m. Łączy czytnik z portem USB komputera. Jest w zestawie PD9531-DPMK1, który zawiera czytnik i ten przewód.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik i pozostałe wyposażenie są sprzedawane osobno. Sam czytnik PD9531-DPM nie zawiera przewodu.\n\n## Zgodne czytniki\n\n[PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Wszystkie rodziny są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "datalogic",
+    "priceFrom": 83.53,
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "produkcja"
+    ],
+    "availability": "available",
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CAB-550"
+      },
+      {
+        "name": "Interfejs",
+        "value": "USB-A"
+      },
+      {
+        "name": "Długość",
+        "value": "2,4 m, spiralny"
+      },
+      {
+        "name": "Zgodność",
+        "value": "PD9531-DPM"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "datalogic-powerscan-pd9531-dpm"
+    ],
+    "relatedAccessories": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
+        "size": "453 KB"
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]

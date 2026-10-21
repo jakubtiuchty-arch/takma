@@ -230,6 +230,9 @@ export async function middleware(request: NextRequest) {
       'datalogic-memor-12', 'datalogic-memor-17', 'datalogic-memor-30', 'datalogic-memor-35',
       'datalogic-smartdock-memor-30', 'datalogic-charger-4slot-memor-30', 'datalogic-battery-memor-30',
       'datalogic-boot-memor-30', 'datalogic-pistolgrip-memor-30', 'datalogic-handstrap-memor-30', 'datalogic-screenprotector-memor-30',
+      // Akcesoria skanerów Datalogic (22.10.2026)
+      'datalogic-magellan-90acc0430', 'datalogic-handheld-cab-550', 'datalogic-handheld-usb-90a052361', 'datalogic-handheld-usb-90a052356',
+      'datalogic-handheld-rbp-pm91', 'datalogic-handheld-mc-p090',
       // Newland
       'newland-n7-cachalot-pro-ii', 'newland-mt93-megattera', 'newland-mt93-megattera-standard-plus',
       'newland-mt95-kambur-pro-ii',
