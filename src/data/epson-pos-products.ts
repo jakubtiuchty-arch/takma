@@ -718,10 +718,12 @@ export const epsonPosProducts: Product[] = [
     "priceFrom": 1365.84,
     "availability": "unavailable",
     "images": [
+      "/images/products/epson-tm-m50ii-angle.webp",
       "/images/products/epson-tm-m50ii-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-m50II — widok produktu"
+      "Epson TM-m50II — widok z przodu pod kątem z paragonem",
+      "Epson TM-m50II — widok z przodu"
     ],
     "tags": [
       "retail"
