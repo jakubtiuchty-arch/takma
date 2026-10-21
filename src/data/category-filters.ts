@@ -1884,3 +1884,9 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
   { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }] },
   ...categoryFilters['mobilne-drukarki-paragonow'].map(f => f.specKey === 'material-paragony' ? { ...f, derived: f.derived?.map(rule => rule.value === 'Papier termiczny' ? { ...rule, slugs: [...(rule.slugs ?? []), 'epson-tm-p20ii', 'epson-tm-p80ii'] } : rule) } : f)
 ]
+
+categoryFilters['terminale-cipherlab'] = [
+  { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage']}] },
+  { specKey: 'zastosowanie-cipherlab', label: 'Zastosowanie', derived: [{value: 'Ochrona zdrowia', slugs: ['cipherlab-rs38h']}, {value: 'Mroźnia', slugs: ['cipherlab-rk96-cold-storage']}] },
+  { specKey: 'modem-cipherlab', label: 'Łączność komórkowa', derived: [{value: 'Dostępne wersje LTE', slugs: ['cipherlab-rs36','cipherlab-rk26']}, {value: 'Dostępne wersje 5G', slugs: ['cipherlab-rs38','cipherlab-rs38h']}] }
+]

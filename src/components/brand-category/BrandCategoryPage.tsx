@@ -169,7 +169,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const allProducts = getProductsByBrandCategory(bc)
   const subcats = getSubcategoriesForCategory(bc.categoryId)
   const content = brandCategoryContent[slug]
-  const catalogSeo = ['skanery-datalogic', 'drukarki-etykiet-bixolon'].includes(bc.slug)
+  const catalogSeo = ['skanery-datalogic', 'drukarki-etykiet-bixolon', 'terminale-cipherlab'].includes(bc.slug)
 
   // Subcats with products from this manufacturer
   const subcatsWithProducts = subcats
@@ -737,7 +737,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         {/* Układ z filtrami (konfiguracja w category-filters.ts): sidebar = checkboxy z licznikiem + nawigacja */}
         {filters ? (
           <>
-          {catalogSeo && <h2 className="sr-only">{bc.slug === 'skanery-datalogic' ? 'Modele skanerów Datalogic — ceny i dostępność' : 'Modele drukarek etykiet BIXOLON — ceny i dostępność'}</h2>}
+          {catalogSeo && <h2 className="sr-only">{bc.slug === 'terminale-cipherlab' ? 'Modele terminali CipherLab — ceny i dostępność' : bc.slug === 'skanery-datalogic' ? 'Modele skanerów Datalogic — ceny i dostępność' : 'Modele drukarek etykiet BIXOLON — ceny i dostępność'}</h2>}
           <FilterableProductGrid
             products={produktyDoSiatki}
             filters={filters}

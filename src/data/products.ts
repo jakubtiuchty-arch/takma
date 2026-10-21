@@ -1,3 +1,4 @@
+import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from './bixolon-receipt-products'
@@ -872,7 +873,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne akcesoria Zebra do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Baterie PowerPrecision+, stacje dokujące 1/5-slot, ładowarki, etui ochronne, uchwyty pistoletowe, kable i zasilacze. Ceny netto B2B.',
     longDescription: 'Kompletna oferta oryginalnych akcesoriów Zebra do terminali mobilnych serii MC i TC. Baterie PowerPrecision+ z diagnostyką i warm swap (3500–7000 mAh). Stacje dokujące ShareCradle 1-slot i 5-slot z opcjonalnym Ethernet. Ładowarki baterii 4-slot i 20-slot do zarządzania zapasowymi akumulatorami. Etui ochronne rubber boot, uchwyty pistoletowe trigger handle, kabury z klipsem, paski na rękę i smycze. Zasilacze sieciowe 50W/108W i kable zasilające. Wszystkie akcesoria z gwarancją producenta i pełną kompatybilnością.',
     icon: 'package',
-    productIds: [
+    productIds: [...cipherlabAccessories.map(p => p.id),
       'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
       'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
       'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',
@@ -991,7 +992,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Stacje dokujące Zebra ShareCradle do terminali MC3300x, MC3400, MC2200, TC22, TC27, TC53. Modele 1-slot i 5-slot z Ethernet, ładowarki baterii 4-slot i 20-slot. Ceny netto B2B.',
     longDescription: 'Stacje dokujące (cradle) i ładowarki Zebra do terminali mobilnych serii MC i TC. ShareCradle 1-slot do indywidualnego stanowiska — ładuje terminal i zapasową baterię jednocześnie, opcjonalnie z portem Ethernet do przewodowej synchronizacji danych. ShareCradle 5-slot do nocnego ładowania floty — z Ethernet na każdym slocie. Ładowarki baterii (battery charger) 4-slot i 20-slot do rotacyjnego zarządzania akumulatorami w dużych instalacjach. Adaptery cup do rozbudowy stacji. Wszystkie z zasilaczem w zestawie.',
     icon: 'battery',
-    productIds: [
+    productIds: [...cipherlabAccessories.filter(p => /Stacja|Ładowarka|Przewód/.test(p.name)).map(p => p.id),
       'zebra-mc33-cradle-1slot', 'zebra-mc33-battery-charger-4slot', 'zebra-mc33-cradle-5slot',
       'zebra-mc33-cradle-4slot-4battery', 'zebra-mc33-cradle-5slot-ethernet',
       'zebra-mc33-cradle-4slot-4battery-ethernet', 'zebra-mc33-battery-charger-20slot',
@@ -1038,7 +1039,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne etui ochronne, kabury, uchwyty pistoletowe (trigger handle), rubber boot, paski na rękę i smycze do terminali Zebra MC3300x, MC2200, TC22, TC27, TC53. Ceny netto B2B.',
     longDescription: 'Akcesoria ochronne i ergonomiczne do terminali mobilnych Zebra. Rubber boot (etui ochronne z gumy TPU) absorbuje upadki i chroni ekran — dostępne w wersjach straight shooter i gun grip. Uchwyty pistoletowe (trigger handle) z ergonomicznym spustem do intensywnego skanowania kodów kreskowych zmniejszają zmęczenie nadgarstka przy wielogodzinnej pracy. Kabury (holster) z klipsem obrotowym do pasa i smycze (lanyard) na nadgarstek zabezpieczają terminal przed przypadkowym upuszczeniem. Paski na rękę (hand strap) z regulacją ułatwiają obsługę jedną ręką.',
     icon: 'shield',
-    productIds: [
+    productIds: [...cipherlabAccessories.filter(p => /Osłona|Uchwyt|Pasek|Kabura|Klips/.test(p.name)).map(p => p.id),
       'zebra-mc33-rubber-boot-gun', 'zebra-mc33-rubber-boot-straight', 'zebra-mc33-holster',
       'zebra-mc2x-trigger', 'zebra-mc2x-rubber-boot', 'zebra-mc2x-rubber-boot-trigger',
       'zebra-mc2x-holster', 'zebra-mc2x-handstrap',
@@ -95453,6 +95454,8 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...cipherlabProducts,
+  ...cipherlabAccessories,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,
@@ -95985,6 +95988,35 @@ export function getProductsByTags(tags: ProductTag[]): Product[] {
 // ============================================
 
 export const brandCategories: BrandCategory[] = [
+{
+  "id": "terminale-cipherlab",
+  "slug": "terminale-cipherlab",
+  "manufacturerId": "cipherlab",
+  "categoryId": "terminale-mobilne",
+  "name": "Terminale mobilne CipherLab",
+  "seoTitle": "Terminale CipherLab — kolektory Android, ceny i stany",
+  "seoDescription": "Terminale CipherLab RS20, RS36, RS38, RS38H, RK26 i RK96. Porównaj PN, skanery, klawiatury, łączność oraz ceny. Zgodne akcesoria i dokumenty PDF.",
+  "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele dotykowe RS z terminalami klawiaturowymi RK. Wersję skanera i wyposażenie wybierz według PN.",
+
+  "faq": [
+    {
+      "question": "Czy terminal CipherLab ma program magazynowy?",
+      "answer": "Terminal wymaga zgodnej aplikacji i połączenia z systemem firmy. Licencja programu magazynowego nie jest częścią oferowanych zestawów."
+    },
+    {
+      "question": "Który CipherLab nadaje się do mroźni?",
+      "answer": "RK96 Cold Storage ma podgrzewanie i baterię do niskiej temperatury. Zakres pracy wynosi od −30°C do +50°C. Standardowy RK96 ma inny zakres oraz baterię."
+    },
+    {
+      "question": "Czy każda wersja ma LTE lub 5G?",
+      "answer": "Nie. Modem zależy od PN. W tabeli odróżniono konfiguracje WLAN od wersji komórkowych."
+    },
+    {
+      "question": "Czy terminale mają czytnik UHF RFID?",
+      "answer": "NFC jest funkcją zbliżeniową. Odczyt UHF wymaga osobnego zgodnego modułu, jeśli dany model go obsługuje. Nie jest częścią podstawowych konfiguracji."
+    }
+  ]
+},
 {
   "id": "drukarki-etykiet-bixolon",
   "slug": "drukarki-etykiet-bixolon",

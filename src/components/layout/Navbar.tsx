@@ -60,6 +60,7 @@ const navigation: NavItem[] = [
       { name: 'Terminale Honeywell', href: '/terminale-honeywell' },
       { name: 'Terminale Datalogic', href: '/terminale-datalogic' },
       { name: 'Terminale M3', href: '/terminale-m3-mobile' },
+      { name: 'Terminale CipherLab', href: '/terminale-cipherlab' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: '— Baterie i akumulatory', href: '/baterie-do-terminali' },
       { name: '— Stacje dokujące i ładowarki', href: '/stacje-ladowarki-terminali' },
