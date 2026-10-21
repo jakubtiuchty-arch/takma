@@ -16,20 +16,13 @@ interface ComparisonTableProps {
 
 /** Łopatologiczne wyjaśnienia parametrów porównawczych. Dodawane jako tooltip obok labela. */
 const SPEC_TOOLTIPS: Record<string, string> = {
-  'Powłoka top-coat':
-    'Cienka warstwa ochronna na wierzchu papieru. Z nią: ostrzejszy nadruk kodów kreskowych, dłuższe życie głowicy drukarki, lepsza odporność na zarysowanie i wilgoć. Bez niej: taniej, ale mniej trwałe.',
-  'Atest żywnościowy':
-    'Czy klej i papier są dopuszczone do bezpośredniego kontaktu z żywnością. Atesty: BfR XIV (Niemcy), FDA 175.105 (USA), ISEGA, EC 1935/2004. Wymagane w piekarniach, masarniach, gastronomii.',
-  'Bez podkładu (linerless)':
-    'Etykieta nawinięta sama na siebie, bez papierowego podkładu (lineru). Korzyść: do 2× więcej etykiet na rolce, zero odpadu. Wymóg: drukarka z linerless platen rollerem (np. ZD611 Linerless).',
-  'Wodoodporność':
-    'Czy etykieta wytrzymuje kontakt z wodą i wilgocią. "Tak (pełna)" = polipropylen syntetyczny (np. PolyPro 4000D). "Częściowa" = papier powlekany — krótki kontakt, nie zanurzenie. "Nie" = papier niepowlekany — rozmięknie.',
-  'Trwałość nadruku indoor':
-    'Jak długo nadruk pozostaje czytelny w warunkach wewnętrznych (bez UV, do +80 °C). Po tym czasie nadruk blaknie. Outdoor i bezpośrednie słońce skracają lifespan przez UV.',
-  'Klej':
-    'Permanentny — etykieta trzyma się mocno na stałe. Zdejmowalny (removable) — można odkleić bez śladu (do ekspozycji, etykiet tymczasowych). Brak (tag) — pasek bez kleju do mechanicznego przyczepiania.',
-  'Materiał':
-    'Z czego zrobiona jest sama etykieta. Papier powlekany = lepszy nadruk, droższy. Papier niepowlekany = taniej, do prostych etykiet. Polipropylen = wodoodporny syntetyk. Specjalny = niszowe (np. skrzydełka jubilerskie).',
+  'Powłoka top-coat': 'Warstwa ochronna na powierzchni materiału termicznego. Może zwiększać odporność nadruku na wilgoć i ścieranie. Zakres ochrony zależy od konkretnego materiału.',
+  'Atest żywnościowy': 'Dopuszczenie materiału lub kleju do określonego rodzaju kontaktu z żywnością. Sprawdź warunki: kontakt bezpośredni lub pośredni, rodzaj żywności, czas i temperaturę. Samo oznaczenie nie dopuszcza każdego zastosowania.',
+  'Bez podkładu (linerless)': 'Etykieta samoprzylepna bez osobnego podkładu. Eliminuje zużyty podkład. Wymaga drukarki przystosowanej do konkretnego materiału i kleju; nie wystarczy zgodna szerokość rolki.',
+  'Wodoodporność': 'Odporność materiału etykiety na kontakt z wodą. Nie oznacza automatycznie odporności kleju i nadruku ani możliwości długotrwałego zanurzenia.',
+  'Trwałość nadruku indoor': 'Przewidywany okres czytelności nadruku wewnątrz pomieszczeń, przy określonych warunkach przechowywania. Ciepło, światło i chemikalia mogą skrócić ten okres.',
+  'Klej': 'Permanentny — do trwałego przyklejenia. Zdejmowalny — do czasowego oznaczenia; możliwość usunięcia bez śladu zależy od powierzchni i czasu. Brak kleju — przywieszka mocowana mechanicznie.',
+  'Materiał': 'Podłoże etykiety. Papier i tworzywo syntetyczne różnią się odpornością na wilgoć, ścieranie i temperaturę. Powłoka, klej i sposób nadruku także wpływają na trwałość oznaczenia.',
 }
 
 export default function ComparisonTable({ title, models }: ComparisonTableProps) {

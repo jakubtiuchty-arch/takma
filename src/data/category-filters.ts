@@ -1890,3 +1890,49 @@ categoryFilters['terminale-cipherlab'] = [
   { specKey: 'zastosowanie-cipherlab', label: 'Zastosowanie', derived: [{value: 'Ochrona zdrowia', slugs: ['cipherlab-rs38h']}, {value: 'Mroźnia', slugs: ['cipherlab-rk96-cold-storage']}] },
   { specKey: 'modem-cipherlab', label: 'Łączność komórkowa', derived: [{value: 'Dostępne wersje LTE', slugs: ['cipherlab-rs36','cipherlab-rk26']}, {value: 'Dostępne wersje 5G', slugs: ['cipherlab-rs38','cipherlab-rs38h']}] }
 ]
+
+// Concrete parameter help; clone definitions to preserve shared category arrays.
+const catalogFilterHelp: Record<string, string> = {
+  "Rozdzielczość": "Gęstość nadruku w punktach na cal.\n• 180–203 dpi — standardowy tekst i większe kody.\n• 300–305 dpi — drobniejszy tekst i mniejsze kody.\n• 600–609 dpi — bardzo drobne elementy. Nie zwiększa zasięgu RFID.",
+  "Szerokość druku": "Maksymalna szerokość nadruku, a nie szerokość rolki.\n• Projekt musi mieścić się w obszarze zadruku.\n• Sprawdź osobno dopuszczalną szerokość podkładu i średnicę rolki.",
+  "Łączność": "Sposób połączenia urządzenia z systemem.\n• USB — przewód do komputera lub kasy.\n• Ethernet — przewodowa sieć lokalna.\n• Wi-Fi — sieć bezprzewodowa. Bluetooth — połączenie bezpośrednie.\n• PoweredUSB wymaga zgodnego portu POS, nie zwykłego USB.",
+  "Metoda druku": "Sposób tworzenia nadruku na etykiecie.\n• Termiczny — papier termiczny, bez taśmy barwiącej.\n• Termotransferowy — taśma barwiąca dobrana do etykiety.\n• Kodowanie RFID jest niezależne od nadruku.",
+  "Technologia druku": "Sposób tworzenia wydruku.\n• Termiczny — głowica nagrzewa papier termiczny.\n• Termotransferowy — barwnik z taśmy trafia na etykietę.\n• Igłowy — uderzenia igieł przez taśmę barwiącą.\n• Atramentowy — atrament nanoszony na zgodny materiał. Hybrydowy łączy różne mechanizmy.",
+  "Szerokość papieru": "Szerokość przyjmowanej rolki papieru.\n• Nie oznacza szerokości nadruku: marginesy zmniejszają obszar zadruku.\n• Sprawdź też maksymalną średnicę rolki.",
+  "Papier": "Format materiału przyjmowanego przez drukarkę.\n• 58, 76 lub 80 mm — szerokość papieru w rolce.\n• Formularze — pojedyncze dokumenty w obsługiwanym formacie.\n• Format papieru nie określa rodzaju powłoki ani liczby kopii.",
+  "Łączność komórkowa": "Modem umożliwia pracę w sieci operatora poza zasięgiem Wi-Fi.\n• LTE lub 5G wymaga aktywnej usługi i zgodnej karty SIM lub eSIM.\n• Bez 5G nie musi oznaczać braku LTE; sprawdź konfigurację PN.",
+  "Interfejs": "Połączenie skanera z kasą lub komputerem.\n• USB — połączenie przewodowe.\n• RS-232 — port szeregowy, wymaga zgodnego przewodu i ustawień.\n• Keyboard Wedge — przesyłanie danych przez zgodne złącze klawiatury.\n• Port bazy i łącze radiowe skanera to różne elementy zestawu.",
+  "Łączność bezprzewodowa": "Sposób komunikacji skanera z bazą lub urządzeniem.\n• Bluetooth — połączenie ze zgodnym urządzeniem lub bazą Bluetooth.\n• STAR — radio Datalogic, wymaga zgodnej bazy STAR.\n• Bazy STAR i Bluetooth nie są zamienne.",
+  "Odczyt kodów": "Rodzaje odczytywanych kodów.\n• 1D — kody liniowe, np. EAN i Code 128.\n• 2D — kody dwuwymiarowe, np. QR i Data Matrix.\n• Odczyt DPM i bardzo małych kodów wymaga odpowiedniej optyki.",
+  "Zastosowanie specjalne": "Optyka lub wykonanie do określonego zadania.\n• Daleki zasięg — odczyt z większej odległości; zasięg zależy od rozmiaru i jakości kodu.\n• DPM — odczyt oznaczeń naniesionych bezpośrednio na część.\n• Healthcare — wykonanie do zastosowań medycznych; sprawdź dopuszczone środki czyszczące.",
+  "Odporność na upadki": "Wysokość upadku deklarowana dla określonych warunków badania.\n• Podłoże, temperatura i liczba upadków wpływają na wynik.\n• Nie oznacza gwarancji braku uszkodzeń przy każdym upadku.",
+  "Szczelność (IP)": "Stopień ochrony obudowy przed ciałami stałymi i wodą.\n• Pierwsza cyfra: 3 — ciała od 2,5 mm; 4 — od 1 mm; 5 — ochrona przed pyłem; 6 — pyłoszczelność.\n• Druga cyfra: 0 — bez ochrony przed wodą; 2 — krople przy przechyleniu; 4 — bryzgi; 5 — strumień; 7/8 — zanurzenie w określonych warunkach.\n• IP nie potwierdza odporności na detergenty ani mycie ciśnieniowe.",
+  "Skaner kodów": "Optyczny odczyt kodów jest niezależny od odczytu RFID.\n• Z modułem — uchwyt może także skanować obsługiwane kody kreskowe.\n• Bez modułu — kody wymagają osobnego skanera lub terminala.",
+  "Bluetooth": "Bezpośrednie połączenie radiowe uchwytu z kompatybilnym urządzeniem.\n• Wymaga zgodnego profilu i aplikacji.\n• Nie zastępuje adaptera mechanicznego ani nie oznacza, że terminal jest dołączony.",
+  "Rodzaj rolki": "Format nawoju etykiet.\n• Rolki biurkowe i przemysłowe różnią się m.in. gilzą i średnicą zewnętrzną.\n• Sprawdź oba wymiary oraz szerokość materiału. Sam format rolki nie potwierdza zgodności RFID.",
+  "Rodzaj terminala": "Sposób obsługi terminala.\n• Dotykowy — wpisywanie przez ekran.\n• Z klawiaturą — fizyczne klawisze do ilości, numerów i tekstu.\n• Liczba klawiszy i układ zależą od wariantu PN.",
+  "Zastosowanie": "Wykonanie terminala do warunków pracy.\n• Healthcare — obudowa do czyszczenia dopuszczonymi środkami.\n• Mroźnia — konfiguracja do niskiej temperatury; sprawdź zakres temperatur i wymagane akcesoria."
+}
+const categorySpecificHelp: Record<string, Record<string, string>> = {
+  "drukarki-etykiet-bixolon": {
+    "Rodzaj": "Sposób użytkowania drukarki.\n• Biurkowa — praca przy stanowisku.\n• Przemysłowa — większa konstrukcja do pracy w magazynie lub na produkcji.\n• Mobilna — druk przy towarze, z akumulatora. Wymiary rolki zależą od modelu."
+  },
+  "skanery-datalogic": {
+    "Rodzaj": "Sposób pracy skanera.\n• Ręczny przewodowy — skanowanie z urządzeniem połączonym przewodem.\n• Bezprzewodowy — komunikacja przez radio.\n• Prezentacyjny — zbliżanie kodu do okna.\n• Ladowy — zabudowa w stanowisku kasowym."
+  },
+  "etykiety-rfid-zebra": {
+    "Materiał": "Podłoże etykiety i jej przeznaczenie.\n• Papier — do zastosowań wymagających papierowej etykiety.\n• Materiał syntetyczny — dobierz do wilgoci, ścierania i temperatury.\n• On-Metal — do wskazanych powierzchni metalowych; wymaga potwierdzonej zgodności drukarki."
+  },
+  "drukarki-pos": {
+    "Materiał": "Materiał musi pasować do mechanizmu drukarki.\n• Termiczny — papier z warstwą reagującą na ciepło.\n• Linerless — etykiety samoprzylepne bez podkładu, tylko do zgodnych drukarek.\n• Zwykły papier — do odpowiednich drukarek igłowych lub atramentowych."
+  },
+  "mobilne-drukarki-paragonow": {
+    "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
+  }
+}
+for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
+  categoryFilters[category] = (categoryFilters[category] ?? []).map(filter => ({
+    ...filter,
+    description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,
+  }))
+}

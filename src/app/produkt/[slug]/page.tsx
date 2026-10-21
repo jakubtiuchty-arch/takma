@@ -1,3 +1,4 @@
+import { getProductVariantTooltips } from '@/lib/product-variant-tooltips'
 import { isRfidContentProduct } from '@/lib/rfid-content'
 import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
 import { Metadata } from 'next'
@@ -1422,7 +1423,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   productName={product.name}
                   productImage={product.images[0]}
                   variants={product.variants!}
-                  variantAttributeTooltips={product.variantAttributeTooltips}
+                  variantAttributeTooltips={getProductVariantTooltips(product)}
                   manufacturerId={product.manufacturerId}
                 />
               </>
