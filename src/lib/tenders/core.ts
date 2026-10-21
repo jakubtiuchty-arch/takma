@@ -31,6 +31,7 @@ export function polishDate(value: unknown, endOfDay = true): Date | null {
   if (typeof value !== 'string' || !/^\d{4}-\d\d-\d\d/.test(value)) return null
   let s = value.trim().replace(' ', 'T')
   if (/^\d{4}-\d\d-\d\d(?:[+-]\d\d:\d\d)?$/.test(s)) s = s.slice(0, 10) + (endOfDay ? 'T23:59:59' : 'T00:00:00')
+  if (/T\d\d:\d\d$/.test(s)) s += ':00'
   if (!/(?:Z|[+-]\d\d:\d\d)$/.test(s)) {
     const local = new Date(s + 'Z')
     if (!Number.isFinite(+local)) return null
