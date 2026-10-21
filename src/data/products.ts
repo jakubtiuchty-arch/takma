@@ -96191,9 +96191,9 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "datalogic",
   "categoryId": "skanery-kodow-kreskowych",
   "name": "Skanery kodów kreskowych Datalogic",
-  "seoTitle": "Skanery Datalogic — ręczne i prezentacyjne Magellan",
-  "seoDescription": "Skanery Datalogic: QuickScan, Gryphon, PowerScan i prezentacyjne Magellan. Porównaj odczyt 1D/2D, połączenia, PN, ceny, stany oraz akcesoria.",
-  "longDescription": "Skanery Datalogic do kas, magazynów i produkcji. Porównaj QuickScan, Gryphon, PowerScan i Magellan — modele ręczne, prezentacyjne, Bluetooth oraz STAR 433 MHz.",
+  "seoTitle": "Skanery i czytniki Datalogic — USB i bezprzewodowe",
+  "seoDescription": "Czytniki kodów kreskowych Datalogic: QuickScan, Gryphon, PowerScan i Magellan. Porównaj modele 1D/2D, USB i bezprzewodowe, ceny oraz zgodne akcesoria.",
+  "longDescription": "Czytniki kodów kreskowych Datalogic do kas, magazynów i produkcji. Porównaj QuickScan, Gryphon, PowerScan i Magellan: modele USB, bezprzewodowe, prezentacyjne oraz ladowe.",
   "faq": [
     {
       "question": "Który skaner Datalogic wybrać do kasy?",

@@ -217,6 +217,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    ...(bc.slug === 'skanery-datalogic' ? { '@id': `https://www.takma.com.pl/${bc.slug}#breadcrumb` } : {}),
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
       { '@type': 'ListItem', position: 2, name: category.name, item: `https://www.takma.com.pl/${category.slug}` },
@@ -238,12 +239,22 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     ...(content?.updatedAt ? { dateModified: content.updatedAt } : {}),
     provider: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     about: { '@type': 'Brand', name: manufacturer.name },
-    speakable: {
-      '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', '.definition-content', '.faq-section'],
-    },
+    ...(bc.slug === 'skanery-datalogic' ? {
+      breadcrumb: { '@id': `https://www.takma.com.pl/${bc.slug}#breadcrumb` },
+      isPartOf: { '@type': 'WebSite', name: 'TAKMA', url: 'https://www.takma.com.pl/' },
+    } : {
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.definition-content', '.faq-section'],
+      },
+    }),
     mainEntity: {
       '@type': 'ItemList',
+      ...(bc.slug === 'skanery-datalogic' ? {
+        '@id': `https://www.takma.com.pl/${bc.slug}#lista-produktow`,
+        name: 'Skanery i czytniki kodów kreskowych Datalogic',
+        itemListOrder: 'https://schema.org/ItemListUnordered',
+      } : {}),
       numberOfItems: allProducts.length,
       itemListElement: allProducts.map((p, i) => ({
         '@type': 'ListItem',
@@ -671,7 +682,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               </a>
               {content?.updatedAt && (
                 <span className="text-xs text-gray-400">
-                  ceny sprawdzone {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
+                  {bc.slug === 'skanery-datalogic' ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </span>
               )}
             </div>
@@ -702,7 +713,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 {najtansza && <> · ceny netto od {zlote(najtansza)} zł</>}
                 {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} modelach</>}
                 {content?.updatedAt && (
-                  <span className="text-gray-500"> · ceny sprawdzone {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                  <span className="text-gray-500"> · {bc.slug === 'skanery-datalogic' ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 )}
               </p>
             </div>
@@ -724,6 +735,8 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
         {/* Układ z filtrami (konfiguracja w category-filters.ts): sidebar = checkboxy z licznikiem + nawigacja */}
         {filters ? (
+          <>
+          {bc.slug === 'skanery-datalogic' && <h2 className="sr-only">Modele skanerów Datalogic — ceny i dostępność</h2>}
           <FilterableProductGrid
             products={produktyDoSiatki}
             filters={filters}
@@ -741,6 +754,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
           >
             {richContent}
           </FilterableProductGrid>
+          </>
         ) : (
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
