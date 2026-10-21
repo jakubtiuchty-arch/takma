@@ -34,8 +34,11 @@ export function polishDate(value: unknown, endOfDay = true): Date | null {
   if (!/(?:Z|[+-]\d\d:\d\d)$/.test(s)) {
     const local = new Date(s + 'Z')
     if (!Number.isFinite(+local)) return null
-    const inWarsaw = new Date(local.toLocaleString('en-US', { timeZone: 'Europe/Warsaw' }) + ' UTC')
-    s += (+inWarsaw - +local) / 3600000 === 2 ? '+02:00' : '+01:00'
+    const format = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Warsaw', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' })
+    const expected = s.slice(0, 19).replace('T', ' ')
+    const possible = [1, 2].map(offset => new Date(+local - offset * 3600000)).filter(d => format.format(d) === expected)
+    // Brak godziny podczas zmiany czasu jest niepewny. Przy dwuznaczności nie zamykamy oferty wcześniej.
+    return possible.length ? new Date(Math.max(...possible.map(Number))) : null
   }
   const date = new Date(s)
   return Number.isFinite(+date) ? date : null
