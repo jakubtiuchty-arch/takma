@@ -2334,14 +2334,14 @@ export const bixolonLabelProducts: Product[] = [
     "priceFrom": 2721.52,
     "availability": "unavailable",
     "images": [
-      "/images/products/bixolon-xl5-40ct-2.webp",
+      "/images/products/bixolon-xl5-40ct-3.webp",
       "/images/products/bixolon-xl5-40ct-1.webp",
-      "/images/products/bixolon-xl5-40ct-3.webp"
+      "/images/products/bixolon-xl5-40ct-2.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON XL5-40CT — drukarka, ujęcie pod kątem",
-      "BIXOLON XL5-40CT — ujęcie 2, wersja z LCD; wyposażenie według PN",
-      "BIXOLON XL5-40CT — ujęcie 3"
+      "BIXOLON XL5-40CT — widok z przodu pod kątem, wersja z LCD",
+      "BIXOLON XL5-40CT — widok z przodu z wysuniętą etykietą",
+      "BIXOLON XL5-40CT — widok z tyłu i złącza"
     ],
     "tags": [
       "magazyn",
