@@ -6,10 +6,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-3510hsi",
     "name": "Datalogic Magellan 3510HSi",
     "seoH1": "Datalogic Magellan 3510HSi",
-    "seoTitle": "Datalogic Magellan 3510HSi — skaner ladowy USB 5 V | TAKMA",
-    "seoDescription": "Datalogic Magellan 3510HSi: skaner ladowy USB 5 V. Poziome okno z zasilaniem USB 5 V. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 3510HSi to poziomy skaner 1D i 2D do zabudowy w ladzie. Obsługuje zasilanie z odpowiedniego portu USB 5 V.",
-    "description": "Magellan 3510HSi to poziomy skaner 1D i 2D do zabudowy w ladzie. Obsługuje zasilanie z odpowiedniego portu USB 5 V.\n\n## Montaż w blacie i odczyt kodów\n\nObudowa ma 15,2 × 15,2 cm (długość × szerokość). Pod blatem potrzebujesz 8,7 cm głębokości. Wielokierunkowy odczyt pozwala przesuwać produkt nad oknem lub przedstawić kod do odczytu. Skaner odczytuje kody liniowe oraz QR i Data Matrix.\n\n## Wybór szkła i zestawu\n\nM3510-010200 nie zawiera górnej płyty, mocowania, przewodu ani zasilacza. To wersja do przygotowanej instalacji. M3511-010210-00604 ma szkło szafirowe. M3513-010210-00604 ma płytę Tin Oxide. Oba zestawy zawierają standardowe mocowanie i przewód USB o długości 4,5 m (15 ft).\n\n## Zasilanie i obsługa stanowiska\n\n3510HSi może pobierać zasilanie z portu USB 5 V przez zgodny przewód. Zapasowy [przewód USB z wejściem zasilania 90A052292](/produkt/datalogic-magellan-90a052292) jest innym rozwiązaniem połączenia. Jeśli korzystasz z zewnętrznego zasilania, dobierz zasilacz do przewodu i instalacji.\n\nObudowa ma ochronę IP52. Gwarancja producenta trwa 3 lata. 3510HSi przechwytuje obraz i ma port USB AUX. Port AUX wymaga zasilacza albo zasilania 12 V z hosta.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\nZasilanie zewnętrzne wymaga [90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewodu sieciowego EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Poziome okno z zasilaniem USB 5 V\n\n3510HSi jest poziomym czytnikiem do blatu, z możliwością zasilania z odpowiedniego USB 5 V. Przed montażem zmierz otwór i przestrzeń pod ladą. Model 3550HSi wymaga innego zasilania: 12 V. Porównaj [Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi). Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 3510HSi — skaner ladowy 1D/2D zasilany z USB",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 3510HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, zasilany z portu USB-A 5 V. Czytnik Datalogic 3510HSi, IP52, 3 lata gwarancji. 3510HSi Datalogic z płytą szafirową lub Tin Oxide. PN: M3510-010200, M3511-010210-00604, M3513-010210-00604.",
+    "shortDescription": "Datalogic Magellan 3510HSi — poziomy skaner ladowy 1D/2D do zabudowy w ladzie, zasilany z jednego portu USB-A 5 V, IP52, 3 lata gwarancji.",
+    "description": "Datalogic Magellan 3510HSi to poziomy skaner ladowy 1D i 2D do zabudowy w blacie kasy. Czytnik odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Data Matrix i Aztec, z etykiet i z ekranów telefonów.\n\nMatryca ma 1280 × 800 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość). Część pod blatem ma głębokość 8,7 cm. Masa wynosi 0,98 kg. 3510HSi przechwytuje obraz i ma port USB AUX. Port AUX wymaga zasilacza albo zasilania 12 V z hosta.\n\nM3510-010200 nie zawiera górnej płyty, mocowania, przewodu ani zasilacza. M3511-010210-00604 ma płytę szafirową, a M3513-010210-00604 płytę Tin Oxide. Oba zestawy zawierają standardowe mocowanie i przewód USB 4,5 m (15 ft), bez zasilacza. Osobny przewód USB-A z wejściem zasilania ma PN [90A052292](/produkt/datalogic-magellan-90a052292).\n\nSkaner pobiera zasilanie z jednego portu USB-A 5 V. Przyjmuje też zasilanie DC 5–12 V z [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Obudowa ma ochronę IP52. Temperatura pracy wynosi od 10°C do 40°C. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -22,7 +22,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-3510hsi-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3510HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3510HSi — poziomy skaner do zabudowy, metalowa płyta z oknem odczytu, widok z przodu pod kątem",
       "Datalogic Magellan 3510HSi — widok z tyłu, porty połączeniowe"
     ],
     "tags": [
@@ -37,11 +37,15 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, PDF417, QR, Data Matrix, Aztec"
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232"
+        "value": "OEM (IBM) USB, RS-232, USB Keyboard, USB Com, USB TEC"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "USB-A 5 V lub DC 5–12 V; port AUX wymaga zasilacza lub 12 V z hosta"
       },
       {
         "name": "Klasa ochrony",
@@ -49,7 +53,7 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Wymiary",
-        "value": "152 × 152 mm; głębokość pod blatem 87 mm"
+        "value": "Obudowa 152 × 152 mm (dł. × szer.); głębokość pod blatem 87 mm"
       },
       {
         "name": "Gwarancja producenta",
@@ -110,7 +114,11 @@ export const counterScannerProducts: Product[] = [
     "faq": [
       {
         "question": "Czym zasilanie 3510HSi różni się od 3550HSi?",
-        "answer": "3510HSi może pobierać 5 V ze zgodnego portu USB przez odpowiedni przewód. 3550HSi wymaga zasilania 12 V."
+        "answer": "Magellan 3510HSi pracuje z zasilaniem 5 V z jednego portu USB-A. Magellan 3550HSi wymaga zasilania 12 V DC."
+      },
+      {
+        "question": "Czy port AUX w Magellan 3510HSi działa przy zasilaniu z USB 5 V?",
+        "answer": "Nie. Port USB AUX działa przy zasilaniu z zasilacza 90ACC0358 albo przy zasilaniu 12 V z hosta."
       },
       {
         "question": "Czy Datalogic Magellan 3510HSi zawiera wagę?",
@@ -118,7 +126,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Czy każda wersja Magellan 3510HSi ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "answer": "Nie. M3510-010200 nie ma przewodu ani zasilacza. Zestawy -00604 mają przewód USB, bez zasilacza."
+      },
+      {
+        "question": "Jakie mocowanie pasuje do Magellan 3510HSi?",
+        "answer": "Standardowe mocowanie blatowe ma PN 11-0027. Pasuje też mocowanie dzielone 90ACC0355."
       }
     ],
     "downloads": [
@@ -137,10 +149,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-3550hsi",
     "name": "Datalogic Magellan 3550HSi",
     "seoH1": "Datalogic Magellan 3550HSi",
-    "seoTitle": "Datalogic Magellan 3550HSi — skaner ladowy 12 V | TAKMA",
-    "seoDescription": "Datalogic Magellan 3550HSi: skaner ladowy 12 V. Poziomy Magellan z osobnym wymaganiem 12 V. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 3550HSi to skaner ladowy 1D i 2D z zasilaniem 12 V. Służy do odczytu towarów przy stanowisku kasowym.",
-    "description": "Magellan 3550HSi to skaner ladowy 1D i 2D z zasilaniem 12 V. Służy do odczytu towarów przy stanowisku kasowym.\n\n## Czytnik do zabudowy w ladzie\n\nPrzesuń etykietę nad oknem lub przedstaw ją do odczytu. Układ obrazujący odczytuje kody w różnych kierunkach, w tym QR i Data Matrix. Obudowa ma 15,2 × 15,2 cm. Głębokość części pod blatem wynosi 8,7 cm.\n\n## Sam czytnik lub gotowy zestaw połączeniowy\n\nM3550-010200 to wersja bez górnej płyty. Mocowanie, przewód i zasilanie trzeba dobrać osobno. M3551-010210-07604 zawiera szkło szafirowe, standardowe mocowanie, przewód USB-A 4,5 m (15 ft) oraz europejski zasilacz z przewodem sieciowym.\n\n## Interfejs i zasilanie\n\n3550HSi wymaga zasilania 12 V. Nie przenoś na ten model sposobu zasilania 5 V z [3510HSi](/produkt/datalogic-magellan-3510hsi). Do połączenia USB z zewnętrznym zasilaniem służy [90A052292](/produkt/datalogic-magellan-90a052292). Sam przewód nie zawiera zasilacza.\n\nCzytnik ma ochronę IP52. Gwarancja producenta trwa 3 lata. Opcjonalny dodatkowy czytnik dla klienta wymaga osobnego doboru i nie jest częścią oferowanych zestawów.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\nZasilanie zewnętrzne wymaga [90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewodu sieciowego EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Poziomy Magellan z osobnym wymaganiem 12 V\n\n3550HSi ma poziome okno do zabudowy i wymaga zasilania 12 V. Wersja M3551-010210-07604 zawiera połączenie USB i europejskie zasilanie. Sam M3550-010200 wymaga osobnego doboru wyposażenia. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 3550HSi — skaner ladowy 1D/2D, zasilanie 12 V",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 3550HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, zasilanie 12 V DC. Czytnik Datalogic 3550HSi, IP52, 3 lata gwarancji. 3550HSi Datalogic z płytą szafirową, mocowaniem i zasilaczem EU. PN: M3550-010200, M3551-010210-07604.",
+    "shortDescription": "Datalogic Magellan 3550HSi — poziomy skaner ladowy 1D/2D do zabudowy w ladzie, zasilanie 12 V DC, port USB AUX, IP52, 3 lata gwarancji.",
+    "description": "Datalogic Magellan 3550HSi to poziomy skaner ladowy 1D i 2D do kas o dużym natężeniu ruchu. Czytnik odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Data Matrix i Aztec, z etykiet i z ekranów telefonów.\n\nMatryca ma 1280 × 1024 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość). Część pod blatem ma głębokość 8,7 cm. Masa wynosi 0,98 kg. Skaner przechwytuje obraz i ma zasilany port USB AUX. Czytnik dla klienta (CSS) jest opcją. Nie wchodzi w skład zestawów.\n\nM3550-010200 nie ma górnej płyty, mocowania, przewodu ani zasilacza. M3551-010210-07604 zawiera płytę szafirową, standardowe mocowanie, przewód USB-A 4,5 m (15 ft) oraz zasilacz EU z przewodem sieciowym.\n\n3550HSi wymaga zasilania 12 V DC. Nie pracuje z zasilaniem 5 V z portu USB. Do zasilania zewnętrznego służą [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód USB-A z wejściem zasilania ma PN [90A052292](/produkt/datalogic-magellan-90a052292). Obudowa ma ochronę IP52. Temperatura pracy wynosi od 10°C do 40°C. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -154,7 +166,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-3550hsi-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3550HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3550HSi — poziomy skaner do zabudowy, metalowa płyta z oknem odczytu, widok z przodu pod kątem",
       "Datalogic Magellan 3550HSi — odczyt kodu produktu, skaner zamontowany w ladzie",
       "Datalogic Magellan 3550HSi — przesuwanie towaru nad oknem w zabudowie kasowej"
     ],
@@ -170,15 +182,19 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, PDF417, QR, Data Matrix, Aztec"
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232"
+        "value": "OEM (IBM) USB, RS-232, USB Keyboard, USB Com"
       },
       {
         "name": "Zasilanie",
         "value": "12 V DC"
+      },
+      {
+        "name": "Wymiary",
+        "value": "Obudowa 152 × 152 mm (dł. × szer.); głębokość pod blatem 87 mm"
       },
       {
         "name": "Klasa ochrony",
@@ -233,8 +249,8 @@ export const counterScannerProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy 3550HSi wystarczy zasilić zwykłym USB 5 V?",
-        "answer": "Nie. Magellan 3550HSi wymaga 12 V. Nie stosuj schematu zasilania 5 V właściwego dla 3510HSi."
+        "question": "Czy 3550HSi można zasilić z portu USB 5 V?",
+        "answer": "Nie. Magellan 3550HSi wymaga zasilania 12 V DC. Zasilanie 5 V z jednego portu USB-A obsługuje Magellan 3510HSi."
       },
       {
         "question": "Czy Datalogic Magellan 3550HSi zawiera wagę?",
@@ -242,7 +258,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Czy każda wersja Magellan 3550HSi ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "answer": "Nie. M3550-010200 nie ma płyty, mocowania, przewodu ani zasilacza. M3551-010210-07604 zawiera przewód USB-A i zasilacz EU z przewodem sieciowym."
+      },
+      {
+        "question": "Jakie mocowanie pasuje do Magellan 3550HSi?",
+        "answer": "Standardowe mocowanie blatowe ma PN 11-0027. Pasuje też mocowanie dzielone 90ACC0355."
       }
     ],
     "downloads": [
@@ -261,10 +281,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-3700hsi",
     "name": "Datalogic Magellan 3700HSi",
     "seoH1": "Datalogic Magellan 3700HSi",
-    "seoTitle": "Datalogic Magellan 3700HSi — poziomy skaner ladowy 2D | TAKMA",
-    "seoDescription": "Datalogic Magellan 3700HSi: poziomy skaner ladowy 2D. 3710 i 3750: kod lub kolorowy obraz. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 3700HSi to rodzina skanerów ladowych 1D i 2D. Wybierz 3710HSi lub 3750HSi z kolorowym obrazem i portem AUX.",
-    "description": "Magellan 3700HSi to rodzina skanerów ladowych 1D i 2D. Wybierz 3710HSi lub 3750HSi z kolorowym obrazem i portem AUX.\n\n## Odczyt w poziomym stanowisku kasowym\n\nSkaner odczytuje kody liniowe, QR i Data Matrix. Płaskie okno pozwala przesuwać towary przez pole odczytu. Szklana płyta szafirowa jest wspólna dla pokazanych konfiguracji. Obudowa ma ochronę IP52.\n\n## Co zmienia wersja 3750HSi\n\n3710HSi służy do odczytu kodów. 3750HSi rozszerza wyposażenie o przechwytywanie kolorowych obrazów oraz port AUX. Funkcje aplikacji POS muszą obsługiwać wybrany sposób użycia obrazu. Nie jest to wersja 3770 z kolorowym wideo.\n\n## Zawartość i zgodne połączenia\n\nPN M3711-010200 i M3751-010200 nie zawierają mocowania, zasilacza ani przewodu. M3711-010210-00604 dodaje standardowe mocowanie oraz przewód USB-A z wejściem zasilania 4,5 m (15 ft). Zasilacz pozostaje osobnym elementem.\n\nDo układu z zewnętrznym zasilaniem możesz dobrać [zasilacz 12 V 90ACC0193](/produkt/datalogic-magellan-90acc0193), [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052292](/produkt/datalogic-magellan-90a052292). Nie kupuj zapasowego przewodu ponownie, jeśli wybrany zestaw już go zawiera. Gwarancja producenta trwa 3 lata.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\n## 3710 i 3750: kod lub kolorowy obraz\n\nRodzina 3700HSi pozwala dobrać funkcje do aplikacji kasowej. 3710HSi służy do odczytu kodów; 3750HSi dodaje kolorowe obrazy i AUX. To poziome rozwiązanie, odmienne od pionowego 3600VSi. Porównaj [Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi). Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 3700HSi — poziomy skaner ladowy 1D/2D",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 3700HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, wersje 3710HSi i 3750HSi z kolorowym obrazem i AUX. Czytnik Datalogic 3700HSi, IP52, 3 lata gwarancji. PN: M3711-010200, M3711-010210-00604, M3751-010200.",
+    "shortDescription": "Datalogic Magellan 3700HSi — poziomy skaner ladowy 1D/2D z płytą szafirową, wersje 3710HSi i 3750HSi (kolorowy obraz, port AUX), IP52, 3 lata gwarancji.",
+    "description": "Datalogic Magellan 3700HSi to rodzina poziomych skanerów ladowych 1D i 2D do zabudowy w blacie kasy. Skaner odczytuje kody liniowe, GS1 DataBar, GS1 Digital Link, PDF417, QR, Data Matrix i Aztec. Odczytuje kody z etykiet i z ekranów telefonów.\n\nMatryca z migawką globalną ma 1360 × 1120 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość), a część pod blatem 8,7 cm głębokości. Masa wynosi 0,90 kg. Wszystkie wersje mają płytę szafirową.\n\n3710HSi przechwytuje obraz w skali szarości. 3750HSi przechwytuje także obraz kolorowy i ma zasilany port USB AUX. Port AUX wymaga zasilania 12 V, 12 V OEM-USB albo USB-C z zasilaniem 9–12 V. Kolorowe wideo ma wersja 3770HSi.\n\nM3711-010200 i M3751-010200 nie zawierają mocowania, zasilacza ani przewodu. M3711-010210-00604 zawiera standardowe mocowanie i przewód USB-A z wejściem zasilania 4,5 m (15 ft), bez zasilacza. Do zasilania zewnętrznego służą [zasilacz 12 V 90ACC0193](/produkt/datalogic-magellan-90acc0193) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Obudowa ma ochronę IP52. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -278,7 +298,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-3700hsi-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3700HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3700HSi — poziomy skaner z metalową płytą i oknem odczytu, uchwyt zabezpieczający przewód z przodu obudowy",
       "Datalogic Magellan 3700HSi — widok od przodu na okno odczytu",
       "Datalogic Magellan 3700HSi — widok pod kątem z aktywnym podświetleniem"
     ],
@@ -294,15 +314,23 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, GS1 Digital Link, PDF417, QR, Data Matrix, Aztec"
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232"
+        "value": "OEM (IBM) USB, RS-232, USB Keyboard, USB Com"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "DC 5–12 V; port AUX (3750HSi): 12 V, 12 V OEM-USB lub USB-C 9–12 V"
       },
       {
         "name": "Płyta",
         "value": "Szafirowa"
+      },
+      {
+        "name": "Wymiary",
+        "value": "Obudowa 152 × 152 mm (dł. × szer.); głębokość pod blatem 87 mm"
       },
       {
         "name": "Klasa ochrony",
@@ -365,8 +393,8 @@ export const counterScannerProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy 3750HSi nagrywa kolorowe wideo — Magellan 3700HSi?",
-        "answer": "Nie należy tego zakładać. 3750HSi obsługuje kolorowe obrazy i AUX. Wersja 3770 z kolorowym wideo nie jest oferowana na tej karcie."
+        "question": "Czy Magellan 3750HSi nagrywa kolorowe wideo?",
+        "answer": "Nie. 3750HSi przechwytuje kolorowe obrazy. Kolorowe wideo nagrywa wersja 3770HSi."
       },
       {
         "question": "Czy Datalogic Magellan 3700HSi zawiera wagę?",
@@ -374,7 +402,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Czy każda wersja Magellan 3700HSi ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "answer": "Nie. M3711-010200 i M3751-010200 nie mają mocowania, przewodu ani zasilacza. M3711-010210-00604 ma mocowanie i przewód USB-A, bez zasilacza."
+      },
+      {
+        "question": "Jakie mocowanie pasuje do Magellan 3700HSi?",
+        "answer": "Standardowy uchwyt blatowy do Magellan 3700HSi ma PN 90ACC0355. Mocowanie 11-0027 jest przeznaczone do Magellan 3510HSi i 3550HSi."
       }
     ],
     "downloads": [
@@ -393,10 +425,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-9550i",
     "name": "Datalogic Magellan 9550i",
     "seoH1": "Datalogic Magellan 9550i",
-    "seoTitle": "Datalogic Magellan 9550i — dwuokienkowy skaner ladowy | TAKMA",
-    "seoDescription": "Datalogic Magellan 9550i: dwuokienkowy skaner ladowy. Dobór długości płyty w Magellanie 9550i. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 9550i to dwuokienkowy skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Warianty różnią się płytą i zestawem połączeniowym.",
-    "description": "Magellan 9550i to dwuokienkowy skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Warianty różnią się płytą i zestawem połączeniowym.\n\n## Dwa okna odczytu przy kasie\n\nWybierz krótką, średnią albo długą płytę. Średnie konfiguracje z Adaptive Scale są przygotowane do rozbudowy o wagę. Oferowane numery PN są wersjami Scanner Only. Nie zawierają kompletnej wagi. Składana prowadnica pomaga obsługiwać większe towary. Jej obecność wynika z konkretnego PN.\n\n## Połączenie dobrane do płyty i PN\n\nW 9550i długość płyty i zestaw połączeniowy to osobne cechy konfiguracji. Wersja USB POT wymaga właściwego zasilanego portu POS. Jeśli stanowisko korzysta z zewnętrznego zasilania, dobierz zasilacz i przewód do wybranego PN.\n\nDo układu z zasilaniem zewnętrznym dobierz [90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Sprawdź najpierw wyposażenie wybranego PN.\n\n## Odczyt kodów bez założenia obecności dodatkowych modułów\n\n9550i odczytuje EAN oraz kody 2D, w tym QR i Data Matrix. Dodatkowe systemy kontroli i funkcje obrazu wymagają osobnych modułów oraz zgodnej aplikacji. Nie należą automatycznie do wersji Scanner Only. Gwarancja producenta na czytnik wynosi 1 rok.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\n## Dobór długości płyty w Magellanie 9550i\n\n9550i ma dwa okna odczytu oraz warianty z krótką, średnią lub długą płytą. Dobierz płytę do projektu kasy. Adaptive Scale oznacza przygotowanie do rozbudowy, nie kompletną wagę w oferowanym PN. Porównaj [Magellan 9600i](/produkt/datalogic-magellan-9600i). Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 9550i — dwuokienkowy skaner ladowy 1D/2D",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 9550i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D do kas, płyta krótka, średnia lub długa. Czytnik Datalogic 9550i, wersje Adaptive Scale. 9550i Datalogic. PN: 957011001, 957011001-00053, 957011001-00351, 957013101, 957022201-00050, 957022201-00312.",
+    "shortDescription": "Datalogic Magellan 9550i — dwuokienkowy skaner ladowy 1D/2D do kas obsługowych i samoobsługowych, płyta krótka, średnia lub długa, wersje Adaptive Scale, 1 rok gwarancji.",
+    "description": "Datalogic Magellan 9550i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Okno poziome i okno pionowe odczytują kod z kilku stron towaru. Skaner odczytuje kody liniowe, GS1 DataBar, GS1 Digital Link, PDF417, QR, Micro QR, Data Matrix i Aztec.\n\nDwie monochromatyczne matryce 1 MP z migawką globalną pracują z prędkością 40 klatek na sekundę. Wieża ma 12,9 cm nad blatem. Część pod blatem ma 10,4 cm głębokości, a szerokość wynosi 29,2 cm. Długość zależy od płyty: krótka 35,2 cm, średnia 39,9 cm, długa 50,7 cm. Kolorowa kamera USB jest opcją.\n\nWszystkie wersje w tabeli to skanery bez wagi (Scanner Only). Wersje Adaptive Scale współpracują z wagą innego producenta, którą zamawia się osobno. 957011001-00351 i 957022201-00312 zawierają zasilacz EU z przewodem sieciowym. 957011001-00053 ma przewód USB POT, bez zasilacza.\n\nSkaner wymaga zasilania 12 V DC. Do zasilania zewnętrznego służą [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Interfejsy to RS-232 i USB (COM, OEM, Keyboard). Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -410,7 +442,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-9550i-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9550i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9550i — dwuokienkowy skaner z wieżą i płytą, czerwone podświetlenie okien odczytu",
       "Datalogic Magellan 9550i — widok z prawej z aktywnym podświetleniem",
       "Datalogic Magellan 9550i — profil z lewej, płyta w zabudowie"
     ],
@@ -426,7 +458,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, GS1 Digital Link, PDF417, QR, Micro QR, Data Matrix, Aztec"
+      },
+      {
+        "name": "Wysokość wieży",
+        "value": "12,9 cm nad blatem"
       },
       {
         "name": "Interfejsy",
@@ -537,16 +573,16 @@ export const counterScannerProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Adaptive Scale w 9550i oznacza wagę w zestawie?",
-        "answer": "Nie. Oferowane PN są wersjami Scanner Only. Adaptive Scale to przygotowanie do integracji, bez kompletnej wagi i jej legalizacji."
-      },
-      {
         "question": "Czy Datalogic Magellan 9550i zawiera wagę?",
-        "answer": "Nie. Oferowane PN dotyczą skanera. Przygotowanie do integracji z wagą nie oznacza dołączonej wagi ani jej legalizacji."
+        "answer": "Nie. Wszystkie wersje w tabeli to skanery bez wagi (Scanner Only). Wersje Adaptive Scale współpracują z wagą innego producenta, którą zamawia się osobno."
       },
       {
         "question": "Czy każda wersja Magellan 9550i ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "answer": "Nie. 957011001, 957013101 i 957022201-00050 nie mają przewodu ani zasilacza. 957011001-00053 ma przewód USB POT, bez zasilacza. 957011001-00351 i 957022201-00312 mają przewód i zasilacz EU z przewodem sieciowym."
+      },
+      {
+        "question": "Jaką długość ma płyta Magellan 9550i?",
+        "answer": "Wersja krótka ma 35,2 cm, średnia 39,9 cm, a długa 50,7 cm. 957011001 ma płytę krótką, 957013101 długą, a 957022201 średnią ze składaną prowadnicą."
       }
     ],
     "downloads": [
@@ -565,10 +601,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-9600i",
     "name": "Datalogic Magellan 9600i",
     "seoH1": "Datalogic Magellan 9600i",
-    "seoTitle": "Datalogic Magellan 9600i — dwuokienkowy skaner 2D | TAKMA",
-    "seoDescription": "Datalogic Magellan 9600i: dwuokienkowy skaner 2D. Dwa okna i wieża 12,9 cm. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 9600i to dwuokienkowy skaner do zabudowy w kasie. Odczytuje kody 1D i 2D z towarów oraz ekranów.",
-    "description": "Magellan 9600i to dwuokienkowy skaner do zabudowy w kasie. Odczytuje kody 1D i 2D z towarów oraz ekranów.\n\n## Dwa okna odczytu przy kasie\n\nWieża skanera ma wysokość 12,9 cm nad blatem. Dwa okna poszerzają przestrzeń odczytu wokół przesuwanego produktu. Wybierz krótką płytę lub średnią płytę Flush. W tej ofercie porównujesz wersje Scanner Only. Moduły kolorowych kamer z rozszerzonej rodziny i dodatkowy czytnik dla klienta nie są dołączone do tych PN.\n\n## Port POS i zasilanie Magellana 9600i\n\nPrzy doborze 9600i sprawdź interfejs kasy i wyposażenie zestawu. Przewód USB POT podłączaj wyłącznie do zgodnego zasilanego portu. Konfiguracja z osobnym zasilaniem wymaga właściwego zasilacza; sam przewód USB nie potwierdza jego obecności w opakowaniu.\n\nDo układu z zasilaniem zewnętrznym dobierz [90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Sprawdź najpierw wyposażenie wybranego PN.\n\n## Etykiety i ekrany w wersji Scanner Only\n\nMagellan 9600i odczytuje liniowe kody towarowe, QR i Data Matrix. Oferowane konfiguracje nie obejmują automatycznie dodatkowych kamer ani systemów kontroli. Rozbudowę uzgodnij z możliwościami aplikacji POS. Czytnik ma roczną gwarancję producenta.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\n## Dwa okna i wieża 12,9 cm\n\n9600i ma wieżę o wysokości 12,9 cm nad blatem. Wybierz krótką płytę lub średnią płytę Flush według wymiarów stanowiska. Jeśli projekt wymaga niższej wieży, porównaj Magellan 9900i. Porównaj [Magellan 9900i](/produkt/datalogic-magellan-9900i). Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 9600i — dwuokienkowy skaner ladowy 1D/2D",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 9600i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D do kas, cztery matryce 1 MP, wieża 12,9 cm. Czytnik Datalogic 9600i, płyta krótka lub średnia. 9600i Datalogic. PN: 96101001000-000100, 96101001000-004210, 96116001000-004530.",
+    "shortDescription": "Datalogic Magellan 9600i — dwuokienkowy skaner ladowy 1D/2D do kas obsługowych i samoobsługowych, cztery matryce 1 MP, wieża 12,9 cm, 1 rok gwarancji.",
+    "description": "Datalogic Magellan 9600i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix i Aztec, z towarów i z ekranów.\n\nSystem QuadVision ma cztery monochromatyczne matryce 1 MP z migawką globalną: dwie w oknie poziomym i dwie w pionowym. Wieża ma 12,9 cm nad blatem. Część pod blatem ma 10,2 cm głębokości, a szerokość wynosi 29,2 cm. Płyta krótka ma 35,2 cm, a średnia 39,9 cm długości.\n\nWersje w tabeli to skanery bez wagi (Scanner Only). 96101001000-000100 ma płytę krótką i nie zawiera zasilacza ani przewodu. 96101001000-004210 ma płytę krótką, zasilacz EU z przewodem sieciowym i przewód RS-232 WN. 96116001000-004530 ma średnią płytę Flush, zasilacz EU z przewodem sieciowym i przewód USB POT. Kamery kolorowe i czytnik dla klienta są opcjami. Nie wchodzą w skład zestawów.\n\nSkaner wymaga zasilania 12 V DC. Do zasilania zewnętrznego służą [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Gwarancja producenta trwa 1 rok. Niższą wieżę (6,8 cm) ma [Magellan 9900i](/produkt/datalogic-magellan-9900i). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -582,7 +618,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-9600i-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9600i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9600i — dwuokienkowy skaner z wieżą, zielone wskaźniki i czerwone podświetlenie okien odczytu",
       "Datalogic Magellan 9600i — średnia płyta, widok z prawej",
       "Datalogic Magellan 9600i — średnia płyta, widok z lewej"
     ],
@@ -598,7 +634,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix, Aztec"
+      },
+      {
+        "name": "Wysokość wieży",
+        "value": "12,9 cm nad blatem"
       },
       {
         "name": "Interfejsy",
@@ -665,7 +705,7 @@ export const counterScannerProducts: Product[] = [
     "faq": [
       {
         "question": "Czy 9600i ma tak niską wieżę jak 9900i?",
-        "answer": "Nie. Wieża 9600i ma 12,9 cm nad blatem. W Magellanie 9900i wieża ma 6,8 cm. Dobierz urządzenie do przestrzeni stanowiska."
+        "answer": "Nie. Wieża 9600i ma 12,9 cm nad blatem. W Magellanie 9900i wieża ma 6,8 cm."
       },
       {
         "question": "Czy Datalogic Magellan 9600i zawiera wagę?",
@@ -673,7 +713,7 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Czy każda wersja Magellan 9600i ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "answer": "Nie. 96101001000-000100 nie ma przewodu ani zasilacza. 96101001000-004210 i 96116001000-004530 zawierają zasilacz EU z przewodem sieciowym i przewód do hosta."
       }
     ],
     "downloads": [
@@ -692,10 +732,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-9900i",
     "name": "Datalogic Magellan 9900i",
     "seoH1": "Datalogic Magellan 9900i",
-    "seoTitle": "Datalogic Magellan 9900i — skaner ladowy ScaleSentry | TAKMA",
-    "seoDescription": "Datalogic Magellan 9900i: skaner ladowy ScaleSentry. Niska wieża i ScaleSentry w konkretnym PN. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Magellan 9900i to skaner ladowy z niską wieżą 6,8 cm i dwoma oknami odczytu. Ten PN ma średnią płytę oraz ScaleSentry.",
-    "description": "Magellan 9900i to skaner ladowy z niską wieżą 6,8 cm i dwoma oknami odczytu. Ten PN ma średnią płytę oraz ScaleSentry.\n\n## Dwa okna odczytu przy kasie\n\nNiska wieża ogranicza wysokość urządzenia nad blatem. PN 99111001000-000100 ma stałą prowadnicę, mocowanie półkowe i ScaleSentry. Funkcja ScaleSentry pomaga wykrywać produkty wystające poza obszar płyty. Nie zastępuje wagi ani jej legalizacji. Moduł odczytu z góry TDR jest opcjonalny. Nie wchodzi w skład tego PN.\n\n## Podłączenie PN 99111001000-000100\n\nPrzed montażem 9900i sprawdź wyposażenie PN 99111001000-000100 i port hosta. Zasilanie przez USB POT wymaga zgodnej instalacji kasowej. W układzie z zewnętrznym zasilaniem potrzebujesz właściwego zasilacza oraz przewodu; nie zakładaj ich obecności na podstawie zdjęcia.\n\nDo układu z zasilaniem zewnętrznym dobierz [90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Sprawdź najpierw wyposażenie wybranego PN.\n\n## Zakres dostawy i ochrona producenta\n\n9900i odczytuje kody liniowe oraz QR i Data Matrix. ScaleSentry jest cechą oferowanego PN, lecz nie oznacza obecności wszystkich opcjonalnych systemów obrazu. Dodatkowe moduły wymagają osobnego doboru i obsługi w oprogramowaniu. Gwarancja producenta trwa 1 rok.\n\nPorównaj sposób zabudowy pozostałych [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).\n\n## Niska wieża i ScaleSentry w konkretnym PN\n\n9900i w tej ofercie ma średnią płytę, wieżę 6,8 cm i ScaleSentry. PN 99111001000-000100 zawiera stałą prowadnicę oraz mocowanie półkowe. Moduł TDR pozostaje opcją i nie jest częścią tego zestawu. Porównaj [Magellan 9600i](/produkt/datalogic-magellan-9600i). Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
+    "seoTitle": "Datalogic Magellan 9900i — dwuokienkowy skaner ladowy, niska wieża",
+    "seoDescription": "Skaner ladowy Datalogic Magellan 9900i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D z niską wieżą 6,8 cm, cztery matryce 1 MP, ScaleSentry. Czytnik Datalogic 9900i do kas obsługowych i samoobsługowych. 9900i Datalogic. PN: 99111001000-000100.",
+    "shortDescription": "Datalogic Magellan 9900i — dwuokienkowy skaner ladowy 1D/2D z niską wieżą 6,8 cm, średnią płytą i ScaleSentry, 1 rok gwarancji.",
+    "description": "Datalogic Magellan 9900i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D z niską wieżą 6,8 cm. Służy do kas obsługowych i samoobsługowych. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix i Aztec.\n\nSystem QuadVision ma cztery monochromatyczne matryce 1 MP z migawką globalną: dwie w oknie poziomym i dwie w pionowym. Część pod blatem ma 10,2 cm głębokości, a szerokość wynosi 29,2 cm. Średnia płyta ma 39,9 cm długości.\n\nWersja 99111001000-000100 to skaner bez wagi (Scanner Only). Ma średnią płytę, stałą prowadnicę, mocowanie półkowe i ScaleSentry. ScaleSentry kontroluje boki płyty wiązką podczerwieni i wykrywa towar położony poza płytą. Moduł odczytu z góry TDR i kamery kolorowe są opcjami. Nie wchodzą w skład zestawu.\n\n99111001000-000100 nie zawiera zasilacza ani przewodu. Skaner wymaga zasilania 12 V DC. Zasilanie zewnętrzne wymaga [zasilacza 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewodu sieciowego 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewodu USB 90A052135](/produkt/datalogic-magellan-90a052135). Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -708,7 +748,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/datalogic-magellan-9900i-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9900i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9900i — dwuokienkowy skaner z niską wieżą, czerwone podświetlenie okien odczytu",
       "Datalogic Magellan 9900i — średnia płyta, widok z prawej bez modułu TDR"
     ],
     "tags": [
@@ -723,7 +763,11 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "name": "Skanowane kody",
-        "value": "1D i 2D, QR, Data Matrix"
+        "value": "1D, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix, Aztec"
+      },
+      {
+        "name": "Wysokość wieży",
+        "value": "6,8 cm nad blatem"
       },
       {
         "name": "Interfejsy",
@@ -778,16 +822,16 @@ export const counterScannerProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy 99111001000-000100 zawiera moduł TDR — Magellan 9900i?",
-        "answer": "Nie. Oferowany PN zawiera ScaleSentry, ale moduł odczytu z góry TDR jest opcjonalny. ScaleSentry nie zastępuje wagi ani legalizacji."
+        "question": "Czy Magellan 9900i (99111001000-000100) zawiera moduł TDR?",
+        "answer": "Nie. Moduł odczytu z góry TDR jest opcją. Wersja 99111001000-000100 ma ScaleSentry, bez TDR."
       },
       {
         "question": "Czy Datalogic Magellan 9900i zawiera wagę?",
-        "answer": "Nie. Oferowane PN dotyczą skanera. Przygotowanie do integracji z wagą nie oznacza dołączonej wagi ani jej legalizacji."
+        "answer": "Nie. 99111001000-000100 to skaner bez wagi. ScaleSentry nie waży towaru."
       },
       {
-        "question": "Czy każda wersja Magellan 9900i ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "question": "Czy Magellan 9900i ma przewód i zasilacz w zestawie?",
+        "answer": "Nie. 99111001000-000100 nie zawiera zasilacza ani przewodu."
       }
     ],
     "downloads": [
@@ -1296,10 +1340,10 @@ export const counterScannerAccessories: Product[] = [
     "id": "datalogic-magellan-90acc0194",
     "slug": "datalogic-magellan-90acc0194",
     "name": "Zasilacz Datalogic Magellan 90ACC0194",
-    "shortDescription": "Zasilacz 90ACC0194 dostarcza 12 V i moc 18 W do zgodnych skanerów Magellan 9550i, 9600i i 9900i.",
-    "description": "Zasilacz 90ACC0194 dostarcza 12 V i moc 18 W do zgodnych skanerów Magellan 9550i, 9600i i 9900i.\n\nWymaga osobnego przewodu sieciowego EU 6003-0940 ze złączem C13. Przewód nie jest dołączony. Nie zastępuje zasilaczy odmiennych serii Magellan.\n\n## Zgodne modele\n\n[Magellan 9550i](/produkt/datalogic-magellan-9550i)\n\n[Magellan 9600i](/produkt/datalogic-magellan-9600i)\n\n[Magellan 9900i](/produkt/datalogic-magellan-9900i)",
-    "seoTitle": "Zasilacz Datalogic Magellan 90ACC0194 | TAKMA",
-    "seoDescription": "Zasilacz 90ACC0194 dostarcza 12 V i moc 18 W do zgodnych skanerów Magellan 9550i, 9600i i 9900i. Cena i dostępność w TAKMA.",
+    "shortDescription": "Zasilacz sieciowy 90ACC0194 (Power Brick) zasila skanery ladowe Magellan 9550i, 9600i i 9900i.",
+    "description": "Zasilacz sieciowy 90ACC0194 (Power Brick) zasila skanery ladowe Magellan 9550i, 9600i i 9900i. Skanery wymagają zasilania 12 V DC. Zasilacz przyjmuje napięcie 100–240 V AC, 50–60 Hz. Wymaga przewodu sieciowego EU [6003-0940](/produkt/datalogic-powerscan-6003-0940) ze złączem C13. Przewód sieciowy i skaner nie są dołączone. Zestawy 957011001-00351, 957022201-00312, 96101001000-004210 i 96116001000-004530 zawierają zasilacz EU z przewodem sieciowym.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 9550i](/produkt/datalogic-magellan-9550i), [Datalogic Magellan 9600i](/produkt/datalogic-magellan-9600i), [Datalogic Magellan 9900i](/produkt/datalogic-magellan-9900i). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Zasilacz Datalogic 90ACC0194 do Magellan 9550i, 9600i i 9900i",
+    "seoDescription": "Zasilacz sieciowy Datalogic 90ACC0194 (Power Brick) do skanerów ladowych Magellan 9550i, 9600i i 9900i; przewód sieciowy 6003-0940 osobno. PN: 90ACC0194.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1322,6 +1366,10 @@ export const counterScannerAccessories: Product[] = [
       {
         "name": "Part Number",
         "value": "90ACC0194"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC, 50–60 Hz"
       },
       {
         "name": "Zgodność",
@@ -1349,10 +1397,10 @@ export const counterScannerAccessories: Product[] = [
     "id": "datalogic-magellan-90acc0358",
     "slug": "datalogic-magellan-90acc0358",
     "name": "Zasilacz Datalogic Magellan 90ACC0358",
-    "shortDescription": "Zasilacz 90ACC0358 dostarcza 12 V i moc 18 W do Magellan 3510HSi oraz 3550HSi.",
-    "description": "Zasilacz 90ACC0358 dostarcza 12 V i moc 18 W do Magellan 3510HSi oraz 3550HSi.\n\nMa kątową wtyczkę DC. Wymaga osobnego przewodu sieciowego EU 6003-0940. Nie jest dołączony do samego czytnika. Nie kupuj go ponownie, jeśli wybrany PN ma europejski zasilacz.\n\n## Zgodne modele\n\n[Magellan 3510hsi](/produkt/datalogic-magellan-3510hsi)\n\n[Magellan 3550hsi](/produkt/datalogic-magellan-3550hsi)",
-    "seoTitle": "Zasilacz Datalogic Magellan 90ACC0358 | TAKMA",
-    "seoDescription": "Zasilacz 90ACC0358 dostarcza 12 V i moc 18 W do Magellan 3510HSi oraz 3550HSi. Cena i dostępność w TAKMA.",
+    "shortDescription": "Zasilacz 90ACC0358 dostarcza 12 V DC i moc 18 W do skanerów ladowych Magellan 3510HSi i 3550HSi.",
+    "description": "Zasilacz 90ACC0358 dostarcza 12 V DC i moc 18 W do skanerów ladowych Magellan 3510HSi i 3550HSi. Ma kątową wtyczkę DC. Nie ma przewodu sieciowego. Wymaga przewodu sieciowego EU [6003-0940](/produkt/datalogic-powerscan-6003-0940). Zestaw Magellan 3550HSi M3551-010210-07604 zawiera zasilacz EU z przewodem sieciowym. Magellan 3510HSi pracuje też z zasilaniem 5 V z portu USB-A. Port USB AUX w 3510HSi wymaga zasilacza albo zasilania 12 V z hosta.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi), [Datalogic Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Zasilacz 12 V Datalogic 90ACC0358 do Magellan 3510HSi i 3550HSi",
+    "seoDescription": "Zasilacz 12 V, 18 W Datalogic 90ACC0358 z kątową wtyczką do skanerów ladowych Magellan 3510HSi i 3550HSi; przewód sieciowy 6003-0940 osobno. PN: 90ACC0358.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1377,8 +1425,20 @@ export const counterScannerAccessories: Product[] = [
         "value": "90ACC0358"
       },
       {
+        "name": "Napięcie wyjściowe",
+        "value": "12 V DC"
+      },
+      {
+        "name": "Moc",
+        "value": "18 W"
+      },
+      {
+        "name": "Wtyczka",
+        "value": "Kątowa DC"
+      },
+      {
         "name": "Zgodność",
-        "value": "Magellan 3510hsi, 3550hsi"
+        "value": "Magellan 3510HSi, 3550HSi"
       }
     ],
     "applications": [
@@ -1400,11 +1460,11 @@ export const counterScannerAccessories: Product[] = [
   {
     "id": "datalogic-magellan-90a052135",
     "slug": "datalogic-magellan-90a052135",
-    "name": "Przewód USB Datalogic Magellan 90A052135",
-    "shortDescription": "Przewód 90A052135 łączy Magellan 9550i, 9600i lub 9900i z portem USB-A systemu POS.",
-    "description": "Przewód 90A052135 łączy Magellan 9550i, 9600i lub 9900i z portem USB-A systemu POS.\n\nDługość wynosi 4,5 m (15 ft). To przewód do konfiguracji z zasilaniem zewnętrznym. Zasilacz 90ACC0194 i przewód sieciowy są osobnymi elementami.\n\n## Zgodne modele\n\n[Magellan 9550i](/produkt/datalogic-magellan-9550i)\n\n[Magellan 9600i](/produkt/datalogic-magellan-9600i)\n\n[Magellan 9900i](/produkt/datalogic-magellan-9900i)",
-    "seoTitle": "Przewód USB Datalogic Magellan 90A052135 | TAKMA",
-    "seoDescription": "Przewód 90A052135 łączy Magellan 9550i, 9600i lub 9900i z portem USB-A systemu POS. Cena i dostępność w TAKMA.",
+    "name": "Przewód USB-A Datalogic Magellan 90A052135 — 4,5 m (15 ft)",
+    "shortDescription": "Przewód 90A052135 łączy skaner ladowy Magellan 9550i, 9600i lub 9900i z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym.",
+    "description": "Przewód 90A052135 łączy skaner ladowy Magellan 9550i, 9600i lub 9900i z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Długość wynosi 4,5 m (15 ft). Przewód nie jest zasilaczem. Zasilanie zapewnia [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194) z [przewodem sieciowym 6003-0940](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 9550i](/produkt/datalogic-magellan-9550i), [Datalogic Magellan 9600i](/produkt/datalogic-magellan-9600i), [Datalogic Magellan 9900i](/produkt/datalogic-magellan-9900i). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Przewód USB-A Datalogic 90A052135 do Magellan 9550i, 9600i i 9900i — 4,5 m",
+    "seoDescription": "Przewód USB-A Datalogic 90A052135 z zasilaniem zewnętrznym, 4,5 m (15 ft), do skanerów ladowych Magellan 9550i, 9600i i 9900i. PN: 90A052135.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1430,6 +1490,10 @@ export const counterScannerAccessories: Product[] = [
         "value": "90A052135"
       },
       {
+        "name": "Interfejs",
+        "value": "USB-A, zasilanie zewnętrzne"
+      },
+      {
         "name": "Zgodność",
         "value": "Magellan 9550i, 9600i, 9900i"
       },
@@ -1446,7 +1510,10 @@ export const counterScannerAccessories: Product[] = [
       "datalogic-magellan-9600i",
       "datalogic-magellan-9900i"
     ],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "datalogic-magellan-90acc0194",
+      "datalogic-powerscan-6003-0940"
+    ],
     "compatibleAccessories": [],
     "downloads": [],
     "faq": [],
@@ -1456,11 +1523,11 @@ export const counterScannerAccessories: Product[] = [
   {
     "id": "datalogic-magellan-90acc0355",
     "slug": "datalogic-magellan-90acc0355",
-    "name": "Mocowanie Datalogic Magellan 90ACC0355",
-    "shortDescription": "Mocowanie dzielone 90ACC0355 służy do montażu Magellan 35xxHSi i 37xxHSi w ladzie.",
-    "description": "Mocowanie dzielone 90ACC0355 służy do montażu Magellan 35xxHSi i 37xxHSi w ladzie.\n\nPrzed montażem sprawdź wymiary otworu i sposób podparcia blatu. Nie jest standardowym mocowaniem 11-0027. Nie zawiera skanera.\n\n## Zgodne modele\n\n[Magellan 3510hsi](/produkt/datalogic-magellan-3510hsi)\n\n[Magellan 3550hsi](/produkt/datalogic-magellan-3550hsi)\n\n[Magellan 3700hsi](/produkt/datalogic-magellan-3700hsi)",
-    "seoTitle": "Mocowanie Datalogic Magellan 90ACC0355 | TAKMA",
-    "seoDescription": "Mocowanie dzielone 90ACC0355 służy do montażu Magellan 35xxHSi i 37xxHSi w ladzie. Cena i dostępność w TAKMA.",
+    "name": "Mocowanie dzielone Datalogic Magellan 90ACC0355",
+    "shortDescription": "Mocowanie dzielone 90ACC0355 służy do zabudowy skanerów Magellan 3510HSi, 3550HSi i 3700HSi w blacie.",
+    "description": "Mocowanie dzielone 90ACC0355 (Split Mount) służy do zabudowy skanerów ladowych Magellan 3510HSi, 3550HSi i 3700HSi w blacie. Dla Magellan 3700HSi jest to standardowy uchwyt blatowy. Dla 3510HSi i 3550HSi standardowym mocowaniem jest [11-0027](/produkt/datalogic-magellan-11-0027). Mocowanie nie zawiera skanera.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi), [Datalogic Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi), [Datalogic Magellan 3700HSi](/produkt/datalogic-magellan-3700hsi). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Mocowanie dzielone Datalogic 90ACC0355 do Magellan 3510HSi, 3550HSi i 3700HSi",
+    "seoDescription": "Mocowanie dzielone (Split Mount) Datalogic 90ACC0355 do zabudowy skanerów ladowych Magellan 3510HSi, 3550HSi i 3700HSi w blacie. PN: 90ACC0355.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1486,8 +1553,12 @@ export const counterScannerAccessories: Product[] = [
         "value": "90ACC0355"
       },
       {
+        "name": "Rodzaj",
+        "value": "Mocowanie dzielone (Split Mount)"
+      },
+      {
         "name": "Zgodność",
-        "value": "Magellan 3510hsi, 3550hsi, 3700hsi"
+        "value": "Magellan 3510HSi, 3550HSi, 3700HSi"
       }
     ],
     "applications": [
@@ -1508,11 +1579,11 @@ export const counterScannerAccessories: Product[] = [
   {
     "id": "datalogic-magellan-11-0027",
     "slug": "datalogic-magellan-11-0027",
-    "name": "Mocowanie Datalogic Magellan 11-0027",
-    "shortDescription": "Mocowanie 11-0027 służy do standardowej zabudowy Magellan 3510HSi i 3550HSi w blacie.",
-    "description": "Mocowanie 11-0027 (Standard Counter Mount) służy do standardowej zabudowy Magellan 3510HSi i 3550HSi w blacie. Do Magellan 3700HSi służy mocowanie [90ACC0355](/produkt/datalogic-magellan-90acc0355). Mocowanie nie zawiera skanera.\n\n## Zgodne modele\n\n[Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi)\n\n[Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi)",
-    "seoTitle": "Mocowanie Datalogic Magellan 11-0027 | TAKMA",
-    "seoDescription": "Mocowanie 11-0027 służy do standardowej zabudowy Magellan 3510HSi i 3550HSi w blacie. PN: 11-0027.",
+    "name": "Mocowanie blatowe Datalogic Magellan 11-0027",
+    "shortDescription": "Mocowanie 11-0027 służy do standardowej zabudowy skanerów Magellan 3510HSi i 3550HSi w blacie.",
+    "description": "Mocowanie 11-0027 (Standard Counter Mount) służy do standardowej zabudowy skanerów ladowych Magellan 3510HSi i 3550HSi w blacie. Do Magellan 3700HSi służy mocowanie [90ACC0355](/produkt/datalogic-magellan-90acc0355). Mocowanie nie zawiera skanera.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi), [Datalogic Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Mocowanie blatowe Datalogic 11-0027 do Magellan 3510HSi i 3550HSi",
+    "seoDescription": "Standardowe mocowanie blatowe (Standard Counter Mount) Datalogic 11-0027 do skanerów ladowych Magellan 3510HSi i 3550HSi. PN: 11-0027.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1536,6 +1607,10 @@ export const counterScannerAccessories: Product[] = [
       {
         "name": "Part Number",
         "value": "11-0027"
+      },
+      {
+        "name": "Rodzaj",
+        "value": "Standardowe mocowanie blatowe (Standard Counter Mount)"
       },
       {
         "name": "Zgodność",
