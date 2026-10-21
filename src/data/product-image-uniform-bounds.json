@@ -1462,5 +1462,117 @@
     55,
     1379,
     937
+  ],
+  "/images/products/datalogic-magellan-3510hsi-2-v1.webp": [
+    900,
+    592,
+    100,
+    86,
+    800,
+    520
+  ],
+  "/images/products/datalogic-magellan-3700hsi-2-v1.webp": [
+    700,
+    700,
+    81,
+    132,
+    613,
+    540
+  ],
+  "/images/products/datalogic-magellan-3700hsi-3-v1.webp": [
+    700,
+    700,
+    84,
+    146,
+    599,
+    510
+  ],
+  "/images/products/datalogic-magellan-9550i-2-v1.webp": [
+    1800,
+    1377,
+    91,
+    194,
+    1679,
+    1079
+  ],
+  "/images/products/datalogic-magellan-9550i-3-v1.webp": [
+    1800,
+    1075,
+    159,
+    210,
+    1660,
+    683
+  ],
+  "/images/products/datalogic-magellan-9600i-2-v1.webp": [
+    1800,
+    1654,
+    185,
+    273,
+    1634,
+    1220
+  ],
+  "/images/products/datalogic-magellan-9600i-3-v1.webp": [
+    1800,
+    1349,
+    350,
+    295,
+    1456,
+    1027
+  ],
+  "/images/products/datalogic-magellan-9900i-2-v1.webp": [
+    1800,
+    1079,
+    288,
+    106,
+    1506,
+    712
+  ],
+  "/images/products/zebra-sp7201-h-2-v1.webp": [
+    1800,
+    1200,
+    368,
+    91,
+    1439,
+    1136
+  ],
+  "/images/products/zebra-sp7201-h-3-v1.webp": [
+    1800,
+    1200,
+    365,
+    50,
+    1416,
+    1085
+  ],
+  "/images/products/zebra-sp7208-h-2-v1.webp": [
+    1800,
+    1200,
+    368,
+    91,
+    1439,
+    1136
+  ],
+  "/images/products/zebra-sp7208-h-3-v1.webp": [
+    1800,
+    1200,
+    365,
+    50,
+    1416,
+    1085
+  ],
+  "/images/products/zebra-mp7200-2-v1.webp": [
+    1800,
+    1200,
+    219,
+    263,
+    1599,
+    845
+  ],
+  "/images/products/zebra-mp7200-3-v1.webp": [
+    1800,
+    1200,
+    169,
+    270,
+    1628,
+    885
   ]
 }

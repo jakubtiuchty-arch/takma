@@ -18,10 +18,12 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 1872.53,
     "availability": "available",
     "images": [
-      "/images/products/datalogic-magellan-3510hsi-1-v1.webp"
+      "/images/products/datalogic-magellan-3510hsi-1-v1.webp",
+      "/images/products/datalogic-magellan-3510hsi-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3510HSi — widok urządzenia pod kątem"
+      "Datalogic Magellan 3510HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3510HSi — widok z tyłu, porty połączeniowe"
     ],
     "tags": [
       "retail"
@@ -143,10 +145,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 3086.5,
     "availability": "available",
     "images": [
-      "/images/products/datalogic-magellan-3550hsi-1-v1.webp"
+      "/images/products/datalogic-magellan-3550hsi-1-v1.webp",
+      "/images/products/datalogic-magellan-3550hsi-2-v1.webp",
+      "/images/products/datalogic-magellan-3550hsi-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3550HSi — widok urządzenia pod kątem"
+      "Datalogic Magellan 3550HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3550HSi — odczyt kodu produktu, skaner zamontowany w ladzie",
+      "Datalogic Magellan 3550HSi — przesuwanie towaru nad oknem w zabudowie kasowej"
     ],
     "tags": [
       "retail"
@@ -260,10 +266,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 2110.57,
     "availability": "available",
     "images": [
-      "/images/products/datalogic-magellan-3700hsi-1-v1.webp"
+      "/images/products/datalogic-magellan-3700hsi-1-v1.webp",
+      "/images/products/datalogic-magellan-3700hsi-2-v1.webp",
+      "/images/products/datalogic-magellan-3700hsi-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 3700HSi — widok urządzenia pod kątem"
+      "Datalogic Magellan 3700HSi — widok urządzenia pod kątem",
+      "Datalogic Magellan 3700HSi — widok od przodu na okno odczytu",
+      "Datalogic Magellan 3700HSi — widok pod kątem z aktywnym podświetleniem"
     ],
     "tags": [
       "retail"
@@ -385,10 +395,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 4353.37,
     "availability": "available",
     "images": [
-      "/images/products/datalogic-magellan-9550i-1-v1.webp"
+      "/images/products/datalogic-magellan-9550i-1-v1.webp",
+      "/images/products/datalogic-magellan-9550i-2-v1.webp",
+      "/images/products/datalogic-magellan-9550i-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9550i — widok urządzenia pod kątem"
+      "Datalogic Magellan 9550i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9550i — widok z prawej z aktywnym podświetleniem",
+      "Datalogic Magellan 9550i — profil z lewej, płyta w zabudowie"
     ],
     "tags": [
       "retail"
@@ -549,10 +563,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 5749.83,
     "availability": "on-order",
     "images": [
-      "/images/products/datalogic-magellan-9600i-1-v1.webp"
+      "/images/products/datalogic-magellan-9600i-1-v1.webp",
+      "/images/products/datalogic-magellan-9600i-2-v1.webp",
+      "/images/products/datalogic-magellan-9600i-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9600i — widok urządzenia pod kątem"
+      "Datalogic Magellan 9600i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9600i — średnia płyta, widok z prawej",
+      "Datalogic Magellan 9600i — średnia płyta, widok z lewej"
     ],
     "tags": [
       "retail"
@@ -669,10 +687,12 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 6056.63,
     "availability": "available",
     "images": [
-      "/images/products/datalogic-magellan-9900i-1-v1.webp"
+      "/images/products/datalogic-magellan-9900i-1-v1.webp",
+      "/images/products/datalogic-magellan-9900i-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Magellan 9900i — widok urządzenia pod kątem"
+      "Datalogic Magellan 9900i — widok urządzenia pod kątem",
+      "Datalogic Magellan 9900i — średnia płyta, widok z prawej bez modułu TDR"
     ],
     "tags": [
       "retail"
@@ -778,10 +798,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 1222.58,
     "availability": "on-order",
     "images": [
-      "/images/products/zebra-sp7201-h-1-v1.webp"
+      "/images/products/zebra-sp7201-h-1-v1.webp",
+      "/images/products/zebra-sp7201-h-2-v1.webp",
+      "/images/products/zebra-sp7201-h-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Zebra SP7201-H — widok urządzenia pod kątem"
+      "Zebra SP7201-H — widok urządzenia pod kątem",
+      "Zebra SP7201-H — obudowa SP72-H, widok z lewej",
+      "Zebra SP7201-H — obudowa SP72-H, widok z prawej"
     ],
     "tags": [
       "retail"
@@ -888,10 +912,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 1590.16,
     "availability": "on-order",
     "images": [
-      "/images/products/zebra-sp7208-h-1-v1.webp"
+      "/images/products/zebra-sp7208-h-1-v1.webp",
+      "/images/products/zebra-sp7208-h-2-v1.webp",
+      "/images/products/zebra-sp7208-h-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Zebra SP7208-H — widok urządzenia pod kątem"
+      "Zebra SP7208-H — widok urządzenia pod kątem",
+      "Zebra SP7208-H — obudowa SP72-H, widok z lewej",
+      "Zebra SP7208-H — obudowa SP72-H, widok z prawej"
     ],
     "tags": [
       "retail"
@@ -998,10 +1026,14 @@ export const counterScannerProducts: Product[] = [
     "priceFrom": 3772.81,
     "availability": "on-order",
     "images": [
-      "/images/products/zebra-mp7200-1-v1.webp"
+      "/images/products/zebra-mp7200-1-v1.webp",
+      "/images/products/zebra-mp7200-2-v1.webp",
+      "/images/products/zebra-mp7200-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Zebra MP7200 — widok z przodu, obudowa z długą płytą"
+      "Zebra MP7200 — widok z przodu, obudowa z długą płytą",
+      "Zebra MP7200 — widok z lewego boku, długa płyta",
+      "Zebra MP7200 — widok z prawego boku, długa płyta"
     ],
     "tags": [
       "retail"
