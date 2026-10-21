@@ -1101,10 +1101,9 @@ export const cipherlabProducts: Product[] = [
       }
     ],
     "relatedAccessories": [
+      "cipherlab-ark95cccnu201",
       "cipherlab-baerstr100003",
-      "cipherlab-xrk9500x01584",
-      "cipherlab-xrs3500x01504",
-      "cipherlab-x970000x01504"
+      "cipherlab-xrk9500x01584"
     ],
     "relatedProducts": [
       "cipherlab-rk96",
@@ -1136,19 +1135,19 @@ export const cipherlabAccessories: Product[] = [
   {
     "id": "cipherlab-ars20chcnnns1",
     "slug": "cipherlab-ars20chcnnns1",
-    "name": "Stacja ładująca CipherLab RS20 — bez osłony",
-    "seoH1": "Stacja ładująca CipherLab RS20 — bez osłony",
-    "seoTitle": "Stacja ładująca CipherLab RS20 — bez osłony — ARS20CHCNNNS1",
-    "seoDescription": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala bez osłony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "name": "Stacja ładująca CipherLab RS20 do terminala bez osłony",
+    "seoH1": "Stacja ładująca CipherLab RS20 do terminala bez osłony",
+    "seoTitle": "Stacja ładująca CipherLab RS20 do terminala bez osłony — ARS20CHCNNNS1",
+    "seoDescription": "Stacja ładująca do CipherLab RS20: 1 terminal bez osłony, bez zasilacza. PN ARS20CHCNNNS1. Cena netto i dostępność.",
+    "shortDescription": "Stacja ładująca CipherLab RS20 do terminala bez osłony — 1 gniazdo terminala, zasilacz nie jest dołączony. PN ARS20CHCNNNS1.",
+    "description": "Stacja ładująca CipherLab RS20 ładuje jeden terminal RS20 bez osłony ochronnej. Gniazdo jest dopasowane do samej obudowy terminala. Do terminala w osłonie służy inna wersja: [stacja ARS20CHCNNNR1](/produkt/cipherlab-ars20chcnnnr1).\n\n## Zestaw\n\nZasilacz nie jest dołączony do stacji. Terminal i bateria nie są częścią zestawu. Stacja służy do ładowania terminala na stanowisku pracy, np. przy ladzie lub na zapleczu sklepu.\n\n## Pokrewne akcesoria\n\nRS20 ma wymienną baterię 3000 mAh z obsługą hot swap. Osłonę terminala oferuje [ARS20RBNNNN02](/produkt/cipherlab-ars20rbnnnn02). Po jej założeniu terminal ładuje stacja ARS20CHCNNNR1.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars20chcnnns1.webp"
     ],
     "imageDescriptions": [
-      "Stacja ładująca CipherLab RS20 — bez osłony — ARS20CHCNNNS1"
+      "Stacja ładująca CipherLab RS20 — biała obudowa z gniazdem terminala"
     ],
     "tags": [
       "magazyn"
@@ -1165,43 +1164,51 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS20"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS20CHCNNNS1",
-        "name": "Stacja ładująca CipherLab RS20 — bez osłony",
-        "attributes": {},
-        "priceFrom": 246.27,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Terminal w osłonie",
+        "value": "Nie — do terminala bez osłony"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "Nie jest dołączony"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs20"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS20 na stanowisku"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars20chcnnnr1",
     "slug": "cipherlab-ars20chcnnnr1",
-    "name": "Stacja ładująca CipherLab RS20 — do osłony",
-    "seoH1": "Stacja ładująca CipherLab RS20 — do osłony",
-    "seoTitle": "Stacja ładująca CipherLab RS20 — do osłony — ARS20CHCNNNR1",
-    "seoDescription": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala z osłoną. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "name": "Stacja ładująca CipherLab RS20 do terminala w osłonie",
+    "seoH1": "Stacja ładująca CipherLab RS20 do terminala w osłonie",
+    "seoTitle": "Stacja ładująca CipherLab RS20 do terminala w osłonie — ARS20CHCNNNR1",
+    "seoDescription": "Stacja ładująca do CipherLab RS20 w osłonie: 1 terminal, bez zasilacza. PN ARS20CHCNNNR1. Cena netto i dostępność.",
+    "shortDescription": "Stacja ładująca CipherLab RS20 do terminala w osłonie — 1 gniazdo terminala, zasilacz nie jest dołączony. PN ARS20CHCNNNR1.",
+    "description": "Stacja ładująca CipherLab RS20 ładuje jeden terminal RS20 w osłonie ochronnej. Terminal nie wymaga zdjęcia osłony przed włożeniem do gniazda. Do terminala bez osłony służy inna wersja: [stacja ARS20CHCNNNS1](/produkt/cipherlab-ars20chcnnns1). Osłona RS20 to [ARS20RBNNNN02](/produkt/cipherlab-ars20rbnnnn02).\n\n## Zestaw\n\nZasilacz nie jest dołączony do stacji. Terminal, osłona i bateria nie są częścią zestawu. Stacja służy do ładowania terminala na stanowisku pracy, np. przy ladzie lub na zapleczu sklepu.\n\n## Dlaczego osobna wersja\n\nOsłona zwiększa wymiary terminala. Z osłoną producent podaje odporność RS20 na upadki z 1,5 m, bez osłony z 1,2 m.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars20chcnnnr1.webp"
     ],
     "imageDescriptions": [
-      "Stacja ładująca CipherLab RS20 — do osłony — ARS20CHCNNNR1"
+      "Stacja ładująca CipherLab RS20 — biała obudowa z gniazdem terminala"
     ],
     "tags": [
       "magazyn"
@@ -1218,26 +1225,34 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS20"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS20CHCNNNR1",
-        "name": "Stacja ładująca CipherLab RS20 — do osłony",
-        "attributes": {},
-        "priceFrom": 246.27,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Terminal w osłonie",
+        "value": "Tak — do terminala w osłonie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "Nie jest dołączony"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs20"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS20 w osłonie na stanowisku"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars20rbnnnn02",
@@ -1245,16 +1260,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Osłona i pasek CipherLab RS20",
     "seoH1": "Osłona i pasek CipherLab RS20",
     "seoTitle": "Osłona i pasek CipherLab RS20 — ARS20RBNNNN02",
-    "seoDescription": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Wyposażenie do zgodnych terminali.",
-    "description": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Zgodność: CipherLab RS20. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "seoDescription": "Osłona do CipherLab RS20 chroni obudowę terminala (etui, rubber boot). PN ARS20RBNNNN02. Cena netto i dostępność.",
+    "shortDescription": "Osłona i pasek CipherLab RS20 — ochrona obudowy terminala RS20. PN ARS20RBNNNN02.",
+    "description": "Osłona CipherLab RS20 chroni obudowę terminala RS20 przed uderzeniami. Z osłoną producent podaje odporność RS20 na upadki z 1,5 m. Bez osłony ta wartość wynosi 1,2 m.\n\n## Zestaw i ładowanie\n\nTerminal nie jest częścią zestawu. Terminal w osłonie ładuje [stacja ARS20CHCNNNR1](/produkt/cipherlab-ars20chcnnnr1). Stacja [ARS20CHCNNNS1](/produkt/cipherlab-ars20chcnnns1) przyjmuje tylko terminal bez osłony.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars20rbnnnn02.webp"
     ],
     "imageDescriptions": [
-      "Osłona i pasek CipherLab RS20 — ARS20RBNNNN02"
+      "Osłona CipherLab RS20 — przezroczysta ramka obudowy"
     ],
     "tags": [
       "magazyn"
@@ -1271,43 +1286,43 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS20"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS20RBNNNN02",
-        "name": "Osłona i pasek CipherLab RS20",
-        "attributes": {},
-        "priceFrom": 104.03,
-        "availability": "unavailable"
+        "name": "Odporność RS20 na upadki",
+        "value": "1,5 m z osłoną; 1,2 m bez osłony"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs20"
     ],
-    "applications": [],
+    "applications": [
+      "Ochrona terminala CipherLab RS20 przed upadkami"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38chcnne01",
     "slug": "cipherlab-ars38chcnne01",
-    "name": "Stacja ładująca CipherLab RS38 — EU",
-    "seoH1": "Stacja ładująca CipherLab RS38 — EU",
-    "seoTitle": "Stacja ładująca CipherLab RS38 — EU — ARS38CHCNNE01",
-    "seoDescription": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "name": "Stacja ładująca CipherLab RS38 z zasilaczem",
+    "seoH1": "Stacja ładująca CipherLab RS38 z zasilaczem",
+    "seoTitle": "Stacja ładująca CipherLab RS38 z zasilaczem — ARS38CHCNNE01",
+    "seoDescription": "Stacja ładująca do CipherLab RS38: 1 terminal, zasilacz EU w zestawie. PN ARS38CHCNNE01. Cena netto i dostępność.",
+    "shortDescription": "Stacja ładująca CipherLab RS38 z zasilaczem — 1 terminal, zasilacz EU w zestawie. PN ARS38CHCNNE01.",
+    "description": "Stacja ładująca CipherLab RS38 ładuje jeden terminal RS38 na stanowisku pracy. Zestaw zawiera zasilacz EU, więc stacja działa bez dodatkowych elementów zasilania.\n\n## Zestaw\n\nW zestawie są stacja i zasilacz EU. Terminal i bateria nie są częścią zestawu. Stacja jest przeznaczona do standardowego RS38. [RS38H](/produkt/cipherlab-rs38h) ma osobną stację: [ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01). Do stanowiska przy biurku służy [stacja robocza ARS38WCCNNE01](/produkt/cipherlab-ars38wccnne01).\n\n## Terminal RS38\n\nRS38 ma wymienną baterię 4500 mAh z obsługą hot swap. Ładowarką QC 4.0 lub PD 3.0 o mocy min. 27 W terminal ładuje się od 0 do 100% w ok. 2 h. Uchwyt pistoletowy i pasek na dłoń są osobnymi akcesoriami.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38chcnne01.webp"
     ],
     "imageDescriptions": [
-      "Stacja ładująca CipherLab RS38 — EU — ARS38CHCNNE01"
+      "Stacja ładująca CipherLab RS38 — gniazdo terminala i baterii"
     ],
     "tags": [
       "magazyn"
@@ -1324,26 +1339,30 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38CHCNNE01",
-        "name": "Stacja ładująca CipherLab RS38 — EU",
-        "attributes": {},
-        "priceFrom": 838.79,
-        "availability": "available"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS38 na stanowisku"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38pstnnn11",
@@ -1351,16 +1370,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Uchwyt pistoletowy z osłoną CipherLab RS38",
     "seoH1": "Uchwyt pistoletowy z osłoną CipherLab RS38",
     "seoTitle": "Uchwyt pistoletowy z osłoną CipherLab RS38 — ARS38PSTNNN11",
-    "seoDescription": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Zgodność: CipherLab RS38. Zestaw obejmuje uchwyt i osłonę ochronną. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "seoDescription": "Uchwyt pistoletowy do CipherLab RS38 z gumową osłoną (rubber boot). PN ARS38PSTNNN11. Cena netto i dostępność.",
+    "shortDescription": "Uchwyt pistoletowy z osłoną CipherLab RS38 — uchwyt ze spustem i gumowa osłona. PN ARS38PSTNNN11.",
+    "description": "Uchwyt pistoletowy CipherLab RS38 zamienia terminal dotykowy w urządzenie typu gun ze spustem skanowania. Zestaw zawiera uchwyt i gumową osłonę terminala.\n\n## Zestaw i zastosowanie\n\nUchwyt ułatwia częste skanowanie kodów, np. przy kompletacji. Terminal nie jest częścią zestawu. RS38 z uchwytem można nosić w [kaburze X970000X01504](/produkt/cipherlab-x970000x01504). Uchwyt jest przeznaczony do standardowego RS38.\n\n## Terminal RS38\n\nRS38 ma ekran 6 cali i wymienną baterię 4500 mAh. Spust uchwytu uruchamia skanowanie bez dotykania ekranu.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38pstnnn11.webp"
     ],
     "imageDescriptions": [
-      "Uchwyt pistoletowy z osłoną CipherLab RS38 — ARS38PSTNNN11"
+      "Uchwyt pistoletowy CipherLab RS38 z gumową osłoną i spustem"
     ],
     "tags": [
       "magazyn"
@@ -1377,43 +1396,43 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38PSTNNN11",
-        "name": "Uchwyt pistoletowy z osłoną CipherLab RS38",
-        "attributes": {},
-        "priceFrom": 452.93,
-        "availability": "available"
+        "name": "Zawartość zestawu",
+        "value": "Uchwyt pistoletowy i gumowa osłona"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38"
     ],
-    "applications": [],
+    "applications": [
+      "Skanowanie z uchwytem pistoletowym"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38wccnne01",
     "slug": "cipherlab-ars38wccnne01",
-    "name": "Stacja robocza CipherLab RS38 — EU",
-    "seoH1": "Stacja robocza CipherLab RS38 — EU",
-    "seoTitle": "Stacja robocza CipherLab RS38 — EU — ARS38WCCNNE01",
-    "seoDescription": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "name": "Stacja robocza CipherLab RS38 z zasilaczem",
+    "seoH1": "Stacja robocza CipherLab RS38 z zasilaczem",
+    "seoTitle": "Stacja robocza CipherLab RS38 z zasilaczem — ARS38WCCNNE01",
+    "seoDescription": "Stacja robocza do CipherLab RS38 na stanowisko przy biurku, zasilacz EU w zestawie. PN ARS38WCCNNE01. Cena netto i dostępność.",
+    "shortDescription": "Stacja robocza CipherLab RS38 z zasilaczem — stacja na biurko, zasilacz EU w zestawie. PN ARS38WCCNNE01.",
+    "description": "Stacja robocza CipherLab RS38 ładuje jeden terminal RS38 na stanowisku przy biurku. Zestaw zawiera zasilacz EU.\n\n## Zestaw\n\nW zestawie są stacja i zasilacz EU. Terminal, uchwyt i bateria nie są częścią zestawu. Zdjęcie pokazuje stację z włożonym terminalem z uchwytem. Terminal i uchwyt są sprzedawane osobno.\n\n## Inne stacje RS38\n\nJeden terminal ładuje także [stacja ładująca ARS38CHCNNE01](/produkt/cipherlab-ars38chcnne01) z zasilaczem EU. Uchwyt pistoletowy RS38 to [ARS38PSTNNN11](/produkt/cipherlab-ars38pstnnn11). Stacje RS38 nie są przeznaczone do RS38H, który ma osobne akcesoria.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38wccnne01.webp"
     ],
     "imageDescriptions": [
-      "Stacja robocza CipherLab RS38 — EU — ARS38WCCNNE01"
+      "Stacja robocza CipherLab RS38 z włożonym terminalem (terminal sprzedawany osobno)"
     ],
     "tags": [
       "magazyn"
@@ -1430,43 +1449,47 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38WCCNNE01",
-        "name": "Stacja robocza CipherLab RS38 — EU",
-        "attributes": {},
-        "priceFrom": 1677.59,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS38 przy biurku"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars384sbhce01",
     "slug": "cipherlab-ars384sbhce01",
-    "name": "Ładowarka 4 baterii CipherLab RS38H — EU",
-    "seoH1": "Ładowarka 4 baterii CipherLab RS38H — EU",
-    "seoTitle": "Ładowarka 4 baterii CipherLab RS38H — EU — ARS384SBHCE01",
-    "seoDescription": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "name": "Ładowarka 4 baterii CipherLab RS38H z zasilaczem",
+    "seoH1": "Ładowarka 4 baterii CipherLab RS38H z zasilaczem",
+    "seoTitle": "Ładowarka 4 baterii CipherLab RS38H z zasilaczem — ARS384SBHCE01",
+    "seoDescription": "Ładowarka 4 baterii do CipherLab RS38H: zasilacz i przewód EU w zestawie. PN ARS384SBHCE01. Cena netto i dostępność.",
+    "shortDescription": "Ładowarka 4 baterii CipherLab RS38H z zasilaczem — 4 baterie, zasilacz i przewód EU w zestawie. PN ARS384SBHCE01.",
+    "description": "Ładowarka CipherLab RS38H ładuje jednocześnie cztery baterie terminala RS38H poza urządzeniem. Pozwala przygotować naładowane baterie do wymiany hot swap w trakcie zmiany.\n\n## Zestaw\n\nW zestawie są ładowarka, zasilacz i przewód EU. Baterie i terminal nie są częścią zestawu. Ładowarka ma białą obudowę jak RS38H. Terminal ładuje [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01).\n\n## Bateria RS38H\n\nRS38H ma wymienną baterię 4500 mAh. Wymiana hot swap nie wymaga wyłączania terminala. Zapasowe baterie z ładowarki pozwalają pracować przez całą dobę, np. na oddziale szpitalnym.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars384sbhce01.webp"
     ],
     "imageDescriptions": [
-      "Ładowarka 4 baterii CipherLab RS38H — EU — ARS384SBHCE01"
+      "Ładowarka 4 baterii CipherLab RS38H — biała obudowa, cztery gniazda"
     ],
     "tags": [
       "magazyn"
@@ -1483,43 +1506,47 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38H"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS384SBHCE01",
-        "name": "Ładowarka 4 baterii CipherLab RS38H — EU",
-        "attributes": {},
-        "priceFrom": 1442.7,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "4 baterie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU), z przewodem"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38h"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie baterii zapasowych"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38chcnhe01",
     "slug": "cipherlab-ars38chcnhe01",
-    "name": "Stacja ładująca CipherLab RS38H — EU",
-    "seoH1": "Stacja ładująca CipherLab RS38H — EU",
-    "seoTitle": "Stacja ładująca CipherLab RS38H — EU — ARS38CHCNHE01",
-    "seoDescription": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "name": "Stacja ładująca CipherLab RS38H z zasilaczem",
+    "seoH1": "Stacja ładująca CipherLab RS38H z zasilaczem",
+    "seoTitle": "Stacja ładująca CipherLab RS38H z zasilaczem — ARS38CHCNHE01",
+    "seoDescription": "Stacja ładująca do CipherLab RS38H: 1 terminal, zasilacz EU w zestawie. PN ARS38CHCNHE01. Cena netto i dostępność.",
+    "shortDescription": "Stacja ładująca CipherLab RS38H z zasilaczem — 1 terminal, zasilacz EU w zestawie. PN ARS38CHCNHE01.",
+    "description": "Stacja ładująca CipherLab RS38H ładuje jeden terminal RS38H. Ma białą obudowę jak wersja terminala do ochrony zdrowia.\n\n## Zestaw\n\nW zestawie są stacja i zasilacz EU. Terminal i bateria nie są częścią zestawu. Stacja jest przeznaczona do RS38H. Standardowy RS38 ma osobną [stację ARS38CHCNNE01](/produkt/cipherlab-ars38chcnne01). Baterie poza terminalem ładuje [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01).\n\n## Terminal RS38H\n\nObudowę RS38H producent testował z ponad 24 środkami czyszczącymi. Terminal ma wymienną baterię 4500 mAh z obsługą hot swap.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38chcnhe01.webp"
     ],
     "imageDescriptions": [
-      "Stacja ładująca CipherLab RS38H — EU — ARS38CHCNHE01"
+      "Stacja ładująca CipherLab RS38H — gniazdo terminala i baterii, biała obudowa"
     ],
     "tags": [
       "magazyn"
@@ -1536,26 +1563,30 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38H"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38CHCNHE01",
-        "name": "Stacja ładująca CipherLab RS38H — EU",
-        "attributes": {},
-        "priceFrom": 939.46,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38h"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS38H na stanowisku"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38clip0001",
@@ -1563,16 +1594,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Klips do przenoszenia CipherLab RS38H",
     "seoH1": "Klips do przenoszenia CipherLab RS38H",
     "seoTitle": "Klips do przenoszenia CipherLab RS38H — ARS38CLIP0001",
-    "seoDescription": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Wyposażenie do zgodnych terminali.",
-    "description": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "seoDescription": "Klips do przenoszenia CipherLab RS38H, mocowany z tyłu terminala. PN ARS38CLIP0001. Cena netto i dostępność.",
+    "shortDescription": "Klips do przenoszenia CipherLab RS38H — klips do noszenia terminala RS38H. PN ARS38CLIP0001.",
+    "description": "Klips CipherLab RS38H mocuje się z tyłu terminala RS38H. Pozwala nosić terminal przy ubraniu. Ręce pozostają wolne między odczytami.\n\n## Zestaw\n\nW zestawie jest klips w kolorze niebieskim. Terminal nie jest częścią zestawu. Do pracy z terminalem w dłoni służy [pasek na dłoń ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\n## Wersja RS38H\n\nKlips jest przeznaczony do RS38H w białej obudowie do ochrony zdrowia. Standardowy RS38 ma osobne akcesoria do przenoszenia, np. pasek na ramię.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38clip0001.webp"
     ],
     "imageDescriptions": [
-      "Klips do przenoszenia CipherLab RS38H — ARS38CLIP0001"
+      "Niebieski klips do przenoszenia CipherLab RS38H"
     ],
     "tags": [
       "magazyn"
@@ -1589,26 +1620,26 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38H"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38CLIP0001",
-        "name": "Klips do przenoszenia CipherLab RS38H",
-        "attributes": {},
-        "priceFrom": 100.67,
-        "availability": "available"
+        "name": "Kolor",
+        "value": "Niebieski"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38h"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars38hs000001",
@@ -1616,16 +1647,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Pasek na dłoń CipherLab RS38H",
     "seoH1": "Pasek na dłoń CipherLab RS38H",
     "seoTitle": "Pasek na dłoń CipherLab RS38H — ARS38HS000001",
-    "seoDescription": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "seoDescription": "Pasek na dłoń CipherLab RS38H (hand strap), mocowany z tyłu terminala. PN ARS38HS000001. Cena netto i dostępność.",
+    "shortDescription": "Pasek na dłoń CipherLab RS38H — pasek mocowany z tyłu terminala RS38H. PN ARS38HS000001.",
+    "description": "Pasek na dłoń CipherLab RS38H mocuje się z tyłu terminala RS38H. Pasek przytrzymuje terminal na dłoni podczas skanowania i pisania na ekranie.\n\n## Zestaw\n\nW zestawie jest pasek w kolorze niebieskim. Terminal nie jest częścią zestawu. Do noszenia terminala przy ubraniu służy [klips ARS38CLIP0001](/produkt/cipherlab-ars38clip0001).\n\n## Wersja RS38H\n\nPasek jest przeznaczony do RS38H w białej obudowie do ochrony zdrowia. Do standardowego RS38 pasuje [pasek na dłoń XRS3500X01504](/produkt/cipherlab-xrs3500x01504).\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars38hs000001.webp"
     ],
     "imageDescriptions": [
-      "Pasek na dłoń CipherLab RS38H — ARS38HS000001"
+      "Niebieski pasek na dłoń CipherLab RS38H"
     ],
     "tags": [
       "magazyn"
@@ -1642,26 +1673,27 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38H"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS38HS000001",
-        "name": "Pasek na dłoń CipherLab RS38H",
-        "attributes": {},
-        "priceFrom": 167.73,
-        "availability": "available"
+        "name": "Kolor",
+        "value": "Niebieski"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs38h"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala",
+      "Praca z terminalem w jednej dłoni"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars35pstnnn01",
@@ -1669,16 +1701,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Uchwyt pistoletowy CipherLab RS36",
     "seoH1": "Uchwyt pistoletowy CipherLab RS36",
     "seoTitle": "Uchwyt pistoletowy CipherLab RS36 — ARS35PSTNNN01",
-    "seoDescription": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "seoDescription": "Odłączany uchwyt pistoletowy do CipherLab RS36 i RS35, ze standardową baterią 4000 mAh. PN ARS35PSTNNN01. Cena netto i dostępność.",
+    "shortDescription": "Uchwyt pistoletowy CipherLab RS36 — odłączany uchwyt, tylko ze standardową baterią 4000 mAh. PN ARS35PSTNNN01.",
+    "description": "Uchwyt pistoletowy CipherLab RS36 to odłączany uchwyt ze spustem skanowania. Pasuje do terminali RS35 i RS36.\n\n## Ograniczenia\n\nUchwyt współpracuje tylko ze standardową baterią 4000 mAh. Z baterią rozszerzoną 6000 mAh uchwytu nie można zamontować.\n\n## Zestaw\n\nTerminal i bateria nie są częścią zestawu. RS36 z uchwytem można nosić w [kaburze X970000X01504](/produkt/cipherlab-x970000x01504).\n\n## Zastosowanie\n\nUchwyt ułatwia częste skanowanie kodów, np. przy przyjęciach i inwentaryzacji. Spust uruchamia skanowanie bez dotykania ekranu. Po odłączeniu uchwytu RS36 pracuje jako terminal dotykowy.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars35pstnnn01.webp"
     ],
     "imageDescriptions": [
-      "Uchwyt pistoletowy CipherLab RS36 — ARS35PSTNNN01"
+      "Uchwyt pistoletowy CipherLab RS36 ze spustem"
     ],
     "tags": [
       "magazyn"
@@ -1695,26 +1727,30 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS36"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS35PSTNNN01",
-        "name": "Uchwyt pistoletowy CipherLab RS36",
-        "attributes": {},
-        "priceFrom": 382.5,
-        "availability": "unavailable"
+        "name": "Bateria terminala",
+        "value": "Tylko standardowa 4000 mAh"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RS35, RS36"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36"
     ],
-    "applications": [],
+    "applications": [
+      "Skanowanie z uchwytem pistoletowym"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars35snpnun01",
@@ -1722,16 +1758,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Przewód z nakładką USB CipherLab RS36",
     "seoH1": "Przewód z nakładką USB CipherLab RS36",
     "seoTitle": "Przewód z nakładką USB CipherLab RS36 — ARS35SNPNUN01",
-    "seoDescription": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Wyposażenie do zgodnych terminali.",
-    "description": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "seoDescription": "Przewód USB z nakładką (snap-on) do CipherLab RS36 i RS35: ładowanie i transmisja danych. PN ARS35SNPNUN01. Cena netto i dostępność.",
+    "shortDescription": "Przewód z nakładką USB CipherLab RS36 — przewód USB z nakładką na złącze terminala RS35 / RS36. PN ARS35SNPNUN01.",
+    "description": "Przewód CipherLab RS36 ma nakładkę, którą zakłada się na złącze terminala. Drugi koniec ma wtyk USB do komputera lub zasilacza USB. Przewód służy do ładowania i transmisji danych bez stacji.\n\n## Zestaw\n\nW zestawie jest przewód z nakładką. Zasilacz i terminal nie są częścią zestawu. Przewód pasuje do terminali RS35 i RS36.\n\n## Stacje RS36\n\nNa stałym stanowisku terminal ładuje [stacja komunikacyjna ARS36CCCNUE01](/produkt/cipherlab-ars36cccnue01). Cztery terminale i cztery baterie ładuje [stacja ARS365CBNNE01](/produkt/cipherlab-ars365cbnne01).\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars35snpnun01.webp"
     ],
     "imageDescriptions": [
-      "Przewód z nakładką USB CipherLab RS36 — ARS35SNPNUN01"
+      "Przewód USB CipherLab RS36 z nakładką na złącze terminala"
     ],
     "tags": [
       "magazyn"
@@ -1748,43 +1784,47 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS36"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS35SNPNUN01",
-        "name": "Przewód z nakładką USB CipherLab RS36",
-        "attributes": {},
-        "priceFrom": 111.56,
-        "availability": "unavailable"
+        "name": "Złącze",
+        "value": "Nakładka na terminal / USB"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RS35, RS36"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie i transmisja danych bez stacji"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars365cbnne01",
     "slug": "cipherlab-ars365cbnne01",
-    "name": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU",
-    "seoH1": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU",
-    "seoTitle": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU — ARS365CBNNE01",
-    "seoDescription": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "name": "Stacja 4 terminali i 4 baterii CipherLab RS36",
+    "seoH1": "Stacja 4 terminali i 4 baterii CipherLab RS36",
+    "seoTitle": "Stacja 4 terminali i 4 baterii CipherLab RS36 — ARS365CBNNE01",
+    "seoDescription": "Stacja ładująca do CipherLab RS36: 4 terminale i 4 baterie, wersja EU. PN ARS365CBNNE01. Cena netto i dostępność.",
+    "shortDescription": "Stacja 4 terminali i 4 baterii CipherLab RS36 — ładuje 4 terminale i 4 baterie. PN ARS365CBNNE01.",
+    "description": "Stacja CipherLab RS36 ładuje jednocześnie cztery terminale RS36 i cztery baterie zapasowe. Gniazda baterii przyjmują baterie standardowe i rozszerzone.\n\n## Zastosowanie\n\nStacja służy do ładowania kilku terminali w jednym miejscu, np. w biurze magazynu. Baterie zapasowe ładują się równocześnie z terminalami.\n\n## Zestaw\n\nTerminale i baterie nie są częścią zestawu. Pojedynczy terminal z transmisją danych ładuje [stacja ARS36CCCNUE01](/produkt/cipherlab-ars36cccnue01). RS36 ma baterię standardową 4000 mAh. Opcjonalna bateria rozszerzona ma 6000 mAh.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars365cbnne01.webp"
     ],
     "imageDescriptions": [
-      "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU — ARS365CBNNE01"
+      "Stacja CipherLab RS36 — rząd gniazd terminali i baterii"
     ],
     "tags": [
       "magazyn"
@@ -1801,43 +1841,48 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS36"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS365CBNNE01",
-        "name": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU",
-        "attributes": {},
-        "priceFrom": 2390.51,
-        "availability": "available"
+        "name": "Liczba gniazd",
+        "value": "4 terminale i 4 baterie"
+      },
+      {
+        "name": "Wersja",
+        "value": "EU"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie kilku terminali CipherLab RS36",
+      "Ładowanie baterii zapasowych"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ars36cccnue01",
     "slug": "cipherlab-ars36cccnue01",
-    "name": "Stacja komunikacyjna CipherLab RS36 — EU",
-    "seoH1": "Stacja komunikacyjna CipherLab RS36 — EU",
-    "seoTitle": "Stacja komunikacyjna CipherLab RS36 — EU — ARS36CCCNUE01",
-    "seoDescription": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Zgodność: CipherLab RS36. W zestawie jest przewód micro-USB i zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "name": "Stacja komunikacyjna CipherLab RS36 z zasilaczem",
+    "seoH1": "Stacja komunikacyjna CipherLab RS36 z zasilaczem",
+    "seoTitle": "Stacja komunikacyjna CipherLab RS36 z zasilaczem — ARS36CCCNUE01",
+    "seoDescription": "Stacja ładująca z transmisją danych do CipherLab RS36: przewód micro-USB i zasilacz EU w zestawie. PN ARS36CCCNUE01. Cena netto i dostępność.",
+    "shortDescription": "Stacja komunikacyjna CipherLab RS36 z zasilaczem — ładowanie i transmisja danych, przewód micro-USB i zasilacz EU w zestawie. PN ARS36CCCNUE01.",
+    "description": "Stacja komunikacyjna CipherLab RS36 ładuje jeden terminal RS36 i przesyła dane do komputera. Połączenie z komputerem zapewnia przewód micro-USB.\n\n## Zestaw\n\nW zestawie są stacja, przewód micro-USB i zasilacz EU. Terminal i bateria nie są częścią zestawu. Cztery terminale naraz ładuje [stacja ARS365CBNNE01](/produkt/cipherlab-ars365cbnne01).\n\n## Zastosowanie\n\nStacja służy do ładowania terminala na stanowisku pracy i do przesyłania danych do komputera. Bez stacji terminal ładuje [przewód z nakładką ARS35SNPNUN01](/produkt/cipherlab-ars35snpnun01). RS36 ma wymienną baterię 4000 mAh.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ars36cccnue01.webp"
     ],
     "imageDescriptions": [
-      "Stacja komunikacyjna CipherLab RS36 — EU — ARS36CCCNUE01"
+      "Stacja komunikacyjna CipherLab RS36 — gniazdo terminala"
     ],
     "tags": [
       "magazyn"
@@ -1854,26 +1899,35 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS36"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARS36CCCNUE01",
-        "name": "Stacja komunikacyjna CipherLab RS36 — EU",
-        "attributes": {},
-        "priceFrom": 637.51,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Komunikacja",
+        "value": "USB, przewód micro-USB w zestawie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RS36 na stanowisku",
+      "Transmisja danych do komputera"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-prs3500x01511",
@@ -1881,16 +1935,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Osłona ochronna CipherLab RS35 / RS36",
     "seoH1": "Osłona ochronna CipherLab RS35 / RS36",
     "seoTitle": "Osłona ochronna CipherLab RS35 / RS36 — PRS3500X01511",
-    "seoDescription": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Wyposażenie do zgodnych terminali.",
-    "description": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "seoDescription": "Gumowa osłona (etui, rubber boot) do CipherLab RS36 i RS35. PN PRS3500X01511. Cena netto i dostępność.",
+    "shortDescription": "Osłona ochronna CipherLab RS35 / RS36 — gumowa osłona do RS35 i RS36. PN PRS3500X01511.",
+    "description": "Osłona ochronna CipherLab RS35 / RS36 to gumowa osłona obudowy terminala. Pasuje do RS35 i RS36.\n\n## Odporność na upadki\n\nZ osłoną producent podaje odporność RS36 na upadki z 1,8 m. Bez osłony ta wartość wynosi 1,5 m.\n\n## Zestaw\n\nW zestawie jest osłona. Terminal nie jest częścią zestawu.\n\n## Pokrewne akcesoria\n\nRS36 z osłoną można nosić z [paskiem na dłoń XRS3500X01504](/produkt/cipherlab-xrs3500x01504). Osłona i pasek serii RS35 pasują do RS36, następcy RS35. Uchwyt pistoletowy RS35 / RS36 to [ARS35PSTNNN01](/produkt/cipherlab-ars35pstnnn01).\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-prs3500x01511.webp"
     ],
     "imageDescriptions": [
-      "Osłona ochronna CipherLab RS35 / RS36 — PRS3500X01511"
+      "Gumowa osłona CipherLab RS35 / RS36"
     ],
     "tags": [
       "magazyn"
@@ -1907,43 +1961,51 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS36"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "PRS3500X01511",
-        "name": "Osłona ochronna CipherLab RS35 / RS36",
-        "attributes": {},
-        "priceFrom": 52.61,
-        "availability": "available"
+        "name": "Materiał",
+        "value": "Guma"
+      },
+      {
+        "name": "Odporność RS36 na upadki",
+        "value": "1,8 m z osłoną; 1,5 m bez osłony"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RS35, RS36"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36"
     ],
-    "applications": [],
+    "applications": [
+      "Ochrona terminala CipherLab RS36 przed upadkami"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark254sbnne01",
     "slug": "cipherlab-ark254sbnne01",
-    "name": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU",
-    "seoH1": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU",
-    "seoTitle": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU — ARK254SBNNE01",
-    "seoDescription": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Zgodność: CipherLab RK26. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "name": "Ładowarka 4 baterii CipherLab RK25 / RK26 z zasilaczem",
+    "seoH1": "Ładowarka 4 baterii CipherLab RK25 / RK26 z zasilaczem",
+    "seoTitle": "Ładowarka 4 baterii CipherLab RK25 / RK26 z zasilaczem — ARK254SBNNE01",
+    "seoDescription": "Ładowarka 4 baterii do CipherLab RK26 i RK25: zasilacz EU w zestawie. PN ARK254SBNNE01. Cena netto i dostępność.",
+    "shortDescription": "Ładowarka 4 baterii CipherLab RK25 / RK26 z zasilaczem — 4 baterie, zasilacz EU w zestawie. PN ARK254SBNNE01.",
+    "description": "Ładowarka CipherLab RK25 / RK26 ładuje jednocześnie cztery baterie poza terminalem. Pozwala przygotować naładowane baterie do wymiany w trakcie zmiany.\n\n## Zestaw\n\nW zestawie są ładowarka i zasilacz EU. Baterie i terminal nie są częścią zestawu. Ładowarka nie ma gniazda terminala. Terminal ładuje [stacja komunikacyjna ARK25CCCNU201](/produkt/cipherlab-ark25cccnu201).\n\n## Różnica względem stacji ARK25CCCNU201\n\nŁadowarka ładuje tylko baterie i ma własny zasilacz EU. Stacja ARK25CCCNU201 ładuje terminal, przesyła dane przez USB i nie ma zasilacza w zestawie. RK26 ma wymienną baterię 4000 mAh.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark254sbnne01.webp"
     ],
     "imageDescriptions": [
-      "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU — ARK254SBNNE01"
+      "Ładowarka 4 baterii CipherLab RK25 / RK26 — cztery gniazda"
     ],
     "tags": [
       "magazyn"
@@ -1960,26 +2022,34 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK26"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARK254SBNNE01",
-        "name": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU",
-        "attributes": {},
-        "priceFrom": 671.02,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "4 baterie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RK25, RK26"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rk26"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie baterii zapasowych"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark25cccnu201",
@@ -1987,16 +2057,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Stacja komunikacyjna CipherLab RK25 / RK26",
     "seoH1": "Stacja komunikacyjna CipherLab RK25 / RK26",
     "seoTitle": "Stacja komunikacyjna CipherLab RK25 / RK26 — ARK25CCCNU201",
-    "seoDescription": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Zgodność: CipherLab RK26. W zestawie jest przewód micro-USB. Zasilacz nie jest dołączony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "seoDescription": "Stacja ładująca z transmisją USB do CipherLab RK26 i RK25: przewód micro-USB w zestawie, bez zasilacza. PN ARK25CCCNU201. Cena netto i dostępność.",
+    "shortDescription": "Stacja komunikacyjna CipherLab RK25 / RK26 — ładowanie terminala i transmisja USB, przewód micro-USB w zestawie. PN ARK25CCCNU201.",
+    "description": "Stacja komunikacyjna CipherLab RK25 / RK26 ładuje jeden terminal i przesyła dane przez USB. Połączenie z komputerem zapewnia przewód micro-USB.\n\n## Zestaw\n\nW zestawie są stacja i przewód micro-USB. Zasilacz nie jest dołączony. Terminal i bateria nie są częścią zestawu. Baterie poza terminalem ładuje [ładowarka ARK254SBNNE01](/produkt/cipherlab-ark254sbnne01).\n\n## Różnica względem ładowarki ARK254SBNNE01\n\nStacja ładuje terminal z baterią i przesyła dane. Ładowarka ARK254SBNNE01 ładuje cztery baterie poza terminalem i ma własny zasilacz EU.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark25cccnu201.webp"
     ],
     "imageDescriptions": [
-      "Stacja komunikacyjna CipherLab RK25 / RK26 — ARK25CCCNU201"
+      "Stacja komunikacyjna CipherLab RK25 / RK26 — gniazdo terminala"
     ],
     "tags": [
       "magazyn"
@@ -2013,26 +2083,39 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK26"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARK25CCCNU201",
-        "name": "Stacja komunikacyjna CipherLab RK25 / RK26",
-        "attributes": {},
-        "priceFrom": 671.02,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Komunikacja",
+        "value": "USB, przewód micro-USB w zestawie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "Nie jest dołączony"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RK25, RK26"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rk26"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RK26 na stanowisku",
+      "Transmisja danych do komputera"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark25pstnnn01",
@@ -2040,16 +2123,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Uchwyt pistoletowy CipherLab RK25 / RK26",
     "seoH1": "Uchwyt pistoletowy CipherLab RK25 / RK26",
     "seoTitle": "Uchwyt pistoletowy CipherLab RK25 / RK26 — ARK25PSTNNN01",
-    "seoDescription": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Zgodność: CipherLab RK26. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "seoDescription": "Uchwyt pistoletowy do CipherLab RK26 i RK25 ze spustem skanowania. PN ARK25PSTNNN01. Cena netto i dostępność.",
+    "shortDescription": "Uchwyt pistoletowy CipherLab RK25 / RK26 — uchwyt ze spustem do RK25 i RK26. PN ARK25PSTNNN01.",
+    "description": "Uchwyt pistoletowy CipherLab RK25 / RK26 zamienia terminal z klawiaturą w urządzenie typu gun ze spustem skanowania. Pasuje do RK25 i RK26.\n\n## Zestaw i zastosowanie\n\nUchwyt ułatwia częste skanowanie kodów, np. przy kompletacji i inwentaryzacji. Terminal nie jest częścią zestawu. RK26 z uchwytem można nosić w [kaburze X970000X01504](/produkt/cipherlab-x970000x01504).\n\n## Terminal RK26\n\nRK26 ma ekran 4 cale i klawiaturę 25 lub 28 klawiszy. Spust uruchamia skanowanie bez użycia klawiszy bocznych.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark25pstnnn01.webp"
     ],
     "imageDescriptions": [
-      "Uchwyt pistoletowy CipherLab RK25 / RK26 — ARK25PSTNNN01"
+      "Uchwyt pistoletowy CipherLab RK25 / RK26 ze spustem"
     ],
     "tags": [
       "magazyn"
@@ -2066,43 +2149,43 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK26"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARK25PSTNNN01",
-        "name": "Uchwyt pistoletowy CipherLab RK25 / RK26",
-        "attributes": {},
-        "priceFrom": 402.62,
-        "availability": "available"
+        "name": "Pasuje do",
+        "value": "CipherLab RK25, RK26"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rk26"
     ],
-    "applications": [],
+    "applications": [
+      "Skanowanie z uchwytem pistoletowym"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark954sbnne01",
     "slug": "cipherlab-ark954sbnne01",
-    "name": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU",
-    "seoH1": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU",
-    "seoTitle": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU — ARK954SBNNE01",
-    "seoDescription": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Zgodność: CipherLab RK96. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "name": "Ładowarka 4 baterii CipherLab RK95 / RK96 z zasilaczem",
+    "seoH1": "Ładowarka 4 baterii CipherLab RK95 / RK96 z zasilaczem",
+    "seoTitle": "Ładowarka 4 baterii CipherLab RK95 / RK96 z zasilaczem — ARK954SBNNE01",
+    "seoDescription": "Ładowarka 4 baterii do CipherLab RK96 i RK95: zasilacz EU w zestawie. PN ARK954SBNNE01. Cena netto i dostępność.",
+    "shortDescription": "Ładowarka 4 baterii CipherLab RK95 / RK96 z zasilaczem — 4 baterie, zasilacz EU w zestawie. PN ARK954SBNNE01.",
+    "description": "Ładowarka CipherLab RK95 / RK96 ładuje jednocześnie cztery baterie poza terminalem. Pasuje do RK95 i RK96.\n\n## Zestaw\n\nW zestawie są ładowarka i zasilacz EU. Baterie i terminal nie są częścią zestawu. Ładowarka nie ma gniazda terminala.\n\n## Większa liczba baterii\n\nDo 20 baterii naraz służy [ładowarka ARK95MSCNNE01](/produkt/cipherlab-ark95mscnne01). Terminal ładuje [stacja komunikacyjna ARK95CCCNU201](/produkt/cipherlab-ark95cccnu201).\n\n## Bateria RK96\n\nRK96 ma wymienną baterię 7000 mAh z obsługą hot swap. RK96 zastępuje serię RK95 i współpracuje z jej akcesoriami.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark954sbnne01.webp"
     ],
     "imageDescriptions": [
-      "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU — ARK954SBNNE01"
+      "Ładowarka 4 baterii CipherLab RK95 / RK96 — cztery gniazda"
     ],
     "tags": [
       "magazyn"
@@ -2119,26 +2202,34 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK96"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARK954SBNNE01",
-        "name": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU",
-        "attributes": {},
-        "priceFrom": 1051.84,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "4 baterie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU)"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RK95, RK96"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rk96"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie baterii zapasowych"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark95cccnu201",
@@ -2146,16 +2237,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Stacja komunikacyjna CipherLab RK95 / RK96",
     "seoH1": "Stacja komunikacyjna CipherLab RK95 / RK96",
     "seoTitle": "Stacja komunikacyjna CipherLab RK95 / RK96 — ARK95CCCNU201",
-    "seoDescription": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Zgodność: CipherLab RK96. W zestawie jest przewód micro-USB. Zasilacz nie jest dołączony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "seoDescription": "Stacja ładująca z transmisją USB do CipherLab RK96, RK96 Cold Storage i RK95: przewód micro-USB w zestawie. PN ARK95CCCNU201. Cena netto i dostępność.",
+    "shortDescription": "Stacja komunikacyjna CipherLab RK95 / RK96 — ładowanie terminala i transmisja USB, przewód micro-USB w zestawie. PN ARK95CCCNU201.",
+    "description": "Stacja komunikacyjna CipherLab RK95 / RK96 ładuje jeden terminal i przesyła dane przez USB. Połączenie z komputerem zapewnia przewód micro-USB. Stacja pasuje do RK95, RK96 i RK96 Cold Storage.\n\n## Zestaw\n\nW zestawie są stacja i przewód micro-USB. Zasilacz nie jest dołączony. Terminal i bateria nie są częścią zestawu. Baterie poza terminalem ładuje [ładowarka 4 baterii ARK954SBNNE01](/produkt/cipherlab-ark954sbnne01).\n\n## Różnica względem ładowarek baterii\n\nStacja ładuje terminal i przesyła dane przez USB. Ładowarki ARK954SBNNE01 i ARK95MSCNNE01 ładują tylko baterie i mają własny zasilacz EU.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark95cccnu201.webp"
     ],
     "imageDescriptions": [
-      "Stacja komunikacyjna CipherLab RK95 / RK96 — ARK95CCCNU201"
+      "Stacja komunikacyjna CipherLab RK95 / RK96 — gniazdo terminala"
     ],
     "tags": [
       "magazyn"
@@ -2171,44 +2262,58 @@ export const cipherlabAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "CipherLab RK96"
-      }
-    ],
-    "variants": [
+        "value": "CipherLab RK96, CipherLab RK96 Cold Storage"
+      },
       {
-        "partNumber": "ARK95CCCNU201",
-        "name": "Stacja komunikacyjna CipherLab RK95 / RK96",
-        "attributes": {},
-        "priceFrom": 841.48,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Komunikacja",
+        "value": "USB, przewód micro-USB w zestawie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "Nie jest dołączony"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RK95, RK96, RK96 Cold Storage"
       }
     ],
     "downloads": [],
     "relatedProducts": [
-      "cipherlab-rk96"
+      "cipherlab-rk96",
+      "cipherlab-rk96-cold-storage"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie terminala CipherLab RK96 na stanowisku",
+      "Transmisja danych do komputera"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-ark95mscnne01",
     "slug": "cipherlab-ark95mscnne01",
-    "name": "Ładowarka 20 baterii CipherLab RK96 — EU",
-    "seoH1": "Ładowarka 20 baterii CipherLab RK96 — EU",
-    "seoTitle": "Ładowarka 20 baterii CipherLab RK96 — EU — ARK95MSCNNE01",
-    "seoDescription": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Zgodność: CipherLab RK96.  W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "name": "Ładowarka 20 baterii CipherLab RK96 z zasilaczem",
+    "seoH1": "Ładowarka 20 baterii CipherLab RK96 z zasilaczem",
+    "seoTitle": "Ładowarka 20 baterii CipherLab RK96 z zasilaczem — ARK95MSCNNE01",
+    "seoDescription": "Ładowarka 20 baterii do CipherLab RK96: 5 modułów po 4 gniazda, zasilacz i przewód EU w zestawie. PN ARK95MSCNNE01. Cena netto i dostępność.",
+    "shortDescription": "Ładowarka 20 baterii CipherLab RK96 z zasilaczem — 20 baterii w 5 modułach, zasilacz i przewód EU w zestawie. PN ARK95MSCNNE01.",
+    "description": "Ładowarka CipherLab RK96 ładuje jednocześnie do 20 baterii. Ma 5 modułów po 4 gniazda. Służy do obsługi większej floty terminali, np. w centrum dystrybucji.\n\n## Zestaw\n\nW zestawie są ładowarka, zasilacz i przewód EU. Baterie i terminale nie są częścią zestawu. Ładowarka nie ma gniazd terminali.\n\n## Mniejsza liczba baterii\n\nCztery baterie ładuje [ładowarka ARK954SBNNE01](/produkt/cipherlab-ark954sbnne01). Terminal ładuje [stacja komunikacyjna ARK95CCCNU201](/produkt/cipherlab-ark95cccnu201). RK96 ma wymienną baterię 7000 mAh z obsługą hot swap.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-ark95mscnne01-v2.webp"
     ],
     "imageDescriptions": [
-      "Ładowarka 20 baterii CipherLab RK96 — EU — ARK95MSCNNE01"
+      "Ładowarka 20 baterii CipherLab RK96 — pięć modułów po cztery gniazda"
     ],
     "tags": [
       "magazyn"
@@ -2225,26 +2330,30 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK96"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "ARK95MSCNNE01",
-        "name": "Ładowarka 20 baterii CipherLab RK96 — EU",
-        "attributes": {},
-        "priceFrom": 5032.71,
-        "availability": "unavailable"
+        "name": "Liczba gniazd",
+        "value": "20 baterii (5 modułów po 4)"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "W zestawie (EU), z przewodem"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rk96"
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie baterii zapasowych floty terminali"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-baerstr100003",
@@ -2252,16 +2361,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Pasek na ramię CipherLab RK / RS",
     "seoH1": "Pasek na ramię CipherLab RK / RS",
     "seoTitle": "Pasek na ramię CipherLab RK / RS — BAERSTR100003",
-    "seoDescription": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "seoDescription": "Pasek na ramię do terminali CipherLab serii RK i RS: RS38, RK26, RK96. PN BAERSTR100003. Cena netto i dostępność.",
+    "shortDescription": "Pasek na ramię CipherLab RK / RS — pasek do noszenia terminali serii RK i RS. PN BAERSTR100003.",
+    "description": "Pasek na ramię CipherLab pozwala nosić terminal na ramieniu między odczytami. Producent przeznacza go do terminali serii RK i RS.\n\n## Zgodność\n\nW ofercie TAKMA pasek pasuje do RS38, RK26, RK96 i RK96 Cold Storage.\n\n## Zestaw\n\nW zestawie jest czarny pasek z klamrami. Terminal nie jest częścią zestawu.\n\n## Pokrewne akcesoria\n\nDo pracy z terminalem w dłoni służą paski na dłoń: [XRK9500X01584](/produkt/cipherlab-xrk9500x01584) do RK95 i RK96 oraz [XRS3500X01504](/produkt/cipherlab-xrs3500x01504) do RS35, RS36 i RS38. Terminal z uchwytem pistoletowym mieści [kabura X970000X01504](/produkt/cipherlab-x970000x01504).\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-baerstr100003.webp"
     ],
     "imageDescriptions": [
-      "Pasek na ramię CipherLab RK / RS — BAERSTR100003"
+      "Czarny pasek na ramię CipherLab z klamrami"
     ],
     "tags": [
       "magazyn"
@@ -2278,15 +2387,14 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RS38, CipherLab RK26, CipherLab RK96, CipherLab RK96 Cold Storage"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "BAERSTR100003",
-        "name": "Pasek na ramię CipherLab RK / RS",
-        "attributes": {},
-        "priceFrom": 113.96,
-        "availability": "unavailable"
+        "name": "Kolor",
+        "value": "Czarny"
+      },
+      {
+        "name": "Seria terminali",
+        "value": "CipherLab RK i RS"
       }
     ],
     "downloads": [],
@@ -2296,11 +2404,16 @@ export const cipherlabAccessories: Product[] = [
       "cipherlab-rk96",
       "cipherlab-rk96-cold-storage"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-xrk9500x01584",
@@ -2308,16 +2421,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Pasek na dłoń CipherLab RK95 / RK96",
     "seoH1": "Pasek na dłoń CipherLab RK95 / RK96",
     "seoTitle": "Pasek na dłoń CipherLab RK95 / RK96 — XRK9500X01584",
-    "seoDescription": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "seoDescription": "Pasek na dłoń (hand strap) do CipherLab RK96, RK96 Cold Storage i RK95. PN XRK9500X01584. Cena netto i dostępność.",
+    "shortDescription": "Pasek na dłoń CipherLab RK95 / RK96 — pasek na dłoń do RK95 i RK96. PN XRK9500X01584.",
+    "description": "Pasek na dłoń CipherLab RK95 / RK96 przytrzymuje terminal na dłoni podczas skanowania i wpisywania danych. Pasuje do RK95 i RK96.\n\n## Zgodność\n\nRK96 Cold Storage współpracuje z akcesoriami serii RK95, więc pasek pasuje także do tej wersji.\n\n## Zestaw\n\nW zestawie jest czarny pasek. Terminal nie jest częścią zestawu.\n\n## Pokrewne akcesoria\n\nDo noszenia terminala na ramieniu służy [pasek na ramię BAERSTR100003](/produkt/cipherlab-baerstr100003). RK96 w oferowanych PN ma uchwyt pistoletowy.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-xrk9500x01584.webp"
     ],
     "imageDescriptions": [
-      "Pasek na dłoń CipherLab RK95 / RK96 — XRK9500X01584"
+      "Pasek na dłoń CipherLab RK95 / RK96"
     ],
     "tags": [
       "magazyn"
@@ -2334,15 +2447,14 @@ export const cipherlabAccessories: Product[] = [
       {
         "name": "Zgodność",
         "value": "CipherLab RK96, CipherLab RK96 Cold Storage"
-      }
-    ],
-    "variants": [
+      },
       {
-        "partNumber": "XRK9500X01584",
-        "name": "Pasek na dłoń CipherLab RK95 / RK96",
-        "attributes": {},
-        "priceFrom": 52.61,
-        "availability": "unavailable"
+        "name": "Kolor",
+        "value": "Czarny"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RK95, RK96, RK96 Cold Storage"
       }
     ],
     "downloads": [],
@@ -2350,11 +2462,17 @@ export const cipherlabAccessories: Product[] = [
       "cipherlab-rk96",
       "cipherlab-rk96-cold-storage"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala",
+      "Praca z terminalem w jednej dłoni"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-xrs3500x01504",
@@ -2362,16 +2480,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Pasek na dłoń CipherLab RS35 / RS36 / RS38",
     "seoH1": "Pasek na dłoń CipherLab RS35 / RS36 / RS38",
     "seoTitle": "Pasek na dłoń CipherLab RS35 / RS36 / RS38 — XRS3500X01504",
-    "seoDescription": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "seoDescription": "Pasek na dłoń (hand strap) do CipherLab RS36, RS38, RS35 i RK96. PN XRS3500X01504. Cena netto i dostępność.",
+    "shortDescription": "Pasek na dłoń CipherLab RS35 / RS36 / RS38 — pasek na dłoń do RS35, RS36, RS38 i RK96. PN XRS3500X01504.",
+    "description": "Pasek na dłoń CipherLab RS35 / RS36 / RS38 przytrzymuje terminal na dłoni podczas skanowania. Pasuje do RS35, RS36, RS38 i RK96.\n\n## Zestaw\n\nW zestawie jest czarny pasek. Terminal nie jest częścią zestawu. Do RS38H służy osobny [pasek ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\n## Pokrewne akcesoria\n\nRS36 z gumową osłoną [PRS3500X01511](/produkt/cipherlab-prs3500x01511) można nosić z tym paskiem. Do noszenia terminala na ramieniu służy [pasek BAERSTR100003](/produkt/cipherlab-baerstr100003). Do terminali RK95 i RK96 pasuje też [pasek XRK9500X01584](/produkt/cipherlab-xrk9500x01584).\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-xrs3500x01504.webp"
     ],
     "imageDescriptions": [
-      "Pasek na dłoń CipherLab RS35 / RS36 / RS38 — XRS3500X01504"
+      "Pasek na dłoń CipherLab RS35 / RS36 / RS38"
     ],
     "tags": [
       "magazyn"
@@ -2387,30 +2505,34 @@ export const cipherlabAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "CipherLab RS36, CipherLab RS38, CipherLab RK96, CipherLab RK96 Cold Storage"
-      }
-    ],
-    "variants": [
+        "value": "CipherLab RS36, CipherLab RS38, CipherLab RK96"
+      },
       {
-        "partNumber": "XRS3500X01504",
-        "name": "Pasek na dłoń CipherLab RS35 / RS36 / RS38",
-        "attributes": {},
-        "priceFrom": 52.61,
-        "availability": "available"
+        "name": "Kolor",
+        "value": "Czarny"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "CipherLab RS35, RS36, RS38, RK96"
       }
     ],
     "downloads": [],
     "relatedProducts": [
       "cipherlab-rs36",
       "cipherlab-rs38",
-      "cipherlab-rk96",
-      "cipherlab-rk96-cold-storage"
+      "cipherlab-rk96"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala",
+      "Praca z terminalem w jednej dłoni"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   },
   {
     "id": "cipherlab-x970000x01504",
@@ -2418,16 +2540,16 @@ export const cipherlabAccessories: Product[] = [
     "name": "Kabura CipherLab do terminala z uchwytem",
     "seoH1": "Kabura CipherLab do terminala z uchwytem",
     "seoTitle": "Kabura CipherLab do terminala z uchwytem — X970000X01504",
-    "seoDescription": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
-    "shortDescription": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Wyposażenie do zgodnych terminali.",
-    "description": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "seoDescription": "Kabura na pas do terminala CipherLab z uchwytem pistoletowym: RS36, RS38, RK26, RK96. PN X970000X01504. Cena netto i dostępność.",
+    "shortDescription": "Kabura CipherLab do terminala z uchwytem — kabura na pas do terminala z uchwytem pistoletowym. PN X970000X01504.",
+    "description": "Kabura CipherLab mocuje się na pasie i mieści terminal z uchwytem pistoletowym. Kabura jest przeznaczona tylko do terminali z uchwytem.\n\n## Zgodność\n\nProducent wymienia terminale 9700, RK25, RK26, RK95, RK96, RS35, RS36, RS51 i RS38 z uchwytem pistoletowym. RK96 ma uchwyt w oferowanych PN. RS36, RS38 i RK26 wymagają osobnego uchwytu: [ARS35PSTNNN01](/produkt/cipherlab-ars35pstnnn01), [ARS38PSTNNN11](/produkt/cipherlab-ars38pstnnn11) lub [ARK25PSTNNN01](/produkt/cipherlab-ark25pstnnn01).\n\n## Zestaw\n\nW zestawie są kabura i pas. Terminal i uchwyt nie są częścią zestawu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-x970000x01504.webp"
     ],
     "imageDescriptions": [
-      "Kabura CipherLab do terminala z uchwytem — X970000X01504"
+      "Kabura CipherLab na pas do terminala z uchwytem pistoletowym"
     ],
     "tags": [
       "magazyn"
@@ -2443,16 +2565,15 @@ export const cipherlabAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "CipherLab RS36, CipherLab RS38, CipherLab RK26, CipherLab RK96, CipherLab RK96 Cold Storage"
-      }
-    ],
-    "variants": [
+        "value": "CipherLab RS36, CipherLab RS38, CipherLab RK26, CipherLab RK96"
+      },
       {
-        "partNumber": "X970000X01504",
-        "name": "Kabura CipherLab do terminala z uchwytem",
-        "attributes": {},
-        "priceFrom": 315.54,
-        "availability": "unavailable"
+        "name": "Wymaganie",
+        "value": "Terminal z uchwytem pistoletowym"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Kabura z pasem"
       }
     ],
     "downloads": [],
@@ -2460,13 +2581,17 @@ export const cipherlabAccessories: Product[] = [
       "cipherlab-rs36",
       "cipherlab-rs38",
       "cipherlab-rk26",
-      "cipherlab-rk96",
-      "cipherlab-rk96-cold-storage"
+      "cipherlab-rk96"
     ],
-    "applications": [],
+    "applications": [
+      "Przenoszenie terminala"
+    ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
-    "subcategoryIds": []
+    "subcategoryIds": [
+      "etui-kabury-uchwyty",
+      "akcesoria-do-terminali"
+    ]
   }
 ]
