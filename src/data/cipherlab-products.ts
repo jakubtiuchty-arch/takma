@@ -809,9 +809,9 @@ export const cipherlabProducts: Product[] = [
       "cipherlab-x970000x01504"
     ],
     "relatedProducts": [
-      "cipherlab-rs20",
-      "cipherlab-rs36",
-      "cipherlab-rs38"
+      "cipherlab-rk96",
+      "cipherlab-rk96-cold-storage",
+      "m3-us30"
     ],
     "applications": [
       "Inwentaryzacja",
@@ -983,7 +983,7 @@ export const cipherlabProducts: Product[] = [
     "relatedProducts": [
       "cipherlab-rk96-cold-storage",
       "cipherlab-rk26",
-      "cipherlab-rs38"
+      "honeywell-ck67"
     ],
     "applications": [
       "Kompletacja zamówień",
@@ -1109,7 +1109,7 @@ export const cipherlabProducts: Product[] = [
     "relatedProducts": [
       "cipherlab-rk96",
       "cipherlab-rk26",
-      "cipherlab-rs38"
+      "m3-ul20"
     ],
     "applications": [
       "Mroźnie i chłodnie do −30°C",
