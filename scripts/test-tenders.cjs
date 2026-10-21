@@ -16,10 +16,12 @@ Module._resolveFilename = function (name, parent, ...rest) {
 require.extensions['.ts'] = (m, f) => m._compile(ts.transpileModule(fs.readFileSync(f, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true } }).outputText, f)
 const core = require('../src/lib/tenders/core.ts')
 const { tenderWhere } = require('../src/lib/tenders/filters.ts')
+const { analysisSchema } = require('../src/lib/tenders/analysis.ts')
 const { extract, links } = require('../src/lib/tenders/documents.ts')
 const { publicUrl } = require('../src/lib/tenders/network.ts')
 const JSZip = require('jszip')
 async function main() {
+  assert.equal(analysisSchema.parse({score:50,reason:'Sprawdź zakres',decision:'unknown',parts:[{id:'1',title:'Część 1',fit:'unknown',separateOffer:'unknown',scope:'Zakres',conditions:'Brak danych',evidence:'Dostawa czytników kodów kreskowych',sourceUrl:'https://example.org'}],warnings:[]}).parts[0].fit, 'maybe')
   for (const title of ['Dostawa drukarek kart plastikowych', 'Serwis Magicard', 'Kolektor danych', 'Czytników kodów kreskowych', 'Dostawa sprzętu informatycznego', 'Dostawa kart plastikowych', 'Naprawa drukarek etykiet']) assert(core.candidate({ orderObject: title, rawBody: '' }), title)
   assert(core.candidate({ orderObject: 'Duży pakiet', rawBody: 'x'.repeat(10000) + ' dostawa Zebra ZD421' }))
   assert(!core.candidate({ orderObject: 'Budowa drogi', rawBody: 'Identyfikator postępowania 123', cpvCodes: '45233100' }))
