@@ -164,7 +164,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.definition.heading}</h2>
                   <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
                     {content.definition.content.split('\n\n').map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
+                      <p key={i}>{receiptCategory ? <LinkedText text={paragraph} /> : paragraph}</p>
                     ))}
                   </div>
                 </section>
@@ -204,7 +204,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                   <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive || 'Szczegóły techniczne'}</h2>
                   <div className="text-gray-600 leading-relaxed space-y-3 sm:text-justify">
                     {content.technicalDeepDive.split('\n\n').map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
+                      <p key={i}>{receiptCategory ? <LinkedText text={paragraph} /> : paragraph}</p>
                     ))}
                   </div>
                 </section>
@@ -245,7 +245,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                       {content.comparisons.map((comp, i) => (
                         <div key={i} className={slug === 'drukarki-kart' ? undefined : 'border-l-4 border-primary-500 pl-4'}>
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed sm:text-justify">{comp.content}</p>
+                          <p className="text-gray-600 text-sm leading-relaxed sm:text-justify">{receiptCategory ? <LinkedText text={comp.content} /> : comp.content}</p>
                         </div>
                       ))}
                     </div>
