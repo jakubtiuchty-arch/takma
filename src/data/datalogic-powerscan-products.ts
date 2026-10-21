@@ -1075,8 +1075,8 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoH1": "Przewód sieciowy EU Datalogic 6003-0940",
     "seoTitle": "Przewód sieciowy EU Datalogic 6003-0940 | TAKMA",
     "seoDescription": "Przewód sieciowy EU Datalogic 6003-0940. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
-    "shortDescription": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935 i 90ACC0350. Łączy zasilacz z gniazdem sieciowym.",
-    "description": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935 i 90ACC0350. Łączy zasilacz z gniazdem sieciowym.\n\n## Dobierz zasilacz do urządzenia\n\nDo bazy BC9630 użyj [zasilacza 8-0935](/produkt/datalogic-powerscan-8-0935). Do ładowarek MC-P096-M2 i MC-P096-M4 użyj [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350). Przewód nie jest zasilaczem i nie podłącza się bezpośrednio do czytnika.\n\nPrzewód jest częścią kompletnych zestawów USB EU PBT9600 i PM9600. Przy zakupie samej bazy lub samego zasilacza sprawdź zawartość opakowania.\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "shortDescription": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935, 90ACC0350 i 90ACC0193. Łączy zasilacz z gniazdem sieciowym.",
+    "description": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935 i 90ACC0350. Łączy zasilacz z gniazdem sieciowym.\n\n## Dobierz zasilacz do urządzenia\n\nDo bazy BC9630 użyj [zasilacza 8-0935](/produkt/datalogic-powerscan-8-0935). Do ładowarek MC-P096-M2 i MC-P096-M4 użyj [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350). Do Magellan 3600VSi użyj [zasilacza 90ACC0193](/produkt/datalogic-magellan-90acc0193). Przewód nie jest zasilaczem i nie podłącza się bezpośrednio do czytnika.\n\nPrzewód jest częścią kompletnych zestawów USB EU PBT9600 i PM9600. Przy zakupie samej bazy lub samego zasilacza sprawdź zawartość opakowania.\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1114,6 +1114,7 @@ export const datalogicPowerScanAccessories: Product[] = [
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
+      "datalogic-magellan-3600vsi",
       "datalogic-powerscan-pd9630",
       "datalogic-powerscan-pbt9600",
       "datalogic-powerscan-pm9600",

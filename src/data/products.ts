@@ -1,3 +1,4 @@
+import { datalogicMagellanProducts, datalogicMagellanAccessories } from './datalogic-magellan-products'
 import { datalogicAdditionalScanners, datalogicAdditionalAccessories } from './datalogic-handheld-additions'
 import { datalogicPowerScanProducts, datalogicPowerScanAccessories } from './datalogic-powerscan-products'
 import { datalogicQuickScanProducts, datalogicGryphonProducts, datalogicScannerAccessories } from './datalogic-scanners-products'
@@ -1096,7 +1097,7 @@ export const subcategories: Subcategory[] = [
     description: 'Skanery prezentacyjne (hands-free) do kas samoobsługowych i punktów sprzedaży — automatyczne skanowanie bez naciskania przycisku.',
     seoTitle: 'Skanery prezentacyjne (hands-free) do POS i kas',
     seoDescription: 'Skanery prezentacyjne do kas od 995 zł netto. Automatyczne skanowanie kodów 1D/2D bez przyciskania — idealne do retail, aptek, bibliotek. Zebra DS9308 (kompaktowy) i DS9908 (hybrydowy). TAKMA — autoryzowany partner Zebra.',
-    longDescription: 'Prezentacyjne czytniki kodów kreskowych (skanery hands-free) do kas samoobsługowych, aptek i punktów POS. Automatyczny odczyt kodów 1D/2D bez naciskania przycisku — wystarczy przesunąć produkt przed skanerem. Wielokierunkowe pole skanowania, odczyt z ekranów smartfonów. Kategoria w przygotowaniu — skontaktuj się po indywidualną ofertę.',
+    longDescription: 'Prezentacyjne czytniki kodów kreskowych (skanery hands-free) do kas samoobsługowych, aptek i punktów POS. Automatyczny odczyt kodów 1D/2D bez naciskania przycisku — wystarczy przesunąć produkt przed skanerem. Wielokierunkowe pole skanowania, odczyt z ekranów smartfonów.',
     icon: 'scan',
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
     productCount: 2,
@@ -95376,7 +95377,7 @@ for (const subcategory of subcategories) {
 }
 
 for (const subcategory of subcategories) {
-  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
+  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95384,7 +95385,7 @@ for (const subcategory of subcategories) {
 }
 
 const rawProductList: Product[] = [
-  ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories,
+  ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,
@@ -96176,9 +96177,9 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "datalogic",
   "categoryId": "skanery-kodow-kreskowych",
   "name": "Skanery kodów kreskowych Datalogic",
-  "seoTitle": "Skanery Datalogic — QuickScan, Gryphon i PowerScan",
-  "seoDescription": "Skanery Datalogic 1D, 2D i DPM: QuickScan, Gryphon, Heron, TD1100 i PowerScan. Porównaj USB, Bluetooth i STAR. Sprawdź PN, ceny, stany i akcesoria.",
-  "longDescription": "Skanery Datalogic do kas, magazynów i produkcji. Porównaj QuickScan, Gryphon i PowerScan — modele przewodowe, Bluetooth oraz STAR 433 MHz.",
+  "seoTitle": "Skanery Datalogic — ręczne i prezentacyjne Magellan",
+  "seoDescription": "Skanery Datalogic: QuickScan, Gryphon, PowerScan i prezentacyjne Magellan. Porównaj odczyt 1D/2D, połączenia, PN, ceny, stany oraz akcesoria.",
+  "longDescription": "Skanery Datalogic do kas, magazynów i produkcji. Porównaj QuickScan, Gryphon, PowerScan i Magellan — modele ręczne, prezentacyjne, Bluetooth oraz STAR 433 MHz.",
   "faq": [
     {
       "question": "Który skaner Datalogic wybrać do kasy?",
