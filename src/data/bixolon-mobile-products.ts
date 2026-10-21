@@ -399,7 +399,7 @@ export const bixolonMobileProducts: Product[] = [
     "imageDescriptions": [
       "BIXOLON XM7-40 — widok z przodu pod kątem",
       "BIXOLON XM7-40 — widok z przodu z wydrukowaną etykietą",
-      "BIXOLON XM7-40 — widok z przodu, szczelina wydruku",
+      "BIXOLON XM7-40 — widok z przodu pod kątem z prawej strony, szczelina wydruku i ekran",
       "BIXOLON XM7-40 — dwie drukarki, widok pod różnymi kątami"
     ],
     "tags": [

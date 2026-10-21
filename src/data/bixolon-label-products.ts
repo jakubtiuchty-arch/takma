@@ -307,7 +307,7 @@ export const bixolonLabelProducts: Product[] = [
       "BIXOLON XD5-40d — widok z przodu pod kątem, wersja z ekranem LCD",
       "BIXOLON XD5-40d — otwarta pokrywa, uchwyt rolki z prowadnicami",
       "BIXOLON XD5-40d — wersja z ekranem LCD podczas druku etykiety",
-      "BIXOLON XD5-40d — wersja z odklejakiem (wyposażenie opcjonalne)"
+      "BIXOLON XD5-40d — widok z przodu pod kątem, wersja bez ekranu LCD"
     ],
     "tags": [
       "magazyn",
@@ -1466,7 +1466,7 @@ export const bixolonLabelProducts: Product[] = [
     ],
     "imageDescriptions": [
       "BIXOLON XT3-40 — widok z przodu pod kątem, kolorowy LCD i panel przycisków",
-      "BIXOLON XT3-40 — widok z przodu, wersja z odklejakiem",
+      "BIXOLON XT3-40 — widok z przodu, wersja z odklejakiem i nawijakiem podkładu",
       "BIXOLON XT3-40 — widok z przodu z wydrukowaną etykietą",
       "BIXOLON XT3-40 — otwarte drzwi, rolka etykiet i taśma barwiąca w mechanizmie"
     ],
@@ -1858,7 +1858,7 @@ export const bixolonLabelProducts: Product[] = [
       "/images/products/bixolon-slp-dx220-3.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SLP-DX220 — widok z przodu pod kątem z wydrukowaną etykietą",
+      "BIXOLON SLP-DX220 — widok z przodu pod kątem, zamknięta pokrywa",
       "BIXOLON SLP-DX220 — widok z tyłu, włącznik, gniazdo zasilania, USB, USB Host i Ethernet",
       "BIXOLON SLP-DX220 — otwarta pokrywa i rolka etykiet w drukarce"
     ],
@@ -2373,7 +2373,7 @@ export const bixolonLabelProducts: Product[] = [
     ],
     "imageDescriptions": [
       "BIXOLON XL5-40CT — widok z przodu pod kątem, z opcjonalnym ekranem LCD",
-      "BIXOLON XL5-40CT — widok z przodu z wysuniętą etykietą",
+      "BIXOLON XL5-40CT — widok z przodu pod kątem, wersja bez ekranu LCD, gilotyna przy wylocie etykiet",
       "BIXOLON XL5-40CT — widok z tyłu i złącza"
     ],
     "tags": [
