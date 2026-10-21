@@ -22,10 +22,10 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-330iii-5.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-330III — widok z przodu pod kątem",
-      "BIXOLON SRP-330III — dodatkowe ujęcie 2",
-      "BIXOLON SRP-330III — dodatkowe ujęcie 3",
-      "BIXOLON SRP-330III — dodatkowe ujęcie 4"
+      "BIXOLON SRP-330III — widok z przodu pod kątem z wydrukiem",
+      "BIXOLON SRP-330III — otwarta pokrywa, rolka papieru 80 mm",
+      "BIXOLON SRP-330III — ustawienie pionowe, wydruk z przodu",
+      "BIXOLON SRP-330III — widok z tyłu: Ethernet, RS-232, USB, zasilanie i port szuflady (wersja ESK)"
     ],
     "tags": [
       "retail"
@@ -133,7 +133,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-330III (EN)",
         "url": "/datasheets/bixolon-srp-330iii-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "248 KB"
       }
     ],
     "faq": [
@@ -170,15 +170,13 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-350v-1.webp",
       "/images/products/bixolon-srp-350v-2.webp",
       "/images/products/bixolon-srp-350v-3.webp",
-      "/images/products/bixolon-srp-350v-4.webp",
-      "/images/products/bixolon-srp-350v-5.webp"
+      "/images/products/bixolon-srp-350v-4.webp"
     ],
     "imageDescriptions": [
       "BIXOLON SRP-350V — widok z przodu pod kątem",
-      "BIXOLON SRP-350V — dodatkowe ujęcie 2",
-      "BIXOLON SRP-350V — dodatkowe ujęcie 3",
-      "BIXOLON SRP-350V — dodatkowe ujęcie 4",
-      "BIXOLON SRP-350V — dodatkowe ujęcie 5"
+      "BIXOLON SRP-350V — z wydrukiem paragonu",
+      "BIXOLON SRP-350V — wkładanie rolki papieru",
+      "BIXOLON SRP-350V — z osłoną przeciwbryzgową (akcesorium opcjonalne)"
     ],
     "tags": [
       "retail"
@@ -308,7 +306,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-350V (EN)",
         "url": "/datasheets/bixolon-srp-350v-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "286 KB"
       }
     ],
     "faq": [
@@ -346,15 +344,13 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-350plusv-1.webp",
       "/images/products/bixolon-srp-350plusv-2.webp",
       "/images/products/bixolon-srp-350plusv-3.webp",
-      "/images/products/bixolon-srp-350plusv-4.webp",
-      "/images/products/bixolon-srp-350plusv-5.webp"
+      "/images/products/bixolon-srp-350plusv-4.webp"
     ],
     "imageDescriptions": [
       "BIXOLON SRP-350plusV — widok z przodu pod kątem",
-      "BIXOLON SRP-350plusV — dodatkowe ujęcie 2",
-      "BIXOLON SRP-350plusV — dodatkowe ujęcie 3",
-      "BIXOLON SRP-350plusV — dodatkowe ujęcie 4",
-      "BIXOLON SRP-350plusV — dodatkowe ujęcie 5"
+      "BIXOLON SRP-350plusV — z wydrukiem paragonu",
+      "BIXOLON SRP-350plusV — otwarta pokrywa",
+      "BIXOLON SRP-350plusV — z osłoną przeciwbryzgową (akcesorium opcjonalne)"
     ],
     "tags": [
       "retail"
@@ -534,7 +530,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-350plusV (EN)",
         "url": "/datasheets/bixolon-srp-350plusv-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "256 KB"
       }
     ],
     "faq": [
@@ -575,10 +571,10 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-380-4.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-380 — widok z przodu pod kątem",
-      "BIXOLON SRP-380 — dodatkowe ujęcie 2",
-      "BIXOLON SRP-380 — dodatkowe ujęcie 3",
-      "BIXOLON SRP-380 — dodatkowe ujęcie 4"
+      "BIXOLON SRP-380 — z wydrukiem paragonu",
+      "BIXOLON SRP-380 — z wydrukiem paragonu, widok z bliska",
+      "BIXOLON SRP-380 — wkładanie rolki papieru",
+      "BIXOLON SRP-380 — wysuwana tabliczka Easy Tracking z kodem QR"
     ],
     "tags": [
       "retail"
@@ -748,7 +744,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-380 (EN)",
         "url": "/datasheets/bixolon-srp-380-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "649 KB"
       }
     ],
     "faq": [
@@ -786,15 +782,13 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-380plus-1.webp",
       "/images/products/bixolon-srp-380plus-2.webp",
       "/images/products/bixolon-srp-380plus-3.webp",
-      "/images/products/bixolon-srp-380plus-4.webp",
-      "/images/products/bixolon-srp-380plus-5.webp"
+      "/images/products/bixolon-srp-380plus-4.webp"
     ],
     "imageDescriptions": [
       "BIXOLON SRP-380plus — widok z przodu pod kątem",
-      "BIXOLON SRP-380plus — dodatkowe ujęcie 2",
-      "BIXOLON SRP-380plus — dodatkowe ujęcie 3",
-      "BIXOLON SRP-380plus — dodatkowe ujęcie 4",
-      "BIXOLON SRP-380plus — dodatkowe ujęcie 5"
+      "BIXOLON SRP-380plus — z wydrukiem paragonu",
+      "BIXOLON SRP-380plus — otwarta pokrywa z gilotyną",
+      "BIXOLON SRP-380plus — wkładanie rolki papieru"
     ],
     "tags": [
       "retail"
@@ -892,7 +886,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-380plus (EN)",
         "url": "/datasheets/bixolon-srp-380plus-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "301 KB"
       }
     ],
     "faq": [
@@ -929,10 +923,10 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-q200-4.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-Q200 — widok z przodu pod kątem",
-      "BIXOLON SRP-Q200 — dodatkowe ujęcie 2",
-      "BIXOLON SRP-Q200 — dodatkowe ujęcie 3",
-      "BIXOLON SRP-Q200 — dodatkowe ujęcie 4"
+      "BIXOLON SRP-Q200 — wydruk paragonu z przodu",
+      "BIXOLON SRP-Q200 — wydruk paragonu z góry",
+      "BIXOLON SRP-Q200 — widok z tyłu, złącza",
+      "BIXOLON SRP-Q200 — ustawienie z wydrukiem z przodu"
     ],
     "tags": [
       "retail"
@@ -1042,7 +1036,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-Q200 (EN)",
         "url": "/datasheets/bixolon-srp-q200-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "1,3 MB"
       }
     ],
     "faq": [
@@ -1077,13 +1071,11 @@ export const bixolonPosProducts: Product[] = [
     "availability": "unavailable",
     "images": [
       "/images/products/bixolon-srp-q300-1.webp",
-      "/images/products/bixolon-srp-q300-2.webp",
-      "/images/products/bixolon-srp-q300-3.webp"
+      "/images/products/bixolon-srp-q300-2.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-Q300 — widok z przodu pod kątem",
-      "BIXOLON SRP-Q300 — dodatkowe ujęcie 2",
-      "BIXOLON SRP-Q300 — dodatkowe ujęcie 3"
+      "BIXOLON SRP-Q300 — widok z przodu, wylot papieru z przodu",
+      "BIXOLON SRP-Q300 — obok stojaka RTS-Q300 z tabletem (stojak i tablet poza zestawem)"
     ],
     "tags": [
       "retail"
@@ -1181,7 +1173,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-Q300 (EN)",
         "url": "/datasheets/bixolon-srp-q300-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "996 KB"
       }
     ],
     "faq": [
@@ -1219,11 +1211,11 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-f310ii-5.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-F310II — widok z przodu pod kątem",
-      "BIXOLON SRP-F310II — dodatkowe ujęcie 2",
-      "BIXOLON SRP-F310II — dodatkowe ujęcie 3",
-      "BIXOLON SRP-F310II — dodatkowe ujęcie 4",
-      "BIXOLON SRP-F310II — dodatkowe ujęcie 5"
+      "BIXOLON SRP-F310II — wylot papieru z przodu",
+      "BIXOLON SRP-F310II — z podłączonym sygnalizatorem (akcesorium opcjonalne)",
+      "BIXOLON SRP-F310II — krople wody na obudowie Liquid-Barrier, IP12",
+      "BIXOLON SRP-F310II — otwarta pokrywa",
+      "BIXOLON SRP-F310II — wydruk paragonu z przodu"
     ],
     "tags": [
       "retail"
@@ -1371,7 +1363,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-F310II (EN)",
         "url": "/datasheets/bixolon-srp-f310ii-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "702 KB"
       }
     ],
     "faq": [
@@ -1413,11 +1405,11 @@ export const bixolonPosProducts: Product[] = [
       "/images/products/bixolon-srp-s300ii-5.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON SRP-S300II — widok z przodu pod kątem",
-      "BIXOLON SRP-S300II — dodatkowe ujęcie 2",
-      "BIXOLON SRP-S300II — dodatkowe ujęcie 3",
-      "BIXOLON SRP-S300II — dodatkowe ujęcie 4",
-      "BIXOLON SRP-S300II — dodatkowe ujęcie 5"
+      "BIXOLON SRP-S300II — widok z przodu z ekranem 2 cale",
+      "BIXOLON SRP-S300II — otwarta pokrywa i wałek",
+      "BIXOLON SRP-S300II — wydruk etykiety bez podkładu",
+      "BIXOLON SRP-S300II — widok z tyłu, złącza",
+      "BIXOLON SRP-S300II — wydruk paragonu"
     ],
     "tags": [
       "retail"
@@ -1615,7 +1607,7 @@ export const bixolonPosProducts: Product[] = [
         "name": "Karta katalogowa BIXOLON SRP-S300II (EN)",
         "url": "/datasheets/bixolon-srp-s300ii-en.pdf",
         "type": "pdf",
-        "size": "PDF"
+        "size": "64 KB"
       }
     ],
     "faq": [
@@ -1657,7 +1649,7 @@ export const bixolonPosAccessories: Product[] = [
       "/images/products/bixolon-rbc-100-1.webp"
     ],
     "imageDescriptions": [
-      "Brzęczyk BIXOLON RBC-100 do SRP-F310II — samo akcesorium, bez drukarki"
+      "Brzęczyk BIXOLON RBC-100 do drukarek POS — moduł z przewodem zakończonym wtykiem RJ"
     ],
     "tags": [
       "retail"
@@ -1717,7 +1709,7 @@ export const bixolonPosAccessories: Product[] = [
       "/images/products/bixolon-rmb-100g-1.webp"
     ],
     "imageDescriptions": [
-      "Sygnalizator BIXOLON B-Melodist RMB-100G — samo akcesorium, bez drukarki"
+      "Sygnalizator BIXOLON B-Melodist RMB-100G — moduł z płaskim przewodem zakończonym wtykiem RJ"
     ],
     "tags": [
       "retail"

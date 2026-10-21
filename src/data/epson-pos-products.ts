@@ -26,14 +26,14 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-t20iv-8.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-T20IV — widok produktu",
-      "Epson TM-T20IV — dodatkowe ujęcie 2",
-      "Epson TM-T20IV — dodatkowe ujęcie 3",
-      "Epson TM-T20IV — dodatkowe ujęcie 4",
-      "Epson TM-T20IV — dodatkowe ujęcie 5",
-      "Epson TM-T20IV — dodatkowe ujęcie 6",
-      "Epson TM-T20IV — dodatkowe ujęcie 7",
-      "Epson TM-T20IV — dodatkowe ujęcie 8"
+      "Epson TM-T20IV — czarna obudowa, wydruk paragonu, widok z przodu pod kątem",
+      "Epson TM-T20IV — widok z przodu, paragon w wylocie papieru",
+      "Epson TM-T20IV — widok z przodu, paragon na papierze 58 mm",
+      "Epson TM-T20IV — widok z przodu, paragon na papierze 80 mm",
+      "Epson TM-T20IV — widok z przodu, zamknięta pokrywa",
+      "Epson TM-T20IV — paragon w wylocie papieru, widok z góry pod kątem",
+      "Epson TM-T20IV — zamknięta pokrywa, widok z przodu pod kątem",
+      "Epson TM-T20IV — wydruk paragonu, widok z prawej strony pod kątem"
     ],
     "tags": [
       "retail"
@@ -114,7 +114,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-T20IV (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-t20iv.pdf",
-        "size": "PDF"
+        "size": "284 KB"
       }
     ],
     "faq": [
@@ -149,8 +149,8 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-t70ii-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-T70II — widok produktu",
-      "Epson TM-T70II — dodatkowe ujęcie 2"
+      "Epson TM-T70II — wydruk paragonu z przodu, panel sterowania na froncie",
+      "Epson TM-T70II — widok z przodu, przedni wylot papieru i przyciski"
     ],
     "tags": [
       "retail"
@@ -254,7 +254,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-T70II (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-t70ii.pdf",
-        "size": "PDF"
+        "size": "262 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-T70II",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-t70ii/s/s2396",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -295,14 +301,14 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-t88vii-8.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-T88VII — widok produktu",
-      "Epson TM-T88VII — dodatkowe ujęcie 2",
-      "Epson TM-T88VII — dodatkowe ujęcie 3",
-      "Epson TM-T88VII — dodatkowe ujęcie 4",
-      "Epson TM-T88VII — ujęcie z opcjonalną osłoną zasilacza",
-      "Epson TM-T88VII — dodatkowe ujęcie 6",
-      "Epson TM-T88VII — dodatkowe ujęcie 7",
-      "Epson TM-T88VII — ujęcie z opcjonalną osłoną zasilacza"
+      "Epson TM-T88VII — czarna obudowa, wydruk paragonu, widok z przodu pod kątem",
+      "Epson TM-T88VII — widok z przodu, paragon w wylocie papieru",
+      "Epson TM-T88VII — widok z tyłu z opcjonalną osłoną zasilacza OT-BX88VII",
+      "Epson TM-T88VII — zamknięta pokrywa, widok z przodu pod kątem",
+      "Epson TM-T88VII — wydruk paragonu, z opcjonalną osłoną zasilacza",
+      "Epson TM-T88VII — wydruk paragonu, widok z lewej strony pod kątem",
+      "Epson TM-T88VII — widok z boku z opcjonalną osłoną zasilacza",
+      "Epson TM-T88VII — zamknięta pokrywa, z opcjonalną osłoną zasilacza"
     ],
     "tags": [
       "retail"
@@ -432,7 +438,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-T88VII (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-t88vii.pdf",
-        "size": "PDF"
+        "size": "244 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-T88VII",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-t88vii/s/s2258",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -465,7 +477,6 @@ export const epsonPosProducts: Product[] = [
     "images": [
       "/images/products/epson-tm-m30iii-5.webp",
       "/images/products/epson-tm-m30iii-1.webp",
-      "/images/products/epson-tm-m30iii-2.webp",
       "/images/products/epson-tm-m30iii-3.webp",
       "/images/products/epson-tm-m30iii-4.webp",
       "/images/products/epson-tm-m30iii-6.webp",
@@ -473,14 +484,13 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-m30iii-8.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-m30III — widok produktu",
-      "Epson TM-m30III — dodatkowe ujęcie 2",
-      "Epson TM-m30III — dodatkowe ujęcie 3",
-      "Epson TM-m30III — dodatkowe ujęcie 4",
-      "Epson TM-m30III — dodatkowe ujęcie 5",
-      "Epson TM-m30III — dodatkowe ujęcie 6",
-      "Epson TM-m30III — dodatkowe ujęcie 7",
-      "Epson TM-m30III — dodatkowe ujęcie 8"
+      "Epson TM-m30III — czarna obudowa, wydruk paragonu od góry, widok pod kątem",
+      "Epson TM-m30III — widok z góry na pokrywę",
+      "Epson TM-m30III — zamknięta pokrywa, widok z przodu pod kątem",
+      "Epson TM-m30III — widok z prawej strony pod kątem",
+      "Epson TM-m30III — widok z lewej strony pod kątem",
+      "Epson TM-m30III — paragon w wylocie papieru, widok z przodu",
+      "Epson TM-m30III — wydruk paragonu, widok z lewej strony"
     ],
     "tags": [
       "retail"
@@ -583,7 +593,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-m30III (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-m30iii.pdf",
-        "size": "PDF"
+        "size": "3,1 MB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-m30III",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-m30iii/s/s3018",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -615,13 +631,11 @@ export const epsonPosProducts: Product[] = [
     "availability": "available",
     "images": [
       "/images/products/epson-tm-m30iii-h-main.webp",
-      "/images/products/epson-tm-m30iii-h-1.webp",
-      "/images/products/epson-tm-m30iii-h-2.webp"
+      "/images/products/epson-tm-m30iii-h-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-m30III-H — widok produktu",
-      "Epson TM-m30III-H — dodatkowe ujęcie 2",
-      "Epson TM-m30III-H — dodatkowe ujęcie 3"
+      "Epson TM-m30III-H — czarna obudowa, wydruk paragonu od góry, widok pod kątem",
+      "Epson TM-m30III-H — widok z góry na pokrywę"
     ],
     "tags": [
       "retail"
@@ -697,7 +711,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-m30III-H (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-m30iii-h.pdf",
-        "size": "PDF"
+        "size": "890 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-m30III-H",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-m30iii/s/s3018",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -733,7 +753,7 @@ export const epsonPosProducts: Product[] = [
     ],
     "imageDescriptions": [
       "Epson TM-m50II — widok z przodu pod kątem z paragonem",
-      "Epson TM-m50II — widok z przodu"
+      "Epson TM-m50II — widok z góry na pokrywę"
     ],
     "tags": [
       "retail"
@@ -805,7 +825,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-m50II (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-m50ii.pdf",
-        "size": "PDF"
+        "size": "828 KB"
       }
     ],
     "faq": [
@@ -846,14 +866,14 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-m30ii-s-8.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-m30II-S — widok produktu",
-      "Epson TM-m30II-S — przykładowe stanowisko; tablet nie jest dołączony",
-      "Epson TM-m30II-S — dodatkowe ujęcie 3",
-      "Epson TM-m30II-S — przykładowe stanowisko; tablet nie jest dołączony",
-      "Epson TM-m30II-S — przykładowe stanowisko; tablet nie jest dołączony",
-      "Epson TM-m30II-S — przykładowe stanowisko; tablet nie jest dołączony",
-      "Epson TM-m30II-S — przykładowe stanowisko; tablet nie jest dołączony",
-      "Epson TM-m30II-S — dodatkowe ujęcie 8"
+      "Epson TM-m30II-S — czarna obudowa z pustym uchwytem na tablet",
+      "Epson TM-m30II-S — widok z przodu z tabletem w uchwycie (tablet poza zestawem)",
+      "Epson TM-m30II-S — otwarta obudowa, złącza i miejsce na przewody",
+      "Epson TM-m30II-S — z tabletem w uchwycie, widok pod kątem (tablet poza zestawem)",
+      "Epson TM-m30II-S — widok z tyłu z tabletem (tablet poza zestawem)",
+      "Epson TM-m30II-S — stanowisko z dwoma tabletami (tablety poza zestawem)",
+      "Epson TM-m30II-S — stanowisko z dwoma tabletami, widok z boku (tablety poza zestawem)",
+      "Epson TM-m30II-S — biała obudowa z pustym uchwytem na tablet"
     ],
     "tags": [
       "retail"
@@ -934,7 +954,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-m30II-S (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-m30ii-s.pdf",
-        "size": "PDF"
+        "size": "1,3 MB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-m30II-S",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-m30ii/s/s2432",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -968,7 +994,7 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-u220iib-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-U220IIB — widok produktu"
+      "Epson TM-U220IIB — ciemnoszara obudowa, dwukolorowy paragon na zwykłym papierze"
     ],
     "tags": [
       "retail"
@@ -1106,7 +1132,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-U220IIB (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-u220iib.pdf",
-        "size": "PDF"
+        "size": "342 KB"
       }
     ],
     "faq": [
@@ -1140,7 +1166,7 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-u220iid-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-U220IID — widok produktu"
+      "Epson TM-U220IID — ciemnoszara obudowa, dwukolorowy paragon na zwykłym papierze"
     ],
     "tags": [
       "retail"
@@ -1214,7 +1240,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-U220IID (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-u220iid.pdf",
-        "size": "PDF"
+        "size": "342 KB"
       }
     ],
     "faq": [
@@ -1248,7 +1274,7 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-u295-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-U295 — widok produktu"
+      "Epson TM-U295 — biała obudowa, formularz w szczelinie podawania"
     ],
     "tags": [
       "retail"
@@ -1324,7 +1350,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-U295 (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-u295.pdf",
-        "size": "PDF"
+        "size": "1,8 MB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-U295",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-u295/s/s2378",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -1363,12 +1395,12 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-h6000vi-6.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-H6000VI — widok produktu",
-      "Epson TM-H6000VI — dodatkowe ujęcie 2",
-      "Epson TM-H6000VI — dodatkowe ujęcie 3",
-      "Epson TM-H6000VI — dodatkowe ujęcie 4",
-      "Epson TM-H6000VI — dodatkowe ujęcie 5",
-      "Epson TM-H6000VI — dodatkowe ujęcie 6"
+      "Epson TM-H6000VI — paragon u góry i dokument w podajniku formularzy",
+      "Epson TM-H6000VI — paragon i formularz, widok z przodu pod kątem",
+      "Epson TM-H6000VI — widok z góry",
+      "Epson TM-H6000VI — widok z tyłu, złącza",
+      "Epson TM-H6000VI — widok z boku",
+      "Epson TM-H6000VI — otwarta pokrywa mechanizmu paragonowego"
     ],
     "tags": [
       "retail"
@@ -1498,7 +1530,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-H6000VI (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-h6000vi.pdf",
-        "size": "PDF"
+        "size": "288 KB"
       }
     ],
     "faq": [
@@ -1533,8 +1565,8 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-j7200-2.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-J7200 — widok produktu",
-      "Epson TM-J7200 — dodatkowe ujęcie 2"
+      "Epson TM-J7200 — czarna obudowa, widok z przodu, podajnik arkuszy u dołu",
+      "Epson TM-J7200 — widok z przodu pod kątem"
     ],
     "tags": [
       "retail"
@@ -1610,7 +1642,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-J7200 (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-j7200.pdf",
-        "size": "PDF"
+        "size": "22 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-J7200",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-j7200/s/s2330",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -1647,10 +1685,10 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-j7700-4.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-J7700 — widok produktu",
-      "Epson TM-J7700 — dodatkowe ujęcie 2",
-      "Epson TM-J7700 — dodatkowe ujęcie 3",
-      "Epson TM-J7700 — dodatkowe ujęcie 4"
+      "Epson TM-J7700 — czarna obudowa, widok z przodu, podajnik arkuszy u dołu",
+      "Epson TM-J7700 — otwarta pokrywa rolki, widok pod kątem",
+      "Epson TM-J7700 — otwarta obudowa, dostęp do mechanizmu",
+      "Epson TM-J7700 — zamknięta obudowa, widok z przodu pod kątem"
     ],
     "tags": [
       "retail"
@@ -1726,7 +1764,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-J7700 (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-j7700.pdf",
-        "size": "PDF"
+        "size": "22 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-J7700",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-j7700/s/s2339",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -1766,13 +1810,13 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-l100-7.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-L100 — widok produktu",
-      "Epson TM-L100 — dodatkowe ujęcie 2",
-      "Epson TM-L100 — dodatkowe ujęcie 3",
-      "Epson TM-L100 — dodatkowe ujęcie 4",
-      "Epson TM-L100 — dodatkowe ujęcie 5",
-      "Epson TM-L100 — dodatkowe ujęcie 6",
-      "Epson TM-L100 — dodatkowe ujęcie 7"
+      "Epson TM-L100 — szaro-czarna obudowa, widok z przodu pod kątem",
+      "Epson TM-L100 — widok z przodu, etykieta zamówienia w wylocie",
+      "Epson TM-L100 — widok z przodu, wylot papieru",
+      "Epson TM-L100 — widok z prawej strony pod kątem",
+      "Epson TM-L100 — etykieta zamówienia, ustawienie z wydrukiem od góry",
+      "Epson TM-L100 — ustawienie z wydrukiem od góry, zamknięta pokrywa",
+      "Epson TM-L100 — widok z tyłu, złącza"
     ],
     "tags": [
       "retail"
@@ -1865,7 +1909,7 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-L100 (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-l100.pdf",
-        "size": "PDF"
+        "size": "626 KB"
       }
     ],
     "faq": [
@@ -1901,9 +1945,9 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-l90-2.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-L90 — widok produktu",
-      "Epson TM-L90 — dodatkowe ujęcie 2",
-      "Epson TM-L90 — dodatkowe ujęcie 3"
+      "Epson TM-L90 — ustawienie pionowe z wylotem z przodu",
+      "Epson TM-L90 — widok z przodu, etykieta w wylocie",
+      "Epson TM-L90 — widok z tyłu, złącza"
     ],
     "tags": [
       "retail"
@@ -1983,7 +2027,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-L90 (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-l90.pdf",
-        "size": "PDF"
+        "size": "498 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-L90",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-l90/s/s2354",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -2022,12 +2072,12 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-l90lf-6.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-L90LF — widok produktu",
-      "Epson TM-L90LF — dodatkowe ujęcie 2",
-      "Epson TM-L90LF — dodatkowe ujęcie 3",
-      "Epson TM-L90LF — dodatkowe ujęcie 4",
-      "Epson TM-L90LF — dodatkowe ujęcie 5",
-      "Epson TM-L90LF — dodatkowe ujęcie 6"
+      "Epson TM-L90LF — etykieta bez podkładu, widok z przodu pod kątem",
+      "Epson TM-L90LF — widok z przodu, etykieta w wylocie",
+      "Epson TM-L90LF — etykieta bez podkładu, widok z prawej strony",
+      "Epson TM-L90LF — widok z przodu, zamknięta pokrywa",
+      "Epson TM-L90LF — zamknięta pokrywa, widok z przodu pod kątem",
+      "Epson TM-L90LF — widok z przodu, oznaczenie Liner-Free"
     ],
     "tags": [
       "retail"
@@ -2096,7 +2146,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-L90LF (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-l90lf.pdf",
-        "size": "PDF"
+        "size": "498 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-L90LF",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-l90/s/s2354",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -2131,8 +2187,8 @@ export const epsonPosProducts: Product[] = [
       "/images/products/epson-tm-p20ii-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-P20II — widok produktu",
-      "Epson TM-P20II — dodatkowe ujęcie 2"
+      "Epson TM-P20II — paragon w wylocie, klips na pasek z tyłu",
+      "Epson TM-P20II — widok z przodu, paragon w wylocie"
     ],
     "tags": [
       "retail"
@@ -2232,7 +2288,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-P20II (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-p20ii.pdf",
-        "size": "PDF"
+        "size": "1,5 MB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-P20II",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-p20ii/s/s3021",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -2264,13 +2326,11 @@ export const epsonPosProducts: Product[] = [
     "availability": "available",
     "images": [
       "/images/products/epson-tm-p80ii-main.webp",
-      "/images/products/epson-tm-p80ii-1.webp",
-      "/images/products/epson-tm-p80ii-2.webp"
+      "/images/products/epson-tm-p80ii-1.webp"
     ],
     "imageDescriptions": [
-      "Epson TM-P80II — widok produktu",
-      "Epson TM-P80II — dodatkowe ujęcie 2",
-      "Epson TM-P80II — dodatkowe ujęcie 3"
+      "Epson TM-P80II — paragon w wylocie, widok pod kątem",
+      "Epson TM-P80II — widok z przodu, paragon w wylocie"
     ],
     "tags": [
       "retail"
@@ -2383,7 +2443,13 @@ export const epsonPosProducts: Product[] = [
         "name": "Karta katalogowa Epson TM-P80II (PDF)",
         "type": "pdf",
         "url": "/datasheets/epson-tm-p80ii.pdf",
-        "size": "PDF"
+        "size": "1,5 MB"
+      },
+      {
+        "name": "Sterowniki i narzędzia TM-P80II",
+        "type": "driver",
+        "url": "https://www.epson.eu/en_EU/support/sc/tm-p80ii/s/s2811",
+        "size": "Online"
       }
     ],
     "faq": [
@@ -2421,7 +2487,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ot-wl06-323-1.webp"
     ],
     "imageDescriptions": [
-      "Adapter Wi-Fi Epson OT-WL06 — zdjęcie samego akcesorium"
+      "Adapter Wi-Fi Epson OT-WL06 — moduł Wi-Fi z przewodem USB"
     ],
     "tags": [
       "retail"
@@ -2478,7 +2544,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ot-bz20-634-1.webp"
     ],
     "imageDescriptions": [
-      "Brzęczyk Epson OT-BZ20 — zdjęcie samego akcesorium"
+      "Brzęczyk Epson OT-BZ20 — moduł z przewodem zakończonym wtykiem RJ"
     ],
     "tags": [
       "retail"
@@ -2538,7 +2604,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-wh-10-1.webp"
     ],
     "imageDescriptions": [
-      "Uchwyt ścienny Epson WH-10 — zdjęcie samego akcesorium"
+      "Uchwyt ścienny Epson WH-10 — metalowa płyta montażowa"
     ],
     "tags": [
       "retail"
@@ -2594,7 +2660,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ps-180-1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz Epson PS-180 — zdjęcie samego akcesorium"
+      "Zasilacz Epson PS-180 — zasilacz z przewodem wyjściowym, bez przewodu zasilającego"
     ],
     "tags": [
       "retail"
@@ -2654,7 +2720,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ps-190-1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz Epson PS-190 — zdjęcie samego akcesorium"
+      "Zasilacz Epson PS-190 — zasilacz z przewodem wyjściowym, bez przewodu zasilającego"
     ],
     "tags": [
       "retail"
@@ -2712,7 +2778,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-erc38b-1.webp"
     ],
     "imageDescriptions": [
-      "Kaseta barwiąca Epson ERC38B — czarna — zdjęcie samego akcesorium"
+      "Kaseta barwiąca Epson ERC38B — czarna — kaseta z czarną taśmą"
     ],
     "tags": [
       "retail"
@@ -2765,7 +2831,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-erc38br-1.webp"
     ],
     "imageDescriptions": [
-      "Kaseta barwiąca Epson ERC38BR — czarno-czerwona — zdjęcie samego akcesorium"
+      "Kaseta barwiąca Epson ERC38BR — czarno-czerwona — kaseta z taśmą czarno-czerwoną"
     ],
     "tags": [
       "retail"
@@ -2818,7 +2884,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-erc27b-1.webp"
     ],
     "imageDescriptions": [
-      "Kaseta barwiąca Epson ERC27B do TM-U295 — zdjęcie samego akcesorium"
+      "Kaseta barwiąca Epson ERC27B do TM-U295 — kaseta z czarną taśmą"
     ],
     "tags": [
       "retail"
@@ -2870,7 +2936,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-erc32b-1.webp"
     ],
     "imageDescriptions": [
-      "Kaseta barwiąca Epson ERC32B do TM-H6000VI — zdjęcie samego akcesorium"
+      "Kaseta barwiąca Epson ERC32B do TM-H6000VI — kaseta z czarną taśmą"
     ],
     "tags": [
       "retail"
@@ -2922,7 +2988,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-sjic33p-tm-j7200-7700-ink-cartridge-1.webp"
     ],
     "imageDescriptions": [
-      "Wkład Epson SJIC33P(K) do TM-J7200 i TM-J7700 — zdjęcie samego akcesorium"
+      "Wkład Epson SJIC33P(K) do TM-J7200 i TM-J7700 — wkład z czarnym atramentem"
     ],
     "tags": [
       "retail"
@@ -2975,7 +3041,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ot-by20-1.webp"
     ],
     "imageDescriptions": [
-      "Bateria Epson OT-BY20 do TM-P20II — zdjęcie samego akcesorium"
+      "Bateria Epson OT-BY20 do TM-P20II — akumulator Li-ion"
     ],
     "tags": [
       "retail"
@@ -3027,7 +3093,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ot-by80ii-1.webp"
     ],
     "imageDescriptions": [
-      "Bateria Epson OT-BY80II do TM-P80II — zdjęcie samego akcesorium"
+      "Bateria Epson OT-BY80II do TM-P80II — akumulator Li-ion"
     ],
     "tags": [
       "retail"
@@ -3079,7 +3145,7 @@ export const epsonPosAccessories: Product[] = [
       "/images/products/epson-ot-sh01-1.webp"
     ],
     "imageDescriptions": [
-      "Pasek naramienny Epson OT-SH01 — zdjęcie samego akcesorium"
+      "Pasek naramienny Epson OT-SH01 — pasek z zaczepami"
     ],
     "tags": [
       "retail"
