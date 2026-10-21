@@ -1,3 +1,4 @@
+import { sunmiProducts, sunmiAccessories } from '@/data/sunmi-products'
 import { cipherlabProducts, cipherlabAccessories } from '@/data/cipherlab-products'
 import { epsonPosProducts, epsonPosAccessories } from '@/data/epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from '@/data/bixolon-pos-products'
@@ -56,6 +57,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...sunmiProducts.map(p => p.slug), ...sunmiAccessories.map(p => p.slug),
   ...cipherlabProducts.map(p => p.slug), ...cipherlabAccessories.map(p => p.slug),
   ...epsonPosProducts.map(p => p.slug), ...epsonPosAccessories.map(p => p.slug),
   ...bixolonPosProducts.map(p => p.slug), ...bixolonPosAccessories.map(p => p.slug),
