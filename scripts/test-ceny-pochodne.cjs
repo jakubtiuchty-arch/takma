@@ -1,6 +1,7 @@
 /**
  * Cena kartonowa i cena kontraktu serwisowego: serwer (lib/ceny-pochodne) musi
- * dawać dokładnie to, co wcześniej liczyła przeglądarka z `ingramPrice`.
+ * dawać dokładnie to, co wcześniej liczyła przeglądarka z `ingramPrice`, a publiczne
+ * /api/stock nie może podawać ceny zakupu ani `_debug` osobom bez sesji admina.
  *
  *   node scripts/test-ceny-pochodne.cjs [odpowiedz-api-stock.json]
  *
@@ -11,16 +12,17 @@
 const fs = require('node:fs'), path = require('node:path'), Module = require('node:module'), assert = require('node:assert/strict'), ts = require('typescript')
 require.extensions['.ts'] = (m, f) => m._compile(ts.transpileModule(fs.readFileSync(f, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true } }).outputText, f)
 
-let cacheRows = [], jarltechRows = []
+let cacheRows = [], jarltechRows = [], ingramLive = [], dbError = null, adminSession = null
 const prisma = {
-  stockCache: { findMany: async () => cacheRows, upsert: async x => x.create, update: async () => ({}) },
+  stockCache: { findMany: async () => { if (dbError) throw dbError; return cacheRows }, upsert: async x => x.create, update: async () => ({}) },
   jarltechStockCache: { findMany: async () => jarltechRows, upsert: async x => x.create },
 }
 const notFound = pns => pns.map(partNumber => ({ partNumber, found: false, stockPL: 0, stockDE: 0, inDelivery: 0, totalStock: 0, availability: 'unavailable', deliveryText: '', lastSync: new Date().toISOString() }))
 const original = Module._load
 Module._load = function (id, parent, main) {
   if (id === '@/lib/db') return { prisma }
-  if (id === '@/lib/ingram') return { lookupStock: async pns => notFound(pns) }
+  if (id === '@/lib/ingram') return { lookupStock: async pns => pns.map(pn => ingramLive.find(r => r.partNumber === pn) ?? notFound([pn])[0]) }
+  if (id === '@/lib/auth') return { getSessionFromCookie: async () => adminSession }
   if (id === '@/lib/bluestar') return { lookupStock: async pns => notFound(pns) }
   if (id === '@/lib/jarltech') return { lookupStock: async pns => notFound(pns) }
   return original.call(this, id.startsWith('@/') ? path.resolve('src', id.slice(2)) : id, parent, main)
@@ -129,7 +131,56 @@ async function main() {
   assert.equal(kartonPo(produktPN(tasma), bezZakupu.get(tasma)), kartonPrzed(produktPN(tasma), bezZakupu.get(tasma)))
   console.log('OK: wzory, brak konfliktów rodzaju kartonu, ścieżka lookupUnifiedStock')
 
-  // 4. Porównanie przed/po na zapisanej odpowiedzi produkcyjnej
+  // 4. Publiczne /api/stock: bez ceny zakupu na każdej ścieżce, `debug` tylko dla admina
+  const { NextRequest } = require('next/server')
+  const { GET } = require('../src/app/api/stock/route.ts')
+  const zapytaj = async query => {
+    const res = await GET(new NextRequest(`https://www.takma.com.pl/api/stock?${query}`))
+    return { status: res.status, cache: res.headers.get('cache-control'), tekst: await res.text() }
+  }
+  const zakazane = /ingramPrice|bluestarPrice|jarltechPrice|"eur"|eurRate|_debug/
+  cacheRows = syntetyczne.map(r => wierszCache(r, new Date())); jarltechRows = []
+  let odp = await zapytaj(`pn=${tasma},${plan}`)
+  assert.equal(odp.status, 200)
+  assert.doesNotMatch(odp.tekst, zakazane, 'cache')
+  assert.match(odp.tekst, /"cartonPrice":56.5/)
+  assert.match(odp.tekst, /"servicePlanPrice":1150/)
+  assert.equal(odp.cache, 'public, s-maxage=300, stale-while-revalidate=600')
+  odp = await zapytaj(`pn=${tasma}&debug=1`)
+  assert.doesNotMatch(odp.tekst, zakazane, 'debug bez sesji')
+  assert.equal(odp.cache, 'private, no-store')
+  // Ścieżka live (brak wpisu w StockCache) — cena zakupu z Ingrama nie wychodzi na zewnątrz.
+  cacheRows = []
+  ingramLive = [{ partNumber: tasma, found: true, ingramPrice: 50, stockPL: 2, stockDE: 0, inDelivery: 0, totalStock: 2, availability: 'available', deliveryText: '', lastSync: new Date().toISOString() }]
+  odp = await zapytaj(`pn=${tasma}&debug=1`)
+  assert.equal(odp.status, 200)
+  assert.doesNotMatch(odp.tekst, zakazane, 'live')
+  assert.match(odp.tekst, /"_source":"live"/)
+  assert.match(odp.tekst, /"cartonPrice":56.5/)
+  adminSession = { userId: 'test', email: 'test@takma.com.pl', name: 'Test' }
+  odp = await zapytaj(`pn=${tasma}&debug=1`)
+  assert.match(odp.tekst, /_debug/, 'admin widzi debug')
+  assert.doesNotMatch(odp.tekst, /ingramPrice/, 'admin: wyniki publiczne nadal bez ceny zakupu')
+  assert.equal(odp.cache, 'private, no-store')
+  // Admin: /api/admin/stock z ceną zakupu; bez sesji 401.
+  const admin = require('../src/app/api/admin/stock/route.ts')
+  let adm = await admin.GET(new NextRequest(`https://www.takma.com.pl/api/admin/stock?pn=${tasma}`))
+  assert.equal(adm.status, 200)
+  assert.equal(adm.headers.get('cache-control'), 'private, no-store')
+  assert.equal((await adm.json()).results[0].ingramPrice, 50)
+  adminSession = null
+  adm = await admin.GET(new NextRequest(`https://www.takma.com.pl/api/admin/stock?pn=${tasma}`))
+  assert.equal(adm.status, 401)
+  assert.doesNotMatch(await adm.text(), zakazane)
+  // Błąd bazy
+  dbError = new Error('ECONNREFUSED'); ingramLive = []
+  odp = await zapytaj(`pn=${tasma}`)
+  assert.equal(odp.status, 500)
+  assert.doesNotMatch(odp.tekst, zakazane, 'błąd')
+  dbError = null
+  console.log('OK: publiczne /api/stock bez ceny zakupu (cache, live, debug, błąd); /api/admin/stock tylko z sesją')
+
+  // 5. Porównanie przed/po na zapisanej odpowiedzi produkcyjnej
   const plik = process.argv[2]
   if (!plik) return
   const przed = JSON.parse(fs.readFileSync(plik, 'utf8')).results

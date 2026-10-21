@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getSessionFromCookie } from '@/lib/auth'
 import { lookupUnifiedStock } from '@/lib/unified-stock'
 
+/**
+ * Publiczne API stanów i cen sprzedaży. Nie podaje ceny zakupu (`ingramPrice`):
+ * konkurencja odczytywała z niej marżę. Cenę kartonową i cenę kontraktu
+ * serwisowego liczy serwer (lib/ceny-pochodne); cenę zakupu dla kreatora
+ * oferty zwraca /api/admin/stock.
+ */
 export async function GET(request: NextRequest) {
-  const showDebug = request.nextUrl.searchParams.get('debug') === '1'
+  const debugParam = request.nextUrl.searchParams.get('debug') === '1'
   const pnParam = request.nextUrl.searchParams.get('pn')
 
   if (!pnParam) {
@@ -28,6 +35,19 @@ export async function GET(request: NextRequest) {
     )
   }
 
+  // `_debug` zawiera ceny dostawców w EUR — tylko dla zalogowanego admina.
+  // Bez sesji parametr jest ignorowany.
+  const showDebug = debugParam && !!(await getSessionFromCookie())
+
   const { body, status, headers } = await lookupUnifiedStock(partNumbers, showDebug)
-  return NextResponse.json(body, { status, headers })
+  const publicBody = body.results
+    ? { ...body, results: body.results.map(({ ingramPrice: _cenaZakupu, ...wiersz }) => wiersz) }
+    : body
+
+  // Odpowiedź z `debug=1` nie może trafić do cache CDN: wersja admina
+  // byłaby serwowana pod tym samym adresem innym osobom.
+  return NextResponse.json(publicBody, {
+    status,
+    headers: debugParam ? { ...headers, 'Cache-Control': 'private, no-store' } : headers,
+  })
 }
