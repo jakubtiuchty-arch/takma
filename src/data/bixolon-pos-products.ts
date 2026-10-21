@@ -51,7 +51,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -185,7 +185,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -310,7 +310,7 @@ export const bixolonPosProducts: Product[] = [
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
-    "priceFrom": 641.16,
+    "priceFrom": 667.9,
     "availability": "available",
     "images": [
       "/images/products/bixolon-srp-350plusv-1.webp",
@@ -350,7 +350,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -424,12 +424,12 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-350PlusVPWK",
-        "name": "SRP-350plusV — Ethernet, PoweredUSB",
+        "name": "SRP-350plusV — USB, Ethernet, PoweredUSB",
         "attributes": {
           "Model": "SRP-350plusV",
           "Rozdzielczość": "180 dpi",
           "Prędkość druku": "400 mm/s",
-          "Interfejsy": "Ethernet, PoweredUSB",
+          "Interfejsy": "USB, Ethernet, PoweredUSB",
           "Łączność bezprzewodowa": "Brak"
         },
         "priceFrom": 641.16,
@@ -582,7 +582,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -775,7 +775,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "180 dpi w oferowanym PN"
+        "value": "180 dpi"
       },
       {
         "name": "Prędkość druku",
@@ -783,11 +783,11 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB — zależnie od PN"
+        "value": "USB"
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -796,6 +796,14 @@ export const bixolonPosProducts: Product[] = [
       {
         "name": "Średnica rolki",
         "value": "Do 83 mm"
+      },
+      {
+        "name": "Wymiary",
+        "value": "147 × 200 × 148 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,57 kg"
       },
       {
         "name": "Obsługa papieru",
@@ -862,11 +870,11 @@ export const bixolonPosProducts: Product[] = [
     "seoTitle": "BIXOLON SRP-Q200 — kompaktowa drukarka POS 58 mm",
     "seoDescription": "BIXOLON SRP-Q200: kompaktowa drukarka POS na papier 58 mm. Druk 203 dpi do 250 mm/s. Sprawdź porty, warianty PN, ceny i zgodne akcesoria.",
     "shortDescription": "BIXOLON SRP-Q200 to kompaktowa termiczna drukarka POS na papier 58 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.",
-    "description": "BIXOLON SRP-Q200 to kompaktowa termiczna drukarka POS na papier 58 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Mały punkt sprzedaży i wąski papier\n\nObudowa ma 102 × 104 × 107 mm. Drukarka mieści rolkę o średnicy do 60 mm i wykonuje nadruk do 54 mm. Można ustawić ją tak, aby dokument wychodził z góry lub z przodu. Dobierz położenie do dostępu operatora i wolnej przestrzeni na ladzie.\n\nOferowane wersje mają USB z RS-232 albo USB, Ethernet i Wi-Fi. Nie są to te same konfiguracje. Wersja sieciowa ułatwia połączenie ze stanowiskiem mPOS, jeśli aplikacja obsługuje drukarkę. Gilotyna odcina dokument po zakończeniu wydruku.\n\n## Połączenie i wyposażenie stanowiska\n\nDrukarka drukuje dane przesłane z aplikacji i nie ma funkcji urządzenia fiskalnego. Przed zakupem sprawdź obsługę modelu, portu oraz języka poleceń w swoim systemie. Połączenie radiowe wymaga obsługi przez aplikację.\n\nOferowane zestawy obejmują zasilanie; pełne wyposażenie zależy od PN. Nie kupuj ponownie przewodu lub zasilacza, jeśli znajduje się już w zestawie. Akcesoria poniżej służą do zgodnych konfiguracji lub jako wyposażenie zapasowe. Przewód RS-232 nie dodaje portu do drukarki, która go nie ma.\n\n## Papier i eksploatacja\n\nUżywaj papieru termicznego o odpowiedniej szerokości, średnicy rolki i grubości. Zwykłe modele paragonowe nie zastępują drukarki etykiet samoprzylepnych. Do linerless wybierz osobną konfigurację przystosowaną do kleju. Gwarancja na drukarkę wynosi 2 lata. Głowica podlega także limitom eksploatacyjnym określonym w warunkach gwarancji.\n\n## Porównaj drukarki POS\n\n[BIXOLON SRP-Q300](/produkt/bixolon-srp-q300), [BIXOLON SRP-330III](/produkt/bixolon-srp-330iii), [BIXOLON SRP-350V](/produkt/bixolon-srp-350v). Pozostałe modele znajdziesz w kategorii [termiczne drukarki POS](/drukarki-pos). Do pracy z baterii porównaj [mobilne drukarki paragonów](/mobilne-drukarki-paragonow), a do znakowania towaru [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON SRP-Q200 to kompaktowa termiczna drukarka POS na papier 58 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Mały punkt sprzedaży i wąski papier\n\nObudowa ma 103 × 104 × 109 mm. Drukarka mieści rolkę o średnicy do 60 mm i wykonuje nadruk do 54 mm. Można ustawić ją tak, aby dokument wychodził z góry lub z przodu. Dobierz położenie do dostępu operatora i wolnej przestrzeni na ladzie.\n\nOferowane wersje mają USB z RS-232 albo USB, Ethernet i Wi-Fi. Nie są to te same konfiguracje. Wersja sieciowa ułatwia połączenie ze stanowiskiem mPOS, jeśli aplikacja obsługuje drukarkę. Gilotyna odcina dokument po zakończeniu wydruku.\n\n## Połączenie i wyposażenie stanowiska\n\nDrukarka drukuje dane przesłane z aplikacji i nie ma funkcji urządzenia fiskalnego. Przed zakupem sprawdź obsługę modelu, portu oraz języka poleceń w swoim systemie. Połączenie radiowe wymaga obsługi przez aplikację.\n\nOferowane zestawy obejmują zasilanie; pełne wyposażenie zależy od PN. Nie kupuj ponownie przewodu lub zasilacza, jeśli znajduje się już w zestawie. Akcesoria poniżej służą do zgodnych konfiguracji lub jako wyposażenie zapasowe. Przewód RS-232 nie dodaje portu do drukarki, która go nie ma.\n\n## Papier i eksploatacja\n\nUżywaj papieru termicznego o odpowiedniej szerokości, średnicy rolki i grubości. Zwykłe modele paragonowe nie zastępują drukarki etykiet samoprzylepnych. Do linerless wybierz osobną konfigurację przystosowaną do kleju. Gwarancja na drukarkę wynosi 2 lata. Głowica podlega także limitom eksploatacyjnym określonym w warunkach gwarancji.\n\n## Porównaj drukarki POS\n\n[BIXOLON SRP-Q300](/produkt/bixolon-srp-q300), [BIXOLON SRP-330III](/produkt/bixolon-srp-330iii), [BIXOLON SRP-350V](/produkt/bixolon-srp-350v). Pozostałe modele znajdziesz w kategorii [termiczne drukarki POS](/drukarki-pos). Do pracy z baterii porównaj [mobilne drukarki paragonów](/mobilne-drukarki-paragonow), a do znakowania towaru [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
-    "priceFrom": 480.87,
+    "priceFrom": 654.5,
     "availability": "available",
     "images": [
       "/images/products/bixolon-srp-q200-1.webp",
@@ -916,7 +924,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Wymiary",
-        "value": "102 × 104 × 107 mm"
+        "value": "103 × 104 × 109 mm"
       },
       {
         "name": "Obsługa papieru",
@@ -1037,7 +1045,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; 58 mm z właściwą prowadnicą"
       },
       {
         "name": "Szerokość druku",
@@ -1160,7 +1168,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "80 mm ; 58 mm z właściwą prowadnicą"
+        "value": "80 mm; opcjonalnie 83 mm (przegroda 83 mm w zestawie)"
       },
       {
         "name": "Szerokość druku",
@@ -1444,7 +1452,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-S300IIXBaK/BEG",
-        "name": "SRP-S300II — USB, Ethernet, Bluetooth",
+        "name": "SRP-S300II Linerless — USB, Ethernet, Bluetooth",
         "attributes": {
           "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Bluetooth",
@@ -1455,7 +1463,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-S300IIXK/BEG",
-        "name": "SRP-S300II — USB, Ethernet",
+        "name": "SRP-S300II Linerless — USB, Ethernet",
         "attributes": {
           "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Brak",
@@ -1466,7 +1474,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-S300IIXPWK/BEG",
-        "name": "SRP-S300II — USB, Ethernet, PoweredUSB",
+        "name": "SRP-S300II Linerless — USB, Ethernet, PoweredUSB",
         "attributes": {
           "Interfejsy": "USB, Ethernet, PoweredUSB",
           "Łączność bezprzewodowa": "Brak",
@@ -1477,7 +1485,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-S300IIXSK/BEG",
-        "name": "SRP-S300II — USB, RS-232, Ethernet",
+        "name": "SRP-S300II Linerless — USB, RS-232, Ethernet",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Łączność bezprzewodowa": "Brak",
@@ -1488,7 +1496,7 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "partNumber": "SRP-S300IIXWDaK/BEG",
-        "name": "SRP-S300II — USB, Ethernet, Wi-Fi",
+        "name": "SRP-S300II Linerless — USB, Ethernet, Wi-Fi",
         "attributes": {
           "Interfejsy": "USB, Ethernet",
           "Łączność bezprzewodowa": "Wi-Fi",

@@ -136,11 +136,11 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Epson TM-T70II — drukarka POS z obsługą od przodu",
     "seoDescription": "Epson TM-T70II: drukarka POS na papier 80 mm z ładowaniem i odbiorem wydruku od przodu. Do zabudowy pod ladą. Sprawdź PN, ceny i akcesoria.",
     "shortDescription": "Epson TM-T70II to termiczna drukarka POS do papieru 80 mm. Papier oraz gotowe potwierdzenia obsługuje się od przodu urządzenia.",
-    "description": "Epson TM-T70II to termiczna drukarka POS do papieru 80 mm. Papier oraz gotowe potwierdzenia obsługuje się od przodu urządzenia.\n\n## Drukarka pod ladą bez dostępu od góry\n\nPrzednie ładowanie rolki i odbiór dokumentu ułatwiają ustawienie TM-T70II pod blatem. Obudowa ma 125 × 194 × 114 mm. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi. Mieści rolkę o średnicy do 83 mm.\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy i wyposażeniem. Zestawy obejmują zasilacz i przewód europejski. Zapasu przewodów nie trzeba kupować ponownie, jeśli dany element znajduje się w zestawie. Zasilacz PS-190 poniżej służy także jako część zamienna.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nDobierz wyposażenie do wybranego PN. Sprawdź osobno dołączenie zasilacza, przewodu sieciowego i przewodu danych.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T70II to termiczna drukarka POS do papieru 80 mm. Papier oraz gotowe potwierdzenia obsługuje się od przodu urządzenia.\n\n## Drukarka pod ladą bez dostępu od góry\n\nPrzednie ładowanie rolki i odbiór dokumentu ułatwiają ustawienie TM-T70II pod blatem. Obudowa ma 125 × 194 × 114 mm. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi. Mieści rolkę o średnicy do 83 mm.\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy i wyposażeniem. Zestawy obejmują zasilacz PS-190 i przewód zasilający. Wersja C31CD38022A1 ma zasilacz PS-180 i wbudowany brzęczyk.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nDobierz wyposażenie do wybranego PN. Sprawdź osobno dołączenie zasilacza, przewodu sieciowego i przewodu danych.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
-    "priceFrom": 856.07,
+    "priceFrom": 859.87,
     "availability": "available",
     "images": [
       "/images/products/epson-tm-t70ii-main.webp",
@@ -274,7 +274,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Epson TM-T88VII — szybka drukarka POS do 500 mm/s",
     "seoDescription": "Epson TM-T88VII do obciążonych stanowisk POS: druk do 500 mm/s na papierze 58 lub 80 mm. Porównaj porty i warianty PoweredUSB. Ceny i PN.",
     "shortDescription": "Epson TM-T88VII to termiczna drukarka POS do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.",
-    "description": "Epson TM-T88VII to termiczna drukarka POS do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.\n\n## Wydajne drukowanie z portami dla infrastruktury POS\n\nRodzina obejmuje konfiguracje USB, Ethernet, RS-232 oraz PoweredUSB. Porty i sposób zasilania zależą od PN. Wersje z interfejsem wymiennym różnią się od konfiguracji ze stałym interfejsem. Tabela pozwala dobrać je bez przypisywania wszystkich portów każdej drukarce.\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Rolka może mieć średnicę do 83 mm. Wymiary obudowy wynoszą 145 × 195 × 148 mm. Zgodność z oprogramowaniem poprzednich T88V i T88VI ułatwia wymianę urządzenia, ale ustawienia sterownika i złącza nadal trzeba sprawdzić.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nZestawy z zasilaczem są alternatywą dla konfiguracji zasilanych przez PoweredUSB. Nie kupuj wszystkich elementów obu sposobów zasilania łącznie. Wymagania danego PN sprawdź w tabeli oraz w jego wyposażeniu.\n\nGwarancja na drukarkę wynosi 48 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T88VII to termiczna drukarka POS do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.\n\n## Wydajne drukowanie z portami dla infrastruktury POS\n\nRodzina obejmuje konfiguracje USB, Ethernet, RS-232 oraz PoweredUSB. Porty i sposób zasilania zależą od PN. Wersje z interfejsem wymiennym różnią się od konfiguracji ze stałym interfejsem. Wersje C31CJ57111, C31CJ57112, C31CJ57131 i C31CJ57132 mają wbudowany brzęczyk. Tabela pozwala dobrać je bez przypisywania wszystkich portów każdej drukarce.\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Rolka może mieć średnicę do 83 mm. Wymiary obudowy wynoszą 145 × 195 × 148 mm. Zgodność z oprogramowaniem poprzednich T88V i T88VI ułatwia wymianę urządzenia, ale ustawienia sterownika i złącza nadal trzeba sprawdzić.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nZestawy z zasilaczem są alternatywą dla konfiguracji zasilanych przez PoweredUSB. Nie kupuj wszystkich elementów obu sposobów zasilania łącznie. Wymagania danego PN sprawdź w tabeli oraz w jego wyposażeniu.\n\nGwarancja na drukarkę wynosi 48 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -544,7 +544,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK50151",
-        "name": "TM-m30III — USB, USB-C, Ethernet, biała",
+        "name": "TM-m30III — USB, USB-C, Ethernet, Wi-Fi + Bluetooth, biała",
         "attributes": {
           "Łączność bezprzewodowa": "Wi-Fi + Bluetooth",
           "Kolor obudowy": "Biała"
@@ -554,7 +554,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK50152",
-        "name": "TM-m30III — USB, USB-C, Ethernet, czarna",
+        "name": "TM-m30III — USB, USB-C, Ethernet, Wi-Fi + Bluetooth, czarna",
         "attributes": {
           "Łączność bezprzewodowa": "Wi-Fi + Bluetooth",
           "Kolor obudowy": "Czarna"
@@ -647,6 +647,10 @@ export const epsonPosProducts: Product[] = [
       {
         "name": "Średnica rolki",
         "value": "Do 83 mm"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "24 miesiące, serwis po dostarczeniu"
       }
     ],
     "applications": [
@@ -656,7 +660,7 @@ export const epsonPosProducts: Product[] = [
     "variants": [
       {
         "partNumber": "C31CK51141",
-        "name": "TM-m30III-H — USB, USB-C, Ethernet, biała",
+        "name": "TM-m30III-H — USB, USB-C, Ethernet, Wi-Fi + Bluetooth, biała",
         "attributes": {
           "Kolor obudowy": "Biała"
         },
@@ -665,7 +669,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK51142",
-        "name": "TM-m30III-H — USB, USB-C, Ethernet, czarna",
+        "name": "TM-m30III-H — USB, USB-C, Ethernet, Wi-Fi + Bluetooth, czarna",
         "attributes": {
           "Kolor obudowy": "Czarna"
         },
@@ -822,7 +826,7 @@ export const epsonPosProducts: Product[] = [
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
-    "priceFrom": 1417.4,
+    "priceFrom": 1488.26,
     "availability": "available",
     "images": [
       "/images/products/epson-tm-m30ii-s-2.webp",
@@ -949,7 +953,7 @@ export const epsonPosProducts: Product[] = [
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
-    "priceFrom": 1040.65,
+    "priceFrom": 1145.17,
     "availability": "available",
     "images": [
       "/images/products/epson-tm-u220iib-1.webp"
@@ -1055,9 +1059,9 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL27141",
-        "name": "TM-U220IIB — Ethernet, biała",
+        "name": "TM-U220IIB — Ethernet, USB Host (USB-A), biała",
         "attributes": {
-          "Interfejsy": "Ethernet",
+          "Interfejsy": "Ethernet, USB Host (USB-A)",
           "Kolor obudowy": "Biała"
         },
         "priceFrom": 1392.48,
@@ -1065,9 +1069,9 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL27142",
-        "name": "TM-U220IIB — Ethernet, ciemnoszara",
+        "name": "TM-U220IIB — Ethernet, USB Host (USB-A), ciemnoszara",
         "attributes": {
-          "Interfejsy": "Ethernet",
+          "Interfejsy": "Ethernet, USB Host (USB-A)",
           "Kolor obudowy": "Ciemnoszara"
         },
         "priceFrom": 1392.48,
@@ -1397,7 +1401,7 @@ export const epsonPosProducts: Product[] = [
     "variants": [
       {
         "partNumber": "C31CL25101",
-        "name": "TM-H6000VI — USB, RS-232, Ethernet, biała",
+        "name": "TM-H6000VI — USB, RS-232, Ethernet, bez MICR, biała",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Kolor obudowy": "Biała",
@@ -1409,7 +1413,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL25102",
-        "name": "TM-H6000VI — USB, RS-232, Ethernet, czarna",
+        "name": "TM-H6000VI — USB, RS-232, Ethernet, bez MICR, czarna",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Kolor obudowy": "Czarna",
@@ -1421,7 +1425,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL25111",
-        "name": "TM-H6000VI — USB, RS-232, Ethernet, biała",
+        "name": "TM-H6000VI — USB, RS-232, Ethernet, MICR, biała",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Kolor obudowy": "Biała",
@@ -1433,7 +1437,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL25112",
-        "name": "TM-H6000VI — USB, RS-232, Ethernet, czarna",
+        "name": "TM-H6000VI — USB, RS-232, Ethernet, MICR, czarna",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Kolor obudowy": "Czarna",
@@ -1445,7 +1449,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL25116",
-        "name": "TM-H6000VI — USB, Ethernet, PoweredUSB, czarna",
+        "name": "TM-H6000VI — USB, Ethernet, PoweredUSB, MICR, czarna",
         "attributes": {
           "Interfejsy": "USB, Ethernet, PoweredUSB",
           "Kolor obudowy": "Czarna",
@@ -1457,7 +1461,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CL25132",
-        "name": "TM-H6000VI — USB, RS-232, Ethernet, czarna",
+        "name": "TM-H6000VI — USB, RS-232, Ethernet, MICR + nadruk rewersu, czarna",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
           "Kolor obudowy": "Czarna",
@@ -1541,7 +1545,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "Rolka 76 / 80 mm oraz zgodne arkusze"
+        "value": "Rolka 58–83 mm (prowadnica 57, 69, 76 lub 82 mm); arkusze 68–230 × 68–297 mm"
       },
       {
         "name": "Szerokość druku",
@@ -1657,7 +1661,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "name": "Szerokość papieru",
-        "value": "Rolka 76 / 80 mm oraz zgodne arkusze"
+        "value": "Rolka 58–83 mm (prowadnica 57, 69, 76 lub 82 mm); arkusze 68–230 × 68–297 mm"
       },
       {
         "name": "Szerokość druku",
@@ -1735,7 +1739,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Epson TM-L100 — drukarka etykiet POS bez podkładu",
     "seoDescription": "Epson TM-L100: termiczna drukarka zgodnych etykiet samoprzylepnych bez podkładu do oznaczania zamówień. Sprawdź materiał, PN, ceny i akcesoria.",
     "shortDescription": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu. Służy między innymi do oznaczania zamówień i odbioru towaru.",
-    "description": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu. Służy między innymi do oznaczania zamówień i odbioru towaru.\n\n## Liner-free do zamówień i odbioru\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Nie stosuj dowolnej rolki samoprzylepnej. Drukarka ma rozdzielczość 203 dpi i mieści rolkę o średnicy do 102 mm. Parametry materiału trzeba dobrać do konkretnego zastosowania.\n\nOferowany PN C31CJ52103 ma USB, RS-232 i Ethernet oraz prędkość do 170 mm/s. Wersje C31CJ52111 i C31CJ52121 osiągają do 90 mm/s i mają Lightning; C31CJ52121 dodaje Bluetooth. Nie przenoś parametrów nowej konfiguracji na wszystkie PN rodziny.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nDobierz wyposażenie do wybranego PN. Sprawdź osobno dołączenie zasilacza, przewodu sieciowego i przewodu danych.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-m30III](/produkt/epson-tm-m30iii). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu. Służy między innymi do oznaczania zamówień i odbioru towaru.\n\n## Liner-free do zamówień i odbioru\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Nie stosuj dowolnej rolki samoprzylepnej. Drukarka ma rozdzielczość 203 dpi i mieści rolkę o średnicy do 102 mm. Parametry materiału trzeba dobrać do konkretnego zastosowania.\n\nWszystkie wersje drukują do 170 mm/s. Różnią się portami: C31CJ52103 ma USB, RS-232 i Ethernet, a C31CJ52111 ma USB, Ethernet i Lightning. C31CJ52121 ma dodatkowo Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nDobierz wyposażenie do wybranego PN. Sprawdź osobno dołączenie zasilacza, przewodu sieciowego i przewodu danych.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-m30III](/produkt/epson-tm-m30iii). Pozostałe urządzenia stacjonarne znajdziesz w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1775,7 +1779,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "name": "Prędkość druku",
-        "value": "Do 170 lub 90 mm/s — zależnie od PN"
+        "value": "Do 170 mm/s"
       },
       {
         "name": "Interfejsy",
@@ -1808,8 +1812,7 @@ export const epsonPosProducts: Product[] = [
         "name": "TM-L100 — USB, RS-232, Ethernet, czarna",
         "attributes": {
           "Interfejsy": "USB, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Prędkość druku": "170 mm/s"
+          "Łączność bezprzewodowa": "Brak"
         },
         "priceFrom": 1705.14,
         "availability": "available"
@@ -1819,19 +1822,17 @@ export const epsonPosProducts: Product[] = [
         "name": "TM-L100 — USB, Ethernet, Lightning, czarna",
         "attributes": {
           "Interfejsy": "USB, Ethernet, Lightning",
-          "Łączność bezprzewodowa": "Brak",
-          "Prędkość druku": "90 mm/s"
+          "Łączność bezprzewodowa": "Brak"
         },
         "priceFrom": 1776.19,
         "availability": "available"
       },
       {
         "partNumber": "C31CJ52121",
-        "name": "TM-L100 — USB, Ethernet, Lightning, czarna",
+        "name": "TM-L100 — USB, Ethernet, Lightning, Bluetooth, czarna",
         "attributes": {
           "Interfejsy": "USB, Ethernet, Lightning",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Prędkość druku": "90 mm/s"
+          "Łączność bezprzewodowa": "Bluetooth"
         },
         "priceFrom": 1882.76,
         "availability": "unavailable"
@@ -1999,7 +2000,7 @@ export const epsonPosProducts: Product[] = [
     "subcategoryIds": [],
     "manufacturerId": "epson",
     "priceFrom": 1593.91,
-    "availability": "unavailable",
+    "availability": "available",
     "images": [
       "/images/products/epson-tm-l90lf-2.webp",
       "/images/products/epson-tm-l90lf-1.webp",
@@ -2065,7 +2066,7 @@ export const epsonPosProducts: Product[] = [
         "name": "TM-L90LF — USB, RS-232, czarna",
         "attributes": {},
         "priceFrom": 1593.91,
-        "availability": "unavailable"
+        "availability": "available"
       }
     ],
     "compatibleAccessories": [],
@@ -2175,7 +2176,7 @@ export const epsonPosProducts: Product[] = [
     "variants": [
       {
         "partNumber": "C31CJ99101",
-        "name": "TM-P20II — USB, USB-C, czarna",
+        "name": "TM-P20II — USB, USB-C, Bluetooth, czarna",
         "attributes": {
           "Łączność bezprzewodowa": "Bluetooth",
           "Kolor obudowy": "Czarna"
@@ -2185,7 +2186,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CJ99106",
-        "name": "TM-P20II — USB, USB-C, biała",
+        "name": "TM-P20II — USB, USB-C, Bluetooth, biała",
         "attributes": {
           "Łączność bezprzewodowa": "Bluetooth",
           "Kolor obudowy": "Biała"
@@ -2195,7 +2196,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CJ99111",
-        "name": "TM-P20II — USB, USB-C, czarna",
+        "name": "TM-P20II — USB, USB-C, Wi-Fi, czarna",
         "attributes": {
           "Łączność bezprzewodowa": "Wi-Fi",
           "Kolor obudowy": "Czarna"
@@ -2309,7 +2310,7 @@ export const epsonPosProducts: Product[] = [
     "variants": [
       {
         "partNumber": "C31CK00101",
-        "name": "TM-P80II — USB, USB-C, czarna",
+        "name": "TM-P80II — USB, USB-C, Bluetooth, czarna",
         "attributes": {
           "Interfejsy": "USB, USB-C",
           "Łączność bezprzewodowa": "Bluetooth",
@@ -2321,7 +2322,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK00111",
-        "name": "TM-P80II — USB-C, czarna",
+        "name": "TM-P80II — USB-C, Wi-Fi, czarna",
         "attributes": {
           "Interfejsy": "USB-C",
           "Łączność bezprzewodowa": "Wi-Fi",
@@ -2333,7 +2334,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK00121",
-        "name": "TM-P80II — USB-C, czarna",
+        "name": "TM-P80II — USB-C, Bluetooth, gilotyna, czarna",
         "attributes": {
           "Interfejsy": "USB-C",
           "Łączność bezprzewodowa": "Bluetooth",
@@ -2345,7 +2346,7 @@ export const epsonPosProducts: Product[] = [
       },
       {
         "partNumber": "C31CK00131",
-        "name": "TM-P80II — USB-C, czarna",
+        "name": "TM-P80II — USB-C, Wi-Fi, gilotyna, czarna",
         "attributes": {
           "Interfejsy": "USB-C",
           "Łączność bezprzewodowa": "Wi-Fi",
@@ -2572,7 +2573,7 @@ export const epsonPosAccessories: Product[] = [
     ],
     "manufacturerId": "epson",
     "priceFrom": 171.23,
-    "availability": "unavailable",
+    "availability": "available",
     "images": [
       "/images/products/epson-ps-180-1.webp"
     ],
@@ -2843,7 +2844,7 @@ export const epsonPosAccessories: Product[] = [
     ],
     "manufacturerId": "epson",
     "priceFrom": 15.12,
-    "availability": "on-order",
+    "availability": "available",
     "images": [
       "/images/products/epson-erc32b-1.webp"
     ],
