@@ -95692,6 +95692,16 @@ Gwarancja producenta obejmuje dwa lata na urządzenie i rok na zasilacz.`,
   },
 ]
 
+// Akcesoria SUNMI trafiają do podkategorii stacji oraz etui i uchwytów według `subcategoryIds`
+// (nazwy SUNMI nie pasują do filtra nazw CipherLab w definicjach podkategorii).
+for (const subcategory of subcategories) {
+  const additions = sunmiAccessories.filter(product => subcategory.id !== 'akcesoria-do-terminali' && product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Nowe akcesoria Newland są dostępne także w właściwych podkategoriach katalogu.
 for (const subcategory of subcategories) {
   const additions = newlandMt95ProIiiAccessories.filter(product => product.subcategoryIds?.includes(subcategory.id))

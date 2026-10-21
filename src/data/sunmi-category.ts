@@ -30,7 +30,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
     'Kody — odróżnij dedykowany skaner od aparatu. Wariant bez modułu skanującego nie ma tego samego wyposażenia.',
     'Sieć — oferowany M3 działa przez Wi-Fi. Do pracy poza zasięgiem sieci lokalnej porównaj konfiguracje LTE.',
     'Wydruk — V3 i V3H używają papieru 58 mm. V3 Plus obsługuje 58–80 mm.',
-    'Wyposażenie — stacje, uchwyty i osłony dobierz do modelu i PN. Aplikacja oraz licencja są osobnymi elementami wdrożenia.',
+    'Wyposażenie — stacje, uchwyty i etui dobierz do modelu i PN. Aplikacja oraz licencja są osobnymi elementami wdrożenia.',
   ] },
   useCases: [
     { title: 'Magazyn i sala sprzedaży', description: 'L3 ma duży ekran do list towarów. L2Ks ułatwia wpisywanie ilości klawiaturą. L2H obsługuje OCR, a L2s Pro oferuje różne konfiguracje pamięci i skanera.' },
@@ -39,8 +39,8 @@ export const sunmiCategory: BrandCategoryRichContent = {
   ],
   uniqueInsights: { heading: 'Zgodność akcesoriów ma znaczenie', items: [
     { title: 'Uchwyt L3 wymaga tylnych POGO', text: 'C14004144 pasuje do oferowanych PN P09070073 i P09070030. Pozostałe PN L3 w ofercie nie mają tylnych styków POGO.' },
-    { title: 'Osłona a stacja L2H i L2s Pro', text: 'C14000144 wymaga zdjęcia osłony. C14004067 obsługuje terminale z osłoną i bez niej.' },
-    { title: 'V3 Plus ma osobne wyposażenie', text: 'Pasek na dłoń C20000086 pasuje do V3, V3H i V3 Plus. Stacja C14004112 i osłona C20000095 pasują do V3 i V3H.' },
+    { title: 'Etui a stacja L2H i L2s Pro', text: 'C14000144 wymaga zdjęcia etui. C14004067 obsługuje terminale w etui i bez etui.' },
+    { title: 'V3 Plus ma osobne wyposażenie', text: 'Pasek na dłoń C20000086 pasuje do V3, V3H i V3 Plus. Stacja C14004112 i etui C20000095 pasują do V3 i V3H.' },
   ] },
   comparisons: [
     { title: 'L2Ks czy terminal dotykowy?', content: '[L2Ks](/produkt/sunmi-l2ks) ma 23 fizyczne klawisze. Wybierz go do częstego wpisywania ilości. [L3](/produkt/sunmi-l3) ma większy ekran do rozbudowanych list i formularzy.' },
