@@ -96656,17 +96656,17 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "datalogic",
   "categoryId": "skanery-kodow-kreskowych",
   "name": "Skanery kodów kreskowych Datalogic",
-  "seoTitle": "Skanery i czytniki Datalogic — USB i bezprzewodowe",
-  "seoDescription": "Czytniki kodów kreskowych Datalogic: QuickScan, Gryphon, PowerScan i Magellan. Porównaj modele 1D/2D, USB i bezprzewodowe, ceny oraz zgodne akcesoria.",
-  "longDescription": "Czytniki kodów kreskowych Datalogic do kas, magazynów i produkcji. Porównaj QuickScan, Gryphon, PowerScan i Magellan: modele USB, bezprzewodowe, prezentacyjne oraz ladowe.",
+  "seoTitle": "Skanery i czytniki kodów kreskowych Datalogic — ceny od {cenaOd} zł",
+  "seoDescription": "Czytniki i skanery kodów kreskowych Datalogic od {cenaOd} zł netto: QuickScan, Gryphon, Heron i TD1100 do kasy i biura, PowerScan do magazynu i produkcji, Magellan prezentacyjne i ladowe. 1D, 2D, USB, Bluetooth i STAR.",
+  "longDescription": "Czytniki kodów kreskowych Datalogic do kas, magazynów i produkcji. Rodziny QuickScan, Gryphon, PowerScan i Magellan obejmują modele USB, bezprzewodowe, prezentacyjne oraz ladowe.",
   "faq": [
     {
       "question": "Który skaner Datalogic wybrać do kasy?",
-      "answer": "Do USB porównaj [QW2520](/produkt/datalogic-quickscan-qw2520) z matrycą VGA oraz [QD2590](/produkt/datalogic-quickscan-qd2590) z matrycą 1 MP i USB/RS-232. [GD4690](/produkt/datalogic-gryphon-gd4690) ma dwie matryce HP. Wybór zależy od kodów, odległości i interfejsu stanowiska."
+      "answer": "Do USB służą [QW2520](/produkt/datalogic-quickscan-qw2520) z matrycą VGA oraz [QD2590](/produkt/datalogic-quickscan-qd2590) z matrycą 1 MP i USB/RS-232. [GD4690](/produkt/datalogic-gryphon-gd4690) ma dwie matryce HP. Wybór zależy od kodów, odległości i interfejsu stanowiska."
     },
     {
       "question": "Czy każdy bezprzewodowy Datalogic ma Bluetooth?",
-      "answer": "Nie. QBT2500, GBT4600 i PBT9600 mają Bluetooth. Oferowane QM2500, GM4600 oraz PM9600 pracują w systemie STAR 433 MHz i wymagają zgodnej bazy."
+      "answer": "Nie. QBT2500, GBT4600 i PBT9600 mają Bluetooth. QM2500, GM4600 oraz PM9600 pracują w systemie STAR 433 MHz i wymagają zgodnej bazy."
     },
     {
       "question": "Czy skanery odczytują QR z telefonu?",
@@ -96682,7 +96682,7 @@ export const brandCategories: BrandCategory[] = [
     },
     {
       "question": "Czy skanery Datalogic obsługują RFID?",
-      "answer": "Przedstawione QuickScan i Gryphon to skanery optyczne. Do UHF potrzebny jest [uchwyt RFID](/uchwyty-rfid) lub [terminal RFID](/terminale-rfid)."
+      "answer": "QuickScan i Gryphon to skanery optyczne. Do UHF potrzebny jest [uchwyt RFID](/uchwyty-rfid) lub [terminal RFID](/terminale-rfid)."
     }
   ]
 },
