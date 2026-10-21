@@ -1,0 +1,90 @@
+{
+  "sunmi": [
+    {
+      "alt": "SUNMI L3 — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-l3-front.webp&w=3840&q=75",
+      "transform": "matrix(0.739884, 0, 0, 0.739884, -0.0509244, 0.050923)"
+    },
+    {
+      "alt": "SUNMI L2Ks — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-l2ks-front.webp&w=3840&q=75",
+      "transform": "matrix(0.743706, 0, 0, 0.743706, 0.0511874, 0.051186)"
+    },
+    {
+      "alt": "SUNMI L2H — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-l2h-front.webp&w=3840&q=75",
+      "transform": "matrix(0.744667, 0, 0, 0.744667, 0.0512536, 0.0512522)"
+    },
+    {
+      "alt": "SUNMI L2s Pro — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-l2s-pro-front.webp&w=3840&q=75",
+      "transform": "matrix(0.744667, 0, 0, 0.744667, 0.0512536, 0.0512522)"
+    },
+    {
+      "alt": "SUNMI M3 — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-m3-front.webp&w=3840&q=75",
+      "transform": "matrix(0.753927, 0, 0, 0.753927, -0.103782, 0.311337)"
+    },
+    {
+      "alt": "SUNMI V3 — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-v3-front.webp&w=3840&q=75",
+      "transform": "matrix(0.787853, 0, 0, 0.787853, -0.0691879, -1.79884)"
+    },
+    {
+      "alt": "SUNMI V3H — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-v3h-front.webp&w=3840&q=75",
+      "transform": "matrix(0.754916, 0, 0, 0.754916, -0.132591, 0)"
+    },
+    {
+      "alt": "SUNMI V3 Plus — widok urządzenia bez opcjonalnej stacji",
+      "field": {
+        "h": 220.2421875,
+        "w": 293.6640625
+      },
+      "src": "/_next/image?url=%2Fimages%2Fproducts%2Fsunmi-v3-plus-front.webp&w=3840&q=75",
+      "transform": "matrix(0.824329, 0, 0, 0.824329, 0.0709207, 0.141838)"
+    }
+  ],
+  "reference": [
+    {
+      "alt": "CipherLab RS20 — widok z przodu",
+      "h": 220.2421875,
+      "transform": "matrix(0.8, 0, 0, 0.8, 0.330372, 0)",
+      "w": 293.6640625
+    },
+    {
+      "alt": "CipherLab RS36 — widok z przodu",
+      "h": 220.2421875,
+      "transform": "matrix(0.73941, 0, 0, 0.73941, 0, 0)",
+      "w": 293.6640625
+    }
+  ]
+}

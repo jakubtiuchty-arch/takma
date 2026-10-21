@@ -58,16 +58,16 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const manufacturer = getManufacturerById(product.manufacturerId)
   const inRFQ = mounted ? isInCart(product.id) : false
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
-  const placeholderLogo = product.manufacturerId === 'brady' && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
+  const placeholderLogo = ['brady', 'sunmi'].includes(product.manufacturerId) && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
   // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
   const datalogicScannerImage = /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id) || product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-') || product.id.startsWith('datalogic-powerscan-') || product.id.startsWith('datalogic-heron-') || /^datalogic-td11/.test(product.id) || product.id.startsWith('datalogic-handheld-') || product.id.startsWith('datalogic-magellan-')
   const datalogicHandheldImage = datalogicScannerImage && product.categoryId === 'skanery-kodow-kreskowych'
   const bixolonLabelImage = /^bixolon-(?:xd3-|xd5-40(?:d|t|iid|iit)$|xt3-|xt5-40$|slp-|xl5-|xq-|usb-|ser-|xm7-|spp-[lcr]|srp-|rbc-|rmb-|pbd-|pqc-|pbp-|pbs-|pic-|plc-|pcc-|pbl-)/.test(product.id)
   const epsonPosImage = (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id)
-  const cipherlabImage = product.manufacturerId === 'cipherlab'
-  const uniformGridImage = cipherlabImage || product.uniformImage || epsonPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
-  const gridImageFraction = cipherlabImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : epsonPosImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
+  const standardMobileImage = ['cipherlab', 'sunmi'].includes(product.manufacturerId)
+  const uniformGridImage = standardMobileImage || product.uniformImage || epsonPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
+  const gridImageFraction = standardMobileImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : epsonPosImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&
@@ -174,7 +174,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           {hasRealImage ? (
             <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" style={getProductImageFrameStyle(product.images[0])} sizes="96px" />
           ) : placeholderLogo ? (
-            <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 h-auto grayscale opacity-30" />
+            <Image src={placeholderLogo} alt={`${manufacturer?.name} — zdjęcie akcesorium niedostępne`} width={200} height={38} className="w-3/5 h-auto grayscale opacity-30" />
           ) : (
             <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
           )}
@@ -292,7 +292,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         {hasRealImage ? (
           <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={uniformGridImage ? getUniformProductImageStyle(product.images[0], 4 / 3, gridImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : placeholderLogo ? (
-          <Image src={placeholderLogo} alt="Brady — zdjęcie akcesorium niedostępne" width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
+          <Image src={placeholderLogo} alt={`${manufacturer?.name} — zdjęcie akcesorium niedostępne`} width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
         ) : (
           <span className="text-gray-300 text-sm group-hover:text-primary-500 transition-colors">IMG</span>
         )}

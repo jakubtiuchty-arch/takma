@@ -1,3 +1,4 @@
+import { sunmiProducts, sunmiAccessories } from './sunmi-products'
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
@@ -873,7 +874,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne akcesoria Zebra do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Baterie PowerPrecision+, stacje dokujące 1/5-slot, ładowarki, etui ochronne, uchwyty pistoletowe, kable i zasilacze. Ceny netto B2B.',
     longDescription: 'Kompletna oferta oryginalnych akcesoriów Zebra do terminali mobilnych serii MC i TC. Baterie PowerPrecision+ z diagnostyką i warm swap (3500–7000 mAh). Stacje dokujące ShareCradle 1-slot i 5-slot z opcjonalnym Ethernet. Ładowarki baterii 4-slot i 20-slot do zarządzania zapasowymi akumulatorami. Etui ochronne rubber boot, uchwyty pistoletowe trigger handle, kabury z klipsem, paski na rękę i smycze. Zasilacze sieciowe 50W/108W i kable zasilające. Wszystkie akcesoria z gwarancją producenta i pełną kompatybilnością.',
     icon: 'package',
-    productIds: [...cipherlabAccessories.map(p => p.id),
+    productIds: [...sunmiAccessories.map(p => p.id), ...cipherlabAccessories.map(p => p.id),
       'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
       'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
       'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',
@@ -95743,6 +95744,8 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...sunmiProducts,
+  ...sunmiAccessories,
   ...cipherlabProducts,
   ...cipherlabAccessories,
   ...epsonPosProducts,
@@ -96277,6 +96280,35 @@ export function getProductsByTags(tags: ProductTag[]): Product[] {
 // ============================================
 
 export const brandCategories: BrandCategory[] = [
+{
+  "id": "terminale-sunmi",
+  "slug": "terminale-sunmi",
+  "manufacturerId": "sunmi",
+  "categoryId": "terminale-mobilne",
+  "name": "Terminale mobilne SUNMI",
+  "seoTitle": "Terminale SUNMI — kolektory i terminale z drukarką",
+  "seoDescription": "Terminale SUNMI do magazynu, sklepu i gastronomii. Porównaj L3, L2Ks, L2H, L2s Pro, M3 i V3 z drukarką. Europejskie PN, ceny i akcesoria.",
+  "longDescription": "Terminale SUNMI do pracy z towarem i obsługi klienta. Wybierz kolektor serii L, M3 do aplikacji gastronomicznej albo V3 z wbudowaną drukarką.",
+  "detailedDescription": "Do przyjęć i kompletacji porównaj [SUNMI L3](/produkt/sunmi-l3), [L2H](/produkt/sunmi-l2h) oraz [L2s Pro](/produkt/sunmi-l2s-pro). Skaner SS1111, SE4100, SE4710 lub SE4770 dobierz według PN. Wersja bez osobnego modułu skanującego nie ma tego samego wyposażenia. [L2Ks](/produkt/sunmi-l2ks) ma fizyczną klawiaturę do wpisywania ilości i lokalizacji.\n\nDo obsługi zamówień przez Wi-Fi służy [M3](/produkt/sunmi-m3). Oferowany PN ma Android 14 z GMS EDLA, pamięć 3/32 GB i nie ma drukarki ani modemu 4G. Do wydruków przy kliencie porównaj [V3](/produkt/sunmi-v3) z drukarką 58 mm, [V3H](/produkt/sunmi-v3h) z pamięcią 4/64 GB oraz [V3 Plus](/produkt/sunmi-v3-plus) z drukarką 80 mm i Wi-Fi 6E.\n\nPrzed wyborem sprawdź wymagania aplikacji, dostępność GMS, łączność i zawartość zestawu. Aplikacja sprzedażowa lub magazynowa wymaga osobnej licencji. Wbudowana drukarka termiczna nie jest polskim urządzeniem fiskalnym. NFC nie oznacza gotowej obsługi płatności ani czytnika UHF RFID.\n\nStacje, osłony i uchwyty dobieraj do modelu oraz konkretnego PN. Uchwyt L3 wymaga tylnych styków POGO. Stacja C14000144 do L2H i L2s Pro wymaga zdjęcia osłony. Porównanie innych marek znajdziesz w kategorii [terminale mobilne](/terminale-mobilne).",
+  "faq": [
+    {
+      "question": "Który SUNMI ma klawiaturę?",
+      "answer": "L2Ks ma ekran 4 cale i 23 fizyczne klawisze. Wybierz skaner oraz pamięć według PN."
+    },
+    {
+      "question": "Czy SUNMI V3 jest drukarką fiskalną?",
+      "answer": "Nie. Wbudowana drukarka termiczna drukuje dane ze zgodnej aplikacji. Nie zastępuje polskiego urządzenia fiskalnego."
+    },
+    {
+      "question": "Czy wszystkie terminale SUNMI mają skaner kodów?",
+      "answer": "Nie. Niektóre PN nie mają osobnego modułu skanującego. W tabeli odróżniono je od wersji z modułem 1D/2D."
+    },
+    {
+      "question": "Czy terminal SUNMI zawiera program do sprzedaży?",
+      "answer": "Nie. Aplikację i licencję dobiera się osobno. Sprawdź wersję Androida, GMS i wymagania programu przed wyborem PN."
+    }
+  ]
+},
 {
   "id": "terminale-cipherlab",
   "slug": "terminale-cipherlab",

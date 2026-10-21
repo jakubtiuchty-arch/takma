@@ -163,7 +163,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Data z wpisu treści, jeśli jest — inaczej wspólna data statyczna.
   const brandCategoryPages: MetadataRoute.Sitemap = brandCategories.map((bc) => {
-    const updated = bc.slug === 'drukarki-etykiet-bixolon' ? '2026-10-21' : brandCategoryContent[bc.slug]?.updatedAt
+    const updated = ['drukarki-etykiet-bixolon', 'terminale-sunmi'].includes(bc.slug) ? '2026-10-21' : brandCategoryContent[bc.slug]?.updatedAt
     return {
       url: `${baseUrl}/${bc.slug}`,
       lastModified: updated ? new Date(updated) : lastUpdated,

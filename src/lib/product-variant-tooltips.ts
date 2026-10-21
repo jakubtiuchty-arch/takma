@@ -3,7 +3,7 @@ import { variantAttributeTooltips } from '@/data/variant-attribute-tooltips'
 
 /** Only explain connections actually offered on the current product. */
 export function getProductVariantTooltips(product: Product): Record<string, string> | undefined {
-  const scoped = ['bixolon', 'epson', 'cipherlab'].includes(product.manufacturerId)
+  const scoped = ['bixolon', 'epson', 'cipherlab', 'sunmi'].includes(product.manufacturerId)
     || (product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych')
     || product.subcategoryIds?.some(id => id.includes('rfid')) || /\bRFID\b/i.test(product.name)
   if (!scoped) return product.variantAttributeTooltips

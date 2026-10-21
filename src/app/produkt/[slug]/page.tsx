@@ -245,9 +245,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
   const bixolonLabelProduct = (product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')) || (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId))
-  const cipherlabTerminal = product.manufacturerId === 'cipherlab' && product.categoryId === 'terminale-mobilne'
+  const catalogMobileTerminal = ['cipherlab', 'sunmi'].includes(product.manufacturerId) && product.categoryId === 'terminale-mobilne'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const rfidTextLinks = product.manufacturerId === 'cipherlab' || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
+  const rfidTextLinks = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
@@ -618,7 +618,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       downloadUrl: `https://www.takma.com.pl/pobierz/${product.slug}`,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'PLN', availability: 'https://schema.org/InStock' },
     } : {}),
-    ...((cipherlabTerminal || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
+    ...((catalogMobileTerminal || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
     name: product.name,
     description: product.shortDescription,
     image: product.images.map(absoluteProductImageUrl),
@@ -746,7 +746,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://www.takma.com.pl/produkt/${product.slug}` })
 
   const breadcrumbJsonLd = {
-    ...((cipherlabTerminal || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
+    ...((catalogMobileTerminal || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: breadcrumbItems,
@@ -769,7 +769,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       name: product.name,
       url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
-    ...((cipherlabTerminal || datalogicScannerProduct || bixolonLabelProduct) ? {
+    ...((catalogMobileTerminal || datalogicScannerProduct || bixolonLabelProduct) ? {
       '@id': `https://www.takma.com.pl/produkt/${product.slug}#webpage`,
       mainEntity: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#${liveOffers && (product.variants?.length ?? 0) > 1 ? 'product-group' : 'product'}` },
       breadcrumb: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` },
@@ -1014,7 +1014,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
           {liveOffers && <div className="order-first min-w-0 lg:col-start-2 lg:row-start-1">{productHeading}</div>}
           {/* Gallery */}
           <div className={liveOffers ? "min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2" : "min-w-0"}>
-            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} frameVisibleFraction={cipherlabTerminal ? 0.84 : bixolonLabelProduct ? 0.78 : undefined} />
+            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} frameVisibleFraction={catalogMobileTerminal ? 0.84 : bixolonLabelProduct ? 0.78 : undefined} />
           </div>
 
           {/* Product info */}

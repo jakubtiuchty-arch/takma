@@ -1936,3 +1936,16 @@ for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "mobilne-dru
     description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,
   }))
 }
+
+categoryFilters['terminale-sunmi'] = [
+  { specKey: 'Ekran', label: 'Ekran', description: 'Przekątna ekranu terminala. Większy ekran mieści więcej danych; L2Ks ma dodatkowo fizyczną klawiaturę.', derived: [
+    { value: '4 cale', pattern: '^4 cale', specs: ['Ekran'] },
+    { value: '5,5 cala', pattern: '^5,5', specs: ['Ekran'] },
+    { value: '6,75 cala', pattern: '^6,75', specs: ['Ekran'] },
+  ] },
+  { specKey: 'Drukarka', label: 'Wbudowana drukarka', description: 'Drukarka termiczna w terminalu drukuje dokumenty ze zgodnej aplikacji. Nie jest polskim urządzeniem fiskalnym. Szerokość dotyczy papieru.', derived: [
+    { value: 'Papier 58 mm', pattern: 'papier 58 mm', specs: ['Drukarka'] },
+    { value: 'Papier 58–80 mm', pattern: '58–80 mm', specs: ['Drukarka'] },
+  ] },
+  { specKey: 'Klasa szczelności', label: 'Ochrona obudowy', description: 'IP65 chroni przed pyłem i strumieniami wody. IP67 i IP68 obejmują określone warunki zanurzenia. Klasa IP nie określa odporności na upadki.' },
+]

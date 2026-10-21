@@ -81,6 +81,38 @@ export async function middleware(request: NextRequest) {
 
     // Lista slugów istniejących na nowej stronie (nie przekierowuj ich!)
     const existingSlugs = new Set([
+      // Terminale SUNMI i ich zgodne akcesoria.
+      'sunmi-l3',
+      'sunmi-l2ks',
+      'sunmi-l2h',
+      'sunmi-l2s-pro',
+      'sunmi-m3',
+      'sunmi-v3',
+      'sunmi-v3h',
+      'sunmi-v3-plus',
+      'sunmi-c02020013',
+      'sunmi-c20000106',
+      'sunmi-c11000007',
+      'sunmi-c11000003',
+      'sunmi-c14004127',
+      'sunmi-c14004131',
+      'sunmi-c14004143',
+      'sunmi-c14004144',
+      'sunmi-c02004005',
+      'sunmi-c11000001',
+      'sunmi-c14000157',
+      'sunmi-c14000159',
+      'sunmi-c14004014',
+      'sunmi-c14000144',
+      'sunmi-c14004067',
+      'sunmi-c20000001',
+      'sunmi-c20000003',
+      'sunmi-c20000026',
+      'sunmi-c14004112',
+      'sunmi-c20000060',
+      'sunmi-c20000086',
+      'sunmi-c20000095',
+
       // Nowe drukarki POS Epson i ich akcesoria.
       'cipherlab-rs20',
       'cipherlab-rs36',
