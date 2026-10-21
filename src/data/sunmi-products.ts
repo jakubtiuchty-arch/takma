@@ -7,9 +7,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L3",
     "seoH1": "SUNMI L3",
     "seoTitle": "SUNMI L3 — terminal Android 14 z ekranem 6,75 cala",
-    "seoDescription": "Terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI L3 z Androidem 14, LTE i ekranem 6,75 cala. Porównaj pamięć, skanery SS1111 i SE4710 oraz wersje bez skanera. Sprawdź PN, ceny i akcesoria.",
     "shortDescription": "Terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.",
-    "description": "Terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.\n\n## Duży ekran do przyjęć i kompletacji\n\nSUNMI L3 wyświetla listy towarów na ekranie 720 × 1600 pikseli. Boczne przyciski uruchamiają odczyt w konfiguracjach z modułem skanującym. Warianty różnią się pamięcią, skanerem i złączami do wyposażenia.\n\nSS1111 i SE4710 odczytują kody 1D i 2D. PN P09070015 oraz P09070072 nie mają osobnego modułu skanującego. Aparat nie zastępuje go przy intensywnej kompletacji. Wersje P09070073 i P09070030 mają tylne styki POGO do zgodnego uchwytu. P09070052 dodaje obsługę PSAM.\n\nObudowa ma klasę IP68, a bateria pojemność 5000 mAh. Wymiana hot swap zależy od konfiguracji; jest dostępna w P09070015, P09070073, P09070030 i P09070052. NFC służy do odczytu zgodnych nośników zbliżeniowych. Oferowane tutaj PN nie obejmują wersji UHF RFID.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L2Ks](/produkt/sunmi-l2ks), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI L3 — terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.\n\n## Duży ekran do przyjęć i kompletacji\n\nSUNMI L3 wyświetla listy towarów na ekranie 720 × 1600 pikseli. Boczne przyciski uruchamiają odczyt w konfiguracjach z modułem skanującym. Warianty różnią się pamięcią, skanerem i złączami do wyposażenia.\n\nSS1111 i SE4710 odczytują kody 1D i 2D. PN P09070015 oraz P09070072 nie mają osobnego modułu skanującego. Aparat nie zastępuje go przy intensywnej kompletacji. Wersje P09070073 i P09070030 mają tylne styki POGO do zgodnego uchwytu. P09070052 dodaje obsługę PSAM.\n\nObudowa ma klasę IP68, a bateria pojemność 5000 mAh. Wymiana hot swap zależy od konfiguracji; jest dostępna w P09070015, P09070073, P09070030 i P09070052. NFC służy do odczytu zgodnych nośników zbliżeniowych. Oferowane tutaj PN nie obejmują wersji UHF RFID.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L2Ks](/produkt/sunmi-l2ks), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -55,7 +55,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09070015",
-        "name": "SUNMI L3",
+        "name": "P09070015, 6/128 GB, Bez osobnego modułu, Podstawowe",
         "attributes": {
           "Pamięć": "6/128 GB",
           "Skaner": "Bez osobnego modułu",
@@ -66,7 +66,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09070073",
-        "name": "SUNMI L3",
+        "name": "P09070073, 4/64 GB, SS1111, Tylne POGO",
         "attributes": {
           "Pamięć": "4/64 GB",
           "Skaner": "SS1111",
@@ -77,7 +77,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09070030",
-        "name": "SUNMI L3",
+        "name": "P09070030, 6/128 GB, SE4710, Tylne POGO",
         "attributes": {
           "Pamięć": "6/128 GB",
           "Skaner": "SE4710",
@@ -88,7 +88,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09070036",
-        "name": "SUNMI L3",
+        "name": "P09070036, 6/128 GB, SS1111, Podstawowe",
         "attributes": {
           "Pamięć": "6/128 GB",
           "Skaner": "SS1111",
@@ -99,7 +99,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09070052",
-        "name": "SUNMI L3",
+        "name": "P09070052, 6/128 GB, SS1111, PSAM",
         "attributes": {
           "Pamięć": "6/128 GB",
           "Skaner": "SS1111",
@@ -110,7 +110,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09070072",
-        "name": "SUNMI L3",
+        "name": "P09070072, 3/32 GB, Bez osobnego modułu, Podstawowe",
         "attributes": {
           "Pamięć": "3/32 GB",
           "Skaner": "Bez osobnego modułu",
@@ -153,9 +153,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Przyjęcia i kompletacja towaru",
+      "Odczyt kodów w wersjach ze skanerem"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Który SUNMI L3 obsługuje uchwyt spustowy?",
+        "answer": "Uchwyt C14004144 wymaga tylnych styków POGO. Z oferowanych tutaj konfiguracji pasują P09070073 i P09070030."
+      },
+      {
+        "question": "Czy każdy SUNMI L3 ma skaner?",
+        "answer": "Nie. P09070015 i P09070072 nie mają osobnego modułu skanującego. Pozostałe oferowane wersje mają SS1111 lub SE4710 według tabeli PN."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -165,9 +175,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2Ks",
     "seoH1": "SUNMI L2Ks",
     "seoTitle": "SUNMI L2Ks — kolektor z klawiaturą i skanerem 2D",
-    "seoDescription": "Kolektor danych z klawiaturą, ekranem 4 cale i skanerem 1D/2D. Android 11, bateria 5000 mAh i obudowa IP68 do pracy magazynowej. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI L2Ks z 23 klawiszami do wpisywania ilości i lokalizacji. Porównaj pamięć, skanery SE4770 i SS1111 oraz wersje GMS. Sprawdź PN i ceny.",
     "shortDescription": "Kolektor danych z klawiaturą, ekranem 4 cale i skanerem 1D/2D. Android 11, bateria 5000 mAh i obudowa IP68 do pracy magazynowej.",
-    "description": "Kolektor danych z klawiaturą, ekranem 4 cale i skanerem 1D/2D. Android 11, bateria 5000 mAh i obudowa IP68 do pracy magazynowej.\n\n## Fizyczne klawisze do ilości i lokalizacji\n\nSUNMI L2Ks łączy ekran 800 × 480 pikseli z 23 fizycznymi klawiszami. Ułatwia wpisywanie ilości, numerów i lokalizacji podczas przyjęć oraz wydań. Boczne przyciski uruchamiają skaner.\n\nWybierz SE4770 w PN P09044025 albo SUNMI SS1111 w P09044063 i P09044064. Wszystkie odczytują kody 1D i 2D. Konfiguracja 2/16 GB nie ma GMS ani NFC. Wersje 4/32 GB mają GMS i NFC. Nie zakładaj obsługi eSIM w konfiguracjach GMS.\n\nTerminal łączy się przez Wi-Fi i 4G LTE. Wymienna bateria ma 5000 mAh. Obudowa spełnia IP68. Odporność na upadki wynosi 1,8 m w warunkach testowych. Uchwyt spustowy i stacje są wyposażeniem opcjonalnym.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI L2Ks — kolektor danych z klawiaturą, ekranem 4 cale i skanerem 1D/2D. Android 11, bateria 5000 mAh i obudowa IP68 do pracy magazynowej.\n\n## Fizyczne klawisze do ilości i lokalizacji\n\nSUNMI L2Ks łączy ekran 800 × 480 pikseli z 23 fizycznymi klawiszami. Ułatwia wpisywanie ilości, numerów i lokalizacji podczas przyjęć oraz wydań. Boczne przyciski uruchamiają skaner.\n\nWybierz SE4770 w PN P09044025 albo SUNMI SS1111 w P09044063 i P09044064. Wszystkie odczytują kody 1D i 2D. Konfiguracja 2/16 GB nie ma GMS ani NFC. Wersje 4/32 GB mają GMS i NFC. Nie zakładaj obsługi eSIM w konfiguracjach GMS.\n\nTerminal łączy się przez Wi-Fi i 4G LTE. Wymienna bateria ma 5000 mAh. Obudowa spełnia IP68. Odporność na upadki wynosi 1,8 m w warunkach testowych. Uchwyt spustowy i stacje są wyposażeniem opcjonalnym.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -217,7 +227,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09044025",
-        "name": "SUNMI L2Ks",
+        "name": "P09044025, 4/32 GB, SE4770, Tak, GMS",
         "attributes": {
           "Pamięć": "4/32 GB",
           "Skaner": "SE4770",
@@ -229,7 +239,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09044063",
-        "name": "SUNMI L2Ks",
+        "name": "P09044063, 2/16 GB, Moduł 1D/2D, Brak, SUNMI OS",
         "attributes": {
           "Pamięć": "2/16 GB",
           "Skaner": "Moduł 1D/2D",
@@ -241,7 +251,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09044064",
-        "name": "SUNMI L2Ks",
+        "name": "P09044064, 4/32 GB, Moduł 1D/2D, Tak, GMS EDLA",
         "attributes": {
           "Pamięć": "4/32 GB",
           "Skaner": "Moduł 1D/2D",
@@ -282,9 +292,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Wpisywanie ilości i lokalizacji klawiaturą",
+      "Przyjęcia i wydania magazynowe"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Czy SUNMI L2Ks ma fizyczną klawiaturę?",
+        "answer": "Tak. L2Ks ma 23 fizyczne klawisze oraz ekran dotykowy 4 cale. Klawiatura służy między innymi do wpisywania ilości i lokalizacji."
+      },
+      {
+        "question": "Który L2Ks ma usługi Google?",
+        "answer": "P09044025 i P09044064 mają GMS oraz NFC. P09044063 z pamięcią 2/16 GB nie ma GMS ani NFC."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -294,9 +314,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2H",
     "seoH1": "SUNMI L2H",
     "seoTitle": "SUNMI L2H — terminal magazynowy z Wi-Fi 6 i 4G",
-    "seoDescription": "Terminal z ekranem 5,5 cala, skanerem 2D i pamięcią 4/64 GB. Wi-Fi 6, 4G LTE, bateria 5000 mAh oraz obudowa IP67. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI L2H do odczytu kodów 1D/2D i OCR. Ekran 5,5 cala, pamięć 4/64 GB, Wi-Fi 6 i LTE. Sprawdź dostępne PN, ceny i zgodne stacje ładujące.",
     "shortDescription": "Terminal z ekranem 5,5 cala, skanerem 2D i pamięcią 4/64 GB. Wi-Fi 6, 4G LTE, bateria 5000 mAh oraz obudowa IP67.",
-    "description": "Terminal z ekranem 5,5 cala, skanerem 2D i pamięcią 4/64 GB. Wi-Fi 6, 4G LTE, bateria 5000 mAh oraz obudowa IP67.\n\n## Skanowanie i dokumentowanie dostaw\n\nSUNMI L2H służy do przyjęć, inwentaryzacji i pracy w dostawach. Ekran 1440 × 720 pikseli obsługuje aplikację firmy, a osobny moduł skanujący odczytuje kody 1D i 2D. Aparat tylny 16 MP pozwala dokumentować towar. Aparat przedni ma 5 MP.\n\nWi-Fi 6 obsługuje pracę w zgodnej sieci lokalnej. Modem 4G LTE zapewnia łączność poza zasięgiem Wi-Fi, przy aktywnej usłudze operatora. Terminal ma NFC i Bluetooth 5.1. Pamięć oferowanych konfiguracji wynosi 4 GB RAM i 64 GB Flash.\n\nWymienna bateria ma 5000 mAh. Urządzenie ma także baterię pomocniczą 60 mAh. Obudowa spełnia IP67, a odporność na upadki wynosi 1,5 m w warunkach testowych. Zestawy obejmują ładowarkę USB i przewód europejski. Dobierz stację do pracy z osłoną albo bez niej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L3](/produkt/sunmi-l3), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI L2H — terminal z ekranem 5,5 cala, skanerem 2D i pamięcią 4/64 GB. Wi-Fi 6, 4G LTE, bateria 5000 mAh oraz obudowa IP67.\n\n## Skanowanie i dokumentowanie dostaw\n\nSUNMI L2H służy do przyjęć, inwentaryzacji i pracy w dostawach. Ekran 1440 × 720 pikseli obsługuje aplikację firmy, a osobny moduł skanujący odczytuje kody 1D i 2D. Aparat tylny 16 MP pozwala dokumentować towar. Aparat przedni ma 5 MP.\n\nWi-Fi 6 obsługuje pracę w zgodnej sieci lokalnej. Modem 4G LTE zapewnia łączność poza zasięgiem Wi-Fi, przy aktywnej usłudze operatora. Terminal ma NFC i Bluetooth 5.1. Pamięć oferowanych konfiguracji wynosi 4 GB RAM i 64 GB Flash.\n\nWymienna bateria ma 5000 mAh. Urządzenie ma także baterię pomocniczą 60 mAh. Obudowa spełnia IP67, a odporność na upadki wynosi 1,5 m w warunkach testowych. Zestawy obejmują ładowarkę USB i przewód europejski. Dobierz stację do pracy z osłoną albo bez niej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L3](/produkt/sunmi-l3), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -350,14 +370,14 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09030059",
-        "name": "SUNMI L2H",
+        "name": "P09030059",
         "attributes": {},
         "priceFrom": 2819.92,
         "availability": "available"
       },
       {
         "partNumber": "P09030061",
-        "name": "SUNMI L2H",
+        "name": "P09030061",
         "attributes": {},
         "priceFrom": 2819.92,
         "availability": "unavailable"
@@ -393,9 +413,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Odczyt kodów towarów i OCR",
+      "Praca magazynowa z aplikacją Android"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Jaką pamięć ma oferowany SUNMI L2H?",
+        "answer": "P09030059 i P09030061 mają 4 GB RAM oraz 64 GB pamięci Flash. Obydwa obsługują odczyt kodów 1D/2D i OCR."
+      },
+      {
+        "question": "Czy L2H można ładować w osłonie?",
+        "answer": "Stacja C14000144 wymaga zdjęcia osłony. Stacja C14004067 obsługuje terminale z osłoną i bez niej."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -405,9 +435,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2s Pro",
     "seoH1": "SUNMI L2s Pro",
     "seoTitle": "SUNMI L2s Pro — terminal 5,5 cala ze skanerem 1D/2D",
-    "seoDescription": "Dotykowy terminal 5,5 cala do sklepu i magazynu. Wersje SS1111, SE4100 oraz bez modułu skanującego. Bateria 5000 mAh i IP68. Sprawdź PN i cenę.",
-    "shortDescription": "Dotykowy terminal 5,5 cala do sklepu i magazynu. Wersje SS1111, SE4100 oraz bez modułu skanującego. Bateria 5000 mAh i IP68.",
-    "description": "Dotykowy terminal 5,5 cala do sklepu i magazynu. Wersje SS1111, SE4100 oraz bez modułu skanującego. Bateria 5000 mAh i IP68.\n\n## Dobierz moduł skanujący do pracy z towarem\n\nSUNMI L2s Pro obsługuje aplikacje mobilne na ekranie 1440 × 720 pikseli. Wersje z SS1111 albo SE4100 odczytują kody 1D i 2D. P09064024 jest konfiguracją bez osobnego modułu skanującego.\n\nPN P09064085 ma Android 12 z GMS EDLA i pamięć 3/32 GB. W pozostałych konfiguracjach środowisko aplikacji oraz GMS należy dobrać według PN. Warianty z SE4100 mają pamięć 4/64 GB. Wyposażenie wybierz według numeru PN.\n\nŁączność obejmuje Wi-Fi 5, 4G LTE i NFC. Bateria ma 5000 mAh, a obudowa klasę IP68. Odporność na upadki wynosi 1,5 m w warunkach testowych. Aparat tylny 13 MP umożliwia zapisanie stanu przesyłki. Stacja C14000144 wymaga zdjęcia osłony ochronnej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "seoDescription": "SUNMI L2s Pro do pracy z towarem. Ekran 5,5 cala, IP68 i bateria 5000 mAh. Porównaj pamięć 3/32 i 4/64 GB, skanery, GMS oraz ceny według PN.",
+    "shortDescription": "Dotykowy terminal 5,5 cala do sklepu i magazynu. Wersje ze skanerem 1D/2D lub bez osobnego modułu. Pamięć 3/32 albo 4/64 GB, bateria 5000 mAh i IP68.",
+    "description": "SUNMI L2s Pro to dotykowy terminal 5,5 cala do sklepu i magazynu. Wybierz pamięć 3/32 lub 4/64 GB i konfigurację skanera.\n\n## Dobierz moduł skanujący do pracy z towarem\n\nSUNMI L2s Pro obsługuje aplikacje mobilne na ekranie 1440 × 720 pikseli. Wersje z dedykowanym skanerem odczytują kody 1D i 2D. P09064024 jest konfiguracją bez osobnego modułu skanującego.\n\nPN P09064085 ma Android 12 z GMS EDLA i pamięć 3/32 GB. W pozostałych konfiguracjach środowisko aplikacji oraz GMS należy dobrać według PN. P09064007 i P09064014 mają pamięć 4/64 GB. P09064024 i P09064080 mają 3/32 GB. Wyposażenie wybierz według numeru PN.\n\nŁączność obejmuje Wi-Fi 5, 4G LTE i NFC. Bateria ma 5000 mAh, a obudowa klasę IP68. Odporność na upadki wynosi 1,5 m w warunkach testowych. Aparat tylny 13 MP umożliwia zapisanie stanu przesyłki. Stacja C14000144 wymaga zdjęcia osłony ochronnej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -435,7 +465,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Skaner kodów",
-        "value": "SS1111, SE4100 lub bez modułu — według PN"
+        "value": "Dedykowany moduł 1D/2D lub bez modułu — według PN"
       },
       {
         "name": "Łączność",
@@ -453,8 +483,9 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09064085",
-        "name": "SUNMI L2s Pro",
+        "name": "P09064085, 3/32 GB, SS1111, GMS EDLA",
         "attributes": {
+          "Pamięć": "3/32 GB",
           "Skaner": "SS1111",
           "System": "GMS EDLA"
         },
@@ -463,9 +494,10 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09064007",
-        "name": "SUNMI L2s Pro",
+        "name": "P09064007, 4/64 GB, Moduł 1D/2D, SUNMI OS",
         "attributes": {
-          "Skaner": "SE4100",
+          "Pamięć": "4/64 GB",
+          "Skaner": "Moduł 1D/2D",
           "System": "SUNMI OS"
         },
         "priceFrom": 2009.39,
@@ -473,9 +505,10 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09064014",
-        "name": "SUNMI L2s Pro",
+        "name": "P09064014, 4/64 GB, Moduł 1D/2D, SUNMI OS",
         "attributes": {
-          "Skaner": "SE4100",
+          "Pamięć": "4/64 GB",
+          "Skaner": "Moduł 1D/2D",
           "System": "SUNMI OS"
         },
         "priceFrom": 2009.39,
@@ -483,8 +516,9 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09064024",
-        "name": "SUNMI L2s Pro",
+        "name": "P09064024, 3/32 GB, Bez osobnego modułu, SUNMI OS",
         "attributes": {
+          "Pamięć": "3/32 GB",
           "Skaner": "Bez osobnego modułu",
           "System": "SUNMI OS"
         },
@@ -493,8 +527,9 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09064080",
-        "name": "SUNMI L2s Pro",
+        "name": "P09064080, 3/32 GB, SS1111, SUNMI OS",
         "attributes": {
+          "Pamięć": "3/32 GB",
           "Skaner": "SS1111",
           "System": "SUNMI OS"
         },
@@ -503,7 +538,7 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SS1111 — moduł SUNMI do odczytu kodów 1D i 2D.\n• SE4100 — moduł Zebra do kodów 1D i 2D, ze standardowego zakresu odległości.\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\nZasięg zależy od wielkości i jakości kodu.",
+      "Skaner": "• SS1111 — moduł SUNMI do kodów kreskowych 1D i kodów dwuwymiarowych 2D.\n• Moduł 1D/2D — osobny skaner kodów, a nie aparat fotograficzny.\n• Bez osobnego modułu — terminal nie ma dedykowanego skanera.\nZasięg odczytu zależy od wielkości i jakości kodu.",
       "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
       "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
       "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
@@ -532,9 +567,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Sprawdzanie stanów i uzupełnianie półek",
+      "Odczyt kodów w wersjach ze skanerem"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Jaką pamięć wybrać w SUNMI L2s Pro?",
+        "answer": "P09064007 i P09064014 mają 4 GB RAM i 64 GB Flash. P09064085, P09064024 oraz P09064080 mają 3 GB RAM i 32 GB Flash."
+      },
+      {
+        "question": "Czy każdy L2s Pro ma osobny skaner?",
+        "answer": "Nie. P09064024 nie ma osobnego modułu skanującego. Pozostałe oferowane PN mają dedykowany skaner kodów 1D/2D."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -544,9 +589,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI M3",
     "seoH1": "SUNMI M3",
     "seoTitle": "SUNMI M3 — terminal do gastronomii, Android 14",
-    "seoDescription": "Terminal do obsługi zamówień z ekranem 6,75 cala i Androidem 14. Pamięć 3/32 GB, Wi-Fi 5, wymienna bateria 5000 mAh i IP65. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI M3 do obsługi zamówień przez Wi-Fi. Android 14 z GMS EDLA, ekran 6,75 cala i pamięć 3/32 GB. Sprawdź cenę PN P09070020 i akcesoria.",
     "shortDescription": "Terminal do obsługi zamówień z ekranem 6,75 cala i Androidem 14. Pamięć 3/32 GB, Wi-Fi 5, wymienna bateria 5000 mAh i IP65.",
-    "description": "Terminal do obsługi zamówień z ekranem 6,75 cala i Androidem 14. Pamięć 3/32 GB, Wi-Fi 5, wymienna bateria 5000 mAh i IP65.\n\n## Obsługa zamówień na sali sprzedaży\n\nSUNMI M3 służy do pracy z aplikacją gastronomiczną lub sklepową. Ekran 720 × 1600 pikseli mieści listy pozycji i szczegóły zamówienia. Oferowany PN P09070020 ma 3 GB RAM oraz 32 GB pamięci.\n\nTa konfiguracja korzysta z Wi-Fi i Bluetooth 5.2. Nie ma modemu 4G ani wbudowanej drukarki. Android 14 z GMS EDLA umożliwia instalację zgodnych aplikacji. Dostęp do programu sprzedażowego i jego licencję organizuje się osobno.\n\nWymienna bateria ma 5000 mAh. Obudowa ma klasę IP65. Urządzenie waży 272 g i ma 175 × 79 × 15 mm. Aparaty przedni i tylny mają po 2 MP. Stację ładującą i osłonę można dobrać z listy akcesoriów. Jeśli potrzebujesz NFC lub Hyper Wi-Fi, uzgodnij odpowiednią konfigurację przed zakupem.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI V3](/produkt/sunmi-v3), [SUNMI V3 Plus](/produkt/sunmi-v3-plus). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI M3 — terminal do obsługi zamówień z ekranem 6,75 cala i Androidem 14. Pamięć 3/32 GB, Wi-Fi 5, wymienna bateria 5000 mAh i IP65.\n\n## Obsługa zamówień na sali sprzedaży\n\nSUNMI M3 służy do pracy z aplikacją gastronomiczną lub sklepową. Ekran 720 × 1600 pikseli mieści listy pozycji i szczegóły zamówienia. Oferowany PN P09070020 ma 3 GB RAM oraz 32 GB pamięci.\n\nTa konfiguracja korzysta z Wi-Fi i Bluetooth 5.2. Nie ma modemu 4G ani wbudowanej drukarki. Android 14 z GMS EDLA umożliwia instalację zgodnych aplikacji. Dostęp do programu sprzedażowego i jego licencję organizuje się osobno.\n\nWymienna bateria ma 5000 mAh. Obudowa ma klasę IP65. Urządzenie waży 272 g i ma 175 × 79 × 15 mm. Aparaty przedni i tylny mają po 2 MP. Stację ładującą i osłonę można dobrać z listy akcesoriów. Jeśli potrzebujesz NFC lub Hyper Wi-Fi, uzgodnij odpowiednią konfigurację przed zakupem.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI V3](/produkt/sunmi-v3), [SUNMI V3 Plus](/produkt/sunmi-v3-plus). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -596,7 +641,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09070020",
-        "name": "SUNMI M3",
+        "name": "P09070020",
         "attributes": {},
         "priceFrom": 996.25,
         "availability": "available"
@@ -634,9 +679,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Obsługa zamówień w lokalu przez Wi-Fi",
+      "Praca ze zgodną aplikacją gastronomiczną"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Czy SUNMI M3 P09070020 ma LTE?",
+        "answer": "Nie. Ten PN łączy się przez Wi-Fi i Bluetooth. Nie ma modemu 4G ani wbudowanej drukarki."
+      },
+      {
+        "question": "Czy M3 zawiera aplikację gastronomiczną?",
+        "answer": "Nie. Do obsługi zamówień potrzebna jest zgodna aplikacja oraz jej licencja. Ten PN ma Android 14 z GMS EDLA i pamięć 3/32 GB."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -646,9 +701,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3",
     "seoH1": "SUNMI V3",
     "seoTitle": "SUNMI V3 — terminal mobilny z drukarką 58 mm",
-    "seoDescription": "Terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI V3 z drukarką termiczną 58 mm, LTE i pamięcią 3/32 GB. Porównaj wersje NFC, aparaty i wariant ze skanerem 2D. Sprawdź PN i ceny.",
     "shortDescription": "Terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.",
-    "description": "Terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.\n\n## Obsługa klienta i wydruk w jednym urządzeniu\n\nSUNMI V3 łączy aplikację Android z drukarką do potwierdzeń i dokumentów z systemu firmy. Ekran ma 720 × 1600 pikseli. Urządzenie drukuje na papierze termicznym o szerokości 58 mm z prędkością do 80 mm/s.\n\nOferowane wersje mają pamięć 3/32 GB, Wi-Fi 5, Bluetooth 5.0 i 4G LTE. PN P06100077 dodaje osobny skaner 1D/2D. Pozostałe konfiguracje nie mają wskazanego takiego modułu. P06100007 ma aparat 5 MP i nie obejmuje NFC; pozostałe oferowane PN mają aparat 8 MP i NFC.\n\nBateria ma 3100 mAh. Port USB-C służy do połączenia i ładowania. Dostępność usług Google zależy od wybranej konfiguracji. Urządzenie wymaga zgodnej aplikacji sprzedażowej. Wbudowana drukarka nie jest polską drukarką fiskalną. Obsługa płatności zbliżeniowych wymaga osobnej zgodnej usługi operatora.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI V3 — terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.\n\n## Obsługa klienta i wydruk w jednym urządzeniu\n\nSUNMI V3 łączy aplikację Android z drukarką do potwierdzeń i dokumentów z systemu firmy. Ekran ma 720 × 1600 pikseli. Urządzenie drukuje na papierze termicznym o szerokości 58 mm z prędkością do 80 mm/s.\n\nOferowane wersje mają pamięć 3/32 GB, Wi-Fi 5, Bluetooth 5.0 i 4G LTE. PN P06100077 dodaje osobny skaner 1D/2D. Pozostałe konfiguracje nie mają wskazanego takiego modułu. P06100007 ma aparat 5 MP i nie obejmuje NFC; pozostałe oferowane PN mają aparat 8 MP i NFC.\n\nBateria ma 3100 mAh. Port USB-C służy do połączenia i ładowania. Dostępność usług Google zależy od wybranej konfiguracji. Urządzenie wymaga zgodnej aplikacji sprzedażowej. Wbudowana drukarka nie jest polską drukarką fiskalną. Obsługa płatności zbliżeniowych wymaga osobnej zgodnej usługi operatora.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -700,7 +755,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P06100009",
-        "name": "SUNMI V3",
+        "name": "P06100009, Bez osobnego modułu, Tak, 8 MP",
         "attributes": {
           "Skaner": "Bez osobnego modułu",
           "NFC": "Tak",
@@ -711,7 +766,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100035",
-        "name": "SUNMI V3",
+        "name": "P06100035, Bez osobnego modułu, Tak, 8 MP",
         "attributes": {
           "Skaner": "Bez osobnego modułu",
           "NFC": "Tak",
@@ -722,7 +777,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100007",
-        "name": "SUNMI V3",
+        "name": "P06100007, Bez osobnego modułu, Brak, 5 MP",
         "attributes": {
           "Skaner": "Bez osobnego modułu",
           "NFC": "Brak",
@@ -733,7 +788,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100077",
-        "name": "SUNMI V3",
+        "name": "P06100077, Moduł 1D/2D, Tak, 8 MP",
         "attributes": {
           "Skaner": "Moduł 1D/2D",
           "NFC": "Tak",
@@ -772,9 +827,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Wydruk potwierdzeń na papierze 58 mm",
+      "Obsługa zamówień w terenie"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Czym SUNMI V3 różni się od V3H i V3 Plus?",
+        "answer": "V3 ma pamięć 3/32 GB i drukarkę 58 mm. V3H ma 4/64 GB i czytnik linii papilarnych. V3 Plus obsługuje papier 58–80 mm i Wi-Fi 6E."
+      },
+      {
+        "question": "Który SUNMI V3 ma skaner 2D?",
+        "answer": "W tej ofercie dedykowany moduł 1D/2D ma P06100077. Pozostałe PN nie mają osobnego skanera. Aparat nie jest tym samym modułem."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -784,9 +849,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3H",
     "seoH1": "SUNMI V3H",
     "seoTitle": "SUNMI V3H — terminal 4/64 GB z drukarką 58 mm",
-    "seoDescription": "Mobilny terminal z drukarką termiczną 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Dwie konfiguracje, w tym wersja ze skanerem 2D.",
+    "seoDescription": "SUNMI V3H z drukarką 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Porównaj wersje ze skanerem 2D i bez niego. Sprawdź PN i ceny.",
     "shortDescription": "Mobilny terminal z drukarką termiczną 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Dwie konfiguracje, w tym wersja ze skanerem 2D.",
-    "description": "Mobilny terminal z drukarką termiczną 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Dwie konfiguracje, w tym wersja ze skanerem 2D.\n\n## Więcej pamięci do aplikacji sprzedażowej\n\nSUNMI V3H obsługuje aplikację na ekranie 6,75 cala o rozdzielczości 720 × 1600 pikseli. Pamięć 4 GB RAM i 64 GB Flash odróżnia oferowane wersje od podstawowego V3 3/32 GB. Czytnik linii papilarnych służy do zgodnych funkcji logowania.\n\nOba PN mają 4G LTE, Wi-Fi 5, Bluetooth 5.0 i NFC. P06100047 dodaje osobny skaner 1D/2D oraz aparat przedni 2 MP. P06100033 nie ma tego modułu skanującego. Aparat tylny w obu konfiguracjach ma 8 MP.\n\nDrukarka korzysta z papieru termicznego 58 mm. Bateria ma 3100 mAh. Zestawy obejmują zasilacz, przewód europejski i baterię. Program sprzedażowy oraz obsługa płatności wymagają osobnych zgodnych usług. Drukarka nie zastępuje polskiego urządzenia fiskalnego.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI V3H — mobilny terminal z drukarką termiczną 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Dwie konfiguracje, w tym wersja ze skanerem 2D.\n\n## Więcej pamięci do aplikacji sprzedażowej\n\nSUNMI V3H obsługuje aplikację na ekranie 6,75 cala o rozdzielczości 720 × 1600 pikseli. Pamięć 4 GB RAM i 64 GB Flash odróżnia oferowane wersje od podstawowego V3 3/32 GB. Czytnik linii papilarnych służy do zgodnych funkcji logowania.\n\nOba PN mają 4G LTE, Wi-Fi 5, Bluetooth 5.0 i NFC. P06100047 dodaje osobny skaner 1D/2D oraz aparat przedni 2 MP. P06100033 nie ma tego modułu skanującego. Aparat tylny w obu konfiguracjach ma 8 MP.\n\nDrukarka korzysta z papieru termicznego 58 mm. Bateria ma 3100 mAh. Zestawy obejmują zasilacz, przewód europejski i baterię. Program sprzedażowy oraz obsługa płatności wymagają osobnych zgodnych usług. Drukarka nie zastępuje polskiego urządzenia fiskalnego.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -838,7 +903,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P06100033",
-        "name": "SUNMI V3H",
+        "name": "P06100033, Bez osobnego modułu",
         "attributes": {
           "Skaner": "Bez osobnego modułu"
         },
@@ -847,7 +912,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100047",
-        "name": "SUNMI V3H",
+        "name": "P06100047, Moduł 1D/2D",
         "attributes": {
           "Skaner": "Moduł 1D/2D"
         },
@@ -884,9 +949,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Wydruki 58 mm ze zgodnej aplikacji",
+      "Obsługa zamówień z pamięcią 4/64 GB"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Czy wszystkie wersje SUNMI V3H mają skaner?",
+        "answer": "Nie. P06100047 ma dedykowany moduł 1D/2D i przedni aparat 2 MP. P06100033 nie ma osobnego modułu skanującego."
+      },
+      {
+        "question": "Czy SUNMI V3H drukuje na papierze 80 mm?",
+        "answer": "Nie. V3H ma drukarkę na papier 58 mm. Do papieru 58–80 mm służy SUNMI V3 Plus."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   },
@@ -896,9 +971,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3 Plus",
     "seoH1": "SUNMI V3 Plus",
     "seoTitle": "SUNMI V3 Plus — terminal z drukarką 80 mm i Wi-Fi 6E",
-    "seoDescription": "Terminal Android 14 z drukarką termiczną 80 mm do 100 mm/s i skanerem 2D. Pamięć 4/64 GB, Wi-Fi 6E i bateria 3800 mAh. Sprawdź PN i cenę.",
+    "seoDescription": "SUNMI V3 Plus z drukarką na papier 58–80 mm, Androidem 14 i Wi-Fi 6E. Pamięć 4/64 GB oraz skaner 1D/2D. Sprawdź cenę PN P06120005.",
     "shortDescription": "Terminal Android 14 z drukarką termiczną 80 mm do 100 mm/s i skanerem 2D. Pamięć 4/64 GB, Wi-Fi 6E i bateria 3800 mAh.",
-    "description": "Terminal Android 14 z drukarką termiczną 80 mm do 100 mm/s i skanerem 2D. Pamięć 4/64 GB, Wi-Fi 6E i bateria 3800 mAh.\n\n## Szerszy wydruk przy obsłudze mobilnej\n\nSUNMI V3 Plus obsługuje papier termiczny 58–80 mm i rolki o średnicy do 60 mm. Drukuje do 100 mm/s. Szerszy wydruk odróżnia go od V3 i V3H z drukarką 58 mm.\n\nPN P06120005 ma osobny skaner 1D/2D, aparat tylny 13 MP i przedni 2 MP. Ekran 6,75 cala wyświetla obraz 720 × 1600 pikseli. Android 14 pracuje z pamięcią 4 GB RAM i 64 GB Flash. Karta microSD może mieć do 512 GB.\n\nŁączność obejmuje 4G LTE, Wi-Fi 6E, Bluetooth 5.3, NFC i USB-C. Pasmo 6 GHz wymaga zgodnego punktu dostępowego. Wymienna bateria ma 3800 mAh przy 7,7 V. Nie porównuj samej wartości mAh z baterią o innym napięciu.\n\nUrządzenie wymaga zgodnej aplikacji. Drukarka nie jest polskim urządzeniem fiskalnym. NFC nie uruchamia samodzielnie płatności kartą; potrzebna jest zgodna usługa operatora. Zdjęcie główne przedstawia pojedynczy terminal, bez opcjonalnej stacji.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI L3](/produkt/sunmi-l3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI V3 Plus — terminal Android 14 z drukarką termiczną 80 mm do 100 mm/s i skanerem 2D. Pamięć 4/64 GB, Wi-Fi 6E i bateria 3800 mAh.\n\n## Szerszy wydruk przy obsłudze mobilnej\n\nSUNMI V3 Plus obsługuje papier termiczny 58–80 mm i rolki o średnicy do 60 mm. Drukuje do 100 mm/s. Szerszy wydruk odróżnia go od V3 i V3H z drukarką 58 mm.\n\nPN P06120005 ma osobny skaner 1D/2D, aparat tylny 13 MP i przedni 2 MP. Ekran 6,75 cala wyświetla obraz 720 × 1600 pikseli. Android 14 pracuje z pamięcią 4 GB RAM i 64 GB Flash. Karta microSD może mieć do 512 GB.\n\nŁączność obejmuje 4G LTE, Wi-Fi 6E, Bluetooth 5.3, NFC i USB-C. Pasmo 6 GHz wymaga zgodnego punktu dostępowego. Wymienna bateria ma 3800 mAh przy 7,7 V. Nie porównuj samej wartości mAh z baterią o innym napięciu.\n\nUrządzenie wymaga zgodnej aplikacji. Drukarka nie jest polskim urządzeniem fiskalnym. NFC nie uruchamia samodzielnie płatności kartą; potrzebna jest zgodna usługa operatora. Zdjęcie główne przedstawia pojedynczy terminal, bez opcjonalnej stacji.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI L3](/produkt/sunmi-l3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -950,7 +1025,7 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P06120005",
-        "name": "SUNMI V3 Plus",
+        "name": "P06120005",
         "attributes": {},
         "priceFrom": 1854.05,
         "availability": "available"
@@ -982,9 +1057,19 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Praca ze zgodną aplikacją firmową"
+      "Wydruk dokumentów na papierze 58–80 mm",
+      "Odczyt kodów i obsługa zamówień"
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Jaką szerokość papieru obsługuje SUNMI V3 Plus?",
+        "answer": "Wbudowana drukarka termiczna obsługuje papier o szerokości 58–80 mm. Maksymalna średnica rolki wynosi 60 mm, a prędkość druku do 100 mm/s."
+      },
+      {
+        "question": "Czy stacja i osłona V3 pasują do V3 Plus?",
+        "answer": "Nie przypisuj wyposażenia V3 do V3 Plus na podstawie nazwy serii. W tej ofercie wspólną zgodność ma pasek C20000086. Stację i osłonę dobierz osobno."
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   }
@@ -998,7 +1083,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI L3 / M3 — C14004127",
     "seoDescription": "Stacja do ładowania jednego SUNMI L3 lub M3. PN C14004127. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja do ładowania jednego SUNMI L3 lub M3.",
-    "description": "Stacja do ładowania jednego SUNMI L3 lub M3.\n\n## Dobór do terminala\n\nStacja do ładowania jednego SUNMI L3 lub M3. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Stacja do ładowania jednego SUNMI L3 lub M3.\n\n## Zastosowanie i dobór\n\nJedno stanowisko służy do odłożenia i ładowania terminala przy biurku. Terminal widoczny na ilustracji nie jest częścią stacji.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1047,7 +1132,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja 4-stanowiskowa SUNMI L3 / M3 — C14004131",
     "seoDescription": "Stacja do ładowania czterech SUNMI L3 lub M3. Zestaw obejmuje adaptery EU, UK i US. PN C14004131. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja do ładowania czterech SUNMI L3 lub M3. Zestaw obejmuje adaptery EU, UK i US.",
-    "description": "Stacja do ładowania czterech SUNMI L3 lub M3. Zestaw obejmuje adaptery EU, UK i US.\n\n## Dobór do terminala\n\nStacja do ładowania czterech SUNMI L3 lub M3. Zestaw obejmuje adaptery EU, UK i US. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Stacja do ładowania czterech SUNMI L3 lub M3. Zestaw obejmuje adaptery EU, UK i US.\n\n## Zastosowanie i dobór\n\nCztery stanowiska pozwalają ładować terminale w jednym miejscu. Terminale pokazane na ilustracji są osobnymi produktami.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1096,7 +1181,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii SUNMI L3 / M3 — C14004143",
     "seoDescription": "Ładowarka do czterech zgodnych baterii SUNMI L3 i M3. Zestaw obejmuje adaptery EU, UK i US. PN C14004143. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Ładowarka do czterech zgodnych baterii SUNMI L3 i M3. Zestaw obejmuje adaptery EU, UK i US.",
-    "description": "Ładowarka do czterech zgodnych baterii SUNMI L3 i M3. Zestaw obejmuje adaptery EU, UK i US.\n\n## Dobór do terminala\n\nŁadowarka do czterech zgodnych baterii SUNMI L3 i M3. Zestaw obejmuje adaptery EU, UK i US. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Ładowarka do czterech zgodnych baterii SUNMI L3 i M3. Zestaw obejmuje adaptery EU, UK i US.\n\n## Zastosowanie i dobór\n\nŁadowarka służy do baterii wyjętych z terminali. Nie zastępuje stacji do ładowania całych urządzeń. Baterie na ilustracji nie są częścią zestawu.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1145,7 +1230,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Uchwyt spustowy SUNMI L3 — C14004144",
     "seoDescription": "Uchwyt do SUNMI L3 z tylnymi stykami POGO. Wymaga PN P09070073 albo P09070030 z tej oferty. PN C14004144. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Uchwyt do SUNMI L3 z tylnymi stykami POGO. Wymaga PN P09070073 albo P09070030 z tej oferty.",
-    "description": "Uchwyt do SUNMI L3 z tylnymi stykami POGO. Wymaga PN P09070073 albo P09070030 z tej oferty.\n\n## Dobór do terminala\n\nUchwyt do SUNMI L3 z tylnymi stykami POGO. Wymaga PN P09070073 albo P09070030 z tej oferty. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
+    "description": "Uchwyt do SUNMI L3 z tylnymi stykami POGO. Wymaga PN P09070073 albo P09070030 z tej oferty.\n\n## Zastosowanie i dobór\n\nSpust służy do uruchamiania skanowania w zgodnej wersji L3. Nie dodaje skanera do terminala bez modułu odczytu. Terminal na ilustracji jest osobnym produktem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1193,7 +1278,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI L3 / M3 — C02020013",
     "seoDescription": "Szkło chroni ekran przed zarysowaniami. Pasuje do SUNMI L3 i M3. PN C02020013. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Szkło chroni ekran przed zarysowaniami. Pasuje do SUNMI L3 i M3.",
-    "description": "Szkło chroni ekran przed zarysowaniami. Pasuje do SUNMI L3 i M3.\n\n## Dobór do terminala\n\nSzkło chroni ekran przed zarysowaniami. Pasuje do SUNMI L3 i M3. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Szkło chroni ekran przed zarysowaniami. Pasuje do SUNMI L3 i M3.\n\n## Zastosowanie i dobór\n\nElement jest przeznaczony do ekranu, a nie do osłony całej obudowy. Do ochrony obudowy dobierz osobno osłonę C20000106.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1242,7 +1327,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Osłona SUNMI L3 / M3 — C20000106",
     "seoDescription": "Osłona gumowa do SUNMI L3 i M3. Nie pasuje do konfiguracji L3 RFID. PN C20000106. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Osłona gumowa do SUNMI L3 i M3. Nie pasuje do konfiguracji L3 RFID.",
-    "description": "Osłona gumowa do SUNMI L3 i M3. Nie pasuje do konfiguracji L3 RFID.\n\n## Dobór do terminala\n\nOsłona gumowa do SUNMI L3 i M3. Nie pasuje do konfiguracji L3 RFID. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Osłona gumowa do SUNMI L3 i M3. Nie pasuje do konfiguracji L3 RFID.\n\n## Zastosowanie i dobór\n\nTo wyposażenie obudowy. Do ochrony ekranu służy osobne szkło C02020013. Zachowaj ograniczenie zgodności z wersjami L3 RFID.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1291,7 +1376,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L3 / M3 — C11000007",
     "seoDescription": "Pasek pomaga utrzymać terminal w dłoni. Pasuje do SUNMI L3 i M3. PN C11000007. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Pasek pomaga utrzymać terminal w dłoni. Pasuje do SUNMI L3 i M3.",
-    "description": "Pasek pomaga utrzymać terminal w dłoni. Pasuje do SUNMI L3 i M3.\n\n## Dobór do terminala\n\nPasek pomaga utrzymać terminal w dłoni. Pasuje do SUNMI L3 i M3. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Pasek pomaga utrzymać terminal w dłoni. Pasuje do SUNMI L3 i M3.\n\n## Zastosowanie i dobór\n\nPasek służy do podtrzymywania urządzenia podczas pracy. Nie pełni funkcji paska naramiennego; do tego służy C11000003.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1340,7 +1425,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek naramienny SUNMI L3 / M3 — C11000003",
     "seoDescription": "Pasek do przenoszenia SUNMI L3 i M3 na ramieniu. PN C11000003. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Pasek do przenoszenia SUNMI L3 i M3 na ramieniu.",
-    "description": "Pasek do przenoszenia SUNMI L3 i M3 na ramieniu.\n\n## Dobór do terminala\n\nPasek do przenoszenia SUNMI L3 i M3 na ramieniu. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Pasek do przenoszenia SUNMI L3 i M3 na ramieniu.\n\n## Zastosowanie i dobór\n\nTo alternatywa dla paska na dłoń C11000007. Wybierz sposób przenoszenia odpowiedni do pracy z terminalem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1385,11 +1470,11 @@ export const sunmiAccessories: Product[] = [
   {
     "id": "sunmi-c02004005",
     "slug": "sunmi-c02004005",
-    "name": "Szkło ochronne SUNMI L2Ks",
-    "seoTitle": "Szkło ochronne SUNMI L2Ks — C02004005",
-    "seoDescription": "Szkło ochronne do ekranu SUNMI L2Ks. PN C02004005. Sprawdź cenę i stan w TAKMA.",
-    "shortDescription": "Szkło ochronne do ekranu SUNMI L2Ks.",
-    "description": "Szkło ochronne do ekranu SUNMI L2Ks.\n\n## Dobór do terminala\n\nSzkło ochronne do ekranu SUNMI L2Ks. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "name": "Osłona ekranu SUNMI L2Ks",
+    "seoTitle": "Osłona ekranu SUNMI L2Ks — C02004005",
+    "seoDescription": "Osłona ochronna ekranu SUNMI L2Ks. PN C02004005. Sprawdź cenę i stan w TAKMA.",
+    "shortDescription": "Osłona ochronna ekranu SUNMI L2Ks.",
+    "description": "Osłona ochronna ekranu SUNMI L2Ks.\n\n## Zastosowanie i dobór\n\nOsłona jest dopasowana do ekranu L2Ks. Nie zastępuje osłony obudowy ani elementów do modeli z inną wielkością ekranu.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1437,7 +1522,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L2Ks — C11000001",
     "seoDescription": "Pasek do SUNMI L2Ks. Nie jest paskiem do terminali L2H ani L3. PN C11000001. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Pasek do SUNMI L2Ks. Nie jest paskiem do terminali L2H ani L3.",
-    "description": "Pasek do SUNMI L2Ks. Nie jest paskiem do terminali L2H ani L3.\n\n## Dobór do terminala\n\nPasek do SUNMI L2Ks. Nie jest paskiem do terminali L2H ani L3. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Pasek do SUNMI L2Ks. Nie jest paskiem do terminali L2H ani L3.\n\n## Zastosowanie i dobór\n\nTo element do podtrzymywania modelu z klawiaturą L2Ks. Do L2H, L2s Pro i L3 dobierz paski wskazane na ich kartach.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1485,7 +1570,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii SUNMI L2Ks — C14000157",
     "seoDescription": "Ładowarka do czterech baterii L2Ks. Zestaw obejmuje zasilacz i przewód europejski. PN C14000157. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Ładowarka do czterech baterii L2Ks. Zestaw obejmuje zasilacz i przewód europejski.",
-    "description": "Ładowarka do czterech baterii L2Ks. Zestaw obejmuje zasilacz i przewód europejski.\n\n## Dobór do terminala\n\nŁadowarka do czterech baterii L2Ks. Zestaw obejmuje zasilacz i przewód europejski. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Ładowarka do czterech baterii L2Ks. Zestaw obejmuje zasilacz i przewód europejski.\n\n## Zastosowanie i dobór\n\nŁaduj baterie wyjęte z L2Ks. To osobne wyposażenie względem stacji C14004014, która służy do ładowania terminala.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1533,7 +1618,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Uchwyt spustowy SUNMI L2Ks — C14000159",
     "seoDescription": "Uchwyt do SUNMI L2Ks, do uruchamiania skanowania spustem. PN C14000159. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Uchwyt do SUNMI L2Ks, do uruchamiania skanowania spustem.",
-    "description": "Uchwyt do SUNMI L2Ks, do uruchamiania skanowania spustem.\n\n## Dobór do terminala\n\nUchwyt do SUNMI L2Ks, do uruchamiania skanowania spustem. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Uchwyt do SUNMI L2Ks, do uruchamiania skanowania spustem.\n\n## Zastosowanie i dobór\n\nUchwyt zmienia sposób uruchamiania skanowania podczas pracy z L2Ks. Nie jest uchwytem do L3; ten model wymaga innego mocowania.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1581,7 +1666,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI L2Ks — C14004014",
     "seoDescription": "Stacja do ładowania jednego terminala SUNMI L2Ks. PN C14004014. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja do ładowania jednego terminala SUNMI L2Ks.",
-    "description": "Stacja do ładowania jednego terminala SUNMI L2Ks.\n\n## Dobór do terminala\n\nStacja do ładowania jednego terminala SUNMI L2Ks. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Stacja do ładowania jednego terminala SUNMI L2Ks.\n\n## Zastosowanie i dobór\n\nJedno stanowisko służy do ładowania terminala. Jeśli potrzebujesz ładować zapasowe baterie poza urządzeniem, dobierz ładowarkę C14000157.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1629,7 +1714,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja SUNMI L2H / L2s Pro z ładowaniem baterii — C14000144",
     "seoDescription": "Stacja ładuje terminal i zapasową baterię. Wymaga terminala bez osłony ochronnej. Zasilacz jest w zestawie. PN C14000144. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja ładuje terminal i zapasową baterię. Wymaga terminala bez osłony ochronnej. Zasilacz jest w zestawie.",
-    "description": "Stacja ładuje terminal i zapasową baterię. Wymaga terminala bez osłony ochronnej. Zasilacz jest w zestawie.\n\n## Dobór do terminala\n\nStacja ładuje terminal i zapasową baterię. Wymaga terminala bez osłony ochronnej. Zasilacz jest w zestawie. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Stacja ładuje terminal i zapasową baterię. Wymaga terminala bez osłony ochronnej. Zasilacz jest w zestawie.\n\n## Zastosowanie i dobór\n\nPrzed włożeniem terminala zdejmij osłonę C20000001. Do czterech terminali, także z osłonami, służy osobna stacja C14004067.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1678,7 +1763,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja 4-stanowiskowa SUNMI L2H / L2s Pro — C14004067",
     "seoDescription": "Stacja ładuje cztery terminale z osłoną lub bez niej. Zestaw obejmuje zasilacz i przewód EU/UK. PN C14004067. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja ładuje cztery terminale z osłoną lub bez niej. Zestaw obejmuje zasilacz i przewód EU/UK.",
-    "description": "Stacja ładuje cztery terminale z osłoną lub bez niej. Zestaw obejmuje zasilacz i przewód EU/UK.\n\n## Dobór do terminala\n\nStacja ładuje cztery terminale z osłoną lub bez niej. Zestaw obejmuje zasilacz i przewód EU/UK. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Stacja ładuje cztery terminale z osłoną lub bez niej. Zestaw obejmuje zasilacz i przewód EU/UK.\n\n## Zastosowanie i dobór\n\nCztery stanowiska pozwalają przygotować terminale do kolejnej zmiany. Nie trzeba zdejmować zgodnej osłony C20000001 przed odłożeniem urządzenia.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1727,7 +1812,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Osłona SUNMI L2H / L2s Pro — C20000001",
     "seoDescription": "Osłona gumowa do SUNMI L2H i L2s Pro. Zdejmij ją przed użyciem stacji C14000144. PN C20000001. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Osłona gumowa do SUNMI L2H i L2s Pro. Zdejmij ją przed użyciem stacji C14000144.",
-    "description": "Osłona gumowa do SUNMI L2H i L2s Pro. Zdejmij ją przed użyciem stacji C14000144.\n\n## Dobór do terminala\n\nOsłona gumowa do SUNMI L2H i L2s Pro. Zdejmij ją przed użyciem stacji C14000144. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Osłona gumowa do SUNMI L2H i L2s Pro. Zdejmij ją przed użyciem stacji C14000144.\n\n## Zastosowanie i dobór\n\nOsłona pozostaje na terminalu w stacji C14004067. Jeśli używasz stacji C14000144, zdejmij osłonę przed ładowaniem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1776,7 +1861,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI L2H / L2s Pro — C20000003",
     "seoDescription": "Szkło hartowane do ekranów SUNMI L2H i L2s Pro. PN C20000003. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Szkło hartowane do ekranów SUNMI L2H i L2s Pro.",
-    "description": "Szkło hartowane do ekranów SUNMI L2H i L2s Pro.\n\n## Dobór do terminala\n\nSzkło hartowane do ekranów SUNMI L2H i L2s Pro. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Szkło hartowane do ekranów SUNMI L2H i L2s Pro.\n\n## Zastosowanie i dobór\n\nTen element chroni powierzchnię ekranu. Osłona gumowa C20000001 jest osobnym akcesorium do obudowy.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1825,7 +1910,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L2H / L2s Pro — C20000026",
     "seoDescription": "Pasek do SUNMI L2H i L2s Pro. Sprawdź zawartość zestawu terminala przed zakupem zapasowego paska. PN C20000026. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Pasek do SUNMI L2H i L2s Pro. Sprawdź zawartość zestawu terminala przed zakupem zapasowego paska.",
-    "description": "Pasek do SUNMI L2H i L2s Pro. Sprawdź zawartość zestawu terminala przed zakupem zapasowego paska.\n\n## Dobór do terminala\n\nPasek do SUNMI L2H i L2s Pro. Sprawdź zawartość zestawu terminala przed zakupem zapasowego paska. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Pasek do SUNMI L2H i L2s Pro. Sprawdź zawartość zestawu terminala przed zakupem zapasowego paska.\n\n## Zastosowanie i dobór\n\nTo także część zapasowa do posiadanego terminala. Przed zakupem sprawdź, czy pasek znajduje się już w zestawie urządzenia.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1874,7 +1959,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI V3 / V3H — C14004112",
     "seoDescription": "Stacja do ładowania SUNMI V3 i V3H. Do V3 Plus dobierz osobne wyposażenie tej rodziny. PN C14004112. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Stacja do ładowania SUNMI V3 i V3H. Do V3 Plus dobierz osobne wyposażenie tej rodziny.",
-    "description": "Stacja do ładowania SUNMI V3 i V3H. Do V3 Plus dobierz osobne wyposażenie tej rodziny.\n\n## Dobór do terminala\n\nStacja do ładowania SUNMI V3 i V3H. Do V3 Plus dobierz osobne wyposażenie tej rodziny. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Stacja do ładowania SUNMI V3 i V3H. Do V3 Plus dobierz osobne wyposażenie tej rodziny.\n\n## Zastosowanie i dobór\n\nTo stacja do dwóch wskazanych modeli z drukarką 58 mm. Nie przypisuj jej do V3 Plus wyłącznie na podstawie podobnej nazwy.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1923,7 +2008,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI V3 / V3H — C20000060",
     "seoDescription": "Szkło hartowane do ekranów SUNMI V3 i V3H. PN C20000060. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Szkło hartowane do ekranów SUNMI V3 i V3H.",
-    "description": "Szkło hartowane do ekranów SUNMI V3 i V3H.\n\n## Dobór do terminala\n\nSzkło hartowane do ekranów SUNMI V3 i V3H. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Szkło hartowane do ekranów SUNMI V3 i V3H.\n\n## Zastosowanie i dobór\n\nElement jest dopasowany do ekranów V3 i V3H. Zgodność z V3 Plus wymaga osobnego potwierdzenia; tej wersji nie przypisano do produktu.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1972,7 +2057,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI V3 / V3H / V3 Plus — C20000086",
     "seoDescription": "Pasek do terminali SUNMI V3, V3H i V3 Plus. PN C20000086. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Pasek do terminali SUNMI V3, V3H i V3 Plus.",
-    "description": "Pasek do terminali SUNMI V3, V3H i V3 Plus.\n\n## Dobór do terminala\n\nPasek do terminali SUNMI V3, V3H i V3 Plus. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus).",
+    "description": "Pasek do terminali SUNMI V3, V3H i V3 Plus.\n\n## Zastosowanie i dobór\n\nPasek pomaga podtrzymać urządzenie podczas pracy. Jego zgodność z V3 Plus nie oznacza zgodności stacji i osłon z tej samej serii.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -2022,7 +2107,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Osłona SUNMI V3 / V3H — C20000095",
     "seoDescription": "Osłona gumowa do SUNMI V3 i V3H. Nie pasuje do szerszej obudowy V3 Plus. PN C20000095. Sprawdź cenę i stan w TAKMA.",
     "shortDescription": "Osłona gumowa do SUNMI V3 i V3H. Nie pasuje do szerszej obudowy V3 Plus.",
-    "description": "Osłona gumowa do SUNMI V3 i V3H. Nie pasuje do szerszej obudowy V3 Plus.\n\n## Dobór do terminala\n\nOsłona gumowa do SUNMI V3 i V3H. Nie pasuje do szerszej obudowy V3 Plus. To wyposażenie opcjonalne lub część zapasowa. Sprawdź zawartość posiadanego zestawu przed zakupem.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Osłona gumowa do SUNMI V3 i V3H. Nie pasuje do szerszej obudowy V3 Plus.\n\n## Zastosowanie i dobór\n\nOsłona jest przeznaczona do modeli z drukarką 58 mm. V3 Plus ma inną obudowę i wymaga osobnego wyposażenia.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"

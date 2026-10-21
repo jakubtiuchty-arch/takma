@@ -137,6 +137,9 @@ export async function GET() {
   // 1) Kandydaci (produkt lub wariant) z PN.
   const candidates: Candidate[] = []
   for (const product of products) {
+    // These illustrations include optional terminals/batteries that are not sold with the accessory.
+    // Keep them on product pages, but do not advertise them as exact-product Merchant images.
+    if (['sunmi-c14004127', 'sunmi-c14004131', 'sunmi-c14004143', 'sunmi-c14004144'].includes(product.id)) continue
     if (!feedImage(product.images)) continue
     if (product.variants && product.variants.length > 0) {
       for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber })

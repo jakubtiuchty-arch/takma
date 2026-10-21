@@ -307,3 +307,6 @@ A: Do kasy w sklepie: Zebra DS2208 (przewodowy USB, 2D, od 590 zł) — najtańs
 
 Q: Czy oferujecie doradztwo przed zakupem?
 A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Kontakt: +48 71 781 71 28, takma@takma.com.pl lub formularz na stronie takma.com.pl/kontakt.
+
+## Terminale SUNMI
+- [Terminale SUNMI](https://www.takma.com.pl/terminale-sunmi): kolektory L3, L2Ks, L2H i L2s Pro, terminal M3 oraz V3, V3H i V3 Plus z drukarką. Parametry i zgodność akcesoriów zależą od PN.

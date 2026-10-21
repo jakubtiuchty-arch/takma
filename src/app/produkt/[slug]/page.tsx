@@ -621,7 +621,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     ...((catalogMobileTerminal || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
     name: product.name,
     description: product.shortDescription,
-    image: product.images.map(absoluteProductImageUrl),
+    ...(product.images.some(src => !src.includes('placeholder')) ? { image: product.images.filter(src => !src.includes('placeholder')).map(absoluteProductImageUrl) } : {}),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
     manufacturer: manufacturer ? { '@type': 'Organization', name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name, ...(manufacturer.id === 'zebra' ? { url: 'https://www.zebra.com' } : {}) } : undefined,
     model: modelName,
@@ -790,7 +790,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // więc przy okazji znikał także schemat pytań — na czternastu kartach z sekcją `faq`,
   // między innymi całej serii Epson ColorWorks i drukarkach kart Zebry. FAQPage to osobny typ
   // i nie koliduje z niczym, co renderuje LiveProductSchema.
-  const faqJsonLd = !(product.manufacturerId === 'epson' && product.categoryId === 'drukarki-etykiet') && !bixolonLabelProduct && !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
+  const faqJsonLd = product.manufacturerId !== 'sunmi' && !(product.manufacturerId === 'epson' && product.categoryId === 'drukarki-etykiet') && !bixolonLabelProduct && !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({

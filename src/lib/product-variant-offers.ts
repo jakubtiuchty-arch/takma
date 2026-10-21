@@ -55,6 +55,7 @@ export function selectProductVariant(product: Product, rows: StockInfo[], pn?: s
 export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const url = `https://www.takma.com.pl/produkt/${product.slug}`
   const stock = new Map(rows.map(row => [row.partNumber, row]))
+  const images = product.images.filter(src => !src.includes('placeholder')).map(absoluteProductImageUrl)
   const rfidTerminal = product.subcategoryIds?.some(id => id === 'terminale-rfid' || id === 'uchwyty-rfid') ?? false
   const datalogicScanner = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const bixolonLabel = (product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')) || (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId))
@@ -89,7 +90,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
       ...(partNumber ? { sku: partNumber, mpn: partNumber } : {}),
       ...marka,
       ...facts,
-      image: product.images.map(absoluteProductImageUrl),
+      ...(images.length ? { image: images } : {}),
       ...(product.sameAs ? { sameAs: product.sameAs } : {}),
       ...(oferta ? { offers: oferta } : {}),
     }
@@ -105,7 +106,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
     productGroupID: product.id,
     ...marka,
     ...facts,
-    image: product.images.map(absoluteProductImageUrl),
+    ...(images.length ? { image: images } : {}),
     ...(product.sameAs ? { sameAs: product.sameAs } : {}),
     hasVariant: (product.variants ?? []).map(variant => {
       const row = stock.get(variant.partNumber)
@@ -120,11 +121,11 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         mpn: variant.partNumber,
         ...(variant.gtin13 ? { gtin13: variant.gtin13 } : {}),
         url: variantUrl,
-        image: product.images.map(absoluteProductImageUrl),
+        ...(images.length ? { image: images } : {}),
         brand: marka.brand,
         isVariantOf: { '@id': `${url}#product-group` },
         additionalProperty: [
-          ...commonProperties.filter(property => property.name !== 'Pamięć' && !(property.name in variant.attributes)),
+          ...commonProperties.filter(property => (sunmiTerminal || property.name !== 'Pamięć') && !(property.name in variant.attributes)),
           ...Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
         ],
         // Bez potwierdzonej ceny nie tworzymy pozornej oferty ani dostępności.

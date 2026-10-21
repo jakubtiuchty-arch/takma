@@ -15,6 +15,17 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
   const category = categorySlug ? categories.find(c => c.slug === categorySlug) : null
   const manufacturer = manufacturerSlug ? manufacturers.find(m => m.slug === manufacturerSlug) : null
 
+  // Lista wszystkich produktów marki obejmuje także akcesoria. Nie jest zamiennikiem kategorii terminali.
+  if (manufacturer?.id === 'sunmi') {
+    const title = 'Produkty SUNMI — terminale mobilne i akcesoria'
+    return {
+      title,
+      description: manufacturer.seoDescription,
+      robots: { index: false, follow: true },
+      openGraph: { title: `${title} | TAKMA`, description: manufacturer.seoDescription },
+    }
+  }
+
   if (category) {
     return {
       title: category.seoTitle,
