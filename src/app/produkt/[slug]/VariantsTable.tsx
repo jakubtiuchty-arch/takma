@@ -490,7 +490,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
   if (variants.length === 0) return null
 
   const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }
-  const colCount = 4 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
+  const colCount = 5 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
   // Przy wielu atrybutach (np. TC501: 6) tabela nie mieściła się w kolumnie —
   // ciaśniejsze odstępy i nagłówki łamane na dwie linie zamiast jednej długiej
   const dense = attributeKeys.length >= 5
@@ -509,7 +509,7 @@ export default function VariantsTable({ productSlug, productName, productImage, 
                 Part Number
               </th>
               {attributeKeys.map((key) => (
-                <th key={key} scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider leading-tight ${dense ? 'max-w-[6.5rem] min-w-[4.5rem] break-words' : 'whitespace-nowrap'}`}>
+                <th key={key} scope="col" className={`${dense ? 'px-2' : 'px-3'} py-3 text-center text-xs font-semibold text-gray-500 uppercase ${dense ? 'tracking-normal' : 'tracking-wider'} leading-tight ${dense ? 'min-w-[5.5rem] whitespace-normal [word-break:normal] [overflow-wrap:normal]' : 'whitespace-nowrap'}`}>
                   <AttributeLabel label={key} extraTooltips={variantAttributeTooltips} />
                 </th>
               ))}
