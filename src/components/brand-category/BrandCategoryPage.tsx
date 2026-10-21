@@ -214,6 +214,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     specifications: p.specifications,
     variants: p.variants,
     priceFrom: p.priceFrom,
+    quoteOnly: p.quoteOnly,
     priceTiers: p.priceTiers,
     availability: p.availability,
   }))

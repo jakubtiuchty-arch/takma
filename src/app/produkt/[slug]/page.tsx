@@ -627,7 +627,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     model: modelName,
     category: category?.name,
     sku: magicardOffer?.sku || schemaPartNumber,
-    mpn: magicardOffer?.sku || schemaPartNumber,
+    // Karta rodziny na zapytanie bez potwierdzonego PN: identyfikator sklepu nie jest MPN producenta.
+    mpn: product.quoteOnly && !specPartNumber && !product.variants?.length ? undefined : magicardOffer?.sku || schemaPartNumber,
     ...(mcAccessoryModels.length > 0 ? {
       isAccessoryOrSparePartFor: mcAccessoryModels.map(p => ({ '@id': `https://www.takma.com.pl/produkt/${p.slug}` })),
     } : {}),

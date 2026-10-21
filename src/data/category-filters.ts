@@ -681,9 +681,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Datalogic', manufacturer: 'datalogic' },
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
+        { value: 'CipherLab', manufacturer: 'cipherlab' },
         { value: 'SUNMI', manufacturer: 'sunmi' },
       ],
     },
+    { specKey: 'system-terminala', label: 'System operacyjny', description: 'Android obsługuje zgodne aplikacje mobilne. cOS wymaga aplikacji zadaniowej dla kolektora; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny', 'System']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
     {
       specKey: 'forma',
       label: 'Obsługa',
@@ -709,7 +711,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Czy terminal łączy się poza zasięgiem firmowego Wi-Fi.\n• Wi-Fi + LTE/5G — karta SIM, praca w terenie i w aucie\n• Tylko Wi-Fi — w budynku, w zasięgu sieci firmowej; tańszy wariant',
       derived: [
         { value: 'Wi-Fi + LTE/5G', pattern: '5G|LTE|\\b4G\\b|WWAN|SIM', specs: ['WWAN', 'SIM', 'Łączność'] },
-        { value: 'Tylko Wi-Fi', notSpecs: ['WWAN', 'SIM'] },
+        { value: 'Tylko Wi-Fi', pattern: 'Wi-Fi|WiFi|802\\.11', specs: ['WLAN', 'Wi-Fi', 'Łączność'], notSpecs: ['WWAN', 'SIM'] },
       ],
     },
     {
@@ -1909,7 +1911,8 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
 ]
 
 categoryFilters['terminale-cipherlab'] = [
-  { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage']}] },
+  { specKey: 'System operacyjny', label: 'System operacyjny', description: 'Android uruchamia zgodne aplikacje mobilne. cOS to system do aplikacji zadaniowych tworzonych np. w Forge Application Generator; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
+  { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage','cipherlab-8000','cipherlab-8200','cipherlab-8300','cipherlab-8600']}] },
   { specKey: 'zastosowanie-cipherlab', label: 'Zastosowanie', derived: [{value: 'Ochrona zdrowia', slugs: ['cipherlab-rs38h']}, {value: 'Mroźnia', slugs: ['cipherlab-rk96-cold-storage']}] },
   { specKey: 'modem-cipherlab', label: 'Łączność komórkowa', derived: [{value: 'Dostępne wersje LTE', slugs: ['cipherlab-rs36','cipherlab-rk26']}, {value: 'Dostępne wersje 5G', slugs: ['cipherlab-rs38','cipherlab-rs38h']}] }
 ]

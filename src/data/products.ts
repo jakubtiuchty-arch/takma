@@ -290,10 +290,10 @@ export const categories: Category[] = [
     id: 'terminale-mobilne',
     slug: 'terminale-mobilne',
     name: 'Terminale mobilne',
-    description: 'Wytrzymałe komputery mobilne i kolektory danych Android do magazynu, logistyki i produkcji',
-    seoTitle: 'Terminale mobilne i kolektory danych Android',
-    seoDescription: 'Terminale mobilne i kolektory danych Android do magazynu, sklepu i logistyki. Porównaj skanery, klawiatury, pamięć, łączność i dostępne konfiguracje.',
-    longDescription: 'Terminale mobilne i kolektory danych Android do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab) i [SUNMI](/terminale-sunmi). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy.',
+    description: 'Wytrzymałe komputery mobilne i kolektory danych do magazynu, logistyki i produkcji',
+    seoTitle: 'Terminale mobilne i kolektory danych',
+    seoDescription: 'Terminale mobilne i kolektory danych do magazynu, sklepu i logistyki. Porównaj skanery, klawiatury, pamięć, łączność i dostępne konfiguracje.',
+    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab) i [SUNMI](/terminale-sunmi). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy.',
     icon: 'smartphone',
     productCount: 23,
   },
@@ -96335,9 +96335,9 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "cipherlab",
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne CipherLab",
-  "seoTitle": "Terminale CipherLab — porównaj kolektory RS i RK",
-  "seoDescription": "Terminale CipherLab do sklepu i magazynu: dotykowe RS, klawiaturowe RK i Cold Storage do mroźni. Porównaj skanery, LTE/5G, warianty PN i ceny.",
-  "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele dotykowe RS z terminalami klawiaturowymi RK. Wersję skanera i wyposażenie wybierz według PN.",
+  "seoTitle": "Terminale CipherLab — Android i kolektory cOS",
+  "seoDescription": "Terminale CipherLab z Androidem oraz kolektory cOS serii 8000, 8200, 8300 i 8600. Porównaj skanery, klawiatury i sposób transmisji danych.",
+  "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele Android RS i RK z kolektorami cOS serii 8000, 8200, 8300 i 8600. Wersję skanera i wyposażenie wybierz według PN.",
 
   "faq": [
     {

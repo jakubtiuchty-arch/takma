@@ -1,0 +1,44 @@
+[
+  {
+    "model": "8200",
+    "measured": [
+      {
+        "field": [
+          576.5,
+          576.5
+        ],
+        "fraction": 0.8400001376334834,
+        "src": "/images/products/cipherlab-8200-cos.webp",
+        "visibleLongSide": 484.2600793457032
+      }
+    ]
+  },
+  {
+    "model": "rk26",
+    "measured": [
+      {
+        "field": [
+          576.5,
+          576.5
+        ],
+        "fraction": 0.8399999388589717,
+        "src": "/images/products/cipherlab-rk26-front.webp",
+        "visibleLongSide": 484.2599647521972
+      }
+    ]
+  },
+  {
+    "model": "rk96",
+    "measured": [
+      {
+        "field": [
+          576.5,
+          576.5
+        ],
+        "fraction": 0.8400000168733358,
+        "src": "/images/products/cipherlab-rk96-front.webp",
+        "visibleLongSide": 484.26000972747806
+      }
+    ]
+  }
+]

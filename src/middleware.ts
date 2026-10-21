@@ -114,6 +114,10 @@ export async function middleware(request: NextRequest) {
       'sunmi-c20000095',
 
       // Nowe drukarki POS Epson i ich akcesoria.
+      'cipherlab-8000',
+      'cipherlab-8200',
+      'cipherlab-8300',
+      'cipherlab-8600',
       'cipherlab-rs20',
       'cipherlab-rs36',
       'cipherlab-rs38',

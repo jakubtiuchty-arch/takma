@@ -1,6 +1,8 @@
+import { cipherlabCosProducts } from './cipherlab-cos-products'
 import type { Product } from './products'
 
 export const cipherlabProducts: Product[] = [
+  ...cipherlabCosProducts,
   {
     "id": "cipherlab-rs20",
     "slug": "cipherlab-rs20",
