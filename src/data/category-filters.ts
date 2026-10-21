@@ -681,6 +681,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Datalogic', manufacturer: 'datalogic' },
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
+        { value: 'SUNMI', manufacturer: 'sunmi' },
       ],
     },
     {
