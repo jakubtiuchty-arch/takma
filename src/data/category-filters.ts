@@ -1676,3 +1676,12 @@ for (const page of ['drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotran
     if (industrial) filter.derived.push({ value: industrial.value, slugs: ['bixolon-xt3-40', 'bixolon-xt5-40', 'bixolon-xt5-40nr'] })
   }
 }
+
+// RFID is an additional choice within the existing BIXOLON printer-type filter.
+categoryFilters['drukarki-etykiet-bixolon'] = categoryFilters['drukarki-etykiet-bixolon'].map(filter =>
+  filter.specKey === 'rodzaj' ? {
+    ...filter,
+    description: `${filter.description}\n• RFID — drukowanie etykiet i kodowanie znaczników radiowych`,
+    derived: [...(filter.derived ?? []), { value: 'RFID', subcategory: 'drukarki-rfid' }],
+  } : filter
+)
