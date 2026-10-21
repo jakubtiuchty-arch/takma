@@ -395,7 +395,7 @@ export const datalogicMagellanProducts: Product[] = [
     "seoTitle": "Datalogic Magellan 3600VSi — skaner kasowy 2D | TAKMA",
     "seoDescription": "Magellan 3600VSi: pionowy skaner 1D/2D. Porównaj wersje 3610 i 3650, AUX, mocowania i zestawy EU. Ceny, stany, akcesoria oraz dokumenty w TAKMA.",
     "shortDescription": "Datalogic Magellan 3600VSi to pionowy skaner stacjonarny 1D i 2D do kas, kiosków oraz stanowisk samoobsługowych. Odczytuje kody przed oknem, bez ręcznego wyzwalania.",
-    "description": "Datalogic Magellan 3600VSi to pionowy skaner stacjonarny 1D i 2D do kas, kiosków oraz stanowisk samoobsługowych. Odczytuje kody przed oknem, bez ręcznego wyzwalania.\n\n## Pionowy odczyt przy stanowisku kasowym\n\nMagellan 3600VSi odczytuje kody z etykiet i ekranów telefonów. Obsługuje między innymi EAN, QR, Data Matrix oraz dane GS1 Digital Link. Matryca z globalną migawką ma 1360 × 1120 pikseli. Rozproszone podświetlenie dostosowuje warunki odczytu do pracy przy kasie.\n\nDla EAN 13 mil typowy zakres wynosi 0–22 cm. Dla QR 15 mil wynosi 0–16 cm. Wielkość kodu, kontrast i oświetlenie wpływają na rzeczywisty zakres. Pionowa obudowa ma wymiary 13,7 × 15,2 × 8,4 cm i masę około 0,60 kg.\n\n## 3610 i 3650 w jednej rodzinie\n\nWersja 3610 obsługuje obraz w skali szarości. Wersja 3650 dodaje przechwytywanie obrazu kolorowego i port AUX. Kamera wideo jest funkcją wersji 3670, której nie obejmuje ta oferta. Nie należy utożsamiać zdjęcia kolorowego z nagrywaniem filmu.\n\nTabela PN rozdziela wersję czytnika, mocowanie, przewód i zasilacz. Wszystkie oferowane zestawy są czarne. Interfejs hosta i wyposażenie trzeba dobrać do portu kasy.\n\n## Mocowanie i kompletne połączenie\n\n[Mocowanie 90ACC0598](/produkt/datalogic-magellan-90acc0598) służy do montażu na ladzie lub ścianie. Jest zawarte w PN z oznaczeniem 010210. Wersje 010200 nie zawierają tego mocowania. Galeria pokazuje także ujęcie urządzenia bez mocowania.\n\nZestawy 07604 zawierają europejskie zasilanie i przewód USB-A około 4,6 m. Zestaw 07104 zawiera europejskie zasilanie i przewód RS-232 około 4,6 m. Warianty 00604 zawierają przewód USB-A do zasilania zewnętrznego, ale nie zawierają zasilacza.\n\nDo konfiguracji z osobnym zasilaniem 12 V dobierz [zasilacz 90ACC0193](/produkt/datalogic-magellan-90acc0193) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam zasilacz nie zawiera przewodu sieciowego. Do samodzielnego czytnika bez przewodu można dobrać [USB-A 90A052292](/produkt/datalogic-magellan-90a052292). Nie kupuj ponownie wyposażenia zawartego w kompletnym zestawie.\n\n## Zasilanie AUX i warunki pracy\n\nUrządzenie przyjmuje 5–12 V DC. Korzystanie z AUX w 3650 wymaga odpowiedniego zasilania: zasilacza 12 V, OEM USB 12 V lub USB-C Power Delivery 9–12 V. Zwykłe USB 5 V nie wystarcza do wszystkich funkcji AUX. Dobierz przewód i host zgodnie z instrukcją.\n\nObudowa ma ochronę IP52. Zakres temperatury pracy wynosi 0–40°C. Gwarancja producenta trwa 3 lata. Aladdin, OPOS i JavaPOS wspierają konfigurację oraz integrację stanowiska.\n\nJeżeli szukasz małego czytnika na podstawce, porównaj [Magellan 900i](/produkt/datalogic-magellan-900i) i [Magellan 1500i](/produkt/datalogic-magellan-1500i). Ręczne oraz prezentacyjne modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Datalogic Magellan 3600VSi to pionowy skaner stacjonarny 1D i 2D do kas, kiosków oraz stanowisk samoobsługowych. Odczytuje kody przed oknem, bez ręcznego wyzwalania.\n\n## Pionowy odczyt przy stanowisku kasowym\n\nMagellan 3600VSi odczytuje kody z etykiet i ekranów telefonów. Obsługuje między innymi EAN, QR, Data Matrix oraz dane GS1 Digital Link. Matryca z globalną migawką ma 1360 × 1120 pikseli. Rozproszone podświetlenie dostosowuje warunki odczytu do pracy przy kasie.\n\nDla EAN 13 mil typowy zakres wynosi 0–22 cm. Dla QR 15 mil wynosi 0–16 cm. Wielkość kodu, kontrast i oświetlenie wpływają na rzeczywisty zakres. Pionowa obudowa ma wymiary 13,7 × 15,2 × 8,4 cm i masę około 0,60 kg.\n\n## 3610, 3650 i 3670 w jednej rodzinie\n\nWersja 3610 obsługuje obraz w skali szarości. Wersja 3650 dodaje przechwytywanie obrazu kolorowego i port AUX. Wersja 3670 dodaje kolorowe wideo. PN M3670-010200 nie zawiera mocowania, zasilacza ani przewodu. Nie należy utożsamiać zdjęcia kolorowego z nagrywaniem filmu.\n\nTabela PN rozdziela wersję czytnika, mocowanie, przewód i zasilacz. Wszystkie oferowane zestawy są czarne. Interfejs hosta i wyposażenie trzeba dobrać do portu kasy.\n\n## Mocowanie i kompletne połączenie\n\n[Mocowanie 90ACC0598](/produkt/datalogic-magellan-90acc0598) służy do montażu na ladzie lub ścianie. Jest zawarte w PN z oznaczeniem 010210. Wersje 010200 nie zawierają tego mocowania. Galeria pokazuje także ujęcie urządzenia bez mocowania.\n\nZestawy 07604 zawierają europejskie zasilanie i przewód USB-A około 4,6 m. Zestaw 07104 zawiera europejskie zasilanie i przewód RS-232 około 4,6 m. Warianty 00604 zawierają przewód USB-A do zasilania zewnętrznego, ale nie zawierają zasilacza.\n\nDo konfiguracji z osobnym zasilaniem 12 V dobierz [zasilacz 90ACC0193](/produkt/datalogic-magellan-90acc0193) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam zasilacz nie zawiera przewodu sieciowego. Do samodzielnego czytnika bez przewodu można dobrać [USB-A 90A052292](/produkt/datalogic-magellan-90a052292). Nie kupuj ponownie wyposażenia zawartego w kompletnym zestawie.\n\n## Zasilanie AUX i warunki pracy\n\nUrządzenie przyjmuje 5–12 V DC. Korzystanie z AUX w 3650 wymaga odpowiedniego zasilania: zasilacza 12 V, OEM USB 12 V lub USB-C Power Delivery 9–12 V. Zwykłe USB 5 V nie wystarcza do wszystkich funkcji AUX. Dobierz przewód i host zgodnie z instrukcją.\n\nObudowa ma ochronę IP52. Zakres temperatury pracy wynosi 0–40°C. Gwarancja producenta trwa 3 lata. Aladdin, OPOS i JavaPOS wspierają konfigurację oraz integrację stanowiska.\n\nJeżeli szukasz małego czytnika na podstawce, porównaj [Magellan 900i](/produkt/datalogic-magellan-900i) i [Magellan 1500i](/produkt/datalogic-magellan-1500i). Ręczne oraz prezentacyjne modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "priceFrom": 1622.67,
     "availability": "available",
     "images": [
@@ -550,6 +550,18 @@ export const datalogicMagellanProducts: Product[] = [
           "Przewód": "RS-232 ok. 4,6 m",
           "Zasilacz": "12 V + przewód EU"
         }
+      },
+      {
+        "partNumber": "M3670-010200",
+        "name": "3670 — kolorowy obraz, AUX i wideo · Bez mocowania · Bez przewodu",
+        "priceFrom": 2576.53,
+        "availability": "on-order",
+        "attributes": {
+          "Wersja": "3670 — kolorowy obraz, AUX i wideo",
+          "Mocowanie": "Brak",
+          "Przewód": "Brak",
+          "Zasilacz": "Brak"
+        }
       }
     ],
     "relatedAccessories": [
@@ -569,7 +581,7 @@ export const datalogicMagellanProducts: Product[] = [
     "faq": [
       {
         "question": "Czy wszystkie PN 3600VSi mają AUX i obraz kolorowy?",
-        "answer": "Nie. W tej ofercie funkcje te mają wersje 3650. Wersje 3610 pracują z obrazem w skali szarości i bez AUX."
+        "answer": "Nie. AUX i obraz kolorowy mają wersje 3650 oraz 3670. 3610 pracuje z obrazem w skali szarości i bez AUX."
       },
       {
         "question": "Czy zestaw z przewodem USB zawsze zawiera zasilacz?",
@@ -577,7 +589,7 @@ export const datalogicMagellanProducts: Product[] = [
       },
       {
         "question": "Czy 3650 nagrywa wideo?",
-        "answer": "Przechwytuje obrazy kolorowe. Funkcja kamery wideo dotyczy wersji 3670, której nie oferujemy na tej karcie."
+        "answer": "3650 przechwytuje kolorowe obrazy. Nagrywanie kolorowego wideo jest funkcją wersji 3670, dostępnej jako PN M3670-010200."
       },
       {
         "question": "Czy mocowanie trzeba kupić osobno?",
@@ -1030,12 +1042,12 @@ export const datalogicMagellanAccessories: Product[] = [
   {
     "id": "datalogic-magellan-90acc0193",
     "slug": "datalogic-magellan-90acc0193",
-    "name": "Zasilacz 12 V Datalogic Magellan 3600VSi",
-    "seoH1": "Zasilacz 12 V Datalogic Magellan 3600VSi",
+    "name": "Zasilacz 12 V Datalogic Magellan 90ACC0193",
+    "seoH1": "Zasilacz 12 V Datalogic Magellan 90ACC0193",
     "seoTitle": "Zasilacz 12 V Datalogic 3600VSi | TAKMA",
     "seoDescription": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
     "shortDescription": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan.",
-    "description": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan. Na tej karcie jest przeznaczony do 3600VSi, w tym oferowanych 3610 i 3650. Wymaga osobnego przewodu sieciowego EU 6003-0940 ze złączem C13. Przewód sieciowy i czytnik nie są dołączone. Nie stosuj tego zasilacza do Magellan 900i lub 1500i wymagających 5 V.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi).\n\n## Dobór zestawu\n\nPorównaj wyposażenie wybranego PN czytnika przed zakupem. Akcesorium jest osobnym produktem. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan. Obsługuje Magellan 3600VSi i 3700HSi. Wymaga osobnego przewodu sieciowego EU 6003-0940 ze złączem C13. Przewód sieciowy i czytnik nie są dołączone. Nie stosuj tego zasilacza do Magellan 900i lub 1500i wymagających 5 V.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi).\n\n## Dobór zestawu\n\nPorównaj wyposażenie wybranego PN czytnika przed zakupem. Akcesorium jest osobnym produktem. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1047,7 +1059,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0193-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz 12 V Datalogic Magellan 3600VSi — samo akcesorium"
+      "Zasilacz 12 V Datalogic Magellan 90ACC0193 — samo akcesorium"
     ],
     "tags": [],
     "isNew": false,
@@ -1067,7 +1079,7 @@ export const datalogicMagellanAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Magellan 3600VSi"
+        "value": "Magellan 3600VSi, 3700HSi"
       }
     ],
     "applications": [
@@ -1075,7 +1087,8 @@ export const datalogicMagellanAccessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-magellan-3600vsi"
+      "datalogic-magellan-3600vsi",
+      "datalogic-magellan-3700hsi"
     ],
     "relatedAccessories": [
       "datalogic-powerscan-6003-0940",
@@ -1089,12 +1102,12 @@ export const datalogicMagellanAccessories: Product[] = [
   {
     "id": "datalogic-magellan-90a052292",
     "slug": "datalogic-magellan-90a052292",
-    "name": "Przewód USB-A Datalogic Magellan 3600VSi — ok. 4,6 m",
-    "seoH1": "Przewód USB-A Datalogic Magellan 3600VSi — ok. 4,6 m",
+    "name": "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m",
+    "seoH1": "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m",
     "seoTitle": "Przewód USB-A Datalogic 3600VSi — ok. 4,6 m | TAKMA",
-    "seoDescription": "Przewód 90A052292 łączy zgodny Magellan 3600VSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
-    "shortDescription": "Przewód 90A052292 łączy zgodny Magellan 3600VSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym.",
-    "description": "Przewód 90A052292 łączy zgodny Magellan 3600VSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Długość wynosi 15 stóp, około 4,6 m. Zasilacz 90ACC0193 i przewód sieciowy 6003-0940 są osobnymi elementami. Sam przewód nie jest zasilaczem. Nie kupuj go ponownie, jeśli wybrany PN zawiera przewód USB.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi).\n\n## Dobór zestawu\n\nPorównaj wyposażenie wybranego PN czytnika przed zakupem. Akcesorium jest osobnym produktem. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "seoDescription": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "shortDescription": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym.",
+    "description": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Długość wynosi 15 stóp, około 4,6 m. Zasilacz dobierz do modelu czytnika. 3600VSi i 3700HSi obsługują 90ACC0193. 3510HSi i 3550HSi wymagają 90ACC0358. Przewód sieciowy jest osobnym elementem. Sam przewód nie jest zasilaczem. Nie kupuj go ponownie, jeśli wybrany PN zawiera przewód USB.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi).\n\n## Dobór zestawu\n\nPorównaj wyposażenie wybranego PN czytnika przed zakupem. Akcesorium jest osobnym produktem. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1106,7 +1119,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90a052292-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód USB-A Datalogic Magellan 3600VSi — ok. 4,6 m — samo akcesorium"
+      "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m — samo akcesorium"
     ],
     "tags": [],
     "isNew": false,
@@ -1126,7 +1139,7 @@ export const datalogicMagellanAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Magellan 3600VSi"
+        "value": "Magellan 3510HSi, 3550HSi, 3600VSi, 3700HSi"
       }
     ],
     "applications": [
@@ -1134,7 +1147,10 @@ export const datalogicMagellanAccessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-magellan-3600vsi"
+      "datalogic-magellan-3600vsi",
+      "datalogic-magellan-3510hsi",
+      "datalogic-magellan-3550hsi",
+      "datalogic-magellan-3700hsi"
     ],
     "relatedAccessories": [],
     "createdAt": "2026-10-21",

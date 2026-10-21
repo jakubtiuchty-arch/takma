@@ -243,7 +243,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
-  const rfidTextLinks = isRfidContentProduct(product.id) || datalogicScannerContent
+  const rfidTextLinks = isRfidContentProduct(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 

@@ -116,6 +116,7 @@ const navigation: NavItem[] = [
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
+      { name: 'Skanery ladowe', href: '/skanery-kodow-kreskowych/ladowe' },
       { name: 'Skanery pierścieniowe', href: '/skanery-kodow-kreskowych/pierscieniowe' },
     ],
   },

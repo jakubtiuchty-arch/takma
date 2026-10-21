@@ -28,7 +28,7 @@ export const datalogicScannerCategory: BrandCategoryRichContent = {
   "useCases": [
     {
       "title": "Kasa i obsługa klienta",
-      "description": "Do stanowiska bez trzymania czytnika porównaj [Magellan 900i](/produkt/datalogic-magellan-900i) i [1500i](/produkt/datalogic-magellan-1500i). Do etykiet i kodów z telefonów porównaj [QW2520](/produkt/datalogic-quickscan-qw2520) oraz [Heron HD3430](/produkt/datalogic-heron-hd3430). Jeśli skanujesz wyłącznie kody liniowe, sprawdź [QD2220](/produkt/datalogic-quickscan-qd2220)."
+      "description": "Do zabudowy w blacie porównaj [skanery ladowe](/skanery-kodow-kreskowych/ladowe), w tym [3700HSi](/produkt/datalogic-magellan-3700hsi) oraz dwuokienkowy [9550i](/produkt/datalogic-magellan-9550i). Do stanowiska bez trzymania czytnika porównaj [Magellan 900i](/produkt/datalogic-magellan-900i) i [1500i](/produkt/datalogic-magellan-1500i). Do etykiet i kodów z telefonów porównaj [QW2520](/produkt/datalogic-quickscan-qw2520) oraz [Heron HD3430](/produkt/datalogic-heron-hd3430). Jeśli skanujesz wyłącznie kody liniowe, sprawdź [QD2220](/produkt/datalogic-quickscan-qd2220)."
     },
     {
       "title": "Przyjęcie dostaw i kompletacja",

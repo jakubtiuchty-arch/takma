@@ -1,3 +1,4 @@
+import { counterScannerProducts, counterScannerAccessories } from './counter-scanner-products'
 import { datalogicMagellanProducts, datalogicMagellanAccessories } from './datalogic-magellan-products'
 import { datalogicAdditionalScanners, datalogicAdditionalAccessories } from './datalogic-handheld-additions'
 import { datalogicPowerScanProducts, datalogicPowerScanAccessories } from './datalogic-powerscan-products'
@@ -1101,6 +1102,19 @@ export const subcategories: Subcategory[] = [
     icon: 'scan',
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
     productCount: 2,
+  },
+  {
+    id: 'skanery-ladowe',
+    slug: 'skanery-kodow-kreskowych/ladowe',
+    name: 'Skanery ladowe',
+    parentCategoryId: 'skanery-kodow-kreskowych',
+    description: 'Skanery ladowe 1D i 2D do zabudowy w stanowiskach kasowych. Poziome i dwuokienkowe modele Datalogic oraz Zebra.',
+    seoTitle: 'Skanery ladowe 1D/2D do zabudowy — Datalogic i Zebra',
+    seoDescription: 'Skanery ladowe do kas POS i samoobsługowych: Datalogic Magellan i Zebra SP72 oraz MP7200. Porównaj montaż, zestawy PN, ceny i dostępność w TAKMA.',
+    longDescription: 'Skanery ladowe 1D i 2D do zabudowy w kasach POS. Porównaj poziome i dwuokienkowe modele Datalogic oraz Zebra.',
+    icon: 'scan',
+    productIds: [],
+    productCount: 0,
   },
   {
     id: 'skanery-pierscieniowe',
@@ -95377,7 +95391,7 @@ for (const subcategory of subcategories) {
 }
 
 for (const subcategory of subcategories) {
-  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
+  const additions = [...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories].filter(p => p.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95385,7 +95399,7 @@ for (const subcategory of subcategories) {
 }
 
 const rawProductList: Product[] = [
-  ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories,
+  ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...tsl3128Products,

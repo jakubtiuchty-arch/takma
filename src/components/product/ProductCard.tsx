@@ -61,7 +61,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const placeholderLogo = product.manufacturerId === 'brady' && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
   // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
-  const datalogicScannerImage = product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-') || product.id.startsWith('datalogic-powerscan-') || product.id.startsWith('datalogic-heron-') || /^datalogic-td11/.test(product.id) || product.id.startsWith('datalogic-handheld-') || product.id.startsWith('datalogic-magellan-')
+  const datalogicScannerImage = /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id) || product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-') || product.id.startsWith('datalogic-powerscan-') || product.id.startsWith('datalogic-heron-') || /^datalogic-td11/.test(product.id) || product.id.startsWith('datalogic-handheld-') || product.id.startsWith('datalogic-magellan-')
   const datalogicHandheldImage = datalogicScannerImage && product.categoryId === 'skanery-kodow-kreskowych'
   const uniformGridImage = product.uniformImage || product.id === 'unitech-rp300' || datalogicScannerImage
   const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : product.uniformImageFraction

@@ -1,3 +1,4 @@
+import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
 import { rfidSledContent } from './rfid-sled-category'
 import { rfidTerminalContent } from './rfid-terminal-category'
@@ -106,6 +107,7 @@ export interface SubcategoryRichContent {
 }
 
 export const subcategoryContent: Record<string, SubcategoryRichContent> = {
+  'skanery-kodow-kreskowych/ladowe': counterScannerContent,
   'etykiety-rfid-zebra': rfidLabelContent,
   'drukarki-rfid': rfidPrinterContent,
   'terminale-rfid': rfidTerminalContent,

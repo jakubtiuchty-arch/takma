@@ -1,3 +1,4 @@
+import { counterScannerProducts, counterScannerAccessories } from '@/data/counter-scanner-products'
 import { datalogicMagellanProducts, datalogicMagellanAccessories } from '@/data/datalogic-magellan-products'
 import { datalogicAdditionalScanners, datalogicAdditionalAccessories } from '@/data/datalogic-handheld-additions'
 import { datalogicPowerScanProducts, datalogicPowerScanAccessories } from '@/data/datalogic-powerscan-products'
@@ -49,7 +50,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
-  ...[...datalogicQuickScanProducts, ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories].map(product => product.slug),
+  ...[...datalogicQuickScanProducts, ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories].map(product => product.slug),
   ...unitechRp300Products.map(product => product.slug),
   ...unitechRp300Accessories.map(product => product.slug),
   ...unitechRp902Products.map(product => product.slug),
