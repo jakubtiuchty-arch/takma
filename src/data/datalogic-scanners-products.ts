@@ -6,10 +6,10 @@ export const datalogicQuickScanProducts: Product[] = [
     "slug": "datalogic-quickscan-qd2590",
     "name": "Datalogic QuickScan QD2590",
     "sameAs": "https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html",
-    "seoTitle": "Datalogic QuickScan QD2590 — skaner 2D USB / RS-232 | TAKMA",
-    "seoDescription": "QuickScan QD2590: przewodowy skaner 1D i 2D z matrycą 1 MP. Porównaj PN, zestawy USB i podstawkę. Ceny, stany oraz instrukcja do pobrania.",
+    "seoTitle": "Datalogic QuickScan QD2590 — skaner 2D USB i RS-232 | TAKMA",
+    "seoDescription": "Datalogic QuickScan QD2590: skaner 2D USB i RS-232. Matryca 1 MP i wybór interfejsu. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Przewodowy skaner 1D i 2D z matrycą 1 MP, USB i RS-232. Green Spot, IP52 i 5 lat gwarancji producenta.",
-    "description": "Datalogic QuickScan QD2590 to przewodowy skaner kodów 1D i 2D do kasy, recepcji oraz stanowiska przyjęcia towaru. Przewód zapewnia zasilanie podczas pracy. Nie musisz ładować akumulatora.\n\n## Odczyt etykiet i ekranów\n\nMatryca 1280 × 800 pikseli odczytuje kody EAN, QR i Data Matrix. Możesz skanować papierowe etykiety oraz kody wyświetlane na telefonie. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Rzeczywista odległość zależy od rozmiaru, jakości i kontrastu kodu.\n\nNiebieski celownik pomaga wskazać kod. Zielony punkt Green Spot potwierdza udany odczyt bezpośrednio na etykiecie. Motionix rozpoznaje podniesienie czytnika i zmianę sposobu pracy.\n\n## Wybierz zawartość zestawu\n\nQD2590-BK obejmuje sam skaner. Do podłączenia potrzebujesz zgodnego przewodu, sprzedawanego osobno. QD2590-BKK1 zawiera skaner i przewód USB 90A052258. QD2590-BKK1B dodaje podstawkę STD-AUTO-QD25-BK.\n\nCzytnik obsługuje USB i RS-232. Zestaw USB nie zawiera przewodu RS-232. Tryb USB HID przekazuje dane jak klawiatura. Inne tryby połączenia mogą wymagać sterownika lub konfiguracji aplikacji.\n\n## Obudowa i konfiguracja\n\nObudowa ma klasę IP52. Czytnik wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Pracuje w temperaturze od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nDatalogic Aladdin służy do ustawienia interfejsu, sygnałów i formatu danych. Jeśli wystarczy USB i matryca VGA, porównaj [QW2520](/produkt/datalogic-quickscan-qw2520). Do większego zakresu odczytu sprawdź [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690).",
+    "description": "Datalogic QuickScan QD2590 to przewodowy skaner kodów 1D i 2D do kasy, recepcji oraz stanowiska przyjęcia towaru. Przewód zapewnia zasilanie podczas pracy. Nie musisz ładować akumulatora.\n\n## Odczyt etykiet i ekranów\n\nMatryca 1280 × 800 pikseli odczytuje kody EAN, QR i Data Matrix. Możesz skanować papierowe etykiety oraz kody wyświetlane na telefonie. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Rzeczywista odległość zależy od rozmiaru, jakości i kontrastu kodu.\n\nNiebieski celownik pomaga wskazać kod. Zielony punkt Green Spot potwierdza udany odczyt bezpośrednio na etykiecie. Motionix rozpoznaje podniesienie czytnika i zmianę sposobu pracy.\n\n## Wybierz zawartość zestawu\n\nQD2590-BK obejmuje sam skaner. Do podłączenia potrzebujesz zgodnego przewodu, sprzedawanego osobno. QD2590-BKK1 zawiera skaner i przewód USB 90A052258. QD2590-BKK1B dodaje podstawkę STD-AUTO-QD25-BK.\n\nCzytnik obsługuje USB i RS-232. Zestaw USB nie zawiera przewodu RS-232. Tryb USB HID przekazuje dane jak klawiatura. Inne tryby połączenia mogą wymagać sterownika lub konfiguracji aplikacji.\n\n## Obudowa i konfiguracja\n\nObudowa ma klasę IP52. Czytnik wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Pracuje w temperaturze od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nDatalogic Aladdin służy do ustawienia interfejsu, sygnałów i formatu danych. Jeśli wystarczy USB i matryca VGA, porównaj [QW2520](/produkt/datalogic-quickscan-qw2520). Do większego zakresu odczytu sprawdź [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690).\n\n## Matryca 1 MP i wybór interfejsu\n\nQD2590 obsługuje USB i RS-232 oraz matrycę 1 MP. To różnica względem QW2520 z USB i matrycą VGA. Zestaw USB nie zawiera automatycznie przewodu RS-232. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -160,25 +160,25 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy zestaw zawiera przewód do komputera?",
-        "answer": "Wersja QD2590-BK nie zawiera przewodu. Zestaw z końcówką BKK1 zawiera przewód USB 90A052258."
+        "question": "Czym QD2590 różni się od QW2520?",
+        "answer": "QD2590 ma matrycę 1 MP oraz USB i RS-232. QW2520 ma matrycę VGA i USB. Oba odczytują kody 1D i 2D."
       },
       {
-        "question": "Czy ten czytnik obsługuje RFID?",
-        "answer": "Nie. To skaner optyczny kodów 1D i 2D. Nie odczytuje znaczników UHF RFID."
+        "question": "Czy QuickScan QD2590 zawiera przewód do komputera?",
+        "answer": "Wersja QD2590-BK nie zawiera przewodu. Zestaw z końcówką BKK1 zawiera przewód USB 90A052258."
       }
     ],
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   },
   {
     "id": "datalogic-quickscan-qw2520",
     "slug": "datalogic-quickscan-qw2520",
     "name": "Datalogic QuickScan QW2520",
     "sameAs": "https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html",
-    "seoTitle": "Datalogic QuickScan QW2520 — skaner 2D USB | TAKMA",
-    "seoDescription": "QuickScan QW2520: przewodowy skaner 1D i 2D USB z matrycą VGA. Wybierz sam czytnik lub zestaw z przewodem. Sprawdź ceny, stany i dokumenty.",
+    "seoTitle": "Datalogic QuickScan QW2520 — skaner 2D USB VGA | TAKMA",
+    "seoDescription": "Datalogic QuickScan QW2520: skaner 2D USB VGA. Odczyt QR przy stanowisku USB. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Przewodowy skaner 1D i 2D USB z matrycą VGA. Odczytuje etykiety i ekrany. Green Spot, IP52 i 5 lat gwarancji producenta.",
-    "description": "Datalogic QuickScan QW2520 to przewodowy skaner kodów 1D i 2D z interfejsem USB. Służy do obsługi kasy, dokumentów i paczek na jednym stanowisku. Nie wymaga ładowania.\n\n## Matryca VGA do codziennego skanowania\n\nMatryca 640 × 480 pikseli odczytuje EAN, QR i Data Matrix. Obsługuje etykiety papierowe oraz ekrany telefonów. Typowy zakres dla EAN/UPC 13 mil wynosi 1–40 cm. Wynik zależy od jakości i rozmiaru kodu.\n\nNiebieski celownik pomaga wskazać etykietę. Green Spot wyświetla zielony punkt po udanym odczycie. Motionix rozpoznaje zmianę położenia skanera.\n\n## Sam skaner lub zestaw USB\n\nQW2520-BK obejmuje sam czytnik, bez przewodu. QW2520-BKK1 zawiera czytnik i przewód USB 90A052258. Podstawka nie jest częścią tych dwóch konfiguracji.\n\nQW2520 obsługuje USB. Jeśli stanowisko wymaga RS-232, wybierz [QD2590](/produkt/datalogic-quickscan-qd2590). Ma matrycę 1 MP i inny zestaw interfejsów. W trybie USB HID dane trafiają do aktywnego pola jak z klawiatury. Ustaw układ klawiatury zgodny z komputerem.\n\n## Odporność na stanowisku pracy\n\nCzytnik ma klasę ochrony IP52. Wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Spust ma trwałość 10 milionów naciśnięć. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli potrzebujesz pracy bez przewodu, porównaj [QBT2500 Bluetooth](/produkt/datalogic-quickscan-qbt2500) oraz [QM2500 STAR 433 MHz](/produkt/datalogic-quickscan-qm2500). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Datalogic QuickScan QW2520 to przewodowy skaner kodów 1D i 2D z interfejsem USB. Służy do obsługi kasy, dokumentów i paczek na jednym stanowisku. Nie wymaga ładowania.\n\n## Matryca VGA do codziennego skanowania\n\nMatryca 640 × 480 pikseli odczytuje EAN, QR i Data Matrix. Obsługuje etykiety papierowe oraz ekrany telefonów. Typowy zakres dla EAN/UPC 13 mil wynosi 1–40 cm. Wynik zależy od jakości i rozmiaru kodu.\n\nNiebieski celownik pomaga wskazać etykietę. Green Spot wyświetla zielony punkt po udanym odczycie. Motionix rozpoznaje zmianę położenia skanera.\n\n## Sam skaner lub zestaw USB\n\nQW2520-BK obejmuje sam czytnik, bez przewodu. QW2520-BKK1 zawiera czytnik i przewód USB 90A052258. Podstawka nie jest częścią tych dwóch konfiguracji.\n\nQW2520 obsługuje USB. Jeśli stanowisko wymaga RS-232, wybierz [QD2590](/produkt/datalogic-quickscan-qd2590). Ma matrycę 1 MP i inny zestaw interfejsów. W trybie USB HID dane trafiają do aktywnego pola jak z klawiatury. Ustaw układ klawiatury zgodny z komputerem.\n\n## Odporność na stanowisku pracy\n\nCzytnik ma klasę ochrony IP52. Wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Spust ma trwałość 10 milionów naciśnięć. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli potrzebujesz pracy bez przewodu, porównaj [QBT2500 Bluetooth](/produkt/datalogic-quickscan-qbt2500) oraz [QM2500 STAR 433 MHz](/produkt/datalogic-quickscan-qm2500). Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Odczyt QR przy stanowisku USB\n\nQW2520 łączy matrycę VGA z USB. Wybierz go do stanowiska z kodami 1D i 2D, które nie wymaga RS-232. QD2590 dodaje wybór interfejsu i matrycę 1 MP.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -314,15 +314,15 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy zestaw zawiera przewód do komputera?",
-        "answer": "Wersja QW2520-BK nie zawiera przewodu. Zestaw z końcówką BKK1 zawiera przewód USB 90A052258."
+        "question": "Czy QW2520 można podłączyć do RS-232?",
+        "answer": "QW2520 obsługuje USB. Jeśli stanowisko wymaga RS-232, porównaj QD2590 i dobierz właściwy przewód."
       },
       {
-        "question": "Czy ten czytnik obsługuje RFID?",
-        "answer": "Nie. To skaner optyczny kodów 1D i 2D. Nie odczytuje znaczników UHF RFID."
+        "question": "Czy QuickScan QW2520 zawiera przewód do komputera?",
+        "answer": "Wersja QW2520-BK nie zawiera przewodu. Zestaw z końcówką BKK1 zawiera przewód USB 90A052258."
       }
     ],
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   },
   {
     "id": "datalogic-quickscan-qbt2500",
@@ -330,9 +330,9 @@ export const datalogicQuickScanProducts: Product[] = [
     "name": "Datalogic QuickScan QBT2500",
     "sameAs": "https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html",
     "seoTitle": "Datalogic QuickScan QBT2500 — skaner 2D Bluetooth | TAKMA",
-    "seoDescription": "QuickScan QBT2500: skaner 1D i 2D Bluetooth 5.0. Zestaw z bazą i przewodem USB. Sprawdź cenę, dostępność, parametry i instrukcję.",
+    "seoDescription": "Datalogic QuickScan QBT2500: skaner 2D Bluetooth. QuickScan 2D z Bluetooth 5.0. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Skaner 1D i 2D Bluetooth 5.0 z matrycą 1 MP. Zestaw zawiera bazę BC2090 i przewód USB. Akumulator 3250 mAh.",
-    "description": "Datalogic QuickScan QBT2500 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.0. Pozwala odejść od komputera podczas przyjęcia dostawy lub obsługi klienta. Matryca 1 MP odczytuje etykiety oraz ekrany telefonów.\n\n## Bluetooth i baza BC2090\n\nZestaw QBT2500-BK-BTK1 obejmuje skaner, bazę BC2090 i przewód USB 90A052258. Baza komunikuje się z komputerem i ładuje czytnik. Obsługuje USB oraz RS-232. Przewód RS-232 nie jest dołączony.\n\nZasięg Bluetooth wynosi do 50 m w otwartej przestrzeni. Ściany, regały i inne urządzenia radiowe mogą go ograniczyć. Skaner obsługuje profil SPP. Przed połączeniem bezpośrednio z urządzeniem mobilnym sprawdź obsługę profilu w aplikacji.\n\n## Odczyt kodów przy towarze\n\nMatryca 1280 × 800 pikseli obsługuje EAN, QR i Data Matrix. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Niebieski celownik wskazuje obszar odczytu. Zielony punkt Green Spot potwierdza poprawne skanowanie na kodzie.\n\n## Ładowanie i obudowa\n\nAkumulator litowo-jonowy ma pojemność 3250 mAh. Typowe ładowanie w bazie trwa 4 godziny przy zewnętrznym zasilaniu 12 V. Ładowanie przez port USB-C skanera trwa typowo 3 godziny z odpowiednim zasilaczem. Zasilacz zewnętrzny nie jest częścią zestawu USB. Czas zależy od źródła zasilania i warunków pracy.\n\nObudowa ma klasę IP52 i wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli potrzebujesz radia 433 MHz zamiast Bluetooth, wybierz [QM2500](/produkt/datalogic-quickscan-qm2500). Do ładowania indukcyjnego i Bluetooth 5.2 porównaj [Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600).",
+    "description": "Datalogic QuickScan QBT2500 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.0. Pozwala odejść od komputera podczas przyjęcia dostawy lub obsługi klienta. Matryca 1 MP odczytuje etykiety oraz ekrany telefonów.\n\n## Bluetooth i baza BC2090\n\nZestaw QBT2500-BK-BTK1 obejmuje skaner, bazę BC2090 i przewód USB 90A052258. Baza komunikuje się z komputerem i ładuje czytnik. Obsługuje USB oraz RS-232. Przewód RS-232 nie jest dołączony.\n\nZasięg Bluetooth wynosi do 50 m w otwartej przestrzeni. Ściany, regały i inne urządzenia radiowe mogą go ograniczyć. Skaner obsługuje profil SPP. Przed połączeniem bezpośrednio z urządzeniem mobilnym sprawdź obsługę profilu w aplikacji.\n\n## Odczyt kodów przy towarze\n\nMatryca 1280 × 800 pikseli obsługuje EAN, QR i Data Matrix. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Niebieski celownik wskazuje obszar odczytu. Zielony punkt Green Spot potwierdza poprawne skanowanie na kodzie.\n\n## Ładowanie i obudowa\n\nAkumulator litowo-jonowy ma pojemność 3250 mAh. Typowe ładowanie w bazie trwa 4 godziny przy zewnętrznym zasilaniu 12 V. Ładowanie przez port USB-C skanera trwa typowo 3 godziny z odpowiednim zasilaczem. Zasilacz zewnętrzny nie jest częścią zestawu USB. Czas zależy od źródła zasilania i warunków pracy.\n\nObudowa ma klasę IP52 i wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli potrzebujesz radia 433 MHz zamiast Bluetooth, wybierz [QM2500](/produkt/datalogic-quickscan-qm2500). Do ładowania indukcyjnego i Bluetooth 5.2 porównaj [Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600).\n\n## QuickScan 2D z Bluetooth 5.0\n\nQBT2500 przesyła dane przez Bluetooth 5.0. Oferowany zestaw obejmuje bazę BC2090 i przewód USB. QM2500 używa innego systemu radiowego: STAR 433 MHz. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -477,25 +477,25 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy zestaw zawiera przewód do komputera?",
-        "answer": "Tak. QBT2500-BK-BTK1 zawiera bazę i przewód USB 90A052258."
+        "question": "Czy QBT2500 działa w systemie STAR QM2500?",
+        "answer": "Nie. QBT2500 korzysta z Bluetooth 5.0. QM2500 używa STAR 433 MHz i wymaga właściwej bazy komunikacyjnej."
       },
       {
-        "question": "Czy ten czytnik obsługuje RFID?",
-        "answer": "Nie. To skaner optyczny kodów 1D i 2D. Nie odczytuje znaczników UHF RFID."
+        "question": "Czy QuickScan QBT2500 zawiera przewód do komputera?",
+        "answer": "Tak. QBT2500-BK-BTK1 zawiera bazę i przewód USB 90A052258."
       }
     ],
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   },
   {
     "id": "datalogic-quickscan-qm2500",
     "slug": "datalogic-quickscan-qm2500",
     "name": "Datalogic QuickScan QM2500",
     "sameAs": "https://www.datalogic.com/eng/retail-manufacturing-healthcare-gs1-digital-link/handheld-scanners/quickscan-2500-series-pd-898.html",
-    "seoTitle": "Datalogic QuickScan QM2500 — skaner 2D 433 MHz | TAKMA",
-    "seoDescription": "QuickScan QM2500: bezprzewodowy skaner 1D i 2D STAR 433 MHz. Zestawy z bazą, z przewodem USB lub bez. Sprawdź ceny, stany i dokumenty.",
+    "seoTitle": "Datalogic QuickScan QM2500 — skaner 2D STAR 433 MHz | TAKMA",
+    "seoDescription": "Datalogic QuickScan QM2500: skaner 2D STAR 433 MHz. QuickScan 2D do radia STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Skaner 1D i 2D STAR 433 MHz z matrycą 1 MP i bazą BC2090. Do 30 m w otwartej przestrzeni. Akumulator 3250 mAh.",
-    "description": "Datalogic QuickScan QM2500 to bezprzewodowy skaner kodów 1D i 2D z radiem STAR 433 MHz. Przekazuje dane przez bazę BC2090 do komputera. Służy do przyjęcia dostaw, liczenia towaru i obsługi punktu sprzedaży.\n\n## STAR 433 MHz zamiast Bluetooth\n\nEuropejskie wersje w tej ofercie pracują w paśmie 433,92 MHz. Nie używają Bluetooth. Do transmisji potrzebują zgodnej bazy STAR. Nominalny zasięg wynosi do 30 m w otwartej przestrzeni. Metalowe regały i ściany mogą go zmniejszyć.\n\n## Dwa zestawy z bazą\n\nQM2500-BK-433 obejmuje skaner i bazę BC2090. Przewód do komputera trzeba zamówić osobno. QM2500-BK-433K1 zawiera także przewód USB 90A052258. Obie konfiguracje mają czarną obudowę i tę samą optykę.\n\nBaza obsługuje USB oraz RS-232. Zestaw USB nie zawiera przewodu RS-232. Podłącz bazę i ustaw interfejs zgodny z programem sprzedażowym lub magazynowym.\n\n## Etykiety, ekrany i potwierdzenie odczytu\n\nMatryca 1280 × 800 pikseli odczytuje kody EAN, QR i Data Matrix. Obsługuje papier oraz ekrany telefonów. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Green Spot potwierdza udany odczyt zielonym punktem na kodzie.\n\n## Zasilanie i odporność\n\nAkumulator litowo-jonowy ma pojemność 3250 mAh. Typowe ładowanie przez bazę trwa 4 godziny przy zewnętrznym zasilaniu 12 V. Zasilacz zewnętrzny nie jest dołączony do zestawu USB. Czas ładowania zależy od źródła zasilania.\n\nObudowa ma klasę IP52. Wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nDo Bluetooth porównaj [QBT2500](/produkt/datalogic-quickscan-qbt2500). Do odczytu z większej odległości i ładowania indukcyjnego sprawdź [Gryphon GM4600](/produkt/datalogic-gryphon-gm4600).",
+    "description": "Datalogic QuickScan QM2500 to bezprzewodowy skaner kodów 1D i 2D z radiem STAR 433 MHz. Przekazuje dane przez bazę BC2090 do komputera. Służy do przyjęcia dostaw, liczenia towaru i obsługi punktu sprzedaży.\n\n## STAR 433 MHz zamiast Bluetooth\n\nEuropejskie wersje w tej ofercie pracują w paśmie 433,92 MHz. Nie używają Bluetooth. Do transmisji potrzebują zgodnej bazy STAR. Nominalny zasięg wynosi do 30 m w otwartej przestrzeni. Metalowe regały i ściany mogą go zmniejszyć.\n\n## Dwa zestawy z bazą\n\nQM2500-BK-433 obejmuje skaner i bazę BC2090. Przewód do komputera trzeba zamówić osobno. QM2500-BK-433K1 zawiera także przewód USB 90A052258. Obie konfiguracje mają czarną obudowę i tę samą optykę.\n\nBaza obsługuje USB oraz RS-232. Zestaw USB nie zawiera przewodu RS-232. Podłącz bazę i ustaw interfejs zgodny z programem sprzedażowym lub magazynowym.\n\n## Etykiety, ekrany i potwierdzenie odczytu\n\nMatryca 1280 × 800 pikseli odczytuje kody EAN, QR i Data Matrix. Obsługuje papier oraz ekrany telefonów. Typowy zakres dla EAN/UPC 13 mil wynosi 0,5–51 cm. Green Spot potwierdza udany odczyt zielonym punktem na kodzie.\n\n## Zasilanie i odporność\n\nAkumulator litowo-jonowy ma pojemność 3250 mAh. Typowe ładowanie przez bazę trwa 4 godziny przy zewnętrznym zasilaniu 12 V. Zasilacz zewnętrzny nie jest dołączony do zestawu USB. Czas ładowania zależy od źródła zasilania.\n\nObudowa ma klasę IP52. Wytrzymuje wielokrotne upadki z 1,5 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nDo Bluetooth porównaj [QBT2500](/produkt/datalogic-quickscan-qbt2500). Do odczytu z większej odległości i ładowania indukcyjnego sprawdź [Gryphon GM4600](/produkt/datalogic-gryphon-gm4600).\n\n## QuickScan 2D do radia STAR\n\nQM2500 łączy matrycę 1 MP z europejskim radiem STAR 433 MHz. Wybór przewodu zależy od PN zestawu. Do instalacji Bluetooth porównaj QBT2500 zamiast zmieniać samą bazę. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -651,15 +651,15 @@ export const datalogicQuickScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy zestaw zawiera przewód do komputera?",
-        "answer": "QM2500-BK-433 nie zawiera przewodu. QM2500-BK-433K1 zawiera przewód USB 90A052258."
+        "question": "Czy QM2500 i QBT2500 korzystają z tego samego radia?",
+        "answer": "Nie. QM2500 używa STAR 433 MHz, a QBT2500 Bluetooth 5.0. Dobierz czytnik i bazę do systemu stanowiska."
       },
       {
-        "question": "Czy ten czytnik obsługuje RFID?",
-        "answer": "Nie. To skaner optyczny kodów 1D i 2D. Nie odczytuje znaczników UHF RFID."
+        "question": "Czy QuickScan QM2500 zawiera przewód do komputera?",
+        "answer": "QM2500-BK-433 nie zawiera przewodu. QM2500-BK-433K1 zawiera przewód USB 90A052258."
       }
     ],
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   }
 ]
 
@@ -676,7 +676,7 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-21",
     "id": "datalogic-gryphon-gd4690",
     "slug": "datalogic-gryphon-gd4690",
     "name": "Datalogic Gryphon GD4690",
@@ -684,8 +684,8 @@ export const datalogicGryphonProducts: Product[] = [
     "subcategoryIds": [
       "skanery-przewodowe"
     ],
-    "seoTitle": "Datalogic Gryphon GD4690 — skaner 2D USB / RS-232 | TAKMA",
-    "seoDescription": "Gryphon GD4690: przewodowy skaner 1D i 2D HP z dwiema matrycami. Wybierz sam czytnik, zestaw USB lub z podstawką. Ceny, stany i akcesoria.",
+    "seoTitle": "Datalogic Gryphon GD4690 — skaner 2D HP USB | TAKMA",
+    "seoDescription": "Datalogic Gryphon GD4690: skaner 2D HP USB. Dwie matryce HP przy stałym stanowisku. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Skaner 1D i 2D HP z dwiema matrycami, USB i RS-232. Zasilanie przewodowe, IP52 i 5 lat gwarancji.",
     "images": [
       "/images/products/datalogic-gryphon-4600-corded-partner-v1.webp",
@@ -741,7 +741,7 @@ export const datalogicGryphonProducts: Product[] = [
       "Recepcja",
       "Kontrola towaru"
     ],
-    "description": "Datalogic Gryphon GD4690 to przewodowy skaner kodów 1D i 2D do kasy oraz stanowiska kontroli towaru. Wersja HP ma dwie matryce. Odczytuje kody z etykiet i ekranów bez ładowania akumulatora.\n\n## Dwie matryce do różnych odległości\n\nUkład HP łączy matrycę 1,5 MP z drugą matrycą VGA. Typowy zakres odczytu EAN/UPC 13 mil sięga 100 cm. Odległość zależy od jakości, wielkości i kontrastu kodu. Nie oznacza tego samego zasięgu dla każdego kodu QR lub Data Matrix.\n\nZielony celownik w kształcie krzyża pomaga wskazać kod. Green Spot i sygnalizacja 3GL potwierdzają odczyt. Możesz wybrać ciepłe białe lub czerwone oświetlenie.\n\n## Trzy konfiguracje HP\n\nGD4690-BK-HP obejmuje sam skaner. Wymaga osobnego przewodu dobranego do interfejsu komputera. GD4690-BKK1-HP zawiera przewód USB 90A052258. GD4690-BKK1B-HP dodaje podstawkę prezentacyjną PM-BASE-GD46-BK.\n\nWszystkie trzy PN mają tę samą optykę HP. Obsługują USB i RS-232. Przewód RS-232 nie jest dołączony do zestawów USB.\n\n## Skanowanie bez trzymania czytnika\n\n[Podstawka PM-BASE-GD46-BK](/produkt/datalogic-gryphon-4600-presentation-base) pozwala ustawić czytnik na stanowisku. Po wybraniu odpowiedniego trybu podsuń kod przed okno odczytu. Podstawka nie jest ładowarką i nie służy do bezprzewodowych GBT4600 ani GM4600.\n\n## Obudowa i gwarancja\n\nGD4690 ma klasę ochrony IP52. Wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Masa samego czytnika wynosi około 144 g. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli operator musi odejść od stanowiska, porównaj [GBT4600 Bluetooth](/produkt/datalogic-gryphon-gbt4600) i [GM4600 STAR 433 MHz](/produkt/datalogic-gryphon-gm4600). Do prostszego stanowiska USB sprawdź [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520).",
+    "description": "Datalogic Gryphon GD4690 to przewodowy skaner kodów 1D i 2D do kasy oraz stanowiska kontroli towaru. Wersja HP ma dwie matryce. Odczytuje kody z etykiet i ekranów bez ładowania akumulatora.\n\n## Dwie matryce do różnych odległości\n\nUkład HP łączy matrycę 1,5 MP z drugą matrycą VGA. Typowy zakres odczytu EAN/UPC 13 mil sięga 100 cm. Odległość zależy od jakości, wielkości i kontrastu kodu. Nie oznacza tego samego zasięgu dla każdego kodu QR lub Data Matrix.\n\nZielony celownik w kształcie krzyża pomaga wskazać kod. Green Spot i sygnalizacja 3GL potwierdzają odczyt. Możesz wybrać ciepłe białe lub czerwone oświetlenie.\n\n## Trzy konfiguracje HP\n\nGD4690-BK-HP obejmuje sam skaner. Wymaga osobnego przewodu dobranego do interfejsu komputera. GD4690-BKK1-HP zawiera przewód USB 90A052258. GD4690-BKK1B-HP dodaje podstawkę prezentacyjną PM-BASE-GD46-BK.\n\nWszystkie trzy PN mają tę samą optykę HP. Obsługują USB i RS-232. Przewód RS-232 nie jest dołączony do zestawów USB.\n\n## Skanowanie bez trzymania czytnika\n\n[Podstawka PM-BASE-GD46-BK](/produkt/datalogic-gryphon-4600-presentation-base) pozwala ustawić czytnik na stanowisku. Po wybraniu odpowiedniego trybu podsuń kod przed okno odczytu. Podstawka nie jest ładowarką i nie służy do bezprzewodowych GBT4600 ani GM4600.\n\n## Obudowa i gwarancja\n\nGD4690 ma klasę ochrony IP52. Wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Masa samego czytnika wynosi około 144 g. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta wynosi 5 lat.\n\nJeśli operator musi odejść od stanowiska, porównaj [GBT4600 Bluetooth](/produkt/datalogic-gryphon-gbt4600) i [GM4600 STAR 433 MHz](/produkt/datalogic-gryphon-gm4600). Do prostszego stanowiska USB sprawdź [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520).\n\n## Dwie matryce HP przy stałym stanowisku\n\nGD4690 łączy optykę HP z zasilaniem przewodowym. Wybierz go, gdy potrzebujesz odczytu 2D przy komputerze, bez obsługi akumulatorów. GBT4600 i GM4600 rozwiązują inne zadanie: przesyłają dane bez przewodu. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "specifications": [
       {
         "name": "Typ skanera",
@@ -822,12 +822,12 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy przewód USB jest dołączony?",
-        "answer": "Zestawy BKK1 i BKK1B zawierają przewód USB 90A052258. GD4690-BK-HP to sam skaner bez przewodu."
+        "question": "Czy GD4690 wymaga ładowania?",
+        "answer": "Nie. GD4690 pracuje przewodowo. Zestawy USB zawierają przewód, a wersja GD4690-BK-HP wymaga zakupu zgodnego przewodu osobno."
       },
       {
-        "question": "Czy ten model odczytuje RFID?",
-        "answer": "Nie. Gryphon 4600 to optyczny skaner kodów 1D i 2D. Radio Bluetooth lub STAR służy do przesyłania odczytanych danych."
+        "question": "Czy zestaw Gryphon GD4690 zawiera przewód USB?",
+        "answer": "Zestawy BKK1 i BKK1B zawierają przewód USB 90A052258. GD4690-BK-HP to sam skaner bez przewodu."
       }
     ]
   },
@@ -851,8 +851,8 @@ export const datalogicGryphonProducts: Product[] = [
     "subcategoryIds": [
       "skanery-bezprzewodowe"
     ],
-    "seoTitle": "Datalogic Gryphon GBT4600 — skaner 2D Bluetooth 5.2 | TAKMA",
-    "seoDescription": "Gryphon GBT4600: skaner 2D Bluetooth 5.2 z ładowaniem indukcyjnym. Zestawy USB z akumulatorem lub SuperCap. Porównaj PN, ceny i stany.",
+    "seoTitle": "Datalogic Gryphon GBT4600 — skaner 2D Bluetooth | TAKMA",
+    "seoDescription": "Datalogic Gryphon GBT4600: skaner 2D Bluetooth. Bluetooth i wybór sposobu magazynowania energii. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Skaner 1D i 2D Bluetooth 5.2 z ładowaniem indukcyjnym. Wybierz zestaw z akumulatorem 3250 mAh lub SuperCap 1000 F.",
     "images": [
       "/images/products/datalogic-gryphon-4600-wireless-front-partner-v1.webp",
@@ -898,7 +898,7 @@ export const datalogicGryphonProducts: Product[] = [
       "Przyjęcie dostaw",
       "Inwentaryzacja"
     ],
-    "description": "Datalogic Gryphon GBT4600 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.2. Umożliwia skanowanie przy towarze zamiast przenoszenia go do komputera. Baza WLC4690 ładuje czytnik indukcyjnie.\n\n## Bluetooth Classic i BLE\n\nGBT4600 obsługuje Bluetooth 5.2 Classic oraz Bluetooth Low Energy. Do połączenia z komputerem możesz użyć dołączonej bazy Bluetooth i przewodu USB. Połączenie bezpośrednio z innym urządzeniem wymaga zgodnej aplikacji i odpowiedniego profilu.\n\nNie myl tego modelu z [GM4600 STAR 433 MHz](/produkt/datalogic-gryphon-gm4600). Bazy Bluetooth i STAR nie są zamienne do transmisji danych.\n\n## Akumulator lub SuperCap\n\nGBT4600-BK-BTK1-HP zawiera czytnik HP z akumulatorem Li-Ion 3250 mAh, bazę WLC4690-BK-BT i przewód USB 90A052258.\n\nGBT4600-BK-BTK1-SC obejmuje czytnik z modułem SuperCap 1000 F, tę samą bazę i przewód USB. SuperCap magazynuje energię w superkondensatorze zamiast w akumulatorze litowo-jonowym. Wybierz tę konfigurację, jeśli sposób pracy pozwala często odkładać czytnik do bazy.\n\nTypowe pełne ładowanie akumulatora trwa 3,5 godziny. SuperCap ładuje się typowo w 30 minut. Oba czasy dotyczą zewnętrznego zasilania bazy 12 V. Zasilacz 12 V nie jest dołączony do zestawów USB. Przy zasilaniu z USB czasy mogą być dłuższe.\n\n## Odczyt etykiet i ekranów\n\nSeria obsługuje kody EAN, QR, Data Matrix oraz GS1 Digital Link. Zielony celownik pomaga wskazać kod. Green Spot i sygnalizacja 3GL potwierdzają udany odczyt. Możesz ustawić ciepłe białe lub czerwone oświetlenie.\n\nWersja HP z akumulatorem ma układ dwóch matryc: 1,5 MP i VGA. Typowy zakres dla EAN/UPC 13 mil sięga 100 cm. Wynik zależy od jakości, rozmiaru i kontrastu kodu.\n\n## Zgodna baza i części zamienne\n\n[Baza WLC4690-BK-BT](/produkt/datalogic-gryphon-4600-base-bluetooth) jest częścią obu zestawów. Nie zamawiaj jej ponownie, jeśli potrzebujesz kompletnego zestawu USB. [RBP-GM46](/produkt/datalogic-gryphon-4600-battery) to wymienny akumulator do bezprzewodowej serii Gryphon 4600. Nie jest modułem SuperCap.\n\nObudowa ma klasę IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nDo prostszego stanowiska Bluetooth porównaj [QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500). Wszystkie modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Datalogic Gryphon GBT4600 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.2. Umożliwia skanowanie przy towarze zamiast przenoszenia go do komputera. Baza WLC4690 ładuje czytnik indukcyjnie.\n\n## Bluetooth Classic i BLE\n\nGBT4600 obsługuje Bluetooth 5.2 Classic oraz Bluetooth Low Energy. Do połączenia z komputerem możesz użyć dołączonej bazy Bluetooth i przewodu USB. Połączenie bezpośrednio z innym urządzeniem wymaga zgodnej aplikacji i odpowiedniego profilu.\n\nNie myl tego modelu z [GM4600 STAR 433 MHz](/produkt/datalogic-gryphon-gm4600). Bazy Bluetooth i STAR nie są zamienne do transmisji danych.\n\n## Akumulator lub SuperCap\n\nGBT4600-BK-BTK1-HP zawiera czytnik HP z akumulatorem Li-Ion 3250 mAh, bazę WLC4690-BK-BT i przewód USB 90A052258.\n\nGBT4600-BK-BTK1-SC obejmuje czytnik z modułem SuperCap 1000 F, tę samą bazę i przewód USB. SuperCap magazynuje energię w superkondensatorze zamiast w akumulatorze litowo-jonowym. Wybierz tę konfigurację, jeśli sposób pracy pozwala często odkładać czytnik do bazy.\n\nTypowe pełne ładowanie akumulatora trwa 3,5 godziny. SuperCap ładuje się typowo w 30 minut. Oba czasy dotyczą zewnętrznego zasilania bazy 12 V. Zasilacz 12 V nie jest dołączony do zestawów USB. Przy zasilaniu z USB czasy mogą być dłuższe.\n\n## Odczyt etykiet i ekranów\n\nSeria obsługuje kody EAN, QR, Data Matrix oraz GS1 Digital Link. Zielony celownik pomaga wskazać kod. Green Spot i sygnalizacja 3GL potwierdzają udany odczyt. Możesz ustawić ciepłe białe lub czerwone oświetlenie.\n\nWersja HP z akumulatorem ma układ dwóch matryc: 1,5 MP i VGA. Typowy zakres dla EAN/UPC 13 mil sięga 100 cm. Wynik zależy od jakości, rozmiaru i kontrastu kodu.\n\n## Zgodna baza i części zamienne\n\n[Baza WLC4690-BK-BT](/produkt/datalogic-gryphon-4600-base-bluetooth) jest częścią obu zestawów. Nie zamawiaj jej ponownie, jeśli potrzebujesz kompletnego zestawu USB. [RBP-GM46](/produkt/datalogic-gryphon-4600-battery) to wymienny akumulator do bezprzewodowej serii Gryphon 4600. Nie jest modułem SuperCap.\n\nObudowa ma klasę IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nDo prostszego stanowiska Bluetooth porównaj [QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500). Wszystkie modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Bluetooth i wybór sposobu magazynowania energii\n\nGBT4600 pozwala wybrać akumulator albo SuperCap. To decyzja o sposobie ładowania, a nie o zgodności z radiem STAR. Jeśli stanowisko używa bazy STAR 433 MHz, potrzebujesz GM4600 zamiast GBT4600.",
     "specifications": [
       {
         "name": "Typ skanera",
@@ -983,12 +983,12 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy przewód USB jest dołączony?",
-        "answer": "Tak. Wszystkie konfiguracje przedstawione na tej karcie zawierają bazę i przewód USB 90A052258. Zewnętrzny zasilacz nie jest dołączony."
+        "question": "Czym różni się GBT4600 SuperCap od wersji z akumulatorem?",
+        "answer": "SuperCap magazynuje energię w superkondensatorze. Wersja HP z akumulatorem ma ogniwo Li-Ion 3250 mAh. Dobierz wariant do częstotliwości odkładania czytnika do bazy."
       },
       {
-        "question": "Czy ten model odczytuje RFID?",
-        "answer": "Nie. Gryphon 4600 to optyczny skaner kodów 1D i 2D. Radio Bluetooth lub STAR służy do przesyłania odczytanych danych."
+        "question": "Czy zestaw Gryphon GBT4600 zawiera przewód USB?",
+        "answer": "Tak. Wszystkie konfiguracje przedstawione na tej karcie zawierają bazę i przewód USB 90A052258. Zewnętrzny zasilacz nie jest dołączony."
       }
     ]
   },
@@ -1012,8 +1012,8 @@ export const datalogicGryphonProducts: Product[] = [
     "subcategoryIds": [
       "skanery-bezprzewodowe"
     ],
-    "seoTitle": "Datalogic Gryphon GM4600 — skaner 2D 433 MHz | TAKMA",
-    "seoDescription": "Gryphon GM4600: skaner 1D i 2D HP STAR 433 MHz do sklepu i magazynu. Zestaw USB z bazą WLC4690-BK-433. Cena, dostępność i akcesoria.",
+    "seoTitle": "Datalogic Gryphon GM4600 — skaner 2D STAR 433 MHz | TAKMA",
+    "seoDescription": "Datalogic Gryphon GM4600: skaner 2D STAR 433 MHz. Optyka HP w systemie STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Skaner 1D i 2D HP STAR 433 MHz z ładowaniem indukcyjnym. Zestaw z bazą WLC4690-BK-433 i przewodem USB.",
     "images": [
       "/images/products/datalogic-gryphon-4600-wireless-front-partner-v1.webp",
@@ -1048,7 +1048,7 @@ export const datalogicGryphonProducts: Product[] = [
       "Kontrola towaru",
       "Inwentaryzacja"
     ],
-    "description": "Datalogic Gryphon GM4600 to bezprzewodowy skaner kodów 1D i 2D z radiem STAR. Europejski zestaw GM4600-BK-433K1-HP pracuje w paśmie 433 MHz. Zawiera czytnik HP, bazę i przewód USB.\n\n## Radio 433 MHz i baza STAR\n\nCzytnik przekazuje dane przez bazę WLC4690-BK-433. Nie korzysta z Bluetooth. Wybierz tę wersję, jeśli stanowisko wymaga systemu Datalogic STAR 433 MHz. Nie zastępuj bazy wersją Bluetooth ani 915 MHz.\n\nBaza obsługuje USB i RS-232. Dołączony przewód 90A052258 służy do połączenia USB. Połączenie RS-232 wymaga osobnego, zgodnego przewodu.\n\n## Optyka HP do etykiet i ekranów\n\nDwie matryce, 1,5 MP i VGA, obsługują kody od małych etykiet po kody skanowane z większej odległości. Typowy zakres dla EAN/UPC 13 mil sięga 100 cm. Wynik zależy od wielkości, jakości i kontrastu kodu.\n\nCzytnik odczytuje EAN, QR, Data Matrix i GS1 Digital Link. Zielony celownik w kształcie krzyża pomaga wskazać etykietę. Green Spot oraz sygnalizacja 3GL potwierdzają odczyt. Możesz wybrać ciepłe białe lub czerwone oświetlenie.\n\n## Ładowanie indukcyjne\n\nAkumulator Li-Ion ma pojemność 3250 mAh. Po odłożeniu do bazy czytnik ładuje się indukcyjnie. Typowe pełne ładowanie trwa 3,5 godziny przy zewnętrznym zasilaniu bazy 12 V. Zasilacz 12 V nie jest częścią zestawu USB. Przy zasilaniu z USB czas może być dłuższy.\n\n[Baza WLC4690-BK-433](/produkt/datalogic-gryphon-4600-base-433) jest już dołączona do tego PN. [Akumulator RBP-GM46](/produkt/datalogic-gryphon-4600-battery) możesz zamówić jako część zamienną.\n\n## Odporność podczas pracy\n\nObudowa ma klasę ochrony IP52. Czytnik wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Masa z akumulatorem wynosi około 218 g. Gwarancja producenta na czytnik wynosi 3 lata.\n\nJeśli potrzebujesz Bluetooth 5.2, porównaj [GBT4600](/produkt/datalogic-gryphon-gbt4600). Do prostszego stanowiska STAR sprawdź [QuickScan QM2500](/produkt/datalogic-quickscan-qm2500).",
+    "description": "Datalogic Gryphon GM4600 to bezprzewodowy skaner kodów 1D i 2D z radiem STAR. Europejski zestaw GM4600-BK-433K1-HP pracuje w paśmie 433 MHz. Zawiera czytnik HP, bazę i przewód USB.\n\n## Radio 433 MHz i baza STAR\n\nCzytnik przekazuje dane przez bazę WLC4690-BK-433. Nie korzysta z Bluetooth. Wybierz tę wersję, jeśli stanowisko wymaga systemu Datalogic STAR 433 MHz. Nie zastępuj bazy wersją Bluetooth ani 915 MHz.\n\nBaza obsługuje USB i RS-232. Dołączony przewód 90A052258 służy do połączenia USB. Połączenie RS-232 wymaga osobnego, zgodnego przewodu.\n\n## Optyka HP do etykiet i ekranów\n\nDwie matryce, 1,5 MP i VGA, obsługują kody od małych etykiet po kody skanowane z większej odległości. Typowy zakres dla EAN/UPC 13 mil sięga 100 cm. Wynik zależy od wielkości, jakości i kontrastu kodu.\n\nCzytnik odczytuje EAN, QR, Data Matrix i GS1 Digital Link. Zielony celownik w kształcie krzyża pomaga wskazać etykietę. Green Spot oraz sygnalizacja 3GL potwierdzają odczyt. Możesz wybrać ciepłe białe lub czerwone oświetlenie.\n\n## Ładowanie indukcyjne\n\nAkumulator Li-Ion ma pojemność 3250 mAh. Po odłożeniu do bazy czytnik ładuje się indukcyjnie. Typowe pełne ładowanie trwa 3,5 godziny przy zewnętrznym zasilaniu bazy 12 V. Zasilacz 12 V nie jest częścią zestawu USB. Przy zasilaniu z USB czas może być dłuższy.\n\n[Baza WLC4690-BK-433](/produkt/datalogic-gryphon-4600-base-433) jest już dołączona do tego PN. [Akumulator RBP-GM46](/produkt/datalogic-gryphon-4600-battery) możesz zamówić jako część zamienną.\n\n## Odporność podczas pracy\n\nObudowa ma klasę ochrony IP52. Czytnik wytrzymuje wielokrotne upadki z 1,8 m na beton w warunkach testowych. Temperatura pracy wynosi od 0°C do +50°C. Masa z akumulatorem wynosi około 218 g. Gwarancja producenta na czytnik wynosi 3 lata.\n\nJeśli potrzebujesz Bluetooth 5.2, porównaj [GBT4600](/produkt/datalogic-gryphon-gbt4600). Do prostszego stanowiska STAR sprawdź [QuickScan QM2500](/produkt/datalogic-quickscan-qm2500).\n\n## Optyka HP w systemie STAR\n\nGM4600 łączy odczyt 2D HP z europejskim radiem STAR 433 MHz. Jego baza WLC4690-BK-433 przekazuje dane do stanowiska. Do połączenia Bluetooth służy GBT4600, z inną bazą komunikacyjną. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "specifications": [
       {
         "name": "Typ skanera",
@@ -1141,12 +1141,12 @@ export const datalogicGryphonProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy przewód USB jest dołączony?",
-        "answer": "Tak. Wszystkie konfiguracje przedstawione na tej karcie zawierają bazę i przewód USB 90A052258. Zewnętrzny zasilacz nie jest dołączony."
+        "question": "Czy GM4600 połączy się z bazą Bluetooth GBT4600?",
+        "answer": "Nie. Oferowany GM4600 korzysta z STAR 433 MHz i bazy WLC4690-BK-433. Baza Bluetooth nie zastępuje jej w transmisji danych."
       },
       {
-        "question": "Czy ten model odczytuje RFID?",
-        "answer": "Nie. Gryphon 4600 to optyczny skaner kodów 1D i 2D. Radio Bluetooth lub STAR służy do przesyłania odczytanych danych."
+        "question": "Czy zestaw Gryphon GM4600 zawiera przewód USB?",
+        "answer": "Tak. Wszystkie konfiguracje przedstawione na tej karcie zawierają bazę i przewód USB 90A052258. Zewnętrzny zasilacz nie jest dołączony."
       }
     ]
   }
@@ -1165,7 +1165,7 @@ export const datalogicScannerAccessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-21",
     "id": "datalogic-gryphon-4600-presentation-base",
     "slug": "datalogic-gryphon-4600-presentation-base",
     "name": "Podstawka prezentacyjna Datalogic Gryphon GD4600",

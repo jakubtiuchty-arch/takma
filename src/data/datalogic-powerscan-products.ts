@@ -7,10 +7,10 @@ export const datalogicPowerScanProducts: Product[] = [
     "name": "Datalogic PowerScan PD9630",
     "seoH1": "Datalogic PowerScan PD9630",
     "sameAs": "https://www.datalogic.com/products/product?id=917&lang=eng",
-    "seoTitle": "Datalogic PowerScan PD9630 — skaner 2D USB | TAKMA",
-    "seoDescription": "PowerScan PD9630: przewodowy skaner przemysłowy 1D/2D. Porównaj optykę SR i HP, PN oraz zestawy USB. Sprawdź ceny, stany i dokumenty.",
+    "seoTitle": "Datalogic PowerScan PD9630 — skaner przemysłowy 2D | TAKMA",
+    "seoDescription": "Datalogic PowerScan PD9630: skaner przemysłowy 2D. Przewodowy PowerScan z optyką SR lub HP. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Przewodowy skaner przemysłowy 1D i 2D z USB i RS-232. Optyka SR lub HP, IP65/IP67 i 3 lata gwarancji producenta.",
-    "description": "Datalogic PowerScan PD9630 to przewodowy skaner kodów 1D i 2D do stanowisk produkcyjnych, przyjęć i wysyłki. Zasilanie przez przewód pozwala pracować bez ładowania akumulatora.\n\n## Optyka SR lub HP\n\nSR to optyka Standard Range do codziennych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres pracy. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR oraz 4–120 cm dla HP. Odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe światło oświetla etykietę. Green Spot, dwie zielone diody, dźwięk i wibracja potwierdzają odczyt. Laserowy celownik pomaga wskazać kod.\n\n## Wybierz sam czytnik lub zestaw USB\n\nPD9630-SR i PD9630-HP obejmują sam czytnik, bez przewodu. PD9630-SRK1 i PD9630-HPK1 zawierają przewód USB CAB-553. Obsługa RS-232 wymaga osobnego, zgodnego przewodu. Do oferowanych zestawów PD9630 dobrano przewód CAB-553.\n\n## Praca w magazynie i produkcji\n\nCzytnik ma klasę ochrony IP65 i IP67. Wytrzymuje 50 upadków z 2,5 m przy +20°C w warunkach testowych. Przy −20°C wysokość testu wynosi 2 m. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nJeśli potrzebujesz pracy bez przewodu, porównaj [PBT9600 Bluetooth](/produkt/datalogic-powerscan-pbt9600) oraz [PM9600 STAR 433 MHz](/produkt/datalogic-powerscan-pm9600).\n\nKonfigurację interfejsu i sygnałów wykonasz w Datalogic Aladdin. Instrukcję oraz kartę katalogową pobierzesz poniżej.\n\n## Akcesoria do stanowiska\n\nDo USB dobierz [CAB-553](/produkt/datalogic-powerscan-cab-553). Do RS-232 wybierz [CAB-549](/produkt/datalogic-powerscan-cab-549) z [zasilaczem](/produkt/datalogic-powerscan-8-0935) i [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940). To alternatywne sposoby połączenia.\n\nCzytnik odłożysz w [uchwycie HLD-P096](/produkt/datalogic-powerscan-hld-p096). Do pracy bez trzymania czytnika służy [podstawka STD-P096](/produkt/datalogic-powerscan-std-p096).",
+    "description": "Datalogic PowerScan PD9630 to przewodowy skaner kodów 1D i 2D do stanowisk produkcyjnych, przyjęć i wysyłki. Zasilanie przez przewód pozwala pracować bez ładowania akumulatora.\n\n## Optyka SR lub HP\n\nSR to optyka Standard Range do codziennych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres pracy. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR oraz 4–120 cm dla HP. Odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe światło oświetla etykietę. Green Spot, dwie zielone diody, dźwięk i wibracja potwierdzają odczyt. Laserowy celownik pomaga wskazać kod.\n\n## Wybierz sam czytnik lub zestaw USB\n\nPD9630-SR i PD9630-HP obejmują sam czytnik, bez przewodu. PD9630-SRK1 i PD9630-HPK1 zawierają przewód USB CAB-553. Obsługa RS-232 wymaga osobnego, zgodnego przewodu. Do oferowanych zestawów PD9630 dobrano przewód CAB-553.\n\n## Praca w magazynie i produkcji\n\nCzytnik ma klasę ochrony IP65 i IP67. Wytrzymuje 50 upadków z 2,5 m przy +20°C w warunkach testowych. Przy −20°C wysokość testu wynosi 2 m. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nJeśli potrzebujesz pracy bez przewodu, porównaj [PBT9600 Bluetooth](/produkt/datalogic-powerscan-pbt9600) oraz [PM9600 STAR 433 MHz](/produkt/datalogic-powerscan-pm9600).\n\nKonfigurację interfejsu i sygnałów wykonasz w Datalogic Aladdin. Instrukcję oraz kartę katalogową pobierzesz poniżej.\n\n## Akcesoria do stanowiska\n\nDo USB dobierz [CAB-553](/produkt/datalogic-powerscan-cab-553). Do RS-232 wybierz [CAB-549](/produkt/datalogic-powerscan-cab-549) z [zasilaczem](/produkt/datalogic-powerscan-8-0935) i [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940). To alternatywne sposoby połączenia.\n\nCzytnik odłożysz w [uchwycie HLD-P096](/produkt/datalogic-powerscan-hld-p096). Do pracy bez trzymania czytnika służy [podstawka STD-P096](/produkt/datalogic-powerscan-std-p096).\n\n## Przewodowy PowerScan z optyką SR lub HP\n\nPD9630 jest wyborem do stałego stanowiska przemysłowego z odczytem 1D i 2D. Najpierw dobierz SR lub HP, a następnie przewód do hosta. Jeśli operator musi oddalać się od komputera, porównaj PBT9600 Bluetooth. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -171,20 +171,20 @@ export const datalogicPowerScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym różni się SR od HP?",
+        "question": "Czy PD9630 działa bez bazy radiowej?",
+        "answer": "Tak. PD9630 przesyła dane przewodem. Baza radiowa nie jest potrzebna; wymagany jest zgodny przewód USB lub RS-232."
+      },
+      {
+        "question": "Czym różni się SR od HP — PowerScan PD9630?",
         "answer": "SR służy do standardowych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR i 4–120 cm dla HP. Wynik zależy od kodu i warunków."
       },
       {
-        "question": "Czy zestaw obejmuje wszystkie elementy do USB?",
+        "question": "Co obejmuje zestaw USB PowerScan PD9630?",
         "answer": "PD9630-SRK1 i PD9630-HPK1 zawierają przewód USB CAB-553. Wersje PD9630-SR i PD9630-HP nie zawierają przewodu."
-      },
-      {
-        "question": "Czy ten czytnik odczytuje RFID?",
-        "answer": "Nie. Oferowane PN odczytują optyczne kody 1D i 2D. Nie obejmują modułu RFID."
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   },
   {
     "id": "datalogic-powerscan-pbt9600",
@@ -193,9 +193,9 @@ export const datalogicPowerScanProducts: Product[] = [
     "seoH1": "Datalogic PowerScan PBT9600",
     "sameAs": "https://www.datalogic.com/products/product?id=917&lang=eng",
     "seoTitle": "Datalogic PowerScan PBT9600 — skaner 2D Bluetooth | TAKMA",
-    "seoDescription": "PowerScan PBT9600: przemysłowy skaner 1D/2D Bluetooth 5.0. Wybierz SR lub HP oraz sam czytnik lub zestaw EU z bazą. Ceny, stany i akcesoria.",
+    "seoDescription": "Datalogic PowerScan PBT9600: skaner 2D Bluetooth. Bluetooth w przemysłowym stanowisku 2D. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Bezprzewodowy skaner przemysłowy 1D i 2D z Bluetooth 5.0. Optyka SR lub HP, ładowanie indukcyjne i IP65/IP67.",
-    "description": "Datalogic PowerScan PBT9600 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.0. Służy do obsługi towaru w magazynie i kontroli produkcji.\n\n## Bluetooth do stanowiska pracy\n\nCzytnik obsługuje profile HID i SPP. Może łączyć się ze zgodnym urządzeniem Bluetooth lub bazą BC9630-BT. Zasięg z bazą wynosi do 100 m w otwartej przestrzeni. Ściany i urządzenia radiowe mogą go ograniczyć.\n\n## Standard Range i High Performance\n\nSR to optyka Standard Range do codziennych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres pracy. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR oraz 4–120 cm dla HP. Odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe światło oświetla etykietę. Green Spot, dwie zielone diody, dźwięk i wibracja potwierdzają odczyt. Laserowy celownik pomaga wskazać kod.\n\n## Zawartość europejskich zestawów\n\nZestaw USB zawiera czytnik z akumulatorem, bazę BC9630-BT, przewód CAB-552, zasilacz 8-0935 i przewód sieciowy EU 6003-0940. Wersja opisana jako „sam czytnik” nie zawiera bazy, przewodów ani zasilacza.\n\nAkumulator Li-Ion ma pojemność 3350 mAh. Ładowanie indukcyjne odbywa się w bazie. Pełne ładowanie trwa około 3,2 godziny przy zewnętrznym zasilaniu 12 V. Przy zasilaniu bazy BC9630 wyłącznie z USB-A ładowanie trwa około 16 godzin.\n\nBaza [BC9630-BT](/produkt/datalogic-powerscan-bc9630-bt) obsługuje USB i RS-232. Do RS-232 potrzebujesz innego przewodu. Baza STAR 433 MHz nie obsługuje transmisji Bluetooth.\n\n## Odporność i obsługa\n\nCzytnik ma klasę ochrony IP65 i IP67. Wytrzymuje 50 upadków z 2,5 m przy +20°C w warunkach testowych. Przy −20°C wysokość testu wynosi 2 m. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nOferowane konfiguracje nie mają wyświetlacza ani klawiatury. Do transmisji STAR porównaj [PM9600](/produkt/datalogic-powerscan-pm9600). Do stałego stanowiska przewodowego wybierz [PD9630](/produkt/datalogic-powerscan-pd9630).\n\nKonfigurację interfejsu i sygnałów wykonasz w Datalogic Aladdin. Instrukcję oraz kartę katalogową pobierzesz poniżej.\n\n## Wyposażenie i zapasowe akumulatory\n\nDo bazy dobierz [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940), jeśli nie masz ich w zestawie. Do RS-232 wybierz [CAB-548](/produkt/datalogic-powerscan-cab-548) zamiast przewodu USB.\n\nZapasowe akumulatory ładuje [ładowarka 2 akumulatorów](/produkt/datalogic-powerscan-mc-p096-m2) lub [ładowarka 4 akumulatorów](/produkt/datalogic-powerscan-mc-p096-m4). Obie wymagają osobnego [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350) i [przewodu sieciowego EU](/produkt/datalogic-powerscan-6003-0940).",
+    "description": "Datalogic PowerScan PBT9600 to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 5.0. Służy do obsługi towaru w magazynie i kontroli produkcji.\n\n## Bluetooth do stanowiska pracy\n\nCzytnik obsługuje profile HID i SPP. Może łączyć się ze zgodnym urządzeniem Bluetooth lub bazą BC9630-BT. Zasięg z bazą wynosi do 100 m w otwartej przestrzeni. Ściany i urządzenia radiowe mogą go ograniczyć.\n\n## Standard Range i High Performance\n\nSR to optyka Standard Range do codziennych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres pracy. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR oraz 4–120 cm dla HP. Odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe światło oświetla etykietę. Green Spot, dwie zielone diody, dźwięk i wibracja potwierdzają odczyt. Laserowy celownik pomaga wskazać kod.\n\n## Zawartość europejskich zestawów\n\nZestaw USB zawiera czytnik z akumulatorem, bazę BC9630-BT, przewód CAB-552, zasilacz 8-0935 i przewód sieciowy EU 6003-0940. Wersja opisana jako „sam czytnik” nie zawiera bazy, przewodów ani zasilacza.\n\nAkumulator Li-Ion ma pojemność 3350 mAh. Ładowanie indukcyjne odbywa się w bazie. Pełne ładowanie trwa około 3,2 godziny przy zewnętrznym zasilaniu 12 V. Przy zasilaniu bazy BC9630 wyłącznie z USB-A ładowanie trwa około 16 godzin.\n\nBaza [BC9630-BT](/produkt/datalogic-powerscan-bc9630-bt) obsługuje USB i RS-232. Do RS-232 potrzebujesz innego przewodu. Baza STAR 433 MHz nie obsługuje transmisji Bluetooth.\n\n## Odporność i obsługa\n\nCzytnik ma klasę ochrony IP65 i IP67. Wytrzymuje 50 upadków z 2,5 m przy +20°C w warunkach testowych. Przy −20°C wysokość testu wynosi 2 m. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta na czytnik wynosi 3 lata.\n\nOferowane konfiguracje nie mają wyświetlacza ani klawiatury. Do transmisji STAR porównaj [PM9600](/produkt/datalogic-powerscan-pm9600). Do stałego stanowiska przewodowego wybierz [PD9630](/produkt/datalogic-powerscan-pd9630).\n\nKonfigurację interfejsu i sygnałów wykonasz w Datalogic Aladdin. Instrukcję oraz kartę katalogową pobierzesz poniżej.\n\n## Wyposażenie i zapasowe akumulatory\n\nDo bazy dobierz [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940), jeśli nie masz ich w zestawie. Do RS-232 wybierz [CAB-548](/produkt/datalogic-powerscan-cab-548) zamiast przewodu USB.\n\nZapasowe akumulatory ładuje [ładowarka 2 akumulatorów](/produkt/datalogic-powerscan-mc-p096-m2) lub [ładowarka 4 akumulatorów](/produkt/datalogic-powerscan-mc-p096-m4). Obie wymagają osobnego [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350) i [przewodu sieciowego EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Bluetooth w przemysłowym stanowisku 2D\n\nPBT9600 służy do odczytu kodów przy towarze, z transmisją Bluetooth 5.0. Optyka SR i HP to alternatywne wersje. Zestaw EU z bazą różni się wyposażeniem od samego czytnika. Pozostałe rodziny obejmuje kategoria [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -375,20 +375,20 @@ export const datalogicPowerScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym różni się SR od HP?",
+        "question": "Czy PBT9600 wymaga bazy STAR?",
+        "answer": "Nie. PBT9600 używa Bluetooth 5.0. PM9600 jest osobnym modelem z radiem STAR 433 MHz i wymaga właściwej bazy STAR."
+      },
+      {
+        "question": "Czym różni się SR od HP — PowerScan PBT9600?",
         "answer": "SR służy do standardowych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR i 4–120 cm dla HP. Wynik zależy od kodu i warunków."
       },
       {
-        "question": "Czy zestaw obejmuje wszystkie elementy do USB?",
+        "question": "Co obejmuje zestaw USB PowerScan PBT9600?",
         "answer": "Wersje z końcówką RBK10EU obejmują czytnik, bazę, przewód USB, zasilacz i przewód sieciowy EU. Sam czytnik nie zawiera tych akcesoriów."
-      },
-      {
-        "question": "Czy ten czytnik odczytuje RFID?",
-        "answer": "Nie. Oferowane PN odczytują optyczne kody 1D i 2D. Nie obejmują modułu RFID."
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   },
   {
     "id": "datalogic-powerscan-pm9600",
@@ -396,10 +396,10 @@ export const datalogicPowerScanProducts: Product[] = [
     "name": "Datalogic PowerScan PM9600",
     "seoH1": "Datalogic PowerScan PM9600",
     "sameAs": "https://www.datalogic.com/products/product?id=917&lang=eng",
-    "seoTitle": "Datalogic PowerScan PM9600 — skaner 2D 433 MHz | TAKMA",
-    "seoDescription": "PowerScan PM9600: przemysłowy skaner 1D/2D STAR 433 MHz. Wybierz SR lub HP, sam czytnik lub zestaw USB z bazą. Ceny, stany i akcesoria.",
+    "seoTitle": "Datalogic PowerScan PM9600 — skaner 2D STAR 433 MHz | TAKMA",
+    "seoDescription": "Datalogic PowerScan PM9600: skaner 2D STAR 433 MHz. Przemysłowy odczyt 2D przez radio STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Przemysłowy skaner 1D i 2D z radiem STAR 433 MHz. Optyka SR lub HP, wymienny akumulator, ładowanie indukcyjne i IP65/IP67.",
-    "description": "## PowerScan PM9600: radio STAR 433 MHz w magazynie\n\nDatalogic PowerScan PM9600 odczytuje kody 1D i 2D. Przesyła dane przez radio STAR 433 MHz do [bazy BC9630-433](/produkt/datalogic-powerscan-bc9630-433). To model do stanowisk magazynowych i produkcyjnych, w których pracownik potrzebuje swobody ruchu. Nie ma Bluetooth. Jeśli potrzebujesz tego interfejsu, porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).\n\n### Jedna baza, wielu pracowników\n\nDo jednej bazy można przypisać do 16 czytników. W otwartej przestrzeni zasięg wynosi do 150 m przy niższej szybkości transmisji lub do 100 m przy wyższej. Regały, ściany i zakłócenia mogą zmniejszyć zasięg. W oferowanych wariantach czytnik nie ma wyświetlacza ani klawiatury.\n\n### Optyka SR lub HP\n\nWersja SR służy do standardowego odczytu. Dla kodu EAN o module 13 mil zakres wynosi od 4 do 67,5 cm. Wersja HP rozszerza ten zakres do 120 cm. Rzeczywista odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe podświetlenie i celownik laserowy pomagają wskazać kod. Udany odczyt potwierdzają Green Spot, dwie zielone diody, sygnał dźwiękowy i wibracja.\n\n### Wybierz zestaw według PN\n\nZestaw USB RBK10EU zawiera czytnik z akumulatorem 3350 mAh, bazę BC9630-433, przewód CAB-552, [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam czytnik nie zawiera bazy, przewodów ani zasilacza.\n\nBaza obsługuje USB i RS-232. Do połączenia szeregowego potrzebny jest osobny [przewód CAB-548](/produkt/datalogic-powerscan-cab-548). Zestaw USB nie zastępuje zestawu RS-232.\n\n### Ładowanie między zmianami\n\nŁadowanie w bazie odbywa się indukcyjnie. Przy zasilaniu zewnętrznym 12 V trwa około 3,2 godziny. Przy zasilaniu wyłącznie z USB-A może trwać do 16 godzin. Dodatkowe akumulatory można ładować w [ładowarce 2-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [4-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Te ładowarki wymagają [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\n### Praca w trudniejszych warunkach\n\nObudowa ma ochronę IP65 i IP67. Czytnik wytrzymuje 50 upadków z 2,5 m w temperaturze +20°C oraz upadki z 2 m przy −20°C. Zakres temperatury pracy wynosi od −20 do +50°C. Gwarancja producenta trwa 3 lata.\n\nKonfigurację ułatwia program Datalogic Aladdin. Karta katalogowa jest dostępna w sekcji plików do pobrania. Pozostałe rodziny porównasz w kategorii [skanerów Datalogic](/skanery-datalogic).",
+    "description": "## PowerScan PM9600: radio STAR 433 MHz w magazynie\n\nDatalogic PowerScan PM9600 odczytuje kody 1D i 2D. Przesyła dane przez radio STAR 433 MHz do [bazy BC9630-433](/produkt/datalogic-powerscan-bc9630-433). To model do stanowisk magazynowych i produkcyjnych, w których pracownik potrzebuje swobody ruchu. Nie ma Bluetooth. Jeśli potrzebujesz tego interfejsu, porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).\n\n### Jedna baza, wielu pracowników\n\nDo jednej bazy można przypisać do 16 czytników. W otwartej przestrzeni zasięg wynosi do 150 m przy niższej szybkości transmisji lub do 100 m przy wyższej. Regały, ściany i zakłócenia mogą zmniejszyć zasięg. W oferowanych wariantach czytnik nie ma wyświetlacza ani klawiatury.\n\n### Optyka SR lub HP\n\nWersja SR służy do standardowego odczytu. Dla kodu EAN o module 13 mil zakres wynosi od 4 do 67,5 cm. Wersja HP rozszerza ten zakres do 120 cm. Rzeczywista odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe podświetlenie i celownik laserowy pomagają wskazać kod. Udany odczyt potwierdzają Green Spot, dwie zielone diody, sygnał dźwiękowy i wibracja.\n\n### Wybierz zestaw według PN\n\nZestaw USB RBK10EU zawiera czytnik z akumulatorem 3350 mAh, bazę BC9630-433, przewód CAB-552, [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam czytnik nie zawiera bazy, przewodów ani zasilacza.\n\nBaza obsługuje USB i RS-232. Do połączenia szeregowego potrzebny jest osobny [przewód CAB-548](/produkt/datalogic-powerscan-cab-548). Zestaw USB nie zastępuje zestawu RS-232.\n\n### Ładowanie między zmianami\n\nŁadowanie w bazie odbywa się indukcyjnie. Przy zasilaniu zewnętrznym 12 V trwa około 3,2 godziny. Przy zasilaniu wyłącznie z USB-A może trwać do 16 godzin. Dodatkowe akumulatory można ładować w [ładowarce 2-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [4-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Te ładowarki wymagają [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\n### Praca w trudniejszych warunkach\n\nObudowa ma ochronę IP65 i IP67. Czytnik wytrzymuje 50 upadków z 2,5 m w temperaturze +20°C oraz upadki z 2 m przy −20°C. Zakres temperatury pracy wynosi od −20 do +50°C. Gwarancja producenta trwa 3 lata.\n\nKonfigurację ułatwia program Datalogic Aladdin. Karta katalogowa jest dostępna w sekcji plików do pobrania. Pozostałe rodziny porównasz w kategorii [skanerów Datalogic](/skanery-datalogic).\n\n## Przemysłowy odczyt 2D przez radio STAR\n\nPM9600 przekazuje dane przez system STAR 433 MHz. Wybór SR lub HP dotyczy optyki; nie zmienia radia w Bluetooth. Do instalacji Bluetooth służy PBT9600, a do stanowiska przewodowego PD9630.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -579,20 +579,20 @@ export const datalogicPowerScanProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym różni się SR od HP?",
+        "question": "Czy PM9600 jest wersją Bluetooth PowerScana?",
+        "answer": "Nie. Oferowane PM9600 pracują w paśmie STAR 433 MHz. W rodzinie 9600 transmisję Bluetooth zapewnia PBT9600."
+      },
+      {
+        "question": "Czym różni się SR od HP — PowerScan PM9600?",
         "answer": "SR służy do standardowych odczytów. HP odczytuje drobniejsze kody i zapewnia większy zakres. Typowy zakres EAN/UPC 13 mil wynosi 4–67,5 cm dla SR i 4–120 cm dla HP. Wynik zależy od kodu i warunków."
       },
       {
-        "question": "Czy zestaw obejmuje wszystkie elementy do USB?",
+        "question": "Co obejmuje zestaw USB PowerScan PM9600?",
         "answer": "Wersje z końcówką RBK10 obejmują czytnik, bazę, przewód USB, zasilacz i przewód sieciowy EU. Sam czytnik nie zawiera tych akcesoriów."
-      },
-      {
-        "question": "Czy ten czytnik odczytuje RFID?",
-        "answer": "Nie. Oferowane PN odczytują optyczne kody 1D i 2D. Nie obejmują modułu RFID."
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-21"
   }
 ]
 
@@ -654,7 +654,7 @@ export const datalogicPowerScanAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-21",
     "relatedAccessories": [
       "datalogic-powerscan-cab-552",
       "datalogic-powerscan-cab-548",

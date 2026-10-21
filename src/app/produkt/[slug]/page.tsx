@@ -243,6 +243,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
+  const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const rfidTextLinks = isRfidContentProduct(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
@@ -613,6 +614,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       downloadUrl: `https://www.takma.com.pl/pobierz/${product.slug}`,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'PLN', availability: 'https://schema.org/InStock' },
     } : {}),
+    ...(datalogicScannerProduct ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
     name: product.name,
     description: product.shortDescription,
     image: product.images.map(absoluteProductImageUrl),
@@ -740,6 +742,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://www.takma.com.pl/produkt/${product.slug}` })
 
   const breadcrumbJsonLd = {
+    ...(datalogicScannerProduct ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: breadcrumbItems,
@@ -762,10 +765,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       name: product.name,
       url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
-    speakable: {
-      '@type': 'SpeakableSpecification',
-      cssSelector: ['#opis p:first-of-type', '#faq'],
-    },
+    ...(datalogicScannerProduct ? {
+      '@id': `https://www.takma.com.pl/produkt/${product.slug}#webpage`,
+      mainEntity: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#${liveOffers && (product.variants?.length ?? 0) > 1 ? 'product-group' : 'product'}` },
+      breadcrumb: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` },
+      inLanguage: 'pl-PL',
+    } : {
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['#opis p:first-of-type', '#faq'],
+      },
+    }),
     url: `https://www.takma.com.pl/produkt/${product.slug}`,
   }
 

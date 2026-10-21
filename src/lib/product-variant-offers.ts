@@ -56,12 +56,14 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const url = `https://www.takma.com.pl/produkt/${product.slug}`
   const stock = new Map(rows.map(row => [row.partNumber, row]))
   const rfidTerminal = product.subcategoryIds?.some(id => id === 'terminale-rfid' || id === 'uchwyty-rfid') ?? false
-  const commonProperties = rfidTerminal ? product.specifications
+  const datalogicScanner = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
+  const detailedProduct = rfidTerminal || datalogicScanner
+  const commonProperties = detailedProduct ? product.specifications
     .filter(spec => spec.name !== 'Part Number')
     .map(spec => ({ '@type': 'PropertyValue', name: spec.name, value: spec.value })) : []
-  const facts = rfidTerminal ? {
-    model: product.name.replace(/^Zebra\s+/, ''),
-    category: product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
+  const facts = detailedProduct ? {
+    model: datalogicScanner ? product.name.replace(/^Datalogic\s+/, '') : product.name.replace(/^Zebra\s+/, ''),
+    category: datalogicScanner ? 'Skanery kodów kreskowych Datalogic' : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
     additionalProperty: commonProperties,
   } : {}
   const marka = markaProduktu(product)
@@ -69,7 +71,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
 
   // Karta bez wariantów (nawijarki i dyspensery Labelmate) to zwykły Product z jedną ofertą.
   // ProductGroup z pustym hasVariant nie niósł żadnej oferty — Google widział produkt bez ceny.
-  if (!product.variants?.length || (rfidTerminal && product.variants.length === 1)) {
+  if (!product.variants?.length || (detailedProduct && product.variants.length === 1)) {
     const partNumber = product.variants?.[0]?.partNumber ?? product.specifications?.find(spec => spec.name === 'Part Number')?.value
     const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url, priceValidUntil, rfidTerminal)
     return {
