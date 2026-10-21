@@ -9,7 +9,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "SUNMI L3 — terminal Android 14 z ekranem 6,75 cala",
     "seoDescription": "SUNMI L3 z Androidem 14, LTE i ekranem 6,75 cala. Porównaj pamięć, skanery SS1111 i SE4710 oraz wersje bez skanera. Sprawdź PN, ceny i akcesoria.",
     "shortDescription": "Terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.",
-    "description": "SUNMI L3 — terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.\n\n## Duży ekran do przyjęć i kompletacji\n\nSUNMI L3 wyświetla listy towarów na ekranie 720 × 1600 pikseli. Boczne przyciski uruchamiają odczyt w konfiguracjach z modułem skanującym. Warianty różnią się pamięcią, skanerem i złączami do wyposażenia.\n\nSS1111 i SE4710 odczytują kody 1D i 2D. PN P09070015 oraz P09070072 nie mają osobnego modułu skanującego. Aparat nie zastępuje go przy intensywnej kompletacji. Wersje P09070073 i P09070030 mają tylne styki POGO do zgodnego uchwytu. P09070052 dodaje obsługę PSAM.\n\nObudowa ma klasę IP68, a bateria pojemność 5000 mAh. Wymiana hot swap zależy od konfiguracji; jest dostępna w P09070015, P09070073, P09070030 i P09070052. NFC służy do odczytu zgodnych nośników zbliżeniowych. Oferowane tutaj PN nie obejmują wersji UHF RFID.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L2Ks](/produkt/sunmi-l2ks), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI L3 — terminal mobilny z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wybierz wersję ze skanerem SS1111, SE4710 lub bez modułu skanującego.\n\n## Duży ekran do przyjęć i kompletacji\n\nSUNMI L3 wyświetla listy towarów na ekranie 720 × 1600 pikseli. Boczne przyciski uruchamiają odczyt w konfiguracjach z modułem skanującym. Warianty różnią się pamięcią, skanerem i złączami do wyposażenia.\n\nSS1111 i SE4710 odczytują kody 1D i 2D. PN P09070015 oraz P09070072 nie mają osobnego modułu skanującego. Aparat nie zastępuje go przy intensywnej kompletacji. Wersje P09070073 i P09070030 mają tylne styki POGO do zgodnego uchwytu. P09070052 dodaje obsługę PSAM.\n\nObudowa ma klasę IP68, a bateria pojemność 5000 mAh. Wymiana baterii hot swap zależy od konfiguracji. Mają ją P09070015, P09070073, P09070030, P09070036 i P09070052. P09070072 nie ma wymiany hot swap. NFC służy do odczytu zgodnych nośników zbliżeniowych. Oferowane tutaj PN nie obejmują wersji UHF RFID.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L2s Pro](/produkt/sunmi-l2s-pro), [SUNMI L2Ks](/produkt/sunmi-l2ks), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -191,7 +191,7 @@ export const sunmiProducts: Product[] = [
       "magazyn"
     ],
     "availability": "available",
-    "priceFrom": 1870.95,
+    "priceFrom": 2360.66,
     "isNew": true,
     "isBestseller": false,
     "specifications": [
@@ -227,22 +227,22 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P09044025",
-        "name": "P09044025, 4/32 GB, SE4770, Tak, GMS",
+        "name": "P09044025, 4/32 GB, SE4770, NFC, GMS EDLA",
         "attributes": {
           "Pamięć": "4/32 GB",
           "Skaner": "SE4770",
           "NFC": "Tak",
-          "System": "GMS"
+          "System": "GMS EDLA"
         },
         "priceFrom": 2360.66,
         "availability": "available"
       },
       {
         "partNumber": "P09044063",
-        "name": "P09044063, 2/16 GB, Moduł 1D/2D, Brak, SUNMI OS",
+        "name": "P09044063, 2/16 GB, SS1111, bez NFC, SUNMI OS",
         "attributes": {
           "Pamięć": "2/16 GB",
-          "Skaner": "Moduł 1D/2D",
+          "Skaner": "SS1111",
           "NFC": "Brak",
           "System": "SUNMI OS"
         },
@@ -251,10 +251,10 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09044064",
-        "name": "P09044064, 4/32 GB, Moduł 1D/2D, Tak, GMS EDLA",
+        "name": "P09044064, 4/32 GB, SS1111, NFC, GMS EDLA",
         "attributes": {
           "Pamięć": "4/32 GB",
-          "Skaner": "Moduł 1D/2D",
+          "Skaner": "SS1111",
           "NFC": "Tak",
           "System": "GMS EDLA"
         },
@@ -263,8 +263,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SE4770 — moduł Zebra do kodów 1D i 2D z celownikiem laserowym.\n• Moduł 1D/2D — osobny skaner obrazowy do kodów kreskowych i kodów dwuwymiarowych.\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
+      "Skaner": "• SE4770 — moduł Zebra do kodów 1D i 2D z celownikiem laserowym.\n\n• SS1111 — moduł SUNMI do kodów 1D i 2D.\n\nZasięg zależy od wielkości i jakości kodu.",
+      "System": "• GMS EDLA — system z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 11, bez usług Google (GMS).",
       "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
       "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
       "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
@@ -321,10 +321,10 @@ export const sunmiProducts: Product[] = [
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/products/sunmi-l2h-front.webp"
+      "/images/products/P09030059.png"
     ],
     "imageDescriptions": [
-      "SUNMI L2H — widok urządzenia bez opcjonalnej stacji"
+      "SUNMI L2H — kolektor danych z ekranem 5,5 cala, widok z przodu i z tyłu z czytnikiem NFC"
     ],
     "tags": [
       "magazyn"
@@ -437,7 +437,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "SUNMI L2s Pro — terminal 5,5 cala ze skanerem 1D/2D",
     "seoDescription": "SUNMI L2s Pro do pracy z towarem. Ekran 5,5 cala, IP68 i bateria 5000 mAh. Porównaj pamięć 3/32 i 4/64 GB, skanery, GMS oraz ceny według PN.",
     "shortDescription": "Dotykowy terminal 5,5 cala do sklepu i magazynu. Wersje ze skanerem 1D/2D lub bez osobnego modułu. Pamięć 3/32 albo 4/64 GB, bateria 5000 mAh i IP68.",
-    "description": "SUNMI L2s Pro to dotykowy terminal 5,5 cala do sklepu i magazynu. Wybierz pamięć 3/32 lub 4/64 GB i konfigurację skanera.\n\n## Dobierz moduł skanujący do pracy z towarem\n\nSUNMI L2s Pro obsługuje aplikacje mobilne na ekranie 1440 × 720 pikseli. Wersje z dedykowanym skanerem odczytują kody 1D i 2D. P09064024 jest konfiguracją bez osobnego modułu skanującego.\n\nPN P09064085 ma Android 12 z GMS EDLA i pamięć 3/32 GB. W pozostałych konfiguracjach środowisko aplikacji oraz GMS należy dobrać według PN. P09064007 i P09064014 mają pamięć 4/64 GB. P09064024 i P09064080 mają 3/32 GB. Wyposażenie wybierz według numeru PN.\n\nŁączność obejmuje Wi-Fi 5, 4G LTE i NFC. Bateria ma 5000 mAh, a obudowa klasę IP68. Odporność na upadki wynosi 1,5 m w warunkach testowych. Aparat tylny 13 MP umożliwia zapisanie stanu przesyłki. Stacja C14000144 wymaga zdjęcia osłony ochronnej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI L2s Pro to dotykowy terminal 5,5 cala do sklepu i magazynu. Wybierz pamięć 3/32 lub 4/64 GB i konfigurację skanera.\n\n## Dobierz moduł skanujący do pracy z towarem\n\nSUNMI L2s Pro obsługuje aplikacje mobilne na ekranie 1440 × 720 pikseli. Wersje z dedykowanym skanerem odczytują kody 1D i 2D. P09064024 jest konfiguracją bez osobnego modułu skanującego.\n\nP09064085 i P09064014 mają Android 12 z usługami Google GMS EDLA. P09064007, P09064024 i P09064080 mają SUNMI OS bez usług Google. P09064007 i P09064014 mają pamięć 4/64 GB. P09064024 i P09064080 mają 3/32 GB. Wyposażenie wybierz według numeru PN.\n\nŁączność obejmuje Wi-Fi 5, 4G LTE i NFC. Bateria ma 5000 mAh, a obudowa klasę IP68. Odporność na upadki wynosi 1,5 m w warunkach testowych. Aparat tylny 13 MP umożliwia zapisanie stanu przesyłki. Stacja C14000144 wymaga zdjęcia osłony ochronnej.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2Ks](/produkt/sunmi-l2ks). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -461,7 +461,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "System operacyjny",
-        "value": "Android / SUNMI OS; GMS według PN"
+        "value": "SUNMI OS (Android 12); GMS EDLA w P09064085 i P09064014"
       },
       {
         "name": "Skaner kodów",
@@ -505,11 +505,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P09064014",
-        "name": "P09064014, 4/64 GB, Moduł 1D/2D, SUNMI OS",
+        "name": "P09064014, 4/64 GB, Moduł 1D/2D, GMS EDLA",
         "attributes": {
           "Pamięć": "4/64 GB",
           "Skaner": "Moduł 1D/2D",
-          "System": "SUNMI OS"
+          "System": "GMS EDLA"
         },
         "priceFrom": 2009.39,
         "availability": "available"
@@ -538,8 +538,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SS1111 — moduł SUNMI do kodów kreskowych 1D i kodów dwuwymiarowych 2D.\n• Moduł 1D/2D — osobny skaner kodów, a nie aparat fotograficzny.\n• Bez osobnego modułu — terminal nie ma dedykowanego skanera.\nZasięg odczytu zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
+      "Skaner": "• SS1111 — moduł SUNMI do kodów kreskowych 1D i kodów dwuwymiarowych 2D.\n\n• Moduł 1D/2D — osobny skaner kodów, a nie aparat fotograficzny.\n\n• Bez osobnego modułu — terminal nie ma dedykowanego skanera.\n\nZasięg odczytu zależy od wielkości i jakości kodu.",
+      "System": "• GMS EDLA — system z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 12, bez usług Google (GMS).",
       "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
       "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
       "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
@@ -703,7 +703,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "SUNMI V3 — terminal mobilny z drukarką 58 mm",
     "seoDescription": "SUNMI V3 z drukarką termiczną 58 mm, LTE i pamięcią 3/32 GB. Porównaj wersje NFC, aparaty i wariant ze skanerem 2D. Sprawdź PN i ceny.",
     "shortDescription": "Terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.",
-    "description": "SUNMI V3 — terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.\n\n## Obsługa klienta i wydruk w jednym urządzeniu\n\nSUNMI V3 łączy aplikację Android z drukarką do potwierdzeń i dokumentów z systemu firmy. Ekran ma 720 × 1600 pikseli. Urządzenie drukuje na papierze termicznym o szerokości 58 mm z prędkością do 80 mm/s.\n\nOferowane wersje mają pamięć 3/32 GB, Wi-Fi 5, Bluetooth 5.0 i 4G LTE. PN P06100077 dodaje osobny skaner 1D/2D. Pozostałe konfiguracje nie mają wskazanego takiego modułu. P06100007 ma aparat 5 MP i nie obejmuje NFC; pozostałe oferowane PN mają aparat 8 MP i NFC.\n\nBateria ma 3100 mAh. Port USB-C służy do połączenia i ładowania. Dostępność usług Google zależy od wybranej konfiguracji. Urządzenie wymaga zgodnej aplikacji sprzedażowej. Wbudowana drukarka nie jest polską drukarką fiskalną. Obsługa płatności zbliżeniowych wymaga osobnej zgodnej usługi operatora.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
+    "description": "SUNMI V3 — terminal z ekranem 6,75 cala i drukarką termiczną 58 mm do 80 mm/s. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.\n\n## Obsługa klienta i wydruk w jednym urządzeniu\n\nSUNMI V3 łączy aplikację Android z drukarką do potwierdzeń i dokumentów z systemu firmy. Ekran ma 720 × 1600 pikseli. Urządzenie drukuje na papierze termicznym o szerokości 58 mm z prędkością do 80 mm/s.\n\nOferowane wersje mają pamięć 3/32 GB, Wi-Fi 5, Bluetooth 5.0 i 4G LTE. PN P06100077 dodaje osobny skaner 1D/2D. Pozostałe konfiguracje nie mają wskazanego takiego modułu. P06100007 ma aparat 5 MP i nie obejmuje NFC; pozostałe oferowane PN mają aparat 8 MP i NFC.\n\nBateria ma 3100 mAh. Port USB-C służy do połączenia i ładowania. P06100009 i P06100077 mają usługi Google (GMS). P06100035 i P06100007 mają SUNMI OS bez usług Google. Urządzenie wymaga zgodnej aplikacji sprzedażowej. Wbudowana drukarka nie jest polską drukarką fiskalną. Obsługa płatności zbliżeniowych wymaga osobnej zgodnej usługi operatora.\n\n## Akcesoria i uruchomienie\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Wybierz je do konkretnego modelu i PN. Aplikacja oraz jej licencja nie są częścią terminala.\n\n## Porównaj terminale SUNMI\n\n[SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus), [SUNMI M3](/produkt/sunmi-m3). Całą ofertę porównaj w kategorii [terminale SUNMI](/terminale-sunmi).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -729,7 +729,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "System operacyjny",
-        "value": "Android / SUNMI OS — według PN"
+        "value": "SUNMI OS (Android 13); GMS w P06100009 i P06100077"
       },
       {
         "name": "Pamięć",
@@ -755,8 +755,9 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P06100009",
-        "name": "P06100009, Bez osobnego modułu, Tak, 8 MP",
+        "name": "P06100009, Android (GMS), bez osobnego skanera, NFC, aparat 8 MP",
         "attributes": {
+          "System": "Android (GMS)",
           "Skaner": "Bez osobnego modułu",
           "NFC": "Tak",
           "Aparat": "8 MP"
@@ -766,8 +767,9 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100035",
-        "name": "P06100035, Bez osobnego modułu, Tak, 8 MP",
+        "name": "P06100035, SUNMI OS, bez osobnego skanera, NFC, aparat 8 MP",
         "attributes": {
+          "System": "SUNMI OS",
           "Skaner": "Bez osobnego modułu",
           "NFC": "Tak",
           "Aparat": "8 MP"
@@ -777,8 +779,9 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100007",
-        "name": "P06100007, Bez osobnego modułu, Brak, 5 MP",
+        "name": "P06100007, SUNMI OS, bez osobnego skanera, bez NFC, aparat 5 MP",
         "attributes": {
+          "System": "SUNMI OS",
           "Skaner": "Bez osobnego modułu",
           "NFC": "Brak",
           "Aparat": "5 MP"
@@ -788,8 +791,9 @@ export const sunmiProducts: Product[] = [
       },
       {
         "partNumber": "P06100077",
-        "name": "P06100077, Moduł 1D/2D, Tak, 8 MP",
+        "name": "P06100077, Android (GMS), moduł 1D/2D, NFC, aparat 8 MP",
         "attributes": {
+          "System": "Android (GMS)",
           "Skaner": "Moduł 1D/2D",
           "NFC": "Tak",
           "Aparat": "8 MP"
@@ -799,8 +803,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• Moduł 1D/2D — osobny skaner obrazowy do kodów kreskowych i kodów dwuwymiarowych.\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
+      "Skaner": "• Moduł 1D/2D — osobny skaner obrazowy do kodów kreskowych i kodów dwuwymiarowych.\n\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\n\nZasięg zależy od wielkości i jakości kodu.",
+      "System": "• Android (GMS) — SUNMI OS z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 13, bez usług Google (GMS) i bez sklepu Google Play.",
       "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
       "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
       "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
