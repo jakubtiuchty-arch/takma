@@ -642,7 +642,7 @@ export const cipherlabProducts: Product[] = [
       "magazyn"
     ],
     "availability": "available",
-    "priceFrom": 3516.81,
+    "priceFrom": 3965.17,
     "isNew": true,
     "isBestseller": false,
     "specifications": [
