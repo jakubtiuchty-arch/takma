@@ -156,11 +156,11 @@ export const bixolonMobileProducts: Product[] = [
     "faq": [
       {
         "question": "Czy XM7-20 wydrukuje etykietę wysyłkową o szerokości 100 mm?",
-        "answer": "Nie. Maksymalna szerokość nadruku XM7-20 wynosi 48 mm. Do szerokich etykiet porównaj XM7-40 lub SPP-L410."
+        "answer": "Nie. Maksymalna szerokość nadruku XM7-20 wynosi 48 mm. Etykiety do 104 mm drukują XM7-40 i SPP-L410."
       },
       {
-        "question": "Czy XM7-20 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy XM7-20 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. XM7-20 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -362,8 +362,8 @@ export const bixolonMobileProducts: Product[] = [
         "answer": "XM7-30 drukuje do 72 mm i przyjmuje rolkę do 66 mm. XM7-20 drukuje do 48 mm i przyjmuje rolkę do 57 mm."
       },
       {
-        "question": "Czy XM7-30 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy XM7-30 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. XM7-30 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -559,12 +559,12 @@ export const bixolonMobileProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy każdy XM7-40 koduje znaczniki RFID?",
-        "answer": "Nie. Oferowane tutaj PN XM7-40 dotyczą druku etykiet bez kodera RFID. XM7-40R to odrębna konfiguracja. Standardowa drukarka nie koduje znaczników UHF."
+        "question": "Czy XM7-40 koduje znaczniki RFID?",
+        "answer": "Nie. XM7-40 nie ma kodera RFID. Wersja XM7-40R z koderem UHF jest osobnym modelem."
       },
       {
-        "question": "Czy XM7-40 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy XM7-40 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. XM7-40 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -746,8 +746,8 @@ export const bixolonMobileProducts: Product[] = [
         "answer": "Nie. Maksymalna średnica rolki SPP-L310 wynosi 49 mm. Rolki do 66 mm obsługują między innymi SPP-L3000 i XM7-30."
       },
       {
-        "question": "Czy SPP-L310 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy SPP-L310 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. SPP-L310 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -947,11 +947,11 @@ export const bixolonMobileProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SPP-L410 drukuje linerless w każdej wersji?",
-        "answer": "Nie. Do materiału bez podkładu potrzebny jest wariant linerless. Wersje standardowe i linerless mają różne PN oraz maksymalne prędkości druku."
+        "answer": "Nie. Etykiety bez podkładu drukują wersje z literą L na końcu PN, do 76 mm/s. Wersje do etykiet z podkładem drukują do 102 mm/s."
       },
       {
-        "question": "Czy SPP-L410 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy SPP-L410 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. SPP-L410 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1150,11 +1150,11 @@ export const bixolonMobileProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SPP-L3000 i SPP-L310 mają taki sam format rolki?",
-        "answer": "Nie. SPP-L3000 mieści rolkę do 66 mm i obsługuje materiał 25–80 mm. SPP-L310 mieści rolkę do 49 mm i wymaga odpowiedniego uchwytu do węższego materiału."
+        "answer": "Nie. SPP-L3000 mieści rolkę do 66 mm i obsługuje materiał 25–80 mm. SPP-L310 mieści rolkę do 49 mm; węższy materiał wymaga uchwytu PPH-L310."
       },
       {
-        "question": "Czy SPP-L3000 wymaga taśmy barwiącej?",
-        "answer": "Nie. To drukarka termiczna bezpośrednia. Wymaga zgodnego materiału termoczułego oraz właściwego formatu rolki."
+        "question": "Czy SPP-L3000 obsługuje język ZPL lub CPCL?",
+        "answer": "Tak. SPP-L3000 ma emulacje BPL-Z zgodną z ZPL i BPL-C zgodną z CPCL."
       }
     ],
     "createdAt": "2026-10-21",

@@ -129,8 +129,8 @@ export const bixolonLabelProducts: Product[] = [
         "answer": "Nie. XD3-40d drukuje na materiale termoczułym bez taśmy barwiącej. Do druku z taśmą służy XD3-40t."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD3-40d?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD3-40d obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD3-40d ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL. Język przełącza się automatycznie."
       }
     ],
     "createdAt": "2026-10-21",
@@ -264,8 +264,12 @@ export const bixolonLabelProducts: Product[] = [
         "answer": "XD3-40t obsługuje druk termotransferowy z taśmą oraz termiczny bezpośredni. XD3-40d drukuje wyłącznie termicznie, bez taśmy."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD3-40t?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD3-40t obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD3-40t ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL. Język przełącza się automatycznie."
+      },
+      {
+        "question": "Jaka taśma pasuje do BIXOLON XD3-40t?",
+        "answer": "Taśma o szerokości 33–110 mm z farbą na zewnątrz: do 74 m na gilzie 12,7 mm albo do 300 m na gilzie 25,4 mm."
       }
     ],
     "createdAt": "2026-10-21",
@@ -559,11 +563,11 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy XD5-40d i XD5-40IId to ten sam model?",
-        "answer": "Nie. XD5-40IId jest nowszą generacją. Sprawdź dokładny PN, prędkość druku, pamięć i interfejsy zamiast przenosić parametry między generacjami."
+        "answer": "Nie. XD5-40IId to druga generacja. Drukuje do 203 mm/s przy 203 dpi (XD5-40d: 178 mm/s) i ma 512 MB SDRAM oraz 512 MB Flash (XD5-40d: 64 MB i 128 MB)."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD5-40d?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD5-40d obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD5-40d ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -869,11 +873,15 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy zwykła XD5-40t koduje RFID?",
-        "answer": "Nie. Oferowane tutaj PN dotyczą druku etykiet bez kodera RFID. Wersja XD5-40tR ma osobną kartę i konfigurację."
+        "answer": "Nie. XD5-40t nie ma kodera RFID. Etykiety UHF RFID koduje XD5-40tR."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD5-40t?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD5-40t obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD5-40t ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
+      },
+      {
+        "question": "Jaka taśma pasuje do BIXOLON XD5-40t?",
+        "answer": "Taśma o szerokości 33–110 mm z farbą na zewnątrz: do 74 m na gilzie 12,7 mm albo do 300 m na gilzie 25,4 mm."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1101,8 +1109,8 @@ export const bixolonLabelProducts: Product[] = [
         "answer": "Nie. XD5-40IId jest drukarką termiczną. Do druku termotransferowego przeznaczona jest XD5-40IIt."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD5-40IId?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD5-40IId obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD5-40IId ma emulację BPL-Z zgodną z ZPL II, BPL-E zgodną z EPL oraz BPL-D zgodną z DPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1410,11 +1418,15 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czym XD5-40IIt różni się od XD5-40t?",
-        "answer": "XD5-40IIt jest drugą generacją, z pamięcią 512 MB SDRAM i 512 MB Flash. Wersja 203 dpi osiąga do 203 mm/s. Dobierz interfejsy według PN generacji II."
+        "answer": "XD5-40IIt to druga generacja z pamięcią 512 MB SDRAM i 512 MB Flash. Przy 203 dpi drukuje do 203 mm/s (XD5-40t: 152 mm/s). Ma czujnik końca taśmy."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XD5-40IIt?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XD5-40IIt obsługuje język Zebra ZPL?",
+        "answer": "Tak. XD5-40IIt ma emulację BPL-Z zgodną z ZPL II, BPL-E zgodną z EPL oraz BPL-D zgodną z DPL."
+      },
+      {
+        "question": "Jaka taśma pasuje do BIXOLON XD5-40IIt?",
+        "answer": "Taśma o szerokości 33–110 mm z farbą na zewnątrz: do 74 m na gilzie 12,7 mm albo do 300 m na gilzie 25,4 mm."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1581,11 +1593,15 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy każdy XT3-40 zawiera odklejak i nawijak?",
-        "answer": "Nie. Wyposażenie zależy od PN. W tabeli odróżniono konfiguracje standardowe od wersji z odklejakiem i nawijakiem podkładu."
+        "answer": "Nie. Odklejak i nawijak podkładu mają wersje XT3-409/BEG i XT3-439. XT3-40/BEG i XT3-43 odrywają etykiety ręcznie."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XT3-40?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XT3-40 obsługuje język Zebra ZPL?",
+        "answer": "Tak. XT3-40 ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
+      },
+      {
+        "question": "Jaka taśma pasuje do BIXOLON XT3-40?",
+        "answer": "Taśma o szerokości 40–110 mm i długości do 450 m, na gilzie 25,4 mm. Farba może być na zewnątrz lub wewnątrz."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1796,11 +1812,15 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy standardowy XT5-40 koduje etykiety RFID?",
-        "answer": "Nie. PN na tej karcie dotyczą drukarek bez kodera RFID. Do druku i kodowania UHF przeznaczona jest osobna rodzina XT5-40NR."
+        "answer": "Nie. XT5-40 nie ma kodera RFID. Do druku i kodowania UHF służy XT5-40NR."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XT5-40?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XT5-40 obsługuje język Zebra ZPL?",
+        "answer": "Tak. XT5-40 ma emulację BPL-Z zgodną z ZPL II, BPL-E zgodną z EPL oraz BPL-D zgodną z DPL."
+      },
+      {
+        "question": "Jaka taśma pasuje do BIXOLON XT5-40?",
+        "answer": "Taśma o szerokości 50–110 mm i długości do 450 m, na gilzie 25,4 mm. Farba może być na zewnątrz lub wewnątrz."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1990,11 +2010,11 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SLP-DX220 drukuje na etykietach wymagających taśmy?",
-        "answer": "Nie. SLP-DX220 jest modelem termicznym. Do etykiet wymagających taśmy barwiącej porównaj SLP-TX220."
+        "answer": "Nie. SLP-DX220 drukuje termicznie, bez taśmy barwiącej. Do druku z taśmą służy SLP-TX220."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON SLP-DX220?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON SLP-DX220 obsługuje język Zebra ZPL?",
+        "answer": "Tak. SLP-DX220 ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -2183,12 +2203,12 @@ export const bixolonLabelProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Jaką długość taśmy obsługuje SLP-TX220?",
-        "answer": "SLP-TX220 obsługuje taśmę termotransferową do 74 m. Nie dobieraj do niej rolki 300 m przeznaczonej do większych modeli."
+        "question": "Jaka taśma pasuje do BIXOLON SLP-TX220?",
+        "answer": "Taśma o szerokości 58 mm i długości do 74 m, na gilzie 12,7 mm, z farbą na zewnątrz."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON SLP-TX220?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON SLP-TX220 obsługuje język Zebra ZPL?",
+        "answer": "Tak. SLP-TX220 ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -2310,11 +2330,11 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SLP-DL410EK/beg zawiera przewód do komputera?",
-        "answer": "Nie. PN zawiera zasilacz i przewód sieciowy EU. Przewód komunikacyjny dobierz osobno do wybranego interfejsu."
+        "answer": "Nie. Zestaw zawiera zasilacz i przewód zasilający. Przewód USB, np. USB-KAB-G, zamawia się osobno."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON SLP-DL410?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON SLP-DL410 obsługuje język Zebra ZPL?",
+        "answer": "Tak. SLP-DL410 ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -2555,8 +2575,8 @@ export const bixolonLabelProducts: Product[] = [
         "answer": "Tak. XL5-40CT drukuje na etykietach bez podkładu oraz na etykietach z podkładem: z przerwą, z czarnym znacznikiem i składanych."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XL5-40CT?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XL5-40CT obsługuje język Zebra ZPL?",
+        "answer": "Tak. XL5-40CT ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
@@ -2687,8 +2707,8 @@ export const bixolonLabelProducts: Product[] = [
         "answer": "Nie. Zintegrowany tablet z Androidem może uruchamiać zgodną aplikację drukującą. Wymaga jej konfiguracji, szablonów i dostępu do potrzebnych danych."
       },
       {
-        "question": "Jak wybrać interfejs BIXOLON XQ-840II?",
-        "answer": "Sprawdź interfejsy przypisane do PN. Sam przewód nie dodaje portu ani modułu radiowego. Dobierz konfigurację do komputera lub systemu etykietującego."
+        "question": "Czy BIXOLON XQ-840II obsługuje język Zebra ZPL?",
+        "answer": "Tak. XQ-840II ma emulację BPL-Z zgodną z ZPL II oraz BPL-E zgodną z EPL."
       }
     ],
     "createdAt": "2026-10-21",
