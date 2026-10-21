@@ -114,14 +114,67 @@ const GOOGLE_CATEGORY: Record<string, string> = {
   'drukarki-etykiet': '952',
 }
 
+/** Terminal z wbudowaną drukarką (SUNMI V3, V3H, V3 Plus) to dla kupujących terminal POS. */
+function maDrukarke(product: Product): boolean {
+  return product.specifications.some(s => /^Drukarka/i.test(s.name))
+}
+
 /** Typ urządzenia na początku tytułu. Nazwy modeli („Zebra ZD421t”) nie mówią, że to drukarka,
- *  a Google dopasowuje oferty do zapytań w rodzaju „drukarka etykiet zebra”. */
+ *  a Google dopasowuje oferty do zapytań w rodzaju „drukarka etykiet zebra”. Akcesoria bez
+ *  prefiksu — ich nazwy zaczynają się od typu („Stacja…”, „Etui…”). */
 function typUrzadzenia(product: Product): string | null {
-  if (product.categoryId !== 'drukarki-etykiet' || /drukark/i.test(product.name)) return null
-  const sub = product.subcategoryIds ?? []
-  if (sub.includes('mobilne-drukarki-etykiet')) return 'Mobilna drukarka etykiet'
-  if (sub.includes('kolorowe-drukarki-etykiet')) return 'Kolorowa drukarka etykiet'
-  return 'Drukarka etykiet'
+  switch (product.categoryId) {
+    case 'drukarki-etykiet': {
+      if (/drukark/i.test(product.name)) return null
+      const sub = product.subcategoryIds ?? []
+      if (sub.includes('mobilne-drukarki-etykiet')) return 'Mobilna drukarka etykiet'
+      if (sub.includes('kolorowe-drukarki-etykiet')) return 'Kolorowa drukarka etykiet'
+      return 'Drukarka etykiet'
+    }
+    case 'terminale-mobilne':
+      if (/terminal|kolektor/i.test(product.name)) return null
+      return maDrukarke(product) ? 'Terminal POS' : 'Terminal mobilny'
+    case 'skanery-kodow-kreskowych':
+      return /skaner|czytnik/i.test(product.name) ? null : 'Skaner kodów kreskowych'
+    case 'drukarki-pos':
+      return /drukark/i.test(product.name) ? null : 'Drukarka paragonów'
+    default:
+      return null
+  }
+}
+
+/** Kategoria Google dla SUNMI: 543648 Terminale POS, 5256 Palmtopy > Kolektory danych,
+ *  4739 Futerały na urządzenia PDA, 4737 Akcesoria do urządzeń PDA. Pozostałe według GOOGLE_CATEGORY. */
+function kategoriaGoogle(product: Product): string | undefined {
+  if (product.manufacturerId === 'sunmi') {
+    if (product.categoryId === 'terminale-mobilne') return maDrukarke(product) ? '543648' : '5256'
+    if (product.categoryId === 'akcesoria') return /^Etui\b/.test(product.name) ? '4739' : '4737'
+  }
+  return GOOGLE_CATEGORY[product.categoryId]
+}
+
+/** Wartość „Tak” w nazwie wariantu („…, SE4770, Tak, GMS EDLA”) nic nie mówi w tytule —
+ *  zamieniamy ją na nazwę cechy z atrybutów („NFC”), a „Brak”/„Nie” na „bez NFC”. */
+function etykietaWariantu(variant: ProductVariant): string {
+  const atrybuty = Object.entries(variant.attributes ?? {})
+  const tak = atrybuty.filter(([, wartosc]) => wartosc === 'Tak').map(([cecha]) => cecha)
+  const nie = atrybuty.filter(([, wartosc]) => wartosc === 'Brak' || wartosc === 'Nie').map(([cecha]) => cecha)
+  return variant.name.split(', ').map(czesc => {
+    if (czesc === 'Tak' && tak.length) return tak.shift()!
+    if ((czesc === 'Brak' || czesc === 'Nie') && nie.length) return `bez ${nie.shift()}`
+    return czesc
+  }).join(', ')
+}
+
+/** Tytuł bez typu urządzenia. Gdy nazwa wariantu zaczyna się od PN (SUNMI), układ
+ *  „[Marka] [Model] [cechy] ([PN])”; pozostałe produkty bez zmian: „[Nazwa] — [wariant]”. */
+function tytulBazowy(product: Product, variant?: ProductVariant): string {
+  if (!variant) return product.name
+  const etykieta = etykietaWariantu(variant)
+  const pn = variant.partNumber
+  if (etykieta === pn) return `${product.name} (${pn})`
+  if (etykieta.startsWith(`${pn}, `)) return `${product.name} ${etykieta.slice(pn.length + 2)} (${pn})`
+  return `${product.name} — ${etykieta}`
 }
 
 /** Pierwszy obraz nadający się do Merchant Center.
@@ -220,7 +273,7 @@ export async function GET() {
 
     // "Uchwyt pistoletowy" wyzwala klasyfikator GMC "Guns and Parts" (odrzucenie) —
     // w feedzie neutralna nazwa; na stronie produktu nazwa bez zmian
-    const rawTitle = c.variant ? `${c.product.name} — ${c.variant.name}` : c.product.name
+    const rawTitle = tytulBazowy(c.product, c.variant)
     const typ = typUrzadzenia(c.product)
     const title = truncate(`${typ ? `${typ} ` : ''}${rawTitle}`.replace(/uchwyt pistoletowy/gi, 'Rękojeść skanera (trigger)'), 146) // truncate dopisuje „...”, limit Google to 150 znaków
 
@@ -237,7 +290,7 @@ export async function GET() {
       gtiny,
       itemGroupId: c.variant ? c.product.slug : undefined,
       productType,
-      googleProductCategory: GOOGLE_CATEGORY[c.product.categoryId],
+      googleProductCategory: kategoriaGoogle(c.product),
     }))
     seenPns.add(c.pn)
   }
