@@ -3119,7 +3119,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jaki terminal mobilny do chłodni i mroźni?',
-      answer: 'Do pracy w chłodniach (−20°C do −30°C) polecamy: Zebra MC9400 (−30°C do +50°C, opcja heated display eliminujący parowanie, IP67, drop 3,0 m, od 8 482 zł) lub Honeywell CK67 (−20°C, bateria 7 000 mAh, IP65, drop 2,4 m, od ~7 200 zł). Kluczowe cechy terminala do chłodni: obsługa w rękawicach (glove mode), bateria o zwiększonej pojemności (mróz skraca czas pracy o 20–30%), certyfikat min. IP67 (kondensacja przy przejściach ciepło/zimno), podświetlana klawiatura. Nie kupuj entry-level do chłodni — oszczędność na zakupie przełoży się na 3× wyższe koszty napraw.'
+      answer: 'Do pracy w chłodniach (−20°C do −30°C) polecamy: Zebra MC9400 (−30°C do +50°C, opcja heated display eliminujący parowanie, IP67, drop 3,0 m, od 8 482 zł) lub Honeywell CK67 (−20°C, bateria 7 000 mAh, IP65, drop 2,4 m, od ~7 200 zł). Do mroźni służy też <a href="/produkt/cipherlab-rk96-cold-storage">CipherLab RK96 Cold Storage</a> z podgrzewanym ekranem i pracą od −30°C. Kluczowe cechy terminala do chłodni: obsługa w rękawicach (glove mode), bateria o zwiększonej pojemności (mróz skraca czas pracy o 20–30%), certyfikat min. IP67 (kondensacja przy przejściach ciepło/zimno), podświetlana klawiatura. Nie kupuj entry-level do chłodni — oszczędność na zakupie przełoży się na 3× wyższe koszty napraw.'
     },
     {
       question: 'Jak długo służy terminal mobilny?',
