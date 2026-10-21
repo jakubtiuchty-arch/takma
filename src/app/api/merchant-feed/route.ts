@@ -154,16 +154,24 @@ function kategoriaGoogle(product: Product): string | undefined {
 }
 
 /** Wartość „Tak” w nazwie wariantu („…, SE4770, Tak, GMS EDLA”) nic nie mówi w tytule —
- *  zamieniamy ją na nazwę cechy z atrybutów („NFC”), a „Brak”/„Nie” na „bez NFC”. */
+ *  zamieniamy ją na nazwę cechy z atrybutów („NFC”), a „Brak”/„Nie” na „NFC: brak”.
+ *  Części nazwy rozdziela „, ” albo „ · ”. */
 function etykietaWariantu(variant: ProductVariant): string {
   const atrybuty = Object.entries(variant.attributes ?? {})
-  const tak = atrybuty.filter(([, wartosc]) => wartosc === 'Tak').map(([cecha]) => cecha)
-  const nie = atrybuty.filter(([, wartosc]) => wartosc === 'Brak' || wartosc === 'Nie').map(([cecha]) => cecha)
-  return variant.name.split(', ').map(czesc => {
-    if (czesc === 'Tak' && tak.length) return tak.shift()!
-    if ((czesc === 'Brak' || czesc === 'Nie') && nie.length) return `bez ${nie.shift()}`
+  const uzyte = new Set<string>()
+  const cecha = (wartosc: string) => {
+    const znaleziona = atrybuty.find(([nazwa, w]) => w === wartosc && !uzyte.has(nazwa))?.[0]
+    if (znaleziona) uzyte.add(znaleziona)
+    return znaleziona
+  }
+  return variant.name.split(/(, | · )/).map(czesc => {
+    if (czesc === 'Tak') return cecha('Tak') ?? czesc
+    if (czesc === 'Brak' || czesc === 'Nie') {
+      const nazwa = cecha(czesc)
+      return nazwa ? `${nazwa}: brak` : czesc
+    }
     return czesc
-  }).join(', ')
+  }).join('')
 }
 
 /** Tytuł bez typu urządzenia. Gdy nazwa wariantu zaczyna się od PN (SUNMI), układ
