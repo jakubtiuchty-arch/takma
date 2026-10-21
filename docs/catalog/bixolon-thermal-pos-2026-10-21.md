@@ -113,7 +113,7 @@ Snapshot 2026-10-21; frontend pobiera bieżące oferty. Kwoty początkowe mogą 
 - /images/products/bixolon-srp-380plus-3.webp (800×800) ← https://bixoloneu.com/wp-content/uploads/2025/01/SRP-380ll_04_Open.png
 - /images/products/bixolon-srp-380plus-4.webp (800×800) ← https://bixoloneu.com/wp-content/uploads/2025/01/SRP-380ll_05_Top_Cover_Open_Paper.png
 - /images/products/bixolon-srp-380plus-5.webp (800×800) ← https://bixoloneu.com/wp-content/uploads/2025/01/SRP-380ll_07_Interface.png
-- /images/products/bixolon-srp-q200-1.webp (2000×1939) ← https://bixoloneu.com/wp-content/uploads/2020/07/SRP-Q200_02_paper.jpg
+- /images/products/bixolon-srp-q200-1.webp (1500×1500) ← https://bixoloneu.com/wp-content/uploads/2020/07/SRP-Q200_02_paper.jpg
 - /images/products/bixolon-srp-q200-2.webp (700×700) ← https://bixoloneu.com/wp-content/uploads/2021/01/SRP-Q200_02.png
 - /images/products/bixolon-srp-q200-3.webp (800×800) ← https://bixoloneu.com/wp-content/uploads/2021/01/SRP-Q200_03.png
 - /images/products/bixolon-srp-q200-4.webp (800×800) ← https://bixoloneu.com/wp-content/uploads/2021/01/SRP-Q200_01.png
@@ -141,3 +141,6 @@ Snapshot 2026-10-21; frontend pobiera bieżące oferty. Kwoty początkowe mogą 
 - Kafelki 4:3; widoczny obiekt drukarki 72% wysokości, akcesoria 62%. Weryfikacja nazw i skali w przeglądarce, bez zmian struktury kafelków.
 - Odrzucono miniaturę 400×400 SRP-330III; jako główne użyto zdjęcia 800×800.
 - Opisy odróżniają stacjonarne POS, mobilne paragony i etykiety. SRP-350V/plusV i SRP-380/plus rozdzielono przez parametry i linki porównawcze.
+
+## Korekta zdjęć 22.10.2026
+SRP-Q200-1 przeniesiono na białe płótno 1500 × 1500 (dłuższy bok produktu 82%, jak SRP-380-1, SRP-F310II-1 i SRP-Q300-1). SRP-Q200-2 i SRP-Q200-3 ponownie wykadrowano z oryginałów bixoloneu.com: produkt 80% płótna zamiast 41–43%. SRP-380-2: usunięto szare linie 1 px przy lewej i prawej krawędzi.

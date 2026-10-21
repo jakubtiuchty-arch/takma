@@ -635,7 +635,7 @@ export const epsonPosProducts: Product[] = [
     ],
     "imageDescriptions": [
       "Epson TM-m30III-H — czarna obudowa, wydruk paragonu od góry, widok pod kątem",
-      "Epson TM-m30III-H — widok z góry na pokrywę"
+      "Epson TM-m30III-H — biała obudowa, wydruk paragonu od góry, widok pod kątem"
     ],
     "tags": [
       "retail"
