@@ -179,7 +179,7 @@ export const cipherlabProducts: Product[] = [
     "variants": [
       {
         "partNumber": "AS3664RF4NSG1",
-        "name": "CipherLab RS36",
+        "name": "AS3664RF4NSG1, SE4770, Wi-Fi, bez zasilacza",
         "attributes": {
           "Skaner": "SE4770",
           "Łączność": "Wi-Fi",
@@ -190,7 +190,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS36E4GF4NSU1",
-        "name": "CipherLab RS36",
+        "name": "AS36E4GF4NSU1, SE4100, Wi-Fi + 4G LTE, bez zasilacza",
         "attributes": {
           "Skaner": "SE4100",
           "Łączność": "Wi-Fi + 4G LTE",
@@ -201,7 +201,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS36E4RF4NSG1",
-        "name": "CipherLab RS36",
+        "name": "AS36E4RF4NSG1, SE4770, Wi-Fi + 4G LTE, bez zasilacza",
         "attributes": {
           "Skaner": "SE4770",
           "Łączność": "Wi-Fi + 4G LTE",
@@ -212,7 +212,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS36E4AF4EUG1",
-        "name": "CipherLab RS36",
+        "name": "AS36E4AF4EUG1, SE5500, Wi-Fi + 4G LTE, zasilacz w zestawie",
         "attributes": {
           "Skaner": "SE5500",
           "Łączność": "Wi-Fi + 4G LTE",
@@ -223,7 +223,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS36E4AF4NSG1",
-        "name": "CipherLab RS36",
+        "name": "AS36E4AF4NSG1, SE5500, Wi-Fi + 4G LTE, bez zasilacza",
         "attributes": {
           "Skaner": "SE5500",
           "Łączność": "Wi-Fi + 4G LTE",
@@ -339,7 +339,7 @@ export const cipherlabProducts: Product[] = [
     "variants": [
       {
         "partNumber": "AS3858AF4NSG1",
-        "name": "CipherLab RS38",
+        "name": "AS3858AF4NSG1, SE5500, Wi-Fi 6E + 5G",
         "attributes": {
           "Skaner": "SE5500",
           "Łączność": "Wi-Fi 6E + 5G"
@@ -349,7 +349,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS3858RF4NSG1",
-        "name": "CipherLab RS38",
+        "name": "AS3858RF4NSG1, SE4770, Wi-Fi 6E + 5G",
         "attributes": {
           "Skaner": "SE4770",
           "Łączność": "Wi-Fi 6E + 5G"
@@ -359,7 +359,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS38N8AF4NSG1",
-        "name": "CipherLab RS38",
+        "name": "AS38N8AF4NSG1, SE5500, Wi-Fi 6E",
         "attributes": {
           "Skaner": "SE5500",
           "Łączność": "Wi-Fi 6E"
@@ -369,7 +369,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AS38N8RF4NSG1",
-        "name": "CipherLab RS38",
+        "name": "AS38N8RF4NSG1, SE4770, Wi-Fi 6E",
         "attributes": {
           "Skaner": "SE4770",
           "Łączność": "Wi-Fi 6E"
@@ -514,7 +514,7 @@ export const cipherlabProducts: Product[] = [
   },
   {
     "id": "cipherlab-rk26",
-    "variantAttributeTooltips": { "Skaner": "Moduły odczytują kody 1D i 2D.\n• SE4100 — standardowy zakres odczytu, celownik LED.\n• SE4750 SR — Standard Range, czyli standardowy zakres odczytu.\n• SE4750 MR — Mid Range, czyli średni zakres odczytu, większy niż w wersji SR.\n• SE5500 — rozszerzony zakres odczytu, do kodów z bliska i z większej odległości.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu." },
+    "variantAttributeTooltips": { "Skaner": "Moduły odczytują kody 1D i 2D.\n• SE4100 — standardowy zakres odczytu, celownik LED.\n• SE4750 SR — Standard Range, czyli standardowy zakres odczytu.\n• SE4750 MR — Mid Range, czyli średni zakres odczytu, większy niż w wersji SR.\n• SE5500 — rozszerzony zakres odczytu, do kodów z bliska i z większej odległości.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu.", "Łączność": "Wi-Fi 5 — standard 802.11ac.\n\nWi-Fi 6 — standard 802.11ax z MU-MIMO 2×2.\n\n4G LTE — modem komórkowy i GPS." },
     "slug": "cipherlab-rk26",
     "name": "CipherLab RK26",
     "seoH1": "CipherLab RK26",
@@ -585,7 +585,7 @@ export const cipherlabProducts: Product[] = [
     "variants": [
       {
         "partNumber": "AK266M4DFNG41",
-        "name": "CipherLab RK26",
+        "name": "AK266M4DFNG41, SE4750 MR, 28 klawiszy, Wi-Fi 5, bez zasilacza",
         "attributes": {
           "Skaner": "SE4750 MR",
           "Klawiatura": "28 klawiszy",
@@ -597,7 +597,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK26EG4DNNG41",
-        "name": "CipherLab RK26",
+        "name": "AK26EG4DNNG41, SE4100, 28 klawiszy, Wi-Fi 5 + 4G LTE, bez zasilacza",
         "attributes": {
           "Skaner": "SE4100",
           "Klawiatura": "28 klawiszy",
@@ -609,7 +609,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK26ES4DFEG41",
-        "name": "CipherLab RK26",
+        "name": "AK26ES4DFEG41, SE4750 SR, 28 klawiszy, Wi-Fi 5 + 4G LTE, zasilacz w zestawie",
         "attributes": {
           "Skaner": "SE4750 SR",
           "Klawiatura": "28 klawiszy",
@@ -621,7 +621,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK266A4DFEG41",
-        "name": "CipherLab RK26",
+        "name": "AK266A4DFEG41, SE5500, 28 klawiszy, Wi-Fi 6, zasilacz w zestawie",
         "attributes": {
           "Skaner": "SE5500",
           "Klawiatura": "28 klawiszy",
@@ -633,7 +633,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK266A4DNNG41",
-        "name": "CipherLab RK26",
+        "name": "AK266A4DNNG41, SE5500, 25 klawiszy, Wi-Fi 6, bez zasilacza",
         "attributes": {
           "Skaner": "SE5500",
           "Klawiatura": "25 klawiszy",
@@ -645,7 +645,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK266S4DFEG41",
-        "name": "CipherLab RK26",
+        "name": "AK266S4DFEG41, SE4750 SR, 28 klawiszy, Wi-Fi 6, zasilacz w zestawie",
         "attributes": {
           "Skaner": "SE4750 SR",
           "Klawiatura": "28 klawiszy",
@@ -657,7 +657,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK26EA4DFNG41",
-        "name": "CipherLab RK26",
+        "name": "AK26EA4DFNG41, SE5500, 28 klawiszy, Wi-Fi 5 + 4G LTE, bez zasilacza",
         "attributes": {
           "Skaner": "SE5500",
           "Klawiatura": "28 klawiszy",
@@ -669,7 +669,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK26EM4DNEG41",
-        "name": "CipherLab RK26",
+        "name": "AK26EM4DNEG41, SE4750 MR, 25 klawiszy, Wi-Fi 6 + 4G LTE, zasilacz w zestawie",
         "attributes": {
           "Skaner": "SE4750 MR",
           "Klawiatura": "25 klawiszy",
@@ -779,7 +779,7 @@ export const cipherlabProducts: Product[] = [
     "variants": [
       {
         "partNumber": "AK96N5F63XSG1",
-        "name": "CipherLab RK96",
+        "name": "AK96N5F63XSG1, SE5800, 38 klawiszy",
         "attributes": {
           "Skaner": "SE5800",
           "Klawiatura": "38 klawiszy"
@@ -789,7 +789,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK96NSF63XSG1",
-        "name": "CipherLab RK96",
+        "name": "AK96NSF63XSG1, SE4750 SR, 38 klawiszy",
         "attributes": {
           "Skaner": "SE4750 SR",
           "Klawiatura": "38 klawiszy"
@@ -799,7 +799,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK96N5F64XSG1",
-        "name": "CipherLab RK96",
+        "name": "AK96N5F64XSG1, SE5800, 41 klawiszy",
         "attributes": {
           "Skaner": "SE5800",
           "Klawiatura": "41 klawiszy"
@@ -809,17 +809,17 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "partNumber": "AK96N5F65XSG1",
-        "name": "CipherLab RK96",
+        "name": "AK96N5F65XSG1, SE5800, 53 klawisze",
         "attributes": {
           "Skaner": "SE5800",
-          "Klawiatura": "53 klawiszy"
+          "Klawiatura": "53 klawisze"
         },
         "priceFrom": 8790.45,
         "availability": "available"
       },
       {
         "partNumber": "AK96NMF63XSG1",
-        "name": "CipherLab RK96",
+        "name": "AK96NMF63XSG1, SE4750 MR, 38 klawiszy",
         "attributes": {
           "Skaner": "SE4750 MR",
           "Klawiatura": "38 klawiszy"
