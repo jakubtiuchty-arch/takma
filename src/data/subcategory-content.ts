@@ -2165,7 +2165,7 @@ Akcesoria Zebra mają RÓŻNE Part Numbery nawet w obrębie tej samej serii — 
   'skanery-kodow-kreskowych': {
     definition: {
       heading: 'Co to jest skaner kodów kreskowych?',
-      content: 'Skaner kodów kreskowych (ang. barcode scanner) to urządzenie elektroniczne służące do automatycznego odczytu i dekodowania informacji zapisanych w kodach kreskowych 1D (liniowych) i 2D (dwuwymiarowych). Na rynku B2B dostępne są trzy główne kategorie: skanery przewodowe (USB, RS-232) zapewniające stałe połączenie bez baterii, skanery bezprzewodowe (Bluetooth, radio 2.4 GHz FHSS) dające swobodę ruchu operatora, oraz skanery prezentacyjne (hands-free) montowane na stanowiskach kasowych i recepcjach do automatycznego odczytu bez naciskania przycisku. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele od budżetowych skanerów 1D (od ~200 zł netto) po zaawansowane imager 2D klasy przemysłowej z certyfikatem IP67 i zasięgiem do 7 metrów (od ~1 300 zł netto). Nowoczesne skanery odczytują kody EAN, Code 128, QR, Data Matrix, PDF417 oraz kody z ekranów smartfonów — kupony, bilety mobilne i karty lojalnościowe. To podstawowe narzędzie automatycznej identyfikacji w logistyce, handlu detalicznym, produkcji, farmacji i ochronie zdrowia.',
+      content: 'Skaner kodów kreskowych (ang. barcode scanner) to urządzenie elektroniczne służące do automatycznego odczytu i dekodowania informacji zapisanych w kodach kreskowych 1D (liniowych) i 2D (dwuwymiarowych). Na rynku B2B dostępne są cztery główne rodzaje: skanery przewodowe (USB, RS-232) zapewniające stałe połączenie bez baterii, skanery bezprzewodowe (Bluetooth, radio 2.4 GHz FHSS) dające swobodę ruchu operatora, skanery prezentacyjne (hands-free) montowane na stanowiskach kasowych i recepcjach do automatycznego odczytu bez naciskania przycisku oraz skanery ladowe wbudowane w blat kasy, z jednym albo dwoma oknami odczytu. Czołowi producenci — Zebra Technologies, Honeywell i Datalogic — oferują modele od budżetowych skanerów 1D (od ~200 zł netto) po zaawansowane imager 2D klasy przemysłowej z certyfikatem IP67 i zasięgiem do 7 metrów (od ~1 300 zł netto). Nowoczesne skanery odczytują kody EAN, Code 128, QR, Data Matrix, PDF417 oraz kody z ekranów smartfonów — kupony, bilety mobilne i karty lojalnościowe. To podstawowe narzędzie automatycznej identyfikacji w logistyce, handlu detalicznym, produkcji, farmacji i ochronie zdrowia.',
     },
     buyingGuide: {
       heading: 'Jak wybrać skaner kodów kreskowych do firmy?',
@@ -2295,6 +2295,10 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
         question: 'Jakie skanery Zebra są w ofercie?',
         answer: 'W kategorii [skanery kodów kreskowych Zebra](/skanery-kodow-kreskowych-zebra) jest 20 modeli: przewodowe LI2208, DS2208, DS4608 i DS9308 do kasy i biura, bezprzewodowe DS2278 i DS4678, przemysłowe DS3608 i LI3608 w obudowie odpornej na upadki oraz DS9908 do lady. Skaner Zebra kosztuje od 181 zł netto.',
       },
+      {
+        question: 'Jaki skaner do kasy sklepowej: ręczny, prezentacyjny czy ladowy?',
+        answer: 'Skaner ręczny wystarcza przy małej liczbie transakcji. [Skaner prezentacyjny](/skanery-kodow-kreskowych/prezentacyjne) stoi na blacie i czyta kod bez naciskania przycisku. [Skaner ladowy](/skanery-kodow-kreskowych/ladowe) jest wbudowany w blat kasy, a modele dwuokienkowe czytają kod z kilku stron towaru.',
+      },
     ],
     comparisons: [
       {
@@ -2315,7 +2319,7 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       },
       {
         title: 'Zebra vs Honeywell vs Datalogic — porównanie producentów',
-        content: 'Zebra Technologies: najszerszy ekosystem (DNA, 123Scan, OneCare), dominujący udział rynkowy, najlepszy serwis w Polsce. Honeywell: silne modele w segmencie healthcare i premium, Adaptus 7.0 — szybki algorytm dekodowania. Datalogic: mocna pozycja w skanerach prezentacyjnych (Magellan), dobre ceny w segmencie entry-level. Przy wyborze producenta sprawdź: dostępność serwisu lokalnie, kompatybilność z istniejącym ekosystemem, dostępność akcesoriów i kabli zamiennych.',
+        content: 'Zebra Technologies: najszerszy ekosystem (DNA, 123Scan, OneCare), dominujący udział rynkowy, najlepszy serwis w Polsce. Honeywell: silne modele w segmencie healthcare i premium, Adaptus 7.0 — szybki algorytm dekodowania. Datalogic: mocna pozycja w skanerach prezentacyjnych i ladowych (Magellan), dobre ceny w segmencie entry-level. Przy wyborze producenta sprawdź: dostępność serwisu lokalnie, kompatybilność z istniejącym ekosystemem, dostępność akcesoriów i kabli zamiennych.',
       },
     ],
     howToSteps: [
@@ -2325,7 +2329,7 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       },
       {
         name: 'Wybierz typ skanera i interfejs komunikacyjny',
-        text: 'Stałe stanowisko + niski wolumen → skaner przewodowy USB HID. Stałe stanowisko + wysoki wolumen → skaner prezentacyjny. Praca mobilna → skaner bezprzewodowy (BT lub 2.4 GHz FHSS). Starszy system POS → sprawdź, czy potrzebujesz RS-232 lub IBM 46xx.',
+        text: 'Stałe stanowisko + niski wolumen → skaner przewodowy USB HID. Stałe stanowisko + wysoki wolumen → skaner prezentacyjny. Kasa z taśmą w supermarkecie → skaner ladowy wbudowany w blat. Praca mobilna → skaner bezprzewodowy (BT lub 2.4 GHz FHSS). Starszy system POS → sprawdź, czy potrzebujesz RS-232 lub IBM 46xx.',
       },
       {
         name: 'Podłącz i skonfiguruj skaner',
