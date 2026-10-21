@@ -166,3 +166,10 @@ Lokalne testy: 32 karty HTTP 200, jedno H1, metadane/canonical/OG/Twitter i sche
 
 ## Korekta jakości zdjęcia ładowarki 20 baterii
 Po kontroli dużej galerii wykonano poprawę jakości w Imagen na oryginalnym zdjęciu producenta 300 × 300 px. Zachowano pięć modułów z czterema gniazdami każdy, perspektywę i konstrukcję. Nowy plik `cipherlab-ark95mscnne01-v2.webp`. Wynik: `exec-fb7967fe-bf29-4899-b057-051aad214e60.png`. Sprawdzono układ gniazd względem oryginału.
+
+## Objaśnienia modułów skanujących w tabelach
+2026-10-21: dodano produktowe podpowiedzi kolumny „Skaner” na RS36, RS38, RK26 i RK96. Tylko moduły występujące w wariantach danej karty; wspólna informacja o kodach 1D/2D i zależności zasięgu od etykiety. Bez przenoszenia maksymalnych metrów pomiędzy terminalami.
+- SE4100: standardowy zakres, celownik LED — https://www.zebra.com/gb/en/products/spec-sheets/oem/oem-engines/oem-array-imager-scan-engines/se4100-se4107.html
+- SE4770: standardowy zakres, celownik laserowy — https://www.zebra.com/content/dam/zebra_dam/en/guide/portfolio/oem-guide-at-a-glance-en-us.pdf
+- SE5500: Advanced Range; SE4750 SR/MR: Standard/Middle Range — https://www.cipherlab.com/files/RK26_Brochure_ALL_EN.PDF
+- SE5800: Extended Range — https://www.cipherlab.com/en/product-285380/Wi-Fi-7-Industrial-Mobile-Computer-RK96-Series.html

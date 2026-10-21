@@ -108,6 +108,7 @@ export const cipherlabProducts: Product[] = [
   },
   {
     "id": "cipherlab-rs36",
+    "variantAttributeTooltips": { "Skaner": "Moduły odczytują kody 1D i 2D.\n• SE4100 — standardowy zakres odczytu, celownik LED. Do skanowania etykiet z bliska.\n• SE4770 — standardowy zakres odczytu, celownik laserowy ułatwiający wskazanie kodu.\n• SE5500 — rozszerzony zakres odczytu. Do kodów z bliska oraz z większej odległości, np. na regałach.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu." },
     "slug": "cipherlab-rs36",
     "name": "CipherLab RS36",
     "seoH1": "CipherLab RS36",
@@ -263,6 +264,7 @@ export const cipherlabProducts: Product[] = [
   },
   {
     "id": "cipherlab-rs38",
+    "variantAttributeTooltips": { "Skaner": "Oba moduły odczytują kody 1D i 2D.\n• SE4770 — standardowy zakres odczytu, celownik laserowy. Do etykiet skanowanych z bliska.\n• SE5500 — rozszerzony zakres odczytu. Do kodów z bliska oraz z większej odległości, np. na regałach.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu." },
     "slug": "cipherlab-rs38",
     "name": "CipherLab RS38",
     "seoH1": "CipherLab RS38",
@@ -510,6 +512,7 @@ export const cipherlabProducts: Product[] = [
   },
   {
     "id": "cipherlab-rk26",
+    "variantAttributeTooltips": { "Skaner": "Moduły odczytują kody 1D i 2D.\n• SE4100 — standardowy zakres odczytu, celownik LED.\n• SE4750 SR — Standard Range, czyli standardowy zakres odczytu.\n• SE4750 MR — Mid Range, czyli średni zakres odczytu, większy niż w wersji SR.\n• SE5500 — rozszerzony zakres odczytu, do kodów z bliska i z większej odległości.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu." },
     "slug": "cipherlab-rk26",
     "name": "CipherLab RK26",
     "seoH1": "CipherLab RK26",
@@ -706,6 +709,7 @@ export const cipherlabProducts: Product[] = [
   },
   {
     "id": "cipherlab-rk96",
+    "variantAttributeTooltips": { "Skaner": "Moduły odczytują kody 1D i 2D.\n• SE4750 SR — Standard Range, czyli standardowy zakres odczytu.\n• SE4750 MR — Mid Range, czyli średni zakres odczytu, większy niż w wersji SR.\n• SE5800 — Extended Range, czyli daleki zakres odczytu. Do kodów z bliska oraz odległych etykiet, np. na wysokich regałach.\n• Zasięg zależy od wielkości, jakości i rodzaju kodu." },
     "slug": "cipherlab-rk96",
     "name": "CipherLab RK96",
     "seoH1": "CipherLab RK96",
