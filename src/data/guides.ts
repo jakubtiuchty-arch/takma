@@ -188,7 +188,7 @@ export const guides: Guide[] = [
   category: 'przewodnik' as const,
   tags: ['gs1', 'sunrise 2027', 'kody 2d', 'gs1 datamatrix', 'gs1 digital link', 'skanery kodów kreskowych', 'kody kreskowe', 'retail', 'drukarki etykiet'],
   publishedAt: '2026-09-17',
-  updatedAt: '2026-09-17',
+  updatedAt: '2026-10-21',
   readTime: '12 min',
   heroImage: '/images/guides/gs1-sunrise-2027-kody-2d.webp',
   heroVideo: '/images/guides/gs1-sunrise-2027-kody-2d.mp4',
@@ -379,7 +379,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Jakie wymagania obowiązują skanery bioptyczne w kasach samoobsługowych?',
-      answer: 'Obowiązują je te same kryteria, z zaostrzonym wymaganiem czasu odczytu: poniżej 300 ms zamiast 500 ms. Skanerów bioptycznych nie prowadzimy w sprzedaży — w tej sprawie właściwy jest kontakt z dostawcą systemów kasowych. Gotowość poszczególnych modeli producenci zgłaszają do GS1, a wykaz jest publicznie dostępny.',
+      answer: 'Obowiązują je te same kryteria, z zaostrzonym wymaganiem czasu odczytu: poniżej 300 ms zamiast 500 ms. Skanery dwuokienkowe (bioptyczne) w ofercie TAKMA to Datalogic Magellan 9550i, 9600i, 9900i i Zebra MP7200 — zobacz <a href="/skanery-kodow-kreskowych/ladowe">skanery ladowe</a>. Gotowość poszczególnych modeli producenci zgłaszają do GS1, a wykaz jest publicznie dostępny.',
     },
   ],
   relatedLinks: [
@@ -12023,7 +12023,7 @@ export const guides: Guide[] = [
   category: 'poradnik',
   tags: ['dimensioning', 'zebra', 'pomiar-paczek', 'tof', 'logistyka', 'kep', 'jak-wybrac'],
   publishedAt: '2026-03-28',
-  updatedAt: '2026-03-28',
+  updatedAt: '2026-10-21',
   readTime: '8 min',
 
   sections: [
@@ -12145,7 +12145,7 @@ export const guides: Guide[] = [
 <h3>Ograniczenia wymiarowe</h3>
 <ul>
   <li><strong>Zakres pomiarowy</strong> — od 10 cm do 120 cm (długość boku). Paczki mniejsze niż 10 cm i większe niż 120 cm znajdują się poza zakresem kamery ToF i nie zostaną poprawnie zmierzone.</li>
-  <li><strong>Waga</strong> — dimensioning mierzy wyłącznie wymiary (długość, szerokość, wysokość). Do pomiaru wagi potrzebna jest osobna waga — np. <strong>Zebra MP72</strong> (waga przemysłowa z integracją Zebra DNA) lub dowolna waga z interfejsem RS-232/USB.</li>
+  <li><strong>Waga</strong> — dimensioning mierzy wyłącznie wymiary (długość, szerokość, wysokość). Do pomiaru wagi potrzebna jest osobna waga z interfejsem RS-232 lub USB.</li>
 </ul>`
     },
     {
