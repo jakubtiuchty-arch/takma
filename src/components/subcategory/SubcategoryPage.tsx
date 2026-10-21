@@ -230,6 +230,7 @@ function odmienNazwe(name: string): string {
 }
 
 export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
+  const epsonCatalog = ['kolorowe-drukarki-etykiet', 'tusze-do-kolorowych-drukarek', 'etykiety-do-kolorowych-drukarek'].includes(slug)
   const subcategory = getSubcategoryBySlug(slug)!
   const parentCategory = getCategoryById(subcategory.parentCategoryId)!
   const parentSubcategory = subcategory.parentSubcategoryId
@@ -271,14 +272,16 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
+    '@id': `https://www.takma.com.pl/${subcategory.slug}#kolekcja`,
+    inLanguage: 'pl-PL',
     name: subcategory.name,
     description: subcategory.seoDescription,
     url: `https://www.takma.com.pl/${subcategory.slug}`,
-    numberOfItems: products.length,
     // data z treści kategorii; stała w kodzie zostawała nieaktualna przy każdej zmianie
     dateModified: content?.updatedAt ?? '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
+      numberOfItems: products.length,
       itemListElement: products.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
@@ -289,7 +292,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
   // Google dopuszcza <a> w treści odpowiedzi, ale adres ma być pełny — w strukturze
   // danych nie ma względem czego rozwinąć „/produkt/…".
-  const faqJsonLd = slug !== 'etykiety-rfid-zebra' && content?.faq?.length ? {
+  const faqJsonLd = !epsonCatalog && slug !== 'etykiety-rfid-zebra' && content?.faq?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: content.faq.map((f) => ({
@@ -302,7 +305,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
     })),
   } : null
 
-  const howToJsonLd = content?.howToSteps?.length ? {
+  const howToJsonLd = !epsonCatalog && content?.howToSteps?.length ? {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: content.sectionHeadings?.howToSteps ?? `Jak wybrać i wdrożyć ${odmienNazwe(subcategory.name)}`,
@@ -361,10 +364,10 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
         />
       )}
-      <script
+      {!epsonCatalog && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
-      />
+      />}
 
       {hero && (
         <section className="relative bg-slate-950 text-white overflow-hidden">

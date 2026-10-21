@@ -52,6 +52,14 @@ export const cipherlabCategory: BrandCategoryRichContent = {
   "howToSteps": [],
   "faq": [
     {
+      "question": "Czym różnią się terminale CipherLab RS i RK?",
+      "answer": "Seria RS obejmuje terminale dotykowe. Seria RK ma fizyczną klawiaturę do wpisywania ilości i lokalizacji. Wybierz formę obsługi, a następnie skaner, łączność i konkretny PN."
+    },
+    {
+      "question": "Czy każdy CipherLab ma LTE lub 5G?",
+      "answer": "Nie. RS20 w oferowanej konfiguracji pracuje przez Wi-Fi. RS36 i RK26 mają wybrane wersje LTE, a RS38 oraz RS38H konfiguracje 5G. Sprawdź modem w konkretnym PN."
+    },
+    {
       "question": "Który CipherLab wybrać do mroźni?",
       "answer": "RK96 Cold Storage ma podgrzewanie i baterię do niskiej temperatury. Zakres pracy wynosi od −30°C do +50°C. Standardowy RK96 ma inną baterię oraz zakres temperatur."
     },

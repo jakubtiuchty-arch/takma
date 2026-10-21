@@ -61,19 +61,20 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     name: `Produkty ${brandName}`,
     description: data.heroText,
     url: `https://www.takma.com.pl/${manufacturer.slug}`,
-    numberOfItems: allProducts.length,
-    dateModified: new Date().toISOString().split('T')[0],
+    inLanguage: 'pl-PL',
+    ...(data.updatedAt ? { dateModified: data.updatedAt } : {}),
     provider: {
       '@type': 'Organization',
       name: 'TAKMA',
       url: 'https://www.takma.com.pl',
     },
-    brand: {
+    about: {
       '@type': 'Brand',
       name: `${brandName}`,
     },
     mainEntity: {
       '@type': 'ItemList',
+      numberOfItems: featuredProducts.length,
       itemListElement: featuredProducts.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
@@ -82,7 +83,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
     },
   }
 
-  const faqJsonLd = data.faq.length > 0 ? {
+  const faqJsonLd = manufacturerId !== 'epson' && data.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: data.faq.map(f => ({
@@ -111,7 +112,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />
+      {manufacturerId !== 'epson' && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }} />}
 
       <div className="container-main py-8 lg:py-12">
 

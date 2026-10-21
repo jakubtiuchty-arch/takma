@@ -683,7 +683,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               </a>
               {content?.updatedAt && (
                 <span className="text-xs text-gray-400">
-                  {bc.slug === 'skanery-datalogic' ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
+                  {catalogSeo ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </span>
               )}
             </div>
@@ -714,7 +714,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 {najtansza && <> · ceny netto od {zlote(najtansza)} zł</>}
                 {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} modelach</>}
                 {content?.updatedAt && (
-                  <span className="text-gray-500"> · {bc.slug === 'skanery-datalogic' ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                  <span className="text-gray-500"> · {catalogSeo ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 )}
               </p>
             </div>

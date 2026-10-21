@@ -472,8 +472,8 @@ export const subcategories: Subcategory[] = [
     name: 'Kolorowe drukarki etykiet',
     parentCategoryId: 'drukarki-etykiet',
     description: 'Drukarki etykiet w pełnym kolorze na żądanie: tusz pigmentowy CMYK, etykiety produktowe, GHS i bilety',
-    seoTitle: 'Kolorowe drukarki etykiet i naklejek | Epson ColorWorks',
-    seoDescription: 'Kolorowe drukarki etykiet i naklejek samoprzylepnych Epson ColorWorks: tusz pigmentowy CMYK, 1200 dpi, sześć modeli od 5 653 zł netto.',
+    seoTitle: "Kolorowe drukarki etykiet — porównanie Epson ColorWorks",
+    seoDescription: "Kolorowe drukarki etykiet Epson ColorWorks: porównaj nadruk 104–212 mm, pigment i tusz barwnikowy, gilotynę oraz odklejak. Modele, PN i ceny.",
     longDescription: 'Kolorowe drukarki etykiet drukują w pełnym kolorze na żądanie, więc etykieta z logo, zdjęciem produktu albo piktogramem ostrzegawczym powstaje na miejscu, w takim nakładzie, jaki jest dziś potrzebny. To piąty typ [drukarek etykiet](/drukarki-etykiet) obok biurkowych, przemysłowych, mobilnych i termicznych. W ofercie jest sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s — a do każdego [tusze](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek).',
     icon: 'printer',
     productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
@@ -761,8 +761,8 @@ export const subcategories: Subcategory[] = [
     name: 'Tusze do kolorowych drukarek',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Wkłady i worki z tuszem pigmentowym oraz pojemniki konserwacyjne do wszystkich modeli Epson ColorWorks',
-    seoTitle: 'Tusze do Epson ColorWorks | SJIC22P, SJIC36P, SJIC42P, SJIC48P',
-    seoDescription: 'Oryginalne tusze Epson do kolorowych drukarek etykiet ColorWorks: SJIC22P, SJIC42P, SJIC57P, SJIC36P i worki SJIC48P 480 ml, oraz pojemniki konserwacyjne. Ceny netto, wysyłka z TAKMA.',
+    seoTitle: "Tusze Epson ColorWorks — wkłady SJIC i pojemniki",
+    seoDescription: "Dobierz tusze Epson ColorWorks: SJIC22P, SJIC36P, SJIC42P, SJIC48P i SJIC57P. Sprawdź kolor, wersję bk/mk oraz zgodny model drukarki i PN.",
     longDescription: 'Wkłady z tuszem i pojemniki konserwacyjne do [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet) Epson ColorWorks. Każdy model ma własną rodzinę wkładów: SJIC22P do C3500, SJIC42P do C4000e, SJIC57P do D3800e, SJIC36P do C6000 i C6500, a C8000e pracuje na workach SJIC48P po 480 ml. Nie są wymienne, więc przy zamówieniu sprawdź model drukarki. Kolory wymienia się pojedynczo, płacisz tylko za ten, który się skończył.',
     icon: 'tag',
     productIds: [
@@ -781,8 +781,8 @@ export const subcategories: Subcategory[] = [
     name: 'Etykiety do kolorowych drukarek',
     parentCategoryId: 'materialy-eksploatacyjne',
     description: 'Rolki Epson Premium Matte i High Gloss, ciągłe i wykrojone, oraz papier do biletów do ColorWorks C3500, C4000 i C6000',
-    seoTitle: 'Etykiety do Epson ColorWorks | Premium Matte, High Gloss',
-    seoDescription: 'Etykiety papierowe Epson Premium Matte i High Gloss w rolkach ciągłych i wykrojonych oraz papier do biletów do kolorowych drukarek etykiet ColorWorks C3500, C4000 i C6000. Ceny netto.',
+    seoTitle: "Etykiety do Epson ColorWorks — rolki matowe i błyszczące",
+    seoDescription: "Materiały do Epson ColorWorks: Premium Matte, High Gloss i papier biletowy. Dobierz format, gilzę i średnicę rolki do drukarki. Sprawdź PN i ceny.",
     longDescription: 'Etykiety do [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet) Epson ColorWorks mają powleczenie, które przyjmuje tusz pigmentowy; zwykły papier termiczny się do nich nie nadaje. Premium Matte to papier matowy do etykiet produktowych, informacyjnych i logistycznych, High Gloss to papier błyszczący do etykiet, które mają wyglądać jak z drukarni, a papier Premium Matte Ticket nie ma kleju i służy na bilety, wejściówki i przywieszki. Rolki ciągłe drukarka odcina gilotyną na dowolną długość, rolki wykrojone mają gotowe formaty od 76 × 51 do 105 × 210 mm. Rolki 33–50-metrowe pasują do biurkowych C3500, C4000e i D3800e; przemysłowa C6000 bierze rolki produkcyjne z 800–2310 etykietami, których nie da się założyć w mniejszych modelach. [Tusze](/tusze-do-kolorowych-drukarek) są w osobnej kategorii.',
     icon: 'tag',
     productIds: [
@@ -91633,16 +91633,10 @@ const epsonColorWorks: Product[] = [
     id: 'epson-colorworks-c3500',
     slug: 'epson-colorworks-c3500',
     name: 'Epson ColorWorks C3500',
-    shortDescription: 'Epson ColorWorks C3500 to biurkowa drukarka etykiet w pełnym kolorze: tusz pigmentowy CMYK w czterech osobnych wkładach, 720 × 360 dpi, do 103 mm/s, etykiety 30–112 mm, gilotyna, USB i Ethernet, NiceLabel w zestawie.',
-    seoTitle: 'Epson ColorWorks C3500 – kolorowa drukarka etykiet',
-    seoDescription: 'Epson ColorWorks C3500 — kolorowa drukarka etykiet, tusz pigmentowy CMYK, 720 dpi, 104 mm, gilotyna. Tusze i etykiety w TAKMA. PN C31CD54012CD.',
-    description: `Dla kogo? Epson ColorWorks C3500 to biurkowa drukarka etykiet, która drukuje w pełnym kolorze wtedy, kiedy etykieta jest potrzebna. Kupują ją producenci żywności, kosmetyków i chemii, laboratoria, apteki i hurtownie farmaceutyczne, sklepy z własną marką oraz organizatorzy imprez, którzy drukują bilety. Wspólny mianownik: etykieta ma logo, zdjęcie produktu albo kolorowy piktogram, a nakład zmienia się z dnia na dzień, więc zamawianie gotowych rolek w drukarni się nie opłaca.
-
-C3500 drukuje tuszem pigmentowym z czterech osobnych wkładów SJIC22P (czarny, cyan, magenta, żółty). Pigment nie rozmazuje się po zamoczeniu i nie blaknie na półce, dlatego nadaje się na etykiety produktowe, ostrzegawcze GHS i przywieszki, które mają wyglądać tak samo po miesiącach. Głowica piezoelektryczna ma 360 dysz na kolor i daje rozdzielczość do 720 × 360 dpi; prędkość dochodzi do 103 mm/s. Drukarka przyjmuje etykiety ciągłe, wykrojone i z czarnym znacznikiem o szerokości od 30 do 112 mm, z rolki o średnicy do 101,6 mm albo z papieru składanego, a wbudowana gilotyna odcina każdą etykietę po wydruku.
-
-Podłączenie to USB albo Ethernet, sterownik Windows i program NiceLabel do projektowania etykiet są w zestawie. Drukarka rozumie polecenia ESC/Label i emuluje ZPL II, więc szablony przygotowane dla drukarek Zebra da się przenieść bez pisania ich od nowa. Wyświetlacz LCD pokazuje stan wkładów, nośnika i pojemnika konserwacyjnego, a wymiana każdego z nich nie wymaga narzędzi. Wkład wymienia się tylko wtedy, gdy skończy się dany kolor, więc nie płaci się za resztki pozostałych.
-
-Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [etykiety Epson](/etykiety-do-kolorowych-drukarek): papier matowy Premium Matte i błyszczący High Gloss w rolkach ciągłych i wykrojonych oraz papier do biletów. Gwarancja producenta to 12 miesięcy; na zapytanie rozszerzamy ją pakietem Epson CoverPlus do 3, 4 lub 5 lat.`,
+    shortDescription: "Epson ColorWorks C3500 to biurkowa drukarka kolorowych etykiet produktowych, przywieszek i biletów. Drukuje tuszem pigmentowym z czterech osobnych wkładów SJIC22P. Maksymalna szerokość nadruku wynosi 104 mm.",
+    seoTitle: "Epson ColorWorks C3500 — drukarka kolorowych etykiet 104 mm",
+    seoDescription: "Epson ColorWorks C3500: nadruk do 104 mm, 720 × 360 dpi i tusze pigmentowe SJIC22P. Gilotyna, USB i Ethernet. Sprawdź PN, cenę oraz materiały.",
+    description: "Epson ColorWorks C3500 to biurkowa drukarka kolorowych etykiet produktowych, przywieszek i biletów. Drukuje tuszem pigmentowym z czterech osobnych wkładów SJIC22P. Maksymalna szerokość nadruku wynosi 104 mm.\n\n## Kiedy wybrać C3500?\n\nC3500 służy do drukowania zmiennych danych razem z kolorowym logo, tekstem i kodami. Rozdzielczość wynosi do 720 × 360 dpi. Prędkość do 103 mm/s dotyczy trybu 360 × 360 dpi i nadruku o szerokości 56 mm. Nie oznacza tej samej wydajności dla każdego projektu.\n\nDrukarka przyjmuje materiał o szerokości 30–112 mm, z rolki do około 102 mm średnicy lub jako papier składany. Obsługuje zgodne etykiety ciągłe, wykrojone i materiały z czarnym znacznikiem. Gilotyna odcina wydruk zgodnie z ustawieniami zadania.\n\n## Połączenie i obsługa\n\nUSB umożliwia podłączenie do stanowiska, a Ethernet pracę w sieci lokalnej. Przed uruchomieniem sprawdź zgodność aplikacji oraz sterownika. Panel LCD pokazuje stan urządzenia. Poszczególne wkłady wymienia się po zużyciu danego koloru.\n\nTusz pigmentowy wymaga odpowiedniego materiału do druku atramentowego. Odporność etykiety zależy również od powłoki, kleju i warunków użycia. Sam model drukarki nie potwierdza zgodności oznaczenia z wymaganiami chemicznymi lub żywnościowymi.\n\n## Tusze, materiały i wybór modelu\n\nDobierz [tusze do ColorWorks](/tusze-do-kolorowych-drukarek) oraz [zgodne etykiety](/etykiety-do-kolorowych-drukarek) według PN i wymiarów rolki. Podstawowa gwarancja wynosi 12 miesięcy, z dostarczeniem urządzenia do serwisu.\n\nDo drobniejszych elementów porównaj [C4000e 1200 × 1200 dpi](/produkt/epson-colorworks-c4000e). Do tuszu barwnikowego służy osobny [D3800e](/produkt/epson-colorworks-d3800e). Pełne porównanie znajdziesz w kategorii [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -91716,28 +91710,87 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
       szerokoscEtykiet: '30–112 mm',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CD54012CD' },
-      { name: 'Technologia druku', value: 'Atramentowa piezoelektryczna, 4 kolory pigmentowe (CMYK)' },
-      { name: 'Wkłady', value: '4 osobne wkłady SJIC22P (K, C, M, Y), 32,5–32,6 ml' },
-      { name: 'Rozdzielczość', value: 'max. 720 × 360 dpi' },
-      { name: 'Prędkość druku', value: 'max. 103 mm/s (360 × 360 dpi, szerokość druku 56 mm)' },
-      { name: 'Szerokość druku', value: 'max. 104 mm' },
-      { name: 'Szerokość nośnika', value: '30–112 mm' },
-      { name: 'Nośniki', value: 'Rolka (średnica zewnętrzna do 101,6 mm) lub papier składany; etykiety ciągłe, wykrojone, z czarnym znacznikiem, papier ciągły' },
-      { name: 'Gilotyna', value: 'Automatyczna, w standardzie' },
-      { name: 'Interfejsy', value: 'USB 2.0, Ethernet 10/100Base-T' },
-      { name: 'Wyświetlacz', value: 'LCD (stan wkładów, nośnika i pojemnika konserwacyjnego)' },
-      { name: 'Języki poleceń', value: 'ESC/Label, emulacja ZPL II' },
-      { name: 'Oprogramowanie', value: 'Sterownik Windows, NiceLabel (w zestawie do pobrania)' },
-      { name: 'Zasilanie', value: 'Zewnętrzny zasilacz 100–240 V, 50/60 Hz' },
-      { name: 'Pobór mocy', value: 'ok. 30 W w czasie druku, ok. 3 W w czuwaniu' },
-      { name: 'Niezawodność', value: 'MTBF 88 000 godzin' },
-      { name: 'Warunki pracy', value: '10–35 °C, 20–80 % RH' },
-      { name: 'Wymiary (S×G×W)', value: '310 × 283 × 261 mm' },
-      { name: 'Waga', value: '12 kg' },
-      { name: 'W zestawie', value: 'Drukarka, 4 wkłady z tuszem, pojemnik konserwacyjny, rolka papieru, kabel USB, instrukcja' },
-      { name: 'Gwarancja', value: '12 miesięcy; opcjonalnie Epson CoverPlus do 5 lat' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CD54012CD"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa piezoelektryczna, 4 kolory pigmentowe (CMYK)"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 osobne wkłady SJIC22P (K, C, M, Y), 32,5–32,6 ml"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "max. 720 × 360 dpi"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "max. 103 mm/s (360 × 360 dpi, szerokość druku 56 mm)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 104 mm"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "30–112 mm"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolka (średnica zewnętrzna do 101,6 mm) lub papier składany; etykiety ciągłe, wykrojone, z czarnym znacznikiem, papier ciągły"
+  },
+  {
+    "name": "Gilotyna",
+    "value": "Automatyczna, w standardzie"
+  },
+  {
+    "name": "Interfejsy",
+    "value": "USB 2.0, Ethernet 10/100Base-T"
+  },
+  {
+    "name": "Wyświetlacz",
+    "value": "LCD (stan wkładów, nośnika i pojemnika konserwacyjnego)"
+  },
+  {
+    "name": "Oprogramowanie",
+    "value": "Sterownik Windows, NiceLabel (w zestawie do pobrania)"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Zewnętrzny zasilacz 100–240 V, 50/60 Hz"
+  },
+  {
+    "name": "Pobór mocy",
+    "value": "ok. 30 W w czasie druku, ok. 3 W w czuwaniu"
+  },
+  {
+    "name": "Niezawodność",
+    "value": "MTBF 88 000 godzin"
+  },
+  {
+    "name": "Warunki pracy",
+    "value": "10–35 °C, 20–80 % RH"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "310 × 283 × 261 mm"
+  },
+  {
+    "name": "Waga",
+    "value": "12 kg"
+  },
+  {
+    "name": "W zestawie",
+    "value": "Drukarka, 4 wkłady z tuszem, pojemnik konserwacyjny, rolka papieru, kabel USB, instrukcja"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy; opcjonalnie Epson CoverPlus do 5 lat"
+  }
+],
     applications: [
       'Kolorowe etykiety produktowe na żywność, kosmetyki i napoje',
       'Etykiety chemiczne GHS z kolorowymi piktogramami',
@@ -91769,42 +91822,22 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     ],
     relatedAccessories: ['epson-sjic22p-k', 'epson-sjic22p-c', 'epson-sjic22p-m', 'epson-sjic22p-y', 'epson-sjmb3500', 'labelmate-uni-cat-standard', 'labelmate-mc-11', 'labelmate-mc-pro-chuck', 'labelmate-uni-cat-ach', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
-      {
-        question: 'Czym kolorowa drukarka etykiet różni się od termotransferowej?',
-        answer: 'Drukarka termotransferowa nanosi jeden kolor z taśmy barwiącej, zwykle czarny. ColorWorks C3500 drukuje tuszem w czterech kolorach, więc etykieta może mieć logo w firmowych barwach, zdjęcie produktu i czerwone piktogramy ostrzegawcze bez zamawiania zadrukowanych rolek w drukarni. Przy prostych etykietach logistycznych z samym kodem kreskowym tańsza w eksploatacji pozostaje drukarka termotransferowa.',
-      },
-      {
-        question: 'Jakie etykiety pasują do Epson ColorWorks C3500?',
-        answer: 'Papierowe etykiety i papier do biletów z powleczeniem pod tusz pigmentowy o szerokości od 30 do 112 mm, na rolce o średnicy do 101,6 mm. W ofercie mamy rolki Epson Premium Matte (papier matowy) i High Gloss (papier błyszczący), ciągłe i wykrojone w formatach od 76 × 51 do 102 × 152 mm, oraz papier do biletów 80 i 102 mm. Zwykły papier termiczny do drukarek Zebra się nie nadaje, bo nie ma powłoki przyjmującej tusz.',
-      },
-      {
-        question: 'Czy nadruk z C3500 jest odporny na wodę?',
-        answer: 'Tak. Tusz SJIC22P jest pigmentowy: po wyschnięciu nie rozmazuje się od wody ani od dotyku i nie blaknie na świetle. Na etykietach z papieru matowego i błyszczącego Epson nadruk wytrzymuje przechowywanie w lodówce i kontakt z wilgotnymi dłońmi. Do etykiet zanurzanych w chemii albo wystawionych na słońce przez miesiące dobiera się nośniki syntetyczne, które sprowadzamy na zapytanie.',
-      },
-      {
-        question: 'Ile kosztuje wydruk jednej etykiety?',
-        answer: 'Zależy od pokrycia kolorem. Każdy z czterech wkładów ma około 32,5 ml tuszu i kosztuje tyle samo, a zużywa się tylko ten kolor, którego etykieta wymaga. Etykieta z logo i tekstem zużywa ułamek tego, co etykieta z pełnym zdjęciem tła. Przed zakupem możemy policzyć koszt dla konkretnego projektu etykiety, wystarczy przesłać plik.',
-      },
-      {
-        question: 'Jak podłączyć ColorWorks C3500 do systemu, który mamy?',
-        answer: 'Przez USB do jednego komputera albo przez Ethernet do sieci firmowej. Drukarka pracuje na sterowniku Windows, więc drukuje z NiceLabel (w zestawie), BarTender i z każdego programu, który drukuje na zwykłą drukarkę. Emulacja ZPL II pozwala wysyłać do niej gotowe szablony przygotowane dla drukarek Zebra.',
-      },
-      {
-        question: 'Co jest w zestawie?',
-        answer: 'Drukarka, komplet czterech wkładów z tuszem, pojemnik konserwacyjny, rolka papieru na start, kabel USB i instrukcja. Program NiceLabel pobiera się ze strony producenta po rejestracji drukarki.',
-      },
-      {
-        question: 'Jaka jest gwarancja na Epson ColorWorks C3500?',
-        answer: 'Standardowo 12 miesięcy w serwisie producenta. Na zapytanie sprzedajemy pakiety Epson CoverPlus, które wydłużają ochronę do 3, 4 lub 5 lat, także w wariancie z naprawą u klienta.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks C3500?",
+    "answer": "Epson ColorWorks C3500 to biurkowa drukarka kolorowych etykiet produktowych, przywieszek i biletów. Drukuje tuszem pigmentowym z czterech osobnych wkładów SJIC22P. Maksymalna szerokość nadruku wynosi 104 mm."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks C3500 (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c3500-karta-katalogowa-pl.pdf', size: '2,0 MB' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c3500-%28incl-nicelabel-download%29/p/13675',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-bilety-c33s045389',
@@ -91835,7 +91868,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Papier do biletów Epson Premium Matte 80 mm × 50 m (C33S045389)',
-    seoDescription: 'Papier do biletów Epson Premium Matte w rolce 80 mm × 50 m: matowy papier powlekany 127 µm do kolorowych biletów, wejściówek i przywieszek na drukarka',
+    seoDescription: "Papier do biletów Epson Premium Matte 80 mm × 50 m. PN C33S045389. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -91868,7 +91901,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Papier do biletów Epson Premium Matte 102 mm × 50 m (C33S045390)',
-    seoDescription: 'Papier do biletów Epson Premium Matte w rolce 102 mm × 50 m: matowy papier powlekany 127 µm do kolorowych biletów, wejściówek i przywieszek na drukark',
+    seoDescription: "Papier do biletów Epson Premium Matte 102 mm × 50 m. PN C33S045390. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -91902,7 +91935,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 51 mm × 35 m (C33S045417)',
-    seoDescription: 'Etykiety ciągłe Epson Premium Matte 51 mm × 35 m: matowy papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C400',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 51 mm × 35 m. PN C33S045417. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -91936,7 +91969,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 76 mm × 35 m (C33S045418)',
-    seoDescription: 'Etykiety ciągłe Epson Premium Matte 76 mm × 35 m: matowy papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C400',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 76 mm × 35 m. PN C33S045418. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -91970,7 +92003,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 102 mm × 35 m (C33S045419)',
-    seoDescription: 'Etykiety ciągłe Epson Premium Matte 102 mm × 35 m: matowy papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C40',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 102 mm × 35 m. PN C33S045419. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92004,7 +92037,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 105 mm × 35 m (C33S045727)',
-    seoDescription: 'Etykiety ciągłe Epson Premium Matte 105 mm × 35 m: matowy papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C40',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 105 mm × 35 m. PN C33S045727. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92039,7 +92072,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 51 mm, 650 szt. (C33S045531)',
-    seoDescription: 'Etykiety Epson Premium Matte 102 × 51 mm, 650 sztuk na rolce: matowy papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C4',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 51 mm, 650 szt.. PN C33S045531. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92074,7 +92107,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 76 mm, 440 szt. (C33S045532)',
-    seoDescription: 'Etykiety Epson Premium Matte 102 × 76 mm, 440 sztuk na rolce: matowy papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C4',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 76 mm, 440 szt.. PN C33S045532. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92109,7 +92142,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 152 mm, 225 szt. (C33S045533)',
-    seoDescription: 'Etykiety Epson Premium Matte 102 × 152 mm, 225 sztuk na rolce: matowy papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 152 mm, 225 szt.. PN C33S045533. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92144,7 +92177,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson Premium Matte 76 × 51 mm, 650 szt. (C33S045534)',
-    seoDescription: 'Etykiety Epson Premium Matte 76 × 51 mm, 650 sztuk na rolce: matowy papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C40',
+    seoDescription: "Etykiety Epson Premium Matte 76 × 51 mm, 650 szt.. PN C33S045534. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92179,7 +92212,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson Premium Matte 76 × 127 mm, 265 szt. (C33S045535)',
-    seoDescription: 'Etykiety Epson Premium Matte 76 × 127 mm, 265 sztuk na rolce: matowy papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C4',
+    seoDescription: "Etykiety Epson Premium Matte 76 × 127 mm, 265 szt.. PN C33S045535. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92213,7 +92246,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson High Gloss 51 mm × 33 m (C33S045536)',
-    seoDescription: 'Etykiety ciągłe Epson High Gloss 51 mm × 33 m: błyszczący papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C40',
+    seoDescription: "Etykiety ciągłe Epson High Gloss 51 mm × 33 m. PN C33S045536. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92247,7 +92280,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson High Gloss 76 mm × 33 m (C33S045537)',
-    seoDescription: 'Etykiety ciągłe Epson High Gloss 76 mm × 33 m: błyszczący papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C40',
+    seoDescription: "Etykiety ciągłe Epson High Gloss 76 mm × 33 m. PN C33S045537. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92281,7 +92314,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety ciągłe Epson High Gloss 102 mm × 33 m (C33S045538)',
-    seoDescription: 'Etykiety ciągłe Epson High Gloss 102 mm × 33 m: błyszczący papier samoprzylepny do druku kolorowych etykiet dowolnej długości na ColorWorks C3500 i C4',
+    seoDescription: "Etykiety ciągłe Epson High Gloss 102 mm × 33 m. PN C33S045538. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92316,7 +92349,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson High Gloss 102 × 51 mm, 610 szt. (C33S045539)',
-    seoDescription: 'Etykiety Epson High Gloss 102 × 51 mm, 610 sztuk na rolce: błyszczący papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C',
+    seoDescription: "Etykiety Epson High Gloss 102 × 51 mm, 610 szt.. PN C33S045539. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92351,7 +92384,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson High Gloss 102 × 76 mm, 415 szt. (C33S045540)',
-    seoDescription: 'Etykiety Epson High Gloss 102 × 76 mm, 415 sztuk na rolce: błyszczący papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C',
+    seoDescription: "Etykiety Epson High Gloss 102 × 76 mm, 415 szt.. PN C33S045540. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92386,7 +92419,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson High Gloss 102 × 152 mm, 210 szt. (C33S045541)',
-    seoDescription: 'Etykiety Epson High Gloss 102 × 152 mm, 210 sztuk na rolce: błyszczący papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i ',
+    seoDescription: "Etykiety Epson High Gloss 102 × 152 mm, 210 szt.. PN C33S045541. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92421,7 +92454,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson High Gloss 76 × 51 mm, 610 szt. (C33S045542)',
-    seoDescription: 'Etykiety Epson High Gloss 76 × 51 mm, 610 sztuk na rolce: błyszczący papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C4',
+    seoDescription: "Etykiety Epson High Gloss 76 × 51 mm, 610 szt.. PN C33S045542. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92456,7 +92489,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500', 'epson-colorworks-c4000e'],
     seoTitle: 'Etykiety Epson High Gloss 76 × 127 mm, 250 szt. (C33S045543)',
-    seoDescription: 'Etykiety Epson High Gloss 76 × 127 mm, 250 sztuk na rolce: błyszczący papier samoprzylepny z wykrojeniem do kolorowych etykiet na ColorWorks C3500 i C',
+    seoDescription: "Etykiety Epson High Gloss 76 × 127 mm, 250 szt.. PN C33S045543. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92465,7 +92498,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     slug: 'epson-tusz-sjic22p-k-czarny-c33s020601',
     name: 'Tusz Epson SJIC22P(K) czarny do ColorWorks C3500 (C33S020601)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(K), kolor czarny, 32,6 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno, gdy skończy się ten jeden kolor.',
-    description: 'Wkład SJIC22P(K) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz jest pigmentowy: nie rozmazuje się po zamoczeniu, nie blaknie w świetle i trzyma się na papierze matowym i błyszczącym z oferty Epson. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,6 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.',
+    description: "Wkład SJIC22P(K) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,6 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -92488,7 +92521,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500'],
     seoTitle: 'Tusz Epson SJIC22P(K) czarny do ColorWorks C3500 (C33S020601)',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(K), kolor czarny, 32,6 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno',
+    seoDescription: "Tusz Epson SJIC22P(K) czarny do ColorWorks C3500. PN C33S020601. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92497,7 +92530,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     slug: 'epson-tusz-sjic22p-c-cyan-c33s020602',
     name: 'Tusz Epson SJIC22P(C) cyan (błękitny) do ColorWorks C3500 (C33S020602)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(C), kolor cyan (błękitny), 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno, gdy skończy się ten jeden kolor.',
-    description: 'Wkład SJIC22P(C) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz jest pigmentowy: nie rozmazuje się po zamoczeniu, nie blaknie w świetle i trzyma się na papierze matowym i błyszczącym z oferty Epson. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.',
+    description: "Wkład SJIC22P(C) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -92520,7 +92553,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500'],
     seoTitle: 'Tusz Epson SJIC22P(C) cyan (błękitny) do ColorWorks C3500 (C33S020602)',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(C), kolor cyan (błękitny), 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymienia',
+    seoDescription: "Tusz Epson SJIC22P(C) cyan (błękitny) do ColorWorks C3500. PN C33S020602. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92529,7 +92562,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     slug: 'epson-tusz-sjic22p-m-magenta-c33s020603',
     name: 'Tusz Epson SJIC22P(M) magenta (purpurowy) do ColorWorks C3500 (C33S020603)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(M), kolor magenta (purpurowy), 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno, gdy skończy się ten jeden kolor.',
-    description: 'Wkład SJIC22P(M) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz jest pigmentowy: nie rozmazuje się po zamoczeniu, nie blaknie w świetle i trzyma się na papierze matowym i błyszczącym z oferty Epson. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.',
+    description: "Wkład SJIC22P(M) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -92552,7 +92585,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500'],
     seoTitle: 'Tusz Epson SJIC22P(M) magenta (purpurowy) do ColorWorks C3500 (C33S020603)',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(M), kolor magenta (purpurowy), 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymi',
+    seoDescription: "Tusz Epson SJIC22P(M) magenta (purpurowy) do ColorWorks C3500. PN C33S020603. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92561,7 +92594,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     slug: 'epson-tusz-sjic22p-y-zolty-c33s020604',
     name: 'Tusz Epson SJIC22P(Y) żółty do ColorWorks C3500 (C33S020604)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(Y), kolor żółty, 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno, gdy skończy się ten jeden kolor.',
-    description: 'Wkład SJIC22P(Y) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz jest pigmentowy: nie rozmazuje się po zamoczeniu, nie blaknie w świetle i trzyma się na papierze matowym i błyszczącym z oferty Epson. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.',
+    description: "Wkład SJIC22P(Y) to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C3500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył, więc nie płaci się za resztki innych barw. Pojemność 32,5 ml; liczba etykiet z wkładu zależy od pokrycia kolorem, dlatego przy dużym nakładzie warto trzymać zapas kompletu CMYK.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -92584,7 +92617,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500'],
     seoTitle: 'Tusz Epson SJIC22P(Y) żółty do ColorWorks C3500 (C33S020604)',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC22P(Y), kolor żółty, 32,5 ml. Do kolorowej drukarki etykiet Epson ColorWorks C3500, wymieniany osobno,',
+    seoDescription: "Tusz Epson SJIC22P(Y) żółty do ColorWorks C3500. PN C33S020604. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92614,7 +92647,7 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c3500'],
     seoTitle: 'Pojemnik konserwacyjny Epson SJMB3500 C33S020580',
-    seoDescription: 'Oryginalny maintenance box Epson SJMB3500 do ColorWorks C3500. Wymiana bez narzędzi, dostawa z magazynu TAKMA.',
+    seoDescription: "Pojemnik konserwacyjny Epson SJMB3500 do ColorWorks C3500. PN C33S020580. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92622,18 +92655,10 @@ Do C3500 mamy w ofercie [tusze SJIC22P](/tusze-do-kolorowych-drukarek) oraz [ety
     id: 'epson-colorworks-d3800e',
     slug: 'epson-colorworks-d3800e',
     name: 'Epson ColorWorks D3800e',
-    shortDescription: 'Epson ColorWorks D3800e to kolorowa drukarka etykiet z głowicą PrecisionCore i tuszem barwnikowym: do 600 × 1200 dpi, do 100 mm/s, etykiety 25–108 mm, gilotyna, kolorowy wyświetlacz, USB i Ethernet, emulacja ZPL II.',
-    seoTitle: 'Epson ColorWorks D3800e – kolorowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks D3800e — kolorowa drukarka etykiet 600 × 1200 dpi, do 100 mm/s, gilotyna, ZPL II. Tusze SJIC57P w TAKMA. PN C31CK03202.',
-    description: `Dla kogo? Epson ColorWorks D3800e drukuje kolorowe etykiety tam, gdzie liczy się wygląd: winiarnie i browary rzemieślnicze, producenci kosmetyków i żywności premium, cukiernie, sklepy z własną marką, pracownie rękodzieła. Etykieta ze zdjęciem produktu, tłem w firmowych barwach i drobnym opisem składu wychodzi z niej w jakości zbliżonej do drukarni, a nakład ustalasz sam: dziesięć sztuk na próbną partię albo tysiąc na sezon.
-
-D3800e ma głowicę **PrecisionCore**, tę samą rodzinę co większe modele ColorWorks, i drukuje z rozdzielczością do **600 × 1200 dpi** — czterokrotnie gęściej w pionie niż [C3500](/produkt/epson-colorworks-c3500). Prędkość dochodzi do **100 mm/s** przy 300 × 600 dpi i szerokości druku 102 mm. Drukarka przyjmuje etykiety i papier o szerokości od **25 do 108 mm**, z rolki o średnicy do 4 cali albo z papieru składanego, i rozpoznaje etykiety wykrojone, czarne znaczniki oraz papier ciągły. Gilotyna odcina wydruk w standardzie.
-
-Różnica względem C3500 leży w tuszu. D3800e pracuje na **tuszu barwnikowym** (dye), który daje żywsze, głębsze kolory i lepiej wygląda na papierze błyszczącym — kosztem odporności. Nadruk barwnikowy jest wrażliwy na wodę i długie działanie światła, więc na etykiety do chłodni, na chemię czy w warunkach wilgotnych lepszy będzie tusz pigmentowy z C3500. Do etykiet produktowych na półkę, przywieszek i biletów barwnik wypada korzystniej.
-
-Obsługa odbywa się z **kolorowego wyświetlacza** na panelu: stan tuszu, nośnika i pojemnika konserwacyjnego widać bez komputera. Drukarka rozumie polecenia ESC/Label i emuluje **ZPL II**, więc szablony przygotowane dla drukarek Zebra działają bez przepisywania. W standardzie są USB i Ethernet, a bezprzewodowo drukuje po dołożeniu modułu Wi-Fi Epson OT-WL06. Cztery wkłady **SJIC57P** po 40 ml wymienia się pojedynczo, od frontu, a zużyty tusz zbiera pojemnik konserwacyjny SJMB4000.
-
-Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety Epson](/etykiety-do-kolorowych-drukarek): papier matowy Premium Matte, błyszczący High Gloss i papier do biletów. Gwarancja producenta to 12 miesięcy, na zapytanie rozszerzamy ją pakietem Epson CoverPlus.`,
+    shortDescription: "Epson ColorWorks D3800e to kolorowa drukarka etykiet i biletów z tuszem barwnikowym. Służy do projektów z grafiką, zdjęciami i zmiennym tekstem na zgodnych materiałach atramentowych. Korzysta z czterech osobnych wkładów SJIC57P po 40 ml.",
+    seoTitle: "Epson ColorWorks D3800e — drukarka z tuszem barwnikowym",
+    seoDescription: "Epson ColorWorks D3800e: tusz barwnikowy SJIC57P, do 600 × 1200 dpi i 100 mm/s. Kolorowe etykiety oraz bilety. Sprawdź PN, cenę i akcesoria.",
+    description: "Epson ColorWorks D3800e to kolorowa drukarka etykiet i biletów z tuszem barwnikowym. Służy do projektów z grafiką, zdjęciami i zmiennym tekstem na zgodnych materiałach atramentowych. Korzysta z czterech osobnych wkładów SJIC57P po 40 ml.\n\n## Tusz barwnikowy a zastosowanie etykiety\n\nWyróżnikiem D3800e jest tusz barwnikowy, odmienny od pigmentu w serii C. Dobierz powierzchnię etykiety do oczekiwanego koloru i połysku. Jeśli oznaczenie będzie narażone na wilgoć, światło lub ścieranie, sprawdź odporność całego zestawu: tuszu, materiału i kleju.\n\nGłowica PrecisionCore drukuje z rozdzielczością do 600 × 1200 dpi. Prędkość do 100 mm/s dotyczy trybu 300 × 600 dpi i szerokości nadruku 102 mm. Zwiększenie jakości może zmniejszyć prędkość.\n\n## Rolka, gilotyna i połączenie\n\nZakres szerokości materiału wynosi 25–108 mm. Drukarka obsługuje zgodne rolki do 4 cali średnicy oraz papier składany. Gilotyna odcina wydruk według ustawień aplikacji. Kolorowy panel pozwala sprawdzić stan tuszu i materiału.\n\nUSB i Ethernet są wyposażeniem standardowym. Wi-Fi wymaga osobnego, zgodnego modułu Epson OT-WL06. Obsługa ESC/Label i emulacji ZPL II nie gwarantuje identycznego wydruku każdego istniejącego szablonu. Sprawdź użyte polecenia i wykonaj próbę projektu.\n\n## Dobór wkładów i porównanie\n\nDo D3800e dobierz [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [materiał do druku kolorowego](/etykiety-do-kolorowych-drukarek). Wkłady innych rodzin ColorWorks nie są zamiennikiem.\n\nJeśli potrzebujesz tuszu pigmentowego i rozdzielczości 1200 × 1200 dpi, porównaj [C4000e](/produkt/epson-colorworks-c4000e). Pozostałe rodziny znajdziesz w kategorii [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -92681,26 +92706,83 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       szerokoscEtykiet: '25–108 mm',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CK03202' },
-      { name: 'Technologia druku', value: 'Atramentowa, głowica PrecisionCore, 4 kolory barwnikowe (CMYK)' },
-      { name: 'Wkłady', value: '4 osobne wkłady SJIC57P (BK, C, M, Y), po 40 ml' },
-      { name: 'Rozdzielczość', value: 'do 600 × 1200 dpi (także 600 × 600 i 300 × 600 dpi)' },
-      { name: 'Prędkość druku', value: 'do 100 mm/s (300 × 600 dpi, szerokość druku 102 mm)' },
-      { name: 'Szerokość druku', value: 'max. 108 mm' },
-      { name: 'Szerokość nośnika', value: '25–108 mm' },
-      { name: 'Nośniki', value: 'Rolka (średnica zewnętrzna do 4 cali) lub papier składany; papier ciągły, etykiety wykrojone, nośniki z czarnym znacznikiem' },
-      { name: 'Gilotyna', value: 'Automatyczna, w standardzie' },
-      { name: 'Interfejsy', value: 'USB 2.0, Ethernet 1000BASE-T; Wi-Fi przez opcjonalny moduł Epson OT-WL06' },
-      { name: 'Wyświetlacz', value: 'Kolorowy panel LCD ze stanem tuszu, nośnika i pojemnika konserwacyjnego' },
-      { name: 'Języki poleceń', value: 'ESC/Label, emulacja ZPL II' },
-      { name: 'Zasilanie', value: 'Zewnętrzny zasilacz' },
-      { name: 'Pobór mocy', value: 'ok. 28,2 W w czasie druku, 2,6 W w gotowości' },
-      { name: 'Warunki pracy', value: '5–35 °C (druk kodów kreskowych 15–35 °C), wilgotność 20–80 %' },
-      { name: 'Poziom hałasu', value: '58 dB(A)' },
-      { name: 'Wymiary (S×G×W)', value: '310 × 283 × 285 mm' },
-      { name: 'Waga', value: '13 kg' },
-      { name: 'Gwarancja', value: '12 miesięcy; opcjonalnie Epson CoverPlus' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CK03202"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa, głowica PrecisionCore, 4 kolory barwnikowe (CMYK)"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 osobne wkłady SJIC57P (BK, C, M, Y), po 40 ml"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "do 600 × 1200 dpi (także 600 × 600 i 300 × 600 dpi)"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "do 100 mm/s (300 × 600 dpi, szerokość druku 102 mm)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 108 mm"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "25–108 mm"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolka (średnica zewnętrzna do 4 cali) lub papier składany; papier ciągły, etykiety wykrojone, nośniki z czarnym znacznikiem"
+  },
+  {
+    "name": "Gilotyna",
+    "value": "Automatyczna, w standardzie"
+  },
+  {
+    "name": "Interfejsy",
+    "value": "USB 2.0, Ethernet 1000BASE-T; Wi-Fi przez opcjonalny moduł Epson OT-WL06"
+  },
+  {
+    "name": "Wyświetlacz",
+    "value": "Kolorowy panel LCD ze stanem tuszu, nośnika i pojemnika konserwacyjnego"
+  },
+  {
+    "name": "Języki poleceń",
+    "value": "ESC/Label, emulacja ZPL II"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Zewnętrzny zasilacz"
+  },
+  {
+    "name": "Pobór mocy",
+    "value": "ok. 28,2 W w czasie druku, 2,6 W w gotowości"
+  },
+  {
+    "name": "Warunki pracy",
+    "value": "5–35 °C (druk kodów kreskowych 15–35 °C), wilgotność 20–80 %"
+  },
+  {
+    "name": "Poziom hałasu",
+    "value": "58 dB(A)"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "310 × 283 × 285 mm"
+  },
+  {
+    "name": "Waga",
+    "value": "13 kg"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy; opcjonalnie Epson CoverPlus"
+  }
+],
     applications: [
       'Etykiety na wino, piwo rzemieślnicze i napoje',
       'Etykiety kosmetyczne i na produkty premium',
@@ -92750,38 +92832,22 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
       ],
     },
     faq: [
-      {
-        question: 'Czym D3800e różni się od ColorWorks C3500?',
-        answer: 'Rodzajem tuszu i rozdzielczością. D3800e drukuje tuszem barwnikowym w rozdzielczości do 600 × 1200 dpi — kolory są żywsze, a zdjęcia na etykiecie wyglądają lepiej. C3500 pracuje na tuszu pigmentowym do 720 × 360 dpi: nadruk jest odporny na wodę i światło, więc sprawdza się na etykietach logistycznych, chemicznych i w chłodni. Jeśli etykieta ma robić wrażenie na półce, wybierz D3800e; jeśli ma przetrwać wilgoć i tarcie, C3500.',
-      },
-      {
-        question: 'Czy nadruk z D3800e jest wodoodporny?',
-        answer: 'Nie w takim stopniu jak z drukarek pigmentowych. Tusz barwnikowy rozpuszcza się w wodzie, więc zalana albo długo wilgotna etykieta może się rozmyć. Do butelek stojących w lodówce, produktów mrożonych i etykiet na chemię dobieramy nadruk pigmentowy albo nośniki z laminatem — podpowiemy, co wybrać do konkretnego zastosowania.',
-      },
-      {
-        question: 'Jakie etykiety pasują do ColorWorks D3800e?',
-        answer: 'Papierowe etykiety i papier do biletów z powleczeniem pod druk atramentowy, o szerokości od 25 do 108 mm, na rolce o średnicy do 4 cali albo w formie papieru składanego. W ofercie mamy rolki Epson Premium Matte i High Gloss oraz papier do biletów. Zwykły papier termiczny się nie nadaje, bo nie przyjmuje tuszu.',
-      },
-      {
-        question: 'Czy D3800e drukuje bezprzewodowo?',
-        answer: 'W standardzie ma USB i Ethernet. Wi-Fi działa po dołożeniu oryginalnego modułu Epson OT-WL06, który montuje się w gnieździe drukarki. Moduł sprowadzamy na zamówienie.',
-      },
-      {
-        question: 'Ile tuszu zużywa jedna etykieta?',
-        answer: 'Zależy od projektu: etykieta z logo i tekstem zużywa ułamek tego, co etykieta z pełnokolorowym zdjęciem na całym tle. Każdy z czterech wkładów SJIC57P ma 40 ml i wymienia się osobno, więc płaci się tylko za kolory, które faktycznie schodzą. Prześlij plik etykiety, policzymy koszt jednej sztuki.',
-      },
-      {
-        question: 'Czy szablony z drukarki Zebra zadziałają na D3800e?',
-        answer: 'Tak, drukarka emuluje ZPL II, więc gotowe szablony etykiet dla drukarek Zebra można wysyłać bez przepisywania. Drukuje też przez sterownik Windows z dowolnego programu, w tym z BarTender i NiceLabel.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks D3800e?",
+    "answer": "Epson ColorWorks D3800e to kolorowa drukarka etykiet i biletów z tuszem barwnikowym. Służy do projektów z grafiką, zdjęciami i zmiennym tekstem na zgodnych materiałach atramentowych. Korzysta z czterech osobnych wkładów SJIC57P po 40 ml."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks D3800e (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-d3800e-karta-katalogowa-pl.pdf', size: '965 KB' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/drukarka-etykiet-colorworks-d3800e-z-atramentem-wodnym/p/57462',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-sjic57p-bk',
@@ -92812,7 +92878,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-d3800e'],
     seoTitle: 'Tusz Epson SJIC57P-BK czarny do ColorWorks D3800e (C13T58J140) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem barwnikowym Epson SJIC57P-BK, kolor czarny, 40 ml. Do kolorowej drukarki etykiet Epson ColorWorks D3800e, wymieniany osobno,',
+    seoDescription: "Tusz Epson SJIC57P-BK czarny do ColorWorks D3800e. PN C13T58J140. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92845,7 +92911,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-d3800e'],
     seoTitle: 'Tusz Epson SJIC57P-C cyan (błękitny) do ColorWorks D3800e (C13T58J240) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem barwnikowym Epson SJIC57P-C, kolor cyan (błękitny), 40 ml. Do kolorowej drukarki etykiet Epson ColorWorks D3800e, wymieniany',
+    seoDescription: "Tusz Epson SJIC57P-C cyan (błękitny) do ColorWorks D3800e. PN C13T58J240. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92878,7 +92944,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-d3800e'],
     seoTitle: 'Tusz Epson SJIC57P-M magenta (purpurowy) do ColorWorks D3800e (C13T58J340) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem barwnikowym Epson SJIC57P-M, kolor magenta (purpurowy), 40 ml. Do kolorowej drukarki etykiet Epson ColorWorks D3800e, wymien',
+    seoDescription: "Tusz Epson SJIC57P-M magenta (purpurowy) do ColorWorks D3800e. PN C13T58J340. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92911,7 +92977,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-d3800e'],
     seoTitle: 'Tusz Epson SJIC57P-Y żółty do ColorWorks D3800e (C13T58J440) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem barwnikowym Epson SJIC57P-Y, kolor żółty, 40 ml. Do kolorowej drukarki etykiet Epson ColorWorks D3800e, wymieniany osobno, g',
+    seoDescription: "Tusz Epson SJIC57P-Y żółty do ColorWorks D3800e. PN C13T58J440. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92941,7 +93007,7 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-d3800e'],
     seoTitle: 'Pojemnik konserwacyjny Epson SJMB4000 C33S021601 | TAKMA',
-    seoDescription: 'Oryginalny maintenance box Epson SJMB4000 do ColorWorks D3800e i C4000e. Wymiana bez narzędzi, dostawa z magazynu TAKMA.',
+    seoDescription: "Pojemnik konserwacyjny Epson SJMB4000 do ColorWorks D3800e i C4000e. PN C33S021601. Do D3800e, C4000e.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -92949,18 +93015,10 @@ Do D3800e pasują [tusze SJIC57P](/tusze-do-kolorowych-drukarek) oraz [etykiety 
     id: 'epson-colorworks-c4000e',
     slug: 'epson-colorworks-c4000e',
     name: 'Epson ColorWorks C4000e',
-    shortDescription: 'Epson ColorWorks C4000e to kolorowa drukarka etykiet z głowicą PrecisionCore i tuszem pigmentowym: do 1200 × 1200 dpi, do 100 mm/s, etykiety 25–108 mm, gilotyna w zestawie, emulacja ZPL II. Dwie wersje — z czarnym tuszem do etykiet błyszczących (bk) albo matowych (mk).',
-    seoTitle: 'Epson ColorWorks C4000e – kolorowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks C4000e — kolorowa drukarka etykiet 1200 dpi, tusz pigmentowy, gilotyna, ZPL II. Wersje bk i mk, tusze SJIC42P w TAKMA.',
-    description: `Dla kogo? Epson ColorWorks C4000e to najwyższa rozdzielczość spośród biurkowych drukarek ColorWorks: **1200 × 1200 dpi**. Kupują ją firmy, które drukują etykiety produktowe z drobnym składem, mikrotekstem i gęstymi kodami 2D — producenci kosmetyków i suplementów, laboratoria, zakłady chemiczne, wytwórnie żywności premium, a także firmy oznaczające wyroby zgodnie z GHS.
-
-Drukarka pracuje na **tuszu pigmentowym**, tak jak [C3500](/produkt/epson-colorworks-c3500), więc nadruk nie rozmazuje się po zamoczeniu i nie blaknie na świetle — nadaje się na etykiety chłodnicze, chemiczne i logistyczne. Od C3500 różni ją głowica **PrecisionCore**, czterokrotnie wyższa rozdzielczość i nowsza elektronika z kolorowym wyświetlaczem. Prędkość dochodzi do **100 mm/s** przy 300 × 600 dpi i szerokości druku 102 mm; przy najwyższej jakości drukarka zwalnia, bo kładzie znacznie więcej kropli.
-
-**Dwie wersje, jedna decyzja przy zakupie.** C4000e sprzedawana jest w wariancie **bk** (czarny tusz Black) i **mk** (czarny tusz Matte Black). Black lepiej trzyma się papieru błyszczącego i daje głębszą czerń na etykietach produktowych z połyskiem; Matte Black jest przeznaczony do papieru matowego i tam daje wyraźniejsze kody kreskowe. Kolorowe wkłady (cyan, magenta, żółty) są w obu wersjach takie same, ale **czarnego wkładu nie da się zamienić między wersjami** — wybór robi się raz, przy zamówieniu drukarki. Jeśli nie wiesz, którą wybrać, napisz, na jakim papierze będziesz drukować.
-
-Gilotyna jest w standardzie i wymienia się ją samodzielnie, bez wizyty serwisu. Drukarka przyjmuje etykiety o szerokości od **25 do 108 mm**, z rolki o średnicy do 4 cali albo z papieru składanego, rozpoznaje etykiety wykrojone, przerwy i czarne znaczniki. Obsługuje ESC/Label i emuluje **ZPL II**, więc szablony z drukarek Zebra działają bez przepisywania; sterowniki są dla Windows, Mac i Linux. Bezprzewodowo drukuje po dołożeniu modułu Epson OT-WL06.
-
-Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i pojemnik konserwacyjny SJMB4000 — ten sam, co w [D3800e](/produkt/epson-colorworks-d3800e). Nośniki: [etykiety Epson](/etykiety-do-kolorowych-drukarek) matowe Premium Matte, błyszczące High Gloss i papier do biletów. Gwarancja producenta to 12 miesięcy, na zapytanie rozszerzamy ją pakietem Epson CoverPlus.`,
+    shortDescription: "Epson ColorWorks C4000e to biurkowa drukarka kolorowych etykiet z tuszem pigmentowym i głowicą PrecisionCore. Rozdzielczość do 1200 × 1200 dpi pozwala przygotować projekty z drobnym tekstem i szczegółową grafiką.",
+    seoTitle: "Epson ColorWorks C4000e — etykiety 1200 dpi, tusz pigmentowy",
+    seoDescription: "Epson ColorWorks C4000e: do 1200 × 1200 dpi, pigmentowe tusze SJIC42P i gilotyna. Wybierz czerń bk lub mk do materiału. Sprawdź PN i ceny.",
+    description: "Epson ColorWorks C4000e to biurkowa drukarka kolorowych etykiet z tuszem pigmentowym i głowicą PrecisionCore. Rozdzielczość do 1200 × 1200 dpi pozwala przygotować projekty z drobnym tekstem i szczegółową grafiką.\n\n## Co odróżnia C4000e od C3500?\n\nC4000e oferuje wyższą rozdzielczość niż [C3500](/produkt/epson-colorworks-c3500), który drukuje do 720 × 360 dpi. Prędkość C4000e dochodzi do 100 mm/s przy 300 × 600 dpi i szerokości nadruku 102 mm. Tryb maksymalnej jakości ma inne tempo pracy.\n\nDrukarka przyjmuje materiał o szerokości 25–108 mm, z rolki do 4 cali średnicy lub jako papier składany. Gilotyna jest częścią urządzenia. Dobierz zgodny materiał atramentowy oraz ustawienie czujnika dla etykiet wykrojonych, ciągłych lub z czarnym znacznikiem.\n\n## Jak wybrać wersję bk lub mk?\n\nWersja bk używa czerni Black do zgodnych materiałów błyszczących i półbłyszczących. Wersja mk używa Matte Black do materiałów matowych. Rodzaj czerni wybiera się przy zakupie drukarki. Czarnych wkładów bk i mk nie można zamieniać między tymi wersjami.\n\nC4000e korzysta z wkładów SJIC42P po 50 ml. Kolorowe wkłady cyan, magenta i yellow są wspólne dla obu wersji. Trwałość nadruku zależy od tuszu, materiału i warunków użytkowania; sam pigment nie gwarantuje dowolnej odporności.\n\n## Połączenie i wyposażenie\n\nUSB i Ethernet łączą drukarkę ze stanowiskiem lub siecią. Wi-Fi wymaga opcjonalnego modułu OT-WL06. Przy korzystaniu z emulacji ZPL II przetestuj własny szablon i użyte polecenia.\n\nDobierz [tusze SJIC42P](/tusze-do-kolorowych-drukarek) i [materiały](/etykiety-do-kolorowych-drukarek). Do większych rolek oraz odmiany z odklejakiem porównaj [C6000](/produkt/epson-colorworks-c6000). Wszystkie rodziny zestawia kategoria [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -93012,28 +93070,91 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       'Czarny tusz': 'Black (bk) — czerń dobrana do papieru błyszczącego i półbłyszczącego; głębszy kolor na etykietach produktowych z połyskiem.\n\nMatte Black (mk) — czerń dobrana do papieru matowego; ostrzejsze kody kreskowe i tekst na matowych etykietach.\n\nKolorowe wkłady są wspólne, ale czarnego nie da się zamienić między wersjami — wybierasz raz, przy zakupie drukarki.',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CK03102BK (bk) / C31CK03102MK (mk)' },
-      { name: 'Technologia druku', value: 'Atramentowa, głowica PrecisionCore, 4 kolory pigmentowe (CMYK)' },
-      { name: 'Wersje', value: 'bk — czarny tusz Black (papier błyszczący); mk — czarny tusz Matte Black (papier matowy)' },
-      { name: 'Wkłady', value: '4 osobne wkłady SJIC42P po 50 ml (BK albo MK + C, M, Y)' },
-      { name: 'Rozdzielczość', value: 'do 1200 × 1200 dpi (także 1200 × 600, 600 × 600 i 300 × 600 dpi)' },
-      { name: 'Prędkość druku', value: 'do 100 mm/s (300 × 600 dpi, szerokość druku 102 mm)' },
-      { name: 'Szerokość druku', value: 'max. 108 mm' },
-      { name: 'Szerokość nośnika', value: '25–108 mm' },
-      { name: 'Nośniki', value: 'Rolka (średnica zewnętrzna do 4 cali) lub papier składany; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem' },
-      { name: 'Gilotyna', value: 'Automatyczna, w zestawie; wymieniana samodzielnie' },
-      { name: 'Interfejsy', value: 'USB, Ethernet; Wi-Fi przez opcjonalny moduł Epson OT-WL06' },
-      { name: 'Wyświetlacz', value: 'Kolorowy panel LCD ze stanem tuszu, nośnika i pojemnika konserwacyjnego' },
-      { name: 'Języki poleceń', value: 'ESC/Label, emulacja ZPL II' },
-      { name: 'Systemy operacyjne', value: 'Windows, Mac, Linux' },
-      { name: 'Zasilanie', value: 'Zewnętrzny zasilacz' },
-      { name: 'Pobór mocy', value: 'ok. 28 W w czasie druku, ok. 3 W w czuwaniu' },
-      { name: 'Warunki pracy', value: '5–35 °C, wilgotność 20–80 %' },
-      { name: 'Poziom hałasu', value: '58 dB(A)' },
-      { name: 'Wymiary (S×G×W)', value: '310 × 285 × 283 mm' },
-      { name: 'Pojemnik konserwacyjny', value: 'SJMB4000 (wspólny z ColorWorks D3800e)' },
-      { name: 'Gwarancja', value: '12 miesięcy; opcjonalnie Epson CoverPlus' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CK03102BK (bk) / C31CK03102MK (mk)"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa, głowica PrecisionCore, 4 kolory pigmentowe (CMYK)"
+  },
+  {
+    "name": "Wersje",
+    "value": "bk — czarny tusz Black (papier błyszczący); mk — czarny tusz Matte Black (papier matowy)"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 osobne wkłady SJIC42P po 50 ml (BK albo MK + C, M, Y)"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "do 1200 × 1200 dpi (także 1200 × 600, 600 × 600 i 300 × 600 dpi)"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "do 100 mm/s (300 × 600 dpi, szerokość druku 102 mm)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 108 mm"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "25–108 mm"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolka (średnica zewnętrzna do 4 cali) lub papier składany; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem"
+  },
+  {
+    "name": "Gilotyna",
+    "value": "Automatyczna, w zestawie; wymieniana samodzielnie"
+  },
+  {
+    "name": "Interfejsy",
+    "value": "USB, Ethernet; Wi-Fi przez opcjonalny moduł Epson OT-WL06"
+  },
+  {
+    "name": "Wyświetlacz",
+    "value": "Kolorowy panel LCD ze stanem tuszu, nośnika i pojemnika konserwacyjnego"
+  },
+  {
+    "name": "Języki poleceń",
+    "value": "ESC/Label, emulacja ZPL II"
+  },
+  {
+    "name": "Systemy operacyjne",
+    "value": "Windows, Mac, Linux"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Zewnętrzny zasilacz"
+  },
+  {
+    "name": "Pobór mocy",
+    "value": "ok. 28 W w czasie druku, ok. 3 W w czuwaniu"
+  },
+  {
+    "name": "Warunki pracy",
+    "value": "5–35 °C, wilgotność 20–80 %"
+  },
+  {
+    "name": "Poziom hałasu",
+    "value": "58 dB(A)"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "310 × 285 × 283 mm"
+  },
+  {
+    "name": "Pojemnik konserwacyjny",
+    "value": "SJMB4000 (wspólny z ColorWorks D3800e)"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy; opcjonalnie Epson CoverPlus"
+  }
+],
     applications: [
       'Etykiety produktowe z drobnym składem i mikrotekstem',
       'Etykiety chemiczne GHS z kolorowymi piktogramami',
@@ -93104,45 +93225,33 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
       ],
     },
     faq: [
-      {
-        question: 'Czym różnią się wersje bk i mk?',
-        answer: 'Rodzajem czarnego tuszu. Wersja bk ma wkład Black, dobrany do papieru błyszczącego i półbłyszczącego — czerń jest głębsza na etykietach z połyskiem. Wersja mk ma Matte Black, przeznaczony do papieru matowego, gdzie daje ostrzejszy tekst i kody kreskowe. Kolory (cyan, magenta, żółty) są w obu wersjach identyczne, ale czarnego wkładu nie można zamienić — wersję wybiera się przy zakupie drukarki, pod papier, na którym będziesz drukować.',
-      },
-      {
-        question: 'Czy tusze z C3500 pasują do C4000e?',
-        answer: 'Nie. C3500 używa wkładów SJIC22P o pojemności 32,5 ml, a C4000e wkładów SJIC42P po 50 ml — to inne kasety i inny tusz. Różni się też pojemnik konserwacyjny: C3500 ma SJMB3500, a C4000e SJMB4000, wspólny z modelem D3800e.',
-      },
-      {
-        question: 'Czym C4000e różni się od D3800e?',
-        answer: 'Rodzajem tuszu i przeznaczeniem. C4000e drukuje tuszem pigmentowym w rozdzielczości do 1200 × 1200 dpi: nadruk jest odporny na wodę i światło, a drobny tekst i kody 2D wychodzą ostro. D3800e pracuje na tuszu barwnikowym do 600 × 1200 dpi: kolory są żywsze i lepiej wyglądają na papierze błyszczącym, ale nadruk gorzej znosi wilgoć. Do etykiet chemicznych, chłodniczych i laboratoryjnych wybierz C4000e; do etykiet produktowych, które mają robić wrażenie na półce, D3800e.',
-      },
-      {
-        question: 'Czy gilotyna jest w zestawie?',
-        answer: 'Tak, automatyczna gilotyna wchodzi w skład drukarki. Epson przewidział jej samodzielną wymianę, bez wizyty serwisanta — moduł gilotyny sprowadzamy na zamówienie jako część zamienną.',
-      },
-      {
-        question: 'Czy C4000e drukuje bezprzewodowo?',
-        answer: 'W standardzie ma USB i Ethernet. Wi-Fi działa po dołożeniu oryginalnego modułu Epson OT-WL06, montowanego w gnieździe drukarki. Moduł sprowadzamy na zamówienie.',
-      },
-      {
-        question: 'Czy szablony etykiet z drukarki Zebra zadziałają?',
-        answer: 'Tak, drukarka emuluje ZPL II, więc gotowe szablony dla drukarek Zebra można wysyłać bez przepisywania. Drukuje też przez sterownik z dowolnego programu na Windows, Mac i Linux, w tym z BarTender i NiceLabel.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks C4000e?",
+    "answer": "Epson ColorWorks C4000e to biurkowa drukarka kolorowych etykiet z tuszem pigmentowym i głowicą PrecisionCore. Rozdzielczość do 1200 × 1200 dpi pozwala przygotować projekty z drobnym tekstem i szczegółową grafiką."
+  },
+  {
+    "question": "Jak wybrać wersję bk lub mk?",
+    "answer": "Wybierz bk do zgodnych materiałów błyszczących i półbłyszczących, a mk do matowych. Czarny atrament nie jest zamienny między tymi odmianami."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks C4000e (EN)', type: 'datasheet', url: '/downloads/epson-colorworks-c4000e-karta-katalogowa-en.pdf', size: '908 KB' },
     ],
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/cw-c4000e-series/p/35268',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-sjic42p-bk',
     slug: 'epson-tusz-sjic42p-bk-czarny-c13t52m140',
     name: 'Tusz Epson SJIC42P-BK czarny (Black) do ColorWorks C4000e (C13T52M140)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-BK, kolor czarny (Black), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w wersji bk.',
-    description: 'Wkład SJIC42P-BK to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Do wersji **bk**, dobranej do papieru błyszczącego i półbłyszczącego. W drukarce w wersji mk ten wkład nie zadziała. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle, dlatego etykieta wytrzymuje chłodnię, wilgotne dłonie i tarcie w transporcie. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.',
+    description: "Wkład SJIC42P-BK to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Do wersji **bk**, dobranej do papieru błyszczącego i półbłyszczącego. W drukarce w wersji mk ten wkład nie zadziała. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93165,7 +93274,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c4000e'],
     seoTitle: 'Tusz Epson SJIC42P-BK czarny (Black) do ColorWorks C4000e (C13T52M140) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-BK, kolor czarny (Black), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w wersji bk',
+    seoDescription: "Tusz Epson SJIC42P-BK czarny (Black) do ColorWorks C4000e. PN C13T52M140. Do C4000e (wersja bk).",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93174,7 +93283,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     slug: 'epson-tusz-sjic42p-mk-czarny-matowy-c13t52m540',
     name: 'Tusz Epson SJIC42P-MK czarny matowy (Matte Black) do ColorWorks C4000e (C13T52M540)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-MK, kolor czarny matowy (Matte Black), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w wersji mk.',
-    description: 'Wkład SJIC42P-MK to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Do wersji **mk**, dobranej do papieru matowego — daje ostrzejszy tekst i kody kreskowe. W drukarce w wersji bk ten wkład nie zadziała. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle, dlatego etykieta wytrzymuje chłodnię, wilgotne dłonie i tarcie w transporcie. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.',
+    description: "Wkład SJIC42P-MK to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Do wersji **mk**, dobranej do papieru matowego — daje ostrzejszy tekst i kody kreskowe. W drukarce w wersji bk ten wkład nie zadziała. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93197,7 +93306,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c4000e'],
     seoTitle: 'Tusz Epson SJIC42P-MK czarny matowy (Matte Black) do ColorWorks C4000e (C13T52M540) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-MK, kolor czarny matowy (Matte Black), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000',
+    seoDescription: "Tusz Epson SJIC42P-MK czarny matowy (Matte Black) do ColorWorks C4000e. PN C13T52M540. Do C4000e (wersja mk).",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93206,7 +93315,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     slug: 'epson-tusz-sjic42p-c-cyan-c13t52m240',
     name: 'Tusz Epson SJIC42P-C cyan (błękitny) do ColorWorks C4000e (C13T52M240)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-C, kolor cyan (błękitny), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu wersji.',
-    description: 'Wkład SJIC42P-C to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle, dlatego etykieta wytrzymuje chłodnię, wilgotne dłonie i tarcie w transporcie. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.',
+    description: "Wkład SJIC42P-C to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93229,7 +93338,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c4000e'],
     seoTitle: 'Tusz Epson SJIC42P-C cyan (błękitny) do ColorWorks C4000e (C13T52M240) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-C, kolor cyan (błękitny), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu wersj',
+    seoDescription: "Tusz Epson SJIC42P-C cyan (błękitny) do ColorWorks C4000e. PN C13T52M240. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93238,7 +93347,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     slug: 'epson-tusz-sjic42p-m-magenta-c13t52m340',
     name: 'Tusz Epson SJIC42P-M magenta (purpurowy) do ColorWorks C4000e (C13T52M340)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-M, kolor magenta (purpurowy), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu wersji.',
-    description: 'Wkład SJIC42P-M to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle, dlatego etykieta wytrzymuje chłodnię, wilgotne dłonie i tarcie w transporcie. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.',
+    description: "Wkład SJIC42P-M to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93261,7 +93370,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c4000e'],
     seoTitle: 'Tusz Epson SJIC42P-M magenta (purpurowy) do ColorWorks C4000e (C13T52M340) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-M, kolor magenta (purpurowy), 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu w',
+    seoDescription: "Tusz Epson SJIC42P-M magenta (purpurowy) do ColorWorks C4000e. PN C13T52M340. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93270,7 +93379,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     slug: 'epson-tusz-sjic42p-y-zolty-c13t52m440',
     name: 'Tusz Epson SJIC42P-Y żółty do ColorWorks C4000e (C13T52M440)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-Y, kolor żółty, 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu wersji.',
-    description: 'Wkład SJIC42P-Y to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie na świetle, dlatego etykieta wytrzymuje chłodnię, wilgotne dłonie i tarcie w transporcie. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.',
+    description: "Wkład SJIC42P-Y to jeden z czterech osobnych zbiorników tuszu w Epson ColorWorks C4000e. Wkład wspólny dla obu wersji drukarki, bk i mk. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 50 ml, czyli o połowę więcej niż w [C3500](/produkt/epson-colorworks-c3500). Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC42P nie pasują do C3500 (ta używa SJIC22P) ani do D3800e (SJIC57P) — przy zamówieniu sprawdź model drukarki.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93293,7 +93402,7 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c4000e'],
     seoTitle: 'Tusz Epson SJIC42P-Y żółty do ColorWorks C4000e (C13T52M440) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym Epson SJIC42P-Y, kolor żółty, 50 ml. Do kolorowej drukarki etykiet Epson ColorWorks C4000e w obu wersji.',
+    seoDescription: "Tusz Epson SJIC42P-Y żółty do ColorWorks C4000e. PN C13T52M440. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93301,18 +93410,10 @@ Do C4000e pasują [tusze SJIC42P](/tusze-do-kolorowych-drukarek) po 50 ml i poje
     id: 'epson-colorworks-c6000',
     slug: 'epson-colorworks-c6000',
     name: 'Epson ColorWorks C6000',
-    shortDescription: 'Epson ColorWorks C6000 to przemysłowa kolorowa drukarka etykiet 4 cale: PrecisionCore z 800 dyszami na kolor, do 1200 × 1200 dpi, do 119 mm/s, rolki do 8 cali, tusz pigmentowy UltraChrome DL, serwis u klienta. Wersje z gilotyną (Ae) albo odklejakiem (Pe).',
-    seoTitle: 'Epson ColorWorks C6000 – przemysłowa drukarka etykiet | TAKMA',
-    seoDescription: 'Epson ColorWorks C6000 — przemysłowa drukarka etykiet kolorowych, 1200 dpi, do 119 mm/s, 108 mm. Wersje Ae i Pe, tusze SJIC36P w TAKMA.',
-    description: `Dla kogo? ColorWorks C6000 to klasa wyżej niż biurkowe [C4000e](/produkt/epson-colorworks-c4000e) i [C3500](/produkt/epson-colorworks-c3500): drukarka **przemysłowa**, zaprojektowana do pracy ciągłej. Kupują ją zakłady produkcyjne i pakownie, które drukują etykiety całymi zmianami, oraz firmy oznaczające wyroby w dużych seriach — kosmetyki, chemia, żywność, farmacja, logistyka wewnętrzna.
-
-Różnice widać w liczbach. Głowica PrecisionCore ma **800 dysz na każdy kolor**, przez co drukarka osiąga **119 mm/s** przy pełnej szerokości 108 mm, a nie tylko na wąskiej etykiecie. Przyjmuje rolki o średnicy **4, 6 i 8 cali**, więc wymiana nośnika zdarza się kilka razy rzadziej niż w modelach biurkowych. Zasilacz jest **wbudowany**, obudowa waży 23 kg i stoi stabilnie przy ciągłym cięciu. Gwarancja obejmuje **serwis u klienta**, a nie wysyłkę sprzętu do punktu — przy drukarce, która stoi w linii pakowania, to często najważniejszy zapis w ofercie.
-
-Tusz jest pigmentowy **UltraChrome DL**: nadruk nie rozmazuje się po zamoczeniu, znosi tarcie i nie blaknie, więc etykiety nadają się na opakowania zbiorcze, do chłodni i na produkty chemiczne. Rozdzielczość sięga **1200 × 1200 dpi**, co wystarcza na drobny skład, mikrotekst i gęste kody 2D.
-
-**Cztery wersje, dwie decyzje.** Pierwsza: co drukarka robi z etykietą po wydruku — wersja **Ae** ma gilotynę i odcina etykiety, wersja **Pe** ma odklejak, który oddziela etykietę od podkładu i podaje ją gotową do naklejenia (podkład nawija się na wbudowaną szpulę). Druga: rodzaj czerni — **BK** (Black) pod papier błyszczący, **MK** (Matte Black) pod matowy. Kolorowe wkłady są wspólne, czarnego nie da się zamienić między wersjami.
-
-Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konserwacyjny SJMB6000, wspólne z modelem C6500. Nośniki: [etykiety Epson](/etykiety-do-kolorowych-drukarek) w rolkach, w tym duże rolki produkcyjne. Jeśli nie wiesz, czy wybrać gilotynę czy odklejak, napisz, jak etykiety trafiają na produkt — podpowiemy.`,
+    shortDescription: "Epson ColorWorks C6000 to kolorowa drukarka etykiet o szerokości nadruku do 108 mm. Służy do stanowisk produkcyjnych i pakowania, które drukują zmienne oznaczenia produktów z tuszem pigmentowym.",
+    seoTitle: "Epson ColorWorks C6000 — drukarka 108 mm, Ae lub Pe",
+    seoDescription: "Epson ColorWorks C6000: kolorowy nadruk do 108 mm i 1200 × 1200 dpi. Wybierz gilotynę Ae lub odklejak Pe oraz czerń bk/mk. Sprawdź PN i ceny.",
+    description: "Epson ColorWorks C6000 to kolorowa drukarka etykiet o szerokości nadruku do 108 mm. Służy do stanowisk produkcyjnych i pakowania, które drukują zmienne oznaczenia produktów z tuszem pigmentowym.\n\n## Nadruk 108 mm i dobór rolki\n\nGłowica PrecisionCore obsługuje rozdzielczość do 1200 × 1200 dpi. Prędkość do 119 mm/s dotyczy trybu 300 × 600 dpi i nadruku o szerokości 108 mm. Przy ocenie wydajności uwzględnij długość etykiety, jakość, cięcie i sposób odbioru.\n\nOferowane konfiguracje przyjmują zgodne rolki o średnicach 4, 6 lub 8 cali. Zakres materiału zależy również od wersji podawania. Przed zakupem rolki sprawdź szerokość, gilzę oraz parametry wybranego PN.\n\n## Ae czy Pe? Dwa sposoby podania etykiety\n\nWersja Ae ma gilotynę do odcinania materiału. Wersja Pe ma odklejak, który oddziela wykrojoną etykietę od podkładu i podaje ją do naklejenia. Te wersje mają inne wymagania dotyczące prowadzenia materiału. Nie zakładaj, że każdy format rolki z Ae będzie odpowiedni dla Pe.\n\nDrugi wybór dotyczy czerni: bk do zgodnych materiałów błyszczących, mk do matowych. Czarny atrament nie jest zamienny między odmianami. Cztery osobne wkłady SJIC36P mają po 80 ml. Trwałość etykiety zależy od dobranego nośnika, tuszu i warunków pracy.\n\n## Integracja i materiały\n\nUSB i Ethernet służą do połączenia z systemem. Przy wdrożeniu sprawdź sterownik, format projektu oraz obsługę języka ESC/Label przez aplikację. Wbudowany zasilacz wymaga doprowadzenia zasilania sieciowego. Podstawowa gwarancja wynosi 12 miesięcy z serwisem u klienta.\n\nDobierz [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek). Do szerokiego nadruku porównaj [C6500 do 212 mm](/produkt/epson-colorworks-c6500). Do prędkości 300 mm/s przy 108 mm służy [C8000e](/produkt/epson-colorworks-c8000e). Porównanie rodzin znajdziesz w kategorii [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -93374,25 +93475,79 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       'Czarny tusz': 'Black (bk) — czerń dobrana do papieru błyszczącego i półbłyszczącego.\n\nMatte Black (mk) — czerń dobrana do papieru matowego; ostrzejszy tekst i kody kreskowe.\n\nKolorowe wkłady są wspólne, czarnego nie da się zamienić — wersję wybierasz przy zakupie drukarki.',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CH76102BK / C31CH76102MK (Ae) · C31CH76202BK / C31CH76202MK (Pe)' },
-      { name: 'Technologia druku', value: 'Atramentowa, głowica PrecisionCore, tusz pigmentowy UltraChrome DL (CMYK)' },
-      { name: 'Konfiguracja dysz', value: '800 dysz na każdy kolor' },
-      { name: 'Klasa urządzenia', value: 'Drukarka przemysłowa do kolorowych etykiet' },
-      { name: 'Wersje', value: 'Ae — gilotyna; Pe — odklejak z nawijakiem podkładu. Każda w odmianie BK (czerń Black) i MK (Matte Black)' },
-      { name: 'Rozdzielczość', value: 'do 1200 × 1200 dpi (także 600 × 1200, 600 × 600 i 300 × 600 dpi)' },
-      { name: 'Prędkość druku', value: 'do 119 mm/s (300 × 600 dpi, szerokość druku 108 mm)' },
-      { name: 'Szerokość druku', value: 'max. 108 mm' },
-      { name: 'Szerokość nośnika', value: '25–112 mm' },
-      { name: 'Nośniki', value: 'Rolki o średnicy zewnętrznej 4, 6 i 8 cali; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem' },
-      { name: 'Wkłady', value: '4 osobne wkłady SJIC36P (BK albo MK + C, M, Y)' },
-      { name: 'Pojemnik konserwacyjny', value: 'SJMB6000 (wspólny z ColorWorks C6500)' },
-      { name: 'Interfejsy', value: 'USB 2.0, Ethernet' },
-      { name: 'Język poleceń', value: 'ESC/Label' },
-      { name: 'Zasilanie', value: 'Wbudowane, 100–240 V, 50/60 Hz' },
-      { name: 'Wymiary (S×G×W)', value: '340 × 565 × 326 mm' },
-      { name: 'Waga', value: '23 kg' },
-      { name: 'Gwarancja', value: '12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CH76102BK / C31CH76102MK (Ae) · C31CH76202BK / C31CH76202MK (Pe)"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa, głowica PrecisionCore, tusz pigmentowy UltraChrome DL (CMYK)"
+  },
+  {
+    "name": "Konfiguracja dysz",
+    "value": "800 dysz na każdy kolor"
+  },
+  {
+    "name": "Klasa urządzenia",
+    "value": "Drukarka przemysłowa do kolorowych etykiet"
+  },
+  {
+    "name": "Wersje",
+    "value": "Ae — gilotyna; Pe — odklejak. Każda w odmianie BK (czerń Black) i MK (Matte Black)"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "do 1200 × 1200 dpi (także 600 × 1200, 600 × 600 i 300 × 600 dpi)"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "do 119 mm/s (300 × 600 dpi, szerokość druku 108 mm)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 108 mm"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "25–112 mm"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolki o średnicy zewnętrznej 4, 6 i 8 cali; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 osobne wkłady SJIC36P (BK albo MK + C, M, Y)"
+  },
+  {
+    "name": "Pojemnik konserwacyjny",
+    "value": "SJMB6000 (wspólny z ColorWorks C6500)"
+  },
+  {
+    "name": "Interfejsy",
+    "value": "USB 2.0, Ethernet"
+  },
+  {
+    "name": "Język poleceń",
+    "value": "ESC/Label"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Wbudowane, 100–240 V, 50/60 Hz"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "340 × 565 × 326 mm"
+  },
+  {
+    "name": "Waga",
+    "value": "23 kg"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus"
+  }
+],
     applications: [
       'Etykiety produktowe drukowane całymi zmianami',
       'Etykiety chemiczne GHS i ostrzegawcze',
@@ -93451,31 +93606,23 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
       ],
     },
     faq: [
-      {
-        question: 'Czym różni się wersja Ae od Pe?',
-        answer: 'Tym, co dzieje się z etykietą po wydruku. Ae ma gilotynę i odcina etykiety — nadaje się, gdy etykiety odkładasz w stos albo naklejasz je później. Pe ma odklejak: oddziela etykietę od podkładu i podaje gotową do naklejenia, a podkład nawija na wbudowaną szpulę. Wersja Pe przyspiesza ręczne etykietowanie na linii, ale kosztuje wyraźnie więcej.',
-      },
-      {
-        question: 'Czym różnią się wersje BK i MK?',
-        answer: 'Rodzajem czarnego tuszu. BK to Black dobrany do papieru błyszczącego i półbłyszczącego, MK to Matte Black pod papier matowy, gdzie daje ostrzejszy tekst i kody kreskowe. Kolory są w obu identyczne, ale czarnego wkładu nie można zamienić, więc wersję wybiera się przy zakupie, pod papier, na którym będziesz drukować.',
-      },
-      {
-        question: 'Czy tusze z C4000e albo C3500 pasują do C6000?',
-        answer: 'Nie. C6000 używa wkładów SJIC36P, wspólnych z modelem C6500. C4000e ma SJIC42P, C3500 ma SJIC22P, a D3800e SJIC57P — to cztery różne rodziny wkładów. Różnią się też pojemniki konserwacyjne: C6000 ma SJMB6000, C4000e i D3800e mają SJMB4000, a C3500 SJMB3500.',
-      },
-      {
-        question: 'Czy C6000 obsługuje duże rolki?',
-        answer: 'Tak, i to jest jedna z głównych różnic wobec modeli biurkowych. C6000 przyjmuje rolki o średnicy zewnętrznej 4, 6 i 8 cali, więc przy tym samym formacie etykiety zmieści ich kilka razy więcej niż drukarka biurkowa. Przy pracy zmianowej oznacza to znacznie rzadsze przerwy na wymianę nośnika.',
-      },
-      {
-        question: 'Jak wygląda serwis tej drukarki?',
-        answer: 'Standardowa gwarancja producenta to 12 miesięcy z serwisem u klienta, czyli technik przyjeżdża na miejsce — nie trzeba wysyłać urządzenia. Ochronę można wydłużyć pakietem Epson CoverPlus; wycenimy go razem z drukarką.',
-      },
-      {
-        question: 'Czy C6000 drukuje z systemów magazynowych i ERP?',
-        answer: 'Tak. Drukarka rozumie polecenia ESC/Label, pracuje na sterownikach Windows i Linux i drukuje z programów do etykiet, w tym BarTender i NiceLabel. Integracja z systemem magazynowym albo ERP odbywa się tak samo jak przy zwykłej drukarce sieciowej — przez Ethernet.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks C6000?",
+    "answer": "Epson ColorWorks C6000 to kolorowa drukarka etykiet o szerokości nadruku do 108 mm. Służy do stanowisk produkcyjnych i pakowania, które drukują zmienne oznaczenia produktów z tuszem pigmentowym."
+  },
+  {
+    "question": "Jak wybrać wersję bk lub mk?",
+    "answer": "Wybierz bk do zgodnych materiałów błyszczących i półbłyszczących, a mk do matowych. Czarny atrament nie jest zamienny między tymi odmianami."
+  },
+  {
+    "question": "Czym różnią się wersje Ae i Pe?",
+    "answer": "Ae odcina materiał gilotyną. Pe oddziela wykrojoną etykietę od podkładu. Dobierz rolkę i sposób prowadzenia do wybranego PN."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks C6000Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6000-karta-katalogowa-pl.pdf', size: '1,4 MB' },
     ],
@@ -93488,14 +93635,14 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6000-series/p/28326',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-19',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-sjic36p-k',
     slug: 'epson-tusz-sjic36p-k-czarny-c13t44c140',
     name: 'Tusz Epson SJIC36P(K) czarny do ColorWorks C6000 i C6500 (C13T44C140)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(K), kolor czarny. Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
-    description: 'Wkład SJIC36P(K) (oznaczenie T44C1) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz UltraChrome DL jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie w transporcie i nie blaknie, dlatego nadaje się na etykiety produktowe, chemiczne i chłodnicze. Ta czerń jest przeznaczona do drukarek w wersji **bk**, dobranej do papieru błyszczącego; wersje **mk** biorą [SJIC36P(MK)](/produkt/epson-tusz-sjic36p-mk-czarny-matowy-c13t44c540) i czarnego wkładu nie da się zamienić. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.',
+    description: "Wkład SJIC36P(K) (oznaczenie T44C1) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Ta czerń jest przeznaczona do drukarek w wersji **bk**, dobranej do papieru błyszczącego; wersje **mk** biorą [SJIC36P(MK)](/produkt/epson-tusz-sjic36p-mk-czarny-matowy-c13t44c540) i czarnego wkładu nie da się zamienić. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93519,7 +93666,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000'],
     seoTitle: 'Tusz Epson SJIC36P(K) czarny do ColorWorks C6000 i C6500 (C13T44C140) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(K), kolor czarny. Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
+    seoDescription: "Tusz Epson SJIC36P(K) czarny do ColorWorks C6000 i C6500. PN C13T44C140. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93528,7 +93675,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     slug: 'epson-tusz-sjic36p-c-cyan-c13t44c240',
     name: 'Tusz Epson SJIC36P(C) cyan (błękitny) do ColorWorks C6000 i C6500 (C13T44C240)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(C), kolor cyan (błękitny). Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
-    description: 'Wkład SJIC36P(C) (oznaczenie T44C2) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz UltraChrome DL jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie w transporcie i nie blaknie, dlatego nadaje się na etykiety produktowe, chemiczne i chłodnicze. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.',
+    description: "Wkład SJIC36P(C) (oznaczenie T44C2) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93552,7 +93699,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000'],
     seoTitle: 'Tusz Epson SJIC36P(C) cyan (błękitny) do ColorWorks C6000 i C6500 (C13T44C240) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(C), kolor cyan (błękitny). Do przemysłowych drukarek etykiet Epson ColorWorks C6000',
+    seoDescription: "Tusz Epson SJIC36P(C) cyan (błękitny) do ColorWorks C6000 i C6500. PN C13T44C240. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93561,7 +93708,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     slug: 'epson-tusz-sjic36p-m-magenta-c13t44c340',
     name: 'Tusz Epson SJIC36P(M) magenta (purpurowy) do ColorWorks C6000 i C6500 (C13T44C340)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(M), kolor magenta (purpurowy). Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
-    description: 'Wkład SJIC36P(M) (oznaczenie T44C3) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz UltraChrome DL jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie w transporcie i nie blaknie, dlatego nadaje się na etykiety produktowe, chemiczne i chłodnicze. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.',
+    description: "Wkład SJIC36P(M) (oznaczenie T44C3) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93585,7 +93732,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000'],
     seoTitle: 'Tusz Epson SJIC36P(M) magenta (purpurowy) do ColorWorks C6000 i C6500 (C13T44C340) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(M), kolor magenta (purpurowy). Do przemysłowych drukarek etykiet Epson ColorWorks C',
+    seoDescription: "Tusz Epson SJIC36P(M) magenta (purpurowy) do ColorWorks C6000 i C6500. PN C13T44C340. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93594,7 +93741,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     slug: 'epson-tusz-sjic36p-y-zolty-c13t44c440',
     name: 'Tusz Epson SJIC36P(Y) żółty do ColorWorks C6000 i C6500 (C13T44C440)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(Y), kolor żółty. Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
-    description: 'Wkład SJIC36P(Y) (oznaczenie T44C4) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz UltraChrome DL jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie w transporcie i nie blaknie, dlatego nadaje się na etykiety produktowe, chemiczne i chłodnicze. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.',
+    description: "Wkład SJIC36P(Y) (oznaczenie T44C4) zasila przemysłowe drukarki etykiet [ColorWorks C6000](/produkt/epson-colorworks-c6000) i C6500. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Wymienia się tylko ten kolor, który się skończył. Wkłady SJIC36P nie pasują do modeli biurkowych: C4000e używa SJIC42P, C3500 — SJIC22P, D3800e — SJIC57P.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93618,7 +93765,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000'],
     seoTitle: 'Tusz Epson SJIC36P(Y) żółty do ColorWorks C6000 i C6500 (C13T44C440) | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(Y), kolor żółty. Do przemysłowych drukarek etykiet Epson ColorWorks C6000 i C6500.',
+    seoDescription: "Tusz Epson SJIC36P(Y) żółty do ColorWorks C6000 i C6500. PN C13T44C440. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93648,7 +93795,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000'],
     seoTitle: 'Pojemnik konserwacyjny Epson SJMB6000 C33S021501 | TAKMA',
-    seoDescription: 'Oryginalny maintenance box Epson SJMB6000 do ColorWorks C6000 i C6500. Wymiana bez serwisu, wysyłka z TAKMA.',
+    seoDescription: "Pojemnik konserwacyjny Epson SJMB6000 do ColorWorks C6000 i C6500. PN C33S021501. Do C6000, C6500.",
     downloads: [],
     createdAt: '2026-09-19',
   },
@@ -93657,7 +93804,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     slug: 'epson-etykiety-premium-matte-102x51mm-2310szt-c33s045722',
     name: 'Etykiety Epson Premium Matte 102 × 51 mm, 2310 szt. (C33S045722)',
     shortDescription: 'Produkcyjna rolka 2310 wykrojonych etykiet 102 × 51 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
-    description: 'Rolka produkcyjna z 2310 wykrojonymi etykietami 102 × 51 mm. Tyle materiału starcza na kilka zmian bez wymiany rolki, dlatego rolki tej wielkości są przeznaczone do [ColorWorks C6000](/produkt/epson-colorworks-c6000) i większych modeli, a nie do drukarek biurkowych. Papier jest matowy i powlekany pod tusz pigmentowy: kod kreskowy wychodzi ostro, a nadruk nie rozmazuje się po zamoczeniu. Klej akrylowy trzyma na kartonie, folii i szkle, znosi też ciepło. Format 102 × 51 mm sprawdza się jako etykieta cenowa, adresowa i produktowa.',
+    description: "Rolka produkcyjna z 2310 wykrojonymi etykietami 102 × 51 mm. Tyle materiału starcza na kilka zmian bez wymiany rolki, dlatego rolki tej wielkości są przeznaczone do [ColorWorks C6000](/produkt/epson-colorworks-c6000) i większych modeli, a nie do drukarek biurkowych. Papier ma matową powłokę do druku atramentowego. Odporność nadruku zależy od tuszu, materiału i warunków użycia. Klej akrylowy trzyma na kartonie, folii i szkle, znosi też ciepło. Format 102 × 51 mm sprawdza się jako etykieta cenowa, adresowa i produktowa.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['etykiety-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -93683,7 +93830,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 51 mm, 2310 szt. (C33S045722) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 2310 wykrojonych etykiet 102 × 51 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 51 mm, 2310 szt.. PN C33S045722. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93718,7 +93865,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 76 mm, 1570 szt. (C33S045723) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 1570 wykrojonych etykiet 102 × 76 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 76 mm, 1570 szt.. PN C33S045723. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93753,7 +93900,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 102 × 152 mm, 800 szt. (C33S045724) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 800 wykrojonych etykiet 102 × 152 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
+    seoDescription: "Etykiety Epson Premium Matte 102 × 152 mm, 800 szt.. PN C33S045724. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93788,7 +93935,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 76 × 51 mm, 2310 szt. (C33S045725) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 2310 wykrojonych etykiet 76 × 51 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
+    seoDescription: "Etykiety Epson Premium Matte 76 × 51 mm, 2310 szt.. PN C33S045725. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93823,7 +93970,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 76 × 127 mm, 960 szt. (C33S045726) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 960 wykrojonych etykiet 76 × 127 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000.',
+    seoDescription: "Etykiety Epson Premium Matte 76 × 127 mm, 960 szt.. PN C33S045726. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93858,7 +94005,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety Epson Premium Matte 105 × 210 mm, 282 szt. (C33S045740) | TAKMA',
-    seoDescription: 'Produkcyjna rolka 282 wykrojonych etykiet 105 × 210 mm z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000 i C6500.',
+    seoDescription: "Etykiety Epson Premium Matte 105 × 210 mm, 282 szt.. PN C33S045740. Do C6000Ae i C6000Pe, C6500, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93892,7 +94039,7 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 102 mm × 60 m (C33S045741) | TAKMA',
-    seoDescription: 'Rolka ciągła 102 mm × 60 m z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6000Ae z gilotyną.',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 102 mm × 60 m. PN C33S045741. Do C6000Ae (wersja z gilotyną), C6500Ae, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -93900,16 +94047,10 @@ Do C6000 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) i pojemnik konse
     id: 'epson-colorworks-c6500',
     slug: 'epson-colorworks-c6500',
     name: 'Epson ColorWorks C6500',
-    shortDescription: 'Epson ColorWorks C6500 to przemysłowa kolorowa drukarka etykiet 8 cali: szerokość druku do 212 mm, PrecisionCore z 800 dyszami na kolor, do 1200 × 1200 dpi, tusz pigmentowy UltraChrome DL, serwis u klienta. Wersje z gilotyną (Ae) albo odklejakiem (Pe).',
-    seoTitle: 'Epson ColorWorks C6500 – drukarka etykiet 8 cali | TAKMA',
-    seoDescription: 'Epson ColorWorks C6500 — drukarka etykiet kolorowych do 212 mm, 1200 dpi, tusz pigmentowy. Wersje Ae i Pe, tusze SJIC36P w TAKMA.',
-    description: `Dla kogo? ColorWorks C6500 to ta sama maszyna co [C6000](/produkt/epson-colorworks-c6000), tylko dwa razy szersza: drukuje etykiety o szerokości do **212 mm**, a nie 108 mm. Kupują ją zakłady, które oznaczają duże opakowania — beczki i kanistry z chemią, worki, kartony zbiorcze, palety — oraz firmy drukujące etykiety formatu A4 z pełną kartą produktu, instrukcją albo oznaczeniem GHS z kilkoma piktogramami naraz.
-
-Głowica PrecisionCore ma **800 dysz na każdy kolor** i kładzie 212 mm szerokości z prędkością **85 mm/s** przy 300 × 600 dpi. Rozdzielczość sięga **1200 × 1200 dpi**, więc drobny skład i gęste kody 2D zostają czytelne. Tusz jest pigmentowy **UltraChrome DL**: nadruk nie rozmazuje się po zamoczeniu, znosi tarcie i nie blaknie na świetle. Drukarka przyjmuje rolki o średnicy **4 i 6 cali**, waży 26 kg i ma wbudowany zasilacz. Ruchomy czujnik nośnika radzi sobie z etykietami o nietypowym kształcie, bez przestawiania mechaniki.
-
-**Cztery wersje, dwie decyzje.** Pierwsza: co drukarka robi z etykietą po wydruku — **Ae** ma gilotynę i odcina etykiety, **Pe** ma odklejak, który oddziela etykietę od podkładu i podaje ją gotową do naklejenia. Druga: rodzaj czerni — **BK** (Black) pod papier błyszczący, **MK** (Matte Black) pod matowy i teksturowany. Kolorowe wkłady są wspólne, czarnego nie da się zamienić.
-
-Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukarki nie trzeba nigdzie wysyłać. Do C6500 pasują [tusze SJIC36P](/tusze-do-kolorowych-drukarek) 80 ml i pojemnik SJMB6000, wspólne z C6000, oraz [nośniki 8-calowe](/etykiety-do-kolorowych-drukarek): papier Premium Matte i folia BOPP w rolkach 203 mm. Jeśli nie wiesz, czy potrzebujesz szerokości 212 czy wystarczy 108 mm, napisz, jakie etykiety drukujesz — porównamy z C6000.`,
+    shortDescription: "Epson ColorWorks C6500 to drukarka kolorowych etykiet o szerokości nadruku do 212 mm. Jest przeznaczona do dużych formatów na opakowania zbiorcze, worki, kartony oraz zgodne etykiety chemiczne.",
+    seoTitle: "Epson ColorWorks C6500 — kolorowe etykiety do 212 mm",
+    seoDescription: "Epson ColorWorks C6500: kolorowe etykiety do 212 mm, 1200 × 1200 dpi i tusze SJIC36P. Wybierz Ae/Pe oraz bk/mk. Sprawdź PN, ceny i materiały.",
+    description: "Epson ColorWorks C6500 to drukarka kolorowych etykiet o szerokości nadruku do 212 mm. Jest przeznaczona do dużych formatów na opakowania zbiorcze, worki, kartony oraz zgodne etykiety chemiczne.\n\n## Kiedy potrzebny jest C6500?\n\nGłówną różnicą względem [C6000](/produkt/epson-colorworks-c6000) jest szerokość nadruku: do 212 mm zamiast 108 mm. Dzięki temu projekt z rozbudowaną treścią i grafiką mieści się na jednej szerokiej etykiecie.\n\nRozdzielczość wynosi do 1200 × 1200 dpi. Prędkość do 85 mm/s dotyczy trybu 300 × 600 dpi i szerokości nadruku 212 mm. Maksymalna jakość i prędkość nie oznaczają jednego wspólnego trybu pracy.\n\n## Wersje z gilotyną i odklejakiem\n\nOdmiana Ae odcina materiał gilotyną. Odmiana Pe oddziela wykrojoną etykietę od podkładu. Szerokość materiału wynosi 25,4–215,9 mm dla Ae oraz 50–215,9 mm dla Pe. Obie wersje wymagają właściwego prowadzenia i zgodnej rolki; obsługiwane średnice obejmują 4 i 6 cali.\n\nCzerń bk dobierz do zgodnych materiałów błyszczących, a mk do matowych. Cztery wkłady SJIC36P po 80 ml są osobno wymienne. Czarny wkład nie jest zamienny między wersjami bk i mk. Tusze tej rodziny są także używane w C6000, ale szerokie rolki nie pasują do obszaru zadruku węższego modelu.\n\n## Materiał, aplikacja i eksploatacja\n\nPrzed drukiem oznaczeń chemicznych sprawdź wymagania dotyczące gotowej etykiety: materiału, kleju, tuszu i warunków kontaktu. Sama drukarka nie potwierdza zgodności każdego projektu z BS5609 ani wymaganiami GHS.\n\nUSB i Ethernet łączą urządzenie ze stanowiskiem. Przetestuj projekt w docelowej aplikacji. Podstawowa gwarancja wynosi 12 miesięcy z serwisem u klienta. Dobierz [tusze SJIC36P](/tusze-do-kolorowych-drukarek), [szerokie etykiety](/etykiety-do-kolorowych-drukarek) i porównaj pozostałe [kolorowe drukarki etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -93971,26 +94112,83 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       'Czarny tusz': 'Black (bk) — czerń dobrana do papieru błyszczącego i półbłyszczącego.\n\nMatte Black (mk) — czerń dobrana do papieru matowego i teksturowanego; ostrzejszy tekst i kody kreskowe.\n\nKolorowe wkłady są wspólne, czarnego nie da się zamienić — wersję wybierasz przy zakupie drukarki.',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CH77102BK / C31CH77102MK (Ae) · C31CH77202BK / C31CH77202MK (Pe)' },
-      { name: 'Technologia druku', value: 'Atramentowa, głowica PrecisionCore, tusz pigmentowy UltraChrome DL (CMYK)' },
-      { name: 'Konfiguracja dysz', value: '800 dysz na każdy kolor' },
-      { name: 'Klasa urządzenia', value: 'Drukarka przemysłowa do kolorowych etykiet, 8 cali' },
-      { name: 'Wersje', value: 'Ae — gilotyna; Pe — odklejak z nawijakiem podkładu. Każda w odmianie BK (czerń Black) i MK (Matte Black)' },
-      { name: 'Rozdzielczość', value: 'do 1200 × 1200 dpi (także 600 × 1200, 600 × 600 i 300 × 600 dpi)' },
-      { name: 'Prędkość druku', value: 'do 85 mm/s (300 × 600 dpi, szerokość druku 212 mm)' },
-      { name: 'Szerokość druku', value: 'max. 212 mm' },
-      { name: 'Szerokość nośnika', value: '25,4–215,9 mm (Ae) · 50–215,9 mm (Pe)' },
-      { name: 'Nośniki', value: 'Rolki o średnicy zewnętrznej 4 i 6 cali; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem' },
-      { name: 'Wkłady', value: '4 osobne wkłady SJIC36P po 80 ml (BK albo MK + C, M, Y)' },
-      { name: 'Pojemnik konserwacyjny', value: 'SJMB6000/6500 (wspólny z ColorWorks C6000)' },
-      { name: 'Interfejsy', value: 'USB 2.0, Ethernet' },
-      { name: 'Język poleceń', value: 'ESC/Label, emulacja ZPL II' },
-      { name: 'Zasilanie', value: 'Wbudowane, 100–240 V, 50/60 Hz' },
-      { name: 'Pobór mocy', value: 'Druk ok. 39 W, czuwanie ok. 6 W' },
-      { name: 'Wymiary (S×G×W)', value: '444 × 515 × 326 mm' },
-      { name: 'Waga', value: '26 kg' },
-      { name: 'Gwarancja', value: '12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CH77102BK / C31CH77102MK (Ae) · C31CH77202BK / C31CH77202MK (Pe)"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa, głowica PrecisionCore, tusz pigmentowy UltraChrome DL (CMYK)"
+  },
+  {
+    "name": "Konfiguracja dysz",
+    "value": "800 dysz na każdy kolor"
+  },
+  {
+    "name": "Klasa urządzenia",
+    "value": "Drukarka przemysłowa do kolorowych etykiet, 8 cali"
+  },
+  {
+    "name": "Wersje",
+    "value": "Ae — gilotyna; Pe — odklejak. Każda w odmianie BK (czerń Black) i MK (Matte Black)"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "do 1200 × 1200 dpi (także 600 × 1200, 600 × 600 i 300 × 600 dpi)"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "do 85 mm/s (300 × 600 dpi, szerokość druku 212 mm)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 212 mm"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "25,4–215,9 mm (Ae) · 50–215,9 mm (Pe)"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolki o średnicy zewnętrznej 4 i 6 cali; papier ciągły, etykiety ciągłe i wykrojone, nośniki z czarnym znacznikiem"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 osobne wkłady SJIC36P po 80 ml (BK albo MK + C, M, Y)"
+  },
+  {
+    "name": "Pojemnik konserwacyjny",
+    "value": "SJMB6000/6500 (wspólny z ColorWorks C6000)"
+  },
+  {
+    "name": "Interfejsy",
+    "value": "USB 2.0, Ethernet"
+  },
+  {
+    "name": "Język poleceń",
+    "value": "ESC/Label, emulacja ZPL II"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Wbudowane, 100–240 V, 50/60 Hz"
+  },
+  {
+    "name": "Pobór mocy",
+    "value": "Druk ok. 39 W, czuwanie ok. 6 W"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "444 × 515 × 326 mm"
+  },
+  {
+    "name": "Waga",
+    "value": "26 kg"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus"
+  }
+],
     applications: [
       'Etykiety na beczki, kanistry i pojemniki z chemią',
       'Etykiety formatu A4 z kartą produktu albo instrukcją',
@@ -94048,31 +94246,23 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
       ],
     },
     faq: [
-      {
-        question: 'Czym C6500 różni się od C6000?',
-        answer: 'Szerokością. C6500 drukuje pas do 212 mm i przyjmuje nośniki do 215,9 mm, C6000 kończy się na 108 mm druku i 112 mm nośnika. Reszta jest wspólna: ta sama głowica PrecisionCore z 800 dyszami na kolor, ten sam tusz SJIC36P, ten sam pojemnik konserwacyjny i te same wersje Ae i Pe. C6000 jest za to szybsza na wąskiej etykiecie (119 mm/s wobec 85 mm/s) i bierze rolki do 8 cali, podczas gdy C6500 do 6 cali.',
-      },
-      {
-        question: 'Czym różni się wersja Ae od Pe?',
-        answer: 'Tym, co dzieje się z etykietą po wydruku. Ae ma gilotynę i odcina etykiety — tylko ta wersja pracuje na rolkach ciągłych, na których długość etykiety ustawia się w projekcie. Pe ma odklejak: oddziela etykietę od podkładu i podaje gotową do naklejenia, a podkład nawija na wbudowaną szpulę, więc pracuje na etykietach wykrojonych. Wersja Pe kosztuje wyraźnie więcej i ma węższy dolny zakres nośnika: od 50 mm zamiast 25,4 mm.',
-      },
-      {
-        question: 'Czym różnią się wersje BK i MK?',
-        answer: 'Rodzajem czarnego tuszu. BK to Black dobrany do papieru błyszczącego i półbłyszczącego, MK to Matte Black pod papier matowy i teksturowany, gdzie daje ostrzejszy tekst i kody kreskowe. Kolory są w obu identyczne, ale czarnego wkładu nie można zamienić, więc wersję wybiera się przy zakupie, pod papier, na którym będziesz drukować.',
-      },
-      {
-        question: 'Czy tusze i nośniki z C6000 pasują do C6500?',
-        answer: 'Tusze tak: obie drukarki używają wkładów SJIC36P po 80 ml i pojemnika SJMB6000. Z nośnikami jest inaczej — C6500 bierze rolki 8-calowe o szerokości 203 i 210 mm, których C6000 nie zmieści, ale przyjmuje też węższe rolki 102 i 105 mm wspólne z C6000. W drugą stronę to nie działa: wąskie rolki do C6000 to nie wszystkie formaty, które C6500 potrafi zadrukować.',
-      },
-      {
-        question: 'Jak wygląda serwis tej drukarki?',
-        answer: 'Standardowa gwarancja producenta to 12 miesięcy z serwisem u klienta, czyli technik przyjeżdża na miejsce — nie trzeba wysyłać urządzenia ważącego 26 kg. Ochronę można wydłużyć pakietem Epson CoverPlus; wycenimy go razem z drukarką.',
-      },
-      {
-        question: 'Czy C6500 drukuje z systemów magazynowych i ERP?',
-        answer: 'Tak. Drukarka rozumie polecenia ESC/Label i emuluje ZPL II, pracuje na sterownikach Windows i Linux i drukuje z programów do etykiet, w tym BarTender i NiceLabel. Do systemu magazynowego albo ERP podłącza się ją przez Ethernet, tak samo jak zwykłą drukarkę sieciową.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks C6500?",
+    "answer": "Epson ColorWorks C6500 to drukarka kolorowych etykiet o szerokości nadruku do 212 mm. Jest przeznaczona do dużych formatów na opakowania zbiorcze, worki, kartony oraz zgodne etykiety chemiczne."
+  },
+  {
+    "question": "Jak wybrać wersję bk lub mk?",
+    "answer": "Wybierz bk do zgodnych materiałów błyszczących i półbłyszczących, a mk do matowych. Czarny atrament nie jest zamienny między tymi odmianami."
+  },
+  {
+    "question": "Czym różnią się wersje Ae i Pe?",
+    "answer": "Ae odcina materiał gilotyną. Pe oddziela wykrojoną etykietę od podkładu. Dobierz rolkę i sposób prowadzenia do wybranego PN."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks C6500Ae MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c6500-karta-katalogowa-pl.pdf', size: '1,6 MB' },
     ],
@@ -94085,14 +94275,14 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-c6500-series/p/28377',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-sjic36p-mk',
     slug: 'epson-tusz-sjic36p-mk-czarny-matowy-c13t44c540',
     name: 'Tusz Epson SJIC36P(MK) czarny matowy do ColorWorks C6000 i C6500 (C13T44C540)',
     shortDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(MK), czerń matowa, 80 ml. Do drukarek ColorWorks C6000 i C6500 w wersji mk.',
-    description: 'Wkład SJIC36P(MK) (oznaczenie T44C5) to czerń matowa do [ColorWorks C6000](/produkt/epson-colorworks-c6000) i [C6500](/produkt/epson-colorworks-c6500) w wersji **mk**. Matte Black jest dobrana do papieru matowego i teksturowanego: tekst i kody kreskowe wychodzą ostrzej niż przy czerni Black, która celuje w papier błyszczący. W drukarce w wersji bk ten wkład nie zadziała — czarnego tuszu nie da się zamienić między wersjami, kolorowe wkłady są wspólne. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody i nie blaknie. Pojemność 80 ml.',
+    description: "Wkład SJIC36P(MK) (oznaczenie T44C5) to czerń matowa do [ColorWorks C6000](/produkt/epson-colorworks-c6000) i [C6500](/produkt/epson-colorworks-c6500) w wersji **mk**. Matte Black jest dobrana do papieru matowego i teksturowanego: tekst i kody kreskowe wychodzą ostrzej niż przy czerni Black, która celuje w papier błyszczący. W drukarce w wersji bk ten wkład nie zadziała — czarnego tuszu nie da się zamienić między wersjami, kolorowe wkłady są wspólne. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Pojemność 80 ml.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94116,7 +94306,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6500', 'epson-colorworks-c6000'],
     seoTitle: 'Tusz Epson SJIC36P(MK) czarny matowy C13T44C540 | TAKMA',
-    seoDescription: 'Oryginalny wkład z tuszem pigmentowym UltraChrome DL Epson SJIC36P(MK), czerń matowa, 80 ml. Do ColorWorks C6000 i C6500 w wersji mk.',
+    seoDescription: "Tusz Epson SJIC36P(MK) czarny matowy do ColorWorks C6000 i C6500. PN C13T44C540. Do C6000 i C6500 w wersji mk (Ae i Pe).",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94150,7 +94340,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6500'],
     seoTitle: 'Etykiety ciągłe Epson BOPP High Gloss 203 mm × 68 m (C33S045736) | TAKMA',
-    seoDescription: 'Rolka ciągła 203 mm × 68 m z folii BOPP o błyszczącej powierzchni. Do Epson ColorWorks C6500Ae.',
+    seoDescription: "Etykiety ciągłe Epson BOPP High Gloss 203 mm × 68 m. PN C33S045736. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94159,7 +94349,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     slug: 'epson-etykiety-ciagle-bopp-satin-gloss-203mm-68m-c33s045737',
     name: 'Etykiety ciągłe Epson BOPP Satin Gloss 203 mm × 68 m (C33S045737)',
     shortDescription: 'Rolka ciągła 203 mm × 68 m z folii BOPP o satynowej powierzchni. Do Epson ColorWorks C6500Ae.',
-    description: 'Ta sama folia BOPP co w wersji High Gloss, tylko z satynowym wykończeniem: mniej odbija światło, przez co etykieta czyta się pod każdym kątem, a kolory zostają nasycone. Wybiera się ją tam, gdzie połysk przeszkadza — przy etykietach z dużą ilością tekstu, składem albo kodem skanowanym pod lampą. Folia znosi wilgoć, tarcie i chemikalia. Rolka 203 mm × 68 m do [ColorWorks C6500](/produkt/epson-colorworks-c6500) w wersji Ae z gilotyną.',
+    description: "Ta sama folia BOPP co w wersji High Gloss, tylko z satynowym wykończeniem: mniej odbija światło, przez co powierzchnia etykiety ogranicza odbicia światła, a kolory zostają nasycone. Wybiera się ją tam, gdzie połysk przeszkadza — przy etykietach z dużą ilością tekstu, składem albo kodem skanowanym pod lampą. Folia znosi wilgoć, tarcie i chemikalia. Rolka 203 mm × 68 m do [ColorWorks C6500](/produkt/epson-colorworks-c6500) w wersji Ae z gilotyną.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['etykiety-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94184,7 +94374,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6500'],
     seoTitle: 'Etykiety ciągłe Epson BOPP Satin Gloss 203 mm × 68 m (C33S045737) | TAKMA',
-    seoDescription: 'Rolka ciągła 203 mm × 68 m z folii BOPP o satynowej powierzchni. Do Epson ColorWorks C6500Ae.',
+    seoDescription: "Etykiety ciągłe Epson BOPP Satin Gloss 203 mm × 68 m. PN C33S045737. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94219,7 +94409,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6500'],
     seoTitle: 'Etykiety Epson Premium Matte 210 × 297 mm, 200 szt. (C33S045738) | TAKMA',
-    seoDescription: 'Rolka 200 wykrojonych etykiet 210 × 297 mm z matowego papieru powlekanego. Największy format do Epson ColorWorks C6500.',
+    seoDescription: "Etykiety Epson Premium Matte 210 × 297 mm, 200 szt.. PN C33S045738. Do C6500 (Ae i Pe).",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94228,7 +94418,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     slug: 'epson-etykiety-ciagle-premium-matte-203mm-60m-c33s045739',
     name: 'Etykiety ciągłe Epson Premium Matte 203 mm × 60 m (C33S045739)',
     shortDescription: 'Rolka ciągła 203 mm × 60 m z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6500Ae.',
-    description: 'Sześćdziesiąt metrów matowego papieru o szerokości 203 mm, bez wykrojenia. Długość etykiety ustawiasz w projekcie, a gilotyna odcina każdą po wydruku, więc z jednej rolki robisz i krótkie naklejki, i etykiety wysyłkowe na pół metra. Papier jest powlekany pod tusz pigmentowy: kolory są nasycone, nadruk nie rozmazuje się od wody. Rolka do [ColorWorks C6500](/produkt/epson-colorworks-c6500) w wersji Ae — wersja Pe z odklejakiem pracuje na etykietach wykrojonych.',
+    description: "Sześćdziesiąt metrów matowego papieru o szerokości 203 mm, bez wykrojenia. Długość etykiety ustawiasz w projekcie, a gilotyna odcina każdą po wydruku, więc z jednej rolki robisz i krótkie naklejki, i etykiety wysyłkowe na pół metra. Papier jest powlekany do druku atramentowego. Dobierz tusz i warunki użytkowania do wymaganej odporności etykiety. Rolka do [ColorWorks C6500](/produkt/epson-colorworks-c6500) w wersji Ae — wersja Pe z odklejakiem pracuje na etykietach wykrojonych.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['etykiety-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94253,7 +94443,7 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c6500'],
     seoTitle: 'Etykiety ciągłe Epson Premium Matte 203 mm × 60 m (C33S045739) | TAKMA',
-    seoDescription: 'Rolka ciągła 203 mm × 60 m z matowego papieru powlekanego pod tusz pigmentowy. Do Epson ColorWorks C6500Ae.',
+    seoDescription: "Etykiety ciągłe Epson Premium Matte 203 mm × 60 m. PN C33S045739. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94261,18 +94451,10 @@ Gwarancja obejmuje **serwis u klienta**: technik przyjeżdża na miejsce, drukar
     id: 'epson-colorworks-c8000e',
     slug: 'epson-colorworks-c8000e',
     name: 'Epson ColorWorks C8000e',
-    shortDescription: 'Epson ColorWorks C8000e to najszybsza kolorowa drukarka etykiet Epsona: stała głowica liniowa PrecisionCore, do 300 mm/s przy 600 × 1200 dpi, worki z tuszem po 480 ml, rolki 8 cali, gilotyna, serwis u klienta.',
-    seoTitle: 'Epson ColorWorks C8000e – drukarka etykiet 300 mm/s | TAKMA',
-    seoDescription: 'Epson ColorWorks C8000e — drukarka etykiet kolorowych 300 mm/s, stała głowica liniowa, tusz 480 ml. Wersje bk i mk, tusze SJIC48P w TAKMA.',
-    description: `Dla kogo? ColorWorks C8000e to najszybsza kolorowa drukarka etykiet w ofercie Epsona i jedyna, która dorównuje tempem drukarkom jednokolorowym: **300 mm/s przy 600 × 1200 dpi**. Kupują ją zakłady, w których etykieta powstaje na linii, a nie obok niej — produkcja żywności i napojów, pakownie, magazyny z własną etykietą wysyłkową, wytwórcy oznaczeń GHS i etykiet energetycznych UE.
-
-Różnica wobec [C6000](/produkt/epson-colorworks-c6000) i [C6500](/produkt/epson-colorworks-c6500) jest w konstrukcji głowicy. Tamte modele mają głowicę, która przesuwa się nad etykietą; C8000e ma **stałą głowicę liniową** z 600 dyszami na kolor, która pokrywa całą szerokość druku naraz — stąd trzykrotnie wyższa prędkość przy tej samej szerokości 108 mm. Epson deklaruje, że żaden z głównych elementów głowicy nie wymaga wymiany przez co najmniej **500 km wydruku**, a technologia **NVT** sprawdza dysze i zastępuje brakujące krople sąsiednimi, więc pojedyncza zatkana dysza nie zostawia białej linii na etykiecie.
-
-Tusz nie jest we wkładach, tylko w **workach po 480 ml** — dziesięć razy większych niż wkłady w C6000. Przy druku zmianowym oznacza to znacznie rzadsze wymiany i niższy koszt wydruku. Drukarka pracuje na rolkach o średnicy do **8 cali**, przyjmuje nośniki od 25 do 112 mm i drukuje na papierze matowym, błyszczącym, folii i materiałach syntetycznych. Odstęp głowicy od nośnika jest regulowany, więc przejdą też grube materiały, jak zawieszki cenowe czy etykiety do roślin. Ładowanie papieru, wymiana tuszu i odbiór wydruku odbywają się z jednej strony, co ma znaczenie, gdy drukarka stoi w ciągu technologicznym.
-
-**Dwie wersje, jedna decyzja:** rodzaj czerni. **BK** (Black) jest pod papier błyszczący i półbłyszczący, **MK** (Matte Black) pod matowy i syntetyki. Kolorowe worki są wspólne, czarnego nie da się zamienić, więc wersję wybiera się przy zakupie. Gwarancja obejmuje serwis u klienta.
-
-Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik konserwacyjny SJMB7500 oraz [nośniki 4-calowe](/etykiety-do-kolorowych-drukarek) wspólne z C6000. Ta drukarka to zakup pod konkretny wolumen — napisz, ile etykiet dziennie drukujesz, a policzymy, czy zwraca się wobec C6000.`,
+    shortDescription: "Epson ColorWorks C8000e to przemysłowa drukarka kolorowych etykiet o szerokości nadruku do 108 mm. Osiąga do 300 mm/s przy 600 × 1200 dpi. Jest przeznaczona do regularnego drukowania zmiennych oznaczeń na stanowiskach produkcyjnych i pakowania.",
+    seoTitle: "Epson ColorWorks C8000e — etykiety 108 mm do 300 mm/s",
+    seoDescription: "Epson ColorWorks C8000e: kolorowy nadruk do 108 mm i 300 mm/s przy 600 × 1200 dpi. Worki SJIC48P po 480 ml, gilotyna. Sprawdź wersje bk/mk i PN.",
+    description: "Epson ColorWorks C8000e to przemysłowa drukarka kolorowych etykiet o szerokości nadruku do 108 mm. Osiąga do 300 mm/s przy 600 × 1200 dpi. Jest przeznaczona do regularnego drukowania zmiennych oznaczeń na stanowiskach produkcyjnych i pakowania.\n\n## Co wyróżnia C8000e?\n\nLiniowa głowica PrecisionCore drukuje w jednym przejściu na szerokości materiału. System NVT kontroluje dysze, a zastępowanie punktów pomaga ograniczyć błędy nadruku. Nie zastępuje to czyszczenia i konserwacji zgodnych z instrukcją.\n\nCztery worki SJIC48P mają po 480 ml tuszu pigmentowego. Większa pojemność ogranicza częstotliwość wymian, ale koszt jednej etykiety zależy także od pokrycia grafiką, czyszczenia i materiału. Nie wynika wyłącznie z pojemności worka.\n\n## Materiał i wersja czerni\n\nDrukarka przyjmuje zgodne rolki do 8 cali średnicy i materiał o szerokości 25–112 mm. Maksymalny obszar nadruku wynosi 108 mm. Gilotyna jest częścią urządzenia. Regulowany odstęp głowicy umożliwia dobór do obsługiwanych grubszych materiałów, np. przywieszek.\n\nWersja bk używa czerni Black do zgodnych powierzchni błyszczących i półbłyszczących. Wersja mk korzysta z Matte Black do materiałów matowych. Rodzaj czerni wybierz przy zamówieniu. Czarnych worków nie można zamieniać między tymi odmianami.\n\n## Integracja i wybór rodziny\n\nESC/Label i emulacja ZPL II ułatwiają wdrożenie, ale istniejący szablon wymaga sprawdzenia poleceń i próbnego wydruku. Zgodność gotowej etykiety z wymaganiami odporności zależy od całego zestawu materiałowego.\n\nDobierz [tusze SJIC48P](/tusze-do-kolorowych-drukarek) oraz [materiały do druku atramentowego](/etykiety-do-kolorowych-drukarek). Do szerokości 212 mm służy [C6500](/produkt/epson-colorworks-c6500). Jeśli potrzebujesz odklejaka przy szerokości 108 mm, porównaj [C6000 Pe](/produkt/epson-colorworks-c6000). Całą ofertę zestawia kategoria [kolorowych drukarek etykiet](/kolorowe-drukarki-etykiet).",
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['kolorowe-drukarki-etykiet'],
     manufacturerId: 'epson',
@@ -94321,29 +94503,91 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       'Czarny tusz': 'Black (bk) — czerń dobrana do papieru błyszczącego i półbłyszczącego.\n\nMatte Black (mk) — czerń dobrana do papieru matowego i materiałów syntetycznych; ostrzejszy tekst i kody kreskowe.\n\nKolorowe worki są wspólne, czarnego nie da się zamienić — wersję wybierasz przy zakupie drukarki.',
     },
     specifications: [
-      { name: 'Part Number', value: 'C31CL02102BK (bk) / C31CL02102MK (mk)' },
-      { name: 'Technologia druku', value: 'Atramentowa, stała głowica liniowa PrecisionCore, tusz pigmentowy (CMYK)' },
-      { name: 'Konfiguracja dysz', value: '600 dysz na każdy kolor' },
-      { name: 'Klasa urządzenia', value: 'Drukarka przemysłowa do kolorowych etykiet' },
-      { name: 'Rozdzielczość', value: 'do 600 × 1200 dpi' },
-      { name: 'Prędkość druku', value: 'do 300 mm/s (600 × 1200 dpi)' },
-      { name: 'Szerokość druku', value: 'max. 108 mm (od 25 mm)' },
-      { name: 'Szerokość nośnika', value: '25–112 mm' },
-      { name: 'Nośniki', value: 'Rolki o średnicy zewnętrznej do 8 cali; etykiety ciągłe, wykrojone i z czarnym znacznikiem, papier matowy i błyszczący, folia, materiały syntetyczne' },
-      { name: 'Odstęp głowicy', value: 'Regulowany — przyjmuje grube nośniki, np. zawieszki cenowe' },
-      { name: 'Gilotyna', value: 'W zestawie' },
-      { name: 'Wkłady', value: '4 worki z tuszem SJIC48P po 480 ml (BK albo MK + C, M, Y)' },
-      { name: 'Pojemnik konserwacyjny', value: 'SJMB7500 (wspólny z ColorWorks C7500 i C7500G)' },
-      { name: 'Trwałość głowicy', value: 'Bez wymiany głównych elementów przez co najmniej 500 km wydruku (dane producenta)' },
-      { name: 'Kontrola dysz', value: 'Nozzle Verification Technology (NVT) z zastępowaniem kropel' },
-      { name: 'Język poleceń', value: 'ESC/Label, emulacja ZPL II' },
-      { name: 'Zasilanie', value: 'Wbudowane, 100–240 V, 50/60 Hz' },
-      { name: 'Pobór mocy', value: 'Druk ok. 83 W, czuwanie ok. 3 W' },
-      { name: 'Warunki pracy', value: '5–35 °C, 20–80% wilgotności względnej' },
-      { name: 'Wymiary (S×G×W)', value: '620 × 392 × 420 mm' },
-      { name: 'Waga', value: '35 kg' },
-      { name: 'Gwarancja', value: '12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus' },
-    ],
+  {
+    "name": "Part Number",
+    "value": "C31CL02102BK (bk) / C31CL02102MK (mk)"
+  },
+  {
+    "name": "Technologia druku",
+    "value": "Atramentowa, stała głowica liniowa PrecisionCore, tusz pigmentowy (CMYK)"
+  },
+  {
+    "name": "Konfiguracja dysz",
+    "value": "600 dysz na każdy kolor"
+  },
+  {
+    "name": "Klasa urządzenia",
+    "value": "Drukarka przemysłowa do kolorowych etykiet"
+  },
+  {
+    "name": "Rozdzielczość",
+    "value": "do 600 × 1200 dpi"
+  },
+  {
+    "name": "Prędkość druku",
+    "value": "do 300 mm/s (600 × 1200 dpi)"
+  },
+  {
+    "name": "Szerokość druku",
+    "value": "max. 108 mm (od 25 mm)"
+  },
+  {
+    "name": "Szerokość nośnika",
+    "value": "25–112 mm"
+  },
+  {
+    "name": "Nośniki",
+    "value": "Rolki o średnicy zewnętrznej do 8 cali; etykiety ciągłe, wykrojone i z czarnym znacznikiem, papier matowy i błyszczący, folia, materiały syntetyczne"
+  },
+  {
+    "name": "Odstęp głowicy",
+    "value": "Regulowany — przyjmuje grube nośniki, np. zawieszki cenowe"
+  },
+  {
+    "name": "Gilotyna",
+    "value": "W zestawie"
+  },
+  {
+    "name": "Wkłady",
+    "value": "4 worki z tuszem SJIC48P po 480 ml (BK albo MK + C, M, Y)"
+  },
+  {
+    "name": "Pojemnik konserwacyjny",
+    "value": "SJMB7500 (wspólny z ColorWorks C7500 i C7500G)"
+  },
+  {
+    "name": "Kontrola dysz",
+    "value": "Nozzle Verification Technology (NVT) z zastępowaniem kropel"
+  },
+  {
+    "name": "Język poleceń",
+    "value": "ESC/Label, emulacja ZPL II"
+  },
+  {
+    "name": "Zasilanie",
+    "value": "Wbudowane, 100–240 V, 50/60 Hz"
+  },
+  {
+    "name": "Pobór mocy",
+    "value": "Druk ok. 83 W, czuwanie ok. 3 W"
+  },
+  {
+    "name": "Warunki pracy",
+    "value": "5–35 °C, 20–80% wilgotności względnej"
+  },
+  {
+    "name": "Wymiary (S×G×W)",
+    "value": "620 × 392 × 420 mm"
+  },
+  {
+    "name": "Waga",
+    "value": "35 kg"
+  },
+  {
+    "name": "Gwarancja",
+    "value": "12 miesięcy z serwisem u klienta; opcjonalnie Epson CoverPlus"
+  }
+],
     applications: [
       'Etykietowanie na linii produkcyjnej',
       'Etykiety do żywności i napojów w dużych seriach',
@@ -94401,31 +94645,19 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
       ],
     },
     faq: [
-      {
-        question: 'Skąd bierze się prędkość 300 mm/s?',
-        answer: 'Ze stałej głowicy liniowej. W C6000 i C6500 głowica przesuwa się nad etykietą, więc każdy przejazd zabiera czas. C8000e ma głowicę na całą szerokość druku: nośnik przesuwa się pod nią, a drukarka nakłada wszystkie krople naraz. Przy tej samej szerokości 108 mm daje to około trzykrotnie wyższą prędkość niż w C6000.',
-      },
-      {
-        question: 'Czy C8000e drukuje szersze etykiety niż C6000?',
-        answer: 'Nie, obie kończą się na 108 mm szerokości druku i nośniku do 112 mm. C8000e wygrywa prędkością i pojemnością tuszu, nie formatem. Jeśli potrzebujesz etykiety szerszej niż 108 mm, właściwym modelem jest C6500 z pasem druku 212 mm.',
-      },
-      {
-        question: 'Czym różnią się wersje bk i mk?',
-        answer: 'Rodzajem czarnego tuszu. BK to Black pod papier błyszczący i półbłyszczący, MK to Matte Black pod papier matowy i materiały syntetyczne, gdzie daje ostrzejszy tekst i kody. Kolorowe worki są wspólne, czarnego nie da się zamienić, więc wersję wybiera się przy zakupie pod nośnik, na którym będziesz drukować.',
-      },
-      {
-        question: 'Czy tusze z C6000 pasują do C8000e?',
-        answer: 'Nie. C8000e pracuje na workach SJIC48P po 480 ml, a C6000 i C6500 na wkładach SJIC36P po 80 ml. Różni się też pojemnik konserwacyjny: C8000e ma SJMB7500, wspólny ze starszymi C7500 i C7500G. Wspólne są za to nośniki — C8000e przyjmuje te same rolki 4-calowe co C6000.',
-      },
-      {
-        question: 'Co daje technologia NVT?',
-        answer: 'NVT (Nozzle Verification Technology) sprawdza dysze i gdy któraś przestaje podawać tusz, zastępuje jej krople sąsiednimi — maksymalnie za 16 dysz. Bez tego pojedyncza zatkana dysza zostawia jasną linię wzdłuż całej etykiety, co przy stałej głowicy liniowej jest większym problemem niż w modelach z głowicą przesuwną: głowica stoi w miejscu, więc błąd powtarza się w tym samym punkcie na każdym wydruku. Drukarka sprawdza dysze po włączeniu, po zacięciu i przy czyszczeniu okresowym, ale **kontrola w trakcie drukowania jest fabrycznie wyłączona** — przy pracy na długich seriach warto ją włączyć i ustawić interwał (od 1 do 25 000 wydruków). Jak to zrobić, opisujemy w [instrukcji po polsku](/instrukcje/epson-colorworks-c8000e/instrukcja-po-polsku).',
-      },
-      {
-        question: 'Kiedy C8000e zwraca się wobec C6000?',
-        answer: 'Przy wolumenie. C8000e kosztuje około trzech razy więcej niż C6000, ale drukuje trzy razy szybciej i ma dziesięć razy większe zbiorniki tuszu, więc niższy koszt wydruku i mniej przestojów. Granica opłacalności zależy od dziennej liczby etykiet i od tego, ile kosztuje przestój linii — policzymy to na Twoich liczbach, jeśli podasz nakład.',
-      },
-    ],
+  {
+    "question": "Do czego służy Epson ColorWorks C8000e?",
+    "answer": "Epson ColorWorks C8000e to przemysłowa drukarka kolorowych etykiet o szerokości nadruku do 108 mm. Osiąga do 300 mm/s przy 600 × 1200 dpi. Jest przeznaczona do regularnego drukowania zmiennych oznaczeń na stanowiskach produkcyjnych i pakowania."
+  },
+  {
+    "question": "Jak wybrać wersję bk lub mk?",
+    "answer": "Wybierz bk do zgodnych materiałów błyszczących i półbłyszczących, a mk do matowych. Czarny atrament nie jest zamienny między tymi odmianami."
+  },
+  {
+    "question": "Czy dowolna etykieta nadaje się do tej drukarki?",
+    "answer": "Nie. Materiał musi być przeznaczony do druku atramentowego i pasować wymiarami do konkretnej konfiguracji. Odporność zależy od materiału, kleju i tuszu."
+  }
+],
     downloads: [
       { name: 'Karta katalogowa Epson ColorWorks C8000e MK (PL)', type: 'datasheet', url: '/downloads/epson-colorworks-c8000e-karta-katalogowa-pl.pdf', size: '1,3 MB' },
     ],
@@ -94438,14 +94670,14 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     sameAs: 'https://www.epson.pl/pl_PL/produkty/drukarki/kolorowa-drukarka-etykiet/colorworks-cw-c8000e-series/p/46707',
     sectionOrder: 'faq-last',
     createdAt: '2026-09-20',
-    updatedAt: '2026-09-20',
+    updatedAt: "2026-10-21",
   },
   {
     id: 'epson-sjic48p-bk',
     slug: 'epson-tusz-sjic48p-bk-czarny-c13t55p140',
     name: 'Tusz Epson SJIC48P-BK czarny (Black) do ColorWorks C8000e (C13T55P140)',
     shortDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-BK, czarny (Black), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
-    description: 'Worek z tuszem SJIC48P-BK (oznaczenie T55P1) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Czerń Black jest dobrana do papieru błyszczącego i półbłyszczącego. W drukarce w wersji mk ten worek nie zadziała. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie i nie blaknie. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.',
+    description: "Worek z tuszem SJIC48P-BK (oznaczenie T55P1) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Czerń Black jest dobrana do papieru błyszczącego i półbłyszczącego. W drukarce w wersji mk ten worek nie zadziała. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94470,7 +94702,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Tusz Epson SJIC48P-BK czarny (Black) do ColorWorks C8000e (C13T55P140) | TAKMA',
-    seoDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-BK, czarny (Black), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
+    seoDescription: "Tusz Epson SJIC48P-BK czarny (Black) do ColorWorks C8000e. PN C13T55P140. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94479,7 +94711,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     slug: 'epson-tusz-sjic48p-mk-czarny-matowy-c13t55p540',
     name: 'Tusz Epson SJIC48P-MK czarny matowy (Matte Black) do ColorWorks C8000e (C13T55P540)',
     shortDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-MK, czarny matowy (Matte Black), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
-    description: 'Worek z tuszem SJIC48P-MK (oznaczenie T55P5) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Czerń Matte Black jest dobrana do papieru matowego i materiałów syntetycznych; daje ostrzejszy tekst i kody kreskowe. W drukarce w wersji bk ten worek nie zadziała. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie i nie blaknie. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.',
+    description: "Worek z tuszem SJIC48P-MK (oznaczenie T55P5) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Czerń Matte Black jest dobrana do papieru matowego i materiałów syntetycznych; daje ostrzejszy tekst i kody kreskowe. W drukarce w wersji bk ten worek nie zadziała. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94504,7 +94736,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Tusz Epson SJIC48P-MK czarny matowy (Matte Black) do ColorWorks C8000e (C13T55P540) | TAKMA',
-    seoDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-MK, czarny matowy (Matte Black), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
+    seoDescription: "Tusz Epson SJIC48P-MK czarny matowy (Matte Black) do ColorWorks C8000e. PN C13T55P540. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94513,7 +94745,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     slug: 'epson-tusz-sjic48p-c-cyan-c13t55p240',
     name: 'Tusz Epson SJIC48P-C cyan (błękitny) do ColorWorks C8000e (C13T55P240)',
     shortDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-C, cyan (błękitny), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
-    description: 'Worek z tuszem SJIC48P-C (oznaczenie T55P2) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie i nie blaknie. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.',
+    description: "Worek z tuszem SJIC48P-C (oznaczenie T55P2) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94538,7 +94770,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Tusz Epson SJIC48P-C cyan (błękitny) do ColorWorks C8000e (C13T55P240) | TAKMA',
-    seoDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-C, cyan (błękitny), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
+    seoDescription: "Tusz Epson SJIC48P-C cyan (błękitny) do ColorWorks C8000e. PN C13T55P240. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94547,7 +94779,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     slug: 'epson-tusz-sjic48p-m-magenta-c13t55p340',
     name: 'Tusz Epson SJIC48P-M magenta (purpurowy) do ColorWorks C8000e (C13T55P340)',
     shortDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-M, magenta (purpurowy), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
-    description: 'Worek z tuszem SJIC48P-M (oznaczenie T55P3) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie i nie blaknie. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.',
+    description: "Worek z tuszem SJIC48P-M (oznaczenie T55P3) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94572,7 +94804,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Tusz Epson SJIC48P-M magenta (purpurowy) do ColorWorks C8000e (C13T55P340) | TAKMA',
-    seoDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-M, magenta (purpurowy), 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
+    seoDescription: "Tusz Epson SJIC48P-M magenta (purpurowy) do ColorWorks C8000e. PN C13T55P340. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94581,7 +94813,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     slug: 'epson-tusz-sjic48p-y-zolty-c13t55p440',
     name: 'Tusz Epson SJIC48P-Y żółty do ColorWorks C8000e (C13T55P440)',
     shortDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-Y, żółty, 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
-    description: 'Worek z tuszem SJIC48P-Y (oznaczenie T55P4) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz jest pigmentowy: po wyschnięciu nie rozmazuje się od wody, znosi tarcie i nie blaknie. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.',
+    description: "Worek z tuszem SJIC48P-Y (oznaczenie T55P4) zasila [ColorWorks C8000e](/produkt/epson-colorworks-c8000e). Worek wspólny dla obu wersji drukarki, bk i mk. Zamiast sztywnego wkładu Epson stosuje tu **worek o pojemności 480 ml** — dziesięć razy większy niż wkłady w modelach C6000 i C6500, więc przy druku zmianowym wymiana zdarza się znacznie rzadziej, a koszt wydruku spada. Tusz pigmentowy stosuj z dobranym materiałem atramentowym. Odporność gotowej etykiety zależy także od powłoki, kleju i warunków użytkowania. Worki SJIC48P pasują wyłącznie do C8000e — pozostałe modele ColorWorks mają własne rodziny wkładów.",
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tusze-do-kolorowych-drukarek'],
     manufacturerId: 'epson',
@@ -94606,7 +94838,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Tusz Epson SJIC48P-Y żółty do ColorWorks C8000e (C13T55P440) | TAKMA',
-    seoDescription: 'Oryginalny worek z tuszem pigmentowym Epson SJIC48P-Y, żółty, 480 ml. Do przemysłowej drukarki etykiet ColorWorks C8000e.',
+    seoDescription: "Tusz Epson SJIC48P-Y żółty do ColorWorks C8000e. PN C13T55P440. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -94637,7 +94869,7 @@ Do C8000e pasują [worki SJIC48P](/tusze-do-kolorowych-drukarek) i pojemnik kons
     compatibleAccessories: [],
     relatedProducts: ['epson-colorworks-c8000e'],
     seoTitle: 'Pojemnik konserwacyjny Epson SJMB7500 C33S020596 | TAKMA',
-    seoDescription: 'Oryginalny pojemnik na zużyty tusz Epson SJMB7500 do ColorWorks C7500, C7500G i C8000e. Wymiana bez serwisu, wysyłka z TAKMA.',
+    seoDescription: "Pojemnik konserwacyjny Epson SJMB7500 do ColorWorks C7500 i C8000e. PN C33S020596. Do C8000e, C7500, C7500G.",
     downloads: [],
     createdAt: '2026-09-20',
   },
@@ -95994,8 +96226,8 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "cipherlab",
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne CipherLab",
-  "seoTitle": "Terminale CipherLab — kolektory Android, ceny i stany",
-  "seoDescription": "Terminale CipherLab RS20, RS36, RS38, RS38H, RK26 i RK96. Porównaj PN, skanery, klawiatury, łączność oraz ceny. Zgodne akcesoria i dokumenty PDF.",
+  "seoTitle": "Terminale CipherLab — porównaj kolektory RS i RK",
+  "seoDescription": "Terminale CipherLab do sklepu i magazynu: dotykowe RS, klawiaturowe RK i Cold Storage do mroźni. Porównaj skanery, LTE/5G, warianty PN i ceny.",
   "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele dotykowe RS z terminalami klawiaturowymi RK. Wersję skanera i wyposażenie wybierz według PN.",
 
   "faq": [
@@ -96024,27 +96256,27 @@ export const brandCategories: BrandCategory[] = [
   "categoryId": "drukarki-etykiet",
   "name": "Drukarki etykiet BIXOLON",
   "seoTitle": "Drukarki etykiet BIXOLON — biurkowe, przemysłowe i mobilne",
-  "seoDescription": "Drukarki etykiet BIXOLON: biurkowe XD3 i XD5, przemysłowe XT3 i XT5 oraz mobilne XM7 i SPP-L. Porównaj PN, ceny, dostępność i zgodne akcesoria.",
+  "seoDescription": "Drukarki etykiet BIXOLON: biurkowe XD, przemysłowe XT, mobilne XM7 i SPP-L oraz wersje RFID. Porównaj technologię druku, warianty PN i ceny.",
   "longDescription": "Drukarki etykiet BIXOLON do wysyłek, oznaczania produktów i pracy na produkcji. Porównaj modele biurkowe, przemysłowe i mobilne, druk termiczny, termotransferowy oraz linerless.",
-  "detailedDescription": "Do etykiet termoczułych bez taśmy wybierz [XD3-40d](/produkt/bixolon-xd3-40d) lub nowszą [XD5-40IId](/produkt/bixolon-xd5-40iid). Jeśli materiał wymaga taśmy barwiącej, porównaj [XD3-40t](/produkt/bixolon-xd3-40t) i [XD5-40IIt](/produkt/bixolon-xd5-40iit). Pierwsza generacja XD5 i generacja II mają osobne konfiguracje PN.\n\nDo większych rolek i taśm 450 m służą przemysłowe [XT3-40](/produkt/bixolon-xt3-40) i [XT5-40](/produkt/bixolon-xt5-40). XT5 oferuje także wariant 600 dpi. Dla wąskich etykiet porównaj termiczną [SLP-DX220](/produkt/bixolon-slp-dx220) i termotransferową [SLP-TX220](/produkt/bixolon-slp-tx220).\n\n[SLP-DL410](/produkt/bixolon-slp-dl410) podaje etykiety z zewnątrz obudowy. [XL5-40CT](/produkt/bixolon-xl5-40ct) wymaga zgodnego materiału bez podkładu. [XQ-840II](/produkt/bixolon-xq-840ii) ma tablet z Androidem i potrzebuje skonfigurowanej aplikacji. Te rodzaje stanowisk mają inne wymagania dotyczące materiału i oprogramowania.\n\nDo etykietowania przy towarze wybierz format mobilny: [XM7-20](/produkt/bixolon-xm7-20) drukuje do 48 mm, [XM7-30](/produkt/bixolon-xm7-30) do 72 mm, a [XM7-40](/produkt/bixolon-xm7-40) do 104 mm. [SPP-L310](/produkt/bixolon-spp-l310) ma małą obudowę i rolkę do 49 mm. [SPP-L3000](/produkt/bixolon-spp-l3000) mieści rolkę do 66 mm, a [SPP-L410](/produkt/bixolon-spp-l410) obsługuje szeroki nadruk do 104 mm. Bluetooth, Wi-Fi i obsługa linerless zależą od PN.\n\nDo kodowania znaczników UHF przejdź do [XD5-40tR](/produkt/bixolon-xd5-40tr) lub [XT5-40NR](/produkt/bixolon-xt5-40nr). Standardowe konfiguracje bez kodera nie kodują RFID. Porównaj również całą kategorię [drukarek RFID](/drukarki-rfid).",
+  "detailedDescription": "Do etykiet termicznych bez taśmy porównaj [XD3-40d](/produkt/bixolon-xd3-40d) i [XD5-40IId](/produkt/bixolon-xd5-40iid). Do materiału wymagającego taśmy barwiącej służą [XD3-40t](/produkt/bixolon-xd3-40t) i [XD5-40IIt](/produkt/bixolon-xd5-40iit). Dopasuj technologię do trwałości i powierzchni etykiety.\n\nPierwsza generacja XD5 i generacja II mają osobne konfiguracje PN. Nie przenoś między nimi portów ani zgodności akcesoriów. Do pracy przemysłowej i taśm 450 m porównaj [XT3-40](/produkt/bixolon-xt3-40) oraz [XT5-40](/produkt/bixolon-xt5-40); XT5 oferuje także wersję 600 dpi.\n\nDo wąskich etykiet służą [SLP-DX220](/produkt/bixolon-slp-dx220) bez taśmy i [SLP-TX220](/produkt/bixolon-slp-tx220) z taśmą. [SLP-DL410](/produkt/bixolon-slp-dl410) podaje materiał spoza obudowy. [XL5-40CT](/produkt/bixolon-xl5-40ct) wymaga zgodnych etykiet linerless. [XQ-840II](/produkt/bixolon-xq-840ii) ma tablet Android do skonfigurowanej aplikacji etykietującej.\n\nPrzy pracy mobilnej wybierz szerokość nadruku: [XM7-20](/produkt/bixolon-xm7-20) do 48 mm, [XM7-30](/produkt/bixolon-xm7-30) do 72 mm lub [XM7-40](/produkt/bixolon-xm7-40) do 104 mm. Porównaj także [SPP-L310](/produkt/bixolon-spp-l310), [SPP-L3000](/produkt/bixolon-spp-l3000) i [SPP-L410](/produkt/bixolon-spp-l410). Średnica rolki, łączność i obsługa kleju zależą od rodziny oraz PN. Do dokumentów na zwykłym papierze termicznym przejdź do [mobilnych drukarek paragonów](/mobilne-drukarki-paragonow).\n\nKodowanie UHF wymaga osobnego kodera. Wybierz [XD5-40tR RFID](/produkt/bixolon-xd5-40tr) lub [XT5-40NR RFID](/produkt/bixolon-xt5-40nr), zamiast standardowej konfiguracji bez kodera. Całą ofertę porównuje kategoria [drukarki RFID](/drukarki-rfid).",
   "faq": [
-    {
-      "question": "Czym różnią się drukarki BIXOLON z końcówką d i t?",
-      "answer": "W rodzinach XD3 i XD5 litera d oznacza druk termiczny bezpośredni. Wersja t obsługuje druk termotransferowy z taśmą oraz termiczny bezpośredni."
-    },
-    {
-      "question": "Która drukarka BIXOLON obsługuje rolkę przemysłową?",
-      "answer": "XT3-40 i XT5-40 obsługują wewnętrzną rolkę do 203 mm oraz taśmę do 450 m. Szerokość materiału i rozdzielczość dobierz do konkretnego PN."
-    },
-    {
-      "question": "Czy każda drukarka BIXOLON ma Wi-Fi lub Bluetooth?",
-      "answer": "Nie. Interfejsy zależą od PN. Porównaj tabelę wariantów; sam przewód nie dodaje łączności bezprzewodowej."
-    },
-    {
-      "question": "Czy do XL5-40CT pasują wszystkie etykiety samoprzylepne?",
-      "answer": "Nie. Ta rodzina wymaga zgodnego materiału linerless. Dobierz klej, szerokość i sposób cięcia do drukarki."
-    }
-  ]
+  {
+    "question": "Czym różnią się drukarki termiczne i termotransferowe BIXOLON?",
+    "answer": "Termiczne używają papieru reagującego na ciepło, bez taśmy barwiącej. Termotransferowe przenoszą barwnik z taśmy na dobrany materiał. Trwałość zależy od etykiety, taśmy i warunków użytkowania."
+  },
+  {
+    "question": "Czy XD5 i XD5 II mają te same konfiguracje?",
+    "answer": "Nie. To osobne generacje z odrębnymi PN. Sprawdź porty, rozdzielczość, wyposażenie i zgodność akcesoriów dla wybranej generacji."
+  },
+  {
+    "question": "Który BIXOLON koduje etykiety UHF RFID?",
+    "answer": "W ofercie są biurkowy XD5-40tR i przemysłowy XT5-40NR. Standardowe konfiguracje bez kodera nie kodują znaczników RFID."
+  },
+  {
+    "question": "Czy drukarka mobilna do paragonów zastąpi model etykietowy?",
+    "answer": "Nie zakładaj takiej zamienności. Oprócz szerokości materiału sprawdź czujniki, obsługę podkładu lub kleju oraz polecenia aplikacji dla konkretnego PN."
+  }
+]
 },
   {
   "id": "tablety-przemyslowe-brady",

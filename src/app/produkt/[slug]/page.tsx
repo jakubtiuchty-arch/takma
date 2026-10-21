@@ -790,7 +790,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // więc przy okazji znikał także schemat pytań — na czternastu kartach z sekcją `faq`,
   // między innymi całej serii Epson ColorWorks i drukarkach kart Zebry. FAQPage to osobny typ
   // i nie koliduje z niczym, co renderuje LiveProductSchema.
-  const faqJsonLd = !bixolonLabelProduct && !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
+  const faqJsonLd = !(product.manufacturerId === 'epson' && product.categoryId === 'drukarki-etykiet') && !bixolonLabelProduct && !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({
