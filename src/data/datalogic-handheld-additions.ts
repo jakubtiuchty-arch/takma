@@ -1325,7 +1325,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PBT9100 — skaner 1D Bluetooth | TAKMA",
     "seoDescription": "Datalogic PowerScan PBT9100: skaner 1D Bluetooth. Liniowy PowerScan z transmisją Bluetooth. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Datalogic PowerScan PBT9100 to bezprzewodowy skaner przemysłowy 1D z Bluetooth 3.0. Pozwala odczytywać kody przy towarze, bez przewodu do komputera.",
-    "description": "Datalogic PowerScan PBT9100 to bezprzewodowy skaner przemysłowy 1D z Bluetooth 3.0. Pozwala odczytywać kody przy towarze, bez przewodu do komputera.\n\n## Odczyt i zastosowanie\n\nBluetooth obsługuje profile HID i SPP. Nominalny zasięg klasy 1 wynosi do 100 m w otwartej przestrzeni. Wymienny akumulator Li-Ion ma 3350 mAh. Typowe ładowanie przy zewnętrznym zasilaniu trwa 4,5 godziny. Green Spot i diody pomagają potwierdzić odczyt na hali.\n\n## Wybierz zawartość zestawu\n\n**PBT9100-RB**: Sam czytnik — bez przewodu i bazy.\n\n**PBT9100-RBK10EU**: Czytnik, BC9030-BT, CAB-438, 8-0935, przewód EU.\n\nSam czytnik wymaga zgodnej bazy lub odpowiednio skonfigurowanego połączenia z hostem. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nPBT9100 odczytuje kody 1D. Nie obsługuje QR ani systemu STAR 433 MHz. Do kodów 2D przez Bluetooth wybierz PBT9600. Porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Liniowy PowerScan z transmisją Bluetooth\n\nPBT9100 przesyła odczytane kody 1D przez Bluetooth 3.0. To osobne rozwiązanie od PM9100 STAR. Jeśli towary mają również QR, porównaj PBT9600 z odczytem 2D.",
+    "description": "Datalogic PowerScan PBT9100 to bezprzewodowy skaner przemysłowy 1D z Bluetooth 3.0. Pozwala odczytywać kody przy towarze, bez przewodu do komputera.\n\n## Odczyt i zastosowanie\n\nBluetooth obsługuje profile HID i SPP. Nominalny zasięg klasy 1 wynosi do 100 m w otwartej przestrzeni. Wymienny akumulator Li-Ion ma 3350 mAh. Typowe ładowanie przy zewnętrznym zasilaniu trwa 4,5 godziny. Green Spot i diody pomagają potwierdzić odczyt na hali.\n\n## Wybierz zawartość zestawu\n\n**PBT9100-RB**: Sam czytnik — bez przewodu i bazy.\n\n**PBT9100-RBK10EU**: Czytnik, BC9030-BT, CAB-438, 8-0935, przewód EU.\n\nSam czytnik PBT9100-RB łączy się z hostem przez Bluetooth albo przez bazę. Akumulator ładuje się w bazie [BC9030-BT](/produkt/datalogic-handheld-bc9030-bt). Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nPBT9100 odczytuje kody 1D. Nie obsługuje QR ani systemu STAR 433 MHz. Do kodów 2D przez Bluetooth wybierz PBT9600. Porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Liniowy PowerScan z transmisją Bluetooth\n\nPBT9100 przesyła odczytane kody 1D przez Bluetooth 3.0. To osobne rozwiązanie od PM9100 STAR. Jeśli towary mają również QR, porównaj PBT9600 z odczytem 2D.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1446,7 +1446,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PM9100 — skaner 1D STAR 433 MHz | TAKMA",
     "seoDescription": "Datalogic PowerScan PM9100: skaner 1D STAR 433 MHz. PowerScan 1D do europejskiego systemu STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Datalogic PowerScan PM9100 to skaner przemysłowy 1D z radiem STAR 433 MHz. Oferowane wersje RB mają wymienny akumulator i pracują ze zgodną bazą.",
-    "description": "Datalogic PowerScan PM9100 to skaner przemysłowy 1D z radiem STAR 433 MHz. Oferowane wersje RB mają wymienny akumulator i pracują ze zgodną bazą.\n\n## Odczyt i zastosowanie\n\nZasięg w otwartej przestrzeni wynosi do 50 m przy 500 kb/s lub do 100 m przy 19,2 kb/s. Odbiornik obsługuje do 16 czytników. Akumulator Li-Ion ma 3350 mAh. Zielona linia odczytu i Green Spot pomagają w pracy z etykietami 1D.\n\n## Wybierz zawartość zestawu\n\n**PM9100-433RB**: Sam czytnik, bez przewodu.\n\n**PM9100-433RBK10**: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU.\n\nSam czytnik wymaga zgodnej bazy lub odpowiednio skonfigurowanego połączenia z hostem. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOferowane PN nie zawierają wyświetlacza ani klawiatury. Są to wersje STAR 433 MHz, nie Bluetooth ani 910 MHz. Do kodów 2D porównaj PM9600. Porównaj [PowerScan PM9600](/produkt/datalogic-powerscan-pm9600). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## PowerScan 1D do europejskiego systemu STAR\n\nPM9100 jest czytnikiem liniowym z radiem STAR 433 MHz. Dobierz bazę do pasma oferowanego PN. PM9600 służy do odczytu 1D i 2D, a PBT9100 korzysta z Bluetooth.",
+    "description": "Datalogic PowerScan PM9100 to skaner przemysłowy 1D z radiem STAR 433 MHz. Oferowane wersje RB mają wymienny akumulator i pracują ze zgodną bazą.\n\n## Odczyt i zastosowanie\n\nZasięg w otwartej przestrzeni wynosi do 50 m przy 500 kb/s lub do 100 m przy 19,2 kb/s. Odbiornik obsługuje do 16 czytników. Akumulator Li-Ion ma 3350 mAh. Zielona linia odczytu i Green Spot pomagają w pracy z etykietami 1D.\n\n## Wybierz zawartość zestawu\n\n**PM9100-433RB**: Sam czytnik, bez przewodu.\n\n**PM9100-433RBK10**: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU.\n\nSam czytnik PM9100-433RB wymaga odbiornika STAR 433 MHz: bazy [BC9030-433](/produkt/datalogic-handheld-bc9030-433). Bez odbiornika czytnik nie przesyła danych. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOferowane PN nie zawierają wyświetlacza ani klawiatury. Są to wersje STAR 433 MHz, nie Bluetooth ani 910 MHz. Do kodów 2D porównaj PM9600. Porównaj [PowerScan PM9600](/produkt/datalogic-powerscan-pm9600). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## PowerScan 1D do europejskiego systemu STAR\n\nPM9100 jest czytnikiem liniowym z radiem STAR 433 MHz. Dobierz bazę do pasma oferowanego PN. PM9600 służy do odczytu 1D i 2D, a PBT9100 korzysta z Bluetooth.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1567,7 +1567,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PD9531 DPM Evo — przewodowy skaner DPM | TAKMA",
     "seoDescription": "Datalogic PowerScan PD9531 DPM Evo: przewodowy skaner DPM. Oznaczenia na częściach przy stałym stanowisku. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner 1D i 2D do oznaczeń bezpośrednio na częściach. Obsługuje między innymi Data Matrix.",
-    "description": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner 1D i 2D do oznaczeń bezpośrednio na częściach. Obsługuje między innymi Data Matrix.\n\n## Odczyt i zastosowanie\n\nOptyka DPM służy do kodów wykonanych laserem, trawieniem, drukiem atramentowym i metodą mikroudarową. Białe światło oświetla kod, a celownik wskazuje obszar odczytu. Green Spot i dwie diody potwierdzają wynik. Czytnik odczytuje również standardowe kody na papierowych etykietach.\n\n## Wybierz zawartość zestawu\n\n**PD9531-DPM**: Sam czytnik, bez przewodu.\n\n**PD9531-DPMK1**: Czytnik, przewód USB CAB-550.\n\nDobierz przewód do portu komputera lub kasy. Zmiana interfejsu może wymagać konfiguracji czytnika i osobnego przewodu.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nDPM wymaga doboru do materiału, powierzchni i technologii znakowania. Zakres dla papierowej etykiety nie wyznacza zakresu dla kodu na metalu. Przed doborem przetestuj własne oznaczenia. Porównaj [PowerScan PD9630](/produkt/datalogic-powerscan-pd9630). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Oznaczenia na częściach przy stałym stanowisku\n\nPD9531 DPM Evo służy do odczytu oznaczeń naniesionych bezpośrednio na częściach. Pracuje przewodowo. DPM wymaga doboru do materiału i sposobu znakowania; sam odczyt 2D z etykiet nie potwierdza obsługi DPM. Porównaj [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm).",
+    "description": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner 1D i 2D do oznaczeń bezpośrednio na częściach. Obsługuje między innymi Data Matrix.\n\n## Odczyt i zastosowanie\n\nOptyka DPM służy do kodów wykonanych laserem, trawieniem chemicznym i drukiem atramentowym. Kody Data Matrix odczytuje także po znakowaniu mikroudarowym (dot peen). Białe światło oświetla kod, a celownik wskazuje obszar odczytu. Green Spot i dwie diody potwierdzają wynik. Czytnik odczytuje również standardowe kody na papierowych etykietach.\n\n## Wybierz zawartość zestawu\n\n**PD9531-DPM**: Sam czytnik, bez przewodu.\n\n**PD9531-DPMK1**: Czytnik, przewód USB CAB-550.\n\nDobierz przewód do portu komputera lub kasy. Zmiana interfejsu może wymagać konfiguracji czytnika i osobnego przewodu.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nDPM wymaga doboru do materiału, powierzchni i technologii znakowania. Zakres dla papierowej etykiety nie wyznacza zakresu dla kodu na metalu. Przed doborem przetestuj własne oznaczenia. Porównaj [PowerScan PD9630](/produkt/datalogic-powerscan-pd9630). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Oznaczenia na częściach przy stałym stanowisku\n\nPD9531 DPM Evo służy do odczytu oznaczeń naniesionych bezpośrednio na częściach. Pracuje przewodowo. DPM wymaga doboru do materiału i sposobu znakowania; sam odczyt 2D z etykiet nie potwierdza obsługi DPM. Porównaj [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1601,7 +1601,7 @@ export const datalogicAdditionalScanners: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB / RS-232 / KBW / RS-485"
+        "value": "USB / RS-232 / KBW"
       },
       {
         "name": "Klasa ochrony",
@@ -1644,9 +1644,7 @@ export const datalogicAdditionalScanners: Product[] = [
       "przewodowy odczyt oznaczeń bezpośrednio na częściach"
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [
-      "datalogic-handheld-cab-524"
-    ],
+    "relatedAccessories": [],
     "relatedProducts": [
       "datalogic-powerscan-pd9630"
     ],
@@ -1679,7 +1677,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PBT9501 DPM Evo — skaner DPM Bluetooth | TAKMA",
     "seoDescription": "Datalogic PowerScan PBT9501 DPM Evo: skaner DPM Bluetooth. Bluetooth podczas kontroli oznaczeń DPM. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Datalogic PowerScan PBT9501 DPM Evo to skaner DPM z Bluetooth 3.0. Ułatwia odczyt kodów z części, których nie można przenieść pod skaner stanowiskowy.",
-    "description": "Datalogic PowerScan PBT9501 DPM Evo to skaner DPM z Bluetooth 3.0. Ułatwia odczyt kodów z części, których nie można przenieść pod skaner stanowiskowy.\n\n## Odczyt i zastosowanie\n\nUkład area imager odczytuje kody 1D i 2D oraz oznaczenia bezpośrednie. Bluetooth obsługuje profile HID i SPP. Wersja RB ma wymienny akumulator Li-Ion 3350 mAh. Czytnik współpracuje z bazą BC9030-BT. Baza, przewody i zasilacz są sprzedawane osobno.\n\n## Wybierz zawartość zestawu\n\n**PBT9501-DPMRB**: Sam czytnik, bez przewodu.\n\nSam czytnik wymaga zgodnej bazy lub odpowiednio skonfigurowanego połączenia z hostem. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOdczyt DPM zależy od technologii naniesienia kodu i powierzchni części. Baza STAR nie zastępuje bazy Bluetooth. Do przewodowego stanowiska DPM porównaj PD9531. Porównaj [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Bluetooth podczas kontroli oznaczeń DPM\n\nPBT9501 DPM Evo łączy odczyt oznaczeń bezpośrednich z Bluetooth. Jeśli linia wykorzystuje STAR 433 MHz, porównaj PM9501 DPM Evo. Dla stanowiska przewodowego służy PD9531 DPM Evo. Porównaj [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm).",
+    "description": "Datalogic PowerScan PBT9501 DPM Evo to skaner DPM z Bluetooth 3.0. Ułatwia odczyt kodów z części, których nie można przenieść pod skaner stanowiskowy.\n\n## Odczyt i zastosowanie\n\nUkład area imager odczytuje kody 1D i 2D oraz oznaczenia bezpośrednie. Bluetooth obsługuje profile HID i SPP. Wersja RB ma wymienny akumulator Li-Ion 3350 mAh. Czytnik współpracuje z bazą BC9030-BT. Baza, przewody i zasilacz są sprzedawane osobno.\n\n## Wybierz zawartość zestawu\n\n**PBT9501-DPMRB**: Sam czytnik, bez przewodu.\n\nPBT9501-DPMRB łączy się z hostem przez Bluetooth albo przez bazę. Akumulator ładuje się w bazie [BC9030-BT](/produkt/datalogic-handheld-bc9030-bt). Baza BC9030-BT, przewód CAB-438 i zasilacz 8-0935 są sprzedawane osobno. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOdczyt DPM zależy od technologii naniesienia kodu i powierzchni części. Baza STAR nie zastępuje bazy Bluetooth. Do przewodowego stanowiska DPM porównaj PD9531. Porównaj [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Bluetooth podczas kontroli oznaczeń DPM\n\nPBT9501 DPM Evo łączy odczyt oznaczeń bezpośrednich z Bluetooth. Jeśli linia wykorzystuje STAR 433 MHz, porównaj PM9501 DPM Evo. Dla stanowiska przewodowego służy PD9531 DPM Evo. Porównaj [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1711,7 +1709,7 @@ export const datalogicAdditionalScanners: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "Przez bazę: USB / RS-232 / KBW / RS-485"
+        "value": "Przez bazę: USB / RS-232 / KBW"
       },
       {
         "name": "Łączność",
@@ -1759,7 +1757,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "faq": [
       {
         "question": "Czym PBT9501 DPM różni się od PM9501 DPM — PowerScan PBT9501 DPM Evo?",
-        "answer": "PBT9501 DPM Evo korzysta z Bluetooth 3.0. Oferowany PM9501 DPM Evo używa STAR 433 MHz i wymaga zgodnej bazy STAR."
+        "answer": "PBT9501 DPM Evo korzysta z Bluetooth 3.0. PM9501 DPM Evo używa STAR 433 MHz i wymaga odbiornika STAR 433 MHz: bazy BC9030-433."
       },
       {
         "question": "Co zawiera zestaw PowerScan PBT9501 DPM Evo?",
@@ -1785,7 +1783,7 @@ export const datalogicAdditionalScanners: Product[] = [
     "seoTitle": "Datalogic PowerScan PM9501 DPM Evo — skaner DPM STAR 433 MHz | TAKMA",
     "seoDescription": "Datalogic PowerScan PM9501 DPM Evo: skaner DPM STAR 433 MHz. Kontrola DPM z transmisją STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Datalogic PowerScan PM9501 DPM Evo to bezprzewodowy skaner do kodów znakowanych bezpośrednio na częściach. Oferowane wersje korzystają z radia STAR 433 MHz.",
-    "description": "Datalogic PowerScan PM9501 DPM Evo to bezprzewodowy skaner do kodów znakowanych bezpośrednio na częściach. Oferowane wersje korzystają z radia STAR 433 MHz.\n\n## Odczyt i zastosowanie\n\nOptyka DPM obsługuje oznaczenia na różnych powierzchniach oraz standardowe kody 1D i 2D na etykietach. Wymienny akumulator Li-Ion ma 3350 mAh. Model współpracuje z bazą BC9030-433. Odczyt potwierdzają Green Spot, diody i sygnał dźwiękowy.\n\n## Wybierz zawartość zestawu\n\n**PM9501-DPM433RB**: Sam czytnik — bez przewodu i bazy.\n\n**PM9501-DPM433RBK10**: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU.\n\nSam czytnik wymaga zgodnej bazy lub odpowiednio skonfigurowanego połączenia z hostem. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOferowane PN są wersjami bez wyświetlacza. Nie zastępują skanera Bluetooth. Zanim wybierzesz model DPM, przetestuj czytelność oznaczeń na własnym materiale. Porównaj [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Kontrola DPM z transmisją STAR\n\nPM9501 DPM Evo jest wersją do oznaczeń bezpośrednich i systemu STAR 433 MHz. Nie zastępuje bazy Bluetooth. Jeśli transmisja radiowa nie jest potrzebna, porównaj przewodowy PD9531 DPM Evo. Porównaj [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).",
+    "description": "Datalogic PowerScan PM9501 DPM Evo to bezprzewodowy skaner do kodów znakowanych bezpośrednio na częściach. Oferowane wersje korzystają z radia STAR 433 MHz.\n\n## Odczyt i zastosowanie\n\nOptyka DPM obsługuje oznaczenia na różnych powierzchniach oraz standardowe kody 1D i 2D na etykietach. Wymienny akumulator Li-Ion ma 3350 mAh. Model współpracuje z bazą BC9030-433. Odczyt potwierdzają Green Spot, diody i sygnał dźwiękowy.\n\n## Wybierz zawartość zestawu\n\n**PM9501-DPM433RB**: Sam czytnik — bez przewodu i bazy.\n\n**PM9501-DPM433RBK10**: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU.\n\nSam czytnik PM9501-DPM433RB wymaga odbiornika STAR 433 MHz: bazy [BC9030-433](/produkt/datalogic-handheld-bc9030-433). Bez odbiornika czytnik nie przesyła danych. Przed zakupem porównaj wyposażenie stanowiska z zawartością wybranego PN.\n\n## Obudowa i obsługa\n\nCzytnik ma klasę ochrony IP65. Gwarancja producenta na czytnik wynosi 3 lata. Temperatura pracy wynosi od −20°C do +50°C. Konfigurację czytnika obsługuje Datalogic Aladdin.\n\n## Kiedy wybrać inny model?\n\nOferowane PN są wersjami bez wyświetlacza. Nie zastępują skanera Bluetooth. Zanim wybierzesz model DPM, przetestuj czytelność oznaczeń na własnym materiale. Porównaj [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Wszystkie rodziny i sposoby podłączenia znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Kontrola DPM z transmisją STAR\n\nPM9501 DPM Evo jest wersją do oznaczeń bezpośrednich i systemu STAR 433 MHz. Nie zastępuje bazy Bluetooth. Jeśli transmisja radiowa nie jest potrzebna, porównaj przewodowy PD9531 DPM Evo. Porównaj [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1817,7 +1815,7 @@ export const datalogicAdditionalScanners: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "Przez bazę: USB / RS-232 / KBW / RS-485"
+        "value": "Przez bazę BC9030-433: USB / RS-232 / KBW"
       },
       {
         "name": "Łączność",
@@ -2082,7 +2080,7 @@ export const datalogicAdditionalAccessories: Product[] = [
     "seoTitle": "Baza Bluetooth Datalogic PowerScan BC9030-BT | TAKMA",
     "seoDescription": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo.",
-    "description": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo. Obsługuje Bluetooth. Do połączenia USB potrzebujesz zgodnego przewodu CAB-438. Nie zastępuje bazy STAR 433 MHz.\n\n## Dobierz wyposażenie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Do zewnętrznego zasilania użyj [8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo. Obsługuje Bluetooth. Do komputera łączy się przez USB, RS-232 lub Keyboard Wedge. Do połączenia USB potrzebujesz zgodnego przewodu CAB-438. Nie zastępuje bazy STAR 433 MHz.\n\n## Dobierz wyposażenie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Do zewnętrznego zasilania użyj [8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2143,7 +2141,7 @@ export const datalogicAdditionalAccessories: Product[] = [
     "seoTitle": "Baza STAR 433 MHz Datalogic PowerScan BC9030-433 | TAKMA",
     "seoDescription": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz.",
-    "description": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz. Wbudowana antena obsługuje połączenie radiowe. Do USB potrzebujesz przewodu CAB-438.\n\n## Dobierz wyposażenie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Do zewnętrznego zasilania użyj [8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PM9100](/produkt/datalogic-powerscan-pm9100), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz. Do komputera łączy się przez USB, RS-232 lub Keyboard Wedge. Nie obsługuje RS-485 (do tego służy baza BC9160-433). Do USB potrzebujesz przewodu CAB-438.\n\n## Dobierz wyposażenie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Do zewnętrznego zasilania użyj [8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PM9100](/produkt/datalogic-powerscan-pm9100), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2322,7 +2320,7 @@ export const datalogicAdditionalAccessories: Product[] = [
     "seoTitle": "Przewód USB Datalogic PowerScan CAB-438 | TAKMA",
     "seoDescription": "CAB-438 to prosty przewód USB-A do baz PowerScan BC9030-BT i BC9030-433. Sprawdź cenę i dostępność w TAKMA.",
     "shortDescription": "CAB-438 to prosty przewód USB-A do baz PowerScan BC9030-BT i BC9030-433.",
-    "description": "CAB-438 to prosty przewód USB-A do baz PowerScan BC9030-BT i BC9030-433. Łączy bazę z komputerem. Nie jest przewodem USB do czytników PowerScan 9600.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik, baza i pozostałe wyposażenie są sprzedawane osobno. Przed zakupem sprawdź numer modelu i port stanowiska.\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PM9100](/produkt/datalogic-powerscan-pm9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Wszystkie rodziny znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "CAB-438 to prosty przewód USB-A do baz PowerScan BC9030-BT i BC9030-433. Łączy bazę z komputerem. Nie pasuje do baz BC9630.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik, baza i pozostałe wyposażenie są sprzedawane osobno. Przed zakupem sprawdź numer modelu i port stanowiska.\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PM9100](/produkt/datalogic-powerscan-pm9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Wszystkie rodziny znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2379,9 +2377,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Przewód USB Datalogic PowerScan CAB-524",
     "seoH1": "Przewód USB Datalogic PowerScan CAB-524",
     "seoTitle": "Przewód USB Datalogic PowerScan CAB-524 | TAKMA",
-    "seoDescription": "CAB-524 to spiralny przewód USB-A do przewodowych czytników PowerScan PD9130 i PD9531 DPM Evo. Sprawdź cenę i dostępność w TAKMA.",
-    "shortDescription": "CAB-524 to spiralny przewód USB-A do przewodowych czytników PowerScan PD9130 i PD9531 DPM Evo.",
-    "description": "CAB-524 to spiralny przewód USB-A do przewodowych czytników PowerScan PD9130 i PD9531 DPM Evo. Nie zastępuje przewodu do bazy BC9030 ani przewodu do PowerScan 9600.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik, baza i pozostałe wyposażenie są sprzedawane osobno. Przed zakupem sprawdź numer modelu i port stanowiska.\n\n## Zgodne czytniki\n\n[PD9130](/produkt/datalogic-powerscan-pd9130), [PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Wszystkie rodziny znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "seoDescription": "CAB-524 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9130. Sprawdź cenę i dostępność w TAKMA.",
+    "shortDescription": "CAB-524 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9130.",
+    "description": "CAB-524 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9130. Nie zastępuje przewodu do bazy BC9030 ani przewodu do PowerScan 9600.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik, baza i pozostałe wyposażenie są sprzedawane osobno. Przed zakupem sprawdź numer modelu i port stanowiska.\n\n## Zgodne czytniki\n\n[PD9130](/produkt/datalogic-powerscan-pd9130). Wszystkie rodziny znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2409,14 +2407,13 @@ export const datalogicAdditionalAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "PD9130, PD9531-DPM"
+        "value": "PD9130"
       }
     ],
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-powerscan-pd9130",
-      "datalogic-powerscan-pd9531-dpm"
+      "datalogic-powerscan-pd9130"
     ],
     "relatedAccessories": [],
     "downloads": [

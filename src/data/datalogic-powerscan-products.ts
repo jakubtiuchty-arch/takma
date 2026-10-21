@@ -140,7 +140,6 @@ export const datalogicPowerScanProducts: Product[] = [
       "datalogic-powerscan-cab-553",
       "datalogic-powerscan-hld-p096",
       "datalogic-powerscan-std-p096",
-      "datalogic-powerscan-pc-p096",
       "datalogic-powerscan-cab-549",
       "datalogic-powerscan-8-0935",
       "datalogic-powerscan-6003-0940"
@@ -376,7 +375,7 @@ export const datalogicPowerScanProducts: Product[] = [
     "faq": [
       {
         "question": "Czy PBT9600 wymaga bazy STAR?",
-        "answer": "Nie. PBT9600 używa Bluetooth 5.0. PM9600 jest osobnym modelem z radiem STAR 433 MHz i wymaga właściwej bazy STAR."
+        "answer": "Nie. PBT9600 używa Bluetooth 5.0. PM9600 jest osobnym modelem z radiem STAR 433 MHz i wymaga odbiornika STAR 433 MHz: bazy BC9630-433."
       },
       {
         "question": "Czym różni się SR od HP — PowerScan PBT9600?",
@@ -399,7 +398,7 @@ export const datalogicPowerScanProducts: Product[] = [
     "seoTitle": "Datalogic PowerScan PM9600 — skaner 2D STAR 433 MHz | TAKMA",
     "seoDescription": "Datalogic PowerScan PM9600: skaner 2D STAR 433 MHz. Przemysłowy odczyt 2D przez radio STAR. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
     "shortDescription": "Przemysłowy skaner 1D i 2D z radiem STAR 433 MHz. Optyka SR lub HP, wymienny akumulator, ładowanie indukcyjne i IP65/IP67.",
-    "description": "## PowerScan PM9600: radio STAR 433 MHz w magazynie\n\nDatalogic PowerScan PM9600 odczytuje kody 1D i 2D. Przesyła dane przez radio STAR 433 MHz do [bazy BC9630-433](/produkt/datalogic-powerscan-bc9630-433). To model do stanowisk magazynowych i produkcyjnych, w których pracownik potrzebuje swobody ruchu. Nie ma Bluetooth. Jeśli potrzebujesz tego interfejsu, porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).\n\n### Jedna baza, wielu pracowników\n\nDo jednej bazy można przypisać do 16 czytników. W otwartej przestrzeni zasięg wynosi do 150 m przy niższej szybkości transmisji lub do 100 m przy wyższej. Regały, ściany i zakłócenia mogą zmniejszyć zasięg. W oferowanych wariantach czytnik nie ma wyświetlacza ani klawiatury.\n\n### Optyka SR lub HP\n\nWersja SR służy do standardowego odczytu. Dla kodu EAN o module 13 mil zakres wynosi od 4 do 67,5 cm. Wersja HP rozszerza ten zakres do 120 cm. Rzeczywista odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe podświetlenie i celownik laserowy pomagają wskazać kod. Udany odczyt potwierdzają Green Spot, dwie zielone diody, sygnał dźwiękowy i wibracja.\n\n### Wybierz zestaw według PN\n\nZestaw USB RBK10EU zawiera czytnik z akumulatorem 3350 mAh, bazę BC9630-433, przewód CAB-552, [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam czytnik nie zawiera bazy, przewodów ani zasilacza.\n\nBaza obsługuje USB i RS-232. Do połączenia szeregowego potrzebny jest osobny [przewód CAB-548](/produkt/datalogic-powerscan-cab-548). Zestaw USB nie zastępuje zestawu RS-232.\n\n### Ładowanie między zmianami\n\nŁadowanie w bazie odbywa się indukcyjnie. Przy zasilaniu zewnętrznym 12 V trwa około 3,2 godziny. Przy zasilaniu wyłącznie z USB-A może trwać do 16 godzin. Dodatkowe akumulatory można ładować w [ładowarce 2-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [4-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Te ładowarki wymagają [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\n### Praca w trudniejszych warunkach\n\nObudowa ma ochronę IP65 i IP67. Czytnik wytrzymuje 50 upadków z 2,5 m w temperaturze +20°C oraz upadki z 2 m przy −20°C. Zakres temperatury pracy wynosi od −20 do +50°C. Gwarancja producenta trwa 3 lata.\n\nKonfigurację ułatwia program Datalogic Aladdin. Karta katalogowa jest dostępna w sekcji plików do pobrania. Pozostałe rodziny porównasz w kategorii [skanerów Datalogic](/skanery-datalogic).\n\n## Przemysłowy odczyt 2D przez radio STAR\n\nPM9600 przekazuje dane przez system STAR 433 MHz. Wybór SR lub HP dotyczy optyki; nie zmienia radia w Bluetooth. Do instalacji Bluetooth służy PBT9600, a do stanowiska przewodowego PD9630.",
+    "description": "## PowerScan PM9600: radio STAR 433 MHz w magazynie\n\nDatalogic PowerScan PM9600 odczytuje kody 1D i 2D. Przesyła dane przez radio STAR 433 MHz do [bazy BC9630-433](/produkt/datalogic-powerscan-bc9630-433). To model do stanowisk magazynowych i produkcyjnych, w których pracownik potrzebuje swobody ruchu. Nie ma Bluetooth. Jeśli potrzebujesz tego interfejsu, porównaj [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).\n\n### Jedna baza, wielu pracowników\n\nDo jednej bazy można przypisać do 16 czytników. W otwartej przestrzeni zasięg wynosi do 150 m przy niższej szybkości transmisji lub do 100 m przy wyższej. Regały, ściany i zakłócenia mogą zmniejszyć zasięg. W oferowanych wariantach czytnik nie ma wyświetlacza ani klawiatury.\n\n### Optyka SR lub HP\n\nWersja SR służy do standardowego odczytu. Dla kodu EAN o module 13 mil zakres wynosi od 4 do 67,5 cm. Wersja HP rozszerza ten zakres do 120 cm. Rzeczywista odległość zależy od rozmiaru, kontrastu i jakości kodu.\n\nBiałe podświetlenie i celownik laserowy pomagają wskazać kod. Udany odczyt potwierdzają Green Spot, dwie zielone diody, sygnał dźwiękowy i wibracja.\n\n### Wybierz zestaw według PN\n\nZestaw USB RBK10 (PM9600-SR433RBK10, PM9600-HP433RBK10) zawiera czytnik z akumulatorem 3350 mAh, bazę BC9630-433, przewód CAB-552, [zasilacz 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Sam czytnik nie zawiera bazy, przewodów ani zasilacza.\n\nBaza obsługuje USB i RS-232. Do połączenia szeregowego potrzebny jest osobny [przewód CAB-548](/produkt/datalogic-powerscan-cab-548). Zestaw USB nie zastępuje zestawu RS-232.\n\n### Ładowanie między zmianami\n\nŁadowanie w bazie odbywa się indukcyjnie. Przy zasilaniu zewnętrznym 12 V trwa około 3,2 godziny. Przy zasilaniu wyłącznie z USB-A może trwać do 16 godzin. Dodatkowe akumulatory można ładować w [ładowarce 2-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [4-stanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Te ładowarki wymagają [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\n### Praca w trudniejszych warunkach\n\nObudowa ma ochronę IP65 i IP67. Czytnik wytrzymuje 50 upadków z 2,5 m w temperaturze +20°C oraz upadki z 2 m przy −20°C. Zakres temperatury pracy wynosi od −20 do +50°C. Gwarancja producenta trwa 3 lata.\n\nKonfigurację ułatwia program Datalogic Aladdin. Karta katalogowa jest dostępna w sekcji plików do pobrania. Pozostałe rodziny porównasz w kategorii [skanerów Datalogic](/skanery-datalogic).\n\n## Przemysłowy odczyt 2D przez radio STAR\n\nPM9600 przekazuje dane przez system STAR 433 MHz. Wybór SR lub HP dotyczy optyki; nie zmienia radia w Bluetooth. Do instalacji Bluetooth służy PBT9600, a do stanowiska przewodowego PD9630.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -605,7 +604,7 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoTitle": "Baza Bluetooth Datalogic PowerScan BC9630-BT | TAKMA",
     "seoDescription": "Baza Bluetooth Datalogic PowerScan BC9630-BT. Sprawdź zgodność z czytnikami, cenę i dostępność. Dobierz wyposażenie do swojego stanowiska.",
     "shortDescription": "Baza BC9630-BT służy do transmisji danych i ładowania indukcyjnego czytnika PowerScan PBT9600. Obsługuje USB i RS-232. Nie zastępuje bazy STAR 433 MHz.",
-    "description": "Baza BC9630-BT służy do transmisji danych i ładowania indukcyjnego czytnika PowerScan PBT9600. Obsługuje USB i RS-232. Nie zastępuje bazy STAR 433 MHz.\n\n## Elementy do podłączenia\n\nDo USB potrzebujesz [przewodu CAB-552](/produkt/datalogic-powerscan-cab-552). Przewód nie jest dołączony do samej bazy. Do szybszego ładowania potrzebujesz zasilacza [8-0935](/produkt/datalogic-powerscan-8-0935) i przewodu sieciowego EU [6003-0940](/produkt/datalogic-powerscan-6003-0940), sprzedawanych osobno. Przy zasilaniu wyłącznie z USB-A pełne ładowanie trwa około 16 godzin.\n\nBaza nie zawiera czytnika. Standardowa BC9630-BT nie ma klasy IP65; tę klasę mają inne, wskazane wersje baz.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).\n\nDo połączenia RS-232 użyj [przewodu CAB-548](/produkt/datalogic-powerscan-cab-548) zamiast przewodu USB. Dobierz [zasilacz](/produkt/datalogic-powerscan-8-0935) oraz [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940).",
+    "description": "Baza BC9630-BT służy do transmisji danych i ładowania indukcyjnego czytnika PowerScan PBT9600. Obsługuje USB i RS-232. Nie zastępuje bazy STAR 433 MHz.\n\n## Elementy do podłączenia\n\nDo USB potrzebujesz [przewodu CAB-552](/produkt/datalogic-powerscan-cab-552). Przewód nie jest dołączony do samej bazy. Do szybszego ładowania potrzebujesz zasilacza [8-0935](/produkt/datalogic-powerscan-8-0935) i przewodu sieciowego EU [6003-0940](/produkt/datalogic-powerscan-6003-0940), sprzedawanych osobno. Przy zasilaniu wyłącznie z USB-A pełne ładowanie trwa około 16 godzin.\n\nBaza nie zawiera czytnika. Standardowa BC9630-BT nie ma klasy IP65. Klasę IP65 ma baza BC9631-BT.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).\n\nDo połączenia RS-232 użyj [przewodu CAB-548](/produkt/datalogic-powerscan-cab-548) zamiast przewodu USB. Dobierz [zasilacz](/produkt/datalogic-powerscan-8-0935) oraz [przewód sieciowy EU](/produkt/datalogic-powerscan-6003-0940).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -735,7 +734,7 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoTitle": "Akumulator Datalogic PowerScan RBP-PM96 | TAKMA",
     "seoDescription": "Akumulator Datalogic PowerScan RBP-PM96. Sprawdź zgodność z czytnikami, cenę i dostępność. Dobierz wyposażenie do swojego stanowiska.",
     "shortDescription": "RBP-PM96 to wymienny akumulator Li-Ion do PowerScan PBT9600 i PM9600. Pozwala zastąpić rozładowany lub zużyty akumulator bez wymiany czytnika. Nie jest przeznaczony do przewodowego PD9630.",
-    "description": "RBP-PM96 to wymienny akumulator Li-Ion do PowerScan PBT9600 i PM9600. Pozwala zastąpić rozładowany lub zużyty akumulator bez wymiany czytnika. Nie jest przeznaczony do przewodowego PD9630.\n\n## Ładowanie akumulatora\n\nAkumulator ładuje się w czytniku umieszczonym w zgodnej bazie indukcyjnej. Baza i zasilacz nie są dołączone. Pełne ładowanie trwa około 3,2 godziny przy zewnętrznym zasilaniu 12 V. Czas rośnie przy zasilaniu bazy wyłącznie z USB-A.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).\n\nZapasowe akumulatory możesz ładować poza czytnikiem w [ładowarce dwustanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [czterostanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Ładowarkę i jej zasilanie zamów osobno.",
+    "description": "RBP-PM96 to wymienny akumulator Li-Ion 3350 mAh do PowerScan PBT9600 i PM9600. Pozwala zastąpić rozładowany lub zużyty akumulator bez wymiany czytnika. Nie jest przeznaczony do przewodowego PD9630.\n\n## Ładowanie akumulatora\n\nAkumulator ładuje się w czytniku umieszczonym w zgodnej bazie indukcyjnej. Baza i zasilacz nie są dołączone. Pełne ładowanie trwa około 3,2 godziny przy zewnętrznym zasilaniu 12 V. Czas rośnie przy zasilaniu bazy wyłącznie z USB-A.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).\n\nZapasowe akumulatory możesz ładować poza czytnikiem w [ładowarce dwustanowiskowej](/produkt/datalogic-powerscan-mc-p096-m2) lub [czterostanowiskowej](/produkt/datalogic-powerscan-mc-p096-m4). Ładowarkę i jej zasilanie zamów osobno.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -768,6 +767,10 @@ export const datalogicPowerScanAccessories: Product[] = [
       {
         "name": "Typ akcesorium",
         "value": "Akumulator Li-Ion"
+      },
+      {
+        "name": "Pojemność",
+        "value": "3350 mAh"
       }
     ],
     "applications": [],
@@ -788,7 +791,7 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoTitle": "Przewód USB Datalogic PowerScan CAB-552 | TAKMA",
     "seoDescription": "Przewód USB Datalogic PowerScan CAB-552. Sprawdź zgodność z czytnikami, cenę i dostępność. Dobierz wyposażenie do swojego stanowiska.",
     "shortDescription": "CAB-552 to przewód USB do baz PowerScan BC9630-BT i BC9630-433. Przesyła dane między bazą a komputerem. W zestawach USB do przewodowego PD9630 stosowany jest spiralny CAB-553.",
-    "description": "CAB-552 to przewód USB do baz PowerScan BC9630-BT i BC9630-433. Przesyła dane między bazą a komputerem. W zestawach USB do przewodowego PD9630 stosowany jest spiralny CAB-553.\n\n## Zgodna baza\n\nPrzewód pasuje do [BC9630-BT](/produkt/datalogic-powerscan-bc9630-bt) oraz [BC9630-433](/produkt/datalogic-powerscan-bc9630-433). Baza, czytnik i zasilacz nie są częścią tego produktu. Przy intensywnej pracy użyj osobnego zasilacza do bazy.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "CAB-552 to prosty przewód USB-A o długości 2 m do baz PowerScan BC9630-BT i BC9630-433. Przesyła dane między bazą a komputerem. W zestawach USB do przewodowego PD9630 stosowany jest spiralny CAB-553.\n\n## Zgodna baza\n\nPrzewód pasuje do [BC9630-BT](/produkt/datalogic-powerscan-bc9630-bt) oraz [BC9630-433](/produkt/datalogic-powerscan-bc9630-433). Baza, czytnik i zasilacz nie są częścią tego produktu. Przy intensywnej pracy użyj osobnego zasilacza do bazy.\n\nZgodne czytniki znajdziesz poniżej. Pozostałe urządzenia porównasz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -821,6 +824,10 @@ export const datalogicPowerScanAccessories: Product[] = [
       {
         "name": "Typ akcesorium",
         "value": "Przewód USB do bazy"
+      },
+      {
+        "name": "Długość",
+        "value": "2 m"
       }
     ],
     "applications": [],
@@ -1010,7 +1017,7 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoTitle": "Zasilacz 12 V Datalogic 8-0935 | TAKMA",
     "seoDescription": "Zasilacz 12 V Datalogic 8-0935. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
     "shortDescription": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.",
-    "description": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.\n\n## Bazy QuickScan i Gryphon\n\nZasilacz obsługuje także bazy QuickScan BC2090 i Gryphon WLC4690. Zasila bazę, a nie gniazdo USB-C czytnika QuickScan.\n\n## Wymagany przewód sieciowy\n\nAby podłączyć zasilacz do gniazda, potrzebujesz [przewodu sieciowego EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód sieciowy nie jest dołączony. Baza i przewód transmisyjny są sprzedawane osobno.\n\nZasilacz jest częścią kompletnych zestawów USB EU PBT9600 i PM9600 oferowanych na kartach czytników. Nie dokupuj go, jeśli masz już ten element.\n\nDo ładowarek MC-P096-M2 i MC-P096-M4 wybierz [zasilacz 12 V / 5 A 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Pozostałe zgodne bazy\n\nZasilacz zasila także bazy Gryphon WLC4190 oraz PowerScan BC9030-BT i BC9030-433. Nie podłączaj go bezpośrednio do czytnika wymagającego 5 V.",
+    "description": "8-0935 to zewnętrzny zasilacz 12 V do baz PowerScan BC9630-BT i BC9630-433. Może także zasilać PD9630 przez przewód RS-232 z wejściem zasilania.\n\n## Bazy QuickScan i Gryphon\n\nZasilacz obsługuje także bazy QuickScan BC2090 i Gryphon WLC4690. Zasila bazę, a nie gniazdo USB-C czytnika QuickScan.\n\n## Wymagany przewód sieciowy\n\nAby podłączyć zasilacz do gniazda, potrzebujesz [przewodu sieciowego EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód sieciowy nie jest dołączony. Baza i przewód transmisyjny są sprzedawane osobno.\n\nZasilacz 8-0935 jest w zestawach z bazą: PBT9600 RBK10EU, PM9600 RBK10, PBT9100-RBK10EU, PM9100-433RBK10 i PM9501-DPM433RBK10.\n\nDo ładowarek MC-P096-M2 i MC-P096-M4 wybierz [zasilacz 12 V / 5 A 90ACC0350](/produkt/datalogic-powerscan-90acc0350).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).\n\n## Pozostałe zgodne bazy\n\nZasilacz zasila także bazy Gryphon WLC4190 oraz PowerScan BC9030-BT i BC9030-433. Nie podłączaj go bezpośrednio do czytnika wymagającego 5 V.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -1400,8 +1407,8 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoH1": "Osłona i kabura Datalogic PowerScan PC-P096",
     "seoTitle": "Osłona i kabura Datalogic PowerScan PC-P096 | TAKMA",
     "seoDescription": "Osłona i kabura Datalogic PowerScan PC-P096. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
-    "shortDescription": "PC-P096 to osłona i kabura do czytników PowerScan PD9630, PBT9600 i PM9600. Ułatwia przenoszenie oraz odkładanie czytnika podczas pracy.",
-    "description": "PC-P096 to osłona i kabura do czytników PowerScan PD9630, PBT9600 i PM9600. Ułatwia przenoszenie oraz odkładanie czytnika podczas pracy.\n\n## Dobierz do PowerScan 9600\n\nProdukt jest przeznaczony do obudowy serii PowerScan 9600. Nie jest czytnikiem ani bazą ładującą. Czytnik nie jest dołączony.\n\nDo montażu w stałym miejscu porównaj [uchwyt HLD-P096](/produkt/datalogic-powerscan-hld-p096).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "shortDescription": "PC-P096 to osłona i kabura do bezprzewodowych czytników PowerScan PBT9600 i PM9600. Chroni czytnik i pozwala nosić go na pasku.",
+    "description": "PC-P096 to osłona i kabura do bezprzewodowych czytników PowerScan PBT9600 i PM9600. Chroni czytnik i pozwala nosić go na pasku.\n\n## Dobierz do PowerScan 9600\n\nProdukt jest przeznaczony do obudowy serii PowerScan 9600. Nie jest czytnikiem ani bazą ładującą. Czytnik nie jest dołączony.\n\nDo montażu w stałym miejscu porównaj [uchwyt HLD-P096](/produkt/datalogic-powerscan-hld-p096).\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1428,14 +1435,17 @@ export const datalogicPowerScanAccessories: Product[] = [
         "value": "PC-P096"
       },
       {
+        "name": "Zgodność",
+        "value": "PowerScan PBT9600, PowerScan PM9600"
+      },
+      {
         "name": "Funkcja",
-        "value": "Osłona / kabura do przenoszenia"
+        "value": "Osłona i kabura na pas"
       }
     ],
     "applications": [],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "datalogic-powerscan-pd9630",
       "datalogic-powerscan-pbt9600",
       "datalogic-powerscan-pm9600"
     ],
