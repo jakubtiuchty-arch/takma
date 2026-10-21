@@ -904,7 +904,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         title: 'Skanery Zebra a Datalogic',
         content:
-          'W najprostszych modelach 2D tańszy jest Datalogic: [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) z kablem USB kosztuje 250 zł, a Zebra [DS2208](/produkt/zebra-ds2208) z kablem USB 373 zł. Oba mają 5 lat gwarancji, klasę IP52 i wytrzymują upadki z 1,5 m. W bezprzewodowych zestawach z bazą i kablem USB ceny są zbliżone: Datalogic [QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500) 733 zł, Zebra [DS2278](/produkt/zebra-ds2278) 761 zł. QBT2500 ma 5 lat gwarancji, DS2278 3 lata (bateria rok). Skanerów ultra-rugged i dalekiego zasięgu Datalogic nie prowadzimy; w tej klasie mamy Zebrę (DS3608, DS3678) i Honeywell (Granit). Datalogic dobrze sprawdza się jako tańszy skaner na pojedyncze stanowisko.',
+          'W najprostszych modelach 2D tańszy jest Datalogic: [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) z kablem USB kosztuje mniej niż Zebra [DS2208](/produkt/zebra-ds2208) z kablem USB. Oba mają 5 lat gwarancji, klasę IP52 i wytrzymują upadki z 1,5 m. W bezprzewodowych zestawach z bazą i kablem USB ceny są zbliżone: Datalogic [QuickScan QBT2500](/produkt/datalogic-quickscan-qbt2500) 733 zł, Zebra [DS2278](/produkt/zebra-ds2278) 761 zł. QBT2500 ma 5 lat gwarancji, DS2278 3 lata (bateria rok). Skanerów ultra-rugged i dalekiego zasięgu Datalogic nie prowadzimy; w tej klasie mamy Zebrę (DS3608, DS3678) i Honeywell (Granit). Datalogic dobrze sprawdza się jako tańszy skaner na pojedyncze stanowisko.',
       },
       {
         title: 'Skaner ręczny (handheld) a prezentacyjny (hands-free)',
@@ -1110,7 +1110,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         question: 'Jaka jest gwarancja na skanery Newland?',
         answer:
-          'Wszystkie skanery Newland: 5 lat (60 miesięcy) — najdłuższa w branży na każdy model. Baterie BT (BTY2333): 1 rok. Porównanie: Zebra DS2208/DS4608 — 5 lat, DS3608/DS9308 — 3 lata. Honeywell Voyager — 3 lata. Datalogic QuickScan — 3 lata. Newland HR23 za 271 zł z gwarancją 5 lat = 54 zł/rok. Tani skaner za 150 zł z gwarancją 1 rok = 150 zł/rok (3× drożej rocznie). TAKMA obsługuje reklamacje gwarancyjne skanerów Newland w Polsce.',
+          'Wszystkie skanery Newland: 5 lat (60 miesięcy) — najdłuższa w branży na każdy model. Baterie BT (BTY2333): 1 rok. Porównanie: Zebra DS2208/DS4608 — 5 lat, DS3608/DS9308 — 3 lata. Honeywell Voyager — 3 lata. Datalogic QuickScan — 5 lat. Newland HR23 za 271 zł z gwarancją 5 lat = 54 zł/rok. Tani skaner za 150 zł z gwarancją 1 rok = 150 zł/rok (3× drożej rocznie). TAKMA obsługuje reklamacje gwarancyjne skanerów Newland w Polsce.',
       },
       {
         question: 'Czy skanery Newland czytają kody z ekranów?',
@@ -1130,7 +1130,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         question: 'Jakie są alternatywy dla skanerów Newland?',
         answer:
-          'W segmencie budżetowym (do 400 zł): Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D, gwarancja 5 lat) — bezpośredni rywal HR23 Dorada. Datalogic QuickScan QW2520 (~300 zł, gwarancja 3 lata). W segmencie mid-range: Zebra [DS4608](/produkt/zebra-ds4608) (~900 zł, PRZM, 1 280 skanów/s). W segmencie bezprzewodowym: Zebra DS2278 (~780 zł, BT 4.0, 10 m), DS8178 (~1 800 zł, bateria 83 h). W segmencie DPM: Zebra DS3608-DP (~5 000 zł). Newland oferuje najlepszą relację cena/jakość w każdym segmencie — z gwarancją 5 lat i BT 5.0/100 m.',
+          'W segmencie budżetowym (do 400 zł): Zebra [DS2208](/produkt/zebra-ds2208) (od 352 zł, 2D, gwarancja 5 lat) — bezpośredni rywal HR23 Dorada. Datalogic [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) (2D, IP52, 5 lat). W segmencie mid-range: Zebra [DS4608](/produkt/zebra-ds4608) (~900 zł, PRZM, 1 280 skanów/s). W segmencie bezprzewodowym: Zebra DS2278 (~780 zł, BT 4.0, 10 m), DS8178 (~1 800 zł, bateria 83 h). W segmencie DPM: Zebra DS3608-DP (~5 000 zł). Newland oferuje najlepszą relację cena/jakość w każdym segmencie — z gwarancją 5 lat i BT 5.0/100 m.',
       },
     ],
     comparisons: [
@@ -1157,7 +1157,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       {
         title: 'Newland vs Datalogic vs Honeywell — porównanie marek budżetowych',
         content:
-          'Newland HR23 Dorada (271 zł, 2D, IP52, 5 lat) vs Datalogic QuickScan QW2520 (~300 zł, 2D, IP42, 3 lata) vs Honeywell Voyager 1472g (~380 zł, 2D, IP42, 3 lata). Newland wygrywa: najniższa cena, najwyższe IP52, najdłuższa gwarancja 5 lat. Datalogic: konkurencyjna cena, włoska marka, słabsze IP42. Honeywell: najdroższa opcja, Adaptus dekodowanie, ale krótka gwarancja 3 lata i IP42. W segmencie budżetowym 2D Newland HR23 Dorada jest najlepszą wartością — najtańsza, najbardziej wytrzymała i z najdłuższą gwarancją.',
+          'Newland HR23 Dorada (271 zł, 2D, IP52, 5 lat) vs Datalogic [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) (2D, IP52, 5 lat) vs Honeywell Voyager 1472g (~380 zł, 2D, IP42, 3 lata). Newland wygrywa: najniższa cena, najwyższe IP52, najdłuższa gwarancja 5 lat. Datalogic: konkurencyjna cena, włoska marka, IP52 i 5 lat gwarancji. Honeywell: najdroższa opcja, Adaptus dekodowanie, ale krótka gwarancja 3 lata i IP42. W segmencie budżetowym 2D Newland HR23 Dorada jest najlepszą wartością — najtańsza, najbardziej wytrzymała i z najdłuższą gwarancją.',
       },
     ],
     howToSteps: [

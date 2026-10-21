@@ -15368,7 +15368,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS2208?',
-        answer: 'W zbliżonej klasie cenowej: Honeywell Voyager 1470g (2D, USB, ~500–600 zł, gwarancja 3 lata) i Datalogic Gryphon GD4320 (2D, USB, ~550–650 zł, gwarancja 3 lata). DS2208 wyróżnia się 5-letnią gwarancją, kompatybilnością z akcesoriami LS2208 oraz szeroką bazą serwisową Zebra w Polsce.',
+        answer: 'W zbliżonej klasie cenowej: Honeywell Voyager 1470g (2D, USB, ~500–600 zł, gwarancja 3 lata) i Datalogic [QuickScan QD2590](/produkt/datalogic-quickscan-qd2590) (2D, USB i RS-232, 5 lat gwarancji). DS2208 wyróżnia się 5-letnią gwarancją, kompatybilnością z akcesoriami LS2208 oraz szeroką bazą serwisową Zebra w Polsce.',
       },
     ],
     downloads: [
@@ -15655,7 +15655,7 @@ Uwaga: LI2208 odczytuje wyłącznie kody 1D. Jeśli potrzebujesz odczytu kodów 
       },
       {
         question: 'Jakie są alternatywy dla Zebra LI2208?',
-        answer: 'W klasie 1D: Honeywell Voyager 1250g (laserowy, ~200 zł, gwarancja 3 lata), Datalogic QuickScan QD2500 (1D, ~250 zł). Jednak w 2026 r. rekomendujemy przejście na skaner 2D — [DS2208](/produkt/zebra-ds2208) od 352 zł czyta zarówno kody 1D, jak i QR/DataMatrix, a różnica cenowa to ok. 170 zł.',
+        answer: 'W klasie 1D: Honeywell Voyager 1250g (laserowy, ~200 zł, gwarancja 3 lata), Datalogic [QuickScan QD2220](/produkt/datalogic-quickscan-qd2220) (1D, USB). Jednak w 2026 r. rekomendujemy przejście na skaner 2D — [DS2208](/produkt/zebra-ds2208) od 352 zł czyta zarówno kody 1D, jak i QR/DataMatrix, a różnica cenowa to ok. 170 zł.',
       },
     ],
     downloads: [
@@ -15858,7 +15858,7 @@ Dokumentacja: zebra.com/ds4608.`,
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS4608?',
-        answer: 'W klasie mid-range: Honeywell Xenon XP 1950g (2D, USB, porównywalna cena), Datalogic Gryphon GD4590 (2D, lekki). W segmencie niższym: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł (entry-level 2D, brak EAS). W segmencie premium: [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł (sensor 2 MP, zasięg 70 cm).',
+        answer: 'W klasie mid-range: Honeywell Xenon XP 1950g (2D, USB, porównywalna cena), Datalogic [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690) (2D, lekki). W segmencie niższym: [Zebra DS2208](/produkt/zebra-ds2208) od 352 zł (entry-level 2D, brak EAS). W segmencie premium: [Zebra DS8208](/produkt/zebra-ds8208) od 1 027 zł (sensor 2 MP, zasięg 70 cm).',
       },
     ],
     downloads: [
@@ -16257,7 +16257,7 @@ Dokumentacja: zebra.com/ds3608.`,
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS3608-HD?',
-        answer: 'W klasie ultra-rugged High Density: Honeywell Granit XP 1990iHD (kody od 3 mil), Datalogic PowerScan 9600-HD. W niższym segmencie HD: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, kody od 3 mil, IP52). DS3608-HD wyróżnia się IP65/IP68, upadkami z 3 m i zakresem -30°C do +50°C.',
+        answer: 'W klasie ultra-rugged High Density: Honeywell Granit XP 1990iHD (kody od 3 mil), Datalogic [PowerScan PD9630 HP](/produkt/datalogic-powerscan-pd9630). W niższym segmencie HD: [Zebra DS4608](/produkt/zebra-ds4608) (od 1 178 zł, kody od 3 mil, IP52). DS3608-HD wyróżnia się IP65/IP68, upadkami z 3 m i zakresem -30°C do +50°C.',
       },
     ],
     downloads: [
@@ -16658,7 +16658,7 @@ Dokumentacja: zebra.com/ds3608.`,
     shortDescription: 'Zebra LI3608-SR — przemysłowy skaner liniowy 1D, IP65+IP68, upadki 2,4 m, -30°C, najlżejszy ultra-rugged (287 g)',
     description: `Dla kogo? Zebra LI3608-SR to przemysłowy skaner liniowy 1D zaprojektowany dla operacji, które korzystają wyłącznie z kodów kreskowych 1D (EAN/UPC, Code 128, GS1-128) — typowych w magazynach FMCG, centrach dystrybucji, na liniach produkcyjnych i w mroźniach. Jeśli nie potrzebujesz skanowania kodów 2D (QR, DataMatrix), LI3608-SR jest optymalnym wyborem pod względem ceny, wagi i wytrzymałości.
 
-Podwójne uszczelnienie IP65 + IP68 — jedyny ultra-rugged 1D na rynku z dwoma certyfikatami szczelności: pyłoszczelny (IP65) i zanurzalny do 30 minut (IP68). Honeywell Granit i Datalogic PowerScan oferują jedynie IP65 lub IP67 osobno. Upadki wielokrotne z 2,4 m na beton, 7 500 obrotów w tumble teście z 1 m (50% więcej niż Honeywell Granit: 5 000).
+Podwójne uszczelnienie IP65 + IP68 — jedyny ultra-rugged 1D na rynku z dwoma certyfikatami szczelności: pyłoszczelny (IP65) i zanurzalny do 30 minut (IP68). Honeywell Granit oferuje jedynie IP65 lub IP67 osobno. Upadki wielokrotne z 2,4 m na beton, 7 500 obrotów w tumble teście z 1 m (50% więcej niż Honeywell Granit: 5 000).
 
 Praca od -30°C bez rozgrzewania — natychmiastowe skanowanie po wejściu do mroźni. Zakres roboczy: UPC/EAN (13 mil) od 2,5 do 78,7 cm, Code 39 (20 mil) do 106,7 cm. Sensor liniowy 1 500 px z laserowym celownikiem 655 nm. Wibracja jako potwierdzenie odczytu — niezastąpione w hałaśliwych halach produkcyjnych.
 
@@ -16798,7 +16798,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
       },
       {
         question: 'Ile waży LI3608-SR?',
-        answer: '287 g — najlżejszy ultra-rugged skaner na rynku. Dla porównania: DS3608-SR waży 305 g, Honeywell Granit 1980i — 340 g, Datalogic PowerScan PD9600 — 295 g. Przy 5 000+ skanów dziennie mniejsza waga oznacza mniej zmęczenia nadgarstka.',
+        answer: '287 g — najlżejszy ultra-rugged skaner na rynku. Dla porównania: DS3608-SR waży 305 g, Honeywell Granit 1980i — 340 g, Datalogic PowerScan PD9630 — 318 g. Przy 5 000+ skanów dziennie mniejsza waga oznacza mniej zmęczenia nadgarstka.',
       },
       {
         question: 'Czy LI3608-SR odczyta kod z ekranu telefonu?',
@@ -17000,7 +17000,7 @@ Zebra DataCapture DNA: 123Scan (konfiguracja przez kody QR lub USB), Scanner Man
       },
       {
         question: 'Jakie są alternatywy dla Zebra LI3608-ER?',
-        answer: 'W klasie ultra-rugged dalekiego zasięgu: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, 2D + 1D, zasięg 32 m). Standard Range: [LI3608-SR](/produkt/zebra-li3608-sr) (od ~1 343 zł, zasięg 1,07 m). Konkurenci: Honeywell Granit 1981i FR (2D, zasięg do 15 m, IP65), Datalogic PowerScan PD9600-DPX (2D, dalekie skanowanie). Jeśli potrzebny tylko 1D z dużym zasięgiem — LI3608-ER jest optymalny wagowo.',
+        answer: 'W klasie ultra-rugged dalekiego zasięgu: [Zebra DS3608-XR](/produkt/zebra-ds3608-xr) (od ~2 417 zł, 2D + 1D, zasięg 32 m). Standard Range: [LI3608-SR](/produkt/zebra-li3608-sr) (od ~1 343 zł, zasięg 1,07 m). Konkurenci: Honeywell Granit 1981i FR (2D, zasięg do 15 m, IP65), Datalogic [PowerScan PD9630 HP](/produkt/datalogic-powerscan-pd9630) (2D, do 120 cm dla EAN 13 mil). Jeśli potrzebny tylko 1D z dużym zasięgiem — LI3608-ER jest optymalny wagowo.',
       },
     ],
     downloads: [
@@ -17651,7 +17651,7 @@ Dokumentacja: zebra.com/ds3678.`,
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS3678-HD?',
-        answer: 'W klasie bezprzewodowych HD ultra-rugged: Honeywell Granit XP 1990iHD, Datalogic PowerScan PM9600-HD. Wersja przewodowa: [DS3608-HD](/produkt/zebra-ds3608-hd) (od 1 808 zł) — identyczne skanowanie, niższa cena. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — szersze pole, dalszy zasięg, ale kody od 5 mil.',
+        answer: 'W klasie bezprzewodowych HD ultra-rugged: Honeywell Granit XP 1990iHD, Datalogic [PowerScan PM9600 HP](/produkt/datalogic-powerscan-pm9600). Wersja przewodowa: [DS3608-HD](/produkt/zebra-ds3608-hd) (od 1 808 zł) — identyczne skanowanie, niższa cena. Standard Range bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — szersze pole, dalszy zasięg, ale kody od 5 mil.',
       },
     ],
     downloads: [
@@ -19105,7 +19105,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS9908?',
-        answer: 'Ekonomiczny prezentacyjny: [DS9308](/produkt/zebra-ds9308) (od 995 zł) — kompaktowy, szersze FOV, ale bez trybu ręcznego i RFID. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 814 zł) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł, z bazą i kablem USB od 3 072 zł) — Bluetooth 5.2, ale 3 lata gwarancji zamiast 5. Zewnętrzni konkurenci: Datalogic Magellan 1500i (tańsza, ale 3 lata gwarancji i brak trybu ręcznego), Honeywell Genesis XP 7680g.',
+        answer: 'Ekonomiczny prezentacyjny: [DS9308](/produkt/zebra-ds9308) (od 995 zł) — kompaktowy, szersze FOV, ale bez trybu ręcznego i RFID. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 814 zł) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł, z bazą i kablem USB od 3 072 zł) — Bluetooth 5.2, ale 3 lata gwarancji zamiast 5. Zewnętrzni konkurenci: Datalogic Magellan 1500i (tańsza, ale 3 lata gwarancji), Honeywell Genesis XP 7680g.',
       },
     ],
     downloads: [
@@ -19526,7 +19526,7 @@ W zestawie (wersja -S5): skaner i kabel USB spiralny. Wersja -SA dodatkowo zawie
       },
       {
         question: 'Jakie są alternatywy dla Newland HR23 Dorada?',
-        answer: 'W segmencie ekonomicznych skanerów 2D przewodowych alternatywami są: Zebra DS2208 (od 352 zł, IP52, gwarancja 3 lata), Honeywell Voyager 1472g (od 290 zł, IP42), Datalogic QuickScan QD2500 (od 320 zł, IP52). HR23 wyróżnia się najdłuższą gwarancją (5 lat) i najniższą ceną w segmencie.',
+        answer: 'W segmencie ekonomicznych skanerów 2D przewodowych alternatywami są: Zebra DS2208 (od 352 zł, IP52, gwarancja 3 lata), Honeywell Voyager 1472g (od 290 zł, IP42), Datalogic [QuickScan QD2590](/produkt/datalogic-quickscan-qd2590) (2D, IP52, 5 lat gwarancji). HR23 wyróżnia się najdłuższą gwarancją (5 lat) i najniższą ceną w segmencie.',
       },
     ],
     downloads: [
@@ -20282,7 +20282,7 @@ Koszt posiadania (TCO): gwarancja producenta 5 lat w standardzie — najdłuższ
 
 Megapikselowy sensor CMOS 1280×960 pikseli z celownikiem laserowym 650 nm odczytuje kody DPM na najtrudniejszych powierzchniach — polerowanym metalu, aluminium, odlewach, PCB i elementach tłoczonych. Unikalne w tej klasie cenowej trójkolorowe oświetlenie LED (białe + czerwone + niebieskie) z automatycznym doborem koloru i kąta padania światła zapewnia najlepszy kontrast dla każdego typu znakowania. Pole widzenia 41° × 31°, tolerancja ruchu do 2 m/s.
 
-Porównanie cenowe: NVH300 kosztuje ok. 1 000 zł netto — to 3–5× mniej niż konkurencyjne skanery DPM: Zebra DS3608-DP (ok. 5 000 zł), Datalogic PowerScan 9600 DPX (ok. 4 500 zł), Honeywell Granit 1920i (ok. 4 000 zł). Przy tym NVH300 oferuje ten sam megapikselowy sensor co Zebra DS3608 i najdłuższą gwarancję w klasie (5 lat vs 3 lata u konkurencji).
+Porównanie cenowe: NVH300 kosztuje ok. 1 000 zł netto — to 3–5× mniej niż konkurencyjne skanery DPM: Zebra DS3608-DP (ok. 5 000 zł), Datalogic [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm) (ok. 3 000 zł), Honeywell Granit 1920i (ok. 4 000 zł). Przy tym NVH300 oferuje ten sam megapikselowy sensor co Zebra DS3608 i najdłuższą gwarancję w klasie (5 lat vs 3 lata u konkurencji).
 
 Obsługiwane kody: 1D (EAN-13, EAN-8, UPC-A/E, Code 128, Code 39, Code 93, GS1-128, GS1 DataBar, Codabar, ITF), 2D (QR Code, Micro QR, Data Matrix, PDF417, Micro PDF417, Aztec) oraz kody DPM na każdym typie podłoża. Minimalny kontrast 20% — odczytuje nawet wyblakłe i niskokontrastowe znakowania.
 

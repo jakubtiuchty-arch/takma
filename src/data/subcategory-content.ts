@@ -2667,7 +2667,7 @@ Tryb wsadowy (batch mode): gdy skaner jest poza zasięgiem, przechowuje do 1 000
       },
       {
         question: 'Jakie są alternatywy dla skanerów bezprzewodowych Zebra?',
-        answer: 'Honeywell Xenon 1952 — Bluetooth 2D, zbliżona wydajność. Datalogic Gryphon 4500 — Bluetooth 2D, dobra ergonomia. Datalogic PowerScan 9500 — do środowisk przemysłowych. Zebra wyróżnia się integracją z Zebra DNA i szeroką siecią serwisową w Polsce.',
+        answer: 'Honeywell Xenon 1952 — Bluetooth 2D, zbliżona wydajność. Datalogic [Gryphon GBT4600](/produkt/datalogic-gryphon-gbt4600) — Bluetooth 5.2, 2D, dobra ergonomia. Datalogic [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600) — do środowisk przemysłowych. Zebra wyróżnia się integracją z Zebra DNA i szeroką siecią serwisową w Polsce.',
       },
     ],
     comparisons: [

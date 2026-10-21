@@ -857,7 +857,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         question: 'Czy skanery Newland mają gwarancję 5 lat?',
-        answer: 'Tak — wszystkie skanery ręczne Newland (HR11, HR23, HR33, HR15, NVH300) mają gwarancję producenta 60 miesięcy (5 lat) w standardzie. To najdłuższa gwarancja w branży skanerów ręcznych. Dla porównania: Zebra DS2208 — 36 miesięcy, Honeywell Voyager — 60 miesięcy, Datalogic QuickScan — 36 miesięcy.',
+        answer: 'Tak — wszystkie skanery ręczne Newland (HR11, HR23, HR33, HR15, NVH300) mają gwarancję producenta 60 miesięcy (5 lat) w standardzie. To najdłuższa gwarancja w branży skanerów ręcznych. Dla porównania: Zebra DS2208 — 36 miesięcy, Honeywell Voyager — 60 miesięcy, Datalogic QuickScan — 60 miesięcy (QuickScan 2500).',
       },
       {
         question: 'Co to jest Ndevor MDM i ile kosztuje?',
