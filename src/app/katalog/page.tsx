@@ -16,8 +16,8 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
   const manufacturer = manufacturerSlug ? manufacturers.find(m => m.slug === manufacturerSlug) : null
 
   // Lista wszystkich produktów marki obejmuje także akcesoria. Nie jest zamiennikiem kategorii terminali.
-  if (manufacturer?.id === 'sunmi') {
-    const title = 'Produkty SUNMI — terminale mobilne i akcesoria'
+  if (manufacturer && ['sunmi', 'cipherlab'].includes(manufacturer.id)) {
+    const title = `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
     return {
       title,
       description: manufacturer.seoDescription,
