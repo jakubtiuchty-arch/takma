@@ -134,9 +134,9 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                         <thead className="bg-gray-900 text-white">
                           <tr>
                             <th scope="col" className="px-5 py-4 font-semibold">Model</th>
-                            <th scope="col" className="px-5 py-4 font-semibold">Druk</th>
-                            <th scope="col" className="px-5 py-4 font-semibold">Podajnik</th>
-                            <th scope="col" className="px-5 py-4 font-semibold">Łączność</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">{content.modelComparison.columns?.printing ?? 'Druk'}</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">{content.modelComparison.columns?.feeder ?? 'Podajnik'}</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">{content.modelComparison.columns?.connectivity ?? 'Łączność'}</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-200">
@@ -148,7 +148,8 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                                 </Link>
                               </th>
                               <td className="px-5 py-4 text-gray-600">{model.printing}</td>
-                              <td className="px-5 py-4 text-gray-600 whitespace-nowrap">{model.feeder}</td>
+                              {/* Krótkie wartości „Podajnik” w jednej linii; dłuższe opisy z własną kolumną mogą się łamać. */}
+                              <td className={`px-5 py-4 text-gray-600 ${content.modelComparison?.columns?.feeder ? '' : 'whitespace-nowrap'}`}>{model.feeder}</td>
                               <td className="px-5 py-4 text-gray-600">{model.connectivity}</td>
                             </tr>
                           ))}
@@ -243,7 +244,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.comparisons || 'Porównania'}</h2>
                     <div className="space-y-4">
                       {content.comparisons.map((comp, i) => (
-                        <div key={i} className={slug === 'drukarki-kart' ? undefined : 'border-l-4 border-primary-500 pl-4'}>
+                        <div key={i} className={slug === 'drukarki-kart' || receiptCategory ? undefined : 'border-l-4 border-primary-500 pl-4'}>
                           <h3 className="font-semibold text-gray-900 mb-1">{comp.title}</h3>
                           <p className="text-gray-600 text-sm leading-relaxed sm:text-justify">{receiptCategory ? <LinkedText text={comp.content} /> : comp.content}</p>
                         </div>
