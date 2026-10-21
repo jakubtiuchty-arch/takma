@@ -62,8 +62,9 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const hasStockData = !loading && stock?.found
 
   // Cena kartonowa (taśmy + etykiety) — zakup całego opakowania wychodzi taniej za rolkę:
-  // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Raw (ingramPrice)
-  // gdy live, fallback z ceny per-rolkę. Liczba rolek w kartonie ze snapshotu BlueStar.
+  // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Gdy live — cena
+  // z serwera (cartonPrice, liczona z ceny zakupu w lib/ceny-pochodne), fallback z ceny
+  // per-rolkę. Liczba rolek w kartonie ze snapshotu BlueStar.
   const isRibbon = product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false
   const isLabel = product.subcategoryIds?.some(
     id => id === 'etykiety-termiczne' || id === 'etykiety-termotransferowe',
@@ -74,7 +75,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const cartonMargin = isRibbon ? 1.13 : 1.10   // etykiety: 10%
   const singleMargin = isRibbon ? 1.20 : 1.15   // etykiety: 15%
   const cartonPerRollRaw = (isRibbon || isLabel) && price
-    ? (stock?.ingramPrice ? stock.ingramPrice * cartonMargin : (price * cartonMargin) / singleMargin)
+    ? (stock?.cartonPrice ?? (price * cartonMargin) / singleMargin)
     : undefined
   const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
   // Wariant niedostępny (brak stanu PL/EU/w drodze) → bez opcji kartonu (koszyk wyłączony).

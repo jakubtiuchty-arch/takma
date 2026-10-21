@@ -41,8 +41,6 @@ const SERVICE_INFO: Record<string, { title: string; subtitle: string; tooltip: s
   },
 }
 
-const MARGIN = 1.15
-
 export default function ServicePlansBox({ plans, productSlug, productName, manufacturerId }: ServicePlansBoxProps) {
   const info = SERVICE_INFO[manufacturerId || ''] || SERVICE_INFO._default
   const { addItem, isInCart } = useCartStore()
@@ -52,11 +50,11 @@ export default function ServicePlansBox({ plans, productSlug, productName, manuf
   const partNumbers = useMemo(() => plans.map(p => p.partNumber), [plans])
   const { stockData, loading: priceLoading } = useStockData(partNumbers)
 
-  // Cena live z Ingram (ingramPrice × 1.15) lub fallback na statyczną
+  // Cena live (cena zakupu × 1.15, liczona na serwerze w lib/ceny-pochodne) lub fallback na statyczną
   function getLivePrice(plan: ServicePlan): number {
     const stock = stockData.get(plan.partNumber)
-    if (stock?.found && stock.ingramPrice) {
-      return Math.round(stock.ingramPrice * MARGIN * 100) / 100
+    if (stock?.found && stock.servicePlanPrice) {
+      return stock.servicePlanPrice
     }
     return plan.priceNetto
   }

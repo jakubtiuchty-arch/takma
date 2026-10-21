@@ -232,7 +232,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   attributeKeys: string[]
   rowIndex: number
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
@@ -324,7 +324,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   productImage?: string
   attributeKeys: string[]
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; ingramPrice?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
