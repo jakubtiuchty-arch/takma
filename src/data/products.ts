@@ -96032,7 +96032,7 @@ export function filterProducts(params: {
   let filtered = [...products]
 
   if (params.categoryId) {
-    filtered = filtered.filter(p => p.categoryId === params.categoryId)
+    filtered = filtered.filter(p => belongsToCategory(p, params.categoryId!))
   }
 
   if (params.manufacturerId) {
@@ -96104,14 +96104,21 @@ export function getCategoryById(id: string): Category | undefined {
 }
 
 
+// RFID ma osobne listy. Zachowujemy kategorię bazową produktów dla kart i integracji,
+// ale nie mieszamy terminali/czytników/uchwytów UHF ze zwykłymi terminalami mobilnymi.
+function belongsToCategory(product: Product, categoryId: string): boolean {
+  return product.categoryId === categoryId && !(categoryId === 'terminale-mobilne'
+    && product.subcategoryIds?.some(id => ['terminale-rfid', 'uchwyty-rfid', 'czytniki-rfid'].includes(id)))
+}
+
 // Helper do pobrania produktów po kategorii
 export function getProductsByCategory(categoryId: string): Product[] {
-  return products.filter(p => p.categoryId === categoryId)
+  return products.filter(p => belongsToCategory(p, categoryId))
 }
 
 // Helper do zliczenia produktów w kategorii
 export function countProductsInCategory(categoryId: string): number {
-  return products.filter(p => p.categoryId === categoryId).length
+  return products.filter(p => belongsToCategory(p, categoryId)).length
 }
 
 // Subcategory helpers
@@ -96751,7 +96758,7 @@ export function getBrandCategoryBySlug(slug: string): BrandCategory | undefined 
 }
 
 export function getProductsByBrandCategory(bc: BrandCategory): Product[] {
-  return products.filter(p => p.manufacturerId === bc.manufacturerId && p.categoryId === bc.categoryId)
+  return getProductsByCategory(bc.categoryId).filter(p => p.manufacturerId === bc.manufacturerId)
 }
 
 export function getBrandCategoriesForManufacturer(manufacturerId: string): BrandCategory[] {
