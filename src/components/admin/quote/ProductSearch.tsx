@@ -127,11 +127,12 @@ export default function ProductSearch() {
     let catalogPrice = staticPrice
     // Cena zakupu (u dystrybutora) — potrzebna, żeby przy udzielaniu rabatu
     // widzieć podłogę i nie zejść poniżej kosztu. To ta sama liczba, z której
-    // sklep liczy cenę sprzedaży, więc nie wymaga osobnego zapytania.
+    // sklep liczy cenę sprzedaży. Podaje ją tylko /api/admin/stock (z sesją
+    // admina) — publiczne /api/stock jej nie zwraca.
     let purchasePrice: number | undefined
     if (pn) {
       try {
-        const res = await fetch(`/api/stock?pn=${encodeURIComponent(pn)}`)
+        const res = await fetch(`/api/admin/stock?pn=${encodeURIComponent(pn)}`)
         const data = await res.json()
         const live = data?.results?.[0]
         if (live?.found && live?.price > 0) catalogPrice = Math.round(live.price * 100)
