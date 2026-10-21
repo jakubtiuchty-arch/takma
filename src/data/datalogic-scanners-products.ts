@@ -807,6 +807,9 @@ export const datalogicGryphonProducts: Product[] = [
     "priceFrom": 836.48,
     "sameAs": "https://www.datalogic.com/eng/retail-manufacturing-transportation-logistics-healthcare-gs1-digital-link-other-applications/handheld-scanners/gryphon-4600-series-pd-1147.html",
     "relatedProducts": [
+      "datalogic-quickscan-qd2590",
+      "datalogic-quickscan-qw2520",
+      "datalogic-heron-hd3430",
       "datalogic-gryphon-gbt4600",
       "datalogic-gryphon-gm4600"
     ],

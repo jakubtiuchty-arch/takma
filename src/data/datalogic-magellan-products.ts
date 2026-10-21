@@ -167,7 +167,7 @@ export const datalogicMagellanProducts: Product[] = [
         "name": "Karta katalogowa Magellan 900i (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-magellan-900i-en.pdf",
-        "size": "PDF"
+        "size": "219 KB"
       }
     ]
   },
@@ -320,7 +320,7 @@ export const datalogicMagellanProducts: Product[] = [
         "partNumber": "MG1501-10210",
         "name": "Regulowana podstawka · Nie · Brak · Brak",
         "priceFrom": 968.91,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Montaż": "Regulowana podstawka",
           "Mocowanie magnetyczne": "Nie",
@@ -369,13 +369,13 @@ export const datalogicMagellanProducts: Product[] = [
         "name": "Karta katalogowa Magellan 1500i (PL)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-magellan-1500i-pl.pdf",
-        "size": "PDF"
+        "size": "314 KB"
       },
       {
         "name": "Karta katalogowa Magellan 1500i (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-magellan-1500i-en.pdf",
-        "size": "PDF"
+        "size": "310 KB"
       }
     ]
   },
@@ -476,7 +476,7 @@ export const datalogicMagellanProducts: Product[] = [
         "partNumber": "M3610-010200",
         "name": "3610 — obraz szary, bez AUX · Brak · Brak · Brak",
         "priceFrom": 1622.67,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Wersja": "3610 — obraz szary, bez AUX",
           "Mocowanie": "Brak",
@@ -488,7 +488,7 @@ export const datalogicMagellanProducts: Product[] = [
         "partNumber": "M3610-010200-00604",
         "name": "3610 — obraz szary, bez AUX · Brak · USB-A ok. 4,6 m · Brak",
         "priceFrom": 1672.01,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Wersja": "3610 — obraz szary, bez AUX",
           "Mocowanie": "Brak",
@@ -500,7 +500,7 @@ export const datalogicMagellanProducts: Product[] = [
         "partNumber": "M3650-010200",
         "name": "3650 — obraz kolorowy i AUX · Brak · Brak · Brak",
         "priceFrom": 2003.66,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Wersja": "3650 — obraz kolorowy i AUX",
           "Mocowanie": "Brak",
@@ -560,7 +560,7 @@ export const datalogicMagellanProducts: Product[] = [
         "partNumber": "M3670-010200",
         "name": "3670 — kolorowy obraz, AUX i wideo · Brak · Brak · Brak",
         "priceFrom": 2576.53,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Wersja": "3670 — kolorowy obraz, AUX i wideo",
           "Mocowanie": "Brak",
@@ -610,13 +610,13 @@ export const datalogicMagellanProducts: Product[] = [
         "name": "Karta katalogowa Magellan 3600VSi (PL)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-magellan-3600vsi-pl.pdf",
-        "size": "PDF"
+        "size": "203 KB"
       },
       {
         "name": "Karta katalogowa Magellan 3600VSi (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-magellan-3600vsi-en.pdf",
-        "size": "PDF"
+        "size": "197 KB"
       }
     ]
   }
@@ -634,7 +634,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Przewód RS-232 8-0751-11 łączy zgodny czytnik z portem szeregowym hosta. Ma złącze 9D i długość 2 m. Wymaga zewnętrznego zasilania 5 V dobranego do czytnika. Nie zawiera zasilacza ani przewodu sieciowego. Do Magellan 1500i służy zasilacz 90ACC0287 z przewodem sieciowym 90ACC1885. Do Magellan 900i służy zasilacz 5 V DC 90ACC0430 albo 90ACC0587 z przewodem sieciowym 90ACC1885.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 46.55,
@@ -691,7 +692,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Mocowanie magnetyczne 90ACC0384 służy do zgodnych podstawek Magellan 900i i 1500i. Nie jest samodzielną podstawką ani mocowaniem do kiosku. Nie zawiera czytnika. Mocowanie magnetyczne jest w zestawach MG0901-10001, MG1501-10211 i MG1501-10231.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 43.66,
@@ -799,7 +801,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Przewód sieciowy 90ACC1885 łączy zgodny zasilacz z europejskim gniazdem sieciowym. Ma 2-pinowe złącze. Pasuje do zasilacza 90ACC0287 (Magellan 1500i) i zasilacza 5 V 90ACC0587 (Magellan 900i). Nie podłącza się bezpośrednio do skanera. Nie zastępuje przewodu C13 6003-0940 do zasilacza 90ACC0193.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 8.37,
@@ -852,11 +855,12 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Czarna podstawka 90ACC0378 służy do Magellan 1500i. Umożliwia regulację ustawienia czytnika na stanowisku kasowym. To element montażowy, bez czytnika, przewodu i zasilacza. Nie zawiera osobnego mocowania magnetycznego 90ACC0384. Regulowana podstawka jest w zestawach MG1501-10210 i MG1501-10211. Z podstawką regulowaną (Tilting) skaner ma 13,8 cm wysokości.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 53,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/datalogic-magellan-90acc0378-1-v1.webp"
     ],
@@ -904,11 +908,12 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Czarna podstawka stała (Riser Stand) 90ACC0380 do Magellan 1500i. Z podstawką stałą skaner ma 10,6 cm wysokości, a z podstawką regulowaną (Tilting) 13,8 cm. Nie zawiera skanera ani przewodów. Mocowanie magnetyczne jest osobnym elementem.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 27.9,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/datalogic-magellan-90acc0380-1-v1.webp"
     ],
@@ -956,7 +961,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Czarne mocowanie 90ACC0382 służy do instalacji Magellan 1500i na ścianie. Mocowanie ma kształt litery L (L Bracket). Zastępuje podstawkę przy montażu na ścianie. Nie zawiera skanera, przewodu ani zasilacza. Zestaw MG1501-10250-0200 zawiera mocowanie ścienne.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 16.73,
@@ -1008,11 +1014,12 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Mocowanie 90ACC0598 służy do montażu Magellan 3600VSi na ladzie lub ścianie. Pasuje do wersji 3610, 3650 i 3670. Nie jest podwyższoną, regulowaną podstawką 90ACC0599. Nie zawiera czytnika, przewodu i zasilacza. Zestawy 010210 zawierają to mocowanie.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "podstawki-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 61.12,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/datalogic-magellan-90acc0598-1-v1.webp"
     ],
@@ -1120,7 +1127,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "description": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Długość wynosi 15 stóp, około 4,6 m. 3600VSi i 3700HSi obsługują 90ACC0193. 3510HSi i 3550HSi wymagają 90ACC0358. Przewód sieciowy jest osobnym elementem. Sam przewód nie jest zasilaczem.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi), [Datalogic Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi), [Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi), [Datalogic Magellan 3700HSi](/produkt/datalogic-magellan-3700hsi). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-skanerow"
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
     ],
     "manufacturerId": "datalogic",
     "priceFrom": 61.36,

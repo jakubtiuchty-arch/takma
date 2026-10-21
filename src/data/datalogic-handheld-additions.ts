@@ -107,6 +107,9 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-quickscan-hld-q040-bk"
     ],
     "relatedProducts": [
+      "datalogic-gryphon-gd4220",
+      "datalogic-gryphon-gd4290",
+      "datalogic-heron-hd3130",
       "datalogic-quickscan-qw2520"
     ],
     "faq": [
@@ -124,7 +127,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa QuickScan 2200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-quickscan2200-en.pdf",
-        "size": "PDF"
+        "size": "268 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -227,7 +230,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -331,7 +334,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -454,7 +457,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -581,7 +584,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -706,7 +709,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Heron HD3130 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-heron3130-en.pdf",
-        "size": "PDF"
+        "size": "256 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -810,7 +813,10 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-rs232-90a051230"
     ],
     "relatedProducts": [
-      "datalogic-powerscan-pd9630"
+      "datalogic-heron-hd3130",
+      "datalogic-quickscan-qd2590",
+      "datalogic-quickscan-qw2520",
+      "datalogic-gryphon-gd4690"
     ],
     "faq": [
       {
@@ -827,7 +833,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa Heron HD3430 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-heron3430-en.pdf",
-        "size": "PDF"
+        "size": "301 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -964,7 +970,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa TD1100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-td1100-en.pdf",
-        "size": "PDF"
+        "size": "177 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1079,7 +1085,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa TD1100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-td1100-en.pdf",
-        "size": "PDF"
+        "size": "177 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1195,7 +1201,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa TD1100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-td1100-en.pdf",
-        "size": "PDF"
+        "size": "177 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1294,7 +1300,8 @@ export const datalogicAdditionalScanners: Product[] = [
       "datalogic-handheld-cab-524"
     ],
     "relatedProducts": [
-      "datalogic-powerscan-pd9531-dpm"
+      "datalogic-powerscan-pd9531-dpm",
+      "datalogic-powerscan-pd9630"
     ],
     "faq": [
       {
@@ -1311,7 +1318,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1432,7 +1439,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1553,7 +1560,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1667,7 +1674,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
-        "size": "PDF"
+        "size": "453 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1773,7 +1780,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
-        "size": "PDF"
+        "size": "453 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1894,7 +1901,7 @@ export const datalogicAdditionalScanners: Product[] = [
         "name": "Karta katalogowa PowerScan 9501 DPM Evo (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9501dpm-en.pdf",
-        "size": "PDF"
+        "size": "453 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1957,7 +1964,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2017,7 +2024,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2074,7 +2081,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2135,7 +2142,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2196,7 +2203,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2254,7 +2261,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa QuickScan 2200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-quickscan2200-en.pdf",
-        "size": "PDF"
+        "size": "268 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2314,7 +2321,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa Gryphon 4200 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-gryphon4200-en.pdf",
-        "size": "PDF"
+        "size": "427 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2373,7 +2380,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -2429,7 +2436,7 @@ export const datalogicAdditionalAccessories: Product[] = [
         "name": "Karta katalogowa PowerScan 9100 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan9100-en.pdf",
-        "size": "PDF"
+        "size": "355 KB"
       }
     ],
     "createdAt": "2026-10-20",

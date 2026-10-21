@@ -153,19 +153,19 @@ export const datalogicPowerScanProducts: Product[] = [
         "name": "Karta katalogowa PowerScan 9600 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan-9600-en.pdf",
-        "size": "0,6 MB"
+        "size": "860 KB"
       },
       {
         "name": "Instrukcja PowerScan PD9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-corded-en.pdf",
-        "size": "PDF"
+        "size": "2,5 MB"
       },
       {
         "name": "Katalog akcesoriów PowerScan 9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-9600-akcesoria-en.pdf",
-        "size": "PDF"
+        "size": "1,9 MB"
       }
     ],
     "faq": [
@@ -357,19 +357,19 @@ export const datalogicPowerScanProducts: Product[] = [
         "name": "Karta katalogowa PowerScan 9600 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan-9600-en.pdf",
-        "size": "0,6 MB"
+        "size": "860 KB"
       },
       {
         "name": "Instrukcja PowerScan PM/PBT9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-cordless-en.pdf",
-        "size": "PDF"
+        "size": "1,8 MB"
       },
       {
         "name": "Katalog akcesoriów PowerScan 9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-9600-akcesoria-en.pdf",
-        "size": "PDF"
+        "size": "1,9 MB"
       }
     ],
     "faq": [
@@ -565,19 +565,19 @@ export const datalogicPowerScanProducts: Product[] = [
         "name": "Karta katalogowa PowerScan 9600 (EN)",
         "type": "datasheet",
         "url": "/datasheets/datalogic-powerscan-9600-en.pdf",
-        "size": "0,6 MB"
+        "size": "860 KB"
       },
       {
         "name": "Instrukcja PowerScan PM/PBT9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-cordless-en.pdf",
-        "size": "PDF"
+        "size": "1,8 MB"
       },
       {
         "name": "Katalog akcesoriów PowerScan 9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-9600-akcesoria-en.pdf",
-        "size": "PDF"
+        "size": "1,9 MB"
       }
     ],
     "faq": [
@@ -657,7 +657,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja baz PowerScan BC9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-base-en.pdf",
-        "size": "PDF"
+        "size": "3,4 MB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -722,7 +722,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja baz PowerScan BC9600 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-base-en.pdf",
-        "size": "PDF"
+        "size": "3,4 MB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1209,7 +1209,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja montażu HLD-P096 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-hld-p096-en.pdf",
-        "size": "PDF"
+        "size": "782 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1270,7 +1270,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja montażu STD-P096 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-std-p096-en.pdf",
-        "size": "PDF"
+        "size": "62 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1334,7 +1334,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja ładowarek MC-P096 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-mc-p096-en.pdf",
-        "size": "PDF"
+        "size": "362 KB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -1403,7 +1403,7 @@ export const datalogicPowerScanAccessories: Product[] = [
         "name": "Instrukcja ładowarek MC-P096 (EN)",
         "type": "manual",
         "url": "/instrukcje/datalogic-powerscan-mc-p096-en.pdf",
-        "size": "PDF"
+        "size": "362 KB"
       }
     ],
     "createdAt": "2026-10-20",
