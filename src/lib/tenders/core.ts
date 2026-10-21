@@ -55,3 +55,8 @@ export function snippets(text: string, budget = 42000): { text: string; truncate
   for (let i = 0; i < chunks.length; i++) if (TERMS.test(chunks[i]) || /częś[ćc]|pakiet|lot-|ofert.*części|termin|wadium/i.test(chunks[i])) passages.push(`[fragment ${i + 1}] ${chunks[i]}`)
   return { text: passages.join('\n').slice(0, budget), truncated: true }
 }
+
+/** Normalizacja wyłącznie typografii cytatu, bez zmiany słów lub ich kolejności. */
+export function normalizeEvidence(value: string): string {
+  return plain(value).normalize('NFKC').toLocaleLowerCase('pl').replace(new RegExp('[^\\p{L}\\p{N}]+', 'gu'), ' ').trim()
+}
