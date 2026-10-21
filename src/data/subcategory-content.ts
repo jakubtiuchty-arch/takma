@@ -1,3 +1,4 @@
+import { bixolonReceiptContent } from './bixolon-receipt-content'
 import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
 import { rfidSledContent } from './rfid-sled-category'
@@ -107,6 +108,7 @@ export interface SubcategoryRichContent {
 }
 
 export const subcategoryContent: Record<string, SubcategoryRichContent> = {
+  'mobilne-drukarki-paragonow': bixolonReceiptContent,
   'skanery-kodow-kreskowych/ladowe': counterScannerContent,
   'etykiety-rfid-zebra': rfidLabelContent,
   'drukarki-rfid': rfidPrinterContent,

@@ -1685,3 +1685,67 @@ categoryFilters['drukarki-etykiet-bixolon'] = categoryFilters['drukarki-etykiet-
     derived: [...(filter.derived ?? []), { value: 'RFID', subcategory: 'drukarki-rfid' }],
   } : filter
 )
+
+// Mobile receipt printers: options follow published model specifications.
+categoryFilters['mobilne-drukarki-paragonow'] = [
+  {
+    "specKey": "Szerokość papieru",
+    "label": "Szerokość papieru",
+    "derived": [
+      { "value": "58 mm", "pattern": "^58 mm$", "specs": ["Szerokość papieru"] },
+      { "value": "80 mm", "pattern": "^80 mm$", "specs": ["Szerokość papieru"] },
+      { "value": "112 mm", "pattern": "^112 mm$", "specs": ["Szerokość papieru"] }
+    ]
+  },
+  {
+    "specKey": "laczność-paragony",
+    "label": "Łączność",
+    "derived": [
+      {
+        "value": "USB",
+        "pattern": "USB",
+        "specs": [
+          "Interfejsy"
+        ]
+      },
+      {
+        "value": "Bluetooth",
+        "pattern": "Bluetooth",
+        "specs": [
+          "Interfejsy"
+        ]
+      },
+      {
+        "value": "Wi-Fi",
+        "pattern": "Wi-Fi",
+        "specs": [
+          "Interfejsy"
+        ]
+      }
+    ]
+  },
+  {
+    "specKey": "material-paragony",
+    "label": "Materiał",
+    "derived": [
+      {
+        "value": "Papier termiczny",
+        "slugs": [
+          "bixolon-spp-c200",
+          "bixolon-spp-c300",
+          "bixolon-spp-r210",
+          "bixolon-spp-r200iiiplus",
+          "bixolon-spp-r310",
+          "bixolon-spp-r410"
+        ]
+      },
+      {
+        "value": "Dostępny wariant linerless",
+        "slugs": [
+          "bixolon-spp-r210",
+          "bixolon-spp-r200iiiplus"
+        ]
+      }
+    ]
+  }
+]

@@ -1145,7 +1145,7 @@ export const bixolonMobileAccessories: Product[] = [
     "seoTitle": "Ładowarka jednej baterii BIXOLON PBD-R300",
     "seoDescription": "BIXOLON PBD-R300/STD to ładowarka jednej wymiennej baterii PBP-R300, PBP-S300 lub PBP-S400. Sprawdź cenę, stan i zgodność z drukarką.",
     "shortDescription": "BIXOLON PBD-R300/STD to ładowarka jednej wymiennej baterii PBP-R300, PBP-S300 lub PBP-S400.",
-    "description": "BIXOLON PBD-R300/STD to ładowarka jednej wymiennej baterii PBP-R300, PBP-S300 lub PBP-S400.\n\n## Dobór i sposób użycia\n\nŁaduj wyjętą baterię, a nie całą drukarkę. Aby korzystać z ładowarki, potrzebujesz zasilacza PBC-1000/STD i odpowiedniego przewodu sieciowego. Elementy te nie są dołączone do zestawu. Zasilacz PBC-2000/STD do drukarki nie zastępuje zasilacza tej ładowarki. Bateria pokazana na zdjęciu nie jest dołączona do zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000).",
+    "description": "BIXOLON PBD-R300/STD to ładowarka jednej wymiennej baterii PBP-R300, PBP-S300 lub PBP-S400.\n\n## Dobór i sposób użycia\n\nŁaduj wyjętą baterię, a nie całą drukarkę. Aby korzystać z ładowarki, potrzebujesz zasilacza PBC-1000/STD i odpowiedniego przewodu sieciowego. Elementy te nie są dołączone do zestawu. Zasilacz PBC-2000/STD do drukarki nie zastępuje zasilacza tej ładowarki. Bateria pokazana na zdjęciu nie jest dołączona do zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310), [BIXOLON SPP-R410](/produkt/bixolon-spp-r410).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1183,7 +1183,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000"
+        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000; SPP-R310, SPP-R410"
       }
     ],
     "applications": [
@@ -1194,8 +1194,8 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
-      "bixolon-xm7-40",
-      "bixolon-spp-l310"
+      "bixolon-spp-r310",
+      "bixolon-spp-r410"
     ],
     "downloads": [
       {
@@ -1215,7 +1215,7 @@ export const bixolonMobileAccessories: Product[] = [
     "seoTitle": "Ładowarka czterech baterii BIXOLON PQC-R300",
     "seoDescription": "BIXOLON PQC-R300/STD ładuje do czterech baterii PBP-R300, PBP-S300 lub PBP-S400. Sprawdź cenę, stan i zgodność z drukarką.",
     "shortDescription": "BIXOLON PQC-R300/STD ładuje do czterech baterii PBP-R300, PBP-S300 lub PBP-S400.",
-    "description": "BIXOLON PQC-R300/STD ładuje do czterech baterii PBP-R300, PBP-S300 lub PBP-S400.\n\n## Dobór i sposób użycia\n\nStacja służy do ładowania baterii wyjętych z drukarek. Nie jest stacją do odłożenia czterech urządzeń. Zasilacz i przewód sieciowy są dołączone do zestawu. Baterie nie są dołączone. Dobierz baterię do modelu drukarki; zgodność z ładowarką nie oznacza zamienności baterii między urządzeniami.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000).",
+    "description": "BIXOLON PQC-R300/STD ładuje do czterech baterii PBP-R300, PBP-S300 lub PBP-S400.\n\n## Dobór i sposób użycia\n\nStacja służy do ładowania baterii wyjętych z drukarek. Nie jest stacją do odłożenia czterech urządzeń. Zasilacz i przewód sieciowy są dołączone do zestawu. Baterie nie są dołączone. Dobierz baterię do modelu drukarki; zgodność z ładowarką nie oznacza zamienności baterii między urządzeniami.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310), [BIXOLON SPP-R410](/produkt/bixolon-spp-r410).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1257,7 +1257,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000"
+        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000; SPP-R310, SPP-R410"
       }
     ],
     "applications": [
@@ -1268,8 +1268,8 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
-      "bixolon-xm7-40",
-      "bixolon-spp-l310"
+      "bixolon-spp-r310",
+      "bixolon-spp-r410"
     ],
     "downloads": [
       {
@@ -1434,7 +1434,7 @@ export const bixolonMobileAccessories: Product[] = [
     "seoTitle": "Przewód USB BIXOLON PIC-R300U",
     "seoDescription": "BIXOLON PIC-R300U/STD to przewód USB do połączenia zgodnej drukarki mobilnej z komputerem. Sprawdź cenę, stan i zgodność z drukarką.",
     "shortDescription": "BIXOLON PIC-R300U/STD to przewód USB do połączenia zgodnej drukarki mobilnej z komputerem.",
-    "description": "BIXOLON PIC-R300U/STD to przewód USB do połączenia zgodnej drukarki mobilnej z komputerem.\n\n## Dobór i sposób użycia\n\nPrzewód ma USB-A po stronie komputera i złącze 14-pin po stronie drukarki. Służy do połączenia z dedykowanym portem urządzenia. Nie jest przewodem USB-C i nie zastępuje ładowarki USB Power Delivery. Sprawdź port w drukarce przed podłączeniem.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000).",
+    "description": "BIXOLON PIC-R300U/STD to przewód USB do połączenia zgodnej drukarki mobilnej z komputerem.\n\n## Dobór i sposób użycia\n\nPrzewód ma USB-A po stronie komputera i złącze 14-pin po stronie drukarki. Służy do połączenia z dedykowanym portem urządzenia. Nie jest przewodem USB-C i nie zastępuje ładowarki USB Power Delivery. Sprawdź port w drukarce przed podłączeniem.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000), [BIXOLON SPP-R210](/produkt/bixolon-spp-r210), [BIXOLON SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310), [BIXOLON SPP-R410](/produkt/bixolon-spp-r410).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1472,7 +1472,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000"
+        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000; SPP-R210, SPP-R200III PLUS, SPP-R310, SPP-R410"
       }
     ],
     "applications": [
@@ -1483,8 +1483,8 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
-      "bixolon-xm7-40",
-      "bixolon-spp-l310"
+      "bixolon-spp-r210",
+      "bixolon-spp-r200iiiplus"
     ],
     "downloads": [
       {
@@ -1504,7 +1504,7 @@ export const bixolonMobileAccessories: Product[] = [
     "seoTitle": "Przewód RS-232 BIXOLON PIC-R300S",
     "seoDescription": "BIXOLON PIC-R300S/STD łączy zgodną drukarkę mobilną z portem szeregowym RS-232 stanowiska. Sprawdź cenę, stan i zgodność z drukarką.",
     "shortDescription": "BIXOLON PIC-R300S/STD łączy zgodną drukarkę mobilną z portem szeregowym RS-232 stanowiska.",
-    "description": "BIXOLON PIC-R300S/STD łączy zgodną drukarkę mobilną z portem szeregowym RS-232 stanowiska.\n\n## Dobór i sposób użycia\n\nPo stronie komputera ma D-Sub 9-pin, a po stronie drukarki złącze 14-pin. Ustaw te same parametry transmisji w urządzeniu i aplikacji. Przewód nie dodaje portu RS-232 do komputera i nie służy jako zasilacz drukarki.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000).",
+    "description": "BIXOLON PIC-R300S/STD łączy zgodną drukarkę mobilną z portem szeregowym RS-232 stanowiska.\n\n## Dobór i sposób użycia\n\nPo stronie komputera ma D-Sub 9-pin, a po stronie drukarki złącze 14-pin. Ustaw te same parametry transmisji w urządzeniu i aplikacji. Przewód nie dodaje portu RS-232 do komputera i nie służy jako zasilacz drukarki.\n\n## Zgodne drukarki\n\n[BIXOLON XM7-20](/produkt/bixolon-xm7-20), [BIXOLON XM7-30](/produkt/bixolon-xm7-30), [BIXOLON XM7-40](/produkt/bixolon-xm7-40), [BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-L3000](/produkt/bixolon-spp-l3000), [BIXOLON SPP-R210](/produkt/bixolon-spp-r210), [BIXOLON SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310), [BIXOLON SPP-R410](/produkt/bixolon-spp-r410).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1542,7 +1542,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000"
+        "value": "XM7-20, XM7-30, XM7-40, SPP-L310, SPP-L410, SPP-L3000; SPP-R210, SPP-R200III PLUS, SPP-R310, SPP-R410"
       }
     ],
     "applications": [
@@ -1553,8 +1553,8 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
-      "bixolon-xm7-40",
-      "bixolon-spp-l310"
+      "bixolon-spp-r210",
+      "bixolon-spp-r200iiiplus"
     ],
     "downloads": [
       {
@@ -1570,11 +1570,11 @@ export const bixolonMobileAccessories: Product[] = [
   {
     "id": "bixolon-plc-r310",
     "slug": "bixolon-plc-r310",
-    "name": "Futerał BIXOLON PLC-R310 do SPP-L310",
-    "seoTitle": "Futerał BIXOLON PLC-R310 do SPP-L310",
-    "seoDescription": "BIXOLON PLC-R310/STD to futerał do noszenia drukarki SPP-L310. Sprawdź cenę, stan i zgodność z drukarką.",
-    "shortDescription": "BIXOLON PLC-R310/STD to futerał do noszenia drukarki SPP-L310.",
-    "description": "BIXOLON PLC-R310/STD to futerał do noszenia drukarki SPP-L310.\n\n## Dobór i sposób użycia\n\nFuterał osłania obudowę podczas przenoszenia. Nie jest baterią ani ładowarką. Nie przypisuj mu klasy szczelności futerałów ochronnych z innej serii. Zdjęcie przedstawia futerał; drukarka nie jest dołączona do tego akcesorium.\n\n## Zgodne drukarki\n\n[BIXOLON SPP-L310](/produkt/bixolon-spp-l310).",
+    "name": "Futerał BIXOLON PLC-R310 do SPP-L310 i SPP-R310",
+    "seoTitle": "Futerał BIXOLON PLC-R310 do SPP-L310 i SPP-R310",
+    "seoDescription": "BIXOLON PLC-R310/STD to futerał do noszenia drukarek SPP-L310 i SPP-R310. Sprawdź cenę, stan i zgodność.",
+    "shortDescription": "BIXOLON PLC-R310/STD to futerał do noszenia drukarek SPP-L310 i SPP-R310.",
+    "description": "BIXOLON PLC-R310/STD to futerał do noszenia drukarek SPP-L310 i SPP-R310.\n\n## Dobór i sposób użycia\n\nFuterał osłania obudowę podczas przenoszenia. Nie jest baterią ani ładowarką. Nie przypisuj mu klasy szczelności futerałów ochronnych z innej serii. Zdjęcie przedstawia futerał; drukarka nie jest dołączona do tego akcesorium.\n\n## Zgodne drukarki\n\n[BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1604,7 +1604,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SPP-L310, SPP-R310"
+        "value": "SPP-L310, SPP-R310; SPP-R310"
       }
     ],
     "applications": [
@@ -1613,7 +1613,8 @@ export const bixolonMobileAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "bixolon-spp-l310"
+      "bixolon-spp-l310",
+      "bixolon-spp-r310"
     ],
     "downloads": [
       {
@@ -1631,9 +1632,9 @@ export const bixolonMobileAccessories: Product[] = [
     "slug": "bixolon-pcc-1000",
     "name": "Ładowarka samochodowa BIXOLON PCC-1000",
     "seoTitle": "Ładowarka samochodowa BIXOLON PCC-1000",
-    "seoDescription": "BIXOLON PCC-1000/STD to ładowarka samochodowa do drukarek SPP-L310 i SPP-L410. Sprawdź cenę, stan i zgodność z drukarką.",
-    "shortDescription": "BIXOLON PCC-1000/STD to ładowarka samochodowa do drukarek SPP-L310 i SPP-L410.",
-    "description": "BIXOLON PCC-1000/STD to ładowarka samochodowa do drukarek SPP-L310 i SPP-L410.\n\n## Dobór i sposób użycia\n\nZasilanie wejściowe wynosi 12–24 V DC, a wyjściowe 8,4 V DC i 0,8 A. Ładowarka współpracuje z odpowiednim portem zgodnej drukarki. Nie zastępuje uchwytu do zamocowania urządzenia w pojeździe. Nie stosuj jej zamiennie z adapterem PCC-2000/STD do rodziny XM7.\n\n## Zgodne drukarki\n\n[BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410).",
+    "seoDescription": "BIXOLON PCC-1000/STD to ładowarka samochodowa do zgodnych drukarek SPP-L i SPP-R. Sprawdź cenę, stan i zgodność.",
+    "shortDescription": "BIXOLON PCC-1000/STD to ładowarka samochodowa do zgodnych drukarek SPP-L i SPP-R.",
+    "description": "BIXOLON PCC-1000/STD to ładowarka samochodowa do zgodnych drukarek SPP-L i SPP-R.\n\n## Dobór i sposób użycia\n\nZasilanie wejściowe wynosi 12–24 V DC, a wyjściowe 8,4 V DC i 0,8 A. Ładowarka współpracuje z odpowiednim portem zgodnej drukarki. Nie zastępuje uchwytu do zamocowania urządzenia w pojeździe. Nie stosuj jej zamiennie z adapterem PCC-2000/STD do rodziny XM7.\n\n## Zgodne drukarki\n\n[BIXOLON SPP-L310](/produkt/bixolon-spp-l310), [BIXOLON SPP-L410](/produkt/bixolon-spp-l410), [BIXOLON SPP-R210](/produkt/bixolon-spp-r210), [BIXOLON SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310), [BIXOLON SPP-R410](/produkt/bixolon-spp-r410).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1671,7 +1672,7 @@ export const bixolonMobileAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SPP-L310, SPP-L410"
+        "value": "SPP-L310, SPP-L410; SPP-R210, SPP-R200III PLUS, SPP-R310, SPP-R410"
       }
     ],
     "applications": [
@@ -1681,7 +1682,9 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedAccessories": [],
     "relatedProducts": [
       "bixolon-spp-l310",
-      "bixolon-spp-l410"
+      "bixolon-spp-l410",
+      "bixolon-spp-r210",
+      "bixolon-spp-r200iiiplus"
     ],
     "downloads": [
       {

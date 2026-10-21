@@ -243,9 +243,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
-  const bixolonLabelProduct = product.manufacturerId === 'bixolon' && product.categoryId === 'drukarki-etykiet' && !product.subcategoryIds?.includes('drukarki-rfid')
+  const bixolonLabelProduct = product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const rfidTextLinks = isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
+  const rfidTextLinks = isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
@@ -428,14 +428,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   /** Powiązania drukarek kolorowych i etykiet idą pod FAQ i pliki. */
   const podobneNaDole = isColorPrinter || isLabel
   const relatedProductsTitle = isLabel ? 'Drukarki zgodne z tymi etykietami'
-    : product.categoryId === 'drukarki-etykiet' ? 'Podobne drukarki'
+    : ['drukarki-etykiet', 'mobilne-drukarki-paragonow'].includes(product.categoryId) ? 'Podobne drukarki'
     : product.subcategoryIds?.includes('czytniki-rfid') ? 'Podobne czytniki RFID'
     : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Podobne uchwyty RFID'
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
     : 'Podobne produkty'
 
-  const isDevice = ['drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
+  const isDevice = ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
 
   // JSON-LD: Product schema
   const availabilitySchemaMap = {

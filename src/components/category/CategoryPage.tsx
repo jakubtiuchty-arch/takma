@@ -1,3 +1,5 @@
+import { getProductStock } from '@/lib/product-stock'
+import { withLiveCatalogData } from '@/lib/catalog-live'
 import Link from 'next/link'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
@@ -24,14 +26,19 @@ function odmienNazwe(name: string): string {
   return name.charAt(0).toLowerCase() + name.slice(1)
 }
 
-export default function CategoryPage({ slug }: CategoryPageProps) {
+export default async function CategoryPage({ slug }: CategoryPageProps) {
   const category = getCategoryById(slug)!
-  const products = getProductsByCategory(category.id)
+  const receiptCategory = slug === 'mobilne-drukarki-paragonow'
+  const baseProducts = getProductsByCategory(category.id)
+  const products = receiptCategory ? await Promise.all(baseProducts.map(async product => {
+    const rows = await getProductStock(product.slug) ?? []
+    return withLiveCatalogData(product, new Map(rows.map(row => [row.partNumber, row])))
+  })) : baseProducts
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
 
-  const faqJsonLd = content?.faq?.length ? {
+  const faqJsonLd = !receiptCategory && content?.faq?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: content.faq.map((f) => ({
@@ -69,6 +76,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
+    ...(receiptCategory ? { '@id': `https://www.takma.com.pl/${category.slug}#collection` } : {}),
     name: category.name,
     description: category.seoDescription,
     url: `https://www.takma.com.pl/${category.slug}`,
@@ -84,7 +92,12 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
     },
   }
 
-  const speakableJsonLd = {
+  const speakableJsonLd = receiptCategory ? {
+    '@context': 'https://schema.org', '@type': 'WebPage',
+    '@id': `https://www.takma.com.pl/${category.slug}#webpage`,
+    name: category.name, url: `https://www.takma.com.pl/${category.slug}`,
+    mainEntity: { '@id': `https://www.takma.com.pl/${category.slug}#collection` },
+  } : {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: category.name,
@@ -314,7 +327,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
 
-      <div className="container-main py-8 lg:py-12">
+      <div className={`container-main py-8 lg:py-12 ${receiptCategory ? 'rfid-text-links' : ''}`}>
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
           <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
@@ -343,6 +356,7 @@ export default function CategoryPage({ slug }: CategoryPageProps) {
             products={products}
             filters={filters}
             columns={3}
+            useLivePrices={receiptCategory}
             filtersFirst
             categoryNav={categories.map((cat) => {
               const subs = getSubcategoriesForCategory(cat.id)

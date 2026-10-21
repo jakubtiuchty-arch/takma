@@ -1,3 +1,4 @@
+import { bixolonReceiptProducts, bixolonReceiptAccessories } from './bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from './bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from './bixolon-label-products'
 import { counterScannerProducts, counterScannerAccessories } from './counter-scanner-products'
@@ -350,6 +351,18 @@ export const categories: Category[] = [
 ]
 
 // Podkategorie drukarek (SEO landing pages)
+categories.push({
+  "id": "mobilne-drukarki-paragonow",
+  "slug": "mobilne-drukarki-paragonow",
+  "name": "Mobilne drukarki paragonów",
+  "description": "Drukarki termiczne do potwierdzeń i biletów z aplikacji mobilnych",
+  "seoTitle": "Mobilne drukarki paragonów BIXOLON — PN, ceny i stany",
+  "seoDescription": "Mobilne drukarki paragonów BIXOLON SPP-C i SPP-R: papier 58, 80 lub 112 mm. Porównaj PN, Bluetooth, Wi-Fi, ceny, stany i zgodne akcesoria.",
+  "longDescription": "Mobilne drukarki BIXOLON do potwierdzeń, biletów i dokumentów z aplikacji. Wybierz papier 58, 80 lub 112 mm oraz połączenie USB, Bluetooth lub Wi-Fi. To urządzenia niefiskalne.",
+  "icon": "printer",
+  "productCount": 6
+})
+
 export const subcategories: Subcategory[] = [
   rfidLabelCategory,
   {
@@ -461,7 +474,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: [...bixolonMobileAccessories.map(p => p.id), ...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: [...bixolonReceiptAccessories.map(p => p.id), ...bixolonMobileAccessories.map(p => p.id), ...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -95426,6 +95439,8 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...bixolonReceiptProducts,
+  ...bixolonReceiptAccessories,
   ...bixolonMobileProducts,
   ...bixolonMobileAccessories,
   ...bixolonLabelProducts,
