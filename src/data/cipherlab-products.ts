@@ -11,7 +11,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RS20 — terminal sklepowy 5,5 cala, Android 16",
     "seoDescription": "CipherLab RS20 do sklepu: Android 16, ekran 5,5 cala, SE4780 i Wi-Fi 6E. Lekki terminal 198 g z wymienną baterią. Sprawdź PN i akcesoria.",
     "shortDescription": "Terminal do sklepu z Androidem 16, ekranem 5,5 cala i skanerem SE4780. Pamięć 6/64 GB, Wi-Fi 6E i wymienna bateria 3000 mAh.",
-    "description": "CipherLab RS20 — Terminal do sklepu z Androidem 16, ekranem 5,5 cala i skanerem SE4780. Pamięć 6/64 GB, Wi-Fi 6E i wymienna bateria 3000 mAh.\n\n## Lekki terminal do pracy na sali sprzedaży\n\nCipherLab RS20 służy do przyjęć, uzupełniania półek, kontroli cen i obsługi zwrotów. Waży 198 g z baterią. Ekran 5,5 cala ma rozdzielczość 720 × 1440 pikseli, a boczne przyciski uruchamiają skanowanie bez dotykania ekranu.\n\nOferowany PN AS20N6RF3NSB1 ma skaner SE4780 do kodów 1D i 2D. Android 16 z GMS pracuje z pamięcią 6 GB RAM i 64 GB Flash. Producent przewiduje możliwość aktualizacji do Androida 18; terminy i dostępność aktualizacji zależą od wsparcia dla urządzenia.\n\n## Wi-Fi 6E i wymiana baterii\n\nRS20 łączy się z siecią sklepu przez Wi-Fi 6E. Bluetooth 5.4 obsługuje zgodne urządzenia, a NFC służy do odczytu zgodnych nośników zbliżeniowych. RS20 nie ma modemu komórkowego. Łączy się przez Wi-Fi 6E. Bateria 3000 mAh obsługuje krótką wymianę hot swap, do 30 sekund. Przed wdrożeniem sprawdź procedurę w aplikacji.\n\nObudowa ma klasę IP65. Odporność na upadki wynosi 1,2 m w warunkach testowych, a 1,5 m wymaga osłony ochronnej. Aparat tylny 16 MP umożliwia dokumentowanie towarów. Aparat przedni ma 8 MP. Funkcja Pic 'n Fill OCR odczytuje tekst z etykiet, np. daty ważności i numery partii.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS20 służy do pracy w sieci sklepu; nie ma modemu LTE ani 5G. Do pracy poza Wi-Fi porównaj [RS36 z LTE](/produkt/cipherlab-rs36). Większy ekran i konfiguracje 5G znajdziesz w [RS38](/produkt/cipherlab-rs38). Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RS20 — Terminal do sklepu z Androidem 16, ekranem 5,5 cala i skanerem SE4780. Pamięć 6/64 GB, Wi-Fi 6E i wymienna bateria 3000 mAh.\n\n## Lekki terminal do pracy na sali sprzedaży\n\nCipherLab RS20 służy do przyjęć, uzupełniania półek, kontroli cen i obsługi zwrotów. Waży 198 g z baterią. Ekran 5,5 cala ma rozdzielczość 720 × 1440 pikseli, a boczne przyciski uruchamiają skanowanie bez dotykania ekranu.\n\nOferowany PN AS20N6RF3NSB1 ma skaner SE4780 do kodów 1D i 2D. Android 16 z GMS pracuje z pamięcią 6 GB RAM i 64 GB Flash. Producent przewiduje możliwość aktualizacji do Androida 18; terminy i dostępność aktualizacji zależą od wsparcia dla urządzenia.\n\n## Wi-Fi 6E i wymiana baterii\n\nRS20 łączy się z siecią sklepu przez Wi-Fi 6E. Bluetooth 5.4 obsługuje zgodne urządzenia, a NFC służy do odczytu zgodnych nośników zbliżeniowych. RS20 nie ma modemu komórkowego. Łączy się przez Wi-Fi 6E. Bateria 3000 mAh obsługuje krótką wymianę hot swap, do 30 sekund.\n\nObudowa ma klasę IP65. Odporność na upadki wynosi 1,2 m w warunkach testowych, a 1,5 m wymaga osłony ochronnej. Aparat tylny 16 MP umożliwia dokumentowanie towarów. Aparat przedni ma 8 MP. Funkcja Pic 'n Fill OCR odczytuje tekst z etykiet, np. daty ważności i numery partii.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS20 służy do pracy w sieci sklepu; nie ma modemu LTE ani 5G. Do pracy poza Wi-Fi porównaj [RS36 z LTE](/produkt/cipherlab-rs36). Większy ekran i wersje 5G ma [RS38](/produkt/cipherlab-rs38). Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -22,10 +22,10 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rs20-3.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RS20 — widok z przodu",
-      "CipherLab RS20 — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS20 — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS20 — ujęcie 4; uchwyt i osłona zależą od zestawu"
+      "CipherLab RS20 — widok z przodu, ekran 5,5 cala",
+      "CipherLab RS20 — przód i tył terminala, biała obudowa",
+      "CipherLab RS20 — tył z aparatem i stykami ładowania",
+      "CipherLab RS20 — widok z boku z przyciskami skanowania"
     ],
     "tags": [
       "magazyn"
@@ -130,7 +130,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RS36 — terminal 5,5 cala, WLAN lub LTE",
     "seoDescription": "CipherLab RS36: ekran 5,5 cala, pamięć 4/64 GB i bateria 4000 mAh. Wybierz SE4100, SE4770 lub SE5500 oraz wersję WLAN albo LTE. Ceny i PN.",
     "shortDescription": "Terminal dotykowy 5,5 cala do magazynu i dostaw. Pamięć 4/64 GB, skaner 1D/2D i bateria 4000 mAh. Wersje WLAN lub z 4G LTE.",
-    "description": "CipherLab RS36 — Terminal dotykowy 5,5 cala do magazynu i dostaw. Pamięć 4/64 GB, skaner 1D/2D i bateria 4000 mAh. Wersje WLAN lub z 4G LTE.\n\n## Skanowanie towarów w magazynie i przy dostawie\n\nRS36 jest następcą RS35. Uchwyt pistoletowy, osłona i pasek na dłoń serii RS35 pasują do RS36.\n\nCipherLab RS36 łączy dotykowy ekran 5,5 cala z przyciskami skanowania po bokach obudowy. Pamięć 4 GB RAM i 64 GB Flash obsługuje aplikacje do przyjęć, wydań oraz inwentaryzacji. Aparat tylny 16 MP pozwala zapisać stan przesyłki. Funkcja OCR odczytuje tekst z etykiet, np. numery seryjne i daty ważności.\n\nWybierz moduł skanujący według tabeli PN. SE4100 i SE4770 służą do standardowych odległości. SE5500 oferuje większy zakres odczytu; rzeczywisty zasięg zależy od wielkości i jakości kodu. Nie przenoś parametrów skanowania między wariantami.\n\n## WLAN lub 4G LTE\n\nRodzina obejmuje konfiguracje do sieci Wi-Fi oraz wersje z modemem 4G LTE. GPS jest funkcją wersji WWAN. Bluetooth 5.1 obsługuje zgodne akcesoria, a NFC odczyt nośników zbliżeniowych. NFC nie zastępuje czytnika UHF.\n\nRS36 ma system Android z GMS. W rodzinie występują wersje fabryczne Android 12 i 14; nie traktuj samej nazwy RS36 jako potwierdzenia wersji fabrycznej. Wymagania aplikacji uzgodnij dla wybranego PN przed zakupem.\n\n## Bateria i ochrona urządzenia\n\nW zestawie jest bateria 4000 mAh. Opcjonalna bateria 6000 mAh nie jest częścią oferowanych zestawów. Obudowa spełnia IP65 i IP68. Odporność 1,8 m wymaga osłony; bez niej producent podaje 1,5 m w warunkach testowych. Wymiary obudowy wynoszą 165 × 76,8 × 17,9 mm.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS36 ma ekran 5,5 cala i wersje WLAN lub LTE. Jeśli potrzebujesz ekranu 6 cali i konfiguracji 5G, porównaj [RS38](/produkt/cipherlab-rs38). Do wpisywania ilości fizycznymi klawiszami sprawdź [RK26](/produkt/cipherlab-rk26). Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RS36 — Terminal dotykowy 5,5 cala do magazynu i dostaw. Pamięć 4/64 GB, skaner 1D/2D i bateria 4000 mAh. Wersje WLAN lub z 4G LTE.\n\n## Skanowanie towarów w magazynie i przy dostawie\n\nRS36 jest następcą RS35. Uchwyt pistoletowy, osłona i pasek na dłoń serii RS35 pasują do RS36.\n\nCipherLab RS36 łączy dotykowy ekran 5,5 cala z przyciskami skanowania po bokach obudowy. Pamięć 4 GB RAM i 64 GB Flash obsługuje aplikacje do przyjęć, wydań oraz inwentaryzacji. Aparat tylny 16 MP pozwala zapisać stan przesyłki. Funkcja OCR odczytuje tekst z etykiet, np. numery seryjne i daty ważności.\n\nWybierz moduł skanujący według tabeli PN. SE4100 i SE4770 służą do standardowych odległości. SE5500 oferuje większy zakres odczytu; rzeczywisty zasięg zależy od wielkości i jakości kodu.\n\n## WLAN lub 4G LTE\n\nRodzina obejmuje konfiguracje do sieci Wi-Fi oraz wersje z modemem 4G LTE. GPS jest funkcją wersji WWAN. Bluetooth 5.1 obsługuje zgodne akcesoria, a NFC odczyt nośników zbliżeniowych. NFC nie zastępuje czytnika UHF.\n\nRS36 ma system Android z GMS. Producent dostarcza RS36 z Androidem 12 lub 14 i przewiduje aktualizację do Androida 14 lub 16. Wersja fabryczna zależy od PN.\n\n## Bateria i ochrona urządzenia\n\nW zestawie jest bateria 4000 mAh. Opcjonalna bateria 6000 mAh nie jest częścią oferowanych zestawów. Obudowa spełnia IP65 i IP68. Odporność 1,8 m wymaga osłony; bez niej producent podaje 1,5 m w warunkach testowych. Wymiary obudowy wynoszą 165 × 76,8 × 17,9 mm.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Zasilacz jest w zestawie tylko w PN oznaczonych w tabeli jako „W zestawie (EU)”. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS36 ma ekran 5,5 cala i wersje WLAN lub LTE. Ekran 6 cali i wersje 5G ma [RS38](/produkt/cipherlab-rs38). Do wpisywania ilości fizycznymi klawiszami sprawdź [RK26](/produkt/cipherlab-rk26). Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -142,11 +142,11 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rs36-4.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RS36 — widok z przodu",
-      "CipherLab RS36 — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS36 — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS36 — ujęcie 4; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS36 — ujęcie 5; uchwyt i osłona zależą od zestawu"
+      "CipherLab RS36 — widok z przodu, czarno-żółta obudowa",
+      "CipherLab RS36 — przód z oznaczeniem Android Enterprise Recommended",
+      "CipherLab RS36 — przód pod kątem, wyłączony ekran",
+      "CipherLab RS36 — górna krawędź z oknem skanera",
+      "CipherLab RS36 z opcjonalnym uchwytem pistoletowym w dłoni"
     ],
     "tags": [
       "magazyn"
@@ -302,7 +302,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RS38 — terminal 6 cali, Wi-Fi 6E i wersje 5G",
     "seoDescription": "CipherLab RS38: terminal 6 cali, Wi-Fi 6E i pamięć 8/128 GB. Porównaj konfiguracje 5G oraz skanery SE4770 i SE5500. Ceny, PN i akcesoria.",
     "shortDescription": "Terminal dotykowy 6 cali z pamięcią 8/128 GB. Wi-Fi 6E, bateria 4500 mAh oraz skaner SE4770 lub SE5500. Dostępne konfiguracje 5G.",
-    "description": "CipherLab RS38 — Terminal dotykowy 6 cali z pamięcią 8/128 GB. Wi-Fi 6E, bateria 4500 mAh oraz skaner SE4770 lub SE5500. Dostępne konfiguracje 5G.\n\n## Duży ekran do logistyki i pracy w terenie\n\nCipherLab RS38 ma ekran 6 cali o rozdzielczości 1080 × 2160 pikseli i jasności 630 nitów. Pozwala wyświetlić listę pozycji, dane dostawy oraz dokumenty w aplikacji. Procesor Qualcomm QCM4490 2,4 GHz pracuje z pamięcią 8 GB RAM i 128 GB Flash. Funkcja OCR odczytuje tekst, np. daty ważności i numery opon TIN.\n\nAndroid 13 z GMS ma przewidzianą możliwość aktualizacji do Androida 18. Wdrożenie aplikacji magazynowej oraz licencje oprogramowania są osobnym elementem projektu.\n\n## Dobierz skaner i modem według PN\n\nSE4770 jest modułem standardowego zasięgu. SE5500 służy także do odczytu z większych odległości. Nie ma jednego zasięgu dla wszystkich kodów: znaczenie mają ich rozmiar, kontrast i otoczenie. Wersje z 5G obsługują pracę poza firmową siecią Wi-Fi. Konfiguracje WLAN nie mają modemu komórkowego.\n\nKażda oferowana wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Opcjonalny uchwyt UHF jest osobnym urządzeniem. Sam terminal nie zapewnia odczytu etykiet UHF na odległość.\n\n## Wymienna bateria i obudowa IP65/IP68\n\nZestawy obejmują baterię 4500 mAh. Wymiana hot swap pomaga utrzymać sesję pracy. Większa bateria 6800 mAh jest opcją, nie standardem oferowanych PN. Terminal waży 268 g ze standardową baterią. Aparaty 16 MP z tyłu i 8 MP z przodu obsługują dokumentację i komunikację.\n\nObudowa ma IP65 i IP68. Producent podaje odporność na wielokrotne upadki z 1,5 m w warunkach testowych. Osłona ochronna zwiększa tę wartość do 1,8 m.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS38 ma ekran 6 cali i konfiguracje 5G. Mniejszy [RS36](/produkt/cipherlab-rs36) oferuje ekran 5,5 cala oraz wersje LTE. Do ochrony zdrowia porównaj osobną odmianę [RS38H](/produkt/cipherlab-rs38h), z obudową do czyszczenia dopuszczonymi środkami. Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RS38 — Terminal dotykowy 6 cali z pamięcią 8/128 GB. Wi-Fi 6E, bateria 4500 mAh oraz skaner SE4770 lub SE5500. Dostępne konfiguracje 5G.\n\n## Duży ekran do logistyki i pracy w terenie\n\nCipherLab RS38 ma ekran 6 cali o rozdzielczości 1080 × 2160 pikseli i jasności 630 nitów. Pozwala wyświetlić listę pozycji, dane dostawy oraz dokumenty w aplikacji. Procesor Qualcomm QCM4490 2,4 GHz pracuje z pamięcią 8 GB RAM i 128 GB Flash. Funkcja OCR odczytuje tekst, np. daty ważności i numery opon TIN.\n\nAndroid 13 z GMS ma przewidzianą możliwość aktualizacji do Androida 18. Wdrożenie aplikacji magazynowej oraz licencje oprogramowania są osobnym elementem projektu.\n\n## Dobierz skaner i modem według PN\n\nSE4770 jest modułem standardowego zasięgu. SE5500 służy także do odczytu z większych odległości. Nie ma jednego zasięgu dla wszystkich kodów: znaczenie mają ich rozmiar, kontrast i otoczenie. Wersje z 5G obsługują pracę poza firmową siecią Wi-Fi. Konfiguracje WLAN nie mają modemu komórkowego.\n\nKażda oferowana wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Opcjonalny uchwyt UHF jest osobnym urządzeniem. Sam terminal nie zapewnia odczytu etykiet UHF na odległość.\n\n## Wymienna bateria i obudowa IP65/IP68\n\nZestawy obejmują baterię 4500 mAh. Wymiana hot swap pomaga utrzymać sesję pracy. Większa bateria 6800 mAh jest opcją, nie standardem oferowanych PN. Terminal waży 268 g ze standardową baterią. Aparaty 16 MP z tyłu i 8 MP z przodu obsługują dokumentację i komunikację.\n\nObudowa ma IP65 i IP68. Producent podaje odporność na wielokrotne upadki z 1,5 m w warunkach testowych. Osłona ochronna zwiększa tę wartość do 1,8 m.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS38 ma ekran 6 cali i konfiguracje 5G. Mniejszy [RS36](/produkt/cipherlab-rs36) oferuje ekran 5,5 cala oraz wersje LTE. Do ochrony zdrowia porównaj osobną odmianę [RS38H](/produkt/cipherlab-rs38h), z obudową do czyszczenia dopuszczonymi środkami. Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -314,11 +314,11 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rs38-4.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RS38 — widok z przodu",
-      "CipherLab RS38 — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38 — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38 — ujęcie 4; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38 — ujęcie 5; uchwyt i osłona zależą od zestawu"
+      "CipherLab RS38 — widok z przodu, ekran 6 cali",
+      "CipherLab RS38 — przód terminala, żółta ramka obudowy",
+      "CipherLab RS38 — przód pod kątem, wyłączony ekran",
+      "CipherLab RS38 — tył z aparatem i wymienną baterią",
+      "CipherLab RS38 z opcjonalnym uchwytem pistoletowym"
     ],
     "tags": [
       "magazyn"
@@ -461,7 +461,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RS38H — terminal do ochrony zdrowia",
     "seoDescription": "CipherLab RS38H do ochrony zdrowia: obudowa do dezynfekcji, ekran 6 cali, SE4720 i 5G. Sprawdź konfigurację PN oraz akcesoria do wersji H.",
     "shortDescription": "Terminal do ochrony zdrowia z obudową przeznaczoną do dezynfekcji. Skaner SE4720, ekran 6 cali, pamięć 8/128 GB i 5G.",
-    "description": "CipherLab RS38H — Terminal do ochrony zdrowia z obudową przeznaczoną do dezynfekcji. Skaner SE4720, ekran 6 cali, pamięć 8/128 GB i 5G.\n\n## Odczyt kodów w ochronie zdrowia\n\nCipherLab RS38H to wersja terminala do placówek ochrony zdrowia. Oferowany PN AS3858SF4NSGH ma skaner SE4720 do kodów 1D i 2D, ekran 6 cali oraz obudowę przeznaczoną do czyszczenia środkami dopuszczonymi przez producenta. Producent testował obudowę z ponad 24 środkami czyszczącymi, m.in. alkoholem izopropylowym i medycznym. Obudowa jest przystosowana do sterylizacji światłem UV-C. Czerwony przycisk SOS można zaprogramować do wezwania pomocy. Skaner SE4720 ma zielony celownik LED.\n\nEkran 1080 × 2160 pikseli ma jasność 630 nitów. Android 13 z GMS, procesor Qualcomm QCM4490 2,4 GHz i pamięć 8/128 GB obsługują zgodne aplikacje placówki. Producent przewiduje aktualizację do Androida 18.\n\n## Łączność i dokumentowanie pracy\n\nTerminal ma 5G, Wi-Fi 6E i Bluetooth 5.2. Obsługuje nano SIM i eSIM, a użycie usług sieciowych wymaga odpowiedniej konfiguracji operatora. Aparaty 16 MP i 8 MP służą do zapisu obrazu w zgodnych aplikacjach. Funkcja Pic 'n Fill OCR odczytuje wyniki pomiarów z monitorów, np. ciśnienie krwi i poziom cukru. NFC i skaner kodów mają osobne funkcje.\n\n## Wyposażenie dobrane do wersji H\n\nWymienna bateria ma 4500 mAh. Obudowa spełnia IP65 i IP68. Do RS38H dobierz stacje i wyposażenie przeznaczone dla tej wersji. Nie zakładaj, że każda osłona lub stacja do żółto-czarnego RS38 pasuje do modelu H. Stacja ładowania, klips i pasek pokazane poniżej są dodatkowymi akcesoriami.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS38H jest odmianą do ochrony zdrowia. Standardowy [RS38](/produkt/cipherlab-rs38) ma inne wykonanie obudowy i wyposażenie. Przy doborze stacji, osłony i środków czyszczących sprawdzaj zgodność z wersją H. Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RS38H — Terminal do ochrony zdrowia z obudową przeznaczoną do dezynfekcji. Skaner SE4720, ekran 6 cali, pamięć 8/128 GB i 5G.\n\n## Odczyt kodów w ochronie zdrowia\n\nCipherLab RS38H to wersja terminala do placówek ochrony zdrowia. Oferowany PN AS3858SF4NSGH ma skaner SE4720 do kodów 1D i 2D, ekran 6 cali oraz obudowę przeznaczoną do czyszczenia środkami dopuszczonymi przez producenta. Producent testował obudowę z ponad 24 środkami czyszczącymi, m.in. alkoholem izopropylowym i medycznym. Obudowa jest przystosowana do sterylizacji światłem UV-C. Czerwony przycisk SOS można zaprogramować do wezwania pomocy. Skaner SE4720 ma zielony celownik LED.\n\nEkran 1080 × 2160 pikseli ma jasność 630 nitów. Android 13 z GMS, procesor Qualcomm QCM4490 2,4 GHz i pamięć 8/128 GB obsługują zgodne aplikacje placówki. Producent przewiduje aktualizację do Androida 18.\n\n## Łączność i dokumentowanie pracy\n\nTerminal ma 5G, Wi-Fi 6E i Bluetooth 5.2. Obsługuje nano SIM i eSIM, a użycie usług sieciowych wymaga odpowiedniej konfiguracji operatora. Aparaty 16 MP i 8 MP służą do zapisu obrazu w zgodnych aplikacjach. Funkcja Pic 'n Fill OCR odczytuje wyniki pomiarów z monitorów, np. ciśnienie krwi i poziom cukru. NFC i skaner kodów mają osobne funkcje.\n\n## Wyposażenie dobrane do wersji H\n\nWymienna bateria ma 4500 mAh. Obudowa spełnia IP65 i IP68. RS38H ma osobne akcesoria: [stację ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01), [ładowarkę 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01), [klips](/produkt/cipherlab-ars38clip0001) i [pasek na dłoń](/produkt/cipherlab-ars38hs000001). Stacja ładowania, klips i pasek pokazane poniżej są dodatkowymi akcesoriami.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRS38H jest odmianą do ochrony zdrowia. Standardowy [RS38](/produkt/cipherlab-rs38) ma inne wykonanie obudowy i wyposażenie. Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -473,11 +473,11 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rs38h-4.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RS38H — widok z przodu",
-      "CipherLab RS38H — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38H — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38H — ujęcie 4; uchwyt i osłona zależą od zestawu",
-      "CipherLab RS38H — ujęcie 5; uchwyt i osłona zależą od zestawu"
+      "CipherLab RS38H — widok z przodu, biało-niebieska obudowa",
+      "CipherLab RS38H — przód pod kątem, czerwony przycisk SOS z boku",
+      "CipherLab RS38H — tył z aparatem, biała obudowa",
+      "CipherLab RS38H — tył z niebieskim klipsem do przenoszenia",
+      "CipherLab RS38H — tył z niebieskim paskiem na dłoń"
     ],
     "tags": [
       "healthcare"
@@ -578,7 +578,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RK26 — terminal z klawiaturą 25 lub 28 klawiszy",
     "seoDescription": "CipherLab RK26: terminal magazynowy z ekranem 4 cale i klawiaturą 25 lub 28 klawiszy. Porównaj skanery SR, MR, SE5500 oraz wersje LTE.",
     "shortDescription": "Terminal magazynowy z fizyczną klawiaturą 25 lub 28 klawiszy. Android 12, ekran 4 cale i bateria 4000 mAh. Różne moduły skanujące oraz wersje LTE.",
-    "description": "CipherLab RK26 — Terminal magazynowy z fizyczną klawiaturą 25 lub 28 klawiszy. Android 12, ekran 4 cale i bateria 4000 mAh. Różne moduły skanujące oraz wersje LTE.\n\n## Klawiatura do wprowadzania ilości i lokalizacji\n\nCipherLab RK26 łączy ekran dotykowy 4 cale z klawiaturą fizyczną. Do wpisywania ilości, numerów półek i danych towaru wybierz układ 25 lub 28 klawiszy. Terminal ma pamięć 4 GB RAM i 64 GB Flash. Android 12 z GMS ma przewidzianą możliwość aktualizacji do Androida 14.\n\n## Skaner standardowy, średniego lub większego zasięgu\n\nModuł odczytu zależy od PN. Rodzina obejmuje SE4100, SE4750 SR, SE4750 MR i SE5500. Wariant MR nie jest tym samym co SR, mimo podobnego oznaczenia modułu. Próbę odczytu wykonaj na docelowych etykietach i odległościach.\n\nNie wszystkie konfiguracje mają ten sam standard Wi-Fi. Tabela rozróżnia Wi-Fi 5, Wi-Fi 6 oraz wersje z modemem 4G LTE. Bluetooth 5.1 i NFC obsługują zgodne urządzenia oraz nośniki. GPS działa w wersjach WWAN.\n\n## Praca z baterii i uchwyt opcjonalny\n\nWymienna bateria ma 4000 mAh. Aparat tylny 16 MP pozwala dokumentować stan towaru. Funkcja OCR odczytuje znaki z etykiet aparatem lub modułem skanującym. Obudowa ma IP65, a odporność na upadki wynosi 1,5 m w warunkach testowych. Wartość 1,8 m wymaga dodatkowej osłony.\n\nZgodny uchwyt pistoletowy jest opcją. Zdjęcia z uchwytem lub modułem UHF pokazują możliwe wyposażenie, a nie pełną zawartość każdego zestawu. Zasilacz jest dołączony tylko do PN wskazanych w tabeli.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRK26 łączy ekran 4 cale z klawiaturą 25 lub 28 klawiszy. Do bardziej rozbudowanych stanowisk kompletacji porównaj [RK96](/produkt/cipherlab-rk96) z baterią 7000 mAh i innymi układami klawiatur. Do mroźni służy osobny [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage). Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RK26 — Terminal magazynowy z fizyczną klawiaturą 25 lub 28 klawiszy. Android 12, ekran 4 cale i bateria 4000 mAh. Różne moduły skanujące oraz wersje LTE.\n\n## Klawiatura do wprowadzania ilości i lokalizacji\n\nCipherLab RK26 łączy ekran dotykowy 4 cale z klawiaturą fizyczną. Do wpisywania ilości, numerów półek i danych towaru wybierz układ 25 lub 28 klawiszy. Terminal ma pamięć 4 GB RAM i 64 GB Flash. Android 12 z GMS ma przewidzianą możliwość aktualizacji do Androida 14.\n\n## Skaner standardowy, średniego lub większego zasięgu\n\nModuł odczytu zależy od PN. Rodzina obejmuje SE4100, SE4750 SR, SE4750 MR i SE5500. SE4750 SR ma standardowy zakres odczytu, a SE4750 MR średni.\n\nNie wszystkie konfiguracje mają ten sam standard Wi-Fi. Tabela rozróżnia Wi-Fi 5, Wi-Fi 6 oraz wersje z modemem 4G LTE. Bluetooth 5.1 i NFC obsługują zgodne urządzenia oraz nośniki. GPS działa w wersjach WWAN.\n\n## Praca z baterii i uchwyt opcjonalny\n\nWymienna bateria ma 4000 mAh. Aparat tylny 16 MP pozwala dokumentować stan towaru. Funkcja OCR odczytuje znaki z etykiet aparatem lub modułem skanującym. Obudowa ma IP65, a odporność na upadki wynosi 1,5 m w warunkach testowych. Wartość 1,8 m wymaga dodatkowej osłony.\n\n[Uchwyt pistoletowy ARK25PSTNNN01](/produkt/cipherlab-ark25pstnnn01) jest akcesorium opcjonalnym. Zasilacz jest dołączony tylko do PN wskazanych w tabeli.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Zasilacz jest w zestawie tylko w PN oznaczonych w tabeli jako „W zestawie (EU)”. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 12 miesięcy.\n\n## Porównaj terminale\n\nRK26 łączy ekran 4 cale z klawiaturą 25 lub 28 klawiszy. Do bardziej rozbudowanych stanowisk kompletacji porównaj [RK96](/produkt/cipherlab-rk96) z baterią 7000 mAh i innymi układami klawiatur. Do mroźni służy osobny [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage). Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -589,10 +589,10 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rk26-3.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RK26 — widok z przodu; zdjęcie rodziny, układ klawiatury zależy od PN",
-      "CipherLab RK26 — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RK26 — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RK26 — ujęcie 4; uchwyt i osłona zależą od zestawu"
+      "CipherLab RK26 — widok z przodu, klawiatura z klawiszami F1–F4",
+      "CipherLab RK26 — dwa terminale z ekranem startowym i listą aplikacji",
+      "CipherLab RK26 — wersje z klawiaturą 25 i 28 klawiszy",
+      "CipherLab RK26 — tył z aparatem i baterią"
     ],
     "tags": [
       "magazyn"
@@ -787,7 +787,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RK96 — terminal magazynowy Wi-Fi 7, 7000 mAh",
     "seoDescription": "CipherLab RK96 do kompletacji: Android 15, Wi-Fi 7 i bateria 7000 mAh. Dobierz klawiaturę oraz skaner SR, MR lub SE5800. Sprawdź PN i ceny.",
     "shortDescription": "Terminal przemysłowy Wi-Fi 7 z Androidem 15, klawiaturą i uchwytem. Pamięć 8/128 GB, bateria 7000 mAh oraz skaner SR, MR lub SE5800.",
-    "description": "CipherLab RK96 — Terminal przemysłowy Wi-Fi 7 z Androidem 15, klawiaturą i uchwytem. Pamięć 8/128 GB, bateria 7000 mAh oraz skaner SR, MR lub SE5800.\n\n## Terminal do intensywnej kompletacji\n\nCipherLab RK96 to terminal przemysłowy z fizyczną klawiaturą, ekranem 4,3 cala i pamięcią 8 GB RAM oraz 128 GB Flash. Oferowane PN obejmują uchwyt pistoletowy i baterię 7000 mAh. Zasilacz należy dobrać osobno. RK96 zastępuje serię RK95. Współpracuje z akcesoriami RK95, z wyjątkiem nowych elementów.\n\nProcesor Qualcomm Q-6690 osiąga do 2,9 GHz. Android 15 z GMS i AER ma przewidzianą możliwość aktualizacji do Androida 18. Dodatkowy ekran e-ink 1,3 cala na tylnej części urządzenia może wyświetlać oznaczenie terminala lub użytkownika. Funkcja Pic 'n Fill OCR odczytuje tekst i automatycznie wypełnia formularze.\n\n## Wi-Fi 7 i wybór modułu skanującego\n\nWi-Fi 7 obsługuje komunikację z siecią magazynu. Bluetooth 6.0 łączy terminal ze zgodnymi urządzeniami. Wersję infrastruktury, roaming i zabezpieczenia sprawdź przed wdrożeniem.\n\nOferowane konfiguracje mają SE4750 SR, SE4750 MR lub SE5800 oraz klawiatury 38, 41 albo 53 klawiszy. SE5800 zapewnia większy zakres odczytu niż standardowy moduł, ale wynik zależy od rozmiaru i jakości kodu. Zdjęcia przedstawiają rodzinę RK96; układ klawiatury wybierz według PN.\n\n## Zasilanie i praca w magazynie\n\nBateria 7000 mAh obsługuje wymianę hot swap z krótkim podtrzymaniem sesji. Obudowa spełnia IP65. Standardowy zakres temperatury pracy wynosi od −20°C do +50°C. Nie zastępuje to wyposażenia wersji [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage), przeznaczonej do pracy w mroźni.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 3 lata.\n\n## Porównaj terminale\n\nStandardowy RK96 ma baterię 7000 mAh. Do pracy w mroźni wybierz [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage), z podgrzewaniem i baterią 5500 mAh. Nie traktuj wersji standardowej jako odpowiednika Cold Storage. Mniejszy terminal klawiaturowy to [RK26](/produkt/cipherlab-rk26). Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RK96 — Terminal przemysłowy Wi-Fi 7 z Androidem 15, klawiaturą i uchwytem. Pamięć 8/128 GB, bateria 7000 mAh oraz skaner SR, MR lub SE5800.\n\n## Terminal do intensywnej kompletacji\n\nCipherLab RK96 to terminal przemysłowy z fizyczną klawiaturą, ekranem 4,3 cala i pamięcią 8 GB RAM oraz 128 GB Flash. Oferowane PN obejmują uchwyt pistoletowy i baterię 7000 mAh. Zasilacz należy dobrać osobno. RK96 zastępuje serię RK95. Współpracuje z akcesoriami RK95, z wyjątkiem nowych elementów.\n\nProcesor Qualcomm Q-6690 osiąga do 2,9 GHz. Android 15 z GMS i AER ma przewidzianą możliwość aktualizacji do Androida 18. Dodatkowy ekran e-ink 1,3 cala na tylnej części urządzenia może wyświetlać oznaczenie terminala lub użytkownika. Funkcja Pic 'n Fill OCR odczytuje tekst i automatycznie wypełnia formularze.\n\n## Wi-Fi 7 i wybór modułu skanującego\n\nWi-Fi 7 obsługuje komunikację z siecią magazynu. Bluetooth 6.0 łączy terminal ze zgodnymi urządzeniami. Terminal obsługuje szybki roaming 802.11r, k i v oraz zabezpieczenia WPA2 i 802.1x.\n\nOferowane konfiguracje mają SE4750 SR, SE4750 MR lub SE5800 oraz klawiatury 38, 41 albo 53 klawiszy. SE5800 zapewnia większy zakres odczytu niż standardowy moduł, ale wynik zależy od rozmiaru i jakości kodu.\n\n## Zasilanie i praca w magazynie\n\nBateria 7000 mAh obsługuje wymianę hot swap z krótkim podtrzymaniem sesji. Obudowa spełnia IP65. Standardowy zakres temperatury pracy wynosi od −20°C do +50°C. Do mroźni służy [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage), który pracuje od −30°C.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Zasilacz nie jest dołączony do terminala. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 3 lata.\n\n## Porównaj terminale\n\nStandardowy RK96 ma baterię 7000 mAh. Do pracy w mroźni wybierz [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage), z podgrzewaniem i baterią 5500 mAh. Mniejszy terminal klawiaturowy to [RK26](/produkt/cipherlab-rk26). Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -798,10 +798,10 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rk96-3.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RK96 — widok z przodu; zdjęcie rodziny, układ klawiatury zależy od PN",
-      "CipherLab RK96 — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RK96 — ujęcie 3; uchwyt i osłona zależą od zestawu",
-      "CipherLab RK96 — ujęcie 4; uchwyt i osłona zależą od zestawu"
+      "CipherLab RK96 — widok z przodu, klawiatura alfanumeryczna",
+      "CipherLab RK96 — przód z ekranem 4,3 cala nad klawiaturą",
+      "CipherLab RK96 — widok z boku",
+      "CipherLab RK96 z uchwytem pistoletowym, widok z boku"
     ],
     "tags": [
       "magazyn"
@@ -948,7 +948,7 @@ export const cipherlabProducts: Product[] = [
     "seoTitle": "CipherLab RK96 Cold Storage — terminal do mroźni Wi-Fi 7",
     "seoDescription": "CipherLab RK96 Cold Storage do mroźni: praca od −30°C, podgrzewanie i SE5800. Bateria 5500 mAh, Wi-Fi 7 i klawiatura 38 klawiszy. Cena i PN.",
     "shortDescription": "Terminal do mroźni z podgrzewaniem ekranu, skanerem SE5800 i baterią 5500 mAh. Android 15, Wi-Fi 7 oraz klawiatura 38 klawiszy.",
-    "description": "CipherLab RK96 Cold Storage — Terminal do mroźni z podgrzewaniem ekranu, skanerem SE5800 i baterią 5500 mAh. Android 15, Wi-Fi 7 oraz klawiatura 38 klawiszy.\n\n## Wersja RK96 do pracy w mroźni\n\nCipherLab RK96 Cold Storage jest przeznaczony do pracy od −30°C do +50°C. Oferowany PN AK96N5F53NSGC ma moduł SE5800, klawiaturę funkcyjno-numeryczną 38 klawiszy oraz baterię 5500 mAh dostosowaną do niskiej temperatury. Nie jest to standardowy RK96 z baterią 7000 mAh.\n\nPodgrzewanie pomaga usuwać zaparowanie przy zmianach temperatury. Czujnik temperatury i oprogramowanie sterują ogrzewaniem automatycznie lub ręcznie. Ustawienia dobierz do cyklu wejść i wyjść z komory oraz zaleceń instrukcji.\n\n## Skanowanie i obsługa w rękawicach\n\nEkran 4,3 cala obsługuje dotyk zgodnymi rękawicami, a fizyczna klawiatura ułatwia wpisywanie ilości. SE5800 odczytuje kody 1D i 2D z różnych odległości. Zasięg zależy od kodu oraz warunków w magazynie. Zdjęcia pokazują rodzinę Cold Storage; oferowany układ 38 klawiszy wskazano w specyfikacji.\n\n## Platforma Android i sieć magazynu\n\nAndroid 15 z GMS oraz pamięć 8 GB RAM i 128 GB Flash obsługują aplikacje magazynowe. Producent przewiduje możliwość aktualizacji do Androida 18. Terminal ma Wi-Fi 7, Bluetooth 6.0 i NFC. Ekran e-ink zachowuje ostatnio ustawioną informację także poniżej 0°C.\n\nBateria obsługuje wymianę hot swap. Deklarowany przez producenta czas pracy wynosi minimum 5 godzin przy −30°C w warunkach testowych. Rzeczywisty czas zależy od ogrzewania, transmisji i obciążenia aplikacji. Stację, zasilacz i przewód zasilający należy dobrać osobno.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Sprawdź zawartość wybranego zestawu przed doborem stacji i zasilacza. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 3 lata.\n\n## Porównaj terminale\n\nCold Storage ma podgrzewanie i baterię 5500 mAh do niskiej temperatury. [Standardowy RK96](/produkt/cipherlab-rk96) używa baterii 7000 mAh i ma inne warunki pracy. Dobieraj wyposażenie do wersji Cold Storage, zamiast kierować się samą nazwą RK96. Pełną ofertę znajdziesz w kategorii [terminale CipherLab](/terminale-cipherlab).",
+    "description": "CipherLab RK96 Cold Storage — Terminal do mroźni z podgrzewaniem ekranu, skanerem SE5800 i baterią 5500 mAh. Android 15, Wi-Fi 7 oraz klawiatura 38 klawiszy.\n\n## Wersja RK96 do pracy w mroźni\n\nCipherLab RK96 Cold Storage jest przeznaczony do pracy od −30°C do +50°C. Oferowany PN AK96N5F53NSGC ma moduł SE5800, klawiaturę funkcyjno-numeryczną 38 klawiszy oraz baterię 5500 mAh dostosowaną do niskiej temperatury. Nie jest to standardowy RK96 z baterią 7000 mAh.\n\nPodgrzewanie pomaga usuwać zaparowanie przy zmianach temperatury. Czujnik temperatury i oprogramowanie sterują ogrzewaniem automatycznie lub ręcznie.\n\n## Skanowanie i obsługa w rękawicach\n\nEkran 4,3 cala obsługuje dotyk zgodnymi rękawicami, a fizyczna klawiatura ułatwia wpisywanie ilości. SE5800 odczytuje kody 1D i 2D z różnych odległości. Zasięg zależy od kodu oraz warunków w magazynie.\n\n## Platforma Android i sieć magazynu\n\nAndroid 15 z GMS oraz pamięć 8 GB RAM i 128 GB Flash obsługują aplikacje magazynowe. Producent przewiduje możliwość aktualizacji do Androida 18. Terminal ma Wi-Fi 7, Bluetooth 6.0 i NFC. Ekran e-ink zachowuje ostatnio ustawioną informację także poniżej 0°C.\n\nBateria obsługuje wymianę hot swap. Deklarowany przez producenta czas pracy wynosi minimum 5 godzin przy −30°C w warunkach testowych. Rzeczywisty czas zależy od ogrzewania, transmisji i obciążenia aplikacji. Stację, zasilacz i przewód zasilający należy dobrać osobno.\n\n## Ładowanie i zgodne akcesoria\n\nAkcesoria poniżej są wyposażeniem opcjonalnym lub zapasowym. Aplikacja magazynowa i jej licencja nie są częścią terminala. Gwarancja producenta na terminal wynosi 3 lata.\n\n## Porównaj terminale\n\nCold Storage ma podgrzewanie i baterię 5500 mAh do niskiej temperatury. [Standardowy RK96](/produkt/cipherlab-rk96) używa baterii 7000 mAh i ma inne warunki pracy. Pełna oferta: [terminale CipherLab](/terminale-cipherlab).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
@@ -958,9 +958,9 @@ export const cipherlabProducts: Product[] = [
       "/images/products/cipherlab-rk96-cold-storage-4.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RK96 Cold Storage — widok z przodu; zdjęcie rodziny, układ klawiatury zależy od PN",
-      "CipherLab RK96 Cold Storage — ujęcie 2; uchwyt i osłona zależą od zestawu",
-      "CipherLab RK96 Cold Storage — ujęcie 4; uchwyt i osłona zależą od zestawu"
+      "CipherLab RK96 Cold Storage — widok z przodu, ekran 4,3 cala",
+      "CipherLab RK96 Cold Storage — przód pod kątem, klawiatura funkcyjno-numeryczna",
+      "CipherLab RK96 Cold Storage — górna krawędź z oknem skanera"
     ],
     "tags": [
       "magazyn"
@@ -1063,7 +1063,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja ładująca CipherLab RS20 — bez osłony — ARS20CHCNNNS1",
     "seoDescription": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala bez osłony. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "description": "Stacja ładująca CipherLab RS20 — bez osłony. PN ARS20CHCNNNS1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala bez osłony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1116,7 +1116,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja ładująca CipherLab RS20 — do osłony — ARS20CHCNNNR1",
     "seoDescription": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala z osłoną. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "description": "Stacja ładująca CipherLab RS20 — do osłony. PN ARS20CHCNNNR1. Zgodność: CipherLab RS20. Stacja jest bez zasilacza. Wersja dopasowana do terminala z osłoną. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1169,7 +1169,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Osłona i pasek CipherLab RS20 — ARS20RBNNNN02",
     "seoDescription": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Wyposażenie do zgodnych terminali.",
-    "description": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Zgodność: CipherLab RS20. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
+    "description": "Osłona i pasek CipherLab RS20. PN ARS20RBNNNN02. Zgodność: CipherLab RS20. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS20](/produkt/cipherlab-rs20).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1222,7 +1222,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja ładująca CipherLab RS38 — EU — ARS38CHCNNE01",
     "seoDescription": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "description": "Stacja ładująca CipherLab RS38 — EU. PN ARS38CHCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1275,7 +1275,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Uchwyt pistoletowy z osłoną CipherLab RS38 — ARS38PSTNNN11",
     "seoDescription": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Zgodność: CipherLab RS38. Zestaw obejmuje uchwyt i osłonę ochronną. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "description": "Uchwyt pistoletowy z osłoną CipherLab RS38. PN ARS38PSTNNN11. Zgodność: CipherLab RS38. Zestaw obejmuje uchwyt i osłonę ochronną. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1328,7 +1328,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja robocza CipherLab RS38 — EU — ARS38WCCNNE01",
     "seoDescription": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
+    "description": "Stacja robocza CipherLab RS38 — EU. PN ARS38WCCNNE01. Zgodność: CipherLab RS38. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1381,7 +1381,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii CipherLab RS38H — EU — ARS384SBHCE01",
     "seoDescription": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "description": "Ładowarka 4 baterii CipherLab RS38H — EU. PN ARS384SBHCE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1434,7 +1434,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja ładująca CipherLab RS38H — EU — ARS38CHCNHE01",
     "seoDescription": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "description": "Stacja ładująca CipherLab RS38H — EU. PN ARS38CHCNHE01. Zgodność: CipherLab RS38H. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1487,7 +1487,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Klips do przenoszenia CipherLab RS38H — ARS38CLIP0001",
     "seoDescription": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Wyposażenie do zgodnych terminali.",
-    "description": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "description": "Klips do przenoszenia CipherLab RS38H. PN ARS38CLIP0001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1540,7 +1540,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń CipherLab RS38H — ARS38HS000001",
     "seoDescription": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
+    "description": "Pasek na dłoń CipherLab RS38H. PN ARS38HS000001. Zgodność: CipherLab RS38H. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38H](/produkt/cipherlab-rs38h).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1593,7 +1593,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Uchwyt pistoletowy CipherLab RS36 — ARS35PSTNNN01",
     "seoDescription": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "description": "Uchwyt pistoletowy CipherLab RS36. PN ARS35PSTNNN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1646,7 +1646,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Przewód z nakładką USB CipherLab RS36 — ARS35SNPNUN01",
     "seoDescription": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Wyposażenie do zgodnych terminali.",
-    "description": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "description": "Przewód z nakładką USB CipherLab RS36. PN ARS35SNPNUN01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1699,7 +1699,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU — ARS365CBNNE01",
     "seoDescription": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "description": "Stacja 4 terminali i 4 baterii CipherLab RS36 — EU. PN ARS365CBNNE01. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1752,7 +1752,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja komunikacyjna CipherLab RS36 — EU — ARS36CCCNUE01",
     "seoDescription": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Zgodność: CipherLab RS36. W zestawie jest przewód micro-USB i zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "description": "Stacja komunikacyjna CipherLab RS36 — EU. PN ARS36CCCNUE01. Zgodność: CipherLab RS36. W zestawie jest przewód micro-USB i zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1805,7 +1805,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Osłona ochronna CipherLab RS35 / RS36 — PRS3500X01511",
     "seoDescription": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Wyposażenie do zgodnych terminali.",
-    "description": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
+    "description": "Osłona ochronna CipherLab RS35 / RS36. PN PRS3500X01511. Zgodność: CipherLab RS36. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1858,7 +1858,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU — ARK254SBNNE01",
     "seoDescription": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Zgodność: CipherLab RK26. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "description": "Ładowarka 4 baterii CipherLab RK25 / RK26 — EU. PN ARK254SBNNE01. Zgodność: CipherLab RK26. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1911,7 +1911,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja komunikacyjna CipherLab RK25 / RK26 — ARK25CCCNU201",
     "seoDescription": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Zgodność: CipherLab RK26. W zestawie jest przewód micro-USB. Zasilacz dobierz osobno. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "description": "Stacja komunikacyjna CipherLab RK25 / RK26. PN ARK25CCCNU201. Zgodność: CipherLab RK26. W zestawie jest przewód micro-USB. Zasilacz nie jest dołączony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1964,7 +1964,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Uchwyt pistoletowy CipherLab RK25 / RK26 — ARK25PSTNNN01",
     "seoDescription": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Wyposażenie do zgodnych terminali.",
-    "description": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Zgodność: CipherLab RK26. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
+    "description": "Uchwyt pistoletowy CipherLab RK25 / RK26. PN ARK25PSTNNN01. Zgodność: CipherLab RK26. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK26](/produkt/cipherlab-rk26).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2017,7 +2017,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU — ARK954SBNNE01",
     "seoDescription": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Zgodność: CipherLab RK96. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "description": "Ładowarka 4 baterii CipherLab RK95 / RK96 — EU. PN ARK954SBNNE01. Zgodność: CipherLab RK96. W zestawie jest zasilacz EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2070,7 +2070,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Stacja komunikacyjna CipherLab RK95 / RK96 — ARK95CCCNU201",
     "seoDescription": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Wyposażenie do zgodnych terminali.",
-    "description": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Zgodność: CipherLab RK96. W zestawie jest przewód micro-USB. Zasilacz dobierz osobno. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "description": "Stacja komunikacyjna CipherLab RK95 / RK96. PN ARK95CCCNU201. Zgodność: CipherLab RK96. W zestawie jest przewód micro-USB. Zasilacz nie jest dołączony. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2123,7 +2123,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Ładowarka 20 baterii CipherLab RK96 — EU — ARK95MSCNNE01",
     "seoDescription": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Wyposażenie do zgodnych terminali.",
-    "description": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Zgodność: CipherLab RK96.  W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
+    "description": "Ładowarka 20 baterii CipherLab RK96 — EU. PN ARK95MSCNNE01. Zgodność: CipherLab RK96.  W zestawie jest zasilacz i przewód EU. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2176,7 +2176,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Pasek na ramię CipherLab RK / RS — BAERSTR100003",
     "seoDescription": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "description": "Pasek na ramię CipherLab RK / RS. PN BAERSTR100003. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2232,7 +2232,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń CipherLab RK95 / RK96 — XRK9500X01584",
     "seoDescription": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "description": "Pasek na dłoń CipherLab RK95 / RK96. PN XRK9500X01584. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2286,7 +2286,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń CipherLab RS35 / RS36 / RS38 — XRS3500X01504",
     "seoDescription": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Wyposażenie do zgodnych terminali.",
-    "description": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "description": "Pasek na dłoń CipherLab RS35 / RS36 / RS38. PN XRS3500X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -2342,7 +2342,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Kabura CipherLab do terminala z uchwytem — X970000X01504",
     "seoDescription": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Sprawdź cenę netto, dostępność i zgodne terminale w TAKMA.",
     "shortDescription": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Wyposażenie do zgodnych terminali.",
-    "description": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno. Nie dobieraj wyposażenia tylko według podobnego wyglądu.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
+    "description": "Kabura CipherLab do terminala z uchwytem. PN X970000X01504. Zgodność: CipherLab RS36. Zgodność: CipherLab RS38. Zgodność: CipherLab RK26. Zgodność: CipherLab RK96. Zgodność: CipherLab RK96 Cold Storage. Terminal jest sprzedawany osobno.\n\n## Zgodne terminale\n\n[CipherLab RS36](/produkt/cipherlab-rs36), [CipherLab RS38](/produkt/cipherlab-rs38), [CipherLab RK26](/produkt/cipherlab-rk26), [CipherLab RK96](/produkt/cipherlab-rk96), [CipherLab RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
