@@ -311,3 +311,13 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 
 ## Terminale SUNMI
 - [Terminale SUNMI](https://www.takma.com.pl/terminale-sunmi): kolektory L3, L2Ks, L2H i L2s Pro, terminal M3 oraz V3, V3H i V3 Plus z drukarką. Parametry i zgodność akcesoriów zależą od PN.
+
+## Terminale CipherLab
+- [Terminale CipherLab](https://www.takma.com.pl/terminale-cipherlab): kolektory danych Android, dotykowe RS i z klawiaturą RK. Ceny netto i dostępność według PN.
+- CipherLab RS20 (sklep, Android 16, 5,5", 198 g, Wi-Fi 6E, OCR, od 3 050 zł): https://www.takma.com.pl/produkt/cipherlab-rs20
+- CipherLab RS36 (5,5", 4/64 GB, Wi-Fi lub 4G LTE, następca RS35, od 4 096 zł): https://www.takma.com.pl/produkt/cipherlab-rs36
+- CipherLab RS38 (6", 8/128 GB, Wi-Fi 6E, 5G, Android 13→18, od 4 831 zł): https://www.takma.com.pl/produkt/cipherlab-rs38
+- CipherLab RS38H (ochrona zdrowia, obudowa do dezynfekcji, SE4720, SOS, 5G, od 5 536 zł): https://www.takma.com.pl/produkt/cipherlab-rs38h
+- CipherLab RK26 (klawiatura 25/28, 4", Android 12, Wi-Fi lub LTE, od 3 965 zł): https://www.takma.com.pl/produkt/cipherlab-rk26
+- CipherLab RK96 (gun z klawiaturą, Wi-Fi 7, 7000 mAh, gwarancja 3 lata, następca RK95, od 7 357 zł): https://www.takma.com.pl/produkt/cipherlab-rk96
+- CipherLab RK96 Cold Storage (mroźnia od −30°C, podgrzewany ekran, 5500 mAh, od 9 645 zł): https://www.takma.com.pl/produkt/cipherlab-rk96-cold-storage
