@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer'
 import RFQDrawer from '@/components/rfq/RFQDrawer'
 import CookieConsent from '@/components/layout/CookieConsent'
 import { nasluchujBledowKlienta } from '@/lib/client-error-report'
+import { oznaczSciezke } from '@/lib/snapshot-strony'
 
 /**
  * `after` renderuje się WEWNĄTRZ <body>, na jego końcu. To nie kosmetyka:
@@ -27,6 +28,8 @@ export default function LayoutShell({
   const showChrome = !isAdmin && !isPanel
 
   useEffect(() => nasluchujBledowKlienta(), [])
+  // Widoki błędu biorą treść z HTML serwera tylko przed pierwszą nawigacją w przeglądarce.
+  useEffect(() => oznaczSciezke(pathname), [pathname])
 
   return (
     <body className={showChrome ? 'min-h-screen flex flex-col' : 'min-h-screen'}>
