@@ -12,6 +12,7 @@ import { applyStockOverrides, MANUAL_STOCK_OVERRIDES } from '@/lib/stock-overrid
 import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
 import { zebraTerminalPartNumbers, stockCacheMaxAge } from '@/lib/zebra-terminal-catalog'
 import { selectTerminalPurchasePrice, ZEBRA_TERMINAL_CACHE_MAX_AGE_MS, ZEBRA_TERMINAL_PRICE_MULTIPLIER } from '@/lib/zebra-terminal-pricing'
+import { dopiszCenyPochodne, mapaKartonow, numeryPlanowSerwisowych } from '@/lib/ceny-pochodne'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -24,6 +25,11 @@ const newlandPNs = new Set(products.filter(p => p.manufacturerId === 'newland').
 ))
 
 const VAT = 1.23           // 23% VAT
+
+// Cena kartonowa i cena kontraktu serwisowego liczone z ceny zakupu — patrz lib/ceny-pochodne.
+const kartonyPN = mapaKartonow(products)
+const planySerwisowePN = numeryPlanowSerwisowych(products)
+const dopiszCeny = (wiersz: StockInfo) => dopiszCenyPochodne(wiersz, kartonyPN, planySerwisowePN)
 
 // ============================================
 // KURS EUR/PLN z NBP API (cache 12h)
@@ -298,6 +304,7 @@ export async function lookupUnifiedStock(
         }
       })
       results.forEach(applyStockOverrides)
+      results.forEach(dopiszCeny)
 
       // Background write-through: jeśli były override'y, zaktualizuj StockCache
       // (fire-and-forget — nie blokuje response)
@@ -659,6 +666,7 @@ export async function lookupUnifiedStock(
       }
     })
     finalResults.forEach(applyStockOverrides)
+    finalResults.forEach(dopiszCeny)
 
     const response: Record<string, unknown> = {
       results: finalResults,

@@ -23,7 +23,9 @@ export interface StockInfo {
   found: boolean
   price?: number         // Netto z marżą
   priceBrutto?: number   // Brutto
-  ingramPrice?: number   // Surowa cena Ingram (YourPrice)
+  ingramPrice?: number   // Surowa cena Ingram (YourPrice) — tylko serwer, nie trafia do publicznego /api/stock
+  cartonPrice?: number   // Netto za rolkę przy zakupie kartonu (taśmy, etykiety) — lib/ceny-pochodne
+  servicePlanPrice?: number // Netto kontraktu serwisowego (OneCare itp.) — lib/ceny-pochodne
   stockPL: number        // Magazyn lokalny (PL) — dostawa 24h
   stockDE: number        // Magazyn centralny (DE) — dostawa 2-3 dni
   inDelivery: number     // W dostawie
