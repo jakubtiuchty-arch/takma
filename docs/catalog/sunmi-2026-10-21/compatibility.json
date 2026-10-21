@@ -169,5 +169,35 @@
       "v3",
       "v3h"
     ]
+  },
+  {
+    "pn": "X09060609",
+    "name": "Bateria SUNMI L3",
+    "models": [
+      "l3"
+    ]
+  },
+  {
+    "pn": "X09060403",
+    "name": "Bateria SUNMI L2Ks",
+    "models": [
+      "l2ks"
+    ]
+  },
+  {
+    "pn": "X09060578",
+    "name": "Bateria SUNMI L2H / L2s Pro",
+    "models": [
+      "l2h",
+      "l2s-pro"
+    ]
+  },
+  {
+    "pn": "X09050774",
+    "name": "Bateria SUNMI V3 / V3H",
+    "models": [
+      "v3",
+      "v3h"
+    ]
   }
 ]

@@ -144,7 +144,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c02020013",
       "sunmi-c20000106",
       "sunmi-c11000007",
-      "sunmi-c11000003"
+      "sunmi-c11000003",
+      "sunmi-x09060609"
     ],
     "relatedProducts": [
       "sunmi-m3",
@@ -283,7 +284,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c11000001",
       "sunmi-c14000157",
       "sunmi-c14000159",
-      "sunmi-c14004014"
+      "sunmi-c14004014",
+      "sunmi-x09060403"
     ],
     "relatedProducts": [
       "m3-sl20k",
@@ -404,7 +406,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c14004067",
       "sunmi-c20000001",
       "sunmi-c20000003",
-      "sunmi-c20000026"
+      "sunmi-c20000026",
+      "sunmi-x09060578"
     ],
     "relatedProducts": [
       "sunmi-l2s-pro",
@@ -558,7 +561,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c14004067",
       "sunmi-c20000001",
       "sunmi-c20000003",
-      "sunmi-c20000026"
+      "sunmi-c20000026",
+      "sunmi-x09060578"
     ],
     "relatedProducts": [
       "sunmi-l2h",
@@ -822,7 +826,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c14004112",
       "sunmi-c20000060",
       "sunmi-c20000086",
-      "sunmi-c20000095"
+      "sunmi-c20000095",
+      "sunmi-x09050774"
     ],
     "relatedProducts": [
       "sunmi-v3h",
@@ -943,7 +948,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-c14004112",
       "sunmi-c20000060",
       "sunmi-c20000086",
-      "sunmi-c20000095"
+      "sunmi-c20000095",
+      "sunmi-x09050774"
     ],
     "relatedProducts": [
       "sunmi-v3",
@@ -1239,7 +1245,9 @@ export const sunmiAccessories: Product[] = [
       }
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-x09060609"
+    ],
     "relatedProducts": [
       "sunmi-l3",
       "sunmi-m3"
@@ -1318,10 +1326,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c02020013.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Szkło ochronne SUNMI L3 / M3 przyłożone do ekranu terminala; terminal nie jest dołączony"
     ],
     "tags": [
       "magazyn"
@@ -1376,10 +1384,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c20000106.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Etui ochronne SUNMI L3 / M3 założone na terminal, widok z tyłu i z przodu; terminale nie są dołączone"
     ],
     "tags": [
       "magazyn"
@@ -1434,10 +1442,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c11000007.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Pasek na dłoń SUNMI L3 / M3 zamocowany z tyłu terminala; terminal nie jest dołączony"
     ],
     "tags": [
       "magazyn"
@@ -1545,10 +1553,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c02004005.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Szkło ochronne SUNMI L2Ks nad ekranem terminala z klawiaturą; terminal nie jest dołączony"
     ],
     "tags": [
       "magazyn"
@@ -1655,10 +1663,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c14000157.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Ładowarka 4 baterii SUNMI L2Ks z bateriami w gniazdach i jedną baterią nad ładowarką; baterie nie są dołączone"
     ],
     "tags": [
       "magazyn"
@@ -1686,7 +1694,9 @@ export const sunmiAccessories: Product[] = [
       }
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-x09060403"
+    ],
     "relatedProducts": [
       "sunmi-l2ks"
     ],
@@ -1712,10 +1722,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c14000159.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Uchwyt spustowy SUNMI L2Ks z pomarańczowym spustem, widok od strony mocowania terminala"
     ],
     "tags": [
       "magazyn"
@@ -1818,10 +1828,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c14000144.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Stacja SUNMI L2H / L2s Pro z gniazdem na terminal i tylnym gniazdem na baterię zapasową"
     ],
     "tags": [
       "magazyn"
@@ -1853,7 +1863,9 @@ export const sunmiAccessories: Product[] = [
       }
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-x09060578"
+    ],
     "relatedProducts": [
       "sunmi-l2h",
       "sunmi-l2s-pro"
@@ -1880,10 +1892,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c14004067.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Stacja 4-stanowiskowa SUNMI L2H / L2s Pro z czterema gniazdami na terminale"
     ],
     "tags": [
       "magazyn"
@@ -1942,10 +1954,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c20000001.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Gumowe etui ochronne SUNMI L2H / L2s Pro z otworem na aparat"
     ],
     "tags": [
       "magazyn"
@@ -1999,10 +2011,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c20000003.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Szkło ochronne SUNMI L2H / L2s Pro przyłożone do ekranu terminala; terminal nie jest dołączony"
     ],
     "tags": [
       "magazyn"
@@ -2057,10 +2069,10 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/sunmi-c20000026.webp"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "Pasek na dłoń SUNMI L2H / L2s Pro z klamrą regulacyjną"
     ],
     "tags": [
       "magazyn"
@@ -2327,5 +2339,221 @@ export const sunmiAccessories: Product[] = [
     "downloads": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
+  },
+  {
+    "id": "sunmi-x09060609",
+    "slug": "sunmi-x09060609",
+    "name": "Bateria SUNMI L3",
+    "seoTitle": "Bateria SUNMI L3 — X09060609",
+    "seoDescription": "Bateria zapasowa SUNMI L3, Li-ion 4,4 V, 5000 mAh. Bateria do terminala SUNMI L3. PN X09060609. Cena netto i dostępność w TAKMA.",
+    "shortDescription": "Bateria zapasowa SUNMI L3, 4,4 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
+    "description": "Bateria zapasowa SUNMI L3, 4,4 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060609 zastępuje baterię wyjętą z terminala SUNMI L3. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Wymiana i ładowanie\n\nWymiana baterii hot swap bez wyłączania terminala zależy od PN. Mają ją SUNMI L3 P09070015, P09070073, P09070030, P09070036 i P09070052. W P09070072 wyłącz terminal przed wymianą baterii. Baterię poza terminalem ładuje [ładowarka 4 baterii C14004143](/produkt/sunmi-c14004143).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "baterie-do-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "on-order",
+    "priceFrom": 104.7,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "X09060609"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI L3"
+      },
+      {
+        "name": "Napięcie i pojemność",
+        "value": "4,4 V, 5000 mAh"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c14004143"
+    ],
+    "relatedProducts": [
+      "sunmi-l3"
+    ],
+    "applications": [
+      "Bateria zapasowa na kolejną zmianę"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-x09060403",
+    "slug": "sunmi-x09060403",
+    "name": "Bateria SUNMI L2Ks",
+    "seoTitle": "Bateria SUNMI L2Ks — X09060403",
+    "seoDescription": "Bateria zapasowa SUNMI L2Ks, Li-ion 3,8 V, 5000 mAh. Bateria do terminala z klawiaturą SUNMI L2Ks. PN X09060403. Cena netto i dostępność w TAKMA.",
+    "shortDescription": "Bateria zapasowa SUNMI L2Ks, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
+    "description": "Bateria zapasowa SUNMI L2Ks, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060403 zastępuje wymienną baterię terminala SUNMI L2Ks. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Ładowanie\n\nBaterię poza terminalem ładuje [ładowarka 4 baterii C14000157](/produkt/sunmi-c14000157). Ładowarka ma cztery gniazda. Zasilacz i przewód zasilający EU są w zestawie ładowarki.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "baterie-do-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 148.58,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "X09060403"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI L2Ks"
+      },
+      {
+        "name": "Napięcie i pojemność",
+        "value": "3,8 V, 5000 mAh"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c14000157"
+    ],
+    "relatedProducts": [
+      "sunmi-l2ks"
+    ],
+    "applications": [
+      "Bateria zapasowa na kolejną zmianę"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-x09060578",
+    "slug": "sunmi-x09060578",
+    "name": "Bateria SUNMI L2H / L2s Pro",
+    "seoTitle": "Bateria SUNMI L2H / L2s Pro — X09060578",
+    "seoDescription": "Bateria zapasowa SUNMI L2H i SUNMI L2s Pro, Li-ion 3,8 V, 5000 mAh. PN X09060578. Cena netto i dostępność w TAKMA.",
+    "shortDescription": "Bateria zapasowa SUNMI L2H i L2s Pro, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
+    "description": "Bateria zapasowa SUNMI L2H i L2s Pro, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060578 zastępuje wymienną baterię terminala SUNMI L2H lub L2s Pro. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Ładowanie\n\n[Stacja C14000144](/produkt/sunmi-c14000144) ładuje jednocześnie terminal i jedną baterię zapasową. [Stacja 4-stanowiskowa C14004067](/produkt/sunmi-c14004067) ładuje terminale, ale nie ma gniazda na osobną baterię.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "baterie-do-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/sunmi-x09060578.webp"
+    ],
+    "imageDescriptions": [
+      "Bateria SUNMI X09060578 do L2H i L2s Pro, widok etykiety z oznaczeniem 3,8 V i 5000 mAh"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 111.62,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "X09060578"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI L2H, SUNMI L2s Pro"
+      },
+      {
+        "name": "Napięcie i pojemność",
+        "value": "3,8 V, 5000 mAh"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c14000144"
+    ],
+    "relatedProducts": [
+      "sunmi-l2h",
+      "sunmi-l2s-pro"
+    ],
+    "applications": [
+      "Bateria zapasowa na kolejną zmianę"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-x09050774",
+    "slug": "sunmi-x09050774",
+    "name": "Bateria SUNMI V3 / V3H",
+    "seoTitle": "Bateria SUNMI V3 / V3H — X09050774",
+    "seoDescription": "Bateria zapasowa SUNMI V3 i SUNMI V3H. Bateria do terminala POS z drukarką SUNMI V3 lub V3H. PN X09050774. Cena netto i dostępność w TAKMA.",
+    "shortDescription": "Bateria zapasowa SUNMI V3 i V3H. Druga bateria pozwala kontynuować obsługę klientów po rozładowaniu pierwszej.",
+    "description": "Bateria zapasowa SUNMI V3 i V3H. Druga bateria pozwala kontynuować obsługę klientów po rozładowaniu pierwszej.\n\nBateria SUNMI X09050774 zastępuje wymienną baterię terminala SUNMI V3 lub V3H. Naładowana bateria zapasowa skraca przerwę w obsłudze klientów.\n\n## Zgodność i ładowanie\n\nBateria pasuje do SUNMI V3 i V3H. Bateria ładuje się w terminalu, np. po odłożeniu go do [stacji ładującej C14004112](/produkt/sunmi-c14004112). Stacja przyjmuje terminal bez etui.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "baterie-do-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 111.62,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "X09050774"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI V3, SUNMI V3H"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-v3",
+      "sunmi-v3h"
+    ],
+    "applications": [
+      "Bateria zapasowa do pracy przy kliencie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]

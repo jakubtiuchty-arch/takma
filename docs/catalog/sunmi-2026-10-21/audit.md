@@ -78,3 +78,10 @@ Migawka cen i stanów z istniejącej integracji TAKMA (wybór oferty Ingram/Jarl
 - 8 PDF pobranych przez adresy lokalne; sprawdzona sygnatura `%PDF`.
 - Zweryfikowano rozwijanie 4 → 8 → 4 akcesoriów L3.
 - Produkcja wyłącznie z commita na `claude/takma-frontend-build-RrM9E`; sprawdzenie po publikacji zostanie zapisane w raporcie końcowym.
+
+## Uzupełnienie 2026-10-22: zdjęcia akcesoriów i baterie
+
+- Zdjęcia 12 akcesoriów zamiast obrazu zastępczego. C02020013, C20000106 i C11000007: oficjalne rendery z https://www.sunmi.com/en/l3/ (`file.cdn.sunmi.com/newebsite/products/l3/lg/p10-1.jpg`, `p10-2.jpg`, `p10-3.jpg`), tło wycięte rembg (BiRefNet). C02004005, C14000157, C14000159, C14000144, C14004067, C20000001, C20000003, C20000026 i bateria X09060578: zdjęcia producenta z kart produktów barcodesite.eu (Shopify, 700–768 px). Obróbka `scripts/obrob-zdjecia.py --plotno=1254x1254 --wypelnienie=0.78`, zapis WebP 1254 × 1254 na białym tle.
+- C14000144: plik z karty barcodesite C14004014. To samo zdjęcie ERS i barcodesite przypisują C14000144 (miniatury 200–265 px); C14004014 zostaje z obrazem zastępczym, bo nie wiadomo, czy stacja L2Ks wygląda tak samo.
+- Bez zdjęcia (brak źródła w dobrej jakości): C11000003 (tylko zdjęcie z osobą i miniatura 70 × 144), C11000001, C14004014, C14004112, C20000060, C20000086 i C20000095 (miniatury 200–500 px lub plansza z logo), baterie X09060609, X09060403 i X09050774.
+- Baterie: PN z list akcesoriów Jarltech (sunl3bat X09060609 – L3; sunl2ksbat X09060403 – L2Ks; sunl2sbat-5 X09060578 – L2H i L2s Pro; sunv3bat X09050774 – V3 i V3H) i ERS. Napięcie i pojemność z kart katalogowych w `public/datasheets/`. Dla M3 i V3 Plus nie znaleziono PN baterii zapasowej. E15014028 i E15010063 (L2s/L2H) nie mają oferty w integracji.
