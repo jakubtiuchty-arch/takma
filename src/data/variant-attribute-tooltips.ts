@@ -12,6 +12,7 @@ export const variantAttributeTooltips: Record<string, string> = {
   "Druk": "Sposób tworzenia nadruku.\n• DT — głowica nagrzewa papier termiczny; taśma barwiąca nie jest potrzebna.\n• TT — głowica przenosi barwnik z taśmy na etykietę.\n• Trwałość zależy od dobranego materiału i taśmy.",
   "Metoda druku": "Sposób tworzenia nadruku.\n• Termiczny — wymaga papieru termicznego, bez taśmy barwiącej.\n• Termotransferowy — wymaga taśmy dobranej do papieru lub folii.\n• Kodowanie RFID jest osobną czynnością od nadruku.",
   "Ethernet": "Przewodowe połączenie z siecią lokalną przez port RJ-45.\n• Umożliwia udostępnienie urządzenia stanowiskom w tej samej sieci.\n• Sam port nie zapewnia integracji z WMS lub ERP; potrzebne jest zgodne oprogramowanie.",
+  "RS-232": "Port szeregowy do połączenia z komputerem lub urządzeniem z portem COM.\n• Wymaga przewodu RS-232, np. SER-KAB-9-9.",
   "Wi-Fi": "Połączenie z bezprzewodową siecią lokalną.\n• Wymaga zgodnego punktu dostępowego i konfiguracji sieci.\n• Nie zapewnia internetu poza zasięgiem tej sieci.",
   'Bluetooth': 'Parowanie bezpośrednio z telefonem, tabletem lub terminalem.\n• Bez sieci Wi-Fi\n• MFi — certyfikat do pracy z urządzeniami Apple',
   'Kabel USB': 'Kabel USB w zestawie.\n• Bez tego oznaczenia kabel trzeba dokupić',

@@ -87,7 +87,8 @@ export const bixolonLabelProducts: Product[] = [
         "priceFrom": 871.01,
         "availability": "available",
         "attributes": {
-          "Interfejsy": "USB, RS-232, Ethernet"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -95,9 +96,7 @@ export const bixolonLabelProducts: Product[] = [
         "name": "203 dpi, USB",
         "priceFrom": 754.88,
         "availability": "available",
-        "attributes": {
-          "Interfejsy": "USB"
-        }
+        "attributes": {}
       }
     ],
     "compatibleAccessories": [],
@@ -222,7 +221,8 @@ export const bixolonLabelProducts: Product[] = [
         "priceFrom": 1021.96,
         "availability": "unavailable",
         "attributes": {
-          "Interfejsy": "USB, RS-232, Ethernet"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -230,9 +230,7 @@ export const bixolonLabelProducts: Product[] = [
         "name": "203 dpi, USB",
         "priceFrom": 905.83,
         "availability": "unavailable",
-        "attributes": {
-          "Interfejsy": "USB"
-        }
+        "attributes": {}
       }
     ],
     "compatibleAccessories": [],
@@ -362,9 +360,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -376,7 +373,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -390,9 +388,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -403,10 +401,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
-          "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "108 mm"
         }
       },
       {
@@ -418,7 +413,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -432,8 +428,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "178 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -446,9 +442,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -460,9 +456,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -474,9 +469,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -487,10 +482,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
-          "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "105,7 mm"
         }
       },
       {
@@ -502,7 +494,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -516,8 +509,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -530,7 +523,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -661,9 +655,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -675,9 +669,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -689,9 +682,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -702,10 +695,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "108 mm"
         }
       },
       {
@@ -717,7 +707,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -731,8 +722,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -745,7 +736,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -759,9 +751,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -773,9 +765,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -787,9 +778,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -800,10 +791,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
-          "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "105,7 mm"
         }
       },
       {
@@ -815,7 +803,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -829,8 +818,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -843,7 +832,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "102 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -974,7 +964,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -988,9 +979,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -1002,9 +993,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -1016,9 +1006,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -1029,10 +1019,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
-          "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "105,7 mm"
         }
       },
       {
@@ -1044,7 +1031,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -1058,8 +1046,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -1072,7 +1060,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -1205,9 +1194,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -1219,9 +1208,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -1233,9 +1221,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -1246,10 +1234,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
-          "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "108 mm"
         }
       },
       {
@@ -1261,7 +1246,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -1275,8 +1261,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -1289,7 +1275,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -1303,9 +1290,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Bluetooth",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Bluetooth"
         }
       },
       {
@@ -1317,9 +1304,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -1331,9 +1317,9 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Wi-Fi",
-          "Wyświetlacz": "Brak LCD"
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
+          "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
       {
@@ -1344,10 +1330,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
-          "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak",
-          "Wyświetlacz": "Brak LCD"
+          "Szerokość druku": "105,7 mm"
         }
       },
       {
@@ -1359,7 +1342,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth",
           "Wyświetlacz": "LCD"
         }
@@ -1373,8 +1357,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Wyświetlacz": "LCD"
         }
       },
@@ -1387,7 +1371,8 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "105,7 mm",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -1906,8 +1891,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, USB Host, RS-232",
-          "Łączność bezprzewodowa": "Brak"
+          "RS-232": "Tak"
         }
       },
       {
@@ -1919,8 +1903,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, USB Host, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak"
         }
       },
       {
@@ -1932,7 +1915,6 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -1945,8 +1927,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, USB Host, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak"
         }
       },
       {
@@ -1958,7 +1939,6 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -1971,8 +1951,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, RS-232",
-          "Łączność bezprzewodowa": "Brak"
+          "RS-232": "Tak"
         }
       }
     ],
@@ -2105,8 +2084,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, RS-232",
-          "Łączność bezprzewodowa": "Brak"
+          "RS-232": "Tak"
         }
       },
       {
@@ -2118,7 +2096,6 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -2131,8 +2108,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, USB Host, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak"
         }
       },
       {
@@ -2144,8 +2120,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
           "Szerokość druku": "54 mm",
-          "Interfejsy": "USB, RS-232",
-          "Łączność bezprzewodowa": "Brak"
+          "RS-232": "Tak"
         }
       },
       {
@@ -2157,7 +2132,6 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -2170,8 +2144,7 @@ export const bixolonLabelProducts: Product[] = [
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "100 mm/s",
           "Szerokość druku": "56,9 mm",
-          "Interfejsy": "USB, USB Host, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak"
         }
       }
     ],
@@ -2419,7 +2392,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -2431,7 +2404,8 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -2443,8 +2417,8 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -2455,7 +2429,8 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
@@ -2466,9 +2441,7 @@ export const bixolonLabelProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Rozdzielczość": "203 dpi",
-          "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak"
+          "Prędkość druku": "152 mm/s"
         }
       },
       {
@@ -2479,7 +2452,6 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
@@ -2491,7 +2463,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Bluetooth"
         }
       },
@@ -2503,8 +2475,8 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
-          "Łączność bezprzewodowa": "Brak"
+          "Ethernet": "Tak",
+          "RS-232": "Tak"
         }
       },
       {
@@ -2515,7 +2487,8 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
-          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
+          "Ethernet": "Tak",
+          "RS-232": "Tak",
           "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
@@ -2526,9 +2499,7 @@ export const bixolonLabelProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Rozdzielczość": "300 dpi",
-          "Prędkość druku": "127 mm/s",
-          "Interfejsy": "USB, USB Host",
-          "Łączność bezprzewodowa": "Brak"
+          "Prędkość druku": "127 mm/s"
         }
       },
       {
@@ -2539,7 +2510,6 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "127 mm/s",
-          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Wi-Fi"
         }
       }

@@ -61,7 +61,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB-C, RS-232; łączność radiowa według PN"
+        "value": "USB-C i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth 5.0 (MFi), Wi-Fi 2,4 i 5 GHz lub oba — według wersji"
       },
       {
         "name": "Bateria standardowa",
@@ -225,7 +229,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB-C, RS-232; łączność radiowa według PN"
+        "value": "USB-C i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth, Wi-Fi 2,4 i 5 GHz lub oba — według wersji"
       },
       {
         "name": "Bateria standardowa",
@@ -421,7 +429,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB-C, RS-232; łączność radiowa według PN"
+        "value": "USB-C i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth 5.0 (MFi), Wi-Fi 2,4 i 5 GHz lub oba — według wersji"
       },
       {
         "name": "Bateria standardowa",
@@ -617,7 +629,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232; łączność radiowa według PN"
+        "value": "USB i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth 4.1 w wersjach IAK5 i IKL5; wersje K5 bez łączności radiowej"
       },
       {
         "name": "Bateria standardowa",
@@ -663,9 +679,8 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "partNumber": "SPP-L310K5",
-        "name": "Brak, Etykiety z podkładem",
+        "name": "USB i RS-232, etykiety z podkładem",
         "attributes": {
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Etykiety z podkładem",
           "Prędkość druku": "127 mm/s"
         },
@@ -685,9 +700,8 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "partNumber": "SPP-L310K5L",
-        "name": "Brak, Linerless — bez podkładu",
+        "name": "USB i RS-232, linerless — bez podkładu",
         "attributes": {
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Linerless — bez podkładu",
           "Prędkość druku": "102 mm/s"
         },
@@ -797,7 +811,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232; łączność radiowa według PN"
+        "value": "USB i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth w wersjach iK5, Wi-Fi 2,4 i 5 GHz w wersjach WK5; wersje K5 bez łączności radiowej"
       },
       {
         "name": "Bateria standardowa",
@@ -847,16 +865,15 @@ export const bixolonMobileProducts: Product[] = [
         "attributes": {
           "Łączność bezprzewodowa": "Bluetooth",
           "Materiał": "Linerless — bez podkładu",
-          "Prędkość druku": "76mm/s"
+          "Prędkość druku": "76 mm/s"
         },
         "priceFrom": 1940.14,
         "availability": "unavailable"
       },
       {
         "partNumber": "SPP-L410K5",
-        "name": "Brak, Etykiety z podkładem",
+        "name": "USB i RS-232, etykiety z podkładem",
         "attributes": {
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Etykiety z podkładem",
           "Prędkość druku": "102 mm/s"
         },
@@ -865,11 +882,10 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "partNumber": "SPP-L410K5L/BEG",
-        "name": "Brak, Linerless — bez podkładu",
+        "name": "USB i RS-232, linerless — bez podkładu",
         "attributes": {
-          "Łączność bezprzewodowa": "Brak",
           "Materiał": "Linerless — bez podkładu",
-          "Prędkość druku": "76mm/s"
+          "Prędkość druku": "76 mm/s"
         },
         "priceFrom": 1672.53,
         "availability": "unavailable"
@@ -891,7 +907,7 @@ export const bixolonMobileProducts: Product[] = [
         "attributes": {
           "Łączność bezprzewodowa": "Wi-Fi",
           "Materiał": "Linerless — bez podkładu",
-          "Prędkość druku": "76mm/s"
+          "Prędkość druku": "76 mm/s"
         },
         "priceFrom": 2020.45,
         "availability": "unavailable"
@@ -1002,7 +1018,11 @@ export const bixolonMobileProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232; łączność radiowa według PN"
+        "value": "USB i RS-232"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Bluetooth 4.1 (MFi), Wi-Fi 2,4 i 5 GHz lub oba — według wersji"
       },
       {
         "name": "Bateria standardowa",
