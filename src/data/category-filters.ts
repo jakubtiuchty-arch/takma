@@ -1456,7 +1456,7 @@ for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-b
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }
 // Drukarki etykiet — strony marek: ten sam zestaw co kategoria (Producent chowa się sam)
-for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'drukarki-etykiet-tsc', 'drukarki-etykiet-citizen', 'drukarki-etykiet-brother']) {
+for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'drukarki-etykiet-tsc', 'drukarki-etykiet-citizen', 'drukarki-etykiet-brother', 'drukarki-etykiet-bixolon']) {
   categoryFilters[page] = categoryFilters['drukarki-etykiet']
 }
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
@@ -1658,4 +1658,19 @@ export const filtrCenaKatalogu: FilterDefinition = {
     { value: '5 000 – 10 000 zł', priceMin: 5000, priceMax: 10000 },
     { value: 'powyżej 10 000 zł', priceMin: 10000 },
   ],
+}
+
+// BIXOLON label printers use the same filter controls and taxonomy as other brands.
+for (const page of ['drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'biurkowe-drukarki-etykiet', 'przemyslowe-drukarki-etykiet', 'akcesoria-do-drukarek-etykiet']) {
+  const producer = categoryFilters[page]?.find(filter => filter.specKey === 'producent')
+  if (producer?.derived && !producer.derived.some(option => option.manufacturer === 'bixolon')) {
+    producer.derived.push({ value: 'BIXOLON', manufacturer: 'bixolon' })
+  }
+  for (const filter of categoryFilters[page] ?? []) {
+    if (!filter.derived || !['rodzaj', 'klasa'].includes(filter.specKey)) continue
+    const desktop = filter.derived.find(option => option.value === 'Biurkowa')
+    const industrial = filter.derived.find(option => option.value === 'Przemysłowa')
+    if (desktop) filter.derived.push({ value: desktop.value, slugs: ['bixolon-xd3-40d', 'bixolon-xd3-40t', 'bixolon-xd5-40d', 'bixolon-xd5-40t', 'bixolon-xd5-40iid', 'bixolon-xd5-40iit', 'bixolon-slp-dx220', 'bixolon-slp-tx220', 'bixolon-slp-dl410', 'bixolon-xl5-40ct', 'bixolon-xq-840ii', 'bixolon-xd5-40tr'] })
+    if (industrial) filter.derived.push({ value: industrial.value, slugs: ['bixolon-xt3-40', 'bixolon-xt5-40', 'bixolon-xt5-40nr'] })
+  }
 }

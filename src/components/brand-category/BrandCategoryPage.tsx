@@ -169,6 +169,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const allProducts = getProductsByBrandCategory(bc)
   const subcats = getSubcategoriesForCategory(bc.categoryId)
   const content = brandCategoryContent[slug]
+  const catalogSeo = ['skanery-datalogic', 'drukarki-etykiet-bixolon'].includes(bc.slug)
 
   // Subcats with products from this manufacturer
   const subcatsWithProducts = subcats
@@ -217,7 +218,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    ...(bc.slug === 'skanery-datalogic' ? { '@id': `https://www.takma.com.pl/${bc.slug}#breadcrumb` } : {}),
+    ...(catalogSeo ? { '@id': `https://www.takma.com.pl/${bc.slug}#breadcrumb` } : {}),
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://www.takma.com.pl' },
       { '@type': 'ListItem', position: 2, name: category.name, item: `https://www.takma.com.pl/${category.slug}` },
@@ -239,7 +240,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     ...(content?.updatedAt ? { dateModified: content.updatedAt } : {}),
     provider: { '@type': 'Organization', name: 'TAKMA', url: 'https://www.takma.com.pl' },
     about: { '@type': 'Brand', name: manufacturer.name },
-    ...(bc.slug === 'skanery-datalogic' ? {
+    ...(catalogSeo ? {
       breadcrumb: { '@id': `https://www.takma.com.pl/${bc.slug}#breadcrumb` },
       isPartOf: { '@type': 'WebSite', name: 'TAKMA', url: 'https://www.takma.com.pl/' },
     } : {
@@ -250,9 +251,9 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     }),
     mainEntity: {
       '@type': 'ItemList',
-      ...(bc.slug === 'skanery-datalogic' ? {
+      ...(catalogSeo ? {
         '@id': `https://www.takma.com.pl/${bc.slug}#lista-produktow`,
-        name: 'Skanery i czytniki kodów kreskowych Datalogic',
+        name: bc.slug === 'skanery-datalogic' ? 'Skanery i czytniki kodów kreskowych Datalogic' : bc.name,
         itemListOrder: 'https://schema.org/ItemListUnordered',
       } : {}),
       numberOfItems: allProducts.length,
@@ -266,7 +267,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   }
 
   const faqItems = content?.faq ?? bc.faq
-  const faqJsonLd = bc.slug !== 'skanery-datalogic' && faqItems.length > 0 ? {
+  const faqJsonLd = !catalogSeo && faqItems.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqItems.map(f => ({
@@ -690,7 +691,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         </section>
       ) : null}
 
-      <div className={`container-main py-8 lg:py-10 ${bc.slug === 'skanery-datalogic' ? 'rfid-text-links' : ''}`}>
+      <div className={`container-main py-8 lg:py-10 ${catalogSeo ? 'rfid-text-links' : ''}`}>
         {bc.heroImage ? (
           <RichText text={bc.longDescription} className="text-gray-600 leading-relaxed space-y-3 mb-6" />
         ) : (
@@ -736,11 +737,11 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
         {/* Układ z filtrami (konfiguracja w category-filters.ts): sidebar = checkboxy z licznikiem + nawigacja */}
         {filters ? (
           <>
-          {bc.slug === 'skanery-datalogic' && <h2 className="sr-only">Modele skanerów Datalogic — ceny i dostępność</h2>}
+          {catalogSeo && <h2 className="sr-only">{bc.slug === 'skanery-datalogic' ? 'Modele skanerów Datalogic — ceny i dostępność' : 'Modele drukarek etykiet BIXOLON — ceny i dostępność'}</h2>}
           <FilterableProductGrid
             products={produktyDoSiatki}
             filters={filters}
-            useLivePrices={bc.slug === 'skanery-datalogic'}
+            useLivePrices={catalogSeo}
             columns={3}
             filtersFirst
             showDualButtons

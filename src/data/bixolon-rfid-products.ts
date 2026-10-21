@@ -8,9 +8,9 @@ const headParts = [
 
 export const bixolonRfidAccessories: Product[] = [
   ...headParts.map<Product>(a => ({
-    id: `bixolon-xt5-glowica-${a.dpi}`, slug: `bixolon-xt5-glowica-${a.dpi}`, name: `Głowica ${a.dpi} dpi do BIXOLON ${a.model}`,
+    id: `bixolon-xt5-glowica-${a.dpi}`, slug: `bixolon-xt5-glowica-${a.dpi}`, name: `Głowica ${a.dpi} dpi BIXOLON XT5 — ${a.pn}`,
     shortDescription: `Głowica drukująca ${a.pn} do BIXOLON ${a.model}, ${a.dpi} dpi. Część zamienna do zgodnej wersji drukarki.`,
-    description: `Głowica ${a.pn} zastępuje zużytą głowicę ${a.dpi} dpi w BIXOLON ${a.model}. Wykonuje nadruk na etykiecie. Nie dodaje funkcji RFID. Sprawna drukarka ma głowicę już zamontowaną.\n\nDobierz tę część do tej samej rozdzielczości. Nie służy do samodzielnej zmiany rozdzielczości urządzenia. Przed zakupem podaj model i numer seryjny. Odłącz zasilanie przed wymianą.\n\nPasuje do odpowiedniej wersji [BIXOLON XT5-40NR](/produkt/bixolon-xt5-40nr).`,
+    description: `Głowica ${a.pn} zastępuje zużytą głowicę ${a.dpi} dpi w BIXOLON ${a.model}. Wykonuje nadruk na etykiecie. Nie dodaje funkcji RFID. Sprawna drukarka ma głowicę już zamontowaną.\n\nDobierz tę część do tej samej rozdzielczości. Nie służy do samodzielnej zmiany rozdzielczości urządzenia. Przed zakupem podaj model i numer seryjny. Odłącz zasilanie przed wymianą.\n\nPasuje do odpowiedniej wersji [BIXOLON XT5-40](/produkt/bixolon-xt5-40) oraz [XT5-40NR](/produkt/bixolon-xt5-40nr), przy tej samej rozdzielczości.`,
     seoTitle: `Głowica BIXOLON ${a.dpi} dpi ${a.pn} | TAKMA`,
     seoDescription: `Głowica ${a.pn}, ${a.dpi} dpi do BIXOLON ${a.model}. Sprawdź cenę, stan i zgodność części zamiennej.`,
     categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'bixolon',
@@ -22,14 +22,14 @@ export const bixolonRfidAccessories: Product[] = [
   })),
   {
     id: 'bixolon-les-400g', slug: 'bixolon-les-400g', name: 'Uchwyt rolki BIXOLON LES-400G',
-    shortDescription: 'Zewnętrzny uchwyt rolki do BIXOLON XD5-40tR. Obsługuje rolki do 203 mm na gilzie 25,4–38,1 mm.',
-    description: 'BIXOLON LES-400G podaje materiał z rolki umieszczonej za drukarką. Pasuje do [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr). Obsługuje rolki o średnicy zewnętrznej do 203 mm i gilzie 25,4–38,1 mm.\n\nUstaw uchwyt za drukarką. Wprowadź materiał przez tylną szczelinę i ustaw prowadnice. Uchwyt nie jest nawijakiem i nie ma napędu. Nie jest częścią standardowego zestawu drukarki.\n\nPrzy RFID dobierz także szerokość etykiety, odstęp i położenie wkładki. Większa rolka nie zmienia wymagań kodera ani dopuszczalnej grubości materiału.',
-    seoTitle: 'BIXOLON LES-400G — uchwyt rolki do XD5-40tR | TAKMA',
-    seoDescription: 'Zewnętrzny uchwyt BIXOLON LES-400G do XD5-40tR. Rolka do 203 mm, gilza 25,4–38,1 mm. Sprawdź cenę i stan.',
+    shortDescription: 'Zewnętrzny uchwyt rolki do zgodnych drukarek etykiet BIXOLON. Obsługuje rolki do 203 mm na gilzie 25,4–38,1 mm.',
+    description: 'BIXOLON LES-400G podaje materiał z rolki umieszczonej za drukarką. Pasuje do [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr), rodzin XD3-40d/t, XD5-40d/t, XD5-40IId/IIt, SLP-DX220/TX220, SLP-DL410, XL5-40 i XQ-840II. Obsługuje rolki o średnicy zewnętrznej do 203 mm i gilzie 25,4–38,1 mm.\n\nUstaw uchwyt za drukarką. Wprowadź materiał przez tylną szczelinę i ustaw prowadnice. Uchwyt nie jest nawijakiem i nie ma napędu. Nie jest częścią standardowego zestawu drukarki.\n\nPrzy RFID dobierz także szerokość etykiety, odstęp i położenie wkładki. Większa rolka nie zmienia wymagań kodera ani dopuszczalnej grubości materiału.',
+    seoTitle: 'BIXOLON LES-400G — zewnętrzny uchwyt rolki | TAKMA',
+    seoDescription: 'BIXOLON LES-400G: zewnętrzny uchwyt rolki do zgodnych drukarek XD3, XD5, SLP, XL5 i XQ. Rolka do 203 mm, gilza 25,4–38,1 mm. Sprawdź cenę i stan.',
     categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'bixolon',
     images: ['/images/products/bixolon-les-400g.webp'], imageDescriptions: ['BIXOLON LES-400G — zewnętrzny uchwyt rolki bez etykiet'],
     tags: ['magazyn', 'retail'], priceFrom: 75.12, availability: 'available', isNew: true, isBestseller: false,
-    specifications: [{ name: 'Part Number', value: 'LES-400G' }, { name: 'Zgodność', value: 'BIXOLON XD5-40tR' }, { name: 'Średnica rolki', value: 'Do 203 mm' }, { name: 'Średnica gilzy', value: '25,4–38,1 mm' }],
+    specifications: [{ name: 'Part Number', value: 'LES-400G' }, { name: 'Zgodność', value: 'XD3-40d/t, XD5-40d/t, XD5-40IId/IIt, XD5-40tR, SLP-DX220/TX220, SLP-DL410, XL5-40, XQ-840II' }, { name: 'Średnica rolki', value: 'Do 203 mm' }, { name: 'Średnica gilzy', value: '25,4–38,1 mm' }],
     applications: ['Podawanie etykiet z większej rolki'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xd5-40tr'],
     downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=62', size: 'PDF' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
   },

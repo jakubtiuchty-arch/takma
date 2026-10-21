@@ -3,12 +3,12 @@ import frames from '@/data/product-image-frames.json'
 import uniformBounds from '@/data/product-image-uniform-bounds.json'
 
 /** Center the physical product, rather than its transparent canvas, in square frames. */
-export function getProductImageFrameStyle(src: string): CSSProperties | undefined {
+export function getProductImageFrameStyle(src: string, visibleFraction = 0.82 * 0.85 * 0.95): CSSProperties | undefined {
   const bounds = (frames as Record<string, number[]>)[src]
   if (!bounds) return undefined
 
   const [left, top, right, bottom] = bounds
-  const scale = (0.82 * 0.85 * 0.95) / Math.max(right - left, bottom - top)
+  const scale = visibleFraction / Math.max(right - left, bottom - top)
   const x = (0.5 - (left + right) / 2) * 100
   const y = (0.5 - (top + bottom) / 2) * 100
 

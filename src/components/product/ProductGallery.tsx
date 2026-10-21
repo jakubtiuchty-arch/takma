@@ -14,9 +14,10 @@ interface ProductGalleryProps {
   productName: string
   imageDescriptions?: string[]
   spin?: SpinVideo
+  frameVisibleFraction?: number
 }
 
-export default function ProductGallery({ images, productName, imageDescriptions, spin }: ProductGalleryProps) {
+export default function ProductGallery({ images, productName, imageDescriptions, spin, frameVisibleFraction }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const displayImages = images.length > 0 ? images : ['/images/products/placeholder.svg']
@@ -25,7 +26,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
   const slideCount = displayImages.length + (spin ? 1 : 0)
   const spinIndex = spin ? displayImages.length : -1
   const isSpin = activeIndex === spinIndex
-  const imageFrameStyle = isSpin ? undefined : getProductImageFrameStyle(displayImages[activeIndex])
+  const imageFrameStyle = isSpin ? undefined : getProductImageFrameStyle(displayImages[activeIndex], frameVisibleFraction)
 
   const goToPrev = () => {
     setActiveIndex((prev) => (prev === 0 ? slideCount - 1 : prev - 1))
@@ -138,7 +139,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
                   alt={imageDescriptions?.[index] || `${productName} — miniatura ${index + 1}`}
                   fill
                   className="object-contain p-1"
-                  style={getProductImageFrameStyle(src)}
+                  style={getProductImageFrameStyle(src, frameVisibleFraction)}
                   sizes="(max-width: 374px) 64px, 80px"
                 />
               ) : (

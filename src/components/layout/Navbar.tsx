@@ -85,6 +85,7 @@ const navigation: NavItem[] = [
       { name: 'Brother', href: '/drukarki-etykiet-brother', logo: '/images/partners/brother_logo.png' },
       { name: 'TSC', href: '/drukarki-etykiet-tsc', logo: '/images/partners/logo_tsc.png' },
       { name: 'Citizen', href: '/drukarki-etykiet-citizen', logo: '/images/partners/logo_citizen.png' },
+      { name: 'BIXOLON', href: '/drukarki-etykiet-bixolon', logo: '/images/manufacturers/bixolon.jpg' },
       { name: 'Epson', href: '/kolorowe-drukarki-etykiet', logo: '/images/partners/logo_epson.png' },
       { name: 'Magicard by Brady', href: '/drukarki-kart-magicard', logo: '/images/partners/logo_magicard.png', logoClassName: 'h-[38px]' },
     ],

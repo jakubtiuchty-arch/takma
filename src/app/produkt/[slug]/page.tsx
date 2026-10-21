@@ -243,8 +243,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
+  const bixolonLabelProduct = product.manufacturerId === 'bixolon' && product.categoryId === 'drukarki-etykiet' && !product.subcategoryIds?.includes('drukarki-rfid')
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const rfidTextLinks = isRfidContentProduct(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
+  const rfidTextLinks = isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
@@ -332,8 +333,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const rfidLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id) : []
   const needsRfidCoreAdapter = rfidLabelIds.some(labelId => rfidLabelRequirementForPrinter(labelId, product.id) === 'adapter-76')
   const onMetalLabelIds = isRfidPrinter ? rfidLabelIdsForPrinter(product.id, true) : []
-  const isLabelPrinter = product.categoryId === 'drukarki-etykiet' && !isRfidPrinter
-  const isTTprinter = (product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false) && !isRfidPrinter
+  // New BIXOLON models require confirmed roll/core/winding compatibility; linerless must not inherit ordinary labels.
+  const isLabelPrinter = product.categoryId === 'drukarki-etykiet' && !isRfidPrinter && !bixolonLabelProduct
+  const isTTprinter = (product.subcategoryIds?.includes('termotransferowe-drukarki-etykiet') ?? false) && !isRfidPrinter && !bixolonLabelProduct
   // Kolorowa drukarka (Epson ColorWorks): etykiety Zebry do niej nie pasują, w miejscu sekcji etykiet
   // idą tusze i nośniki z compatibleAccessories.
   const isColorPrinter = product.subcategoryIds?.includes('kolorowe-drukarki-etykiet') ?? false
@@ -614,7 +616,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       downloadUrl: `https://www.takma.com.pl/pobierz/${product.slug}`,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'PLN', availability: 'https://schema.org/InStock' },
     } : {}),
-    ...(datalogicScannerProduct ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
+    ...((datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
     name: product.name,
     description: product.shortDescription,
     image: product.images.map(absoluteProductImageUrl),
@@ -742,7 +744,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://www.takma.com.pl/produkt/${product.slug}` })
 
   const breadcrumbJsonLd = {
-    ...(datalogicScannerProduct ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
+    ...((datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: breadcrumbItems,
@@ -765,7 +767,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       name: product.name,
       url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
-    ...(datalogicScannerProduct ? {
+    ...((datalogicScannerProduct || bixolonLabelProduct) ? {
       '@id': `https://www.takma.com.pl/produkt/${product.slug}#webpage`,
       mainEntity: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#${liveOffers && (product.variants?.length ?? 0) > 1 ? 'product-group' : 'product'}` },
       breadcrumb: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` },
@@ -786,7 +788,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // więc przy okazji znikał także schemat pytań — na czternastu kartach z sekcją `faq`,
   // między innymi całej serii Epson ColorWorks i drukarkach kart Zebry. FAQPage to osobny typ
   // i nie koliduje z niczym, co renderuje LiveProductSchema.
-  const faqJsonLd = !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
+  const faqJsonLd = !bixolonLabelProduct && !datalogicScannerContent && !product.subcategoryIds?.includes('etykiety-rfid') && product.faq && product.faq.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: product.faq.map(item => ({
@@ -1010,7 +1012,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
           {liveOffers && <div className="order-first min-w-0 lg:col-start-2 lg:row-start-1">{productHeading}</div>}
           {/* Gallery */}
           <div className={liveOffers ? "min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2" : "min-w-0"}>
-            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} />
+            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} frameVisibleFraction={bixolonLabelProduct ? 0.78 : undefined} />
           </div>
 
           {/* Product info */}

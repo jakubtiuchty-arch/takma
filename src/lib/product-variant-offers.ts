@@ -57,13 +57,14 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const stock = new Map(rows.map(row => [row.partNumber, row]))
   const rfidTerminal = product.subcategoryIds?.some(id => id === 'terminale-rfid' || id === 'uchwyty-rfid') ?? false
   const datalogicScanner = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const detailedProduct = rfidTerminal || datalogicScanner
+  const bixolonLabel = product.manufacturerId === 'bixolon' && product.categoryId === 'drukarki-etykiet' && !product.subcategoryIds?.includes('drukarki-rfid')
+  const detailedProduct = rfidTerminal || datalogicScanner || bixolonLabel
   const commonProperties = detailedProduct ? product.specifications
     .filter(spec => spec.name !== 'Part Number')
     .map(spec => ({ '@type': 'PropertyValue', name: spec.name, value: spec.value })) : []
   const facts = detailedProduct ? {
-    model: datalogicScanner ? product.name.replace(/^Datalogic\s+/, '') : product.name.replace(/^Zebra\s+/, ''),
-    category: datalogicScanner ? 'Skanery kodów kreskowych Datalogic' : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
+    model: bixolonLabel ? product.name.replace(/^BIXOLON\s+/, '') : datalogicScanner ? product.name.replace(/^Datalogic\s+/, '') : product.name.replace(/^Zebra\s+/, ''),
+    category: bixolonLabel ? 'Drukarki etykiet BIXOLON' : datalogicScanner ? 'Skanery kodów kreskowych Datalogic' : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
     additionalProperty: commonProperties,
   } : {}
   const marka = markaProduktu(product)
