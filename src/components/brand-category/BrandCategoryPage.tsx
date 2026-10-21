@@ -158,6 +158,19 @@ function odmien(name: string): string {
   return name.charAt(0).toLowerCase() + name.slice(1)
 }
 
+/** 1 produkt, 2–4 produkty, 5+ produktów (12–14 jak 5+, 22–24 jak 2–4). */
+function odmienLiczbe(n: number, formy: [string, string, string]): string {
+  if (n === 1) return formy[0]
+  const d = n % 10
+  const s = n % 100
+  return d >= 2 && d <= 4 && (s < 12 || s > 14) ? formy[1] : formy[2]
+}
+
+/** Miejscownik: „w 1 modelu”, „w 3 modelach”. */
+function wModelach(n: number): string {
+  return n === 1 ? 'modelu' : 'modelach'
+}
+
 interface BrandCategoryPageProps {
   slug: string
 }
@@ -184,11 +197,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     sbc => sbc.categoryId === bc.categoryId && sbc.id !== bc.id
   )
 
-  const productWord = allProducts.length === 1
-    ? 'produkt'
-    : allProducts.length < 5
-      ? 'produkty'
-      : 'produktów'
+  const productWord = odmienLiczbe(allProducts.length, ['produkt', 'produkty', 'produktów'])
 
   // Do komponentu klienckiego jadą tylko pola, których używa kafel i filtry.
   // Reszta (`faq`, `comparison`, długie opisy) zostaje na serwerze — payload
@@ -620,7 +629,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               <div className={`grid grid-cols-1 gap-4 ${subcatsWithProducts.length > 0 ? 'sm:grid-cols-2 lg:grid-cols-3' : 'sm:grid-cols-2'}`}>
                 <Link href={`/${category.slug}`} className="block p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
                   <h3 className="font-semibold text-gray-900 mb-1">{category.name}</h3>
-                  <p className="text-sm text-gray-500">Wszystkie marki — {category.productCount} produktów</p>
+                  <p className="text-sm text-gray-500">Wszystkie marki — {category.productCount} {odmienLiczbe(category.productCount, ['produkt', 'produkty', 'produktów'])}</p>
                 </Link>
                 {subcatsWithProducts.slice(0, 5).map(sub => (
                   <Link key={sub.id} href={`/${sub.slug}`} className="block p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
@@ -679,7 +688,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
             <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-gray-300">
               <li><span className="text-white font-semibold">{allProducts.length}</span> {productWord}</li>
               {najtansza && <li>ceny netto <span className="text-white font-semibold">od {zlote(najtansza)} zł</span></li>}
-              {zKlawiatura > 0 && <li>klawiatura fizyczna w <span className="text-white font-semibold">{zKlawiatura}</span> modelach</li>}
+              {zKlawiatura > 0 && <li>klawiatura fizyczna w <span className="text-white font-semibold">{zKlawiatura}</span> {wModelach(zKlawiatura)}</li>}
             </ul>
 
             <div className="mt-4 flex flex-wrap items-center gap-2.5">
@@ -687,7 +696,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 href="#modele"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-600 hover:bg-primary-500 text-white text-sm font-semibold transition-colors"
               >
-                Porównaj {allProducts.length} modeli
+                Porównaj {allProducts.length} {odmienLiczbe(allProducts.length, ['model', 'modele', 'modeli'])}
                 <ChevronRightIcon size={15} />
               </a>
               <a
@@ -727,7 +736,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               <p className="text-gray-600 text-sm mt-3">
                 {allProducts.length} {productWord}
                 {najtansza && <> · ceny netto od {zlote(najtansza)} zł</>}
-                {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} modelach</>}
+                {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} {wModelach(zKlawiatura)}</>}
                 {content?.updatedAt && (
                   <span className="text-gray-500"> · {catalogSeo ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 )}
