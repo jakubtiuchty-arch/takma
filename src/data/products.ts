@@ -96335,26 +96335,42 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "cipherlab",
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne CipherLab",
-  "seoTitle": "Terminale CipherLab — Android i kolektory cOS",
-  "seoDescription": "Terminale CipherLab z Androidem oraz kolektory cOS serii 8000, 8200, 8300 i 8600. Porównaj skanery, klawiatury i sposób transmisji danych.",
-  "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele Android RS i RK z kolektorami cOS serii 8000, 8200, 8300 i 8600. Wersję skanera i wyposażenie wybierz według PN.",
+  "seoTitle": "Terminale CipherLab — kolektory danych Android i cOS",
+  "seoDescription": "Kolektory danych CipherLab: Android RS20, RS36, RS38, RS38H, RK26, RK96 i RK96 Cold Storage oraz cOS 8000–8600. Ceny netto, PN i dostępność.",
+  "longDescription": "Terminale CipherLab do sklepu, magazynu, dostaw i ochrony zdrowia. Porównaj modele dotykowe RS, terminale klawiaturowe RK i kolektory cOS serii 8000, 8200, 8300 i 8600. Wersję skanera i wyposażenie wybierz według PN.",
 
   "faq": [
     {
-      "question": "Czy terminal CipherLab ma program magazynowy?",
-      "answer": "Terminal wymaga zgodnej aplikacji i połączenia z systemem firmy. Licencja programu magazynowego nie jest częścią oferowanych zestawów."
+      "question": "Czym różnią się terminale CipherLab RS i RK?",
+      "answer": "Seria RS obejmuje terminale dotykowe. Seria RK ma fizyczną klawiaturę do wpisywania ilości i lokalizacji. Wybierz formę obsługi, a następnie skaner, łączność i konkretny PN."
     },
     {
-      "question": "Który CipherLab nadaje się do mroźni?",
-      "answer": "RK96 Cold Storage ma podgrzewanie i baterię do niskiej temperatury. Zakres pracy wynosi od −30°C do +50°C. Standardowy RK96 ma inny zakres oraz baterię."
+      "question": "Czy każdy CipherLab ma LTE lub 5G?",
+      "answer": "Nie. RS20 w oferowanej konfiguracji pracuje przez Wi-Fi. RS36 i RK26 mają wybrane wersje LTE, a RS38 oraz RS38H konfiguracje 5G. RK96 pracuje przez Wi-Fi 7."
     },
     {
-      "question": "Czy każda wersja ma LTE lub 5G?",
-      "answer": "Nie. Modem zależy od PN. W tabeli odróżniono konfiguracje WLAN od wersji komórkowych."
+      "question": "Który CipherLab wybrać do mroźni?",
+      "answer": "RK96 Cold Storage ma podgrzewanie i baterię do niskiej temperatury. Zakres pracy wynosi od −30°C do +50°C. Standardowy RK96 ma inną baterię oraz zakres temperatur."
     },
     {
-      "question": "Czy terminale mają czytnik UHF RFID?",
-      "answer": "NFC jest funkcją zbliżeniową. Odczyt UHF wymaga osobnego zgodnego modułu, jeśli dany model go obsługuje. Nie jest częścią podstawowych konfiguracji."
+      "question": "Czy terminal ma program magazynowy?",
+      "answer": "Terminal wymaga zgodnej aplikacji oraz połączenia z systemem firmy. Licencja programu magazynowego jest osobnym elementem wdrożenia."
+    },
+    {
+      "question": "Czy NFC oznacza obsługę UHF RFID?",
+      "answer": "Nie. NFC jest funkcją zbliżeniową. Odczyt UHF wymaga osobnego zgodnego modułu, jeśli model go obsługuje. Nie jest częścią podstawowych konfiguracji."
+    },
+    {
+      "question": "Jaka jest gwarancja na terminale CipherLab?",
+      "answer": "Gwarancja producenta na RS20, RS36, RS38, RS38H i RK26 wynosi 12 miesięcy. Na RK96 i RK96 Cold Storage wynosi 3 lata."
+    },
+    {
+      "question": "Czy terminale CipherLab odczytują tekst (OCR)?",
+      "answer": "Tak. Funkcję OCR mają RS20, RS36, RS38, RS38H, RK26 i RK96. W RS20, RS38H i RK96 jest to Pic 'n Fill OCR. Funkcja odczytuje tekst z etykiet, np. daty ważności."
+    },
+    {
+      "question": "Czy RS36 i RS38 obsługują UHF RFID?",
+      "answer": "RS36 i RS38 mają wbudowane NFC. Odczyt UHF RFID wymaga osobnego czytnika montowanego na terminalu."
     }
   ]
 },

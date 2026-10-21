@@ -4,7 +4,7 @@ export const cipherlabCategory: BrandCategoryRichContent = {
   "updatedAt": "2026-10-21",
   "definition": {
     "heading": "Terminale CipherLab — Android i cOS",
-    "content": "Terminale CipherLab obejmują modele Android RS i RK oraz kolektory z systemem cOS. Seria RS ma ekrany dotykowe, a RK fizyczne klawiatury. Kolektory 8000, 8200, 8300 i 8600 służą do aplikacji zadaniowych; nie uruchamiają aplikacji Android."
+    "content": "Terminal mobilny (kolektor danych) CipherLab łączy odczyt kodów z komunikacją z aplikacją firmy. Seria RS z Androidem ma ekrany dotykowe, a seria RK fizyczne klawiatury do wpisywania ilości i lokalizacji. Kolektory 8000, 8200, 8300 i 8600 mają system cOS do aplikacji zadaniowych i nie uruchamiają aplikacji Android."
   },
   "buyingGuide": {
     "heading": "Jak dobrać terminal CipherLab?",
@@ -16,15 +16,16 @@ export const cipherlabCategory: BrandCategoryRichContent = {
     ]
   },
   "expertAuthority": "Pomożemy dobrać terminal do aplikacji, kodów i infrastruktury sieciowej. Porównaj konfiguracje na kartach, a następnie ustal wymagania wdrożenia oraz wyposażenie stanowiska.",
-  "technicalDeepDive": "[8000](/produkt/cipherlab-8000) to kieszonkowy kolektor do zapisu kodów i ilości. [8200](/produkt/cipherlab-8200) ma ekran 2,1 cala i różne opcje komunikacji. [8300](/produkt/cipherlab-8300) oferuje IP65 i pracę batch. [8600](/produkt/cipherlab-8600) ma kolorowy ekran 2,83 cala oraz modułowe klawiatury. Wszystkie te serie korzystają z cOS. Do aplikacji Android porównaj poniższe rodziny RS i RK.\n\n[RS20](/produkt/cipherlab-rs20) jest lekkim terminalem do sali sprzedaży z Androidem 16. [RS36](/produkt/cipherlab-rs36) oferuje ekran 5,5 cala i konfiguracje z 4G LTE. [RS38](/produkt/cipherlab-rs38) ma większy ekran 6 cali, pamięć 8/128 GB i wersje 5G. [RS38H](/produkt/cipherlab-rs38h) ma obudowę do czyszczenia środkami dopuszczonymi dla placówek ochrony zdrowia.\n\n[RK26](/produkt/cipherlab-rk26) łączy ekran 4 cale z klawiaturą 25 lub 28 klawiszy. Do intensywnej kompletacji porównaj [RK96](/produkt/cipherlab-rk96) z Wi-Fi 7 i baterią 7000 mAh. [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage) ma podgrzewanie i baterię 5500 mAh do pracy od −30°C.\n\nSE4750 SR i MR mają różne przeznaczenie. SE5500 oraz SE5800 obsługują większy zakres odczytu, ale odległość zależy od kodu. Nie każdy PN ma modem komórkowy, uchwyt lub zasilacz. Porównaj tabelę wariantów na karcie. NFC nie oznacza wbudowanego czytnika UHF.\n\nWszystkie urządzenia wymagają zgodnej aplikacji. Licencja systemu magazynowego jest osobnym elementem wdrożenia. Do porównania innych marek przejdź do [terminali mobilnych](/terminale-mobilne).",
+  "technicalDeepDive": "CipherLab oferuje kolektory danych z Androidem w dwóch seriach: dotykowe RS i z klawiaturą RK. Ceny netto najtańszego PN (październik 2026):\n\n• [RS20](/produkt/cipherlab-rs20) (dotykowy, sklep): Android 16, ekran 5,5 cala, SE4780, Wi-Fi 6E, 198 g, od 3 050 zł netto — kontrola cen i uzupełnianie półek.\n\n• [RS36](/produkt/cipherlab-rs36) (dotykowy, Wi-Fi lub LTE): ekran 5,5 cala, 4/64 GB, SE4100, SE4770 lub SE5500, IP65/IP68, od 4 096 zł netto — magazyn i dostawy.\n\n• [RS38](/produkt/cipherlab-rs38) (dotykowy, 5G): ekran 6 cali, 8/128 GB, Wi-Fi 6E, SE4770 lub SE5500, od 4 831 zł netto — logistyka i praca w terenie.\n\n• [RS38H](/produkt/cipherlab-rs38h) (ochrona zdrowia): obudowa odporna na dezynfekcję, SE4720, 5G, przycisk SOS, od 5 536 zł netto — szpitale i laboratoria.\n\n• [RK26](/produkt/cipherlab-rk26) (klawiatura 25 lub 28): Android 12, ekran 4 cale, 4/64 GB, Wi-Fi albo 4G LTE, od 3 965 zł netto — inwentaryzacja i przyjęcia.\n\n• [RK96](/produkt/cipherlab-rk96) (gun, klawiatura 38–53): Android 15, Wi-Fi 7, 7000 mAh, SE4750 lub SE5800, gwarancja 3 lata, od 7 357 zł netto — intensywna kompletacja.\n\n• [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage) (mroźnia): praca od −30°C, podgrzewany ekran, 5500 mAh, SE5800, od 9 645 zł netto — mroźnie i chłodnie.\n\nKolektory z systemem cOS: [8000](/produkt/cipherlab-8000) to kieszonkowy kolektor do zapisu kodów i ilości. [8200](/produkt/cipherlab-8200) ma ekran 2,1 cala i różne opcje komunikacji. [8300](/produkt/cipherlab-8300) oferuje IP65 i pracę batch. [8600](/produkt/cipherlab-8600) ma kolorowy ekran 2,83 cala oraz modułowe klawiatury. Wszystkie te serie korzystają z cOS.\n\nSE4750 SR ma standardowy zakres odczytu, a SE4750 MR średni. SE5500 i SE5800 odczytują kody także z większej odległości. Zasięg zależy od wielkości i jakości kodu. NFC nie oznacza wbudowanego czytnika UHF.\n\nWszystkie urządzenia wymagają zgodnej aplikacji. Licencja systemu magazynowego jest osobnym elementem wdrożenia. Terminale innych marek są w kategorii [terminale mobilne](/terminale-mobilne).",
   "sectionHeadings": {
     "technicalDeepDive": "Porównanie rodzin CipherLab",
-    "expertAuthority": "Dobór terminala w TAKMA"
+    "expertAuthority": "Dobór terminala w TAKMA",
+    "comparisons": "Różnice, które rozstrzygają wybór"
   },
   "useCases": [
     {
       "title": "Sklep i uzupełnianie półek",
-      "description": "RS20 ma niewielką masę, ekran 5,5 cala i Wi-Fi 6E. RS36 pozwala dobrać różne skanery i wersje LTE."
+      "description": "Kolektor danych RS20 waży 198 g, ma ekran 5,5 cala i Wi-Fi 6E. RS36 pozwala dobrać różne skanery i wersje LTE."
     },
     {
       "title": "Kompletacja i dostawy",
@@ -48,7 +49,16 @@ export const cipherlabCategory: BrandCategoryRichContent = {
       }
     ]
   },
-  "comparisons": [],
+  "comparisons": [
+    {
+      "title": "RS36 czy RS38?",
+      "content": "[RS36](/produkt/cipherlab-rs36) ma ekran 5,5 cala, pamięć 4/64 GB i wersje z 4G LTE. Wi-Fi 6 ma wersja RS36 bez modemu LTE. [RS38](/produkt/cipherlab-rs38) ma ekran 6 cali, pamięć 8/128 GB, Wi-Fi 6E i wersje 5G."
+    },
+    {
+      "title": "RK96 czy RK96 Cold Storage?",
+      "content": "[RK96](/produkt/cipherlab-rk96) ma baterię 7000 mAh, pracuje od −20°C i ma uchwyt pistoletowy. [RK96 Cold Storage](/produkt/cipherlab-rk96-cold-storage) ma baterię 5500 mAh i pracuje od −30°C. Oferowana wersja Cold Storage nie ma uchwytu pistoletowego. Podgrzewanie ma tylko Cold Storage."
+    }
+  ],
   "howToSteps": [],
   "faq": [
     { "question": "Czym kolektory CipherLab cOS różnią się od terminali Android?", "answer": "Serie 8000, 8200, 8300 i 8600 używają cOS do aplikacji zadaniowych, tworzonych np. w Forge Application Generator. Nie uruchamiają aplikacji Android. Serie RS i RK mają Androida. Sposób transmisji danych zależy od modelu i konfiguracji." },
@@ -58,7 +68,7 @@ export const cipherlabCategory: BrandCategoryRichContent = {
     },
     {
       "question": "Czy każdy CipherLab ma LTE lub 5G?",
-      "answer": "Nie. RS20 w oferowanej konfiguracji pracuje przez Wi-Fi. RS36 i RK26 mają wybrane wersje LTE, a RS38 oraz RS38H konfiguracje 5G. Sprawdź modem w konkretnym PN."
+      "answer": "Nie. RS20 w oferowanej konfiguracji pracuje przez Wi-Fi. RS36 i RK26 mają wybrane wersje LTE, a RS38 oraz RS38H konfiguracje 5G. RK96 pracuje przez Wi-Fi 7."
     },
     {
       "question": "Który CipherLab wybrać do mroźni?",
@@ -71,6 +81,18 @@ export const cipherlabCategory: BrandCategoryRichContent = {
     {
       "question": "Czy NFC oznacza obsługę UHF RFID?",
       "answer": "Nie. NFC jest funkcją zbliżeniową. Odczyt UHF wymaga osobnego zgodnego modułu, jeśli model go obsługuje. Nie jest częścią podstawowych konfiguracji."
+    },
+    {
+      "question": "Jaka jest gwarancja na terminale CipherLab?",
+      "answer": "Gwarancja producenta na RS20, RS36, RS38, RS38H i RK26 wynosi 12 miesięcy. Na RK96 i RK96 Cold Storage wynosi 3 lata."
+    },
+    {
+      "question": "Czy terminale CipherLab odczytują tekst (OCR)?",
+      "answer": "Tak. Funkcję OCR mają RS20, RS36, RS38, RS38H, RK26 i RK96. W RS20, RS38H i RK96 jest to Pic 'n Fill OCR. Funkcja odczytuje tekst z etykiet, np. daty ważności."
+    },
+    {
+      "question": "Czy RS36 i RS38 obsługują UHF RFID?",
+      "answer": "RS36 i RS38 mają wbudowane NFC. Odczyt UHF RFID wymaga osobnego czytnika montowanego na terminalu."
     }
   ]
 }
