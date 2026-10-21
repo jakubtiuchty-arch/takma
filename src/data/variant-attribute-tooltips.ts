@@ -112,7 +112,7 @@ export const variantAttributeTooltips: Record<string, string> = {
   "Przewód USB": "Przewód USB dołączony do zestawu.\n• Numer PN wskazuje konkretny przewód.\n• Nie — przewód nie jest dołączony.",
   "Podstawka PM-BASE-GD46-BK": "Podstawka do skanera Gryphon 4600.\n• Tak — PM-BASE-GD46-BK jest dołączona.\n• Nie — podstawka nie jest częścią tego zestawu.",
   "Okno odczytu": "Wymiar okna, przez które skaner odczytuje kod.\n• 65 lub 90 mm oznacza rozmiar okna, nie maksymalną szerokość kodu ani zasięg.\n• Dobierz okno do miejsca zabudowy skanera.",
-  "Montaż": "Sposób ustawienia lub zabudowy skanera.\n• Podstawka — praca na blacie.\n• Kiosk — montaż w obudowie stanowiska.\n• Mocowanie ścienne — montaż poza blatem.\n• Regulowana lub wyższa podstawka zmienia położenie okna odczytu.",
+  "Montaż": "Sposób ustawienia lub zabudowy skanera.\n• Podstawka — praca na blacie.\n• Kiosk — montaż w obudowie stanowiska.\n• Mocowanie ścienne — montaż poza blatem.\n• Podstawka regulowana (Tilting) zmienia nachylenie okna odczytu. Podstawka stała (Riser) jest niższa.",
   "Mocowanie magnetyczne": "Mocowanie skanera za pomocą magnesu.\n• Tak — wariant ma mocowanie magnetyczne.\n• Nie — potrzebny jest inny sposób zamocowania.",
   "Mocowanie": "Rodzaj elementu do zamocowania skanera.\n• Standardowe, półkowe i kołnierzowe różnią się sposobem osadzenia w stanowisku.\n• Brak — mocowanie nie jest dołączone; sprawdź wymiary zabudowy.",
   "Płyta": "Wykonanie płyty skanera montowanego w ladzie.\n• Szafirowa lub Tin Oxide — rodzaj powierzchni okna odczytu.\n• Krótka, średnia i długa — rozmiar płyty stanowiska.\n• Flush — montaż na równi z blatem. Dobierz płytę do wycięcia w ladzie.",

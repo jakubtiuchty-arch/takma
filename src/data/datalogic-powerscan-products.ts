@@ -1082,8 +1082,8 @@ export const datalogicPowerScanAccessories: Product[] = [
     "seoH1": "Przewód sieciowy EU Datalogic 6003-0940",
     "seoTitle": "Przewód sieciowy EU Datalogic 6003-0940 | TAKMA",
     "seoDescription": "Przewód sieciowy EU Datalogic 6003-0940. Sprawdź zgodność, wymagane wyposażenie, aktualną cenę i dostępność. Zamów w TAKMA.",
-    "shortDescription": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935, 90ACC0350 i 90ACC0193. Łączy zasilacz z gniazdem sieciowym.",
-    "description": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935 i 90ACC0350. Łączy zasilacz z gniazdem sieciowym.\n\n## Dobierz zasilacz do urządzenia\n\nDo bazy BC9630 użyj [zasilacza 8-0935](/produkt/datalogic-powerscan-8-0935). Do ładowarek MC-P096-M2 i MC-P096-M4 użyj [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350). Do Magellan 3600VSi użyj [zasilacza 90ACC0193](/produkt/datalogic-magellan-90acc0193). Przewód nie jest zasilaczem i nie podłącza się bezpośrednio do czytnika.\n\nPrzewód jest częścią kompletnych zestawów USB EU PBT9600 i PM9600. Przy zakupie samej bazy lub samego zasilacza sprawdź zawartość opakowania.\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "shortDescription": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935, 90ACC0350, 90ACC0193, 90ACC0194 i 90ACC0358. Łączy zasilacz z gniazdem sieciowym.",
+    "description": "6003-0940 to europejski przewód sieciowy do zasilaczy Datalogic 8-0935, 90ACC0350, 90ACC0193, 90ACC0194 i 90ACC0358. Łączy zasilacz z gniazdem sieciowym.\n\n## Dobierz zasilacz do urządzenia\n\nDo bazy BC9630 użyj [zasilacza 8-0935](/produkt/datalogic-powerscan-8-0935). Do ładowarek MC-P096-M2 i MC-P096-M4 użyj [zasilacza 90ACC0350](/produkt/datalogic-powerscan-90acc0350). Do Magellan 3600VSi i 3700HSi służy [zasilacz 90ACC0193](/produkt/datalogic-magellan-90acc0193). Do 3510HSi i 3550HSi służy [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358). Do 9550i, 9600i i 9900i służy [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194). Przewód nie jest zasilaczem i nie podłącza się bezpośrednio do czytnika.\n\nPrzewód jest częścią kompletnych zestawów USB EU PBT9600 i PM9600. Przy zakupie samej bazy lub samego zasilacza sprawdź zawartość opakowania.\n\nZgodne czytniki sprawdzisz poniżej. Pozostałe modele znajdziesz w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1115,7 +1115,7 @@ export const datalogicPowerScanAccessories: Product[] = [
       },
       {
         "name": "Zgodne zasilacze",
-        "value": "8-0935, 90ACC0350"
+        "value": "8-0935, 90ACC0350, 90ACC0193, 90ACC0194, 90ACC0358"
       }
     ],
     "applications": [],
@@ -1134,7 +1134,13 @@ export const datalogicPowerScanAccessories: Product[] = [
       "datalogic-powerscan-pbt9100",
       "datalogic-powerscan-pm9100",
       "datalogic-powerscan-pbt9501-dpm",
-      "datalogic-powerscan-pm9501-dpm"
+      "datalogic-powerscan-pm9501-dpm",
+      "datalogic-magellan-3510hsi",
+      "datalogic-magellan-3550hsi",
+      "datalogic-magellan-3700hsi",
+      "datalogic-magellan-9550i",
+      "datalogic-magellan-9600i",
+      "datalogic-magellan-9900i"
     ],
     "downloads": [],
     "createdAt": "2026-10-20",
