@@ -18,7 +18,7 @@ export const bixolonRfidAccessories: Product[] = [
     tags: ['produkcja', 'magazyn'], priceFrom: a.price, availability: 'unavailable' as const, isNew: true, isBestseller: false,
     specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Rozdzielczość', value: `${a.dpi} dpi` }, { name: 'Zgodność', value: `BIXOLON ${a.models} (${a.dpi} dpi)` }],
     applications: ['Wymiana zużytej głowicy drukującej'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xt5-40', 'bixolon-xt5-40nr'],
-    downloads: [{ name: 'Instrukcja XT5-40NR (EN)', type: 'manual' as const, url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
+    downloads: [{ name: 'Instrukcja XT5-40NR (EN)', type: 'manual' as const, url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: '6,2 MB' }], createdAt: '2026-10-16',
   })),
   {
     id: 'bixolon-les-400g', slug: 'bixolon-les-400g', name: 'Uchwyt rolki BIXOLON LES-400G',
@@ -31,20 +31,20 @@ export const bixolonRfidAccessories: Product[] = [
     tags: ['magazyn', 'retail'], priceFrom: 75.12, availability: 'available', isNew: true, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'LES-400G' }, { name: 'Zgodność', value: 'XD3-40d/t, XD5-40d/t, XD5-40IId/IIt, XD5-40tR, SLP-DX220/TX220, SLP-DL410, XL5-40, XQ-840II' }, { name: 'Średnica rolki', value: 'Do 203 mm' }, { name: 'Średnica gilzy', value: '25,4–38,1 mm' }],
     applications: ['Podawanie etykiet z większej rolki'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xd5-40tr'],
-    downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=62', size: 'PDF' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
+    downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=62', size: '3,0 MB' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: '3,4 MB' }], createdAt: '2026-10-16',
   },
 ]
 
 const commonDownloads: Product['downloads'] = [
-  { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: 'PDF' },
+  { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: '3,4 MB' },
 ]
 
 export const bixolonRfidProducts: Product[] = [
   {
     id: 'bixolon-xt5-40nr', slug: 'bixolon-xt5-40nr', name: 'BIXOLON XT5-40NR', seoH1: 'BIXOLON XT5-40NR',
     seoTitle: 'BIXOLON XT5-40NR — drukarka RFID UHF 203–600 dpi',
-    seoDescription: 'BIXOLON XT5-40NR, XT5-43NR i XT5-46NR: przemysłowe drukarki i kodery UHF RFID 203, 300 lub 600 dpi. Druk do 356 mm/s, taśma 450 m, Ethernet.',
-    shortDescription: 'Przemysłowa drukarka i koder UHF RFID EU. Trzy warianty: 203, 300 i 600 dpi. Ekran dotykowy 4,3 cala, Ethernet, USB i RS-232. Rolki do 203 mm i taśmy do 450 m.',
+    seoDescription: 'Drukarka RFID BIXOLON XT5-40NR: przemysłowa, koder UHF EU, 203, 300 lub 600 dpi, taśma 450 m. Drukarka etykiet RFID BIXOLON XT5-40NR, XT5-40NR BIXOLON. PN: XT5-40NRES, XT5-43NRES/BEG, XT5-46NRES/BEG.',
+    shortDescription: 'BIXOLON XT5-40NR — przemysłowa drukarka i koder UHF RFID EU w wersjach 203, 300 i 600 dpi. Ma ekran dotykowy 4,3 cala, Ethernet, USB i RS-232. Przyjmuje rolki do 203 mm i taśmy do 450 m.',
     description: `BIXOLON XT5-40NR to przemysłowa drukarka etykiet z koderem UHF RFID dla Europy. Drukuje etykiety i zapisuje dane w ich układach UHF. Rodzina obejmuje XT5-40NR, XT5-43NR i XT5-46NR.
 
 ## Rozdzielczość i prędkość
@@ -100,14 +100,14 @@ Biurkowy model RFID to [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr). W klasie p
       { question: 'Czy nadruk kodu kreskowego zapisuje EPC?', answer: 'Nie. Zadanie musi zawierać polecenia zapisu RFID. EPC wiąże się z danymi w WMS lub ERP. Odczyt oznaczeń poza drukarką wymaga czytnika UHF.' },
       { question: 'Jak dobrać głowicę i opcje do XT5-40NR?', answer: 'Głowica musi mieć tę samą rozdzielczość co drukarka. Gilotynę, odklejak i nawijak dobiera się do wersji RFID. Do zamówienia części potrzebny jest PN i numer seryjny drukarki.' },
     ],
-    downloads: [{ name: 'Karta katalogowa XT5-40NR (EN)', type: 'datasheet', url: '/downloads/bixolon-xt5-40nr-karta-en.pdf', size: 'PDF' }, { name: 'Instrukcja XT5-40NR (EN)', type: 'manual', url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: 'PDF' }, ...commonDownloads, { name: 'Sterowniki i pliki XT5-40NR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=165', size: 'Online' }],
+    downloads: [{ name: 'Karta katalogowa XT5-40NR (EN)', type: 'datasheet', url: '/downloads/bixolon-xt5-40nr-karta-en.pdf', size: '1,1 MB' }, { name: 'Instrukcja XT5-40NR (EN)', type: 'manual', url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: '6,2 MB' }, ...commonDownloads, { name: 'Sterowniki i pliki XT5-40NR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=165', size: 'Online' }],
     relatedProducts: ['bixolon-xd5-40tr', 'zebra-zt411-rfid', 'tsc-mb241tr'], sameAs: 'https://www.bixolon.com/product_view.php?idx=384', createdAt: '2026-10-16',
   },
   {
     id: 'bixolon-xd5-40tr', slug: 'bixolon-xd5-40tr', name: 'BIXOLON XD5-40tR', seoH1: 'BIXOLON XD5-40tR',
     seoTitle: 'BIXOLON XD5-40tR — drukarka RFID UHF 203 dpi',
-    seoDescription: 'BIXOLON XD5-40tR: biurkowa drukarka i koder UHF RFID 203 dpi. Druk 108 mm z prędkością 152 mm/s, taśma 300 m, Ethernet, USB i RS-232.',
-    shortDescription: 'Biurkowa drukarka i koder UHF RFID EU, 203 dpi, do 152 mm/s. Druk do 108 mm. USB, USB Host, RS-232 i Ethernet. Taśmy do 300 m i opcjonalny uchwyt większej rolki.',
+    seoDescription: 'Drukarka RFID BIXOLON XD5-40tR: biurkowa, koder UHF EU, 203 dpi, druk do 108 mm, taśma do 300 m. Drukarka etykiet RFID BIXOLON XD5-40tR, XD5-40tR BIXOLON. PN: XD5-40tREK.',
+    shortDescription: 'BIXOLON XD5-40tR — biurkowa drukarka i koder UHF RFID EU, 203 dpi, do 152 mm/s. Druk do 108 mm, USB, USB Host, RS-232 i Ethernet. Taśmy do 300 m i opcjonalny uchwyt większej rolki.',
     description: `BIXOLON XD5-40tR to biurkowa drukarka etykiet z koderem UHF RFID dla Europy. Drukuje etykiety i zapisuje dane w ich układach UHF. PN XD5-40tREK ma głowicę 203 dpi i połączenia przewodowe.
 
 ## Nadruk i kodowanie
@@ -150,7 +150,7 @@ Przemysłowy model RFID to [BIXOLON XT5-40NR](/produkt/bixolon-xt5-40nr). W klas
       { question: 'Czy XD5-40tR zastępuje czytnik UHF?', answer: 'Nie. Drukarka przygotowuje oznaczenia. Inwentaryzacja radiowa wymaga osobnego czytnika UHF.' },
       { question: 'Czym XD5-40tR różni się od XT5-40NR?', answer: 'XD5-40tR jest drukarką biurkową 203 dpi z taśmą do 300 m. Przemysłowa XT5-40NR obsługuje taśmę do 450 m i ma także warianty 300 oraz 600 dpi.' },
     ],
-    downloads: [{ name: 'Karta katalogowa XD5-40tR (EN)', type: 'datasheet', url: '/downloads/bixolon-xd5-40tr-karta-en.pdf', size: 'PDF' }, { name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf', size: 'PDF' }, ...commonDownloads, { name: 'Sterowniki i pliki XD5-40tR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=163', size: 'Online' }],
+    downloads: [{ name: 'Karta katalogowa XD5-40tR (EN)', type: 'datasheet', url: '/downloads/bixolon-xd5-40tr-karta-en.pdf', size: '1,3 MB' }, { name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf', size: '3,0 MB' }, ...commonDownloads, { name: 'Sterowniki i pliki XD5-40tR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=163', size: 'Online' }],
     relatedProducts: ['bixolon-xt5-40nr', 'zebra-zd621r', 'tsc-th240r'], sameAs: 'https://www.bixolon.com/product_view.php?idx=386', createdAt: '2026-10-16',
   },
 ]
