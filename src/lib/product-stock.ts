@@ -1,3 +1,4 @@
+import { bixolonPosProducts, bixolonPosAccessories } from '@/data/bixolon-pos-products'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from '@/data/bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from '@/data/bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from '@/data/bixolon-label-products'
@@ -53,6 +54,7 @@ import type { StockInfo } from '@/lib/ingram'
  * nadal używają statycznych priceFrom z products.ts.
  */
 export const LIVE_OFFER_SLUGS = new Set([
+  ...bixolonPosProducts.map(p => p.slug), ...bixolonPosAccessories.map(p => p.slug),
   ...bixolonReceiptProducts.map(p => p.slug), ...bixolonReceiptAccessories.map(p => p.slug),
   ...bixolonMobileProducts.map(p => p.slug), ...bixolonMobileAccessories.map(p => p.slug),
   ...bixolonLabelProducts.map(p => p.slug), ...bixolonLabelAccessories.map(p => p.slug),

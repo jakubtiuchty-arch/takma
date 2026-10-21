@@ -1749,3 +1749,111 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
     ]
   }
 ]
+
+categoryFilters['drukarki-pos'] = [
+  {
+    "specKey": "papier-pos",
+    "label": "Szerokość papieru",
+    "derived": [
+      {
+        "value": "58 mm",
+        "slugs": [
+          "bixolon-srp-q200"
+        ]
+      },
+      {
+        "value": "80 mm",
+        "slugs": [
+          "bixolon-srp-330iii",
+          "bixolon-srp-350v",
+          "bixolon-srp-350plusv",
+          "bixolon-srp-380",
+          "bixolon-srp-380plus",
+          "bixolon-srp-q300",
+          "bixolon-srp-f310ii",
+          "bixolon-srp-s300ii"
+        ]
+      }
+    ]
+  },
+  {
+    "specKey": "lacznosc-pos",
+    "label": "Łączność",
+    "derived": [
+      {
+        "value": "USB",
+        "pattern": "USB",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      },
+      {
+        "value": "Ethernet",
+        "pattern": "Ethernet",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      },
+      {
+        "value": "RS-232",
+        "pattern": "RS.?232",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      },
+      {
+        "value": "Wi-Fi",
+        "pattern": "Wi-Fi",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      },
+      {
+        "value": "Bluetooth",
+        "pattern": "Bluetooth",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      },
+      {
+        "value": "PoweredUSB",
+        "pattern": "PoweredUSB",
+        "specs": [
+          "Interfejsy",
+          "Łączność bezprzewodowa"
+        ]
+      }
+    ]
+  },
+  {
+    "specKey": "material-pos",
+    "label": "Materiał",
+    "derived": [
+      {
+        "value": "Papier termiczny do potwierdzeń",
+        "slugs": [
+          "bixolon-srp-330iii",
+          "bixolon-srp-350v",
+          "bixolon-srp-350plusv",
+          "bixolon-srp-380",
+          "bixolon-srp-380plus",
+          "bixolon-srp-q200",
+          "bixolon-srp-q300",
+          "bixolon-srp-f310ii",
+          "bixolon-srp-s300ii"
+        ]
+      },
+      {
+        "value": "Dostępne wersje linerless",
+        "slugs": [
+          "bixolon-srp-s300ii"
+        ]
+      }
+    ]
+  }
+]

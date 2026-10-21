@@ -1,3 +1,4 @@
+import { bixolonPosContent } from './bixolon-pos-content'
 import { bixolonReceiptContent } from './bixolon-receipt-content'
 import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
@@ -4055,3 +4056,5 @@ Odrębnego omówienia wymagają drukarki atramentowe, na przykład Epson ColorWo
     ],
   },
 }
+
+subcategoryContent['drukarki-pos'] = bixolonPosContent

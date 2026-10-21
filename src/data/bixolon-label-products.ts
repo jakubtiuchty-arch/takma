@@ -2705,7 +2705,7 @@ export const bixolonLabelAccessories: Product[] = [
     "seoTitle": "Przewód USB BIXOLON USB-KAB-G",
     "seoDescription": "Przewód USB BIXOLON USB-KAB-G: USB-A — USB-B, 1,8 m. Sprawdź cenę i dostępność. Połącz zgodną drukarkę etykiet z portem USB stanowiska.",
     "shortDescription": "Przewód USB BIXOLON USB-KAB-G łączy zgodną drukarkę etykiet z portem USB komputera. USB-A — USB-B, 1,8 m.",
-    "description": "Przewód USB BIXOLON USB-KAB-G służy do transmisji danych między zgodną drukarką etykiet a stanowiskiem pracy. USB-A — USB-B, 1,8 m. Nie zastępuje zasilacza drukarki.\n\n## Dobór do interfejsu\n\nSprawdź złącze w konkretnej konfiguracji PN. Przewód nie dodaje portu USB do wersji, która go nie ma. Nie kupuj go ponownie, jeśli jest już częścią zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XD3-40d](/produkt/bixolon-xd3-40d), [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t), [BIXOLON XD5-40d](/produkt/bixolon-xd5-40d), [BIXOLON XD5-40t](/produkt/bixolon-xd5-40t), [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid), [BIXOLON XD5-40IIt](/produkt/bixolon-xd5-40iit), [BIXOLON XT3-40](/produkt/bixolon-xt3-40), [BIXOLON XT5-40](/produkt/bixolon-xt5-40), [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220), [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220), [BIXOLON SLP-DL410](/produkt/bixolon-slp-dl410), [BIXOLON XL5-40CT](/produkt/bixolon-xl5-40ct), [BIXOLON XQ-840II](/produkt/bixolon-xq-840ii).",
+    "description": "Przewód USB BIXOLON USB-KAB-G służy do transmisji danych między zgodną drukarką etykiet a stanowiskiem pracy. USB-A — USB-B, 1,8 m. Nie zastępuje zasilacza drukarki.\n\n## Dobór do interfejsu\n\nSprawdź złącze w konkretnej konfiguracji PN. Przewód nie dodaje portu USB do wersji, która go nie ma. Nie kupuj go ponownie, jeśli jest już częścią zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XD3-40d](/produkt/bixolon-xd3-40d), [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t), [BIXOLON XD5-40d](/produkt/bixolon-xd5-40d), [BIXOLON XD5-40t](/produkt/bixolon-xd5-40t), [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid), [BIXOLON XD5-40IIt](/produkt/bixolon-xd5-40iit), [BIXOLON XT3-40](/produkt/bixolon-xt3-40), [BIXOLON XT5-40](/produkt/bixolon-xt5-40), [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220), [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220), [BIXOLON SLP-DL410](/produkt/bixolon-slp-dl410), [BIXOLON XL5-40CT](/produkt/bixolon-xl5-40ct), [BIXOLON XQ-840II](/produkt/bixolon-xq-840ii).\n\n## Zgodne drukarki POS\n\n[BIXOLON SRP-330III](/produkt/bixolon-srp-330iii), [BIXOLON SRP-350V](/produkt/bixolon-srp-350v), [BIXOLON SRP-350plusV](/produkt/bixolon-srp-350plusv), [BIXOLON SRP-380](/produkt/bixolon-srp-380), [BIXOLON SRP-380plus](/produkt/bixolon-srp-380plus), [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300), [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Połączenie dotyczy portu USB-B. Przewód nie zastępuje PoweredUSB ani USB-A — USB-A w SRP-F310II.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2751,7 +2751,15 @@ export const bixolonLabelAccessories: Product[] = [
       "bixolon-xd3-40d",
       "bixolon-xd3-40t",
       "bixolon-xd5-40d",
-      "bixolon-xd5-40t"
+      "bixolon-xd5-40t",
+      "bixolon-srp-330iii",
+      "bixolon-srp-350v",
+      "bixolon-srp-350plusv",
+      "bixolon-srp-380",
+      "bixolon-srp-380plus",
+      "bixolon-srp-q200",
+      "bixolon-srp-q300",
+      "bixolon-srp-s300ii"
     ],
     "downloads": [],
     "createdAt": "2026-10-21"
@@ -2763,7 +2771,7 @@ export const bixolonLabelAccessories: Product[] = [
     "seoTitle": "Przewód RS-232 BIXOLON SER-KAB-9-9",
     "seoDescription": "Przewód RS-232 BIXOLON SER-KAB-9-9: RS-232, złącza 9-pin. Sprawdź cenę i dostępność. Połącz zgodną drukarkę etykiet z portem RS-232 stanowiska.",
     "shortDescription": "Przewód RS-232 BIXOLON SER-KAB-9-9 łączy zgodną drukarkę etykiet z portem RS-232 komputera. RS-232, złącza 9-pin.",
-    "description": "Przewód RS-232 BIXOLON SER-KAB-9-9 służy do transmisji danych między zgodną drukarką etykiet a stanowiskiem pracy. RS-232, złącza 9-pin. Nie zastępuje zasilacza drukarki.\n\n## Dobór do interfejsu\n\nSprawdź złącze w konkretnej konfiguracji PN. Przewód nie dodaje portu RS-232 do wersji, która go nie ma. Nie kupuj go ponownie, jeśli jest już częścią zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XD3-40d](/produkt/bixolon-xd3-40d), [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t), [BIXOLON XD5-40d](/produkt/bixolon-xd5-40d), [BIXOLON XD5-40t](/produkt/bixolon-xd5-40t), [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid), [BIXOLON XD5-40IIt](/produkt/bixolon-xd5-40iit), [BIXOLON XT3-40](/produkt/bixolon-xt3-40), [BIXOLON XT5-40](/produkt/bixolon-xt5-40), [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220), [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220), [BIXOLON XL5-40CT](/produkt/bixolon-xl5-40ct).",
+    "description": "Przewód RS-232 BIXOLON SER-KAB-9-9 służy do transmisji danych między zgodną drukarką etykiet a stanowiskiem pracy. RS-232, złącza 9-pin. Nie zastępuje zasilacza drukarki.\n\n## Dobór do interfejsu\n\nSprawdź złącze w konkretnej konfiguracji PN. Przewód nie dodaje portu RS-232 do wersji, która go nie ma. Nie kupuj go ponownie, jeśli jest już częścią zestawu.\n\n## Zgodne drukarki\n\n[BIXOLON XD3-40d](/produkt/bixolon-xd3-40d), [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t), [BIXOLON XD5-40d](/produkt/bixolon-xd5-40d), [BIXOLON XD5-40t](/produkt/bixolon-xd5-40t), [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid), [BIXOLON XD5-40IIt](/produkt/bixolon-xd5-40iit), [BIXOLON XT3-40](/produkt/bixolon-xt3-40), [BIXOLON XT5-40](/produkt/bixolon-xt5-40), [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220), [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220), [BIXOLON XL5-40CT](/produkt/bixolon-xl5-40ct).\n\n## Zgodne drukarki POS\n\n[BIXOLON SRP-330III](/produkt/bixolon-srp-330iii), [BIXOLON SRP-350V](/produkt/bixolon-srp-350v), [BIXOLON SRP-350plusV](/produkt/bixolon-srp-350plusv), [BIXOLON SRP-380](/produkt/bixolon-srp-380), [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii), [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Połączenie dotyczy wyłącznie konfiguracji wyposażonych w zgodny port RS-232. Przewód nie dodaje tego portu do drukarki.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2809,7 +2817,14 @@ export const bixolonLabelAccessories: Product[] = [
       "bixolon-xd3-40d",
       "bixolon-xd3-40t",
       "bixolon-xd5-40d",
-      "bixolon-xd5-40t"
+      "bixolon-xd5-40t",
+      "bixolon-srp-330iii",
+      "bixolon-srp-350v",
+      "bixolon-srp-350plusv",
+      "bixolon-srp-380",
+      "bixolon-srp-q200",
+      "bixolon-srp-f310ii",
+      "bixolon-srp-s300ii"
     ],
     "downloads": [],
     "createdAt": "2026-10-21"
