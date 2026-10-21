@@ -96,7 +96,7 @@ const navigation: NavItem[] = [
       { name: 'Drukarki termotransferowe', href: '/termotransferowe-drukarki-etykiet' },
       { name: 'Drukarki termiczne', href: '/termiczne-drukarki-etykiet' },
       { name: 'Drukarki mobilne', href: '/mobilne-drukarki-etykiet' },
-      { name: 'Termiczne drukarki POS', href: '/drukarki-pos' },
+      { name: 'Drukarki POS', href: '/drukarki-pos' },
       { name: 'Mobilne drukarki paragonów', href: '/mobilne-drukarki-paragonow' },
       { name: 'Drukarki RFID', href: '/drukarki-rfid' },
       { name: 'Drukarki kolorowe', href: '/kolorowe-drukarki-etykiet' },

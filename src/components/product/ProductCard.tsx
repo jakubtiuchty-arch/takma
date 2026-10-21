@@ -64,8 +64,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const datalogicScannerImage = /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id) || product.id.startsWith('datalogic-quickscan-') || product.id.startsWith('datalogic-gryphon-') || product.id.startsWith('datalogic-powerscan-') || product.id.startsWith('datalogic-heron-') || /^datalogic-td11/.test(product.id) || product.id.startsWith('datalogic-handheld-') || product.id.startsWith('datalogic-magellan-')
   const datalogicHandheldImage = datalogicScannerImage && product.categoryId === 'skanery-kodow-kreskowych'
   const bixolonLabelImage = /^bixolon-(?:xd3-|xd5-40(?:d|t|iid|iit)$|xt3-|xt5-40$|slp-|xl5-|xq-|usb-|ser-|xm7-|spp-[lcr]|srp-|rbc-|rmb-|pbd-|pqc-|pbp-|pbs-|pic-|plc-|pcc-|pbl-)/.test(product.id)
-  const uniformGridImage = product.uniformImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
-  const gridImageFraction = product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
+  const epsonPosImage = (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id)
+  const uniformGridImage = product.uniformImage || epsonPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
+  const gridImageFraction = epsonPosImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
 
   // Live dostępność z Ingram — tylko gdy Ingram faktycznie znalazł PN-y (found: true)
   const anyFound = !stockLoading && partNumbers.length > 0 && stockData.size > 0 &&

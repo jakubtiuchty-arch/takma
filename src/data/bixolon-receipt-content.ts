@@ -4,19 +4,19 @@ export const bixolonReceiptContent: SubcategoryRichContent = {
   "updatedAt": "2026-10-21",
   "definition": {
     "heading": "Mobilna drukarka paragonów — do czego służy?",
-    "content": "Mobilna drukarka paragonów drukuje potwierdzenia, bilety i dokumenty przesłane z aplikacji. Zasilanie z baterii pozwala pracować przy kliencie, w pojeździe lub przy wydawaniu towaru. Modele BIXOLON SPP-C i SPP-R drukują termicznie, bez taśmy barwiącej. Są urządzeniami niefiskalnymi."
+    "content": "Mobilna drukarka paragonów drukuje potwierdzenia, bilety i dokumenty przesłane z aplikacji. Zasilanie z baterii pozwala pracować przy kliencie, w pojeździe lub przy wydawaniu towaru. Modele Epson TM-P oraz BIXOLON SPP-C i SPP-R drukują termicznie, bez taśmy barwiącej. Są urządzeniami niefiskalnymi."
   },
   "buyingGuide": {
-    "heading": "Jak wybrać mobilną drukarkę BIXOLON?",
+    "heading": "Jak wybrać mobilną drukarkę paragonów?",
     "items": [
-      "Szerokość papieru — SPP-C200, SPP-R210 i SPP-R200III PLUS korzystają z papieru 58 mm. SPP-C300 i SPP-R310 obsługują 80 mm, a SPP-R410 112 mm.",
+      "Szerokość papieru — SPP-C200, SPP-R210 i SPP-R200III PLUS korzystają z papieru 58 mm. SPP-C300 i SPP-R310 obsługują 80 mm, a SPP-R410 112 mm. Epson TM-P20II korzysta z papieru 58 mm, a TM-P80II z papieru 80 mm.",
       "Połączenie — sprawdź USB, Bluetooth lub Wi-Fi w konkretnym PN. Aplikacja musi obsługiwać dany model, interfejs i język poleceń.",
       "Rolka i bateria — porównaj średnicę rolki oraz zawartość zestawu. Nie wszystkie PN obejmują zasilacz sieciowy.",
       "Materiał — wersja linerless wymaga odpowiedniego wałka i zgodnego kleju. Nie przenoś tej funkcji na standardowe PN."
     ]
   },
   "expertAuthority": "Dobór zacznij od aplikacji i formatu dokumentu. Następnie sprawdź szerokość papieru wraz ze średnicą rolki. Na kartach produktów znajdziesz europejskie PN, aktualne ceny i stany z dystrybucji, zgodne akcesoria oraz lokalne dokumenty PDF.",
-  "technicalDeepDive": "[SPP-C200](/produkt/bixolon-spp-c200) i [SPP-C300](/produkt/bixolon-spp-c300) mają USB-C oraz Bluetooth. Różnią się szerokością papieru i szybkością druku. [SPP-R210](/produkt/bixolon-spp-r210) ma płaską obudowę z rolką do 30 mm. [SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus) mieści rolkę do 40 mm. [SPP-R310](/produkt/bixolon-spp-r310) drukuje do 72 mm, a [SPP-R410](/produkt/bixolon-spp-r410) do 104 mm.",
+  "technicalDeepDive": "[SPP-C200](/produkt/bixolon-spp-c200) i [SPP-C300](/produkt/bixolon-spp-c300) mają USB-C oraz Bluetooth. Różnią się szerokością papieru i szybkością druku. [SPP-R210](/produkt/bixolon-spp-r210) ma płaską obudowę z rolką do 30 mm. [SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus) mieści rolkę do 40 mm. [SPP-R310](/produkt/bixolon-spp-r310) drukuje do 72 mm, a [SPP-R410](/produkt/bixolon-spp-r410) do 104 mm.\n\n[Epson TM-P20II](/produkt/epson-tm-p20ii) obsługuje papier 58 mm. [Epson TM-P80II](/produkt/epson-tm-p80ii) przyjmuje papier 80 mm; warianty AC mają gilotynę. Obie rodziny oferują osobne PN Bluetooth i Wi-Fi.",
   "useCases": [
     {
       "title": "Potwierdzenie usługi",

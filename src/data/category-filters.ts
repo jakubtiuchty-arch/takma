@@ -1857,3 +1857,30 @@ categoryFilters['drukarki-pos'] = [
     ]
   }
 ]
+
+// POS manufacturers and technology use the existing sidebar controls.
+categoryFilters['drukarki-pos'] = [
+  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }] },
+  { specKey: 'technologia-pos', label: 'Technologia druku', derived: [
+    { value: 'Termiczna', pattern: '^Termiczny', specs: ['Metoda druku'] },
+    { value: 'Igłowa', pattern: '^Igłowy$', specs: ['Metoda druku'] },
+    { value: 'Hybrydowa', pattern: '^Hybrydowy', specs: ['Metoda druku'] },
+    { value: 'Atramentowa', pattern: '^Atramentowy$', specs: ['Metoda druku'] }
+  ] },
+  { specKey: 'papier-pos', label: 'Papier', derived: [
+    { value: '58 mm', pattern: '58', specs: ['Szerokość papieru'] },
+    { value: '76 mm', pattern: '76', specs: ['Szerokość papieru'] },
+    { value: '80 mm', pattern: '80', specs: ['Szerokość papieru'] },
+    { value: 'Formularze i arkusze', pattern: 'Formularze|arkusz', specs: ['Szerokość papieru'] }
+  ] },
+  ...categoryFilters['drukarki-pos'].filter(f => f.specKey === 'lacznosc-pos'),
+  { specKey: 'material-pos', label: 'Materiał', derived: [
+    { value: 'Papier termiczny', pattern: '^Termiczny|^Hybrydowy', specs: ['Metoda druku'] },
+    { value: 'Dostępne wersje linerless', slugs: ['bixolon-srp-s300ii','epson-tm-l100','epson-tm-l90lf'] },
+    { value: 'Papier zwykły / formularze', pattern: '^Igłowy|^Atramentowy|^Hybrydowy', specs: ['Metoda druku'] }
+  ] }
+]
+categoryFilters['mobilne-drukarki-paragonow'] = [
+  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }] },
+  ...categoryFilters['mobilne-drukarki-paragonow'].map(f => f.specKey === 'material-paragony' ? { ...f, derived: f.derived?.map(rule => rule.value === 'Papier termiczny' ? { ...rule, slugs: [...(rule.slugs ?? []), 'epson-tm-p20ii', 'epson-tm-p80ii'] } : rule) } : f)
+]

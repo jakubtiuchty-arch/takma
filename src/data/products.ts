@@ -1,3 +1,4 @@
+import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from './bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from './bixolon-mobile-products'
@@ -357,23 +358,23 @@ categories.push({
   "slug": "mobilne-drukarki-paragonow",
   "name": "Mobilne drukarki paragonów",
   "description": "Drukarki termiczne do potwierdzeń i biletów z aplikacji mobilnych",
-  "seoTitle": "Mobilne drukarki paragonów BIXOLON — PN, ceny i stany",
-  "seoDescription": "Mobilne drukarki paragonów BIXOLON SPP-C i SPP-R: papier 58, 80 lub 112 mm. Porównaj PN, Bluetooth, Wi-Fi, ceny, stany i zgodne akcesoria.",
-  "longDescription": "Mobilne drukarki BIXOLON do potwierdzeń, biletów i dokumentów z aplikacji. Wybierz papier 58, 80 lub 112 mm oraz połączenie USB, Bluetooth lub Wi-Fi. To urządzenia niefiskalne.",
+  "seoTitle": "Mobilne drukarki paragonów — Epson i BIXOLON",
+  "seoDescription": "Mobilne drukarki paragonów Epson i BIXOLON: papier 58, 80 lub 112 mm. Porównaj PN, Bluetooth, Wi-Fi, ceny, stany i zgodne akcesoria.",
+  "longDescription": "Mobilne drukarki Epson i BIXOLON do potwierdzeń, biletów i dokumentów z aplikacji. Wybierz papier 58, 80 lub 112 mm oraz USB, Bluetooth lub Wi-Fi. To urządzenia niefiskalne.",
   "icon": "printer",
-  "productCount": 6
+  "productCount": 8
 })
 
 categories.push({
   "id": "drukarki-pos",
   "slug": "drukarki-pos",
-  "name": "Termiczne drukarki POS",
+  "name": "Drukarki POS",
   "description": "Stacjonarne drukarki termiczne do potwierdzeń i biletów",
-  "seoTitle": "Termiczne drukarki POS BIXOLON — PN, ceny i stany",
-  "seoDescription": "Termiczne drukarki POS BIXOLON: modele SRP do paragonów niefiskalnych, biletów i linerless. Porównaj USB, Ethernet, Wi-Fi, PN, ceny i stany.",
-  "longDescription": "Stacjonarne drukarki BIXOLON do potwierdzeń, biletów i wydruków z aplikacji POS. Wybierz papier 58 lub 80 mm, sposób połączenia i kierunek wydruku. To urządzenia niefiskalne.",
+  "seoTitle": "Drukarki POS — Epson i BIXOLON, ceny i stany",
+  "seoDescription": "Drukarki POS Epson i BIXOLON: termiczne, igłowe, atramentowe i hybrydowe. Porównaj PN, interfejsy, ceny, stany i zgodne akcesoria.",
+  "longDescription": "Drukarki POS Epson i BIXOLON do potwierdzeń, biletów, formularzy i zgodnych etykiet. Porównaj technologię druku, sposób podawania papieru i połączenie z aplikacją. To urządzenia niefiskalne.",
   "icon": "printer",
-  "productCount": 9
+  "productCount": 25
 })
 
 export const subcategories: Subcategory[] = [
@@ -487,7 +488,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: [...bixolonPosAccessories.map(p => p.id), ...bixolonReceiptAccessories.map(p => p.id), ...bixolonMobileAccessories.map(p => p.id), ...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: [...epsonPosAccessories.map(p => p.id), ...bixolonPosAccessories.map(p => p.id), ...bixolonReceiptAccessories.map(p => p.id), ...bixolonMobileAccessories.map(p => p.id), ...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -95452,6 +95453,8 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...epsonPosProducts,
+  ...epsonPosAccessories,
   ...bixolonPosProducts,
   ...bixolonPosAccessories,
   ...bixolonReceiptProducts,
