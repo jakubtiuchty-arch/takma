@@ -45,45 +45,31 @@ export const bixolonRfidProducts: Product[] = [
     seoTitle: 'BIXOLON XT5-40NR — drukarka RFID UHF 203–600 dpi',
     seoDescription: 'BIXOLON XT5-40NR, XT5-43NR i XT5-46NR: przemysłowe drukarki i kodery UHF RFID 203, 300 lub 600 dpi. Druk do 356 mm/s, taśma 450 m, Ethernet.',
     shortDescription: 'Przemysłowa drukarka i koder UHF RFID EU. Trzy warianty: 203, 300 i 600 dpi. Ekran dotykowy 4,3 cala, Ethernet, USB i RS-232. Rolki do 203 mm i taśmy do 450 m.',
-    description: `BIXOLON XT5-40NR drukuje etykiety i zapisuje dane w ich układach UHF RFID. Służy do znakowania produktów, kartonów i wyposażenia. Rodzina obejmuje XT5-40NR, XT5-43NR i XT5-46NR. Dostępne konfiguracje są przeznaczone do pracy w Europie.
+    description: `BIXOLON XT5-40NR to przemysłowa drukarka etykiet z koderem UHF RFID dla Europy. Drukuje etykiety i zapisuje dane w ich układach UHF. Rodzina obejmuje XT5-40NR, XT5-43NR i XT5-46NR.
 
-## Wybierz rozdzielczość i prędkość
+## Rozdzielczość i prędkość
 
-XT5-40NRES ma 203 dpi i drukuje z prędkością do 356 mm/s. XT5-43NRES/BEG ma 300 dpi i osiąga do 254 mm/s. XT5-46NRES/BEG ma 600 dpi i osiąga do 127 mm/s. Maksymalna szerokość nadruku wynosi odpowiednio 104, 105,7 i 105,6 mm.
+XT5-40NRES ma 203 dpi i drukuje z prędkością do 356 mm/s. XT5-43NRES/BEG ma 300 dpi i drukuje do 254 mm/s. XT5-46NRES/BEG ma 600 dpi i drukuje do 127 mm/s. Maksymalna szerokość nadruku wynosi odpowiednio 104, 105,7 i 105,6 mm. Prędkość kodowania zależy od wkładki RFID i danych zadania.
 
-Wersja 203 dpi służy do standardowych oznaczeń. Rozdzielczość 300 lub 600 dpi pozwala przygotować drobniejszy tekst i grafikę. Prędkość kodowania zależy także od wkładki RFID i danych zadania. Maksymalna prędkość nadruku nie gwarantuje takiej samej prędkości kodowania.
+## Kodowanie UHF RFID
 
-## Kodowanie UHF RFID dla Europy
+Koder pracuje w paśmie 865–868 MHz. Obsługuje ISO 18000-6C i EPC Class 1 Gen2. Minimalny odstęp między wkładkami wynosi 16 mm. Koder jest wbudowany fabrycznie. Etykiety z wkładką UHF są w dziale [etykiety RFID](/etykiety-rfid-zebra).
 
-Pokazane PN mają koder UHF dla pasma 865–868 MHz. Obsługują ISO 18000-6C i EPC Class 1 Gen2. Minimalny odstęp między wkładkami wynosi 16 mm. Nie trzeba dokupować osobnego modułu RFID do tych konfiguracji.
+## Materiał i taśma
 
-Przed wdrożeniem dobierz wkładkę i wykonaj kalibrację. Do metalu lub opakowań z płynem potrzebujesz odpowiednio dobranej etykiety. Materiały do XT5 są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary, gilzę i powierzchnię przedmiotu. Dobierzemy rolkę do XT5 i sprawdzimy kodowanie.
-
-Przygotuj zadanie z poleceniami zapisu RFID. Sam nadruk kodu kreskowego nie zapisuje identyfikatora EPC. Powiąż EPC z danymi w WMS lub ERP. Do odczytu oznaczeń poza drukarką potrzebujesz czytnika UHF.
-
-## Materiał i taśma barwiąca
-
-Drukarka obsługuje materiał o szerokości 25–114 mm i rolki do 203 mm. Standardowy uchwyt przyjmuje gilzy 38,1–76,2 mm. Gilza 25,4 mm wymaga odpowiedniej opcji uchwytu.
-
-Termotransfer wymaga taśmy barwiącej. XT5 obsługuje taśmy do 450 m na gilzie 25,4 mm. Druk termiczny bezpośredni wymaga materiału termoczułego i nie używa taśmy. W obu metodach etykieta RFID musi pasować do kodera.
+Drukarka obsługuje materiał o szerokości 25–114 mm i rolki do 203 mm na gilzie 38,1–76,2 mm. Gilza 25,4 mm wymaga opcjonalnego uchwytu. Taśma barwiąca ma długość do 450 m, na gilzie 25,4 mm. Druk termiczny bezpośredni nie wymaga taśmy.
 
 ## Obsługa i łączność
 
-Ekran dotykowy 4,3 cala służy do ustawień i obsługi komunikatów. Obudowa ma składaną pokrywę. Trzy oferowane PN mają zegar RTC, USB, USB Host, Ethernet i RS-232. Nie zawierają fabrycznego Wi-Fi ani Bluetooth.
+Ekran dotykowy ma 4,3 cala. Każda wersja ma zegar RTC, USB, USB Host, RS-232 i Ethernet, bez Wi-Fi i Bluetooth. Drukarka ma emulacje SLCS, BPL-Z, BPL-E i BPL-D. Głowice zamienne mają osobne karty dla 203, 300 i 600 dpi.
 
-SLCS, BPL-Z, BPL-E i BPL-D umożliwiają przygotowanie nadruku z systemu nadrzędnego. Przed integracją sprawdź również obsługę poleceń kodowania. Funkcja Printer Twin kopiuje ustawienia i pliki między zgodnymi drukarkami przez pamięć USB.
+Gwarancja producenta wynosi 2 lata od zakupu lub 27 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.
 
-## Akcesoria i części zamienne
-
-Głowica AE04-00043A-AS pasuje do XT5-40NR 203 dpi. AE04-00043B-AS służy do XT5-43NR 300 dpi. AE04-00043C-AS służy do XT5-46NR 600 dpi. To części zamienne, a nie obowiązkowe dodatki do nowej drukarki.
-
-Dobieraj głowicę do tej samej rozdzielczości. Przed zakupem części podaj numer seryjny urządzenia. Gilotynę, odklejak i nawijak dobierz do wersji RFID. Przed zamówieniem podaj nam PN drukarki, a wskażemy zgodny zestaw.
-
-Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr). W tej klasie przemysłowej sprawdź także [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) i [TSC MB241TR](/produkt/tsc-mb241tr).`,
+Biurkowy model RFID to [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr). W klasie przemysłowej są także [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) i [TSC MB241TR](/produkt/tsc-mb241tr).`,
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'bixolon',
     images: ['/images/products/bixolon-xt5-40nr-clean.webp'], imageDescriptions: ['BIXOLON XT5-40NR — drukarka przemysłowa RFID z ekranem dotykowym, widok pod kątem'],
     tags: ['magazyn', 'produkcja', 'logistyka'], priceFrom: 14482.42, availability: 'unavailable', isNew: true, isBestseller: false,
-    keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID EU', rozdzielczosc: '203, 300 lub 600 dpi', predkoscDruku: 'Do 356 / 254 / 127 mm/s, zależnie od PN', szerokoscDruku: '104 / 105,7 / 105,6 mm', szerokoscEtykiet: '25–114 mm; RFID wymaga doboru wkładki' },
+    keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID EU', rozdzielczosc: '203, 300 lub 600 dpi', predkoscDruku: 'Do 356 mm/s (203 dpi), 254 mm/s (300 dpi), 127 mm/s (600 dpi)', szerokoscDruku: '104 / 105,7 / 105,6 mm', szerokoscEtykiet: '25–114 mm; RFID wymaga doboru wkładki' },
     variants: [
       { partNumber: 'XT5-40NRES', priceFrom: 14482.42, name: 'XT5-40NR, 203 dpi, UHF EU', attributes: { 'Rozdzielczość': '203 dpi', 'Prędkość druku': '356 mm/s', 'Szerokość druku': '104 mm' }, availability: 'unavailable' },
       { partNumber: 'XT5-43NRES/BEG', priceFrom: 17504.34, name: 'XT5-43NR, 300 dpi, UHF EU', attributes: { 'Rozdzielczość': '300 dpi', 'Prędkość druku': '254 mm/s', 'Szerokość druku': '105,7 mm' }, availability: 'unavailable' },
@@ -91,12 +77,12 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
     ],
     specifications: [
       { name: 'RFID', value: 'UHF EU 865–868 MHz; ISO 18000-6C / EPC Class 1 Gen2; minimalny pitch 16 mm' },
-      { name: 'Rozdzielczość', value: '203, 300 lub 600 dpi, zależnie od PN' },
+      { name: 'Rozdzielczość', value: '203, 300 lub 600 dpi' },
       { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
       { name: 'Szerokość druku', value: '104 mm (203 dpi); 105,7 mm (300 dpi); 105,6 mm (600 dpi)' },
       { name: 'Prędkość nadruku', value: 'Do 356 / 254 / 127 mm/s dla 203 / 300 / 600 dpi; kodowanie zależy od materiału' },
       { name: 'Ekran', value: 'Dotykowy, kolorowy, 4,3 cala' },
-      { name: 'Łączność', value: 'USB, USB Host, RS-232, Ethernet; bez fabrycznego Wi-Fi i Bluetooth w pokazanych PN' },
+      { name: 'Łączność', value: 'USB, USB Host, RS-232, Ethernet; Wi-Fi i Bluetooth: brak' },
       { name: 'Zegar RTC', value: 'Tak' },
       { name: 'Materiał', value: 'Szerokość 25–114 mm; rolka do 203 mm; gilza 38,1–76,2 mm' },
       { name: 'Taśma barwiąca', value: 'Do 450 m; gilza 25,4 mm' },
@@ -108,8 +94,11 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
     faq: [
       { question: 'Czy wszystkie wersje XT5 mają RFID?', answer: 'Nie. Fabryczny koder UHF EU mają XT5-40NRES, XT5-43NRES/BEG i XT5-46NRES/BEG. Zwykła XT5 bez kodera nie zapisuje danych w etykietach RFID.' },
       { question: 'Co różni XT5-40NR, XT5-43NR i XT5-46NR?', answer: 'Rozdzielczość, maksymalna prędkość i szerokość nadruku. Warianty mają odpowiednio 203, 300 i 600 dpi oraz prędkości do 356, 254 i 127 mm/s. Wspólne wyposażenie obejmuje koder UHF EU, ekran dotykowy i połączenia przewodowe.' },
-      { question: 'Czy pokazane PN mają Wi-Fi?', answer: 'Nie. Oferowane konfiguracje mają połączenia przewodowe. Łączność bezprzewodowa wymaga osobnego doboru konfiguracji.' },
+      { question: 'Czy XT5-40NR ma Wi-Fi?', answer: 'Nie. XT5-40NR ma USB, USB Host, RS-232 i Ethernet. Wi-Fi i Bluetooth nie są wbudowane.' },
       { question: 'Czy drukarka RFID może drukować zwykłe etykiety?', answer: 'Tak. Może wykonywać sam nadruk bez kodowania. Przy etykietach RFID zadanie musi dodatkowo zawierać polecenia zapisu danych.' },
+      { question: 'Jak przygotować etykiety RFID do XT5-40NR?', answer: 'Wkładkę RFID dobiera się do przedmiotu, a przed wdrożeniem wykonuje się kalibrację. Metal i opakowania z płynem wymagają etykiet przeznaczonych do takich powierzchni. Na podstawie wymiarów etykiety, gilzy i powierzchni dobierzemy rolkę i sprawdzimy kodowanie.' },
+      { question: 'Czy nadruk kodu kreskowego zapisuje EPC?', answer: 'Nie. Zadanie musi zawierać polecenia zapisu RFID. EPC wiąże się z danymi w WMS lub ERP. Odczyt oznaczeń poza drukarką wymaga czytnika UHF.' },
+      { question: 'Jak dobrać głowicę i opcje do XT5-40NR?', answer: 'Głowica musi mieć tę samą rozdzielczość co drukarka. Gilotynę, odklejak i nawijak dobiera się do wersji RFID. Do zamówienia części potrzebny jest PN i numer seryjny drukarki.' },
     ],
     downloads: [{ name: 'Karta katalogowa XT5-40NR (EN)', type: 'datasheet', url: '/downloads/bixolon-xt5-40nr-karta-en.pdf', size: 'PDF' }, { name: 'Instrukcja XT5-40NR (EN)', type: 'manual', url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: 'PDF' }, ...commonDownloads, { name: 'Sterowniki i pliki XT5-40NR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=165', size: 'Online' }],
     relatedProducts: ['bixolon-xd5-40tr', 'zebra-zt411-rfid', 'tsc-mb241tr'], sameAs: 'https://www.bixolon.com/product_view.php?idx=384', createdAt: '2026-10-16',
@@ -119,35 +108,21 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
     seoTitle: 'BIXOLON XD5-40tR — drukarka RFID UHF 203 dpi',
     seoDescription: 'BIXOLON XD5-40tR: biurkowa drukarka i koder UHF RFID 203 dpi. Druk 108 mm z prędkością 152 mm/s, taśma 300 m, Ethernet, USB i RS-232.',
     shortDescription: 'Biurkowa drukarka i koder UHF RFID EU, 203 dpi, do 152 mm/s. Druk do 108 mm. USB, USB Host, RS-232 i Ethernet. Taśmy do 300 m i opcjonalny uchwyt większej rolki.',
-    description: `BIXOLON XD5-40tR drukuje etykiety i zapisuje dane w ich układach UHF RFID. To biurkowe urządzenie do stanowiska w magazynie, handlu lub produkcji. Dostępny PN XD5-40tREK ma głowicę 203 dpi i połączenia przewodowe.
+    description: `BIXOLON XD5-40tR to biurkowa drukarka etykiet z koderem UHF RFID dla Europy. Drukuje etykiety i zapisuje dane w ich układach UHF. PN XD5-40tREK ma głowicę 203 dpi i połączenia przewodowe.
 
-## Nadruk i kodowanie na jednym stanowisku
+## Nadruk i kodowanie
 
-XD5-40tREK drukuje z prędkością do 152 mm/s i szerokością do 108 mm. Obsługuje druk termotransferowy i termiczny bezpośredni. Termotransfer wymaga dobranej taśmy barwiącej. Materiał termoczuły nie wymaga taśmy.
-
-Koder UHF dla Europy pracuje w paśmie 865–868 MHz. Obsługuje ISO 18000-6C i EPC Class 1 Gen2. Minimalny odstęp między wkładkami RFID wynosi 16 mm. Kodowanie może wymagać niższej prędkości niż sam nadruk.
-
-Przed pierwszą pracą wykonaj kalibrację. Po zmianie materiału sprawdź ustawienia ponownie. Gotowe rolki z wkładką UHF zobaczysz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety i gilzę. Dobierzemy rolkę do XD5-40tR i położenie wkładki.
+Drukarka drukuje z prędkością do 152 mm/s na szerokości do 108 mm. Obsługuje druk termotransferowy i termiczny bezpośredni. Koder pracuje w paśmie 865–868 MHz i obsługuje ISO 18000-6C oraz EPC Class 1 Gen2. Minimalny odstęp między wkładkami wynosi 16 mm. Kodowanie może wymagać niższej prędkości niż sam nadruk. Etykiety z wkładką UHF są w dziale [etykiety RFID](/etykiety-rfid-zebra).
 
 ## Etykiety, rolki i taśmy
 
-Drukarka obsługuje materiał o szerokości 15–118 mm. Wewnątrz mieści rolkę do 127 mm na gilzie 25,4–38,1 mm. Taśma barwiąca może mieć do 300 m na gilzie 25,4 mm albo do 74 m na gilzie 12,7 mm.
+Nośnik może mieć szerokość 15–118 mm. Rolka wewnątrz drukarki może mieć średnicę do 127 mm, na gilzie 25,4–38,1 mm. Taśma barwiąca może mieć do 300 m na gilzie 25,4 mm albo do 74 m na gilzie 12,7 mm. Opcjonalny uchwyt [LES-400G](/produkt/bixolon-les-400g) podaje materiał z rolki do 203 mm umieszczonej za drukarką.
 
-Opcjonalny uchwyt LES-400G podaje materiał z rolki do 203 mm umieszczonej za drukarką. Nie jest częścią standardowego zestawu. Większa rolka nadal wymaga etykiety zgodnej z koderem i mechanizmem drukarki.
+## Łączność i zestaw
 
-## Łączność i integracja
+XD5-40tREK ma USB, USB Host, RS-232 i Ethernet, bez Wi-Fi i Bluetooth. Ekran LCD pokazuje ustawienia i komunikaty. Drukarka ma emulacje SLCS, BPL-Z i BPL-E. W zestawie są zasilacz, przewód zasilający, przewód USB, gilzy 12,7 i 25,4 mm oraz 2 uchwyty taśmy.
 
-Oferowany PN ma USB, USB Host, RS-232 i Ethernet. Nie zawiera fabrycznego Wi-Fi ani Bluetooth. Ekran LCD ułatwia ustawienia i odczyt komunikatów. W zestawie są zasilacz, przewód zasilający, przewód USB, gilzy 12,7 i 25,4 mm oraz 2 uchwyty taśmy.
-
-Emulacje SLCS, BPL-Z i BPL-E służą do przygotowania nadruku. Zadanie RFID musi zawierać polecenia kodowania. Sam plik PDF ani nadruk kodu kreskowego nie zapisuje EPC. Przed integracją z WMS lub ERP sprawdź zgodność poleceń i format identyfikatora.
-
-Do inwentaryzacji radiowej potrzebujesz osobnego czytnika UHF. Drukarka przygotowuje oznaczenia, ale nie zastępuje czytnika magazynowego.
-
-## Rozbudowa i części
-
-LES-400G jest zewnętrznym uchwytem rolki bez napędu. Gilotyna i odklejak wymagają doboru do konkretnej konfiguracji RFID. Nie przecinaj anteny ani układu etykiety. Części zamienne dobieraj według modelu i numeru seryjnego.
-
-Do większych rolek i wyższej wydajności porównaj [BIXOLON XT5-40NR](/produkt/bixolon-xt5-40nr). W klasie biurkowej sprawdź także [Zebra ZD621R](/produkt/zebra-zd621r) i [TSC TH240R](/produkt/tsc-th240r).`,
+Przemysłowy model RFID to [BIXOLON XT5-40NR](/produkt/bixolon-xt5-40nr). W klasie biurkowej są także [Zebra ZD621R](/produkt/zebra-zd621r) i [TSC TH240R](/produkt/tsc-th240r).`,
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'bixolon',
     images: ['/images/products/bixolon-xd5-40tr-clean.webp'], imageDescriptions: ['BIXOLON XD5-40tR — biurkowa drukarka RFID z ekranem LCD, widok pod kątem'],
     tags: ['magazyn', 'retail', 'produkcja'], priceFrom: 8659.82, availability: 'unavailable', isNew: true, isBestseller: false,
@@ -168,9 +143,11 @@ Do większych rolek i wyższej wydajności porównaj [BIXOLON XT5-40NR](/produkt
     ],
     compatibleAccessories: [], relatedAccessories: ['bixolon-les-400g'], applications: ['Druk i kodowanie etykiet przy stanowisku', 'Znakowanie produktów i wyposażenia', 'Przygotowanie oznaczeń dla WMS i ERP'],
     faq: [
-      { question: 'Czy XD5-40tREK ma już RFID?', answer: 'Tak. Pokazany PN zawiera koder UHF EU. Nie trzeba dokupować modułu RFID. Potrzebujesz zgodnych etykiet oraz zadania z poleceniami zapisu danych.' },
+      { question: 'Czy XD5-40tREK ma już RFID?', answer: 'Tak. XD5-40tREK ma wbudowany koder UHF EU. Do kodowania wymaga zgodnych etykiet oraz zadania z poleceniami zapisu danych.' },
       { question: 'Czy większa rolka wymaga osobnego uchwytu?', answer: 'Tak. Rolka wewnętrzna może mieć do 127 mm. Opcjonalny LES-400G obsługuje rolkę zewnętrzną do 203 mm na gilzie 25,4–38,1 mm.' },
       { question: 'Czy ten PN ma Wi-Fi lub Bluetooth?', answer: 'Nie. XD5-40tREK ma USB, USB Host, RS-232 i Ethernet. Połączenie bezprzewodowe wymaga innej konfiguracji.' },
+      { question: 'Jak przygotować XD5-40tR do etykiet RFID?', answer: 'Przed pierwszą pracą i po każdej zmianie materiału wykonuje się kalibrację. Na podstawie szerokości etykiety i gilzy dobierzemy rolkę i położenie wkładki. Zadanie RFID musi zawierać polecenia kodowania; sam nadruk kodu kreskowego nie zapisuje EPC.' },
+      { question: 'Czy XD5-40tR zastępuje czytnik UHF?', answer: 'Nie. Drukarka przygotowuje oznaczenia. Inwentaryzacja radiowa wymaga osobnego czytnika UHF.' },
       { question: 'Czym XD5-40tR różni się od XT5-40NR?', answer: 'XD5-40tR jest drukarką biurkową 203 dpi z taśmą do 300 m. Przemysłowa XT5-40NR obsługuje taśmę do 450 m i ma także warianty 300 oraz 600 dpi.' },
     ],
     downloads: [{ name: 'Karta katalogowa XD5-40tR (EN)', type: 'datasheet', url: '/downloads/bixolon-xd5-40tr-karta-en.pdf', size: 'PDF' }, { name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf', size: 'PDF' }, ...commonDownloads, { name: 'Sterowniki i pliki XD5-40tR', type: 'driver', url: 'https://www.bixolon.com/download_view.php?idx=163', size: 'Online' }],
