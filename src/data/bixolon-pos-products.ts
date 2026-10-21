@@ -62,12 +62,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 80 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "145 × 195 × 146 mm"
       },
       {
+        "name": "Masa",
+        "value": "1,6 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "150 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "1,8 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -197,12 +213,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 83 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "145 × 204 × 146 mm"
       },
       {
+        "name": "Masa",
+        "value": "1,6 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "150 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "2 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -356,12 +388,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 83 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "145 × 200 × 146 mm"
       },
       {
+        "name": "Masa",
+        "value": "1,6 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "200 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "2 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -563,12 +611,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 83 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "147 × 200 × 148 mm"
       },
       {
+        "name": "Masa",
+        "value": "1,56 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "250 km; 200 km na papierze Blue4est"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "3 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -762,6 +826,10 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 83 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "147 × 200 × 148 mm"
       },
@@ -772,6 +840,14 @@ export const bixolonPosProducts: Product[] = [
       {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "300 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "3 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -887,12 +963,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 60 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "103 × 104 × 109 mm"
       },
       {
+        "name": "Masa",
+        "value": "0,61 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "100 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "1 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -1022,12 +1114,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 80 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "128 × 125 × 125 mm"
       },
       {
+        "name": "Masa",
+        "value": "1,23 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "150 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "1,5 mln cięć"
       },
       {
         "name": "Zastosowanie",
@@ -1145,12 +1253,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 105 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,05–0,08 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "154 × 203 × 148 mm"
       },
       {
+        "name": "Masa",
+        "value": "2,0 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "250 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "3 mln cięć"
       },
       {
         "name": "Klasa szczelności",
@@ -1323,12 +1447,28 @@ export const bixolonPosProducts: Product[] = [
         "value": "Do 102 mm"
       },
       {
+        "name": "Grubość papieru",
+        "value": "0,06–0,09 mm"
+      },
+      {
         "name": "Wymiary",
         "value": "144 × 185 × 206 mm"
       },
       {
+        "name": "Masa",
+        "value": "2,2 kg"
+      },
+      {
         "name": "Obsługa papieru",
         "value": "Gilotyna"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "Paragony: 150 km; materiał Re-stick: 75 km"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "Paragony: 3 mln cięć; materiał Re-stick: 1 mln cięć"
       },
       {
         "name": "Klasa szczelności",
