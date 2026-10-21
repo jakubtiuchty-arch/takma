@@ -1172,14 +1172,7 @@ export const counterScannerProducts: Product[] = [
         "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
       }
     ],
-    "downloads": [
-      {
-        "name": "Zebra MP72 — przewodnik akcesoriów (EN)",
-        "type": "datasheet",
-        "url": "/datasheets/zebra-mp72-accessories.pdf",
-        "size": "9238 KB"
-      }
-    ],
+    "downloads": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   }
