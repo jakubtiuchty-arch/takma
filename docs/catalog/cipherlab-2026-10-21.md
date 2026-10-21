@@ -163,3 +163,6 @@ Unikalne tytuły, metaopisy, H1 i opisy zastosowań. Rozdzielono intencje RS20 (
 
 ## Walidacja
 Lokalne testy: 32 karty HTTP 200, jedno H1, metadane/canonical/OG/Twitter i schematy, 50 unikalnych PN, lokalne dokumenty PDF i zdjęcia oraz linki. Pełny build i kontrola produkcji wykonywane przed zakończeniem zadania.
+
+## Korekta jakości zdjęcia ładowarki 20 baterii
+Po kontroli dużej galerii wykonano poprawę jakości w Imagen na oryginalnym zdjęciu producenta 300 × 300 px. Zachowano pięć modułów z czterema gniazdami każdy, perspektywę i konstrukcję. Nowy plik `cipherlab-ark95mscnne01-v2.webp`. Wynik: `exec-fb7967fe-bf29-4899-b057-051aad214e60.png`. Sprawdzono układ gniazd względem oryginału.

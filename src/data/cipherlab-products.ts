@@ -2034,7 +2034,7 @@ export const cipherlabAccessories: Product[] = [
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
-      "/images/products/cipherlab-ark95mscnne01.webp"
+      "/images/products/cipherlab-ark95mscnne01-v2.webp"
     ],
     "imageDescriptions": [
       "Ładowarka 20 baterii CipherLab RK96 — EU — ARK95MSCNNE01"
