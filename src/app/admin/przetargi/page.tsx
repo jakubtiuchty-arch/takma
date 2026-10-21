@@ -1,153 +1,122 @@
+import Link from 'next/link'
 import { prisma } from '@/lib/db'
-import { setTenderStatus } from './actions'
+import { setTenderStatus, retryTender, addTenderLink, toggleTenderSource } from './actions'
+import { tenderWhere, VIEWS, type View } from '@/lib/tenders/filters'
+import type { TenderAnalysis } from '@/lib/tenders/analysis'
 
 export const dynamic = 'force-dynamic'
+const LABELS: Record<View, string> = { trafienia: 'Trafienia', przeglad: 'Do przejrzenia', wszystkie: 'Wszystkie otwarte', slabsze: 'Niskie dopasowanie', archiwum: 'Archiwum' }
+const STATUS: Record<string, string> = { new: 'Nowe', watched: 'Obserwowane', dismissed: 'Odrzucone' }
+const ANALYSIS: Record<string, string> = { pending: 'Czeka na analizę', error: 'Błąd — analiza do ponowienia', review: 'Wymaga sprawdzenia', done: 'Analiza zakończona' }
+const dateTime = (d: Date | null) => d ? d.toLocaleString('pl-PL', { timeZone: 'Europe/Warsaw', dateStyle: 'short', timeStyle: 'short' }) : 'brak danych'
+const cls = (active: boolean) => `px-3 py-1.5 rounded-lg border ${active ? 'bg-gray-900 text-white border-gray-900' : 'border-slate-200 text-gray-600 hover:bg-gray-50'}`
+const safeHref = (s: string | null | undefined) => s && /^https:\/\//i.test(s) ? s : '#'
 
-const STATUS_LABEL: Record<string, string> = { new: 'Nowy', watched: 'Obserwowany', dismissed: 'Odrzucony' }
-
-function ScoreBadge({ score }: { score: number }) {
-  const cls = score >= 70 ? 'bg-emerald-100 text-emerald-700' : score >= 40 ? 'bg-amber-100 text-amber-700' : 'bg-gray-100 text-gray-500'
-  return <span className={`inline-block px-2 py-0.5 rounded-md text-sm font-bold ${cls}`}>{score}</span>
-}
-
-function daysLeft(date: Date | null): { label: string; urgent: boolean } {
-  if (!date) return { label: '—', urgent: false }
-  const d = Math.ceil((date.getTime() - Date.now()) / 86400_000)
-  if (d < 0) return { label: 'po terminie', urgent: false }
-  return { label: `${date.toLocaleDateString('pl-PL')} (${d} dni)`, urgent: d <= 7 }
-}
-
-/**
- * Panel przetargów.
- *
- * Domyślnie pokazujemy tylko trafienia z oceną ≥ 40 i nieprzeterminowane —
- * lista ma być listą rzeczy do zrobienia, nie archiwum wszystkiego, co
- * przewinęło się przez BZP. Niżej ocenione da się obejrzeć zakładką
- * „Do przejrzenia", a przeterminowane zakładką „Archiwum".
- */
-const PROG_TRAFIENIA = 40
-
-export default async function PrzetargiPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ status?: string; widok?: string }>
-}) {
-  const { status, widok } = await searchParams
-  const filter = status && ['new', 'watched', 'dismissed'].includes(status) ? status : undefined
-  const teraz = new Date()
-
-  // Widoki: trafienia (domyślny), słabsze, archiwum (po terminie)
-  const wgWidoku =
-    widok === 'slabsze'
-      ? { score: { lt: PROG_TRAFIENIA }, OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
-      : widok === 'archiwum'
-        ? { submittingOffersDate: { lt: teraz } }
-        : { score: { gte: PROG_TRAFIENIA }, OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
-
-  const tenders = await prisma.tender.findMany({
-    where: { ...wgWidoku, ...(filter ? { status: filter } : { status: { not: 'dismissed' } }) },
-    orderBy: [{ score: 'desc' }, { submittingOffersDate: 'asc' }],
-    take: 200,
-  })
-
-  const aktywne = { OR: [{ submittingOffersDate: null }, { submittingOffersDate: { gte: teraz } }] }
-  const [ileTrafien, ileSlabszych, ileArchiwum] = await Promise.all([
-    prisma.tender.count({ where: { ...aktywne, score: { gte: PROG_TRAFIENIA }, status: { not: 'dismissed' } } }),
-    prisma.tender.count({ where: { ...aktywne, score: { lt: PROG_TRAFIENIA }, status: { not: 'dismissed' } } }),
-    prisma.tender.count({ where: { submittingOffersDate: { lt: teraz } } }),
+export default async function PrzetargiPage({ searchParams }: { searchParams: Promise<{ status?: string; widok?: string; q?: string; zrodlo?: string; strona?: string; komunikat?: string }> }) {
+  const p = await searchParams
+  const view: View = VIEWS.includes(p.widok as View) ? p.widok as View : 'trafienia'
+  const status = p.status && Object.keys(STATUS).includes(p.status) ? p.status : ''
+  const q = (p.q || '').trim().slice(0, 200), source = (p.zrodlo || '').slice(0, 200)
+  const now = new Date()
+  const base = tenderWhere(view, now, q, source)
+  const where = { AND: [base, status ? { status } : { status: { not: 'dismissed' } }] }
+  const [total, groups, sources, sourceNames, counts] = await Promise.all([
+    prisma.tender.count({ where }),
+    prisma.tender.groupBy({ by: ['status'], where: base, _count: true }),
+    prisma.tenderSource.findMany({ where: { id: { notIn: ['_lock', '_digest'] } }, orderBy: { name: 'asc' } }),
+    prisma.tender.findMany({ distinct: ['source'], select: { source: true } }),
+    Promise.all(VIEWS.map(v => prisma.tender.count({ where: { AND: [tenderWhere(v, now, q, source), status ? { status } : { status: { not: 'dismissed' } }] } }))),
   ])
-  const counts = Object.fromEntries(
-    (await prisma.tender.groupBy({ by: ['status'], _count: true })).map((g) => [g.status, g._count]),
-  ) as Record<string, number>
-
-  return (
-    <div className="max-w-6xl">
-      <div className="flex items-center justify-between mb-1">
-        <h1 className="text-2xl font-bold text-gray-900">Przetargi AutoID</h1>
-        <div className="text-sm text-gray-500">Źródła: BZP (e-Zamówienia) + TED (UE) · cron codziennie 6:15</div>
-      </div>
-      <p className="text-sm text-gray-500 mb-5">
-        Ocena AI dopasowania do profilu TAKMA (0–100). Do bazy trafiają tylko ogłoszenia ≥ 30,
-        na tej liście ≥ {PROG_TRAFIENIA} i z otwartym terminem składania ofert. Mail dzienny: ≥ 40.
-      </p>
-
-      <div className="flex flex-wrap gap-2 mb-3 text-sm">
-        {[
-          { href: '/admin/przetargi', label: `Trafienia (${ileTrafien})`, active: !widok },
-          { href: '/admin/przetargi?widok=slabsze', label: `Do przejrzenia (${ileSlabszych})`, active: widok === 'slabsze' },
-          { href: '/admin/przetargi?widok=archiwum', label: `Archiwum (${ileArchiwum})`, active: widok === 'archiwum' },
-        ].map((t) => (
-          <a key={t.href} href={t.href} className={`px-3 py-1.5 rounded-lg border ${t.active ? 'bg-gray-900 text-white border-gray-900' : 'border-slate-200 text-gray-600 hover:bg-gray-50'}`}>
-            {t.label}
-          </a>
-        ))}
-      </div>
-
-      <div className="flex gap-2 mb-5 text-sm">
-        {[
-          { href: `/admin/przetargi${widok ? `?widok=${widok}` : ''}`, label: `Wszystkie (${(counts.new || 0) + (counts.watched || 0)})`, active: !filter },
-          { href: `/admin/przetargi?status=new${widok ? `&widok=${widok}` : ''}`, label: `Nowe (${counts.new || 0})`, active: filter === 'new' },
-          { href: `/admin/przetargi?status=watched${widok ? `&widok=${widok}` : ''}`, label: `Obserwowane (${counts.watched || 0})`, active: filter === 'watched' },
-          { href: `/admin/przetargi?status=dismissed${widok ? `&widok=${widok}` : ''}`, label: `Odrzucone (${counts.dismissed || 0})`, active: filter === 'dismissed' },
-        ].map((t) => (
-          <a key={t.href} href={t.href} className={`px-3 py-1.5 rounded-lg border ${t.active ? 'bg-gray-900 text-white border-gray-900' : 'border-slate-200 text-gray-600 hover:bg-gray-50'}`}>
-            {t.label}
-          </a>
-        ))}
-      </div>
-
-      {tenders.length === 0 ? (
-        <div className="border border-slate-200 rounded-xl p-10 text-center text-gray-500">
-          {widok === 'archiwum'
-            ? 'Archiwum jest puste.'
-            : widok === 'slabsze'
-              ? 'Nic do przejrzenia — scoring nie zostawił wątpliwych ogłoszeń.'
-              : 'Brak otwartych trafień. Nowe pojawią się po porannym przebiegu crona (6:15).'}
+  const pages = Math.max(1, Math.ceil(total / 40))
+  const page = Math.min(pages, Math.max(1, Math.floor(Number(p.strona) || 1)))
+  const tenders = await prisma.tender.findMany({ where, orderBy: [{ score: 'desc' }, { publicationDate: 'desc' }, { id: 'asc' }], skip: (page - 1) * 40, take: 40 })
+  const url = (updates: Record<string, string>) => {
+    const values = { widok: view, status, q, zrodlo: source, ...updates }
+    return '/admin/przetargi?' + new URLSearchParams(Object.entries(values).filter(([, v]) => !!v)).toString()
+  }
+  const byStatus = Object.fromEntries(groups.map(g => [g.status, g._count]))
+  return <div className="max-w-6xl">
+    <h1 className="text-2xl font-bold text-gray-900 mb-2">Przetargi AutoID</h1>
+    {p.komunikat === 'added' && <p role="status" className="mb-4 text-sm text-emerald-700">Link został dodany do kolejki. Wynik pojawi się po kolejnym przebiegu analizy.</p>}
+    {p.komunikat === 'invalid-url' && <p role="alert" className="mb-4 text-sm text-red-700">Nie można dodać tego adresu. Podaj dostępny publicznie adres HTTPS.</p>}
+    <p className="text-sm text-gray-500 mb-5">BZP, TED, Baza Konkurencyjności i PlatformaZakupowa.pl. Pobieranie i kolejka analiz co 30 minut. Ocena obejmuje części i dostępne załączniki. Niepełna dokumentacja wymaga sprawdzenia.</p>
+    <details className="border border-slate-200 rounded-xl p-4 mb-5 bg-white" open={sources.some(s => !!s.error) || !sources.length}>
+      <summary className="font-semibold cursor-pointer">Źródła i stan pobierania {sources.some(s => !!s.error) ? '— wykryto błędy' : ''}</summary>
+      <p className="text-xs text-gray-500 my-3">To monitoring wskazanych źródeł, a nie wszystkich stron zamawiających. Trwające pobieranie historyczne i błędy są widoczne poniżej. Link do postępowania możesz dodać samodzielnie.</p>
+      {!sources.length && <p className="text-amber-700 text-sm">Źródła zostaną uruchomione przy najbliższym pobraniu.</p>}
+      <div className="space-y-3">{sources.map(s => {
+        const stats = s.stats as { complete?: boolean; saved?: number; from?: string; to?: string; scope?: string } | null
+        return <div key={s.id} className="border-t border-slate-100 pt-3 text-sm">
+          <div className="flex flex-wrap justify-between gap-2"><strong>{s.name}{!s.enabled && ' — wstrzymane'}</strong><span>Ostatnia próba: {dateTime(s.lastAttemptAt)}</span></div>
+          <p className="text-gray-500">Zakończone okno / odczyt listy: {dateTime(s.lastSuccessAt)}{stats?.from && ` · okno ${stats.from} – ${stats.to}`}{stats && ` · kandydaci w ostatnim przebiegu: ${stats.saved || 0}`}</p>
+          {stats?.complete === false && !s.error && <p className="text-amber-700">Pobieranie w toku. Następny przebieg wznowi pracę od zapisanej strony.</p>}
+          {s.error && <p className="text-red-700">Błąd: {s.error}. Nie uznajemy tego źródła za kompletne.</p>}
+          {s.lastSuccessAt && +now - +s.lastSuccessAt > 48 * 3600000 && <p className="text-amber-700">Brak zakończonego odczytu z ostatnich 48 godzin.</p>}
+          {s.url && <><a href={safeHref(s.url)} target="_blank" rel="noopener noreferrer" className="text-blue-600 break-all">{s.url}</a><p className="text-xs text-gray-500">Zakres: pozycje widoczne na tej liście HTML/RSS. Listy wymagające JavaScript mogą nie być odczytane.</p><form action={toggleTenderSource}><input type="hidden" name="id" value={s.id}/><input type="hidden" name="enabled" value={String(!s.enabled)}/><button className="text-xs underline mt-1">{s.enabled ? 'Wstrzymaj źródło' : 'Wznów źródło'}</button></form></>}
         </div>
-      ) : (
-        <div className="space-y-3">
-          {tenders.map((t) => {
-            const deadline = daysLeft(t.submittingOffersDate)
-            return (
-              <div key={t.id} className="border border-slate-200 rounded-xl p-4 bg-white">
-                <div className="flex items-start gap-3">
-                  <ScoreBadge score={t.score} />
-                  <div className="flex-1 min-w-0">
-                    <a href={t.url || '#'} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-blue-600 leading-snug">
-                      {t.orderObject}
-                    </a>
-                    {t.aiReason && <p className="text-sm text-gray-500 mt-1">{t.aiReason}</p>}
-                    <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-gray-500">
-                      <span className={`px-1.5 py-0.5 rounded ${t.source === 'TED' ? 'bg-blue-50 text-blue-600' : 'bg-gray-100 text-gray-500'}`}>{t.source === 'TED' ? 'TED · UE' : 'BZP'}</span>
-                      <span>{t.organizationName}{t.organizationCity ? ` · ${t.organizationCity}` : ''}</span>
-                      {t.cpvCodes && <span>CPV {t.cpvCodes}</span>}
-                      <span>publikacja {t.publicationDate?.toLocaleDateString('pl-PL') || '—'}</span>
-                      <span className={deadline.urgent ? 'text-red-600 font-semibold' : ''}>oferty do {deadline.label}</span>
-                      <span className="text-gray-400">{STATUS_LABEL[t.status]}</span>
-                    </div>
-                  </div>
-                  <div className="flex gap-2 flex-shrink-0">
-                    {t.status !== 'watched' && (
-                      <form action={setTenderStatus.bind(null, t.id, 'watched')}>
-                        <button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 text-gray-700">Obserwuj</button>
-                      </form>
-                    )}
-                    {t.status !== 'dismissed' ? (
-                      <form action={setTenderStatus.bind(null, t.id, 'dismissed')}>
-                        <button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-red-50 hover:border-red-300 text-gray-700">Odrzuć</button>
-                      </form>
-                    ) : (
-                      <form action={setTenderStatus.bind(null, t.id, 'new')}>
-                        <button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-gray-50 text-gray-700">Przywróć</button>
-                      </form>
-                    )}
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      )}
+      })}</div>
+    </details>
+    <details className="border border-slate-200 rounded-xl p-4 mb-5 bg-white">
+      <summary className="font-semibold cursor-pointer">Dodaj link do przetargu lub listę do monitorowania</summary>
+      <form action={addTenderLink} className="mt-3 flex flex-wrap gap-2">
+        <label className="w-full text-sm">Adres HTTPS<input type="url" name="url" required placeholder="https://…" className="block border border-slate-200 rounded-lg p-2 w-full mt-1"/></label>
+        <label className="text-sm flex-1">Nazwa (opcjonalnie)<input name="title" maxLength={1000} className="block border border-slate-200 rounded-lg p-2 w-full mt-1"/></label>
+        <label className="text-sm">Rodzaj<select name="mode" className="block border border-slate-200 rounded-lg p-2 mt-1"><option value="notice">Pojedynczy przetarg</option><option value="source">Publiczna lista HTML / RSS</option></select></label>
+        <button className="self-end px-4 py-2 rounded-lg bg-gray-900 text-white">Dodaj do kolejki</button>
+      </form>
+      <p className="text-xs text-gray-500 mt-2">Obsługujemy dostępne publicznie dokumenty PDF, DOCX, XLSX i ZIP. Skany PDF, logowanie i blokady dostępu są oznaczane do ręcznej kontroli.</p>
+    </details>
+    <form method="get" className="flex flex-wrap items-end gap-3 mb-4">
+      <input type="hidden" name="widok" value={view}/><input type="hidden" name="status" value={status}/>
+      <label className="text-sm flex-1">Szukaj<input name="q" defaultValue={q} placeholder="Przedmiot, zamawiający, numer lub CPV" className="block w-full p-2 border border-slate-200 rounded-lg mt-1"/></label>
+      <label className="text-sm">Źródło<select name="zrodlo" defaultValue={source} className="block p-2 border border-slate-200 rounded-lg mt-1"><option value="">Wszystkie źródła</option>{sourceNames.map(s => <option key={s.source} value={s.source}>{s.source}</option>)}</select></label>
+      <button className="px-4 py-2 rounded-lg bg-gray-900 text-white">Szukaj</button>
+    </form>
+    <div className="flex flex-wrap gap-2 mb-3 text-sm">{VIEWS.map((v, i) => <Link key={v} href={url({ widok: v })} className={cls(view === v)}>{LABELS[v]} ({counts[i]})</Link>)}</div>
+    <div className="flex flex-wrap gap-2 mb-5 text-sm">
+      <Link href={url({ status: '' })} className={cls(!status)}>Wszystkie poza odrzuconymi ({(byStatus.new || 0) + (byStatus.watched || 0)})</Link>
+      {Object.entries(STATUS).map(([s, label]) => <Link key={s} href={url({ status: s })} className={cls(status === s)}>{label} ({byStatus[s] || 0})</Link>)}
     </div>
-  )
+    <p className="text-sm text-gray-500 mb-3">Wyniki: {total}. Strona {page} z {pages}. Niskie oceny i błędy nie usuwają ogłoszeń z bazy.</p>
+    {!tenders.length && <div className="border border-slate-200 rounded-xl p-10 text-center text-gray-500">Brak wyników dla tych filtrów. Sprawdź „Wszystkie otwarte”, „Do przejrzenia” i stan źródeł.</div>}
+    <div className="space-y-3">{tenders.map(t => {
+      const a = t.analysis as TenderAnalysis | null
+      const stale = t.analysisStatus === 'pending' || t.analysisStatus === 'error'
+      return <div key={t.id} className="border border-slate-200 rounded-xl p-4 bg-white">
+        <div className="flex items-start gap-3">
+          <span className={`px-2 py-0.5 rounded-md text-sm font-bold ${stale ? 'bg-gray-100 text-gray-500' : t.score >= 70 ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>{stale ? '…' : t.score}</span>
+          <div className="flex-1 min-w-0">
+            <a href={safeHref(t.url)} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 hover:text-blue-600">{t.orderObject}</a>
+            <p className="text-xs text-gray-500 mt-1">{t.source} · {t.organizationName} · {t.noticeNumber}</p>
+            <p className="text-sm text-gray-600 mt-2">{ANALYSIS[t.analysisStatus]}{t.analyzedAt && ` · ${dateTime(t.analyzedAt)}`}{stale && t.analyzedAt && ' · poprzednia ocena może być nieaktualna'}</p>
+            {t.aiReason && !stale && <p className="text-sm text-gray-500 mt-1">{t.aiReason}</p>}
+            {t.analysisError && <p className="text-sm text-red-700 mt-1">{t.analysisError}</p>}
+            <p className="text-xs text-gray-500 mt-2">Oferty do: <strong className={t.submittingOffersDate && +t.submittingOffersDate - +now < 7 * 86400000 ? 'text-red-600' : ''}>{dateTime(t.submittingOffersDate)}</strong>{!t.submittingOffersDate && ' — sprawdź termin w dokumentacji'} · {STATUS[t.status]}{t.source === 'TED' && ' · termin zbiorczy nie zastępuje terminu wybranej części'}</p>
+          </div>
+          <div className="flex flex-wrap gap-2 shrink-0 max-w-40">
+            {t.status !== 'watched' && <form action={setTenderStatus.bind(null, t.id, 'watched')}><button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-emerald-50">Obserwuj</button></form>}
+            <form action={setTenderStatus.bind(null, t.id, t.status === 'dismissed' ? 'new' : 'dismissed')}><button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-gray-50">{t.status === 'dismissed' ? 'Przywróć' : 'Odrzuć'}</button></form>
+            <form action={retryTender}><input type="hidden" name="id" value={t.id}/><button className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 hover:bg-gray-50">Ponów analizę</button></form>
+          </div>
+        </div>
+        {a && <details className="mt-3 border-t border-slate-100 pt-3 text-sm">
+          <summary className="cursor-pointer font-medium">Części i załączniki ({a.parts?.length || 0} części){a.incomplete && ' — dokumentacja niepełna'}</summary>
+          <div className="mt-3 space-y-3">{a.parts?.map((part, i) => <div key={`${part.id}-${i}`} className="rounded-lg border border-slate-200 p-3">
+            <strong>{part.id}: {part.title}</strong><p className="text-xs text-gray-500 mt-1">Dopasowanie: {part.fit === 'yes' ? 'tak' : part.fit === 'no' ? 'nie' : 'do sprawdzenia'} · Osobna oferta: {part.separateOffer === 'yes' ? 'potwierdzona w analizie' : part.separateOffer === 'no' ? 'nie' : 'brak potwierdzenia'}</p>
+            <p className="text-xs mt-2">Termin części: {part.deadline || 'brak potwierdzonego terminu — sprawdź dokumentację'}</p><p className="mt-2 whitespace-pre-wrap">{part.scope}</p><p className="text-gray-600 mt-1 whitespace-pre-wrap">{part.conditions}</p>
+            {part.evidence && <blockquote className="border-l-2 border-slate-300 pl-3 text-gray-500 mt-2">{part.evidence}</blockquote>}
+            <a href={safeHref(part.sourceUrl)} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xs">Źródło ustaleń</a>
+          </div>)}</div>
+          {a.warnings?.map((w, i) => <p key={i} className="text-amber-700 mt-2">{w}</p>)}
+          <h3 className="font-medium mt-4 mb-2">Odczyt dokumentów</h3>
+          <ul className="space-y-2">{a.documents?.map((d, i) => <li key={i}><a href={safeHref(d.url)} className="text-blue-600" target="_blank" rel="noopener noreferrer">{d.name}</a> — {d.status === 'read' ? 'odczytany' : d.status === 'error' ? 'nie odczytano' : 'odczyt niepełny'}{d.detail && <p className="text-xs text-amber-700">{d.detail}</p>}</li>)}</ul>
+        </details>}
+      </div>
+    })}</div>
+    <nav aria-label="Strony przetargów" className="flex items-center justify-between my-5 text-sm">
+      {page > 1 ? <Link className={cls(false)} href={url({ strona: String(page - 1) })}>Poprzednia</Link> : <span/>}
+      <span>Strona {page} / {pages}</span>
+      {page < pages ? <Link className={cls(false)} href={url({ strona: String(page + 1) })}>Następna</Link> : <span/>}
+    </nav>
+  </div>
 }

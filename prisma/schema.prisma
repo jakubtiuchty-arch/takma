@@ -914,6 +914,20 @@ model Tender {
   createdAt            DateTime  @default(now())
   updatedAt            DateTime  @updatedAt
 
+  amendedAt            DateTime?
+  amendments           Json?
+  digestSentAt         DateTime?
+  rawBody              String?
+  contentHash          String?
+  analysisStatus       String    @default("pending")
+  analysis             Json?
+  analysisError        String?
+  analyzedAt           DateTime?
+  lastSeenAt           DateTime  @default(now())
+  nextCheckAt          DateTime  @default(now())
+  analysisAttempts     Int       @default(0)
+
+  @@index([analysisStatus, nextCheckAt])
   @@index([status, score])
   @@index([submittingOffersDate])
   @@map("tenders")
@@ -1041,4 +1055,20 @@ model PriceConcessionItem {
 
   @@index([partNumber])
   @@map("price_concession_items")
+}
+
+/// Trwały postęp pobierania. Nie uznajemy przerwanego okna za zakończone.
+model TenderSource {
+  id            String    @id
+  name          String
+  url           String?
+  enabled       Boolean   @default(true)
+  cursor        Json?
+  lastAttemptAt DateTime?
+  lastSuccessAt DateTime?
+  error         String?
+  stats         Json?
+  updatedAt     DateTime  @updatedAt
+
+  @@map("tender_sources")
 }

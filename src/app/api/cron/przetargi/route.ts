@@ -1,376 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server'
-import Anthropic from '@anthropic-ai/sdk'
 import { prisma } from '@/lib/db'
-import { sendEmail } from '@/lib/email'
-
-/**
- * Monitor przetargów AutoID — cron dzienny (6:15).
- *
- * 1. Pobiera ogłoszenia ContractNotice z BZP (publiczne API e-Zamówienia, bez klucza)
- *    oraz ogłoszenia unijne z TED (api.ted.europa.eu, bez klucza) — przetargi powyżej
- *    progów UE trafiają TYLKO do TED, w BZP ich nie ma.
- * 2. Pre-filtr: kody CPV branżowe LUB słowa kluczowe w przedmiocie/treści
- *    (TED: filtr CPV + full-text już w kwerendzie API).
- * 3. Scoring AI (Haiku): dopasowanie 0-100 do profilu TAKMA + uzasadnienie.
- * 4. Zapis do DB (dedup po noticeNumber) + mail dzienny z nowymi trafieniami.
- *
- * Parametry: ?days=14 (backfill), ?dry=1 (bez zapisu i maila).
- * UWAGA endpoint: mo-board/api/v1/notice (ten z dokumentacji mo-client-board zwraca HTML).
- */
+import { BUILTIN_SOURCES, syncSource, syncPlatform } from '@/lib/tenders/sources'
+import { sendTenderDigest } from '@/lib/tenders/digest'
+import { analyzeOne } from '@/lib/tenders/analysis'
 
 export const maxDuration = 300
-
-const BZP_API = 'https://ezamowienia.gov.pl/mo-board/api/v1/notice'
-const NOTICE_URL = (objectId: string) => `https://ezamowienia.gov.pl/mo-client-board/bzp/notice-details/id/${objectId}`
-const DIGEST_TO = 'jakub.tiuchty@takma.com.pl'
-const MIN_SCORE_FOR_MAIL = 40
-
-/**
- * Poniżej tej oceny w ogóle nie zapisujemy ogłoszenia.
- *
- * Przez miesiąc do bazy wpadło 248 przetargów, z czego 205 z oceną 0–19:
- * laptopy, serwery, oprogramowanie, pomoce dydaktyczne. Scoring rozpoznawał je
- * poprawnie, ale panel i tak je pokazywał, więc lista była nie do przejrzenia.
- * Odsiew przy zapisie trzyma bazę czystą; jeśli AI kiedyś odrzuci coś słusznego,
- * zobaczymy to w liczniku „odrzucone przez scoring" w logu crona.
- */
-const MIN_SCORE_TO_SAVE = 30
-
-/**
- * Kody CPV, które SAME wystarczą — trafiają w rdzeń oferty i prawie nie dają szumu.
- */
-const CPV_RDZEN = [
-  '30216130', // czytniki kodów kreskowych
-  '30216000', // czytniki magnetyczne i optyczne
-  '30192800', // etykiety samoprzylepne
-  '30199760', // etykiety
-  '30192300', // taśmy barwiące
-]
-
-/**
- * Kody szerokie: łapią też laptopy, serwery i drukarki biurowe. Wpuszczamy je
- * tylko wtedy, gdy w treści pada słowo z branży — inaczej to była główna
- * fabryka szumu (30213100 „komputery przenośne" to w 95% zwykłe laptopy).
- */
-const CPV_SZEROKIE = [
-  '30232100', // drukarki i plotery (w tym 3D i biurowe)
-  '30213100', // komputery przenośne
-  '30213200', // tablety
-  '30237000', // części i akcesoria komputerowe
-]
-
-// Słowa kluczowe (lowercase, dopasowanie substring w przedmiocie + treści)
-const KEYWORDS = [
-  'drukark etykiet', 'drukarki etykiet', 'drukarek etykiet', 'drukarkę etykiet',
-  'kod kreskow', 'kodów kreskowych', 'kody kreskowe',
-  'kolektor danych', 'kolektory danych', 'kolektorów danych',
-  'terminal mobilny', 'terminale mobilne', 'terminali mobilnych',
-  'czytnik kodów', 'czytniki kodów',
-  'termotransfer', 'etykiet samoprzylepn', 'etykiety termiczne',
-  'rfid', 'zebra technologies', ' zebra ', 'honeywell', 'datalogic', 'newland',
-]
-
-interface BzpNotice {
-  noticeNumber: string
-  bzpNumber?: string
-  objectId?: string
-  orderObject?: string
-  organizationName?: string
-  organizationCity?: string
-  organizationProvince?: string
-  cpvCode?: string
-  publicationDate?: string
-  submittingOffersDate?: string
-  htmlBody?: string
-  noticeType?: string
-  source?: 'BZP' | 'TED'
-  url?: string
-}
-
-function stripHtml(html: string): string {
-  return html.replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ')
-}
-
-function matchesPrefilter(n: BzpNotice): boolean {
-  // cpvCode to string z WIELOMA kodami: "30200000-1 (Urządzenia...),30232100-4 (Drukarki...)"
-  // — includes, nie startsWith, bo kody branżowe bywają dopiero na dalszych pozycjach
-  const cpv = n.cpvCode || ''
-  if (CPV_RDZEN.some((p) => cpv.includes(p))) return true
-
-  const blob = `${n.orderObject || ''} ${stripHtml(n.htmlBody || '')}`.toLowerCase()
-  const maSlowo = KEYWORDS.some((k) => blob.includes(k))
-
-  // Szeroki kod przepuszczamy tylko z potwierdzeniem w treści.
-  if (CPV_SZEROKIE.some((p) => cpv.includes(p))) return maSlowo
-  return maSlowo
-}
-
-/**
- * Pobiera ogłoszenia DZIEŃ PO DNIU — paginacja BZP przy dużych oknach jest
- * niestabilna (duplikaty i potencjalne ubytki między stronami); okno 1-dniowe
- * (~15-25 stron) minimalizuje problem. Strony w paczkach po 5 równolegle.
- */
-/** Zwraca TYLKO kandydatów (prefiltr + dedup w locie) — surowe ogłoszenia z htmlBody
- *  są zbyt ciężkie, by je akumulować (4 dni ≈ >1 GB → OOM na Vercelu). */
-async function fetchCandidates(fromDate: string, toDate: string): Promise<{ candidates: BzpNotice[]; raw: number }> {
-  const uniq = new Map<string, BzpNotice>()
-  let raw = 0
-  const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
-  // BZP rate-limituje burst requesty (HTTP 403) — retry z backoffem
-  const fetchPage = async (day: string, page: number): Promise<BzpNotice[]> => {
-    const url = `${BZP_API}?NoticeType=ContractNotice&PublicationDateFrom=${day}&PublicationDateTo=${day}&pageSize=100&pageNo=${page}`
-    for (let attempt = 0; attempt < 4; attempt++) {
-      const res = await fetch(url, { headers: { Accept: 'application/json' } })
-      if (res.ok) {
-        const rows = (await res.json()) as BzpNotice[]
-        return Array.isArray(rows) ? rows : []
-      }
-      if (res.status === 403 || res.status === 429 || res.status >= 500) {
-        await sleep(1500 * (attempt + 1) ** 2) // 1.5s, 6s, 13.5s
-        continue
-      }
-      throw new Error(`BZP API HTTP ${res.status} (${day} s.${page})`)
-    }
-    throw new Error(`BZP API rate limit — 4 próby nieudane (${day} s.${page})`)
-  }
-  const days: string[] = []
-  for (let d = new Date(fromDate + 'T00:00:00Z'); d <= new Date(toDate + 'T00:00:00Z'); d = new Date(d.getTime() + 86400_000)) {
-    days.push(d.toISOString().slice(0, 10))
-  }
-  for (const day of days) {
-    // sekwencyjnie z odstępem — równoległe strony wyzwalały 403
-    for (let page = 1; page <= 60; page++) {
-      const rows = await fetchPage(day, page)
-      raw += rows.length
-      for (const n of rows) {
-        if (n.noticeNumber && !uniq.has(n.noticeNumber) && matchesPrefilter(n)) uniq.set(n.noticeNumber, n)
-      }
-      if (rows.length < 100) break
-      await sleep(200)
-    }
-  }
-  return { candidates: Array.from(uniq.values()), raw }
-}
-
-/**
- * TED (Tenders Electronic Daily) — ogłoszenia powyżej progów UE, których NIE ma w BZP.
- * Publiczne API bez klucza. Filtr CPV + full-text już w kwerendzie (expert query),
- * więc bez osobnego prefiltru; wolumen ~3-5 ogłoszeń/dzień dla PL.
- */
-const TED_API = 'https://api.ted.europa.eu/v3/notices/search'
-const TED_NOTICE_URL = (pub: string) => `https://ted.europa.eu/pl/notice/-/detail/${pub}`
-
-function tedPol(v: unknown): string {
-  // pola tekstowe TED: { pol: string | string[] } lub string
-  if (v && typeof v === 'object') {
-    const o = v as Record<string, unknown>
-    const first = o.pol ?? Object.values(o)[0]
-    return Array.isArray(first) ? first.join(' | ') : String(first ?? '')
-  }
-  return v == null ? '' : String(v)
-}
-
-async function fetchTedCandidates(fromDate: string, toDate: string): Promise<BzpNotice[]> {
-  const fmt = (d: string) => d.replace(/-/g, '')
-  const query =
-    // W TED pytamy tylko o kody rdzeniowe — szerokie (laptopy, drukarki biurowe)
-    // zwracały setki ogłoszeń IT, z których nic nie było dla nas.
-    `((classification-cpv IN (${CPV_RDZEN.join(' ')})) OR ` +
-    `FT~("drukarki etykiet" OR "drukarek etykiet" OR "kolektory danych" OR "kolektorów danych" OR "czytniki kodów" OR "czytników kodów" OR "terminale mobilne" OR "etykiety samoprzylepne" OR "taśmy termotransferowe")) ` +
-    `AND buyer-country=POL AND publication-date>=${fmt(fromDate)} AND publication-date<=${fmt(toDate)} ` +
-    `AND notice-type IN (cn-standard cn-social cn-desg)`
-  const out: BzpNotice[] = []
-  for (let page = 1; page <= 5; page++) {
-    const res = await fetch(TED_API, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        query,
-        page,
-        limit: 100,
-        fields: ['publication-number', 'notice-title', 'buyer-name', 'buyer-city', 'publication-date',
-          'deadline-receipt-tender-date-lot', 'classification-cpv', 'description-lot'],
-      }),
-    })
-    if (!res.ok) throw new Error(`TED API HTTP ${res.status} (s.${page})`)
-    const data = (await res.json()) as { notices?: Record<string, unknown>[]; totalNoticeCount?: number }
-    const notices = data.notices || []
-    for (const n of notices) {
-      const pub = String(n['publication-number'] || '')
-      if (!pub) continue
-      // deadline per-lot — bierzemy najwcześniejszy; format "2026-09-08+02:00"
-      const deadlines = (Array.isArray(n['deadline-receipt-tender-date-lot']) ? n['deadline-receipt-tender-date-lot'] as string[] : [])
-        .map((d) => d.slice(0, 10)).filter(Boolean).sort()
-      const cpv = Array.isArray(n['classification-cpv'])
-        ? Array.from(new Set(n['classification-cpv'] as string[])).join(',')
-        : String(n['classification-cpv'] || '')
-      // tytuł TED: "Polska – <kategoria CPV> – <właściwy tytuł>" — zostawiamy część merytoryczną
-      const title = tedPol(n['notice-title']).replace(/^Polska\s+–\s+/, '')
-      const descLot = n['description-lot'] as Record<string, unknown> | undefined
-      const lotArr = descLot && typeof descLot === 'object' ? (Object.values(descLot)[0] as unknown) : undefined
-      const lotCount = Array.isArray(lotArr) ? lotArr.length : 1
-      out.push({
-        noticeNumber: `TED/${pub}`,
-        source: 'TED',
-        url: TED_NOTICE_URL(pub),
-        orderObject: title,
-        organizationName: tedPol(n['buyer-name']),
-        organizationCity: tedPol(n['buyer-city']),
-        cpvCode: cpv,
-        publicationDate: String(n['publication-date'] || '').slice(0, 10) || undefined,
-        submittingOffersDate: deadlines[0] || undefined,
-        // opisy per-lot rozdzielone " | " — jawnie mówimy scorerowi, że to osobne części
-        htmlBody: lotCount > 1
-          ? `Zamówienie podzielone na ${lotCount} części (osobne loty, można ofertować wybrane): ${tedPol(n['description-lot'])}`
-          : tedPol(n['description-lot']),
-      })
-    }
-    if (notices.length < 100) break
-  }
-  return out
-}
-
-const TAKMA_PROFILE = `TAKMA (takma.com.pl) — autoryzowany partner Zebra, Honeywell, Datalogic, Newland, M3 Mobile. Sprzedaje i serwisuje:
-- drukarki etykiet (biurkowe, przemysłowe, mobilne), drukarki kart plastikowych
-- terminale mobilne / kolektory danych, tablety przemysłowe
-- skanery / czytniki kodów kreskowych, czytniki RFID
-- etykiety termiczne i termotransferowe, taśmy termotransferowe (materiały eksploatacyjne)
-- akcesoria (baterie, stacje dokujące), kontrakty serwisowe, wdrożenia AutoID
-NIE oferuje: drukarek biurowych/laserowych/atramentowych/3D, tonerów, komputerów PC/laptopów, monitorów, oprogramowania ERP, mebli, usług budowlanych.`
-
-async function scoreNotice(client: Anthropic, n: BzpNotice): Promise<{ score: number; reason: string }> {
-  const text = `${n.orderObject || ''}\n\nFragment ogłoszenia: ${stripHtml(n.htmlBody || '').slice(0, 2500)}`
-  const msg = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 150,
-    messages: [{
-      role: 'user',
-      content: `Profil firmy:\n${TAKMA_PROFILE}\n\nPrzetarg:\n${text}\n\nOceń dopasowanie przetargu do profilu firmy w skali 0-100 (100 = idealny rdzeń oferty, np. dostawa drukarek etykiet Zebra; 0 = zupełnie obok, np. drukarki 3D, tonery, meble). WAŻNE: jeśli zamówienie jest podzielone na części (loty/pakiety) i choć jedna część to rdzeń AutoID (drukarki etykiet, czytniki/skanery kodów, kolektory, etykiety, taśmy) — oceń 60-85, bo można złożyć ofertę tylko na tę część. Jeśli sprzęt AutoID jest wymieszany w jednym niepodzielnym pakiecie IT — oceń 30-50. Odpowiedz WYŁĄCZNIE JSON-em: {"score": <int>, "reason": "<1 zdanie po polsku>"}`,
-    }],
-  })
-  const raw = msg.content.filter((b) => b.type === 'text').map((b) => (b as { text: string }).text).join('').trim()
-  try {
-    const j = JSON.parse(raw.replace(/^```json?\s*|\s*```$/g, ''))
-    return { score: Math.max(0, Math.min(100, Number(j.score) || 0)), reason: String(j.reason || '').slice(0, 300) }
-  } catch {
-    return { score: 0, reason: `Nie udało się sparsować oceny AI: ${raw.slice(0, 100)}` }
-  }
-}
+export const dynamic = 'force-dynamic'
 
 export async function GET(request: NextRequest) {
-  if (request.headers.get('authorization') !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-  const days = Math.min(30, Number(request.nextUrl.searchParams.get('days')) || 2)
-  const dry = request.nextUrl.searchParams.get('dry') === '1'
-  const fmt = (d: Date) => d.toISOString().slice(0, 10)
-  // opcjonalne jawne okno dat (backfill segmentami): ?from=2026-07-10&to=2026-07-13
-  const fromDate = request.nextUrl.searchParams.get('from') || fmt(new Date(Date.now() - days * 86400_000))
-  const toDate = request.nextUrl.searchParams.get('to') || fmt(new Date())
-
-  const { candidates: bzpCandidates, raw } = await fetchCandidates(fromDate, toDate)
-  let tedCandidates: BzpNotice[] = []
-  let tedError: string | null = null
+  if (!process.env.CRON_SECRET || request.headers.get('authorization') !== `Bearer ${process.env.CRON_SECRET}`) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (request.nextUrl.searchParams.get('dry') === '1') return NextResponse.json({ dry: true, pending: await prisma.tender.count({ where: { analysisStatus: { in: ['pending', 'error'] } } }), sources: await prisma.tenderSource.findMany({ where: { id: { notIn: ['_lock', '_digest'] } } }) })
+  const start = Date.now()
+  await prisma.tenderSource.upsert({ where: { id: '_lock' }, create: { id: '_lock', name: 'Blokada synchronizacji' }, update: {} })
+  const lock = await prisma.tenderSource.updateMany({ where: { id: '_lock', OR: [{ lastAttemptAt: null }, { lastAttemptAt: { lt: new Date(start - 360000) } }] }, data: { lastAttemptAt: new Date(start) } })
+  if (!lock.count) return NextResponse.json({ ok: true, running: true })
   try {
-    tedCandidates = await fetchTedCandidates(fromDate, toDate)
-  } catch (e) {
-    // awaria TED nie może zabić całego crona (BZP dalej się liczy)
-    tedError = e instanceof Error ? e.message : String(e)
-    console.error('[przetargi] TED:', tedError)
-  }
-  const candidates = [...bzpCandidates, ...tedCandidates]
-
-  // dedup względem DB
-  const existing = new Set(
-    (await prisma.tender.findMany({
-      where: { noticeNumber: { in: candidates.map((c) => c.noticeNumber) } },
-      select: { noticeNumber: true },
-    })).map((t) => t.noticeNumber),
-  )
-  const fresh = candidates.filter((c) => c.noticeNumber && !existing.has(c.noticeNumber))
-
-  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-  const scored: (BzpNotice & { score: number; reason: string })[] = []
-  const BATCH = 6
-  for (let i = 0; i < fresh.length; i += BATCH) {
-    const batch = fresh.slice(i, i + BATCH)
-    const results = await Promise.all(batch.map(async (n) => {
-      try {
-        const { score, reason } = await scoreNotice(client, n)
-        return { ...n, score, reason }
-      } catch (e) {
-        return { ...n, score: 0, reason: `Błąd scoringu: ${e instanceof Error ? e.message.slice(0, 80) : e}` }
-      }
-    }))
-    scored.push(...results)
-  }
-  console.log(`[przetargi] BZP pobrane=${raw} prefiltr=${bzpCandidates.length} TED=${tedCandidates.length} nowe=${fresh.length}`)
-
-  const doZapisu = scored.filter((n) => n.score >= MIN_SCORE_TO_SAVE)
-  const odsiane = scored.length - doZapisu.length
-
-  if (!dry) {
-    for (const n of doZapisu) {
-      await prisma.tender.upsert({
-        where: { noticeNumber: n.noticeNumber },
-        create: {
-          noticeNumber: n.noticeNumber,
-          bzpNumber: n.bzpNumber || null,
-          objectId: n.objectId || null,
-          source: n.source || 'BZP',
-          orderObject: (n.orderObject || '(brak przedmiotu)').slice(0, 1000),
-          organizationName: n.organizationName || null,
-          organizationCity: n.organizationCity || null,
-          organizationProvince: n.organizationProvince || null,
-          cpvCodes: n.cpvCode || null,
-          publicationDate: n.publicationDate ? new Date(n.publicationDate) : null,
-          submittingOffersDate: n.submittingOffersDate ? new Date(n.submittingOffersDate) : null,
-          url: n.url || (n.objectId ? NOTICE_URL(n.objectId) : null),
-          score: n.score,
-          aiReason: n.reason,
-        },
-        update: {},
-      })
+    const recent = BUILTIN_SOURCES.map(s => ({ id: `RECENT/${s.id}`, name: `${s.name} — nowe dzisiaj` }))
+    for (const s of [...BUILTIN_SOURCES, ...recent]) await prisma.tenderSource.upsert({ where: { id: s.id }, create: s, update: {} })
+    // Źródła są niezależne. Każda ukończona strona jest zapisana przed przesunięciem kursora.
+    if (request.nextUrl.searchParams.get('only') !== 'analysis') {
+      await Promise.all(recent.map(s => syncSource(s.id, start + 30000)))
+      await Promise.all(BUILTIN_SOURCES.map(s => syncSource(s.id, start + 85000)))
     }
+    const platforms = await prisma.tenderSource.findMany({ where: { url: { not: null }, enabled: true } })
+    for (const s of platforms) {
+      if (Date.now() > start + 100000) break
+      await syncPlatform(s.id)
+    }
+    let analyzed = 0, failed = 0
+    while (Date.now() < start + 170000) {
+      const target = request.nextUrl.searchParams.get('id')
+      const n = await prisma.tender.findFirst({ where: target ? { id: target } : {
+        nextCheckAt: { lte: new Date() },
+        OR: [{ analysisStatus: { in: ['pending', 'error'] } }, { submittingOffersDate: { gte: new Date() }, analyzedAt: { lt: new Date(Date.now() - 24 * 3600000) } }, { submittingOffersDate: null, analyzedAt: { lt: new Date(Date.now() - 24 * 3600000) } }],
+      }, orderBy: [{ status: 'desc' }, { publicationDate: 'desc' }, { nextCheckAt: 'asc' }] })
+      if (!n) break
+      const result = await analyzeOne(n.id, start + 265000)
+      analyzed++; if (!result.ok) failed++
+      if (request.nextUrl.searchParams.get('id')) break
+    }
+    if (request.nextUrl.searchParams.get('notify') !== '0') await sendTenderDigest()
+    const sources = await prisma.tenderSource.findMany({ where: { id: { notIn: ['_lock', '_digest'] } } })
+    const pending = await prisma.tender.count({ where: { analysisStatus: { in: ['pending', 'error'] } } })
+    return NextResponse.json({ ok: !sources.some(s => s.error), analyzed, failed, pending, sources })
+  } finally {
+    await prisma.tenderSource.updateMany({ where: { id: '_lock', lastAttemptAt: new Date(start) }, data: { lastAttemptAt: null } })
   }
-
-  // mail: nowe trafienia z sensownym score
-  const forMail = scored.filter((n) => n.score >= MIN_SCORE_FOR_MAIL).sort((a, b) => b.score - a.score)
-  if (forMail.length > 0 && !dry) {
-    const rows = forMail.map((n) => `
-      <tr>
-        <td style="padding:8px;border-bottom:1px solid #e5e7eb;font-weight:700;color:${n.score >= 70 ? '#16a34a' : '#d97706'}">${n.score}</td>
-        <td style="padding:8px;border-bottom:1px solid #e5e7eb"><a href="${n.url || (n.objectId ? NOTICE_URL(n.objectId) : '#')}" style="color:#2563eb;text-decoration:none">${(n.orderObject || '').slice(0, 140)}</a> <span style="color:#9ca3af;font-size:11px">[${n.source === 'TED' ? 'TED · UE' : 'BZP'}]</span><br/><span style="color:#6b7280;font-size:12px">${n.reason}</span></td>
-        <td style="padding:8px;border-bottom:1px solid #e5e7eb;font-size:13px">${n.organizationName || ''}<br/><span style="color:#6b7280">${n.organizationCity || ''}</span></td>
-        <td style="padding:8px;border-bottom:1px solid #e5e7eb;white-space:nowrap">${(n.submittingOffersDate || '').slice(0, 10)}</td>
-      </tr>`).join('')
-    await sendEmail({
-      to: DIGEST_TO,
-      subject: `📋 Przetargi AutoID: ${forMail.length} ${forMail.length === 1 ? 'nowe trafienie' : 'nowych trafień'}`,
-      html: `<div style="font-family:sans-serif;max-width:760px">
-        <h2 style="margin:0 0 12px">📋 Nowe przetargi dopasowane do TAKMA (${forMail.length})</h2>
-        <table style="width:100%;border-collapse:collapse;font-size:14px">
-          <thead><tr style="text-align:left;color:#6b7280;font-size:12px"><th style="padding:8px">Ocena</th><th style="padding:8px">Przedmiot</th><th style="padding:8px">Zamawiający</th><th style="padding:8px">Oferty do</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-        <p style="color:#6b7280;font-size:12px;margin-top:16px">Pełna lista i statusy: <a href="https://www.takma.com.pl/admin/przetargi">panel przetargów</a>. Źródła: BZP (e-Zamówienia) + TED (przetargi UE).</p>
-      </div>`,
-    })
-  }
-
-  return NextResponse.json({
-    ok: true,
-    okno: `${fromDate}..${toDate}`,
-    days,
-    dry,
-    pobrane: raw,
-    poPrefiltrze: bzpCandidates.length,
-    ted: tedCandidates.length,
-    tedError,
-    nowe: fresh.length,
-    zapisane: doZapisu.length,
-    odsianeScoringiem: odsiane,
-    doMaila: forMail.length,
-    top: scored.sort((a, b) => b.score - a.score).slice(0, 10).map((n) => ({ score: n.score, przedmiot: (n.orderObject || '').slice(0, 90), reason: n.reason })),
-  })
 }
