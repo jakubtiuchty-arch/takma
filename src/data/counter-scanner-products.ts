@@ -853,7 +853,7 @@ export const counterScannerProducts: Product[] = [
     "seoTitle": "Zebra SP7201-H — poziomy skaner ladowy 1D/2D do zabudowy",
     "seoDescription": "Skaner ladowy Zebra SP7201-H: poziomy czytnik 1D/2D do zabudowy w blacie kasy, matryca 2,3 MP, zasilanie z portu USB 5 V, IP52, gwarancja 3 lata. Skaner Zebra SP7201-H, SP7201-H Zebra. PN: SP7201-SH00004DCWW (DLC), SP7201-SH00004SCWW (szafirowe).",
     "shortDescription": "Zebra SP7201-H — poziomy skaner ladowy 1D/2D do zabudowy w blacie kasy. Matryca 2,3 MP, zasilanie z portu USB 5 V, bez portu AUX.",
-    "description": "Zebra SP7201-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Służy do odczytu kodów w zabudowanym stanowisku POS.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy mocowanie Zebra BRKT-BM0072-00, sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nSP7201-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Zasilacz nie jest potrzebny. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Wybór SP7201-H lub SP7208-H\n\nSP7201-H nie ma portu AUX. Port na dodatkowy skaner ręczny ma [Zebra SP7208-H](/produkt/zebra-sp7208-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra SP7201-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Służy do odczytu kodów w zabudowanym stanowisku POS.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy [mocowanie Zebra BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h), sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nSP7201-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Zasilacz nie jest potrzebny. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Wybór SP7201-H lub SP7208-H\n\nSP7201-H nie ma portu AUX. Port na dodatkowy skaner ręczny ma [Zebra SP7208-H](/produkt/zebra-sp7208-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -954,7 +954,8 @@ export const counterScannerProducts: Product[] = [
       "Szkło": "Powierzchnia okna odczytu.\n\n• DLC — szkło z powłoką diamentopodobną; niższa cena\n\n• Szafirowe — szkło szafirowe; większa odporność na zarysowania"
     },
     "relatedAccessories": [
-      "zebra-cable-usb-ds22"
+      "zebra-cable-usb-ds22",
+      "zebra-bracket-sp72-h"
     ],
     "relatedProducts": [
       "zebra-sp7208-h",
@@ -996,7 +997,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "zebra-sp7208-h",
@@ -1006,7 +1007,7 @@ export const counterScannerProducts: Product[] = [
     "seoTitle": "Zebra SP7208-H — poziomy skaner ladowy 1D/2D z portem AUX",
     "seoDescription": "Skaner ladowy Zebra SP7208-H: poziomy czytnik 1D/2D do zabudowy w blacie kasy, port AUX na skaner ręczny, matryca 2,3 MP, IP52, gwarancja 3 lata. Skaner Zebra SP7208-H, SP7208-H Zebra. PN: SP7208-SH00004DCWW (DLC), SP7208-SH00004SCWW (szafirowe).",
     "shortDescription": "Zebra SP7208-H — poziomy skaner ladowy 1D/2D do zabudowy w blacie kasy. Port AUX na dodatkowy skaner ręczny, matryca 2,3 MP.",
-    "description": "Zebra SP7208-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Ma port AUX do dodatkowego czytnika.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy mocowanie Zebra BRKT-BM0072-00, sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nBez dodatkowego skanera SP7208-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Port AUX w SP7208-H\n\nSP7208-H ma port AUX (USB-A) na dodatkowy skaner ręczny. Praca z dodatkowym skanerem wymaga zasilania 11–13 V. Aby korzystać z portu AUX, potrzebujesz poniższych elementów:\n\n- [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w),\n- przewodu DC CBL-DC-376A1-01,\n- [przewodu sieciowego EU 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Poziome PN z tej karty nie zawierają kolorowej kamery z wersji SP7208-V. Wersja bez portu AUX to [Zebra SP7201-H](/produkt/zebra-sp7201-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra SP7208-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Ma port AUX do dodatkowego czytnika.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy [mocowanie Zebra BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h), sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nBez dodatkowego skanera SP7208-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Do kasy z portem USB Power Plus 12 V służy [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72). Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Port AUX w SP7208-H\n\nSP7208-H ma port AUX (USB-A) na dodatkowy skaner ręczny. Praca z dodatkowym skanerem wymaga zasilania 11–13 V. Jeśli kasa ma port USB Power Plus, [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72) dostarcza 12 V i zasilacz nie jest potrzebny. Przy zwykłym porcie USB-A, aby korzystać z portu AUX, potrzebujesz poniższych elementów:\n\n- [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w),\n- [przewodu DC CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376),\n- [przewodu sieciowego EU 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Poziome PN z tej karty nie zawierają kolorowej kamery z wersji SP7208-V. Wersja bez portu AUX to [Zebra SP7201-H](/produkt/zebra-sp7201-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -1108,8 +1109,11 @@ export const counterScannerProducts: Product[] = [
     },
     "relatedAccessories": [
       "zebra-cable-usb-ds22",
+      "zebra-cable-usb-powerplus-sp72",
       "zebra-psu-50w",
-      "zebra-tc201-50-16000-220r"
+      "zebra-cable-dc-376",
+      "zebra-tc201-50-16000-220r",
+      "zebra-bracket-sp72-h"
     ],
     "relatedProducts": [
       "zebra-sp7201-h",
@@ -1125,7 +1129,7 @@ export const counterScannerProducts: Product[] = [
     "faq": [
       {
         "question": "Co jest potrzebne do pracy z dodatkowym skanerem na porcie AUX?",
-        "answer": "Zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-376A1-01 i przewód sieciowy. Bez dodatkowego skanera SP7208-H pracuje z zasilaniem 5 V z portu USB."
+        "answer": "Przy zwykłym porcie USB-A: zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-376A1-01 i przewód sieciowy. Przy kasie z portem USB Power Plus wystarczy przewód CBA-U23-S07ZBR, bo kasa dostarcza 12 V. Bez dodatkowego skanera SP7208-H pracuje z zasilaniem 5 V z portu USB."
       },
       {
         "question": "Czy każdy wariant ma przewód i zasilacz?",
@@ -1151,7 +1155,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "zebra-mp7200",
@@ -1161,7 +1165,7 @@ export const counterScannerProducts: Product[] = [
     "seoTitle": "Zebra MP7200 — dwuokienkowy skaner ladowy 1D/2D",
     "seoDescription": "Skaner ladowy Zebra MP7200: dwuokienkowy (bioptyczny) czytnik 1D/2D do kas o dużym ruchu, następca MP7000. Płyta średnia lub długa, wersje Scale Ready i z kolorową kamerą. Skaner Zebra MP7200, MP7200 Zebra. PN: MP7200-MNDLN000WW, MP7200-MNS0N000WW, MP7200-MNDLL000WW, MP7200-MNSLL000WW, MP7200-LNS0N000WW.",
     "shortDescription": "Zebra MP7200 — dwuokienkowy skaner ladowy 1D/2D do kas o dużym ruchu, następca MP7000. Płyta średnia lub długa, wersje Scale Ready i z kolorową kamerą.",
-    "description": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.\n\n## Odczyt z dwóch stron\n\nPoziome i pionowe okno pozwalają odczytać kod podczas przesuwania towaru przez stanowisko. MP7200 ma czujnik megapikselowy. Odczytuje kody liniowe oraz QR i Data Matrix. Zastępuje wycofaną serię MP7000.\n\n## Kamera i przygotowanie pod wagę\n\nWybrane PN mają kolorową kamerę. Warianty bez kamery nie zyskują tej funkcji przez samą konfigurację programu. Wersje Scale Ready są przygotowane pod integrację z wagą. Nie zawierają kompletnej wagi ani legalizacji.\n\n## Płyta, szkło i montaż\n\nPłyta występuje w wersji średniej lub długiej, a szkło w wersji DLC lub szafirowej. Wersja średnia ma 398 × 292 mm, a długa 506 × 292 mm. Głębokość obudowy wynosi 101 mm, a wysokość 128 mm.\n\n## Zasilanie stanowiska\n\nMP7200 obsługuje USB, RS-232, IBM 46xx (RS-485) i SNAPI. Przewód USB Power Plus CBA-U55-S12PAR (3,65 m) zasila skaner 12 V z portu kasy POS. Zasilacz nie jest wtedy potrzebny. Przy zwykłym porcie USB (przewód CBA-U54-S12ZAR, 3,65 m, lub CBA-U51-S16ZAR, 5 m) potrzebujesz poniższych elementów:\n\n- [zasilacza 50 W](/produkt/zebra-zasilacz-50w),\n- [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388),\n- [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.\n\n## Odczyt z dwóch stron\n\nPoziome i pionowe okno pozwalają odczytać kod podczas przesuwania towaru przez stanowisko. MP7200 ma czujnik megapikselowy. Odczytuje kody liniowe oraz QR i Data Matrix. Zastępuje wycofaną serię MP7000.\n\n## Kamera i przygotowanie pod wagę\n\nWybrane PN mają kolorową kamerę. Warianty bez kamery nie zyskują tej funkcji przez samą konfigurację programu. Wersje Scale Ready są przygotowane pod integrację z wagą. Nie zawierają kompletnej wagi ani legalizacji.\n\n## Płyta, szkło i montaż\n\nPłyta występuje w wersji średniej lub długiej, a szkło w wersji DLC lub szafirowej. Wersja średnia ma 398 × 292 mm, a długa 506 × 292 mm. Głębokość obudowy wynosi 101 mm, a wysokość 128 mm.\n\n## Zasilanie stanowiska\n\nMP7200 obsługuje USB, RS-232, IBM 46xx (RS-485) i SNAPI. Przewód USB Power Plus [CBA-U55-S12PAR](/produkt/zebra-kabel-usb-power-plus-mp7200) (3,65 m) zasila skaner 12 V z portu kasy POS. Zasilacz nie jest wtedy potrzebny. Przy zwykłym porcie USB (przewód CBA-U54-S12ZAR, 3,65 m, lub [CBA-U51-S16ZAR](/produkt/zebra-kabel-usb-5m-mp7200), 5 m) potrzebujesz poniższych elementów:\n\n- [zasilacza 50 W](/produkt/zebra-zasilacz-50w),\n- [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388),\n- [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -1290,6 +1294,8 @@ export const counterScannerProducts: Product[] = [
       "Waga": "Przygotowanie do montażu wagi.\n\n• Scale Ready — obudowa przygotowana do modułu ważącego; waga i legalizacja nie są w zestawie"
     },
     "relatedAccessories": [
+      "zebra-cable-usb-powerplus-mp72",
+      "zebra-cable-usb-mp72-5m",
       "zebra-psu-50w",
       "zebra-cable-dc-388",
       "zebra-tc201-50-16000-220r"
@@ -1331,7 +1337,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   }
 ]
 
@@ -1630,5 +1636,335 @@ export const counterScannerAccessories: Product[] = [
     "faq": [],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
+  },
+  {
+    "id": "zebra-cable-usb-mp72-5m",
+    "slug": "zebra-kabel-usb-5m-mp7200",
+    "name": "Przewód USB 5 m Zebra CBA-U51-S16ZAR do MP7200",
+    "shortDescription": "Zebra CBA-U51-S16ZAR — przewód USB 5 m z wtyczką USB-A do skanera ladowego Zebra MP7200. Skaner wymaga osobnego zasilacza 12 V.",
+    "description": "Przewód USB Zebra CBA-U51-S16ZAR łączy skaner ladowy Zebra MP7200 z komputerem lub kasą ze zwykłym portem USB-A. Przewód jest prosty i ma 5 m (16 ft). Wtyczkę RJ-45 podłącz do portu POS skanera, a wtyczkę USB-A do komputera lub kasy.\n\nMP7200 nie pobiera zasilania z tego przewodu. Skaner wymaga zasilacza 12 V.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nElementy te nie są dołączone do przewodu. Dokup tylko te elementy, których jeszcze nie masz.\n\n## Zgodne urządzenia\n\n[Zebra MP7200](/produkt/zebra-mp7200). Jeśli kasa ma zasilany port USB 12 V (Power Plus), skaner może pobierać zasilanie z kasy przez [przewód CBA-U55-S12PAR](/produkt/zebra-kabel-usb-power-plus-mp7200). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Przewód USB 5 m Zebra CBA-U51-S16ZAR do skanera MP7200",
+    "seoDescription": "Przewód USB Zebra CBA-U51-S16ZAR, 5 m, wtyczka USB-A, do skanera ladowego Zebra MP7200 (seria MP72). Skaner wymaga zasilacza PWR-BGA12V50W0WW. Kabel USB do Zebra MP7200. PN: CBA-U51-S16ZAR.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "zebra",
+    "priceFrom": 149.15,
+    "availability": "available",
+    "images": [
+      "/images/products/CBA-U51-S16ZAR.png"
+    ],
+    "imageDescriptions": [
+      "Przewód USB Zebra CBA-U51-S16ZAR — zwinięty czarny przewód z wtyczką USB-A i wtyczką RJ-45"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CBA-U51-S16ZAR"
+      },
+      {
+        "name": "Wtyczka hosta",
+        "value": "USB-A"
+      },
+      {
+        "name": "Wtyczka skanera",
+        "value": "RJ-45 (port POS)"
+      },
+      {
+        "name": "Długość",
+        "value": "5 m (16 ft), prosty"
+      },
+      {
+        "name": "Zasilanie skanera",
+        "value": "Nie; wymagany zasilacz 12 V"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Zebra MP7200"
+      }
+    ],
+    "applications": [
+      "stanowiska kasowe"
+    ],
+    "relatedProducts": [
+      "zebra-mp7200"
+    ],
+    "relatedAccessories": [
+      "zebra-psu-50w",
+      "zebra-cable-dc-388",
+      "zebra-tc201-50-16000-220r",
+      "zebra-cable-usb-powerplus-mp72"
+    ],
+    "compatibleAccessories": [],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "zebra-cable-usb-powerplus-mp72",
+    "slug": "zebra-kabel-usb-power-plus-mp7200",
+    "name": "Przewód USB Power Plus 3,65 m Zebra CBA-U55-S12PAR do MP7200",
+    "shortDescription": "Zebra CBA-U55-S12PAR — przewód USB Power Plus 3,65 m do skanera ladowego Zebra MP7200. Skaner pobiera zasilanie 12 V z kasy POS.",
+    "description": "Przewód USB Zebra CBA-U55-S12PAR łączy skaner ladowy Zebra MP7200 z kasą POS przez port USB Power Plus. Przewód jest prosty i ma 3,65 m (12 ft). Wtyczkę RJ-45 podłącz do portu POS skanera, a wtyczkę Power Plus do zasilanego portu USB 12 V kasy.\n\nKasa zasila skaner napięciem 12 V przez ten przewód. Zasilacz nie jest potrzebny. Skaner włącza się razem z kasą.\n\nJeśli kasa ma tylko zwykły port USB-A, użyj [przewodu CBA-U51-S16ZAR](/produkt/zebra-kabel-usb-5m-mp7200). Wtedy skaner wymaga zasilacza 12 V.\n\n## Zgodne urządzenia\n\n[Zebra MP7200](/produkt/zebra-mp7200). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Przewód USB Power Plus Zebra CBA-U55-S12PAR do skanera MP7200",
+    "seoDescription": "Przewód USB Power Plus Zebra CBA-U55-S12PAR, 3,65 m, do skanera ladowego Zebra MP7200 (seria MP72). Kasa POS zasila skaner napięciem 12 V, zasilacz nie jest potrzebny. PN: CBA-U55-S12PAR.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "zebra",
+    "priceFrom": 111.38,
+    "availability": "available",
+    "images": [
+      "/images/products/placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "Zebra — zdjęcie przewodu CBA-U55-S12PAR niedostępne"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CBA-U55-S12PAR"
+      },
+      {
+        "name": "Wtyczka hosta",
+        "value": "USB Power Plus 12 V"
+      },
+      {
+        "name": "Wtyczka skanera",
+        "value": "RJ-45 (port POS)"
+      },
+      {
+        "name": "Długość",
+        "value": "3,65 m (12 ft), prosty"
+      },
+      {
+        "name": "Zasilanie skanera",
+        "value": "12 V z kasy POS"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Zebra MP7200"
+      }
+    ],
+    "applications": [
+      "stanowiska kasowe"
+    ],
+    "relatedProducts": [
+      "zebra-mp7200"
+    ],
+    "relatedAccessories": [
+      "zebra-cable-usb-mp72-5m"
+    ],
+    "compatibleAccessories": [],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "zebra-cable-usb-powerplus-sp72",
+    "slug": "zebra-kabel-usb-power-plus-sp72",
+    "name": "Przewód USB Power Plus Zebra CBA-U23-S07ZBR do SP7208-H",
+    "shortDescription": "Zebra CBA-U23-S07ZBR — ekranowany przewód USB Power Plus 2,1 m do skanera ladowego Zebra SP7208-H. Kasa dostarcza zasilanie 12 V, także dla portu AUX.",
+    "description": "Przewód USB Zebra CBA-U23-S07ZBR łączy skaner ladowy Zebra SP7208-H z kasą POS przez port USB Power Plus. Przewód jest ekranowany i prosty. Ma 2,1 m (7 ft).\n\nKasa dostarcza przez ten przewód zasilanie 12 V. Dodatkowy skaner na porcie AUX wymaga zasilania 12 V. Z tym przewodem port AUX pracuje bez zasilacza.\n\nSP7201-H pobiera tylko zasilanie 5 V z portu USB. Do tego modelu użyj [przewodu CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22). Przewód CBA-U21-S07ZBR pasuje też do SP7208-H, gdy kasa nie ma portu Power Plus.\n\n## Zgodne urządzenia\n\n[Zebra SP7208-H](/produkt/zebra-sp7208-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Przewód USB Power Plus Zebra CBA-U23-S07ZBR do skanera SP7208-H",
+    "seoDescription": "Przewód USB Power Plus Zebra CBA-U23-S07ZBR, 2,1 m, ekranowany, 12 V, do skanera ladowego Zebra SP7208-H (seria SP72). Kasa zasila port AUX bez zasilacza. PN: CBA-U23-S07ZBR.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow",
+      "kable-do-skanerow"
+    ],
+    "manufacturerId": "zebra",
+    "priceFrom": 115.46,
+    "availability": "available",
+    "images": [
+      "/images/products/CBA-U23-S07ZBR.png"
+    ],
+    "imageDescriptions": [
+      "Przewód USB Power Plus Zebra CBA-U23-S07ZBR — zwinięty szary przewód z wtyczką Power Plus i wtyczką modułową skanera"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CBA-U23-S07ZBR"
+      },
+      {
+        "name": "Wtyczka hosta",
+        "value": "USB Power Plus 12 V"
+      },
+      {
+        "name": "Długość",
+        "value": "2,1 m (7 ft), prosty"
+      },
+      {
+        "name": "Ekranowanie",
+        "value": "Tak"
+      },
+      {
+        "name": "Zasilanie skanera",
+        "value": "12 V z kasy POS"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Zebra SP7208-H"
+      }
+    ],
+    "applications": [
+      "stanowiska kasowe"
+    ],
+    "relatedProducts": [
+      "zebra-sp7208-h"
+    ],
+    "relatedAccessories": [
+      "zebra-cable-usb-ds22"
+    ],
+    "compatibleAccessories": [],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "zebra-cable-dc-376",
+    "slug": "zebra-kabel-zasilajacy-376",
+    "name": "Przewód DC Zebra CBL-DC-376A1-01 do SP7208-H",
+    "shortDescription": "Zebra CBL-DC-376A1-01 — przewód DC z prostą wtyczką. Łączy zasilacz Zebra PWR-BGA12V50W0WW ze skanerem ladowym Zebra SP7208-H.",
+    "description": "Przewód DC Zebra CBL-DC-376A1-01 łączy zasilacz Zebra PWR-BGA12V50W0WW ze skanerem ladowym Zebra SP7208-H. Wtyczka DC przewodu jest prosta.\n\nSP7208-H wymaga zasilania 12 V, gdy do portu AUX jest podłączony dodatkowy skaner. Jeśli skaner jest podłączony do kasy przez zwykły port USB-A lub RS-232, zasilanie 12 V dostarcza zasilacz.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nElementy te nie są dołączone do przewodu. Dokup tylko te elementy, których jeszcze nie masz.\n\n## Zgodne urządzenia\n\n[Zebra SP7208-H](/produkt/zebra-sp7208-h). Jeśli kasa ma port USB Power Plus, [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72) zasila port AUX bez zasilacza. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Przewód DC Zebra CBL-DC-376A1-01 do zasilacza 50 W i skanera SP7208-H",
+    "seoDescription": "Przewód DC Zebra CBL-DC-376A1-01 łączy zasilacz PWR-BGA12V50W0WW ze skanerem ladowym Zebra SP7208-H. Zasilanie 12 V dla portu AUX. Kabel zasilający do Zebra SP72. PN: CBL-DC-376A1-01.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow"
+    ],
+    "manufacturerId": "zebra",
+    "priceFrom": 33.51,
+    "availability": "available",
+    "images": [
+      "/images/products/CBL-DC-376A1-01.png"
+    ],
+    "imageDescriptions": [
+      "Przewód DC Zebra CBL-DC-376A1-01 — czarny przewód z filtrami ferrytowymi, wtyczką zasilacza i prostą wtyczką DC"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CBL-DC-376A1-01"
+      },
+      {
+        "name": "Typ",
+        "value": "Przewód zasilający DC, prosta wtyczka"
+      },
+      {
+        "name": "Do zasilacza",
+        "value": "PWR-BGA12V50W0WW (50 W)"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Zebra SP7208-H"
+      }
+    ],
+    "applications": [
+      "stanowiska kasowe"
+    ],
+    "relatedProducts": [
+      "zebra-sp7208-h"
+    ],
+    "relatedAccessories": [
+      "zebra-psu-50w",
+      "zebra-tc201-50-16000-220r",
+      "zebra-cable-usb-powerplus-sp72"
+    ],
+    "compatibleAccessories": [],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "zebra-bracket-sp72-h",
+    "slug": "zebra-mocowanie-w-blacie-sp72-h",
+    "name": "Mocowanie w blacie Zebra BRKT-BM0072-00 do SP72-H",
+    "shortDescription": "Zebra BRKT-BM0072-00 — mocowanie (Bucket Mount) do zabudowy skanerów ladowych Zebra SP7201-H i SP7208-H w blacie kasy. Otwór w blacie 159 × 159 mm.",
+    "description": "Mocowanie Zebra BRKT-BM0072-00 (Bucket Mount) służy do zabudowy poziomych skanerów Zebra SP7201-H i SP7208-H w blacie kasy. Mocowanie wkłada się w otwór w blacie. Skaner wkłada się w mocowanie.\n\nOtwór w blacie ma wymiary 159 × 159 mm. Płyta skanera może opierać się o blat albo leżeć na równi z blatem. Montaż na równi z blatem wymaga wyfrezowania 188 × 201 mm na głębokość 1,27 mm wokół otworu. Strzałki na mocowaniu i na płycie skanera muszą wskazywać ten sam kierunek.\n\nOtwór ma te same wymiary co otwory skanerów jednopłaszczyznowych innych producentów. Ułatwia to wymianę skanera w istniejącej ladzie. Skaner nie jest dołączony.\n\n## Zgodne urządzenia\n\n[Zebra SP7201-H](/produkt/zebra-sp7201-h), [Zebra SP7208-H](/produkt/zebra-sp7208-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "seoTitle": "Mocowanie w blacie Zebra BRKT-BM0072-00 do skanerów SP7201-H i SP7208-H",
+    "seoDescription": "Mocowanie Zebra BRKT-BM0072-00 (Bucket Mount) do zabudowy poziomych skanerów ladowych Zebra SP7201-H i SP7208-H (seria SP72-H) w blacie kasy. Otwór 159 × 159 mm. PN: BRKT-BM0072-00.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-skanerow"
+    ],
+    "manufacturerId": "zebra",
+    "priceFrom": 125.53,
+    "availability": "available",
+    "images": [
+      "/images/products/BRKT-BM0072-00.png"
+    ],
+    "imageDescriptions": [
+      "Mocowanie Zebra BRKT-BM0072-00 — kwadratowa rama ze stali nierdzewnej do zabudowy skanera SP72-H w blacie"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "BRKT-BM0072-00"
+      },
+      {
+        "name": "Typ",
+        "value": "Mocowanie do zabudowy w blacie (Bucket Mount)"
+      },
+      {
+        "name": "Otwór w blacie",
+        "value": "159 × 159 mm"
+      },
+      {
+        "name": "Montaż na równi z blatem",
+        "value": "Wyfrezowanie 188 × 201 mm, głębokość 1,27 mm"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Zebra SP7201-H, SP7208-H"
+      }
+    ],
+    "applications": [
+      "stanowiska kasowe"
+    ],
+    "relatedProducts": [
+      "zebra-sp7201-h",
+      "zebra-sp7208-h"
+    ],
+    "relatedAccessories": [],
+    "compatibleAccessories": [],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]

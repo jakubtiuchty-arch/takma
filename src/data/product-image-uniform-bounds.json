@@ -1399,14 +1399,7 @@
     656,
     626
   ],
-  "/images/products/datalogic-magellan-3550hsi-1-v1.webp": [
-    700,
-    700,
-    15,
-    106,
-    656,
-    626
-  ],
+  "/images/products/datalogic-magellan-3550hsi-1-v1.webp": [900,900,17,151,844,783],
   "/images/products/datalogic-magellan-3700hsi-1-v1.webp": [
     700,
     700,
@@ -1905,5 +1898,9 @@
   "/images/products/sunmi-c20000001.webp": [1254,1254,203,138,1050,1115],
   "/images/products/sunmi-c20000003.webp": [1254,1254,341,138,911,1115],
   "/images/products/sunmi-c20000026.webp": [1254,1254,138,188,1115,1064],
-  "/images/products/sunmi-x09060578.webp": [1254,1254,263,138,990,1115]
+  "/images/products/sunmi-x09060578.webp": [1254,1254,263,138,990,1115],
+  "/images/products/CBA-U51-S16ZAR.png": [800,800,69,225,731,575],
+  "/images/products/CBA-U23-S07ZBR.png": [800,800,69,174,730,626],
+  "/images/products/CBL-DC-376A1-01.png": [800,800,69,135,731,663],
+  "/images/products/BRKT-BM0072-00.png": [800,800,69,143,730,657]
 }
