@@ -1805,7 +1805,7 @@ export const cipherlabAccessories: Product[] = [
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21",
     "subcategoryIds": [
-      "stacje-ladowarki-terminali",
+      "kable-zasilacze-terminali",
       "akcesoria-do-terminali"
     ]
   },

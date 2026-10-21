@@ -993,7 +993,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Stacje dokujące Zebra ShareCradle do terminali MC3300x, MC3400, MC2200, TC22, TC27, TC53. Modele 1-slot i 5-slot z Ethernet, ładowarki baterii 4-slot i 20-slot. Ceny netto B2B.',
     longDescription: 'Stacje dokujące (cradle) i ładowarki Zebra do terminali mobilnych serii MC i TC. ShareCradle 1-slot do indywidualnego stanowiska — ładuje terminal i zapasową baterię jednocześnie, opcjonalnie z portem Ethernet do przewodowej synchronizacji danych. ShareCradle 5-slot do nocnego ładowania floty — z Ethernet na każdym slocie. Ładowarki baterii (battery charger) 4-slot i 20-slot do rotacyjnego zarządzania akumulatorami w dużych instalacjach. Adaptery cup do rozbudowy stacji. Wszystkie z zasilaczem w zestawie.',
     icon: 'battery',
-    productIds: [...cipherlabAccessories.filter(p => /Stacja|Ładowarka|Przewód/.test(p.name)).map(p => p.id),
+    productIds: [...cipherlabAccessories.filter(p => /Stacja|Ładowarka/.test(p.name)).map(p => p.id),
       'zebra-mc33-cradle-1slot', 'zebra-mc33-battery-charger-4slot', 'zebra-mc33-cradle-5slot',
       'zebra-mc33-cradle-4slot-4battery', 'zebra-mc33-cradle-5slot-ethernet',
       'zebra-mc33-cradle-4slot-4battery-ethernet', 'zebra-mc33-battery-charger-20slot',
@@ -1080,7 +1080,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne kable USB, kable zasilające DC i zasilacze sieciowe 50W/108W do stacji dokujących terminali Zebra MC3300x, MC3400, TC22, TC27. Ceny netto B2B.',
     longDescription: 'Kable i zasilacze do infrastruktury ładowania terminali mobilnych Zebra. Zasilacze sieciowe: 50W (PWR-BGA12V50W0WW) do stacji 1-gniazdowych i 108W (PWR-BGA12V108W0WW) do stacji 5-gniazdowych — wymagają kabla zasilającego AC sprzedawanego osobno. Kable zasilające DC: CBL-DC-388A1-01 (do zasilacza 50W) i CBL-DC-381A1-01 (do zasilacza 108W). Kable USB do komunikacji i ładowania z komputerem. Kable DC do samochodów (vehicle charger) do ładowania w pojeździe.',
     icon: 'cable',
-    productIds: [
+    productIds: [...cipherlabAccessories.filter(p => /Przewód|Zasilacz/.test(p.name)).map(p => p.id),
       'zebra-mc33-usb-cable', 'zebra-mc33-dc-cable-388', 'zebra-mc33-dc-cable-382',
       'zebra-psu-50w', 'zebra-psu-108w', 'zebra-cable-dc-388', 'zebra-cable-dc-381',
       'zebra-mc94-usb-cable', 'zebra-tc201-50-16000-220r',
