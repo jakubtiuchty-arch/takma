@@ -9,7 +9,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON XD3-40d — drukarka termiczna 4 cale",
     "seoDescription": "BIXOLON XD3-40d: biurkowy druk termiczny bez taśmy, 203 dpi, nadruk do 104 mm. Rolka do 127 mm. Porównaj USB i wersję sieciową, PN oraz ceny.",
     "shortDescription": "BIXOLON XD3-40d to biurkowa drukarka termiczna do etykiet wysyłkowych, cenowych i magazynowych. Wykonuje nadruk bez taśmy barwiącej.",
-    "description": "BIXOLON XD3-40d to biurkowa drukarka termiczna do etykiet wysyłkowych, cenowych i magazynowych. Wykonuje nadruk bez taśmy barwiącej.\n\n## Etykiety termiczne przy stanowisku wysyłki\n\nWersja 203 dpi drukuje z prędkością do 127 mm/s. Maksymalna szerokość nadruku wynosi 104 mm. Rolka umieszczana wewnątrz może mieć średnicę do 127 mm. Materiał z czarnym znacznikiem lub przerwą wymaga ustawienia właściwego czujnika.\n\nDobierz papier termoczuły do czasu przechowywania etykiety. Druk bez taśmy nie oznacza odporności nadruku na ciepło i światło. Jeśli potrzebujesz taśmy barwiącej i innego materiału etykietowego, porównaj XD3-40t.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON XD3-40d to biurkowa drukarka termiczna do etykiet wysyłkowych, cenowych i magazynowych. Wykonuje nadruk bez taśmy barwiącej.\n\n## Etykiety termiczne przy stanowisku wysyłki\n\nWersja 203 dpi drukuje z prędkością do 127 mm/s. Maksymalna szerokość nadruku wynosi 104 mm. Rolka umieszczana wewnątrz może mieć średnicę do 127 mm. Materiał z czarnym znacznikiem lub przerwą wymaga ustawienia właściwego czujnika.\n\nDobierz papier termoczuły do czasu przechowywania etykiety. Druk bez taśmy nie oznacza odporności nadruku na ciepło i światło. Jeśli potrzebujesz taśmy barwiącej i innego materiału etykietowego, porównaj XD3-40t.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40t](/produkt/bixolon-xd3-40t). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -45,7 +45,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Prędkość druku",
-        "value": "127 mm/s; maksymalna, zależnie od PN"
+        "value": "127 mm/s"
       },
       {
         "name": "Szerokość druku",
@@ -57,7 +57,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232, Ethernet; USB"
+        "value": "USB; wersja E: USB, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
@@ -73,7 +73,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -144,7 +144,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON XD3-40t — drukarka termotransferowa 4 cale",
     "seoDescription": "BIXOLON XD3-40t: biurkowa drukarka termotransferowa do etykiet papierowych i zgodnych folii. Wybierz taśmę oraz porty według PN. Ceny i stany.",
     "shortDescription": "BIXOLON XD3-40t to biurkowa drukarka termotransferowa 203 dpi do oznaczania towarów i zasobów. Obsługuje także druk termiczny bezpośredni.",
-    "description": "BIXOLON XD3-40t to biurkowa drukarka termotransferowa 203 dpi do oznaczania towarów i zasobów. Obsługuje także druk termiczny bezpośredni.\n\n## Taśma do 300 m w biurkowej obudowie\n\nXD3-40t przyjmuje taśmy o długości do 300 m. Materiał etykiety oraz rodzaj taśmy dobierz łącznie do wymagań nadruku. Zastosowanie taśmy woskowej, woskowo-żywicznej lub żywicznej zależy od podłoża.\n\nUrządzenie osiąga do 127 mm/s i drukuje na szerokości do 104 mm. Otwierana obudowa umożliwia założenie rolki i taśmy przy stanowisku. XD3-40d jest odrębnym modelem termicznym i nie obsługuje taśmy barwiącej.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40d](/produkt/bixolon-xd3-40d). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON XD3-40t to biurkowa drukarka termotransferowa 203 dpi do oznaczania towarów i zasobów. Obsługuje także druk termiczny bezpośredni.\n\n## Taśma do 300 m w biurkowej obudowie\n\nXD3-40t przyjmuje taśmy o długości do 300 m. Materiał etykiety oraz rodzaj taśmy dobierz łącznie do wymagań nadruku. Zastosowanie taśmy woskowej, woskowo-żywicznej lub żywicznej zależy od podłoża.\n\nUrządzenie osiąga do 127 mm/s i drukuje na szerokości do 104 mm. Otwierana obudowa umożliwia założenie rolki i taśmy przy stanowisku. XD3-40d jest odrębnym modelem termicznym i nie obsługuje taśmy barwiącej.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40d](/produkt/bixolon-xd3-40d). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -176,7 +176,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Prędkość druku",
-        "value": "127 mm/s; maksymalna, zależnie od PN"
+        "value": "127 mm/s"
       },
       {
         "name": "Szerokość druku",
@@ -188,7 +188,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232, Ethernet; USB"
+        "value": "USB; wersja E: USB, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
@@ -208,7 +208,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -279,7 +279,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON XD5-40d — drukarka termiczna 203 i 300 dpi",
     "seoDescription": "BIXOLON XD5-40d: biurkowa drukarka termiczna pierwszej generacji XD5. Porównaj warianty portów i wyposażenie według PN. Ceny i akcesoria.",
     "shortDescription": "BIXOLON XD5-40d to biurkowa drukarka termiczna do etykiet logistycznych i oznaczeń towaru. Rodzina obejmuje warianty XD5-40d 203 dpi oraz XD5-43d 300 dpi.",
-    "description": "BIXOLON XD5-40d to biurkowa drukarka termiczna do etykiet logistycznych i oznaczeń towaru. Rodzina obejmuje warianty XD5-40d 203 dpi oraz XD5-43d 300 dpi.\n\n## Rozdzielczość dobrana do treści etykiety\n\nXD5-40d osiąga do 178 mm/s, a XD5-43d do 127 mm/s. Wersja 300 dpi pozwala przygotować drobniejszy tekst i grafikę. Maksymalna szerokość druku zależy od rozdzielczości: 108 mm lub 105,7 mm.\n\nW tej rodzinie LCD oraz łączność bezprzewodowa zależą od konfiguracji. Zdjęcie z ekranem przedstawia wersję wyposażoną w LCD. Nie oznacza to obecności ekranu w każdym PN. Nowszą generację z pamięcią 512/512 MB porównasz na karcie XD5-40IId.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nTo termiczna odmiana pierwszej generacji XD5. Wersję generacji II znajdziesz jako [XD5-40IId](/produkt/bixolon-xd5-40iid). Do taśmy barwiącej służy osobny [XD5-40t](/produkt/bixolon-xd5-40t); interfejsów i wyposażenia nie przenoś między PN. Pełną ofertę znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON XD5-40d to biurkowa drukarka termiczna do etykiet logistycznych i oznaczeń towaru. Rodzina obejmuje warianty XD5-40d 203 dpi oraz XD5-43d 300 dpi.\n\n## Rozdzielczość dobrana do treści etykiety\n\nXD5-40d osiąga do 178 mm/s, a XD5-43d do 127 mm/s. Wersja 300 dpi pozwala przygotować drobniejszy tekst i grafikę. Maksymalna szerokość druku zależy od rozdzielczości: 108 mm lub 105,7 mm.\n\nW tej rodzinie LCD oraz łączność bezprzewodowa zależą od konfiguracji. Zdjęcie z ekranem przedstawia wersję wyposażoną w LCD. Nie oznacza to obecności ekranu w każdym PN. Nowszą generację z pamięcią 512/512 MB porównasz na karcie XD5-40IId.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nTo termiczna odmiana pierwszej generacji XD5. Wersję generacji II znajdziesz jako [XD5-40IId](/produkt/bixolon-xd5-40iid). Do taśmy barwiącej służy osobny [XD5-40t](/produkt/bixolon-xd5-40t); interfejsów i wyposażenia nie przenoś między PN. Pełną ofertę znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -313,15 +313,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "178 mm/s; 127 mm/s; maksymalna, zależnie od PN"
+        "value": "178 mm/s (203 dpi); 127 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "108 mm; 105,7 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -329,15 +329,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, RS-232, Ethernet; USB, USB Host"
+        "value": "USB i USB Host; wersje E: USB, USB Host, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Brak; Wi-Fi; Bluetooth"
+        "value": "Wersje W: Wi-Fi; wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
-        "value": "Brak LCD; LCD"
+        "value": "Wersje O: LCD; pozostałe: brak LCD"
       },
       {
         "name": "Średnica rolki",
@@ -345,7 +345,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -580,7 +580,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON XD5-40t — drukarka termotransferowa 203 i 300 dpi",
     "seoDescription": "BIXOLON XD5-40t: biurkowa drukarka termotransferowa z obsługą taśm 74 i 300 m. Porównaj rozdzielczości i porty według PN. Ceny i akcesoria.",
     "shortDescription": "BIXOLON XD5-40t drukuje etykiety metodą termotransferową lub termiczną bezpośrednią. Oferowane wersje obejmują XD5-40t 203 dpi i XD5-43t 300 dpi.",
-    "description": "BIXOLON XD5-40t drukuje etykiety metodą termotransferową lub termiczną bezpośrednią. Oferowane wersje obejmują XD5-40t 203 dpi i XD5-43t 300 dpi.\n\n## Dwie długości taśmy i wybór interfejsu\n\nDrukarka obsługuje taśmy 74 m i 300 m na odpowiedniej gilzie. Wersja 203 dpi osiąga do 152 mm/s, a 300 dpi do 102 mm/s. Maksymalna szerokość nadruku wynosi odpowiednio 108 mm i 105,7 mm.\n\nDobierz wariant według portów komputera i sposobu pracy. LCD, Bluetooth i Wi-Fi nie są wspólne dla wszystkich PN. Do nowszej generacji z większą pamięcią służy osobna karta XD5-40IIt. Wersja XD5-40tR z koderem RFID jest innym produktem.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nTo termotransferowa odmiana pierwszej generacji XD5. Generacja II ma osobną kartę [XD5-40IIt](/produkt/bixolon-xd5-40iit). Do kodowania UHF służy [XD5-40tR RFID](/produkt/bixolon-xd5-40tr). Standardowy XD5-40t nie ma kodera RFID. Pełną ofertę znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON XD5-40t drukuje etykiety metodą termotransferową lub termiczną bezpośrednią. Oferowane wersje obejmują XD5-40t 203 dpi i XD5-43t 300 dpi.\n\n## Dwie długości taśmy i wybór interfejsu\n\nDrukarka obsługuje taśmy 74 m i 300 m na odpowiedniej gilzie. Wersja 203 dpi osiąga do 152 mm/s, a 300 dpi do 102 mm/s. Maksymalna szerokość nadruku wynosi odpowiednio 108 mm i 105,7 mm.\n\nDobierz wariant według portów komputera i sposobu pracy. LCD, Bluetooth i Wi-Fi nie są wspólne dla wszystkich PN. Do nowszej generacji z większą pamięcią służy osobna karta XD5-40IIt. Wersja XD5-40tR z koderem RFID jest innym produktem.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nTo termotransferowa odmiana pierwszej generacji XD5. Generacja II ma osobną kartę [XD5-40IIt](/produkt/bixolon-xd5-40iit). Do kodowania UHF służy [XD5-40tR RFID](/produkt/bixolon-xd5-40tr). Standardowy XD5-40t nie ma kodera RFID. Pełną ofertę znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -608,15 +608,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "152 mm/s; 102 mm/s; maksymalna, zależnie od PN"
+        "value": "152 mm/s (203 dpi); 102 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "108 mm; 105,7 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -624,15 +624,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, RS-232, Ethernet; USB, USB Host"
+        "value": "USB i USB Host; wersje E: USB, USB Host, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Bluetooth; Brak; Wi-Fi"
+        "value": "Wersje W: Wi-Fi; wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
-        "value": "Brak LCD; LCD"
+        "value": "Wersje O: LCD; pozostałe: brak LCD"
       },
       {
         "name": "Średnica rolki",
@@ -644,7 +644,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -925,15 +925,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "203 mm/s; 152 mm/s; maksymalna, zależnie od PN"
+        "value": "203 mm/s (203 dpi); 152 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "108 mm; 105,7 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -941,15 +941,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, Ethernet; USB, USB Host, RS-232, Ethernet; USB, USB Host"
+        "value": "USB i USB Host; wersje E: USB, USB Host, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Wi-Fi; Bluetooth; Brak"
+        "value": "Wersje W: Wi-Fi; wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
-        "value": "LCD; Brak LCD"
+        "value": "Wersje O: LCD; pozostałe: brak LCD"
       },
       {
         "name": "Średnica rolki",
@@ -967,14 +967,14 @@ export const bixolonLabelProducts: Product[] = [
     "variants": [
       {
         "partNumber": "XD5-40IIdOEWK/BEG",
-        "name": "203 dpi, USB / USB Host / Ethernet, Wi-Fi, LCD",
+        "name": "203 dpi, USB / USB Host / RS-232 / Ethernet, Wi-Fi, LCD",
         "priceFrom": 1463.25,
         "availability": "available",
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
           "Szerokość druku": "108 mm",
-          "Interfejsy": "USB, USB Host, Ethernet",
+          "Interfejsy": "USB, USB Host, RS-232, Ethernet",
           "Łączność bezprzewodowa": "Wi-Fi",
           "Wyświetlacz": "LCD"
         }
@@ -1152,15 +1152,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "203 mm/s; 152 mm/s; maksymalna, zależnie od PN"
+        "value": "203 mm/s (203 dpi); 152 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "108 mm; 105,7 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -1168,15 +1168,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, RS-232, Ethernet; USB, USB Host"
+        "value": "USB i USB Host; wersje E: USB, USB Host, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Bluetooth; Brak; Wi-Fi"
+        "value": "Wersje W: Wi-Fi; wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
-        "value": "Brak LCD; LCD"
+        "value": "Wersje O: LCD; pozostałe: brak LCD"
       },
       {
         "name": "Średnica rolki",
@@ -1437,7 +1437,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON XT3-40 — przemysłowa drukarka etykiet",
     "seoDescription": "BIXOLON XT3-40: przemysłowa drukarka etykiet do większych rolek i taśm 450 m. Porównaj rozdzielczości, porty i wyposażenie według PN. Ceny i stany.",
     "shortDescription": "BIXOLON XT3-40 to przemysłowa drukarka termotransferowa z metalową obudową do magazynu i produkcji. Rodzina obejmuje wersje 203 i 300 dpi.",
-    "description": "BIXOLON XT3-40 to przemysłowa drukarka termotransferowa z metalową obudową do magazynu i produkcji. Rodzina obejmuje wersje 203 i 300 dpi.\n\n## Duża rolka i taśma do pracy na stanowisku\n\nWewnętrzna rolka może mieć średnicę do 203 mm, a taśma barwiąca długość do 450 m. Dwuczęściowe drzwi ułatwiają dostęp do materiałów przy ograniczonej przestrzeni z boku urządzenia. Kolorowy LCD ma przekątną 2,4 cala.\n\nXT3-40 osiąga do 203 mm/s, natomiast XT3-43 do 152 mm/s. Wybrane PN zawierają odklejak i nawijak podkładu. Nawijak podkładu nie oznacza nawijania gotowych etykiet. Do większej prędkości lub 600 dpi porównaj XT5-40.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. Gwarancja producenta na drukarkę wynosi 2 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XT5-40](/produkt/bixolon-xt5-40). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON XT3-40 to przemysłowa drukarka termotransferowa z metalową obudową do magazynu i produkcji. Rodzina obejmuje wersje 203 i 300 dpi.\n\n## Duża rolka i taśma do pracy na stanowisku\n\nWewnętrzna rolka może mieć średnicę do 203 mm, a taśma barwiąca długość do 450 m. Dwuczęściowe drzwi ułatwiają dostęp do materiałów przy ograniczonej przestrzeni z boku urządzenia. Kolorowy LCD ma przekątną 2,4 cala.\n\nXT3-40 osiąga do 203 mm/s, natomiast XT3-43 do 152 mm/s. Wybrane PN zawierają odklejak i nawijak podkładu. Nawijak podkładu nie oznacza nawijania gotowych etykiet. Do większej prędkości lub 600 dpi porównaj XT5-40.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. Gwarancja producenta wynosi 2 lata od zakupu lub 27 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XT5-40](/produkt/bixolon-xt5-40). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "przemyslowe-drukarki-etykiet",
@@ -1471,19 +1471,19 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "203 mm/s; 152 mm/s; maksymalna, zależnie od PN"
+        "value": "203 mm/s (203 dpi); 152 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "108 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
-        "value": "25–114 mm"
+        "value": "20–114 mm"
       },
       {
         "name": "Interfejsy",
@@ -1507,7 +1507,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "2 lata"
+        "value": "2 lata od zakupu (lub 27 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -1523,6 +1523,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
+          "Szerokość druku": "108 mm",
           "Obsługa etykiet": "Odklejak i nawijak podkładu"
         }
       },
@@ -1534,6 +1535,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "203 mm/s",
+          "Szerokość druku": "108 mm",
           "Obsługa etykiet": "Odrywanie"
         }
       },
@@ -1545,6 +1547,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
+          "Szerokość druku": "105,7 mm",
           "Obsługa etykiet": "Odrywanie"
         }
       },
@@ -1556,6 +1559,7 @@ export const bixolonLabelProducts: Product[] = [
         "attributes": {
           "Rozdzielczość": "300 dpi",
           "Prędkość druku": "152 mm/s",
+          "Szerokość druku": "105,7 mm",
           "Obsługa etykiet": "Odklejak i nawijak podkładu"
         }
       }
@@ -1631,15 +1635,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "600 dpi; 203 dpi; 300 dpi"
+        "value": "203, 300 lub 600 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "127 mm/s; 356 mm/s; 254 mm/s; maksymalna, zależnie od PN"
+        "value": "356 mm/s (203 dpi); 254 mm/s (300 dpi); 127 mm/s (600 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "105,6 mm; 104 mm; 105,7 mm"
+        "value": "104 mm (203 dpi); 105,7 mm (300 dpi); 105,6 mm (600 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -1655,7 +1659,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Wyświetlacz",
-        "value": "Dotykowy 4,3 cala; LCD 3,5 cala"
+        "value": "Wersje N: dotykowy 4,3 cala; pozostałe: LCD 3,5 cala"
       },
       {
         "name": "Średnica rolki",
@@ -1668,6 +1672,10 @@ export const bixolonLabelProducts: Product[] = [
       {
         "name": "Pamięć",
         "value": "512 MB SDRAM / 512 MB Flash"
+      },
+      {
+        "name": "Gwarancja producenta",
+        "value": "2 lata od zakupu (lub 27 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -1813,7 +1821,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON SLP-DX220 — drukarka termiczna 2 cale",
     "seoDescription": "BIXOLON SLP-DX220: wąska biurkowa drukarka termiczna bez taśmy barwiącej. Do małych etykiet przy stanowisku. Porównaj porty, PN i ceny.",
     "shortDescription": "BIXOLON SLP-DX220 to kompaktowa drukarka termiczna do wąskich etykiet i opasek. Rodzina obejmuje 203 dpi oraz SLP-DX223 300 dpi.",
-    "description": "BIXOLON SLP-DX220 to kompaktowa drukarka termiczna do wąskich etykiet i opasek. Rodzina obejmuje 203 dpi oraz SLP-DX223 300 dpi.\n\n## Wąski materiał i druk bez taśmy\n\nSzerokość nośnika może wynosić do 60 mm. Maksymalna szerokość nadruku to 54 mm przy 203 dpi lub 56,9 mm przy 300 dpi. SLP-DX220 osiąga do 152 mm/s, a SLP-DX223 do 100 mm/s.\n\nTo urządzenie do etykiet termoczułych. Nie obsługuje druku termotransferowego z taśmą. Jeśli potrzebujesz taśmy przy podobnej szerokości materiału, porównaj SLP-TX220. Bluetooth, Ethernet i RS-232 zależą od wybranej konfiguracji.\n\n## Wybierz konfigurację i wyposażenie\n\nZestawy zawierają zasilacz i przewód sieciowy. Przewód komunikacyjny dobierz do portu urządzenia; nie zakładaj jego obecności na podstawie samej nazwy modelu. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON SLP-DX220 to kompaktowa drukarka termiczna do wąskich etykiet i opasek. Rodzina obejmuje 203 dpi oraz SLP-DX223 300 dpi.\n\n## Wąski materiał i druk bez taśmy\n\nSzerokość nośnika może wynosić do 60 mm. Maksymalna szerokość nadruku to 54 mm przy 203 dpi lub 56,9 mm przy 300 dpi. SLP-DX220 osiąga do 152 mm/s, a SLP-DX223 do 100 mm/s.\n\nTo urządzenie do etykiet termoczułych. Nie obsługuje druku termotransferowego z taśmą. Jeśli potrzebujesz taśmy przy podobnej szerokości materiału, porównaj SLP-TX220. Bluetooth, Ethernet i RS-232 zależą od wybranej konfiguracji.\n\n## Wybierz konfigurację i wyposażenie\n\nZestaw zawiera zasilacz, przewód zasilający i przewód USB. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON SLP-TX220](/produkt/bixolon-slp-tx220). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -1845,15 +1853,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "152 mm/s; 100 mm/s; maksymalna, zależnie od PN"
+        "value": "152 mm/s (203 dpi); 100 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "54 mm; 56,9 mm"
+        "value": "54 mm (203 dpi); 56,9 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -1861,11 +1869,11 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, RS-232; USB, USB Host, Ethernet; USB, USB Host; USB, RS-232"
+        "value": "Wersje G: USB i RS-232 (SLP-DX220G/BEG także USB Host); wersje E: USB, USB Host i Ethernet; wersje B: USB i USB Host"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Brak; Bluetooth"
+        "value": "Wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
@@ -1874,6 +1882,14 @@ export const bixolonLabelProducts: Product[] = [
       {
         "name": "Średnica rolki",
         "value": "Do 130 mm wewnątrz drukarki"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz, przewód zasilający, przewód USB"
+      },
+      {
+        "name": "Gwarancja producenta",
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -2004,7 +2020,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON SLP-TX220 — drukarka termotransferowa 2 cale",
     "seoDescription": "BIXOLON SLP-TX220: wąska drukarka termotransferowa do małych etykiet. Wymaga dobranej taśmy barwiącej. Sprawdź warianty PN, ceny i akcesoria.",
     "shortDescription": "BIXOLON SLP-TX220 to biurkowa drukarka termotransferowa do wąskich etykiet. Dostępne wersje obejmują 203 dpi i SLP-TX223 300 dpi.",
-    "description": "BIXOLON SLP-TX220 to biurkowa drukarka termotransferowa do wąskich etykiet. Dostępne wersje obejmują 203 dpi i SLP-TX223 300 dpi.\n\n## Taśma 74 m do małych oznaczeń\n\nSLP-TX220 obsługuje taśmę barwiącą do 74 m. Dobierz jej szerokość do etykiety oraz rodzaj do podłoża. Drukarka pracuje także w trybie termicznym bezpośrednim, po założeniu odpowiedniego materiału.\n\nWersja 203 dpi osiąga do 152 mm/s i 54 mm szerokości nadruku. Wersja 300 dpi osiąga do 100 mm/s oraz 56,9 mm. Rolka może mieć średnicę do 130 mm. Do etykiet o szerokości ponad 60 mm potrzebujesz większej drukarki.\n\n## Wybierz konfigurację i wyposażenie\n\nZestawy zawierają zasilacz i przewód sieciowy. Przewód komunikacyjny dobierz do portu urządzenia; nie zakładaj jego obecności na podstawie samej nazwy modelu. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON SLP-TX220 to biurkowa drukarka termotransferowa do wąskich etykiet. Dostępne wersje obejmują 203 dpi i SLP-TX223 300 dpi.\n\n## Taśma 74 m do małych oznaczeń\n\nDrukarka przyjmuje taśmę o szerokości 58 mm i długości do 74 m, na gilzie 12,7 mm, z farbą na zewnątrz. Drukarka pracuje także w trybie termicznym bezpośrednim, po założeniu odpowiedniego materiału.\n\nWersja 203 dpi osiąga do 152 mm/s i 54 mm szerokości nadruku. Wersja 300 dpi osiąga do 100 mm/s oraz 56,9 mm. Rolka może mieć średnicę do 130 mm. Do etykiet o szerokości ponad 60 mm potrzebujesz większej drukarki.\n\n## Wybierz konfigurację i wyposażenie\n\nZestawy zawierają zasilacz i przewód sieciowy. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\nDo wydruku potrzebujesz etykiet oraz taśmy dobranej do materiału. W trybie termicznym bezpośrednim użyj etykiet termoczułych bez taśmy.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON SLP-DX220](/produkt/bixolon-slp-dx220). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -2036,15 +2052,15 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Rozdzielczość",
-        "value": "300 dpi; 203 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "100 mm/s; 152 mm/s; maksymalna, zależnie od PN"
+        "value": "152 mm/s (203 dpi); 100 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "56,9 mm; 54 mm"
+        "value": "54 mm (203 dpi); 56,9 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -2052,11 +2068,11 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, RS-232; USB, USB Host; USB, USB Host, Ethernet"
+        "value": "Wersje G: USB i RS-232; wersje E: USB, USB Host i Ethernet; wersje B: USB i USB Host"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Brak; Bluetooth"
+        "value": "Wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
@@ -2068,11 +2084,11 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Długość taśmy",
-        "value": "Do 74 m"
+        "value": "Szerokość 58 mm, długość do 74 m, gilza 12,7 mm, farba na zewnątrz"
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -2203,7 +2219,7 @@ export const bixolonLabelProducts: Product[] = [
     "seoTitle": "BIXOLON SLP-DL410 — drukarka etykiet składanych",
     "seoDescription": "BIXOLON SLP-DL410: drukarka termiczna z zewnętrznym podawaniem etykiet. Do stanowisk z materiałem poza obudową. Sprawdź porty, PN i ceny.",
     "shortDescription": "BIXOLON SLP-DL410 to drukarka termiczna 203 dpi do etykiet podawanych z zewnątrz. Sprawdza się przy nośnikach składanych na stanowisku wysyłki.",
-    "description": "BIXOLON SLP-DL410 to drukarka termiczna 203 dpi do etykiet podawanych z zewnątrz. Sprawdza się przy nośnikach składanych na stanowisku wysyłki.\n\n## Podawanie materiału spoza obudowy\n\nPłaska konstrukcja pozostawia miejsce na materiał za urządzeniem. Oferowany PN SLP-DL410EK/beg ma USB, USB Host i Ethernet. Wykonuje nadruk na szerokości do 108 mm z prędkością do 127 mm/s.\n\nWybierz nośnik termoczuły i ustaw czujnik według przerwy lub czarnego znacznika. Do połączenia z komputerem potrzebujesz przewodu USB albo sieciowego. Ten PN zawiera zasilacz i europejski przewód sieciowy, lecz przewód komunikacyjny trzeba zamówić osobno. Nie jest to wersja samochodowa SLP-DL410KV.\n\n## Wybierz konfigurację i wyposażenie\n\nOferowany zestaw zawiera zasilacz i przewód sieciowy EU. Przewód komunikacyjny nie jest dołączony. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Gwarancja producenta na drukarkę wynosi 3 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40d](/produkt/bixolon-xd3-40d). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON SLP-DL410 to drukarka termiczna 203 dpi do etykiet podawanych z zewnątrz. Sprawdza się przy nośnikach składanych na stanowisku wysyłki.\n\n## Podawanie materiału spoza obudowy\n\nPłaska konstrukcja pozostawia miejsce na materiał za urządzeniem. Oferowany PN SLP-DL410EK/beg ma USB, USB Host i Ethernet. Wykonuje nadruk na szerokości do 108 mm z prędkością do 127 mm/s.\n\nWybierz nośnik termoczuły i ustaw czujnik według przerwy lub czarnego znacznika. Do połączenia z komputerem potrzebujesz przewodu USB albo sieciowego. Ten PN zawiera zasilacz i europejski przewód sieciowy, lecz przewód komunikacyjny trzeba zamówić osobno. Bez uchwytu zewnętrznego drukarka przyjmuje etykiety składane. Do etykiet z rolki potrzebny jest uchwyt zewnętrzny, np. [LES-400G](/produkt/bixolon-les-400g) na rolkę do 203 mm.\n\n## Wybierz konfigurację i wyposażenie\n\nOferowany zestaw zawiera zasilacz i przewód sieciowy EU. Przewód komunikacyjny nie jest dołączony. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Gwarancja producenta wynosi 3 lata od zakupu lub 39 miesięcy od produkcji. Gwarancja na głowicę obejmuje przebieg podany w karcie katalogowej.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD3-40d](/produkt/bixolon-xd3-40d). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -2241,7 +2257,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Prędkość druku",
-        "value": "127 mm/s; maksymalna, zależnie od PN"
+        "value": "127 mm/s"
       },
       {
         "name": "Szerokość druku",
@@ -2250,6 +2266,10 @@ export const bixolonLabelProducts: Product[] = [
       {
         "name": "Szerokość nośnika",
         "value": "Do 116 mm"
+      },
+      {
+        "name": "Rolka zewnętrzna",
+        "value": "Do 203 mm z uchwytem LES-400G; bez uchwytu etykiety składane"
       },
       {
         "name": "Interfejsy",
@@ -2265,7 +2285,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Gwarancja producenta",
-        "value": "3 lata"
+        "value": "3 lata od zakupu (lub 39 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej."
       }
     ],
     "applications": [
@@ -2323,8 +2343,8 @@ export const bixolonLabelProducts: Product[] = [
     "seoH1": "BIXOLON XL5-40CT",
     "seoTitle": "BIXOLON XL5-40CT — drukarka etykiet bez podkładu",
     "seoDescription": "BIXOLON XL5-40CT: biurkowa drukarka etykiet linerless z gilotyną. Wymaga zgodnego materiału bez podkładu. Porównaj rozdzielczości, PN i ceny.",
-    "shortDescription": "BIXOLON XL5-40CT to biurkowa drukarka termiczna do etykiet bez podkładu. Oferowane wersje CT są przeznaczone do cięcia zgodnego materiału linerless.",
-    "description": "BIXOLON XL5-40CT to biurkowa drukarka termiczna do etykiet bez podkładu. Oferowane wersje CT są przeznaczone do cięcia zgodnego materiału linerless.\n\n## Materiał linerless wymaga właściwego kleju\n\nBrak podkładu zmienia sposób prowadzenia i odcinania etykiety. Dobierz materiał do toru papieru i gilotyny tej rodziny. Nie zastępuj go dowolną samoprzylepną rolką o podobnej szerokości.\n\nRodzina obejmuje 203 i 300 dpi. Wersja 203 dpi drukuje do 152 mm/s, a 300 dpi do 127 mm/s. Maksymalna szerokość nadruku wynosi 105 mm. Czujnik odbioru etykiety pomaga sterować wydawaniem kolejnych wydruków. Bluetooth, Wi-Fi i Ethernet wybierz według PN.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem. Gwarancja producenta na drukarkę wynosi 2 lata.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "shortDescription": "BIXOLON XL5-40CT to biurkowa drukarka termiczna do etykiet bez podkładu (linerless) z gilotyną. Drukuje także na etykietach z podkładem.",
+    "description": "BIXOLON XL5-40CT to biurkowa drukarka termiczna do etykiet bez podkładu (linerless) z gilotyną. Drukuje także na etykietach z podkładem.\n\n## Materiał linerless wymaga właściwego kleju\n\nBrak podkładu zmienia sposób prowadzenia i odcinania etykiety. Dobierz materiał do toru papieru i gilotyny tej rodziny. Nie zastępuj go dowolną samoprzylepną rolką o podobnej szerokości.\n\nRodzina obejmuje 203 i 300 dpi. Wersja 203 dpi drukuje do 152 mm/s, a 300 dpi do 127 mm/s. Maksymalna szerokość nadruku wynosi 108 mm (203 dpi) lub 105,7 mm (300 dpi). Czujnik odbioru etykiety pomaga sterować wydawaniem kolejnych wydruków. Bluetooth, Wi-Fi i Ethernet wybierz według PN.\n\n## Wybierz konfigurację i wyposażenie\n\nWyposażenie oraz interfejsy są przypisane do konkretnego PN. Zestawy opisane z przewodem USB i zasilaniem nie wymagają ponownego zakupu tych elementów. Zmiana przewodu nie dodaje modułu Wi-Fi ani Bluetooth.\n\n## Połączenie ze stanowiskiem\n\n[Przewód USB BIXOLON USB-KAB-G](/produkt/bixolon-usb-kab-g) służy jako element zapasowy lub do zestawu bez przewodu. Do interfejsu RS-232 możesz dobrać [przewód SER-KAB-9-9](/produkt/bixolon-ser-kab-9-9). Połączenie wymaga portu RS-232 w wybranej wersji drukarki. [LES-400G](/produkt/bixolon-les-400g) jest opcjonalnym podajnikiem materiału z rolki umieszczonej poza drukarką. Nie jest nawijakiem.\n\n## Porównaj zastosowanie\n\nPorównaj [BIXOLON XD5-40IId](/produkt/bixolon-xd5-40iid). Wszystkie rodziny znajdziesz w kategorii [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -2339,7 +2359,7 @@ export const bixolonLabelProducts: Product[] = [
       "/images/products/bixolon-xl5-40ct-2.webp"
     ],
     "imageDescriptions": [
-      "BIXOLON XL5-40CT — widok z przodu pod kątem, wersja z LCD",
+      "BIXOLON XL5-40CT — widok z przodu pod kątem, z opcjonalnym ekranem LCD",
       "BIXOLON XL5-40CT — widok z przodu z wysuniętą etykietą",
       "BIXOLON XL5-40CT — widok z tyłu i złącza"
     ],
@@ -2352,19 +2372,19 @@ export const bixolonLabelProducts: Product[] = [
     "specifications": [
       {
         "name": "Metoda druku",
-        "value": "Termiczny bezpośredni — etykiety linerless"
+        "value": "Termiczny bezpośredni; etykiety bez podkładu (linerless) i z podkładem"
       },
       {
         "name": "Rozdzielczość",
-        "value": "203 dpi; 300 dpi"
+        "value": "203 lub 300 dpi"
       },
       {
         "name": "Prędkość druku",
-        "value": "152 mm/s; 127 mm/s; maksymalna, zależnie od PN"
+        "value": "152 mm/s (203 dpi); 127 mm/s (300 dpi)"
       },
       {
         "name": "Szerokość druku",
-        "value": "105 mm"
+        "value": "108 mm (203 dpi); 105,7 mm (300 dpi)"
       },
       {
         "name": "Szerokość nośnika",
@@ -2372,11 +2392,11 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "USB, USB Host, RS-232; USB, USB Host, RS-232, Ethernet; USB, USB Host; USB"
+        "value": "USB i USB Host; wersje OBG: USB, USB Host i RS-232; wersje E: USB, USB Host, RS-232 i Ethernet"
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Bluetooth; Brak; Wi-Fi"
+        "value": "Wersje W: Wi-Fi; wersje B: Bluetooth; pozostałe: brak"
       },
       {
         "name": "Wyświetlacz",
@@ -2385,10 +2405,6 @@ export const bixolonLabelProducts: Product[] = [
       {
         "name": "Średnica rolki",
         "value": "Do 127 mm wewnątrz drukarki"
-      },
-      {
-        "name": "Gwarancja producenta",
-        "value": "2 lata"
       }
     ],
     "applications": [
@@ -2457,13 +2473,13 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "partNumber": "XL5-40CTOWG/BEG",
-        "name": "203 dpi, USB, Wi-Fi",
+        "name": "203 dpi, USB / USB Host, Wi-Fi",
         "priceFrom": 3188.06,
         "availability": "unavailable",
         "attributes": {
           "Rozdzielczość": "203 dpi",
           "Prędkość druku": "152 mm/s",
-          "Interfejsy": "USB",
+          "Interfejsy": "USB, USB Host",
           "Łączność bezprzewodowa": "Wi-Fi"
         }
       },
@@ -2554,7 +2570,7 @@ export const bixolonLabelProducts: Product[] = [
     "faq": [
       {
         "question": "Czy XL5-40CT używa zwykłych etykiet z podkładem?",
-        "answer": "XL5-40CT w tej ofercie jest przeznaczona do zgodnych etykiet linerless. Materiał, klej i sposób cięcia trzeba dobrać do tej drukarki."
+        "answer": "Tak. XL5-40CT drukuje na etykietach bez podkładu oraz na etykietach z podkładem: z przerwą, z czarnym znacznikiem i składanych."
       },
       {
         "question": "Jak wybrać interfejs BIXOLON XL5-40CT?",
@@ -2612,7 +2628,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Prędkość druku",
-        "value": "152 mm/s; maksymalna, zależnie od PN"
+        "value": "152 mm/s"
       },
       {
         "name": "Szerokość druku",
@@ -2628,7 +2644,7 @@ export const bixolonLabelProducts: Product[] = [
       },
       {
         "name": "Łączność bezprzewodowa",
-        "value": "Bluetooth, Wi-Fi"
+        "value": "Wi-Fi i Bluetooth w tablecie; drukarka połączona z tabletem przez USB"
       },
       {
         "name": "Wyświetlacz",
@@ -2654,7 +2670,7 @@ export const bixolonLabelProducts: Product[] = [
     "variants": [
       {
         "partNumber": "XQ-840IIG/BEG",
-        "name": "203 dpi, USB / USB Host, Bluetooth / Wi-Fi, Tablet dotykowy 8 cali",
+        "name": "203 dpi, tablet Android 13 z Wi-Fi i Bluetooth, ekran dotykowy 8 cali",
         "priceFrom": 3313.96,
         "availability": "unavailable",
         "attributes": {}

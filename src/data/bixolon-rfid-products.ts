@@ -1,23 +1,23 @@
 import type { Product } from './products'
 
 const headParts = [
-  { dpi: 203, pn: 'AE04-00043A-AS', model: 'XT5-40NR', price: 1528.42 },
-  { dpi: 300, pn: 'AE04-00043B-AS', model: 'XT5-43NR', price: 2752.86 },
-  { dpi: 600, pn: 'AE04-00043C-AS', model: 'XT5-46NR', price: 3177.67 },
+  { dpi: 203, pn: 'AE04-00043A-AS', model: 'XT5-40NR', models: 'XT5-40 i XT5-40NR', price: 1528.42 },
+  { dpi: 300, pn: 'AE04-00043B-AS', model: 'XT5-43NR', models: 'XT5-43 i XT5-43NR', price: 2752.86 },
+  { dpi: 600, pn: 'AE04-00043C-AS', model: 'XT5-46NR', models: 'XT5-46 i XT5-46NR', price: 3177.67 },
 ]
 
 export const bixolonRfidAccessories: Product[] = [
   ...headParts.map<Product>(a => ({
     id: `bixolon-xt5-glowica-${a.dpi}`, slug: `bixolon-xt5-glowica-${a.dpi}`, name: `Głowica ${a.dpi} dpi BIXOLON XT5 — ${a.pn}`,
-    shortDescription: `Głowica drukująca ${a.pn} do BIXOLON ${a.model}, ${a.dpi} dpi. Część zamienna do zgodnej wersji drukarki.`,
-    description: `Głowica ${a.pn} zastępuje zużytą głowicę ${a.dpi} dpi w BIXOLON ${a.model}. Wykonuje nadruk na etykiecie. Nie dodaje funkcji RFID. Sprawna drukarka ma głowicę już zamontowaną.\n\nDobierz tę część do tej samej rozdzielczości. Nie służy do samodzielnej zmiany rozdzielczości urządzenia. Przed zakupem podaj model i numer seryjny. Odłącz zasilanie przed wymianą.\n\nPasuje do odpowiedniej wersji [BIXOLON XT5-40](/produkt/bixolon-xt5-40) oraz [XT5-40NR](/produkt/bixolon-xt5-40nr), przy tej samej rozdzielczości.`,
+    shortDescription: `Głowica drukująca ${a.pn} do BIXOLON ${a.models} (${a.dpi} dpi). Część zamienna do drukarki o tej samej rozdzielczości.`,
+    description: `Głowica ${a.pn} zastępuje zużytą głowicę ${a.dpi} dpi w BIXOLON ${a.models}. Wykonuje nadruk na etykiecie. Nie dodaje funkcji RFID. Sprawna drukarka ma głowicę już zamontowaną.\n\nDobierz tę część do tej samej rozdzielczości. Nie służy do samodzielnej zmiany rozdzielczości urządzenia. Przed zakupem podaj model i numer seryjny. Odłącz zasilanie przed wymianą.\n\nPasuje do odpowiedniej wersji [BIXOLON XT5-40](/produkt/bixolon-xt5-40) oraz [XT5-40NR](/produkt/bixolon-xt5-40nr), przy tej samej rozdzielczości.`,
     seoTitle: `Głowica BIXOLON ${a.dpi} dpi ${a.pn} | TAKMA`,
-    seoDescription: `Głowica ${a.pn}, ${a.dpi} dpi do BIXOLON ${a.model}. Sprawdź cenę, stan i zgodność części zamiennej.`,
+    seoDescription: `Głowica ${a.pn}, ${a.dpi} dpi do BIXOLON ${a.models}. Sprawdź cenę, stan i zgodność części zamiennej.`,
     categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'bixolon',
     images: ['/images/products/bixolon-xt5-glowica.webp'], imageDescriptions: [`Głowica BIXOLON XT5 ${a.dpi} dpi, PN ${a.pn} — zdjęcie poglądowe zespołu głowicy`],
     tags: ['produkcja', 'magazyn'], priceFrom: a.price, availability: 'unavailable' as const, isNew: true, isBestseller: false,
-    specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Rozdzielczość', value: `${a.dpi} dpi` }, { name: 'Zgodność', value: `BIXOLON ${a.model}, ta sama rozdzielczość` }],
-    applications: ['Wymiana zużytej głowicy drukującej'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xt5-40nr'],
+    specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Rozdzielczość', value: `${a.dpi} dpi` }, { name: 'Zgodność', value: `BIXOLON ${a.models} (${a.dpi} dpi)` }],
+    applications: ['Wymiana zużytej głowicy drukującej'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xt5-40', 'bixolon-xt5-40nr'],
     downloads: [{ name: 'Instrukcja XT5-40NR (EN)', type: 'manual' as const, url: '/downloads/bixolon-xt5-40nr-instrukcja-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
   })),
   {
@@ -101,6 +101,7 @@ Do mniejszego stanowiska porównaj [BIXOLON XD5-40tR](/produkt/bixolon-xd5-40tr)
       { name: 'Materiał', value: 'Szerokość 25–114 mm; rolka do 203 mm; gilza 38,1–76,2 mm' },
       { name: 'Taśma barwiąca', value: 'Do 450 m; gilza 25,4 mm' },
       { name: 'Pamięć', value: '512 MB SDRAM i 512 MB Flash' },
+      { name: 'Gwarancja producenta', value: '2 lata od zakupu (lub 27 miesięcy od produkcji). Głowica: limit przebiegu z karty katalogowej.' },
     ],
     compatibleAccessories: [], relatedAccessories: headParts.map(a => `bixolon-xt5-glowica-${a.dpi}`),
     applications: ['Druk i kodowanie etykiet produktowych UHF', 'Znakowanie kartonów i wyposażenia', 'Przygotowanie etykiet dla WMS i ERP'],
@@ -130,13 +131,13 @@ Przed pierwszą pracą wykonaj kalibrację. Po zmianie materiału sprawdź ustaw
 
 ## Etykiety, rolki i taśmy
 
-Drukarka obsługuje materiał o szerokości 15–118 mm. Wewnątrz mieści rolkę do 127 mm na gilzie 25,4–38,1 mm. Taśma barwiąca może mieć do 300 m. Dobierz gilzę taśmy 12,7 lub 25,4 mm do używanego nawoju.
+Drukarka obsługuje materiał o szerokości 15–118 mm. Wewnątrz mieści rolkę do 127 mm na gilzie 25,4–38,1 mm. Taśma barwiąca może mieć do 300 m na gilzie 25,4 mm albo do 74 m na gilzie 12,7 mm.
 
 Opcjonalny uchwyt LES-400G podaje materiał z rolki do 203 mm umieszczonej za drukarką. Nie jest częścią standardowego zestawu. Większa rolka nadal wymaga etykiety zgodnej z koderem i mechanizmem drukarki.
 
 ## Łączność i integracja
 
-Oferowany PN ma USB, USB Host, RS-232 i Ethernet. Nie zawiera fabrycznego Wi-Fi ani Bluetooth. Ekran LCD ułatwia ustawienia i odczyt komunikatów. Zasilacz oraz przewód zasilający są w zestawie.
+Oferowany PN ma USB, USB Host, RS-232 i Ethernet. Nie zawiera fabrycznego Wi-Fi ani Bluetooth. Ekran LCD ułatwia ustawienia i odczyt komunikatów. W zestawie są zasilacz, przewód zasilający, przewód USB, gilzy 12,7 i 25,4 mm oraz 2 uchwyty taśmy.
 
 Emulacje SLCS, BPL-Z i BPL-E służą do przygotowania nadruku. Zadanie RFID musi zawierać polecenia kodowania. Sam plik PDF ani nadruk kodu kreskowego nie zapisuje EPC. Przed integracją z WMS lub ERP sprawdź zgodność poleceń i format identyfikatora.
 
@@ -162,8 +163,8 @@ Do większych rolek i wyższej wydajności porównaj [BIXOLON XT5-40NR](/produkt
       { name: 'Panel', value: 'Ekran LCD i przyciski' },
       { name: 'Materiał', value: 'Szerokość 15–118 mm; rolka wewnętrzna do 127 mm; gilza 25,4–38,1 mm' },
       { name: 'Rolka zewnętrzna', value: 'Do 203 mm z opcjonalnym LES-400G' },
-      { name: 'Taśma barwiąca', value: 'Do 300 m; gilza 12,7 lub 25,4 mm; nawój zewnętrzny' },
-      { name: 'Zawartość zestawu', value: 'Drukarka z koderem UHF EU, zasilacz i przewód zasilający; etykiety i taśma dobierane osobno' },
+      { name: 'Taśma barwiąca', value: 'Do 300 m na gilzie 25,4 mm; do 74 m na gilzie 12,7 mm; farba na zewnątrz' },
+      { name: 'Zawartość zestawu', value: 'Drukarka z koderem UHF EU, zasilacz, przewód zasilający, przewód USB, gilzy 12,7 i 25,4 mm, 2 uchwyty taśmy; etykiety i taśma dobierane osobno' },
     ],
     compatibleAccessories: [], relatedAccessories: ['bixolon-les-400g'], applications: ['Druk i kodowanie etykiet przy stanowisku', 'Znakowanie produktów i wyposażenia', 'Przygotowanie oznaczeń dla WMS i ERP'],
     faq: [
