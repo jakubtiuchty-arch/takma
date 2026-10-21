@@ -91871,9 +91871,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Papier do biletów Epson Premium Matte 80 mm × 50 m. PN C33S045389. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-bilety-c33s045390',
     slug: 'epson-papier-do-biletow-premium-matte-102mm-50m-c33s045390',
@@ -91906,9 +91905,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Papier do biletów Epson Premium Matte 102 mm × 50 m. PN C33S045390. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045417',
     slug: 'epson-etykiety-ciagle-premium-matte-51mm-35m-c33s045417',
@@ -91942,9 +91940,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 51 mm × 35 m. PN C33S045417. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045418',
     slug: 'epson-etykiety-ciagle-premium-matte-76mm-35m-c33s045418',
@@ -91978,9 +91975,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 76 mm × 35 m. PN C33S045418. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045419',
     slug: 'epson-etykiety-ciagle-premium-matte-102mm-35m-c33s045419',
@@ -92014,9 +92010,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 102 mm × 35 m. PN C33S045419. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045727',
     slug: 'epson-etykiety-ciagle-premium-matte-105mm-35m-c33s045727',
@@ -92050,9 +92045,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 105 mm × 35 m. PN C33S045727. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045531',
     slug: 'epson-etykiety-premium-matte-102x51mm-650szt-c33s045531',
@@ -92087,9 +92081,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 51 mm, 650 szt.. PN C33S045531. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045532',
     slug: 'epson-etykiety-premium-matte-102x76mm-440szt-c33s045532',
@@ -92124,9 +92117,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 76 mm, 440 szt.. PN C33S045532. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045533',
     slug: 'epson-etykiety-premium-matte-102x152mm-225szt-c33s045533',
@@ -92161,9 +92153,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 152 mm, 225 szt.. PN C33S045533. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045534',
     slug: 'epson-etykiety-premium-matte-76x51mm-650szt-c33s045534',
@@ -92198,9 +92189,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 76 × 51 mm, 650 szt.. PN C33S045534. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045535',
     slug: 'epson-etykiety-premium-matte-76x127mm-265szt-c33s045535',
@@ -92235,9 +92225,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 76 × 127 mm, 265 szt.. PN C33S045535. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045536',
     slug: 'epson-etykiety-ciagle-high-gloss-51mm-33m-c33s045536',
@@ -92271,9 +92260,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson High Gloss 51 mm × 33 m. PN C33S045536. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045537',
     slug: 'epson-etykiety-ciagle-high-gloss-76mm-33m-c33s045537',
@@ -92307,9 +92295,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson High Gloss 76 mm × 33 m. PN C33S045537. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045538',
     slug: 'epson-etykiety-ciagle-high-gloss-102mm-33m-c33s045538',
@@ -92343,9 +92330,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson High Gloss 102 mm × 33 m. PN C33S045538. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045539',
     slug: 'epson-etykiety-high-gloss-102x51mm-610szt-c33s045539',
@@ -92380,9 +92366,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson High Gloss 102 × 51 mm, 610 szt.. PN C33S045539. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045540',
     slug: 'epson-etykiety-high-gloss-102x76mm-415szt-c33s045540',
@@ -92417,9 +92402,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson High Gloss 102 × 76 mm, 415 szt.. PN C33S045540. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045541',
     slug: 'epson-etykiety-high-gloss-102x152mm-210szt-c33s045541',
@@ -92454,9 +92438,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson High Gloss 102 × 152 mm, 210 szt.. PN C33S045541. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045542',
     slug: 'epson-etykiety-high-gloss-76x51mm-610szt-c33s045542',
@@ -92491,9 +92474,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson High Gloss 76 × 51 mm, 610 szt.. PN C33S045542. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045543',
     slug: 'epson-etykiety-high-gloss-76x127mm-250szt-c33s045543',
@@ -92528,9 +92510,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson High Gloss 76 × 127 mm, 250 szt.. PN C33S045543. Do C3500, C4000.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic22p-k',
     slug: 'epson-tusz-sjic22p-k-czarny-c33s020601',
@@ -92562,9 +92543,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC22P(K) czarny do ColorWorks C3500. PN C33S020601. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic22p-c',
     slug: 'epson-tusz-sjic22p-c-cyan-c33s020602',
@@ -92596,9 +92576,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC22P(C) cyan (błękitny) do ColorWorks C3500. PN C33S020602. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic22p-m',
     slug: 'epson-tusz-sjic22p-m-magenta-c33s020603',
@@ -92630,9 +92609,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC22P(M) magenta (purpurowy) do ColorWorks C3500. PN C33S020603. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic22p-y',
     slug: 'epson-tusz-sjic22p-y-zolty-c33s020604',
@@ -92664,9 +92642,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC22P(Y) żółty do ColorWorks C3500. PN C33S020604. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjmb3500',
     slug: 'epson-pojemnik-konserwacyjny-sjmb3500-c33s020580',
@@ -92696,9 +92673,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Pojemnik konserwacyjny Epson SJMB3500 do ColorWorks C3500. PN C33S020580. Do C3500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-colorworks-d3800e',
     slug: 'epson-colorworks-d3800e',
@@ -92929,9 +92905,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC57P-BK czarny do ColorWorks D3800e. PN C13T58J140. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic57p-c',
     slug: 'epson-tusz-sjic57p-c-cyan-c13t58j240',
@@ -92964,9 +92939,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC57P-C cyan (błękitny) do ColorWorks D3800e. PN C13T58J240. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic57p-m',
     slug: 'epson-tusz-sjic57p-m-magenta-c13t58j340',
@@ -92999,9 +92973,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC57P-M magenta (purpurowy) do ColorWorks D3800e. PN C13T58J340. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic57p-y',
     slug: 'epson-tusz-sjic57p-y-zolty-c13t58j440',
@@ -93034,9 +93007,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC57P-Y żółty do ColorWorks D3800e. PN C13T58J440. Do D3800e.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjmb4000',
     slug: 'epson-pojemnik-konserwacyjny-sjmb4000-c33s021601',
@@ -93066,9 +93038,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Pojemnik konserwacyjny Epson SJMB4000 do ColorWorks D3800e i C4000e. PN C33S021601. Do D3800e, C4000e.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-colorworks-c4000e',
     slug: 'epson-colorworks-c4000e',
@@ -93335,9 +93306,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC42P-BK czarny (Black) do ColorWorks C4000e. PN C13T52M140. Do C4000e (wersja bk).",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic42p-mk',
     slug: 'epson-tusz-sjic42p-mk-czarny-matowy-c13t52m540',
@@ -93369,9 +93339,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC42P-MK czarny matowy (Matte Black) do ColorWorks C4000e. PN C13T52M540. Do C4000e (wersja mk).",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic42p-c',
     slug: 'epson-tusz-sjic42p-c-cyan-c13t52m240',
@@ -93403,9 +93372,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC42P-C cyan (błękitny) do ColorWorks C4000e. PN C13T52M240. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic42p-m',
     slug: 'epson-tusz-sjic42p-m-magenta-c13t52m340',
@@ -93437,9 +93405,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC42P-M magenta (purpurowy) do ColorWorks C4000e. PN C13T52M340. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic42p-y',
     slug: 'epson-tusz-sjic42p-y-zolty-c13t52m440',
@@ -93471,9 +93438,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC42P-Y żółty do ColorWorks C4000e. PN C13T52M440. Do C4000e (wersje bk i mk).",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-colorworks-c6000',
     slug: 'epson-colorworks-c6000',
@@ -93737,9 +93703,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC36P(K) czarny do ColorWorks C6000 i C6500. PN C13T44C140. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic36p-c',
     slug: 'epson-tusz-sjic36p-c-cyan-c13t44c240',
@@ -93772,9 +93737,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC36P(C) cyan (błękitny) do ColorWorks C6000 i C6500. PN C13T44C240. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic36p-m',
     slug: 'epson-tusz-sjic36p-m-magenta-c13t44c340',
@@ -93807,9 +93771,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC36P(M) magenta (purpurowy) do ColorWorks C6000 i C6500. PN C13T44C340. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic36p-y',
     slug: 'epson-tusz-sjic36p-y-zolty-c13t44c440',
@@ -93842,9 +93805,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC36P(Y) żółty do ColorWorks C6000 i C6500. PN C13T44C440. Do C6000 (Ae i Pe), C6500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjmb6000',
     slug: 'epson-pojemnik-konserwacyjny-sjmb6000-c33s021501',
@@ -93874,9 +93836,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Pojemnik konserwacyjny Epson SJMB6000 do ColorWorks C6000 i C6500. PN C33S021501. Do C6000, C6500.",
     downloads: [],
     createdAt: '2026-09-19',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045722',
     slug: 'epson-etykiety-premium-matte-102x51mm-2310szt-c33s045722',
@@ -93911,9 +93872,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 51 mm, 2310 szt.. PN C33S045722. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045723',
     slug: 'epson-etykiety-premium-matte-102x76mm-1570szt-c33s045723',
@@ -93948,9 +93908,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 76 mm, 1570 szt.. PN C33S045723. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045724',
     slug: 'epson-etykiety-premium-matte-102x152mm-800szt-c33s045724',
@@ -93985,9 +93944,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 102 × 152 mm, 800 szt.. PN C33S045724. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045725',
     slug: 'epson-etykiety-premium-matte-76x51mm-2310szt-c33s045725',
@@ -94022,9 +93980,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 76 × 51 mm, 2310 szt.. PN C33S045725. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045726',
     slug: 'epson-etykiety-premium-matte-76x127mm-960szt-c33s045726',
@@ -94059,9 +94016,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 76 × 127 mm, 960 szt.. PN C33S045726. Do C6000Ae i C6000Pe, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045740',
     slug: 'epson-etykiety-premium-matte-105x210mm-282szt-c33s045740',
@@ -94096,9 +94052,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 105 × 210 mm, 282 szt.. PN C33S045740. Do C6000Ae i C6000Pe, C6500, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045741',
     slug: 'epson-etykiety-ciagle-premium-matte-102mm-60m-c33s045741',
@@ -94132,9 +94087,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 102 mm × 60 m. PN C33S045741. Do C6000Ae (wersja z gilotyną), C6500Ae, C7500, C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-colorworks-c6500',
     slug: 'epson-colorworks-c6500',
@@ -94401,9 +94355,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC36P(MK) czarny matowy do ColorWorks C6000 i C6500. PN C13T44C540. Do C6000 i C6500 w wersji mk (Ae i Pe).",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045736',
     slug: 'epson-etykiety-ciagle-bopp-high-gloss-203mm-68m-c33s045736',
@@ -94437,9 +94390,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson BOPP High Gloss 203 mm × 68 m. PN C33S045736. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045737',
     slug: 'epson-etykiety-ciagle-bopp-satin-gloss-203mm-68m-c33s045737',
@@ -94473,9 +94425,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson BOPP Satin Gloss 203 mm × 68 m. PN C33S045737. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045738',
     slug: 'epson-etykiety-premium-matte-210x297mm-200szt-c33s045738',
@@ -94510,9 +94461,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety Epson Premium Matte 210 × 297 mm, 200 szt.. PN C33S045738. Do C6500 (Ae i Pe).",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-etykiety-c33s045739',
     slug: 'epson-etykiety-ciagle-premium-matte-203mm-60m-c33s045739',
@@ -94546,9 +94496,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Etykiety ciągłe Epson Premium Matte 203 mm × 60 m. PN C33S045739. Do C6500Ae (wersja z gilotyną).",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-colorworks-c8000e',
     slug: 'epson-colorworks-c8000e',
@@ -94807,9 +94756,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC48P-BK czarny (Black) do ColorWorks C8000e. PN C13T55P140. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic48p-mk',
     slug: 'epson-tusz-sjic48p-mk-czarny-matowy-c13t55p540',
@@ -94843,9 +94791,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC48P-MK czarny matowy (Matte Black) do ColorWorks C8000e. PN C13T55P540. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic48p-c',
     slug: 'epson-tusz-sjic48p-c-cyan-c13t55p240',
@@ -94879,9 +94826,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC48P-C cyan (błękitny) do ColorWorks C8000e. PN C13T55P240. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic48p-m',
     slug: 'epson-tusz-sjic48p-m-magenta-c13t55p340',
@@ -94915,9 +94861,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC48P-M magenta (purpurowy) do ColorWorks C8000e. PN C13T55P340. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjic48p-y',
     slug: 'epson-tusz-sjic48p-y-zolty-c13t55p440',
@@ -94951,9 +94896,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Tusz Epson SJIC48P-Y żółty do ColorWorks C8000e. PN C13T55P440. Do C8000e.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
   {
     id: 'epson-sjmb7500',
     slug: 'epson-pojemnik-konserwacyjny-sjmb7500-c33s020596',
@@ -94984,9 +94928,8 @@ const epsonColorWorks: Product[] = [
     seoDescription: "Pojemnik konserwacyjny Epson SJMB7500 do ColorWorks C7500 i C8000e. PN C33S020596. Do C8000e, C7500, C7500G.",
     downloads: [],
     createdAt: '2026-09-20',
-  
-"updatedAt": "2026-10-21",
-},
+    updatedAt: '2026-10-21',
+  },
 ]
 
 // ── Nawijarki i odwijaki zewnętrzne Labelmate (BlueStar, PN LMRxxx) ───────────
