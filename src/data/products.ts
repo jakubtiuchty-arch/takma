@@ -1,3 +1,4 @@
+import { bixolonMobileProducts, bixolonMobileAccessories } from './bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from './bixolon-label-products'
 import { counterScannerProducts, counterScannerAccessories } from './counter-scanner-products'
 import { datalogicMagellanProducts, datalogicMagellanAccessories } from './datalogic-magellan-products'
@@ -410,7 +411,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, idealne do etykiet wysyłkowych i paragonów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — nie wymagają taśmy barwiącej, obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
-    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('termiczne-drukarki-etykiet')).map(p => p.id), 'tsc-alpha-40l-rfid',
+    productIds: [...bixolonMobileProducts.map(p => p.id), ...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('termiczne-drukarki-etykiet')).map(p => p.id), 'tsc-alpha-40l-rfid',
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
       'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
@@ -430,8 +431,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Mobilne drukarki etykiet Zebra — przenośne, bezprzewodowe drukowanie etykiet i kodów kreskowych w terenie. Bluetooth, Wi-Fi, IP54, bateria na cały dzień pracy. Idealne do magazynu, logistyki i dostaw.',
     longDescription: 'Mobilne drukarki etykiet (ang. mobile/portable label printers) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe, zasilane bateryjnie urządzenia do drukowania etykiet bezpośrednio w terenie: na magazynie, w dostawie, przy inwentaryzacji czy na linii produkcyjnej. Łączą się bezprzewodowo przez Bluetooth i Wi-Fi z terminalami mobilnymi, smartfonami i tabletami. Klasa ochrony IP54/IP65 i odporność na upadki z 1,5–2,1 m gwarantują niezawodną pracę w wymagających warunkach. Druk termiczny bezpośredni eliminuje potrzebę taśmy barwiącej, co upraszcza obsługę w terenie.',
     icon: 'printer',
-    productIds: ['tsc-alpha-40l-rfid', 'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
-    productCount: 19,
+    productIds: [...bixolonMobileProducts.map(p => p.id), 'tsc-alpha-40l-rfid', 'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
+    productCount: 25,
   },
   rfidPrinterCategory,
   rfidTerminalCategory,
@@ -460,7 +461,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Głowice 203/300/600 dpi, gilotyny, odklejaki i moduły Wi-Fi do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen. Ponad 200 części, ceny netto B2B.',
     longDescription: 'Oryginalne części zamienne i rozszerzenia do drukarek etykiet Zebra, Honeywell, Brother, TSC i Citizen: od biurkowych ZD220, ZD421 i ZD621 po przemysłowe ZT411, ZT610, Honeywell PM45 i PX940, TSC serii MH i Citizen CL-S. W katalogu są głowice drukujące 203, 300 i 600 dpi, wałki dociskowe, gilotyny, odklejaki, nawijaki, moduły Wi-Fi, Ethernet i RS-232, zasilacze, baterie do drukarek mobilnych i moduły RFID. Wszystkie części pochodzą od producentów drukarek, więc pasują bez przeróbek i nie odbierają gwarancji na drukarkę. Numer części różni się nawet między wariantami tej samej serii (ZD621d i ZD621t mają inne głowice), dlatego filtr „Do drukarki” po lewej zawęża listę do jednej serii. Jeśli nie wiesz, którą część zamówić, napisz do nas z modelem i numerem seryjnym drukarki, dobierzemy właściwą.',
     icon: 'settings',
-    productIds: [...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
+    productIds: [...bixolonMobileAccessories.map(p => p.id), ...bixolonLabelAccessories.map(p => p.id), ...bixolonRfidAccessories.map(a => a.id), ...honeywellPx45RfidAccessories.map(a => a.id), ...satoCl6nxPlusRfidAccessories.map(a => a.id), ...satoCl4nxPlusRfidAccessories.map(a => a.id), ...satoCl6SxrRfidAccessories.map(a => a.id), ...satoCl4SxrRfidAccessories.map(a => a.id), ...satoCt4RfidAccessories.map(a => a.id), ...tscThRfidAccessories.map(a => a.id), ...tscAlpha40lRfidAccessories.map(a => a.id), 'printronix-t6006e-head-203-rfid', 'printronix-t6006e-head-300-rfid', 'printronix-t6000e-wifi', 'printronix-t6000e-head-203-rfid', 'printronix-t6000e-head-300-rfid', 'printronix-t6000e-head-600-rfid', 'tsc-printhead-mb341t-300', 'brother-tj-wifi', 'brother-td4t-roll-holder',
       ...zq630RfidAdditionalAccessories.map(a => a.id),
       ...zq521RfidAdditionalAccessories.map(a => a.id),
       ...zd611rAdditionalAccessories.map(accessory => accessory.id),
@@ -95425,6 +95426,8 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...bixolonMobileProducts,
+  ...bixolonMobileAccessories,
   ...bixolonLabelProducts,
   ...bixolonLabelAccessories,
   ...bixolonRfidAccessories,
@@ -95955,10 +95958,10 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "bixolon",
   "categoryId": "drukarki-etykiet",
   "name": "Drukarki etykiet BIXOLON",
-  "seoTitle": "Drukarki etykiet BIXOLON — biurkowe i przemysłowe",
-  "seoDescription": "Drukarki etykiet BIXOLON: termiczne i termotransferowe XD3, XD5, XT3, XT5, SLP oraz linerless XL5. Porównaj PN, ceny, dostępność i zgodne akcesoria.",
-  "longDescription": "Drukarki etykiet BIXOLON do wysyłek, oznaczania produktów i pracy na produkcji. Porównaj modele biurkowe i przemysłowe, druk termiczny, termotransferowy oraz linerless.",
-  "detailedDescription": "Do etykiet termoczułych bez taśmy wybierz [XD3-40d](/produkt/bixolon-xd3-40d) lub nowszą [XD5-40IId](/produkt/bixolon-xd5-40iid). Jeśli materiał wymaga taśmy barwiącej, porównaj [XD3-40t](/produkt/bixolon-xd3-40t) i [XD5-40IIt](/produkt/bixolon-xd5-40iit). Pierwsza generacja XD5 i generacja II mają osobne konfiguracje PN.\n\nDo większych rolek i taśm 450 m służą przemysłowe [XT3-40](/produkt/bixolon-xt3-40) i [XT5-40](/produkt/bixolon-xt5-40). XT5 oferuje także wariant 600 dpi. Dla wąskich etykiet porównaj termiczną [SLP-DX220](/produkt/bixolon-slp-dx220) i termotransferową [SLP-TX220](/produkt/bixolon-slp-tx220).\n\n[SLP-DL410](/produkt/bixolon-slp-dl410) podaje etykiety z zewnątrz obudowy. [XL5-40CT](/produkt/bixolon-xl5-40ct) wymaga zgodnego materiału bez podkładu. [XQ-840II](/produkt/bixolon-xq-840ii) ma tablet z Androidem i potrzebuje skonfigurowanej aplikacji. Te rodzaje stanowisk mają inne wymagania dotyczące materiału i oprogramowania.\n\nDo kodowania znaczników UHF przejdź do [XD5-40tR](/produkt/bixolon-xd5-40tr) lub [XT5-40NR](/produkt/bixolon-xt5-40nr). Standardowe konfiguracje bez kodera nie kodują RFID. Porównaj również całą kategorię [drukarek RFID](/drukarki-rfid).",
+  "seoTitle": "Drukarki etykiet BIXOLON — biurkowe, przemysłowe i mobilne",
+  "seoDescription": "Drukarki etykiet BIXOLON: biurkowe XD3 i XD5, przemysłowe XT3 i XT5 oraz mobilne XM7 i SPP-L. Porównaj PN, ceny, dostępność i zgodne akcesoria.",
+  "longDescription": "Drukarki etykiet BIXOLON do wysyłek, oznaczania produktów i pracy na produkcji. Porównaj modele biurkowe, przemysłowe i mobilne, druk termiczny, termotransferowy oraz linerless.",
+  "detailedDescription": "Do etykiet termoczułych bez taśmy wybierz [XD3-40d](/produkt/bixolon-xd3-40d) lub nowszą [XD5-40IId](/produkt/bixolon-xd5-40iid). Jeśli materiał wymaga taśmy barwiącej, porównaj [XD3-40t](/produkt/bixolon-xd3-40t) i [XD5-40IIt](/produkt/bixolon-xd5-40iit). Pierwsza generacja XD5 i generacja II mają osobne konfiguracje PN.\n\nDo większych rolek i taśm 450 m służą przemysłowe [XT3-40](/produkt/bixolon-xt3-40) i [XT5-40](/produkt/bixolon-xt5-40). XT5 oferuje także wariant 600 dpi. Dla wąskich etykiet porównaj termiczną [SLP-DX220](/produkt/bixolon-slp-dx220) i termotransferową [SLP-TX220](/produkt/bixolon-slp-tx220).\n\n[SLP-DL410](/produkt/bixolon-slp-dl410) podaje etykiety z zewnątrz obudowy. [XL5-40CT](/produkt/bixolon-xl5-40ct) wymaga zgodnego materiału bez podkładu. [XQ-840II](/produkt/bixolon-xq-840ii) ma tablet z Androidem i potrzebuje skonfigurowanej aplikacji. Te rodzaje stanowisk mają inne wymagania dotyczące materiału i oprogramowania.\n\nDo etykietowania przy towarze wybierz format mobilny: [XM7-20](/produkt/bixolon-xm7-20) drukuje do 48 mm, [XM7-30](/produkt/bixolon-xm7-30) do 72 mm, a [XM7-40](/produkt/bixolon-xm7-40) do 104 mm. [SPP-L310](/produkt/bixolon-spp-l310) ma małą obudowę i rolkę do 49 mm. [SPP-L3000](/produkt/bixolon-spp-l3000) mieści rolkę do 66 mm, a [SPP-L410](/produkt/bixolon-spp-l410) obsługuje szeroki nadruk do 104 mm. Bluetooth, Wi-Fi i obsługa linerless zależą od PN.\n\nDo kodowania znaczników UHF przejdź do [XD5-40tR](/produkt/bixolon-xd5-40tr) lub [XT5-40NR](/produkt/bixolon-xt5-40nr). Standardowe konfiguracje bez kodera nie kodują RFID. Porównaj również całą kategorię [drukarek RFID](/drukarki-rfid).",
   "faq": [
     {
       "question": "Czym różnią się drukarki BIXOLON z końcówką d i t?",

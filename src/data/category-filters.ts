@@ -1661,7 +1661,7 @@ export const filtrCenaKatalogu: FilterDefinition = {
 }
 
 // BIXOLON label printers use the same filter controls and taxonomy as other brands.
-for (const page of ['drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'biurkowe-drukarki-etykiet', 'przemyslowe-drukarki-etykiet', 'akcesoria-do-drukarek-etykiet']) {
+for (const page of ['drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'biurkowe-drukarki-etykiet', 'przemyslowe-drukarki-etykiet', 'mobilne-drukarki-etykiet', 'akcesoria-do-drukarek-etykiet']) {
   const producer = categoryFilters[page]?.find(filter => filter.specKey === 'producent')
   if (producer?.derived && !producer.derived.some(option => option.manufacturer === 'bixolon')) {
     producer.derived.push({ value: 'BIXOLON', manufacturer: 'bixolon' })
@@ -1670,6 +1670,8 @@ for (const page of ['drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotran
     if (!filter.derived || !['rodzaj', 'klasa'].includes(filter.specKey)) continue
     const desktop = filter.derived.find(option => option.value === 'Biurkowa')
     const industrial = filter.derived.find(option => option.value === 'Przemysłowa')
+    const mobile = filter.derived.find(option => option.value.startsWith('Mobilna'))
+    if (mobile) filter.derived.push({ value: mobile.value, slugs: ['bixolon-xm7-20', 'bixolon-xm7-30', 'bixolon-xm7-40', 'bixolon-spp-l310', 'bixolon-spp-l410', 'bixolon-spp-l3000'] })
     if (desktop) filter.derived.push({ value: desktop.value, slugs: ['bixolon-xd3-40d', 'bixolon-xd3-40t', 'bixolon-xd5-40d', 'bixolon-xd5-40t', 'bixolon-xd5-40iid', 'bixolon-xd5-40iit', 'bixolon-slp-dx220', 'bixolon-slp-tx220', 'bixolon-slp-dl410', 'bixolon-xl5-40ct', 'bixolon-xq-840ii', 'bixolon-xd5-40tr'] })
     if (industrial) filter.derived.push({ value: industrial.value, slugs: ['bixolon-xt3-40', 'bixolon-xt5-40', 'bixolon-xt5-40nr'] })
   }
