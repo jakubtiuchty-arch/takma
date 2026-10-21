@@ -9,6 +9,7 @@ import type { StockInfo } from '@/lib/ingram'
  *  - obliczenia „od X zł" w nagłówku serii ORAZ lowPrice w schemacie Product/AggregateOffer.
  *
  * Zwraca obiekty zgodne ze StockInfo, więc można je wprost wstrzyknąć do mapy stocku w tabeli.
+ * Bez ceny zakupu: wynik trafia do HTML strony serii (props komponentu klienta).
  */
 export async function getSeriesStock(partNumbers: string[]): Promise<StockInfo[]> {
   if (!partNumbers.length) return []
@@ -16,7 +17,7 @@ export async function getSeriesStock(partNumbers: string[]): Promise<StockInfo[]
     const rows = await prisma.stockCache.findMany({
       where: { partNumber: { in: partNumbers } },
       select: {
-        partNumber: true, found: true, price: true, priceBrutto: true, ingramPrice: true,
+        partNumber: true, found: true, price: true, priceBrutto: true,
         stockPL: true, stockDE: true, inDelivery: true, totalStock: true,
         availability: true, deliveryText: true, lastSync: true,
       },
@@ -26,7 +27,6 @@ export async function getSeriesStock(partNumbers: string[]): Promise<StockInfo[]
       found: r.found,
       price: r.price ?? undefined,
       priceBrutto: r.priceBrutto ?? undefined,
-      ingramPrice: r.ingramPrice ?? undefined,
       stockPL: r.stockPL,
       stockDE: r.stockDE,
       inDelivery: r.inDelivery,
