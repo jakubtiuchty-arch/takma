@@ -1,10 +1,12 @@
 'use client'
 
+import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import RFQDrawer from '@/components/rfq/RFQDrawer'
 import CookieConsent from '@/components/layout/CookieConsent'
+import { nasluchujBledowKlienta } from '@/lib/client-error-report'
 
 /**
  * `after` renderuje się WEWNĄTRZ <body>, na jego końcu. To nie kosmetyka:
@@ -23,6 +25,8 @@ export default function LayoutShell({
   const isAdmin = pathname.startsWith('/admin')
   const isPanel = pathname.startsWith('/panel')
   const showChrome = !isAdmin && !isPanel
+
+  useEffect(() => nasluchujBledowKlienta(), [])
 
   return (
     <body className={showChrome ? 'min-h-screen flex flex-col' : 'min-h-screen'}>
