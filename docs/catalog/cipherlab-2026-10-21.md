@@ -173,3 +173,17 @@ Po kontroli dużej galerii wykonano poprawę jakości w Imagen na oryginalnym zd
 - SE4770: standardowy zakres, celownik laserowy — https://www.zebra.com/content/dam/zebra_dam/en/guide/portfolio/oem-guide-at-a-glance-en-us.pdf
 - SE5500: Advanced Range; SE4750 SR/MR: Standard/Middle Range — https://www.cipherlab.com/files/RK26_Brochure_ALL_EN.PDF
 - SE5800: Extended Range — https://www.cipherlab.com/en/product-285380/Wi-Fi-7-Industrial-Mobile-Computer-RK96-Series.html
+
+## Poprawki po audycie 21.10.2026 (gałąź fix/cipherlab-audyt)
+
+Źródła faktów dopisanych do kart (nie w treści dla klienta):
+- Karty katalogowe producenta w `public/datasheets/cipherlab-{rs20,rs36,rs38,rs38h,rk26,rk96,rk96-cold-storage}.pdf`: Android RS38/RS38H „Android 13 (GMS) upgradable to Android 18”; RS36 „Android 12 or 14 (GMS), Upgradeable to Android 14 / 16”, „the successor to the RS35”, WLAN 802.11ax „(WI-FI 6 model only)”, uchwyt i czytnik UHF „work with standard battery only”, masa 288 g; gwarancja RS20/RS36/RS38/RS38H/RK26 „1-year standard warranty”, RK96 i Cold Storage „Warranty 3 year(s)”; temperatury pracy, odporność na upadki, ładowanie RS38 (przypis 1: ok. 2 h, QC 4.0 / PD 3.0, min. 27 W); OCR (Pic 'n Fill w RS20, RS38H, RK96; „OCR” w RS36, RS38, RK26); RS38H „over 24 cleaning agents”, UV-C, przycisk SOS, „SE4720's Green LED aimer”; RK26 „25-key (2 function keys) and 28-key (4 function keys)”, „MU-MIMO 2x2 (WI-FI 6 model only)”; RK96 „Upgrade from legacy RK95 series”, 802.11r/k/v, WPA2, 802.1x, 538,2 g, upadki 1,8 m / 2,4 m; RK96 Cold Storage „Min. 5 working hours at -30°C … pre-heat enabled”, „1.5 m … down to -30°C”, przypis 3 „Compatible with RK95 Series accessories, except for the new development”.
+- Jarltech (21.10.2026): https://jarltech.com/en/cipherlab-rk26-series , https://jarltech.com/en/cipherlab-rk96-series — gwarancja RK96 36 mies., zasilacz zamawiany osobno do RK96, wyposażenie ARK254SBNNE01, ARK25CCCNU201, ARK25PSTNNN01, ARK954SBNNE01, ARK95CCCNU201, ARK95MSCNNE01, XRK9500X01584, XRS3500X01504 („RS35, RS36, RS38, RK96”), X970000X01504 („… (with gun)”).
+- ERS (21.10.2026): https://www.ers-online.co.uk/RS36/accessories/all , https://www.ers-online.co.uk/RS38/accessories/all , https://www.ers-online.co.uk/AK96N5F65XSG1/accessories — ARS36CCCNUE01, ARS365CBNNE01, ARS35PSTNNN01 („Detachable Pistol Grip for RS35/RS36”), ARS35SNPNUN01 („Snap-On USB Client Cable”), PRS3500X01511 („Protective Rubber Boot”), ARS38CHCNNE01 („Single Slot Charging Cradle”), ARS38PSTNNN11, BAERSTR100003, X970000X01504.
+- Ceny „od” w tabeli modeli, `priceFrom` RK26 i `llms.txt`: `/api/stock` na produkcji, synchronizacja 21.10.2026 12:40 UTC.
+
+Decyzje i wyłączenia:
+- RK96 Cold Storage: usunięto z akcesoriów kaburę X970000X01504 (terminal z uchwytem) i pasek XRS3500X01504; dodano stację ARK95CCCNU201 (zgodność z akcesoriami RK95). Z galerii usunięto `cipherlab-rk96-cold-storage-3.webp` (wersja z uchwytem; oferowany AK96N5F53NSGC jest bez uchwytu). Plik pozostał w `public/`.
+- RS20: kolejność zdjęć bez zmian. `cipherlab-rs20-1.webp` (800 px) pokazuje sam przód, `cipherlab-rs20-front.webp` (1600 px) przód i tył; opisy dopasowano do plików.
+- Do potwierdzenia u dostawcy, bez zmian w danych: Wi-Fi 5 / 6 w RK26 AK266M4DFNG41 i AK26EM4DNEG41; pasek w zestawie ARS20RBNNNN02 (zdjęcie pokazuje samą osłonę).
+- Zdjęcie przodu RK96 z uchwytem: niepobrane (wymaga zgody na pobranie pliku). Kandydaci na stronie producenta: https://cdn.cipherlab.com/comm/upimage/p-251031-06412.webp , p-251015-06055.jpg, p-251015-06056.jpg.
