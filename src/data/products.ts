@@ -437,7 +437,7 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'drukarki-etykiet',
     description: 'Drukarki direct thermal — druk bez taśmy, niższe koszty eksploatacji',
     seoTitle: 'Termiczne drukarki etykiet | Termiczna bez taśmy barwiącej',
-    seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, idealne do etykiet wysyłkowych i paragonów. Zebra, Honeywell, TSC.',
+    seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, do etykiet wysyłkowych, cenówek i biletów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — nie wymagają taśmy barwiącej, obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
     productIds: [...bixolonMobileProducts.map(p => p.id), ...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('termiczne-drukarki-etykiet')).map(p => p.id), 'tsc-alpha-40l-rfid',
@@ -5187,7 +5187,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
     shortDescription: 'Brother TD-2020A — kompaktowa drukarka etykiet termiczna 2 cale, 203 dpi, 152,4 mm/s, USB, emulacja ZPL II, P-touch Editor w zestawie',
     seoTitle: 'Brother TD-2020A — najtańsza drukarka etykiet 2" | od 461 zł',
     seoDescription: 'Brother TD-2020A — najtańsza drukarka etykiet 2", 203 dpi, 152 mm/s. Emulacja ZPL II, P-touch Editor gratis. Cenówki, kody, paragony. Od 461 zł netto. TAKMA.',
-    description: `Dla kogo? Brother TD-2020A to mała, tania drukarka etykiet 2 cale — drukarka do cenówek, metek cenowych, kodów kreskowych i paragonów. Zaprojektowana jako drukarka POS dla punktów sprzedaży, kas fiskalnych, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet przy minimalnym zajmowaniu miejsca na biurku. Sprawdź wszystkie [biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet) w ofercie TAKMA.
+    description: `Dla kogo? Brother TD-2020A to mała, tania drukarka etykiet 2 cale — drukarka do cenówek, metek cenowych, kodów kreskowych i paragonów. Zaprojektowana jako drukarka POS dla punktów sprzedaży, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet przy minimalnym zajmowaniu miejsca na biurku. Sprawdź wszystkie [biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet) w ofercie TAKMA.
 
 Brother TD-2020A to model bazowy serii TD-2000 — drukarka termiczna bezpośrednia (direct thermal) o rozdzielczości 203 dpi i prędkości druku do 152,4 mm/s (6 ips). Drukuje etykiety i paragony o szerokości do 63 mm (druk do 56 mm). Kompaktowe wymiary (110 × 215 × 172 mm) i waga zaledwie 1,32 kg sprawiają, że drukarka metek cenowych Brother TD-2020A zajmuje minimalną przestrzeń na stanowisku pracy. Drukarka jest zasilana z sieci (zasilacz 100–240V w zestawie) — nie wymaga baterii.
 
@@ -5300,7 +5300,7 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
       },
       {
         question: 'Czy Brother TD-2020A może drukować paragony?',
-        answer: 'Tak. Brother TD-2020A obsługuje druk ciągły na rolkach papieru termicznego, co umożliwia drukowanie paragonów, pokwitowań i potwierdzeń transakcji. Maksymalna szerokość papieru to 63 mm, a długość wydruku do 1 000 mm. Drukarka współpracuje z systemami POS (Point of Sale) przez USB. Prędkość druku 152,4 mm/s zapewnia szybkie wydawanie paragonów bez opóźnień na kasie.',
+        answer: 'Tak. Brother TD-2020A obsługuje druk ciągły na rolkach papieru termicznego, co umożliwia drukowanie paragonów, pokwitowań i potwierdzeń transakcji. Maksymalna szerokość papieru to 63 mm, a długość wydruku do 1 000 mm. Drukarka współpracuje z systemami POS (Point of Sale) przez USB. Prędkość druku 152,4 mm/s zapewnia szybkie wydawanie paragonów bez opóźnień na kasie. Do paragonów 58 i 80 mm z gilotyną służą [drukarki POS](/drukarki-pos).',
       },
       {
         question: 'Czy Brother TD-2020A ma Wi-Fi lub Bluetooth?',

@@ -539,7 +539,7 @@ Wpływ na głowicę: druk termiczny bezpośredni szybciej zużywa głowicę niż
       },
       {
         question: 'Do czego najlepiej nadaje się drukarka termiczna?',
-        answer: 'Drukarki termiczne są najlepsze do etykiet o krótkim cyklu życia: wysyłkowe i kurierskie (InPost, DPD, DHL), adresowe, paragony i rachunki, bilety, cenówki, tymczasowe oznaczenia magazynowe, etykiety pacjentów w przychodniach oraz etykiety spożywcze z krótkim terminem przydatności.',
+        answer: 'Drukarki termiczne są najlepsze do etykiet o krótkim cyklu życia: wysyłkowe i kurierskie (InPost, DPD, DHL), adresowe, paragony i rachunki (do paragonów służą [drukarki POS](/drukarki-pos)), bilety, cenówki, tymczasowe oznaczenia magazynowe, etykiety pacjentów w przychodniach oraz etykiety spożywcze z krótkim terminem przydatności.',
       },
       {
         question: 'Jaka drukarka termiczna do etykiet kurierskich?',

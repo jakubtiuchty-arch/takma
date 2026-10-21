@@ -936,7 +936,7 @@ export const industryPages: IndustryPage[] = [
       },
       {
         question: 'Jak zintegrować drukarkę etykiet z systemem POS w restauracji?',
-        answer: 'Drukarki Zebra obsługują platformę Link-OS z SDK dla Windows, Android, iOS i przeglądarek (Browser Print). Integracja z popularnymi systemami POS gastronomicznymi (np. POSbistro, Dotykacka, Gastro POS) odbywa się przez API lub sterownik druku. Warianty z Ethernet (<a href="/produkt/zebra-zd421d">ZD421d od 1 691 zł</a>) lub Wi-Fi umożliwiają druk sieciowy z dowolnego urządzenia. TAKMA pomaga w integracji i konfiguracji szablonów etykiet pod konkretny system POS.',
+        answer: 'Drukarki Zebra obsługują platformę Link-OS z SDK dla Windows, Android, iOS i przeglądarek (Browser Print). Integracja z popularnymi systemami POS gastronomicznymi (np. POSbistro, Dotykacka, Gastro POS) odbywa się przez API lub sterownik druku. Warianty z Ethernet (<a href="/produkt/zebra-zd421d">ZD421d od 1 691 zł</a>) lub Wi-Fi umożliwiają druk sieciowy z dowolnego urządzenia. TAKMA pomaga w integracji i konfiguracji szablonów etykiet pod konkretny system POS. Do bonów kuchennych i paragonów niefiskalnych służą osobne <a href="/drukarki-pos">drukarki POS</a>.',
       },
       {
         question: 'Czy drukarka Zebra nadaje się do food trucka?',
