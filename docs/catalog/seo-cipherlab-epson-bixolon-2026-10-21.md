@@ -49,6 +49,7 @@ Nie scalano odrębnych modeli ani PN. Nie zmieniano adresów i przekierowań. Pa
 - Product/ProductGroup ColorWorks i BIXOLON RFID otrzymują model, kategorię i właściwości techniczne. Jedna konfiguracja jest Product z PN; kilka pozostaje grupą. Brak ceny w danych źródłowych nie tworzy sztucznej oferty.
 - Liczba pozycji należy do ItemList, a marka strony producenta do about. Data modyfikacji Epson pochodzi z daty redakcji treści.
 - Na zmienianych stronach Epson usunięto dodatkowe Speakable, HowTo i FAQPage. Pytania oraz instrukcje dla klienta pozostały widoczne. Nie deklarujemy kwalifikacji sklepu do wyników rozszerzonych FAQ lub HowTo.
+- Daty updatedAt zmienionych kart i data strony Epson w sitemapie odpowiadają redakcji treści.
 - Opisy aktualizacji kategorii CipherLab/BIXOLON nie sugerują, że data redakcji jest datą sprawdzenia cen.
 
 ## Źródła robocze

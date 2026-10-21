@@ -16,6 +16,7 @@ import { transferLabelSeries, getTransferLabelSeriesByProductId } from '@/data/t
 import { transferRibbonSeries, getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
 import { isRibbonProduct } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
+import { brandPillarContent } from '@/data/brand-pillar-content'
 import { subcategoryContent } from '@/data/subcategory-content'
 import { PROMOTIONS } from '@/data/promotions'
 import { prisma } from '@/lib/db'
@@ -33,7 +34,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/zebra`, lastModified: new Date('2026-03-12') },
     { url: `${baseUrl}/honeywell`, lastModified: new Date('2026-03-12') },
     { url: `${baseUrl}/newland`, lastModified: new Date('2026-03-13') },
-    { url: `${baseUrl}/epson`, lastModified: new Date('2026-09-20') },
+    { url: `${baseUrl}/epson`, lastModified: new Date(brandPillarContent.epson.updatedAt ?? '2026-09-20') },
   ]
 
   const staticPages: MetadataRoute.Sitemap = [
