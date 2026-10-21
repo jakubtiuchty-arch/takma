@@ -30,7 +30,7 @@ export const bixolonRfidAccessories: Product[] = [
     images: ['/images/products/bixolon-les-400g.webp'], imageDescriptions: ['BIXOLON LES-400G — zewnętrzny uchwyt rolki bez etykiet'],
     tags: ['magazyn', 'retail'], priceFrom: 75.12, availability: 'available', isNew: true, isBestseller: false,
     specifications: [{ name: 'Part Number', value: 'LES-400G' }, { name: 'Zgodność', value: 'XD3-40d/t, XD5-40d/t, XD5-40IId/IIt, XD5-40tR, SLP-DX220/TX220, SLP-DL410, XL5-40, XQ-840II' }, { name: 'Średnica rolki', value: 'Do 203 mm' }, { name: 'Średnica gilzy', value: '25,4–38,1 mm' }],
-    applications: ['Podawanie etykiet z większej rolki'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xd5-40tr'],
+    applications: ['Podawanie etykiet z większej rolki'], compatibleAccessories: [], relatedAccessories: [], relatedProducts: ['bixolon-xd3-40d', 'bixolon-xd3-40t', 'bixolon-xd5-40d', 'bixolon-xd5-40t', 'bixolon-xd5-40iid', 'bixolon-xd5-40iit', 'bixolon-slp-dx220', 'bixolon-slp-tx220', 'bixolon-slp-dl410', 'bixolon-xl5-40ct', 'bixolon-xq-840ii', 'bixolon-xd5-40tr'],
     downloads: [{ name: 'Instrukcja XD5-40tR (EN)', type: 'manual', url: '/downloads/bixolon-xd5-40tr-instrukcja-en.pdf#page=62', size: '3,0 MB' }, { name: 'Katalog akcesoriów BIXOLON (EN)', type: 'pdf', url: '/downloads/bixolon-akcesoria-etykiety-en.pdf', size: '3,4 MB' }], createdAt: '2026-10-16',
   },
 ]

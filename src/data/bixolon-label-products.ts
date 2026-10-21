@@ -107,7 +107,9 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd3-40t"
+      "bixolon-xd3-40t",
+      "bixolon-xd5-40d",
+      "bixolon-xd5-40iid"
     ],
     "downloads": [
       {
@@ -242,7 +244,9 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd3-40d"
+      "bixolon-xd3-40d",
+      "bixolon-xd5-40t",
+      "bixolon-xd5-40iit"
     ],
     "downloads": [
       {
@@ -544,7 +548,8 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd5-40iid"
+      "bixolon-xd5-40iid",
+      "bixolon-xd3-40d"
     ],
     "downloads": [
       {
@@ -854,7 +859,8 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd5-40iit"
+      "bixolon-xd5-40iit",
+      "bixolon-xd3-40t"
     ],
     "downloads": [
       {
@@ -1087,7 +1093,8 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd5-40iit"
+      "bixolon-xd5-40iit",
+      "bixolon-xd5-40d"
     ],
     "downloads": [
       {
@@ -1399,7 +1406,8 @@ export const bixolonLabelProducts: Product[] = [
       "bixolon-les-400g"
     ],
     "relatedProducts": [
-      "bixolon-xd5-40iid"
+      "bixolon-xd5-40iid",
+      "bixolon-xd5-40t"
     ],
     "downloads": [
       {

@@ -136,8 +136,10 @@ export const bixolonMobileProducts: Product[] = [
       "bixolon-pic-r300s"
     ],
     "relatedProducts": [
-      "bixolon-xm7-30",
-      "bixolon-spp-l310"
+      "zebra-zq310-plus",
+      "zebra-zq210",
+      "zebra-zq610-plus",
+      "citizen-cmp-20ii"
     ],
     "downloads": [
       {
@@ -338,9 +340,10 @@ export const bixolonMobileProducts: Product[] = [
       "bixolon-pic-r300s"
     ],
     "relatedProducts": [
-      "bixolon-xm7-20",
-      "bixolon-xm7-40",
-      "bixolon-spp-l3000"
+      "zebra-zq320-plus",
+      "zebra-zq220-plus",
+      "bixolon-spp-l3000",
+      "bixolon-spp-l310"
     ],
     "downloads": [
       {
@@ -541,7 +544,9 @@ export const bixolonMobileProducts: Product[] = [
     ],
     "relatedProducts": [
       "bixolon-spp-l410",
-      "bixolon-xm7-30"
+      "zebra-zq521",
+      "zebra-zq630-plus",
+      "brother-rj-4230b"
     ],
     "downloads": [
       {
@@ -723,8 +728,10 @@ export const bixolonMobileProducts: Product[] = [
       "bixolon-pcc-1000"
     ],
     "relatedProducts": [
+      "zebra-zq320-plus",
+      "zebra-zq220-plus",
       "bixolon-spp-l3000",
-      "bixolon-spp-l410"
+      "bixolon-xm7-30"
     ],
     "downloads": [
       {
@@ -928,7 +935,8 @@ export const bixolonMobileProducts: Product[] = [
     ],
     "relatedProducts": [
       "bixolon-xm7-40",
-      "bixolon-spp-l310"
+      "zebra-zq521",
+      "brother-rj-4230b"
     ],
     "downloads": [
       {
@@ -1130,6 +1138,7 @@ export const bixolonMobileProducts: Product[] = [
       "bixolon-pic-r300s"
     ],
     "relatedProducts": [
+      "zebra-zq320-plus",
       "bixolon-xm7-30",
       "bixolon-spp-l310"
     ],
@@ -1219,6 +1228,10 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
+      "bixolon-xm7-40",
+      "bixolon-spp-l310",
+      "bixolon-spp-l410",
+      "bixolon-spp-l3000",
       "bixolon-spp-r310",
       "bixolon-spp-r410"
     ],
@@ -1293,6 +1306,10 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
+      "bixolon-xm7-40",
+      "bixolon-spp-l310",
+      "bixolon-spp-l410",
+      "bixolon-spp-l3000",
       "bixolon-spp-r310",
       "bixolon-spp-r410"
     ],
@@ -1508,6 +1525,10 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
+      "bixolon-xm7-40",
+      "bixolon-spp-l310",
+      "bixolon-spp-l410",
+      "bixolon-spp-l3000",
       "bixolon-spp-r210",
       "bixolon-spp-r200iiiplus"
     ],
@@ -1578,6 +1599,10 @@ export const bixolonMobileAccessories: Product[] = [
     "relatedProducts": [
       "bixolon-xm7-20",
       "bixolon-xm7-30",
+      "bixolon-xm7-40",
+      "bixolon-spp-l310",
+      "bixolon-spp-l410",
+      "bixolon-spp-l3000",
       "bixolon-spp-r210",
       "bixolon-spp-r200iiiplus"
     ],
