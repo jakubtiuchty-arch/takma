@@ -20,8 +20,8 @@ export const datalogicMagellanProducts: Product[] = [
     "name": "Datalogic Magellan 900i",
     "seoH1": "Datalogic Magellan 900i",
     "seoTitle": "Datalogic Magellan 900i — skaner prezentacyjny 2D | TAKMA",
-    "seoDescription": "Datalogic Magellan 900i: skaner prezentacyjny 2D. Mały czytnik na podstawce lub w kiosku. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Datalogic Magellan 900i to kompaktowy skaner prezentacyjny 1D i 2D do kasy, recepcji oraz punktu obsługi. Odczytuje etykiety i kody z ekranów telefonów.",
+    "seoDescription": "Skaner prezentacyjny Datalogic Magellan 900i — czytnik kodów 1D/2D na podstawce lub do kiosku. Czytnik Datalogic 900i, USB lub RS-232, IP52. 900i Datalogic z mocowaniem magnetycznym. PN: MG0901-10000-0200, MG0901-10001-0200, MG0901-10001-2100, MG0902-11000-0204, MG0902-11000-0200.",
+    "shortDescription": "Datalogic Magellan 900i — kompaktowy skaner prezentacyjny 1D/2D z podstawką lub do kiosku, USB lub RS-232, IP52, 3 lata gwarancji.",
     "description": "Datalogic Magellan 900i to kompaktowy skaner prezentacyjny 1D i 2D do kasy, recepcji i punktu obsługi. Odczytuje kody z etykiet i z ekranów telefonów bez naciskania przycisku. Czytnik można też podnieść do większego przedmiotu.\n\nWielokierunkowy układ obrazujący odczytuje kod przesuwany przed oknem i kod zatrzymany przed oknem. Obsługuje m.in. EAN, Code 128, QR i Data Matrix. Typowy zakres dla UPC 13 mil wynosi 0–21 cm. Green Spot pokazuje poprawny odczyt, a diodowy celownik wskazuje kod na liście kodów.\n\nWersje MG0901 mają regulowaną podstawkę. Wersje z oznaczeniem 10001 mają także mocowanie magnetyczne. Wersje MG0902 służą do montażu w kiosku i nie mają podstawki. Zestawy USB zawierają przewód USB-A 2 m, a MG0902-11000-0204 przewód 1 m. MG0901-10001-2100 zawiera przewód RS-232 2 m i zasilacz EU.\n\nCzytnik wymaga 5 V DC i w zestawach USB pobiera zasilanie z portu hosta. Połączenie RS-232 wymaga zasilacza 5 V DC: 90ACC0430 albo 90ACC0587 z [przewodem sieciowym EU 90ACC1885](/produkt/datalogic-magellan-90acc1885). Obudowa ma ochronę IP52 i wytrzymuje upadki z 1,2 m na beton. Temperatura pracy wynosi od 0°C do +40°C. Gwarancja producenta trwa 3 lata.",
     "priceFrom": 654.38,
     "availability": "available",
@@ -190,8 +190,8 @@ export const datalogicMagellanProducts: Product[] = [
     "name": "Datalogic Magellan 1500i",
     "seoH1": "Datalogic Magellan 1500i",
     "seoTitle": "Datalogic Magellan 1500i — skaner prezentacyjny 2D | TAKMA",
-    "seoDescription": "Datalogic Magellan 1500i: skaner prezentacyjny 2D. Podstawka dobrana do stanowiska sprzedaży. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Datalogic Magellan 1500i to skaner prezentacyjny 1D i 2D do punktów sprzedaży. Odczytuje towary, kupony i bilety z papieru oraz ekranów.",
+    "seoDescription": "Skaner prezentacyjny Datalogic Magellan 1500i — czytnik kodów 1D/2D do kasy. Czytnik Datalogic 1500i, USB lub RS-232, IP52. 1500i Datalogic z podstawką. PN: MG1501-10210-0200, MG1501-10211-0200, MG1501-10231-0200, MG1501-10231-2100, MG1501-10210-2100, MG1501-10250-0200, MG1501-10210.",
+    "shortDescription": "Datalogic Magellan 1500i — skaner prezentacyjny 1D/2D z matrycą 1280 × 800, podstawką regulowaną, stałą lub mocowaniem ściennym, IP52, 3 lata gwarancji.",
     "description": "Datalogic Magellan 1500i to skaner prezentacyjny 1D i 2D do punktów sprzedaży. Odczytuje kody towarów, kuponów i biletów z papieru oraz z ekranów. Na podstawce operator przesuwa towary obiema rękami. Akcelerometr wykrywa podniesienie czytnika i zmienia tryb pracy.\n\nMatryca 1280 × 800 pikseli odczytuje kody liniowe, QR, Data Matrix, Aztec i PDF417 oraz przechwytuje obrazy. Typowy zakres dla UPC 13 mil wynosi 0–25 cm. Kody Digimarc odczytują tylko wersje DWM, np. MG1501-10310-0200. Wersje 2D nie dekodują Digimarc.\n\nWersje MG1501 mają czarną obudowę i różnią się sposobem montażu: regulowana podstawka (Tilting), podstawka stała (Riser) albo mocowanie ścienne. Z podstawką stałą skaner ma 10,6 cm wysokości, a z regulowaną 13,8 cm. Zestawy -0200 zawierają przewód USB-A, a zestawy -2100 przewód RS-232 i zasilacz EU. MG1501-10210 nie ma przewodu.\n\nPrzewód RS-232 [8-0751-11](/produkt/datalogic-magellan-8-0751-11) wymaga [zasilacza 5 V 90ACC0287](/produkt/datalogic-magellan-90acc0287) i [przewodu sieciowego 90ACC1885](/produkt/datalogic-magellan-90acc1885). Obudowa ma ochronę IP52 i wytrzymuje upadki z 1,2 m na beton. Temperatura pracy wynosi od 0°C do +40°C. Gwarancja producenta trwa 3 lata.",
     "priceFrom": 990.46,
     "availability": "available",
@@ -398,8 +398,8 @@ export const datalogicMagellanProducts: Product[] = [
     "name": "Datalogic Magellan 3600VSi",
     "seoH1": "Datalogic Magellan 3600VSi",
     "seoTitle": "Datalogic Magellan 3600VSi — pionowy skaner kasowy 2D | TAKMA",
-    "seoDescription": "Datalogic Magellan 3600VSi: pionowy skaner kasowy 2D. Pionowe okno i funkcje zależne od wersji. Sprawdź ceny, dostępność, warianty PN i zgodne akcesoria.",
-    "shortDescription": "Datalogic Magellan 3600VSi to pionowy skaner stacjonarny 1D i 2D do kas, kiosków oraz stanowisk samoobsługowych. Odczytuje kody przed oknem, bez ręcznego wyzwalania.",
+    "seoDescription": "Skaner prezentacyjny Datalogic Magellan 3600VSi — pionowy czytnik kodów 1D/2D do kasy. Czytnik Datalogic 3600VSi, IP52. PN: M3610-010210-00604, M3610-010210, M3610-010200, M3610-010200-00604, M3650-010200, M3650-010210, M3650-010200-07604, M3650-010210-07604, M3650-010210-07104, M3670-010200.",
+    "shortDescription": "Datalogic Magellan 3600VSi — pionowy skaner prezentacyjny 1D/2D do kas i kiosków, wersje 3610, 3650 (AUX) i 3670 (wideo), IP52, 3 lata gwarancji.",
     "description": "Datalogic Magellan 3600VSi to pionowy skaner jednopłaszczyznowy 1D i 2D do kas, kiosków i stanowisk samoobsługowych. Odczytuje kody przed oknem bez ręcznego wyzwalania, z etykiet i z ekranów telefonów. Obsługuje m.in. EAN, QR, Data Matrix i GS1 Digital Link.\n\nMatryca z migawką globalną ma 1360 × 1120 pikseli. Typowy zakres wynosi 0–22 cm dla EAN 13 mil i 0–16 cm dla QR 15 mil. Obudowa ma wymiary 13,7 × 15,2 × 8,4 cm i masę około 0,60 kg. Wersja 3610 przechwytuje obraz w skali szarości. Wersja 3650 dodaje obraz kolorowy i port AUX. Wersja 3670 dodaje kolorowe wideo.\n\nPN z oznaczeniem 010210 zawierają [mocowanie 90ACC0598](/produkt/datalogic-magellan-90acc0598) na ladę lub ścianę. Wersje 010200 go nie mają. Zestawy -00604 zawierają przewód USB-A z wejściem zasilania, bez zasilacza. Zestawy -07604 zawierają zasilacz EU i przewód USB-A, a -07104 zasilacz EU i przewód RS-232. Zasilanie 12 V zapewnia [zasilacz 90ACC0193](/produkt/datalogic-magellan-90acc0193) z [przewodem sieciowym 6003-0940](/produkt/datalogic-powerscan-6003-0940).\n\nCzytnik przyjmuje 5–12 V DC. Port AUX (3650, 3670) wymaga zasilacza 12 V, 12 V OEM-USB albo USB-C PD 9–12 V. Obudowa ma ochronę IP52. Temperatura pracy wynosi od 0°C do +40°C. Gwarancja producenta trwa 3 lata. Integrację ułatwiają Aladdin, OPOS i JavaPOS.",
     "priceFrom": 1622.67,
     "availability": "available",
@@ -628,8 +628,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-8-0751-11",
     "name": "Przewód RS-232 Datalogic Magellan — 2 m",
     "seoH1": "Przewód RS-232 Datalogic Magellan — 2 m",
-    "seoTitle": "Przewód RS-232 Datalogic — 2 m | TAKMA",
-    "seoDescription": "Przewód RS-232 8-0751-11 łączy zgodny czytnik z portem szeregowym hosta. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Przewód RS-232 Datalogic 8-0751-11 do Magellan 900i i 1500i — 2 m",
+    "seoDescription": "Przewód RS-232 Datalogic 8-0751-11, złącze 9D, 2 m, z zasilaniem zewnętrznym, do Magellan 900i i 1500i. PN: 8-0751-11.",
     "shortDescription": "Przewód RS-232 8-0751-11 łączy zgodny czytnik z portem szeregowym hosta.",
     "description": "Przewód RS-232 8-0751-11 łączy zgodny czytnik z portem szeregowym hosta. Ma złącze 9D i długość 2 m. Wymaga zewnętrznego zasilania 5 V dobranego do czytnika. Nie zawiera zasilacza ani przewodu sieciowego. Do Magellan 1500i służy zasilacz 90ACC0287 z przewodem sieciowym 90ACC1885. Do Magellan 900i służy zasilacz 5 V DC 90ACC0430 albo 90ACC0587 z przewodem sieciowym 90ACC1885.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -643,7 +643,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-8-0751-11-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód RS-232 Datalogic Magellan — 2 m — samo akcesorium"
+      "Przewód RS-232 Datalogic 8-0751-11 — czarny przewód ze złączem 9D i wtykiem do czytnika"
     ],
     "tags": [],
     "isNew": false,
@@ -685,8 +685,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0384",
     "name": "Mocowanie magnetyczne Datalogic Magellan 900i / 1500i",
     "seoH1": "Mocowanie magnetyczne Datalogic Magellan 900i / 1500i",
-    "seoTitle": "Mocowanie magnetyczne Datalogic 900i / 1500i | TAKMA",
-    "seoDescription": "Mocowanie magnetyczne 90ACC0384 służy do zgodnych podstawek Magellan 900i i 1500i. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Mocowanie magnetyczne Datalogic 90ACC0384 do Magellan 900i i 1500i",
+    "seoDescription": "Mocowanie magnetyczne Datalogic 90ACC0384 do podstawek Magellan 900i i 1500i. PN: 90ACC0384.",
     "shortDescription": "Mocowanie magnetyczne 90ACC0384 służy do zgodnych podstawek Magellan 900i i 1500i.",
     "description": "Mocowanie magnetyczne 90ACC0384 służy do zgodnych podstawek Magellan 900i i 1500i. Nie jest samodzielną podstawką ani mocowaniem do kiosku. Nie zawiera czytnika. Mocowanie magnetyczne jest w zestawach MG0901-10001, MG1501-10211 i MG1501-10231.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -700,7 +700,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0384-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Mocowanie magnetyczne Datalogic Magellan 900i / 1500i — samo akcesorium"
+      "Mocowanie magnetyczne Datalogic 90ACC0384 — okrągła metalowa podstawa z magnesem"
     ],
     "tags": [],
     "isNew": false,
@@ -738,8 +738,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0287",
     "name": "Zasilacz 5 V Datalogic Magellan 1500i",
     "seoH1": "Zasilacz 5 V Datalogic Magellan 1500i",
-    "seoTitle": "Zasilacz 5 V Datalogic 1500i | TAKMA",
-    "seoDescription": "Zasilacz 90ACC0287 dostarcza 5 V DC do zgodnego układu Magellan 1500i. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Zasilacz 5 V Datalogic 90ACC0287 do Magellan 1500i",
+    "seoDescription": "Zasilacz 5 V DC Datalogic 90ACC0287 do Magellan 1500i z przewodem RS-232; przewód sieciowy 90ACC1885 osobno. PN: 90ACC0287.",
     "shortDescription": "Zasilacz 90ACC0287 dostarcza 5 V DC do zgodnego układu Magellan 1500i.",
     "description": "Zasilacz 90ACC0287 dostarcza 5 V DC do zgodnego układu Magellan 1500i. Wymaga osobnego przewodu sieciowego EU 90ACC1885. Przewód sieciowy i czytnik nie są dołączone. Jest elementem zasilania przy osobnym przewodzie RS-232 8-0751-11. Zasilacz przyjmuje 2-pinowy przewód sieciowy. Nie jest zasilaczem 12 V do Magellan 3600VSi.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -753,7 +753,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0287-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz 5 V Datalogic Magellan 1500i — samo akcesorium"
+      "Zasilacz 5 V Datalogic 90ACC0287 — czarny zasilacz z gniazdem 2-pinowym i przewodem z wtykiem DC"
     ],
     "tags": [],
     "isNew": false,
@@ -794,7 +794,7 @@ export const datalogicMagellanAccessories: Product[] = [
     "name": "Przewód sieciowy EU Datalogic 90ACC1885",
     "seoH1": "Przewód sieciowy EU Datalogic 90ACC1885",
     "seoTitle": "Przewód sieciowy EU Datalogic 90ACC1885 | TAKMA",
-    "seoDescription": "Przewód sieciowy 90ACC1885 łączy zgodny zasilacz z europejskim gniazdem sieciowym. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoDescription": "Przewód sieciowy EU Datalogic 90ACC1885, 2-pinowy, do zasilaczy 5 V 90ACC0287 (Magellan 1500i) i 90ACC0587 (Magellan 900i). PN: 90ACC1885.",
     "shortDescription": "Przewód sieciowy 90ACC1885 łączy zgodny zasilacz z europejskim gniazdem sieciowym.",
     "description": "Przewód sieciowy 90ACC1885 łączy zgodny zasilacz z europejskim gniazdem sieciowym. Ma 2-pinowe złącze. Pasuje do zasilacza 90ACC0287 (Magellan 1500i) i zasilacza 5 V 90ACC0587 (Magellan 900i). Nie podłącza się bezpośrednio do skanera. Nie zastępuje przewodu C13 6003-0940 do zasilacza 90ACC0193.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 900i](/produkt/datalogic-magellan-900i), [Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -808,7 +808,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc1885-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód sieciowy EU Datalogic 90ACC1885 — samo akcesorium"
+      "Przewód sieciowy EU Datalogic 90ACC1885 — czarny przewód 2-pinowy z wtyczką EU"
     ],
     "tags": [],
     "isNew": false,
@@ -846,8 +846,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0378",
     "name": "Regulowana podstawka Datalogic Magellan 1500i",
     "seoH1": "Regulowana podstawka Datalogic Magellan 1500i",
-    "seoTitle": "Regulowana podstawka Datalogic 1500i | TAKMA",
-    "seoDescription": "Czarna podstawka 90ACC0378 służy do Magellan 1500i. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Podstawka regulowana Datalogic 90ACC0378 do Magellan 1500i",
+    "seoDescription": "Podstawka regulowana (Tilting) Datalogic 90ACC0378 do skanera prezentacyjnego Magellan 1500i. PN: 90ACC0378.",
     "shortDescription": "Czarna podstawka 90ACC0378 służy do Magellan 1500i.",
     "description": "Czarna podstawka 90ACC0378 służy do Magellan 1500i. Umożliwia regulację ustawienia czytnika na stanowisku kasowym. To element montażowy, bez czytnika, przewodu i zasilacza. Nie zawiera osobnego mocowania magnetycznego 90ACC0384. Regulowana podstawka jest w zestawach MG1501-10210 i MG1501-10211. Z podstawką regulowaną (Tilting) skaner ma 13,8 cm wysokości.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -861,7 +861,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0378-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Regulowana podstawka Datalogic Magellan 1500i — samo akcesorium"
+      "Podstawka regulowana Datalogic 90ACC0378 — podstawka z metalową podstawą i uchylnym uchwytem na Magellan 1500i"
     ],
     "tags": [],
     "isNew": false,
@@ -898,8 +898,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0380",
     "name": "Podstawka stała (Riser Stand) Datalogic Magellan 1500i",
     "seoH1": "Podstawka stała (Riser Stand) Datalogic Magellan 1500i",
-    "seoTitle": "Podstawka stała (Riser Stand) Datalogic 1500i | TAKMA",
-    "seoDescription": "Czarna podstawka stała (Riser Stand) 90ACC0380 do Magellan 1500i. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Podstawka stała (Riser) Datalogic 90ACC0380 do Magellan 1500i",
+    "seoDescription": "Podstawka stała (Riser Stand) Datalogic 90ACC0380 do Magellan 1500i; z nią skaner ma 10,6 cm wysokości. PN: 90ACC0380.",
     "shortDescription": "Czarna podstawka stała (Riser Stand) 90ACC0380 do Magellan 1500i.",
     "description": "Czarna podstawka stała (Riser Stand) 90ACC0380 do Magellan 1500i. Z podstawką stałą skaner ma 10,6 cm wysokości, a z podstawką regulowaną (Tilting) 13,8 cm. Nie zawiera skanera ani przewodów. Mocowanie magnetyczne jest osobnym elementem.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -913,7 +913,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0380-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Podstawka stała (Riser Stand) Datalogic Magellan 1500i — samo akcesorium"
+      "Podstawka stała (Riser) Datalogic 90ACC0380 — czarna podstawka z gniazdem na Magellan 1500i"
     ],
     "tags": [],
     "isNew": false,
@@ -950,8 +950,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0382",
     "name": "Mocowanie ścienne Datalogic Magellan 1500i",
     "seoH1": "Mocowanie ścienne Datalogic Magellan 1500i",
-    "seoTitle": "Mocowanie ścienne Datalogic 1500i | TAKMA",
-    "seoDescription": "Czarne mocowanie 90ACC0382 służy do instalacji Magellan 1500i na ścianie. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Mocowanie ścienne Datalogic 90ACC0382 do Magellan 1500i",
+    "seoDescription": "Mocowanie ścienne Datalogic 90ACC0382 do skanera prezentacyjnego Magellan 1500i. PN: 90ACC0382.",
     "shortDescription": "Czarne mocowanie 90ACC0382 służy do instalacji Magellan 1500i na ścianie.",
     "description": "Czarne mocowanie 90ACC0382 służy do instalacji Magellan 1500i na ścianie. Mocowanie ma kształt litery L (L Bracket). Zastępuje podstawkę przy montażu na ścianie. Nie zawiera skanera, przewodu ani zasilacza. Zestaw MG1501-10250-0200 zawiera mocowanie ścienne.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 1500i](/produkt/datalogic-magellan-1500i). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -965,7 +965,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0382-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Mocowanie ścienne Datalogic Magellan 1500i — samo akcesorium"
+      "Mocowanie ścienne Datalogic 90ACC0382 — uchwyt w kształcie litery L z czytnikiem Magellan 1500i, schemat montażu"
     ],
     "tags": [],
     "isNew": false,
@@ -1002,8 +1002,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0598",
     "name": "Mocowanie na ladę lub ścianę Datalogic Magellan 3600VSi",
     "seoH1": "Mocowanie na ladę lub ścianę Datalogic Magellan 3600VSi",
-    "seoTitle": "Mocowanie na ladę lub ścianę Datalogic 3600VSi | TAKMA",
-    "seoDescription": "Mocowanie 90ACC0598 służy do montażu Magellan 3600VSi na ladzie lub ścianie. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Mocowanie na ladę lub ścianę Datalogic 90ACC0598 do Magellan 3600VSi",
+    "seoDescription": "Mocowanie na ladę lub ścianę Datalogic 90ACC0598 do Magellan 3600VSi (wersje 3610, 3650 i 3670). PN: 90ACC0598.",
     "shortDescription": "Mocowanie 90ACC0598 służy do montażu Magellan 3600VSi na ladzie lub ścianie.",
     "description": "Mocowanie 90ACC0598 służy do montażu Magellan 3600VSi na ladzie lub ścianie. Pasuje do wersji 3610, 3650 i 3670. Nie jest podwyższoną, regulowaną podstawką 90ACC0599. Nie zawiera czytnika, przewodu i zasilacza. Zestawy 010210 zawierają to mocowanie.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -1017,7 +1017,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0598-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Mocowanie na ladę lub ścianę Datalogic Magellan 3600VSi — samo akcesorium"
+      "Mocowanie Datalogic 90ACC0598 — czarne mocowanie na ladę lub ścianę do Magellan 3600VSi"
     ],
     "tags": [],
     "isNew": false,
@@ -1054,8 +1054,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90acc0193",
     "name": "Zasilacz 12 V Datalogic Magellan 90ACC0193",
     "seoH1": "Zasilacz 12 V Datalogic Magellan 90ACC0193",
-    "seoTitle": "Zasilacz 12 V Datalogic 3600VSi | TAKMA",
-    "seoDescription": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Zasilacz 12 V Datalogic 90ACC0193 do Magellan 3600VSi i 3700HSi",
+    "seoDescription": "Zasilacz 12 V, 18 W Datalogic 90ACC0193 do Magellan 3600VSi i 3700HSi; przewód sieciowy 6003-0940 osobno. PN: 90ACC0193.",
     "shortDescription": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan.",
     "description": "Zasilacz 90ACC0193 dostarcza 12 V DC i moc 18 W do zgodnych czytników Magellan. Obsługuje Magellan 3600VSi i 3700HSi. Wymaga osobnego przewodu sieciowego EU 6003-0940 ze złączem C13. Przewód sieciowy i czytnik nie są dołączone. Magellan 900i i 1500i wymagają zasilacza 5 V.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi), [Datalogic Magellan 3700HSi](/produkt/datalogic-magellan-3700hsi). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -1069,7 +1069,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90acc0193-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz 12 V Datalogic Magellan 90ACC0193 — samo akcesorium"
+      "Zasilacz 12 V Datalogic 90ACC0193 — czarny zasilacz z przewodem i wtykiem DC"
     ],
     "tags": [],
     "isNew": false,
@@ -1114,8 +1114,8 @@ export const datalogicMagellanAccessories: Product[] = [
     "slug": "datalogic-magellan-90a052292",
     "name": "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m",
     "seoH1": "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m",
-    "seoTitle": "Przewód USB-A Datalogic 3600VSi — ok. 4,6 m | TAKMA",
-    "seoDescription": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Sprawdź cenę, dostępność i zgodne modele w TAKMA.",
+    "seoTitle": "Przewód USB-A Datalogic 90A052292 do Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi",
+    "seoDescription": "Przewód USB-A Datalogic 90A052292 z zasilaniem zewnętrznym, 15 ft, do Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi. PN: 90A052292.",
     "shortDescription": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym.",
     "description": "Przewód 90A052292 łączy zgodne czytniki Magellan 3510HSi, 3550HSi, 3600VSi i 3700HSi z portem USB-A hosta w konfiguracji z zasilaniem zewnętrznym. Długość wynosi 15 stóp, około 4,6 m. 3600VSi i 3700HSi obsługują 90ACC0193. 3510HSi i 3550HSi wymagają 90ACC0358. Przewód sieciowy jest osobnym elementem. Sam przewód nie jest zasilaczem.\n\n## Zgodne urządzenia\n\n[Datalogic Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi), [Datalogic Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi), [Datalogic Magellan 3600VSi](/produkt/datalogic-magellan-3600vsi), [Datalogic Magellan 3700HSi](/produkt/datalogic-magellan-3700hsi). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
     "categoryId": "akcesoria",
@@ -1129,7 +1129,7 @@ export const datalogicMagellanAccessories: Product[] = [
       "/images/products/datalogic-magellan-90a052292-1-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód USB-A Datalogic Magellan 90A052292 — ok. 4,6 m — samo akcesorium"
+      "Przewód USB-A Datalogic 90A052292 — czarny przewód ze złączem USB-A i wtykiem do czytnika Magellan"
     ],
     "tags": [],
     "isNew": false,
