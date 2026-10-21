@@ -212,6 +212,12 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   // Pasek faktów pod H1 — zadanie użytkownika z wyszukiwarki to modele i ceny.
   // `najnizszaCena` liczy też cenę w tytule strony (`wstawCeneOd`), więc obie liczby są te same.
   const najtansza = najnizszaCena(allProducts)
+  // Pusta cena w zestawieniu modeli = cena „od” z karty produktu, na którą prowadzi wiersz.
+  const cenaModelu = (m: { href: string; priceFrom: string }) => {
+    if (m.priceFrom) return m.priceFrom
+    const cena = najnizszaCena(allProducts.filter(p => `/produkt/${p.slug}` === m.href))
+    return cena === null ? '' : `od ${zlote(cena)} zł`
+  }
   const zKlawiatura = allProducts.filter(p => p.specifications.some(sp => /^Klawiatur/i.test(sp.name))).length
 
   // Schema JSON-LD
@@ -305,8 +311,17 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
 
                     // Zestawienie z pól (czytelne karty) — a gdy wpis marki go nie ma,
                     // stary rozbiór zdania na tabelę, żeby pozostałe strony działały.
+                    // `modelTableLayout: 'tabela'` rysuje te same pola w tabeli HTML zamiast kart.
+                    const tabelaModeli = content.modelTableLayout === 'tabela'
                     const rows = content.modelTable
-                      ? []
+                      ? tabelaModeli
+                        ? content.modelTable.map((m) => ({
+                            model: `[${m.name}](${m.href})`,
+                            specs: m.specs.map((sp) => `${sp.label}: ${sp.value}`).join(' · '),
+                            price: cenaModelu(m),
+                            desc: m.bestFor,
+                          }))
+                        : []
                       : bulletLines.map((line) => {
                           const text = line.replace(/^• /, '')
                           const colonIdx = text.indexOf('):')
@@ -328,7 +343,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                           <p className="text-gray-600 leading-relaxed mb-6 max-w-3xl"><LinkedText text={textLines[0]} /></p>
                         )}
 
-                        {content.modelTable ? (
+                        {content.modelTable && !tabelaModeli ? (
                           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-6">
                             {content.modelTable.map((m) => (
                               <article key={m.name} className="border border-gray-200 rounded-xl bg-white flex flex-col">
@@ -340,7 +355,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                                     </h3>
                                     <p className="text-xs text-gray-500 mt-0.5">{m.role}</p>
                                   </div>
-                                  <p className="text-right text-primary-700 font-semibold whitespace-nowrap">{m.priceFrom}</p>
+                                  <p className="text-right text-primary-700 font-semibold whitespace-nowrap">{cenaModelu(m)}</p>
                                 </header>
 
                                 <dl className="px-4 divide-y divide-gray-100 border-t border-gray-100">

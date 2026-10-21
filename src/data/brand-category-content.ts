@@ -15,6 +15,8 @@ export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHead
   sectionHeadings?: NonNullable<SubcategoryRichContent['sectionHeadings']> & { tco?: string }
   /** tekst bloku „Nie wiesz, który model wybrać?” — domyślny opisuje terminale */
   contactText?: string
+  /** 'tabela' — zestawienie `modelTable` jako tabela HTML (model, parametry, cena netto, zastosowanie) zamiast kart */
+  modelTableLayout?: 'tabela'
 }
 
 export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
