@@ -820,7 +820,7 @@ export const counterScannerProducts: Product[] = [
     ],
     "manufacturerId": "zebra",
     "priceFrom": 1222.58,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/zebra-sp7201-h-1-v1.webp",
       "/images/products/zebra-sp7201-h-2-v1.webp",
@@ -839,7 +839,7 @@ export const counterScannerProducts: Product[] = [
     "specifications": [
       {
         "name": "Typ skanera",
-        "value": "Area imager 2D ladowy poziomy"
+        "value": "Imager 2D, skaner ladowy poziomy"
       },
       {
         "name": "Skanowane kody",
@@ -862,6 +862,30 @@ export const counterScannerProducts: Product[] = [
         "value": "IP52"
       },
       {
+        "name": "Wymiary",
+        "value": "15,2 × 15,2 × 8,6 cm"
+      },
+      {
+        "name": "Masa",
+        "value": "864 g (szafirowe), 834 g (DLC)"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "5 V z portu USB hosta"
+      },
+      {
+        "name": "EAS",
+        "value": "Checkpoint i Sensormatic (opcja)"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "0–50 °C"
+      },
+      {
+        "name": "Montaż w blacie",
+        "value": "Mocowanie BRKT-BM0072-00 (sprzedawane osobno)"
+      },
+      {
         "name": "Gwarancja producenta",
         "value": "3 lata"
       }
@@ -871,7 +895,7 @@ export const counterScannerProducts: Product[] = [
         "partNumber": "SP7201-SH00004DCWW",
         "name": "DLC",
         "priceFrom": 1222.58,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Szkło": "DLC"
         }
@@ -880,12 +904,15 @@ export const counterScannerProducts: Product[] = [
         "partNumber": "SP7201-SH00004SCWW",
         "name": "Szafirowe",
         "priceFrom": 1386.65,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Szkło": "Szafirowe"
         }
       }
     ],
+    "variantAttributeTooltips": {
+      "Szkło": "Powierzchnia okna odczytu.\n\n• DLC — szkło z powłoką diamentopodobną; niższa cena\n\n• Szafirowe — szkło szafirowe; większa odporność na zarysowania"
+    },
     "relatedAccessories": [
       "zebra-cable-usb-ds22"
     ],
@@ -910,8 +937,14 @@ export const counterScannerProducts: Product[] = [
     ],
     "downloads": [
       {
-        "name": "Zebra SP72 — przewodnik akcesoriów (EN)",
+        "name": "Karta katalogowa Zebra SP72 (PL)",
         "type": "datasheet",
+        "url": "/downloads/zebra-sp72-karta-katalogowa-pl.pdf",
+        "size": "430 KB"
+      },
+      {
+        "name": "Zebra SP72 — przewodnik akcesoriów (EN)",
+        "type": "pdf",
         "url": "/datasheets/zebra-sp72-guide.pdf",
         "size": "649 KB"
       }
@@ -934,7 +967,7 @@ export const counterScannerProducts: Product[] = [
     ],
     "manufacturerId": "zebra",
     "priceFrom": 1590.16,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/zebra-sp7208-h-1-v1.webp",
       "/images/products/zebra-sp7208-h-2-v1.webp",
@@ -953,7 +986,7 @@ export const counterScannerProducts: Product[] = [
     "specifications": [
       {
         "name": "Typ skanera",
-        "value": "Area imager 2D ladowy poziomy"
+        "value": "Imager 2D, skaner ladowy poziomy"
       },
       {
         "name": "Skanowane kody",
@@ -976,6 +1009,30 @@ export const counterScannerProducts: Product[] = [
         "value": "IP52"
       },
       {
+        "name": "Wymiary",
+        "value": "15,2 × 15,2 × 8,6 cm"
+      },
+      {
+        "name": "Masa",
+        "value": "864 g (szafirowe), 834 g (DLC)"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "5 V z portu USB hosta lub 11–13 V z zasilacza"
+      },
+      {
+        "name": "EAS",
+        "value": "Checkpoint i Sensormatic (opcja)"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "0–50 °C"
+      },
+      {
+        "name": "Montaż w blacie",
+        "value": "Mocowanie BRKT-BM0072-00 (sprzedawane osobno)"
+      },
+      {
         "name": "Gwarancja producenta",
         "value": "3 lata"
       }
@@ -985,7 +1042,7 @@ export const counterScannerProducts: Product[] = [
         "partNumber": "SP7208-SH00004DCWW",
         "name": "DLC",
         "priceFrom": 1590.16,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Szkło": "DLC"
         }
@@ -994,12 +1051,15 @@ export const counterScannerProducts: Product[] = [
         "partNumber": "SP7208-SH00004SCWW",
         "name": "Szafirowe",
         "priceFrom": 1754.24,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Szkło": "Szafirowe"
         }
       }
     ],
+    "variantAttributeTooltips": {
+      "Szkło": "Powierzchnia okna odczytu.\n\n• DLC — szkło z powłoką diamentopodobną; niższa cena\n\n• Szafirowe — szkło szafirowe; większa odporność na zarysowania"
+    },
     "relatedAccessories": [
       "zebra-cable-usb-ds22"
     ],
@@ -1024,8 +1084,14 @@ export const counterScannerProducts: Product[] = [
     ],
     "downloads": [
       {
-        "name": "Zebra SP72 — przewodnik akcesoriów (EN)",
+        "name": "Karta katalogowa Zebra SP72 (PL)",
         "type": "datasheet",
+        "url": "/downloads/zebra-sp72-karta-katalogowa-pl.pdf",
+        "size": "430 KB"
+      },
+      {
+        "name": "Zebra SP72 — przewodnik akcesoriów (EN)",
+        "type": "pdf",
         "url": "/datasheets/zebra-sp72-guide.pdf",
         "size": "649 KB"
       }
@@ -1041,14 +1107,14 @@ export const counterScannerProducts: Product[] = [
     "seoTitle": "Zebra MP7200 — skaner ladowy 1D/2D",
     "seoDescription": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. PN, ceny, dostępność i zgodne akcesoria w TAKMA.",
     "shortDescription": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.",
-    "description": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.\n\n## Odczyt z dwóch stron\n\nPoziome i pionowe okno pozwalają odczytać kod podczas przesuwania towaru przez stanowisko. MP7200 korzysta z matrycy 2,3 MP. Odczytuje kody liniowe oraz QR i Data Matrix. Zastępuje wycofaną serię MP7000.\n\n## Kamera i przygotowanie pod wagę\n\nWybrane PN mają kolorową kamerę. Warianty bez kamery nie zyskują tej funkcji przez samą konfigurację programu. Wersje Scale Ready są przygotowane pod integrację z wagą. Nie zawierają kompletnej wagi ani legalizacji. Przed zakupem uzgodnij moduł ważący, instalację i wymagania systemu POS.\n\n## Płyta, szkło i montaż\n\nPorównaj długość płyty oraz szkło DLC lub szafirowe. Zdjęcie przedstawia obudowę z długą płytą. Wersja średnia wymaga innego otworu montażowego. Nie wycinaj blatu na podstawie zdjęcia — użyj wymiarów dla wybranego PN.\n\n## Zasilanie stanowiska\n\nPrzewód komunikacyjny i zasilanie dobierz do hosta. Dla standardowego USB z zasilaniem zewnętrznym potrzebujesz zgodnego przewodu, [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) oraz [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Nie są dołączone do samego skanera. Gwarancja producenta trwa 1 rok.\n\n## Dobór stanowiska kasowego\n\nSprawdź wymiary otworu, sposób mocowania oraz interfejs systemu POS. Dobierz przewód do konkretnego portu. Pozostałe modele porównasz w kategorii [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.\n\n## Odczyt z dwóch stron\n\nPoziome i pionowe okno pozwalają odczytać kod podczas przesuwania towaru przez stanowisko. MP7200 ma czujnik megapikselowy. Odczytuje kody liniowe oraz QR i Data Matrix. Zastępuje wycofaną serię MP7000.\n\n## Kamera i przygotowanie pod wagę\n\nWybrane PN mają kolorową kamerę. Warianty bez kamery nie zyskują tej funkcji przez samą konfigurację programu. Wersje Scale Ready są przygotowane pod integrację z wagą. Nie zawierają kompletnej wagi ani legalizacji. Przed zakupem uzgodnij moduł ważący, instalację i wymagania systemu POS.\n\n## Płyta, szkło i montaż\n\nPorównaj długość płyty oraz szkło DLC lub szafirowe. Zdjęcie przedstawia obudowę z długą płytą. Wersja średnia wymaga innego otworu montażowego. Nie wycinaj blatu na podstawie zdjęcia — użyj wymiarów dla wybranego PN.\n\n## Zasilanie stanowiska\n\nPrzewód komunikacyjny i zasilanie dobierz do hosta. Dla standardowego USB z zasilaniem zewnętrznym potrzebujesz zgodnego przewodu, [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) oraz [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r). Nie są dołączone do samego skanera. Gwarancja producenta trwa 1 rok.\n\n## Dobór stanowiska kasowego\n\nSprawdź wymiary otworu, sposób mocowania oraz interfejs systemu POS. Dobierz przewód do konkretnego portu. Pozostałe modele porównasz w kategorii [skanerów ladowych](/skanery-kodow-kreskowych/ladowe).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
     ],
     "manufacturerId": "zebra",
     "priceFrom": 3772.81,
-    "availability": "on-order",
+    "availability": "unavailable",
     "images": [
       "/images/products/zebra-mp7200-1-v1.webp",
       "/images/products/zebra-mp7200-2-v1.webp",
@@ -1074,12 +1140,32 @@ export const counterScannerProducts: Product[] = [
         "value": "1D i 2D, QR, Data Matrix"
       },
       {
-        "name": "Matryca",
-        "value": "2,3 MP — 1920 × 1200"
-      },
-      {
         "name": "Waga w zestawie",
         "value": "Nie"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB, RS-232, IBM 46xx (RS-485), SNAPI"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "12 V z przewodu POS (USB Power Plus) lub zasilacz PWR-BGA12V50W0WW"
+      },
+      {
+        "name": "Wymiary",
+        "value": "Średnia: 398 × 292 × 101 mm, wys. 128 mm; długa: 506 × 292 × 101 mm, wys. 128 mm"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP5X"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "0–40 °C"
+      },
+      {
+        "name": "Porty dodatkowe",
+        "value": "3 × USB, 2 × RS-232 z zasilaniem, Checkpoint Interlock, wyświetlacz wagi, USB-C kamery"
       },
       {
         "name": "Gwarancja producenta",
@@ -1089,65 +1175,66 @@ export const counterScannerProducts: Product[] = [
     "variants": [
       {
         "partNumber": "MP7200-MNDLN000WW",
-        "name": "Średnia · DLC · Nie · Scale Ready — bez wagi",
+        "name": "Średnia · DLC · Scale Ready",
         "priceFrom": 3772.81,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Płyta": "Średnia",
           "Szkło": "DLC",
-          "Kamera": "Nie",
-          "Waga": "Scale Ready — bez wagi"
+          "Waga": "Scale Ready"
         }
       },
       {
         "partNumber": "MP7200-LNS0N000WW",
-        "name": "Długa · Szafirowe · Nie · Bez Scale Ready",
+        "name": "Długa · Szafirowe",
         "priceFrom": 3998.05,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Płyta": "Długa",
-          "Szkło": "Szafirowe",
-          "Kamera": "Nie",
-          "Waga": "Bez Scale Ready"
+          "Szkło": "Szafirowe"
         }
       },
       {
         "partNumber": "MP7200-MNDLL000WW",
-        "name": "Średnia · DLC · Kolorowa · Scale Ready — bez wagi",
+        "name": "Średnia · DLC · Scale Ready · Kamera",
         "priceFrom": 4687.53,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Płyta": "Średnia",
           "Szkło": "DLC",
           "Kamera": "Kolorowa",
-          "Waga": "Scale Ready — bez wagi"
+          "Waga": "Scale Ready"
         }
       },
       {
         "partNumber": "MP7200-MNSLL000WW",
-        "name": "Średnia · Szafirowe · Kolorowa · Scale Ready — bez wagi",
+        "name": "Średnia · Szafirowe · Scale Ready · Kamera",
         "priceFrom": 4687.53,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Płyta": "Średnia",
           "Szkło": "Szafirowe",
           "Kamera": "Kolorowa",
-          "Waga": "Scale Ready — bez wagi"
+          "Waga": "Scale Ready"
         }
       },
       {
         "partNumber": "MP7200-MNS0N000WW",
-        "name": "Średnia · Szafirowe · Nie · Bez Scale Ready",
+        "name": "Średnia · Szafirowe",
         "priceFrom": 3998.05,
-        "availability": "on-order",
+        "availability": "unavailable",
         "attributes": {
           "Płyta": "Średnia",
-          "Szkło": "Szafirowe",
-          "Kamera": "Nie",
-          "Waga": "Bez Scale Ready"
+          "Szkło": "Szafirowe"
         }
       }
     ],
+    "variantAttributeTooltips": {
+      "Płyta": "Długość płyty i obudowy.\n\n• Średnia — 398 × 292 mm\n\n• Długa — 506 × 292 mm",
+      "Szkło": "Powierzchnia okna odczytu.\n\n• DLC — szkło z powłoką diamentopodobną; niższa cena\n\n• Szafirowe — szkło szafirowe; większa odporność na zarysowania",
+      "Kamera": "Kolorowa kamera HD do aplikacji wizyjnych.\n\n• Rozpoznawanie towarów i kontrola strat przy kasie\n\n• Wymaga zgodnej aplikacji; łączy się z komputerem przez USB-C",
+      "Waga": "Przygotowanie do montażu wagi.\n\n• Scale Ready — obudowa przygotowana do modułu ważącego; waga i legalizacja nie są w zestawie"
+    },
     "relatedAccessories": [
       "zebra-psu-50w",
       "zebra-cable-dc-388",
@@ -1172,7 +1259,14 @@ export const counterScannerProducts: Product[] = [
         "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
       }
     ],
-    "downloads": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Zebra MP72 (PL)",
+        "type": "datasheet",
+        "url": "/downloads/zebra-mp72-karta-katalogowa-pl.pdf",
+        "size": "447 KB"
+      }
+    ],
     "createdAt": "2026-10-21",
     "updatedAt": "2026-10-21"
   }
