@@ -68,6 +68,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Skanery przewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/przewodowe
   - Skanery bezprzewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/bezprzewodowe
   - Skanery prezentacyjne: https://www.takma.com.pl/skanery-kodow-kreskowych/prezentacyjne
+  - Skanery ladowe (wbudowane w blat kasy; poziome i dwuokienkowe Datalogic Magellan, Zebra SP72-H i MP7200): https://www.takma.com.pl/skanery-kodow-kreskowych/ladowe
 - Materiały eksploatacyjne: https://www.takma.com.pl/materialy-eksploatacyjne
   - Taśmy termotransferowe Zebra (woskowe, woskowo-żywiczne, żywiczne — dobór do etykiety i drukarki): https://www.takma.com.pl/tasmy-termotransferowe
   - Etykiety termiczne Zebra (direct thermal, bez taśmy — papierowe, foliowe, linerless): https://www.takma.com.pl/etykiety-termiczne-zebra
