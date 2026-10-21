@@ -2786,7 +2786,16 @@ export const bixolonLabelAccessories: Product[] = [
       "bixolon-srp-380plus",
       "bixolon-srp-q200",
       "bixolon-srp-q300",
-      "bixolon-srp-s300ii"
+      "bixolon-srp-s300ii",
+      "bixolon-xd5-40iid",
+      "bixolon-xd5-40iit",
+      "bixolon-xt3-40",
+      "bixolon-xt5-40",
+      "bixolon-slp-dx220",
+      "bixolon-slp-tx220",
+      "bixolon-slp-dl410",
+      "bixolon-xl5-40ct",
+      "bixolon-xq-840ii"
     ],
     "downloads": [],
     "createdAt": "2026-10-21"
@@ -2851,7 +2860,14 @@ export const bixolonLabelAccessories: Product[] = [
       "bixolon-srp-380",
       "bixolon-srp-q200",
       "bixolon-srp-f310ii",
-      "bixolon-srp-s300ii"
+      "bixolon-srp-s300ii",
+      "bixolon-xd5-40iid",
+      "bixolon-xd5-40iit",
+      "bixolon-xt3-40",
+      "bixolon-xt5-40",
+      "bixolon-slp-dx220",
+      "bixolon-slp-tx220",
+      "bixolon-xl5-40ct"
     ],
     "downloads": [],
     "createdAt": "2026-10-21"
