@@ -874,7 +874,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'rodzaj',
       label: 'Rodzaj',
-      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth lub radio producenta; zasięg zależy od modelu i otoczenia\n• Prezentacyjny — stoi na ladzie, kod podsuwa się pod okno\n• Pierścieniowy — na palcu, obie ręce wolne; magazyn',
+      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth lub radio producenta; zasięg zależy od modelu i otoczenia\n• Ladowy — wbudowany w blat kasy; towar przesuwa się nad oknem\n• Prezentacyjny — stoi na blacie, kod podsuwa się pod okno\n• Pierścieniowy — na palcu, obie ręce wolne; magazyn',
       derived: [
         { value: 'Przewodowy', subcategory: 'skanery-przewodowe' },
         { value: 'Bezprzewodowy', subcategory: 'skanery-bezprzewodowe' },
@@ -1422,6 +1422,28 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
 for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/ladowe', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
+// Skanery ladowe: Szczelność i Interfejs mają dane tylko dla części z 9 modeli, więc tu ich nie ma
+categoryFilters['skanery-kodow-kreskowych/ladowe'] = [
+  categoryFilters['skanery-kodow-kreskowych'].find(d => d.specKey === 'producent')!,
+  {
+    specKey: 'konstrukcja',
+    label: 'Konstrukcja',
+    description: 'Liczba okien odczytu.\n\n• Jedno okno — poziome okno w blacie; mały blat\n\n• Dwa okna — okno poziome i pionowe w wieży; kasy o dużym ruchu',
+    derived: [
+      { value: 'Jedno okno (poziomy)', slugs: ['datalogic-magellan-3510hsi', 'datalogic-magellan-3550hsi', 'datalogic-magellan-3700hsi', 'zebra-sp7201-h', 'zebra-sp7208-h'] },
+      { value: 'Dwa okna (dwuokienkowy)', slugs: ['datalogic-magellan-9550i', 'datalogic-magellan-9600i', 'datalogic-magellan-9900i', 'zebra-mp7200'] },
+    ],
+  },
+  {
+    specKey: 'cena',
+    label: 'Cena netto',
+    derived: [
+      { value: 'do 2 000 zł', priceMax: 2000 },
+      { value: '2 000 – 4 000 zł', priceMin: 2000, priceMax: 4000 },
+      { value: 'powyżej 4 000 zł', priceMin: 4000 },
+    ],
+  },
+]
 categoryFilters['skanery-datalogic'] = [
   ...categoryFilters['skanery-kodow-kreskowych'].map(def => {
     if (def.specKey === 'szczelnosc') return {
