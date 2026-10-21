@@ -2866,7 +2866,7 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
       },
       {
         title: 'Wbudowany skaner (flush-mount) vs wolnostojący (standalone)',
-        content: 'Standalone: koszt montażu ~0 zł, wymiana w 5 minut. Embedded (flush-mount): koszt montażu 300–1 000 zł, estetyka i brak ryzyka strącenia. Standalone przy modernizacji istniejących kas, embedded przy projektowaniu nowych stanowisk od podstaw.',
+        content: 'Standalone: koszt montażu ~0 zł, wymiana w 5 minut. Embedded (flush-mount): koszt montażu 300–1 000 zł, estetyka i brak ryzyka strącenia. Standalone przy modernizacji istniejących kas, embedded przy projektowaniu nowych stanowisk od podstaw. Skanery do zabudowy na równi z blatem: [skanery ladowe](/skanery-kodow-kreskowych/ladowe).',
       },
     ],
     howToSteps: [

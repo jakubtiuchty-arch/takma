@@ -1128,7 +1128,7 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery prezentacyjne (hands-free) do kas samoobsługowych i punktów sprzedaży — automatyczne skanowanie bez naciskania przycisku.',
     seoTitle: 'Skanery prezentacyjne (hands-free) do POS i kas',
-    seoDescription: 'Skanery prezentacyjne do kas od 995 zł netto. Automatyczne skanowanie kodów 1D/2D bez przyciskania — idealne do retail, aptek, bibliotek. Zebra DS9308 (kompaktowy) i DS9908 (hybrydowy). TAKMA — autoryzowany partner Zebra.',
+    seoDescription: 'Skanery prezentacyjne do kas: automatyczny odczyt kodów 1D/2D bez naciskania przycisku. Zebra DS9308 i DS9908 oraz Datalogic Magellan 900i, 1500i i 3600VSi. Ceny netto i dostępność w TAKMA.',
     longDescription: 'Prezentacyjne czytniki kodów kreskowych (skanery hands-free) do kas samoobsługowych, aptek i punktów POS. Automatyczny odczyt kodów 1D/2D bez naciskania przycisku — wystarczy przesunąć produkt przed skanerem. Wielokierunkowe pole skanowania, odczyt z ekranów smartfonów.',
     icon: 'scan',
     productIds: ['zebra-ds9908', 'zebra-ds9308'],
