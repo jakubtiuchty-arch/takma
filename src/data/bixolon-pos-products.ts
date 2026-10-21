@@ -120,11 +120,13 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-350v",
-      "bixolon-srp-q200"
+      "bixolon-srp-350plusv",
+      "epson-tm-t20iv"
     ],
     "downloads": [
       {
@@ -293,7 +295,8 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-330iii",
@@ -518,7 +521,8 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-350v",
@@ -731,7 +735,8 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-380plus",
@@ -874,12 +879,13 @@ export const bixolonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "bixolon-usb-kab-g"
+      "bixolon-usb-kab-g",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-380",
       "bixolon-srp-350plusv",
-      "bixolon-srp-350v"
+      "epson-tm-t88vii"
     ],
     "downloads": [
       {
@@ -1024,12 +1030,12 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-q300",
-      "bixolon-srp-330iii",
-      "bixolon-srp-350v"
+      "epson-tm-m30iii"
     ],
     "downloads": [
       {
@@ -1162,12 +1168,13 @@ export const bixolonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "bixolon-usb-kab-g"
+      "bixolon-usb-kab-g",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
       "bixolon-srp-q200",
-      "bixolon-srp-f310ii",
-      "bixolon-srp-350v"
+      "epson-tm-m30iii",
+      "epson-tm-m30iii-h"
     ],
     "downloads": [
       {
@@ -1355,9 +1362,9 @@ export const bixolonPosProducts: Product[] = [
       "bixolon-ser-kab-9-9"
     ],
     "relatedProducts": [
+      "epson-tm-t70ii",
       "bixolon-srp-q300",
-      "bixolon-srp-350plusv",
-      "bixolon-srp-380"
+      "bixolon-srp-350plusv"
     ],
     "downloads": [
       {
@@ -1595,12 +1602,13 @@ export const bixolonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "bixolon-usb-kab-g",
-      "bixolon-ser-kab-9-9"
+      "bixolon-ser-kab-9-9",
+      "bixolon-rbc-100"
     ],
     "relatedProducts": [
-      "bixolon-srp-350plusv",
-      "bixolon-srp-f310ii",
-      "bixolon-srp-q300"
+      "epson-tm-l100",
+      "epson-tm-l90lf",
+      "epson-tm-l90"
     ],
     "downloads": [
       {
@@ -1633,11 +1641,11 @@ export const bixolonPosAccessories: Product[] = [
   {
     "id": "bixolon-rbc-100",
     "slug": "bixolon-rbc-100",
-    "name": "Brzęczyk BIXOLON RBC-100 do SRP-F310II",
-    "seoTitle": "Brzęczyk BIXOLON RBC-100 do SRP-F310II",
+    "name": "Brzęczyk BIXOLON RBC-100 do drukarek POS",
+    "seoTitle": "Brzęczyk BIXOLON RBC-100 do drukarek POS",
     "seoDescription": "BIXOLON RBC-100 to zewnętrzny brzęczyk informujący o wydruku na zgodnej drukarce POS. Sprawdź cenę, stan i zgodność.",
     "shortDescription": "BIXOLON RBC-100 to zewnętrzny brzęczyk informujący o wydruku na zgodnej drukarce POS.",
-    "description": "BIXOLON RBC-100 to zewnętrzny brzęczyk informujący o wydruku na zgodnej drukarce POS.\n\n## Zastosowanie i połączenie\n\nSygnał dźwiękowy ułatwia zauważenie dokumentu przy głośnym stanowisku. Podłącz brzęczyk do przeznaczonego dla niego złącza zgodnej drukarki. Nie jest to przewód sieciowy ani urządzenie do zasilania szuflady. Oferowany brzęczyk nie obejmuje drukarki.\n\n## Zgodna drukarka\n\n[BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii). Zgodność dotyczy tej rodziny; nie dobieraj akcesorium wyłącznie po wyglądzie złącza.",
+    "description": "BIXOLON RBC-100 to zewnętrzny brzęczyk informujący o wydruku na zgodnej drukarce POS.\n\n## Zastosowanie i połączenie\n\nSygnał dźwiękowy ułatwia zauważenie dokumentu przy głośnym stanowisku. Podłącz brzęczyk do przeznaczonego dla niego złącza zgodnej drukarki. Zestaw nie zawiera drukarki.\n\n## Zgodne drukarki\n\n[BIXOLON SRP-330III](/produkt/bixolon-srp-330iii), [BIXOLON SRP-350V](/produkt/bixolon-srp-350v), [BIXOLON SRP-350plusV](/produkt/bixolon-srp-350plusv), [BIXOLON SRP-380](/produkt/bixolon-srp-380), [BIXOLON SRP-380plus](/produkt/bixolon-srp-380plus), [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300), [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii), [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -1667,7 +1675,7 @@ export const bixolonPosAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SRP-F310II"
+        "value": "SRP-330III, SRP-350V, SRP-350plusV, SRP-380, SRP-380plus, SRP-Q200, SRP-Q300, SRP-F310II, SRP-S300II"
       }
     ],
     "applications": [
@@ -1676,7 +1684,15 @@ export const bixolonPosAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "bixolon-srp-f310ii"
+      "bixolon-srp-330iii",
+      "bixolon-srp-350v",
+      "bixolon-srp-350plusv",
+      "bixolon-srp-380",
+      "bixolon-srp-380plus",
+      "bixolon-srp-q200",
+      "bixolon-srp-q300",
+      "bixolon-srp-f310ii",
+      "bixolon-srp-s300ii"
     ],
     "downloads": [],
     "createdAt": "2026-10-21",

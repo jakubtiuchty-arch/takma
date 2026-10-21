@@ -9,7 +9,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka paragonów Epson TM-T20IV — 80 mm, USB, RS-232",
     "seoDescription": "Drukarka paragonów Epson TM-T20IV: termiczna drukarka POS 203 dpi, do 250 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-T20IV Epson z USB i RS-232, opcja Ethernet. PN: C31CL47101, C31CL47102.",
     "shortDescription": "Epson TM-T20IV to stacjonarna drukarka termiczna do paragonów niefiskalnych, potwierdzeń i biletów na papierze 58 lub 80 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.",
-    "description": "Epson TM-T20IV to stacjonarna drukarka termiczna do paragonów niefiskalnych, potwierdzeń i biletów na papierze 58 lub 80 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Podstawowe stanowisko sprzedażowe z wyborem sieci\n\nObie oferowane wersje mają USB oraz RS-232. PN C31CL47102 dodaje Ethernet, który umożliwia połączenie z siecią stanowiska. Wersja C31CL47101 nie ma tego portu.\n\nRolka może mieć średnicę do 83 mm. Papier ładuje się od góry, a gilotyna wykonuje częściowe cięcie. Obudowa ma 140 × 199 × 146 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru. C31CL47102 ma także rolkę papieru i uchwyt ścienny.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T70II](/produkt/epson-tm-t70ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T20IV to stacjonarna drukarka termiczna do paragonów niefiskalnych, potwierdzeń i biletów na papierze 58 lub 80 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Podstawowe stanowisko sprzedażowe z wyborem sieci\n\nObie oferowane wersje mają USB oraz RS-232. PN C31CL47102 dodaje Ethernet, który umożliwia połączenie z siecią stanowiska. Wersja C31CL47101 nie ma tego portu.\n\nRolka może mieć średnicę do 83 mm. Papier ładuje się od góry, a gilotyna wykonuje częściowe cięcie. Obudowa ma 140 × 199 × 146 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru. C31CL47102 ma także rolkę papieru i uchwyt ścienny.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T70II](/produkt/epson-tm-t70ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [BIXOLON SRP-330III](/produkt/bixolon-srp-330iii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -100,12 +100,14 @@ export const epsonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ot-wl06-323"
     ],
     "relatedProducts": [
       "epson-tm-t70ii",
       "epson-tm-t88vii",
-      "epson-tm-m30iii"
+      "epson-tm-m30iii",
+      "bixolon-srp-330iii"
     ],
     "downloads": [
       {
@@ -136,7 +138,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka paragonów Epson TM-T70II — obsługa od przodu",
     "seoDescription": "Drukarka paragonów Epson TM-T70II: termiczna drukarka POS 180 dpi, do 250 mm/s, papier 80 mm, ładowanie i wydruk od przodu, urządzenie niefiskalne. TM-T70II Epson z USB i RS-232 lub Ethernetem. PN: C31CD38025A0, C31CD38032, C31CD38022A1, C31CD38025C0.",
     "shortDescription": "Epson TM-T70II to termiczna drukarka POS do paragonów niefiskalnych na papierze 80 mm. Papier oraz gotowe dokumenty obsługuje się od przodu urządzenia.",
-    "description": "Epson TM-T70II to termiczna drukarka POS do paragonów niefiskalnych na papierze 80 mm. Papier oraz gotowe dokumenty obsługuje się od przodu urządzenia.\n\n## Drukarka pod ladą bez dostępu od góry\n\nPrzednie ładowanie rolki i odbiór dokumentu ułatwiają ustawienie TM-T70II pod blatem. Obudowa ma 125 × 194 × 114 mm. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi. Mieści rolkę o średnicy do 83 mm.\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy i wyposażeniem. Zestawy obejmują zasilacz PS-190 i przewód zasilający. Wersja C31CD38022A1 ma zasilacz PS-180 i wbudowany brzęczyk.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nKażdy zestaw ma także rolkę papieru i osłonę włącznika.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T70II to termiczna drukarka POS do paragonów niefiskalnych na papierze 80 mm. Papier oraz gotowe dokumenty obsługuje się od przodu urządzenia.\n\n## Drukarka pod ladą bez dostępu od góry\n\nPrzednie ładowanie rolki i odbiór dokumentu ułatwiają ustawienie TM-T70II pod blatem. Obudowa ma 125 × 194 × 114 mm. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi. Mieści rolkę o średnicy do 83 mm.\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy i wyposażeniem. Zestawy obejmują zasilacz PS-190 i przewód zasilający. Wersja C31CD38022A1 ma zasilacz PS-180 i wbudowany brzęczyk.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nKażdy zestaw ma także rolkę papieru i osłonę włącznika.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii). Wydruk od przodu ma także [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -238,12 +240,14 @@ export const epsonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "epson-ps-190",
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ps-180"
     ],
     "relatedProducts": [
       "epson-tm-t20iv",
       "epson-tm-m50ii",
-      "epson-tm-t88vii"
+      "epson-tm-t88vii",
+      "bixolon-srp-f310ii"
     ],
     "downloads": [
       {
@@ -274,7 +278,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka paragonów Epson TM-T88VII — 80 mm, 500 mm/s",
     "seoDescription": "Drukarka paragonów Epson TM-T88VII: termiczna drukarka POS 180 dpi, do 500 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-T88VII Epson z USB i Ethernetem, opcje RS-232 i PoweredUSB. PN: C31CJ57111, C31CJ57112, C31CJ57131, C31CJ57132, C31CJ57151, C31CJ57152.",
     "shortDescription": "Epson TM-T88VII to termiczna drukarka paragonów do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.",
-    "description": "Epson TM-T88VII to termiczna drukarka paragonów do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.\n\n## Wydajne drukowanie z portami dla infrastruktury POS\n\nRodzina obejmuje konfiguracje USB, Ethernet, RS-232 oraz PoweredUSB. Porty i sposób zasilania zależą od PN. Wersje z interfejsem wymiennym różnią się od konfiguracji ze stałym interfejsem. Wersje C31CJ57111, C31CJ57112, C31CJ57131 i C31CJ57132 mają wbudowany brzęczyk.\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Rolka może mieć średnicę do 83 mm. Wymiary obudowy wynoszą 145 × 195 × 148 mm. Zgodność z oprogramowaniem poprzednich T88V i T88VI ułatwia wymianę urządzenia, ale ustawienia sterownika i złącza nadal trzeba sprawdzić.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: osłona złączy, przegroda rolki papieru i rolka papieru. Wersje C31CJ57111, C31CJ57112, C31CJ57151 i C31CJ57152 mają zasilacz PS-190 z przewodem zasilającym. Wersje PoweredUSB C31CJ57131 i C31CJ57132 nie mają zasilacza. Zasilanie pochodzi z portu PoweredUSB stanowiska.\n\nGwarancja na drukarkę wynosi 48 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T88VII to termiczna drukarka paragonów do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.\n\n## Wydajne drukowanie z portami dla infrastruktury POS\n\nRodzina obejmuje konfiguracje USB, Ethernet, RS-232 oraz PoweredUSB. Porty i sposób zasilania zależą od PN. Wersje z interfejsem wymiennym różnią się od konfiguracji ze stałym interfejsem. Wersje C31CJ57111, C31CJ57112, C31CJ57131 i C31CJ57132 mają wbudowany brzęczyk.\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Rolka może mieć średnicę do 83 mm. Wymiary obudowy wynoszą 145 × 195 × 148 mm. Zgodność z oprogramowaniem poprzednich T88V i T88VI ułatwia wymianę urządzenia, ale ustawienia sterownika i złącza nadal trzeba sprawdzić.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: osłona złączy, przegroda rolki papieru i rolka papieru. Wersje C31CJ57111, C31CJ57112, C31CJ57151 i C31CJ57152 mają zasilacz PS-190 z przewodem zasilającym. Wersje PoweredUSB C31CJ57131 i C31CJ57132 nie mają zasilacza. Zasilanie pochodzi z portu PoweredUSB stanowiska.\n\nGwarancja na drukarkę wynosi 48 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [BIXOLON SRP-380plus](/produkt/bixolon-srp-380plus). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -421,7 +425,7 @@ export const epsonPosProducts: Product[] = [
     "relatedProducts": [
       "epson-tm-m50ii",
       "epson-tm-t20iv",
-      "epson-tm-h6000vi"
+      "bixolon-srp-380plus"
     ],
     "downloads": [
       {
@@ -566,7 +570,8 @@ export const epsonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "epson-ot-wl06-323",
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ps-190"
     ],
     "relatedProducts": [
       "epson-tm-m30iii-h",
@@ -679,7 +684,8 @@ export const epsonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ps-190"
     ],
     "relatedProducts": [
       "epson-tm-m30iii",
@@ -786,7 +792,8 @@ export const epsonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ps-190"
     ],
     "relatedProducts": [
       "epson-tm-t88vii",
@@ -913,7 +920,9 @@ export const epsonPosProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ot-wl06-323",
+      "epson-ps-180"
     ],
     "relatedProducts": [
       "epson-tm-m30iii",
@@ -1084,7 +1093,8 @@ export const epsonPosProducts: Product[] = [
       "epson-erc38br",
       "epson-ps-180",
       "epson-wh-10",
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ot-wl06-323"
     ],
     "relatedProducts": [
       "epson-tm-u220iid",
@@ -1191,7 +1201,8 @@ export const epsonPosProducts: Product[] = [
     "relatedAccessories": [
       "epson-erc38b",
       "epson-erc38br",
-      "epson-ps-180"
+      "epson-ps-180",
+      "epson-wh-10"
     ],
     "relatedProducts": [
       "epson-tm-u220iib",
@@ -1739,7 +1750,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka etykiet bez podkładu Epson TM-L100",
     "seoDescription": "Drukarka etykiet bez podkładu Epson TM-L100: etykiety liner-free i paragony, 203 dpi, do 170 mm/s, rolka do 102 mm, urządzenie niefiskalne. TM-L100 Epson z USB i Ethernetem oraz RS-232 lub Lightning, opcja Bluetooth. PN: C31CJ52103, C31CJ52111, C31CJ52121.",
     "shortDescription": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu i paragonów. Służy między innymi do oznaczania zamówień i odbioru towaru.",
-    "description": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu i paragonów. Służy między innymi do oznaczania zamówień i odbioru towaru.\n\n## Liner-free do zamówień i odbioru\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Drukarka ma rozdzielczość 203 dpi i mieści rolkę o średnicy do 102 mm. Parametry materiału trzeba dobrać do konkretnego zastosowania.\n\nWszystkie wersje drukują do 170 mm/s. Różnią się portami: C31CJ52103 ma USB, RS-232 i Ethernet, a C31CJ52111 ma USB, Ethernet i Lightning. C31CJ52121 ma dodatkowo Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-m30III](/produkt/epson-tm-m30iii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu i paragonów. Służy między innymi do oznaczania zamówień i odbioru towaru.\n\n## Liner-free do zamówień i odbioru\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Drukarka ma rozdzielczość 203 dpi i mieści rolkę o średnicy do 102 mm. Parametry materiału trzeba dobrać do konkretnego zastosowania.\n\nWszystkie wersje drukują do 170 mm/s. Różnią się portami: C31CJ52103 ma USB, RS-232 i Ethernet, a C31CJ52111 ma USB, Ethernet i Lightning. C31CJ52121 ma dodatkowo Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-L90](/produkt/epson-tm-l90), [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1841,12 +1852,13 @@ export const epsonPosProducts: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "epson-ps-190",
-      "epson-ot-bz20-634"
+      "epson-ot-bz20-634",
+      "epson-ot-wl06-323"
     ],
     "relatedProducts": [
       "epson-tm-l90lf",
       "epson-tm-l90",
-      "epson-tm-m30iii"
+      "bixolon-srp-s300ii"
     ],
     "downloads": [
       {
@@ -1877,7 +1889,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka etykiet i paragonów Epson TM-L90",
     "seoDescription": "Drukarka etykiet i paragonów Epson TM-L90: termiczna drukarka POS 203 dpi, do 150 mm/s, materiał do 80 mm, urządzenie niefiskalne. TM-L90 Epson z USB i RS-232 lub USB i Ethernetem. PN: C31C412412, C31C412465.",
     "shortDescription": "Epson TM-L90 to termiczna drukarka etykiet i paragonów POS w rozdzielczości 203 dpi. Standardowy model ma osobną konfigurację od wersji TM-L90LF.",
-    "description": "Epson TM-L90 to termiczna drukarka etykiet i paragonów POS w rozdzielczości 203 dpi. Standardowy model ma osobną konfigurację od wersji TM-L90LF.\n\n## Etykiety termiczne i potwierdzenia z rolki\n\nDrukarka osiąga do 150 mm/s i obsługuje materiał o szerokości do 80 mm. Rolka może mieć średnicę do 90 mm. Dobierz rodzaj materiału, czujnik oraz układ wydruku do używanej aplikacji. TM-L90 nie obsługuje materiału liner-free. Do tego służy TM-L90LF.\n\nOferowane PN mają USB z RS-232 albo Ethernetem. Zasilacz PS-180 jest dostępny także jako część zapasowa. Wymiary obudowy wynoszą 140 × 148 × 203 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, rolka etykiet, przegroda rolki papieru i prowadnica wylotu papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nDo etykiet bez podkładu służy [TM-L90LF](/produkt/epson-tm-l90lf). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-L90 to termiczna drukarka etykiet i paragonów POS w rozdzielczości 203 dpi. Standardowy model ma osobną konfigurację od wersji TM-L90LF.\n\n## Etykiety termiczne i potwierdzenia z rolki\n\nDrukarka osiąga do 150 mm/s i obsługuje materiał o szerokości do 80 mm. Rolka może mieć średnicę do 90 mm. Dobierz rodzaj materiału, czujnik oraz układ wydruku do używanej aplikacji. TM-L90 nie obsługuje materiału liner-free. Do tego służy TM-L90LF.\n\nOferowane PN mają USB z RS-232 albo Ethernetem. Zasilacz PS-180 jest dostępny także jako część zapasowa. Wymiary obudowy wynoszą 140 × 148 × 203 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, rolka etykiet, przegroda rolki papieru i prowadnica wylotu papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nDo etykiet bez podkładu służą [TM-L90LF](/produkt/epson-tm-l90lf), [TM-L100](/produkt/epson-tm-l100) i [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1964,7 +1976,7 @@ export const epsonPosProducts: Product[] = [
     "relatedProducts": [
       "epson-tm-l90lf",
       "epson-tm-l100",
-      "epson-tm-m30iii"
+      "bixolon-srp-s300ii"
     ],
     "downloads": [
       {
@@ -1995,7 +2007,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Drukarka etykiet liner-free Epson TM-L90LF",
     "seoDescription": "Drukarka etykiet liner-free Epson TM-L90LF: etykiety bez podkładu do 80 mm, 203 dpi, do 170 mm/s, urządzenie niefiskalne. TM-L90LF Epson z USB i RS-232. PN: C31C412682.",
     "shortDescription": "Epson TM-L90LF to termiczna drukarka etykiet bez podkładu i potwierdzeń. Wersja LF jest przeznaczona do zgodnego materiału liner-free.",
-    "description": "Epson TM-L90LF to termiczna drukarka etykiet bez podkładu i potwierdzeń. Wersja LF jest przeznaczona do zgodnego materiału liner-free.\n\n## Wydruk samoprzylepny bez oddzielnej warstwy podkładowej\n\nTM-L90LF drukuje do 170 mm/s w rozdzielczości 203 dpi. Obsługuje materiał do 80 mm szerokości i rolkę do 102 mm średnicy. Materiał oraz klej muszą pasować do mechanizmu.\n\nWersja C31C412682 ma USB i RS-232. Model nie ma Ethernetu ani Bluetooth. TM-L100 ma wersje z Ethernetem, Lightning i Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180 i przegroda rolki papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nOznaczenie LF dotyczy konfiguracji do zgodnych etykiet bez podkładu. [Standardowy TM-L90](/produkt/epson-tm-l90) ma osobną kartę i inne przeznaczenie materiałowe. Przed zakupem dobierz rolkę i rodzaj kleju do wersji LF. Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-L90LF to termiczna drukarka etykiet bez podkładu i potwierdzeń. Wersja LF jest przeznaczona do zgodnego materiału liner-free.\n\n## Wydruk samoprzylepny bez oddzielnej warstwy podkładowej\n\nTM-L90LF drukuje do 170 mm/s w rozdzielczości 203 dpi. Obsługuje materiał do 80 mm szerokości i rolkę do 102 mm średnicy. Materiał oraz klej muszą pasować do mechanizmu.\n\nWersja C31C412682 ma USB i RS-232. Model nie ma Ethernetu ani Bluetooth. TM-L100 ma wersje z Ethernetem, Lightning i Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180 i przegroda rolki papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nOznaczenie LF dotyczy konfiguracji do zgodnych etykiet bez podkładu. [Standardowy TM-L90](/produkt/epson-tm-l90) ma osobną kartę i inne przeznaczenie materiałowe. Przed zakupem dobierz rolkę i rodzaj kleju do wersji LF. Etykiety bez podkładu drukują też [Epson TM-L100](/produkt/epson-tm-l100) i [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -2077,7 +2089,7 @@ export const epsonPosProducts: Product[] = [
     "relatedProducts": [
       "epson-tm-l100",
       "epson-tm-l90",
-      "epson-tm-m30iii"
+      "bixolon-srp-s300ii"
     ],
     "downloads": [
       {
@@ -2108,7 +2120,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Epson TM-P20II — mobilna drukarka paragonów 58 mm",
     "seoDescription": "Epson TM-P20II: mobilna drukarka potwierdzeń 58 mm, 203 dpi, do 100 mm/s. Sprawdź łączność, warianty PN, ceny i akcesoria do ładowania.",
     "shortDescription": "Epson TM-P20II to mobilna drukarka termiczna do potwierdzeń na papierze 58 mm. Drukuje do 100 mm/s w rozdzielczości 203 dpi.",
-    "description": "Epson TM-P20II to mobilna drukarka termiczna do potwierdzeń na papierze 58 mm. Drukuje do 100 mm/s w rozdzielczości 203 dpi.\n\n## Wąskie potwierdzenia przy pracowniku\n\nMaksymalna szerokość nadruku wynosi 48 mm, a rolka może mieć średnicę do 40 mm. Obudowa ma 79 × 120 × 46 mm i klasę IP54. Drukarka jest przeznaczona do noszenia przy pracowniku, a klips ułatwia mocowanie do paska.\n\nWybierz wariant Bluetooth albo Wi-Fi. Każdy wariant ma USB-C i jeden moduł radiowy. Bateria jest częścią zestawu, a zasilacz dobiera się osobno. Do wymiany służy zgodna bateria OT-BY20; nie zastępuje jej większy akumulator P80II.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nBateria jest częścią zestawu. Zasilacz sieciowy dobiera się osobno. Zapasowa bateria i pasek w akcesoriach są wyposażeniem opcjonalnym. Używaj wyłącznie zgodnego sposobu ładowania.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-P80II](/produkt/epson-tm-p80ii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-T20IV](/produkt/epson-tm-t20iv). Pozostałe urządzenia z baterią są w kategorii [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-P20II to mobilna drukarka termiczna do potwierdzeń na papierze 58 mm. Drukuje do 100 mm/s w rozdzielczości 203 dpi.\n\n## Wąskie potwierdzenia przy pracowniku\n\nMaksymalna szerokość nadruku wynosi 48 mm, a rolka może mieć średnicę do 40 mm. Obudowa ma 79 × 120 × 46 mm i klasę IP54. Drukarka jest przeznaczona do noszenia przy pracowniku, a klips ułatwia mocowanie do paska.\n\nWybierz wariant Bluetooth albo Wi-Fi. Każdy wariant ma USB-C i jeden moduł radiowy. Bateria jest częścią zestawu, a zasilacz dobiera się osobno. Do wymiany służy zgodna bateria OT-BY20; nie zastępuje jej większy akumulator P80II.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nBateria jest częścią zestawu. Zasilacz sieciowy dobiera się osobno. Zapasowa bateria i pasek w akcesoriach są wyposażeniem opcjonalnym. Używaj wyłącznie zgodnego sposobu ładowania.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[BIXOLON SPP-C200](/produkt/bixolon-spp-c200), [BIXOLON SPP-R210](/produkt/bixolon-spp-r210), [BIXOLON SPP-R200III PLUS](/produkt/bixolon-spp-r200iiiplus). Do papieru 80 mm służy [Epson TM-P80II](/produkt/epson-tm-p80ii). Pozostałe urządzenia z baterią są w kategorii [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "mobilne-drukarki-paragonow",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -2211,9 +2223,9 @@ export const epsonPosProducts: Product[] = [
       "epson-ot-sh01"
     ],
     "relatedProducts": [
-      "epson-tm-p80ii",
-      "epson-tm-m30iii",
-      "epson-tm-t20iv"
+      "bixolon-spp-c200",
+      "bixolon-spp-r210",
+      "bixolon-spp-r200iiiplus"
     ],
     "downloads": [
       {
@@ -2244,7 +2256,7 @@ export const epsonPosProducts: Product[] = [
     "seoTitle": "Epson TM-P80II — mobilna drukarka paragonów 80 mm",
     "seoDescription": "Epson TM-P80II: mobilna drukarka na papier 80 mm. Porównaj wersje z odrywaniem i AC z gilotyną. Sprawdź łączność, PN, ceny i ładowarki.",
     "shortDescription": "Epson TM-P80II to mobilna drukarka termiczna do papieru 80 mm. Rodzina obejmuje wersje z ręcznym odrywaniem oraz warianty AC z gilotyną.",
-    "description": "Epson TM-P80II to mobilna drukarka termiczna do papieru 80 mm. Rodzina obejmuje wersje z ręcznym odrywaniem oraz warianty AC z gilotyną.\n\n## Szerszy dokument z opcją automatycznego cięcia\n\nMaksymalna szerokość nadruku wynosi 72 mm, a rolka może mieć średnicę do 51 mm. Drukarka osiąga do 100 mm/s w rozdzielczości 203 dpi. Obudowa ma klasę IP54. Wersja podstawowa ma 105 × 138 × 58 mm, a AC z gilotyną 105 × 153 × 67 mm.\n\nPN C31CK00121 i C31CK00131 mają gilotynę. Wersje C31CK00101 i C31CK00111 korzystają z ręcznego oddzielenia dokumentu. Bluetooth i Wi-Fi również zależą od PN. Każda konfiguracja ma USB-C i baterię; zasilacz dobiera się osobno. Zapasowa bateria OT-BY80II pasuje do P80II, a nie do P20II.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nBateria jest częścią zestawu. Zasilacz sieciowy dobiera się osobno. Zapasowa bateria i pasek w akcesoriach są wyposażeniem opcjonalnym. Używaj wyłącznie zgodnego sposobu ładowania.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-P20II](/produkt/epson-tm-p20ii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-T70II](/produkt/epson-tm-t70ii). Pozostałe urządzenia z baterią są w kategorii [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-P80II to mobilna drukarka termiczna do papieru 80 mm. Rodzina obejmuje wersje z ręcznym odrywaniem oraz warianty AC z gilotyną.\n\n## Szerszy dokument z opcją automatycznego cięcia\n\nMaksymalna szerokość nadruku wynosi 72 mm, a rolka może mieć średnicę do 51 mm. Drukarka osiąga do 100 mm/s w rozdzielczości 203 dpi. Obudowa ma klasę IP54. Wersja podstawowa ma 105 × 138 × 58 mm, a AC z gilotyną 105 × 153 × 67 mm.\n\nPN C31CK00121 i C31CK00131 mają gilotynę. Wersje C31CK00101 i C31CK00111 korzystają z ręcznego oddzielenia dokumentu. Bluetooth i Wi-Fi również zależą od PN. Każda konfiguracja ma USB-C i baterię; zasilacz dobiera się osobno. Zapasowa bateria OT-BY80II pasuje do P80II, a nie do P20II.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nBateria jest częścią zestawu. Zasilacz sieciowy dobiera się osobno. Zapasowa bateria i pasek w akcesoriach są wyposażeniem opcjonalnym. Używaj wyłącznie zgodnego sposobu ładowania.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[BIXOLON SPP-C300](/produkt/bixolon-spp-c300), [BIXOLON SPP-R310](/produkt/bixolon-spp-r310). Do papieru 58 mm służy [Epson TM-P20II](/produkt/epson-tm-p20ii). Pozostałe urządzenia z baterią są w kategorii [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "mobilne-drukarki-paragonow",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -2363,9 +2375,8 @@ export const epsonPosProducts: Product[] = [
       "epson-ot-sh01"
     ],
     "relatedProducts": [
-      "epson-tm-p20ii",
-      "epson-tm-m30iii",
-      "epson-tm-t70ii"
+      "bixolon-spp-c300",
+      "bixolon-spp-r310"
     ],
     "downloads": [
       {
@@ -2398,7 +2409,7 @@ export const epsonPosAccessories: Product[] = [
     "seoTitle": "Adapter Wi-Fi Epson OT-WL06",
     "seoDescription": "Epson OT-WL06 C32C891323 to adapter Wi-Fi 2,4 i 5 GHz do zgodnych drukarek Epson. Sprawdź cenę, stan i zgodność.",
     "shortDescription": "Epson OT-WL06 C32C891323 to adapter Wi-Fi 2,4 i 5 GHz do zgodnych drukarek Epson.",
-    "description": "Epson OT-WL06 C32C891323 to adapter Wi-Fi 2,4 i 5 GHz do zgodnych drukarek Epson.\n\n## Zastosowanie i dobór\n\nAdapter dodaje łączność WLAN wyłącznie do obsługiwanych modeli i właściwego portu USB. Sprawdź zgodność konfiguracji i ustawienia sieci. Nie jest uniwersalnym adapterem do dowolnej drukarki z USB. Wersja drukarki z fabrycznym Wi-Fi może nie wymagać ponownego zakupu tego akcesorium.\n\n## Zgodne drukarki\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii).",
+    "description": "Epson OT-WL06 C32C891323 to adapter Wi-Fi 2,4 i 5 GHz do zgodnych drukarek Epson.\n\n## Zastosowanie i dobór\n\nAdapter dodaje łączność WLAN wyłącznie do obsługiwanych modeli i właściwego portu USB. Sprawdź zgodność konfiguracji i ustawienia sieci. Nie jest uniwersalnym adapterem do dowolnej drukarki z USB. Wersja drukarki z fabrycznym Wi-Fi może nie wymagać ponownego zakupu tego akcesorium.\n\n## Zgodne drukarki\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-m30II-S](/produkt/epson-tm-m30ii-s), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-L100](/produkt/epson-tm-l100), [Epson TM-U220IIB](/produkt/epson-tm-u220iib). Do TM-T20IV adapter pasuje tylko w wersji C31CL47102. Do TM-L100 pasuje w wersjach C31CJ52111 i C31CJ52121, bez wersji z RS-232. Do TM-U220IIB pasuje tylko w wersjach C31CL27141 i C31CL27142.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2428,7 +2439,7 @@ export const epsonPosAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "TM-T88VII, TM-m30III"
+        "value": "TM-T88VII, TM-m30III, TM-m30II-S, TM-T20IV (C31CL47102), TM-L100 (C31CJ52111, C31CJ52121), TM-U220IIB (C31CL27141, C31CL27142)"
       }
     ],
     "applications": [
@@ -2438,7 +2449,11 @@ export const epsonPosAccessories: Product[] = [
     "relatedAccessories": [],
     "relatedProducts": [
       "epson-tm-t88vii",
-      "epson-tm-m30iii"
+      "epson-tm-m30iii",
+      "epson-tm-m30ii-s",
+      "epson-tm-t20iv",
+      "epson-tm-l100",
+      "epson-tm-u220iib"
     ],
     "downloads": [],
     "createdAt": "2026-10-21",
@@ -2511,7 +2526,7 @@ export const epsonPosAccessories: Product[] = [
     "seoTitle": "Uchwyt ścienny Epson WH-10",
     "seoDescription": "Epson WH-10 C32C845040 to uchwyt do montażu zgodnej drukarki na ścianie. Sprawdź cenę, stan i zgodność.",
     "shortDescription": "Epson WH-10 C32C845040 to uchwyt do montażu zgodnej drukarki na ścianie.",
-    "description": "Epson WH-10 C32C845040 to uchwyt do montażu zgodnej drukarki na ścianie.\n\n## Zastosowanie i dobór\n\nUchwyt ogranicza miejsce zajmowane na blacie. Dobierz mocowanie do podłoża oraz masy urządzenia. Zachowaj dostęp do rolki i złączy. Zgodność dotyczy wskazanych modeli; podobna obudowa innej generacji nie potwierdza dopasowania.\n\n## Zgodne drukarki\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-U220IIB](/produkt/epson-tm-u220iib), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-L90LF](/produkt/epson-tm-l90lf).",
+    "description": "Epson WH-10 C32C845040 to uchwyt do montażu zgodnej drukarki na ścianie.\n\n## Zastosowanie i dobór\n\nUchwyt ogranicza miejsce zajmowane na blacie. Dobierz mocowanie do podłoża oraz masy urządzenia. Zachowaj dostęp do rolki i złączy. Zgodność dotyczy wskazanych modeli; podobna obudowa innej generacji nie potwierdza dopasowania.\n\n## Zgodne drukarki\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-U220IIB](/produkt/epson-tm-u220iib), [Epson TM-U220IID](/produkt/epson-tm-u220iid), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-L90LF](/produkt/epson-tm-l90lf).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2541,7 +2556,7 @@ export const epsonPosAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "TM-T88VII, TM-U220IIB, TM-L90, TM-L90LF"
+        "value": "TM-T88VII, TM-U220IIB, TM-U220IID, TM-L90, TM-L90LF"
       }
     ],
     "applications": [
@@ -2552,6 +2567,7 @@ export const epsonPosAccessories: Product[] = [
     "relatedProducts": [
       "epson-tm-t88vii",
       "epson-tm-u220iib",
+      "epson-tm-u220iid",
       "epson-tm-l90",
       "epson-tm-l90lf"
     ],
@@ -2566,7 +2582,7 @@ export const epsonPosAccessories: Product[] = [
     "seoTitle": "Zasilacz Epson PS-180",
     "seoDescription": "Epson PS-180 C32C825341 to zasilacz sieciowy do zgodnych drukarek POS Epson. Sprawdź cenę, stan i zgodność.",
     "shortDescription": "Epson PS-180 C32C825341 to zasilacz sieciowy do zgodnych drukarek POS Epson.",
-    "description": "Epson PS-180 C32C825341 to zasilacz sieciowy do zgodnych drukarek POS Epson.\n\n## Zastosowanie i dobór\n\nSłuży do uruchomienia konfiguracji bez zasilacza lub jako element zapasowy. Przewód sieciowy nie jest dołączony. Do pracy zasilacz wymaga zgodnego przewodu zasilającego. Nie kupuj zasilacza ponownie, jeśli obejmuje go zestaw drukarki.\n\n## Zgodne drukarki\n\n[Epson TM-U220IIB](/produkt/epson-tm-u220iib), [Epson TM-U220IID](/produkt/epson-tm-u220iid), [Epson TM-U295](/produkt/epson-tm-u295), [Epson TM-J7200](/produkt/epson-tm-j7200), [Epson TM-J7700](/produkt/epson-tm-j7700), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-L90LF](/produkt/epson-tm-l90lf).",
+    "description": "Epson PS-180 C32C825341 to zasilacz sieciowy do zgodnych drukarek POS Epson.\n\n## Zastosowanie i dobór\n\nSłuży do uruchomienia konfiguracji bez zasilacza lub jako element zapasowy. Przewód sieciowy nie jest dołączony. Do pracy zasilacz wymaga zgodnego przewodu zasilającego. Nie kupuj zasilacza ponownie, jeśli obejmuje go zestaw drukarki.\n\n## Zgodne drukarki\n\n[Epson TM-U220IIB](/produkt/epson-tm-u220iib), [Epson TM-U220IID](/produkt/epson-tm-u220iid), [Epson TM-U295](/produkt/epson-tm-u295), [Epson TM-J7200](/produkt/epson-tm-j7200), [Epson TM-J7700](/produkt/epson-tm-j7700), [Epson TM-L90](/produkt/epson-tm-l90), [Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-m30II-S](/produkt/epson-tm-m30ii-s), [Epson TM-T70II](/produkt/epson-tm-t70ii). Do TM-T70II zasilacz PS-180 pasuje w wersji C31CD38022A1.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2596,7 +2612,7 @@ export const epsonPosAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "TM-U220IIB, TM-U220IID, TM-U295, TM-J7200, TM-J7700, TM-L90, TM-L90LF"
+        "value": "TM-U220IIB, TM-U220IID, TM-U295, TM-J7200, TM-J7700, TM-L90, TM-L90LF, TM-m30II-S, TM-T70II (C31CD38022A1)"
       }
     ],
     "applications": [
@@ -2611,7 +2627,9 @@ export const epsonPosAccessories: Product[] = [
       "epson-tm-j7200",
       "epson-tm-j7700",
       "epson-tm-l90",
-      "epson-tm-l90lf"
+      "epson-tm-l90lf",
+      "epson-tm-m30ii-s",
+      "epson-tm-t70ii"
     ],
     "downloads": [],
     "createdAt": "2026-10-21",
@@ -2624,7 +2642,7 @@ export const epsonPosAccessories: Product[] = [
     "seoTitle": "Zasilacz Epson PS-190",
     "seoDescription": "Epson PS-190 C32C825381 to zasilacz do zgodnych konfiguracji drukarek POS. Sprawdź cenę, stan i zgodność.",
     "shortDescription": "Epson PS-190 C32C825381 to zasilacz do zgodnych konfiguracji drukarek POS.",
-    "description": "Epson PS-190 C32C825381 to zasilacz do zgodnych konfiguracji drukarek POS.\n\n## Zastosowanie i dobór\n\nDobierz zasilacz do modelu i używanego sposobu zasilania. Przewód sieciowy jest osobnym elementem i nie jest dołączony do zasilacza. Konfiguracja PoweredUSB może korzystać z zasilania przez odpowiedni port; nie oznacza to, że zwykłe USB wystarczy do uruchomienia drukarki.\n\n## Zgodne drukarki\n\n[Epson TM-T70II](/produkt/epson-tm-t70ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-L100](/produkt/epson-tm-l100), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi).",
+    "description": "Epson PS-190 C32C825381 to zasilacz do zgodnych konfiguracji drukarek POS.\n\n## Zastosowanie i dobór\n\nDobierz zasilacz do modelu i używanego sposobu zasilania. Przewód sieciowy jest osobnym elementem i nie jest dołączony do zasilacza. Konfiguracja PoweredUSB może korzystać z zasilania przez odpowiedni port; nie oznacza to, że zwykłe USB wystarczy do uruchomienia drukarki.\n\n## Zgodne drukarki\n\n[Epson TM-T70II](/produkt/epson-tm-t70ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-m30III-H](/produkt/epson-tm-m30iii-h), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-L100](/produkt/epson-tm-l100), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -2654,7 +2672,7 @@ export const epsonPosAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "TM-T70II, TM-T88VII, TM-L100, TM-H6000VI"
+        "value": "TM-T70II, TM-T88VII, TM-m30III, TM-m30III-H, TM-m50II, TM-L100, TM-H6000VI"
       }
     ],
     "applications": [
@@ -2665,6 +2683,9 @@ export const epsonPosAccessories: Product[] = [
     "relatedProducts": [
       "epson-tm-t70ii",
       "epson-tm-t88vii",
+      "epson-tm-m30iii",
+      "epson-tm-m30iii-h",
+      "epson-tm-m50ii",
       "epson-tm-l100",
       "epson-tm-h6000vi"
     ],
