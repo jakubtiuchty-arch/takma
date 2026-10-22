@@ -10,8 +10,8 @@ export const zebraKc401Products: Product[] = [
     "name": "Zebra KC401",
     "seoH1": "Zebra KC401",
     "seoTitle": "Kiosk Zebra KC401 10\" z Androidem, Wi-Fi 7 i NFC",
-    "seoDescription": "Kiosk samoobsługowy Zebra KC401: kiosk Zebra 10,1\" z Androidem, NFC i Wi-Fi 7, następca CC6000. KC401 Zebra ze skanerem SR500. PN: KC4010B-00101CP0-A6.",
-    "shortDescription": "Zebra KC401 — kiosk samoobsługowy z ekranem dotykowym 10,1\", Androidem, NFC na ekranie i Wi-Fi 7. Służy do sprawdzania cen, rejestracji czasu pracy i kas samoobsługowych. Opcjonalny moduł skanera SR500 ma trzy kąty skanowania. Następca Zebra CC600 i CC6000.",
+    "seoDescription": "Kiosk samoobsługowy Zebra KC401: kiosk Zebra 10,1\" z Androidem, NFC i Wi-Fi 7, następca CC6000. KC401 Zebra z opcjonalnym skanerem SR500. PN: KC4010B-00101CP0-A6.",
+    "shortDescription": "Zebra KC401 — kiosk samoobsługowy z ekranem dotykowym 10,1\", Androidem, NFC na ekranie i Wi-Fi 7. Służy do sprawdzania cen, rejestracji czasu pracy i kas samoobsługowych. Opcjonalny moduł skanera SR500 jest dostępny w trzech kątach skanowania. Następca Zebra CC600 i CC6000.",
     "description": "Zebra KC401 to kiosk samoobsługowy z ekranem dotykowym 10,1\" i systemem Android. Służy do sprawdzania cen, rejestracji czasu pracy, kas samoobsługowych, obsługi kuponów i programów lojalnościowych oraz zamówień i zwrotów towaru. Pracuje w orientacji pionowej lub poziomej.\n\nEkran ma rozdzielczość 1280 × 800 px i jasność 300 nitów. NFC na ekranie odczytuje karty zbliżeniowe i telefony, np. karty lojalnościowe i bilety cyfrowe. Kiosk ma Wi-Fi 7, Bluetooth 6.0, port Ethernet z zasilaniem PoE+, kamerę przednią 5 MP i obudowę IP65.\n\nOpcjonalny moduł skanera SR500 odczytuje kody 1D i 2D. Montuje się go na miejscu instalacji. Moduł ma trzy wersje kąta skanowania: +25°, 0° i −25°. Kąt dobiera się do sposobu montażu kiosku.\n\nKC401 mocuje się przez VESA na ścianie, na słupie lub w zabudowie. Zastępuje modele Zebra CC600 i CC6000. W miejsce CC6000 montuje się go w tych samych uchwytach i zabudowie. Zasilacz, moduł skanera i uchwyty kupuje się osobno.\n\nKiosk z większym ekranem, od 15,6\" do 27\", to [SUNMI FLEX 3](/produkt/sunmi-flex-3).",
     "categoryId": "kioski-samoobslugowe",
     "subcategoryIds": [],
@@ -122,7 +122,7 @@ export const zebraKc401Products: Product[] = [
       },
       {
         "name": "Montaż",
-        "value": "VESA (ściana, słup, lada, zabudowa); uchwyty Zebra do KC401: VESA 100 × 100"
+        "value": "VESA (ściana, słup, lada, zabudowa); uchwyty ścienne i na słup Zebra: VESA 100 × 100; uchwyt PrintKiosk: VESA 75 × 75 lub 100 × 100"
       },
       {
         "name": "Wymiary",
@@ -202,7 +202,7 @@ export const zebraKc401Products: Product[] = [
       },
       {
         "question": "Jak zamontować Zebra KC401?",
-        "answer": "KC401 ma mocowanie VESA. Uchwyty Zebra mają VESA 100 × 100, elementy montażowe i śrubę zabezpieczającą w zestawie. Na ścianę służy uchwyt [KT-152097-03](/produkt/zebra-uchwyt-scienny-kt-152097-03) z półką na zasilacz albo uchwyt [KT-152097-04](/produkt/zebra-uchwyt-scienny-kt-152097-04) z ulepszoną blokadą. Na słup służy uchwyt [KT-152096-03](/produkt/zebra-uchwyt-na-slup-kt-152096-03) z półką na zasilacz. Uchwyt [BRKT-DPA-SK1-01](/produkt/zebra-uchwyt-printkiosk-cc6000-brkt-dpa-sk1-01) łączy kiosk z drukarką biurkową Zebra ZD4 lub ZD6 w jednym stanowisku PrintKiosk. Te uchwyty pasują także do CC6000."
+        "answer": "KC401 ma mocowanie VESA. Uchwyty ścienne i uchwyt na słup Zebra mają VESA 100 × 100 oraz elementy montażowe i śrubę zabezpieczającą w zestawie. Na ścianę służy uchwyt [KT-152097-03](/produkt/zebra-uchwyt-scienny-kt-152097-03) z półką na zasilacz albo uchwyt [KT-152097-04](/produkt/zebra-uchwyt-scienny-kt-152097-04) z ulepszoną blokadą. Na słup służy uchwyt [KT-152096-03](/produkt/zebra-uchwyt-na-slup-kt-152096-03) z półką na zasilacz. Uchwyt [BRKT-DPA-SK1-01](/produkt/zebra-uchwyt-printkiosk-cc6000-brkt-dpa-sk1-01) łączy kiosk z drukarką biurkową Zebra ZD4 lub ZD6 w jednym stanowisku PrintKiosk i ma VESA 75 × 75 lub 100 × 100. Te uchwyty pasują także do CC6000."
       },
       {
         "question": "Czy Zebra KC401 zastąpi CC600 i CC6000?",

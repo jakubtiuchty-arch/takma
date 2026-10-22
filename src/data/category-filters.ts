@@ -2084,7 +2084,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
   "kioski-samoobslugowe": {
     "Przekątna ekranu": "Przekątna ekranu kiosku. Każdy rozmiar SUNMI FLEX 3 ma własny PN na karcie produktu.\n• 10,1\" — Zebra KC401: WXGA 1280 × 800 px, 300 nitów, 6 GB RAM i 64 GB pamięci.\n• 15,6\" — SUNMI FLEX 3: 250 nitów, 4 GB RAM i 64 GB pamięci.\n• 18,5\", 21,5\" (22\") i 27\" — SUNMI FLEX 3: ekran IPS 400 nitów, 6 GB RAM i 128 GB pamięci, czytnik linii papilarnych.",
     "Pamięć": "Pamięć operacyjna i pamięć na dane.\n• 6 GB RAM / 64 GB — Zebra KC401, z gniazdem microSD do 2 TB.\n• 4 GB RAM / 64 GB — SUNMI FLEX 3 15,6\".\n• 6 GB RAM / 128 GB — SUNMI FLEX 3 18,5\", 22\" i 27\".",
-    "Producent": "Producent kiosku.\n• SUNMI — FLEX 3 w czterech rozmiarach, od 15,6\" do 27\", ze stojakami podłogowymi i na ladę.\n• Zebra — KC401 z ekranem 10,1\", następca CC600 i CC6000, z modułem skanera i uchwytami VESA.",
+    "Producent": "Producent kiosku.\n• SUNMI — FLEX 3 w czterech rozmiarach, od 15,6\" do 27\", ze stojakami podłogowymi i na ladę.\n• Zebra — KC401 z ekranem 10,1\", następca CC600 i CC6000; moduł skanera i uchwyty VESA są akcesoriami.",
     "Cena netto": "Cena netto kiosku; przy SUNMI FLEX 3 cena najtańszego rozmiaru. Ceny pozostałych rozmiarów podaje tabela wersji na karcie produktu. Stojaki, uchwyty, moduły i zasilacze kupuje się osobno."
   },
   "akcesoria-do-kioskow": {

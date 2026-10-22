@@ -146,7 +146,7 @@ export const kioskCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Z czego składa się kiosk Zebra KC401?",
-      "answer": "Z kiosku [Zebra KC401](/produkt/zebra-kc401), uchwytu i zasilania. Moduł skanera SR500 jest opcjonalny i ma trzy kąty skanowania. Uchwyty ścienne i uchwyt na słup VESA 100 × 100 pasują także do CC6000. Kiosk zasila zasilacz 36 W z przewodem zasilającym C5 albo PoE+ z przełącznika sieciowego. Akcesoria są w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow) i kupuje się je osobno."
+      "answer": "Z kiosku [Zebra KC401](/produkt/zebra-kc401), uchwytu i zasilania. Opcjonalny moduł skanera SR500 jest dostępny w trzech kątach skanowania. Uchwyty ścienne i uchwyt na słup VESA 100 × 100 pasują także do CC6000. Kiosk zasila zasilacz 36 W z przewodem zasilającym C5 albo PoE+ z przełącznika sieciowego. Akcesoria są w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow) i kupuje się je osobno."
     }
   ],
   "comparisons": [

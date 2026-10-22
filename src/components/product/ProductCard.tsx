@@ -65,7 +65,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const datalogicHandheldImage = datalogicScannerImage && product.categoryId === 'skanery-kodow-kreskowych'
   const bixolonLabelImage = /^bixolon-(?:xd3-|xd5-40(?:d|t|iid|iit)$|xt3-|xt5-40$|slp-|xl5-|xq-|usb-|ser-|xm7-|spp-[lcr]|srp-|rbc-|rmb-|pbd-|pqc-|pbp-|pbs-|pic-|plc-|pcc-|pbl-)/.test(product.id)
   const epsonPosImage = (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id)
-  const standardMobileImage = ['cipherlab', 'sunmi'].includes(product.manufacturerId)
+  // Kioski i akcesoria do kiosków Zebra stoją w jednej siatce z SUNMI FLEX 3, więc dostają te same kafle 4:3.
+  const standardMobileImage = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || product.categoryId === 'kioski-samoobslugowe' || !!product.subcategoryIds?.includes('akcesoria-do-kioskow')
   const uniformGridImage = standardMobileImage || product.uniformImage || epsonPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
   const gridImageFraction = standardMobileImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : epsonPosImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
 
