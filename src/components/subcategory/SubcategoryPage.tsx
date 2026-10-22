@@ -464,7 +464,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
             products={products}
             filters={sidebarFilters[slug] || categoryFilters[slug]}
             filtersFirst={!sidebarFilters[slug]}
-            useLivePrices={slug === 'drukarki-rfid' || slug === 'terminale-rfid' || slug === 'uchwyty-rfid' || slug === 'czytniki-rfid'}
+            useLivePrices={slug === 'drukarki-rfid' || slug === 'terminale-rfid' || slug === 'uchwyty-rfid' || slug === 'czytniki-rfid' || slug === 'akcesoria-do-komputerow-pos'}
             urlFilterPrefix={slug === 'drukarki-rfid' ? 'f.' : undefined}
             categoryNav={categories.map(cat => {
               const subs = getSubcategoriesForCategory(cat.id)

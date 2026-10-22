@@ -293,9 +293,20 @@ export const categories: Category[] = [
     description: 'Wytrzymałe komputery mobilne i kolektory danych do magazynu, logistyki i produkcji',
     seoTitle: 'Terminale mobilne i kolektory danych',
     seoDescription: 'Terminale mobilne i kolektory danych do magazynu, sklepu i logistyki. Porównaj skanery, klawiatury, pamięć, łączność i dostępne konfiguracje.',
-    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab) i [SUNMI](/terminale-sunmi). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy.',
+    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab) i [SUNMI](/terminale-sunmi). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy. Stacjonarne stanowiska kasowe z ekranem dotykowym są w kategorii [komputery POS](/komputery-pos).',
     icon: 'smartphone',
     productCount: 23,
+  },
+  {
+    id: 'komputery-pos',
+    slug: 'komputery-pos',
+    name: 'Komputery POS',
+    description: 'Stacjonarne komputery POS z ekranem dotykowym do stanowisk kasowych w sklepie, kawiarni i barze',
+    seoTitle: 'Komputery POS dotykowe SUNMI T3 — terminal stacjonarny POS',
+    seoDescription: 'Komputer POS SUNMI T3: ekran dotykowy 15,6", Android 13 z usługami Google i NFC, także z drukarką paragonów 80 mm. Terminal stacjonarny POS, ceny netto.',
+    longDescription: 'Komputer POS to stacjonarne stanowisko kasowe z ekranem dotykowym. Stoi przy kasie sklepu, w kawiarni lub w barze i uruchamia program sprzedaży. [SUNMI T3](/produkt/sunmi-t3) ma ekran 15,6" i Androida 13 z usługami Google. [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma dodatkowo wbudowaną drukarkę paragonów 80 mm. Do obu modeli są [ekrany klienta, szuflada kasowa i zasilacz](/akcesoria-do-komputerow-pos). Komputer POS nie jest kasą fiskalną.',
+    icon: 'monitor',
+    productCount: 2,
   },
   {
     id: 'skanery-kodow-kreskowych',
@@ -1093,6 +1104,20 @@ export const subcategories: Subcategory[] = [
       'm3-ul30-zasilacz-8slot', 'm3-ul30-zasilacz-snap-on',
     ],
     productCount: 28,
+  },
+  // --- Podkategoria: Akcesoria do komputerów POS (uzupełniana pętlą po subcategoryIds akcesoriów SUNMI) ---
+  {
+    id: 'akcesoria-do-komputerow-pos',
+    slug: 'akcesoria-do-komputerow-pos',
+    name: 'Akcesoria do komputerów POS',
+    parentCategoryId: 'komputery-pos',
+    description: 'Ekrany klienta, szuflada kasowa, zasilacz i prowadnica papieru do komputerów POS SUNMI T3 i T3 80 mm',
+    seoTitle: 'Akcesoria do komputerów POS SUNMI T3 | Ekran klienta, szuflada',
+    seoDescription: 'Akcesoria do komputera POS SUNMI T3 i T3 80 mm: ekran klienta 10,1" i 15,6" z NFC, szuflada kasowa SUNMI MAX, zasilacz 24 V i prowadnica papieru 58 mm.',
+    longDescription: 'Akcesoria do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Ekran klienta 10,1" lub 15,6" montuje się z tyłu komputera i pokazuje klientowi pozycje i kwotę. Szuflada kasowa SUNMI MAX łączy się z portem szuflady komputera. Zasilacz 24 V / 2,5 A zastępuje zasilacz z zestawu, a prowadnica 58 mm pozwala drukować w T3 80 mm na węższym papierze.',
+    icon: 'package',
+    productIds: [],
+    productCount: 0,
   },
   // --- Podkategorie: Skanery kodów kreskowych ---
   {

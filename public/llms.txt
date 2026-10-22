@@ -323,6 +323,12 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 - CipherLab RK96 (gun z klawiaturą, Wi-Fi 7, 7000 mAh, gwarancja 3 lata, następca RK95, od 7 357 zł): https://www.takma.com.pl/produkt/cipherlab-rk96
 - CipherLab RK96 Cold Storage (mroźnia od −30°C, podgrzewany ekran, 5500 mAh, od 9 645 zł): https://www.takma.com.pl/produkt/cipherlab-rk96-cold-storage
 
+## Komputery POS (SUNMI)
+- [Komputery POS](https://www.takma.com.pl/komputery-pos): stacjonarne stanowiska kasowe z ekranem dotykowym 15,6", Android 13 z usługami Google (GMS EDLA), NFC przy ekranie i czytnik linii papilarnych w przycisku zasilania. Urządzenia niefiskalne.
+- [SUNMI T3](https://www.takma.com.pl/produkt/sunmi-t3) (PN P01280007): bez drukarki, Qualcomm 8 rdzeni do 2,4 GHz, 4/64 GB, microSD do 2 TB, Wi-Fi 5, Bluetooth 5.0, Ethernet, port szuflady kasowej.
+- [SUNMI T3 80 mm](https://www.takma.com.pl/produkt/sunmi-t3-80mm) (PN P03180008): te same parametry i wbudowana drukarka termiczna 80 mm do 250 mm/s; papier 58 mm z prowadnicą C20000094.
+- [Akcesoria do komputerów POS](https://www.takma.com.pl/akcesoria-do-komputerow-pos): ekran klienta 10,1" C02020008 i 15,6" C02020007 z NFC, szuflada kasowa SUNMI MAX C06004004, zasilacz 24 V / 2,5 A X09020039, prowadnica papieru 58 mm C20000094.
+
 ## Drukarki POS i drukarki paragonów (Epson, BIXOLON, SUNMI)
 - [Drukarki POS i drukarki paragonów](https://www.takma.com.pl/drukarki-pos): 27 modeli Epson, BIXOLON i SUNMI do paragonów, bonów kuchennych, formularzy i etykiet bez podkładu. Papier 58 lub 80 mm; USB, Ethernet, RS-232, Wi-Fi i Bluetooth zależą od PN.
 - [Mobilne drukarki paragonów](https://www.takma.com.pl/mobilne-drukarki-paragonow): drukarki Epson i BIXOLON z baterią, papier 58, 80 lub 112 mm.

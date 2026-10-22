@@ -1910,6 +1910,30 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
   ...categoryFilters['mobilne-drukarki-paragonow'].map(f => f.specKey === 'material-paragony' ? { ...f, derived: f.derived?.map(rule => rule.value === 'Papier termiczny' ? { ...rule, slugs: [...(rule.slugs ?? []), 'epson-tm-p20ii', 'epson-tm-p80ii'] } : rule) } : f)
 ]
 
+// Komputery POS: filtrują tylko cechy, które różnią oferowane modele (drukarka i cena).
+categoryFilters['komputery-pos'] = [
+  { specKey: 'drukarka-komputer-pos', label: 'Drukarka wbudowana', derived: [
+    { value: 'Z drukarką 80 mm', pattern: '80 mm', specs: ['Drukarka'] },
+    { value: 'Bez drukarki', notSpecs: ['Drukarka'] }
+  ] },
+  { specKey: 'cena-komputer-pos', label: 'Cena netto', derived: [
+    { value: 'do 3 000 zł', priceMax: 3000 },
+    { value: 'powyżej 3 000 zł', priceMin: 3000 }
+  ] }
+]
+categoryFilters['akcesoria-do-komputerow-pos'] = [
+  { specKey: 'rodzaj-akcesorium-pos', label: 'Rodzaj akcesorium', derived: [
+    { value: 'Ekran klienta', namePattern: '^Ekran klienta' },
+    { value: 'Szuflada kasowa', namePattern: '^Szuflada kasowa' },
+    { value: 'Zasilacz', namePattern: '^Zasilacz' },
+    { value: 'Prowadnica papieru', namePattern: '^Prowadnica' }
+  ] },
+  { specKey: 'zgodnosc-komputer-pos', label: 'Zgodny komputer', derived: [
+    { value: 'SUNMI T3', pattern: 'SUNMI T3(,|$)', specs: ['Zgodność'] },
+    { value: 'SUNMI T3 80 mm', pattern: 'SUNMI T3 80 mm', specs: ['Zgodność'] }
+  ] }
+]
+
 categoryFilters['terminale-cipherlab'] = [
   { specKey: 'System operacyjny', label: 'System operacyjny', description: 'Android uruchamia zgodne aplikacje mobilne. cOS to system do aplikacji zadaniowych tworzonych np. w Forge Application Generator; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
   { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage','cipherlab-8000','cipherlab-8200','cipherlab-8300','cipherlab-8600']}] },
@@ -1952,11 +1976,19 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
   "drukarki-pos": {
     "Materiał": "Materiał musi pasować do mechanizmu drukarki.\n• Termiczny — papier z warstwą reagującą na ciepło.\n• Linerless — etykiety samoprzylepne bez podkładu, tylko do zgodnych drukarek.\n• Zwykły papier — do odpowiednich drukarek igłowych lub atramentowych."
   },
+  "komputery-pos": {
+    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. Prowadnica pozwala użyć papieru 58 mm.\n• Bez drukarki — wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
+    "Cena netto": "Cena netto komputera bez ekranu klienta i szuflady. Akcesoria kupuje się osobno."
+  },
+  "akcesoria-do-komputerow-pos": {
+    "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
+    "Zgodny komputer": "Model, z którym akcesorium współpracuje. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
+  },
   "mobilne-drukarki-paragonow": {
     "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
   }
 }
-for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
+for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
   categoryFilters[category] = (categoryFilters[category] ?? []).map(filter => ({
     ...filter,
     description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,

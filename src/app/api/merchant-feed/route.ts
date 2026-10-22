@@ -109,12 +109,15 @@ interface StockRow {
   found: boolean
 }
 
-/** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet. */
+/** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet,
+ *  543648 = Terminale POS (komputery POS z ekranem dotykowym). */
 const GOOGLE_CATEGORY: Record<string, string> = {
   'drukarki-etykiet': '952',
+  'komputery-pos': '543648',
 }
 
-/** Terminal z wbudowaną drukarką (SUNMI V3, V3H, V3 Plus) to dla kupujących terminal POS. */
+/** Terminal z wbudowaną drukarką (SUNMI V3, V3H, V3 Plus) to dla kupujących terminal POS;
+ *  komputer POS z drukarką (SUNMI T3 80 mm) ma typ „Komputer POS z drukarką”. */
 function maDrukarke(product: Product): boolean {
   return product.specifications.some(s => /^Drukarka/i.test(s.name))
 }
@@ -138,6 +141,9 @@ function typUrzadzenia(product: Product): string | null {
       return /skaner|czytnik/i.test(product.name) ? null : 'Skaner kodów kreskowych'
     case 'drukarki-pos':
       return /drukark/i.test(product.name) ? null : 'Drukarka paragonów'
+    case 'komputery-pos':
+      if (/komputer/i.test(product.name)) return null
+      return maDrukarke(product) ? 'Komputer POS z drukarką' : 'Komputer POS'
     default:
       return null
   }

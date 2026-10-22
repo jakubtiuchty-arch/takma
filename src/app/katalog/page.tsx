@@ -17,7 +17,9 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
 
   // Lista wszystkich produktów marki obejmuje także akcesoria. Nie jest zamiennikiem kategorii terminali.
   if (manufacturer && ['sunmi', 'cipherlab'].includes(manufacturer.id)) {
-    const title = `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
+    const title = manufacturer.id === 'sunmi'
+      ? 'Produkty SUNMI — terminale mobilne, komputery POS, drukarki POS i akcesoria'
+      : `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
     return {
       title,
       description: manufacturer.seoDescription,

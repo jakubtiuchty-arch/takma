@@ -16,7 +16,7 @@ export interface Manufacturer {
 }
 
 export const manufacturers: Manufacturer[] = [
-  { id: 'sunmi', slug: 'sunmi', name: 'SUNMI', logo: '/images/manufacturers/sunmi.svg', seoTitle: 'SUNMI — terminale mobilne i akcesoria | TAKMA', seoDescription: 'Terminale SUNMI do magazynu, sklepu i gastronomii. Porównaj kolektory serii L, M3 oraz terminale V3 z drukarką. Europejskie PN, ceny i zgodne wyposażenie.' },
+  { id: 'sunmi', slug: 'sunmi', name: 'SUNMI', logo: '/images/manufacturers/sunmi.svg', seoTitle: 'SUNMI — terminale, komputery POS, drukarki POS | TAKMA', seoDescription: 'SUNMI do magazynu, sklepu i gastronomii: kolektory L, terminale V3 z drukarką, komputery POS T3 i drukarki POS NT220 i NT320. Europejskie PN, ceny i akcesoria.' },
   { id: 'cipherlab', slug: 'cipherlab', name: 'CipherLab', logo: '/images/manufacturers/cipherlab.webp', seoTitle: 'CipherLab — terminale Android i akcesoria', seoDescription: 'Terminale mobilne CipherLab do sklepu, magazynu i logistyki. Porównaj konfiguracje RS i RK, ceny, dostępność oraz zgodne wyposażenie.' },
   { id: 'unitech', slug: 'unitech', name: 'Unitech', logo: '/images/manufacturers/unitech.svg', seoTitle: 'Unitech — czytniki RFID i akcesoria | TAKMA', seoDescription: 'Czytniki UHF RFID Unitech w wersjach europejskich. Sprawdź ceny i stany. Dobierz zgodne baterie, stacje i wyposażenie do ładowania.' },
   { id: 'tsl', slug: 'tsl', name: 'TSL', logo: '/images/manufacturers/tsl.webp', seoTitle: 'TSL — czytniki UHF RFID i akcesoria | TAKMA', seoDescription: 'Czytniki RFID TSL 3128, 3138 i 3166 w wersjach europejskich. Porównaj warianty ze skanerem kodów i bez niego. Sprawdź ceny, stany i zgodne akcesoria.' },

@@ -60,16 +60,17 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
   const datalogicScanner = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const bixolonLabel = (product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')) || (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || (product.manufacturerId === 'sunmi' && product.categoryId === 'drukarki-pos')
   const sunmiTerminal = product.manufacturerId === 'sunmi' && product.categoryId === 'terminale-mobilne'
+  const posComputer = product.categoryId === 'komputery-pos'
   const cipherlabTerminal = product.manufacturerId === 'cipherlab' && product.categoryId === 'terminale-mobilne'
   const epsonColorworks = product.manufacturerId === 'epson' && product.categoryId === 'drukarki-etykiet'
   const bixolonRfid = product.manufacturerId === 'bixolon' && product.subcategoryIds?.includes('drukarki-rfid')
-  const detailedProduct = sunmiTerminal || cipherlabTerminal || rfidTerminal || datalogicScanner || bixolonLabel || epsonColorworks || bixolonRfid
+  const detailedProduct = sunmiTerminal || posComputer || cipherlabTerminal || rfidTerminal || datalogicScanner || bixolonLabel || epsonColorworks || bixolonRfid
   const commonProperties = detailedProduct ? product.specifications
     .filter(spec => spec.name !== 'Part Number')
     .map(spec => ({ '@type': 'PropertyValue', name: spec.name, value: spec.value })) : []
   const facts = detailedProduct ? {
-    model: sunmiTerminal ? product.name.replace(/^SUNMI\s+/, '') : (epsonColorworks || bixolonRfid) ? product.name.replace(/^(?:BIXOLON|Epson)\s+/, '') : cipherlabTerminal ? product.name.replace(/^CipherLab\s+/, '') : bixolonLabel ? product.name.replace(/^(?:BIXOLON|Epson|SUNMI)\s+/, '') : datalogicScanner ? product.name.replace(/^Datalogic\s+/, '') : product.name.replace(/^Zebra\s+/, ''),
-    category: sunmiTerminal ? 'Terminale mobilne SUNMI' : epsonColorworks ? 'Kolorowe drukarki etykiet Epson ColorWorks' : bixolonRfid ? 'Drukarki RFID BIXOLON' : cipherlabTerminal ? 'Terminale mobilne CipherLab' : bixolonLabel ? (product.categoryId === 'drukarki-pos' ? 'Drukarki POS' : product.categoryId === 'mobilne-drukarki-paragonow' ? 'Mobilne drukarki paragonów' : 'Drukarki etykiet BIXOLON') : datalogicScanner ? 'Skanery kodów kreskowych Datalogic' : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
+    model: (sunmiTerminal || posComputer) ? product.name.replace(/^SUNMI\s+/, '') : (epsonColorworks || bixolonRfid) ? product.name.replace(/^(?:BIXOLON|Epson)\s+/, '') : cipherlabTerminal ? product.name.replace(/^CipherLab\s+/, '') : bixolonLabel ? product.name.replace(/^(?:BIXOLON|Epson|SUNMI)\s+/, '') : datalogicScanner ? product.name.replace(/^Datalogic\s+/, '') : product.name.replace(/^Zebra\s+/, ''),
+    category: sunmiTerminal ? 'Terminale mobilne SUNMI' : posComputer ? 'Komputery POS' : epsonColorworks ? 'Kolorowe drukarki etykiet Epson ColorWorks' : bixolonRfid ? 'Drukarki RFID BIXOLON' : cipherlabTerminal ? 'Terminale mobilne CipherLab' : bixolonLabel ? (product.categoryId === 'drukarki-pos' ? 'Drukarki POS' : product.categoryId === 'mobilne-drukarki-paragonow' ? 'Mobilne drukarki paragonów' : 'Drukarki etykiet BIXOLON') : datalogicScanner ? 'Skanery kodów kreskowych Datalogic' : product.subcategoryIds?.includes('uchwyty-rfid') ? 'Uchwyty RFID' : 'Terminale RFID',
     additionalProperty: commonProperties,
   } : {}
   const marka = markaProduktu(product)
@@ -125,7 +126,7 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
         brand: marka.brand,
         isVariantOf: { '@id': `${url}#product-group` },
         additionalProperty: [
-          ...commonProperties.filter(property => (sunmiTerminal || property.name !== 'Pamięć') && !(property.name in variant.attributes)),
+          ...commonProperties.filter(property => (sunmiTerminal || posComputer || property.name !== 'Pamięć') && !(property.name in variant.attributes)),
           ...Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
         ],
         // Bez potwierdzonej ceny nie tworzymy pozornej oferty ani dostępności.
