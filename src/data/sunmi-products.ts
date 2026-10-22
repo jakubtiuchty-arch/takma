@@ -2834,14 +2834,14 @@ export const sunmiProducts: Product[] = [
     "variants": [
       {
         "partNumber": "P01270001",
-        "name": "D3 PRO — SUNMI OS (Android 13)",
+        "name": "D3 PRO — SUNMI OS (Android 13), bez usług Google",
         "attributes": {},
         "priceFrom": 2045.25,
         "availability": "available"
       },
       {
         "partNumber": "P01270002",
-        "name": "D3 PRO — Android 13 z usługami Google (GMS)",
+        "name": "D3 PRO — SUNMI OS (Android 13) z usługami Google (GMS)",
         "attributes": {
           "Usługi Google (GMS)": "Tak",
           "Czytnik linii papilarnych": "Tak"
