@@ -782,7 +782,7 @@ export const citizenPosProducts: Product[] = [
       },
       {
         "name": "Karty interfejsu (wersje z gniazdem)",
-        "value": "Ethernet, Ethernet z USB host, RS-232, Wi-Fi compact, Ethernet premium, Wi-Fi premium"
+        "value": "Ethernet, Ethernet z USB host, USB z hubem, RS-232, Wi-Fi compact, Ethernet premium, Wi-Fi premium"
       },
       {
         "name": "Port szuflady kasowej",
@@ -834,7 +834,7 @@ export const citizenPosProducts: Product[] = [
       },
       {
         "name": "Gwarancja",
-        "value": "24 miesiące"
+        "value": "2 lata, w tym głowica i gilotyna"
       }
     ],
     "applications": [
@@ -1349,7 +1349,7 @@ export const citizenPosProducts: Product[] = [
     ],
     "applications": [
       "Paragony niefiskalne i etykiety w aptece",
-      "Etykiety cenowe i paragony w handlu",
+      "Etykiety i paragony w handlu",
       "Paragony i etykiety zamówień w hotelarstwie"
     ],
     "variants": [
@@ -2007,7 +2007,7 @@ export const citizenPosProducts: Product[] = [
       },
       {
         "name": "Normy",
-        "value": "CE, UL, TÜV, C-UL, FCC klasa A, VCCI; ENERGY STAR"
+        "value": "CE, UL, TÜV, C-UL, FCC klasa A, VCCI"
       },
       {
         "name": "Sterowniki",
