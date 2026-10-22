@@ -146,3 +146,56 @@ SPOZA KARTY (oznaczone wyżej): zawartość zestawu, gwarancja CT-E301/E601/S851
 - `src/lib/ingram.ts` nie rozpoznaje PN `CTE…`/`CTS…` ani akcesoriów Citizen (spadają do prefiksu `ZB`); ceny działają z BlueStar/Jarltech. Bez zmian, zgodnie z briefem.
 - GTIN wariantów są u ERS (np. CTE351XEEBX 5060198390760) — nie wpisane (karty Epson/BIXOLON POS też nie mają GTIN).
 - Slugi `citizen-*` przechodzą przez middleware dzięki prefiksowi `citizen-`; `existingSlugs` bez zmian.
+
+## Poprawki po audytach (23.10.2026)
+
+Dwa niezależne audyty porównały karty z kartami katalogowymi, instrukcjami, dokumentem „Network and Option Interfaces – POS” i dystrybutorami. Decyzje głównej sesji wprowadzone w commitach na gałęzi `produkt/citizen-pos`. Ta sekcja ma pierwszeństwo przed tabelami wyżej (akcesoria, „Pominięte akcesoria”).
+
+### Akcesoria
+
+| Zmiana | Źródło |
+|---|---|
+| Usunięte karty IF2-ES04, IF2-WF5S, IF2-WF5L, UPG-WF5S, UPG-WF5L (z `relatedAccessories`, opisów, FAQ, specyfikacji „Karty interfejsu” i `llms.txt`) | ERS: „Product Discontinued”; Jarltech ich nie ma; UPG rozbudowują tylko kartę Premium |
+| Usunięta karta WALLMOUNTKIT (także z akcesoriów CT-S601IIR) | Instrukcja CT-S601II, rozdz. 3.9: „CT-S601IIS (built-in power supply type) cannot be used vertically or installed on a wall” — brak zgodnej drukarki w katalogu |
+| 1100092: zgodność tylko CT-E301, CT-E351, CT-E601, CT-E651, CT-E651L, CT-S751 (gniazdo DC, zasilacz 37AD5); usunięty z CT-S851III i CT-S601IIR (wersje S z gniazdem AC); specyfikacja: 1 m, USB i wtyk DC | Dokument Citizen (wiersz Powered USB), ERS („Powered USB 24v Y-Cable USB & Hosiden DC power (1m)”, lista modeli), instrukcje (37AD5 w zestawie) |
+| TZ66803-0: zgodność tylko CT-S601IIR; usunięta z CT-S851III (USB w standardzie) | Instrukcja CT-S851III, karta katalogowa |
+| PPS00339S: bez „zdalnego zarządzania”; 2 porty USB host, Ethernet 10/100 Mb/s, konfiguracja w przeglądarce; różnica wobec PPS00585S: porty USB host i Request Print | Dokument Citizen, str. 2 (IF1-EFX2 / IF1-EFX3) i str. 4 |
+| PPZ60104S: 2 porty USB host do urządzeń wskazanych przez Citizen; XML/Web print w CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; port ładowania tylko CT-E601, CT-S751, CT-S4500 | Instrukcje rozdz. 1.1 i 3.6 (CT-E601), dokument Citizen str. 2 i 4 |
+| PPZ60112S: Wi-Fi 2,4 i 5 GHz, 802.11a/b/g/n/ac, do 433 Mb/s, port Ethernet 10BASE-T/100BASE-TX; adapter Wi-Fi działa w porcie USB karty, nie w porcie ładowania. Adapter w zestawie — nie wpisano (ERS i Jarltech tego nie podają) | Dokument Citizen str. 2 (IF2-WF05), instrukcja CT-E601 rozdz. 3.6 |
+| Nowa karta PPS00591S (IF2-EFX3, Ethernet compact 10/100 Mb/s) do CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; 210,67 zł, dostępna (API 23.10.2026: 2 szt. + 2 w dostawie) | Dokument Citizen str. 4 („IF2-EFX3 PN#: PPS00591S”, złącze IF2: CT-E6x1, CT-S751, CT-S4500) |
+| Nowa karta 2000462 (uchwyt pod ladę) do CT-S751; 142,19 zł, niedostępna | ERS („Under Counter Mounting Bracket for CT-S751”), Levata |
+| PPS00585S zgodna z CT-S601IIR | Jarltech: „fits for: … CT-S601II …” |
+| TZ66802-0: `shortDescription` z CL-S400DT, CT-S851III i CT-S601IIR | jak wcześniej (ERS, Jarltech) |
+| PWT20035-0: wejście 100–240 V, 50/60 Hz, wyjście 24 V DC, 2,5 A | Instrukcja CT-S4500, rozdz. 1.4 |
+| Akcesoria bez trybu rozkazującego („Przewód podłącza się przy wyłączonej drukarce. Do drukarki podłącza się jednocześnie tylko jeden interfejs.”) | Instrukcje rozdz. 3.6 („Do not connect multiple interfaces at the same time”) |
+
+### Drukarki
+
+| Karta | Zmiana | Źródło |
+|---|---|---|
+| CT-E651L | Papier 59–80 mm, 53–85 µm; etykiety na podkładzie 57,5/79,5 mm, 65–85 µm, podkład do 60 µm, gilza 25,4 mm (zewn. 32 mm); etykieta 25–300 mm, przerwa 4–30 mm; cięcie w przerwie, odcinek min. 29 mm; regulowany czujnik bliskiego końca; FAQ o wersji z wolnym gniazdem karty | Instrukcja CT-E651, rozdz. 1.4, 3.9, 5.2 |
+| CT-E651 | Wolne gniazdo karty tylko w XNEBX/XNEWX (atrybut „Gniazdo karty” i dymek); w wersjach Bluetooth i Lightning gniazdo zajmuje moduł fabryczny; regulowany czujnik bliskiego końca; IPX1; „w handlu, gastronomii i hotelarstwie”, „pod komputerem POS typu all-in-one albo obok szuflady” | Instrukcja CT-E651, rozdz. 1.1, 1.3 („interface board”), 3.9; karta katalogowa |
+| CT-S751 | Jak wyżej (atrybut „Gniazdo karty” dla XN); Bluetooth z certyfikatem Apple MFi (iPad, iPhone, Windows, macOS, Android) zamiast „do urządzeń z iOS”; regulowany czujnik bliskiego końca; IPX1; uchwyt 2000462 | Instrukcja CT-S751, rozdz. 1.1, 1.3, 3.11; dokument Citizen str. 2 (Bluetooth: Windows, macOS, iOS, Android) |
+| CT-S4500 | Gniazdo karty w wersjach XN, Bluetooth zajmuje gniazdo; etykiety szer. 54–108 mm (podkład 58–112 mm), dł. 25–300 mm, przerwa 4–30 mm; regulowany czujnik bliskiego końca | Instrukcja CT-S4500, rozdz. 1.3, 3.10, 5 (Label media) |
+| CT-S601IIR | Blok wymaganych elementów: karta interfejsu (TZ66803-0) i przewód; alternatywy TZ66801-0, TZ66802-0, PPZ60108S, PPS00585S; jedna karta. Gilza 25,4 mm / zewn. min. 29,5 mm, materiał 65–90 µm. Re-stick: „oznaczenia tymczasowe”, bez twierdzenia o ponownym przyklejaniu. Z opcji kart usunięto Wi-Fi premium i Powered USB (wersja S ma zasilacz wbudowany) | Instrukcja CT-S601II, rozdz. 1.4, 3.7 (Powered USB: przed podłączeniem odłączyć zasilacz AC), Jarltech (PPS00585S) |
+| CT-S851III | Zawartość zestawu: drukarka, przewód zasilający, rolka papieru, skrócona instrukcja; przewód USB i karty osobno | Instrukcja rozdz. 1.2, Jarltech („incl.: … receipt roll, QSG, order separately: interface”) |
+| CT-S310II | FAQ: zestaw do montażu na ścianie w komplecie, montaż wykonuje serwisant, praca pionowo na gumowych nóżkach z zestawu | Instrukcja CT-S310II, rozdz. 1.2 i 3.5 |
+| CT-E301, CT-E351, CT-E601, CT-E651 | Szerokość papieru „80 lub 58 mm” z zakresem z karty; papier 58 mm wymaga przekładki | Karty katalogowe, instrukcje (1.1, rozdz. o przekładce 58 mm) |
+| CT-E301, CT-E601 | ENERGY STAR w „Normy” | Instrukcje, rozdz. 1.1 |
+| CT-E351, CT-E651, CT-S751 | „Obudowa odporna na krople wody spadające pionowo (IPX1)” | Instrukcje, rozdz. 1.1 |
+| CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500 | Specyfikacja „Karty interfejsu” bez kart Premium; PPS00591S w FAQ o sieci | — |
+| Wszystkie | Trwałość głowicy i gilotyny bez zmian: karty katalogowe podają wartość szablonową, instrukcje inne (tylko CT-S601IIR zgodna) | Karty katalogowe, instrukcje rozdz. 1.4 |
+
+Tabela porównawcza w `pos-category-content.ts`: CT-E651L „paragony 59–80 mm, etykiety na podkładzie 57,5 lub 79,5 mm”.
+
+### Zdjęcia
+
+- CT-S310II: zdjęcie główne czarne (PN domyślny CTS310IIEBK); zamienione pliki `CTS310IIEBK.png` ↔ `-2.png` i ich wpisy w trzech mapach.
+- CT-E651L: usunięte białe `CTE651XNEBXL-2.png` (oferta ma tylko wersję czarną); `-3` → `-2`, `-4` → `-3` w plikach i mapach.
+- CT-E351 `-6`: oryginał `CT-E651/white/Citizen_CT-E651_White_POS.jpg` (4433 × 3838, ta sama obudowa) zamiast miniatury 750 px; plik identyczny z `CTE651XNEBX-6.png` (ta sama obróbka), wpisy map skopiowane.
+- Opisy: CT-S751 `-5` (opcjonalna karta Ethernet z portami USB host), CT-S4500 `-3` (opcjonalna karta Ethernet).
+
+### Do decyzji
+
+- IPX1 dla CT-E651L: instrukcja CT-E651 jest wspólna dla CT-E651L, ale brief wymienił tylko CT-E351, CT-E651 i CT-S751 — nie dopisano.
+- CT-S310II: instrukcja wymienia w zestawie także rolkę papieru i przegrodę 58 mm; „Zawartość zestawu” bez rolki (bez zmian).
