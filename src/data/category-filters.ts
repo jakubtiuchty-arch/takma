@@ -1885,7 +1885,7 @@ categoryFilters['drukarki-pos'] = [
 
 // POS manufacturers and technology use the existing sidebar controls.
 categoryFilters['drukarki-pos'] = [
-  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }] },
+  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }, { value: 'SUNMI', manufacturer: 'sunmi' }] },
   { specKey: 'technologia-pos', label: 'Technologia druku', derived: [
     { value: 'Termiczna', pattern: '^Termiczny', specs: ['Metoda druku'] },
     { value: 'Igłowa', pattern: '^Igłowy$', specs: ['Metoda druku'] },

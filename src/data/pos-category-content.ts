@@ -1,13 +1,13 @@
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const posCategoryContent: SubcategoryRichContent = {
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "sectionHeadings": {
     "expertAuthority": "Od czego zacząć dobór drukarki POS",
-    "technicalDeepDive": "Modele Epson i BIXOLON według technologii druku"
+    "technicalDeepDive": "Modele Epson, BIXOLON i SUNMI według technologii druku"
   },
   "modelComparison": {
-    "heading": "Porównanie drukarek POS Epson i BIXOLON",
+    "heading": "Porównanie drukarek POS Epson, BIXOLON i SUNMI",
     "note": "Interfejsy, kolor i wyposażenie zależą od PN. Pełną listę wariantów podaje karta produktu.",
     "columns": {
       "feeder": "Papier i wydruk"
@@ -187,6 +187,13 @@ export const posCategoryContent: SubcategoryRichContent = {
         "printing": "termiczny, 203 dpi, do 180 mm/s",
         "feeder": "paragony i etykiety bez podkładu 40 / 58 / 80 mm, ekran 2\"",
         "connectivity": "USB + Ethernet; opcje RS-232, Wi-Fi, Bluetooth, PoweredUSB"
+      },
+      {
+        "name": "SUNMI NT220",
+        "href": "/produkt/sunmi-nt220",
+        "printing": "termiczny, 203 dpi, do 150 mm/s",
+        "feeder": "paragony 30–58 mm i etykiety 30–56 mm, rolka do 80 mm",
+        "connectivity": "USB-C, Bluetooth BLE 5.0"
       }
     ]
   },
@@ -204,7 +211,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     ]
   },
   "expertAuthority": "Dobór zacznij od programu POS i portu na stanowisku. Następnie porównaj szerokość papieru, kierunek wydruku i miejsce na ladzie. Każda karta produktu podaje PN wariantów, cenę netto, stan magazynowy, zgodne akcesoria i kartę katalogową PDF.",
-  "technicalDeepDive": "Termiczne drukarki paragonów 80 mm: Epson [TM-T20IV](/produkt/epson-tm-t20iv) drukuje w 203 dpi do 250 mm/s, a [TM-T70II](/produkt/epson-tm-t70ii) przyjmuje papier i wydaje wydruk od przodu. [TM-T88VII](/produkt/epson-tm-t88vii) i [TM-m50II](/produkt/epson-tm-m50ii) drukują do 500 mm/s. BIXOLON [SRP-330III](/produkt/bixolon-srp-330iii) drukuje do 250 mm/s, a [SRP-350V](/produkt/bixolon-srp-350v) do 300 mm/s. [SRP-350plusV](/produkt/bixolon-srp-350plusv) drukuje do 400 mm/s i ma Ethernet w standardzie. [SRP-380](/produkt/bixolon-srp-380) drukuje do 350 mm/s, a [SRP-380plus](/produkt/bixolon-srp-380plus) do 500 mm/s. [SRP-F310II](/produkt/bixolon-srp-f310ii) ma wydruk od przodu i obudowę IP12.\n\nDo stanowisk z tabletem służą kompaktowe Epson [TM-m30III](/produkt/epson-tm-m30iii) i [TM-m30III-H](/produkt/epson-tm-m30iii-h). Drukują do 300 mm/s i mają wersje z Wi-Fi i Bluetooth. [TM-m30II-S](/produkt/epson-tm-m30ii-s) ma uchwyt na tablet. BIXOLON [SRP-Q300](/produkt/bixolon-srp-q300) drukuje na papierze 80 mm, a [SRP-Q200](/produkt/bixolon-srp-q200) tylko na papierze 58 mm.\n\nIgłowe [TM-U220IIB](/produkt/epson-tm-u220iib) (z gilotyną) i [TM-U220IID](/produkt/epson-tm-u220iid) (bez gilotyny) drukują na zwykłym papierze 57,5–76 mm. Z kasetą ERC38BR drukują w dwóch kolorach. [TM-U295](/produkt/epson-tm-u295) drukuje na pojedynczych formularzach. [TM-H6000VI](/produkt/epson-tm-h6000vi) łączy termiczny druk paragonów z igłowym drukiem dokumentów. Atramentowe [TM-J7200](/produkt/epson-tm-j7200) i [TM-J7700](/produkt/epson-tm-j7700) drukują z rolki 58–83 mm i na arkuszach. Nadruk na arkuszu ma szerokość do 81,3 mm (TM-J7200) i do 137,8 mm (TM-J7700).\n\nEtykiety bez podkładu drukują Epson [TM-L100](/produkt/epson-tm-l100), [TM-L90LF](/produkt/epson-tm-l90lf) i BIXOLON [SRP-S300II](/produkt/bixolon-srp-s300ii). Epson [TM-L90](/produkt/epson-tm-l90) drukuje etykiety z podkładem i paragony.",
+  "technicalDeepDive": "Termiczne drukarki paragonów 80 mm: Epson [TM-T20IV](/produkt/epson-tm-t20iv) drukuje w 203 dpi do 250 mm/s, a [TM-T70II](/produkt/epson-tm-t70ii) przyjmuje papier i wydaje wydruk od przodu. [TM-T88VII](/produkt/epson-tm-t88vii) i [TM-m50II](/produkt/epson-tm-m50ii) drukują do 500 mm/s. BIXOLON [SRP-330III](/produkt/bixolon-srp-330iii) drukuje do 250 mm/s, a [SRP-350V](/produkt/bixolon-srp-350v) do 300 mm/s. [SRP-350plusV](/produkt/bixolon-srp-350plusv) drukuje do 400 mm/s i ma Ethernet w standardzie. [SRP-380](/produkt/bixolon-srp-380) drukuje do 350 mm/s, a [SRP-380plus](/produkt/bixolon-srp-380plus) do 500 mm/s. [SRP-F310II](/produkt/bixolon-srp-f310ii) ma wydruk od przodu i obudowę IP12.\n\nDo stanowisk z tabletem służą kompaktowe Epson [TM-m30III](/produkt/epson-tm-m30iii) i [TM-m30III-H](/produkt/epson-tm-m30iii-h). Drukują do 300 mm/s i mają wersje z Wi-Fi i Bluetooth. [TM-m30II-S](/produkt/epson-tm-m30ii-s) ma uchwyt na tablet. BIXOLON [SRP-Q300](/produkt/bixolon-srp-q300) drukuje na papierze 80 mm, a [SRP-Q200](/produkt/bixolon-srp-q200) tylko na papierze 58 mm.\n\nIgłowe [TM-U220IIB](/produkt/epson-tm-u220iib) (z gilotyną) i [TM-U220IID](/produkt/epson-tm-u220iid) (bez gilotyny) drukują na zwykłym papierze 57,5–76 mm. Z kasetą ERC38BR drukują w dwóch kolorach. [TM-U295](/produkt/epson-tm-u295) drukuje na pojedynczych formularzach. [TM-H6000VI](/produkt/epson-tm-h6000vi) łączy termiczny druk paragonów z igłowym drukiem dokumentów. Atramentowe [TM-J7200](/produkt/epson-tm-j7200) i [TM-J7700](/produkt/epson-tm-j7700) drukują z rolki 58–83 mm i na arkuszach. Nadruk na arkuszu ma szerokość do 81,3 mm (TM-J7200) i do 137,8 mm (TM-J7700).\n\nEtykiety bez podkładu drukują Epson [TM-L100](/produkt/epson-tm-l100), [TM-L90LF](/produkt/epson-tm-l90lf) i BIXOLON [SRP-S300II](/produkt/bixolon-srp-s300ii). Epson [TM-L90](/produkt/epson-tm-l90) drukuje etykiety z podkładem i paragony. SUNMI [NT220](/produkt/sunmi-nt220) drukuje paragony i etykiety na papierze 30–58 mm, przez USB-C lub Bluetooth.",
   "useCases": [
     {
       "title": "Kasa i stanowisko sprzedaży",
