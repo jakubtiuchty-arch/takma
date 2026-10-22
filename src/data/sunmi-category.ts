@@ -5,7 +5,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
   contactText: 'Podaj wymagania aplikacji, rodzaje kodów i sposób pracy. Dobierzemy konfigurację terminala, zasilanie oraz zgodne akcesoria.',
   definition: {
     heading: 'Terminale SUNMI do towaru, zamówień i wydruków',
-    content: 'Terminal SUNMI łączy aplikację Android z obsługą danych w miejscu pracy. Kolektory serii L służą do pracy z towarem. M3 obsługuje aplikacje przez Wi-Fi. V3, V3H i V3 Plus mają wbudowaną drukarkę termiczną. Wersję skanera, pamięć oraz usługi Google wybierz według PN. Stacjonarne stanowiska kasowe z ekranem 15,6" to [SUNMI T3](/produkt/sunmi-t3), [SUNMI T3 PRO](/produkt/sunmi-t3-pro), [SUNMI D3](/produkt/sunmi-d3) i [SUNMI D3 PRO](/produkt/sunmi-d3-pro) w kategorii [komputery POS](/komputery-pos).',
+    content: 'Terminal SUNMI łączy aplikację Android z obsługą danych w miejscu pracy. Kolektory serii L służą do pracy z towarem. M3 obsługuje aplikacje przez Wi-Fi. V3, V3H i V3 Plus mają wbudowaną drukarkę termiczną. Wersję skanera, pamięć oraz usługi Google wybierz według PN. Stacjonarne stanowiska kasowe z ekranem 15,6" to [SUNMI T3](/produkt/sunmi-t3), [SUNMI T3 PRO](/produkt/sunmi-t3-pro), [SUNMI D3](/produkt/sunmi-d3) i [SUNMI D3 PRO](/produkt/sunmi-d3-pro) w kategorii [komputery POS](/komputery-pos). Kompaktowe stanowiska z ekranem 10,1" i drukarką to [SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) i [SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm).',
   },
   sectionHeadings: {
     technicalDeepDive: 'Porównanie terminali SUNMI',

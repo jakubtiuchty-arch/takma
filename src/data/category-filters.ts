@@ -1910,14 +1910,19 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
   ...categoryFilters['mobilne-drukarki-paragonow'].map(f => f.specKey === 'material-paragony' ? { ...f, derived: f.derived?.map(rule => rule.value === 'Papier termiczny' ? { ...rule, slugs: [...(rule.slugs ?? []), 'epson-tm-p20ii', 'epson-tm-p80ii'] } : rule) } : f)
 ]
 
-// Komputery POS: filtrują tylko cechy, które różnią oferowane modele (drukarka, pamięć, usługi Google i cena).
+// Komputery POS: filtrują tylko cechy, które różnią oferowane modele (drukarka, ekran, pamięć, usługi Google i cena).
 categoryFilters['komputery-pos'] = [
   { specKey: 'drukarka-komputer-pos', label: 'Drukarka wbudowana', derived: [
     { value: 'Z drukarką 80 mm', pattern: '80 mm', specs: ['Drukarka'] },
+    { value: 'Z drukarką 58 mm', pattern: '^Termiczna 58 mm', specs: ['Drukarka'] },
     { value: 'Bez drukarki', notSpecs: ['Drukarka'] }
   ] },
+  { specKey: 'przekatna-komputer-pos', label: 'Przekątna ekranu', derived: [
+    { value: '10,1"', pattern: '^IPS 10,1"', specs: ['Ekran'] },
+    { value: '15,6"', pattern: '^(IPS )?15,6"', specs: ['Ekran'] }
+  ] },
   { specKey: 'ekran-klienta-komputer-pos', label: 'Ekran klienta', derived: [
-    { value: 'W zestawie', pattern: '^W zestawie', specs: ['Ekran klienta'] },
+    { value: 'W zestawie', pattern: '^(W zestawie|Wbudowany)', specs: ['Ekran klienta'] },
     { value: 'Do dokupienia', pattern: '.', specs: ['Ekran klienta (opcja)'] }
   ] },
   { specKey: 'pamiec-komputer-pos', label: 'Pamięć RAM', derived: [
@@ -1994,11 +1999,12 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Materiał musi pasować do mechanizmu drukarki.\n• Termiczny — papier z warstwą reagującą na ciepło.\n• Linerless — etykiety samoprzylepne bez podkładu, tylko do zgodnych drukarek.\n• Zwykły papier — do odpowiednich drukarek igłowych lub atramentowych."
   },
   "komputery-pos": {
-    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. Obie drukarki mają mechanizm Seiko i gilotynę. T3 80 mm z prowadnicą drukuje też na papierze 58 mm.\n• Bez drukarki — T3, T3 PRO, D3 i D3 PRO; wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
-    "Ekran klienta": "Drugi ekran od strony klienta, np. z pozycjami i kwotą.\n• W zestawie — SUNMI D3 z ekranem klienta 10,1\".\n• Do dokupienia — do T3 i T3 80 mm ekrany C02020008 i C02020007, do T3 PRO i T3 PRO MAX ekrany C02020003 i C02020004, do D3 PRO ekran C02020005. Ekrany do tych modeli nie są zamienne.",
-    "Pamięć RAM": "Pamięć operacyjna dla programu sprzedaży.\n• 3 GB — SUNMI D3, pamięć 32 GB.\n• 4 GB — SUNMI T3, T3 80 mm i D3 PRO, pamięć 64 GB.\n• 6 GB — SUNMI T3 PRO i T3 PRO MAX, pamięć 128 GB.",
-    "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS: na Androidzie 13 w T3, T3 PRO i D3 PRO, na Androidzie 14 w D3.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO, T3 PRO MAX i D3 PRO.",
-    "Cena netto": "Cena netto komputera. SUNMI D3 ma ekran klienta w cenie. Do pozostałych modeli ekran klienta i szufladę kupuje się osobno."
+    "Drukarka wbudowana": "Drukarka termiczna w komputerze do paragonów niefiskalnych i bonów z programu POS.\n• Z drukarką 80 mm — T3 80 mm i T3 PRO MAX (Seiko, gilotyna) oraz D3 MINI 80 mm (gilotyna). T3 80 mm z prowadnicą drukuje też na papierze 58 mm.\n• Z drukarką 58 mm — D3 MINI 58 mm.\n• Bez drukarki — T3, T3 PRO, D3 i D3 PRO; wydruki przez osobną drukarkę POS.",
+    "Przekątna ekranu": "Przekątna ekranu głównego, od strony sprzedawcy.\n• 10,1\" — kompaktowe SUNMI D3 MINI z drukarką.\n• 15,6\" — T3, T3 PRO, D3 i D3 PRO; więcej miejsca na program sprzedaży.",
+    "Ekran klienta": "Drugi ekran od strony klienta, np. z pozycjami i kwotą.\n• W zestawie — SUNMI D3 z ekranem klienta 10,1\" oraz D3 MINI z wbudowanym wyświetlaczem 2,4\" (58 mm) lub ekranem dotykowym 4\" (80 mm).\n• Do dokupienia — do T3 i T3 80 mm ekrany C02020008 i C02020007, do T3 PRO i T3 PRO MAX ekrany C02020003 i C02020004, do D3 PRO ekran C02020005. Ekrany do tych modeli nie są zamienne.",
+    "Pamięć RAM": "Pamięć operacyjna dla programu sprzedaży.\n• 3 GB — SUNMI D3 i D3 MINI, pamięć 32 GB.\n• 4 GB — SUNMI T3, T3 80 mm i D3 PRO, pamięć 64 GB.\n• 6 GB — SUNMI T3 PRO i T3 PRO MAX, pamięć 128 GB.",
+    "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS: na Androidzie 13 w T3, T3 PRO, D3 PRO i D3 MINI 80 mm, na Androidzie 14 w D3.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO, T3 PRO MAX, D3 PRO i D3 MINI. D3 MINI 58 mm ma tylko tę wersję.",
+    "Cena netto": "Cena netto komputera. SUNMI D3 i D3 MINI mają ekran klienta w cenie. Do pozostałych modeli ekran klienta kupuje się osobno. Szufladę kupuje się osobno do każdego modelu."
   },
   "akcesoria-do-komputerow-pos": {
     "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
