@@ -1,6 +1,7 @@
 import { getProductStock } from '@/lib/product-stock'
 import { withLiveCatalogData } from '@/lib/catalog-live'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
 import { ProductGrid } from '@/components/product'
 import {
@@ -328,27 +329,52 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
 
+      {slug === 'komputery-pos' && (
+        <section className="relative min-h-[33.333vw] flex items-center bg-slate-950 text-white overflow-hidden">
+          <Image
+            src="/images/komputery-pos-hero-v1.webp"
+            alt="Dwa dotykowe komputery POS na ciemnym kamiennym podium, z ciepłym podświetleniem"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 from-20% via-slate-950/70 via-35% to-transparent to-55%" />
+          <div className="relative container-main w-full py-10 lg:py-16">
+            <nav className="flex items-center gap-2 text-sm text-slate-300 mb-6 overflow-x-auto">
+              <Link href="/" className="hover:text-white transition-colors whitespace-nowrap">Strona główna</Link>
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+              <span className="text-white font-medium whitespace-nowrap">{category.name}</span>
+            </nav>
+            <h1 className="text-3xl lg:text-4xl font-bold mb-3 max-w-lg">{category.h1 ?? category.name}</h1>
+            <p className="text-slate-200 max-w-md">Dotykowe komputery POS do obsługi sprzedaży w sklepach, restauracjach i punktach usługowych.</p>
+            <p className="text-slate-400 text-sm mt-3">{products.length} {productWord}</p>
+          </div>
+        </section>
+      )}
+
       <div className={`container-main py-8 lg:py-12 ${receiptCategory ? 'rfid-text-links' : ''}`}>
         {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
+        {slug !== 'komputery-pos' && <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
           <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
             Strona główna
           </Link>
           <ChevronRightIcon size={14} className="flex-shrink-0 text-gray-400" />
           <span className="text-gray-900 font-medium whitespace-nowrap">{category.name}</span>
-        </nav>
+        </nav>}
 
         {/* H1 + intro */}
         <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+          {slug !== 'komputery-pos' && <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             {category.h1 ?? category.name}
-          </h1>
+          </h1>}
           <p className="text-gray-600 sm:text-justify">
             <LinkedText text={category.longDescription} />
           </p>
-          <p className="text-gray-500 text-sm mt-3">
+          {slug !== 'komputery-pos' && <p className="text-gray-500 text-sm mt-3">
             {products.length} {productWord}
-          </p>
+          </p>}
         </div>
 
         {/* Układ z filtrami (kategorie z konfiguracją w category-filters.ts): sidebar = nawigacja + checkboxy z licznikiem */}
