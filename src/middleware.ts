@@ -81,7 +81,8 @@ export async function middleware(request: NextRequest) {
 
     // Lista slugów istniejących na nowej stronie (nie przekierowuj ich!)
     const existingSlugs = new Set([
-      // Terminale SUNMI i ich zgodne akcesoria.
+      // Terminale SUNMI, drukarka NT220 i zgodne akcesoria.
+      'sunmi-nt220',
       'sunmi-l3',
       'sunmi-l2ks',
       'sunmi-l2h',
