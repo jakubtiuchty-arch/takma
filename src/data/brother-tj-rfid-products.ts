@@ -3,78 +3,60 @@ import type { Product } from './products'
 const manual = '/downloads/brother-tj-rfid-instrukcja-en.pdf'
 const ids = ['brother-tj-4021tnr', 'brother-tj-4121tnr']
 
-type TjCopy = Pick<Product, 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'faq'>
+type TjCopy = Pick<Product, 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'faq' | 'applications'>
 
 const tjCopy: Record<string, TjCopy> = {
   'TJ-4021TNR': {
     seoTitle: 'Brother TJ-4021TNR — drukarka RFID UHF 203 dpi',
-    seoDescription: 'Brother TJ-4021TNR: przemysłowa drukarka i koder UHF RFID 203 dpi. Druk 107 mm z prędkością 254 mm/s, rolka 203,2 mm, taśma 450 m, Ethernet.',
+    seoDescription: 'Brother TJ-4021TNR – przemysłowa drukarka RFID UHF 203 dpi. Druk 107 mm do 254 mm/s, etykiety na metal do 1,0 mm, rolka 203,2 mm, taśma 450 m.',
     shortDescription: 'Przemysłowa drukarka i koder UHF RFID 203 dpi do etykiet magazynowych i wysyłkowych. Druk do 107 mm z prędkością do 254 mm/s, rolka do 203,2 mm, taśma 450 m.',
-    description: `Brother TJ-4021TNR to przemysłowa drukarka etykiet z wbudowanym koderem UHF RFID i głowicą 203 dpi. Drukuje etykiety magazynowe, wysyłkowe i produktowe oraz zapisuje w nich identyfikator EPC. Wybierz ją do pracy ciągłej przy dużych rolkach materiału.
+    description: `Brother TJ-4021TNR to przemysłowa drukarka RFID UHF z głowicą 203 dpi i anteną o stałym położeniu przy szczelinie wyjściowej materiału. Koduje etykiety EPC Gen2 zgodne z ISO 18000-6C w paśmie EU 866–868 MHz. Drukuje z prędkością do 254 mm/s i przyjmuje rolki o średnicy do 203,2 mm.
 
-## Prędkość i format etykiet
+## Antena przy szczelinie RFID Tear Cover
 
-Głowica 203 dpi drukuje 8 punktów na milimetr. Ta rozdzielczość wystarcza do kodów kreskowych na kartonach i paletach oraz do etykiet lokalizacji regałowych. TJ-4021TNR drukuje z prędkością do 254 mm/s na szerokości 107 mm. Pojedynczy wydruk może mieć do 25 400 mm długości.
+Materiał RFID przechodzi przez szczelinę osłony RFID Tear Cover. Stała antena obsługuje wiele typów wkładek. Po kalibracji materiału uruchamia się kalibrację RFID z ekranu dotykowego lub poleceniem RFIDDETECT. Kalibracja może trwać kilka minut. Zielony ekran oznacza wynik poprawny, a czerwony błąd.
 
-Materiał RFID ma szerokość 25,4–116 mm. Rolka mieści się do średnicy 203,2 mm na gilzie 25,4–76,2 mm. Taśma barwiąca ma do 450 m długości i 40–110 mm szerokości. Warstwa barwiąca musi być na zewnątrz nawoju.
+## Etykiety na metal do 1,0 mm
 
-## Koder UHF i ustawienia regionu
+Zwykły materiał może mieć 0,06–0,28 mm grubości. Etykiety RFID na metal mogą mieć do 1,0 mm. Szerokość materiału RFID wynosi 25,4–116 mm. Przy rozstawie wkładek poniżej 25,4 mm drukarka może cofać materiał. Przy etykietach dłuższych niż 25,4 mm wkładka powinna leżeć ponad 12,7 mm od krawędzi natarcia.
 
-Drukarka koduje etykiety EPC UHF Gen2. Dla Polski wybierz w menu region EU, czyli pasmo 866–868 MHz. Najmniejszy rozstaw wkładek wynosi 15,875 mm. Kalibrację RFID uruchom z menu drukarki po każdej zmianie typu etykiety.
+## Zasilacz 90 W w obudowie
 
-Etykiety RFID na metal mogą mieć do 1,0 mm grubości. Zwykły materiał ma 0,06–0,28 mm. Przy etykietach na metal przekaż nam opis powierzchni. Dobierzemy materiał i sprawdzimy zapis.
+Zasilacz jest wbudowany w drukarkę. W pudełku są przewód zasilający, przewód USB i gilza. Złącza to USB 2.0 typu B, USB Host do klawiatury lub skanera, RS-232 i Ethernet 10/100. Wi-Fi 802.11a/b/g/n zapewnia opcjonalny [moduł PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002). Obcinacz i odklejak serii TJ nie są przeznaczone do etykiet RFID.
 
-## Obsługa i integracja
-
-Kolorowy ekran dotykowy 3,5 cala służy do ustawień i kalibracji. Interfejsy standardowe to USB, USB Host, RS-232 i Ethernet 10/100. [Moduł PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002) dodaje Wi-Fi. Język FBPL-EZD emuluje EPL, ZPL i DPL. Przed wdrożeniem sprawdzimy polecenia RFID w szablonie.
-
-W kartonie są drukarka, przewód zasilający, przewód USB i gilza. Zasilacz jest wbudowany. Etykiety i taśmy dobierasz osobno. Ofertę rolek znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety i gilzę. Dobierzemy rolkę do TJ-4021TNR i położenie wkładki.
-
-## Akcesoria i inne wersje
-
-Obcinak PA-CU-004 i odklejak PA-LP-005 nie współpracują z etykietami RFID. Używaj ich tylko z drukarką bez kodera. Do samego nadruku wybierz [Brother TJ-4021TN](/produkt/brother-tj-4021tn). Do drobniejszego nadruku z kodowaniem RFID wybierz [TJ-4121TNR](/produkt/brother-tj-4121tnr) z głowicą 300 dpi.`,
+[Brother TJ-4121TNR](/produkt/brother-tj-4121tnr) ma głowicę 300 dpi i drukuje do 177,8 mm/s.`,
     faq: [
-      { question: 'Jakie pasmo RFID ustawić w TJ-4021TNR w Polsce?', answer: 'Region EU, czyli pasmo 866–868 MHz. Drukarka ma też ustawienie Global 902–928 MHz, ale w Europie wybierz EU.' },
-      { question: 'Czy TJ-4021TNR ma Wi-Fi?', answer: 'Nie w standardzie. Ma Ethernet, USB, USB Host i RS-232. Wi-Fi dodaje osobno kupowany moduł PA-WI-002.' },
-      { question: 'Czy TJ-4021TNR koduje etykiety na metal?', answer: 'Tak, etykiety o grubości do 1,0 mm. Podaj nam rodzaj powierzchni i wymiary etykiety. Dobierzemy materiał i sprawdzimy zapis.' },
-      { question: 'Czy do TJ-4021TNR pasuje obcinak PA-CU-004?', answer: 'Nie z etykietami RFID. Obcinak PA-CU-004 i odklejak PA-LP-005 służą do zwykłych etykiet. Montaż akcesoriów wykonuje autoryzowany sprzedawca Brother.' },
-      { question: 'Co jest w zestawie z TJ-4021TNR?', answer: 'Drukarka z wbudowanym zasilaczem, przewód zasilający, przewód USB i gilza. Etykiety RFID i taśma barwiąca są sprzedawane osobno.' },
+      { question: 'Gdzie TJ-4021TNR ma antenę RFID?', answer: 'Przy szczelinie wyjściowej materiału. To antena o stałym położeniu. Materiał prowadzi się przez szczelinę osłony RFID Tear Cover.' },
+      { question: 'Jak gruba może być etykieta na metal w TJ-4021TNR?', answer: 'Do 1,0 mm. Dla zwykłego materiału zakres wynosi 0,06–0,28 mm. Przed zakupem większej partii etykiety RFID należy przetestować w drukarce.' },
+      { question: 'Czy TJ-4021TNR wymaga zewnętrznego zasilacza?', answer: 'Nie. Zasilacz 100–240 V AC o mocy 90 W jest wbudowany. W pudełku jest przewód zasilający.' },
     ],
+    applications: ['Kodowanie etykiet RFID na metal do 1,0 mm', 'Przemysłowy druk etykiet UHF z rolki 203,2 mm'],
   },
   'TJ-4121TNR': {
     seoTitle: 'Brother TJ-4121TNR — drukarka RFID UHF 300 dpi',
-    seoDescription: 'Brother TJ-4121TNR: przemysłowa drukarka i koder UHF RFID 300 dpi do etykiet z drobnym tekstem i małymi kodami 2D. Druk 105,7 mm, 177,8 mm/s.',
+    seoDescription: 'Brother TJ-4121TNR – przemysłowa drukarka RFID UHF 300 dpi. Druk 105,7 mm do 177,8 mm/s, stała antena, etykiety na metal do 1,0 mm, taśma 450 m.',
     shortDescription: 'Przemysłowa drukarka i koder UHF RFID 300 dpi do etykiet produktowych z drobnym tekstem. Druk do 105,7 mm z prędkością do 177,8 mm/s, ekran dotykowy 3,5 cala.',
-    description: `Brother TJ-4121TNR ma głowicę 300 dpi i fabryczny koder UHF RFID. Wybierz ją, gdy etykieta oprócz identyfikatora EPC zawiera drobny opis, numer partii, logo albo mały kod QR lub DataMatrix.
+    description: `Brother TJ-4121TNR to przemysłowa drukarka RFID UHF z głowicą 300 dpi. Służy do etykiet, na których obok zakodowanego numeru EPC jest drobny tekst lub mały kod 2D. Drukuje na szerokości 105,7 mm z prędkością do 177,8 mm/s.
 
-## Gdzie przydaje się 300 dpi
+## Kalibracja RFID z ekranu 3,5 cala
 
-Głowica drukuje 11,8 punktu na milimetr, a punkt ma ok. 0,085 mm. Drobne znaki mają wyraźne krawędzie, a mały kod 2D jest łatwiejszy do odczytu. Ta rozdzielczość pasuje do etykiet wyrobów, opakowań jednostkowych, części zamiennych i oznaczeń środków trwałych.
+Na kolorowym ekranie dotykowym kalibrację uruchamia ścieżka Menu, Interface, RFID, Tag Calibration. Kalibracja ustala typ układu, moc zapisu i odczytu oraz pozycję programowania. Wcześniej wykonuje się kalibrację czujnika materiału. Po zakończeniu procedury wartości kalibracji zapisuje się w drukarce.
 
-Szerokość nadruku wynosi 105,7 mm, a prędkość do 177,8 mm/s. Najdłuższy wydruk ma 11 430 mm. Jeśli drukujesz głównie etykiety logistyczne z dużym kodem kreskowym, szybsza będzie [TJ-4021TNR](/produkt/brother-tj-4021tnr) z głowicą 203 dpi.
+## Taśma 450 m z warstwą barwiącą na zewnątrz
 
-## Zapis RFID i projekt etykiety
+W wersji RFID taśma musi mieć warstwę barwiącą na zewnątrz nawoju. Rolka taśmy ma do 450 m długości i do 81,3 mm średnicy, na gilzie 25,4 mm. Szerokość taśmy wynosi 40–110 mm i powinna przekraczać szerokość materiału. Materiał RFID może mieć 25,4–116 mm szerokości, a rolka do 203,2 mm średnicy.
 
-TJ-4121TNR koduje etykiety EPC UHF Gen2 zgodne z ISO 18000-63. W Polsce ustaw w menu region EU (866–868 MHz). Wkładki mogą występować co 15,875 mm. Projektując etykietę, nie umieszczaj małego kodu 2D nad układem wkładki. Nierówna powierzchnia pogarsza tam nadruk.
+## Wydruk do 11 430 mm
 
-Drukarka obsługuje etykiety na metal o grubości do 1,0 mm. Materiał RFID może mieć 25,4–116 mm szerokości.
+Pojedynczy wydruk może mieć do 11 430 mm długości. Etykiety RFID na metal mogą mieć do 1,0 mm grubości. Drukarka przyjmuje polecenia FBPL-EZD, zgodne z EPL II, ZPL II i DPL, oraz FBPL-EZS, zgodne z EPL II, ZPL II i SBPL. Wi-Fi wymaga opcjonalnego [modułu PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002).
 
-## Materiały i taśma
-
-Rolka może mieć do 203,2 mm średnicy, a gilza 25,4–76,2 mm. Taśma barwiąca do 450 m musi być nawinięta warstwą barwiącą na zewnątrz. Do drobnego tekstu na folii wybierz taśmę żywiczną, do papieru zwykle woskowo-żywiczną. Rolki etykiet znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem prześlij nam projekt etykiety. Dobierzemy materiał do TJ-4121TNR tak, aby wkładka nie kolidowała z drobnym nadrukiem.
-
-## Połączenia, zestaw i akcesoria
-
-Drukarka ma ekran dotykowy 3,5 cala, USB, USB Host, RS-232 i Ethernet 10/100. Wi-Fi zapewnia [moduł PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002), sprzedawany osobno. Szablony przygotujesz w językach FBPL-EZD lub FBPL-EZS z emulacjami EPL, ZPL, DPL lub SBPL.
-
-Zasilacz jest wbudowany. W zestawie są też przewód zasilający, przewód USB i gilza. Obcinak PA-CU-004 i odklejak PA-LP-005 nie są przeznaczone do etykiet RFID. Bez kodera RFID ten sam nadruk wykona [Brother TJ-4121TN](/produkt/brother-tj-4121tn).`,
+Ten sam koder i szybszą głowicę 203 dpi ma [Brother TJ-4021TNR](/produkt/brother-tj-4021tnr), drukująca do 254 mm/s.`,
     faq: [
-      { question: 'Czym TJ-4121TNR różni się od TJ-4021TNR?', answer: 'Rozdzielczością i prędkością. TJ-4121TNR ma 300 dpi i drukuje do 177,8 mm/s. TJ-4021TNR ma 203 dpi i drukuje do 254 mm/s. Koder RFID, rolki i taśmy są takie same.' },
-      { question: 'Czy TJ-4121TN bez litery R zakoduje etykietę RFID?', answer: 'Nie. Zwykła TJ-4121TN nie ma kodera RFID. Do kodowania etykiet wybierz TJ-4121TNR.' },
-      { question: 'Jaka taśma pasuje do drobnego nadruku w TJ-4121TNR?', answer: 'Taśma o szerokości 40–110 mm i długości do 450 m, z warstwą barwiącą na zewnątrz. Do folii wybierz taśmę żywiczną, do papieru zwykle woskowo-żywiczną.' },
-      { question: 'Jak długą etykietę wydrukuje TJ-4121TNR?', answer: 'Do 11 430 mm na jednym wydruku. Wersja 203 dpi, TJ-4021TNR, drukuje do 25 400 mm.' },
-      { question: 'Czy TJ-4121TNR można podłączyć przez Wi-Fi?', answer: 'Tak, po montażu modułu PA-WI-002. Montaż i konfigurację wykonuje autoryzowany sprzedawca Brother.' },
+      { question: 'Jaką taśmę przyjmuje TJ-4121TNR?', answer: 'Taśmę do 450 m na gilzie 25,4 mm, o szerokości 40–110 mm, z warstwą barwiącą na zewnątrz. Taśma z warstwą do wewnątrz pasuje tylko do wersji bez RFID.' },
+      { question: 'Czym TJ-4121TNR różni się od TJ-4121TN?', answer: 'Wersja TNR ma koder UHF RFID i antenę przy szczelinie wyjściowej. Jest głębsza o 7 mm, 443 zamiast 436 mm, i cięższa: 9,9 kg zamiast 9,4 kg.' },
+      { question: 'Jaki moduł dodaje Wi-Fi do TJ-4121TNR?', answer: 'Moduł PA-WI-002 z Wi-Fi 802.11a/b/g/n. Montuje się go w gnieździe rozszerzeń Wi-Fi drukarki.' },
     ],
+    applications: ['Etykiety UHF 300 dpi z drobnym opisem wyrobu', 'Kodowanie etykiet RFID z taśmą 450 m'],
   },
 }
 
@@ -111,7 +93,6 @@ export const brotherTjRfidProducts: Product[] = [
       { name: 'TJ-4021TNR', slug: ids[0], highlight: dpi === 203, specs: { 'Rozdzielczość': '203 dpi', 'Szerokość druku': '107 mm', 'Prędkość nadruku': 'do 254 mm/s' } },
       { name: 'TJ-4121TNR', slug: ids[1], highlight: dpi === 300, specs: { 'Rozdzielczość': '300 dpi', 'Szerokość druku': '105,7 mm', 'Prędkość nadruku': 'do 177,8 mm/s' } },
     ] },
-    applications: ['Druk i kodowanie etykiet RFID na towary oraz opakowania', 'Identyfikacja pojemników i wyposażenia', 'Przygotowanie etykiet do procesów magazynowych i produkcyjnych'],
     compatibleAccessories: [], relatedAccessories: ['brother-tj-wifi', 'brother-tj-cutter', 'brother-tj-peeler'],
     downloads: [
       { name: 'Instrukcja obsługi i kalibracji RFID Brother TJ (EN)', type: 'manual', url: manual, size: 'PDF' },

@@ -8,47 +8,23 @@ export const pm45RfidAccessorySlugs = [
 export const honeywellPm45RfidProducts: Product[] = [{
   id: 'honeywell-pm45-rfid', slug: 'honeywell-pm45-rfid', name: 'Honeywell PM45 RFID', seoH1: 'Honeywell PM45 RFID',
   seoTitle: 'Honeywell PM45 RFID — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Honeywell PM45 RFID: przemysłowa drukarka i koder UHF 203 lub 300 dpi. Druk do 350 mm/s, nawijak, czujnik pobrania etykiety, ekran dotykowy.',
-  shortDescription: 'Przemysłowa drukarka i koder UHF RFID dla Europy. Dwa warianty: 203 dpi z Ethernetem lub 300 dpi z Wi-Fi i Bluetooth. Oba mają ekran dotykowy, RTC, nawijak i czujnik pobrania etykiety.',
-  description: `Honeywell PM45 RFID drukuje etykiety i zapisuje dane w układach UHF. Służy do znakowania produktów, opakowań i wyposażenia. Dostępne są dwa fabryczne warianty RFID dla Europy.
+  seoDescription: 'Honeywell PM45 RFID – przemysłowa drukarka RFID UHF 203 lub 300 dpi. Druk do 350 mm/s, rolka 213 mm, taśma 450 m, wersja z Wi-Fi 6 i Bluetooth 5.1.',
+  shortDescription: 'Przemysłowa drukarka i koder UHF RFID. Dwa warianty: 203 dpi z Ethernetem lub 300 dpi z Wi-Fi 6 i Bluetooth 5.1. Oba mają ekran dotykowy, nawijak i czujnik pobrania etykiety.',
+  description: `Honeywell PM45 RFID to przemysłowa drukarka RFID UHF z pełnym ekranem dotykowym. Koduje wkładki zgodne z EPC Gen 2 V2.1, ISO/IEC 18000-63 i RAIN RFID oraz drukuje etykiety o szerokości do 108 mm. Moduł radiowy jest skonfigurowany zgodnie z lokalnymi przepisami UHF, w tym ETSI.
 
-## Dwa numery katalogowe RFID EU
+## PM45A1000EU30200 i PM45A1200EU30300
 
-PM45A1000EU30200 ma 203 dpi, USB, RS-232 i Ethernet. PM45A1200EU30300 ma 300 dpi oraz dodatkowo Wi-Fi i Bluetooth. Obie wersje mają kolorowy ekran dotykowy 3,5 cala, zegar RTC, stały uchwyt rolki, nawijak i czujnik pobrania etykiety LTS.
+PM45A1000EU30200 ma głowicę 203 dpi i drukuje do 350 mm/s. PM45A1200EU30300 ma 300 dpi i drukuje do 300 mm/s. Obie wersje mają Ethernet 10/100, USB 2.0 Device, USB 2.0 Host i RS-232. Wersja 300 dpi ma dodatkowo Wi-Fi 802.11a/b/g/n/ac/ax i Bluetooth 5.1. Dokładność pozycji nadruku wynosi ±0,5 mm.
 
-Kod EU w PN oznacza moduł UHF na pasmo europejskie. Do pracy w Polsce wybierz wersję EU. Obie drukarki mają już RFID. Nie wymagają ponownego zakupu modułu 50180233-001.
+## Etykieta RFID od 25,4 mm
 
-## Nadruk i kodowanie w jednym zadaniu
+Najkrótsza etykieta RFID ma 25,4 mm. Materiał ma 19–114 mm szerokości i 2,4–10,4 mil grubości. Rolka może mieć do 213 mm średnicy na gilzie 38–76 mm. Pojedynczy wydruk ma do 4,8 m przy 203 dpi i do 2,2 m przy 300 dpi. Taśmy do 450 m mogą mieć warstwę barwiącą do wewnątrz lub na zewnątrz.
 
-Wersja 203 dpi drukuje na szerokości do 108 mm. Wersja 300 dpi drukuje do 105,7 mm. Maksymalna prędkość nadruku wynosi odpowiednio 350 i 300 mm/s. Zapis danych RFID, tryb pracy i materiał mogą wymagać niższej prędkości.
+## Fingerprint, ZSim2 i aplikacje C#
 
-Zadanie musi zawierać polecenia kodowania. Sam plik PDF nie zapisuje EPC w układzie etykiety. Powiąż identyfikator z rekordem produktu lub opakowania w WMS albo ERP. Do odczytu oznaczeń na regałach potrzebujesz osobnego czytnika UHF.
+Języki poleceń to Fingerprint, Direct Protocol, IPL, ZSim2 (ZPL-II) i DPL. Aplikacje C# mogą działać na drukarce bez komputera. Przewodu zasilającego nie ma w żadnym z dwóch PN; wersja EU ma numer 1-974027-025. Zwykłą PM45 można rozbudować o RFID zestawem EU 50180233-001 montowanym na miejscu.
 
-Po zmianie materiału wykonaj kalibrację podawania i RFID. Sprawdź zapis oraz odczyt na docelowym przedmiocie. Położenie wkładki, metal i ciecz wpływają na wynik. Przed zamówieniem etykiet podaj nam wymiary, gilzę i powierzchnię przedmiotu. Wskażemy materiał i przetestujemy zapis.
-
-## Etykiety, rolki i taśmy
-
-Pokazane wersje obsługują termotransfer oraz druk termiczny bezpośredni na właściwym materiale. Przy termotransferze dobierz taśmę do 450 m, o szerokości 21,6–110 mm, na gilzie 25 mm. Drukarka przyjmuje taśmy z barwnikiem po wewnętrznej i zewnętrznej stronie.
-
-Szerokość materiału wynosi 19–114 mm. Maksymalna średnica rolki wynosi 213 mm, a gilza ma 38–76 mm. Minimalna długość etykiety RFID wynosi 25 mm. Zobacz także dział [etykiety RFID](/etykiety-rfid-zebra). Dobierzemy do PM45 RFID rolkę z wkładką w miejscu zgodnym z anteną.
-
-## Łączność i obsługa
-
-Ethernet pracuje z szybkością 10/100 Mb/s. Wariant PM45A1200EU30300 ma Wi-Fi 802.11a/b/g/n/ac i Bluetooth 5.0. Modem LTE występuje tylko w innych konfiguracjach PM45.
-
-Języki Fingerprint, Direct Protocol, IPL, ZSim2 i DPL ułatwiają przygotowanie zadań dla istniejącej aplikacji. Przed wdrożeniem sprawdź zgodność poleceń RFID. C# Smart Printing umożliwia uruchamianie odpowiednio przygotowanych aplikacji na drukarce.
-
-## Zestaw i wymagane elementy
-
-Pokazane PN nie zawierają przewodu zasilającego. Do pracy w Polsce dobierz przewód EU 1-974027-025. Etykiety RFID, taśma barwiąca i przewód danych wymagają osobnego doboru.
-
-Głowica 50180236-001 pasuje do wersji 203 dpi. Wersja 300 dpi wymaga 50180237-001. Wałek 50180235-001 pasuje do PM45. Moduł 50174832-001 dodaje Wi-Fi i Bluetooth do wersji bez tej łączności. Wariant 300 dpi z tej karty ma ją już fabrycznie. Przed zakupem części podaj numer seryjny urządzenia.
-
-## Gwarancja
-
-Gwarancja fabryczna na drukarkę wynosi 1 rok. Płatne umowy serwisowe są osobnymi usługami. Dobierz zakres i okres ochrony do konkretnego PN. Części zużywające się podlegają odrębnym warunkom producenta.
-
-Do nadruku bez kodowania radiowego sprawdź [Honeywell PM45](/produkt/honeywell-pm45). Porównaj także [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) i [SATO CL4-SXR RFID](/produkt/sato-cl4-sxr-rfid).`,
+[Honeywell PX45 RFID](/produkt/honeywell-px45-rfid) wymaga etykiety RFID o długości co najmniej 50,8 mm.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'honeywell',
   images: ['/images/products/PM45_1.png', '/images/products/PM45_2.png', '/images/products/PM45_3.png'],
   imageDescriptions: ['Honeywell PM45 RFID — drukarka z ekranem dotykowym, widok pod kątem', 'Honeywell PM45 RFID — obudowa i komora materiałów', 'Honeywell PM45 RFID — prawy bok z oknem komory materiałów'],
@@ -61,28 +37,26 @@ Do nadruku bez kodowania radiowego sprawdź [Honeywell PM45](/produkt/honeywell-
   specifications: [
     { name: 'Rozdzielczość', value: '203 lub 300 dpi, zależnie od PN' },
     { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
-    { name: 'RFID', value: 'UHF EU; fabryczny moduł w obu pokazanych PN' },
+    { name: 'RFID', value: 'UHF EPC Gen 2 V2.1, ISO/IEC 18000-63, RAIN RFID; fabryczny moduł w obu PN; radio zgodne z lokalnymi przepisami UHF, w tym ETSI' },
     { name: 'Szerokość druku', value: '108 mm przy 203 dpi; 105,7 mm przy 300 dpi' },
     { name: 'Prędkość nadruku', value: 'Do 350 mm/s przy 203 dpi; do 300 mm/s przy 300 dpi; kodowanie może ograniczyć prędkość' },
     { name: 'Obsługa etykiet', value: 'Nawijak i czujnik pobrania etykiety LTS; wspólne dla obu PN' },
-    { name: 'Wyświetlacz', value: 'Kolorowy ekran dotykowy 3,5 cala' },
-    { name: 'Zegar RTC', value: 'Tak, w obu PN' },
+    { name: 'Wyświetlacz', value: 'Ekran dotykowy (Full Touch UI)' },
     { name: 'Materiał', value: 'Szerokość 19–114 mm; średnica rolki do 213 mm; gilza 38–76 mm; RFID wymaga doboru wkładki' },
-    { name: 'Minimalna długość etykiety RFID', value: '25 mm' },
+    { name: 'Minimalna długość etykiety RFID', value: '25,4 mm' },
     { name: 'Taśma barwiąca', value: 'Do 450 m; szerokość 21,6–110 mm; gilza 25 mm; barwnik do wewnątrz lub na zewnątrz' },
-    { name: 'Łączność', value: 'USB, RS-232, Ethernet 10/100 Mb/s; Wi-Fi i Bluetooth zależnie od PN' },
+    { name: 'Łączność', value: 'USB 2.0 Device, USB 2.0 Host, RS-232, Ethernet 10/100 Mb/s; Wi-Fi 802.11a/b/g/n/ac/ax i Bluetooth 5.1 w PM45A1200EU30300' },
     { name: 'Pamięć', value: '256 MB RAM; 512 MB Flash' },
     { name: 'Wymiary', value: '284 × 483 × 295 mm (szer. × gł. × wys.)' },
-    { name: 'Przewód zasilający', value: 'Brak w obu PN; przewód EU 1-974027-025 dobierz osobno' },
-    { name: 'Gwarancja', value: '1 rok gwarancji fabrycznej; części zużywające się na odrębnych warunkach' },
+    { name: 'Masa', value: '12,1 kg' },
+    { name: 'Przewód zasilający', value: 'Brak w obu PN; przewód EU 1-974027-025 zamawia się osobno' },
   ],
   compatibleAccessories: [], relatedAccessories: pm45RfidAccessorySlugs,
-  applications: ['Druk i kodowanie etykiet UHF na produkty i opakowania', 'Znakowanie wyposażenia', 'Identyfikacja powiązana z WMS lub ERP'],
+  applications: ['Kodowanie krótkich etykiet RFID od 25,4 mm', 'Przemysłowe etykiety UHF z nawijaniem i czujnikiem LTS'],
   faq: [
-    { question: 'Czy każda Honeywell PM45 ma RFID?', answer: 'Nie. Fabryczny koder UHF EU mają PM45A1000EU30200 i PM45A1200EU30300. Do zwykłej PM45 potrzebny jest osobny zestaw RFID.' },
-    { question: 'Czy moduł RFID trzeba kupić osobno?', answer: 'Nie dla PM45A1000EU30200 i PM45A1200EU30300. Oba mają fabryczne RFID EU.' },
-    { question: 'Czy drukarka ma przewód zasilający?', answer: 'Nie. Pokazane PN nie zawierają przewodu. Do pracy w Polsce dobierz osobno przewód EU 1-974027-025.' },
-    { question: 'Który wariant ma Wi-Fi i Bluetooth?', answer: 'PM45A1200EU30300, czyli wersja 300 dpi. Wersja 203 dpi PM45A1000EU30200 ma połączenia przewodowe.' },
+    { question: 'Który wariant PM45 RFID ma Wi-Fi 6?', answer: 'PM45A1200EU30300 z głowicą 300 dpi. Ma Wi-Fi 802.11a/b/g/n/ac/ax i Bluetooth 5.1. PM45A1000EU30200 łączy się przez Ethernet, USB i RS-232.' },
+    { question: 'Jaka jest najkrótsza etykieta RFID dla PM45 RFID?', answer: '25,4 mm. Bez kodowania RFID, przy odrywaniu i nawijaniu, drukarka obsługuje materiał od 6,4 mm.' },
+    { question: 'Czy zwykłą PM45 można przerobić na wersję RFID?', answer: 'Tak. Zestaw 50180233-001 to moduł UHF na Europę do montażu na miejscu. Oba PN z tej oferty mają RFID fabrycznie.' },
   ],
   downloads: [
     { name: 'Karta katalogowa PM45 / PM65 (EN)', type: 'datasheet', url: '/downloads/honeywell-pm45-pm65-karta-en.pdf', size: 'PDF' },

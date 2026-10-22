@@ -36,47 +36,23 @@ export const zq630RfidExistingAccessorySlugs = [
 export const zq630PlusRfidProduct: Product = {
   id: 'zebra-zq630-plus-rfid', slug: 'zebra-zq630-plus-rfid', name: 'Zebra ZQ630 Plus RFID', seoH1: 'Zebra ZQ630 Plus RFID',
   seoTitle: 'Zebra ZQ630 Plus RFID — drukarka RFID UHF 203 dpi',
-  seoDescription: 'Zebra ZQ630 Plus RFID: mobilna drukarka i koder UHF 203 dpi z obsługą Gen2X. Nadruk do 104 mm, Wi-Fi 6, Bluetooth 5.3, rolka do 66 mm, IP54.',
+  seoDescription: 'Zebra ZQ630 Plus RFID – mobilna drukarka RFID UHF 203 dpi z obsługą Gen2X. Nadruk 104 mm, Wi-Fi 6 i Bluetooth 5.3, bateria 6600 mAh, IP54.',
   shortDescription: 'Mobilna drukarka Zebra ZQ630 Plus RFID v2 drukuje i koduje etykiety RAIN UHF przy towarze. Druk do 104 mm, Wi-Fi 6 i Bluetooth 5.3.',
-  description: `Zebra ZQ630 Plus RFID to mobilna drukarka i koder etykiet RAIN UHF RFID. Przygotowuje nadruk i zapisuje identyfikator w etykiecie bezpośrednio przy towarze.
+  description: `Zebra ZQ630 Plus RFID to mobilna drukarka RFID UHF z kolorowym wyświetlaczem 288 × 240 pikseli. Koduje znaczniki zgodne z EPC Gen 2 V2, ISO/IEC 18000-63 i RAIN RFID oraz obsługuje Gen2X. Drukuje termicznie bezpośrednio na szerokości do 104 mm z prędkością do 115 mm/s.
 
-## Druk i kodowanie w miejscu pracy
+## Kalibracja RFID raz dla typu materiału
 
-Drukarka służy do oznaczania produktów, kartonów, pojemników oraz wyposażenia. Możesz nosić ją przy sobie albo zamontować na zgodnym wózku. Identyfikator EPC zapisany w etykiecie powiąż z rekordem w systemie magazynowym. Do integracji ustal źródło danych, format identyfikatora i obsługę błędnego kodowania.
+Kodowanie adaptacyjne usuwa złożone wytyczne rozmieszczenia wkładek. Kalibrację RFID wykonuje się raz dla danego typu materiału, bez powtarzania przy kolejnej rolce tego samego typu. Wkładki mogą występować co 16 mm. Obsługiwane standardy danych to między innymi SGTIN-96, DSGTIN+, GS1 TDS 2.0 i RAIN ISO CIN.
 
-Wbudowany moduł obsługuje UHF EPC Gen2, ISO/IEC 18000-63 i RAIN RFID. Aktualna wersja v2 obsługuje także Gen2X. Adaptacyjne kodowanie ułatwia kalibrację. Dla zgodnych materiałów minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem zakoduj serię próbną na docelowej powierzchni.
+## Wi-Fi 6 z Bluetooth 5.3 i Ethernet przez stację
 
-Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do radiowego odczytu towarów na półkach potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania.
+Moduł ZebraNet Wi-Fi 6 (802.11ax) pracuje w pasmach 2,4 i 5 GHz i równolegle obsługuje Bluetooth 5.3. Wspiera WPA3 oraz roaming 802.11k, 802.11v i 802.11r. Ethernet 10/100 jest dostępny przez [stację dokującą Ethernet](/produkt/zebra-stacja-ethernet-p1050667-020), która ładuje też baterię. Przewodowo drukarka łączy się przez USB 2.0 ze złączem Mini-B lub 14-stykowy port RS-232C.
 
-## Aktualny PN v2 z Wi-Fi 6
+## Rolka 66 mm na gilzie 19 lub 34,9 mm
 
-Dostępny PN ZQ63-RUXAE16-00 to wersja v2 dla grupy regionalnej E, z angielskimi czcionkami i kodowaniem RFID. Ma Wi-Fi 6, Bluetooth 5.3, wałek do etykiet z podkładem oraz gilzę 19 mm. Pasek na ramię i klips do paska są częścią konfiguracji. Starszy PN ZQ63-RUXAE14-00 został wycofany.
+Rolka ma do 66 mm średnicy, na gilzie 19 lub 34,9 mm. Materiał z podkładem ma 51–112 mm szerokości. Wersja RFID wymaga czarnego znacznika i nie wykrywa przerw. Tryb odklejania z czujnikiem obecności etykiety wydaje etykiety po jednej. Bateria PowerPrecision+ ma 6600 mAh i 47,5 Wh, a ładowarka jest wbudowana.
 
-Wi-Fi 6 obsługuje pasma 2,4 i 5 GHz. Bluetooth umożliwia bezpośrednie połączenie ze zgodnym terminalem lub komputerem. NFC Print Touch ułatwia parowanie; nie służy do kodowania etykiet UHF. Ethernet 10/100 wymaga osobnej [stacji P1050667-020](/produkt/zebra-stacja-ethernet-p1050667-020).
-
-## Etykiety RFID z czarnym znacznikiem
-
-ZQ630 Plus RFID wymaga materiału z czarnym znacznikiem. Nie wykrywa przerw między etykietami. Rolki do zwykłej ZQ630 Plus mogą nie mieć czarnego znacznika ani wkładki. Etykiety RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam format etykiety. Dobierzemy rolkę do ZQ630 Plus RFID: gilzę 19 mm, średnicę do 66 mm i położenie wkładki.
-
-Drukarka wykonuje nadruk termiczny bezpośredni, bez taśmy barwiącej. Ma 203 dpi i drukuje z prędkością do 115 mm/s. Kodowanie może zmniejszyć wydajność zadania. Maksymalna szerokość nadruku wynosi 104 mm, a szerokość materiału 51–112 mm. Rolka może mieć średnicę do 66 mm. Oferowany PN ma gilzę 19 mm i nie jest wersją linerless.
-
-## Bateria, ekran i warunki pracy
-
-Wymienna bateria PowerPrecision+ ma nominalnie 6600 mAh i 47,5 Wh. Ekran kolorowy 288 × 240 px pokazuje stan baterii, połączeń i druku. Link-OS oraz narzędzia Zebra DNA wspierają konfigurację i zarządzanie urządzeniem.
-
-Drukarka waży około 1,1 kg z baterią. Ma klasę IP54 i toleruje wielokrotne upadki z 1,83 m na beton. Zakres temperatury pracy wynosi od −20 do 50°C. Dobierz etykietę termiczną do warunków użytkowania i wymaganej trwałości nadruku.
-
-## Ładowanie i akcesoria
-
-Aby ładować baterię w drukarce z sieci, potrzebujesz [zasilacza EU P1031365-042](/produkt/zebra-zasilacz-ac-zq5-zq6). Możesz też ładować wyjętą baterię w zgodnej ładowarce 1-, 3- lub 6-gniazdowej. Zasilacz sieciowy, ładowarki i etykiety dobierz osobno. Sam przewód USB służy do komunikacji i nie zastępuje zasilacza do ładowania tej drukarki.
-
-Do montażu w pojeździe dobierz stację i zasilanie zgodne z napięciem instalacji. Stacja P1050667-026 zawiera przetwornicę 15–60 V DC. Uchwyt Handi-Mount P1050667-032 zawiera podstawę; drukarka pokazana na jego zdjęciu jest sprzedawana osobno.
-
-Jeśli potrzebujesz wyłącznie nadruku bez kodowania RFID, sprawdź [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus). Jeśli drukarka ma pozostać na biurku, porównaj [Zebra ZD621R](/produkt/zebra-zd621r).
-
-## Gwarancja
-
-Gwarancja na drukarkę wynosi 12 miesięcy. Głowica w regionie EMEA ma ochronę przez 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej. Bateria ma 12 miesięcy gwarancji.`,
+[Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid) drukuje do 127 mm/s w trybie Draft, ale ma baterię 3250 mAh.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'], manufacturerId: 'zebra',
   images: ['/images/products/zq630-plus-rfid-framed.webp'], imageDescriptions: ['Zebra ZQ630 Plus RFID — mobilna drukarka z oznaczeniem UHF RFID, widok pod kątem'],
   tags: ['magazyn', 'logistyka', 'retail'], availability: 'unavailable', isNew: true, isBestseller: false,
@@ -89,8 +65,9 @@ Gwarancja na drukarkę wynosi 12 miesięcy. Głowica w regionie EMEA ma ochronę
     { name: 'Rozdzielczość', value: '203 dpi' },
     { name: 'Prędkość nadruku', value: 'do 115 mm/s; kodowanie może zmniejszyć wydajność' },
     { name: 'Szerokość druku', value: 'do 104 mm' },
+    { name: 'Długość wydruku', value: '12,7–813 mm' },
     { name: 'Materiał', value: 'Szerokość 51–112 mm; etykiety na podkładzie z czarnym znacznikiem; brak wykrywania przerw' },
-    { name: 'Rolka', value: 'Średnica do 66 mm; gilza 19 mm w oferowanym PN' },
+    { name: 'Rolka', value: 'Średnica do 66 mm; gilza 19 lub 34,9 mm; w oferowanym PN 19 mm' },
     { name: 'Odstęp wkładek RFID', value: 'Od 16 mm dla zgodnego materiału, po kalibracji' },
     { name: 'Łączność bezprzewodowa', value: 'Wi-Fi 6 802.11ax (2,4/5 GHz), Bluetooth 5.3' },
     { name: 'Interfejsy przewodowe', value: 'USB 2.0 Mini-B, RS-232C; Ethernet 10/100 przez opcjonalną stację' },
@@ -106,21 +83,18 @@ Gwarancja na drukarkę wynosi 12 miesięcy. Głowica w regionie EMEA ma ochronę
     { name: 'Masa z baterią', value: 'Około 1,1 kg' },
     { name: 'W zestawie', value: 'Drukarka RFID v2 z baterią, pasek na ramię, klips do paska; gilza 19 mm' },
     { name: 'Do kupienia osobno', value: 'Zasilacz do ładowania lub ładowarka baterii, etykiety RFID, dodatkowe stacje i uchwyty' },
-    { name: 'Gwarancja', value: 'Drukarka i bateria: 12 miesięcy; głowica EMEA: 12 miesięcy lub milion cali druku' },
+    { name: 'Gwarancja', value: 'Drukarka: 1 rok od daty wysyłki' },
   ],
   variants: [{ partNumber: 'ZQ63-RUXAE16-00', name: 'v2 — Wi-Fi 6, Bluetooth 5.3, RFID', attributes: {}, availability: 'unavailable' }],
-  applications: ['Druk i kodowanie etykiet RFID przy towarze', 'Oznaczanie kartonów i pojemników w magazynie', 'Przygotowanie etykiet EPC podczas przyjęć i wydań', 'Druk mobilny przy stanowisku na wózku'],
+  applications: ['Kodowanie znaczników Gen2X w drukarce mobilnej', 'Etykiety RFID na skrzynie i palety z wózka widłowego'],
   compatibleAccessories: [], relatedAccessories: zq630RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZQ630 Plus RFID różni się od zwykłej ZQ630 Plus?', answer: 'Wersja RFID ma koder UHF do zapisu i kontroli układu etykiety. Zwykła ZQ630 Plus wykonuje nadruk. Wersja RFID wymaga czarnego znacznika na materiale i nie wykrywa przerw między etykietami.' },
-    { question: 'Jaki PN jest dostępny?', answer: 'Oferujemy ZQ63-RUXAE16-00: aktualną wersję v2, grupę regionalną E, Wi-Fi 6, Bluetooth 5.3, wałek do materiału z podkładem i gilzę 19 mm. Starszy ZQ63-RUXAE14-00 jest wycofany.' },
-    { question: 'Czy mogę użyć zwykłej rolki etykiet z przerwą?', answer: 'Nie dobieraj jej wyłącznie na podstawie wymiarów. ZQ630 Plus RFID wymaga materiału z czarnym znacznikiem i nie wykrywa przerw. Do kodowania potrzebna jest dodatkowo zgodna wkładka RFID. Sprawdź materiał i wykonaj kalibrację.' },
-    { question: 'Czy ta drukarka wymaga taśmy barwiącej?', answer: 'Nie. Drukuje termicznie bezpośrednio na materiale termoczułym. Kodowanie UHF wymaga etykiety z wkładką RFID. Oferowany PN jest wersją do materiału na podkładzie, a nie linerless.' },
-    { question: 'Czy zasilacz jest w komplecie?', answer: 'Zasilacz do ładowania dobierz osobno, np. P1031365-042 z przewodem EU. Alternatywą jest zgodna ładowarka wyjętej baterii. Pasek na ramię i klips do paska są częścią oferowanego PN.' },
-    { question: 'Czy ZQ630 Plus RFID odczyta całą półkę?', answer: 'Nie. Drukarka koduje i sprawdza etykietę podczas jej przygotowania. Do radiowej inwentaryzacji towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    { question: 'Czy mogę użyć sterowników ze starej ZQ630 RFID?', answer: 'Wersja Plus wymaga odpowiednich sterowników i oprogramowania dla ZQ630 Plus RFID. Pobierz je z działu wsparcia tego modelu. Nie zakładaj zgodności plików dla wcześniejszej ZQ630 RFID.' },
+    { question: 'Czy ZQ630 Plus RFID obsługuje Gen2X?', answer: 'Tak. Drukarka koduje znaczniki EPC Gen 2 V2 i obsługuje Gen2X. Oferowany PN ZQ63-RUXAE16-00 to wersja v2.' },
+    { question: 'Jak podłączyć ZQ630 Plus RFID do sieci przewodowej?', answer: 'Przez stację dokującą z portem Ethernet 10/100 Mb/s. Stacja ładuje baterię w drukarce, a dział IT może przez nią zdalnie aktualizować oprogramowanie.' },
+    { question: 'Na jakiej gilzie musi być rolka do ZQ630 Plus RFID?', answer: 'Na gilzie 19 mm lub 34,9 mm, przy średnicy rolki do 66 mm. Oferowany PN ma gilzę 19 mm.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZQ630 Plus RFID (EN)', type: 'datasheet', url: '/datasheets/zebra-zq600-rfid-karta-en.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZQ630 Plus RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq600-series-rfid-spec-sheet-en-us.pdf', size: 'PDF' },
     { name: 'Katalog akcesoriów do drukarek mobilnych Zebra (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/mobile-printer-guide-accessory-en-us.pdf', size: 'PDF' },
     { name: 'Sterowniki, instrukcje i wsparcie ZQ630 Plus RFID', type: 'driver', url: 'https://www.zebra.com/gb/en/support-downloads/printers/passive-rfid/zq630-rfid-plus.html', size: 'Online' },

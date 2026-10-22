@@ -7,9 +7,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic QuickScan QD2220",
     "seoH1": "Datalogic QuickScan QD2220",
     "seoTitle": "Datalogic QuickScan QD2220 — skaner 1D USB | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic QuickScan QD2220 — przewodowy czytnik 1D USB, 400 odczytów/s. Czytnik Datalogic QD2220 do kasy i dokumentów, IP42, 5 lat gwarancji. QD2220 Datalogic z przewodem i podstawką. PN: QD2220-BK, QD2220-BKK1, QD2220-BKK1S.",
+    "seoDescription": "Datalogic QuickScan QD2220: przewodowy czytnik kodów kreskowych 1D z USB, 400 odczytów/s, zakres EAN 1–68 cm, pole widzenia 56°, IP42, 5 lat gwarancji.",
     "shortDescription": "Datalogic QuickScan QD2220 — przewodowy skaner kodów kreskowych 1D z USB, zakres do 68 cm, IP42, 5 lat gwarancji.",
-    "description": "Datalogic QuickScan QD2220 to przewodowy skaner kodów kreskowych 1D do kodów EAN, Code 128 i dokumentów z długimi kodami. Łączy się z komputerem przez USB. Nie odczytuje kodów QR ani Data Matrix.\n\nLiniowy układ CCD odczytuje kody do 400 razy na sekundę. Typowy zakres dla EAN/UPC 13 mil wynosi 1–68 cm. Green Spot pokazuje poprawny odczyt na kodzie.\n\nCzytnik obsługuje tylko USB. QD2220-BK to sam czytnik, bez przewodu. QD2220-BKK1 zawiera przewód USB 90A052065. QD2220-BKK1S zawiera przewód USB 90A052065 i podstawkę STD-QW25-BK.\n\nCzytnik ma klasę ochrony IP42 i wytrzymuje wielokrotne upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Konfigurację obsługuje program Datalogic Aladdin. Kody 2D odczytuje [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "QuickScan QD2220 to przewodowy czytnik kodów kreskowych 1D do kas i stanowisk z długimi kodami na rachunkach, dokumentach i opakowaniach. Odczytuje kody przez osłony z pleksi oraz elektroniczne kupony z ekranów smartfonów. Kodów 2D nie dekoduje.\n\n## QD2220: pole widzenia 56° i 400 odczytów/s\n\nLiniowy imager CCD w QD2220 ma kąt pola widzenia 56° ±2° i długą linię skanowania. Wykonuje do 400 odczytów na sekundę przy tolerancji ruchu 40 IPS. Kod EAN/UPC 13 mil QD2220 odczytuje z 1–68 cm, a Code 39 20 mil z 3–103 cm. Rozdzielczość QD2220 sięga 3 mil. Green Spot potwierdza odczyt zielonym punktem na kodzie.\n\n## Zestawy QD2220 z przewodem 90A052065\n\nQD2220 łączy się z komputerem przez USB. Dla złącza USB-C dostępny jest osobny przewód. QD2220-BK to sam czytnik. QD2220-BKK1 zawiera [przewód USB-A 90A052065](/produkt/datalogic-handheld-usb-90a052065). QD2220-BKK1S zawiera ten przewód i [składaną podstawkę STD-QW25-BK](/produkt/datalogic-quickscan-std-qw25-bk). QD2220 waży 123 g, ma klasę IP42, a spust wytrzymuje 3 mln naciśnięć.\n\nKody QR i Data Matrix odczytuje przewodowy [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520) z matrycą VGA.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -22,7 +22,7 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "imageDescriptions": [
       "Datalogic QuickScan QD2220 — sam czytnik, ujęcie pod kątem",
-      "Datalogic QuickScan QD2220 — dodatkowe ujęcie"
+      "Datalogic QuickScan QD2220 — widok z przodu na logo QuickScan i przewód"
     ],
     "tags": [
       "retail",
@@ -95,7 +95,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt długich kodów kreskowych przy kasie i na dokumentach"
+      "Odczyt długich kodów 1D z rachunków za media",
+      "Punkt loterii i zakładów z kodami 1D"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -114,12 +115,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy QD2220 odczyta kod QR na dokumencie?",
-        "answer": "Nie. QuickScan QD2220 odczytuje kody 1D. Kody QR i Data Matrix odczytują czytniki 2D, na przykład QW2520."
+        "question": "Czy QD2220 odczyta kupon z ekranu smartfona?",
+        "answer": "Tak, jeśli kupon ma kod 1D. QD2220 odczytuje kody liniowe z ekranów smartfonów, ale nie dekoduje kodów QR."
       },
       {
-        "question": "Co zawiera zestaw QuickScan QD2220?",
-        "answer": "QD2220-BK: Sam czytnik, bez przewodu. QD2220-BKK1: Czytnik, przewód USB 90A052065. QD2220-BKK1S: Czytnik, USB 90A052065, podstawka STD-QW25-BK."
+        "question": "Co zawiera QD2220-BKK1S?",
+        "answer": "Czytnik QD2220, przewód USB-A 90A052065 o długości 2 m i składaną podstawkę STD-QW25-BK."
       }
     ],
     "downloads": [
@@ -131,7 +132,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-gryphon-gd4220",
@@ -139,9 +140,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Gryphon GD4220",
     "seoH1": "Datalogic Gryphon GD4220",
     "seoTitle": "Datalogic Gryphon GD4220 — skaner 1D USB | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Gryphon GD4220 — przewodowy czytnik 1D USB, zakres do 90 cm. Czytnik Datalogic GD4220 do kasy i biura, IP52, 5 lat gwarancji. GD4220 Datalogic w zestawie z przewodem USB. PN: GD4220-BKK1.",
+    "seoDescription": "Datalogic Gryphon GD4220: przewodowy czytnik kodów kreskowych 1D z USB i USB-C, zakres EAN 3,5–90 cm, 400 odczytów/s, IP52 i 5 lat gwarancji.",
     "shortDescription": "Datalogic Gryphon GD4220 — przewodowy skaner kodów kreskowych 1D z USB, zakres do 90 cm, IP52, 5 lat gwarancji.",
-    "description": "Datalogic Gryphon GD4220 to przewodowy skaner kodów kreskowych 1D z interfejsem USB. Służy do obsługi kasy, dokumentów i stanowiska przyjęcia towaru. Model przewodowy nie ma akumulatora.\n\nLiniowy układ CCD odczytuje kody do 400 razy na sekundę. Typowy zakres EAN/UPC 13 mil wynosi 3,5–90 cm. Green Spot i dwie diody potwierdzają odczyt. Motionix rozpoznaje ruch czytnika i zmienia tryb pracy.\n\nGD4220 obsługuje tylko USB (USB-A lub USB-C). Zestaw GD4220-BKK1 zawiera czytnik i przewód USB 90A052258. Połączenie RS-232 obsługuje [Gryphon GD4290](/produkt/datalogic-gryphon-gd4290). Żaden z tych modeli nie odczytuje kodów QR ani Data Matrix.\n\nCzytnik ma klasę ochrony IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Konfigurację obsługuje program Datalogic Aladdin. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Gryphon GD4220 to przewodowy skaner kodów kreskowych 1D z samym interfejsem USB, także przez złącze USB-C. Pasuje do kas, okienek obsługi i stanowisk w laboratoriach. GD4220 odczytuje kody liniowe z etykiet i z ekranów urządzeń mobilnych.\n\n## Odczyt 1D w GD4220: 400 odczytów/s i 3 mil\n\nLiniowy imager CCD w GD4220 wykonuje do 400 odczytów na sekundę. Rozdzielczość GD4220 sięga 3 mil. Kod EAN/UPC 13 mil GD4220 odczytuje z 3,5–90 cm, a Code 39 20 mil z 2,5–147 cm. Motionix wykrywa ruch GD4220, przełącza go w tryb gotowości i włącza linię celowania. Green Spot, trzy zielone diody 3GL i sygnał dźwiękowy potwierdzają odczyt.\n\n## Zasilanie 5 V i zestaw GD4220-BKK1\n\nGD4220 wymaga zasilania 5 V DC ±5%. Zestaw GD4220-BKK1 zawiera czytnik i [prosty przewód USB-A 90A052258](/produkt/datalogic-quickscan-usb-90a052258) o długości 2 m. Czytnik GD4220 waży 163 g. Obudowa ma klasę IP52, znosi codzienną dezynfekcję i wielokrotne upadki z 1,8 m na beton.\n\nInterfejs RS-232 i zasilanie 4,5–14 V DC ma [Gryphon GD4290](/produkt/datalogic-gryphon-gd4290). Oba modele odczytują wyłącznie kody 1D.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -205,7 +206,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "stałe stanowisko USB z kodami 1D"
+      "Kasa lub okienko z portem USB-C",
+      "Rejestracja próbek z kodami 1D w laboratorium"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -217,12 +219,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy GD4220 można podłączyć przez RS-232?",
-        "answer": "Nie. GD4220 obsługuje tylko USB. RS-232 obsługuje Gryphon GD4290 z przewodem RS-232 90A051230."
+        "question": "Czy GD4220 obsługuje RS-232?",
+        "answer": "Nie. GD4220 ma tylko USB i USB-C. RS-232 obsługuje Gryphon GD4290, na przykład z przewodem CAB-350 (90A051230)."
       },
       {
-        "question": "Co zawiera zestaw Gryphon GD4220?",
-        "answer": "GD4220-BKK1: Czytnik, przewód USB 90A052258."
+        "question": "Co zawiera zestaw GD4220-BKK1?",
+        "answer": "Czytnik GD4220 i prosty przewód USB-A 90A052258 o długości 2 m."
       }
     ],
     "downloads": [
@@ -234,7 +236,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-gryphon-gd4290",
@@ -242,9 +244,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Gryphon GD4290",
     "seoH1": "Datalogic Gryphon GD4290",
     "seoTitle": "Datalogic Gryphon GD4290 — skaner 1D USB i RS-232 | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Gryphon GD4290 — przewodowy czytnik 1D z USB i RS-232. Czytnik Datalogic GD4290 do kas z RS-232, IP52, 5 lat gwarancji. GD4290 Datalogic bez przewodu. PN: GD4290-BK.",
+    "seoDescription": "Datalogic Gryphon GD4290: przewodowy skaner kodów kreskowych 1D z USB, USB-C i RS-232, zasilanie 4,5–14 V DC, zakres EAN do 90 cm, 5 lat gwarancji.",
     "shortDescription": "Datalogic Gryphon GD4290 — przewodowy skaner kodów kreskowych 1D z USB i RS-232, zakres do 90 cm, IP52, 5 lat gwarancji.",
-    "description": "Datalogic Gryphon GD4290 to przewodowy skaner kodów kreskowych 1D z interfejsami USB i RS-232. Służy do kas i stanowisk, które wymagają połączenia USB lub szeregowego.\n\nLiniowy układ CCD odczytuje kody EAN, Code 39, Code 128 i GS1 DataBar. Typowy zakres EAN/UPC 13 mil wynosi 3,5–90 cm. Zielony punkt Green Spot potwierdza odczyt bezpośrednio na etykiecie.\n\nGD4290-BK to sam czytnik, bez przewodu. Każdy interfejs wymaga osobnego przewodu: USB, np. [90A052258](/produkt/datalogic-quickscan-usb-90a052258), albo RS-232, np. [CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230). Kompletny zestaw z przewodem USB to [GD4220-BKK1](/produkt/datalogic-gryphon-gd4220) (tylko USB).\n\nCzytnik ma klasę ochrony IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Konfigurację obsługuje program Datalogic Aladdin. Kody QR odczytuje [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690).",
+    "description": "Gryphon GD4290 to przewodowy czytnik kodów kreskowych 1D z interfejsami USB, USB-C i RS-232. Służy przy kasach i terminalach, które wymagają połączenia szeregowego albo USB. GD4290 odczytuje kody liniowe z etykiet i z ekranów urządzeń mobilnych.\n\n## GD4290: interfejs RS-232 i zasilanie 4,5–14 V DC\n\nGD4290 przyjmuje napięcie 4,5–14 V DC. Pobór prądu GD4290 wynosi typowo poniżej 350 mA przy 5 V i poniżej 150 mA przy 12 V. GD4290-BK to sam czytnik, bez przewodu. Do portu szeregowego służy [przewód RS-232 CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230) ze złączem żeńskim 9-pin. Do portu USB-A służy [przewód 90A052258](/produkt/datalogic-quickscan-usb-90a052258).\n\n## Odczyt kodów liniowych przez GD4290\n\nGD4290 odczytuje kody 1D do 400 razy na sekundę, z rozdzielczością do 3 mil. Zakres GD4290 dla EAN/UPC 13 mil wynosi 3,5–90 cm. Motionix wykrywa ruch i włącza tryb odczytu, a linia celowania wskazuje kod. Green Spot wyświetla zielony punkt na kodzie po odczycie. GD4290 waży 163 g, ma obudowę IP52 i znosi codzienną dezynfekcję.\n\nKody QR i Data Matrix odczytuje przewodowy [Gryphon GD4690](/produkt/datalogic-gryphon-gd4690) z optyką HP, także z RS-232.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -308,7 +310,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "stanowisko 1D wymagające USB lub RS-232"
+      "Terminal POS z portem RS-232 9-pin",
+      "Kasa z przewodem szeregowym i zasilaniem do 14 V DC"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -321,12 +324,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy GD4290-BK zawiera przewód USB?",
-        "answer": "Nie. GD4290-BK to sam czytnik. Przewód USB albo RS-232 jest sprzedawany osobno."
+        "question": "Czy GD4290-BK zawiera przewód?",
+        "answer": "Nie. GD4290-BK to sam czytnik. Przewód RS-232 CAB-350 albo USB-A 90A052258 jest osobną pozycją."
       },
       {
-        "question": "Co zawiera zestaw Gryphon GD4290?",
-        "answer": "GD4290-BK: Sam czytnik, bez przewodu."
+        "question": "Jakie napięcie przyjmuje GD4290?",
+        "answer": "4,5–14 V DC. Model GD4220 wymaga 5 V DC ±5% i ma tylko USB."
       }
     ],
     "downloads": [
@@ -338,7 +341,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-gryphon-gbt4200",
@@ -346,9 +349,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Gryphon GBT4200",
     "seoH1": "Datalogic Gryphon GBT4200",
     "seoTitle": "Datalogic Gryphon GBT4200 — skaner 1D Bluetooth | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Gryphon GBT4200 — bezprzewodowy czytnik 1D Bluetooth 5.0 z bazą WLC4190. Czytnik bezprzewodowy Datalogic GBT4200, IP52, 3 lata gwarancji. GBT4200 Datalogic sam lub w zestawie z bazą. PN: GBT4200-BK-WLC, GBT4200-BK-BTK1.",
+    "seoDescription": "Datalogic Gryphon GBT4200: bezprzewodowy czytnik kodów kreskowych 1D z Bluetooth 5.0, zasięg 100 m, ładowanie indukcyjne, 80 000 odczytów na ładowaniu.",
     "shortDescription": "Datalogic Gryphon GBT4200 — bezprzewodowy skaner kodów kreskowych 1D z Bluetooth 5.0, ładowaniem indukcyjnym i zasięgiem do 100 m, 3 lata gwarancji.",
-    "description": "Datalogic Gryphon GBT4200 to bezprzewodowy skaner kodów kreskowych 1D z Bluetooth 5.0 i ładowaniem indukcyjnym. Służy do skanowania przy towarze poza stałym stanowiskiem. Nie odczytuje kodów QR.\n\nBluetooth obsługuje profile HID i SPP. Zasięg z bazą wynosi do 100 m w otwartej przestrzeni. Akumulator Li-Ion 2550 mAh ładuje się indukcyjnie w bazie. Typowy czas ładowania wynosi ok. 10 h z portu USB komputera, 4,5 h z USB-C i 4 h z przewodem z zasilaniem zewnętrznym.\n\nGBT4200-BK-WLC to sam czytnik. Dane przesyła przez bazę albo przez Bluetooth (HID lub SPP) bezpośrednio do komputera. Akumulator ładuje się tylko w bazie [WLC4190-BK-BT](/produkt/datalogic-handheld-wlc4190-bk-bt). GBT4200-BK-BTK1 zawiera czytnik, bazę WLC4190-BK-BT i przewód USB 90A052258.\n\nCzytnik ma klasę ochrony IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta na czytnik trwa 3 lata. Wersja z radiem STAR 433 MHz to [Gryphon GM4200](/produkt/datalogic-gryphon-gm4200). Bazy Bluetooth i STAR nie są zamienne.",
+    "description": "Gryphon GBT4200 to bezprzewodowy skaner kodów kreskowych 1D z Bluetooth 5.0 do kas, okienek pocztowych i bankowych oraz aptek. GBT4200 odczytuje kody liniowe z etykiet i z ekranów urządzeń mobilnych. Kodów QR i Data Matrix GBT4200 nie dekoduje.\n\n## Bluetooth 5.0 i zasięg 100 m w GBT4200\n\nGBT4200 łączy się przez Bluetooth z bazą albo bezpośrednio z komputerem lub innym urządzeniem z Bluetooth. Obsługuje profile HID i SPP. W otwartej przestrzeni zasięg GBT4200 do bazy wynosi 100 m. Jeden odbiornik Bluetooth, baza albo klucz, obsługuje do 7 czytników GBT4200. Transmisja GBT4200 jest szyfrowana, a czytnik jest uwierzytelniany.\n\n## Bazy WLC4190 i WLC4090, akumulator 2550 mAh\n\nDo rodziny Gryphon 4200 pasują dwie bazy ładujące: WLC4190 na biurko lub ścianę, ze złączem USB-C, oraz WLC4090 z regulowanym położeniem i odczytem podczas ładowania. Zestaw GBT4200-BK-BTK1 zawiera czytnik, [bazę WLC4190-BK-BT](/produkt/datalogic-handheld-wlc4190-bk-bt) i [przewód USB-A 90A052258](/produkt/datalogic-quickscan-usb-90a052258). GBT4200-BK-WLC to sam czytnik, bez bazy i przewodu. Akumulator Li-Ion 2550 mAh ładuje się w bazie indukcyjnie, bez styków. Przy zasilaniu bazy 12 V DC ładowanie GBT4200 trwa około 4 h, a jedno ładowanie wystarcza na 80 000 odczytów. Zapasowy akumulator do GBT4200 to [RBP-GM4200](/produkt/datalogic-handheld-rbp-gm4200).\n\nObudowa GBT4200 ma klasę IP52 i znosi codzienne czyszczenie środkami dezynfekującymi. Czytnik z akumulatorem waży 235 g i wytrzymuje wielokrotne upadki z 1,8 m na beton. Wersja z radiem STAR 433 MHz i bez Bluetooth to [Gryphon GM4200](/produkt/datalogic-gryphon-gm4200).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -361,7 +364,7 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "imageDescriptions": [
       "Datalogic Gryphon GBT4200 — sam czytnik, ujęcie pod kątem",
-      "Datalogic Gryphon GBT4200 — dodatkowe ujęcie z bazą sprzedawaną osobno"
+      "Datalogic Gryphon GBT4200 w bazie ładującej WLC4190, widok pod kątem"
     ],
     "tags": [
       "retail",
@@ -429,7 +432,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "bezprzewodowy odczyt etykiet 1D przez Bluetooth"
+      "Okienko pocztowe lub bankowe z Bluetooth do 100 m",
+      "Apteka z codzienną dezynfekcją skanera 1D"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -446,12 +450,16 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy GBT4200 odczytuje QR tak jak GBT4600?",
-        "answer": "Nie. GBT4200 jest czytnikiem 1D. GBT4600 obsługuje także kody 2D i jest odrębnym modelem."
+        "question": "Czy GBT4200 odczyta kod QR?",
+        "answer": "Nie. GBT4200 dekoduje tylko kody 1D, w tym GS1 DataBar. Kody QR przez Bluetooth odczytuje Gryphon GBT4600 z Bluetooth 5.2."
       },
       {
-        "question": "Co zawiera zestaw Gryphon GBT4200?",
-        "answer": "GBT4200-BK-WLC: Sam czytnik — bez przewodu i bazy. GBT4200-BK-BTK1: Czytnik, baza WLC4190-BK-BT, USB 90A052258."
+        "question": "Co zawiera zestaw GBT4200-BK-BTK1?",
+        "answer": "Czytnik GBT4200, bazę WLC4190-BK-BT i prosty przewód USB-A 90A052258 o długości 2 m. GBT4200-BK-WLC to sam czytnik bez bazy."
+      },
+      {
+        "question": "Ile czytników GBT4200 obsłuży jedna baza?",
+        "answer": "Do 7 czytników na jeden odbiornik Bluetooth, czyli bazę WLC4190-BK-BT albo klucz Bluetooth."
       }
     ],
     "downloads": [
@@ -471,9 +479,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Gryphon GM4200",
     "seoH1": "Datalogic Gryphon GM4200",
     "seoTitle": "Datalogic Gryphon GM4200 — skaner 1D STAR 433 MHz | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Gryphon GM4200 — bezprzewodowy czytnik 1D STAR 433 MHz, działa tylko z bazą WLC4190-BK-433. Czytnik Datalogic GM4200, zasięg do 50 m, 3 lata gwarancji. GM4200 Datalogic sam lub w zestawie z bazą. PN: GM4200-BK-433-WLC, GM4200-BK-433K1.",
-    "shortDescription": "Datalogic Gryphon GM4200 — bezprzewodowy skaner kodów kreskowych 1D z radiem STAR 433 MHz. Działa tylko z bazą STAR WLC4190-BK-433 (zestaw GM4200-BK-433K1).",
-    "description": "Datalogic Gryphon GM4200 to bezprzewodowy skaner kodów kreskowych 1D z radiem STAR 433 MHz. Dane przesyła tylko przez bazę STAR, która łączy się z komputerem. Nie odczytuje kodów QR.\n\nGM4200-BK-433-WLC i GM4200-BK-433K1 pracują w paśmie 433,92 MHz. Nie współpracują z bazami Bluetooth ani 910 MHz. Zasięg radia wynosi do 50 m w otwartej przestrzeni. Jedna baza obsługuje do 16 czytników.\n\nGM4200-BK-433-WLC to sam czytnik. Do przesyłania danych i ładowania akumulatora wymaga bazy [WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433). Zestaw GM4200-BK-433K1 zawiera czytnik, bazę WLC4190-BK-433 i przewód USB 90A052258. Akumulator Li-Ion 2550 mAh ładuje się indukcyjnie. Typowy czas ładowania wynosi ok. 10 h z portu USB komputera, 4,5 h z USB-C i 4 h z przewodem z zasilaniem zewnętrznym.\n\nCzytnik ma klasę ochrony IP52 i wytrzymuje wielokrotne upadki z 1,8 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta na czytnik trwa 3 lata. Wersja z Bluetooth to [Gryphon GBT4200](/produkt/datalogic-gryphon-gbt4200).",
+    "seoDescription": "Datalogic Gryphon GM4200: bezprzewodowy skaner kodów kreskowych 1D z radiem STAR 433 MHz, do 16 czytników na odbiornik, zasięg 50 m, akumulator 2550 mAh.",
+    "shortDescription": "Datalogic Gryphon GM4200 — bezprzewodowy skaner kodów kreskowych 1D z radiem STAR 433 MHz, zasięgiem 50 m, ładowaniem indukcyjnym i 3 latami gwarancji.",
+    "description": "Gryphon GM4200 to bezprzewodowy czytnik kodów kreskowych 1D z radiem Datalogic STAR 433 MHz. Służy przy kasach, w okienkach obsługi i przy kompletacji zamówień, gdy dane mają trafiać do komputera bez Bluetooth. GM4200 odczytuje kody liniowe, w tym GS1 DataBar, także z ekranów urządzeń mobilnych. Kodów 2D nie dekoduje.\n\n## Radio STAR 433,92 MHz w GM4200\n\nGM4200 przesyła dane w paśmie 433,92 MHz do bazy STAR podłączonej do komputera. Moc wypromieniowana GM4200 jest mniejsza niż 6,3 mW. W otwartej przestrzeni zasięg wynosi 50 m. Jeden odbiornik obsługuje do 16 czytników GM4200 w konfiguracji wielopunktowej. Komunikacja STAR jest dwukierunkowa. Czytnik nie łączy się przez Bluetooth.\n\n## Bazy WLC4190 i WLC4090 do GM4200\n\nDo rodziny Gryphon 4200 pasują dwie bazy: WLC4190 na biurko lub ścianę, ze złączami USB-C, USB i RS-232, oraz WLC4090 z regulowanym położeniem i odczytem podczas ładowania. Baza do GM4200 musi pracować w tym samym paśmie 433 MHz co czytnik. Zestaw GM4200-BK-433K1 zawiera czytnik, [bazę WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433) i [przewód USB-A 90A052258](/produkt/datalogic-quickscan-usb-90a052258). GM4200-BK-433-WLC to sam czytnik, bez bazy. Akumulator Li-Ion 2550 mAh ładuje się w bazie indukcyjnie. Przy zasilaniu bazy 12 V DC ładowanie GM4200 trwa około 4 h, a jedno ładowanie wystarcza na 80 000 odczytów.\n\nObudowa GM4200 ma klasę IP52 i znosi codzienną dezynfekcję. Czytnik z akumulatorem waży 235 g. Odpowiednik z Bluetooth 5.0 i zasięgiem 100 m to [Gryphon GBT4200](/produkt/datalogic-gryphon-gbt4200).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -486,7 +494,7 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "imageDescriptions": [
       "Datalogic Gryphon GM4200 — sam czytnik, ujęcie pod kątem",
-      "Datalogic Gryphon GM4200 — dodatkowe ujęcie z bazą sprzedawaną osobno"
+      "Datalogic Gryphon GM4200 w bazie ładującej WLC4190, widok pod kątem"
     ],
     "tags": [
       "retail",
@@ -554,7 +562,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "bezprzewodowy odczyt 1D w systemie STAR 433 MHz"
+      "Kompletacja zamówień w paśmie STAR 433 MHz",
+      "Do 16 czytników 1D na jednym odbiorniku STAR"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -571,16 +580,16 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy GM4200-BK-433-WLC działa bez bazy?",
-        "answer": "Nie. GM4200-BK-433-WLC to sam czytnik. Dane przesyła i akumulator ładuje tylko przez bazę STAR [WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433). Zestaw GM4200-BK-433K1 zawiera czytnik, bazę i przewód USB 90A052258."
+        "question": "Z jakimi bazami współpracuje GM4200-BK-433-WLC?",
+        "answer": "Z bazami STAR 433 MHz rodziny Gryphon 4200: WLC4190 albo WLC4090. Zestaw GM4200-BK-433K1 zawiera bazę WLC4190-BK-433. Baza Bluetooth WLC4190-BK-BT nie odbiera danych z GM4200."
       },
       {
-        "question": "Czy GM4200 i GBT4200 używają tej samej bazy komunikacyjnej?",
-        "answer": "Nie. GM4200 korzysta z bazy STAR WLC4190-BK-433. GBT4200 używa Bluetooth i bazy WLC4190-BK-BT."
+        "question": "Ile czytników GM4200 obsłuży jeden odbiornik STAR?",
+        "answer": "Do 16 czytników w konfiguracji wielopunktowej. Zasięg radia STAR 433 MHz wynosi 50 m w otwartej przestrzeni."
       },
       {
-        "question": "Co zawiera zestaw Gryphon GM4200?",
-        "answer": "GM4200-BK-433-WLC: Sam czytnik — bez przewodu i bazy. GM4200-BK-433K1: Czytnik, baza WLC4190-BK-433, USB 90A052258."
+        "question": "Co zawiera zestaw GM4200-BK-433K1?",
+        "answer": "Czytnik GM4200, bazę WLC4190-BK-433 i prosty przewód USB-A 90A052258 o długości 2 m."
       }
     ],
     "downloads": [
@@ -600,9 +609,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Heron HD3130",
     "seoH1": "Datalogic Heron HD3130",
     "seoTitle": "Datalogic Heron HD3130 — skaner 1D do kasy | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Heron HD3130 — przewodowy czytnik 1D do kasy, z podstawką. Czytnik Datalogic HD3130, USB, RS-232 i KBW, 5 lat gwarancji. HD3130 Datalogic z podstawką Autosense lub Autosense Flex. PN: HD3130-BK, HD3130-BKK1B, HD3130-BKK1S.",
+    "seoDescription": "Datalogic Heron HD3130: przewodowy czytnik kodów kreskowych 1D do kasy, z podstawką, 270 odczytów/s, zakres 2–40 cm, USB, RS-232 i KBW, 5 lat gwarancji.",
     "shortDescription": "Datalogic Heron HD3130 — przewodowy skaner kodów kreskowych 1D z podstawką, USB, RS-232 i KBW, 5 lat gwarancji.",
-    "description": "Datalogic Heron HD3130 to przewodowy skaner kodów kreskowych 1D do punktów sprzedaży. Pracuje w ręce lub na podstawce i sam przełącza się między tymi trybami.\n\nLiniowy układ odczytu pracuje z szybkością do 270 odczytów na sekundę. Typowy zakres dla kodu 13 mil wynosi 2–40 cm. Green Spot potwierdza odczyt na etykiecie. Kolor podświetlenia i sygnał dźwiękowy są konfigurowalne.\n\nHD3130 obsługuje USB, RS-232 i Keyboard Wedge. Każdy interfejs wymaga osobnego przewodu. HD3130-BK zawiera czytnik z podstawką, bez przewodu. HD3130-BKK1B zawiera czytnik, podstawkę Autosense i przewód USB. HD3130-BKK1S zawiera czytnik, podstawkę Autosense Flex i przewód USB.\n\nCzytnik ma klasę ochrony IP40 i wytrzymuje upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Kody QR i Data Matrix odczytuje [Heron HD3430](/produkt/datalogic-heron-hd3430). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Heron HD3130 to przewodowy czytnik kodów kreskowych 1D do kas w sklepach odzieżowych i specjalistycznych. Pracuje w ręce albo na podstawce i sam przełącza tryb ręczny i bezdotykowy. Ma kolorowe diody po bokach i u góry oraz głośnik polifoniczny.\n\n## HD3130: imager CCD i 270 odczytów na sekundę\n\nLiniowy imager CCD w HD3130 ma 2500 pikseli i wykonuje do 270 odczytów na sekundę. Rozdzielczość HD3130 sięga 4 mil. Kod 13 mil HD3130 odczytuje z 2–40 cm, a kod 20 mil z 2–60 cm. Green Spot służy do celowania i potwierdza odczyt. Kolor diod i dźwięk potwierdzenia w HD3130 można dopasować do wystroju sklepu.\n\n## Zestawy HD3130 z podstawką i przewodem USB\n\nHD3130 obsługuje USB, RS-232 i Keyboard Wedge i wymaga zasilania 5 V DC ±5%. HD3130-BK to czytnik HD3130 z podstawką, bez przewodu. HD3130-BKK1B zawiera czytnik, podstawkę i przewód USB. HD3130-BKK1S zawiera czytnik HD3130, podstawkę Autosense Flex i przewód USB. Do RS-232 służy osobny [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230). HD3130 waży 150 g, ma klasę IP40 i wytrzymuje upadki z 1,5 m na beton.\n\nKody QR, Data Matrix i PDF417 odczytuje [Heron HD3430](/produkt/datalogic-heron-hd3430) z matrycą WVGA.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -614,8 +623,8 @@ export const datalogicAdditionalScanners: Product[] = [
       "/images/products/datalogic-heron-hd3130-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Heron HD3130 — sam czytnik, ujęcie pod kątem",
-      "Datalogic Heron HD3130 — dodatkowe ujęcie"
+      "Datalogic Heron HD3130 na podstawce, głowica skierowana w lewo",
+      "Datalogic Heron HD3130 na podstawce, głowica skierowana w prawo"
     ],
     "tags": [
       "retail",
@@ -688,7 +697,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt kodów 1D w punkcie sprzedaży"
+      "Kasa w sklepie odzieżowym z kodami 1D",
+      "Stanowisko z kolorem diod i dźwiękiem dopasowanym do marki"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -700,12 +710,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym HD3130 różni się od HD3430?",
-        "answer": "HD3130 odczytuje kody liniowe 1D. HD3430 obsługuje również kody 2D, między innymi QR i Data Matrix."
+        "question": "Czym HD3130-BKK1S różni się od HD3130-BKK1B?",
+        "answer": "Oba zestawy zawierają czytnik HD3130, podstawkę i przewód USB. W HD3130-BKK1S jest podstawka Autosense Flex."
       },
       {
-        "question": "Co zawiera zestaw Heron HD3130?",
-        "answer": "HD3130-BK: Czytnik z podstawką, bez przewodu. HD3130-BKK1B: Czytnik, podstawka Autosense, przewód USB. HD3130-BKK1S: Czytnik, podstawka Autosense Flex, przewód USB."
+        "question": "Czy HD3130 odczyta kod QR?",
+        "answer": "Nie. HD3130 dekoduje kody 1D, w tym GS1 DataBar. Kody 2D odczytuje Heron HD3430."
       }
     ],
     "downloads": [
@@ -717,7 +727,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-heron-hd3430",
@@ -725,9 +735,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic Heron HD3430",
     "seoH1": "Datalogic Heron HD3430",
     "seoTitle": "Datalogic Heron HD3430 — skaner 2D do kasy | TAKMA",
-    "seoDescription": "Skaner kodów kreskowych Datalogic Heron HD3430 — przewodowy czytnik 1D/2D do kasy, z podstawką. Czytnik Datalogic HD3430 odczytuje QR i Data Matrix, 5 lat gwarancji. HD3430 Datalogic z podstawką Autosense lub Autosense Flex. PN: HD3430-BK, HD3430-BKK1B, HD3430-BKK1S.",
+    "seoDescription": "Datalogic Heron HD3430: przewodowy skaner 2D do kasy, z podstawką, matryca WVGA, EAN-13 od 3 do 40 cm, USB, RS-232, KBW i OEM USB, 5 lat gwarancji.",
     "shortDescription": "Datalogic Heron HD3430 — przewodowy skaner kodów kreskowych 1D/2D z podstawką, USB, RS-232, KBW i OEM USB, 5 lat gwarancji.",
-    "description": "Datalogic Heron HD3430 to przewodowy skaner kodów kreskowych 1D i 2D do punktu sprzedaży. Pracuje w ręce lub na podstawce.\n\nUkład area imager (WVGA, 752 × 480 pikseli) odczytuje kody liniowe oraz QR, Data Matrix i PDF417. Green Spot potwierdza odczyt na kodzie. Kolor podświetlenia i sygnał dźwiękowy są konfigurowalne.\n\nHD3430 obsługuje USB, RS-232, Keyboard Wedge i OEM (IBM) USB. Każdy interfejs wymaga osobnego przewodu. HD3430-BK zawiera czytnik z podstawką, bez przewodu. HD3430-BKK1B zawiera czytnik, podstawkę Autosense i przewód USB. HD3430-BKK1S zawiera czytnik, podstawkę Autosense Flex i przewód USB.\n\nCzytnik ma klasę ochrony IP40, która nie chroni przed wodą. Wytrzymuje upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Wersja tylko do kodów 1D to [Heron HD3130](/produkt/datalogic-heron-hd3130). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Heron HD3430 to przewodowy skaner 2D do punktów sprzedaży w sklepach odzieżowych i specjalistycznych. Odczytuje kody 1D, 2D, pocztowe, piętrowe i złożone. Przechwytuje też obrazy w formatach BMP, JPEG i TIFF.\n\n## Matryca WVGA i zakresy odczytu HD3430\n\nMatryca HD3430 ma 752 × 480 pikseli. Celownik HD3430 to dioda laserowa 650 nm klasy 2, a oświetlenie jest białe. Kod EAN-13 13 mil HD3430 odczytuje z 3–40 cm, Code 39 5 mil z 3,5–20 cm, a Data Matrix 15 mil z 2–25 cm. Tolerancja ruchu HD3430 wynosi 25 IPS. Z kodów 2D HD3430 dekoduje QR, Micro QR, Data Matrix, Aztec, MaxiCode i Han Xin.\n\n## Zestawy HD3430 i interfejs OEM USB\n\nHD3430 obsługuje USB, OEM (IBM) USB, RS-232 i Keyboard Wedge. HD3430-BK to czytnik HD3430 z podstawką, bez przewodu. HD3430-BKK1B zawiera czytnik, podstawkę Autosense i przewód USB. HD3430-BKK1S zawiera czytnik HD3430, podstawkę Autosense Flex i przewód USB. HD3430 waży 150 g, ma klasę IP40 i wytrzymuje upadki z 1,5 m na beton.\n\nWersja z liniowym imagerem CCD do samych kodów 1D to [Heron HD3130](/produkt/datalogic-heron-hd3130).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -739,8 +749,8 @@ export const datalogicAdditionalScanners: Product[] = [
       "/images/products/datalogic-heron-hd3430-2-v1.webp"
     ],
     "imageDescriptions": [
-      "Datalogic Heron HD3430 — sam czytnik, ujęcie pod kątem",
-      "Datalogic Heron HD3430 — dodatkowe ujęcie"
+      "Datalogic Heron HD3430 na podstawce, głowica skierowana w lewo",
+      "Datalogic Heron HD3430 na podstawce, głowica skierowana w prawo"
     ],
     "tags": [
       "retail",
@@ -809,7 +819,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt QR, etykiet i kodów z telefonów przy kasie"
+      "Kasa w butiku z kodami QR i Data Matrix",
+      "Zapis obrazów BMP, JPEG i TIFF przy kasie"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -824,12 +835,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy HD3430 odczyta kody z telefonu?",
-        "answer": "Tak. Heron HD3430 odczytuje kody 1D i 2D z etykiet oraz ekranów telefonów."
+        "question": "Jaki zakres odczytu ma HD3430 dla EAN-13?",
+        "answer": "3–40 cm dla kodu 13 mil. Zakres HD3430 zależy od jakości druku, kontrastu i oświetlenia."
       },
       {
-        "question": "Co zawiera zestaw Heron HD3430?",
-        "answer": "HD3430-BK: Czytnik z podstawką, bez przewodu. HD3430-BKK1B: Czytnik, podstawka Autosense, przewód USB. HD3430-BKK1S: Czytnik, podstawka Autosense Flex, przewód USB."
+        "question": "Czym różnią się zestawy HD3430-BKK1B i HD3430-BKK1S?",
+        "answer": "Typem podstawki. HD3430-BKK1B ma podstawkę Autosense, a HD3430-BKK1S podstawkę Autosense Flex. Oba zestawy zawierają przewód USB."
       }
     ],
     "downloads": [
@@ -841,7 +852,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-td1120",
@@ -849,9 +860,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic TD1120",
     "seoH1": "Datalogic TD1120",
     "seoTitle": "Datalogic TD1120 — czytnik 1D USB | TAKMA",
-    "seoDescription": "Czytnik kodów kreskowych Datalogic TD1120 — kontaktowy czytnik 1D USB z oknem 65 lub 90 mm. Skaner Datalogic TD1120 do dokumentów, 5 lat gwarancji. TD1120 Datalogic z uchwytem i przewodem USB. PN: TD1120-BK-65, TD1120-BK-65K1, TD1120-BK-90, TD1120-BK-90K1.",
+    "seoDescription": "Datalogic TD1120: kontaktowy czytnik kodów kreskowych 1D z USB, okno 65 lub 90 mm, EAN 13 mil od 0 do 15 cm, uchwyt w zestawach K1, 5 lat gwarancji.",
     "shortDescription": "Datalogic TD1120 — przewodowy czytnik kodów kreskowych 1D z USB, okno 65 lub 90 mm, odczyt kontaktowy do 15 cm, 5 lat gwarancji.",
-    "description": "Datalogic TD1120 to przewodowy czytnik kodów kreskowych 1D z USB z rodziny TD1100 Lite. Służy do odczytu kodów z dokumentów i etykiet z bliska.\n\nOkno odczytu ma szerokość 65 mm albo 90 mm. Okno 90 mm ułatwia odczyt szerokich kodów na dokumentach, rachunkach i książkach. Typowy zakres EAN 13 mil wynosi od kontaktu do 15 cm. Czytnik odczytuje także kody GS1 DataBar.\n\nTD1120 obsługuje tylko USB. TD1120-BK-65 i TD1120-BK-90 to same czytniki, bez przewodu. TD1120-BK-65K1 i TD1120-BK-90K1 zawierają czytnik, uchwyt read-thru i przewód USB 90A052065. W uchwycie czytnik odczytuje kody bez trzymania w ręce.\n\nCzytnik ma klasę ochrony IP30 i wytrzymuje upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Interfejsy RS-232 i KBW ma [TD1170](/produkt/datalogic-td1170). Kody QR odczytują czytniki 2D, np. [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520).",
+    "description": "TD1120 to kontaktowy czytnik kodów kreskowych 1D z interfejsem USB, w wersji TD1100 Lite. Służy do odczytu kodów z bliska w bibliotekach, szkołach, urzędach, bankach i punktach usługowych. Obsługuje szerokie kody na książkach, dokumentach i rachunkach.\n\n## TD1120: okno 65 lub 90 mm i odczyt do 15 cm\n\nOkno odczytu TD1120 ma szerokość 6,5 cm w wersji 65 albo 9 cm w wersji 90. Kod EAN 13 mil TD1120 odczytuje od kontaktu do 15 cm, a Code 39 10 mil do 12 cm. Rozdzielczość TD1120 sięga 4 mil. Czytnik pracuje przy świetle otoczenia do 20 000 lx. Odczytuje też kody GS1 DataBar, także w wersjach piętrowych.\n\n## Zestawy TD1120 z uchwytem read-thru\n\nTD1120-BK-65 i TD1120-BK-90 to same czytniki. Zestawy TD1120-BK-65K1 i TD1120-BK-90K1 zawierają czytnik, uchwyt i [przewód USB-A 90A052065](/produkt/datalogic-handheld-usb-90a052065). Uchwyt read-thru umożliwia odczyt dokumentów i małych przedmiotów bez trzymania TD1120 w ręce. Wersja 65 waży 130 g, a wersja 90 153 g. TD1120 wymaga zasilania 5 V DC ±0,5 V i ma klasę IP30.\n\nInterfejsy RS-232 i KBW ma [TD1170](/produkt/datalogic-td1170), a wszystkie interfejsy z emulacją Wand [TD1130](/produkt/datalogic-td1130).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -950,7 +961,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt 1D z bliska przez USB"
+      "Wypożyczanie książek w bibliotece szkolnej",
+      "Kontaktowy odczyt kodów z dokumentów bankowych"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -961,12 +973,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy TD1120 i TD1170 mają ten sam interfejs?",
-        "answer": "Nie. TD1120 obsługuje USB. TD1170 służy do połączenia RS-232 lub KBW i wymaga odpowiedniego przewodu."
+        "question": "Czym różni się TD1120-BK-90 od TD1120-BK-65?",
+        "answer": "Szerokością okna: 9 cm zamiast 6,5 cm. Okno 9 cm mieści szersze kody, a wersja 90 waży 153 g zamiast 130 g."
       },
       {
-        "question": "Co zawiera zestaw TD1120?",
-        "answer": "TD1120-BK-65: Sam czytnik, bez przewodu. TD1120-BK-65K1: Czytnik, uchwyt, przewód USB 90A052065. TD1120-BK-90: Sam czytnik, bez przewodu. TD1120-BK-90K1: Czytnik, uchwyt, przewód USB 90A052065."
+        "question": "Co zawiera TD1120-BK-65K1?",
+        "answer": "Czytnik z oknem 6,5 cm, uchwyt na biurko lub ścianę i przewód USB-A 90A052065."
       }
     ],
     "downloads": [
@@ -978,7 +990,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-td1170",
@@ -986,9 +998,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic TD1170",
     "seoH1": "Datalogic TD1170",
     "seoTitle": "Datalogic TD1170 — czytnik 1D RS-232 i KBW | TAKMA",
-    "seoDescription": "Czytnik kodów kreskowych Datalogic TD1170 — kontaktowy czytnik 1D RS-232 i KBW z oknem 65 lub 90 mm. Skaner Datalogic TD1170 do dokumentów, 5 lat gwarancji. TD1170 Datalogic bez przewodu. PN: TD1170-BK-65, TD1170-BK-90.",
+    "seoDescription": "Datalogic TD1170: kontaktowy czytnik kodów kreskowych 1D z RS-232 i Keyboard Wedge, okno 65 lub 90 mm, EAN 13 mil do 15 cm, IP30, 5 lat gwarancji.",
     "shortDescription": "Datalogic TD1170 — przewodowy czytnik kodów kreskowych 1D z RS-232 lub KBW, okno 65 lub 90 mm, odczyt kontaktowy do 15 cm, 5 lat gwarancji.",
-    "description": "Datalogic TD1170 to przewodowy czytnik kodów kreskowych 1D z rodziny TD1100 Lite z interfejsem RS-232 lub KBW. Nie obsługuje USB. Służy do odczytu kodów z dokumentów i etykiet z bliska.\n\nOkno odczytu ma szerokość 65 mm albo 90 mm. Okno 90 mm ułatwia odczyt szerokich kodów na dokumentach, rachunkach i książkach. Typowy zakres EAN 13 mil wynosi od kontaktu do 15 cm.\n\nTD1170-BK-65 i TD1170-BK-90 to same czytniki, bez przewodu. Uchwyt read-thru nie wchodzi w skład TD1170-BK-65 ani TD1170-BK-90. Do RS-232 służy [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230).\n\nCzytnik ma klasę ochrony IP30 i wytrzymuje upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Interfejs USB mają [TD1120](/produkt/datalogic-td1120) i wielointerfejsowy [TD1130](/produkt/datalogic-td1130). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "TD1170 to kontaktowy czytnik kodów kreskowych 1D w wersji TD1100 Lite z interfejsami RS-232 i Keyboard Wedge. Nie ma USB. Pasuje do stanowisk z portem szeregowym lub klawiaturowym w bankach, urzędach i punktach usługowych.\n\n## TD1170: RS-232 i Keyboard Wedge\n\nTD1170-BK-65 i TD1170-BK-90 to same czytniki, bez przewodu i bez uchwytu. Do portu RS-232 służy [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230) ze złączem żeńskim 9-pin. Przewód doprowadza zasilanie do TD1170 z pinu 9 albo z zewnętrznego zasilacza. TD1170 wymaga 5 V DC ±0,5 V.\n\n## Zakres i warunki pracy TD1170\n\nKod EAN 13 mil TD1170 odczytuje od kontaktu do 15 cm. Okno TD1170 ma 6,5 cm w wersji 65 albo 9 cm w wersji 90. Czytnik odczytuje kody GS1 DataBar, także Stacked i Expanded Stacked. TD1170 pracuje przy świetle otoczenia do 20 000 lx i w temperaturze 0–50°C. Obudowa ma klasę IP30 i wytrzymuje upadki z 1,5 m.\n\nInterfejs USB mają [TD1120](/produkt/datalogic-td1120) i wielointerfejsowy [TD1130](/produkt/datalogic-td1130).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1065,7 +1077,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt 1D z bliska na stanowisku RS-232 lub KBW"
+      "Stanowisko kasowe z portem Keyboard Wedge",
+      "Terminal bankowy z RS-232 i kodami GS1 DataBar"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1077,11 +1090,11 @@ export const datalogicAdditionalScanners: Product[] = [
     "faq": [
       {
         "question": "Czy TD1170 obsługuje USB?",
-        "answer": "Nie. TD1170 obsługuje RS-232 i KBW. Do USB przeznaczony jest TD1120, a kilka interfejsów obsługuje TD1130."
+        "answer": "Nie. TD1170 ma interfejsy RS-232 i Keyboard Wedge. USB mają TD1120 i TD1130."
       },
       {
-        "question": "Co zawiera zestaw TD1170?",
-        "answer": "TD1170-BK-65: Sam czytnik, bez przewodu. TD1170-BK-90: Sam czytnik, bez przewodu."
+        "question": "Czy TD1170-BK-90 zawiera uchwyt?",
+        "answer": "Nie. Uchwyt HLD-T010-90 jest osobnym akcesorium. Zestawy z uchwytem i przewodem są w ofercie tylko dla TD1120."
       }
     ],
     "downloads": [
@@ -1093,7 +1106,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-td1130",
@@ -1101,9 +1114,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic TD1130",
     "seoH1": "Datalogic TD1130",
     "seoTitle": "Datalogic TD1130 — czytnik 1D wielointerfejsowy | TAKMA",
-    "seoDescription": "Czytnik kodów kreskowych Datalogic TD1130 — kontaktowy czytnik 1D z USB, RS-232, KBW i Wand. Skaner Datalogic TD1130 z oknem 65 lub 90 mm, 5 lat gwarancji. TD1130 Datalogic bez przewodu. PN: TD1130-BK-65, TD1130-BK-90.",
+    "seoDescription": "Datalogic TD1130: kontaktowy czytnik kodów kreskowych 1D z USB, RS-232, KBW i emulacją Wand, okno 65 lub 90 mm, światło do 20 000 lx, 5 lat gwarancji.",
     "shortDescription": "Datalogic TD1130 — przewodowy czytnik kodów kreskowych 1D z USB, RS-232, KBW i Wand, okno 65 lub 90 mm, 5 lat gwarancji.",
-    "description": "Datalogic TD1130 to przewodowy czytnik kodów kreskowych 1D z rodziny TD1100 Pro. Obsługuje USB, RS-232, KBW i emulację Wand. Służy do odczytu kodów z dokumentów i etykiet z bliska.\n\nOkno odczytu ma szerokość 65 mm albo 90 mm. Okno 90 mm ułatwia odczyt szerokich kodów na dokumentach, rachunkach i książkach. Typowy zakres EAN 13 mil wynosi od kontaktu do 15 cm. Czytnik odczytuje także kody GS1 DataBar.\n\nTD1130-BK-65 i TD1130-BK-90 nie zawierają przewodu. Każdy interfejs wymaga osobnego przewodu i ustawienia w czytniku. Do USB służy [przewód 90A052065](/produkt/datalogic-handheld-usb-90a052065), a do RS-232 [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230).\n\nCzytnik ma klasę ochrony IP30 i wytrzymuje upadki z 1,5 m na beton. Temperatura pracy wynosi od 0°C do +50°C. Gwarancja producenta trwa 5 lat. Konfigurację obsługuje program Datalogic Aladdin. Kody QR odczytują czytniki 2D, np. [QuickScan QW2520](/produkt/datalogic-quickscan-qw2520).",
+    "description": "TD1130 to kontaktowy czytnik kodów kreskowych 1D w wersji TD1100 Pro. Ma wszystkie interfejsy w jednym urządzeniu: USB, RS-232, Keyboard Wedge i emulację pióra Wand. Służy w urzędach, bankach, ubezpieczeniach i bibliotekach, gdzie stanowiska mają różne porty.\n\n## TD1130 Pro: USB, RS-232, KBW i Wand\n\nPrzewód do TD1130 dobiera się do portu stanowiska. TD1130-BK-65 i TD1130-BK-90 nie zawierają przewodu. Do USB służy [przewód 90A052065](/produkt/datalogic-handheld-usb-90a052065), a do RS-232 [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230). TD1130 wymaga zasilania 5 V DC ±0,5 V.\n\n## Okno 6,5 lub 9 cm i zakres odczytu TD1130\n\nWersja 65 ma okno 6,5 cm, a wersja 90 okno 9 cm na szerokie kody. Kod EAN 13 mil TD1130 odczytuje od kontaktu do 15 cm, a Code 39 7,5 mil do 8,1 cm. TD1130 pracuje przy świetle otoczenia do 20 000 lx. Do pracy bez trzymania służy uchwyt read-thru HLD-T010-65 albo HLD-T010-90. Masa TD1130 wynosi 130 g dla wersji 65 i 153 g dla wersji 90.\n\nWersję z samym USB i zestawem z uchwytem oferuje [TD1120](/produkt/datalogic-td1120).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1180,7 +1193,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "kontaktowy odczyt 1D z wyborem interfejsu"
+      "Stanowisko z emulacją pióra Wand",
+      "Okienko ubezpieczyciela z portem RS-232 lub KBW"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1192,12 +1206,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy TD1130 zawiera przewody do wszystkich interfejsów?",
-        "answer": "Nie. TD1130-BK-65 i TD1130-BK-90 nie zawierają przewodu. Przewód do wybranego interfejsu jest sprzedawany osobno."
+        "question": "Jakie interfejsy ma TD1130?",
+        "answer": "USB, RS-232, Keyboard Wedge i emulację Wand. To wersja TD1100 Pro. TD1120 ma samo USB, a TD1170 RS-232 i KBW."
       },
       {
-        "question": "Co zawiera zestaw TD1130?",
-        "answer": "TD1130-BK-65: Sam czytnik, bez przewodu. TD1130-BK-90: Sam czytnik, bez przewodu."
+        "question": "Czy TD1130-BK-65 zawiera przewód?",
+        "answer": "Nie. Przewód USB 90A052065 albo RS-232 CAB-350 jest osobną pozycją."
       }
     ],
     "downloads": [
@@ -1209,7 +1223,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pd9130",
@@ -1217,9 +1231,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PD9130",
     "seoH1": "Datalogic PowerScan PD9130",
     "seoTitle": "Datalogic PowerScan PD9130 — skaner przemysłowy 1D | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PD9130 — przewodowy czytnik kodów kreskowych 1D, IP65, upadki z 2 m. Czytnik Datalogic PD9130 do produkcji i magazynu, 3 lata gwarancji. PD9130 Datalogic z przewodem USB lub bez. PN: PD9130, PD9130-K1.",
+    "seoDescription": "Datalogic PowerScan PD9130: przemysłowy przewodowy skaner 1D z USB, RS-232 i KBW, zasilanie 4,5–30 V DC, EAN-13 2–61 cm, IP65, 50 upadków z 2 m.",
     "shortDescription": "Datalogic PowerScan PD9130 — przemysłowy przewodowy skaner kodów kreskowych 1D z USB, RS-232 i KBW, IP65, 3 lata gwarancji.",
-    "description": "Datalogic PowerScan PD9130 to przemysłowy przewodowy skaner kodów kreskowych 1D. Służy do stanowisk produkcyjnych, przyjęcia dostaw i kontroli wysyłek. Nie odczytuje kodów QR ani Data Matrix.\n\nUkład liniowy z zieloną linią celowania odczytuje kody EAN, Code 39 i Code 128. Typowy zakres dla EAN-13 wynosi 2–61 cm. Green Spot i dwie diody potwierdzają odczyt.\n\nPD9130 obsługuje USB, RS-232 i Keyboard Wedge. PD9130 to sam czytnik, bez przewodu. Zestaw PD9130-K1 zawiera przewód USB [CAB-524](/produkt/datalogic-handheld-cab-524). RS-232 i KBW wymagają innego przewodu i zmiany konfiguracji czytnika.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje 50 upadków z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Kody 2D z etykiet odczytuje [PowerScan PD9630](/produkt/datalogic-powerscan-pd9630). Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "PowerScan PD9130 to przewodowy, przemysłowy skaner kodów kreskowych 1D. Służy na stanowiskach produkcji, kontroli jakości, przyjęcia i wysyłki. PD9130 pracuje także w bezpośrednim świetle słonecznym.\n\n## PD9130: zielona linia i rozdzielczość 2,5 mil\n\nImager liniowy PD9130 rysuje zieloną linię skanowania, podobną do lasera. Rozdzielczość PD9130 sięga 2,5 mil. Kod EAN-13 PD9130 odczytuje z 2–61 cm, a Code 39 40 mil z 3–230 cm. Odczyt potwierdzają Green Spot na kodzie, trzy zielone diody 3GL i głośny sygnał dźwiękowy.\n\n## Interfejsy, zasilanie i zestaw PD9130-K1\n\nPD9130 ma wbudowane interfejsy USB, RS-232 i Keyboard Wedge. Przyjmuje napięcie 4,5–30 V DC. PD9130 to sam czytnik, bez przewodu. Zestaw PD9130-K1 zawiera czytnik i spiralny [przewód USB CAB-524](/produkt/datalogic-handheld-cab-524) o długości 8 ft (około 2,4 m). PD9130 waży 340 g, ma klasę IP65 i wytrzymuje 50 upadków z 2 m na beton.\n\nKody 2D na etykietach odczytuje przewodowy [PowerScan PD9630](/produkt/datalogic-powerscan-pd9630), a kody DPM na częściach [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1232,7 +1246,7 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "imageDescriptions": [
       "Datalogic PowerScan PD9130 — sam czytnik, ujęcie pod kątem",
-      "Datalogic PowerScan PD9130 — dodatkowe ujęcie"
+      "Datalogic PowerScan PD9130 — żółto-czarna obudowa, widok z boku pod kątem"
     ],
     "tags": [
       "magazyn",
@@ -1297,7 +1311,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "przewodowy odczyt kodów 1D na produkcji"
+      "Kontrola jakości na linii z kodami 1D",
+      "Odczyt kodów 1D przy bezpośrednim świetle słonecznym"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1309,12 +1324,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy PD9130 odczyta Data Matrix z etykiety?",
-        "answer": "Nie. PD9130 jest czytnikiem 1D. Data Matrix z etykiet odczytuje PD9630, a oznaczenia bezpośrednio na częściach — PD9531 DPM Evo."
+        "question": "Co zawiera PD9130-K1?",
+        "answer": "Czytnik PD9130 i spiralny przewód USB-A CAB-524 z funkcją Power Off Terminal, 8 ft. Sam PD9130 nie ma przewodu."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PD9130?",
-        "answer": "PD9130: Sam czytnik, bez przewodu. PD9130-K1: Czytnik, przewód USB CAB-524."
+        "question": "Czy PD9130 pracuje w pełnym słońcu?",
+        "answer": "Tak. PD9130 jest odporny na oświetlenie biurowe i halowe oraz na bezpośrednie światło słoneczne."
       }
     ],
     "downloads": [
@@ -1326,7 +1341,7 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-powerscan-pbt9100",
@@ -1334,9 +1349,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PBT9100",
     "seoH1": "Datalogic PowerScan PBT9100",
     "seoTitle": "Datalogic PowerScan PBT9100 — skaner 1D Bluetooth | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PBT9100 — bezprzewodowy czytnik kodów 1D z Bluetooth i bazą BC9030-BT. Czytnik Datalogic PBT9100, IP65, 3 lata gwarancji. PBT9100 Datalogic sam lub w zestawie z bazą. PN: PBT9100-RB, PBT9100-RBK10EU.",
+    "seoDescription": "Datalogic PowerScan PBT9100: przemysłowy bezprzewodowy skaner 1D z Bluetooth 3.0 Class 1, zasięg 100 m, 60 000 odczytów na ładowaniu, IP65, upadki z 2 m.",
     "shortDescription": "Datalogic PowerScan PBT9100 — przemysłowy bezprzewodowy skaner kodów kreskowych 1D z Bluetooth 3.0 i zasięgiem do 100 m, IP65, 3 lata gwarancji.",
-    "description": "Datalogic PowerScan PBT9100 to bezprzewodowy przemysłowy skaner kodów kreskowych 1D z Bluetooth 3.0 Class 1. Służy do odczytu kodów przy towarze, bez przewodu do komputera. Nie odczytuje kodów QR.\n\nBluetooth obsługuje profile HID i SPP. Nominalny zasięg wynosi do 100 m w otwartej przestrzeni. Wymienny akumulator Li-Ion ma 3350 mAh. Ładowanie przy zasilaniu zewnętrznym trwa typowo 4,5 h. Green Spot i diody potwierdzają odczyt.\n\nSam czytnik PBT9100-RB łączy się z hostem przez Bluetooth albo przez bazę. Akumulator ładuje się w bazie [BC9030-BT](/produkt/datalogic-handheld-bc9030-bt). Zestaw PBT9100-RBK10EU zawiera czytnik, bazę BC9030-BT, przewód USB CAB-438, zasilacz 8-0935 i przewód sieciowy EU 6003-0940. Baza obsługuje USB, RS-232 i Keyboard Wedge.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersja z radiem STAR 433 MHz to [PowerScan PM9100](/produkt/datalogic-powerscan-pm9100). Kody 2D przez Bluetooth odczytuje [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).",
+    "description": "PowerScan PBT9100 to przemysłowy, bezprzewodowy skaner kodów kreskowych 1D z Bluetooth 3.0 Class 1. Służy na hali produkcyjnej, w magazynie, przy przyjęciu i wysyłce. Zielona linia skanowania PBT9100 wygląda jak linia lasera, ale pochodzi z imagera liniowego.\n\n## PBT9100: Bluetooth do 100 m i 7 skanerów na bazę\n\nPBT9100 łączy się z bazą albo bezpośrednio z urządzeniem z Bluetooth. Obsługuje profile SPP i HID. W otwartej przestrzeni zasięg PBT9100 wynosi do 100 m. Do jednej bazy można przyłączyć do 7 skanerów PBT9100. Połączenie Ethernet w wersji standardowej i przemysłowej zapewnia opcjonalna baza BC9180-BT.\n\n## Akumulator 3350 mAh i zestaw PBT9100-RBK10EU\n\nWymienny akumulator Li-Ion 3350 mAh wystarcza na ponad 60 000 odczytów PBT9100. Ładowanie PBT9100 trwa 4,5 h z zasilacza i 10 h z zasilania hosta. Wymiana akumulatora zajmuje około 3 s. PBT9100-RB to sam czytnik. Zestaw PBT9100-RBK10EU zawiera czytnik, [bazę BC9030-BT](/produkt/datalogic-handheld-bc9030-bt), [przewód USB CAB-438](/produkt/datalogic-handheld-cab-438), [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewód sieciowy EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). PBT9100 waży 405 g, ma klasę IP65 i wytrzymuje 50 upadków z 2 m na beton.\n\nWersja z radiem STAR 433 MHz to [PowerScan PM9100](/produkt/datalogic-powerscan-pm9100), a skaner 2D z Bluetooth 5.0 to [PowerScan PBT9600](/produkt/datalogic-powerscan-pbt9600).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1416,7 +1431,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "przemysłowy odczyt 1D przez Bluetooth"
+      "Przyjęcie i wysyłka z kodami 1D do 100 m od bazy",
+      "Skaner na wózku widłowym z terminalem VMT"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1432,12 +1448,16 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy PBT9100 skanuje kody QR?",
-        "answer": "Nie. PBT9100 odczytuje kody liniowe 1D. PBT9600 obsługuje 1D i 2D oraz Bluetooth 5.0."
+        "question": "Czy PBT9100 odczyta kody 2D?",
+        "answer": "Nie. PBT9100 dekoduje kody 1D, w tym GS1 DataBar. Kody 2D przez Bluetooth odczytuje PowerScan PBT9600."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PBT9100?",
-        "answer": "PBT9100-RB: Sam czytnik — bez przewodu i bazy. PBT9100-RBK10EU: Czytnik, BC9030-BT, CAB-438, 8-0935, przewód EU."
+        "question": "Co zawiera zestaw PBT9100-RBK10EU?",
+        "answer": "Czytnik PBT9100-RB, bazę BC9030-BT, przewód USB CAB-438, zasilacz 12 V 8-0935 i przewód sieciowy EU 6003-0940."
+      },
+      {
+        "question": "Ile skanerów PBT9100 obsłuży jedna baza?",
+        "answer": "Do 7 skanerów PBT9100 w jednej sieci piconet Bluetooth."
       }
     ],
     "downloads": [
@@ -1457,9 +1477,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PM9100",
     "seoH1": "Datalogic PowerScan PM9100",
     "seoTitle": "Datalogic PowerScan PM9100 — skaner 1D STAR 433 MHz | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PM9100 — bezprzewodowy czytnik kodów 1D STAR 433 MHz z bazą BC9030-433. Czytnik Datalogic PM9100, zasięg do 100 m, IP65. PM9100 Datalogic sam lub w zestawie z bazą. PN: PM9100-433RB, PM9100-433RBK10.",
+    "seoDescription": "Datalogic PowerScan PM9100: przemysłowy bezprzewodowy skaner 1D z radiem STAR 433 MHz, do 100 m przy 19,2 kb/s, 16 skanerów na odbiornik, IP65.",
     "shortDescription": "Datalogic PowerScan PM9100 — przemysłowy bezprzewodowy skaner kodów kreskowych 1D z radiem STAR 433 MHz i bazą BC9030-433, IP65, 3 lata gwarancji.",
-    "description": "Datalogic PowerScan PM9100 to bezprzewodowy przemysłowy skaner kodów kreskowych 1D z radiem STAR 433 MHz. PM9100-433RB ma wymienny akumulator i pracuje z bazą STAR 433 MHz BC9030-433. Nie odczytuje kodów QR.\n\nZasięg w otwartej przestrzeni wynosi do 50 m przy 500 kb/s lub do 100 m przy 19,2 kb/s. Jedna baza obsługuje do 16 czytników. Akumulator Li-Ion ma 3350 mAh. Zielona linia odczytu i Green Spot potwierdzają odczyt.\n\nSam czytnik PM9100-433RB wymaga odbiornika STAR 433 MHz: bazy [BC9030-433](/produkt/datalogic-handheld-bc9030-433). Bez odbiornika czytnik nie przesyła danych. Zestaw PM9100-433RBK10 zawiera czytnik, bazę BC9030-433, przewód USB CAB-438, zasilacz 8-0935 i przewód sieciowy EU 6003-0940. PM9100-433RB i PM9100-433RBK10 nie mają wyświetlacza ani klawiatury.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersja z Bluetooth to [PowerScan PBT9100](/produkt/datalogic-powerscan-pbt9100). Kody 2D w systemie STAR odczytuje [PowerScan PM9600](/produkt/datalogic-powerscan-pm9600).",
+    "description": "PowerScan PM9100 to przemysłowy, bezprzewodowy skaner kodów kreskowych 1D z radiem Datalogic STAR 433 MHz. Służy w magazynach i na produkcji, gdzie dane trafiają do systemu przez bazę radiową. Obsługuje płynny roaming między bazami i komunikację dwukierunkową.\n\n## Odbiorniki STAR 433 MHz dla PM9100\n\nPM9100 przesyła dane do odbiornika STAR 433 MHz. Odbiornikiem PM9100 jest baza [BC9030-433](/produkt/datalogic-handheld-bc9030-433), BC9130-433, BC9160-433 z RS-485, BC9180-433 z Ethernetem albo klucz USB SD9030. W otwartej przestrzeni zasięg PM9100 wynosi 50 m przy 500 kb/s i 100 m przy 19,2 kb/s. Jeden odbiornik obsługuje do 16 skanerów PM9100.\n\n## Akumulator i zestaw PM9100-433RBK10\n\nWymienny akumulator Li-Ion 3350 mAh wystarcza na ponad 60 000 odczytów PM9100. Akumulator PM9100 ładuje się 4,5 h z zasilacza i 10 h z zasilania hosta. PM9100-433RB to sam czytnik. Zestaw PM9100-433RBK10 zawiera czytnik PM9100, bazę BC9030-433, [przewód USB CAB-438](/produkt/datalogic-handheld-cab-438), [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) i przewód sieciowy EU 6003-0940. PM9100 waży 405 g, ma klasę IP65 i wytrzymuje 50 upadków z 2 m.\n\nWersja z Bluetooth 3.0 to [PowerScan PBT9100](/produkt/datalogic-powerscan-pbt9100). Kody 2D w systemie STAR odczytuje [PowerScan PM9600](/produkt/datalogic-powerscan-pm9600).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1539,7 +1559,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "przemysłowy odczyt 1D przez radio STAR"
+      "Hala z kilkoma bazami STAR i roamingiem skanerów 1D",
+      "Sieć RS-485 lub Ethernet przez bazy BC9160 i BC9180"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1555,12 +1576,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy PM9100 jest zamiennikiem czytnika Bluetooth?",
-        "answer": "Nie w tej samej instalacji radiowej. PM9100 wymaga systemu STAR 433 MHz. PBT9100 korzysta z Bluetooth."
+        "question": "Jakiej bazy wymaga PM9100-433RB?",
+        "answer": "Dowolnego odbiornika STAR 433 MHz z rodziny PowerScan 9100: BC9030-433, BC9130-433, BC9160-433, BC9180-433 albo klucza USB SD9030 w wersji 433 MHz. Zestaw PM9100-433RBK10 ma bazę BC9030-433."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PM9100?",
-        "answer": "PM9100-433RB: Sam czytnik — bez przewodu i bazy. PM9100-433RBK10: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU."
+        "question": "Ile skanerów PM9100 obsłuży jedna baza?",
+        "answer": "Do 16 skanerów w konfiguracji wielopunktowej. Przy kilku bazach PM9100 obsługuje płynny roaming."
       }
     ],
     "downloads": [
@@ -1580,9 +1601,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PD9531 DPM Evo",
     "seoH1": "Datalogic PowerScan PD9531 DPM Evo",
     "seoTitle": "Datalogic PowerScan PD9531 DPM Evo — przewodowy skaner DPM | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PD9531 DPM Evo — przewodowy czytnik kodów 1D/2D i oznaczeń DPM. Czytnik DPM Datalogic PD9531, USB, RS-232 i KBW, IP65, 3 lata gwarancji. PD9531 Datalogic z przewodem USB lub bez. PN: PD9531-DPM, PD9531-DPMK1.",
+    "seoDescription": "Datalogic PowerScan PD9531 DPM Evo: przewodowy skaner DPM 2D z USB, RS-232 i KBW, odczyt od kontaktu do 4–5 cm, celownik laserowy, IP65, 330 g.",
     "shortDescription": "Datalogic PowerScan PD9531 DPM Evo — przemysłowy przewodowy skaner kodów 1D/2D do oznaczeń DPM na częściach, USB, RS-232 i KBW, IP65.",
-    "description": "Datalogic PowerScan PD9531 DPM Evo to przewodowy skaner kodów 1D i 2D do oznaczeń naniesionych bezpośrednio na częściach (DPM). Odczytuje także standardowe kody na papierowych etykietach.\n\nOptyka DPM służy do kodów wykonanych laserem, trawieniem chemicznym i drukiem atramentowym. Kody Data Matrix odczytuje także po znakowaniu mikroudarowym (dot peen). Białe światło oświetla kod, a celownik wskazuje obszar odczytu. Green Spot i dwie diody potwierdzają wynik.\n\nPD9531 DPM Evo obsługuje USB, RS-232 i Keyboard Wedge. PD9531-DPM to sam czytnik, bez przewodu. Zestaw PD9531-DPMK1 zawiera czytnik i [przewód USB CAB-550](/produkt/datalogic-handheld-cab-550).\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersje bezprzewodowe to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm) z Bluetooth i [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm) z radiem STAR. Pozostałe modele są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "PowerScan PD9531 DPM Evo to przewodowy skaner 2D do kodów DPM na metalu, tworzywie i innych powierzchniach części. Odczytuje oznaczenia wykonane laserem, trawieniem chemicznym i drukiem atramentowym. Data Matrix odczytuje też po znakowaniu igłowym.\n\n## PD9531: odległość odczytu DPM i etykiet\n\nKod DPM PD9531 odczytuje typowo od kontaktu do 4–5 cm. Optyka wysokiej gęstości PD9531 odczytuje drobne kody do 15 cm. Na etykiecie EAN-13 13 mil zakres wynosi 2,5–16 cm, a Data Matrix 10 mil 2–10,5 cm. Rozdzielczość PD9531 sięga 2,5 mil dla kodów 1D i 4 mil dla 2D. Celownik laserowy 630–680 nm wskazuje kod, a Motionix przełącza tryb po wykryciu ruchu.\n\n## Zasilanie 5 V i zestaw PD9531-DPMK1\n\nPD9531 ma interfejsy RS-232, USB i Keyboard Wedge i wymaga zasilania 5 V DC ±10%. PD9531-DPM to sam czytnik. Zestaw PD9531-DPMK1 zawiera czytnik i spiralny [przewód USB CAB-550](/produkt/datalogic-handheld-cab-550) o długości 2,4 m. PD9531 waży 330 g, ma klasę IP65 i wytrzymuje 50 upadków z 2 m.\n\nBezprzewodowe odpowiedniki to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm) z Bluetooth i [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm) z radiem STAR.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-przewodowe"
@@ -1595,7 +1616,7 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "imageDescriptions": [
       "Datalogic PowerScan PD9531 DPM Evo — sam czytnik, ujęcie pod kątem",
-      "Datalogic PowerScan PD9531 DPM Evo — dodatkowe ujęcie"
+      "Datalogic PowerScan PD9531 DPM Evo — srebrny wzór na górze obudowy, widok z boku pod kątem"
     ],
     "tags": [
       "magazyn",
@@ -1656,7 +1677,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "przewodowy odczyt oznaczeń bezpośrednio na częściach"
+      "Kontrola jakości części z kodem trawionym laserowo",
+      "Stanowisko montażu z Data Matrix wybitym igłowo"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1667,16 +1689,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy PD9531 DPM Evo potrzebuje bazy radiowej?",
-        "answer": "Nie. PD9531 DPM Evo jest modelem przewodowym. Wersja DPM z Bluetooth to PBT9501 DPM Evo."
+        "question": "Co zawiera zestaw PD9531-DPMK1?",
+        "answer": "Czytnik PD9531 DPM Evo i spiralny przewód USB-A CAB-550 o długości 2,4 m. PD9531-DPM to sam czytnik bez przewodu."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PD9531 DPM Evo?",
-        "answer": "PD9531-DPM: Sam czytnik, bez przewodu. PD9531-DPMK1: Czytnik, przewód USB CAB-550."
-      },
-      {
-        "question": "Czy skaner DPM odczyta każde oznaczenie na części?",
-        "answer": "Wynik zależy od technologii znakowania, materiału i powierzchni części. Zakres dla papierowej etykiety nie wyznacza zakresu dla kodu na metalu. Zalecany jest test na próbkach części."
+        "question": "Czy PD9531 odczyta kod wybity igłowo?",
+        "answer": "Tak, jeśli to kod Data Matrix. Pozostałe kody DPM PD9531 odczytuje po znakowaniu laserem, trawieniu chemicznym lub druku atramentowym."
       }
     ],
     "downloads": [
@@ -1696,9 +1714,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PBT9501 DPM Evo",
     "seoH1": "Datalogic PowerScan PBT9501 DPM Evo",
     "seoTitle": "Datalogic PowerScan PBT9501 DPM Evo — skaner DPM Bluetooth | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PBT9501 DPM Evo — bezprzewodowy czytnik kodów DPM z Bluetooth. Czytnik DPM Datalogic PBT9501 z bazą BC9030-BT, IP65, 3 lata gwarancji. PBT9501 Datalogic jako sam czytnik. PN: PBT9501-DPMRB.",
+    "seoDescription": "Datalogic PowerScan PBT9501 DPM Evo: bezprzewodowy skaner DPM z Bluetooth 3.0, odczyt od kontaktu do 4–5 cm, matryca 864 × 544, Motionix, IP65.",
     "shortDescription": "Datalogic PowerScan PBT9501 DPM Evo — przemysłowy bezprzewodowy skaner kodów 1D/2D i oznaczeń DPM z Bluetooth 3.0, IP65, 3 lata gwarancji.",
-    "description": "Datalogic PowerScan PBT9501 DPM Evo to bezprzewodowy skaner kodów 1D i 2D z Bluetooth 3.0 Class 1 do oznaczeń naniesionych bezpośrednio na częściach (DPM). Służy do odczytu kodów z części, których nie można przenieść pod skaner stanowiskowy.\n\nUkład area imager odczytuje kody 1D i 2D oraz oznaczenia bezpośrednie. Bluetooth obsługuje profile HID i SPP. Wymienny akumulator Li-Ion ma 3350 mAh. Przez bazę czytnik łączy się z komputerem przez USB, RS-232 lub Keyboard Wedge.\n\nPBT9501-DPMRB łączy się z hostem przez Bluetooth albo przez bazę. Akumulator ładuje się w bazie [BC9030-BT](/produkt/datalogic-handheld-bc9030-bt). Baza BC9030-BT, przewód CAB-438 i zasilacz 8-0935 są sprzedawane osobno.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersja z radiem STAR to [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm), a wersja przewodowa to [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).",
+    "description": "PowerScan PBT9501 DPM Evo to bezprzewodowy skaner 2D z Bluetooth 3.0 Class 1 do kodów DPM, naniesionych bezpośrednio na części. Odczytuje kody wykonane laserem, trawieniem chemicznym i drukiem atramentowym. Data Matrix odczytuje też po znakowaniu igłowym (dot peen).\n\n## Odczyt DPM i etykiet w PBT9501\n\nTypowa odległość odczytu DPM wynosi od kontaktu do 4–5 cm. Zależy od technologii znakowania, rozdzielczości kodu oraz materiału i powierzchni części. Na papierowych etykietach PBT9501 odczytuje EAN-13 13 mil z 2,5–16 cm i Data Matrix 10 mil z 2–10,5 cm. Matryca PBT9501 ma 864 × 544 pikseli. Laserowy celownik klasy 2 wskazuje kod, a pulsujące białe światło oświetla oznaczenie. Motionix przełącza tryb odczytu PBT9501 po wykryciu ruchu operatora.\n\n## Bluetooth, baza BC9030-BT i akumulator PBT9501\n\nPBT9501-DPMRB to sam czytnik z wymiennym akumulatorem Li-Ion 3350 mAh. Ładowanie PBT9501 trwa 4,5 h z zasilacza i 10 h z zasilania hosta, w temperaturze 0–45°C. Czytnik łączy się z [bazą BC9030-BT](/produkt/datalogic-handheld-bc9030-bt) albo z kluczem Bluetooth. Do bazy można przyłączyć do 4 czytników PBT9501, a do klucza do 7. Baza łączy się z komputerem przez USB, RS-232 lub Keyboard Wedge.\n\nWersja z radiem STAR 433 MHz to [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm), a przewodowa to [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1763,7 +1781,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "bezprzewodowy odczyt DPM przez Bluetooth"
+      "Odczyt Data Matrix po znakowaniu igłowym bez przewodu",
+      "Śledzenie komponentów z kodami DPM na hali"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1779,12 +1798,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym PBT9501 DPM różni się od PM9501 DPM — PowerScan PBT9501 DPM Evo?",
-        "answer": "PBT9501 DPM Evo korzysta z Bluetooth 3.0. PM9501 DPM Evo używa STAR 433 MHz i wymaga odbiornika STAR 433 MHz: bazy BC9030-433."
+        "question": "Z jakiej odległości PBT9501 odczytuje kody DPM?",
+        "answer": "Typowo od kontaktu do 4–5 cm. Wynik PBT9501 zależy od technologii znakowania, rozdzielczości kodu i powierzchni części."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PBT9501 DPM Evo?",
-        "answer": "PBT9501-DPMRB: Sam czytnik — bez przewodu i bazy."
+        "question": "Czy PBT9501-DPMRB zawiera bazę?",
+        "answer": "Nie. PBT9501-DPMRB to sam czytnik z akumulatorem. Baza BC9030-BT, przewód i zasilacz są osobnymi pozycjami."
       }
     ],
     "downloads": [
@@ -1804,9 +1823,9 @@ export const datalogicAdditionalScanners: Product[] = [
     "name": "Datalogic PowerScan PM9501 DPM Evo",
     "seoH1": "Datalogic PowerScan PM9501 DPM Evo",
     "seoTitle": "Datalogic PowerScan PM9501 DPM Evo — skaner DPM STAR 433 MHz | TAKMA",
-    "seoDescription": "Skaner przemysłowy Datalogic PowerScan PM9501 DPM Evo — bezprzewodowy czytnik kodów DPM STAR 433 MHz. Czytnik DPM Datalogic PM9501 z bazą BC9030-433, IP65. PM9501 Datalogic sam lub w zestawie z bazą. PN: PM9501-DPM433RB, PM9501-DPM433RBK10.",
+    "seoDescription": "Datalogic PowerScan PM9501 DPM Evo: bezprzewodowy skaner DPM z radiem STAR 433 MHz, zasięg do 200 m, 16 czytników na odbiornik, IP65.",
     "shortDescription": "Datalogic PowerScan PM9501 DPM Evo — przemysłowy bezprzewodowy skaner kodów 1D/2D i oznaczeń DPM z radiem STAR 433 MHz, IP65, 3 lata gwarancji.",
-    "description": "Datalogic PowerScan PM9501 DPM Evo to bezprzewodowy skaner kodów 1D i 2D z radiem STAR 433 MHz do oznaczeń naniesionych bezpośrednio na częściach (DPM). Odczytuje także standardowe kody na etykietach.\n\nPM9501-DPM433RB i PM9501-DPM433RBK10 korzystają z radia STAR 433 MHz i nie mają wyświetlacza. Wymienny akumulator Li-Ion ma 3350 mAh. Odczyt potwierdzają Green Spot, diody i sygnał dźwiękowy.\n\nSam czytnik PM9501-DPM433RB wymaga odbiornika STAR 433 MHz: bazy [BC9030-433](/produkt/datalogic-handheld-bc9030-433). Bez odbiornika czytnik nie przesyła danych. Zestaw PM9501-DPM433RBK10 zawiera czytnik, bazę BC9030-433, przewód USB CAB-438, zasilacz 8-0935 i przewód sieciowy EU 6003-0940. Baza BC9030-433 łączy się z komputerem przez USB, RS-232 lub Keyboard Wedge.\n\nCzytnik ma klasę ochrony IP65 i wytrzymuje upadki z 2 m na beton. Temperatura pracy wynosi od −20°C do +50°C. Gwarancja producenta trwa 3 lata. Wersja z Bluetooth to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm).",
+    "description": "PowerScan PM9501 DPM Evo to bezprzewodowy skaner 2D z radiem STAR 433 MHz do kodów DPM na częściach. Odczytuje oznaczenia laserowe, trawione chemicznie i drukowane atramentowo, a Data Matrix także po znakowaniu igłowym. Odczytuje też standardowe kody na etykietach.\n\n## Radio STAR 433 MHz: do 200 m i 16 czytników PM9501\n\nW otwartej przestrzeni zasięg PM9501 wynosi 200 m przy niskiej prędkości i 50 m przy wysokiej, z przeskakiwaniem częstotliwości. Jeden odbiornik obsługuje do 16 czytników PM9501. Odbiornikiem jest baza [BC9030-433](/produkt/datalogic-handheld-bc9030-433), BC9130-433, BC9160-433 z RS-485, BC9180-433 z Ethernetem albo klucz USB SD9030. Radio PM9501 wspiera roaming i komunikację dwukierunkową.\n\n## Odczyt DPM i zestaw PM9501-DPM433RBK10\n\nTypowa odległość odczytu DPM przez PM9501 wynosi od kontaktu do 4–5 cm. EAN-13 13 mil na etykiecie PM9501 odczytuje z 2,5–16 cm. Wymienny akumulator Li-Ion 3350 mAh wystarcza na ponad 60 000 odczytów i ładuje się 4,5 h z zasilacza lub 10 h z hosta. PM9501-DPM433RB to sam czytnik. Zestaw PM9501-DPM433RBK10 zawiera czytnik PM9501, bazę BC9030-433, [przewód USB CAB-438](/produkt/datalogic-handheld-cab-438), [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) i przewód sieciowy EU 6003-0940.\n\nWersja z Bluetooth 3.0 to [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-bezprzewodowe"
@@ -1882,7 +1901,8 @@ export const datalogicAdditionalScanners: Product[] = [
       }
     ],
     "applications": [
-      "odczyt DPM na produkcji w systemie STAR 433 MHz"
+      "Bezprzewodowy odczyt DPM na dużej hali do 200 m",
+      "Linia montażowa z kilkoma skanerami DPM na jednej bazie"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1898,16 +1918,12 @@ export const datalogicAdditionalScanners: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy PM9501 DPM i zwykły skaner 2D mają to samo zastosowanie — PowerScan PM9501 DPM Evo?",
-        "answer": "Nie. PM9501 DPM Evo służy także do oznaczeń bezpośrednio na częściach. Zwykły odczyt 2D z papierowej etykiety nie oznacza obsługi DPM."
+        "question": "Jaki odbiornik jest potrzebny do PM9501-DPM433RB?",
+        "answer": "Baza STAR 433 MHz BC9030-433, BC9130-433, BC9160-433 lub BC9180-433 albo klucz USB SD9030-433. W zestawie PM9501-DPM433RBK10 jest baza BC9030-433."
       },
       {
-        "question": "Co zawiera zestaw PowerScan PM9501 DPM Evo?",
-        "answer": "PM9501-DPM433RB: Sam czytnik — bez przewodu i bazy. PM9501-DPM433RBK10: Czytnik, BC9030-433, CAB-438, 8-0935, przewód EU."
-      },
-      {
-        "question": "Czy skaner DPM odczyta każde oznaczenie na części?",
-        "answer": "Wynik zależy od technologii znakowania, materiału i powierzchni części. Zakres dla papierowej etykiety nie wyznacza zakresu dla kodu na metalu. Zalecany jest test na próbkach części."
+        "question": "Jaki zasięg ma radio PM9501?",
+        "answer": "Do 200 m przy niskiej prędkości transmisji i do 50 m przy wysokiej, w otwartej przestrzeni."
       }
     ],
     "downloads": [
@@ -1930,9 +1946,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Baza Bluetooth Datalogic Gryphon GBT4200",
     "seoH1": "Baza Bluetooth Datalogic Gryphon GBT4200",
     "seoTitle": "Baza Bluetooth Datalogic WLC4190-BK-BT do Gryphon GBT4200",
-    "seoDescription": "Baza Bluetooth Datalogic WLC4190-BK-BT do skanera Gryphon GBT4200: transmisja danych i ładowanie indukcyjne. PN: WLC4190-BK-BT.",
+    "seoDescription": "Baza Bluetooth Datalogic WLC4190-BK-BT do Gryphon GBT4200: ładowanie indukcyjne, złącza USB-C, USB i RS-232, montaż na biurku lub ścianie, do 7 czytników.",
     "shortDescription": "Baza WLC4190-BK-BT komunikuje się z Gryphon GBT4200 przez Bluetooth i ładuje go indukcyjnie.",
-    "description": "Baza WLC4190-BK-BT komunikuje się z Gryphon GBT4200 przez Bluetooth i ładuje go indukcyjnie. Do połączenia USB z komputerem jest wymagany przewód USB, np. 90A052258. Nie zastępuje bazy STAR do GM4200.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. [USB 90A052361 (1,2 m)](/produkt/datalogic-handheld-usb-90a052361) lub [USB 90A052356 (3 m)](/produkt/datalogic-handheld-usb-90a052356). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GBT4200](/produkt/datalogic-gryphon-gbt4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "WLC4190-BK-BT to baza ładująca z odbiornikiem Bluetooth do skanera [Gryphon GBT4200](/produkt/datalogic-gryphon-gbt4200). Odbiera dane z czytnika i przekazuje je do komputera. Czytnik w gnieździe ładuje się indukcyjnie, bez styków.\n\n## WLC4190-BK-BT: USB-C, USB i RS-232\n\nBaza WLC4190-BK-BT ma wielointerfejsowe złącze: USB-C, USB i RS-232. Pracuje na biurku albo na ścianie. Przyjmuje napięcie 4,5–14 V DC ±5%. Sama baza pobiera 80 mA przy 5 V, a podczas ładowania czytnika do 1200 mA. Do jednej bazy WLC4190-BK-BT można przyłączyć do 7 czytników GBT4200.\n\n## Przewody i zasilanie bazy WLC4190-BK-BT\n\nPozycja obejmuje samą bazę. W zestawie GBT4200-BK-BTK1 baza jest dołączona z [przewodem USB-A 90A052258](/produkt/datalogic-quickscan-usb-90a052258). Do zasilania WLC4190-BK-BT z [zasilacza 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) służą przewody USB-A z wejściem zasilania: [90A052361 o długości 1,2 m](/produkt/datalogic-handheld-usb-90a052361) albo [90A052356 o długości 3 m](/produkt/datalogic-handheld-usb-90a052356). Przy 12 V DC czytnik GBT4200 ładuje się w bazie około 4 h.\n\nWersja z radiem STAR 433 MHz do Gryphon GM4200 to [baza WLC4190-BK-433](/produkt/datalogic-handheld-wlc4190-bk-433).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1963,7 +1979,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "GBT4200"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie i odbiór danych z GBT4200 na ladzie",
+      "Montaż bazy Bluetooth na ścianie przy stanowisku"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [
       "datalogic-powerscan-8-0935",
@@ -1984,7 +2003,13 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-22",
+    "faq": [
+      {
+        "question": "Czy WLC4190-BK-BT współpracuje z Gryphon GM4200?",
+        "answer": "Nie. GM4200 nadaje w paśmie STAR 433 MHz i wymaga bazy 433 MHz, takiej jak WLC4190-BK-433."
+      }
+    ]
   },
   {
     "id": "datalogic-handheld-wlc4190-bk-433",
@@ -1992,9 +2017,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Baza STAR 433 MHz Datalogic Gryphon GM4200",
     "seoH1": "Baza STAR 433 MHz Datalogic Gryphon GM4200",
     "seoTitle": "Baza STAR 433 MHz Datalogic WLC4190-BK-433 do Gryphon GM4200",
-    "seoDescription": "Baza STAR 433 MHz Datalogic WLC4190-BK-433 do skanera Gryphon GM4200: odbiór danych i ładowanie indukcyjne. PN: WLC4190-BK-433.",
+    "seoDescription": "Baza STAR 433 MHz Datalogic WLC4190-BK-433 do Gryphon GM4200: do 16 czytników, zasięg 50 m, ładowanie indukcyjne, USB-C, USB i RS-232.",
     "shortDescription": "Baza WLC4190-BK-433 odbiera dane z Gryphon GM4200 w paśmie STAR 433 MHz i ładuje czytnik indukcyjnie.",
-    "description": "Baza WLC4190-BK-433 odbiera dane z Gryphon GM4200 w paśmie STAR 433 MHz i ładuje czytnik indukcyjnie. Nie jest bazą Bluetooth ani wersją 910 MHz.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940) podłącza się przez przewód interfejsu z wejściem zasilania, np. [USB 90A052361 (1,2 m)](/produkt/datalogic-handheld-usb-90a052361) lub [USB 90A052356 (3 m)](/produkt/datalogic-handheld-usb-90a052356). Przewód 90A052258 z zestawu nie ma wejścia zasilania.\n\n## Zgodne czytniki\n\n[GM4200](/produkt/datalogic-gryphon-gm4200). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "WLC4190-BK-433 to baza ładująca z odbiornikiem radia STAR 433 MHz do skanera [Gryphon GM4200](/produkt/datalogic-gryphon-gm4200). Odbiera dane z czytników i przekazuje je do komputera. Czytnik GM4200 w gnieździe ładuje się indukcyjnie.\n\n## WLC4190-BK-433: do 16 czytników GM4200\n\nBaza WLC4190-BK-433 pracuje w paśmie 433,92 MHz. W konfiguracji wielopunktowej obsługuje do 16 czytników GM4200. Zasięg radia w otwartej przestrzeni wynosi 50 m. Transmisji Bluetooth z GBT4200 baza WLC4190-BK-433 nie odbiera.\n\n## Złącza, montaż i zasilanie WLC4190-BK-433\n\nDo komputera baza łączy się przez USB-C, USB albo RS-232. Montaż jest możliwy na biurku lub na ścianie. Napięcie wejściowe WLC4190-BK-433 wynosi 4,5–14 V DC ±5%. W zestawie GM4200-BK-433K1 baza jest dołączona z przewodem USB-A 90A052258. [Zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) podłącza się przez przewód USB z wejściem zasilania: [90A052361 (1,2 m)](/produkt/datalogic-handheld-usb-90a052361) lub [90A052356 (3 m)](/produkt/datalogic-handheld-usb-90a052356).\n\nOdpowiednik z odbiornikiem Bluetooth do GBT4200 to [baza WLC4190-BK-BT](/produkt/datalogic-handheld-wlc4190-bk-bt).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2025,7 +2050,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "GM4200"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Odbiór danych z kilku czytników GM4200 na jednym stanowisku",
+      "Ładowanie GM4200 na biurku lub ścianie"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [
       "datalogic-powerscan-8-0935",
@@ -2046,7 +2074,13 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-22",
+    "faq": [
+      {
+        "question": "Ile czytników GM4200 obsłuży baza WLC4190-BK-433?",
+        "answer": "Do 16 czytników w konfiguracji wielopunktowej, w zasięgu 50 m w otwartej przestrzeni."
+      }
+    ]
   },
   {
     "id": "datalogic-handheld-rbp-gm4200",
@@ -2261,9 +2295,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Baza Bluetooth Datalogic PowerScan BC9030-BT",
     "seoH1": "Baza Bluetooth Datalogic PowerScan BC9030-BT",
     "seoTitle": "Baza Bluetooth Datalogic PowerScan BC9030-BT | TAKMA",
-    "seoDescription": "Baza Bluetooth Datalogic BC9030-BT do PowerScan PBT9100 i PBT9501 DPM Evo: transmisja danych i ładowanie, USB, RS-232 i KBW. PN: BC9030-BT.",
+    "seoDescription": "Baza Bluetooth Datalogic BC9030-BT do PowerScan PBT9100 i PBT9501 DPM Evo: ładowanie akumulatora, USB, RS-232 i KBW, zasilanie 10–30 V DC.",
     "shortDescription": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo.",
-    "description": "BC9030-BT to baza komunikacyjna i ładująca do PowerScan PBT9100 oraz PBT9501 DPM Evo. Obsługuje Bluetooth. Do komputera łączy się przez USB, RS-232 lub Keyboard Wedge. Połączenie USB wymaga przewodu [CAB-438](/produkt/datalogic-handheld-cab-438). Nie zastępuje bazy STAR 433 MHz.\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Zasilanie zewnętrzne zapewnia [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PBT9100](/produkt/datalogic-powerscan-pbt9100), [PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "BC9030-BT to baza z odbiornikiem Bluetooth i ładowarką do skanerów [PowerScan PBT9100](/produkt/datalogic-powerscan-pbt9100) i [PowerScan PBT9501 DPM Evo](/produkt/datalogic-powerscan-pbt9501-dpm). Dane z PBT9100 i PBT9501 baza przekazuje do komputera przez USB, RS-232 albo Keyboard Wedge. Ładuje akumulator czytnika włożonego do gniazda.\n\n## BC9030-BT: zasilanie 10–30 V DC i czas ładowania\n\nBaza BC9030-BT przyjmuje zasilanie zewnętrzne 10–30 V DC albo 5 V DC ±10% z hosta. Z zasilacza akumulator ładuje się 4,5 h, a z zasilania hosta 10 h. Wymiary BC9030-BT wynoszą 24,0 × 10,8 × 9,5 cm. Z PBT9100 baza obsługuje do 7 czytników, a z PBT9501 DPM Evo do 4.\n\n## Przewód i zasilacz do BC9030-BT\n\nPozycja obejmuje samą bazę. Zestaw PBT9100-RBK10EU zawiera BC9030-BT razem z [przewodem USB CAB-438](/produkt/datalogic-handheld-cab-438), [zasilaczem 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewodem sieciowym EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Wersja z Ethernetem to BC9180-BT, a wersja z dodatkowym gniazdem na zapasowy akumulator to BC9130-BT.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2294,7 +2328,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "PBT9100, PBT9501 DPM Evo"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Ładowanie i odbiór danych z PBT9100 na stanowisku",
+      "Podłączenie skanera Bluetooth do portu RS-232 lub KBW"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [
       "datalogic-handheld-cab-438",
@@ -2315,7 +2352,13 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-22",
+    "faq": [
+      {
+        "question": "Ile czytników obsłuży baza BC9030-BT?",
+        "answer": "Do 7 czytników PBT9100 albo do 4 czytników PBT9501 DPM Evo."
+      }
+    ]
   },
   {
     "id": "datalogic-handheld-bc9030-433",
@@ -2323,9 +2366,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Baza STAR 433 MHz Datalogic PowerScan BC9030-433",
     "seoH1": "Baza STAR 433 MHz Datalogic PowerScan BC9030-433",
     "seoTitle": "Baza STAR 433 MHz Datalogic PowerScan BC9030-433 | TAKMA",
-    "seoDescription": "Baza STAR 433 MHz Datalogic BC9030-433 do PowerScan PM9100 i PM9501 DPM Evo: odbiór danych i ładowanie, USB, RS-232 i KBW. PN: BC9030-433.",
+    "seoDescription": "Baza STAR 433 MHz Datalogic BC9030-433 do PowerScan PM9100 i PM9501 DPM Evo: do 16 czytników, USB, RS-232 i KBW, zasilanie 10–30 V DC.",
     "shortDescription": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz.",
-    "description": "BC9030-433 to baza komunikacyjna i ładująca do PowerScan PM9100 i PM9501 DPM Evo w wersji STAR 433 MHz. Do komputera łączy się przez USB, RS-232 lub Keyboard Wedge. Nie obsługuje RS-485 (do tego służy baza BC9160-433). Połączenie USB wymaga przewodu [CAB-438](/produkt/datalogic-handheld-cab-438).\n\n## Zawartość i zasilanie\n\nTa pozycja obejmuje samą bazę. Czytnik, przewód transmisyjny i zasilacz są sprzedawane osobno. Zasilanie zewnętrzne zapewnia [zasilacz 8-0935](/produkt/datalogic-powerscan-8-0935) z [przewodem sieciowym EU](/produkt/datalogic-powerscan-6003-0940).\n\n## Zgodne czytniki\n\n[PM9100](/produkt/datalogic-powerscan-pm9100), [PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "BC9030-433 to baza z odbiornikiem radia STAR 433 MHz i ładowarką do skanerów [PowerScan PM9100](/produkt/datalogic-powerscan-pm9100) i [PowerScan PM9501 DPM Evo](/produkt/datalogic-powerscan-pm9501-dpm). Dane z PM9100 i PM9501 baza przesyła do komputera przez USB, RS-232 albo Keyboard Wedge. Nie obsługuje RS-485, do którego służy baza BC9160-433.\n\n## BC9030-433: 16 czytników i zasięg radia\n\nDo bazy BC9030-433 można przyłączyć do 16 czytników. Z PM9100 zasięg w otwartej przestrzeni wynosi 50 m przy 500 kb/s i 100 m przy 19,2 kb/s. Baza BC9030-433 przyjmuje zasilanie zewnętrzne 10–30 V DC albo 5 V DC ±10% z hosta. Ma wymiary 24,0 × 10,8 × 9,5 cm.\n\n## Zestawy PowerScan z bazą BC9030-433\n\nPozycja obejmuje samą bazę. Zestawy PM9100-433RBK10 i PM9501-DPM433RBK10 zawierają BC9030-433 z [przewodem USB CAB-438](/produkt/datalogic-handheld-cab-438), [zasilaczem 12 V 8-0935](/produkt/datalogic-powerscan-8-0935) i [przewodem sieciowym EU 6003-0940](/produkt/datalogic-powerscan-6003-0940). Z zasilacza akumulator czytnika ładuje się 4,5 h, a z zasilania hosta 10 h.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2356,7 +2399,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "PM9100, PM9501 DPM Evo"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Odbiór danych z kilku skanerów PM9100 na jednym stanowisku",
+      "Ładowanie PM9501 DPM Evo przy linii montażowej"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [
       "datalogic-handheld-cab-438",
@@ -2377,7 +2423,13 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-22",
+    "faq": [
+      {
+        "question": "Czy BC9030-433 obsługuje RS-485?",
+        "answer": "Nie. BC9030-433 ma USB, RS-232 i Keyboard Wedge. RS-485 zapewnia baza BC9160-433."
+      }
+    ]
   },
   {
     "id": "datalogic-handheld-usb-90a052065",
@@ -2385,9 +2437,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Przewód USB-A Datalogic 90A052065",
     "seoH1": "Przewód USB-A Datalogic 90A052065",
     "seoTitle": "Przewód USB-A Datalogic 90A052065 | TAKMA",
-    "seoDescription": "Przewód USB-A Datalogic 90A052065, prosty, 2 m, do QuickScan QD2220 oraz czytników TD1120 i TD1130. PN: 90A052065.",
+    "seoDescription": "Przewód USB-A Datalogic 90A052065: prosty, 2 m, z certyfikatem USB i funkcją Power Off Terminal. Jest w zestawach QuickScan QD2220 i czytnika TD1120.",
     "shortDescription": "90A052065 to prosty przewód USB-A o długości 2 m do QuickScan QD2220 oraz czytników TD1120 i TD1130.",
-    "description": "90A052065 to prosty przewód USB-A o długości 2 m do QuickScan QD2220 oraz czytników TD1120 i TD1130. Łączy czytnik z komputerem i zapewnia zasilanie z USB. Ma funkcję Power Off Terminal (POT) i certyfikat USB. Jest w zestawach QD2220-BKK1, QD2220-BKK1S, TD1120-BK-65K1 i TD1120-BK-90K1. Nie pasuje do TD1170 z RS-232/KBW.\n\n## Zawartość\n\nTa pozycja obejmuje samo akcesorium. Czytnik i pozostałe wyposażenie są sprzedawane osobno.\n\n## Zgodne czytniki\n\n[QD2220](/produkt/datalogic-quickscan-qd2220), [TD1120](/produkt/datalogic-td1120), [TD1130](/produkt/datalogic-td1130). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Przewód 90A052065 łączy przewodowy czytnik Datalogic z portem USB-A komputera. Ma długość 2 m i prostą, niespiralną budowę. To przewód typu Enhanced z certyfikatem USB i funkcją Power Off Terminal (POT).\n\n## Zestawy QD2220 i TD1120 z przewodem 90A052065\n\nPrzewód 90A052065 wchodzi w skład zestawów QD2220-BKK1 i QD2220-BKK1S skanera [QuickScan QD2220](/produkt/datalogic-quickscan-qd2220). Jest też w zestawach TD1120-BK-65K1 i TD1120-BK-90K1 czytnika kontaktowego [TD1120](/produkt/datalogic-td1120). Jako osobna pozycja pasuje do wielointerfejsowego [TD1130](/produkt/datalogic-td1130) podłączanego przez USB.\n\nCzytnik [TD1170](/produkt/datalogic-td1170) ma interfejsy RS-232 i Keyboard Wedge, więc 90A052065 do niego nie pasuje. Do RS-232 służy [przewód CAB-350 (90A051230)](/produkt/datalogic-handheld-rs232-90a051230). Dla QD2220 dostępny jest też przewód ze złączem USB-C.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2418,7 +2470,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "QD2220, TD1120, TD1130"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Wymiana przewodu w zestawach QD2220 i TD1120",
+      "Podłączenie TD1130 do portu USB-A"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
@@ -2435,7 +2490,8 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22",
+    "faq": []
   },
   {
     "id": "datalogic-handheld-usb-90a052361",
@@ -2577,9 +2633,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Przewód RS-232 Datalogic CAB-350",
     "seoH1": "Przewód RS-232 Datalogic CAB-350",
     "seoTitle": "Przewód RS-232 Datalogic CAB-350 (90A051230) do Gryphon, Heron i TD1100",
-    "seoDescription": "Przewód RS-232 Datalogic CAB-350 (90A051230), złącze żeńskie 9-pin, ok. 1,8 m, do Gryphon GD4290, Heron HD3130, HD3430, TD1170 i TD1130. PN: 90A051230.",
+    "seoDescription": "Przewód RS-232 Datalogic CAB-350 (90A051230): prosty, 1,8 m, złącze żeńskie 9-pin, zasilanie z pinu 9 lub z zasilacza, do Gryphon, Heron i TD1100.",
     "shortDescription": "90A051230, czyli CAB-350, to prosty przewód RS-232 ze złączem żeńskim 9-pin.",
-    "description": "90A051230, czyli CAB-350, to prosty przewód RS-232 ze złączem żeńskim 9-pin. Łączy czytnik z portem RS-232 kasy lub komputera. Przewód doprowadza zasilanie z pinu 9 złącza RS-232 albo z zewnętrznego zasilacza. Długość ok. 1,8 m.\n\n## Zawartość\n\nTa pozycja obejmuje samo akcesorium. Czytnik i pozostałe wyposażenie są sprzedawane osobno.\n\n## Zgodne czytniki\n\n[GD4290](/produkt/datalogic-gryphon-gd4290), [HD3130](/produkt/datalogic-heron-hd3130), [HD3430](/produkt/datalogic-heron-hd3430), [TD1170](/produkt/datalogic-td1170), [TD1130](/produkt/datalogic-td1130). Pozostałe urządzenia są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "Przewód CAB-350 o numerze 90A051230 łączy czytnik Datalogic z portem RS-232 kasy lub komputera. Po stronie hosta ma złącze żeńskie 9-pin. Przewód jest prosty i ma długość 6 ft, czyli około 1,8 m.\n\n## Zasilanie przez pin 9 lub zasilacz w CAB-350\n\nZasilanie czytnika jest dostępne z pinu 9 złącza RS-232 albo z zewnętrznego zasilacza. Zasilacz nie jest częścią pozycji CAB-350.\n\n## Czytniki z RS-232 dla przewodu 90A051230\n\nCAB-350 pasuje do czytników z interfejsem RS-232: [Gryphon GD4290](/produkt/datalogic-gryphon-gd4290), [Heron HD3130](/produkt/datalogic-heron-hd3130), [Heron HD3430](/produkt/datalogic-heron-hd3430), [TD1170](/produkt/datalogic-td1170) i [TD1130](/produkt/datalogic-td1130). Do portu USB te czytniki łączy się innymi przewodami.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2610,7 +2666,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "GD4290, HD3130, HD3430, TD1170, TD1130"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Podłączenie czytnika do kasy z portem RS-232 9-pin",
+      "Zasilanie czytnika z pinu 9 portu szeregowego"
+    ],
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
@@ -2629,7 +2688,8 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22",
+    "faq": []
   },
   {
     "id": "datalogic-handheld-cab-438",
@@ -2696,9 +2756,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Przewód USB Datalogic PowerScan CAB-524",
     "seoH1": "Przewód USB Datalogic PowerScan CAB-524",
     "seoTitle": "Przewód USB Datalogic PowerScan CAB-524 | TAKMA",
-    "seoDescription": "Spiralny przewód USB-A Datalogic CAB-524, 8 ft, do przewodowego czytnika PowerScan PD9130. PN: CAB-524.",
+    "seoDescription": "Przewód USB Datalogic CAB-524: spiralny, USB-A, 8 ft (około 2,4 m), z funkcją Power Off Terminal. Jest w zestawie PD9130-K1 skanera PowerScan PD9130.",
     "shortDescription": "CAB-524 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9130.",
-    "description": "CAB-524 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9130. Ma długość 8 ft (ok. 2,4 m) i funkcję Power Off Terminal (POT). Jest w zestawie PD9130-K1. Nie zastępuje przewodu do bazy BC9030 ani przewodu do PowerScan 9600.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik, baza i pozostałe wyposażenie są sprzedawane osobno.\n\n## Zgodne czytniki\n\n[PD9130](/produkt/datalogic-powerscan-pd9130). Wszystkie rodziny są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "CAB-524 łączy przewodowy skaner [PowerScan PD9130](/produkt/datalogic-powerscan-pd9130) z portem USB-A komputera. Przewód jest spiralny i ma długość 8 ft, czyli około 2,4 m. Ma funkcję Power Off Terminal (POT).\n\n## CAB-524 w zestawie PD9130-K1\n\nZestaw PD9130-K1 zawiera czytnik i przewód CAB-524. Sam PD9130 jest sprzedawany bez przewodu, więc CAB-524 służy jako przewód do niego albo jako część zamienna. Zestaw RS-232 PD9130-K2 ma inny przewód: CAB-434.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2729,7 +2789,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "PD9130"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Podłączenie PD9130 do portu USB-A",
+      "Wymiana przewodu w zestawie PD9130-K1"
+    ],
     "compatibleAccessories": [],
     "relatedProducts": [
       "datalogic-powerscan-pd9130"
@@ -2744,7 +2807,8 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-22",
+    "faq": []
   },
   {
     "id": "datalogic-handheld-cab-550",
@@ -2752,9 +2816,9 @@ export const datalogicAdditionalAccessories: Product[] = [
     "name": "Przewód USB Datalogic PowerScan CAB-550",
     "seoH1": "Przewód USB Datalogic PowerScan CAB-550",
     "seoTitle": "Przewód USB Datalogic PowerScan CAB-550 | TAKMA",
-    "seoDescription": "Spiralny przewód USB-A Datalogic CAB-550, 2,4 m, do przewodowego czytnika PowerScan PD9531 DPM Evo. PN: CAB-550.",
+    "seoDescription": "Przewód USB Datalogic CAB-550: spiralny, USB-A, 2,4 m. Jest w zestawie PD9531-DPMK1 przewodowego skanera PowerScan PD9531 DPM Evo.",
     "shortDescription": "CAB-550 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9531 DPM Evo.",
-    "description": "CAB-550 to spiralny przewód USB-A do przewodowego czytnika PowerScan PD9531 DPM Evo. Ma długość 2,4 m. Łączy czytnik z portem USB komputera. Jest w zestawie PD9531-DPMK1, który zawiera czytnik i ten przewód.\n\n## Podłączenie i zawartość\n\nTa pozycja zawiera sam przewód. Czytnik i pozostałe wyposażenie są sprzedawane osobno. Sam czytnik PD9531-DPM nie zawiera przewodu.\n\n## Zgodne czytniki\n\n[PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Wszystkie rodziny są w kategorii [skanery Datalogic](/skanery-datalogic).",
+    "description": "CAB-550 to spiralny przewód USB-A o długości 2,4 m do przewodowego skanera [PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm). Łączy czytnik z portem USB komputera.\n\n## CAB-550 w zestawie PD9531-DPMK1\n\nZestaw PD9531-DPMK1 zawiera czytnik i przewód CAB-550. Wersja PD9531-DPM jest sprzedawana bez przewodu, więc CAB-550 służy do jej podłączenia albo jako część zamienna. Zestaw RS-232 PD9531-DPMK2 ma inny przewód: CAB-434.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2789,7 +2853,10 @@ export const datalogicAdditionalAccessories: Product[] = [
         "value": "PD9531-DPM"
       }
     ],
-    "applications": [],
+    "applications": [
+      "Podłączenie PD9531 DPM Evo do portu USB-A",
+      "Wymiana przewodu w zestawie PD9531-DPMK1"
+    ],
     "compatibleAccessories": [],
     "relatedProducts": [
       "datalogic-powerscan-pd9531-dpm"
@@ -2804,6 +2871,7 @@ export const datalogicAdditionalAccessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-22",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-22",
+    "faq": []
   }
 ]

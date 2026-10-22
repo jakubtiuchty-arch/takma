@@ -5,47 +5,23 @@ import { zd611rAccessoryIds } from './zd611r-accessories'
 export const zd611rProduct: Product = {
   id: 'zebra-zd611r', slug: 'zebra-zd611r', name: 'Zebra ZD611R', seoH1: 'Zebra ZD611R',
   seoTitle: 'Zebra ZD611R — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Zebra ZD611R: 2-calowa biurkowa drukarka i koder RAIN UHF 203 lub 300 dpi do wąskich etykiet 15–60 mm. Ethernet, ekran dotykowy 4,3 cala.',
+  seoDescription: 'Zebra ZD611R – 2-calowa biurkowa drukarka RFID UHF 203 lub 300 dpi. Moduł RE40, materiał 15–60 mm, odstęp wkładek 16 mm, ekran dotykowy 4,3 cala.',
   shortDescription: 'Biurkowa drukarka Zebra ZD611R drukuje i koduje wąskie etykiety RAIN UHF RFID. Wersje 203 i 300 dpi, Ethernet oraz ekran dotykowy 4,3 cala.',
-  description: `Zebra ZD611R to biurkowa drukarka i koder wąskich etykiet RAIN UHF RFID. Wykonuje nadruk i zapisuje identyfikator w układzie elektronicznym etykiety.
+  description: `Zebra ZD611R to 2-calowa biurkowa drukarka RFID UHF z czytnikiem i koderem Zebra RE40. Koduje wąskie etykiety zgodne z EPC Gen 2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Obudowa ma 138,7 mm szerokości, a drukarka waży 1,629 kg.
 
-## RFID na małym stanowisku pracy
+## Wąski materiał 15–60 mm
 
-ZD611R należy do klasy drukarek 2-calowych. Obsługuje materiał o szerokości 15–60 mm. Obudowa ma 138,7 mm szerokości. Model służy do przygotowania oznaczeń produktów, pojemników i wyposażenia, gdy etykieta nie wymaga szerokiego nadruku.
+Materiał może mieć 15–60 mm szerokości. Wersja 203 dpi drukuje do 56 mm szerokości z prędkością do 203 mm/s. Wersja 300 dpi drukuje do 54 mm szerokości z prędkością do 152 mm/s. Etykieta może mieć 6,35–991 mm długości, a wkładki mogą występować co 16 mm.
 
-Wbudowany moduł Zebra RE40 obsługuje EPC UHF Gen2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Adaptive Encoding ułatwia kalibrację kodowania. Minimalny odstęp kolejnych wkładek wynosi 16 mm dla zgodnego materiału. Przed wdrożeniem sprawdź zapis i odczyt etykiety na docelowym przedmiocie.
+## Taśma 74 m i rolka 127 mm
 
-Drukarka sprawdza etykietę w swoim torze materiałów. Do radiowej inwentaryzacji towarów na półkach potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania. Sam nadruk kodu kreskowego nie zastępuje zapisu identyfikatora EPC.
+ZD611R pracuje z taśmą 74 m na gilzie 12,7 mm, o szerokości 33–58 mm. Rolka materiału ma do 127 mm średnicy. Standardowe gilzy mają 12,7 i 25,4 mm, a gilzy 38,1, 50,8 i 76,2 mm wymagają adapterów. W trybie odrywania materiał może mieć 0,06–0,19 mm grubości.
 
-## Warianty 203 i 300 dpi
+## Ethernet, BLE 5 i opcjonalny port szeregowy
 
-ZD6A122-T0EER2EZ ma rozdzielczość 203 dpi. Drukuje z prędkością do 203 mm/s i szerokością do 56 mm. ZD6A123-T0EER2EZ ma 300 dpi. Drukuje z prędkością do 152 mm/s i szerokością do 54 mm. Prędkość kodowania zależy także od etykiety, danych i ustawień.
+Drukarka ma Ethernet, USB 2.0, USB Host i zegar RTC. Bluetooth Low Energy 5 służy tylko do aplikacji Zebra do konfiguracji drukarki. Port szeregowy jest w ZD611R opcją. Moduł Wi-Fi 802.11ax z Bluetooth 5.3 montuje się fabrycznie, a moduł Wi-Fi 802.11ac z Bluetooth 4.1 także u klienta. Odklejak z czujnikiem obecności etykiety i obcinacz można zamontować fabrycznie lub później.
 
-Wybierz 300 dpi do drobnego tekstu i niewielkich kodów. Wersja 203 dpi umożliwia szybszy nadruk. Rozdzielczość wpływa na szczegółowość nadruku, a nie zasięg odczytu RFID. Oba oferowane PN mają fabryczny koder UHF, kolorowy ekran dotykowy 4,3 cala oraz przewody zasilające EU i UK.
-
-## Etykiety i taśma 74 m
-
-Druk termotransferowy wymaga taśmy barwiącej o długości 74 m i szerokości 33–58 mm, na gilzie 12,7 mm. Taśma powinna osłaniać całą szerokość zadrukowywanego materiału. ZD611R nie korzysta z taśmy 300 m stosowanej w szerszych modelach.
-
-Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy. W obu metodach kodowanie wymaga etykiety z wkładką RFID. Maksymalna średnica rolki wynosi 127 mm. Standardowe średnice wewnętrzne gilz to 12,7 i 25,4 mm. Większe gilzy wymagają zgodnych adapterów.
-
-## Łączność i obsługa
-
-Oba PN mają USB 2.0, USB Host oraz Ethernet. Bluetooth Low Energy 5 służy do konfiguracji i nie zastępuje połączenia do drukowania. Oferowane PN nie mają fabrycznego Wi-Fi ani RS-232. Łączność można rozbudować zgodnym modułem. Przed montażem RS-232 sprawdź zajęcie gniazda interfejsu oraz potrzebę zachowania Ethernetu.
-
-Ekran dotykowy pokazuje ustawienia, stan drukarki i wskazówki dotyczące materiałów. Link-OS oraz narzędzia Zebra DNA wspierają konfigurację i zarządzanie. Przed integracją z WMS lub ERP ustal format EPC, źródło danych i obsługę błędnych etykiet.
-
-## Akcesoria i dobór modelu
-
-Dobierz odklejak P1117258-230 albo obcinacz P1117258-231 do sposobu odbioru etykiet. Obcinacz musi ciąć materiał między wkładkami RFID. Głowicę i wałek dociskowy dobierz do rozdzielczości urządzenia. Części wersji termicznej ZD611d nie zastępują części ZD611R.
-
-ZD611R ma fabryczny koder RFID. Zwykła ZD611t bez takiego kodera wykonuje wyłącznie nadruk. Jeśli potrzebujesz szerszych etykiet RFID, sprawdź [Zebra ZD621R](/produkt/zebra-zd621r). Etykiety, taśma oraz dodatkowe moduły są sprzedawane osobno.
-
-## Dostępność i gwarancja
-
-Sprzedaż PN ZD6A122-T0EER2EZ i ZD6A123-T0EER2EZ kończy się 1 stycznia 2027 r. Ostatnie wysyłki zaplanowano na 31 stycznia 2027 r., do wyczerpania zapasów. Przed zamówieniem potwierdź możliwość realizacji.
-
-Gwarancja na drukarkę w regionie EMEA wynosi 36 miesięcy dla urządzeń kupionych po 1 kwietnia 2024 r. Głowica ma odrębny limit: 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
+4-calowa [Zebra ZD621R](/produkt/zebra-zd621r) przyjmuje materiał do 118 mm i ma port szeregowy w standardzie.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'zebra',
   images: ['/images/products/zd611r-framed.webp'],
   imageDescriptions: ['Zebra ZD611R — biurkowa drukarka RFID do wąskich etykiet, widok z przodu pod kątem'],
@@ -73,8 +49,9 @@ Gwarancja na drukarkę w regionie EMEA wynosi 36 miesięcy dla urządzeń kupion
     { name: 'System i języki', value: 'Link-OS, ZPL II, EPL 2' },
     { name: 'Wymiary (gł. × szer. × wys.)', value: '242,9 × 138,7 × 169,2 mm' },
     { name: 'Masa', value: '1,629 kg' },
+    { name: 'Temperatura pracy', value: '4,4–41°C' },
     { name: 'W zestawie', value: 'Drukarka z koderem RFID, zasilacz, przewody EU i UK, przewód USB, gilza odbiorcza taśmy 12,7 mm, skrócona instrukcja' },
-    { name: 'Gwarancja EMEA', value: 'Drukarka: 36 miesięcy dla zakupu po 1 kwietnia 2024 r.; głowica: 12 miesięcy lub milion cali druku' },
+    { name: 'Gwarancja', value: 'Co najmniej 2 lata od daty wysyłki; warunki zależą od regionu' },
     { name: 'Koniec sprzedaży oferowanych PN', value: '1 stycznia 2027 r.; ostatnia wysyłka 31 stycznia 2027 r., do wyczerpania zapasów' },
   ],
   variants: [
@@ -82,18 +59,15 @@ Gwarancja na drukarkę w regionie EMEA wynosi 36 miesięcy dla urządzeń kupion
     { partNumber: 'ZD6A123-T0EER2EZ', name: '300 dpi — RFID', attributes: { 'Rozdzielczość': '300 dpi', 'Szerokość druku': 'do 54 mm', 'Prędkość druku': 'do 152 mm/s' }, availability: 'unavailable' },
   ],
   variantAttributeTooltips: { 'Prędkość druku': 'Maksymalna prędkość nadruku. Wydajność zadania RFID zależy również od etykiety, ilości danych i kalibracji.' },
-  applications: ['Druk i kodowanie wąskich etykiet RFID na produkty', 'Oznaczanie pojemników i wyposażenia', 'Przygotowanie identyfikatorów EPC przy stanowisku pracy'],
+  applications: ['Wąskie etykiety RFID od 15 do 60 mm', 'Opaski RFID na rękę dla pacjentów i gości imprez'],
   compatibleAccessories: [], relatedAccessories: zd611rAccessoryIds,
   faq: [
-    { question: 'Czym ZD611R różni się od ZD611t?', answer: 'ZD611R ma fabryczny moduł RE40 do kodowania etykiet RAIN UHF RFID. Zwykła ZD611t bez tego modułu wykonuje tylko nadruk. Sama etykieta z wkładką RFID nie dodaje drukarce funkcji kodowania.' },
-    { question: 'Kiedy wybrać ZD611R zamiast ZD621R?', answer: 'Wybierz ZD611R do wąskich etykiet i małego stanowiska. Obsługuje materiał 15–60 mm. Jeśli potrzebujesz szerszych etykiet, wybierz ZD621R. ZD611R ma taśmę 74 m, a ZD621R obsługuje także taśmę 300 m.' },
-    { question: 'Czy obie rozdzielczości mają tę samą szerokość druku?', answer: 'Nie. Wersja 203 dpi drukuje do 56 mm, a wersja 300 dpi do 54 mm. Szerokość materiału może wynosić do 60 mm. Obszar nadruku musi mieścić się w limicie wybranego wariantu.' },
-    { question: 'Czy ZD611R ma Wi-Fi i Bluetooth do drukowania?', answer: 'Oferowane PN nie mają fabrycznego Wi-Fi. Mają Ethernet, USB i USB Host. BLE 5 służy do konfiguracji. Do drukowania bezprzewodowego potrzebujesz zgodnego modułu Wi-Fi i Bluetooth.' },
-    { question: 'Czy drukarka wymaga taśmy barwiącej?', answer: 'Druk termotransferowy wymaga taśmy 74 m, o szerokości 33–58 mm, na gilzie 12,7 mm. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy. Obie metody kodowania wymagają etykiety z wkładką RFID.' },
-    { question: 'Czy ZD611R odczyta towary na regale?', answer: 'Nie. ZD611R zapisuje i sprawdza wkładkę podczas wydruku. Do inwentaryzacji radiowej potrzebujesz osobnego czytnika UHF RFID oraz oprogramowania.' },
-    { question: 'Czy podane PN będą nadal dostępne?', answer: 'Zakończenie sprzedaży ZD6A122-T0EER2EZ i ZD6A123-T0EER2EZ zaplanowano na 1 stycznia 2027 r. Ostatnie wysyłki mają nastąpić do 31 stycznia 2027 r., do wyczerpania zapasów. Przed zakupem potwierdź możliwość realizacji.' },
+    { question: 'Do czego służy Bluetooth Low Energy w ZD611R?', answer: 'Tylko do aplikacji Zebra do konfiguracji drukarki na Androidzie i iOS. Do druku służą Ethernet i USB albo opcjonalny moduł Wi-Fi z Bluetooth.' },
+    { question: 'Czy podane PN ZD611R będą nadal dostępne?', answer: 'Sprzedaż ZD6A122-T0EER2EZ i ZD6A123-T0EER2EZ kończy się 1 stycznia 2027 r. Ostatnie wysyłki zaplanowano do 31 stycznia 2027 r., do wyczerpania zapasów.' },
+    { question: 'Czy ZD611R może pracować na baterii?', answer: 'Tak, z opcjonalną baterią 2750 mAh. Bateria pozwala drukować z maksymalną prędkością i obsługuje wszystkie opcje materiałów.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZD611R / ZD621R RFID (PL)', type: 'datasheet', url: '/datasheets/zebra-zd600-rfid-karta-pl.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZD621R / ZD611R (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd600-rfid-series-spec-sheet-en-us.pdf', size: 'PDF' },
     { name: 'Akcesoria do ZD611R (EN) — strona 9', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/desktop-printer-guide-accessory-en-us.pdf#page=9', size: 'PDF' },
     { name: 'Katalog części ZD611R (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/manual/zd611r-manual-parts-catalog-en-us.pdf', size: 'PDF' },

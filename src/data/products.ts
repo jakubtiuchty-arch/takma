@@ -52211,17 +52211,19 @@ Stabilna konstrukcja z regulacją kąta nachylenia. Kompatybilna z seriami DS220
   {
     id: 'zebra-cable-usb-ds22',
     slug: 'zebra-kabel-usb-ds22',
-    name: 'Kabel USB 2.1m Zebra CBA-U21-S07ZBR',
-    shortDescription: 'Kabel USB 2.1m Zebra CBA-U21-S07ZBR — kabel USB Type A do skanerów DS2208, DS2278, DS4678, DS8178, DS9308, DS9908',
-    description: `Oryginalny kabel USB Zebra (CBA-U21-S07ZBR) o długości 2,1 m z wtyczką Type A. Łączy skaner z komputerem, kasą fiskalną lub terminalem POS. Plug and Play — automatyczne wykrywanie hosta.
+    name: 'Kabel USB Zebra CBA-U21-S07ZBR — 2,1 m',
+    shortDescription: 'Zebra CBA-U21-S07ZBR — ekranowany przewód USB 2,1 m (7 ft) z wtyczką USB-A do skanerów DS2208, DS4608, DS8108, DS9308, DS9908, baz DS2278, DS4678, DS8178 i skanerów SP72.',
+    description: `CBA-U21-S07ZBR to ekranowany przewód USB Zebra ze złączem Series A (USB-A) do skanerów kodów kreskowych i skanerów ladowych. Ma 2,1 m (7 ft) i jest prosty. Obsługuje specyfikację USB BC1.2. Przewód automatycznie wykrywa typ hosta.
 
-Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 i DS9908. Ekranowany, wytrzymały na wielokrotne zginanie. Pasuje także do skanerów ladowych Zebra SP7201-H i SP7208-H.`,
+## Skanery DS, bazy skanerów bezprzewodowych i seria SP72
+
+Przewód łączy z komputerem lub kasą POS skanery przewodowe [DS2208](/produkt/zebra-ds2208), [DS4608](/produkt/zebra-ds4608), DS8108, [DS9308](/produkt/zebra-ds9308) i [DS9908](/produkt/zebra-ds9908). Przy skanerach bezprzewodowych [DS2278](/produkt/zebra-ds2278), [DS4678](/produkt/zebra-ds4678) i DS8178 łączy z hostem bazę skanera. Skanery ladowe [Zebra SP7201-H](/produkt/zebra-sp7201-h) i [Zebra SP7208-H](/produkt/zebra-sp7208-h) pobierają przez ten przewód zasilanie z portu USB hosta. Przewody USB do DS9808 pasują także do serii SP72. Przewody ekranowane są zalecane ze względu na odporność na wyładowania elektrostatyczne.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
     priceFrom: 88,
     images: ['/images/products/CBA-U21-S07ZBR.png'],
-    imageDescriptions: ['Kabel USB 2.1m Zebra CBA-U21-S07ZBR do skanerów kodów kreskowych'],
+    imageDescriptions: ['Przewód USB Zebra CBA-U21-S07ZBR — szary przewód z wtyczką USB-A i wtyczką modułową skanera'],
     tags: ['retail', 'magazyn'],
     availability: 'available',
     isNew: false,
@@ -52233,10 +52235,14 @@ Kompatybilny z modelami: DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308 
       { name: 'Kompatybilność', value: 'DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308, Zebra SP7201-H, SP7208-H' },
       { name: 'Wykrywanie hosta', value: 'Automatyczne (autowykrywanie)' },
     ],
-    applications: ['Kasy fiskalne', 'Stanowiska POS', 'Biura'],
+    applications: ['Skaner ręczny DS2208 lub DS4608 przy komputerze', 'Baza skanera bezprzewodowego DS2278 przy kasie', 'Skaner ladowy SP72 zasilany z portu USB'],
     compatibleAccessories: [],
     downloads: [],
     createdAt: '2022-06-01',
+    seoDescription: 'Ekranowany przewód USB Zebra CBA-U21-S07ZBR, 2,1 m (7 ft), prosty, ze złączem USB-A i obsługą BC1.2. Do skanerów ręcznych DS i skanerów ladowych SP72.',
+    faq: [
+      { question: 'Czy przewód CBA-U21-S07ZBR zasila SP7208-H z dodatkowym skanerem?', answer: 'Nie. Dodatkowy skaner na porcie USB-A SP7208-H wymaga zewnętrznego źródła zasilania 11–13 V DC. Służy do tego zasilacz Zebra 50 W z przewodem CBL-DC-376A1-01.' },
+    ],
   },
   {
     id: 'zebra-cable-usb-long',
@@ -58620,8 +58626,8 @@ const tc22Accessories: Product[] = [
   "id": "zebra-psu-50w",
   "slug": "zebra-zasilacz-50w",
   "name": "Zasilacz sieciowy Zebra 50 W",
-  "shortDescription": "Zasilacz zasila zgodne stacje i ładowarki. Wejście: 100–240 V AC. Wyjście: 12 V DC, 4,16 A, 50 W. Stacje TC22 i TC27 wymagają przewodu CBL-DC-388A1-01. Workstation Connect wymaga przewodu CBL-DC-388A2-01. Pasuje także do Zebra TC201. Zasila także zgodną ładowarkę baterii i stację Workstation Connect Zebra ET65.",
-  "description": "Zasilacz zasila zgodne stacje i ładowarki. Wejście: 100–240 V AC. Wyjście: 12 V DC, 4,16 A, 50 W. Stacje TC22 i TC27 wymagają przewodu CBL-DC-388A1-01. Workstation Connect wymaga przewodu CBL-DC-388A2-01. Pasuje także do Zebra TC201. Zasila także zgodną ładowarkę baterii i stację Workstation Connect Zebra ET65.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\n**Wymagane dla stacji TC22 / TC27 / MC3400 / MC3450 / MC9400 / MC9450 i ładowarek z wejściem tego typu — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)\n\n**Wymagane dla stacji Workstation Connect TC22 / TC27 / TC201 / ET65 — sprzedawane osobno**\n\n- [Przewód DC Workstation Connect Zebra (CBL-DC-388A2-01)](/produkt/zebra-et6x-cbl-dc-388a2-01)\n\n**Wymagane dla skanera ladowego Zebra SP7208-H — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-376A1-01 (CBL-DC-376A1-01)](/produkt/zebra-kabel-zasilajacy-376)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Wybierz jeden przewód DC zgodny z gniazdem urządzenia.\n\n- Dla jednogniazdowej stacji USB lub ładowarki 4 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.\n\n## Zgodność ze skanerami ladowymi\n\n- [Zebra MP7200](/produkt/zebra-mp7200) (z przewodem CBL-DC-388A1-01)\n- [Zebra SP7208-H](/produkt/zebra-sp7208-h) — port AUX (z [przewodem CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376))",
+  "shortDescription": "Zebra PWR-BGA12V50W0WW — zasilacz sieciowy 12 V DC, 4,16 A, 50 W do jednogniazdowych stacji i ładowarek terminali Zebra oraz skanerów ladowych MP7200 i SP7208-H.",
+  "description": "PWR-BGA12V50W0WW to zasilacz sieciowy 12 V DC o mocy 50 W do stacji, ładowarek baterii i skanerów ladowych Zebra. Wyjście daje 12 V DC przy 4,16 A. Nominalne wejście to 100–240 V AC przy 2,4 A, a dopuszczalny zakres 90–264 V AC, 47–63 Hz. Do pracy potrzebne są dwa przewody: przewód DC do urządzenia i uziemiony przewód sieciowy, w Europie [50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\n## Przewód DC 388A1, 388A2 albo 376A1 zależnie od urządzenia\n\n[Przewód CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) łączy zasilacz z jednogniazdowymi stacjami i ładowarkami baterii terminali Zebra. Dotyczy to [stacji TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stacji USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarki 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Ten sam przewód zasila [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) oraz [stację USB MC9400 / MC9450](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450). Pasuje też do [ładowarki 4 baterii PowerPrecision Plus dla TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg) i [ładowarki 2 baterii ET65](/produkt/zebra-charger-et6x-2slot). Stacje Workstation Connect wymagają [przewodu CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Są to stacje do [TC22 / TC27 / TC201](/produkt/zebra-tc201-crd-tc2l-1snws-01), [TC53 / TC58](/produkt/zebra-tc53-crd-ntc5x-1snws-01), [TC73 / TC78](/produkt/zebra-tc73-crd-ntc7x-1snws-01) i [ET65](/produkt/zebra-et6x-crd-et6x-1snws-01).\n\n## Zasilacz 50 W do skanerów ladowych MP7200 i SP7208-H\n\n[Zebra MP7200](/produkt/zebra-mp7200) przy kasie bez portu USB Power Plus pobiera 12 V z tego zasilacza przez przewód CBL-DC-388A1-01. [Zebra SP7208-H](/produkt/zebra-sp7208-h) wymaga zewnętrznego zasilania 11–13 V DC do pracy z dodatkowym skanerem. Zasilacz łączy się wtedy ze skanerem [przewodem CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376) z prostą wtyczką.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58632,7 +58638,7 @@ const tc22Accessories: Product[] = [
     "/images/products/PWR-BGA12V50W0WW-tc201-card-quality-v3.png"
   ],
   "imageDescriptions": [
-    "Zasilacz sieciowy Zebra 50 W — widok akcesorium"
+    "Zasilacz sieciowy Zebra PWR-BGA12V50W0WW 50 W — czarna obudowa, widok od strony tabliczki znamionowej"
   ],
   "tags": [
     "retail",
@@ -58660,36 +58666,25 @@ const tc22Accessories: Product[] = [
     }
   ],
   "applications": [
-    "Zasilanie stacji dokującej",
-    "Akcesoria do Zebra TC201",
-    "Akcesoria do Zebra TC22",
-    "Akcesoria do Zebra TC27",
-    "Akcesoria do Zebra MC3400",
-    "Akcesoria do Zebra MC3450",
-    "Akcesoria do Zebra MC9400",
-    "Akcesoria do Zebra MC9450",
-    "Akcesoria do Zebra TC53",
-    "Akcesoria do Zebra TC58",
-    "Akcesoria do Zebra TC53e",
-    "Akcesoria do Zebra TC58e",
-    "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78"
+    "Jednogniazdowe stacje i ładowarki baterii TC22, MC3400 i MC9400",
+    "Stacje Workstation Connect TC53, TC73 i ET65",
+    "Zasilanie MP7200 i portu AUX w SP7208-H"
   ],
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2026-02-15",
   "seoTitle": "Zasilacz sieciowy Zebra 50 W | PWR-BGA12V50W0WW | TAKMA",
-  "seoDescription": "PWR-BGA12V50W0WW. Zasilacz zasila zgodne stacje i ładowarki.",
+  "seoDescription": "Zasilacz sieciowy Zebra 50 W PWR-BGA12V50W0WW (12 V DC, 4,16 A) do stacji i ładowarek terminali Zebra oraz skanerów ladowych MP7200 i SP7208-H.",
   "seoH1": "Zasilacz sieciowy Zebra 50 W",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-22",
   "faq": [
     {
-      "question": "Do czego służy PWR-BGA12V50W0WW?",
-      "answer": "Zasilacz zasila zgodne stacje i ładowarki. Wejście: 100–240 V AC. Wyjście: 12 V DC, 4,16 A, 50 W. Stacje TC22 i TC27 wymagają przewodu CBL-DC-388A1-01. Workstation Connect wymaga przewodu CBL-DC-388A2-01. Pasuje także do Zebra TC201. Zasila także zgodną ładowarkę baterii i stację Workstation Connect Zebra ET65."
+      "question": "Który przewód DC jest potrzebny z zasilaczem PWR-BGA12V50W0WW?",
+      "answer": "Zależy od urządzenia. CBL-DC-388A1-01 pasuje do jednogniazdowych stacji i ładowarek baterii oraz do MP7200. CBL-DC-388A2-01 pasuje do stacji Workstation Connect. CBL-DC-376A1-01 pasuje do SP7208-H."
     },
     {
-      "question": "Z jakimi urządzeniami współpracuje PWR-BGA12V50W0WW?",
-      "answer": "Zebra TC22, TC27, TC201, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
+      "question": "Czy zasilacz Zebra 50 W ma przewód sieciowy?",
+      "answer": "Nie. Zasilacz wymaga uziemionego przewodu sieciowego. W Europie służy do tego przewód 50-16000-220R z wtyczką z uziemieniem."
     }
   ]
 },
@@ -58774,7 +58769,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-kabel-zasilajacy-388",
   "name": "Przewód DC Zebra CBL-DC-388A1-01",
   "shortDescription": "Przewód łączy zasilacz PWR-BGA12V50W0WW ze zgodną stacją jednogniazdową lub ładowarką baterii TC22 i TC27. Pasuje także do zgodnej ładowarki baterii Zebra ET65.",
-  "description": "Przewód łączy zasilacz PWR-BGA12V50W0WW ze zgodną stacją jednogniazdową lub ładowarką baterii TC22 i TC27. Pasuje także do zgodnej ładowarki baterii Zebra ET65.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód zasila także stację [Stacja USB Zebra MC3400 / MC3450 — 1 terminal i 1 bateria (CRD-MC33-2SUCHG-01)](/produkt/zebra-mc33-cradle-1slot) i ładowarkę [Ładowarka 4 baterii Zebra MC3400 / MC3450 (SAC-MC33-4SCHG-01)](/produkt/zebra-mc33-battery-charger-4slot). Użyj zasilacza 50 W. Nie zastępuje przewodu DC do stacji z zasilaczem 108 W.\n\n- Dla stacji USB i ładowarki 4 baterii MC9400 / MC9450 użyj zasilacza 50 W oraz przewodu DC CBL-DC-388A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zastosowanie z MC3300x, TC73 i TC78\n\nPrzewód łączy zasilacz 50 W ze zgodnymi stacjami lub ładowarkami tych modeli. Dobierz stację zgodnie z jej wymaganiami dotyczącymi zasilania.\n\n## Zgodność ze skanerami ladowymi\n\n- [Zebra MP7200](/produkt/zebra-mp7200) (z zasilaczem PWR-BGA12V50W0WW)",
+  "description": "CBL-DC-388A1-01 to przewód DC do [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w). Służy do jednogniazdowych stacji i ładowarek baterii terminali Zebra. Przy kasie bez portu USB Power Plus łączy ten sam zasilacz ze skanerem ladowym [Zebra MP7200](/produkt/zebra-mp7200).\n\n## Stacje i ładowarki TC22, MC3400, MC9400, TC53 i ET65 na przewód 388A1\n\nPrzewód zasila [stację TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stację USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarkę 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Zasila też [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) i [ładowarkę 8 baterii zestawu HS3100](/produkt/zebra-mc3400-sac-hs3100-b8-01). Dla MC9400 / MC9450 przewód pasuje do [stacji USB](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) i [ładowarki 4 baterii](/produkt/zebra-ladowarka-baterii-4slot-mc9400-mc9450). Ten sam przewód zasila [ładowarkę 4 baterii TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg), [ładowarkę 2 baterii ET65](/produkt/zebra-charger-et6x-2slot) oraz zgodne stacje i ładowarki MC3300x. Stacje Workstation Connect wymagają innego przewodu: [CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Przewód nie zastępuje przewodu DC do stacji zasilanych zasilaczem 108 W.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58785,7 +58780,7 @@ const tc22Accessories: Product[] = [
     "/images/products/CBL-DC-388A1-01-mc3400-quality-v1.png"
   ],
   "imageDescriptions": [
-    "Przewód DC Zebra CBL-DC-388A1-01 — widok akcesorium"
+    "Przewód DC Zebra CBL-DC-388A1-01 — czarny przewód z kątową wtyczką DC, dwoma filtrami ferrytowymi i złączem zasilacza"
   ],
   "tags": [
     "retail",
@@ -58813,33 +58808,25 @@ const tc22Accessories: Product[] = [
     }
   ],
   "applications": [
-    "Zasilanie stacji dokującej",
-    "Akcesoria do Zebra TC22",
-    "Akcesoria do Zebra TC27",
-    "Akcesoria do Zebra MC3400",
-    "Akcesoria do Zebra MC3450",
-    "Akcesoria do Zebra MC9400",
-    "Akcesoria do Zebra MC9450",
-    "Akcesoria do Zebra TC53",
-    "Akcesoria do Zebra TC58",
-    "Akcesoria do Zebra TC53e",
-    "Akcesoria do Zebra TC58e"
+    "Ładowarki baterii TC22, MC3400 i MC9400 z zasilaczem 50 W",
+    "Stacje jednogniazdowe terminali Zebra",
+    "Zasilanie MP7200 przy kasie bez USB Power Plus"
   ],
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2026-02-15",
   "seoTitle": "Przewód DC Zebra do zasilacza 50 W | CBL-DC-388A1-01",
-  "seoDescription": "Przewód DC CBL-DC-388A1-01 łączy zasilacz Zebra 50 W ze zgodną stacją lub ładowarką baterii. Sprawdź wymagane elementy.",
+  "seoDescription": "Przewód DC Zebra CBL-DC-388A1-01 łączy zasilacz 50 W z jednogniazdową stacją lub ładowarką baterii TC22, MC3400, MC9400, ET65 i ze skanerem MP7200.",
   "seoH1": "Przewód DC Zebra CBL-DC-388A1-01",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-22",
   "faq": [
     {
-      "question": "Do czego służy CBL-DC-388A1-01?",
-      "answer": "Przewód łączy zasilacz PWR-BGA12V50W0WW ze zgodną stacją jednogniazdową lub ładowarką baterii TC22 i TC27. Pasuje także do zgodnej ładowarki baterii Zebra ET65."
+      "question": "Czy CBL-DC-388A1-01 pasuje do stacji Workstation Connect?",
+      "answer": "Nie. Stacje Workstation Connect TC22, TC53, TC73 i ET65 wymagają przewodu CBL-DC-388A2-01."
     },
     {
-      "question": "Z jakimi urządzeniami współpracuje CBL-DC-388A1-01?",
-      "answer": "Zebra TC22, TC27, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra MC3300x, TC73, TC78 przez zgodne stacje lub ładowarki"
+      "question": "Czy przewód 388A1 działa z zasilaczem 108 W?",
+      "answer": "Nie. CBL-DC-388A1-01 jest przeznaczony do zasilacza 50 W PWR-BGA12V50W0WW. Stacje z zasilaczem 108 W używają innego przewodu DC."
     }
   ]
 },
@@ -76358,8 +76345,8 @@ const tc201Accessories: Product[] = [
   "id": "zebra-tc201-50-16000-220r",
   "slug": "zebra-tc201-50-16000-220r",
   "name": "Przewód sieciowy Zebra — Europa, C13",
-  "shortDescription": "Przewód sieciowy z europejską wtyczką i złączem C13 ma długość 1,8 m. Zasila zgodny zasilacz Zebra z uziemionym wejściem sieciowym. Nie jest zasilaczem. Pasuje także do Zebra TC201.",
-  "description": "Przewód sieciowy z europejską wtyczką i złączem C13 ma długość 1,8 m. Zasila zgodny zasilacz Zebra z uziemionym wejściem sieciowym. Nie jest zasilaczem. Pasuje także do Zebra TC201.\n\n## Dobór i montaż\n\n- Przewód zasila również zasilacze 50 W i 108 W używane ze stacjami MC3400 i MC3450.\n\n- Przewód zasila także zasilacz 50 W używany ze skanerami ladowymi [Zebra MP7200](/produkt/zebra-mp7200) i [SP7208-H](/produkt/zebra-sp7208-h).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC501\n\nAkcesorium obsługuje konfigurację TC501 opisaną na tej karcie.\n\n## Zgodność z TC701\n\nPrzewód zasila zasilacz 150 W zgodnych wielostanowiskowych stacji TC701. Zestawy stacji z końcówką -1 wymagają tego osobnego przewodu.",
+  "shortDescription": "Zebra 50-16000-220R — przewód sieciowy 1,8 m z uziemioną wtyczką europejską i złączem C13 do zasilaczy Zebra stacji, ładowarek i skanerów ladowych.",
+  "description": "Przewód 50-16000-220R łączy zasilacz Zebra z gniazdkiem sieciowym. Ma uziemioną wtyczkę europejską i złącze C13. Długość wynosi 1,8 m. Jest przeznaczony do zasilaczy stacji dokujących, ładowarek baterii i skanerów ladowych Zebra. Przewód nie jest zasilaczem.\n\n## Zasilacze Zebra 50 W, 108 W i 150 W\n\n[Zasilacz 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w) zasila jednogniazdowe stacje i ładowarki baterii TC22, TC27, TC201, MC3400, MC3450, MC9400, MC9450, TC53, TC58, TC73, TC78 i ET65. Ten sam zasilacz zasila skanery ladowe [Zebra MP7200](/produkt/zebra-mp7200) i [Zebra SP7208-H](/produkt/zebra-sp7208-h). [Zasilacz 108 W](/produkt/zebra-zasilacz-108w) zasila stacje wielogniazdowe TC22, TC27, MC3400, MC3450, MC9400 i MC9450. [Zasilacz 150 W 12 V](/produkt/zebra-tc201-pwr-bga12v150w1ww) zasila stacje wielostanowiskowe TC201, TC501 i TC701. [Zasilacz 150 W 24 V](/produkt/zebra-tc53-pwr-bga24v150w1ww) jest przeznaczony do TC53 / TC58.\n\n## Zestawy stacji wielostanowiskowych bez przewodu sieciowego\n\nOferowane zestawy stacji wielostanowiskowych TC201, TC53, TC73, TC501 i TC701 nie zawierają przewodu sieciowego. Dotyczy to także stacji TC501 i TC701 z końcówką -1 w numerze, które mają zasilacz 150 W w zestawie. Ten przewód zamawia się do nich osobno. [Przewód 50-16000-255R](/produkt/zebra-tc22-tc27-50-16000-255r) ma wtyczkę bez uziemienia i nie pasuje do zasilaczy 50 W ani 108 W.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -76370,7 +76357,7 @@ const tc201Accessories: Product[] = [
     "/images/products/50-16000-220R-tc201-card-quality-v3.png"
   ],
   "imageDescriptions": [
-    "Przewód sieciowy Zebra — Europa, C13 — widok akcesorium"
+    "Przewód sieciowy Zebra 50-16000-220R — czarny przewód z uziemioną wtyczką europejską i złączem C13"
   ],
   "tags": [],
   "availability": "available",
@@ -76387,45 +76374,24 @@ const tc201Accessories: Product[] = [
     }
   ],
   "applications": [
-    "Akcesoria do Zebra TC201",
-    "Akcesoria do Zebra TC22",
-    "Akcesoria do Zebra TC27",
-    "Akcesoria do Zebra MC3400",
-    "Akcesoria do Zebra MC3450",
-    "Akcesoria do Zebra MC9400",
-    "Akcesoria do Zebra MC9450",
-    "Akcesoria do Zebra TC53",
-    "Akcesoria do Zebra TC58",
-    "Akcesoria do Zebra TC53e",
-    "Akcesoria do Zebra TC58e",
-    "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78",
-    "Akcesoria do Zebra TC501",
-    "Akcesoria do Zebra TC701"
+    "Podłączenie zasilacza Zebra 50 W, 108 W lub 150 W do gniazdka",
+    "Stacje wielostanowiskowe TC201, TC501 i TC701 z zasilaczem 150 W"
   ],
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2026-10-02",
   "seoTitle": "Przewód sieciowy Zebra | 50-16000-220R | TAKMA",
-  "seoDescription": "50-16000-220R. Przewód sieciowy z europejską wtyczką i złączem C13 ma długość 1,8 m.",
+  "seoDescription": "Przewód sieciowy Zebra 50-16000-220R, 1,8 m, z uziemioną wtyczką europejską i złączem C13. Do zasilaczy Zebra 50 W, 108 W i 150 W stacji oraz skanerów.",
   "seoH1": "Przewód sieciowy Zebra — Europa, C13",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-22",
   "faq": [
     {
-      "question": "Do czego służy 50-16000-220R?",
-      "answer": "Przewód sieciowy z europejską wtyczką i złączem C13 ma długość 1,8 m. Zasila zgodny zasilacz Zebra z uziemionym wejściem sieciowym. Nie jest zasilaczem. Pasuje także do Zebra TC201."
+      "question": "Czy 50-16000-220R pasuje do zasilacza Zebra 50 W?",
+      "answer": "Tak. Zasilacz PWR-BGA12V50W0WW wymaga uziemionego przewodu sieciowego. 50-16000-220R ma uziemioną wtyczkę europejską i złącze C13."
     },
     {
-      "question": "Z jakimi urządzeniami współpracuje 50-16000-220R?",
-      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
-    },
-    {
-      "question": "Czy 50-16000-220R obsługuje TC501?",
-      "answer": "Akcesorium obsługuje konfigurację TC501 opisaną na tej karcie."
-    },
-    {
-      "question": "Czy 50-16000-220R obsługuje TC701?",
-      "answer": "Przewód zasila zasilacz 150 W zgodnych wielostanowiskowych stacji TC701. Zestawy stacji z końcówką -1 wymagają tego osobnego przewodu."
+      "question": "Czym 50-16000-220R różni się od 50-16000-255R?",
+      "answer": "50-16000-255R ma wtyczkę typu C bez uziemienia. Nie pasuje do zasilaczy PWR-BGA12V50W0WW i PWR-BGA12V108W0WW, do których służy 50-16000-220R."
     }
   ]
 },

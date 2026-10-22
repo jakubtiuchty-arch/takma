@@ -18,7 +18,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
   modelTable: [
     { name: 'SUNMI L3', href: '/produkt/sunmi-l3', role: 'Duży ekran do pracy z towarem', priceFrom: '', specs: [{ label: 'Ekran', value: '6,75 cala' }, { label: 'Odczyt', value: 'SS1111, SE4710 lub bez modułu' }, { label: 'Sieć', value: 'Wi-Fi 5, LTE' }], bestFor: 'Przyjęcia i kompletacja; skaner oraz tylne POGO według PN.' },
     { name: 'SUNMI L2Ks', href: '/produkt/sunmi-l2ks', role: 'Kolektor z klawiaturą', priceFrom: '', specs: [{ label: 'Ekran', value: '4 cale' }, { label: 'Klawiatura', value: '23 klawisze' }, { label: 'Odczyt', value: 'SE4770 lub SS1111' }], bestFor: 'Częste wpisywanie ilości i lokalizacji.' },
-    { name: 'SUNMI L2H', href: '/produkt/sunmi-l2h', role: 'Kody i OCR', priceFrom: '', specs: [{ label: 'Ekran', value: '5,5 cala' }, { label: 'Pamięć', value: '4/64 GB' }, { label: 'Sieć', value: 'Wi-Fi 6, LTE' }], bestFor: 'Odczyt kodów 1D/2D i OCR w aplikacji magazynowej.' },
+    { name: 'SUNMI L2H', href: '/produkt/sunmi-l2h', role: 'Kody i OCR', priceFrom: '', specs: [{ label: 'Ekran', value: '5,5 cala' }, { label: 'Pamięć', value: '4/64 GB' }, { label: 'Sieć', value: 'Wi-Fi 802.11ac, LTE' }], bestFor: 'Odczyt kodów 1D/2D i OCR w aplikacji magazynowej.' },
     { name: 'SUNMI L2s Pro', href: '/produkt/sunmi-l2s-pro', role: 'Dotykowy terminal do towaru', priceFrom: '', specs: [{ label: 'Ekran', value: '5,5 cala' }, { label: 'Pamięć', value: '3/32 lub 4/64 GB' }, { label: 'Odczyt', value: 'Moduł 1D/2D lub bez modułu' }], bestFor: 'Uzupełnianie półek i sprawdzanie stanów; konfiguracja według PN.' },
     { name: 'SUNMI M3', href: '/produkt/sunmi-m3', role: 'Zamówienia przez Wi-Fi', priceFrom: '', specs: [{ label: 'Ekran', value: '6,75 cala' }, { label: 'Pamięć', value: '3/32 GB' }, { label: 'System', value: 'Android 14, GMS EDLA' }], bestFor: 'Obsługa zamówień w lokalu. PN P09070020 nie ma LTE ani drukarki.' },
     { name: 'SUNMI V3', href: '/produkt/sunmi-v3', role: 'Wydruki 58 mm', priceFrom: '', specs: [{ label: 'Ekran', value: '6,75 cala' }, { label: 'Pamięć', value: '3/32 GB' }, { label: 'Drukarka', value: 'Papier 58 mm' }], bestFor: 'Wydruki przy kliencie; NFC i skaner według PN.' },
@@ -39,7 +39,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
   ],
   uniqueInsights: { heading: 'Zgodność akcesoriów ma znaczenie', items: [
     { title: 'Uchwyt L3 wymaga tylnych POGO', text: 'C14004144 pasuje do oferowanych PN P09070073 i P09070030. Pozostałe PN L3 w ofercie nie mają tylnych styków POGO.' },
-    { title: 'Etui a stacja L2H i L2s Pro', text: 'C14000144 wymaga zdjęcia etui. C14004067 obsługuje terminale w etui i bez etui.' },
+    { title: 'Stacje do L2H i L2s Pro', text: 'C14004067 ładuje cztery terminale, także w etui, z uchwytem spustowym albo z paskiem na dłoń. C14000144 ładuje jednocześnie terminal i zapasową baterię.' },
     { title: 'V3 Plus ma osobne wyposażenie', text: 'Pasek na dłoń C20000086 pasuje do V3, V3H i V3 Plus. Stacja C14004112 i etui C20000095 pasują do V3 i V3H.' },
   ] },
   comparisons: [
@@ -50,7 +50,7 @@ export const sunmiCategory: BrandCategoryRichContent = {
   howToSteps: [],
   faq: [
     { question: 'Który SUNMI ma fizyczną klawiaturę?', answer: 'L2Ks ma ekran 4 cale i 23 klawisze. Pozostałe pokazane tu modele obsługuje się przede wszystkim przez ekran dotykowy.' },
-    { question: 'Czy wszystkie terminale SUNMI mają skaner i GMS?', answer: 'Nie. Moduł skanujący i GMS zależą od PN. W L2Ks P09044063 nie ma GMS ani NFC. W L3, L2s Pro, V3 i V3H występują wersje bez osobnego skanera.' },
+    { question: 'Czy wszystkie terminale SUNMI mają skaner i GMS?', answer: 'Nie. Moduł skanujący i GMS zależą od PN. L2Ks P09044063 pracuje na SUNMI OS bez GMS. W L3, L2s Pro, V3 i V3H występują wersje bez osobnego skanera.' },
     { question: 'Czy SUNMI V3 zastępuje kasę fiskalną?', answer: 'Nie. Wbudowana drukarka termiczna drukuje dane ze zgodnej aplikacji. Nie jest polskim urządzeniem fiskalnym.' },
     { question: 'Czy NFC oznacza obsługę płatności lub UHF RFID?', answer: 'Nie. NFC służy do zgodnych nośników zbliżeniowych. Nie oznacza gotowej usługi płatniczej ani czytnika UHF RFID.' },
     { question: 'SUNMI M3 czy L3 — który wybrać?', answer: '[SUNMI M3](/produkt/sunmi-m3) P09070020 pracuje przez Wi-Fi. Nie ma modemu 4G, NFC ani osobnego skanera, a obudowa ma klasę IP65. [SUNMI L3](/produkt/sunmi-l3) ma 4G LTE, NFC, obudowę IP68 i wersje ze skanerem SS1111 lub SE4710. Oba modele mają ekran 6,75 cala, Android 14 z GMS EDLA i wspólne stacje ładujące.' },

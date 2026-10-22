@@ -26,55 +26,23 @@ export const tscAlpha40lRfidAccessories: Product[] = accessories.map(a => ({
 export const tscAlpha40lRfidProduct: Product = {
   id, slug: id, name: 'TSC Alpha-40L RFID', seoH1: 'TSC Alpha-40L RFID',
   seoTitle: 'TSC Alpha-40L RFID — drukarka RFID UHF 203 dpi',
-  seoDescription: 'TSC Alpha-40L RFID: mobilna drukarka i koder UHF 203 dpi. Druk 104 mm, bateria 6200 mAh, IP54, wersje z Bluetooth lub z Wi-Fi i Bluetooth.',
+  seoDescription: 'TSC Alpha-40L RFID – mobilna drukarka RFID UHF 203 dpi. Druk 104 mm do 127 mm/s, rolka do 67 mm, bateria 6200 mAh, klasa IP54 i upadek z 1,8 m.',
   shortDescription: 'Mobilna drukarka termiczna i koder RAIN UHF RFID. Druk do 104 mm, bateria 6200 mAh oraz warianty Bluetooth i Wi-Fi. Europejski zasilacz w zestawie.',
-  description: `TSC Alpha-40L RFID to mobilna drukarka termiczna z koderem RAIN UHF RFID. Przygotowuje nadruk i zapisuje dane w układzie etykiety bezpośrednio przy towarze.
+  description: `TSC Alpha-40L RFID to mobilna drukarka RFID UHF z drukiem termicznym bezpośrednim. Koduje etykiety RAIN UHF zgodne z GS1 EPC Gen2 v2 i ISO 18000-63 przy towarze, bez osobnego stanowiska druku. Drukuje na szerokości 104 mm z prędkością do 127 mm/s.
 
-## Druk i kodowanie przy towarze
+## Rolka 67 mm i etykiety od 15,9 mm
 
-Drukarka służy do oznaczania kartonów, pojemników i wyposażenia w magazynie, sklepie oraz w terenie. Ma rozdzielczość 203 dpi i drukuje z szerokością do 104 mm. Maksymalna prędkość nadruku wynosi 127 mm/s. Kodowanie RFID może zmniejszyć wydajność całego zadania.
+Rolka materiału ma do 67 mm średnicy zewnętrznej. Gilza ma 25,4 mm, a z adapterami z zestawu 19,1 lub 38,1 mm. Materiał z podkładem ma 50,8–112 mm szerokości i 0,06–0,16 mm grubości. Etykieta może mieć 15,9–2794 mm długości. Drukarka obsługuje etykiety RFID z przerwą lub z czarnym znacznikiem.
 
-Druk termiczny bezpośredni wymaga etykiet termoczułych. Nie wymaga taśmy barwiącej. Sam nadruk kodu kreskowego nie zapisuje danych w układzie RFID.
+## Antena o stałym położeniu i przekreślanie błędów
 
-## Dwa warianty europejskie
+Antena RFID ma stałe położenie. Automatyczna kalibracja etykiet RFID nie wymaga osobnego oprogramowania. Etykietę, której nie udało się zakodować, drukarka przekreśla. Liczniki zapisują liczbę etykiet poprawnych i przekreślonych. Polecenia RFID drukarka przyjmuje w TSPL i ZPL2.
 
-Wybierz połączenie z terminalem lub siecią:
-- A40LR-A001-0002 — USB-C i Bluetooth MFi, bez Wi-Fi.
-- A40LR-A001-1002 — USB-C oraz Wi-Fi 802.11a/b/g/n/ac z Bluetooth.
+## Bateria 6200 mAh i odporność IP54
 
-Oba warianty mają NFC do parowania, baterię Li-ion 6200 mAh, zasilacz z przewodem EU i klips do paska. NFC do parowania nie jest koderem etykiet HF/NFC. Gniazdo USB-C służy do komunikacji i nie zastępuje zasilacza do ładowania.
+Bateria Li-ion 7,4 V ma 6200 mAh i współpracuje z TSC Console oraz SOTI Connect. Drukarka waży 1025 g z baterią. Ma klasę IP54, bez toru papieru, i wytrzymuje upadek z 1,8 m, a w etui ochronnym z 2,5 m. Port USB-C służy tylko do komunikacji. Do ładowania bez wyjmowania baterii służy [stacja 1-gniazdowa](/produkt/tsc-stacja-alpha-40l-op-p-dc1-001-2001) lub [stacja 4-gniazdowa](/produkt/tsc-stacja-alpha-40l-op-p-dc4-001-2001).
 
-## Etykiety RFID i dobór rolki
-
-Alpha-40L RFID obsługuje pasywne etykiety UHF zgodne z GS1 EPC Gen2 v2 i ISO 18000-63. Obsługuje etykiety z przerwą oraz z czarnym znacznikiem. Po zmianie materiału wykonaj kalibrację podawania i RFID.
-
-Szerokość materiału z podkładem wynosi 50,8–112 mm. Zalecana maksymalna średnica rolki RFID wynosi 62 mm. Limit 67 mm dotyczy materiału bez RFID. Gilza ma 25,4 mm; adaptery umożliwiają użycie gilz 19,1 i 38,1 mm. Minimalny rozstaw kolejnych etykiet RFID wynosi 15,9 mm. Dobierz także wkładkę, grubość materiału i jej położenie względem anteny.
-
-Wersja RFID pracuje z ręcznym odrywaniem etykiet. Nie ma trybu odklejania. Nie obsługuje etykiet RFID na metal ani układów HF/NFC. Etykiety są sprzedawane osobno. Ofertę znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary etykiety i rodzaj znacznika. Dobierzemy rolkę mobilną o średnicy do 62 mm i sprawdzimy położenie wkładki.
-
-## Kontrola zapisu i integracja z systemem
-
-Drukarka sprawdza zapis danych podczas kodowania. Może przekreślić błędną etykietę i zakodować kolejną zgodnie z ustawionym trybem obsługi błędów. Obsługuje polecenia RFID w TSPL i wybrane polecenia ZPL2.
-
-Aby pracować z WMS lub ERP, powiąż identyfikator EPC z rekordem towaru. Alpha-40L RFID kontroluje etykietę w swoim torze materiałów. Do radiowej inwentaryzacji regałów potrzebujesz osobnego czytnika UHF RFID i oprogramowania. Zwykłej Alpha-40L bez RFID nie można później rozbudować o ten koder.
-
-## Bateria i praca w terenie
-
-Wymienna bateria ma napięcie 7,4 V i pojemność 6200 mAh. Czas pracy zależy od nadruku, kodowania, temperatury i połączeń. Kolorowy ekran 2,3 cala z przyciskami służy do ustawień i kalibracji. TSC Console wspiera konfigurację oraz kontrolę stanu urządzenia. SOTI Connect wymaga osobnej licencji.
-
-Drukarka waży około 1,025 kg z baterią. Ma klasę IP54 z wyłączeniem toru papieru i odporność na upadek z 1,8 m. Opcjonalne etui zwiększa deklarowaną odporność na upadek do 2,5 m. Temperatura pracy wynosi od −20 do 50°C, a ładowania od 0 do 40°C.
-
-## Ładowanie i akcesoria
-
-Zasilacz EU jest częścią oferowanych zestawów. Do ładowania całej drukarki można dokupić [stację 1-gniazdową](/produkt/tsc-stacja-alpha-40l-op-p-dc1-001-2001) albo [stację 4-gniazdową](/produkt/tsc-stacja-alpha-40l-op-p-dc4-001-2001). Obie konfiguracje stacji EU obejmują zasilacz i przewód.
-
-[Ładowarka 4 baterii](/produkt/tsc-ladowarka-alpha-40l-op-p-bc4-001-2001) ładuje baterie wyjęte z drukarek. [Bateria zapasowa](/produkt/tsc-bateria-alpha-40l-op-p-sb-001-0001) jest sprzedawana osobno. [Etui](/produkt/tsc-etui-alpha-40l-op-p-ec-002-0001) obejmuje pasek. [Osobny pasek](/produkt/tsc-pasek-alpha-40l-op-p-ss-001-0001) służy do noszenia drukarki bez etui.
-
-Do porównania sprawdź [Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid) oraz [Zebra ZQ630 Plus RFID](/produkt/zebra-zq630-plus-rfid).
-
-## Gwarancja
-
-Gwarancja na drukarkę wynosi 2 lata, a na baterię 1 rok. Głowica ma ochronę przez 12 miesięcy lub 25 km druku. Wałek ma ochronę przez 12 miesięcy lub 50 km druku. Dla części z limitem przebiegu obowiązuje warunek, który nastąpi wcześniej.`,
+[Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid) przyjmuje rolkę do 57 mm i wymaga materiału z czarnym znacznikiem.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'], manufacturerId: 'tsc',
   tags: ['magazyn', 'logistyka', 'retail', 'outdoor'],
   images: ['/images/products/tsc-alpha40l-main.webp', '/images/products/tsc-alpha40l-front.webp', '/images/products/tsc-alpha40l-open.webp'],
@@ -82,17 +50,30 @@ Gwarancja na drukarkę wynosi 2 lata, a na baterię 1 rok. Głowica ma ochronę 
   availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: { rodzajDruku: 'Termiczny bezpośredni; RAIN UHF RFID', rozdzielczosc: '203 dpi', szerokoscDruku: '104 mm', predkoscDruku: 'do 127 mm/s; kodowanie zależy od etykiety', szerokoscEtykiet: '50,8–112 mm' },
   specifications: [
-    { name: 'Rozdzielczość', value: '203 dpi' }, { name: 'Metoda druku', value: 'Termiczny bezpośredni' },
-    { name: 'Szerokość druku', value: '104 mm' }, { name: 'Prędkość nadruku', value: 'do 127 mm/s; RFID zależy od materiału i danych' },
-    { name: 'RFID', value: 'RAIN UHF, GS1 EPC Gen2 v2 / ISO 18000-63; bez HF/NFC i etykiet na metal' },
-    { name: 'Szerokość materiału', value: '50,8–112 mm z podkładem' }, { name: 'Średnica rolki', value: 'RFID: zalecane maks. 62 mm; materiał bez RFID: maks. 67 mm' },
-    { name: 'Gilza', value: '25,4 mm; 19,1 i 38,1 mm z adapterami' }, { name: 'Minimalny rozstaw RFID', value: '15,9 mm; dobierz wkładkę i kalibrację' },
-    { name: 'Obsługa etykiet', value: 'Ręczne odrywanie; bez trybu odklejania' }, { name: 'Czujniki materiału', value: 'Przerwa między etykietami i czarny znacznik' },
+    { name: 'Rozdzielczość', value: '203 dpi' },
+    { name: 'Metoda druku', value: 'Termiczny bezpośredni' },
+    { name: 'Szerokość druku', value: '104 mm' },
+    { name: 'Prędkość nadruku', value: 'do 127 mm/s; RFID zależy od materiału i danych' },
+    { name: 'RFID', value: 'RAIN UHF, GS1 EPC Gen2 v2 / ISO 18000-63; antena w stałym położeniu' },
+    { name: 'Szerokość materiału', value: '50,8–112 mm z podkładem' },
+    { name: 'Grubość materiału', value: '0,06–0,16 mm' },
+    { name: 'Długość etykiety', value: '15,9–2794 mm' },
+    { name: 'Średnica rolki', value: 'Do 67 mm' },
+    { name: 'Gilza', value: '25,4 mm; 19,1 i 38,1 mm z adapterami' },
+    { name: 'Minimalny rozstaw RFID', value: '15,9 mm; wymaga zgodnej wkładki i kalibracji' },
+    { name: 'Obsługa etykiet', value: 'Odrywanie (tryb Tear Off)' },
+    { name: 'Czujniki materiału', value: 'Przerwa między etykietami i czarny znacznik' },
     { name: 'Łączność', value: 'USB-C do komunikacji, NFC do parowania; Bluetooth lub Wi-Fi z Bluetooth zależnie od PN' },
-    { name: 'Wyświetlacz', value: 'Kolorowy LCD 2,3 cala z przyciskami' }, { name: 'Pamięć', value: '128 MB RAM i 128 MB Flash; microSD do 32 GB' },
-    { name: 'Polecenia RFID', value: 'TSPL i wybrane polecenia ZPL2' }, { name: 'Bateria', value: 'Li-ion Smart Battery 7,4 V, 6200 mAh; wymienna' },
-    { name: 'Klasa ochrony', value: 'IP54 z wyłączeniem toru papieru' }, { name: 'Odporność na upadek', value: '1,8 m; z opcjonalnym etui 2,5 m' },
-    { name: 'Temperatura pracy', value: 'od −20 do 50°C; ładowanie od 0 do 40°C' }, { name: 'Wymiary', value: '160 × 191 × 79 mm' }, { name: 'Masa', value: 'około 1,025 kg z baterią' },
+    { name: 'Wyświetlacz', value: 'Kolorowy LCD 2,3 cala z przyciskami' },
+    { name: 'Pamięć', value: '128 MB RAM i 128 MB Flash; microSD do 32 GB' },
+    { name: 'Zegar RTC', value: 'Tak' },
+    { name: 'Polecenia RFID', value: 'TSPL i wybrane polecenia ZPL2' },
+    { name: 'Bateria', value: 'Li-ion Smart Battery 7,4 V, 6200 mAh; wymienna' },
+    { name: 'Klasa ochrony', value: 'IP54 z wyłączeniem toru papieru' },
+    { name: 'Odporność na upadek', value: '1,8 m; z opcjonalnym etui 2,5 m' },
+    { name: 'Temperatura pracy', value: 'od −20 do 50°C; ładowanie od 0 do 40°C' },
+    { name: 'Wymiary', value: '160 × 191 × 79 mm' },
+    { name: 'Masa', value: 'około 1,025 kg z baterią' },
     { name: 'W zestawie', value: 'Bateria, zasilacz i przewód EU, klips do paska, adaptery gilz i skrócona instrukcja' },
     { name: 'Gwarancja', value: 'Drukarka 2 lata; bateria 1 rok; głowica 12 miesięcy / 25 km; wałek 12 miesięcy / 50 km — pierwszy osiągnięty limit' },
   ],
@@ -101,14 +82,11 @@ Gwarancja na drukarkę wynosi 2 lata, a na baterię 1 rok. Głowica ma ochronę 
     { partNumber: 'A40LR-A001-1002', name: 'EU — Wi-Fi i Bluetooth', attributes: { 'Łączność bezprzewodowa': 'Wi-Fi 802.11a/b/g/n/ac + Bluetooth' }, availability: 'unavailable' },
   ],
   compatibleAccessories: [], relatedAccessories: accessories.map(a => a.id),
-  applications: ['Druk i kodowanie etykiet UHF RFID przy towarze', 'Oznaczanie kartonów i pojemników w magazynie', 'Mobilne etykietowanie w handlu i serwisie terenowym'],
+  applications: ['Kodowanie etykiet UHF w terenie na zasilaniu z baterii', 'Ponowne etykietowanie towaru RFID w sklepie'],
   faq: [
-    { question: 'Czym różnią się europejskie PN?', answer: 'A40LR-A001-0002 ma Bluetooth MFi. A40LR-A001-1002 ma Wi-Fi 802.11a/b/g/n/ac i Bluetooth. Oba mają RFID, USB-C do komunikacji, NFC do parowania, baterię oraz zasilacz EU.' },
-    { question: 'Czy USB-C ładuje baterię?', answer: 'Nie. USB-C służy do komunikacji. Do ładowania użyj zasilacza z zestawu lub zgodnej stacji ładującej. Wyjętą baterię można ładować w osobnej ładowarce.' },
-    { question: 'Czy rolka RFID może mieć średnicę 67 mm?', answer: 'Dla etykiet RFID zalecana maksymalna średnica rolki wynosi 62 mm. Limit 67 mm dotyczy materiału bez RFID. Sprawdź także wkładkę, gilzę i szerokość podkładu.' },
-    { question: 'Czy drukarka obsługuje etykiety z przerwą i na metal?', answer: 'Obsługuje zgodne etykiety UHF z przerwą lub czarnym znacznikiem. Nie obsługuje etykiet RFID na metal. Wersja RFID pracuje tylko z ręcznym odrywaniem, bez odklejania.' },
-    { question: 'Czy zwykłą Alpha-40L można rozbudować o RFID?', answer: 'Nie. RFID jest wyposażeniem fabrycznym odpowiedniej konfiguracji. Do kodowania etykiet wybierz PN z oznaczeniem A40LR.' },
-    { question: 'Czy urządzenie policzy towary na półce?', answer: 'Koduje i sprawdza etykietę w torze materiałów. Do inwentaryzacji regałów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
+    { question: 'Jaka rolka zmieści się w TSC Alpha-40L RFID?', answer: 'Rolka o średnicy zewnętrznej do 67 mm. Gilza może mieć 25,4 mm albo, z adapterami z zestawu, 19,1 lub 38,1 mm.' },
+    { question: 'Czy Alpha-40L RFID ładuje się przez USB-C?', answer: 'Nie. Gniazdo USB-C służy do komunikacji. Baterię ładuje zasilacz z zestawu, stacja dokująca albo zewnętrzna ładowarka baterii.' },
+    { question: 'Co Alpha-40L RFID robi z etykietą, której nie zakodowała?', answer: 'Przekreśla ją. Liczniki zapisują liczbę etykiet poprawnych i przekreślonych.' },
   ],
   downloads: [
     { name: 'Karta Alpha-40L RFID i akcesoria (EN)', type: 'datasheet', url: datasheet, size: 'PDF' },

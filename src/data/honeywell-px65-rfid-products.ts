@@ -28,37 +28,23 @@ export const honeywellPx65RfidAccessories: Product[] = parts.map(a => ({
 export const honeywellPx65RfidProducts: Product[] = [{
   id: 'honeywell-px65-rfid', slug: 'honeywell-px65-rfid', name: 'Honeywell PX65 RFID', seoH1: 'Honeywell PX65 RFID',
   seoTitle: 'Honeywell PX65 RFID — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Honeywell PX65 RFID: 6-calowa drukarka i koder UHF 203 lub 300 dpi do etykiet paletowych. Druk 167,4 mm z prędkością 225 mm/s, Ethernet, RS-232.',
+  seoDescription: 'Honeywell PX65 RFID – 6-calowa drukarka RFID UHF 203 lub 300 dpi. Nadruk 167,4 mm, materiał 76–170 mm, do 225 mm/s, moduł EU 869 MHz, Ethernet.',
   shortDescription: 'Przemysłowa drukarka i koder UHF RFID do szerokich etykiet paletowych i kartonowych. Wersje 203 i 300 dpi drukują do 167,4 mm z prędkością do 225 mm/s.',
-  description: `Honeywell PX65 RFID drukuje i koduje etykiety o szerokości nadruku do 167,4 mm. To 6-calowa drukarka przemysłowa z fabrycznym koderem UHF. Wybierz ją do etykiet paletowych, etykiet na duże kartony i oznaczeń pojemników zwrotnych.
+  description: `Honeywell PX65 RFID to 6-calowa drukarka RFID UHF do szerokich etykiet na kartony i palety. Pole nadruku ma 167,4 mm szerokości, a materiał 76–170 mm. Moduł RFID koduje wkładki EPC Gen 2 V2.1 na częstotliwości 869 MHz, przewidzianej dla Europy.
 
-## Szeroka etykieta w jednym przebiegu
+## PX65A00EU0000200 i PX65A00EU0000300
 
-Pole nadruku 167,4 mm mieści etykietę paletową A5 ułożoną krótszym bokiem w poprzek. Materiał może mieć 76–170 mm szerokości. Na jednej etykiecie zmieścisz kilka kodów kreskowych, dane przesyłki i identyfikator EPC zapisany we wkładce. Drukarka pracuje z prędkością do 225 mm/s w obu rozdzielczościach.
+Obie konfiguracje mają ekran LCD 2,36 cala z klawiaturą, Ethernet, obrotowy wieszak materiału i zegar RTC. Różnią się głowicą: 203 lub 300 dpi. Prędkość wynosi 100–225 mm/s w obu rozdzielczościach. W zestawie są przewody zasilające EU i US. Drukarka waży 14,1 kg.
 
-PX65A00EU0000200 ma głowicę 203 dpi. Wystarcza do etykiet logistycznych czytanych skanerem z odległości. PX65A00EU0000300 ma 300 dpi i lepiej odwzorowuje drobny tekst, np. skład lub ostrzeżenia na etykiecie wyrobu.
+## Szeroki materiał RFID na rolce 213 mm
 
-## Co jest w obu wersjach
+Średnica rolki wynosi do 213 mm przy gilzie 38–76 mm. Grubość materiału wynosi 2,4–10,0 mil. Taśmy do 450 m mają maksymalnie 80 mm średnicy. Drukarka rozpoznaje przerwę, nacięcie, czarny znacznik i materiał ciągły. Ma też czujniki końca taśmy i podniesienia głowicy.
 
-- koder UHF EU (moduł 50147012-002 zamontowany fabrycznie),
-- ekran LCD 2,36 cala z klawiaturą i zegar RTC,
-- obrotowy uchwyt materiału,
-- Ethernet, USB Device, USB Host i RS-232,
-- przewody zasilające EU i US.
+## Zestawy 1-041584-900 i 50147002-002
 
-Żaden z tych PN nie ma Wi-Fi. Zestaw ROW 50147002-002 dodaje Wi-Fi 802.11a/b/g/n/ac. Montuje go autoryzowany technik. Etykiety odbiera się przez odrywanie. Nawijak z czujnikiem pobrania etykiety montuje się tylko fabrycznie.
+Obcinacz 1-041584-900 i karta Wi-Fi ROW 50147002-002 są dostępne jako zestawy. Kartę Wi-Fi montuje autoryzowany technik serwisu. Nawijak z czujnikiem pobrania etykiety jest tylko opcją fabryczną. Głowice zamienne to 1-040084-900 dla 203 dpi i 1-040085-900 dla 300 dpi.
 
-## Etykieta RFID w formacie 6 cali
-
-Najkrótsza etykieta RFID ma 50,8 mm. Szeroka etykieta daje dużo miejsca na wkładkę, ale wkładka musi przejść nad anteną kodera. Po założeniu nowej rolki wykonaj kalibrację podawania i RFID. Wersja NA ma inny moduł, na pasmo 915 MHz. Do pracy w Polsce wybierz wersję EU.
-
-Rolka może mieć do 213 mm średnicy na gilzie 38–76 mm, a taśma do 450 m. Etykiety RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem przekaż nam wymiary etykiety paletowej. Dobierzemy rolkę do PX65 RFID i położenie wkładki.
-
-## Serwis i części
-
-Głowica 203 dpi ma numer 1-040084-900, a głowica 300 dpi 1-040085-900. Wałek dociskowy to 1-010110-90. Obcinacz 1-041584-900 musi ciąć materiał między wkładkami. Gwarancja fabryczna na drukarkę wynosi 1 rok.
-
-Szablony przygotujesz w Fingerprint, Direct Protocol, IPL, ZSim2 lub DPL. Do etykiet 4-calowych wybierz [Honeywell PX45 RFID](/produkt/honeywell-px45-rfid). Bez kodera RFID drukuje [Honeywell PX65](/produkt/honeywell-px65). W klasie 6-calowej porównaj [Zebra ZT620 RFID](/produkt/zebra-zt620-rfid).`,
+Węższa [Honeywell PX45 RFID](/produkt/honeywell-px45-rfid) drukuje do 300 mm/s na szerokości do 112 mm.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'honeywell',
   images: ['/images/products/PX65_2.png', '/images/products/PX65_1.png', '/images/products/PX65_3.png'],
   imageDescriptions: ['Honeywell PX65 RFID — drukarka przemysłowa z ekranem i klawiaturą, widok pod kątem z lewym bokiem', 'Honeywell PX65 RFID — widok z przodu, ekran LCD i klawiatura', 'Honeywell PX65 RFID — widok pod kątem z prawym bokiem'],
@@ -82,17 +68,16 @@ Szablony przygotujesz w Fingerprint, Direct Protocol, IPL, ZSim2 lub DPL. Do ety
     { name: 'Taśma barwiąca', value: 'Do 450 m; gilza 25,4 mm; dobór do etykiety' },
     { name: 'Pamięć', value: '256 MB RAM; 512 MB Flash' },
     { name: 'Wymiary', value: '335 × 482 × 238 mm (szer. × gł. × wys.)' },
+    { name: 'Masa', value: '14,1 kg' },
     { name: 'Zasilanie', value: 'Przewody EU i US w zestawie obu PN' },
-    { name: 'Gwarancja', value: '1 rok gwarancji fabrycznej; części zużywające się na odrębnych warunkach' },
+    { name: 'Gwarancja', value: '1 rok gwarancji fabrycznej' },
   ],
   compatibleAccessories: [], relatedAccessories: honeywellPx65RfidAccessories.map(a => a.id),
-  applications: ['Druk i kodowanie szerokich etykiet UHF na kartony i palety', 'Identyfikacja wyposażenia', 'Powiązanie EPC z WMS lub ERP'],
+  applications: ['Szerokie etykiety RFID na palety do 170 mm', 'Kodowanie etykiet UHF 6-calowych w logistyce'],
   faq: [
-    { question: 'Czy PX65 RFID wydrukuje etykietę paletową A5?', answer: 'Tak. Szerokość nadruku wynosi 167,4 mm, więc etykieta o szerokości 148 mm mieści się w polu druku. Materiał może mieć do 170 mm szerokości.' },
-    { question: 'Czym różnią się PX65A00EU0000200 i PX65A00EU0000300?', answer: 'Tylko rozdzielczością: 203 dpi lub 300 dpi. Obie wersje drukują do 225 mm/s i mają te same porty, koder UHF EU oraz przewody EU i US.' },
-    { question: 'Czy PX65 RFID ma Wi-Fi?', answer: 'Nie fabrycznie. Wi-Fi dodaje zestaw ROW 50147002-002. Montaż wykonuje autoryzowany technik.' },
-    { question: 'Jaka jest najwęższa etykieta dla PX65 RFID?', answer: 'Materiał musi mieć co najmniej 76 mm szerokości. Najkrótsza etykieta RFID ma 50,8 mm. Do węższych etykiet wybierz PX45 RFID.' },
-    { question: 'Czym ciąć etykiety RFID w PX65?', answer: 'Obcinaczem 1-041584-900. Linia cięcia musi przebiegać między wkładkami RFID. Podaj nam rozstaw etykiet przed montażem.' },
+    { question: 'Jaki moduł RFID ma PX65 RFID w wersji EU?', answer: 'Moduł UHF 869 MHz, ten sam co w zestawie 50147012-002. Wersja na Amerykę Północną używa zestawu 915 MHz 50147011-002.' },
+    { question: 'Jak wąski materiał przyjmie PX65 RFID?', answer: 'Materiał musi mieć co najmniej 76 mm szerokości. Maksymalna szerokość wynosi 170 mm. Węższe etykiety, od 25,4 mm, obsługuje PX45 RFID.' },
+    { question: 'Czy PX65 RFID ma Wi-Fi?', answer: 'Nie fabrycznie. Wi-Fi 802.11a/b/g/n/ac dodaje karta ROW 50147002-002. Standardowe porty to Ethernet 10/100, USB Device, USB Host i RS-232.' },
   ],
   downloads: [
     { name: 'Karta katalogowa PX45 / PX65 (EN)', type: 'datasheet', url: '/downloads/sps-ppr-px45-px65-series-printers-datasheet-en.pdf', size: 'PDF' },

@@ -31,7 +31,7 @@ export const counterScannerContent: SubcategoryRichContent = {
       { model: 'Zebra SP7208-H', href: '/produkt/zebra-sp7208-h', role: 'Port AUX na skaner ręczny', cells: ['1 (poziome)', '15,2 × 15,2 cm, głęb. 8,6 cm', '3 lata', cenaOd('zebra-sp7208-h')] },
       { model: 'Datalogic Magellan 9550i', href: '/produkt/datalogic-magellan-9550i', role: 'Wersje z Adaptive Scale', cells: ['2 (poziome i pionowe)', 'szer. 29,2 cm, głęb. 10,4 cm', '1 rok', cenaOd('datalogic-magellan-9550i')] },
       { model: 'Datalogic Magellan 9600i', href: '/produkt/datalogic-magellan-9600i', role: 'Płyta krótka lub średnia Flush', cells: ['2', 'szer. 29,2 cm, głęb. 10,2 cm', '1 rok', cenaOd('datalogic-magellan-9600i')] },
-      { model: 'Datalogic Magellan 9900i', href: '/produkt/datalogic-magellan-9900i', role: 'Niska wieża, ScaleSentry', cells: ['2', 'szer. 29,2 cm, głęb. 10,2 cm', '1 rok', cenaOd('datalogic-magellan-9900i')] },
+      { model: 'Datalogic Magellan 9900i', href: '/produkt/datalogic-magellan-9900i', role: 'Niska wieża 6,8 cm', cells: ['2', 'szer. 29,2 cm, głęb. 10,2 cm', '1 rok', cenaOd('datalogic-magellan-9900i')] },
       { model: 'Zebra MP7200', href: '/produkt/zebra-mp7200', role: 'Wersje Scale Ready i z kolorową kamerą', cells: ['2', '39,8 lub 50,6 × 29,2 cm, głęb. 10,1 cm', '1 rok', cenaOd('zebra-mp7200')] },
     ],
     note: 'Ceny netto bez przewodów, mocowań i zasilaczy. Zawartość zestawu zależy od PN.',

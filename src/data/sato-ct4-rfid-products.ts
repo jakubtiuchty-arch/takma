@@ -24,61 +24,42 @@ export const satoCt4RfidAccessories: Product[] = accessories.map(a => ({
 export const satoCt4RfidProducts: Product[] = [{
   id, slug: id, name: 'SATO CT4-LX RFID', seoH1: 'SATO CT4-LX RFID',
   seoTitle: 'SATO CT4-LX RFID — drukarka RFID UHF 203/305 dpi',
-  seoDescription: 'SATO CT4-LX RFID: biurkowa drukarka i koder UHF 203 lub 305 dpi. Druk 104 mm, ekran dotykowy 4,3 cala, Gigabit Ethernet, opcja z Wi-Fi i RTC.',
+  seoDescription: 'SATO CT4-LX RFID – biurkowa drukarka RFID UHF 203 lub 305 dpi. Druk 104 mm, rolka RFID do 115 mm, odczyt TID, Gigabit Ethernet, ekran dotykowy 4,3 cala.',
   shortDescription: 'Biurkowa drukarka i koder UHF RFID. Warianty 203 lub 305 dpi, nadruk do 104 mm, ekran dotykowy 4,3 cala i Ethernet. Wi-Fi, Bluetooth i RTC zależą od PN.',
-  description: `SATO CT4-LX RFID drukuje etykiety i zapisuje dane w pasywnych wkładkach UHF. To biurkowa drukarka do stanowiska magazynowego, sklepu i znakowania wyposażenia.
+  description: `SATO CT4-LX RFID to biurkowa drukarka RFID UHF o wymiarach 178 × 238 × 214 mm i masie 3,4 kg. Koduje wkładki zgodne z ISO/IEC 18000-63 i EPC Gen2 Class 1 w zakresie 868–960 MHz. Moduł RFID jest montowany fabrycznie.
 
-## Wybierz rozdzielczość i wyposażenie
+## Weryfikacja zapisu, TID i tryb DIP
 
-CT408LX ma rozdzielczość 203 dpi i prędkość nadruku do 203 mm/s. CT412LX ma 305 dpi i prędkość do 152 mm/s. Obie wersje drukują na szerokości do 104 mm. Wyższa rozdzielczość ułatwia nadruk drobnych znaków; nie zwiększa zasięgu RFID.
+Po zaprogramowaniu wkładki drukarka sprawdza zapisane dane. Uszkodzony lub nieczytelny transponder oznacza nadrukiem unieważnienia. Numer TID można odczytać i wydrukować jako tekst lub kod kreskowy. Tryb DIP (Direct Inlay Printing) pozwala używać etykiet o krótkim rastrze, a PWP dopuszcza różne położenia wkładki. Obsługiwane obszary pamięci Gen2 to rozszerzony EPC, pamięć użytkownika i TID 96-bit, z hasłami Access i Kill oraz blokadą.
 
-Pokazane konfiguracje mają druk termotransferowy i termiczny bezpośredni, UHF RFID oraz zasilanie EU/UK. USB i Ethernet są wspólne. Warianty ZNAR dodają zegar RTC. Warianty ZWAR mają RTC, Wi-Fi i Bluetooth. Wybierz konkretny PN w tabeli.
+## Rolka RFID do 115 mm i taśma 100 m
 
-W zestawie są zasilacz, przewód zasilający dla danego regionu i skrócona instrukcja. Do wersji termotransferowej dołączono adaptery i rdzenie do taśmy. Etykiety RFID, taśma barwiąca i przewód danych wymagają osobnego doboru.
+Dla etykiet RFID rolka może mieć do 115 mm średnicy, na gilzie 40 mm, z etykietami na zewnątrz. Materiał ma 0,08–0,19 mm grubości. Taśma barwiąca ma do 100 m długości, 45–111 mm szerokości i do 40 mm średnicy rolki. Głowica 203 dpi drukuje do 203 mm/s, a 305 dpi do 152 mm/s.
 
-## Kodowanie UHF RFID
+## Gigabit Ethernet, NFC i 21 filmów instruktażowych
 
-Pokazane PN obsługują UHF zgodne z ISO/IEC 18000-63 i EPC Gen2. Nie są wersjami HF ani NFC do kodowania etykiet. Wbudowana funkcja NFC do komunikacji z urządzeniem nie zastępuje kodera etykiet HF.
+Standardowo drukarka ma USB typu B, dwa porty USB Host, Ethernet 10/100/1000 i NFC. Wi-Fi 802.11a/b/g/n/ac z Bluetooth 4.1, zegar RTC i port RS-232 są opcjami. Ekran dotykowy 4,3 cala odtwarza 21 filmów instruktażowych. Obcinacz, odklejak i obcinacz do etykiet bez podkładu są dostępne jako zestawy.
 
-SATO RF Analyze pomaga dobrać ustawienia radiowe do materiału. Po zmianie etykiet wykonaj kalibrację podawania i RFID. Sprawdź zapis oraz odczyt na docelowym produkcie. Wkładka, jej położenie i powierzchnia znakowanego przedmiotu wpływają na wynik.
-
-Drukarka weryfikuje zapis. Może oznaczać uszkodzone lub nieczytelne transpondery. Obsługuje także odczyt TID, który można wykorzystać w szablonie. Dobierz zakres pamięci i polecenia do używanego układu.
-
-## Rolki i taśmy barwiące
-
-Dla etykiet RFID maksymalna średnica rolki wynosi 115 mm. Materiał RFID powinien być nawinięty etykietą na zewnątrz. Materiały RFID są w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary etykiety, gilzę i rodzaj podkładu. Dobierzemy rolkę do CT4-LX RFID i położenie wkładki.
-
-Do druku termotransferowego dobierz taśmę do 100 m na gilzie 12,7 mm, o szerokości 45–111 mm, barwnikiem na zewnątrz. Druk termiczny bezpośredni wymaga etykiety termoczułej i nie używa taśmy. Do zwykłych etykiet rolka może mieć do 128 mm średnicy; ten limit nie dotyczy rolek RFID.
-
-## Ekran i integracja z systemem
-
-Kolorowy ekran dotykowy 4,3 cala pokazuje ustawienia i materiały instruktażowe. Drukarka ma USB typu B, dwa porty USB Host i Ethernet 10/100/1000. Wi-Fi 802.11a/b/g/n/ac i Bluetooth 4.1 zależą od konfiguracji. Port RS-232C wymaga osobnego modułu.
-
-Język SBPL i środowisko AEP pozwalają przygotować zadanie druku i kodowania. Powiąż identyfikator EPC z rekordem w WMS lub ERP. Sam wydruk PDF nie zapisuje danych w układzie etykiety. Do inwentaryzacji regałów potrzebujesz osobnego czytnika UHF.
-
-## Akcesoria i rozbudowa
-
-Pokazane warianty mają ręczne odrywanie etykiet. Odklejak WWCT0502N jest osobnym akcesorium. Dla RFID sprawdź jego działanie z wybranym materiałem. Moduł WWCT0505N dodaje Wi-Fi i Bluetooth, WWCT0503N dodaje RTC, a WWCT0506N dodaje RS-232C. Nie kupuj ponownie funkcji, którą ma już wybrany wariant.
-
-## Gwarancja i serwis
-
-Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok ochrony dotyczy kwalifikujących się produktów i wymaga spełnienia warunków regionalnych. O zakres ochrony dla wybranego PN zapytaj przy zamówieniu. Głowica i wałek mają odrębne limity: 1 rok lub 30 km przy druku termotransferowym, albo 1 rok lub 15 km przy druku termicznym. Obowiązuje pierwszy osiągnięty limit. Zachowaj dowód zakupu i używaj materiałów zatwierdzonych przez SATO.
-
-Porównaj także [Zebra ZD621R](/produkt/zebra-zd621r) oraz [TSC TH240R](/produkt/tsc-th240r).`,
+Przemysłowa [SATO CL4NX Plus RFID](/produkt/sato-cl4nx-plus-rfid) przyjmuje rolkę do 254 mm i taśmę do 600 m.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'retail', 'logistyka'],
   images: ['/images/products/sato-ct4-rfid-angle.webp'], imageDescriptions: ['SATO CT4-LX RFID — biurkowa drukarka z ekranem dotykowym, widok pod kątem z prawym bokiem'],
   availability: 'unavailable', isNew: true, isBestseller: false,
   keyParams: { szerokoscEtykiet: '22–115 mm; dobór RFID zależy od wkładki', rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID', rozdzielczosc: '203 lub 305 dpi', szerokoscDruku: '104 mm', predkoscDruku: 'do 203 mm/s (203 dpi), do 152 mm/s (305 dpi)' },
   specifications: [
-    { name: 'Rozdzielczość', value: '203 / 305 dpi, zależnie od PN' }, { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
-    { name: 'Szerokość druku', value: '104 mm' }, { name: 'Prędkość nadruku', value: 'Do 203 mm/s przy 203 dpi; do 152 mm/s przy 305 dpi; RFID zależy od materiału i danych' },
-    { name: 'RFID', value: 'UHF, ISO/IEC 18000-63, EPC Gen2; pokazane PN bez kodera HF/NFC' },
-    { name: 'Rolka RFID', value: 'Średnica do 115 mm; etykiety na zewnątrz' }, { name: 'Taśma barwiąca', value: 'Do 100 m, szerokość 45–111 mm, gilza 12,7 mm, barwnik na zewnątrz' },
+    { name: 'Rozdzielczość', value: '203 / 305 dpi, zależnie od PN' },
+    { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
+    { name: 'Szerokość druku', value: '104 mm' },
+    { name: 'Prędkość nadruku', value: 'Do 203 mm/s przy 203 dpi; do 152 mm/s przy 305 dpi; RFID zależy od materiału i danych' },
+    { name: 'RFID', value: 'UHF 868–960 MHz, ISO/IEC 18000-63, EPC Gen2 Class 1; pokazane PN bez kodera HF/NFC' },
+    { name: 'Rolka RFID', value: 'Średnica do 115 mm na gilzie 40 mm; etykiety na zewnątrz' },
+    { name: 'Taśma barwiąca', value: 'Do 100 m, szerokość 45–111 mm, średnica rolki do 40 mm, barwnik na zewnątrz' },
     { name: 'Łączność', value: 'USB, 2 × USB Host, Gigabit Ethernet; Wi-Fi i Bluetooth zależnie od PN; RS-232C opcjonalnie' },
-    { name: 'Wyświetlacz', value: 'Kolorowy ekran dotykowy 4,3 cala' }, { name: 'Pamięć', value: '1 GB RAM; 4 GB eMMC' },
-    { name: 'Język', value: 'SBPL; aplikacje AEP' }, { name: 'Obsługa etykiet', value: 'Ręczne odrywanie; odklejak sprzedawany osobno' },
-    { name: 'Wymiary', value: '178 × 238 × 214 mm' }, { name: 'Masa', value: 'Około 3,4 kg, bez materiałów i opcji' },
-    { name: 'Gwarancja', value: 'Podstawowa 1 rok; dodatkowy rok dla kwalifikujących się produktów na warunkach regionalnych. Głowica i wałek: 1 rok / 30 km TT lub 15 km DT; pierwszy limit.' },
+    { name: 'Wyświetlacz', value: 'Kolorowy ekran dotykowy 4,3 cala' },
+    { name: 'Pamięć', value: '1 GB RAM; 4 GB eMMC' },
+    { name: 'Język', value: 'SBPL; aplikacje AEP' },
+    { name: 'Obsługa etykiet', value: 'Ręczne odrywanie; odklejak sprzedawany osobno' },
+    { name: 'Wymiary', value: '178 × 238 × 214 mm' },
+    { name: 'Masa', value: 'Około 3,4 kg, bez materiałów i opcji' },
   ],
   variants: [
     { pn: 'WWCT03242', dpi: '203 dpi', radio: false, rtc: false },
@@ -89,13 +70,11 @@ Porównaj także [Zebra ZD621R](/produkt/zebra-zd621r) oraz [TSC TH240R](/produk
     { pn: 'WWCT04242ZWAR', dpi: '305 dpi', radio: true, rtc: true },
   ].map(v => ({ partNumber: v.pn, name: `${v.dpi}, UHF EU${v.radio ? ', Wi-Fi + BT' : ''}${v.rtc ? ', RTC' : ''}`, attributes: { 'Rozdzielczość': v.dpi, 'Łączność': v.radio ? 'USB, Ethernet, Wi-Fi, Bluetooth' : 'USB, Ethernet', 'Zegar RTC': v.rtc ? 'Tak' : 'Nie' }, availability: 'unavailable' as const })),
   compatibleAccessories: [], relatedAccessories: satoCt4RfidAccessories.map(a => a.id),
-  applications: ['Druk i kodowanie etykiet UHF na towary oraz opakowania', 'Znakowanie produktów przy stanowisku sklepowym', 'Przygotowanie oznaczeń wyposażenia'],
+  applications: ['Druk numeru TID na etykiecie RFID', 'Kodowanie etykiet UHF o krótkim rastrze w trybie DIP'],
   faq: [
-    { question: 'Czy wszystkie CT4-LX mają RFID?', answer: 'Nie. Koder UHF RFID mają warianty RFID z tabeli, np. WWCT03242 i WWCT04242. Wersje zwykłe i HF mają inne numery katalogowe.' },
-    { question: 'Czy 305 dpi to pomyłka?', answer: 'Nie. CT412LX ma 12 punktów/mm, czyli 305 dpi. CT408LX ma 8 punktów/mm, czyli 203 dpi.' },
-    { question: 'Czy trzeba dokupić Wi-Fi albo zegar?', answer: 'Zależy od PN. Warianty ZNAR mają RTC, a ZWAR mają RTC oraz Wi-Fi i Bluetooth. Podstawowe WWCT03242 i WWCT04242 nie mają tych opcji.' },
-    { question: 'Jaką rolkę RFID można zastosować?', answer: 'Średnica rolki RFID wynosi maksymalnie 115 mm, a etykiety muszą być nawinięte na zewnątrz. Dobierz gilzę, wkładkę i podkład do urządzenia, a następnie wykonaj test kodowania.' },
-    { question: 'Czy to czytnik do inwentaryzacji magazynu?', answer: 'Nie. CT4-LX drukuje i koduje etykiety przy stanowisku. Do odczytu produktów na regałach potrzebujesz osobnego czytnika UHF.' },
+    { question: 'Czy CT4-LX RFID odczyta numer TID wkładki?', answer: 'Tak. Odczytany TID można wydrukować na etykiecie jako tekst lub kod kreskowy. Drukarka obsługuje TID 96-bit.' },
+    { question: 'Jaka rolka RFID mieści się w CT4-LX RFID?', answer: 'Do 115 mm średnicy, na gilzie 40 mm, z etykietami nawiniętymi na zewnątrz. Rolka bez RFID może mieć do 128 mm.' },
+    { question: 'Co robi CT4-LX RFID z uszkodzoną wkładką?', answer: 'Oznacza etykietę nadrukiem unieważnienia. Każdy zapis jest sprawdzany po zaprogramowaniu wkładki.' },
   ],
   downloads: [{ name: 'Karta katalogowa CT4-LX (EN)', type: 'datasheet', url: '/downloads/sato-ct4-lx-karta-en.pdf', size: 'PDF' }, { name: 'Instrukcja CT4-LX (EN)', type: 'manual', url: manual, size: 'Online' }, { name: 'Sterowniki i narzędzia SATO', type: 'driver', url: support, size: 'Online' }, { name: 'Dobór wkładek i ustawienia RFID', type: 'manual', url: 'https://www.sato-global.com/support/rfid-config-guide/', size: 'Online' }],
   relatedProducts: ['zebra-zd621r', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr'], sameAs: 'https://www.satoeurope.com/products/rfid-printers.php', createdAt: '2026-10-16',

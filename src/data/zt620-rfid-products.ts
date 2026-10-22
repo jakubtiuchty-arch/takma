@@ -27,43 +27,23 @@ export const zt620RfidProduct: Product = {
   id: 'zebra-zt620-rfid', slug: 'zebra-zt620-rfid',
   name: 'Zebra ZT620 RFID', seoH1: 'Zebra ZT620 RFID',
   seoTitle: 'Zebra ZT620 RFID — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Zebra ZT620 RFID: 6-calowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk do 168 mm z prędkością do 305 mm/s, Gigabit Ethernet, Bluetooth 4.0.',
+  seoDescription: 'Zebra ZT620 RFID – 6-calowa drukarka RFID UHF 203 lub 300 dpi. Nadruk do 168 mm z prędkością do 305 mm/s, Gigabit Ethernet i metalowa obudowa.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT620 RFID do druku i kodowania szerokich etykiet RAIN UHF. Druk do 168 mm, 203 lub 300 dpi, Gigabit Ethernet.',
-  description: `Zebra ZT620 RFID to przemysłowa drukarka i koder szerokich etykiet RAIN UHF RFID. Wykonuje nadruk do 168 mm i zapisuje dane w układzie elektronicznym etykiety.
+  description: `Zebra ZT620 RFID to przemysłowa drukarka RFID UHF w klasie 6 cali, z polem nadruku 168 mm. Koduje znaczniki EPC Gen 2 v2.1 zgodne z ISO/IEC 18000-63 i RFID RAIN. Drukuje z prędkością do 305 mm/s.
 
-## Szerokie etykiety RFID na kartony i palety
+## ZT62062-T0E01C0Z i ZT62063-T0E01C0Z
 
-ZT620 RFID przygotowuje oznaczenia opakowań zbiorczych, palet, pojemników oraz wyrobów. Szeroki nadruk mieści dane logistyczne, tekst i kody kreskowe. Identyfikator EPC zapisany w etykiecie możesz powiązać z danymi w systemie WMS lub ERP. Samo połączenie drukarki z siecią nie zastępuje takiej integracji.
+Każda z nich ma fabryczny koder RFID i tryb odrywania etykiet. ZT62062-T0E01C0Z ma głowicę 203 dpi, a ZT62063-T0E01C0Z głowicę 300 dpi. Wydruk ciągły ma do 3810 mm przy 203 dpi i do 2540 mm przy 300 dpi. W serii ZT600 koder RFID można też zamontować samodzielnie w drukarce bez RFID.
 
-Wbudowany koder obsługuje EPC UHF Gen2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Adaptacyjne kodowanie ułatwia kalibrację dla różnych wkładek. Dla zgodnych materiałów odstęp między wkładkami może wynosić 16 mm lub mniej. Przed wdrożeniem sprawdź zapis i odczyt etykiety na docelowym opakowaniu. Drukarka kontroluje etykietę w swoim torze materiałów. Do odczytu towarów na regale potrzebujesz osobnego czytnika UHF RFID.
+## Materiał do 178 mm
 
-## Dwa warianty z fabrycznym modułem RFID
+Przy odrywaniu i obcinaniu materiał ma 51–178 mm szerokości. Przy odklejaniu i nawijaniu zakres wynosi 51–171 mm. Taśma do 450 m ma 51–174 mm szerokości i gilzę 25,4 mm. Rolka może mieć 203 mm średnicy na gilzie 76 mm, a grubość materiału wynosi 0,058–0,25 mm.
 
-ZT62062-T0E01C0Z ma rozdzielczość 203 dpi i drukuje z prędkością do 305 mm/s. ZT62063-T0E01C0Z ma 300 dpi i drukuje z prędkością do 203 mm/s. Oba PN obejmują koder RFID Global ROW, przewody zasilające EU i UK oraz ręczne odrywanie etykiet.
+## Trwała blokada pamięci ATA Spec 2000
 
-Wybierz 203 dpi do dużych kodów i standardowych oznaczeń logistycznych. Wersja 300 dpi umożliwia druk drobniejszego tekstu i bardziej szczegółowej grafiki. Rozdzielczość określa szczegółowość nadruku, a nie zasięg RFID. ZT620 RFID nie występuje w rozdzielczości 600 dpi. Jeśli potrzebujesz takiej rozdzielczości i wystarcza Ci nadruk do 104 mm, sprawdź [ZT610 RFID](/produkt/zebra-zt610-rfid).
+Drukarka obsługuje trwałą blokadę pamięci użytkownika zgodną z ATA Spec 2000. Wspiera też serializację opartą na układach wielu dostawców. Ma 1 GB RAM, 2 GB Flash, Gigabit Ethernet, RS-232, USB 2.0 i Bluetooth 4.0. Waży 26 kg.
 
-## Materiały i obsługa szerokich rolek
-
-Drukarka obsługuje druk termotransferowy oraz termiczny bezpośredni. Do termotransferu potrzebujesz taśmy barwiącej. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy. W obu metodach kodowanie wymaga etykiety z wkładką RFID.
-
-Przy odrywaniu i cięciu szerokość materiału wynosi 51–178 mm. Drukarka mieści rolkę o średnicy do 203 mm na gilzie 76 mm. Obsługuje taśmę o długości do 450 m i szerokości 51–174 mm. Dobierz materiał etykiety, taśmę i wkładkę RFID do powierzchni oraz warunków użytkowania. ZT620 RFID obsługuje materiał o grubości do 0,25 mm. Nie jest wersją On-metal do grubych etykiet przeznaczonych na metal.
-
-## Stałe stanowisko w magazynie lub na produkcji
-
-Metalowa rama, składana pokrywa i boczny załadunek ułatwiają obsługę materiałów na stałym stanowisku. ZT620 RFID waży 26 kg. Ma 1 GB RAM i 2 GB pamięci Flash. Kolorowy ekran 4,3 cala służy do konfiguracji oraz odczytu komunikatów drukarki.
-
-Oba oferowane PN mają USB 2.0, USB Host, RS-232, Gigabit Ethernet i Bluetooth 4.0. Nie mają fabrycznego Wi-Fi. Łączność bezprzewodową możesz rozbudować przez moduł Wi-Fi 5 P1083320-037C albo Wi-Fi 6 P1083320-037G. Moduły są sprzedawane osobno. Link-OS i narzędzia Zebra DNA wspierają ustawianie oraz zarządzanie urządzeniem.
-
-## Akcesoria i części zamienne
-
-Dobierz obcinacz, nawijak wewnętrzny lub interfejs aplikatora do sposobu odbioru etykiet. Obcinacz P1083320-135 wymaga zgodnej konfiguracji i oprogramowania. Przy etykietach RFID ustaw cięcie między wkładkami. Nawijak P1083320-085 może zwijać gotowe etykiety albo podkład w trybie odklejania. Głowicę zamienną dobierz do rozdzielczości urządzenia. Wymiana samej głowicy nie służy do zmiany rozdzielczości.
-
-Etykiety RFID, taśma barwiąca i dodatkowe moduły są sprzedawane osobno. Jeśli potrzebujesz tylko nadruku, sprawdź [Zebra ZT620](/produkt/zebra-zt620).
-
-## Gwarancja
-
-Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części zużywające się mają ochronę ograniczoną do 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
+Węższa [Zebra ZT610 RFID](/produkt/zebra-zt610-rfid) drukuje do 104 mm, ale jako jedyna w serii ma głowicę 600 dpi.`,
   categoryId: 'drukarki-etykiet',
   subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
   manufacturerId: 'zebra',
@@ -90,7 +70,7 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     { name: 'Grubość mediów', value: '0,058–0,25 mm' },
     { name: 'Rolka etykiet', value: 'Średnica do 203 mm; gilza 76 mm' },
     { name: 'Taśma barwiąca', value: 'Długość do 450 m; szerokość 51–174 mm; gilza 25,4 mm' },
-    { name: 'Ekran', value: 'Kolorowy, 4,3 cala' },
+    { name: 'Ekran', value: 'Kolorowy, dotykowy, 4,3 cala' },
     { name: 'Interfejsy', value: 'USB 2.0, USB Host, RS-232, Gigabit Ethernet, Bluetooth 4.0' },
     { name: 'Wi-Fi', value: 'Opcjonalne; oferowane PN nie mają fabrycznego Wi-Fi' },
     { name: 'Odbiór etykiet w oferowanych PN', value: 'Ręczne odrywanie; bez fabrycznego obcinacza i nawijaka' },
@@ -101,7 +81,6 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     { name: 'Zasilanie', value: '90–265 V AC, 47–63 Hz' },
     { name: 'Temperatura pracy', value: '5–40°C przy druku termotransferowym; 0–40°C przy druku termicznym bezpośrednim' },
     { name: 'W zestawie', value: 'Drukarka wybranego wariantu z fabrycznym RFID Global ROW oraz przewody zasilające EU i UK' },
-    { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
   ],
   variants: [
     { partNumber: 'ZT62062-T0E01C0Z', name: '203 dpi — RFID', attributes: { 'Rozdzielczość': '203 dpi', 'Prędkość druku': 'do 305 mm/s' }, availability: 'unavailable' },
@@ -110,19 +89,15 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
   variantAttributeTooltips: {
     'Prędkość druku': 'Maksymalna prędkość nadruku: 12 ips przy 203 dpi i 8 ips przy 300 dpi. Kodowanie RFID może zmniejszyć wydajność zadania.',
   },
-  applications: ['Druk i kodowanie szerokich etykiet RFID na kartony oraz palety', 'Oznaczanie pojemników i opakowań zbiorczych na produkcji', 'Przygotowanie identyfikatorów EPC powiązanych z danymi WMS lub ERP', 'Znakowanie wyrobów zgodnymi etykietami RAIN UHF'],
+  applications: ['Szerokie etykiety UHF z trwałą blokadą pamięci', 'Kodowanie etykiet RFID 6-calowych w centrach dystrybucji'],
   compatibleAccessories: [], relatedAccessories: zt620RfidAccessoryIds,
   faq: [
-    { question: 'Kiedy wybrać ZT620 RFID, a kiedy standardową ZT620?', answer: 'ZT620 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Standardowe konfiguracje [ZT620](/produkt/zebra-zt620) bez tego modułu wykonują tylko nadruk. Dobierz wariant do potrzeby kodowania RFID.' },
-    { question: 'Jakie PN są dostępne?', answer: 'ZT62062-T0E01C0Z ma 203 dpi, a ZT62063-T0E01C0Z — 300 dpi. Oba PN obejmują fabryczne RFID Global ROW, przewody zasilające EU i UK oraz ręczne odrywanie etykiet. Nie mają fabrycznego Wi-Fi, obcinacza ani nawijaka.' },
-    { question: 'Czy obie rozdzielczości drukują z tą samą prędkością?', answer: 'Nie. Wersja 203 dpi drukuje do 305 mm/s, czyli 12 ips. Wersja 300 dpi drukuje do 203 mm/s, czyli 8 ips. Rzeczywista wydajność kodowania zależy także od wkładki RFID, ilości danych i ustawień.' },
-    { question: 'Kiedy wybrać ZT620 RFID zamiast ZT610 RFID?', answer: 'Wybierz ZT620 RFID, jeśli nadruk przekracza szerokość 104 mm. ZT620 RFID drukuje do 168 mm. ZT610 RFID drukuje do 104 mm i oferuje także rozdzielczość 600 dpi, której nie ma ZT620 RFID.' },
-    { question: 'Czy drukarka ma Wi-Fi?', answer: 'Oferowane PN nie mają fabrycznego Wi-Fi. Mają Gigabit Ethernet, USB, USB Host, RS-232 i Bluetooth 4.0. Do rozbudowy dobierz moduł Wi-Fi 5 P1083320-037C albo Wi-Fi 6 P1083320-037G. Moduły są sprzedawane osobno.' },
-    { question: 'Czy ZT620 RFID może drukować grube etykiety na metal?', answer: 'Ta drukarka obsługuje materiał o grubości do 0,25 mm. Nie jest wersją On-metal. Do grubych etykiet na metal sprawdź odpowiedni wariant [ZT411 RFID On-metal](/produkt/zebra-zt411-rfid) i potwierdź zgodność konkretnego materiału.' },
-    { question: 'Czy drukarka odczyta całą półkę magazynową?', answer: 'Nie. Drukarka zapisuje i weryfikuje wkładkę tylko w chwili drukowania etykiety. Do inwentaryzacji towarów potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    { question: 'Czy nawijak i materiały są w zestawie?', answer: 'Nie. Nawijak, obcinacz, etykiety RFID, taśmę barwiącą i dodatkowe moduły dobierz osobno. Nawijak P1083320-085 obsługuje zwijanie etykiet albo podkładu w trybie odklejania. Do druku termicznego bezpośredniego nie potrzebujesz taśmy barwiącej.' },
+    { question: 'Czy ZT620 RFID występuje w wersji 600 dpi?', answer: 'Nie. Głowica 600 dpi jest dostępna tylko w ZT610. ZT620 RFID ma 203 lub 300 dpi.' },
+    { question: 'Jak szeroka może być etykieta w ZT620 RFID?', answer: 'Materiał może mieć do 178 mm przy odrywaniu i obcinaniu oraz do 171 mm przy odklejaniu. Pole nadruku ma 168 mm.' },
+    { question: 'Jakie zasilanie przyjmuje ZT620 RFID?', answer: '90–265 V AC przy 47–63 Hz. Zasilacz ma moc 250 W i certyfikat ENERGY STAR.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZT610 / ZT620 RFID (PL)', type: 'datasheet', url: '/datasheets/zebra-zt600-rfid-karta-pl.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZT600 RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt600-series-rfid-specification-sheet-en-us.pdf', size: 'PDF' },
     { name: 'Katalog akcesoriów do drukarek przemysłowych Zebra (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/print-head-guide-accessories-en-us.pdf', size: 'PDF' },
     { name: 'Katalog części ZT600 (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/fact-sheet/zt600-series-parts-catalog-en-us.pdf', size: 'PDF' },

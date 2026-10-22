@@ -22,67 +22,49 @@ export const satoCl4SxrRfidAccessories: Product[] = parts.map(a => ({
 export const satoCl4SxrRfidProducts: Product[] = [{
   id, slug: id, name: 'SATO CL4-SXR RFID', seoH1: 'SATO CL4-SXR RFID',
   seoTitle: 'SATO CL4-SXR RFID — drukarka RFID UHF 203–609 dpi',
-  seoDescription: 'SATO CL4-SXR RFID: przemysłowa drukarka i koder UHF 203, 305 lub 609 dpi. Druk 104 mm do 355,6 mm/s, taśma 600 m, obcinak lub odklejak.',
-  shortDescription: 'Przemysłowa drukarka i koder UHF RFID. Druk do 104 mm, rozdzielczość 203, 305 lub 609 dpi, prędkość do 355,6 mm/s, taśma do 600 m i ekran dotykowy 4,3 cala.',
-  description: `SATO CL4-SXR RFID drukuje etykiety i zapisuje dane w układach UHF. Służy do znakowania produktów, opakowań i wyposażenia w magazynie oraz na produkcji. Dostępne wersje mają fabryczny koder UHF RFID i konfigurację europejską.
+  seoDescription: 'SATO CL4-SXR RFID – przemysłowa drukarka RFID UHF 203, 305 lub 609 dpi. Druk 104 mm z prędkością do 457 mm/s, taśma 600 m, ekran dotykowy 4,3 cala.',
+  shortDescription: 'Przemysłowa drukarka i koder UHF RFID. Druk do 104 mm, rozdzielczość 203, 305 lub 609 dpi, prędkość do 457 mm/s, taśma do 600 m i ekran dotykowy 4,3 cala.',
+  description: `SATO CL4-SXR RFID to przemysłowa drukarka RFID UHF do etykiet o szerokości nadruku 104 mm. Koduje wkładki UHF i drukuje termotransferowo lub termicznie bezpośrednio. Do wyboru są głowice 203, 305 i 609 dpi.
 
-## Rozdzielczość i prędkość nadruku
+## Prędkość 457, 406 lub 152 mm/s
 
-Wybierz 203, 305 lub 609 dpi. Wszystkie wersje drukują na szerokości do 104 mm. Głowica 305 dpi ma 12 punktów na milimetr, a 609 dpi — 24 punkty. Wyższa rozdzielczość pomaga drukować drobny tekst i małe kody 2D. Nie zwiększa zasięgu odczytu RFID.
+Wersja 203 dpi drukuje z prędkością 51–457 mm/s, czyli 2–18 cali/s. Wersja 305 dpi osiąga do 406 mm/s, a wersja 609 dpi do 152 mm/s. Najdłuższy wydruk ma odpowiednio 2500, 1500 i 400 mm. Tryb wysokiej precyzji utrzymuje pozycję nadruku z dokładnością ±0,3 mm.
 
-Wersje RFID 203 i 305 dpi drukują z prędkością do 355,6 mm/s. Wersja 609 dpi drukuje do 152,4 mm/s. Z odklejakiem prędkość wynosi do 254 mm/s. Kodowanie RFID może wymagać niższej prędkości. Dobierz ją podczas wydruku próbnego na docelowych etykietach.
+## Materiał 22–128 mm bez przestawiania nawoju
 
-## Kodowanie etykiet UHF RFID
+Etykieta bez podkładu może mieć 22–128 mm szerokości i 60–268 μm grubości. Rolka ma do 220 mm średnicy, na gilzie 76 lub 101 mm. Nawój etykietą do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień. To samo dotyczy taśmy do 600 m o szerokości 39,5–128 mm. Czujnik zapobiegania stratom etykiet pozwala drukować od pierwszej etykiety na rolce.
 
-Zadanie druku musi zawierać dane i polecenia kodowania. Sam plik PDF nie zapisuje identyfikatora EPC w układzie etykiety. Powiąż EPC z produktem lub opakowaniem w systemie WMS albo ERP.
+## Gigabit Ethernet, Wi-Fi 2,4/5/6 GHz i emulacje
 
-Dobierz wkładkę RFID, rozmiar etykiety i jej położenie na podkładzie. Wykonaj kalibrację podawania oraz RFID po zmianie materiału. Metal, ciecz i sposób naklejenia wpływają na odczyt. Do etykiet na metal przekaż nam opis przedmiotu. Dobierzemy materiał i sprawdzimy zapis oraz odczyt.
+Drukarka ma USB typu A z przodu i z tyłu, USB typu B, Ethernet 10/100/1000, RS-232C i port EXT. Warianty z Wi-Fi obsługują 802.11a/b/g/n/ac/ax w pasmach 2,4, 5 i 6 GHz oraz Bluetooth 5.2. Oprócz SBPL drukarka sama rozpoznaje emulacje SZPL, SDPL, SIPL, STCL, SEPL, SMGL, SPGL i SFPL. Ekran dotykowy 4,3 cala z głośnikiem odtwarza filmy instruktażowe.
 
-Dostępne PN są wersjami UHF dla Europy. Nie są wersjami HF. Funkcja NFC do komunikacji z drukarką nie zastępuje kodera etykiet HF lub NFC. Do odczytu towarów na regałach potrzebujesz osobnego czytnika UHF.
-
-## Materiały i taśmy
-
-Drukarka obsługuje druk termotransferowy i termiczny bezpośredni. Przy druku termotransferowym stosuj taśmę o długości do 600 m, szerokości 39,5–128 mm i gilzie 25,4 mm. Taśma może mieć barwnik po wewnętrznej lub zewnętrznej stronie. Dobierz jej rodzaj do powierzchni etykiety.
-
-Standardowy uchwyt mieści rolkę o średnicy do 220 mm, na gilzie 76 lub 101 mm. Do etykiet RFID wybierz gilzę 101 mm. Szerokość etykiety bez podkładu wynosi 22–128 mm. Ofertę rolek RFID zobaczysz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam wymiary, gilzę i kierunek nawinięcia. Dobierzemy rolkę do CL4-SXR RFID i położenie wkładki względem anteny.
-
-## Łączność i obsługa
-
-USB, dwa porty USB Host, Gigabit Ethernet, RS-232 i interfejs EXT są wspólne dla dostępnych konfiguracji. Wszystkie mają zegar RTC. Warianty z Wi-Fi i Bluetooth umożliwiają pracę bez przewodu sieciowego. Obsługują Wi-Fi 802.11a/b/g/n/ac/ax oraz Bluetooth 5.2. Dostępne pasma zależą od ustawień regionalnych.
-
-Ekran dotykowy 4,3 cala ułatwia zmianę ustawień i obsługę materiałów. Język SBPL oraz środowisko AEP pozwalają przygotować zadania dostosowane do procesu. Przed wymianą urządzenia w istniejącym systemie prześlij nam przykładowe zadanie. Sprawdzimy polecenia druku i kodowania.
-
-## Wybór konfiguracji i części
-
-W tabeli wybierz rozdzielczość, łączność oraz sposób odbioru etykiety: ręczne odrywanie, obcinak lub odklejak. Przy RFID ustaw cięcie między wkładkami. Działanie odklejaka sprawdź na wybranym materiale.
-
-Głowice R48221101, R48221201 i R48221401 pasują odpowiednio do wersji 203, 305 i 609 dpi. Wałek R55375100 pasuje do wszystkich trzech rozdzielczości. Dobieraj części do numeru seryjnego. Wymiana głowicy nie zmienia rozdzielczości urządzenia.
-
-## Gwarancja
-
-Podstawowa gwarancja producenta wynosi 1 rok. Dodatkowy rok dotyczy kwalifikujących się produktów na warunkach regionalnych. Zapytaj nas o zakres ochrony dla zamawianego PN. Dla głowicy i wałka obowiązuje 1 rok lub 30 km druku termotransferowego, albo 1 rok lub 15 km druku termicznego. Decyduje pierwszy osiągnięty limit. Zachowaj dowód zakupu i stosuj materiały zatwierdzone przez SATO.
-
-Do szerszych etykiet sprawdź [SATO CL6-SXR RFID](/produkt/sato-cl6-sxr-rfid). Porównaj także [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) i [Zebra ZT610 RFID](/produkt/zebra-zt610-rfid). Do mniejszego stanowiska sprawdź [SATO CT4-LX RFID](/produkt/sato-ct4-lx-rfid).`,
+[SATO CL6-SXR RFID](/produkt/sato-cl6-sxr-rfid) drukuje szersze etykiety, do 167,5 mm, z prędkością do 355,6 mm/s.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka', 'produkcja'],
   images: ['/images/products/sato-cl4-sxr-rfid.webp'], imageDescriptions: ['SATO CL4-SXR RFID — przemysłowa drukarka etykiet, widok pod kątem z prawym bokiem'],
   availability: 'unavailable', isNew: true, isBestseller: false,
-  keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID', rozdzielczosc: '203 / 305 / 609 dpi', szerokoscDruku: '104 mm', szerokoscEtykiet: '22–128 mm bez podkładu; RFID wymaga doboru wkładki', predkoscDruku: 'Do 355,6 mm/s (203 i 305 dpi) lub 152,4 mm/s (609 dpi); z odklejakiem do 254 mm/s' },
+  keyParams: {
+    rodzajDruku: 'Termotransferowy i termiczny bezpośredni; UHF RFID',
+    rozdzielczosc: '203 / 305 / 609 dpi',
+    szerokoscDruku: '104 mm',
+    szerokoscEtykiet: '22–128 mm bez podkładu; RFID wymaga doboru wkładki',
+    predkoscDruku: 'Do 457 mm/s (203 dpi), 406 mm/s (305 dpi) lub 152 mm/s (609 dpi)',
+  },
   specifications: [
     { name: 'Rozdzielczość', value: '203 / 305 / 609 dpi, zależnie od PN' },
     { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
     { name: 'Szerokość druku', value: '104 mm' },
-    { name: 'Prędkość nadruku', value: 'Do 355,6 mm/s przy 203 i 305 dpi; do 152,4 mm/s przy 609 dpi; z odklejakiem do 254 mm/s; kodowanie RFID może ograniczyć prędkość' },
-    { name: 'RFID', value: 'UHF, konfiguracje europejskie; bez kodera HF' },
+    { name: 'Prędkość nadruku', value: 'Do 457 mm/s (18 cali/s) przy 203 dpi; do 406 mm/s (16 cali/s) przy 305 dpi; do 152 mm/s (6 cali/s) przy 609 dpi' },
+    { name: 'RFID', value: 'Koder UHF RFID; bez kodera HF' },
     { name: 'Rolka materiału', value: 'Średnica do 220 mm; gilza 76 lub 101 mm; materiał RFID wymaga testu' },
     { name: 'Taśma barwiąca', value: 'Do 600 m; szerokość 39,5–128 mm; gilza 25,4 mm; barwnik na zewnątrz lub do wewnątrz' },
     { name: 'Łączność', value: 'USB, 2 × USB Host, Gigabit Ethernet, RS-232, EXT; Wi-Fi i Bluetooth zależnie od PN' },
     { name: 'Wyświetlacz', value: 'Kolorowy ekran dotykowy 4,3 cala' },
     { name: 'Pamięć', value: '2 GB RAM; 8 GB Flash' },
-    { name: 'Język', value: 'SBPL; aplikacje AEP' },
+    { name: 'Język', value: 'SBPL; emulacje SZPL, SDPL, SIPL, STCL, SEPL, SMGL, SPGL, SFPL (wykrywane automatycznie); aplikacje AEP' },
     { name: 'Zegar RTC', value: 'Tak, we wszystkich pokazanych PN' },
     { name: 'Wymiary', value: '275 × 457 × 321 mm (szer. × gł. × wys.)' },
     { name: 'Masa', value: '15,5 kg bez materiałów i opcji' },
-    { name: 'Gwarancja', value: 'Podstawowa 1 rok; dodatkowy rok na warunkach regionalnych dla kwalifikujących się produktów. Głowica i wałek: 1 rok / 30 km TT lub 15 km DT; pierwszy limit.' },
+    { name: 'Gwarancja', value: '2 lata ograniczonej gwarancji SATO; zależnie od regionu, SKU i warunków gwarancji' },
   ],
   variants: [1, 2, 3].flatMap(n => ['70', 'A0', 'C0'].flatMap(mode => ['N', 'W'].map(radio => ({
     partNumber: `WWCLX${n}${mode}Z${radio}AREU`,
@@ -91,12 +73,11 @@ Do szerszych etykiet sprawdź [SATO CL6-SXR RFID](/produkt/sato-cl6-sxr-rfid). P
     availability: 'unavailable' as const,
   })))),
   compatibleAccessories: [], relatedAccessories: satoCl4SxrRfidAccessories.map(a => a.id),
-  applications: ['Druk i kodowanie etykiet UHF na produkty oraz opakowania', 'Znakowanie wyposażenia', 'Integracja znakowania z WMS i ERP'],
+  applications: ['Szybkie kodowanie etykiet UHF do 457 mm/s', 'Etykiety RFID z drobnym nadrukiem 609 dpi'],
   faq: [
-    { question: 'Czy każda CL4-SXR ma RFID?', answer: 'Nie. Koder UHF RFID mają wersje RFID z tabeli wariantów. Wersje bez RFID i z HF mają inne numery katalogowe.' },
-    { question: 'Dlaczego rozdzielczości wynoszą 305 i 609 dpi?', answer: 'Głowica 305 dpi ma 12 punktów na milimetr, a 609 dpi — 24 punkty. Do wymiany zamów głowicę o tej samej rozdzielczości co drukarka.' },
-    { question: 'Jak szybko drukuje CL4-SXR RFID?', answer: 'Wersje 203 i 305 dpi do 355,6 mm/s, wersja 609 dpi do 152,4 mm/s. Z odklejakiem prędkość wynosi do 254 mm/s. Kodowanie RFID może wymagać niższej prędkości.' },
-    { question: 'Czy wszystkie PN mają zegar RTC?', answer: 'Tak. Różnią się rozdzielczością, obsługą etykiet oraz obecnością Wi-Fi i Bluetooth. Wspólne parametry są w specyfikacji pod tabelą.' },
+    { question: 'Jak szybko drukuje SATO CL4-SXR RFID?', answer: 'Do 457 mm/s, czyli 18 cali/s, z głowicą 203 dpi i do 406 mm/s, czyli 16 cali/s, z głowicą 305 dpi. Wersja 609 dpi drukuje do 152 mm/s.' },
+    { question: 'Jakie emulacje obsługuje CL4-SXR RFID?', answer: 'Oprócz języka SBPL drukarka automatycznie wykrywa SZPL, SDPL, SIPL, STCL, SEPL, SMGL, SPGL i SFPL. Aplikacje AEP działają bezpośrednio na drukarce.' },
+    { question: 'W jakiej temperaturze pracuje CL4-SXR RFID?', answer: 'W zakresie 0–40°C przy wilgotności 20–85% w trybie ciągłym, z odrywaniem i z obcinakiem. Z odklejakiem zakres wynosi 5–35°C.' },
   ],
   downloads: [
     { name: 'Karta katalogowa CL4-SXR / CL6-SXR (EN)', type: 'datasheet', url: '/downloads/sato-cl4-sxr-karta-en.pdf', size: 'PDF' },

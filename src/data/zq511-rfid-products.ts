@@ -20,49 +20,23 @@ export const zq511RfidAccessorySlugs = [
 export const zq511RfidProduct: Product = {
   id: 'zebra-zq511-rfid', slug: 'zebra-zq511-rfid', name: 'Zebra ZQ511 RFID', seoH1: 'Zebra ZQ511 RFID',
   seoTitle: 'Zebra ZQ511 RFID — drukarka RFID UHF 203 dpi',
-  seoDescription: 'Zebra ZQ511 RFID: mobilna drukarka i koder UHF 203 dpi do etykiet szerokości 35–80 mm. Nadruk do 72 mm, Wi-Fi i Bluetooth, IP54, upadek z 2 m.',
+  seoDescription: 'Zebra ZQ511 RFID – mobilna drukarka RFID UHF 203 dpi. Nadruk 72 mm, materiał z czarnym znacznikiem 35–80 mm, rolka 51 mm, IP54 i upadek z 2 m.',
   shortDescription: 'Mobilna drukarka i koder RAIN UHF RFID. Druk do 72 mm, Wi-Fi 802.11ac, Bluetooth 4.1, bateria 3250 mAh i obudowa IP54.',
-  description: `Zebra ZQ511 RFID to mobilna drukarka termiczna z koderem RAIN UHF RFID. Przygotowuje nadruk i zapisuje dane w etykietach o szerokości druku do 72 mm.
+  description: `Zebra ZQ511 RFID to mobilna drukarka RFID UHF do etykiet o szerokości nadruku do 72 mm. Koduje znaczniki zgodne z EPC Gen 2 v2, ISO/IEC 18000-63 i RAIN RFID. Drukuje termicznie bezpośrednio, bez taśmy barwiącej.
 
-## Etykiety RFID przygotowane przy towarze
+## Materiał z czarnym znacznikiem 35–80 mm
 
-ZQ511 RFID służy do oznaczania produktów, pojemników, części i wyposażenia. Pracownik drukuje oraz koduje etykietę w miejscu jej naklejenia. Urządzenie waży około 630 g z baterią standardową. Wymiary wynoszą 150 × 120 × 62 mm.
+Wersja RFID wymaga etykiet RFID z czarnym znacznikiem i nie wykrywa przerw. Materiał ma 35–80 mm szerokości i 0,058–0,16 mm grubości. Rolka może mieć do 51 mm średnicy. Wkładki mogą występować co 16 mm, a wydruk może mieć do 990 mm długości.
 
-Koder obsługuje UHF EPC Gen2 v2, ISO/IEC 18000-63 i RAIN RFID. Adaptive Encoding ułatwia kalibrację materiału. Dla zgodnych etykiet minimalny odstęp kolejnych wkładek wynosi 16 mm. Przed wdrożeniem wydrukuj serię próbną na docelowym produkcie.
+## SGTIN-96 i polecenia ZPL RFID
 
-Powiąż identyfikator EPC z danymi w systemie magazynowym. Ustal format danych i sposób obsługi błędnego kodowania. Drukarka sprawdza etykietę w swoim torze materiałów. Do radiowej inwentaryzacji całej półki potrzebujesz osobnego czytnika UHF i oprogramowania.
+Kodowanie adaptacyjne upraszcza konfigurację RFID. Drukarka zapisuje dane w standardach SGTIN-96, DSGTIN+, GS1 TDS 2.0 i RAIN ISO CIN. Polecenia ZPL RFID są zgodne z innymi drukarkami RFID Zebra. Maksymalna prędkość wynosi 127 mm/s w trybie Draft.
 
-## PN ZQ51-BUW030E-00 dla EMEA
+## MIL-STD 810G, IP54 i bateria 3250 mAh
 
-Ta konfiguracja ma koder RFID, Wi-Fi 802.11ac, Bluetooth 4.1 Classic i BLE oraz standardową baterię PowerPrecision+. Ma czcionki angielskie i łacińskie. Jest przeznaczona dla regionu EMEA. Zasilacz do ładowania dobierz osobno.
+Drukarka spełnia wymagania MIL-STD 810G i wytrzymuje wielokrotne upadki z 2 m na beton. Opcjonalny [egzoszkielet](/produkt/zebra-egzoszkielet-zq511) podnosi tę wartość do 3 m i zwiększa szczelność do IP65. Bateria PowerPrecision+ ma 3250 mAh, a opcjonalna 6500 mAh. Masa z baterią standardową wynosi 0,63 kg. Zegar RTC mają tylko modele z WLAN.
 
-Wi-Fi obsługuje pasma 2,4 i 5 GHz oraz roaming 802.11r. Może pracować jednocześnie z Bluetooth. USB 2.0 OTG z gniazdem Micro-AB umożliwia połączenie przewodowe. NFC Print Touch ułatwia parowanie i nie służy do kodowania etykiet NFC.
-
-## Materiał z czarnym znacznikiem
-
-ZQ511 RFID wymaga czarnego znacznika na materiale. Nie wykrywa przerw między etykietami. Rolki RFID znajdziesz w dziale [etykiety RFID](/etykiety-rfid-zebra). Przed zamówieniem podaj nam szerokość etykiety, położenie znacznika i gilzę. Dobierzemy rolkę do ZQ511 RFID o średnicy do 51 mm.
-
-Szerokość materiału wynosi 35–80 mm, a maksymalna średnica rolki 51 mm. Rozdzielczość nadruku wynosi 203 dpi. Maksymalna prędkość 127 mm/s dotyczy włączonego Draft Mode. Kodowanie i kontrola wkładki mogą zmniejszyć wydajność zadania. Zmierz ją dla docelowej etykiety i formatu danych.
-
-Druk termiczny bezpośredni nie wymaga taśmy barwiącej. Oferowany PN jest przeznaczony do materiału z podkładem. Jeśli potrzebujesz szerszych etykiet RFID, porównaj [Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid), która drukuje do 104 mm.
-
-## Bateria i ochrona drukarki
-
-Bateria PowerPrecision+ ma nominalnie 3250 mAh i jest wymienna. Opcjonalna bateria rozszerzona ma 6500 mAh. Czas pracy zależy od nadruku, kodowania, połączeń i temperatury. Ekran LCD pokazuje stan baterii i łączności. Link-OS wspiera konfigurację i zarządzanie urządzeniem.
-
-Obudowa ma klasę IP54 i odporność na upadki z 2 m na beton. Drukarka pracuje w temperaturze od −20 do 55°C. Opcjonalny [egzoszkielet P1063406-043](/produkt/zebra-egzoszkielet-zq511) zwiększa ochronę do IP65 i odporność na upadki do 3 m. Etui i egzoszkielet dobierz do ZQ511; osłony szerszej ZQ521 mają inne numery PN.
-
-## Ładowanie i mocowanie
-
-Aby ładować baterię w drukarce z sieci, potrzebujesz [zasilacza EU P1031365-042](/produkt/zebra-zasilacz-ac-zq5-zq6). Wyjętą baterię możesz ładować w zgodnej ładowarce 1-, 3- lub 6-gniazdowej. Przewód USB służy do komunikacji i nie zastępuje zasilacza do ładowania.
-
-[Stacja P1063406-062](/produkt/zebra-stacja-pojazdowa-p1063406-062) mocuje i ładuje jedną drukarkę. Wymaga osobnego zasilacza. [Stacja P1063406-053](/produkt/zebra-stacja-4-drukarek-p1063406-053) ładuje cztery drukarki i obejmuje zasilacz z przewodem europejskim. Do pojazdu dobierz adapter zgodny z napięciem instalacji. P1031359 jest przeznaczony do 12 V.
-
-Jeśli potrzebujesz tylko nadruku bez kodowania UHF, wybierz [Zebra ZQ511](/produkt/zebra-zq511). Do szerszych materiałów i większej rolki porównaj [Zebra ZQ630 Plus RFID](/produkt/zebra-zq630-plus-rfid).
-
-## Gwarancja
-
-Gwarancja na drukarkę wynosi 24 miesiące, a na baterię 12 miesięcy. Ochrona głowicy w regionie EMEA wynosi 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
+Szersza [Zebra ZQ521 RFID](/produkt/zebra-zq521-rfid) drukuje do 104 mm i przyjmuje rolkę do 57 mm.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'], manufacturerId: 'zebra',
   images: ['/images/products/zq511-rfid-framed.webp'], imageDescriptions: ['Zebra ZQ511 RFID — mobilna drukarka z oznaczeniem UHF RFID, widok z przodu'],
   tags: ['magazyn', 'logistyka', 'outdoor', 'retail'], availability: 'unavailable', isNew: true, isBestseller: false,
@@ -75,11 +49,12 @@ Gwarancja na drukarkę wynosi 24 miesiące, a na baterię 12 miesięcy. Ochrona 
     { name: 'Rozdzielczość', value: '203 dpi' },
     { name: 'Szerokość druku', value: 'do 72 mm' },
     { name: 'Prędkość nadruku', value: 'do 127 mm/s z Draft Mode; kodowanie może zmniejszyć wydajność' },
-    { name: 'Materiał', value: 'Szerokość 35–80 mm; czarny znacznik; brak wykrywania przerw' },
+    { name: 'Materiał', value: 'Szerokość 35–80 mm; grubość 0,058–0,16 mm; czarny znacznik; brak wykrywania przerw' },
     { name: 'Średnica rolki', value: 'do 51 mm' },
+    { name: 'Długość wydruku', value: 'Do 990 mm' },
     { name: 'Odstęp wkładek RFID', value: 'Od 16 mm dla zgodnych etykiet po kalibracji' },
     { name: 'Łączność', value: 'Wi-Fi 802.11ac 2,4/5 GHz, Bluetooth 4.1 Classic i BLE' },
-    { name: 'USB', value: '2.0 OTG, gniazdo Micro-AB' },
+    { name: 'USB', value: 'USB 2.0 On-The-Go, 12 Mb/s; złącze micro-B' },
     { name: 'NFC', value: 'Print Touch do parowania; bez kodowania NFC' },
     { name: 'Bateria standardowa', value: 'PowerPrecision+ Li-Ion, nominalnie 3250 mAh; wymienna' },
     { name: 'Bateria opcjonalna', value: '6500 mAh' },
@@ -93,23 +68,20 @@ Gwarancja na drukarkę wynosi 24 miesiące, a na baterię 12 miesięcy. Ochrona 
     { name: 'Masa z baterią standardową', value: 'Około 0,63 kg' },
     { name: 'W zestawie', value: 'Drukarka z koderem RFID i bateria standardowa' },
     { name: 'Do kupienia osobno', value: 'Zasilacz lub ładowarka baterii, etykiety RFID i dodatkowe wyposażenie' },
-    { name: 'Gwarancja', value: 'Drukarka 24 miesiące; bateria 12 miesięcy; głowica EMEA 12 miesięcy lub milion cali druku' },
+    { name: 'Gwarancja', value: 'Drukarka 2 lata od daty wysyłki; bateria 1 rok; głowica 6 miesięcy' },
   ],
   variants: [{ partNumber: 'ZQ51-BUW030E-00', name: 'RFID — Wi-Fi, Bluetooth, bateria, EMEA', attributes: {}, availability: 'unavailable' }],
-  applications: ['Druk i kodowanie etykiet przy towarze', 'Oznaczanie kartonów i pojemników', 'Przygotowanie etykiet EPC do ewidencji magazynowej', 'Znakowanie części i wyposażenia w terenie'],
+  applications: ['Mobilne kodowanie etykiet UHF z czarnym znacznikiem', 'Etykiety RFID w usługach kurierskich i pocztowych'],
   compatibleAccessories: [], relatedAccessories: zq511RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZQ511 RFID różni się od zwykłej ZQ511?', answer: 'ZQ511 RFID ma koder UHF do zapisu danych w układzie etykiety. Wersja RFID wymaga materiału z czarnym znacznikiem i nie wykrywa przerw. Zwykła ZQ511 wykonuje nadruk bez kodowania UHF.' },
-    { question: 'Jaki PN obejmuje oferta?', answer: 'ZQ51-BUW030E-00: konfigurację EMEA z koderem RFID, Wi-Fi 802.11ac, Bluetooth 4.1, standardową baterią i czcionkami angielskimi oraz łacińskimi. Zasilacz dobierz osobno.' },
-    { question: 'Czy zwykła rolka etykiet z przerwą będzie działać?', answer: 'Nie dobieraj materiału wyłącznie według rozmiaru. ZQ511 RFID wymaga czarnego znacznika. Do kodowania potrzebna jest zgodna wkładka UHF RFID. Sprawdź materiał, położenie wkładki i kalibrację.' },
-    { question: 'Czy potrzebuję taśmy barwiącej?', answer: 'Nie. Drukarka wykonuje nadruk termiczny bezpośredni na materiale termoczułym. Do zapisu radiowego potrzebujesz etykiety z układem UHF RFID.' },
-    { question: 'Czy 127 mm/s dotyczy każdego zadania RFID?', answer: 'Nie. Jest to maksymalna prędkość nadruku przy włączonym Draft Mode. Kodowanie i sprawdzanie wkładki może zmniejszyć wydajność. Zmierz ją dla docelowej etykiety i formatu danych.' },
-    { question: 'Czy zasilacz jest w komplecie?', answer: 'Nie. Do ładowania baterii w drukarce dobierz np. P1031365-042 z przewodem EU. Wyjętą baterię można ładować w zgodnej ładowarce. Przewód USB nie zastępuje zasilacza do ładowania.' },
-    { question: 'Czy ZQ511 RFID odczyta całą półkę?', answer: 'Nie służy do takiej pracy. Koduje i sprawdza etykietę w torze materiałów. Do odczytu towarów na półce potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
+    { question: 'Czy ZQ511 RFID obsługuje etykiety z przerwą?', answer: 'Nie. Wersja RFID wymaga materiału z czarnym znacznikiem. Czujnik ma stałe, środkowe położenie.' },
+    { question: 'Jak ładować ZQ511 RFID?', answer: 'Zasilacz AC ładuje baterię w drukarce lub w stacji dokującej. Wyjętą baterię ładuje ładowarka 1- lub 3-gniazdowa. Zasilacza nie ma w PN ZQ51-BUW030E-00.' },
+    { question: 'Jakie złącze USB ma ZQ511 RFID?', answer: 'USB 2.0 On-The-Go ze złączem micro-B i opcjonalnym odprężaczem. Interfejs pracuje z prędkością 12 Mb/s.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZQ511 / ZQ521 RFID (PL)', type: 'datasheet', url: '/datasheets/zebra-zq511-zq521-rfid-karta-pl.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZQ511/ZQ521 RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zq511-zq521-rfid-spec-sheet-en-us.pdf', size: 'PDF' },
-    { name: 'Katalog akcesoriów do drukarek mobilnych Zebra (EN)', type: 'pdf', url: accessoryGuide, size: 'PDF' },
+    { name: 'Katalog akcesoriów do drukarek mobilnych Zebra (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/mobile-printer-guide-accessory-en-us.pdf', size: 'PDF' },
     { name: 'Sterowniki, instrukcje i wsparcie ZQ511', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/mobile/zq511.html', size: 'Online' },
   ],
   relatedProducts: ['zebra-zq511', 'zebra-zq521-rfid', 'zebra-zq630-plus-rfid'], createdAt: '2026-10-15',

@@ -46,25 +46,23 @@ export const zt421RfidProduct: Product = {
   id: 'zebra-zt421-rfid', slug: 'zebra-zt421-rfid',
   name: 'Zebra ZT421 RFID', seoH1: 'Zebra ZT421 RFID',
   seoTitle: 'Zebra ZT421 RFID — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Zebra ZT421 RFID: 6-calowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk do 168 mm z prędkością do 305 mm/s, Ethernet, Bluetooth, ekran 4,3 cala.',
+  seoDescription: 'Zebra ZT421 RFID – 6-calowa drukarka RFID UHF 203 lub 300 dpi. Nadruk do 168 mm z prędkością do 305 mm/s, materiał 51–178 mm, Bluetooth 4.1.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT421 RFID drukuje i koduje szerokie etykiety RAIN UHF. Druk do 168 mm, rozdzielczość 203 lub 300 dpi.',
-  description: `Zebra ZT421 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID o szerokości druku do 168 mm. Przygotowuje nadruk i zapisuje identyfikator w układzie elektronicznym etykiety.
+  description: `Zebra ZT421 RFID to 6-calowa przemysłowa drukarka RFID UHF o szerokości nadruku 168 mm. Wkładki zgodne z ISO/IEC 18000-63, RFID RAIN i EPC Gen 2 v2.1 mogą leżeć co 16 mm. Drukuje z prędkością do 305 mm/s, czyli 12 cali/s.
 
-Wybierz ten model, gdy etykieta wymaga większej powierzchni niż oferują drukarki z nadrukiem do 104 mm. ZT421 RFID służy do znakowania kartonów, palet, pojemników i wyrobów. Dane nadruku oraz identyfikator EPC mogą być powiązane z tym samym rekordem w systemie WMS lub ERP.
+## Szeroki materiał 51–178 mm
 
-Dostępne są dwie konfiguracje z fabrycznym koderem RFID dla regionu ROW oraz przewodami zasilającymi EU i UK. ZT42162-T0E00L0Z ma rozdzielczość 203 dpi, a ZT42163-T0E00L0Z — 300 dpi. Wersja 203 dpi drukuje z prędkością do 305 mm/s, a wersja 300 dpi do 254 mm/s. Wybierz 300 dpi do drobnego tekstu, niewielkich kodów 2D i szczegółowej grafiki. Rozdzielczość określa szczegółowość nadruku, a nie zasięg odczytu RFID.
+Przy odrywaniu i obcinaniu materiał ma 51–178 mm szerokości, a przy odklejaniu i nawijaniu 51–171 mm. Taśma do 450 m ma 51–174 mm szerokości. Maksymalna długość wydruku wynosi 2591 mm przy 203 dpi i 1143 mm przy 300 dpi. Rolka ma do 203 mm średnicy na gilzie 76 mm.
 
-Moduł RFID obsługuje etykiety zgodne z EPC UHF Gen2 v2.1, ISO/IEC 18000-63 i RAIN RFID. Adaptacyjne kodowanie ułatwia dobór położenia wkładki oraz kalibrację. Minimalny odstęp kolejnych wkładek wynosi 16 mm przy odpowiednio dobranym materiale. Przed wdrożeniem wydrukuj serię próbną wybranej etykiety na docelowym przedmiocie.
+## ZT42162-T0E00L0Z i ZT42163-T0E00L0Z
 
-Drukarka obsługuje druk termotransferowy z taśmą barwiącą oraz druk termiczny bezpośredni na etykietach termoczułych. W obu metodach kodowanie wymaga etykiety z wkładką RFID. Rolka może mieć średnicę do 203 mm na gilzie 76 mm. Taśma barwiąca ma długość do 450 m i szerokość 51–174 mm. Przy standardowym odrywaniu szerokość materiału wynosi 51–178 mm.
+Obie konfiguracje mają fabryczny koder RFID i odrywanie etykiet. Pierwsza ma głowicę 203 dpi, druga 300 dpi. Złącza obejmują Ethernet 10/100, RS-232, dwa porty USB Host, USB 2.0 i Bluetooth 4.1. Wi-Fi 6 z Bluetooth 5.3 dodaje się kartą w wolnym gnieździe.
 
-Oba warianty mają USB 2.0, dwa porty USB Host, RS-232, Ethernet 10/100 i Bluetooth 4.1. Wi-Fi nie jest wyposażeniem tych PN. Do połączenia bezprzewodowego możesz dobrać osobno zgodny moduł Wi-Fi 5 lub Wi-Fi 6. Kolorowy ekran dotykowy 4,3 cala służy do ustawień druku, materiałów i RFID. Link-OS oraz narzędzia Zebra DNA wspierają konfigurację i zarządzanie drukarką.
+## Ekran 4,3 cala i Print Touch
 
-Metalowa rama i składana pokrywa chronią mechanizm oraz ułatwiają wymianę szerokich rolek z boku urządzenia. Dodatkowe wyposażenie obejmuje obcinacz, odklejak i karty interfejsów. Obcinacz musi przecinać materiał między wkładkami RFID. Wewnętrzny nawijak pełnej rolki wymaga konfiguracji fabrycznej. Nie jest częścią pokazanych wariantów. Etykiety, taśma i dodatkowe moduły są sprzedawane osobno.
+Kolorowy ekran dotykowy 4,3 cala pozwala tworzyć skróty do często używanych ustawień, także RFID. Print Touch paruje drukarkę z urządzeniem NFC jednym dotknięciem. Printer Profile Manager Enterprise zarządza drukarkami Link-OS z jednego miejsca. Drukarka waży 18,14 kg.
 
-ZT421 RFID nie jest wersją ZT411 On-metal do grubych etykiet na metal. Do takiego materiału dobierz odpowiednią drukarkę oraz etykietę. Jeśli potrzebujesz wyłącznie nadruku bez kodowania radiowego, sprawdź [Zebra ZT421](/produkt/zebra-zt421).
-
-Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części zużywające się mają ochronę ograniczoną do 12 miesięcy. Głowica jest objęta ochroną przez 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
+[Zebra ZT620 RFID](/produkt/zebra-zt620-rfid) też drukuje do 168 mm, ale ma Gigabit Ethernet i 1 GB RAM.`,
   categoryId: 'drukarki-etykiet',
   subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
   manufacturerId: 'zebra',
@@ -98,27 +96,24 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     { name: 'Obsługa etykiet w oferowanych PN', value: 'Odrywanie; bez fabrycznego obcinacza i nawijaka' },
     { name: 'Region oferowanych PN', value: 'RFID ROW — poza USA, Kanadą i Japonią; przewody EU i UK' },
     { name: 'Pamięć', value: '256 MB SDRAM, 512 MB Flash' },
+    { name: 'System i języki', value: 'Link-OS; ZPL i ZPL II; EPL i EPL2 tylko w wersji 203 dpi; ZBI 2.0 opcjonalnie' },
     { name: 'Wymiary (gł. × szer. × wys.)', value: '495 × 336 × 324 mm' },
     { name: 'Masa', value: '18,14 kg' },
     { name: 'Zasilanie', value: '100–240 V AC, 50–60 Hz' },
-    { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
   ],
   variants: [
     { partNumber: 'ZT42162-T0E00L0Z', name: '203 dpi — RFID', attributes: { 'Rozdzielczość': '203 dpi' }, availability: 'unavailable' },
     { partNumber: 'ZT42163-T0E00L0Z', name: '300 dpi — RFID', attributes: { 'Rozdzielczość': '300 dpi' }, availability: 'unavailable' },
   ],
-  applications: ['Druk i kodowanie szerokich etykiet RFID na kartony i palety', 'Identyfikacja pojemników w obiegu magazynowym', 'Przygotowanie etykiet RFID powiązanych z danymi WMS lub ERP', 'Znakowanie wyrobów i opakowań zbiorczych na produkcji'],
+  applications: ['Szerokie etykiety RFID do 168 mm na przeładunku', 'Kodowanie etykiet UHF na palety i zasoby'],
   compatibleAccessories: [], relatedAccessories: zt421RfidAccessoryIds,
   faq: [
-    { question: 'Co odróżnia ZT421 RFID od standardowej ZT421?', answer: 'ZT421 RFID ma fabryczny moduł do zapisu i odczytu układu etykiety podczas drukowania. Zwykła ZT421 bez tego modułu wykonuje nadruk. Jeśli nie potrzebujesz identyfikacji radiowej, wybierz standardową ZT421.' },
-    { question: 'Kiedy wybrać ZT421 RFID zamiast ZT411 RFID?', answer: 'Wybierz ZT421 RFID, gdy potrzebujesz nadruku szerszego niż 104 mm. ZT421 RFID drukuje do 168 mm, a ZT411 RFID do 104 mm. W obu przypadkach dopasuj wkładkę RFID, format rolki i materiał do urządzenia oraz zastosowania.' },
-    { question: 'Które numery PN są dostępne na tej karcie?', answer: 'ZT42162-T0E00L0Z to wersja 203 dpi. ZT42163-T0E00L0Z ma 300 dpi. Obie konfiguracje obejmują fabryczne RFID ROW, przewody EU i UK, Ethernet, USB, RS-232, Bluetooth 4.1 i USB Host.' },
-    { question: 'Czy te warianty mają Wi-Fi?', answer: 'Nie. Oba PN mają Bluetooth 4.1 oraz połączenia przewodowe. Wi-Fi możesz dodać przez zgodny moduł Wi-Fi 5 P1083320-037C albo Wi-Fi 6 P1083320-037G. Moduły są sprzedawane osobno.' },
-    { question: 'Czy ZT421 RFID nadaje się do grubych etykiet na metal?', answer: 'Dostępne PN to standardowa ZT421 RFID, z materiałem o grubości do 0,25 mm. Nie jest to wersja On-metal. Do grubych etykiet przeznaczonych na metal sprawdź odpowiednią konfigurację ZT411 RFID On-metal.' },
-    { question: 'Czy drukarka odczyta towary na całej półce?', answer: 'Nie. Drukarka koduje i sprawdza etykietę w swoim torze materiałów. Do radiowej inwentaryzacji półki potrzebujesz czytnika UHF RFID oraz oprogramowania magazynowego.' },
-    { question: 'Czy etykiety i taśma są w zestawie?', answer: 'Nie. Dobierz je osobno do rozmiaru nadruku, wkładki RFID i powierzchni znakowanego przedmiotu. Druk termotransferowy wymaga taśmy barwiącej. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy.' },
+    { question: 'Jak długą etykietę wydrukuje ZT421 RFID?', answer: 'Do 2591 mm przy 203 dpi i do 1143 mm przy 300 dpi. Węższa ZT411 RFID w wersji 203 dpi drukuje do 3988 mm.' },
+    { question: 'Czy ZT421 RFID ma wersję do etykiet na metal?', answer: 'Nie. Opcja On-metal do materiału 1,5 mm dotyczy tylko ZT411 RFID. ZT421 RFID przyjmuje materiał 0,058–0,25 mm.' },
+    { question: 'Jakie gniazda rozszerzeń ma ZT421 RFID?', answer: 'Dwa wolne gniazda na karty łączności: Wi-Fi z Bluetooth, port równoległy, Ethernet lub interfejs aplikatora.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZT411 / ZT421 RFID (PL)', type: 'datasheet', url: '/datasheets/zebra-zt400-rfid-karta-pl.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZT400 RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt400-rfid-series-spec-sheet-en-us.pdf', size: 'PDF' },
     { name: 'Katalog akcesoriów do drukarek przemysłowych Zebra (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/print-head-guide-accessories-en-us.pdf', size: 'PDF' },
     { name: 'Sterowniki i instrukcje ZT421', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/industrial/zt421.html', size: 'Online' },

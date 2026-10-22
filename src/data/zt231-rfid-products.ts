@@ -5,45 +5,23 @@ import { zt231RfidAccessoryIds } from './zt231-rfid-accessories'
 export const zt231RfidProduct: Product = {
   id: 'zebra-zt231-rfid', slug: 'zebra-zt231-rfid', name: 'Zebra ZT231 RFID', seoH1: 'Zebra ZT231 RFID',
   seoTitle: 'Zebra ZT231 RFID — drukarka RFID UHF 203/300 dpi',
-  seoDescription: 'Zebra ZT231 RFID: przemysłowa drukarka i koder RAIN UHF 203 lub 300 dpi. Druk 104 mm do 305 mm/s, moduł RE40, ekran dotykowy 4,3 cala, Ethernet.',
+  seoDescription: 'Zebra ZT231 RFID – przemysłowa drukarka RFID UHF 203 lub 300 dpi z modułem RE40. Druk 104 mm do 305 mm/s, zegar RTC, Ethernet i Bluetooth LE.',
   shortDescription: 'Przemysłowa drukarka Zebra ZT231 RFID drukuje i koduje etykiety RAIN UHF. Warianty 203 i 300 dpi, druk do 104 mm i ekran dotykowy 4,3 cala.',
-  description: `Zebra ZT231 RFID to przemysłowa drukarka i koder etykiet RAIN UHF RFID. Drukuje tekst, grafikę i kody kreskowe oraz zapisuje dane w układzie elektronicznym etykiety. Służy do przygotowania oznaczeń produktów, opakowań i pojemników.
+  description: `Zebra ZT231 RFID to przemysłowa drukarka RFID UHF z modułem Zebra RE40, w metalowej ramie i obudowie. Obsługuje znaczniki RFID RAIN zgodne z ISO/IEC 18000-63 i EPC Gen 2 v2.1. Kreatory i automatyczna kalibracja materiału pozwalają zacząć pracę bez testów wstępnych.
 
-## Kodowanie RAIN UHF RFID
+## 203 dpi do 305 mm/s, 300 dpi do 203 mm/s
 
-Wbudowany moduł Zebra RE40 obsługuje etykiety zgodne z EPC UHF Gen2 v2.1 i ISO/IEC 18000-63. Adaptacyjne kodowanie dobiera ustawienia do zgodnej wkładki RFID. Kalibrację materiału i RFID wykonaj przed rozpoczęciem pracy oraz po zmianie typu etykiet.
+Wersja ZT23142-T0E00CFZ ma 203 dpi i drukuje do 304,8 mm/s, czyli 12 cali/s. Wersja ZT23143-T0E00CFZ ma 300 dpi i drukuje do 203,2 mm/s, czyli 8 cali/s. Szerokość nadruku wynosi 104 mm. Maksymalna długość wydruku to 3988 mm przy 203 dpi i 1854 mm przy 300 dpi.
 
-Minimalny format etykiety RFID zależy od jej wkładki, położenia anteny i konstrukcji materiału. Nadruk i zapis RFID to dwie osobne operacje. Przed wdrożeniem wydrukuj serię próbną i sprawdź odczyt na docelowym produkcie.
+## Minimalna długość etykiety 13, 18 lub 25 mm
 
-## Dwa warianty z fabrycznym RFID
+Etykieta z podkładem może mieć od 18 mm przy odrywaniu, od 25 mm przy obcinaniu i od 13 mm przy odklejaniu. Materiał ma 19,4–114 mm szerokości i 0,076–0,25 mm grubości. Rolka ma do 203 mm na gilzie 76 mm albo do 152 mm na gilzie 25 mm. Taśma do 450 m ma 40–110 mm szerokości.
 
-PN ZT23142-T0E00CFZ ma rozdzielczość 203 dpi. PN ZT23143-T0E00CFZ ma 300 dpi. Oba obejmują fabryczny moduł RFID w wersji Global, z wyłączeniem USA, Kanady i Japonii. Mają przewody zasilające EU i UK oraz tryb ręcznego odrywania etykiet.
+## BLE, RTC i opcje montowane u klienta
 
-Wybierz 203 dpi do większych oznaczeń logistycznych. Wersja 300 dpi pozwala drukować drobniejszy tekst oraz kody. Rozdzielczość określa szczegółowość nadruku, a nie zasięg odczytu RFID. Maksymalna prędkość nadruku wynosi 305 mm/s przy 203 dpi i 203 mm/s przy 300 dpi. Wydajność kodowania zależy od etykiety, danych i ustawień zadania.
+Standardowo drukarka ma USB 2.0, RS-232, Ethernet 10/100, USB Host, Bluetooth Low Energy i zegar RTC. Karta Wi-Fi 802.11ac, odklejak bez nawijaka i obcinacz są opcjami montowanymi u klienta. Odklejak z nawijakiem podkładu montuje się tylko fabrycznie. Do druku bez komputera służy klawiatura z wyświetlaczem ZKDU.
 
-## Materiały i obsługa drukarki
-
-Szerokość druku wynosi do 104 mm. Drukarka obsługuje rolki o średnicy do 203 mm na gilzie 76 mm. Do druku termotransferowego potrzebujesz taśmy barwiącej o długości do 450 m i szerokości 40–110 mm. Druk termiczny bezpośredni wymaga etykiet termoczułych i nie wymaga taśmy. W obu metodach kodowanie wymaga zgodnej wkładki RFID.
-
-Kolorowy ekran dotykowy 4,3 cala służy do ustawiania druku, materiału i RFID. Metalowa rama oraz składana pokrywa z oknem ułatwiają obsługę stanowiska. Etykiety i taśmę ładuje się z boku urządzenia.
-
-## Łączność i integracja
-
-Każdy pokazany PN ma USB 2.0, USB Host, RS-232, Ethernet 10/100 i Bluetooth Low Energy. Nie ma fabrycznego Wi-Fi. Opcjonalna karta P1083320-037C dodaje Wi-Fi 802.11ac. W ZT231 ta karta nie udostępnia Bluetooth 4.2.
-
-Drukarka korzysta z Link-OS oraz poleceń ZPL i ZPL II. Integracja z WMS lub ERP wymaga przygotowania danych do nadruku, identyfikatora EPC i obsługi błędów kodowania. Do odczytu towarów na regale potrzebujesz osobnego czytnika UHF RFID i oprogramowania.
-
-## Akcesoria i części zamienne
-
-Obcinacz, odklejak, karta Wi-Fi i interfejs aplikatora są sprzedawane osobno. Obcinacz musi ciąć między wkładkami RFID. Odklejak P1123335-042 nie zawiera nawijaka podkładu. Wersję z nawijakiem podkładu dobiera się jako konfigurację fabryczną; nie ma jej w pokazanych PN.
-
-Do wymiany głowicy w ZT231R dobierz P1123335-156 dla 203 dpi albo P1123335-157 dla 300 dpi. Przed zamówieniem głowicy podaj nam numer seryjny drukarki. Potwierdzimy zgodność z wersją RFID.
-
-Jeśli potrzebujesz standardowego nadruku, sprawdź [Zebra ZT231](/produkt/zebra-zt231). Do większych obciążeń i innych konfiguracji RFID sprawdź [Zebra ZT411 RFID](/produkt/zebra-zt411-rfid).
-
-## Gwarancja
-
-Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i części zużywających się wynosi 12 miesięcy. Dla głowicy obowiązuje 12 miesięcy lub milion cali druku, zależnie od tego, co nastąpi wcześniej.`,
+[Zebra ZT411 RFID](/produkt/zebra-zt411-rfid) drukuje szybciej, do 356 mm/s, i ma wersję do etykiet na metal.`,
   categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'zebra',
   images: ['/images/products/zt231_1_s.png', '/images/products/zt231_2_s.png', '/images/products/zt231_3_s.png'],
   imageDescriptions: ['Zebra ZT231 RFID — widok z lewej strony i ekran dotykowy', 'Zebra ZT231 RFID — widok z prawej strony z wysuniętą etykietą', 'Zebra ZT231 RFID — widok z przodu'],
@@ -61,9 +39,11 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i czę
     { name: 'Grubość mediów', value: '0,076–0,25 mm' },
     { name: 'Rolka etykiet', value: 'do 203 mm na gilzie 76 mm lub do 152 mm na gilzie 25 mm' },
     { name: 'Minimalny format RFID', value: 'Zależy od wkładki i materiału; wymaga sprawdzenia oraz kalibracji' },
+    { name: 'Minimalna długość etykiety', value: '18 mm (odrywanie), 25 mm (obcinanie), 13 mm (odklejanie)' },
     { name: 'Taśma barwiąca', value: 'do 450 m; szerokość 40–110 mm; gilza 25,4 mm' },
     { name: 'Ekran', value: 'Kolorowy, dotykowy, 4,3 cala' },
     { name: 'Interfejsy', value: 'USB 2.0, USB Host, RS-232, Ethernet 10/100, Bluetooth Low Energy' },
+    { name: 'Zegar RTC', value: 'Tak' },
     { name: 'Wi-Fi', value: 'Opcjonalne 802.11ac; pokazane PN nie mają fabrycznego Wi-Fi' },
     { name: 'Obsługa etykiet', value: 'Ręczne odrywanie; obcinacz i odklejak jako osobne akcesoria' },
     { name: 'Pamięć', value: '256 MB SDRAM i 256 MB Flash' },
@@ -73,25 +53,21 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Dla obcinacza i czę
     { name: 'Zasilanie', value: '100–240 V AC, 50–60 Hz' },
     { name: 'Temperatura pracy', value: '5–40°C przy druku termotransferowym; 0–40°C przy druku termicznym bezpośrednim' },
     { name: 'W zestawie', value: 'Drukarka wybranego wariantu z modułem RFID, przewody zasilające EU i UK' },
-    { name: 'Gwarancja EMEA', value: 'Drukarka: 24 miesiące; obcinacz i części zużywające się: 12 miesięcy; głowica: 12 miesięcy lub milion cali druku' },
   ],
   variants: [
     { partNumber: 'ZT23142-T0E00CFZ', name: '203 dpi — RFID', attributes: { 'Rozdzielczość': '203 dpi' }, availability: 'unavailable' },
     { partNumber: 'ZT23143-T0E00CFZ', name: '300 dpi — RFID', attributes: { 'Rozdzielczość': '300 dpi' }, availability: 'unavailable' },
   ],
   variantAttributeTooltips: { 'Rozdzielczość': 'Określa szczegółowość nadruku. Nie określa zasięgu RFID. Pozostałe wyposażenie obu pokazanych PN jest wspólne.' },
-  applications: ['Druk i kodowanie etykiet RFID na produkty oraz opakowania', 'Oznaczanie części i pojemników na produkcji', 'Przygotowanie etykiet RFID do przyjęć i wysyłek', 'Oznaczanie wyposażenia zgodnymi etykietami UHF'],
+  applications: ['Etykiety RFID wymagane przez sieci handlowe', 'Etykietowanie dawek jednostkowych z kodowaniem UHF'],
   compatibleAccessories: [], relatedAccessories: zt231RfidAccessoryIds,
   faq: [
-    { question: 'Czym ZT231 RFID różni się od zwykłej ZT231?', answer: 'ZT231 RFID ma fabryczny moduł RE40 do kodowania układu etykiety UHF. [Zwykła ZT231](/produkt/zebra-zt231) bez tego modułu wykonuje tylko nadruk.' },
-    { question: 'Które numery PN są dostępne?', answer: 'ZT23142-T0E00CFZ ma 203 dpi, a ZT23143-T0E00CFZ ma 300 dpi. Oba mają RFID Global poza USA, Kanadą i Japonią, przewody EU i UK oraz ręczne odrywanie etykiet.' },
-    { question: 'Czy te warianty mają Wi-Fi?', answer: 'Nie mają fabrycznego Wi-Fi. Każdy ma USB, USB Host, RS-232, Ethernet 10/100 i Bluetooth Low Energy. Karta P1083320-037C dodaje Wi-Fi 802.11ac; Bluetooth 4.2 tej karty nie jest dostępny w ZT231.' },
-    { question: 'Czy mogę zamontować zwykłą głowicę ZT231?', answer: 'Do wersji RFID dobierz głowicę P1123335-156 dla 203 dpi lub P1123335-157 dla 300 dpi. Przed wymianą podaj nam numer seryjny drukarki. Sprawdzimy rozdzielczość i generację urządzenia.' },
-    { question: 'Czy etykiety i taśma są w zestawie?', answer: 'Nie. Etykiety RFID, taśma barwiąca i akcesoria są sprzedawane osobno. Przy druku termicznym bezpośrednim taśma nie jest potrzebna. Etykieta musi mieć wkładkę RFID zgodną z drukarką.' },
-    { question: 'Czy drukarka odczyta produkty na regale?', answer: 'Nie. Drukarka koduje etykietę podczas jej przygotowania. Do odczytu produktów na regale potrzebujesz osobnego czytnika UHF RFID i oprogramowania.' },
-    { question: 'Czy odklejak ma nawijak podkładu?', answer: 'Odklejak P1123335-042 nie zawiera nawijaka podkładu. Wersję z nawijakiem dobiera się jako konfigurację fabryczną. Dostępne PN ZT23142-T0E00CFZ i ZT23143-T0E00CFZ jej nie mają.' },
+    { question: 'Jaka jest najkrótsza etykieta dla ZT231 RFID?', answer: '13 mm przy odklejaniu, 18 mm przy odrywaniu i 25 mm przy obcinaniu, łącznie z podkładem. Wymiary etykiety RFID zależą też od wkładki.' },
+    { question: 'Czy ZT231 RFID ma zegar czasu rzeczywistego?', answer: 'Tak, zegar RTC jest wyposażeniem standardowym. Drukarka ma też Bluetooth Low Energy, USB Host i Ethernet 10/100.' },
+    { question: 'Ile waży ZT231 RFID?', answer: '9,1 kg w wersji podstawowej i 10,9 kg z nawijakiem podkładu. Wymiary podstawowe to 432 × 241 × 279 mm.' },
   ],
   downloads: [
+    { name: 'Karta katalogowa Zebra ZT231 RFID (PL)', type: 'datasheet', url: '/datasheets/zebra-zt231-rfid-karta-pl.pdf', size: 'PDF' },
     { name: 'Karta katalogowa ZT231 RFID (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zt231-rfid-spec-sheet-en-us.pdf', size: 'PDF' },
     { name: 'Katalog akcesoriów do drukarek przemysłowych Zebra (EN)', type: 'pdf', url: 'https://www.zebra.com/content/dam/zebra_dam/en/guide/configuration-and-accessories/print-head-guide-accessories-en-us.pdf', size: 'PDF' },
     { name: 'Instrukcja ZT231 i ZT231R (EN)', type: 'manual', url: 'https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/zt231-ug-en.pdf', size: 'PDF' },
