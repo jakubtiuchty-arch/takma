@@ -3678,5 +3678,411 @@ export const sunmiAccessories: Product[] = [
     "downloads": [],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c02020008",
+    "slug": "sunmi-c02020008",
+    "name": "Ekran klienta SUNMI 10,1\"",
+    "seoTitle": "Ekran klienta SUNMI 10,1\" do T3 i T3 80 mm — C02020008",
+    "seoDescription": "Ekran klienta SUNMI 10,1\" HD z NFC do komputerów POS SUNMI T3 i T3 80 mm: dotykowy, 1280 × 800 px, montaż z tyłu. Drugi ekran SUNMI T3. PN C02020008.",
+    "shortDescription": "Ekran klienta SUNMI 10,1\" HD do komputerów POS SUNMI T3 i T3 80 mm — dotykowy, z NFC. Montuje się z tyłu komputera i pokazuje klientowi pozycje oraz kwotę.",
+    "description": "Ekran klienta SUNMI C02020008 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nWiększy ekran klienta 15,6\" to [C02020007](/produkt/sunmi-c02020007).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 828.25,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C02020008"
+      },
+      {
+        "name": "Typ",
+        "value": "Ekran klienta (drugi ekran) do komputera POS"
+      },
+      {
+        "name": "Przekątna i rozdzielczość",
+        "value": "10,1\", HD 1280 × 800 px"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy"
+      },
+      {
+        "name": "NFC",
+        "value": "Tak"
+      },
+      {
+        "name": "Złącza",
+        "value": "Złącze stykowe z blokadą, USB-C w uchwycie, micro USB"
+      },
+      {
+        "name": "Montaż",
+        "value": "Z tyłu komputera, na złączu stykowym w podstawie"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Ekran, przewód, skrócona instrukcja"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3, SUNMI T3 80 mm"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3",
+      "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Pokazywanie klientowi pozycji i kwoty do zapłaty",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c02020007",
+    "slug": "sunmi-c02020007",
+    "name": "Ekran klienta SUNMI 15,6\"",
+    "seoTitle": "Ekran klienta SUNMI 15,6\" do T3 i T3 80 mm — C02020007",
+    "seoDescription": "Ekran klienta SUNMI 15,6\" FHD z NFC do komputerów POS SUNMI T3 i T3 80 mm: dotykowy, 1920 × 1080 px, montaż z tyłu. Drugi ekran SUNMI T3. PN C02020007.",
+    "shortDescription": "Ekran klienta SUNMI 15,6\" FHD do komputerów POS SUNMI T3 i T3 80 mm — dotykowy, z NFC. Montuje się z tyłu komputera i pokazuje klientowi pozycje oraz kwotę.",
+    "description": "Ekran klienta SUNMI C02020007 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży, a także menu lub reklamy. Ekran 15,6\" ma rozdzielczość 1920 × 1080 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nMniejszy ekran klienta 10,1\" to [C02020008](/produkt/sunmi-c02020008).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "on-order",
+    "priceFrom": 1301.53,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C02020007"
+      },
+      {
+        "name": "Typ",
+        "value": "Ekran klienta (drugi ekran) do komputera POS"
+      },
+      {
+        "name": "Przekątna i rozdzielczość",
+        "value": "15,6\", FHD 1920 × 1080 px"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy"
+      },
+      {
+        "name": "NFC",
+        "value": "Tak"
+      },
+      {
+        "name": "Złącza",
+        "value": "Złącze stykowe z blokadą, USB-C w uchwycie, micro USB"
+      },
+      {
+        "name": "Montaż",
+        "value": "Z tyłu komputera, na złączu stykowym w podstawie"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Ekran, przewód, skrócona instrukcja"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3, SUNMI T3 80 mm"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3",
+      "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Pokazywanie klientowi pozycji i kwoty do zapłaty",
+      "Odczyt kart lojalnościowych przez NFC",
+      "Menu i reklamy przy ladzie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c06004004",
+    "slug": "sunmi-c06004004",
+    "name": "Szuflada kasowa SUNMI MAX",
+    "seoTitle": "Szuflada kasowa SUNMI MAX — C06004004",
+    "seoDescription": "Szuflada kasowa SUNMI MAX C06004004: 5 przegródek na banknoty, 10 na monety, przewód RJ12, sterowanie 9–24 V. Szuflada do komputera POS SUNMI T3. PN C06004004.",
+    "shortDescription": "Szuflada kasowa SUNMI MAX — 5 przegródek na banknoty, 4 stałe i 6 wyjmowanych przegródek na monety oraz szczelina na dokumenty. Otwiera się impulsem 9–24 V przez przewód RJ12.",
+    "description": "Szuflada kasowa SUNMI MAX C06004004 otwiera się do przodu impulsem z komputera POS lub drukarki paragonów. Przyjmuje napięcie sterujące od 9 do 24 V. Przewód RJ12 (6P4C) o długości 0,8 m jest w zestawie.\n\nWkład ma 5 przegródek na banknoty oraz 4 stałe i 6 wyjmowanych przegródek na monety. Szczelina z przodu przyjmuje czeki i potwierdzenia bez otwierania szuflady. Szuflada ma wymiary 430 × 457 × 88 mm, waży 5,8 kg i przenosi obciążenie do 10 kg. Producent podaje trwałość ponad 1 000 000 otwarć. Zamek ma trzy położenia: otwieranie przez program, otwieranie kluczem i blokada. Czujnik stanu pozwala programowi sprawdzić, czy szuflada jest otwarta. Obudowa jest z tworzywa ABS, a przewody chowa się w schowku z tyłu.\n\n## Zgodne komputery POS\n\n[SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) — port szuflady kasowej z tyłu podstawy.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos",
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C06004004.png",
+      "/images/products/C06004004-2.png",
+      "/images/products/C06004004-3.png"
+    ],
+    "imageDescriptions": [
+      "Szuflada kasowa SUNMI MAX — widok z przodu z lewej, z góry: zamek trzypozycyjny i szczelina na dokumenty",
+      "Szuflada kasowa SUNMI MAX — widok z przodu: logo SUNMI, szczelina na dokumenty i zamek",
+      "Szuflada kasowa SUNMI MAX otwarta — 5 przegródek na banknoty z klipsami i przegródki na monety"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 287.36,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C06004004"
+      },
+      {
+        "name": "Typ",
+        "value": "Szuflada kasowa otwierana do przodu"
+      },
+      {
+        "name": "Wkład",
+        "value": "5 przegródek na banknoty, 4 stałe i 6 wyjmowanych przegródek na monety, szczelina na dokumenty"
+      },
+      {
+        "name": "Złącze",
+        "value": "Przewód RJ12 (6P4C), 0,8 m, w zestawie"
+      },
+      {
+        "name": "Napięcie sterujące",
+        "value": "9–24 V DC, 1 A; impuls 100–300 ms"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "Nadprądowe 3 A, przed przepięciem i zbyt długim impulsem, ESD, wyłączenie termiczne"
+      },
+      {
+        "name": "Zamek",
+        "value": "Trzypozycyjny: otwieranie przez program, otwieranie kluczem, blokada"
+      },
+      {
+        "name": "Czujnik stanu",
+        "value": "Tak"
+      },
+      {
+        "name": "Klipsy banknotów",
+        "value": "Tworzywo i metal"
+      },
+      {
+        "name": "Wymiary",
+        "value": "430 × 457 × 88 mm (szer. × gł. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "5,8 kg"
+      },
+      {
+        "name": "Nośność",
+        "value": "10 kg"
+      },
+      {
+        "name": "Trwałość",
+        "value": "Ponad 1 000 000 otwarć"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Tworzywo ABS, schowek na przewody z tyłu"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–45°C, wilgotność 30–85%"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3, SUNMI T3 80 mm"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3",
+      "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Przechowywanie gotówki przy stanowisku kasowym",
+      "Otwieranie szuflady po zakończeniu sprzedaży"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-x09020039",
+    "slug": "sunmi-x09020039",
+    "name": "Zasilacz SUNMI 24 V / 2,5 A",
+    "seoTitle": "Zasilacz SUNMI 24 V / 2,5 A do T3 — X09020039",
+    "seoDescription": "Zasilacz SUNMI X09020039 24 V / 2,5 A do komputera POS SUNMI T3 i T3 80 mm. Zasilacz zapasowy SUNMI T3; przewód zasilający C13 kupuje się osobno.",
+    "shortDescription": "Zasilacz SUNMI 24 V / 2,5 A do komputerów POS SUNMI T3 i T3 80 mm. Przewód zasilający z wtykiem C13 nie wchodzi w skład zestawu.",
+    "description": "Zasilacz SUNMI X09020039 zasila komputery POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Ma napięcie wyjściowe 24 V i prąd 2,5 A. Takie same parametry wyjściowe ma zasilacz z zestawu komputera. Zasilacz służy jako część zapasowa lub do drugiego stanowiska.\n\nZasilacz ma gniazdo sieciowe na przewód z wtykiem C13. Przewód zasilający nie wchodzi w skład zestawu i kupuje się go osobno. Ten sam zasilacz pasuje także do innych urządzeń SUNMI z zasilaniem 24 V / 2,5 A, np. T2s i D3.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 101.44,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "X09020039"
+      },
+      {
+        "name": "Typ",
+        "value": "Zasilacz sieciowy"
+      },
+      {
+        "name": "Napięcie wyjściowe",
+        "value": "24 V DC"
+      },
+      {
+        "name": "Prąd wyjściowy",
+        "value": "2,5 A"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Z wtykiem C13, kupowany osobno"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3, SUNMI T3 80 mm"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3",
+      "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Zasilacz zapasowy do komputera POS",
+      "Zasilanie drugiego stanowiska kasowego"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c20000094",
+    "slug": "sunmi-c20000094",
+    "name": "Prowadnica papieru 58 mm do SUNMI T3 80 mm",
+    "seoTitle": "Prowadnica papieru 58 mm SUNMI T3 80 mm — C20000094",
+    "seoDescription": "Prowadnica papieru SUNMI C20000094 do komputera POS SUNMI T3 80 mm: druk na papierze 58 mm we wbudowanej drukarce 80 mm. Wkładka do rolki 58 mm. PN C20000094.",
+    "shortDescription": "Prowadnica papieru SUNMI do komputera POS SUNMI T3 80 mm. Po jej założeniu wbudowana drukarka 80 mm drukuje na papierze 58 mm.",
+    "description": "Prowadnica papieru SUNMI C20000094 pasuje do komputera POS [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Wbudowana drukarka tego komputera przyjmuje papier 80 mm. Po założeniu prowadnicy w komorze papieru drukarka drukuje na rolce 58 mm. Prowadnica pozwala korzystać z rolek 58 mm, jeśli stanowisko używa już takiego papieru.\n\nProwadnicę zakłada się po otwarciu pokrywy drukarki. Prowadnica nie wchodzi w skład zestawu T3 80 mm; w zestawie jest rolka papieru 80 mm. [SUNMI T3](/produkt/sunmi-t3) nie ma drukarki, dlatego prowadnica do niego nie pasuje.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 40.56,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C20000094"
+      },
+      {
+        "name": "Typ",
+        "value": "Prowadnica papieru 58 mm (Paper Roll Support)"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "58 mm"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3 80 mm"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Druk paragonów na papierze 58 mm w SUNMI T3 80 mm"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]
