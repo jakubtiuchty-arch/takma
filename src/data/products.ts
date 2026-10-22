@@ -874,7 +874,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Oryginalne akcesoria Zebra do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Baterie PowerPrecision+, stacje dokujące 1/5-slot, ładowarki, etui ochronne, uchwyty pistoletowe, kable i zasilacze. Ceny netto B2B.',
     longDescription: 'Kompletna oferta oryginalnych akcesoriów Zebra do terminali mobilnych serii MC i TC. Baterie PowerPrecision+ z diagnostyką i warm swap (3500–7000 mAh). Stacje dokujące ShareCradle 1-slot i 5-slot z opcjonalnym Ethernet. Ładowarki baterii 4-slot i 20-slot do zarządzania zapasowymi akumulatorami. Etui ochronne rubber boot, uchwyty pistoletowe trigger handle, kabury z klipsem, paski na rękę i smycze. Zasilacze sieciowe 50W/108W i kable zasilające. Wszystkie akcesoria z gwarancją producenta i pełną kompatybilnością.',
     icon: 'package',
-    productIds: [...sunmiAccessories.map(p => p.id), ...cipherlabAccessories.map(p => p.id),
+    productIds: [...sunmiAccessories.filter(p => p.subcategoryIds?.includes('akcesoria-do-terminali')).map(p => p.id), ...cipherlabAccessories.map(p => p.id),
       'zebra-mc33-battery-7000', 'zebra-mc2x-battery-3500', 'zebra-mc2x-battery-4900',
       'zebra-battery-tc2-standard', 'zebra-battery-tc2-ble', 'zebra-battery-tc2-extended',
       'zebra-tc53-battery-4680', 'zebra-tc53-battery-7000', 'zebra-tc53-battery-4680-ble',

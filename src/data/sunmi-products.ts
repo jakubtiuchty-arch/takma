@@ -1092,7 +1092,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT220 58 mm, Bluetooth",
     "seoDescription": "Drukarka paragonów SUNMI NT220 i drukarka etykiet SUNMI w jednym: papier 30–58 mm, etykiety do 150 mm, USB-C, Bluetooth BLE. NT220 SUNMI, PN: C04060001.",
     "shortDescription": "SUNMI NT220 — termiczna drukarka etykiet i paragonów niefiskalnych na papier 58 mm. Łączy się przez USB-C i Bluetooth BLE 5.0, drukuje do 150 mm/s w 203 dpi.",
-    "description": "SUNMI NT220 drukuje na rolce paragony niefiskalne, bony z zamówieniami i etykiety na produkty. Pracuje przy ladzie kawiarni, punktu z napojami i sklepu oraz przy wydawaniu zamówień na wynos. Wydruk przyjmuje z komputera, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Etykiety i paragony w jednej drukarce\n\nTryb etykiet albo paragonów zmienia się przyciskiem. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w języku TSPL. Papier może mieć szerokość 30–58 mm, a wbudowana regulowana prowadnica ustala położenie rolki. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Maksymalna średnica rolki wynosi 80 mm. Czujnik przerwy wykrywa odstęp między etykietami.\n\n## Złącza, druk i zasilanie\n\nDrukarka ma USB-C i Bluetooth BLE 5.0, bez Ethernetu i Wi-Fi. Port RJ12 (24 V / 1 A) steruje szufladą kasową. Głowica drukuje w rozdzielczości 203 dpi, do 150 mm/s, także kody 1D i QR. Drukarka zasila się przez złącze USB-C (5 V / 2 A DC). Zasilacza nie ma w zestawie. Masa wynosi 510 g. NT220 jest urządzeniem niefiskalnym i nie zastępuje kasy ani drukarki fiskalnej.\n\nSzybszy druk paragonów 58 mm, do 250 mm/s, z gilotyną ma [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), ale nie drukuje etykiet.",
+    "description": "SUNMI NT220 drukuje na rolce paragony niefiskalne, bony z zamówieniami i etykiety na produkty. Pracuje przy ladzie kawiarni, punktu z napojami i sklepu oraz przy wydawaniu zamówień na wynos. Wydruk przyjmuje z komputera, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Etykiety i paragony w jednej drukarce\n\nTryb etykiet albo paragonów zmienia się przyciskiem. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w języku TSPL. Papier może mieć szerokość 30–58 mm, a wbudowana regulowana prowadnica ustala położenie rolki. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Maksymalna średnica rolki wynosi 80 mm. Czujnik przerwy wykrywa odstęp między etykietami.\n\n## Złącza, druk i zasilanie\n\nDrukarka ma USB-C i Bluetooth BLE 5.0, bez Ethernetu i Wi-Fi. Port RJ12 (24 V / 1 A) steruje szufladą kasową. Do portu pasuje szuflada kasowa [SUNMI Mini C06000022](/produkt/sunmi-c06000022) z przewodem w zestawie. Głowica drukuje w rozdzielczości 203 dpi, do 150 mm/s, także kody 1D i QR. Drukarka zasila się przez złącze USB-C (5 V / 2 A DC). Zasilacza nie ma w zestawie. Masa wynosi 510 g. NT220 jest urządzeniem niefiskalnym i nie zastępuje kasy ani drukarki fiskalnej.\n\nSzybszy druk paragonów 58 mm, do 250 mm/s, z gilotyną ma [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), ale nie drukuje etykiet.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1240,7 +1240,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c06000022"
+    ],
     "relatedProducts": [
       "bixolon-srp-q200",
       "epson-tm-l90",
@@ -2763,6 +2765,106 @@ export const sunmiAccessories: Product[] = [
       "Bateria zapasowa do pracy przy kliencie"
     ],
     "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c06000022",
+    "slug": "sunmi-c06000022",
+    "name": "Szuflada kasowa SUNMI Mini",
+    "seoTitle": "Szuflada kasowa SUNMI Mini — C06000022",
+    "seoDescription": "Szuflada kasowa SUNMI Mini C06000022: 4 przegródki na banknoty, 3 na monety, złącze RJ11, sterowanie 9–24 V. Szuflada SUNMI do drukarki NT220. PN C06000022.",
+    "shortDescription": "Szuflada kasowa SUNMI Mini — otwierana do przodu, 4 przegródki na banknoty i 3 na monety. Otwiera się impulsem z drukarki lub kasy 9 V, 12 V albo 24 V.",
+    "description": "Szuflada kasowa SUNMI Mini C06000022 otwiera się do przodu impulsem z drukarki paragonów lub kasy. Przyjmuje napięcie sterujące 9 V, 12 V lub 24 V. Złącze RJ11 łączy się z drukarką przewodem RJ11/RJ12, który jest w zestawie.\n\nWkład ma 4 przegródki na banknoty, 3 przegródki na monety i szczelinę na paragony. Szuflada ma wymiary 317 × 332 × 72 mm (szer. × gł. × wys.), przenosi obciążenie do 10 kg i wytrzymuje ponad 1 000 000 otwarć. Zamek ma trzy położenia. W górnej części jest schowek na przewody, a panel przedni jest wykonany z tworzywa ABS.\n\n## Zgodna drukarka\n\n[SUNMI NT220](/produkt/sunmi-nt220) — port szuflady RJ12, 24 V / 1 A.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C06000022.png"
+    ],
+    "imageDescriptions": [
+      "Szuflada kasowa SUNMI Mini — widok z przodu: zamek trzypozycyjny, logo SUNMI i pomarańczowa listwa"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "on-order",
+    "priceFrom": 288.04,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C06000022"
+      },
+      {
+        "name": "Typ",
+        "value": "Szuflada kasowa otwierana do przodu"
+      },
+      {
+        "name": "Wkład",
+        "value": "4 przegródki na banknoty, 3 przegródki na monety, szczelina na paragony"
+      },
+      {
+        "name": "Złącze",
+        "value": "RJ11; przewód RJ11/RJ12 w zestawie"
+      },
+      {
+        "name": "Napięcie sterujące",
+        "value": "9 V, 12 V lub 24 V"
+      },
+      {
+        "name": "Zamek",
+        "value": "Trzypozycyjny"
+      },
+      {
+        "name": "Wymiary",
+        "value": "317 × 332 × 72 mm (szer. × gł. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "2,3 kg"
+      },
+      {
+        "name": "Nośność",
+        "value": "10 kg"
+      },
+      {
+        "name": "Trwałość",
+        "value": "Ponad 1 000 000 otwarć"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Panel przedni ABS, schowek na przewody w górnej części"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI NT220"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-nt220"
+    ],
+    "applications": [
+      "Przechowywanie gotówki przy stanowisku kasowym",
+      "Otwieranie szuflady po wydruku paragonu"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI Mini Cash Drawer (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-c06000022.pdf",
+        "size": "1,6 MB"
+      }
+    ],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
   }
