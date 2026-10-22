@@ -24,12 +24,12 @@ export const citizenPosProducts: Product[] = [
       "/images/products/CTE301XXEBX-6.png"
     ],
     "imageDescriptions": [
-      "Citizen CT-E301 w czarnej obudowie — widok z przodu z lewej strony, z góry: wylot papieru i przyciski",
+      "Citizen CT-E301 w czarnej obudowie — widok z przodu pod kątem, z góry: wylot papieru i przyciski",
       "Citizen CT-E301 — paragon w wylocie papieru u góry obudowy",
       "Citizen CT-E301 — widok z przodu, z góry",
       "Citizen CT-E301 w wersji z USB — widok z tyłu: USB, złącze szuflady kasowej i gniazdo zasilania",
       "Citizen CT-E301 w białej obudowie, w wersji z USB, RS-232 i Ethernetem — widok z tyłu: USB, złącze szuflady kasowej, gniazdo zasilania, Ethernet i RS-232",
-      "Citizen CT-E301 w białej obudowie — widok z przodu z lewej strony, z góry"
+      "Citizen CT-E301 w białej obudowie — widok z przodu pod kątem, z góry"
     ],
     "tags": [
       "retail"
@@ -261,12 +261,12 @@ export const citizenPosProducts: Product[] = [
       "/images/products/CTE351XXEBX-6.png"
     ],
     "imageDescriptions": [
-      "Citizen CT-E351 w czarnej obudowie — widok z przodu z lewej strony, wylot papieru i przyciski POWER i FEED",
-      "Citizen CT-E351 — paragon w wylocie papieru, widok z przodu z prawej strony",
+      "Citizen CT-E351 w czarnej obudowie — widok z przodu pod kątem, wylot papieru i przyciski POWER i FEED",
+      "Citizen CT-E351 — paragon w wylocie papieru, widok z przodu pod kątem",
       "Citizen CT-E351 — widok z przodu: wylot papieru i logo Citizen",
       "Citizen CT-E351 w wersji z Ethernetem — widok z tyłu: gniazdo zasilania, złącze szuflady kasowej, USB i Ethernet",
       "Citizen CT-E351 — otwarta pokrywa komory papieru z rolką papieru",
-      "Citizen CT-E351 w białej obudowie — widok z przodu z lewej strony"
+      "Citizen CT-E351 w białej obudowie — widok z przodu pod kątem"
     ],
     "tags": [
       "retail"
@@ -472,6 +472,225 @@ export const citizenPosProducts: Product[] = [
       {
         "question": "Co jest w zestawie z CT-E351?",
         "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewód USB, RS-232 lub Ethernet zamawia się osobno."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-s310ii",
+    "slug": "citizen-ct-s310ii",
+    "name": "Citizen CT-S310II",
+    "seoH1": "Citizen CT-S310II",
+    "seoTitle": "Drukarka paragonów Citizen CT-S310II 80 mm, USB, RS-232, LAN",
+    "seoDescription": "Drukarka paragonów Citizen CT-S310II na papier 58 lub 80 mm, z wbudowanym zasilaczem. Drukarka POS Citizen CT-S310II. PN: CTS310IIEBK, CTS310IIXEEBX, CTS310IIEPW.",
+    "shortDescription": "Citizen CT-S310II — termiczna drukarka paragonów niefiskalnych na papier 58 lub 80 mm, z wyjściem papieru u góry i wbudowanym zasilaczem. Drukuje do 160 mm/s i ma USB oraz RS-232 albo Ethernet.",
+    "description": "Drukarka Citizen CT-S310II drukuje paragony niefiskalne w handlu, w gastronomii i w kuchni. Drukuje też bilety. Obudowa ma 140 × 195 × 132 mm i waży 1,9 kg. Zasilacz jest wbudowany w obudowę, dlatego na stanowisku nie ma osobnego zasilacza.\n\n## Papier 58 lub 80 mm i wyjście u góry\n\nParagon wychodzi u góry obudowy. Drukarka drukuje do 160 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Przyjmuje papier o szerokości 58 lub 80 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Funkcja Long Life Print (LLP) może wydłużyć trwałość głowicy do 200 km lub więcej. Drukarka ma 3 tryby oszczędzania papieru i spełnia wymagania ENERGY STAR.\n\n## USB z RS-232 albo z Ethernetem\n\nWersje CTS310IIEBK i CTS310IIEPW mają USB i RS-232, a wersja CTS310IIXEEBX ma USB i Ethernet. Każda wersja ma złącze szuflady kasowej i przyjmuje polecenia ESC/POS. W zestawie jest uchwyt do montażu na ścianie. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nSzybszy druk, do 250 mm/s, i wyjście papieru z przodu ma [Citizen CT-E351](/produkt/citizen-ct-e351).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 593.42,
+    "availability": "available",
+    "images": [
+      "/images/products/CTS310IIEBK.png",
+      "/images/products/CTS310IIEBK-2.png",
+      "/images/products/CTS310IIEBK-3.png",
+      "/images/products/CTS310IIEBK-4.png",
+      "/images/products/CTS310IIEBK-5.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-S310II w białej obudowie — widok z przodu pod kątem: pokrywa papieru, przycisk FEED i diody POWER i ERROR",
+      "Citizen CT-S310II w czarnej obudowie — widok z przodu: przycisk FEED, diody POWER i ERROR",
+      "Citizen CT-S310II w białej obudowie — widok z przodu",
+      "Citizen CT-S310II w wersji z USB i RS-232 — złącza z tyłu: gniazdo zasilania, złącze szuflady kasowej, RS-232 i USB",
+      "Citizen CT-S310II w białej obudowie — otwarta pokrywa komory papieru"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTS310IIEBK, CTS310IIXEEBX, CTS310IIEPW"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 160 mm/s"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 72 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "58 lub 80 mm"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "65–75 µm (gilza 12 mm) lub 75–85 µm (gilza 25,4 mm)"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "U góry"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 1.1 + RS-232 albo USB + Ethernet — zależnie od PN"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "192 KB na znaki, 384 KB na grafikę"
+      },
+      {
+        "name": "Funkcje",
+        "value": "Long Life Print (LLP), 3 tryby oszczędzania papieru, tryby druku, uśpienia i czuwania, wbudowany brzęczyk"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 47–63 Hz, zasilacz wbudowany"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "140 × 195 × 132 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,9 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna lub biała"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, TÜV, UL, C-UL, FCC klasa A, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, przewód zasilający, osłona włącznika, przewód USB (wersje z RS-232), skrócona instrukcja, 4 gumowe nóżki, przegroda papieru, zestaw do montażu na ścianie"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata, w tym głowica i gilotyna"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne w handlu i gastronomii",
+      "Bony w kuchni",
+      "Bilety"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTS310IIEBK",
+        "name": "CT-S310II — USB, RS-232, czarna",
+        "attributes": {
+          "Port dodatkowy": "RS-232",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 593.42,
+        "availability": "available"
+      },
+      {
+        "partNumber": "CTS310IIXEEBX",
+        "name": "CT-S310II — USB, Ethernet, czarna",
+        "attributes": {
+          "Port dodatkowy": "Ethernet",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 659.63,
+        "availability": "available"
+      },
+      {
+        "partNumber": "CTS310IIEPW",
+        "name": "CT-S310II — USB, RS-232, biała",
+        "attributes": {
+          "Port dodatkowy": "RS-232",
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 593.42,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Port dodatkowy": "Drugi port danych obok USB. W CT-S310II wybiera się go przy zakupie, bo drukarka nie ma gniazda na kartę interfejsu.\n\n• RS-232 — port szeregowy; w zestawie jest przewód USB.\n\n• Ethernet — połączenie z przewodową siecią lokalną (LAN).",
+      "Kolor obudowy": "Kolor obudowy CT-S310II.\n\n• Czarna — z RS-232 albo z Ethernetem.\n\n• Biała (pure white) — z RS-232."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e351",
+      "citizen-ct-e301",
+      "epson-tm-t20iv",
+      "bixolon-srp-330iii"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-S310II (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-s310ii.pdf",
+        "size": "302 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-S310II",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-S310II",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-S310II jest drukarką fiskalną?",
+        "answer": "Nie. CT-S310II drukuje paragony niefiskalne, bony i bilety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Którą wersję CT-S310II wybrać?",
+        "answer": "CTS310IIEBK (czarna) i CTS310IIEPW (biała) mają USB i RS-232, a w zestawie przewód USB. CTS310IIXEEBX (czarna) ma USB i Ethernet. CT-S310II nie ma gniazda na kartę interfejsu, dlatego port wybiera się przy zakupie."
+      },
+      {
+        "question": "Czy CT-S310II można zamontować na ścianie?",
+        "answer": "Tak. Zestaw do montażu na ścianie jest dołączony do drukarki."
+      },
+      {
+        "question": "Jaki papier przyjmuje Citizen CT-S310II?",
+        "answer": "Papier termiczny o szerokości 58 lub 80 mm, w rolce o średnicy do 83 mm. Papier 65–75 µm nawija się na gilzę 12 mm, a papier 75–85 µm na gilzę 25,4 mm. Do papieru 58 mm służy przegroda z zestawu."
+      },
+      {
+        "question": "Czy CT-S310II wymaga zasilacza zewnętrznego?",
+        "answer": "Nie. Zasilacz 100–240 V jest wbudowany w obudowę. W zestawie jest przewód zasilający."
       }
     ],
     "createdAt": "2026-10-23",
