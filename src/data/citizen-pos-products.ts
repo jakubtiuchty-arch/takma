@@ -1894,6 +1894,201 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-s601iir",
+    "slug": "citizen-ct-s601iir",
+    "name": "Citizen CT-S601IIR",
+    "seoH1": "Citizen CT-S601IIR",
+    "seoTitle": "Drukarka etykiet bez podkładu Citizen CT-S601IIR, liner-free",
+    "seoDescription": "Drukarka etykiet liner-free Citizen CT-S601IIR: etykiety bez podkładu MAXStick i Nakagawa 80/83 mm, 175 mm/s. Drukarka POS Citizen CT-S601IIR. PN: CTS601IIS3NEBXRX.",
+    "shortDescription": "Citizen CT-S601IIR — termiczna drukarka etykiet samoprzylepnych bez podkładu (liner-free) na materiał 80/83 mm, z cięciem częściowym. Interfejs dodaje karta kupowana osobno.",
+    "description": "Drukarka Citizen CT-S601IIR drukuje etykiety samoprzylepne bez podkładu (liner-free, Re-stick). Etykietę przykleja się od razu na opakowanie, bez odpadu z podkładu, a w razie potrzeby można ją odkleić i przykleić ponownie. Drukarka pracuje w gastronomii, w handlu, w aptece i przy biletach. To wersja drukarki CT-S601II.\n\n## Etykiety liner-free 80/83 mm\n\nDrukarka przyjmuje materiał MAXStick (Premium, 2GO i X2) oraz etykiety bez podkładu Nakagawa. Materiał ma szerokość 3 cali (80/83 mm) i grubość 65–90 µm, a rolka średnicę do 83 mm. Długość wydruku dopasowuje się do treści. Gilotyna wykonuje cięcie częściowe. Drukarka drukuje do 175 mm/s w rozdzielczości 203 dpi. Zasilacz jest wbudowany w obudowę.\n\n## Interfejs na karcie\n\nDrukarka nie ma interfejsu w standardzie. Interfejs dodaje karta wkładana w gniazdo drukarki: USB, RS-232, port równoległy, Ethernet albo Wi-Fi.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Karta interfejsu USB Citizen (TZ66803-0)](/produkt/citizen-pos-usb-tz66803-0)\n\nZamiast karty USB można wybrać inną zgodną kartę, np. [RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0) albo [Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s).\n\nEtykiety bez podkładu na materiale 40, 58 i 80 mm drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 1160.25,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/CTS601IIS3NEBXRX.png",
+      "/images/products/CTS601IIS3NEBXRX-2.png",
+      "/images/products/CTS601IIS3NEBXRX-3.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-S601IIR — etykieta bez podkładu w wylocie u góry, widok z przodu pod kątem",
+      "Citizen CT-S601IIR — widok z przodu: oznaczenie Re-stick Liner-free i włącznik",
+      "Citizen CT-S601IIR — otwarta pokrywa komory z rolką materiału"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTS601IIS3NEBXRX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 175 mm/s"
+      },
+      {
+        "name": "Rodzaj materiału",
+        "value": "Etykiety samoprzylepne bez podkładu (liner-free): MAXStick Premium, 2GO i X2, Nakagawa"
+      },
+      {
+        "name": "Szerokość materiału",
+        "value": "3 cale (80/83 mm)"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość materiału",
+        "value": "65–90 µm"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "U góry"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Koniec papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "Brak w standardzie; gniazdo karty interfejsu"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "USB, USB 2.0, RS-232, równoległy (IEEE 1284), Powered USB, Ethernet, Ethernet z USB host, Ethernet (SEH), Wi-Fi compact, Wi-Fi premium, Bluetooth (Apple MFi)"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "Przycisk FEED, 3 diody LED; wbudowany brzęczyk"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50–60 Hz, zasilacz wbudowany"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "75 km, 100 mln impulsów"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "145 × 192 × 148 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "2 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, UL, TÜV, C-UL, FCC klasa A, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, przewód zasilający, osłona włącznika, osłona interfejsu, skrócona instrukcja; karta interfejsu do zamówienia osobno"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata"
+      }
+    ],
+    "applications": [
+      "Etykiety zamówień na wynos i w dostawie w gastronomii",
+      "Etykiety w handlu i w aptece",
+      "Bilety i etykiety samoprzylepne bez odpadu z podkładu"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTS601IIS3NEBXRX",
+        "name": "CT-S601IIR — liner-free, bez interfejsu, wbudowany zasilacz, czarna",
+        "attributes": {},
+        "priceFrom": 1160.25,
+        "availability": "unavailable"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-usb-tz66803-0",
+      "citizen-pos-rs232-tz66801-0",
+      "citizen-pos-wifi-ppz60108s",
+      "citizen-parallel-cl-s400dt",
+      "citizen-pos-powered-usb-1100092",
+      "citizen-pos-uchwyt-scienny-wallmountkit"
+    ],
+    "relatedProducts": [
+      "bixolon-srp-s300ii",
+      "epson-tm-l100",
+      "sunmi-nt320",
+      "citizen-ct-e651l"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-S601IIR (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-s601iir.pdf",
+        "size": "255 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-S601IIR",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-S601IIR",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Jakie etykiety przyjmuje Citizen CT-S601IIR?",
+        "answer": "Etykiety samoprzylepne bez podkładu MAXStick (Premium, 2GO i X2) oraz Nakagawa. Materiał ma szerokość 80/83 mm i grubość 65–90 µm, a rolka średnicę do 83 mm. Najkrótszy wydruk na etykiecie bez podkładu ma 40 mm."
+      },
+      {
+        "question": "Czy CT-S601IIR działa bez dodatkowej karty?",
+        "answer": "Nie. Drukarka nie ma interfejsu w standardzie. Do połączenia z komputerem potrzebna jest karta interfejsu, np. [karta USB TZ66803-0](/produkt/citizen-pos-usb-tz66803-0), [RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0) albo [Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s)."
+      },
+      {
+        "question": "Jak odbierać etykiety z CT-S601IIR?",
+        "answer": "Etykiety drukuje się pojedynczo i każdą zabiera się z wylotu przed wydrukiem następnej. Etykiety pozostawione w wylocie mogą spowodować zacięcie materiału."
+      },
+      {
+        "question": "Czy Citizen CT-S601IIR jest drukarką fiskalną?",
+        "answer": "Nie. CT-S601IIR drukuje etykiety bez podkładu wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
