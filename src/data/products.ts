@@ -86202,7 +86202,7 @@ const citizenPrinterAccessories: Product[] = [
     slug: 'citizen-parallel-cl-s400dt',
     name: 'Moduł Parallel IEEE 1284 Citizen CL-S400DT',
     shortDescription: 'Interfejs Parallel (LPT) Citizen TZ66802-0 — IEEE 1284 do drukarki CL-S400DT',
-    description: 'Moduł interfejsu równoległego (Parallel / LPT) Citizen TZ66802-0, IEEE 1284. Kompatybilny z drukarką Citizen [CL-S400DT](/produkt/citizen-cl-s400dt). Do komputerów z portem Centronics/LPT (systemy legacy, starsze maszyny przemysłowe, systemy POS).',
+    description: 'Moduł interfejsu równoległego (Parallel / LPT) Citizen TZ66802-0, IEEE 1284. Kompatybilny z drukarką Citizen [CL-S400DT](/produkt/citizen-cl-s400dt). Do komputerów z portem Centronics/LPT (systemy legacy, starsze maszyny przemysłowe, systemy POS).\n\nModuł pasuje też do drukarek paragonów Citizen [CT-S851III](/produkt/citizen-ct-s851iii) w wersji z gniazdem karty i [CT-S601IIR](/produkt/citizen-ct-s601iir).',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'citizen',
@@ -86219,9 +86219,11 @@ const citizenPrinterAccessories: Product[] = [
     specifications: [
       { name: 'Part Number', value: 'TZ66802-0' },
       { name: 'Typ', value: 'Parallel IEEE 1284 / Centronics' },
-      { name: 'Kompatybilność', value: 'Citizen CL-S400DT' },
+      { name: 'Kompatybilność', value: 'Citizen CL-S400DT, CT-S851III, CT-S601IIR' },
     ],
+    relatedProducts: ['citizen-cl-s400dt', 'citizen-ct-s851iii', 'citizen-ct-s601iir'],
     createdAt: '2026-03-22',
+    updatedAt: '2026-10-23',
   },
 
   // ===== Akcesoria Citizen CL-E720 =====

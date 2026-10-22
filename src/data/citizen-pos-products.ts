@@ -2332,4 +2332,1029 @@ export const citizenPosProducts: Product[] = [
   }
 ]
 
-export const citizenPosAccessories: Product[] = []
+export const citizenPosAccessories: Product[] = [
+  {
+    "id": "citizen-pos-lan-usb-host-ppz60104s",
+    "slug": "citizen-pos-lan-usb-host-ppz60104s",
+    "name": "Karta Ethernet z USB host Citizen PPZ60104S",
+    "seoTitle": "Karta Ethernet z USB host Citizen PPZ60104S",
+    "seoDescription": "Karta Ethernet z funkcją USB host Citizen PPZ60104S do drukarek paragonów Citizen CT-E601, CT-E651, CT-E651L, CT-S751 i CT-S4500. Montaż w gnieździe karty.",
+    "shortDescription": "Citizen PPZ60104S to karta interfejsu Ethernet z funkcją USB host do drukarek POS Citizen z gniazdem karty.",
+    "description": "Karta Citizen PPZ60104S dodaje drukarce paragonów port Ethernet i funkcję USB host. Kartę wkłada się w gniazdo karty interfejsu z tyłu drukarki. Port Ethernet pracuje w standardzie 10BASE-T/100BASE-TX. Funkcja USB host pozwala drukarce obsługiwać urządzenia peryferyjne podłączone przez USB.\n\n## Zgodne drukarki POS Citizen\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do drukarek etykiet Citizen CL-E300EX i CL-E321EX. Z kartą Ethernet drukarki CT-E601, CT-E651 i CT-S751 obsługują druk XML/Web print. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nUrządzenie peryferyjne podłącza się do portu USB na karcie. Port USB do ładowania urządzeń w drukarce nie steruje urządzeniami peryferyjnymi. Przed podłączeniem przewodu wyłącz drukarkę.\n\nŁączność bezprzewodową w tych samych drukarkach daje [karta Wi-Fi Citizen PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 417.58,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPZ60104S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Ethernet z funkcją USB host"
+      },
+      {
+        "name": "Ethernet",
+        "value": "10BASE-T/100BASE-TX"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; drukarki etykiet CL-E300EX, CL-E321EX"
+      }
+    ],
+    "applications": [
+      "Połączenie drukarki paragonów z siecią przewodową LAN",
+      "Obsługa urządzeń USB podłączonych do drukarki"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy karta PPZ60104S pasuje do Citizen CT-E351?",
+        "answer": "Nie. CT-E351 nie ma gniazda karty interfejsu. Port Ethernet ma wersja CT-E351 z Ethernetem, np. CTE351XEEBX."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-wifi-ppz60112s",
+    "slug": "citizen-pos-wifi-ppz60112s",
+    "name": "Karta Wi-Fi Citizen PPZ60112S",
+    "seoTitle": "Karta Wi-Fi Citizen PPZ60112S",
+    "seoDescription": "Karta Wi-Fi Citizen PPZ60112S do drukarek paragonów Citizen CT-E601, CT-E651, CT-E651L, CT-S751 i CT-S4500. Druk przez sieć bezprzewodową WLAN.",
+    "shortDescription": "Citizen PPZ60112S to karta interfejsu Wi-Fi (WLAN) do drukarek POS Citizen z gniazdem karty.",
+    "description": "Karta Citizen PPZ60112S dodaje drukarce paragonów łączność Wi-Fi. Drukarka przyjmuje wtedy wydruki przez sieć bezprzewodową, bez przewodu LAN. Kartę wkłada się w gniazdo karty interfejsu z tyłu drukarki.\n\n## Zgodne drukarki POS Citizen\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do drukarek etykiet Citizen CL-E300EX i CL-E321EX. Z kartą Wi-Fi drukarki CT-E601, CT-E651 i CT-S751 obsługują druk XML/Web print. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nPołączenie przewodowe w tych samych drukarkach daje [karta Ethernet z USB host Citizen PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 681.88,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPZ60112S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Wi-Fi (WLAN)"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; drukarki etykiet CL-E300EX, CL-E321EX"
+      }
+    ],
+    "applications": [
+      "Druk paragonów przez sieć Wi-Fi",
+      "Stanowisko kasowe bez gniazda sieci przewodowej"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy karta PPZ60112S pasuje do Citizen CT-S851III?",
+        "answer": "Nie. CT-S851III ma inne gniazdo karty. Kartę Wi-Fi do CT-S851III ma oznaczenie [PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-rs232-pps00276s",
+    "slug": "citizen-pos-rs232-pps00276s",
+    "name": "Karta RS-232 Citizen PPS00276S",
+    "seoTitle": "Karta RS-232 Citizen PPS00276S",
+    "seoDescription": "Karta RS-232 Citizen PPS00276S do drukarek paragonów Citizen CT-E601, CT-E651, CT-E651L i CT-S4500. Port szeregowy montowany w gnieździe karty.",
+    "shortDescription": "Citizen PPS00276S to karta interfejsu szeregowego RS-232 do drukarek POS Citizen z gniazdem karty.",
+    "description": "Karta Citizen PPS00276S dodaje drukarce paragonów port szeregowy RS-232. Port szeregowy jest potrzebny, gdy kasa lub program drukuje przez port COM. Kartę wkłada się w gniazdo karty interfejsu z tyłu drukarki.\n\n## Zgodne drukarki POS Citizen\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l) i [CT-S4500](/produkt/citizen-ct-s4500), a także do drukarki Citizen CT-S251. Interfejs szeregowy Citizen przesyła dane z prędkością do 115 200 b/s. Przewód RS-232 nie jest częścią zestawu. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 73.77,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPS00276S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu szeregowego RS-232"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S4500, CT-S251"
+      }
+    ],
+    "applications": [
+      "Połączenie drukarki z kasą lub komputerem przez port szeregowy",
+      "Wymiana drukarki w systemie, który drukuje przez port COM"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy do karty PPS00276S potrzebny jest przewód?",
+        "answer": "Tak. Przewód RS-232 do kasy lub komputera kupuje się osobno. Jego typ zależy od portu w urządzeniu, z którym łączy się drukarka."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-lan-premium-if2-es04",
+    "slug": "citizen-pos-lan-premium-if2-es04",
+    "name": "Karta Ethernet Premium Citizen IF2-ES04",
+    "seoTitle": "Karta Ethernet Premium Citizen IF2-ES04",
+    "seoDescription": "Karta Ethernet Premium Citizen IF2-ES04, 10/100/1000 Mb/s, do drukarek paragonów Citizen CT-E601, CT-E651, CT-E651L, CT-S751 i CT-S4500. Rozbudowa o Wi-Fi.",
+    "shortDescription": "Citizen IF2-ES04 to karta Premium LAN 10/100/1000 Mb/s do drukarek POS Citizen z gniazdem karty, z możliwością rozbudowy o Wi-Fi.",
+    "description": "Karta Citizen IF2-ES04 z serii Premium dodaje drukarce paragonów port Ethernet 10/100/1000 Mb/s. Karty Premium obsługują szeroki zakres protokołów sieciowych i zabezpieczeń oraz zdalne zarządzanie i monitorowanie drukarki. Kartę wkłada się w gniazdo karty interfejsu.\n\n## Zgodne drukarki i rozbudowa o Wi-Fi\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do drukarek etykiet Citizen CL-E300EX, CL-E321EX i CL-H300SV. Moduł [UPG-WF5S](/produkt/citizen-pos-modul-wifi-upg-wf5s) albo [UPG-WF5L](/produkt/citizen-pos-modul-wifi-upg-wf5l) rozbudowuje kartę o Wi-Fi. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 771.74,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "IF2-ES04"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Ethernet Premium"
+      },
+      {
+        "name": "Ethernet",
+        "value": "10/100/1000 Mb/s"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; drukarki etykiet CL-E300EX, CL-E321EX, CL-H300SV"
+      }
+    ],
+    "applications": [
+      "Drukarka paragonów w sieci z wymaganiami dotyczącymi zabezpieczeń",
+      "Zdalne zarządzanie drukarką przez sieć"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy kartę IF2-ES04 można później rozbudować o Wi-Fi?",
+        "answer": "Tak. Do rozbudowy służy moduł [UPG-WF5S](/produkt/citizen-pos-modul-wifi-upg-wf5s) z anteną standardową albo [UPG-WF5L](/produkt/citizen-pos-modul-wifi-upg-wf5l) z anteną dalekiego zasięgu."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-wifi-premium-if2-wf5s",
+    "slug": "citizen-pos-wifi-premium-if2-wf5s",
+    "name": "Karta Wi-Fi Premium Citizen IF2-WF5S",
+    "seoTitle": "Karta Wi-Fi Premium Citizen IF2-WF5S",
+    "seoDescription": "Karta Wi-Fi Premium Citizen IF2-WF5S, 2,4 i 5 GHz, antena standardowa, do drukarek paragonów Citizen CT-E601, CT-E651, CT-E651L, CT-S751 i CT-S4500.",
+    "shortDescription": "Citizen IF2-WF5S to karta Wi-Fi Premium 2,4 i 5 GHz z anteną standardową do drukarek POS Citizen z gniazdem karty.",
+    "description": "Karta Citizen IF2-WF5S z serii Premium dodaje drukarce paragonów łączność Wi-Fi w pasmach 2,4 i 5 GHz, w standardach 802.11a/b/g/n/ac. Karta ma antenę standardową. Karty Premium obsługują szeroki zakres protokołów sieciowych i zabezpieczeń oraz zdalne zarządzanie drukarką. Kartę wkłada się w gniazdo karty interfejsu.\n\n## Zgodne drukarki POS Citizen\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do drukarek etykiet Citizen CL-E300EX i CL-E321EX. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed włożeniem karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nTa sama karta z anteną dalekiego zasięgu ma oznaczenie [IF2-WF5L](/produkt/citizen-pos-wifi-premium-if2-wf5l).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 927.67,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "IF2-WF5S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Wi-Fi Premium, antena standardowa"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "2,4 i 5 GHz, 802.11a/b/g/n/ac"
+      },
+      {
+        "name": "Antena",
+        "value": "Standardowa"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; drukarki etykiet CL-E300EX, CL-E321EX"
+      }
+    ],
+    "applications": [
+      "Druk paragonów przez Wi-Fi 2,4 lub 5 GHz",
+      "Drukarka w sieci bezprzewodowej z wymaganiami dotyczącymi zabezpieczeń"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czym IF2-WF5S różni się od IF2-WF5L?",
+        "answer": "Anteną. IF2-WF5S ma antenę standardową, a [IF2-WF5L](/produkt/citizen-pos-wifi-premium-if2-wf5l) antenę dalekiego zasięgu."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-wifi-premium-if2-wf5l",
+    "slug": "citizen-pos-wifi-premium-if2-wf5l",
+    "name": "Karta Wi-Fi Premium Citizen IF2-WF5L",
+    "seoTitle": "Karta Wi-Fi Premium Citizen IF2-WF5L",
+    "seoDescription": "Karta Wi-Fi Premium Citizen IF2-WF5L, 2,4 i 5 GHz, antena dalekiego zasięgu, do drukarek Citizen CT-E601, CT-E651, CT-E651L, CT-S751 i CT-S4500.",
+    "shortDescription": "Citizen IF2-WF5L to karta Wi-Fi Premium 2,4 i 5 GHz z anteną dalekiego zasięgu do drukarek POS Citizen z gniazdem karty.",
+    "description": "Karta Citizen IF2-WF5L z serii Premium dodaje drukarce paragonów łączność Wi-Fi w pasmach 2,4 i 5 GHz, w standardach 802.11a/b/g/n/ac. Karta ma antenę dalekiego zasięgu. Karty Premium obsługują szeroki zakres protokołów sieciowych i zabezpieczeń oraz zdalne zarządzanie drukarką. Kartę wkłada się w gniazdo karty interfejsu.\n\n## Zgodne drukarki POS Citizen\n\nKarta pasuje do drukarek [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do drukarek etykiet Citizen CL-E300EX, CL-E321EX i CL-H300SV. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed włożeniem karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nTa sama karta z anteną standardową ma oznaczenie [IF2-WF5S](/produkt/citizen-pos-wifi-premium-if2-wf5s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 991.1,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "IF2-WF5L"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Wi-Fi Premium, antena dalekiego zasięgu"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "2,4 i 5 GHz, 802.11a/b/g/n/ac"
+      },
+      {
+        "name": "Antena",
+        "value": "Dalekiego zasięgu"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; drukarki etykiet CL-E300EX, CL-E321EX, CL-H300SV"
+      }
+    ],
+    "applications": [
+      "Druk paragonów przez Wi-Fi z dala od punktu dostępowego",
+      "Drukarka w sieci bezprzewodowej z wymaganiami dotyczącymi zabezpieczeń"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czym IF2-WF5L różni się od IF2-WF5S?",
+        "answer": "Anteną. IF2-WF5L ma antenę dalekiego zasięgu, a [IF2-WF5S](/produkt/citizen-pos-wifi-premium-if2-wf5s) antenę standardową."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-modul-wifi-upg-wf5s",
+    "slug": "citizen-pos-modul-wifi-upg-wf5s",
+    "name": "Moduł Wi-Fi Citizen UPG-WF5S do karty Premium LAN",
+    "seoTitle": "Moduł Wi-Fi Citizen UPG-WF5S do karty Premium LAN",
+    "seoDescription": "Moduł Wi-Fi Citizen UPG-WF5S z anteną standardową rozbudowuje kartę Premium LAN IF2-ES04 w drukarkach Citizen CT-E601, CT-E651, CT-S751 i CT-S4500.",
+    "shortDescription": "Citizen UPG-WF5S to moduł Wi-Fi z anteną standardową do rozbudowy karty Premium LAN Citizen o łączność bezprzewodową.",
+    "description": "Moduł Citizen UPG-WF5S rozbudowuje kartę Premium LAN o łączność Wi-Fi. Moduł ma antenę standardową. Po rozbudowie karta działa tak samo jak pełna karta Wi-Fi Premium. Moduł jest potrzebny tylko wtedy, gdy drukarka ma już kartę Premium LAN.\n\n## Zgodne karty i drukarki\n\nModuł rozbudowuje [kartę Ethernet Premium IF2-ES04](/produkt/citizen-pos-lan-premium-if2-es04) w drukarkach [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Pasuje też do karty Premium LAN IF5-ES04 w drukarkach etykiet Citizen. Moduł nie zastępuje karty Premium LAN, tylko ją rozbudowuje. Cena dotyczy samego modułu, bez karty i drukarki.\n\nWersja z anteną dalekiego zasięgu ma oznaczenie [UPG-WF5L](/produkt/citizen-pos-modul-wifi-upg-wf5l).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 155.94,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "UPG-WF5S"
+      },
+      {
+        "name": "Typ",
+        "value": "Moduł Wi-Fi do rozbudowy karty Premium LAN, antena standardowa"
+      },
+      {
+        "name": "Antena",
+        "value": "Standardowa"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Karta Premium LAN IF2-ES04 w CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500; karta IF5-ES04"
+      }
+    ],
+    "applications": [
+      "Dodanie Wi-Fi do zamontowanej karty Premium LAN"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy UPG-WF5S działa bez karty Premium LAN?",
+        "answer": "Nie. Moduł rozbudowuje kartę [IF2-ES04](/produkt/citizen-pos-lan-premium-if2-es04). Bez tej karty wybierz pełną kartę Wi-Fi, np. [IF2-WF5S](/produkt/citizen-pos-wifi-premium-if2-wf5s)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-modul-wifi-upg-wf5l",
+    "slug": "citizen-pos-modul-wifi-upg-wf5l",
+    "name": "Moduł Wi-Fi Citizen UPG-WF5L do karty Premium LAN",
+    "seoTitle": "Moduł Wi-Fi Citizen UPG-WF5L do karty Premium LAN",
+    "seoDescription": "Moduł Wi-Fi Citizen UPG-WF5L z anteną dalekiego zasięgu rozbudowuje kartę Premium LAN IF2-ES04 w drukarkach Citizen CT-E601, CT-E651, CT-S751 i CT-S4500.",
+    "shortDescription": "Citizen UPG-WF5L to moduł Wi-Fi z anteną dalekiego zasięgu do rozbudowy karty Premium LAN Citizen o łączność bezprzewodową.",
+    "description": "Moduł Citizen UPG-WF5L rozbudowuje kartę Premium LAN o łączność Wi-Fi. Moduł ma antenę dalekiego zasięgu, przydatną, gdy drukarka stoi dalej od punktu dostępowego. Po rozbudowie karta działa tak samo jak pełna karta Wi-Fi Premium. Moduł jest potrzebny tylko wtedy, gdy drukarka ma już kartę Premium LAN.\n\n## Zgodne karty i drukarki\n\nModuł rozbudowuje [kartę Ethernet Premium IF2-ES04](/produkt/citizen-pos-lan-premium-if2-es04) w drukarkach [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751) i [CT-S4500](/produkt/citizen-ct-s4500). Moduł nie zastępuje karty Premium LAN, tylko ją rozbudowuje. Cena dotyczy samego modułu, bez karty i drukarki.\n\nWersja z anteną standardową ma oznaczenie [UPG-WF5S](/produkt/citizen-pos-modul-wifi-upg-wf5s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 219.36,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "UPG-WF5L"
+      },
+      {
+        "name": "Typ",
+        "value": "Moduł Wi-Fi do rozbudowy karty Premium LAN, antena dalekiego zasięgu"
+      },
+      {
+        "name": "Antena",
+        "value": "Dalekiego zasięgu"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Karta Premium LAN IF2-ES04 w CT-E601, CT-E651, CT-E651L, CT-S751, CT-S4500"
+      }
+    ],
+    "applications": [
+      "Dodanie Wi-Fi do zamontowanej karty Premium LAN, z anteną dalekiego zasięgu"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s4500"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy UPG-WF5L działa bez karty Premium LAN?",
+        "answer": "Nie. Moduł rozbudowuje kartę [IF2-ES04](/produkt/citizen-pos-lan-premium-if2-es04). Bez tej karty wybierz pełną kartę Wi-Fi, np. [IF2-WF5L](/produkt/citizen-pos-wifi-premium-if2-wf5l)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-ethernet-pps00585s",
+    "slug": "citizen-pos-ethernet-pps00585s",
+    "name": "Karta Ethernet Citizen PPS00585S",
+    "seoTitle": "Karta Ethernet Citizen PPS00585S",
+    "seoDescription": "Karta Ethernet compact Citizen PPS00585S do drukarki paragonów Citizen CT-S851III oraz drukarek CT-S601II, CT-S651II, CT-S801II, CT-S851II i CL-S400DT.",
+    "shortDescription": "Citizen PPS00585S to karta interfejsu Ethernet (compact) do drukarki paragonów Citizen CT-S851III i zgodnych drukarek Citizen.",
+    "description": "Karta Citizen PPS00585S dodaje drukarce port Ethernet do sieci przewodowej LAN. To karta z serii compact. Karty compact to proste rozwiązanie do druku z aplikacji w systemie Windows. Kartę wkłada się w gniazdo karty interfejsu drukarki.\n\n## Zgodne drukarki Citizen\n\nKarta pasuje do drukarki paragonów [CT-S851III](/produkt/citizen-ct-s851iii) w wersji z gniazdem karty. Pasuje też do drukarek Citizen CT-S600, CT-S800, CT-S601II, CT-S651II, CT-S801II i CT-S851II oraz do drukarek etykiet [CL-S400DT](/produkt/citizen-cl-s400dt) i CL-S6621. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nKartę Ethernet z funkcją USB host do CT-S851III ma oznaczenie [PPS00339S](/produkt/citizen-pos-lan-usb-host-pps00339s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 263.53,
+    "availability": "available",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPS00585S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Ethernet (compact)"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S851III; CT-S600, CT-S800, CT-S601II, CT-S651II, CT-S801II, CT-S851II; drukarki etykiet CL-S400DT, CL-S6621"
+      }
+    ],
+    "applications": [
+      "Połączenie drukarki CT-S851III z siecią przewodową LAN"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s851iii",
+      "citizen-cl-s400dt"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy karta PPS00585S pasuje do CT-E601 lub CT-E651?",
+        "answer": "Nie. CT-E601 i CT-E651 mają inne gniazdo karty. Do nich służy np. [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-lan-usb-host-pps00339s",
+    "slug": "citizen-pos-lan-usb-host-pps00339s",
+    "name": "Karta Ethernet z USB host Citizen PPS00339S",
+    "seoTitle": "Karta Ethernet z USB host Citizen PPS00339S",
+    "seoDescription": "Karta Ethernet z funkcją USB host i zdalnym zarządzaniem Citizen PPS00339S do drukarki paragonów Citizen CT-S851III. Montaż w gnieździe karty.",
+    "shortDescription": "Citizen PPS00339S to karta interfejsu Ethernet z funkcją USB host i zdalnym zarządzaniem do drukarki paragonów Citizen CT-S851III.",
+    "description": "Karta Citizen PPS00339S dodaje drukarce port Ethernet, funkcję USB host i zdalne zarządzanie drukarką przez sieć. Zdalne zarządzanie pozwala sprawdzać stan drukarki i zmieniać jej ustawienia bez podchodzenia do stanowiska. Funkcja USB host pozwala drukarce obsługiwać urządzenia peryferyjne podłączone przez USB. Kartę wkłada się w gniazdo karty interfejsu drukarki.\n\n## Zgodna drukarka\n\nKarta pasuje do drukarki paragonów [CT-S851III](/produkt/citizen-ct-s851iii) w wersji z gniazdem karty. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nKartę Ethernet bez funkcji USB host do CT-S851III ma oznaczenie [PPS00585S](/produkt/citizen-pos-ethernet-pps00585s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 370.01,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPS00339S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Ethernet z funkcją USB host i zdalnym zarządzaniem"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S851III"
+      }
+    ],
+    "applications": [
+      "Połączenie drukarki CT-S851III z siecią LAN",
+      "Obsługa urządzeń USB podłączonych do drukarki"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s851iii"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czym PPS00339S różni się od PPS00585S?",
+        "answer": "PPS00339S ma dodatkowo funkcję USB host i zdalne zarządzanie. [PPS00585S](/produkt/citizen-pos-ethernet-pps00585s) to karta Ethernet z serii compact."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-wifi-ppz60108s",
+    "slug": "citizen-pos-wifi-ppz60108s",
+    "name": "Karta Wi-Fi Citizen PPZ60108S",
+    "seoTitle": "Karta Wi-Fi Citizen PPZ60108S",
+    "seoDescription": "Karta Wi-Fi 802.11ac Citizen PPZ60108S do drukarek Citizen CT-S851III i CT-S601IIR oraz drukarek etykiet CL-E700, CL-S400 i CL-S6621.",
+    "shortDescription": "Citizen PPZ60108S to karta interfejsu Wi-Fi 802.11ac do drukarek paragonów Citizen CT-S851III i CT-S601IIR.",
+    "description": "Karta Citizen PPZ60108S dodaje drukarce łączność Wi-Fi w standardzie 802.11ac. Drukarka przyjmuje wtedy wydruki przez sieć bezprzewodową, bez przewodu LAN. Kartę wkłada się w gniazdo karty interfejsu drukarki.\n\n## Zgodne drukarki Citizen\n\nKarta pasuje do drukarki paragonów [CT-S851III](/produkt/citizen-ct-s851iii) w wersji z gniazdem karty i do drukarki etykiet bez podkładu [CT-S601IIR](/produkt/citizen-ct-s601iir). Pasuje też do drukarek Citizen CT-S600, CT-S800II oraz drukarek etykiet CL-E700, CL-S400 i CL-S6621. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed włożeniem karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nDo drukarek CT-E601, CT-E651, CT-S751 i CT-S4500 służy [karta Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 639.6,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PPZ60108S"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu Wi-Fi (802.11ac)"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "802.11ac"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S851III, CT-S601IIR; CT-S600, CT-S800II; drukarki etykiet CL-E700, CL-S400, CL-S6621"
+      }
+    ],
+    "applications": [
+      "Druk paragonów i etykiet przez sieć Wi-Fi"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s851iii",
+      "citizen-ct-s601iir"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy karta PPZ60108S pasuje do CT-E651?",
+        "answer": "Nie. CT-E651 ma inne gniazdo karty. Do niej służy [karta Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-rs232-tz66801-0",
+    "slug": "citizen-pos-rs232-tz66801-0",
+    "name": "Karta RS-232 Citizen TZ66801-0",
+    "seoTitle": "Karta RS-232 Citizen TZ66801-0",
+    "seoDescription": "Karta szeregowa RS-232 (25 pin) Citizen TZ66801-0 do drukarek Citizen CT-S851III i CT-S601IIR oraz CT-S600, CT-S800 i CL-E700.",
+    "shortDescription": "Citizen TZ66801-0 to karta interfejsu szeregowego RS-232 ze złączem 25-pinowym do drukarek paragonów Citizen CT-S851III i CT-S601IIR.",
+    "description": "Karta Citizen TZ66801-0 dodaje drukarce port szeregowy RS-232 ze złączem 25-pinowym. Port szeregowy jest potrzebny, gdy kasa lub program drukuje przez port COM. Kartę wkłada się w gniazdo karty interfejsu drukarki.\n\n## Zgodne drukarki Citizen\n\nKarta pasuje do drukarki paragonów [CT-S851III](/produkt/citizen-ct-s851iii) w wersji z gniazdem karty i do drukarki etykiet bez podkładu [CT-S601IIR](/produkt/citizen-ct-s601iir). Pasuje też do drukarek Citizen CT-S600, CT-S800, CT-S601II, CT-S651II, CT-S801II, CT-S851II i do drukarki etykiet CL-E700. Interfejs szeregowy Citizen przesyła dane z prędkością do 115 200 b/s. Przewód RS-232 nie jest częścią zestawu. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed podłączeniem przewodu do portu karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 46.52,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "TZ66801-0"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu szeregowego RS-232, złącze 25-pinowe"
+      },
+      {
+        "name": "Złącze",
+        "value": "25-pinowe"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S851III, CT-S601IIR; CT-S600, CT-S800, CT-S601II, CT-S651II, CT-S801II, CT-S851II; drukarka etykiet CL-E700"
+      }
+    ],
+    "applications": [
+      "Połączenie drukarki z kasą lub komputerem przez port szeregowy"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s851iii",
+      "citizen-ct-s601iir"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy TZ66801-0 może zastąpić kartę USB w CT-S601IIR?",
+        "answer": "Tak. CT-S601IIR nie ma interfejsu w standardzie i przyjmuje kartę RS-232 TZ66801-0 albo [kartę USB TZ66803-0](/produkt/citizen-pos-usb-tz66803-0). Potrzebna jest jedna karta."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-usb-tz66803-0",
+    "slug": "citizen-pos-usb-tz66803-0",
+    "name": "Karta interfejsu USB Citizen TZ66803-0",
+    "seoTitle": "Karta interfejsu USB Citizen TZ66803-0",
+    "seoDescription": "Karta USB Citizen TZ66803-0 do drukarek CT-S600 i CT-S800: interfejs do drukarki etykiet bez podkładu Citizen CT-S601IIR i drukarki CT-S851III.",
+    "shortDescription": "Citizen TZ66803-0 to karta interfejsu USB do drukarek Citizen serii CT-S600 i CT-S800, w tym CT-S601IIR i CT-S851III.",
+    "description": "Karta Citizen TZ66803-0 dodaje drukarce port USB. Kartę wkłada się w gniazdo karty interfejsu drukarki.\n\n## Interfejs do CT-S601IIR\n\nDrukarka etykiet bez podkładu [CT-S601IIR](/produkt/citizen-ct-s601iir) nie ma interfejsu w standardzie. Karta TZ66803-0 daje jej połączenie USB z komputerem lub systemem kasowym. Karta pasuje do drukarek Citizen serii CT-S600 i CT-S800, w tym do [CT-S851III](/produkt/citizen-ct-s851iii). Przewód USB nie jest częścią zestawu. Cena dotyczy samej karty, bez drukarki.\n\n## Podłączenie\n\nPrzed włożeniem karty wyłącz drukarkę. Nie podłączaj do drukarki jednocześnie kilku interfejsów.\n\nZamiast karty USB w CT-S601IIR można użyć [karty RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0) albo [karty Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 46.52,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "TZ66803-0"
+      },
+      {
+        "name": "Typ",
+        "value": "Karta interfejsu USB"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Drukarki Citizen serii CT-S600 i CT-S800, w tym CT-S601IIR i CT-S851III"
+      }
+    ],
+    "applications": [
+      "Połączenie USB drukarki CT-S601IIR z komputerem lub kasą"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s601iir",
+      "citizen-ct-s851iii"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy CT-S601IIR działa bez karty TZ66803-0?",
+        "answer": "CT-S601IIR potrzebuje jednej karty interfejsu. Może to być karta USB TZ66803-0 albo inna zgodna karta, np. [RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0)."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-powered-usb-1100092",
+    "slug": "citizen-pos-powered-usb-1100092",
+    "name": "Przewód Powered USB 24 V Citizen 1100092",
+    "seoTitle": "Przewód Powered USB 24 V Citizen 1100092",
+    "seoDescription": "Przewód Powered USB 24 V typu Y Citizen 1100092: zasilanie i dane drukarki Citizen CT-E301, CT-E351, CT-E601, CT-E651, CT-S751 i CT-S851III z komputera.",
+    "shortDescription": "Citizen 1100092 to przewód Powered USB 24 V typu Y. Przez ten przewód drukarka POS Citizen pobiera zasilanie z komputera z portem Powered USB.",
+    "description": "Przewód Citizen 1100092 łączy drukarkę paragonów z komputerem POS z portem Powered USB 24 V. Przez przewód drukarka odbiera dane i zasilanie z komputera, więc nie potrzebuje osobnego zasilacza na stanowisku. Przewód ma kształt litery Y.\n\n## Zgodne drukarki POS Citizen\n\nPrzewód pasuje do drukarek [CT-E301](/produkt/citizen-ct-e301), [CT-E351](/produkt/citizen-ct-e351), [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l), [CT-S751](/produkt/citizen-ct-s751), [CT-S851III](/produkt/citizen-ct-s851iii) i [CT-S601IIR](/produkt/citizen-ct-s601iir). Komputer musi mieć port Powered USB 24 V. Cena dotyczy samego przewodu.\n\n## Powered USB a port do ładowania\n\nDrukarki CT-E601 i CT-S751 mają też port USB do ładowania urządzeń, np. tabletu (5 V, 2 A). To inny port: oddaje zasilanie z drukarki, a nie zasila drukarki z komputera.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 142.19,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "1100092"
+      },
+      {
+        "name": "Typ",
+        "value": "Przewód Powered USB 24 V, typu Y"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E301, CT-E351, CT-E601, CT-E651, CT-E651L, CT-S751, CT-S851III, CT-S601IIR"
+      }
+    ],
+    "applications": [
+      "Zasilanie drukarki paragonów z komputera POS z portem Powered USB",
+      "Stanowisko kasowe bez osobnego zasilacza drukarki"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e301",
+      "citizen-ct-e351",
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751",
+      "citizen-ct-s851iii",
+      "citizen-ct-s601iir"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy przewód 1100092 działa ze zwykłym portem USB?",
+        "answer": "Nie do zasilania. Drukarka pobiera zasilanie tylko z portu Powered USB 24 V w komputerze POS."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-uchwyt-scienny-wallmountkit",
+    "slug": "citizen-pos-uchwyt-scienny-wallmountkit",
+    "name": "Zestaw do montażu na ścianie Citizen WALLMOUNTKIT",
+    "seoTitle": "Zestaw do montażu na ścianie Citizen WALLMOUNTKIT",
+    "seoDescription": "Zestaw do montażu na ścianie Citizen WALLMOUNTKIT do drukarek Citizen CT-S601 i CT-S801, w tym drukarki etykiet bez podkładu CT-S601IIR, oraz CD-S50.",
+    "shortDescription": "Citizen WALLMOUNTKIT to zestaw do montażu drukarki Citizen CT-S601 lub CT-S801 na ścianie.",
+    "description": "Zestaw Citizen WALLMOUNTKIT służy do zawieszenia drukarki na ścianie, np. w kuchni lub na zapleczu, gdy na blacie brakuje miejsca.\n\n## Zgodne drukarki Citizen\n\nZestaw pasuje do drukarek Citizen CT-S601 i CT-S801, w tym do drukarki etykiet bez podkładu [CT-S601IIR](/produkt/citizen-ct-s601iir). Pasuje też do wyświetlacza klienta Citizen CD-S50. Cena dotyczy samego zestawu, bez drukarki.\n\n## Inne drukarki Citizen\n\nDrukarka [CT-S310II](/produkt/citizen-ct-s310ii) ma własny zestaw do montażu na ścianie w komplecie, więc nie wymaga WALLMOUNTKIT. Drukarka [CT-S751](/produkt/citizen-ct-s751) z ładowaniem i wyjściem papieru z przodu pracuje pod ladą albo w zabudowie panelu.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 52.09,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "WALLMOUNTKIT"
+      },
+      {
+        "name": "Typ",
+        "value": "Zestaw do montażu na ścianie"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S601, CT-S801 (w tym CT-S601IIR), CD-S50"
+      }
+    ],
+    "applications": [
+      "Montaż drukarki na ścianie w kuchni lub na zapleczu"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s601iir"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy do CT-S310II potrzebny jest zestaw WALLMOUNTKIT?",
+        "answer": "Nie. CT-S310II ma zestaw do montażu na ścianie w komplecie z drukarką."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-zasilacz-pwt20022-00",
+    "slug": "citizen-pos-zasilacz-pwt20022-00",
+    "name": "Zasilacz Citizen 37AD5 PWT20022-00",
+    "seoTitle": "Zasilacz Citizen 37AD5 PWT20022-00",
+    "seoDescription": "Zasilacz Citizen 37AD5 (PWT20022-00), 24 V, do drukarek paragonów Citizen CT-E301, CT-E351, CT-E601, CT-E651, CT-E651L i CT-S751. Przewód zasilający osobno.",
+    "shortDescription": "Citizen PWT20022-00 to zasilacz 37AD5 (24 V, 2,1 A) do drukarek paragonów Citizen z zewnętrznym zasilaczem.",
+    "description": "Zasilacz Citizen 37AD5 o numerze PWT20022-00 zasila drukarkę paragonów napięciem 24 V DC, prądem do 2,1 A. Zasilacz przyjmuje napięcie 100–240 V, 50/60 Hz. To ten sam typ zasilacza, który producent dołącza do drukarek CT-E301, CT-E351, CT-E601, CT-E651 i CT-S751. Zasilacz przydaje się jako zapasowy.\n\n## Zgodne drukarki POS Citizen\n\nZasilacz pasuje do drukarek [CT-E301](/produkt/citizen-ct-e301), [CT-E351](/produkt/citizen-ct-e351), [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l) i [CT-S751](/produkt/citizen-ct-s751). Normy bezpieczeństwa podane w instrukcjach tych drukarek dotyczą pracy z zasilaczem Citizen 37AD5. Drukarki CT-S310II, CT-S851III i CT-S601IIR w oferowanych wersjach mają zasilacz wbudowany w obudowę i nie potrzebują tego zasilacza. Przewód zasilający zamawia się osobno.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 155.94,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PWT20022-00"
+      },
+      {
+        "name": "Typ",
+        "value": "Zasilacz zewnętrzny 37AD5"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V, 50/60 Hz"
+      },
+      {
+        "name": "Wyjście",
+        "value": "24 V DC, 2,1 A"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-E301, CT-E351, CT-E601, CT-E651, CT-E651L, CT-S751"
+      }
+    ],
+    "applications": [
+      "Zapasowy zasilacz do drukarki paragonów Citizen"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-e301",
+      "citizen-ct-e351",
+      "citizen-ct-e601",
+      "citizen-ct-e651",
+      "citizen-ct-e651l",
+      "citizen-ct-s751"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy w zestawie z zasilaczem jest przewód zasilający?",
+        "answer": "Nie. Przewód zasilający zamawia się osobno."
+      }
+    ]
+  },
+  {
+    "id": "citizen-pos-zasilacz-pwt20035-0",
+    "slug": "citizen-pos-zasilacz-pwt20035-0",
+    "name": "Zasilacz Citizen PWT20035-0 do CT-S4500",
+    "seoTitle": "Zasilacz Citizen PWT20035-0 do CT-S4500",
+    "seoDescription": "Zasilacz Citizen PWT20035-0 do drukarki paragonów Citizen CT-S4500 i drukarek etykiet CL-E300, CL-E303, CL-E321 i CL-E331.",
+    "shortDescription": "Citizen PWT20035-0 to zasilacz do drukarki paragonów Citizen CT-S4500 oraz drukarek etykiet Citizen CL-E300, CL-E303, CL-E321 i CL-E331.",
+    "description": "Zasilacz Citizen PWT20035-0 zasila drukarkę paragonów 4 cale [CT-S4500](/produkt/citizen-ct-s4500). Zasilacz przydaje się jako zapasowy albo zastępuje zasilacz uszkodzony lub zgubiony. Drukarka CT-S4500 nie ma zasilacza wbudowanego w obudowę, dlatego bez zasilacza zewnętrznego nie działa. Do drukarki dołączony jest jeden zasilacz z przewodem zasilającym. Drukarka CT-S4500 drukuje paragony, bilety i etykiety na papierze do 112 mm.\n\n## Zgodne drukarki Citizen\n\nZasilacz pasuje do drukarki paragonów [CT-S4500](/produkt/citizen-ct-s4500) oraz do drukarek etykiet [CL-E300](/produkt/citizen-cl-e300), [CL-E303](/produkt/citizen-cl-e303), [CL-E321](/produkt/citizen-cl-e321) i CL-E331. Cena dotyczy samego zasilacza, bez drukarki.\n\nDo drukarek paragonów serii CT-E i do CT-S751 służy [zasilacz 37AD5 PWT20022-00](/produkt/citizen-pos-zasilacz-pwt20022-00).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "citizen",
+    "priceFrom": 168.23,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "PWT20035-0"
+      },
+      {
+        "name": "Typ",
+        "value": "Zasilacz zewnętrzny"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CT-S4500; drukarki etykiet CL-E300, CL-E303, CL-E321, CL-E331"
+      }
+    ],
+    "applications": [
+      "Zapasowy zasilacz do drukarki CT-S4500"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "citizen-ct-s4500",
+      "citizen-cl-e300",
+      "citizen-cl-e303",
+      "citizen-cl-e321"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "faq": [
+      {
+        "question": "Czy zasilacz PWT20035-0 pasuje do CT-E351?",
+        "answer": "Nie. Do CT-E351 i innych drukarek serii CT-E służy [zasilacz 37AD5 PWT20022-00](/produkt/citizen-pos-zasilacz-pwt20022-00)."
+      }
+    ]
+  }
+]
