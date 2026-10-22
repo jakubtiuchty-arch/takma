@@ -38,6 +38,19 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
+  const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+    'komputery-pos': {
+      src: '/images/komputery-pos-hero-v1.webp',
+      alt: 'Dwa dotykowe komputery POS na ciemnym kamiennym podium, z ciepłym podświetleniem',
+      lead: 'Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.',
+    },
+    'ekrany-kds': {
+      src: '/images/ekrany-kds-hero-v2.webp',
+      alt: 'Ekran KDS z listą zamówień nad stalowym blatem w profesjonalnej kuchni',
+      lead: 'Dotykowe ekrany KDS wyświetlają zamówienia w kuchni restauracji, baru lub kawiarni. Kucharz oznacza etapy przygotowania i wydanie dań. Zastępują papierowe bony i wymagają programu KDS zgodnego z programem sprzedaży.',
+    },
+  }
+  const hero = heroImages[slug]
 
   const faqJsonLd = !receiptCategory && content?.faq?.length ? {
     '@context': 'https://schema.org',
@@ -329,11 +342,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />
 
-      {slug === 'komputery-pos' && (
+      {hero && (
         <section className="relative min-h-[192px] sm:h-[16.666vw] flex items-center bg-slate-950 text-white overflow-hidden">
           <Image
-            src="/images/komputery-pos-hero-v1.webp"
-            alt="Dwa dotykowe komputery POS na ciemnym kamiennym podium, z ciepłym podświetleniem"
+            src={hero.src}
+            alt={hero.alt}
             fill
             priority
             sizes="100vw"
@@ -348,7 +361,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
               <span className="text-white font-medium whitespace-nowrap">{category.name}</span>
             </nav>
             <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-lg">{category.h1 ?? category.name}</h1>
-            <p className="text-sm text-slate-200 max-w-xl lg:max-w-2xl">Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.</p>
+            <p className="text-sm text-slate-200 max-w-xl lg:max-w-2xl">{hero.lead}</p>
             <p className="text-slate-400 text-sm mt-2">{products.length} {productWord}</p>
           </div>
         </section>
@@ -356,7 +369,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
 
       <div className={`container-main py-8 lg:py-12 ${receiptCategory ? 'rfid-text-links' : ''}`}>
         {/* Breadcrumbs */}
-        {slug !== 'komputery-pos' && <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
+        {!hero && <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
           <Link href="/" className="hover:text-primary-600 transition-colors whitespace-nowrap">
             Strona główna
           </Link>
@@ -365,7 +378,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
         </nav>}
 
         {/* H1 + intro */}
-        {slug !== 'komputery-pos' && <div className="mb-8">
+        {!hero && <div className="mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             {category.h1 ?? category.name}
           </h1>
