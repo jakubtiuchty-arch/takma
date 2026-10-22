@@ -337,6 +337,7 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 
 ## Ekrany KDS (SUNMI)
 - [Ekrany KDS](https://www.takma.com.pl/ekrany-kds): kuchenne ekrany zamówień (Kitchen Display System) z ekranem dotykowym do restauracji, barów i punktów gastronomicznych. Zamówienia z komputera POS trafiają przez program KDS na ekran w kuchni i zastępują papierowe bony. Program KDS dobiera się do programu sprzedaży.
+- [SUNMI FLEX 3 KDS](https://www.takma.com.pl/produkt/sunmi-flex-3-kds) (PN P11050019 15,6" model F951A, P11050016 18,5" model F9J2A, P11050010 22" model F962A z ekranem 21,5"): SUNMI OS 4.0 (Android 13), usługi Google (GMS) obsługiwane, 4/64 GB, microSD do 1 TB, ekran dotykowy FHD działający przy mokrych dłoniach i w rękawiczkach, obudowa aluminiowa IP55, VESA 100 × 100, LAN 1 Gb/s, Wi-Fi 5, Bluetooth 5.0. 15,6": Qualcomm 6 rdzeni do 2,4 GHz, 250 nitów, PoE wbudowane, 2,0 kg. 18,5" i 22": Qualcomm 8 rdzeni do 2,4 GHz, IPS 400 nitów, czytnik linii papilarnych, RS485/RS232, PoE przez moduł PoE SUNMI, 2,7 i 3,3 kg.
 
 ## Drukarki POS i drukarki paragonów (Epson, BIXOLON, SUNMI)
 - [Drukarki POS i drukarki paragonów](https://www.takma.com.pl/drukarki-pos): 27 modeli Epson, BIXOLON i SUNMI do paragonów, bonów kuchennych, formularzy i etykiet bez podkładu. Papier 58 lub 80 mm; USB, Ethernet, RS-232, Wi-Fi i Bluetooth zależą od PN.

@@ -3388,6 +3388,218 @@ export const sunmiProducts: Product[] = [
     ],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-flex-3-kds",
+    "slug": "sunmi-flex-3-kds",
+    "name": "SUNMI FLEX 3 KDS",
+    "seoH1": "SUNMI FLEX 3 KDS",
+    "seoTitle": "Ekran KDS SUNMI FLEX 3 15,6\", 18,5\" i 22\" do kuchni",
+    "seoDescription": "Ekran KDS SUNMI FLEX 3: ekran kuchenny SUNMI 15,6\", 18,5\" lub 22\", IP55, PoE, VESA. Monitor KDS z Androidem 13. PN: P11050019, P11050016, P11050010.",
+    "shortDescription": "SUNMI FLEX 3 KDS — kuchenny ekran zamówień z ekranem dotykowym 15,6\", 18,5\" lub 22\" FHD, obudową aluminiową IP55 i mocowaniem VESA 100 × 100. Działa przy mokrych dłoniach i w rękawiczkach. SUNMI OS 4.0 na Androidzie 13, 4 GB RAM i 64 GB pamięci.",
+    "description": "SUNMI FLEX 3 KDS to kuchenny ekran zamówień do restauracji, barów i punktów gastronomicznych. Jest dostępny w trzech rozmiarach: 15,6\", 18,5\" i 22\". Z programem KDS zamówienia z kasy synchronizują się automatycznie i pojawiają się na ekranie w kuchni. Program prowadzi zamówienie przez etapy: przygotowanie, gotowanie i wydanie. Duży, jasny ekran zastępuje papierowe bony.\n\nObudowa jest aluminiowa i ma ochronę IP55. Powłoka ograniczająca odciski palców ułatwia usuwanie tłuszczu. Ekran dotykowy działa przy mokrych dłoniach, w rękawiczkach i przy zabrudzeniu tłuszczem. Ekran ma mocowanie VESA 100 × 100. Zasilanie i dane może doprowadzić jeden przewód PoE.\n\nSystem to SUNMI OS 4.0 na Androidzie 13 z obsługą usług Google (GMS). Każdy rozmiar ma 4 GB RAM, 64 GB pamięci i gniazdo microSD do 1 TB. Wersja 15,6\" ma procesor Qualcomm 6 rdzeni do 2,4 GHz, ekran 250 nitów i wbudowane PoE. Wersje 18,5\" i 22\" mają procesor Qualcomm 8 rdzeni do 2,4 GHz, ekran IPS 400 nitów, czytnik linii papilarnych i zasilanie PoE przez moduł PoE SUNMI.\n\nEkran współpracuje z programem KDS zgodnym z programem sprzedaży na [komputerze POS](/komputery-pos).",
+    "categoryId": "ekrany-kds",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 2281.87,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P11050019 (15,6\"), P11050016 (18,5\"), P11050010 (22\")"
+      },
+      {
+        "name": "Model SUNMI",
+        "value": "15,6\": F951A; 18,5\": F9J2A; 22\": F962A"
+      },
+      {
+        "name": "Ekran",
+        "value": "15,6\": 15,6\" FHD 1920 × 1080 px, 250 nitów; 18,5\": 18,5\" IPS FHD 1920 × 1080 px, 400 nitów; 22\": 21,5\" (22\") IPS FHD 1920 × 1080 px, 400 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy, powłoka ograniczająca odciski palców; działa przy mokrych dłoniach, w rękawiczkach i przy zabrudzeniu tłuszczem"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS 4.0 (Android 13); usługi Google (GMS) obsługiwane"
+      },
+      {
+        "name": "Procesor",
+        "value": "15,6\": Qualcomm, 6 rdzeni, do 2,4 GHz; 18,5\" i 22\": Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "4 GB RAM / 64 GB, karta microSD do 1 TB"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "15,6\": 4 × USB 2.0 typ A, RJ11, RJ12, RJ45 (LAN 1 Gb/s), USB-C do debugowania, gniazdo audio; 18,5\" i 22\": 2 × USB 2.0 typ A, port PoE, USB-C do debugowania, RS485/RS232, USB-C do zasilania, gniazdo audio, 2 × RJ45 (LAN 1 Gb/s)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 5.0 z BLE"
+      },
+      {
+        "name": "PoE",
+        "value": "15,6\": wbudowane; 18,5\" i 22\": przez moduł PoE SUNMI (opcja)"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "18,5\" i 22\": w przycisku zasilania"
+      },
+      {
+        "name": "Przyciski",
+        "value": "15,6\": przycisk zasilania; 18,5\" i 22\": przycisk zasilania z czytnikiem linii papilarnych"
+      },
+      {
+        "name": "Audio",
+        "value": "15,6\": głośnik 3 W; 18,5\" i 22\": 2 głośniki 3 W"
+      },
+      {
+        "name": "Stopień ochrony",
+        "value": "IP55"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Aluminiowa"
+      },
+      {
+        "name": "Montaż",
+        "value": "VESA 100 × 100"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Moduł PoE SUNMI (18,5\" i 22\"), stojak biurkowy L (18,5\" i 22\"), przegubowe ramię VESA (18,5\")"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "15,6\": zasilacz 100–240 V AC, wyjście 24 V / 1,5 A; 18,5\" i 22\": zasilacz 100–240 V AC, wyjście 20 V / 3,5 A, gniazdo zasilania USB-C"
+      },
+      {
+        "name": "Wymiary",
+        "value": "15,6\": 375,05 × 224,5 × 31,3 mm; 18,5\": 443 × 264 × 29,8 mm; 22\": 511 × 303 × 29,8 mm (dł. × szer. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "15,6\": 2,0 kg; 18,5\": 2,7 kg; 22\": 3,3 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "15,6\": od -10 do 50°C; 18,5\" i 22\": 0–50°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Certyfikaty",
+        "value": "15,6\": CCC, CE, FCC, RoHS, SRRC, CB; 18,5\" i 22\": 3C, SRRC, CE, CB, FCC, IC, RoHS/REACH/WEEE, EAA, EMV CL L1"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "15,6\": ekran, zasilacz, uchwyt VESA 100 × 100, przewody zasilające (wtyczka EU i UK); 18,5\" i 22\": ekran, przewody zasilające (wtyczka EU i UK)"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Kuchenny ekran zamówień (KDS) z programem KDS zgodnym z programem sprzedaży"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Ekran zamówień przy stanowisku kucharza",
+      "Ekran zamówień przy stanowisku wydawania",
+      "Podgląd danych o pracy kuchni w programie KDS"
+    ],
+    "variants": [
+      {
+        "partNumber": "P11050019",
+        "name": "FLEX 3 KDS 15,6\"",
+        "attributes": {
+          "Przekątna ekranu": "15,6\"",
+          "PoE wbudowane": "Tak"
+        },
+        "priceFrom": 2281.87,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P11050016",
+        "name": "FLEX 3 KDS 18,5\"",
+        "attributes": {
+          "Przekątna ekranu": "18,5\"",
+          "Czytnik linii papilarnych": "Tak",
+          "Port RS485/RS232": "Tak"
+        },
+        "priceFrom": 2822.75,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P11050010",
+        "name": "FLEX 3 KDS 22\"",
+        "attributes": {
+          "Przekątna ekranu": "21,5\" (22\")",
+          "Czytnik linii papilarnych": "Tak",
+          "Port RS485/RS232": "Tak"
+        },
+        "priceFrom": 3059.42,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Przekątna ekranu": "Przekątna ekranu dotykowego FHD 1920 × 1080 px.\n\n• 15,6\" — 250 nitów, najmniejsza obudowa, 2,0 kg.\n\n• 18,5\" i 21,5\" (sprzedawany jako 22\") — ekran IPS 400 nitów, procesor 8-rdzeniowy.",
+      "PoE wbudowane": "Zasilanie i dane przez jeden przewód sieciowy (PoE), bez osobnego zasilacza.\n\n• W wersji 15,6\" PoE jest wbudowane.\n\n• Wersje 18,5\" i 22\" zasila się przez PoE po dodaniu modułu PoE SUNMI.",
+      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Mają go wersje 18,5\" i 22\".",
+      "Port RS485/RS232": "Port szeregowy RS485/RS232 do urządzeń z interfejsem szeregowym.\n\n• Mają go wersje 18,5\" i 22\", obok 2 portów RJ45 i 2 portów USB 2.0."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI FLEX 3 KDS (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-flex-3-kds.pdf",
+        "size": "2,1 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Który rozmiar SUNMI FLEX 3 KDS wybrać?",
+        "answer": "Wersja 15,6\" ma najmniejszą obudowę, masę 2,0 kg i wbudowane PoE. Wersje 18,5\" i 22\" (przekątna 21,5\") mają ekran IPS 400 nitów, procesor 8-rdzeniowy i czytnik linii papilarnych. Większy ekran mieści więcej zamówień jednocześnie. Wszystkie rozmiary mają 4 GB RAM, 64 GB pamięci i ochronę IP55."
+      },
+      {
+        "question": "Jak zamontować SUNMI FLEX 3 KDS?",
+        "answer": "Wszystkie rozmiary mają mocowanie VESA 100 × 100. Wersja 15,6\" ma uchwyt VESA w zestawie i wbudowane PoE: jeden przewód sieciowy doprowadza zasilanie i dane. Wersje 18,5\" i 22\" zasila się przez PoE po dodaniu modułu PoE SUNMI. Akcesoria do montażu i moduł PoE są w kategorii [akcesoria do ekranów KDS](/akcesoria-do-ekranow-kds)."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 KDS wytrzyma pracę w kuchni?",
+        "answer": "Obudowa jest aluminiowa i ma ochronę IP55 przed pyłem i strumieniem wody. Powłoka ograniczająca odciski palców ułatwia usuwanie tłuszczu. Ekran dotykowy działa przy mokrych dłoniach, w rękawiczkach i przy zabrudzeniu tłuszczem. Wersja 15,6\" pracuje w temperaturze od -10 do 50°C, a wersje 18,5\" i 22\" od 0 do 50°C."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 KDS działa z naszym programem sprzedaży?",
+        "answer": "Ekran wymaga programu KDS, który odbiera zamówienia z programu sprzedaży. Program KDS musi działać na Androidzie 13. Zamówienia z kasy synchronizują się wtedy automatycznie. Prosimy o kontakt i podanie nazwy programu sprzedaży. Sprawdzimy, który program KDS z nim współpracuje."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 KDS ma Google Play?",
+        "answer": "Wszystkie rozmiary obsługują usługi Google (GMS) w systemie SUNMI OS 4.0 na Androidzie 13. Jeśli program KDS wymaga Sklepu Google Play, prosimy o kontakt przed zamówieniem. Potwierdzimy konfigurację wybranego PN."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]
 

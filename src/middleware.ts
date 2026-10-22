@@ -81,7 +81,7 @@ export async function middleware(request: NextRequest) {
 
     // Lista slugów istniejących na nowej stronie (nie przekierowuj ich!)
     const existingSlugs = new Set([
-      // Terminale SUNMI, drukarki NT220 i NT320, komputery POS T3, D3, D3 PRO i D3 MINI oraz zgodne akcesoria.
+      // Terminale SUNMI, drukarki NT220 i NT320, komputery POS T3, D3, D3 PRO i D3 MINI, ekran KDS FLEX 3 oraz zgodne akcesoria.
       'sunmi-t3',
       'sunmi-t3-80mm',
       'sunmi-t3-pro',
@@ -90,6 +90,7 @@ export async function middleware(request: NextRequest) {
       'sunmi-d3-pro',
       'sunmi-d3-mini-58mm',
       'sunmi-d3-mini-80mm',
+      'sunmi-flex-3-kds',
       'sunmi-c02020008',
       'sunmi-c02020007',
       'sunmi-c02020003',
