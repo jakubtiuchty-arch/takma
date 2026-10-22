@@ -1336,7 +1336,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT320 80 mm, linerless",
     "seoDescription": "Drukarka paragonów SUNMI NT320 i drukarka etykiet SUNMI 80 mm: etykiety linerless, skaner 2D, Wi-Fi, USB-C i Ethernet. NT320 SUNMI, PN: C04050006, C04050007, C04050003, C04050001, C04050011, C04050009.",
     "shortDescription": "SUNMI NT320 — termiczna drukarka paragonów niefiskalnych i etykiet na papier do 80 mm, z USB-C i Ethernetem. Wersje z Wi-Fi i Bluetooth, skanerem 2D albo obsługą etykiet bez podkładu.",
-    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Port RJ12 steruje szufladą kasową. Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
+    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. W zestawie są rolka papieru 80 mm i prowadnica, którą ustawia się do węższej rolki, np. 58 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Drukarka pracuje ustawiona pionowo albo na boku. Port RJ12 steruje szufladą kasową. Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1436,7 +1436,19 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "5 V / 2 A DC, jednym przewodem USB-C (zasilanie i dane)"
+        "value": "5 V / 2 A DC, jednym przewodem USB-C (zasilanie i dane); zasilacz nie wchodzi w skład zestawu"
+      },
+      {
+        "name": "Przyciski i kontrolki",
+        "value": "Przycisk wysuwu papieru, przycisk głośności, włącznik; diody błędu, sieci i zasilania; z tyłu przycisk parowania"
+      },
+      {
+        "name": "Ustawienie",
+        "value": "Pionowo lub na boku; dwie drukarki na wspólnej podstawie sprzedawanej osobno"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, rolka papieru 80 mm, przewód USB, prowadnica papieru, skrócona instrukcja"
       },
       {
         "name": "Wymiary",
@@ -1567,7 +1579,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak zasila się SUNMI NT320?",
-        "answer": "Jednym przewodem USB-C, który zasila drukarkę napięciem 5 V / 2 A DC i przesyła dane."
+        "answer": "Jednym przewodem USB-C, który zasila drukarkę napięciem 5 V / 2 A DC i przesyła dane. Przewód USB jest w zestawie razem z rolką papieru 80 mm, prowadnicą papieru i skróconą instrukcją. Zasilacza nie ma w zestawie."
       },
       {
         "question": "Czy SUNMI NT320 jest drukarką fiskalną?",
@@ -1575,7 +1587,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Czy dwie drukarki NT320 można ustawić razem?",
-        "answer": "Tak. Dwie drukarki NT320 mieszczą się obok siebie na wspólnej podstawie. Podstawę kupuje się osobno."
+        "answer": "Tak. Podstawa Two-In-One mieści dwie drukarki NT320 obok siebie, ułożone na boku. Podstawę kupuje się osobno. NT320 drukuje zarówno ustawiona pionowo, jak i na boku."
       }
     ],
     "createdAt": "2026-10-22",
