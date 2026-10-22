@@ -1885,7 +1885,7 @@ categoryFilters['drukarki-pos'] = [
 
 // POS manufacturers and technology use the existing sidebar controls.
 categoryFilters['drukarki-pos'] = [
-  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }, { value: 'SUNMI', manufacturer: 'sunmi' }] },
+  { specKey: 'producent', label: 'Producent', derived: [{ value: 'Epson', manufacturer: 'epson' }, { value: 'BIXOLON', manufacturer: 'bixolon' }, { value: 'Citizen', manufacturer: 'citizen' }, { value: 'SUNMI', manufacturer: 'sunmi' }] },
   { specKey: 'technologia-pos', label: 'Technologia druku', derived: [
     { value: 'Termiczna', pattern: '^Termiczny', specs: ['Metoda druku'] },
     { value: 'Igłowa', pattern: '^Igłowy$', specs: ['Metoda druku'] },
@@ -1894,14 +1894,20 @@ categoryFilters['drukarki-pos'] = [
   ] },
   { specKey: 'papier-pos', label: 'Papier', derived: [
     { value: '58 mm', pattern: '58', specs: ['Szerokość papieru'] },
+    // Citizen podaje zakres (57,5–79,5 lub 59–80 mm), a instrukcje — papier 58 i 80 mm.
+    { value: '58 mm', slugs: ['citizen-ct-e301', 'citizen-ct-e351', 'citizen-ct-e601', 'citizen-ct-e651', 'citizen-ct-e651l'] },
     { value: '76 mm', pattern: '76', specs: ['Szerokość papieru'] },
     { value: '80 mm', pattern: '80', specs: ['Szerokość papieru'] },
+    { value: '80 mm', slugs: ['citizen-ct-e301', 'citizen-ct-e601', 'citizen-ct-e651l', 'citizen-ct-s601iir', 'citizen-ct-s4500'] },
+    { value: '112 mm', pattern: '112', specs: ['Szerokość papieru'] },
     { value: 'Formularze i arkusze', pattern: 'Formularze|arkusz', specs: ['Szerokość papieru'] }
   ] },
-  ...categoryFilters['drukarki-pos'].filter(f => f.specKey === 'lacznosc-pos'),
+  // Citizen: Ethernet, RS-232 i Wi-Fi z karty interfejsu liczą się jak opcje w „Interfejsy” u Epson i BIXOLON.
+  ...categoryFilters['drukarki-pos'].filter(f => f.specKey === 'lacznosc-pos').map(f => ({ ...f, derived: f.derived?.map(rule => ({ ...rule, specs: [...(rule.specs ?? []), 'Karty interfejsu'] })) })),
   { specKey: 'material-pos', label: 'Materiał', derived: [
     { value: 'Papier termiczny', pattern: '^Termiczny|^Hybrydowy', specs: ['Metoda druku'] },
-    { value: 'Dostępne wersje linerless', slugs: ['bixolon-srp-s300ii','epson-tm-l100','epson-tm-l90lf'] },
+    { value: 'Dostępne wersje linerless', slugs: ['bixolon-srp-s300ii','epson-tm-l100','epson-tm-l90lf','citizen-ct-s601iir'] },
+    { value: 'Etykiety', slugs: ['epson-tm-l90','epson-tm-l100','epson-tm-l90lf','bixolon-srp-s300ii','sunmi-nt220','sunmi-nt320','citizen-ct-e651l','citizen-ct-s4500','citizen-ct-s601iir'] },
     { value: 'Papier zwykły / formularze', pattern: '^Igłowy|^Atramentowy|^Hybrydowy', specs: ['Metoda druku'] }
   ] }
 ]

@@ -411,11 +411,11 @@ categories.push({
   "slug": "drukarki-pos",
   "name": "Drukarki POS i drukarki paragonów",
   "description": "Niefiskalne drukarki paragonów, bonów, formularzy i etykiet do stanowisk POS",
-  "seoTitle": "Drukarki POS i drukarki paragonów — Epson, BIXOLON",
-  "seoDescription": "Drukarki POS Epson, BIXOLON i SUNMI: niefiskalne drukarki paragonów i bonów na papier 58 lub 80 mm, termiczne, igłowe i atramentowe. Ceny netto, stany i PN.",
-  "longDescription": "Drukarki POS Epson, BIXOLON i SUNMI do stanowisk sprzedaży: niefiskalne drukarki paragonów i bonów, drukarki igłowe i atramentowe do formularzy oraz drukarki etykiet do zamówień. Wybierz papier 58 lub 80 mm i port: USB, Ethernet, RS-232, Wi-Fi albo Bluetooth. Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). To urządzenia niefiskalne: nie zastępują kasy ani drukarki fiskalnej.",
+  "seoTitle": "Drukarki POS i drukarki paragonów — Epson, BIXOLON, Citizen",
+  "seoDescription": "Drukarki POS Epson, BIXOLON, Citizen i SUNMI: niefiskalne drukarki paragonów i bonów 58, 80 lub 112 mm, termiczne, igłowe i atramentowe. Ceny netto, stany i PN.",
+  "longDescription": "Drukarki POS Epson, BIXOLON, Citizen i SUNMI do stanowisk sprzedaży: niefiskalne drukarki paragonów i bonów, drukarki igłowe i atramentowe do formularzy oraz drukarki etykiet do zamówień. Wybierz papier 58, 80 lub 112 mm i port: USB, Ethernet, RS-232, Wi-Fi albo Bluetooth. Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow). To urządzenia niefiskalne: nie zastępują kasy ani drukarki fiskalnej.",
   "icon": "printer",
-  "productCount": 27
+  "productCount": 37
 })
 
 export const subcategories: Subcategory[] = [

@@ -1,13 +1,13 @@
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const posCategoryContent: SubcategoryRichContent = {
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "sectionHeadings": {
     "expertAuthority": "Od czego zacząć dobór drukarki POS",
-    "technicalDeepDive": "Modele Epson, BIXOLON i SUNMI według technologii druku"
+    "technicalDeepDive": "Modele Epson, BIXOLON, Citizen i SUNMI według technologii druku"
   },
   "modelComparison": {
-    "heading": "Porównanie drukarek POS Epson, BIXOLON i SUNMI",
+    "heading": "Porównanie drukarek POS Epson, BIXOLON, Citizen i SUNMI",
     "note": "Interfejsy, kolor i wyposażenie zależą od PN. Pełną listę wariantów podaje karta produktu.",
     "columns": {
       "feeder": "Papier i wydruk"
@@ -201,6 +201,76 @@ export const posCategoryContent: SubcategoryRichContent = {
         "printing": "termiczny, 203 dpi, do 150 mm/s",
         "feeder": "paragony 30–80 mm, etykiety 30–78 mm, etykiety bez podkładu (Linerless), rolka do 80 mm",
         "connectivity": "USB-C + Ethernet; opcje Wi-Fi, Bluetooth, skaner 2D"
+      },
+      {
+        "name": "Citizen CT-E301",
+        "href": "/produkt/citizen-ct-e301",
+        "printing": "termiczny, 203 dpi, do 250 mm/s",
+        "feeder": "57,5–79,5 mm, wydruk u góry, obudowa odporna na dezynfekcję",
+        "connectivity": "USB lub USB + RS-232 + Ethernet"
+      },
+      {
+        "name": "Citizen CT-E351",
+        "href": "/produkt/citizen-ct-e351",
+        "printing": "termiczny, 203 dpi, do 250 mm/s",
+        "feeder": "59–80 mm, wydruk z przodu",
+        "connectivity": "USB + RS-232 lub USB + Ethernet"
+      },
+      {
+        "name": "Citizen CT-S310II",
+        "href": "/produkt/citizen-ct-s310ii",
+        "printing": "termiczny, 203 dpi, do 160 mm/s",
+        "feeder": "58 lub 80 mm, wydruk u góry, zasilacz wbudowany",
+        "connectivity": "USB + RS-232 lub USB + Ethernet"
+      },
+      {
+        "name": "Citizen CT-E601",
+        "href": "/produkt/citizen-ct-e601",
+        "printing": "termiczny, 203 dpi, do 350 mm/s",
+        "feeder": "57,5–79,5 mm, wydruk u góry, obudowa odporna na dezynfekcję",
+        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi), Bluetooth lub Lightning"
+      },
+      {
+        "name": "Citizen CT-E651",
+        "href": "/produkt/citizen-ct-e651",
+        "printing": "termiczny, 203 dpi, do 300 mm/s",
+        "feeder": "59–80 mm, wydruk z przodu",
+        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi), Bluetooth lub Lightning"
+      },
+      {
+        "name": "Citizen CT-E651L",
+        "href": "/produkt/citizen-ct-e651l",
+        "printing": "termiczny, 203 dpi, do 300 mm/s (etykiety do 200 mm/s)",
+        "feeder": "paragony i etykiety 59–80 mm, wydruk z przodu",
+        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi)"
+      },
+      {
+        "name": "Citizen CT-S751",
+        "href": "/produkt/citizen-ct-s751",
+        "printing": "termiczny, 203 dpi, do 350 mm/s",
+        "feeder": "58 lub 80 mm, ładowanie i wydruk z przodu",
+        "connectivity": "USB; gniazdo karty (Ethernet, Wi-Fi), Bluetooth lub Lightning"
+      },
+      {
+        "name": "Citizen CT-S851III",
+        "href": "/produkt/citizen-ct-s851iii",
+        "printing": "termiczny, 203 dpi, do 500 mm/s",
+        "feeder": "58–83 mm, wydruk z przodu, wyświetlacz LCD",
+        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, równoległy, Wi-Fi) lub Bluetooth"
+      },
+      {
+        "name": "Citizen CT-S601IIR",
+        "href": "/produkt/citizen-ct-s601iir",
+        "printing": "termiczny, 203 dpi, do 175 mm/s",
+        "feeder": "etykiety bez podkładu 80/83 mm, cięcie częściowe",
+        "connectivity": "bez interfejsu w standardzie; karta USB, RS-232, Ethernet lub Wi-Fi"
+      },
+      {
+        "name": "Citizen CT-S4500",
+        "href": "/produkt/citizen-ct-s4500",
+        "printing": "termiczny, 203 dpi, do 200 mm/s",
+        "feeder": "58–112 mm, paragony i etykiety, rolka do 102 mm",
+        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi) lub Bluetooth"
       }
     ]
   },
@@ -218,7 +288,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     ]
   },
   "expertAuthority": "Dobór zacznij od programu POS i portu na stanowisku. Następnie porównaj szerokość papieru, kierunek wydruku i miejsce na ladzie. Każda karta produktu podaje PN wariantów, cenę netto, stan magazynowy, zgodne akcesoria i kartę katalogową PDF.",
-  "technicalDeepDive": "Termiczne drukarki paragonów 80 mm: Epson [TM-T20IV](/produkt/epson-tm-t20iv) drukuje w 203 dpi do 250 mm/s, a [TM-T70II](/produkt/epson-tm-t70ii) przyjmuje papier i wydaje wydruk od przodu. [TM-T88VII](/produkt/epson-tm-t88vii) i [TM-m50II](/produkt/epson-tm-m50ii) drukują do 500 mm/s. BIXOLON [SRP-330III](/produkt/bixolon-srp-330iii) drukuje do 250 mm/s, a [SRP-350V](/produkt/bixolon-srp-350v) do 300 mm/s. [SRP-350plusV](/produkt/bixolon-srp-350plusv) drukuje do 400 mm/s i ma Ethernet w standardzie. [SRP-380](/produkt/bixolon-srp-380) drukuje do 350 mm/s, a [SRP-380plus](/produkt/bixolon-srp-380plus) do 500 mm/s. [SRP-F310II](/produkt/bixolon-srp-f310ii) ma wydruk od przodu i obudowę IP12.\n\nDo stanowisk z tabletem służą kompaktowe Epson [TM-m30III](/produkt/epson-tm-m30iii) i [TM-m30III-H](/produkt/epson-tm-m30iii-h). Drukują do 300 mm/s i mają wersje z Wi-Fi i Bluetooth. [TM-m30II-S](/produkt/epson-tm-m30ii-s) ma uchwyt na tablet. BIXOLON [SRP-Q300](/produkt/bixolon-srp-q300) drukuje na papierze 80 mm, a [SRP-Q200](/produkt/bixolon-srp-q200) tylko na papierze 58 mm.\n\nIgłowe [TM-U220IIB](/produkt/epson-tm-u220iib) (z gilotyną) i [TM-U220IID](/produkt/epson-tm-u220iid) (bez gilotyny) drukują na zwykłym papierze 57,5–76 mm. Z kasetą ERC38BR drukują w dwóch kolorach. [TM-U295](/produkt/epson-tm-u295) drukuje na pojedynczych formularzach. [TM-H6000VI](/produkt/epson-tm-h6000vi) łączy termiczny druk paragonów z igłowym drukiem dokumentów. Atramentowe [TM-J7200](/produkt/epson-tm-j7200) i [TM-J7700](/produkt/epson-tm-j7700) drukują z rolki 58–83 mm i na arkuszach. Nadruk na arkuszu ma szerokość do 81,3 mm (TM-J7200) i do 137,8 mm (TM-J7700).\n\nEtykiety bez podkładu drukują Epson [TM-L100](/produkt/epson-tm-l100), [TM-L90LF](/produkt/epson-tm-l90lf) i BIXOLON [SRP-S300II](/produkt/bixolon-srp-s300ii). Epson [TM-L90](/produkt/epson-tm-l90) drukuje etykiety z podkładem i paragony. SUNMI [NT220](/produkt/sunmi-nt220) drukuje paragony i etykiety na papierze 30–58 mm, przez USB-C lub Bluetooth. SUNMI [NT320](/produkt/sunmi-nt320) drukuje paragony i etykiety na papierze 30–80 mm, w wersjach Linerless także etykiety bez podkładu. Ma USB-C i Ethernet, a zależnie od PN także Wi-Fi, Bluetooth lub skaner 2D.",
+  "technicalDeepDive": "Termiczne drukarki paragonów 80 mm: Epson [TM-T20IV](/produkt/epson-tm-t20iv) drukuje w 203 dpi do 250 mm/s, a [TM-T70II](/produkt/epson-tm-t70ii) przyjmuje papier i wydaje wydruk od przodu. [TM-T88VII](/produkt/epson-tm-t88vii) i [TM-m50II](/produkt/epson-tm-m50ii) drukują do 500 mm/s. BIXOLON [SRP-330III](/produkt/bixolon-srp-330iii) drukuje do 250 mm/s, a [SRP-350V](/produkt/bixolon-srp-350v) do 300 mm/s. [SRP-350plusV](/produkt/bixolon-srp-350plusv) drukuje do 400 mm/s i ma Ethernet w standardzie. [SRP-380](/produkt/bixolon-srp-380) drukuje do 350 mm/s, a [SRP-380plus](/produkt/bixolon-srp-380plus) do 500 mm/s. [SRP-F310II](/produkt/bixolon-srp-f310ii) ma wydruk od przodu i obudowę IP12.\n\nDo stanowisk z tabletem służą kompaktowe Epson [TM-m30III](/produkt/epson-tm-m30iii) i [TM-m30III-H](/produkt/epson-tm-m30iii-h). Drukują do 300 mm/s i mają wersje z Wi-Fi i Bluetooth. [TM-m30II-S](/produkt/epson-tm-m30ii-s) ma uchwyt na tablet. BIXOLON [SRP-Q300](/produkt/bixolon-srp-q300) drukuje na papierze 80 mm, a [SRP-Q200](/produkt/bixolon-srp-q200) tylko na papierze 58 mm.\n\nIgłowe [TM-U220IIB](/produkt/epson-tm-u220iib) (z gilotyną) i [TM-U220IID](/produkt/epson-tm-u220iid) (bez gilotyny) drukują na zwykłym papierze 57,5–76 mm. Z kasetą ERC38BR drukują w dwóch kolorach. [TM-U295](/produkt/epson-tm-u295) drukuje na pojedynczych formularzach. [TM-H6000VI](/produkt/epson-tm-h6000vi) łączy termiczny druk paragonów z igłowym drukiem dokumentów. Atramentowe [TM-J7200](/produkt/epson-tm-j7200) i [TM-J7700](/produkt/epson-tm-j7700) drukują z rolki 58–83 mm i na arkuszach. Nadruk na arkuszu ma szerokość do 81,3 mm (TM-J7200) i do 137,8 mm (TM-J7700).\n\nCitizen [CT-E351](/produkt/citizen-ct-e351) i [CT-E651](/produkt/citizen-ct-e651) wydają paragon z przodu, a [CT-E301](/produkt/citizen-ct-e301) i [CT-E601](/produkt/citizen-ct-e601) u góry, w obudowie odpornej na środki dezynfekujące. [CT-S751](/produkt/citizen-ct-s751) ładuje papier z przodu i pracuje pod ladą, [CT-S851III](/produkt/citizen-ct-s851iii) drukuje do 500 mm/s i ma wyświetlacz LCD, a [CT-S4500](/produkt/citizen-ct-s4500) drukuje paragony i etykiety na papierze do 112 mm.\n\nEtykiety bez podkładu drukują Epson [TM-L100](/produkt/epson-tm-l100), [TM-L90LF](/produkt/epson-tm-l90lf), BIXOLON [SRP-S300II](/produkt/bixolon-srp-s300ii) i Citizen [CT-S601IIR](/produkt/citizen-ct-s601iir). Citizen [CT-E651L](/produkt/citizen-ct-e651l) drukuje etykiety z podkładem i paragony. Epson [TM-L90](/produkt/epson-tm-l90) drukuje etykiety z podkładem i paragony. SUNMI [NT220](/produkt/sunmi-nt220) drukuje paragony i etykiety na papierze 30–58 mm, przez USB-C lub Bluetooth. SUNMI [NT320](/produkt/sunmi-nt320) drukuje paragony i etykiety na papierze 30–80 mm, w wersjach Linerless także etykiety bez podkładu. Ma USB-C i Ethernet, a zależnie od PN także Wi-Fi, Bluetooth lub skaner 2D.",
   "useCases": [
     {
       "title": "Kasa i stanowisko sprzedaży",
@@ -230,7 +300,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     },
     {
       "title": "Formularze i etykiety zamówień",
-      "description": "TM-U295, TM-H6000VI, TM-J7200 i TM-J7700 drukują na formularzach. TM-L100, TM-L90LF i SRP-S300II drukują etykiety bez podkładu, np. na opakowania zamówień."
+      "description": "TM-U295, TM-H6000VI, TM-J7200 i TM-J7700 drukują na formularzach. TM-L100, TM-L90LF, SRP-S300II i Citizen CT-S601IIR drukują etykiety bez podkładu, np. na opakowania zamówień."
     }
   ],
   "uniqueInsights": {
@@ -242,7 +312,7 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "title": "Re-stick i Linerless Extreme",
-        "text": "Etykiety bez podkładu wymagają drukarki z odpowiednim wałkiem i zgodnego kleju. W tej kategorii są to TM-L100, TM-L90LF i SRP-S300II."
+        "text": "Etykiety bez podkładu wymagają drukarki z odpowiednim wałkiem i zgodnego kleju. W tej kategorii są to m.in. TM-L100, TM-L90LF, SRP-S300II i Citizen CT-S601IIR."
       },
       {
         "title": "Papier 58 mm w drukarce 80 mm",
@@ -257,7 +327,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Jaki papier pasuje do drukarki POS?",
-      "answer": "Drukarki termiczne 80 mm przyjmują rolkę papieru termicznego 80 mm. TM-T20IV i SRP-330III przyjmują też papier 58 mm. SRP-Q200 drukuje tylko na papierze 58 mm. Drukarki igłowe TM-U220 używają zwykłego papieru 57,5–76 mm i kasety ERC38. Maksymalna średnica rolki jest podana na każdej karcie."
+      "answer": "Drukarki termiczne 80 mm przyjmują rolkę papieru termicznego 80 mm. TM-T20IV i SRP-330III przyjmują też papier 58 mm. SRP-Q200 drukuje tylko na papierze 58 mm, a Citizen CT-S4500 przyjmuje papier do 112 mm. Drukarki igłowe TM-U220 używają zwykłego papieru 57,5–76 mm i kasety ERC38. Maksymalna średnica rolki jest podana na każdej karcie."
     },
     {
       "question": "Który Epson POS obsługuje formularze?",
@@ -265,7 +335,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Czy każdy model ma Ethernet lub Wi-Fi?",
-      "answer": "Nie. Interfejsy zależą od PN. Wi-Fi mają m.in. TM-m30III (C31CK50151, C31CK50152), TM-m30III-H, SRP-350plusV (SRP-350PLUSVWDAK/BEG), SRP-Q200EWDK i SRP-F310IICOWDK. Ethernet ma każdy TM-T88VII, TM-m50II, SRP-350plusV i SRP-Q300."
+      "answer": "Nie. Interfejsy zależą od PN. Wi-Fi mają m.in. TM-m30III (C31CK50151, C31CK50152), TM-m30III-H, SRP-350plusV (SRP-350PLUSVWDAK/BEG), SRP-Q200EWDK i SRP-F310IICOWDK. Ethernet ma każdy TM-T88VII, TM-m50II, SRP-350plusV i SRP-Q300. W Citizen CT-E601, CT-E651, CT-S751, CT-S851III i CT-S4500 Ethernet lub Wi-Fi dodaje karta interfejsu wkładana w gniazdo drukarki."
     },
     {
       "question": "Która drukarka POS do kuchni?",
@@ -273,7 +343,7 @@ export const posCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Czy drukarka POS współpracuje z tabletem lub telefonem?",
-      "answer": "Tak, jeśli program obsługuje dany model. Epson podaje dla TM-T20IV obsługę iOS i Android przez ePOS SDK. TM-m30III (C31CK50151, C31CK50152) i TM-m30III-H mają Wi-Fi i Bluetooth, a TM-m30II-S ma uchwyt na tablet. BIXOLON podaje dla SRP-350plusV i SRP-Q200 obsługę Android, iOS i Windows."
+      "answer": "Tak, jeśli program obsługuje dany model. Epson podaje dla TM-T20IV obsługę iOS i Android przez ePOS SDK. TM-m30III (C31CK50151, C31CK50152) i TM-m30III-H mają Wi-Fi i Bluetooth, a TM-m30II-S ma uchwyt na tablet. BIXOLON podaje dla SRP-350plusV i SRP-Q200 obsługę Android, iOS i Windows. Citizen CT-E601, CT-E651 i CT-S751 mają wersje z Bluetoothem i ze złączem Lightning do iPada i iPhone'a."
     },
     {
       "question": "Jakie sterowniki mają drukarki Epson i BIXOLON?",
