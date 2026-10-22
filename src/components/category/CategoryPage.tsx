@@ -45,7 +45,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
       lead: 'Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.',
     },
     'drukarki-pos': {
-      src: '/images/drukarki-pos-hero-real-v1.webp',
+      src: '/images/drukarki-pos-hero-scene-real-v1.webp',
       alt: 'Drukarki paragonów Epson TM-T20IV i BIXOLON SRP-330III — oryginalne zdjęcia produktów',
       lead: 'Drukarki POS do paragonów niefiskalnych, bonów kuchennych i potwierdzeń sprzedaży. Wybierz papier 58 lub 80 mm i połączenie dopasowane do programu kasowego. Urządzenia te nie zastępują kasy ani drukarki fiskalnej.',
     },
