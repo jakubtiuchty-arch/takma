@@ -1774,7 +1774,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-80mm",
       "sunmi-t3-pro",
       "sunmi-t3-pro-max",
-      "sunmi-d3"
+      "sunmi-d3",
+      "sunmi-d3-pro"
     ],
     "downloads": [
       {
@@ -1961,7 +1962,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3",
       "sunmi-t3-pro-max",
       "sunmi-t3-pro",
-      "sunmi-d3"
+      "sunmi-d3",
+      "sunmi-d3-pro"
     ],
     "downloads": [
       {
@@ -2175,7 +2177,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-pro-max",
       "sunmi-t3",
       "sunmi-t3-80mm",
-      "sunmi-d3"
+      "sunmi-d3",
+      "sunmi-d3-pro"
     ],
     "downloads": [
       {
@@ -2392,7 +2395,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-pro",
       "sunmi-t3-80mm",
       "sunmi-t3",
-      "sunmi-d3"
+      "sunmi-d3",
+      "sunmi-d3-pro"
     ],
     "downloads": [
       {
@@ -2567,7 +2571,8 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3",
       "sunmi-t3-80mm",
       "sunmi-t3-pro",
-      "sunmi-t3-pro-max"
+      "sunmi-t3-pro-max",
+      "sunmi-d3-pro"
     ],
     "downloads": [
       {
@@ -2597,6 +2602,198 @@ export const sunmiProducts: Product[] = [
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI D3?",
         "answer": "SUNMI D3 ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z D3, dlatego przed zakupem szuflady prosimy o kontakt."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-d3-pro",
+    "slug": "sunmi-d3-pro",
+    "name": "SUNMI D3 PRO",
+    "seoH1": "SUNMI D3 PRO",
+    "seoTitle": "Komputer POS SUNMI D3 PRO 15,6\", Android 13, LAN 1 Gb/s",
+    "seoDescription": "Komputer POS SUNMI D3 PRO: ekran dotykowy 15,6\" FHD, 4 GB RAM, LAN 1 Gb/s i obudowa aluminiowa. Terminal POS SUNMI D3 PRO. PN: P01270001, P01270002.",
+    "shortDescription": "SUNMI D3 PRO — komputer POS z ekranem dotykowym 15,6\" FHD, 4 GB RAM i 64 GB pamięci, Androidem 13 i LAN 1 Gb/s. Obudowa aluminiowa. Wersja SUNMI OS lub z usługami Google, model bez drukarki. Ekran klienta 10,1\" z NFC kupuje się osobno.",
+    "description": "Komputer POS SUNMI D3 PRO to stacjonarne stanowisko kasowe z ekranem dotykowym 15,6\" FHD. Ekran ma cienką ramkę i obsługuje dotyk 10-punktowy. Obudowa jest aluminiowa, a przewody są ukryte w podstawie. Komputer jest przeznaczony m.in. dla restauracji i sklepów odzieżowych.\n\n## Procesor, pamięć i system\n\nSześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS). Wersja z usługami Google ma czytnik linii papilarnych w przycisku zasilania. Czytnik służy do logowania w usłudze SUNMI One ID.\n\n## Łączność i ekran klienta\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. [Ekran klienta 10,1\" C02020005](/produkt/sunmi-c02020005) kupuje się osobno. Ekran łączy się z komputerem przewodem USB i nie wymaga montażu. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują.\n\nNowszy [SUNMI D3](/produkt/sunmi-d3) ma Androida 14, procesor ośmiordzeniowy i ekran klienta w zestawie, a D3 PRO bez ekranu klienta jest tańszy i ma obudowę aluminiową.",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 2045.25,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01270001, P01270002"
+      },
+      {
+        "name": "Model SUNMI",
+        "value": "F3510"
+      },
+      {
+        "name": "Ekran",
+        "value": "15,6\", 1920 × 1080 px (FHD), dotykowy pojemnościowy 10-punktowy, cienka ramka"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS 4.0 (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm, 6 rdzeni, do 2,4 GHz"
+      },
+      {
+        "name": "Pamięć",
+        "value": "4 GB RAM / 64 GB, karta microSD do 1 TB"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "1 × USB 3.0 typ A, 2 × USB 2.0 typ A, 1 × USB-C (USB 2.0), RJ11 (port szeregowy), RJ12 (port szuflady kasowej), Ethernet RJ45, gniazdo audio, gniazdo zasilania DC, micro USB do diagnostyki"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak (RJ12)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 5.0 z BLE"
+      },
+      {
+        "name": "NFC",
+        "value": "Na ekranie klienta C02020005 (opcja); płatności SoftPOS przez aplikację, jeśli obsługują je program sprzedaży i operator płatności"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "W przycisku zasilania, w wersji z usługami Google (P01270002); logowanie w SUNMI One ID"
+      },
+      {
+        "name": "Audio",
+        "value": "Głośnik 3 W"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania (blokada ekranu) z niebieską diodą zasilania"
+      },
+      {
+        "name": "Ekran klienta (opcja)",
+        "value": "10,1\" HD 1280 × 800 px, dotykowy, z NFC (C02020005); podłączenie przewodem USB, bez montażu; masa 0,88 kg. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC / 1,5 A, wyjście 24 V / 1,5 A DC (36 W)"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Aluminiowa, przewody ukryte w podstawie"
+      },
+      {
+        "name": "Wymiary",
+        "value": "380 × 195 × 310 mm (dł. × szer. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "4,5 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający, krótka instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w restauracji z osobną drukarką POS",
+      "Kasa w sklepie odzieżowym",
+      "Stanowisko z ekranem klienta 10,1\" z NFC (opcja)"
+    ],
+    "variants": [
+      {
+        "partNumber": "P01270001",
+        "name": "D3 PRO — SUNMI OS (Android 13)",
+        "attributes": {},
+        "priceFrom": 2045.25,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01270002",
+        "name": "D3 PRO — Android 13 z usługami Google (GMS)",
+        "attributes": {
+          "Usługi Google (GMS)": "Tak",
+          "Czytnik linii papilarnych": "Tak"
+        },
+        "priceFrom": 2160.2,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja SUNMI OS nie ma usług Google. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania.",
+      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Służy do logowania odciskiem palca w usłudze SUNMI One ID."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c02020005",
+      "sunmi-x09020039"
+    ],
+    "relatedProducts": [
+      "sunmi-d3",
+      "sunmi-t3",
+      "sunmi-t3-80mm",
+      "sunmi-t3-pro",
+      "sunmi-t3-pro-max"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI D3 PRO (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-d3-pro.pdf",
+        "size": "1,1 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym SUNMI D3 PRO różni się od SUNMI D3?",
+        "answer": "SUNMI D3 PRO ma sześciordzeniowy procesor Qualcomm do 2,4 GHz, Androida 13, Wi-Fi 5, Bluetooth 5.0 i obudowę aluminiową. [SUNMI D3](/produkt/sunmi-d3) to nowszy model. Ma ośmiordzeniowy procesor do 2,2 GHz, Androida 14, Wi-Fi 6, Bluetooth 5.4 i ekran klienta 10,1\" w zestawie. Do D3 PRO [ekran klienta C02020005](/produkt/sunmi-c02020005) kupuje się osobno, a sam komputer jest tańszy od D3. Oba modele mają ekran 15,6\" FHD, 4 GB RAM, 64 GB pamięci i LAN 1 Gb/s."
+      },
+      {
+        "question": "Wersja SUNMI OS czy wersja z usługami Google (GMS)?",
+        "answer": "Obie wersje mają ten sam procesor, pamięć i system SUNMI OS 4.0 na Androidzie 13. P01270002 ma usługi Google (GMS EDLA), Sklep Google Play i czytnik linii papilarnych w przycisku zasilania. P01270001 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+      },
+      {
+        "question": "Jaki ekran klienta pasuje do SUNMI D3 PRO?",
+        "answer": "Pasuje [ekran klienta 10,1\" HD C02020005](/produkt/sunmi-c02020005) z NFC. Ekran łączy się z komputerem przewodem USB i nie wymaga montażu. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3 PRO."
+      },
+      {
+        "question": "Czy SUNMI D3 PRO jest kasą fiskalną?",
+        "answer": "Nie. SUNMI D3 PRO nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI D3 PRO?",
+        "answer": "SUNMI D3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z D3 PRO, dlatego przed zakupem szuflady prosimy o kontakt."
       }
     ],
     "createdAt": "2026-10-22",
