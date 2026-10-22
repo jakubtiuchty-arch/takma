@@ -1568,6 +1568,17 @@ export const sunmiProducts: Product[] = [
         "size": "1,9 MB"
       }
     ],
+    "videos": [
+      {
+        "url": "https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/sunmi-nt320-rozpakowanie.mp4",
+        "title": "Rozpakowanie i pierwsze uruchomienie · 2:00",
+        "native": true,
+        "poster": "/images/products/sunmi-nt320-rozpakowanie-poster.webp",
+        "captions": "/video/napisy/sunmi-nt320-rozpakowanie-pl.vtt",
+        "published": "2026-10-22",
+        "duration": "PT2M"
+      }
+    ],
     "faq": [
       {
         "question": "Którą wersję SUNMI NT320 wybrać?",
