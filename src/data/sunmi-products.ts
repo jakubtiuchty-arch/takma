@@ -1343,10 +1343,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 605.14,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/C04050006.png",
+      "/images/products/C04050006-2.png",
+      "/images/products/C04050006-3.png",
+      "/images/products/C04050006-4.png",
+      "/images/products/C04050006-5.png",
+      "/images/products/C04050006-6.png",
+      "/images/products/C04050006-7.png",
+      "/images/products/C04050006-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI NT320 — drukarka etykiet i paragonów 80 mm"
+      "SUNMI NT320 — widok z przodu z lewej strony, z góry: szczelina wydruku, przyciski, diody, włącznik i zwolnienie pokrywy z boku",
+      "SUNMI NT320 — widok z przodu z prawej strony, z góry: pokrywa z logo SUNMI i panel przycisków",
+      "SUNMI NT320 — widok z przodu: panel przycisków i wyjście papieru u góry obudowy",
+      "SUNMI NT320 — widok z tyłu: port szuflady RJ12, USB-C, Ethernet RJ45 i przycisk parowania",
+      "SUNMI NT320 — widok z góry: pokrywa komory papieru, szczelina wydruku, przyciski wysuwu papieru i głośności, diody i włącznik",
+      "SUNMI NT320 — widok z prawego boku",
+      "SUNMI NT320 ustawiona na boku: wyjście papieru i przyciski skierowane do przodu",
+      "SUNMI NT320 — widok z tyłu z prawej strony, z góry"
     ],
     "tags": [
       "retail"
