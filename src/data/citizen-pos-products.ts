@@ -946,6 +946,265 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-e651",
+    "slug": "citizen-ct-e651",
+    "name": "Citizen CT-E651",
+    "seoH1": "Citizen CT-E651",
+    "seoTitle": "Drukarka paragonów Citizen CT-E651 80 mm, 300 mm/s, USB",
+    "seoDescription": "Drukarka paragonów Citizen CT-E651 80 mm, 300 mm/s, wyjście z przodu, gniazdo karty LAN lub Wi-Fi. Drukarka POS Citizen CT-E651. PN: CTE651XNEBX, CTE651XTEBX.",
+    "shortDescription": "Citizen CT-E651 — termiczna drukarka paragonów niefiskalnych na papier do 80 mm, z wyjściem papieru z przodu. Drukuje do 300 mm/s; ma USB, a sieć, RS-232 lub Wi-Fi dodaje karta interfejsu. Wersje z Bluetoothem i Lightning.",
+    "description": "Drukarka Citizen CT-E651 drukuje paragony niefiskalne w handlu i w hotelarstwie. Obudowa ma 125 × 170 × 108 mm i tę samą wysokość co szuflada kasowa, dlatego mieści się obok szuflady albo przy systemie all-in-one.\n\n## Wyjście papieru z przodu i druk do 300 mm/s\n\nParagon wychodzi z przodu obudowy, a rolkę papieru wkłada się od góry. Wyjście z przodu chroni mechanizm przed zalaniem i okruchami. Drukarka drukuje do 300 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Papier może mieć szerokość 59–80 mm, a rolka średnicę do 83 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED.\n\n## USB i gniazdo karty interfejsu\n\nKażda wersja ma USB 2.0 i złącze szuflady kasowej. Ethernet, RS-232 albo Wi-Fi dodaje karta interfejsu wkładana z tyłu drukarki. CTE651XTEBX i CTE651XTEWX mają Bluetooth, a CTE651XAEBX złącze Lightning. W zestawie jest zewnętrzny zasilacz 37AD5. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nTe same wymiary obudowy, port RS-232 albo Ethernet w standardzie i druk do 250 mm/s ma [Citizen CT-E351](/produkt/citizen-ct-e351).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 713.12,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/CTE651XNEBX.png",
+      "/images/products/CTE651XNEBX-2.png",
+      "/images/products/CTE651XNEBX-3.png",
+      "/images/products/CTE651XNEBX-4.png",
+      "/images/products/CTE651XNEBX-5.png",
+      "/images/products/CTE651XNEBX-6.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-E651 w czarnej obudowie — widok z przodu pod kątem: wylot papieru i przyciski",
+      "Citizen CT-E651 — paragon w wylocie papieru, widok z przodu pod kątem",
+      "Citizen CT-E651 — widok z przodu: wylot papieru i logo Citizen",
+      "Citizen CT-E651 — widok z tyłu: złącze szuflady kasowej, gniazdo zasilania, USB i zaślepione gniazdo karty interfejsu",
+      "Citizen CT-E651 — otwarta pokrywa komory papieru z rolką papieru",
+      "Citizen CT-E651 w białej obudowie — widok z przodu pod kątem"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTE651XNEBX, CTE651XNEWX, CTE651XTEBX, CTE651XTEWX, CTE651XAEBX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 300 mm/s"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 72 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "59–80 mm (±0,5 mm)"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "53–85 µm"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "Z przodu; ładowanie rolki od góry"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Koniec papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0; zależnie od PN: Bluetooth albo Lightning"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "Ethernet, Ethernet z USB host, RS-232, Wi-Fi compact, Ethernet premium, Wi-Fi premium"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, RJ12, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "8 MB"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "2 przyciski, 5 diod LED; wbudowany brzęczyk"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50–60 Hz, zasilacz zewnętrzny 37AD5 w zestawie, albo 24 V DC"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "125 × 170 × 108 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,26 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna lub biała"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, TÜV, UL, C-UL, FCC, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz 37AD5, przewód zasilający, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata, w tym głowica i gilotyna"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne w handlu",
+      "Rachunki i potwierdzenia w hotelu i restauracji",
+      "Druk z iPada lub iPhone'a przez Bluetooth albo Lightning"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTE651XNEBX",
+        "name": "CT-E651 — USB, czarna",
+        "attributes": {
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 713.12,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE651XNEWX",
+        "name": "CT-E651 — USB, biała",
+        "attributes": {
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 713.12,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE651XTEBX",
+        "name": "CT-E651 — USB, Bluetooth, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 921.95,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE651XTEWX",
+        "name": "CT-E651 — USB, Bluetooth, biała",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth",
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 921.95,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE651XAEBX",
+        "name": "CT-E651 — USB, Lightning, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Lightning",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1102.78,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Interfejs dodatkowy": "Połączenie zamontowane fabrycznie obok USB.\n\n• Bluetooth — połączenie bez przewodu z komputerem, tabletem lub telefonem; zgodny z Apple MFi.\n\n• Lightning — połączenie z iPadem lub iPhone'em przez złącze Lightning.",
+      "Kolor obudowy": "Kolor obudowy CT-E651.\n\n• Czarna — wersje z USB, Bluetoothem i Lightning.\n\n• Biała — wersje z USB i z Bluetoothem."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-wifi-ppz60112s",
+      "citizen-pos-lan-usb-host-ppz60104s",
+      "citizen-pos-rs232-pps00276s",
+      "citizen-pos-powered-usb-1100092",
+      "citizen-pos-lan-premium-if2-es04",
+      "citizen-pos-wifi-premium-if2-wf5s",
+      "citizen-pos-wifi-premium-if2-wf5l",
+      "citizen-pos-modul-wifi-upg-wf5s",
+      "citizen-pos-modul-wifi-upg-wf5l",
+      "citizen-pos-zasilacz-pwt20022-00"
+    ],
+    "relatedProducts": [
+      "citizen-ct-e351",
+      "citizen-ct-e651l",
+      "citizen-ct-e601",
+      "citizen-ct-s751",
+      "epson-tm-t20iv"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-E651 (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-e651.pdf",
+        "size": "215 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-E651",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-E651",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-E651 jest drukarką fiskalną?",
+        "answer": "Nie. CT-E651 drukuje paragony niefiskalne i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć CT-E651 do sieci przewodowej lub Wi-Fi?",
+        "answer": "Kartę interfejsu wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Port RS-232 dodaje [karta PPS00276S](/produkt/citizen-pos-rs232-pps00276s). Karty kupuje się osobno."
+      },
+      {
+        "question": "Czy CT-E651 współpracuje z iPadem i iPhone'em?",
+        "answer": "Tak. Wersje CTE651XTEBX i CTE651XTEWX łączą się przez Bluetooth zgodny z Apple MFi. Wersja CTE651XAEBX ma złącze Lightning, które przesyła dane i ładuje iPada lub iPhone'a."
+      },
+      {
+        "question": "Czy CT-E651 drukuje etykiety?",
+        "answer": "Nie. CT-E651 drukuje na papierze paragonowym. Etykiety i paragony drukuje [Citizen CT-E651L](/produkt/citizen-ct-e651l), który ma czujniki szczeliny i czarnego znacznika."
+      },
+      {
+        "question": "Co jest w zestawie z CT-E651?",
+        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewodu danych i kart interfejsu nie ma w zestawie."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
