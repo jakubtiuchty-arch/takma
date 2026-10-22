@@ -82,6 +82,7 @@ import {
 } from '@/components/ui/Icons'
 import LinkedText from '@/components/ui/LinkedText'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import { getVariantTabTitle, isShortTabTitleScope } from '@/lib/product-tab-title'
 import { getStockSnapshot, schemaPrice } from '@/lib/stock-snapshot'
 import AddToRFQButton from '../../AddToRFQButton'
 import AskAboutProductButton from '../../AskAboutProductButton'
@@ -150,7 +151,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const priceText = variant.priceFrom && !isRibbonMeta
     ? ` od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto`
     : ''
-  const title = `${product.name} ${sizeLabel}${colorLabel ? ` ${colorLabel}` : ''} — PN ${pn}${priceText}`
+  const title = isShortTabTitleScope(product)
+    ? getVariantTabTitle(product, pn)
+    : `${product.name} ${sizeLabel}${colorLabel ? ` ${colorLabel}` : ''} — PN ${pn}${priceText}`
 
   const smartTruncate = (text: string, maxLen: number): string => {
     if (text.length <= maxLen) return text

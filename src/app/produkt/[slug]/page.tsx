@@ -1,4 +1,5 @@
 import { getProductVariantTooltips } from '@/lib/product-variant-tooltips'
+import { getProductTabTitle, getVariantTabTitle, isShortTabTitleScope } from '@/lib/product-tab-title'
 import { isRfidContentProduct } from '@/lib/rfid-content'
 import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
 import { Metadata } from 'next'
@@ -125,9 +126,12 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   // Szablon layoutu dokłada „| TAKMA", więc sufiks wpisany w seoTitle trzeba zdjąć (inaczej „| TAKMA | TAKMA")
   const baseTitle = (isZebraTerminalProduct(product) ? product.seoTitle?.replace(/\s*(?:\||—|,)?\s*od\s+[\d\s.,]+\s*zł(?:\s+netto)?/ig, '') : product.seoTitle)?.replace(/\s*\|\s*TAKMA\s*$/, '')
     ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
-  const title = variant
-    ? `${product.name}${variantSize ? ` ${variantSize}` : ''}${variantPN ? ` (${variantPN})` : ''}`
-    : baseTitle
+  // Listingi objęte krótkim tytułem karty „Producent Model” (specyfikacja jest w meta description)
+  const title = isShortTabTitleScope(product)
+    ? variant ? getVariantTabTitle(product, variantPN) : getProductTabTitle(product)
+    : variant
+      ? `${product.name}${variantSize ? ` ${variantSize}` : ''}${variantPN ? ` (${variantPN})` : ''}`
+      : baseTitle
 
   // Smart truncation — ends at last sentence boundary (.) before 160 chars
   const smartTruncate = (text: string, maxLen: number): string => {
