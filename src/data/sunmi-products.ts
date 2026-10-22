@@ -1254,6 +1254,17 @@ export const sunmiProducts: Product[] = [
         "size": "4 KB"
       }
     ],
+    "videos": [
+      {
+        "url": "https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/sunmi-nt220-rozpakowanie.mp4",
+        "title": "Rozpakowanie i pierwsze uruchomienie · 2:11",
+        "native": true,
+        "poster": "/images/products/sunmi-nt220-rozpakowanie-poster.webp",
+        "captions": "/video/napisy/sunmi-nt220-rozpakowanie-pl.vtt",
+        "published": "2026-10-22",
+        "duration": "PT2M11S"
+      }
+    ],
     "faq": [
       {
         "question": "Czy SUNMI NT220 drukuje etykiety i paragony?",
