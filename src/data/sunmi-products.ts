@@ -1629,7 +1629,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Komputer POS SUNMI T3 15,6\", Android 13, NFC",
     "seoDescription": "Komputer POS SUNMI T3 z ekranem dotykowym 15,6\", Androidem 13 i NFC. Dotykowy terminal stacjonarny POS SUNMI T3 bez drukarki. PN: P01280007.",
     "shortDescription": "SUNMI T3 — komputer POS z ekranem dotykowym 15,6\" FHD, Androidem 13 z usługami Google i NFC przy ekranie. Model bez drukarki, z portem szuflady kasowej i opcjonalnym ekranem klienta.",
-    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
+    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Korpus jest z metalu odlewanego ciśnieniowo, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1679,7 +1679,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
+        "value": "Qualcomm Kryo 265, 8 rdzeni, do 2,4 GHz, proces 6 nm"
       },
       {
         "name": "Pamięć",
@@ -1723,7 +1723,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Gniazdo kart",
-        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu; oferowany PN nie ma modemu 4G"
+        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu. Wersja P01280007 nie ma modemu 4G ani GPS."
       },
       {
         "name": "Ekran klienta (opcja)",
@@ -1739,7 +1739,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Obudowa",
-        "value": "Odlew ze stopu metalu, przewody prowadzone wewnątrz podstawy"
+        "value": "Korpus z metalu odlewanego ciśnieniowo, przewody prowadzone wewnątrz podstawy"
       },
       {
         "name": "Wymiary",
@@ -1800,7 +1800,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jaki ekran klienta pasuje do SUNMI T3?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Ekran 10,1\" pokazuje pozycje i kwotę. Ekran 15,6\" pokazuje też menu lub reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą. Jasność ekranu klienta ustawia się w ustawieniach systemu."
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Treść ekranu klienta, np. pozycje, kwotę, menu lub reklamy, ustawia program sprzedaży. Na ekranie 15,6\" lepiej widać menu i reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą."
       },
       {
         "question": "Czy SUNMI T3 ma Google Play?",
@@ -1825,8 +1825,8 @@ export const sunmiProducts: Product[] = [
     "seoH1": "SUNMI T3 80 mm",
     "seoTitle": "Komputer POS SUNMI T3 80 mm z drukarką paragonów, 15,6\"",
     "seoDescription": "Komputer POS SUNMI T3 80 mm z drukarką paragonów 80 mm, ekranem dotykowym 15,6\" i Androidem 13. Terminal POS SUNMI T3 z drukarką. PN: P03180008.",
-    "shortDescription": "SUNMI T3 80 mm — komputer POS z wbudowaną drukarką termiczną 80 mm do 250 mm/s i ekranem dotykowym 15,6\" FHD. Android 13 z usługami Google, NFC przy ekranie i port szuflady kasowej.",
-    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
+    "shortDescription": "SUNMI T3 80 mm — komputer POS z wbudowaną drukarką termiczną 80 mm Seiko z automatyczną gilotyną, do 250 mm/s, i ekranem dotykowym 15,6\" FHD. Android 13 z usługami Google, NFC przy ekranie i port szuflady kasowej.",
+    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm z mechanizmem Seiko i automatyczną gilotyną. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet 1 Gb/s. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Korpus jest z metalu odlewanego ciśnieniowo. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1870,7 +1870,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
+        "value": "Qualcomm Kryo 265, 8 rdzeni, do 2,4 GHz, proces 6 nm"
       },
       {
         "name": "Pamięć",
@@ -1878,7 +1878,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Drukarka",
-        "value": "Termiczna, papier 80 mm; papier 58 mm z prowadnicą C20000094"
+        "value": "Termiczna 80 mm, mechanizm Seiko, automatyczna gilotyna, do 250 mm/s, rolka o średnicy do 80 mm; papier 58 mm z prowadnicą C20000094"
       },
       {
         "name": "Prędkość druku",
@@ -1889,12 +1889,20 @@ export const sunmiProducts: Product[] = [
         "value": "Pokrywa z uchwytem; moduł drukarki wyjmowany przy serwisie"
       },
       {
+        "name": "Trwałość drukarki",
+        "value": "150 km wydruku"
+      },
+      {
         "name": "Interfejsy",
         "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ12 (port szuflady kasowej), RJ11 (port szeregowy), gniazdo zasilania DC"
       },
       {
         "name": "Port szuflady kasowej",
         "value": "Tak (RJ12), z tyłu podstawy"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
       },
       {
         "name": "Łączność bezprzewodowa",
@@ -1917,10 +1925,6 @@ export const sunmiProducts: Product[] = [
         "value": "2 głośniki 2 W, mikrofon"
       },
       {
-        "name": "Czujniki",
-        "value": "Czujnik grawitacji"
-      },
-      {
         "name": "Przyciski",
         "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), przycisk Download w otworze"
       },
@@ -1930,7 +1934,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Gniazdo kart",
-        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu; oferowany PN nie ma modemu 4G"
+        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu. Wersja P03180008 nie ma modemu 4G."
       },
       {
         "name": "Ekran klienta (opcja)",
@@ -1942,15 +1946,23 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "Zasilacz 100–240 V AC, wyjście 24 V / 2,5 A DC"
+        "value": "Zasilacz 100–240 V AC / 1,7 A, wyjście 24 V / 2,5 A DC"
       },
       {
         "name": "Obudowa",
-        "value": "Odlew ze stopu metalu, przewody prowadzone wewnątrz podstawy"
+        "value": "Korpus z metalu odlewanego ciśnieniowo, przewody prowadzone wewnątrz podstawy"
+      },
+      {
+        "name": "Wymiary",
+        "value": "369 × 374 × 206 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "3,6 kg netto, 6,5 kg z opakowaniem"
       },
       {
         "name": "Warunki pracy",
-        "value": "0–40°C, wilgotność 5–95% bez kondensacji; przechowywanie od -20 do 60°C"
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
       },
       {
         "name": "Zawartość zestawu",
@@ -2011,11 +2023,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jaki papier pasuje do SUNMI T3 80 mm?",
-        "answer": "Drukarka przyjmuje papier termiczny 80 mm. Rolka papieru jest w zestawie. Do papieru 58 mm potrzebna jest [prowadnica C20000094](/produkt/sunmi-c20000094), kupowana osobno. Rolkę zakłada się po otwarciu pokrywy drukarki."
+        "answer": "Drukarka przyjmuje papier termiczny 80 mm w rolkach o średnicy do 80 mm i automatycznie odcina wydruk. Papier 58 mm wymaga [prowadnicy C20000094](/produkt/sunmi-c20000094)."
       },
       {
         "question": "Jaki ekran klienta pasuje do SUNMI T3 80 mm?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą. Ekran 10,1\" pokazuje pozycje i kwotę, a ekran 15,6\" także menu lub reklamy."
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Treść ekranu klienta, np. pozycje, kwotę, menu lub reklamy, ustawia program sprzedaży. Na ekranie 15,6\" lepiej widać menu i reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą."
       },
       {
         "question": "Czy SUNMI T3 80 mm ma Google Play?",
