@@ -1629,7 +1629,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Komputer POS SUNMI T3 15,6\", Android 13, NFC",
     "seoDescription": "Komputer POS SUNMI T3 z ekranem dotykowym 15,6\", Androidem 13 i NFC. Dotykowy terminal stacjonarny POS SUNMI T3 bez drukarki. PN: P01280007.",
     "shortDescription": "SUNMI T3 — komputer POS z ekranem dotykowym 15,6\" FHD, Androidem 13 z usługami Google i NFC przy ekranie. Model bez drukarki, z portem szuflady kasowej i opcjonalnym ekranem klienta.",
-    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej, USB, port szeregowy i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
+    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1674,6 +1674,10 @@ export const sunmiProducts: Product[] = [
         "value": "SUNMI OS 4.0 (Android 13), usługi Google GMS EDLA"
       },
       {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
         "name": "Procesor",
         "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
       },
@@ -1683,11 +1687,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11 i RJ12 (port szuflady kasowej i port szeregowy), gniazdo zasilania DC"
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ12 (port szuflady kasowej), RJ11 (port szeregowy), gniazdo zasilania DC"
       },
       {
         "name": "Port szuflady kasowej",
-        "value": "Tak, z tyłu podstawy"
+        "value": "Tak (RJ12), z tyłu podstawy"
       },
       {
         "name": "Łączność bezprzewodowa",
@@ -1724,6 +1728,10 @@ export const sunmiProducts: Product[] = [
       {
         "name": "Ekran klienta (opcja)",
         "value": "10,1\" HD (C02020008) lub 15,6\" FHD (C02020007), z NFC; montaż z tyłu komputera na złączu stykowym z blokadą"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Ekran klienta 10,1\" lub 15,6\", czytnik kart magnetycznych (MSR), uchwyt szuflady kasowej, podwyższone gumowe nóżki"
       },
       {
         "name": "Zasilanie",
@@ -1800,7 +1808,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3?",
-        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży."
+        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej RJ12 z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży."
       },
       {
         "question": "Czym SUNMI T3 różni się od T3 80 mm?",
@@ -1818,7 +1826,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Komputer POS SUNMI T3 80 mm z drukarką paragonów, 15,6\"",
     "seoDescription": "Komputer POS SUNMI T3 80 mm z drukarką paragonów 80 mm, ekranem dotykowym 15,6\" i Androidem 13. Terminal POS SUNMI T3 z drukarką. PN: P03180008.",
     "shortDescription": "SUNMI T3 80 mm — komputer POS z wbudowaną drukarką termiczną 80 mm do 250 mm/s i ekranem dotykowym 15,6\" FHD. Android 13 z usługami Google, NFC przy ekranie i port szuflady kasowej.",
-    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej, USB, port szeregowy i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
+    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1857,6 +1865,10 @@ export const sunmiProducts: Product[] = [
         "value": "SUNMI OS 4.0 (Android 13), usługi Google GMS EDLA"
       },
       {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
         "name": "Procesor",
         "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
       },
@@ -1878,11 +1890,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11 i RJ12 (port szuflady kasowej i port szeregowy), gniazdo zasilania DC"
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ12 (port szuflady kasowej), RJ11 (port szeregowy), gniazdo zasilania DC"
       },
       {
         "name": "Port szuflady kasowej",
-        "value": "Tak, z tyłu podstawy"
+        "value": "Tak (RJ12), z tyłu podstawy"
       },
       {
         "name": "Łączność bezprzewodowa",
@@ -1910,7 +1922,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Przyciski",
-        "value": "Przycisk zasilania, ukryty przycisk głośności"
+        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), przycisk Download w otworze"
+      },
+      {
+        "name": "Dioda",
+        "value": "Dioda zasilania"
       },
       {
         "name": "Gniazdo kart",
@@ -1919,6 +1935,10 @@ export const sunmiProducts: Product[] = [
       {
         "name": "Ekran klienta (opcja)",
         "value": "10,1\" HD (C02020008) lub 15,6\" FHD (C02020007), z NFC; montaż z tyłu komputera na złączu stykowym z blokadą"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Ekran klienta 10,1\" lub 15,6\", czytnik kart magnetycznych (MSR), uchwyt szuflady kasowej, podwyższone gumowe nóżki, prowadnica papieru 58 mm"
       },
       {
         "name": "Zasilanie",
@@ -2003,7 +2023,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3 80 mm?",
-        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży, np. po wydruku paragonu."
+        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej RJ12 z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży, np. po wydruku paragonu."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2062,6 +2082,10 @@ export const sunmiProducts: Product[] = [
         "value": "SUNMI OS (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
       },
       {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
         "name": "Procesor",
         "value": "Qualcomm Kryo 670, 8 rdzeni, do 2,7 GHz, proces 6 nm"
       },
@@ -2071,11 +2095,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11, RJ12, gniazdo zasilania DC"
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ12 (port szuflady kasowej), RJ11 (port szeregowy), gniazdo zasilania DC"
       },
       {
         "name": "Port szuflady kasowej",
-        "value": "Tak (RJ11/RJ12)"
+        "value": "Tak (RJ12)"
       },
       {
         "name": "Sieć przewodowa",
@@ -2103,11 +2127,19 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Przyciski",
-        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), ukryty przycisk serwisowy"
+        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), przycisk Download w otworze"
+      },
+      {
+        "name": "Dioda",
+        "value": "Dioda zasilania"
       },
       {
         "name": "Ekran klienta (opcja)",
         "value": "10,1\" HD 1280 × 800 px (C02020003) lub 15,6\" FHD 1920 × 1080 px (C02020004), dotykowy, z NFC; odłączany, z przedłużaczem 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Ekran klienta 10,1\" lub 15,6\""
       },
       {
         "name": "Zasilanie",
@@ -2207,7 +2239,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO?",
-        "answer": "SUNMI T3 PRO ma port szuflady kasowej na złączu RJ11/RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z T3 PRO, dlatego przed zakupem szuflady prosimy o kontakt."
+        "answer": "SUNMI T3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2260,6 +2292,10 @@ export const sunmiProducts: Product[] = [
         "value": "SUNMI OS (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
       },
       {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
         "name": "Procesor",
         "value": "Qualcomm Kryo 670, 8 rdzeni, do 2,7 GHz, proces 6 nm"
       },
@@ -2289,11 +2325,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11, RJ12, gniazdo zasilania DC"
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ12 (port szuflady kasowej), RJ11 (port szeregowy), gniazdo zasilania DC"
       },
       {
         "name": "Port szuflady kasowej",
-        "value": "Tak (RJ11/RJ12)"
+        "value": "Tak (RJ12)"
       },
       {
         "name": "Sieć przewodowa",
@@ -2321,11 +2357,19 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Przyciski",
-        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), ukryty przycisk serwisowy"
+        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), przycisk Download w otworze"
+      },
+      {
+        "name": "Dioda",
+        "value": "Dioda zasilania"
       },
       {
         "name": "Ekran klienta (opcja)",
         "value": "10,1\" HD 1280 × 800 px (C02020003) lub 15,6\" FHD 1920 × 1080 px (C02020004), dotykowy, z NFC; odłączany, z przedłużaczem 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Ekran klienta 10,1\" lub 15,6\""
       },
       {
         "name": "Zasilanie",
@@ -2425,7 +2469,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO MAX?",
-        "answer": "SUNMI T3 PRO MAX ma port szuflady kasowej na złączu RJ11/RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży, np. po wydruku paragonu. SUNMI nie podaje listy szuflad zgodnych z T3 PRO MAX, dlatego przed zakupem szuflady prosimy o kontakt."
+        "answer": "SUNMI T3 PRO MAX ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży, np. po wydruku paragonu. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2488,8 +2532,16 @@ export const sunmiProducts: Product[] = [
         "value": "W zestawie: IPS 10,1\", 1280 × 800 px (HD), dotykowy pojemnościowy wielopunktowy, powłoka ograniczająca odciski palców; 2 × micro USB 2.0 (u góry i z prawej strony)"
       },
       {
+        "name": "Akcesoria opcjonalne",
+        "value": "Czytnik kart magnetycznych, kamera jednoobiektywowa lub dwuobiektywowa"
+      },
+      {
         "name": "System operacyjny",
         "value": "SUNMI OS 4.0 (Android 14), usługi Google GMS EDLA"
+      },
+      {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
       },
       {
         "name": "Procesor",
@@ -2525,7 +2577,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Przyciski",
-        "value": "Przycisk zasilania z niebieską diodą, ukryty przycisk serwisowy"
+        "value": "Przycisk zasilania z niebieską diodą, przycisk Download w otworze"
       },
       {
         "name": "Zasilanie",
@@ -2601,7 +2653,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI D3?",
-        "answer": "SUNMI D3 ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z D3, dlatego przed zakupem szuflady prosimy o kontakt."
+        "answer": "SUNMI D3 ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2662,6 +2714,10 @@ export const sunmiProducts: Product[] = [
         "value": "SUNMI OS 4.0 (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
       },
       {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego wdrożenia i zarządzania urządzeniami"
+      },
+      {
         "name": "Procesor",
         "value": "Qualcomm, 6 rdzeni, do 2,4 GHz"
       },
@@ -2708,6 +2764,10 @@ export const sunmiProducts: Product[] = [
       {
         "name": "Ekran klienta (opcja)",
         "value": "10,1\" HD 1280 × 800 px, dotykowy, z NFC (C02020005); podłączenie przewodem USB, bez montażu; masa 0,88 kg. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Ekran klienta 10,1\""
       },
       {
         "name": "Zasilanie",
@@ -2809,7 +2869,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI D3 PRO?",
-        "answer": "SUNMI D3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z D3 PRO, dlatego przed zakupem szuflady prosimy o kontakt."
+        "answer": "SUNMI D3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
       }
     ],
     "createdAt": "2026-10-22",
