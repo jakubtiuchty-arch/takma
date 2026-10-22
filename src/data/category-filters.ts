@@ -1993,10 +1993,10 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Materiał musi pasować do mechanizmu drukarki.\n• Termiczny — papier z warstwą reagującą na ciepło.\n• Linerless — etykiety samoprzylepne bez podkładu, tylko do zgodnych drukarek.\n• Zwykły papier — do odpowiednich drukarek igłowych lub atramentowych."
   },
   "komputery-pos": {
-    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. T3 PRO MAX ma drukarkę Seiko z gilotyną, a T3 80 mm z prowadnicą drukuje na papierze 58 mm.\n• Bez drukarki — T3, T3 PRO i D3; wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
-    "Ekran klienta": "Drugi ekran od strony klienta, np. z pozycjami i kwotą.\n• W zestawie — SUNMI D3 z ekranem klienta 10,1\".\n• Do dokupienia — do T3 i T3 80 mm ekrany C02020008 i C02020007, do T3 PRO i T3 PRO MAX ekrany C02020003 i C02020004. Ekrany do tych modeli nie są zamienne.",
-    "Pamięć RAM": "Pamięć operacyjna dla programu sprzedaży.\n• 4 GB — SUNMI T3, T3 80 mm i D3, pamięć 64 GB.\n• 6 GB — SUNMI T3 PRO i T3 PRO MAX, pamięć 128 GB.",
-    "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS: na Androidzie 13 w T3 i T3 PRO, na Androidzie 14 w D3.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO i T3 PRO MAX.",
+    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. T3 PRO MAX ma drukarkę Seiko z gilotyną, a T3 80 mm z prowadnicą drukuje na papierze 58 mm.\n• Bez drukarki — T3, T3 PRO, D3 i D3 PRO; wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
+    "Ekran klienta": "Drugi ekran od strony klienta, np. z pozycjami i kwotą.\n• W zestawie — SUNMI D3 z ekranem klienta 10,1\".\n• Do dokupienia — do T3 i T3 80 mm ekrany C02020008 i C02020007, do T3 PRO i T3 PRO MAX ekrany C02020003 i C02020004, do D3 PRO ekran C02020005. Ekrany do tych modeli nie są zamienne.",
+    "Pamięć RAM": "Pamięć operacyjna dla programu sprzedaży.\n• 4 GB — SUNMI T3, T3 80 mm, D3 i D3 PRO, pamięć 64 GB.\n• 6 GB — SUNMI T3 PRO i T3 PRO MAX, pamięć 128 GB.",
+    "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS: na Androidzie 13 w T3, T3 PRO i D3 PRO, na Androidzie 14 w D3.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO, T3 PRO MAX i D3 PRO.",
     "Cena netto": "Cena netto komputera. SUNMI D3 ma ekran klienta w cenie. Do pozostałych modeli ekran klienta i szufladę kupuje się osobno."
   },
   "akcesoria-do-komputerow-pos": {
