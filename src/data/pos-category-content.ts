@@ -241,7 +241,7 @@ export const posCategoryContent: SubcategoryRichContent = {
         "name": "Citizen CT-E651L",
         "href": "/produkt/citizen-ct-e651l",
         "printing": "termiczny, 203 dpi, do 300 mm/s (etykiety do 200 mm/s)",
-        "feeder": "paragony i etykiety 59–80 mm, wydruk z przodu",
+        "feeder": "paragony 59–80 mm, etykiety na podkładzie 57,5 lub 79,5 mm, wydruk z przodu",
         "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi)"
       },
       {
