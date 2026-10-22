@@ -8,6 +8,10 @@ type Accessory = {
   description: string
   specifications: ProductSpecification[]
   image?: string
+  /** Zgodność spoza ZD621R, np. kiosk KC401 z przewodnika akcesoriów KC401 (07/2026). */
+  compatibility?: string
+  subcategoryIds?: string[]
+  relatedAccessories?: string[]
 }
 
 // Zgodność: katalog Desktop Printers Accessories Guide, str. 6, oraz
@@ -53,11 +57,14 @@ const additionalAccessories: Accessory[] = [
   {
     id: 'zebra-printkiosk-cc6000-zd621r',
     slug: 'zebra-uchwyt-printkiosk-cc6000-brkt-dpa-sk1-01',
-    name: 'Uchwyt Zebra PrintKiosk z CC6000 — BRKT-DPA-SK1-01',
+    name: 'Uchwyt Zebra PrintKiosk z KC401 lub CC6000 — BRKT-DPA-SK1-01',
     pn: 'BRKT-DPA-SK1-01',
     image: 'BRKT-DPA-SK1-01.png',
-    description: 'Uchwyt Zebra BRKT-DPA-SK1-01 służy do budowy stanowiska PrintKiosk z urządzeniem CC6000 i drukarką ZD621R. CC6000 oraz drukarka są sprzedawane osobno. Do konfiguracji z CC600 wybierz BRKT-DPA-SK1-02.',
-    specifications: [{ name: 'Urządzenie stanowiskowe', value: 'Zebra CC6000 — sprzedawane osobno' }, { name: 'Typ', value: 'Uchwyt PrintKiosk' }],
+    description: 'Uchwyt Zebra BRKT-DPA-SK1-01 służy do budowy stanowiska PrintKiosk z kioskiem Zebra KC401 lub CC6000 i drukarką biurkową Zebra ZD4 lub ZD6, np. ZD621R. Kiosk oraz drukarka są sprzedawane osobno. Uchwyt ma mocowanie VESA 75 × 75 lub 100 × 100 i podstawę 26 × 26 × 5 cm. Masa uchwytu to ok. 2,8 kg. Do konfiguracji z CC600 wybierz BRKT-DPA-SK1-02.',
+    specifications: [{ name: 'Urządzenie stanowiskowe', value: 'Zebra KC401 lub CC6000 — sprzedawane osobno' }, { name: 'Typ', value: 'Uchwyt PrintKiosk' }, { name: 'Mocowanie kiosku', value: 'VESA 75 × 75 lub 100 × 100' }, { name: 'Podstawa', value: '26 × 26 × 5 cm' }, { name: 'Masa', value: 'ok. 2,8 kg (6,2 lb)' }],
+    compatibility: 'Kiosk Zebra KC401 lub CC6000; drukarki biurkowe Zebra ZD4 i ZD6, np. ZD621R',
+    subcategoryIds: ['akcesoria-do-drukarek-etykiet', 'akcesoria-do-kioskow'],
+    relatedAccessories: ['zebra-zd621r', 'zebra-kc401'],
   },
   {
     id: 'zebra-case-zd621r',
@@ -114,7 +121,7 @@ export const zd621rAdditionalAccessories: Product[] = additionalAccessories.map(
   shortDescription: item.description.split('. ').slice(0, 2).join('. ') + '.',
   description: item.description,
   categoryId: 'akcesoria',
-  subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+  subcategoryIds: item.subcategoryIds ?? ['akcesoria-do-drukarek-etykiet'],
   manufacturerId: 'zebra',
   images: item.image ? [`/images/products/${item.image}`] : [],
   imageDescriptions: item.image ? [item.name] : [],
@@ -124,12 +131,12 @@ export const zd621rAdditionalAccessories: Product[] = additionalAccessories.map(
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: item.pn },
-    { name: 'Kompatybilność', value: ['zebra-cleaning-pens-zd621r', 'zebra-cleaning-swabs-zd621r', 'zebra-usb-cable-zd621r'].includes(item.id) ? 'Zebra ZD611R, ZD621R i inne zgodne drukarki Zebra' : 'Zebra ZD621R' },
+    { name: 'Kompatybilność', value: item.compatibility ?? (['zebra-cleaning-pens-zd621r', 'zebra-cleaning-swabs-zd621r', 'zebra-usb-cable-zd621r'].includes(item.id) ? 'Zebra ZD611R, ZD621R i inne zgodne drukarki Zebra' : 'Zebra ZD621R') },
     ...item.specifications,
   ],
   applications: [],
   compatibleAccessories: [],
-  relatedAccessories: ['zebra-zd621r'],
+  relatedAccessories: item.relatedAccessories ?? ['zebra-zd621r'],
   downloads: [],
   createdAt: '2026-10-15',
 }))

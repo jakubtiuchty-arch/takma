@@ -1166,10 +1166,10 @@ export const subcategories: Subcategory[] = [
     slug: 'akcesoria-do-kioskow',
     name: 'Akcesoria do kiosków',
     parentCategoryId: 'kioski-samoobslugowe',
-    description: 'Stojaki podłogowe i na ladę, moduły, lampka i uchwyt POS do kiosków samoobsługowych SUNMI FLEX 3',
-    seoTitle: 'Akcesoria do kiosków SUNMI FLEX 3 | Stojaki, moduł 3-w-1, lampka',
-    seoDescription: 'Akcesoria do kiosku SUNMI FLEX 3: stojaki podłogowe i na ladę Retail, Restaurant i Lite, moduł NFC, MSR i skaner, lampka, kamera 3D i moduł PoE. Ceny netto.',
-    longDescription: 'Akcesoria do kiosku samoobsługowego [SUNMI FLEX 3](/produkt/sunmi-flex-3). Stojaki Retail z drukarką i skanerem pasują tylko do ekranu 22". Stojak podłogowy Restaurant z drukarką pasuje do ekranów 22" i 27", a stojak na ladę Restaurant z drukarką do ekranów 18,5", 22" i 27". Stojak na ladę Lite (18,5", 22" i 27") i stojak L (18,5" i 22") nie mają drukarki. Moduł NFC, MSR i skaner, skaner 2D, kamera 3D, lampka sygnalizacyjna i uchwyt POS rozszerzają kiosk o odczyt kart i kodów, sygnalizację stanu i miejsce na terminal płatniczy. Moduł PoE pozwala zasilać ekrany 18,5", 22" i 27" przez przewód sieciowy.',
+    description: 'Stojaki, uchwyty, moduły, moduły skanera i zasilanie do kiosków samoobsługowych SUNMI FLEX 3 i Zebra KC401',
+    seoTitle: 'Akcesoria do kiosków SUNMI FLEX 3 i Zebra KC401 | Stojaki, uchwyty, skanery',
+    seoDescription: 'Akcesoria do kiosku SUNMI FLEX 3 i Zebra KC401: stojaki Retail, Restaurant i Lite, moduł NFC, MSR i skaner, moduły skanera SR500, uchwyty VESA, zasilacz. Ceny netto.',
+    longDescription: 'Akcesoria do kiosków samoobsługowych [SUNMI FLEX 3](/produkt/sunmi-flex-3) i [Zebra KC401](/produkt/zebra-kc401). Stojaki Retail z drukarką i skanerem pasują tylko do ekranu 22". Stojak podłogowy Restaurant z drukarką pasuje do ekranów 22" i 27", a stojak na ladę Restaurant z drukarką do ekranów 18,5", 22" i 27". Stojak na ladę Lite (18,5", 22" i 27") i stojak L (18,5" i 22") nie mają drukarki. Moduł NFC, MSR i skaner, skaner 2D, kamera 3D, lampka sygnalizacyjna i uchwyt POS rozszerzają kiosk o odczyt kart i kodów, sygnalizację stanu i miejsce na terminal płatniczy. Moduł PoE pozwala zasilać ekrany 18,5", 22" i 27" przez przewód sieciowy. Do kiosku Zebra KC401 są moduły skanera SR500 z kątem +25°, 0° i −25°, uchwyty ścienne i uchwyt na słup VESA 100 × 100 z miejscem na zasilacz, uchwyt PrintKiosk z drukarką Zebra ZD4 lub ZD6 oraz zasilacz 36 W z przewodem zasilającym C5. Uchwyty Zebra pasują także do CC6000.',
     icon: 'package',
     productIds: [],
     productCount: 0,
@@ -78423,15 +78423,15 @@ const et6xAccessories: Product[] = [
     id: 'zebra-et6x-450042', slug: 'zebra-et6x-450042',
     name: 'Przewód sieciowy Zebra — Europa',
     shortDescription: 'Przewód sieciowy do zasilacza Zebra, wariant wtyczki: Europa. Dobierz do gniazda sieciowego w miejscu użytkowania.',
-    description: "Przewód sieciowy do zasilacza Zebra, wariant wtyczki: Europa. Dobierz do gniazda sieciowego w miejscu użytkowania.\n\n## Zgodne akcesoria\n\n- Przewód nie jest zasilaczem.\n- Służy do podłączenia [Zasilacz USB-C 45 W Zebra ET65 (PWR-BGA15V45W-UC2-WW)](/produkt/zebra-charger-usbc-45w-et6x) lub [Zasilacz sieciowy do stacji pojazdowej Zebra ET65 (450020)](/produkt/zebra-dock-power-supply-et6x) do europejskiego gniazda sieciowego.",
+    description: "Przewód sieciowy do zasilacza Zebra, wariant wtyczki: Europa. Dobierz do gniazda sieciowego w miejscu użytkowania.\n\n## Zgodne akcesoria\n\n- Przewód nie jest zasilaczem.\n- Służy do podłączenia [Zasilacz USB-C 45 W Zebra ET65 (PWR-BGA15V45W-UC2-WW)](/produkt/zebra-charger-usbc-45w-et6x) lub [Zasilacz sieciowy do stacji pojazdowej Zebra ET65 (450020)](/produkt/zebra-dock-power-supply-et6x) do europejskiego gniazda sieciowego.\n\n## Zasilacz kiosku Zebra KC401\n\n- Przewód łączy [zasilacz Zebra 36 W PWR-BGA12V36W0WW](/produkt/zebra-zasilacz-36w-pwr-bga12v36w0ww) kiosku [Zebra KC401](/produkt/zebra-kc401) z europejskim gniazdem sieciowym.\n- Przewód jest uziemiony i ma wtyk C5. Zasilacz kiosku nie ma przewodu w zestawie.",
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 43.16,
     images: ['/images/products/450042-et6x-card-quality-v3.png'], imageDescriptions: ['Zdjęcie poglądowe przewodu sieciowego Zebra; wariant wtyczki zgodny z nazwą produktu'],
     tags: [], availability: 'unavailable', isNew: false, isBestseller: false,
-    specifications: [{ name: 'Part Number', value: '450042' }],
-    applications: ['Akcesoria do tabletów Zebra ET65'],
+    specifications: [{ name: 'Part Number', value: '450042' }, { name: 'Typ', value: 'Przewód sieciowy, uziemiony, wtyk C5, wtyczka EU' }, { name: 'Zgodność', value: 'Zasilacze Zebra: PWR-BGA12V36W0WW (kiosk Zebra KC401), PWR-BGA15V45W-UC2-WW i 450020 (Zebra ET65)' }],
+    applications: ['Akcesoria do tabletów Zebra ET65', 'Zasilacz kiosku Zebra KC401'],
     compatibleAccessories: [], downloads: [], updatedAt: '2026-10-03', createdAt: '2026-10-02',
     seoTitle: 'Przewód sieciowy Zebra — Europa | 450042',
-    seoDescription: '450042 — Przewód sieciowy Zebra — Europa. Zastosowanie: Zebra ET65.',
+    seoDescription: '450042 — Przewód sieciowy Zebra — Europa. Zastosowanie: Zebra ET65 i kiosk Zebra KC401.',
   },
   {
   "id": "zebra-et6x-cbl-dc-388a2-01",
@@ -95749,6 +95749,16 @@ for (const subcategory of subcategories) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
+}
+
+// Akcesoria Zebra KC401 trafiają do /akcesoria-do-kioskow według `subcategoryIds`. Uchwyt PrintKiosk
+// (zd621r) ma tę podkategorię jako drugą; przewód 450042 nie ma podkategorii, więc dopisujemy go wprost,
+// bez zmiany okruszków na jego karcie.
+for (const subcategory of subcategories) {
+  if (subcategory.id !== 'akcesoria-do-kioskow') continue
+  const additions = [...zebraKc401Accessories, ...zd621rAdditionalAccessories].filter(product => product.subcategoryIds?.includes(subcategory.id)).map(product => product.id)
+  subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions, 'zebra-et6x-450042']))
+  subcategory.productCount = subcategory.productIds.length
 }
 
 // Nowe akcesoria Newland są dostępne także w właściwych podkategoriach katalogu.

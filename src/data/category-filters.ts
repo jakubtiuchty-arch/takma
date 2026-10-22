@@ -1993,14 +1993,22 @@ categoryFilters['kioski-samoobslugowe'] = [
     { value: 'powyżej 2 500 zł', priceMin: 2500 }
   ] }
 ]
-// Akcesoria do kiosków: rodzaj z nazwy, zgodny rozmiar z wiersza „Zgodność” („SUNMI FLEX 3 18,5", 22" i 27"”).
+// Akcesoria do kiosków: rodzaj z nazwy, zgodny kiosk i rozmiar z wiersza „Zgodność” („SUNMI FLEX 3 18,5", 22" i 27"”).
+// Uchwyt PrintKiosk (zd621r) ma zgodność w wierszu „Kompatybilność”, przewód 450042 w „Zgodność”.
 categoryFilters['akcesoria-do-kioskow'] = [
   { specKey: 'rodzaj-akcesorium-kiosk', label: 'Rodzaj akcesorium', derived: [
     { value: 'Stojak podłogowy', namePattern: '^Stojak podłogowy' },
     { value: 'Stojak na ladę', namePattern: '^Stojak (na ladę|biurkowy)' },
-    { value: 'Moduł', namePattern: '^(Moduł|Lampka|Skaner)' },
+    { value: 'Moduł', namePattern: '^(Moduł(?! skanera)|Lampka|Skaner)' },
+    { value: 'Moduł skanera', namePattern: '^Moduł skanera' },
     { value: 'Kamera', namePattern: '^Kamera' },
-    { value: 'Uchwyt POS', namePattern: '^Uchwyt POS' }
+    { value: 'Uchwyt POS', namePattern: '^Uchwyt POS' },
+    { value: 'Uchwyt', namePattern: '^Uchwyt (?!POS)' },
+    { value: 'Zasilanie', namePattern: '^(Zasilacz|Przewód sieciowy)' }
+  ] },
+  { specKey: 'zgodny-kiosk', label: 'Zgodny kiosk', derived: [
+    { value: 'SUNMI FLEX 3', pattern: 'SUNMI FLEX 3(?! KDS)', specs: ['Zgodność'] },
+    { value: 'Zebra KC401', pattern: 'KC401', specs: ['Zgodność', 'Kompatybilność'] }
   ] },
   { specKey: 'zgodny-rozmiar-kiosk', label: 'Zgodny rozmiar', derived: [
     { value: '18,5"', pattern: 'FLEX 3 (?!KDS)[^;]*18,5"', specs: ['Zgodność'] },
@@ -2072,7 +2080,8 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Cena netto": "Cena netto najtańszego rozmiaru. Ceny pozostałych rozmiarów podaje tabela wersji na karcie produktu. Stojaki i moduły kupuje się osobno."
   },
   "akcesoria-do-kioskow": {
-    "Rodzaj akcesorium": "Wyposażenie kiosku SUNMI FLEX 3.\n• Stojak podłogowy i stojak na ladę — ustawiają ekran; stojaki Retail i Restaurant mają drukarkę w zestawie.\n• Moduł, kamera i uchwyt POS — odczyt kart i kodów, sygnalizacja stanu, rozpoznawanie twarzy i terminal płatniczy przy ekranie.",
+    "Rodzaj akcesorium": "Wyposażenie kiosku.\n• Stojak podłogowy i stojak na ladę — ustawiają ekran SUNMI FLEX 3; stojaki Retail i Restaurant mają drukarkę w zestawie.\n• Moduł, kamera i uchwyt POS — odczyt kart i kodów, sygnalizacja stanu, rozpoznawanie twarzy i terminal płatniczy przy ekranie SUNMI FLEX 3.\n• Moduł skanera — skaner SR500 do Zebra KC401 z kątem skanowania +25°, 0° lub −25°.\n• Uchwyt — montaż Zebra KC401 na ścianie, na słupie albo z drukarką w stanowisku PrintKiosk.\n• Zasilanie — zasilacz 36 W i przewód sieciowy C5 do Zebra KC401.",
+    "Zgodny kiosk": "Kiosk, do którego pasuje akcesorium.\n• SUNMI FLEX 3 — stojaki, moduły, kamera i uchwyt POS; zgodne rozmiary podaje filtr „Zgodny rozmiar”.\n• Zebra KC401 — moduły skanera, uchwyty i zasilanie; uchwyty Zebra pasują także do CC6000.",
     "Zgodny rozmiar": "Rozmiar ekranu SUNMI FLEX 3, do którego pasuje akcesorium. Stojaki Retail pasują tylko do ekranu 22\". Zgodność z wersją 15,6\" prosimy potwierdzić przed zamówieniem."
   },
   "akcesoria-do-komputerow-pos": {
