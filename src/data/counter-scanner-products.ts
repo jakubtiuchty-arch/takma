@@ -6,10 +6,10 @@ export const counterScannerProducts: Product[] = [
     "slug": "datalogic-magellan-3510hsi",
     "name": "Datalogic Magellan 3510HSi",
     "seoH1": "Datalogic Magellan 3510HSi",
-    "seoTitle": "Datalogic Magellan 3510HSi — skaner ladowy 1D/2D zasilany z USB",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 3510HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, zasilany z portu USB-A 5 V. Czytnik Datalogic 3510HSi, IP52, 3 lata gwarancji. 3510HSi Datalogic z płytą szafirową lub Tin Oxide. PN: M3510-010200, M3511-010210-00604, M3513-010210-00604.",
+    "seoTitle": "Datalogic Magellan 3510HSi — skaner do lady, zasilanie USB",
+    "seoDescription": "Datalogic Magellan 3510HSi: poziomy skaner ladowy 1D/2D do kasy, zasilany z jednego portu USB 5 V. Odczyt z ekranów telefonów, IP52, 3 lata gwarancji.",
     "shortDescription": "Datalogic Magellan 3510HSi — poziomy skaner ladowy 1D/2D do zabudowy w ladzie, zasilany z jednego portu USB-A 5 V, IP52, 3 lata gwarancji.",
-    "description": "Datalogic Magellan 3510HSi to poziomy skaner ladowy 1D i 2D do zabudowy w blacie kasy. Czytnik odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Data Matrix i Aztec, z etykiet i z ekranów telefonów.\n\nMatryca ma 1280 × 800 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość). Część pod blatem ma głębokość 8,7 cm. Masa wynosi 0,98 kg. 3510HSi przechwytuje obraz i ma port USB AUX. Port AUX wymaga zasilacza albo zasilania 12 V z hosta.\n\nM3510-010200 nie zawiera górnej płyty, mocowania, przewodu ani zasilacza. M3511-010210-00604 ma płytę szafirową, a M3513-010210-00604 płytę Tin Oxide. Oba zestawy zawierają standardowe mocowanie i przewód USB 4,5 m (15 ft), bez zasilacza. Osobny przewód USB-A z wejściem zasilania ma PN [90A052292](/produkt/datalogic-magellan-90a052292).\n\nSkaner pobiera zasilanie z jednego portu USB-A 5 V. Przyjmuje też zasilanie DC 5–12 V z [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Obudowa ma ochronę IP52. Temperatura pracy wynosi od 10°C do 40°C. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 3510HSi to poziomy skaner ladowy 1D i 2D do zabudowy w blacie kasy. Pobiera zasilanie z jednego portu USB-A 5 V, więc przy kasie nie potrzeba zasilacza ani gniazda sieciowego. Odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem, z etykiet oraz z ekranów telefonów.\n\n## Kody i matryca 1280 × 800\n\nSkaner odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Data Matrix i Aztec. Matryca ma 1280 × 800 pikseli. 3510HSi przechwytuje obraz i ma port USB AUX. Port AUX wymaga zasilacza albo zasilania 12 V z hosta.\n\n## Wymiary i zestawy\n\nObudowa ma 15,2 × 15,2 cm, a część pod blatem 8,7 cm głębokości. Skaner waży 0,98 kg, ma ochronę IP52 i pracuje w temperaturze od 10°C do 40°C. M3510-010200 nie zawiera górnej płyty, mocowania, przewodu ani zasilacza. M3511-010210-00604 ma płytę szafirową, a M3513-010210-00604 płytę Tin Oxide. Oba zestawy zawierają standardowe mocowanie i przewód USB 4,5 m (15 ft), bez zasilacza.\n\nPrzewód USB-A z wejściem zasilania ma PN [90A052292](/produkt/datalogic-magellan-90a052292). Do zasilania DC 5–12 V służą [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Taką samą obudowę i mocowanie 11-0027 ma wydajniejszy [Magellan 3550HSi](/produkt/datalogic-magellan-3550hsi), zasilany 12 V.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -108,8 +108,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasa z wolnym portem USB, bez gniazda na zasilacz",
+      "Kasy samoobsługowe w zabudowie",
+      "Lada przygotowana pod mocowanie 11-0027"
     ],
     "faq": [
       {
@@ -119,10 +120,6 @@ export const counterScannerProducts: Product[] = [
       {
         "question": "Czy port AUX w Magellan 3510HSi działa przy zasilaniu z USB 5 V?",
         "answer": "Nie. Port USB AUX działa przy zasilaniu z zasilacza 90ACC0358 albo przy zasilaniu 12 V z hosta."
-      },
-      {
-        "question": "Czy Datalogic Magellan 3510HSi zawiera wagę?",
-        "answer": "Nie. Magellan 3510HSi nie ma funkcji ważenia."
       },
       {
         "question": "Czy każda wersja Magellan 3510HSi ma przewód i zasilacz?",
@@ -142,17 +139,17 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-magellan-3550hsi",
     "slug": "datalogic-magellan-3550hsi",
     "name": "Datalogic Magellan 3550HSi",
     "seoH1": "Datalogic Magellan 3550HSi",
-    "seoTitle": "Datalogic Magellan 3550HSi — skaner ladowy 1D/2D, zasilanie 12 V",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 3550HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, zasilanie 12 V DC. Czytnik Datalogic 3550HSi, IP52, 3 lata gwarancji. 3550HSi Datalogic z płytą szafirową, mocowaniem i zasilaczem EU. PN: M3550-010200, M3551-010210-07604.",
+    "seoTitle": "Datalogic Magellan 3550HSi — skaner ladowy 1D/2D 12 V",
+    "seoDescription": "Datalogic Magellan 3550HSi: wydajny poziomy skaner ladowy 1D/2D do kas o dużym ruchu. Zasilanie 12 V, zasilany port AUX, IP52, 3 lata gwarancji.",
     "shortDescription": "Datalogic Magellan 3550HSi — poziomy skaner ladowy 1D/2D do zabudowy w ladzie, zasilanie 12 V DC, port USB AUX, IP52, 3 lata gwarancji.",
-    "description": "Datalogic Magellan 3550HSi to poziomy skaner ladowy 1D i 2D do kas o dużym natężeniu ruchu. Czytnik odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Data Matrix i Aztec, z etykiet i z ekranów telefonów.\n\nMatryca ma 1280 × 1024 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość). Część pod blatem ma głębokość 8,7 cm. Masa wynosi 0,98 kg. Skaner przechwytuje obraz i ma zasilany port USB AUX. Czytnik dla klienta (CSS) jest opcją. Nie wchodzi w skład zestawów.\n\nM3550-010200 nie ma górnej płyty, mocowania, przewodu ani zasilacza. M3551-010210-07604 zawiera płytę szafirową, standardowe mocowanie, przewód USB-A 4,5 m (15 ft) oraz zasilacz EU z przewodem sieciowym.\n\n3550HSi wymaga zasilania 12 V DC. Nie pracuje z zasilaniem 5 V z portu USB. Do zasilania zewnętrznego służą [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Przewód USB-A z wejściem zasilania ma PN [90A052292](/produkt/datalogic-magellan-90a052292). Obudowa ma ochronę IP52. Temperatura pracy wynosi od 10°C do 40°C. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 3550HSi to wydajny poziomy skaner ladowy 1D i 2D do kas o dużym natężeniu ruchu, na przykład w supermarketach. Odczytuje kod przesuwany nad oknem i kod zatrzymany nad oknem, także z ekranu telefonu.\n\n## Matryca 1280 × 1024 i zasilany port AUX\n\nMatryca ma 1280 × 1024 pikseli. Skaner obsługuje kody liniowe i GS1 DataBar oraz kody 2D: PDF417, QR, Data Matrix i Aztec. Przechwytuje obraz i ma zasilany port USB AUX na dodatkowe urządzenie. Czytnik dla klienta (CSS) jest opcją i nie wchodzi w skład zestawów.\n\n## Zasilanie 12 V i zestawy\n\n3550HSi wymaga zasilania 12 V DC i nie pracuje z zasilaniem 5 V z portu USB. M3550-010200 nie ma górnej płyty, mocowania, przewodu ani zasilacza. M3551-010210-07604 zawiera płytę szafirową, standardowe mocowanie, przewód USB-A 4,5 m (15 ft) oraz zasilacz EU z przewodem sieciowym. Osobno dostępne są [zasilacz 90ACC0358](/produkt/datalogic-magellan-90acc0358), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i przewód USB-A z wejściem zasilania [90A052292](/produkt/datalogic-magellan-90a052292).\n\nObudowa ma 15,2 × 15,2 cm i 8,7 cm głębokości pod blatem. Masa wynosi 0,98 kg, a ochrona obudowy IP52. Wersja zasilana z jednego portu USB 5 V to [Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -244,8 +241,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy o dużym ruchu w supermarketach",
+      "Odczyt kuponów i kart z ekranów telefonów",
+      "Stanowisko z dodatkowym urządzeniem na porcie AUX"
     ],
     "faq": [
       {
@@ -253,8 +251,8 @@ export const counterScannerProducts: Product[] = [
         "answer": "Nie. Magellan 3550HSi wymaga zasilania 12 V DC. Zasilanie 5 V z jednego portu USB-A obsługuje Magellan 3510HSi."
       },
       {
-        "question": "Czy Datalogic Magellan 3550HSi zawiera wagę?",
-        "answer": "Nie. Magellan 3550HSi nie ma funkcji ważenia."
+        "question": "Czy Magellan 3550HSi odczyta kod z ekranu telefonu?",
+        "answer": "Tak. 3550HSi odczytuje kody 1D i 2D z etykiet oraz z ekranów telefonów, na przykład kupony i karty lojalnościowe."
       },
       {
         "question": "Czy każda wersja Magellan 3550HSi ma przewód i zasilacz?",
@@ -262,7 +260,7 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Jakie mocowanie pasuje do Magellan 3550HSi?",
-        "answer": "Standardowe mocowanie blatowe ma PN 11-0027. Pasuje też mocowanie dzielone 90ACC0355."
+        "answer": "Do 3550HSi pasuje standardowe mocowanie blatowe 11-0027, to samo co do 3510HSi, oraz mocowanie dzielone 90ACC0355."
       }
     ],
     "downloads": [
@@ -274,7 +272,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-magellan-3700hsi",
@@ -282,9 +280,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Datalogic Magellan 3700HSi",
     "seoH1": "Datalogic Magellan 3700HSi",
     "seoTitle": "Datalogic Magellan 3700HSi — poziomy skaner ladowy 1D/2D",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 3700HSi — poziomy czytnik kodów 1D/2D do zabudowy w ladzie, wersje 3710HSi i 3750HSi z kolorowym obrazem i AUX. Czytnik Datalogic 3700HSi, IP52, 3 lata gwarancji. PN: M3711-010200, M3711-010210-00604, M3751-010200.",
+    "seoDescription": "Datalogic Magellan 3700HSi: poziomy skaner ladowy 1D/2D z płytą szafirową i odczytem GS1 Digital Link. Wersja 3750HSi z kolorowym obrazem i portem AUX.",
     "shortDescription": "Datalogic Magellan 3700HSi — poziomy skaner ladowy 1D/2D z płytą szafirową, wersje 3710HSi i 3750HSi (kolorowy obraz, port AUX), IP52, 3 lata gwarancji.",
-    "description": "Datalogic Magellan 3700HSi to rodzina poziomych skanerów ladowych 1D i 2D do zabudowy w blacie kasy. Skaner odczytuje kody liniowe, GS1 DataBar, GS1 Digital Link, PDF417, QR, Data Matrix i Aztec. Odczytuje kody z etykiet i z ekranów telefonów.\n\nMatryca z migawką globalną ma 1360 × 1120 pikseli. Obudowa ma 15,2 × 15,2 cm (długość × szerokość), a część pod blatem 8,7 cm głębokości. Masa wynosi 0,90 kg. Wszystkie wersje mają płytę szafirową.\n\n3710HSi przechwytuje obraz w skali szarości. 3750HSi przechwytuje także obraz kolorowy i ma zasilany port USB AUX. Port AUX wymaga zasilania 12 V, 12 V OEM-USB albo USB-C z zasilaniem 9–12 V. Kolorowe wideo ma wersja 3770HSi.\n\nM3711-010200 i M3751-010200 nie zawierają mocowania, zasilacza ani przewodu. M3711-010210-00604 zawiera standardowe mocowanie i przewód USB-A z wejściem zasilania 4,5 m (15 ft), bez zasilacza. Do zasilania zewnętrznego służą [zasilacz 12 V 90ACC0193](/produkt/datalogic-magellan-90acc0193) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940). Obudowa ma ochronę IP52. Gwarancja producenta trwa 3 lata. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 3700HSi to rodzina poziomych skanerów ladowych 1D i 2D z płytą szafirową, do zabudowy w blacie kasy. Odczytuje też kody GS1 Digital Link, czyli kody QR z danymi produktu, które pojawiają się na opakowaniach obok kodów EAN.\n\n## Matryca z migawką globalną 1360 × 1120\n\nMatryca z migawką globalną ma 1360 × 1120 pikseli. Skaner dekoduje także kody liniowe, GS1 DataBar, PDF417, Data Matrix i Aztec z etykiet i ekranów telefonów. Obudowa ma wymiary 15,2 × 15,2 cm i wchodzi 8,7 cm pod blat. Masa wynosi 0,90 kg, a ochrona obudowy IP52.\n\n## 3710HSi czy 3750HSi\n\n3710HSi przechwytuje obraz w skali szarości. 3750HSi przechwytuje także obraz kolorowy i ma zasilany port USB AUX. Port AUX wymaga zasilania 12 V, 12 V OEM-USB albo USB-C z zasilaniem 9–12 V. Kolorowe wideo nagrywa dopiero wersja 3770HSi.\n\nM3711-010200 i M3751-010200 nie zawierają mocowania, zasilacza ani przewodu. M3711-010210-00604 zawiera standardowe mocowanie i przewód USB-A z wejściem zasilania 4,5 m (15 ft), bez zasilacza. Do zasilania zewnętrznego służą [zasilacz 12 V 90ACC0193](/produkt/datalogic-magellan-90acc0193) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940).\n\nModel zasilany z jednego portu USB 5 V to [Magellan 3510HSi](/produkt/datalogic-magellan-3510hsi).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -388,8 +386,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy z odczytem kodów GS1 Digital Link",
+      "Przechwytywanie kolorowego obrazu (3750HSi)",
+      "Stanowiska z płytą szafirową"
     ],
     "faq": [
       {
@@ -397,8 +396,8 @@ export const counterScannerProducts: Product[] = [
         "answer": "Nie. 3750HSi przechwytuje kolorowe obrazy. Kolorowe wideo nagrywa wersja 3770HSi."
       },
       {
-        "question": "Czy Datalogic Magellan 3700HSi zawiera wagę?",
-        "answer": "Nie. Magellan 3700HSi nie ma funkcji ważenia."
+        "question": "Czy Magellan 3700HSi odczytuje GS1 Digital Link?",
+        "answer": "Tak. 3700HSi odczytuje kody GS1 Digital Link, a także GS1 DataBar, QR, Data Matrix i Aztec."
       },
       {
         "question": "Czy każda wersja Magellan 3700HSi ma przewód i zasilacz?",
@@ -418,7 +417,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-magellan-9550i",
@@ -426,9 +425,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Datalogic Magellan 9550i",
     "seoH1": "Datalogic Magellan 9550i",
     "seoTitle": "Datalogic Magellan 9550i — dwuokienkowy skaner ladowy 1D/2D",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 9550i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D do kas, płyta krótka, średnia lub długa. Czytnik Datalogic 9550i, wersje Adaptive Scale. 9550i Datalogic. PN: 957011001, 957011001-00053, 957011001-00351, 957013101, 957022201-00050, 957022201-00312.",
+    "seoDescription": "Datalogic Magellan 9550i: dwuokienkowy skaner ladowy (bioptyczny) 1D/2D do kas. Płyta krótka, średnia lub długa, wersje Adaptive Scale do wagi kasowej.",
     "shortDescription": "Datalogic Magellan 9550i — dwuokienkowy skaner ladowy 1D/2D do kas obsługowych i samoobsługowych, płyta krótka, średnia lub długa, wersje Adaptive Scale, 1 rok gwarancji.",
-    "description": "Datalogic Magellan 9550i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Okno poziome i okno pionowe odczytują kod z kilku stron towaru. Skaner odczytuje kody liniowe, GS1 DataBar, GS1 Digital Link, PDF417, QR, Micro QR, Data Matrix i Aztec.\n\nDwie monochromatyczne matryce 1 MP z migawką globalną pracują z prędkością 40 klatek na sekundę. Wieża ma 12,9 cm nad blatem. Część pod blatem ma 10,4 cm głębokości, a szerokość wynosi 29,2 cm. Długość zależy od płyty: krótka 35,2 cm, średnia 39,9 cm, długa 50,7 cm. Kolorowa kamera USB jest opcją.\n\nWszystkie wersje w tabeli to skanery bez wagi (Scanner Only). Wersje Adaptive Scale współpracują z wagą innego producenta, którą zamawia się osobno. 957011001-00351 i 957022201-00312 zawierają zasilacz EU z przewodem sieciowym. 957011001-00053 ma przewód USB POT, bez zasilacza.\n\nSkaner wymaga zasilania 12 V DC. Do zasilania zewnętrznego służą [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Interfejsy to RS-232 i USB (COM, OEM, Keyboard). Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 9550i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych w supermarketach. Okno poziome i okno pionowe w wieży odczytują kod z kilku stron towaru, więc kasjer rzadziej obraca produkt. Wersje Adaptive Scale współpracują z wagą kasową innego producenta.\n\n## Dwie matryce 1 MP i GS1 Digital Link\n\nDwie monochromatyczne matryce 1 MP z migawką globalną pracują z prędkością 40 klatek na sekundę. Skaner odczytuje kody liniowe, GS1 DataBar, GS1 Digital Link, PDF417, QR, Micro QR, Data Matrix i Aztec. Kolorowa kamera USB jest opcją.\n\n## Trzy długości płyty\n\nWieża ma 12,9 cm nad blatem. Część pod blatem ma 10,4 cm głębokości, a szerokość wynosi 29,2 cm. Płyta krótka ma 35,2 cm, średnia 39,9 cm, a długa 50,7 cm. 957011001 ma płytę krótką, 957013101 długą ze stałą prowadnicą, a 957022201 średnią ze składaną prowadnicą.\n\nWszystkie wersje to skanery bez wagi (Scanner Only). Wersje Adaptive Scale są przygotowane do wagi innego producenta, którą zamawia się osobno. 957011001-00351 i 957022201-00312 zawierają zasilacz EU z przewodem sieciowym, a 957011001-00053 przewód USB POT bez zasilacza. Skaner wymaga zasilania 12 V DC, które dostarcza [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194) z [przewodem sieciowym 6003-0940](/produkt/datalogic-powerscan-6003-0940). Do USB służy [przewód 90A052135](/produkt/datalogic-magellan-90a052135). Interfejsy to RS-232 i USB (COM, OEM, Keyboard).\n\nCztery matryce zamiast dwóch ma [Magellan 9600i](/produkt/datalogic-magellan-9600i).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -568,8 +567,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy obsługowe w supermarketach",
+      "Kasy z wagą innego producenta (wersje Adaptive Scale)",
+      "Kasy samoobsługowe z długą płytą"
     ],
     "faq": [
       {
@@ -594,7 +594,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-magellan-9600i",
@@ -602,9 +602,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Datalogic Magellan 9600i",
     "seoH1": "Datalogic Magellan 9600i",
     "seoTitle": "Datalogic Magellan 9600i — dwuokienkowy skaner ladowy 1D/2D",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 9600i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D do kas, cztery matryce 1 MP, wieża 12,9 cm. Czytnik Datalogic 9600i, płyta krótka lub średnia. 9600i Datalogic. PN: 96101001000-000100, 96101001000-004210, 96116001000-004530.",
+    "seoDescription": "Datalogic Magellan 9600i: dwuokienkowy skaner ladowy 1D/2D z czterema matrycami 1 MP i wieżą 12,9 cm. Do kas obsługowych i samoobsługowych.",
     "shortDescription": "Datalogic Magellan 9600i — dwuokienkowy skaner ladowy 1D/2D do kas obsługowych i samoobsługowych, cztery matryce 1 MP, wieża 12,9 cm, 1 rok gwarancji.",
-    "description": "Datalogic Magellan 9600i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas obsługowych i samoobsługowych. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix i Aztec, z towarów i z ekranów.\n\nSystem QuadVision ma cztery monochromatyczne matryce 1 MP z migawką globalną: dwie w oknie poziomym i dwie w pionowym. Wieża ma 12,9 cm nad blatem. Część pod blatem ma 10,2 cm głębokości, a szerokość wynosi 29,2 cm. Płyta krótka ma 35,2 cm, a średnia 39,9 cm długości.\n\nWersje w tabeli to skanery bez wagi (Scanner Only). 96101001000-000100 ma płytę krótką i nie zawiera zasilacza ani przewodu. 96101001000-004210 ma płytę krótką, zasilacz EU z przewodem sieciowym i przewód RS-232 WN. 96116001000-004530 ma średnią płytę Flush, zasilacz EU z przewodem sieciowym i przewód USB POT. Kamery kolorowe i czytnik dla klienta są opcjami. Nie wchodzą w skład zestawów.\n\nSkaner wymaga zasilania 12 V DC. Do zasilania zewnętrznego służą [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135). Gwarancja producenta trwa 1 rok. Niższą wieżę (6,8 cm) ma [Magellan 9900i](/produkt/datalogic-magellan-9900i). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 9600i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas o dużym ruchu, obsługowych i samoobsługowych. Cztery matryce odczytują kod z kilku stron towaru, także z ekranu telefonu.\n\n## Cztery matryce QuadVision\n\nSystem QuadVision ma cztery monochromatyczne matryce 1 MP z migawką globalną: dwie w oknie poziomym i dwie w pionowym. Skaner odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix i Aztec. Kamery kolorowe i czytnik dla klienta są opcjami i nie wchodzą w skład zestawów.\n\n## Wieża 12,9 cm i płyta krótka lub średnia\n\nWieża ma 12,9 cm nad blatem. Część pod blatem ma 10,2 cm głębokości, a szerokość 29,2 cm. Płyta krótka ma 35,2 cm, a średnia 39,9 cm długości. Oferowane wersje to skanery bez wagi (Scanner Only). 96101001000-000100 ma płytę krótką, bez zasilacza i przewodu. 96101001000-004210 ma płytę krótką, zasilacz EU z przewodem sieciowym i przewód RS-232 WN. 96116001000-004530 ma średnią płytę Flush, zasilacz EU z przewodem sieciowym i przewód USB POT.\n\nZasilanie 12 V DC zapewniają [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194) i [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940), a połączenie USB [przewód 90A052135](/produkt/datalogic-magellan-90a052135). Niską wieżę 6,8 cm i ScaleSentry ma [Magellan 9900i](/produkt/datalogic-magellan-9900i). Dwie matryce i płytę długą ma [Magellan 9550i](/produkt/datalogic-magellan-9550i).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -699,8 +699,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy o dużym ruchu z odczytem z kilku stron towaru",
+      "Kasy samoobsługowe",
+      "Odczyt kodów z ekranów telefonów"
     ],
     "faq": [
       {
@@ -709,7 +710,7 @@ export const counterScannerProducts: Product[] = [
       },
       {
         "question": "Czy Datalogic Magellan 9600i zawiera wagę?",
-        "answer": "Nie. Wersje 9600i w sklepie to skanery bez wagi (Scanner Only)."
+        "answer": "Nie. Oferowane wersje 9600i to skanery bez wagi (Scanner Only)."
       },
       {
         "question": "Czy każda wersja Magellan 9600i ma przewód i zasilacz?",
@@ -725,17 +726,17 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "datalogic-magellan-9900i",
     "slug": "datalogic-magellan-9900i",
     "name": "Datalogic Magellan 9900i",
     "seoH1": "Datalogic Magellan 9900i",
-    "seoTitle": "Datalogic Magellan 9900i — dwuokienkowy skaner ladowy, niska wieża",
-    "seoDescription": "Skaner ladowy Datalogic Magellan 9900i — dwuokienkowy (bioptyczny) czytnik kodów 1D/2D z niską wieżą 6,8 cm, cztery matryce 1 MP, ScaleSentry. Czytnik Datalogic 9900i do kas obsługowych i samoobsługowych. 9900i Datalogic. PN: 99111001000-000100.",
+    "seoTitle": "Datalogic Magellan 9900i — skaner bioptyczny, niska wieża",
+    "seoDescription": "Datalogic Magellan 9900i: dwuokienkowy skaner ladowy 1D/2D z niską wieżą 6,8 cm, czterema matrycami i ScaleSentry. Do kas o dużym ruchu.",
     "shortDescription": "Datalogic Magellan 9900i — dwuokienkowy skaner ladowy 1D/2D z niską wieżą 6,8 cm, średnią płytą i ScaleSentry, 1 rok gwarancji.",
-    "description": "Datalogic Magellan 9900i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D z niską wieżą 6,8 cm. Służy do kas obsługowych i samoobsługowych. Odczytuje kody liniowe, GS1 DataBar, PDF417, QR, Micro QR, Data Matrix i Aztec.\n\nSystem QuadVision ma cztery monochromatyczne matryce 1 MP z migawką globalną: dwie w oknie poziomym i dwie w pionowym. Część pod blatem ma 10,2 cm głębokości, a szerokość wynosi 29,2 cm. Średnia płyta ma 39,9 cm długości.\n\nWersja 99111001000-000100 to skaner bez wagi (Scanner Only). Ma średnią płytę, stałą prowadnicę, mocowanie półkowe i ScaleSentry. ScaleSentry kontroluje boki płyty wiązką podczerwieni i wykrywa towar położony poza płytą. Moduł odczytu z góry TDR i kamery kolorowe są opcjami. Nie wchodzą w skład zestawu.\n\n99111001000-000100 nie zawiera zasilacza ani przewodu. Skaner wymaga zasilania 12 V DC. Zasilanie zewnętrzne wymaga [zasilacza 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewodu sieciowego 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewodu USB 90A052135](/produkt/datalogic-magellan-90a052135). Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Datalogic Magellan 9900i to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D z niską wieżą 6,8 cm. Niska wieża mniej zasłania stanowisko kasjera i klienta. Skaner pracuje w kasach obsługowych i samoobsługowych.\n\n## QuadVision i ScaleSentry\n\nCztery matryce 1 MP z migawką globalną pracują po dwie w oknie poziomym i pionowym (QuadVision). Skaner obsługuje kody 1D i GS1 DataBar oraz kody 2D: PDF417, QR, Micro QR, Data Matrix i Aztec. ScaleSentry kontroluje boki płyty wiązką podczerwieni i wykrywa towar położony poza płytą. Moduł odczytu z góry TDR i kamery kolorowe są opcjami.\n\n## Wersja 99111001000-000100\n\nTo skaner bez wagi (Scanner Only) ze średnią płytą 39,9 cm, stałą prowadnicą i mocowaniem półkowym. Pod blatem skaner zajmuje 10,2 cm głębokości przy szerokości 29,2 cm. Zestaw nie zawiera zasilacza ani przewodu. Skaner wymaga 12 V DC, do czego potrzebne są [zasilacz 90ACC0194](/produkt/datalogic-magellan-90acc0194), [przewód sieciowy 6003-0940](/produkt/datalogic-powerscan-6003-0940) i [przewód USB 90A052135](/produkt/datalogic-magellan-90a052135).\n\nWyższą wieżę 12,9 cm i płytę krótką ma [Magellan 9600i](/produkt/datalogic-magellan-9600i).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -817,8 +818,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy z niską wieżą 6,8 cm",
+      "Kasy samoobsługowe z kontrolą towaru poza płytą (ScaleSentry)",
+      "Stanowiska z opcjonalnym modułem odczytu z góry TDR"
     ],
     "faq": [
       {
@@ -843,7 +845,7 @@ export const counterScannerProducts: Product[] = [
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "zebra-sp7201-h",
@@ -851,9 +853,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Zebra SP7201-H",
     "seoH1": "Zebra SP7201-H",
     "seoTitle": "Zebra SP7201-H — poziomy skaner ladowy 1D/2D do zabudowy",
-    "seoDescription": "Skaner ladowy Zebra SP7201-H: poziomy czytnik 1D/2D do zabudowy w blacie kasy, matryca 2,3 MP, zasilanie z portu USB 5 V, IP52, gwarancja 3 lata. Skaner Zebra SP7201-H, SP7201-H Zebra. PN: SP7201-SH00004DCWW (DLC), SP7201-SH00004SCWW (szafirowe).",
+    "seoDescription": "Zebra SP7201-H: poziomy skaner ladowy 1D/2D do kasy, zasilany z portu USB 5 V, bez zasilacza. Matryca 2,3 MP, IP52, 3 lata gwarancji.",
     "shortDescription": "Zebra SP7201-H — poziomy skaner ladowy 1D/2D do zabudowy w blacie kasy. Matryca 2,3 MP, zasilanie z portu USB 5 V, bez portu AUX.",
-    "description": "Zebra SP7201-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Służy do odczytu kodów w zabudowanym stanowisku POS.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy [mocowanie Zebra BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h), sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nSP7201-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Zasilacz nie jest potrzebny. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Wybór SP7201-H lub SP7208-H\n\nSP7201-H nie ma portu AUX. Port na dodatkowy skaner ręczny ma [Zebra SP7208-H](/produkt/zebra-sp7208-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra SP7201-H to poziomy skaner ladowy 1D i 2D do zabudowy w blacie kasy, zasilany z portu USB 5 V kasy lub komputera. Nie potrzebuje zasilacza. Zebra projektuje SP72-H jako zamiennik montowany w otworach popularnych starszych skanerów jednopłaszczyznowych.\n\n## Matryca 2,3 MP i odczyt z telefonów\n\nUkład obrazujący ma rozdzielczość 1920 × 1200 pikseli. Skaner odczytuje kody 1D i 2D, w tym QR i Data Matrix, z etykiet i ekranów telefonów. Obudowa ma 15,2 × 15,2 × 8,6 cm i ochronę IP52. Opcjonalnie obsługuje systemy EAS Checkpoint i Sensormatic.\n\n## Szkło DLC albo szafirowe\n\nSP7201-SH00004DCWW ma szkło z powłoką DLC i waży 834 g. SP7201-SH00004SCWW ma szkło szafirowe i waży 864 g.\n\n## Przewód i mocowanie\n\nDo USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), a do montażu na równi z blatem [mocowanie BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h). Oba zamawia się osobno. Połączenie RS-232 wymaga innego przewodu. SP7201-H nie ma portu AUX.\n\nPort AUX na dodatkowy skaner ręczny ma [Zebra SP7208-H](/produkt/zebra-sp7208-h).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -867,7 +869,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/zebra-sp7201-h-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Zebra SP7201-H — widok urządzenia pod kątem",
+      "Zebra SP7201-H — poziomy skaner ladowy, okno odczytu, widok pod kątem",
       "Zebra SP7201-H — obudowa SP72-H, widok z lewej",
       "Zebra SP7201-H — obudowa SP72-H, widok z prawej"
     ],
@@ -965,8 +967,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasy z zasilaniem skanera z portu USB 5 V",
+      "Wymiana starszego skanera jednopłaszczyznowego w ladzie",
+      "Kasy samoobsługowe z zasilaniem z USB"
     ],
     "faq": [
       {
@@ -974,8 +977,8 @@ export const counterScannerProducts: Product[] = [
         "answer": "Tak. SP7201-H pracuje z zasilaniem 5 V z portu USB kasy lub komputera. Zasilacz nie jest potrzebny."
       },
       {
-        "question": "Czy każdy wariant ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "question": "Czy SP7201-H ma przewód w zestawie?",
+        "answer": "Nie. Przewód USB CBA-U21-S07ZBR i mocowanie BRKT-BM0072-00 zamawia się osobno. Zasilacz nie jest potrzebny, bo skaner pobiera 5 V z portu USB."
       },
       {
         "question": "Czy Zebra SP72-H zastąpi starszy skaner w ladzie?",
@@ -1005,9 +1008,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Zebra SP7208-H",
     "seoH1": "Zebra SP7208-H",
     "seoTitle": "Zebra SP7208-H — poziomy skaner ladowy 1D/2D z portem AUX",
-    "seoDescription": "Skaner ladowy Zebra SP7208-H: poziomy czytnik 1D/2D do zabudowy w blacie kasy, port AUX na skaner ręczny, matryca 2,3 MP, IP52, gwarancja 3 lata. Skaner Zebra SP7208-H, SP7208-H Zebra. PN: SP7208-SH00004DCWW (DLC), SP7208-SH00004SCWW (szafirowe).",
+    "seoDescription": "Zebra SP7208-H: poziomy skaner ladowy 1D/2D z portem AUX na skaner ręczny. Matryca 2,3 MP, zasilanie z USB lub 12 V, IP52, 3 lata gwarancji.",
     "shortDescription": "Zebra SP7208-H — poziomy skaner ladowy 1D/2D do zabudowy w blacie kasy. Port AUX na dodatkowy skaner ręczny, matryca 2,3 MP.",
-    "description": "Zebra SP7208-H to poziomy skaner ladowy 1D i 2D z matrycą 2,3 MP. Ma port AUX do dodatkowego czytnika.\n\n## Poziome okno w ladzie\n\nWersja H jest przeznaczona do montażu poziomego. Nie jest pionową wersją V. Odczytuje kody z etykiet i ekranów telefonów. Układ obrazujący ma rozdzielczość 1920 × 1200 pikseli. Obudowa ma ochronę IP52. Do montażu na równi z blatem służy [mocowanie Zebra BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h), sprzedawane osobno.\n\n## Szkło DLC lub szafirowe\n\nPokazane PN różnią się płytą odczytu. DCWW oznacza szkło z powłoką DLC. SCWW oznacza szkło szafirowe. Pozostałe parametry są wspólne i znajdują się w specyfikacji.\n\n## Połączenie z kasą\n\nBez dodatkowego skanera SP7208-H pobiera zasilanie 5 V z portu USB kasy lub komputera. Do USB służy [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22), sprzedawany osobno. Do kasy z portem USB Power Plus 12 V służy [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72). Połączenie RS-232 wymaga innego przewodu. Gwarancja producenta trwa 3 lata.\n\n## Port AUX w SP7208-H\n\nSP7208-H ma port AUX (USB-A) na dodatkowy skaner ręczny. Praca z dodatkowym skanerem wymaga zasilania 11–13 V. Jeśli kasa ma port USB Power Plus, [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72) dostarcza 12 V i zasilacz nie jest potrzebny. Przy zwykłym porcie USB-A, aby korzystać z portu AUX, potrzebujesz poniższych elementów:\n\n- [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w),\n- [przewodu DC CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376),\n- [przewodu sieciowego EU 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Poziome PN z tej karty nie zawierają kolorowej kamery z wersji SP7208-V. Wersja bez portu AUX to [Zebra SP7201-H](/produkt/zebra-sp7201-h). Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra SP7208-H to poziomy skaner ladowy 1D i 2D z portem AUX (USB-A), do którego podłącza się dodatkowy skaner ręczny, na przykład do dużych towarów, których nie da się przesunąć nad oknem. Wersja H montuje się poziomo w blacie, w odróżnieniu od pionowej SP72-V.\n\n## Zasilanie z USB 5 V lub 12 V\n\nBez dodatkowego skanera SP7208-H pobiera zasilanie 5 V z portu USB kasy lub komputera przez [przewód CBA-U21-S07ZBR](/produkt/zebra-kabel-usb-ds22). Praca z dodatkowym skanerem wymaga zasilania 11–13 V. Kasa z portem USB Power Plus dostarcza 12 V przez [przewód CBA-U23-S07ZBR](/produkt/zebra-kabel-usb-power-plus-sp72) i zasilacz nie jest wtedy potrzebny. Przy zwykłym porcie USB-A praca z portem AUX wymaga poniższych elementów:\n\n- [zasilacz Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w),\n- [przewód DC CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376),\n- [przewód sieciowy EU 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera.\n\n## Matryca 2,3 MP, szkło i montaż\n\nMatryca ma 1920 × 1200 pikseli i odczytuje kody 1D i 2D z etykiet i ekranów telefonów. Obudowa ma ochronę IP52. Wersja DCWW ma szkło z powłoką DLC (834 g), a SCWW szkło szafirowe (864 g). Do montażu na równi z blatem służy [mocowanie BRKT-BM0072-00](/produkt/zebra-mocowanie-w-blacie-sp72-h), sprzedawane osobno. Poziome PN z tej karty nie mają kolorowej kamery z wersji SP7208-V.\n\nWersja bez portu AUX, zawsze zasilana z USB 5 V, to [Zebra SP7201-H](/produkt/zebra-sp7201-h).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -1021,7 +1024,7 @@ export const counterScannerProducts: Product[] = [
       "/images/products/zebra-sp7208-h-3-v1.webp"
     ],
     "imageDescriptions": [
-      "Zebra SP7208-H — widok urządzenia pod kątem",
+      "Zebra SP7208-H — poziomy skaner ladowy z portem AUX, widok pod kątem",
       "Zebra SP7208-H — obudowa SP72-H, widok z lewej",
       "Zebra SP7208-H — obudowa SP72-H, widok z prawej"
     ],
@@ -1123,8 +1126,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Kasa ze skanerem ręcznym na porcie AUX",
+      "Kasy z portem USB Power Plus 12 V",
+      "Kody z aplikacji mobilnych klientów"
     ],
     "faq": [
       {
@@ -1132,12 +1136,12 @@ export const counterScannerProducts: Product[] = [
         "answer": "Przy zwykłym porcie USB-A: zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-376A1-01 i przewód sieciowy. Przy kasie z portem USB Power Plus wystarczy przewód CBA-U23-S07ZBR, bo kasa dostarcza 12 V. Bez dodatkowego skanera SP7208-H pracuje z zasilaniem 5 V z portu USB."
       },
       {
-        "question": "Czy każdy wariant ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "question": "Czy SP7208-H działa bez zasilacza?",
+        "answer": "Tak, jeśli do portu AUX nie jest podłączony dodatkowy skaner. Wtedy SP7208-H pobiera 5 V z portu USB kasy. Z dodatkowym skanerem potrzebuje 11–13 V z portu USB Power Plus albo z zasilacza."
       },
       {
-        "question": "Czy Zebra SP72-H zastąpi starszy skaner w ladzie?",
-        "answer": "Zebra projektuje SP72-H jako zamiennik montowany w otworach popularnych starszych skanerów jednopłaszczyznowych. Do montażu służy mocowanie BRKT-BM0072-00."
+        "question": "Czym SP7208-H różni się od SP7201-H?",
+        "answer": "SP7208-H ma port AUX (USB-A) na dodatkowy skaner ręczny. SP7201-H nie ma portu AUX i zawsze pracuje z zasilaniem 5 V z portu USB."
       }
     ],
     "downloads": [
@@ -1163,9 +1167,9 @@ export const counterScannerProducts: Product[] = [
     "name": "Zebra MP7200",
     "seoH1": "Zebra MP7200",
     "seoTitle": "Zebra MP7200 — dwuokienkowy skaner ladowy 1D/2D",
-    "seoDescription": "Skaner ladowy Zebra MP7200: dwuokienkowy (bioptyczny) czytnik 1D/2D do kas o dużym ruchu, następca MP7000. Płyta średnia lub długa, wersje Scale Ready i z kolorową kamerą. Skaner Zebra MP7200, MP7200 Zebra. PN: MP7200-MNDLN000WW, MP7200-MNS0N000WW, MP7200-MNDLL000WW, MP7200-MNSLL000WW, MP7200-LNS0N000WW.",
+    "seoDescription": "Zebra MP7200: dwuokienkowy skaner ladowy 1D/2D do kas o dużym ruchu, następca MP7000. Płyta średnia lub długa, wersje Scale Ready i z kamerą.",
     "shortDescription": "Zebra MP7200 — dwuokienkowy skaner ladowy 1D/2D do kas o dużym ruchu, następca MP7000. Płyta średnia lub długa, wersje Scale Ready i z kolorową kamerą.",
-    "description": "Zebra MP7200 to dwuokienkowy skaner ladowy 1D i 2D do intensywnej obsługi kas. Warianty różnią się płytą, kamerą i przygotowaniem pod wagę.\n\n## Odczyt z dwóch stron\n\nPoziome i pionowe okno pozwalają odczytać kod podczas przesuwania towaru przez stanowisko. MP7200 ma czujnik megapikselowy. Odczytuje kody liniowe oraz QR i Data Matrix. Zastępuje wycofaną serię MP7000.\n\n## Kamera i przygotowanie pod wagę\n\nWybrane PN mają kolorową kamerę. Warianty bez kamery nie zyskują tej funkcji przez samą konfigurację programu. Wersje Scale Ready są przygotowane pod integrację z wagą. Nie zawierają kompletnej wagi ani legalizacji.\n\n## Płyta, szkło i montaż\n\nPłyta występuje w wersji średniej lub długiej, a szkło w wersji DLC lub szafirowej. Wersja średnia ma 398 × 292 mm, a długa 506 × 292 mm. Głębokość obudowy wynosi 101 mm, a wysokość 128 mm.\n\n## Zasilanie stanowiska\n\nMP7200 obsługuje USB, RS-232, IBM 46xx (RS-485) i SNAPI. Przewód USB Power Plus [CBA-U55-S12PAR](/produkt/zebra-kabel-usb-power-plus-mp7200) (3,65 m) zasila skaner 12 V z portu kasy POS. Zasilacz nie jest wtedy potrzebny. Przy zwykłym porcie USB (przewód CBA-U54-S12ZAR, 3,65 m, lub [CBA-U51-S16ZAR](/produkt/zebra-kabel-usb-5m-mp7200), 5 m) potrzebujesz poniższych elementów:\n\n- [zasilacza 50 W](/produkt/zebra-zasilacz-50w),\n- [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388),\n- [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r).\n\nElementy te nie są dołączone do skanera. Gwarancja producenta trwa 1 rok. Pozostałe modele są w kategorii [skanery ladowe](/skanery-kodow-kreskowych/ladowe).",
+    "description": "Zebra MP7200 to dwuokienkowy (bioptyczny) skaner ladowy 1D i 2D do kas o dużym ruchu w supermarketach. Zastępuje wycofaną serię MP7000. Okno poziome i pionowe odczytują kod podczas przesuwania towaru przez stanowisko.\n\n## Kamera kolorowa i wersje Scale Ready\n\nMP7200 ma czujnik megapikselowy i odczytuje kody liniowe oraz QR i Data Matrix. Kolorową kamerę mają MP7200-MNDLL000WW i MP7200-MNSLL000WW. Wersje Scale Ready (MNDLN, MNDLL i MNSLL) są przygotowane do integracji z wagą. Nie zawierają wagi ani legalizacji.\n\n## Płyta średnia lub długa\n\nPłyta średnia ma 398 × 292 mm, a długa 506 × 292 mm. Głębokość obudowy wynosi 101 mm, a wysokość 128 mm. Szkło występuje w wersji DLC lub szafirowej. Skaner ma porty dodatkowe: 3 × USB, 2 × RS-232 z zasilaniem, Checkpoint Interlock, port wyświetlacza wagi i USB-C kamery.\n\n## Zasilanie stanowiska\n\nMP7200 obsługuje USB, RS-232, IBM 46xx (RS-485) i SNAPI. Przewód USB Power Plus [CBA-U55-S12PAR](/produkt/zebra-kabel-usb-power-plus-mp7200) (3,65 m) zasila skaner 12 V z portu kasy POS, bez zasilacza. Przy zwykłym porcie USB (przewód CBA-U54-S12ZAR, 3,65 m, lub [CBA-U51-S16ZAR](/produkt/zebra-kabel-usb-5m-mp7200), 5 m) potrzebne są:\n\n- [zasilacz 50 W](/produkt/zebra-zasilacz-50w),\n- [przewód DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388),\n- [przewód sieciowy EU](/produkt/zebra-tc201-50-16000-220r).\n\nŻaden z tych elementów nie jest dołączony do skanera. Dwuokienkowy skaner Datalogic z niską wieżą to [Magellan 9900i](/produkt/datalogic-magellan-9900i).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-ladowe"
@@ -1307,8 +1311,9 @@ export const counterScannerProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "stanowiska kasowe",
-      "kasy samoobsługowe"
+      "Hipermarkety i kasy o dużym przepływie towaru",
+      "Kasy z wagą (wersje Scale Ready)",
+      "Kasy z kolorową kamerą (MNDLL, MNSLL)"
     ],
     "faq": [
       {
@@ -1316,8 +1321,8 @@ export const counterScannerProducts: Product[] = [
         "answer": "Nie. Oferowane PN dotyczą skanera. Przygotowanie do integracji z wagą nie oznacza dołączonej wagi ani jej legalizacji."
       },
       {
-        "question": "Czy każdy wariant ma przewód i zasilacz?",
-        "answer": "Nie. Zawartość zależy od PN. Sprawdź tabelę wariantów oraz opis zasilania przed zamówieniem."
+        "question": "Czy MP7200 ma przewód i zasilacz w zestawie?",
+        "answer": "Nie. Oferowane PN to sam skaner. Przewód do kasy zamawia się osobno, a przy zwykłym porcie USB także zasilacz 50 W z przewodem DC i przewodem sieciowym."
       },
       {
         "question": "Czy Zebra MP7200 obsługuje Keyboard Wedge?",

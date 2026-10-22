@@ -1141,7 +1141,7 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Skanery i czytniki ladowe 1D/2D wbudowane w blat kasy: poziome i dwuokienkowe modele Datalogic Magellan oraz Zebra.',
     seoTitle: 'Skanery ladowe i czytniki do zabudowy — Datalogic, Zebra',
-    seoDescription: 'Skanery ladowe wbudowane w ladę kasy: poziome i dwuokienkowe (bioptyczne) czytniki 1D/2D Datalogic Magellan oraz Zebra SP72 i MP7200. Ceny netto, PN, przewody i zasilacze.',
+    seoDescription: 'Skanery ladowe do kasy, wbudowane w ladę: poziome i dwuokienkowe (bioptyczne) czytniki 1D/2D Datalogic Magellan oraz Zebra SP72 i MP7200. Ceny netto.',
     longDescription: 'Skanery ladowe (czytniki wbudowane w ladę) odczytują kody 1D i 2D, gdy towar przesuwa się nad oknem w blacie kasy. Modele poziome mają jedno okno. Modele dwuokienkowe (bioptyczne) mają też okno pionowe w wieży. W ofercie są Datalogic Magellan oraz Zebra SP72-H i MP7200.',
     icon: 'scan',
     productIds: [],
