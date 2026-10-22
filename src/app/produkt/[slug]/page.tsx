@@ -254,7 +254,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const posComputer = product.categoryId === 'komputery-pos'
   // Ekrany KDS (SUNMI FLEX 3 KDS) — ten sam układ co komputery POS, z własnym tytułem podobnych i opisem filmów.
   const kdsDisplay = product.categoryId === 'ekrany-kds'
-  // Kioski samoobsługowe (SUNMI FLEX 3) — układ jak ekrany KDS, z własnym tytułem podobnych i opisem filmów.
+  // Kioski samoobsługowe (SUNMI FLEX 3, Zebra KC401) — układ jak ekrany KDS, z własnym tytułem podobnych i opisem filmów.
   const kioskDisplay = product.categoryId === 'kioski-samoobslugowe'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const rfidTextLinks = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)

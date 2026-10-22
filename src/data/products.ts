@@ -1,4 +1,5 @@
 import { sunmiProducts, sunmiAccessories } from './sunmi-products'
+import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-products'
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
@@ -95804,6 +95805,8 @@ const rawProductList: Product[] = [
   ...honeywellPx65RfidAccessories,
   ...sunmiProducts,
   ...sunmiAccessories,
+  ...zebraKc401Products,
+  ...zebraKc401Accessories,
   ...cipherlabProducts,
   ...cipherlabAccessories,
   ...epsonPosProducts,
