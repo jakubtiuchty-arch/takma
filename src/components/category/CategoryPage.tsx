@@ -44,6 +44,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
       alt: 'Dwa dotykowe komputery POS na ciemnym kamiennym podium, z ciepłym podświetleniem',
       lead: 'Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.',
     },
+    'drukarki-pos': {
+      src: '/images/drukarki-pos-hero-v1.webp',
+      alt: 'Dwie drukarki paragonów na ciemnym blacie z wydrukami wychodzącymi z przodu i od góry',
+      lead: 'Drukarki POS do paragonów niefiskalnych, bonów kuchennych i potwierdzeń sprzedaży. Wybierz papier 58 lub 80 mm i połączenie dopasowane do programu kasowego. Urządzenia te nie zastępują kasy ani drukarki fiskalnej.',
+    },
     'ekrany-kds': {
       src: '/images/ekrany-kds-hero-v2.webp',
       alt: 'Ekran KDS z listą zamówień nad stalowym blatem w profesjonalnej kuchni',
@@ -360,7 +365,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
               <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
               <span className="text-white font-medium whitespace-nowrap">{category.name}</span>
             </nav>
-            <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-lg">{category.h1 ?? category.name}</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-2xl">{category.h1 ?? category.name}</h1>
             <p className="text-sm text-slate-200 max-w-xl lg:max-w-2xl">{hero.lead}</p>
             <p className="text-slate-400 text-sm mt-2">{products.length} {productWord}</p>
           </div>
