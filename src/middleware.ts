@@ -88,6 +88,8 @@ export async function middleware(request: NextRequest) {
       'sunmi-t3-pro-max',
       'sunmi-c02020008',
       'sunmi-c02020007',
+      'sunmi-c02020003',
+      'sunmi-c02020004',
       'sunmi-c06004004',
       'sunmi-x09020039',
       'sunmi-c20000094',

@@ -4108,7 +4108,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ekran klienta SUNMI 10,1\" do T3 i T3 80 mm — C02020008",
     "seoDescription": "Ekran klienta SUNMI 10,1\" HD z NFC do komputerów POS SUNMI T3 i T3 80 mm: dotykowy, 1280 × 800 px, montaż z tyłu. Drugi ekran SUNMI T3. PN C02020008.",
     "shortDescription": "Ekran klienta SUNMI 10,1\" HD do komputerów POS SUNMI T3 i T3 80 mm — dotykowy, z NFC. Montuje się z tyłu komputera i pokazuje klientowi pozycje oraz kwotę.",
-    "description": "Ekran klienta SUNMI C02020008 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nWiększy ekran klienta 15,6\" to [C02020007](/produkt/sunmi-c02020007).",
+    "description": "Ekran klienta SUNMI C02020008 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nWiększy ekran klienta 15,6\" to [C02020007](/produkt/sunmi-c02020007). Do SUNMI T3 PRO i T3 PRO MAX pasują ekrany [C02020003](/produkt/sunmi-c02020003) i [C02020004](/produkt/sunmi-c02020004).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-komputerow-pos"
@@ -4190,7 +4190,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ekran klienta SUNMI 15,6\" do T3 i T3 80 mm — C02020007",
     "seoDescription": "Ekran klienta SUNMI 15,6\" FHD z NFC do komputerów POS SUNMI T3 i T3 80 mm: dotykowy, 1920 × 1080 px, montaż z tyłu. Drugi ekran SUNMI T3. PN C02020007.",
     "shortDescription": "Ekran klienta SUNMI 15,6\" FHD do komputerów POS SUNMI T3 i T3 80 mm — dotykowy, z NFC. Montuje się z tyłu komputera i pokazuje klientowi pozycje oraz kwotę.",
-    "description": "Ekran klienta SUNMI C02020007 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży, a także menu lub reklamy. Ekran 15,6\" ma rozdzielczość 1920 × 1080 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nMniejszy ekran klienta 10,1\" to [C02020008](/produkt/sunmi-c02020008).",
+    "description": "Ekran klienta SUNMI C02020007 to drugi ekran do komputerów POS [SUNMI T3](/produkt/sunmi-t3) i [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży, a także menu lub reklamy. Ekran 15,6\" ma rozdzielczość 1920 × 1080 px i dotykową powierzchnię pojemnościową. Czytnik NFC odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Łączy się z komputerem przez złącze stykowe w podstawie i zabezpiecza blokadą. Uchwyt ekranu ma port USB-C, a obudowa porty micro USB. Jasność ekranu klienta ustawia się w ustawieniach systemu komputera. W zestawie są ekran, przewód i skrócona instrukcja.\n\nMniejszy ekran klienta 10,1\" to [C02020008](/produkt/sunmi-c02020008). Do SUNMI T3 PRO i T3 PRO MAX pasują ekrany [C02020003](/produkt/sunmi-c02020003) i [C02020004](/produkt/sunmi-c02020004).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-komputerow-pos"
@@ -4256,6 +4256,187 @@ export const sunmiAccessories: Product[] = [
     "relatedProducts": [
       "sunmi-t3",
       "sunmi-t3-80mm"
+    ],
+    "applications": [
+      "Pokazywanie klientowi pozycji i kwoty do zapłaty",
+      "Odczyt kart lojalnościowych przez NFC",
+      "Menu i reklamy przy ladzie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c02020003",
+    "slug": "sunmi-c02020003",
+    "name": "Ekran klienta SUNMI 10,1\" do T3 PRO",
+    "seoTitle": "Ekran klienta SUNMI 10,1\" do T3 PRO i T3 PRO MAX — C02020003",
+    "seoDescription": "Ekran klienta SUNMI 10,1\" HD z NFC do komputerów POS SUNMI T3 PRO i T3 PRO MAX: dotykowy, 1280 × 800 px, przedłużacz 1,5 m. PN C02020003.",
+    "shortDescription": "Ekran klienta SUNMI 10,1\" HD do komputerów POS SUNMI T3 PRO i T3 PRO MAX — dotykowy, z NFC. Montuje się z tyłu komputera albo obok niego, na przedłużaczu 1,5 m.",
+    "description": "Ekran klienta SUNMI C02020003 to drugi ekran do komputerów POS [SUNMI T3 PRO](/produkt/sunmi-t3-pro) i [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową. Czytnik NFC na ekranie odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Ekran można też odłączyć i ustawić obok komputera, na przedłużaczu 1,5 m.\n\nDo komputerów [SUNMI T3](/produkt/sunmi-t3) i T3 80 mm pasują inne ekrany: [C02020008](/produkt/sunmi-c02020008) i [C02020007](/produkt/sunmi-c02020007). Większy ekran klienta do T3 PRO to [C02020004](/produkt/sunmi-c02020004).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C02020003.png"
+    ],
+    "imageDescriptions": [
+      "Ekran klienta SUNMI 10,1\" C02020003 zamontowany na komputerze POS SUNMI T3 PRO — widok z tyłu z prawej strony, od strony klienta; komputer T3 PRO kupuje się osobno"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 1223.78,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C02020003"
+      },
+      {
+        "name": "Typ",
+        "value": "Ekran klienta (drugi ekran) do komputera POS"
+      },
+      {
+        "name": "Przekątna i rozdzielczość",
+        "value": "10,1\", HD 1280 × 800 px"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy"
+      },
+      {
+        "name": "NFC",
+        "value": "Tak, na ekranie"
+      },
+      {
+        "name": "Złącze",
+        "value": "USB"
+      },
+      {
+        "name": "Montaż",
+        "value": "Z tyłu komputera; po odłączeniu obok komputera, na przedłużaczu 1,5 m"
+      },
+      {
+        "name": "Masa",
+        "value": "0,9 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Ekran, przedłużacz 1,5 m"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3 PRO, SUNMI T3 PRO MAX"
+      },
+      {
+        "name": "Nie pasuje do",
+        "value": "SUNMI T3 i T3 80 mm — do nich ekrany C02020008 i C02020007"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3-pro",
+      "sunmi-t3-pro-max"
+    ],
+    "applications": [
+      "Pokazywanie klientowi pozycji i kwoty do zapłaty",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c02020004",
+    "slug": "sunmi-c02020004",
+    "name": "Ekran klienta SUNMI 15,6\" do T3 PRO",
+    "seoTitle": "Ekran klienta SUNMI 15,6\" do T3 PRO i T3 PRO MAX — C02020004",
+    "seoDescription": "Ekran klienta SUNMI 15,6\" FHD z NFC do komputerów POS SUNMI T3 PRO i T3 PRO MAX: dotykowy, 1920 × 1080 px, przedłużacz 1,5 m. PN C02020004.",
+    "shortDescription": "Ekran klienta SUNMI 15,6\" FHD do komputerów POS SUNMI T3 PRO i T3 PRO MAX — dotykowy, z NFC. Montuje się z tyłu komputera albo obok niego, na przedłużaczu 1,5 m.",
+    "description": "Ekran klienta SUNMI C02020004 to drugi ekran do komputerów POS [SUNMI T3 PRO](/produkt/sunmi-t3-pro) i [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży, a także menu lub reklamy. Ekran 15,6\" ma rozdzielczość 1920 × 1080 px i dotykową powierzchnię pojemnościową. Czytnik NFC na ekranie odczytuje zgodne karty, np. karty członkowskie.\n\nEkran montuje się z tyłu komputera. Ekran można też odłączyć i ustawić obok komputera, na przedłużaczu 1,5 m.\n\nDo komputerów [SUNMI T3](/produkt/sunmi-t3) i T3 80 mm pasują inne ekrany: [C02020008](/produkt/sunmi-c02020008) i [C02020007](/produkt/sunmi-c02020007). Mniejszy ekran klienta do T3 PRO to [C02020003](/produkt/sunmi-c02020003).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-komputerow-pos"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C02020004.png"
+    ],
+    "imageDescriptions": [
+      "Drugi ekran SUNMI 15,6\" C02020004 zamontowany za komputerem POS SUNMI T3 PRO — widok z przodu z lewej strony; komputer T3 PRO kupuje się osobno"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 1835.65,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C02020004"
+      },
+      {
+        "name": "Typ",
+        "value": "Ekran klienta (drugi ekran) do komputera POS"
+      },
+      {
+        "name": "Przekątna i rozdzielczość",
+        "value": "15,6\", FHD 1920 × 1080 px"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy"
+      },
+      {
+        "name": "NFC",
+        "value": "Tak, na ekranie"
+      },
+      {
+        "name": "Złącze",
+        "value": "USB"
+      },
+      {
+        "name": "Montaż",
+        "value": "Z tyłu komputera; po odłączeniu obok komputera, na przedłużaczu 1,5 m"
+      },
+      {
+        "name": "Masa",
+        "value": "1,7 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Ekran, przedłużacz 1,5 m"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI T3 PRO, SUNMI T3 PRO MAX"
+      },
+      {
+        "name": "Nie pasuje do",
+        "value": "SUNMI T3 i T3 80 mm — do nich ekrany C02020008 i C02020007"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-t3-pro",
+      "sunmi-t3-pro-max"
     ],
     "applications": [
       "Pokazywanie klientowi pozycji i kwoty do zapłaty",
