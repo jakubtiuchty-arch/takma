@@ -7,9 +7,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-T20IV",
     "seoH1": "Epson TM-T20IV",
     "seoTitle": "Drukarka paragonów Epson TM-T20IV — 80 mm, USB, RS-232",
-    "seoDescription": "Drukarka paragonów Epson TM-T20IV: termiczna drukarka POS 203 dpi, do 250 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-T20IV Epson z USB i RS-232, opcja Ethernet. PN: C31CL47101, C31CL47102.",
+    "seoDescription": "Drukarka paragonów niefiskalnych Epson TM-T20IV: termiczna, 58 lub 80 mm, 203 dpi, do 250 mm/s, USB i RS-232, wersja z Ethernetem.",
     "shortDescription": "Epson TM-T20IV to stacjonarna drukarka termiczna do paragonów niefiskalnych, potwierdzeń i biletów na papierze 58 lub 80 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.",
-    "description": "Epson TM-T20IV to stacjonarna drukarka termiczna do paragonów niefiskalnych, potwierdzeń i biletów na papierze 58 lub 80 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Podstawowe stanowisko sprzedażowe z wyborem sieci\n\nObie oferowane wersje mają USB oraz RS-232. PN C31CL47102 dodaje Ethernet, który umożliwia połączenie z siecią stanowiska. Wersja C31CL47101 nie ma tego portu.\n\nRolka może mieć średnicę do 83 mm. Papier ładuje się od góry, a gilotyna wykonuje częściowe cięcie. Obudowa ma 140 × 199 × 146 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru. C31CL47102 ma także rolkę papieru i uchwyt ścienny.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T70II](/produkt/epson-tm-t70ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [BIXOLON SRP-330III](/produkt/bixolon-srp-330iii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T20IV to podstawowa drukarka paragonów niefiskalnych do sklepu, punktu usługowego i restauracji. Drukuje też bony, potwierdzenia i bilety. To następca modelu TM-T20III.\n\n## USB i RS-232, wersja z Ethernetem\n\nObie oferowane wersje mają USB oraz RS-232. PN C31CL47102 dodaje Ethernet do pracy w sieci lokalnej. Wersja C31CL47101 nie ma tego portu. Drukarka przyjmuje papier 58 lub 80 mm i rolkę o średnicy do 83 mm. Papier ładuje się od góry, a gilotyna wykonuje częściowe cięcie. Obudowa ma 140 × 199 × 146 mm.\n\n## Zawartość zestawu TM-T20IV\n\nW zestawie są zasilacz, przewód zasilający i przegroda rolki papieru. C31CL47102 ma także rolkę papieru i uchwyt ścienny.\n\nSzybszy model, do 500 mm/s i z gwarancją 48 miesięcy, to [Epson TM-T88VII](/produkt/epson-tm-t88vii). Porty USB i RS-232 przy rozdzielczości 180 dpi ma [BIXOLON SRP-330III](/produkt/bixolon-srp-330iii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -75,8 +75,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Paragony niefiskalne w sklepie i punkcie usługowym",
+      "Bony i bilety z programu POS",
+      "Montaż na ścianie z uchwytem (C31CL47102)"
     ],
     "variants": [
       {
@@ -119,16 +120,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-T20IV różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy Epson TM-T20IV drukuje na papierze 58 mm?",
+        "answer": "Tak. TM-T20IV drukuje na papierze 80 mm, a po założeniu przegrody z zestawu na papierze 58 mm. Rolka może mieć średnicę do 83 mm."
       },
       {
         "question": "Czy Epson TM-T20IV jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-T20IV drukuje dokumenty niefiskalne: paragony, bony i bilety. Paragon fiskalny drukuje kasa fiskalna online albo drukarka fiskalna."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-t70ii",
@@ -136,9 +137,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-T70II",
     "seoH1": "Epson TM-T70II",
     "seoTitle": "Drukarka paragonów Epson TM-T70II — obsługa od przodu",
-    "seoDescription": "Drukarka paragonów Epson TM-T70II: termiczna drukarka POS 180 dpi, do 250 mm/s, papier 80 mm, ładowanie i wydruk od przodu, urządzenie niefiskalne. TM-T70II Epson z USB i RS-232 lub Ethernetem. PN: C31CD38025A0, C31CD38032, C31CD38022A1, C31CD38025C0.",
+    "seoDescription": "Drukarka paragonów Epson TM-T70II do montażu pod ladą: papier i wydruk od przodu, 80 mm, do 250 mm/s. USB i RS-232 albo USB i Ethernet.",
     "shortDescription": "Epson TM-T70II to termiczna drukarka POS do paragonów niefiskalnych na papierze 80 mm. Papier oraz gotowe dokumenty obsługuje się od przodu urządzenia.",
-    "description": "Epson TM-T70II to termiczna drukarka POS do paragonów niefiskalnych na papierze 80 mm. Papier oraz gotowe dokumenty obsługuje się od przodu urządzenia.\n\n## Drukarka pod ladą bez dostępu od góry\n\nPrzednie ładowanie rolki i odbiór dokumentu ułatwiają ustawienie TM-T70II pod blatem. Obudowa ma 125 × 194 × 114 mm. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi. Mieści rolkę o średnicy do 83 mm.\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy i wyposażeniem. Zestawy obejmują zasilacz PS-190 i przewód zasilający. Wersja C31CD38022A1 ma zasilacz PS-180 i wbudowany brzęczyk.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nKażdy zestaw ma także rolkę papieru i osłonę włącznika.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-T20IV](/produkt/epson-tm-t20iv), [Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T88VII](/produkt/epson-tm-t88vii). Wydruk od przodu ma także [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T70II to drukarka paragonów niefiskalnych do montażu pod ladą lub na półce, gdzie nie ma dostępu od góry. Rolkę wkłada się od przodu i z przodu odbiera się wydruk.\n\n## Drukarka pod ladą bez dostępu od góry\n\nObudowa ma 125 × 194 × 114 mm. Panel sterowania jest na froncie. Drukarka osiąga do 250 mm/s w rozdzielczości 180 dpi i przyjmuje papier 80 mm. Mieści rolkę o średnicy do 83 mm.\n\n## Porty, kolory i zestaw\n\nWersje mają USB oraz RS-232 lub Ethernet. Oferowane PN różnią się też kolorem obudowy: czarnym lub ciemnoszarym. Zestawy mają zasilacz PS-190 i przewód zasilający, a C31CD38022A1 zasilacz PS-180 i wbudowany brzęczyk. Każdy zestaw ma rolkę papieru i osłonę włącznika. Link do sterowników i narzędzi Epson jest w plikach do pobrania.\n\nWydruk od przodu i obudowę odporną na kapiącą wodę ma [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii). Ładowany od góry model 500 mm/s to [Epson TM-T88VII](/produkt/epson-tm-t88vii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -192,8 +193,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Drukarka pod ladą w sklepie",
+      "Paragony niefiskalne przy stanowisku bez miejsca na blacie",
+      "Bony z sygnałem dźwiękowym (C31CD38022A1)"
     ],
     "variants": [
       {
@@ -265,16 +267,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-T70II różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy Epson TM-T70II można zamontować pod ladą?",
+        "answer": "Tak. Rolkę papieru wkłada się od przodu i z przodu odbiera się wydruk, więc nad drukarką nie potrzeba wolnego miejsca. Obudowa ma 114 mm wysokości."
       },
       {
         "question": "Czy Epson TM-T70II jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-T70II drukuje paragony niefiskalne z aplikacji POS. Może pracować obok drukarki fiskalnej, która drukuje paragon fiskalny."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-t88vii",
@@ -282,9 +284,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-T88VII",
     "seoH1": "Epson TM-T88VII",
     "seoTitle": "Drukarka paragonów Epson TM-T88VII — 80 mm, 500 mm/s",
-    "seoDescription": "Drukarka paragonów Epson TM-T88VII: termiczna drukarka POS 180 dpi, do 500 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-T88VII Epson z USB i Ethernetem, opcje RS-232 i PoweredUSB. PN: C31CJ57111, C31CJ57112, C31CJ57131, C31CJ57132, C31CJ57151, C31CJ57152.",
+    "seoDescription": "Drukarka paragonów Epson TM-T88VII: termiczna, 58 lub 80 mm, do 500 mm/s, USB i Ethernet, wersje z RS-232 i PoweredUSB. Gwarancja 48 miesięcy.",
     "shortDescription": "Epson TM-T88VII to termiczna drukarka paragonów do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.",
-    "description": "Epson TM-T88VII to termiczna drukarka paragonów do stanowisk z dużą liczbą wydruków. Drukuje do 500 mm/s na papierze 58 lub 80 mm.\n\n## Wydajne drukowanie z portami dla infrastruktury POS\n\nRodzina obejmuje konfiguracje USB, Ethernet, RS-232 oraz PoweredUSB. Porty i sposób zasilania zależą od PN. Wersje z interfejsem wymiennym różnią się od konfiguracji ze stałym interfejsem. Wersje C31CJ57111, C31CJ57112, C31CJ57131 i C31CJ57132 mają wbudowany brzęczyk.\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Rolka może mieć średnicę do 83 mm. Wymiary obudowy wynoszą 145 × 195 × 148 mm. Zgodność z oprogramowaniem poprzednich T88V i T88VI ułatwia wymianę urządzenia, ale ustawienia sterownika i złącza nadal trzeba sprawdzić.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: osłona złączy, przegroda rolki papieru i rolka papieru. Wersje C31CJ57111, C31CJ57112, C31CJ57151 i C31CJ57152 mają zasilacz PS-190 z przewodem zasilającym. Wersje PoweredUSB C31CJ57131 i C31CJ57132 nie mają zasilacza. Zasilanie pochodzi z portu PoweredUSB stanowiska.\n\nGwarancja na drukarkę wynosi 48 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m50II](/produkt/epson-tm-m50ii), [Epson TM-T20IV](/produkt/epson-tm-t20iv), [BIXOLON SRP-380plus](/produkt/bixolon-srp-380plus). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-T88VII to szybka drukarka paragonów niefiskalnych do kas o dużym ruchu w sklepach i restauracjach. Drukuje do 500 mm/s. Zastępuje modele TM-T88V i TM-T88VI, a gwarancja wynosi 48 miesięcy.\n\n## Porty i zasilanie według PN\n\nWersje z wymiennym modułem interfejsu mają USB, Ethernet oraz RS-232 lub PoweredUSB. Wersje C31CJ57151 i C31CJ57152 mają stały interfejs USB i Ethernet. Wersje C31CJ57111, C31CJ57112, C31CJ57131 i C31CJ57132 mają wbudowany brzęczyk. Wersje PoweredUSB C31CJ57131 i C31CJ57132 nie mają zasilacza, bo zasilanie pochodzi z portu PoweredUSB stanowiska.\n\n## Wymiana TM-T88VI i zestaw\n\nRozdzielczość wynosi 180 dpi, a szerokość nadruku do 72 mm. Obsługuje papier 58 lub 80 mm i rolki o średnicy do 83 mm. Obudowa ma 145 × 195 × 148 mm. Zgodność z oprogramowaniem TM-T88V i TM-T88VI ułatwia wymianę, ale ustawienia sterownika i złącza trzeba sprawdzić. W zestawie są osłona złączy, przegroda rolki papieru i rolka papieru, a w wersjach bez PoweredUSB także zasilacz PS-190 z przewodem.\n\nTa sama prędkość 500 mm/s w obudowie w kształcie sześcianu to [Epson TM-m50II](/produkt/epson-tm-m50ii). Do 500 mm/s drukuje też [BIXOLON SRP-380plus](/produkt/bixolon-srp-380plus).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -350,8 +352,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Kasy o dużym ruchu",
+      "Wymiana drukarek TM-T88V i TM-T88VI",
+      "Stanowiska POS z PoweredUSB"
     ],
     "variants": [
       {
@@ -449,16 +452,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-T88VII różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy Epson TM-T88VII zastąpi TM-T88VI?",
+        "answer": "Tak. TM-T88VII jest zgodny z oprogramowaniem TM-T88V i TM-T88VI. Przed wymianą trzeba sprawdzić ustawienia sterownika i złącze stanowiska."
       },
       {
         "question": "Czy Epson TM-T88VII jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-T88VII drukuje paragony niefiskalne, kupony i bony z programu POS. Paragon fiskalny drukuje drukarka fiskalna podłączona do stanowiska."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-m30iii",
@@ -466,9 +469,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-m30III",
     "seoH1": "Epson TM-m30III",
     "seoTitle": "Drukarka paragonów Epson TM-m30III — kompaktowa mPOS",
-    "seoDescription": "Drukarka paragonów Epson TM-m30III: kompaktowa drukarka POS 203 dpi, do 300 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-m30III Epson z USB, USB-C i Ethernetem, opcja Wi-Fi + Bluetooth. PN: C31CK50111, C31CK50112, C31CK50151, C31CK50152.",
+    "seoDescription": "Drukarka paragonów Epson TM-m30III do tabletu i mPOS: 58 lub 80 mm, 203 dpi, do 300 mm/s, USB-C i Ethernet, wersje z Wi-Fi i Bluetooth.",
     "shortDescription": "Epson TM-m30III to kompaktowa drukarka termiczna do paragonów na stanowiskach mPOS. Drukuje do 300 mm/s w rozdzielczości 203 dpi na papierze 58 lub 80 mm.",
-    "description": "Epson TM-m30III to kompaktowa drukarka termiczna do paragonów na stanowiskach mPOS. Drukuje do 300 mm/s w rozdzielczości 203 dpi na papierze 58 lub 80 mm.\n\n## Połączenie ze stanowiskiem opartym na tablecie\n\nObudowa ma 127 × 127 × 130 mm. Drukarkę można ustawić z odbiorem papieru od góry lub z przodu. Funkcja ograniczania zwijania papieru pomaga uzyskać płaski dokument. Odbiór dokumentu i dostęp do rolki dobierz do miejsca na ladzie.\n\nOferowane konfiguracje mają USB, USB-C i Ethernet. Wersje C31CK50151 oraz C31CK50152 dodają Wi-Fi i Bluetooth. Kolor biały lub czarny nie zmienia podstawowych parametrów druku. TM-m30III-H ma dodatkowe porty do urządzeń peryferyjnych.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-190, przewód zasilający, przegroda rolki papieru i rolka papieru.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nTM-m30III służy do kompaktowego stanowiska mPOS. Jeśli aplikacja wymaga rozbudowanej obsługi peryferiów, porównaj [TM-m30III-H](/produkt/epson-tm-m30iii-h). Do zamocowania tabletu przy drukarce sprawdź [TM-m30II-S](/produkt/epson-tm-m30ii-s). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "Epson TM-m30III to kompaktowa drukarka paragonów niefiskalnych do kasy na tablecie lub telefonie (mPOS) w kawiarni, butiku i restauracji. Wersje C31CK50151 i C31CK50152 łączą się z tabletem przez Wi-Fi lub Bluetooth. To następca TM-m30II.\n\n## Obudowa 127 mm i płaski wydruk\n\nObudowa ma 127 × 127 × 130 mm. Drukarkę można ustawić z odbiorem papieru od góry lub z przodu. Funkcja ograniczania zwijania papieru pomaga uzyskać płaski dokument. Drukarka drukuje do 300 mm/s w rozdzielczości 203 dpi na papierze 58 lub 80 mm.\n\n## Porty i kolory\n\nOferowane konfiguracje mają USB, USB-C i Ethernet. Kolor biały lub czarny nie zmienia parametrów druku. W zestawie są zasilacz PS-190, przewód zasilający, przegroda rolki papieru i rolka papieru. Sterowniki dla Windows i narzędzia konfiguracyjne udostępnia Epson na stronie wsparcia, do której prowadzi link w plikach do pobrania.\n\nPorty na skaner i inne urządzenia peryferyjne ma [TM-m30III-H](/produkt/epson-tm-m30iii-h). Uchwyt na tablet nad drukarką ma [TM-m30II-S](/produkt/epson-tm-m30ii-s).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -532,8 +535,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Kasa na tablecie w kawiarni i butiku",
+      "Druk przez Wi-Fi lub Bluetooth (C31CK50151, C31CK50152)",
+      "Paragony niefiskalne na papierze 58 i 80 mm"
     ],
     "variants": [
       {
@@ -604,16 +608,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-m30III różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy Epson TM-m30III ma Wi-Fi i Bluetooth?",
+        "answer": "Tylko wersje C31CK50151 i C31CK50152. Wersje C31CK50111 i C31CK50112 mają USB, USB-C i Ethernet, bez łączności bezprzewodowej."
       },
       {
         "question": "Czy Epson TM-m30III jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-m30III drukuje paragony niefiskalne z aplikacji mPOS. Fiskalizację zapewnia osobna drukarka fiskalna albo kasa online."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-m30iii-h",
@@ -621,9 +625,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-m30III-H",
     "seoH1": "Epson TM-m30III-H",
     "seoTitle": "Drukarka paragonów Epson TM-m30III-H — Wi-Fi, Bluetooth",
-    "seoDescription": "Drukarka paragonów Epson TM-m30III-H: drukarka POS 203 dpi, do 300 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-m30III-H Epson z Wi-Fi, Bluetooth, USB-C i Ethernetem oraz portami do urządzeń peryferyjnych. PN: C31CK51141, C31CK51142.",
+    "seoDescription": "Drukarka paragonów Epson TM-m30III-H do stanowiska mPOS: Wi-Fi, Bluetooth, USB-C, Ethernet i porty na urządzenia peryferyjne. Papier 58 lub 80 mm.",
     "shortDescription": "Epson TM-m30III-H to termiczna drukarka paragonów do stanowisk mPOS z urządzeniami peryferyjnymi. Oferowane wersje mają Wi-Fi, Bluetooth, USB i Ethernet.",
-    "description": "Epson TM-m30III-H to termiczna drukarka paragonów do stanowisk mPOS z urządzeniami peryferyjnymi. Oferowane wersje mają Wi-Fi, Bluetooth, USB i Ethernet.\n\n## Drukarka jako element rozbudowanego stanowiska mPOS\n\nWersja H rozszerza rodzinę TM-m30III o dodatkowe porty do urządzeń stanowiska. Udostępnia między innymi porty USB-A oraz USB-C dla zgodnych peryferiów. Zasilanie i komunikacja z urządzeniem mobilnym zależą od używanego portu oraz obsługi w aplikacji.\n\nDrukarka osiąga do 300 mm/s w rozdzielczości 203 dpi. Przyjmuje papier 58 lub 80 mm i rolkę do 83 mm. Oferowane PN różnią się kolorem obudowy. Tablet, skaner i wyświetlacz klienta nie są częścią samej drukarki. Do prostszego stanowiska porównaj podstawowy TM-m30III.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-190, przewód zasilający, przegroda rolki papieru i rolka papieru.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nOdmiana H jest przeznaczona do stanowisk wymagających rozbudowanej obsługi peryferiów. [TM-m30III](/produkt/epson-tm-m30iii) ma osobne konfiguracje. Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "Epson TM-m30III-H to drukarka paragonów niefiskalnych, do której podłącza się urządzenia stanowiska kasowego z tabletem. Ma dodatkowe porty USB-A i USB-C na zgodne urządzenia peryferyjne, na przykład skaner kodów kreskowych lub wyświetlacz klienta. Obie oferowane wersje mają Wi-Fi, Bluetooth, USB i Ethernet.\n\n## Porty USB-A i USB-C na peryferia\n\nWersja H rozszerza rodzinę TM-m30III o porty do urządzeń stanowiska. Zasilanie i komunikacja z urządzeniem mobilnym zależą od używanego portu oraz obsługi w aplikacji. Tablet, skaner i wyświetlacz klienta kupuje się osobno.\n\n## Parametry druku i zestaw\n\nDrukarka osiąga do 300 mm/s w rozdzielczości 203 dpi. Przyjmuje papier 58 lub 80 mm i rolkę do 83 mm. Oferowane PN różnią się kolorem obudowy: białym lub czarnym. Zestaw zawiera zasilacz PS-190 z przewodem, przegrodę rolki papieru i rolkę papieru.\n\nProstsze stanowisko, bez dodatkowych portów, obsłuży [TM-m30III](/produkt/epson-tm-m30iii). Kompaktowy model BIXOLON z Ethernetem to [SRP-Q300](/produkt/bixolon-srp-q300).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -673,8 +677,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Stanowisko kasowe z tabletem i skanerem",
+      "Paragony niefiskalne przez Wi-Fi lub Bluetooth",
+      "Wyświetlacz klienta przy kasie"
     ],
     "variants": [
       {
@@ -722,16 +727,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-m30III-H różni się od podobnych modeli?",
-        "answer": "Wersja H ma rozszerzoną obsługę urządzeń peryferyjnych. Nie jest identyczna z podstawowym TM-m30III."
+        "question": "Czym TM-m30III-H różni się od TM-m30III?",
+        "answer": "TM-m30III-H ma dodatkowe porty USB-A i USB-C na urządzenia peryferyjne, a obie oferowane wersje mają Wi-Fi i Bluetooth. W TM-m30III łączność bezprzewodową mają tylko wersje C31CK50151 i C31CK50152."
       },
       {
         "question": "Czy Epson TM-m30III-H jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-m30III-H drukuje paragony niefiskalne z aplikacji kasowej na tablecie. Dla paragonu fiskalnego stanowisko potrzebuje drukarki fiskalnej lub kasy online."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-m50ii",
@@ -739,9 +744,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-m50II",
     "seoH1": "Epson TM-m50II",
     "seoTitle": "Drukarka paragonów Epson TM-m50II — 500 mm/s",
-    "seoDescription": "Drukarka paragonów Epson TM-m50II: kompaktowa drukarka POS 180 dpi, do 500 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-m50II Epson z USB, RS-232 i Ethernetem. PN: C31CK52101, C31CK52102.",
+    "seoDescription": "Szybka drukarka paragonów Epson TM-m50II: do 500 mm/s w kompaktowej obudowie, 58 lub 80 mm, 180 dpi, USB, RS-232 i Ethernet. Biała lub czarna.",
     "shortDescription": "Epson TM-m50II to kompaktowa termiczna drukarka POS do szybkiego druku paragonów i potwierdzeń. Osiąga do 500 mm/s w rozdzielczości 180 dpi.",
-    "description": "Epson TM-m50II to kompaktowa termiczna drukarka POS do szybkiego druku paragonów i potwierdzeń. Osiąga do 500 mm/s w rozdzielczości 180 dpi.\n\n## Duża szybkość w obudowie do ustawienia na ladzie\n\nTM-m50II łączy szybkość druku z obudową w kształcie sześcianu. Drukarkę można ustawić z odbiorem dokumentu od góry lub z przodu. Obsługuje papier 58 i 80 mm oraz rolkę o średnicy do 83 mm. Gilotyna oddziela gotowy wydruk.\n\nOferowane europejskie zestawy mają USB, RS-232, Ethernet, zasilacz i przewód sieciowy. PN C31CK52101 oznacza białą obudowę, a C31CK52102 czarną. TM-m50II ma 180 dpi i drukuje do 500 mm/s. TM-m30III ma 203 dpi i drukuje do 300 mm/s.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nZasilacz PS-190 jest dostępny także jako część zamienna.\n\n## Porównaj modele\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-T70II](/produkt/epson-tm-t70ii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-m50II to drukarka paragonów niefiskalnych, która drukuje do 500 mm/s w kompaktowej obudowie w kształcie sześcianu. Pasuje do lady w restauracji szybkiej obsługi i w sklepie, gdzie liczy się czas obsługi klienta.\n\n## 500 mm/s i wydruk z góry lub z przodu\n\nDrukarkę można ustawić z odbiorem dokumentu od góry lub z przodu. Obsługuje papier 58 i 80 mm oraz rolkę o średnicy do 83 mm. Gilotyna oddziela gotowy wydruk. Rozdzielczość wynosi 180 dpi.\n\n## USB, RS-232 i Ethernet w zestawie europejskim\n\nOferowane europejskie zestawy mają USB, RS-232, Ethernet, zasilacz i przewód sieciowy. PN C31CK52101 oznacza białą obudowę, a C31CK52102 czarną. Zasilacz PS-190 jest dostępny także jako część zamienna.\n\n[TM-m30III](/produkt/epson-tm-m30iii) ma 203 dpi i drukuje do 300 mm/s, a w części wersji ma Wi-Fi i Bluetooth. Ta sama prędkość 500 mm/s w klasycznej obudowie to [TM-T88VII](/produkt/epson-tm-t88vii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -787,8 +792,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Kasy w restauracjach szybkiej obsługi",
+      "Paragony niefiskalne przy kolejce w sklepie",
+      "Praca w sieci LAN restauracji"
     ],
     "variants": [
       {
@@ -830,16 +836,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-m50II różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czym Epson TM-m50II różni się od TM-m30III?",
+        "answer": "TM-m50II drukuje do 500 mm/s w rozdzielczości 180 dpi i ma RS-232. TM-m30III drukuje do 300 mm/s w rozdzielczości 203 dpi i w części wersji ma Wi-Fi i Bluetooth."
       },
       {
         "question": "Czy Epson TM-m50II jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-m50II szybko drukuje paragony niefiskalne i bony z programu POS. Do paragonu fiskalnego potrzebne jest urządzenie fiskalne."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-m30ii-s",
@@ -847,9 +853,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-m30II-S",
     "seoH1": "Epson TM-m30II-S",
     "seoTitle": "Drukarka paragonów Epson TM-m30II-S z uchwytem na tablet",
-    "seoDescription": "Drukarka paragonów Epson TM-m30II-S z uchwytem na tablet: drukarka POS 203 dpi, do 250 mm/s, papier 58 lub 80 mm, urządzenie niefiskalne. TM-m30II-S Epson z USB, Ethernetem, Bluetooth i Lightning. PN: C31CH63011, C31CH63012.",
+    "seoDescription": "Drukarka paragonów Epson TM-m30II-S z uchwytem na tablet: 58 lub 80 mm, 203 dpi, do 250 mm/s, USB, Ethernet, Bluetooth i Lightning.",
     "shortDescription": "Epson TM-m30II-S to termiczna drukarka paragonów ze zintegrowanym miejscem montażu tabletu. Łączy druk do 250 mm/s z organizacją stanowiska mPOS.",
-    "description": "Epson TM-m30II-S to termiczna drukarka paragonów ze zintegrowanym miejscem montażu tabletu. Łączy druk do 250 mm/s z organizacją stanowiska mPOS.\n\n## Wspólne stanowisko dla drukarki i zgodnego tabletu\n\nUchwyt pozwala umieścić zgodny tablet nad drukarką. Tablet dobiera się osobno; nie jest częścią oferowanego urządzenia. Przed zakupem sprawdź jego wymiary, sposób mocowania i obsługę połączenia w aplikacji.\n\nDrukarka ma rozdzielczość 203 dpi i przyjmuje papier 58 lub 80 mm. Oferowane wersje obejmują USB, Ethernet, Bluetooth i Lightning. Dostępne są obudowy biała oraz czarna. TM-m30II-S różni się od TM-m30III-H konstrukcją stanowiska; nie jest jego zamiennikiem z identycznym uchwytem.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, przewód zasilający, uchwyt mocujący przewody, przegroda rolki papieru i rolka papieru.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-m30III](/produkt/epson-tm-m30iii), [Epson TM-m30III-H](/produkt/epson-tm-m30iii-h), [Epson TM-m50II](/produkt/epson-tm-m50ii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-m30II-S łączy drukarkę paragonów niefiskalnych i uchwyt na tablet w jednym stanowisku kasowym. Tablet stoi nad drukarką, a przewody mocuje się uchwytem z zestawu, więc na ladzie zostaje więcej miejsca.\n\n## Uchwyt na zgodny tablet\n\nUchwyt pozwala umieścić zgodny tablet nad drukarką. Tablet kupuje się osobno. Przed zakupem należy sprawdzić jego wymiary, sposób mocowania i obsługę połączenia w aplikacji. TM-m30II-S różni się od TM-m30III-H konstrukcją stanowiska i nie jest jego zamiennikiem.\n\n## Lightning, Bluetooth i Ethernet\n\nDrukarka ma rozdzielczość 203 dpi, drukuje do 250 mm/s i przyjmuje papier 58 lub 80 mm. Oferowane wersje mają USB, Ethernet, Bluetooth i Lightning. Dostępne są obudowy biała i czarna. W zestawie są zasilacz PS-180, przewód zasilający, uchwyt mocujący przewody, przegroda rolki papieru i rolka papieru.\n\nBez uchwytu, w obudowie 127 × 127 × 130 mm, jest [TM-m30III](/produkt/epson-tm-m30iii). Porty na urządzenia peryferyjne i Wi-Fi ma [TM-m30III-H](/produkt/epson-tm-m30iii-h).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -915,8 +921,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Stanowisko kasowe ze zgodnym tabletem",
+      "Kasa w butiku i kawiarni z jednym urządzeniem na ladzie",
+      "Paragony niefiskalne przez Bluetooth"
     ],
     "variants": [
       {
@@ -965,16 +972,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-m30II-S różni się od podobnych modeli?",
-        "answer": "Ten model ma miejsce montażu tabletu. Sam tablet nie jest dołączony. TM-m30III i TM-m30III-H mają inną konstrukcję."
+        "question": "Czy tablet jest w zestawie z TM-m30II-S?",
+        "answer": "Nie. Zestaw ma uchwyt na tablet, ale sam tablet kupuje się osobno. Przed zakupem należy sprawdzić wymiary tabletu i sposób mocowania."
       },
       {
         "question": "Czy Epson TM-m30II-S jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-m30II-S drukuje paragony niefiskalne z aplikacji na tablecie zamocowanym w uchwycie. Paragon fiskalny drukuje osobne urządzenie fiskalne."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-u220iib",
@@ -982,9 +989,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-U220IIB",
     "seoH1": "Epson TM-U220IIB",
     "seoTitle": "Igłowa drukarka paragonów Epson TM-U220IIB z gilotyną",
-    "seoDescription": "Igłowa drukarka paragonów Epson TM-U220IIB z gilotyną: drukarka POS na zwykły papier 57,5–76 mm, kaseta ERC38, urządzenie niefiskalne. TM-U220IIB Epson z RS-232, USB, portem równoległym lub Ethernetem. PN: C31CL27101, C31CL27102, C31CL27101B0, C31CL27102B0, C31CL27101P0, C31CL27102P0, C31CL27141, C31CL27142.",
+    "seoDescription": "Igłowa drukarka bonów kuchennych Epson TM-U220IIB z gilotyną: zwykły papier 57,5–76 mm, druk czarny i czerwony, kaseta ERC38. Następca TM-U220B.",
     "shortDescription": "Epson TM-U220IIB to igłowa drukarka POS do paragonów i bonów na zwykłym papierze. Wersja B ma automatyczną gilotynę i korzysta z kaset barwiących ERC38.",
-    "description": "Epson TM-U220IIB to igłowa drukarka POS do paragonów i bonów na zwykłym papierze. Wersja B ma automatyczną gilotynę i korzysta z kaset barwiących ERC38.\n\n## Druk na zwykłym papierze w punkcie obsługi\n\nMechanizm igłowy nanosi treść przez taśmę barwiącą. Papier nie musi być termoczuły. Drukarka przyjmuje trzy szerokości papieru: 57,5, 69,5 i 76 mm. Szybkość zależy od układu dokumentu; dla 40 kolumn i 16 cpi wynosi 4,7 wiersza/s.\n\nDobierz konfigurację z RS-232, USB, Ethernetem lub portem równoległym. Kaseta ERC38B drukuje na czarno, a ERC38BR pozwala użyć taśmy czarno-czerwonej. Obie są materiałami eksploatacyjnymi do zgodnego mechanizmu. Wersja bez gilotyny to TM-U220IID.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, kaseta barwiąca i rolka papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nTM-U220IIB ma automatyczną gilotynę. Jeśli wydruk ma być odrywany ręcznie, porównaj [TM-U220IID](/produkt/epson-tm-u220iid). Oba modele drukują igłowo i używają kaset ERC38. Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-U220IIB to igłowa drukarka bonów kuchennych i paragonów niefiskalnych. Drukuje na zwykłym papierze, więc wydruk nie ciemnieje od ciepła w kuchni, jak papier termiczny. To następca modelu TM-U220B, z automatyczną gilotyną.\n\n## Druk dwukolorowy na zwykłym papierze\n\nMechanizm igłowy nanosi treść przez taśmę barwiącą. Kaseta ERC38B drukuje na czarno, a ERC38BR na czarno i czerwono, na przykład dla wyróżnienia zmian w zamówieniu. Drukarka przyjmuje papier o szerokości 57,5, 69,5 i 76 mm. Przy 40 kolumnach i 16 cpi drukuje 4,7 wiersza/s.\n\n## RS-232, USB, Ethernet i zestaw\n\nKonfiguracje mają RS-232, USB, port równoległy albo Ethernet z portem USB Host. Obudowa jest biała lub ciemnoszara. W zestawie są zasilacz, kaseta barwiąca i rolka papieru.\n\nWersja bez gilotyny, z ręcznym odrywaniem wydruku, to [TM-U220IID](/produkt/epson-tm-u220iid). Termiczną drukarkę bonów z obudową odporną na kapiącą wodę ma [BIXOLON SRP-F310II](/produkt/bixolon-srp-f310ii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1028,8 +1035,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Bony kuchenne w gorącej kuchni",
+      "Wyróżnienie zmian w zamówieniu kolorem czerwonym",
+      "Wymiana drukarki TM-U220B"
     ],
     "variants": [
       {
@@ -1137,16 +1145,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-U220IIB różni się od podobnych modeli?",
-        "answer": "Wersja B ma automatyczną gilotynę. TM-U220IID jej nie ma. Interfejs oraz kolor zależą od PN."
+        "question": "Czy TM-U220IIB zastąpi TM-U220B?",
+        "answer": "Tak. TM-U220IIB to następca TM-U220B. Przed wymianą należy sprawdzić port i ustawienia sterownika w programie POS."
       },
       {
         "question": "Czy Epson TM-U220IIB jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-U220IIB drukuje bony kuchenne i dokumenty niefiskalne. Paragon fiskalny drukuje osobna drukarka fiskalna przy kasie."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-u220iid",
@@ -1154,9 +1162,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-U220IID",
     "seoH1": "Epson TM-U220IID",
     "seoTitle": "Igłowa drukarka paragonów Epson TM-U220IID",
-    "seoDescription": "Igłowa drukarka paragonów Epson TM-U220IID bez gilotyny: drukarka POS na zwykły papier 57,5–76 mm, kaseta ERC38, urządzenie niefiskalne. TM-U220IID Epson z RS-232 lub portem równoległym. PN: C31CL28102, C31CL28102P0.",
+    "seoDescription": "Igłowa drukarka bonów Epson TM-U220IID bez gilotyny: zwykły papier 57,5–76 mm, kaseta ERC38, port RS-232 lub równoległy. Następca TM-U220D.",
     "shortDescription": "Epson TM-U220IID to igłowa drukarka POS do paragonów i bonów na zwykłym papierze. Wersja D nie ma automatycznej gilotyny i korzysta z kaset barwiących ERC38.",
-    "description": "Epson TM-U220IID to igłowa drukarka POS do paragonów i bonów na zwykłym papierze. Wersja D nie ma automatycznej gilotyny i korzysta z kaset barwiących ERC38.\n\n## Ręczne oddzielenie dokumentu bez mechanizmu cięcia\n\nTM-U220IID służy do drukowania dokumentów na rolce o szerokości 57,5, 69,5 lub 76 mm. Gotowy wydruk oddziela operator. Brak automatycznej gilotyny odróżnia ten model od TM-U220IIB i wpływa na sposób pracy przy stanowisku.\n\nC31CL28102 ma port RS-232, a C31CL28102P0 port równoległy. Do mechanizmu pasują kasety ERC38B i ERC38BR.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, kaseta barwiąca i rolka papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nTM-U220IID nie ma automatycznej gilotyny. Wersja z automatyczną gilotyną to [TM-U220IIB](/produkt/epson-tm-u220iib). Obie odmiany wymagają właściwej kasety barwiącej ERC38 i zgodnego papieru. Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-U220IID to igłowa drukarka bonów i paragonów niefiskalnych bez automatycznej gilotyny. Operator odrywa wydruk ręcznie. To następca modelu TM-U220D.\n\n## Ręczne oddzielanie wydruku\n\nTM-U220IID drukuje na rolce o szerokości 57,5, 69,5 lub 76 mm. Papier nie musi być termoczuły, a wydruk igłowy nie ciemnieje od ciepła. Brak gilotyny odróżnia ten model od TM-U220IIB i wpływa na sposób pracy przy stanowisku.\n\n## RS-232 lub port równoległy\n\nC31CL28102 ma port RS-232, a C31CL28102P0 port równoległy. Do mechanizmu pasują kasety ERC38B (czarna) i ERC38BR (czarno-czerwona). Zestaw zawiera zasilacz, kasetę barwiącą i rolkę papieru.\n\nWersja z automatyczną gilotyną oraz z wariantami USB i Ethernet to [TM-U220IIB](/produkt/epson-tm-u220iib).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1200,8 +1208,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Bony w barze i kuchni z ręcznym odrywaniem",
+      "Wymiana drukarki TM-U220D",
+      "Starsze systemy POS z portem równoległym"
     ],
     "variants": [
       {
@@ -1245,16 +1254,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-U220IID różni się od podobnych modeli?",
-        "answer": "Wersja D wymaga ręcznego oddzielenia dokumentu. Wersja B ma gilotynę. Nie mają identycznego wyposażenia."
+        "question": "Czym TM-U220IID różni się od TM-U220IIB?",
+        "answer": "TM-U220IID nie ma automatycznej gilotyny, więc wydruk odrywa się ręcznie. Ma port RS-232 lub równoległy. TM-U220IIB ma gilotynę i wersje z USB oraz Ethernetem."
       },
       {
         "question": "Czy Epson TM-U220IID jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-U220IID drukuje bony i dokumenty niefiskalne z programu POS lub systemu kuchennego. Do paragonu fiskalnego służy kasa lub drukarka fiskalna."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-u295",
@@ -1262,9 +1271,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-U295",
     "seoH1": "Epson TM-U295",
     "seoTitle": "Igłowa drukarka formularzy Epson TM-U295 (POS)",
-    "seoDescription": "Igłowa drukarka formularzy Epson TM-U295: drukarka POS do pojedynczych dokumentów, do 2,1 wiersza/s, kaseta ERC27B, urządzenie niefiskalne. TM-U295 Epson z RS-232. PN: C31C163272, C31C163292.",
+    "seoDescription": "Igłowa drukarka formularzy Epson TM-U295: nadruk na pojedynczych dokumentach do 65 mm, 2,1 wiersza/s, kaseta ERC27B, RS-232. Biała lub czarna.",
     "shortDescription": "Epson TM-U295 to igłowa drukarka do formularzy i pojedynczych dokumentów. Nie jest drukarką termiczną na rolkę paragonową.",
-    "description": "Epson TM-U295 to igłowa drukarka do formularzy i pojedynczych dokumentów. Nie jest drukarką termiczną na rolkę paragonową.\n\n## Nadruk na pojedynczym formularzu\n\nMechanizm nanosi tekst na podany formularz przy użyciu kasety ERC27B. Maksymalna szerokość nadruku wynosi 65 mm, a szybkość do 2,1 wiersza/s. Dobierz format i grubość dokumentu do wymagań mechanizmu. Drukarka nie drukuje na rolce papieru.\n\nOferowane wersje korzystają z RS-232 i różnią się kolorem obudowy. Urządzenie sprawdza się tam, gdzie aplikacja musi nanieść treść na przygotowany dokument.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie jest kaseta barwiąca. Zestaw nie ma zasilacza ani przewodu danych. Zgodny zasilacz to PS-180; przewód zasilający do niego kupuje się osobno.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-U220IIB](/produkt/epson-tm-u220iib), [Epson TM-J7200](/produkt/epson-tm-j7200), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-U295 to igłowa drukarka slipów, czyli pojedynczych formularzy wkładanych do szczeliny: potwierdzeń, kwitów i dokumentów z gotowym nadrukiem. Nie drukuje na rolce paragonowej.\n\n## Nadruk na pojedynczym formularzu\n\nMechanizm nanosi tekst na formularz przy użyciu kasety ERC27B. Maksymalna szerokość nadruku wynosi 65 mm, a szybkość do 2,1 wiersza/s. Format i grubość dokumentu muszą pasować do wymagań mechanizmu. Obudowa ma 180 × 191 × 102 mm.\n\n## RS-232 i zasilanie\n\nOferowane wersje mają port RS-232 i różnią się kolorem obudowy. W zestawie jest kaseta barwiąca, ale nie ma zasilacza ani przewodu danych. Zgodny zasilacz to PS-180, a przewód zasilający do niego kupuje się osobno. Sterowniki TM-U295 pobiera się ze strony wsparcia Epson, do której prowadzi link w plikach do pobrania.\n\nParagony z rolki i formularze w jednym urządzeniu drukują [Epson TM-H6000VI](/produkt/epson-tm-h6000vi) i atramentowy [Epson TM-J7200](/produkt/epson-tm-j7200).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1312,8 +1321,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Nadruk na gotowych formularzach i kwitach",
+      "Potwierdzenia na pojedynczych dokumentach",
+      "Systemy z portem RS-232"
     ],
     "variants": [
       {
@@ -1361,16 +1371,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-U295 różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy TM-U295 drukuje paragony z rolki?",
+        "answer": "Nie. TM-U295 drukuje tylko na pojedynczych formularzach wkładanych do szczeliny. Paragony z rolki i formularze drukuje TM-H6000VI."
       },
       {
-        "question": "Czy Epson TM-U295 jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Czy zasilacz jest w zestawie z TM-U295?",
+        "answer": "Nie. Zgodny zasilacz to PS-180. Przewód zasilający do niego kupuje się osobno."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-h6000vi",
@@ -1378,9 +1388,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-H6000VI",
     "seoH1": "Epson TM-H6000VI",
     "seoTitle": "Drukarka POS Epson TM-H6000VI — paragony i formularze",
-    "seoDescription": "Drukarka POS Epson TM-H6000VI: termiczny druk paragonów do 500 mm/s i igłowy druk formularzy, opcja MICR, urządzenie niefiskalne. TM-H6000VI Epson z USB, RS-232 i Ethernetem lub PoweredUSB. PN: C31CL25101, C31CL25102, C31CL25111, C31CL25112, C31CL25116, C31CL25132.",
+    "seoDescription": "Drukarka POS Epson TM-H6000VI: termiczne paragony do 500 mm/s i igłowy nadruk formularzy w jednym urządzeniu. Wersje z MICR i PoweredUSB.",
     "shortDescription": "Epson TM-H6000VI to drukarka POS, która łączy termiczny druk paragonów z igłowym drukiem dokumentów arkuszowych. Obsługa MICR i nadruku rewersu zależy od PN.",
-    "description": "Epson TM-H6000VI to drukarka POS, która łączy termiczny druk paragonów z igłowym drukiem dokumentów arkuszowych. Obsługa MICR i nadruku rewersu zależy od PN.\n\n## Dwa mechanizmy dla różnych dokumentów\n\nTermiczny mechanizm paragonowy drukuje do 500 mm/s w rozdzielczości 180 dpi. Mechanizm formularzy korzysta z kasety ERC32B. Nadruk rewersu w odpowiednio wyposażonej wersji wymaga kasety ERC43B. TM-H6000VI w wersjach C31CL25111, C31CL25112, C31CL25116 i C31CL25132 odczytuje MICR. Wersja C31CL25132 drukuje też na rewersie.\n\nWarianty różnią się portami, wyposażeniem oraz kolorem. Wymiary urządzenia wynoszą 186 × 278 × 181 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: kaseta barwiąca do mechanizmu formularzy, rolka papieru i osłona złączy. Wersje z portem RS-232 mają zasilacz PS-190. Wersja PoweredUSB C31CL25116 nie ma zasilacza. Zasilanie pochodzi z portu PoweredUSB stanowiska.\n\n## Porównaj modele\n\n[Epson TM-T88VII](/produkt/epson-tm-t88vii), [Epson TM-J7200](/produkt/epson-tm-j7200), [Epson TM-J7700](/produkt/epson-tm-j7700). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-H6000VI to hybrydowa drukarka POS: drukuje termicznie paragony z rolki i igłowo pojedyncze formularze. Jedno urządzenie zastępuje na stanowisku drukarkę paragonów i drukarkę formularzy. To następca TM-H6000V.\n\n## Dwa mechanizmy dla różnych dokumentów\n\nTermiczny mechanizm paragonowy drukuje do 500 mm/s w rozdzielczości 180 dpi na papierze 80 mm. Mechanizm formularzy korzysta z kasety ERC32B. Nadruk rewersu wymaga kasety ERC43B.\n\n## MICR, porty i zestaw\n\nWersje C31CL25111, C31CL25112, C31CL25116 i C31CL25132 odczytują znaki MICR z czeków. Wersja C31CL25132 drukuje też na rewersie. Warianty różnią się portami, wyposażeniem i kolorem. W zestawie są kaseta barwiąca do mechanizmu formularzy, rolka papieru i osłona złączy. Wersje z portem RS-232 mają zasilacz PS-190, a wersja PoweredUSB C31CL25116 nie ma zasilacza. Urządzenie ma 186 × 278 × 181 mm.\n\nSam nadruk formularzy, bez rolki paragonowej, wykonuje [Epson TM-U295](/produkt/epson-tm-u295). Paragony i formularze drukuje atramentowo [Epson TM-J7700](/produkt/epson-tm-j7700).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1438,8 +1448,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Paragony i formularze z jednego stanowiska",
+      "Odczyt MICR z czeków (wersje z MICR)",
+      "Nadruk na rewersie dokumentu (C31CL25132)"
     ],
     "variants": [
       {
@@ -1535,16 +1546,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-H6000VI różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Które wersje TM-H6000VI odczytują MICR?",
+        "answer": "MICR odczytują C31CL25111, C31CL25112, C31CL25116 i C31CL25132. Wersje C31CL25101 i C31CL25102 nie mają MICR."
       },
       {
         "question": "Czy Epson TM-H6000VI jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-H6000VI drukuje paragony niefiskalne i formularze z programu POS. Paragon fiskalny drukuje osobna drukarka fiskalna."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-j7200",
@@ -1552,9 +1563,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-J7200",
     "seoH1": "Epson TM-J7200",
     "seoTitle": "Atramentowa drukarka POS Epson TM-J7200",
-    "seoDescription": "Atramentowa drukarka POS Epson TM-J7200: druk z rolki 58–83 mm do 98 mm/s i na arkuszach, nadruk na arkuszu do 81,3 mm, urządzenie niefiskalne. TM-J7200 Epson z USB i Ethernetem. PN: C31CF69301, C31CF69321.",
+    "seoDescription": "Atramentowa drukarka POS Epson TM-J7200: paragony z rolki do 98 mm/s i nadruk na formularzach do 81,3 mm. USB i Ethernet, wkład SJIC33P(K).",
     "shortDescription": "Epson TM-J7200 to wielostanowiskowa drukarka atramentowa POS. Drukuje paragony z rolki i obsługuje podawanie pojedynczych formularzy.",
-    "description": "Epson TM-J7200 to wielostanowiskowa drukarka atramentowa POS. Drukuje paragony z rolki i obsługuje podawanie pojedynczych formularzy.\n\n## Potwierdzenia i węższe formularze z jednego urządzenia\n\nTM-J7200 wykonuje nadruk na rolce z prędkością do 98 mm/s. Maksymalna szerokość nadruku z rolki wynosi 72 mm, a na arkuszu do 81,3 mm. To ważna różnica względem szerszego mechanizmu formularzy w TM-J7700.\n\nDrukarka wykorzystuje czarny wkład SJIC33P(K), a nie taśmę termotransferową ani kasetę igłową. Oferowane zestawy mają USB i Ethernet. Wkład SJIC33P(K) jest dostępny także jako część zapasowa. Zestawy występują w kolorze białym i czarnym.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, przewód zasilający, przewód USB, wkład atramentowy i rolka papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-J7700](/produkt/epson-tm-j7700), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi), [Epson TM-U295](/produkt/epson-tm-u295). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-J7200 to atramentowa drukarka POS, która drukuje paragony z rolki i nadruk na pojedynczych formularzach. Wydruk atramentowy nie wymaga papieru termicznego.\n\n## Rolka i formularze do 81,3 mm\n\nTM-J7200 drukuje na rolce do 98 mm/s, na szerokości do 72 mm. Rolka może mieć szerokość 58–83 mm. Na arkuszu nadruk ma szerokość do 81,3 mm.\n\n## Wkład SJIC33P(K) i porty\n\nDrukarka wykorzystuje czarny wkład atramentowy SJIC33P(K), dostępny także jako część zapasowa. Oferowane zestawy mają USB i Ethernet, w obudowie białej lub czarnej. W zestawie są zasilacz PS-180, przewód zasilający, przewód USB, wkład atramentowy i rolka papieru.\n\nSzersze formularze, do 137,8 mm, drukuje [Epson TM-J7700](/produkt/epson-tm-j7700). Termiczny paragon i igłowy formularz łączy [Epson TM-H6000VI](/produkt/epson-tm-h6000vi).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1604,8 +1615,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Paragony i formularze z jednej drukarki",
+      "Wydruk na papierze nietermicznym",
+      "Formularze z nadrukiem do 81,3 mm"
     ],
     "variants": [
       {
@@ -1653,16 +1665,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-J7200 różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Jaki wkład atramentowy pasuje do TM-J7200?",
+        "answer": "TM-J7200 używa czarnego wkładu SJIC33P(K). Wkład jest dostępny także jako część zapasowa."
       },
       {
-        "question": "Czy Epson TM-J7200 jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Czym TM-J7200 różni się od TM-J7700?",
+        "answer": "TM-J7200 drukuje na arkuszu pas do 81,3 mm, a TM-J7700 do 137,8 mm. Z rolki oba drukują do 98 mm/s."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-j7700",
@@ -1670,9 +1682,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-J7700",
     "seoH1": "Epson TM-J7700",
     "seoTitle": "Atramentowa drukarka POS Epson TM-J7700 — formularze",
-    "seoDescription": "Atramentowa drukarka POS Epson TM-J7700: druk z rolki 58–83 mm do 98 mm/s i na formularzach, nadruk na arkuszu do 137,8 mm, urządzenie niefiskalne. TM-J7700 Epson z USB i Ethernetem. PN: C31CF70301, C31CF70321.",
+    "seoDescription": "Atramentowa drukarka POS Epson TM-J7700: paragony z rolki do 98 mm/s i szerokie formularze z nadrukiem do 137,8 mm. USB i Ethernet.",
     "shortDescription": "Epson TM-J7700 to atramentowa drukarka POS z mechanizmem do szerszych formularzy. Łączy druk paragonów z rolki i dokumentów na pojedynczych arkuszach.",
-    "description": "Epson TM-J7700 to atramentowa drukarka POS z mechanizmem do szerszych formularzy. Łączy druk paragonów z rolki i dokumentów na pojedynczych arkuszach.\n\n## Szerszy nadruk na arkuszu niż w TM-J7200\n\nMechanizm arkuszowy TM-J7700 wykonuje nadruk do 137,8 mm. Dla porównania TM-J7200 obsługuje nadruk arkuszowy do 81,3 mm. Oba modele drukują z rolki do 98 mm/s, na szerokości do 72 mm. Dobierz urządzenie do wymiarów formularza przygotowanego w aplikacji.\n\nTM-J7700 korzysta z czarnego atramentu SJIC33P(K). Zestawy mają USB i Ethernet. Obudowa ma 251 × 260 × 188 mm, co trzeba uwzględnić przy planowaniu miejsca na ladzie.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, przewód zasilający, przewód USB, wkład atramentowy i rolka papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-J7200](/produkt/epson-tm-j7200), [Epson TM-H6000VI](/produkt/epson-tm-h6000vi), [Epson TM-U295](/produkt/epson-tm-u295). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-J7700 to atramentowa drukarka POS do paragonów z rolki i dokumentów na pojedynczych arkuszach. Na arkuszu drukuje pas o szerokości do 137,8 mm, o 56 mm szerszy niż TM-J7200.\n\n## Nadruk na arkuszu do 137,8 mm\n\nMechanizm arkuszowy TM-J7700 wykonuje nadruk do 137,8 mm. Z rolki drukuje do 98 mm/s, na szerokości do 72 mm. Wymiary formularza przygotowanego w aplikacji muszą pasować do tego zakresu.\n\n## Miejsce na ladzie i wkład\n\nObudowa ma 251 × 260 × 188 mm, co trzeba uwzględnić przy planowaniu miejsca na ladzie. TM-J7700 korzysta z czarnego wkładu SJIC33P(K). Zestawy mają USB i Ethernet. Zestaw zawiera zasilacz PS-180 z przewodem, przewód USB, wkład SJIC33P(K) i rolkę papieru.\n\nWęższe formularze, do 81,3 mm, w węższej obudowie drukuje [Epson TM-J7200](/produkt/epson-tm-j7200). Igłowy nadruk formularzy z termicznym paragonem łączy [Epson TM-H6000VI](/produkt/epson-tm-h6000vi).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1726,8 +1738,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Szerokie formularze i potwierdzenia na arkuszu",
+      "Paragony z rolki przy tym samym stanowisku",
+      "Wydruk atramentowy bez papieru termicznego"
     ],
     "variants": [
       {
@@ -1775,16 +1788,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-J7700 różni się od podobnych modeli?",
-        "answer": "TM-J7700 drukuje na arkuszu do szerokości 137,8 mm. TM-J7200 ma nadruk arkuszowy do 81,3 mm."
+        "question": "Jaką szerokość nadruku ma TM-J7700 na arkuszu?",
+        "answer": "Do 137,8 mm. Z rolki TM-J7700 drukuje pas do 72 mm, z prędkością do 98 mm/s."
       },
       {
         "question": "Czy Epson TM-J7700 jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. TM-J7700 drukuje paragony niefiskalne i formularze z aplikacji. Dokument fiskalny wymaga osobnego urządzenia fiskalnego."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-l100",
@@ -1792,9 +1805,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-L100",
     "seoH1": "Epson TM-L100",
     "seoTitle": "Drukarka etykiet bez podkładu Epson TM-L100",
-    "seoDescription": "Drukarka etykiet bez podkładu Epson TM-L100: etykiety liner-free i paragony, 203 dpi, do 170 mm/s, rolka do 102 mm, urządzenie niefiskalne. TM-L100 Epson z USB i Ethernetem oraz RS-232 lub Lightning, opcja Bluetooth. PN: C31CJ52103, C31CJ52111, C31CJ52121.",
+    "seoDescription": "Drukarka etykiet bez podkładu Epson TM-L100: etykiety liner-free i paragony, 203 dpi, do 170 mm/s, rolka do 102 mm. Wersje z Bluetooth i Lightning.",
     "shortDescription": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu i paragonów. Służy między innymi do oznaczania zamówień i odbioru towaru.",
-    "description": "Epson TM-L100 to termiczna drukarka do zgodnych etykiet samoprzylepnych bez podkładu i paragonów. Służy między innymi do oznaczania zamówień i odbioru towaru.\n\n## Liner-free do zamówień i odbioru\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Drukarka ma rozdzielczość 203 dpi i mieści rolkę o średnicy do 102 mm. Parametry materiału trzeba dobrać do konkretnego zastosowania.\n\nWszystkie wersje drukują do 170 mm/s. Różnią się portami: C31CJ52103 ma USB, RS-232 i Ethernet, a C31CJ52111 ma USB, Ethernet i Lightning. C31CJ52121 ma dodatkowo Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz, przewód zasilający i przegroda rolki papieru.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\n[Epson TM-L90LF](/produkt/epson-tm-l90lf), [Epson TM-L90](/produkt/epson-tm-l90), [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do znakowania towaru porównaj także [drukarki etykiet](/drukarki-etykiet).",
+    "description": "Epson TM-L100 drukuje etykiety bez podkładu (liner-free) na zamówienia na wynos, w dostawie i przy odbiorze towaru, a także paragony. Bez podkładu jest mniej odpadów, a na rolce mieści się więcej etykiet.\n\n## Materiał liner-free i wydruk\n\nMechanizm jest przystosowany do materiału bez podkładu i odpowiedniego kleju. Parametry materiału dobiera się do zastosowania. Drukarka ma rozdzielczość 203 dpi, drukuje do 170 mm/s i mieści rolkę o średnicy do 102 mm. Można ją ustawić z wydrukiem od przodu lub od góry.\n\n## Porty według PN\n\nC31CJ52103 ma USB, RS-232 i Ethernet. C31CJ52111 ma USB, Ethernet i Lightning. C31CJ52121 ma dodatkowo Bluetooth. Zestaw zawiera zasilacz z przewodem zasilającym i przegrodę rolki papieru.\n\nEtykiety bez podkładu z ekranem i klasą IP22 drukuje [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Wersja z USB i RS-232, bez Ethernetu, to [Epson TM-L90LF](/produkt/epson-tm-l90lf).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1858,8 +1871,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Etykiety na torby z zamówieniami na wynos",
+      "Oznaczanie towaru do odbioru osobistego",
+      "Druk przez Bluetooth (C31CJ52121)"
     ],
     "variants": [
       {
@@ -1914,16 +1928,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-L100 różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy Epson TM-L100 drukuje zwykłe paragony?",
+        "answer": "Tak. TM-L100 drukuje etykiety bez podkładu i paragony. Materiał oraz klej muszą pasować do mechanizmu."
       },
       {
-        "question": "Czy Epson TM-L100 jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Która wersja TM-L100 ma Bluetooth?",
+        "answer": "Bluetooth ma tylko C31CJ52121. Ta wersja ma też USB, Ethernet i Lightning."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-l90",
@@ -1931,9 +1945,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-L90",
     "seoH1": "Epson TM-L90",
     "seoTitle": "Drukarka etykiet i paragonów Epson TM-L90",
-    "seoDescription": "Drukarka etykiet i paragonów Epson TM-L90: termiczna drukarka POS 203 dpi, do 150 mm/s, materiał do 80 mm, urządzenie niefiskalne. TM-L90 Epson z USB i RS-232 lub USB i Ethernetem. PN: C31C412412, C31C412465.",
+    "seoDescription": "Drukarka etykiet i paragonów Epson TM-L90: termiczna, 203 dpi, do 150 mm/s, etykiety z podkładem do 80 mm. USB z RS-232 albo z Ethernetem.",
     "shortDescription": "Epson TM-L90 to termiczna drukarka etykiet i paragonów POS w rozdzielczości 203 dpi. Standardowy model ma osobną konfigurację od wersji TM-L90LF.",
-    "description": "Epson TM-L90 to termiczna drukarka etykiet i paragonów POS w rozdzielczości 203 dpi. Standardowy model ma osobną konfigurację od wersji TM-L90LF.\n\n## Etykiety termiczne i potwierdzenia z rolki\n\nDrukarka osiąga do 150 mm/s i obsługuje materiał o szerokości do 80 mm. Rolka może mieć średnicę do 90 mm. Dobierz rodzaj materiału, czujnik oraz układ wydruku do używanej aplikacji. TM-L90 nie obsługuje materiału liner-free. Do tego służy TM-L90LF.\n\nOferowane PN mają USB z RS-232 albo Ethernetem. Zasilacz PS-180 jest dostępny także jako część zapasowa. Wymiary obudowy wynoszą 140 × 148 × 203 mm.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180, rolka etykiet, przegroda rolki papieru i prowadnica wylotu papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 24 miesiące. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nDo etykiet bez podkładu służą [TM-L90LF](/produkt/epson-tm-l90lf), [TM-L100](/produkt/epson-tm-l100) i [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-L90 drukuje etykiety termiczne z podkładem albo paragony, zależnie od założonej rolki. W sklepie i gastronomii oznacza produkty, porcje i zamówienia danymi z programu POS.\n\n## Etykiety z podkładem do 80 mm\n\nDrukarka osiąga do 150 mm/s w rozdzielczości 203 dpi. Obsługuje materiał o szerokości do 80 mm i rolkę o średnicy do 90 mm. Rodzaj materiału, czujnik i układ wydruku dobiera się do aplikacji. TM-L90 nie obsługuje materiału liner-free.\n\n## USB z RS-232 lub Ethernetem\n\nOferowane PN mają USB z RS-232 albo z Ethernetem. W zestawie są zasilacz PS-180, rolka etykiet, przegroda rolki papieru i prowadnica wylotu papieru. Przewód zasilający i przewód danych nie są w zestawie. Obudowa ma 140 × 148 × 203 mm. Sterowniki i narzędzia są na stronie wsparcia Epson TM-L90, wspólnej dla wersji LF.\n\nDo etykiet bez podkładu służą [TM-L90LF](/produkt/epson-tm-l90lf), [TM-L100](/produkt/epson-tm-l100) i [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Etykiety logistyczne i magazynowe drukują [drukarki etykiet](/drukarki-etykiet).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -1989,8 +2003,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Etykiety produktów i porcji w gastronomii",
+      "Etykiety z ceną w sklepie",
+      "Paragony niefiskalne z rolki papieru"
     ],
     "variants": [
       {
@@ -2038,16 +2053,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-L90 różni się od podobnych modeli?",
-        "answer": "Dobierz model według technologii, papieru, prędkości i portów. Funkcje określa konkretny PN, a nie sama nazwa rodziny."
+        "question": "Czy TM-L90 drukuje etykiety bez podkładu?",
+        "answer": "Nie. TM-L90 drukuje etykiety z podkładem i paragony. Etykiety bez podkładu drukuje wersja TM-L90LF."
       },
       {
-        "question": "Czy Epson TM-L90 jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Co jest w zestawie z TM-L90?",
+        "answer": "Zasilacz PS-180, rolka etykiet, przegroda rolki papieru i prowadnica wylotu papieru. Przewód zasilający i przewód danych kupuje się osobno."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-l90lf",
@@ -2055,9 +2070,9 @@ export const epsonPosProducts: Product[] = [
     "name": "Epson TM-L90LF",
     "seoH1": "Epson TM-L90LF",
     "seoTitle": "Drukarka etykiet liner-free Epson TM-L90LF",
-    "seoDescription": "Drukarka etykiet liner-free Epson TM-L90LF: etykiety bez podkładu do 80 mm, 203 dpi, do 170 mm/s, urządzenie niefiskalne. TM-L90LF Epson z USB i RS-232. PN: C31C412682.",
+    "seoDescription": "Drukarka etykiet liner-free Epson TM-L90LF: etykiety bez podkładu do 80 mm, 203 dpi, do 170 mm/s, rolka do 102 mm, USB i RS-232.",
     "shortDescription": "Epson TM-L90LF to termiczna drukarka etykiet bez podkładu i potwierdzeń. Wersja LF jest przeznaczona do zgodnego materiału liner-free.",
-    "description": "Epson TM-L90LF to termiczna drukarka etykiet bez podkładu i potwierdzeń. Wersja LF jest przeznaczona do zgodnego materiału liner-free.\n\n## Wydruk samoprzylepny bez oddzielnej warstwy podkładowej\n\nTM-L90LF drukuje do 170 mm/s w rozdzielczości 203 dpi. Obsługuje materiał do 80 mm szerokości i rolkę do 102 mm średnicy. Materiał oraz klej muszą pasować do mechanizmu.\n\nWersja C31C412682 ma USB i RS-232. Model nie ma Ethernetu ani Bluetooth. TM-L100 ma wersje z Ethernetem, Lightning i Bluetooth.\n\n## Konfiguracja i zgodne wyposażenie\n\nPrzed podłączeniem sprawdź obsługę modelu i portu w aplikacji POS. To urządzenie niefiskalne.\n\nW zestawie: zasilacz PS-180 i przegroda rolki papieru. Przewód zasilający i przewód danych nie są w zestawie.\n\nGwarancja na drukarkę wynosi 12 miesięcy. Serwis odbywa się po dostarczeniu urządzenia do punktu serwisowego.\n\n## Porównaj modele\n\nOznaczenie LF dotyczy konfiguracji do zgodnych etykiet bez podkładu. [Standardowy TM-L90](/produkt/epson-tm-l90) ma osobną kartę i inne przeznaczenie materiałowe. Przed zakupem dobierz rolkę i rodzaj kleju do wersji LF. Etykiety bez podkładu drukują też [Epson TM-L100](/produkt/epson-tm-l100) i [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii). Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos).",
+    "description": "Epson TM-L90LF to wersja TM-L90 do etykiet samoprzylepnych bez podkładu (liner-free). Drukuje etykiety na zamówienia, porcje i paczki do odbioru oraz potwierdzenia z danymi z programu POS.\n\n## Etykiety bez warstwy podkładowej\n\nTM-L90LF drukuje do 170 mm/s w rozdzielczości 203 dpi. Obsługuje materiał do 80 mm szerokości i rolkę do 102 mm średnicy. Materiał i klej muszą pasować do mechanizmu LF.\n\n## USB i RS-232\n\nWersja C31C412682 ma USB i RS-232. Model nie ma Ethernetu ani Bluetooth. Zestaw zawiera zasilacz PS-180 i przegrodę rolki papieru, bez przewodu zasilającego i przewodu danych.\n\nWersje z Ethernetem, Lightning i Bluetooth ma [Epson TM-L100](/produkt/epson-tm-l100). Etykiety z podkładem drukuje standardowy [TM-L90](/produkt/epson-tm-l90).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "epson",
@@ -2119,8 +2134,9 @@ export const epsonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumenty z aplikacji POS",
-      "Obsługa punktu sprzedaży"
+      "Etykiety zamówień i paczek do odbioru",
+      "Etykiety bez podkładu w gastronomii",
+      "Potwierdzenia z tej samej drukarki"
     ],
     "variants": [
       {
@@ -2157,16 +2173,16 @@ export const epsonPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czym Epson TM-L90LF różni się od podobnych modeli?",
-        "answer": "Wersja LF obsługuje zgodny materiał bez podkładu. Standardowy TM-L90 nie obsługuje materiału liner-free."
+        "question": "Czym TM-L90LF różni się od TM-L90?",
+        "answer": "TM-L90LF drukuje na zgodnym materiale bez podkładu, do 170 mm/s. Standardowy TM-L90 drukuje etykiety z podkładem i paragony, do 150 mm/s."
       },
       {
-        "question": "Czy Epson TM-L90LF jest urządzeniem fiskalnym?",
-        "answer": "Nie. To drukarka do danych przesyłanych z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Czy TM-L90LF ma Ethernet?",
+        "answer": "Nie. Oferowana wersja C31C412682 ma USB i RS-232. Ethernet ma TM-L100."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "epson-tm-p20ii",

@@ -7,9 +7,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-330III",
     "seoH1": "BIXOLON SRP-330III",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-330III — 80 mm, USB, RS-232",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-330III: termiczna, niefiskalna drukarka POS 80 mm, 180 dpi, do 250 mm/s. SRP-330III BIXOLON z USB i RS-232, opcja Ethernet. PN: SRP-330IIISK/BEG, SRP-330IIIESK/BEG.",
+    "seoDescription": "Drukarka paragonów niefiskalnych BIXOLON SRP-330III: termiczna, 80 mm, 180 dpi, do 250 mm/s, USB i RS-232, wersja z Ethernetem. Następca SRP-330II.",
     "shortDescription": "BIXOLON SRP-330III to termiczna drukarka POS do paragonów niefiskalnych i potwierdzeń na papierze 80 mm. Drukuje do 250 mm/s w rozdzielczości 180 dpi.",
-    "description": "BIXOLON SRP-330III to termiczna drukarka POS do paragonów niefiskalnych i potwierdzeń na papierze 80 mm. Drukuje do 250 mm/s w rozdzielczości 180 dpi.\n\n## Stanowisko kasowe z portem szeregowym\n\nObie wersje mają USB i RS-232. Wersja SRP-330IIIESK/BEG ma dodatkowo Ethernet. Drukarka mieści rolkę o średnicy do 80 mm i drukuje na szerokości do 72 mm. Przegroda do papieru 58 mm jest w zestawie. Gilotyna odcina gotowy dokument, a czujniki wykrywają koniec papieru i otwartą pokrywę.\n\n## Sterowniki, trwałość i gwarancja\n\nBIXOLON udostępnia sterownik Windows, sterowniki OPOS/JPOS i CUPS oraz SDK dla Android, iOS i Windows. Drukarka przyjmuje papier termiczny o grubości 0,05–0,08 mm. Masa drukarki wynosi 1,6 kg. Głowica ma trwałość 150 km, a gilotyna 1,8 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj drukarki POS\n\n[BIXOLON SRP-350V](/produkt/bixolon-srp-350v), [BIXOLON SRP-350plusV](/produkt/bixolon-srp-350plusv), [Epson TM-T20IV](/produkt/epson-tm-t20iv). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow), a do znakowania towaru [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "Drukarka BIXOLON SRP-330III drukuje paragony niefiskalne, bony i potwierdzenia z programu sprzedaży na stanowisku kasowym. To następca modelu SRP-330II. Ma port szeregowy RS-232, z którego nadal korzysta wiele starszych systemów POS.\n\n## USB, RS-232 i wersja z Ethernetem\n\nObie wersje mają USB i RS-232. Wersja SRP-330IIIESK/BEG ma dodatkowo Ethernet. Drukarka mieści rolkę o średnicy do 80 mm i drukuje na szerokości do 72 mm. Przegroda do papieru 58 mm jest w zestawie. Gilotyna odcina gotowy dokument, a czujniki wykrywają koniec papieru i otwartą pokrywę.\n\n## Sterowniki i głowica 150 km\n\nDo drukarki są sterownik Windows, sterowniki OPOS/JPOS i CUPS oraz SDK dla Android, iOS i Windows. Drukarka przyjmuje papier termiczny o grubości 0,05–0,08 mm i waży 1,6 kg. Głowica ma trwałość 150 km, a gilotyna 1,8 mln cięć.\n\nDo 300 mm/s, także w wersji 203 dpi, drukuje [BIXOLON SRP-350V](/produkt/bixolon-srp-350v). Porty USB i RS-232 przy rozdzielczości 203 dpi ma [Epson TM-T20IV](/produkt/epson-tm-t20iv).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -95,9 +95,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Paragony niefiskalne przy kasie",
+      "Bony i potwierdzenia ze starszego systemu POS przez RS-232",
+      "Druk w sieci lokalnej w wersji z Ethernetem"
     ],
     "variants": [
       {
@@ -143,11 +143,11 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "question": "Czy BIXOLON SRP-330III jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-330III drukuje paragony niefiskalne i bony wysłane z programu POS. Paragon fiskalny drukuje kasa fiskalna lub drukarka fiskalna."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Port dodatkowy": "Złącze przewodowe dodane do USB i RS-232.\n\n• Ethernet — przewodowa sieć lokalna.\n\n• Puste pole — wariant ma tylko złącza standardowe."
     }
@@ -158,9 +158,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-350V",
     "seoH1": "BIXOLON SRP-350V",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-350V — 80 mm, 300 mm/s",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-350V i SRP-352V: niefiskalna drukarka POS 80 mm, 180 lub 203 dpi, do 300 mm/s. SRP-350V BIXOLON z USB lub USB i RS-232. PN: SRP-350VK/BEG, SRP-350VSK/BEG, SRP-352VK/BEG, SRP-352VSK/BEG.",
+    "seoDescription": "Drukarka paragonów i bonów kuchennych BIXOLON SRP-350V: termiczna, 80 mm, do 300 mm/s, 180 lub 203 dpi (SRP-352V), USB lub USB i RS-232.",
     "shortDescription": "BIXOLON SRP-350V to stacjonarna drukarka paragonów niefiskalnych na papierze 80 mm. Rodzina obejmuje SRP-350V 180 dpi oraz SRP-352V 203 dpi.",
-    "description": "BIXOLON SRP-350V to stacjonarna drukarka paragonów niefiskalnych na papierze 80 mm. Rodzina obejmuje SRP-350V 180 dpi oraz SRP-352V 203 dpi.\n\n## Rozdzielczość, port i papier\n\nSRP-350V drukuje do 300 mm/s, a SRP-352V do 270 mm/s. Wersje K mają USB, a wersje SK mają USB i RS-232. Drukarka mieści rolkę o średnicy do 83 mm i drukuje na szerokości do 72 mm. Przyjmuje papier 80 mm, a z przegrodą także 58 mm. Czujnik Visibility Intelligence rozpoznaje papier Blue4est i dobiera parametry druku.\n\n## Kuchnia i stanowisko sprzedaży\n\nOpcjonalny moduł B-Melodist sygnalizuje nowe zamówienie w kuchni. Drukarka pracuje poziomo, a na opcjonalnej podstawce pionowo. Przyjmuje papier o grubości 0,05–0,08 mm. Głowica ma trwałość 150 km, a gilotyna 2 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj modele\n\n[SRP-350plusV](/produkt/bixolon-srp-350plusv) ma Ethernet w każdej wersji i drukuje do 400 mm/s przy 180 dpi. Prostszy model z USB i RS-232 to [SRP-330III](/produkt/bixolon-srp-330iii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-350V pracuje przy kasie i w kuchni restauracji jako drukarka paragonów niefiskalnych i bonów kuchennych. Wersja SRP-352V drukuje w rozdzielczości 203 dpi, która daje ostrzejsze kody kreskowe i logo.\n\n## Prędkość, porty i papier\n\nSRP-350V drukuje do 300 mm/s, a SRP-352V do 270 mm/s. Wersje K mają USB, a wersje SK mają USB i RS-232. Drukarka mieści rolkę o średnicy do 83 mm i drukuje na szerokości do 72 mm. Przyjmuje papier 80 mm, a z przegrodą także 58 mm. Czujnik Visibility Intelligence rozpoznaje papier Blue4est i dobiera parametry druku.\n\n## Sygnał nowego zamówienia w kuchni\n\nOpcjonalny moduł B-Melodist sygnalizuje dźwiękiem nowe zamówienie w kuchni. Drukarka pracuje poziomo, a na opcjonalnej podstawce pionowo. Przyjmuje papier o grubości 0,05–0,08 mm. Głowica ma trwałość 150 km, a gilotyna 2 mln cięć.\n\nEthernet w każdej wersji i druk do 400 mm/s ma [SRP-350plusV](/produkt/bixolon-srp-350plusv). Model 250 mm/s z USB i RS-232 to [SRP-330III](/produkt/bixolon-srp-330iii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -246,9 +246,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Bony kuchenne z sygnałem B-Melodist",
+      "Paragony niefiskalne na stanowisku kasowym",
+      "Praca w pionie na podstawce przy wąskiej ladzie"
     ],
     "variants": [
       {
@@ -316,11 +316,11 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "question": "Czy BIXOLON SRP-350V jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-350V drukuje paragony niefiskalne i bony kuchenne z programu POS. Do paragonu fiskalnego potrzebna jest osobna drukarka fiskalna albo kasa fiskalna online."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Odmiana": "Odmiana drukarki w rodzinie SRP-350V.\n\n• SRP-350V — 180 dpi, do 300 mm/s.\n\n• SRP-352V — 203 dpi, do 270 mm/s.",
       "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Puste pole — wariant ma tylko złącza standardowe."
@@ -332,9 +332,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-350plusV",
     "seoH1": "BIXOLON SRP-350plusV",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-350plusV — 80 mm, Ethernet",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-350plusV: niefiskalna drukarka POS 80 mm z USB i Ethernetem, do 400 mm/s. Opcje RS-232, Wi-Fi, Bluetooth, PoweredUSB. PN: SRP-350PLUSVK/BEG, SRP-350plusVSK/BEG, SRP-350PLUSVWDAK/BEG, SRP-350plusVBaK/BEG, SRP-350PlusVPWK, SRP-352plusVK/BEG, SRP-352plusVSK/BEG, SRP-352plusVWDaK/BEG, SRP-352plusVBaK/BEG.",
+    "seoDescription": "Drukarka paragonów BIXOLON SRP-350plusV z Ethernetem: 80 mm, do 400 mm/s, wersje z Wi-Fi, Bluetooth, RS-232 i PoweredUSB. Następca SRP-350plusIII.",
     "shortDescription": "BIXOLON SRP-350plusV to termiczna drukarka paragonów niefiskalnych z Ethernetem, na papierze 80 mm. Rodzina obejmuje SRP-350plusV 180 dpi i SRP-352plusV 203 dpi.",
-    "description": "BIXOLON SRP-350plusV to termiczna drukarka paragonów niefiskalnych z Ethernetem, na papierze 80 mm. Rodzina obejmuje SRP-350plusV 180 dpi i SRP-352plusV 203 dpi.\n\n## Ethernet w standardzie i opcje radiowe\n\nSRP-350plusV drukuje do 400 mm/s, a SRP-352plusV do 370 mm/s. Każda wersja ma USB i Ethernet. RS-232 mają wersje SK, Wi-Fi wersje WDA, a Bluetooth wersje Ba. SRP-350PlusVPWK ma port PoweredUSB. Rolka może mieć średnicę do 83 mm, a nadruk szerokość do 72 mm. Skala szarości i dithering poprawiają odwzorowanie logo i grafiki.\n\n## Zasilanie, sterowniki i gwarancja\n\nWersja PoweredUSB nie ma zasilacza. Zasilanie pochodzi z portu PoweredUSB stanowiska. BIXOLON podaje obsługę Android, iOS i Windows oraz sterowniki OPOS/JPOS i CUPS. Drukarka przyjmuje papier o grubości 0,05–0,08 mm. Głowica ma trwałość 200 km, a gilotyna 2 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj modele\n\n[SRP-350V](/produkt/bixolon-srp-350v) drukuje do 300 mm/s i ma USB lub USB z RS-232. Szybszy model 500 mm/s to [SRP-380plus](/produkt/bixolon-srp-380plus). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-350plusV to drukarka paragonów niefiskalnych do sieci sklepu lub restauracji: każda wersja ma port Ethernet (LAN). To następca SRP-350plusIII. Rodzina obejmuje SRP-350plusV 180 dpi i SRP-352plusV 203 dpi.\n\n## Ethernet w standardzie, Wi-Fi i Bluetooth w opcji\n\nSRP-350plusV drukuje do 400 mm/s, a SRP-352plusV do 370 mm/s. Każda wersja ma USB i Ethernet. RS-232 mają wersje SK, Wi-Fi wersje WDA, a Bluetooth wersje Ba. SRP-350PlusVPWK ma port PoweredUSB i nie ma zasilacza, bo zasilanie pochodzi z portu stanowiska. Rolka może mieć średnicę do 83 mm, a nadruk szerokość do 72 mm.\n\n## Logo na paragonie i trwałość\n\nSkala szarości i dithering poprawiają odwzorowanie logo i grafiki. Drukarka działa z systemami Android, iOS i Windows, a sterowniki OPOS/JPOS i CUPS ułatwiają podłączenie do programu POS. Papier może mieć grubość od 0,05 do 0,08 mm. Głowica ma trwałość 200 km, a gilotyna 2 mln cięć.\n\nBez Ethernetu, z USB lub USB i RS-232, jest [SRP-350V](/produkt/bixolon-srp-350v). Do 500 mm/s drukuje [SRP-380plus](/produkt/bixolon-srp-380plus).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -420,9 +420,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Paragony niefiskalne w sieci LAN sklepu",
+      "Bony kuchenne przez Wi-Fi lub Ethernet",
+      "Stanowisko POS z portem PoweredUSB"
     ],
     "variants": [
       {
@@ -536,15 +536,15 @@ export const bixolonPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czy każdy SRP-350plusV ma Wi-Fi?",
-        "answer": "Nie. Wi-Fi jest przypisane do odpowiednich PN. Inne konfiguracje mają Ethernet oraz USB, RS-232, Bluetooth lub PoweredUSB zgodnie z tabelą."
+        "answer": "Nie. Wi-Fi mają tylko wersje WDA. Pozostałe konfiguracje mają Ethernet i USB, a dodatkowo RS-232, Bluetooth lub PoweredUSB zgodnie z tabelą wariantów."
       },
       {
         "question": "Czy BIXOLON SRP-350plusV jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-350plusV drukuje dokumenty niefiskalne wysłane przez sieć z programu POS. Paragon fiskalny wystawia drukarka fiskalna albo kasa fiskalna online."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Odmiana": "Odmiana drukarki w rodzinie SRP-350plusV.\n\n• SRP-350plusV — 180 dpi, do 400 mm/s.\n\n• SRP-352plusV — 203 dpi, do 370 mm/s.",
       "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe."
@@ -556,9 +556,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-380",
     "seoH1": "BIXOLON SRP-380",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-380 — 80 mm, 350 mm/s",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-380 i SRP-382: niefiskalna drukarka POS 80 mm, 180 lub 203 dpi, do 350 mm/s. SRP-380 BIXOLON z USB, Ethernet, RS-232 lub PoweredUSB. PN: SRP-380K, SRP-380SK, SRP-380EK, SRP-380PWK, SRP-382K/BEG, SRP-382SK, SRP-382EK/BEG, SRP-382PWK.",
+    "seoDescription": "Drukarka paragonów BIXOLON SRP-380 i SRP-382: termiczna, 80 mm, do 350 mm/s, 180 lub 203 dpi, wersje z Ethernetem, RS-232 i PoweredUSB.",
     "shortDescription": "BIXOLON SRP-380 to termiczna drukarka paragonów niefiskalnych na papierze 80 mm. Rodzina obejmuje SRP-380 180 dpi oraz SRP-382 203 dpi.",
-    "description": "BIXOLON SRP-380 to termiczna drukarka paragonów niefiskalnych na papierze 80 mm. Rodzina obejmuje SRP-380 180 dpi oraz SRP-382 203 dpi.\n\n## Dwie rozdzielczości przy tej samej prędkości\n\nSRP-380 i SRP-382 drukują do 350 mm/s. Nadruk ma szerokość do 72 mm, a rolka średnicę do 83 mm. Drukarka przyjmuje papier 80 mm, a z przegrodą 58 mm z zestawu także papier 58 mm. Każda wersja ma USB. Wersje EK mają Ethernet, wersje SK RS-232, a wersje PWK PoweredUSB.\n\n## Trwałość i gwarancja\n\nGłowica ma trwałość 250 km, a na papierze Blue4est 200 km. Gilotyna wykonuje do 3 mln cięć. Stan zużycia głowicy i gilotyny pokazuje wydruk autotestu. BIXOLON udostępnia sterowniki Windows, OPOS/JPOS i CUPS oraz SDK dla Android, iOS i Windows. Masa drukarki wynosi 1,56 kg. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj modele\n\n[SRP-380plus](/produkt/bixolon-srp-380plus) to osobna rodzina, która drukuje do 500 mm/s. Model z Ethernetem w każdej wersji to [SRP-350plusV](/produkt/bixolon-srp-350plusv). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-380 to drukarka paragonów niefiskalnych na ruchliwe stanowiska kasowe, gdzie liczy się szybkość i trwałość mechanizmu. Wersja SRP-382 drukuje w rozdzielczości 203 dpi przy tej samej prędkości 350 mm/s.\n\n## Porty i papier 58 lub 80 mm\n\nNadruk ma szerokość do 72 mm, a rolka średnicę do 83 mm. Drukarka przyjmuje papier 80 mm, a z przegrodą 58 mm z zestawu także papier 58 mm. Każda wersja ma USB. Wersje EK mają Ethernet, wersje SK RS-232, a wersje PWK PoweredUSB.\n\n## Głowica 250 km i gilotyna 3 mln cięć\n\nGłowica ma trwałość 250 km, a na papierze Blue4est 200 km. Gilotyna wykonuje do 3 mln cięć. Stan zużycia głowicy i gilotyny pokazuje wydruk autotestu. Program POS łączy się z drukarką przez sterowniki Windows, OPOS/JPOS lub CUPS albo przez SDK dla Android, iOS i Windows. Drukarka waży 1,56 kg.\n\nDo 500 mm/s drukuje osobna rodzina [SRP-380plus](/produkt/bixolon-srp-380plus). Ethernet w każdej wersji ma [SRP-350plusV](/produkt/bixolon-srp-350plusv).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -644,9 +644,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Paragony niefiskalne na kasie o dużym ruchu",
+      "Bony i potwierdzenia w sieci (wersje EK)",
+      "Stanowisko POS z PoweredUSB (wersje PWK)"
     ],
     "variants": [
       {
@@ -754,11 +754,11 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "question": "Czy BIXOLON SRP-380 jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-380 drukuje paragony niefiskalne, bony i potwierdzenia przesłane z programu POS. Dokument fiskalny drukuje osobne urządzenie fiskalne."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Odmiana": "Odmiana drukarki w rodzinie SRP-380.\n\n• SRP-380 — 180 dpi, do 350 mm/s.\n\n• SRP-382 — 203 dpi, do 350 mm/s.",
       "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• Ethernet — przewodowa sieć lokalna.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe."
@@ -770,9 +770,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-380plus",
     "seoH1": "BIXOLON SRP-380plus",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-380plus — 80 mm, 500 mm/s",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-380plus: niefiskalna drukarka POS 80 mm, 180 dpi, do 500 mm/s, czujnik Visibility Intelligence. SRP-380plus BIXOLON. PN: SRP-380plusK.",
+    "seoDescription": "Drukarka paragonów BIXOLON SRP-380plus: termiczna, 80 mm, do 500 mm/s, 180 dpi, USB. Głowica 300 km i gilotyna 3 mln cięć. Cena netto.",
     "shortDescription": "BIXOLON SRP-380plus to stacjonarna drukarka paragonów niefiskalnych i biletów na papierze 80 mm. Drukuje do 500 mm/s w rozdzielczości 180 dpi.",
-    "description": "BIXOLON SRP-380plus to stacjonarna drukarka paragonów niefiskalnych i biletów na papierze 80 mm. Drukuje do 500 mm/s w rozdzielczości 180 dpi.\n\n## Szybki wydruk przy dużej liczbie transakcji\n\nSRP-380plusK ma port USB. Nadruk ma szerokość do 72 mm, a rolka średnicę do 83 mm. Papier 58 mm wymaga przegrody. Czujniki wykrywają koniec papieru, bliski koniec papieru i otwartą pokrywę. Visibility Intelligence rozpoznaje papier Blue4est i dobiera parametry druku. Skala szarości i dithering poprawiają odwzorowanie logo.\n\n## Trwałość i gwarancja\n\nGłowica ma trwałość 300 km, a gilotyna 3 mln cięć. Drukarka pracuje poziomo albo pionowo na opcjonalnym stojaku RVS-350. Przyjmuje papier o grubości 0,05–0,08 mm. Masa drukarki wynosi 1,57 kg. BIXOLON udostępnia sterowniki Windows, OPOS/JPOS i CUPS oraz SDK dla Android, iOS i Windows. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj modele\n\n[SRP-380 i SRP-382](/produkt/bixolon-srp-380) drukują do 350 mm/s w rozdzielczości 180 lub 203 dpi. Do 500 mm/s drukuje też [Epson TM-T88VII](/produkt/epson-tm-t88vii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-380plus drukuje do 500 mm/s i jest najszybszą drukarką BIXOLON w naszej ofercie. Pasuje do kas w marketach i punktach gastronomicznych z dużą kolejką oraz do druku biletów.\n\n## Port USB i czujniki papieru\n\nSRP-380plusK ma port USB. Szerokość nadruku wynosi do 72 mm, a średnica rolki do 83 mm. Papier 58 mm wymaga przegrody. Czujniki wykrywają koniec papieru, bliski koniec papieru i otwartą pokrywę. Visibility Intelligence rozpoznaje papier Blue4est i dobiera parametry druku. Skala szarości i dithering poprawiają odwzorowanie logo.\n\n## Głowica 300 km i praca w pionie\n\nGłowica ma trwałość 300 km, a gilotyna 3 mln cięć. Drukarka pracuje poziomo albo pionowo na opcjonalnym stojaku RVS-350. Przyjmuje papier o grubości 0,05–0,08 mm i waży 1,57 kg. Producent udostępnia dla niej sterowniki Windows, OPOS/JPOS i CUPS oraz SDK dla systemów Android, iOS i Windows.\n\nDo 350 mm/s, ale z wersjami Ethernet i RS-232, drukują [SRP-380 i SRP-382](/produkt/bixolon-srp-380). Do 500 mm/s drukuje też [Epson TM-T88VII](/produkt/epson-tm-t88vii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -858,9 +858,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Kasy o dużym ruchu w marketach",
+      "Bilety i kupony z programu POS",
+      "Paragony niefiskalne w gastronomii szybkiej obsługi"
     ],
     "variants": [
       {
@@ -896,11 +896,11 @@ export const bixolonPosProducts: Product[] = [
       },
       {
         "question": "Czy BIXOLON SRP-380plus jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-380plus drukuje paragony niefiskalne, bilety i kupony. Paragon fiskalny wymaga osobnej drukarki fiskalnej."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "bixolon-srp-q200",
@@ -908,9 +908,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-Q200",
     "seoH1": "BIXOLON SRP-Q200",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-Q200 — 58 mm, kompaktowa",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-Q200: kompaktowa, niefiskalna drukarka POS 58 mm, 203 dpi, do 250 mm/s, wydruk z góry lub z przodu. SRP-Q200 BIXOLON z USB i RS-232 albo USB, Ethernet i Wi-Fi. PN: SRP-Q200SK, SRP-Q200EWDK.",
+    "seoDescription": "Mała drukarka paragonów BIXOLON SRP-Q200 na papier 58 mm: 203 dpi, do 250 mm/s, wydruk z góry lub z przodu. Wersje z RS-232 albo Ethernetem i Wi-Fi.",
     "shortDescription": "BIXOLON SRP-Q200 to kompaktowa termiczna drukarka paragonów niefiskalnych na papierze 58 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.",
-    "description": "BIXOLON SRP-Q200 to kompaktowa termiczna drukarka paragonów niefiskalnych na papierze 58 mm. Drukuje do 250 mm/s w rozdzielczości 203 dpi.\n\n## Mały punkt sprzedaży i wąski papier\n\nObudowa ma 103 × 104 × 109 mm i waży 0,61 kg. Drukarka mieści rolkę o średnicy do 60 mm i drukuje na szerokości do 54 mm. Dokument wychodzi z góry lub z przodu, zależnie od ustawienia drukarki. Gilotyna odcina dokument po zakończeniu wydruku. Opcjonalnie do drukarki można podłączyć zewnętrzny brzęczyk lub moduł B-Melodist.\n\n## Połączenie i gwarancja\n\nSRP-Q200SK ma USB i RS-232. SRP-Q200EWDK ma USB, Ethernet i Wi-Fi. BIXOLON podaje obsługę Android, iOS i Windows oraz sterowniki OPOS/JPOS i CUPS. Drukarka przyjmuje papier o grubości 0,05–0,08 mm. Głowica ma trwałość 100 km, a gilotyna 1 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj drukarki POS\n\nDo papieru 80 mm służą kompaktowe [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300) i [Epson TM-m30III](/produkt/epson-tm-m30iii). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos). Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow).",
+    "description": "BIXOLON SRP-Q200 to mała drukarka paragonów na papier 58 mm do kawiarni i małego sklepu. Sprawdza się też jako druga drukarka bonów w kuchni. Obudowa ma 103 × 104 × 109 mm i waży 0,61 kg, więc mieści się na wąskiej ladzie.\n\n## Wylot papieru z góry lub z przodu\n\nDokument wychodzi z góry lub z przodu, zależnie od ustawienia drukarki. Drukarka mieści rolkę o średnicy do 60 mm i drukuje na szerokości do 54 mm, w rozdzielczości 203 dpi, do 250 mm/s. Gilotyna odcina dokument po zakończeniu wydruku. Do drukarki można podłączyć opcjonalny zewnętrzny brzęczyk lub moduł B-Melodist, który sygnalizuje nowy bon.\n\n## RS-232 albo Ethernet i Wi-Fi\n\nSRP-Q200SK ma USB i RS-232. SRP-Q200EWDK ma USB, Ethernet i Wi-Fi. SRP-Q200 współpracuje z systemami Android, iOS i Windows. Producent podaje sterowniki OPOS/JPOS i CUPS. Drukarka przyjmuje papier o grubości 0,05–0,08 mm. Głowica ma trwałość 100 km, a gilotyna 1 mln cięć.\n\nNa papier 80 mm, w kompaktowej obudowie, są [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300) i [Epson TM-m30III](/produkt/epson-tm-m30iii). Do pracy z baterii służą [mobilne drukarki paragonów](/mobilne-drukarki-paragonow).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -996,9 +996,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Paragony na papierze 58 mm w kawiarni i małym sklepie",
+      "Druga drukarka bonów w kuchni",
+      "Druk przez Wi-Fi z tabletu (SRP-Q200EWDK)"
     ],
     "variants": [
       {
@@ -1042,15 +1042,15 @@ export const bixolonPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SRP-Q200 drukuje na papierze 80 mm?",
-        "answer": "Nie. SRP-Q200 obsługuje papier 58 mm. Do papieru 80 mm porównaj SRP-Q300 lub standardowe modele SRP-350V."
+        "answer": "Nie. SRP-Q200 obsługuje papier 58 mm. Na papier 80 mm są SRP-Q300 i SRP-350V."
       },
       {
         "question": "Czy BIXOLON SRP-Q200 jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-Q200 drukuje paragony niefiskalne i bony na papierze 58 mm. Sprzedaż fiskalizuje kasa fiskalna lub drukarka fiskalna."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Port dodatkowy": "Złącze przewodowe dodane do USB.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Ethernet — przewodowa sieć lokalna."
     }
@@ -1061,9 +1061,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-Q300",
     "seoH1": "BIXOLON SRP-Q300",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-Q300 — 80 mm, mPOS",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-Q300: kompaktowa, niefiskalna drukarka mPOS 80 mm z wydrukiem z przodu, 180 dpi, do 220 mm/s, USB i Ethernet. SRP-Q300 BIXOLON. PN: SRP-Q300K/BEG.",
+    "seoDescription": "Drukarka paragonów BIXOLON SRP-Q300: kompaktowa, papier 80 mm, wydruk z przodu, 180 dpi, do 220 mm/s, USB i Ethernet. Do stanowiska z tabletem.",
     "shortDescription": "BIXOLON SRP-Q300 to kompaktowa termiczna drukarka paragonów niefiskalnych w obudowie sześciennej. Drukuje na papierze 80 mm, z wylotem z przodu.",
-    "description": "BIXOLON SRP-Q300 to kompaktowa termiczna drukarka paragonów niefiskalnych w obudowie sześciennej. Drukuje na papierze 80 mm, z wylotem z przodu.\n\n## Stanowisko mPOS z wydrukiem od przodu\n\nObudowa ma 128 × 125 × 125 mm i waży 1,23 kg. Papier wychodzi z przodu, więc nad drukarką nie trzeba zostawiać miejsca na dokument. Rolka może mieć średnicę do 80 mm. Drukarka osiąga do 220 mm/s w rozdzielczości 180 dpi. Przyjmuje papier 80 mm, a z przegrodą także 58 mm.\n\n## Połączenie i gwarancja\n\nSRP-Q300K/BEG ma USB, Ethernet i port USB tylko do ładowania. Ta wersja jest zasilana z sieci. Nie ma baterii ani koncentratora B-gate. Stojak na tablet RTS-Q300 i wyświetlacz klienta BCD-3000 są akcesoriami opcjonalnymi. Głowica ma trwałość 150 km, a gilotyna 1,5 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj drukarki POS\n\n[BIXOLON SRP-Q200](/produkt/bixolon-srp-q200) drukuje na papierze 58 mm. Kompaktowe modele 80 mm Epson to [TM-m30III](/produkt/epson-tm-m30iii) i [TM-m30III-H](/produkt/epson-tm-m30iii-h). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-Q300 to kompaktowa drukarka paragonów 80 mm do stanowiska z tabletem (mPOS) w kawiarni, butiku lub punkcie usługowym. Obudowa ma 128 × 125 × 125 mm i mieści się obok tabletu na ladzie.\n\n## Wydruk z przodu, bez miejsca nad drukarką\n\nPapier wychodzi z przodu, więc drukarkę można postawić pod półką. Rolka może mieć średnicę do 80 mm. Drukarka osiąga do 220 mm/s w rozdzielczości 180 dpi. Obsługuje papier 80 mm, a po założeniu przegrody także 58 mm. Masa wynosi 1,23 kg.\n\n## USB, Ethernet i akcesoria stanowiska\n\nSRP-Q300K/BEG ma USB, Ethernet i port USB tylko do ładowania. Ta wersja jest zasilana z sieci. Nie ma baterii ani koncentratora B-gate. Stojak na tablet RTS-Q300 i wyświetlacz klienta BCD-3000 są akcesoriami opcjonalnymi. Głowica ma trwałość 150 km, a gilotyna 1,5 mln cięć.\n\nNa węższy papier 58 mm jest [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200). Kompaktowe drukarki 80 mm Epson to [TM-m30III](/produkt/epson-tm-m30iii), z Wi-Fi i Bluetooth w części wersji, oraz [TM-m30III-H](/produkt/epson-tm-m30iii-h).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -1145,9 +1145,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Stanowisko mPOS z tabletem na stojaku RTS-Q300",
+      "Paragony niefiskalne 80 mm na małej ladzie",
+      "Druk w sieci przez Ethernet"
     ],
     "variants": [
       {
@@ -1179,15 +1179,15 @@ export const bixolonPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SRP-Q300K/BEG ma baterię lub B-gate?",
-        "answer": "Nie. To podstawowa wersja USB i Ethernet. Bateria i funkcje B-gate dotyczą innych modeli rodziny."
+        "answer": "Nie. To podstawowa wersja z USB i Ethernetem. Bateria i funkcje B-gate dotyczą innych modeli rodziny."
       },
       {
         "question": "Czy BIXOLON SRP-Q300 jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-Q300 drukuje dokumenty niefiskalne z aplikacji na tablecie lub komputerze. Do paragonu fiskalnego służy osobne urządzenie fiskalne."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21"
+    "updatedAt": "2026-10-22"
   },
   {
     "id": "bixolon-srp-f310ii",
@@ -1195,9 +1195,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-F310II",
     "seoH1": "BIXOLON SRP-F310II",
     "seoTitle": "Drukarka paragonów BIXOLON SRP-F310II — wydruk z przodu",
-    "seoDescription": "Drukarka paragonów BIXOLON SRP-F310II: niefiskalna drukarka POS 80 mm z wydrukiem z przodu, IP12, zasilacz w obudowie, do 350 mm/s. SRP-F310II BIXOLON i SRP-F312II 203 dpi. PN: SRP-F310IICOK/BEG, SRP-F310IICOSK, SRP-F310IICOWDK, SRP-F312IICOK, SRP-F312IICOSK.",
+    "seoDescription": "Drukarka paragonów BIXOLON SRP-F310II do kuchni i baru: wydruk z przodu, IP12, zasilacz w obudowie, do 350 mm/s. Wersje z Ethernetem, RS-232 i Wi-Fi.",
     "shortDescription": "BIXOLON SRP-F310II to termiczna drukarka paragonów niefiskalnych z wydrukiem od przodu i obudową IP12. Rodzina obejmuje SRP-F310II 180 dpi oraz SRP-F312II 203 dpi.",
-    "description": "BIXOLON SRP-F310II to termiczna drukarka paragonów niefiskalnych z wydrukiem od przodu i obudową IP12. Rodzina obejmuje SRP-F310II 180 dpi oraz SRP-F312II 203 dpi.\n\n## Wydruk od przodu i osłona Liquid-Barrier\n\nPrzedni wylot ułatwia odbiór dokumentu pod półką lub przy niskim stanowisku. Konstrukcja Liquid-Barrier i klasa IP12 chronią drukarkę przed kapiącą wodą. Klasa IP12 nie oznacza odporności na zanurzenie ani mycie strumieniem wody.\n\nDrukarka drukuje do 350 mm/s, na szerokości do 72 mm. Przyjmuje papier 80 mm, a z przegrodą 83 mm z zestawu także papier 83 mm. Rolka może mieć średnicę do 105 mm. Zasilacz jest wbudowany w obudowę. Każda wersja ma USB i Ethernet. Wersje COSK mają RS-232, a wersja COWDK Wi-Fi. W zestawie jest przewód USB A-A.\n\n## Trwałość i gwarancja\n\nGłowica ma trwałość 250 km, a gilotyna 3 mln cięć. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj drukarki POS\n\nWydruk od przodu ma także [Epson TM-T70II](/produkt/epson-tm-t70ii). Kompaktowy model z wylotem z przodu to [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300), a model 400 mm/s to [BIXOLON SRP-350plusV](/produkt/bixolon-srp-350plusv). Pozostałe modele są w kategorii [drukarki paragonów](/drukarki-pos).",
+    "description": "BIXOLON SRP-F310II to drukarka paragonów i bonów kuchennych do pracy pod blatem, w barze i w kuchni. Wydruk wychodzi z przodu, a obudowa Liquid-Barrier z klasą IP12 chroni ją przed kapiącą wodą. Rodzina obejmuje SRP-F310II 180 dpi i SRP-F312II 203 dpi.\n\n## Wydruk od przodu i zasilacz w obudowie\n\nPrzedni wylot ułatwia odbiór dokumentu pod półką lub przy niskim stanowisku. Klasa IP12 nie oznacza odporności na zanurzenie ani mycie strumieniem wody. Zasilacz jest wbudowany w obudowę, więc pod blatem nie leży osobny zasilacz.\n\n## Rolka 105 mm i porty\n\nDrukarka drukuje do 350 mm/s, na szerokości do 72 mm. Przyjmuje papier 80 mm, a z przegrodą 83 mm z zestawu także papier 83 mm. Rolka może mieć średnicę do 105 mm, więc wymienia się ją rzadziej niż w drukarkach z rolką 83 mm. USB i Ethernet ma każda wersja. Wersje COSK mają RS-232, a wersja COWDK Wi-Fi. W zestawie jest przewód USB A-A. Głowica ma trwałość 250 km, a gilotyna 3 mln cięć.\n\nWydruk od przodu ma także [Epson TM-T70II](/produkt/epson-tm-t70ii), do którego papier wkłada się od przodu. Kompaktowy model z wylotem z przodu to [BIXOLON SRP-Q300](/produkt/bixolon-srp-q300).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -1293,9 +1293,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Bony w kuchni, gdzie kapie woda",
+      "Paragony niefiskalne pod blatem baru",
+      "Druk w sieci przez Ethernet lub Wi-Fi"
     ],
     "variants": [
       {
@@ -1369,15 +1369,15 @@ export const bixolonPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czy IP12 oznacza możliwość mycia SRP-F310II?",
-        "answer": "Nie. IP12 nie oznacza odporności na zanurzenie ani mycie pod ciśnieniem. Drukarkę czyść zgodnie z instrukcją i chroń złącza."
+        "answer": "Nie. IP12 nie oznacza odporności na zanurzenie ani mycie pod ciśnieniem. Drukarkę należy czyścić zgodnie z instrukcją, a złącza chronić przed wodą."
       },
       {
         "question": "Czy BIXOLON SRP-F310II jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "answer": "Nie. SRP-F310II drukuje bony i paragony niefiskalne z programu POS lub systemu kuchennego. Fiskalizacja sprzedaży odbywa się w osobnej drukarce fiskalnej."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Odmiana": "Odmiana drukarki w rodzinie SRP-F310II.\n\n• SRP-F310II — 180 dpi, do 350 mm/s.\n\n• SRP-F312II — 203 dpi, do 350 mm/s.",
       "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• Puste pole — wariant ma tylko złącza standardowe."
@@ -1389,9 +1389,9 @@ export const bixolonPosProducts: Product[] = [
     "name": "BIXOLON SRP-S300II",
     "seoH1": "BIXOLON SRP-S300II",
     "seoTitle": "BIXOLON SRP-S300II — drukarka etykiet linerless i paragonów",
-    "seoDescription": "Drukarka etykiet linerless BIXOLON SRP-S300II: etykiety bez podkładu i paragony 80 mm, 203 dpi, ekran 2 cale, IP22, urządzenie niefiskalne. SRP-S300II BIXOLON. PN: SRP-S300IIK/BEG, SRP-S300IISK/BEG, SRP-S300IIPWK/BEG, SRP-S300IIBAK/BEG, SRP-S300IIWDAK/BEG, SRP-S300IIXK/BEG, SRP-S300IIXSK/BEG, SRP-S300IIXPWK/BEG, SRP-S300IIXBaK/BEG, SRP-S300IIXWDaK/BEG.",
+    "seoDescription": "Drukarka etykiet bez podkładu BIXOLON SRP-S300II: etykiety linerless i paragony 80 mm, 203 dpi, ekran 2 cale, IP22. Do zamówień na wynos i dostaw.",
     "shortDescription": "BIXOLON SRP-S300II to termiczna drukarka paragonów i etykiet bez podkładu z kolorowym ekranem 2 cale. Drukuje do 180 mm/s w rozdzielczości 203 dpi.",
-    "description": "BIXOLON SRP-S300II to termiczna drukarka paragonów i etykiet bez podkładu z kolorowym ekranem 2 cale. Drukuje do 180 mm/s w rozdzielczości 203 dpi.\n\n## Zamówienia i etykiety odbierane pojedynczo\n\nCzujnik pobrania wydruku pozwala przygotować kolejny dokument po odebraniu poprzedniego, zależnie od ustawień. Ekran TFT LCD pokazuje stan urządzenia. Obudowa ma klasę IP22.\n\nWersje bez litery X w PN obsługują paragony i materiał Re-stick. Wersje z literą X obsługują etykiety Linerless Extreme. Standardowa szerokość papieru wynosi 80 mm, a z przegrodą 40 lub 58 mm. Szerokość nadruku wynosi odpowiednio do 72, 32 lub 48 mm. Każda wersja ma USB i Ethernet. RS-232, PoweredUSB, Wi-Fi i Bluetooth zależą od PN.\n\n## Trwałość i gwarancja\n\nRolka może mieć średnicę do 102 mm. Głowica ma trwałość 150 km na paragonach i 75 km na materiale Re-stick. Gwarancja na drukarkę wynosi 2 lata. To urządzenie niefiskalne: drukuje dane przesłane z programu POS.\n\n## Porównaj drukarki etykiet bez podkładu\n\nEtykiety bez podkładu drukują też [Epson TM-L100](/produkt/epson-tm-l100) i [Epson TM-L90LF](/produkt/epson-tm-l90lf). [Epson TM-L90](/produkt/epson-tm-l90) drukuje etykiety z podkładem i paragony. Pozostałe modele są w kategorii [drukarki POS](/drukarki-pos). Do etykiet wysyłkowych służą [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
+    "description": "BIXOLON SRP-S300II drukuje etykiety bez podkładu (linerless) i paragony w restauracjach z dostawą i odbiorem osobistym. Etykietę z zamówieniem przykleja się wprost na torbę lub pojemnik, bez odpadu z podkładu.\n\n## Czujnik pobrania i kolorowy ekran\n\nCzujnik pobrania wydruku pozwala przygotować kolejny dokument po odebraniu poprzedniego, zależnie od ustawień. Kolorowy ekran TFT LCD 2 cale pokazuje stan urządzenia. Obudowa ma klasę IP22. Drukarka drukuje do 180 mm/s w rozdzielczości 203 dpi.\n\n## Re-stick czy Linerless Extreme\n\nWersje bez litery X w PN obsługują paragony i materiał Re-stick. Wersje z literą X obsługują etykiety Linerless Extreme. Standardowa szerokość papieru wynosi 80 mm, a z przegrodą 40 lub 58 mm. Szerokość nadruku wynosi odpowiednio do 72, 32 lub 48 mm. Rolka może mieć średnicę do 102 mm. Wszystkie wersje mają USB i Ethernet. RS-232, PoweredUSB, Wi-Fi i Bluetooth zależą od PN. Głowica ma trwałość 150 km na paragonach i 75 km na materiale Re-stick.\n\nEtykiety bez podkładu drukują też [Epson TM-L100](/produkt/epson-tm-l100) i [Epson TM-L90LF](/produkt/epson-tm-l90lf). Etykiety wysyłkowe z podkładem drukują [drukarki etykiet BIXOLON](/drukarki-etykiet-bixolon).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "bixolon",
@@ -1487,9 +1487,9 @@ export const bixolonPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Potwierdzenia w punkcie sprzedaży",
-      "Druk dokumentów z aplikacji POS",
-      "Obsługa zamówień i biletów"
+      "Etykiety zamówień na wynos i w dostawie",
+      "Etykiety na pojemniki z jedzeniem",
+      "Paragony niefiskalne z tej samej drukarki"
     ],
     "variants": [
       {
@@ -1613,15 +1613,15 @@ export const bixolonPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czym różnią się warianty SRP-S300II z literą X?",
-        "answer": "Warianty X służą do zgodnych materiałów Linerless Extreme. Pozostałe oferowane konfiguracje są przeznaczone do materiałów Re-stick i potwierdzeń. Wybierz rolkę oraz konfigurację zgodnie z wymaganiami kleju."
+        "answer": "Warianty X służą do zgodnych materiałów Linerless Extreme. Pozostałe oferowane konfiguracje są przeznaczone do materiałów Re-stick i potwierdzeń. Rolkę i konfigurację dobiera się do rodzaju kleju."
       },
       {
-        "question": "Czy BIXOLON SRP-S300II jest drukarką fiskalną?",
-        "answer": "Nie. To urządzenie do wydruków z aplikacji. Nie ma funkcji samodzielnej kasy ani drukarki fiskalnej."
+        "question": "Czy SRP-S300II drukuje zwykłe paragony?",
+        "answer": "Tak. Wersje bez litery X w PN drukują paragony na papierze termicznym 80 mm oraz etykiety Re-stick. Wersje X są przeznaczone do etykiet Linerless Extreme."
       }
     ],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22",
     "variantAttributeTooltips": {
       "Port dodatkowy": "Złącze przewodowe dodane do USB i Ethernetu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień.\n\n• PoweredUSB — port z zasilaniem; wymaga zgodnego portu na stanowisku.\n\n• Puste pole — wariant ma tylko złącza standardowe.",
       "Materiał": "Materiał, do którego przygotowano wariant.\n\n• Re-stick / potwierdzenia — paragony i etykiety Re-stick z klejem do ponownego przyklejenia.\n\n• Linerless Extreme — etykiety bez podkładu Linerless Extreme; warianty z literą X w PN."
