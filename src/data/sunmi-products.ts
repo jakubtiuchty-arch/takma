@@ -1092,7 +1092,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT220 58 mm, Bluetooth",
     "seoDescription": "Drukarka paragonów SUNMI NT220 i drukarka etykiet SUNMI w jednym: papier 30–58 mm, etykiety do 150 mm, USB-C, Bluetooth BLE. NT220 SUNMI, PN: C04060001.",
     "shortDescription": "SUNMI NT220 — termiczna drukarka etykiet i paragonów niefiskalnych na papier 58 mm. Łączy się przez USB-C i Bluetooth BLE 5.0, drukuje do 150 mm/s w 203 dpi.",
-    "description": "SUNMI NT220 drukuje na rolce paragony niefiskalne, bony z zamówieniami i etykiety na produkty. Pracuje przy ladzie kawiarni, punktu z napojami i sklepu oraz przy wydawaniu zamówień na wynos. Wydruk przyjmuje z komputera, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Etykiety i paragony w jednej drukarce\n\nTryb etykiet albo paragonów zmienia się przyciskiem. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w języku TSPL. Papier może mieć szerokość 30–58 mm. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Maksymalna średnica rolki wynosi 80 mm. Czujnik przerwy wykrywa odstęp między etykietami.\n\n## Złącza, druk i zasilanie\n\nDrukarka ma USB-C i Bluetooth BLE 5.0, bez Ethernetu i Wi-Fi. Port RJ12 (24 V / 1 A) steruje szufladą kasową. Głowica drukuje w rozdzielczości 203 dpi, do 150 mm/s, także kody 1D i QR. Zasilanie wynosi 5 V / 2 A DC, a masa 510 g. NT220 jest urządzeniem niefiskalnym i nie zastępuje kasy ani drukarki fiskalnej.\n\nSzybszy druk paragonów 58 mm, do 250 mm/s, z gilotyną ma [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), ale nie drukuje etykiet.",
+    "description": "SUNMI NT220 drukuje na rolce paragony niefiskalne, bony z zamówieniami i etykiety na produkty. Pracuje przy ladzie kawiarni, punktu z napojami i sklepu oraz przy wydawaniu zamówień na wynos. Wydruk przyjmuje z komputera, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Etykiety i paragony w jednej drukarce\n\nTryb etykiet albo paragonów zmienia się przyciskiem. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w języku TSPL. Papier może mieć szerokość 30–58 mm, a wbudowana regulowana prowadnica ustala położenie rolki. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Maksymalna średnica rolki wynosi 80 mm. Czujnik przerwy wykrywa odstęp między etykietami.\n\n## Złącza, druk i zasilanie\n\nDrukarka ma USB-C i Bluetooth BLE 5.0, bez Ethernetu i Wi-Fi. Port RJ12 (24 V / 1 A) steruje szufladą kasową. Głowica drukuje w rozdzielczości 203 dpi, do 150 mm/s, także kody 1D i QR. Drukarka zasila się przez złącze USB-C (5 V / 2 A DC). Zasilacza nie ma w zestawie. Masa wynosi 510 g. NT220 jest urządzeniem niefiskalnym i nie zastępuje kasy ani drukarki fiskalnej.\n\nSzybszy druk paragonów 58 mm, do 250 mm/s, z gilotyną ma [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), ale nie drukuje etykiet.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1190,7 +1190,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "5 V / 2 A DC"
+        "value": "5 V / 2 A DC przez USB-C; zasilacz nie wchodzi w skład zestawu"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, przewód USB, prowadnica papieru, skrócona instrukcja"
       },
       {
         "name": "Wymiary",
@@ -1253,7 +1257,7 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SUNMI NT220 drukuje etykiety i paragony?",
-        "answer": "Tak. NT220 drukuje paragony niefiskalne i etykiety. Tryb pracy zmienia się przyciskiem. Paragony obsługuje język poleceń ESC/POS, a etykiety język TSPL."
+        "answer": "Tak. NT220 drukuje paragony niefiskalne i etykiety. Paragony obsługuje język poleceń ESC/POS, a etykiety język TSPL. Aby zmienić tryb, należy przytrzymać przycisk FEED przez 5–10 s podczas włączania drukarki. Drukarka wydrukuje bieżący tryb. Następnie każde krótkie naciśnięcie FEED w ciągu 5 s zmienia tryb na drugi."
       },
       {
         "question": "Jakie etykiety obsługuje NT220?",
@@ -1266,6 +1270,10 @@ export const sunmiProducts: Product[] = [
       {
         "question": "Jak podłączyć SUNMI NT220?",
         "answer": "Przez USB-C do komputera albo przez Bluetooth BLE 5.0 do tabletu lub telefonu. Drukarka nie ma Wi-Fi ani Ethernetu. Port RJ12 (24 V / 1 A) służy do szuflady kasowej."
+      },
+      {
+        "question": "Co jest w zestawie z SUNMI NT220?",
+        "answer": "Drukarka, przewód USB, prowadnica papieru i skrócona instrukcja. Zasilacza nie ma w zestawie. Drukarka zasila się przez złącze USB-C napięciem 5 V / 2 A DC."
       }
     ],
     "createdAt": "2026-10-22",
