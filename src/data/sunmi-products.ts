@@ -3566,7 +3566,11 @@ export const sunmiProducts: Product[] = [
       "Port RS485/RS232": "Port szeregowy RS485/RS232 do urządzeń z interfejsem szeregowym.\n\n• Mają go wersje 18,5\" i 22\", obok 2 portów RJ45 i 2 portów USB 2.0."
     },
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c12004010",
+      "sunmi-c14004138",
+      "sunmi-c14004115"
+    ],
     "relatedProducts": [],
     "downloads": [
       {
@@ -5971,6 +5975,182 @@ export const sunmiAccessories: Product[] = [
     ],
     "applications": [
       "Druk paragonów na papierze 58 mm w SUNMI T3 80 mm"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c12004010",
+    "slug": "sunmi-c12004010",
+    "name": "Moduł PoE SUNMI FLEX 3",
+    "seoTitle": "Moduł PoE SUNMI do ekranu KDS FLEX 3 — C12004010",
+    "seoDescription": "Moduł PoE SUNMI C12004010 do ekranu KDS SUNMI FLEX 3 18,5\" i 22\": zasilanie i dane jednym przewodem sieciowym. Moduł PoE FLEX 3. PN C12004010.",
+    "shortDescription": "Moduł PoE SUNMI C12004010 do ekranów KDS SUNMI FLEX 3 18,5\" i 22\". Pozwala zasilać ekran przez przewód sieciowy, bez osobnego przewodu zasilającego.",
+    "description": "Moduł PoE SUNMI C12004010 pozwala zasilać ekran [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\" przez przewód sieciowy. Ten sam przewód przesyła dane, dlatego ekran nie wymaga osobnego przewodu zasilającego. Ekrany 18,5\" i 22\" mają port PoE, a moduł jest dla nich akcesorium opcjonalnym. Wersja 15,6\" ma PoE wbudowane i nie wymaga modułu.\n\nDo zasilania przez PoE potrzebny jest przełącznik sieciowy lub zasilacz PoE, który zasila urządzenia przez przewód sieciowy. Moduł nie wchodzi w skład zestawu ekranu i kupuje się go osobno.\n\n## Zgodne ekrany KDS\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-ekranow-kds"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 219.75,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C12004010"
+      },
+      {
+        "name": "Typ",
+        "value": "Moduł PoE (zasilanie i dane przez przewód sieciowy)"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 KDS 18,5\", SUNMI FLEX 3 KDS 22\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3-kds"
+    ],
+    "applications": [
+      "Zasilanie ekranu KDS przez przewód sieciowy"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004138",
+    "slug": "sunmi-c14004138",
+    "name": "Stojak biurkowy L SUNMI FLEX 3",
+    "seoTitle": "Stojak biurkowy L SUNMI FLEX 3 do ekranu KDS — C14004138",
+    "seoDescription": "Stojak biurkowy L SUNMI C14004138 do ekranu KDS SUNMI FLEX 3 18,5\" i 22\": stojak na blat w kształcie litery L, 350 × 224 × 128 mm, 4,6 kg. PN C14004138.",
+    "shortDescription": "Stojak biurkowy SUNMI w kształcie litery L do ekranów KDS SUNMI FLEX 3 18,5\" i 22\". Ustawia ekran na blacie stanowiska.",
+    "description": "Stojak biurkowy L SUNMI C14004138 ustawia ekran [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\" na blacie. Stojak ma kształt litery L i stoi na stole lub ladzie. Ekran KDS można wtedy ustawić przy stanowisku bez montażu na ścianie.\n\nStojak ma wymiary 350 × 224 × 128 mm i masę 4,6 kg. Stojak nie wchodzi w skład zestawu ekranu i kupuje się go osobno. Jeśli stojak ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany KDS\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-ekranow-kds"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 469.92,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004138"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak biurkowy w kształcie litery L"
+      },
+      {
+        "name": "Wymiary",
+        "value": "350 × 224 × 128 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "4,6 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 KDS 18,5\", SUNMI FLEX 3 KDS 22\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3-kds"
+    ],
+    "applications": [
+      "Ekran KDS na blacie stanowiska"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004115",
+    "slug": "sunmi-c14004115",
+    "name": "Przegubowe ramię VESA SUNMI FLEX 3 KDS",
+    "seoTitle": "Przegubowe ramię VESA SUNMI FLEX 3 KDS — C14004115",
+    "seoDescription": "Przegubowe ramię VESA SUNMI C14004115 do ekranu KDS SUNMI FLEX 3 18,5\": ramię z mocowaniem VESA do ekranu kuchennego. Ramię KDS SUNMI. PN C14004115.",
+    "shortDescription": "Przegubowe ramię VESA SUNMI do ekranu KDS SUNMI FLEX 3 18,5\". Trzyma ekran i pozwala zmieniać jego położenie przy stanowisku.",
+    "description": "Przegubowe ramię VESA SUNMI C14004115 to ramię do ekranu [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\". Ekran mocuje się do ramienia przez mocowanie VESA 100 × 100. Wersja 18,5\" ma wymiary 443 × 264 × 29,8 mm i masę 2,7 kg. Przeguby ramienia pozwalają zmieniać położenie ekranu przy stanowisku w kuchni.\n\nRamię nie wchodzi w skład zestawu ekranu i kupuje się je osobno. Jeśli ramię ma pracować z ekranem 15,6\" lub 22\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany KDS\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-ekranow-kds"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 503.7,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004115"
+      },
+      {
+        "name": "Typ",
+        "value": "Przegubowe ramię z mocowaniem VESA"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 KDS 18,5\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3-kds"
+    ],
+    "applications": [
+      "Ekran KDS na ramieniu przy stanowisku kucharza"
     ],
     "downloads": [],
     "createdAt": "2026-10-22",
