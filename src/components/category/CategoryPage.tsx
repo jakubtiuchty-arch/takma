@@ -348,7 +348,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
               <span className="text-white font-medium whitespace-nowrap">{category.name}</span>
             </nav>
             <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-lg">{category.h1 ?? category.name}</h1>
-            <p className="text-sm text-slate-200 max-w-md">Dotykowe komputery POS do obsługi sprzedaży w sklepach, restauracjach i punktach usługowych.</p>
+            <p className="text-sm text-slate-200 max-w-lg">Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.</p>
             <p className="text-slate-400 text-sm mt-2">{products.length} {productWord}</p>
           </div>
         </section>
@@ -365,17 +365,17 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
         </nav>}
 
         {/* H1 + intro */}
-        <div className="mb-8">
-          {slug !== 'komputery-pos' && <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+        {slug !== 'komputery-pos' && <div className="mb-8">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             {category.h1 ?? category.name}
-          </h1>}
+          </h1>
           <p className="text-gray-600 sm:text-justify">
             <LinkedText text={category.longDescription} />
           </p>
-          {slug !== 'komputery-pos' && <p className="text-gray-500 text-sm mt-3">
+          <p className="text-gray-500 text-sm mt-3">
             {products.length} {productWord}
-          </p>}
-        </div>
+          </p>
+        </div>}
 
         {/* Układ z filtrami (kategorie z konfiguracją w category-filters.ts): sidebar = nawigacja + checkboxy z licznikiem */}
         {filters ? (
