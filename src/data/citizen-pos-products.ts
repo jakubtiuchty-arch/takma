@@ -1421,7 +1421,7 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S751",
     "seoH1": "Citizen CT-S751",
     "seoTitle": "Drukarka paragonów Citizen CT-S751 80 mm, ładowanie z przodu",
-    "seoDescription": "Drukarka paragonów Citizen CT-S751 58/80 mm: ładowanie i wyjście papieru z przodu, 350 mm/s, montaż pod ladą. Drukarka POS Citizen CT-S751. PN: CTS751XNEBX, CTS751XTEBX.",
+    "seoDescription": "Drukarka paragonów Citizen CT-S751 58/80 mm: ładowanie i wyjście z przodu, 350 mm/s, montaż pod ladą. Drukarka POS Citizen CT-S751. PN: CTS751XNEBX, CTS751XTEBX.",
     "shortDescription": "Citizen CT-S751 — termiczna drukarka paragonów niefiskalnych na papier 58 lub 80 mm, z ładowaniem i wyjściem papieru z przodu. Drukuje do 350 mm/s; pasuje pod ladę i do kiosku.",
     "description": "Drukarka Citizen CT-S751 drukuje paragony niefiskalne i zamówienia w handlu, w hotelarstwie, w kuchni i w kiosku. Rolkę papieru wkłada się z przodu i z przodu wychodzi paragon. Drukarka pracuje więc pod ladą, obok szuflady kasowej, w zabudowie panelu albo na zajętym stanowisku pracy.\n\n## Druk do 350 mm/s na papierze 58 lub 80 mm\n\nDrukarka drukuje do 350 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Przyjmuje papier 58 lub 80 mm, o grubości 53–85 µm, w rolce o średnicy do 83 mm. Wyjście z przodu chroni mechanizm przed wilgocią i ciałami obcymi. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED. Obudowa ma 125 × 170 × 108 mm.\n\n## USB, gniazdo karty, Bluetooth albo Lightning\n\nKażda wersja ma USB 2.0, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Ethernet albo Wi-Fi dodaje karta interfejsu. CTS751XTEBX i CTS751XTEWX mają Bluetooth do urządzeń z iOS, a CTS751XAEBX złącze Lightning. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nŁadowanie papieru od góry i wyjście z przodu, przy druku do 300 mm/s, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
     "categoryId": "drukarki-pos",
@@ -1672,6 +1672,224 @@ export const citizenPosProducts: Product[] = [
       {
         "question": "Co jest w zestawie z CT-S751?",
         "answer": "Drukarka, zasilacz 37AD5, przewód zasilający, rolka papieru i skrócona instrukcja. Wersja z Lightning ma też kątowy przewód USB. Przewód interfejsu do komputera zamawia się osobno."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-s851iii",
+    "slug": "citizen-ct-s851iii",
+    "name": "Citizen CT-S851III",
+    "seoH1": "Citizen CT-S851III",
+    "seoTitle": "Drukarka paragonów Citizen CT-S851III 80 mm, 500 mm/s, LCD",
+    "seoDescription": "Drukarka paragonów Citizen CT-S851III: 500 mm/s, wyświetlacz LCD, wyjście z przodu, wbudowany zasilacz. Drukarka POS Citizen CT-S851III. PN: CTS851IIIS3NEBPXX.",
+    "shortDescription": "Citizen CT-S851III — termiczna drukarka paragonów niefiskalnych na papier do 83 mm, z wyświetlaczem LCD i wyjściem papieru z przodu. Drukuje do 500 mm/s; ma wbudowany zasilacz, USB i gniazdo karty interfejsu.",
+    "description": "Drukarka Citizen CT-S851III drukuje paragony niefiskalne w handlu, w hotelarstwie, w kuchni i w kiosku. Drukuje do 500 mm/s w rozdzielczości 203 dpi, na szerokości do 80 mm. Zasilacz jest wbudowany w obudowę. Obudowa ma 145 × 192 × 142 mm i waży 1,9 kg.\n\n## Wyświetlacz LCD z komunikatami\n\nWyświetlacz LCD na panelu pokazuje stan drukarki. Można na nim ustawić logo firmy i przewijane komunikaty, np. ostrzeżenie o kończącym się papierze albo informację o zamawianiu rolek. Czujnik bliskiego końca papieru wykrywa, że rolka się kończy.\n\n## Papier do 83 mm i wyjście z przodu\n\nParagon wychodzi z przodu, co chroni mechanizm przed wilgocią i ciałami obcymi. Drukarka przyjmuje papier 58, 60, 80 lub 83 mm (±1 mm), o grubości 65–75 µm albo 75–85 µm, w rolce o średnicy do 83 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Wersja CTS851IIIS3NEBPXX ma USB i gniazdo na kartę interfejsu, np. Ethernet, RS-232 lub Wi-Fi. Wersja CTS851IIIS3TEBPXX ma Bluetooth zgodny z Apple MFi.\n\nŁadowanie i wyjście papieru z przodu, do montażu pod ladą, ma [Citizen CT-S751](/produkt/citizen-ct-s751).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 895.96,
+    "availability": "available",
+    "images": [
+      "/images/products/CTS851IIIS3NEBPXX.png",
+      "/images/products/CTS851IIIS3NEBPXX-2.png",
+      "/images/products/CTS851IIIS3NEBPXX-3.png",
+      "/images/products/CTS851IIIS3NEBPXX-4.png",
+      "/images/products/CTS851IIIS3NEBPXX-5.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-S851III — widok z przodu pod kątem: wyświetlacz LCD z komunikatem Online, przycisk FEED i włącznik",
+      "Citizen CT-S851III — widok z przodu: wylot papieru, wyświetlacz LCD i przyciski",
+      "Citizen CT-S851III — widok z tyłu: gniazdo zasilania sieciowego, USB i złącze szuflady kasowej",
+      "Citizen CT-S851III — komunikat o braku papieru na wyświetlaczu LCD z pomarańczowym podświetleniem",
+      "Citizen CT-S851III — otwarta pokrywa komory papieru z rolką papieru"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTS851IIIS3NEBPXX, CTS851IIIS3TEBPXX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 500 mm/s"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 80 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "58, 60, 80 lub 83 mm (±1 mm)"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "65–75 µm lub 75–85 µm"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "Z przodu"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Koniec papieru, bliski koniec papieru (regulowany)"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "LCD na panelu; logo firmy i przewijane komunikaty"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0; zależnie od PN: gniazdo karty interfejsu albo Bluetooth (Apple MFi)"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "Ethernet z USB host, Ethernet compact, RS-232, równoległy (IEEE 1284), USB z hubem, Wi-Fi compact"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50/60 Hz, zasilacz wbudowany"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "145 × 192 × 142 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,9 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, TÜV, UL, C-UL, FCC klasa A; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, przewód zasilający, rolka papieru, skrócona instrukcja; karta interfejsu do zamówienia osobno"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "24 miesiące"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne przy kasie o dużym ruchu",
+      "Bony w kuchni i paragony w hotelarstwie",
+      "Wydruki w kiosku"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTS851IIIS3NEBPXX",
+        "name": "CT-S851III — USB, gniazdo karty interfejsu, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Gniazdo karty"
+        },
+        "priceFrom": 895.96,
+        "availability": "available"
+      },
+      {
+        "partNumber": "CTS851IIIS3TEBPXX",
+        "name": "CT-S851III — USB, Bluetooth, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth"
+        },
+        "priceFrom": 1133.83,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Interfejs dodatkowy": "Połączenie dostępne w CT-S851III obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet, RS-232, równoległą albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — połączenie bez przewodu z komputerem, tabletem lub telefonem; zgodny z Apple MFi."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-ethernet-pps00585s",
+      "citizen-pos-wifi-ppz60108s",
+      "citizen-pos-lan-usb-host-pps00339s",
+      "citizen-pos-rs232-tz66801-0",
+      "citizen-parallel-cl-s400dt",
+      "citizen-pos-usb-tz66803-0",
+      "citizen-pos-powered-usb-1100092"
+    ],
+    "relatedProducts": [
+      "citizen-ct-s751",
+      "citizen-ct-e601",
+      "epson-tm-t88vii",
+      "bixolon-srp-350plusv"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-S851III (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-s851iii.pdf",
+        "size": "235 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-S851III",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-S851III",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-S851III jest drukarką fiskalną?",
+        "answer": "Nie. CT-S851III drukuje paragony niefiskalne i bony wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć CT-S851III do sieci przewodowej lub Wi-Fi?",
+        "answer": "Wersja CTS851IIIS3NEBPXX ma gniazdo na kartę interfejsu. Do sieci przewodowej służy [karta Ethernet PPS00585S](/produkt/citizen-pos-ethernet-pps00585s) albo [karta Ethernet z USB host PPS00339S](/produkt/citizen-pos-lan-usb-host-pps00339s), a do Wi-Fi [karta PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s). Karty kupuje się osobno."
+      },
+      {
+        "question": "Co pokazuje wyświetlacz LCD w CT-S851III?",
+        "answer": "Stan drukarki i komunikaty, np. ostrzeżenie o kończącym się papierze albo o błędzie. Można też ustawić logo firmy i własne przewijane komunikaty, np. informację o zamawianiu rolek."
+      },
+      {
+        "question": "Jaki papier przyjmuje Citizen CT-S851III?",
+        "answer": "Papier termiczny o szerokości 58, 60, 80 lub 83 mm (±1 mm), o grubości 65–75 µm albo 75–85 µm, w rolce o średnicy do 83 mm. Szerokość druku wynosi do 80 mm."
+      },
+      {
+        "question": "Czy CT-S851III wymaga zasilacza zewnętrznego?",
+        "answer": "Nie. Wersje CTS851IIIS3NEBPXX i CTS851IIIS3TEBPXX mają zasilacz wbudowany w obudowę. W zestawie jest przewód zasilający."
       }
     ],
     "createdAt": "2026-10-23",
