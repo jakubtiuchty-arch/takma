@@ -1205,6 +1205,215 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-e651l",
+    "slug": "citizen-ct-e651l",
+    "name": "Citizen CT-E651L",
+    "seoH1": "Citizen CT-E651L",
+    "seoTitle": "Drukarka paragonów i etykiet Citizen CT-E651L 80 mm, USB",
+    "seoDescription": "Drukarka paragonów i etykiet Citizen CT-E651L 80 mm: czujnik szczeliny i czarnego znacznika, etykiety do 200 mm/s. Drukarka POS Citizen CT-E651L. PN: CTE651XNEBXL.",
+    "shortDescription": "Citizen CT-E651L — termiczna drukarka paragonów niefiskalnych i etykiet na materiał do 80 mm, z wyjściem z przodu. Ma czujniki szczeliny i czarnego znacznika, USB i gniazdo karty interfejsu.",
+    "description": "Drukarka Citizen CT-E651L drukuje paragony niefiskalne i etykiety z jednego stanowiska. Pracuje w aptece, w handlu i w hotelarstwie. Obudowa ma 125 × 170 × 108 mm i tę samą wysokość co szuflada kasowa.\n\n## Etykiety do 200 mm/s, paragony do 300 mm/s\n\nCzujniki wykrywają szczelinę między etykietami, odblaskowy czarny znacznik i koniec papieru. Paragony drukarka drukuje do 300 mm/s, a etykiety do 200 mm/s, w rozdzielczości 203 dpi. Szerokość druku wynosi do 72 mm. Materiał może mieć szerokość 59–80 mm, a rolka średnicę do 83 mm. Materiał wychodzi z przodu obudowy, a rolkę wkłada się od góry. Gilotyna wykonuje cięcie pełne lub częściowe.\n\n## USB i gniazdo karty interfejsu\n\nDrukarka ma USB 2.0 i złącze szuflady kasowej. Ethernet, RS-232 albo Wi-Fi dodaje karta interfejsu wkładana z tyłu drukarki. Panel ma 2 przyciski i 5 diod LED. W zestawie jest zewnętrzny zasilacz 37AD5. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nTę samą obudowę, tylko do paragonów, w wersjach z Bluetoothem i Lightning, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 1059.49,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/CTE651XNEBXL.png",
+      "/images/products/CTE651XNEBXL-2.png",
+      "/images/products/CTE651XNEBXL-3.png",
+      "/images/products/CTE651XNEBXL-4.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-E651L w czarnej obudowie — etykieta z kodem kreskowym w wylocie, widok z przodu pod kątem",
+      "Citizen CT-E651L w białej obudowie — etykieta z kodem kreskowym w wylocie, widok z przodu",
+      "Citizen CT-E651L — widok z tyłu: złącze szuflady kasowej, gniazdo zasilania, USB i zaślepione gniazdo karty interfejsu",
+      "Citizen CT-E651L — otwarta pokrywa komory papieru z rolką"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTE651XNEBXL"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 300 mm/s (paragony), do 200 mm/s (etykiety)"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 72 mm"
+      },
+      {
+        "name": "Szerokość materiału",
+        "value": "59–80 mm (±0,5 mm)"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość materiału",
+        "value": "53–85 µm"
+      },
+      {
+        "name": "Rodzaj materiału",
+        "value": "Papier do paragonów, etykiety"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "Z przodu; ładowanie rolki od góry"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Szczelina, odblaskowy czarny znacznik, koniec papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "Ethernet, Ethernet z USB host, RS-232, Wi-Fi compact, Ethernet premium, Wi-Fi premium"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "8 MB"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "2 przyciski, 5 diod LED; wbudowany brzęczyk"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50–60 Hz, zasilacz zewnętrzny 37AD5 w zestawie, albo 24 V DC"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "125 × 170 × 108 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,26 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, UL, FCC klasa A, C-UL, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz 37AD5, przewód zasilający, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata, w tym głowica i gilotyna"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne i etykiety w aptece",
+      "Etykiety cenowe i paragony w handlu",
+      "Paragony i etykiety zamówień w hotelarstwie"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTE651XNEBXL",
+        "name": "CT-E651L — USB, czujnik etykiet, czarna",
+        "attributes": {},
+        "priceFrom": 1059.49,
+        "availability": "unavailable"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-wifi-ppz60112s",
+      "citizen-pos-lan-usb-host-ppz60104s",
+      "citizen-pos-rs232-pps00276s",
+      "citizen-pos-powered-usb-1100092",
+      "citizen-pos-lan-premium-if2-es04",
+      "citizen-pos-wifi-premium-if2-wf5s",
+      "citizen-pos-wifi-premium-if2-wf5l",
+      "citizen-pos-modul-wifi-upg-wf5s",
+      "citizen-pos-modul-wifi-upg-wf5l",
+      "citizen-pos-zasilacz-pwt20022-00"
+    ],
+    "relatedProducts": [
+      "citizen-ct-e651",
+      "citizen-ct-s4500",
+      "sunmi-nt320",
+      "bixolon-srp-s300ii"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-E651L (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-e651l.pdf",
+        "size": "270 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-E651L",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-E651L",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym CT-E651L różni się od CT-E651?",
+        "answer": "CT-E651L ma czujniki szczeliny i czarnego znacznika, dlatego drukuje etykiety, do 200 mm/s, oraz paragony, do 300 mm/s. [CT-E651](/produkt/citizen-ct-e651) drukuje paragony i ma wersje z Bluetoothem i Lightning."
+      },
+      {
+        "question": "Czy Citizen CT-E651L jest drukarką fiskalną?",
+        "answer": "Nie. CT-E651L drukuje paragony niefiskalne i etykiety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć CT-E651L do sieci przewodowej lub Wi-Fi?",
+        "answer": "Kartę interfejsu wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Karty kupuje się osobno."
+      },
+      {
+        "question": "Jaki materiał przyjmuje Citizen CT-E651L?",
+        "answer": "Papier do paragonów i etykiety o szerokości 59–80 mm (±0,5 mm) i grubości 53–85 µm, w rolce o średnicy do 83 mm. Szerokość druku wynosi do 72 mm."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
