@@ -1102,13 +1102,21 @@ export const sunmiProducts: Product[] = [
       "/images/products/C04060001.png",
       "/images/products/C04060001-2.png",
       "/images/products/C04060001-3.png",
-      "/images/products/C04060001-4.png"
+      "/images/products/C04060001-4.png",
+      "/images/products/C04060001-5.png",
+      "/images/products/C04060001-6.png",
+      "/images/products/C04060001-7.png",
+      "/images/products/C04060001-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI NT220 — widok z przodu pod kątem, srebrna pokrywa i przycisk FEED",
+      "SUNMI NT220 — widok z przodu z lewej strony: pokrywa z teksturą, szczelina wydruku i przycisk FEED",
+      "SUNMI NT220 — widok z przodu z prawej strony: panel z logo SUNMI i przycisk FEED",
+      "SUNMI NT220 — widok z przodu: szczelina wydruku, pomarańczowa listwa i przycisk FEED",
+      "SUNMI NT220 — widok z tyłu pod kątem: port szuflady RJ12 i USB-C",
+      "SUNMI NT220 — widok z tyłu: port szuflady kasowej RJ12 i gniazdo USB-C",
+      "SUNMI NT220 — widok z góry: pokrywa komory papieru, szczelina wydruku i przycisk FEED",
       "SUNMI NT220 — wydruk paragonu na papierze 58 mm",
-      "SUNMI NT220 — wydruk etykiet z kodami QR",
-      "SUNMI NT220 — widok z góry, szczelina wydruku i przycisk FEED"
+      "SUNMI NT220 — wydruk etykiet z kodami QR"
     ],
     "tags": [
       "retail"
