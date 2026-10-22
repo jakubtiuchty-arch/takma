@@ -254,6 +254,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const posComputer = product.categoryId === 'komputery-pos'
   // Ekrany KDS (SUNMI FLEX 3 KDS) — ten sam układ co komputery POS, z własnym tytułem podobnych i opisem filmów.
   const kdsDisplay = product.categoryId === 'ekrany-kds'
+  // Kioski samoobsługowe (SUNMI FLEX 3) — układ jak ekrany KDS, z własnym tytułem podobnych i opisem filmów.
+  const kioskDisplay = product.categoryId === 'kioski-samoobslugowe'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const rfidTextLinks = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
@@ -444,10 +446,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     : product.categoryId === 'terminale-mobilne' ? 'Podobne terminale'
     : posComputer ? 'Podobne komputery POS'
     : kdsDisplay ? 'Podobne ekrany KDS'
+    : kioskDisplay ? 'Podobne kioski'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
     : 'Podobne produkty'
 
-  const isDevice = ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'komputery-pos', 'ekrany-kds', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
+  const isDevice = ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'komputery-pos', 'ekrany-kds', 'kioski-samoobslugowe', 'skanery-kodow-kreskowych', 'tablety'].includes(product.categoryId)
 
   // JSON-LD: Product schema
   const availabilitySchemaMap = {
@@ -589,7 +592,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
         name: `${tytul} — ${product.name}`,
-        description: `${tytul}: instruktaż producenta ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+        description: `${tytul}: instruktaż producenta ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
         ...(miniatura ? { thumbnailUrl: [miniatura] } : {}),
         // Google odrzuca VideoObject, gdy embedUrl wskazuje stronę oglądania zamiast odtwarzacza.
         embedUrl: serwis === 'youtube'
@@ -606,7 +609,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     '@type': 'VideoObject',
     name: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')} — ${product.name}`,
     // „dla drukarki X” tylko przy urządzeniach — przy taśmie czy kartach wychodziło „dla drukarki Taśma…”
-    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: ${v.native ? 'film producenta z polskim lektorem i napisami' : 'instruktaż producenta'} ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: ${v.native ? 'film producenta z polskim lektorem i napisami' : 'instruktaż producenta'} ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
     thumbnailUrl: [`https://www.takma.com.pl${v.poster}`],
     contentUrl: v.url,
     uploadDate: v.published,
@@ -628,7 +631,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       downloadUrl: `https://www.takma.com.pl/pobierz/${product.slug}`,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'PLN', availability: 'https://schema.org/InStock' },
     } : {}),
-    ...((catalogMobileTerminal || posComputer || kdsDisplay || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
+    ...((catalogMobileTerminal || posComputer || kdsDisplay || kioskDisplay || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#product` } : {}),
     name: product.name,
     description: product.shortDescription,
     ...(product.images.some(src => !src.includes('placeholder')) ? { image: product.images.filter(src => !src.includes('placeholder')).map(absoluteProductImageUrl) } : {}),
@@ -757,7 +760,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   breadcrumbItems.push({ '@type': 'ListItem', position: pos, name: product.name, item: `https://www.takma.com.pl/produkt/${product.slug}` })
 
   const breadcrumbJsonLd = {
-    ...((catalogMobileTerminal || posComputer || kdsDisplay || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
+    ...((catalogMobileTerminal || posComputer || kdsDisplay || kioskDisplay || datalogicScannerProduct || bixolonLabelProduct) ? { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` } : {}),
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: breadcrumbItems,
@@ -780,7 +783,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       name: product.name,
       url: `https://www.takma.com.pl/produkt/${product.slug}`,
     },
-    ...((catalogMobileTerminal || posComputer || kdsDisplay || datalogicScannerProduct || bixolonLabelProduct) ? {
+    ...((catalogMobileTerminal || posComputer || kdsDisplay || kioskDisplay || datalogicScannerProduct || bixolonLabelProduct) ? {
       '@id': `https://www.takma.com.pl/produkt/${product.slug}#webpage`,
       mainEntity: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#${liveOffers && (product.variants?.length ?? 0) > 1 ? 'product-group' : 'product'}` },
       breadcrumb: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` },
@@ -1025,7 +1028,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
           {liveOffers && <div className="order-first min-w-0 lg:col-start-2 lg:row-start-1">{productHeading}</div>}
           {/* Gallery */}
           <div className={liveOffers ? "min-w-0 lg:col-start-1 lg:row-start-1 lg:row-span-2" : "min-w-0"}>
-            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} frameVisibleFraction={catalogMobileTerminal || posComputer || kdsDisplay ? 0.84 : bixolonLabelProduct ? 0.78 : undefined} />
+            <ProductGallery images={product.images} productName={product.name} imageDescriptions={product.imageDescriptions} spin={product.spinVideo} frameVisibleFraction={catalogMobileTerminal || posComputer || kdsDisplay || kioskDisplay ? 0.84 : bixolonLabelProduct ? 0.78 : undefined} />
           </div>
 
           {/* Product info */}

@@ -1976,6 +1976,39 @@ categoryFilters['akcesoria-do-ekranow-kds'] = [
   ] }
 ]
 
+// Kioski: jedna karta SUNMI FLEX 3 z czterema rozmiarami jako wariantami, więc przekątna i pamięć czytają wiersze specyfikacji.
+categoryFilters['kioski-samoobslugowe'] = [
+  { specKey: 'przekatna-kiosk', label: 'Przekątna ekranu', derived: [
+    { value: '15,6"', pattern: '15,6"', specs: ['Ekran'] },
+    { value: '18,5"', pattern: '18,5"', specs: ['Ekran'] },
+    { value: '21,5" (22")', pattern: '21,5"', specs: ['Ekran'] },
+    { value: '27"', pattern: '27"', specs: ['Ekran'] }
+  ] },
+  { specKey: 'pamiec-kiosk', label: 'Pamięć', derived: [
+    { value: '4 GB RAM / 64 GB', pattern: '4 GB RAM / 64 GB', specs: ['Pamięć'] },
+    { value: '6 GB RAM / 128 GB', pattern: '6 GB RAM / 128 GB', specs: ['Pamięć'] }
+  ] },
+  { specKey: 'cena-kiosk', label: 'Cena netto', derived: [
+    { value: 'do 2 500 zł', priceMax: 2500 },
+    { value: 'powyżej 2 500 zł', priceMin: 2500 }
+  ] }
+]
+// Akcesoria do kiosków: rodzaj z nazwy, zgodny rozmiar z wiersza „Zgodność” („SUNMI FLEX 3 18,5", 22" i 27"”).
+categoryFilters['akcesoria-do-kioskow'] = [
+  { specKey: 'rodzaj-akcesorium-kiosk', label: 'Rodzaj akcesorium', derived: [
+    { value: 'Stojak podłogowy', namePattern: '^Stojak podłogowy' },
+    { value: 'Stojak na ladę', namePattern: '^Stojak (na ladę|biurkowy)' },
+    { value: 'Moduł', namePattern: '^(Moduł|Lampka|Skaner)' },
+    { value: 'Kamera', namePattern: '^Kamera' },
+    { value: 'Uchwyt POS', namePattern: '^Uchwyt POS' }
+  ] },
+  { specKey: 'zgodny-rozmiar-kiosk', label: 'Zgodny rozmiar', derived: [
+    { value: '18,5"', pattern: 'FLEX 3 (?!KDS)[^;]*18,5"', specs: ['Zgodność'] },
+    { value: '22"', pattern: 'FLEX 3 (?!KDS)[^;]*22"', specs: ['Zgodność'] },
+    { value: '27"', pattern: 'FLEX 3 (?!KDS)[^;]*27"', specs: ['Zgodność'] }
+  ] }
+]
+
 categoryFilters['terminale-cipherlab'] = [
   { specKey: 'System operacyjny', label: 'System operacyjny', description: 'Android uruchamia zgodne aplikacje mobilne. cOS to system do aplikacji zadaniowych tworzonych np. w Forge Application Generator; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
   { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage','cipherlab-8000','cipherlab-8200','cipherlab-8300','cipherlab-8600']}] },
@@ -2033,6 +2066,15 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
   "akcesoria-do-ekranow-kds": {
     "Rodzaj akcesorium": "Wyposażenie ekranu KDS SUNMI FLEX 3.\n• Moduł PoE — zasilanie przez przewód sieciowy w wersjach 18,5\" i 22\".\n• Ramię VESA i stojak — mocowanie ekranu przez VESA 100 × 100."
   },
+  "kioski-samoobslugowe": {
+    "Przekątna ekranu": "Przekątna ekranu SUNMI FLEX 3. Każdy rozmiar ma własny PN na karcie produktu.\n• 15,6\" — 250 nitów, 4 GB RAM i 64 GB pamięci.\n• 18,5\", 21,5\" (22\") i 27\" — ekran IPS 400 nitów, 6 GB RAM i 128 GB pamięci, czytnik linii papilarnych.",
+    "Pamięć": "Pamięć operacyjna i pamięć na dane SUNMI FLEX 3.\n• 4 GB RAM / 64 GB — wersja 15,6\".\n• 6 GB RAM / 128 GB — wersje 18,5\", 22\" i 27\".",
+    "Cena netto": "Cena netto najtańszego rozmiaru. Ceny pozostałych rozmiarów podaje tabela wersji na karcie produktu. Stojaki i moduły kupuje się osobno."
+  },
+  "akcesoria-do-kioskow": {
+    "Rodzaj akcesorium": "Wyposażenie kiosku SUNMI FLEX 3.\n• Stojak podłogowy i stojak na ladę — ustawiają ekran; stojaki Retail i Restaurant mają drukarkę w zestawie.\n• Moduł, kamera i uchwyt POS — odczyt kart i kodów, sygnalizacja stanu, rozpoznawanie twarzy i terminal płatniczy przy ekranie.",
+    "Zgodny rozmiar": "Rozmiar ekranu SUNMI FLEX 3, do którego pasuje akcesorium. Stojaki Retail pasują tylko do ekranu 22\". Zgodność z wersją 15,6\" prosimy potwierdzić przed zamówieniem."
+  },
   "akcesoria-do-komputerow-pos": {
     "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
     "Zgodny komputer": "Model, z którym akcesorium współpracuje. Ekrany klienta do T3 i do T3 PRO nie są zamienne. Ekran C02020005 pasuje tylko do D3 PRO. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
@@ -2041,7 +2083,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
   }
 }
-for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "ekrany-kds", "akcesoria-do-ekranow-kds", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
+for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "ekrany-kds", "akcesoria-do-ekranow-kds", "kioski-samoobslugowe", "akcesoria-do-kioskow", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
   categoryFilters[category] = (categoryFilters[category] ?? []).map(filter => ({
     ...filter,
     description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,

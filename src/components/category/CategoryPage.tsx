@@ -29,7 +29,7 @@ function odmienNazwe(name: string): string {
 
 export default async function CategoryPage({ slug }: CategoryPageProps) {
   const category = getCategoryById(slug)!
-  const receiptCategory = ['mobilne-drukarki-paragonow', 'drukarki-pos', 'komputery-pos', 'ekrany-kds'].includes(slug)
+  const receiptCategory = ['mobilne-drukarki-paragonow', 'drukarki-pos', 'komputery-pos', 'ekrany-kds', 'kioski-samoobslugowe'].includes(slug)
   const baseProducts = getProductsByCategory(category.id)
   const products = receiptCategory ? await Promise.all(baseProducts.map(async product => {
     const rows = await getProductStock(product.slug) ?? []

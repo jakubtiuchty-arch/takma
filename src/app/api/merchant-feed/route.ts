@@ -110,11 +110,12 @@ interface StockRow {
 }
 
 /** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet,
- *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS z tej samej linii SUNMI). */
+ *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS i kioski z tej samej linii SUNMI). */
 const GOOGLE_CATEGORY: Record<string, string> = {
   'drukarki-etykiet': '952',
   'komputery-pos': '543648',
   'ekrany-kds': '543648',
+  'kioski-samoobslugowe': '543648',
 }
 
 /** Terminal z wbudowaną drukarką (SUNMI V3, V3H, V3 Plus) to dla kupujących terminal POS;
@@ -147,6 +148,8 @@ function typUrzadzenia(product: Product): string | null {
       return maDrukarke(product) ? 'Komputer POS z drukarką' : 'Komputer POS'
     case 'ekrany-kds':
       return /ekran/i.test(product.name) ? null : 'Ekran KDS'
+    case 'kioski-samoobslugowe':
+      return /kiosk/i.test(product.name) ? null : 'Kiosk samoobsługowy'
     default:
       return null
   }

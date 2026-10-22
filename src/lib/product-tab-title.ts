@@ -19,7 +19,7 @@ import { rfidPrinterCategory } from '@/data/rfid-printer-category'
 const RFID_PRINTER_IDS = new Set(rfidPrinterCategory.productIds)
 
 /**
- * Produkty z listingów /terminale-sunmi, /terminale-cipherlab, /drukarki-pos, /komputery-pos, /ekrany-kds,
+ * Produkty z listingów /terminale-sunmi, /terminale-cipherlab, /drukarki-pos, /komputery-pos, /ekrany-kds, /kioski-samoobslugowe,
  * /drukarki-rfid, /skanery-datalogic i /skanery-kodow-kreskowych/ladowe.
  */
 export function isShortTabTitleScope(product: Product): boolean {
@@ -30,6 +30,7 @@ export function isShortTabTitleScope(product: Product): boolean {
     categoryId === 'drukarki-pos' ||
     categoryId === 'komputery-pos' ||
     categoryId === 'ekrany-kds' ||
+    categoryId === 'kioski-samoobslugowe' ||
     RFID_PRINTER_IDS.has(product.id) ||
     RFID_PRINTER_IDS.has(product.slug) ||
     !!subcategoryIds?.includes('drukarki-rfid') ||

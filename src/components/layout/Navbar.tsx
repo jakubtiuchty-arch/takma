@@ -54,6 +54,7 @@ const navigation: NavItem[] = [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
       { name: 'Komputery POS', href: '/komputery-pos' },
       { name: 'Ekrany KDS', href: '/ekrany-kds' },
+      { name: 'Kioski samoobsługowe', href: '/kioski-samoobslugowe' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },
@@ -67,6 +68,7 @@ const navigation: NavItem[] = [
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: 'Akcesoria do komputerów POS', href: '/akcesoria-do-komputerow-pos' },
       { name: 'Akcesoria do ekranów KDS', href: '/akcesoria-do-ekranow-kds' },
+      { name: 'Akcesoria do kiosków', href: '/akcesoria-do-kioskow' },
     ],
   },
   {
