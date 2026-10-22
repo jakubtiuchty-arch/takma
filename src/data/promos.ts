@@ -147,7 +147,7 @@ export const BROTHER_TJ_PROMO = {
   slugs: ['brother-tj-4120tn', 'brother-tj-4121tn'],
   percent: 50,
   startDate: '2026-10-18',
-  endDate: null as string | null,
+  endDate: '2026-12-31' as string | null, // ostatni dzień promocji (włącznie)
 }
 
 export function brotherTjPromoFor(productSlug: string, now = Date.now()): typeof BROTHER_TJ_PROMO | null {
