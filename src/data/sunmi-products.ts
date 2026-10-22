@@ -3414,8 +3414,8 @@ export const sunmiProducts: Product[] = [
       "/images/products/P11050019-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI FLEX 3 KDS 15,6\" — widok z przodu z prawej strony, z góry: ekran dotykowy w aluminiowej obudowie, ustawiony pionowo",
       "SUNMI FLEX 3 KDS 15,6\" — widok z przodu: ekran dotykowy FHD, ustawiony pionowo",
+      "SUNMI FLEX 3 KDS 15,6\" — widok z przodu z prawej strony, z góry: ekran dotykowy w aluminiowej obudowie, ustawiony pionowo",
       "SUNMI FLEX 3 KDS 15,6\" — widok z przodu z lewej strony, z góry",
       "SUNMI FLEX 3 KDS 15,6\" — widok z tyłu: tylna obudowa z logo SUNMI",
       "SUNMI FLEX 3 KDS 15,6\" — widok z tyłu z prawej strony, z góry",
