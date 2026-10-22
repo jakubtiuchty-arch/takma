@@ -695,6 +695,257 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-e601",
+    "slug": "citizen-ct-e601",
+    "name": "Citizen CT-E601",
+    "seoH1": "Citizen CT-E601",
+    "seoTitle": "Drukarka paragonów Citizen CT-E601 80 mm, 350 mm/s, USB",
+    "seoDescription": "Drukarka paragonów Citizen CT-E601 80 mm, 350 mm/s, gniazdo karty LAN lub Wi-Fi, Bluetooth, Lightning. Drukarka POS Citizen CT-E601. PN: CTE601XNEBX, CTE601XTEBX.",
+    "shortDescription": "Citizen CT-E601 — termiczna drukarka paragonów niefiskalnych na papier do 80 mm, drukuje do 350 mm/s. Obudowa jest odporna na środki dezynfekujące; wersje z gniazdem karty interfejsu, z Bluetoothem albo ze złączem Lightning.",
+    "description": "Drukarka Citizen CT-E601 drukuje paragony niefiskalne w handlu, gastronomii, kuchni, aptece i placówce medycznej. Pracuje też w kiosku i w systemie zarządzania kolejką. Obudowa ma 125 × 165 × 108 mm i jest odporna na środki dezynfekujące. Drukarka ma znak SIAA zgodny z normą ISO 22196.\n\n## Druk do 350 mm/s i czujnik zacięcia papieru\n\nParagon wychodzi u góry obudowy. Drukarka drukuje do 350 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Czujniki wykrywają koniec papieru, bliski koniec papieru i zacięcie papieru. Papier może mieć szerokość 57,5–79,5 mm, a rolka średnicę do 83 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED.\n\n## Gniazdo karty, Bluetooth albo Lightning\n\nKażda wersja ma USB, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Wersje CTE601XNEBX i CTE601XNEWX mają gniazdo na kartę interfejsu: Ethernet, RS-232 albo Wi-Fi. CTE601XTEBX ma Bluetooth zgodny z Apple MFi, a CTE601XAEBX złącze Lightning. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nGniazdo na kartę interfejsu i wyjście papieru z przodu ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 784.42,
+    "availability": "available",
+    "images": [
+      "/images/products/CTE601XNEBX.png",
+      "/images/products/CTE601XNEBX-2.png",
+      "/images/products/CTE601XNEBX-3.png",
+      "/images/products/CTE601XNEBX-4.png",
+      "/images/products/CTE601XNEBX-5.png",
+      "/images/products/CTE601XNEBX-6.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-E601 w czarnej obudowie — widok z przodu pod kątem, z góry: wylot papieru, przyciski i diody",
+      "Citizen CT-E601 — paragon w wylocie papieru u góry obudowy",
+      "Citizen CT-E601 — widok z przodu",
+      "Citizen CT-E601 — widok z tyłu: port USB do ładowania, USB, gniazdo zasilania, złącze szuflady kasowej i zaślepione gniazdo karty interfejsu",
+      "Citizen CT-E601 — otwarta pokrywa komory papieru z rolką papieru",
+      "Citizen CT-E601 w białej obudowie — widok z przodu pod kątem, z góry"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTE601XNEBX, CTE601XNEWX, CTE601XTEBX, CTE601XAEBX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 350 mm/s"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 72 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "57,5–79,5 mm (±0,5 mm)"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "53–85 µm"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "U góry"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Koniec papieru, bliski koniec papieru, zacięcie papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0 i port USB do ładowania urządzeń (5 V, 2 A); zależnie od PN: gniazdo karty interfejsu, Bluetooth (Apple MFi) z USB host albo Lightning z USB host"
+      },
+      {
+        "name": "Karty interfejsu (wersje z gniazdem)",
+        "value": "Ethernet, Ethernet z USB host, RS-232, Wi-Fi compact, Ethernet premium, Wi-Fi premium"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "8 MB"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "2 przyciski, 5 diod LED; wbudowany brzęczyk"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Odporna na środki dezynfekujące; znak SIAA, norma ISO 22196"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50/60 Hz, zasilacz zewnętrzny 37AD5 w zestawie"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "125 × 165 × 108 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,3 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna lub biała"
+      },
+      {
+        "name": "Normy",
+        "value": "VCCI, UL, C-UL, FCC klasa A, CE, CCC"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz 37AD5, przewód zasilający, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "24 miesiące"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne w aptece i placówce medycznej",
+      "Paragony i bony w handlu, gastronomii i kuchni",
+      "Druk z iPada lub iPhone'a przez Bluetooth albo Lightning"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTE601XNEBX",
+        "name": "CT-E601 — USB, gniazdo karty interfejsu, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Gniazdo karty",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 784.42,
+        "availability": "available"
+      },
+      {
+        "partNumber": "CTE601XNEWX",
+        "name": "CT-E601 — USB, gniazdo karty interfejsu, biała",
+        "attributes": {
+          "Interfejs dodatkowy": "Gniazdo karty",
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 784.42,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE601XTEBX",
+        "name": "CT-E601 — USB, Bluetooth, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 980.53,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTE601XAEBX",
+        "name": "CT-E601 — USB, Lightning, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Lightning",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1158.81,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Interfejs dodatkowy": "Połączenie dostępne w CT-E601 obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet, RS-232 albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — połączenie bez przewodu z komputerem, tabletem lub telefonem, także z iPadem i iPhone'em.\n\n• Lightning — połączenie z iPadem lub iPhone'em przez złącze Lightning.",
+      "Kolor obudowy": "Kolor obudowy CT-E601.\n\n• Czarna — wszystkie wersje.\n\n• Biała — w ofercie wersja z gniazdem karty interfejsu."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-wifi-ppz60112s",
+      "citizen-pos-lan-usb-host-ppz60104s",
+      "citizen-pos-rs232-pps00276s",
+      "citizen-pos-powered-usb-1100092",
+      "citizen-pos-lan-premium-if2-es04",
+      "citizen-pos-wifi-premium-if2-wf5s",
+      "citizen-pos-wifi-premium-if2-wf5l",
+      "citizen-pos-modul-wifi-upg-wf5s",
+      "citizen-pos-modul-wifi-upg-wf5l",
+      "citizen-pos-zasilacz-pwt20022-00"
+    ],
+    "relatedProducts": [
+      "citizen-ct-e301",
+      "citizen-ct-e651",
+      "citizen-ct-s751",
+      "epson-tm-m30iii",
+      "bixolon-srp-q300"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-E601 (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-e601.pdf",
+        "size": "260 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-E601",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-E601",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-E601 jest drukarką fiskalną?",
+        "answer": "Nie. CT-E601 drukuje paragony niefiskalne, bony i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć CT-E601 do sieci przewodowej lub Wi-Fi?",
+        "answer": "Wybierz wersję z gniazdem karty interfejsu (CTE601XNEBX lub CTE601XNEWX) i dokup kartę: [Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s) albo [Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Kartę wkłada się w gniazdo z tyłu drukarki. Wersje z Bluetoothem i Lightning mają ten interfejs zamontowany fabrycznie."
+      },
+      {
+        "question": "Czy CT-E601 współpracuje z iPadem i iPhone'em?",
+        "answer": "Tak. CTE601XTEBX łączy się przez Bluetooth zgodny z Apple MFi. CTE601XAEBX ma złącze Lightning: jednym przewodem przesyła dane i ładuje iPada lub iPhone'a."
+      },
+      {
+        "question": "Jaki papier przyjmuje Citizen CT-E601?",
+        "answer": "Papier termiczny o szerokości 57,5–79,5 mm (±0,5 mm) i grubości 53–85 µm, w rolce o średnicy do 83 mm. Szerokość druku wynosi do 72 mm."
+      },
+      {
+        "question": "Co jest w zestawie z CT-E601?",
+        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewodu danych i kart interfejsu nie ma w zestawie."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
