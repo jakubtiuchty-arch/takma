@@ -1090,7 +1090,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI L3 / M3 — C14004127",
     "seoDescription": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L3 lub SUNMI M3. PN C14004127. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L3 lub SUNMI M3. Zasilacz i przewód USB pochodzą z zestawu terminala.",
-    "description": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L3 lub SUNMI M3. Zasilacz i przewód USB pochodzą z zestawu terminala.\n\nTerminal ładuje się po odłożeniu do gniazda stacji. Stacja służy do ładowania jednego urządzenia przy stanowisku pracy, np. przy ladzie lub biurku.\n\n## Zestaw i zasilanie\n\nStacja nie ma własnego zasilacza ani przewodu. Do zasilania służą zasilacz i przewód USB z zestawu terminala SUNMI L3 lub M3. Terminal widoczny na ilustracji nie jest częścią stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- Zasilacz z zestawu terminala SUNMI L3 lub M3\n- Przewód USB z zestawu terminala SUNMI L3 lub M3\n\n## Pokrewne akcesoria\n\nCztery terminale ładuje [stacja 4-stanowiskowa C14004131](/produkt/sunmi-c14004131). Baterie poza terminalem ładuje [ładowarka 4 baterii C14004143](/produkt/sunmi-c14004143).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Stacja ładująca C14004127 ma jedno gniazdo na terminal SUNMI L3 albo SUNMI M3. Nie ma własnego zasilacza ani przewodu. Zasila się ją zasilaczem i przewodem USB z zestawu terminala. Terminal odłożony do gniazda ładuje się bez podłączania kabla.\n\nStację stawia się tam, gdzie pracuje jeden terminal, np. przy ladzie albo w punkcie przyjęć. Terminal na zdjęciu produktu nie wchodzi w skład zestawu. Kilka urządzeń jednocześnie ładuje stacja 4-stanowiskowa [C14004131](/produkt/sunmi-c14004131).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- Zasilacz z zestawu terminala SUNMI L3 lub M3\n- Przewód USB z zestawu terminala SUNMI L3 lub M3\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1148,7 +1148,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja 4-stanowiskowa SUNMI L3 / M3 — C14004131",
     "seoDescription": "Stacja dokująca na cztery terminale SUNMI L3 lub SUNMI M3. PN C14004131. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja dokująca na cztery terminale SUNMI L3 lub SUNMI M3. Zestaw zawiera adaptery wtyczek EU, UK i US.",
-    "description": "Stacja dokująca na cztery terminale SUNMI L3 lub SUNMI M3. Zestaw zawiera adaptery wtyczek EU, UK i US.\n\nStacja ładuje do czterech terminali jednocześnie. Służy do ładowania urządzeń całej zmiany w jednym miejscu, np. w biurze magazynu lub na zapleczu lokalu.\n\n## Zestaw i zasilanie\n\nZestaw zawiera adaptery wtyczek EU, UK i US do zasilania stacji. Terminale widoczne na ilustracji nie są częścią stacji.\n\n## Różnica względem stacji 1-stanowiskowej\n\n[Stacja ładująca C14004127](/produkt/sunmi-c14004127) ma jedno gniazdo i korzysta z zasilacza terminala. Ta stacja ma cztery gniazda i adaptery w zestawie. Baterie poza terminalem ładuje [ładowarka 4 baterii C14004143](/produkt/sunmi-c14004143).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Stacja 4-stanowiskowa C14004131 ładuje jednocześnie cztery terminale SUNMI L3 lub SUNMI M3. Przydaje się tam, gdzie terminale po zmianie wracają w jedno miejsce: do biura magazynu albo na zaplecze restauracji.\n\nW zestawie są adaptery wtyczek EU, UK i US, więc stację można podłączyć do gniazdek w różnych krajach. Terminale pokazane na zdjęciu kupuje się osobno.\n\nWersja na jeden terminal, zasilana zasilaczem z zestawu L3 lub M3, to stacja [C14004127](/produkt/sunmi-c14004127).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1206,7 +1206,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii SUNMI L3 / M3 — C14004143",
     "seoDescription": "Ładowarka na cztery baterie SUNMI L3 i SUNMI M3. PN C14004143. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Ładowarka na cztery baterie SUNMI L3 i SUNMI M3. Zestaw zawiera adaptery wtyczek EU, UK i US.",
-    "description": "Ładowarka na cztery baterie SUNMI L3 i SUNMI M3. Zestaw zawiera adaptery wtyczek EU, UK i US.\n\nŁadowarka służy do baterii wyjętych z terminali. Ładuje do czterech baterii jednocześnie. Dzięki temu na kolejną zmianę są gotowe naładowane baterie zapasowe.\n\n## Zestaw i zasilanie\n\nZestaw zawiera adaptery wtyczek EU, UK i US. Baterie widoczne na ilustracji nie są częścią zestawu. Ładowarka nie ładuje całych terminali.\n\n## Pokrewne akcesoria\n\nTerminal z baterią ładuje [stacja ładująca C14004127](/produkt/sunmi-c14004127) lub [stacja 4-stanowiskowa C14004131](/produkt/sunmi-c14004131). Wymiana baterii hot swap bez wyłączania terminala jest dostępna w wybranych PN SUNMI L3.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Ładowarka C14004143 ładuje do czterech baterii wyjętych z terminali SUNMI L3 i SUNMI M3. Samych terminali nie przyjmuje.\n\nW wersjach L3 z wymianą hot swap terminal działa dalej, gdy pracownik zmienia rozładowaną baterię na naładowaną z ładowarki. Do zestawu należą adaptery wtyczek EU, UK i US. Baterii ze zdjęcia w nim nie ma.\n\nDo L3 pasuje bateria 4,4 V / 5000 mAh [X09060609](/produkt/sunmi-x09060609).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1266,7 +1266,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Uchwyt spustowy SUNMI L3 — C14004144",
     "seoDescription": "Uchwyt pistoletowy ze spustem do SUNMI L3 z tylnymi stykami POGO. PN C14004144. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Uchwyt pistoletowy ze spustem do SUNMI L3 z tylnymi stykami POGO. Pasuje do PN P09070073 i P09070030.",
-    "description": "Uchwyt pistoletowy ze spustem do SUNMI L3 z tylnymi stykami POGO. Pasuje do PN P09070073 i P09070030.\n\nSpust uruchamia skanowanie w terminalu z modułem skanującym. Uchwyt ułatwia częsty odczyt kodów, np. przy kompletacji i przyjęciach.\n\n## Zgodność\n\nUchwyt łączy się z terminalem przez tylne styki POGO. W tej ofercie takie styki mają SUNMI L3 P09070073 (skaner SS1111) i P09070030 (skaner SE4710). Pozostałe PN L3 nie mają tylnych styków POGO. Uchwyt nie dodaje skanera do terminala bez modułu skanującego.\n\n## Zestaw\n\nZestaw zawiera sam uchwyt. Terminal widoczny na ilustracji jest osobnym produktem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
+    "description": "Uchwyt spustowy C14004144 zmienia SUNMI L3 w terminal typu pistolet: spust w rękojeści uruchamia skaner terminala. Przy kompletacji z częstym odczytem kodów skanuje się spustem zamiast bocznym przyciskiem.\n\nUchwyt łączy się z terminalem przez tylne styki POGO. Z oferowanych konfiguracji L3 mają je tylko P09070073 ze skanerem SS1111 i P09070030 ze skanerem SE4710. Pozostałe PN nie mają tych styków. Uchwyt nie dodaje skanera do wersji bez modułu skanującego.\n\nW opakowaniu jest sam uchwyt, a terminal ze zdjęcia to osobny produkt.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1319,7 +1319,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI L3 / M3 — C02020013",
     "seoDescription": "Szkło hartowane na ekran 6,75 cala SUNMI L3 i SUNMI M3. PN C02020013. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Szkło hartowane na ekran 6,75 cala SUNMI L3 i SUNMI M3. Chroni ekran przed zarysowaniami i pęknięciami.",
-    "description": "Szkło hartowane na ekran 6,75 cala SUNMI L3 i SUNMI M3. Chroni ekran przed zarysowaniami i pęknięciami.\n\nSzkło ochronne (szkło hartowane) zakłada się na ekran terminala. Chroni powierzchnię ekranu przed zarysowaniami, pęknięciami i codziennym zużyciem.\n\n## Zgodność\n\nSzkło pasuje do SUNMI L3 i SUNMI M3. Oba modele mają ekran 6,75 cala. Szkło nie pasuje do terminali z inną wielkością ekranu.\n\n## Pokrewne akcesoria\n\nSzkło chroni tylko ekran. Obudowę chroni [etui ochronne C20000106](/produkt/sunmi-c20000106). Oba elementy można stosować razem.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Szkło hartowane C02020013 chroni ekran 6,75 cala terminali SUNMI L3 i SUNMI M3 przed zarysowaniami i pęknięciami. Ekran obu modeli ma fabrycznie Corning Gorilla Glass. Szkło ochronne przejmuje rysy, a po uszkodzeniu wymienia się je na nowe bez wizyty w serwisie.\n\nPasuje wyłącznie do L3 i M3. Obudowy nie zakrywa, dlatego można je łączyć z gumowym etui [C20000106](/produkt/sunmi-c20000106).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1376,7 +1376,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Etui ochronne SUNMI L3 / M3 — C20000106",
     "seoDescription": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L3 i SUNMI M3. PN C20000106. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L3 i SUNMI M3. Nie pasuje do wersji L3 z UHF RFID.",
-    "description": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L3 i SUNMI M3. Nie pasuje do wersji L3 z UHF RFID.\n\nEtui chroni obudowę terminala przed uderzeniami i zarysowaniami. Terminal pracuje w etui przy codziennej obsłudze zamówień i towaru.\n\n## Zgodność\n\nEtui pasuje do SUNMI L3 i SUNMI M3. Nie pasuje do konfiguracji L3 z czytnikiem UHF RFID. Oferowane w TAKMA PN L3 nie mają UHF RFID.\n\n## Pokrewne akcesoria\n\nEkran chroni osobne [szkło ochronne C02020013](/produkt/sunmi-c02020013). Do przenoszenia terminala służą [pasek na dłoń C11000007](/produkt/sunmi-c11000007) i [pasek naramienny C11000003](/produkt/sunmi-c11000003).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Etui gumowe C20000106 okrywa obudowę terminala SUNMI L3 lub SUNMI M3 i chroni ją przed obiciami na sali sprzedaży i w magazynie.\n\nEtui nie pasuje do wersji L3 z czytnikiem UHF RFID. Konfiguracje L3 sprzedawane przez TAKMA nie mają UHF RFID, więc to ograniczenie ich nie dotyczy.\n\nEtui nie zakrywa ekranu. Na ekran 6,75 cala jest osobne szkło hartowane [C02020013](/produkt/sunmi-c02020013).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1434,7 +1434,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L3 / M3 — C11000007",
     "seoDescription": "Pasek na dłoń do SUNMI L3 i SUNMI M3. PN C11000007. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Pasek na dłoń do SUNMI L3 i SUNMI M3. Podtrzymuje terminal w dłoni podczas pracy.",
-    "description": "Pasek na dłoń do SUNMI L3 i SUNMI M3. Podtrzymuje terminal w dłoni podczas pracy.\n\nPasek mocuje się z tyłu terminala. Dłoń przechodzi pod paskiem, więc terminal nie wysuwa się z ręki przy pisaniu na ekranie i skanowaniu.\n\n## Zgodność\n\nPasek pasuje do SUNMI L3 i SUNMI M3. Nie pasuje do L2Ks, L2H ani L2s Pro. Paski do tych modeli są na kartach ich akcesoriów.\n\n## Pokrewne akcesoria\n\nDo noszenia terminala na ramieniu służy [pasek naramienny C11000003](/produkt/sunmi-c11000003). Obudowę chroni [etui ochronne C20000106](/produkt/sunmi-c20000106).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Pasek na dłoń C11000007 przytrzymuje SUNMI L3 lub SUNMI M3 w ręce, gdy kelner wpisuje zamówienie albo magazynier skanuje kody. Zakłada się go na tył obudowy i wsuwa pod niego dłoń. Terminal nie wysuwa się wtedy z ręki przy pracy jednym kciukiem.\n\nL2Ks, L2H i L2s Pro mają inne paski, a ten do nich nie pasuje.\n\nTerminal na ramieniu nosi się na pasku naramiennym [C11000003](/produkt/sunmi-c11000003).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1488,7 +1488,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek naramienny SUNMI L3 / M3 — C11000003",
     "seoDescription": "Pasek naramienny do noszenia SUNMI L3 i SUNMI M3. PN C11000003. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Pasek naramienny do noszenia SUNMI L3 i SUNMI M3. Pasuje także do SUNMI V3 MIX.",
-    "description": "Pasek naramienny do noszenia SUNMI L3 i SUNMI M3. Pasuje także do SUNMI V3 MIX.\n\nPasek pozwala nosić terminal na ramieniu lub przez ramię. Ręce pozostają wolne między kolejnymi zamówieniami lub odczytami kodów.\n\n## Zgodność\n\nPasek pasuje do SUNMI L3 i SUNMI M3. Pasuje także do SUNMI V3 MIX, którego nie ma w ofercie TAKMA.\n\n## Pokrewne akcesoria\n\nDo podtrzymywania terminala w dłoni służy [pasek na dłoń C11000007](/produkt/sunmi-c11000007). Pasek naramienny i pasek na dłoń są osobnymi produktami.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
+    "description": "Pasek naramienny C11000003 służy do noszenia SUNMI L3 lub SUNMI M3 na ramieniu albo przez ramię. Obie ręce zostają wolne między kolejnymi zamówieniami i przy przenoszeniu kartonów.\n\nPasuje też do SUNMI V3 MIX, którego TAKMA nie sprzedaje.\n\nW dłoni terminal przytrzymuje inny produkt, pasek [C11000007](/produkt/sunmi-c11000007). Każdy z tych pasków kupuje się osobno.\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3), [SUNMI M3](/produkt/sunmi-m3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1546,7 +1546,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI L2Ks — C02004005",
     "seoDescription": "Szkło hartowane na ekran 4 cale SUNMI L2Ks. PN C02004005. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Szkło hartowane na ekran 4 cale SUNMI L2Ks. Chroni ekran przed zarysowaniami.",
-    "description": "Szkło hartowane na ekran 4 cale SUNMI L2Ks. Chroni ekran przed zarysowaniami.\n\nSzkło ochronne (szkło hartowane) zakłada się na ekran terminala SUNMI L2Ks. Chroni ekran dotykowy przed zarysowaniami podczas pracy w magazynie.\n\n## Zgodność\n\nSzkło pasuje tylko do SUNMI L2Ks z ekranem 4 cale. Nie pasuje do L2H, L2s Pro ani L3, które mają większe ekrany.\n\n## Pokrewne akcesoria\n\nDo SUNMI L2Ks są też [pasek na dłoń C11000001](/produkt/sunmi-c11000001), [uchwyt spustowy C14000159](/produkt/sunmi-c14000159) i [stacja ładująca C14004014](/produkt/sunmi-c14004014). Baterie poza terminalem ładuje [ładowarka 4 baterii C14000157](/produkt/sunmi-c14000157).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Szkło hartowane C02004005 przykrywa ekran 4 cale kolektora SUNMI L2Ks. Szkło zbiera rysy zamiast ekranu dotykowego, który w L2Ks obsługuje się na zmianę z klawiaturą.\n\nWymiar szkła odpowiada tylko ekranowi L2Ks. L2H i L2s Pro mają ekran 5,5 cala, a L3 6,75 cala, więc do nich są inne szkła.\n\nKolektor L2Ks przy dłoni trzyma pasek [C11000001](/produkt/sunmi-c11000001).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -1602,7 +1602,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L2Ks — C11000001",
     "seoDescription": "Pasek na dłoń do SUNMI L2Ks. PN C11000001. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Pasek na dłoń do SUNMI L2Ks. Ułatwia pracę z klawiaturą i skanerem w terenie i w magazynie.",
-    "description": "Pasek na dłoń do SUNMI L2Ks. Ułatwia pracę z klawiaturą i skanerem w terenie i w magazynie.\n\nPasek mocuje się z tyłu terminala SUNMI L2Ks. Podtrzymuje terminal w dłoni, gdy kciuk obsługuje klawiaturę lub przyciski skanowania.\n\n## Zgodność\n\nPasek pasuje tylko do SUNMI L2Ks z 23 fizycznymi klawiszami i ekranem 4 cale. Nie pasuje do L2H, L2s Pro ani L3. Paski do tych modeli są na kartach ich akcesoriów.\n\n## Pokrewne akcesoria\n\nDo intensywnego skanowania służy [uchwyt spustowy C14000159](/produkt/sunmi-c14000159). Ekran chroni [szkło ochronne C02004005](/produkt/sunmi-c02004005).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Pasek na dłoń C11000001 trzyma kolektor SUNMI L2Ks przy dłoni, gdy kciuk pracuje na klawiaturze 23 klawiszy albo naciska boczny przycisk skanera. Pasuje wyłącznie do L2Ks i nie należy do zestawu terminala, jest wyposażeniem opcjonalnym.\n\nPrzy bardzo częstym skanowaniu wygodniejszy bywa uchwyt pistoletowy [C14000159](/produkt/sunmi-c14000159), który zakłada się bez śrub.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1655,7 +1655,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Ładowarka 4 baterii SUNMI L2Ks — C14000157",
     "seoDescription": "Ładowarka na cztery baterie SUNMI L2Ks. PN C14000157. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Ładowarka na cztery baterie SUNMI L2Ks. Zestaw zawiera zasilacz i przewód zasilający EU.",
-    "description": "Ładowarka na cztery baterie SUNMI L2Ks. Zestaw zawiera zasilacz i przewód zasilający EU.\n\nŁadowarka ładuje jednocześnie do czterech baterii wyjętych z terminala SUNMI L2Ks. Ma inteligentne zarządzanie ładowaniem. Obudowa jest wykonana z materiału trudnopalnego.\n\n## Zestaw i zasilanie\n\nZestaw zawiera zasilacz i przewód zasilający z wtyczką EU. Baterie nie są częścią zestawu. Ładowarka pasuje tylko do baterii SUNMI L2Ks. Nie ładuje całego terminala.\n\n## Pokrewne akcesoria\n\nTerminal ładuje [stacja ładująca C14004014](/produkt/sunmi-c14004014). Bateria SUNMI L2Ks jest wymienna i ma 5000 mAh.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Ładowarka C14000157 ładuje jednocześnie cztery baterie z kolektora SUNMI L2Ks. W opakowaniu są zasilacz i przewód zasilający z wtyczką EU, więc ładowarka działa bez zasilacza terminala.\n\nObudowa jest z materiału trudnopalnego. Ładowarka ma inteligentne zarządzanie ładowaniem. Nie przyjmuje terminala ani baterii innych modeli SUNMI.\n\nPasuje do niej bateria 3,8 V / 5000 mAh [X09060403](/produkt/sunmi-x09060403).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1714,7 +1714,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Uchwyt spustowy SUNMI L2Ks — C14000159",
     "seoDescription": "Uchwyt pistoletowy ze spustem do SUNMI L2Ks. PN C14000159. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Uchwyt pistoletowy ze spustem do SUNMI L2Ks. Montaż bez śrub i szybkie zdejmowanie.",
-    "description": "Uchwyt pistoletowy ze spustem do SUNMI L2Ks. Montaż bez śrub i szybkie zdejmowanie.\n\nSpust uruchamia skanowanie kodów w SUNMI L2Ks. Uchwyt ułatwia częsty odczyt kodów podczas przyjęć, wydań i inwentaryzacji.\n\n## Zgodność i montaż\n\nUchwyt pasuje tylko do SUNMI L2Ks. Mocuje się bez śrub i szybko się zdejmuje. SUNMI L2Ks ma z tyłu 8 styków POGO do akcesoriów. Uchwyt nie pasuje do SUNMI L3. Do L3 służy osobny [uchwyt spustowy C14004144](/produkt/sunmi-c14004144).\n\n## Pokrewne akcesoria\n\nDo pracy bez uchwytu służy [pasek na dłoń C11000001](/produkt/sunmi-c11000001). Terminal ładuje [stacja ładująca C14004014](/produkt/sunmi-c14004014).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Uchwyt spustowy C14000159 zakłada się na kolektor SUNMI L2Ks bez śrub i równie szybko zdejmuje. Z tyłu L2Ks ma osiem styków POGO do akcesoriów, a spust uchwytu uruchamia skaner terminala.\n\nUchwyt przydaje się przy inwentaryzacji i przyjęciach z częstym skanowaniem.\n\nKody nadal odczytuje moduł skanujący terminala: SE4770 albo SS1111, zależnie od wersji. Do SUNMI L3 pasuje inny uchwyt, [C14004144](/produkt/sunmi-c14004144).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -1767,7 +1767,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI L2Ks — C14004014",
     "seoDescription": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L2Ks. PN C14004014. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L2Ks.",
-    "description": "Stacja ładująca (stacja dokująca) na jeden terminal SUNMI L2Ks.\n\nStacja ma jedno gniazdo na terminal SUNMI L2Ks. Terminal ładuje się po odłożeniu do stacji, np. przy stanowisku przyjęć lub wydań.\n\n## Zgodność\n\nStacja pasuje tylko do SUNMI L2Ks. Nie pasuje do L2H, L2s Pro ani L3. Stacje do tych modeli są na kartach ich akcesoriów.\n\n## Pokrewne akcesoria\n\nDo ładowania zapasowych baterii poza terminalem służy [ładowarka 4 baterii C14000157](/produkt/sunmi-c14000157). Zestaw ładowarki zawiera zasilacz i przewód EU. Do skanowania spustem służy [uchwyt spustowy C14000159](/produkt/sunmi-c14000159).\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Stacja ładująca C14004014 przyjmuje jeden kolektor SUNMI L2Ks. Stoi przy stanowisku przyjęć lub wydań, a terminal ładuje się w niej między kolejnymi dostawami.\n\nKolektory L2H, L2s Pro i L3 mają inne stacje.\n\nZapasowe baterie L2Ks ładuje się poza terminalem w ładowarce [C14000157](/produkt/sunmi-c14000157), która ma cztery gniazda i własny zasilacz.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1820,7 +1820,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja SUNMI L2H / L2s Pro z ładowaniem baterii — C14000144",
     "seoDescription": "Stacja dokująca ładuje jeden terminal SUNMI L2H lub L2s Pro i jedną baterię zapasową. PN C14000144. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja dokująca ładuje jeden terminal SUNMI L2H lub L2s Pro i jedną baterię zapasową. Zasilacz jest w zestawie.",
-    "description": "Stacja dokująca ładuje jeden terminal SUNMI L2H lub L2s Pro i jedną baterię zapasową. Zasilacz jest w zestawie.\n\nStacja ma gniazdo na terminal i osobne gniazdo na baterię zapasową. Oba elementy ładują się jednocześnie. Na kolejną zmianę jest gotowy terminal i druga bateria.\n\n## Zestaw i ograniczenia\n\nZestaw zawiera zasilacz. Stacja przyjmuje terminal bez etui. Przed włożeniem terminala trzeba zdjąć [etui ochronne C20000001](/produkt/sunmi-c20000001). Stacja pasuje do SUNMI L2H, L2s Pro i L2s.\n\n## Różnica względem stacji 4-stanowiskowej\n\n[Stacja 4-stanowiskowa C14004067](/produkt/sunmi-c14004067) ładuje cztery terminale, także w etui. Nie ma gniazda na baterię zapasową.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Stacja C14000144 ładuje jednocześnie kolektor SUNMI L2H lub L2s Pro oraz jedną baterię zapasową w osobnym gnieździe. Pasuje też do SUNMI L2s. Zasilacz jest w zestawie.\n\nTerminal w etui nie wejdzie do gniazda, więc [etui C20000001](/produkt/sunmi-c20000001) trzeba wcześniej zdjąć.\n\nCztery terminale naraz, także w etui, ładuje [stacja C14004067](/produkt/sunmi-c14004067). Ta stacja nie ma jednak gniazda na baterię.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1884,7 +1884,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja 4-stanowiskowa SUNMI L2H / L2s Pro — C14004067",
     "seoDescription": "Stacja dokująca na cztery terminale SUNMI L2H lub L2s Pro, w etui lub bez etui. PN C14004067. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja dokująca na cztery terminale SUNMI L2H lub L2s Pro, w etui lub bez etui. Zasilacz i przewody EU i UK są w zestawie.",
-    "description": "Stacja dokująca na cztery terminale SUNMI L2H lub L2s Pro, w etui lub bez etui. Zasilacz i przewody EU i UK są w zestawie.\n\nStacja ładuje do czterech terminali jednocześnie. Służy do przygotowania urządzeń całej zmiany w jednym miejscu.\n\n## Zestaw i zgodność\n\nZestaw zawiera zasilacz oraz przewody zasilające z wtyczką EU i UK. Terminal może być w [etui ochronnym C20000001](/produkt/sunmi-c20000001) lub bez etui. Etui nie trzeba zdejmować przed odłożeniem terminala. Stacja pasuje do SUNMI L2H, L2s Pro i L2s.\n\n## Różnica względem stacji z ładowaniem baterii\n\n[Stacja C14000144](/produkt/sunmi-c14000144) ładuje jeden terminal i jedną baterię zapasową. Wymaga terminala bez etui.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Stacja 4-stanowiskowa C14004067 ładuje jednocześnie cztery kolektory SUNMI L2H lub L2s Pro, a także SUNMI L2s. Terminal może stać w gnieździe z założonym etui, uchwytem spustowym albo paskiem na dłoń, więc po zmianie niczego się nie zdejmuje.\n\nZestaw zawiera zasilacz i przewody zasilające z wtyczką EU i UK.\n\nStacja nie ma gniazda na samą baterię. Baterię zapasową razem z terminalem ładuje [stacja C14000144](/produkt/sunmi-c14000144).\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -1946,7 +1946,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Etui ochronne SUNMI L2H / L2s Pro — C20000001",
     "seoDescription": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L2H i SUNMI L2s Pro. PN C20000001. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L2H i SUNMI L2s Pro. Pasuje także do SUNMI L2s.",
-    "description": "Gumowe etui ochronne (pokrowiec) na obudowę SUNMI L2H i SUNMI L2s Pro. Pasuje także do SUNMI L2s.\n\nEtui chroni obudowę terminala przed uderzeniami i zarysowaniami podczas pracy w magazynie i w dostawach.\n\n## Etui a stacje ładujące\n\nTerminal w etui ładuje się w [stacji 4-stanowiskowej C14004067](/produkt/sunmi-c14004067). Przed ładowaniem w [stacji C14000144](/produkt/sunmi-c14000144) etui trzeba zdjąć.\n\n## Pokrewne akcesoria\n\nEkran chroni osobne [szkło ochronne C20000003](/produkt/sunmi-c20000003). Do podtrzymywania terminala w dłoni służy [pasek na dłoń C20000026](/produkt/sunmi-c20000026). Etui pasuje do SUNMI L2H, L2s Pro i L2s.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Etui gumowe C20000001 chroni obudowę kolektora SUNMI L2H lub L2s Pro przed obiciami na rampie i w dostawach. Pasuje również do SUNMI L2s.\n\nPrzy ładowaniu w [stacji 4-stanowiskowej C14004067](/produkt/sunmi-c14004067) etui zostaje na terminalu. Stacja C14000144 z gniazdem na baterię przyjmuje terminal dopiero po zdjęciu etui.\n\nNa ekran 5,5 cala jest osobne szkło hartowane C20000003.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -2004,7 +2004,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI L2H / L2s Pro — C20000003",
     "seoDescription": "Szkło hartowane na ekran 5,5 cala SUNMI L2H i SUNMI L2s Pro. PN C20000003. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Szkło hartowane na ekran 5,5 cala SUNMI L2H i SUNMI L2s Pro. Pasuje także do SUNMI L2s.",
-    "description": "Szkło hartowane na ekran 5,5 cala SUNMI L2H i SUNMI L2s Pro. Pasuje także do SUNMI L2s.\n\nSzkło ochronne (szkło hartowane) zakłada się na ekran terminala. Chroni ekran dotykowy 5,5 cala przed zarysowaniami i codziennym zużyciem.\n\n## Zgodność\n\nSzkło pasuje do SUNMI L2H, L2s Pro i L2s. Nie pasuje do L2Ks z ekranem 4 cale ani do L3 z ekranem 6,75 cala.\n\n## Pokrewne akcesoria\n\nSzkło chroni tylko ekran. Obudowę chroni [etui ochronne C20000001](/produkt/sunmi-c20000001). Oba elementy można stosować razem. Terminal w etui ładuje [stacja 4-stanowiskowa C14004067](/produkt/sunmi-c14004067).\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Szkło hartowane C20000003 na ekran 5,5 cala pasuje do kolektorów SUNMI L2H, L2s Pro i L2s. Przejmuje zarysowania, które inaczej trafiłyby na ekran dotykowy terminala.\n\nL2Ks ma ekran 4 cale, a L3 6,75 cala, dlatego do nich są inne szkła.\n\nSzkło i gumowe [etui C20000001](/produkt/sunmi-c20000001) można założyć jednocześnie. Terminal z nimi ładuje się w stacji 4-stanowiskowej C14004067.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -2061,7 +2061,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI L2H / L2s Pro — C20000026",
     "seoDescription": "Zapasowy pasek na dłoń do SUNMI L2H i SUNMI L2s Pro. PN C20000026. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Zapasowy pasek na dłoń do SUNMI L2H i SUNMI L2s Pro. Jeden pasek jest w zestawie terminala.",
-    "description": "Zapasowy pasek na dłoń do SUNMI L2H i SUNMI L2s Pro. Jeden pasek jest w zestawie terminala.\n\nPasek mocuje się z tyłu terminala. Podtrzymuje terminal w dłoni podczas pisania na ekranie i skanowania kodów.\n\n## Zestaw terminala\n\nSUNMI L2H i L2s Pro mają jeden pasek na dłoń w zestawie. Ten PN to pasek zapasowy lub wymienny, np. po zużyciu paska. Pasek pasuje także do SUNMI L2s.\n\n## Pokrewne akcesoria\n\nObudowę chroni [etui ochronne C20000001](/produkt/sunmi-c20000001). Ekran chroni [szkło ochronne C20000003](/produkt/sunmi-c20000003). Paski do L2Ks i L3 to osobne produkty.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Pasek na dłoń C20000026 do SUNMI L2H i L2s Pro to część zapasowa: jeden taki pasek jest już w zestawie terminala. Kupuje się go na wymianę po zużyciu albo do terminala, który stracił pasek. Nadaje się też do SUNMI L2s.\n\nPasek zostaje na terminalu podczas ładowania w stacji 4-stanowiskowej [C14004067](/produkt/sunmi-c14004067).\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -2115,7 +2115,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stacja ładująca SUNMI V3 / V3H — C14004112",
     "seoDescription": "Stacja ładująca (stacja dokująca) na jeden terminal POS SUNMI V3 lub V3H. PN C14004112. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Stacja ładująca (stacja dokująca) na jeden terminal POS SUNMI V3 lub V3H. Ma złącza USB-C i USB-A.",
-    "description": "Stacja ładująca (stacja dokująca) na jeden terminal POS SUNMI V3 lub V3H. Ma złącza USB-C i USB-A.\n\nStacja ma jedno gniazdo na terminal SUNMI V3 lub V3H z drukarką 58 mm. Terminal ładuje się po odłożeniu do stacji, np. przy ladzie lub przy stanowisku kelnerskim.\n\n## Złącza i ograniczenia\n\nStacja ma złącza USB-C i USB-A. Stacja przyjmuje terminal bez etui. [Etui ochronne C20000095](/produkt/sunmi-c20000095) trzeba zdjąć przed odłożeniem terminala.\n\n## Zgodność\n\nStacja pasuje do SUNMI V3 i V3H. Do V3 Plus pasuje [pasek na dłoń C20000086](/produkt/sunmi-c20000086). Ekran V3 i V3H chroni [szkło ochronne C20000060](/produkt/sunmi-c20000060).\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Stacja ładująca C14004112 ma jedno gniazdo na terminal POS SUNMI V3 lub V3H z drukarką 58 mm. Ma złącza USB-C i USB-A. Stawia się ją przy ladzie albo na stanowisku kelnerskim, gdzie terminal czeka między zamówieniami.\n\nTerminal wkłada się do stacji bez etui. Z założonym [etui C20000095](/produkt/sunmi-c20000095) nie zmieści się w gnieździe.\n\nSUNMI V3 Plus ma szerszą obudowę z drukarką 80 mm i do tej stacji nie jest przeznaczony.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -2177,7 +2177,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Szkło ochronne SUNMI V3 / V3H — C20000060",
     "seoDescription": "Szkło hartowane na ekran 6,75 cala SUNMI V3 i SUNMI V3H. PN C20000060. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Szkło hartowane na ekran 6,75 cala SUNMI V3 i SUNMI V3H.",
-    "description": "Szkło hartowane na ekran 6,75 cala SUNMI V3 i SUNMI V3H.\n\nSzkło ochronne (szkło hartowane) zakłada się na ekran terminala POS. Chroni ekran dotykowy przed zarysowaniami przy codziennej obsłudze zamówień.\n\n## Zgodność\n\nSzkło pasuje do ekranów SUNMI V3 i V3H. Oba modele mają ekran 6,75 cala. Szkło nie chroni obudowy ani drukarki terminala.\n\n## Pokrewne akcesoria\n\nSzkło chroni tylko ekran. Obudowę chroni [etui ochronne C20000095](/produkt/sunmi-c20000095). Do podtrzymywania terminala w dłoni służy [pasek na dłoń C20000086](/produkt/sunmi-c20000086). Terminal ładuje [stacja ładująca C14004112](/produkt/sunmi-c14004112).\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Szkło hartowane C20000060 zakrywa ekran 6,75 cala terminali POS SUNMI V3 i V3H. Chroni przed zarysowaniami ekran dotykowy, na którym kelner przyjmuje zamówienia.\n\nSzkło chroni wyłącznie ekran. Obudowę i drukarkę zostawia odkryte.\n\nObudowę chroni [etui C20000095](/produkt/sunmi-c20000095). Terminal w tym etui wyjmuje się z niego przed odłożeniem do stacji C14004112.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-terminali"
@@ -2234,7 +2234,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Pasek na dłoń SUNMI V3 / V3H / V3 Plus — C20000086",
     "seoDescription": "Pasek na dłoń do terminali POS SUNMI V3, V3H i V3 Plus. PN C20000086. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Pasek na dłoń do terminali POS SUNMI V3, V3H i V3 Plus. Pasek jest antypoślizgowy i dopasowany do dłoni.",
-    "description": "Pasek na dłoń do terminali POS SUNMI V3, V3H i V3 Plus. Pasek jest antypoślizgowy i dopasowany do dłoni.\n\nPasek mocuje się z tyłu terminala. Podtrzymuje terminal w dłoni podczas przyjmowania zamówień i drukowania paragonów przy kliencie.\n\n## Zgodność\n\nTo jedyne akcesorium w tej ofercie wspólne dla SUNMI V3, V3H i V3 Plus.\n\n## Pokrewne akcesoria\n\nDo V3 i V3H są też [stacja ładująca C14004112](/produkt/sunmi-c14004112), [etui ochronne C20000095](/produkt/sunmi-c20000095) i [szkło ochronne C20000060](/produkt/sunmi-c20000060). Te trzy elementy pasują do V3 i V3H.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus).",
+    "description": "Pasek na dłoń C20000086 pasuje do trzech terminali POS: SUNMI V3, V3H i V3 Plus. Ma antypoślizgową powierzchnię i kształt dopasowany do dłoni. Przy terminalu z drukarką, który waży od 419 do 500 g, ułatwia to trzymanie jedną ręką przy wydruku paragonu.\n\nW tej ofercie to jedyne akcesorium wspólne dla całej rodziny V3. Stacja ładująca [C14004112](/produkt/sunmi-c14004112) i etui C20000095 pasują tylko do V3 i V3H.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h), [SUNMI V3 Plus](/produkt/sunmi-v3-plus).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -2289,7 +2289,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Etui ochronne SUNMI V3 / V3H — C20000095",
     "seoDescription": "Etui ochronne (pokrowiec) na obudowę terminali POS SUNMI V3 i SUNMI V3H. PN C20000095. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Etui ochronne (pokrowiec) na obudowę terminali POS SUNMI V3 i SUNMI V3H.",
-    "description": "Etui ochronne (pokrowiec) na obudowę terminali POS SUNMI V3 i SUNMI V3H.\n\nEtui chroni obudowę terminala przed uderzeniami i zarysowaniami przy codziennej pracy w lokalu, sklepie i w dostawach.\n\n## Etui a stacja ładująca\n\nTerminal w etui nie pasuje do [stacji ładującej C14004112](/produkt/sunmi-c14004112). Przed odłożeniem terminala do stacji etui trzeba zdjąć.\n\n## Zgodność\n\nEtui pasuje do SUNMI V3 i V3H z drukarką 58 mm. Nie pasuje do V3 Plus, który ma szerszą obudowę i drukarkę 80 mm. Ekran chroni [szkło ochronne C20000060](/produkt/sunmi-c20000060).\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Etui C20000095 chroni obudowę terminali POS SUNMI V3 i V3H przed obiciami w lokalu i w dostawach.\n\nMa jedno ograniczenie: terminal w etui nie wchodzi do stacji ładującej [C14004112](/produkt/sunmi-c14004112), więc przed ładowaniem w stacji etui się zdejmuje.\n\nNa SUNMI V3 Plus etui nie pasuje, bo ten model ma szerszą obudowę i drukarkę 80 mm.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -2347,7 +2347,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Bateria SUNMI L3 — X09060609",
     "seoDescription": "Bateria zapasowa SUNMI L3, Li-ion 4,4 V, 5000 mAh. Bateria do terminala SUNMI L3. PN X09060609. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Bateria zapasowa SUNMI L3, 4,4 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
-    "description": "Bateria zapasowa SUNMI L3, 4,4 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060609 zastępuje baterię wyjętą z terminala SUNMI L3. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Wymiana i ładowanie\n\nWymiana baterii hot swap bez wyłączania terminala zależy od PN. Mają ją SUNMI L3 P09070015, P09070073, P09070030, P09070036 i P09070052. W P09070072 wyłącz terminal przed wymianą baterii. Baterię poza terminalem ładuje [ładowarka 4 baterii C14004143](/produkt/sunmi-c14004143).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
+    "description": "Bateria zapasowa X09060609 do kolektora SUNMI L3 ma napięcie 4,4 V i pojemność 5000 mAh. Jedno naładowanie wystarcza na maksymalnie 10 godzin ciągłej pracy, a bateria wytrzymuje ponad 800 cykli ładowania.\n\nW pięciu z sześciu oferowanych konfiguracji L3 baterię wymienia się bez wyłączania terminala (hot swap). Wersję P09070072 przed wymianą trzeba wyłączyć.\n\nPoza terminalem baterię ładuje ładowarka 4 baterii [C14004143](/produkt/sunmi-c14004143).\n\n## Zgodne terminale\n\n[SUNMI L3](/produkt/sunmi-l3).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
@@ -2402,7 +2402,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Bateria SUNMI L2Ks — X09060403",
     "seoDescription": "Bateria zapasowa SUNMI L2Ks, Li-ion 3,8 V, 5000 mAh. Bateria do terminala z klawiaturą SUNMI L2Ks. PN X09060403. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Bateria zapasowa SUNMI L2Ks, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
-    "description": "Bateria zapasowa SUNMI L2Ks, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060403 zastępuje wymienną baterię terminala SUNMI L2Ks. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Ładowanie\n\nBaterię poza terminalem ładuje [ładowarka 4 baterii C14000157](/produkt/sunmi-c14000157). Ładowarka ma cztery gniazda. Zasilacz i przewód zasilający EU są w zestawie ładowarki.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
+    "description": "Bateria X09060403 do kolektora SUNMI L2Ks ma napięcie 3,8 V i pojemność 5000 mAh. Ogniwo ATL wytrzymuje około 800 cykli ładowania i starcza najwyżej na dwie zmiany pracy.\n\nZapasowe baterie ładuje ładowarka [C14000157](/produkt/sunmi-c14000157) z czterema gniazdami. Zasilacz i przewód EU są w jej zestawie, więc ładowarka nie zabiera zasilacza terminala.\n\n## Zgodne terminale\n\n[SUNMI L2Ks](/produkt/sunmi-l2ks).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
@@ -2457,7 +2457,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Bateria SUNMI L2H / L2s Pro — X09060578",
     "seoDescription": "Bateria zapasowa SUNMI L2H i SUNMI L2s Pro, Li-ion 3,8 V, 5000 mAh. PN X09060578. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Bateria zapasowa SUNMI L2H i L2s Pro, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.",
-    "description": "Bateria zapasowa SUNMI L2H i L2s Pro, 3,8 V, 5000 mAh. Druga bateria pozwala kontynuować pracę po rozładowaniu pierwszej.\n\nBateria SUNMI X09060578 zastępuje wymienną baterię terminala SUNMI L2H lub L2s Pro. Naładowana bateria zapasowa skraca przerwę w pracy na zmianie.\n\n## Ładowanie\n\n[Stacja C14000144](/produkt/sunmi-c14000144) ładuje jednocześnie terminal i jedną baterię zapasową. [Stacja 4-stanowiskowa C14004067](/produkt/sunmi-c14004067) ładuje terminale, ale nie ma gniazda na osobną baterię.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "description": "Bateria X09060578 o napięciu 3,8 V i pojemności 5000 mAh pasuje do kolektorów SUNMI L2H i L2s Pro, a także do SUNMI L2s. W L2H działa obok wbudowanej baterii pomocniczej 60 mAh, której się nie wymienia.\n\nZapasową baterię ładuje osobne gniazdo w [stacji C14000144](/produkt/sunmi-c14000144), razem z terminalem. Stacja 4-stanowiskowa C14004067 takiego gniazda nie ma.\n\n## Zgodne terminale\n\n[SUNMI L2H](/produkt/sunmi-l2h), [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
@@ -2513,7 +2513,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Bateria SUNMI V3 / V3H — X09050774",
     "seoDescription": "Bateria zapasowa SUNMI V3 i SUNMI V3H. Bateria do terminala POS z drukarką SUNMI V3 lub V3H. PN X09050774. Cena netto i dostępność w TAKMA.",
     "shortDescription": "Bateria zapasowa SUNMI V3 i V3H. Druga bateria pozwala kontynuować obsługę klientów po rozładowaniu pierwszej.",
-    "description": "Bateria zapasowa SUNMI V3 i V3H. Druga bateria pozwala kontynuować obsługę klientów po rozładowaniu pierwszej.\n\nBateria SUNMI X09050774 zastępuje wymienną baterię terminala SUNMI V3 lub V3H. Naładowana bateria zapasowa skraca przerwę w obsłudze klientów.\n\n## Zgodność i ładowanie\n\nBateria pasuje do SUNMI V3 i V3H. Bateria ładuje się w terminalu, np. po odłożeniu go do [stacji ładującej C14004112](/produkt/sunmi-c14004112). Stacja przyjmuje terminal bez etui.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
+    "description": "Bateria X09050774 zasila terminale POS SUNMI V3 i V3H z drukarką 58 mm. Ma napięcie 7,7 V, czyli około dwa razy wyższe niż baterie kolektorów SUNMI L2.\n\nW ofercie nie ma osobnej ładowarki do tych baterii. Bateria ładuje się w terminalu, przez USB-C albo w [stacji ładującej C14004112](/produkt/sunmi-c14004112), do której terminal wkłada się bez etui.\n\nDruga bateria przydaje się, gdy terminal drukuje paragony przez całą zmianę z dala od stacji.\n\n## Zgodne terminale\n\n[SUNMI V3](/produkt/sunmi-v3), [SUNMI V3H](/produkt/sunmi-v3h).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
