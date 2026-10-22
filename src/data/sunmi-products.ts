@@ -1943,6 +1943,17 @@ export const sunmiProducts: Product[] = [
         "size": "2,4 MB"
       }
     ],
+    "videos": [
+      {
+        "url": "https://h9ytuea70wxpopwc.public.blob.vercel-storage.com/video/sunmi-t3-80mm-rozpakowanie.mp4",
+        "title": "Rozpakowanie i pierwsze uruchomienie · 3:59",
+        "native": true,
+        "poster": "/images/products/sunmi-t3-80mm-rozpakowanie-poster.webp",
+        "captions": "/video/napisy/sunmi-t3-80mm-rozpakowanie-pl.vtt",
+        "published": "2026-10-22",
+        "duration": "PT3M59S"
+      }
+    ],
     "faq": [
       {
         "question": "Czy SUNMI T3 80 mm jest kasą fiskalną?",
