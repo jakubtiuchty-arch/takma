@@ -45,7 +45,11 @@ PN KC4010B-00101CP0-A6: karta katalogowa podaje jedną pamięć (6/64 GB) i kame
 
 ## Zdjęcia
 
-- KC401: zdjęcie zastępcze `/images/products/placeholder.svg` do czasu otrzymania zdjęć od właściciela (biblioteka mediów Zebra wymaga logowania — nie logowano się). Na stronie zebra.com/pl są publiczne rendery 3600 px (`web-production-photography/web009/kc401-*-3600.jpg`, m.in. przód pionowo i poziomo, ze skanerem); w repo są też `kc401_portrait.png` i `kc401_landscape.png` z poradnika. Nie użyto, zgodnie z briefem.
+- KC401 (decyzja głównej sesji, krok 5): publiczne rendery Zebra 3600 × 2400 na białym tle ze strony produktu zebra.com/pl, `https://www.zebra.com/content/dam/zebra_dam/global/zcom-web-production/web-production-photography/web009/`. Bez logowania. Tło czysto białe (255,255,255), więc bez wycinania: przycięcie (fuzz 3%), dłuższy bok 994 px (82,8%, tak jak SUNMI FLEX 3 P11050020 i D3 MINI P01260026 — oba 994 px), płótno 1200 × 1200.
+  - `KC4010B-00101CP0-A6.png` — przód, pionowo (`kc401-portrait-…-front`), zdjęcie główne;
+  - `-2` przód, poziomo (`kc401-landscape-…-front`); `-3` ze skanerem, poziomo, przód z lewej (`kc401-scanner-landscape-…-front-left`); `-4` ze skanerem, poziomo, przód z prawej (`…-front-right`); `-5` ze skanerem, pionowo, przód (`kc401-scanner-portrait-…-front`); `-6` tył z prawej, poziomo (`kc401-photography-website-back-right-landscape`); `-7` tył z prawej, pionowo (`…-back-right`); `-8` ze skanerem, tył z lewej, pionowo (`…-back-left-scanner`).
+  - Pominięty 9. render (`kc401-scanner-landscape-…-back-left`) — prawie ten sam kadr co `-6`.
+  - Mapy dims/frames/uniform-bounds: 8 wpisów ręcznie.
 - Akcesoria — kolejność źródeł: (1) przewodnik: obrazy 108–246 px → za małe; (2) zebra.com `photography/product/0023/{pn}-photography-product-accessories.png`: tylko KT-152096-03 i KT-152097-03, 320 × 320 px → za małe; (3) BarcodeFactory `images/product/large/{pn}.png`: rendery Zebra 2048 × 2048.
   - Użyte (BarcodeFactory): KC401-SCNR-SR0, -SR1, -SR2 (moduł + widok z boku z polem skanowania), KT-152097-03 (z rysunkiem montażu zasilacza), KT-152097-04 (ze śrubami). Obróbka: `magick` — spłaszczenie na białe tło, przycięcie (fuzz 2%), dłuższy bok 996 px (83%), płótno 1200 × 1200 jak akcesoria SUNMI w tej podkategorii (C14004105: 84%). Mapy dims/frames/uniform-bounds dopisane ręcznie (5 wpisów), bez `generate-image-dims.mjs`.
   - Zdjęcie zastępcze: PWR-BGA12V36W0WW (BarcodeFactory 404, brak w DAM Zebra), KT-152096-03 (tylko 320 px).
@@ -88,12 +92,20 @@ Po pierwszym buildzie kafle Zebra w `/akcesoria-do-kioskow` miały pole kwadrato
   - `/produkt/zebra-kc401` 200 bez przekierowania, canonical na siebie, JSON-LD `Product` (model „KC401”, kategoria „Kioski samoobsługowe”, MPN/SKU KC4010B-00101CP0-A6, marka Zebra), `BreadcrumbList`, `WebPage`, `FAQPage`; `offers` brak lokalnie (błąd bazy stanów, jak przy FLEX 3); akcesoria: 4 w pierwszym rzędzie i „Pokaż pozostałe (5)”; PDF karty katalogowej 200 (225 405 B) i przewodnika 200 (401 164 B);
   - 7 nowych kart akcesoriów, 450042 i BRKT-DPA-SK1-01: 200; galeria SR1 584 × 584, produkt ok. 387 px — jak C14004105 (386 px);
   - telefon 390 px: bez poziomego przewijania na karcie KC401, karcie SR1, kategorii i podkategorii;
-  - sitemap: 8 nowych adresów; feed: KC401-SCNR-SR0/1/2 i KT-152097-03 z kategorią i zdjęciem; KC401 poza feedem do czasu zdjęcia rastrowego (zdjęcie zastępcze).
+  - sitemap: 8 nowych adresów; feed: KC401-SCNR-SR0/1/2 i KT-152097-03 z kategorią i zdjęciem; KC401 po dodaniu zdjęć — wynik w sekcji „Krok 5”.
+
+## Krok 5 — zdjęcia KC401, wynik (22.10.2026)
+
+- `npm run build` przechodzi, `npx tsc --noEmit` 0 błędów, `check-product-images` przechodzi.
+- `next start -p 3139`: `/produkt/zebra-kc401` 200 bez przekierowania, JSON-LD `image` z 8 adresami; 8 plików `KC4010B-00101CP0-A6*.png` 200; feed: `KC4010B-00101CP0-A6`, „Kiosk samoobsługowy Zebra KC401”, kategoria 543648, in_stock; 450042 w feedzie (in_stock); poradnik KC401 ma 1 link do karty.
+- Galeria 584 × 584: KC401 skala 1,014, SUNMI FLEX 3 P11050020 skala 1,015 — ten sam rozmiar produktu. Kafel w `/kioski-samoobslugowe`: oba 299 × 224, skala 0,869 (KC401) i 0,870 (FLEX 3).
 
 ## Otwarte
 
-- Zdjęcia KC401 (krok 5) — czekają na ścieżkę od właściciela.
 - Rozpisanie PN KC4010B-00101CP0-A6 (GMS, region) potwierdzić u dystrybutora; inne konfiguracje KC401 niedostępne w API.
 - Zdjęcia PWR-BGA12V36W0WW i KT-152096-03 w rozdzielczości ≥ 1000 px (zastępcze na kartach).
 - KT-152098-03 (cienki uchwyt ścienny) dodać, gdy pojawi się w `/api/stock`.
-- Poradnik `/poradnik/zebra-kc401-kiosk-samoobslugowy` (guides.ts) nie linkuje do nowej karty; nie sprawdzano jego zgodności z kartą katalogową (poza zakresem briefu).
+- Poradnik `/poradnik/zebra-kc401-kiosk-samoobslugowy`: dodany jeden link do karty (pierwsze „Zebra KC401” w podsumowaniu). Treści nie zmieniano. Rozbieżności z kartą katalogową do decyzji:
+  - SPRZECZNE: jasność „350 nitów” (karta: 300); „3 mikrofony” (karta: two microphones); FAQ „Obsługa płatności wymaga odpowiedniej umowy serwisowej Zebra” (karta: umowa OneCare dotyczy LifeGuard; przy płatnościach przypis „Unattended SoftPOS not supported”).
+  - NIEPRECYZYJNE: paski LED „dowolnym kolorem” (karta: kombinacja czerwony/niebieski/zielony); „skaner montuje się pod jednym z trzech kątów” (to trzy osobne moduły SR0/SR1/SR2); brak informacji, że SoftPOS bez obsługi personelu nie jest obsługiwany.
+- Karta 450042: `availability` ustawione na `available` (`/api/stock` 22.10.2026: DE 300). Statyczne `priceFrom` 43,16 zł zostaje (API: 42,68 zł); logiki cen nie zmieniano.

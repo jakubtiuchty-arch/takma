@@ -15362,7 +15362,7 @@ export const guides: Guide[] = [
 <p><strong>KC401 — poziom</strong><br/>montaż VESA, przód i tył z uchwytem</p>
 </div>
 </div>
-<p><strong>Zebra KC401</strong> to <strong>10-calowy kiosk samoobsługowy z systemem Android</strong>, zaprojektowany tak, aby przenieść część obsługi na samych klientów i pracowników pierwszej linii — od sprawdzania cen i dostępności towaru, przez meldowanie gości, po płatności zbliżeniowe i kontrolę dostępu. Urządzenie działa w orientacji pionowej lub poziomej, montuje się je na ścianie, słupku, ladzie lub w istniejącej szafce, a intuicyjny interfejs prowadzi użytkownika krok po kroku.</p>
+<p><a href="/produkt/zebra-kc401"><strong>Zebra KC401</strong></a> to <strong>10-calowy kiosk samoobsługowy z systemem Android</strong>, zaprojektowany tak, aby przenieść część obsługi na samych klientów i pracowników pierwszej linii — od sprawdzania cen i dostępności towaru, przez meldowanie gości, po płatności zbliżeniowe i kontrolę dostępu. Urządzenie działa w orientacji pionowej lub poziomej, montuje się je na ścianie, słupku, ladzie lub w istniejącej szafce, a intuicyjny interfejs prowadzi użytkownika krok po kroku.</p>
 <p>Najważniejsze z perspektywy firm, które już mają kioski: KC401 to <strong>bezpośredni następca modelu CC6000</strong> — można go zamontować w tej samej obudowie i na tych samych uchwytach, bez przebudowy stanowiska.</p>`,
     },
     {

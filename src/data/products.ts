@@ -78426,7 +78426,7 @@ const et6xAccessories: Product[] = [
     description: "Przewód sieciowy do zasilacza Zebra, wariant wtyczki: Europa. Dobierz do gniazda sieciowego w miejscu użytkowania.\n\n## Zgodne akcesoria\n\n- Przewód nie jest zasilaczem.\n- Służy do podłączenia [Zasilacz USB-C 45 W Zebra ET65 (PWR-BGA15V45W-UC2-WW)](/produkt/zebra-charger-usbc-45w-et6x) lub [Zasilacz sieciowy do stacji pojazdowej Zebra ET65 (450020)](/produkt/zebra-dock-power-supply-et6x) do europejskiego gniazda sieciowego.\n\n## Zasilacz kiosku Zebra KC401\n\n- Przewód łączy [zasilacz Zebra 36 W PWR-BGA12V36W0WW](/produkt/zebra-zasilacz-36w-pwr-bga12v36w0ww) kiosku [Zebra KC401](/produkt/zebra-kc401) z europejskim gniazdem sieciowym.\n- Przewód jest uziemiony i ma wtyk C5. Zasilacz kiosku nie ma przewodu w zestawie.",
     categoryId: 'akcesoria', manufacturerId: 'zebra', priceFrom: 43.16,
     images: ['/images/products/450042-et6x-card-quality-v3.png'], imageDescriptions: ['Zdjęcie poglądowe przewodu sieciowego Zebra; wariant wtyczki zgodny z nazwą produktu'],
-    tags: [], availability: 'unavailable', isNew: false, isBestseller: false,
+    tags: [], availability: 'available', isNew: false, isBestseller: false,
     specifications: [{ name: 'Part Number', value: '450042' }, { name: 'Typ', value: 'Przewód sieciowy, uziemiony, wtyk C5, wtyczka EU' }, { name: 'Zgodność', value: 'Zasilacze Zebra: PWR-BGA12V36W0WW (kiosk Zebra KC401), PWR-BGA15V45W-UC2-WW i 450020 (Zebra ET65)' }],
     applications: ['Akcesoria do tabletów Zebra ET65', 'Zasilacz kiosku Zebra KC401'],
     compatibleAccessories: [], downloads: [], updatedAt: '2026-10-03', createdAt: '2026-10-02',

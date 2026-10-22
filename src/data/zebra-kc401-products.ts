@@ -20,10 +20,24 @@ export const zebraKc401Products: Product[] = [
     "priceFrom": 5478.63,
     "availability": "available",
     "images": [
-      "/images/products/placeholder.svg"
+      "/images/products/KC4010B-00101CP0-A6.png",
+      "/images/products/KC4010B-00101CP0-A6-2.png",
+      "/images/products/KC4010B-00101CP0-A6-3.png",
+      "/images/products/KC4010B-00101CP0-A6-4.png",
+      "/images/products/KC4010B-00101CP0-A6-5.png",
+      "/images/products/KC4010B-00101CP0-A6-6.png",
+      "/images/products/KC4010B-00101CP0-A6-7.png",
+      "/images/products/KC4010B-00101CP0-A6-8.png"
     ],
     "imageDescriptions": [
-      "Zebra KC401 — brak zdjęcia urządzenia"
+      "Zebra KC401 — widok z przodu w orientacji pionowej: ekran dotykowy i zielone paski LED nad i pod ekranem",
+      "Zebra KC401 — widok z przodu w orientacji poziomej: ekran dotykowy i zielone paski LED po bokach ekranu",
+      "Zebra KC401 z modułem skanera SR500 — widok z przodu z lewej strony, orientacja pozioma, moduł pod dolną krawędzią",
+      "Zebra KC401 z modułem skanera SR500 — widok z przodu z prawej strony, orientacja pozioma",
+      "Zebra KC401 z modułem skanera SR500 — widok z przodu w orientacji pionowej, moduł pod dolną krawędzią",
+      "Zebra KC401 — widok z tyłu z prawej strony, orientacja pozioma: logo Zebra, tabliczka znamionowa i elementy mocowania",
+      "Zebra KC401 — widok z tyłu z prawej strony, orientacja pionowa: logo Zebra i elementy mocowania",
+      "Zebra KC401 z modułem skanera SR500 — widok z tyłu z lewej strony, orientacja pionowa"
     ],
     "tags": [
       "retail",
