@@ -2699,7 +2699,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Przyciski",
-        "value": "Przycisk zasilania (blokada ekranu) z niebieską diodą zasilania"
+        "value": "Przycisk zasilania (blokada ekranu)"
+      },
+      {
+        "name": "Dioda",
+        "value": "Niebieska dioda zasilania"
       },
       {
         "name": "Ekran klienta (opcja)",
