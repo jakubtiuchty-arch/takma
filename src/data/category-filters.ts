@@ -1976,9 +1976,15 @@ categoryFilters['akcesoria-do-ekranow-kds'] = [
   ] }
 ]
 
-// Kioski: jedna karta SUNMI FLEX 3 z czterema rozmiarami jako wariantami, więc przekątna i pamięć czytają wiersze specyfikacji.
+// Kioski: karta SUNMI FLEX 3 z czterema rozmiarami jako wariantami i karta Zebra KC401, więc przekątna
+// i pamięć czytają wiersze specyfikacji.
 categoryFilters['kioski-samoobslugowe'] = [
+  { specKey: 'producent', label: 'Producent', derived: [
+    { value: 'SUNMI', manufacturer: 'sunmi' },
+    { value: 'Zebra', manufacturer: 'zebra' }
+  ] },
   { specKey: 'przekatna-kiosk', label: 'Przekątna ekranu', derived: [
+    { value: '10,1"', pattern: '^10,1"', specs: ['Ekran'] },
     { value: '15,6"', pattern: '15,6"', specs: ['Ekran'] },
     { value: '18,5"', pattern: '18,5"', specs: ['Ekran'] },
     { value: '21,5" (22")', pattern: '21,5"', specs: ['Ekran'] },
@@ -1986,6 +1992,7 @@ categoryFilters['kioski-samoobslugowe'] = [
   ] },
   { specKey: 'pamiec-kiosk', label: 'Pamięć', derived: [
     { value: '4 GB RAM / 64 GB', pattern: '4 GB RAM / 64 GB', specs: ['Pamięć'] },
+    { value: '6 GB RAM / 64 GB', pattern: '6 GB RAM / 64 GB', specs: ['Pamięć'] },
     { value: '6 GB RAM / 128 GB', pattern: '6 GB RAM / 128 GB', specs: ['Pamięć'] }
   ] },
   { specKey: 'cena-kiosk', label: 'Cena netto', derived: [
@@ -2075,9 +2082,10 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Rodzaj akcesorium": "Wyposażenie ekranu KDS SUNMI FLEX 3.\n• Moduł PoE — zasilanie przez przewód sieciowy w wersjach 18,5\" i 22\".\n• Ramię VESA i stojak — mocowanie ekranu przez VESA 100 × 100."
   },
   "kioski-samoobslugowe": {
-    "Przekątna ekranu": "Przekątna ekranu SUNMI FLEX 3. Każdy rozmiar ma własny PN na karcie produktu.\n• 15,6\" — 250 nitów, 4 GB RAM i 64 GB pamięci.\n• 18,5\", 21,5\" (22\") i 27\" — ekran IPS 400 nitów, 6 GB RAM i 128 GB pamięci, czytnik linii papilarnych.",
-    "Pamięć": "Pamięć operacyjna i pamięć na dane SUNMI FLEX 3.\n• 4 GB RAM / 64 GB — wersja 15,6\".\n• 6 GB RAM / 128 GB — wersje 18,5\", 22\" i 27\".",
-    "Cena netto": "Cena netto najtańszego rozmiaru. Ceny pozostałych rozmiarów podaje tabela wersji na karcie produktu. Stojaki i moduły kupuje się osobno."
+    "Przekątna ekranu": "Przekątna ekranu kiosku. Każdy rozmiar SUNMI FLEX 3 ma własny PN na karcie produktu.\n• 10,1\" — Zebra KC401: WXGA 1280 × 800 px, 300 nitów, 6 GB RAM i 64 GB pamięci.\n• 15,6\" — SUNMI FLEX 3: 250 nitów, 4 GB RAM i 64 GB pamięci.\n• 18,5\", 21,5\" (22\") i 27\" — SUNMI FLEX 3: ekran IPS 400 nitów, 6 GB RAM i 128 GB pamięci, czytnik linii papilarnych.",
+    "Pamięć": "Pamięć operacyjna i pamięć na dane.\n• 6 GB RAM / 64 GB — Zebra KC401, z gniazdem microSD do 2 TB.\n• 4 GB RAM / 64 GB — SUNMI FLEX 3 15,6\".\n• 6 GB RAM / 128 GB — SUNMI FLEX 3 18,5\", 22\" i 27\".",
+    "Producent": "Producent kiosku.\n• SUNMI — FLEX 3 w czterech rozmiarach, od 15,6\" do 27\", ze stojakami podłogowymi i na ladę.\n• Zebra — KC401 z ekranem 10,1\", następca CC600 i CC6000, z modułem skanera i uchwytami VESA.",
+    "Cena netto": "Cena netto kiosku; przy SUNMI FLEX 3 cena najtańszego rozmiaru. Ceny pozostałych rozmiarów podaje tabela wersji na karcie produktu. Stojaki, uchwyty, moduły i zasilacze kupuje się osobno."
   },
   "akcesoria-do-kioskow": {
     "Rodzaj akcesorium": "Wyposażenie kiosku.\n• Stojak podłogowy i stojak na ladę — ustawiają ekran SUNMI FLEX 3; stojaki Retail i Restaurant mają drukarkę w zestawie.\n• Moduł, kamera i uchwyt POS — odczyt kart i kodów, sygnalizacja stanu, rozpoznawanie twarzy i terminal płatniczy przy ekranie SUNMI FLEX 3.\n• Moduł skanera — skaner SR500 do Zebra KC401 z kątem skanowania +25°, 0° lub −25°.\n• Uchwyt — montaż Zebra KC401 na ścianie, na słupie albo z drukarką w stanowisku PrintKiosk.\n• Zasilanie — zasilacz 36 W i przewód sieciowy C5 do Zebra KC401.",

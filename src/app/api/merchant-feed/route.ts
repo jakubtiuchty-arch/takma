@@ -110,7 +110,7 @@ interface StockRow {
 }
 
 /** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet,
- *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS i kioski z tej samej linii SUNMI). */
+ *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS i kioski samoobsługowe SUNMI i Zebra). */
 const GOOGLE_CATEGORY: Record<string, string> = {
   'drukarki-etykiet': '952',
   'komputery-pos': '543648',
