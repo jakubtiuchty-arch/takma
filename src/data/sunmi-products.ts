@@ -1620,6 +1620,353 @@ export const sunmiProducts: Product[] = [
     ],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-t3",
+    "slug": "sunmi-t3",
+    "name": "SUNMI T3",
+    "seoH1": "SUNMI T3",
+    "seoTitle": "Komputer POS SUNMI T3 15,6\", Android 13, NFC",
+    "seoDescription": "Komputer POS SUNMI T3 z ekranem dotykowym 15,6\", Androidem 13 i NFC. Dotykowy terminal stacjonarny POS SUNMI T3 bez drukarki. PN: P01280007.",
+    "shortDescription": "SUNMI T3 — komputer POS z ekranem dotykowym 15,6\" FHD, Androidem 13 z usługami Google i NFC przy ekranie. Model bez drukarki, z portem szuflady kasowej i opcjonalnym ekranem klienta.",
+    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej, USB, port szeregowy i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 2788.97,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01280007"
+      },
+      {
+        "name": "Ekran",
+        "value": "IPS 15,6\", 1920 × 1080 px (FHD), dotykowy pojemnościowy wielopunktowy, powłoka ograniczająca odciski palców; odchylanie o 125°"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS 4.0 (Android 13), usługi Google GMS EDLA"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "4 GB RAM / 64 GB, karta microSD do 2 TB"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11 i RJ12 (port szuflady kasowej i port szeregowy), gniazdo zasilania DC"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, z tyłu podstawy"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 5.0 z BLE"
+      },
+      {
+        "name": "NFC",
+        "value": "Czytniki po obu stronach ekranu głównego"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "W przycisku zasilania"
+      },
+      {
+        "name": "Kamera",
+        "value": "Przednia 5 Mpx, stała ostrość"
+      },
+      {
+        "name": "Audio",
+        "value": "2 głośniki 2 W, mikrofon"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Czujnik grawitacji"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, ukryty przycisk głośności"
+      },
+      {
+        "name": "Gniazdo kart",
+        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu; oferowany PN nie ma modemu 4G"
+      },
+      {
+        "name": "Ekran klienta (opcja)",
+        "value": "10,1\" HD (C02020008) lub 15,6\" FHD (C02020007), z NFC; montaż z tyłu komputera na złączu stykowym z blokadą"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC, wyjście 24 V / 2,5 A DC"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Odlew ze stopu metalu, przewody prowadzone wewnątrz podstawy"
+      },
+      {
+        "name": "Wymiary",
+        "value": "373 × 176 × 314 mm (dł. × szer. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "3 kg netto, 5,5 kg z opakowaniem"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C, wilgotność 5–95% bez kondensacji; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w sklepie z osobną drukarką POS",
+      "Obsługa zamówień w kawiarni i barze",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c02020008",
+      "sunmi-c02020007",
+      "sunmi-c06004004",
+      "sunmi-x09020039"
+    ],
+    "relatedProducts": [
+      "sunmi-t3-80mm"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI T3 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-t3.pdf",
+        "size": "2,4 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy SUNMI T3 jest kasą fiskalną?",
+        "answer": "Nie. SUNMI T3 nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+      },
+      {
+        "question": "Jaki ekran klienta pasuje do SUNMI T3?",
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Ekran 10,1\" pokazuje pozycje i kwotę. Ekran 15,6\" pokazuje też menu lub reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą. Jasność ekranu klienta ustawia się w ustawieniach systemu."
+      },
+      {
+        "question": "Czy SUNMI T3 ma Google Play?",
+        "answer": "Tak. PN P01280007 ma system SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA). Aplikacje można instalować z Google Play i ze sklepu SUNMI App Store."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI T3?",
+        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży."
+      },
+      {
+        "question": "Czym SUNMI T3 różni się od T3 80 mm?",
+        "answer": "[SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma w podstawie drukarkę termiczną 80 mm do paragonów niefiskalnych i bonów. SUNMI T3 nie ma drukarki, dlatego wydruki wymagają osobnej [drukarki POS](/drukarki-pos). Ekran, procesor, pamięć, system i złącza są takie same."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-t3-80mm",
+    "slug": "sunmi-t3-80mm",
+    "name": "SUNMI T3 80 mm",
+    "seoH1": "SUNMI T3 80 mm",
+    "seoTitle": "Komputer POS SUNMI T3 80 mm z drukarką paragonów, 15,6\"",
+    "seoDescription": "Komputer POS SUNMI T3 80 mm z drukarką paragonów 80 mm, ekranem dotykowym 15,6\" i Androidem 13. Terminal POS SUNMI T3 z drukarką. PN: P03180008.",
+    "shortDescription": "SUNMI T3 80 mm — komputer POS z wbudowaną drukarką termiczną 80 mm do 250 mm/s i ekranem dotykowym 15,6\" FHD. Android 13 z usługami Google, NFC przy ekranie i port szuflady kasowej.",
+    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej, USB, port szeregowy i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Obudowa jest odlewem ze stopu metalu. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 3194.64,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P03180008"
+      },
+      {
+        "name": "Ekran",
+        "value": "IPS 15,6\", 1920 × 1080 px (FHD), dotykowy pojemnościowy wielopunktowy, powłoka ograniczająca odciski palców; odchylanie o 125°"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS 4.0 (Android 13), usługi Google GMS EDLA"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm, 8 rdzeni, do 2,4 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "4 GB RAM / 64 GB, karta microSD do 2 TB"
+      },
+      {
+        "name": "Drukarka",
+        "value": "Termiczna, papier 80 mm; papier 58 mm z prowadnicą C20000094"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 250 mm/s"
+      },
+      {
+        "name": "Obsługa drukarki",
+        "value": "Pokrywa z uchwytem; moduł drukarki wyjmowany przy serwisie"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11 i RJ12 (port szuflady kasowej i port szeregowy), gniazdo zasilania DC"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, z tyłu podstawy"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 5.0 z BLE"
+      },
+      {
+        "name": "NFC",
+        "value": "Czytniki po obu stronach ekranu głównego"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "W przycisku zasilania"
+      },
+      {
+        "name": "Kamera",
+        "value": "Przednia 5 Mpx, stała ostrość"
+      },
+      {
+        "name": "Audio",
+        "value": "2 głośniki 2 W, mikrofon"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Czujnik grawitacji"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, ukryty przycisk głośności"
+      },
+      {
+        "name": "Gniazdo kart",
+        "value": "microSD (TF) pod listwą ozdobną z tyłu ekranu; oferowany PN nie ma modemu 4G"
+      },
+      {
+        "name": "Ekran klienta (opcja)",
+        "value": "10,1\" HD (C02020008) lub 15,6\" FHD (C02020007), z NFC; montaż z tyłu komputera na złączu stykowym z blokadą"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC, wyjście 24 V / 2,5 A DC"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Odlew ze stopu metalu, przewody prowadzone wewnątrz podstawy"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C, wilgotność 5–95% bez kondensacji; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, rolka papieru, zasilacz, przewód zasilający, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w sklepie z wydrukiem paragonów niefiskalnych",
+      "Bony i zamówienia w kawiarni i barze",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c02020008",
+      "sunmi-c02020007",
+      "sunmi-c06004004",
+      "sunmi-x09020039",
+      "sunmi-c20000094"
+    ],
+    "relatedProducts": [
+      "sunmi-t3"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI T3 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-t3.pdf",
+        "size": "2,4 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy SUNMI T3 80 mm jest kasą fiskalną?",
+        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jaki papier pasuje do SUNMI T3 80 mm?",
+        "answer": "Drukarka przyjmuje papier termiczny 80 mm. Rolka papieru jest w zestawie. Do papieru 58 mm potrzebna jest [prowadnica C20000094](/produkt/sunmi-c20000094), kupowana osobno. Rolkę zakłada się po otwarciu pokrywy drukarki."
+      },
+      {
+        "question": "Jaki ekran klienta pasuje do SUNMI T3 80 mm?",
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą. Ekran 10,1\" pokazuje pozycje i kwotę, a ekran 15,6\" także menu lub reklamy."
+      },
+      {
+        "question": "Czy SUNMI T3 80 mm ma Google Play?",
+        "answer": "Tak. PN P03180008 ma system SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA). Aplikacje można instalować z Google Play i ze sklepu SUNMI App Store."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI T3 80 mm?",
+        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży, np. po wydruku paragonu."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]
 
