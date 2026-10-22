@@ -1636,10 +1636,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 2788.97,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01280007.png",
+      "/images/products/P01280007-2.png",
+      "/images/products/P01280007-3.png",
+      "/images/products/P01280007-4.png",
+      "/images/products/P01280007-5.png",
+      "/images/products/P01280007-6.png",
+      "/images/products/P01280007-7.png",
+      "/images/products/P01280007-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI T3 — widok z przodu z prawej strony, lekko z góry: ekran dotykowy 15,6\" na podstawie w kształcie litery Z",
+      "SUNMI T3 — widok z przodu: ekran 15,6\", kamera nad ekranem i podstawa z logo T3",
+      "SUNMI T3 — widok z przodu z prawej strony, z góry",
+      "SUNMI T3 — widok z prawego boku: podstawa w kształcie litery Z i odchylany ekran",
+      "SUNMI T3 — widok z tyłu: listwa ozdobna nad gniazdem kart i złącze stykowe ekranu klienta na podstawie",
+      "SUNMI T3 — widok od spodu: złącza z tyłu podstawy",
+      "SUNMI T3 z ekranem klienta 10,1\" C02020008 — widok od strony klienta; ekran klienta kupuje się osobno",
+      "SUNMI T3 z drugim ekranem 15,6\" C02020007 — widok z przodu z lewej strony; ekran klienta kupuje się osobno"
     ],
     "tags": [
       "retail"
@@ -1807,10 +1821,18 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 3194.64,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P03180008.png",
+      "/images/products/P03180008-2.png",
+      "/images/products/P03180008-3.png",
+      "/images/products/P03180008-4.png",
+      "/images/products/P03180008-5.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI T3 80 mm — widok z przodu z lewej strony, z góry: ekran dotykowy 15,6\" i podstawa z drukarką",
+      "SUNMI T3 80 mm — widok z przodu: szczelina wydruku drukarki 80 mm pod ekranem",
+      "SUNMI T3 80 mm — widok z lewego boku: obudowa drukarki w podstawie",
+      "SUNMI T3 80 mm — widok z tyłu: obudowa drukarki i listwa ozdobna nad gniazdem kart",
+      "SUNMI T3 80 mm — widok z prawego boku"
     ],
     "tags": [
       "retail"
@@ -3693,10 +3715,12 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/manufacturers/sunmi-placeholder.svg",
+      "/images/products/C02020008-2.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "SUNMI — brak zdjęcia akcesorium",
+      "Ekran klienta SUNMI 10,1\" C02020008 zamontowany na komputerze POS SUNMI T3 — widok od strony klienta; komputer T3 kupuje się osobno"
     ],
     "tags": [
       "retail"
@@ -3775,10 +3799,12 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/manufacturers/sunmi-placeholder.svg",
+      "/images/products/C02020007-2.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium"
+      "SUNMI — brak zdjęcia akcesorium",
+      "Drugi ekran SUNMI 15,6\" C02020007 zamontowany za komputerem POS SUNMI T3 — widok z przodu z lewej strony; komputer T3 kupuje się osobno"
     ],
     "tags": [
       "retail"
