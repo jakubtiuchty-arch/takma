@@ -1,5 +1,6 @@
 import { posCategoryContent } from './pos-category-content'
 import { posComputerCategoryContent } from './pos-computer-category-content'
+import { kdsCategoryContent } from './kds-category-content'
 import { bixolonReceiptContent } from './bixolon-receipt-content'
 import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
@@ -4231,3 +4232,4 @@ Odrębnego omówienia wymagają drukarki atramentowe, na przykład Epson ColorWo
 
 subcategoryContent['drukarki-pos'] = posCategoryContent
 subcategoryContent['komputery-pos'] = posComputerCategoryContent
+subcategoryContent['ekrany-kds'] = kdsCategoryContent

@@ -42,6 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/katalog`, lastModified: lastUpdated },
     { url: `${baseUrl}/drukarki-pos`, lastModified: new Date('2026-10-21') },
     { url: `${baseUrl}/komputery-pos`, lastModified: new Date('2026-10-22') },
+    { url: `${baseUrl}/ekrany-kds`, lastModified: new Date('2026-10-22') },
     { url: `${baseUrl}/mobilne-drukarki-paragonow`, lastModified: new Date('2026-10-21') },
     { url: `${baseUrl}/drukarki-etykiet`, lastModified: new Date('2026-09-20') },
     { url: `${baseUrl}/drukarki-kart`, lastModified: lastUpdated },

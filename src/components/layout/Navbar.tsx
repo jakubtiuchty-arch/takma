@@ -54,6 +54,8 @@ const navigation: NavItem[] = [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
       { name: 'Komputery POS', href: '/komputery-pos' },
       { name: '— Akcesoria do komputerów POS', href: '/akcesoria-do-komputerow-pos' },
+      { name: 'Ekrany KDS', href: '/ekrany-kds' },
+      { name: '— Akcesoria do ekranów KDS', href: '/akcesoria-do-ekranow-kds' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },

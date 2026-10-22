@@ -335,6 +335,9 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 - [SUNMI D3 MINI 80 mm](https://www.takma.com.pl/produkt/sunmi-d3-mini-80mm) (PN P01260015 Wi-Fi, P01260022 4G, P01260020 z usługami Google GMS EDLA; model T1730/T1731): wbudowana drukarka termiczna 80 mm z gilotyną do 250 mm/s, dotykowy ekran klienta IPS 4" 480 × 800, ekran 10,1" HD, Qualcomm 6 rdzeni do 2,4 GHz, 3/32 GB, microSD do 1 TB, SUNMI OS (Android 13), skaner 1 Mpx 1D/2D, NFC, 2 × PSAM, Wi-Fi 5, Bluetooth 5.0, LAN, port szuflady kasowej RJ12, bez baterii, 1,4 kg.
 - [Akcesoria do komputerów POS](https://www.takma.com.pl/akcesoria-do-komputerow-pos): ekran klienta 10,1" C02020008 i 15,6" C02020007 z NFC do T3 i T3 80 mm, ekran klienta 10,1" C02020003 i 15,6" C02020004 z NFC do T3 PRO i T3 PRO MAX, ekran klienta 10,1" C02020005 z NFC do D3 PRO, szuflada kasowa SUNMI MAX C06004004, zasilacz 24 V / 2,5 A X09020039 (także do D3 PRO), prowadnica papieru 58 mm C20000094.
 
+## Ekrany KDS (SUNMI)
+- [Ekrany KDS](https://www.takma.com.pl/ekrany-kds): kuchenne ekrany zamówień (Kitchen Display System) z ekranem dotykowym do restauracji, barów i punktów gastronomicznych. Zamówienia z komputera POS trafiają przez program KDS na ekran w kuchni i zastępują papierowe bony. Program KDS dobiera się do programu sprzedaży.
+
 ## Drukarki POS i drukarki paragonów (Epson, BIXOLON, SUNMI)
 - [Drukarki POS i drukarki paragonów](https://www.takma.com.pl/drukarki-pos): 27 modeli Epson, BIXOLON i SUNMI do paragonów, bonów kuchennych, formularzy i etykiet bez podkładu. Papier 58 lub 80 mm; USB, Ethernet, RS-232, Wi-Fi i Bluetooth zależą od PN.
 - [Mobilne drukarki paragonów](https://www.takma.com.pl/mobilne-drukarki-paragonow): drukarki Epson i BIXOLON z baterią, papier 58, 80 lub 112 mm.

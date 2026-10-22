@@ -212,6 +212,8 @@ export interface Category {
   id: string
   slug: string
   name: string
+  /** Nagłówek H1 strony kategorii, gdy ma być dłuższy niż nazwa w menu i okruszkach. */
+  h1?: string
   description: string
   seoTitle: string
   seoDescription: string
@@ -307,6 +309,18 @@ export const categories: Category[] = [
     longDescription: 'Komputer POS to komputer z ekranem dotykowym, który stoi na ladzie i obsługuje sprzedaż w sklepie, restauracji, kawiarni lub barze. Działa na nim program kasowy: zamówienia, rachunki, rabaty, stany magazynowe i karty lojalnościowe. Do komputera podłącza się [drukarkę paragonów](/drukarki-pos), szufladę kasową, [skaner kodów](/skanery-kodow-kreskowych) i terminal płatniczy. Klient widzi pozycje i kwotę na ekranie klienta, wbudowanym albo [dokupionym osobno](/akcesoria-do-komputerow-pos). Część modeli ma drukarkę paragonów w podstawie. Komputer POS nie jest kasą fiskalną, więc paragon fiskalny drukuje osobna drukarka lub kasa fiskalna.',
     icon: 'monitor',
     productCount: 8,
+  },
+  {
+    id: 'ekrany-kds',
+    slug: 'ekrany-kds',
+    name: 'Ekrany KDS',
+    h1: 'Ekrany KDS do kuchni',
+    description: 'Kuchenne ekrany zamówień KDS z ekranem dotykowym do restauracji, barów i punktów gastronomicznych',
+    seoTitle: 'Ekrany KDS do kuchni SUNMI FLEX 3 — monitor zamówień',
+    seoDescription: 'Ekran KDS do kuchni SUNMI FLEX 3: monitor zamówień 15,6", 18,5" lub 22", obudowa IP55, PoE i VESA 100 × 100, Android 13. Ceny netto i stany magazynowe.',
+    longDescription: 'Ekran KDS (Kitchen Display System) to kuchenny ekran zamówień z ekranem dotykowym. Pracuje w kuchni restauracji, baru lub punktu gastronomicznego, na ścianie, na ramieniu albo na blacie. Zamówienia przyjęte na [komputerze POS](/komputery-pos) trafiają przez program KDS na ekran w kuchni. Kucharz oznacza na ekranie etapy przygotowania i wydanie zamówienia. Ekran KDS zastępuje papierowe bony z [drukarki POS](/drukarki-pos). Do pracy potrzebny jest program KDS zgodny z programem sprzedaży.',
+    icon: 'monitor',
+    productCount: 1,
   },
   {
     id: 'skanery-kodow-kreskowych',
@@ -1115,6 +1129,20 @@ export const subcategories: Subcategory[] = [
     seoTitle: 'Akcesoria do komputerów POS SUNMI T3 i T3 PRO | Ekran klienta',
     seoDescription: 'Akcesoria do komputera POS SUNMI T3, T3 PRO i D3 PRO: ekran klienta 10,1" i 15,6" z NFC, szuflada kasowa SUNMI MAX, zasilacz 24 V i prowadnica papieru 58 mm.',
     longDescription: 'Akcesoria do komputerów POS [SUNMI T3](/produkt/sunmi-t3), [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm), [SUNMI T3 PRO](/produkt/sunmi-t3-pro), [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max) i [SUNMI D3 PRO](/produkt/sunmi-d3-pro). Ekran klienta 10,1" lub 15,6" montuje się z tyłu komputera i pokazuje klientowi pozycje i kwotę. Do T3 i T3 80 mm pasują ekrany C02020008 i C02020007, a do T3 PRO i T3 PRO MAX ekrany C02020003 i C02020004. Do D3 PRO pasuje ekran 10,1" C02020005, zakładany na ramię podstawy i podłączany przez USB. Szuflada kasowa SUNMI MAX łączy się z portem szuflady RJ12 komputera T3 i T3 80 mm. Zasilacz 24 V / 2,5 A zastępuje zasilacz z zestawu, a prowadnica 58 mm pozwala drukować w T3 80 mm na węższym papierze.',
+    icon: 'package',
+    productIds: [],
+    productCount: 0,
+  },
+  // --- Podkategoria: Akcesoria do ekranów KDS (uzupełniana pętlą po subcategoryIds akcesoriów SUNMI) ---
+  {
+    id: 'akcesoria-do-ekranow-kds',
+    slug: 'akcesoria-do-ekranow-kds',
+    name: 'Akcesoria do ekranów KDS',
+    parentCategoryId: 'ekrany-kds',
+    description: 'Moduł PoE, przegubowe ramię VESA i stojak biurkowy do ekranów KDS SUNMI FLEX 3',
+    seoTitle: 'Akcesoria do ekranów KDS SUNMI FLEX 3 | Moduł PoE, ramię, stojak',
+    seoDescription: 'Akcesoria do ekranu KDS SUNMI FLEX 3: moduł PoE SUNMI, przegubowe ramię VESA i stojak biurkowy L do wersji 18,5" i 22". Ceny netto i stany magazynowe.',
+    longDescription: 'Akcesoria do ekranu KDS [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds). Moduł PoE SUNMI pozwala zasilać wersje 18,5" i 22" przez przewód sieciowy. Wersja 15,6" ma PoE wbudowane. Przegubowe ramię VESA trzyma ekran 18,5" i pozwala zmieniać jego położenie. Stojak biurkowy L ustawia ekran 18,5" lub 22" na blacie.',
     icon: 'package',
     productIds: [],
     productCount: 0,

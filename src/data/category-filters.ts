@@ -1956,6 +1956,26 @@ categoryFilters['akcesoria-do-komputerow-pos'] = [
   ] }
 ]
 
+// Ekrany KDS: jedna karta SUNMI FLEX 3 KDS z trzema rozmiarami jako wariantami, więc przekątna czyta wiersz „Ekran”.
+categoryFilters['ekrany-kds'] = [
+  { specKey: 'przekatna-ekran-kds', label: 'Przekątna ekranu', derived: [
+    { value: '15,6"', pattern: '15,6"', specs: ['Ekran'] },
+    { value: '18,5"', pattern: '18,5"', specs: ['Ekran'] },
+    { value: '21,5" (22")', pattern: '21,5"', specs: ['Ekran'] }
+  ] },
+  { specKey: 'cena-ekran-kds', label: 'Cena netto', derived: [
+    { value: 'do 2 500 zł', priceMax: 2500 },
+    { value: 'powyżej 2 500 zł', priceMin: 2500 }
+  ] }
+]
+categoryFilters['akcesoria-do-ekranow-kds'] = [
+  { specKey: 'rodzaj-akcesorium-kds', label: 'Rodzaj akcesorium', derived: [
+    { value: 'Moduł PoE', namePattern: '^Moduł PoE' },
+    { value: 'Ramię VESA', namePattern: '^Przegubowe ramię' },
+    { value: 'Stojak', namePattern: '^Stojak' }
+  ] }
+]
+
 categoryFilters['terminale-cipherlab'] = [
   { specKey: 'System operacyjny', label: 'System operacyjny', description: 'Android uruchamia zgodne aplikacje mobilne. cOS to system do aplikacji zadaniowych tworzonych np. w Forge Application Generator; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
   { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage','cipherlab-8000','cipherlab-8200','cipherlab-8300','cipherlab-8600']}] },
@@ -2006,6 +2026,13 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS: na Androidzie 13 w T3, T3 PRO, D3 PRO i D3 MINI 80 mm, na Androidzie 14 w D3.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO, T3 PRO MAX, D3 PRO i D3 MINI. D3 MINI 58 mm ma tylko tę wersję.",
     "Cena netto": "Cena netto komputera. SUNMI D3 i D3 MINI mają ekran klienta w cenie. Do pozostałych modeli ekran klienta kupuje się osobno. Szufladę kupuje się osobno do każdego modelu."
   },
+  "ekrany-kds": {
+    "Przekątna ekranu": "Przekątna ekranu SUNMI FLEX 3 KDS. Każdy rozmiar ma własny PN na karcie produktu.\n• 15,6\" — najmniejsza obudowa, 250 nitów, PoE wbudowane.\n• 18,5\" i 21,5\" (22\") — ekran IPS 400 nitów, procesor 8-rdzeniowy, czytnik linii papilarnych.",
+    "Cena netto": "Cena netto najtańszego rozmiaru. Ceny 18,5\" i 22\" podaje tabela wersji na karcie produktu."
+  },
+  "akcesoria-do-ekranow-kds": {
+    "Rodzaj akcesorium": "Wyposażenie ekranu KDS SUNMI FLEX 3.\n• Moduł PoE — zasilanie przez przewód sieciowy w wersjach 18,5\" i 22\".\n• Ramię VESA i stojak — mocowanie ekranu przez VESA 100 × 100."
+  },
   "akcesoria-do-komputerow-pos": {
     "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
     "Zgodny komputer": "Model, z którym akcesorium współpracuje. Ekrany klienta do T3 i do T3 PRO nie są zamienne. Ekran C02020005 pasuje tylko do D3 PRO. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
@@ -2014,7 +2041,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
   }
 }
-for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
+for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "ekrany-kds", "akcesoria-do-ekranow-kds", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
   categoryFilters[category] = (categoryFilters[category] ?? []).map(filter => ({
     ...filter,
     description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,
