@@ -38,10 +38,10 @@ export const posComputerCategoryContent: SubcategoryRichContent = {
   "buyingGuide": {
     "heading": "Jak wybrać komputer POS?",
     "items": [
-      "Drukarka — T3 80 mm drukuje paragony niefiskalne i bony z wbudowanej drukarki 80 mm. T3 wymaga osobnej [drukarki POS](/drukarki-pos).",
+      "Drukarka — T3 80 mm drukuje paragony niefiskalne i bony z wbudowanej drukarki 80 mm. T3 wymaga osobnej drukarki POS.",
       "Ekran klienta — ekran 10,1\" pokazuje pozycje i kwotę. Ekran 15,6\" pokazuje też menu lub reklamy. Oba ekrany mają NFC i kupuje się je osobno.",
       "System — oba modele mają Android 13 z usługami Google (GMS). Program sprzedaży musi działać na Androidzie.",
-      "Gotówka — [szuflada kasowa SUNMI MAX](/produkt/sunmi-c06004004) łączy się z portem szuflady komputera."
+      "Gotówka — szuflada kasowa SUNMI MAX C06004004 łączy się z portem szuflady komputera."
     ]
   },
   "expertAuthority": "Dobór zaczyna się od programu sprzedaży. Program musi działać na Androidzie 13 i obsługiwać wybrane drukarki oraz skanery. Następnie wybiera się model z drukarką lub bez niej oraz ekran klienta. Każda karta produktu podaje PN, cenę netto, stan magazynowy, zgodne akcesoria i kartę katalogową PDF.",
