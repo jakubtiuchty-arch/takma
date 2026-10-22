@@ -6497,7 +6497,7 @@ export const sunmiAccessories: Product[] = [
     "seoTitle": "Stojak na ladę SUNMI FLEX 3 Retail z drukarką i skanerem — C14004104",
     "seoDescription": "Stojak na ladę SUNMI FLEX 3 Retail C14004104 z drukarką i skanerem do kasy samoobsługowej z ekranem SUNMI FLEX 3 22\" na blacie. PN C14004104.",
     "shortDescription": "Stojak na ladę SUNMI FLEX 3 Retail do ekranu SUNMI FLEX 3 22\". W zestawie są drukarka i skaner. Ustawia kasę samoobsługową na ladzie.",
-    "description": "Stojak na ladę SUNMI FLEX 3 Retail C14004104 ustawia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" na ladzie lub blacie. W zestawie ze stojakiem są drukarka i skaner. Z modułami SUNMI ekran na tym stojaku pracuje jako kasa samoobsługowa w miejscu, w którym brak miejsca na stojak podłogowy. Stojak pasuje tylko do ekranu 22\".\n\nDo płatności kartą służy terminal płatniczy na uchwycie POS albo NFC na ekranie, jeśli program kiosku i operator płatności to obsługują. Ekran, moduły i uchwyt kupuje się osobno.\n\n## Zgodny ekran\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" (P11050001).",
+    "description": "Stojak na ladę SUNMI FLEX 3 Retail C14004104 ustawia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" na ladzie lub blacie. W zestawie ze stojakiem są drukarka i skaner. Z modułami SUNMI ekran na tym stojaku pracuje jako kasa samoobsługowa na ladzie. Stojak pasuje tylko do ekranu 22\".\n\nDo płatności kartą służy terminal płatniczy na uchwycie POS albo NFC na ekranie, jeśli program kiosku i operator płatności to obsługują. Ekran, moduły i uchwyt kupuje się osobno.\n\n## Zgodny ekran\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" (P11050001).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-kioskow"
