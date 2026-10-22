@@ -1995,7 +1995,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-pro-max",
       "sunmi-t3-pro",
       "sunmi-d3",
-      "sunmi-d3-pro"
+      "sunmi-d3-pro",
+      "sunmi-d3-mini-58mm",
+      "sunmi-d3-mini-80mm"
     ],
     "downloads": [
       {
@@ -2460,7 +2462,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-80mm",
       "sunmi-t3",
       "sunmi-d3",
-      "sunmi-d3-pro"
+      "sunmi-d3-pro",
+      "sunmi-d3-mini-58mm",
+      "sunmi-d3-mini-80mm"
     ],
     "downloads": [
       {
@@ -2648,7 +2652,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3-80mm",
       "sunmi-t3-pro",
       "sunmi-t3-pro-max",
-      "sunmi-d3-pro"
+      "sunmi-d3-pro",
+      "sunmi-d3-mini-58mm",
+      "sunmi-d3-mini-80mm"
     ],
     "downloads": [
       {
@@ -2864,7 +2870,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-t3",
       "sunmi-t3-80mm",
       "sunmi-t3-pro",
-      "sunmi-t3-pro-max"
+      "sunmi-t3-pro-max",
+      "sunmi-d3-mini-58mm",
+      "sunmi-d3-mini-80mm"
     ],
     "downloads": [
       {
@@ -2894,6 +2902,460 @@ export const sunmiProducts: Product[] = [
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI D3 PRO?",
         "answer": "SUNMI D3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-d3-mini-58mm",
+    "slug": "sunmi-d3-mini-58mm",
+    "name": "SUNMI D3 MINI 58 mm",
+    "seoH1": "SUNMI D3 MINI 58 mm",
+    "seoTitle": "Komputer POS SUNMI D3 MINI 10,1\" z drukarką 58 mm",
+    "seoDescription": "Komputer POS SUNMI D3 MINI 58 mm: ekran dotykowy 10,1\", drukarka 58 mm, skaner kodów, NFC i wersja 4G z baterią. Terminal POS SUNMI. PN: P01260026, P01260002.",
+    "shortDescription": "SUNMI D3 MINI 58 mm — kompaktowy komputer POS z ekranem dotykowym 10,1\", wbudowaną drukarką 58 mm, skanerem kodów 1D i 2D i czytnikiem NFC. Wyświetlacz klienta 2,4\", 3 GB RAM i 32 GB pamięci, SUNMI OS (Android 13). Wersja Wi-Fi lub 4G z baterią 2600 mAh.",
+    "description": "Komputer POS SUNMI D3 MINI 58 mm to kompaktowe stanowisko kasowe z ekranem dotykowym 10,1\" i wbudowaną drukarką termiczną 58 mm. Ma też skaner kodów 1D i 2D, czytnik kart zbliżeniowych NFC i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Ekran główny jest pochylony ergonomicznie.\n\n## Drukarka, procesor i system\n\nDrukarka drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 100 mm/s. Gumowe uszczelki chronią drukarkę przed kurzem i cieczą. Sześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 3 GB RAM i 32 GB pamięci. System to SUNMI OS na Androidzie 13 bez usług Google.\n\n## Łączność, bateria i obudowa\n\nKomputer łączy się przez LAN, Wi-Fi 5 i Bluetooth 5.0. Wersja 4G łączy się też przez sieć komórkową i ma w zestawie baterię 2600 mAh na 4 godziny pracy. W wersji Wi-Fi bateria nie wchodzi w skład zestawu. Komputer ma dwa gniazda kart PSAM. Budowa modułowa ułatwia demontaż i serwis. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\n[SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm) ma drukarkę 80 mm z gilotyną i dotykowy ekran klienta 4\", ale nie ma baterii. Stanowisko z dużym ekranem 15,6\" to [SUNMI D3](/produkt/sunmi-d3) lub [SUNMI T3](/produkt/sunmi-t3).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 1416.47,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01260026, P01260002"
+      },
+      {
+        "name": "Model SUNMI",
+        "value": "T1720 / T1721"
+      },
+      {
+        "name": "Ekran",
+        "value": "IPS 10,1\", 800 × 1280 px (HD), 300 nitów, dotykowy pojemnościowy 10-punktowy; ekran pochylony ergonomicznie"
+      },
+      {
+        "name": "Ekran klienta",
+        "value": "Wbudowany wyświetlacz siedmiosegmentowy 2,4\""
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS (Android 13), bez usług Google"
+      },
+      {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm, 6 rdzeni, do 2,4 GHz"
+      },
+      {
+        "name": "Pamięć",
+        "value": "3 GB RAM / 32 GB (UFS 2.2), karta microSD do 1 TB"
+      },
+      {
+        "name": "Drukarka",
+        "value": "Termiczna 58 mm, do 100 mm/s, rolka papieru o średnicy 50 mm"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 100 mm/s"
+      },
+      {
+        "name": "Trwałość drukarki",
+        "value": "50 km wydruku"
+      },
+      {
+        "name": "Obsługa drukarki",
+        "value": "Gumowe uszczelki chronią drukarkę przed kurzem i cieczą"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Wbudowany, 1 Mpx, kody 1D i 2D"
+      },
+      {
+        "name": "NFC",
+        "value": "Czytnik kart zbliżeniowych: typ A i B, MIFARE, FeliCa; ISO/IEC 14443 i ISO 15693; odczyt z odległości 0–4 cm"
+      },
+      {
+        "name": "Gniazda kart",
+        "value": "2 × PSAM (3,0 V), 2 × SIM (1,8 / 3,0 V), microSD"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 3.0 typ A, RJ11 (port szeregowy), RJ12 (port szuflady kasowej), Ethernet RJ45, gniazdo audio, gniazdo zasilania, ukryty port micro USB do debugowania"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak (RJ12)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 2.1/3.0/4.2/5.0 z BLE"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "2G, 3G i 4G w wersji 4G (P01260002)"
+      },
+      {
+        "name": "Audio",
+        "value": "Głośnik 3 W"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania (blokada ekranu), ukryty przycisk reset"
+      },
+      {
+        "name": "Dioda",
+        "value": "Niebieska dioda"
+      },
+      {
+        "name": "Bateria",
+        "value": "2600 mAh, do 4 godzin pracy; w zestawie tylko w wersji 4G (P01260002)"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC / 1,5 A, wyjście 24 V / 1,5 A DC (36 W)"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Budowa modułowa, łatwa do demontażu i serwisu"
+      },
+      {
+        "name": "Wymiary",
+        "value": "250 × 213 × 91 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,1 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający z wtyczką EU; w wersji 4G (P01260002) także bateria 2600 mAh"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w małym sklepie z wydrukiem paragonów niefiskalnych 58 mm",
+      "Stanowisko sprzedaży bez Wi-Fi w wersji 4G z baterią",
+      "Odczyt kodów kreskowych i kart lojalnościowych NFC"
+    ],
+    "variants": [
+      {
+        "partNumber": "P01260026",
+        "name": "D3 MINI 58 mm — Wi-Fi",
+        "attributes": {},
+        "priceFrom": 1416.47,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01260002",
+        "name": "D3 MINI 58 mm — 4G, z baterią",
+        "attributes": {
+          "4G": "Tak",
+          "Bateria w zestawie": "Tak"
+        },
+        "priceFrom": 1571.98,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "4G": "Modem 4G do łączności przez sieć komórkową na karcie SIM.\n\n• Komputer łączy się z siecią, gdy w miejscu sprzedaży nie ma Wi-Fi ani LAN.\n\n• 2 gniazda kart SIM.",
+      "Bateria w zestawie": "Bateria 2600 mAh w zestawie.\n\n• Do 4 godzin pracy bez zasilacza, np. przy przenoszeniu stanowiska."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-d3-mini-80mm",
+      "sunmi-d3",
+      "sunmi-d3-pro",
+      "sunmi-t3-80mm",
+      "sunmi-t3-pro-max"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI D3 MINI (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-d3-mini.pdf",
+        "size": "1,4 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "SUNMI D3 MINI 58 mm czy 80 mm?",
+        "answer": "Wersja 58 mm ma drukarkę 58 mm do 100 mm/s i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Wersja 4G ma w zestawie baterię 2600 mAh. Komputer waży 1,1 kg. [SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm) ma drukarkę 80 mm z automatyczną gilotyną do 250 mm/s i dotykowy ekran klienta IPS 4\". Jest też w wersji z usługami Google (GMS). Nie ma baterii i waży 1,4 kg. Obie wersje mają ekran 10,1\", skaner kodów 1D i 2D, NFC, 3 GB RAM i 32 GB pamięci."
+      },
+      {
+        "question": "Czy SUNMI D3 MINI 58 mm działa bez Wi-Fi?",
+        "answer": "Tak. Komputer łączy się z siecią także przez LAN (RJ45). Wersja 4G (P01260002) łączy się przez sieć komórkową na karcie SIM i ma 2 gniazda kart SIM. Wersja P01260026 nie ma modemu 4G."
+      },
+      {
+        "question": "Czy SUNMI D3 MINI 58 mm ma baterię?",
+        "answer": "Baterię 2600 mAh w zestawie ma tylko wersja 4G (P01260002). Bateria pozwala pracować do 4 godzin bez zasilacza. Wersja Wi-Fi (P01260026) ma gniazdo baterii, ale bateria nie wchodzi w skład zestawu. W sprawie baterii do wersji Wi-Fi prosimy o kontakt."
+      },
+      {
+        "question": "Czy SUNMI D3 MINI 58 mm jest kasą fiskalną?",
+        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI D3 MINI 58 mm?",
+        "answer": "SUNMI D3 MINI 58 mm ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-d3-mini-80mm",
+    "slug": "sunmi-d3-mini-80mm",
+    "name": "SUNMI D3 MINI 80 mm",
+    "seoH1": "SUNMI D3 MINI 80 mm",
+    "seoTitle": "Komputer POS SUNMI D3 MINI 10,1\" z drukarką 80 mm",
+    "seoDescription": "Komputer POS SUNMI D3 MINI 80 mm: ekran 10,1\", drukarka 80 mm z gilotyną, ekran klienta 4\", skaner i NFC. Terminal POS SUNMI. PN: P01260015, P01260022, P01260020.",
+    "shortDescription": "SUNMI D3 MINI 80 mm — kompaktowy komputer POS z ekranem dotykowym 10,1\", wbudowaną drukarką 80 mm z gilotyną, skanerem kodów 1D i 2D i czytnikiem NFC. Dotykowy ekran klienta 4\", 3 GB RAM i 32 GB pamięci. SUNMI OS (Android 13) w wersji Wi-Fi, 4G lub z usługami Google.",
+    "description": "Komputer POS SUNMI D3 MINI 80 mm to kompaktowe stanowisko kasowe z ekranem dotykowym 10,1\" i wbudowaną drukarką termiczną 80 mm. Ma też skaner kodów 1D i 2D, czytnik kart zbliżeniowych NFC i dotykowy ekran klienta IPS 4\". Ekran główny jest pochylony ergonomicznie.\n\n## Drukarka, procesor i system\n\nDrukarka z automatyczną gilotyną drukuje paragony niefiskalne i bony z prędkością do 250 mm/s. Gumowe uszczelki chronią drukarkę przed kurzem i cieczą. Sześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 3 GB RAM i 32 GB pamięci. System to SUNMI OS na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez LAN, Wi-Fi 5 i Bluetooth 5.0. Wersja 4G łączy się też przez sieć komórkową. Komputer ma dwa gniazda kart PSAM. Nie ma baterii i pracuje z zasilacza. Budowa modułowa ułatwia demontaż i serwis. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\n[SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) ma drukarkę 58 mm, wyświetlacz siedmiosegmentowy od strony klienta i w wersji 4G baterię w zestawie. Stanowisko z dużym ekranem 15,6\" to [SUNMI D3](/produkt/sunmi-d3) lub [SUNMI T3](/produkt/sunmi-t3).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 1808.59,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01260015, P01260022, P01260020"
+      },
+      {
+        "name": "Model SUNMI",
+        "value": "T1730 / T1731"
+      },
+      {
+        "name": "Ekran",
+        "value": "IPS 10,1\", 800 × 1280 px (HD), 300 nitów, dotykowy pojemnościowy 10-punktowy; ekran pochylony ergonomicznie, pod innym kątem niż w wersji 58 mm"
+      },
+      {
+        "name": "Ekran klienta",
+        "value": "Wbudowany ekran IPS 4\", 480 × 800 px (WVGA), 300 nitów, dotykowy pojemnościowy"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
+      },
+      {
+        "name": "Zarządzanie",
+        "value": "Zgodny z platformą SUNMI DMP do zdalnego zarządzania urządzeniami"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm, 6 rdzeni, do 2,4 GHz"
+      },
+      {
+        "name": "Pamięć",
+        "value": "3 GB RAM / 32 GB (UFS 2.2), karta microSD do 1 TB"
+      },
+      {
+        "name": "Drukarka",
+        "value": "Termiczna 80 mm, automatyczna gilotyna, do 250 mm/s, rolka papieru o średnicy 60 mm"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 250 mm/s"
+      },
+      {
+        "name": "Trwałość drukarki",
+        "value": "150 km wydruku"
+      },
+      {
+        "name": "Obsługa drukarki",
+        "value": "Gumowe uszczelki chronią drukarkę przed kurzem i cieczą"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Wbudowany, 1 Mpx, kody 1D i 2D"
+      },
+      {
+        "name": "NFC",
+        "value": "Czytnik kart zbliżeniowych: typ A i B, MIFARE, FeliCa; ISO/IEC 14443 i ISO 15693; odczyt z odległości 0–4 cm"
+      },
+      {
+        "name": "Gniazda kart",
+        "value": "2 × PSAM (3,0 V), 2 × SIM (1,8 / 3,0 V), microSD"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 3.0 typ A, RJ11 (port szeregowy), RJ12 (port szuflady kasowej), Ethernet RJ45, gniazdo audio, gniazdo zasilania, ukryty port micro USB do debugowania"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak (RJ12)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 2.1/3.0/4.2/5.0 z BLE"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "2G, 3G i 4G w wersji 4G (P01260022)"
+      },
+      {
+        "name": "Audio",
+        "value": "Głośnik 3 W"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania (blokada ekranu), ukryty przycisk reset"
+      },
+      {
+        "name": "Dioda",
+        "value": "Niebieska dioda"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC / 1,7 A, wyjście 24 V / 1,5 A DC (60 W); bez baterii"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Budowa modułowa, łatwa do demontażu i serwisu"
+      },
+      {
+        "name": "Wymiary",
+        "value": "250 × 231 × 108 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,4 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający z wtyczką EU; w wersji z usługami Google (P01260020) także krótka instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w sklepie z wydrukiem paragonów niefiskalnych 80 mm",
+      "Bony i zamówienia w kawiarni, barze i restauracji",
+      "Odczyt kodów kreskowych i kart lojalnościowych NFC"
+    ],
+    "variants": [
+      {
+        "partNumber": "P01260015",
+        "name": "D3 MINI 80 mm — Wi-Fi, SUNMI OS (Android 13), bez usług Google",
+        "attributes": {},
+        "priceFrom": 1808.59,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01260022",
+        "name": "D3 MINI 80 mm — 4G, SUNMI OS (Android 13), bez usług Google",
+        "attributes": {
+          "4G": "Tak"
+        },
+        "priceFrom": 1957.36,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01260020",
+        "name": "D3 MINI 80 mm — Wi-Fi, SUNMI OS (Android 13) z usługami Google (GMS)",
+        "attributes": {
+          "Usługi Google (GMS)": "Tak"
+        },
+        "priceFrom": 1957.36,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "4G": "Modem 4G do łączności przez sieć komórkową na karcie SIM.\n\n• Komputer łączy się z siecią, gdy w miejscu sprzedaży nie ma Wi-Fi ani LAN.\n\n• 2 gniazda kart SIM.",
+      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-d3-mini-58mm",
+      "sunmi-d3",
+      "sunmi-d3-pro",
+      "sunmi-t3-80mm",
+      "sunmi-t3-pro-max"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI D3 MINI (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-d3-mini.pdf",
+        "size": "1,4 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "SUNMI D3 MINI 80 mm czy 58 mm?",
+        "answer": "Wersja 80 mm ma drukarkę 80 mm z automatyczną gilotyną do 250 mm/s i dotykowy ekran klienta IPS 4\". Jest też w wersji z usługami Google (GMS). Nie ma baterii i waży 1,4 kg. [SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) ma drukarkę 58 mm do 100 mm/s i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Jej wersja 4G ma w zestawie baterię 2600 mAh. Komputer waży 1,1 kg. Obie wersje mają ekran 10,1\", skaner kodów 1D i 2D, NFC, 3 GB RAM i 32 GB pamięci."
+      },
+      {
+        "question": "Czy SUNMI D3 MINI 80 mm działa bez Wi-Fi?",
+        "answer": "Tak. Komputer łączy się z siecią także przez LAN (RJ45). Wersja 4G (P01260022) łączy się przez sieć komórkową na karcie SIM i ma 2 gniazda kart SIM. Wersje P01260015 i P01260020 nie mają modemu 4G."
+      },
+      {
+        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
+        "answer": "Wszystkie wersje mają system SUNMI OS na Androidzie 13. P01260020 ma usługi Google (GMS EDLA) i Sklep Google Play, ale nie ma modemu 4G. P01260015 i P01260022 nie mają usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+      },
+      {
+        "question": "Czy SUNMI D3 MINI 80 mm jest kasą fiskalną?",
+        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI D3 MINI 80 mm?",
+        "answer": "SUNMI D3 MINI 80 mm ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
       }
     ],
     "createdAt": "2026-10-22",
