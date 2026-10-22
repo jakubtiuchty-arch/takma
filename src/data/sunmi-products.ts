@@ -3811,7 +3811,20 @@ export const sunmiProducts: Product[] = [
       "Wi-Fi 6E": "Wi-Fi 802.11ax z pasmem 6 GHz, obok pasm 2,4 i 5 GHz.\n\n• Mają je wersje 18,5\", 22\" i 27\", razem z Bluetooth 5.2.\n\n• Wersja 15,6\" ma Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0."
     },
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c14004109",
+      "sunmi-c14004104",
+      "sunmi-c14004105",
+      "sunmi-c14004107",
+      "sunmi-c14004106",
+      "sunmi-c14004138",
+      "sunmi-c20000079",
+      "sunmi-c20000077",
+      "sunmi-c10020006",
+      "sunmi-c18004007",
+      "sunmi-c14004141",
+      "sunmi-c12004010"
+    ],
     "relatedProducts": [],
     "downloads": [
       {
@@ -6225,13 +6238,14 @@ export const sunmiAccessories: Product[] = [
     "id": "sunmi-c12004010",
     "slug": "sunmi-c12004010",
     "name": "Moduł PoE SUNMI FLEX 3",
-    "seoTitle": "Moduł PoE SUNMI do ekranu KDS FLEX 3 — C12004010",
-    "seoDescription": "Moduł PoE SUNMI C12004010 do ekranu KDS SUNMI FLEX 3 18,5\" i 22\": zasilanie i dane jednym przewodem sieciowym. Moduł PoE FLEX 3. PN C12004010.",
-    "shortDescription": "Moduł PoE SUNMI C12004010 do ekranów KDS SUNMI FLEX 3 18,5\" i 22\". Pozwala zasilać ekran przez przewód sieciowy, bez osobnego przewodu zasilającego.",
-    "description": "Moduł PoE SUNMI C12004010 pozwala zasilać ekran [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\" przez przewód sieciowy. Ten sam przewód przesyła dane, dlatego ekran nie wymaga osobnego przewodu zasilającego. Ekrany 18,5\" i 22\" mają port PoE, a moduł jest dla nich akcesorium opcjonalnym. Wersja 15,6\" ma PoE wbudowane i nie wymaga modułu.\n\nDo zasilania przez PoE potrzebny jest przełącznik sieciowy lub zasilacz PoE, który zasila urządzenia przez przewód sieciowy. Moduł nie wchodzi w skład zestawu ekranu i kupuje się go osobno.\n\n## Zgodne ekrany KDS\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
+    "seoTitle": "Moduł PoE SUNMI FLEX 3 do kiosku i ekranu KDS — C12004010",
+    "seoDescription": "Moduł PoE SUNMI C12004010 do SUNMI FLEX 3 18,5\", 22\" i 27\" oraz FLEX 3 KDS 18,5\" i 22\": zasilanie i dane jednym przewodem sieciowym. PN C12004010.",
+    "shortDescription": "Moduł PoE SUNMI C12004010 do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\" oraz ekranów KDS SUNMI FLEX 3 18,5\" i 22\". Pozwala zasilać ekran przez przewód sieciowy, bez osobnego przewodu zasilającego.",
+    "description": "Moduł PoE SUNMI C12004010 pozwala zasilać przez przewód sieciowy ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) w wersji 18,5\", 22\" lub 27\" oraz ekran [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\". Ten sam przewód przesyła dane, dlatego ekran nie wymaga osobnego przewodu zasilającego. Te ekrany mają port PoE, a moduł jest dla nich akcesorium opcjonalnym. Ekran KDS 15,6\" ma PoE wbudowane i nie wymaga modułu.\n\nDo zasilania przez PoE potrzebny jest przełącznik sieciowy lub zasilacz PoE, który zasila urządzenia przez przewód sieciowy. Moduł nie wchodzi w skład zestawu ekranu i kupuje się go osobno. Jeśli moduł ma pracować z ekranem SUNMI FLEX 3 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-ekranow-kds"
+      "akcesoria-do-ekranow-kds",
+      "akcesoria-do-kioskow"
     ],
     "manufacturerId": "sunmi",
     "images": [
@@ -6258,7 +6272,7 @@ export const sunmiAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SUNMI FLEX 3 KDS 18,5\", SUNMI FLEX 3 KDS 22\""
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\"; SUNMI FLEX 3 KDS 18,5\" i 22\""
       },
       {
         "name": "Gwarancja",
@@ -6268,10 +6282,12 @@ export const sunmiAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "sunmi-flex-3-kds"
+      "sunmi-flex-3-kds",
+      "sunmi-flex-3"
     ],
     "applications": [
-      "Zasilanie ekranu KDS przez przewód sieciowy"
+      "Zasilanie ekranu KDS przez przewód sieciowy",
+      "Zasilanie ekranu kiosku przez przewód sieciowy"
     ],
     "downloads": [],
     "createdAt": "2026-10-22",
@@ -6281,13 +6297,14 @@ export const sunmiAccessories: Product[] = [
     "id": "sunmi-c14004138",
     "slug": "sunmi-c14004138",
     "name": "Stojak biurkowy L SUNMI FLEX 3",
-    "seoTitle": "Stojak biurkowy L SUNMI FLEX 3 do ekranu KDS — C14004138",
-    "seoDescription": "Stojak biurkowy L SUNMI C14004138 do ekranu KDS SUNMI FLEX 3 18,5\" i 22\": stojak na blat w kształcie litery L, 350 × 224 × 128 mm, 4,6 kg. PN C14004138.",
-    "shortDescription": "Stojak biurkowy SUNMI w kształcie litery L do ekranów KDS SUNMI FLEX 3 18,5\" i 22\". Ustawia ekran na blacie stanowiska.",
-    "description": "Stojak biurkowy L SUNMI C14004138 ustawia ekran [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\" na blacie. Stojak ma kształt litery L i stoi na stole lub ladzie. Ekran KDS można wtedy ustawić przy stanowisku bez montażu na ścianie.\n\nStojak ma wymiary 350 × 224 × 128 mm i masę 4,6 kg. Stojak nie wchodzi w skład zestawu ekranu i kupuje się go osobno. Jeśli stojak ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany KDS\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
+    "seoTitle": "Stojak biurkowy L SUNMI FLEX 3 do kiosku i ekranu KDS — C14004138",
+    "seoDescription": "Stojak biurkowy L SUNMI C14004138 do SUNMI FLEX 3 i FLEX 3 KDS 18,5\" i 22\": stojak na blat w kształcie litery L, 350 × 224 × 128 mm, 4,6 kg. PN C14004138.",
+    "shortDescription": "Stojak biurkowy SUNMI w kształcie litery L do ekranów SUNMI FLEX 3 i SUNMI FLEX 3 KDS 18,5\" i 22\". Ustawia ekran na blacie stanowiska.",
+    "description": "Stojak biurkowy L SUNMI C14004138 ustawia na blacie ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) lub [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) w wersji 18,5\" lub 22\". Stojak ma kształt litery L i stoi na stole lub ladzie. Ekran można wtedy ustawić przy stanowisku bez montażu na ścianie.\n\nStojak ma wymiary 350 × 224 × 128 mm i masę 4,6 kg. Stojak nie wchodzi w skład zestawu ekranu i kupuje się go osobno. Jeśli stojak ma pracować z ekranem 15,6\" lub 27\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012) i 22\" (P11050001).\n\n[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) 18,5\" (P11050016) i 22\" (P11050010).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "akcesoria-do-ekranow-kds"
+      "akcesoria-do-ekranow-kds",
+      "akcesoria-do-kioskow"
     ],
     "manufacturerId": "sunmi",
     "images": [
@@ -6322,7 +6339,7 @@ export const sunmiAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SUNMI FLEX 3 KDS 18,5\", SUNMI FLEX 3 KDS 22\""
+        "value": "SUNMI FLEX 3 18,5\" i 22\"; SUNMI FLEX 3 KDS 18,5\" i 22\""
       },
       {
         "name": "Gwarancja",
@@ -6332,10 +6349,12 @@ export const sunmiAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "sunmi-flex-3-kds"
+      "sunmi-flex-3-kds",
+      "sunmi-flex-3"
     ],
     "applications": [
-      "Ekran KDS na blacie stanowiska"
+      "Ekran KDS na blacie stanowiska",
+      "Ekran kiosku na blacie stanowiska"
     ],
     "downloads": [],
     "createdAt": "2026-10-22",
@@ -6392,6 +6411,597 @@ export const sunmiAccessories: Product[] = [
     ],
     "applications": [
       "Ekran KDS na ramieniu przy stanowisku kucharza"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004109",
+    "slug": "sunmi-c14004109",
+    "name": "Stojak podłogowy SUNMI FLEX 3 Retail",
+    "seoTitle": "Stojak podłogowy SUNMI FLEX 3 Retail do kasy samoobsługowej — C14004109",
+    "seoDescription": "Stojak podłogowy SUNMI FLEX 3 Retail C14004109 z drukarką, skanerem i blatem do kasy samoobsługowej z ekranem SUNMI FLEX 3 22\". PN C14004109.",
+    "shortDescription": "Stojak podłogowy SUNMI FLEX 3 Retail do ekranu SUNMI FLEX 3 22\". W zestawie są drukarka, skaner i blat. Zmienia ekran w kasę samoobsługową.",
+    "description": "Stojak podłogowy SUNMI FLEX 3 Retail C14004109 zmienia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" w kasę samoobsługową. Stojak stoi na podłodze. W zestawie ze stojakiem są drukarka, skaner i blat. Stojak pasuje tylko do ekranu 22\".\n\nSUNMI zaleca ten stojak do kasy samoobsługowej w sklepie. Zestaw SUNMI to ekran 22\", stojak podłogowy Retail, moduł NFC, MSR i skaner, lampka sygnalizacyjna i uchwyt POS z terminalem płatniczym. Klient sam skanuje towary i płaci. Ekran, moduły i uchwyt kupuje się osobno.\n\n## Zgodny ekran\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" (P11050001).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 4445.43,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004109"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak podłogowy z drukarką, skanerem i blatem"
+      },
+      {
+        "name": "W zestawie",
+        "value": "Stojak, drukarka, skaner, blat"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 22\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Kasa samoobsługowa w sklepie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004104",
+    "slug": "sunmi-c14004104",
+    "name": "Stojak na ladę SUNMI FLEX 3 Retail",
+    "seoTitle": "Stojak na ladę SUNMI FLEX 3 Retail z drukarką i skanerem — C14004104",
+    "seoDescription": "Stojak na ladę SUNMI FLEX 3 Retail C14004104 z drukarką i skanerem do kasy samoobsługowej z ekranem SUNMI FLEX 3 22\" na blacie. PN C14004104.",
+    "shortDescription": "Stojak na ladę SUNMI FLEX 3 Retail do ekranu SUNMI FLEX 3 22\". W zestawie są drukarka i skaner. Ustawia kasę samoobsługową na ladzie.",
+    "description": "Stojak na ladę SUNMI FLEX 3 Retail C14004104 ustawia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" na ladzie lub blacie. W zestawie ze stojakiem są drukarka i skaner. Z modułami SUNMI ekran na tym stojaku pracuje jako kasa samoobsługowa w miejscu, w którym brak miejsca na stojak podłogowy. Stojak pasuje tylko do ekranu 22\".\n\nDo płatności kartą służy terminal płatniczy na uchwycie POS albo NFC na ekranie, jeśli program kiosku i operator płatności to obsługują. Ekran, moduły i uchwyt kupuje się osobno.\n\n## Zgodny ekran\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" (P11050001).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 2856.59,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004104"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak na ladę z drukarką i skanerem"
+      },
+      {
+        "name": "W zestawie",
+        "value": "Stojak, drukarka, skaner"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 22\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Kasa samoobsługowa na ladzie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004105",
+    "slug": "sunmi-c14004105",
+    "name": "Stojak podłogowy SUNMI FLEX 3 Restaurant",
+    "seoTitle": "Stojak podłogowy SUNMI FLEX 3 Restaurant do kiosku zamówień — C14004105",
+    "seoDescription": "Stojak podłogowy SUNMI FLEX 3 Restaurant C14004105 z drukarką do kiosku zamówień z ekranem SUNMI FLEX 3 22\" lub 27\". PN C14004105.",
+    "shortDescription": "Stojak podłogowy SUNMI FLEX 3 Restaurant do ekranów SUNMI FLEX 3 22\" i 27\". W zestawie jest drukarka, bez skanera. Zmienia ekran w kiosk zamówień.",
+    "description": "Stojak podłogowy SUNMI FLEX 3 Restaurant C14004105 zmienia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" lub 27\" w kiosk zamówień. Stojak stoi na podłodze. W zestawie ze stojakiem jest drukarka. Skanera nie ma w zestawie.\n\nSUNMI zaleca ten stojak do kiosku zamówień w restauracji z ekranem 27\", modułem NFC, MSR i skanerem oraz uchwytem POS z terminalem płatniczym. Ten sam stojak z ekranem 27\" SUNMI zaleca do rejestracji gości i do placówek ochrony zdrowia. Ekran, moduły i uchwyt kupuje się osobno. Jeśli stojak ma pracować z ekranem 15,6\" lub 18,5\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C14004105.png"
+    ],
+    "imageDescriptions": [
+      "Stojak podłogowy SUNMI FLEX 3 Restaurant C14004105 — widok z przodu, bez ekranu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 2755.15,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004105"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak podłogowy z drukarką"
+      },
+      {
+        "name": "W zestawie",
+        "value": "Stojak, drukarka"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Kiosk zamówień w restauracji",
+      "Rejestracja gości"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004107",
+    "slug": "sunmi-c14004107",
+    "name": "Stojak na ladę SUNMI FLEX 3 Restaurant",
+    "seoTitle": "Stojak na ladę SUNMI FLEX 3 Restaurant z drukarką — C14004107",
+    "seoDescription": "Stojak na ladę SUNMI FLEX 3 Restaurant C14004107 z drukarką do kiosku zamówień z ekranem SUNMI FLEX 3 18,5\", 22\" lub 27\". PN C14004107.",
+    "shortDescription": "Stojak na ladę SUNMI FLEX 3 Restaurant do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". W zestawie jest drukarka, bez skanera. Ustawia kiosk zamówień na ladzie.",
+    "description": "Stojak na ladę SUNMI FLEX 3 Restaurant C14004107 ustawia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\", 22\" lub 27\" na ladzie lub blacie. W zestawie ze stojakiem jest drukarka. Skanera nie ma w zestawie. Z modułami SUNMI ekran na tym stojaku pracuje jako kiosk zamówień w restauracji, kawiarni lub barze.\n\nDo płatności kartą służy terminal płatniczy na uchwycie POS albo NFC na ekranie, jeśli program kiosku i operator płatności to obsługują. Ekran, moduły i uchwyt kupuje się osobno. Jeśli stojak ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C14004107.png"
+    ],
+    "imageDescriptions": [
+      "Stojak na ladę SUNMI FLEX 3 Restaurant C14004107 — widok z przodu, bez ekranu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "on-order",
+    "priceFrom": 1943.81,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004107"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak na ladę z drukarką"
+      },
+      {
+        "name": "W zestawie",
+        "value": "Stojak, drukarka"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Kiosk zamówień na ladzie"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004106",
+    "slug": "sunmi-c14004106",
+    "name": "Stojak na ladę SUNMI FLEX 3 Lite",
+    "seoTitle": "Stojak na ladę SUNMI FLEX 3 Lite bez drukarki — C14004106",
+    "seoDescription": "Stojak na ladę SUNMI FLEX 3 Lite C14004106 do ekranu SUNMI FLEX 3 18,5\", 22\" lub 27\": stojak bez drukarki, 650 × 287 × 301 mm, 6,8 kg. PN C14004106.",
+    "shortDescription": "Stojak na ladę SUNMI FLEX 3 Lite do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Stojak bez drukarki i skanera, do kiosku lub ekranu na ladzie.",
+    "description": "Stojak na ladę SUNMI FLEX 3 Lite C14004106 ustawia ekran [SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\", 22\" lub 27\" na ladzie lub blacie. Stojak nie ma drukarki ani skanera. Pasuje do kiosku, w którym wydruk nie jest potrzebny, oraz do ekranu informacyjnego przy stanowisku obsługi.\n\nStojak ma wymiary 650 × 287 × 301 mm i masę 6,8 kg. Ekran i moduły kupuje się osobno. Jeśli stojak ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "on-order",
+    "priceFrom": 605.14,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004106"
+      },
+      {
+        "name": "Typ",
+        "value": "Stojak na ladę bez drukarki"
+      },
+      {
+        "name": "Wymiary",
+        "value": "650 × 287 × 301 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "6,8 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Kiosk bez drukarki na ladzie",
+      "Ekran informacyjny przy stanowisku obsługi"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c20000079",
+    "slug": "sunmi-c20000079",
+    "name": "Moduł NFC, MSR i skaner SUNMI FLEX 3",
+    "seoTitle": "Moduł NFC, MSR i skaner SUNMI FLEX 3 (3-w-1) — C20000079",
+    "seoDescription": "Moduł NFC, MSR i skaner SUNMI C20000079 (3-w-1) do kiosku SUNMI FLEX 3: czytnik NFC, czytnik kart magnetycznych i skaner kodów. PN C20000079.",
+    "shortDescription": "Moduł NFC, MSR i skaner SUNMI (3-w-1) do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Łączy czytnik NFC, czytnik kart z paskiem magnetycznym i skaner kodów.",
+    "description": "Moduł NFC, MSR i skaner SUNMI C20000079 (moduł 3-w-1) rozszerza kiosk z ekranem [SUNMI FLEX 3](/produkt/sunmi-flex-3). Łączy trzy czytniki: czytnik NFC, czytnik kart z paskiem magnetycznym (MSR) i skaner kodów. Obsługuje karty członkowskie i płatności kodem QR, jeśli program kiosku je obsługuje.\n\nPłatności kartą bankową w kiosku obsługuje terminal płatniczy na uchwycie POS albo NFC na ekranie. SUNMI zaleca moduł w kasie samoobsługowej z ekranem 22\" oraz w kiosku zamówień i w placówkach ochrony zdrowia z ekranem 27\". Moduł kupuje się osobno. Jeśli moduł ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C20000079.png"
+    ],
+    "imageDescriptions": [
+      "Moduł NFC, MSR i skaner SUNMI C20000079 — widok z przodu: czytnik NFC i okno skanera"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 388.75,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C20000079"
+      },
+      {
+        "name": "Typ",
+        "value": "Moduł 3-w-1: czytnik NFC, czytnik kart magnetycznych (MSR), skaner kodów"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Karty członkowskie w kiosku",
+      "Płatności kodem QR w kiosku"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c20000077",
+    "slug": "sunmi-c20000077",
+    "name": "Lampka sygnalizacyjna SUNMI FLEX 3",
+    "seoTitle": "Lampka sygnalizacyjna SUNMI FLEX 3 do kiosku — C20000077",
+    "seoDescription": "Lampka sygnalizacyjna SUNMI C20000077 do kiosku i kasy samoobsługowej SUNMI FLEX 3 18,5\", 22\" i 27\": sygnalizacja stanu kiosku. PN C20000077.",
+    "shortDescription": "Lampka sygnalizacyjna SUNMI do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Pokazuje stan kiosku samoobsługowego.",
+    "description": "Lampka sygnalizacyjna SUNMI C20000077 rozszerza kiosk z ekranem [SUNMI FLEX 3](/produkt/sunmi-flex-3). Lampkę montuje się na górnej krawędzi ekranu. Lampka pokazuje stan kiosku, a obsługa sklepu widzi go z daleka, np. przy kasie samoobsługowej. Sygnały lampki ustawia program kiosku.\n\nSUNMI zaleca lampkę w kasie samoobsługowej z ekranem 22\", stojakiem podłogowym Retail, modułem NFC, MSR i skanerem oraz uchwytem POS. Lampkę kupuje się osobno. Jeśli lampka ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C20000077.png"
+    ],
+    "imageDescriptions": [
+      "Lampka sygnalizacyjna SUNMI C20000077 — widok z przodu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 152.14,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C20000077"
+      },
+      {
+        "name": "Typ",
+        "value": "Lampka sygnalizacyjna"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Sygnalizacja stanu kasy samoobsługowej"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c10020006",
+    "slug": "sunmi-c10020006",
+    "name": "Skaner kodów 2D SUNMI FLEX 3",
+    "seoTitle": "Skaner kodów 1D i 2D SUNMI FLEX 3, obrotowy — C10020006",
+    "seoDescription": "Skaner kodów 2D SUNMI C10020006 do ekranu SUNMI FLEX 3 18,5\", 22\" i 27\": zewnętrzny skaner 1D i 2D z obrotową głowicą, micro USB. PN C10020006.",
+    "shortDescription": "Zewnętrzny skaner kodów 1D i 2D SUNMI do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Głowica obrotowa, połączenie micro USB.",
+    "description": "Skaner kodów 2D SUNMI C10020006 to zewnętrzny skaner kodów 1D i 2D do ekranu [SUNMI FLEX 3](/produkt/sunmi-flex-3). Głowica skanera jest obrotowa. Skaner łączy się z ekranem przez złącze micro USB.\n\nSkaner odczytuje kody kreskowe i kody 2D, np. kody QR, w kiosku samoobsługowym lub przy stanowisku kasowym. Odczyt kart NFC i kart z paskiem magnetycznym zapewnia moduł NFC, MSR i skaner. Skaner kupuje się osobno. Jeśli skaner ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "available",
+    "priceFrom": 334.7,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C10020006"
+      },
+      {
+        "name": "Typ",
+        "value": "Zewnętrzny skaner kodów 1D i 2D z obrotową głowicą"
+      },
+      {
+        "name": "Złącze",
+        "value": "Micro USB"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Odczyt kodów w kiosku samoobsługowym"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c18004007",
+    "slug": "sunmi-c18004007",
+    "name": "Kamera 3D SUNMI FLEX 3",
+    "seoTitle": "Kamera 3D SUNMI FLEX 3 do kiosku — C18004007",
+    "seoDescription": "Kamera 3D SUNMI C18004007 do kiosku SUNMI FLEX 3 18,5\", 22\" i 27\": kamera do aplikacji z rozpoznawaniem twarzy. PN C18004007.",
+    "shortDescription": "Kamera 3D SUNMI do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Do aplikacji z rozpoznawaniem twarzy w kiosku samoobsługowym.",
+    "description": "Kamera 3D SUNMI C18004007 rozszerza kiosk z ekranem [SUNMI FLEX 3](/produkt/sunmi-flex-3). Kamerę montuje się na górnej krawędzi ekranu. Służy do aplikacji z rozpoznawaniem twarzy, np. rejestracji gości w biurze lub w placówce ochrony zdrowia albo płatności z rozpoznaniem twarzy. Obsługa tych funkcji zależy od programu kiosku i operatora płatności.\n\nSUNMI oferuje do FLEX 3 kamery jednoobiektywowe, dwuobiektywowe i 3D. Kamerę kupuje się osobno. Jeśli kamera ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 841.75,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C18004007"
+      },
+      {
+        "name": "Typ",
+        "value": "Kamera 3D"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Rozpoznawanie twarzy w kiosku"
+    ],
+    "downloads": [],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c14004141",
+    "slug": "sunmi-c14004141",
+    "name": "Uchwyt POS multi-grip SUNMI FLEX 3",
+    "seoTitle": "Uchwyt POS multi-grip SUNMI FLEX 3 na terminal płatniczy — C14004141",
+    "seoDescription": "Uchwyt POS multi-grip SUNMI C14004141 do kiosku SUNMI FLEX 3 18,5\", 22\" i 27\": uchwyt na terminal płatniczy przy ekranie. PN C14004141.",
+    "shortDescription": "Uchwyt POS multi-grip SUNMI do ekranów SUNMI FLEX 3 18,5\", 22\" i 27\". Trzyma terminal płatniczy przy ekranie kiosku.",
+    "description": "Uchwyt POS multi-grip SUNMI C14004141 trzyma terminal płatniczy przy ekranie [SUNMI FLEX 3](/produkt/sunmi-flex-3). W kiosku samoobsługowym klient płaci kartą na terminalu płatniczym obok ekranu. Terminal płatniczy kupuje się u operatora płatności.\n\nSUNMI zaleca uchwyt POS w kasie samoobsługowej z ekranem 22\" i w kiosku zamówień z ekranem 27\". Przed zamówieniem prosimy o podanie modelu terminala płatniczego. Potwierdzimy, czy uchwyt go utrzyma. Uchwyt kupuje się osobno. Jeśli uchwyt ma pracować z ekranem 15,6\", prosimy o kontakt przed zamówieniem.\n\n## Zgodne ekrany\n\n[SUNMI FLEX 3](/produkt/sunmi-flex-3) 18,5\" (P11050012), 22\" (P11050001) i 27\" (P11050006).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-kioskow"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia akcesorium"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "on-order",
+    "priceFrom": 219.75,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C14004141"
+      },
+      {
+        "name": "Typ",
+        "value": "Uchwyt POS multi-grip na terminal płatniczy"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI FLEX 3 18,5\", 22\" i 27\""
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-flex-3"
+    ],
+    "applications": [
+      "Terminal płatniczy przy ekranie kiosku"
     ],
     "downloads": [],
     "createdAt": "2026-10-22",
