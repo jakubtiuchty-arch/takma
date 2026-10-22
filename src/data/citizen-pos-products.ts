@@ -1414,6 +1414,268 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-s751",
+    "slug": "citizen-ct-s751",
+    "name": "Citizen CT-S751",
+    "seoH1": "Citizen CT-S751",
+    "seoTitle": "Drukarka paragonów Citizen CT-S751 80 mm, ładowanie z przodu",
+    "seoDescription": "Drukarka paragonów Citizen CT-S751 58/80 mm: ładowanie i wyjście papieru z przodu, 350 mm/s, montaż pod ladą. Drukarka POS Citizen CT-S751. PN: CTS751XNEBX, CTS751XTEBX.",
+    "shortDescription": "Citizen CT-S751 — termiczna drukarka paragonów niefiskalnych na papier 58 lub 80 mm, z ładowaniem i wyjściem papieru z przodu. Drukuje do 350 mm/s; pasuje pod ladę i do kiosku.",
+    "description": "Drukarka Citizen CT-S751 drukuje paragony niefiskalne i zamówienia w handlu, w hotelarstwie, w kuchni i w kiosku. Rolkę papieru wkłada się z przodu i z przodu wychodzi paragon. Drukarka pracuje więc pod ladą, obok szuflady kasowej, w zabudowie panelu albo na zajętym stanowisku pracy.\n\n## Druk do 350 mm/s na papierze 58 lub 80 mm\n\nDrukarka drukuje do 350 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Przyjmuje papier 58 lub 80 mm, o grubości 53–85 µm, w rolce o średnicy do 83 mm. Wyjście z przodu chroni mechanizm przed wilgocią i ciałami obcymi. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED. Obudowa ma 125 × 170 × 108 mm.\n\n## USB, gniazdo karty, Bluetooth albo Lightning\n\nKażda wersja ma USB 2.0, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Ethernet albo Wi-Fi dodaje karta interfejsu. CTS751XTEBX i CTS751XTEWX mają Bluetooth do urządzeń z iOS, a CTS751XAEBX złącze Lightning. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nŁadowanie papieru od góry i wyjście z przodu, przy druku do 300 mm/s, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 804.8,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/CTS751XNEBX.png",
+      "/images/products/CTS751XNEBX-2.png",
+      "/images/products/CTS751XNEBX-3.png",
+      "/images/products/CTS751XNEBX-4.png",
+      "/images/products/CTS751XNEBX-5.png",
+      "/images/products/CTS751XNEBX-6.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-S751 w białej obudowie — widok z przodu, z góry: wylot papieru, przyciski POWER i FEED oraz diody",
+      "Citizen CT-S751 w białej obudowie — panel z przodu: przyciski POWER i FEED, diody stanu",
+      "Citizen CT-S751 w czarnej obudowie — przednia klapa otwarta do włożenia rolki papieru, widok z przodu pod kątem",
+      "Citizen CT-S751 w czarnej obudowie — widok z boku, przednia klapa otwarta z rolką papieru",
+      "Citizen CT-S751 — widok od spodu, złącza na tylnej krawędzi",
+      "Citizen CT-S751 w czarnej i białej obudowie — paragony w wylotach papieru"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTS751XNEBX, CTS751XNEWX, CTS751XTEBX, CTS751XTEWX, CTS751XAEBX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 350 mm/s"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 72 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "58 lub 80 mm"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 83 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "53–85 µm"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "Z przodu; ładowanie rolki z przodu"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Koniec papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0 i port USB do ładowania urządzeń (5 V, 2 A); zależnie od PN: Bluetooth (iOS) albo Lightning z USB host"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "Ethernet, Ethernet z USB host, USB z hubem, RS-232, Wi-Fi compact, Wi-Fi premium"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "8 MB"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "2 przyciski, 5 diod LED; wbudowany brzęczyk"
+      },
+      {
+        "name": "Montaż",
+        "value": "Na blacie, pod ladą lub w panelu"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50/60 Hz, zasilacz zewnętrzny 37AD5 w zestawie"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "125 × 170 × 108 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,26 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna lub biała"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, UL, C-UL, FCC, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz 37AD5, przewód zasilający, rolka papieru, skrócona instrukcja; w wersji z Lightning także kątowy przewód USB"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata, w tym głowica i gilotyna"
+      }
+    ],
+    "applications": [
+      "Drukarka pod ladą lub obok szuflady kasowej",
+      "Wydruki w kiosku z zabudową w panelu",
+      "Paragony i zamówienia w handlu, hotelarstwie i kuchni"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTS751XNEBX",
+        "name": "CT-S751 — USB, czarna",
+        "attributes": {
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 804.8,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTS751XNEWX",
+        "name": "CT-S751 — USB, biała",
+        "attributes": {
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 804.8,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTS751XTEBX",
+        "name": "CT-S751 — USB, Bluetooth, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1011.1,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTS751XTEWX",
+        "name": "CT-S751 — USB, Bluetooth, biała",
+        "attributes": {
+          "Interfejs dodatkowy": "Bluetooth",
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 1011.1,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTS751XAEBX",
+        "name": "CT-S751 — USB, Lightning, czarna",
+        "attributes": {
+          "Interfejs dodatkowy": "Lightning",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1189.38,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Interfejs dodatkowy": "Połączenie zamontowane fabrycznie obok USB.\n\n• Bluetooth — połączenie bez przewodu z iPadem, iPhone'em i innymi urządzeniami z iOS.\n\n• Lightning — połączenie z iPadem lub iPhone'em przez złącze Lightning.",
+      "Kolor obudowy": "Kolor obudowy CT-S751.\n\n• Czarna — wersje z USB, Bluetoothem i Lightning.\n\n• Biała — wersje z USB i z Bluetoothem."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-wifi-ppz60112s",
+      "citizen-pos-lan-usb-host-ppz60104s",
+      "citizen-pos-powered-usb-1100092",
+      "citizen-pos-zasilacz-pwt20022-00",
+      "citizen-pos-lan-premium-if2-es04",
+      "citizen-pos-wifi-premium-if2-wf5s",
+      "citizen-pos-wifi-premium-if2-wf5l",
+      "citizen-pos-modul-wifi-upg-wf5s",
+      "citizen-pos-modul-wifi-upg-wf5l"
+    ],
+    "relatedProducts": [
+      "citizen-ct-e651",
+      "citizen-ct-e601",
+      "citizen-ct-s851iii",
+      "epson-tm-t88vii",
+      "bixolon-srp-350v"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-S751 (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-s751.pdf",
+        "size": "240 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-S751",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-S751",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-S751 jest drukarką fiskalną?",
+        "answer": "Nie. CT-S751 drukuje paragony niefiskalne i zamówienia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Czy CT-S751 można zamontować pod ladą?",
+        "answer": "Tak. Rolkę papieru wkłada się z przodu i z przodu wychodzi paragon, dlatego drukarka mieści się także w niedużej przestrzeni. Pracuje pod ladą, obok szuflady kasowej albo w zabudowie panelu."
+      },
+      {
+        "question": "Jak podłączyć CT-S751 do sieci przewodowej lub Wi-Fi?",
+        "answer": "Dokup kartę interfejsu i włóż ją w gniazdo drukarki: [kartę Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s) albo [kartę Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Karty kupuje się osobno."
+      },
+      {
+        "question": "Czy CT-S751 współpracuje z iPadem i iPhone'em?",
+        "answer": "Tak. Wersje CTS751XTEBX i CTS751XTEWX mają Bluetooth do urządzeń z iOS. Wersja CTS751XAEBX ma złącze Lightning, które przesyła dane i ładuje iPada lub iPhone'a."
+      },
+      {
+        "question": "Co jest w zestawie z CT-S751?",
+        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający, rolka papieru i skrócona instrukcja. Wersja z Lightning ma też kątowy przewód USB. Przewód interfejsu do komputera zamawia się osobno."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
