@@ -1771,7 +1771,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-x09020039"
     ],
     "relatedProducts": [
-      "sunmi-t3-80mm"
+      "sunmi-t3-80mm",
+      "sunmi-t3-pro",
+      "sunmi-t3-pro-max"
     ],
     "downloads": [
       {
@@ -1955,7 +1957,9 @@ export const sunmiProducts: Product[] = [
       "sunmi-c20000094"
     ],
     "relatedProducts": [
-      "sunmi-t3"
+      "sunmi-t3",
+      "sunmi-t3-pro-max",
+      "sunmi-t3-pro"
     ],
     "downloads": [
       {
@@ -1996,6 +2000,402 @@ export const sunmiProducts: Product[] = [
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3 80 mm?",
         "answer": "Przewód szuflady podłącza się do portu szuflady kasowej z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży, np. po wydruku paragonu."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-t3-pro",
+    "slug": "sunmi-t3-pro",
+    "name": "SUNMI T3 PRO",
+    "seoH1": "SUNMI T3 PRO",
+    "seoTitle": "Komputer POS SUNMI T3 PRO 15,6\", Android 13, Wi-Fi 6E",
+    "seoDescription": "Komputer POS SUNMI T3 PRO: ekran dotykowy 15,6\", 6 GB RAM, Wi-Fi 6E, LAN 1 Gb/s i NFC. Terminal POS SUNMI T3 PRO bez drukarki. PN: P01240002, P01240008.",
+    "shortDescription": "SUNMI T3 PRO — komputer POS z ekranem dotykowym 15,6\" FHD, 6 GB RAM i 128 GB pamięci, Wi-Fi 6E i NFC na ekranie. Obudowa ze stopu aluminium. Wersja SUNMI OS lub z usługami Google, model bez drukarki.",
+    "description": "Komputer POS SUNMI T3 PRO to stacjonarne stanowisko kasowe do sklepu, restauracji i kawiarni. Ekran 15,6\" FHD ma jasność 400 nitów, nie ma ramki i ma powłokę ograniczającą odciski palców. Ekran główny można odchylić o 125°. Czytnik NFC jest na ekranie głównym, a przycisk zasilania ma czytnik linii papilarnych. Kamera z przodu ma 8 Mpx.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,7 GHz pracuje z 6 GB RAM i 128 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez Wi-Fi 6E (2,4, 5 i 6 GHz), Bluetooth 5.2 z BT Long Range do 200 m i LAN 1 Gb/s. Obudowa jest ze stopu aluminium, a przewody prowadzi się wewnątrz podstawy. Odłączany ekran klienta [10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004) ma NFC i przedłużacz 1,5 m. Ekran klienta kupuje się osobno. Na zamówienie projektowe SUNMI może nanieść na obudowę logo i kolor marki.\n\nW porównaniu z [SUNMI T3](/produkt/sunmi-t3) model T3 PRO ma więcej pamięci, Wi-Fi 6E i LAN 1 Gb/s. Wbudowaną drukarkę 80 mm ma [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 5114.81,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01240002, P01240008"
+      },
+      {
+        "name": "Ekran",
+        "value": "15,6\", 1920 × 1080 px (FHD), 400 nitów, dotykowy, bez ramki, powłoka ograniczająca odciski palców; odchylanie o 125°"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm Kryo 670, 8 rdzeni, do 2,7 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "6 GB RAM / 128 GB, karta microSD do 2 TB"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11, RJ12, gniazdo zasilania DC"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak (RJ11/RJ12)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax, 2,4, 5 i 6 GHz), Bluetooth 5.2 z BLE i BT Long Range (do 200 m)"
+      },
+      {
+        "name": "NFC",
+        "value": "Na ekranie głównym; także na ekranie klienta (opcja)"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "W przycisku zasilania"
+      },
+      {
+        "name": "Kamera",
+        "value": "Przednia 8 Mpx"
+      },
+      {
+        "name": "Audio",
+        "value": "2 głośniki 2 W"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), ukryty przycisk serwisowy"
+      },
+      {
+        "name": "Ekran klienta (opcja)",
+        "value": "10,1\" HD 1280 × 800 px (C02020003) lub 15,6\" FHD 1920 × 1080 px (C02020004), dotykowy, z NFC; odłączany, z przedłużaczem 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC / 1,7 A, wyjście 24 V / 2,5 A DC"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Stop aluminium, przewody prowadzone wewnątrz podstawy"
+      },
+      {
+        "name": "Wymiary",
+        "value": "371,5 × 170 × 298 mm (dł. × szer. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "3,3 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w sklepie z osobną drukarką POS",
+      "Obsługa zamówień w restauracji i kawiarni",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "variants": [
+      {
+        "partNumber": "P01240002",
+        "name": "T3 PRO — SUNMI OS (Android 13)",
+        "attributes": {},
+        "priceFrom": 5114.81,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01240008",
+        "name": "T3 PRO — Android 13 z usługami Google (GMS)",
+        "attributes": {
+          "Usługi Google (GMS)": "Tak"
+        },
+        "priceFrom": 5114.81,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja SUNMI OS nie ma usług Google. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c02020003",
+      "sunmi-c02020004"
+    ],
+    "relatedProducts": [
+      "sunmi-t3-pro-max",
+      "sunmi-t3",
+      "sunmi-t3-80mm"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI T3 PRO (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-t3-pro.pdf",
+        "size": "849 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym SUNMI T3 PRO różni się od SUNMI T3?",
+        "answer": "SUNMI T3 PRO ma 6 GB RAM i 128 GB pamięci, procesor do 2,7 GHz, Wi-Fi 6E, LAN 1 Gb/s, kamerę 8 Mpx i obudowę ze stopu aluminium. [SUNMI T3](/produkt/sunmi-t3) ma 4 GB RAM i 64 GB pamięci, procesor do 2,4 GHz, Wi-Fi 5 i kamerę 5 Mpx. Ekrany klienta do obu modeli są różne."
+      },
+      {
+        "question": "Wersja SUNMI OS czy wersja z usługami Google (GMS)?",
+        "answer": "Obie wersje mają ten sam sprzęt i system SUNMI OS na Androidzie 13. P01240008 ma usługi Google (GMS EDLA) i Sklep Google Play. P01240002 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+      },
+      {
+        "question": "Jaki ekran klienta pasuje do SUNMI T3 PRO?",
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020003](/produkt/sunmi-c02020003) i [15,6\" FHD C02020004](/produkt/sunmi-c02020004). Ekran klienta można odłączyć i ustawić obok komputera na przedłużaczu 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują do T3 PRO."
+      },
+      {
+        "question": "Czy SUNMI T3 PRO jest kasą fiskalną?",
+        "answer": "Nie. SUNMI T3 PRO nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO?",
+        "answer": "SUNMI T3 PRO ma port szuflady kasowej na złączu RJ11/RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. SUNMI nie podaje listy szuflad zgodnych z T3 PRO, dlatego przed zakupem szuflady prosimy o kontakt."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-t3-pro-max",
+    "slug": "sunmi-t3-pro-max",
+    "name": "SUNMI T3 PRO MAX",
+    "seoH1": "SUNMI T3 PRO MAX",
+    "seoTitle": "Komputer POS SUNMI T3 PRO MAX 15,6\" z drukarką 80 mm",
+    "seoDescription": "Komputer POS SUNMI T3 PRO MAX z drukarką Seiko 80 mm, gilotyną i ekranem dotykowym 15,6\". Terminal POS z drukarką, Wi-Fi 6E. PN: P01250004, P01250007.",
+    "shortDescription": "SUNMI T3 PRO MAX — komputer POS z wbudowaną drukarką Seiko 80 mm z gilotyną, do 250 mm/s, i ekranem dotykowym 15,6\" FHD. 6 GB RAM, Wi-Fi 6E, LAN 1 Gb/s i NFC na ekranie. Wersja SUNMI OS lub z usługami Google.",
+    "description": "Komputer POS SUNMI T3 PRO MAX ma w podstawie drukarkę termiczną Seiko 80 mm. Drukuje paragony niefiskalne i bony z prędkością do 250 mm/s. Drukarka ma automatyczną gilotynę. Rolka papieru ma średnicę do 80 mm. Głowicę drukującą modułowej drukarki łatwo wyjąć i wymienić.\n\n## Ekran, procesor i system\n\nEkran 15,6\" FHD bez ramki ma jasność 400 nitów i powłokę ograniczającą odciski palców. Ekran główny można odchylić o 125°. NFC działa na ekranie głównym, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,7 GHz pracuje z 6 GB RAM i 128 GB pamięci. System to SUNMI OS na Androidzie 13; jedna z wersji ma usługi Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez Wi-Fi 6E (2,4, 5 i 6 GHz), Bluetooth 5.2 z BT Long Range do 200 m i LAN 1 Gb/s. Przednia kamera ma 8 Mpx. Obudowa jest ze stopu aluminium, a przewody są ukryte w podstawie. Odłączany ekran klienta [10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004) z NFC i przedłużaczem 1,5 m kupuje się osobno. Na zamówienie projektowe SUNMI może nanieść na obudowę logo i kolor marki.\n\nWzględem [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) T3 PRO MAX ma drukarkę Seiko, więcej pamięci, Wi-Fi 6E i LAN 1 Gb/s. Ten sam komputer bez drukarki to [SUNMI T3 PRO](/produkt/sunmi-t3-pro).",
+    "categoryId": "komputery-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 6341.96,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P01250004, P01250007"
+      },
+      {
+        "name": "Ekran",
+        "value": "15,6\", 1920 × 1080 px (FHD), 400 nitów, dotykowy, bez ramki, powłoka ograniczająca odciski palców; odchylanie o 125°"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS (Android 13); wersja bez usług Google lub z usługami Google GMS EDLA"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm Kryo 670, 8 rdzeni, do 2,7 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "6 GB RAM / 128 GB, karta microSD do 2 TB"
+      },
+      {
+        "name": "Drukarka",
+        "value": "Termiczna Seiko, papier 80 mm, rolka o średnicy do 80 mm"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 250 mm/s"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Tak, automatyczna"
+      },
+      {
+        "name": "Obsługa drukarki",
+        "value": "Konstrukcja modułowa; głowica drukująca łatwa do wyjęcia i wymiany"
+      },
+      {
+        "name": "Trwałość drukarki",
+        "value": "Do 150 km wydruku"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "3 × USB 2.0 typ A, 1 × USB 3.0 typ A, 1 × USB-C, 2 × micro USB, 1 × micro USB do debugowania, Ethernet RJ45, RJ11, RJ12, gniazdo zasilania DC"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak (RJ11/RJ12)"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax, 2,4, 5 i 6 GHz), Bluetooth 5.2 z BLE i BT Long Range (do 200 m)"
+      },
+      {
+        "name": "NFC",
+        "value": "Na ekranie głównym; także na ekranie klienta (opcja)"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "W przycisku zasilania"
+      },
+      {
+        "name": "Kamera",
+        "value": "Przednia 8 Mpx"
+      },
+      {
+        "name": "Audio",
+        "value": "2 głośniki 2 W"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania (blokada ekranu, czytnik linii papilarnych), ukryty przycisk serwisowy"
+      },
+      {
+        "name": "Ekran klienta (opcja)",
+        "value": "10,1\" HD 1280 × 800 px (C02020003) lub 15,6\" FHD 1920 × 1080 px (C02020004), dotykowy, z NFC; odłączany, z przedłużaczem 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz 100–240 V AC / 1,7 A, wyjście 24 V / 2,5 A DC"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Stop aluminium, przewody prowadzone wewnątrz podstawy"
+      },
+      {
+        "name": "Wymiary",
+        "value": "371,5 × 200 × 390 mm (dł. × szer. × wys.)"
+      },
+      {
+        "name": "Masa",
+        "value": "5,5 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Komputer, zasilacz, przewód zasilający; w wersji z usługami Google (P01250007) także skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kasa w sklepie z wydrukiem paragonów niefiskalnych",
+      "Bony i zamówienia w restauracji i kawiarni",
+      "Odczyt kart lojalnościowych przez NFC"
+    ],
+    "variants": [
+      {
+        "partNumber": "P01250004",
+        "name": "T3 PRO MAX — SUNMI OS (Android 13)",
+        "attributes": {},
+        "priceFrom": 6341.96,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P01250007",
+        "name": "T3 PRO MAX — Android 13 z usługami Google (GMS)",
+        "attributes": {
+          "Usługi Google (GMS)": "Tak"
+        },
+        "priceFrom": 6341.96,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja SUNMI OS nie ma usług Google. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c02020003",
+      "sunmi-c02020004"
+    ],
+    "relatedProducts": [
+      "sunmi-t3-pro",
+      "sunmi-t3-80mm",
+      "sunmi-t3"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI T3 PRO MAX (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-t3-pro-max.pdf",
+        "size": "807 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym SUNMI T3 PRO MAX różni się od SUNMI T3 80 mm?",
+        "answer": "Oba modele mają wbudowaną drukarkę 80 mm do 250 mm/s. SUNMI T3 PRO MAX ma drukarkę Seiko, 6 GB RAM i 128 GB pamięci, procesor do 2,7 GHz, Wi-Fi 6E, LAN 1 Gb/s i obudowę ze stopu aluminium. [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma 4 GB RAM i 64 GB pamięci, procesor do 2,4 GHz i Wi-Fi 5. Ekrany klienta do obu modeli są różne."
+      },
+      {
+        "question": "Wersja SUNMI OS czy wersja z usługami Google (GMS)?",
+        "answer": "Obie wersje mają ten sam sprzęt i system SUNMI OS na Androidzie 13. P01250007 ma usługi Google (GMS EDLA) i Sklep Google Play. P01250004 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+      },
+      {
+        "question": "Jaki ekran klienta pasuje do SUNMI T3 PRO MAX?",
+        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020003](/produkt/sunmi-c02020003) i [15,6\" FHD C02020004](/produkt/sunmi-c02020004). Ekran klienta można odłączyć i ustawić obok komputera na przedłużaczu 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują do T3 PRO MAX."
+      },
+      {
+        "question": "Czy SUNMI T3 PRO MAX jest kasą fiskalną?",
+        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO MAX?",
+        "answer": "SUNMI T3 PRO MAX ma port szuflady kasowej na złączu RJ11/RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży, np. po wydruku paragonu. SUNMI nie podaje listy szuflad zgodnych z T3 PRO MAX, dlatego przed zakupem szuflady prosimy o kontakt."
       }
     ],
     "createdAt": "2026-10-22",

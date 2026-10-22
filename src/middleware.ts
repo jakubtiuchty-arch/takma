@@ -84,6 +84,8 @@ export async function middleware(request: NextRequest) {
       // Terminale SUNMI, drukarki NT220 i NT320, komputery POS T3 oraz zgodne akcesoria.
       'sunmi-t3',
       'sunmi-t3-80mm',
+      'sunmi-t3-pro',
+      'sunmi-t3-pro-max',
       'sunmi-c02020008',
       'sunmi-c02020007',
       'sunmi-c06004004',
