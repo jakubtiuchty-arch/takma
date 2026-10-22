@@ -1327,6 +1327,259 @@ export const sunmiProducts: Product[] = [
     ],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-nt320",
+    "slug": "sunmi-nt320",
+    "name": "SUNMI NT320",
+    "seoH1": "SUNMI NT320",
+    "seoTitle": "Drukarka etykiet i paragonów SUNMI NT320 80 mm, linerless",
+    "seoDescription": "Drukarka paragonów SUNMI NT320 i drukarka etykiet SUNMI 80 mm: etykiety linerless, skaner 2D, Wi-Fi, USB-C i Ethernet. NT320 SUNMI, PN: C04050006, C04050007, C04050003, C04050001, C04050011, C04050009.",
+    "shortDescription": "SUNMI NT320 — termiczna drukarka paragonów niefiskalnych i etykiet na papier do 80 mm, z USB-C i Ethernetem. Wersje z Wi-Fi i Bluetooth, skanerem 2D albo obsługą etykiet bez podkładu.",
+    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Port RJ12 steruje szufladą kasową. Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 605.14,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI NT320 — drukarka etykiet i paragonów 80 mm"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C04050006, C04050007, C04050003, C04050001, C04050011, C04050009"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 150 mm/s"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB-C (USB 2.0), Ethernet RJ45 100 Mb/s; w wersjach Wi-Fi i Linerless także Wi-Fi 6 (2,4 i 5 GHz) i Bluetooth 5.4 BLE"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "RJ12"
+      },
+      {
+        "name": "Rodzaj materiału",
+        "value": "Papier do paragonów, etykiety z podkładem; w wersjach Linerless także etykiety bez podkładu"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "30–80 mm"
+      },
+      {
+        "name": "Wymiary etykiety",
+        "value": "Szerokość 30–78 mm, długość 30–150 mm"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 80 mm"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "0,048–0,10 mm"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Tak"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Brak papieru, przerwa między etykietami, otwarta pokrywa, odbiór wydruku, reset gilotyny, temperatura silnika, temperatura głowicy"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS (paragony), TSPL (etykiety)"
+      },
+      {
+        "name": "Druk z chmury",
+        "value": "Open API, komunikacja MQTT/HTTPS"
+      },
+      {
+        "name": "Kody kreskowe",
+        "value": "1D: UPC-A, UPC-E, EAN13, EAN8, CODE39, ITF, CODABAR, CODE93, CODE128, CODE11, GS1 DataBar, MSI Plessey; 2D: PDF417, QR"
+      },
+      {
+        "name": "Skaner (wersja C04050007)",
+        "value": "1D od 4 mil, 2D od 7,5 mil; QR, Data Matrix, PDF417, Aztec"
+      },
+      {
+        "name": "Procesor i pamięć",
+        "value": "MIPS32 1,2 GHz; RAM 128 MB, ROM 256 MB"
+      },
+      {
+        "name": "Głośnik",
+        "value": "1 W"
+      },
+      {
+        "name": "Systemy operacyjne",
+        "value": "Windows, Android, iOS, Linux; zarządzanie przez SUNMI MDM"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "5 V / 2 A DC, jednym przewodem USB-C (zasilanie i dane)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "130 × 140 × 145 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "875 g"
+      },
+      {
+        "name": "Trwałość głowicy",
+        "value": "150 km (paragony), 50 km (etykiety)"
+      },
+      {
+        "name": "Trwałość gilotyny",
+        "value": "1 000 000 cięć (paragony), 500 000 cięć (etykiety)"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "0–45°C, wilgotność 30–85% bez kondensacji"
+      },
+      {
+        "name": "Certyfikaty",
+        "value": "CE, FCC, IC, CB, CCC, SRRC, RoHS, REACH, WEEE"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "applications": [
+      "Paragony niefiskalne i bony przy kasie",
+      "Etykiety na zamówienia na wynos i dostawy, także bez podkładu",
+      "Skanowanie kodów przy wydawaniu i przyjmowaniu towaru (wersja ze skanerem)"
+    ],
+    "variants": [
+      {
+        "partNumber": "C04050006",
+        "name": "NT320 — USB-C, Ethernet",
+        "attributes": {},
+        "priceFrom": 605.14,
+        "availability": "available"
+      },
+      {
+        "partNumber": "C04050007",
+        "name": "NT320 ze skanerem 2D — USB-C, Ethernet",
+        "attributes": {
+          "Skaner 2D": "Tak"
+        },
+        "priceFrom": 706.53,
+        "availability": "available"
+      },
+      {
+        "partNumber": "C04050003",
+        "name": "NT320 Wi-Fi — USB-C, Ethernet, Wi-Fi, Bluetooth",
+        "attributes": {
+          "Wi-Fi i Bluetooth": "Tak"
+        },
+        "priceFrom": 706.53,
+        "availability": "on-order"
+      },
+      {
+        "partNumber": "C04050001",
+        "name": "NT320 Linerless — USB-C, Ethernet, Wi-Fi, Bluetooth",
+        "attributes": {
+          "Wi-Fi i Bluetooth": "Tak",
+          "Linerless": "Tak"
+        },
+        "priceFrom": 841.75,
+        "availability": "on-order"
+      },
+      {
+        "partNumber": "C04050011",
+        "name": "NT320 Hyper Wi-Fi — USB-C, Ethernet, Wi-Fi, Bluetooth",
+        "attributes": {
+          "Wi-Fi i Bluetooth": "Tak",
+          "Hyper Wi-Fi": "Tak"
+        },
+        "priceFrom": 875.58,
+        "availability": "available"
+      },
+      {
+        "partNumber": "C04050009",
+        "name": "NT320 Hyper Wi-Fi Linerless — USB-C, Ethernet, Wi-Fi, Bluetooth",
+        "attributes": {
+          "Wi-Fi i Bluetooth": "Tak",
+          "Linerless": "Tak",
+          "Hyper Wi-Fi": "Tak"
+        },
+        "priceFrom": 1010.8,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Skaner 2D": "Moduł skanujący z przodu drukarki.\n\n• Tak — odczyt kodów 1D od 4 mil i 2D od 7,5 mil, w tym QR, Data Matrix, PDF417 i Aztec.\n\n• Puste pole — wersja bez skanera.",
+      "Wi-Fi i Bluetooth": "Łączność bezprzewodowa oprócz USB-C i Ethernetu.\n\n• Wi-Fi — praca w bezprzewodowej sieci lokalnej; w wersjach Wi-Fi i Linerless to Wi-Fi 6 (2,4 i 5 GHz).\n\n• Bluetooth — połączenie z tabletem lub telefonem; w wersjach Wi-Fi i Linerless to Bluetooth 5.4 z BLE.\n\n• Puste pole — tylko USB-C i Ethernet.",
+      "Linerless": "Obsługa etykiet bez podkładu (linerless).\n\n• Tak — etykiety bez podkładu oraz paragony i etykiety z podkładem.\n\n• Puste pole — paragony i etykiety z podkładem.",
+      "Hyper Wi-Fi": "Technologia łączności bezprzewodowej SUNMI.\n\n• Tak — wymaga konfiguracji u producenta.\n\n• Puste pole — wersja bez Hyper Wi-Fi."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "epson-tm-m30iii",
+      "bixolon-srp-s300ii",
+      "bixolon-srp-350v",
+      "epson-tm-l100"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI NT320 (EN)",
+        "type": "pdf",
+        "url": "/datasheets/sunmi-nt320.pdf",
+        "size": "1,9 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Którą wersję SUNMI NT320 wybrać?",
+        "answer": "C04050006 ma USB-C i Ethernet. C04050007 ma dodatkowo skaner kodów 1D i 2D z przodu. C04050003 ma Wi-Fi 6 i Bluetooth 5.4 do pracy z tabletem lub telefonem. C04050001 dodatkowo drukuje etykiety bez podkładu. C04050011 i C04050009 mają Hyper Wi-Fi, które wymaga konfiguracji u producenta; C04050009 drukuje też etykiety bez podkładu."
+      },
+      {
+        "question": "Czy SUNMI NT320 drukuje etykiety bez podkładu?",
+        "answer": "Tylko wersje Linerless: C04050001 i C04050009. Pozostałe wersje drukują paragony i etykiety z podkładem. Etykieta może mieć szerokość 30–78 mm i długość 30–150 mm."
+      },
+      {
+        "question": "Jak zasila się SUNMI NT320?",
+        "answer": "Jednym przewodem USB-C, który zasila drukarkę napięciem 5 V / 2 A DC i przesyła dane."
+      },
+      {
+        "question": "Czy SUNMI NT320 jest drukarką fiskalną?",
+        "answer": "Nie. NT320 drukuje paragony niefiskalne, bony i etykiety wysłane z programu. Nie zastępuje kasy ani drukarki fiskalnej."
+      },
+      {
+        "question": "Czy dwie drukarki NT320 można ustawić razem?",
+        "answer": "Tak. Dwie drukarki NT320 mieszczą się obok siebie na wspólnej podstawie. Podstawę kupuje się osobno."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]
 
