@@ -601,7 +601,7 @@ export const citizenPosProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Drukarka, przewód zasilający, osłona włącznika, przewód USB (wersje z RS-232), skrócona instrukcja, 4 gumowe nóżki, przegroda papieru, zestaw do montażu na ścianie"
+        "value": "Drukarka, przewód zasilający, rolka papieru, osłona włącznika, przewód USB (wersje z RS-232), skrócona instrukcja, 4 gumowe nóżki, przegroda papieru, zestaw do montażu na ścianie"
       },
       {
         "name": "Zastosowanie",
@@ -1337,6 +1337,10 @@ export const citizenPosProducts: Product[] = [
       {
         "name": "Normy",
         "value": "CE, UL, FCC klasa A, C-UL, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Obudowa",
+        "value": "Odporna na krople wody spadające pionowo (IPX1)"
       },
       {
         "name": "Sterowniki",
@@ -2910,7 +2914,7 @@ export const citizenPosAccessories: Product[] = [
     "seoTitle": "Przewód Powered USB 24 V Citizen 1100092",
     "seoDescription": "Przewód Powered USB 24 V typu Y Citizen 1100092 (USB i wtyk DC, 1 m): zasilanie i dane drukarki Citizen CT-E301, CT-E351, CT-E601, CT-E651, CT-E651L i CT-S751 z komputera.",
     "shortDescription": "Citizen 1100092 to przewód Powered USB 24 V typu Y. Przez ten przewód drukarka POS Citizen pobiera zasilanie z komputera z portem Powered USB.",
-    "description": "Przewód Citizen 1100092 łączy drukarkę paragonów z komputerem POS z portem Powered USB 24 V. Przez przewód drukarka odbiera dane i zasilanie z komputera, więc nie potrzebuje osobnego zasilacza na stanowisku. Przewód ma kształt litery Y: od strony drukarki kończy się wtykiem USB i wtykiem zasilania DC. Długość przewodu wynosi 1 m.\n\n## Zgodne drukarki POS Citizen\n\nPrzewód pasuje do drukarek [CT-E301](/produkt/citizen-ct-e301), [CT-E351](/produkt/citizen-ct-e351), [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l) i [CT-S751](/produkt/citizen-ct-s751). Te drukarki mają gniazdo zasilania DC na zewnętrzny zasilacz 37AD5. Komputer musi mieć port Powered USB 24 V. Cena dotyczy samego przewodu.\n\n## Powered USB a port do ładowania\n\nDrukarki CT-E601 i CT-S751 mają też port USB do ładowania urządzeń, np. tabletu (5 V, 2 A). To inny port: oddaje zasilanie z drukarki, a nie zasila drukarki z komputera.",
+    "description": "Przewód Citizen 1100092 łączy drukarkę paragonów z komputerem POS z portem Powered USB 24 V. Przez przewód drukarka odbiera dane i zasilanie z komputera, więc nie potrzebuje osobnego zasilacza na stanowisku. Przewód ma kształt litery Y, ze złączem USB i wtykiem zasilania DC. Długość przewodu wynosi 1 m.\n\n## Zgodne drukarki POS Citizen\n\nPrzewód pasuje do drukarek [CT-E301](/produkt/citizen-ct-e301), [CT-E351](/produkt/citizen-ct-e351), [CT-E601](/produkt/citizen-ct-e601), [CT-E651](/produkt/citizen-ct-e651), [CT-E651L](/produkt/citizen-ct-e651l) i [CT-S751](/produkt/citizen-ct-s751). Te drukarki mają gniazdo zasilania DC na zewnętrzny zasilacz 37AD5. Komputer musi mieć port Powered USB 24 V. Cena dotyczy samego przewodu.\n\n## Powered USB a port do ładowania\n\nDrukarki CT-E601 i CT-S751 mają też port USB do ładowania urządzeń, np. tabletu (5 V, 2 A). To inny port: oddaje zasilanie z drukarki, a nie zasila drukarki z komputera.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
