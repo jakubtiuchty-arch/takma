@@ -3715,11 +3715,9 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg",
-      "/images/products/C02020008-2.png"
+      "/images/products/C02020008.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium",
       "Ekran klienta SUNMI 10,1\" C02020008 zamontowany na komputerze POS SUNMI T3 — widok od strony klienta; komputer T3 kupuje się osobno"
     ],
     "tags": [
@@ -3799,11 +3797,9 @@ export const sunmiAccessories: Product[] = [
     ],
     "manufacturerId": "sunmi",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg",
-      "/images/products/C02020007-2.png"
+      "/images/products/C02020007.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia akcesorium",
       "Drugi ekran SUNMI 15,6\" C02020007 zamontowany za komputerem POS SUNMI T3 — widok z przodu z lewej strony; komputer T3 kupuje się osobno"
     ],
     "tags": [
