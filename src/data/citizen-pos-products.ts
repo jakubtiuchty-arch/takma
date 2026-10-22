@@ -2089,6 +2089,246 @@ export const citizenPosProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "citizen-ct-s4500",
+    "slug": "citizen-ct-s4500",
+    "name": "Citizen CT-S4500",
+    "seoH1": "Citizen CT-S4500",
+    "seoTitle": "Drukarka paragonów Citizen CT-S4500 112 mm, etykiety, USB",
+    "seoDescription": "Drukarka paragonów Citizen CT-S4500 na papier do 112 mm: paragony, bilety i etykiety, skalowanie A4. Drukarka POS Citizen CT-S4500. PN: CTS4500XNEBX, CTS4500XTEBX.",
+    "shortDescription": "Citizen CT-S4500 — termiczna drukarka paragonów niefiskalnych i etykiet na papier 58–112 mm, z wyjściem z przodu. Drukuje do 200 mm/s; sterownik skaluje dokumenty A4 do szerokości papieru 4 cale.",
+    "description": "Drukarka Citizen CT-S4500 drukuje paragony niefiskalne, bilety i etykiety na papierze o szerokości do 112 mm. Pracuje w handlu, w hotelarstwie, w kiosku, w zakładach bukmacherskich i w wypożyczalniach. Sterownik kompresji skaluje dokumenty A4 i drukuje je na papierze 4 cale.\n\n## Papier do 112 mm i etykiety\n\nDrukarka drukuje do 200 mm/s w rozdzielczości 203 dpi, na szerokości do 104 mm. Przyjmuje papier o szerokości 58–112 mm i grubości 65–150 µm, w rolce o średnicy do 102 mm. Czujniki wykrywają szczelinę między etykietami, odblaskowy czarny znacznik i koniec papieru. Wydruk wychodzi z przodu, co chroni mechanizm przed wilgocią i ciałami obcymi. Gilotyna wykonuje cięcie pełne lub częściowe.\n\n## USB, port ładowania i gniazdo karty\n\nKażda wersja ma USB 2.0, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Ethernet, RS-232 albo Wi-Fi dodaje karta interfejsu. Wersja CTS4500XTEBX ma Bluetooth. Obudowa ma 170 × 216 × 151 mm i waży 2,5 kg. W zestawie jest zasilacz zewnętrzny. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nPapier do 80 mm i etykiety, przy druku paragonów do 300 mm/s, obsługuje [Citizen CT-E651L](/produkt/citizen-ct-e651l).",
+    "categoryId": "drukarki-pos",
+    "subcategoryIds": [],
+    "manufacturerId": "citizen",
+    "priceFrom": 1148.62,
+    "availability": "available",
+    "images": [
+      "/images/products/CTS4500XNEBX.png",
+      "/images/products/CTS4500XNEBX-2.png",
+      "/images/products/CTS4500XNEBX-3.png",
+      "/images/products/CTS4500XNEBX-4.png",
+      "/images/products/CTS4500XNEBX-5.png",
+      "/images/products/CTS4500XNEBX-6.png"
+    ],
+    "imageDescriptions": [
+      "Citizen CT-S4500 w czarnej obudowie — widok z przodu pod kątem: okienko podglądu papieru w pokrywie i wylot z przodu",
+      "Citizen CT-S4500 — widok z przodu: wylot papieru, diody i przycisk FEED",
+      "Citizen CT-S4500 — widok z tyłu: złącza i gniazdo karty interfejsu z zamontowaną kartą sieciową",
+      "Citizen CT-S4500 — pokrywa otwarta do góry, papier w komorze",
+      "Citizen CT-S4500 w białej obudowie — wydruk w wylocie z przodu",
+      "Citizen CT-S4500 w białej obudowie — widok z boku z otwartą pokrywą i rolką papieru"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "CTS4500XNEBX, CTS4500XNEWX, CTS4500XTEBX"
+      },
+      {
+        "name": "Metoda druku",
+        "value": "Termiczny bezpośredni"
+      },
+      {
+        "name": "Rozdzielczość",
+        "value": "203 dpi"
+      },
+      {
+        "name": "Prędkość druku",
+        "value": "Do 200 mm/s (paragony i etykiety)"
+      },
+      {
+        "name": "Szerokość druku",
+        "value": "Do 104 mm"
+      },
+      {
+        "name": "Szerokość papieru",
+        "value": "58–112 mm"
+      },
+      {
+        "name": "Średnica rolki",
+        "value": "Do 102 mm (średnica zewnętrzna)"
+      },
+      {
+        "name": "Grubość papieru",
+        "value": "65–150 µm"
+      },
+      {
+        "name": "Rodzaj materiału",
+        "value": "Papier do paragonów, bilety, etykiety"
+      },
+      {
+        "name": "Wyjście papieru",
+        "value": "Z przodu"
+      },
+      {
+        "name": "Gilotyna",
+        "value": "Cięcie pełne i częściowe"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Szczelina, odblaskowy czarny znacznik, koniec papieru"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "USB 2.0 i port USB do ładowania urządzeń (5 V, 2 A); zależnie od PN: Bluetooth"
+      },
+      {
+        "name": "Karty interfejsu (opcja)",
+        "value": "Ethernet, Ethernet z USB host, USB z hubem, RS-232, Wi-Fi compact"
+      },
+      {
+        "name": "Port szuflady kasowej",
+        "value": "Tak, obsługa 2 szuflad"
+      },
+      {
+        "name": "Skalowanie dokumentów",
+        "value": "Sterownik kompresji skaluje dokumenty A4 do szerokości papieru 4 cale"
+      },
+      {
+        "name": "Języki poleceń",
+        "value": "ESC/POS"
+      },
+      {
+        "name": "Pamięć flash",
+        "value": "384 KB"
+      },
+      {
+        "name": "Panel sterowania",
+        "value": "1 przycisk, 2 diody LED"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "100–240 V, 50/60 Hz, zasilacz zewnętrzny w zestawie"
+      },
+      {
+        "name": "Wymiary (szer. × gł. × wys.)",
+        "value": "170 × 216 × 151 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "2,5 kg"
+      },
+      {
+        "name": "Kolor obudowy",
+        "value": "Czarna lub biała"
+      },
+      {
+        "name": "Normy",
+        "value": "CE, UL, C-UL, FCC, VCCI; ENERGY STAR"
+      },
+      {
+        "name": "Sterowniki",
+        "value": "Bezpłatne, do pobrania ze strony producenta, dla różnych platform"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Drukarka, zasilacz, przewód zasilający, oś do rolek z dużą gilzą, uchwyt przewodu USB, rolka papieru, skrócona instrukcja"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Wydruki z aplikacji; urządzenie niefiskalne"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "2 lata, w tym głowica i gilotyna"
+      }
+    ],
+    "applications": [
+      "Paragony i dokumenty na papierze 112 mm zamiast wydruku A4",
+      "Bilety i kupony w zakładach bukmacherskich i w kiosku",
+      "Etykiety i potwierdzenia w wypożyczalni i w hotelu"
+    ],
+    "variants": [
+      {
+        "partNumber": "CTS4500XNEBX",
+        "name": "CT-S4500 — USB, czarna",
+        "attributes": {
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1148.62,
+        "availability": "available"
+      },
+      {
+        "partNumber": "CTS4500XNEWX",
+        "name": "CT-S4500 — USB, biała",
+        "attributes": {
+          "Kolor obudowy": "Biała"
+        },
+        "priceFrom": 1148.62,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "CTS4500XTEBX",
+        "name": "CT-S4500 — USB, Bluetooth, czarna",
+        "attributes": {
+          "Bluetooth": "Tak",
+          "Kolor obudowy": "Czarna"
+        },
+        "priceFrom": 1357.47,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Bluetooth": "Łączność Bluetooth zamontowana fabrycznie obok USB.\n\n• Druk bez przewodu z komputera, tabletu lub telefonu.",
+      "Kolor obudowy": "Kolor obudowy CT-S4500.\n\n• Czarna — wersje z USB i z Bluetoothem.\n\n• Biała — wersja z USB."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "citizen-pos-wifi-ppz60112s",
+      "citizen-pos-lan-usb-host-ppz60104s",
+      "citizen-pos-rs232-pps00276s",
+      "citizen-pos-zasilacz-pwt20035-0",
+      "citizen-pos-lan-premium-if2-es04",
+      "citizen-pos-wifi-premium-if2-wf5s",
+      "citizen-pos-wifi-premium-if2-wf5l",
+      "citizen-pos-modul-wifi-upg-wf5s",
+      "citizen-pos-modul-wifi-upg-wf5l"
+    ],
+    "relatedProducts": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Citizen CT-S4500 (PL)",
+        "type": "pdf",
+        "url": "/datasheets/citizen-ct-s4500.pdf",
+        "size": "263 KB"
+      },
+      {
+        "name": "Sterowniki i narzędzia CT-S4500",
+        "type": "driver",
+        "url": "https://www.citizen-systems.com/pl/support/drivers-and-tools/CT-S4500",
+        "size": "Online"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Citizen CT-S4500 drukuje etykiety?",
+        "answer": "Tak. Czujniki wykrywają szczelinę między etykietami i odblaskowy czarny znacznik. Etykiety drukarka drukuje do 200 mm/s, tak samo jak paragony. Do rolek z dużą gilzą służy oś dołączona do zestawu."
+      },
+      {
+        "question": "Czy CT-S4500 wydrukuje dokument A4?",
+        "answer": "Tak. Sterownik kompresji skaluje dokument A4 i drukuje go na papierze 4 cale (112 mm). Szerokość druku wynosi do 104 mm."
+      },
+      {
+        "question": "Jak podłączyć CT-S4500 do sieci przewodowej lub Wi-Fi?",
+        "answer": "Kartę interfejsu wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Port RS-232 dodaje [karta PPS00276S](/produkt/citizen-pos-rs232-pps00276s)."
+      },
+      {
+        "question": "Czy Citizen CT-S4500 jest drukarką fiskalną?",
+        "answer": "Nie. CT-S4500 drukuje paragony niefiskalne, bilety i etykiety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+      },
+      {
+        "question": "Co jest w zestawie z CT-S4500?",
+        "answer": "Drukarka, zasilacz, przewód zasilający, oś do rolek z dużą gilzą, uchwyt przewodu USB, rolka papieru i skrócona instrukcja. Zasilacz zgodny z CT-S4500, sprzedawany osobno, to [Citizen PWT20035-0](/produkt/citizen-pos-zasilacz-pwt20035-0)."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
