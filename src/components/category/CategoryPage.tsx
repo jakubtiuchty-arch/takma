@@ -348,7 +348,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
               <span className="text-white font-medium whitespace-nowrap">{category.name}</span>
             </nav>
             <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-lg">{category.h1 ?? category.name}</h1>
-            <p className="text-sm text-slate-200 max-w-lg">Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.</p>
+            <p className="text-sm text-slate-200 max-w-xl lg:max-w-2xl">Dotykowe komputery POS do sklepu, kawiarni i restauracji. Program kasowy obsługuje zamówienia, rachunki i stany magazynowe. Wybierz model z drukarką paragonów lub bez niej i dobierz ekran klienta.</p>
             <p className="text-slate-400 text-sm mt-2">{products.length} {productWord}</p>
           </div>
         </section>
