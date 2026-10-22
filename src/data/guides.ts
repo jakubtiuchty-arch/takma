@@ -15372,20 +15372,20 @@ export const guides: Guide[] = [
 <table>
 <thead><tr><th>Parametr</th><th>Zebra KC401</th></tr></thead>
 <tbody>
-<tr><td>Ekran</td><td>10,1" dotykowy, 1280×800, 350 nitów, szkło o twardości 9H, odporne na zarysowania i odciski palców</td></tr>
+<tr><td>Ekran</td><td>10,1" dotykowy, 1280×800, 300 nitów, szkło o twardości 9H, odporne na zarysowania i odciski palców</td></tr>
 <tr><td>Obsługa dotyku</td><td>Palcem, w rękawiczce lub rysikiem pojemnościowym</td></tr>
 <tr><td>Orientacja</td><td>Pionowa lub pozioma</td></tr>
 <tr><td>System</td><td>Android z aktualizacjami bezpieczeństwa LifeGuard</td></tr>
 <tr><td>Procesor</td><td>Qualcomm Dragonwing Q-6690, do 2,0 GHz</td></tr>
 <tr><td>Pamięć</td><td>6 GB RAM (LPDDR5) / 64 GB (UFS 2.2), microSD do 2 TB</td></tr>
-<tr><td>Skanowanie</td><td>Aparat 5 MP (standard) lub opcjonalny skaner 1D/2D SR500; trzy kąty montażu skanera (0°, −25°, +25°)</td></tr>
+<tr><td>Skanowanie</td><td>Aparat 5 MP (standard) lub opcjonalny moduł skanera 1D/2D SR500 w trzech wersjach kąta: +25°, 0° lub −25°</td></tr>
 <tr><td>Płatności / NFC</td><td>NFC zgodne z EMVCO, Apple VAS, Google Smart Tap, portfele Apple, Google i Samsung</td></tr>
 <tr><td>Łączność</td><td><strong>Wi-Fi 7</strong> (oraz Wi-Fi 6), Bluetooth 6.0, Ethernet 10/100/1000 (RJ45)</td></tr>
 <tr><td>Zasilanie</td><td>12 V DC 36 W, <strong>Power over Ethernet (PoE, 30 W)</strong> lub 5,4 V DC 16 W</td></tr>
 <tr><td>Porty</td><td>USB-C, 2× USB-A, RJ45</td></tr>
-<tr><td>Sygnalizacja</td><td>Programowalne, wielokolorowe paski LED (dowolny kolor), sygnał dźwiękowy, wibracja</td></tr>
+<tr><td>Sygnalizacja</td><td>Programowalne, wielokolorowe paski LED (czerwony, niebieski, zielony i ich kombinacje), sygnał dźwiękowy, wibracja</td></tr>
 <tr><td>Odporność</td><td>Szczelność IP65, testowany na uderzenia, ESD do ±15 kV</td></tr>
-<tr><td>Audio</td><td>Głośniki stereo, 3 mikrofony, VoIP z PTT, redukcja szumów Qualcomm Fluence</td></tr>
+<tr><td>Audio</td><td>Głośniki stereo, 2 mikrofony, VoIP z PTT, redukcja szumów Qualcomm Fluence</td></tr>
 <tr><td>Montaż</td><td>Uchwyty VESA — ściana, słupek, lada, szafka</td></tr>
 <tr><td>Waga</td><td>920 g (bez skanera) / 947 g (ze skanerem)</td></tr>
 </tbody>
@@ -15398,14 +15398,14 @@ export const guides: Guide[] = [
 <p>Jeśli korzystasz dziś z kiosków Zebra CC6000, przejście na KC401 jest bezbolesne — to <strong>zamiennik montowany w istniejącej infrastrukturze</strong>. Ale pod obudową zmienia się bardzo dużo:</p>
 <p><strong>Łączność następnej generacji.</strong> KC401 wprowadza <strong>Wi-Fi 7</strong> i Bluetooth 6.0. W praktyce oznacza to płynniejsze działanie interfejsu i szybsze ładowanie treści nawet w zatłoczonej sieci sklepowej czy hotelowej. Dochodzi też pełne <strong>zasilanie przez Ethernet (PoE)</strong> — jeden kabel doprowadza prąd i sieć, więc kiosk można powiesić tam, gdzie nie ma gniazdka.</p>
 <p><strong>Płatności zbliżeniowe wbudowane na stałe.</strong> Technologia NFC „dotknij ekranu" obsługuje karty, portfele mobilne (Apple, Google, Samsung) oraz bilety i karty lojalnościowe w Apple VAS i Google Smart Tap. Klient, który chce ominąć kolejkę, płaci jednym gestem.</p>
-<p><strong>Sygnalizacja świetlna, którą sam ustawiasz.</strong> Wbudowane paski LED świecą dowolnym kolorem — możesz nimi prowadzić użytkownika (np. zielony = gotowe, czerwony = błąd) i ułatwić odnalezienie kiosku w przestrzeni.</p>
+<p><strong>Sygnalizacja świetlna, którą sam ustawiasz.</strong> Wbudowane paski LED świecą na czerwono, niebiesko, zielono lub w kombinacji tych kolorów — możesz nimi prowadzić użytkownika (np. zielony = gotowe, czerwony = błąd) i ułatwić odnalezienie kiosku w przestrzeni.</p>
 <p><strong>Dłuższe bezpieczeństwo.</strong> Aktualizacje LifeGuard dla Androida chronią kiosk przed nowymi zagrożeniami przez lata, a Ty decydujesz, które urządzenia i kiedy aktualizować.</p>`,
     },
     {
       id: 'skanowanie-platnosci',
       heading: 'Skanowanie i płatności — serce samoobsługi',
       content: `
-<p><strong>Skanowanie bez trzymania w ręku.</strong> W wersji standardowej KC401 skanuje aparatem 5 MP, a po dołożeniu opcjonalnego skanera <strong>SR500 1D/2D</strong> odczytuje praktycznie każdy kod kreskowy w trudnych warunkach — z ekranu telefonu, ze zmiętej etykiety, z odbicia. Skaner montuje się pod jednym z trzech kątów (0°, −25°, +25°), więc kąt odczytu dopasujesz do sposobu, w jaki klient podchodzi do kiosku.</p>
+<p><strong>Skanowanie bez trzymania w ręku.</strong> W wersji standardowej KC401 skanuje aparatem 5 MP, a po dołożeniu opcjonalnego skanera <strong>SR500 1D/2D</strong> odczytuje praktycznie każdy kod kreskowy w trudnych warunkach — z ekranu telefonu, ze zmiętej etykiety, z odbicia. Moduł skanera jest dostępny w trzech wersjach kąta: +25°, 0° i −25°, więc kąt odczytu dopasujesz do sposobu, w jaki klient podchodzi do kiosku.</p>
 <p>To otwiera typowe scenariusze samoobsługi: sprawdzenie ceny i dostępności, skanowanie kart lojalnościowych, weryfikacja promocji, rozpoczęcie zwrotu, a w hotelarstwie i eventach — meldowanie gości oraz kontrola biletów z telefonu lub wydruku.</p>
 <p><strong>Płatności i bilety jednym dotknięciem.</strong> Moduł NFC zamienia oczekiwanie w błyskawiczną transakcję: płatność kartą lub portfelem mobilnym, realizacja biletu cyfrowego, wykorzystanie karty podarunkowej, naliczenie rabatu lojalnościowego. Skrócenie kolejek przekłada się wprost na wyższą przepustowość stanowiska i zadowolenie klienta.</p>`,
     },
@@ -15435,7 +15435,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Czy KC401 obsługuje płatności zbliżeniowe?',
-      answer: 'Tak. Wbudowany moduł NFC obsługuje płatności kartami i portfelami mobilnymi (Apple, Google, Samsung) oraz bilety i karty lojalnościowe w standardach Apple VAS i Google Smart Tap. Obsługa płatności wymaga odpowiedniej umowy serwisowej Zebra.',
+      answer: 'Tak. Wbudowany moduł NFC obsługuje płatności kartami i portfelami mobilnymi (Apple, Google, Samsung) oraz bilety i karty lojalnościowe w standardach Apple VAS i Google Smart Tap. Zebra nie obsługuje w KC401 płatności SoftPOS w kiosku bez obsługi personelu. Sposób przyjmowania płatności kartą, np. przez terminal płatniczy, zależy od programu kiosku i operatora płatności. Plan Zebra OneCare dotyczy aktualizacji systemu i poprawek zabezpieczeń (LifeGuard).',
     },
     {
       question: 'Czy kiosk można zasilić bez gniazdka elektrycznego?',

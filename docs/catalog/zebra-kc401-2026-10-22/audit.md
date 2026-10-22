@@ -100,12 +100,21 @@ Po pierwszym buildzie kafle Zebra w `/akcesoria-do-kioskow` miały pole kwadrato
 - `next start -p 3139`: `/produkt/zebra-kc401` 200 bez przekierowania, JSON-LD `image` z 8 adresami; 8 plików `KC4010B-00101CP0-A6*.png` 200; feed: `KC4010B-00101CP0-A6`, „Kiosk samoobsługowy Zebra KC401”, kategoria 543648, in_stock; 450042 w feedzie (in_stock); poradnik KC401 ma 1 link do karty.
 - Galeria 584 × 584: KC401 skala 1,014, SUNMI FLEX 3 P11050020 skala 1,015 — ten sam rozmiar produktu. Kafel w `/kioski-samoobslugowe`: oba 299 × 224, skala 0,869 (KC401) i 0,870 (FLEX 3).
 
+## Poradnik KC401 — poprawki zgodności z kartą katalogową (22.10.2026, decyzja głównej sesji)
+
+Minimalne zmiany w `src/data/guides.ts` (`zebra-kc401-kiosk-samoobslugowy`), reszta treści bez zmian:
+- tabela „Ekran”: „350 nitów” → „300 nitów” (jedyne wystąpienie);
+- tabela „Audio”: „3 mikrofony” → „2 mikrofony”;
+- tabela „Sygnalizacja”: „(dowolny kolor)” → „(czerwony, niebieski, zielony i ich kombinacje)”; akapit „Sygnalizacja świetlna…”: „świecą dowolnym kolorem” → „świecą na czerwono, niebiesko, zielono lub w kombinacji tych kolorów” (karta: „red/blue/green combination”);
+- tabela „Skanowanie”: „trzy kąty montażu skanera (0°, −25°, +25°)” → „moduł skanera … w trzech wersjach kąta: +25°, 0° lub −25°”; akapit „Skanowanie bez trzymania w ręku”: „Skaner montuje się pod jednym z trzech kątów” → „Moduł skanera jest dostępny w trzech wersjach kąta: +25°, 0° i −25°” (bez linków — w tym miejscu poradnik nie ma linków);
+- FAQ „Czy KC401 obsługuje płatności zbliżeniowe?”: usunięte „Obsługa płatności wymaga odpowiedniej umowy serwisowej Zebra.”; dopisane: SoftPOS w kiosku bez obsługi personelu nieobsługiwany, sposób płatności kartą (np. terminal płatniczy) zależy od programu kiosku i operatora płatności, OneCare dotyczy aktualizacji systemu i poprawek zabezpieczeń (LifeGuard).
+
 ## Otwarte
 
 - Rozpisanie PN KC4010B-00101CP0-A6 (GMS, region) potwierdzić u dystrybutora; inne konfiguracje KC401 niedostępne w API.
 - Zdjęcia PWR-BGA12V36W0WW i KT-152096-03 w rozdzielczości ≥ 1000 px (zastępcze na kartach).
 - KT-152098-03 (cienki uchwyt ścienny) dodać, gdy pojawi się w `/api/stock`.
-- Poradnik `/poradnik/zebra-kc401-kiosk-samoobslugowy`: dodany jeden link do karty (pierwsze „Zebra KC401” w podsumowaniu). Treści nie zmieniano. Rozbieżności z kartą katalogową do decyzji:
+- Poradnik `/poradnik/zebra-kc401-kiosk-samoobslugowy`: dodany jeden link do karty (pierwsze „Zebra KC401” w podsumowaniu). Wypisane niżej rozbieżności poprawiono — patrz sekcja „Poradnik KC401 — poprawki”:
   - SPRZECZNE: jasność „350 nitów” (karta: 300); „3 mikrofony” (karta: two microphones); FAQ „Obsługa płatności wymaga odpowiedniej umowy serwisowej Zebra” (karta: umowa OneCare dotyczy LifeGuard; przy płatnościach przypis „Unattended SoftPOS not supported”).
   - NIEPRECYZYJNE: paski LED „dowolnym kolorem” (karta: kombinacja czerwony/niebieski/zielony); „skaner montuje się pod jednym z trzech kątów” (to trzy osobne moduły SR0/SR1/SR2); brak informacji, że SoftPOS bez obsługi personelu nie jest obsługiwany.
 - Karta 450042: `availability` ustawione na `available` (`/api/stock` 22.10.2026: DE 300). Statyczne `priceFrom` 43,16 zł zostaje (API: 42,68 zł); logiki cen nie zmieniano.
