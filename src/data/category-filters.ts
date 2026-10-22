@@ -1945,7 +1945,8 @@ categoryFilters['akcesoria-do-komputerow-pos'] = [
     { value: 'SUNMI T3', pattern: 'SUNMI T3(,|$)', specs: ['Zgodność'] },
     { value: 'SUNMI T3 80 mm', pattern: 'SUNMI T3 80 mm', specs: ['Zgodność'] },
     { value: 'SUNMI T3 PRO', pattern: 'SUNMI T3 PRO(,|$)', specs: ['Zgodność'] },
-    { value: 'SUNMI T3 PRO MAX', pattern: 'SUNMI T3 PRO MAX', specs: ['Zgodność'] }
+    { value: 'SUNMI T3 PRO MAX', pattern: 'SUNMI T3 PRO MAX', specs: ['Zgodność'] },
+    { value: 'SUNMI D3 PRO', pattern: 'SUNMI D3 PRO', specs: ['Zgodność'] }
   ] }
 ]
 
@@ -2000,7 +2001,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
   },
   "akcesoria-do-komputerow-pos": {
     "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
-    "Zgodny komputer": "Model, z którym akcesorium współpracuje. Ekrany klienta do T3 i do T3 PRO nie są zamienne. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
+    "Zgodny komputer": "Model, z którym akcesorium współpracuje. Ekrany klienta do T3 i do T3 PRO nie są zamienne. Ekran C02020005 pasuje tylko do D3 PRO. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
   },
   "mobilne-drukarki-paragonow": {
     "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
