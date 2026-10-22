@@ -3523,7 +3523,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "15,6\": ekran, zasilacz, uchwyt VESA 100 × 100, przewody zasilające (wtyczka EU i UK); 18,5\" i 22\": ekran, przewody zasilające (wtyczka EU i UK)"
+        "value": "Ekran, przewody zasilające z wtyczką EU i UK, zasilacz (wersja 15,6\"), uchwyt VESA 100 × 100 (wersja 15,6\")"
       },
       {
         "name": "Zastosowanie",
@@ -3575,7 +3575,7 @@ export const sunmiProducts: Product[] = [
     ],
     "variantAttributeTooltips": {
       "Przekątna ekranu": "Przekątna ekranu dotykowego FHD 1920 × 1080 px.\n\n• 15,6\" — 250 nitów, najmniejsza obudowa, 2,0 kg.\n\n• 18,5\" i 21,5\" (sprzedawany jako 22\") — ekran IPS 400 nitów, procesor 8-rdzeniowy.",
-      "PoE wbudowane": "Zasilanie i dane przez jeden przewód sieciowy (PoE), bez osobnego zasilacza.\n\n• W wersji 15,6\" PoE jest wbudowane.\n\n• Wersje 18,5\" i 22\" zasila się przez PoE po dodaniu modułu PoE SUNMI.",
+      "PoE wbudowane": "Zasilanie i dane przez jeden przewód sieciowy (PoE), bez osobnego przewodu zasilającego.\n\n• W wersji 15,6\" PoE jest wbudowane.\n\n• Wersje 18,5\" i 22\" zasila się przez PoE po dodaniu modułu PoE SUNMI.",
       "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Mają go wersje 18,5\" i 22\".",
       "Port RS485/RS232": "Port szeregowy RS485/RS232 do urządzeń z interfejsem szeregowym.\n\n• Mają go wersje 18,5\" i 22\", obok 2 portów RJ45 i 2 portów USB 2.0."
     },

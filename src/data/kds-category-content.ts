@@ -93,7 +93,7 @@ export const kdsCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Czy ekran KDS działa bez komputera POS?",
-      "answer": "[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) to komputer z Androidem 13 i ekranem dotykowym, dlatego uruchamia aplikacje samodzielnie. Do obsługi zamówień potrzebny jest program KDS zgodny z programem sprzedaży. Zamówienia przyjmuje [komputer POS](/komputery-pos) lub terminal, a program KDS przesyła je na ekran w kuchni."
+      "answer": "[SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds) ma własny system SUNMI OS 4.0 na Androidzie 13, dlatego uruchamia aplikacje samodzielnie. Do obsługi zamówień potrzebny jest program KDS zgodny z programem sprzedaży. Zamówienia przyjmuje [komputer POS](/komputery-pos) lub terminal, a program KDS przesyła je na ekran w kuchni."
     },
     {
       "question": "Jak zamontować ekran KDS?",
