@@ -96307,7 +96307,7 @@ export const brandCategories: BrandCategory[] = [
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne SUNMI",
   "seoTitle": "Kolektory danych i terminale POS SUNMI — od {cenaOd} zł",
-  "seoDescription": "Kolektory danych i terminale POS SUNMI do magazynu, sklepu i gastronomii: L3, L2Ks, L2H, L2s Pro, M3 oraz V3, V3H i V3 Plus z drukarką. Ceny netto od {cenaOd} zł, PN z zasilaniem EU i akcesoria.",
+  "seoDescription": "Kolektory danych i terminale POS SUNMI do magazynu, sklepu i restauracji: L3, L2Ks, L2H, L2s Pro, M3, V3, V3H i V3 Plus. Ceny netto od {cenaOd} zł.",
   "longDescription": "Kolektory danych i terminale POS SUNMI do pracy z towarem i obsługi klienta. Seria L to kolektory danych. M3 obsługuje zamówienia przez Wi-Fi. V3, V3H i V3 Plus to terminale POS z wbudowaną drukarką paragonów.",
   "detailedDescription": "",
   "faq": [
