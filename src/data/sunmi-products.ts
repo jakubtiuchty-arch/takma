@@ -1336,7 +1336,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT320 80 mm, linerless",
     "seoDescription": "Drukarka paragonów SUNMI NT320 i drukarka etykiet SUNMI 80 mm: etykiety linerless, skaner 2D, Wi-Fi, USB-C i Ethernet. NT320 SUNMI, PN: C04050006, C04050007, C04050003, C04050001, C04050011, C04050009.",
     "shortDescription": "SUNMI NT320 — termiczna drukarka paragonów niefiskalnych i etykiet na papier do 80 mm, z USB-C i Ethernetem. Wersje z Wi-Fi i Bluetooth, skanerem 2D albo obsługą etykiet bez podkładu.",
-    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. W zestawie są rolka papieru 80 mm i prowadnica, którą ustawia się do węższej rolki, np. 58 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Drukarka pracuje ustawiona pionowo albo na boku. Port RJ12 steruje szufladą kasową. Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
+    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. W zestawie są rolka papieru 80 mm i prowadnica, którą ustawia się do węższej rolki, np. 58 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Drukarka pracuje ustawiona pionowo albo na boku. Port RJ12 steruje szufladą kasową, np. [SUNMI Mini C06000022](/produkt/sunmi-c06000022). Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1444,7 +1444,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Ustawienie",
-        "value": "Pionowo lub na boku; dwie drukarki na wspólnej podstawie sprzedawanej osobno"
+        "value": "Pionowo lub na boku; dwie drukarki na podstawie C20000103 sprzedawanej osobno"
       },
       {
         "name": "Zawartość zestawu",
@@ -1553,7 +1553,10 @@ export const sunmiProducts: Product[] = [
       "Hyper Wi-Fi": "Technologia łączności bezprzewodowej SUNMI.\n\n• Tak — wymaga konfiguracji u producenta.\n\n• Puste pole — wersja bez Hyper Wi-Fi."
     },
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "sunmi-c06000022",
+      "sunmi-c20000103"
+    ],
     "relatedProducts": [
       "epson-tm-m30iii",
       "bixolon-srp-s300ii",
@@ -1598,7 +1601,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Czy dwie drukarki NT320 można ustawić razem?",
-        "answer": "Tak. Podstawa Two-In-One mieści dwie drukarki NT320 obok siebie, ułożone na boku. Podstawę kupuje się osobno. NT320 drukuje zarówno ustawiona pionowo, jak i na boku."
+        "answer": "Tak. Podstawa [SUNMI C20000103](/produkt/sunmi-c20000103) (Two-In-One Base) mieści dwie drukarki NT320 obok siebie, ułożone na boku. Podstawę kupuje się osobno. NT320 drukuje zarówno ustawiona pionowo, jak i na boku."
       }
     ],
     "createdAt": "2026-10-22",
@@ -3147,9 +3150,9 @@ export const sunmiAccessories: Product[] = [
     "slug": "sunmi-c06000022",
     "name": "Szuflada kasowa SUNMI Mini",
     "seoTitle": "Szuflada kasowa SUNMI Mini — C06000022",
-    "seoDescription": "Szuflada kasowa SUNMI Mini C06000022: 4 przegródki na banknoty, 3 na monety, złącze RJ11, sterowanie 9–24 V. Szuflada SUNMI do drukarki NT220. PN C06000022.",
+    "seoDescription": "Szuflada kasowa SUNMI Mini C06000022: 4 przegródki na banknoty, 3 na monety, złącze RJ11, sterowanie 9–24 V. Szuflada SUNMI do drukarek NT220 i NT320. PN C06000022.",
     "shortDescription": "Szuflada kasowa SUNMI Mini — otwierana do przodu, 4 przegródki na banknoty i 3 na monety. Otwiera się impulsem z drukarki lub kasy 9 V, 12 V albo 24 V.",
-    "description": "Szuflada kasowa SUNMI Mini C06000022 otwiera się do przodu impulsem z drukarki paragonów lub kasy. Przyjmuje napięcie sterujące 9 V, 12 V lub 24 V. Złącze RJ11 łączy się z drukarką przewodem RJ11/RJ12, który jest w zestawie.\n\nWkład ma 4 przegródki na banknoty, 3 przegródki na monety i szczelinę na paragony. Szuflada ma wymiary 317 × 332 × 72 mm (szer. × gł. × wys.), przenosi obciążenie do 10 kg i wytrzymuje ponad 1 000 000 otwarć. Zamek ma trzy położenia. W górnej części jest schowek na przewody, a panel przedni jest wykonany z tworzywa ABS.\n\n## Zgodna drukarka\n\n[SUNMI NT220](/produkt/sunmi-nt220) — port szuflady RJ12, 24 V / 1 A.",
+    "description": "Szuflada kasowa SUNMI Mini C06000022 otwiera się do przodu impulsem z drukarki paragonów lub kasy. Przyjmuje napięcie sterujące 9 V, 12 V lub 24 V. Złącze RJ11 łączy się z drukarką przewodem RJ11/RJ12, który jest w zestawie.\n\nWkład ma 4 przegródki na banknoty, 3 przegródki na monety i szczelinę na paragony. Szuflada ma wymiary 317 × 332 × 72 mm (szer. × gł. × wys.), przenosi obciążenie do 10 kg i wytrzymuje ponad 1 000 000 otwarć. Zamek ma trzy położenia. W górnej części jest schowek na przewody, a panel przedni jest wykonany z tworzywa ABS.\n\n## Zgodne drukarki\n\n[SUNMI NT220](/produkt/sunmi-nt220) — port szuflady RJ12, 24 V / 1 A.\n\n[SUNMI NT320](/produkt/sunmi-nt320) — port szuflady RJ12.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-drukarek-etykiet"
@@ -3215,7 +3218,7 @@ export const sunmiAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "SUNMI NT220"
+        "value": "SUNMI NT220, SUNMI NT320"
       },
       {
         "name": "Gwarancja",
@@ -3225,7 +3228,8 @@ export const sunmiAccessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "sunmi-nt220"
+      "sunmi-nt220",
+      "sunmi-nt320"
     ],
     "applications": [
       "Przechowywanie gotówki przy stanowisku kasowym",
@@ -3239,6 +3243,67 @@ export const sunmiAccessories: Product[] = [
         "size": "1,6 MB"
       }
     ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-c20000103",
+    "slug": "sunmi-c20000103",
+    "name": "Podstawa SUNMI na dwie drukarki NT320",
+    "seoTitle": "Podstawa SUNMI na dwie drukarki NT320 — C20000103",
+    "seoDescription": "Podstawa SUNMI C20000103 (Two-In-One Base) na dwie drukarki SUNMI NT320 ustawione obok siebie. Podstawa do drukarki SUNMI NT320, PN C20000103.",
+    "shortDescription": "Podstawa SUNMI Two-In-One na dwie drukarki SUNMI NT320 ułożone obok siebie na boku. Drukarki nie wchodzą w skład zestawu.",
+    "description": "Podstawa SUNMI C20000103 (Two-In-One Base) mieści dwie drukarki SUNMI NT320 obok siebie. Drukarki układa się w podstawie na boku. Dwie drukarki zajmują wtedy mniej miejsca na ladzie, a każda może drukować co innego, np. jedna paragony, a druga etykiety.\n\nPodstawa jest czarna i ma żebrowane dno. Drukarki nie wchodzą w skład zestawu.\n\n## Zgodna drukarka\n\n[SUNMI NT320](/produkt/sunmi-nt320) — wszystkie wersje.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-drukarek-etykiet"
+    ],
+    "manufacturerId": "sunmi",
+    "images": [
+      "/images/products/C20000103.png"
+    ],
+    "imageDescriptions": [
+      "Podstawa SUNMI C20000103 na dwie drukarki NT320 — widok z góry: czarna podstawa z żebrowanym dnem"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 30.42,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C20000103"
+      },
+      {
+        "name": "Typ",
+        "value": "Podstawa na dwie drukarki (Two-In-One Base)"
+      },
+      {
+        "name": "Ułożenie drukarek",
+        "value": "Dwie drukarki obok siebie, na boku"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Podstawa; drukarki sprzedawane osobno"
+      },
+      {
+        "name": "Zgodność",
+        "value": "SUNMI NT320"
+      }
+    ],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "sunmi-nt320"
+    ],
+    "applications": [
+      "Dwie drukarki NT320 przy jednym stanowisku",
+      "Osobna drukarka do paragonów i do etykiet na wspólnej podstawie"
+    ],
+    "downloads": [],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
   }

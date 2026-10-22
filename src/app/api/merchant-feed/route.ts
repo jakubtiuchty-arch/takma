@@ -144,11 +144,13 @@ function typUrzadzenia(product: Product): string | null {
 }
 
 /** Kategoria Google dla SUNMI: 543648 Terminale POS, 5256 Palmtopy > Kolektory danych,
- *  4739 Futerały na urządzenia PDA, 4737 Akcesoria do urządzeń PDA, 4283 Szuflady kasowe. Pozostałe według GOOGLE_CATEGORY. */
+ *  4739 Futerały na urządzenia PDA, 4737 Akcesoria do urządzeń PDA, 4283 Szuflady kasowe,
+ *  5459 Stojaki do drukarek. Pozostałe według GOOGLE_CATEGORY. */
 function kategoriaGoogle(product: Product): string | undefined {
   if (product.manufacturerId === 'sunmi') {
     if (product.categoryId === 'terminale-mobilne') return maDrukarke(product) ? '543648' : '5256'
     if (product.categoryId === 'akcesoria' && /^Szuflada kasowa\b/.test(product.name)) return '4283'
+    if (product.categoryId === 'akcesoria' && /^Podstawa SUNMI na dwie drukarki\b/.test(product.name)) return '5459'
     if (product.categoryId === 'akcesoria') return /^Etui\b/.test(product.name) ? '4739' : '4737'
   }
   return GOOGLE_CATEGORY[product.categoryId]
