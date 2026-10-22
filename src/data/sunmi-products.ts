@@ -2502,8 +2502,8 @@ export const sunmiProducts: Product[] = [
     "seoH1": "SUNMI D3",
     "seoTitle": "Komputer POS SUNMI D3 15,6\" z ekranem klienta 10,1\"",
     "seoDescription": "Komputer POS SUNMI D3 z ekranem dotykowym 15,6\" i ekranem klienta 10,1\" w zestawie. Terminal POS SUNMI D3, Android 14, NFC, LAN 1 Gb/s. PN: P01300033.",
-    "shortDescription": "SUNMI D3 — komputer POS z ekranem dotykowym 15,6\" FHD i ekranem klienta 10,1\" w zestawie. 4 GB RAM i 64 GB pamięci, Android 14 z usługami Google, NFC na ekranie i LAN 1 Gb/s. Model bez drukarki.",
-    "description": "Komputer POS SUNMI D3 to stacjonarne stanowisko kasowe z ekranem dotykowym IPS 15,6\" FHD. Zestaw zawiera dotykowy ekran klienta 10,1\" HD. Do SUNMI T3 i T3 PRO ekran klienta kupuje się osobno.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor do 2,2 GHz ma moc obliczeniową AI 6 TOPS. Pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 14 z usługami Google (GMS EDLA). Zabezpieczenia systemu ograniczają ryzyko oszustw i nieuprawnionych zmian oprogramowania. Program sprzedaży łączy się z funkcjami komputera przez SDK SUNMI.\n\n## Łączność i złącza\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 6 i Bluetooth 5.4. Czytnik NFC jest na ekranie. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. Przewody są ukryte w podstawie.\n\nSUNMI D3 jest przeznaczony dla sieci szybkiej obsługi, sklepów sieciowych i pojedynczych sklepów. Stanowisko z ekranem klienta na [SUNMI T3](/produkt/sunmi-t3) wymaga dokupienia [ekranu klienta C02020008](/produkt/sunmi-c02020008).",
+    "shortDescription": "SUNMI D3 — komputer POS z ekranem dotykowym 15,6\" FHD i ekranem klienta 10,1\" w zestawie. 3 GB RAM i 32 GB pamięci, Android 14 z usługami Google, czytnik NFC w ekranie klienta i LAN 1 Gb/s. Model bez drukarki.",
+    "description": "Komputer POS SUNMI D3 to stacjonarne stanowisko kasowe z ekranem dotykowym IPS 15,6\" FHD. Zestaw zawiera dotykowy ekran klienta 10,1\" HD. Do SUNMI T3 i T3 PRO ekran klienta kupuje się osobno.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor do 2,2 GHz ma moc obliczeniową AI 6 TOPS. Pracuje z 3 GB RAM i 32 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 14 z usługami Google (GMS EDLA). Zabezpieczenia systemu ograniczają ryzyko oszustw i nieuprawnionych zmian oprogramowania. Program sprzedaży łączy się z funkcjami komputera przez SDK SUNMI.\n\n## Łączność i złącza\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 6 i Bluetooth 5.4. Czytnik NFC jest w ekranie klienta. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. Przewody są ukryte w podstawie.\n\nSUNMI D3 jest przeznaczony dla sieci restauracji szybkiej obsługi, sieci sklepów convenience i pojedynczych sklepów. Stanowisko z ekranem klienta na [SUNMI T3](/produkt/sunmi-t3) wymaga dokupienia [ekranu klienta C02020008](/produkt/sunmi-c02020008).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2549,7 +2549,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Ekran klienta",
-        "value": "W zestawie: IPS 10,1\", 1280 × 800 px (HD), dotykowy pojemnościowy wielopunktowy, powłoka ograniczająca odciski palców; 2 × micro USB 2.0 (u góry i z prawej strony)"
+        "value": "W zestawie: IPS 10,1\", 1280 × 800 px (HD), dotykowy pojemnościowy wielopunktowy, powłoka ograniczająca odciski palców, czytnik NFC; 2 × micro USB 2.0 (u góry i z prawej strony)"
       },
       {
         "name": "Akcesoria opcjonalne",
@@ -2565,11 +2565,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "8 rdzeni (4 × Cortex-A72 i 4 × Cortex-A53), do 2,2 GHz; moc obliczeniowa AI 6 TOPS"
+        "value": "8 rdzeni: 4 × Cortex-A72 do 2,2 GHz i 4 × Cortex-A53 do 1,8 GHz; układ AI 6 TOPS"
       },
       {
         "name": "Pamięć",
-        "value": "4 GB RAM / 64 GB, karta microSD do 1 TB"
+        "value": "3 GB RAM / 32 GB, microSD do 1 TB"
       },
       {
         "name": "Interfejsy",
@@ -2589,7 +2589,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "NFC",
-        "value": "Na ekranie; ISO/IEC 14443 typ A/B, MIFARE, FeliCa, ISO 15693; emulacja karty (HCE) w konfiguracji na zamówienie"
+        "value": "W ekranie klienta 10,1\"; ISO/IEC 14443 typ A/B, MIFARE, FeliCa, ISO 15693; emulacja karty (HCE) w konfiguracji na zamówienie"
       },
       {
         "name": "Audio",
@@ -2628,13 +2628,17 @@ export const sunmiProducts: Product[] = [
         "value": "Stanowisko kasowe z programem sprzedaży; urządzenie niefiskalne"
       },
       {
+        "name": "Certyfikaty",
+        "value": "CE, RoHS, FCC, CB, CCC"
+      },
+      {
         "name": "Gwarancja",
         "value": "36 miesięcy"
       }
     ],
     "applications": [
-      "Kasa w sieci szybkiej obsługi z ekranem klienta",
-      "Kasa w sklepie sieciowym i w pojedynczym sklepie",
+      "Kasa w sieci restauracji szybkiej obsługi z ekranem klienta",
+      "Kasa w sieci sklepów convenience i w pojedynczym sklepie",
       "Odczyt kart lojalnościowych przez NFC"
     ],
     "compatibleAccessories": [],
@@ -2657,11 +2661,11 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI D3 różni się od SUNMI T3?",
-        "answer": "SUNMI D3 ma w zestawie ekran klienta 10,1\". Ma też Androida 14, Wi-Fi 6, Bluetooth 5.4 i LAN 1 Gb/s. [SUNMI T3](/produkt/sunmi-t3) ma Androida 13, Wi-Fi 5, Bluetooth 5.0, kamerę 5 Mpx i czytnik linii papilarnych. Ekran klienta do T3, [C02020008](/produkt/sunmi-c02020008) lub [C02020007](/produkt/sunmi-c02020007), kupuje się osobno. Oba modele mają ekran 15,6\" FHD, 4 GB RAM i 64 GB pamięci."
+        "answer": "SUNMI D3 ma w zestawie ekran klienta 10,1\". Ma też Androida 14, Wi-Fi 6 i Bluetooth 5.4. [SUNMI T3](/produkt/sunmi-t3) ma Androida 13, Wi-Fi 5, Bluetooth 5.0, kamerę 5 Mpx i czytnik linii papilarnych. Ekran klienta do T3, [C02020008](/produkt/sunmi-c02020008) lub [C02020007](/produkt/sunmi-c02020007), kupuje się osobno. Oba modele mają ekran 15,6\" FHD. D3 ma 3 GB RAM i 32 GB pamięci, a T3 4 GB RAM i 64 GB pamięci."
       },
       {
         "question": "Czy ekran klienta jest w zestawie z SUNMI D3?",
-        "answer": "Tak. PN P01300033 to SUNMI D3 z dotykowym ekranem klienta 10,1\" HD (1280 × 800 px). Ekran klienta pokazuje klientowi pozycje i kwotę z programu sprzedaży. Ma dwa porty micro USB. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3."
+        "answer": "Tak. PN P01300033 to SUNMI D3 z dotykowym ekranem klienta 10,1\" HD (1280 × 800 px). Ekran klienta pokazuje klientowi pozycje i kwotę z programu sprzedaży. Ma czytnik NFC i dwa porty micro USB. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3."
       },
       {
         "question": "Czy SUNMI D3 ma Google Play?",
@@ -2687,7 +2691,7 @@ export const sunmiProducts: Product[] = [
     "seoTitle": "Komputer POS SUNMI D3 PRO 15,6\", Android 13, LAN 1 Gb/s",
     "seoDescription": "Komputer POS SUNMI D3 PRO: ekran dotykowy 15,6\" FHD, 4 GB RAM, LAN 1 Gb/s i obudowa aluminiowa. Terminal POS SUNMI D3 PRO. PN: P01270001, P01270002.",
     "shortDescription": "SUNMI D3 PRO — komputer POS z ekranem dotykowym 15,6\" FHD, 4 GB RAM i 64 GB pamięci, Androidem 13 i LAN 1 Gb/s. Obudowa aluminiowa. Wersja SUNMI OS lub z usługami Google, model bez drukarki. Ekran klienta 10,1\" z NFC kupuje się osobno.",
-    "description": "Komputer POS SUNMI D3 PRO to stacjonarne stanowisko kasowe z ekranem dotykowym 15,6\" FHD. Ekran ma cienką ramkę i obsługuje dotyk 10-punktowy. Obudowa jest aluminiowa, a przewody są ukryte w podstawie. Komputer jest przeznaczony m.in. dla restauracji i sklepów odzieżowych.\n\n## Procesor, pamięć i system\n\nSześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS). Wersja z usługami Google ma czytnik linii papilarnych w przycisku zasilania. Czytnik służy do logowania w usłudze SUNMI One ID.\n\n## Łączność i ekran klienta\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. [Ekran klienta 10,1\" C02020005](/produkt/sunmi-c02020005) kupuje się osobno. Ekran łączy się z komputerem przewodem USB i nie wymaga montażu. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują.\n\nNowszy [SUNMI D3](/produkt/sunmi-d3) ma Androida 14, procesor ośmiordzeniowy i ekran klienta w zestawie, a D3 PRO bez ekranu klienta jest tańszy i ma obudowę aluminiową.",
+    "description": "Komputer POS SUNMI D3 PRO to stacjonarne stanowisko kasowe z ekranem dotykowym 15,6\" FHD. Ekran ma cienką ramkę i obsługuje dotyk 10-punktowy. Obudowa jest aluminiowa, a przewody są ukryte w podstawie. Komputer jest przeznaczony m.in. dla restauracji i sklepów odzieżowych.\n\n## Procesor, pamięć i system\n\nSześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS). W wersji z usługami Google czytnik linii papilarnych w przycisku zasilania odblokowuje komputer i loguje do konta SUNMI One ID.\n\n## Łączność i ekran klienta\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. [Ekran klienta 10,1\" C02020005](/produkt/sunmi-c02020005) kupuje się osobno. Zakłada się go na ramię podstawy, od strony klienta, i podłącza do komputera przez USB. Działa od razu po podłączeniu (plug-and-play). Czytnik NFC w ekranie pozwala przyjmować płatności SoftPOS, jeśli obsługują je program sprzedaży i operator płatności.\n\nNowszy [SUNMI D3](/produkt/sunmi-d3) ma Androida 14, procesor ośmiordzeniowy, Wi-Fi 6, Bluetooth 5.4 i ekran klienta z NFC w zestawie. D3 PRO jako sam komputer jest tańszy.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2707,7 +2711,7 @@ export const sunmiProducts: Product[] = [
       "SUNMI D3 PRO — widok z przodu: ekran 15,6\" z pulpitem SUNMI OS",
       "SUNMI D3 PRO — widok z prawego boku: ekran, ramię i podstawa",
       "SUNMI D3 PRO — widok z tyłu: tylna obudowa ekranu i ramię podstawy",
-      "SUNMI D3 PRO — widok od spodu podstawy z otworami montażowymi",
+      "SUNMI D3 PRO — widok od spodu podstawy",
       "SUNMI D3 PRO — widok z tyłu z prawej strony, z góry",
       "SUNMI D3 PRO z ekranem klienta 10,1\" C02020005 — widok z tyłu z prawej strony, od strony klienta; ekran klienta kupuje się osobno"
     ],
@@ -2747,7 +2751,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Interfejsy",
-        "value": "1 × USB 3.0 typ A, 2 × USB 2.0 typ A, 1 × USB-C (USB 2.0), RJ11 (port szeregowy), RJ12 (port szuflady kasowej), Ethernet RJ45, gniazdo audio, gniazdo zasilania DC, micro USB do diagnostyki"
+        "value": "1 × USB 3.0 typ A, 2 × USB 2.0 typ A, 1 × USB-C (USB 2.0), RJ11 (port szeregowy), RJ12 (port szuflady kasowej), Ethernet RJ45, gniazdo audio, gniazdo zasilania DC, port micro USB do debugowania"
       },
       {
         "name": "Port szuflady kasowej",
@@ -2763,11 +2767,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "NFC",
-        "value": "Na ekranie klienta C02020005 (opcja); płatności SoftPOS przez aplikację, jeśli obsługują je program sprzedaży i operator płatności"
+        "value": "Brak w komputerze; czytnik NFC ma ekran klienta C02020005 (opcja); płatności SoftPOS przez aplikację, jeśli obsługują je program sprzedaży i operator płatności"
       },
       {
         "name": "Czytnik linii papilarnych",
-        "value": "W przycisku zasilania, w wersji z usługami Google (P01270002); logowanie w SUNMI One ID"
+        "value": "W przycisku zasilania, w wersji z usługami Google (P01270002); odblokowanie komputera i logowanie do konta SUNMI One ID"
       },
       {
         "name": "Audio",
@@ -2783,7 +2787,7 @@ export const sunmiProducts: Product[] = [
       },
       {
         "name": "Ekran klienta (opcja)",
-        "value": "10,1\" HD 1280 × 800 px, dotykowy, z NFC (C02020005); podłączenie przewodem USB, bez montażu; masa 0,88 kg. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują"
+        "value": "10,1\" HD 1280 × 800 px, dotykowy, z NFC (C02020005); zakładany na ramię podstawy od strony klienta, podłączenie przez USB, plug-and-play; masa 0,88 kg. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują"
       },
       {
         "name": "Akcesoria opcjonalne",
@@ -2847,8 +2851,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja SUNMI OS nie ma usług Google. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania.",
-      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Służy do logowania odciskiem palca w usłudze SUNMI One ID."
+      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania.",
+      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Odblokowuje komputer odciskiem palca i loguje do konta SUNMI One ID."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2873,15 +2877,15 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI D3 PRO różni się od SUNMI D3?",
-        "answer": "SUNMI D3 PRO ma sześciordzeniowy procesor Qualcomm do 2,4 GHz, Androida 13, Wi-Fi 5, Bluetooth 5.0 i obudowę aluminiową. [SUNMI D3](/produkt/sunmi-d3) to nowszy model. Ma ośmiordzeniowy procesor do 2,2 GHz, Androida 14, Wi-Fi 6, Bluetooth 5.4 i ekran klienta 10,1\" w zestawie. Do D3 PRO [ekran klienta C02020005](/produkt/sunmi-c02020005) kupuje się osobno, a sam komputer jest tańszy od D3. Oba modele mają ekran 15,6\" FHD, 4 GB RAM, 64 GB pamięci i LAN 1 Gb/s."
+        "answer": "SUNMI D3 PRO ma sześciordzeniowy procesor Qualcomm do 2,4 GHz, Androida 13, Wi-Fi 5 i Bluetooth 5.0. [SUNMI D3](/produkt/sunmi-d3) to nowszy model. Ma ośmiordzeniowy procesor do 2,2 GHz, Androida 14, Wi-Fi 6, Bluetooth 5.4 i ekran klienta 10,1\" z NFC w zestawie. Do D3 PRO [ekran klienta C02020005](/produkt/sunmi-c02020005) kupuje się osobno, a sam komputer jest tańszy od D3. Wersja D3 PRO z usługami Google ma czytnik linii papilarnych. Oba modele mają ekran 15,6\" FHD i LAN 1 Gb/s."
       },
       {
-        "question": "Wersja SUNMI OS czy wersja z usługami Google (GMS)?",
+        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
         "answer": "Obie wersje mają ten sam procesor, pamięć i system SUNMI OS 4.0 na Androidzie 13. P01270002 ma usługi Google (GMS EDLA), Sklep Google Play i czytnik linii papilarnych w przycisku zasilania. P01270001 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
       },
       {
         "question": "Jaki ekran klienta pasuje do SUNMI D3 PRO?",
-        "answer": "Pasuje [ekran klienta 10,1\" HD C02020005](/produkt/sunmi-c02020005) z NFC. Ekran łączy się z komputerem przewodem USB i nie wymaga montażu. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3 PRO."
+        "answer": "Pasuje [ekran klienta 10,1\" HD C02020005](/produkt/sunmi-c02020005) z NFC. Ekran klienta zakłada się na ramię podstawy, od strony klienta, i podłącza do komputera przez USB. Działa od razu po podłączeniu (plug-and-play). Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3 PRO."
       },
       {
         "question": "Czy SUNMI D3 PRO jest kasą fiskalną?",
@@ -4946,9 +4950,9 @@ export const sunmiAccessories: Product[] = [
     "slug": "sunmi-c02020005",
     "name": "Ekran klienta SUNMI 10,1\" do D3 PRO",
     "seoTitle": "Ekran klienta SUNMI 10,1\" do D3 PRO — C02020005",
-    "seoDescription": "Ekran klienta SUNMI 10,1\" HD z NFC do komputera POS SUNMI D3 PRO: dotykowy, 1280 × 800 px, podłączenie przewodem USB, bez montażu. PN C02020005.",
-    "shortDescription": "Ekran klienta SUNMI 10,1\" HD do komputera POS SUNMI D3 PRO — dotykowy, z NFC. Łączy się z komputerem przewodem USB i nie wymaga montażu.",
-    "description": "Ekran klienta SUNMI C02020005 to drugi ekran do komputera POS [SUNMI D3 PRO](/produkt/sunmi-d3-pro). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową.\n\nEkran łączy się z komputerem przewodem USB i nie wymaga montażu. Ekran ma czytnik NFC. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekran waży 0,88 kg.\n\nEkran nie pasuje do [SUNMI T3](/produkt/sunmi-t3), [SUNMI T3 PRO](/produkt/sunmi-t3-pro) ani [SUNMI D3](/produkt/sunmi-d3). Do T3 i T3 PRO są osobne ekrany klienta, a D3 ma ekran klienta w zestawie.",
+    "seoDescription": "Ekran klienta SUNMI 10,1\" HD z NFC do komputera POS SUNMI D3 PRO: dotykowy, 1280 × 800 px, zakładany na ramię podstawy, podłączenie przez USB. PN C02020005.",
+    "shortDescription": "Ekran klienta SUNMI 10,1\" HD do komputera POS SUNMI D3 PRO — dotykowy, z NFC. Zakłada się go na ramię podstawy, od strony klienta, i podłącza do komputera przez USB.",
+    "description": "Ekran klienta SUNMI C02020005 to drugi ekran do komputera POS [SUNMI D3 PRO](/produkt/sunmi-d3-pro). Pokazuje klientowi pozycje, kwotę do zapłaty i komunikaty programu sprzedaży. Ekran 10,1\" ma rozdzielczość 1280 × 800 px i dotykową powierzchnię pojemnościową.\n\nEkran klienta zakłada się na ramię podstawy, od strony klienta, i podłącza do komputera przez USB. Działa od razu po podłączeniu (plug-and-play). Ekran ma czytnik NFC. Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekran waży 0,88 kg.\n\nEkran nie pasuje do [SUNMI T3](/produkt/sunmi-t3), [SUNMI T3 PRO](/produkt/sunmi-t3-pro) ani [SUNMI D3](/produkt/sunmi-d3). Do T3 i T3 PRO są osobne ekrany klienta, a D3 ma ekran klienta w zestawie.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-komputerow-pos"
@@ -4988,7 +4992,7 @@ export const sunmiAccessories: Product[] = [
       },
       {
         "name": "NFC",
-        "value": "Tak; płatności zbliżeniowe przez aplikację SoftPOS, jeśli obsługują je program sprzedaży i operator płatności"
+        "value": "Tak, kartę lub telefon przykłada się do szyby ekranu (Tap on Glass); płatności zbliżeniowe przez aplikację SoftPOS, jeśli obsługują je program sprzedaży i operator płatności"
       },
       {
         "name": "Złącze",
@@ -4996,7 +5000,7 @@ export const sunmiAccessories: Product[] = [
       },
       {
         "name": "Montaż",
-        "value": "Bez montażu; podłączenie do komputera przewodem USB"
+        "value": "Na ramieniu podstawy D3 PRO, od strony klienta; podłączenie przez USB, plug-and-play"
       },
       {
         "name": "Masa",
