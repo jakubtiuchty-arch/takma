@@ -1910,11 +1910,19 @@ categoryFilters['mobilne-drukarki-paragonow'] = [
   ...categoryFilters['mobilne-drukarki-paragonow'].map(f => f.specKey === 'material-paragony' ? { ...f, derived: f.derived?.map(rule => rule.value === 'Papier termiczny' ? { ...rule, slugs: [...(rule.slugs ?? []), 'epson-tm-p20ii', 'epson-tm-p80ii'] } : rule) } : f)
 ]
 
-// Komputery POS: filtrują tylko cechy, które różnią oferowane modele (drukarka i cena).
+// Komputery POS: filtrują tylko cechy, które różnią oferowane modele (drukarka, pamięć, usługi Google i cena).
 categoryFilters['komputery-pos'] = [
   { specKey: 'drukarka-komputer-pos', label: 'Drukarka wbudowana', derived: [
     { value: 'Z drukarką 80 mm', pattern: '80 mm', specs: ['Drukarka'] },
     { value: 'Bez drukarki', notSpecs: ['Drukarka'] }
+  ] },
+  { specKey: 'pamiec-komputer-pos', label: 'Pamięć RAM', derived: [
+    { value: '4 GB', pattern: '^4 GB RAM', specs: ['Pamięć'] },
+    { value: '6 GB', pattern: '^6 GB RAM', specs: ['Pamięć'] }
+  ] },
+  { specKey: 'uslugi-google-komputer-pos', label: 'Usługi Google', derived: [
+    { value: 'Z usługami Google (GMS)', pattern: 'GMS', specs: ['System operacyjny'] },
+    { value: 'SUNMI OS bez usług Google', pattern: 'bez usług Google', specs: ['System operacyjny'] }
   ] },
   { specKey: 'cena-komputer-pos', label: 'Cena netto', derived: [
     { value: 'do 3 000 zł', priceMax: 3000 },
@@ -1979,7 +1987,9 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Materiał musi pasować do mechanizmu drukarki.\n• Termiczny — papier z warstwą reagującą na ciepło.\n• Linerless — etykiety samoprzylepne bez podkładu, tylko do zgodnych drukarek.\n• Zwykły papier — do odpowiednich drukarek igłowych lub atramentowych."
   },
   "komputery-pos": {
-    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. Prowadnica pozwala użyć papieru 58 mm.\n• Bez drukarki — wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
+    "Drukarka wbudowana": "Drukarka termiczna w podstawie komputera.\n• Z drukarką 80 mm — paragony niefiskalne i bony z programu POS. T3 PRO MAX ma drukarkę Seiko z gilotyną, a T3 80 mm z prowadnicą drukuje na papierze 58 mm.\n• Bez drukarki — wydruki przez osobną drukarkę POS, podłączoną np. przez USB lub LAN.",
+    "Pamięć RAM": "Pamięć operacyjna dla programu sprzedaży.\n• 4 GB — SUNMI T3 i T3 80 mm, pamięć 64 GB.\n• 6 GB — SUNMI T3 PRO i T3 PRO MAX, pamięć 128 GB.",
+    "Usługi Google": "Usługi Google (GMS) w systemie SUNMI OS na Androidzie 13.\n• Z usługami Google — Sklep Google Play i aplikacje Google.\n• SUNMI OS bez usług Google — sklep SUNMI App Store; aplikacje instaluje zwykle dostawca oprogramowania. Ta wersja jest dostępna w T3 PRO i T3 PRO MAX.",
     "Cena netto": "Cena netto komputera bez ekranu klienta i szuflady. Akcesoria kupuje się osobno."
   },
   "akcesoria-do-komputerow-pos": {
