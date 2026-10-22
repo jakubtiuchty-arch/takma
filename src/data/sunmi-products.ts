@@ -2020,10 +2020,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 5114.81,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01240002.png",
+      "/images/products/P01240002-2.png",
+      "/images/products/P01240002-3.png",
+      "/images/products/P01240002-4.png",
+      "/images/products/P01240002-5.png",
+      "/images/products/P01240002-6.png",
+      "/images/products/P01240002-7.png",
+      "/images/products/P01240002-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI T3 PRO — widok z przodu z prawej strony, z góry: ekran dotykowy 15,6\" bez ramki na podstawie ze stopu aluminium",
+      "SUNMI T3 PRO — widok z przodu: ekran 15,6\" z pulpitem SUNMI OS",
+      "SUNMI T3 PRO — widok z prawego boku: odchylany ekran i ramię podstawy",
+      "SUNMI T3 PRO — widok z tyłu: ramię podstawy i tylna obudowa ekranu",
+      "SUNMI T3 PRO — widok od spodu podstawy",
+      "SUNMI T3 PRO — widok z tyłu z prawej strony, z góry",
+      "SUNMI T3 PRO z ekranem klienta 10,1\" C02020003 — widok od strony klienta; ekran klienta kupuje się osobno",
+      "SUNMI T3 PRO z drugim ekranem 15,6\" C02020004 — widok z przodu z lewej strony; ekran klienta kupuje się osobno"
     ],
     "tags": [
       "retail"
@@ -2208,10 +2222,18 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 6341.96,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01250004.png",
+      "/images/products/P01250004-2.png",
+      "/images/products/P01250004-3.png",
+      "/images/products/P01250004-4.png",
+      "/images/products/P01250004-5.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI T3 PRO MAX — widok z przodu: ekran 15,6\" z pulpitem SUNMI OS i drukarka 80 mm w podstawie",
+      "SUNMI T3 PRO MAX z drugim ekranem 15,6\" C02020004 — widok z przodu z lewej strony, szczelina wydruku drukarki; drugi ekran kupuje się osobno",
+      "SUNMI T3 PRO MAX z drugim ekranem 15,6\" C02020004 — widok z przodu z prawej strony; drugi ekran kupuje się osobno",
+      "SUNMI T3 PRO MAX z drugim ekranem 15,6\" C02020004 — widok od strony klienta; drugi ekran kupuje się osobno",
+      "SUNMI T3 PRO MAX z drugim ekranem 15,6\" C02020004 — widok z boku: obudowa drukarki w podstawie; drugi ekran kupuje się osobno"
     ],
     "tags": [
       "retail"
