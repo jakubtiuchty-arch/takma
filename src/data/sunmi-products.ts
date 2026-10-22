@@ -3634,10 +3634,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 2281.87,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P11050020.png",
+      "/images/products/P11050020-2.png",
+      "/images/products/P11050020-3.png",
+      "/images/products/P11050020-4.png",
+      "/images/products/P11050020-5.png",
+      "/images/products/P11050020-6.png",
+      "/images/products/P11050020-7.png",
+      "/images/products/P11050020-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI FLEX 3 15,6\" — widok z przodu: ekran dotykowy FHD, ustawiony pionowo",
+      "SUNMI FLEX 3 15,6\" — widok z przodu z prawej strony, z góry",
+      "SUNMI FLEX 3 15,6\" — widok z przodu z lewej strony, z góry",
+      "SUNMI FLEX 3 15,6\" — widok z tyłu: dwuwarstwowa tylna obudowa z logo SUNMI",
+      "SUNMI FLEX 3 15,6\" — widok z tyłu z prawej strony, z góry",
+      "SUNMI FLEX 3 15,6\" — widok z prawego boku: obudowa o grubości 31,3 mm",
+      "SUNMI FLEX 3 15,6\" — widok krawędzi górnej",
+      "SUNMI FLEX 3 15,6\" — widok krawędzi dolnej"
     ],
     "tags": [
       "retail"
