@@ -1925,8 +1925,9 @@ categoryFilters['komputery-pos'] = [
     { value: 'SUNMI OS bez usług Google', pattern: 'bez usług Google', specs: ['System operacyjny'] }
   ] },
   { specKey: 'cena-komputer-pos', label: 'Cena netto', derived: [
-    { value: 'do 3 000 zł', priceMax: 3000 },
-    { value: 'powyżej 3 000 zł', priceMin: 3000 }
+    { value: 'do 3 500 zł', priceMax: 3500 },
+    { value: '3 500 – 6 000 zł', priceMin: 3500, priceMax: 6000 },
+    { value: 'powyżej 6 000 zł', priceMin: 6000 }
   ] }
 ]
 categoryFilters['akcesoria-do-komputerow-pos'] = [
