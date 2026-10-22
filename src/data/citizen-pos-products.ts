@@ -503,8 +503,8 @@ export const citizenPosProducts: Product[] = [
       "/images/products/CTS310IIEBK-5.png"
     ],
     "imageDescriptions": [
-      "Citizen CT-S310II w białej obudowie — widok z przodu pod kątem: pokrywa papieru, przycisk FEED i diody POWER i ERROR",
       "Citizen CT-S310II w czarnej obudowie — widok z przodu: przycisk FEED, diody POWER i ERROR",
+      "Citizen CT-S310II w białej obudowie — widok z przodu pod kątem: pokrywa papieru, przycisk FEED i diody POWER i ERROR",
       "Citizen CT-S310II w białej obudowie — widok z przodu",
       "Citizen CT-S310II w wersji z USB i RS-232 — złącza z tyłu: gniazdo zasilania, złącze szuflady kasowej, RS-232 i USB",
       "Citizen CT-S310II w białej obudowie — otwarta pokrywa komory papieru"
@@ -1225,12 +1225,10 @@ export const citizenPosProducts: Product[] = [
     "images": [
       "/images/products/CTE651XNEBXL.png",
       "/images/products/CTE651XNEBXL-2.png",
-      "/images/products/CTE651XNEBXL-3.png",
-      "/images/products/CTE651XNEBXL-4.png"
+      "/images/products/CTE651XNEBXL-3.png"
     ],
     "imageDescriptions": [
       "Citizen CT-E651L w czarnej obudowie — etykieta z kodem kreskowym w wylocie, widok z przodu pod kątem",
-      "Citizen CT-E651L w białej obudowie — etykieta z kodem kreskowym w wylocie, widok z przodu",
       "Citizen CT-E651L — widok z tyłu: złącze szuflady kasowej, gniazdo zasilania, USB i zaślepione gniazdo karty interfejsu",
       "Citizen CT-E651L — otwarta pokrywa komory papieru z rolką"
     ],
@@ -1448,7 +1446,7 @@ export const citizenPosProducts: Product[] = [
       "Citizen CT-S751 w białej obudowie — panel z przodu: przyciski POWER i FEED, diody stanu",
       "Citizen CT-S751 w czarnej obudowie — przednia klapa otwarta do włożenia rolki papieru, widok z przodu pod kątem",
       "Citizen CT-S751 w czarnej obudowie — widok z boku, przednia klapa otwarta z rolką papieru",
-      "Citizen CT-S751 — widok od spodu, złącza na tylnej krawędzi",
+      "Citizen CT-S751 — widok od spodu: złącza na tylnej krawędzi i opcjonalna karta Ethernet z portami USB host",
       "Citizen CT-S751 w czarnej i białej obudowie — paragony w wylotach papieru"
     ],
     "tags": [
@@ -2125,7 +2123,7 @@ export const citizenPosProducts: Product[] = [
     "imageDescriptions": [
       "Citizen CT-S4500 w czarnej obudowie — widok z przodu pod kątem: okienko podglądu papieru w pokrywie i wylot z przodu",
       "Citizen CT-S4500 — widok z przodu: wylot papieru, diody i przycisk FEED",
-      "Citizen CT-S4500 — widok z tyłu: złącza i gniazdo karty interfejsu z zamontowaną kartą sieciową",
+      "Citizen CT-S4500 — widok z tyłu: złącza i gniazdo karty interfejsu z zamontowaną opcjonalną kartą Ethernet",
       "Citizen CT-S4500 — pokrywa otwarta do góry, papier w komorze",
       "Citizen CT-S4500 w białej obudowie — wydruk w wylocie z przodu",
       "Citizen CT-S4500 w białej obudowie — widok z boku z otwartą pokrywą i rolką papieru"
