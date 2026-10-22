@@ -3618,6 +3618,233 @@ export const sunmiProducts: Product[] = [
     ],
     "createdAt": "2026-10-22",
     "updatedAt": "2026-10-22"
+  },
+  {
+    "id": "sunmi-flex-3",
+    "slug": "sunmi-flex-3",
+    "name": "SUNMI FLEX 3",
+    "seoH1": "SUNMI FLEX 3",
+    "seoTitle": "Kiosk dotykowy SUNMI FLEX 3 15,6\"–27\" z NFC",
+    "seoDescription": "Kiosk samoobsługowy SUNMI FLEX 3: ekran dotykowy 15,6\", 18,5\", 22\" lub 27\" z NFC, Android 13, IP54. PN: P11050020, P11050012, P11050001, P11050006.",
+    "shortDescription": "SUNMI FLEX 3 — ekran dotykowy do kiosku samoobsługowego w rozmiarach 15,6\", 18,5\", 22\" i 27\", z NFC na ekranie. SUNMI OS 4.0 na Androidzie 13, ochrona IP54 i mocowanie VESA 100 × 100. Stojaki i moduły kiosku kupuje się osobno.",
+    "description": "SUNMI FLEX 3 to ekran dotykowy z systemem Android i NFC na ekranie, dostępny w czterech rozmiarach: 15,6\", 18,5\", 22\" i 27\". Służy do budowy kiosku samoobsługowego, kasy samoobsługowej i stanowiska kasowego. Na mocowaniu VESA 100 × 100 pracuje także na ścianie, np. jako tablica informacyjna.\n\nObudowa ma ochronę IP54. Ramka ekranu ma 16 mm, a profil obudowy 17 mm. Ekran FHD 1920 × 1080 px ma powłokę ograniczającą odciski palców. System to SUNMI OS 4.0 na Androidzie 13 z obsługą usług Google (GMS).\n\nWersja 15,6\" ma procesor 6-rdzeniowy, 4 GB RAM i 64 GB pamięci. Wersje 18,5\", 22\" i 27\" mają procesor 8-rdzeniowy, 6 GB RAM, 128 GB pamięci, Wi-Fi 6E i czytnik linii papilarnych w przycisku zasilania.\n\nStojaki podłogowe i na ladę oraz moduły, np. moduł NFC, MSR i skaner, kupuje się osobno. Są w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow). Ekran do kuchni, bez NFC, to [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds).",
+    "categoryId": "kioski-samoobslugowe",
+    "subcategoryIds": [],
+    "manufacturerId": "sunmi",
+    "priceFrom": 2281.87,
+    "availability": "available",
+    "images": [
+      "/images/manufacturers/sunmi-placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "SUNMI — brak zdjęcia produktu"
+    ],
+    "tags": [
+      "retail"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "P11050020 (15,6\"), P11050012 (18,5\"), P11050001 (22\"), P11050006 (27\")"
+      },
+      {
+        "name": "Model SUNMI",
+        "value": "15,6\": P951A; 18,5\": F9J1A/F9J2A; 22\": F961A/F962A; 27\": F9E1A/F9E2A"
+      },
+      {
+        "name": "Ekran",
+        "value": "15,6\": 15,6\" FHD 1920 × 1080 px, 250 nitów; 18,5\": 18,5\" IPS FHD 1920 × 1080 px, 400 nitów; 22\": 21,5\" (22\") IPS FHD 1920 × 1080 px, 400 nitów; 27\": 27\" IPS FHD 1920 × 1080 px, 400 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy, wielopunktowy, powłoka ograniczająca odciski palców; ramka ekranu 16 mm"
+      },
+      {
+        "name": "NFC",
+        "value": "Na ekranie: kartę przykłada się do ekranu"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "SUNMI OS 4.0 (Android 13); usługi Google (GMS) obsługiwane"
+      },
+      {
+        "name": "Procesor",
+        "value": "15,6\": Qualcomm, 6 rdzeni, do 2,4 GHz; 18,5\", 22\" i 27\": Qualcomm, 8 rdzeni, do 2,7 GHz, proces 6 nm"
+      },
+      {
+        "name": "Pamięć",
+        "value": "15,6\": 4 GB RAM / 64 GB; 18,5\", 22\" i 27\": 6 GB RAM / 128 GB; gniazdo microSD"
+      },
+      {
+        "name": "Interfejsy",
+        "value": "15,6\": 4 × USB 2.0 typ A, RJ45 (LAN 1 Gb/s), RJ11, RJ12, USB-C do debugowania, gniazdo audio, 2 × micro USB; 18,5\", 22\" i 27\": 2 × USB 2.0 typ A, 4 × micro USB, USB-C do debugowania, USB-C do zasilania, 2 × RJ45 (LAN 1 Gb/s), port PoE, RS485/RS232, gniazdo audio"
+      },
+      {
+        "name": "Sieć przewodowa",
+        "value": "LAN 1 Gb/s (RJ45)"
+      },
+      {
+        "name": "Łączność bezprzewodowa",
+        "value": "15,6\": Wi-Fi 5 (802.11 a/b/g/n/ac, 2,4 i 5 GHz), Bluetooth 5.0 z BLE; 18,5\", 22\" i 27\": Wi-Fi 6E (802.11 a/b/g/n/ac/ax, 2,4, 5 i 6 GHz), Bluetooth 5.2 z BLE i BT Long Range do 200 m"
+      },
+      {
+        "name": "PoE",
+        "value": "18,5\", 22\" i 27\": port PoE, zasilanie przez moduł PoE SUNMI (opcja)"
+      },
+      {
+        "name": "Czytnik linii papilarnych",
+        "value": "18,5\", 22\" i 27\": w przycisku zasilania"
+      },
+      {
+        "name": "Przyciski",
+        "value": "15,6\": przycisk zasilania; 18,5\", 22\" i 27\": przycisk zasilania z czytnikiem linii papilarnych"
+      },
+      {
+        "name": "Audio",
+        "value": "15,6\": głośnik 3 W, mikrofon; 18,5\", 22\" i 27\": 2 głośniki 3 W, 2 mikrofony"
+      },
+      {
+        "name": "Stopień ochrony",
+        "value": "IP54"
+      },
+      {
+        "name": "Montaż",
+        "value": "VESA 100 × 100"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "Lampka sygnalizacyjna, moduł NFC, MSR i skaner, kamera (jedno- lub dwuobiektywowa albo 3D), moduł PoE, uchwyt POS, stojak (opcjonalnie z drukarką i skanerem), mocowanie VESA 100 × 100"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "15,6\": zasilacz 100–240 V AC, wyjście 24 V / 1,5 A; 18,5\", 22\" i 27\": zasilacz 100–240 V AC, wyjście 20 V / 3,5 A, gniazdo zasilania USB-C"
+      },
+      {
+        "name": "Wymiary",
+        "value": "15,6\": 375,05 × 224,5 × 31,3 mm; 18,5\": 443 × 264 × 29,8 mm; 22\": 511 × 303 × 29,8 mm; 27\": 646 × 384 × 29,8 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "15,6\": 2,2 kg; 18,5\": 2,7 kg; 22\": 3,3 kg; 27\": 6,6 kg"
+      },
+      {
+        "name": "Warunki pracy",
+        "value": "15,6\": od -10 do 50°C; 18,5\", 22\" i 27\": 0–40°C; przechowywanie od -20 do 60°C"
+      },
+      {
+        "name": "Certyfikaty",
+        "value": "15,6\": CCC, CE, FCC, RoHS, SRRC, CB; 18,5\", 22\" i 27\": 3C, SRRC, CE, CB, FCC, IC, RoHS/REACH/WEEE, EAA, EMV CL L1"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Ekran, przewody zasilające z wtyczką EU i UK, zasilacz (wersja 15,6\"), uchwyt VESA 100 × 100 (wersja 15,6\")"
+      },
+      {
+        "name": "Zastosowanie",
+        "value": "Kiosk samoobsługowy, kasa samoobsługowa, stanowisko kasowe, rejestracja gości, tablica informacyjna"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "36 miesięcy"
+      }
+    ],
+    "applications": [
+      "Kiosk zamówień w restauracji",
+      "Kasa samoobsługowa w sklepie",
+      "Stanowisko kasowe z szufladą i drukarką",
+      "Rejestracja gości i tablica informacyjna"
+    ],
+    "variants": [
+      {
+        "partNumber": "P11050020",
+        "name": "FLEX 3 15,6\"",
+        "attributes": {
+          "Przekątna ekranu": "15,6\"",
+          "Pamięć": "4 GB RAM / 64 GB"
+        },
+        "priceFrom": 2281.87,
+        "availability": "on-order"
+      },
+      {
+        "partNumber": "P11050012",
+        "name": "FLEX 3 18,5\"",
+        "attributes": {
+          "Przekątna ekranu": "18,5\"",
+          "Pamięć": "6 GB RAM / 128 GB",
+          "Czytnik linii papilarnych": "Tak",
+          "Wi-Fi 6E": "Tak"
+        },
+        "priceFrom": 4411.65,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P11050001",
+        "name": "FLEX 3 22\"",
+        "attributes": {
+          "Przekątna ekranu": "21,5\" (22\")",
+          "Pamięć": "6 GB RAM / 128 GB",
+          "Czytnik linii papilarnych": "Tak",
+          "Wi-Fi 6E": "Tak"
+        },
+        "priceFrom": 4513.04,
+        "availability": "available"
+      },
+      {
+        "partNumber": "P11050006",
+        "name": "FLEX 3 27\"",
+        "attributes": {
+          "Przekątna ekranu": "27\"",
+          "Pamięć": "6 GB RAM / 128 GB",
+          "Czytnik linii papilarnych": "Tak",
+          "Wi-Fi 6E": "Tak"
+        },
+        "priceFrom": 5053.93,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Przekątna ekranu": "Przekątna ekranu dotykowego FHD 1920 × 1080 px z NFC.\n\n• 15,6\" — 250 nitów, 2,2 kg; do stanowiska kasowego.\n\n• 18,5\", 21,5\" (sprzedawany jako 22\") i 27\" — ekran IPS 400 nitów; 22\" i 27\" SUNMI zaleca do kasy samoobsługowej i kiosku zamówień.",
+      "Pamięć": "Pamięć operacyjna (RAM) i pamięć na system i aplikacje.\n\n• 4 GB RAM / 64 GB — wersja 15,6\", procesor 6-rdzeniowy do 2,4 GHz.\n\n• 6 GB RAM / 128 GB — wersje 18,5\", 22\" i 27\", procesor 8-rdzeniowy do 2,7 GHz.",
+      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Mają go wersje 18,5\", 22\" i 27\".",
+      "Wi-Fi 6E": "Wi-Fi 802.11ax z pasmem 6 GHz, obok pasm 2,4 i 5 GHz.\n\n• Mają je wersje 18,5\", 22\" i 27\", razem z Bluetooth 5.2.\n\n• Wersja 15,6\" ma Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [],
+    "downloads": [
+      {
+        "name": "Karta katalogowa SUNMI FLEX 3 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/sunmi-flex-3.pdf",
+        "size": "3,6 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Który rozmiar SUNMI FLEX 3 wybrać?",
+        "answer": "SUNMI zaleca ekran 22\" do kasy samoobsługowej, a ekran 27\" do kiosku zamówień w restauracji, rejestracji gości i placówek ochrony zdrowia. Wersja 18,5\" na mocowaniu VESA pracuje na stanowisku w zakładzie produkcyjnym, np. z instrukcjami stanowiskowymi. Wersja 15,6\" pracuje przy stanowisku kasowym, np. z [szufladą kasową SUNMI MAX](/produkt/sunmi-c06004004) i drukarką 80 mm [SUNMI NT320](/produkt/sunmi-nt320)."
+      },
+      {
+        "question": "Jak zrobić kiosk z SUNMI FLEX 3?",
+        "answer": "Kiosk składa się z ekranu, stojaka i modułów. Stojaki Retail (podłogowy i na ladę) z drukarką i skanerem pasują tylko do ekranu 22\". Stojak podłogowy Restaurant z drukarką pasuje do ekranów 22\" i 27\", a stojak na ladę Restaurant do ekranów 18,5\", 22\" i 27\". Moduły dodają odczyt kart i kodów, lampkę sygnalizacyjną i uchwyt na terminal płatniczy. Stojaki i moduły są w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow)."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 przyjmie płatność kartą?",
+        "answer": "Tak, na dwa sposoby: przez NFC na ekranie albo przez terminal płatniczy na uchwycie POS przy ekranie. Obsługa NFC na ekranie zależy od programu kiosku i operatora płatności. Moduł NFC, MSR i skaner odczytuje karty członkowskie, karty z paskiem magnetycznym i kody QR. Prosimy o kontakt i podanie operatora płatności."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 wymaga programu?",
+        "answer": "Tak. Ekran ma system SUNMI OS 4.0 na Androidzie 13, ale zamówienia przyjmuje dopiero program kiosku. Program musi przesyłać zamówienia do programu sprzedaży i obsługiwać wybrany sposób płatności. Prosimy o kontakt i podanie nazwy programu sprzedaży."
+      },
+      {
+        "question": "Czy SUNMI FLEX 3 ma Google Play?",
+        "answer": "Wszystkie rozmiary obsługują usługi Google (GMS) w systemie SUNMI OS 4.0 na Androidzie 13. Jeśli program kiosku wymaga Sklepu Google Play, prosimy o kontakt przed zamówieniem. Potwierdzimy konfigurację wybranego PN."
+      }
+    ],
+    "createdAt": "2026-10-22",
+    "updatedAt": "2026-10-22"
   }
 ]
 
