@@ -2622,10 +2622,22 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 2045.25,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01270001.png",
+      "/images/products/P01270001-2.png",
+      "/images/products/P01270001-3.png",
+      "/images/products/P01270001-4.png",
+      "/images/products/P01270001-5.png",
+      "/images/products/P01270001-6.png",
+      "/images/products/P01270001-7.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI D3 PRO — widok z przodu z prawej strony: ekran dotykowy 15,6\" z cienką ramką na podstawie",
+      "SUNMI D3 PRO — widok z przodu: ekran 15,6\" z pulpitem SUNMI OS",
+      "SUNMI D3 PRO — widok z prawego boku: ekran, ramię i podstawa",
+      "SUNMI D3 PRO — widok z tyłu: tylna obudowa ekranu i ramię podstawy",
+      "SUNMI D3 PRO — widok od spodu podstawy z otworami montażowymi",
+      "SUNMI D3 PRO — widok z tyłu z prawej strony, z góry",
+      "SUNMI D3 PRO z ekranem klienta 10,1\" C02020005 — widok z tyłu z prawej strony, od strony klienta; ekran klienta kupuje się osobno"
     ],
     "tags": [
       "retail"
