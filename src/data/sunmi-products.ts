@@ -2922,10 +2922,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 1416.47,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01260026.png",
+      "/images/products/P01260026-2.png",
+      "/images/products/P01260026-3.png",
+      "/images/products/P01260026-4.png",
+      "/images/products/P01260026-5.png",
+      "/images/products/P01260026-6.png",
+      "/images/products/P01260026-7.png",
+      "/images/products/P01260026-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI D3 MINI 58 mm — widok z przodu z prawej strony, z góry: ekran dotykowy 10,1\"",
+      "SUNMI D3 MINI 58 mm — widok z przodu: ekran 10,1\" z pulpitem SUNMI OS",
+      "SUNMI D3 MINI 58 mm — widok z góry: ekran 10,1\" z pulpitem SUNMI OS, wyświetlacz klienta 2,4\", pole czytnika NFC i okno skanera",
+      "SUNMI D3 MINI 58 mm — widok z tyłu z prawej strony, od strony klienta",
+      "SUNMI D3 MINI 58 mm — widok od strony klienta: wyświetlacz siedmiosegmentowy 2,4\" i pole czytnika NFC",
+      "SUNMI D3 MINI 58 mm — widok z prawego boku",
+      "SUNMI D3 MINI 58 mm — widok od spodu",
+      "SUNMI D3 MINI 58 mm — widok z tyłu z lewej strony, od strony klienta"
     ],
     "tags": [
       "retail"
@@ -3147,10 +3161,24 @@ export const sunmiProducts: Product[] = [
     "priceFrom": 1808.59,
     "availability": "available",
     "images": [
-      "/images/manufacturers/sunmi-placeholder.svg"
+      "/images/products/P01260015.png",
+      "/images/products/P01260015-2.png",
+      "/images/products/P01260015-3.png",
+      "/images/products/P01260015-4.png",
+      "/images/products/P01260015-5.png",
+      "/images/products/P01260015-6.png",
+      "/images/products/P01260015-7.png",
+      "/images/products/P01260015-8.png"
     ],
     "imageDescriptions": [
-      "SUNMI — brak zdjęcia produktu"
+      "SUNMI D3 MINI 80 mm — widok z przodu z prawej strony, z góry: ekran dotykowy 10,1\"",
+      "SUNMI D3 MINI 80 mm — widok z przodu: ekran 10,1\" z pulpitem SUNMI OS",
+      "SUNMI D3 MINI 80 mm — widok z góry: ekran 10,1\" z pulpitem SUNMI OS i dotykowy ekran klienta 4\"",
+      "SUNMI D3 MINI 80 mm — widok z tyłu z prawej strony: ekran klienta 4\"",
+      "SUNMI D3 MINI 80 mm — widok od strony klienta: dotykowy ekran klienta 4\"",
+      "SUNMI D3 MINI 80 mm — widok z prawego boku",
+      "SUNMI D3 MINI 80 mm — widok od spodu",
+      "SUNMI D3 MINI 80 mm — widok z tyłu z lewej strony: ekran klienta 4\""
     ],
     "tags": [
       "retail"
