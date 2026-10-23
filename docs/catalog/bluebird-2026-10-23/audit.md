@@ -539,3 +539,39 @@ Poprawione w trakcie: dymek „Mocowanie” — „Gniazdo …, w które wsuwa s
 - `next start -p 3151`: `/produkt/bluebird-rfr901`, `/produkt/bluebird-rfr900`, `/produkt/bluebird-355040055`, `/uchwyty-rfid`, `/terminale-bluebird`, PDF-y i zdjęcia — HTTP 200, bez przekierowań. Sitemap zawiera 3 nowe karty. `/terminale-bluebird` nie zawiera kart RFR (tak jak RFD40 na stronie Zebra).
 - Tabele wariantów (`#warianty .overflow-x-auto`, zwinięte i rozwinięte): RFR900 — 1216/1216 (1440 px), 1201/1201 (1280), 945/945 (1024); RFR901 — 1216/1216, 1201/1201, 945/945. Bez przewijania.
 - Kafle `/uchwyty-rfid` (1440 px, pole zdjęcia 299 × 224, wysokość karty 425 px jak w rzędach 2–4; rząd 1 — 421 px): RFR901 152 × 162 px (51% szer., 72% wys.), RFR900 160 × 150 (53%, 67%). Porównanie: RFD40 Premium 156 × 167 (52%, 74%), RFD9030 155 × 155 (52%, 69%), TSL 3128 121 × 125 (41%, 56%), Unitech RP300 130 × 117 (44%, 52%). Skala jak RFD40/RFD90, większa niż TSL i RP300 w tym samym rzędzie (Bluebird ma stałą skalę 0,72 w `ProductCard.tsx`).
+
+## 14. Poprawki RFR po audycie (23.10.2026)
+
+Niezależny audyt RFR901, RFR900 (RFR971), baterii 355040055, 11 stacji i `/uchwyty-rfid` wykazał 4 sprzeczności (S1–S4) i 12 nieprecyzyjności (N1–N12). Poprawki:
+
+| # | Przed | Po |
+|---|---|---|
+| S1 | RFR901: „wymienia się bez wyłączania czytnika (hot swap)” w opisie i specyfikacji; instrukcja 4.1.2 każe wyłączyć zasilanie przed wyjęciem baterii | „Bateria 4900 mAh jest wymienna.”; spec. „4900 mAh, 3,63 V, wymienna; opcjonalnie 7000 mAh” |
+| S2 | RFR900: „ponad 900 tagów na sekundę w odległości ponad 6 m”, spec. „Ponad 6 m”, porównanie w `/uchwyty-rfid` „z ponad 6 m” | „Zasięg odczytu wynosi do 6 m” (karta s. 1, strona modelu, Jarltech: „up to 6 m”); spec. „Do 6 m”; porównanie „z odległości do 6 m”; „ponad 900 tagów/s” bez zmian |
+| S3 | RFR971-WX4S bez atrybutu „Bluetooth”, nazwy pozostałych PN z „Bluetooth”, spec. „5.3 … zależnie od PN”, FAQ „w wersjach z Bluetooth” | Atrybut i dymek „Bluetooth” usunięte, nazwy PN bez „Bluetooth”, spec. „5.3 + EDR, klasa 2”, FAQ o RFR971: „z układem Impinj E710 i gniazdem USB-C”. Jarltech przy RFR971-NX4S (ta sama konfiguracja) podaje Bluetooth, a karta RFR971 podaje 5.3 dla modelu. RFR971-WX4S i RFR971-WA4S mają teraz te same atrybuty (mocowanie EF40X, 3400 mAh) |
+| S4 | Zdjęcie główne RFR900 `RFR971-WA4S.png` — wersja samodzielna RFR900S z okienkiem skanera, powiększona 1,86× | Plik usunięty (`git rm`) i wykreślony ręcznie z 3 map zdjęć; jedyne zdjęcie `RFR971-WAH5X.png` (nakładka z terminalem) |
+| N1 | FAQ RFR900 o ładowaniu: przykład 204020030 i „zgodność potwierdzimy” | „Stacje Bluebird w ofercie nie przyjmują terminali EF40X ani HF550X. Stację do terminala z nałożonym RFR900 dobierzemy na zapytanie.” |
+| N2 | 11 stacji: to samo zdanie „…w wersji z mocowaniem do tego terminala” + „Czytniki w ofercie: [RFR900] … i [RFR901] …” (55 par z wspólnymi 6-gramami) | Jedno zdanie na stację, inne w każdej, z nazwą terminala (S20, S50/S70, EF551); bez linków do kart RFR; wprost, że oferowane PN mają inne mocowanie, a wersję do terminala dobierzemy na zapytanie. Wspólne 6-gramy z tego zdania: 0 |
+| N3 | FAQ RFR901: „WCASA … przesyła dane przez Bluetooth” | Obie wersje przesyłają dane przez Bluetooth lub kabel USB-C (instrukcja: USB-C „Provides communications”, „Interface USB, Bluetooth”; CX „Bluetooth Connection; USB-C Cable”). Tak samo w dymku „Uchwyt” i spec. „Złącze” |
+| N4 | „RFR900 jest nakładką na terminale EF40X i HF550X” (FAQ RFR901, `shortDescription` RFR900, kategoria) | „Oferowane PN mają mocowanie do EF40X albo HF550X” |
+| N5 | „…Impinj E710, dlatego od RFR971 zaczynają się numery katalogowe” | „Oferowane PN mają oznaczenie RFR971 i układ Impinj E710.” |
+| N6 | `seoTitle` RFR901 „z uchwytem pistoletowym” | „z rękojeścią pistoletową” |
+| N7 | „odprawy gości w hotelarstwie” | „zameldowania gości w hotelach” |
+| N8 | `seoDescription` RFR900: „PN: RFR971-WA4S, WA4SE, WAH5X, WX4S” | pełne PN: RFR971-WA4S, RFR971-WA4SE, RFR971-WAH5X, RFR971-WX4S |
+| N9 | Instrukcja RFR900 z 2016 r. (micro USB, BT 2.1, 3050 mAh) w `downloads` | usunięta z `downloads`; plik PDF pozostał w `public/instrukcje/` |
+| N10 | Bateria 355040055: „Standardowa bateria RFR900 ma pojemność 3400 mAh” | „…RFR900 w wersji RFR971 ma pojemność 3400 mAh” |
+| N11 | Opisy zdjęć RFR901: „widok z boku”, „widok z przodu” | oba „widok z góry pod kątem” |
+| N12 | Kategoria: „Bluebird RFR901 ma … uchwyt na smartfon” | „…a w wersji RFR901-WCAUN uchwyt na smartfon” (także FAQ RFR900 „Kiedy wybrać…”) |
+
+Pominięte w audycie, uzupełnione:
+
+- Zasilacz 602010041, wtyczka 602020024, kabel 603010005: RFR901 i RFR900 dopisane w spec. „Kompatybilność” i w `relatedProducts` (karty RFR wymieniają je jako „Wymagane”).
+- RFR901: przycisk zmiany trybu RFID/kody kreskowe w FAQ o przełączaniu (instrukcja 5.1–5.2, przycisk „RFID, barcode switch button”); przesyłanie danych przez USB-C (patrz N3).
+- Stacje RFR901 Universal/Standalone nie zostały dodane: brak PN w API.
+
+Kategoria `/uchwyty-rfid`: `seoDescription` bez trybu rozkazującego („Zgodność terminali, łączność i ładowanie w porównaniu.”); zdania o RFR według S2, N4, N12.
+
+Kontrola (`porownaj-opisy.py`):
+
+- `--prefiks=bluebird-rfr`, pola `description`, `shortDescription`, `seoDescription`, `faq`: 0 par.
+- `--kategoria=akcesoria`, przed → po: `description` 149 → 100 (zniknęło 49 par stacji; pozostałe 6 par między stacjami to wcześniejsze wspólne frazy o zasilaczu 12 V i komorach na baterie), `shortDescription` 23 → 23, `seoDescription` 55 → 55, `faq` 0 → 0.
