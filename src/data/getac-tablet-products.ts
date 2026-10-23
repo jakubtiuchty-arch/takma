@@ -2682,7 +2682,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Zasilacz USB-C 65 W Getac GAT6E1",
     "seoDescription": "Getac GAT6E1 — zasilacz USB-C 65 W z przewodem zasilającym z wtyczką EU do tabletów Getac ZX80, ZX80W, ZX10 G2 i innych modeli z zasilaniem USB-C.",
     "shortDescription": "Getac GAT6E1 — zasilacz USB-C 65 W z przewodem zasilającym z wtyczką EU do tabletów Getac ZX80, ZX80W, ZX10 G2 i innych modeli z zasilaniem USB-C.",
-    "description": "Zasilacz Getac GAT6E1 zasila tablet i ładuje jego baterię z gniazdka sieciowego. Ma wyjście USB-C o mocy 65 W i przewód zasilający z wtyczką EU. Tablet Getac ZX80 nie ma zasilacza w zestawie, dlatego do pierwszego uruchomienia potrzebny jest zasilacz GAT6E1. Zasilacz zasila też stację biurkową GDODXC, która nie ma własnego zasilacza.\n\nZasilacz pasuje do tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w), [ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140). Do modeli ZX80W, ZX10 G2 i modeli z Windows zasilacz służy jako zapasowy, bo zestawy tych tabletów zawierają zasilacz.",
+    "description": "Zasilacz Getac GAT6E1 zasila tablet i ładuje jego baterię z gniazdka sieciowego. Ma wyjście USB-C o mocy 65 W i przewód zasilający z wtyczką EU. Tablet Getac ZX80 nie ma zasilacza w zestawie, dlatego zasilacz GAT6E1 zamawia się razem z tabletem. Zasilacz zasila też stację biurkową GDODXC, która nie ma własnego zasilacza.\n\nZasilacz pasuje do tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w), [ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140). Do pozostałych modeli GAT6E1 służy jako dodatkowy zasilacz USB-C.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -2694,7 +2694,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GAT6E1.png"
     ],
     "imageDescriptions": [
-      "Zasilacz USB-C 65 W Getac GAT6E1 z przewodem zasilającym"
+      "Zasilacz USB-C 65 W Getac GAT6E1 z przewodem USB-C"
     ],
     "tags": [
       "magazyn",
@@ -2839,7 +2839,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 9980 mAh Getac GBM2XA do ZX80 i ZX80W",
     "seoDescription": "Getac GBM2XA — bateria wymienna o dużej pojemności 9980 mAh do tabletów Getac ZX80 i ZX80W.",
     "shortDescription": "Getac GBM2XA — bateria wymienna o dużej pojemności 9980 mAh do tabletów Getac ZX80 i ZX80W.",
-    "description": "Bateria Getac GBM2XA to bateria o dużej pojemności do kieszeni baterii tabletów Getac ZX80 i ZX80W. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 4990 mAh. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-polimerowa ma napięcie 3,84 V i pojemność typową 9980 mAh. Jest grubsza od baterii standardowej: ma 16,6 mm zamiast 8,95 mm. Baterię ładuje także [ładowarka GCMCEM](/produkt/getac-ladowarka-2-gniazdowa-gcmcem).\n\nBateria jest sprzedawana pojedynczo. W kieszeni tabletu pracuje jedna bateria: standardowa GBM1XA albo o dużej pojemności GBM2XA.",
+    "description": "Bateria Getac GBM2XA to bateria o dużej pojemności do kieszeni baterii tabletów Getac ZX80 i ZX80W. Ma 2 razy większą pojemność niż bateria standardowa 4990 mAh. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-polimerowa ma napięcie 3,84 V i pojemność typową 9980 mAh. Jest grubsza od baterii standardowej: ma 16,6 mm zamiast 8,95 mm. Baterię ładuje także [ładowarka GCMCEM](/produkt/getac-ladowarka-2-gniazdowa-gcmcem).\n\nBateria jest sprzedawana pojedynczo. W kieszeni tabletu pracuje jedna bateria: standardowa GBM1XA albo o dużej pojemności GBM2XA.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -2988,7 +2988,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Stacja biurkowa Getac GDODXC do ZX80 i ZX80W",
     "seoDescription": "Getac GDODXC — stacja biurkowa ze złączem pogo do tabletów Getac ZX80 i ZX80W: LAN, HDMI, 2 × USB 2.0, audio. Bez zasilacza.",
     "shortDescription": "Getac GDODXC — stacja biurkowa ze złączem pogo do tabletów Getac ZX80 i ZX80W: LAN, HDMI, 2 × USB 2.0, audio. Bez zasilacza.",
-    "description": "Stacja biurkowa Getac GDODXC ładuje tablet i udostępnia porty do pracy przy biurku. Tablet łączy się ze stacją przez złącze pogo. Port LAN i porty USB służą do przesyłania danych do systemów firmy, a port HDMI do podłączenia monitora.\n\nStacja ma port USB-C tylko do zasilania (Power Delivery), 2 porty USB 2.0 Type-A, port LAN, port HDMI, gniazdo audio i gniazdo Kensington. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-C 65 W Getac (GAT6E1)](/produkt/getac-zasilacz-usb-c-gat6e1)\n\nStacja nie ma zasilacza w zestawie.",
+    "description": "Stacja biurkowa Getac GDODXC ładuje tablet i udostępnia porty do pracy przy biurku. Tablet łączy się ze stacją przez złącze pogo. Port LAN i porty USB służą do przesyłania danych do systemów firmy, a port HDMI do podłączenia monitora.\n\nStacja ma wejście zasilania USB-C (Power Delivery), 2 porty USB 2.0 Type-A, port LAN, port HDMI, gniazdo audio i gniazdo Kensington. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-C 65 W Getac (GAT6E1)](/produkt/getac-zasilacz-usb-c-gat6e1)\n\nStacja nie ma zasilacza w zestawie.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -3020,7 +3020,7 @@ export const getacTabletAccessories: Product[] = [
       },
       {
         "name": "Porty",
-        "value": "USB-C 3.2 (tylko zasilanie), 2 × USB 2.0 Type-A, LAN, HDMI, gniazdo audio, gniazdo Kensington"
+        "value": "wejście zasilania USB-C (Power Delivery), 2 × USB 2.0 Type-A, LAN, HDMI, gniazdo audio, gniazdo Kensington"
       },
       {
         "name": "Zasilanie",
@@ -3054,11 +3054,11 @@ export const getacTabletAccessories: Product[] = [
   {
     "id": "getac-rysik-digitizer-gmpdx7",
     "slug": "getac-rysik-digitizer-gmpdx7",
-    "name": "Pióro digitizer Getac GMPDX7 do ZX80, ZX80W i ZX10 G2",
-    "seoTitle": "Pióro digitizer Getac GMPDX7 do ZX80, ZX80W i ZX10 G2",
-    "seoDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80, ZX80W i ZX10 G2 z ekranem z digitizerem.",
-    "shortDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80, ZX80W i ZX10 G2 z ekranem z digitizerem.",
-    "description": "Pióro Getac GMPDX7 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Działa z tabletami, które mają ekran z digitizerem. Wersje tabletów bez digitizera obsługuje się palcem, w rękawicy albo rysikiem pojemnościowym.\n\nPióro ma długość 110,8 mm i średnicę 9 mm. Linka o długości 304 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w) i [ZX10 G2](/produkt/getac-zx10-g2). Każda wersja ZX80W z naszej oferty ma digitizer.\n\nWersje tabletów z digitizerem mają w nazwie wariantu słowo „digitizer”.",
+    "name": "Pióro digitizer Getac GMPDX7 do ZX80 i ZX80W",
+    "seoTitle": "Pióro digitizer Getac GMPDX7 do ZX80 i ZX80W",
+    "seoDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80 i ZX80W z ekranem z digitizerem.",
+    "shortDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80 i ZX80W z ekranem z digitizerem.",
+    "description": "Pióro Getac GMPDX7 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Działa z tabletami, które mają ekran z digitizerem. Wersje tabletów bez digitizera obsługuje się palcem, w rękawicy albo rysikiem pojemnościowym.\n\nPióro ma długość 110,8 mm i średnicę 9 mm. Linka o długości 304 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\nWersje ZX80 z digitizerem mają w nazwie wariantu słowo „digitizer”. Wszystkie wersje ZX80W mają ekran z digitizerem.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -3070,7 +3070,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GMPDX7.png"
     ],
     "imageDescriptions": [
-      "Pióro digitizer Getac GMPDX7 z linką"
+      "Pióro digitizer Getac GMPDX7 z linką do tabletów ZX80 i ZX80W"
     ],
     "tags": [
       "magazyn",
@@ -3106,7 +3106,7 @@ export const getacTabletAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Getac ZX80, Getac ZX80W, Getac ZX10 G2"
+        "value": "Getac ZX80, Getac ZX80W (wersje z digitizerem)"
       }
     ],
     "applications": [],
@@ -3114,8 +3114,7 @@ export const getacTabletAccessories: Product[] = [
     "relatedAccessories": [],
     "relatedProducts": [
       "getac-zx80",
-      "getac-zx80w",
-      "getac-zx10-g2"
+      "getac-zx80w"
     ],
     "downloads": [],
     "faq": [],
@@ -3199,7 +3198,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Torba Getac GMBCX3 do ZX80 i ZX80W",
     "seoDescription": "Getac GMBCX3 — torba z regulowanym paskiem na ramię do tabletów Getac ZX80 i ZX80W i ich akcesoriów.",
     "shortDescription": "Getac GMBCX3 — torba z regulowanym paskiem na ramię do tabletów Getac ZX80 i ZX80W i ich akcesoriów.",
-    "description": "Torba Getac GMBCX3 chroni tablet podczas transportu. Ma regulowany, wyściełany pasek na ramię oraz przegrody i kieszenie na zamek błyskawiczny. W torbie mieści się tablet razem z akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 255 × 230 × 123 mm i masę 560 g. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\nTorba przydaje się przy przewożeniu tabletu w pojeździe i przy pracy w terenie. W torbie można przewozić tablet razem z akcesoriami, np. zasilaczem i zapasową baterią.",
+    "description": "Torba Getac GMBCX3 chroni tablet podczas transportu. Ma regulowany, wyściełany pasek na ramię, komory zamykane na zamek błyskawiczny i kieszenie wewnątrz. W torbie mieści się tablet razem z akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 255 × 230 × 123 mm i masę 560 g. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\nTorba przydaje się przy przewożeniu tabletu w pojeździe i przy pracy w terenie. W torbie można przewozić tablet razem z akcesoriami, np. zasilaczem i zapasową baterią.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -3334,7 +3333,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 9980 mAh Getac GBM2X3 do ZX10 G2",
     "seoDescription": "Getac GBM2X3 — bateria wymienna o dużej pojemności 9980 mAh do tabletu Getac ZX10 G2.",
     "shortDescription": "Getac GBM2X3 — bateria wymienna o dużej pojemności 9980 mAh do tabletu Getac ZX10 G2.",
-    "description": "Bateria Getac GBM2X3 to bateria o dużej pojemności do tabletu Getac ZX10 G2. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową. Z 2 bateriami GBM2X3 tablet pracuje na samej baterii od −29°C.\n\nBateria litowo-polimerowa ma napięcie 3,88 V i pojemność typową 9980 mAh. Baterie o dużej pojemności zwiększają grubość tabletu o ok. 7,65 mm i masę o ok. 140 g. Baterię wymienia się bez wyłączania tabletu, gdy w drugiej kieszeni jest bateria. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).",
+    "description": "Bateria Getac GBM2X3 to bateria o dużej pojemności do tabletu Getac ZX10 G2. Ma 2 razy większą pojemność niż bateria standardowa GBM1X2 (4990 mAh). Z 2 bateriami GBM2X3 tablet pracuje na samej baterii od −29°C.\n\nBateria litowo-polimerowa ma napięcie 3,88 V i pojemność typową 9980 mAh. Baterie o dużej pojemności zwiększają grubość tabletu o ok. 7,65 mm i masę o ok. 140 g. Baterię wymienia się bez wyłączania tabletu, gdy w drugiej kieszeni jest bateria. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -3411,8 +3410,12 @@ export const getacTabletAccessories: Product[] = [
     "manufacturerId": "getac",
     "priceFrom": 1135.5,
     "availability": "on-order",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/GDODE8.png"
+    ],
+    "imageDescriptions": [
+      "Stacja biurkowa Getac GDODE8 do tabletu ZX10 G2"
+    ],
     "tags": [
       "magazyn",
       "logistyka",
@@ -3480,7 +3483,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GDKBUR.png"
     ],
     "imageDescriptions": [
-      "Klawiatura ze stacją Getac GDKBUR z tabletem ZX10 G2, widok z przodu i z tyłu"
+      "Klawiatura ze stacją Getac GDKBUR do tabletu ZX10 G2 — widok pod kątem i z góry"
     ],
     "tags": [
       "magazyn",
@@ -3631,7 +3634,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GMBCX2.png"
     ],
     "imageDescriptions": [
-      "Torba Getac GMBCX2 do tabletów 10–12 cali"
+      "Torba Getac GMBCX2 do tabletów ZX10 G2, UX10 G5, F110 G7 i F120"
     ],
     "tags": [
       "magazyn",
@@ -3756,7 +3759,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 9240 mAh Getac GBM9X5 do UX10 G5",
     "seoDescription": "Getac GBM9X5 — bateria o dużej pojemności 9240 mAh do tabletu Getac UX10 G5.",
     "shortDescription": "Getac GBM9X5 — bateria o dużej pojemności 9240 mAh do tabletu Getac UX10 G5.",
-    "description": "Bateria Getac GBM9X5 to bateria o dużej pojemności do tabletu Getac UX10 G5. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 4070 mAh. Bateria pasuje do ładowarek wielostanowiskowych Getac, np. [ładowarki 8-gniazdowej GCECER](/produkt/getac-ladowarka-8-gniazdowa-gcecer).\n\nBateria litowo-jonowa ma napięcie 10,8 V, pojemność 9240 mAh i 9 ogniw (3S3P). Zwiększa grubość tabletu o ok. 11 mm. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nBateria jest sprzedawana pojedynczo. Wersja tabletu UW2964VIX9XX ma baterię 9240 mAh w zestawie.",
+    "description": "Bateria Getac GBM9X5 to bateria o dużej pojemności do tabletu Getac UX10 G5. Ma ponad 2 razy większą pojemność niż bateria standardowa 4070 mAh. Bateria pasuje do ładowarek wielostanowiskowych Getac, np. [ładowarki 8-gniazdowej GCECER](/produkt/getac-ladowarka-8-gniazdowa-gcecer).\n\nBateria litowo-jonowa ma napięcie 10,8 V, pojemność 9240 mAh i 9 ogniw (3S3P). Zwiększa grubość tabletu o ok. 11 mm. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nBateria jest sprzedawana pojedynczo. Wersja tabletu UW2964VIX9XX ma baterię 9240 mAh w zestawie.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -3983,7 +3986,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GDKBUP.png"
     ],
     "imageDescriptions": [
-      "Klawiatura odpinana Getac GDKBUP z tabletem UX10 G5"
+      "Klawiatura odpinana Getac GDKBUP do tabletu UX10 G5, widok z uchwytem tabletu"
     ],
     "tags": [
       "magazyn",
@@ -4048,7 +4051,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Zasilacz samochodowy 120 W Getac GAD2X4 z wtykiem zapalniczki",
     "seoDescription": "Getac GAD2X4 — zasilacz samochodowy DC-DC 120 W z wtykiem gniazda zapalniczki do tabletów Getac UX10 G5, F110 G7, F120 i G140.",
     "shortDescription": "Getac GAD2X4 — zasilacz samochodowy DC-DC 120 W z wtykiem gniazda zapalniczki do tabletów Getac UX10 G5, F110 G7, F120 i G140.",
-    "description": "Zasilacz samochodowy Getac GAD2X4 zasila tablet i ładuje jego baterie w pojeździe. Wersja GAD2X4 ma wtyk do gniazda zapalniczki. Przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V.\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). Zdjęcie pokazuje też wersję z przewodami do stałej instalacji (GAD2X8), która nie jest częścią tej oferty.",
+    "description": "Zasilacz samochodowy Getac GAD2X4 zasila tablet i ładuje jego baterie w pojeździe. Wersja GAD2X4 ma wtyk do gniazda zapalniczki. Przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V.\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). W zestawie jest wersja z wtykiem zapalniczki.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -4060,7 +4063,7 @@ export const getacTabletAccessories: Product[] = [
       "/images/products/GAD2X4.png"
     ],
     "imageDescriptions": [
-      "Zasilacze samochodowe Getac 120 W: wersja z wtykiem zapalniczki GAD2X4 i wersja z przewodami"
+      "Zasilacz samochodowy 120 W Getac GAD2X4 z wtykiem gniazda zapalniczki"
     ],
     "tags": [
       "magazyn",
@@ -4339,11 +4342,11 @@ export const getacTabletAccessories: Product[] = [
   {
     "id": "getac-rysik-digitizer-gmpdx6",
     "slug": "getac-rysik-digitizer-gmpdx6",
-    "name": "Pióro digitizer Getac GMPDX6 do UX10, F110, F120, K120 i G140",
-    "seoTitle": "Pióro digitizer Getac GMPDX6 do UX10, F110, F120, K120 i G140",
-    "seoDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac z Windows z ekranem z digitizerem.",
-    "shortDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac z Windows z ekranem z digitizerem.",
-    "description": "Pióro Getac GMPDX6 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Przycisk na piórze działa jak prawy przycisk myszy. Pióro działa z tabletami, które mają ekran z digitizerem.\n\nPióro ma długość 109 mm i średnicę 9 mm. Linka o długości 292 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140).\n\nWersje tabletów z digitizerem mają w nazwie wariantu słowo „digitizer”. W tabletach Getac F120 i G140 funkcja Smart Touch obsługuje też rysik bez digitizera.",
+    "name": "Pióro digitizer Getac GMPDX6 do F110 G7, F120 i K120 G3",
+    "seoTitle": "Pióro digitizer Getac GMPDX6 do F110 G7, F120 i K120 G3",
+    "seoDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac F110 G7, F120 i K120 G3 z ekranem z digitizerem.",
+    "shortDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac F110 G7, F120 i K120 G3 z ekranem z digitizerem.",
+    "description": "Pióro Getac GMPDX6 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Przycisk na piórze działa jak prawy przycisk myszy. Pióro działa z tabletami, które mają ekran z digitizerem.\n\nPióro ma długość 109 mm i średnicę 9 mm. Linka o długości 292 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [K120 G3](/produkt/getac-k120-g3).\n\nWersje tabletów z digitizerem mają w nazwie wariantu słowo „digitizer”. W wersjach F120 i G140 bez digitizera funkcja Smart Touch obsługuje rysik pojemnościowy. Pióro GMPDX6 wymaga ekranu z digitizerem.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -4395,18 +4398,16 @@ export const getacTabletAccessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Getac UX10 G5, Getac F110 G7, Getac F120, Getac K120 G3, Getac G140"
+        "value": "Getac F110 G7, Getac F120, Getac K120 G3 (wersje z digitizerem)"
       }
     ],
     "applications": [],
     "compatibleAccessories": [],
     "relatedAccessories": [],
     "relatedProducts": [
-      "getac-ux10-g5",
       "getac-f110-g7",
       "getac-f120",
-      "getac-k120-g3",
-      "getac-g140"
+      "getac-k120-g3"
     ],
     "downloads": [],
     "faq": [],
@@ -4493,7 +4494,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 4200 mAh Getac GBM6X7 do F110 G7",
     "seoDescription": "Getac GBM6X7 — bateria o dużej pojemności 4200 mAh do tabletu Getac F110 G7.",
     "shortDescription": "Getac GBM6X7 — bateria o dużej pojemności 4200 mAh do tabletu Getac F110 G7.",
-    "description": "Bateria Getac GBM6X7 to bateria o dużej pojemności do tabletu Getac F110 G7. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 2680 mAh. Tablet pracuje na 2 bateriach i pozwala wymienić jedną z nich bez wyłączania (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 11,1 V i pojemność typową 4200 mAh. Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 6 mm i masę o ok. 0,24 kg. Pasuje do tabletu [Getac F110 G7](/produkt/getac-f110-g7).\n\nBateria jest sprzedawana pojedynczo.",
+    "description": "Bateria Getac GBM6X7 to bateria o dużej pojemności do tabletu Getac F110 G7. Ma większą pojemność niż bateria standardowa: typowo 4200 mAh zamiast 2680 mAh. Tablet pracuje na 2 bateriach i pozwala wymienić jedną z nich bez wyłączania (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 11,1 V i pojemność typową 4200 mAh. Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 6 mm i masę o ok. 0,24 kg. Pasuje do tabletu [Getac F110 G7](/produkt/getac-f110-g7).\n\nBateria jest sprzedawana pojedynczo.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -4778,7 +4779,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria o dużej pojemności Getac GBM3X8 do F120 i G140",
     "seoDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140.",
     "shortDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140.",
-    "description": "Bateria Getac GBM3X8 to bateria o dużej pojemności do tabletów Getac F120 i G140. Ma wyższe napięcie niż bateria standardowa: 11,61 V zamiast 7,74 V przy tej samej pojemności typowej 4070 mAh. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową.\n\nBateria litowo-polimerowa ma grubość 16,8 mm i masę 205 g. Tablety pozwalają wymienić jedną baterię bez wyłączania (technologia LifeSupport). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
+    "description": "Bateria Getac GBM3X8 to bateria o dużej pojemności do tabletów Getac F120 i G140. Ma wyższe napięcie niż bateria standardowa: 11,61 V zamiast 7,74 V przy tej samej pojemności typowej 4070 mAh. Dzięki temu gromadzi ok. 1,5 raza więcej energii: ok. 47 Wh zamiast ok. 31,5 Wh.\n\nBateria litowo-polimerowa ma grubość 16,8 mm i masę 205 g. Tablety pozwalają wymienić jedną baterię bez wyłączania (technologia LifeSupport). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -5146,7 +5147,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 3450 mAh Getac GBM4X4 do K120 G3",
     "seoDescription": "Getac GBM4X4 — bateria o dużej pojemności 3450 mAh do tabletu Getac K120 G3.",
     "shortDescription": "Getac GBM4X4 — bateria o dużej pojemności 3450 mAh do tabletu Getac K120 G3.",
-    "description": "Bateria Getac GBM4X4 to bateria o dużej pojemności do tabletu Getac K120 G3. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 14,4 V, pojemność typową 3450 mAh i 4 ogniwa (4S1P). Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 11 mm i masę o ok. 0,2 kg. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).\n\nBateria jest sprzedawana pojedynczo.",
+    "description": "Bateria Getac GBM4X4 to bateria o dużej pojemności do tabletu Getac K120 G3. Ma wyższe napięcie i większą pojemność niż bateria standardowa: 14,4 V i 3450 mAh zamiast 11,1 V i 2100 mAh. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 14,4 V, pojemność typową 3450 mAh i 4 ogniwa (4S1P). Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 11 mm i masę o ok. 0,2 kg. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).\n\nBateria jest sprzedawana pojedynczo.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -5568,6 +5569,220 @@ export const getacTabletAccessories: Product[] = [
     "relatedProducts": [
       "getac-k120-g3",
       "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-rysik-pojemnosciowy-gmpsxu",
+    "slug": "getac-rysik-pojemnosciowy-gmpsxu",
+    "name": "Rysik pojemnościowy Getac GMPSXU do ZX10 G2",
+    "seoTitle": "Rysik pojemnościowy Getac GMPSXU do ZX10 G2",
+    "seoDescription": "Getac GMPSXU — rysik pojemnościowy z twardą końcówką i linką do tabletu Getac ZX10 G2.",
+    "shortDescription": "Getac GMPSXU — rysik pojemnościowy z twardą końcówką i linką do tabletu Getac ZX10 G2.",
+    "description": "Rysik pojemnościowy z twardą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma długość 109,1 mm i średnicę 8,9 mm. Końcówka ma 4 mm (średnica 5,5 mm), a linka 304 mm. Producent sprzedaje rysik w zamówieniach od 5 sztuk. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 98.03,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GMPSXU.png"
+    ],
+    "imageDescriptions": [
+      "Rysik pojemnościowy Getac GMPSXU do tabletu ZX10 G2"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMPSXU"
+      },
+      {
+        "name": "Typ",
+        "value": "Rysik pojemnościowy z twardą końcówką i linką"
+      },
+      {
+        "name": "Wymiary",
+        "value": "109,1 mm, średnica 8,9 mm"
+      },
+      {
+        "name": "Końcówka",
+        "value": "4 mm; średnica 5,5 mm"
+      },
+      {
+        "name": "Długość linki",
+        "value": "304 mm"
+      },
+      {
+        "name": "Minimalne zamówienie",
+        "value": "5 szt."
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-rysik-pojemnosciowy-gmpsxw",
+    "slug": "getac-rysik-pojemnosciowy-gmpsxw",
+    "name": "Rysik pojemnościowy Getac GMPSXW do F120 i G140",
+    "seoTitle": "Rysik pojemnościowy Getac GMPSXW do F120 i G140",
+    "seoDescription": "Getac GMPSXW — rysik pojemnościowy z twardą końcówką i odpinaną linką do tabletów Getac F120 i G140.",
+    "shortDescription": "Getac GMPSXW — rysik pojemnościowy z twardą końcówką i odpinaną linką do tabletów Getac F120 i G140.",
+    "description": "Rysik pojemnościowy z twardą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma długość 110 mm i średnicę 9 mm. Końcówka ma 4 mm (średnica 5,5 mm), a odpinana linka 304 mm. Producent sprzedaje rysik w zamówieniach od 10 sztuk. Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 98.03,
+    "availability": "available",
+    "images": [
+      "/images/products/GMPSXW.png"
+    ],
+    "imageDescriptions": [
+      "Rysik pojemnościowy Getac GMPSXW z linką do tabletów F120 i G140"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMPSXW"
+      },
+      {
+        "name": "Typ",
+        "value": "Rysik pojemnościowy z twardą końcówką i odpinaną linką"
+      },
+      {
+        "name": "Wymiary",
+        "value": "110 mm, średnica 9 mm"
+      },
+      {
+        "name": "Końcówka",
+        "value": "4 mm; średnica 5,5 mm"
+      },
+      {
+        "name": "Długość linki",
+        "value": "304 mm"
+      },
+      {
+        "name": "Minimalne zamówienie",
+        "value": "10 szt."
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-rysik-pojemnosciowy-gmpsxn",
+    "slug": "getac-rysik-pojemnosciowy-gmpsxn",
+    "name": "Rysik pojemnościowy Getac GMPSXN do UX10 G5, F110 G7 i K120 G3",
+    "seoTitle": "Rysik pojemnościowy Getac GMPSXN do UX10 G5, F110 G7 i K120 G3",
+    "seoDescription": "Getac GMPSXN — rysik pojemnościowy ze sprężynującą końcówką i linką do tabletów Getac UX10 G5, F110 G7 i K120 G3.",
+    "shortDescription": "Getac GMPSXN — rysik pojemnościowy ze sprężynującą końcówką i linką do tabletów Getac UX10 G5, F110 G7 i K120 G3.",
+    "description": "Rysik pojemnościowy ze sprężynującą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma sprężynującą końcówkę z przewodzącego włókna PET, długość 108,7 mm i średnicę 9 mm. Końcówka ma 2,7 mm (średnica 2,8 mm), a linka 304 mm. Producent sprzedaje rysik w zamówieniach od 5 sztuk. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [K120 G3](/produkt/getac-k120-g3). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 98.03,
+    "availability": "available",
+    "images": [
+      "/images/products/GMPSXN.png"
+    ],
+    "imageDescriptions": [
+      "Rysik pojemnościowy Getac GMPSXN z linką"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMPSXN"
+      },
+      {
+        "name": "Typ",
+        "value": "Rysik pojemnościowy ze sprężynującą końcówką i linką"
+      },
+      {
+        "name": "Końcówka",
+        "value": "Przewodzące włókno PET, 2,7 mm; średnica 2,8 mm"
+      },
+      {
+        "name": "Wymiary",
+        "value": "108,7 mm, średnica 9 mm"
+      },
+      {
+        "name": "Kolor",
+        "value": "Czarny"
+      },
+      {
+        "name": "Długość linki",
+        "value": "304 mm"
+      },
+      {
+        "name": "Minimalne zamówienie",
+        "value": "5 szt."
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5, Getac F110 G7, Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "getac-k120-g3"
     ],
     "downloads": [],
     "faq": [],
