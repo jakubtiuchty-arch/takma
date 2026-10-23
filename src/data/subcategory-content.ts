@@ -2,6 +2,7 @@ import { posCategoryContent } from './pos-category-content'
 import { posComputerCategoryContent } from './pos-computer-category-content'
 import { kdsCategoryContent } from './kds-category-content'
 import { kioskCategoryContent } from './kiosk-category-content'
+import { laptopCategoryContent } from './laptop-category-content'
 import { bixolonReceiptContent } from './bixolon-receipt-content'
 import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
@@ -3048,7 +3049,7 @@ Baterie i zasilanie: pojemność baterii i czas pracy zależą od modelu oraz li
       },
       {
         question: 'Jakie są alternatywy dla tabletów przemysłowych?',
-        answer: 'Alternatywy w zależności od scenariusza: terminal mobilny 6″ (Zebra TC53/MC3400 od 3 286 zł) — kompaktowość i pistoletowy uchwyt. Laptop rugged (Getac S410, Dell Latitude Rugged) — pełna klawiatura i większy ekran 14″. Tablet konsumencki w etui rugged (iPad + OtterBox) — budżetowa opcja, ale bez skanera, Hot Swap i długiego wsparcia. Dla większości zastosowań B2B tablet przemysłowy oferuje najlepszy kompromis mobilności, wytrzymałości i TCO.',
+        answer: 'Alternatywy w zależności od scenariusza: terminal mobilny 6″ (Zebra TC53/MC3400 od 3 286 zł) — kompaktowość i pistoletowy uchwyt. [Laptop przemysłowy](/laptopy-przemyslowe) (Getac B360, V120, S410 G5, S510, S510AD) — wbudowana klawiatura i ekran 12,2–15,6″. Tablet konsumencki w etui rugged (iPad + OtterBox) — budżetowa opcja, ale bez skanera, Hot Swap i długiego wsparcia. Dla większości zastosowań B2B tablet przemysłowy oferuje najlepszy kompromis mobilności, wytrzymałości i TCO.',
       },
       {
         question: 'Jakie tablety Zebra są w ofercie?',
@@ -4250,3 +4251,4 @@ subcategoryContent['drukarki-pos'] = posCategoryContent
 subcategoryContent['komputery-pos'] = posComputerCategoryContent
 subcategoryContent['ekrany-kds'] = kdsCategoryContent
 subcategoryContent['kioski-samoobslugowe'] = kioskCategoryContent
+subcategoryContent['laptopy-przemyslowe'] = laptopCategoryContent

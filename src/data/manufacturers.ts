@@ -92,8 +92,8 @@ export const manufacturers: Manufacturer[] = [
     slug: 'getac',
     name: 'Getac',
     logo: '/images/manufacturers/getac.svg',
-    seoTitle: 'Tablety przemysłowe Getac | TAKMA',
-    seoDescription: 'Tablety przemysłowe Getac z Androidem 15 i Windows 11: fully rugged, MIL-STD-810H, IP66 lub IP67, ekrany LumiBond do pracy na słońcu. TAKMA — partner Getac.'
+    seoTitle: 'Tablety i laptopy przemysłowe Getac | TAKMA',
+    seoDescription: 'Tablety i laptopy przemysłowe Getac z Windows 11 i Androidem 15: fully rugged i rugged, MIL-STD-810H, IP53–IP67, ekrany do pracy na słońcu. TAKMA — partner Getac.'
   },
   {
     id: 'brother',

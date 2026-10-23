@@ -1417,7 +1417,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       },
       {
         title: 'Tablet i laptop w jednym — K120 G3 z klawiaturą',
-        description: '[K120 G3](/produkt/getac-k120-g3) z ekranem 12,5″ i Windows 11 Pro pracuje jak laptop z klawiaturą odpinaną [GDKBUM](/produkt/getac-klawiatura-gdkbum) albo klawiaturą ze stacją [GDKBUN](/produkt/getac-klawiatura-gdkbun). Klawiatury sprzedaje się osobno. Każda wersja ma port LAN.',
+        description: '[K120 G3](/produkt/getac-k120-g3) z ekranem 12,5″ i Windows 11 Pro pracuje jak laptop z klawiaturą odpinaną [GDKBUM](/produkt/getac-klawiatura-gdkbum) albo klawiaturą ze stacją [GDKBUN](/produkt/getac-klawiatura-gdkbun). Klawiatury sprzedaje się osobno. Każda wersja ma port LAN. Laptopy rugged Getac z wbudowaną klawiaturą są w kategorii [laptopy przemysłowe](/laptopy-przemyslowe).',
       },
       {
         title: 'Dokumentacja techniczna i mapy — G140',
