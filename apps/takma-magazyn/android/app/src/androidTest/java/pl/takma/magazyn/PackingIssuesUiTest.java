@@ -1,0 +1,22 @@
+package pl.takma.magazyn;
+import android.app.Activity;import android.content.Intent;import android.test.InstrumentationTestCase;import android.view.View;import android.view.ViewGroup;import android.widget.Button;import android.widget.TextView;import android.view.accessibility.AccessibilityNodeInfo;import java.util.ArrayList;import java.util.List;
+public class PackingIssuesUiTest extends InstrumentationTestCase {
+ private Activity activity;
+ private void texts(View v,List<String> out){if(v instanceof TextView)out.add(((TextView)v).getText().toString());if(v instanceof ViewGroup){ViewGroup g=(ViewGroup)v;for(int i=0;i<g.getChildCount();i++)texts(g.getChildAt(i),out);}}
+ private boolean has(String text){List<String> values=new ArrayList<>();getInstrumentation().runOnMainSync(()->texts(activity.getWindow().getDecorView(),values));return values.stream().anyMatch(v->v.contains(text));}
+ private void expect(String text)throws Exception{for(int i=0;i<100;i++){if(has(text))return;Thread.sleep(100);}fail("Missing: "+text);}
+ private Button find(View v,String text){if(v instanceof Button&&((Button)v).getText().toString().equals(text))return (Button)v;if(v instanceof ViewGroup){ViewGroup g=(ViewGroup)v;for(int i=0;i<g.getChildCount();i++){Button b=find(g.getChildAt(i),text);if(b!=null)return b;}}return null;}
+ private void click(String text)throws Exception{for(int i=0;i<100;i++){List<Boolean> found=new ArrayList<>();getInstrumentation().runOnMainSync(()->{Button b=find(activity.getWindow().getDecorView(),text);if(b!=null&&b.isEnabled()){b.performClick();found.add(true);}});if(!found.isEmpty())return;Thread.sleep(100);}fail("Button missing/disabled: "+text);}
+ private void disabled(String text){getInstrumentation().runOnMainSync(()->{Button b=find(activity.getWindow().getDecorView(),text);assertNotNull(b);assertFalse(b.isEnabled());});}
+ private void dialog(String text)throws Exception{for(int i=0;i<50;i++){AccessibilityNodeInfo root=getInstrumentation().getUiAutomation().getRootInActiveWindow();if(root!=null)for(AccessibilityNodeInfo n:root.findAccessibilityNodeInfosByText(text)){if(n.getText()!=null&&n.getText().toString().equalsIgnoreCase(text) ){android.graphics.Rect bounds=new android.graphics.Rect();n.getBoundsInScreen(bounds);long time=android.os.SystemClock.uptimeMillis();getInstrumentation().sendPointerSync(android.view.MotionEvent.obtain(time,time,android.view.MotionEvent.ACTION_DOWN,bounds.centerX(),bounds.centerY(),0));getInstrumentation().sendPointerSync(android.view.MotionEvent.obtain(time,time+30,android.view.MotionEvent.ACTION_UP,bounds.centerX(),bounds.centerY(),0));return;}}Thread.sleep(100);}fail("Dialog missing: "+text);}
+ private void scan(String code){getInstrumentation().getContext().sendBroadcast(new Intent(BuildConfig.APPLICATION_ID+".BARCODE").setPackage(BuildConfig.APPLICATION_ID).putExtra("data",code));}
+ public void testReportDamagedProduct()throws Exception{
+ activity=getInstrumentation().startActivitySync(new Intent(getInstrumentation().getTargetContext(),MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));expect("Sprawdzono 1 / 3 szt.");click("Zgłoś problem: TAK-5030");dialog("Uszkodzony produkt");dialog("Zgłoś");expect("Pakowanie wstrzymane");assertFalse(has("Zakończ pakowanie"));
+ }
+ public void testReportMissingAfterResolution()throws Exception{
+ activity=getInstrumentation().startActivitySync(new Intent(getInstrumentation().getTargetContext(),MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));expect("Zamówienia");click("Kontrola pakowania");expect("Do pakowania: 1");scan("BOX-02");expect("Sprawdzono 0 / 3 szt.");click("Zgłoś problem: TAK-5030");dialog("Brak produktu");dialog("Zgłoś");expect("Pakowanie wstrzymane");click("Odłóż pojemnik do kolejki");expect("Zeskanuj pojemnik");expect("Do pakowania: 1");scan("BOX-02");expect("Rozwiąż zgłoszenie w panelu");
+ }
+ public void testFinishAfterResolution()throws Exception{
+ activity=getInstrumentation().startActivitySync(new Intent(getInstrumentation().getTargetContext(),MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));click("Kontrola pakowania");expect("Do pakowania: 1");scan("BOX-02");expect("Sprawdzono 0 / 3 szt.");scan("TAK-5030");expect("Sprawdzono 1 / 3 szt.");scan("TAK-5030");expect("Sprawdzono 2 / 3 szt.");scan("TAK-5030");expect("Sprawdzono 3 / 3 szt.");click("Zakończ pakowanie");dialog("Spakowane");expect("Spakowane");
+ }
+}

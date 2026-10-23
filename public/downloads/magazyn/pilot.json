@@ -1,0 +1,10 @@
+{
+  "packageName": "pl.takma.magazyn.debug",
+  "versionCode": 10,
+  "versionName": "0.10.0-demo",
+  "minSdk": 26,
+  "url": "https://www.takma.com.pl/downloads/magazyn/takma-magazyn-10-31900eb7b894.apk",
+  "sha256": "31900eb7b894f1735d2e6322cd9cd3dc4d9b32008b1b5e569e07a7465d7be8fe",
+  "size": 121673,
+  "notes": "Aktualizacje aplikacji przez internet. Sprawdzanie wersji i instalacja bez kabla USB."
+}

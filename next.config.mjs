@@ -16,6 +16,13 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/downloads/magazyn/:file*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-store, max-age=0' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },

@@ -1,0 +1,22 @@
+// Prepare artifacts only. Deployment happens via commit/push to the production branch.
+import {readFileSync,writeFileSync,mkdirSync,copyFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=fileURLToPath(new URL('../../../',import.meta.url));
+const sdk=process.env.ANDROID_HOME || path.join(process.env.HOME,'Library/Android/sdk');
+const tools=path.join(sdk,'build-tools',process.env.ANDROID_BUILD_TOOLS || '35.0.1');
+const apk=path.join(root,'apps/takma-magazyn/android/app/build/outputs/apk/debug/app-debug.apk');
+const signing=execFileSync(path.join(tools,'apksigner'),['verify','--print-certs',apk],{encoding:'utf8'});
+const fingerprint='778237cdb8b42184f8185b0e81fca5597b8db3415727d356ba0d0b4f0a402aaa';
+if(!signing.includes('certificate SHA-256 digest: '+fingerprint))throw Error('Pilot certificate differs; do not replace installed application');
+const info=execFileSync(path.join(tools,'aapt'),['dump','badging',apk],{encoding:'utf8'});
+const [,packageName,versionCode,versionName]=info.match(/package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'/)||[];
+if(packageName!=='pl.takma.magazyn.debug')throw Error('Wrong pilot package');
+const bytes=readFileSync(apk),sha256=createHash('sha256').update(bytes).digest('hex');
+const dir=path.join(root,'public/downloads/magazyn');mkdirSync(dir,{recursive:true});
+const filename=`takma-magazyn-${versionCode}-${sha256.slice(0,12)}.apk`;
+copyFileSync(apk,path.join(dir,filename));
+writeFileSync(path.join(dir,'pilot.json'),JSON.stringify({packageName,versionCode:Number(versionCode),versionName,minSdk:26,url:'https://www.takma.com.pl/downloads/magazyn/'+filename,sha256,size:bytes.length,notes:'Aktualizacje aplikacji przez internet. Sprawdzanie wersji i instalacja bez kabla USB.'},null,2)+'\n');
+console.log(`Prepared ${versionName}, ${bytes.length} bytes; commit and push artifacts with the source.`);

@@ -1,0 +1,1 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"><uses-permission android:name="com.honeywell.decode.permission.DECODE"/><application><uses-library android:name="android.test.runner"/><uses-library android:name="android.test.base"/></application></manifest>
