@@ -1385,6 +1385,371 @@ export const getacTabletProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-f120",
+    "slug": "getac-f120",
+    "name": "Getac F120",
+    "seoH1": "Getac F120",
+    "seoTitle": "Tablet przemysłowy Getac F120 12,2″ z Windows 11 Pro, IP66",
+    "seoDescription": "Tablet przemysłowy Getac F120 12,2″, Windows 11 Pro, Intel Core Ultra, Wi-Fi 7, 1200 nitów. Tablet rugged Getac F120. F120 Getac PN: FW1764WI1DXX, FW17641I1DZX.",
+    "shortDescription": "Getac F120 — tablet fully rugged 12,2″ z Windows 11 Pro, procesorem Intel Core Ultra 5, Wi-Fi 7, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, RS-232, LAN i czytnik kart chipowych.",
+    "description": "Getac F120 to tablet przemysłowy z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,41 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1200 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost do 48 TOPS, a tablet jest komputerem Copilot+ PC. Wersje z tej karty mają 16 GB RAM i dysk SSD 256 GB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Tablet ma Wi-Fi 7, Bluetooth 5.4 i 2 porty Thunderbolt 4.\n\nKonfiguracje różnią się łącznością 4G LTE lub 5G z GPS, digitizerem i modułami: czytnikiem kodów 1D/2D, portem RS-232, portem LAN albo czytnikiem kart chipowych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 11,6 cala i procesory Intel Core 13. generacji ma [Getac F110 G7](/produkt/getac-f110-g7).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/f120/",
+    "priceFrom": 12629.42,
+    "availability": "available",
+    "images": [
+      "/images/products/FW1764WI1DXX.png",
+      "/images/products/FW1764WI1DXX-2.png",
+      "/images/products/FW1764WI1DXX-3.png",
+      "/images/products/FW1764WI1DXX-4.png"
+    ],
+    "imageDescriptions": [
+      "Getac F120 — widok z przodu, ekran 12,2 cala w poziomie i przyciski pod ekranem",
+      "Getac F120 — widok z przodu pod kątem, z lewej strony",
+      "Getac F120 — widok z przodu pod kątem, z prawej strony",
+      "Getac F120 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+    ],
+    "tags": [
+      "produkcja",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "FW1764WI1DXX, FW17641I1DXX, FW17641I1DZX, FW17641I1DIX, FW17641I1DLX, FW17641I16IX, FW17641I16LX, FW17641I1MXX, FW17642I1MXX, FW17641I1MLA, FW17641I1BXX, FW1764GI1BXX"
+      },
+      {
+        "name": "Generacja",
+        "value": "G1"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Windows 11 Pro; Copilot+ PC"
+      },
+      {
+        "name": "Procesor",
+        "value": "Intel Core Ultra 5 226V (do 4,5 GHz); opcje producenta: Core Ultra 5 236V vPro Enterprise, Core Ultra 7 256V, 258V, 266V vPro Enterprise, 268V vPro Enterprise; w tej karcie Core Ultra 5"
+      },
+      {
+        "name": "Grafika i NPU",
+        "value": "Intel Arc 130V (Core Ultra 5) lub 140V (Core Ultra 7); Intel AI Boost do 48 TOPS"
+      },
+      {
+        "name": "Pamięć RAM",
+        "value": "16 GB LPDDR5X (opcja producenta: 32 GB)"
+      },
+      {
+        "name": "Dysk",
+        "value": "SSD PCIe NVMe 256 GB (opcje producenta do 2 TB)"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "12,2″ WUXGA 1920 × 1200, TFT LCD z szerokim kątem widzenia, LumiBond, 1200 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch ze Smart Touch (palec, rękawica, rysik bez przełączania trybu); opcja: tryb podwójny z digitizerem, zależnie od PN"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 5 przycisków programowalnych"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Opcja: czytnik 1D/2D (imager) w górnym gnieździe, zależnie od PN"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 7, Intel BE201 (802.11be)"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.4"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE albo 5G Sub-6 ze zintegrowanym GPS; nano-SIM i eSIM, zależnie od PN"
+      },
+      {
+        "name": "GPS",
+        "value": "W modułach 4G LTE i 5G; opcja: dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS)"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 3.2 Gen 2 Type-A, 2 × Thunderbolt 4 Type-C, gniazdo zasilania DC, złącze dokujące; opcje: RS-232, LAN RJ45, USB 2.0, złącza RF pass-through (3 dla 4G, 4 dla 5G)"
+      },
+      {
+        "name": "Gniazda opcji",
+        "value": "Górne: czytnik 1D/2D, microSD, RS-232, LAN albo kamera termowizyjna; boczne: USB 2.0, HF RFID/NFC albo czytnik linii papilarnych; tylne: czytnik kart chipowych"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 13 MP z autofokusem, przedni 5 MP z Windows Hello"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "TPM 2.0, Windows Hello, Getac Secure Erase, gniazdo Kensington; opcje: Intel vPro, HF RFID/NFC (iClass, HID Prox, ISO 15693, ISO 14443 A/B, Mifare, FeliCa), czytnik linii papilarnych, czytnik kart chipowych"
+      },
+      {
+        "name": "Bateria",
+        "value": "2 × Li-ion 7,74 V, typowo 4070 mAh; opcja: 2 baterie o dużej pojemności 11,61 V, typowo 4070 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje; opcja: odporność na mgłę solną"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,8 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja w wybranych konfiguracjach: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "300 × 207 × 22,2 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,41 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, 2 baterie 4070 mAh, zasilacz 65 W, przewód zasilający (EU, UK), rysik albo pióro digitizer, zależnie od PN; w wybranych PN pasek na rękę"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Programy Windows w terenie i w pojazdach służbowych",
+      "Serwis, przeglądy i utrzymanie ruchu",
+      "Urządzenia z portem RS-232 w warsztacie i na produkcji",
+      "Odczyt kodów i kart chipowych (wersje z czytnikami)"
+    ],
+    "variants": [
+      {
+        "partNumber": "FW1764WI1DXX",
+        "name": "F120 — Core Ultra 5, Wi-Fi",
+        "priceFrom": 12629.42,
+        "availability": "available",
+        "attributes": {
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "FW17641I1DXX",
+        "name": "F120 — Core Ultra 5, Wi-Fi · FW17641I1DXX",
+        "priceFrom": 12707.03,
+        "availability": "available",
+        "attributes": {
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "FW17641I1DZX",
+        "name": "F120 — Core Ultra 5, Wi-Fi, czytnik 1D/2D",
+        "priceFrom": 13850.7,
+        "availability": "available",
+        "attributes": {
+          "Łączność": "Wi-Fi",
+          "Czytnik kodów": "1D/2D"
+        }
+      },
+      {
+        "partNumber": "FW17641I1DLX",
+        "name": "F120 — Core Ultra 5, Wi-Fi, LAN",
+        "priceFrom": 13156.33,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi",
+          "Porty dodatkowe": "LAN"
+        }
+      },
+      {
+        "partNumber": "FW17641I1DIX",
+        "name": "F120 — Core Ultra 5, Wi-Fi, RS-232",
+        "priceFrom": 13352.39,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi",
+          "Porty dodatkowe": "RS-232"
+        }
+      },
+      {
+        "partNumber": "FW17641I16LX",
+        "name": "F120 — Core Ultra 5, Wi-Fi, GPS, LAN, złącza anten zewnętrznych",
+        "priceFrom": 14075.35,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Porty dodatkowe": "LAN",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW17641I16IX",
+        "name": "F120 — Core Ultra 5, Wi-Fi, GPS, RS-232, złącza anten zewnętrznych",
+        "priceFrom": 14271.41,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Porty dodatkowe": "RS-232",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW17641I1MXX",
+        "name": "F120 — Core Ultra 5, 4G LTE, GPS, złącza anten zewnętrznych",
+        "priceFrom": 14136.62,
+        "availability": "on-order",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW17642I1MXX",
+        "name": "F120 — Core Ultra 5, 4G LTE, GPS, digitizer, pasek na rękę, złącza anten zewnętrznych",
+        "priceFrom": 14847.33,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Digitizer": "Tak",
+          "Pasek na rękę": "W zestawie",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW17641I1MLA",
+        "name": "F120 — Core Ultra 5, 4G LTE, GPS, LAN, czytnik kart chipowych, pasek na rękę, złącza anten zewnętrznych",
+        "priceFrom": 15104.66,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Porty dodatkowe": "LAN",
+          "Czytnik kart chipowych": "Tak",
+          "Pasek na rękę": "W zestawie",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW17641I1BXX",
+        "name": "F120 — Core Ultra 5, 5G, GPS, digitizer, pasek na rękę, złącza anten zewnętrznych",
+        "priceFrom": 15562.13,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "5G, GPS",
+          "Digitizer": "Tak",
+          "Pasek na rękę": "W zestawie",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FW1764GI1BXX",
+        "name": "F120 — Core Ultra 5, 5G, GPS, digitizer, złącza anten zewnętrznych",
+        "priceFrom": 16195.23,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "5G, GPS",
+          "Digitizer": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Łączność": "Sposób połączenia z siecią. Każda wersja F120 ma Wi-Fi 7 i Bluetooth 5.4.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.\n\n• Wi-Fi, GPS — dedykowany odbiornik GPS bez modemu komórkowego.",
+      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
+      "Porty dodatkowe": "Port w górnym gnieździe tabletu. Gniazdo mieści jeden moduł.\n\n• LAN — Ethernet RJ45 do sieci przewodowej.\n\n• RS-232 — port szeregowy 9-pin D-sub do urządzeń warsztatowych i przemysłowych.",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
+      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków.",
+      "Pasek na rękę": "Pasek na rękę dołączony do tabletu.\n\n• Ułatwia trzymanie tabletu jedną ręką.",
+      "Czytnik kart chipowych": "Czytnik kart chipowych (smart card) w tylnym gnieździe obudowy."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-bateria-gbm2x4",
+      "getac-bateria-gbm3x8",
+      "getac-stacja-usb-c-ds100-gddse2",
+      "getac-klawiatura-gdkbus",
+      "getac-ladowarka-2-gniazdowa-gcmcet",
+      "getac-zasilacz-samochodowy-gad2x4",
+      "getac-pasek-na-reke-gmhrxq",
+      "getac-rysik-digitizer-gmpdx6",
+      "getac-torba-gmbcx2"
+    ],
+    "relatedProducts": [
+      "getac-f110-g7",
+      "getac-ux10-g5",
+      "getac-k120-g3",
+      "getac-g140",
+      "honeywell-rt10w",
+      "zebra-et60w",
+      "zebra-et65w"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac F120 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-f120.pdf",
+        "size": "962 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Getac F120 działa w rękawicach?",
+        "answer": "Tak. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez ręcznego przełączania trybu. Ekran LumiBond ma jasność 1200 nitów."
+      },
+      {
+        "question": "Jak wymienia się baterie w Getac F120?",
+        "answer": "Tablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Zapasowa bateria standardowa ma PN GBM2X4, a bateria o dużej pojemności GBM3X8."
+      },
+      {
+        "question": "W jakiej temperaturze pracuje Getac F120?",
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+      },
+      {
+        "question": "Czy do Getac F120 jest klawiatura?",
+        "answer": "Tak. Getac oferuje klawiaturę ze stacją (keyboard dock). W ofercie jest wersja z układem US: GDKBUS."
+      },
+      {
+        "question": "Czym Getac F120 różni się od F110 G7?",
+        "answer": "F120 ma ekran 12,2 cala WUXGA, procesor Intel Core Ultra 5 serii 2 z NPU, Wi-Fi 7 i 2 porty Thunderbolt 4. <a href=\"/produkt/getac-f110-g7\">Getac F110 G7</a> ma ekran 11,6 cala Full HD, procesor Intel Core 13. generacji, Wi-Fi 6E i 1 port Thunderbolt 4. Oba mają ekran 1200 nitów, klasę IP66 i 2 baterie wymieniane bez wyłączania."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
