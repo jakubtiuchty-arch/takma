@@ -1009,7 +1009,7 @@ export const getacTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Czy baterię Getac UX10 G5 można wymienić bez wyłączania?",
-        "answer": "Tylko w konfiguracji z baterią podtrzymującą (bridge battery). To opcja fabryczna w tylnym gnieździe tabletu. Wersje z tej karty nie mają jej w opisie konfiguracji, dlatego dostępność tej opcji potwierdzamy na zapytanie."
+        "answer": "Tylko w konfiguracji z baterią podtrzymującą (bridge battery). To opcja fabryczna w tylnym gnieździe tabletu. Wersje w tabeli wariantów nie mają baterii podtrzymującej. Konfigurację z tą opcją przygotujemy na zapytanie."
       },
       {
         "question": "W jakiej temperaturze pracuje Getac UX10 G5?",
@@ -1026,6 +1026,361 @@ export const getacTabletProducts: Product[] = [
       {
         "question": "Czy Getac UX10 G5 można zamontować w pojeździe?",
         "answer": "Tak. Getac przewiduje stację pojazdową i uchwyt pojazdowy. Stacja pojazdowa ma port szeregowy, 2 porty USB 2.0, 2 porty USB 3.0, LAN i 3 złącza anten (WWAN, WLAN, GPS). Do zasilania w pojeździe służy zasilacz samochodowy 120 W, 11–32 V DC, np. GAD2X4."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-f110-g7",
+    "slug": "getac-f110-g7",
+    "name": "Getac F110 G7",
+    "seoH1": "Getac F110 G7",
+    "seoTitle": "Tablet przemysłowy Getac F110 G7 11,6″ z Windows 11 Pro, IP66",
+    "seoDescription": "Tablet przemysłowy Getac F110 G7 11,6″, Windows 11 Pro, 1200 nitów, 2 baterie hot-swap. Tablet rugged Getac F110. F110 Getac PN: FTA164JI1DXX, FTA164JI1MXX.",
+    "shortDescription": "Getac F110 G7 — tablet fully rugged 11,6″ z Windows 11 Pro, procesorem Intel Core 13. generacji, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID, RS-232 i LAN.",
+    "description": "Getac F110 G7 to tablet przemysłowy z ekranem 11,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,49 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 8 GB albo 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 4200 mAh.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS, digitizerem i modułami. Górne gniazdo mieści czytnik kodów 1D/2D albo port RS-232 z portem LAN. Z boku może być czytnik HF RFID. W zestawie są zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 12,2 cala, Wi-Fi 7 i procesory Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/f110/",
+    "priceFrom": 10983.35,
+    "availability": "available",
+    "images": [
+      "/images/products/FTA164JI1DXX.png",
+      "/images/products/FTA164JI1DXX-2.png",
+      "/images/products/FTA164JI1DXX-3.png",
+      "/images/products/FTA164JI1DXX-4.png",
+      "/images/products/FTA164JI1DXX-5.png"
+    ],
+    "imageDescriptions": [
+      "Getac F110 G7 — widok z przodu, ekran 11,6 cala w poziomie i przyciski po prawej stronie",
+      "Getac F110 G7 — widok z przodu pod kątem, z lewej strony",
+      "Getac F110 G7 — widok z przodu pod kątem, z prawej strony",
+      "Getac F110 G7 — tył obudowy z aparatem i rysikiem w uchwycie",
+      "Getac F110 G7 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+    ],
+    "tags": [
+      "produkcja",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "FTA164JI1DXX, FTA164JI1MXX, FTA154JI1DMX, FTA154TI1KLX, FTA154JI1DZS, FT7164TI1MMX, FTB164JI1QXX, FTB166TI1MMX, FTB166TI1QMX"
+      },
+      {
+        "name": "Generacja",
+        "value": "G7"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Windows 11 Pro"
+      },
+      {
+        "name": "Procesor",
+        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje: Core i5-1345U vPro Enterprise, Core i7-1355U, Core i7-1365U vPro Enterprise; w tej karcie Core i5, Core i7 i Core i7 vPro, zależnie od PN"
+      },
+      {
+        "name": "Grafika",
+        "value": "Intel UHD Graphics"
+      },
+      {
+        "name": "Pamięć RAM",
+        "value": "8 GB albo 16 GB DDR5, zależnie od PN (opcja producenta: 32 GB)"
+      },
+      {
+        "name": "Dysk",
+        "value": "SSD PCIe NVMe 256 GB albo 512 GB, zależnie od PN (opcje producenta do 2 TB)"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "11,6″ Full HD 1920 × 1080, TFT LCD z szerokim kątem widzenia, LumiBond, 1200 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch; opcja: tryb podwójny z digitizerem, zależnie od PN"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 4 przyciski programowalne"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Opcja: czytnik 1D/2D (imager) w górnym gnieździe, zależnie od PN"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6E, Intel AX211 (802.11ax)"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.3"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE ze zintegrowanym GPS albo 5G Sub-6 ze zintegrowanym GPS L1/L5; micro-SIM i eSIM, zależnie od PN"
+      },
+      {
+        "name": "HF RFID",
+        "value": "Opcja: 13,56 MHz (ISO 15693, ISO 14443 A/B, Mifare, FeliCa) z boku obudowy, zależnie od PN"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 3.2 Gen 2 Type-A, Thunderbolt 4 Type-C, gniazdo audio, gniazdo zasilania DC, złącze dokujące; opcja: RS-232 z LAN RJ45, złącza RF pass-through"
+      },
+      {
+        "name": "Gniazda opcji",
+        "value": "Górne: czytnik 1D/2D, USB 2.0, LAN, microSD albo RS-232 z LAN; boczne: HF RFID albo czytnik linii papilarnych; tylne: czytnik kart chipowych"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 8 MP z autofokusem, przedni 5 MP (opcja: kamera 5 MP z Windows Hello)"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "TPM 2.0, Getac Secure Erase, gniazdo Kensington; opcje: Intel vPro, Windows Hello, czytnik linii papilarnych, czytnik kart chipowych"
+      },
+      {
+        "name": "Bateria",
+        "value": "2 × Li-ion 11,4 V, typowo 2680 mAh; opcja: 2 × 11,1 V, typowo 4200 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje; opcja: odporność na mgłę solną"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,8 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja w wybranych konfiguracjach: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "314 × 207 × 25 mm; baterie o dużej pojemności dodają ok. 6 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,49 kg; baterie o dużej pojemności dodają ok. 0,24 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, 2 baterie 2680 mAh, zasilacz 65 W, rysik pojemnościowy z linką"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Programy Windows w terenie i w pojazdach służbowych",
+      "Serwis i utrzymanie ruchu na produkcji",
+      "Urządzenia z portem RS-232 w warsztacie i na linii produkcyjnej",
+      "Odczyt kodów i kart HF RFID (wersje z czytnikami)"
+    ],
+    "variants": [
+      {
+        "partNumber": "FTA164JI1DXX",
+        "name": "F110 G7 — Core i5, 16 / 256 GB, Wi-Fi",
+        "priceFrom": 10983.35,
+        "availability": "available",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "FTA154JI1DMX",
+        "name": "F110 G7 — Core i5, 8 / 256 GB, Wi-Fi, RS-232 i LAN",
+        "priceFrom": 11428.56,
+        "availability": "available",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "8 / 256 GB",
+          "Łączność": "Wi-Fi",
+          "RS-232 i LAN": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTA154TI1KLX",
+        "name": "F110 G7 — Core i5, 8 / 256 GB, Wi-Fi, RS-232 i LAN, digitizer, złącza anten zewnętrznych",
+        "priceFrom": 11951.39,
+        "availability": "available",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "8 / 256 GB",
+          "Łączność": "Wi-Fi",
+          "RS-232 i LAN": "Tak",
+          "Digitizer": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTA154JI1DZS",
+        "name": "F110 G7 — Core i5, 8 / 256 GB, Wi-Fi, czytnik 1D/2D, HF RFID",
+        "priceFrom": 12159.7,
+        "availability": "available",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "8 / 256 GB",
+          "Łączność": "Wi-Fi",
+          "Czytnik kodów": "1D/2D",
+          "HF RFID": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTA164JI1MXX",
+        "name": "F110 G7 — Core i5, 16 / 256 GB, 4G LTE, GPS, złącza anten zewnętrznych",
+        "priceFrom": 12208.71,
+        "availability": "on-order",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "4G LTE, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTB164JI1QXX",
+        "name": "F110 G7 — Core i7, 16 / 256 GB, 5G, GPS, złącza anten zewnętrznych",
+        "priceFrom": 14855.5,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i7",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "5G, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FT7164TI1MMX",
+        "name": "F110 G7 — Core i7 vPro, 16 / 256 GB, 4G LTE, GPS, RS-232 i LAN, digitizer, złącza anten zewnętrznych",
+        "priceFrom": 15705.09,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i7 vPro",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "4G LTE, GPS",
+          "RS-232 i LAN": "Tak",
+          "Digitizer": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTB166TI1MMX",
+        "name": "F110 G7 — Core i7, 16 / 512 GB, 4G LTE, GPS, RS-232 i LAN, digitizer, złącza anten zewnętrznych",
+        "priceFrom": 16113.54,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i7",
+          "Pamięć RAM / SSD": "16 / 512 GB",
+          "Łączność": "4G LTE, GPS",
+          "RS-232 i LAN": "Tak",
+          "Digitizer": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "FTB166TI1QMX",
+        "name": "F110 G7 — Core i7, 16 / 512 GB, 5G, GPS, RS-232 i LAN, digitizer, złącza anten zewnętrznych",
+        "priceFrom": 17743.27,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i7",
+          "Pamięć RAM / SSD": "16 / 512 GB",
+          "Łączność": "5G, GPS",
+          "RS-232 i LAN": "Tak",
+          "Digitizer": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Procesor": "Procesor Intel Core 13. generacji.\n\n• Core i5-1335U albo Core i7-1355U.\n\n• Core i7 vPro (i7-1365U) — technologia Intel vPro do zarządzania i zabezpieczeń komputerów firmowych.",
+      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja F110 G7 ma Wi-Fi 6E i Bluetooth 5.3.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; micro-SIM i eSIM, GPS w module.",
+      "RS-232 i LAN": "Port szeregowy RS-232 i port Ethernet RJ45 w górnym gnieździe tabletu.\n\n• Do urządzeń z portem szeregowym i sieci przewodowej bez stacji dokującej.",
+      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków.",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Stacja pojazdowa ma 3 złącza anten: WWAN, WLAN i GPS.",
+      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
+      "HF RFID": "Czytnik zbliżeniowy 13,56 MHz z boku obudowy.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-bateria-gbm3x7",
+      "getac-bateria-gbm6x7",
+      "getac-stacja-biurkowa-gdode7",
+      "getac-ladowarka-2-gniazdowa-gcmcel",
+      "getac-zasilacz-samochodowy-gad2x4",
+      "getac-stacja-usb-c-ds100-gddse2",
+      "getac-pasek-na-reke-gmhrxm",
+      "getac-rysik-digitizer-gmpdx6",
+      "getac-torba-gmbcx2"
+    ],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-ux10-g5",
+      "getac-k120-g3",
+      "honeywell-rt10w",
+      "zebra-et60w",
+      "zebra-et65w"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac F110 G7 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-f110-g7.pdf",
+        "size": "1065 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "W jakiej temperaturze pracuje Getac F110 G7?",
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+      },
+      {
+        "question": "Jak wymienia się baterie w Getac F110 G7?",
+        "answer": "Tablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Zamiennie pasują baterie o dużej pojemności 4200 mAh GBM6X7."
+      },
+      {
+        "question": "Czy Getac F110 G7 ma czytnik kodów?",
+        "answer": "Czytnik kodów 1D/2D jest opcją w górnym gnieździe. W tej karcie ma go wersja FTA154JI1DZS, która ma też czytnik HF RFID. Górne gniazdo mieści jeden moduł, dlatego wersje z RS-232 i LAN nie mają czytnika kodów."
+      },
+      {
+        "question": "Czy Getac F110 G7 ma port szeregowy RS-232?",
+        "answer": "Tak, w wersjach z modułem RS-232 i LAN: FTA154JI1DMX, FTA154TI1KLX, FT7164TI1MMX, FTB166TI1MMX i FTB166TI1QMX. Stacja biurkowa i stacja pojazdowa Getac mają po 2 porty szeregowe."
+      },
+      {
+        "question": "Czy Getac F110 G7 można zamontować w pojeździe?",
+        "answer": "Tak. Getac przewiduje stację pojazdową i uchwyt pojazdowy. Stacja pojazdowa ma 2 porty szeregowe, 4 porty USB, LAN, HDMI, VGA i 3 złącza anten (WWAN, WLAN, GPS). Do zasilania w pojeździe służy zasilacz samochodowy 120 W, 11–32 V DC, np. GAD2X4."
       }
     ],
     "createdAt": "2026-10-23",
