@@ -65,6 +65,7 @@ const navigation: NavItem[] = [
       { name: 'Terminale M3', href: '/terminale-m3-mobile' },
       { name: 'Terminale CipherLab', href: '/terminale-cipherlab' },
       { name: 'Terminale SUNMI', href: '/terminale-sunmi' },
+      { name: 'Terminale Bluebird', href: '/terminale-bluebird' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: 'Akcesoria do komputerów POS', href: '/akcesoria-do-komputerow-pos' },
       { name: 'Akcesoria do ekranów KDS', href: '/akcesoria-do-ekranow-kds' },

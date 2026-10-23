@@ -2,6 +2,7 @@ import { sunmiProducts, sunmiAccessories } from './sunmi-products'
 import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-products'
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { bluebirdProducts, bluebirdAccessories } from './bluebird-products'
+import { bluebirdFaq } from './bluebird-category'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -300,7 +301,7 @@ export const categories: Category[] = [
     description: 'Wytrzymałe komputery mobilne i kolektory danych do magazynu, logistyki i produkcji',
     seoTitle: 'Terminale mobilne i kolektory danych',
     seoDescription: 'Terminale mobilne i kolektory danych do magazynu, sklepu i logistyki. Porównaj skanery, klawiatury, pamięć, łączność i dostępne konfiguracje.',
-    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab) i [SUNMI](/terminale-sunmi). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy. Stacjonarne stanowiska kasowe z ekranem dotykowym są w kategorii [komputery POS](/komputery-pos).',
+    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab), [SUNMI](/terminale-sunmi) i [Bluebird](/terminale-bluebird). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy. Stacjonarne stanowiska kasowe z ekranem dotykowym są w kategorii [komputery POS](/komputery-pos).',
     icon: 'smartphone',
     productCount: 23,
   },
@@ -96421,6 +96422,17 @@ export const brandCategories: BrandCategory[] = [
       "answer": "Nie. Aplikację i licencję dobiera się osobno. Sprawdź wersję Androida, GMS i wymagania programu przed wyborem PN."
     }
   ]
+},
+{
+  "id": "terminale-bluebird",
+  "slug": "terminale-bluebird",
+  "manufacturerId": "bluebird",
+  "categoryId": "terminale-mobilne",
+  "name": "Terminale mobilne Bluebird",
+  "seoTitle": "Terminale Bluebird — kolektory danych Android, RFID i ATEX",
+  "seoDescription": "Terminale mobilne Bluebird z Androidem: dotykowe S10, S20, S50, S70 i EF551, EK430 z klawiaturą, S10 RFID i S70 ATEX. Ceny netto, PN i dostępność.",
+  "longDescription": "Terminale mobilne Bluebird to przenośne komputery z Androidem do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje terminale dotykowe, terminal z klawiaturą, terminal z czytnikiem UHF RFID, wersję do stref zagrożonych wybuchem i smartfon firmowy bez skanera. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi, a wybrane wersje także przez 4G LTE lub 5G. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
+  "faq": bluebirdFaq
 },
 {
   "id": "terminale-cipherlab",
