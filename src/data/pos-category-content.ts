@@ -7,270 +7,213 @@ export const posCategoryContent: SubcategoryRichContent = {
     "technicalDeepDive": "Modele Epson, BIXOLON, Citizen i SUNMI według technologii druku"
   },
   "modelComparison": {
-    "heading": "Porównanie drukarek POS Epson, BIXOLON, Citizen i SUNMI",
-    "note": "Interfejsy, kolor i wyposażenie zależą od PN. Pełną listę wariantów podaje karta produktu.",
-    "columns": {
-      "feeder": "Papier i wydruk"
-    },
-    "models": [
+    "heading": "Porównanie drukarek POS według rodzaju",
+    "note": "Parametry podają typowy zakres dla grupy. Dokładne dane i warianty są na kartach produktów.",
+    "groups": [
       {
-        "name": "Epson TM-T20IV",
-        "href": "/produkt/epson-tm-t20iv",
-        "printing": "termiczny, 203 dpi, do 250 mm/s",
-        "feeder": "58 lub 80 mm, rolka do 83 mm",
-        "connectivity": "USB + RS-232; opcja Ethernet"
+        "name": "Paragonowe 58 i 80 mm",
+        "use": "Paragony niefiskalne, bony i bilety przy kasie w sklepie, punkcie usługowym i lokalu gastronomicznym",
+        "typical": "160–300 mm/s; papier 58 lub 80 mm; USB, a zależnie od PN lub karty interfejsu także RS-232, Ethernet, Wi-Fi lub Bluetooth",
+        "models": [
+          {
+            "name": "BIXOLON SRP-330III",
+            "href": "/produkt/bixolon-srp-330iii"
+          },
+          {
+            "name": "BIXOLON SRP-350V",
+            "href": "/produkt/bixolon-srp-350v"
+          },
+          {
+            "name": "BIXOLON SRP-Q200",
+            "href": "/produkt/bixolon-srp-q200"
+          },
+          {
+            "name": "BIXOLON SRP-Q300",
+            "href": "/produkt/bixolon-srp-q300"
+          },
+          {
+            "name": "Citizen CT-E301",
+            "href": "/produkt/citizen-ct-e301"
+          },
+          {
+            "name": "Citizen CT-E351",
+            "href": "/produkt/citizen-ct-e351"
+          },
+          {
+            "name": "Citizen CT-E651",
+            "href": "/produkt/citizen-ct-e651"
+          },
+          {
+            "name": "Citizen CT-S310II",
+            "href": "/produkt/citizen-ct-s310ii"
+          },
+          {
+            "name": "Epson TM-m30II-S",
+            "href": "/produkt/epson-tm-m30ii-s"
+          },
+          {
+            "name": "Epson TM-m30III",
+            "href": "/produkt/epson-tm-m30iii"
+          },
+          {
+            "name": "Epson TM-m30III-H",
+            "href": "/produkt/epson-tm-m30iii-h"
+          },
+          {
+            "name": "Epson TM-T20IV",
+            "href": "/produkt/epson-tm-t20iv"
+          },
+          {
+            "name": "Epson TM-T70II",
+            "href": "/produkt/epson-tm-t70ii"
+          }
+        ]
       },
       {
-        "name": "Epson TM-T70II",
-        "href": "/produkt/epson-tm-t70ii",
-        "printing": "termiczny, 180 dpi, do 250 mm/s",
-        "feeder": "80 mm, papier i wydruk od przodu",
-        "connectivity": "USB + RS-232 lub USB + Ethernet"
+        "name": "Szybkie paragonowe 80 mm",
+        "use": "Kasy o dużym ruchu w handlu, restauracje szybkiej obsługi i bony w kuchni",
+        "typical": "350–500 mm/s; papier 80 mm, zależnie od modelu także 58 lub 83 mm; USB, a zależnie od PN lub karty interfejsu także Ethernet, RS-232, Wi-Fi, Bluetooth lub PoweredUSB",
+        "models": [
+          {
+            "name": "BIXOLON SRP-350plusV",
+            "href": "/produkt/bixolon-srp-350plusv"
+          },
+          {
+            "name": "BIXOLON SRP-380",
+            "href": "/produkt/bixolon-srp-380"
+          },
+          {
+            "name": "BIXOLON SRP-380plus",
+            "href": "/produkt/bixolon-srp-380plus"
+          },
+          {
+            "name": "BIXOLON SRP-F310II",
+            "href": "/produkt/bixolon-srp-f310ii"
+          },
+          {
+            "name": "Citizen CT-E601",
+            "href": "/produkt/citizen-ct-e601"
+          },
+          {
+            "name": "Citizen CT-S751",
+            "href": "/produkt/citizen-ct-s751"
+          },
+          {
+            "name": "Citizen CT-S851III",
+            "href": "/produkt/citizen-ct-s851iii"
+          },
+          {
+            "name": "Epson TM-m50II",
+            "href": "/produkt/epson-tm-m50ii"
+          },
+          {
+            "name": "Epson TM-T88VII",
+            "href": "/produkt/epson-tm-t88vii"
+          }
+        ]
       },
       {
-        "name": "Epson TM-T88VII",
-        "href": "/produkt/epson-tm-t88vii",
-        "printing": "termiczny, 180 dpi, do 500 mm/s",
-        "feeder": "58 lub 80 mm",
-        "connectivity": "USB + Ethernet; opcje RS-232, PoweredUSB"
+        "name": "Paragony i etykiety",
+        "use": "Paragony i etykiety na podkładzie z jednej drukarki, np. do oznaczania produktów, porcji i zamówień",
+        "typical": "150–300 mm/s, etykiety 150–200 mm/s; materiał 30–80 mm, w CT-S4500 do 112 mm; USB, a zależnie od PN lub karty interfejsu także Ethernet, RS-232, Wi-Fi lub Bluetooth",
+        "models": [
+          {
+            "name": "Citizen CT-E651L",
+            "href": "/produkt/citizen-ct-e651l"
+          },
+          {
+            "name": "Citizen CT-S4500",
+            "href": "/produkt/citizen-ct-s4500"
+          },
+          {
+            "name": "Epson TM-L90",
+            "href": "/produkt/epson-tm-l90"
+          },
+          {
+            "name": "SUNMI NT220",
+            "href": "/produkt/sunmi-nt220"
+          },
+          {
+            "name": "SUNMI NT320",
+            "href": "/produkt/sunmi-nt320"
+          }
+        ]
       },
       {
-        "name": "Epson TM-m30III",
-        "href": "/produkt/epson-tm-m30iii",
-        "printing": "termiczny, 203 dpi, do 300 mm/s",
-        "feeder": "58 lub 80 mm, wydruk od góry lub z przodu",
-        "connectivity": "USB, USB-C, Ethernet; opcja Wi-Fi + Bluetooth"
+        "name": "Etykiety bez podkładu (linerless)",
+        "use": "Etykiety na torby i opakowania zamówień na wynos, w dostawie i do odbioru, bez odpadu z podkładu",
+        "typical": "150–180 mm/s; materiał 80 mm, zależnie od modelu także węższy, w CT-S601IIR 80 lub 83 mm; USB, RS-232, Ethernet, Wi-Fi lub Bluetooth zależnie od PN, w CT-S601IIR przez kartę interfejsu",
+        "models": [
+          {
+            "name": "BIXOLON SRP-S300II",
+            "href": "/produkt/bixolon-srp-s300ii"
+          },
+          {
+            "name": "Citizen CT-S601IIR",
+            "href": "/produkt/citizen-ct-s601iir"
+          },
+          {
+            "name": "Epson TM-L100",
+            "href": "/produkt/epson-tm-l100"
+          },
+          {
+            "name": "Epson TM-L90LF",
+            "href": "/produkt/epson-tm-l90lf"
+          },
+          {
+            "name": "SUNMI NT320 (wersje Linerless)",
+            "href": "/produkt/sunmi-nt320"
+          }
+        ]
       },
       {
-        "name": "Epson TM-m30III-H",
-        "href": "/produkt/epson-tm-m30iii-h",
-        "printing": "termiczny, 203 dpi, do 300 mm/s",
-        "feeder": "58 lub 80 mm",
-        "connectivity": "USB, USB-C, Ethernet, Wi-Fi + Bluetooth"
+        "name": "Szerokie 112 mm",
+        "use": "Paragony i dokumenty na papierze 112 mm zamiast wydruku A4, bilety, kupony i etykiety",
+        "typical": "Do 200 mm/s; papier 58–112 mm, szerokość druku do 104 mm; sterownik skaluje dokumenty A4 do szerokości 4 cali; USB, karta interfejsu lub Bluetooth",
+        "models": [
+          {
+            "name": "Citizen CT-S4500",
+            "href": "/produkt/citizen-ct-s4500"
+          }
+        ]
       },
       {
-        "name": "Epson TM-m50II",
-        "href": "/produkt/epson-tm-m50ii",
-        "printing": "termiczny, 180 dpi, do 500 mm/s",
-        "feeder": "58 lub 80 mm, wydruk od góry lub z przodu",
-        "connectivity": "USB, RS-232, Ethernet"
+        "name": "Igłowe",
+        "use": "Bony w kuchni na zwykłym papierze, także w dwóch kolorach (TM-U220IIB, TM-U220IID); nadruk na pojedynczych formularzach i kwitach (TM-U295, drukarka slipów)",
+        "typical": "Zwykły papier i kaseta barwiąca; TM-U220IIB i TM-U220IID: rolka 57,5, 69,5 lub 76 mm, 4,7 wiersza/s; TM-U295: pojedyncze formularze, druk do 65 mm, do 2,1 wiersza/s",
+        "models": [
+          {
+            "name": "Epson TM-U220IIB",
+            "href": "/produkt/epson-tm-u220iib"
+          },
+          {
+            "name": "Epson TM-U220IID",
+            "href": "/produkt/epson-tm-u220iid"
+          },
+          {
+            "name": "Epson TM-U295",
+            "href": "/produkt/epson-tm-u295"
+          }
+        ]
       },
       {
-        "name": "Epson TM-m30II-S",
-        "href": "/produkt/epson-tm-m30ii-s",
-        "printing": "termiczny, 203 dpi, do 250 mm/s",
-        "feeder": "58 lub 80 mm, uchwyt na tablet",
-        "connectivity": "USB, Ethernet, Bluetooth, Lightning"
-      },
-      {
-        "name": "Epson TM-U220IIB",
-        "href": "/produkt/epson-tm-u220iib",
-        "printing": "igłowy, z gilotyną",
-        "feeder": "zwykły papier 57,5–76 mm",
-        "connectivity": "RS-232, USB, równoległy lub Ethernet"
-      },
-      {
-        "name": "Epson TM-U220IID",
-        "href": "/produkt/epson-tm-u220iid",
-        "printing": "igłowy, bez gilotyny",
-        "feeder": "zwykły papier 57,5–76 mm",
-        "connectivity": "RS-232 lub równoległy"
-      },
-      {
-        "name": "Epson TM-U295",
-        "href": "/produkt/epson-tm-u295",
-        "printing": "igłowy",
-        "feeder": "pojedyncze formularze",
-        "connectivity": "RS-232"
-      },
-      {
-        "name": "Epson TM-H6000VI",
-        "href": "/produkt/epson-tm-h6000vi",
-        "printing": "termiczny (paragony, do 500 mm/s) + igłowy (dokumenty)",
-        "feeder": "rolka 80 mm i arkusze; opcja MICR",
-        "connectivity": "USB, RS-232, Ethernet; opcja PoweredUSB"
-      },
-      {
-        "name": "Epson TM-J7200",
-        "href": "/produkt/epson-tm-j7200",
-        "printing": "atramentowy, do 98 mm/s",
-        "feeder": "rolka 58–83 mm i arkusze",
-        "connectivity": "USB, Ethernet"
-      },
-      {
-        "name": "Epson TM-J7700",
-        "href": "/produkt/epson-tm-j7700",
-        "printing": "atramentowy, do 98 mm/s",
-        "feeder": "rolka 58–83 mm i szersze arkusze",
-        "connectivity": "USB, Ethernet"
-      },
-      {
-        "name": "Epson TM-L100",
-        "href": "/produkt/epson-tm-l100",
-        "printing": "termiczny, 203 dpi, do 170 mm/s",
-        "feeder": "etykiety bez podkładu i paragony, rolka do 102 mm",
-        "connectivity": "USB + Ethernet + RS-232 lub Lightning; opcja Bluetooth"
-      },
-      {
-        "name": "Epson TM-L90",
-        "href": "/produkt/epson-tm-l90",
-        "printing": "termiczny, 203 dpi, do 150 mm/s",
-        "feeder": "etykiety i paragony do 80 mm",
-        "connectivity": "USB + RS-232 lub USB + Ethernet"
-      },
-      {
-        "name": "Epson TM-L90LF",
-        "href": "/produkt/epson-tm-l90lf",
-        "printing": "termiczny, 203 dpi, do 170 mm/s",
-        "feeder": "etykiety liner-free do 80 mm",
-        "connectivity": "USB, RS-232"
-      },
-      {
-        "name": "BIXOLON SRP-330III",
-        "href": "/produkt/bixolon-srp-330iii",
-        "printing": "termiczny, 180 dpi, do 250 mm/s",
-        "feeder": "80 mm, opcja 58 mm (przegroda w zestawie)",
-        "connectivity": "USB + RS-232; opcja Ethernet"
-      },
-      {
-        "name": "BIXOLON SRP-350V",
-        "href": "/produkt/bixolon-srp-350v",
-        "printing": "termiczny, 180 / 203 dpi, do 300 mm/s",
-        "feeder": "80 mm, opcja 58 mm, rolka do 83 mm",
-        "connectivity": "USB; opcja RS-232"
-      },
-      {
-        "name": "BIXOLON SRP-350plusV",
-        "href": "/produkt/bixolon-srp-350plusv",
-        "printing": "termiczny, 180 / 203 dpi, do 400 mm/s",
-        "feeder": "80 mm, opcja 58 mm",
-        "connectivity": "USB + Ethernet; opcje RS-232, Wi-Fi, Bluetooth, PoweredUSB"
-      },
-      {
-        "name": "BIXOLON SRP-380",
-        "href": "/produkt/bixolon-srp-380",
-        "printing": "termiczny, 180 / 203 dpi, do 350 mm/s",
-        "feeder": "80 mm, rolka do 83 mm",
-        "connectivity": "USB; opcje RS-232, Ethernet, PoweredUSB"
-      },
-      {
-        "name": "BIXOLON SRP-380plus",
-        "href": "/produkt/bixolon-srp-380plus",
-        "printing": "termiczny, 180 dpi, do 500 mm/s",
-        "feeder": "80 mm, rolka do 83 mm",
-        "connectivity": "USB"
-      },
-      {
-        "name": "BIXOLON SRP-Q200",
-        "href": "/produkt/bixolon-srp-q200",
-        "printing": "termiczny, 203 dpi, do 250 mm/s",
-        "feeder": "tylko 58 mm, wydruk od góry lub z przodu",
-        "connectivity": "USB + RS-232 lub USB + Ethernet + Wi-Fi"
-      },
-      {
-        "name": "BIXOLON SRP-Q300",
-        "href": "/produkt/bixolon-srp-q300",
-        "printing": "termiczny, 180 dpi, do 220 mm/s",
-        "feeder": "80 mm, opcja 58 mm, wydruk z przodu",
-        "connectivity": "USB + Ethernet"
-      },
-      {
-        "name": "BIXOLON SRP-F310II",
-        "href": "/produkt/bixolon-srp-f310ii",
-        "printing": "termiczny, 180 / 203 dpi, do 350 mm/s",
-        "feeder": "80 mm (opcja 83 mm), wydruk z przodu, IP12",
-        "connectivity": "USB + Ethernet; opcje RS-232, Wi-Fi"
-      },
-      {
-        "name": "BIXOLON SRP-S300II",
-        "href": "/produkt/bixolon-srp-s300ii",
-        "printing": "termiczny, 203 dpi, do 180 mm/s",
-        "feeder": "paragony i etykiety bez podkładu 40 / 58 / 80 mm, ekran 2\"",
-        "connectivity": "USB + Ethernet; opcje RS-232, Wi-Fi, Bluetooth, PoweredUSB"
-      },
-      {
-        "name": "SUNMI NT220",
-        "href": "/produkt/sunmi-nt220",
-        "printing": "termiczny, 203 dpi, do 150 mm/s",
-        "feeder": "paragony 30–58 mm i etykiety 30–56 mm, rolka do 80 mm",
-        "connectivity": "USB-C, Bluetooth BLE 5.0"
-      },
-      {
-        "name": "SUNMI NT320",
-        "href": "/produkt/sunmi-nt320",
-        "printing": "termiczny, 203 dpi, do 150 mm/s",
-        "feeder": "paragony 30–80 mm, etykiety 30–78 mm, etykiety bez podkładu (Linerless), rolka do 80 mm",
-        "connectivity": "USB-C + Ethernet; opcje Wi-Fi, Bluetooth, skaner 2D"
-      },
-      {
-        "name": "Citizen CT-E301",
-        "href": "/produkt/citizen-ct-e301",
-        "printing": "termiczny, 203 dpi, do 250 mm/s",
-        "feeder": "57,5–79,5 mm, wydruk u góry, obudowa odporna na dezynfekcję",
-        "connectivity": "USB lub USB + RS-232 + Ethernet"
-      },
-      {
-        "name": "Citizen CT-E351",
-        "href": "/produkt/citizen-ct-e351",
-        "printing": "termiczny, 203 dpi, do 250 mm/s",
-        "feeder": "59–80 mm, wydruk z przodu",
-        "connectivity": "USB + RS-232 lub USB + Ethernet"
-      },
-      {
-        "name": "Citizen CT-S310II",
-        "href": "/produkt/citizen-ct-s310ii",
-        "printing": "termiczny, 203 dpi, do 160 mm/s",
-        "feeder": "58 lub 80 mm, wydruk u góry, zasilacz wbudowany",
-        "connectivity": "USB + RS-232 lub USB + Ethernet"
-      },
-      {
-        "name": "Citizen CT-E601",
-        "href": "/produkt/citizen-ct-e601",
-        "printing": "termiczny, 203 dpi, do 350 mm/s",
-        "feeder": "57,5–79,5 mm, wydruk u góry, obudowa odporna na dezynfekcję",
-        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi), Bluetooth lub Lightning"
-      },
-      {
-        "name": "Citizen CT-E651",
-        "href": "/produkt/citizen-ct-e651",
-        "printing": "termiczny, 203 dpi, do 300 mm/s",
-        "feeder": "59–80 mm, wydruk z przodu",
-        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi), Bluetooth lub Lightning"
-      },
-      {
-        "name": "Citizen CT-E651L",
-        "href": "/produkt/citizen-ct-e651l",
-        "printing": "termiczny, 203 dpi, do 300 mm/s (etykiety do 200 mm/s)",
-        "feeder": "paragony 59–80 mm, etykiety na podkładzie 57,5 lub 79,5 mm, wydruk z przodu",
-        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi)"
-      },
-      {
-        "name": "Citizen CT-S751",
-        "href": "/produkt/citizen-ct-s751",
-        "printing": "termiczny, 203 dpi, do 350 mm/s",
-        "feeder": "58 lub 80 mm, ładowanie i wydruk z przodu",
-        "connectivity": "USB; gniazdo karty (Ethernet, Wi-Fi), Bluetooth lub Lightning"
-      },
-      {
-        "name": "Citizen CT-S851III",
-        "href": "/produkt/citizen-ct-s851iii",
-        "printing": "termiczny, 203 dpi, do 500 mm/s",
-        "feeder": "58–83 mm, wydruk z przodu, wyświetlacz LCD",
-        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, równoległy, Wi-Fi) lub Bluetooth"
-      },
-      {
-        "name": "Citizen CT-S601IIR",
-        "href": "/produkt/citizen-ct-s601iir",
-        "printing": "termiczny, 203 dpi, do 175 mm/s",
-        "feeder": "etykiety bez podkładu 80/83 mm, cięcie częściowe",
-        "connectivity": "bez interfejsu w standardzie; karta USB, RS-232, Ethernet lub Wi-Fi"
-      },
-      {
-        "name": "Citizen CT-S4500",
-        "href": "/produkt/citizen-ct-s4500",
-        "printing": "termiczny, 203 dpi, do 200 mm/s",
-        "feeder": "58–112 mm, paragony i etykiety, rolka do 102 mm",
-        "connectivity": "USB; gniazdo karty (Ethernet, RS-232, Wi-Fi) lub Bluetooth"
+        "name": "Atramentowe i hybrydowe",
+        "use": "Paragony z rolki oraz formularze, kupony i potwierdzenia na pojedynczych arkuszach z jednej drukarki",
+        "typical": "TM-J7200 i TM-J7700: druk atramentowy, rolka 58–83 mm do 98 mm/s, arkusze 68–230 × 68–297 mm; TM-H6000VI: termiczne paragony 80 mm do 500 mm/s i igłowy druk formularzy, MICR zależnie od PN; USB i Ethernet w każdym modelu",
+        "models": [
+          {
+            "name": "Epson TM-H6000VI",
+            "href": "/produkt/epson-tm-h6000vi"
+          },
+          {
+            "name": "Epson TM-J7200",
+            "href": "/produkt/epson-tm-j7200"
+          },
+          {
+            "name": "Epson TM-J7700",
+            "href": "/produkt/epson-tm-j7700"
+          }
+        ]
       }
     ]
   },
