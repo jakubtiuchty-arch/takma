@@ -1750,6 +1750,302 @@ export const getacTabletProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-k120-g3",
+    "slug": "getac-k120-g3",
+    "name": "Getac K120 G3",
+    "seoH1": "Getac K120 G3",
+    "seoTitle": "Tablet przemysłowy Getac K120 G3 12,5″ z Windows 11 Pro, IP66",
+    "seoDescription": "Tablet przemysłowy Getac K120 G3 12,5″, Windows 11 Pro, LAN, 2 baterie hot-swap. Tablet rugged Getac K120. K120 Getac PN: KTA164V8XKXX, KTA164V8X4XX.",
+    "shortDescription": "Getac K120 G3 — tablet fully rugged 12,5″ z Windows 11 Pro, procesorem Intel Core 13. generacji, ekranem 1200 nitów, portem LAN i 2 bateriami wymienianymi bez wyłączania. Klawiatura odpinana lub ze stacją jako akcesorium.",
+    "description": "Getac K120 G3 to tablet przemysłowy z ekranem 12,5 cala i systemem Windows 11 Pro. Z klawiaturą odpinaną albo klawiaturą ze stacją pracuje jak laptop. Klawiatury sprzedaje się osobno. Obudowa ma masę 1,7 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2100 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 3450 mAh. Każda wersja ma port LAN, 2 porty Thunderbolt 4, port USB-A, Wi-Fi 6E i złącza anten zewnętrznych.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS i digitizerem. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTablet bez klawiatury z ekranem 12,2 cala i procesorem Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/k120/",
+    "priceFrom": 11575.61,
+    "availability": "available",
+    "images": [
+      "/images/products/KTA164V8XKXX.png",
+      "/images/products/KTA164V8XKXX-2.png",
+      "/images/products/KTA164V8XKXX-3.png",
+      "/images/products/KTA164V8XKXX-4.png",
+      "/images/products/KTA164V8XKXX-5.png"
+    ],
+    "imageDescriptions": [
+      "Getac K120 G3 — widok z przodu, ekran 12,5 cala w poziomie i przyciski pod ekranem",
+      "Getac K120 G3 — widok z przodu pod kątem, z lewej strony",
+      "Getac K120 G3 — widok z przodu pod kątem, z prawej strony",
+      "Getac K120 G3 — widok z dołu pod kątem, złącza na dolnej krawędzi",
+      "Getac K120 G3 z opcjonalną klawiaturą"
+    ],
+    "tags": [
+      "produkcja",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "KTA164V8XKXX, KTA164V8X4XX, KTA164W8X4XX, KTA164V8XQXX, KTA164W8XQXX, KTB166V8XKEX"
+      },
+      {
+        "name": "Generacja",
+        "value": "G3"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Windows 11 Pro"
+      },
+      {
+        "name": "Procesor",
+        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje producenta: Core i5-1345U vPro, Core i7-1355U, Core i7-1365U vPro; w tej karcie Core i5 i Core i7, zależnie od PN"
+      },
+      {
+        "name": "Grafika",
+        "value": "Intel Iris Xe (z pamięcią dwukanałową)"
+      },
+      {
+        "name": "Pamięć RAM",
+        "value": "16 GB DDR5 (opcje producenta: 32 GB, 64 GB)"
+      },
+      {
+        "name": "Dysk",
+        "value": "SSD PCIe NVMe 256 GB albo 512 GB, zależnie od PN (opcje producenta do 2 TB)"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "12,5″ Full HD 1920 × 1080, TFT LCD z szerokim kątem widzenia, LumiBond, 1200 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch; opcja: tryb podwójny z digitizerem, zależnie od PN"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 5 przycisków programowalnych; klawiatura membranowa z podświetleniem LED w opcjonalnych klawiaturach"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6E, Intel AX211 (802.11ax)"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.3"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE ze zintegrowanym GPS albo 5G Sub-6 ze zintegrowanym GPS L1/L5; micro-SIM i eSIM, zależnie od PN"
+      },
+      {
+        "name": "Porty",
+        "value": "LAN RJ45 (10/100/1000), USB 3.2 Gen 2 Type-A, 2 × Thunderbolt 4 Type-C, gniazdo audio, 2 złącza dokujące, złącza RF pass-through (GPS, WWAN, WLAN)"
+      },
+      {
+        "name": "Opcje producenta",
+        "value": "Czytnik 1D/2D; port szeregowy, USB-A albo HDMI 2.0; microSD; gniazdo zasilania DC; HF RFID/NFC, czytnik kart chipowych albo czytnik linii papilarnych"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 8 MP z autofokusem, przedni 5 MP (opcja: kamera 5 MP z Windows Hello)"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "TPM 2.0, Getac Secure Erase, gniazdo Kensington; opcje: Intel vPro, Windows Hello"
+      },
+      {
+        "name": "Bateria",
+        "value": "2 × Li-ion 11,1 V, typowo 2100 mAh; opcja: 2 × 14,4 V, typowo 3450 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,8 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja w wybranych konfiguracjach: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "329,5 × 238 × 24 mm; z opcjonalną klawiaturą ze stacją 340,5 × 327,5 × 47 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,7 kg; z opcjonalną klawiaturą ze stacją 3,13 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, 2 baterie 2100 mAh, zasilacz 65 W, przewód zasilający (EU, UK), rysik pojemnościowy z linką; bez klawiatury"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Tablet i laptop w jednym urządzeniu (z opcjonalną klawiaturą)",
+      "Programy Windows w pojazdach służbowych i w terenie",
+      "Serwis i diagnostyka z portem LAN",
+      "Stanowisko ze stacją biurkową w trybie tabletu lub laptopa"
+    ],
+    "variants": [
+      {
+        "partNumber": "KTA164V8XKXX",
+        "name": "K120 G3 — Core i5, 16 / 256 GB, Wi-Fi",
+        "priceFrom": 11575.61,
+        "availability": "available",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "KTA164V8X4XX",
+        "name": "K120 G3 — Core i5, 16 / 256 GB, 4G LTE, GPS",
+        "priceFrom": 12923.51,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "4G LTE, GPS"
+        }
+      },
+      {
+        "partNumber": "KTA164W8X4XX",
+        "name": "K120 G3 — Core i5, 16 / 256 GB, 4G LTE, GPS, digitizer",
+        "priceFrom": 13732.25,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "4G LTE, GPS",
+          "Digitizer": "Tak"
+        }
+      },
+      {
+        "partNumber": "KTA164V8XQXX",
+        "name": "K120 G3 — Core i5, 16 / 256 GB, 5G, GPS",
+        "priceFrom": 14026.34,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "5G, GPS"
+        }
+      },
+      {
+        "partNumber": "KTA164W8XQXX",
+        "name": "K120 G3 — Core i5, 16 / 256 GB, 5G, GPS, digitizer",
+        "priceFrom": 14835.08,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i5",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "5G, GPS",
+          "Digitizer": "Tak"
+        }
+      },
+      {
+        "partNumber": "KTB166V8XKEX",
+        "name": "K120 G3 — Core i7, 16 / 512 GB, Wi-Fi",
+        "priceFrom": 14018.17,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Core i7",
+          "Pamięć RAM / SSD": "16 / 512 GB",
+          "Łączność": "Wi-Fi"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Procesor": "Procesor Intel Core 13. generacji.\n\n• Core i5-1335U albo Core i7-1355U.",
+      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja K120 G3 ma Wi-Fi 6E, Bluetooth 5.3 i port LAN.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; micro-SIM i eSIM, GPS w module.",
+      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-klawiatura-gdkbum",
+      "getac-klawiatura-gdkbun",
+      "getac-bateria-gbm3x4",
+      "getac-bateria-gbm4x4",
+      "getac-stacja-biurkowa-gdode5",
+      "getac-ladowarka-2-gniazdowa-gcmcef",
+      "getac-stacja-usb-c-ds100-gddse2",
+      "getac-rysik-digitizer-gmpdx6",
+      "getac-torba-gmbcx7"
+    ],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-f110-g7",
+      "getac-ux10-g5",
+      "getac-g140",
+      "honeywell-rt10w",
+      "zebra-et60w",
+      "zebra-et65w"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac K120 G3 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-k120-g3.pdf",
+        "size": "921 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy Getac K120 G3 ma klawiaturę w zestawie?",
+        "answer": "Nie. K120 G3 to tablet. Klawiaturę odpinaną albo klawiaturę ze stacją kupuje się osobno. W ofercie są wersje z układem US: klawiatura odpinana GDKBUM i klawiatura ze stacją GDKBUN ze złączami anten zewnętrznych."
+      },
+      {
+        "question": "Jak wymienia się baterie w Getac K120 G3?",
+        "answer": "Tablet pracuje na 2 bateriach 2100 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Zamiennie pasują baterie o dużej pojemności 3450 mAh GBM4X4, które zwiększają grubość o ok. 11 mm i masę o ok. 0,2 kg."
+      },
+      {
+        "question": "W jakiej temperaturze pracuje Getac K120 G3?",
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+      },
+      {
+        "question": "Czy Getac K120 G3 można zamontować w pojeździe?",
+        "answer": "Tak. Getac przewiduje stacje pojazdowe do pracy w trybie tabletu i w trybie laptopa. Stacja pojazdowa ma port szeregowy, VGA, HDMI 2.0, 2 porty LAN, 6 portów USB i 3 złącza anten (WWAN, WLAN, GPS)."
+      },
+      {
+        "question": "Czym różnią się wersje KTA164V8 i KTA164W8?",
+        "answer": "Wersje KTA164W8X4XX i KTA164W8XQXX mają ekran z digitizerem do pracy z aktywnym piórem. Wersje KTA164V8 mają standardowy ekran pojemnościowy."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
