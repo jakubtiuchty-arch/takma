@@ -171,7 +171,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "NFC": "Tak"
+          "Wyposażenie": "NFC"
         }
       },
       {
@@ -190,7 +190,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -209,8 +209,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "NFC": "Tak",
-          "Digitizer": "Tak"
+          "Wyposażenie": "NFC, digitizer"
         }
       },
       {
@@ -229,7 +228,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "5G, GPS",
-          "Digitizer": "Tak"
+          "Wyposażenie": "Digitizer"
         }
       },
       {
@@ -239,8 +238,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "5G, GPS",
-          "NFC": "Tak",
-          "Digitizer": "Tak"
+          "Wyposażenie": "NFC, digitizer"
         }
       },
       {
@@ -250,7 +248,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -260,7 +258,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -270,8 +268,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "Czytnik kodów": "1D/2D",
-          "Digitizer": "Tak"
+          "Wyposażenie": "Czytnik kodów 1D/2D, digitizer"
         }
       },
       {
@@ -281,17 +278,13 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "5G, GPS",
-          "Czytnik kodów": "1D/2D",
-          "Digitizer": "Tak"
+          "Wyposażenie": "Czytnik kodów 1D/2D, digitizer"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Łączność": "Sposób połączenia z siecią. Każda wersja ZX80 ma Wi-Fi 6E i Bluetooth 5.2; wybrane wersje mają też 4G LTE albo 5G.\n\n• 4G LTE i 5G Sub-6 — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.\n\n• GPS — odbiornik L1/L5 w wersjach z 4G LTE i 5G.",
-      "NFC": "Czytnik zbliżeniowy 13,56 MHz w obudowie tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
-      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym rysikiem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów i notatek odręcznych w formularzach.",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager).\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych, podłączanych przez stację pojazdową Gamber-Johnson w wersji ze złączami RF.\n\n• Stacja ma 3 złącza anten: WWAN, WLAN i GPS."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — wbudowany imager, bez osobnego skanera.\n\n• NFC — czytnik zbliżeniowy 13,56 MHz (Mifare, FeliCa, ISO 14443 i 15693).\n\n• Digitizer — ekran obsługuje też pióro aktywne, np. do podpisów.\n\n• Złącza anten zewnętrznych — anteny podłączane przez stację pojazdową Gamber-Johnson (3 złącza)."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -543,7 +536,7 @@ export const getacTabletProducts: Product[] = [
         "attributes": {
           "Łączność": "Wi-Fi, GPS",
           "Pamięć": "8 / 128 GB",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -554,7 +547,7 @@ export const getacTabletProducts: Product[] = [
         "attributes": {
           "Łączność": "Wi-Fi, GPS",
           "Pamięć": "8 / 256 GB",
-          "NFC": "Tak"
+          "Wyposażenie": "NFC"
         }
       },
       {
@@ -565,16 +558,14 @@ export const getacTabletProducts: Product[] = [
         "attributes": {
           "Łączność": "4G LTE, GPS",
           "Pamięć": "8 / 256 GB",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Łączność": "Sposób połączenia z siecią. Każda wersja ZX10 G2 w ofercie ma Wi-Fi 6E, Bluetooth 5.2 i GPS; wybrane wersje mają też 4G LTE.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
       "Pamięć": "Pamięć operacyjna i pamięć na aplikacje oraz dane.\n\n• 8 GB LPDDR5 i 128 GB albo 256 GB UFS.\n\n• Gniazdo microSD rozszerza pamięć na pliki.",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager).\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "NFC": "Czytnik zbliżeniowy 13,56 MHz w obudowie tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Stacja pojazdowa ma opcjonalnie 3 złącza anten: GPS, WWAN i WLAN."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — wbudowany imager, bez osobnego skanera.\n\n• NFC — czytnik zbliżeniowy 13,56 MHz (Mifare, FeliCa, ISO 14443 i 15693).\n\n• Złącza anten zewnętrznych — anteny podłączane przez stację pojazdową (opcjonalnie 3 złącza)."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -805,7 +796,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -816,7 +807,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS"
         }
       },
@@ -827,9 +818,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -839,7 +830,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS"
         }
       },
@@ -850,9 +841,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -862,9 +853,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "LAN": "Tak"
+          "Wyposażenie": "LAN"
         }
       },
       {
@@ -874,9 +865,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "HF RFID": "Tak"
+          "Wyposażenie": "HF RFID"
         }
       },
       {
@@ -886,10 +877,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "HF RFID": "Tak",
-          "Uchwyt": "Tak"
+          "Wyposażenie": "HF RFID, uchwyt"
         }
       },
       {
@@ -899,9 +889,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -911,9 +901,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5",
-          "Pamięć RAM / SSD": "16 / 512 GB",
+          "RAM / SSD": "16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -923,7 +913,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5 vPro",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -934,10 +924,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 5 vPro",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
-          "Bateria": "9240 mAh",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych, bateria 9240 mAh"
         }
       },
       {
@@ -947,7 +936,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 7",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -958,22 +947,17 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core Ultra 7",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "LAN": "Tak"
+          "Wyposażenie": "LAN"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Procesor": "Procesor Intel Core Ultra serii 2 z układem NPU (Intel AI Boost do 48 TOPS).\n\n• vPro Enterprise — technologia Intel vPro do zarządzania i zabezpieczeń komputerów firmowych.\n\n• Core Ultra 7 — grafika Intel Arc 140V zamiast 130V.",
-      "Pamięć RAM / SSD": "Pamięć operacyjna LPDDR5X i dysk SSD PCIe NVMe na system, programy i dane.",
+      "RAM / SSD": "Pamięć operacyjna LPDDR5X i dysk SSD PCIe NVMe na system, programy i dane.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja UX10 G5 ma Wi-Fi 7 i Bluetooth 5.4.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; micro-SIM i eSIM, GPS w module.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Stacja pojazdowa ma 3 złącza anten: GPS, WWAN i WLAN.",
-      "LAN": "Port Ethernet RJ45 w obudowie tabletu.\n\n• Połączenie z siecią przewodową bez stacji dokującej.",
-      "HF RFID": "Czytnik zbliżeniowy 13,56 MHz w górnym gnieździe tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
-      "Uchwyt": "Sztywny uchwyt (hard handle) w zestawie z tabletem.\n\n• Ułatwia przenoszenie tabletu jedną ręką.",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "Bateria": "Bateria o dużej pojemności zamiast standardowej 4070 mAh.\n\n• 10,8 V, 9240 mAh — dłuższa praca bez ładowania."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — imager w górnym gnieździe.\n\n• HF RFID — czytnik 13,56 MHz (Mifare, FeliCa, ISO 14443 i 15693).\n\n• LAN — port Ethernet RJ45 w obudowie.\n\n• Złącza anten zewnętrznych — anteny podłączane przez stację pojazdową (3 złącza).\n\n• Uchwyt — sztywny uchwyt w zestawie.\n\n• Bateria 9240 mAh — zamiast standardowej 4070 mAh."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1211,7 +1195,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -1222,9 +1206,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "8 / 256 GB",
+          "RAM / SSD": "8 / 256 GB",
           "Łączność": "Wi-Fi",
-          "RS-232 i LAN": "Tak"
+          "Wyposażenie": "RS-232 i LAN"
         }
       },
       {
@@ -1234,11 +1218,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "8 / 256 GB",
+          "RAM / SSD": "8 / 256 GB",
           "Łączność": "Wi-Fi",
-          "RS-232 i LAN": "Tak",
-          "Digitizer": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, RS-232 i LAN, złącza anten zewnętrznych"
         }
       },
       {
@@ -1248,10 +1230,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "8 / 256 GB",
+          "RAM / SSD": "8 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D",
-          "HF RFID": "Tak"
+          "Wyposażenie": "Czytnik kodów 1D/2D, HF RFID"
         }
       },
       {
@@ -1261,9 +1242,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "on-order",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -1273,9 +1254,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i7",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -1285,11 +1266,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i7 vPro",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
-          "RS-232 i LAN": "Tak",
-          "Digitizer": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, RS-232 i LAN, złącza anten zewnętrznych"
         }
       },
       {
@@ -1299,11 +1278,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i7",
-          "Pamięć RAM / SSD": "16 / 512 GB",
+          "RAM / SSD": "16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "RS-232 i LAN": "Tak",
-          "Digitizer": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, RS-232 i LAN, złącza anten zewnętrznych"
         }
       },
       {
@@ -1313,23 +1290,17 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i7",
-          "Pamięć RAM / SSD": "16 / 512 GB",
+          "RAM / SSD": "16 / 512 GB",
           "Łączność": "5G, GPS",
-          "RS-232 i LAN": "Tak",
-          "Digitizer": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, RS-232 i LAN, złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Procesor": "Procesor Intel Core 13. generacji.\n\n• Core i5-1335U albo Core i7-1355U.\n\n• Core i7 vPro (i7-1365U) — technologia Intel vPro do zarządzania i zabezpieczeń komputerów firmowych.",
-      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja F110 G7 ma Wi-Fi 6E i Bluetooth 5.3.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; micro-SIM i eSIM, GPS w module.",
-      "RS-232 i LAN": "Port szeregowy RS-232 i port Ethernet RJ45 w górnym gnieździe tabletu.\n\n• Do urządzeń z portem szeregowym i sieci przewodowej bez stacji dokującej.",
-      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Stacja pojazdowa ma 3 złącza anten: WWAN, WLAN i GPS.",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "HF RFID": "Czytnik zbliżeniowy 13,56 MHz z boku obudowy.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — imager w górnym gnieździe.\n\n• HF RFID — czytnik 13,56 MHz z boku obudowy.\n\n• Digitizer — ekran obsługuje też pióro aktywne, np. do podpisów.\n\n• RS-232 i LAN — porty w górnym gnieździe.\n\n• Złącza anten zewnętrznych — anteny podłączane przez stację pojazdową (3 złącza)."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1573,7 +1544,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -1583,7 +1554,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi",
-          "Porty dodatkowe": "LAN"
+          "Wyposażenie": "LAN"
         }
       },
       {
@@ -1593,7 +1564,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi",
-          "Porty dodatkowe": "RS-232"
+          "Wyposażenie": "RS-232"
         }
       },
       {
@@ -1603,8 +1574,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi, GPS",
-          "Porty dodatkowe": "LAN",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "LAN, złącza anten zewnętrznych"
         }
       },
       {
@@ -1614,8 +1584,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "Wi-Fi, GPS",
-          "Porty dodatkowe": "RS-232",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "RS-232, złącza anten zewnętrznych"
         }
       },
       {
@@ -1625,7 +1594,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "on-order",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -1635,9 +1604,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "Digitizer": "Tak",
-          "Pasek na rękę": "W zestawie",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, złącza anten zewnętrznych, pasek na rękę"
         }
       },
       {
@@ -1647,10 +1614,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "4G LTE, GPS",
-          "Porty dodatkowe": "LAN",
-          "Czytnik kart chipowych": "Tak",
-          "Pasek na rękę": "W zestawie",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Czytnik kart chipowych, LAN, złącza anten zewnętrznych, pasek na rękę"
         }
       },
       {
@@ -1669,19 +1633,13 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Łączność": "5G, GPS",
-          "Digitizer": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Digitizer, złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Łączność": "Sposób połączenia z siecią. Każda wersja F120 ma Wi-Fi 7 i Bluetooth 5.4.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.\n\n• Wi-Fi, GPS — dedykowany odbiornik GPS bez modemu komórkowego.",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "Porty dodatkowe": "Port w górnym gnieździe tabletu. Gniazdo mieści jeden moduł.\n\n• LAN — Ethernet RJ45 do sieci przewodowej.\n\n• RS-232 — port szeregowy 9-pin D-sub do urządzeń warsztatowych i przemysłowych.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
-      "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków.",
-      "Pasek na rękę": "Pasek na rękę dołączony do tabletu.\n\n• Ułatwia trzymanie tabletu jedną ręką.",
-      "Czytnik kart chipowych": "Czytnik kart chipowych (smart card) w tylnym gnieździe obudowy."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — imager w górnym gnieździe.\n\n• Czytnik kart chipowych — w tylnym gnieździe obudowy.\n\n• Digitizer — ekran obsługuje też pióro aktywne, np. do podpisów.\n\n• LAN albo RS-232 — port w górnym gnieździe (mieści jeden moduł).\n\n• Złącza anten zewnętrznych — 3 złącza dla 4G, 4 dla 5G.\n\n• Pasek na rękę — w zestawie."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1911,7 +1869,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "available",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -1922,7 +1880,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS"
         }
       },
@@ -1933,7 +1891,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
           "Digitizer": "Tak"
         }
@@ -1945,7 +1903,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS"
         }
       },
@@ -1956,7 +1914,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i5",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS",
           "Digitizer": "Tak"
         }
@@ -1968,14 +1926,14 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Core i7",
-          "Pamięć RAM / SSD": "16 / 512 GB",
+          "RAM / SSD": "16 / 512 GB",
           "Łączność": "Wi-Fi"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Procesor": "Procesor Intel Core 13. generacji.\n\n• Core i5-1335U albo Core i7-1355U.",
-      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja K120 G3 ma Wi-Fi 6E, Bluetooth 5.3 i port LAN.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; micro-SIM i eSIM, GPS w module.",
       "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym piórem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów, notatek i rysunków."
     },
@@ -2217,7 +2175,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -2228,9 +2186,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -2240,9 +2198,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -2252,9 +2210,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "4G LTE, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -2264,9 +2222,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -2276,10 +2234,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "16 / 256 GB",
+          "RAM / SSD": "16 / 256 GB",
           "Łączność": "5G, GPS",
-          "HF RFID": "Tak",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "HF RFID, złącza anten zewnętrznych"
         }
       },
       {
@@ -2289,7 +2246,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 5 340",
-          "Pamięć RAM / SSD": "32 / 256 GB",
+          "RAM / SSD": "32 / 256 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -2300,7 +2257,7 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 7 350",
-          "Pamięć RAM / SSD": "32 / 512 GB",
+          "RAM / SSD": "32 / 512 GB",
           "Łączność": "Wi-Fi"
         }
       },
@@ -2311,9 +2268,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 7 350",
-          "Pamięć RAM / SSD": "32 / 512 GB",
+          "RAM / SSD": "32 / 512 GB",
           "Łączność": "Wi-Fi",
-          "HF RFID": "Tak"
+          "Wyposażenie": "HF RFID"
         }
       },
       {
@@ -2323,9 +2280,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 7 350",
-          "Pamięć RAM / SSD": "32 / 512 GB",
+          "RAM / SSD": "32 / 512 GB",
           "Łączność": "Wi-Fi",
-          "Czytnik kodów": "1D/2D"
+          "Wyposażenie": "Czytnik kodów 1D/2D"
         }
       },
       {
@@ -2335,9 +2292,9 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 7 350",
-          "Pamięć RAM / SSD": "32 / 512 GB",
+          "RAM / SSD": "32 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       },
       {
@@ -2347,19 +2304,17 @@ export const getacTabletProducts: Product[] = [
         "availability": "unavailable",
         "attributes": {
           "Procesor": "Ryzen AI 7 350",
-          "Pamięć RAM / SSD": "32 GB / 1 TB",
+          "RAM / SSD": "32 GB / 1 TB",
           "Łączność": "5G, GPS",
-          "Antena zewnętrzna": "Tak"
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
       "Procesor": "Procesor AMD Ryzen AI z układem NPU AMD XDNA 2 (do 50 TOPS).\n\n• Ryzen AI 5 340 — 6 rdzeni, grafika Radeon 840M.\n\n• Ryzen AI 7 350 — 8 rdzeni, grafika Radeon 860M.",
-      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.\n\n• RAM: 16 albo 32 GB.\n\n• SSD: 256 GB, 512 GB albo 1 TB.",
+      "RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.\n\n• RAM: 16 albo 32 GB.\n\n• SSD: 256 GB, 512 GB albo 1 TB.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja G140 ma Wi-Fi 7, Bluetooth 5.4 i port LAN.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych, podłączanych przez stację pojazdową w wersji ze złączami RF.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
-      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "HF RFID": "Czytnik HF RFID/NFC 13,56 MHz w górnym gnieździe.\n\n• Karty iClass, HID Prox, ISO 15693, ISO 14443 A/B, Mifare i FeliCa."
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Czytnik kodów 1D/2D — imager w górnym gnieździe.\n\n• HF RFID — czytnik 13,56 MHz (iClass, HID Prox, Mifare, FeliCa).\n\n• Złącza anten zewnętrznych — anteny podłączane przez stację pojazdową (3 złącza dla 4G, 4 dla 5G)."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
