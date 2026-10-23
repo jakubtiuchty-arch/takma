@@ -7,9 +7,9 @@ export const getacTabletProducts: Product[] = [
     "name": "Getac ZX80",
     "seoH1": "Getac ZX80",
     "seoTitle": "Tablet przemysłowy Getac ZX80 8″ z Androidem 15, IP67",
-    "seoDescription": "Tablet przemysłowy Getac ZX80 8″, Android 15, IP67, 4G lub 5G. Tablet rugged Getac ZX80 z czytnikiem kodów. ZX80 Getac PN: Z8A7LXDX17XC, Z8A7LXDX1DXX.",
-    "shortDescription": "Getac ZX80 — tablet fully rugged 8″ z Androidem 15, klasą IP67 i baterią wymienianą bez wyłączania. Wersje z Wi-Fi 6E, 4G LTE lub 5G, opcjonalnie z czytnikiem kodów 1D/2D i NFC.",
-    "description": "Getac ZX80 to tablet przemysłowy z ekranem 8 cali i Androidem 15. Służy do pracy w terenie, w pojazdach, w magazynie i przy obsłudze obiektów. Obudowa ma masę 590 g, klasę szczelności IP67 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Procesor Qualcomm QCS6490 pracuje z 12 GB RAM i pamięcią 256 GB UFS. Tablet ma status Android Enterprise Recommended.\n\nTablet ma wewnętrzną baterię 4060 mAh i kieszeń na baterię wymienną. Baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). Fabrycznie kieszeń zamyka zaślepka. W kieszeni pracuje bateria 4990 mAh albo 9980 mAh.\n\nKonfiguracje różnią się łącznością: Wi-Fi 6E, 4G LTE albo 5G z GPS. Opcjami są też czytnik kodów 1D/2D, NFC, digitizer i złącza anten zewnętrznych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-C 65 W Getac (GAT6E1)](/produkt/getac-zasilacz-usb-c-gat6e1)\n\nZasilacz i przewód zasilający nie są dołączone do tabletu. Zasilacz GAT6E1 ma przewód z wtyczką EU.\n\nEkran 10,1 cala, ten sam procesor i Androida 15 ma [Getac ZX10 G2](/produkt/getac-zx10-g2).",
+    "seoDescription": "Tablet przemysłowy Getac ZX80 8″, Android 15, IP67, 4G lub 5G. Tablet rugged Getac ZX80 z opcjonalnym czytnikiem kodów. ZX80 Getac PN: Z8A7LXDX17XC, Z8A7LXDX1DXX.",
+    "shortDescription": "Getac ZX80 — tablet fully rugged 8″ z Androidem 15 i klasą IP67, z kieszenią na baterię wymienianą bez wyłączania (bateria GBM1XA lub GBM2XA sprzedawana osobno). Każda wersja ma Wi-Fi 6E; wybrane wersje mają też 4G LTE lub 5G, czytnik kodów 1D/2D i NFC.",
+    "description": "Getac ZX80 to tablet przemysłowy z ekranem 8 cali i Androidem 15. Służy do pracy w terenie, w pojazdach, w magazynie i przy obsłudze obiektów. Obudowa ma masę 590 g, klasę szczelności IP67 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Procesor Qualcomm QCS6490 pracuje z 12 GB RAM i pamięcią 256 GB UFS. Tablet ma status Android Enterprise Recommended.\n\nTablet ma wewnętrzną baterię 4060 mAh i kieszeń na baterię wymienną. Baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). Fabrycznie kieszeń zamyka zaślepka. W kieszeni pracuje bateria 4990 mAh albo 9980 mAh.\n\nKażda wersja ma Wi-Fi 6E; wybrane wersje mają też 4G LTE albo 5G z GPS. Opcjami są też czytnik kodów 1D/2D, NFC, digitizer i złącza anten zewnętrznych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-C 65 W Getac (GAT6E1)](/produkt/getac-zasilacz-usb-c-gat6e1)\n\nZasilacz i przewód zasilający nie są dołączone do tabletu. Zasilacz GAT6E1 ma przewód z wtyczką EU.\n\nEkran 10,1 cala, ten sam procesor i Androida 15 ma [Getac ZX10 G2](/produkt/getac-zx10-g2).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -27,10 +27,10 @@ export const getacTabletProducts: Product[] = [
     ],
     "imageDescriptions": [
       "Getac ZX80 — widok z przodu, ekran 8 cali w poziomie i przyciski po prawej stronie",
-      "Getac ZX80 — widok z przodu pod kątem, z prawej strony",
-      "Getac ZX80 — widok z przodu pod kątem, z lewej strony",
+      "Getac ZX80 — widok z przodu pod kątem, lewa strona obudowy ze złączami",
+      "Getac ZX80 — widok z przodu pod kątem, prawa strona z przyciskami",
       "Getac ZX80 — tył obudowy z aparatem",
-      "Getac ZX80 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+      "Getac ZX80 — widok z dołu pod kątem, złącze dokujące i złącza anten zewnętrznych (w wersjach ze złączami RF)"
     ],
     "tags": [
       "magazyn",
@@ -287,11 +287,11 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX80 ma Wi-Fi 6E i Bluetooth 5.2.\n\n• 4G LTE albo 5G Sub-6 — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.\n\n• GPS — odbiornik L1/L5 w wersjach z 4G LTE i 5G.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX80 ma Wi-Fi 6E i Bluetooth 5.2; wybrane wersje mają też 4G LTE albo 5G.\n\n• 4G LTE i 5G Sub-6 — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.\n\n• GPS — odbiornik L1/L5 w wersjach z 4G LTE i 5G.",
       "NFC": "Czytnik zbliżeniowy 13,56 MHz w obudowie tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
       "Digitizer": "Ekran z dodatkowym trybem pracy z aktywnym rysikiem.\n\n• Tryb podwójny: dotyk palcem i pióro digitizer.\n\n• Do podpisów i notatek odręcznych w formularzach.",
       "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager).\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Antenę pojazdu podłącza się przez stację pojazdową ze złączami RF."
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych, podłączanych przez stację pojazdową Gamber-Johnson w wersji ze złączami RF.\n\n• Stacja ma 3 złącza anten: WWAN, WLAN i GPS."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -350,9 +350,9 @@ export const getacTabletProducts: Product[] = [
     "name": "Getac ZX10 G2",
     "seoH1": "Getac ZX10 G2",
     "seoTitle": "Tablet przemysłowy Getac ZX10 G2 10,1″ z Androidem 15, IP66",
-    "seoDescription": "Tablet przemysłowy Getac ZX10 G2 10,1″, Android 15, IP66, dwie baterie hot-swap. Tablet rugged Getac ZX10 z 4G. ZX10 Getac PN: Z8A1KXW85ABX, Z8A1KXW857BX.",
-    "shortDescription": "Getac ZX10 G2 — tablet fully rugged 10,1″ z Androidem 15, klasą IP66 i dwiema kieszeniami na baterie wymieniane bez wyłączania. Wersje z Wi-Fi 6E i GPS albo z 4G LTE, opcjonalnie z czytnikiem kodów 1D/2D lub NFC.",
-    "description": "Getac ZX10 G2 to tablet przemysłowy z ekranem 10,1 cala i Androidem 15. Służy do pracy w magazynie, w pojazdach i w terenie. Obudowa ma masę 906 g, klasę szczelności IP66 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Procesor Qualcomm QCS6490 pracuje z 8 GB RAM. Pamięć UFS ma 128 GB albo 256 GB, zależnie od PN. Tablet ma status Android Enterprise Recommended.\n\nTablet ma dwie kieszenie na baterie. Gdy w obu kieszeniach są baterie, jedną z nich wymienia się bez wyłączania tabletu (technologia LifeSupport). Do kieszeni pasuje bateria 4990 mAh albo 9980 mAh. Przy zasilaniu sieciowym tablet pracuje od −29°C do +63°C. Na samej baterii dolna granica wynosi −15°C z jedną baterią standardową, −21°C z dwiema standardowymi i −29°C z dwiema bateriami o dużej pojemności.\n\nKonfiguracje różnią się łącznością, pamięcią i opcjami: czytnikiem kodów 1D/2D, NFC oraz złączami anten zewnętrznych. W zestawie jest zasilacz. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 8 cali i klasę IP67 ma [Getac ZX80](/produkt/getac-zx80).",
+    "seoDescription": "Tablet przemysłowy Getac ZX10 G2 10,1″, Android 15, IP66, dwie kieszenie na baterie hot-swap. Tablet rugged Getac ZX10 z 4G. ZX10 Getac PN: Z8A1KXW85ABX, Z8A1KXW857BX.",
+    "shortDescription": "Getac ZX10 G2 — tablet fully rugged 10,1″ z Androidem 15, klasą IP66 i dwiema kieszeniami na baterie wymieniane bez wyłączania. Każda wersja ma Wi-Fi 6E i GPS; wybrane wersje mają też 4G LTE, czytnik kodów 1D/2D lub NFC.",
+    "description": "Getac ZX10 G2 to tablet przemysłowy z ekranem 10,1 cala i Androidem 15. Służy do pracy w magazynie, w pojazdach i w terenie. Obudowa ma masę 906 g, klasę szczelności IP66 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Procesor Qualcomm QCS6490 pracuje z 8 GB RAM. Pamięć UFS ma 128 GB albo 256 GB, zależnie od PN. Tablet ma status Android Enterprise Recommended.\n\nTablet ma dwie kieszenie na baterie. Gdy w obu kieszeniach są baterie, jedną z nich wymienia się bez wyłączania tabletu (technologia LifeSupport). Do kieszeni pasuje bateria 4990 mAh albo 9980 mAh. Przy zasilaniu sieciowym tablet pracuje od −29°C do +63°C. Na samej baterii dolna granica wynosi −15°C z jedną baterią standardową, −21°C z dwiema standardowymi i −29°C z dwiema bateriami o dużej pojemności.\n\nKonfiguracje różnią się łącznością, pamięcią i opcjami: czytnikiem kodów 1D/2D, NFC oraz złączami anten zewnętrznych. W zestawie są bateria 4990 mAh, zaślepka drugiej kieszeni baterii i zasilacz. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 8 cali i klasę IP67 ma [Getac ZX80](/produkt/getac-zx80).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -373,7 +373,7 @@ export const getacTabletProducts: Product[] = [
       "Getac ZX10 G2 — widok z przodu pod kątem, z lewej strony",
       "Getac ZX10 G2 — widok z przodu pod kątem, z prawej strony",
       "Getac ZX10 G2 — tył obudowy z aparatem i rysikiem w uchwycie",
-      "Getac ZX10 G2 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+      "Getac ZX10 G2 — widok z dołu pod kątem, złącze dokujące i złącza anten zewnętrznych (w wersjach ze złączami RF)"
     ],
     "tags": [
       "magazyn",
@@ -401,7 +401,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Ekran dotykowy",
-        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; opcja: tryb podwójny z digitizerem"
+        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; tryb podwójny z digitizerem tylko w konfiguracjach na zamówienie"
       },
       {
         "name": "Przyciski",
@@ -425,7 +425,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "GPS",
-        "value": "Dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou) we wszystkich wersjach z tej karty"
+        "value": "Dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou) we wszystkich wersjach w ofercie"
       },
       {
         "name": "NFC",
@@ -497,7 +497,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Tablet, bateria wymienna, zasilacz, przewód zasilający (EU, UK), rysik"
+        "value": "Tablet, bateria 4990 mAh, zaślepka drugiej kieszeni baterii, zasilacz, przewód zasilający (EU, UK), rysik"
       },
       {
         "name": "Gwarancja",
@@ -570,7 +570,7 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX10 G2 w tej karcie ma Wi-Fi 6E, Bluetooth 5.2 i GPS.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX10 G2 w ofercie ma Wi-Fi 6E, Bluetooth 5.2 i GPS; wybrane wersje mają też 4G LTE.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
       "Pamięć": "Pamięć operacyjna i pamięć na aplikacje oraz dane.\n\n• 8 GB LPDDR5 i 128 GB albo 256 GB UFS.\n\n• Gniazdo microSD rozszerza pamięć na pliki.",
       "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager).\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
       "NFC": "Czytnik zbliżeniowy 13,56 MHz w obudowie tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
@@ -583,9 +583,9 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-biurkowa-gdode8",
       "getac-klawiatura-gdkbur",
       "getac-ladowarka-2-gniazdowa-gcmcem",
-      "getac-rysik-digitizer-gmpdx7",
       "getac-pasek-na-reke-gmhrxm",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-rysik-pojemnosciowy-gmpsxu"
     ],
     "relatedProducts": [
       "getac-zx80",
@@ -606,7 +606,7 @@ export const getacTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Czy baterię Getac ZX10 G2 można wymienić bez wyłączania?",
-        "answer": "Tak, gdy w obu kieszeniach są baterie. Tablet ma dwie kieszenie na baterie i technologię LifeSupport, więc jedną baterię wymienia się, a tablet pracuje na drugiej. Pasują baterie 4990 mAh GBM1X2 i 9980 mAh GBM2X3."
+        "answer": "Tak, po włożeniu drugiej baterii. Fabrycznie tablet ma jedną baterię 4990 mAh i zaślepkę drugiej kieszeni. Do wymiany bez wyłączania potrzebna jest druga bateria <a href=\"/produkt/getac-bateria-gbm1x2\">GBM1X2</a> albo dwie baterie o dużej pojemności <a href=\"/produkt/getac-bateria-gbm2x3\">GBM2X3</a>. Gdy w obu kieszeniach są baterie, jedną z nich wymienia się, a tablet pracuje na drugiej (technologia LifeSupport)."
       },
       {
         "question": "Czy Getac ZX10 G2 pracuje w mroźni?",
@@ -618,7 +618,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "Które wersje Getac ZX10 G2 mają czytnik kodów lub NFC?",
-        "answer": "Czytnik kodów 1D/2D ma wersja Z8A1KZW85ABX. NFC ma wersja Z8A1LXW85AB1. Pozostałe wersje z tej karty nie mają tych modułów."
+        "answer": "Czytnik kodów 1D/2D ma wersja Z8A1KZW85ABX. NFC ma wersja Z8A1LXW85AB1. Pozostałe wersje w ofercie nie mają tych modułów."
       },
       {
         "question": "Czy Getac ZX10 G2 działa z Windows?",
@@ -636,7 +636,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac UX10 G5 10,1″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac UX10 G5 10,1″, Windows 11 Pro, Intel Core Ultra, Wi-Fi 7, IP66. Tablet rugged Getac UX10. UX10 Getac PN: UW1764VIXDXX, UW1764VIX1XX.",
     "shortDescription": "Getac UX10 G5 — tablet fully rugged 10,1″ z Windows 11 Pro, procesorem Intel Core Ultra (seria 2), Wi-Fi 7 i klasą IP66. Wersje z 4G LTE lub 5G, opcjonalnie z czytnikiem kodów 1D/2D, HF RFID lub portem LAN.",
-    "description": "Getac UX10 G5 to tablet przemysłowy z ekranem 10,1 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, na produkcji i w serwisie. Obudowa ma masę 1,15 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów. Procesory Intel Core Ultra serii 2 mają układ NPU Intel AI Boost o wydajności do 48 TOPS. Wersje z tej karty mają 16 GB RAM i dysk SSD 256 GB albo 512 GB. Przednia kamera 5 MP obsługuje logowanie Windows Hello.\n\nTablet ma Wi-Fi 7, Bluetooth 5.4, 2 porty Thunderbolt 4 i port USB-A. Konfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS oraz modułami: czytnikiem kodów 1D/2D, HF RFID albo portem LAN. W zestawie są bateria 4070 mAh, zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 11,6 cala i 2 baterie wymieniane bez wyłączania ma [Getac F110 G7](/produkt/getac-f110-g7).",
+    "description": "Getac UX10 G5 to tablet przemysłowy z ekranem 10,1 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, na produkcji i w serwisie. Obudowa ma masę 1,15 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów. Procesory Intel Core Ultra serii 2 mają układ NPU Intel AI Boost o wydajności do 48 TOPS. Wersje w ofercie mają 16 GB RAM i dysk SSD 256 GB albo 512 GB. Przednia kamera 5 MP obsługuje logowanie Windows Hello.\n\nTablet ma Wi-Fi 7, Bluetooth 5.4, 2 porty Thunderbolt 4 i port USB-A. Konfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS oraz modułami: czytnikiem kodów 1D/2D, HF RFID albo portem LAN. W zestawie są bateria 4070 mAh, zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 11,6 cala i 2 baterie wymieniane bez wyłączania ma [Getac F110 G7](/produkt/getac-f110-g7).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -673,7 +673,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Intel Core Ultra 5 226V (do 4,5 GHz); opcje: Core Ultra 5 236V vPro Enterprise, Core Ultra 7 256V, 258V, 266V vPro Enterprise, 268V vPro Enterprise; w tej karcie Core Ultra 5, Core Ultra 5 vPro i Core Ultra 7, zależnie od PN"
+        "value": "Intel Core Ultra 5 226V (do 4,5 GHz); opcje: Core Ultra 5 236V vPro Enterprise, Core Ultra 7 256V, 258V, 266V vPro Enterprise, 268V vPro Enterprise; w ofercie Core Ultra 5, Core Ultra 5 vPro i Core Ultra 7, zależnie od PN"
       },
       {
         "name": "Grafika i NPU",
@@ -693,7 +693,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Ekran dotykowy",
-        "value": "Pojemnościowy multi-touch; opcja: tryb podwójny z digitizerem"
+        "value": "Pojemnościowy multi-touch; tryb podwójny z digitizerem tylko w konfiguracjach na zamówienie"
       },
       {
         "name": "Przyciski",
@@ -749,7 +749,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Wytrzymałość",
-        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje"
+        "value": "MIL-STD-810H, MIL-STD-461G (z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno); odporność na wibracje"
       },
       {
         "name": "Odporność na upadki",
@@ -987,8 +987,8 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxk",
       "getac-etui-gmbcxa",
-      "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-rysik-pojemnosciowy-gmpsxn"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1013,7 +1013,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "W jakiej temperaturze pracuje Getac UX10 G5?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikat MIL-STD-810H oraz wytrzymuje upadek z 1,8 m."
       },
       {
         "question": "Które wersje Getac UX10 G5 mają czytnik kodów, HF RFID lub LAN?",
@@ -1021,7 +1021,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "Czy do Getac UX10 G5 jest klawiatura?",
-        "answer": "Tak. Getac oferuje klawiaturę odpinaną i klawiaturę ze stacją (keyboard dock). W ofercie jest klawiatura odpinana z układem US: GDKBUP. Z klawiaturą ze stacją tablet ma wymiary 299 × 265 × 48,7 mm i masę 2,25 kg."
+        "answer": "Tak. W ofercie jest klawiatura odpinana z układem US <a href=\"/produkt/getac-klawiatura-gdkbup\">GDKBUP</a>: 82 klawisze, touchpad, klasa IP65, masa 900 g. Getac oferuje też klawiaturę ze stacją (keyboard dock); tablet z tą stacją ma wymiary 299 × 265 × 48,7 mm i masę 2,25 kg."
       },
       {
         "question": "Czy Getac UX10 G5 można zamontować w pojeździe?",
@@ -1039,7 +1039,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac F110 G7 11,6″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac F110 G7 11,6″, Windows 11 Pro, 1200 nitów, 2 baterie hot-swap. Tablet rugged Getac F110. F110 Getac PN: FTA164JI1DXX, FTA164JI1MXX.",
     "shortDescription": "Getac F110 G7 — tablet fully rugged 11,6″ z Windows 11 Pro, procesorem Intel Core 13. generacji, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID, RS-232 i LAN.",
-    "description": "Getac F110 G7 to tablet przemysłowy z ekranem 11,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,49 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 8 GB albo 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 4200 mAh.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS, digitizerem i modułami. Górne gniazdo mieści czytnik kodów 1D/2D albo port RS-232 z portem LAN. Z boku może być czytnik HF RFID. W zestawie są zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 12,2 cala, Wi-Fi 7 i procesory Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "description": "Getac F110 G7 to tablet przemysłowy z ekranem 11,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,49 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 8 GB albo 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 4200 mAh.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS, digitizerem i modułami. Górne gniazdo mieści czytnik kodów 1D/2D albo port RS-232 z portem LAN. Z boku może być czytnik HF RFID. W zestawie są zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 12,2 cala, Wi-Fi 7 i procesory Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -1080,7 +1080,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje: Core i5-1345U vPro Enterprise, Core i7-1355U, Core i7-1365U vPro Enterprise; w tej karcie Core i5, Core i7 i Core i7 vPro, zależnie od PN"
+        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje: Core i5-1345U vPro Enterprise, Core i7-1355U, Core i7-1365U vPro Enterprise; w ofercie Core i5, Core i7 i Core i7 vPro, zależnie od PN"
       },
       {
         "name": "Grafika",
@@ -1156,7 +1156,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Wytrzymałość",
-        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje; opcja: odporność na mgłę solną"
+        "value": "MIL-STD-810H, MIL-STD-461G (z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno); odporność na wibracje; opcja: odporność na mgłę solną"
       },
       {
         "name": "Odporność na upadki",
@@ -1188,7 +1188,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Tablet, 2 baterie 2680 mAh, zasilacz 65 W, rysik pojemnościowy z linką"
+        "value": "Tablet, 2 baterie 2680 mAh, zasilacz 65 W, rysik pojemnościowy z linką albo pióro digitizer (wersje z digitizerem)"
       },
       {
         "name": "Gwarancja",
@@ -1343,7 +1343,8 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxm",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-rysik-pojemnosciowy-gmpsxn"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -1358,13 +1359,13 @@ export const getacTabletProducts: Product[] = [
         "name": "Karta katalogowa Getac F110 G7 (EN)",
         "type": "datasheet",
         "url": "/datasheets/getac-f110-g7.pdf",
-        "size": "1065 KB"
+        "size": "1,0 MB"
       }
     ],
     "faq": [
       {
         "question": "W jakiej temperaturze pracuje Getac F110 G7?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikat MIL-STD-810H oraz wytrzymuje upadek z 1,8 m."
       },
       {
         "question": "Jak wymienia się baterie w Getac F110 G7?",
@@ -1372,7 +1373,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "Czy Getac F110 G7 ma czytnik kodów?",
-        "answer": "Czytnik kodów 1D/2D jest opcją w górnym gnieździe. W tej karcie ma go wersja FTA154JI1DZS, która ma też czytnik HF RFID. Górne gniazdo mieści jeden moduł, dlatego wersje z RS-232 i LAN nie mają czytnika kodów."
+        "answer": "Czytnik kodów 1D/2D jest opcją w górnym gnieździe. W ofercie ma go wersja FTA154JI1DZS, która ma też czytnik HF RFID. Górne gniazdo mieści jeden moduł, dlatego wersje z RS-232 i LAN nie mają czytnika kodów."
       },
       {
         "question": "Czy Getac F110 G7 ma port szeregowy RS-232?",
@@ -1394,7 +1395,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac F120 12,2″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac F120 12,2″, Windows 11 Pro, Intel Core Ultra, Wi-Fi 7, 1200 nitów. Tablet rugged Getac F120. F120 Getac PN: FW1764WI1DXX, FW17641I1DZX.",
     "shortDescription": "Getac F120 — tablet fully rugged 12,2″ z Windows 11 Pro, procesorem Intel Core Ultra 5, Wi-Fi 7, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, RS-232, LAN i czytnik kart chipowych.",
-    "description": "Getac F120 to tablet przemysłowy z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,41 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1200 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost do 48 TOPS, a tablet jest komputerem Copilot+ PC. Wersje z tej karty mają 16 GB RAM i dysk SSD 256 GB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Tablet ma Wi-Fi 7, Bluetooth 5.4 i 2 porty Thunderbolt 4.\n\nKonfiguracje różnią się łącznością 4G LTE lub 5G z GPS, digitizerem i modułami: czytnikiem kodów 1D/2D, portem RS-232, portem LAN albo czytnikiem kart chipowych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 11,6 cala i procesory Intel Core 13. generacji ma [Getac F110 G7](/produkt/getac-f110-g7).",
+    "description": "Getac F120 to tablet przemysłowy z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,41 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1200 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost do 48 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB RAM i dysk SSD 256 GB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Tablet ma Wi-Fi 7, Bluetooth 5.4 i 2 porty Thunderbolt 4.\n\nKonfiguracje różnią się łącznością 4G LTE lub 5G z GPS, digitizerem i modułami: czytnikiem kodów 1D/2D, portem RS-232, portem LAN albo czytnikiem kart chipowych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 11,6 cala i procesory Intel Core 13. generacji ma [Getac F110 G7](/produkt/getac-f110-g7).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -1433,7 +1434,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Intel Core Ultra 5 226V (do 4,5 GHz); opcje producenta: Core Ultra 5 236V vPro Enterprise, Core Ultra 7 256V, 258V, 266V vPro Enterprise, 268V vPro Enterprise; w tej karcie Core Ultra 5"
+        "value": "Intel Core Ultra 5 226V (do 4,5 GHz); opcje producenta: Core Ultra 5 236V vPro Enterprise, Core Ultra 7 256V, 258V, 266V vPro Enterprise, 268V vPro Enterprise; w ofercie Core Ultra 5"
       },
       {
         "name": "Grafika i NPU",
@@ -1509,7 +1510,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Wytrzymałość",
-        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje; opcja: odporność na mgłę solną"
+        "value": "MIL-STD-810H, MIL-STD-461G (z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno); odporność na wibracje; opcja: odporność na mgłę solną"
       },
       {
         "name": "Odporność na upadki",
@@ -1549,7 +1550,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Part Number",
-        "value": "FW1764WI1DXX, FW17641I1DXX, FW17641I1DZX, FW17641I1DIX, FW17641I1DLX, FW17641I16IX, FW17641I16LX, FW17641I1MXX, FW17642I1MXX, FW17641I1MLA, FW17641I1BXX, FW1764GI1BXX"
+        "value": "FW1764WI1DXX, FW17641I1DZX, FW17641I1DIX, FW17641I1DLX, FW17641I16IX, FW17641I16LX, FW17641I1MXX, FW17642I1MXX, FW17641I1MLA, FW17641I1BXX, FW1764GI1BXX"
       }
     ],
     "applications": [
@@ -1563,15 +1564,6 @@ export const getacTabletProducts: Product[] = [
         "partNumber": "FW1764WI1DXX",
         "name": "F120 — Core Ultra 5, Wi-Fi",
         "priceFrom": 12629.42,
-        "availability": "available",
-        "attributes": {
-          "Łączność": "Wi-Fi"
-        }
-      },
-      {
-        "partNumber": "FW17641I1DXX",
-        "name": "F120 — Core Ultra 5, Wi-Fi · FW17641I1DXX",
-        "priceFrom": 12707.03,
         "availability": "available",
         "attributes": {
           "Łączność": "Wi-Fi"
@@ -1666,14 +1658,11 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "partNumber": "FW17641I1BXX",
-        "name": "F120 — Core Ultra 5, 5G, GPS, digitizer, pasek na rękę, złącza anten zewnętrznych",
+        "name": "F120 — Core Ultra 5, 5G, GPS",
         "priceFrom": 15562.13,
         "availability": "unavailable",
         "attributes": {
-          "Łączność": "5G, GPS",
-          "Digitizer": "Tak",
-          "Pasek na rękę": "W zestawie",
-          "Antena zewnętrzna": "Tak"
+          "Łączność": "5G, GPS"
         }
       },
       {
@@ -1707,7 +1696,8 @@ export const getacTabletProducts: Product[] = [
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-rysik-pojemnosciowy-gmpsxw"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1737,7 +1727,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "W jakiej temperaturze pracuje Getac F120?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikat MIL-STD-810H oraz wytrzymuje upadek z 1,8 m."
       },
       {
         "question": "Czy do Getac F120 jest klawiatura?",
@@ -1759,7 +1749,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac K120 G3 12,5″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac K120 G3 12,5″, Windows 11 Pro, LAN, 2 baterie hot-swap. Tablet rugged Getac K120. K120 Getac PN: KTA164V8XKXX, KTA164V8X4XX.",
     "shortDescription": "Getac K120 G3 — tablet fully rugged 12,5″ z Windows 11 Pro, procesorem Intel Core 13. generacji, ekranem 1200 nitów, portem LAN i 2 bateriami wymienianymi bez wyłączania. Klawiatura odpinana lub ze stacją jako akcesorium.",
-    "description": "Getac K120 G3 to tablet przemysłowy z ekranem 12,5 cala i systemem Windows 11 Pro. Z klawiaturą odpinaną albo klawiaturą ze stacją pracuje jak laptop. Klawiatury sprzedaje się osobno. Obudowa ma masę 1,7 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2100 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 3450 mAh. Każda wersja ma port LAN, 2 porty Thunderbolt 4, port USB-A, Wi-Fi 6E i złącza anten zewnętrznych.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS i digitizerem. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTablet bez klawiatury z ekranem 12,2 cala i procesorem Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "description": "Getac K120 G3 to tablet przemysłowy z ekranem 12,5 cala i systemem Windows 11 Pro. Z klawiaturą odpinaną albo klawiaturą ze stacją pracuje jak laptop. Klawiatury sprzedaje się osobno. Obudowa ma masę 1,7 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga wersji z gniazdem DC i zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2100 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 3450 mAh. Każda wersja ma port LAN, 2 porty Thunderbolt 4, port USB-A, Wi-Fi 6E i złącza anten zewnętrznych.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS i digitizerem. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTablet bez klawiatury z ekranem 12,2 cala i procesorem Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -1800,7 +1790,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Procesor",
-        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje producenta: Core i5-1345U vPro, Core i7-1355U, Core i7-1365U vPro; w tej karcie Core i5 i Core i7, zależnie od PN"
+        "value": "Intel Core i5-1335U (do 4,6 GHz); opcje producenta: Core i5-1345U vPro, Core i7-1355U, Core i7-1365U vPro; w ofercie Core i5 i Core i7, zależnie od PN"
       },
       {
         "name": "Grafika",
@@ -1868,7 +1858,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Wytrzymałość",
-        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje"
+        "value": "MIL-STD-810H, MIL-STD-461G (wersja z gniazdem DC, z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno); odporność na wibracje"
       },
       {
         "name": "Odporność na upadki",
@@ -1900,7 +1890,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Tablet, 2 baterie 2100 mAh, zasilacz 65 W, przewód zasilający (EU, UK), rysik pojemnościowy z linką; bez klawiatury"
+        "value": "Tablet, 2 baterie 2100 mAh, zasilacz USB-C 65 W (wersje z gniazdem DC: zasilacz 65 W z wtykiem DC), przewód zasilający (EU, UK), rysik pojemnościowy z linką; bez klawiatury"
       },
       {
         "name": "Gwarancja",
@@ -2003,7 +1993,8 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcef",
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx7"
+      "getac-torba-gmbcx7",
+      "getac-rysik-pojemnosciowy-gmpsxn"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -2033,7 +2024,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "W jakiej temperaturze pracuje Getac K120 G3?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikaty MIL-STD-810H i MIL-STD-461G oraz wytrzymuje upadek z 1,8 m."
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP66, certyfikat MIL-STD-810H oraz wytrzymuje upadek z 1,8 m."
       },
       {
         "question": "Czy Getac K120 G3 można zamontować w pojeździe?",
@@ -2055,7 +2046,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac G140 14″ z AMD Ryzen AI, IP66",
     "seoDescription": "Tablet przemysłowy Getac G140 14″, Windows 11 Pro, AMD Ryzen AI, Wi-Fi 7, IP66. Tablet rugged Getac G140 z LAN. G140 Getac PN: GX2764WI1DXX, GX6776WI1DXX.",
     "shortDescription": "Getac G140 — tablet fully rugged 14″ z Windows 11 Pro (Copilot+ PC), procesorem AMD Ryzen AI, Wi-Fi 7, portem LAN i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID.",
-    "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje z tej karty mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -2074,7 +2065,7 @@ export const getacTabletProducts: Product[] = [
       "Getac G140 — widok z przodu, ekran 14 cali w poziomie i przyciski pod ekranem",
       "Getac G140 — widok z przodu pod kątem, z lewej strony",
       "Getac G140 — widok z przodu pod kątem, z prawej strony",
-      "Getac G140 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+      "Getac G140 — widok z dołu pod kątem, złącze dokujące i złącza anten zewnętrznych (w wersjach ze złączami RF)"
     ],
     "tags": [
       "produkcja",
@@ -2114,7 +2105,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Ekran dotykowy",
-        "value": "Pojemnościowy multi-touch ze Smart Touch (palec, rękawica, rysik bez przełączania trybu); opcja: tryb podwójny z digitizerem"
+        "value": "Pojemnościowy multi-touch ze Smart Touch (palec, rękawica, rysik bez przełączania trybu); tryb podwójny z digitizerem tylko w konfiguracjach na zamówienie"
       },
       {
         "name": "Przyciski",
@@ -2135,6 +2126,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Łączność komórkowa",
         "value": "Opcja: 4G LTE albo 5G Sub-6 ze zintegrowanym GPS; nano-SIM i eSIM, zależnie od PN"
+      },
+      {
+        "name": "GPS",
+        "value": "W modułach 4G LTE i 5G; opcja: dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS)"
       },
       {
         "name": "HF RFID",
@@ -2170,7 +2165,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Wytrzymałość",
-        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje"
+        "value": "MIL-STD-810H, MIL-STD-461G (z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno); odporność na wibracje"
       },
       {
         "name": "Odporność na upadki",
@@ -2365,9 +2360,9 @@ export const getacTabletProducts: Product[] = [
     ],
     "variantAttributeTooltips": {
       "Procesor": "Procesor AMD Ryzen AI z układem NPU AMD XDNA 2 (do 50 TOPS).\n\n• Ryzen AI 5 340 — 6 rdzeni, grafika Radeon 840M.\n\n• Ryzen AI 7 350 — 8 rdzeni, grafika Radeon 860M.",
-      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.\n\n• RAM: 16 albo 32 GB.\n\n• SSD: 256 GB, 512 GB albo 1 TB.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja G140 ma Wi-Fi 7, Bluetooth 5.4 i port LAN.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych, podłączanych przez stację pojazdową w wersji ze złączami RF.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
       "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
       "HF RFID": "Czytnik HF RFID/NFC 13,56 MHz w górnym gnieździe.\n\n• Karty iClass, HID Prox, ISO 15693, ISO 14443 A/B, Mifare i FeliCa."
     },
@@ -2379,8 +2374,8 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcet",
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
-      "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx7"
+      "getac-torba-gmbcx7",
+      "getac-rysik-pojemnosciowy-gmpsxw"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -2402,7 +2397,7 @@ export const getacTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Z jakiej wysokości Getac G140 wytrzymuje upadek?",
-        "answer": "Z 1,2 m. Tablet ma klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Mniejsze tablety Getac z Windows, np. <a href=\"/produkt/getac-f120\">F120</a> i <a href=\"/produkt/getac-k120-g3\">K120 G3</a>, wytrzymują upadek z 1,8 m."
+        "answer": "Z 1,2 m. Tablet ma klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Mniejsze tablety Getac z Windows, np. <a href=\"/produkt/getac-f120\">F120</a> i <a href=\"/produkt/getac-k120-g3\">K120 G3</a>, wytrzymują upadek z 1,8 m."
       },
       {
         "question": "Jak wymienia się baterie w Getac G140?",
@@ -2427,8 +2422,8 @@ export const getacTabletProducts: Product[] = [
     "seoH1": "Getac ZX80W",
     "seoTitle": "Tablet przemysłowy Getac ZX80W 8″ z Windows 11 IoT, IP67",
     "seoDescription": "Tablet przemysłowy Getac ZX80W 8″, Windows 11 IoT Enterprise LTSC, IP67, GPS. Tablet rugged Getac ZX80W z 4G. ZX80W Getac PN: Z8A7WXWB1AXX, Z8A7WXGI2AXX.",
-    "shortDescription": "Getac ZX80W — tablet fully rugged 8″ z Windows 11 IoT Enterprise LTSC, procesorem Qualcomm QCS6490, klasą IP67, GPS i baterią wymienianą bez wyłączania. Wszystkie wersje z digitizerem; Wi-Fi 6E albo 4G LTE.",
-    "description": "Getac ZX80W to tablet przemysłowy z ekranem 8 cali i systemem Windows 11 IoT Enterprise LTSC. Służy do pracy z programami Windows w terenie, w pojazdach i w magazynie, gdy potrzebne jest małe i lekkie urządzenie. Obudowa ma masę 590 g, klasę szczelności IP67 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Wersje z tej karty mają ekran z digitizerem. Procesor Qualcomm QCS6490 pracuje z 12 GB RAM i pamięcią 256 GB UFS. Każda wersja ma dedykowany GPS L1/L5.\n\nTablet ma wewnętrzną baterię 4060 mAh i kieszeń na baterię wymienną. Baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). W kieszeni pracuje bateria 4990 mAh albo 9980 mAh.\n\nKonfiguracje różnią się łącznością Wi-Fi 6E albo 4G LTE, wyposażeniem kieszeni baterii i złączami anten zewnętrznych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTę samą obudowę z Androidem 15 ma [Getac ZX80](/produkt/getac-zx80).",
+    "shortDescription": "Getac ZX80W — tablet fully rugged 8″ z Windows 11 IoT Enterprise LTSC, procesorem Qualcomm QCS6490, klasą IP67 i GPS. Ma kieszeń na baterię wymienianą bez wyłączania: wersje Z8A7WXGI2AXX i Z8A7WXGI2GXX mają w niej baterię, wersje Z8A7WXWB1AXX i Z8A7WXWB17XX zaślepkę. Wszystkie wersje mają digitizer i Wi-Fi 6E; wybrana wersja ma też 4G LTE.",
+    "description": "Getac ZX80W to tablet przemysłowy z ekranem 8 cali i systemem Windows 11 IoT Enterprise LTSC. Służy do pracy z programami Windows w terenie, w pojazdach i w magazynie, gdy potrzebne jest małe i lekkie urządzenie. Obudowa ma masę 590 g, klasę szczelności IP67 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Wszystkie wersje w ofercie mają ekran z digitizerem. Procesor Qualcomm QCS6490 pracuje z 12 GB RAM i pamięcią 256 GB UFS. Każda wersja ma dedykowany GPS L1/L5.\n\nTablet ma wewnętrzną baterię 4060 mAh i kieszeń na baterię wymienną. Baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). W kieszeni pracuje bateria 4990 mAh albo 9980 mAh.\n\nKażda wersja ma Wi-Fi 6E; wybrana wersja ma też 4G LTE. Konfiguracje różnią się też wyposażeniem kieszeni baterii i złączami anten zewnętrznych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTę samą obudowę z Androidem 15 ma [Getac ZX80](/produkt/getac-zx80).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -2449,7 +2444,7 @@ export const getacTabletProducts: Product[] = [
       "Getac ZX80W — widok z przodu pod kątem, z lewej strony",
       "Getac ZX80W — widok z przodu pod kątem, z prawej strony",
       "Getac ZX80W — tył obudowy z aparatem",
-      "Getac ZX80W — widok z dołu pod kątem, złącza na dolnej krawędzi"
+      "Getac ZX80W — widok z dołu pod kątem, złącze dokujące i złącza anten zewnętrznych (w wersjach ze złączami RF)"
     ],
     "tags": [
       "magazyn",
@@ -2477,7 +2472,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Ekran dotykowy",
-        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; w wersjach z tej karty tryb podwójny z digitizerem"
+        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; we wszystkich wersjach w ofercie tryb podwójny z digitizerem"
       },
       {
         "name": "Przyciski",
@@ -2510,6 +2505,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Aparaty",
         "value": "Tylny 16 MP z autofokusem, przedni 8 MP"
+      },
+      {
+        "name": "Audio",
+        "value": "Wbudowane głośniki, mikrofon dwuelementowy (dual-array)"
       },
       {
         "name": "Zabezpieczenia",
@@ -2561,7 +2560,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Tablet, zasilacz, przewód zasilający"
+        "value": "Z8A7WXGI2AXX, Z8A7WXGI2GXX: tablet z baterią wymienną w kieszeni, zasilacz, przewód zasilający (EU, UK). Z8A7WXWB1AXX, Z8A7WXWB17XX: tablet z zaślepką kieszeni baterii, zasilacz, przewód zasilający (EU), rysik"
       },
       {
         "name": "Gwarancja",
@@ -2624,7 +2623,7 @@ export const getacTabletProducts: Product[] = [
     "variantAttributeTooltips": {
       "Łączność": "Sposób połączenia z siecią. Każda wersja ZX80W ma Wi-Fi 6E, Bluetooth 5.2 i dedykowany GPS L1/L5.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
       "Kieszeń baterii": "Wyposażenie kieszeni na baterię wymienną. Tablet zawsze ma wewnętrzną baterię 4060 mAh.\n\n• Zaślepka — baterię 4990 mAh albo 9980 mAh dokupuje się osobno.\n\n• Bateria wymienna — wymiana bez wyłączania tabletu.",
-      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Antenę pojazdu podłącza się przez stację pojazdową ze złączami RF."
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych, podłączanych przez stację pojazdową w wersji ze złączami RF.\n\n• Złącza anten GPS, WWAN i WLAN."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2667,7 +2666,7 @@ export const getacTabletProducts: Product[] = [
       },
       {
         "question": "Czy akcesoria ZX80 pasują do ZX80W?",
-        "answer": "Tak, dla akcesoriów z tej karty. Baterie GBM1XA i GBM2XA, stacja biurkowa GDODXC, ładowarka GCMCEM, pióro GMPDX7, pasek GMHRXL i torba GMBCX3 są przeznaczone dla obu modeli."
+        "answer": "Tak. Baterie GBM1XA i GBM2XA, stacja biurkowa GDODXC, ładowarka GCMCEM, pióro digitizer GMPDX7, pasek GMHRXL i torba GMBCX3 pasują do obu modeli. Do obu pasuje też zasilacz USB-C 65 W GAT6E1."
       }
     ],
     "createdAt": "2026-10-23",
