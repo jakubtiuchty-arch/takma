@@ -12,8 +12,8 @@ export const posCategoryContent: SubcategoryRichContent = {
     "groups": [
       {
         "name": "Paragonowe 58 i 80 mm",
-        "use": "Paragony niefiskalne, bony i bilety przy kasie w sklepie, punkcie usługowym i lokalu gastronomicznym",
-        "typical": "160–300 mm/s; papier 58 lub 80 mm; USB, a zależnie od PN lub karty interfejsu także RS-232, Ethernet, Wi-Fi lub Bluetooth",
+        "use": "Paragony i bony przy kasie w sklepie, punkcie usługowym i lokalu",
+        "typical": "160–300 mm/s · papier 58 lub 80 mm · USB; opcje: RS-232, Ethernet, Wi-Fi, Bluetooth",
         "models": [
           {
             "name": "BIXOLON SRP-330III",
@@ -71,8 +71,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Szybkie paragonowe 80 mm",
-        "use": "Kasy o dużym ruchu w handlu, restauracje szybkiej obsługi i bony w kuchni",
-        "typical": "350–500 mm/s; papier 80 mm, zależnie od modelu także 58 lub 83 mm; USB, a zależnie od PN lub karty interfejsu także Ethernet, RS-232, Wi-Fi, Bluetooth lub PoweredUSB",
+        "use": "Duży ruch: handel, szybka obsługa, bony w kuchni",
+        "typical": "350–500 mm/s · papier 80 mm, w części modeli także 58 lub 83 mm · USB; opcje: Ethernet, RS-232, Wi-Fi, Bluetooth",
         "models": [
           {
             "name": "BIXOLON SRP-350plusV",
@@ -114,8 +114,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Paragony i etykiety",
-        "use": "Paragony i etykiety na podkładzie z jednej drukarki, np. do oznaczania produktów, porcji i zamówień",
-        "typical": "150–300 mm/s, etykiety 150–200 mm/s; materiał 30–80 mm, w CT-S4500 do 112 mm; USB, a zależnie od PN lub karty interfejsu także Ethernet, RS-232, Wi-Fi lub Bluetooth",
+        "use": "Paragony i etykiety na podkładzie z jednej drukarki",
+        "typical": "150–300 mm/s · materiał 30–80 mm, w CT-S4500 do 112 mm · czujnik etykiet",
         "models": [
           {
             "name": "Citizen CT-E651L",
@@ -141,8 +141,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Etykiety bez podkładu (linerless)",
-        "use": "Etykiety na torby i opakowania zamówień na wynos, w dostawie i do odbioru, bez odpadu z podkładu",
-        "typical": "150–180 mm/s; materiał 80 mm, zależnie od modelu także węższy, w CT-S601IIR 80 lub 83 mm; USB, RS-232, Ethernet, Wi-Fi lub Bluetooth zależnie od PN, w CT-S601IIR przez kartę interfejsu",
+        "use": "Etykiety na zamówienia na wynos i w dostawie, bez odpadu z podkładu",
+        "typical": "150–180 mm/s · materiał 30–83 mm zależnie od modelu · etykiety liner-free",
         "models": [
           {
             "name": "BIXOLON SRP-S300II",
@@ -168,8 +168,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Szerokie 112 mm",
-        "use": "Paragony i dokumenty na papierze 112 mm zamiast wydruku A4, bilety, kupony i etykiety",
-        "typical": "Do 200 mm/s; papier 58–112 mm, szerokość druku do 104 mm; sterownik skaluje dokumenty A4 do szerokości 4 cali; USB, karta interfejsu lub Bluetooth",
+        "use": "Dokumenty i bilety na papierze 112 mm zamiast wydruku A4",
+        "typical": "do 200 mm/s · papier 58–112 mm · skalowanie dokumentów A4",
         "models": [
           {
             "name": "Citizen CT-S4500",
@@ -179,8 +179,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Igłowe",
-        "use": "Bony w kuchni na zwykłym papierze, także w dwóch kolorach (TM-U220IIB, TM-U220IID); nadruk na pojedynczych formularzach i kwitach (TM-U295, drukarka slipów)",
-        "typical": "Zwykły papier i kaseta barwiąca; TM-U220IIB i TM-U220IID: rolka 57,5, 69,5 lub 76 mm, 4,7 wiersza/s; TM-U295: pojedyncze formularze, druk do 65 mm, do 2,1 wiersza/s",
+        "use": "Bony w kuchni na zwykłym papierze, formularze i kwity",
+        "typical": "druk igłowy · zwykły papier i kaseta barwiąca · do 4,7 wiersza/s",
         "models": [
           {
             "name": "Epson TM-U220IIB",
@@ -198,8 +198,8 @@ export const posCategoryContent: SubcategoryRichContent = {
       },
       {
         "name": "Atramentowe i hybrydowe",
-        "use": "Paragony z rolki oraz formularze, kupony i potwierdzenia na pojedynczych arkuszach z jednej drukarki",
-        "typical": "TM-J7200 i TM-J7700: druk atramentowy, rolka 58–83 mm do 98 mm/s, arkusze 68–230 × 68–297 mm; TM-H6000VI: termiczne paragony 80 mm do 500 mm/s i igłowy druk formularzy, MICR zależnie od PN; USB i Ethernet w każdym modelu",
+        "use": "Paragony z rolki i formularze na arkuszach z jednej drukarki",
+        "typical": "druk atramentowy do 98 mm/s albo termiczno-igłowy · rolka do 83 mm i arkusze · USB i Ethernet",
         "models": [
           {
             "name": "Epson TM-H6000VI",
