@@ -20,7 +20,7 @@ interface SmartPriceProps {
 /** Kategorie urządzeń — tooltip "oferta projektowa" wyświetlany tylko dla nich */
 const DEVICE_CATEGORIES = new Set([
   'drukarki-etykiet', 'drukarki-kart', 'drukarki-opasek',
-  'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety-przemyslowe',
+  'terminale-mobilne', 'skanery-kodow-kreskowych', 'tablety-przemyslowe', 'laptopy-przemyslowe',
 ])
 
 export default function SmartPrice({ product, badge }: SmartPriceProps) {

@@ -2035,6 +2035,31 @@ categoryFilters['akcesoria-do-kioskow'] = [
   ] }
 ]
 
+// Laptopy przemysłowe Getac: łączność komórkowa zależy od PN, więc model z wersjami z 4G/5G i bez trafia do obu grup.
+categoryFilters['laptopy-przemyslowe'] = [
+  { specKey: 'klasa-laptop', label: 'Klasa odporności', derived: [
+    { value: 'Fully rugged (IP66)', pattern: 'IP66', specs: ['Klasa ochrony'] },
+    { value: 'Rugged (IP53)', pattern: 'IP53', specs: ['Klasa ochrony'] }
+  ] },
+  { specKey: 'ekran-laptop', label: 'Przekątna ekranu', derived: [
+    { value: '12,2–13,3"', pattern: '^1[23][,.][0-9]\\s*["″]', specs: ['Wyświetlacz'] },
+    { value: '14"', pattern: '^14\\s*["″]', specs: ['Wyświetlacz'] },
+    { value: '15,6"', pattern: '^15[,.]6\\s*["″]', specs: ['Wyświetlacz'] }
+  ] },
+  { specKey: 'procesor-laptop', label: 'Procesor', derived: [
+    { value: 'Intel', pattern: '^Intel', specs: ['Procesor'] },
+    { value: 'AMD', pattern: '^AMD', specs: ['Procesor'] }
+  ] },
+  { specKey: 'wwan-laptop', label: 'Łączność komórkowa', derived: [
+    { value: 'Tak (4G LTE lub 5G)', slugs: ['getac-b360', 'getac-s410-g5', 'getac-s510'] },
+    { value: 'Nie (Wi-Fi)', slugs: ['getac-b360', 'getac-v120', 'getac-s410-g5', 'getac-s510', 'getac-s510ad'] }
+  ] },
+  { specKey: 'cena-laptop', label: 'Cena netto', derived: [
+    { value: 'do 12 000 zł', priceMax: 12000 },
+    { value: 'powyżej 12 000 zł', priceMin: 12000 }
+  ] }
+]
+
 categoryFilters['terminale-cipherlab'] = [
   { specKey: 'System operacyjny', label: 'System operacyjny', description: 'Android uruchamia zgodne aplikacje mobilne. cOS to system do aplikacji zadaniowych tworzonych np. w Forge Application Generator; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
   { specKey: 'forma-cipherlab', label: 'Rodzaj terminala', derived: [{value: 'Dotykowy', slugs: ['cipherlab-rs20','cipherlab-rs36','cipherlab-rs38','cipherlab-rs38h']}, {value: 'Z klawiaturą', slugs: ['cipherlab-rk26','cipherlab-rk96','cipherlab-rk96-cold-storage','cipherlab-8000','cipherlab-8200','cipherlab-8300','cipherlab-8600']}] },
@@ -2103,6 +2128,13 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Zgodny kiosk": "Kiosk, do którego pasuje akcesorium.\n• SUNMI FLEX 3 — stojaki, moduły, kamera i uchwyt POS; zgodne rozmiary podaje filtr „Zgodny rozmiar”.\n• Zebra KC401 — moduły skanera, uchwyty i zasilanie; uchwyty Zebra pasują także do CC6000.",
     "Zgodny rozmiar": "Rozmiar ekranu SUNMI FLEX 3, do którego pasuje akcesorium. Stojaki Retail pasują tylko do ekranu 22\". Zgodność z wersją 15,6\" prosimy potwierdzić przed zamówieniem."
   },
+  "laptopy-przemyslowe": {
+    "Klasa odporności": "Odporność obudowy laptopa.\n• Fully rugged (IP66) — ochrona przed pyłem i silnymi strumieniami wody, upadek z 1,2–1,8 m, gwarancja 3 lata Bumper-to-Bumper z przypadkowymi uszkodzeniami.\n• Rugged (IP53) — ochrona przed pyłem i natryskiem wody, upadek z 0,9 m, gwarancja 3 lata bez przypadkowych uszkodzeń.",
+    "Przekątna ekranu": "Przekątna ekranu laptopa.\n• 12,2–13,3\" — mniejsza obudowa: 302 × 224 mm (V120) albo 342 × 281 mm (B360).\n• 14\" i 15,6\" — większy ekran: obudowa 350 × 293 mm (S410 G5) albo 375 × 277 mm (S510, S510AD).",
+    "Procesor": "Producent procesora.\n• Intel — Core Ultra (z układem NPU Intel AI Boost) albo Core i5/i7 13. generacji.\n• AMD — Ryzen AI 300 z układem NPU AMD XDNA 2 do 50 TOPS; laptop jest komputerem Copilot+ PC.",
+    "Łączność komórkowa": "Modem 4G LTE albo 5G z GPS do pracy poza zasięgiem Wi-Fi. Model trafia do obu grup, gdy w ofercie są wersje z modemem i bez modemu. Wersję wybiera się w tabeli na karcie produktu.",
+    "Cena netto": "Cena netto najtańszej wersji w ofercie. Ceny pozostałych wersji podaje tabela na karcie produktu."
+  },
   "akcesoria-do-komputerow-pos": {
     "Rodzaj akcesorium": "Wyposażenie stanowiska kasowego.\n• Ekran klienta — drugi ekran od strony klienta, montowany z tyłu komputera.\n• Szuflada kasowa — otwiera się sygnałem z portu szuflady.\n• Zasilacz i prowadnica papieru — części zamienne i dodatkowe.",
     "Zgodny komputer": "Model, z którym akcesorium współpracuje. Ekrany klienta do T3 i do T3 PRO nie są zamienne. Ekran C02020005 pasuje tylko do D3 PRO. Prowadnica papieru 58 mm pasuje tylko do T3 80 mm, bo T3 nie ma drukarki."
@@ -2111,7 +2143,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Materiał": "Rodzaj materiału do drukowania w terenie.\n• Papier termiczny — potwierdzenia bez taśmy barwiącej.\n• Linerless — etykiety bez podkładu; wymagają przystosowanego modelu i zgodnego kleju."
   }
 }
-for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "ekrany-kds", "akcesoria-do-ekranow-kds", "kioski-samoobslugowe", "akcesoria-do-kioskow", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
+for (const category of ["drukarki-etykiet-bixolon", "drukarki-pos", "komputery-pos", "akcesoria-do-komputerow-pos", "ekrany-kds", "akcesoria-do-ekranow-kds", "kioski-samoobslugowe", "akcesoria-do-kioskow", "laptopy-przemyslowe", "mobilne-drukarki-paragonow", "drukarki-rfid", "etykiety-rfid-zebra", "terminale-rfid", "uchwyty-rfid", "terminale-cipherlab", "skanery-datalogic"]) {
   categoryFilters[category] = (categoryFilters[category] ?? []).map(filter => ({
     ...filter,
     description: categorySpecificHelp[category]?.[filter.label] ?? catalogFilterHelp[filter.label] ?? filter.description,

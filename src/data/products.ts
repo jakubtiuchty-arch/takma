@@ -26,6 +26,7 @@ import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
+import { getacLaptopProducts, getacLaptopAccessories } from './getac-laptop-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
 import { bixolonRfidAccessories } from './bixolon-rfid-products'
@@ -358,6 +359,18 @@ export const categories: Category[] = [
     longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–2,4 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety czterech producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A) oraz [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7. Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
     productCount: 7,
+  },
+  {
+    id: 'laptopy-przemyslowe',
+    slug: 'laptopy-przemyslowe',
+    name: 'Laptopy przemysłowe',
+    h1: 'Laptopy przemysłowe rugged',
+    description: 'Wzmocnione laptopy przemysłowe z Windows 11 Pro do pracy w terenie, w pojazdach, na produkcji i w magazynie: fully rugged (IP66) i rugged (IP53)',
+    seoTitle: 'Laptopy przemysłowe — rugged Getac z Windows 11',
+    seoDescription: 'Laptop przemysłowy Getac B360, V120, S410, S510 i S510AD. Laptop rugged, laptop wzmocniony z Windows 11 Pro, IP53 lub IP66, MIL-STD-810H. Ceny netto.',
+    longDescription: 'Laptop przemysłowy (rugged) to komputer przenośny z systemem Windows w obudowie odpornej na upadki, wibracje, pył i wodę. Ma ekran czytelny w słońcu. Laptopy w ofercie pracują w temperaturze od −29°C do +63°C. Używa się ich w serwisie w terenie, w pojazdach, na produkcji, w magazynie i w służbach. Laptop współpracuje ze stacjami dokującymi, stacjami pojazdowymi oraz czytnikami kodów i kart. Laptop fully rugged ma klasę szczelności IP66 i wytrzymuje upadek z 1,2–1,8 m. Laptop rugged ma klasę IP53 i wytrzymuje upadek z 0,9 m. Urządzenia bez klawiatury są w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
+    icon: 'laptop',
+    productCount: 5,
   },
   {
     id: 'materialy-eksploatacyjne',
@@ -95805,6 +95818,8 @@ const rawProductList: Product[] = [
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,
+  ...getacLaptopProducts,
+  ...getacLaptopAccessories,
   ...rfidLabelProducts,
   ...desktopPrinters,
   ...rfidPrinterProducts,

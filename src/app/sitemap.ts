@@ -53,6 +53,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/terminale-mobilne`, lastModified: lastUpdated },
     { url: `${baseUrl}/skanery-kodow-kreskowych`, lastModified: lastUpdated },
     { url: `${baseUrl}/tablety-przemyslowe`, lastModified: lastUpdated },
+    { url: `${baseUrl}/laptopy-przemyslowe`, lastModified: new Date('2026-10-23') },
     { url: `${baseUrl}/o-nas`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/kontakt`, lastModified: new Date('2025-12-01') },
     { url: `${baseUrl}/serwis`, lastModified: lastUpdated },

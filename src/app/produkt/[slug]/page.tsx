@@ -258,6 +258,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const kioskDisplay = product.categoryId === 'kioski-samoobslugowe'
   // Tablety przemysłowe (Zebra ET, Honeywell, Brady, Getac) — własny opis filmów i nagłówek sekcji filmów.
   const industrialTablet = product.categoryId === 'tablety-przemyslowe'
+  // Laptopy przemysłowe (Getac) — galeria i ceny jak tablety Getac; własny tytuł podobnych i opis filmów.
+  const industrialLaptop = product.categoryId === 'laptopy-przemyslowe'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
   const rfidTextLinks = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || product.id.startsWith('citizen-pos-') || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
@@ -449,10 +451,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     : posComputer ? 'Podobne komputery POS'
     : kdsDisplay ? 'Podobne ekrany KDS'
     : kioskDisplay ? 'Podobne kioski'
+    : industrialLaptop ? 'Podobne laptopy'
     : product.categoryId === 'skanery-kodow' ? 'Podobne skanery'
     : 'Podobne produkty'
 
-  const isDevice = ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'komputery-pos', 'ekrany-kds', 'kioski-samoobslugowe', 'skanery-kodow-kreskowych', 'tablety-przemyslowe'].includes(product.categoryId)
+  const isDevice = ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos', 'drukarki-kart', 'drukarki-opasek', 'terminale-mobilne', 'komputery-pos', 'ekrany-kds', 'kioski-samoobslugowe', 'laptopy-przemyslowe', 'skanery-kodow-kreskowych', 'tablety-przemyslowe'].includes(product.categoryId)
 
   // JSON-LD: Product schema
   const availabilitySchemaMap = {
@@ -594,7 +597,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
         name: `${tytul} — ${product.name}`,
-        description: `${tytul}: instruktaż producenta ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : industrialTablet ? 'dla tabletu ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+        description: `${tytul}: instruktaż producenta ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : industrialTablet ? 'dla tabletu ' : industrialLaptop ? 'dla laptopa ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
         ...(miniatura ? { thumbnailUrl: [miniatura] } : {}),
         // Google odrzuca VideoObject, gdy embedUrl wskazuje stronę oglądania zamiast odtwarzacza.
         embedUrl: serwis === 'youtube'
@@ -611,7 +614,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     '@type': 'VideoObject',
     name: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')} — ${product.name}`,
     // „dla drukarki X” tylko przy urządzeniach — przy taśmie czy kartach wychodziło „dla drukarki Taśma…”
-    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: ${v.native ? 'film producenta z polskim lektorem i napisami' : 'instruktaż producenta'} ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : industrialTablet ? 'dla tabletu ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
+    description: `${v.title.replace(/\s*·\s*\d+:\d{2}\s*$/, '')}: ${v.native ? 'film producenta z polskim lektorem i napisami' : 'instruktaż producenta'} ${posComputer ? 'dla komputera POS ' : kdsDisplay ? 'dla ekranu KDS ' : kioskDisplay ? 'dla kiosku ' : industrialTablet ? 'dla tabletu ' : industrialLaptop ? 'dla laptopa ' : isDevice ? 'dla drukarki ' : 'do produktu '}${product.name}.`,
     thumbnailUrl: [`https://www.takma.com.pl${v.poster}`],
     contentUrl: v.url,
     uploadDate: v.published,

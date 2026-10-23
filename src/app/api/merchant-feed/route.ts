@@ -110,12 +110,14 @@ interface StockRow {
 }
 
 /** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet,
- *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS i kioski samoobsługowe SUNMI i Zebra). */
+ *  543648 = Terminale POS (komputery POS z ekranem dotykowym; także ekrany KDS i kioski samoobsługowe SUNMI i Zebra),
+ *  328 = Elektronika > Komputery > Laptopy. */
 const GOOGLE_CATEGORY: Record<string, string> = {
   'drukarki-etykiet': '952',
   'komputery-pos': '543648',
   'ekrany-kds': '543648',
   'kioski-samoobslugowe': '543648',
+  'laptopy-przemyslowe': '328',
 }
 
 /** Terminal z wbudowaną drukarką (SUNMI V3, V3H, V3 Plus) to dla kupujących terminal POS;
@@ -150,6 +152,8 @@ function typUrzadzenia(product: Product): string | null {
       return /ekran/i.test(product.name) ? null : 'Ekran KDS'
     case 'kioski-samoobslugowe':
       return /kiosk/i.test(product.name) ? null : 'Kiosk samoobsługowy'
+    case 'laptopy-przemyslowe':
+      return /laptop|notebook/i.test(product.name) ? null : 'Laptop przemysłowy'
     default:
       return null
   }
