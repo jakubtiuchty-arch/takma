@@ -1226,10 +1226,12 @@ export const bluebirdProducts: Product[] = [
     "priceFrom": 4000.21,
     "availability": "unavailable",
     "images": [
-      "/images/products/S10-ANLJRW.png"
+      "/images/products/S10-ANLJRW.png",
+      "/images/products/S10-ANLJRW-2.png"
     ],
     "imageDescriptions": [
-      "Bluebird S10 RFID — widok pod kątem, uchwyt pistoletowy z czytnikiem UHF RFID"
+      "Bluebird S10 RFID — widok z przodu pod kątem: ekran, okno skanera i antena UHF RFID w uchwycie pistoletowym",
+      "Bluebird S10 RFID — widok z tyłu pod kątem, uchwyt pistoletowy z czytnikiem UHF RFID"
     ],
     "tags": [
       "magazyn",
