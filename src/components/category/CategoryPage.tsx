@@ -39,6 +39,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
   const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+    'skanery-kodow-kreskowych': {
+      src: '/images/skanery-kodow-kreskowych-hero-v5.webp',
+      alt: 'Skanery Zebra DS3678, Datalogic QuickScan QD2590 i Honeywell Granit Ultra 2105i nad linią przesyłek',
+      lead: 'Skanery kodów kreskowych do sklepu, magazynu i na produkcję. Wybierz model przewodowy, bezprzewodowy, prezentacyjny lub pierścieniowy. Dopasuj odczyt kodów 1D i 2D, zasięg oraz odporność do stanowiska pracy.',
+    },
     'tablety-przemyslowe': {
       src: '/images/tablety-przemyslowe-hero-v6.webp',
       alt: 'Tablety przemysłowe Zebra ET65 i Getac F120 w układzie V wśród kruszących się skał',
