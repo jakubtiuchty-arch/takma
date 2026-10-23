@@ -158,10 +158,11 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Praca w terenie i w pojazdach służbowych",
-      "Obsługa obiektów i przeglądy techniczne",
-      "Odczyt kodów w magazynie i logistyce (wersje z czytnikiem)",
-      "Sterowanie dronami (UAV) i analiza danych w terenie"
+      "Sterowanie dronami (UAV)",
+      "Elektroniczna rejestracja czasu pracy kierowców (ELD)",
+      "Praca w kabinie wózka widłowego",
+      "Zarządzanie obiektami (facility management)",
+      "Aplikacje AR (ARCore) z nakładką danych GIS"
     ],
     "variants": [
       {
@@ -502,10 +503,10 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kompletacja i inwentaryzacja w magazynie",
-      "Praca w pojazdach ze stacją pojazdową",
-      "Prace terenowe i przeglądy techniczne",
-      "Stanowisko z klawiaturą i stacją biurkową"
+      "Komunikaty i rozmowy w hałaśliwym magazynie (głośnik 90 dBA)",
+      "Śledzenie zasobów przez NFC lub czytnik kodów (wybrane wersje)",
+      "Zarządzanie koleją i portami",
+      "Instrukcje AR krok po kroku i szkolenia praktyczne"
     ],
     "variants": [
       {
@@ -784,10 +785,10 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Serwis i utrzymanie ruchu na produkcji",
-      "Identyfikacja kart i znaczników HF RFID (wersje z czytnikiem)",
-      "Stanowisko z klawiaturą i stacją biurkową"
+      "Inspekcje termowizyjne z G-Thermo (konfiguracja na zamówienie)",
+      "Pogotowie, straż pożarna i policja",
+      "Analiza danych terenowych w sektorze ropy i gazu",
+      "Zarządzanie flotą w transporcie dalekobieżnym"
     ],
     "variants": [
       {
@@ -1187,10 +1188,11 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Serwis i utrzymanie ruchu na produkcji",
-      "Urządzenia z portem RS-232 w warsztacie i na linii produkcyjnej",
-      "Odczyt kodów i kart HF RFID (wersje z czytnikami)"
+      "Programowanie maszyn i sterowanie robotami na produkcji",
+      "Aplikacje AR/VR czytelne w pełnym słońcu",
+      "Pomiary geodezyjne i kartografia",
+      "Zarządzanie majątkiem w sektorze ropy i gazu",
+      "Tablet współdzielony przez pracowników (dysk SSD wymieniany bez narzędzi)"
     ],
     "variants": [
       {
@@ -1532,10 +1534,9 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Serwis, przeglądy i utrzymanie ruchu",
-      "Urządzenia z portem RS-232 w warsztacie i na produkcji",
-      "Odczyt kodów i kart chipowych (wersje z czytnikami)"
+      "Automatyka fabryczna i monitoring zakładu",
+      "Systemy EAM i CMMS w utrzymaniu ruchu",
+      "Praca w strefie przybrzeżnej (opcja odporności na mgłę solną)"
     ],
     "variants": [
       {
@@ -1872,10 +1873,10 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Tablet i laptop w jednym urządzeniu (z opcjonalną klawiaturą)",
-      "Programy Windows w pojazdach służbowych i w terenie",
-      "Serwis i diagnostyka z portem LAN",
-      "Stanowisko ze stacją biurkową w trybie tabletu lub laptopa"
+      "Serwis terenowy w trybie laptopa, prezentacji lub tabletu z uchwytem",
+      "Dokumentacja zdjęciowa do raportów serwisowych",
+      "Zarządzanie pracą zespołów w energetyce",
+      "Kontrole zgodności i inspekcje w zakładach przemysłowych"
     ],
     "variants": [
       {
@@ -2179,10 +2180,10 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Dokumentacja techniczna, rysunki i mapy na ekranie 14 cali",
-      "Programy Windows w pojazdach służbowych",
-      "Serwis i utrzymanie ruchu na produkcji",
-      "Montaż na stanowisku z uchwytem VESA"
+      "Analiza predykcyjna i decyzje wspierane przez AI",
+      "Komunikacja w hałasie hali produkcyjnej i akcji ratowniczej",
+      "Przeładunek i obsługa materiałów w magazynie",
+      "Zarządzanie majątkiem przedsiębiorstw energetycznych"
     ],
     "variants": [
       {
@@ -2547,10 +2548,10 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Formularze i podpisy z piórem digitizer",
-      "Praca w magazynie z małym urządzeniem 590 g",
-      "Lokalizacja GPS w pracy terenowej"
+      "Pilotowanie dronów w zadaniach obronnych",
+      "Zarządzanie transportem z rejestracją czasu pracy kierowców (ELD)",
+      "Prace terenowe w energetyce i serwisie technicznym",
+      "Mobilny GIS z odbiornikiem GPS L1/L5"
     ],
     "variants": [
       {

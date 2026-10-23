@@ -164,10 +164,10 @@ export const getacLaptopProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w serwisie i w pojazdach służbowych",
-      "Produkcja i utrzymanie ruchu",
-      "Magazyn i logistyka",
-      "Aplikacje AI uruchamiane lokalnie na układzie NPU"
+      "Diagnostyka w czasie rzeczywistym w branży motoryzacyjnej",
+      "Inspekcje infrastruktury w terenie",
+      "Zarządzanie zasobami w odległych lokalizacjach",
+      "Sterowanie głosem i komunikacja wielojęzyczna z AI"
     ],
     "variants": [
       {
@@ -394,10 +394,10 @@ export const getacLaptopProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w serwisie i w pojazdach służbowych",
-      "Produkcja i utrzymanie ruchu",
-      "Magazyn i logistyka",
-      "Urządzenia z portem RS-232 w warsztacie i na produkcji"
+      "Nawigacja dronów i cyfrowe bliźniaki",
+      "Transmisje wideo na żywo i zdalne instruowanie",
+      "Dostęp do baz danych z pojazdu przez antenę zewnętrzną (wersja z 4G LTE)",
+      "Bezpieczeństwo pracy na obiektach energetycznych"
     ],
     "variants": [
       {
@@ -683,10 +683,10 @@ export const getacLaptopProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w serwisie i w pojazdach służbowych",
-      "Produkcja i utrzymanie ruchu",
-      "Urządzenia z portem RS-232 w warsztacie i na produkcji",
-      "Praca poza zasięgiem Wi-Fi (wersje z 4G LTE lub 5G)"
+      "Policja i organy ścigania",
+      "Branża motoryzacyjna",
+      "Odczyt i montaż inteligentnych liczników",
+      "Planowanie pracy zespołów na produkcji"
     ],
     "variants": [
       {
@@ -1081,10 +1081,10 @@ export const getacLaptopProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Służby, wojsko i ochrona infrastruktury",
-      "Serwis, przeglądy i utrzymanie ruchu",
-      "Urządzenia z portem RS-232 w warsztacie i na produkcji"
+      "Montaż i praca w kabinie pojazdu",
+      "Strefy zagrożone wybuchem Class I, Division 2 (na zamówienie)",
+      "Koordynacja projektów i ekip terenowych w czasie rzeczywistym",
+      "Prace serwisowe w deszczu i na mrozie"
     ],
     "variants": [
       {
@@ -1399,10 +1399,10 @@ export const getacLaptopProducts: Product[] = [
       }
     ],
     "applications": [
-      "Programy Windows w terenie i w pojazdach służbowych",
-      "Służby, wojsko i ochrona infrastruktury",
-      "Serwis, przeglądy i utrzymanie ruchu",
-      "Urządzenia z portem RS-232 w warsztacie i w terenie"
+      "Misje wojskowe i zadania o znaczeniu krytycznym",
+      "Kopalnie i gospodarka leśna",
+      "Bezpieczeństwo pracy w sektorze ropy i gazu",
+      "Zarządzanie lotniskami"
     ],
     "variants": [
       {
