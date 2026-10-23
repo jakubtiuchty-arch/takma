@@ -987,7 +987,8 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Czy tablet ma wbudowany czytnik kodów.\n• Wbudowany — skanowanie bez dodatkowego urządzenia; magazyn, inwentaryzacja\n• Bez skanera — tablet do aplikacji i dokumentów; kody przez kamerę lub zewnętrzny skaner',
       derived: [
         { value: 'Wbudowany', pattern: '\\S', specs: ['Skaner', 'Skaner kodów'] },
-        { value: 'Bez skanera', slugs: ['brady-rt710'] },
+        // Getac: czytnik kodów jest opcją części PN, więc model trafia do obu grup.
+        { value: 'Bez skanera', slugs: ['brady-rt710', 'getac-zx80', 'getac-zx10-g2', 'getac-ux10-g5', 'getac-f110-g7', 'getac-f120', 'getac-g140'] },
         { value: 'Bez skanera', notSpecs: ['Skaner', 'Skaner kodów'] },
       ],
     },
