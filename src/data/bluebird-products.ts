@@ -8,9 +8,9 @@ export const bluebirdProducts: Product[] = [
     "name": "Bluebird S20",
     "seoH1": "Bluebird S20",
     "seoTitle": "Terminal mobilny Bluebird S20 6″ z Androidem 13 i 5G",
-    "seoDescription": "Terminal mobilny Bluebird S20 6″, Android 13, Wi-Fi 6E lub 5G. Kolektor danych Bluebird ze skanerem SE4710. S20 Bluebird PN: S20-ANLB, S20-A5LAW.",
+    "seoDescription": "Terminal mobilny Bluebird S20 6″, Android 13, Wi-Fi 6E, opcja 5G. Kolektor danych Bluebird ze skanerem SE4710. S20 Bluebird PN: S20-ANLB, S20-A5LAW.",
     "shortDescription": "Bluebird S20 — dotykowy terminal mobilny z ekranem 6″ FHD+, Androidem 13 i skanerem SE4710. Każda wersja ma Wi-Fi 6E i NFC; wersje 5G mają też eSIM. Bateria 4000 mAh wymieniana bez wyłączania terminala.",
-    "description": "Bluebird S20 to dotykowy terminal mobilny z ekranem 6 cali FHD+ i Androidem 13. Służy do pracy w sklepie, w magazynie i w dostawach. Obudowa ma grubość 12,5 mm i masę 243 g. Każda wersja ma skaner SE4710 do kodów 1D i 2D.\n\nProcesor Qualcomm QC4490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Każda wersja ma Wi-Fi 6E, Bluetooth 5.3 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 4000 mAh jest wymieniana bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 6000 mAh Bluebird S20 (355040099)](/produkt/bluebird-355040099). Terminal ma klasę szczelności IP68 i IP65 z baterią. Wytrzymuje wielokrotne upadki z 1,5 m na płytki na betonie, a w osłonie ochronnej upadek z 1,8 m na beton. Pracuje w temperaturze od −20°C do +55°C.\n\nProducent deklaruje możliwość aktualizacji do Androida 17. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "description": "Bluebird S20 to dotykowy terminal mobilny z ekranem 6 cali FHD+ i Androidem 13. Służy do pracy w sklepie, w magazynie i w dostawach. Obudowa ma grubość 12,5 mm i masę 243 g. Każda wersja ma skaner SE4710 do kodów 1D i 2D.\n\nProcesor Qualcomm QC4490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Każda wersja ma Wi-Fi 6E, Bluetooth 5.3 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 4000 mAh jest wymieniana bez wyłączania terminala (hot swap). Opcją jest [bateria rozszerzona do S20](/produkt/bluebird-355040099). Terminal ma klasę szczelności IP68 i IP65 z założoną baterią. Wytrzymuje wielokrotne upadki z 1,5 m na płytki na betonie w temperaturze od −10°C do +50°C, a w osłonie ochronnej upadek z 1,8 m na beton. Pracuje w temperaturze od −20°C do +55°C.\n\nAndroid 17 to najwyższa zapowiedziana wersja dla S20. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -76,15 +76,15 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Bateria",
-        "value": "4000 mAh, 15,4 Wh, wymiana bez wyłączania (hot swap); opcja: 6000 mAh"
+        "value": "4000 mAh, 15,4 Wh, wymiana bez wyłączania (hot swap); opcja: bateria rozszerzona"
       },
       {
         "name": "Klasa szczelności",
-        "value": "IP68 i IP65 (z baterią)"
+        "value": "IP68 i IP65 z założoną baterią"
       },
       {
         "name": "Odporność na upadki",
-        "value": "Wielokrotne upadki z 1,5 m na płytki na betonie; 1,8 m na beton w osłonie ochronnej"
+        "value": "Wielokrotne upadki z 1,5 m na płytki na betonie od -10°C do +50°C; 1,8 m na beton w osłonie ochronnej"
       },
       {
         "name": "Temperatura pracy",
@@ -213,23 +213,23 @@ export const bluebirdProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki skaner ma Bluebird S20?",
-        "answer": "Każda oferowana wersja S20 ma silnik SE4710 do kodów 1D i 2D. Skanowanie uruchamiają dwustopniowe przyciski boczne. Do częstego skanowania służy uchwyt pistoletowy 210080024."
+        "answer": "Każda oferowana wersja S20 ma silnik SE4710 do kodów 1D i 2D. Skanowanie uruchamiają dwustopniowe przyciski boczne. Do częstego skanowania służy [uchwyt pistoletowy do S20](/produkt/bluebird-210080024)."
       },
       {
         "question": "Czy Bluebird S20 ma 5G i eSIM?",
-        "answer": "Wersje S20-A5LAW i S20-A5LGW mają 5G, gniazdo nano-SIM i eSIM oraz odbiornik GNSS. Wersje S20-ANLB i S20-ANLI pracują przez Wi-Fi 6E. Wszystkie wersje mają Bluetooth 5.3 i NFC."
+        "answer": "Wersje 5G mają modem 5G, gniazdo nano-SIM i eSIM oraz odbiornik GNSS. Pozostałe wersje pracują w sieci Wi-Fi. Wszystkie wersje mają Wi-Fi 6E, Bluetooth 5.3 i NFC."
       },
       {
-        "question": "Ile pracuje bateria i czy można ją wymienić w czasie pracy?",
-        "answer": "Bateria standardowa ma 4000 mAh. Baterię wymienia się bez wyłączania terminala (hot swap). Do dłuższej pracy służy bateria rozszerzona 6000 mAh (355040099)."
+        "question": "Jaką baterię ma Bluebird S20 i czy można ją wymienić w czasie pracy?",
+        "answer": "Bateria standardowa ma 4000 mAh. Baterię wymienia się bez wyłączania terminala (hot swap). Do dłuższej pracy służy [bateria rozszerzona do S20](/produkt/bluebird-355040099)."
       },
       {
         "question": "Co jest potrzebne do ładowania Bluebird S20?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 5 V / 3 A (602010041), wtyczka EU (602020024) i kabel USB-A – USB-C (603010005). Alternatywą są stacje 1- i 4-gniazdowe S20 z osobnym zasilaczem."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Alternatywą są stacje 1- i 4-gniazdowe S20 z osobnym zasilaczem. Terminal bez osłony wymaga w stacji [podkładki do stacji S20](/produkt/bluebird-501260118)."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować S20?",
-        "answer": "Terminal pracuje z Androidem 13. Producent deklaruje możliwość aktualizacji do Androida 17. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 13. Android 17 to najwyższa zapowiedziana wersja dla S20. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S20?",
@@ -245,9 +245,9 @@ export const bluebirdProducts: Product[] = [
     "name": "Bluebird S50",
     "seoH1": "Bluebird S50",
     "seoTitle": "Terminal mobilny Bluebird S50 6″ z Androidem 12 i 5G",
-    "seoDescription": "Terminal mobilny Bluebird S50 6″, Android 12, Wi-Fi 6E lub 5G, skaner SE4720, SE4770 lub SE55. Kolektor danych S50 Bluebird PN: S50-ANLB, S50-A5LAW.",
-    "shortDescription": "Bluebird S50 — terminal mobilny z ekranem 6″ FHD+ 600 nitów, Androidem 12 i procesorem QC6490. Skaner SE4720, SE4770 lub SE55; wersje Wi-Fi 6E albo 5G. Upadki z 2,4 m w osłonie ochronnej.",
-    "description": "Bluebird S50 to dotykowy terminal mobilny z ekranem 6 cali FHD+ o jasności 600 nitów. Pracuje z Androidem 12. Służy do pracy w magazynie, w logistyce i w handlu. Masa terminala wynosi 322 g.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Wersje różnią się skanerem: SE4720, SE4770 albo SE55 o rozszerzonym zakresie. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098)](/produkt/bluebird-355040098). Terminal ma klasę szczelności IP68 i IP65 z baterią. Wytrzymuje wielokrotne upadki z 1,5 m na płytki na betonie, a w osłonie ochronnej upadek z 2,4 m na beton.\n\nProducent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "seoDescription": "Terminal mobilny Bluebird S50 6″, Android 12, Wi-Fi 6E, opcja 5G, skaner SE4720, SE4770 lub SE55. Kolektor danych S50 Bluebird PN: S50-ANLB, S50-A5LAW.",
+    "shortDescription": "Bluebird S50 — terminal mobilny z ekranem 6″ FHD+ 600 nitów, Androidem 12 i procesorem QC6490. Skaner SE4720, SE4770 lub SE55; Wi-Fi 6E w każdej wersji, a wersje 5G mają także modem 5G. Upadki z 2,4 m w osłonie ochronnej.",
+    "description": "Bluebird S50 to dotykowy terminal mobilny z ekranem 6 cali FHD+ o jasności 600 nitów. Pracuje z Androidem 12. Służy do pracy w magazynie, w logistyce i w handlu. Masa terminala z baterią standardową wynosi 322 g.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Wersje różnią się skanerem: SE4720, SE4770 albo SE55 o rozszerzonym zakresie. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098)](/produkt/bluebird-355040098). Terminal ma klasę szczelności IP68 i IP65 z założoną baterią. Wytrzymuje wielokrotne upadki z 1,5 m na płytki na betonie w temperaturze od −10°C do +50°C, a w osłonie ochronnej upadek z 2,4 m na beton.\n\nAndroid 16 to najwyższa zapowiedziana wersja dla S50. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -317,11 +317,11 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Klasa szczelności",
-        "value": "IP68 i IP65 (z baterią)"
+        "value": "IP68 i IP65 z założoną baterią"
       },
       {
         "name": "Odporność na upadki",
-        "value": "Wielokrotne upadki z 1,5 m na płytki na betonie; 2,4 m na beton w osłonie ochronnej"
+        "value": "Wielokrotne upadki z 1,5 m na płytki na betonie od -10°C do +50°C; 2,4 m na beton w osłonie ochronnej"
       },
       {
         "name": "Temperatura pracy",
@@ -333,7 +333,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Masa",
-        "value": "322 g"
+        "value": "322 g (z baterią standardową)"
       },
       {
         "name": "Zawartość zestawu",
@@ -498,19 +498,19 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Czy Bluebird S50 ma 5G i eSIM?",
-        "answer": "Wersje z oznaczeniem A5 w PN mają 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Wersje ANL pracują przez Wi-Fi 6E. Wszystkie wersje mają Bluetooth 5.2 i NFC."
+        "answer": "Wersje 5G mają modem 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Pozostałe wersje pracują w sieci Wi-Fi. Wszystkie wersje mają Wi-Fi 6E, Bluetooth 5.2 i NFC."
       },
       {
         "question": "Jaką baterię ma Bluebird S50?",
-        "answer": "Bateria standardowa ma 5000 mAh i obsługuje szybkie ładowanie. Baterię wymienia się bez wyłączania terminala (hot swap). Opcjami są bateria 7000 mAh (355040098) i bateria 5000 mAh z ładowaniem bezprzewodowym (355040103)."
+        "answer": "Bateria standardowa ma 5000 mAh i obsługuje szybkie ładowanie. Baterię wymienia się bez wyłączania terminala (hot swap). Opcjami są [bateria rozszerzona 7000 mAh](/produkt/bluebird-355040098) i [bateria 5000 mAh z ładowaniem bezprzewodowym](/produkt/bluebird-355040103)."
       },
       {
         "question": "Jak ładować Bluebird S50?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005. Stacje S50 i S70 zasila się zasilaczem 12 V; S50 bez osłony wymaga w stacji podkładki 501260117."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Stacje S50 i S70 zasila się zasilaczem 12 V; S50 bez osłony wymaga w stacji [podkładki do stacji S50](/produkt/bluebird-501260117)."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować S50?",
-        "answer": "Terminal pracuje z Androidem 12. Producent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 12. Android 16 to najwyższa zapowiedziana wersja dla S50. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S50?",
@@ -526,9 +526,9 @@ export const bluebirdProducts: Product[] = [
     "name": "Bluebird S70",
     "seoH1": "Bluebird S70",
     "seoTitle": "Terminal mobilny Bluebird S70 6″ z Androidem 12 i 5G",
-    "seoDescription": "Terminal mobilny Bluebird S70 6″, Android 12, Wi-Fi 6E lub 5G, upadki z 3,05 m. Kolektor danych Bluebird full rugged. S70 Bluebird PN: S70-ANLC, S70-A5LBW.",
-    "shortDescription": "Bluebird S70 — wzmocniony terminal mobilny z ekranem 6″ FHD+, Androidem 12 i procesorem QC6490. Upadki z 3,05 m na beton w temperaturze pokojowej, IP68 i IP65. Skaner SE4770, SE4720 lub SE55; wersje Wi-Fi 6E albo 5G.",
-    "description": "Bluebird S70 to wzmocniony terminal mobilny z ekranem 6 cali FHD+ o jasności 600 nitów. Pracuje z Androidem 12. Służy do pracy w magazynie, na produkcji, w logistyce i w terenie. Wytrzymuje wielokrotne upadki z 3,05 m na beton w temperaturze pokojowej i z 2,4 m w zakresie od −20°C do +50°C.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Wersje różnią się skanerem: SE4770, SE4720 albo SE55 o rozszerzonym zakresie. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098)](/produkt/bluebird-355040098). Terminal ma klasę szczelności IP68 i IP65 z baterią oraz masę 355 g.\n\nProducent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "seoDescription": "Terminal mobilny Bluebird S70 6″, Android 12, Wi-Fi 6E, opcja 5G, upadki z 3,05 m w temperaturze pokojowej. Wzmocniony kolektor danych Bluebird. PN: S70-ANLC.",
+    "shortDescription": "Bluebird S70 — wzmocniony terminal mobilny z ekranem 6″ FHD+, Androidem 12 i procesorem QC6490. Upadki z 3,05 m na beton w temperaturze pokojowej, IP68 i IP65 z założoną baterią. Skaner SE4770, SE4720 lub SE55; Wi-Fi 6E w każdej wersji, a wersje 5G mają także modem 5G.",
+    "description": "Bluebird S70 to wzmocniony terminal mobilny z ekranem 6 cali FHD+ o jasności 600 nitów. Pracuje z Androidem 12. Służy do pracy w magazynie, na produkcji, w logistyce i w terenie. Wytrzymuje wielokrotne upadki z 3,05 m na beton w temperaturze pokojowej i z 2,4 m w zakresie od −20°C do +50°C.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB albo 8/128 GB. Wersje różnią się skanerem: SE4770, SE4720 albo SE55 o rozszerzonym zakresie. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098)](/produkt/bluebird-355040098). Terminal ma klasę szczelności IP68 i IP65 z założoną baterią oraz masę 355 g.\n\nAndroid 16 to najwyższa zapowiedziana wersja dla S70. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -543,7 +543,7 @@ export const bluebirdProducts: Product[] = [
     "imageDescriptions": [
       "Bluebird S70 — widok z przodu, ekran 6 cali FHD+",
       "Bluebird S70 — tył obudowy",
-      "Bluebird S70 — widok z przodu pod kątem, lewa strona z przyciskami"
+      "Bluebird S70 — widok z przodu pod kątem, prawa krawędź z przyciskiem skanowania i przyciskami głośności"
     ],
     "tags": [
       "magazyn",
@@ -598,7 +598,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Klasa szczelności",
-        "value": "IP68 i IP65 (z baterią)"
+        "value": "IP68 i IP65 z założoną baterią"
       },
       {
         "name": "Odporność na upadki",
@@ -793,15 +793,15 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Czy Bluebird S70 ma 5G i eSIM?",
-        "answer": "Wersje z oznaczeniem A5 w PN mają 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Wersje ANL pracują przez Wi-Fi 6E. Wszystkie wersje mają Bluetooth 5.2 i NFC."
+        "answer": "Wersje 5G mają modem 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Pozostałe wersje pracują w sieci Wi-Fi. Wszystkie wersje mają Wi-Fi 6E, Bluetooth 5.2 i NFC."
       },
       {
         "question": "Jak ładować Bluebird S70?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005. S70 pasuje do stacji S50 i S70 bez podkładki."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). S70 pasuje do stacji S50 i S70 bez podkładki."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować S70?",
-        "answer": "Terminal pracuje z Androidem 12. Producent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 12. Android 16 to najwyższa zapowiedziana wersja dla S70. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S70?",
@@ -819,7 +819,7 @@ export const bluebirdProducts: Product[] = [
     "seoTitle": "Terminal ATEX Bluebird S70 Explosion Protection, strefa 2/22",
     "seoDescription": "Terminal mobilny ATEX Bluebird S70 Explosion Protection: ATEX, IECEx i UKEX strefa 2/22, 5G, Android 12. Kolektor danych Bluebird Ex. PN: S70-A5LJWEX.",
     "shortDescription": "Bluebird S70 Explosion Protection — wzmocniony terminal mobilny z certyfikatami ATEX, IECEx i UKEX do strefy 2 i 22. Ekran 6″ FHD+, Android 12, skaner SE4770, 5G i Wi-Fi 6E.",
-    "description": "Bluebird S70 Explosion Protection to wersja terminala S70 do stref zagrożonych wybuchem. Ma certyfikaty ATEX, IECEx i UKEX do strefy 2 (gazy) i strefy 22 (pyły). Oznaczenie ATEX i UKEX: II 3G Ex ic op is IIC T5 Gc oraz II 3D Ex ic op is IIIC T100°C Dc IP64.\n\nTerminal ma ekran 6 cali FHD+ o jasności 600 nitów i Androida 12. Procesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB. Skaner SE4770 odczytuje kody 1D i 2D. Terminal ma 5G z nano-SIM i eSIM, Wi-Fi 6E, Bluetooth 5.2 i NFC.\n\nBateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Obudowa ma klasę szczelności IP68 i IP65 z baterią oraz masę 340 g. Terminal wytrzymuje wielokrotne upadki z 3,05 m na beton w temperaturze pokojowej.\n\nProducent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "description": "Bluebird S70 Explosion Protection to wersja terminala S70 do stref zagrożonych wybuchem. Ma certyfikaty ATEX, IECEx i UKEX do strefy 2 (gazy) i strefy 22 (pyły). Oznaczenie ATEX i UKEX: II 3G Ex ic op is IIC T5 Gc oraz II 3D Ex ic op is IIIC T100°C Dc IP64.\n\nTerminal ma ekran 6 cali FHD+ o jasności 600 nitów i Androida 12. Procesor Qualcomm QC6490 pracuje z pamięcią 6/64 GB. Skaner SE4770 odczytuje kody 1D i 2D. Terminal ma 5G z nano-SIM i eSIM, Wi-Fi 6E, Bluetooth 5.2 i NFC.\n\nBateria ma pojemność 5000 mAh. Obudowa ma klasę szczelności IP68 i IP65 z założoną baterią oraz masę 340 g. Terminal wytrzymuje wielokrotne upadki z 3,05 m na beton w temperaturze pokojowej.\n\nAndroid 16 to najwyższa zapowiedziana wersja dla S70 Explosion Protection. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -834,7 +834,7 @@ export const bluebirdProducts: Product[] = [
     "imageDescriptions": [
       "Bluebird S70 Explosion Protection — widok z przodu, ekran 6 cali FHD+",
       "Bluebird S70 Explosion Protection — tył obudowy",
-      "Bluebird S70 Explosion Protection — widok z przodu pod kątem, lewa strona z przyciskami"
+      "Bluebird S70 Explosion Protection — widok z przodu pod kątem, prawa krawędź z przyciskiem skanowania i przyciskami głośności"
     ],
     "tags": [
       "magazyn",
@@ -901,11 +901,11 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Bateria",
-        "value": "5000 mAh, 19,25 Wh, szybkie ładowanie, wymiana bez wyłączania (hot swap)"
+        "value": "5000 mAh, 19,25 Wh"
       },
       {
         "name": "Klasa szczelności",
-        "value": "IP68 i IP65 (z baterią); IP64 w oznaczeniu Ex dla pyłów"
+        "value": "IP68 i IP65 z założoną baterią; IP64 w oznaczeniu Ex dla pyłów"
       },
       {
         "name": "Odporność na upadki",
@@ -980,11 +980,11 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Jak ładować Bluebird S70 Explosion Protection?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005)."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować terminal?",
-        "answer": "Terminal pracuje z Androidem 12. Producent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 12. Android 16 to najwyższa zapowiedziana wersja dla S70 Explosion Protection. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S70 Explosion Protection?",
@@ -1002,7 +1002,7 @@ export const bluebirdProducts: Product[] = [
     "seoTitle": "Terminal mobilny Bluebird S10 5,5″ z Androidem 14 i 4G",
     "seoDescription": "Terminal mobilny Bluebird S10 5,5″, Android 14, Wi-Fi lub 4G LTE, IP68. Kolektor danych Bluebird ze skanerem 1D/2D. S10 Bluebird PN: S10-A4LCW, S10-ANLJ.",
     "shortDescription": "Bluebird S10 — dotykowy terminal mobilny z ekranem 5,5″ HD+, Androidem 14 i skanerem 1D/2D. Wersje Wi-Fi albo 4G LTE, IP68, bateria 4500 mAh wymieniana bez wyłączania terminala.",
-    "description": "Bluebird S10 to dotykowy terminal mobilny z ekranem 5,5 cala HD+ i Androidem 14. Służy do pracy w sklepie, w magazynie i w dostawach. Ekran ma jasność 550 nitów i szkło Corning Gorilla Glass. Ekran obsługuje rysik i rękawice oraz działa na mokro.\n\nProcesor Qualcomm pracuje z pamięcią 6/64 GB. Skaner odczytuje kody 1D i 2D. Każda wersja ma Wi-Fi, Bluetooth 5.0 i NFC. Wersja 4G LTE ma też eSIM i odbiornik GNSS.\n\nBateria 4500 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Terminal ma klasę szczelności IP68. Wytrzymuje upadek z 1,5 m na beton, a w osłonie [Osłona rugged boot Bluebird S10 (351120042)](/produkt/bluebird-351120042) upadek z 1,8 m. Pracuje w temperaturze od −20°C do +50°C.\n\nProducent planuje aktualizację do Androida 18. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "description": "Bluebird S10 to dotykowy terminal mobilny z ekranem 5,5 cala HD+ i Androidem 14. Służy do pracy w sklepie, w magazynie i w dostawach. Ekran ma jasność 550 nitów i szkło Corning Gorilla Glass. Ekran obsługuje rysik i rękawice oraz działa na mokro.\n\nProcesor Qualcomm pracuje z pamięcią 6/64 GB. Skaner BE470 albo SE4710 odczytuje kody 1D i 2D. Każda wersja ma Wi-Fi, Bluetooth 5.0 i NFC. Wersja 4G LTE ma też eSIM i odbiornik GNSS.\n\nBateria 4500 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap). Terminal ma klasę szczelności IP68. Wytrzymuje upadek z 1,5 m na beton, a w osłonie [Osłona rugged boot Bluebird S10 (351120042)](/produkt/bluebird-351120042) upadek z 1,8 m. Pracuje w temperaturze od −20°C do +50°C.\n\nAndroid 18 to najwyższa zapowiedziana wersja dla S10. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -1042,7 +1042,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Skaner",
-        "value": "Imager 1D/2D (BE470 albo inny moduł 1D/2D, zależnie od PN)"
+        "value": "BE470 albo SE4710, zależnie od PN; kody 1D i 2D"
       },
       {
         "name": "Aparaty",
@@ -1107,7 +1107,7 @@ export const bluebirdProducts: Product[] = [
         "partNumber": "S10-A4LCW",
         "name": "S10-A4LCW, imager 1D/2D, 4G LTE",
         "attributes": {
-          "Skaner": "Imager 1D/2D",
+          "Skaner": "SE4710",
           "Łączność": "Wi-Fi + 4G LTE"
         },
         "priceFrom": 2199.93,
@@ -1127,7 +1127,7 @@ export const bluebirdProducts: Product[] = [
         "partNumber": "S10-ANLD",
         "name": "S10-ANLD, imager 1D/2D, Wi-Fi",
         "attributes": {
-          "Skaner": "Imager 1D/2D",
+          "Skaner": "SE4710",
           "Łączność": "Wi-Fi"
         },
         "priceFrom": 2065.25,
@@ -1135,8 +1135,8 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "Moduł skanujący odczytuje kody 1D i 2D.\n\n• BE470 — silnik skanujący Bluebird.\n\n• Imager 1D/2D — moduł 1D/2D innego typu niż BE470.",
-      "Łączność": "Sposób połączenia z siecią. Każda wersja S10 ma Wi-Fi (802.11ac, Wi-Fi 6 ready), Bluetooth 5.0 i NFC.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, odbiornik GNSS."
+      "Skaner": "Moduł skanujący odczytuje kody 1D i 2D.\n\n• BE470 — silnik skanujący Bluebird.\n\n• SE4710 — imager Zebra do kodów 1D i 2D, standardowy zakres odczytu.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja S10 ma Wi-Fi (802.11ac, Wi-Fi 6 ready), Bluetooth 5.0 i NFC.\n\n• Wi-Fi — praca w sieci firmowej.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, odbiornik GNSS."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1163,7 +1163,7 @@ export const bluebirdProducts: Product[] = [
     ],
     "relatedProducts": [
       "bluebird-s20",
-      "bluebird-sf650",
+      "bluebird-s70",
       "bluebird-ef551",
       "bluebird-s50"
     ],
@@ -1184,23 +1184,23 @@ export const bluebirdProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki skaner ma Bluebird S10?",
-        "answer": "Każda wersja S10 odczytuje kody 1D i 2D. Wersja S10-ANLJ ma silnik Bluebird BE470. Wersje S10-ANLD i S10-A4LCW mają inny moduł 1D/2D. Skanowanie uruchamiają dwustopniowe przyciski boczne."
+        "answer": "Każda wersja S10 odczytuje kody 1D i 2D. Wersje różnią się skanerem: silnik Bluebird BE470 albo imager Zebra SE4710. Wersja 4G LTE ma imager SE4710. Skanowanie uruchamiają dwustopniowe przyciski boczne."
       },
       {
         "question": "Czy Bluebird S10 ma 4G i eSIM?",
-        "answer": "Wersja S10-A4LCW ma 4G LTE, gniazdo nano-SIM i eSIM oraz odbiornik GNSS. Wersje S10-ANLJ i S10-ANLD pracują przez Wi-Fi. S10 nie ma wersji 5G."
+        "answer": "Wersja 4G LTE ma modem 4G, gniazdo nano-SIM i eSIM oraz odbiornik GNSS. Pozostałe wersje pracują w sieci Wi-Fi. S10 nie ma wersji 5G."
       },
       {
         "question": "Czy baterię S10 można wymienić w czasie pracy?",
-        "answer": "Tak. Bateria 4500 mAh obsługuje wymianę bez wyłączania terminala (hot swap) i szybkie ładowanie. Zapasowa bateria to 355040117."
+        "answer": "Tak. Bateria 4500 mAh obsługuje wymianę bez wyłączania terminala (hot swap) i szybkie ładowanie. Zapasową baterią jest [bateria standardowa 4500 mAh do S10](/produkt/bluebird-355040117)."
       },
       {
         "question": "Jak ładować Bluebird S10?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005. Stacje S10 zasila się zasilaczem 9 V; terminal bez osłony wymaga w stacji podkładki 501260145."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Stacje S10 zasila się zasilaczem 9 V; terminal bez osłony wymaga w stacji [podkładki do stacji S10](/produkt/bluebird-501260145)."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować S10?",
-        "answer": "Terminal pracuje z Androidem 14. Producent planuje aktualizację do Androida 18. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 14. Android 18 to najwyższa zapowiedziana wersja dla S10. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S10?",
@@ -1218,7 +1218,7 @@ export const bluebirdProducts: Product[] = [
     "seoTitle": "Terminal RFID Bluebird S10 RFID z czytnikiem UHF 865–868 MHz",
     "seoDescription": "Terminal RFID Bluebird S10 RFID z czytnikiem UHF 865–868 MHz (EU): ponad 1300 tagów/s, zasięg ponad 13 m, Android, Wi-Fi. Czytnik RFID Bluebird PN: S10-ANLJRW.",
     "shortDescription": "Bluebird S10 RFID — terminal z Androidem i wbudowanym czytnikiem UHF RFID w uchwycie pistoletowym. Pasmo 865–868 MHz (EU), ponad 1300 tagów na sekundę, zasięg ponad 13 m, skaner 1D/2D, bateria 7000 mAh.",
-    "description": "Bluebird S10 RFID to terminal z Androidem i wbudowanym czytnikiem UHF RFID w uchwycie pistoletowym. Służy do inwentaryzacji, wyszukiwania towarów i ewidencji majątku w magazynie, sklepie i na produkcji. Oferowana wersja pracuje w europejskim paśmie 865–868 MHz.\n\nCzytnik z układem Impinj E710 odczytuje ponad 1300 tagów na sekundę. Nominalny zasięg odczytu przekracza 13 m. Moc wyjściowa w Europie wynosi od 5 do 33 dBm (ERP). Czytnik obsługuje EPC Class 1 Gen 2, Gen2 V2 i Gen2X. Imager odczytuje też kody 1D i 2D.\n\nTerminal ma ekran 5,5 cala (1440 × 720), procesor Qualcomm SM6225 i pamięć 6/64 GB. Łączy się przez Wi-Fi i Bluetooth 5.1. Bateria 7000 mAh obsługuje wymianę bez wyłączania urządzenia (hot swap). Urządzenie ma masę 613,8 g i klasę szczelności IP54.\n\nAktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala. W zestawie są bateria i pasek na nadgarstek.",
+    "description": "Bluebird S10 RFID to terminal z Androidem i wbudowanym czytnikiem UHF RFID w uchwycie pistoletowym. Służy do inwentaryzacji, wyszukiwania towarów i ewidencji majątku w magazynie, sklepie i na produkcji. Oferowana wersja pracuje w europejskim paśmie 865–868 MHz.\n\nCzytnik z układem Impinj E710 odczytuje ponad 1300 tagów na sekundę. Nominalny zasięg odczytu przekracza 13 m. Moc wyjściowa w Europie wynosi od 5 do 33 dBm (ERP). Czytnik obsługuje EPC Class 1 Gen 2, Gen2 V2 i Gen2X. Imager odczytuje też kody 1D i 2D.\n\nTerminal ma ekran 5,5 cala (1440 × 720), procesor Qualcomm SM6225 i pamięć 6/64 GB. Łączy się przez Wi-Fi i Bluetooth 5.1. Bateria 7000 mAh obsługuje wymianę bez wyłączania urządzenia (hot swap). Urządzenie ma masę 613,8 g i klasę szczelności IP54.\n\nAktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala. W zestawie są bateria i pasek na nadgarstek.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -1362,7 +1362,7 @@ export const bluebirdProducts: Product[] = [
     "faq": [
       {
         "question": "W jakim paśmie pracuje Bluebird S10 RFID?",
-        "answer": "Oferowana wersja S10-ANLJRW pracuje w europejskim paśmie UHF 865–868 MHz. Wersji na pasmo 902–928 MHz nie oferujemy, bo nie jest przeznaczona do pracy w Unii Europejskiej."
+        "answer": "Oferowana wersja pracuje w europejskim paśmie UHF 865–868 MHz. Wersji na pasmo 902–928 MHz nie oferujemy, bo nie jest przeznaczona do pracy w Unii Europejskiej."
       },
       {
         "question": "Ile tagów odczytuje S10 RFID i z jakiej odległości?",
@@ -1374,11 +1374,11 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Co jest w zestawie z S10 RFID?",
-        "answer": "W zestawie są urządzenie, bateria 7000 mAh i pasek na nadgarstek. Zasilacz 602010041, wtyczkę EU 602020024 i kabel 603010005 zamawia się osobno."
+        "answer": "W zestawie są urządzenie, bateria 7000 mAh i pasek na nadgarstek. [Zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005) zamawia się osobno."
       },
       {
         "question": "Czy S10 RFID otrzymuje aktualizacje Androida?",
-        "answer": "Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird S10 RFID?",
@@ -1394,9 +1394,9 @@ export const bluebirdProducts: Product[] = [
     "name": "Bluebird EF551",
     "seoH1": "Bluebird EF551",
     "seoTitle": "Terminal mobilny Bluebird EF551 i EF551R z Androidem 12 i 5G",
-    "seoDescription": "Terminal mobilny Bluebird EF551 5,45″, Android 12, Wi-Fi 6E lub 5G; EF551R w obudowie Rugged. Kolektor danych Bluebird EF551. PN: EF551-ANLB, EF551-ANLBR.",
-    "shortDescription": "Bluebird EF551 — dotykowy terminal mobilny z ekranem 5,45″ HD+, Androidem 12 i procesorem QC6490. Wersje Wi-Fi 6E albo 5G, obudowa standardowa albo Rugged (EF551R) z odpornością na upadki z 2,4 m.",
-    "description": "Bluebird EF551 to dotykowy terminal mobilny z ekranem 5,45 cala HD+ i Androidem 12. Służy do pracy w magazynie, w handlu i w logistyce. Wersja EF551R ma obudowę Rugged z osłoną całego terminala.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 4/64 GB albo 8/128 GB. Wersje różnią się skanerem: standardowym 1D/2D albo SE55 dalekiego zasięgu. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 4350 mAh jest wymieniana bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 6160 mAh Bluebird EF551 (355040080)](/produkt/bluebird-355040080). Terminal ma klasę szczelności IP68 i IP65. EF551 wytrzymuje wielokrotne upadki z 1,5 m na beton. EF551R wytrzymuje upadki z 2,4 m na beton w temperaturze pokojowej i z 1,8 m w całym zakresie temperatur pracy.\n\nProducent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "seoDescription": "Terminal mobilny Bluebird EF551 5,45″, Android 12, Wi-Fi 6E, opcja 5G; EF551R w obudowie Rugged. Kolektor danych Bluebird EF551. PN: EF551-ANLB, EF551-ANLBR.",
+    "shortDescription": "Bluebird EF551 — dotykowy terminal mobilny z ekranem 5,45″ HD+, Androidem 12 i procesorem QC6490. Wi-Fi 6E w każdej wersji, a wersje 5G mają także modem 5G. Obudowa standardowa albo Rugged (EF551R) z odpornością na upadki z 2,4 m w temperaturze pokojowej.",
+    "description": "Bluebird EF551 to dotykowy terminal mobilny z ekranem 5,45 cala HD+ i Androidem 12. Służy do pracy w magazynie, w handlu i w logistyce. Wersja EF551R ma obudowę Rugged z osłoną całego terminala.\n\nProcesor Qualcomm QC6490 pracuje z pamięcią 4/64 GB albo 8/128 GB. Wersje różnią się skanerem: standardowym 1D/2D albo SE55 dalekiego zasięgu. Każda wersja ma Wi-Fi 6E, Bluetooth 5.2 i NFC. Wersje 5G mają też eSIM i odbiornik GNSS.\n\nBateria 4350 mAh jest wymieniana bez wyłączania terminala (hot swap). Opcją jest [Bateria rozszerzona 6160 mAh Bluebird EF551 (355040080)](/produkt/bluebird-355040080). Terminal ma klasę szczelności IP68 i IP65. EF551 wytrzymuje wielokrotne upadki z 1,5 m na beton w temperaturze od −10°C do +50°C. EF551R wytrzymuje upadki z 2,4 m na beton w temperaturze pokojowej i z 1,8 m w całym zakresie temperatur pracy.\n\nAndroid 16 to najwyższa zapowiedziana wersja dla EF551. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -1470,7 +1470,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Odporność na upadki",
-        "value": "EF551: wielokrotne upadki z 1,5 m na beton; EF551R: 2,4 m na beton w temperaturze pokojowej, 1,8 m w zakresie temperatur pracy"
+        "value": "EF551: wielokrotne upadki z 1,5 m na beton od -10°C do +50°C; EF551R: 2,4 m na beton w temperaturze pokojowej, 1,8 m w zakresie temperatur pracy"
       },
       {
         "name": "Temperatura pracy",
@@ -1622,7 +1622,7 @@ export const bluebirdProducts: Product[] = [
     ],
     "variantAttributeTooltips": {
       "Obudowa": "Wersja obudowy terminala EF551.\n\n• Standardowa — 159,9 × 79 × 16,65 mm, 284,5 g, upadki z 1,5 m.\n\n• Rugged — wersja EF551R z osłoną całego terminala, 332 g, upadki z 2,4 m w temperaturze pokojowej.",
-      "Skaner": "Silnik skanujący odczytuje kody 1D i 2D.\n\n• 1D/2D — moduł standardowy do odczytu z bliska, np. przy półce i przy kompletacji.\n\n• SE55 (daleki zasięg) — kody z bliska i z większej odległości, np. na regałach.",
+      "Skaner": "Silnik skanujący odczytuje kody 1D i 2D.\n\n• 1D/2D — standardowy zakres odczytu, np. przy półce i przy kompletacji.\n\n• SE55 (daleki zasięg) — kody z bliska i z większej odległości, np. na regałach.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja EF551 ma Wi-Fi 6E, Bluetooth 5.2 i NFC.\n\n• Wi-Fi 6E — praca w sieci firmowej, także w paśmie 6 GHz.\n\n• 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, odbiornik GNSS L1 + L5.",
       "Pamięć": "Pamięć operacyjna i pamięć na aplikacje i dane.\n\n• 4/64 GB — wersja podstawowa.\n\n• 8/128 GB — więcej miejsca na aplikacje; każda wersja ma też gniazdo microSD do 2 TB."
     },
@@ -1681,19 +1681,19 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Jaki skaner ma Bluebird EF551?",
-        "answer": "Wersje ANLM i A5LIW mają moduł SE55 dalekiego zasięgu. Pozostałe wersje mają standardowy moduł 1D/2D do odczytu z bliska. Skanowanie uruchamiają dwustopniowe przyciski boczne."
+        "answer": "Wersje z modułem SE55 odczytują kody z bliska i z większej odległości, np. na regałach. Pozostałe wersje mają moduł 1D/2D o standardowym zakresie odczytu. Skanowanie uruchamiają dwustopniowe przyciski boczne."
       },
       {
         "question": "Czy Bluebird EF551 ma 5G i eSIM?",
-        "answer": "Wersje z oznaczeniem A5 w PN mają 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Wersje ANL pracują przez Wi-Fi 6E. Wszystkie wersje mają Bluetooth 5.2 i NFC."
+        "answer": "Wersje 5G mają modem 5G, gniazdo nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS. Pozostałe wersje pracują w sieci Wi-Fi. Wszystkie wersje mają Wi-Fi 6E, Bluetooth 5.2 i NFC."
       },
       {
         "question": "Jak ładować Bluebird EF551?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005. Stacje EF551 pasują do EF551 i EF551R i wymagają zasilacza 9 V."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Stacje EF551 pasują do EF551 i EF551R, wymagają zasilacza 9 V i podkładki. EF551R wkłada się do stacji po wyjęciu wkładki z podkładki."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować EF551?",
-        "answer": "Terminal pracuje z Androidem 12. Producent deklaruje możliwość aktualizacji do Androida 16. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 12. Android 16 to najwyższa zapowiedziana wersja dla EF551. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird EF551?",
@@ -1708,10 +1708,10 @@ export const bluebirdProducts: Product[] = [
     "slug": "bluebird-ek430",
     "name": "Bluebird EK430",
     "seoH1": "Bluebird EK430",
-    "seoTitle": "Terminal mobilny Bluebird EK430 z klawiaturą, wersja pistoletowa",
+    "seoTitle": "Terminal mobilny Bluebird EK430 z klawiaturą, wersja prosta lub pistoletowa",
     "seoDescription": "Terminal mobilny Bluebird EK430 z klawiaturą 34 lub 47 klawiszy, wersje proste i pistoletowe, SE4710 lub SE4850, Wi-Fi lub 4G. PN: EK430-ANLC, EK430-ANLCT.",
     "shortDescription": "Bluebird EK430 — terminal mobilny z klawiaturą i ekranem dotykowym 4,3″, Android 10. Klawiatura 34 lub 47 klawiszy, obudowa prosta albo z uchwytem pistoletowym, skaner SE4710 lub SE4850 dalekiego zasięgu.",
-    "description": "Bluebird EK430 to terminal mobilny z fizyczną klawiaturą i ekranem dotykowym 4,3 cala. Pracuje z Androidem 10. Służy do kompletacji, przyjęć i inwentaryzacji w magazynie, w handlu i na produkcji. Na każdym modelu jest fabrycznie zainstalowany emulator terminala (TE) do aplikacji terminalowych.\n\nKlawiatura ma 34 klawisze numeryczne z klawiszami funkcyjnymi albo 47 klawiszy alfanumerycznych. Obudowa jest prosta (450 g) albo z uchwytem pistoletowym (552,8 g). Skaner SE4710 odczytuje kody ze standardowej odległości, a SE4850 także z dużej odległości.\n\nProcesor Qualcomm Snapdragon 660 pracuje z pamięcią 4/32 GB. Każda wersja ma Wi-Fi 5 z MU-MIMO 2×2, Bluetooth 5.0 i NFC. Wersje 4G LTE mają też odbiornik GPS. Bateria 6800 mAh jest wymieniana bez wyłączania terminala (hot swap). Terminal ma klasę szczelności IP65 i wytrzymuje wielokrotne upadki z 1,8 m na beton.\n\nProducent planuje aktualizację do Androida 14. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
+    "description": "Bluebird EK430 to terminal mobilny z fizyczną klawiaturą i ekranem dotykowym 4,3 cala. Pracuje z Androidem 10. Służy do kompletacji, przyjęć i inwentaryzacji w magazynie, w handlu i na produkcji. Na każdym EK430 jest fabrycznie zainstalowany emulator terminala (TE) do aplikacji terminalowych. Licencję emulatora ma tylko wersja pistoletowa.\n\nKlawiatura ma 34 klawisze numeryczne z klawiszami funkcyjnymi albo 47 klawiszy alfanumerycznych. Obudowa jest prosta (450 g) albo z uchwytem pistoletowym (552,8 g). Skaner SE4710 odczytuje kody ze standardowej odległości, a SE4850 także z dużej odległości.\n\nProcesor Qualcomm Snapdragon 660 pracuje z pamięcią 4/32 GB. Każda wersja ma Wi-Fi 5 z MU-MIMO 2×2, Bluetooth 5.0 i NFC. Wersje 4G LTE mają też odbiornik GPS. Bateria 6800 mAh jest wymieniana bez wyłączania terminala (hot swap). Terminal ma klasę szczelności IP65 i wytrzymuje wielokrotne upadki z 1,8 m na beton.\n\nAndroid 14 to najwyższa zapowiedziana wersja dla EK430. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZasilacz, wtyczka i kabel nie są dołączone do terminala.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -1725,7 +1725,7 @@ export const bluebirdProducts: Product[] = [
     ],
     "imageDescriptions": [
       "Bluebird EK430 — widok z przodu, ekran 4,3 cala i klawiatura",
-      "Bluebird EK430 — tył obudowy z oknem skanera i złączami",
+      "Bluebird EK430 — tył obudowy z aparatem, złączem 10-pinowym i baterią",
       "Bluebird EK430 — widok z boku"
     ],
     "tags": [
@@ -1998,23 +1998,23 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Czym różni się obudowa prosta od pistoletowej?",
-        "answer": "Wersja prosta ma masę 450 g i skanuje na wprost. Wersja pistoletowa (PN z literą T na końcu) ma uchwyt ze spustem i masę 552,8 g. Uchwyt ułatwia częste skanowanie."
+        "answer": "Wersja prosta ma masę 450 g i skanuje na wprost. Wersja pistoletowa ma uchwyt ze spustem i masę 552,8 g. Uchwyt ułatwia częste skanowanie."
       },
       {
         "question": "Jaki zasięg ma skaner EK430?",
         "answer": "SE4710 odczytuje kody ze standardowej odległości. SE4850 ma duży zasięg (Long Range) i odczytuje kody z bliska i z wysokich regałów. Zasięg zależy od wielkości i jakości kodu."
       },
       {
-        "question": "Ile pracuje bateria EK430?",
-        "answer": "Bateria ma pojemność typową 6800 mAh. Wymienia się ją bez wyłączania terminala (hot swap). Pełne ładowanie trwa poniżej 5 godzin. Zapasowa bateria to 355040073."
+        "question": "Jaką baterię ma Bluebird EK430?",
+        "answer": "Bateria ma pojemność typową 6800 mAh. Wymienia się ją bez wyłączania terminala (hot swap). Pełne ładowanie trwa poniżej 5 godzin. Zapasową baterią jest [bateria 6800 mAh do EK430](/produkt/bluebird-355040073)."
       },
       {
         "question": "Jak ładować Bluebird EK430?",
-        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są zasilacz 602010041, wtyczka EU 602020024 i kabel 603010005. Stacje EK430 wymagają zasilacza 9 V."
+        "answer": "Terminal nie ma zasilacza w zestawie. Do ładowania bezpośredniego potrzebne są [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczka EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Stacje EK430 wymagają zasilacza 9 V."
       },
       {
         "question": "Do jakiej wersji Androida można zaktualizować EK430?",
-        "answer": "Terminal pracuje z Androidem 10. Producent planuje aktualizację do Androida 14. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm."
+        "answer": "Terminal pracuje z Androidem 10. Android 14 to najwyższa zapowiedziana wersja dla EK430. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm."
       },
       {
         "question": "Jaka jest gwarancja na Bluebird EK430?",
@@ -2032,7 +2032,7 @@ export const bluebirdProducts: Product[] = [
     "seoTitle": "Smartfon firmowy Bluebird SF650 6,5″ z 4G, bez skanera kodów",
     "seoDescription": "Smartfon firmowy Bluebird SF650 6,5″ bez skanera kodów: Android 12, 4G LTE, Wi-Fi, NFC, bateria 5000 mAh, zasilacz w zestawie. SF650 Bluebird PN: SF650-A4LAW.",
     "shortDescription": "Bluebird SF650 — smartfon firmowy bez skanera kodów, z ekranem 6,5″ HD+, Androidem 12 i 4G LTE. Bateria 5000 mAh, NFC, zasilacz EU w zestawie.",
-    "description": "Bluebird SF650 to smartfon firmowy z ekranem 6,5 cala HD+ i Androidem 12. Nie ma skanera kodów kreskowych. Służy do komunikacji, aplikacji firmowych i pracy z danymi w terenie, gdy odczyt kodów nie jest potrzebny.\n\nOśmiordzeniowy procesor 2,0 GHz pracuje z pamięcią 4/32 GB. Smartfon ma 4G LTE w jednej globalnej wersji, Wi-Fi 5 (802.11ac), Bluetooth 5.1 i NFC. Odbiornik GNSS obsługuje A-GPS, GLONASS, BeiDou i Galileo. Aparat tylny ma 13 MP, a przedni 5 MP.\n\nCzytnik NFC obsługuje karty ISO 14443 A/B, FeliCa, ISO 15693 i MiFare. Gniazdo microSD przyjmuje karty do 128 GB. Smartfon może udostępniać połączenie internetowe innym urządzeniom przez Wi-Fi (hotspot).\n\nBateria ma pojemność 5000 mAh. Smartfon ma grubość 9,9 mm i masę 210 g. W etui ochronnym wytrzymuje upadek z 1,2 m. Pracuje w temperaturze od −20°C do +50°C.\n\nZasilacz z wtyczką EU jest w zestawie. Gwarancja wynosi 12 miesięcy.",
+    "description": "Bluebird SF650 to smartfon firmowy z ekranem 6,5 cala HD+ i Androidem 12. Nie ma skanera kodów kreskowych. Służy do komunikacji, aplikacji firmowych i pracy z danymi w terenie, gdy odczyt kodów nie jest potrzebny.\n\nOśmiordzeniowy procesor 2,0 GHz pracuje z pamięcią 4/32 GB. Smartfon ma 4G LTE w jednej globalnej wersji, Wi-Fi 5 (802.11ac), Bluetooth 5.1 i NFC. Odbiornik GNSS obsługuje A-GPS, GLONASS, BeiDou i Galileo. Aparat tylny ma 13 MP, a przedni 5 MP.\n\nCzytnik NFC obsługuje karty ISO 14443 A/B, FeliCa, ISO 15693 i MiFare. Gniazdo microSD przyjmuje karty do 128 GB. Smartfon może udostępniać połączenie internetowe innym urządzeniom przez Wi-Fi (hotspot).\n\nBateria ma pojemność 5000 mAh. Smartfon ma grubość 9,9 mm i masę 210 g. W etui ochronnym wytrzymuje upadek z 1,2 m. Pracuje w temperaturze od −20°C do +50°C.\n\nZasilacz z wtyczką EU jest w zestawie. Gwarancja wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nKabel nie jest dołączony do smartfona.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "bluebird",
@@ -2123,7 +2123,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Smartfon z baterią, zasilacz z wtyczką EU"
+        "value": "Smartfon z baterią, zasilacz z wtyczką EU; kabel USB-A – USB-C zamawia się osobno"
       },
       {
         "name": "Gwarancja",
@@ -2147,6 +2147,7 @@ export const bluebirdProducts: Product[] = [
     "variantAttributeTooltips": {},
     "compatibleAccessories": [],
     "relatedAccessories": [
+      "bluebird-603010005",
       "bluebird-355040087",
       "bluebird-622020004",
       "bluebird-626010005",
@@ -2176,7 +2177,7 @@ export const bluebirdProducts: Product[] = [
       },
       {
         "question": "Co jest w zestawie z Bluebird SF650?",
-        "answer": "W zestawie są smartfon z baterią 5000 mAh i zasilacz z wtyczką EU. Zapasowa bateria to 355040087."
+        "answer": "W zestawie są smartfon z baterią 5000 mAh i zasilacz z wtyczką EU. [kabel USB-A – USB-C](/produkt/bluebird-603010005) zamawia się osobno. Zapasową baterią jest [bateria 5000 mAh do SF650](/produkt/bluebird-355040087)."
       },
       {
         "question": "Jaka jest odporność SF650 na upadki?",
