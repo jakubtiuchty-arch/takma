@@ -41,10 +41,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "Z8A7LXDX17XC, Z8A7LXDX1DXX, Z8A7LXDX1KXX, Z8A7LXDX17XX, Z8A7LXGX17XC, Z8A7LXDX1EXX, Z8A7LXGX1EXX, Z8A7LXGX1EXC, Z8A7LHDX1DXX, Z8A7LHDX17XX, Z8A7LHGX17XX, Z8A7LHGX1EXX"
-      },
-      {
         "name": "System operacyjny",
         "value": "Android 15 z usługami Google (GMS); Android Enterprise Recommended"
       },
@@ -155,6 +151,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "Z8A7LXDX17XC, Z8A7LXDX1DXX, Z8A7LXDX1KXX, Z8A7LXDX17XX, Z8A7LXGX17XC, Z8A7LXDX1EXX, Z8A7LXGX1EXX, Z8A7LXGX1EXC, Z8A7LHDX1DXX, Z8A7LHDX17XX, Z8A7LHGX17XX, Z8A7LHGX1EXX"
       }
     ],
     "applications": [
@@ -384,10 +384,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "Z8A1KXW85ABX, Z8A1KXW857BX, Z8A1KZW85ABX, Z8A1LXW85AB1, Z8A1LXW858B1"
-      },
-      {
         "name": "System operacyjny",
         "value": "Android 15 z usługami Google (GMS); Android Enterprise Recommended"
       },
@@ -506,6 +502,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "Z8A1KXW85ABX, Z8A1KXW857BX, Z8A1KZW85ABX, Z8A1LXW85AB1, Z8A1LXW858B1"
       }
     ],
     "applications": [
@@ -668,10 +668,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "UW1764VIXDXX, UW1764VIX1XX, UW1764VIX9XX, UW1764VIXTXX, UW1764VIXUXX, UW1764VIXDLX, UW1764VIXDSX, UW1C64VIXDSX, UW1764VIXDZX, UW1766VIX1ZX, UW2764VIXDXX, UW2964VIX9XX, UW3764VIXDXX, UW3764VIXDLX"
-      },
-      {
         "name": "System operacyjny",
         "value": "Windows 11 Pro"
       },
@@ -790,6 +786,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "UW1764VIXDXX, UW1764VIX1XX, UW1764VIX9XX, UW1764VIXTXX, UW1764VIXUXX, UW1764VIXDLX, UW1764VIXDSX, UW1C64VIXDSX, UW1764VIXDZX, UW1766VIX1ZX, UW2764VIXDXX, UW2964VIX9XX, UW3764VIXDXX, UW3764VIXDLX"
       }
     ],
     "applications": [
@@ -1071,10 +1071,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "FTA164JI1DXX, FTA164JI1MXX, FTA154JI1DMX, FTA154TI1KLX, FTA154JI1DZS, FT7164TI1MMX, FTB164JI1QXX, FTB166TI1MMX, FTB166TI1QMX"
-      },
-      {
         "name": "Generacja",
         "value": "G7"
       },
@@ -1197,6 +1193,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "FTA164JI1DXX, FTA164JI1MXX, FTA154JI1DMX, FTA154TI1KLX, FTA154JI1DZS, FT7164TI1MMX, FTB164JI1QXX, FTB166TI1MMX, FTB166TI1QMX"
       }
     ],
     "applications": [
@@ -1424,10 +1424,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "FW1764WI1DXX, FW17641I1DXX, FW17641I1DZX, FW17641I1DIX, FW17641I1DLX, FW17641I16IX, FW17641I16LX, FW17641I1MXX, FW17642I1MXX, FW17641I1MLA, FW17641I1BXX, FW1764GI1BXX"
-      },
-      {
         "name": "Generacja",
         "value": "G1"
       },
@@ -1550,6 +1546,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "FW1764WI1DXX, FW17641I1DXX, FW17641I1DZX, FW17641I1DIX, FW17641I1DLX, FW17641I16IX, FW17641I16LX, FW17641I1MXX, FW17642I1MXX, FW17641I1MLA, FW17641I1BXX, FW1764GI1BXX"
       }
     ],
     "applications": [
@@ -1791,10 +1791,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "KTA164V8XKXX, KTA164V8X4XX, KTA164W8X4XX, KTA164V8XQXX, KTA164W8XQXX, KTB166V8XKEX"
-      },
-      {
         "name": "Generacja",
         "value": "G3"
       },
@@ -1909,6 +1905,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "KTA164V8XKXX, KTA164V8X4XX, KTA164W8X4XX, KTA164V8XQXX, KTA164W8XQXX, KTB166V8XKEX"
       }
     ],
     "applications": [
@@ -2052,7 +2052,7 @@ export const getacTabletProducts: Product[] = [
     "slug": "getac-g140",
     "name": "Getac G140",
     "seoH1": "Getac G140",
-    "seoTitle": "Tablet przemysłowy Getac G140 14″ z Windows 11 Pro, AMD Ryzen AI",
+    "seoTitle": "Tablet przemysłowy Getac G140 14″ z AMD Ryzen AI, IP66",
     "seoDescription": "Tablet przemysłowy Getac G140 14″, Windows 11 Pro, AMD Ryzen AI, Wi-Fi 7, IP66. Tablet rugged Getac G140 z LAN. G140 Getac PN: GX2764WI1DXX, GX6776WI1DXX.",
     "shortDescription": "Getac G140 — tablet fully rugged 14″ z Windows 11 Pro (Copilot+ PC), procesorem AMD Ryzen AI, Wi-Fi 7, portem LAN i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID.",
     "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje z tej karty mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
@@ -2084,10 +2084,6 @@ export const getacTabletProducts: Product[] = [
     "isNew": true,
     "isBestseller": false,
     "specifications": [
-      {
-        "name": "Part Number",
-        "value": "GX2764WI1DXX, GX2764WI1KXX, GX2764WI1DCX, GX2764WI1JXX, GX2764WI1BXX, GX2764WI1BSX, GX2774WI1DXX, GX6776WI1DXX, GX6776WI1DCX, GX6776WI1DSX, GX6776WI1JXX, GX6779WI1BXX"
-      },
       {
         "name": "Generacja",
         "value": "G1"
@@ -2211,6 +2207,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "GX2764WI1DXX, GX2764WI1KXX, GX2764WI1DCX, GX2764WI1JXX, GX2764WI1BXX, GX2764WI1BSX, GX2774WI1DXX, GX6776WI1DXX, GX6776WI1DCX, GX6776WI1DSX, GX6776WI1JXX, GX6779WI1BXX"
       }
     ],
     "applications": [
@@ -2460,10 +2460,6 @@ export const getacTabletProducts: Product[] = [
     "isBestseller": false,
     "specifications": [
       {
-        "name": "Part Number",
-        "value": "Z8A7WXWB1AXX, Z8A7WXGI2AXX, Z8A7WXGI2GXX, Z8A7WXWB17XX"
-      },
-      {
         "name": "System operacyjny",
         "value": "Windows 11 IoT Enterprise LTSC"
       },
@@ -2570,6 +2566,10 @@ export const getacTabletProducts: Product[] = [
       {
         "name": "Gwarancja",
         "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      },
+      {
+        "name": "Part Number",
+        "value": "Z8A7WXWB1AXX, Z8A7WXGI2AXX, Z8A7WXGI2GXX, Z8A7WXWB17XX"
       }
     ],
     "applications": [
