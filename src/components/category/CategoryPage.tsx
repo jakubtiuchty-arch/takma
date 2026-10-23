@@ -39,6 +39,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
   const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+    'tablety-przemyslowe': {
+      src: '/images/tablety-przemyslowe-hero-v6.webp',
+      alt: 'Tablety przemysłowe Zebra ET65 i Getac F120 w układzie V wśród kruszących się skał',
+      lead: 'Tablety przemysłowe do pracy w magazynie, na produkcji i w terenie. Wybierz model z Androidem lub Windows. Dopasuj ekran, łączność i akcesoria do warunków pracy oraz używanego oprogramowania.',
+    },
     'komputery-pos': {
       src: '/images/komputery-pos-hero-v1.webp',
       alt: 'Dwa dotykowe komputery POS na ciemnym kamiennym podium, z ciepłym podświetleniem',
