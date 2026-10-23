@@ -584,8 +584,7 @@ export const getacTabletProducts: Product[] = [
       "getac-klawiatura-gdkbur",
       "getac-ladowarka-2-gniazdowa-gcmcem",
       "getac-pasek-na-reke-gmhrxm",
-      "getac-torba-gmbcx2",
-      "getac-rysik-pojemnosciowy-gmpsxu"
+      "getac-torba-gmbcx2"
     ],
     "relatedProducts": [
       "getac-zx80",
@@ -987,8 +986,7 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxk",
       "getac-etui-gmbcxa",
-      "getac-torba-gmbcx2",
-      "getac-rysik-pojemnosciowy-gmpsxn"
+      "getac-torba-gmbcx2"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1343,8 +1341,7 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxm",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2",
-      "getac-rysik-pojemnosciowy-gmpsxn"
+      "getac-torba-gmbcx2"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -1696,8 +1693,7 @@ export const getacTabletProducts: Product[] = [
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2",
-      "getac-rysik-pojemnosciowy-gmpsxw"
+      "getac-torba-gmbcx2"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1993,8 +1989,7 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcef",
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx7",
-      "getac-rysik-pojemnosciowy-gmpsxn"
+      "getac-torba-gmbcx7"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -2374,8 +2369,7 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcet",
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
-      "getac-torba-gmbcx7",
-      "getac-rysik-pojemnosciowy-gmpsxw"
+      "getac-torba-gmbcx7"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -5569,220 +5563,6 @@ export const getacTabletAccessories: Product[] = [
     "relatedProducts": [
       "getac-k120-g3",
       "getac-g140"
-    ],
-    "downloads": [],
-    "faq": [],
-    "createdAt": "2026-10-23",
-    "updatedAt": "2026-10-23"
-  },
-  {
-    "id": "getac-rysik-pojemnosciowy-gmpsxu",
-    "slug": "getac-rysik-pojemnosciowy-gmpsxu",
-    "name": "Rysik pojemnościowy Getac GMPSXU do ZX10 G2",
-    "seoTitle": "Rysik pojemnościowy Getac GMPSXU do ZX10 G2",
-    "seoDescription": "Getac GMPSXU — rysik pojemnościowy z twardą końcówką i linką do tabletu Getac ZX10 G2.",
-    "shortDescription": "Getac GMPSXU — rysik pojemnościowy z twardą końcówką i linką do tabletu Getac ZX10 G2.",
-    "description": "Rysik pojemnościowy z twardą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma długość 109,1 mm i średnicę 8,9 mm. Końcówka ma 4 mm (średnica 5,5 mm), a linka 304 mm. Producent sprzedaje rysik w zamówieniach od 5 sztuk. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
-    "categoryId": "akcesoria",
-    "subcategoryIds": [
-      "akcesoria-do-tabletow"
-    ],
-    "manufacturerId": "getac",
-    "priceFrom": 98.03,
-    "availability": "unavailable",
-    "images": [
-      "/images/products/GMPSXU.png"
-    ],
-    "imageDescriptions": [
-      "Rysik pojemnościowy Getac GMPSXU do tabletu ZX10 G2"
-    ],
-    "tags": [
-      "magazyn",
-      "logistyka",
-      "outdoor"
-    ],
-    "isNew": true,
-    "isBestseller": false,
-    "specifications": [
-      {
-        "name": "Part Number",
-        "value": "GMPSXU"
-      },
-      {
-        "name": "Typ",
-        "value": "Rysik pojemnościowy z twardą końcówką i linką"
-      },
-      {
-        "name": "Wymiary",
-        "value": "109,1 mm, średnica 8,9 mm"
-      },
-      {
-        "name": "Końcówka",
-        "value": "4 mm; średnica 5,5 mm"
-      },
-      {
-        "name": "Długość linki",
-        "value": "304 mm"
-      },
-      {
-        "name": "Minimalne zamówienie",
-        "value": "5 szt."
-      },
-      {
-        "name": "Zgodność",
-        "value": "Getac ZX10 G2"
-      }
-    ],
-    "applications": [],
-    "compatibleAccessories": [],
-    "relatedAccessories": [],
-    "relatedProducts": [
-      "getac-zx10-g2"
-    ],
-    "downloads": [],
-    "faq": [],
-    "createdAt": "2026-10-23",
-    "updatedAt": "2026-10-23"
-  },
-  {
-    "id": "getac-rysik-pojemnosciowy-gmpsxw",
-    "slug": "getac-rysik-pojemnosciowy-gmpsxw",
-    "name": "Rysik pojemnościowy Getac GMPSXW do F120 i G140",
-    "seoTitle": "Rysik pojemnościowy Getac GMPSXW do F120 i G140",
-    "seoDescription": "Getac GMPSXW — rysik pojemnościowy z twardą końcówką i odpinaną linką do tabletów Getac F120 i G140.",
-    "shortDescription": "Getac GMPSXW — rysik pojemnościowy z twardą końcówką i odpinaną linką do tabletów Getac F120 i G140.",
-    "description": "Rysik pojemnościowy z twardą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma długość 110 mm i średnicę 9 mm. Końcówka ma 4 mm (średnica 5,5 mm), a odpinana linka 304 mm. Producent sprzedaje rysik w zamówieniach od 10 sztuk. Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
-    "categoryId": "akcesoria",
-    "subcategoryIds": [
-      "akcesoria-do-tabletow"
-    ],
-    "manufacturerId": "getac",
-    "priceFrom": 98.03,
-    "availability": "available",
-    "images": [
-      "/images/products/GMPSXW.png"
-    ],
-    "imageDescriptions": [
-      "Rysik pojemnościowy Getac GMPSXW z linką do tabletów F120 i G140"
-    ],
-    "tags": [
-      "magazyn",
-      "logistyka",
-      "outdoor"
-    ],
-    "isNew": true,
-    "isBestseller": false,
-    "specifications": [
-      {
-        "name": "Part Number",
-        "value": "GMPSXW"
-      },
-      {
-        "name": "Typ",
-        "value": "Rysik pojemnościowy z twardą końcówką i odpinaną linką"
-      },
-      {
-        "name": "Wymiary",
-        "value": "110 mm, średnica 9 mm"
-      },
-      {
-        "name": "Końcówka",
-        "value": "4 mm; średnica 5,5 mm"
-      },
-      {
-        "name": "Długość linki",
-        "value": "304 mm"
-      },
-      {
-        "name": "Minimalne zamówienie",
-        "value": "10 szt."
-      },
-      {
-        "name": "Zgodność",
-        "value": "Getac F120, Getac G140"
-      }
-    ],
-    "applications": [],
-    "compatibleAccessories": [],
-    "relatedAccessories": [],
-    "relatedProducts": [
-      "getac-f120",
-      "getac-g140"
-    ],
-    "downloads": [],
-    "faq": [],
-    "createdAt": "2026-10-23",
-    "updatedAt": "2026-10-23"
-  },
-  {
-    "id": "getac-rysik-pojemnosciowy-gmpsxn",
-    "slug": "getac-rysik-pojemnosciowy-gmpsxn",
-    "name": "Rysik pojemnościowy Getac GMPSXN do UX10 G5, F110 G7 i K120 G3",
-    "seoTitle": "Rysik pojemnościowy Getac GMPSXN do UX10 G5, F110 G7 i K120 G3",
-    "seoDescription": "Getac GMPSXN — rysik pojemnościowy ze sprężynującą końcówką i linką do tabletów Getac UX10 G5, F110 G7 i K120 G3.",
-    "shortDescription": "Getac GMPSXN — rysik pojemnościowy ze sprężynującą końcówką i linką do tabletów Getac UX10 G5, F110 G7 i K120 G3.",
-    "description": "Rysik pojemnościowy ze sprężynującą końcówką służy do obsługi ekranu dotykowego bez dotykania go palcem. Nie rysuje ekranu i nie zostawia na nim odcisków palców. Linka mocuje rysik do tabletu, aby nie zgubił się w pracy. Rysik działa z każdą wersją tabletu, także bez digitizera.\n\nRysik ma sprężynującą końcówkę z przewodzącego włókna PET, długość 108,7 mm i średnicę 9 mm. Końcówka ma 2,7 mm (średnica 2,8 mm), a linka 304 mm. Producent sprzedaje rysik w zamówieniach od 5 sztuk. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [K120 G3](/produkt/getac-k120-g3). Do precyzyjnych podpisów w wersjach z digitizerem służy osobne pióro digitizer.",
-    "categoryId": "akcesoria",
-    "subcategoryIds": [
-      "akcesoria-do-tabletow"
-    ],
-    "manufacturerId": "getac",
-    "priceFrom": 98.03,
-    "availability": "available",
-    "images": [
-      "/images/products/GMPSXN.png"
-    ],
-    "imageDescriptions": [
-      "Rysik pojemnościowy Getac GMPSXN z linką"
-    ],
-    "tags": [
-      "magazyn",
-      "logistyka",
-      "outdoor"
-    ],
-    "isNew": true,
-    "isBestseller": false,
-    "specifications": [
-      {
-        "name": "Part Number",
-        "value": "GMPSXN"
-      },
-      {
-        "name": "Typ",
-        "value": "Rysik pojemnościowy ze sprężynującą końcówką i linką"
-      },
-      {
-        "name": "Końcówka",
-        "value": "Przewodzące włókno PET, 2,7 mm; średnica 2,8 mm"
-      },
-      {
-        "name": "Wymiary",
-        "value": "108,7 mm, średnica 9 mm"
-      },
-      {
-        "name": "Kolor",
-        "value": "Czarny"
-      },
-      {
-        "name": "Długość linki",
-        "value": "304 mm"
-      },
-      {
-        "name": "Minimalne zamówienie",
-        "value": "5 szt."
-      },
-      {
-        "name": "Zgodność",
-        "value": "Getac UX10 G5, Getac F110 G7, Getac K120 G3"
-      }
-    ],
-    "applications": [],
-    "compatibleAccessories": [],
-    "relatedAccessories": [],
-    "relatedProducts": [
-      "getac-ux10-g5",
-      "getac-f110-g7",
-      "getac-k120-g3"
     ],
     "downloads": [],
     "faq": [],

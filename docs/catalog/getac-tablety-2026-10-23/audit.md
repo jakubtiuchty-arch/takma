@@ -220,3 +220,6 @@ Dane spoza karty Getac (oznaczone): PN i konfiguracje (Jarltech/ERS), zawartoś�
 | `public/llms.txt` | pióra digitizer, paski na rękę, torby i etui. | pióra digitizer, rysiki pojemnościowe, paski na rękę, torby i etui. MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140 wymaga zasilacza 90 W sprzedawanego osobno. |
 
 Bez zmian (C.7): pozostałe wystąpienia „autoryzowany” poza kategorią tabletów i llms.txt; „TAKMA jako autoryzowany serwis Zebra” w FAQ gwarancji tabletów (klasyfikacja audytu nie liczy go jako „partner/dystrybutor”).
+
+### Decyzja: rysiki pojemnościowe usunięte (23.10.2026)
+Karty GMPSXU, GMPSXW i GMPSXN usunięto razem z powiązaniami w tabletach (ZX10 G2, UX10 G5, F110 G7, K120 G3, G140, F120), wpisami w mapie wymiarów zdjęć, plikami zdjęć i wzmianką w llms.txt. Powód: przewodniki Getac podają minimalne zamówienie 5 lub 10 szt., a koszyk sprzedaje pojedyncze sztuki; rysik jest w zestawie tabletów. Pióra digitizer zostają tylko przy modelach z wersjami z digitizerem (GMPDX7: ZX80, ZX80W; GMPDX6: F110 G7, F120, K120 G3).
