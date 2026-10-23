@@ -25,6 +25,7 @@ import { rfd90Products, rfd90Accessories } from './rfd90-products'
 import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
+import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
 import { bixolonRfidAccessories } from './bixolon-rfid-products'
@@ -95802,6 +95803,8 @@ const rawProductList: Product[] = [
   ...newlandMt93UhfAccessories,
   ...bradyRt710Products,
   ...bradyRt710Accessories,
+  ...getacTabletProducts,
+  ...getacTabletAccessories,
   ...rfidLabelProducts,
   ...desktopPrinters,
   ...rfidPrinterProducts,

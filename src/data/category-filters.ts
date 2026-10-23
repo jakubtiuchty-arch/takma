@@ -955,6 +955,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Zebra', manufacturer: 'zebra' },
         { value: 'Honeywell', manufacturer: 'honeywell' },
         { value: 'Brady', manufacturer: 'brady' },
+        { value: 'Getac', manufacturer: 'getac' },
       ],
     },
     {
@@ -970,12 +971,14 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'ekran',
       label: 'Przekątna ekranu',
-      description: 'Rozmiar wyświetlacza.\n• 8" — do jednej ręki, na wózku, w kieszeni kurtki\n• 10" — czytelne tabele i mapy, w aucie i na stanowisku',
+      description: 'Rozmiar wyświetlacza.\n• 8" — do jednej ręki, na wózku, w kieszeni kurtki\n• 10" — czytelne tabele i mapy, w aucie i na stanowisku\n• 11–14" — programy Windows i dokumentacja techniczna, w pojeździe i na stanowisku',
       derived: [
         { value: '8"', pattern: '^8[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
         { value: '8"', pattern: '\\S', specs: ['Wyświetlacz 8″'] },
         { value: '10"', pattern: '^10[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
         { value: '10"', pattern: '\\S', specs: ['Wyświetlacz 10″'] },
+        { value: '11–12,5"', pattern: '^1[12][,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
+        { value: '14"', pattern: '^14[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
       ],
     },
     {
@@ -1004,6 +1007,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'IP65', pattern: 'IP65', specs: ['Klasa ochrony', 'Klasa szczelności', 'Odporność'] },
         { value: 'IP66', pattern: 'IP66', specs: ['Klasa ochrony', 'Klasa szczelności', 'Odporność'] },
+        { value: 'IP67', pattern: 'IP67', specs: ['Klasa ochrony', 'Klasa szczelności', 'Odporność'] },
         { value: 'IP68', pattern: 'IP68', specs: ['Klasa ochrony', 'Klasa szczelności', 'Odporność'] },
       ],
     },
