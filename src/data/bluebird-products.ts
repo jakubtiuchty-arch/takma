@@ -108,9 +108,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Sprzedaż i obsługa klienta w sklepie",
-      "Kompletacja i inwentaryzacja w magazynie",
-      "Potwierdzanie dostaw w terenie (wersje 5G)"
+      "Doradztwo i sprzedaż przy półce",
+      "Skracanie kolejek do kas",
+      "Karty lojalnościowe i kontrola biletów w rozrywce i gastronomii",
+      "Potwierdzanie doręczeń przez kurierów"
     ],
     "variants": [
       {
@@ -345,9 +346,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kompletacja i przyjęcia w magazynie",
-      "Odczyt kodów na wysokich regałach (wersje SE55)",
-      "Praca w terenie i w dostawach (wersje 5G)"
+      "Kontrola cen i lokalizacja towaru w sklepie",
+      "Zarządzanie planogramem i promocjami",
+      "Kontrola parkowania i ruchu drogowego",
+      "Weryfikacja tożsamości w służbach publicznych"
     ],
     "variants": [
       {
@@ -622,9 +624,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Praca w magazynie i na produkcji z ryzykiem upadków",
-      "Odczyt kodów na wysokich regałach (wersje SE55)",
-      "Praca w terenie i w logistyce (wersje 5G)"
+      "Uzupełnianie półek i inwentaryzacja cykliczna",
+      "Ewidencja majątku i fakturowanie w serwisie terenowym",
+      "Mandaty elektroniczne i łączność patroli",
+      "Zarządzanie flotą w firmach kurierskich"
     ],
     "variants": [
       {
@@ -925,9 +928,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Praca w strefach 2 i 22 zagrożonych wybuchem",
-      "Przemysł chemiczny, paliwowy i magazyny materiałów niebezpiecznych",
-      "Kontrola i inwentaryzacja w zakładach z atmosferą wybuchową"
+      "Strefy zagrożenia wybuchem 2 i 22 (ATEX, IECEx, UKEX)",
+      "Przemysł naftowy i gazowy",
+      "Przedsiębiorstwa użyteczności publicznej",
+      "Produkcja przemysłowa"
     ],
     "variants": [
       {
@@ -1086,9 +1090,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Obsługa sklepu i kontrola cen",
-      "Proste zadania magazynowe i inwentaryzacja",
-      "Dostawy i praca w terenie (wersja 4G LTE)"
+      "Sprawdzanie cen i informacji o towarze",
+      "Kompletacja, wysyłka i przyjęcie towaru",
+      "Dokumentowanie stanu przesyłki przy doręczeniu",
+      "Inwentaryzacja części i planowanie tras w serwisie"
     ],
     "variants": [
       {
@@ -1310,9 +1315,11 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Inwentaryzacja towarów oznaczonych tagami UHF",
-      "Wyszukiwanie towarów w magazynie i sklepie",
-      "Ewidencja majątku i narzędzi"
+      "Synchronizacja stanów magazynowych w czasie rzeczywistym",
+      "Obsługa zwrotów i lokalizacja towaru w sklepie",
+      "Śledzenie materiałów i sprzętu na budowie",
+      "Weryfikacja pacjentów w ochronie zdrowia",
+      "Śledzenie produkcji WIP i narzędzi"
     ],
     "variants": [
       {
@@ -1476,9 +1483,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kompletacja i przyjęcia w magazynie",
-      "Obsługa sklepu i inwentaryzacja",
-      "Praca w trudnych warunkach (EF551R)"
+      "Identyfikacja pacjenta przy łóżku",
+      "Podawanie leków i obsługa apteki szpitalnej",
+      "Zatowarowanie sklepu i zarządzanie zapleczem",
+      "Weryfikacja zleceń w doręczeniach"
     ],
     "variants": [
       {
@@ -1791,9 +1799,11 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kompletacja i przyjęcia z wpisywaniem ilości",
-      "Aplikacje terminalowe (emulacja TE)",
-      "Odczyt kodów z wysokich regałów (wersje SE4850)"
+      "Kompletacja i rozmieszczanie towaru w magazynie",
+      "Aplikacje sterowane głosem i transakcje EDI",
+      "Przyjęcia dostaw na zaplecze sklepu",
+      "Zaopatrzenie linii i śledzenie części na produkcji",
+      "Elektroniczny pobór opłat drogowych"
     ],
     "variants": [
       {
@@ -2105,9 +2115,10 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Komunikacja i aplikacje firmowe w terenie",
-      "Obsługa zleceń i formularzy bez odczytu kodów",
-      "Telefon służbowy z NFC"
+      "Dokumentacja medyczna (EMR/EHR) i obsługa apteki",
+      "Odbiór w sklepie zamówień złożonych online (BOPIS)",
+      "Obsługa klienta i zarządzanie półkami",
+      "Przyjmowanie zamówień w hotelarstwie i gastronomii"
     ],
     "variants": [
       {
@@ -2297,10 +2308,11 @@ export const bluebirdProducts: Product[] = [
       }
     ],
     "applications": [
-      "Liczenie zapasów i wyszukiwanie towarów w sklepie",
-      "Inwentaryzacja w magazynie",
-      "Identyfikacja pacjentów i ewidencja sprzętu w szpitalu",
-      "Ewidencja sprzętu w centrum danych"
+      "Wyszukiwanie towaru i kontrola planogramu",
+      "Zameldowanie gości i kontrola biletów na wydarzeniach",
+      "Pobieranie próbek i podawanie leków w szpitalu",
+      "Śledzenie zasobów w centrach danych",
+      "Przyjęcia towaru i realizacja zamówień omnichannel"
     ],
     "variants": [
       {

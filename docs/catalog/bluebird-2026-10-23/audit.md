@@ -575,3 +575,9 @@ Kontrola (`porownaj-opisy.py`):
 
 - `--prefiks=bluebird-rfr`, pola `description`, `shortDescription`, `seoDescription`, `faq`: 0 par.
 - `--kategoria=akcesoria`, przed → po: `description` 149 → 100 (zniknęło 49 par stacji; pozostałe 6 par między stacjami to wcześniejsze wspólne frazy o zasilaczu 12 V i komorach na baterie), `shortDescription` 23 → 23, `seoDescription` 55 → 55, `faq` 0 → 0.
+
+## 15. Zastosowania 11 urządzeń (23.10.2026)
+
+Pole `applications` przepisane według sekcji „Industry & Applications” kart katalogowych, listy „Applications” karty S10 RFID i tekstu stron modeli (S70 Explosion Protection: „industrial manufacturing, Utilities and Oil and Gas”, ATEX/IECEx/UKEX Zone 2/22; RFR900: „retail, manufacturing, and distribution”). 3–5 haseł na kartę, żadne nie powtarza się między kartami ani nie jest zdaniem z opisu.
+
+Usunięte, bo źródła ich nie podają jako zastosowań: „Odczyt kodów na wysokich regałach (wersje SE55)” (S50, S70), „Odczyt kodów z wysokich regałów (wersje SE4850)” i „Aplikacje terminalowe (emulacja TE)” (EK430), „Praca w trudnych warunkach (EF551R)”, „Telefon służbowy z NFC” i „Obsługa zleceń i formularzy bez odczytu kodów” (SF650), „Przemysł chemiczny…” i „Kontrola i inwentaryzacja w zakładach z atmosferą wybuchową” (S70 Explosion Protection), dopiski „(wersje 5G)” / „(wersja 4G LTE)”. Zniknęły powtórzenia „Kompletacja i przyjęcia w magazynie” (S50, EF551) i „Odczyt kodów na wysokich regałach (wersje SE55)” (S50, S70). RFR900 bez zmian (3 hasła zgodne ze stroną modelu).
