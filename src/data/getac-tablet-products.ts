@@ -2046,6 +2046,379 @@ export const getacTabletProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-g140",
+    "slug": "getac-g140",
+    "name": "Getac G140",
+    "seoH1": "Getac G140",
+    "seoTitle": "Tablet przemysłowy Getac G140 14″ z Windows 11 Pro, AMD Ryzen AI",
+    "seoDescription": "Tablet przemysłowy Getac G140 14″, Windows 11 Pro, AMD Ryzen AI, Wi-Fi 7, IP66. Tablet rugged Getac G140 z LAN. G140 Getac PN: GX2764WI1DXX, GX6776WI1DXX.",
+    "shortDescription": "Getac G140 — tablet fully rugged 14″ z Windows 11 Pro (Copilot+ PC), procesorem AMD Ryzen AI, Wi-Fi 7, portem LAN i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID.",
+    "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje z tej karty mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/g140/",
+    "priceFrom": 13405.48,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GX2764WI1DXX.png",
+      "/images/products/GX2764WI1DXX-2.png",
+      "/images/products/GX2764WI1DXX-3.png",
+      "/images/products/GX2764WI1DXX-4.png"
+    ],
+    "imageDescriptions": [
+      "Getac G140 — widok z przodu, ekran 14 cali w poziomie i przyciski pod ekranem",
+      "Getac G140 — widok z przodu pod kątem, z lewej strony",
+      "Getac G140 — widok z przodu pod kątem, z prawej strony",
+      "Getac G140 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+    ],
+    "tags": [
+      "produkcja",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GX2764WI1DXX, GX2764WI1KXX, GX2764WI1DCX, GX2764WI1JXX, GX2764WI1BXX, GX2764WI1BSX, GX2774WI1DXX, GX6776WI1DXX, GX6776WI1DCX, GX6776WI1DSX, GX6776WI1JXX, GX6779WI1BXX"
+      },
+      {
+        "name": "Generacja",
+        "value": "G1"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Windows 11 Pro; Copilot+ PC"
+      },
+      {
+        "name": "Procesor",
+        "value": "AMD Ryzen AI 5 340 (6 rdzeni, do 4,8 GHz) albo AMD Ryzen AI 7 350 (8 rdzeni, do 5,0 GHz), zależnie od PN; opcje producenta: wersje PRO"
+      },
+      {
+        "name": "Grafika i NPU",
+        "value": "AMD Radeon 840M (Ryzen AI 5) lub 860M (Ryzen AI 7); AMD XDNA 2 do 50 TOPS"
+      },
+      {
+        "name": "Pamięć RAM",
+        "value": "16 GB albo 32 GB DDR5, zależnie od PN (opcja producenta: 64 GB)"
+      },
+      {
+        "name": "Dysk",
+        "value": "SSD PCIe NVMe 256 GB, 512 GB albo 1 TB, zależnie od PN (opcja producenta: 2 TB)"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "14″ WUXGA 1920 × 1200, IPS LCD z szerokim kątem widzenia, 1000 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch ze Smart Touch (palec, rękawica, rysik bez przełączania trybu); opcja: tryb podwójny z digitizerem"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 5 przycisków programowalnych"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Opcja: czytnik 1D/2D (imager) w górnym gnieździe, zależnie od PN"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 7"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.4"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE albo 5G Sub-6 ze zintegrowanym GPS; nano-SIM i eSIM, zależnie od PN"
+      },
+      {
+        "name": "HF RFID",
+        "value": "Opcja: HF RFID/NFC 13,56 MHz (iClass, HID Prox, ISO 15693, ISO 14443 A/B, Mifare, FeliCa), zależnie od PN"
+      },
+      {
+        "name": "Porty",
+        "value": "LAN RJ45 (10/100/1000), USB 3.2 Gen 2 Type-A, 2 × USB4 Type-C (DisplayPort, Power Delivery), gniazdo audio, gniazdo zasilania DC, złącze dokujące; opcja: złącza RF pass-through (3 dla 4G, 4 dla 5G)"
+      },
+      {
+        "name": "Gniazda opcji",
+        "value": "Górne: czytnik 1D/2D, port szeregowy, HF RFID albo USB 2.0; lewe: HDMI 2.1 i 2 × USB 2.0; przednie: czytnik linii papilarnych; tylne: czytnik kart chipowych"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 8 MP z autofokusem, przedni 5 MP z Windows Hello"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "TPM 2.0, Windows Hello, Getac Secure Erase, gniazdo Kensington; opcje: AMD PRO, czytnik linii papilarnych, czytnik kart chipowych"
+      },
+      {
+        "name": "Bateria",
+        "value": "2 × Li-ion 7,74 V, typowo 4070 mAh; opcja: 2 baterie o dużej pojemności 11,61 V, typowo 4070 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H, MIL-STD-461G; odporność na wibracje"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja w wybranych konfiguracjach: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "338,8 × 238,8 × 23,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,79 kg"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, 2 baterie 4070 mAh, zasilacz 65 W, przewód zasilający (EU, UK), rysik"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Dokumentacja techniczna, rysunki i mapy na ekranie 14 cali",
+      "Programy Windows w pojazdach służbowych",
+      "Serwis i utrzymanie ruchu na produkcji",
+      "Montaż na stanowisku z uchwytem VESA"
+    ],
+    "variants": [
+      {
+        "partNumber": "GX2764WI1DXX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, Wi-Fi",
+        "priceFrom": 13405.48,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "GX2764WI1KXX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, Wi-Fi, złącza anten zewnętrznych",
+        "priceFrom": 13728.16,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "Wi-Fi",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX2764WI1DCX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, Wi-Fi, czytnik 1D/2D",
+        "priceFrom": 15031.13,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "Wi-Fi",
+          "Czytnik kodów": "1D/2D"
+        }
+      },
+      {
+        "partNumber": "GX2764WI1JXX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, 4G LTE, GPS, złącza anten zewnętrznych",
+        "priceFrom": 14835.08,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "4G LTE, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX2764WI1BXX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, 5G, GPS, złącza anten zewnętrznych",
+        "priceFrom": 16260.58,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "5G, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX2764WI1BSX",
+        "name": "G140 — Ryzen AI 5 340, 16 / 256 GB, 5G, GPS, HF RFID, złącza anten zewnętrznych",
+        "priceFrom": 16905.94,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "16 / 256 GB",
+          "Łączność": "5G, GPS",
+          "HF RFID": "Tak",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX2774WI1DXX",
+        "name": "G140 — Ryzen AI 5 340, 32 / 256 GB, Wi-Fi",
+        "priceFrom": 15447.76,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 5 340",
+          "Pamięć RAM / SSD": "32 / 256 GB",
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "GX6776WI1DXX",
+        "name": "G140 — Ryzen AI 7 350, 32 / 512 GB, Wi-Fi",
+        "priceFrom": 17485.95,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 7 350",
+          "Pamięć RAM / SSD": "32 / 512 GB",
+          "Łączność": "Wi-Fi"
+        }
+      },
+      {
+        "partNumber": "GX6776WI1DSX",
+        "name": "G140 — Ryzen AI 7 350, 32 / 512 GB, Wi-Fi, HF RFID",
+        "priceFrom": 18131.31,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 7 350",
+          "Pamięć RAM / SSD": "32 / 512 GB",
+          "Łączność": "Wi-Fi",
+          "HF RFID": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX6776WI1DCX",
+        "name": "G140 — Ryzen AI 7 350, 32 / 512 GB, Wi-Fi, czytnik 1D/2D",
+        "priceFrom": 19111.6,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 7 350",
+          "Pamięć RAM / SSD": "32 / 512 GB",
+          "Łączność": "Wi-Fi",
+          "Czytnik kodów": "1D/2D"
+        }
+      },
+      {
+        "partNumber": "GX6776WI1JXX",
+        "name": "G140 — Ryzen AI 7 350, 32 / 512 GB, 4G LTE, GPS, złącza anten zewnętrznych",
+        "priceFrom": 18915.54,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 7 350",
+          "Pamięć RAM / SSD": "32 / 512 GB",
+          "Łączność": "4G LTE, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "GX6779WI1BXX",
+        "name": "G140 — Ryzen AI 7 350, 32 GB / 1 TB, 5G, GPS, złącza anten zewnętrznych",
+        "priceFrom": 22383.32,
+        "availability": "unavailable",
+        "attributes": {
+          "Procesor": "Ryzen AI 7 350",
+          "Pamięć RAM / SSD": "32 GB / 1 TB",
+          "Łączność": "5G, GPS",
+          "Antena zewnętrzna": "Tak"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Procesor": "Procesor AMD Ryzen AI z układem NPU AMD XDNA 2 (do 50 TOPS).\n\n• Ryzen AI 5 340 — 6 rdzeni, grafika Radeon 840M.\n\n• Ryzen AI 7 350 — 8 rdzeni, grafika Radeon 860M.",
+      "Pamięć RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe na system, programy i dane.",
+      "Łączność": "Sposób połączenia z siecią. Każda wersja G140 ma Wi-Fi 7, Bluetooth 5.4 i port LAN.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• 3 złącza dla 4G (GPS, WLAN, WWAN), 4 złącza dla 5G (dodatkowo WWAN MIMO).",
+      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager) w górnym gnieździe.\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
+      "HF RFID": "Czytnik HF RFID/NFC 13,56 MHz w górnym gnieździe.\n\n• Karty iClass, HID Prox, ISO 15693, ISO 14443 A/B, Mifare i FeliCa."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-bateria-gbm2x4",
+      "getac-bateria-gbm3x8",
+      "getac-stacja-usb-c-ds100-gddse2",
+      "getac-ladowarka-2-gniazdowa-gcmcet",
+      "getac-zasilacz-samochodowy-gad2x4",
+      "getac-pasek-na-reke-gmhrxq",
+      "getac-rysik-digitizer-gmpdx6",
+      "getac-torba-gmbcx7"
+    ],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-k120-g3",
+      "getac-f110-g7",
+      "getac-ux10-g5",
+      "honeywell-rt10w",
+      "zebra-et60w",
+      "zebra-et65w"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac G140 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-g140.pdf",
+        "size": "861 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Z jakiej wysokości Getac G140 wytrzymuje upadek?",
+        "answer": "Z 1,2 m. Tablet ma klasę szczelności IP66 oraz certyfikaty MIL-STD-810H i MIL-STD-461G. Mniejsze tablety Getac z Windows, np. <a href=\"/produkt/getac-f120\">F120</a> i <a href=\"/produkt/getac-k120-g3\">K120 G3</a>, wytrzymują upadek z 1,8 m."
+      },
+      {
+        "question": "Jak wymienia się baterie w Getac G140?",
+        "answer": "Tablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Te same baterie GBM2X4 i GBM3X8 pasują do Getac F120."
+      },
+      {
+        "question": "W jakiej temperaturze pracuje Getac G140?",
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C."
+      },
+      {
+        "question": "Jak zamocować Getac G140 na stanowisku lub w pojeździe?",
+        "answer": "Getac przewiduje podpórkę VESA, obrotowy pasek na rękę VESA, uchwyt magnetyczny VESA, uchwyt pojazdowy i stację pojazdową. Stacja pojazdowa ma port szeregowy, 5 portów USB, LAN, HDMI oraz 3 złącza anten dla 4G albo 4 dla 5G."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
