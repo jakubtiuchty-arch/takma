@@ -683,6 +683,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
         { value: 'CipherLab', manufacturer: 'cipherlab' },
         { value: 'SUNMI', manufacturer: 'sunmi' },
+        { value: 'Bluebird', manufacturer: 'bluebird' },
       ],
     },
     { specKey: 'system-terminala', label: 'System operacyjny', description: 'Android obsługuje zgodne aplikacje mobilne. cOS wymaga aplikacji zadaniowej dla kolektora; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny', 'System']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },
@@ -701,8 +702,8 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Przekątna wyświetlacza.\n• 4–4,3" — kompaktowe terminale z klawiaturą\n• 5–5,7" — pośrednie, do jednej ręki\n• 6" i więcej — pełnoekranowe, dużo miejsca na aplikację',
       derived: [
         { value: '4–4,3"', pattern: '^4[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
-        { value: '5–5,7"', pattern: '^5[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
-        { value: '6" i więcej', pattern: '^6[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
+        { value: '5–5,7"', pattern: '^5[,.]?[0-9]{0,2}\\s*["″]', specs: ['Wyświetlacz'] },
+        { value: '6" i więcej', pattern: '^6[,.]?[0-9]{0,2}\\s*["″]', specs: ['Wyświetlacz'] },
       ],
     },
     {
@@ -783,6 +784,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Datalogic', manufacturer: 'datalogic' },
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
+        { value: 'Bluebird', manufacturer: 'bluebird' },
       ],
     },
     {
@@ -849,6 +851,13 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'M3 SM30', namePattern: 'SM30' },
         { value: 'M3 UL20 / UL30', pattern: 'UL20|UL30', specs: ['Kompatybilność'] },
         { value: 'M3 UL20 / UL30', namePattern: 'UL20|UL30' },
+        { value: 'Bluebird S10', pattern: 'Bluebird S10(?! RFID)', specs: ['Kompatybilność'] },
+        { value: 'Bluebird S10 RFID', pattern: 'Bluebird S10 RFID', specs: ['Kompatybilność'] },
+        { value: 'Bluebird S20', pattern: 'Bluebird S20', specs: ['Kompatybilność'] },
+        { value: 'Bluebird S50 / S70', pattern: 'Bluebird S[57]0', specs: ['Kompatybilność'] },
+        { value: 'Bluebird EF551 / EF551R', pattern: 'Bluebird EF551', specs: ['Kompatybilność'] },
+        { value: 'Bluebird EK430', pattern: 'Bluebird EK430', specs: ['Kompatybilność'] },
+        { value: 'Bluebird SF650', pattern: 'Bluebird SF650', specs: ['Kompatybilność'] },
       ],
     },
     {
@@ -1422,7 +1431,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
 }
 
 // Strona marki: te same filtry co kategoria (grupa Producent chowa się sama, bo ma jedną wartość)
-for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-honeywell', 'terminale-datalogic', 'terminale-m3-mobile']) {
+for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-honeywell', 'terminale-datalogic', 'terminale-m3-mobile', 'terminale-bluebird']) {
   categoryFilters[brand] = categoryFilters['terminale-mobilne']
 }
 // Skanery: strony marek i podkategorie dostają ten sam zestaw — grupy z jedną wartością (Producent, Rodzaj) chowają się same
