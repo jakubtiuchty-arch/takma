@@ -2918,7 +2918,7 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
   'tablety-przemyslowe': {
     definition: {
       heading: 'Co to jest tablet przemysłowy (rugged tablet)?',
-      content: 'Tablet przemysłowy (ang. rugged tablet) to mobilny komputer z hartowanym ekranem dotykowym, zaprojektowany do pracy w trudnych warunkach: magazynach, halach produkcyjnych, chłodniach, na budowach i w pojazdach. W odróżnieniu od tabletów konsumenckich (iPad, Samsung Galaxy), modele rugged mają certyfikaty IP65–IP68 (pyłoszczelność i odporność na wodę), wytrzymują upadki na beton z 1,2–1,8 m (norma MIL-STD-810H), oferują ekrany o jasności 500–1000 nit czytelne w pełnym słońcu i obsługują dotyk w rękawicach oraz w deszczu. Kluczowe cechy enterprise: wymieniana bateria z Hot Swap (zamiana bez wyłączania urządzenia), wbudowane skanery kodów kreskowych 1D/2D, opcjonalne moduły RFID UHF, wsparcie producenta przez 5–10 lat (aktualizacje bezpieczeństwa) i integracja z systemami MDM do zarządzania flotą. Na polskim rynku B2B dominują trzy marki: Zebra Technologies (seria ET — najszerszy ekosystem, Mobility DNA), Getac (fully rugged, tradycja military-grade) i Honeywell (integracja z Operational Intelligence). TAKMA jako autoryzowany partner oferuje tablety wszystkich trzech producentów z doradztwem technicznym, konfiguracją MDM i serwisem pogwarancyjnym.',
+      content: 'Tablet przemysłowy (ang. rugged tablet) to mobilny komputer z hartowanym ekranem dotykowym, zaprojektowany do pracy w trudnych warunkach: magazynach, halach produkcyjnych, chłodniach, na budowach i w pojazdach. W odróżnieniu od tabletów konsumenckich (iPad, Samsung Galaxy), modele rugged mają certyfikaty IP65–IP68 (pyłoszczelność i odporność na wodę), wytrzymują upadki na beton z 1,2–1,8 m (norma MIL-STD-810H), oferują ekrany o jasności 500–1200 nit czytelne w pełnym słońcu i obsługują dotyk w rękawicach oraz w deszczu. Kluczowe cechy enterprise: wymieniana bateria z Hot Swap (zamiana bez wyłączania urządzenia), wbudowane skanery kodów kreskowych 1D/2D, opcjonalne moduły RFID UHF, wsparcie producenta przez 5–10 lat (aktualizacje bezpieczeństwa) i integracja z systemami MDM do zarządzania flotą. Na polskim rynku B2B dominują trzy marki: Zebra Technologies (seria ET — najszerszy ekosystem, Mobility DNA), Getac (fully rugged, tradycja military-grade) i Honeywell (integracja z Operational Intelligence). TAKMA jako partner oferuje tablety czterech producentów: Zebra, Getac, Honeywell i Brady, z doradztwem technicznym, konfiguracją MDM i serwisem pogwarancyjnym.',
     },
     buyingGuide: {
       heading: 'Jak wybrać tablet przemysłowy? 7 kryteriów decyzyjnych',
@@ -2932,14 +2932,14 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
         'TCO (Total Cost of Ownership) — cena zakupu to 30–40% kosztu 5-letniego. Dolicz: baterie zapasowe, stacje ładowania, etui/uchwyty, kontrakt serwisowy, wymianę baterii co 2–3 lata, ewentualną wymianę floty przy krótkim wsparciu producenta. Tablet z 8-letnim wsparciem Android (Zebra ET401) ma o 20–30% niższy TCO niż model z 3-letnim wsparciem.',
       ],
     },
-    expertAuthority: 'TAKMA jest partnerem i integratorem tabletów przemysłowych Zebra Technologies, Getac i Honeywell z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasi inżynierowie wdrożyli setki tabletów rugged w magazynach, chłodniach (-30°C), na liniach produkcyjnych, w flotach pojazdów i w szpitalach — od pojedynczych stanowisk po floty 200+ urządzeń zarządzanych przez SOTI, Airwatch i Zebra StageNow. Oferujemy pełne wsparcie: od doboru modelu i porównania producentów, przez konfigurację MDM i staging flotowy, po montaż na wózkach widłowych i pojazdach. Serwis gwarancyjny i pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku.',
+    expertAuthority: 'TAKMA jest partnerem i integratorem tabletów przemysłowych Zebra Technologies, Getac i Honeywell z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasi inżynierowie wdrożyli setki tabletów rugged w magazynach, chłodniach (-30°C), na liniach produkcyjnych, w flotach pojazdów i w szpitalach — od pojedynczych stanowisk po floty 200+ urządzeń zarządzanych przez SOTI, Airwatch i Zebra StageNow. Oferujemy pełne wsparcie: od doboru modelu i porównania producentów, przez konfigurację MDM i staging flotowy, po montaż na wózkach widłowych i pojazdach. Serwis gwarancyjny i pogwarancyjny tabletów Zebra zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku.',
     technicalDeepDive: `Rynek tabletów przemysłowych dzieli się na trzy segmenty: fully rugged (MIL-STD-810H, IP67/IP68, upadki 1,5–1,8 m), semi-rugged (IP65, upadki 1,0–1,2 m) i business rugged (IP54, upadki 0,7–1,0 m). W środowiskach magazynowych i produkcyjnych rekomendujemy minimum semi-rugged (IP65).
 
 Procesory: tablety enterprise używają platform Qualcomm (QCM6490, QCS8550) pod Androidem i Intel Core (i5/i7 12–13. generacji) pod Windows. Qualcomm QCS8550 w litografii 4 nm oferuje NPU 48 TOPS do zadań AI edge (wizualna kontrola jakości, OCR w czasie rzeczywistym). Intel Core i5-1245U (10C/12T) zapewnia wydajność porównywalną z laptopem biurowym.
 
 Ekrany: jasność 500 nit (czytelny w cieniu i przy oświetleniu sztucznym), 800 nit (czytelny przy bezpośrednim świetle dziennym), 1000 nit (czytelny w pełnym słońcu i przy zamgleniu mroźniczym). Technologia dotykowa: pojemnościowa z trybem mokrym (filtrowanie kropel wody) i rękawicowym (obsługa w rękawicach roboczych i mroźniczych). Gorilla Glass 5 (ET40) vs Gorilla Glass Victus 2 (ET401) — 2× wyższa odporność na zarysowania.
 
-Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy). Hot Swap (wymiana baterii bez wyłączania urządzenia) — dostępny w Zebra ET i w tabletach Getac: ZX80, ZX80W i ZX10 G2 mają kieszeń na baterię wymienną, F110, F120, K120 i G140 pracują na 2 bateriach wymienianych bez wyłączania (LifeSupport), a UX10 G5 ma tę funkcję z opcjonalną baterią podtrzymującą. Stacje ładowania: 1-gniazdowe (biurkowe) i 5-gniazdowe (flotowe). Zasilacze samochodowe do montażu w pojazdach.
+Baterie i zasilanie: pojemność baterii i czas pracy zależą od modelu oraz liczby baterii. Hot Swap (wymiana baterii bez wyłączania urządzenia) jest dostępny w Zebra ET. W tabletach Getac F110 G7, F120, K120 G3 i G140, które pracują na 2 bateriach, jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko w konfiguracji z baterią podtrzymującą, na zamówienie. Ładowarki i stacje: biurkowe 1-gniazdowe i wielostanowiskowe (u Zebra 5-gniazdowe, u Getac 2- i 8-gniazdowe). Zasilacze samochodowe do montażu w pojazdach.
 
 Łączność bezprzewodowa: Wi-Fi 6 (802.11ax, do 1,2 Gbit/s) → Wi-Fi 6E (6 GHz, do 2,4 Gbit/s) → Wi-Fi 7 (802.11be, do 5,8 Gbit/s). 5G Sub-6 GHz (do 1 Gbit/s w terenie) i mmWave (do 10 Gbit/s w linii wzroku). Bluetooth 5.2–5.4 do akcesoriów i IoT.`,
     useCases: [
@@ -2977,7 +2977,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
         },
         {
           title: 'Hot Swap baterii to cecha, która dzieli rynek na pół',
-          text: 'Zebra ET ma Hot Swap w każdym modelu — wymiana baterii w 10 sekund bez utraty sesji. Tablety bez Hot Swap wymagają wyłączenia przy wymianie baterii (restart 30–90 sekund, utrata sesji). W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę. Tablety Getac w ofercie TAKMA też wymieniają baterię bez wyłączania (UX10 G5 z opcjonalną baterią podtrzymującą).',
+          text: 'Zebra ET ma Hot Swap w każdym modelu — wymiana baterii w 10 sekund bez utraty sesji. Tablety bez Hot Swap wymagają wyłączenia przy wymianie baterii (restart 30–90 sekund, utrata sesji). W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę. W tabletach Getac F110 G7, F120, K120 G3 i G140, które pracują na 2 bateriach, jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko w konfiguracji z baterią podtrzymującą, na zamówienie.',
         },
         {
           title: 'Wsparcie Android to ukryty czynnik TCO — różnica 3 vs 8 lat',
@@ -2985,7 +2985,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
         },
         {
           title: 'Porównanie marek: Zebra, Getac, Honeywell, Panasonic',
-          text: 'Zebra: najszerszy ekosystem (Mobility DNA, 30+ narzędzi w cenie), najdłuższe wsparcie Android, Hot Swap, integracja z drukarkami/skanerami Zebra. Getac: fully rugged z tradycją military-grade (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows), ekrany LumiBond, mocna pozycja w energetyce i obronności. Honeywell: Operational Intelligence, integracja z skanerami Honeywell, Velocity TE. Panasonic Toughbook: premium Windows, najwyższa klasa IP (IP68 w FZ-G2), dominacja w rządzie/wojsku. Dla magazynów i produkcji: Zebra. Dla energetyki i obronności: Getac. Dla Windows enterprise: Panasonic lub Zebra ET80.',
+          text: 'Zebra: najszerszy ekosystem (Mobility DNA, 30+ narzędzi w cenie), najdłuższe wsparcie Android, Hot Swap, integracja z drukarkami/skanerami Zebra. Getac: fully rugged z tradycją military-grade (MIL-STD-810H; MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140, z zasilaczem 90 W sprzedawanym osobno), ekrany LumiBond, mocna pozycja w energetyce i obronności. Honeywell: Operational Intelligence, integracja z skanerami Honeywell, Velocity TE. Panasonic Toughbook: premium Windows, najwyższa klasa IP (IP68 w FZ-G2), dominacja w rządzie/wojsku. Dla magazynów i produkcji: Zebra. Dla energetyki i obronności: Getac. Dla Windows enterprise: Panasonic lub Zebra ET80.',
         },
         {
           title: 'Stacja ładowania flotowa to inwestycja, nie koszt',
@@ -2996,7 +2996,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
     faq: [
       {
         question: 'Czym tablet przemysłowy różni się od konsumenckiego?',
-        answer: 'Tablet przemysłowy (rugged) ma: certyfikat IP65–IP68, wytrzymałość na upadki 1,2–1,8 m (MIL-STD-810H), ekran 500–1000 nit do pracy na słońcu, tryb dotykowy w rękawicach i w deszczu, wymienną baterię z Hot Swap, wbudowany skaner kodów kreskowych 2D i wsparcie producenta 5–10 lat. Konsumencki tablet (iPad, Samsung Galaxy) nie ma skanera, Hot Swap, trybu rękawicowego i ma krótsze wsparcie (3–4 lata). W środowisku magazynowym/produkcyjnym tablet konsumencki ulega uszkodzeniu w ciągu 6–12 miesięcy.',
+        answer: 'Tablet przemysłowy (rugged) ma: certyfikat IP65–IP68, wytrzymałość na upadki 1,2–1,8 m (MIL-STD-810H), ekran 500–1200 nit do pracy na słońcu, tryb dotykowy w rękawicach i w deszczu, wymienną baterię z Hot Swap, wbudowany skaner kodów kreskowych 2D i wsparcie producenta 5–10 lat. Konsumencki tablet (iPad, Samsung Galaxy) nie ma skanera, Hot Swap, trybu rękawicowego i ma krótsze wsparcie (3–4 lata). W środowisku magazynowym/produkcyjnym tablet konsumencki ulega uszkodzeniu w ciągu 6–12 miesięcy.',
       },
       {
         question: 'Ile kosztuje tablet przemysłowy?',
@@ -3016,7 +3016,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Jaki tablet do chłodni i mroźni (-20°C do -30°C)?',
-        answer: 'Do chłodni nadają się m.in.: Zebra ET60/ET65 (Android, 10″, -30°C, 1000 nit, podgrzewany ekran, od ~7 920 zł) i [Getac F110 G7](/produkt/getac-f110-g7) (Windows, 11,6″, -29°C, 1200 nit, LumiBond, od ~10 980 zł). Od -29°C pracują też pozostałe tablety Getac w ofercie. Standardowe tablety (ET40, iPad) nie są certyfikowane poniżej -10°C — bateria degraduje się, ekran traci responsywność, kondensacja uszkadza elektronikę.',
+        answer: 'Do chłodni nadają się m.in.: Zebra ET60/ET65 (Android, 10″, -30°C, 1000 nit, podgrzewany ekran, od ~7 920 zł) i [Getac F110 G7](/produkt/getac-f110-g7) (Windows, 11,6″, -29°C, 1200 nit, LumiBond, od ~10 980 zł). Od -29°C pracują też pozostałe tablety Getac w ofercie. Wyjątek: ZX10 G2 na samej baterii pracuje od -15°C z 1 baterią standardową, od -21°C z 2 standardowymi i od -29°C z 2 bateriami o dużej pojemności; przy zasilaniu sieciowym od -29°C. Standardowe tablety (ET40, iPad) nie są certyfikowane poniżej -10°C — bateria degraduje się, ekran traci responsywność, kondensacja uszkadza elektronikę.',
       },
       {
         question: 'Jak długo działa bateria w tablecie przemysłowym?',
@@ -3028,7 +3028,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Jaka jest gwarancja na tablety przemysłowe?',
-        answer: 'Standardowa gwarancja: 1–2 lata w zależności od producenta. Kontrakty serwisowe (Zebra OneCare, Getac Bumper-to-Bumper, Honeywell Service Plans): 3–5 lat obejmujące naprawy, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany serwis Zebra wykonuje naprawy gwarancyjne i pogwarancyjne w Polsce — serwis-zebry.pl.',
+        answer: 'Standardowa gwarancja: 1–3 lata zależnie od producenta; tablety Getac mają w standardzie 3 lata Bumper-to-Bumper z przypadkowymi uszkodzeniami. Kontrakty serwisowe (Zebra OneCare, Getac Bumper-to-Bumper, Honeywell Service Plans): 3–5 lat obejmujące naprawy, wymianę urządzeń i wsparcie techniczne. TAKMA jako autoryzowany serwis Zebra wykonuje naprawy gwarancyjne i pogwarancyjne w Polsce — serwis-zebry.pl.',
       },
       {
         question: 'Jakie systemy MDM obsługują tablety przemysłowe?',
@@ -3040,7 +3040,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Zebra, Getac czy Honeywell — którego producenta wybrać?',
-        answer: 'Zebra: najszerszy ekosystem Mobility DNA (30+ narzędzi w cenie), najdłuższe wsparcie Android (do A19), Hot Swap w standardzie, integracja z drukarkami i skanerami Zebra — najlepsza opcja dla magazynów, retail i produkcji. Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows), ekrany LumiBond, mocna pozycja w energetyce, obronności i służbach mundurowych. Honeywell: integracja z Operational Intelligence, skanery Honeywell, Velocity TE — dobra opcja jeśli masz już ekosystem Honeywell. Skontaktuj się z TAKMA po porównanie konkretnych modeli.',
+        answer: 'Zebra: najszerszy ekosystem Mobility DNA (30+ narzędzi w cenie), najdłuższe wsparcie Android (do A19), Hot Swap w standardzie, integracja z drukarkami i skanerami Zebra — najlepsza opcja dla magazynów, retail i produkcji. Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-810H; MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140, z zasilaczem 90 W sprzedawanym osobno), ekrany LumiBond, mocna pozycja w energetyce, obronności i służbach mundurowych. Honeywell: integracja z Operational Intelligence, skanery Honeywell, Velocity TE — dobra opcja jeśli masz już ekosystem Honeywell. Skontaktuj się z TAKMA po porównanie konkretnych modeli.',
       },
       {
         question: 'Czy tablet przemysłowy działa w deszczu?',
@@ -3058,7 +3058,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
     comparisons: [
       {
         title: 'Zebra ET40 vs Getac ZX80 — Android 10″ vs Android 8″',
-        content: 'Zebra ET40 10″: Qualcomm QCM6490, Wi-Fi 6E, skaner SE4710, IP65, Mobility DNA (30+ narzędzi w cenie), Hot Swap, Android do A17, od ~3 250 zł. [Getac ZX80](/produkt/getac-zx80) 8″: Qualcomm QCS6490, Android 15, Wi-Fi 6E, opcjonalny czytnik 1D/2D, IP67, ekran LumiBond 1000 nit, bateria wymieniana bez wyłączania, upadki z 1,8 m, od ~5 180 zł. ET40 wygrywa ceną i ekosystemem. ZX80 wygrywa IP67, odpornością na upadki i kompaktowością 8″.',
+        content: 'Zebra ET40 10″: Qualcomm QCM6490, Wi-Fi 6E, skaner SE4710, IP65, Mobility DNA (30+ narzędzi w cenie), Hot Swap, Android do A17, od ~3 250 zł. [Getac ZX80](/produkt/getac-zx80) 8″: Qualcomm QCS6490, Android 15, Wi-Fi 6E, opcjonalny czytnik 1D/2D, IP67, ekran LumiBond 1000 nit, kieszeń na baterię wymienianą bez wyłączania (bateria sprzedawana osobno), upadki z 1,8 m, od ~5 180 zł. ET40 wygrywa ceną i ekosystemem. ZX80 wygrywa IP67, odpornością na upadki i kompaktowością 8″.',
       },
       {
         title: 'Tablet Android vs tablet Windows — kiedy który?',
