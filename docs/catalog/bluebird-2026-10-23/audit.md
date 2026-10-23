@@ -351,3 +351,98 @@ Poprawki w trakcie samokontroli: S10 RFID — „HD+” zamieniono na rozdzielcz
 | bluebird-sf650 | 1216/1216 | 1216/1216 | 1216/1216 | 1216/1216 | 960/960 | 960/960 |
 
 Wszystkie 9 kart: bez przewijania przy 1440, 1280 i 1024 px w obu stanach. Uwaga: lokalny `next start` nie ma dostępu do bazy (`ECONNREFUSED`), więc ceny i stany na żywo na kartach lokalnych są puste; wymiary tabel tego nie zmieniają.
+
+## 12. Poprawki po audytach (23.10.2026)
+
+Podstawa: dwa niezależne audyty (karty terminali; akcesoria, strona marki i zdjęcia). Zmiany porównano ponownie z kartami katalogowymi i przewodnikami akcesoriów Bluebird.
+
+### Karty terminali
+
+| Karta | Pole | Przed | Po |
+|---|---|---|---|
+| S20, S50, S70, S70 EP, S10, EF551, EK430 | opis, FAQ (Android) | „Producent deklaruje możliwość aktualizacji do Androida 17 / planuje aktualizację do Androida 18. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm.” | „Android 17 to najwyższa zapowiedziana wersja dla S20. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm.” Wersje: S20 — 17; S50, S70, S70 EP, EF551 — 16; S10 — 18; EK430 — 14 (karty: „Upgradeable to” / „Planned to be upgraded to”; „Bluebird warranty program should be purchased to get Android upgrade service”). |
+| S10 RFID | opis, FAQ | jw., bez wersji | „Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm.” (karta nie podaje wersji docelowej) |
+| EF551 | `shortDescription` | „…Rugged (EF551R) z odpornością na upadki z 2,4 m.” | „…z 2,4 m w temperaturze pokojowej.” (karta: „at room temperature”) |
+| S70 | `seoDescription` | „Wi-Fi 6E lub 5G, upadki z 3,05 m. Kolektor danych Bluebird full rugged.” | „Wi-Fi 6E, opcja 5G, upadki z 3,05 m w temperaturze pokojowej. Wzmocniony kolektor danych Bluebird.” (158 znaków) |
+| S70 | `shortDescription` | „IP68 i IP65.” | „IP68 i IP65 z założoną baterią.” |
+| S20, S50, S70, S70 EP | opis, specyfikacja | „IP68 i IP65 z baterią” / „IP68 i IP65 (z baterią)” | „IP68 i IP65 z założoną baterią” (EF551 bez zmian — karta nie wiąże IP z baterią) |
+| S10 | atrybut „Skaner” (`S10-ANLD`, `S10-A4LCW`) | „Imager 1D/2D” | „SE4710” (Jarltech i ERS zgodnie) |
+| S10 | dymek „Skaner” | „Imager 1D/2D — moduł 1D/2D innego typu niż BE470.” | „SE4710 — imager Zebra do kodów 1D i 2D, standardowy zakres odczytu.” |
+| S10 | specyfikacja „Skaner”, opis, FAQ | „Imager 1D/2D (BE470 albo inny moduł 1D/2D…)”; FAQ „inny moduł 1D/2D” | „BE470 albo SE4710, zależnie od PN; kody 1D i 2D”; FAQ: „silnik Bluebird BE470 albo imager Zebra SE4710” |
+| S10 | dymek „Łączność” | tylko punkt 4G LTE | dodany punkt „Wi-Fi — praca w sieci firmowej.” |
+| S10 | `relatedProducts` | S20, SF650, EF551, S50 | S20, S70, EF551, S50 (SF650 nie ma skanera; S20 była już na liście, więc w miejsce SF650 wstawiono S70) |
+| EF551 | dymek i FAQ „Skaner” | „moduł standardowy do odczytu z bliska” | „standardowy zakres odczytu” / „moduł 1D/2D o standardowym zakresie odczytu” (karta: „scan in standard range”) |
+| EK430 | `seoTitle` | „…z klawiaturą, wersja pistoletowa” | „…z klawiaturą, wersja prosta lub pistoletowa” |
+| EK430 | opis | „Na każdym modelu jest fabrycznie zainstalowany emulator terminala (TE)…” | dopisane: „Licencję emulatora ma tylko wersja pistoletowa.” (strona EK430: „pre-loaded on every model and pre-licensed on the gun-style model”) |
+| S70, S70 EP | `imageDescriptions[2]` | „widok z przodu pod kątem, lewa strona z przyciskami” | „widok z przodu pod kątem, prawa krawędź z przyciskiem skanowania i przyciskami głośności” (sprawdzone na zdjęciu) |
+| EK430 | `imageDescriptions[1]` | „tył obudowy z oknem skanera i złączami” | „tył obudowy z aparatem, złączem 10-pinowym i baterią” (sprawdzone na zdjęciu) |
+| Wszystkie 9 | FAQ | PN w odpowiedziach (np. „uchwyt pistoletowy 210080024”, „S20-A5LAW”, „A5 w PN”, „PN z literą T”, „S10-ANLJRW”) | nazwy z linkami do kart (np. „[uchwyt pistoletowy do S20](…)”), „wersje 5G”, „wersja pistoletowa”; w FAQ nie ma PN |
+| S20, S50, EF551 | opis, specyfikacja | upadki z 1,5 m bez temperatury | „…w temperaturze od −10°C do +50°C” (karty: „-10° C to 50° C”) |
+| S50 | opis, specyfikacja „Masa” | „Masa terminala wynosi 322 g.” / „322 g” | „…z baterią standardową wynosi 322 g.” / „322 g (z baterią standardową)” |
+| S20 | FAQ | „Ile pracuje bateria i czy można ją wymienić w czasie pracy?” | „Jaką baterię ma Bluebird S20 i czy można ją wymienić w czasie pracy?” |
+| EK430 | FAQ | „Ile pracuje bateria EK430?” | „Jaką baterię ma Bluebird EK430?” |
+| S20, S50, S70, EF551 | `seoDescription`, `shortDescription`, `llms.txt` | „Wi-Fi 6E lub/albo 5G” | `seoDescription`: „Wi-Fi 6E, opcja 5G”; `shortDescription` (S50, S70, EF551): „Wi-Fi 6E w każdej wersji, a wersje 5G mają także modem 5G” |
+| S70 (strona marki, `llms.txt`) | rola / opis | „full rugged” | „wzmocniony” |
+| S20 | FAQ ładowania | bez podkładki | „Terminal bez osłony wymaga w stacji podkładki do stacji S20” (przewodnik S20: „Requires (Shim [1ea]) … without Rugged Boots”) |
+| EF551 | FAQ ładowania | „Stacje EF551 pasują do EF551 i EF551R i wymagają zasilacza 9 V.” | dodane: podkładka i „EF551R wkłada się do stacji po wyjęciu wkładki z podkładki.” (przewodnik EF551) |
+| S70 EP | opis, specyfikacja „Bateria” | „Bateria 5000 mAh obsługuje szybkie ładowanie i wymianę bez wyłączania terminala (hot swap)”; spec. „…szybkie ładowanie, wymiana bez wyłączania (hot swap)” | „Bateria ma pojemność 5000 mAh.”; spec. „5000 mAh, 19,25 Wh”. Tekst nie sugeruje wymiany ani ładowania baterii w strefie Ex; warunków nie dopisano (karta ich nie podaje). |
+| S20 | opis, specyfikacja „Bateria” | link „Bateria rozszerzona 6000 mAh…”; spec. „opcja: 6000 mAh” | link „bateria rozszerzona do S20” bez liczby; spec. „opcja: bateria rozszerzona” (specyfikacja nie renderuje linków — link jest w opisie i FAQ) |
+| SF650 | opis, „Zawartość zestawu”, FAQ, blok „Wymagane” | „Zasilacz z wtyczką EU jest w zestawie.”; bez kabla | zasilacz EU w zestawie; kabel USB-A – USB-C (`603010005`) w bloku „Wymagane — sprzedawane osobno” i w „Zawartości zestawu” jako zamawiany osobno (Jarltech wymienia w zestawie tylko „power supply unit (EU, wall wart)”, a przy PN z kablem pisze „incl.: cable (USB)”) |
+
+### Blok „Wymagane — sprzedawane osobno” (kabel `603010005`) — wynik dla każdej karty
+
+| Karta | Złącze ładowania (karta) | Dystrybutor / przewodnik | Blok |
+|---|---|---|---|
+| S20, S50, S70, S10 | USB-C | przewodniki S10/S20/S50/S70: `602010041` „Requires Country Specific Adapter Plug and USB Type C to A cable”; `603010005` „USB A to USB C communications and charging cable” | zasilacz `602010041` + wtyczka `602020024` + kabel `603010005` (bez zmian) |
+| S70 Explosion Protection | USB-C (jak S70) | Jarltech: S70 EP brak osobnego opisu akcesoriów; zasilacz i kabel jak S70 | bez zmian |
+| S10 RFID | USB-C (USB 3.0, OTG) | karta: „5V/3A Direct Charging Power adapter”; Jarltech `602010041`/`602020024` z „s10-rfid” | bez zmian |
+| EF551 | USB-C (USB 3.1) i złącze dokujące | przewodnik EF551: zasilacz do ładowania bezpośredniego „Requires Country Specific Adapter Plug”, „Requires USB Type C to USB Type A Cable for charging”; Jarltech: „order separately: power cable, power supply unit” | bez zmian |
+| EK430 | USB-C (USB 3.1, OTG); dodatkowo 8-pinowe złącze na dole i 10-pinowe z tyłu (akcesoria) | karta: „Direct Charger Kit”; Jarltech: „connection: USB-C”, „order separately: power cable, power supply unit” | bez zmian; ładowanie przez USB-C, więc kabel USB-A – USB-C pasuje |
+| SF650 | USB-C (USB 2.0) | Jarltech: w zestawie tylko zasilacz EU | nowy blok: kabel `603010005` |
+
+### Akcesoria
+
+| PN | Pole | Przed | Po |
+|---|---|---|---|
+| `355040099` | nazwa, SEO, opisy, specyfikacja, opis zdjęcia | 6000 mAh, 23,1 Wh | 6160 mAh, bez Wh (przewodnik S20 i Jarltech) |
+| `355040097` | link w opisie | „Bateria rozszerzona 6000 mAh Bluebird S20” | „Bateria rozszerzona 6160 mAh Bluebird S20” |
+| `204020029` | „Komunikacja” | „Ethernet 1 Gb/s” | „2 × Ethernet 1 Gb/s” |
+| `204010058`, `204010059`, `204020019` | opis | „Gniazdo wymaga podkładki dopasowującej terminal.” | „Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie.” (PN podkładki EF551 nieznany API; Jarltech: „requires 1x Shim”); w stacji 4-gniazdowej 4 podkładki |
+| `204010059` | opis | brak kabla | „Do komunikacji przez USB potrzebny jest [Kabel USB-A – USB-C Bluebird (603010005)]” (przewodnik EF551) |
+| `210080018` | opis, „Pasuje do” | EF551 w obudowie standardowej; EF551R → `210080020` | EF551 standardowy i EF551R w obudowie Rugged Type 3; „Dobór uchwytu zależy od typu obudowy Rugged (Type 1 albo Type 3).” |
+| `210080020` | opis, „Pasuje do” | EF551R w obudowie Rugged | EF551R w obudowie Rugged Type 1; to samo zdanie o doborze. Typu obudowy oferowanych PN EF551R nie da się ustalić (opisy PN i przewodnik go nie podają; karta podaje wymiary „Rugged SKU 1”). |
+| `210120005`, `210120007` | opis, spec. „Bateria” | „współpracuje z baterią: standardowa” | ograniczenie usunięte (Jarltech podaje je tylko przy `004`/`006`) |
+| 10 zestawów na nadgarstek | opis | „z baterią: standardowa i rozszerzona” | „z baterią standardową i rozszerzoną” / „z baterią standardową” |
+| `355040080` | opis | „Zestawy na nadgarstek EF551 są przeznaczone do baterii standardowej.” | „Zestawy na nadgarstek do EF551 w obudowie standardowej…” |
+| `602010012`, `602010013`, `602010025`, `602010035` | SEO, krótki opis, opis | „zasilacz do stacje 1-gniazdowe Bluebird” | „zasilacz do stacji 1-gniazdowych S10, S20 (204010086), EF551 i EK430” / „4-gniazdowych S10, S20 (204020037), EF551 i EK430” / „1-gniazdowych S20 (204010078, 204010079), S50 i S70” / „4-gniazdowych S20 (204020028, 204020029), S50 i S70” |
+| 12 stacji | `seoDescription` | „(204010078). stacja ładuje…” | „(204010078). Stacja ładuje…” |
+| 19 stacji | opis | „Do zasilania stacji potrzebne są zasilacz … i przewód zasilający EU. Oba elementy są sprzedawane osobno.” | zdanie usunięte (wymóg jest w bloku „Wymagane”) |
+| 6 stacji 4-gniazdowych S10/S20/S50 | opis | „…czyli do 4 szt. na stację” | „Do pełnej stacji potrzebne są 4 podkładki.” Blok „Wymagane” (`getRequiredAccessories`) nie obsługuje ilości — podkładka jest w bloku jako 1 pozycja. |
+| `602010041` | opis | S10, S20, S50, S70, EF551, EK430 | dopisane S10 RFID i S70 Explosion Protection (jak w specyfikacji) |
+| `603010005` | „Kompatybilność”, opis, `relatedProducts` | bez SF650 | dodane SF650 (USB-C; potrzebny też do ładowarki samochodowej `602010023`) i EK430 w opisie |
+| baterie (9 kart) | `shortDescription`, `seoDescription` | np. „bateria standardowa do terminala S10” | konkret ze źródła: Wh, napięcie, hot swap, szybkie ładowanie, czas ładowania |
+| `357010003` / `357010006` | — | — | API zna oba PN (`357010003`: 78,94 zł, 0 szt.; `357010006`: 82,90 zł, 4 szt.). Zostaje `357010003` z przewodników S10/S20/S50; `357010006` (Jarltech: „fits for: S10, S20, S50”) to prawdopodobnie nowszy numer tego samego paska — do potwierdzenia u dystrybutora. |
+
+### Strona marki, `llms.txt`, `/terminale-rfid`
+
+- FAQ „Czy terminale Bluebird dostają aktualizacje Androida?”: przed — „Producent deklaruje dla każdego modelu docelową wersję Androida…”; po — „Najwyższa zapowiedziana wersja Androida zależy od modelu, np. Android 17 dla S20 i Android 18 dla S10. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm.”
+- FAQ 5G/eSIM: lista modeli z eSIM uzupełniona o S70 Explosion Protection (karta S70 EP: „1 Nano SIM ; 1 eSIM”).
+- „Co sprawdzić przed zakupem”: dopisane „Stacje EF551 wymagają podkładki dopasowanej do obudowy terminala.”
+- Tabela modeli: S70 „Dotykowy, full rugged” → „Dotykowy, wzmocniony”.
+- `llms.txt`: ceny Bluebird z dopiskiem „netto”; „Wi-Fi 6E lub 5G” → „Wi-Fi 6E, opcja 5G”; „full rugged” → „wzmocniony”.
+- `/terminale-rfid`: w definicji dodane zdanie o [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) (czytnik UHF z układem Impinj E710 w uchwycie pistoletowym, pasmo 865–868 MHz); `updatedAt` 2026-10-23.
+
+### Zdjęcia
+
+- Białe plamy (niebieskie elementy zamienione na biel przy wycinaniu): `bluebird-210080023/024/025/027`, `bluebird-210120017/018/019`, `bluebird-621020001`, `S20-ANLB-3`, `S50-ANLB-3`. Wycięte ponownie z obrazów osadzonych w przewodnikach S10/S20/S50/S70 razem z ich maską przezroczystości (smask z PDF) — bez progu koloru, niebieskie przyciski i paski zostały. Płótno jak wcześniej: akcesoria 500 × 500, wypełnienie 0,80; zdjęcia galerii 600 × 1200 wg wzoru CT47; pngquant 85–98. Wynik obejrzany na tle białym, szarym i ciemnym.
+- Szkła i folie `624010029/031/040/041`: przewodniki mają tylko rozmyte zdjęcie instrukcji i naklejek, bez produktu — zdjęcia usunięte (logo zastępcze).
+- Pasek na ramię `621040003`: jedyne źródło to obraz 99 × 237 px z przewodnika — zdjęcie usunięte (logo zastępcze).
+- Nowe zdjęcia z przewodnika EF551 (13 kart): stacje `204010058`, `204010059` (to samo zdjęcie stacji 1-gniazdowej), `204020019`; baterie `355040070`, `355040080`; ładowarka samochodowa ze spiralnym kablem `602010024`; uchwyty `210080018`, `210080020` (jedno zdjęcie uchwytu z przewodnika); zestawy z pierścieniem `210120004`, `210120005`; mocowania `210120006`, `210120007`; rysik `626010005`. Obrazy ze smask — maska z PDF; obrazy na białym tle (stacje, bateria `355040080`) — tło liczone wypełnieniem od krawędzi kadru (piksele jasne połączone z krawędzią), nie progiem w całym obrazie.
+- Bez zdjęcia (logo zastępcze) zostaje 17 kart: EK430 (stacje 4, bateria, pasek, osłona), `355040087`, `355040127`, `621010025` (przewodnik EF551 pokazuje terminal od tyłu, pasek niewidoczny), `621040003`, szkła i folie S20/S50/S70/S10 (4) oraz folie EF551 `624010017/018` (to samo rozmyte zdjęcie instrukcji).
+- Mapy `product-image-dims.json`, `product-image-frames.json`, `product-image-uniform-bounds.json` poprawione ręcznie tylko w bloku Bluebird (`generate-image-dims.mjs` nieuruchamiany).
+
+### Kontrola po poprawkach
+
+- `npx tsc --noEmit` i `npm run build` bez błędów (komunikaty Prisma/`featuredSlugs` wynikają z braku bazy lokalnie, jak wcześniej); `node scripts/check-product-images.mjs` — wszystkie pliki na miejscu; skrypt kontroli zdjęć Bluebird — 84 zdjęcia zgodne z trzema mapami, przezroczyste rogi, brak białych plam w 23 zdjęciach poprawianych w tym kroku, brak plików i wpisów osieroconych.
+- `next start -p 3149`: 9 kart terminali, 78 kart akcesoriów, `/terminale-bluebird` i `/terminale-rfid` — HTTP 200.
+- Tabele wariantów (`scrollWidth`/`clientWidth`, zwinięta i rozwinięta): wszystkie 9 kart 1216/1216 przy 1440 i 1280 px oraz 960/960 przy 1024 px — bez przewijania.
