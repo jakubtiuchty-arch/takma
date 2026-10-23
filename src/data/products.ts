@@ -96489,6 +96489,18 @@ export const brandCategories: BrandCategory[] = [
   "faq": []
 },
   {
+    id: 'tablety-przemyslowe-getac',
+    slug: 'tablety-getac',
+    manufacturerId: 'getac',
+    categoryId: 'tablety-przemyslowe',
+    name: 'Tablety przemysłowe Getac',
+    seoTitle: 'Tablety przemysłowe Getac — Android i Windows, IP66–IP67',
+    seoDescription: 'Tablety przemysłowe Getac fully rugged: ZX80 i ZX10 G2 z Androidem 15 oraz ZX80W, UX10 G5, F110 G7, F120, K120 G3 i G140 z Windows 11. Tablet Getac z gwarancją 3 lata Bumper-to-Bumper.',
+    longDescription: 'Tablety przemysłowe Getac to tablety klasy fully rugged z systemem Android albo Windows 11. Obudowa ma klasę szczelności IP66 lub IP67 i certyfikat MIL-STD-810H. Ekran o jasności 1000–1200 nitów jest czytelny w świetle słonecznym. Tablety służą do pracy w terenie, w pojazdach służbowych, w magazynie, na produkcji i w serwisie. Współpracują z aplikacjami Android i programami Windows oraz ze stacjami biurkowymi, klawiaturami i stacjami pojazdowymi Getac. Tablety innych marek są w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
+    // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
+    faq: [],
+  },
+  {
     id: 'drukarki-etykiet-zebra',
     slug: 'drukarki-etykiet-zebra',
     manufacturerId: 'zebra',

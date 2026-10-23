@@ -1377,6 +1377,146 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
     ],
   },
   // ===================================================================
+  // TABLETY PRZEMYSŁOWE GETAC
+  // ===================================================================
+  'tablety-getac': {
+    updatedAt: '2026-10-23',
+    definition: {
+      heading: 'Tablety Getac: dwie rodziny systemowe, ekrany od 8 do 14 cali',
+      content: 'Getac oferuje tablety z Androidem i z Windows w obudowach fully rugged. Każdy model w ofercie TAKMA ma 3 lata gwarancji Bumper-to-Bumper, która obejmuje także przypadkowe uszkodzenia.\n\n**Android 15**: [ZX80](/produkt/getac-zx80) z ekranem 8″ i klasą IP67 oraz [ZX10 G2](/produkt/getac-zx10-g2) z ekranem 10,1″ i klasą IP66. Oba mają procesor Qualcomm QCS6490 i status Android Enterprise Recommended.\n\n**Windows 11**: [ZX80W](/produkt/getac-zx80w) (8″, Windows 11 IoT Enterprise LTSC) oraz modele z Windows 11 Pro: [UX10 G5](/produkt/getac-ux10-g5) (10,1″), [F110 G7](/produkt/getac-f110-g7) (11,6″), [F120](/produkt/getac-f120) (12,2″), [K120 G3](/produkt/getac-k120-g3) (12,5″) i [G140](/produkt/getac-g140) (14″).\n\nWymiana baterii bez wyłączania tabletu zależy od modelu. F110 G7, F120, K120 G3 i G140 pracują na 2 bateriach; jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję dopiero po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko z baterią podtrzymującą, w konfiguracji na zamówienie.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać tablet Getac? 6 kryteriów',
+      items: [
+        'System operacyjny — Android 15 mają [ZX80](/produkt/getac-zx80) i [ZX10 G2](/produkt/getac-zx10-g2). Windows 11 Pro mają [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140). [ZX80W](/produkt/getac-zx80w) ma Windows 11 IoT Enterprise LTSC. Programy desktopowe Windows uruchamia się tylko na modelach z Windows.',
+        'Rozmiar i masa — 8″ i 590 g: ZX80 i ZX80W. 10,1″: ZX10 G2 (906 g) i UX10 G5 (1,15 kg). 11,6–14″: F110 G7 (1,49 kg), F120 (1,41 kg), K120 G3 (1,7 kg) i G140 (1,79 kg).',
+        'Wymiana baterii — F110 G7, F120, K120 G3 i G140 pracują na 2 bateriach; jedną wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko z baterią podtrzymującą, w konfiguracji na zamówienie.',
+        'Czytnik kodów i moduły — czytnik 1D/2D jest w wybranych PN modeli ZX80, ZX10 G2, UX10 G5, F110 G7, F120 i G140. K120 G3 i ZX80W w ofercie nie mają wersji z czytnikiem. W modelach z Windows są też wersje z HF RFID, RS-232 albo LAN, zależnie od modelu.',
+        'Łączność — Wi-Fi 7 mają UX10 G5, F120 i G140. Wi-Fi 6E mają ZX80, ZX80W, ZX10 G2, F110 G7 i K120 G3. 4G LTE albo 5G z GPS są w wybranych PN.',
+        'Odporność i certyfikaty — IP67: ZX80 i ZX80W. IP66: pozostałe modele. Upadek z 1,8 m wytrzymują wszystkie modele poza G140 (1,2 m). MIL-STD-810H mają wszystkie modele. MIL-STD-461G mają UX10 G5, F110 G7, F120, K120 G3 (wersja z gniazdem DC) i G140, z zasilaczem MIL-STD-461 90 W sprzedawanym osobno.',
+      ],
+    },
+    expertAuthority: 'TAKMA jest partnerem Getac i dostawcą urządzeń AutoID dla firm. Pomagamy wybrać model i konfigurację PN: system, łączność, czytnik kodów, porty i wyposażenie baterii. Do zamówienia dobieramy akcesoria Getac zgodne z danym modelem: baterie, ładowarki, stacje biurkowe, klawiatury i zasilacze. W ofercie są też [tablety Zebra](/tablety-przemyslowe-zebra), [tablety Honeywell](/tablety-honeywell) i [tablety Brady](/tablety-brady), więc porównujemy modele różnych marek do jednego zastosowania.',
+    technicalDeepDive: `Zestawienie tabletów Getac w ofercie. Cena netto dotyczy najtańszej wersji dostępnej w magazynie 23 października 2026 r.\n\n• [ZX80](/produkt/getac-zx80) (Android 15, 8″): WUXGA 1000 nitów, Qualcomm QCS6490, 12/256 GB, Wi-Fi 6E, opcja 4G LTE albo 5G, opcja czytnik 1D/2D i NFC. IP67, upadek z 1,8 m, 590 g. Kieszeń na baterię wymienną; bateria i zasilacz sprzedawane osobno. Od 6 510 zł netto — praca w terenie, w pojazdach służbowych i przy przeglądach technicznych.\n\n• [ZX10 G2](/produkt/getac-zx10-g2) (Android 15, 10,1″): WUXGA 1000 nitów, Qualcomm QCS6490, 8 GB RAM, 128 albo 256 GB, Wi-Fi 6E i GPS, opcja 4G LTE, opcje: czytnik 1D/2D, NFC. IP66, upadek z 1,8 m, 906 g. 2 kieszenie baterii; w zestawie 1 bateria i zaślepka. Od 6 821 zł netto — kompletacja i inwentaryzacja w magazynie, praca w pojazdach.\n\n• [ZX80W](/produkt/getac-zx80w) (Windows 11 IoT Enterprise LTSC, 8″): WUXGA 1000 nitów z digitizerem, Qualcomm QCS6490, 12/256 GB, Wi-Fi 6E, GPS, opcja 4G LTE. IP67, upadek z 1,8 m, 590 g. Kieszeń na baterię wymienną; bateria albo zaślepka, zależnie od PN — programy Windows w małym i lekkim urządzeniu.\n\n• [UX10 G5](/produkt/getac-ux10-g5) (Windows 11 Pro, 10,1″): WUXGA 1000 nitów, Intel Core Ultra 5 albo Core Ultra 7 (seria 2), 16 GB RAM, Wi-Fi 7, opcja 4G LTE albo 5G, opcje: czytnik 1D/2D, HF RFID, LAN. IP66, upadek z 1,8 m, 1,15 kg. 1 bateria 4070 mAh albo 9240 mAh, zależnie od PN. Od 11 542 zł netto — programy Windows w terenie, w pojazdach i w serwisie.\n\n• [F110 G7](/produkt/getac-f110-g7) (Windows 11 Pro, 11,6″): Full HD 1200 nitów, Intel Core i5 albo i7 13. generacji, 8 albo 16 GB RAM, Wi-Fi 6E, opcja 4G LTE albo 5G, opcje: czytnik 1D/2D, HF RFID, RS-232 z LAN. IP66, upadek z 1,8 m, 1,49 kg. 2 baterie 2680 mAh. Od 10 983 zł netto — serwis, utrzymanie ruchu i urządzenia z portem RS-232.\n\n• [F120](/produkt/getac-f120) (Windows 11 Pro, 12,2″): WUXGA 1200 nitów, Smart Touch, Intel Core Ultra 5 (seria 2), 16 GB RAM, Wi-Fi 7, opcja 4G LTE albo 5G, opcje: czytnik 1D/2D, RS-232, LAN, czytnik kart chipowych. IP66, upadek z 1,8 m, 1,41 kg. 2 baterie 4070 mAh. Od 12 629 zł netto — programy Windows w terenie, w pojazdach i w serwisie.\n\n• [K120 G3](/produkt/getac-k120-g3) (Windows 11 Pro, 12,5″): Full HD 1200 nitów, Intel Core i5 albo i7 13. generacji, 16 GB RAM, Wi-Fi 6E, port LAN, opcja 4G LTE albo 5G. IP66, upadek z 1,8 m, 1,7 kg. 2 baterie 2100 mAh; klawiatury sprzedawane osobno. Od 11 575 zł netto — tablet i laptop w jednym urządzeniu.\n\n• [G140](/produkt/getac-g140) (Windows 11 Pro, 14″): WUXGA IPS 1000 nitów, Smart Touch, AMD Ryzen AI 5 340 albo Ryzen AI 7 350, 16 albo 32 GB RAM, Wi-Fi 7, port LAN, opcja 4G LTE albo 5G, opcje: czytnik 1D/2D, HF RFID. IP66, upadek z 1,2 m, 1,79 kg. 2 baterie 4070 mAh — dokumentacja techniczna i mapy na dużym ekranie.\n\nTemperatura pracy wszystkich modeli wynosi od −29°C do +63°C. Wyjątek: ZX10 G2 na samej baterii pracuje od −15°C z 1 baterią standardową, od −21°C z 2 standardowymi i od −29°C z 2 bateriami o dużej pojemności.\n\nMIL-STD-461G mają UX10 G5, F110 G7, F120, K120 G3 (wersja z gniazdem DC) i G140, z zasilaczem MIL-STD-461 90 W sprzedawanym osobno. ZX80, ZX80W i ZX10 G2 mają certyfikat MIL-STD-810H bez MIL-STD-461G.`,
+    useCases: [
+      {
+        title: 'Praca w terenie i przeglądy techniczne — ZX80',
+        description: '[ZX80](/produkt/getac-zx80) ma ekran 8″, masę 590 g i klasę IP67. Wersje z 4G LTE albo 5G mają GPS i pracują poza zasięgiem Wi-Fi. Czytnik kodów 1D/2D i NFC są w wybranych PN.',
+      },
+      {
+        title: 'Kompletacja i inwentaryzacja w magazynie — ZX10 G2',
+        description: '[ZX10 G2](/produkt/getac-zx10-g2) z Androidem 15 ma ekran 10,1″ i 2 kieszenie na baterie. Wersja Z8A1KZW85ABX ma czytnik kodów 1D/2D. Z 2 bateriami jedną baterię wymienia się bez wyłączania tabletu.',
+      },
+      {
+        title: 'Programy Windows w pojazdach służbowych — F110 G7',
+        description: '[F110 G7](/produkt/getac-f110-g7) ma ekran 11,6″ o jasności 1200 nitów i 2 baterie. Wersje ze złączami RF pass-through podłączają anteny zewnętrzne przez stację pojazdową. Zasilacz samochodowy [GAD2X4](/produkt/getac-zasilacz-samochodowy-gad2x4) ma moc 120 W i wtyk zapalniczki.',
+      },
+      {
+        title: 'Urządzenia z portem RS-232 w warsztacie i na produkcji — F110 G7 i F120',
+        description: 'Wersje [F110 G7](/produkt/getac-f110-g7) z modułem RS-232 i LAN oraz [F120](/produkt/getac-f120) z portem RS-232 łączą się z urządzeniami przez port szeregowy. Moduł zajmuje górne gniazdo, więc te wersje nie mają czytnika kodów.',
+      },
+      {
+        title: 'Tablet i laptop w jednym — K120 G3 z klawiaturą',
+        description: '[K120 G3](/produkt/getac-k120-g3) z ekranem 12,5″ i Windows 11 Pro pracuje jak laptop z klawiaturą odpinaną [GDKBUM](/produkt/getac-klawiatura-gdkbum) albo klawiaturą ze stacją [GDKBUN](/produkt/getac-klawiatura-gdkbun). Klawiatury sprzedaje się osobno. Każda wersja ma port LAN.',
+      },
+      {
+        title: 'Dokumentacja techniczna i mapy — G140',
+        description: '[G140](/produkt/getac-g140) ma ekran 14″ WUXGA i funkcję Smart Touch: rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Do montażu na stanowisku Getac przewiduje podpórkę VESA i uchwyt magnetyczny VESA.',
+      },
+    ],
+    uniqueInsights: {
+      heading: '5 rzeczy, które warto wiedzieć przed zakupem tabletu Getac',
+      items: [
+        {
+          title: 'Wymiana baterii bez wyłączania zależy od modelu',
+          text: 'F110 G7, F120, K120 G3 i G140 pracują na 2 bateriach; jedną wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko z baterią podtrzymującą, w konfiguracji na zamówienie.',
+        },
+        {
+          title: 'MIL-STD-461G wymaga zasilacza 90 W',
+          text: 'UX10 G5, F110 G7, F120, K120 G3 (wersja z gniazdem DC) i G140 mają MIL-STD-461G z zasilaczem MIL-STD-461 90 W, sprzedawanym osobno. ZX80, ZX80W i ZX10 G2 nie mają tego certyfikatu.',
+        },
+        {
+          title: 'Przypadkowe uszkodzenia w standardowej gwarancji',
+          text: 'Każdy tablet Getac w ofercie ma 3 lata gwarancji Bumper-to-Bumper. Gwarancja obejmuje także przypadkowe uszkodzenia.',
+        },
+        {
+          title: 'Do ZX80 zasilacz kupuje się osobno',
+          text: 'Zestaw [ZX80](/produkt/getac-zx80) nie ma zasilacza ani przewodu zasilającego. Do tabletu pasuje zasilacz USB-C 65 W [GAT6E1](/produkt/getac-zasilacz-usb-c-gat6e1) z przewodem z wtyczką EU. ZX80W ma zasilacz w zestawie.',
+        },
+        {
+          title: 'Górne gniazdo mieści jeden moduł',
+          text: 'W UX10 G5, F110 G7, F120 i G140 górne gniazdo mieści jeden moduł, np. czytnik kodów 1D/2D albo port szeregowy. Wersja z czytnikiem kodów nie ma więc modułu RS-232 w tym gnieździe.',
+        },
+      ],
+    },
+    comparisons: [
+      {
+        title: 'Getac ZX80, ZX80W i ZX10 G2 — tablety z procesorem Qualcomm QCS6490',
+        content: '| Parametr | [ZX80](/produkt/getac-zx80) | [ZX80W](/produkt/getac-zx80w) | [ZX10 G2](/produkt/getac-zx10-g2) |\n|---|---|---|---|\n| System | Android 15 | Windows 11 IoT Enterprise LTSC | Android 15 |\n| Ekran | 8″ WUXGA, 1000 nitów | 8″ WUXGA, 1000 nitów, digitizer | 10,1″ WUXGA, 1000 nitów |\n| RAM / pamięć | 12 / 256 GB | 12 / 256 GB | 8 / 128 albo 256 GB |\n| Klasa ochrony | IP67 | IP67 | IP66 |\n| Masa | 590 g | 590 g | 906 g |\n| Baterie w zestawie | Wewnętrzna 4060 mAh, kieszeń z zaślepką | Wewnętrzna 4060 mAh, w kieszeni bateria albo zaślepka (zależnie od PN) | 1 bateria 4990 mAh, zaślepka drugiej kieszeni |\n| Zasilacz w zestawie | Nie | Tak | Tak |\n| Czytnik kodów w ofercie | Wybrane PN | Nie | Wybrane PN |\n\nZX80 i ZX80W mają tę samą obudowę 8″ i różnią się systemem. ZX10 G2 ma większy ekran i 2 kieszenie na baterie.',
+      },
+      {
+        title: 'Getac UX10 G5, F110 G7 i F120 — Windows 11 Pro od 10,1 do 12,2 cala',
+        content: '| Parametr | [UX10 G5](/produkt/getac-ux10-g5) | [F110 G7](/produkt/getac-f110-g7) | [F120](/produkt/getac-f120) |\n|---|---|---|---|\n| Ekran | 10,1″ WUXGA, 1000 nitów | 11,6″ Full HD, 1200 nitów | 12,2″ WUXGA, 1200 nitów |\n| Procesor | Intel Core Ultra 5 albo 7 (seria 2) | Intel Core i5 albo i7 13. generacji | Intel Core Ultra 5 (seria 2) |\n| Wi-Fi | Wi-Fi 7 | Wi-Fi 6E | Wi-Fi 7 |\n| Baterie | 1 × 4070 mAh albo 9240 mAh, zależnie od PN | 2 × 2680 mAh | 2 × 4070 mAh |\n| Wymiana baterii bez wyłączania | Tylko z baterią podtrzymującą (na zamówienie) | Tak, jednej z 2 baterii | Tak, jednej z 2 baterii |\n| Masa | 1,15 kg | 1,49 kg | 1,41 kg |\n\nUX10 G5 jest najmniejszy i najlżejszy z trzech. F110 G7 i F120 pracują na 2 bateriach. F120 ma w tej trójce największy ekran i funkcję Smart Touch.',
+      },
+      {
+        title: 'Getac K120 G3 i G140 — duże ekrany z portem LAN',
+        content: '| Parametr | [K120 G3](/produkt/getac-k120-g3) | [G140](/produkt/getac-g140) |\n|---|---|---|\n| Ekran | 12,5″ Full HD, 1200 nitów | 14″ WUXGA IPS, 1000 nitów |\n| Procesor | Intel Core i5 albo i7 13. generacji | AMD Ryzen AI 5 340 albo Ryzen AI 7 350 |\n| RAM | 16 GB | 16 albo 32 GB |\n| Wi-Fi | Wi-Fi 6E | Wi-Fi 7 |\n| Odporność na upadki | 1,8 m | 1,2 m |\n| Masa | 1,7 kg | 1,79 kg |\n| Klawiatura w ofercie | Odpinana GDKBUM albo ze stacją GDKBUN | Nie |\n| Czytnik kodów w ofercie | Nie | Wybrane PN |\n\nOba modele mają port LAN w każdej wersji i 2 baterie, z których jedną wymienia się bez wyłączania.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Tablet Getac z Androidem czy z Windows?',
+        answer: 'Android 15 mają [ZX80](/produkt/getac-zx80) (8″, IP67) i [ZX10 G2](/produkt/getac-zx10-g2) (10,1″, IP66). Oba mają status Android Enterprise Recommended. Windows 11 Pro mają [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140). [ZX80W](/produkt/getac-zx80w) ma Windows 11 IoT Enterprise LTSC w obudowie ZX80. Model z Windows jest potrzebny do programów Windows, które nie mają wersji na Androida.',
+      },
+      {
+        question: 'Czy w tabletach Getac baterię wymienia się bez wyłączania?',
+        answer: 'Tak, ale warunki zależą od modelu. [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140) pracują na 2 bateriach; jedną baterię wymienia się bez wyłączania. [ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w) i [ZX10 G2](/produkt/getac-zx10-g2) mają tę funkcję dopiero po włożeniu baterii do kieszeni wymiennej. Do ZX80 baterię kieszeni [GBM1XA](/produkt/getac-bateria-gbm1xa) albo [GBM2XA](/produkt/getac-bateria-gbm2xa) kupuje się osobno. ZX10 G2 ma w zestawie 1 baterię i zaślepkę drugiej kieszeni. [UX10 G5](/produkt/getac-ux10-g5) ma tę funkcję tylko z baterią podtrzymującą, w konfiguracji na zamówienie.',
+      },
+      {
+        question: 'Które tablety Getac mają czytnik kodów kreskowych?',
+        answer: 'Czytnik kodów 1D/2D jest w wybranych PN modeli [ZX80](/produkt/getac-zx80), [ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). Przykłady: F110 G7 FTA154JI1DZS (także z HF RFID) i F120 FW17641I1DZX. W modelach z Windows czytnik zajmuje górne gniazdo, więc wersja z czytnikiem nie ma w nim np. portu RS-232. K120 G3 i ZX80W w ofercie nie mają wersji z czytnikiem kodów.',
+      },
+      {
+        question: 'Czy tablety Getac pracują w chłodni i mroźni?',
+        answer: 'Wszystkie tablety Getac w ofercie pracują od −29°C do +63°C. Wyjątek: [ZX10 G2](/produkt/getac-zx10-g2) na samej baterii pracuje od −15°C z 1 baterią standardową, od −21°C z 2 standardowymi i od −29°C z 2 bateriami o dużej pojemności. Przy zasilaniu sieciowym ZX10 G2 pracuje od −29°C. Temperatura przechowywania wszystkich modeli wynosi od −51°C do +71°C.',
+      },
+      {
+        question: 'Jaką gwarancję mają tablety Getac?',
+        answer: 'Każdy tablet Getac w ofercie ma 3 lata gwarancji Bumper-to-Bumper. Gwarancja obejmuje także przypadkowe uszkodzenia. Dotyczy to modeli z Androidem i z Windows.',
+      },
+      {
+        question: 'Czy tablet Getac można zamontować w pojeździe?',
+        answer: 'Tak. Getac przewiduje do swoich tabletów stacje pojazdowe, a do większości modeli także uchwyty pojazdowe. Wersje ze złączami RF pass-through podłączają anteny zewnętrzne przez stację pojazdową ze złączami RF. Stację pojazdową dobiera się do modelu tabletu i pojazdu. W ofercie jest zasilacz samochodowy [GAD2X4](/produkt/getac-zasilacz-samochodowy-gad2x4) (120 W, 11–32 V DC) do [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do tabletów Getac?',
+        answer: 'Akcesoria są dopasowane do modelu: baterie standardowe i o dużej pojemności, ładowarki baterii 2-gniazdowe, ładowarka 8-gniazdowa [GCECER](/produkt/getac-ladowarka-8-gniazdowa-gcecer) do UX10 G5, stacje biurkowe, stacja USB-C DS100 [GDDSE2](/produkt/getac-stacja-usb-c-ds100-gddse2), klawiatury, pióra digitizer, paski na rękę i torby. Do [ZX80](/produkt/getac-zx80) zasilacz USB-C 65 W [GAT6E1](/produkt/getac-zasilacz-usb-c-gat6e1) jest wymagany i sprzedawany osobno. Zgodne akcesoria są na karcie każdego tabletu w sekcji „Akcesoria”.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Wybór systemu i rozmiaru ekranu',
+        text: 'Sprawdź, czy aplikacja działa na Androidzie, czy wymaga Windows. Android: ZX80 (8″) albo ZX10 G2 (10,1″). Windows: ZX80W (8″), UX10 G5 (10,1″), F110 G7 (11,6″), F120 (12,2″), K120 G3 (12,5″) albo G140 (14″).',
+      },
+      {
+        name: 'Wybór konfiguracji PN',
+        text: 'Wybierz łączność (Wi-Fi, 4G LTE albo 5G), czytnik kodów 1D/2D, HF RFID, porty RS-232 i LAN oraz digitizer. W modelach z Windows moduły górnego gniazda wykluczają się, więc jedna wersja ma np. czytnik kodów albo port RS-232.',
+      },
+      {
+        name: 'Baterie i zasilanie',
+        text: 'Sprawdź zawartość zestawu przy wybranym PN. Do ZX80 zamów zasilacz [GAT6E1](/produkt/getac-zasilacz-usb-c-gat6e1). Aby wymieniać baterię bez wyłączania, do ZX80 zamów baterię kieszeni, a do ZX10 G2 drugą baterię. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W.',
+      },
+      {
+        name: 'Akcesoria na stanowisko i do pojazdu',
+        text: 'Dobierz ładowarki baterii, stację biurkową albo stację USB-C DS100 i klawiaturę. Do pracy w pojeździe Getac przewiduje stacje pojazdowe. Zasilacz samochodowy [GAD2X4](/produkt/getac-zasilacz-samochodowy-gad2x4) pasuje do UX10 G5, F110 G7, F120 i G140.',
+      },
+      {
+        name: 'Test i wdrożenie floty',
+        text: 'Sprawdź 2–3 tablety z docelową aplikacją, czytnikiem i akcesoriami. Zmierz czas pracy na baterii podczas zmiany i zasięg Wi-Fi. Potem zamów flotę w tej samej konfiguracji PN.',
+      },
+    ],
+  },
+  // ===================================================================
   // TABLETY PRZEMYSŁOWE ZEBRA
   // ===================================================================
   'tablety-przemyslowe-zebra': {

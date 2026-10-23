@@ -1482,7 +1482,7 @@ categoryFilters['skanery-datalogic'] = [
     ],
   },
 ]
-for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady']) {
+for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady', 'tablety-getac']) {
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }
 // Drukarki etykiet — strony marek: ten sam zestaw co kategoria (Producent chowa się sam)
