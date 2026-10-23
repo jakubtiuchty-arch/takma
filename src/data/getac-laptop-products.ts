@@ -1504,9 +1504,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-zasilacz-65w-gaa6e5",
     "name": "Zasilacz 65 W Getac GAA6E5 do laptopów i tabletów Getac",
     "seoTitle": "Zasilacz 65 W Getac GAA6E5 do laptopów i tabletów Getac",
-    "seoDescription": "Getac GAA6E5 — zasilacz 65 W z przewodem zasilającym EU do laptopów Getac S510, S510AD i V120 oraz tabletów UX10 G5, F110 G7, F120 i G140.",
-    "shortDescription": "Getac GAA6E5 — zasilacz 65 W z przewodem zasilającym EU do laptopów Getac S510, S510AD i V120 oraz tabletów UX10 G5, F110 G7, F120 i G140.",
-    "description": "Zasilacz Getac GAA6E5 zasila laptop albo tablet i ładuje jego baterie z gniazdka sieciowego. Ma moc 65 W i wtyk DC. W zestawie jest przewód zasilający z wtyczką EU. Laptopy S510, S510AD i V120 oraz tablety UX10 G5, F110 G7, F120 i G140 mają zasilacz 65 W w zestawie. GAA6E5 służy więc jako zasilacz zapasowy albo drugi zasilacz, np. do biura.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 19 V, 3,42 A. Ma wymiary 108,3 × 46,3 × 30 mm i masę 250 g. Przewód wejściowy ma 1830 mm, a przewód wyjściowy 1500 mm. Pasuje do laptopów [Getac S510](/produkt/getac-s510), [S510AD](/produkt/getac-s510ad) i [V120](/produkt/getac-v120) oraz tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).",
+    "seoDescription": "Getac GAA6E5 — zasilacz 65 W (19 V, wtyk DC) do laptopów Getac S510, S510AD, V120 i tabletów UX10 G5, F110 G7, F120, G140.",
+    "shortDescription": "Getac GAA6E5 — zasilacz 65 W (19 V, wtyk DC) do laptopów Getac S510, S510AD, V120 i tabletów UX10 G5, F110 G7, F120, G140.",
+    "description": "Getac GAA6E5 to zasilacz 65 W z wtykiem DC: wyjście 19 V, 3,42 A. Ma wymiary 108,3 × 46,3 × 30 mm i masę 250 g. Przewód od gniazdka (wtyczka EU) ma 1830 mm, a przewód do urządzenia 1500 mm. Wymienione niżej modele mają zasilacz 65 W w zestawie, więc GAA6E5 przydaje się jako drugi zasilacz, np. w biurze.\n\nZgodność: laptopy Getac S510, S510AD i V120 oraz tablety Getac UX10 G5, F110 G7, F120 i G140.\n\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)\n- [Getac V120](/produkt/getac-v120)\n- [Getac UX10 G5](/produkt/getac-ux10-g5)\n- [Getac F110 G7](/produkt/getac-f110-g7)\n- [Getac F120](/produkt/getac-f120)\n- [Getac G140](/produkt/getac-g140)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -1588,9 +1588,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-zasilacz-90w-gaa9e6",
     "name": "Zasilacz 90 W Getac GAA9E6 do S410 G5, S510 i S510AD",
     "seoTitle": "Zasilacz 90 W Getac GAA9E6 do S410 G5, S510 i S510AD",
-    "seoDescription": "Getac GAA9E6 — zasilacz 90 W z przewodem zasilającym EU do laptopów Getac S410 G5, S510 i S510AD.",
-    "shortDescription": "Getac GAA9E6 — zasilacz 90 W z przewodem zasilającym EU do laptopów Getac S410 G5, S510 i S510AD.",
-    "description": "Zasilacz Getac GAA9E6 zasila laptop i ładuje jego baterie z gniazdka sieciowego. Ma moc 90 W. W zestawie jest przewód zasilający z wtyczką EU. Laptop S410 G5 ma zasilacz 90 W w zestawie, dlatego dla niego GAA9E6 jest zasilaczem zapasowym. Laptopy S510 i S510AD mają w zestawie zasilacz 65 W. Zasilacz 90 W jest wymagany w ich konfiguracjach z kartą graficzną NVIDIA RTX A500.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 19 V, 4,74 A. Ma wymiary 140,1 × 65,1 × 25,4 mm i masę 275 g. Pasuje do laptopów [Getac S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad).",
+    "seoDescription": "Getac GAA9E6 — zasilacz 90 W do laptopa Getac S410 G5 oraz S510 i S510AD z kartą NVIDIA RTX A500; przewód EU.",
+    "shortDescription": "Getac GAA9E6 — zasilacz 90 W do laptopa Getac S410 G5 oraz S510 i S510AD z kartą NVIDIA RTX A500; przewód EU.",
+    "description": "Getac GAA9E6 dostarcza 90 W (19 V, 4,74 A) przez wtyk DC. Laptop S410 G5 ma taki zasilacz w zestawie. S510 i S510AD dostają fabrycznie zasilacz 65 W, a 90 W potrzebują w konfiguracjach z kartą graficzną NVIDIA RTX A500. Obudowa zasilacza ma 140,1 × 65,1 × 25,4 mm i waży 275 g. Do zasilacza dołączono przewód z wtyczką EU.\n\nPasuje do laptopów Getac S410 G5, S510 i S510AD.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -1667,9 +1667,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-zasilacz-90w-gaa9e7",
     "name": "Zasilacz 90 W Getac GAA9E7 do B360",
     "seoTitle": "Zasilacz 90 W Getac GAA9E7 do B360",
-    "seoDescription": "Getac GAA9E7 — zasilacz 90 W z przewodem zasilającym EU do laptopa Getac B360.",
-    "shortDescription": "Getac GAA9E7 — zasilacz 90 W z przewodem zasilającym EU do laptopa Getac B360.",
-    "description": "Zasilacz Getac GAA9E7 zasila laptop i ładuje jego baterie z gniazdka sieciowego. Ma moc 90 W. W zestawie jest przewód zasilający z wtyczką EU. Laptop B360 ma zasilacz 90 W w zestawie, dlatego GAA9E7 służy jako zasilacz zapasowy albo drugi zasilacz, np. do biura.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 19 V, 4,74 A. Ma wymiary 140,1 × 65,1 × 25,4 mm i masę 275 g. Przewód wejściowy ma 1830 mm, a przewód wyjściowy 1500 mm. Pasuje do laptopa [Getac B360](/produkt/getac-b360). Zgodność z normą MIL-STD-461G zapewnia zasilacz [GAAGE5](/produkt/getac-zasilacz-mil-std-461-gaage5).",
+    "seoDescription": "Getac GAA9E7 — drugi zasilacz 90 W (19 V, 4,74 A) do laptopa Getac B360, z przewodem EU.",
+    "shortDescription": "Getac GAA9E7 — drugi zasilacz 90 W (19 V, 4,74 A) do laptopa Getac B360, z przewodem EU.",
+    "description": "Zasilacz Getac GAA9E7 o mocy 90 W jest przeznaczony do laptopa Getac B360. Laptop ma taki zasilacz w zestawie, dlatego GAA9E7 zamawia się jako drugi, np. do stanowiska w biurze. Parametry wyjścia to 19 V i 4,74 A. Przewody mają 1830 mm (sieciowy, wtyczka EU) i 1500 mm (do laptopa). Do zgodności B360 z MIL-STD-461G potrzebny jest zasilacz [GAAGE5](/produkt/getac-zasilacz-mil-std-461-gaage5).\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -1746,7 +1746,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Zasilacz 120 W Getac GAA3E2 do B360 i S410 G5",
     "seoDescription": "Getac GAA3E2 — zasilacz 120 W z przewodem zasilającym EU do stacji biurkowych i laptopów Getac B360 i S410 G5.",
     "shortDescription": "Getac GAA3E2 — zasilacz 120 W z przewodem zasilającym EU do stacji biurkowych i laptopów Getac B360 i S410 G5.",
-    "description": "Zasilacz Getac GAA3E2 ma moc 120 W. Jest przeznaczony do stacji biurkowych Getac i do konfiguracji laptopów o większym poborze mocy. W laptopie S410 G5 zasilacz 120 W jest wymagany przy karcie graficznej NVIDIA GeForce GTX 1650. W zestawie jest przewód zasilający z wtyczką EU.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 19 V, maks. 6,32 A. Ma wymiary 131,5 × 69 × 25,6 mm i masę 412 g. Przewód wyjściowy ma 1800 mm. Pasuje do laptopów [Getac B360](/produkt/getac-b360) i [S410 G5](/produkt/getac-s410-g5) oraz do stacji biurkowych [GDODEB](/produkt/getac-stacja-biurkowa-gdodeb) i [GDODE4](/produkt/getac-stacja-biurkowa-gdode4), które mają zasilacz 120 W w zestawie.",
+    "description": "Getac GAA3E2 to zasilacz 120 W (19 V, maks. 6,32 A) do stacji biurkowych i konfiguracji o większym poborze mocy. Laptop S410 G5 wymaga go przy karcie graficznej NVIDIA GeForce GTX 1650. Waży 412 g, a przewód wyjściowy ma 1800 mm. W komplecie jest przewód sieciowy EU.\n\nPasuje do laptopów Getac B360 i S410 G5. Stacje [GDODEB](/produkt/getac-stacja-biurkowa-gdodeb) i [GDODE4](/produkt/getac-stacja-biurkowa-gdode4) mają zasilacz 120 W w zestawie.\n\n- [Getac B360](/produkt/getac-b360)\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -1824,7 +1824,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Zasilacz 90 W MIL-STD-461 Getac GAAGE5 do B360, V120, F110 G7, F120 i G140",
     "seoDescription": "Getac GAAGE5 — zasilacz 90 W z certyfikatem MIL-STD-461G do laptopów Getac B360 i V120 oraz tabletów F110 G7, F120 i G140, z przewodem zasilającym EU.",
     "shortDescription": "Getac GAAGE5 — zasilacz 90 W z certyfikatem MIL-STD-461G do laptopów Getac B360 i V120 oraz tabletów F110 G7, F120 i G140, z przewodem zasilającym EU.",
-    "description": "Zasilacz Getac GAAGE5 spełnia normę wojskową MIL-STD-461G. Norma określa emisję i odporność na zakłócenia elektromagnetyczne przewodzone i promieniowane. Laptopy B360 i V120 oraz tablety F110 G7, F120 i G140 spełniają MIL-STD-461G tylko z tym zasilaczem. Zasilacze z zestawu tych urządzeń nie mają tego certyfikatu.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 19 V, 4,74 A, 90 W. W zestawie jest przewód zasilający z wtyczką EU. Pasuje do laptopów [Getac B360](/produkt/getac-b360) i [V120](/produkt/getac-v120) oraz tabletów [Getac F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).",
+    "description": "Getac GAAGE5 to zasilacz z certyfikatem MIL-STD-461G o mocy 90 W; na wyjściu daje 19 V i 4,74 A. Norma obejmuje emisję i odporność na zakłócenia elektromagnetyczne: przewodzone i promieniowane. Zasilacz przyjmuje 100–240 V AC; przewód sieciowy ma wtyczkę EU.\n\nLaptopy Getac B360 i V120 oraz tablety Getac F110 G7, F120 i G140 spełniają MIL-STD-461G tylko z tym zasilaczem. Zasilacze dołączane do tych urządzeń certyfikatu nie mają.\n\n- [Getac B360](/produkt/getac-b360)\n- [Getac V120](/produkt/getac-v120)\n- [Getac F110 G7](/produkt/getac-f110-g7)\n- [Getac F120](/produkt/getac-f120)\n- [Getac G140](/produkt/getac-g140)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -1894,7 +1894,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Zasilacz USB-C 100 W Getac GAT1E1 do laptopów i tabletów Getac",
     "seoDescription": "Getac GAT1E1 — zasilacz USB-C 100 W z przewodem zasilającym EU do laptopów Getac B360, S410 G5 i V120 oraz tabletów UX10 G5, F110 G7 i F120.",
     "shortDescription": "Getac GAT1E1 — zasilacz USB-C 100 W z przewodem zasilającym EU do laptopów Getac B360, S410 G5 i V120 oraz tabletów UX10 G5, F110 G7 i F120.",
-    "description": "Zasilacz Getac GAT1E1 zasila laptop albo tablet i ładuje jego baterie przez port USB-C z funkcją Power Delivery. Jest to dodatkowe źródło zasilania obok zasilacza z wtykiem DC z zestawu urządzenia. Wtyk USB-C jest symetryczny, dlatego wkłada się go w dowolnej pozycji. Zmniejsza to ryzyko uszkodzenia złącza.\n\nZasilacz przyjmuje napięcie 100–240 V AC i ma wyjście 20 V, 5 A, 100 W. Ma wymiary 140 × 65 × 25 mm i masę 326 g. Przewód wyjściowy USB-C ma 1500 mm. W zestawie jest przewód zasilający z wtyczką EU. Pasuje do laptopów [Getac B360](/produkt/getac-b360), [S410 G5](/produkt/getac-s410-g5) i [V120](/produkt/getac-v120) oraz tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [F120](/produkt/getac-f120).",
+    "description": "Zasilacz Getac GAT1E1 ładuje urządzenie przez port USB-C z funkcją Power Delivery, obok gniazda DC używanego przez zasilacz z zestawu. Daje 100 W (20 V, 5 A). Wtyk USB-C wkłada się dowolną stroną, co zmniejsza ryzyko uszkodzenia złącza. Zasilacz waży 326 g, a jego przewód USB-C ma 1500 mm. Wtyczka przewodu sieciowego: EU.\n\nDo użycia z laptopami Getac B360, S410 G5 i V120 oraz tabletami Getac UX10 G5, F110 G7 i F120.\n\n- [Getac B360](/produkt/getac-b360)\n- [Getac S410 G5](/produkt/getac-s410-g5)\n- [Getac V120](/produkt/getac-v120)\n- [Getac UX10 G5](/produkt/getac-ux10-g5)\n- [Getac F110 G7](/produkt/getac-f110-g7)\n- [Getac F120](/produkt/getac-f120)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -1977,7 +1977,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Zasilacz samochodowy 120 W Getac GAD2X8 do tabletów i laptopów Getac, podłączany na stałe",
     "seoDescription": "Getac GAD2X8 — zasilacz samochodowy 120 W do podłączenia na stałe, do tabletów Getac UX10 G5, F110 G7, F120, G140 i laptopów B360, V120, S410 G5, S510, S510AD.",
     "shortDescription": "Getac GAD2X8 — zasilacz samochodowy DC-DC 120 W z przewodami do podłączenia na stałe do instalacji pojazdu, do tabletów Getac UX10 G5, F110 G7, F120, G140 i laptopów B360, V120, S410 G5, S510, S510AD.",
-    "description": "Zasilacz samochodowy Getac GAD2X8 zasila tablet albo laptop i ładuje jego baterie w pojeździe. Wersja GAD2X8 ma przewód wejściowy zakończony odizolowanymi żyłami. Podłącza się go na stałe do instalacji elektrycznej pojazdu. Zasilacz przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V. Wersja z wtykiem zapalniczki to [GAD2X4](/produkt/getac-zasilacz-samochodowy-gad2x4).\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Obudowa ma wymiary 131,5 × 65,6 × 30 mm i masę 362 g. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz laptopów [Getac B360](/produkt/getac-b360), [V120](/produkt/getac-v120), [S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad).",
+    "description": "Getac GAD2X8 to zasilacz samochodowy 120 W do instalacji na stałe. Przewód wejściowy kończy się odizolowanymi żyłami, które podłącza się bezpośrednio do instalacji elektrycznej pojazdu. Napięcie wejściowe wynosi 11–32 V DC, wyjściowe 19 V przy prądzie do 6,32 A. Obudowa ma 131,5 × 65,6 × 30 mm i waży 362 g. Wersja z wtykiem zapalniczki to [GAD2X4](/produkt/getac-zasilacz-samochodowy-gad2x4).\n\nPasuje do tabletów Getac UX10 G5, F110 G7, F120 i G140 oraz laptopów Getac B360, V120, S410 G5, S510 i S510AD.\n\n- [Getac UX10 G5](/produkt/getac-ux10-g5)\n- [Getac F110 G7](/produkt/getac-f110-g7)\n- [Getac F120](/produkt/getac-f120)\n- [Getac G140](/produkt/getac-g140)\n- [Getac B360](/produkt/getac-b360)\n- [Getac V120](/produkt/getac-v120)\n- [Getac S410 G5](/produkt/getac-s410-g5)\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -2059,7 +2059,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Bateria 6900 mAh Getac GBM6X9 do S510 i S510AD",
     "seoDescription": "Getac GBM6X9 — bateria 6900 mAh, 10,8 V do laptopów Getac S510 i S510AD.",
     "shortDescription": "Getac GBM6X9 — bateria 6900 mAh, 10,8 V do laptopów Getac S510 i S510AD.",
-    "description": "Bateria Getac GBM6X9 to bateria główna laptopów Getac S510 i S510AD. Zapasowa bateria pozwala wydłużyć pracę w terenie bez dostępu do gniazdka. Laptopy w ofercie mają jedną baterię w zestawie, a wersja S510 SU1N7CQ4SDCX — dwie.\n\nBateria litowo-polimerowa ma napięcie 10,8 V i pojemność typową 6900 mAh (minimalną 6600 mAh). Ma wymiary 143 × 74 × 20,5 mm i masę 328,8 g. Pasuje do laptopów [Getac S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad). Dwie baterie naraz ładuje [ładowarka GCMCEP](/produkt/getac-ladowarka-2-gniazdowa-gcmcep), a osiem — [ładowarka GCECEQ](/produkt/getac-ladowarka-8-gniazdowa-gceceq).",
+    "description": "Getac GBM6X9 to bateria główna laptopów Getac S510 i S510AD: litowo-polimerowa, 10,8 V, typowo 6900 mAh (min. 6600 mAh). Ma 143 × 74 × 20,5 mm i waży 328,8 g.\n\nLaptopy w ofercie mają jedną baterię w zestawie, a S510 z 32 GB RAM dwie. Zapasowa GBM6X9 pozwala dłużej pracować bez gniazdka. Ładowarki: [GCMCEP](/produkt/getac-ladowarka-2-gniazdowa-gcmcep) na 2 baterie i [GCECEQ](/produkt/getac-ladowarka-8-gniazdowa-gceceq) na 8.\n\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2129,7 +2129,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Bateria 4060 mAh Getac GBM4X5 do B360",
     "seoDescription": "Getac GBM4X5 — bateria 4060 mAh, 7,72 V z wskaźnikiem naładowania do laptopa Getac B360.",
     "shortDescription": "Getac GBM4X5 — bateria 4060 mAh, 7,72 V z wskaźnikiem naładowania do laptopa Getac B360.",
-    "description": "Bateria Getac GBM4X5 to bateria główna laptopa Getac B360. Laptop pracuje na 2 bateriach i pozwala wymienić jedną z nich bez wyłączania (technologia LifeSupport). Zapasowe baterie pozwalają pracować przez całą zmianę bez dostępu do gniazdka. Bateria ma wskaźnik LED i przycisk, który pokazuje stan naładowania.\n\nBateria litowo-jonowa ma napięcie 7,72 V i pojemność typową 4060 mAh (minimalną 3857 mAh). Ma wymiary 141,05 × 74,3 × 10,1 mm i masę 154 g. Pasuje do laptopa [Getac B360](/produkt/getac-b360). Dwie baterie naraz ładuje [ładowarka GCMCER](/produkt/getac-ladowarka-2-gniazdowa-gcmcer), a osiem — [ładowarka GCECES](/produkt/getac-ladowarka-8-gniazdowa-gceces).",
+    "description": "Getac GBM4X5 to bateria główna laptopa Getac B360. Laptop ma 2 takie baterie; jedną wyjmuje się, gdy druga zasila komputer (LifeSupport). Stan naładowania pokazuje wskaźnik LED po naciśnięciu przycisku.\n\nOgniwa litowo-jonowe: 7,72 V, typowo 4060 mAh (min. 3857 mAh). Wymiary 141,05 × 74,3 × 10,1 mm, masa 154 g. Ładuje ją [GCMCER](/produkt/getac-ladowarka-2-gniazdowa-gcmcer) albo [GCECES](/produkt/getac-ladowarka-8-gniazdowa-gceces).\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2202,7 +2202,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Bateria 6900 mAh Getac GBM6X6 do S410 G5",
     "seoDescription": "Getac GBM6X6 — bateria 6900 mAh, 10,8 V do laptopa Getac S410 G5, jako bateria główna albo druga.",
     "shortDescription": "Getac GBM6X6 — bateria 6900 mAh, 10,8 V do laptopa Getac S410 G5, jako bateria główna albo druga.",
-    "description": "Bateria Getac GBM6X6 to bateria główna laptopa Getac S410 G5. Pasuje też jako druga bateria w konfiguracjach z drugą baterią. Zapasowa bateria pozwala wydłużyć pracę w terenie bez dostępu do gniazdka.\n\nBateria litowo-jonowa ma 6 ogniw, napięcie nominalne 10,8 V, pojemność 6900 mAh i energię 74,5 Wh. Ma masę 330 g. Pasuje do laptopa [Getac S410 G5](/produkt/getac-s410-g5). Dwie baterie naraz ładuje [ładowarka GCMCEJ](/produkt/getac-ladowarka-2-gniazdowa-gcmcej), a osiem — [ładowarka GCECEM](/produkt/getac-ladowarka-8-gniazdowa-gcecem). Dodatkową energię daje [bateria GBS6X1](/produkt/getac-bateria-gbs6x1) w kieszeni multimedialnej.",
+    "description": "Getac GBM6X6 zasila laptop Getac S410 G5, gdy nie jest podłączony zasilacz. Może być baterią główną albo drugą baterią w konfiguracjach z dwiema bateriami.\n\nTo 6-ogniwowy pakiet Li-ion: 10,8 V, 6900 mAh, 74,5 Wh, 330 g. Ładują go [GCMCEJ](/produkt/getac-ladowarka-2-gniazdowa-gcmcej) i [GCECEM](/produkt/getac-ladowarka-8-gniazdowa-gcecem). W kieszeni multimedialnej może pracować dodatkowa bateria [GBS6X1](/produkt/getac-bateria-gbs6x1).\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2267,7 +2267,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Bateria do kieszeni multimedialnej 4200 mAh Getac GBS6X1 do S410 G5",
     "seoDescription": "Getac GBS6X1 — dodatkowa bateria 4200 mAh do kieszeni multimedialnej laptopa Getac S410 G5.",
     "shortDescription": "Getac GBS6X1 — dodatkowa bateria 4200 mAh do kieszeni multimedialnej laptopa Getac S410 G5.",
-    "description": "Bateria Getac GBS6X1 mieści się w kieszeni multimedialnej laptopa Getac S410 G5. Wydłuża czas pracy w terenie obok baterii głównej. Baterię wyjmuje się z kieszeni bez narzędzi. Kieszeń mieści jeden moduł: baterię, napęd optyczny albo czytnik kodów.\n\nBateria litowo-jonowa ma 6 ogniw, napięcie nominalne 11,1 V, pojemność 4200 mAh i energię 46,6 Wh. Ma masę 300 g. Pasuje do laptopa [Getac S410 G5](/produkt/getac-s410-g5). Ładowarki GCMCEJ i GCECEM nie ładują tej baterii.",
+    "description": "Getac GBS6X1 to bateria do kieszeni multimedialnej laptopa Getac S410 G5, dodawana do baterii głównej przy długiej pracy w terenie. Wysuwa się ją z kieszeni bez narzędzi. Kieszeń mieści jeden moduł: baterię, napęd optyczny albo czytnik kodów.\n\nParametry: Li-ion, 6 ogniw, 11,1 V, 4200 mAh, 46,6 Wh, 300 g. Ładowarki GCMCEJ i GCECEM nie ładują tej baterii.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2330,9 +2330,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-2-gniazdowa-gcmcep",
     "name": "Ładowarka 2-gniazdowa Getac GCMCEP do baterii S510 i S510AD",
     "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCEP do baterii S510 i S510AD",
-    "seoDescription": "Getac GCMCEP — zewnętrzna ładowarka 2 baterii do laptopów Getac S510 i S510AD, z przewodem zasilającym EU.",
-    "shortDescription": "Getac GCMCEP — zewnętrzna ładowarka 2 baterii do laptopów Getac S510 i S510AD, z przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCMCEP ładuje jednocześnie 2 baterie główne laptopów Getac S510 i S510AD poza laptopem. Pozwala przygotować naładowane baterie na kolejną zmianę. Ładowarka obsługuje baterię [GBM6X9](/produkt/getac-bateria-gbm6x9).\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg. Pasuje do baterii laptopów [Getac S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCMCEP — ładowarka dwóch baterii głównych GBM6X9 laptopów Getac S510 i S510AD, z przewodem EU.",
+    "shortDescription": "Getac GCMCEP — ładowarka dwóch baterii głównych GBM6X9 laptopów Getac S510 i S510AD, z przewodem EU.",
+    "description": "Getac GCMCEP przyjmuje 2 baterie główne [GBM6X9](/produkt/getac-bateria-gbm6x9) laptopów Getac S510 i S510AD i ładuje je bez udziału laptopa. Przydaje się, gdy laptop pracuje w terenie, a zapasowe baterie czekają w biurze.\n\nParametry: wejście 100–240 V AC, wyjście 13,05 V / 2,4 A. Waży 1,2 kg i ma przewód sieciowy z wtyczką EU. Baterie są sprzedawane osobno.\n\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2408,9 +2408,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-2-gniazdowa-gcmcer",
     "name": "Ładowarka 2-gniazdowa Getac GCMCER do baterii B360",
     "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCER do baterii B360",
-    "seoDescription": "Getac GCMCER — zewnętrzna ładowarka 2 baterii do laptopa Getac B360, ze wskaźnikami naładowania i przewodem zasilającym EU.",
-    "shortDescription": "Getac GCMCER — zewnętrzna ładowarka 2 baterii do laptopa Getac B360, ze wskaźnikami naładowania i przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCMCER ładuje jednocześnie 2 baterie laptopa Getac B360 poza laptopem. Pozwala przygotować naładowane baterie na kolejną zmianę. Każde gniazdo ma osobny kanał ładowania i wskaźnik LED. Pięć diod pokazuje stan naładowania każdej baterii.\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg. Pasuje do baterii [GBM4X5](/produkt/getac-bateria-gbm4x5) laptopa [Getac B360](/produkt/getac-b360). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCMCER — 2-gniazdowa ładowarka baterii GBM4X5 laptopa Getac B360, z osobnymi kanałami i diodami stanu naładowania.",
+    "shortDescription": "Getac GCMCER — 2-gniazdowa ładowarka baterii GBM4X5 laptopa Getac B360, z osobnymi kanałami i diodami stanu naładowania.",
+    "description": "Ładowarka Getac GCMCER do laptopa Getac B360 ma 2 gniazda z osobnymi kanałami ładowania. Przy każdym gnieździe pięć diod LED pokazuje stan naładowania baterii [GBM4X5](/produkt/getac-bateria-gbm4x5).\n\nW odróżnieniu od pozostałych ładowarek 2-gniazdowych w ofercie daje na wyjściu 17,4 V i do 4 A. Masa 1,2 kg; wtyczka przewodu sieciowego: EU. Baterie trzeba zamówić osobno.\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2489,9 +2489,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-2-gniazdowa-gcmcej",
     "name": "Ładowarka 2-gniazdowa Getac GCMCEJ do baterii S410 G5",
     "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCEJ do baterii S410 G5",
-    "seoDescription": "Getac GCMCEJ — zewnętrzna ładowarka 2 baterii głównych do laptopa Getac S410 G5, z przewodem zasilającym EU.",
-    "shortDescription": "Getac GCMCEJ — zewnętrzna ładowarka 2 baterii głównych do laptopa Getac S410 G5, z przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCMCEJ ładuje jednocześnie 2 baterie główne laptopa Getac S410 G5 poza laptopem. Pozwala przygotować naładowane baterie na kolejną zmianę. Ładowarka obsługuje baterię [GBM6X6](/produkt/getac-bateria-gbm6x6). Nie obsługuje baterii do kieszeni multimedialnej GBS6X1.\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg. Pasuje do baterii laptopa [Getac S410 G5](/produkt/getac-s410-g5). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCMCEJ — ładowarka na 2 baterie główne GBM6X6 laptopa Getac S410 G5 (nie ładuje GBS6X1), przewód EU.",
+    "shortDescription": "Getac GCMCEJ — ładowarka na 2 baterie główne GBM6X6 laptopa Getac S410 G5 (nie ładuje GBS6X1), przewód EU.",
+    "description": "Getac GCMCEJ ładuje naraz dwie baterie główne [GBM6X6](/produkt/getac-bateria-gbm6x6) laptopa Getac S410 G5. Nie obsługuje baterii [GBS6X1](/produkt/getac-bateria-gbs6x1) do kieszeni multimedialnej.\n\nŁadowarka ma wymiary 160 × 180 × 72,5 mm, waży 1,2 kg i podaje 13,05 V przy prądzie do 2,4 A. Zasila się ją z sieci 100–240 V AC przez przewód z wtyczką EU. Ładowarka jest dostarczana bez baterii.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2562,9 +2562,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-8-gniazdowa-gceceq",
     "name": "Ładowarka 8-gniazdowa Getac GCECEQ do baterii S510 i S510AD",
     "seoTitle": "Ładowarka 8-gniazdowa Getac GCECEQ do baterii S510 i S510AD",
-    "seoDescription": "Getac GCECEQ — ładowarka 8 baterii do laptopów Getac S510 i S510AD, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "shortDescription": "Getac GCECEQ — ładowarka 8 baterii do laptopów Getac S510 i S510AD, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCECEQ ładuje jednocześnie do 8 baterii laptopów Getac S510 i S510AD. Służy do przygotowania baterii dla całej floty laptopów, np. w dziale serwisu lub w bazie pojazdów. Ładowarka obsługuje baterię [GBM6X9](/produkt/getac-bateria-gbm6x9).\n\nŁadowarka pracuje z zasilaczem 330 W, który przyjmuje napięcie 100–240 V AC. W zestawie jest przewód zasilający z wtyczką EU. Ma wymiary 465 × 245 × 95,3–111,3 mm i masę 4,7 kg. Pasuje do baterii laptopów [Getac S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCECEQ — ładuje naraz do 8 baterii GBM6X9 laptopów Getac S510 i S510AD. Zasilacz 330 W w zestawie, wtyczka EU.",
+    "shortDescription": "Getac GCECEQ — ładuje naraz do 8 baterii GBM6X9 laptopów Getac S510 i S510AD. Zasilacz 330 W w zestawie, wtyczka EU.",
+    "description": "Getac GCECEQ to ładowarka 8-gniazdowa do laptopów Getac S510 i S510AD, na baterie [GBM6X9](/produkt/getac-bateria-gbm6x9). Służy w punktach, gdzie obsługuje się większą liczbę laptopów, np. w dziale serwisu albo w bazie pojazdów.\n\nZasilacz 330 W w zestawie przyjmuje 100–240 V AC i daje 19,5 V przy 16,9 A. Wysokość ładowarki wynosi 95,3–111,3 mm, masa 4,7 kg. Baterii nie dołączono.\n\n- [Getac S510](/produkt/getac-s510)\n- [Getac S510AD](/produkt/getac-s510ad)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2640,9 +2640,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-8-gniazdowa-gceces",
     "name": "Ładowarka 8-gniazdowa Getac GCECES do baterii B360",
     "seoTitle": "Ładowarka 8-gniazdowa Getac GCECES do baterii B360",
-    "seoDescription": "Getac GCECES — ładowarka 8 baterii do laptopa Getac B360, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "shortDescription": "Getac GCECES — ładowarka 8 baterii do laptopa Getac B360, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCECES ładuje jednocześnie do 8 baterii laptopa Getac B360. Służy do przygotowania baterii dla całej floty laptopów, np. w bazie pojazdów lub w jednostce. Pięć diod przy każdym gnieździe pokazuje stan naładowania baterii.\n\nŁadowarka pracuje z zasilaczem 330 W, który przyjmuje napięcie 100–240 V AC. W zestawie jest przewód zasilający z wtyczką EU. Ma wymiary 465 × 245 × 101–117,4 mm i masę 4,7 kg bez baterii. Pasuje do baterii [GBM4X5](/produkt/getac-bateria-gbm4x5) laptopa [Getac B360](/produkt/getac-b360). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCECES — ładowarka na 8 baterii GBM4X5 laptopa Getac B360, z pięciodiodowym wskaźnikiem przy każdym gnieździe i zasilaczem 330 W.",
+    "shortDescription": "Getac GCECES — ładowarka na 8 baterii GBM4X5 laptopa Getac B360, z pięciodiodowym wskaźnikiem przy każdym gnieździe i zasilaczem 330 W.",
+    "description": "Getac GCECES ładuje do 8 baterii [GBM4X5](/produkt/getac-bateria-gbm4x5) laptopa Getac B360 jednocześnie. Przy każdym gnieździe jest pięciodiodowy wskaźnik stanu naładowania, więc od razu widać, które baterie są gotowe.\n\nPracuje z zasilaczem 330 W i przewodem sieciowym EU. Ma 465 × 245 × 101–117,4 mm i waży 4,7 kg bez baterii, które kupuje się osobno.\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2717,9 +2717,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-8-gniazdowa-gcecet",
     "name": "Ładowarka 8-gniazdowa Getac GCECET do baterii F120, G140 i V120",
     "seoTitle": "Ładowarka 8-gniazdowa Getac GCECET do baterii F120, G140 i V120",
-    "seoDescription": "Getac GCECET — ładowarka 8 baterii standardowych i o dużej pojemności do tabletów Getac F120 i G140 oraz laptopa V120, z zasilaczem 330 W.",
-    "shortDescription": "Getac GCECET — ładowarka 8 baterii standardowych i o dużej pojemności do tabletów Getac F120 i G140 oraz laptopa V120, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCECET ładuje jednocześnie do 8 baterii tabletów Getac F120 i G140 oraz laptopa Getac V120. Służy do przygotowania baterii dla całej floty urządzeń, np. w bazie pojazdów lub w jednostce. Obsługuje baterie standardowe [GBM2X4](/produkt/getac-bateria-gbm2x4) i baterie o dużej pojemności [GBM3X8](/produkt/getac-bateria-gbm3x8).\n\nŁadowarka pracuje z zasilaczem 330 W, który przyjmuje napięcie 100–240 V AC. W zestawie jest przewód zasilający z wtyczką EU. Ma wymiary 465 × 245 × 95,3–111,3 mm i masę 4,7 kg bez baterii. Pasuje do baterii tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz laptopa [Getac V120](/produkt/getac-v120). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCECET — ładowarka 8-gniazdowa do baterii standardowych i o dużej pojemności tabletów Getac F120, G140 i laptopa V120 (zasilacz 330 W).",
+    "shortDescription": "Getac GCECET — ładowarka 8-gniazdowa do baterii standardowych i o dużej pojemności tabletów Getac F120, G140 i laptopa V120 (zasilacz 330 W).",
+    "description": "Getac GCECET obsługuje 8 baterii naraz i pasuje do floty urządzeń z tymi samymi bateriami: tabletów Getac F120 i G140 oraz laptopa Getac V120. W gniazdach mogą być baterie standardowe [GBM2X4](/produkt/getac-bateria-gbm2x4) i o dużej pojemności [GBM3X8](/produkt/getac-bateria-gbm3x8).\n\nZasilacz 330 W: wejście 100–240 V AC, 4,2 A; wyjście 19,5 V, 16,9 A. Masa ładowarki: 4,7 kg. Baterie nie wchodzą w skład zestawu.\n\n- [Getac F120](/produkt/getac-f120)\n- [Getac G140](/produkt/getac-g140)\n- [Getac V120](/produkt/getac-v120)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -2797,9 +2797,9 @@ export const getacLaptopAccessories: Product[] = [
     "slug": "getac-ladowarka-8-gniazdowa-gcecem",
     "name": "Ładowarka 8-gniazdowa Getac GCECEM do baterii S410 G5",
     "seoTitle": "Ładowarka 8-gniazdowa Getac GCECEM do baterii S410 G5",
-    "seoDescription": "Getac GCECEM — ładowarka 8 baterii głównych do laptopa Getac S410 G5, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "shortDescription": "Getac GCECEM — ładowarka 8 baterii głównych do laptopa Getac S410 G5, z zasilaczem 330 W i przewodem zasilającym EU.",
-    "description": "Ładowarka Getac GCECEM ładuje jednocześnie do 8 baterii głównych laptopa Getac S410 G5. Służy do przygotowania baterii dla całej floty laptopów, np. w dziale serwisu lub w bazie pojazdów. Obsługuje tylko baterie główne [GBM6X6](/produkt/getac-bateria-gbm6x6). Baterii do kieszeni multimedialnej GBS6X1 nie obsługuje.\n\nŁadowarka pracuje z zasilaczem 330 W, który przyjmuje napięcie 100–240 V AC. W zestawie jest przewód zasilający z wtyczką EU. Ma wymiary 465 × 245 × 95,3–111,3 mm i masę 4,7 kg bez baterii. Pasuje do baterii laptopa [Getac S410 G5](/produkt/getac-s410-g5). Ładowarka jest sprzedawana bez baterii.",
+    "seoDescription": "Getac GCECEM — ładowarka 8 baterii głównych GBM6X6 laptopa Getac S410 G5 (bez baterii GBS6X1), zasilana zasilaczem 330 W.",
+    "shortDescription": "Getac GCECEM — ładowarka 8 baterii głównych GBM6X6 laptopa Getac S410 G5 (bez baterii GBS6X1), zasilana zasilaczem 330 W.",
+    "description": "Ładowarka Getac GCECEM ładuje do 8 baterii głównych [GBM6X6](/produkt/getac-bateria-gbm6x6) laptopa Getac S410 G5. Bateria [GBS6X1](/produkt/getac-bateria-gbs6x1) z kieszeni multimedialnej nie pasuje do jej gniazd.\n\nKomplet zawiera zasilacz 330 W (19,5 V, 16,9 A) i przewód sieciowy EU. Ładowarka ma 465 × 245 × 95,3–111,3 mm i waży 4,7 kg. Baterie zamawia się oddzielnie.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2876,7 +2876,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Stacja biurkowa Getac GDODEB do B360",
     "seoDescription": "Getac GDODEB — stacja biurkowa z zasilaczem 120 W do laptopa Getac B360: 2 × LAN, HDMI, VGA, RS-232 i 5 × USB.",
     "shortDescription": "Getac GDODEB — stacja biurkowa z zasilaczem 120 W do laptopa Getac B360: 2 × LAN, HDMI, VGA, RS-232 i 5 × USB.",
-    "description": "Stacja biurkowa Getac GDODEB udostępnia porty do urządzeń peryferyjnych na stanowisku w biurze. Przez port LAN, RS-232 albo USB laptop przesyła dane z pracy w terenie do systemów firmy. Laptop łączy się ze stacją przez złącze dokujące.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, 2 porty USB 2.0, 3 porty USB 3.0, 2 porty LAN, port HDMI, wyjście VGA, port szeregowy RS-232 i gniazdo Kensington. W zestawie jest zasilacz 120 W z przewodem zasilającym z wtyczką EU. Stacja ma wymiary 380,1 × 291,2 × 77,2 mm i masę 1,615 kg. Pasuje do laptopa [Getac B360](/produkt/getac-b360).",
+    "description": "Getac GDODEB to stacja biurkowa laptopa Getac B360. Przez 2 porty LAN, port RS-232 oraz porty USB (3 × USB 3.0, 2 × USB 2.0) laptop przesyła dane z pracy w terenie do systemów firmy. Monitor podłącza się przez HDMI albo VGA.\n\nW zestawie jest zasilacz 120 W z przewodem EU. Stacja ma 380,1 × 291,2 × 77,2 mm i waży 1,615 kg.\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -2945,7 +2945,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Stacja biurkowa Getac GDODE4 do S410 G5",
     "seoDescription": "Getac GDODE4 — stacja biurkowa z zasilaczem 120 W do laptopa Getac S410 G5: LAN, HDMI, VGA, RS-232 i 4 × USB.",
     "shortDescription": "Getac GDODE4 — stacja biurkowa z zasilaczem 120 W do laptopa Getac S410 G5: LAN, HDMI, VGA, RS-232 i 4 × USB.",
-    "description": "Stacja biurkowa Getac GDODE4 udostępnia porty do urządzeń peryferyjnych na stanowisku w biurze. Przez port LAN, RS-232 albo USB laptop przesyła dane z pracy w terenie do systemów firmy. Laptop łączy się ze stacją przez złącze dokujące.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, port USB 3.0, 3 porty USB 2.0, wyjście VGA, port HDMI, port LAN (RJ-45) i port szeregowy RS-232. W zestawie jest zasilacz 120 W z przewodem zasilającym z wtyczką EU. Pasuje do laptopa [Getac S410 G5](/produkt/getac-s410-g5).",
+    "description": "Stacja biurkowa Getac GDODE4 jest przeznaczona do laptopa Getac S410 G5 w biurze. Ma port LAN (RJ-45), port szeregowy RS-232, wyjścia VGA i HDMI, port USB 3.0 oraz 3 porty USB 2.0. Dzięki nim dane z terenu trafiają do systemów firmy na bieżąco.\n\nZestaw obejmuje zasilacz 120 W i przewód z wtyczką EU.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -3006,7 +3006,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Napęd DVD Getac GSROXC do S510",
     "seoDescription": "Getac GSROXC — napęd DVD Super Multi do kieszeni multimedialnej laptopa Getac S510, montowany bez narzędzi.",
     "shortDescription": "Getac GSROXC — napęd DVD Super Multi do kieszeni multimedialnej laptopa Getac S510, montowany bez narzędzi.",
-    "description": "Napęd Getac GSROXC odczytuje i zapisuje płyty optyczne w różnych formatach. Montuje się go w kieszeni multimedialnej laptopa Getac S510 w miejsce zaślepki, bez narzędzi.\n\nNapęd ma wymiary 138,5 × 135,5 × 14 mm i masę 170,5 g. Z napędem DVD laptop pracuje w temperaturze od −10°C do +50°C. Napęd wyklucza czytnik kodów 1D/2D i kartę graficzną NVIDIA RTX A500, bo zajmują to samo miejsce. Pasuje do laptopa [Getac S510](/produkt/getac-s510).",
+    "description": "Getac GSROXC to napęd DVD Super Multi, który odczytuje i zapisuje płyty optyczne w wielu formatach. Wkłada się go bez narzędzi do kieszeni multimedialnej laptopa Getac S510 w miejsce zaślepki.\n\nNapęd ma 138,5 × 135,5 × 14 mm i waży 170,5 g. Z nim laptop pracuje w zakresie od −10°C do +50°C. Zajmuje to samo miejsce co czytnik kodów 1D/2D i karta NVIDIA RTX A500, więc je wyklucza.\n\n- [Getac S510](/produkt/getac-s510)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -3075,7 +3075,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Folia ochronna Getac GMPFXP do B360",
     "seoDescription": "Getac GMPFXP — folia ochronna z powłoką przeciwodblaskową do ekranu laptopa Getac B360.",
     "shortDescription": "Getac GMPFXP — folia ochronna z powłoką przeciwodblaskową do ekranu laptopa Getac B360.",
-    "description": "Folia ochronna Getac GMPFXP jest docięta do ekranu laptopa Getac B360. Chroni ekran przed zarysowaniem w codziennej pracy. Powłoka przeciwodblaskowa rozprasza światło i ogranicza odbicia na ekranie. Folię nakłada się i zdejmuje bez śladów kleju.\n\nFolia poprawia czytelność ekranu przy typowym oświetleniu. Jest wykonana z PET i ma wymiary 303,0 × 174,6 × 0,24 mm. Pasuje do laptopa [Getac B360](/produkt/getac-b360). Na zdjęciu folia jest nałożona na ekran laptopa; laptop nie wchodzi w skład zestawu.",
+    "description": "Folia Getac GMPFXP z PET ma wymiary 303,0 × 174,6 mm i grubość 0,24 mm, dopasowane do ekranu laptopa Getac B360. Chroni ekran przed zarysowaniem, a powłoka przeciwodblaskowa rozprasza światło i zmniejsza odblaski.\n\nFolię łatwo nałożyć i zdjąć, bez śladów kleju. Na zdjęciu folia jest na ekranie laptopa; laptop nie należy do zestawu.\n\n- [Getac B360](/produkt/getac-b360)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -3136,7 +3136,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Folia ochronna Getac GMPFXN do S410 G5",
     "seoDescription": "Getac GMPFXN — folia ochronna z powłoką przeciwodblaskową do ekranu laptopa Getac S410 G5.",
     "shortDescription": "Getac GMPFXN — folia ochronna z powłoką przeciwodblaskową do ekranu laptopa Getac S410 G5.",
-    "description": "Folia ochronna Getac GMPFXN jest docięta do ekranu laptopa Getac S410 G5. Chroni ekran przed zarysowaniem w codziennej pracy. Powłoka przeciwodblaskowa rozprasza światło i ogranicza odbicia na ekranie. Folię nakłada się i zdejmuje bez śladów kleju.\n\nFolia poprawia czytelność ekranu przy typowym oświetleniu. Jest wykonana z PET i ma wymiary 309,4 × 173,85 × 0,15 mm. Pasuje do laptopa [Getac S410 G5](/produkt/getac-s410-g5). Na zdjęciu folia jest nałożona na ekran laptopa; laptop nie wchodzi w skład zestawu.",
+    "description": "Getac GMPFXN to przycięta na wymiar folia na ekran laptopa Getac S410 G5: 309,4 × 173,85 mm, grubość 0,15 mm, materiał PET. Powłoka antyodblaskowa poprawia czytelność przy typowym oświetleniu i chroni ekran przed rysami.\n\nZdjęta folia nie zostawia kleju. Na zdjęciu folia leży na ekranie laptopa; laptop kupuje się osobno.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -3197,7 +3197,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Rysik pojemnościowy Getac GMPSXE do S410 G5",
     "seoDescription": "Getac GMPSXE — rysik pojemnościowy z twardą końcówką i odpinaną linką do ekranu dotykowego laptopa Getac S410 G5.",
     "shortDescription": "Getac GMPSXE — rysik pojemnościowy z twardą końcówką i odpinaną linką do ekranu dotykowego laptopa Getac S410 G5.",
-    "description": "Rysik pojemnościowy Getac GMPSXE służy do obsługi ekranu dotykowego laptopa Getac S410 G5. Ma twardą końcówkę, która nie rysuje ekranu i nie zostawia odcisków palców. Odpinana linka przytrzymuje rysik przy laptopie.\n\nLaptop S410 G5 ma rysik w zestawie, dlatego GMPSXE służy jako rysik zapasowy. Rysik ma długość 111 mm i średnicę 9 mm. Końcówka ma 3,8 mm długości i 3,5 mm średnicy. Linka ma 304 mm. Pasuje do laptopa [Getac S410 G5](/produkt/getac-s410-g5).",
+    "description": "Rysik pojemnościowy Getac GMPSXE do ekranu dotykowego laptopa Getac S410 G5 ma twardą końcówkę (3,8 mm, Ø 3,5 mm), która nie rysuje ekranu i nie zostawia odcisków palców. Odpinana linka 304 mm chroni go przed zgubieniem.\n\nLaptop ma rysik w zestawie, więc GMPSXE jest rysikiem zapasowym. Długość rysika: 111 mm.\n\n- [Getac S410 G5](/produkt/getac-s410-g5)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
@@ -3262,7 +3262,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Pasek na ramię 2-punktowy Getac GMS2X8 do tabletów Getac i laptopa V120",
     "seoDescription": "Getac GMS2X8 — regulowany pasek na ramię mocowany w 2 punktach do tabletów Getac UX10 G5, F110 G7, F120, K120 G3, G140 i ZX10 G2 oraz laptopa V120.",
     "shortDescription": "Getac GMS2X8 — regulowany pasek na ramię mocowany w 2 punktach do tabletów Getac UX10 G5, F110 G7, F120, K120 G3, G140 i ZX10 G2 oraz laptopa V120.",
-    "description": "Pasek Getac GMS2X8 mocuje się w 2 punktach do obudowy tabletu albo laptopa Getac V120. Pozwala nosić urządzenie na ramieniu albo przez ramię. Długość paska reguluje się do wzrostu użytkownika. Pozwala przenosić urządzenie bez trzymania go w dłoni. Pasek ogranicza ryzyko upuszczenia urządzenia w czasie przenoszenia.\n\nPasek jest wykonany z poliestru i ma wymiary 38 × 1530 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3), [G140](/produkt/getac-g140) i [ZX10 G2](/produkt/getac-zx10-g2) oraz laptopa [Getac V120](/produkt/getac-v120).",
+    "description": "Pasek Getac GMS2X8 mocuje się w 2 uchwytach obudowy urządzenia. Długość reguluje się tak, by nosić urządzenie na ramieniu albo przez pierś. Ręce pozostają wolne, a pasek ogranicza ryzyko upuszczenia sprzętu podczas przenoszenia.\n\nTaśma z poliestru ma 38 mm szerokości i 1530 mm długości. Zgodność: tablety Getac UX10 G5, F110 G7, F120, K120 G3, G140 i ZX10 G2 oraz laptop Getac V120.\n\n- [Getac UX10 G5](/produkt/getac-ux10-g5)\n- [Getac F110 G7](/produkt/getac-f110-g7)\n- [Getac F120](/produkt/getac-f120)\n- [Getac K120 G3](/produkt/getac-k120-g3)\n- [Getac G140](/produkt/getac-g140)\n- [Getac ZX10 G2](/produkt/getac-zx10-g2)\n- [Getac V120](/produkt/getac-v120)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -3330,7 +3330,7 @@ export const getacLaptopAccessories: Product[] = [
     "seoTitle": "Uchwyt Getac GMHDX7 do V120",
     "seoDescription": "Getac GMHDX7 — uchwyt do przenoszenia z uchwytem na rysik do laptopa Getac V120, montowany w uchwytach paska.",
     "shortDescription": "Getac GMHDX7 — uchwyt do przenoszenia z uchwytem na rysik do laptopa Getac V120, montowany w uchwytach paska.",
-    "description": "Uchwyt Getac GMHDX7 ułatwia przenoszenie laptopa Getac V120 w terenie. Montuje się go i zdejmuje w uchwytach paska na narożnych odbojach obudowy. Uchwyt ma też miejsce na rysik albo pióro digitizer.\n\nUchwyt jest wykonany z PC+ABS i TPU. Ma wymiary 163 × 20 mm i masę 50 g. Pasuje do laptopa [Getac V120](/produkt/getac-v120). Na zdjęciu uchwyt jest zamontowany na laptopie; laptop nie wchodzi w skład zestawu.",
+    "description": "Uchwyt Getac GMHDX7 pozwala szybko chwycić i przenieść laptop Getac V120. Zakłada się go i zdejmuje w uchwytach paska na narożnych odbojach. W uchwycie jest miejsce na rysik albo pióro digitizer.\n\nMateriał: PC+ABS i TPU, wymiary 163 × 20 mm, masa 50 g. Zdjęcie pokazuje uchwyt założony na laptop, który nie wchodzi w skład zestawu.\n\n- [Getac V120](/produkt/getac-v120)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-laptopow"
