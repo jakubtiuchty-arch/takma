@@ -1082,7 +1082,6 @@ export const getacLaptopProducts: Product[] = [
     ],
     "applications": [
       "Montaż i praca w kabinie pojazdu",
-      "Strefy zagrożone wybuchem Class I, Division 2 (na zamówienie)",
       "Koordynacja projektów i ekip terenowych w czasie rzeczywistym",
       "Prace serwisowe w deszczu i na mrozie"
     ],

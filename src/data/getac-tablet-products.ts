@@ -785,7 +785,6 @@ export const getacTabletProducts: Product[] = [
       }
     ],
     "applications": [
-      "Inspekcje termowizyjne z G-Thermo (konfiguracja na zamówienie)",
       "Pogotowie, straż pożarna i policja",
       "Analiza danych terenowych w sektorze ropy i gazu",
       "Zarządzanie flotą w transporcie dalekobieżnym"
