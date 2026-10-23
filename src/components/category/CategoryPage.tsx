@@ -39,6 +39,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
   const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+    'materialy-eksploatacyjne': {
+      src: '/images/materialy-eksploatacyjne-hero-v1.webp',
+      alt: 'Rolki etykiet, czarna taśma termotransferowa, kolorowa taśma do druku kart, karty PVC i opaska identyfikacyjna',
+      lead: 'Materiały do drukarek etykiet i kart: etykiety papierowe i foliowe, taśmy barwiące, tusze, karty PVC oraz opaski identyfikacyjne. Dobierz materiał do modelu drukarki, sposobu druku i warunków użytkowania.',
+    },
     'skanery-kodow-kreskowych': {
       src: '/images/skanery-kodow-kreskowych-hero-v5.webp',
       alt: 'Skanery Zebra DS3678, Datalogic QuickScan QD2590 i Honeywell Granit Ultra 2105i nad linią przesyłek',
