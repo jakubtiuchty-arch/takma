@@ -162,3 +162,61 @@ Każdą kartę porównano zdanie po zdaniu z kartą Getac (title, meta, short, o
 - ZX10 G2: wymiana baterii bez wyłączania tylko gdy obie kieszenie mają baterie (karta: bateria + zaślepka w standardzie);
 - UX10 G5: LAN może być z boku obudowy, więc nie wyklucza czytnika kodów (poprawione FAQ).
 Dane spoza karty Getac (oznaczone): PN i konfiguracje (Jarltech/ERS), zawartość zestawu ZX80/ZX10/ZX80W (Jarltech), ceny i dostępność (API).
+
+## 10. Poprawki po audytach (23.10.2026)
+
+### Tablety
+| Karta | Przed | Po |
+|---|---|---|
+| ZX10 G2, UX10 G5, G140 | Pióro digitizer (GMPDX7/GMPDX6) w akcesoriach; ekran „opcja: tryb podwójny z digitizerem” | Pióra usunięte z akcesoriów (oferowane PN nie mają digitizera); rysiki pojemnościowe GMPSXU, GMPSXN, GMPSXW; „tryb podwójny z digitizerem tylko w konfiguracjach na zamówienie” |
+| ZX10 G2 | Zestaw: „bateria wymienna, zasilacz…”; FAQ: wymiana na drugiej baterii | Zestaw według karty Getac: bateria 4990 mAh i zaślepka drugiej kieszeni; FAQ: do wymiany bez wyłączania potrzebna druga bateria GBM1X2 albo 2 baterie GBM2X3 |
+| ZX80 | short: „baterią wymienianą bez wyłączania”; opisy zdjęć 2 i 3 odwrócone | „kieszeń na baterię wymienianą bez wyłączania (bateria GBM1XA lub GBM2XA sprzedawana osobno)”; zdjęcie 2: lewa strona ze złączami, zdjęcie 3: prawa strona z przyciskami (sprawdzone na obrazach) |
+| ZX80W | Zestaw wspólny; brak „Audio”; FAQ „dla akcesoriów z tej karty” | Zestaw per wersja (GI: bateria w kieszeni, przewód EU/UK; WB: zaślepka, przewód EU, rysik); Audio z karty Getac; FAQ z listą akcesoriów wspólnych i GAT6E1 |
+| ZX80, ZX80W, ZX10 G2 | „Wi-Fi 6E, 4G LTE albo 5G” | „Każda wersja ma Wi-Fi 6E; wybrane wersje mają też 4G LTE (ZX80 także 5G)” |
+| ZX80, ZX80W, G140 | Dymek anteny bez warunku stacji | Złącza RF pass-through podłączane przez stację pojazdową ze złączami RF (ZX80: Gamber-Johnson, 3 złącza; G140: 3 dla 4G, 4 dla 5G) |
+| ZX80, ZX10 G2, ZX80W, G140 | Opis zdjęcia dolnej krawędzi: „złącza na dolnej krawędzi” | „złącze dokujące i złącza anten zewnętrznych (w wersjach ze złączami RF)” |
+| UX10 G5, F110 G7, F120, K120 G3, G140 | „certyfikaty MIL-STD-810H i MIL-STD-461G” | MIL-STD-461G z zasilaczem MIL-STD-461 90 W sprzedawanym osobno (K120 G3: także wersja z gniazdem DC) — przypisy kart Getac |
+| F120 | 12 wariantów, w tym FW17641I1DXX; FW17641I1BXX z digitizerem i paskiem | FW17641I1DXX usunięty (identyczny z FW1764WI1DXX); FW17641I1BXX tylko 5G i GPS (ERS nie potwierdza digitizera, paska ani pass-through). Piątego ujęcia F120 na getac.com nie ma (tylko 01–03, 05 i grafika marketingowa) |
+| G140 | Dymek pamięci ogólny; brak GPS w specyfikacji | RAM 16/32 GB, SSD 256 GB / 512 GB / 1 TB; „GPS: w modułach 4G/5G; opcja: dedykowany GPS L1/L5” (karta Getac) |
+| UX10 G5 | FAQ: wymiary z klawiaturą ze stacją przy klawiaturze GDKBUP | W ofercie klawiatura odpinana GDKBUP (82 klawisze, IP65, 900 g); wymiary 299 × 265 × 48,7 mm dotyczą klawiatury ze stacją |
+| F110 G7 | Zestaw: „rysik pojemnościowy z linką” | „rysik pojemnościowy z linką albo pióro digitizer (wersje z digitizerem)” |
+| K120 G3 | Zestaw: „zasilacz 65 W” | „zasilacz USB-C 65 W (wersje z gniazdem DC: zasilacz 65 W z wtykiem DC)” |
+| wszystkie | „w tej karcie”, „z tej karty”; „1065 KB” | „w ofercie”; „1,0 MB” |
+
+### Akcesoria
+- GAT6E1: zdjęcie bez przewodu z wtyczką US (wycięty przewód; wersji EU nie ma w przewodnikach); opis bez „pierwszego uruchomienia” i „zapasowego”.
+- GMPDX7: tylko ZX80 i ZX80W. GMPDX6: tylko F110 G7, F120, K120 G3; zdanie o Smart Touch w F120 i G140.
+- Nowe karty: rysiki pojemnościowe GMPSXU (ZX10 G2, 98,03 zł, niedostępny), GMPSXW (F120, G140, 98,03 zł, 6 szt.), GMPSXN (UX10 G5, F110 G7, K120 G3, 98,03 zł, 50 szt.). Przewodniki podają minimalne zamówienie 5 lub 10 szt.
+- Baterie: zamiast „według producenta… do 2 razy”: GBM2XA, GBM2X3 „2 razy większa pojemność”; GBM9X5 „ponad 2 razy” (9240/4070 mAh); GBM6X7 „4200 mAh zamiast 2680 mAh” (nie 2×); GBM4X4 „14,4 V i 3450 mAh zamiast 11,1 V i 2100 mAh”; GBM3X8 „ok. 47 Wh zamiast ok. 31,5 Wh” (11,61 V × 4,07 Ah i 7,74 V × 4,07 Ah).
+- GAD2X4: zdjęcie tylko wersji z wtykiem zapalniczki (oddzielony drugi zasilacz), opis „W zestawie jest wersja z wtykiem zapalniczki”.
+- GDODE8: zdjęcie z przewodnika ZX10 (500×350, powiększenie 1,6×). Opisy zdjęć GDKBUR, GDKBUP, GMBCX2; GMBCX3 (komory na zamek, kieszenie wewnątrz); GDODXC (wejście zasilania USB-C, Power Delivery).
+
+### Treść kategorii, marki i llms.txt
+| Plik | Przed | Po |
+|---|---|---|
+| `src/data/products.ts` | IP65-IP68, ekrany 8-12″, do magazynu | IP65-IP68, ekrany 8-14″, do magazynu |
+| `src/data/products.ts` | klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM | klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM |
+| `src/data/manufacturers.ts` | Tablety przemysłowe Getac z Androidem i Windows 11 Pro: | Tablety przemysłowe Getac z Androidem 15 i Windows 11: |
+| `src/data/subcategory-content.ts` | oferują ekrany o jasności 500–1000 nit czytelne w pełnym słońcu | oferują ekrany o jasności 500–1200 nit czytelne w pełnym słońcu |
+| `src/data/subcategory-content.ts` | TAKMA jako autoryzowany partner oferuje tablety wszystkich trzech producentów z doradztwem technicznym | TAKMA jako partner oferuje tablety czterech producentów: Zebra, Getac, Honeywell i Brady, z doradztwem technicznym |
+| `src/data/subcategory-content.ts` | Serwis gwarancyjny i pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku. | Serwis gwarancyjny i pogwarancyjny tabletów Zebra zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku. |
+| `src/data/subcategory-content.ts` | Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy). Hot Swap (wymiana baterii bez wyłączania urządzenia) — dostępny w Zebra ET i w tabletach Getac: ZX80, ZX80W i ZX10 G2 mają kieszeń na baterię wymienną, F110, F120, K120 i G140 pracują na 2 bateriach wymienianych bez wyłączania (LifeSupport), a UX10 G5 ma tę funkcję z opcjonalną baterią podtrzymującą. Stacje ładowania: 1-gniazdowe (biurkowe) i 5-gniazdowe (flotowe). | Baterie i zasilanie: pojemność baterii i czas pracy zależą od modelu oraz liczby baterii. Hot Swap (wymiana baterii bez wyłączania urządzenia) jest dostępny w Zebra ET. W tabletach Getac F110 G7, F120, K120 G3 i G140, które pracują na 2 bateriach, jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko w konfiguracji z baterią podtrzymującą, na zamówienie. Ładowarki i stacje: biurkowe 1-gniazdowe i wielostanowiskowe (u Zebra 5-gniazdowe, u Getac 2- i 8-gniazdowe). |
+| `src/data/subcategory-content.ts` | W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę. Tablety Getac w ofercie TAKMA też wymieniają baterię bez wyłączania (UX10 G5 z opcjonalną baterią podtrzymującą). | W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę. W tabletach Getac F110 G7, F120, K120 G3 i G140, które pracują na 2 bateriach, jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko w konfiguracji z baterią podtrzymującą, na zamówienie. |
+| `src/data/subcategory-content.ts` | Getac: fully rugged z tradycją military-grade (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows) | Getac: fully rugged z tradycją military-grade (MIL-STD-810H; MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140, z zasilaczem 90 W sprzedawanym osobno) |
+| `src/data/subcategory-content.ts` | Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows) | Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-810H; MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140, z zasilaczem 90 W sprzedawanym osobno) |
+| `src/data/subcategory-content.ts` | ekran 500–1000 nit do pracy na słońcu, tryb dotykowy w rękawicach | ekran 500–1200 nit do pracy na słońcu, tryb dotykowy w rękawicach |
+| `src/data/subcategory-content.ts` | Od -29°C pracują też pozostałe tablety Getac w ofercie. | Od -29°C pracują też pozostałe tablety Getac w ofercie. Wyjątek: ZX10 G2 na samej baterii pracuje od -15°C z 1 baterią standardową, od -21°C z 2 standardowymi i od -29°C z 2 bateriami o dużej pojemności; przy zasilaniu sieciowym od -29°C. |
+| `src/data/subcategory-content.ts` | answer: 'Standardowa gwarancja: 1–2 lata w zależności od producenta. | answer: 'Standardowa gwarancja: 1–3 lata zależnie od producenta; tablety Getac mają w standardzie 3 lata Bumper-to-Bumper z przypadkowymi uszkodzeniami. |
+| `src/data/subcategory-content.ts` | IP67, ekran LumiBond 1000 nit, bateria wymieniana bez wyłączania, upadki z 1,8 m, od ~5 180 zł. | IP67, ekran LumiBond 1000 nit, kieszeń na baterię wymienianą bez wyłączania (bateria sprzedawana osobno), upadki z 1,8 m, od ~5 180 zł. |
+| `src/data/brand-category-content.ts` | Getac dostarcza Getac Monitoring i Getac Management w wersji próbnej lub jako opcję. | w tabletach Getac z Androidem Getac Monitoring i Getac Management są w wersji próbnej, a w modelach z Windows Getac Monitoring jest opcją. |
+| `src/data/brand-category-content.ts` | Tablety Getac też wymieniają baterię bez wyłączania: ZX80 i ZX10 G2 przez kieszeń na baterię wymienną, F110, F120, K120 i G140 dzięki 2 bateriom, a UX10 G5 z opcjonalną baterią podtrzymującą. | W tabletach Getac F110 G7, F120, K120 G3 i G140, które pracują na 2 bateriach, jedną baterię wymienia się bez wyłączania. ZX80, ZX80W i ZX10 G2 mają tę funkcję po włożeniu baterii do kieszeni wymiennej. UX10 G5 ma ją tylko w konfiguracji z baterią podtrzymującą, na zamówienie. |
+| `src/data/brand-category-content.ts` | , ekosystem doków z RS-232/Ethernet, Mobility Edge. | , Mobility Edge. |
+| `public/llms.txt` | # TAKMA — Autoryzowany dystrybutor urządzeń AutoID | # TAKMA — partner producentów urządzeń AutoID |
+| `public/llms.txt` | TAKMA jako autoryzowany partner Zebra oferuje sprzedaż i obsługę kontraktów serwisowych Zebra OneCare: | TAKMA jako partner Zebra oferuje sprzedaż i obsługę kontraktów serwisowych Zebra OneCare: |
+| `public/llms.txt` | gwarancja 3 lata Bumper-to-Bumper (z przypadkowymi uszkodzeniami), praca od −29°C do +63°C. | gwarancja 3 lata Bumper-to-Bumper (z przypadkowymi uszkodzeniami), praca od −29°C do +63°C (ZX10 G2 na samej baterii od −15°C, −21°C albo −29°C, zależnie od baterii). |
+| `public/llms.txt` | 12/256 GB, bateria wymieniana bez wyłączania, zasilacz GAT6E1 sprzedawany osobno; | 12/256 GB, kieszeń na baterię wymienianą bez wyłączania (bateria i zasilacz GAT6E1 sprzedawane osobno); |
+| `public/llms.txt` | IP66, 2 kieszenie na baterie, GPS. | IP66, 2 kieszenie na baterie (w zestawie 1 bateria), GPS. |
+| `public/llms.txt` | [Getac F110 G7](https://www.takma.com.pl/produkt/getac-f110-g7) 11,6″, 1200 nit, 2 baterie wymieniane bez wyłączania; | [Getac F110 G7](https://www.takma.com.pl/produkt/getac-f110-g7) 11,6″, 1200 nit, 2 baterie (jedną wymienia się bez wyłączania); |
+| `public/llms.txt` | pióra digitizer, paski na rękę, torby i etui. | pióra digitizer, rysiki pojemnościowe, paski na rękę, torby i etui. MIL-STD-461G w UX10 G5, F110 G7, F120, K120 G3 i G140 wymaga zasilacza 90 W sprzedawanego osobno. |
+
+Bez zmian (C.7): pozostałe wystąpienia „autoryzowany” poza kategorią tabletów i llms.txt; „TAKMA jako autoryzowany serwis Zebra” w FAQ gwarancji tabletów (klasyfikacja audytu nie liczy go jako „partner/dystrybutor”).
