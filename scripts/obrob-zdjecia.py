@@ -30,7 +30,7 @@ PLOTNA = {
     'drukarki-etykiet': (1200, 1200), 'drukarki-kart': (1200, 1200), 'drukarki-opasek': (1200, 1200),
     'akcesoria': (800, 800), 'materialy-eksploatacyjne': (800, 800), 'oprogramowanie': (800, 800),
     'terminale-mobilne': (600, 1200), 'skanery-kodow-kreskowych': (600, 1200),
-    'tablety-przemyslowe': (1200, 800),
+    'tablety-przemyslowe': (1200, 800), 'laptopy-przemyslowe': (1200, 800),
 }
 ROZSZERZENIA = ('.jpg', '.jpeg', '.png', '.webp', '.heic', '.tif', '.tiff', '.bmp')
 
