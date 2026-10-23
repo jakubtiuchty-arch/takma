@@ -2926,20 +2926,20 @@ Interfejsy: USB HID (plug-and-play bez sterowników), USB COM, RS-232 (standard 
         'System operacyjny — Android (80% rynku enterprise) jest tańszy, szybszy we wdrożeniu MDM i ma dłuższe wsparcie (do A19 u Zebry). Windows 11 konieczny gdy masz oprogramowanie Windows-only (AutoCAD, SAP GUI for Windows, specjalistyczne MES/SCADA) lub potrzebujesz Thunderbolt do monitora 4K.',
         'Wielkość ekranu — 8 cali do pracy w jednej ręce (inwentaryzacja, healthcare, retail). 10 cali to optymalny kompromis (magazyn WMS, kontrola jakości, mapy). 12 cali jako stacja robocza na wózku widłowym lub laptop zastępczy na linii produkcyjnej.',
         'Klasa ochrony IP i odporność mechaniczna — IP65 (kurz + strumienie wody) do standardowych magazynów i retail. IP66 (silne strugi wody + mroźnia) do chłodni i outdoor. IP68 (zanurzenie 1,5 m/30 min) do mokrych środowisk produkcyjnych. Odporność na upadki: 1,2–1,8 m na beton (MIL-STD-810H).',
-        'Temperatura pracy — standardowe modele: -10°C do 50°C (magazyn, retail, produkcja). Modele do chłodni: -20°C do -30°C z podgrzewanym ekranem (Zebra ET60/ET65, Getac F110). Sprawdź ten parametr — tablet konsumencki zamarzający w -5°C zablokuje operację.',
+        'Temperatura pracy — standardowe modele: -10°C do 50°C (magazyn, retail, produkcja). Modele do chłodni: -20°C do -30°C z podgrzewanym ekranem (Zebra ET60/ET65). Tablety Getac (np. F110 G7) pracują od -29°C do +63°C. Sprawdź ten parametr — tablet konsumencki zamarzający w -5°C zablokuje operację.',
         'Łączność — Wi-Fi 6/6E/7 do budynków z infrastrukturą bezprzewodową. 5G/LTE do pracy w terenie (budowy, transport, inspekcje). Bluetooth 5.x do akcesoriów (słuchawki PTT, skanery zewnętrzne). NFC do identyfikacji.',
         'Skaner kodów i RFID — wbudowany skaner 2D (SE4710 standardowy / SE55 premium do 12 m) eliminuje potrzebę osobnego urządzenia. Opcjonalny moduł RFID UHF (Zebra ET401) do odczytu znaczników z 3 m. Kamera tylna 13–16 MP do dokumentacji fotograficznej.',
         'TCO (Total Cost of Ownership) — cena zakupu to 30–40% kosztu 5-letniego. Dolicz: baterie zapasowe, stacje ładowania, etui/uchwyty, kontrakt serwisowy, wymianę baterii co 2–3 lata, ewentualną wymianę floty przy krótkim wsparciu producenta. Tablet z 8-letnim wsparciem Android (Zebra ET401) ma o 20–30% niższy TCO niż model z 3-letnim wsparciem.',
       ],
     },
-    expertAuthority: 'TAKMA jest autoryzowanym partnerem i integratorem tabletów przemysłowych Zebra Technologies, Getac i Honeywell z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasi inżynierowie wdrożyli setki tabletów rugged w magazynach, chłodniach (-30°C), na liniach produkcyjnych, w flotach pojazdów i w szpitalach — od pojedynczych stanowisk po floty 200+ urządzeń zarządzanych przez SOTI, Airwatch i Zebra StageNow. Oferujemy pełne wsparcie: od doboru modelu i porównania producentów, przez konfigurację MDM i staging flotowy, po montaż na wózkach widłowych i pojazdach. Serwis gwarancyjny i pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku.',
+    expertAuthority: 'TAKMA jest partnerem i integratorem tabletów przemysłowych Zebra Technologies, Getac i Honeywell z ponad 25-letnim doświadczeniem na polskim rynku AutoID. Nasi inżynierowie wdrożyli setki tabletów rugged w magazynach, chłodniach (-30°C), na liniach produkcyjnych, w flotach pojazdów i w szpitalach — od pojedynczych stanowisk po floty 200+ urządzeń zarządzanych przez SOTI, Airwatch i Zebra StageNow. Oferujemy pełne wsparcie: od doboru modelu i porównania producentów, przez konfigurację MDM i staging flotowy, po montaż na wózkach widłowych i pojazdach. Serwis gwarancyjny i pogwarancyjny zapewnia serwis-zebry.pl — autoryzowany serwis Zebra działający od 2001 roku.',
     technicalDeepDive: `Rynek tabletów przemysłowych dzieli się na trzy segmenty: fully rugged (MIL-STD-810H, IP67/IP68, upadki 1,5–1,8 m), semi-rugged (IP65, upadki 1,0–1,2 m) i business rugged (IP54, upadki 0,7–1,0 m). W środowiskach magazynowych i produkcyjnych rekomendujemy minimum semi-rugged (IP65).
 
 Procesory: tablety enterprise używają platform Qualcomm (QCM6490, QCS8550) pod Androidem i Intel Core (i5/i7 12–13. generacji) pod Windows. Qualcomm QCS8550 w litografii 4 nm oferuje NPU 48 TOPS do zadań AI edge (wizualna kontrola jakości, OCR w czasie rzeczywistym). Intel Core i5-1245U (10C/12T) zapewnia wydajność porównywalną z laptopem biurowym.
 
 Ekrany: jasność 500 nit (czytelny w cieniu i przy oświetleniu sztucznym), 800 nit (czytelny przy bezpośrednim świetle dziennym), 1000 nit (czytelny w pełnym słońcu i przy zamgleniu mroźniczym). Technologia dotykowa: pojemnościowa z trybem mokrym (filtrowanie kropel wody) i rękawicowym (obsługa w rękawicach roboczych i mroźniczych). Gorilla Glass 5 (ET40) vs Gorilla Glass Victus 2 (ET401) — 2× wyższa odporność na zarysowania.
 
-Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy). Hot Swap (wymiana baterii bez wyłączania urządzenia) — dostępny w Zebra ET, brak w większości modeli Getac i Panasonic. Stacje ładowania: 1-gniazdowe (biurkowe) i 5-gniazdowe (flotowe). Zasilacze samochodowe do montażu w pojazdach.
+Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy). Hot Swap (wymiana baterii bez wyłączania urządzenia) — dostępny w Zebra ET i w tabletach Getac: ZX80, ZX80W i ZX10 G2 mają kieszeń na baterię wymienną, F110, F120, K120 i G140 pracują na 2 bateriach wymienianych bez wyłączania (LifeSupport), a UX10 G5 ma tę funkcję z opcjonalną baterią podtrzymującą. Stacje ładowania: 1-gniazdowe (biurkowe) i 5-gniazdowe (flotowe). Zasilacze samochodowe do montażu w pojazdach.
 
 Łączność bezprzewodowa: Wi-Fi 6 (802.11ax, do 1,2 Gbit/s) → Wi-Fi 6E (6 GHz, do 2,4 Gbit/s) → Wi-Fi 7 (802.11be, do 5,8 Gbit/s). 5G Sub-6 GHz (do 1 Gbit/s w terenie) i mmWave (do 10 Gbit/s w linii wzroku). Bluetooth 5.2–5.4 do akcesoriów i IoT.`,
     useCases: [
@@ -2949,7 +2949,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         title: 'Chłodnia i mroźnia (-20°C do -30°C)',
-        description: 'Tablet z podgrzewanym ekranem (Zebra ET60/ET65, Getac F110) pracuje nieprzerwanie w mroźni. Ekran 1000 nit czytelny mimo zamglenia. Tryb rękawicowy obsługuje grube rękawice mroźnicze. Bateria rozszerzona wytrzymuje pełną zmianę mimo przyspieszonego rozładowania na mrozie. IP66 chroni przed kondensatem.',
+        description: 'Tablet z podgrzewanym ekranem (Zebra ET60/ET65) pracuje nieprzerwanie w mroźni. Getac F110 G7 pracuje od -29°C i ma ekran 1200 nit. Ekran 1000 nit czytelny mimo zamglenia. Tryb rękawicowy obsługuje grube rękawice mroźnicze. Bateria rozszerzona wytrzymuje pełną zmianę mimo przyspieszonego rozładowania na mrozie. IP66 chroni przed kondensatem.',
       },
       {
         title: 'Linia produkcyjna — kontrola jakości i MES',
@@ -2977,7 +2977,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
         },
         {
           title: 'Hot Swap baterii to cecha, która dzieli rynek na pół',
-          text: 'Zebra ET ma Hot Swap w każdym modelu — wymiana baterii w 10 sekund bez utraty sesji. Getac i Panasonic w większości modeli wymagają wyłączenia tabletu (restart 30–90 sekund, utrata sesji). W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę.',
+          text: 'Zebra ET ma Hot Swap w każdym modelu — wymiana baterii w 10 sekund bez utraty sesji. Tablety bez Hot Swap wymagają wyłączenia przy wymianie baterii (restart 30–90 sekund, utrata sesji). W operacjach 24/7 z 3 zmianami to setki mikroprzestojów rocznie na flotę. Tablety Getac w ofercie TAKMA też wymieniają baterię bez wyłączania (UX10 G5 z opcjonalną baterią podtrzymującą).',
         },
         {
           title: 'Wsparcie Android to ukryty czynnik TCO — różnica 3 vs 8 lat',
@@ -2985,7 +2985,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
         },
         {
           title: 'Porównanie marek: Zebra, Getac, Honeywell, Panasonic',
-          text: 'Zebra: najszerszy ekosystem (Mobility DNA, 30+ narzędzi w cenie), najdłuższe wsparcie Android, Hot Swap, integracja z drukarkami/skanerami Zebra. Getac: fully rugged z tradycją military-grade (MIL-STD-461G EMC), ekrany LumiBond, mocna pozycja w energetyce i obronności. Honeywell: Operational Intelligence, integracja z skanerami Honeywell, Velocity TE. Panasonic Toughbook: premium Windows, najwyższa klasa IP (IP68 w FZ-G2), dominacja w rządzie/wojsku. Dla magazynów i produkcji: Zebra. Dla energetyki i obronności: Getac. Dla Windows enterprise: Panasonic lub Zebra ET80.',
+          text: 'Zebra: najszerszy ekosystem (Mobility DNA, 30+ narzędzi w cenie), najdłuższe wsparcie Android, Hot Swap, integracja z drukarkami/skanerami Zebra. Getac: fully rugged z tradycją military-grade (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows), ekrany LumiBond, mocna pozycja w energetyce i obronności. Honeywell: Operational Intelligence, integracja z skanerami Honeywell, Velocity TE. Panasonic Toughbook: premium Windows, najwyższa klasa IP (IP68 w FZ-G2), dominacja w rządzie/wojsku. Dla magazynów i produkcji: Zebra. Dla energetyki i obronności: Getac. Dla Windows enterprise: Panasonic lub Zebra ET80.',
         },
         {
           title: 'Stacja ładowania flotowa to inwestycja, nie koszt',
@@ -3000,7 +3000,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Ile kosztuje tablet przemysłowy?',
-        answer: 'Ceny tabletów przemysłowych w ofercie TAKMA (netto): Zebra ET40 8″ od ~3 250 zł (najtańszy), Zebra ET40 10″ od ~3 450 zł, Zebra ET401 (najnowszy, Wi-Fi 7) od ~3 810 zł, Zebra ET45 (5G) od ~3 800 zł, Zebra ET60 (chłodnia -30°C) od ~7 920 zł, Zebra ET80 (Windows 12″) od ~12 400 zł, Getac F110 (Windows 11,6″) od ~9 500 zł, Getac T800 (Android 8″) od ~6 500 zł. Do ceny tabletu dolicz akcesoria: bateria zapasowa (200–400 zł), stacja ładowania (600–2 000 zł), etui (200–500 zł).',
+        answer: 'Ceny tabletów przemysłowych w ofercie TAKMA (netto): Zebra ET40 8″ od ~3 250 zł (najtańszy), Zebra ET40 10″ od ~3 450 zł, Zebra ET401 (najnowszy, Wi-Fi 7) od ~3 810 zł, Zebra ET45 (5G) od ~3 800 zł, Zebra ET60 (chłodnia -30°C) od ~7 920 zł, Zebra ET80 (Windows 12″) od ~12 400 zł, [Getac F110 G7](/produkt/getac-f110-g7) (Windows 11,6″) od ~10 980 zł, [Getac ZX80](/produkt/getac-zx80) (Android 8″) od ~5 180 zł. Do ceny tabletu dolicz akcesoria: bateria zapasowa (200–400 zł), stacja ładowania (600–2 000 zł), etui (200–500 zł).',
       },
       {
         question: 'Jaki tablet przemysłowy do magazynu?',
@@ -3016,7 +3016,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Jaki tablet do chłodni i mroźni (-20°C do -30°C)?',
-        answer: 'Do chłodni jedynym certyfikowanym rozwiązaniem są: Zebra ET60/ET65 (Android, 10″, -30°C, 1000 nit, podgrzewany ekran, od ~7 920 zł) i Getac F110 (Windows, 11,6″, -29°C, 1000 nit, LumiBond, od ~9 500 zł). Standardowe tablety (ET40, iPad) nie są certyfikowane poniżej -10°C — bateria degraduje się, ekran traci responsywność, kondensacja uszkadza elektronikę.',
+        answer: 'Do chłodni nadają się m.in.: Zebra ET60/ET65 (Android, 10″, -30°C, 1000 nit, podgrzewany ekran, od ~7 920 zł) i [Getac F110 G7](/produkt/getac-f110-g7) (Windows, 11,6″, -29°C, 1200 nit, LumiBond, od ~10 980 zł). Od -29°C pracują też pozostałe tablety Getac w ofercie. Standardowe tablety (ET40, iPad) nie są certyfikowane poniżej -10°C — bateria degraduje się, ekran traci responsywność, kondensacja uszkadza elektronikę.',
       },
       {
         question: 'Jak długo działa bateria w tablecie przemysłowym?',
@@ -3040,7 +3040,7 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
       },
       {
         question: 'Zebra, Getac czy Honeywell — którego producenta wybrać?',
-        answer: 'Zebra: najszerszy ekosystem Mobility DNA (30+ narzędzi w cenie), najdłuższe wsparcie Android (do A19), Hot Swap w standardzie, integracja z drukarkami i skanerami Zebra — najlepsza opcja dla magazynów, retail i produkcji. Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-461G EMC), ekrany LumiBond, mocna pozycja w energetyce, obronności i służbach mundurowych. Honeywell: integracja z Operational Intelligence, skanery Honeywell, Velocity TE — dobra opcja jeśli masz już ekosystem Honeywell. Skontaktuj się z TAKMA po porównanie konkretnych modeli.',
+        answer: 'Zebra: najszerszy ekosystem Mobility DNA (30+ narzędzi w cenie), najdłuższe wsparcie Android (do A19), Hot Swap w standardzie, integracja z drukarkami i skanerami Zebra — najlepsza opcja dla magazynów, retail i produkcji. Getac: fully rugged z certyfikatami wojskowymi (MIL-STD-810H; MIL-STD-461G EMC w modelach z Windows), ekrany LumiBond, mocna pozycja w energetyce, obronności i służbach mundurowych. Honeywell: integracja z Operational Intelligence, skanery Honeywell, Velocity TE — dobra opcja jeśli masz już ekosystem Honeywell. Skontaktuj się z TAKMA po porównanie konkretnych modeli.',
       },
       {
         question: 'Czy tablet przemysłowy działa w deszczu?',
@@ -3057,8 +3057,8 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
     ],
     comparisons: [
       {
-        title: 'Zebra ET40 vs Getac T800 — Android 10″ vs Android 8″',
-        content: 'Zebra ET40 10″: Qualcomm QCM6490, Wi-Fi 6E, skaner SE4710, IP65, Mobility DNA (30+ narzędzi w cenie), Hot Swap, Android do A17, od ~3 250 zł. Getac T800 8″: Qualcomm SDM660, Wi-Fi 6, opcjonalny skaner, IP67, LumiBond ekran, bez Hot Swap, Android do A13, od ~6 500 zł. ET40 wygrywa ceną, ekosystemem i wsparciem. T800 wygrywa IP67 i kompaktowością 8″.',
+        title: 'Zebra ET40 vs Getac ZX80 — Android 10″ vs Android 8″',
+        content: 'Zebra ET40 10″: Qualcomm QCM6490, Wi-Fi 6E, skaner SE4710, IP65, Mobility DNA (30+ narzędzi w cenie), Hot Swap, Android do A17, od ~3 250 zł. [Getac ZX80](/produkt/getac-zx80) 8″: Qualcomm QCS6490, Android 15, Wi-Fi 6E, opcjonalny czytnik 1D/2D, IP67, ekran LumiBond 1000 nit, bateria wymieniana bez wyłączania, upadki z 1,8 m, od ~5 180 zł. ET40 wygrywa ceną i ekosystemem. ZX80 wygrywa IP67, odpornością na upadki i kompaktowością 8″.',
       },
       {
         title: 'Tablet Android vs tablet Windows — kiedy który?',
@@ -3073,8 +3073,8 @@ Baterie i zasilanie: typowa pojemność 4 680–12 920 mAh (8–16 godzin pracy)
         content: 'Tablet rugged (ET40 od ~3 250 zł): wbudowany skaner, Hot Swap, IP65, wsparcie 5–8 lat, MDM enterprise. iPad + OtterBox (od ~3 500 zł): brak skanera (+300 zł za zewnętrzny Bluetooth), brak Hot Swap (ładowanie 2h), IP68 tylko obudowa (nie akcesoria), wsparcie 4 lata. TCO 5-letni rugged: niższy o 30–40%. iPad uzasadniony jedynie w środowiskach biurowych bez intensywnego skanowania.',
       },
       {
-        title: 'Zebra ET60 vs Getac F110 — tablet do chłodni i outdoor',
-        content: 'ET60: Android, 10″, IP66, -30°C, 1000 nit, SE55 (12 m), Hot Swap, Mobility DNA, od ~7 920 zł. Getac F110: Windows 11, 11,6″, IP66, -29°C, 1000 nit, opcjonalny skaner, LumiBond, od ~9 500 zł. ET60 wygrywa ceną, ekosystemem Android i skanerem SE55 w standardzie. F110 wygrywa gdy potrzebujesz Windows, większego ekranu i certyfikatów wojskowych MIL-STD-461G.',
+        title: 'Zebra ET60 vs Getac F110 G7 — tablet do chłodni i outdoor',
+        content: 'ET60: Android, 10″, IP66, -30°C, 1000 nit, SE55 (12 m), Hot Swap, Mobility DNA, od ~7 920 zł. [Getac F110 G7](/produkt/getac-f110-g7): Windows 11, 11,6″, IP66, -29°C, 1200 nit, opcjonalny skaner, 2 baterie wymieniane bez wyłączania, LumiBond, od ~10 980 zł. ET60 wygrywa ceną, ekosystemem Android i skanerem SE55 w standardzie. F110 wygrywa gdy potrzebujesz Windows, większego ekranu i certyfikatów wojskowych MIL-STD-461G.',
       },
     ],
     howToSteps: [

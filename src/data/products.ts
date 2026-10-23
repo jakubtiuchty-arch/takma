@@ -354,8 +354,8 @@ export const categories: Category[] = [
     name: 'Tablety przemysłowe',
     description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell i Brady.',
     seoTitle: 'Tablety przemysłowe rugged Android i Windows od 3 250 zł',
-    seoDescription: 'Tablety Zebra ET40/ET45/ET60/ET65, Getac F110/T800, Honeywell RT10A — IP65-IP68, ekrany 8-12″, do magazynu, chłodni i terenu od 3 250 zł netto. Porównanie modeli, TCO 3 lata.',
-    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–2,4 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety czterech producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (F110, T800, UX10, ZX80), Honeywell (RT10A, EDA10A) oraz [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7. Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 12,2 cala z jasnością 500–1000 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
+    seoDescription: 'Tablety Zebra ET40/ET45/ET60/ET65, Getac ZX80/F110, Honeywell RT10A — IP65-IP68, ekrany 8-12″, do magazynu, chłodni i terenu od 3 250 zł netto. Porównanie modeli, TCO 3 lata.',
+    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–2,4 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety czterech producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A) oraz [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7. Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako autoryzowany partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
     productCount: 7,
   },
@@ -72719,7 +72719,7 @@ Pełna specyfikacja techniczna i ceny B2B dostępne poniżej. Dodatkowe informac
       },
       {
         question: 'Jakie są alternatywy dla tabletu Honeywell RT10W z Windows?',
-        answer: 'Alternatywy z Windows: Getac F110 (11,6", IP66, Intel Core), Panasonic Toughbook G2 (10,1", IP65, Intel Core), Zebra XSLATE L10 (10,1", IP65, Intel). Jeśli Android wystarczy — [Honeywell RT10A](/produkt/honeywell-rt10a) (ta sama obudowa, niższa cena) lub [Honeywell EDA10A](/produkt/honeywell-eda10a) (entry-level, Wi-Fi 6, 5G).',
+        answer: 'Alternatywy z Windows: [Getac F110 G7](/produkt/getac-f110-g7) (11,6", IP66, Intel Core), Panasonic Toughbook G2 (10,1", IP65, Intel Core), Zebra XSLATE L10 (10,1", IP65, Intel). Jeśli Android wystarczy — [Honeywell RT10A](/produkt/honeywell-rt10a) (ta sama obudowa, niższa cena) lub [Honeywell EDA10A](/produkt/honeywell-eda10a) (entry-level, Wi-Fi 6, 5G).',
       },
     ],
   },
@@ -73903,7 +73903,7 @@ ET60 dostępny z Androidem 13 (aktualizacje do A16, LifeGuard for Android) i Win
       },
       {
         question: 'Jakie są alternatywy dla Zebra ET60?',
-        answer: 'Do mroźni: Getac F110 G7 — Windows 11, 11,6″, IP66, -29°C, ale 2,5× droższy (od ~15 000 zł) i bez Androida. Panasonic FZ-G2 — Windows, IP65 (niższe niż IP66), bez podgrzewanego ekranu, bez certyfikacji do -30°C. Do standardowych magazynów: Zebra ET40 (od 2 407 zł) lub ET401 (od 3 810 zł, Wi-Fi 7, IP68). Z 5G: Zebra ET65 (ET60 z modułem 5G).',
+        answer: 'Do mroźni: [Getac F110 G7](/produkt/getac-f110-g7) — Windows 11, 11,6″, IP66, -29°C, ale droższy (od 10 983 zł) i bez Androida. Panasonic FZ-G2 — Windows, IP65 (niższe niż IP66), bez podgrzewanego ekranu, bez certyfikacji do -30°C. Do standardowych magazynów: Zebra ET40 (od 2 407 zł) lub ET401 (od 3 810 zł, Wi-Fi 7, IP68). Z 5G: Zebra ET65 (ET60 z modułem 5G).',
       },
     ],
     downloads: [
@@ -74100,7 +74100,7 @@ Tablet Zebra ET65 obsługuje 5G. Jeśli pracujesz wyłącznie w zasięgu Wi-Fi, 
       },
       {
         question: 'Tablet Zebra ET65 vs Getac F110 — które urządzenie do chłodni?',
-        answer: 'Tablet Zebra ET65: Android/Windows, 10,1″, IP66, -30°C, 1000 nit, SE55 (12 m), hot-swap 30 s, 5G + GPS, od 7 279 zł. Getac F110 G7: tylko Windows, 11,6″, IP66, -29°C, 1200 nit, opcjonalny skaner, dual battery hot-swap, 5G + GPS, od ~15 000 zł. ET65 jest 2× tańszy, ma Androida i dalekozasięgowy skaner SE55 w standardzie.',
+        answer: 'Tablet Zebra ET65: Android/Windows, 10,1″, IP66, -30°C, 1000 nit, SE55 (12 m), hot-swap 30 s, 5G + GPS, od 7 279 zł. Getac F110 G7: tylko Windows, 11,6″, IP66, -29°C, 1200 nit, opcjonalny skaner, dual battery hot-swap, wersja z 5G + GPS od 14 856 zł. ET65 jest 2× tańszy, ma Androida i dalekozasięgowy skaner SE55 w standardzie.',
       },
       {
         question: 'Jaka jest gwarancja na tablet Zebra ET65?',
@@ -74108,7 +74108,7 @@ Tablet Zebra ET65 obsługuje 5G. Jeśli pracujesz wyłącznie w zasięgu Wi-Fi, 
       },
       {
         question: 'Jakie są alternatywy dla tabletu Zebra ET65?',
-        answer: 'Zebra ET60 — identyczny tablet bez 5G, od 6 346 zł (tańszy jeśli masz Wi-Fi). Zebra ET45 — lżejszy tablet 5G do standardowych warunków (IP65, do -10°C), od 3 040 zł. Getac F110 G7 5G — Windows, IP66, -29°C, od ~15 000 zł (2× droższy). Panasonic FZ-G2 5G — Windows, IP65, bez certyfikacji -30°C. Do mroźni z 5G: ET65 nie ma konkurencji w tej cenie.',
+        answer: 'Zebra ET60 — identyczny tablet bez 5G, od 6 346 zł (tańszy jeśli masz Wi-Fi). Zebra ET45 — lżejszy tablet 5G do standardowych warunków (IP65, do -10°C), od 3 040 zł. [Getac F110 G7](/produkt/getac-f110-g7) 5G — Windows, IP66, -29°C, od 14 856 zł (2× droższy). Panasonic FZ-G2 5G — Windows, IP65, bez certyfikacji -30°C. Do mroźni z 5G: ET65 nie ma konkurencji w tej cenie.',
       },
     ],
     downloads: [
@@ -74248,7 +74248,7 @@ Tablet Zebra ET60 Windows dzieli obudowę i akcesoria z wersją Android (Zebra E
       },
       {
         question: 'Jakie są alternatywy dla Zebra ET60 Windows?',
-        answer: 'Getac F110 G7 — Windows 11, 11,6″, IP66, -29°C, od ~15 000 zł (droższy, większy). Panasonic Toughbook FZ-G2 — Windows, 10,1″, IP65 (niższe), brak podgrzewanego ekranu. Zebra ET80 — Windows 11, 12″, 2-in-1 z odpinaną klawiaturą, od ok. 12 400 zł. Wersja z Androidem: Zebra ET60 (od 6 346 zł).',
+        answer: '[Getac F110 G7](/produkt/getac-f110-g7) — Windows 11, 11,6″, IP66, -29°C, od 10 983 zł (większy ekran, 2 baterie wymieniane bez wyłączania). Panasonic Toughbook FZ-G2 — Windows, 10,1″, IP65 (niższe), brak podgrzewanego ekranu. Zebra ET80 — Windows 11, 12″, 2-in-1 z odpinaną klawiaturą, od ok. 12 400 zł. Wersja z Androidem: Zebra ET60 (od 6 346 zł).',
       },
     ],
     downloads: [
@@ -74639,7 +74639,7 @@ Zebra ET65W to wersja 5G tabletu ET60W. Bez 5G: Zebra ET60W. Z systemem Android:
       },
       {
         question: 'Jakie są alternatywy dla Zebra ET65W?',
-        answer: 'Getac F110 G7 z 4G LTE — Windows, 11,6″, IP66, −29°C, od ~16 000 zł (droższy, bez 5G i bez AI Boost). Panasonic Toughbook G2 z 5G — Windows, IP65, bez ekstremalnego mrozu. Zebra ET80 z 5G — Windows 12″, 2-w-1 z odpinaną klawiaturą. Bez 5G: Zebra ET60W (od 11 597 zł). Z Androidem: Zebra ET65 (od 7 279 zł).',
+        answer: '[Getac F110 G7](/produkt/getac-f110-g7) z 4G LTE — Windows, 11,6″, IP66, −29°C, od 12 209 zł (bez AI Boost; wersja z 5G od 14 856 zł). Panasonic Toughbook G2 z 5G — Windows, IP65, bez ekstremalnego mrozu. Zebra ET80 z 5G — Windows 12″, 2-w-1 z odpinaną klawiaturą. Bez 5G: Zebra ET60W (od 11 597 zł). Z Androidem: Zebra ET65 (od 7 279 zł).',
       },
     ],
     editorialReview: {
@@ -96673,7 +96673,7 @@ export const brandCategories: BrandCategory[] = [
       { question: 'Czy tablety Zebra mają Hot Swap baterii?', answer: 'Tak — wszystkie tablety Zebra serii ET obsługują Hot Swap baterii. Możesz wymienić rozładowaną baterię na naładowaną bez wyłączania tabletu i utraty sesji aplikacji (wbudowana bateria podtrzymująca utrzymuje zasilanie przez ~60 sekund). To eliminuje przestoje na ładowanie i jest kluczowe w operacjach 24/7.' },
       { question: 'Czy tablet Zebra może zastąpić terminal mobilny?', answer: 'W wielu scenariuszach tak. Tablety Zebra ET40/ET45 mają ten sam skaner SE4710/SE55, ten sam system Android z Mobility DNA i te same certyfikaty IP65. Przewaga tabletu: większy ekran do wyświetlania map magazynowych, list kompletacyjnych i zdjęć produktów. Przewaga terminala: kompaktowość, pistoletowy uchwyt do intensywnego skanowania (1000+ skanów/zmianę) i wytrzymałość (IP67/IP68 w MC9400).' },
       { question: 'Jakie akcesoria są dostępne do tabletów Zebra?', answer: 'Pełen ekosystem: uchwyty do wózków widłowych i pojazdów, stacje dokujące 1- i 5-gniazdowe, klawiatury odpinane (ET80), uchwyty ręczne z paskiem, rysiki aktywne, etui ze zintegrowanym skanerem kodów kreskowych, moduły RFID UHF, czytniki paszportów, podstawki biurkowe. Wszystkie akcesoria w ofercie TAKMA z dostawą 24–48h.' },
-      { question: 'Jakie są alternatywy dla tabletów Zebra?', answer: 'Główne alternatywy: Getac (F110, T800 — fully rugged, Windows, popularne w wojsku i służbach), Honeywell (RT10A, EDA10A — Android, integracja z Velocity), Panasonic/Toughbook (FZ-G2 — premium Windows, najwyższy IP), Samsung Galaxy Tab Active (budżetowa opcja, krótsze wsparcie). Zebra wyróżnia się Mobility DNA (30+ narzędzi w cenie), najdłuższym wsparciem Android (do A19) i integracją z drukarkami/skanerami Zebra w jednym ekosystemie.' },
+      { question: 'Jakie są alternatywy dla tabletów Zebra?', answer: 'Główne alternatywy: Getac (fully rugged, popularne w wojsku i służbach: ZX80 i ZX10 G2 z Androidem, UX10 G5, F110 G7, F120 i K120 G3 z Windows), Honeywell (RT10A, EDA10A — Android, integracja z Velocity), Panasonic/Toughbook (FZ-G2 — premium Windows, najwyższy IP), Samsung Galaxy Tab Active (budżetowa opcja, krótsze wsparcie). Zebra wyróżnia się Mobility DNA (30+ narzędzi w cenie), najdłuższym wsparciem Android (do A19) i integracją z drukarkami/skanerami Zebra w jednym ekosystemie.' },
     ],
   },
   {
