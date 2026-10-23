@@ -663,7 +663,25 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
       {howToJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />}
 
       {/* Hero — wąski pas z grafiką; pełny lead siedzi pod nim, na białym */}
-      {bc.heroImage ? (
+      {slug === 'terminale-sunmi' ? (
+        <section className="relative min-h-[192px] sm:h-[16.666vw] flex items-center bg-slate-950 text-white overflow-hidden">
+          <Image src="/images/terminale-sunmi-hero-v1.webp" alt="Terminale SUNMI L2Ks, L3 i V3 Plus w grafitowo-pomarańczowej kompozycji" fill priority sizes="100vw" className="object-contain object-right" />
+          <div className="absolute inset-0 bg-slate-950/75 sm:bg-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 from-40% via-slate-950/70 via-55% to-transparent to-70%" />
+          <div className="relative container-main w-full py-4">
+            <nav className="flex items-center gap-2 text-sm text-slate-300 mb-3 overflow-x-auto">
+              <Link href="/" className="hover:text-white whitespace-nowrap">Strona główna</Link>
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+              <Link href={`/${category.slug}`} className="hover:text-white whitespace-nowrap">{category.name}</Link>
+              <ChevronRightIcon size={14} className="flex-shrink-0 text-slate-500" />
+              <span className="text-white whitespace-nowrap">{bc.name}</span>
+            </nav>
+            <h1 className="text-2xl lg:text-3xl font-bold mb-2 max-w-2xl">{bc.name}</h1>
+            <p className="text-sm text-slate-200 max-w-xl lg:max-w-2xl">{bc.longDescription}</p>
+            <p className="text-slate-400 text-sm mt-2">{allProducts.length} {productWord}{najtansza ? ` · ceny netto od ${zlote(najtansza)} zł` : ''}</p>
+          </div>
+        </section>
+      ) : bc.heroImage ? (
         <section className="relative overflow-hidden" style={{ backgroundColor: '#0A1018' }}>
           <div
             className="absolute inset-0 bg-cover bg-center opacity-45 sm:opacity-65 bg-no-repeat"
@@ -717,7 +735,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
       ) : null}
 
       <div className={`container-main py-8 lg:py-10 ${catalogSeo ? 'rfid-text-links' : ''}`}>
-        {bc.heroImage ? (
+        {slug === 'terminale-sunmi' ? null : bc.heroImage ? (
           <RichText text={bc.longDescription} className="text-gray-600 leading-relaxed space-y-3 mb-6" />
         ) : (
           <>
