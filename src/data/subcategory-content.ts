@@ -75,6 +75,15 @@ export interface ComparisonTable {
   note?: string
 }
 
+/** Wiersz tabeli porównawczej według rodzaju: „Rodzaj / Do czego / Typowo / Modele”. */
+export interface ModelComparisonGroup {
+  name: string
+  use: string
+  /** Zakres parametrów występujący w modelach grupy. */
+  typical: string
+  models: { name: string; href: string }[]
+}
+
 export interface SubcategoryRichContent {
   updatedAt?: string
   /** Tabela porównawcza modeli — renderowana pod definicją kategorii. */
@@ -93,7 +102,13 @@ export interface SubcategoryRichContent {
     note: string
     /** Własne nagłówki kolumn; bez tego pola szablon zostaje przy „Druk / Podajnik / Łączność”. */
     columns?: { printing?: string; feeder?: string; connectivity?: string }
-    models: { name: string; href: string; printing: string; feeder: string; connectivity: string }[]
+    /** Jeden wiersz na model. */
+    models?: { name: string; href: string; printing: string; feeder: string; connectivity: string }[]
+    /**
+     * Jeden wiersz na rodzaj urządzenia. Nowy model dopisuje się jako link w `models` grupy,
+     * więc tabela nie rośnie w dół. Gdy pole jest wypełnione, szablon pomija `models`.
+     */
+    groups?: ModelComparisonGroup[]
   }
   definition: { heading: string; content: string }
   buyingGuide: { heading: string; items: string[] }

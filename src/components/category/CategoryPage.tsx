@@ -149,6 +149,38 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                       tabIndex={0}
                       className="overflow-x-auto rounded-xl border border-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600"
                     >
+                      {content.modelComparison.groups ? (
+                      <table className="w-full min-w-[640px] text-left text-sm">
+                        <thead className="bg-gray-900 text-white">
+                          <tr>
+                            <th scope="col" className="px-5 py-4 font-semibold">Rodzaj</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Do czego</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Typowo</th>
+                            <th scope="col" className="px-5 py-4 font-semibold">Modele</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                          {content.modelComparison.groups.map((group) => (
+                            <tr key={group.name} className="align-top even:bg-gray-50">
+                              <th scope="row" className="px-5 py-4 font-semibold text-gray-900">{group.name}</th>
+                              <td className="px-5 py-4 text-gray-600">{group.use}</td>
+                              <td className="px-5 py-4 text-gray-600">{group.typical}</td>
+                              <td className="px-5 py-4 text-gray-600">
+                                {/* Nazwa modelu nie łamie się w środku; wiersz łamie się tylko po przecinku. */}
+                                {group.models.map((model, i) => (
+                                  <span key={model.href}>
+                                    {i > 0 && ', '}
+                                    <Link href={model.href} className="whitespace-nowrap text-primary-600 hover:text-primary-800 hover:underline">
+                                      {model.name}
+                                    </Link>
+                                  </span>
+                                ))}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                      ) : (
                       <table className="w-full min-w-[640px] text-left text-sm">
                         <thead className="bg-gray-900 text-white">
                           <tr>
@@ -159,7 +191,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-200">
-                          {content.modelComparison.models.map((model) => (
+                          {(content.modelComparison.models ?? []).map((model) => (
                             <tr key={model.href} className="even:bg-gray-50">
                               <th scope="row" className="px-5 py-4 font-semibold whitespace-nowrap">
                                 <Link href={model.href} className="text-primary-600 hover:text-primary-800 hover:underline">
@@ -174,6 +206,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
                           ))}
                         </tbody>
                       </table>
+                      )}
                     </div>
                     <p className="mt-3 text-sm leading-relaxed text-gray-500">{content.modelComparison.note}</p>
                   </section>
