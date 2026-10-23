@@ -2419,6 +2419,259 @@ export const getacTabletProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-zx80w",
+    "slug": "getac-zx80w",
+    "name": "Getac ZX80W",
+    "seoH1": "Getac ZX80W",
+    "seoTitle": "Tablet przemysłowy Getac ZX80W 8″ z Windows 11 IoT, IP67",
+    "seoDescription": "Tablet przemysłowy Getac ZX80W 8″, Windows 11 IoT Enterprise LTSC, IP67, GPS. Tablet rugged Getac ZX80W z 4G. ZX80W Getac PN: Z8A7WXWB1AXX, Z8A7WXGI2AXX.",
+    "shortDescription": "Getac ZX80W — tablet fully rugged 8″ z Windows 11 IoT Enterprise LTSC, procesorem Qualcomm QCS6490, klasą IP67, GPS i baterią wymienianą bez wyłączania. Wszystkie wersje z digitizerem; Wi-Fi 6E albo 4G LTE.",
+    "description": "Getac ZX80W to tablet przemysłowy z ekranem 8 cali i systemem Windows 11 IoT Enterprise LTSC. Służy do pracy z programami Windows w terenie, w pojazdach i w magazynie, gdy potrzebne jest małe i lekkie urządzenie. Obudowa ma masę 590 g, klasę szczelności IP67 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Wersje z tej karty mają ekran z digitizerem. Procesor Qualcomm QCS6490 pracuje z 12 GB RAM i pamięcią 256 GB UFS. Każda wersja ma dedykowany GPS L1/L5.\n\nTablet ma wewnętrzną baterię 4060 mAh i kieszeń na baterię wymienną. Baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). W kieszeni pracuje bateria 4990 mAh albo 9980 mAh.\n\nKonfiguracje różnią się łącznością Wi-Fi 6E albo 4G LTE, wyposażeniem kieszeni baterii i złączami anten zewnętrznych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nTę samą obudowę z Androidem 15 ma [Getac ZX80](/produkt/getac-zx80).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/zx80w/",
+    "priceFrom": 9263.75,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/Z8A7WXWB1AXX.png",
+      "/images/products/Z8A7WXWB1AXX-2.png",
+      "/images/products/Z8A7WXWB1AXX-3.png",
+      "/images/products/Z8A7WXWB1AXX-4.png",
+      "/images/products/Z8A7WXWB1AXX-5.png"
+    ],
+    "imageDescriptions": [
+      "Getac ZX80W — widok z przodu, ekran 8 cali z Windows 11 i przyciski po prawej stronie",
+      "Getac ZX80W — widok z przodu pod kątem, z lewej strony",
+      "Getac ZX80W — widok z przodu pod kątem, z prawej strony",
+      "Getac ZX80W — tył obudowy z aparatem",
+      "Getac ZX80W — widok z dołu pod kątem, złącza na dolnej krawędzi"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "Z8A7WXWB1AXX, Z8A7WXGI2AXX, Z8A7WXGI2GXX, Z8A7WXWB17XX"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Windows 11 IoT Enterprise LTSC"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm QCS6490, 8 rdzeni, 1,9 GHz (maks. 2,7 GHz); GPU Adreno 643; NPU Hexagon do 13 TOPS"
+      },
+      {
+        "name": "Pamięć RAM / Flash",
+        "value": "12 GB LPDDR5 / 256 GB UFS"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "8″ WUXGA 1920 × 1200, TFT LCD z szerokim kątem widzenia, LumiBond, 1000 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; w wersjach z tej karty tryb podwójny z digitizerem"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 3 przyciski programowalne (fabrycznie: klawisz Windows, głośniej, ciszej)"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6E (802.11ax)"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.2"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE albo 5G Sub-6, nano-SIM i eSIM; w ofercie wersja z 4G LTE"
+      },
+      {
+        "name": "GPS",
+        "value": "Dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou)"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 3.2 Gen 1 Type-C (DisplayPort, Power Delivery), gniazdo audio, microSD (opcja: hybrydowa tacka nano-SIM i microSD), złącze dokujące; opcja: złącza RF pass-through (GPS, WWAN, WLAN)"
+      },
+      {
+        "name": "Opcje producenta",
+        "value": "Czytnik kodów 1D/2D (imager)"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 16 MP z autofokusem, przedni 8 MP"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "fTPM (Qualcomm TrustZone), Getac Secure Erase"
+      },
+      {
+        "name": "Bateria",
+        "value": "Wewnętrzna 3,86 V, typowo 4060 mAh; kieszeń na baterię wymienną: zaślepka albo bateria 4990 mAh, opcja: bateria 9980 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP67"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H; odporność na wibracje"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,8 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja w wybranych konfiguracjach: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "234 × 149,8 × 17,6 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "590 g"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, zasilacz, przewód zasilający"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Programy Windows w terenie i w pojazdach służbowych",
+      "Formularze i podpisy z piórem digitizer",
+      "Praca w magazynie z małym urządzeniem 590 g",
+      "Lokalizacja GPS w pracy terenowej"
+    ],
+    "variants": [
+      {
+        "partNumber": "Z8A7WXWB1AXX",
+        "name": "ZX80W — Wi-Fi, GPS, zaślepka kieszeni baterii",
+        "priceFrom": 9263.75,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Kieszeń baterii": "Zaślepka"
+        }
+      },
+      {
+        "partNumber": "Z8A7WXGI2AXX",
+        "name": "ZX80W — Wi-Fi, GPS, bateria wymienna",
+        "priceFrom": 9880.52,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Kieszeń baterii": "Bateria wymienna"
+        }
+      },
+      {
+        "partNumber": "Z8A7WXGI2GXX",
+        "name": "ZX80W — Wi-Fi, GPS, bateria wymienna, złącza anten zewnętrznych",
+        "priceFrom": 10023.48,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Kieszeń baterii": "Bateria wymienna",
+          "Antena zewnętrzna": "Tak"
+        }
+      },
+      {
+        "partNumber": "Z8A7WXWB17XX",
+        "name": "ZX80W — 4G LTE, GPS, zaślepka kieszeni baterii",
+        "priceFrom": 10203.2,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Kieszeń baterii": "Zaślepka"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX80W ma Wi-Fi 6E, Bluetooth 5.2 i dedykowany GPS L1/L5.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
+      "Kieszeń baterii": "Wyposażenie kieszeni na baterię wymienną. Tablet zawsze ma wewnętrzną baterię 4060 mAh.\n\n• Zaślepka — baterię 4990 mAh albo 9980 mAh dokupuje się osobno.\n\n• Bateria wymienna — wymiana bez wyłączania tabletu.",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Antenę pojazdu podłącza się przez stację pojazdową ze złączami RF."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-bateria-gbm1xa",
+      "getac-bateria-gbm2xa",
+      "getac-stacja-biurkowa-gdodxc",
+      "getac-zasilacz-usb-c-gat6e1",
+      "getac-ladowarka-2-gniazdowa-gcmcem",
+      "getac-rysik-digitizer-gmpdx7",
+      "getac-pasek-na-reke-gmhrxl",
+      "getac-torba-gmbcx3"
+    ],
+    "relatedProducts": [
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "honeywell-rt10w",
+      "zebra-et60w",
+      "zebra-et65w"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac ZX80W (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-zx80w.pdf",
+        "size": "965 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym Getac ZX80W różni się od ZX80?",
+        "answer": "Oba tablety mają ekran 8 cali, procesor Qualcomm QCS6490, 12 GB RAM i klasę IP67. ZX80W pracuje z Windows 11 IoT Enterprise LTSC i ma standardowo dedykowany GPS. <a href=\"/produkt/getac-zx80\">Getac ZX80</a> pracuje z Androidem 15."
+      },
+      {
+        "question": "Czy bateria wymienna jest w zestawie z Getac ZX80W?",
+        "answer": "Zależy od PN. Wersje Z8A7WXGI2AXX i Z8A7WXGI2GXX mają baterię w kieszeni. Wersje Z8A7WXWB1AXX i Z8A7WXWB17XX mają zaślepkę kieszeni. Każda wersja ma wewnętrzną baterię 4060 mAh."
+      },
+      {
+        "question": "W jakiej temperaturze pracuje Getac ZX80W?",
+        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Tablet ma klasę szczelności IP67 i certyfikat MIL-STD-810H oraz wytrzymuje upadek z 1,8 m."
+      },
+      {
+        "question": "Czy akcesoria ZX80 pasują do ZX80W?",
+        "answer": "Tak, dla akcesoriów z tej karty. Baterie GBM1XA i GBM2XA, stacja biurkowa GDODXC, ładowarka GCMCEM, pióro GMPDX7, pasek GMHRXL i torba GMBCX3 są przeznaczone dla obu modeli."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
