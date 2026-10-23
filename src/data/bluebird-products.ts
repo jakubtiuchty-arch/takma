@@ -2202,7 +2202,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zasilacz sieciowy 5 V / 3 A Bluebird — 602010041",
     "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) — zasilacz do bezpośredniego ładowania terminala przez kabel USB-A – USB-C.",
     "shortDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird — zasilacz do bezpośredniego ładowania terminala przez kabel USB-A – USB-C. PN 602010041.",
-    "description": "Zasilacz 5 V / 3 A ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Zasilacz ma gniazdo USB-A. Terminal łączy się z zasilaczem kablem USB-A – USB-C. Wtyczkę sieciową dobiera się do kraju użycia. W Polsce stosuje się wtyczkę EU.\n\nZasilacz pasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430). Te terminale nie mają zasilacza w zestawie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
+    "description": "Zasilacz 5 V / 3 A ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Zasilacz ma gniazdo USB-A. Terminal łączy się z zasilaczem kablem USB-A – USB-C. Wtyczkę sieciową dobiera się do kraju użycia. W Polsce stosuje się wtyczkę EU.\n\nZasilacz pasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430). Te terminale nie mają zasilacza w zestawie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2336,7 +2336,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Kabel USB-A – USB-C Bluebird — 603010005",
     "seoDescription": "Kabel USB-A – USB-C Bluebird (603010005) — kabel USB 3.0 do ładowania terminala i transmisji danych.",
     "shortDescription": "Kabel USB-A – USB-C Bluebird — kabel USB 3.0 do ładowania terminala i transmisji danych. PN 603010005.",
-    "description": "Kabel USB-A – USB-C łączy terminal Bluebird z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową albo z komputerem. Kabel przesyła prąd ładowania i dane. Obsługuje standard USB 3.0.\n\nKabel jest potrzebny do ładowania bezpośredniego, bo terminale Bluebird nie mają go w zestawie. Pasuje do terminali ze złączem USB-C, np. [Bluebird S10](/produkt/bluebird-s10), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird EF551](/produkt/bluebird-ef551).",
+    "description": "Kabel USB-A – USB-C łączy terminal Bluebird z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową albo z komputerem. Kabel przesyła prąd ładowania i dane. Obsługuje standard USB 3.0.\n\nKabel jest potrzebny do ładowania bezpośredniego, bo terminale Bluebird nie mają go w zestawie. Jest też potrzebny do ładowarki samochodowej z gniazdami USB-A. Pasuje do terminali ze złączem USB-C, np. [Bluebird S10](/produkt/bluebird-s10), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430), [Bluebird SF650](/produkt/bluebird-sf650).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2363,7 +2363,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird SF650"
       },
       {
         "name": "Złącza",
@@ -2390,7 +2390,8 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s10",
       "bluebird-s10-rfid",
       "bluebird-ef551",
-      "bluebird-ek430"
+      "bluebird-ek430",
+      "bluebird-sf650"
     ],
     "downloads": [],
     "faq": [],
@@ -2470,9 +2471,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz 9 V / 3 A do stacji Bluebird",
     "seoH1": "Zasilacz 9 V / 3 A do stacji Bluebird",
     "seoTitle": "Zasilacz 9 V / 3 A do stacji Bluebird — 602010012",
-    "seoDescription": "Zasilacz 9 V / 3 A do stacji Bluebird (602010012) — zasilacz do stacje 1-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno.",
-    "shortDescription": "Zasilacz 9 V / 3 A do stacji Bluebird — zasilacz do stacje 1-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno. PN 602010012.",
-    "description": "Zasilacz 9 V / 3 A zasila stacje 1-gniazdowe Bluebird. Pasuje do stacji:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (204010086)](/produkt/bluebird-204010086)\n- [Stacja ładująca 1-gniazdowa Bluebird S10 (204010094)](/produkt/bluebird-204010094)\n- [Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R (204010058)](/produkt/bluebird-204010058)\n- [Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem (204010059)](/produkt/bluebird-204010059)\n- [Stacja ładująca 1-gniazdowa Bluebird EK430 (204010063)](/produkt/bluebird-204010063)\n- [Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem (204010064)](/produkt/bluebird-204010064)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
+    "seoDescription": "Zasilacz 9 V / 3 A do stacji Bluebird (602010012) — zasilacz do stacji 1-gniazdowych S10, S20 (204010086), EF551 i EK430; przewód zasilający EU sprzedawany osobno.",
+    "shortDescription": "Zasilacz 9 V / 3 A do stacji Bluebird — zasilacz do stacji 1-gniazdowych S10, S20 (204010086), EF551 i EK430; przewód zasilający EU sprzedawany osobno. PN 602010012.",
+    "description": "Zasilacz 9 V / 3 A zasila stacje 1-gniazdowe S10, S20 (204010086), EF551 i EK430. Pasuje do stacji:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (204010086)](/produkt/bluebird-204010086)\n- [Stacja ładująca 1-gniazdowa Bluebird S10 (204010094)](/produkt/bluebird-204010094)\n- [Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R (204010058)](/produkt/bluebird-204010058)\n- [Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem (204010059)](/produkt/bluebird-204010059)\n- [Stacja ładująca 1-gniazdowa Bluebird EK430 (204010063)](/produkt/bluebird-204010063)\n- [Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem (204010064)](/produkt/bluebird-204010064)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2531,9 +2532,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz 9 V / 10 A do stacji Bluebird",
     "seoH1": "Zasilacz 9 V / 10 A do stacji Bluebird",
     "seoTitle": "Zasilacz 9 V / 10 A do stacji Bluebird — 602010013",
-    "seoDescription": "Zasilacz 9 V / 10 A do stacji Bluebird (602010013) — zasilacz do stacje 4-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno.",
-    "shortDescription": "Zasilacz 9 V / 10 A do stacji Bluebird — zasilacz do stacje 4-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno. PN 602010013.",
-    "description": "Zasilacz 9 V / 10 A zasila stacje 4-gniazdowe Bluebird. Pasuje do stacji:\n\n- [Stacja ładująca 4-gniazdowa Bluebird S20 (204020037)](/produkt/bluebird-204020037)\n- [Stacja ładująca 4-gniazdowa Bluebird S10 (204020041)](/produkt/bluebird-204020041)\n- [Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R (204020019)](/produkt/bluebird-204020019)\n- [Stacja ładująca 4-gniazdowa Bluebird EK430 (204020022)](/produkt/bluebird-204020022)\n- [Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem (204020023)](/produkt/bluebird-204020023)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
+    "seoDescription": "Zasilacz 9 V / 10 A do stacji Bluebird (602010013) — zasilacz do stacji 4-gniazdowych S10, S20 (204020037), EF551 i EK430; przewód zasilający EU sprzedawany osobno.",
+    "shortDescription": "Zasilacz 9 V / 10 A do stacji Bluebird — zasilacz do stacji 4-gniazdowych S10, S20 (204020037), EF551 i EK430; przewód zasilający EU sprzedawany osobno. PN 602010013.",
+    "description": "Zasilacz 9 V / 10 A zasila stacje 4-gniazdowe S10, S20 (204020037), EF551 i EK430. Pasuje do stacji:\n\n- [Stacja ładująca 4-gniazdowa Bluebird S20 (204020037)](/produkt/bluebird-204020037)\n- [Stacja ładująca 4-gniazdowa Bluebird S10 (204020041)](/produkt/bluebird-204020041)\n- [Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R (204020019)](/produkt/bluebird-204020019)\n- [Stacja ładująca 4-gniazdowa Bluebird EK430 (204020022)](/produkt/bluebird-204020022)\n- [Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem (204020023)](/produkt/bluebird-204020023)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2592,9 +2593,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz 12 V / 5 A do stacji Bluebird",
     "seoH1": "Zasilacz 12 V / 5 A do stacji Bluebird",
     "seoTitle": "Zasilacz 12 V / 5 A do stacji Bluebird — 602010025",
-    "seoDescription": "Zasilacz 12 V / 5 A do stacji Bluebird (602010025) — zasilacz do stacje 1-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno.",
-    "shortDescription": "Zasilacz 12 V / 5 A do stacji Bluebird — zasilacz do stacje 1-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno. PN 602010025.",
-    "description": "Zasilacz 12 V / 5 A zasila stacje 1-gniazdowe Bluebird. Pasuje do stacji:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078)](/produkt/bluebird-204010078)\n- [Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079)](/produkt/bluebird-204010079)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)](/produkt/bluebird-204010081)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
+    "seoDescription": "Zasilacz 12 V / 5 A do stacji Bluebird (602010025) — zasilacz do stacji 1-gniazdowych S20 (204010078, 204010079), S50 i S70; przewód zasilający EU sprzedawany osobno.",
+    "shortDescription": "Zasilacz 12 V / 5 A do stacji Bluebird — zasilacz do stacji 1-gniazdowych S20 (204010078, 204010079), S50 i S70; przewód zasilający EU sprzedawany osobno. PN 602010025.",
+    "description": "Zasilacz 12 V / 5 A zasila stacje 1-gniazdowe S20 (204010078, 204010079), S50 i S70. Pasuje do stacji:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078)](/produkt/bluebird-204010078)\n- [Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079)](/produkt/bluebird-204010079)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)](/produkt/bluebird-204010081)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2652,9 +2653,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz 12 V / 10 A do stacji Bluebird",
     "seoH1": "Zasilacz 12 V / 10 A do stacji Bluebird",
     "seoTitle": "Zasilacz 12 V / 10 A do stacji Bluebird — 602010035",
-    "seoDescription": "Zasilacz 12 V / 10 A do stacji Bluebird (602010035) — zasilacz do stacje 4-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno.",
-    "shortDescription": "Zasilacz 12 V / 10 A do stacji Bluebird — zasilacz do stacje 4-gniazdowe Bluebird; przewód zasilający EU sprzedawany osobno. PN 602010035.",
-    "description": "Zasilacz 12 V / 10 A zasila stacje 4-gniazdowe Bluebird. Pasuje do stacji:\n\n- [Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204020028)](/produkt/bluebird-204020028)\n- [Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem (204020029)](/produkt/bluebird-204020029)\n- [Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030)](/produkt/bluebird-204020030)\n- [Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem (204020031)](/produkt/bluebird-204020031)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
+    "seoDescription": "Zasilacz 12 V / 10 A do stacji Bluebird (602010035) — zasilacz do stacji 4-gniazdowych S20 (204020028, 204020029), S50 i S70; przewód zasilający EU sprzedawany osobno.",
+    "shortDescription": "Zasilacz 12 V / 10 A do stacji Bluebird — zasilacz do stacji 4-gniazdowych S20 (204020028, 204020029), S50 i S70; przewód zasilający EU sprzedawany osobno. PN 602010035.",
+    "description": "Zasilacz 12 V / 10 A zasila stacje 4-gniazdowe S20 (204020028, 204020029), S50 i S70. Pasuje do stacji:\n\n- [Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204020028)](/produkt/bluebird-204020028)\n- [Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem (204020029)](/produkt/bluebird-204020029)\n- [Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030)](/produkt/bluebird-204020030)\n- [Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem (204020031)](/produkt/bluebird-204020031)\n\nZasilacz nie ma przewodu sieciowego.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2789,8 +2790,12 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-602010024.png"
+    ],
+    "imageDescriptions": [
+      "Ładowarka samochodowa Bluebird 5 V / 2 A z kablem USB-C — ładowarka samochodowa ze spiralnym kablem USB-C"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -2842,7 +2847,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S20 — 204010086",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (204010086) — stacja ładuje jeden terminal i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 — stacja ładuje jeden terminal i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010086.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -2902,9 +2907,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR)",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR)",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) — 204010078",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078). stacja ładuje terminal, także z czytnikiem RFR, oraz baterię zapasową.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078). Stacja ładuje terminal, także z czytnikiem RFR, oraz baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) — stacja ładuje terminal, także z czytnikiem RFR, oraz baterię zapasową; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010078.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 5 A (602010025) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -2968,9 +2973,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem — 204010079",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079). stacja z Ethernetem 1 Gb/s ładuje terminal i baterię zapasową.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079). Stacja z Ethernetem 1 Gb/s ładuje terminal i baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem — stacja z Ethernetem 1 Gb/s ładuje terminal i baterię zapasową; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010079.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 5 A (602010025) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3036,7 +3041,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S20 — 204020037",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (204020037) — stacja ładuje cztery terminale i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 — stacja ładuje cztery terminale i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020037.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 9 V / 10 A (602010013) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3100,9 +3105,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR)",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR)",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) — 204020028",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204020028). stacja ładuje cztery terminale, także z czytnikiem RFR, i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204020028). Stacja ładuje cztery terminale, także z czytnikiem RFR, i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) — stacja ładuje cztery terminale, także z czytnikiem RFR, i cztery baterie; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020028.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 10 A (602010035) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3166,9 +3171,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem — 204020029",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem (204020029). stacja z Ethernetem 1 Gb/s ładuje cztery terminale i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem (204020029). Stacja z Ethernetem 1 Gb/s ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem — stacja z Ethernetem 1 Gb/s ładuje cztery terminale i cztery baterie; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020029.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 10 A (602010035) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3203,7 +3208,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Komunikacja",
-        "value": "Ethernet 1 Gb/s"
+        "value": "2 × Ethernet 1 Gb/s"
       },
       {
         "name": "Zasilacz",
@@ -3290,9 +3295,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 — 204010080",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080). stacja ładuje jeden terminal i jedną baterię.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080). Stacja ładuje jeden terminal i jedną baterię.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 — stacja ładuje jeden terminal i jedną baterię; S50 bez osłony wymaga podkładki; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010080.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 5 A (602010025) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3357,9 +3362,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem — 204010081",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081). stacja z Ethernetem ładuje jeden terminal i jedną baterię.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081). Stacja z Ethernetem ładuje jeden terminal i jedną baterię.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem — stacja z Ethernetem ładuje jeden terminal i jedną baterię; S50 bez osłony wymaga podkładki; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010081.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 5 A (602010025) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3424,9 +3429,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 — 204020030",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030). stacja ładuje cztery terminale i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030). Stacja ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 — stacja ładuje cztery terminale i cztery baterie; S50 bez osłony wymaga podkładki; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020030.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 10 A (602010035) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3491,9 +3496,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem — 204020031",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem (204020031). stacja z Ethernetem ładuje cztery terminale i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem (204020031). Stacja z Ethernetem ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem — stacja z Ethernetem ładuje cztery terminale i cztery baterie; S50 bez osłony wymaga podkładki; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020031.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Do zasilania stacji potrzebne są zasilacz 12 V / 10 A (602010035) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3618,7 +3623,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S10 — 204010094",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S10 (204010094) — stacja ładuje jeden terminal i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S10 — stacja ładuje jeden terminal i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010094.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S10](/produkt/bluebird-s10) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S10 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S10 (501260145)](/produkt/bluebird-501260145)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S10](/produkt/bluebird-s10) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S10 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S10 (501260145)](/produkt/bluebird-501260145)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3680,7 +3685,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S10 — 204020041",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S10 (204020041) — stacja ładuje cztery terminale i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S10 — stacja ładuje cztery terminale i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020041.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S10](/produkt/bluebird-s10) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Do zasilania stacji potrzebne są zasilacz 9 V / 10 A (602010013) i przewód zasilający EU. Oba elementy są sprzedawane osobno. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki, czyli do 4 szt. na stację.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S10 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S10 (501260145)](/produkt/bluebird-501260145)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S10](/produkt/bluebird-s10) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S10 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S10 (501260145)](/produkt/bluebird-501260145)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3800,15 +3805,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R — 204010058",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R (204010058) — stacja ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R — stacja ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010058.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Gniazdo wymaga podkładki dopasowującej terminal. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-204010058.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R — stacja 1-gniazdowa z gniazdem baterii"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -3864,17 +3873,21 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem — 204010059",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem (204010059). stacja z Ethernetem i USB-C ładuje EF551 lub EF551R i baterię zapasową.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem (204010059). Stacja z Ethernetem i USB-C ładuje EF551 lub EF551R i baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem — stacja z Ethernetem i USB-C ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010059.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG) i przełącznik USB / Ethernet. Gniazdo wymaga podkładki dopasowującej terminal. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG) i przełącznik USB / Ethernet. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do komunikacji przez USB potrzebny jest [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-204010059.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem — stacja 1-gniazdowa z gniazdem baterii"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -3930,17 +3943,21 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R — 204020019",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R (204020019). stacja ładuje cztery terminale EF551 lub EF551R i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R (204020019). Stacja ładuje cztery terminale EF551 lub EF551R i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R — stacja ładuje cztery terminale EF551 lub EF551R i cztery baterie; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020019.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Każde gniazdo wymaga podkładki dopasowującej terminal. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do zasilania stacji potrzebne są zasilacz 9 V / 10 A (602010013) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged), po jednej na gniazdo, czyli 4 podkładek do pełnej stacji; podkładki nie są w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-204020019.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R — stacja 4-gniazdowa"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -3998,7 +4015,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EK430 — 204010063",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EK430 (204010063) — stacja ładuje jeden terminal EK430 i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EK430 — stacja ładuje jeden terminal EK430 i jedną baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010063.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EK430](/produkt/bluebird-ek430) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EK430](/produkt/bluebird-ek430) i jedną baterię zapasową w osobnym gnieździe. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -4054,9 +4071,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem",
     "seoH1": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem",
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem — 204010064",
-    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem (204010064). stacja z Ethernetem i USB-C ładuje terminal EK430 i baterię zapasową.",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem (204010064). Stacja z Ethernetem i USB-C ładuje terminal EK430 i baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EK430 z Ethernetem — stacja z Ethernetem i USB-C ładuje terminal EK430 i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010064.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EK430](/produkt/bluebird-ek430) i jedną baterię zapasową w osobnym gnieździe. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG). Do zasilania stacji potrzebne są zasilacz 9 V / 3 A (602010012) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EK430](/produkt/bluebird-ek430) i jedną baterię zapasową w osobnym gnieździe. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -4114,7 +4131,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird EK430 — 204020022",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EK430 (204020022) — stacja ładuje cztery terminale EK430 i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird EK430 — stacja ładuje cztery terminale EK430 i cztery baterie zapasowe; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020022.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird EK430](/produkt/bluebird-ek430) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Do zasilania stacji potrzebne są zasilacz 9 V / 10 A (602010013) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird EK430](/produkt/bluebird-ek430) i do czterech baterii zapasowych. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -4170,9 +4187,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem",
     "seoH1": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem",
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem — 204020023",
-    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem (204020023). stacja z Ethernetem ładuje cztery terminale EK430 i cztery baterie.",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem (204020023). Stacja z Ethernetem ładuje cztery terminale EK430 i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird EK430 z Ethernetem — stacja z Ethernetem ładuje cztery terminale EK430 i cztery baterie; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020023.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird EK430](/produkt/bluebird-ek430) i do czterech baterii zapasowych. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Stacja ma też port USB-C. Do zasilania stacji potrzebne są zasilacz 9 V / 10 A (602010013) i przewód zasilający EU. Oba elementy są sprzedawane osobno.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird EK430](/produkt/bluebird-ek430) i do czterech baterii zapasowych. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Stacja ma też port USB-C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -4228,9 +4245,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria standardowa 4000 mAh Bluebird S20",
     "seoH1": "Bateria standardowa 4000 mAh Bluebird S20",
     "seoTitle": "Bateria standardowa 4000 mAh Bluebird S20 — 355040097",
-    "seoDescription": "Bateria standardowa 4000 mAh Bluebird S20 (355040097) — bateria standardowa, wymiana bez wyłączania terminala.",
-    "shortDescription": "Bateria standardowa 4000 mAh Bluebird S20 — bateria standardowa, wymiana bez wyłączania terminala. PN 355040097.",
-    "description": "Bateria standardowa 4000 mAh zasila terminal [Bluebird S20](/produkt/bluebird-s20). Ma układ zarządzania pracą ogniwa litowo-jonowego. Baterię wymienia się bez wyłączania terminala (hot swap), więc zapasowa bateria przedłuża pracę na zmianie.\n\nZapasową baterię ładują stacje S20 z gniazdem baterii, np. [Stacja ładująca 1-gniazdowa Bluebird S20 (204010086)](/produkt/bluebird-204010086). Większą pojemność ma [Bateria rozszerzona 6000 mAh Bluebird S20 (355040099)](/produkt/bluebird-355040099).",
+    "seoDescription": "Bateria standardowa 4000 mAh Bluebird S20 (355040097) — 15,4 Wh, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria standardowa 4000 mAh Bluebird S20 — 15,4 Wh, wymiana bez wyłączania terminala (hot swap). PN 355040097.",
+    "description": "Bateria standardowa 4000 mAh zasila terminal [Bluebird S20](/produkt/bluebird-s20). Ma układ zarządzania pracą ogniwa litowo-jonowego. Baterię wymienia się bez wyłączania terminala (hot swap), więc zapasowa bateria przedłuża pracę na zmianie.\n\nZapasową baterię ładują stacje S20 z gniazdem baterii, np. [Stacja ładująca 1-gniazdowa Bluebird S20 (204010086)](/produkt/bluebird-204010086). Większą pojemność ma [Bateria rozszerzona 6160 mAh Bluebird S20 (355040099)](/produkt/bluebird-355040099).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
@@ -4283,12 +4300,12 @@ export const bluebirdAccessories: Product[] = [
   {
     "id": "bluebird-355040099",
     "slug": "bluebird-355040099",
-    "name": "Bateria rozszerzona 6000 mAh Bluebird S20",
-    "seoH1": "Bateria rozszerzona 6000 mAh Bluebird S20",
-    "seoTitle": "Bateria rozszerzona 6000 mAh Bluebird S20 — 355040099",
-    "seoDescription": "Bateria rozszerzona 6000 mAh Bluebird S20 (355040099) — bateria o zwiększonej pojemności do pracy przez dłuższą zmianę.",
-    "shortDescription": "Bateria rozszerzona 6000 mAh Bluebird S20 — bateria o zwiększonej pojemności do pracy przez dłuższą zmianę. PN 355040099.",
-    "description": "Bateria rozszerzona zasila terminal [Bluebird S20](/produkt/bluebird-s20) dłużej niż bateria standardowa 4000 mAh. Ma pojemność 6000 mAh i energię 23,1 Wh. Baterię wymienia się bez wyłączania terminala (hot swap).\n\nUchwyt pistoletowy [Uchwyt pistoletowy Bluebird S20 (210080024)](/produkt/bluebird-210080024) i zestaw na nadgarstek [Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 (210120014)](/produkt/bluebird-210120014) współpracują z baterią standardową i rozszerzoną.",
+    "name": "Bateria rozszerzona 6160 mAh Bluebird S20",
+    "seoH1": "Bateria rozszerzona 6160 mAh Bluebird S20",
+    "seoTitle": "Bateria rozszerzona 6160 mAh Bluebird S20 — 355040099",
+    "seoDescription": "Bateria rozszerzona 6160 mAh Bluebird S20 (355040099) — dłuższa praca niż z baterią standardową 4000 mAh, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria rozszerzona 6160 mAh Bluebird S20 — dłuższa praca niż z baterią standardową 4000 mAh, wymiana bez wyłączania terminala (hot swap). PN 355040099.",
+    "description": "Bateria rozszerzona zasila terminal [Bluebird S20](/produkt/bluebird-s20) dłużej niż bateria standardowa 4000 mAh. Ma pojemność 6160 mAh. Baterię wymienia się bez wyłączania terminala (hot swap).\n\nUchwyt pistoletowy [Uchwyt pistoletowy Bluebird S20 (210080024)](/produkt/bluebird-210080024) i zestaw na nadgarstek [Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 (210120014)](/produkt/bluebird-210120014) współpracują z baterią standardową i rozszerzoną.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
@@ -4299,7 +4316,7 @@ export const bluebirdAccessories: Product[] = [
       "/images/products/bluebird-355040099.png"
     ],
     "imageDescriptions": [
-      "Bateria rozszerzona 6000 mAh Bluebird S20 — bateria o zwiększonej pojemności"
+      "Bateria rozszerzona 6160 mAh Bluebird S20 — bateria o zwiększonej pojemności"
     ],
     "tags": [
       "magazyn"
@@ -4319,7 +4336,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Pojemność",
-        "value": "6000 mAh, 23,1 Wh"
+        "value": "6160 mAh"
       },
       {
         "name": "Wymiana",
@@ -4406,8 +4423,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria standardowa 5000 mAh Bluebird S50 i S70",
     "seoH1": "Bateria standardowa 5000 mAh Bluebird S50 i S70",
     "seoTitle": "Bateria standardowa 5000 mAh Bluebird S50 i S70 — 355040090",
-    "seoDescription": "Bateria standardowa 5000 mAh Bluebird S50 i S70 (355040090) — bateria standardowa do S50 i S70, wymiana bez wyłączania terminala.",
-    "shortDescription": "Bateria standardowa 5000 mAh Bluebird S50 i S70 — bateria standardowa do S50 i S70, wymiana bez wyłączania terminala. PN 355040090.",
+    "seoDescription": "Bateria standardowa 5000 mAh Bluebird S50 i S70 (355040090) — 19,25 Wh, szybkie ładowanie, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria standardowa 5000 mAh Bluebird S50 i S70 — 19,25 Wh, szybkie ładowanie, wymiana bez wyłączania terminala (hot swap). PN 355040090.",
     "description": "Bateria standardowa 5000 mAh zasila terminale [Bluebird S50](/produkt/bluebird-s50) i [Bluebird S70](/produkt/bluebird-s70). Baterię wymienia się bez wyłączania terminala (hot swap). Terminal obsługuje szybkie ładowanie.\n\nZapasową baterię ładują stacje [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080) i [Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030)](/produkt/bluebird-204020030). Większą pojemność ma [Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098)](/produkt/bluebird-355040098).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4465,8 +4482,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70",
     "seoH1": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70",
     "seoTitle": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70 — 355040098",
-    "seoDescription": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098) — bateria o zwiększonej pojemności do S50 i S70.",
-    "shortDescription": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70 — bateria o zwiększonej pojemności do S50 i S70. PN 355040098.",
+    "seoDescription": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70 (355040098) — 26,95 Wh, dłuższa praca niż z baterią 5000 mAh, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria rozszerzona 7000 mAh Bluebird S50 i S70 — 26,95 Wh, dłuższa praca niż z baterią 5000 mAh, wymiana bez wyłączania terminala (hot swap). PN 355040098.",
     "description": "Bateria rozszerzona 7000 mAh zasila terminale [Bluebird S50](/produkt/bluebird-s50) i [Bluebird S70](/produkt/bluebird-s70) dłużej niż bateria standardowa 5000 mAh. Baterię wymienia się bez wyłączania terminala (hot swap).\n\nUchwyty pistoletowe [Uchwyt pistoletowy Bluebird S50 (210080025)](/produkt/bluebird-210080025) i [Uchwyt pistoletowy Bluebird S70 (210080023)](/produkt/bluebird-210080023) oraz zestawy na nadgarstek współpracują z baterią standardową i rozszerzoną.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4587,8 +4604,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria standardowa 4500 mAh Bluebird S10",
     "seoH1": "Bateria standardowa 4500 mAh Bluebird S10",
     "seoTitle": "Bateria standardowa 4500 mAh Bluebird S10 — 355040117",
-    "seoDescription": "Bateria standardowa 4500 mAh Bluebird S10 (355040117) — bateria standardowa do terminala S10.",
-    "shortDescription": "Bateria standardowa 4500 mAh Bluebird S10 — bateria standardowa do terminala S10. PN 355040117.",
+    "seoDescription": "Bateria standardowa 4500 mAh Bluebird S10 (355040117) — szybkie ładowanie, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria standardowa 4500 mAh Bluebird S10 — szybkie ładowanie, wymiana bez wyłączania terminala (hot swap). PN 355040117.",
     "description": "Bateria standardowa 4500 mAh zasila terminal [Bluebird S10](/produkt/bluebird-s10). Ma układ zarządzania pracą ogniwa litowo-jonowego. Baterię wymienia się bez wyłączania terminala (hot swap). Terminal obsługuje szybkie ładowanie.\n\nZapasową baterię ładują stacje [Stacja ładująca 1-gniazdowa Bluebird S10 (204010094)](/produkt/bluebird-204010094) i [Stacja ładująca 4-gniazdowa Bluebird S10 (204020041)](/produkt/bluebird-204020041).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4645,8 +4662,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria standardowa 4350 mAh Bluebird EF551",
     "seoH1": "Bateria standardowa 4350 mAh Bluebird EF551",
     "seoTitle": "Bateria standardowa 4350 mAh Bluebird EF551 — 355040070",
-    "seoDescription": "Bateria standardowa 4350 mAh Bluebird EF551 (355040070) — bateria standardowa do EF551 i EF551R.",
-    "shortDescription": "Bateria standardowa 4350 mAh Bluebird EF551 — bateria standardowa do EF551 i EF551R. PN 355040070.",
+    "seoDescription": "Bateria standardowa 4350 mAh Bluebird EF551 (355040070) — 3,85 V, 16,7 Wh, do EF551 i EF551R, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria standardowa 4350 mAh Bluebird EF551 — 3,85 V, 16,7 Wh, do EF551 i EF551R, wymiana bez wyłączania terminala (hot swap). PN 355040070.",
     "description": "Bateria standardowa 4350 mAh zasila terminal [Bluebird EF551](/produkt/bluebird-ef551) w obu wersjach obudowy. Baterię wymienia się bez wyłączania terminala (hot swap). Bateria współpracuje z aplikacją BOS PowerManager do nadzoru stanu baterii.\n\nZapasową baterię ładują stacje EF551 z gniazdem baterii, np. [Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R (204010058)](/produkt/bluebird-204010058). Większą pojemność ma [Bateria rozszerzona 6160 mAh Bluebird EF551 (355040080)](/produkt/bluebird-355040080).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4654,8 +4671,12 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-355040070.png"
+    ],
+    "imageDescriptions": [
+      "Bateria standardowa 4350 mAh Bluebird EF551 — bateria standardowa"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -4699,17 +4720,21 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria rozszerzona 6160 mAh Bluebird EF551",
     "seoH1": "Bateria rozszerzona 6160 mAh Bluebird EF551",
     "seoTitle": "Bateria rozszerzona 6160 mAh Bluebird EF551 — 355040080",
-    "seoDescription": "Bateria rozszerzona 6160 mAh Bluebird EF551 (355040080) — bateria o zwiększonej pojemności do EF551 i EF551R.",
-    "shortDescription": "Bateria rozszerzona 6160 mAh Bluebird EF551 — bateria o zwiększonej pojemności do EF551 i EF551R. PN 355040080.",
-    "description": "Bateria rozszerzona 6160 mAh zasila terminal [Bluebird EF551](/produkt/bluebird-ef551) dłużej niż bateria standardowa 4350 mAh. Baterię wymienia się bez wyłączania terminala (hot swap). Bateria współpracuje z aplikacją BOS PowerManager do nadzoru stanu baterii.\n\nUchwyty pistoletowe EF551 współpracują z baterią standardową i rozszerzoną. Zestawy na nadgarstek EF551 są przeznaczone do baterii standardowej.",
+    "seoDescription": "Bateria rozszerzona 6160 mAh Bluebird EF551 (355040080) — 3,85 V, 23,7 Wh, do EF551 i EF551R, wymiana bez wyłączania terminala (hot swap).",
+    "shortDescription": "Bateria rozszerzona 6160 mAh Bluebird EF551 — 3,85 V, 23,7 Wh, do EF551 i EF551R, wymiana bez wyłączania terminala (hot swap). PN 355040080.",
+    "description": "Bateria rozszerzona 6160 mAh zasila terminal [Bluebird EF551](/produkt/bluebird-ef551) dłużej niż bateria standardowa 4350 mAh. Baterię wymienia się bez wyłączania terminala (hot swap). Bateria współpracuje z aplikacją BOS PowerManager do nadzoru stanu baterii.\n\nUchwyty pistoletowe EF551 współpracują z baterią standardową i rozszerzoną. Zestawy na nadgarstek do EF551 w obudowie standardowej są przeznaczone do baterii standardowej.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "baterie-do-terminali",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-355040080.png"
+    ],
+    "imageDescriptions": [
+      "Bateria rozszerzona 6160 mAh Bluebird EF551 — bateria o zwiększonej pojemności"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -4753,8 +4778,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria 6800 mAh Bluebird EK430",
     "seoH1": "Bateria 6800 mAh Bluebird EK430",
     "seoTitle": "Bateria 6800 mAh Bluebird EK430 — 355040073",
-    "seoDescription": "Bateria 6800 mAh Bluebird EK430 (355040073) — bateria do terminala EK430, wymiana bez wyłączania terminala.",
-    "shortDescription": "Bateria 6800 mAh Bluebird EK430 — bateria do terminala EK430, wymiana bez wyłączania terminala. PN 355040073.",
+    "seoDescription": "Bateria 6800 mAh Bluebird EK430 (355040073) — 24,48 Wh, wymiana bez wyłączania terminala (hot swap), pełne ładowanie poniżej 5 h.",
+    "shortDescription": "Bateria 6800 mAh Bluebird EK430 — 24,48 Wh, wymiana bez wyłączania terminala (hot swap), pełne ładowanie poniżej 5 h. PN 355040073.",
     "description": "Bateria 6800 mAh zasila terminal [Bluebird EK430](/produkt/bluebird-ek430). Pojemność typowa wynosi 6800 mAh, a znamionowa 6700 mAh. Baterię wymienia się bez wyłączania terminala (hot swap). Pełne ładowanie trwa poniżej 5 godzin.\n\nZapasową baterię ładują stacje EK430 z gniazdem baterii, np. [Stacja ładująca 1-gniazdowa Bluebird EK430 (204010063)](/produkt/bluebird-204010063).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4811,8 +4836,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria 5000 mAh Bluebird SF650",
     "seoH1": "Bateria 5000 mAh Bluebird SF650",
     "seoTitle": "Bateria 5000 mAh Bluebird SF650 — 355040087",
-    "seoDescription": "Bateria 5000 mAh Bluebird SF650 (355040087) — bateria zapasowa do smartfona firmowego SF650.",
-    "shortDescription": "Bateria 5000 mAh Bluebird SF650 — bateria zapasowa do smartfona firmowego SF650. PN 355040087.",
+    "seoDescription": "Bateria 5000 mAh Bluebird SF650 (355040087) — 3,85 V, 19,25 Wh, zapasowa bateria do smartfona firmowego SF650.",
+    "shortDescription": "Bateria 5000 mAh Bluebird SF650 — 3,85 V, 19,25 Wh, zapasowa bateria do smartfona firmowego SF650. PN 355040087.",
     "description": "Bateria 5000 mAh zasila smartfon firmowy [Bluebird SF650](/produkt/bluebird-sf650). Ma napięcie 3,85 V, energię 19,25 Wh i taką samą pojemność jak bateria dostarczana z urządzeniem. Zapasowa bateria pozwala wymienić ogniwo po spadku pojemności albo przygotować drugą baterię na zmianę.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -4861,8 +4886,8 @@ export const bluebirdAccessories: Product[] = [
     "name": "Bateria 7000 mAh Bluebird S10 RFID",
     "seoH1": "Bateria 7000 mAh Bluebird S10 RFID",
     "seoTitle": "Bateria 7000 mAh Bluebird S10 RFID — 355040127",
-    "seoDescription": "Bateria 7000 mAh Bluebird S10 RFID (355040127) — bateria zapasowa do czytnika S10 RFID.",
-    "shortDescription": "Bateria 7000 mAh Bluebird S10 RFID — bateria zapasowa do czytnika S10 RFID. PN 355040127.",
+    "seoDescription": "Bateria 7000 mAh Bluebird S10 RFID (355040127) — wymiana bez wyłączania urządzenia (hot swap), szybkie ładowanie.",
+    "shortDescription": "Bateria 7000 mAh Bluebird S10 RFID — wymiana bez wyłączania urządzenia (hot swap), szybkie ładowanie. PN 355040127.",
     "description": "Bateria 7000 mAh zasila terminal [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) z wbudowanym czytnikiem UHF RFID. Baterię wymienia się bez wyłączania urządzenia (hot swap). Urządzenie obsługuje szybkie ładowanie.\n\nJedna bateria jest w zestawie z S10 RFID. Druga bateria pozwala pracować dłużej przy inwentaryzacji.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -5149,15 +5174,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Uchwyt pistoletowy Bluebird EF551 — 210080018",
     "seoDescription": "Uchwyt pistoletowy Bluebird EF551 (210080018) — uchwyt ze spustem do częstego skanowania; pasuje do baterii standardowej i rozszerzonej.",
     "shortDescription": "Uchwyt pistoletowy Bluebird EF551 — uchwyt ze spustem do częstego skanowania; pasuje do baterii standardowej i rozszerzonej. PN 210080018.",
-    "description": "Uchwyt pistoletowy zamienia terminal [Bluebird EF551](/produkt/bluebird-ef551) w urządzenie ze spustem pod palcem wskazującym. Spust uruchamia skanowanie przez złącze z tyłu terminala. Uchwyt ułatwia częste skanowanie, np. przy kompletacji. Uchwyt pasuje do EF551 w obudowie standardowej i współpracuje z baterią standardową i rozszerzoną. Do EF551R służy uchwyt [Uchwyt pistoletowy Bluebird EF551R (210080020)](/produkt/bluebird-210080020).",
+    "description": "Uchwyt pistoletowy zamienia terminal [Bluebird EF551](/produkt/bluebird-ef551) w urządzenie ze spustem pod palcem wskazującym. Spust uruchamia skanowanie przez złącze z tyłu terminala. Uchwyt ułatwia częste skanowanie, np. przy kompletacji. Uchwyt pasuje do EF551 w obudowie standardowej i do EF551R w obudowie Rugged typu 3 (Type 3). Współpracuje z baterią standardową i rozszerzoną. Dobór uchwytu zależy od typu obudowy Rugged (Type 1 albo Type 3). Do obudowy Rugged typu 1 służy [Uchwyt pistoletowy Bluebird EF551R (210080020)](/produkt/bluebird-210080020).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210080018.png"
+    ],
+    "imageDescriptions": [
+      "Uchwyt pistoletowy Bluebird EF551 — uchwyt pistoletowy z zamocowanym terminalem"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5176,7 +5205,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Pasuje do",
-        "value": "Bluebird EF551"
+        "value": "Bluebird EF551 (obudowa standardowa), EF551R (obudowa Rugged Type 3)"
       },
       {
         "name": "Bateria",
@@ -5203,15 +5232,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Uchwyt pistoletowy Bluebird EF551R — 210080020",
     "seoDescription": "Uchwyt pistoletowy Bluebird EF551R (210080020) — uchwyt ze spustem do częstego skanowania; pasuje do baterii standardowej i rozszerzonej.",
     "shortDescription": "Uchwyt pistoletowy Bluebird EF551R — uchwyt ze spustem do częstego skanowania; pasuje do baterii standardowej i rozszerzonej. PN 210080020.",
-    "description": "Uchwyt pistoletowy zamienia terminal [Bluebird EF551R](/produkt/bluebird-ef551) w urządzenie ze spustem pod palcem wskazującym. Spust uruchamia skanowanie przez złącze z tyłu terminala. Uchwyt ułatwia częste skanowanie, np. przy kompletacji. Uchwyt pasuje do EF551R w obudowie Rugged i współpracuje z baterią standardową i rozszerzoną. Do EF551 w obudowie standardowej służy uchwyt [Uchwyt pistoletowy Bluebird EF551 (210080018)](/produkt/bluebird-210080018).",
+    "description": "Uchwyt pistoletowy zamienia terminal [Bluebird EF551R](/produkt/bluebird-ef551) w urządzenie ze spustem pod palcem wskazującym. Spust uruchamia skanowanie przez złącze z tyłu terminala. Uchwyt ułatwia częste skanowanie, np. przy kompletacji. Uchwyt pasuje do EF551R w obudowie Rugged typu 1 (Type 1). Współpracuje z baterią standardową i rozszerzoną. Dobór uchwytu zależy od typu obudowy Rugged (Type 1 albo Type 3). Do EF551 w obudowie standardowej i do obudowy Rugged typu 3 służy [Uchwyt pistoletowy Bluebird EF551 (210080018)](/produkt/bluebird-210080018).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210080020.png"
+    ],
+    "imageDescriptions": [
+      "Uchwyt pistoletowy Bluebird EF551R — uchwyt pistoletowy z zamocowanym terminalem"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5230,7 +5263,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Pasuje do",
-        "value": "Bluebird EF551R"
+        "value": "Bluebird EF551R (obudowa Rugged Type 1)"
       },
       {
         "name": "Bateria",
@@ -5318,7 +5351,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 — 210120014",
     "seoDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 (210120014) — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne.",
     "shortDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne. PN 210120014.",
-    "description": "Zestaw pozwala nosić terminal [Bluebird S20](/produkt/bluebird-s20) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią: standardowa i rozszerzona.",
+    "description": "Zestaw pozwala nosić terminal [Bluebird S20](/produkt/bluebird-s20) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią standardową i rozszerzoną.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5376,7 +5409,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Mocowanie na nadgarstek Bluebird S20 — 210120017",
     "seoDescription": "Mocowanie na nadgarstek Bluebird S20 (210120017) — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu.",
     "shortDescription": "Mocowanie na nadgarstek Bluebird S20 — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu. PN 210120017.",
-    "description": "Mocowanie pozwala nosić terminal [Bluebird S20](/produkt/bluebird-s20) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią: standardowa i rozszerzona. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 (210120014)](/produkt/bluebird-210120014).",
+    "description": "Mocowanie pozwala nosić terminal [Bluebird S20](/produkt/bluebird-s20) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią standardową i rozszerzoną. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S20 (210120014)](/produkt/bluebird-210120014).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5434,7 +5467,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S50 — 210120015",
     "seoDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S50 (210120015) — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne.",
     "shortDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S50 — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne. PN 210120015.",
-    "description": "Zestaw pozwala nosić terminal [Bluebird S50](/produkt/bluebird-s50) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią: standardowa i rozszerzona.",
+    "description": "Zestaw pozwala nosić terminal [Bluebird S50](/produkt/bluebird-s50) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią standardową i rozszerzoną.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5492,7 +5525,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Mocowanie na nadgarstek Bluebird S50 — 210120018",
     "seoDescription": "Mocowanie na nadgarstek Bluebird S50 (210120018) — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu.",
     "shortDescription": "Mocowanie na nadgarstek Bluebird S50 — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu. PN 210120018.",
-    "description": "Mocowanie pozwala nosić terminal [Bluebird S50](/produkt/bluebird-s50) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią: standardowa i rozszerzona. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S50 (210120015)](/produkt/bluebird-210120015).",
+    "description": "Mocowanie pozwala nosić terminal [Bluebird S50](/produkt/bluebird-s50) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią standardową i rozszerzoną. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S50 (210120015)](/produkt/bluebird-210120015).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5550,7 +5583,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S70 — 210120016",
     "seoDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S70 (210120016) — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne.",
     "shortDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird S70 — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne. PN 210120016.",
-    "description": "Zestaw pozwala nosić terminal [Bluebird S70](/produkt/bluebird-s70) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią: standardowa i rozszerzona.",
+    "description": "Zestaw pozwala nosić terminal [Bluebird S70](/produkt/bluebird-s70) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią standardową i rozszerzoną.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5608,7 +5641,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Mocowanie na nadgarstek Bluebird S70 — 210120019",
     "seoDescription": "Mocowanie na nadgarstek Bluebird S70 (210120019) — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu.",
     "shortDescription": "Mocowanie na nadgarstek Bluebird S70 — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu. PN 210120019.",
-    "description": "Mocowanie pozwala nosić terminal [Bluebird S70](/produkt/bluebird-s70) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią: standardowa i rozszerzona. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S70 (210120016)](/produkt/bluebird-210120016).",
+    "description": "Mocowanie pozwala nosić terminal [Bluebird S70](/produkt/bluebird-s70) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią standardową i rozszerzoną. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird S70 (210120016)](/produkt/bluebird-210120016).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
@@ -5666,15 +5699,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 — 210120004",
     "seoDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 (210120004) — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne.",
     "shortDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne. PN 210120004.",
-    "description": "Zestaw pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią: standardowa.",
+    "description": "Zestaw pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią standardową.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210120004.png"
+    ],
+    "imageDescriptions": [
+      "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 — zestaw na nadgarstek z pierścieniem spustu, na ręce"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5720,15 +5757,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Mocowanie na nadgarstek Bluebird EF551 — 210120006",
     "seoDescription": "Mocowanie na nadgarstek Bluebird EF551 (210120006) — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu.",
     "shortDescription": "Mocowanie na nadgarstek Bluebird EF551 — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu. PN 210120006.",
-    "description": "Mocowanie pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią: standardowa. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 (210120004)](/produkt/bluebird-210120004).",
+    "description": "Mocowanie pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią standardową. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551 (210120004)](/produkt/bluebird-210120004).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210120006.png"
+    ],
+    "imageDescriptions": [
+      "Mocowanie na nadgarstek Bluebird EF551 — mocowanie na nadgarstek z terminalem"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5774,15 +5815,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R — 210120005",
     "seoDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R (210120005) — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne.",
     "shortDescription": "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R — terminal na nadgarstku i pierścień spustu na palcu; ręce pozostają wolne. PN 210120005.",
-    "description": "Zestaw pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) w obudowie Rugged (EF551R) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych. Zestaw współpracuje z baterią: standardowa.",
+    "description": "Zestaw pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) w obudowie Rugged (EF551R) na nadgarstku. Pierścień spustu zakłada się na palec. Przewód danych łączy pierścień z terminalem. Skanowanie nie wymaga trzymania terminala w dłoni, więc obie ręce pozostają wolne do przenoszenia towaru.\n\nW zestawie są mocowanie na nadgarstek, pierścień spustu i przewód danych.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210120005.png"
+    ],
+    "imageDescriptions": [
+      "Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R — zestaw na nadgarstek z pierścieniem spustu, na ręce"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5802,10 +5847,6 @@ export const bluebirdAccessories: Product[] = [
       {
         "name": "Zawartość zestawu",
         "value": "Mocowanie na nadgarstek, pierścień spustu, przewód danych"
-      },
-      {
-        "name": "Bateria",
-        "value": "Standardowa"
       }
     ],
     "applications": [
@@ -5828,15 +5869,19 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Mocowanie na nadgarstek Bluebird EF551R — 210120007",
     "seoDescription": "Mocowanie na nadgarstek Bluebird EF551R (210120007) — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu.",
     "shortDescription": "Mocowanie na nadgarstek Bluebird EF551R — mocowanie terminala na nadgarstku z paskiem 260 mm, bez pierścienia spustu. PN 210120007.",
-    "description": "Mocowanie pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) w obudowie Rugged (EF551R) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nMocowanie współpracuje z baterią: standardowa. Zestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R (210120005)](/produkt/bluebird-210120005).",
+    "description": "Mocowanie pozwala nosić terminal [Bluebird EF551](/produkt/bluebird-ef551) w obudowie Rugged (EF551R) na nadgarstku. W zestawie są poduszka i pasek o długości 260 mm. Mocowanie nie ma pierścienia spustu. Skanowanie uruchamia się przyciskami terminala.\n\nZestaw z pierścieniem spustu to [Zestaw na nadgarstek z pierścieniem spustu Bluebird EF551R (210120005)](/produkt/bluebird-210120005).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-210120007.png"
+    ],
+    "imageDescriptions": [
+      "Mocowanie na nadgarstek Bluebird EF551R — mocowanie na nadgarstek z terminalem"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -5856,10 +5901,6 @@ export const bluebirdAccessories: Product[] = [
       {
         "name": "Zawartość zestawu",
         "value": "Mocowanie na nadgarstek, poduszka, pasek 260 mm"
-      },
-      {
-        "name": "Bateria",
-        "value": "Standardowa"
       }
     ],
     "applications": [
@@ -6107,12 +6148,8 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [
-      "/images/products/bluebird-621040003.png"
-    ],
-    "imageDescriptions": [
-      "Pasek na ramię Bluebird z metalowymi zaczepami — pasek na ramię z metalowymi zaczepami"
-    ],
+    "images": [],
+    "imageDescriptions": [],
     "tags": [
       "magazyn"
     ],
@@ -6398,12 +6435,8 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [
-      "/images/products/bluebird-624010029.png"
-    ],
-    "imageDescriptions": [
-      "Szkło ochronne Bluebird S20 i S50 — opakowanie szkła ochronnego z akcesoriami do montażu"
-    ],
+    "images": [],
+    "imageDescriptions": [],
     "tags": [
       "magazyn"
     ],
@@ -6457,12 +6490,8 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [
-      "/images/products/bluebird-624010031.png"
-    ],
-    "imageDescriptions": [
-      "Szkło ochronne Bluebird S70 — opakowanie szkła ochronnego z akcesoriami do montażu"
-    ],
+    "images": [],
+    "imageDescriptions": [],
     "tags": [
       "magazyn"
     ],
@@ -6515,12 +6544,8 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [
-      "/images/products/bluebird-624010040.png"
-    ],
-    "imageDescriptions": [
-      "Szkło ochronne Bluebird S10 — opakowanie szkła ochronnego z akcesoriami do montażu"
-    ],
+    "images": [],
+    "imageDescriptions": [],
     "tags": [
       "magazyn"
     ],
@@ -6573,12 +6598,8 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [
-      "/images/products/bluebird-624010041.png"
-    ],
-    "imageDescriptions": [
-      "Folia ochronna antyodciskowa Bluebird S10 — opakowanie folii ochronnej z akcesoriami do montażu"
-    ],
+    "images": [],
+    "imageDescriptions": [],
     "tags": [
       "magazyn"
     ],
@@ -6800,8 +6821,12 @@ export const bluebirdAccessories: Product[] = [
       "akcesoria-do-terminali"
     ],
     "manufacturerId": "bluebird",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/bluebird-626010005.png"
+    ],
+    "imageDescriptions": [
+      "Rysik Bluebird z plastikową końcówką — rysik z plastikową końcówką"
+    ],
     "tags": [
       "magazyn"
     ],

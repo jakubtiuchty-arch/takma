@@ -325,15 +325,15 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 
 ## Terminale Bluebird
 - [Terminale Bluebird](https://www.takma.com.pl/terminale-bluebird): terminale mobilne z Androidem — dotykowe, z klawiaturą, z czytnikiem UHF RFID i do strefy Ex. Zasilacz poza SF650 sprzedawany osobno. Gwarancja 12 miesięcy.
-- Bluebird S10 (5,5", Android 14, Wi-Fi lub 4G LTE, IP68, 4500 mAh, od 1 841 zł): https://www.takma.com.pl/produkt/bluebird-s10
-- Bluebird S20 (6", Android 13, SE4710, Wi-Fi 6E lub 5G, 243 g, od 2 601 zł): https://www.takma.com.pl/produkt/bluebird-s20
-- Bluebird S50 (6", 600 nitów, QC6490, SE4720/SE4770/SE55, Wi-Fi 6E lub 5G, od 6 053 zł): https://www.takma.com.pl/produkt/bluebird-s50
-- Bluebird S70 (6", full rugged, upadki z 3,05 m, SE4720/SE4770/SE55, Wi-Fi 6E lub 5G, od 7 149 zł): https://www.takma.com.pl/produkt/bluebird-s70
-- Bluebird S70 Explosion Protection (ATEX, IECEx, UKEX strefa 2/22, SE4770, 5G, od 13 609 zł): https://www.takma.com.pl/produkt/bluebird-s70-explosion-protection
-- Bluebird EF551 i EF551R (5,45", QC6490, Wi-Fi 6E lub 5G, obudowa standardowa lub Rugged, od 5 481 zł): https://www.takma.com.pl/produkt/bluebird-ef551
-- Bluebird EK430 (klawiatura 34 lub 47 klawiszy, obudowa prosta lub pistoletowa, SE4710/SE4850, od 4 814 zł): https://www.takma.com.pl/produkt/bluebird-ek430
-- Bluebird S10 RFID (UHF 865–868 MHz, ponad 1300 tagów/s, zasięg ponad 13 m, od 4 000 zł): https://www.takma.com.pl/produkt/bluebird-s10-rfid
-- Bluebird SF650 (smartfon firmowy bez skanera kodów, 6,5", 4G LTE, od 1 509 zł): https://www.takma.com.pl/produkt/bluebird-sf650
+- Bluebird S10 (5,5", Android 14, Wi-Fi lub 4G LTE, IP68, 4500 mAh, od 1 841 zł netto): https://www.takma.com.pl/produkt/bluebird-s10
+- Bluebird S20 (6", Android 13, SE4710, Wi-Fi 6E, opcja 5G, 243 g, od 2 601 zł netto): https://www.takma.com.pl/produkt/bluebird-s20
+- Bluebird S50 (6", 600 nitów, QC6490, SE4720/SE4770/SE55, Wi-Fi 6E, opcja 5G, od 6 053 zł netto): https://www.takma.com.pl/produkt/bluebird-s50
+- Bluebird S70 (6", wzmocniony, upadki z 3,05 m, SE4720/SE4770/SE55, Wi-Fi 6E, opcja 5G, od 7 149 zł netto): https://www.takma.com.pl/produkt/bluebird-s70
+- Bluebird S70 Explosion Protection (ATEX, IECEx, UKEX strefa 2/22, SE4770, 5G, od 13 609 zł netto): https://www.takma.com.pl/produkt/bluebird-s70-explosion-protection
+- Bluebird EF551 i EF551R (5,45", QC6490, Wi-Fi 6E, opcja 5G, obudowa standardowa lub Rugged, od 5 481 zł netto): https://www.takma.com.pl/produkt/bluebird-ef551
+- Bluebird EK430 (klawiatura 34 lub 47 klawiszy, obudowa prosta lub pistoletowa, SE4710/SE4850, od 4 814 zł netto): https://www.takma.com.pl/produkt/bluebird-ek430
+- Bluebird S10 RFID (UHF 865–868 MHz, ponad 1300 tagów/s, zasięg ponad 13 m, od 4 000 zł netto): https://www.takma.com.pl/produkt/bluebird-s10-rfid
+- Bluebird SF650 (smartfon firmowy bez skanera kodów, 6,5", 4G LTE, od 1 509 zł netto): https://www.takma.com.pl/produkt/bluebird-sf650
 
 ## Komputery POS (SUNMI)
 - [Komputery POS](https://www.takma.com.pl/komputery-pos): stacjonarne stanowiska kasowe SUNMI T3, T3 PRO, D3 i D3 PRO z ekranem dotykowym 15,6" oraz kompaktowe SUNMI D3 MINI z ekranem 10,1" i wbudowaną drukarką 58 lub 80 mm. T3 i T3 PRO mają Androida 13, NFC i czytnik linii papilarnych w przycisku zasilania. D3 ma Androida 14 i ekran klienta 10,1" z NFC w zestawie. D3 PRO ma Androida 13, obudowę aluminiową i ekran klienta z NFC do dokupienia. D3 MINI ma Androida 13, skaner kodów 1D/2D, NFC, wbudowany ekran klienta i wersje 4G. Urządzenia niefiskalne.

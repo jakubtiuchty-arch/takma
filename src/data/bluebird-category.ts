@@ -1,12 +1,12 @@
 import type { BrandCategoryRichContent } from './brand-category-content'
 
 export const bluebirdFaq = [
-  { question: 'Które terminale Bluebird mają 5G?', answer: 'Wersje 5G mają S20, S50, S70 i EF551 (PN z oznaczeniem A5) oraz S70 Explosion Protection. S10 i EK430 mają wersje 4G LTE, a SF650 ma 4G LTE w każdej wersji. Terminale z eSIM to S20, S50, S70, EF551 i S10 w wersji z modemem.' },
+  { question: 'Które terminale Bluebird mają 5G?', answer: 'Wersje 5G mają S20, S50, S70 i EF551 (PN z oznaczeniem A5) oraz S70 Explosion Protection. S10 i EK430 mają wersje 4G LTE, a SF650 ma 4G LTE w każdej wersji. Terminale z eSIM to S20, S50, S70, S70 Explosion Protection, EF551 i S10 w wersji z modemem.' },
   { question: 'Czy terminale Bluebird mają zasilacz w zestawie?', answer: 'Nie, poza smartfonem SF650. Do ładowania bezpośredniego potrzebne są zasilacz 5 V / 3 A (602010041), wtyczka EU (602020024) i kabel USB-A – USB-C (603010005). Stacje ładujące mają osobne zasilacze 9 V albo 12 V i przewód zasilający EU.' },
   { question: 'Który terminal Bluebird ma klawiaturę?', answer: 'EK430 ma klawiaturę 34-klawiszową numeryczną albo 47-klawiszową alfanumeryczną oraz ekran dotykowy 4,3 cala. Jest dostępny w obudowie prostej i pistoletowej. Pozostałe terminale Bluebird w ofercie są dotykowe.' },
   { question: 'Czy Bluebird ma terminal do strefy zagrożonej wybuchem?', answer: 'Tak. S70 Explosion Protection ma certyfikaty ATEX, IECEx i UKEX do strefy 2 i 22. Ma te same wymiary, procesor i ekran co S70.' },
   { question: 'Czy Bluebird ma terminal z czytnikiem UHF RFID?', answer: 'Tak. S10 RFID ma wbudowany czytnik UHF w uchwycie pistoletowym. Oferowana wersja pracuje w europejskim paśmie 865–868 MHz i odczytuje ponad 1300 tagów na sekundę.' },
-  { question: 'Czy terminale Bluebird dostają aktualizacje Androida?', answer: 'Producent deklaruje dla każdego modelu docelową wersję Androida. Aktualizacje systemu wymagają programu serwisowego Bluebird (BluebirdCare), a plan zależy od harmonogramu Qualcomm.' },
+  { question: 'Czy terminale Bluebird dostają aktualizacje Androida?', answer: 'Najwyższa zapowiedziana wersja Androida zależy od modelu, np. Android 17 dla S20 i Android 18 dla S10. Aktualizacje systemu wymagają wykupienia programu gwarancyjnego Bluebird (BluebirdCare). Wersje i terminy zależą od planu Qualcomm.' },
   { question: 'Jaka jest gwarancja na terminale Bluebird?', answer: 'Gwarancja na terminale Bluebird w naszej ofercie wynosi 12 miesięcy.' },
 ]
 
@@ -38,7 +38,7 @@ export const bluebirdCategory: BrandCategoryRichContent = {
     { name: 'Bluebird S10', href: '/produkt/bluebird-s10', role: 'Dotykowy, podstawowy', priceFrom: '', specs: [{ label: 'Ekran', value: '5,5 cala' }, { label: 'System', value: 'Android 14' }, { label: 'Sieć', value: 'Wi-Fi, 4G LTE' }], bestFor: 'Sklep, proste zadania magazynowe i dostawy.' },
     { name: 'Bluebird S20', href: '/produkt/bluebird-s20', role: 'Dotykowy, smukły', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali' }, { label: 'Skaner', value: 'SE4710' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel i logistyka; obudowa 12,5 mm, 243 g.' },
     { name: 'Bluebird S50', href: '/produkt/bluebird-s50', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Skaner', value: 'SE4720, SE4770, SE55' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Magazyn i logistyka; 2,4 m w osłonie.' },
-    { name: 'Bluebird S70', href: '/produkt/bluebird-s70', role: 'Dotykowy, full rugged', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Upadki', value: '3,05 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Produkcja, ciężki magazyn i teren.' },
+    { name: 'Bluebird S70', href: '/produkt/bluebird-s70', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Upadki', value: '3,05 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Produkcja, ciężki magazyn i teren.' },
     { name: 'Bluebird S70 Explosion Protection', href: '/produkt/bluebird-s70-explosion-protection', role: 'Strefa Ex 2/22', priceFrom: '', specs: [{ label: 'Certyfikaty', value: 'ATEX, IECEx, UKEX' }, { label: 'Skaner', value: 'SE4770' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Zakłady z atmosferą wybuchową w strefie 2 i 22.' },
     { name: 'Bluebird EF551', href: '/produkt/bluebird-ef551', role: 'Dotykowy, kompaktowy', priceFrom: '', specs: [{ label: 'Ekran', value: '5,45 cala' }, { label: 'Obudowa', value: 'Standardowa lub Rugged (EF551R)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Magazyn i handel; EF551R do upadków z 2,4 m.' },
     { name: 'Bluebird EK430', href: '/produkt/bluebird-ek430', role: 'Z klawiaturą', priceFrom: '', specs: [{ label: 'Klawiatura', value: '34 lub 47 klawiszy' }, { label: 'Obudowa', value: 'Prosta lub pistoletowa' }, { label: 'Skaner', value: 'SE4710, SE4850' }], bestFor: 'Kompletacja z wpisywaniem ilości i aplikacje terminalowe.' },
@@ -54,7 +54,7 @@ export const bluebirdCategory: BrandCategoryRichContent = {
     heading: 'Co sprawdzić przed zakupem wyposażenia?',
     items: [
       { title: 'Zasilacz jest sprzedawany osobno', text: 'Poza SF650 terminale nie mają zasilacza w zestawie. Karta każdego terminala pokazuje zasilacz, wtyczkę i kabel potrzebne do ładowania.' },
-      { title: 'Stacje wymagają zasilacza i czasem podkładki', text: 'Stacje S10, S20 i S50 wymagają podkładki dla terminala bez osłony rugged boot. Zasilacz i przewód zasilający do stacji zamawia się osobno.' },
+      { title: 'Stacje wymagają zasilacza i czasem podkładki', text: 'Stacje S10, S20 i S50 wymagają podkładki dla terminala bez osłony rugged boot. Stacje EF551 wymagają podkładki dopasowanej do obudowy terminala. Zasilacz i przewód zasilający do stacji zamawia się osobno.' },
     ],
   },
   comparisons: [
