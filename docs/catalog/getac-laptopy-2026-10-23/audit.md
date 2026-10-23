@@ -19,7 +19,7 @@ Klucz układu klawiatury: 8. znak PN (`S` US, `3` UK, `4` DE).
 | Karta | Slug | PN | Domyślny PN | Cena od (netto) | Karta |
 |---|---|---|---|---|---|
 | Getac S510AD | getac-s510ad | 1 | SX176A34SDXX (6 szt. + 5 w dostawie) | 9 798,83 zł | available |
-| Getac S410 G5 | getac-s410-g5 | 6 | ST2D6AQ4JDXX (2 szt.) | 9 186,15 zł | available |
+| Getac S410 G5 | getac-s410-g5 | 5 | ST2D6AQ4JDXX (2 szt.) | 9 186,15 zł | available |
 | Getac S510 | getac-s510 | 14 | SU1N6CQSSDXX (US, 0 szt.) | 10 407,43 zł | unavailable |
 | Getac B360 (G3) | getac-b360 | 7 | BV1164BSBDGX (US, 0 szt.) | 15 680,58 zł | unavailable |
 | Getac V120 | getac-v120 | 3 | VV116YESBDBA (US, 0 szt.) | 16 587,35 zł | unavailable |
@@ -32,7 +32,6 @@ Dostępność według reguły: stan > 0 → `available`; 0 i dostawa → `on-ord
 |---|---|---|---|---|---|---|---|
 | SX176A34SDXX | Ryzen AI 5 340 | 16 / 256 GB | Wi-Fi 7 | — (bez dotyku, kamera Windows Hello w standardzie) | DE | 9 798,83 | 6 + 5 w dostawie |
 | ST2D6AQ4JDXX | Core i5 | 16 / 256 GB | Wi-Fi | — | DE | 10 407,43 | 2 |
-| ST2D6A34JRXX | Core i5 | 16 / 256 GB | 5G, GPS | — | DE (filtr Jarltech) | 12 776,46 | 0 |
 | ST2D6AC3JDXX | Core i5 | 16 / 256 GB | Wi-Fi | — | UK | 9 186,15 | 0 |
 | ST2D6CC3JDXX | Core i5 | 16 / 512 GB | Wi-Fi | — | UK | 10 207,28 | 0 |
 | ST2D6AQ3JDXI | Core i5 | 16 / 256 GB | Wi-Fi | RS-232 i VGA | UK | 11 261,10 | 0 |
@@ -72,6 +71,7 @@ Nazwy wariantów bez modelu na początku („Core Ultra 5, 16 GB / 512 GB, Wi-Fi
 
 - Układy FR, ES, IT, nordycki (FDNS) i arabski: BV1164BDBDGX, BV1164BMBDGX, BV1164BNBDGX, BV1164BNBRGX, SU1D6CQNSFXX, SU1N6CQNSFXX, SU4N6CQYSQXX, SU1N6CQDSDXX, VV116YEDBDBA, VV416YEMBDBX.
 - BV1164B4BDAJ — DVD i 2 × 6900 mAh to cechy B360 Pro, nie B360.
+- ST2D6A34JRXX (S410 G5, Core i5, 16 / 256 GB, 5G, GPS, DE; 12 776,46 zł, 0 szt.) — pominięty po audycie 23.10.2026: opis Jarltech podaje ekran dotykowy, a 7. znak PN „3” wskazuje wersję bez dotyku (jak w S510 i S510AD); rozdzielczości opis nie podaje. Do dodania po potwierdzeniu konfiguracji ekranu u dostawcy.
 - Starsza generacja B360 (Core i5, 8 GB, Windows 10 Pro): BM21Z4B4BDFX, BM21Z4BEBDGX.
 - X600 (XR7X66C4EDCA), V110 G4 (VG21ZCK4BPBX), B360 Pro, B360X, B360X Pro, X600 Pro, X600 Server — poza zakresem decyzji właściciela.
 
@@ -89,12 +89,12 @@ Nazwy wariantów bez modelu na początku („Core Ultra 5, 16 GB / 512 GB, Wi-Fi
 | V120 | „USB (type A), RS232” | opcja „USB 3.2 Gen 2 Type-A + Serial port” w gnieździe rozszerzeń (wyklucza czytnik kodów i microSD) | port RS-232 i trzeci USB-A w gnieździe rozszerzeń |
 | V120 | — | karta nie używa słów „convertible” ani „tryb tabletu” | słowa pominięte w tekście; opis zdjęcia `_04` opisuje widok („ekran obrócony i złożony na klawiaturze”) |
 | S410 G5 | opis rodziny: 8 GB RAM | 16 GB standard, wszystkie PN 16 GB | 16 GB |
-| S410 G5 | 1366 × 768 w 5 PN; ST2D6A34JRXX bez rozdzielczości | HD albo FHD, z dotykiem albo bez | „14″ HD 1366 × 768 … (w wersji z 5G: HD albo FHD, zależnie od konfiguracji)” |
+| S410 G5 | 1366 × 768 w 5 PN; ST2D6A34JRXX bez rozdzielczości | HD albo FHD, z dotykiem albo bez | „14″ HD 1366 × 768 …”; ST2D6A34JRXX pominięty (p. 3) |
 | S410 G5 | rysik tylko w opisach ST2D6AQ3JDXI i ST4N6CQ3JJXI | „Capacitive stylus with tether” w akcesoriach standardowych | rysik w zawartości zestawu |
 | S410 G5 | procesor „i5 4.6GHz” / „i7 5GHz” | i5-1340P 4,6 GHz, i7-1360P 5,0 GHz | i5-1340P / i7-1360P (wniosek z taktowania) |
 | S510AD | opis PN bez ekranu dotykowego | dotyk LumiBond jako opcja | „Wersja w ofercie bez ekranu dotykowego” |
 | S510AD | — | przypis VII: „Only available in the US, UK, EU, Australia, and New Zealand, the operating temperature is -15°C to 63°C” | −29…+63°C z tabeli głównej; przypis wygląda na sklejenie przypisu o 5G z innym przypisem — do potwierdzenia u Getac |
-| S510 | SU676A3…: Core Ultra 7 165U vPro | przypis I: vPro Enterprise tylko z 2 × Thunderbolt 4 | warunek w specyfikacji i dymku |
+| S510 | SU676A3…: Core Ultra 7 165U vPro; „Thunderbolt 4” bez liczby portów | przypis I: vPro Enterprise tylko z 2 × Thunderbolt 4 | warunek w specyfikacji (opcje producenta); w dymku bez zdania o 2 portach TB4 (opis PN tego nie potwierdza) |
 
 Zawartość zestawu: według Jarltech (zasilacz, przewód EU, w większości PN także UK, rysik, uchwyt twardy w V120), sprawdzona z akcesoriami standardowymi kart Getac (B360: bateria, zasilacz 90 W, rysik; V120: baterie, zasilacz 65 W; S410: bateria, zasilacz 90 W, rysik; S510 i S510AD: bateria, zasilacz 65 W). Gwarancja: karta Getac (B360, V120: „3 years Bumper-to-Bumper”; S410, S510, S510AD: „3 years limited warranty”) i Jarltech (36 miesięcy).
 
@@ -106,13 +106,13 @@ Wnioski spoza dosłownej treści kart (oznaczone): „zasilacz z zestawu nie ma 
 
 | PN | Slug | Zgodność | Cena netto | Stan |
 |---|---|---|---|---|
-| GAA6E5 | getac-zasilacz-65w-gaa6e5 | S510, S510AD, V120 | 322,68 | available |
+| GAA6E5 | getac-zasilacz-65w-gaa6e5 | S510, S510AD, V120; tablety UX10 G5, F110 G7, F120, G140 | 322,68 | available |
 | GAA9E6 | getac-zasilacz-90w-gaa9e6 | S410 G5, S510, S510AD | 404,37 | available |
 | GAA9E7 | getac-zasilacz-90w-gaa9e7 | B360 | 404,37 | unavailable |
 | GAA3E2 | getac-zasilacz-120w-gaa3e2 | B360, S410 G5 | 461,55 | unavailable |
-| GAAGE5 | getac-zasilacz-mil-std-461-gaage5 | B360, V120 | 1 454,10 | unavailable |
-| GAT1E1 | getac-zasilacz-usb-c-100w-gat1e1 | B360, S410 G5, V120 | 322,68 | unavailable |
-| GAD2X8 | getac-zasilacz-samochodowy-gad2x8 | B360, V120, S410 G5, S510, S510AD | 404,37 | available |
+| GAAGE5 | getac-zasilacz-mil-std-461-gaage5 | B360, V120; tablety F110 G7, F120, G140 | 1 454,10 | unavailable |
+| GAT1E1 | getac-zasilacz-usb-c-100w-gat1e1 | B360, S410 G5, V120; tablety UX10 G5, F110 G7, F120 | 322,68 | unavailable |
+| GAD2X8 | getac-zasilacz-samochodowy-gad2x8 | B360, V120, S410 G5, S510, S510AD; tablety UX10 G5, F110 G7, F120, G140 | 404,37 | available |
 | GBM6X9 | getac-bateria-gbm6x9 | S510, S510AD | 526,91 | on-order |
 | GBM4X5 | getac-bateria-gbm4x5 | B360 | 322,68 | unavailable |
 | GBM6X6 | getac-bateria-gbm6x6 | S410 G5 | 526,91 | available |
@@ -122,7 +122,7 @@ Wnioski spoza dosłownej treści kart (oznaczone): „zasilacz z zestawu nie ma 
 | GCMCEJ | getac-ladowarka-2-gniazdowa-gcmcej | S410 G5 (2 baterie główne) | 1 548,04 | unavailable |
 | GCECEQ | getac-ladowarka-8-gniazdowa-gceceq | S510, S510AD | 4 893,29 | unavailable |
 | GCECES | getac-ladowarka-8-gniazdowa-gceces | B360 | 4 897,37 | unavailable |
-| GCECET | getac-ladowarka-8-gniazdowa-gcecet | V120 | 4 893,29 | unavailable |
+| GCECET | getac-ladowarka-8-gniazdowa-gcecet | V120; tablety F120, G140 | 4 893,29 | unavailable |
 | GCECEM | getac-ladowarka-8-gniazdowa-gcecem | S410 G5 | 4 893,29 | unavailable |
 | GDODEB | getac-stacja-biurkowa-gdodeb | B360 | 1 343,82 | unavailable |
 | GDODE4 | getac-stacja-biurkowa-gdode4 | S410 G5 | 1 180,43 | unavailable |
@@ -130,9 +130,8 @@ Wnioski spoza dosłownej treści kart (oznaczone): „zasilacz z zestawu nie ma 
 | GMPFXP | getac-folia-ochronna-gmpfxp | B360 | 138,87 | available |
 | GMPFXN | getac-folia-ochronna-gmpfxn | S410 G5 | 138,87 | unavailable |
 | GMPSXE | getac-rysik-pojemnosciowy-gmpsxe | S410 G5 (przewodnik bez MOQ) | 110,28 | available |
-| GMS2X8 | getac-pasek-na-ramie-gms2x8 | V120 | 114,37 | available |
+| GMS2X8 | getac-pasek-na-ramie-gms2x8 | V120; tablety UX10 G5, F110 G7, F120, K120 G3, G140, ZX10 G2 | 114,37 | available |
 | GMHDX7 | getac-uchwyt-gmhdx7 | V120 | 93,94 | unavailable |
-| GMHDXD | getac-uchwyt-twardy-gmhdxd | V120 (część zapasowa; w zestawie V120) | 175,64 | unavailable |
 
 Ładowarka 2-gniazdowa S410: przewodnik ma dwie wersje — GCMCEK (bateria główna + bateria kieszeni multimedialnej) i GCMCEJ (2 baterie główne). Wybrano GCMCEJ, bo pasuje do zapasowych baterii głównych GBM6X6.
 
@@ -156,6 +155,7 @@ Zgodność zmieniona w trzech miejscach (wiersz „Zgodność”, `relatedProduc
 - GMPFXS i GMHSX9 (Jarltech przy V120; przewodnik V120 podaje GMPFXY i GMHSXG), GMPDX6 przy V120 (PN V120 w ofercie bez digitizera).
 - Nieznane API: GMHSXG (pasek na rękę V120), GMCAX1 (kabel USB-C S510AD).
 - Stacje pojazdowe Gamber-Johnson, Havis, PMT — bez PN Getac w przewodnikach.
+- GMHDXD (twardy uchwyt V120, 175,64 zł) — karta usunięta po audycie 23.10.2026: przewodnik V120: „This hard handle is a factory-installed option”, a wersje V120 w ofercie mają ten uchwyt w zestawie (Jarltech: „hard handle”). Zdjęcie `GMHDXD.png` usunięte.
 
 ## 6. Zdjęcia
 
@@ -164,7 +164,7 @@ Płótno 1200 × 800, białe tło (jak tablety Getac), `scripts/obrob-zdjecia.py
 
 | Model | Zdjęcie główne (źródło) | Wypełnienie szer. × wys. | Pozostałe ujęcia |
 |---|---|---|---|
-| S510AD | getac.com S510AD_01-2 (550 px, ×1,72) | 67,9% × 79,8% | Jarltech GE_S510A-d_black_front_left_shop (1600 px), getac.com 02-2, 03-2, 04 |
+| S510AD | getac.com S510AD_01-2 (550 px, ×1,72) | 67,9% × 79,8% | Jarltech GE_S510A-d_black_front_left_shop (1600 px), getac.com 02-2, 04 (03-2 usunięte po audycie: to samo ujęcie co zdjęcie Jarltech, niższa rozdzielczość) |
 | S510 | Jarltech GE_S510_black_front_shop (1600 px) | 68,2% × 80,0% | getac.com S510_02, 03, 04 |
 | B360 (G3) | Jarltech GE_B360_black_front_shop (1600 px) | 66,1% × 80,0% | getac.com B360G3_02, 03 (galeria G3 ma tylko 3 ujęcia, bez zamkniętego) |
 | V120 | getac.com V120_01 (550 px, ×1,96) | 77,7% × 80,0% | Jarltech GE_V120_Front_Right_Shop (1600 px), getac.com 02, 03, 04 |
@@ -175,7 +175,7 @@ Porównanie z kartami tabletów Getac: F120 76,2% × 80,0%, UX10 G5 79,0% × 80,
 ### Akcesoria
 Zdjęcia wyciągnięte z przewodników Getac (800 × 500, maska przezroczystości), płótno 800 × 800, produkt do 84% (jak akcesoria tabletów Getac: GDDSE2 84,0% × 50,4%, GMBCX7 83,9% × 69,2%). 26 kart ze zdjęciem; GCMCEJ bez zdjęcia (logo Getac): kadr w przewodniku S410 ma tylko 248 × 212 px.
 
-Obróbka: GAA6E5 i GAAGE5 — usunięty przewód zasilający z wtyczką US (osobna składowa obrazu); GAA9E6 i GAA9E7 (to samo zdjęcie w przewodnikach) — usunięty przewód z wtyczką US nad zasilaczem; GAD2X8 — wycięta wersja na przewody ze zdjęcia obu wersji; GMS2X8 — wycięty pasek bez sylwetki człowieka i tabletu. Folie (GMPFXP, GMPFXN) i uchwyty (GMHDX7, GMHDXD) pokazują laptop; opis informuje, że laptop nie wchodzi w skład zestawu.
+Obróbka: GAA6E5 i GAAGE5 — usunięty przewód zasilający z wtyczką US (osobna składowa obrazu); GAA9E6 i GAA9E7 (to samo zdjęcie w przewodnikach) — usunięty przewód z wtyczką US nad zasilaczem; GAD2X8 — wycięta wersja na przewody ze zdjęcia obu wersji; GMS2X8 — wycięty pasek bez sylwetki człowieka i tabletu. Folie (GMPFXP, GMPFXN) i uchwyt GMHDX7 pokazują laptop; opis informuje, że laptop nie wchodzi w skład zestawu.
 
 ## 7. Treść kategorii i zmiany w istniejących treściach
 
@@ -207,15 +207,84 @@ Dane spoza karty Getac (oznaczone): PN i konfiguracje, zawartość zestawu, prze
 
 ## 9. Tabele wariantów (build produkcyjny, `next start -p 3148`)
 
-`#warianty .overflow-x-auto`: nadmiar = `scrollWidth − clientWidth` (0 = bez przewijania).
+`#warianty .overflow-x-auto`: nadmiar = `scrollWidth − clientWidth` (0 = bez przewijania). Pomiar po poprawkach z p. 10: klucze w każdej karcie w kolejności Konfiguracja, Łączność, Klawiatura, Wyposażenie (brakujące klucze pominięte).
 
-| Karta | Klucze | 1440 px | 1280 px | 1024 px (zwinięta) | 1024 px (rozwinięte niedostępne) |
-|---|---|---|---|---|---|
-| S510AD | — (1 PN) | 0 | 0 | 0 | — |
-| S410 G5 | Procesor, RAM / SSD, Łączność, Klawiatura, Wyposażenie | 0 | 0 | 33 | 79 |
-| S510 | Procesor, RAM / SSD, Łączność, Wyposażenie, Klawiatura | 0 | 0 | 0 | 79 |
-| B360 | Procesor, RAM / SSD, Łączność, Klawiatura, Wyposażenie | 0 | 0 | 0 | 79 |
-| V120 | Klawiatura | 0 | 0 | 0 | 0 |
-| wzór: UX10 G5 | — | 0 | 0 | 0 | 23 |
+| Karta | Kolumny wariantów | 1440 px (zwinięta / rozwinięta) | 1280 px (zwinięta / rozwinięta) | 1024 px (zwinięta / rozwinięta) |
+|---|---|---|---|---|
+| S510AD | — (1 PN, bez przycisku niedostępnych) | 0 / — | 0 / — | 0 / — |
+| S410 G5 | Konfiguracja, Łączność, Klawiatura, Wyposażenie | 0 / 0 | 0 / 0 | 28 / 70 |
+| S510 | Konfiguracja, Łączność, Klawiatura, Wyposażenie | 0 / 0 | 0 / 0 | 0 / 70 |
+| B360 | Konfiguracja, Łączność, Klawiatura, Wyposażenie | 0 / 0 | 0 / 0 | 0 / 70 |
+| V120 | Klawiatura | 0 / 0 | 0 / 0 | 0 / 0 |
 
-Przy 1024 px szerokość wyznaczają nagłówki z ikoną dymka i stałe kolumny (PN, cena, magazyn, status, przycisk); skrócenie wartości („złącza anten” zamiast „złącza anten zewnętrznych”, układ bez „(QWERTY)”) zmniejsza nadmiar tylko o 4 px. Kolejność kolumn ustala komponent według pierwszego wystąpienia klucza: w S410 G5 i B360 domyślny (pierwszy) PN nie ma „Wyposażenia”, więc kolumna „Klawiatura” stoi przed nią.
+Przed poprawkami (5 kolumn wariantów): 1024 px — S410 G5 33 / 79, S510 0 / 79, B360 0 / 79; wzór UX10 G5: 0 / 23. Przy 1024 px wartości łamią się w kilku wierszach, a nadmiar tworzą stałe kolumny (status i przycisk „Powiadom”; w S410 G5 zwiniętej — przycisk koszyka dostępnej wersji). Komponentu nie zmieniano.
+
+## 10. Poprawki po audytach (23.10.2026)
+
+Audyty: karty laptopów z kartami katalogowymi Getac i akcesoria z przewodnikami (raporty robocze `audyt-laptopy-karty.md`, `audyt-laptopy-akcesoria.md`).
+
+### Karty laptopów
+
+| Karta | Pole | Przed | Po |
+|---|---|---|---|
+| S410 G5, S510, B360 | warianty i dymki | klucze „Procesor” i „RAM / SSD”, np. „Core i5” + „16 GB / 256 GB”; kolejność zależna od pierwszego PN | jeden klucz „Konfiguracja”, np. „Core i5, 16 / 256 GB”; kolejność Konfiguracja, Łączność, Klawiatura, Wyposażenie; jeden dymek „Konfiguracja” |
+| B360 | dymek | „512 GB — w wersjach z procesorem Core Ultra 7.” | „512 GB — w wybranych wersjach z Core Ultra 7.” (BV3164B4BDGX: Core Ultra 7, 256 GB) |
+| S510 | dymek | „… model 165U z technologią Intel vPro Enterprise; ta wersja ma 2 porty Thunderbolt 4.” | „… model 165U z technologią Intel vPro Enterprise.” |
+| S510AD | zdjęcia | 5 zdjęć; -2 i -4 to to samo ujęcie | 4 zdjęcia: -4 usunięte, -5 → -4; opisy: przód, prawa strona, lewa strona, zamknięty |
+| S410 G5, S510, B360 | „Łączność komórkowa”, dymek „Łączność” | „mini-SIM i eSIM” / „nano-SIM i eSIM” | „gniazdo mini-SIM” (S410 G5, B360) albo „gniazdo nano-SIM” (S510); „opcja producenta: dual SIM z eSIM” |
+| S510AD, V120 | „Łączność komórkowa” | „opcja producenta: 4G LTE albo 5G Sub-6 ze zintegrowanym GPS, nano-SIM i eSIM” | „opcje producenta: 4G LTE albo 5G Sub-6 ze zintegrowanym GPS i gniazdem nano-SIM, dual SIM z eSIM” |
+| S410 G5, S510 | FAQ portów | „… RS-232 i VGA albo złącza anten zewnętrznych.” | „Wybrane wersje mają port RS-232 i wyjście VGA (S510: i drugi port LAN 2,5 Gb/s). Wybrane wersje mają złącza anten zewnętrznych.” |
+| S410 G5 | PN | 6 PN, w tym ST2D6A34JRXX (5G) | 5 PN; ST2D6A34JRXX pominięty (p. 3) |
+| S410 G5 | „Wyświetlacz” | „… czytelny w słońcu (w wersji z 5G: HD albo FHD, zależnie od konfiguracji)” | „… czytelny w słońcu” |
+| S410 G5 | teksty o 5G | short: „Wersje z 4G LTE lub 5G oraz z portami RS-232 i VGA.”; opis: „łącznością 4G LTE albo 5G z GPS”; spec.: „4G LTE albo 5G Sub-6 …, zależnie od PN”; GPS: „W modułach 4G LTE i 5G”; dymek: „4G LTE albo 5G” | „Wersja z 4G LTE i wersje z portami RS-232 i VGA.”; „łącznością 4G LTE z GPS”; „4G LTE ze zintegrowanym GPS i gniazdem mini-SIM, zależnie od PN; opcje producenta: 5G Sub-6, dual SIM z eSIM”; „W module 4G LTE”; „4G LTE, GPS”. Filtr „Łączność komórkowa” bez zmian (S410 G5 ma wersję z 4G LTE); seoDescription bez 5G i bez usuniętego PN |
+| S410 G5, S510, S510AD; V120 | opis i FAQ temperatury | „wytrzymuje upadek z 0,9 m” / „z 1,2 m” | „… (wynik zależy od konfiguracji i akcesoriów)”; B360: 1,8 m bez zmian |
+| B360, V120 | shortDescription | „… i 2 bateriami wymienianymi bez wyłączania” | „Pracuje na 2 bateriach; jedną wymienia się bez wyłączania (LifeSupport).” |
+| S410 G5, S510 | nazwy wariantów | „rS-232” (ST2D6AQ3JDXI, ST4N6CQ3JJXI, SU1D6A34SDX5) | „RS-232” |
+| S510AD | „GPS” | „Opcja producenta: w modułach 4G LTE i 5G albo dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS)” | „Opcja producenta: GPS w modułach 4G LTE i 5G (GPS, GLONASS, Galileo, BeiDou, QZSS) albo dedykowany GPS L1/L5” (przypis VIII karty stoi przy 4G/5G; w V120 przypis VII stoi przy dedykowanym GPS — bez zmian) |
+| S510 | „Aparaty” | „Przednia kamera 5 MP albo kamera Windows Hello 5 MP, zależnie od PN; wybrane PN bez kamery” | „Przednia kamera 5 MP, zależnie od PN (wybrane PN bez kamery); opcja producenta: kamera Windows Hello” |
+| S410 G5, S510, S510AD | gwarancja (spec., opis, FAQ) | „3 lata (gwarancja ograniczona, bez przypadkowych uszkodzeń)”; „nie obejmuje przypadkowych uszkodzeń” | „3 lata gwarancji ograniczonej (limited warranty)” |
+| B360, V120 | gwarancja (spec.) | „3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami” | „3 lata Bumper-to-Bumper, także przy przypadkowych uszkodzeniach” |
+| B360, V120 | C1D2 | „Opcja w wybranych konfiguracjach: …” | „Opcja w wybranych konfiguracjach i warunkach środowiskowych: …” |
+| wszystkie | FAQ portów i akcesoriów | wyliczenia 26–37 słów w jednym zdaniu | 2–3 krótsze zdania (do 25 słów) |
+| S510 | seoDescription | 162 znaki („…, IP53, 4G/5G. …”) | 155 znaków (bez „4G/5G”) |
+
+### Akcesoria
+
+| PN | Przed | Po |
+|---|---|---|
+| GAAGE5 | wejście „100–240 V AC, 50–60 Hz, 1,5 A”; wymiary 147 × 73 × 45,5 mm; 750 g; przewody 1830/1200 mm (dane tylko z przewodnika V120; B360, F110, F120, G140: 1,6 A, 170 × 75 × 45 mm, 880 g, 1530/1800 mm) | wejście „100–240 V AC” (karty B360 G3 i V120); wyjście 19 V, 4,74 A, 90 W (wszystkie przewodniki); bez wymiarów, masy, przewodów i prądu wejściowego |
+| GAAGE5 | zgodność B360, V120 | + F110 G7, F120, G140 (przewodniki F110, F120, G140: sekcja „90W MIL-STD-461 AC ADAPTER”); link do karty w opisach tych tabletów |
+| GAA6E5 | S510, S510AD, V120 | + UX10 G5, F110 G7, F120, G140 („65W AC ADAPTER WITH POWER CORD”, te same dane) |
+| GAT1E1 | B360, S410 G5, V120 | + UX10 G5, F110 G7, F120 („100W TYPE-C AC ADAPTER”) |
+| GAD2X8 | 5 laptopów | + UX10 G5, F110 G7, F120, G140 („GAD2X8 (Bare Wire Version)”) |
+| GCECET | V120 | + F120, G140 („Support main batteries and high-capacity batteries”); „floty laptopów” → „floty urządzeń”; link do GCECET w kartach baterii GBM2X4 i GBM3X8 |
+| GMS2X8 | V120 | + UX10 G5, F110 G7, F120, K120 G3, G140, ZX10 G2 („SHOULDER STRAP 2-POINT”); opis „do obudowy urządzenia” |
+| GAA6E5, GAAGE5, GAT1E1, GAD2X8, GCECET, GMS2X8 | znacznik `akcesoria-do-laptopow` | `akcesoria-do-tabletow` + `akcesoria-do-laptopow`; `relatedAccessories` tabletów: dotychczasowe, nowe na końcu |
+| GAD2X4 | „W zestawie jest wersja z wtykiem zapalniczki.” | zdanie usunięte (nazwa i opis: „Wersja GAD2X4 ma wtyk do gniazda zapalniczki”) |
+| GBM4X5 | „Bateria litowo-jonowa, 3S1P” | „Bateria litowo-jonowa” (3S1P sprzeczne z 7,72 V) |
+| GMHDXD | karta „część zapasowa” | karta, zdjęcie i powiązanie z V120 usunięte (p. 5, Pominięte); FAQ V120: „uchwyt GMHDX7” |
+| GMHDX7 | opis | bez zmian: zgodny z przewodnikiem V120 (montaż w uchwytach paska na narożnych odbojach, miejsce na rysik). Przewodnik nie mówi o zgodności z fabrycznym twardym uchwytem, więc karta o tym nie pisze |
+| GMBCX2 | „chroni tablet podczas transportu” | „chroni tablet albo laptop V120 podczas transportu” |
+| GBS6X1 | brak warunku ładowania | „Ładowarki GCMCEJ i GCECEM nie ładują tej baterii.” (przewodnik S410: GCMCEJ „Two Main Batteries”, GCECEM „Main Batteries Only”; GCMCEK spoza oferty bez linku) |
+
+### Treść kategorii, filtr i llms.txt
+
+| Miejsce | Przed | Po |
+|---|---|---|
+| poradnik „Ekran” | „V120 ma ekran 12,2″, a B360 13,3″ w mniejszej obudowie.” | „V120 ma ekran 12,2″ i najmniejszą obudowę (302 × 224 mm). B360 ma ekran 13,3″.” |
+| tabela, S410 G5 | „wersje z 4G LTE albo 5G; … bateria 6900 mAh i kieszeń na drugą baterię” | „wersja z 4G LTE; … bateria 6900 mAh; kieszeń multimedialna na dodatkową baterię 4200 mAh” |
+| tabela B360 i V120, definicja, FAQ | „2 baterie wymieniane bez wyłączania” | „2 baterie; jedną wymienia się bez wyłączania (LifeSupport)” |
+| definicja, FAQ 1 | „Ekran ma jasność 1000–1400 nitów …” | „Laptopy Getac w ofercie mają ekrany 1000–1400 nitów, czytelne w słońcu …” |
+| FAQ 1 | „Laptopy biurowe zwykle nie mają klasy szczelności ani certyfikatów MIL-STD.” | „Laptopy biurowe zwykle nie mają klasy szczelności IP i nie są przeznaczone do pracy w deszczu, pyle i mrozie.” |
+| gwarancja serii S (tabela, poradnik, „Co sprawdzić”, FAQ, dymek filtra „Klasa odporności”, llms.txt) | „bez przypadkowych uszkodzeń” / „ich nie obejmuje” | „3 lata gwarancji ograniczonej (limited warranty)”; B360 i V120: „także przy przypadkowych uszkodzeniach” |
+| poradnik „Porty i łączność” | „Modem 4G LTE albo 5G z GPS mają wybrane wersje B360, S410 G5 i S510.” | „Modem 4G LTE z GPS mają wybrane wersje B360, S410 G5 i S510, a modem 5G — wybrane wersje S510.” |
+| `longDescription` | 90 słów, ze zdaniem „Laptopy w ofercie pracują w temperaturze od −29°C do +63°C.” | 80 słów, bez tego zdania („Używa się go …”, „Współpracuje …”) |
+| `seoDescription` kategorii | „… S410, S510 i S510AD …” | „… S410 G5, S510 i S510AD …” |
+| llms.txt | S410 G5: „i 5 innych”, „wersje z 4G LTE albo 5G z GPS”; „uchwyty do V120” | „i 4 inne”, „wersja z 4G LTE i GPS”; „uchwyt do V120” |
+| S510 Wi-Fi | „Wi-Fi 6E albo Wi-Fi 7, zależnie od konfiguracji” | bez zmian (modułu nie da się potwierdzić) |
+
+### Weryfikacja
+
+- Zmienione zdania porównane ponownie z kartami Getac (S410 G5, S510, S510AD, B360 G3, V120) i przewodnikami akcesoriów (B360, S410, S510, S510AD, V120, UX10, F110, F120, K120, G140, ZX10). Każda dopisana para tablet–akcesorium ma sekcję z SKU w przewodniku tabletu; żadnej pary nie pominięto.
+- `npm run build` (OK), `npx tsc --noEmit` (0 błędów), `node scripts/check-product-images.mjs` (wszystkie pliki na miejscu).
+- `next start -p 3148`: 5 kart laptopów, kategoria, karty zmienionych akcesoriów i tabletów — 200; `/produkt/getac-uchwyt-twardy-gmhdxd` — 404 (karta usunięta). Pomiary tabel w p. 9.
