@@ -39,6 +39,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
   const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
+    'laptopy-przemyslowe': {
+      src: '/images/laptopy-przemyslowe-hero-v2.webp',
+      alt: 'Otwarty laptop przemysłowy w błotnistym terenie, w deszczu i rozbryzgach mokrej ziemi',
+      lead: 'Laptopy przemysłowe do pracy w terenie, serwisie, pojazdach i na produkcji. Dobierz wielkość ekranu, wydajność, porty oraz łączność. Sprawdź odporność i zakres temperatur pracy wybranego modelu.',
+    },
     'materialy-eksploatacyjne': {
       src: '/images/materialy-eksploatacyjne-hero-v1.webp',
       alt: 'Rolki etykiet, czarna taśma termotransferowa, kolorowa taśma do druku kart, karty PVC i opaska identyfikacyjna',
