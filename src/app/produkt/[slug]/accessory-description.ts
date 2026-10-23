@@ -26,7 +26,8 @@ export function getAccessoryDescriptionBlock(text: string) {
         })
       } else devices.push(product)
     }
-    return pn ?? product.name
+    // Urządzenie (np. terminal) ma w „Part Number” listę PN wszystkich wersji — w zdaniu zostaje jego nazwa
+    return product.categoryId === 'akcesoria' ? (pn ?? product.name) : label
   })
   const linksOnly = text.trim().split('\n').every(line => /^\s*- \[[^\]]+\]\(\/produkt\/[^)]+\)$/.test(line))
   return { prose: linksOnly && seen.size ? '' : prose, accessories, devices }
