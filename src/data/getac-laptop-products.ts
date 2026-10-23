@@ -412,8 +412,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 10407.43,
         "availability": "available",
         "attributes": {
-          "Procesor": "Core i5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core i5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -424,8 +423,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12776.46,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core i5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core i5, 16 / 256 GB",
           "Łączność": "5G, GPS",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -436,8 +434,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 9186.15,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core i5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core i5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "UK (QWERTY)"
         }
@@ -448,8 +445,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 10207.28,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core i5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core i5, 16 / 512 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "UK (QWERTY)"
         }
@@ -460,11 +456,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 11261.1,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core i5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core i5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "RS-232 i VGA",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "RS-232 i VGA"
         }
       },
       {
@@ -473,20 +468,18 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 14859.58,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core i7",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core i7, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "RS-232 i VGA, złącza anten zewnętrznych",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "RS-232 i VGA, złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
-      "Procesor": "Procesor Intel Core 13. generacji.\n\n• Core i5 — model i5-1340P, do 4,6 GHz.\n\n• Core i7 — model i7-1360P, do 5,0 GHz.",
-      "RAM / SSD": "Pamięć operacyjna DDR5 i wymienny dysk SSD PCIe NVMe.\n\n• 512 GB — w wersji UK z Wi-Fi i w wersji z procesorem Core i7.",
+      "Konfiguracja": "Procesor Intel Core 13. generacji, pamięć DDR5 i wymienny dysk SSD PCIe NVMe.\n\n• Core i5 — model i5-1340P, do 4,6 GHz.\n\n• Core i7 — model i7-1360P, do 5,0 GHz.\n\n• 512 GB — w wersji UK z Wi-Fi i w wersji z procesorem Core i7.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja S410 G5 ma Wi-Fi 6E i Bluetooth 5.3.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; mini-SIM i eSIM, GPS w module.",
-      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• RS-232 i VGA — port szeregowy i wyjście VGA.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN.",
-      "Klawiatura": "Układ klawiszy.\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki."
+      "Klawiatura": "Układ klawiszy.\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki.",
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• RS-232 i VGA — port szeregowy i wyjście VGA.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -723,11 +716,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 11600.11,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "US (QWERTY)"
+          "Klawiatura": "US (QWERTY)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -736,11 +728,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 11600.11,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -749,11 +740,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12948.02,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -762,11 +752,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12613.08,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem"
         }
       },
       {
@@ -775,11 +764,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12809.14,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7 vPro",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 7 vPro, 16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Kamera 5 MP, RS-232, VGA i drugi LAN",
-          "Klawiatura": "UK (QWERTY)"
+          "Klawiatura": "UK (QWERTY)",
+          "Wyposażenie": "Kamera 5 MP, RS-232, VGA i drugi LAN"
         }
       },
       {
@@ -788,11 +776,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 10407.43,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "RS-232, VGA i drugi LAN",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "RS-232, VGA i drugi LAN"
         }
       },
       {
@@ -801,11 +788,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 11600.11,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -814,11 +800,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 14169.3,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "32 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 32 / 512 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, druga bateria",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, druga bateria"
         }
       },
       {
@@ -827,11 +812,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12613.08,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem"
         }
       },
       {
@@ -840,11 +824,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12948.02,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -853,11 +836,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 14210.14,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 512 GB",
           "Łączność": "5G, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP"
         }
       },
       {
@@ -866,11 +848,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 12809.14,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7 vPro",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 7 vPro, 16 / 256 GB",
           "Łączność": "Wi-Fi",
-          "Wyposażenie": "Kamera 5 MP, RS-232, VGA i drugi LAN",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Kamera 5 MP, RS-232, VGA i drugi LAN"
         }
       },
       {
@@ -879,11 +860,10 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 14655.36,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 7, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, RS-232, VGA i drugi LAN, złącza anten zewnętrznych",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, RS-232, VGA i drugi LAN, złącza anten zewnętrznych"
         }
       },
       {
@@ -892,20 +872,18 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 15472.27,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 7, 16 / 512 GB",
           "Łączność": "5G, GPS",
-          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, złącza anten zewnętrznych",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Ekran dotykowy z rysikiem, kamera 5 MP, złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
-      "Procesor": "Procesor Intel Core Ultra serii 1 z układem NPU Intel AI Boost.\n\n• Core Ultra 7 vPro — model 165U z technologią Intel vPro Enterprise; ta wersja ma 2 porty Thunderbolt 4.",
-      "RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe.\n\n• 32 GB RAM — w wersji z drugą baterią.",
+      "Konfiguracja": "Procesor Intel Core Ultra serii 1 z układem NPU Intel AI Boost, pamięć DDR5 i dysk SSD PCIe NVMe.\n\n• Core Ultra 7 vPro — model 165U z technologią Intel vPro Enterprise.\n\n• 32 GB RAM — w wersji z drugą baterią.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja S510 ma Wi-Fi i Bluetooth.\n\n• 4G LTE albo 5G — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM, GPS w module.",
-      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Ekran dotykowy z rysikiem — pojemnościowy ekran LumiBond; rysik w zestawie.\n\n• Kamera 5 MP — przednia kamera nad ekranem.\n\n• RS-232, VGA i drugi LAN — port szeregowy, wyjście VGA i drugi port LAN 2,5 Gb/s.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN.\n\n• Druga bateria — 2 baterie 6900 mAh.",
-      "Klawiatura": "Układ klawiszy.\n\n• US (QWERTY) — układ używany w Polsce (polski programisty).\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki."
+      "Klawiatura": "Układ klawiszy.\n\n• US (QWERTY) — układ używany w Polsce (polski programisty).\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki.",
+      "Wyposażenie": "Elementy dostępne tylko w wybranych wersjach.\n\n• Ekran dotykowy z rysikiem — pojemnościowy ekran LumiBond; rysik w zestawie.\n\n• Kamera 5 MP — przednia kamera nad ekranem.\n\n• RS-232, VGA i drugi LAN — port szeregowy, wyjście VGA i drugi port LAN 2,5 Gb/s.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN.\n\n• Druga bateria — 2 baterie 6900 mAh."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1140,8 +1118,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 15680.58,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "US (QWERTY)"
         }
@@ -1152,8 +1129,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 15680.58,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "UK (QWERTY)"
         }
@@ -1164,8 +1140,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 15680.58,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -1176,8 +1151,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 17028.48,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 5",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 5, 16 / 256 GB",
           "Łączność": "4G LTE, GPS",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -1188,8 +1162,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 16697.63,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7",
-          "RAM / SSD": "16 GB / 256 GB",
+          "Konfiguracja": "Core Ultra 7, 16 / 256 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -1200,8 +1173,7 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 17718.77,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 7, 16 / 512 GB",
           "Łączność": "Wi-Fi",
           "Klawiatura": "DE (QWERTZ)"
         }
@@ -1212,20 +1184,18 @@ export const getacLaptopProducts: Product[] = [
         "priceFrom": 19148.36,
         "availability": "unavailable",
         "attributes": {
-          "Procesor": "Core Ultra 7",
-          "RAM / SSD": "16 GB / 512 GB",
+          "Konfiguracja": "Core Ultra 7, 16 / 512 GB",
           "Łączność": "4G LTE, GPS",
-          "Wyposażenie": "Złącza anten zewnętrznych",
-          "Klawiatura": "DE (QWERTZ)"
+          "Klawiatura": "DE (QWERTZ)",
+          "Wyposażenie": "Złącza anten zewnętrznych"
         }
       }
     ],
     "variantAttributeTooltips": {
-      "Procesor": "Procesor Intel Core Ultra serii 2 z układem NPU Intel AI Boost.\n\n• Core Ultra 7 — w wersjach z klawiaturą DE.",
-      "RAM / SSD": "Pamięć operacyjna DDR5 i dysk SSD PCIe NVMe.\n\n• 512 GB — w wersjach z procesorem Core Ultra 7.",
+      "Konfiguracja": "Procesor Intel Core Ultra serii 2 z układem NPU Intel AI Boost, pamięć DDR5 i dysk SSD PCIe NVMe.\n\n• Core Ultra 7 — w wersjach z klawiaturą DE.\n\n• 512 GB — w wybranych wersjach z Core Ultra 7.",
       "Łączność": "Sposób połączenia z siecią. Każda wersja B360 ma Wi-Fi 7 i Bluetooth 5.4.\n\n• 4G LTE, GPS — praca poza zasięgiem Wi-Fi; mini-SIM i eSIM, GPS w module.",
-      "Wyposażenie": "Element dostępny tylko w wybranej wersji.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN.",
-      "Klawiatura": "Układ klawiszy.\n\n• US (QWERTY) — układ używany w Polsce (polski programisty).\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki."
+      "Klawiatura": "Układ klawiszy.\n\n• US (QWERTY) — układ używany w Polsce (polski programisty).\n\n• UK (QWERTY) — inne położenie @, \" i Enter.\n\n• DE (QWERTZ) — zamienione Y i Z, niemieckie znaki.",
+      "Wyposażenie": "Element dostępny tylko w wybranej wersji.\n\n• Złącza anten zewnętrznych — dla anten GPS, WWAN i WLAN."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
