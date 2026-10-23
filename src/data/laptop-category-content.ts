@@ -65,7 +65,7 @@ export const laptopCategoryContent: SubcategoryRichContent = {
       "Klawiatura — laptopy są w ofercie z układem US (QWERTY, odpowiada układowi polskiemu programisty), UK albo DE (QWERTZ). Układ wybiera się w tabeli wersji na karcie produktu. S410 G5 jest w ofercie z układem DE albo UK, a S510AD z układem DE.",
       "Baterie — B360 i V120 pracują na 2 bateriach. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). S410 G5, S510 i S510AD mają wymienną baterię 6900 mAh. S410 G5 mieści dodatkową baterię 4200 mAh w kieszeni multimedialnej.",
       "Porty i łączność — każda wersja B360 ma port RS-232 i wyjście VGA, a V120 port RS-232. W S410 G5 i S510 te porty mają wybrane wersje. Modem 4G LTE z GPS mają wybrane wersje B360, S410 G5 i S510, a modem 5G — wybrane wersje S510.",
-      "MIL-STD-461G — B360 i V120 spełniają tę normę z [zasilaczem MIL-STD-461 90 W GAAGE5](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanym osobno."
+      "MIL-STD-461G — B360 i V120 spełniają tę normę z zasilaczem MIL-STD-461 90 W GAAGE5, sprzedawanym osobno."
     ]
   },
   "expertAuthority": "Dobór zaczyna się od warunków pracy: upadki, deszcz, pył i praca w pojeździe. Następnie wybiera się rozmiar ekranu, porty potrzebne do urządzeń, np. RS-232, oraz łączność 4G LTE albo 5G. Ostatni krok to układ klawiatury i akcesoria: zapasowe baterie, ładowarki, zasilacz samochodowy i stacja dokująca. Karta produktu podaje PN każdej wersji, cenę netto, stan magazynowy i kartę katalogową PDF.",
