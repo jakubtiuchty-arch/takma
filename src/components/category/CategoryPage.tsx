@@ -50,7 +50,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
       lead: 'Drukarki POS do paragonów niefiskalnych, bonów kuchennych i potwierdzeń sprzedaży. Wybierz papier 58 lub 80 mm i połączenie dopasowane do programu kasowego. Urządzenia te nie zastępują kasy ani drukarki fiskalnej.',
     },
     'kioski-samoobslugowe': {
-      src: '/images/kioski-samoobslugowe-hero-v2.webp',
+      src: '/images/kioski-samoobslugowe-hero-v3.webp',
       alt: 'Kiosk samoobsługowy SUNMI z pionowym ekranem na ciemnym kamiennym podium',
       lead: 'Kioski samoobsługowe do zamawiania w restauracji i zakupów w sklepie. Klient wybiera produkty na ekranie dotykowym. Dobierz stojak i moduły oraz program kiosku zgodny z programem sprzedaży. Płatności wymagają obsługi przez program i operatora.',
     },
