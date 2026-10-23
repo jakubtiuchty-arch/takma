@@ -7,9 +7,9 @@ export const getacLaptopProducts: Product[] = [
     "name": "Getac S510AD",
     "seoH1": "Getac S510AD",
     "seoTitle": "Laptop przemysłowy Getac S510AD 15,6″ z Windows 11 Pro, IP53",
-    "seoDescription": "Laptop przemysłowy Getac S510AD 15,6″, AMD Ryzen AI 5 340, Copilot+ PC, Wi-Fi 7, 1000 nitów, IP53. Laptop rugged Getac S510AD. S510AD Getac PN: SX176A34SDXX.",
-    "shortDescription": "Getac S510AD — laptop rugged 15,6″ z Windows 11 Pro, procesorem AMD Ryzen AI 5 340 z układem NPU do 50 TOPS, ekranem 1000 nitów, Wi-Fi 7, kamerą Windows Hello i klasą szczelności IP53. Komputer Copilot+ PC.",
-    "description": "Getac S510AD to laptop przemysłowy z ekranem 15,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w serwisie, w pojazdach, na produkcji i w magazynie. Obudowa ma klasę szczelności IP53 oraz certyfikat MIL-STD-810H. Laptop wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów) i pracuje w temperaturze od −29°C do +63°C.\n\nProcesor AMD Ryzen AI 5 340 ma układ NPU AMD XDNA 2 o wydajności do 50 TOPS, a laptop jest komputerem Copilot+ PC. Wersja w ofercie ma 16 GB RAM DDR5 i dysk SSD 256 GB. Ekran Full HD ma jasność 1000 nitów. Kamera Windows Hello 5 MP pozwala logować się rozpoznawaniem twarzy.\n\nLaptop ma Wi-Fi 7, Bluetooth 5.4, port USB4 Type-C, 2 porty USB-A, port LAN, port HDMI 2.0 i złącze stacji dokującej. Pracuje na wymiennej baterii 6900 mAh. Klawiatura jest podświetlana i ma układ niemiecki (QWERTZ).\n\nLaptop ma 3 lata gwarancji ograniczonej (limited warranty).\n\nTen sam ekran 15,6 cala z procesorami Intel Core Ultra ma [Getac S510](/produkt/getac-s510).",
+    "seoDescription": "Getac S510AD — laptop rugged 15,6″ z AMD Ryzen AI 5 340, Copilot+ PC, Wi-Fi 7 i USB4. Laptop przemysłowy S510AD Getac. PN: SX176A34SDXX (klawiatura DE).",
+    "shortDescription": "Getac S510AD — laptop 15,6″ Copilot+ PC z AMD Ryzen AI 5 340 (NPU do 50 TOPS), kamerą Windows Hello, Wi-Fi 7 i portem USB4. Ekran 1000 nitów, obudowa IP53.",
+    "description": "Getac S510AD to laptop z ekranem 15,6 cala i procesorem AMD Ryzen AI 5 340, który jest komputerem Copilot+ PC. Układ NPU AMD XDNA 2 ma wydajność do 50 TOPS. Funkcje AI, np. diagnostyka i automatyzacja zadań, działają lokalnie, także bez dostępu do sieci. Zastosowania obejmują motoryzację, energetykę i serwis terenowy.\n\nW odróżnieniu od S510 z procesorem Intel model ma w standardzie kamerę Windows Hello 5 MP do logowania twarzą oraz port USB4. Dane chronią też TPM 2.0 i Getac Secure Erase. Ekran Full HD (1000 nitów) jest czytelny w słońcu.\n\nWersja w ofercie, SX176A34SDXX, ma pamięć 16 GB DDR5, dysk SSD 256 GB, Wi-Fi 7 i Bluetooth 5.4. Klawiatura jest podświetlana i ma układ niemiecki (QWERTZ). Obok USB4 laptop ma 2 porty USB-A, port LAN 1 Gb/s, HDMI 2.0 i złącze dokowania. Zasila go jedna wymienna bateria 6900 mAh.\n\nLaptop ma klasę szczelności IP53 i certyfikat MIL-STD-810H. Odporność na upadek wynosi 0,9 m, przy czym wynik zależy od konfiguracji i akcesoriów. Producent udziela 3 lat gwarancji ograniczonej (limited warranty).\n\nTen sam ekran 15,6 cala z procesorami Intel Core Ultra ma [Getac S510](/produkt/getac-s510).",
     "categoryId": "laptopy-przemyslowe",
     "subcategoryIds": [
       "laptopy-przemyslowe"
@@ -207,31 +207,27 @@ export const getacLaptopProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki układ klawiatury ma Getac S510AD?",
-        "answer": "Wersja w ofercie (SX176A34SDXX) ma podświetlaną klawiaturę w układzie niemieckim QWERTZ: litery Y i Z są zamienione, a część klawiszy ma niemieckie znaki. W Windows można włączyć układ polski (programisty), ale nadruk na klawiszach pozostaje niemiecki. O konfigurację z innym układem prosimy pytać przed zamówieniem."
+        "answer": "Wersja w ofercie ma podświetlaną klawiaturę w układzie niemieckim QWERTZ: litery Y i Z są zamienione, a część klawiszy ma niemieckie znaki. W Windows można włączyć układ polski (programisty), ale nadruk na klawiszach pozostaje niemiecki. O konfigurację z innym układem prosimy pytać przed zamówieniem."
       },
       {
         "question": "Czy baterię w Getac S510AD można wymienić?",
-        "answer": "Tak. Laptop pracuje na wymiennej baterii 6900 mAh. Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm6x9\">GBM6X9</a>. Ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcep\">GCMCEP</a> ładuje 2 baterie poza laptopem, a <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gceceq\">GCECEQ</a> — 8 baterii. Getac oferuje też konfiguracje z drugą baterią 6900 mAh."
+        "answer": "Tak. Bateria 6900 mAh jest wymienna. Zapasową baterię <a href=\"/produkt/getac-bateria-gbm6x9\">GBM6X9</a> ładują poza laptopem ładowarki GCMCEP (na 2 baterie) i GCECEQ (na 8). Getac oferuje też konfiguracje z drugą baterią 6900 mAh."
       },
       {
         "question": "Jakie porty ma Getac S510AD?",
-        "answer": "Wersja w ofercie ma port USB4 Type-C, port USB 3.2 Gen 2 Type-A i port USB 3.2 Gen 1 Type-A. Ma też port LAN 1 Gb/s, port HDMI 2.0, gniazdo audio i złącze stacji dokującej. Opcje producenta to drugi port USB4, czytnik microSD oraz zestaw z drugim portem LAN 2,5 Gb/s i portem RS-232."
+        "answer": "Wersja w ofercie ma USB4 Type-C, dwa porty USB-A (USB 3.2 Gen 2 i Gen 1), LAN 1 Gb/s, HDMI 2.0, złącze stacji dokującej i gniazdo audio. Opcje producenta to drugi port USB4, czytnik microSD oraz zestaw z drugim portem LAN 2,5 Gb/s i portem RS-232."
       },
       {
-        "question": "W jakiej temperaturze pracuje Getac S510AD?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Laptop ma klasę szczelności IP53, certyfikat MIL-STD-810H i wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów)."
-      },
-      {
-        "question": "Jaką gwarancję ma Getac S510AD?",
-        "answer": "Gwarancja producenta trwa 3 lata. Jest to gwarancja ograniczona (limited warranty)."
+        "question": "Czy Getac S510AD ma ekran dotykowy?",
+        "answer": "Wersja w ofercie ma ekran Full HD 1000 nitów bez funkcji dotyku i touchpad z obsługą wielu palców. Ekran dotykowy LumiBond z obsługą w rękawicach to opcja producenta; taką konfigurację przygotujemy na zapytanie."
       },
       {
         "question": "Jakie akcesoria pasują do Getac S510AD?",
-        "answer": "Pasują zasilacze <a href=\"/produkt/getac-zasilacz-65w-gaa6e5\">65 W GAA6E5</a> i <a href=\"/produkt/getac-zasilacz-90w-gaa9e6\">90 W GAA9E6</a> oraz zasilacze samochodowe 120 W <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x4\">GAD2X4</a> i <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x8\">GAD2X8</a>. Pasuje też stacja dokująca USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100 GDDSE2</a>, bateria GBM6X9, ładowarki baterii i torba <a href=\"/produkt/getac-torba-gmbcx7\">GMBCX7</a>."
+        "answer": "Zasilacze sieciowe: GAA6E5 (65 W) albo GAA9E6 (90 W). Zasilacze samochodowe 120 W: GAD2X4 i GAD2X8. Do pracy przy biurku służy stacja USB-C DS100 GDDSE2, a do przenoszenia torba GMBCX7."
       },
       {
         "question": "Czym Getac S510AD różni się od S510?",
-        "answer": "S510AD ma procesor AMD Ryzen AI 5 340 z układem NPU do 50 TOPS, port USB4 i kamerę Windows Hello w standardzie. Jest komputerem Copilot+ PC. <a href=\"/produkt/getac-s510\">Getac S510</a> ma procesory Intel Core Ultra serii 1, port Thunderbolt 4 i opcjonalny napęd DVD. Oba mają ekran 15,6 cala 1000 nitów, klasę IP53 i baterię 6900 mAh."
+        "answer": "Obudowa, ekran 15,6 cala (1000 nitów), klasa IP53 i bateria 6900 mAh są wspólne. Różni je platforma: S510AD to Copilot+ PC z AMD Ryzen AI (NPU do 50 TOPS), USB4 i kamerą Windows Hello w standardzie. <a href=\"/produkt/getac-s510\">Getac S510</a> ma Intel Core Ultra serii 1, Thunderbolt 4 i kieszeń na opcjonalny napęd DVD."
       }
     ],
     "createdAt": "2026-10-23",
@@ -243,9 +239,9 @@ export const getacLaptopProducts: Product[] = [
     "name": "Getac S410 G5",
     "seoH1": "Getac S410 G5",
     "seoTitle": "Laptop przemysłowy Getac S410 G5 14″ z Windows 11 Pro, IP53",
-    "seoDescription": "Laptop przemysłowy Getac S410 G5 14″, Intel Core i5/i7, ekran dotykowy 1000 nitów, IP53. Laptop rugged Getac S410. S410 Getac PN: ST2D6AQ4JDXX, ST2D6AC3JDXX.",
-    "shortDescription": "Getac S410 G5 — laptop rugged 14″ z Windows 11 Pro, procesorem Intel Core i5 lub i7 13. generacji, ekranem dotykowym 1000 nitów, klawiaturą odporną na zachlapanie i klasą szczelności IP53. Wersja z 4G LTE i wersje z portami RS-232 i VGA.",
-    "description": "Getac S410 G5 to laptop przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Służy do pracy z programami Windows w serwisie, w pojazdach, na produkcji i w magazynie. Obudowa ma klasę szczelności IP53, uszczelnione porty i złącza oraz certyfikat MIL-STD-810H. Laptop wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów) i pracuje w temperaturze od −29°C do +63°C.\n\nProcesory Intel Core i5 i Core i7 13. generacji pracują z 16 GB RAM DDR5 i dyskiem SSD 256 GB albo 512 GB. Ekran dotykowy ma jasność 1000 nitów, a w zestawie jest rysik. Klawiatura jest podświetlana i odporna na zachlapanie.\n\nLaptop ma port Thunderbolt 4, 3 porty USB-A, port LAN, port HDMI 2.0 i złącze stacji dokującej. Pracuje na wymiennej baterii 6900 mAh. Kieszeń multimedialna mieści dodatkową [baterię 4200 mAh](/produkt/getac-bateria-gbs6x1), sprzedawaną osobno. Wersje różnią się procesorem, dyskiem, łącznością 4G LTE z GPS, portami RS-232 i VGA oraz układem klawiatury: DE albo UK.\n\nLaptop ma 3 lata gwarancji ograniczonej (limited warranty).\n\nWiększy ekran 15,6 cala i procesory Intel Core Ultra ma [Getac S510](/produkt/getac-s510).",
+    "seoDescription": "Laptop rugged Getac S410 G5 14″, Intel Core i5/i7, ekran dotykowy 1000 nitów, IP53, RS-232. S410 Getac do pracy w terenie. PN: ST2D6AQ4JDXX, ST2D6AC3JDXX.",
+    "shortDescription": "Getac S410 G5 — najmniejszy laptop Getac serii S w ofercie: 14″ z ekranem dotykowym 1000 nitów, Intel Core 13. generacji, klawiaturą odporną na zachlapanie i kieszenią na dodatkową baterię.",
+    "description": "Getac S410 G5 to laptop z ekranem 14 cali i najmniejszy model serii S w ofercie. Zaprojektowano go z myślą o noszeniu przez jedną osobę w trudnym terenie, z równowagą rozmiaru, masy i wydajności. Używają go wojsko, służby ratownicze, przemysł i energetyka.\n\nEkran dotykowy ma jasność 1000 nitów, a w zestawie jest rysik z linką. Podświetlana klawiatura jest odporna na zachlapanie, a porty i złącza mają uszczelnienia. Obudowa z certyfikatem MIL-STD-810H ma klasę szczelności IP53. Odporność na upadek z 0,9 m zależy od konfiguracji laptopa i użytych akcesoriów.\n\nPracuje na procesorze 13. generacji (Intel Core i5 albo i7) z 16 GB RAM DDR5. Dysk SSD 256 GB albo 512 GB jest wymienny. Laptop pracuje na baterii 6900 mAh. W kieszeni multimedialnej można zamontować dodatkową [baterię 4200 mAh](/produkt/getac-bateria-gbs6x1), sprzedawaną osobno.\n\nKażda wersja ma port Thunderbolt 4, 3 porty USB-A, LAN i HDMI 2.0. Wybrane wersje mają RS-232 i VGA, a jedna także modem 4G LTE z GPS i złącza anten zewnętrznych. Klawiatura ma układ DE albo UK. Gwarancja na S410 G5 jest ograniczona (limited warranty) i trwa 3 lata.\n\nEkran 15,6 cala w serii S mają [Getac S510](/produkt/getac-s510) i [Getac S510AD](/produkt/getac-s510ad).",
     "categoryId": "laptopy-przemyslowe",
     "subcategoryIds": [
       "laptopy-przemyslowe"
@@ -502,27 +498,23 @@ export const getacLaptopProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki układ klawiatury ma Getac S410 G5?",
-        "answer": "Wersje w ofercie mają podświetlaną klawiaturę w układzie DE (QWERTZ) albo UK. Układ DE ma zamienione litery Y i Z oraz niemieckie znaki. Układ UK (QWERTY) ma inne położenie znaków @ i \" oraz klawisza Enter. Wersji z układem US w ofercie nie ma. O konfigurację z innym układem prosimy pytać przed zamówieniem."
+        "answer": "Wersje w ofercie mają podświetlaną klawiaturę w układzie DE (QWERTZ) albo UK. W układzie DE zamienione są Y i Z, a klawisze mają niemieckie znaki. Układ UK (QWERTY) różni się od amerykańskiego położeniem @, \" i kształtem klawisza Enter. Wersji z układem US w ofercie nie ma."
       },
       {
-        "question": "Czy baterię w Getac S410 G5 można wymienić?",
-        "answer": "Tak. Laptop pracuje na wymiennej baterii 6900 mAh. Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm6x6\">GBM6X6</a>. W kieszeni multimedialnej można zamontować dodatkową <a href=\"/produkt/getac-bateria-gbs6x1\">baterię 4200 mAh GBS6X1</a>. Ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcej\">GCMCEJ</a> ładuje 2 baterie główne, a <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gcecem\">GCECEM</a> — 8 baterii głównych."
+        "question": "Do czego służy kieszeń multimedialna w Getac S410 G5?",
+        "answer": "Fabrycznie zamyka ją zaślepka. Można w niej zamontować dodatkową <a href=\"/produkt/getac-bateria-gbs6x1\">baterię 4200 mAh GBS6X1</a>, sprzedawaną osobno. Opcje producenta to napęd DVD albo Blu-ray i czytnik kodów 1D/2D. Z napędem optycznym laptop pracuje od −10°C do +50°C."
+      },
+      {
+        "question": "Jak ładować baterie Getac S410 G5 poza laptopem?",
+        "answer": "Baterię główną <a href=\"/produkt/getac-bateria-gbm6x6\">GBM6X6</a> ładuje ładowarka 2-gniazdowa <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcej\">GCMCEJ</a> albo 8-gniazdowa <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gcecem\">GCECEM</a>. Te ładowarki nie ładują baterii GBS6X1 z kieszeni multimedialnej."
       },
       {
         "question": "Jakie porty ma Getac S410 G5?",
-        "answer": "Każda wersja ma port Thunderbolt 4, 2 porty USB 3.2 Gen 2 Type-A i port USB 3.2 Gen 1 Type-A. Ma też port LAN 1 Gb/s, port HDMI 2.0 i złącze stacji dokującej. Wybrane wersje mają port RS-232 i wyjście VGA. Wybrane wersje mają złącza anten zewnętrznych. Porty i złącza są uszczelnione."
-      },
-      {
-        "question": "W jakiej temperaturze pracuje Getac S410 G5?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Laptop ma klasę szczelności IP53, certyfikat MIL-STD-810H i wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów)."
-      },
-      {
-        "question": "Jaką gwarancję ma Getac S410 G5?",
-        "answer": "Gwarancja producenta trwa 3 lata. Jest to gwarancja ograniczona (limited warranty)."
+        "answer": "Każdy S410 G5 w ofercie ma Thunderbolt 4, trzy porty USB-A (dwa USB 3.2 Gen 2 i jeden Gen 1), port sieciowy LAN 1 Gb/s, wyjście HDMI 2.0 oraz złącze dokowania. Port RS-232 i wyjście VGA mają dwie wersje, a złącza anten zewnętrznych wersja z 4G LTE. Porty i złącza są uszczelnione."
       },
       {
         "question": "Jakie akcesoria pasują do Getac S410 G5?",
-        "answer": "Pasują baterie GBM6X6 i GBS6X1, ładowarki baterii, zasilacze <a href=\"/produkt/getac-zasilacz-90w-gaa9e6\">90 W GAA9E6</a> i <a href=\"/produkt/getac-zasilacz-120w-gaa3e2\">120 W GAA3E2</a> oraz zasilacz USB-C <a href=\"/produkt/getac-zasilacz-usb-c-100w-gat1e1\">100 W GAT1E1</a>. Pasuje też <a href=\"/produkt/getac-stacja-biurkowa-gdode4\">stacja biurkowa GDODE4</a>, stacja dokująca USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100 GDDSE2</a> i zasilacze samochodowe 120 W. Dostępne są też torba <a href=\"/produkt/getac-torba-gmbcx7\">GMBCX7</a>, folia ochronna i rysik."
+        "answer": "Laptop zasilają: 90 W <a href=\"/produkt/getac-zasilacz-90w-gaa9e6\">GAA9E6</a>, 120 W <a href=\"/produkt/getac-zasilacz-120w-gaa3e2\">GAA3E2</a> albo zasilacz USB-C 100 W <a href=\"/produkt/getac-zasilacz-usb-c-100w-gat1e1\">GAT1E1</a>. Przy biurku pracuje w <a href=\"/produkt/getac-stacja-biurkowa-gdode4\">stacji GDODE4</a> albo ze stacją USB-C DS100 GDDSE2. W pojeździe do zasilania służą zasilacze samochodowe 120 W."
       }
     ],
     "createdAt": "2026-10-23",
@@ -534,9 +526,9 @@ export const getacLaptopProducts: Product[] = [
     "name": "Getac S510",
     "seoH1": "Getac S510",
     "seoTitle": "Laptop przemysłowy Getac S510 15,6″ z Windows 11 Pro, IP53",
-    "seoDescription": "Laptop przemysłowy Getac S510 15,6″, Intel Core Ultra, 1000 nitów, IP53. Laptop rugged Getac S510. S510 Getac PN: SU1N6CQSSDXX, SU1N6CQ3SDXX, SU1N6CQ4SDXX.",
-    "shortDescription": "Getac S510 — laptop rugged 15,6″ z Windows 11 Pro, procesorem Intel Core Ultra z układem NPU, ekranem 1000 nitów i klasą szczelności IP53. Wersje z ekranem dotykowym, 4G LTE lub 5G, portami RS-232 i VGA oraz klawiaturą US, UK albo DE.",
-    "description": "Getac S510 to laptop przemysłowy z ekranem 15,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w serwisie, w pojazdach, na produkcji i w magazynie. Obudowa ma klasę szczelności IP53 oraz certyfikat MIL-STD-810H. Laptop wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów) i pracuje w temperaturze od −29°C do +63°C.\n\nProcesory Intel Core Ultra 5 i Core Ultra 7 serii 1 mają układ NPU Intel AI Boost. Wersje w ofercie mają 16 GB albo 32 GB RAM DDR5 i dysk SSD 256 GB albo 512 GB. Ekran Full HD ma jasność 1000 nitów. W większości wersji ekran jest dotykowy, a w zestawie jest rysik.\n\nLaptop ma port Thunderbolt 4, 2 porty USB-A, port LAN, port HDMI 2.0 i złącze stacji dokującej. Pracuje na wymiennej baterii 6900 mAh. Wersje różnią się procesorem, pamięcią, łącznością 4G LTE albo 5G z GPS, portami RS-232 i VGA oraz układem klawiatury: US, UK albo DE.\n\nLaptop ma 3 lata gwarancji ograniczonej (limited warranty).\n\nWersję z procesorem AMD Ryzen AI ma [Getac S510AD](/produkt/getac-s510ad).",
+    "seoDescription": "Getac S510 15,6″ — laptop przemysłowy z Intel Core Ultra i NPU, ekran 1000 nitów, IP53, klawiatura US/UK/DE. Rugged laptop S510 Getac. PN: SU1N6CQSSDXX.",
+    "shortDescription": "Getac S510 — laptop 15,6″ z Intel Core Ultra serii 1 oraz ekranem 1000 nitów, w większości wersji dotykowym. 14 wersji: 4G LTE, 5G, RS-232 z VGA i drugim LAN, klawiatura US, UK albo DE.",
+    "description": "Getac S510 to laptop z dużym ekranem 15,6 cala i procesorami Intel Core Ultra serii 1 z układem NPU Intel AI Boost. Jest przeznaczony dla motoryzacji, policji, przemysłu, energetyki i serwisu terenowego, gdzie potrzebny jest duży ekran poza biurem.\n\nEkran Full HD ma jasność 1000 nitów. W większości wersji jest dotykowy (LumiBond), działa w rękawicach i ma rysik w zestawie. W ofercie jest 14 konfiguracji S510. Różnią się procesorem (Core Ultra 5, Core Ultra 7, Core Ultra 7 vPro), pamięcią 16 GB albo 32 GB, modemem 4G LTE lub 5G i układem klawiatury US, UK albo DE.\n\nWybrane wersje mają port RS-232, wyjście VGA i drugi port LAN 2,5 Gb/s. Każda ma Thunderbolt 4, 2 porty USB-A, LAN, HDMI 2.0 i złącze stacji dokującej. Laptop pracuje na wymiennej baterii 6900 mAh; jedna wersja ma 2 baterie. Kieszeń multimedialna mieści [napęd DVD GSROXC](/produkt/getac-naped-dvd-gsroxc), sprzedawany osobno.\n\nObudowa ma klasę IP53 i certyfikat MIL-STD-810H. Laptop wytrzymuje upadek z 0,9 m; ten wynik zależy od konfiguracji i dołączonych akcesoriów. Getac obejmuje S510 trzyletnią gwarancją ograniczoną (limited warranty).\n\nWersję z procesorem AMD Ryzen AI ma [Getac S510AD](/produkt/getac-s510ad).",
     "categoryId": "laptopy-przemyslowe",
     "subcategoryIds": [
       "laptopy-przemyslowe"
@@ -902,27 +894,23 @@ export const getacLaptopProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki układ klawiatury wybrać w Getac S510?",
-        "answer": "Wersje w ofercie mają podświetlaną klawiaturę w układzie US, UK albo DE. Układ US (QWERTY) odpowiada układowi polskiemu (programisty). Układ UK ma inne położenie znaków @ i \" oraz klawisza Enter. Układ DE (QWERTZ) ma zamienione litery Y i Z oraz niemieckie znaki. Układ wybiera się w tabeli wersji."
+        "answer": "S510 jest dostępny z klawiaturą US, UK albo DE. Układ US odpowiada polskiemu układowi programisty. UK ma inaczej położone @ i \" oraz wyższy Enter, a DE zamienione Y i Z. Wersje z danym układem wskazuje kolumna „Klawiatura” w tabeli wersji."
       },
       {
         "question": "Czy baterię w Getac S510 można wymienić?",
-        "answer": "Tak. Laptop pracuje na wymiennej baterii 6900 mAh, a wersja SU1N7CQ4SDCX ma 2 baterie. Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm6x9\">GBM6X9</a>. Ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcep\">GCMCEP</a> ładuje 2 baterie poza laptopem, a <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gceceq\">GCECEQ</a> — 8 baterii."
+        "answer": "Tak. Laptop ma wymienną baterię 6900 mAh, a wersja z 32 GB RAM ma 2 baterie. Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm6x9\">GBM6X9</a>; poza laptopem ładuje ją ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcep\">GCMCEP</a> albo <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gceceq\">GCECEQ</a> (8 gniazd)."
       },
       {
         "question": "Jakie porty i moduły ma Getac S510?",
-        "answer": "Każda wersja ma port Thunderbolt 4, 2 porty USB 3.2 Gen 2 Type-A, port LAN 1 Gb/s, port HDMI 2.0 i złącze stacji dokującej. Wybrane wersje mają port RS-232, wyjście VGA i drugi port LAN 2,5 Gb/s. Wybrane wersje mają złącza anten zewnętrznych. Kieszeń multimedialna mieści <a href=\"/produkt/getac-naped-dvd-gsroxc\">napęd DVD GSROXC</a>, sprzedawany osobno."
+        "answer": "W standardzie S510 ma Thunderbolt 4, dwa USB 3.2 Gen 2 Type-A, LAN 1 Gb/s, HDMI 2.0 i złącze stacji dokującej. Moduł z RS-232, VGA i drugim portem LAN 2,5 Gb/s mają cztery wersje, a złącza anten zewnętrznych dwie. Kieszeń multimedialna mieści <a href=\"/produkt/getac-naped-dvd-gsroxc\">napęd DVD GSROXC</a>, sprzedawany osobno."
       },
       {
-        "question": "W jakiej temperaturze pracuje Getac S510?",
-        "answer": "Od −29°C do +63°C. Z napędem DVD zakres wynosi od −10°C do +50°C. Temperatura przechowywania wynosi od −51°C do +71°C. Laptop ma klasę szczelności IP53, certyfikat MIL-STD-810H i wytrzymuje upadek z 0,9 m (wynik zależy od konfiguracji i akcesoriów)."
-      },
-      {
-        "question": "Jaką gwarancję ma Getac S510?",
-        "answer": "Gwarancja producenta trwa 3 lata. Jest to gwarancja ograniczona (limited warranty)."
+        "question": "Czy z napędem DVD Getac S510 pracuje w mrozie?",
+        "answer": "Bez napędu laptop pracuje od −29°C do +63°C. Z napędem DVD w kieszeni multimedialnej zakres pracy wynosi od −10°C do +50°C."
       },
       {
         "question": "Jakie akcesoria pasują do Getac S510?",
-        "answer": "Pasują zasilacze <a href=\"/produkt/getac-zasilacz-65w-gaa6e5\">65 W GAA6E5</a> i <a href=\"/produkt/getac-zasilacz-90w-gaa9e6\">90 W GAA9E6</a> oraz zasilacze samochodowe 120 W <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x4\">GAD2X4</a> i <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x8\">GAD2X8</a>. Pasuje też stacja dokująca USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100 GDDSE2</a>, bateria GBM6X9, ładowarki baterii, napęd DVD i torba <a href=\"/produkt/getac-torba-gmbcx7\">GMBCX7</a>."
+        "answer": "Do zasilania przy biurku pasują <a href=\"/produkt/getac-zasilacz-65w-gaa6e5\">GAA6E5</a> (65 W) i <a href=\"/produkt/getac-zasilacz-90w-gaa9e6\">GAA9E6</a> (90 W), a w pojeździe <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x4\">GAD2X4</a> lub <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x8\">GAD2X8</a> (120 W). Pasuje też stacja dokująca USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100</a>, napęd DVD i torba <a href=\"/produkt/getac-torba-gmbcx7\">GMBCX7</a>."
       }
     ],
     "createdAt": "2026-10-23",
@@ -934,9 +922,9 @@ export const getacLaptopProducts: Product[] = [
     "name": "Getac B360",
     "seoH1": "Getac B360",
     "seoTitle": "Laptop przemysłowy Getac B360 13,3″ z Windows 11 Pro, IP66",
-    "seoDescription": "Laptop przemysłowy Getac B360 13,3″, Intel Core Ultra, 1400 nitów, IP66. Laptop rugged Getac B360 G3. B360 Getac PN: BV1164BSBDGX, BV1164B3BDGX, BV1164B4BDGX.",
-    "shortDescription": "Getac B360 — laptop fully rugged 13,3″ z Windows 11 Pro, procesorem Intel Core Ultra serii 2, ekranem dotykowym 1400 nitów i klasą szczelności IP66. Pracuje na 2 bateriach; jedną wymienia się bez wyłączania (LifeSupport). Czytnik kart chipowych, RS-232 i VGA w każdej wersji.",
-    "description": "Getac B360 trzeciej generacji (G3) to laptop przemysłowy w klasie fully rugged z ekranem 13,3 cala i systemem Windows 11 Pro. Służy do pracy w terenie, w pojazdach, w służbach i na produkcji. Obudowa ma klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanego osobno. Laptop wytrzymuje upadek z 1,8 m w czasie pracy i pracuje w temperaturze od −29°C do +63°C.\n\nEkran dotykowy LumiBond Full HD ma jasność 1400 nitów. Procesory Intel Core Ultra 5 i Core Ultra 7 serii 2 mają układ NPU Intel AI Boost. Wersje w ofercie mają 16 GB RAM DDR5 i dysk SSD 256 GB albo 512 GB.\n\nLaptop pracuje na 2 bateriach 4060 mAh. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). Każda wersja ma czytnik kart chipowych, port RS-232, wyjście VGA, port Thunderbolt 4, Wi-Fi 7 i Bluetooth 5.4.\n\nWersje różnią się procesorem, dyskiem, łącznością 4G LTE z GPS i układem klawiatury: US, UK albo DE. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala ma [Getac V120](/produkt/getac-v120).",
+    "seoDescription": "Laptop fully rugged Getac B360 G3 13,3″, Intel Core Ultra, ekran 1400 nitów, IP66, RS-232, czytnik kart. B360 Getac. PN: BV1164BSBDGX, BV1164B4BDGX.",
+    "shortDescription": "Getac B360 — laptop fully rugged 13,3″ z najjaśniejszym ekranem w ofercie Getac (1400 nitów), klasą IP66 i odpornością na upadek z 1,8 m w czasie pracy. 2 baterie, jedna wymieniana bez wyłączania (LifeSupport).",
+    "description": "Getac B360 trzeciej generacji (G3) to laptop w klasie fully rugged z ekranem 13,3 cala o jasności 1400 nitów, najjaśniejszym wśród komputerów Getac w ofercie. Zastosowania: energetyka, przemysł, serwis terenowy i służby ratownicze.\n\nUpadek z 1,8 m laptop wytrzymuje nawet w czasie pracy. Obudowa B360 ma szczelność IP66 i certyfikat MIL-STD-810H. Opcją jest odporność na mgłę solną, a w wybranych konfiguracjach i warunkach środowiskowych także certyfikat Class I, Division 2. Do zgodności z MIL-STD-461G laptop potrzebuje [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5); zasilacz 90 W z zestawu tego certyfikatu nie ma.\n\nEkran dotykowy LumiBond Full HD obsługuje palec i rysik z linką, dołączony do zestawu. Procesory Intel Core Ultra 5 i Core Ultra 7 serii 2 mają NPU Intel AI Boost.\n\nLaptop ma 2 baterie 4060 mAh, więc jedną można wymienić bez zamykania systemu (LifeSupport). Każda wersja ma czytnik kart chipowych, RS-232, VGA i port USB PowerShare. Do tego dochodzą Thunderbolt 4 oraz łączność Wi-Fi 7 i Bluetooth 5.4. Wersje różnią się procesorem, dyskiem 256 GB albo 512 GB, modemem 4G LTE i klawiaturą US, UK albo DE. Gwarancja Bumper-to-Bumper działa 3 lata, także przy przypadkowych uszkodzeniach.\n\nMniejszy ekran 12,2 cala ma [Getac V120](/produkt/getac-v120).",
     "categoryId": "laptopy-przemyslowe",
     "subcategoryIds": [
       "laptopy-przemyslowe"
@@ -1216,31 +1204,27 @@ export const getacLaptopProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki układ klawiatury wybrać w Getac B360?",
-        "answer": "Wersje w ofercie mają podświetlaną klawiaturę w układzie US, UK albo DE. Układ US (QWERTY) odpowiada układowi polskiemu (programisty). Układ UK ma inne położenie znaków @ i \" oraz klawisza Enter. Układ DE (QWERTZ) ma zamienione litery Y i Z oraz niemieckie znaki. Wersje z procesorem Core Ultra 7, dyskiem 512 GB i 4G LTE mają klawiaturę DE."
+        "answer": "B360 ma podświetlaną klawiaturę US, UK albo DE. Z polskim układem programisty zgodny jest US (QWERTY). W UK inaczej leżą znaki @ i \" oraz klawisz Enter, a DE (QWERTZ) ma zamienione Y i Z. Procesor Core Ultra 7, dysk 512 GB i 4G LTE występują tylko z klawiaturą DE."
       },
       {
         "question": "Jak wymienia się baterie w Getac B360?",
-        "answer": "Laptop pracuje na 2 bateriach 4060 mAh. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm4x5\">GBM4X5</a>. Ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcer\">GCMCER</a> ładuje 2 baterie poza laptopem, a <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gceces\">GCECES</a> — 8 baterii."
+        "answer": "Laptop ma 2 baterie 4060 mAh i podczas wymiany jednej pracuje na drugiej. Zapasowa bateria to <a href=\"/produkt/getac-bateria-gbm4x5\">GBM4X5</a>. Do ładowania poza laptopem służą <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcer\">GCMCER</a> (2 baterie) i <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gceces\">GCECES</a> (8 baterii)."
       },
       {
         "question": "Jakie porty ma Getac B360?",
-        "answer": "Każda wersja ma port Thunderbolt 4, port USB 3.2 Gen 2 Type-A, port USB 3.2 PowerShare, port LAN 1 Gb/s i port HDMI 2.0. Ma też port RS-232, wyjście VGA, czytnik kart chipowych i złącze stacji dokującej. Wersja BV3166B4BJGX ma też złącza anten zewnętrznych."
+        "answer": "Wszystkie wersje B360 mają Thunderbolt 4, USB 3.2 Gen 2 Type-A, USB PowerShare, LAN 1 Gb/s, HDMI 2.0, RS-232 i VGA. Do tego dochodzą czytnik kart chipowych i złącze dokowania. Złącza anten zewnętrznych ma wersja z Core Ultra 7, dyskiem 512 GB i 4G LTE."
       },
       {
         "question": "Czy Getac B360 spełnia normę MIL-STD-461G?",
-        "answer": "Tak, z <a href=\"/produkt/getac-zasilacz-mil-std-461-gaage5\">zasilaczem MIL-STD-461 90 W GAAGE5</a>, sprzedawanym osobno. Zasilacz 90 W w zestawie nie ma tego certyfikatu. Laptop ma też certyfikat MIL-STD-810H i klasę szczelności IP66."
+        "answer": "Tak, jeśli laptop zasila <a href=\"/produkt/getac-zasilacz-mil-std-461-gaage5\">GAAGE5</a>: zasilacz 90 W z certyfikatem MIL-STD-461, sprzedawany osobno. Zasilacz 90 W dołączany do laptopa tego certyfikatu nie ma. Pozostałe certyfikaty to MIL-STD-810H i IP66."
       },
       {
-        "question": "W jakiej temperaturze pracuje Getac B360?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Laptop wytrzymuje upadek z 1,8 m, także w czasie pracy."
-      },
-      {
-        "question": "Jaką gwarancję ma Getac B360?",
-        "answer": "Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia."
+        "question": "Czy Getac B360 wytrzymuje upadek w czasie pracy?",
+        "answer": "Tak. Odporność na upadek z 1,8 m dotyczy także pracy laptopa, a temperatura pracy może wynosić od −29°C do +63°C. Gwarancja Bumper-to-Bumper przez 3 lata obejmuje również przypadkowe uszkodzenia."
       },
       {
         "question": "Jakie akcesoria pasują do Getac B360?",
-        "answer": "Pasuje bateria GBM4X5, ładowarki baterii, zasilacz <a href=\"/produkt/getac-zasilacz-90w-gaa9e7\">90 W GAA9E7</a>, zasilacz USB-C <a href=\"/produkt/getac-zasilacz-usb-c-100w-gat1e1\">100 W GAT1E1</a> i <a href=\"/produkt/getac-stacja-biurkowa-gdodeb\">stacja biurkowa GDODEB</a>. Pasują też zasilacze samochodowe 120 W <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x4\">GAD2X4</a> i <a href=\"/produkt/getac-zasilacz-samochodowy-gad2x8\">GAD2X8</a>, folia ochronna <a href=\"/produkt/getac-folia-ochronna-gmpfxp\">GMPFXP</a> i torba <a href=\"/produkt/getac-torba-gmbcx7\">GMBCX7</a>."
+        "answer": "B360 współpracuje z baterią GBM4X5 i ładowarkami, zasilaczami <a href=\"/produkt/getac-zasilacz-90w-gaa9e7\">GAA9E7</a> (90 W) i <a href=\"/produkt/getac-zasilacz-usb-c-100w-gat1e1\">GAT1E1</a> (USB-C, 100 W) oraz ze <a href=\"/produkt/getac-stacja-biurkowa-gdodeb\">stacją biurkową GDODEB</a>. W pojeździe zasilają go GAD2X4 lub GAD2X8 (120 W). Ekran chroni folia <a href=\"/produkt/getac-folia-ochronna-gmpfxp\">GMPFXP</a>, a do przenoszenia służy torba GMBCX7."
       }
     ],
     "createdAt": "2026-10-23",
@@ -1252,9 +1236,9 @@ export const getacLaptopProducts: Product[] = [
     "name": "Getac V120",
     "seoH1": "Getac V120",
     "seoTitle": "Laptop przemysłowy Getac V120 12,2″ z Windows 11 Pro, IP66",
-    "seoDescription": "Laptop przemysłowy Getac V120 12,2″, Core Ultra 5, Wi-Fi 7, 1000 nitów, IP66. Laptop rugged Getac V120. V120 Getac PN: VV116YESBDBA, VV116YE3BDBA, VV116YE4BDBA.",
-    "shortDescription": "Getac V120 — laptop fully rugged 12,2″ z Windows 11 Pro, procesorem Intel Core Ultra 5 serii 2, ekranem dotykowym 1000 nitów, klasą szczelności IP66 i 2 portami Thunderbolt 4. Pracuje na 2 bateriach; jedną wymienia się bez wyłączania (LifeSupport).",
-    "description": "Getac V120 to laptop przemysłowy w klasie fully rugged z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy w terenie, w pojazdach, w służbach i w serwisie. Obudowa ma klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanego osobno. Laptop wytrzymuje upadek z 1,2 m (wynik zależy od konfiguracji i akcesoriów) i pracuje w temperaturze od −29°C do +63°C.\n\nEkran dotykowy LumiBond WUXGA 1920 × 1200 ma jasność 1000 nitów. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost. Wersje w ofercie mają 16 GB RAM DDR5 i dysk SSD 512 GB.\n\nLaptop pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). Ma 2 porty Thunderbolt 4, 3 porty USB-A, port LAN, port HDMI 2.0, port RS-232, 4 przyciski programowalne, Wi-Fi 7 i Bluetooth 5.4. W zestawie są rysik i twardy uchwyt do przenoszenia.\n\nWersje różnią się tylko układem klawiatury: US, UK albo DE. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nWiększy ekran 13,3 cala o jasności 1400 nitów ma [Getac B360](/produkt/getac-b360).",
+    "seoDescription": "Getac V120: laptop fully rugged 12,2″ z Core Ultra 5, Wi-Fi 7, IP66, RS-232 i uchwytem. Laptop przemysłowy V120 Getac. PN: VV116YESBDBA, VV116YE4BDBA.",
+    "shortDescription": "Getac V120 — laptop fully rugged 12,2″ o najmniejszej obudowie w ofercie (302 × 224 mm), z twardym uchwytem w zestawie, 2 portami Thunderbolt 4 i portem RS-232. Jedną z 2 baterii wymienia się bez wyłączania (LifeSupport).",
+    "description": "Getac V120 to najmniejszy laptop fully rugged w ofercie: obudowa ma 302 × 224 mm, a ekran 12,2 cala. W zestawie jest twardy uchwyt do przenoszenia i rysik. Zastosowania V120 obejmują wojsko, służby ratownicze, energetykę, transport, górnictwo oraz sektor ropy i gazu.\n\nEkran dotykowy LumiBond WUXGA 1920 × 1200 ma jasność 1000 nitów. Laptop działa na Intel Core Ultra 5 225H z NPU Intel AI Boost, z 16 GB RAM DDR5 i dyskiem SSD 512 GB. Laptop ma też 4 przyciski programowalne.\n\nGniazdo rozszerzeń w wersjach w ofercie mieści port RS-232 i trzeci port USB-A. Poza tym laptop ma 2 porty Thunderbolt 4, LAN, HDMI 2.0, Wi-Fi 7 i Bluetooth 5.4. Pracuje na 2 bateriach 4070 mAh, z których jedną zmienia się bez wyłączania laptopa (LifeSupport).\n\nObudowa spełnia IP66 i MIL-STD-810H, a na zamówienie także wymogi odporności na mgłę solną. Certyfikat MIL-STD-461G laptop uzyskuje z [zasilaczem MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), dokupowanym do zestawu. Odporność na upadek z 1,2 m jest wynikiem zależnym od konfiguracji i akcesoriów. Trzy wersje w ofercie mają tę samą konfigurację i różne klawiatury: US, UK albo DE. W gwarancji Bumper-to-Bumper (3 lata) mieszczą się także przypadkowe uszkodzenia.\n\nWiększy, 13,3-calowy ekran 1400 nitów ma [Getac B360](/produkt/getac-b360).",
     "categoryId": "laptopy-przemyslowe",
     "subcategoryIds": [
       "laptopy-przemyslowe"
@@ -1486,31 +1470,27 @@ export const getacLaptopProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki układ klawiatury wybrać w Getac V120?",
-        "answer": "Wersje w ofercie różnią się tylko układem podświetlanej klawiatury: US, UK albo DE. Układ US (QWERTY) odpowiada układowi polskiemu (programisty). Układ UK ma inne położenie znaków @ i \" oraz klawisza Enter. Układ DE (QWERTZ) ma zamienione litery Y i Z oraz niemieckie znaki."
+        "answer": "Trzy wersje V120 różnią się wyłącznie klawiaturą: US, UK albo DE. Wersja US pozwala pisać w polskim układzie programisty bez zmiany nadruku. Wersja UK ma inne miejsce dla @ i \" i inny Enter, a DE ma układ QWERTZ z niemieckimi znakami."
       },
       {
         "question": "Jak wymienia się baterie w Getac V120?",
-        "answer": "Laptop pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). Zapasowa bateria standardowa to <a href=\"/produkt/getac-bateria-gbm2x4\">GBM2X4</a>, a bateria o dużej pojemności <a href=\"/produkt/getac-bateria-gbm3x8\">GBM3X8</a>. Ładowarka <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcet\">GCMCET</a> ładuje 2 baterie, a <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gcecet\">GCECET</a> — 8 baterii."
+        "answer": "V120 ma 2 baterie 4070 mAh. Jedną można wyjąć, gdy laptop pracuje na drugiej. Zapas to bateria standardowa <a href=\"/produkt/getac-bateria-gbm2x4\">GBM2X4</a> albo o dużej pojemności <a href=\"/produkt/getac-bateria-gbm3x8\">GBM3X8</a>. Ładują je <a href=\"/produkt/getac-ladowarka-2-gniazdowa-gcmcet\">GCMCET</a> (dwugniazdowa) i <a href=\"/produkt/getac-ladowarka-8-gniazdowa-gcecet\">GCECET</a> (ośmiogniazdowa)."
       },
       {
         "question": "Jakie porty ma Getac V120?",
-        "answer": "Laptop ma 2 porty Thunderbolt 4 i 2 porty USB 3.2 Gen 2 Type-A. Ma też port LAN 1 Gb/s, port HDMI 2.0, gniazdo audio i złącze stacji dokującej. W gnieździe rozszerzeń wersje w ofercie mają trzeci port USB-A i port RS-232. To gniazdo mieści jeden moduł, dlatego czytnik kodów 1D/2D albo czytnik microSD wymaga innej konfiguracji."
+        "answer": "Na stałe laptop ma 2 porty Thunderbolt 4, dwa USB-A (USB 3.2 Gen 2), LAN 1 Gb/s, HDMI 2.0, gniazdo audio i złącze dokowania. Gniazdo rozszerzeń w wersjach z oferty zawiera trzeci USB-A oraz RS-232. Mieści ono jeden moduł, więc czytnik kodów 1D/2D lub czytnik microSD wymaga innej konfiguracji."
       },
       {
         "question": "Czy Getac V120 spełnia normę MIL-STD-461G?",
-        "answer": "Tak, z <a href=\"/produkt/getac-zasilacz-mil-std-461-gaage5\">zasilaczem MIL-STD-461 90 W GAAGE5</a>, sprzedawanym osobno. Zasilacz 65 W w zestawie nie ma tego certyfikatu. Laptop ma też certyfikat MIL-STD-810H i klasę szczelności IP66."
+        "answer": "Tak, pod warunkiem pracy z zasilaczem <a href=\"/produkt/getac-zasilacz-mil-std-461-gaage5\">GAAGE5</a> (MIL-STD-461, 90 W), który kupuje się osobno. Dołączony zasilacz 65 W nie ma certyfikatu MIL-STD-461. Pozostałe normy laptopa to IP66 i MIL-STD-810H."
       },
       {
-        "question": "W jakiej temperaturze pracuje Getac V120?",
-        "answer": "Od −29°C do +63°C. Temperatura przechowywania wynosi od −51°C do +71°C. Laptop wytrzymuje upadek z 1,2 m (wynik zależy od konfiguracji i akcesoriów)."
-      },
-      {
-        "question": "Jaką gwarancję ma Getac V120?",
-        "answer": "Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia."
+        "question": "Co jest w zestawie z Getac V120?",
+        "answer": "Laptop, 2 baterie 4070 mAh, zasilacz 65 W, przewód zasilający EU (w wersjach UK i DE także UK), rysik i twardy uchwyt do przenoszenia. Dodatkowy <a href=\"/produkt/getac-uchwyt-gmhdx7\">uchwyt GMHDX7</a> mocuje się w uchwytach paska na narożnych odbojach."
       },
       {
         "question": "Jakie akcesoria pasują do Getac V120?",
-        "answer": "Pasują baterie GBM2X4 i GBM3X8, ładowarki baterii, zasilacz <a href=\"/produkt/getac-zasilacz-65w-gaa6e5\">65 W GAA6E5</a> oraz zasilacze USB-C <a href=\"/produkt/getac-zasilacz-usb-c-gat6e1\">65 W GAT6E1</a> i <a href=\"/produkt/getac-zasilacz-usb-c-100w-gat1e1\">100 W GAT1E1</a>. Pasuje też stacja dokująca USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100 GDDSE2</a> i zasilacze samochodowe 120 W. Dostępne są też torba <a href=\"/produkt/getac-torba-gmbcx2\">GMBCX2</a>, <a href=\"/produkt/getac-pasek-na-ramie-gms2x8\">pasek na ramię GMS2X8</a> i <a href=\"/produkt/getac-uchwyt-gmhdx7\">uchwyt GMHDX7</a>."
+        "answer": "Do V120 pasują baterie GBM2X4 i GBM3X8 z ładowarkami, zasilacz sieciowy 65 W <a href=\"/produkt/getac-zasilacz-65w-gaa6e5\">GAA6E5</a> i zasilacze USB-C <a href=\"/produkt/getac-zasilacz-usb-c-gat6e1\">GAT6E1</a> (65 W) oraz GAT1E1 (100 W). Przy biurku laptop podłącza się do stacji USB-C <a href=\"/produkt/getac-stacja-usb-c-ds100-gddse2\">DS100 GDDSE2</a>, a w samochodzie do zasilacza 120 W. Do noszenia służą torba <a href=\"/produkt/getac-torba-gmbcx2\">GMBCX2</a> i <a href=\"/produkt/getac-pasek-na-ramie-gms2x8\">pasek na ramię GMS2X8</a>."
       }
     ],
     "createdAt": "2026-10-23",
