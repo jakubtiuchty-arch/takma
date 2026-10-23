@@ -503,8 +503,8 @@ export const citizenPosProducts: Product[] = [
       "/images/products/CTS310IIEBK-5.png"
     ],
     "imageDescriptions": [
-      "Citizen CT-S310II w czarnej obudowie — widok z przodu: przycisk FEED, diody POWER i ERROR",
       "Citizen CT-S310II w białej obudowie — widok z przodu pod kątem: pokrywa papieru, przycisk FEED i diody POWER i ERROR",
+      "Citizen CT-S310II w czarnej obudowie — widok z przodu: przycisk FEED, diody POWER i ERROR",
       "Citizen CT-S310II w białej obudowie — widok z przodu",
       "Citizen CT-S310II w wersji z USB i RS-232 — złącza z tyłu: gniazdo zasilania, złącze szuflady kasowej, RS-232 i USB",
       "Citizen CT-S310II w białej obudowie — otwarta pokrywa komory papieru"
