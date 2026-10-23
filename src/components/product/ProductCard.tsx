@@ -68,7 +68,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   // Citizen POS stoi w jednej siatce z Epson i BIXOLON, więc dostaje te same kafle.
   const citizenPosImage = (product.manufacturerId === 'citizen' && product.categoryId === 'drukarki-pos') || product.id.startsWith('citizen-pos-')
   // Kioski i akcesoria do kiosków Zebra stoją w jednej siatce z SUNMI FLEX 3, więc dostają te same kafle 4:3.
-  const standardMobileImage = ['cipherlab', 'sunmi'].includes(product.manufacturerId) || product.categoryId === 'kioski-samoobslugowe' || !!product.subcategoryIds?.includes('akcesoria-do-kioskow')
+  const standardMobileImage = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) || product.categoryId === 'kioski-samoobslugowe' || !!product.subcategoryIds?.includes('akcesoria-do-kioskow')
   const uniformGridImage = standardMobileImage || product.uniformImage || epsonPosImage || citizenPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
   const gridImageFraction = standardMobileImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : (epsonPosImage || citizenPosImage) ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
 
