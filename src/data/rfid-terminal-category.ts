@@ -7,7 +7,7 @@ export const rfidTerminalCategory: Subcategory = {
   "parentCategoryId": "terminale-mobilne",
   "description": "Terminale mobilne z czytnikiem UHF RFID do inwentaryzacji i identyfikacji towarów.",
   "seoTitle": "Terminale RFID UHF do magazynu i inwentaryzacji | TAKMA",
-  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj urządzenia Zebra i Newland. Sprawdź europejskie PN, ceny, stany i akcesoria.",
+  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj urządzenia Zebra, Newland i Bluebird. Sprawdź europejskie PN, ceny, stany i akcesoria.",
   "longDescription": "Terminale RFID odczytują znaczniki radiowe bez celowania w kod kreskowy. W tej kategorii znajdziesz terminale Android z wbudowanym czytnikiem UHF do inwentaryzacji, identyfikacji wyposażenia i kontroli towarów. Porównaj zasięg, sposób odczytu kodów oraz łączność. Dobierz wersję europejską i akcesoria do konkretnego modelu.",
   "icon": "smartphone",
   "productIds": [
@@ -17,9 +17,10 @@ export const rfidTerminalCategory: Subcategory = {
     "zebra-mc3330xr",
     "zebra-mc3390xr",
     "zebra-ws501-r",
-    "newland-mt93-megattera-pro-uhf"
+    "newland-mt93-megattera-pro-uhf",
+    "bluebird-s10-rfid"
   ],
-  "productCount": 7
+  "productCount": 8
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'

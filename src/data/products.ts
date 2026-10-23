@@ -1,6 +1,7 @@
 import { sunmiProducts, sunmiAccessories } from './sunmi-products'
 import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-products'
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
+import { bluebirdProducts, bluebirdAccessories } from './bluebird-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -95804,6 +95805,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Akcesoria Bluebird trafiają do podkategorii według `subcategoryIds` (w tym do akcesoriów do terminali).
+for (const subcategory of subcategories) {
+  const additions = bluebirdAccessories.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95840,6 +95850,8 @@ const rawProductList: Product[] = [
   ...zebraKc401Accessories,
   ...cipherlabProducts,
   ...cipherlabAccessories,
+  ...bluebirdProducts,
+  ...bluebirdAccessories,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

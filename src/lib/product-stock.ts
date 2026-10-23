@@ -1,6 +1,7 @@
 import { sunmiProducts, sunmiAccessories } from '@/data/sunmi-products'
 import { zebraKc401Products, zebraKc401Accessories } from '@/data/zebra-kc401-products'
 import { cipherlabProducts, cipherlabAccessories } from '@/data/cipherlab-products'
+import { bluebirdProducts, bluebirdAccessories } from '@/data/bluebird-products'
 import { epsonPosProducts, epsonPosAccessories } from '@/data/epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from '@/data/bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from '@/data/citizen-pos-products'
@@ -62,6 +63,7 @@ export const LIVE_OFFER_SLUGS = new Set([
   ...sunmiProducts.map(p => p.slug), ...sunmiAccessories.map(p => p.slug),
   ...zebraKc401Products.map(p => p.slug), ...zebraKc401Accessories.map(p => p.slug),
   ...cipherlabProducts.map(p => p.slug), ...cipherlabAccessories.map(p => p.slug),
+  ...bluebirdProducts.map(p => p.slug), ...bluebirdAccessories.map(p => p.slug),
   ...epsonPosProducts.map(p => p.slug), ...epsonPosAccessories.map(p => p.slug),
   ...bixolonPosProducts.map(p => p.slug), ...bixolonPosAccessories.map(p => p.slug),
   ...citizenPosProducts.map(p => p.slug), ...citizenPosAccessories.map(p => p.slug),
