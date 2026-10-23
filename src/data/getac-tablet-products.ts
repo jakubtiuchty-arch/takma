@@ -2676,4 +2676,2903 @@ export const getacTabletProducts: Product[] = [
 ]
 
 export const getacTabletAccessories: Product[] = [
+  {
+    "id": "getac-zasilacz-usb-c-gat6e1",
+    "slug": "getac-zasilacz-usb-c-gat6e1",
+    "name": "Zasilacz USB-C 65 W Getac GAT6E1",
+    "seoTitle": "Zasilacz USB-C 65 W Getac GAT6E1",
+    "seoDescription": "Getac GAT6E1 — zasilacz USB-C 65 W z przewodem zasilającym z wtyczką EU do tabletów Getac ZX80, ZX80W, ZX10 G2 i innych modeli z zasilaniem USB-C.",
+    "shortDescription": "Getac GAT6E1 — zasilacz USB-C 65 W z przewodem zasilającym z wtyczką EU do tabletów Getac ZX80, ZX80W, ZX10 G2 i innych modeli z zasilaniem USB-C.",
+    "description": "Zasilacz Getac GAT6E1 zasila tablet i ładuje jego baterię z gniazdka sieciowego. Ma wyjście USB-C o mocy 65 W i przewód zasilający z wtyczką EU. Tablet Getac ZX80 nie ma zasilacza w zestawie, dlatego do pierwszego uruchomienia potrzebny jest zasilacz GAT6E1. Zasilacz zasila też stację biurkową GDODXC, która nie ma własnego zasilacza.\n\nZasilacz pasuje do tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w), [ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140). Do modeli ZX80W, ZX10 G2 i modeli z Windows zasilacz służy jako zapasowy, bo zestawy tych tabletów zawierają zasilacz.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 265.5,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GAT6E1.png"
+    ],
+    "imageDescriptions": [
+      "Zasilacz USB-C 65 W Getac GAT6E1 z przewodem zasilającym"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GAT6E1"
+      },
+      {
+        "name": "Typ",
+        "value": "Zasilacz sieciowy USB-C"
+      },
+      {
+        "name": "Moc",
+        "value": "65 W"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V, 50–60 Hz, 1,6 A"
+      },
+      {
+        "name": "Wyjście",
+        "value": "5 V / 9 V / 12 V / 15 V przy 3 A, 20 V przy 3,25 A"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU, długość 1830 mm"
+      },
+      {
+        "name": "Przewód wyjściowy",
+        "value": "USB-C, długość 1500 mm"
+      },
+      {
+        "name": "Wymiary",
+        "value": "90 × 51 × 28,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "220 g ±15 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W, Getac ZX10 G2, Getac UX10 G5, Getac F120, Getac K120 G3, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w",
+      "getac-zx10-g2",
+      "getac-ux10-g5",
+      "getac-f120",
+      "getac-k120-g3",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm1xa",
+    "slug": "getac-bateria-gbm1xa",
+    "name": "Bateria 4990 mAh Getac GBM1XA do ZX80 i ZX80W",
+    "seoTitle": "Bateria 4990 mAh Getac GBM1XA do ZX80 i ZX80W",
+    "seoDescription": "Getac GBM1XA — bateria wymienna 4990 mAh do kieszeni baterii tabletów Getac ZX80 i ZX80W.",
+    "shortDescription": "Getac GBM1XA — bateria wymienna 4990 mAh do kieszeni baterii tabletów Getac ZX80 i ZX80W.",
+    "description": "Bateria Getac GBM1XA pracuje w kieszeni na baterię wymienną tabletów Getac ZX80 i ZX80W. Tablety mają też wewnętrzną baterię 4060 mAh, dlatego baterię w kieszeni wymienia się bez wyłączania tabletu (technologia LifeSupport). Wersje tabletów z zaślepką kieszeni nie mają baterii wymiennej w zestawie.\n\nBateria litowo-polimerowa ma napięcie 3,84 V i pojemność typową 4990 mAh. Większy zapas energii daje bateria o dużej pojemności [GBM2XA](/produkt/getac-bateria-gbm2xa). Dwie baterie naraz ładuje [ładowarka GCMCEM](/produkt/getac-ladowarka-2-gniazdowa-gcmcem).\n\nBateria jest sprzedawana pojedynczo. Wersje tabletów z zaślepką kieszeni pracują tylko na baterii wewnętrznej, dlatego bateria GBM1XA wydłuża ich czas pracy.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 294.09,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GBM1XA.png"
+    ],
+    "imageDescriptions": [
+      "Bateria wymienna Getac GBM1XA 4990 mAh do tabletów ZX80 i ZX80W"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM1XA"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,84 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4990 mAh; min. 4870 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "119,5 × 60,6 × 8,95 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "98 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm2xa",
+    "slug": "getac-bateria-gbm2xa",
+    "name": "Bateria 9980 mAh Getac GBM2XA do ZX80 i ZX80W",
+    "seoTitle": "Bateria 9980 mAh Getac GBM2XA do ZX80 i ZX80W",
+    "seoDescription": "Getac GBM2XA — bateria wymienna o dużej pojemności 9980 mAh do tabletów Getac ZX80 i ZX80W.",
+    "shortDescription": "Getac GBM2XA — bateria wymienna o dużej pojemności 9980 mAh do tabletów Getac ZX80 i ZX80W.",
+    "description": "Bateria Getac GBM2XA to bateria o dużej pojemności do kieszeni baterii tabletów Getac ZX80 i ZX80W. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 4990 mAh. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-polimerowa ma napięcie 3,84 V i pojemność typową 9980 mAh. Jest grubsza od baterii standardowej: ma 16,6 mm zamiast 8,95 mm. Baterię ładuje także [ładowarka GCMCEM](/produkt/getac-ladowarka-2-gniazdowa-gcmcem).\n\nBateria jest sprzedawana pojedynczo. W kieszeni tabletu pracuje jedna bateria: standardowa GBM1XA albo o dużej pojemności GBM2XA.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 441.13,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GBM2XA.png"
+    ],
+    "imageDescriptions": [
+      "Bateria o dużej pojemności Getac GBM2XA 9980 mAh do tabletów ZX80 i ZX80W"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM2XA"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa o dużej pojemności, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,84 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 9980 mAh; min. 9470 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "119,5 × 60,6 × 16,6 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "170 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-ladowarka-2-gniazdowa-gcmcem",
+    "slug": "getac-ladowarka-2-gniazdowa-gcmcem",
+    "name": "Ładowarka 2-gniazdowa Getac GCMCEM do baterii ZX80 i ZX10",
+    "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCEM do baterii ZX80 i ZX10",
+    "seoDescription": "Getac GCMCEM — zewnętrzna ładowarka 2 baterii do tabletów Getac ZX80, ZX80W i ZX10 G2, z przewodem zasilającym EU.",
+    "shortDescription": "Getac GCMCEM — zewnętrzna ładowarka 2 baterii do tabletów Getac ZX80, ZX80W i ZX10 G2, z przewodem zasilającym EU.",
+    "description": "Ładowarka Getac GCMCEM ładuje jednocześnie 2 baterie wymienne poza tabletem. Pozwala przygotować naładowane baterie na kolejną zmianę bez zajmowania tabletu. Ładowarka obsługuje baterie standardowe i baterie o dużej pojemności.\n\nŁadowarka pasuje do baterii tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w) i [ZX10 G2](/produkt/getac-zx10-g2): [GBM1XA](/produkt/getac-bateria-gbm1xa), [GBM2XA](/produkt/getac-bateria-gbm2xa), [GBM1X2](/produkt/getac-bateria-gbm1x2) i [GBM2X3](/produkt/getac-bateria-gbm2x3). Wersja GCMCEM ma przewód zasilający z wtyczką EU.\n\nŁadowarka jest sprzedawana bez baterii. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg, dlatego mieści się na biurku przy stanowisku wydawania sprzętu.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1294.8,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GCMCEM.png"
+    ],
+    "imageDescriptions": [
+      "Ładowarka 2-gniazdowa Getac GCMCEM do baterii tabletów ZX80 i ZX10"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GCMCEM"
+      },
+      {
+        "name": "Typ",
+        "value": "Zewnętrzna ładowarka baterii, 2 gniazda"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC"
+      },
+      {
+        "name": "Wyjście",
+        "value": "13,05 V, maks. 2,4 A"
+      },
+      {
+        "name": "Obsługiwane baterie",
+        "value": "Standardowe i o dużej pojemności"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "160 × 180 × 72,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,2 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W, Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w",
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-biurkowa-gdodxc",
+    "slug": "getac-stacja-biurkowa-gdodxc",
+    "name": "Stacja biurkowa Getac GDODXC do ZX80 i ZX80W",
+    "seoTitle": "Stacja biurkowa Getac GDODXC do ZX80 i ZX80W",
+    "seoDescription": "Getac GDODXC — stacja biurkowa ze złączem pogo do tabletów Getac ZX80 i ZX80W: LAN, HDMI, 2 × USB 2.0, audio. Bez zasilacza.",
+    "shortDescription": "Getac GDODXC — stacja biurkowa ze złączem pogo do tabletów Getac ZX80 i ZX80W: LAN, HDMI, 2 × USB 2.0, audio. Bez zasilacza.",
+    "description": "Stacja biurkowa Getac GDODXC ładuje tablet i udostępnia porty do pracy przy biurku. Tablet łączy się ze stacją przez złącze pogo. Port LAN i porty USB służą do przesyłania danych do systemów firmy, a port HDMI do podłączenia monitora.\n\nStacja ma port USB-C tylko do zasilania (Power Delivery), 2 porty USB 2.0 Type-A, port LAN, port HDMI, gniazdo audio i gniazdo Kensington. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-C 65 W Getac (GAT6E1)](/produkt/getac-zasilacz-usb-c-gat6e1)\n\nStacja nie ma zasilacza w zestawie.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1017.05,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GDODXC.png"
+    ],
+    "imageDescriptions": [
+      "Stacja biurkowa Getac GDODXC do tabletów ZX80 i ZX80W, widok z przodu i z tyłu"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDODXC"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja biurkowa ze złączem pogo"
+      },
+      {
+        "name": "Porty",
+        "value": "USB-C 3.2 (tylko zasilanie), 2 × USB 2.0 Type-A, LAN, HDMI, gniazdo audio, gniazdo Kensington"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz USB-C 65 W, sprzedawany osobno"
+      },
+      {
+        "name": "Wymiary",
+        "value": "148,2 × 152,6 × 176,8 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "580 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-rysik-digitizer-gmpdx7",
+    "slug": "getac-rysik-digitizer-gmpdx7",
+    "name": "Pióro digitizer Getac GMPDX7 do ZX80, ZX80W i ZX10 G2",
+    "seoTitle": "Pióro digitizer Getac GMPDX7 do ZX80, ZX80W i ZX10 G2",
+    "seoDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80, ZX80W i ZX10 G2 z ekranem z digitizerem.",
+    "shortDescription": "Getac GMPDX7 — pióro digitizer z linką do tabletów Getac ZX80, ZX80W i ZX10 G2 z ekranem z digitizerem.",
+    "description": "Pióro Getac GMPDX7 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Działa z tabletami, które mają ekran z digitizerem. Wersje tabletów bez digitizera obsługuje się palcem, w rękawicy albo rysikiem pojemnościowym.\n\nPióro ma długość 110,8 mm i średnicę 9 mm. Linka o długości 304 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac ZX80](/produkt/getac-zx80), [ZX80W](/produkt/getac-zx80w) i [ZX10 G2](/produkt/getac-zx10-g2). Każda wersja ZX80W z naszej oferty ma digitizer.\n\nWersje tabletów z digitizerem mają w nazwie wariantu słowo „digitizer”.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 147.04,
+    "availability": "available",
+    "images": [
+      "/images/products/GMPDX7.png"
+    ],
+    "imageDescriptions": [
+      "Pióro digitizer Getac GMPDX7 z linką"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMPDX7"
+      },
+      {
+        "name": "Typ",
+        "value": "Pióro digitizer z linką"
+      },
+      {
+        "name": "Wymiary",
+        "value": "110,8 mm, średnica 9 mm"
+      },
+      {
+        "name": "Końcówka",
+        "value": "2,0 mm; średnica 1,65 mm"
+      },
+      {
+        "name": "Długość linki",
+        "value": "304 mm"
+      },
+      {
+        "name": "Wymaganie",
+        "value": "Tablet z ekranem z digitizerem"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W, Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w",
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-pasek-na-reke-gmhrxl",
+    "slug": "getac-pasek-na-reke-gmhrxl",
+    "name": "Obrotowy pasek na rękę z podpórką Getac GMHRXL do ZX80 i ZX80W",
+    "seoTitle": "Obrotowy pasek na rękę z podpórką Getac GMHRXL do ZX80 i ZX80W",
+    "seoDescription": "Getac GMHRXL — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac ZX80 i ZX80W.",
+    "shortDescription": "Getac GMHRXL — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac ZX80 i ZX80W.",
+    "description": "Pasek Getac GMHRXL mocuje tablet do dłoni i ułatwia jego przenoszenie. Pasek ma regulację rozmiaru i obraca się o 360°, dlatego ekran można ustawić pod wygodnym kątem. Wbudowana podpórka utrzymuje tablet na płaskiej powierzchni bez trzymania w ręce.\n\nPasek jest wykonany z poliuretanu (PU), ma wymiary 155 × 80 × 30 mm i masę 132 g. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\nPasek przydaje się podczas pracy na stojąco, np. przy inwentaryzacji lub odbiorze dostaw, gdy druga ręka obsługuje ekran.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 265.5,
+    "availability": "available",
+    "images": [
+      "/images/products/GMHRXL.png"
+    ],
+    "imageDescriptions": [
+      "Obrotowy pasek na rękę z podpórką Getac GMHRXL, widok paska i paska zamocowanego na tablecie"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMHRXL"
+      },
+      {
+        "name": "Typ",
+        "value": "Obrotowy pasek na rękę z podpórką"
+      },
+      {
+        "name": "Obrót",
+        "value": "360°"
+      },
+      {
+        "name": "Materiał",
+        "value": "Poliuretan (PU)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "155 × 80 × 30 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "132 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-torba-gmbcx3",
+    "slug": "getac-torba-gmbcx3",
+    "name": "Torba Getac GMBCX3 do ZX80 i ZX80W",
+    "seoTitle": "Torba Getac GMBCX3 do ZX80 i ZX80W",
+    "seoDescription": "Getac GMBCX3 — torba z regulowanym paskiem na ramię do tabletów Getac ZX80 i ZX80W i ich akcesoriów.",
+    "shortDescription": "Getac GMBCX3 — torba z regulowanym paskiem na ramię do tabletów Getac ZX80 i ZX80W i ich akcesoriów.",
+    "description": "Torba Getac GMBCX3 chroni tablet podczas transportu. Ma regulowany, wyściełany pasek na ramię oraz przegrody i kieszenie na zamek błyskawiczny. W torbie mieści się tablet razem z akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 255 × 230 × 123 mm i masę 560 g. Pasuje do tabletów [Getac ZX80](/produkt/getac-zx80) i [ZX80W](/produkt/getac-zx80w).\n\nTorba przydaje się przy przewożeniu tabletu w pojeździe i przy pracy w terenie. W torbie można przewozić tablet razem z akcesoriami, np. zasilaczem i zapasową baterią.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 285.92,
+    "availability": "available",
+    "images": [
+      "/images/products/GMBCX3.png"
+    ],
+    "imageDescriptions": [
+      "Torba Getac GMBCX3 do tabletów ZX80 i ZX80W"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMBCX3"
+      },
+      {
+        "name": "Typ",
+        "value": "Torba z paskiem na ramię"
+      },
+      {
+        "name": "Materiał",
+        "value": "Nylon, tkanina siatkowa (air mesh)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "255 × 230 × 123 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "560 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX80, Getac ZX80W"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx80",
+      "getac-zx80w"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm1x2",
+    "slug": "getac-bateria-gbm1x2",
+    "name": "Bateria 4990 mAh Getac GBM1X2 do ZX10 G2",
+    "seoTitle": "Bateria 4990 mAh Getac GBM1X2 do ZX10 G2",
+    "seoDescription": "Getac GBM1X2 — bateria wymienna 4990 mAh do tabletu Getac ZX10 G2.",
+    "shortDescription": "Getac GBM1X2 — bateria wymienna 4990 mAh do tabletu Getac ZX10 G2.",
+    "description": "Bateria Getac GBM1X2 zasila tablet Getac ZX10 G2. Tablet ma 2 kieszenie na baterie. Gdy w obu kieszeniach są baterie, jedną z nich wymienia się bez wyłączania tabletu (technologia LifeSupport). Druga bateria pozwala też pracować na samej baterii w niższej temperaturze: od −21°C z 2 bateriami standardowymi zamiast od −15°C z jedną.\n\nBateria litowo-polimerowa ma napięcie 3,88 V i pojemność typową 4990 mAh. Większy zapas energii daje [bateria GBM2X3](/produkt/getac-bateria-gbm2x3) 9980 mAh. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).\n\nBateria jest sprzedawana pojedynczo.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 294.09,
+    "availability": "available",
+    "images": [
+      "/images/products/GBM1X2.png"
+    ],
+    "imageDescriptions": [
+      "Bateria wymienna Getac GBM1X2 4990 mAh do tabletu ZX10 G2"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM1X2"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,88 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4990 mAh; min. 4870 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "119,5 × 60,6 × 8,95 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "97 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm2x3",
+    "slug": "getac-bateria-gbm2x3",
+    "name": "Bateria 9980 mAh Getac GBM2X3 do ZX10 G2",
+    "seoTitle": "Bateria 9980 mAh Getac GBM2X3 do ZX10 G2",
+    "seoDescription": "Getac GBM2X3 — bateria wymienna o dużej pojemności 9980 mAh do tabletu Getac ZX10 G2.",
+    "shortDescription": "Getac GBM2X3 — bateria wymienna o dużej pojemności 9980 mAh do tabletu Getac ZX10 G2.",
+    "description": "Bateria Getac GBM2X3 to bateria o dużej pojemności do tabletu Getac ZX10 G2. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową. Z 2 bateriami GBM2X3 tablet pracuje na samej baterii od −29°C.\n\nBateria litowo-polimerowa ma napięcie 3,88 V i pojemność typową 9980 mAh. Baterie o dużej pojemności zwiększają grubość tabletu o ok. 7,65 mm i masę o ok. 140 g. Baterię wymienia się bez wyłączania tabletu, gdy w drugiej kieszeni jest bateria. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 441.13,
+    "availability": "available",
+    "images": [
+      "/images/products/GBM2X3.png"
+    ],
+    "imageDescriptions": [
+      "Bateria o dużej pojemności Getac GBM2X3 9980 mAh do tabletu ZX10 G2"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM2X3"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa o dużej pojemności, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,88 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 9980 mAh; min. 9740 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "119,5 × 60,6 × 16,6 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "167 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-biurkowa-gdode8",
+    "slug": "getac-stacja-biurkowa-gdode8",
+    "name": "Stacja biurkowa z zasilaczem 65 W Getac GDODE8 do ZX10 G2",
+    "seoTitle": "Stacja biurkowa z zasilaczem 65 W Getac GDODE8 do ZX10 G2",
+    "seoDescription": "Getac GDODE8 — stacja biurkowa ze złączem pogo i zasilaczem 65 W do tabletu Getac ZX10 G2: LAN, RS-232, HDMI, 3 × USB 2.0.",
+    "shortDescription": "Getac GDODE8 — stacja biurkowa ze złączem pogo i zasilaczem 65 W do tabletu Getac ZX10 G2: LAN, RS-232, HDMI, 3 × USB 2.0.",
+    "description": "Stacja biurkowa Getac GDODE8 ładuje tablet Getac ZX10 G2 i udostępnia porty do pracy przy biurku. Tablet łączy się ze stacją przez złącze pogo. Porty LAN, RS-232 i USB służą do przesyłania danych, a port HDMI do podłączenia monitora.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, 3 porty USB 2.0, port LAN, port HDMI, port szeregowy RS-232 i gniazdo Kensington. W zestawie jest zasilacz 65 W z przewodem zasilającym z wtyczką EU. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1135.5,
+    "availability": "on-order",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDODE8"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja biurkowa ze złączem pogo"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo DC, wyjście audio, mikrofon, 3 × USB 2.0, LAN, HDMI, RS-232, gniazdo Kensington"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja, zasilacz 65 W, przewód zasilający z wtyczką EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "209,9 × 159,7 × 229,1 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "790 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-klawiatura-gdkbur",
+    "slug": "getac-klawiatura-gdkbur",
+    "name": "Klawiatura ze stacją Getac GDKBUR do ZX10 G2, układ US",
+    "seoTitle": "Klawiatura ze stacją Getac GDKBUR do ZX10 G2, układ US",
+    "seoDescription": "Getac GDKBUR — klawiatura ze stacją (keyboard dock) do tabletu Getac ZX10 G2: 82 klawisze, touchpad, podświetlenie, IP65, układ US.",
+    "shortDescription": "Getac GDKBUR — klawiatura ze stacją (keyboard dock) do tabletu Getac ZX10 G2: 82 klawisze, touchpad, podświetlenie, IP65, układ US.",
+    "description": "Klawiatura ze stacją Getac GDKBUR zamienia tablet Getac ZX10 G2 w urządzenie do pracy jak na laptopie. Ma 82 klawisze pełnego rozmiaru, touchpad i czerwone podświetlenie z 4 poziomami jasności. Podwójna blokada mocuje tablet do klawiatury i zapobiega jego odpięciu.\n\nKlawiatura ma klasę szczelności IP65 i wytrzymuje upadek z 1,2 m. Ma port USB 2.0 i gniazdo zasilania DC. Układ klawiszy to US. Pasuje do tabletu [Getac ZX10 G2](/produkt/getac-zx10-g2).\n\nKlawiatura nie jest dołączona do tabletu. Tablet z klawiaturą pracuje jak laptop z ekranem dotykowym 10,1 cala.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 2038.19,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GDKBUR.png"
+    ],
+    "imageDescriptions": [
+      "Klawiatura ze stacją Getac GDKBUR z tabletem ZX10 G2, widok z przodu i z tyłu"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDKBUR"
+      },
+      {
+        "name": "Typ",
+        "value": "Klawiatura ze stacją (keyboard dock)"
+      },
+      {
+        "name": "Układ",
+        "value": "US, 82 klawisze, touchpad"
+      },
+      {
+        "name": "Podświetlenie",
+        "value": "Czerwone, 4 poziomy"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 2.0, gniazdo zasilania DC, złącze dokujące tabletu"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP65"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Wymiary",
+        "value": "299 × 280 × 48 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1215 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-pasek-na-reke-gmhrxm",
+    "slug": "getac-pasek-na-reke-gmhrxm",
+    "name": "Obrotowy pasek na rękę z podpórką Getac GMHRXM do ZX10 G2 i F110 G7",
+    "seoTitle": "Obrotowy pasek na rękę z podpórką Getac GMHRXM do ZX10 G2 i F110 G7",
+    "seoDescription": "Getac GMHRXM — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac ZX10 G2 i F110 G7.",
+    "shortDescription": "Getac GMHRXM — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac ZX10 G2 i F110 G7.",
+    "description": "Pasek Getac GMHRXM mocuje tablet do dłoni i ułatwia jego przenoszenie. Pasek ma regulację rozmiaru i obraca się o 360°, dlatego ekran można ustawić pod wygodnym kątem. Wbudowana podpórka utrzymuje tablet na płaskiej powierzchni bez trzymania w ręce.\n\nPasek jest wykonany z poliuretanu (PU), ma wymiary 205 × 116 × 20 mm i masę 155 g. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2) i [F110 G7](/produkt/getac-f110-g7).\n\nPasek przydaje się podczas pracy na stojąco, np. przy inwentaryzacji lub odbiorze dostaw, gdy druga ręka obsługuje ekran.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 290,
+    "availability": "available",
+    "images": [
+      "/images/products/GMHRXM.png"
+    ],
+    "imageDescriptions": [
+      "Obrotowy pasek na rękę z podpórką Getac GMHRXM, widok paska i tabletu z rozłożoną podpórką"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMHRXM"
+      },
+      {
+        "name": "Typ",
+        "value": "Obrotowy pasek na rękę z podpórką"
+      },
+      {
+        "name": "Obrót",
+        "value": "360°"
+      },
+      {
+        "name": "Materiał",
+        "value": "Poliuretan (PU)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "205 × 116 × 20 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "155 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2, Getac F110 G7"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2",
+      "getac-f110-g7"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-torba-gmbcx2",
+    "slug": "getac-torba-gmbcx2",
+    "name": "Torba Getac GMBCX2 do ZX10 G2, UX10 G5, F110 G7 i F120",
+    "seoTitle": "Torba Getac GMBCX2 do ZX10 G2, UX10 G5, F110 G7 i F120",
+    "seoDescription": "Getac GMBCX2 — torba z regulowanym paskiem na ramię do tabletów Getac ZX10 G2, UX10 G5, F110 G7 i F120.",
+    "shortDescription": "Getac GMBCX2 — torba z regulowanym paskiem na ramię do tabletów Getac ZX10 G2, UX10 G5, F110 G7 i F120.",
+    "description": "Torba Getac GMBCX2 chroni tablet podczas transportu. Ma regulowany, wyściełany pasek na ramię i kieszenie wewnątrz. W torbie mieści się tablet razem z potrzebnymi akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 340 × 260 × 65 mm i masę 760 g. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [F120](/produkt/getac-f120).\n\nTorba przydaje się przy przewożeniu tabletu w pojeździe i przy pracy w terenie. W torbie można przewozić tablet razem z akcesoriami, np. zasilaczem i zapasową baterią.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 322.68,
+    "availability": "available",
+    "images": [
+      "/images/products/GMBCX2.png"
+    ],
+    "imageDescriptions": [
+      "Torba Getac GMBCX2 do tabletów 10–12 cali"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMBCX2"
+      },
+      {
+        "name": "Typ",
+        "value": "Torba z paskiem na ramię"
+      },
+      {
+        "name": "Materiał",
+        "value": "Nylon, tkanina siatkowa (air mesh)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "340 × 260 × 65 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "760 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac ZX10 G2, Getac UX10 G5, Getac F110 G7, Getac F120"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-zx10-g2",
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "getac-f120"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm6xa",
+    "slug": "getac-bateria-gbm6xa",
+    "name": "Bateria 4070 mAh Getac GBM6XA do UX10 G5",
+    "seoTitle": "Bateria 4070 mAh Getac GBM6XA do UX10 G5",
+    "seoDescription": "Getac GBM6XA — bateria standardowa 4070 mAh do tabletu Getac UX10 G5.",
+    "shortDescription": "Getac GBM6XA — bateria standardowa 4070 mAh do tabletu Getac UX10 G5.",
+    "description": "Bateria Getac GBM6XA to bateria standardowa do tabletu Getac UX10 G5. Zapasowa naładowana bateria pozwala kontynuować pracę w terenie, gdy pierwsza bateria się rozładuje. Wymiana baterii bez wyłączania tabletu wymaga opcjonalnej baterii podtrzymującej (bridge battery) w tablecie.\n\nBateria litowo-jonowa ma napięcie 11,61 V, pojemność typową 4070 mAh i 3 ogniwa (3S1P). Dłuższą pracę zapewnia [bateria GBM9X5](/produkt/getac-bateria-gbm9x5) 9240 mAh. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nBateria jest sprzedawana pojedynczo. Baterie ładuje [ładowarka 8-gniazdowa GCECER](/produkt/getac-ladowarka-8-gniazdowa-gcecer).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 486.06,
+    "availability": "on-order",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM6XA"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa, standardowa"
+      },
+      {
+        "name": "Napięcie",
+        "value": "11,61 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4070 mAh; min. 3800 mAh"
+      },
+      {
+        "name": "Ogniwa",
+        "value": "3S1P"
+      },
+      {
+        "name": "Wymiary",
+        "value": "140 × 136 × 10,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "305 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm9x5",
+    "slug": "getac-bateria-gbm9x5",
+    "name": "Bateria 9240 mAh Getac GBM9X5 do UX10 G5",
+    "seoTitle": "Bateria 9240 mAh Getac GBM9X5 do UX10 G5",
+    "seoDescription": "Getac GBM9X5 — bateria o dużej pojemności 9240 mAh do tabletu Getac UX10 G5.",
+    "shortDescription": "Getac GBM9X5 — bateria o dużej pojemności 9240 mAh do tabletu Getac UX10 G5.",
+    "description": "Bateria Getac GBM9X5 to bateria o dużej pojemności do tabletu Getac UX10 G5. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 4070 mAh. Bateria pasuje do ładowarek wielostanowiskowych Getac, np. [ładowarki 8-gniazdowej GCECER](/produkt/getac-ladowarka-8-gniazdowa-gcecer).\n\nBateria litowo-jonowa ma napięcie 10,8 V, pojemność 9240 mAh i 9 ogniw (3S3P). Zwiększa grubość tabletu o ok. 11 mm. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nBateria jest sprzedawana pojedynczo. Wersja tabletu UW2964VIX9XX ma baterię 9240 mAh w zestawie.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 718.88,
+    "availability": "available",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM9X5"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa o dużej pojemności"
+      },
+      {
+        "name": "Napięcie",
+        "value": "10,8 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "9240 mAh"
+      },
+      {
+        "name": "Ogniwa",
+        "value": "3S3P"
+      },
+      {
+        "name": "Wymiary",
+        "value": "140 × 136 × 21 mm; tablet grubszy o ok. 11 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "515 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-ladowarka-8-gniazdowa-gcecer",
+    "slug": "getac-ladowarka-8-gniazdowa-gcecer",
+    "name": "Ładowarka 8-gniazdowa Getac GCECER do baterii UX10 G5",
+    "seoTitle": "Ładowarka 8-gniazdowa Getac GCECER do baterii UX10 G5",
+    "seoDescription": "Getac GCECER — ładowarka 8 baterii do tabletu Getac UX10 G5, z zasilaczem 330 W i przewodem zasilającym EU.",
+    "shortDescription": "Getac GCECER — ładowarka 8 baterii do tabletu Getac UX10 G5, z zasilaczem 330 W i przewodem zasilającym EU.",
+    "description": "Ładowarka Getac GCECER ładuje jednocześnie do 8 baterii tabletu Getac UX10 G5. Służy do przygotowania baterii dla całej floty tabletów, np. przed zmianą. Obsługuje baterie standardowe GBM6XA i baterie o dużej pojemności GBM9X5.\n\nŁadowarka ma zasilacz 330 W i przewód zasilający z wtyczką EU. Wejście zasilacza przyjmuje 100–240 V AC. Ładowarka ma wymiary 465 × 245 × 95,3–111,3 mm i masę 4,7 kg bez baterii. Pasuje do baterii tabletu [Getac UX10 G5](/produkt/getac-ux10-g5): [GBM6XA](/produkt/getac-bateria-gbm6xa) i [GBM9X5](/produkt/getac-bateria-gbm9x5).\n\nŁadowarka jest sprzedawana bez baterii.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 4897.37,
+    "availability": "available",
+    "images": [
+      "/images/products/GCECER.png"
+    ],
+    "imageDescriptions": [
+      "Ładowarka 8-gniazdowa Getac GCECER do baterii tabletu UX10 G5"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GCECER"
+      },
+      {
+        "name": "Typ",
+        "value": "Ładowarka wielostanowiskowa, 8 gniazd"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC, 4,2 A, 50–60 Hz"
+      },
+      {
+        "name": "Wyjście",
+        "value": "19,5 V, 16,9 A"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "330 W, w zestawie"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU"
+      },
+      {
+        "name": "Obsługiwane baterie",
+        "value": "Standardowe i o dużej pojemności"
+      },
+      {
+        "name": "Wymiary",
+        "value": "465 × 245 × 95,3–111,3 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "4,7 kg bez baterii"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-biurkowa-gdod2a",
+    "slug": "getac-stacja-biurkowa-gdod2a",
+    "name": "Stacja biurkowa z zasilaczem Getac GDOD2A do UX10 G5",
+    "seoTitle": "Stacja biurkowa z zasilaczem Getac GDOD2A do UX10 G5",
+    "seoDescription": "Getac GDOD2A — stacja biurkowa z zasilaczem do tabletu Getac UX10 G5: LAN, RS-232, HDMI, VGA, 4 × USB. Przewody zasilające EU i UK.",
+    "shortDescription": "Getac GDOD2A — stacja biurkowa z zasilaczem do tabletu Getac UX10 G5: LAN, RS-232, HDMI, VGA, 4 × USB. Przewody zasilające EU i UK.",
+    "description": "Stacja biurkowa Getac GDOD2A ładuje tablet Getac UX10 G5 i udostępnia porty do pracy przy biurku. Porty LAN, RS-232 i USB służą do przesyłania danych do systemów firmy. Porty HDMI i VGA służą do podłączenia monitora lub projektora.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, 2 porty USB 2.0, 2 porty USB 3.0, port LAN, port HDMI, port VGA, port szeregowy i gniazdo Kensington. W zestawie jest zasilacz oraz przewody zasilające z wtyczką EU i UK. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1135.5,
+    "availability": "available",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDOD2A"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja biurkowa"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo DC, wyjście audio, mikrofon, 2 × USB 2.0, 2 × USB 3.0, LAN, HDMI, VGA, port szeregowy, gniazdo Kensington"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja, zasilacz, przewody zasilające z wtyczką EU i UK"
+      },
+      {
+        "name": "Wymiary",
+        "value": "229,1 × 209,9 × 159,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "810 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-klawiatura-gdkbup",
+    "slug": "getac-klawiatura-gdkbup",
+    "name": "Klawiatura odpinana Getac GDKBUP do UX10 G5, układ US",
+    "seoTitle": "Klawiatura odpinana Getac GDKBUP do UX10 G5, układ US",
+    "seoDescription": "Getac GDKBUP — klawiatura odpinana do tabletu Getac UX10 G5: 82 klawisze, klawisz Copilot, touchpad, podświetlenie, IP65, układ US.",
+    "shortDescription": "Getac GDKBUP — klawiatura odpinana do tabletu Getac UX10 G5: 82 klawisze, klawisz Copilot, touchpad, podświetlenie, IP65, układ US.",
+    "description": "Klawiatura odpinana Getac GDKBUP zamienia tablet Getac UX10 G5 w urządzenie do pracy jak na laptopie. Ma 82 klawisze pełnego rozmiaru, osobny klawisz Microsoft Copilot, touchpad i czerwone podświetlenie z 4 poziomami jasności. Z tyłu ma uchwyt do przenoszenia. Podwójna blokada mocuje tablet do klawiatury i zapobiega jego odpięciu.\n\nKlawiatura membranowa ma klasę szczelności IP65 i wytrzymuje upadek z 1,2 m. Układ klawiszy to US. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nKlawiatura nie jest dołączona do tabletu. Getac oferuje do UX10 G5 także klawiaturę ze stacją (keyboard dock).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1629.73,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GDKBUP.png"
+    ],
+    "imageDescriptions": [
+      "Klawiatura odpinana Getac GDKBUP z tabletem UX10 G5"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDKBUP"
+      },
+      {
+        "name": "Typ",
+        "value": "Klawiatura odpinana"
+      },
+      {
+        "name": "Układ",
+        "value": "US, 82 klawisze, klawisz Copilot, touchpad"
+      },
+      {
+        "name": "Podświetlenie",
+        "value": "Czerwone, 4 poziomy"
+      },
+      {
+        "name": "Konstrukcja",
+        "value": "Membranowa, IP65, uchwyt z tyłu"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Wymiary",
+        "value": "285 × 265 × 20 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "900 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-zasilacz-samochodowy-gad2x4",
+    "slug": "getac-zasilacz-samochodowy-gad2x4",
+    "name": "Zasilacz samochodowy 120 W Getac GAD2X4 z wtykiem zapalniczki",
+    "seoTitle": "Zasilacz samochodowy 120 W Getac GAD2X4 z wtykiem zapalniczki",
+    "seoDescription": "Getac GAD2X4 — zasilacz samochodowy DC-DC 120 W z wtykiem gniazda zapalniczki do tabletów Getac UX10 G5, F110 G7, F120 i G140.",
+    "shortDescription": "Getac GAD2X4 — zasilacz samochodowy DC-DC 120 W z wtykiem gniazda zapalniczki do tabletów Getac UX10 G5, F110 G7, F120 i G140.",
+    "description": "Zasilacz samochodowy Getac GAD2X4 zasila tablet i ładuje jego baterie w pojeździe. Wersja GAD2X4 ma wtyk do gniazda zapalniczki. Przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V.\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140). Zdjęcie pokazuje też wersję z przewodami do stałej instalacji (GAD2X8), która nie jest częścią tej oferty.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 404.37,
+    "availability": "available",
+    "images": [
+      "/images/products/GAD2X4.png"
+    ],
+    "imageDescriptions": [
+      "Zasilacze samochodowe Getac 120 W: wersja z wtykiem zapalniczki GAD2X4 i wersja z przewodami"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GAD2X4"
+      },
+      {
+        "name": "Typ",
+        "value": "Zasilacz samochodowy DC-DC 120 W, wtyk gniazda zapalniczki"
+      },
+      {
+        "name": "Napięcie wejściowe",
+        "value": "11–32 V DC"
+      },
+      {
+        "name": "Wyjście",
+        "value": "19 V DC, maks. 6,32 A"
+      },
+      {
+        "name": "Przewody",
+        "value": "Wejściowy 1900 mm, wyjściowy 1000 mm"
+      },
+      {
+        "name": "Wymiary obudowy",
+        "value": "131,5 × 65,6 × 30 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "362 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5, Getac F110 G7, Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-pasek-na-reke-gmhrxk",
+    "slug": "getac-pasek-na-reke-gmhrxk",
+    "name": "Obrotowy pasek na rękę z podpórką Getac GMHRXK do UX10 G5",
+    "seoTitle": "Obrotowy pasek na rękę z podpórką Getac GMHRXK do UX10 G5",
+    "seoDescription": "Getac GMHRXK — obrotowy pasek na rękę z wbudowaną podpórką do tabletu Getac UX10 G5.",
+    "shortDescription": "Getac GMHRXK — obrotowy pasek na rękę z wbudowaną podpórką do tabletu Getac UX10 G5.",
+    "description": "Pasek Getac GMHRXK mocuje tablet Getac UX10 G5 do dłoni i ułatwia jego przenoszenie. Pasek ma regulację rozmiaru i obraca się o 360°, dlatego ekran można ustawić pod wygodnym kątem. Wbudowana podpórka utrzymuje tablet na płaskiej powierzchni bez trzymania w ręce.\n\nPasek jest wykonany ze skóry PU, ma wymiary 65 × 155 × 23 mm i masę 157,5 g. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nPasek przydaje się podczas pracy na stojąco, np. przy inwentaryzacji lub odbiorze dostaw, gdy druga ręka obsługuje ekran.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 290,
+    "availability": "available",
+    "images": [
+      "/images/products/GMHRXK.png"
+    ],
+    "imageDescriptions": [
+      "Obrotowy pasek na rękę z podpórką Getac GMHRXK, widok paska i paska zamocowanego na tablecie"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMHRXK"
+      },
+      {
+        "name": "Typ",
+        "value": "Obrotowy pasek na rękę z podpórką"
+      },
+      {
+        "name": "Obrót",
+        "value": "360°"
+      },
+      {
+        "name": "Materiał",
+        "value": "Skóra PU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "65 × 155 × 23 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "157,5 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-etui-gmbcxa",
+    "slug": "getac-etui-gmbcxa",
+    "name": "Etui typu folio Getac GMBCXA do UX10 G5",
+    "seoTitle": "Etui typu folio Getac GMBCXA do UX10 G5",
+    "seoDescription": "Getac GMBCXA — nylonowe etui typu folio do tabletu Getac UX10 G5, z klapą do ustawiania tabletu i 4 uchwytami na pasek.",
+    "shortDescription": "Getac GMBCXA — nylonowe etui typu folio do tabletu Getac UX10 G5, z klapą do ustawiania tabletu i 4 uchwytami na pasek.",
+    "description": "Etui Getac GMBCXA jest zaprojektowane dla tabletu Getac UX10. Okrywa tablet i chroni go przed zarysowaniem, brudem i uderzeniami. Nie zasłania portów ani przycisków.\n\nPrzednia klapa z antypoślizgowymi paskami pozwala ustawić tablet poziomo pod kilkoma kątami. Etui ma 4 uchwyty typu D do zamocowania paska na ramię lub szelek, sprzedawanych osobno. Etui jest wykonane z nylonu, ma wymiary 223 × 295 × 33,5 mm i masę 498 g. Pasuje do tabletu [Getac UX10 G5](/produkt/getac-ux10-g5).\n\nEtui chroni tablet podczas pracy i transportu.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 404.37,
+    "availability": "available",
+    "images": [
+      "/images/products/GMBCXA.png"
+    ],
+    "imageDescriptions": [
+      "Etui typu folio Getac GMBCXA, ustawienie tabletu na klapie"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMBCXA"
+      },
+      {
+        "name": "Typ",
+        "value": "Etui typu folio"
+      },
+      {
+        "name": "Materiał",
+        "value": "Nylon"
+      },
+      {
+        "name": "Mocowania",
+        "value": "4 uchwyty typu D na pasek na ramię lub szelki"
+      },
+      {
+        "name": "Wymiary",
+        "value": "223 × 295 × 33,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "498 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-usb-c-ds100-gddse2",
+    "slug": "getac-stacja-usb-c-ds100-gddse2",
+    "name": "Stacja dokująca USB-C Getac DS100 GDDSE2",
+    "seoTitle": "Stacja dokująca USB-C Getac DS100 GDDSE2",
+    "seoDescription": "Getac DS100 GDDSE2 — stacja dokująca USB-C z zasilaczem do tabletów Getac UX10 G5, F110 G7, F120, K120 G3 i G140: LAN, HDMI, 2 × DisplayPort, 5 × USB.",
+    "shortDescription": "Getac DS100 GDDSE2 — stacja dokująca USB-C z zasilaczem do tabletów Getac UX10 G5, F110 G7, F120, K120 G3 i G140: LAN, HDMI, 2 × DisplayPort, 5 × USB.",
+    "description": "Stacja dokująca Getac DS100 łączy się z tabletem jednym przewodem USB-C. Udostępnia porty do monitorów, sieci i urządzeń peryferyjnych na stanowisku pracy. Obsługuje funkcje dla działu IT: przekazywanie adresu MAC (MAC Address Pass-Through), Wake-on-LAN i rozruch PXE.\n\nStacja ma gniazdo zasilania DC, 3 porty USB 3.2 Gen 1 Type-A, 2 porty USB 3.2 Gen 2 Type-C, port LAN, port HDMI 2.0 i 2 porty DisplayPort 1.4. Przewód USB-C ma 1 m. W zestawie jest zasilacz z przewodem zasilającym z wtyczką EU. Stacja jest przeznaczona do stref bez zagrożenia wybuchem. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 771.98,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GDDSE2.png"
+    ],
+    "imageDescriptions": [
+      "Stacja dokująca USB-C Getac DS100 GDDSE2, widok z przodu i z tyłu"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDDSE2"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja dokująca USB-C"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo DC, 3 × USB 3.2 Gen 1 Type-A, 2 × USB 3.2 Gen 2 Type-C, LAN, HDMI 2.0, 2 × DisplayPort 1.4, gniazda Kensington i Kensington Nano"
+      },
+      {
+        "name": "Funkcje sieciowe",
+        "value": "MAC Address Pass-Through, Wake-on-LAN, PXE"
+      },
+      {
+        "name": "Przewody",
+        "value": "USB-C 1 m, przewód zasilający 1,8 m z wtyczką EU"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja, zasilacz 135 W, przewód zasilający"
+      },
+      {
+        "name": "Wymiary",
+        "value": "207 × 90 × 34,1 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "372,4 g bez zasilacza"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5, Getac F110 G7, Getac F120, Getac K120 G3, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "getac-f120",
+      "getac-k120-g3",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-rysik-digitizer-gmpdx6",
+    "slug": "getac-rysik-digitizer-gmpdx6",
+    "name": "Pióro digitizer Getac GMPDX6 do UX10, F110, F120, K120 i G140",
+    "seoTitle": "Pióro digitizer Getac GMPDX6 do UX10, F110, F120, K120 i G140",
+    "seoDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac z Windows z ekranem z digitizerem.",
+    "shortDescription": "Getac GMPDX6 — pióro digitizer z linką i przyciskiem do tabletów Getac z Windows z ekranem z digitizerem.",
+    "description": "Pióro Getac GMPDX6 służy do precyzyjnego wprowadzania danych i podpisów odręcznych. Przycisk na piórze działa jak prawy przycisk myszy. Pióro działa z tabletami, które mają ekran z digitizerem.\n\nPióro ma długość 109 mm i średnicę 9 mm. Linka o długości 292 mm mocuje pióro do tabletu. Pióro pasuje do wersji z digitizerem tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120), [K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140).\n\nWersje tabletów z digitizerem mają w nazwie wariantu słowo „digitizer”. W tabletach Getac F120 i G140 funkcja Smart Touch obsługuje też rysik bez digitizera.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 147.04,
+    "availability": "available",
+    "images": [
+      "/images/products/GMPDX6.png"
+    ],
+    "imageDescriptions": [
+      "Pióro digitizer Getac GMPDX6 z linką"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMPDX6"
+      },
+      {
+        "name": "Typ",
+        "value": "Pióro digitizer z linką"
+      },
+      {
+        "name": "Przycisk",
+        "value": "Funkcja prawego przycisku myszy"
+      },
+      {
+        "name": "Wymiary",
+        "value": "109 mm, średnica 9 mm"
+      },
+      {
+        "name": "Końcówka",
+        "value": "2,0 mm; średnica 1,65 mm"
+      },
+      {
+        "name": "Długość linki",
+        "value": "292 mm"
+      },
+      {
+        "name": "Wymaganie",
+        "value": "Tablet z ekranem z digitizerem"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac UX10 G5, Getac F110 G7, Getac F120, Getac K120 G3, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-ux10-g5",
+      "getac-f110-g7",
+      "getac-f120",
+      "getac-k120-g3",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm3x7",
+    "slug": "getac-bateria-gbm3x7",
+    "name": "Bateria 2680 mAh Getac GBM3X7 do F110 G7",
+    "seoTitle": "Bateria 2680 mAh Getac GBM3X7 do F110 G7",
+    "seoDescription": "Getac GBM3X7 — bateria 2680 mAh ze wskaźnikiem naładowania do tabletu Getac F110 G7.",
+    "shortDescription": "Getac GBM3X7 — bateria 2680 mAh ze wskaźnikiem naładowania do tabletu Getac F110 G7.",
+    "description": "Bateria Getac GBM3X7 to bateria standardowa do tabletu Getac F110 G7. Tablet pracuje na 2 takich bateriach i pozwala wymienić jedną z nich bez wyłączania (technologia LifeSupport). Zapasowe baterie wydłużają pracę w terenie.\n\nNa obudowie baterii jest wskaźnik naładowania z diodami LED. Po naciśnięciu przycisku zapalają się diody; każda oznacza 20% naładowania. Bateria litowo-jonowa ma napięcie 11,4 V i pojemność typową 2680 mAh. Pasuje do tabletu [Getac F110 G7](/produkt/getac-f110-g7).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCEL](/produkt/getac-ladowarka-2-gniazdowa-gcmcel).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 322.68,
+    "availability": "available",
+    "images": [
+      "/images/products/GBM3X7.png"
+    ],
+    "imageDescriptions": [
+      "Bateria Getac GBM3X7 2680 mAh do tabletu F110 G7"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM3X7"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "11,4 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 2680 mAh; min. 2640 mAh"
+      },
+      {
+        "name": "Wskaźnik naładowania",
+        "value": "Diody LED, każda oznacza 20%"
+      },
+      {
+        "name": "Wymiary",
+        "value": "141 × 73,4 × 11,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "160 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F110 G7"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f110-g7"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm6x7",
+    "slug": "getac-bateria-gbm6x7",
+    "name": "Bateria 4200 mAh Getac GBM6X7 do F110 G7",
+    "seoTitle": "Bateria 4200 mAh Getac GBM6X7 do F110 G7",
+    "seoDescription": "Getac GBM6X7 — bateria o dużej pojemności 4200 mAh do tabletu Getac F110 G7.",
+    "shortDescription": "Getac GBM6X7 — bateria o dużej pojemności 4200 mAh do tabletu Getac F110 G7.",
+    "description": "Bateria Getac GBM6X7 to bateria o dużej pojemności do tabletu Getac F110 G7. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową 2680 mAh. Tablet pracuje na 2 bateriach i pozwala wymienić jedną z nich bez wyłączania (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 11,1 V i pojemność typową 4200 mAh. Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 6 mm i masę o ok. 0,24 kg. Pasuje do tabletu [Getac F110 G7](/produkt/getac-f110-g7).\n\nBateria jest sprzedawana pojedynczo.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 486.06,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GBM6X7.png"
+    ],
+    "imageDescriptions": [
+      "Bateria o dużej pojemności Getac GBM6X7 4200 mAh do tabletu F110 G7"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM6X7"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa o dużej pojemności"
+      },
+      {
+        "name": "Napięcie",
+        "value": "11,1 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4200 mAh; min. 4080 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "141 × 73,4 × 17,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "280 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F110 G7"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f110-g7"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-ladowarka-2-gniazdowa-gcmcel",
+    "slug": "getac-ladowarka-2-gniazdowa-gcmcel",
+    "name": "Ładowarka 2-gniazdowa Getac GCMCEL do baterii F110 G7",
+    "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCEL do baterii F110 G7",
+    "seoDescription": "Getac GCMCEL — zewnętrzna ładowarka 2 baterii do tabletu Getac F110 G7, z przewodem zasilającym EU.",
+    "shortDescription": "Getac GCMCEL — zewnętrzna ładowarka 2 baterii do tabletu Getac F110 G7, z przewodem zasilającym EU.",
+    "description": "Ładowarka Getac GCMCEL ładuje jednocześnie 2 baterie tabletu Getac F110 G7 poza tabletem. Pozwala przygotować naładowane baterie na kolejną zmianę. Ładowarka obsługuje baterie standardowe GBM3X7 i baterie o dużej pojemności GBM6X7.\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg. Pasuje do baterii tabletu [Getac F110 G7](/produkt/getac-f110-g7): [GBM3X7](/produkt/getac-bateria-gbm3x7) i [GBM6X7](/produkt/getac-bateria-gbm6x7).\n\nŁadowarka jest sprzedawana bez baterii. Mieści się na biurku przy stanowisku wydawania sprzętu.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1294.8,
+    "availability": "available",
+    "images": [
+      "/images/products/GCMCEL.png"
+    ],
+    "imageDescriptions": [
+      "Ładowarka 2-gniazdowa Getac GCMCEL do baterii tabletu F110 G7"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GCMCEL"
+      },
+      {
+        "name": "Typ",
+        "value": "Zewnętrzna ładowarka baterii, 2 gniazda"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC"
+      },
+      {
+        "name": "Wyjście",
+        "value": "13,05 V, maks. 2,4 A"
+      },
+      {
+        "name": "Obsługiwane baterie",
+        "value": "Standardowe i o dużej pojemności"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "160 × 180 × 72,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,2 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F110 G7"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f110-g7"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-biurkowa-gdode7",
+    "slug": "getac-stacja-biurkowa-gdode7",
+    "name": "Stacja biurkowa z zasilaczem 90 W Getac GDODE7 do F110 G7",
+    "seoTitle": "Stacja biurkowa z zasilaczem 90 W Getac GDODE7 do F110 G7",
+    "seoDescription": "Getac GDODE7 — stacja biurkowa ze złączem pogo i zasilaczem 90 W do tabletu Getac F110 G7: LAN, 2 × RS-232, HDMI, VGA, 4 × USB.",
+    "shortDescription": "Getac GDODE7 — stacja biurkowa ze złączem pogo i zasilaczem 90 W do tabletu Getac F110 G7: LAN, 2 × RS-232, HDMI, VGA, 4 × USB.",
+    "description": "Stacja biurkowa Getac GDODE7 ładuje tablet Getac F110 G7 i udostępnia porty do pracy przy biurku. Tablet łączy się ze stacją przez złącze pogo. Porty LAN, RS-232 i USB służą do przesyłania danych, a porty HDMI i VGA do podłączenia monitora lub projektora.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, 3 porty USB 2.0, port USB 3.0, port LAN, port HDMI, port VGA, 2 porty szeregowe i gniazdo Kensington. W zestawie jest zasilacz 90 W z przewodem zasilającym z wtyczką EU. Pasuje do tabletu [Getac F110 G7](/produkt/getac-f110-g7).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1135.5,
+    "availability": "available",
+    "images": [
+      "/images/products/GDODE7.png"
+    ],
+    "imageDescriptions": [
+      "Stacja biurkowa Getac GDODE7 do tabletu F110 G7"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDODE7"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja biurkowa ze złączem pogo"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo DC, wyjście audio, mikrofon, 3 × USB 2.0, USB 3.0, LAN, HDMI, VGA, 2 × port szeregowy, gniazdo Kensington"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja, zasilacz 90 W, przewód zasilający z wtyczką EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "223,4 × 124,9 × 240 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1000 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F110 G7"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f110-g7"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm2x4",
+    "slug": "getac-bateria-gbm2x4",
+    "name": "Bateria 4070 mAh Getac GBM2X4 do F120 i G140",
+    "seoTitle": "Bateria 4070 mAh Getac GBM2X4 do F120 i G140",
+    "seoDescription": "Getac GBM2X4 — bateria standardowa 4070 mAh do tabletów Getac F120 i G140.",
+    "shortDescription": "Getac GBM2X4 — bateria standardowa 4070 mAh do tabletów Getac F120 i G140.",
+    "description": "Bateria Getac GBM2X4 to bateria standardowa do tabletów Getac F120 i G140. Tablety pracują na 2 bateriach i pozwalają wymienić jedną z nich bez wyłączania (technologia LifeSupport). Zapasowe baterie pozwalają pracować przez całą zmianę bez przestojów.\n\nBateria litowo-polimerowa ma napięcie 7,74 V i pojemność typową 4070 mAh. Większy zapas energii daje [bateria GBM3X8](/produkt/getac-bateria-gbm3x8). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).\n\nBateria jest sprzedawana pojedynczo. Te same baterie pasują do obu tabletów. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 322.68,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GBM2X4.png"
+    ],
+    "imageDescriptions": [
+      "Bateria Getac GBM2X4 4070 mAh do tabletów F120 i G140"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM2X4"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "7,74 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4070 mAh; min. 3800 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "133 × 74 × 10 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "146 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm3x8",
+    "slug": "getac-bateria-gbm3x8",
+    "name": "Bateria o dużej pojemności Getac GBM3X8 do F120 i G140",
+    "seoTitle": "Bateria o dużej pojemności Getac GBM3X8 do F120 i G140",
+    "seoDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140.",
+    "shortDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140.",
+    "description": "Bateria Getac GBM3X8 to bateria o dużej pojemności do tabletów Getac F120 i G140. Ma wyższe napięcie niż bateria standardowa: 11,61 V zamiast 7,74 V przy tej samej pojemności typowej 4070 mAh. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową.\n\nBateria litowo-polimerowa ma grubość 16,8 mm i masę 205 g. Tablety pozwalają wymienić jedną baterię bez wyłączania (technologia LifeSupport). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 486.06,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GBM3X8.png"
+    ],
+    "imageDescriptions": [
+      "Bateria o dużej pojemności Getac GBM3X8 do tabletów F120 i G140"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM3X8"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-polimerowa o dużej pojemności"
+      },
+      {
+        "name": "Napięcie",
+        "value": "11,61 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 4070 mAh; min. 3800 mAh"
+      },
+      {
+        "name": "Wymiary",
+        "value": "133 × 74 × 16,8 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "205 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-ladowarka-2-gniazdowa-gcmcet",
+    "slug": "getac-ladowarka-2-gniazdowa-gcmcet",
+    "name": "Ładowarka 2-gniazdowa Getac GCMCET do baterii F120 i G140",
+    "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCET do baterii F120 i G140",
+    "seoDescription": "Getac GCMCET — zewnętrzna ładowarka 2 baterii do tabletów Getac F120 i G140, z przewodem zasilającym EU.",
+    "shortDescription": "Getac GCMCET — zewnętrzna ładowarka 2 baterii do tabletów Getac F120 i G140, z przewodem zasilającym EU.",
+    "description": "Ładowarka Getac GCMCET ładuje jednocześnie 2 baterie tabletów Getac F120 i G140 poza tabletem. Pozwala przygotować naładowane baterie na kolejną zmianę. Ładowarka obsługuje baterie standardowe GBM2X4 i baterie o dużej pojemności GBM3X8.\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg bez baterii. Pasuje do baterii tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140): [GBM2X4](/produkt/getac-bateria-gbm2x4) i [GBM3X8](/produkt/getac-bateria-gbm3x8).\n\nŁadowarka jest sprzedawana bez baterii. Jedna ładowarka obsługuje baterie obu tabletów.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1294.8,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GCMCET.png"
+    ],
+    "imageDescriptions": [
+      "Ładowarka 2-gniazdowa Getac GCMCET do baterii tabletów F120 i G140"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GCMCET"
+      },
+      {
+        "name": "Typ",
+        "value": "Zewnętrzna ładowarka baterii, 2 gniazda"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC"
+      },
+      {
+        "name": "Wyjście",
+        "value": "13,05 V, maks. 2,4 A"
+      },
+      {
+        "name": "Obsługiwane baterie",
+        "value": "Standardowe i o dużej pojemności"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "160 × 180 × 72,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,2 kg bez baterii"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-klawiatura-gdkbus",
+    "slug": "getac-klawiatura-gdkbus",
+    "name": "Klawiatura ze stacją Getac GDKBUS do F120, układ US",
+    "seoTitle": "Klawiatura ze stacją Getac GDKBUS do F120, układ US",
+    "seoDescription": "Getac GDKBUS — klawiatura ze stacją (keyboard dock) do tabletu Getac F120: 83 klawisze, touchpad, podświetlenie, IP66, USB-A i LAN, układ US.",
+    "shortDescription": "Getac GDKBUS — klawiatura ze stacją (keyboard dock) do tabletu Getac F120: 83 klawisze, touchpad, podświetlenie, IP66, USB-A i LAN, układ US.",
+    "description": "Klawiatura ze stacją Getac GDKBUS zamienia tablet Getac F120 w urządzenie do pracy jak na laptopie. Ma 83 klawisze pełnego rozmiaru, touchpad i czerwone podświetlenie z 4 poziomami jasności. Podwójna blokada mocuje tablet do klawiatury i zapobiega jego odpięciu.\n\nKlawiatura membranowa ma klasę szczelności IP66 i wytrzymuje upadek z 1,2 m. Ma port USB 3.1 Gen 1 Type-A i port LAN. Układ klawiszy to US. Pasuje do tabletu [Getac F120](/produkt/getac-f120).\n\nKlawiatura nie jest dołączona do tabletu. Port LAN w klawiaturze daje połączenie przewodowe bez stacji biurkowej.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 2160.73,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/GDKBUS.png"
+    ],
+    "imageDescriptions": [
+      "Klawiatura ze stacją Getac GDKBUS do tabletu F120"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDKBUS"
+      },
+      {
+        "name": "Typ",
+        "value": "Klawiatura ze stacją (keyboard dock)"
+      },
+      {
+        "name": "Układ",
+        "value": "US, 83 klawisze, touchpad"
+      },
+      {
+        "name": "Podświetlenie",
+        "value": "Czerwone, 4 poziomy"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 3.1 Gen 1 Type-A, LAN, złącze dokujące tabletu"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66, konstrukcja membranowa"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Wymiary",
+        "value": "312 × 260 × 21,7 mm; z uchwytem tabletu 312 × 260 × 57,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "980 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-pasek-na-reke-gmhrxq",
+    "slug": "getac-pasek-na-reke-gmhrxq",
+    "name": "Obrotowy pasek na rękę z podpórką Getac GMHRXQ do F120 i G140",
+    "seoTitle": "Obrotowy pasek na rękę z podpórką Getac GMHRXQ do F120 i G140",
+    "seoDescription": "Getac GMHRXQ — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac F120 i G140.",
+    "shortDescription": "Getac GMHRXQ — obrotowy pasek na rękę z wbudowaną podpórką do tabletów Getac F120 i G140.",
+    "description": "Pasek Getac GMHRXQ mocuje tablet do dłoni i ułatwia jego przenoszenie. Pasek ma regulację rozmiaru i obraca się o 360°, dlatego ekran można ustawić pod wygodnym kątem. Wbudowana podpórka utrzymuje tablet na płaskiej powierzchni bez trzymania w ręce.\n\nPasek jest wykonany z poliuretanu (PU), ma wymiary 236 × 136 × 25 mm i masę 202 g. Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140).\n\nPasek przydaje się podczas pracy na stojąco, np. przy inwentaryzacji lub odbiorze dostaw, gdy druga ręka obsługuje ekran.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 290,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GMHRXQ.png"
+    ],
+    "imageDescriptions": [
+      "Obrotowy pasek na rękę z podpórką Getac GMHRXQ, widok paska i paska zamocowanego na tablecie"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMHRXQ"
+      },
+      {
+        "name": "Typ",
+        "value": "Obrotowy pasek na rękę z podpórką"
+      },
+      {
+        "name": "Obrót",
+        "value": "360°"
+      },
+      {
+        "name": "Materiał",
+        "value": "Poliuretan (PU)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "236 × 136 × 25 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "202 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac F120, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-f120",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm3x4",
+    "slug": "getac-bateria-gbm3x4",
+    "name": "Bateria 2100 mAh Getac GBM3X4 do K120 G3",
+    "seoTitle": "Bateria 2100 mAh Getac GBM3X4 do K120 G3",
+    "seoDescription": "Getac GBM3X4 — bateria standardowa 2100 mAh do tabletu Getac K120 G3, wymieniana bez wyłączania tabletu.",
+    "shortDescription": "Getac GBM3X4 — bateria standardowa 2100 mAh do tabletu Getac K120 G3, wymieniana bez wyłączania tabletu.",
+    "description": "Bateria Getac GBM3X4 jest zaprojektowana dla tabletu Getac K120. Tablet pracuje na 2 bateriach, a jedną z nich wymienia się w terenie bez wyłączania tabletu (technologia LifeSupport). Zapasowe baterie wydłużają pracę bez dostępu do zasilania.\n\nBateria litowo-jonowa ma napięcie 11,1 V, pojemność typową 2100 mAh i 3 ogniwa (3S1P). Dłuższą pracę zapewnia [bateria GBM4X4](/produkt/getac-bateria-gbm4x4) 3450 mAh. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCEF](/produkt/getac-ladowarka-2-gniazdowa-gcmcef).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 322.68,
+    "availability": "available",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM3X4"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "11,1 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 2100 mAh; min. 2040 mAh"
+      },
+      {
+        "name": "Ogniwa",
+        "value": "3S1P"
+      },
+      {
+        "name": "Wymiary",
+        "value": "123,9 × 91,2 × 12,3 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "160 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-bateria-gbm4x4",
+    "slug": "getac-bateria-gbm4x4",
+    "name": "Bateria 3450 mAh Getac GBM4X4 do K120 G3",
+    "seoTitle": "Bateria 3450 mAh Getac GBM4X4 do K120 G3",
+    "seoDescription": "Getac GBM4X4 — bateria o dużej pojemności 3450 mAh do tabletu Getac K120 G3.",
+    "shortDescription": "Getac GBM4X4 — bateria o dużej pojemności 3450 mAh do tabletu Getac K120 G3.",
+    "description": "Bateria Getac GBM4X4 to bateria o dużej pojemności do tabletu Getac K120 G3. Według producenta wydłuża czas pracy do 2 razy w porównaniu z baterią standardową. Baterię wymienia się bez wyłączania tabletu (technologia LifeSupport).\n\nBateria litowo-jonowa ma napięcie 14,4 V, pojemność typową 3450 mAh i 4 ogniwa (4S1P). Dwie baterie o dużej pojemności zwiększają grubość tabletu o ok. 11 mm i masę o ok. 0,2 kg. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).\n\nBateria jest sprzedawana pojedynczo.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 486.06,
+    "availability": "on-order",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GBM4X4"
+      },
+      {
+        "name": "Typ",
+        "value": "Bateria litowo-jonowa o dużej pojemności, wymienna bez wyłączania tabletu"
+      },
+      {
+        "name": "Napięcie",
+        "value": "14,4 V"
+      },
+      {
+        "name": "Pojemność",
+        "value": "Typowo 3450 mAh; min. 3300 mAh"
+      },
+      {
+        "name": "Ogniwa",
+        "value": "4S1P"
+      },
+      {
+        "name": "Wymiary",
+        "value": "123,9 × 115,4 × 22,3 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "260 g"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-ladowarka-2-gniazdowa-gcmcef",
+    "slug": "getac-ladowarka-2-gniazdowa-gcmcef",
+    "name": "Ładowarka 2-gniazdowa Getac GCMCEF do baterii K120 G3",
+    "seoTitle": "Ładowarka 2-gniazdowa Getac GCMCEF do baterii K120 G3",
+    "seoDescription": "Getac GCMCEF — zewnętrzna ładowarka 2 baterii do tabletu Getac K120 G3, z przewodem zasilającym EU.",
+    "shortDescription": "Getac GCMCEF — zewnętrzna ładowarka 2 baterii do tabletu Getac K120 G3, z przewodem zasilającym EU.",
+    "description": "Ładowarka Getac GCMCEF ładuje jednocześnie 2 baterie tabletu Getac K120 G3 poza tabletem. Pozwala przygotować naładowane baterie na kolejną zmianę. Ładowarka obsługuje baterie standardowe GBM3X4 i baterie o dużej pojemności GBM4X4.\n\nŁadowarka przyjmuje napięcie 100–240 V AC i ma przewód zasilający z wtyczką EU. Ma wymiary 160 × 180 × 72,5 mm i masę 1,2 kg. Pasuje do baterii tabletu [Getac K120 G3](/produkt/getac-k120-g3): [GBM3X4](/produkt/getac-bateria-gbm3x4) i [GBM4X4](/produkt/getac-bateria-gbm4x4).\n\nŁadowarka jest sprzedawana bez baterii. Mieści się na biurku przy stanowisku wydawania sprzętu.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1294.8,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GCMCEF"
+      },
+      {
+        "name": "Typ",
+        "value": "Zewnętrzna ładowarka baterii, 2 gniazda"
+      },
+      {
+        "name": "Wejście",
+        "value": "100–240 V AC"
+      },
+      {
+        "name": "Wyjście",
+        "value": "13,05 V, maks. 2,4 A"
+      },
+      {
+        "name": "Obsługiwane baterie",
+        "value": "Standardowe i o dużej pojemności"
+      },
+      {
+        "name": "Przewód zasilający",
+        "value": "Wtyczka EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "160 × 180 × 72,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,2 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-stacja-biurkowa-gdode5",
+    "slug": "getac-stacja-biurkowa-gdode5",
+    "name": "Stacja biurkowa z zasilaczem 120 W Getac GDODE5 do K120 G3 (tryb tabletu)",
+    "seoTitle": "Stacja biurkowa z zasilaczem 120 W Getac GDODE5 do K120 G3 (tryb tabletu)",
+    "seoDescription": "Getac GDODE5 — stacja biurkowa do tabletu Getac K120 G3 w trybie tabletu, z zasilaczem 120 W: 2 × LAN, RS-232, HDMI, VGA, 5 × USB.",
+    "shortDescription": "Getac GDODE5 — stacja biurkowa do tabletu Getac K120 G3 w trybie tabletu, z zasilaczem 120 W: 2 × LAN, RS-232, HDMI, VGA, 5 × USB.",
+    "description": "Stacja biurkowa Getac GDODE5 ładuje tablet Getac K120 G3 i udostępnia porty do pracy przy biurku. Ta wersja przyjmuje tablet w trybie tabletu, bez klawiatury. Tablet łączy się ze stacją przez złącze pogo.\n\nStacja ma gniazdo zasilania DC, wyjście audio, wejście mikrofonowe, 2 porty USB 2.0, 3 porty USB 3.0, 2 porty LAN, port HDMI, port VGA, port szeregowy i gniazdo Kensington. W zestawie jest zasilacz 120 W z przewodem zasilającym z wtyczką EU. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1490.86,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDODE5"
+      },
+      {
+        "name": "Typ",
+        "value": "Stacja biurkowa ze złączem pogo, tryb tabletu"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo DC, wyjście audio, mikrofon, 2 × USB 2.0, 3 × USB 3.0, 2 × LAN, HDMI, VGA, port szeregowy, gniazdo Kensington"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja, zasilacz 120 W, przewód zasilający z wtyczką EU"
+      },
+      {
+        "name": "Wymiary",
+        "value": "313,3 × 203,3 × 265,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,45 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-klawiatura-gdkbum",
+    "slug": "getac-klawiatura-gdkbum",
+    "name": "Klawiatura odpinana Getac GDKBUM do K120 G3, układ US",
+    "seoTitle": "Klawiatura odpinana Getac GDKBUM do K120 G3, układ US",
+    "seoDescription": "Getac GDKBUM — klawiatura odpinana do tabletu Getac K120 G3: 88 klawiszy, touchpad Precision, podświetlenie, IP66, układ US.",
+    "shortDescription": "Getac GDKBUM — klawiatura odpinana do tabletu Getac K120 G3: 88 klawiszy, touchpad Precision, podświetlenie, IP66, układ US.",
+    "description": "Klawiatura odpinana Getac GDKBUM zamienia tablet Getac K120 G3 w urządzenie do pracy jak na laptopie. Ma 88 klawiszy pełnego rozmiaru, touchpad Precision (PTP) i czerwone podświetlenie z 4 poziomami jasności. Podwójna blokada mocuje tablet do klawiatury i zapobiega jego odpięciu.\n\nKlawiatura membranowa ma klasę szczelności IP66 i wytrzymuje upadek z 1,2 m. Ma gniazdo zasilania DC. Układ klawiszy to US. Klawiatura nie współpracuje ze stacjami biurkowymi i pojazdowymi K120 w trybie laptopa. Do tych stacji służy [klawiatura ze stacją GDKBUN](/produkt/getac-klawiatura-gdkbun). Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 1833.96,
+    "availability": "unavailable",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDKBUM"
+      },
+      {
+        "name": "Typ",
+        "value": "Klawiatura odpinana"
+      },
+      {
+        "name": "Układ",
+        "value": "US, 88 klawiszy, touchpad Precision (PTP)"
+      },
+      {
+        "name": "Podświetlenie",
+        "value": "Czerwone, 4 poziomy"
+      },
+      {
+        "name": "Porty",
+        "value": "Gniazdo zasilania DC"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66, konstrukcja membranowa"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Zgodność ze stacjami",
+        "value": "Nie współpracuje ze stacjami K120 w trybie laptopa"
+      },
+      {
+        "name": "Wymiary",
+        "value": "340,5 × 327,5 × 21 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,25 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-klawiatura-gdkbun",
+    "slug": "getac-klawiatura-gdkbun",
+    "name": "Klawiatura ze stacją Getac GDKBUN do K120 G3, układ US",
+    "seoTitle": "Klawiatura ze stacją Getac GDKBUN do K120 G3, układ US",
+    "seoDescription": "Getac GDKBUN — klawiatura ze stacją do tabletu Getac K120 G3: 83 klawisze, uchwyt, porty LAN, HDMI, RS-232, 3 × USB-A, złącza anten, układ US.",
+    "shortDescription": "Getac GDKBUN — klawiatura ze stacją do tabletu Getac K120 G3: 83 klawisze, uchwyt, porty LAN, HDMI, RS-232, 3 × USB-A, złącza anten, układ US.",
+    "description": "Klawiatura ze stacją Getac GDKBUN zamienia tablet Getac K120 G3 w urządzenie do pracy jak na laptopie. Ma 83 klawisze pełnego rozmiaru, touchpad, czerwone podświetlenie z 4 poziomami jasności i uchwyt z tyłu. Podwójna blokada mocuje tablet do klawiatury i zapobiega jego odpięciu.\n\nKlawiatura ma port USB-C do ładowania, gniazdo zasilania DC, 3 porty USB 3.2 Type-A, port LAN, port HDMI, port szeregowy, port DisplayPort i złącza anten zewnętrznych (GPS, WLAN, WWAN). Ma klasę szczelności IP66 i wytrzymuje upadek z 1,2 m. Współpracuje ze stacjami biurkowymi i pojazdowymi K120 w trybie laptopa. Układ klawiszy to US. Pasuje do tabletu [Getac K120 G3](/produkt/getac-k120-g3).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 3141.02,
+    "availability": "available",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GDKBUN"
+      },
+      {
+        "name": "Typ",
+        "value": "Klawiatura ze stacją (keyboard dock) ze złączami anten"
+      },
+      {
+        "name": "Układ",
+        "value": "US, 83 klawisze, touchpad"
+      },
+      {
+        "name": "Podświetlenie",
+        "value": "Czerwone, 4 poziomy"
+      },
+      {
+        "name": "Porty",
+        "value": "USB-C (ładowanie), gniazdo DC, 3 × USB 3.2 Type-A, LAN, HDMI, port szeregowy, DisplayPort, złącza RF pass-through (GPS, WLAN, WWAN)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66, konstrukcja membranowa"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m"
+      },
+      {
+        "name": "Zgodność ze stacjami",
+        "value": "Współpracuje ze stacjami K120 w trybie laptopa"
+      },
+      {
+        "name": "Wymiary",
+        "value": "340,5 × 327,5 × 21 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,43 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-torba-gmbcx7",
+    "slug": "getac-torba-gmbcx7",
+    "name": "Torba Getac GMBCX7 do K120 G3 i G140",
+    "seoTitle": "Torba Getac GMBCX7 do K120 G3 i G140",
+    "seoDescription": "Getac GMBCX7 — torba z regulowanym paskiem na ramię do tabletów Getac K120 G3 i G140.",
+    "shortDescription": "Getac GMBCX7 — torba z regulowanym paskiem na ramię do tabletów Getac K120 G3 i G140.",
+    "description": "Torba Getac GMBCX7 chroni urządzenie podczas transportu. Ma regulowany, wyściełany pasek na ramię i kieszenie wewnątrz. W torbie mieści się tablet razem z potrzebnymi akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 405 × 330 × 100 mm i masę 1,335 kg. Pasuje do tabletów [Getac K120 G3](/produkt/getac-k120-g3) i [G140](/produkt/getac-g140).\n\nTorba przydaje się przy przewożeniu tabletu w pojeździe i przy pracy w terenie. W torbie można przewozić tablet razem z akcesoriami, np. zasilaczem i zapasowymi bateriami.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "getac",
+    "priceFrom": 526.91,
+    "availability": "on-order",
+    "images": [
+      "/images/products/GMBCX7.png"
+    ],
+    "imageDescriptions": [
+      "Torba Getac GMBCX7 do tabletów K120 G3 i G140"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "GMBCX7"
+      },
+      {
+        "name": "Typ",
+        "value": "Torba z paskiem na ramię"
+      },
+      {
+        "name": "Materiał",
+        "value": "Nylon, tkanina siatkowa (air mesh)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "405 × 330 × 100 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "1,335 kg"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Getac K120 G3, Getac G140"
+      }
+    ],
+    "applications": [],
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "getac-k120-g3",
+      "getac-g140"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  }
 ]
