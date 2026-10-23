@@ -575,7 +575,8 @@ export const getacTabletProducts: Product[] = [
       "getac-klawiatura-gdkbur",
       "getac-ladowarka-2-gniazdowa-gcmcem",
       "getac-pasek-na-reke-gmhrxm",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-zx80",
@@ -970,7 +971,11 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxk",
       "getac-etui-gmbcxa",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-zasilacz-samochodowy-gad2x8",
+      "getac-zasilacz-65w-gaa6e5",
+      "getac-zasilacz-usb-c-100w-gat1e1",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1021,7 +1026,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac F110 G7 11,6″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac F110 G7 11,6″, Windows 11 Pro, 1200 nitów, 2 baterie hot-swap. Tablet rugged Getac F110. F110 Getac PN: FTA164JI1DXX, FTA164JI1MXX.",
     "shortDescription": "Getac F110 G7 — tablet fully rugged 11,6″ z Windows 11 Pro, procesorem Intel Core 13. generacji, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID, RS-232 i LAN.",
-    "description": "Getac F110 G7 to tablet przemysłowy z ekranem 11,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,49 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 8 GB albo 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 4200 mAh.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS, digitizerem i modułami. Górne gniazdo mieści czytnik kodów 1D/2D albo port RS-232 z portem LAN. Z boku może być czytnik HF RFID. W zestawie są zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 12,2 cala, Wi-Fi 7 i procesory Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "description": "Getac F110 G7 to tablet przemysłowy z ekranem 11,6 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,49 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond Full HD ma jasność 1200 nitów. Procesory Intel Core i5 i i7 13. generacji pracują z 8 GB albo 16 GB RAM i dyskiem SSD 256 GB albo 512 GB, zależnie od PN.\n\nTablet pracuje na 2 bateriach 2680 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Opcjonalnie pasują baterie 4200 mAh.\n\nKonfiguracje różnią się procesorem, łącznością 4G LTE lub 5G z GPS, digitizerem i modułami. Górne gniazdo mieści czytnik kodów 1D/2D albo port RS-232 z portem LAN. Z boku może być czytnik HF RFID. W zestawie są zasilacz 65 W i rysik pojemnościowy. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 12,2 cala, Wi-Fi 7 i procesory Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -1312,7 +1317,12 @@ export const getacTabletProducts: Product[] = [
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-pasek-na-reke-gmhrxm",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-zasilacz-samochodowy-gad2x8",
+      "getac-zasilacz-mil-std-461-gaage5",
+      "getac-zasilacz-65w-gaa6e5",
+      "getac-zasilacz-usb-c-100w-gat1e1",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -1363,7 +1373,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac F120 12,2″ z Windows 11 Pro, IP66",
     "seoDescription": "Tablet przemysłowy Getac F120 12,2″, Windows 11 Pro, Intel Core Ultra, Wi-Fi 7, 1200 nitów. Tablet rugged Getac F120. F120 Getac PN: FW1764WI1DXX, FW17641I1DZX.",
     "shortDescription": "Getac F120 — tablet fully rugged 12,2″ z Windows 11 Pro, procesorem Intel Core Ultra 5, Wi-Fi 7, ekranem 1200 nitów i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, RS-232, LAN i czytnik kart chipowych.",
-    "description": "Getac F120 to tablet przemysłowy z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,41 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1200 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost do 48 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB RAM i dysk SSD 256 GB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Tablet ma Wi-Fi 7, Bluetooth 5.4 i 2 porty Thunderbolt 4.\n\nKonfiguracje różnią się łącznością 4G LTE lub 5G z GPS, digitizerem i modułami: czytnikiem kodów 1D/2D, portem RS-232, portem LAN albo czytnikiem kart chipowych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 11,6 cala i procesory Intel Core 13. generacji ma [Getac F110 G7](/produkt/getac-f110-g7).",
+    "description": "Getac F120 to tablet przemysłowy z ekranem 12,2 cala i systemem Windows 11 Pro. Służy do pracy z programami Windows w terenie, w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,41 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanego osobno. Tablet wytrzymuje upadek z 1,8 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran LumiBond WUXGA ma jasność 1200 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesor Intel Core Ultra 5 serii 2 ma układ NPU Intel AI Boost do 48 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB RAM i dysk SSD 256 GB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Tablet ma Wi-Fi 7, Bluetooth 5.4 i 2 porty Thunderbolt 4.\n\nKonfiguracje różnią się łącznością 4G LTE lub 5G z GPS, digitizerem i modułami: czytnikiem kodów 1D/2D, portem RS-232, portem LAN albo czytnikiem kart chipowych. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 11,6 cala i procesory Intel Core 13. generacji ma [Getac F110 G7](/produkt/getac-f110-g7).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -1651,7 +1661,13 @@ export const getacTabletProducts: Product[] = [
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx2"
+      "getac-torba-gmbcx2",
+      "getac-ladowarka-8-gniazdowa-gcecet",
+      "getac-zasilacz-samochodowy-gad2x8",
+      "getac-zasilacz-mil-std-461-gaage5",
+      "getac-zasilacz-65w-gaa6e5",
+      "getac-zasilacz-usb-c-100w-gat1e1",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-f110-g7",
@@ -1947,7 +1963,8 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcef",
       "getac-stacja-usb-c-ds100-gddse2",
       "getac-rysik-digitizer-gmpdx6",
-      "getac-torba-gmbcx7"
+      "getac-torba-gmbcx7",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -1999,7 +2016,7 @@ export const getacTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Getac G140 14″ z AMD Ryzen AI, IP66",
     "seoDescription": "Tablet przemysłowy Getac G140 14″, Windows 11 Pro, AMD Ryzen AI, Wi-Fi 7, IP66. Tablet rugged Getac G140 z LAN. G140 Getac PN: GX2764WI1DXX, GX6776WI1DXX.",
     "shortDescription": "Getac G140 — tablet fully rugged 14″ z Windows 11 Pro (Copilot+ PC), procesorem AMD Ryzen AI, Wi-Fi 7, portem LAN i 2 bateriami wymienianymi bez wyłączania. Opcje: 4G LTE lub 5G, czytnik kodów 1D/2D, HF RFID.",
-    "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga zasilacza MIL-STD-461 90 W, sprzedawanego osobno. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
+    "description": "Getac G140 to tablet przemysłowy z ekranem 14 cali i systemem Windows 11 Pro. Duży ekran służy do pracy z dokumentacją techniczną, mapami i programami Windows w pojazdach, w serwisie i na produkcji. Obudowa ma masę 1,79 kg, klasę szczelności IP66 oraz certyfikat MIL-STD-810H. Zgodność z MIL-STD-461G wymaga [zasilacza MIL-STD-461 90 W](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanego osobno. Tablet wytrzymuje upadek z 1,2 m i pracuje w temperaturze od −29°C do +63°C.\n\nEkran IPS WUXGA ma jasność 1000 nitów. Funkcja Smart Touch rozpoznaje dotyk palcem, w rękawicy i rysikiem bez przełączania trybu. Procesory AMD Ryzen AI mają układ NPU AMD XDNA 2 do 50 TOPS, a tablet jest komputerem Copilot+ PC. Wersje w ofercie mają 16 GB albo 32 GB RAM i dysk SSD od 256 GB do 1 TB.\n\nTablet pracuje na 2 bateriach 4070 mAh. Jedną baterię wymienia się bez wyłączania tabletu (technologia LifeSupport). Każda wersja ma Wi-Fi 7, port LAN i 2 porty USB4. Konfiguracje różnią się procesorem, pamięcią, łącznością 4G LTE lub 5G z GPS, czytnikiem kodów 1D/2D i HF RFID. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nMniejszy ekran 12,2 cala i procesor Intel Core Ultra ma [Getac F120](/produkt/getac-f120).",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -2324,7 +2341,12 @@ export const getacTabletProducts: Product[] = [
       "getac-ladowarka-2-gniazdowa-gcmcet",
       "getac-zasilacz-samochodowy-gad2x4",
       "getac-pasek-na-reke-gmhrxq",
-      "getac-torba-gmbcx7"
+      "getac-torba-gmbcx7",
+      "getac-ladowarka-8-gniazdowa-gcecet",
+      "getac-zasilacz-samochodowy-gad2x8",
+      "getac-zasilacz-mil-std-461-gaage5",
+      "getac-zasilacz-65w-gaa6e5",
+      "getac-pasek-na-ramie-gms2x8"
     ],
     "relatedProducts": [
       "getac-f120",
@@ -3573,7 +3595,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Torba Getac GMBCX2 do ZX10 G2, UX10 G5, F110 G7, F120 i V120",
     "seoDescription": "Getac GMBCX2 — torba z regulowanym paskiem na ramię do tabletów Getac ZX10 G2, UX10 G5, F110 G7 i F120 oraz laptopa V120.",
     "shortDescription": "Getac GMBCX2 — torba z regulowanym paskiem na ramię do tabletów Getac ZX10 G2, UX10 G5, F110 G7 i F120 oraz laptopa V120.",
-    "description": "Torba Getac GMBCX2 chroni tablet podczas transportu. Ma regulowany, wyściełany pasek na ramię i kieszenie wewnątrz. W torbie mieści się tablet albo laptop V120 razem z potrzebnymi akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 340 × 260 × 65 mm i masę 760 g. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [F120](/produkt/getac-f120) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nTorba przydaje się przy przewożeniu tabletu albo laptopa w pojeździe i przy pracy w terenie. W torbie można przewozić urządzenie razem z akcesoriami, np. zasilaczem i zapasową baterią.",
+    "description": "Torba Getac GMBCX2 chroni tablet albo laptop V120 podczas transportu. Ma regulowany, wyściełany pasek na ramię i kieszenie wewnątrz. W torbie mieści się tablet albo laptop V120 razem z potrzebnymi akcesoriami.\n\nTorba jest wykonana z nylonu i tkaniny siatkowej (air mesh). Ma wymiary 340 × 260 × 65 mm i masę 760 g. Pasuje do tabletów [Getac ZX10 G2](/produkt/getac-zx10-g2), [UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7) i [F120](/produkt/getac-f120) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nTorba przydaje się przy przewożeniu tabletu albo laptopa w pojeździe i przy pracy w terenie. W torbie można przewozić urządzenie razem z akcesoriami, np. zasilaczem i zapasową baterią.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -4004,7 +4026,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Zasilacz samochodowy 120 W Getac GAD2X4 z wtykiem zapalniczki",
     "seoDescription": "Getac GAD2X4 — zasilacz samochodowy 120 W z wtykiem zapalniczki do tabletów Getac UX10 G5, F110 G7, F120, G140 i laptopów B360, V120, S410 G5, S510, S510AD.",
     "shortDescription": "Getac GAD2X4 — zasilacz samochodowy 120 W z wtykiem zapalniczki do tabletów Getac UX10 G5, F110 G7, F120, G140 i laptopów B360, V120, S410 G5, S510, S510AD.",
-    "description": "Zasilacz samochodowy Getac GAD2X4 zasila tablet albo laptop i ładuje jego baterie w pojeździe. Wersja GAD2X4 ma wtyk do gniazda zapalniczki. Przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V.\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz laptopów [Getac B360](/produkt/getac-b360), [V120](/produkt/getac-v120), [S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad). W zestawie jest wersja z wtykiem zapalniczki. Wersja z przewodami do podłączenia na stałe to [GAD2X8](/produkt/getac-zasilacz-samochodowy-gad2x8).",
+    "description": "Zasilacz samochodowy Getac GAD2X4 zasila tablet albo laptop i ładuje jego baterie w pojeździe. Wersja GAD2X4 ma wtyk do gniazda zapalniczki. Przyjmuje napięcie 11–32 V DC, dlatego pracuje w instalacjach 12 V i 24 V.\n\nZasilacz ma wyjście 19 V DC i prąd do 6,32 A. Przewód wejściowy ma 1900 mm, a przewód wyjściowy 1000 mm. Pasuje do tabletów [Getac UX10 G5](/produkt/getac-ux10-g5), [F110 G7](/produkt/getac-f110-g7), [F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz laptopów [Getac B360](/produkt/getac-b360), [V120](/produkt/getac-v120), [S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad). Wersja z przewodami do podłączenia na stałe to [GAD2X8](/produkt/getac-zasilacz-samochodowy-gad2x8).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -4673,7 +4695,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria 4070 mAh Getac GBM2X4 do F120, G140 i V120",
     "seoDescription": "Getac GBM2X4 — bateria standardowa 4070 mAh do tabletów Getac F120 i G140 oraz laptopa V120.",
     "shortDescription": "Getac GBM2X4 — bateria standardowa 4070 mAh do tabletów Getac F120 i G140 oraz laptopa V120.",
-    "description": "Bateria Getac GBM2X4 to bateria standardowa do tabletów Getac F120 i G140 oraz laptopa Getac V120. Urządzenia pracują na 2 bateriach i pozwalają wymienić jedną z nich bez wyłączania (technologia LifeSupport). Zapasowe baterie pozwalają pracować przez całą zmianę bez przestojów.\n\nBateria litowo-polimerowa ma napięcie 7,74 V i pojemność typową 4070 mAh. Większy zapas energii daje [bateria GBM3X8](/produkt/getac-bateria-gbm3x8). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nBateria jest sprzedawana pojedynczo. Te same baterie pasują do wszystkich trzech urządzeń. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
+    "description": "Bateria Getac GBM2X4 to bateria standardowa do tabletów Getac F120 i G140 oraz laptopa Getac V120. Urządzenia pracują na 2 bateriach i pozwalają wymienić jedną z nich bez wyłączania (technologia LifeSupport). Zapasowe baterie pozwalają pracować przez całą zmianę bez przestojów.\n\nBateria litowo-polimerowa ma napięcie 7,74 V i pojemność typową 4070 mAh. Większy zapas energii daje [bateria GBM3X8](/produkt/getac-bateria-gbm3x8). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nBateria jest sprzedawana pojedynczo. Te same baterie pasują do wszystkich trzech urządzeń. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet), a osiem — [ładowarka GCECET](/produkt/getac-ladowarka-8-gniazdowa-gcecet).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",
@@ -4745,7 +4767,7 @@ export const getacTabletAccessories: Product[] = [
     "seoTitle": "Bateria o dużej pojemności Getac GBM3X8 do F120, G140 i V120",
     "seoDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140 oraz laptopa V120.",
     "shortDescription": "Getac GBM3X8 — bateria o dużej pojemności 11,61 V, 4070 mAh do tabletów Getac F120 i G140 oraz laptopa V120.",
-    "description": "Bateria Getac GBM3X8 to bateria o dużej pojemności do tabletów Getac F120 i G140 oraz laptopa Getac V120. Ma wyższe napięcie niż bateria standardowa: 11,61 V zamiast 7,74 V przy tej samej pojemności typowej 4070 mAh. Dzięki temu gromadzi ok. 1,5 raza więcej energii: ok. 47 Wh zamiast ok. 31,5 Wh.\n\nBateria litowo-polimerowa ma grubość 16,8 mm i masę 205 g. Urządzenia pozwalają wymienić jedną baterię bez wyłączania (technologia LifeSupport). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet).",
+    "description": "Bateria Getac GBM3X8 to bateria o dużej pojemności do tabletów Getac F120 i G140 oraz laptopa Getac V120. Ma wyższe napięcie niż bateria standardowa: 11,61 V zamiast 7,74 V przy tej samej pojemności typowej 4070 mAh. Dzięki temu gromadzi ok. 1,5 raza więcej energii: ok. 47 Wh zamiast ok. 31,5 Wh.\n\nBateria litowo-polimerowa ma grubość 16,8 mm i masę 205 g. Urządzenia pozwalają wymienić jedną baterię bez wyłączania (technologia LifeSupport). Pasuje do tabletów [Getac F120](/produkt/getac-f120) i [G140](/produkt/getac-g140) oraz do laptopa [Getac V120](/produkt/getac-v120).\n\nBateria jest sprzedawana pojedynczo. Dwie baterie naraz ładuje [ładowarka GCMCET](/produkt/getac-ladowarka-2-gniazdowa-gcmcet), a osiem — [ładowarka GCECET](/produkt/getac-ladowarka-8-gniazdowa-gcecet).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow",

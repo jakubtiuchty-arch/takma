@@ -2129,7 +2129,7 @@ const categorySpecificHelp: Record<string, Record<string, string>> = {
     "Zgodny rozmiar": "Rozmiar ekranu SUNMI FLEX 3, do którego pasuje akcesorium. Stojaki Retail pasują tylko do ekranu 22\". Zgodność z wersją 15,6\" prosimy potwierdzić przed zamówieniem."
   },
   "laptopy-przemyslowe": {
-    "Klasa odporności": "Odporność obudowy laptopa.\n• Fully rugged (IP66) — ochrona przed pyłem i silnymi strumieniami wody, upadek z 1,2–1,8 m, gwarancja 3 lata Bumper-to-Bumper z przypadkowymi uszkodzeniami.\n• Rugged (IP53) — ochrona przed pyłem i natryskiem wody, upadek z 0,9 m, gwarancja 3 lata bez przypadkowych uszkodzeń.",
+    "Klasa odporności": "Odporność obudowy laptopa.\n• Fully rugged (IP66) — ochrona przed pyłem i silnymi strumieniami wody, upadek z 1,2–1,8 m, gwarancja 3 lata Bumper-to-Bumper, także przy przypadkowych uszkodzeniach.\n• Rugged (IP53) — ochrona przed pyłem i natryskiem wody, upadek z 0,9 m, 3 lata gwarancji ograniczonej (limited warranty).",
     "Przekątna ekranu": "Przekątna ekranu laptopa.\n• 12,2–13,3\" — mniejsza obudowa: 302 × 224 mm (V120) albo 342 × 281 mm (B360).\n• 14\" i 15,6\" — większy ekran: obudowa 350 × 293 mm (S410 G5) albo 375 × 277 mm (S510, S510AD).",
     "Procesor": "Producent procesora.\n• Intel — Core Ultra (z układem NPU Intel AI Boost) albo Core i5/i7 13. generacji.\n• AMD — Ryzen AI 300 z układem NPU AMD XDNA 2 do 50 TOPS; laptop jest komputerem Copilot+ PC.",
     "Łączność komórkowa": "Modem 4G LTE albo 5G z GPS do pracy poza zasięgiem Wi-Fi. Model trafia do obu grup, gdy w ofercie są wersje z modemem i bez modemu. Wersję wybiera się w tabeli na karcie produktu.",

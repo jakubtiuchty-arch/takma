@@ -20,51 +20,51 @@ export const laptopCategoryContent: SubcategoryRichContent = {
         "href": "/produkt/getac-b360",
         "printing": "13,3″ Full HD, 1400 nitów, ekran dotykowy; Intel Core Ultra 5 albo 7 (seria 2)",
         "feeder": "Fully rugged: IP66, upadek z 1,8 m; 3 lata Bumper-to-Bumper",
-        "connectivity": "Wi-Fi 7, wersje z 4G LTE; RS-232, VGA, czytnik kart chipowych; 2 baterie wymieniane bez wyłączania"
+        "connectivity": "Wi-Fi 7, wersje z 4G LTE; RS-232, VGA, czytnik kart chipowych; 2 baterie; jedną wymienia się bez wyłączania (LifeSupport)"
       },
       {
         "name": "Getac V120",
         "href": "/produkt/getac-v120",
         "printing": "12,2″ WUXGA, 1000 nitów, ekran dotykowy; Intel Core Ultra 5 (seria 2)",
         "feeder": "Fully rugged: IP66, upadek z 1,2 m; 3 lata Bumper-to-Bumper",
-        "connectivity": "Wi-Fi 7; 2 × Thunderbolt 4, RS-232; 2 baterie wymieniane bez wyłączania"
+        "connectivity": "Wi-Fi 7; 2 × Thunderbolt 4, RS-232; 2 baterie; jedną wymienia się bez wyłączania (LifeSupport)"
       },
       {
         "name": "Getac S410 G5",
         "href": "/produkt/getac-s410-g5",
         "printing": "14″, 1000 nitów, ekran dotykowy; Intel Core i5 albo i7 13. generacji",
-        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata bez przypadkowych uszkodzeń",
-        "connectivity": "Wi-Fi 6E, wersje z 4G LTE albo 5G; wersje z RS-232 i VGA; bateria 6900 mAh i kieszeń na drugą baterię"
+        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata gwarancji ograniczonej (limited warranty)",
+        "connectivity": "Wi-Fi 6E, wersja z 4G LTE; wersje z RS-232 i VGA; bateria 6900 mAh; kieszeń multimedialna na dodatkową baterię 4200 mAh"
       },
       {
         "name": "Getac S510",
         "href": "/produkt/getac-s510",
         "printing": "15,6″ Full HD, 1000 nitów, ekran dotykowy w większości wersji; Intel Core Ultra 5 albo 7 (seria 1)",
-        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata bez przypadkowych uszkodzeń",
+        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata gwarancji ograniczonej (limited warranty)",
         "connectivity": "Wi-Fi 6E albo 7, wersje z 4G LTE albo 5G; Thunderbolt 4, wersje z RS-232, VGA i drugim LAN; bateria 6900 mAh"
       },
       {
         "name": "Getac S510AD",
         "href": "/produkt/getac-s510ad",
         "printing": "15,6″ Full HD, 1000 nitów; AMD Ryzen AI 5 340, Copilot+ PC",
-        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata bez przypadkowych uszkodzeń",
+        "feeder": "Rugged: IP53, upadek z 0,9 m; 3 lata gwarancji ograniczonej (limited warranty)",
         "connectivity": "Wi-Fi 7; USB4, HDMI 2.0, kamera Windows Hello; bateria 6900 mAh"
       }
     ]
   },
   "definition": {
     "heading": "Laptop przemysłowy — komputer do pracy w trudnych warunkach",
-    "content": "Laptop przemysłowy uruchamia te same programy Windows co komputer w biurze, ale pracuje w pojeździe, w hali produkcyjnej, w magazynie i na zewnątrz. Obudowa chroni podzespoły przed upadkiem, wibracjami, pyłem i wodą. Ekran ma jasność 1000–1400 nitów, dlatego jest czytelny w słońcu.\n\nGetac dzieli laptopy na dwie klasy. Modele fully rugged — [Getac B360](/produkt/getac-b360) i [Getac V120](/produkt/getac-v120) — mają klasę szczelności IP66, wytrzymują upadek z 1,2–1,8 m i pracują na 2 bateriach wymienianych bez wyłączania. Modele rugged — [Getac S410 G5](/produkt/getac-s410-g5), [Getac S510](/produkt/getac-s510) i [Getac S510AD](/produkt/getac-s510ad) — mają klasę IP53, wytrzymują upadek z 0,9 m i mają większy ekran: 14 albo 15,6 cala.\n\nDo pracy w ręku, bez klawiatury, służą [tablety przemysłowe](/tablety-przemyslowe)."
+    "content": "Laptop przemysłowy uruchamia te same programy Windows co komputer w biurze, ale pracuje w pojeździe, w hali produkcyjnej, w magazynie i na zewnątrz. Obudowa chroni podzespoły przed upadkiem, wibracjami, pyłem i wodą. Laptopy Getac w ofercie mają ekrany 1000–1400 nitów, czytelne w słońcu.\n\nGetac dzieli laptopy na dwie klasy. Modele fully rugged — [Getac B360](/produkt/getac-b360) i [Getac V120](/produkt/getac-v120) — mają klasę szczelności IP66 i wytrzymują upadek z 1,2–1,8 m. Pracują na 2 bateriach; jedną wymienia się bez wyłączania (LifeSupport). Modele rugged — [Getac S410 G5](/produkt/getac-s410-g5), [Getac S510](/produkt/getac-s510) i [Getac S510AD](/produkt/getac-s510ad) — mają klasę IP53, wytrzymują upadek z 0,9 m i mają większy ekran: 14 albo 15,6 cala.\n\nDo pracy w ręku, bez klawiatury, służą [tablety przemysłowe](/tablety-przemyslowe)."
   },
   "buyingGuide": {
     "heading": "Jak wybrać laptop przemysłowy?",
     "items": [
       "Klasa odporności — laptopy fully rugged B360 i V120 mają klasę IP66 i wytrzymują upadek z 1,8 m (B360) albo 1,2 m (V120). Laptopy rugged S410 G5, S510 i S510AD mają klasę IP53 i wytrzymują upadek z 0,9 m. Wszystkie mają certyfikat MIL-STD-810H.",
-      "Gwarancja — B360 i V120 mają 3 lata gwarancji Bumper-to-Bumper, która obejmuje przypadkowe uszkodzenia. S410 G5, S510 i S510AD mają 3 lata gwarancji ograniczonej, bez przypadkowych uszkodzeń.",
-      "Ekran — V120 ma ekran 12,2″, a B360 13,3″ w mniejszej obudowie. S410 G5 ma ekran 14″, a S510 i S510AD 15,6″. Najjaśniejszy ekran, 1400 nitów, ma B360.",
+      "Gwarancja — B360 i V120 mają 3 lata gwarancji Bumper-to-Bumper, także przy przypadkowych uszkodzeniach. S410 G5, S510 i S510AD mają 3 lata gwarancji ograniczonej (limited warranty).",
+      "Ekran — V120 ma ekran 12,2″ i najmniejszą obudowę (302 × 224 mm). B360 ma ekran 13,3″. S410 G5 ma ekran 14″, a S510 i S510AD 15,6″. Najjaśniejszy ekran, 1400 nitów, ma B360.",
       "Klawiatura — laptopy są w ofercie z układem US (QWERTY, odpowiada układowi polskiemu programisty), UK albo DE (QWERTZ). Układ wybiera się w tabeli wersji na karcie produktu. S410 G5 jest w ofercie z układem DE albo UK, a S510AD z układem DE.",
       "Baterie — B360 i V120 pracują na 2 bateriach. Jedną baterię wymienia się bez wyłączania laptopa (technologia LifeSupport). S410 G5, S510 i S510AD mają wymienną baterię 6900 mAh. S410 G5 mieści dodatkową baterię 4200 mAh w kieszeni multimedialnej.",
-      "Porty i łączność — każda wersja B360 ma port RS-232 i wyjście VGA, a V120 port RS-232. W S410 G5 i S510 te porty mają wybrane wersje. Modem 4G LTE albo 5G z GPS mają wybrane wersje B360, S410 G5 i S510.",
+      "Porty i łączność — każda wersja B360 ma port RS-232 i wyjście VGA, a V120 port RS-232. W S410 G5 i S510 te porty mają wybrane wersje. Modem 4G LTE z GPS mają wybrane wersje B360, S410 G5 i S510, a modem 5G — wybrane wersje S510.",
       "MIL-STD-461G — B360 i V120 spełniają tę normę z [zasilaczem MIL-STD-461 90 W GAAGE5](/produkt/getac-zasilacz-mil-std-461-gaage5), sprzedawanym osobno."
     ]
   },
@@ -93,7 +93,7 @@ export const laptopCategoryContent: SubcategoryRichContent = {
       },
       {
         "title": "Gwarancja a przypadkowe uszkodzenia",
-        "text": "Gwarancja Bumper-to-Bumper w B360 i V120 obejmuje przypadkowe uszkodzenia. Gwarancja S410 G5, S510 i S510AD ich nie obejmuje."
+        "text": "Gwarancja Bumper-to-Bumper w B360 i V120 obejmuje przypadkowe uszkodzenia. S410 G5, S510 i S510AD mają 3 lata gwarancji ograniczonej (limited warranty)."
       },
       {
         "title": "Montaż w pojeździe",
@@ -104,11 +104,11 @@ export const laptopCategoryContent: SubcategoryRichContent = {
   "faq": [
     {
       "question": "Czym laptop przemysłowy różni się od zwykłego laptopa?",
-      "answer": "Laptop przemysłowy ma obudowę odporną na upadki, wibracje, pył i wodę oraz certyfikat MIL-STD-810H. Ekran ma jasność 1000–1400 nitów i jest czytelny w słońcu. Laptopy Getac w ofercie pracują w temperaturze od −29°C do +63°C. Laptopy biurowe zwykle nie mają klasy szczelności ani certyfikatów MIL-STD."
+      "answer": "Laptop przemysłowy ma obudowę odporną na upadki, wibracje, pył i wodę oraz certyfikat MIL-STD-810H. Laptopy Getac w ofercie mają ekrany 1000–1400 nitów, czytelne w słońcu, i pracują w temperaturze od −29°C do +63°C. Laptopy biurowe zwykle nie mają klasy szczelności IP i nie są przeznaczone do pracy w deszczu, pyle i mrozie."
     },
     {
       "question": "Laptop fully rugged czy rugged — co wybrać?",
-      "answer": "Laptopy fully rugged [Getac B360](/produkt/getac-b360) i [Getac V120](/produkt/getac-v120) mają klasę IP66, wytrzymują upadek z 1,2–1,8 m, pracują na 2 bateriach wymienianych bez wyłączania i mają gwarancję Bumper-to-Bumper. Sprawdzają się na zewnątrz, w deszczu i w służbach. Laptopy rugged [Getac S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad) mają klasę IP53, wytrzymują upadek z 0,9 m, mają większy ekran i niższą cenę. Sprawdzają się w pojazdach, w halach i w serwisie."
+      "answer": "Laptopy fully rugged [Getac B360](/produkt/getac-b360) i [Getac V120](/produkt/getac-v120) mają klasę IP66, wytrzymują upadek z 1,2–1,8 m i mają gwarancję Bumper-to-Bumper. Pracują na 2 bateriach; jedną wymienia się bez wyłączania (LifeSupport). Sprawdzają się na zewnątrz, w deszczu i w służbach. Laptopy rugged [Getac S410 G5](/produkt/getac-s410-g5), [S510](/produkt/getac-s510) i [S510AD](/produkt/getac-s510ad) mają klasę IP53, wytrzymują upadek z 0,9 m, mają większy ekran i niższą cenę. Sprawdzają się w pojazdach, w halach i w serwisie."
     },
     {
       "question": "Jaki układ klawiatury wybrać?",
@@ -124,7 +124,7 @@ export const laptopCategoryContent: SubcategoryRichContent = {
     },
     {
       "question": "Jaką gwarancję mają laptopy Getac?",
-      "answer": "3 lata. W B360 i V120 jest to gwarancja Bumper-to-Bumper, która obejmuje przypadkowe uszkodzenia. W S410 G5, S510 i S510AD jest to gwarancja ograniczona, bez przypadkowych uszkodzeń."
+      "answer": "3 lata. W B360 i V120 jest to gwarancja Bumper-to-Bumper, także przy przypadkowych uszkodzeniach. W S410 G5, S510 i S510AD jest to gwarancja ograniczona (limited warranty)."
     },
     {
       "question": "Czy laptop przemysłowy można zamontować w pojeździe?",
