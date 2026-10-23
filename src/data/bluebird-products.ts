@@ -2168,6 +2168,455 @@ export const bluebirdProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "bluebird-rfr901",
+    "slug": "bluebird-rfr901",
+    "name": "Bluebird RFR901",
+    "seoH1": "Bluebird RFR901",
+    "seoTitle": "Czytnik UHF RFID Bluebird RFR901 z uchwytem pistoletowym i skanerem 2D",
+    "seoDescription": "Czytnik UHF RFID Bluebird RFR901: ponad 1300 tagów/s, zasięg ponad 10 m, skaner SE4710, IP54, 865–868 MHz. PN: RFR901-WCAUN, RFR901-WCASA.",
+    "shortDescription": "Bluebird RFR901 — ręczny czytnik UHF RFID z rękojeścią pistoletową i skanerem SE4710. Następca RFR900: ponad 1300 tagów/s, ponad 10 m, uchwyt na smartfon albo wersja samodzielna.",
+    "description": "Bluebird RFR901 to ręczny czytnik UHF RFID z rękojeścią pistoletową, następca modelu RFR900. W ciągu sekundy rejestruje ponad 1300 tagów, a jego nominalny zasięg przekracza 10 m. W trybie wsadowym zapisuje ponad 60 000 tagów i przekazuje je później do aplikacji.\n\nJeden spust obsługuje trzy tryby: odczyt RFID, skanowanie kodów 1D/2D modułem SE4710 albo oba jednocześnie. Tryb zmienia się dwukrotnym naciśnięciem spustu. Klawisz programowalny przy spuście uruchamia wybraną funkcję, np. Push-To-Talk.\n\nRFR901 łączy się przez Bluetooth z terminalami Bluebird, smartfonami i komputerami z Windows. Parowanie ułatwia NFC. RFR901-WCAUN ma uchwyt uniwersalny do smartfonów, np. iPhone i Samsung. RFR901-WCASA nie ma uchwytu i działa jako osobny czytnik trzymany w dłoni.\n\nBaterię 4900 mAh wymienia się bez wyłączania czytnika (hot swap). Obudowa ma klasę IP54 i przechodzi test wielu upadków z 1,5 m na beton. Czytnik służy m.in. do liczenia zapasów w sklepach i magazynach, odprawy gości w hotelarstwie, identyfikacji pacjentów w szpitalach i ewidencji sprzętu w centrach danych. Okres gwarancji to 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nCzytnik ładuje się przez złącze USB-C. W zestawie są czytnik, bateria i pasek na nadgarstek.",
+    "categoryId": "terminale-mobilne",
+    "subcategoryIds": [
+      "uchwyty-rfid"
+    ],
+    "manufacturerId": "bluebird",
+    "sameAs": "https://www.bluebirdcorp.com/products/RFID-Solutions/Handheld-RFID-Reader/RFR901-Universal",
+    "priceFrom": 3591.71,
+    "availability": "on-order",
+    "images": [
+      "/images/products/RFR901-WCASA.png",
+      "/images/products/RFR901-WCAUN.png"
+    ],
+    "imageDescriptions": [
+      "Bluebird RFR901-WCASA — czytnik UHF RFID bez uchwytu (Stand Alone), widok z boku pod kątem",
+      "Bluebird RFR901-WCAUN — czytnik UHF RFID z uchwytem uniwersalnym na smartfon, widok z przodu pod kątem"
+    ],
+    "tags": [
+      "magazyn",
+      "retail",
+      "logistyka",
+      "healthcare"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "RFID",
+        "value": "UHF, 865–868 MHz (EU); układ Impinj E710"
+      },
+      {
+        "name": "Moc wyjściowa RFID",
+        "value": "0–30 dBm (EU)"
+      },
+      {
+        "name": "Standardy RFID",
+        "value": "EPC Class 1 Gen 2, EPC Gen2 V2, Gen2X"
+      },
+      {
+        "name": "Szybkość odczytu RFID",
+        "value": "Ponad 1300 tagów/s"
+      },
+      {
+        "name": "Zasięg odczytu RFID",
+        "value": "Ponad 10 m (nominalnie)"
+      },
+      {
+        "name": "Tryb wsadowy",
+        "value": "Pamięć ponad 60 000 tagów"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "SE4710 — 1D/2D"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "SPP, HID, Apple iAP2; NFC do parowania"
+      },
+      {
+        "name": "Złącze",
+        "value": "USB-C"
+      },
+      {
+        "name": "Mocowanie",
+        "value": "RFR901-WCAUN: uchwyt uniwersalny na smartfon; RFR901-WCASA: bez uchwytu"
+      },
+      {
+        "name": "Bateria",
+        "value": "4900 mAh, 3,63 V, wymienna bez wyłączania (hot swap); opcjonalnie 7000 mAh"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Spust z klawiszem programowalnym; zmiana trybu, tryb wsadowy, zasilanie, Bluetooth"
+      },
+      {
+        "name": "Sygnalizacja",
+        "value": "5 diod LED, brzęczyk"
+      },
+      {
+        "name": "Klasa szczelności",
+        "value": "IP54"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "Wielokrotne upadki z 1,5 m na beton w temperaturze pokojowej"
+      },
+      {
+        "name": "Test w bębnie",
+        "value": "1000 upadków (500 cykli) z 0,5 m w temperaturze pokojowej"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "-20°C do +60°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "-40°C do +70°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "5–95%, bez kondensacji"
+      },
+      {
+        "name": "Wymiary",
+        "value": "133,6 × 85,4 × 144,5 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "353 g"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Czytnik, bateria, pasek na nadgarstek"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "applications": [
+      "Liczenie zapasów i wyszukiwanie towarów w sklepie",
+      "Inwentaryzacja w magazynie",
+      "Identyfikacja pacjentów i ewidencja sprzętu w szpitalu",
+      "Ewidencja sprzętu w centrum danych"
+    ],
+    "variants": [
+      {
+        "partNumber": "RFR901-WCAUN",
+        "name": "RFR901-WCAUN, uchwyt uniwersalny, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Uchwyt": "Uniwersalny na telefon"
+        },
+        "priceFrom": 3950.88,
+        "availability": "on-order"
+      },
+      {
+        "partNumber": "RFR901-WCASA",
+        "name": "RFR901-WCASA, bez uchwytu, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Uchwyt": "Bez uchwytu"
+        },
+        "priceFrom": 3591.71,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Uchwyt": "Element na górze czytnika do zamocowania telefonu.\n\n• Uniwersalny na telefon — mocuje smartfony różnych producentów, np. iPhone i Samsung\n• Bez uchwytu — czytnik trzymany w dłoni, dane trafiają do urządzenia przez Bluetooth"
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "bluebird-602010041",
+      "bluebird-602020024",
+      "bluebird-603010005"
+    ],
+    "relatedProducts": [
+      "bluebird-rfr900",
+      "zebra-rfd40-premium-plus",
+      "tsl-3166",
+      "bluebird-s10-rfid"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Bluebird RFR901 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/bluebird-rfr901.pdf",
+        "size": "323 KB"
+      },
+      {
+        "name": "Instrukcja obsługi Bluebird RFR901 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/bluebird-rfr901-instrukcja-en.pdf",
+        "size": "841 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czym różnią się RFR901-WCAUN i RFR901-WCASA?",
+        "answer": "RFR901-WCAUN ma uchwyt uniwersalny, w którym mocuje się smartfon. RFR901-WCASA nie ma uchwytu i przesyła dane przez Bluetooth. Obie wersje mają skaner SE4710 i pasmo 865–868 MHz."
+      },
+      {
+        "question": "Jaki smartfon zmieści uchwyt uniwersalny RFR901?",
+        "answer": "Uchwyt mocuje smartfony różnych producentów, np. iPhone i Samsung. Przed zamówieniem prosimy o podanie modelu telefonu. Potwierdzimy, czy telefon zmieści się w uchwycie."
+      },
+      {
+        "question": "Czy RFR901 współpracuje z terminalami Bluebird?",
+        "answer": "Tak, przez Bluetooth, np. z [S20](/produkt/bluebird-s20), [S50](/produkt/bluebird-s50) i [S70](/produkt/bluebird-s70). Aplikacja na terminalu musi obsługiwać czytnik. Oferowane PN nie mają mocowania terminala Bluebird na czytniku."
+      },
+      {
+        "question": "Jak przełączyć RFR901 między RFID a kodami kreskowymi?",
+        "answer": "Dwukrotne naciśnięcie spustu zmienia tryb. Do wyboru są odczyt RFID, skanowanie kodów 1D/2D albo oba tryby jednocześnie."
+      },
+      {
+        "question": "Czym ładuje się RFR901?",
+        "answer": "Czytnik pobiera prąd przez USB-C z zasilacza sieciowego [602010041](/produkt/bluebird-602010041) z wtyczką [602020024](/produkt/bluebird-602020024), przez kabel [603010005](/produkt/bluebird-603010005). Te elementy są sprzedawane osobno. Stacje terminali Bluebird, np. [204010078](/produkt/bluebird-204010078), ładują czytnik nałożony na terminal. Oferowane PN nie mają mocowania terminala."
+      },
+      {
+        "question": "Czym RFR901 różni się od RFR900?",
+        "answer": "RFR901 osiąga ponad 1300 tagów/s i ponad 10 m, a w trybie wsadowym zapisuje ponad 60 000 tagów. Ma też wbudowany skaner SE4710 i obudowę IP54. [RFR900](/produkt/bluebird-rfr900) jest nakładką na terminale EF40X i HF550X."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "bluebird-rfr900",
+    "slug": "bluebird-rfr900",
+    "name": "Bluebird RFR900",
+    "seoH1": "Bluebird RFR900",
+    "seoTitle": "Czytnik UHF RFID Bluebird RFR900 (RFR971) do terminali EF40X i HF550X",
+    "seoDescription": "Nakładka UHF RFID Bluebird RFR900 (RFR971): Impinj E710, ponad 900 tagów/s, mocowanie EF40X lub HF550X. PN: RFR971-WA4S, WA4SE, WAH5X, WX4S.",
+    "shortDescription": "Bluebird RFR900 — nakładka UHF RFID z rękojeścią pistoletową do terminali Bluebird EF40X i HF550X. Wersja RFR971: Impinj E710, pasmo 865–868 MHz, bateria 3400 lub 4000 mAh, IP42.",
+    "description": "Bluebird RFR900 to nakładka UHF RFID z rękojeścią pistoletową, która dodaje odczyt tagów do terminala Bluebird. Aplikacja i ekran pozostają w terminalu. Oferowana wersja nosi oznaczenie RFR971 i ma układ Impinj E710, dlatego od RFR971 zaczynają się numery katalogowe.\n\nWszystkie oferowane PN pracują w europejskim paśmie 865–868 MHz. RFR971-WA4S, RFR971-WA4SE i RFR971-WX4S mają mocowanie do terminali EF40X, a RFR971-WAH5X do HF550X. Terminal zamawia się osobno.\n\nNakładka rozpoznaje ponad 900 tagów na sekundę w odległości ponad 6 m. Pamięć trybu wsadowego mieści ponad 40 000 tagów. Przycisk z boku terminala przełącza pracę między RFID a odczytem kodów kreskowych.\n\nWersje z Bluetooth 5.3 pracują także bez montażu na terminalu, z urządzeniami z Androidem 5.0 lub nowszym albo z Windows. Do integracji z programem służy pakiet SDK Bluebird.\n\nObudowa w technologii TankSmith ma klasę IP42 i znosi upadek z 1,2 m według MIL-STD-810G. Bateria ma pojemność 3400 mAh, a w RFR971-WA4SE 4000 mAh. Model jest przeznaczony do handlu, produkcji i dystrybucji. Gwarancja obejmuje 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nZestaw obejmuje nakładkę z baterią i paskiem na nadgarstek. Ładowanie odbywa się przez gniazdo USB-C.",
+    "categoryId": "terminale-mobilne",
+    "subcategoryIds": [
+      "uchwyty-rfid"
+    ],
+    "manufacturerId": "bluebird",
+    "sameAs": "https://www.bluebirdcorp.com/products/RFID-Solutions/Handheld-RFID-Reader/RFR900-for-HF550X",
+    "priceFrom": 3423.2,
+    "availability": "unavailable",
+    "images": [
+      "/images/products/RFR971-WA4S.png",
+      "/images/products/RFR971-WAH5X.png"
+    ],
+    "imageDescriptions": [
+      "Bluebird RFR900 — nakładka UHF RFID z rękojeścią pistoletową, bez terminala, widok z przodu pod kątem",
+      "Bluebird RFR900 z zamontowanym terminalem Bluebird — terminal sprzedawany osobno"
+    ],
+    "tags": [
+      "magazyn",
+      "retail",
+      "produkcja",
+      "logistyka"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Wersja",
+        "value": "RFR971 (PN RFR971-…)"
+      },
+      {
+        "name": "RFID",
+        "value": "UHF, 865–868 MHz (EU); układ Impinj E710"
+      },
+      {
+        "name": "Standard RFID",
+        "value": "EPC Gen2 V2"
+      },
+      {
+        "name": "Szybkość odczytu RFID",
+        "value": "Ponad 900 tagów/s"
+      },
+      {
+        "name": "Zasięg odczytu RFID",
+        "value": "Ponad 6 m"
+      },
+      {
+        "name": "Tryb wsadowy",
+        "value": "Pamięć ponad 40 000 tagów"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.3 + EDR, klasa 2 — zależnie od PN"
+      },
+      {
+        "name": "Złącze",
+        "value": "USB-C"
+      },
+      {
+        "name": "Mocowanie",
+        "value": "EF40X — RFR971-WA4S, RFR971-WA4SE, RFR971-WX4S; HF550X — RFR971-WAH5X"
+      },
+      {
+        "name": "Bateria",
+        "value": "3400 mAh, 3,6 V; 4000 mAh, 3,65 V w RFR971-WA4SE; wymienna"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Spust; przełącznik trybu, zasilanie"
+      },
+      {
+        "name": "Sygnalizacja",
+        "value": "5 diod LED, sygnał dźwiękowy"
+      },
+      {
+        "name": "Klasa szczelności",
+        "value": "IP42"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,2 m według MIL-STD-810G"
+      },
+      {
+        "name": "Test w bębnie",
+        "value": "1000 upadków (500 cykli) z 0,5 m w temperaturze pokojowej"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "-20°C do +60°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "-30°C do +70°C"
+      },
+      {
+        "name": "Temperatura ładowania",
+        "value": "0°C do +45°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95%, bez kondensacji"
+      },
+      {
+        "name": "Wymiary",
+        "value": "146,2 × 70 × 148,7 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "333 g"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Nakładka, bateria, pasek na nadgarstek"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "applications": [
+      "Odczyt tagów UHF w handlu",
+      "Ewidencja na produkcji",
+      "Obsługa towarów w dystrybucji"
+    ],
+    "variants": [
+      {
+        "partNumber": "RFR971-WX4S",
+        "name": "RFR971-WX4S, mocowanie EF40X, bateria 3400 mAh, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Mocowanie": "EF40X",
+          "Bateria": "3400 mAh"
+        },
+        "priceFrom": 3423.2,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "RFR971-WA4S",
+        "name": "RFR971-WA4S, mocowanie EF40X, Bluetooth, bateria 3400 mAh, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Mocowanie": "EF40X",
+          "Bateria": "3400 mAh",
+          "Bluetooth": "Tak"
+        },
+        "priceFrom": 3508.85,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "RFR971-WA4SE",
+        "name": "RFR971-WA4SE, mocowanie EF40X, Bluetooth, bateria 4000 mAh, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Mocowanie": "EF40X",
+          "Bateria": "4000 mAh",
+          "Bluetooth": "Tak"
+        },
+        "priceFrom": 3591.7,
+        "availability": "unavailable"
+      },
+      {
+        "partNumber": "RFR971-WAH5X",
+        "name": "RFR971-WAH5X, mocowanie HF550X, Bluetooth, bateria 3400 mAh, UHF 865–868 MHz (EU)",
+        "attributes": {
+          "Mocowanie": "HF550X",
+          "Bateria": "3400 mAh",
+          "Bluetooth": "Tak"
+        },
+        "priceFrom": 3508.86,
+        "availability": "unavailable"
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Mocowanie": "Element na górze nakładki, na którym mocuje się terminal Bluebird.\n\n• EF40X — do terminali Bluebird EF40X\n• HF550X — do terminala Bluebird HF550X",
+      "Bateria": "Wymienna bateria nakładki RFR900.\n\n• 3400 mAh — bateria standardowa, 3,6 V\n• 4000 mAh — bateria rozszerzona, 3,65 V",
+      "Bluetooth": "Łączność bezprzewodowa nakładki.\n\n• Bluetooth 5.3, klasa 2\n• Pozwala używać nakładki także bez montażu na terminalu"
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "bluebird-602010041",
+      "bluebird-602020024",
+      "bluebird-603010005",
+      "bluebird-355040055"
+    ],
+    "relatedProducts": [
+      "bluebird-rfr901",
+      "zebra-rfd40-premium",
+      "tsl-3138",
+      "bluebird-s10-rfid"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Bluebird RFR900 (RFR971) (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/bluebird-rfr900-rfr971.pdf",
+        "size": "352 KB"
+      },
+      {
+        "name": "Instrukcja obsługi Bluebird RFR900 (EN)",
+        "type": "manual",
+        "url": "/instrukcje/bluebird-rfr900-instrukcja-en.pdf",
+        "size": "1,3 MB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Dlaczego numery katalogowe RFR900 zaczynają się od RFR971?",
+        "answer": "RFR971 to oznaczenie oferowanej wersji RFR900 z układem Impinj E710, Bluetooth 5.3 i gniazdem USB-C. Nazwa modelu pozostaje RFR900."
+      },
+      {
+        "question": "Do jakich terminali pasują oferowane PN RFR900?",
+        "answer": "RFR971-WA4S, RFR971-WA4SE i RFR971-WX4S mają mocowanie do EF40X. RFR971-WAH5X ma mocowanie do HF550X. Przy innym terminalu Bluebird, np. [EF551](/produkt/bluebird-ef551), mocowanie potwierdzimy przed zamówieniem."
+      },
+      {
+        "question": "Czy RFR900 działa bez terminala?",
+        "answer": "Tak, w wersjach z Bluetooth. Nakładka łączy się wtedy z urządzeniem z Androidem 5.0 lub nowszym albo z Windows. Na urządzeniu musi działać program obsługujący czytnik."
+      },
+      {
+        "question": "Czym RFR971-WA4SE różni się od RFR971-WA4S?",
+        "answer": "RFR971-WA4SE ma baterię 4000 mAh, a RFR971-WA4S 3400 mAh. Mocowanie EF40X i pasmo 865–868 MHz są w obu PN takie same. Zapasową baterię 4000 mAh oferujemy jako [355040055](/produkt/bluebird-355040055)."
+      },
+      {
+        "question": "Jak naładować RFR900?",
+        "answer": "Przez gniazdo USB-C. Do ładowania potrzebne są zasilacz 602010041, wtyczka 602020024 i kabel 603010005; elementy te kupuje się osobno. Stacje terminali Bluebird, np. [204020030](/produkt/bluebird-204020030), ładują terminal z nałożonym czytnikiem RFR900 lub RFR901. Zgodność stacji z mocowaniem EF40X lub HF550X potwierdzimy przed zamówieniem."
+      },
+      {
+        "question": "Kiedy wybrać RFR900, a kiedy RFR901?",
+        "answer": "RFR900 rozbudowuje terminal EF40X lub HF550X o odczyt UHF. [RFR901](/produkt/bluebird-rfr901) ma większy zasięg (ponad 10 m), szybszy odczyt (ponad 1300 tagów/s), własny skaner SE4710, obudowę IP54 i uchwyt na smartfon."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
@@ -2887,7 +3336,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) — 204010078",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078). Stacja ładuje terminal, także z czytnikiem RFR, oraz baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) — stacja ładuje terminal, także z czytnikiem RFR, oraz baterię zapasową; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010078.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -2953,7 +3402,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem — 204010079",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079). Stacja z Ethernetem 1 Gb/s ładuje terminal i baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem — stacja z Ethernetem 1 Gb/s ładuje terminal i baterię zapasową; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010079.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S20](/produkt/bluebird-s20) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3085,7 +3534,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) — 204020028",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204020028). Stacja ładuje cztery terminale, także z czytnikiem RFR, i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 (także z czytnikiem RFR) — stacja ładuje cztery terminale, także z czytnikiem RFR, i cztery baterie; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020028.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3151,7 +3600,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem — 204020029",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem (204020029). Stacja z Ethernetem 1 Gb/s ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S20 z Ethernetem — stacja z Ethernetem 1 Gb/s ładuje cztery terminale i cztery baterie; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020029.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S20](/produkt/bluebird-s20) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S20 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S20 (501260118)](/produkt/bluebird-501260118)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3275,7 +3724,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 — 204010080",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080). Stacja ładuje jeden terminal i jedną baterię.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 — stacja ładuje jeden terminal i jedną baterię; S50 bez osłony wymaga podkładki; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010080.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3342,7 +3791,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem — 204010081",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081). Stacja z Ethernetem ładuje jeden terminal i jedną baterię.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem — stacja z Ethernetem ładuje jeden terminal i jedną baterię; S50 bez osłony wymaga podkładki; zasilacz 12 V / 5 A sprzedawany osobno. PN 204010081.",
-    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Terminal S50 bez osłony rugged boot wymaga podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3409,7 +3858,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 — 204020030",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 (204020030). Stacja ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 — stacja ładuje cztery terminale i cztery baterie; S50 bez osłony wymaga podkładki; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020030.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3476,7 +3925,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem — 204020031",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem (204020031). Stacja z Ethernetem ładuje cztery terminale i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird S50 i S70 z Ethernetem — stacja z Ethernetem ładuje cztery terminale i cztery baterie; S50 bez osłony wymaga podkładki; zasilacz 12 V / 10 A sprzedawany osobno. PN 204020031.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird S50](/produkt/bluebird-s50) albo [Bluebird S70](/produkt/bluebird-s70) i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Złącza Ethernet łączą terminale z siecią przewodową, gdy terminale stoją w stacji. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Złącze obsługuje połączenie 1 Gb/s. S70 nie wymaga podkładki. Otwory od spodu pozwalają przykręcić stację do blatu. Każdy terminal S50 bez osłony rugged boot wymaga osobnej podkładki. Do pełnej stacji z terminalami S50 potrzebne są 4 podkładki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 10 A do stacji Bluebird (602010035)](/produkt/bluebird-602010035)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla terminala S50 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird S50 (501260117)](/produkt/bluebird-501260117)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3783,7 +4232,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R — 204010058",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R (204010058) — stacja ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R — stacja ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010058.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3853,7 +4302,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem — 204010059",
     "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem (204010059). Stacja z Ethernetem i USB-C ładuje EF551 lub EF551R i baterię zapasową.",
     "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird EF551 i EF551R z Ethernetem — stacja z Ethernetem i USB-C ładuje EF551 lub EF551R i baterię zapasową; zasilacz 9 V / 3 A sprzedawany osobno. PN 204010059.",
-    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG) i przełącznik USB / Ethernet. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do komunikacji przez USB potrzebny jest [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje jeden terminal [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i jedną baterię zapasową w osobnym gnieździe. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Złącze Ethernet łączy terminal z siecią przewodową, gdy terminal stoi w stacji. Terminal ładuje się po odłożeniu do gniazda, bez podłączania kabla. Bateria zapasowa ładuje się w tym samym czasie. Stacja ma też port USB-C (OTG) i przełącznik USB / Ethernet. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged); podkładka nie jest w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę. Do komunikacji przez USB potrzebny jest [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 3 A do stacji Bluebird (602010012)](/produkt/bluebird-602010012)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -3923,7 +4372,7 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R — 204020019",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R (204020019). Stacja ładuje cztery terminale EF551 lub EF551R i cztery baterie.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird EF551 i EF551R — stacja ładuje cztery terminale EF551 lub EF551R i cztery baterie; zasilacz 9 V / 10 A sprzedawany osobno. PN 204020019.",
-    "description": "Stacja ładuje do czterech terminali [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged), po jednej na gniazdo, czyli 4 podkładek do pełnej stacji; podkładki nie są w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
+    "description": "Stacja ładuje do czterech terminali [Bluebird EF551](/produkt/bluebird-ef551) albo EF551R i do czterech baterii zapasowych. Gniazdo przyjmuje także terminal z nakładanym czytnikiem UHF RFID RFR900 lub RFR901 w wersji z mocowaniem do tego terminala. Czytniki w ofercie: [Bluebird RFR900](/produkt/bluebird-rfr900) z mocowaniem EF40X lub HF550X i [Bluebird RFR901](/produkt/bluebird-rfr901) z uchwytem na smartfon lub bez uchwytu. Terminale ładują się po odłożeniu do gniazd, bez podłączania kabli. Baterie zapasowe ładują się w osobnych gniazdach w tym samym czasie. Stacja wymaga podkładki dopasowanej do obudowy terminala (standardowej albo Rugged), po jednej na gniazdo, czyli 4 podkładek do pełnej stacji; podkładki nie są w zestawie. Przed włożeniem EF551R z podkładki wyjmuje się wkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 9 V / 10 A do stacji Bluebird (602010013)](/produkt/bluebird-602010013)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nZasilacz łączy się z gniazdkiem przez przewód zasilający EU.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
@@ -6838,6 +7287,60 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-sf650"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "bluebird-355040055",
+    "slug": "bluebird-355040055",
+    "name": "Bateria rozszerzona 4000 mAh Bluebird RFR900",
+    "seoH1": "Bateria rozszerzona 4000 mAh Bluebird RFR900",
+    "seoTitle": "Bateria rozszerzona 4000 mAh Bluebird RFR900 — 355040055",
+    "seoDescription": "Bateria rozszerzona 4000 mAh Bluebird (355040055) do czytników UHF RFID RFR900 i RFR900S. Bateria wymienna, 3,65 V.",
+    "shortDescription": "Bateria rozszerzona 4000 mAh Bluebird do czytników RFR900 i RFR900S. Wymienna, 3,65 V. PN 355040055.",
+    "description": "Bateria rozszerzona 4000 mAh zasila czytnik UHF RFID [Bluebird RFR900](/produkt/bluebird-rfr900) oraz model RFR900S. Ma napięcie 3,65 V. Standardowa bateria RFR900 ma pojemność 3400 mAh.\n\nBaterię wymienia użytkownik. Zapasowa bateria pozwala kontynuować inwentaryzację po rozładowaniu pierwszej.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "baterie-do-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 232.08,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "355040055"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird RFR900, RFR900S"
+      },
+      {
+        "name": "Pojemność",
+        "value": "4000 mAh"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,65 V"
+      }
+    ],
+    "applications": [
+      "Bateria zapasowa czytnika RFID"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-rfr900"
     ],
     "downloads": [],
     "faq": [],
