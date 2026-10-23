@@ -343,6 +343,290 @@ export const getacTabletProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-23"
+  },
+  {
+    "id": "getac-zx10-g2",
+    "slug": "getac-zx10-g2",
+    "name": "Getac ZX10 G2",
+    "seoH1": "Getac ZX10 G2",
+    "seoTitle": "Tablet przemysłowy Getac ZX10 G2 10,1″ z Androidem 15, IP66",
+    "seoDescription": "Tablet przemysłowy Getac ZX10 G2 10,1″, Android 15, IP66, dwie baterie hot-swap. Tablet rugged Getac ZX10 z 4G. ZX10 Getac PN: Z8A1KXW85ABX, Z8A1KXW857BX.",
+    "shortDescription": "Getac ZX10 G2 — tablet fully rugged 10,1″ z Androidem 15, klasą IP66 i dwiema kieszeniami na baterie wymieniane bez wyłączania. Wersje z Wi-Fi 6E i GPS albo z 4G LTE, opcjonalnie z czytnikiem kodów 1D/2D lub NFC.",
+    "description": "Getac ZX10 G2 to tablet przemysłowy z ekranem 10,1 cala i Androidem 15. Służy do pracy w magazynie, w pojazdach i w terenie. Obudowa ma masę 906 g, klasę szczelności IP66 i certyfikat MIL-STD-810H. Tablet wytrzymuje upadek z 1,8 m.\n\nEkran LumiBond WUXGA ma jasność 1000 nitów i obsługuje dotyk w rękawicach. Procesor Qualcomm QCS6490 pracuje z 8 GB RAM. Pamięć UFS ma 128 GB albo 256 GB, zależnie od PN. Tablet ma status Android Enterprise Recommended.\n\nTablet ma dwie kieszenie na baterie. Gdy w obu kieszeniach są baterie, jedną z nich wymienia się bez wyłączania tabletu (technologia LifeSupport). Do kieszeni pasuje bateria 4990 mAh albo 9980 mAh. Przy zasilaniu sieciowym tablet pracuje od −29°C do +63°C. Na samej baterii dolna granica wynosi −15°C z jedną baterią standardową, −21°C z dwiema standardowymi i −29°C z dwiema bateriami o dużej pojemności.\n\nKonfiguracje różnią się łącznością, pamięcią i opcjami: czytnikiem kodów 1D/2D, NFC oraz złączami anten zewnętrznych. W zestawie jest zasilacz. Gwarancja Bumper-to-Bumper trwa 3 lata i obejmuje przypadkowe uszkodzenia.\n\nEkran 8 cali i klasę IP67 ma [Getac ZX80](/produkt/getac-zx80).",
+    "categoryId": "tablety-przemyslowe",
+    "subcategoryIds": [
+      "tablety-przemyslowe"
+    ],
+    "manufacturerId": "getac",
+    "sameAs": "https://www.getac.com/en/products/tablets/zx10/",
+    "priceFrom": 6821.19,
+    "availability": "available",
+    "images": [
+      "/images/products/Z8A1KXW85ABX.png",
+      "/images/products/Z8A1KXW85ABX-2.png",
+      "/images/products/Z8A1KXW85ABX-3.png",
+      "/images/products/Z8A1KXW85ABX-4.png",
+      "/images/products/Z8A1KXW85ABX-5.png"
+    ],
+    "imageDescriptions": [
+      "Getac ZX10 G2 — widok z przodu, ekran 10,1 cala w poziomie i przyciski po prawej stronie",
+      "Getac ZX10 G2 — widok z przodu pod kątem, z lewej strony",
+      "Getac ZX10 G2 — widok z przodu pod kątem, z prawej strony",
+      "Getac ZX10 G2 — tył obudowy z aparatem i rysikiem w uchwycie",
+      "Getac ZX10 G2 — widok z dołu pod kątem, złącza na dolnej krawędzi"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "outdoor"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "Z8A1KXW85ABX, Z8A1KXW857BX, Z8A1KZW85ABX, Z8A1LXW85AB1, Z8A1LXW858B1"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Android 15 z usługami Google (GMS); Android Enterprise Recommended"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm QCS6490, 8 rdzeni, 1,9 GHz (maks. 2,7 GHz); GPU Adreno 643; NPU Hexagon do 13 TOPS"
+      },
+      {
+        "name": "Pamięć RAM / Flash",
+        "value": "8 GB LPDDR5 / 128 GB albo 256 GB UFS, zależnie od PN"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "10,1″ WUXGA 1920 × 1200, TFT LCD, LumiBond, 1000 nitów"
+      },
+      {
+        "name": "Ekran dotykowy",
+        "value": "Pojemnościowy multi-touch z obsługą w rękawicach; opcja: tryb podwójny z digitizerem"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania, 4 przyciski programowalne"
+      },
+      {
+        "name": "Skaner kodów",
+        "value": "Opcja: czytnik 1D/2D (imager), zależnie od PN"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6E (802.11ax)"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "5.2"
+      },
+      {
+        "name": "Łączność komórkowa",
+        "value": "Opcja: 4G LTE albo 5G Sub-6, nano-SIM i eSIM; w ofercie wersje z 4G LTE"
+      },
+      {
+        "name": "GPS",
+        "value": "Dedykowany GPS L1/L5 (GPS, GLONASS, Galileo, BeiDou) we wszystkich wersjach z tej karty"
+      },
+      {
+        "name": "NFC",
+        "value": "Opcja: 13,56 MHz (ISO 15693, ISO 14443 A/B, Mifare, FeliCa), zależnie od PN"
+      },
+      {
+        "name": "Inne opcje producenta",
+        "value": "Czytnik kart chipowych (smart card)"
+      },
+      {
+        "name": "Porty",
+        "value": "USB 2.0 (host), USB 3.2 Gen 1 Type-C (DisplayPort, Power Delivery), gniazdo audio, microSD, złącze dokujące; opcja: złącza RF pass-through (GPS, WWAN, WLAN)"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 16 MP z autofokusem, przedni 8 MP"
+      },
+      {
+        "name": "Audio",
+        "value": "Wbudowane głośniki stereo, mikrofon dwuelementowy (dual-array)"
+      },
+      {
+        "name": "Bateria",
+        "value": "Li-ion 3,88 V, typowo 4990 mAh; opcje: 2 baterie 4990 mAh albo 2 baterie 9980 mAh"
+      },
+      {
+        "name": "Wymiana baterii",
+        "value": "Bez wyłączania tabletu, gdy w obu kieszeniach są baterie (LifeSupport)"
+      },
+      {
+        "name": "Klasa ochrony",
+        "value": "IP66"
+      },
+      {
+        "name": "Wytrzymałość",
+        "value": "MIL-STD-810H; odporność na wibracje"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,8 m"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "Od −29°C do +63°C przy zasilaniu sieciowym; na baterii od −15°C (1 bateria standardowa), od −21°C (2 standardowe), od −29°C (2 baterie o dużej pojemności)"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "Od −51°C do +71°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% RH bez kondensacji"
+      },
+      {
+        "name": "Certyfikat do stref zagrożonych",
+        "value": "Opcja: ANSI/UL 121201, CSA C22.2 No. 213 (Class I, Division 2, Groups A, B, C, D)"
+      },
+      {
+        "name": "Zabezpieczenia",
+        "value": "Gniazdo Kensington"
+      },
+      {
+        "name": "Wymiary",
+        "value": "275 × 192 × 17,9 mm; baterie o dużej pojemności dodają ok. 7,65 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "906 g; baterie o dużej pojemności dodają ok. 140 g"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Tablet, bateria wymienna, zasilacz, przewód zasilający (EU, UK), rysik"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "3 lata Bumper-to-Bumper, z przypadkowymi uszkodzeniami"
+      }
+    ],
+    "applications": [
+      "Kompletacja i inwentaryzacja w magazynie",
+      "Praca w pojazdach ze stacją pojazdową",
+      "Prace terenowe i przeglądy techniczne",
+      "Stanowisko z klawiaturą i stacją biurkową"
+    ],
+    "variants": [
+      {
+        "partNumber": "Z8A1KXW85ABX",
+        "name": "ZX10 G2 — Wi-Fi, GPS, 128 GB",
+        "priceFrom": 6821.19,
+        "availability": "available",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Pamięć": "8 / 128 GB"
+        }
+      },
+      {
+        "partNumber": "Z8A1KXW857BX",
+        "name": "ZX10 G2 — 4G LTE, GPS, 128 GB",
+        "priceFrom": 7576.84,
+        "availability": "on-order",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Pamięć": "8 / 128 GB"
+        }
+      },
+      {
+        "partNumber": "Z8A1KZW85ABX",
+        "name": "ZX10 G2 — czytnik 1D/2D, Wi-Fi, GPS, 128 GB",
+        "priceFrom": 7593.17,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Pamięć": "8 / 128 GB",
+          "Czytnik kodów": "1D/2D"
+        }
+      },
+      {
+        "partNumber": "Z8A1LXW85AB1",
+        "name": "ZX10 G2 — Wi-Fi, GPS, NFC, 256 GB",
+        "priceFrom": 8103.74,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "Wi-Fi, GPS",
+          "Pamięć": "8 / 256 GB",
+          "NFC": "Tak"
+        }
+      },
+      {
+        "partNumber": "Z8A1LXW858B1",
+        "name": "ZX10 G2 — 4G LTE, GPS, 256 GB, złącza anten zewnętrznych",
+        "priceFrom": 8920.65,
+        "availability": "unavailable",
+        "attributes": {
+          "Łączność": "4G LTE, GPS",
+          "Pamięć": "8 / 256 GB",
+          "Antena zewnętrzna": "Tak"
+        }
+      }
+    ],
+    "variantAttributeTooltips": {
+      "Łączność": "Sposób połączenia z siecią. Każda wersja ZX10 G2 w tej karcie ma Wi-Fi 6E, Bluetooth 5.2 i GPS.\n\n• 4G LTE — praca poza zasięgiem Wi-Fi; nano-SIM i eSIM.",
+      "Pamięć": "Pamięć operacyjna i pamięć na aplikacje oraz dane.\n\n• 8 GB LPDDR5 i 128 GB albo 256 GB UFS.\n\n• Gniazdo microSD rozszerza pamięć na pliki.",
+      "Czytnik kodów": "Wbudowany czytnik kodów kreskowych (imager).\n\n• Odczyt kodów 1D i 2D bez osobnego skanera.",
+      "NFC": "Czytnik zbliżeniowy 13,56 MHz w obudowie tabletu.\n\n• Karty i znaczniki ISO 15693, ISO 14443 A/B, Mifare i FeliCa.",
+      "Antena zewnętrzna": "Złącza RF pass-through do anten zewnętrznych.\n\n• Stacja pojazdowa ma opcjonalnie 3 złącza anten: GPS, WWAN i WLAN."
+    },
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "getac-bateria-gbm1x2",
+      "getac-bateria-gbm2x3",
+      "getac-stacja-biurkowa-gdode8",
+      "getac-klawiatura-gdkbur",
+      "getac-ladowarka-2-gniazdowa-gcmcem",
+      "getac-rysik-digitizer-gmpdx7",
+      "getac-pasek-na-reke-gmhrxm",
+      "getac-torba-gmbcx2"
+    ],
+    "relatedProducts": [
+      "getac-zx80",
+      "honeywell-rt10a",
+      "brady-rt710",
+      "zebra-et60",
+      "zebra-et65",
+      "honeywell-eda10a"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Getac ZX10 G2 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/getac-zx10-g2.pdf",
+        "size": "1036 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy baterię Getac ZX10 G2 można wymienić bez wyłączania?",
+        "answer": "Tak, gdy w obu kieszeniach są baterie. Tablet ma dwie kieszenie na baterie i technologię LifeSupport, więc jedną baterię wymienia się, a tablet pracuje na drugiej. Pasują baterie 4990 mAh GBM1X2 i 9980 mAh GBM2X3."
+      },
+      {
+        "question": "Czy Getac ZX10 G2 pracuje w mroźni?",
+        "answer": "Przy zasilaniu sieciowym tablet pracuje od −29°C do +63°C. Na samej baterii pracuje od −15°C z jedną baterią standardową, od −21°C z dwiema standardowymi i od −29°C z dwiema bateriami o dużej pojemności 9980 mAh."
+      },
+      {
+        "question": "Czy do Getac ZX10 G2 jest klawiatura?",
+        "answer": "Tak. Getac oferuje klawiaturę ze stacją (keyboard dock). W ofercie jest wersja z układem US: GDKBUR."
+      },
+      {
+        "question": "Które wersje Getac ZX10 G2 mają czytnik kodów lub NFC?",
+        "answer": "Czytnik kodów 1D/2D ma wersja Z8A1KZW85ABX. NFC ma wersja Z8A1LXW85AB1. Pozostałe wersje z tej karty nie mają tych modułów."
+      },
+      {
+        "question": "Czy Getac ZX10 G2 działa z Windows?",
+        "answer": "Nie. ZX10 G2 pracuje z Androidem 15. Tablety Getac z Windows 11 Pro to m.in. <a href=\"/produkt/getac-ux10-g5\">Getac UX10 G5</a> z ekranem 10,1 cala i <a href=\"/produkt/getac-f110-g7\">Getac F110 G7</a> z ekranem 11,6 cala."
+      }
+    ],
+    "createdAt": "2026-10-23",
+    "updatedAt": "2026-10-23"
   }
 ]
 
