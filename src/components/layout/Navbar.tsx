@@ -56,6 +56,7 @@ const navigation: NavItem[] = [
       { name: 'Ekrany KDS', href: '/ekrany-kds' },
       { name: 'Kioski samoobsługowe', href: '/kioski-samoobslugowe' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
+      { name: 'Terminale naramienne', href: '/terminale-naramienne' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },

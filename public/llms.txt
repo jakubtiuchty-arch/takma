@@ -64,6 +64,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
     - Serwis kolorowych drukarek Epson: https://www.takma.com.pl/serwis-kolorowych-drukarek-epson
 - Terminale mobilne: https://www.takma.com.pl/terminale-mobilne
   - Terminale Honeywell: https://www.takma.com.pl/terminale-honeywell
+  - Terminale naramienne (komputery noszone na nadgarstku Zebra WT5400 i WT6400): https://www.takma.com.pl/terminale-naramienne
 - Skanery kodów kreskowych: https://www.takma.com.pl/skanery-kodow-kreskowych
   - Skanery Datalogic 1D, 2D i DPM: https://www.takma.com.pl/skanery-datalogic
   - Skanery ProGlove noszone na grzbiecie dłoni (LEO, MARK Basic, MARK 2, MARK 3, MARK Display, MAI): https://www.takma.com.pl/skanery-proglove
@@ -274,6 +275,8 @@ Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwij
 - Zebra TC78 (ultra-rugged 5G, od ~9 500 zł): https://www.takma.com.pl/produkt/zebra-tc78
 - Zebra TC501 (AI, RFID, Wi-Fi 7, od 6 319 zł): https://www.takma.com.pl/produkt/zebra-tc501
 - Zebra TC701 (ultra-rugged AI, RFID, od ~4 017 zł): https://www.takma.com.pl/produkt/zebra-tc701
+- Zebra WT5400 (terminal naramienny do sklepów, ekran 4,7", grubość 13,97 mm, NFC w obudowie, Wi-Fi 6E, USB-C, skanery Bluetooth RS2100, RS5100, RS6100): https://www.takma.com.pl/produkt/zebra-wt5400
+- Zebra WT6400 (terminal naramienny do magazynu i produkcji, ekran 4,7", wersja z klawiaturą, aparat 13 MP, skanery Bluetooth i przewodowe, praca do −30 °C z baterią rozszerzoną): https://www.takma.com.pl/produkt/zebra-wt6400
 
 ## Skanery kodów kreskowych — oferta (5 modeli)
 

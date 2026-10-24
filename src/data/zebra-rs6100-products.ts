@@ -12,7 +12,7 @@ export const zebraRs6100Products: Product[] = [
     "seoTitle": "Zebra RS6100 — skaner noszony 1D/2D, zasięg do 12,2 m, wymienna bateria",
     "seoDescription": "Skaner noszony Zebra RS6100: imager SE55 od 5,08 cm do 12,2 m, wymienna bateria, IP65, wersja do mroźni. Skaner pierścieniowy Zebra RS6100, skaner na palec Zebra, RS6100 Zebra. PN: RS61B0-KBSSZWR, RS61B0-KESSXWR, RS61B0-KBDSZWR, RS61B0-KEDSXWR, RS61B0-KBBHZWR, RS61B0-KBENZWR, RS61B0-KEENXWR, RS61B0-KFSSYWR.",
     "shortDescription": "Zebra RS6100 — skaner kodów 1D/2D noszony na palcu lub dłoni: imager SE55 od 5,08 cm do 12,2 m, wymienna bateria, obudowa IP65 i konfiguracja do pracy w mroźni.",
-    "description": "Zebra RS6100 to skaner kodów kreskowych 1D i 2D noszony na palcu albo na dłoni. Imager SE55 z technologią IntelliFocus czyta kody z odległości od 5,08 cm do 12,2 m. Tym samym skanerem pracownik odczytuje etykietę towaru trzymanego w ręce i etykietę na najwyższym poziomie regału. Zasięg zależy od rodzaju i wielkości kodu, jakości druku, kontrastu oraz oświetlenia.\n\nZamiast odstawiać skaner do ładowania, pracownik wkłada naładowaną baterię i pracuje dalej. Do wyboru są baterie PowerPrecision+: standardowa 480 mAh na pełną zmianę i rozszerzona 735 mAh na dłuższe zmiany. Bateria 660 mAh z niebieską etykietą umożliwia pracę w mroźni do −30 °C. Bez baterii skaner pracuje z adapterem przewodowym, który pobiera zasilanie z komputera noszonego WT6000 lub WT6300.\n\nSkaner nosi się na pięć sposobów: z pojedynczym lub podwójnym spustem na palcu wskazującym, w mocowaniu Enterprise Hand Mount, w mocowaniu na grzbiet dłoni albo na smyczy. Spust jest osobnym zespołem i tylko on dotyka skóry, więc każdy pracownik może mieć własny.\n\nObudowa ma szczelność IP65. Wytrzymuje wielokrotne upadki na betonową posadzkę z wysokości 1,8 m przy każdej temperaturze z zakresu pracy. Cztery programowalne diody RGB z tyłu skanera potwierdzają odczyt i mogą prowadzić pracownika do kolejnej pozycji na liście kompletacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: ładowanie (jedno z) — sprzedawane osobno**\n\n- [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01)\n- [Zestaw stacji 2-gniazdowej Zebra RS5100 / RS6100 z zasilaczem (KT-RS5X6-2SCPWR-01)](/produkt/zebra-rs6100-kt-rs5x6-2scpwr-01)\n- [Stacja ładująca Zebra RS6100 4-gniazdowa (CRD-RS61-4SCHG-01)](/produkt/zebra-rs6100-crd-rs61-4schg-01)\n- [Stacja ładująca Zebra RS6100 20-gniazdowa (CRD-RS61-20SCHG-01)](/produkt/zebra-rs6100-crd-rs61-20schg-01)\n\nBateria jest w zestawie ze skanerem i ładuje się w skanerze włożonym do jednej z tych stacji. Dokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Wersje RS61B0-KBENZWR i RS61B0-KEENXWR mają mocowanie Enterprise Hand Mount, czyli ramę ze spustem. Owijkę na dłoń zamawia się osobno, w rozmiarze i na rękę pracownika:\n\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar S (SG-WEAR-HNWPRS-02)](/produkt/zebra-rs6100-sg-wear-hnwprs-02)\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar M (SG-WEAR-HNWPRM-02)](/produkt/zebra-rs6100-sg-wear-hnwprm-02)\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar L (SG-WEAR-HNWPRL-02)](/produkt/zebra-rs6100-sg-wear-hnwprl-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar S (SG-WEAR-HNWPLS-02)](/produkt/zebra-rs6100-sg-wear-hnwpls-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar M (SG-WEAR-HNWPLM-02)](/produkt/zebra-rs6100-sg-wear-hnwplm-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar L (SG-WEAR-HNWPLL-02)](/produkt/zebra-rs6100-sg-wear-hnwpll-02)\n\n- Zapasowe baterie ładuje [ładowarka 8 baterii](/produkt/zebra-rs6100-sac-rs51-8schg-01) albo [ładowarka 40 baterii](/produkt/zebra-rs6100-sac-rs51-40schg-01).",
+    "description": "Zebra RS6100 to skaner kodów kreskowych 1D i 2D noszony na palcu albo na dłoni. Imager SE55 z technologią IntelliFocus czyta kody z odległości od 5,08 cm do 12,2 m. Tym samym skanerem pracownik odczytuje etykietę towaru trzymanego w ręce i etykietę na najwyższym poziomie regału. Zasięg zależy od rodzaju i wielkości kodu, jakości druku, kontrastu oraz oświetlenia.\n\nZamiast odstawiać skaner do ładowania, pracownik wkłada naładowaną baterię i pracuje dalej. Do wyboru są baterie PowerPrecision+: standardowa 480 mAh na pełną zmianę i rozszerzona 735 mAh na dłuższe zmiany. Bateria 660 mAh z niebieską etykietą umożliwia pracę w mroźni do −30 °C. Bez baterii skaner pracuje z adapterem przewodowym, który pobiera zasilanie z komputera noszonego WT6000, WT6300 lub [WT6400](/produkt/zebra-wt6400).\n\nSkaner nosi się na pięć sposobów: z pojedynczym lub podwójnym spustem na palcu wskazującym, w mocowaniu Enterprise Hand Mount, w mocowaniu na grzbiet dłoni albo na smyczy. Spust jest osobnym zespołem i tylko on dotyka skóry, więc każdy pracownik może mieć własny.\n\nObudowa ma szczelność IP65. Wytrzymuje wielokrotne upadki na betonową posadzkę z wysokości 1,8 m przy każdej temperaturze z zakresu pracy. Cztery programowalne diody RGB z tyłu skanera potwierdzają odczyt i mogą prowadzić pracownika do kolejnej pozycji na liście kompletacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: ładowanie (jedno z) — sprzedawane osobno**\n\n- [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01)\n- [Zestaw stacji 2-gniazdowej Zebra RS5100 / RS6100 z zasilaczem (KT-RS5X6-2SCPWR-01)](/produkt/zebra-rs6100-kt-rs5x6-2scpwr-01)\n- [Stacja ładująca Zebra RS6100 4-gniazdowa (CRD-RS61-4SCHG-01)](/produkt/zebra-rs6100-crd-rs61-4schg-01)\n- [Stacja ładująca Zebra RS6100 20-gniazdowa (CRD-RS61-20SCHG-01)](/produkt/zebra-rs6100-crd-rs61-20schg-01)\n\nBateria jest w zestawie ze skanerem i ładuje się w skanerze włożonym do jednej z tych stacji. Dokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Wersje RS61B0-KBENZWR i RS61B0-KEENXWR mają mocowanie Enterprise Hand Mount, czyli ramę ze spustem. Owijkę na dłoń zamawia się osobno, w rozmiarze i na rękę pracownika:\n\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar S (SG-WEAR-HNWPRS-02)](/produkt/zebra-rs6100-sg-wear-hnwprs-02)\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar M (SG-WEAR-HNWPRM-02)](/produkt/zebra-rs6100-sg-wear-hnwprm-02)\n- [Owijka na dłoń Zebra, prawa ręka, rozmiar L (SG-WEAR-HNWPRL-02)](/produkt/zebra-rs6100-sg-wear-hnwprl-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar S (SG-WEAR-HNWPLS-02)](/produkt/zebra-rs6100-sg-wear-hnwpls-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar M (SG-WEAR-HNWPLM-02)](/produkt/zebra-rs6100-sg-wear-hnwplm-02)\n- [Owijka na dłoń Zebra, lewa ręka, rozmiar L (SG-WEAR-HNWPLL-02)](/produkt/zebra-rs6100-sg-wear-hnwpll-02)\n\n- Zapasowe baterie ładuje [ładowarka 8 baterii](/produkt/zebra-rs6100-sac-rs51-8schg-01) albo [ładowarka 40 baterii](/produkt/zebra-rs6100-sac-rs51-40schg-01).",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -114,7 +114,7 @@ export const zebraRs6100Products: Product[] = [
       },
       {
         "name": "Zasilanie przewodowe",
-        "value": "Adaptery przewodowe do komputerów Zebra WT6000, WT6300, TC21/TC26 i TC53/TC58"
+        "value": "Adaptery przewodowe do komputerów Zebra WT6000, WT6300, WT6400, WT5400, TC21/TC26 i TC53/TC58"
       },
       {
         "name": "Ładowanie",
@@ -150,7 +150,7 @@ export const zebraRs6100Products: Product[] = [
       },
       {
         "name": "Temperatura pracy",
-        "value": "Bateria standardowa 480 mAh: 0 °C do 50 °C; bateria rozszerzona 735 mAh: −20 °C do 50 °C; bateria do mroźni 660 mAh: −30 °C do 50 °C; z adapterem przewodowym do WT6000 / WT6300 praca w mroźni (−20 °C i −30 °C)"
+        "value": "Bateria standardowa 480 mAh: 0 °C do 50 °C; bateria rozszerzona 735 mAh: −20 °C do 50 °C; bateria do mroźni 660 mAh: −30 °C do 50 °C; z adapterem przewodowym do WT6000 / WT6300 / WT6400 praca w mroźni (−20 °C i −30 °C)"
       },
       {
         "name": "Temperatura przechowywania",
@@ -290,6 +290,7 @@ export const zebraRs6100Products: Product[] = [
       "zebra-rs6100-sac-rs51-40schg-01",
       "zebra-rs2100-bt-rs5x6-dngl-01",
       "zebra-rs6100-cbl-rs5x6-adpwt-01",
+      "zebra-wt-cbl-rs5x6-adptc-01",
       "zebra-rs6100-sg-rs51-trgss-03",
       "zebra-rs6100-sg-rs51-trgds-01",
       "zebra-rs6100-sg-rs5x6-bhmt-01",
@@ -333,7 +334,7 @@ export const zebraRs6100Products: Product[] = [
     "faq": [
       {
         "question": "Z jakimi urządzeniami łączy się Zebra RS6100?",
-        "answer": "RS6100 przesyła kody przez Bluetooth 5.2. Pełny zestaw funkcji działa z komputerami mobilnymi Zebra z Bluetooth: ręcznymi, tabletami, noszonymi i pokładowymi. Skaner paruje się też ze smartfonem, tabletem albo komputerem PC z Bluetooth. Z urządzeniami Zebra obsługującymi NFC, np. WT6300, wystarczy zbliżyć skaner do ikony NFC. Do komputera stacjonarnego służy [adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01), który obsługuje do siedmiu skanerów."
+        "answer": "RS6100 przesyła kody przez Bluetooth 5.2. Pełny zestaw funkcji działa z komputerami mobilnymi Zebra z Bluetooth: ręcznymi, tabletami, noszonymi i pokładowymi. Skaner paruje się też ze smartfonem, tabletem albo komputerem PC z Bluetooth. Z urządzeniami Zebra obsługującymi NFC, np. [WT5400](/produkt/zebra-wt5400), [WT6400](/produkt/zebra-wt6400) lub WT6300, wystarczy zbliżyć skaner do ikony NFC. Do komputera stacjonarnego służy [adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01), który obsługuje do siedmiu skanerów."
       },
       {
         "question": "Czy RS6100 współpracuje z iPhone'em lub telefonem z Androidem?",
@@ -345,7 +346,7 @@ export const zebraRs6100Products: Product[] = [
       },
       {
         "question": "Czy RS6100 może pracować w mroźni?",
-        "answer": "Tak. Wersja RS61B0-KFSSYWR ma [baterię do mroźni](/produkt/zebra-rs6100-btry-rs5x6-6ma-01) 660 mAh, z którą skaner pracuje od −30 do 50 °C. Bateria rozszerzona pozwala pracować od −20 °C, a standardowa od 0 °C. Poniżej −20 °C skaner z baterią do mroźni skraca czas sesji odczytu do mniej niż 1 sekundy. Drugą możliwością jest [adapter przewodowy](/produkt/zebra-rs6100-cbl-rs5x6-adpwt-01) zasilany z WT6000 lub WT6300."
+        "answer": "Tak. Wersja RS61B0-KFSSYWR ma [baterię do mroźni](/produkt/zebra-rs6100-btry-rs5x6-6ma-01) 660 mAh, z którą skaner pracuje od −30 do 50 °C. Bateria rozszerzona pozwala pracować od −20 °C, a standardowa od 0 °C. Poniżej −20 °C skaner z baterią do mroźni skraca czas sesji odczytu do mniej niż 1 sekundy. Drugą możliwością jest [adapter przewodowy](/produkt/zebra-rs6100-cbl-rs5x6-adpwt-01) zasilany z WT6000, WT6300 lub WT6400."
       },
       {
         "question": "Jak wymienić baterię w RS6100 w trakcie zmiany?",
@@ -361,7 +362,7 @@ export const zebraRs6100Products: Product[] = [
       },
       {
         "question": "Czy RS6100 może pracować bez baterii?",
-        "answer": "Tak. [Adapter przewodowy CBL-RS5X6-ADPWT-01](/produkt/zebra-rs6100-cbl-rs5x6-adpwt-01) zasila skaner z komputera noszonego Zebra WT6000 lub WT6300. Przewód dostarcza tylko zasilanie, a kody nadal trafiają do terminala przez Bluetooth."
+        "answer": "Tak. [Adapter przewodowy CBL-RS5X6-ADPWT-01](/produkt/zebra-rs6100-cbl-rs5x6-adpwt-01) zasila skaner z komputera noszonego Zebra WT6000, WT6300 lub [WT6400](/produkt/zebra-wt6400). Do [WT5400](/produkt/zebra-wt5400) i terminali ze złączem USB-C służy [adapter CBL-RS5X6-ADPTC-01](/produkt/zebra-wt-cbl-rs5x6-adptc-01). Przewód dostarcza tylko zasilanie, a kody nadal trafiają do terminala przez Bluetooth."
       },
       {
         "question": "Co zawiera opakowanie RS6100?",
@@ -1323,12 +1324,12 @@ export const zebraRs6100Accessories: Product[] = [
   {
     "id": "zebra-rs6100-cbl-rs5x6-adpwt-01",
     "slug": "zebra-rs6100-cbl-rs5x6-adpwt-01",
-    "name": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000 / WT6300",
-    "seoH1": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000 / WT6300",
-    "seoTitle": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000 / WT6300 — CBL-RS5X6-ADPWT-01",
-    "seoDescription": "Adapter przewodowy Zebra CBL-RS5X6-ADPWT-01: zasila skaner RS6100 lub RS5100 z komputera noszonego WT6000 lub WT6300, praca bez baterii i w mroźni. Kabel zasilający Zebra RS6100.",
-    "shortDescription": "Zebra CBL-RS5X6-ADPWT-01 — adapter przewodowy, który zasila skaner noszony RS5100 lub RS6100 z komputera WT6000 lub WT6300; dane płyną przez Bluetooth.",
-    "description": "Adapter CBL-RS5X6-ADPWT-01 łączy skaner Zebra [RS5100](/produkt/zebra-rs5100) lub RS6100 z komputerem noszonym Zebra WT6000 lub WT6300, zamocowanym na przedramieniu lub nadgarstku. Terminal zasila skaner przez przewód, więc skaner pracuje bez baterii. Kody nadal trafiają do terminala przez Bluetooth, a nie przez przewód.\n\nZ adapterem RS6100 może pracować w mroźni, w temperaturze −20 °C i −30 °C. Gdy WT6000 lub WT6300 ma baterię 5000 mAh, skaner nie skraca czasu sesji odczytu i utrzymuje domyślne 4 sekundy w całym zakresie temperatur. Terminal WT6000 lub WT6300 nie jest dołączony do adaptera.",
+    "name": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000, WT6300 i WT6400",
+    "seoH1": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000, WT6300 i WT6400",
+    "seoTitle": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000, WT6300 i WT6400 — CBL-RS5X6-ADPWT-01",
+    "seoDescription": "Adapter przewodowy Zebra CBL-RS5X6-ADPWT-01: zasila skaner RS6100 lub RS5100 z komputera noszonego WT6000, WT6300 lub WT6400, praca bez baterii i w mroźni. Kabel zasilający Zebra RS6100.",
+    "shortDescription": "Zebra CBL-RS5X6-ADPWT-01 — adapter przewodowy, który zasila skaner noszony RS5100 lub RS6100 z komputera WT6000, WT6300 lub WT6400; dane płyną przez Bluetooth.",
+    "description": "Adapter CBL-RS5X6-ADPWT-01 łączy skaner Zebra [RS5100](/produkt/zebra-rs5100) lub RS6100 z komputerem noszonym Zebra WT6000, WT6300 lub [WT6400](/produkt/zebra-wt6400), zamocowanym na przedramieniu lub nadgarstku. Terminal zasila skaner przez przewód, więc skaner pracuje bez baterii. Kody nadal trafiają do terminala przez Bluetooth, a nie przez przewód.\n\nZ adapterem RS6100 może pracować w mroźni, w temperaturze −20 °C i −30 °C. Gdy WT6000 lub WT6300 ma baterię 5000 mAh, skaner nie skraca czasu sesji odczytu i utrzymuje domyślne 4 sekundy w całym zakresie temperatur. Terminal nie jest dołączony do adaptera. Do terminala WT5400 ze złączem USB-C służy [adapter CBL-RS5X6-ADPTC-01](/produkt/zebra-wt-cbl-rs5x6-adptc-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1359,7 +1360,7 @@ export const zebraRs6100Accessories: Product[] = [
       },
       {
         "name": "Terminal",
-        "value": "Zebra WT6000, Zebra WT6300 (sprzedawane osobno)"
+        "value": "Zebra WT6000, Zebra WT6300, Zebra WT6400 (sprzedawane osobno)"
       },
       {
         "name": "Praca w mroźni",
@@ -1371,15 +1372,18 @@ export const zebraRs6100Accessories: Product[] = [
       }
     ],
     "applications": [
-      "Praca skanera RS6100 bez baterii, zasilanego z komputera noszonego WT6000 lub WT6300"
+      "Praca skanera RS6100 bez baterii, zasilanego z komputera noszonego WT6000 lub WT6300",
+      "Zasilanie skanera RS5100 lub RS6100 z terminala naramiennego WT6400"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
-      "zebra-rs6100-btry-rs5x6-6ma-01"
+      "zebra-rs6100-btry-rs5x6-6ma-01",
+      "zebra-wt-cbl-rs5x6-adptc-01"
     ],
     "relatedProducts": [
       "zebra-rs6100",
-      "zebra-rs5100"
+      "zebra-rs5100",
+      "zebra-wt6400"
     ],
     "downloads": [
       {

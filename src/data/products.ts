@@ -9,6 +9,9 @@ import { zebraRs2100Products, zebraRs2100Accessories } from './zebra-rs2100-prod
 import { zebraRs6100Products, zebraRs6100Accessories } from './zebra-rs6100-products'
 import { zebraRs6100Mounts } from './zebra-rs6100-mounts'
 import { zebraRs5100Products, zebraRs5100Accessories } from './zebra-rs5100-products'
+import { zebraWtProducts, zebraWtAccessories } from './zebra-wt-products'
+import { zebraWtMounts, zebraRs5000xProducts } from './zebra-wt-mounts'
+import { wearableTerminalCategory } from './wearable-terminal-category'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -529,6 +532,7 @@ export const subcategories: Subcategory[] = [
   },
   rfidPrinterCategory,
   rfidTerminalCategory,
+  wearableTerminalCategory,
   rfidSledCategory,
   rfidReaderCategory,
   {
@@ -1027,7 +1031,7 @@ export const subcategories: Subcategory[] = [
     parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Oryginalne baterie PowerPrecision i PowerPrecision+ do terminali mobilnych Zebra — standardowe, rozszerzone i z BLE',
     seoTitle: 'Baterie do terminali mobilnych Zebra | PowerPrecision+ — akumulatory MC, TC',
-    seoDescription: 'Oryginalne baterie Zebra PowerPrecision+ do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Pojemności 3500–7000 mAh, diagnostyka BLE, warm swap. Ceny netto B2B, dostawa 24h.',
+    seoDescription: 'Oryginalne baterie Zebra PowerPrecision+ do terminali MC3300x, MC3400, MC2200, MC2700, TC22, TC27, TC52, TC53. Pojemności 3500–7000 mAh, diagnostyka BLE, warm swap. Baterie do terminali naramiennych WT5400 i WT6400. Ceny netto B2B, dostawa 24h.',
     longDescription: 'Baterie i akumulatory Zebra PowerPrecision / PowerPrecision+ do profesjonalnych terminali mobilnych. Wbudowany chip diagnostyczny monitoruje stan zdrowia (State of Health), liczbę cykli i prognozuje żywotność — dane widoczne w Zebra Device Diagnostics Tool. Technologia warm swap w modelach MC3x00 pozwala wymieniać baterię bez wyłączania systemu Android. Dostępne w wersji standardowej (3500–4680 mAh), rozszerzonej (4900–7000 mAh) i z modułem BLE (Bluetooth Low Energy) do śledzenia lokalizacji baterii w magazynie.',
     icon: 'battery',
     productIds: [
@@ -1054,7 +1058,7 @@ export const subcategories: Subcategory[] = [
     parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Stacje dokujące 1-slot i 5-slot, ładowarki baterii, adaptery ładowania do terminali Zebra MC i TC',
     seoTitle: 'Stacje dokujące i ładowarki do terminali Zebra | 1-slot, 5-slot, Ethernet',
-    seoDescription: 'Stacje dokujące Zebra ShareCradle do terminali MC3300x, MC3400, MC2200, TC22, TC27, TC53. Modele 1-slot i 5-slot z Ethernet, ładowarki baterii 4-slot i 20-slot. Ceny netto B2B.',
+    seoDescription: 'Stacje dokujące Zebra ShareCradle do terminali MC3300x, MC3400, MC2200, TC22, TC27, TC53. Modele 1-slot i 5-slot z Ethernet, ładowarki baterii 4-slot i 20-slot. Stacje i ładowarki do terminali naramiennych WT5400 i WT6400. Ceny netto B2B.',
     longDescription: 'Stacje dokujące (cradle) i ładowarki Zebra do terminali mobilnych serii MC i TC. ShareCradle 1-slot do indywidualnego stanowiska — ładuje terminal i zapasową baterię jednocześnie, opcjonalnie z portem Ethernet do przewodowej synchronizacji danych. ShareCradle 5-slot do nocnego ładowania floty — z Ethernet na każdym slocie. Ładowarki baterii (battery charger) 4-slot i 20-slot do rotacyjnego zarządzania akumulatorami w dużych instalacjach. Adaptery cup do rozbudowy stacji. Wszystkie z zasilaczem w zestawie.',
     icon: 'battery',
     productIds: [...cipherlabAccessories.filter(p => /Stacja|Ładowarka/.test(p.name)).map(p => p.id),
@@ -1141,7 +1145,7 @@ export const subcategories: Subcategory[] = [
     parentSubcategoryId: 'akcesoria-do-terminali',
     description: 'Kable USB, kable zasilające i zasilacze sieciowe 50W/108W do stacji dokujących Zebra',
     seoTitle: 'Kable i zasilacze do terminali Zebra | USB, DC, zasilacze 50W/108W',
-    seoDescription: 'Oryginalne kable USB, kable zasilające DC i zasilacze sieciowe 50W/108W do stacji dokujących terminali Zebra MC3300x, MC3400, TC22, TC27. Ceny netto B2B.',
+    seoDescription: 'Oryginalne kable USB, kable zasilające DC i zasilacze sieciowe 50W/108W do stacji dokujących terminali Zebra MC3300x, MC3400, TC22, TC27, WT5400 i WT6400. Ceny netto B2B.',
     longDescription: 'Kable i zasilacze do infrastruktury ładowania terminali mobilnych Zebra. Zasilacze sieciowe: 50W (PWR-BGA12V50W0WW) do stacji 1-gniazdowych i 108W (PWR-BGA12V108W0WW) do stacji 5-gniazdowych — wymagają kabla zasilającego AC sprzedawanego osobno. Kable zasilające DC: CBL-DC-388A1-01 (do zasilacza 50W) i CBL-DC-381A1-01 (do zasilacza 108W). Kable USB do komunikacji i ładowania z komputerem. Kable DC do samochodów (vehicle charger) do ładowania w pojeździe.',
     icon: 'cable',
     productIds: [...cipherlabAccessories.filter(p => /Przewód|Zasilacz/.test(p.name)).map(p => p.id),
@@ -1359,7 +1363,7 @@ export const subcategories: Subcategory[] = [
     name: 'Kable do skanerów',
     parentCategoryId: 'skanery-kodow-kreskowych',
     parentSubcategoryId: 'akcesoria-do-skanerow',
-    description: 'Kable USB i RS-232 do skanerów Zebra i Honeywell — oryginalne, od 2,1 m do 4,6 m; przewody USB i Ethernet do ProGlove Gateway Plus oraz przewód USB do adaptera Bluetooth skanerów noszonych Zebra i adapter przewodowy RS6100 do WT6000 / WT6300',
+    description: 'Kable USB i RS-232 do skanerów Zebra i Honeywell — oryginalne, od 2,1 m do 4,6 m; przewody USB i Ethernet do ProGlove Gateway Plus oraz przewód USB do adaptera Bluetooth skanerów noszonych Zebra oraz adaptery przewodowe RS5100 / RS6100 do WT6000, WT6300, WT6400 i do złącza USB-C WT5400',
     seoTitle: 'Kable USB i RS-232 do skanerów Zebra i Honeywell | CBA-U21, CBA-U47, CBA-R07, CBL-500',
     seoDescription: 'Oryginalne kable do skanerów: Zebra CBA-U21 USB 2,1 m, CBA-U47 USB 4,6 m, CBA-R07 RS-232, CBA-U01 do DS3608. Honeywell CBL-500 USB 3 m, CBL-020 RS-232. Od 72 zł netto.',
     longDescription: 'Oryginalne kable komunikacyjne do skanerów kodów kreskowych Zebra i Honeywell. Zebra CBA-U21-S07ZBR — USB 2,1 m do DS2208, DS4608, DS9308, DS9908. Zebra CBA-U47-S15ZAR — USB 4,6 m (dłuższa wersja). Zebra CBA-R07-S07PAR / CBA-R21-S15PAR — RS-232 2 m / 4,6 m do kas z portem COM. Zebra CBA-U01-S07ZAR / CBA-U09-C15ZAR — USB 2,1 m / 4,6 m dedykowane do skanerów ultra-rugged DS3608/DS3678. Honeywell CBL-500-300-S00 — USB 3 m do Granit, Xenon, Voyager. Honeywell CBL-020-300-C00 — RS-232 krętny 3 m. Kable ekranowane, plug-and-play. Do bramki ProGlove Gateway Plus są przewód USB Z001-001 i przewód Ethernet z PoE Z009-000. Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do skanerów RS2100, RS5100 i RS6100 łączy się z komputerem przewodem USB CBA-U46-S07ZAR. Adapter przewodowy Zebra CBL-RS5X6-ADPWT-01 zasila skaner RS6100 z komputera noszonego WT6000 lub WT6300.',
@@ -35100,7 +35104,7 @@ const mc33Accessories: Product[] = [
   "slug": "zebra-mc33-dc-cable-382",
   "name": "Przewód DC Zebra z uchwytem zwalniającym",
   "shortDescription": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.",
-  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n- Przewód zasila [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) z zasilacza PWR-BGA12V108W0WW. Do tej stacji służy wyłącznie przewód CBL-DC-382A1-01.\n\n- Z tego samego zasilacza przewód zasila stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n- Przewód zasila [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) z zasilacza PWR-BGA12V108W0WW. Do tej stacji służy wyłącznie przewód CBL-DC-382A1-01.\n\n- Z tego samego zasilacza przewód zasila stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n- Przewodem CBL-DC-382A1-01 zasilacz 108 W zasila stacje terminali naramiennych WT5400 / WT6400: [5-gniazdową z ładowarką baterii](/produkt/zebra-wt-crd-wt5x6-5s5bc-01), [10-gniazdową](/produkt/zebra-wt-crd-wt5x6-10sc-01), [stację Ethernet WT6400](/produkt/zebra-wt-crd-wt64-5s5be-01) i [ładowarkę 20 baterii](/produkt/zebra-wt-sac-wt5x6-20sc-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -35126,7 +35130,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01 | Zebra WT5400 / WT6400 przez stacje CRD-WT5X6-5S5BC-01, CRD-WT5X6-10SC-01 i ładowarkę baterii SAC-WT5X6-20SC-01 | Zebra WT6400 przez stację Ethernet CRD-WT64-5S5BE-01"
     },
     {
       "name": "Typ",
@@ -35152,7 +35156,9 @@ const mc33Accessories: Product[] = [
     "Akcesoria do Zebra TC78",
     "Akcesoria do Zebra RS2100",
     "Akcesoria do Zebra RS5100",
-    "Akcesoria do Zebra RS6100"
+    "Akcesoria do Zebra RS6100",
+    "Akcesoria do Zebra WT5400",
+    "Akcesoria do Zebra WT6400"
   ],
   "compatibleAccessories": [],
   "relatedAccessories": [
@@ -35171,7 +35177,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-DC-382A1-01?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01 | Zebra WT5400 / WT6400 przez stacje CRD-WT5X6-5S5BC-01, CRD-WT5X6-10SC-01 i ładowarkę baterii SAC-WT5X6-20SC-01 | Zebra WT6400 przez stację Ethernet CRD-WT64-5S5BE-01. "
     }
   ]
 },
@@ -56957,7 +56963,7 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (przewód CBL-TC5X-USBC2A-01) | Zebra WT6400 (przewód CBL-NGWT-USBCHG-01)"
     }
   ],
   "applications": [
@@ -56974,7 +56980,9 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     "Akcesoria do Zebra TC73",
     "Akcesoria do Zebra TC78",
     "Akcesoria do Zebra RS2100",
-    "Akcesoria do Zebra RS6100"
+    "Akcesoria do Zebra RS6100",
+    "Akcesoria do Zebra WT5400",
+    "Akcesoria do Zebra WT6400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -56983,7 +56991,7 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     "/images/products/PWR-WUA5V12W0EU-tc22-tc27-quality-v1.png"
   ],
   "name": "Zasilacz USB-A Zebra 12 W EU",
-  "description": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla podłączenia przez USB-C — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\n**Wymagane dla podłączenia przez dolne styki MC3400 lub MC3450 — sprzedawane osobno**\n\n- [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n**Wymagane dla ładowania MC9400 lub MC9450 — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 można ładować przez przewód [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01) albo adapter [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable). Wybierz jeden przewód dopasowany do sposobu podłączenia.\n\n- Dla MC9400 i MC9450 potrzebne są adapter oraz przewód USB. Nie zastępuj adaptera przewodem do MC3400 lub MC3450.\n\n- Zasilacz zasila [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01) przez przewód USB-A / USB-C CBL-TC5X-USBC2A-01.\n\n- Z tym samym przewodem zasilacz zasila [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01). Zasilacz daje 5 V, 2,5 A, więc działają oba gniazda stacji.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla podłączenia przez USB-C — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\n**Wymagane dla podłączenia przez dolne styki MC3400 lub MC3450 — sprzedawane osobno**\n\n- [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n**Wymagane dla ładowania MC9400 lub MC9450 — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 można ładować przez przewód [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01) albo adapter [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable). Wybierz jeden przewód dopasowany do sposobu podłączenia.\n\n- Dla MC9400 i MC9450 potrzebne są adapter oraz przewód USB. Nie zastępuj adaptera przewodem do MC3400 lub MC3450.\n\n- Zasilacz zasila [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01) przez przewód USB-A / USB-C CBL-TC5X-USBC2A-01.\n\n- Z tym samym przewodem zasilacz zasila [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01). Zasilacz daje 5 V, 2,5 A, więc działają oba gniazda stacji.\n\n- Z przewodem USB-A / USB-C CBL-TC5X-USBC2A-01 zasilacz ładuje komputer noszony [Zebra WT5400](/produkt/zebra-wt5400).\n\n- [Zebra WT6400](/produkt/zebra-wt6400) ładuje się z tego zasilacza przez [przewód USB CBL-NGWT-USBCHG-01](/produkt/zebra-wt-cbl-ngwt-usbchg-01) wpięty w złącze boczne terminala.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "shortDescription": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.",
   "seoH1": "Zasilacz USB-A Zebra 12 W EU",
   "updatedAt": "2026-10-24",
@@ -58407,7 +58415,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-zasilacz-50w",
   "name": "Zasilacz sieciowy Zebra 50 W",
   "shortDescription": "Zebra PWR-BGA12V50W0WW — zasilacz sieciowy 12 V DC, 4,16 A, 50 W do jednogniazdowych stacji i ładowarek terminali Zebra oraz skanerów ladowych MP7200 i SP7208-H.",
-  "description": "PWR-BGA12V50W0WW to zasilacz sieciowy 12 V DC o mocy 50 W do stacji, ładowarek baterii i skanerów ladowych Zebra. Wyjście daje 12 V DC przy 4,16 A. Nominalne wejście to 100–240 V AC przy 2,4 A, a dopuszczalny zakres 90–264 V AC, 47–63 Hz. Do pracy potrzebne są dwa przewody: przewód DC do urządzenia i uziemiony przewód sieciowy, w Europie [50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\n## Przewód DC 388A1, 388A2 albo 376A1 zależnie od urządzenia\n\n[Przewód CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) łączy zasilacz z jednogniazdowymi stacjami i ładowarkami baterii terminali Zebra. Dotyczy to [stacji TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stacji USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarki 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Ten sam przewód zasila [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) oraz [stację USB MC9400 / MC9450](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450). Pasuje też do [ładowarki 4 baterii PowerPrecision Plus dla TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg) i [ładowarki 2 baterii ET65](/produkt/zebra-charger-et6x-2slot). Stacje Workstation Connect wymagają [przewodu CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Są to stacje do [TC22 / TC27 / TC201](/produkt/zebra-tc201-crd-tc2l-1snws-01), [TC53 / TC58](/produkt/zebra-tc53-crd-ntc5x-1snws-01), [TC73 / TC78](/produkt/zebra-tc73-crd-ntc7x-1snws-01) i [ET65](/produkt/zebra-et6x-crd-et6x-1snws-01).\n\n## Zasilacz 50 W do skanerów ladowych MP7200 i SP7208-H\n\n[Zebra MP7200](/produkt/zebra-mp7200) przy kasie bez portu USB Power Plus pobiera 12 V z tego zasilacza przez przewód CBL-DC-388A1-01. [Zebra SP7208-H](/produkt/zebra-sp7208-h) wymaga zewnętrznego zasilania 11–13 V DC do pracy z dodatkowym skanerem. Zasilacz łączy się wtedy ze skanerem [przewodem CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376) z prostą wtyczką.\n\n## Zasilacz 50 W do akcesoriów skanerów RS5100 i RS6100\n\nZ przewodem CBL-DC-388A1-01 zasilacz zasila [stację 4-gniazdową skanerów RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01), [stację 4-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) i [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). Do każdej z nich potrzebny jest też przewód sieciowy 50-16000-220R.",
+  "description": "PWR-BGA12V50W0WW to zasilacz sieciowy 12 V DC o mocy 50 W do stacji, ładowarek baterii i skanerów ladowych Zebra. Wyjście daje 12 V DC przy 4,16 A. Nominalne wejście to 100–240 V AC przy 2,4 A, a dopuszczalny zakres 90–264 V AC, 47–63 Hz. Do pracy potrzebne są dwa przewody: przewód DC do urządzenia i uziemiony przewód sieciowy, w Europie [50-16000-220R](/produkt/zebra-tc201-50-16000-220r).\n\n## Przewód DC 388A1, 388A2 albo 376A1 zależnie od urządzenia\n\n[Przewód CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) łączy zasilacz z jednogniazdowymi stacjami i ładowarkami baterii terminali Zebra. Dotyczy to [stacji TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stacji USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarki 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Ten sam przewód zasila [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) oraz [stację USB MC9400 / MC9450](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450). Pasuje też do [ładowarki 4 baterii PowerPrecision Plus dla TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg) i [ładowarki 2 baterii ET65](/produkt/zebra-charger-et6x-2slot). Stacje Workstation Connect wymagają [przewodu CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Są to stacje do [TC22 / TC27 / TC201](/produkt/zebra-tc201-crd-tc2l-1snws-01), [TC53 / TC58](/produkt/zebra-tc53-crd-ntc5x-1snws-01), [TC73 / TC78](/produkt/zebra-tc73-crd-ntc7x-1snws-01) i [ET65](/produkt/zebra-et6x-crd-et6x-1snws-01).\n\n## Zasilacz 50 W do skanerów ladowych MP7200 i SP7208-H\n\n[Zebra MP7200](/produkt/zebra-mp7200) przy kasie bez portu USB Power Plus pobiera 12 V z tego zasilacza przez przewód CBL-DC-388A1-01. [Zebra SP7208-H](/produkt/zebra-sp7208-h) wymaga zewnętrznego zasilania 11–13 V DC do pracy z dodatkowym skanerem. Zasilacz łączy się wtedy ze skanerem [przewodem CBL-DC-376A1-01](/produkt/zebra-kabel-zasilajacy-376) z prostą wtyczką.\n\n## Zasilacz 50 W do akcesoriów skanerów RS5100 i RS6100\n\nZ przewodem CBL-DC-388A1-01 zasilacz zasila [stację 4-gniazdową skanerów RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01), [stację 4-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) i [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). Do każdej z nich potrzebny jest też przewód sieciowy 50-16000-220R.\n\n## Zasilacz 50 W do stacji i ładowarek WT5400 / WT6400\n\nZ tym samym przewodem CBL-DC-388A1-01 zasilacz zasila [stację 1-gniazdową terminali naramiennych WT5400 / WT6400](/produkt/zebra-wt-crd-wt5x6-1s1bc-01) i [ładowarkę 4 baterii WT5400 / WT6400](/produkt/zebra-wt-sac-wt5x6-4sc-01). Przewód sieciowy 50-16000-220R zamawia się osobno.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58434,7 +58442,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra MP7200 (z przewodem CBL-DC-388A1-01) | Zebra SP7208-H — port AUX (z przewodem CBL-DC-376A1-01) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01"
+      "value": "Zebra TC22, TC27, TC201, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra MP7200 (z przewodem CBL-DC-388A1-01) | Zebra SP7208-H — port AUX (z przewodem CBL-DC-376A1-01) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01"
     },
     {
       "name": "Moc",
@@ -58449,7 +58457,8 @@ const tc22Accessories: Product[] = [
     "Jednogniazdowe stacje i ładowarki baterii TC22, MC3400 i MC9400",
     "Stacje Workstation Connect TC53, TC73 i ET65",
     "Zasilanie MP7200 i portu AUX w SP7208-H",
-    "Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100"
+    "Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100",
+    "Stacja 1-gniazdowa i ładowarka 4 baterii WT5400 / WT6400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -58461,7 +58470,7 @@ const tc22Accessories: Product[] = [
   "faq": [
     {
       "question": "Który przewód DC jest potrzebny z zasilaczem PWR-BGA12V50W0WW?",
-      "answer": "Zależy od urządzenia. CBL-DC-388A1-01 pasuje do jednogniazdowych stacji i ładowarek baterii oraz do MP7200. CBL-DC-388A2-01 pasuje do stacji Workstation Connect. CBL-DC-376A1-01 pasuje do SP7208-H. Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100 też używają CBL-DC-388A1-01."
+      "answer": "Zależy od urządzenia. CBL-DC-388A1-01 pasuje do jednogniazdowych stacji i ładowarek baterii oraz do MP7200. CBL-DC-388A2-01 pasuje do stacji Workstation Connect. CBL-DC-376A1-01 pasuje do SP7208-H. Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100 też używają CBL-DC-388A1-01. Ten sam przewód łączy zasilacz ze stacją 1-gniazdową i ładowarką 4 baterii WT5400 / WT6400."
     },
     {
       "question": "Czy zasilacz Zebra 50 W ma przewód sieciowy?",
@@ -58474,7 +58483,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-zasilacz-108w",
   "name": "Zasilacz sieciowy Zebra 108 W",
   "shortDescription": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.",
-  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\n**Wymagane dla stacji wielogniazdowej terminali Zebra lub ładowarki baterii — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\n**Wymagane dla stacji 20-gniazdowej RS2100, RS5100 lub RS6100 albo ładowarki 40 baterii — sprzedawane osobno**\n\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- Stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01) łączy z zasilaczem przewód CBL-DC-382A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\n**Wymagane dla stacji wielogniazdowej terminali TC lub MC albo ich ładowarki baterii — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\n**Wymagane dla stacji 20-gniazdowej RS2100, RS5100 lub RS6100, stacji 5- lub 10-gniazdowej WT5400 / WT6400 albo ładowarki 40 baterii RS5100 / RS6100 lub 20 baterii WT5400 / WT6400 — sprzedawane osobno**\n\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- Stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01) łączy z zasilaczem przewód CBL-DC-382A1-01.\n\n- Ten sam przewód CBL-DC-382A1-01 zasila stacje terminali naramiennych WT5400 / WT6400: [5-gniazdową](/produkt/zebra-wt-crd-wt5x6-5s5bc-01), [10-gniazdową](/produkt/zebra-wt-crd-wt5x6-10sc-01) i [stację Ethernet WT6400](/produkt/zebra-wt-crd-wt64-5s5be-01), a także [ładowarkę 20 baterii WT5400 / WT6400](/produkt/zebra-wt-sac-wt5x6-20sc-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58501,7 +58510,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01 | Zebra WT5400 / WT6400 przez stacje CRD-WT5X6-5S5BC-01, CRD-WT5X6-10SC-01 i ładowarkę baterii SAC-WT5X6-20SC-01 | Zebra WT6400 przez stację Ethernet CRD-WT64-5S5BE-01"
     },
     {
       "name": "Moc",
@@ -58528,7 +58537,9 @@ const tc22Accessories: Product[] = [
     "Akcesoria do Zebra TC78",
     "Akcesoria do Zebra RS2100",
     "Akcesoria do Zebra RS5100",
-    "Akcesoria do Zebra RS6100"
+    "Akcesoria do Zebra RS6100",
+    "Akcesoria do Zebra WT5400",
+    "Akcesoria do Zebra WT6400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -58544,7 +58555,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje PWR-BGA12V108W0WW?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS5100 przez stację CRD-RS51-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01 | Zebra WT5400 / WT6400 przez stacje CRD-WT5X6-5S5BC-01, CRD-WT5X6-10SC-01 i ładowarkę baterii SAC-WT5X6-20SC-01 | Zebra WT6400 przez stację Ethernet CRD-WT64-5S5BE-01. "
     }
   ]
 },
@@ -58553,7 +58564,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-kabel-zasilajacy-388",
   "name": "Przewód DC Zebra CBL-DC-388A1-01",
   "shortDescription": "Przewód łączy zasilacz PWR-BGA12V50W0WW ze zgodną stacją jednogniazdową lub ładowarką baterii TC22 i TC27. Pasuje także do zgodnej ładowarki baterii Zebra ET65.",
-  "description": "CBL-DC-388A1-01 to przewód DC do [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w). Służy do jednogniazdowych stacji i ładowarek baterii terminali Zebra. Przy kasie bez portu USB Power Plus łączy ten sam zasilacz ze skanerem ladowym [Zebra MP7200](/produkt/zebra-mp7200).\n\n## Stacje i ładowarki TC22, MC3400, MC9400, TC53 i ET65 na przewód 388A1\n\nPrzewód zasila [stację TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stację USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarkę 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Zasila też [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) i [ładowarkę 8 baterii zestawu HS3100](/produkt/zebra-mc3400-sac-hs3100-b8-01). Dla MC9400 / MC9450 przewód pasuje do [stacji USB](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) i [ładowarki 4 baterii](/produkt/zebra-ladowarka-baterii-4slot-mc9400-mc9450). Ten sam przewód zasila [ładowarkę 4 baterii TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg), [ładowarkę 2 baterii ET65](/produkt/zebra-charger-et6x-2slot) oraz zgodne stacje i ładowarki MC3300x. Zasila też stacje 4-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) oraz [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). Stacje Workstation Connect wymagają innego przewodu: [CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Przewód nie zastępuje przewodu DC do stacji zasilanych zasilaczem 108 W.",
+  "description": "CBL-DC-388A1-01 to przewód DC do [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w). Służy do jednogniazdowych stacji i ładowarek baterii terminali Zebra. Przy kasie bez portu USB Power Plus łączy ten sam zasilacz ze skanerem ladowym [Zebra MP7200](/produkt/zebra-mp7200).\n\n## Stacje i ładowarki TC22, MC3400, MC9400, TC53 i ET65 na przewód 388A1\n\nPrzewód zasila [stację TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stację USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarkę 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Zasila też [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) i [ładowarkę 8 baterii zestawu HS3100](/produkt/zebra-mc3400-sac-hs3100-b8-01). Dla MC9400 / MC9450 przewód pasuje do [stacji USB](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) i [ładowarki 4 baterii](/produkt/zebra-ladowarka-baterii-4slot-mc9400-mc9450). Ten sam przewód zasila [ładowarkę 4 baterii TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg), [ładowarkę 2 baterii ET65](/produkt/zebra-charger-et6x-2slot) oraz zgodne stacje i ładowarki MC3300x. Zasila też stacje 4-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) oraz [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). Łączy też zasilacz 50 W ze [stacją 1-gniazdową](/produkt/zebra-wt-crd-wt5x6-1s1bc-01) i [ładowarką 4 baterii](/produkt/zebra-wt-sac-wt5x6-4sc-01) terminali naramiennych WT5400 / WT6400. Stacje Workstation Connect wymagają innego przewodu: [CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Przewód nie zastępuje przewodu DC do stacji zasilanych zasilaczem 108 W.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58580,7 +58591,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra MC3300x, TC73, TC78 przez zgodne stacje lub ładowarki | Zebra MP7200 (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01"
+      "value": "Zebra TC22, TC27, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra MC3300x, TC73, TC78 przez zgodne stacje lub ładowarki | Zebra MP7200 (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01"
     },
     {
       "name": "Typ",
@@ -58595,7 +58606,8 @@ const tc22Accessories: Product[] = [
     "Ładowarki baterii TC22, MC3400 i MC9400 z zasilaczem 50 W",
     "Stacje jednogniazdowe terminali Zebra",
     "Zasilanie MP7200 przy kasie bez USB Power Plus",
-    "Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100 z zasilaczem 50 W"
+    "Stacje 4-gniazdowe RS5100 i RS6100 oraz ładowarka 8 baterii RS5100 / RS6100 z zasilaczem 50 W",
+    "Stacja 1-gniazdowa i ładowarka 4 baterii WT5400 / WT6400 z zasilaczem 50 W"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -75870,7 +75882,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-brkt-scrd-smrk-01",
   "name": "Uchwyt montażowy ShareCradle Zebra",
   "shortDescription": "Uchwyt mocuje zgodną wielostanowiskową stację ShareCradle do ściany albo szafy rack 19 cali. Ma kanały przewodów i wyjmowaną półkę zasilacza. Pasuje także do zgodnych stacji TC201. Stacje i ładowarki nie są w zestawie.",
-  "description": "Uchwyt mocuje zgodną wielostanowiskową stację ShareCradle do ściany albo szafy rack 19 cali. Ma kanały przewodów i wyjmowaną półkę zasilacza. Pasuje także do zgodnych stacji TC201. Stacje i ładowarki nie są w zestawie.\n\n## Dobór i montaż\n\n- Uchwyt pozwala zamontować stację wielogniazdową MC3400 / MC3450, ładowarkę 20 baterii lub do czterech ładowarek 4 baterii.\n\n- Uchwyt mocuje też stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC501\n\nUchwyt służy także do montażu zgodnych wielostanowiskowych stacji TC501 na ścianie lub w szafie rack 19 cali.\n\n## Zgodność z TC701\n\nUchwyt służy także do montażu zgodnych wielostanowiskowych stacji TC701 na ścianie lub w szafie rack 19 cali.",
+  "description": "Uchwyt mocuje zgodną wielostanowiskową stację ShareCradle do ściany albo szafy rack 19 cali. Ma kanały przewodów i wyjmowaną półkę zasilacza. Pasuje także do zgodnych stacji TC201. Stacje i ładowarki nie są w zestawie.\n\n## Dobór i montaż\n\n- Uchwyt pozwala zamontować stację wielogniazdową MC3400 / MC3450, ładowarkę 20 baterii lub do czterech ładowarek 4 baterii.\n\n- Uchwyt mocuje też stacje 20-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n- Do terminali naramiennych WT5400 / WT6400 uchwyt mocuje [stację 5-gniazdową](/produkt/zebra-wt-crd-wt5x6-5s5bc-01), [stację 10-gniazdową](/produkt/zebra-wt-crd-wt5x6-10sc-01), [stację Ethernet WT6400](/produkt/zebra-wt-crd-wt64-5s5be-01) i [ładowarkę 20 baterii](/produkt/zebra-wt-sac-wt5x6-20sc-01). Na jednym uchwycie mieszczą się też cztery [ładowarki 4 baterii](/produkt/zebra-wt-sac-wt5x6-4sc-01) ustawione pod kątem 25°.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC501\n\nUchwyt służy także do montażu zgodnych wielostanowiskowych stacji TC501 na ścianie lub w szafie rack 19 cali.\n\n## Zgodność z TC701\n\nUchwyt służy także do montażu zgodnych wielostanowiskowych stacji TC701 na ścianie lub w szafie rack 19 cali.",
   "categoryId": "akcesoria",
   "manufacturerId": "zebra",
   "priceFrom": 552.99,
@@ -75891,7 +75903,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra RS5100 (stacja CRD-RS51-20SCHG-01) | Zebra RS6100 (stacja CRD-RS61-20SCHG-01) | Zebra RS5100 / RS6100 (ładowarka baterii SAC-RS51-40SCHG-01)"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra RS5100 (stacja CRD-RS51-20SCHG-01) | Zebra RS6100 (stacja CRD-RS61-20SCHG-01) | Zebra RS5100 / RS6100 (ładowarka baterii SAC-RS51-40SCHG-01) | Zebra WT5400 / WT6400 (stacje 5- i 10-gniazdowe, ładowarki 4 i 20 baterii) | Zebra WT6400 (stacja Ethernet CRD-WT64-5S5BE-01)"
     }
   ],
   "applications": [
@@ -75909,7 +75921,9 @@ const tc201Accessories: Product[] = [
     "Akcesoria do Zebra TC73",
     "Akcesoria do Zebra TC78",
     "Akcesoria do Zebra TC501",
-    "Akcesoria do Zebra TC701"
+    "Akcesoria do Zebra TC701",
+    "Akcesoria do Zebra WT5400",
+    "Akcesoria do Zebra WT6400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -75925,7 +75939,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje BRKT-SCRD-SMRK-01?",
-      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS5100 (stacja CRD-RS51-20SCHG-01) | Zebra RS6100 (stacja CRD-RS61-20SCHG-01) | Zebra RS5100 / RS6100 (ładowarka baterii SAC-RS51-40SCHG-01). "
+      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS5100 (stacja CRD-RS51-20SCHG-01) | Zebra RS6100 (stacja CRD-RS61-20SCHG-01) | Zebra RS5100 / RS6100 (ładowarka baterii SAC-RS51-40SCHG-01) | Zebra WT5400 / WT6400 (stacje 5- i 10-gniazdowe, ładowarki 4 i 20 baterii) | Zebra WT6400 (stacja Ethernet CRD-WT64-5S5BE-01). "
     },
     {
       "question": "Czy BRKT-SCRD-SMRK-01 obsługuje TC501?",
@@ -76037,7 +76051,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-pwr-wua5v45w1eu",
   "name": "Zasilacz Zebra USB-C 45 W EU",
   "shortDescription": "Zasilacz Zebra USB-C ładuje terminale i tablety przez przewód USB-C. Obsługuje USB Power Delivery 3.1 i dostarcza moc do 45 W. Ma europejską wtyczkę sieciową. Przewód USB-C jest sprzedawany osobno.",
-  "description": "Zasilacz Zebra USB-C ładuje terminale i tablety przez przewód USB-C. Obsługuje USB Power Delivery 3.1 i dostarcza moc do 45 W. Ma europejską wtyczkę sieciową. Przewód USB-C jest sprzedawany osobno.\n\n## Zgodne urządzenia\n\n- Terminale Zebra TC201, TC501 i TC701.\n- Terminale Zebra EM45 i EM45 RFID.\n- Tablety Zebra ET40, ET45 i ET401.\n- Stacje tych modeli, które wymagają zasilacza PWR-WUA5V45W1EU.\n\n## Inne urządzenia USB-C\n\nPrzed podłączeniem innego urządzenia sprawdź jego wymagania dotyczące zasilania. Urządzenie musi obsługiwać ładowanie USB-C i parametry wyjściowe tego zasilacza. Do szybkiego ładowania musi obsługiwać USB Power Delivery. Samo złącze USB-C nie gwarantuje zgodności. Moc ładowania zależy od urządzenia i przewodu. Zasilacz dostarcza maksymalnie 45 W.\n\n## Parametry zasilania\n\nNapięcie wejściowe wynosi 100–240 V AC. Zasilacz automatycznie dobiera parametry wyjściowe w standardzie USB PD. Zakres parametrów wynosi od 5 V / 3 A do 20 V / 2,25 A.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla bezpośredniego podłączenia terminala — sprzedawane osobno**\n\n- [Przewód USB-C / USB-C Zebra 1 m (CBL-EC5X-USBC3A-01)](/produkt/zebra-cable-usbc-et4x)\n\nDobierz przewód do urządzenia lub stacji.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zasilanie stacji ProClip\n\nZasilacz zasila stację ProClip [Stacja pojazdowa ProClip TC53 / TC58 / TC53e / TC58e — USB-C (3PTY-PCLIP-216475)](/produkt/zebra-tc53-3pty-pclip-216475). Przewód USB-C stacji jest dołączony do niej. Do tej konfiguracji nie kupuj drugiego przewodu.\n\n## Zgodność z TC501\n\nAkcesorium obsługuje konfigurację TC501 opisaną na tej karcie.\n\n## Zgodność z TC701\n\nZasilacz obsługuje wskazane na karcie zgodne stacje biurkowe TC701 z przewodem USB-C. Samo złącze USB-C nie potwierdza zgodności z każdym urządzeniem.",
+  "description": "Zasilacz Zebra USB-C ładuje terminale i tablety przez przewód USB-C. Obsługuje USB Power Delivery 3.1 i dostarcza moc do 45 W. Ma europejską wtyczkę sieciową. Przewód USB-C jest sprzedawany osobno.\n\n## Zgodne urządzenia\n\n- Terminale Zebra TC201, TC501 i TC701.\n- Terminale Zebra EM45 i EM45 RFID.\n- Tablety Zebra ET40, ET45 i ET401.\n- Komputer noszony [Zebra WT5400](/produkt/zebra-wt5400) z przewodem USB-C CBL-EC5X-USBC3A-01.\n- Stacje tych modeli, które wymagają zasilacza PWR-WUA5V45W1EU.\n\n## Inne urządzenia USB-C\n\nPrzed podłączeniem innego urządzenia sprawdź jego wymagania dotyczące zasilania. Urządzenie musi obsługiwać ładowanie USB-C i parametry wyjściowe tego zasilacza. Do szybkiego ładowania musi obsługiwać USB Power Delivery. Samo złącze USB-C nie gwarantuje zgodności. Moc ładowania zależy od urządzenia i przewodu. Zasilacz dostarcza maksymalnie 45 W.\n\n## Parametry zasilania\n\nNapięcie wejściowe wynosi 100–240 V AC. Zasilacz automatycznie dobiera parametry wyjściowe w standardzie USB PD. Zakres parametrów wynosi od 5 V / 3 A do 20 V / 2,25 A.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla bezpośredniego podłączenia terminala — sprzedawane osobno**\n\n- [Przewód USB-C / USB-C Zebra 1 m (CBL-EC5X-USBC3A-01)](/produkt/zebra-cable-usbc-et4x)\n\nDobierz przewód do urządzenia lub stacji.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zasilanie stacji ProClip\n\nZasilacz zasila stację ProClip [Stacja pojazdowa ProClip TC53 / TC58 / TC53e / TC58e — USB-C (3PTY-PCLIP-216475)](/produkt/zebra-tc53-3pty-pclip-216475). Przewód USB-C stacji jest dołączony do niej. Do tej konfiguracji nie kupuj drugiego przewodu.\n\n## Zgodność z TC501\n\nAkcesorium obsługuje konfigurację TC501 opisaną na tej karcie.\n\n## Zgodność z TC701\n\nZasilacz obsługuje wskazane na karcie zgodne stacje biurkowe TC701 z przewodem USB-C. Samo złącze USB-C nie potwierdza zgodności z każdym urządzeniem.",
   "categoryId": "akcesoria",
   "manufacturerId": "zebra",
   "priceFrom": 103.17,
@@ -76058,7 +76072,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC201, TC501, TC701, EM45, EM45 RFID, ET40, ET45, ET401; zgodne urządzenia USB-C; TC53 / TC58 / TC53e / TC58e przez stację ProClip 216475"
+      "value": "Zebra TC201, TC501, TC701, EM45, EM45 RFID, ET40, ET45, ET401, WT5400; zgodne urządzenia USB-C; TC53 / TC58 / TC53e / TC58e przez stację ProClip 216475"
     },
     {
       "name": "Standard ładowania",
@@ -76098,7 +76112,8 @@ const tc201Accessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC501",
-    "Akcesoria do Zebra TC701"
+    "Akcesoria do Zebra TC701",
+    "Akcesoria do Zebra WT5400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -76106,7 +76121,7 @@ const tc201Accessories: Product[] = [
   "seoTitle": "Zasilacz Zebra USB-C 45 W EU | PWR-WUA5V45W1EU | TAKMA",
   "seoDescription": "PWR-WUA5V45W1EU. Zasilacz Zebra USB-C ładuje terminale i tablety przez przewód USB-C.",
   "seoH1": "Zasilacz Zebra USB-C 45 W EU",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-24",
   "faq": [
     {
       "question": "Do czego służy PWR-WUA5V45W1EU?",
@@ -76114,7 +76129,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje PWR-WUA5V45W1EU?",
-      "answer": "Zebra TC201, TC501, TC701, EM45, EM45 RFID, ET40, ET45, ET401; zgodne urządzenia USB-C; TC53 / TC58 / TC53e / TC58e przez stację ProClip 216475. "
+      "answer": "Zebra TC201, TC501, TC701, EM45, EM45 RFID, ET40, ET45, ET401, WT5400; zgodne urządzenia USB-C; TC53 / TC58 / TC53e / TC58e przez stację ProClip 216475. "
     },
     {
       "question": "Czy PWR-WUA5V45W1EU obsługuje TC501?",
@@ -76131,7 +76146,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-50-16000-220r",
   "name": "Przewód sieciowy Zebra — Europa, C13",
   "shortDescription": "Zebra 50-16000-220R — przewód sieciowy 1,8 m z uziemioną wtyczką europejską i złączem C13 do zasilaczy Zebra stacji, ładowarek i skanerów ladowych.",
-  "description": "Przewód 50-16000-220R łączy zasilacz Zebra z gniazdkiem sieciowym. Ma uziemioną wtyczkę europejską i złącze C13. Długość wynosi 1,8 m. Jest przeznaczony do zasilaczy stacji dokujących, ładowarek baterii i skanerów ladowych Zebra. Przewód nie jest zasilaczem.\n\n## Zasilacze Zebra 50 W, 108 W i 150 W\n\n[Zasilacz 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w) zasila jednogniazdowe stacje i ładowarki baterii TC22, TC27, TC201, MC3400, MC3450, MC9400, MC9450, TC53, TC58, TC73, TC78 i ET65. Ten sam zasilacz zasila skanery ladowe [Zebra MP7200](/produkt/zebra-mp7200) i [Zebra SP7208-H](/produkt/zebra-sp7208-h), stacje 4-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) oraz [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). [Zasilacz 108 W](/produkt/zebra-zasilacz-108w) zasila stacje wielogniazdowe TC22, TC27, MC3400, MC3450, MC9400 i MC9450, stacje 20-gniazdowe skanerów [RS2100](/produkt/zebra-rs2100-crd-rs2x-20schg-01), [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01). [Zasilacz 150 W 12 V](/produkt/zebra-tc201-pwr-bga12v150w1ww) zasila stacje wielostanowiskowe TC201, TC501 i TC701. [Zasilacz 150 W 24 V](/produkt/zebra-tc53-pwr-bga24v150w1ww) jest przeznaczony do TC53 / TC58.\n\n## Zestawy stacji wielostanowiskowych bez przewodu sieciowego\n\nOferowane zestawy stacji wielostanowiskowych TC201, TC53, TC73, TC501 i TC701 nie zawierają przewodu sieciowego. Dotyczy to także stacji TC501 i TC701 z końcówką -1 w numerze, które mają zasilacz 150 W w zestawie. Ten przewód zamawia się do nich osobno. [Przewód 50-16000-255R](/produkt/zebra-tc22-tc27-50-16000-255r) ma wtyczkę bez uziemienia i nie pasuje do zasilaczy 50 W ani 108 W.",
+  "description": "Przewód 50-16000-220R łączy zasilacz Zebra z gniazdkiem sieciowym. Ma uziemioną wtyczkę europejską i złącze C13. Długość wynosi 1,8 m. Jest przeznaczony do zasilaczy stacji dokujących, ładowarek baterii i skanerów ladowych Zebra. Przewód nie jest zasilaczem.\n\n## Zasilacze Zebra 50 W, 108 W i 150 W\n\n[Zasilacz 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w) zasila jednogniazdowe stacje i ładowarki baterii TC22, TC27, TC201, MC3400, MC3450, MC9400, MC9450, TC53, TC58, TC73, TC78 i ET65. Ten sam zasilacz zasila skanery ladowe [Zebra MP7200](/produkt/zebra-mp7200) i [Zebra SP7208-H](/produkt/zebra-sp7208-h), stacje 4-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) oraz [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). [Zasilacz 108 W](/produkt/zebra-zasilacz-108w) zasila stacje wielogniazdowe TC22, TC27, MC3400, MC3450, MC9400 i MC9450, stacje 20-gniazdowe skanerów [RS2100](/produkt/zebra-rs2100-crd-rs2x-20schg-01), [RS5100](/produkt/zebra-rs5100-crd-rs51-20schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) oraz [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01). Zasilacze 50 W i 108 W zasilają też stacje i ładowarki baterii terminali naramiennych [WT5400](/produkt/zebra-wt5400) i [WT6400](/produkt/zebra-wt6400). [Zasilacz 150 W 12 V](/produkt/zebra-tc201-pwr-bga12v150w1ww) zasila stacje wielostanowiskowe TC201, TC501 i TC701. [Zasilacz 150 W 24 V](/produkt/zebra-tc53-pwr-bga24v150w1ww) jest przeznaczony do TC53 / TC58.\n\n## Zestawy stacji wielostanowiskowych bez przewodu sieciowego\n\nOferowane zestawy stacji wielostanowiskowych TC201, TC53, TC73, TC501 i TC701 nie zawierają przewodu sieciowego. Dotyczy to także stacji TC501 i TC701 z końcówką -1 w numerze, które mają zasilacz 150 W w zestawie. Ten przewód zamawia się do nich osobno. [Przewód 50-16000-255R](/produkt/zebra-tc22-tc27-50-16000-255r) ma wtyczkę bez uziemienia i nie pasuje do zasilaczy 50 W ani 108 W.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -76155,14 +76170,15 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 i zasilacz PWR-BGA12V108W0WW | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 (zasilacz 50 W) lub CRD-RS51-20SCHG-01 (zasilacz 108 W) | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 (zasilacz 50 W) lub CRD-RS61-20SCHG-01 (zasilacz 108 W) | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 (zasilacz 50 W) lub SAC-RS51-40SCHG-01 (zasilacz 108 W)"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 i zasilacz PWR-BGA12V108W0WW | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 (zasilacz 50 W) lub CRD-RS51-20SCHG-01 (zasilacz 108 W) | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 (zasilacz 50 W) lub CRD-RS61-20SCHG-01 (zasilacz 108 W) | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 (zasilacz 50 W) lub SAC-RS51-40SCHG-01 (zasilacz 108 W) | Zebra WT5400 / WT6400 przez stacje i ładowarki baterii (zasilacz 50 W lub 108 W)"
     }
   ],
   "applications": [
     "Podłączenie zasilacza Zebra 50 W, 108 W lub 150 W do gniazdka",
     "Stacje wielostanowiskowe TC201, TC501 i TC701 z zasilaczem 150 W",
     "Stacja 20-gniazdowa skanerów RS2100 z zasilaczem 108 W",
-    "Stacje i ładowarki baterii skanerów RS5100 i RS6100 z zasilaczem 50 W lub 108 W"
+    "Stacje i ładowarki baterii skanerów RS5100 i RS6100 z zasilaczem 50 W lub 108 W",
+    "Stacje i ładowarki baterii terminali WT5400 i WT6400 z zasilaczem 50 W lub 108 W"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -76249,7 +76265,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-cbl-tc5x-usbc2a-01",
   "name": "Przewód USB-A / USB-C 1 m Zebra",
   "shortDescription": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.",
-  "description": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 podłącz bezpośrednio do bocznego portu USB-C. Do ładowania z sieci użyj [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu). W pojeździe użyj [Ładowarka samochodowa USB-A Zebra — 2 porty (CHG-AUTO-USB1-01)](/produkt/zebra-tc201-chg-auto-usb1-01). Wybierz jedno źródło zasilania.\n\n- MC9400 i MC9450 podłącz przez stację [Stacja USB Zebra MC9400 / MC9450 — 1 terminal i 1 bateria (CRD-MC93-2SUCHG-01)](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) lub adapter [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450). Przewód nie łączy się bezpośrednio z terminalem.\n\n- Skanery noszone RS2100 ładuje [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01). Przewód łączy stację z zasilaczem PWR-WUA5V12W0EU.\n\n- Skanery RS5100 i RS6100 ładuje [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01). Przewód łączy ją z zasilaczem PWR-WUA5V12W0EU. W zestawie KT-RS5X6-2SCPWR-01 przewód jest już dołączony.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 podłącz bezpośrednio do bocznego portu USB-C. Do ładowania z sieci użyj [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu). W pojeździe użyj [Ładowarka samochodowa USB-A Zebra — 2 porty (CHG-AUTO-USB1-01)](/produkt/zebra-tc201-chg-auto-usb1-01). Wybierz jedno źródło zasilania.\n\n- MC9400 i MC9450 podłącz przez stację [Stacja USB Zebra MC9400 / MC9450 — 1 terminal i 1 bateria (CRD-MC93-2SUCHG-01)](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) lub adapter [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450). Przewód nie łączy się bezpośrednio z terminalem.\n\n- Skanery noszone RS2100 ładuje [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01). Przewód łączy stację z zasilaczem PWR-WUA5V12W0EU.\n\n- Skanery RS5100 i RS6100 ładuje [Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa (CRD-RS5X6-2SCHG-01)](/produkt/zebra-rs6100-crd-rs5x6-2schg-01). Przewód łączy ją z zasilaczem PWR-WUA5V12W0EU. W zestawie KT-RS5X6-2SCPWR-01 przewód jest już dołączony.\n\n- [Zebra WT5400](/produkt/zebra-wt5400) podłącza się bezpośrednio do złącza USB-C. Do ładowania z sieci służy zasilacz PWR-WUA5V12W0EU, a po podłączeniu do komputera przewód przesyła dane.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "manufacturerId": "zebra",
   "priceFrom": 37.48,
@@ -76270,7 +76286,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (złącze USB-C)"
     }
   ],
   "applications": [
@@ -76288,7 +76304,8 @@ const tc201Accessories: Product[] = [
     "Akcesoria do Zebra TC73",
     "Akcesoria do Zebra TC78",
     "Akcesoria do Zebra RS2100",
-    "Akcesoria do Zebra RS6100"
+    "Akcesoria do Zebra RS6100",
+    "Akcesoria do Zebra WT5400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -76304,7 +76321,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-TC5X-USBC2A-01?",
-      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01. "
+      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (złącze USB-C). "
     }
   ]
 },
@@ -79371,7 +79388,7 @@ const tabletAccessories: Product[] = [
   "slug": "zebra-cable-usbc-et4x",
   "name": "Przewód USB-C Zebra — 1 m",
   "shortDescription": "Przewód USB-C do USB-C ma długość 1 m. Obsługuje ładowanie i transmisję danych USB 3.0 SuperSpeed. Łączy zgodne urządzenie Zebra z zasilaczem lub komputerem.",
-  "description": "Przewód USB-C do USB-C ma długość 1 m. Obsługuje ładowanie i transmisję danych USB 3.0 SuperSpeed. Łączy zgodne urządzenie Zebra z zasilaczem lub komputerem.\n\n## Zgodne urządzenia\n\nPrzewód obsługuje zgodne połączenia USB-C terminali Zebra EM45, EM45 RFID, EC50, EC55 i TC201 oraz tabletów ET40, ET45 i ET401. Zasila także zgodne stacje TC201, TC501 i TC701 oraz ładowarkę baterii CRDCUP-TC5A7A-4B.\n\n## Zasilanie stacji i ładowarki baterii\n\nDo zasilania wskazanych zgodnych stacji TC201, TC501 i TC701 oraz ładowarki CRDCUP-TC5A7A-4B potrzebujesz zasilacza USB-C 45 W EU.\n\n**Wymagane dla zasilania zgodnej stacji TC201, TC501 lub TC701 albo ładowarki CRDCUP-TC5A7A-4B — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n\nZasilacz nie jest dołączony do przewodu.\n\n## Podłączenie do komputera\n\nDo transmisji danych podłącz przewód do zgodnego portu USB-C komputera. Zasilacz sieciowy nie jest potrzebny do tego połączenia. Dobierz parametry ładowania do wymagań urządzenia.",
+  "description": "Przewód USB-C do USB-C ma długość 1 m. Obsługuje ładowanie i transmisję danych USB 3.0 SuperSpeed. Łączy zgodne urządzenie Zebra z zasilaczem lub komputerem.\n\n## Zgodne urządzenia\n\nPrzewód obsługuje zgodne połączenia USB-C terminali Zebra EM45, EM45 RFID, EC50, EC55 i TC201 oraz tabletów ET40, ET45 i ET401. Ładuje też komputer noszony [Zebra WT5400](/produkt/zebra-wt5400) i przesyła z niego dane przez USB 3.0; do ładowania z sieci WT5400 potrzebuje zasilacza PWR-WUA5V45W1EU. Zasila także zgodne stacje TC201, TC501 i TC701 oraz ładowarkę baterii CRDCUP-TC5A7A-4B.\n\n## Zasilanie stacji i ładowarki baterii\n\nDo zasilania wskazanych zgodnych stacji TC201, TC501 i TC701 oraz ładowarki CRDCUP-TC5A7A-4B potrzebujesz zasilacza USB-C 45 W EU.\n\n**Wymagane dla zasilania zgodnej stacji TC201, TC501 lub TC701 albo ładowarki CRDCUP-TC5A7A-4B — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n\nZasilacz nie jest dołączony do przewodu.\n\n## Podłączenie do komputera\n\nDo transmisji danych podłącz przewód do zgodnego portu USB-C komputera. Zasilacz sieciowy nie jest potrzebny do tego połączenia. Dobierz parametry ładowania do wymagań urządzenia.",
   "categoryId": "akcesoria",
   "manufacturerId": "zebra",
   "images": [
@@ -79391,7 +79408,7 @@ const tabletAccessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra EM45, EM45 RFID, EC50, EC55, TC201, ET40, ET45, ET401; zgodne stacje TC201, TC501 i TC701 oraz ładowarka CRDCUP-TC5A7A-4B"
+      "value": "Zebra EM45, EM45 RFID, EC50, EC55, TC201, ET40, ET45, ET401, WT5400; zgodne stacje TC201, TC501 i TC701 oraz ładowarka CRDCUP-TC5A7A-4B"
     },
     {
       "name": "Złącza",
@@ -79410,13 +79427,14 @@ const tabletAccessories: Product[] = [
     "Ładowanie tabletu ET401 z zasilacza sieciowego",
     "Transmisja danych między tabletem a komputerem",
     "Akcesoria do Zebra TC501",
-    "Akcesoria do Zebra TC701"
+    "Akcesoria do Zebra TC701",
+    "Akcesoria do Zebra WT5400"
   ],
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2026-08-18",
   "seoH1": "Przewód USB-C Zebra — 1 m",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-24",
   "priceFrom": 47.3,
   "seoTitle": "Przewód USB-C Zebra 1 m | CBL-EC5X-USBC3A-01",
   "seoDescription": "Przewód USB-C do USB-C Zebra CBL-EC5X-USBC3A-01, 1 m. Ładowanie i dane USB 3.0 SuperSpeed. Sprawdź zgodne urządzenia i wymagany zasilacz.",
@@ -95543,6 +95561,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Terminale naramienne Zebra WT5400 / WT6400, ich ładowanie, mocowania i skaner RS5000x trafiają do podkategorii według `subcategoryIds`.
+for (const subcategory of subcategories) {
+  const additions = [...zebraWtProducts, ...zebraWtAccessories, ...zebraWtMounts, ...zebraRs5000xProducts].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95592,6 +95619,10 @@ const rawProductList: Product[] = [
   ...zebraRs6100Mounts,
   ...zebraRs5100Products,
   ...zebraRs5100Accessories,
+  ...zebraWtProducts,
+  ...zebraWtAccessories,
+  ...zebraWtMounts,
+  ...zebraRs5000xProducts,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

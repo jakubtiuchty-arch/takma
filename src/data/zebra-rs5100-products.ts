@@ -293,6 +293,7 @@ export const zebraRs5100Products: Product[] = [
       "zebra-rs6100-sg-rs5x6-hmtra-01",
       "zebra-rs6100-sg-rs5x6-lnyd-01",
       "zebra-rs6100-cbl-rs5x6-adpwt-01",
+      "zebra-wt-cbl-rs5x6-adptc-01",
       "zebra-rs2100-bt-rs5x6-dngl-01"
     ],
     "relatedProducts": [
@@ -334,7 +335,7 @@ export const zebraRs5100Products: Product[] = [
       },
       {
         "question": "Z jakimi urządzeniami łączy się Zebra RS5100?",
-        "answer": "Przez Bluetooth RS5100 łączy się ze smartfonami, tabletami i komputerami PC. Najwięcej funkcji skanera jest dostępnych po sparowaniu z komputerem mobilnym Zebra, np. noszonym, ręcznym lub pokładowym. Z WT6300, TC52 i innymi urządzeniami Zebra z NFC wystarczy zetknąć ikony NFC. Komputer stacjonarny odbiera kody przez [adapter Bluetooth BT-RS5X6-DNGL-01](/produkt/zebra-rs2100-bt-rs5x6-dngl-01), do którego można podłączyć do siedmiu skanerów."
+        "answer": "Przez Bluetooth RS5100 łączy się ze smartfonami, tabletami i komputerami PC. Najwięcej funkcji skanera jest dostępnych po sparowaniu z komputerem mobilnym Zebra, np. noszonym, ręcznym lub pokładowym. Z [WT5400](/produkt/zebra-wt5400), [WT6400](/produkt/zebra-wt6400), WT6300, TC52 i innymi urządzeniami Zebra z NFC wystarczy zetknąć ikony NFC. Komputer stacjonarny odbiera kody przez [adapter Bluetooth BT-RS5X6-DNGL-01](/produkt/zebra-rs2100-bt-rs5x6-dngl-01), do którego można podłączyć do siedmiu skanerów."
       },
       {
         "question": "Jak połączyć RS5100 z iPhone'em albo telefonem z Androidem?",

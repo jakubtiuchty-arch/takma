@@ -8,6 +8,7 @@ import { counterScannerContent } from './counter-scanner-category'
 import { rfidReaderContent } from './rfid-reader-category'
 import { rfidSledContent } from './rfid-sled-category'
 import { rfidTerminalContent } from './rfid-terminal-category'
+import { wearableTerminalContent } from './wearable-terminal-category'
 import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
 // Rich content for subcategory pages (SEO/AEO/GEO)
@@ -135,6 +136,7 @@ export const subcategoryContent: Record<string, SubcategoryRichContent> = {
   'etykiety-rfid-zebra': rfidLabelContent,
   'drukarki-rfid': rfidPrinterContent,
   'terminale-rfid': rfidTerminalContent,
+  'terminale-naramienne': wearableTerminalContent,
   'uchwyty-rfid': rfidSledContent,
   'czytniki-rfid': rfidReaderContent,
   'biurkowe-drukarki-etykiet': {

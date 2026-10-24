@@ -18,6 +18,18 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       { value: 'Bez 5G', pattern: 'bez 5G', specs: ['Łączność'] },
     ] },
   ],
+  'terminale-naramienne': [
+    { specKey: 'zlacza', label: 'Złącza', description: 'Złącze terminala do przewodów i akcesoriów.\n• USB-C — ładowanie i dane przez standardowy przewód USB-C; skanery tylko Bluetooth.\n• Wzmocnione złącza boczne — przewód USB, skaner przewodowy RS4000 lub RS5000x i adapter audio.', derived: [
+      { value: 'USB-C', pattern: 'USB-C', specs: ['Złącza'] },
+      { value: 'Wzmocnione złącza boczne', pattern: 'wzmocnione złącza boczne', specs: ['Złącza'] },
+    ] },
+    { specKey: 'klawiatura', label: 'Klawiatura', description: 'Fizyczne klawisze pod ekranem ułatwiają wpisywanie danych w grubych rękawicach.', derived: [
+      { value: 'Wersja z klawiaturą', pattern: '23 klawisze', specs: ['Klawiatura'] },
+    ] },
+    { specKey: 'mroznia', label: 'Praca w mroźni', description: 'Terminal, który z odpowiednią baterią pracuje w temperaturze do −30 °C.', derived: [
+      { value: 'Do −30 °C', pattern: '−30 °C', specs: ['Temperatura pracy'] },
+    ] },
+  ],
   'drukarki-rfid': [
     { specKey: 'producent', label: 'Producent', derived: [
       { value: 'Zebra', manufacturer: 'zebra' },

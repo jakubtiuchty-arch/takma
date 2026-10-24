@@ -242,7 +242,7 @@ export const zebraRs2100Products: Product[] = [
     "faq": [
       {
         "question": "Z jakimi urządzeniami współpracuje Zebra RS2100?",
-        "answer": "RS2100 przesyła kody przez Bluetooth do komputerów mobilnych Zebra, smartfonów i tabletów z Androidem lub iOS oraz do komputerów PC. Na komputerach mobilnych Zebra aplikacja DataWedge przekazuje odczytane kody do aplikacji biznesowych bez dodatkowego programowania. Skaner łączy się także z bazą Zebra STB3678 podłączoną do komputera."
+        "answer": "RS2100 przesyła kody przez Bluetooth do komputerów mobilnych Zebra, smartfonów i tabletów z Androidem lub iOS oraz do komputerów PC. Na komputerach mobilnych Zebra aplikacja DataWedge przekazuje odczytane kody do aplikacji biznesowych bez dodatkowego programowania. Skaner łączy się także z bazą Zebra STB3678 podłączoną do komputera. Z komputerami noszonymi [Zebra WT5400](/produkt/zebra-wt5400) i [WT6400](/produkt/zebra-wt6400) RS2100 paruje się przez zbliżenie do ikony NFC na terminalu."
       },
       {
         "question": "Czy RS2100 działa z iPhone'em i komputerem z Windows?",
