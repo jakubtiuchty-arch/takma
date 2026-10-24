@@ -1518,6 +1518,115 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       },
     ],
   },
+  'tablety-bluebird': {
+    updatedAt: '2026-10-24',
+    contactText: 'Opisz miejsce pracy i aplikację. Dobierzemy tablet Bluebird, wersję łączności oraz zasilanie, stacje, osłony i baterie.',
+    definition: {
+      heading: 'Tablety Bluebird: obudowa IP65, smukły tablet biznesowy i zapowiedź dla zakładów karnych',
+      content: 'Bluebird, firma z grupy TSC Auto ID, oferuje tablety z Androidem w trzech odmianach.\n\n[T30](/produkt/bluebird-t30) to tablet 10,1″ w obudowie IP65, z baterią wymienianą na miejscu pracy, Wi-Fi 6E i opcją 5G.\n\n[T10](/produkt/bluebird-t10) to smukły tablet biznesowy 10,95″ o grubości 7,4 mm, z opcją 4G LTE. Producent nie deklaruje dla niego klasy szczelności ani odporności na upadki.\n\n[T40 Ultra](/produkt/bluebird-t40-ultra) to zapowiedziany tablet 8″ dla zakładów karnych, z obudową IP68 i czujnikiem ingerencji. Termin dostępności i cenę podamy na zapytanie.\n\nKażdy model ma NFC i narzędzia BOS do konfiguracji oraz zarządzania (Provisioning, Kiosk, Wi-Fine, NEST).',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać tablet Bluebird? 5 kryteriów',
+      items: [
+        'Odporność — [T30](/produkt/bluebird-t30) ma obudowę IP65 i znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot 1,6 m według MIL-STD-810H. [T10](/produkt/bluebird-t10) nie ma deklarowanej klasy szczelności ani testu upadku. Zapowiedziany [T40 Ultra](/produkt/bluebird-t40-ultra) ma IP68 i upadki z 2 m.',
+        'Łączność — T30 ma Wi-Fi 6E, a wersja z 5G dodatkowo eSIM i dwuzakresowy GNSS. T10 ma Wi-Fi 5, a wersja z 4G LTE eSIM i GPS.',
+        'Bateria — w T30 baterię 8000 mAh wymienia się na miejscu pracy, a [zapasową baterię](/produkt/bluebird-355040109) zamawia się osobno. W T10 bateria 8000 mAh jest zintegrowana z obudową.',
+        'Zestaw — T30 jest dostarczany bez zasilacza, wtyczki i kabla. W zestawie T10 producent przewiduje zasilacz 5 V / 3 A z wtyczką i kabel USB.',
+        'Wyposażenie — do T10 jest [klawiatura 2 w 1](/produkt/bluebird-638010002) na złączu POGO. Do T30 są stacje ładujące 1- i 4-gniazdowe, [uchwyt do wózka widłowego](/produkt/bluebird-355040121) i [pasek na dłoń](/produkt/bluebird-357010004).',
+      ],
+    },
+    expertAuthority: 'TAKMA jest partnerem Bluebird. Dobieramy model tabletu, wersję łączności i akcesoria: zasilacze, stacje ładujące, osłony, baterie i uchwyty. W ofercie są też [terminale Bluebird](/terminale-bluebird), więc tablety i terminale w jednej firmie można konfigurować tymi samymi narzędziami BOS. Do jednego zastosowania porównujemy też tablety [Getac](/tablety-getac), [Zebra](/tablety-przemyslowe-zebra) i [Honeywell](/tablety-honeywell).',
+    technicalDeepDive: `Tablety Bluebird w ofercie TAKMA.\n\n• [T30](/produkt/bluebird-t30) (Android 13, 10,1″): WUXGA, typowo 500 nitów, Corning Gorilla Glass, Qualcomm QC4490, 6/64 GB, Wi-Fi 6E, opcja 5G z eSIM i GNSS, NFC z płatnościami zbliżeniowymi i certyfikatem Apple VAS. IP65, upadki z 1,0 m (1,6 m w osłonie rugged boot), grubość 11,4 mm, masa 650 g. Bateria 8000 mAh wymienna na miejscu; zasilacz, wtyczka i kabel sprzedawane osobno.\n\n• [T10](/produkt/bluebird-t10) (Android 14, 10,95″): 2000 × 1200, typowo 410 nitów, ośmiordzeniowy procesor Qualcomm do 2,8 GHz, 4/64 albo 6/128 GB, Wi-Fi 5, opcja 4G LTE z eSIM i GPS, NFC, złącze POGO do klawiatury. Grubość 7,4 mm, masa 492 g, bateria zintegrowana 8000 mAh. Cykl dostaw i wsparcia 3+3 lata.\n\n• [T40 Ultra](/produkt/bluebird-t40-ultra) (zapowiedź, Android 16, 8″): HD 1280 × 800, 600 nitów, szkło hartowane 2 mm, MediaTek MT8873, 6/64 GB, Wi-Fi 6E, opcja 5G, czujnik ingerencji, przezroczysty tył, magnetyczne złącze POGO, ładowanie Qi 15 W w wersjach WWAN. IP68, upadki z 2 m, masa 630 g, cykl 4+4 lata. Termin dostępności i cenę podamy na zapytanie.\n\nWszystkie trzy modele pracują w temperaturze od −20°C do +50°C. Na T30 i T10 udzielamy 12 miesięcy gwarancji.`,
+    useCases: [
+      {
+        title: 'Sklep i obsługa klienta przy półce — T30',
+        description: '[T30](/produkt/bluebird-t30) skraca kolejki przy kasie, wyszukuje towar i przyjmuje płatności zbliżeniowe przez NFC. Obudowa IP65 chroni tablet przed pyłem i strugami wody na hali sprzedaży i na zapleczu.',
+      },
+      {
+        title: 'Magazyn i wózek widłowy — T30',
+        description: 'W magazynie [T30](/produkt/bluebird-t30) wspiera kompletację, a [uchwyt do wózka widłowego](/produkt/bluebird-355040121) mocuje go w pojeździe. Kilka tabletów jednocześnie ładuje [stacja 4-gniazdowa](/produkt/bluebird-204020040).',
+      },
+      {
+        title: 'Gabinet, restauracja i kabina kierowcy — T10',
+        description: '[T10](/produkt/bluebird-t10) obsługuje dokumentację kliniczną, zamówienia i płatności w gastronomii oraz łączność z kierowcą i rejestrację czasu jazdy (ELD). Z klawiaturą 2 w 1 ułatwia pracę z dokumentami.',
+      },
+      {
+        title: 'Zakłady karne — T40 Ultra (zapowiedź)',
+        description: '[T40 Ultra](/produkt/bluebird-t40-ultra) służy osadzonym do wideorozmów, nauki i zamówień z kantyny. Czujnik ingerencji, przezroczysty tył i brak odsłoniętego portu USB utrudniają demontaż i nadużycia.',
+      },
+    ],
+    uniqueInsights: {
+      heading: '4 rzeczy, które warto wiedzieć przed zakupem tabletu Bluebird',
+      items: [
+        {
+          title: 'Aktualizacje Androida są płatne',
+          text: 'Producent zapowiada dla T30 wersje do Androida 17, a dla T10 wersje 16 i 18. Usługa aktualizacji wymaga zakupu kontraktu Bluebird Care.',
+        },
+        {
+          title: 'T30 bez zasilacza w zestawie',
+          text: 'Do [T30](/produkt/bluebird-t30) zamawia się osobno [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Te same elementy pasują do terminali Bluebird.',
+        },
+        {
+          title: 'Stacja T30 a osłona rugged boot',
+          text: 'Tablet bez osłony rugged boot wymaga w stacji ładującej [podkładki](/produkt/bluebird-501260136), po jednej na gniazdo. Linki do rysika przypina się do osłony, więc bez niej nie da się ich zamocować.',
+        },
+        {
+          title: 'T10 nie jest tabletem wzmocnionym',
+          text: '[T10](/produkt/bluebird-t10) to smukły tablet biznesowy bez deklarowanej klasy szczelności. Do pracy w pyle, wilgoci i przy ryzyku upadków przeznaczony jest T30 z obudową IP65.',
+        },
+      ],
+    },
+    comparisons: [
+      {
+        title: 'Bluebird T30, T10 i T40 Ultra — parametry obok siebie',
+        content: '| Parametr | [T30](/produkt/bluebird-t30) | [T10](/produkt/bluebird-t10) | [T40 Ultra](/produkt/bluebird-t40-ultra) (zapowiedź) |\n|---|---|---|---|\n| System | Android 13 | Android 14 | Android 16 |\n| Ekran | 10,1″ 1920 × 1200, 500 nitów | 10,95″ 2000 × 1200, 410 nitów | 8″ 1280 × 800, 600 nitów |\n| Procesor | Qualcomm QC4490 | Qualcomm, 8 rdzeni, do 2,8 GHz | MediaTek MT8873 |\n| RAM / pamięć | 6 / 64 GB | 4 / 64 albo 6 / 128 GB | 6 / 64 GB, opcja 8 / 128 GB |\n| Łączność | Wi-Fi 6E, opcja 5G | Wi-Fi 5, opcja 4G LTE | Wi-Fi 6E, opcja 5G |\n| Klasa szczelności | IP65 | Nie deklarowana | IP68 |\n| Upadki | 1,0 m; 1,6 m w osłonie | Nie deklarowane | 2,0 m |\n| Bateria | 8000 mAh, wymienna na miejscu | 8000 mAh, zintegrowana | 8000 mAh, wymiana specjalnym narzędziem |\n| Grubość / masa | 11,4 mm / 650 g | 7,4 mm / 492 g | 17 mm / 630 g |\n\nT30 i T10 mają ekrany podobnej wielkości. T30 ma obudowę IP65 i wymienną baterię, a T10 jest cieńszy i lżejszy. T40 Ultra jest przeznaczony dla zakładów karnych.',
+      },
+    ],
+    faq: [
+      {
+        question: 'Który tablet Bluebird wybrać do pracy w trudnych warunkach?',
+        answer: '[T30](/produkt/bluebird-t30) ma obudowę IP65, pracuje od −20°C do +50°C i w osłonie rugged boot znosi upadki z 1,6 m. [T10](/produkt/bluebird-t10) to tablet biznesowy bez deklarowanej klasy szczelności i odporności na upadki. [T40 Ultra](/produkt/bluebird-t40-ultra) z IP68 jest zapowiedzią przeznaczoną dla zakładów karnych.',
+      },
+      {
+        question: 'Czy tablety Bluebird mają zasilacz w zestawie?',
+        answer: 'T30 nie ma zasilacza w zestawie. Do niego zamawia się [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). W zestawie T10 producent przewiduje zasilacz 5 V / 3 A z wtyczką i kabel USB. Zestaw T40 Ultra ma obejmować zasilacz PD i kabel USB-C – USB-C.',
+      },
+      {
+        question: 'Czy tablety Bluebird obsługują płatności zbliżeniowe?',
+        answer: 'Tak, wszystkie mają NFC. [T30](/produkt/bluebird-t30) obsługuje płatności zbliżeniowe ECP 1.0 i 2.0 i ma certyfikat Apple VAS. [T10](/produkt/bluebird-t10) obsługuje płatności zbliżeniowe oraz karty ISO 14443, ISO 15693 i FeliCa. T40 Ultra obsługuje płatności zbliżeniowe i ma certyfikat Google Smart Tap.',
+      },
+      {
+        question: 'Jak długo tablety Bluebird otrzymują nowe wersje Androida?',
+        answer: 'T30 ma fabrycznie Androida 13, a producent zapowiada wersje do 17. T10 ma Androida 14 z zapowiedzią wersji 16 i 18 oraz cykl dostaw i wsparcia 3+3 lata. T40 Ultra ma startować z Androidem 16, z zapowiedzią wersji 18 i 20 i cyklem 4+4 lata. W każdym modelu aktualizacje wymagają płatnej usługi Bluebird.',
+      },
+      {
+        question: 'Kiedy będzie dostępny Bluebird T40 Ultra?',
+        answer: 'Bluebird zapowiedział [T40 Ultra](/produkt/bluebird-t40-ultra), ale nie podał daty premiery, numerów katalogowych ani cen. Termin dostępności i cenę podamy na zapytanie.',
+      },
+      {
+        question: 'Jakie akcesoria są dostępne do tabletów Bluebird?',
+        answer: 'Do T30: stacje ładujące 1- i 4-gniazdowa, podkładka do stacji, osłona rugged boot, bateria 8000 mAh, pasek na dłoń, rysik z linkami, szkło ochronne i uchwyt do wózka widłowego. Do T10: klawiatura 2 w 1, etui ochronne, pasek na ramię z łącznikiem, szkło ochronne i rysik. Zgodne akcesoria są na karcie każdego tabletu w sekcji „Akcesoria”.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Wybór modelu',
+        text: 'Określ warunki pracy. Jeśli tablet jest narażony na pył, wilgoć i upadki, wybierz T30 z obudową IP65. Do pracy w sklepie, gabinecie lub restauracji bez takiego ryzyka wystarczy T10.',
+      },
+      {
+        name: 'Wybór łączności',
+        text: 'Jeśli tablet pracuje poza zasięgiem Wi-Fi, wybierz T30 z 5G albo T10 z 4G LTE. Obie wersje mają eSIM i odbiornik GNSS.',
+      },
+      {
+        name: 'Zasilanie i ładowanie',
+        text: 'Do T30 zamów zasilacz 5 V / 3 A, wtyczkę EU i kabel. Do ładowania kilku tabletów zamów stację 4-gniazdową; zasilacz 10 A do stacji dobierzemy przy zamówieniu.',
+      },
+      {
+        name: 'Ochrona i mocowanie',
+        text: 'Do T30 dobierz osłonę rugged boot, pasek na dłoń albo uchwyt do wózka. Bez osłony każde gniazdo stacji wymaga podkładki. Do T10 dobierz etui i klawiaturę.',
+      },
+    ],
+  },
   // ===================================================================
   // TABLETY PRZEMYSŁOWE ZEBRA
   // ===================================================================

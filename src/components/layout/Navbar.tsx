@@ -137,6 +137,7 @@ const navigation: NavItem[] = [
       { name: 'Tablety Honeywell', href: '/tablety-honeywell' },
       { name: 'Tablety Brady', href: '/tablety-brady' },
       { name: 'Tablety Getac', href: '/tablety-getac' },
+      { name: 'Tablety Bluebird', href: '/tablety-bluebird' },
       { name: 'Laptopy przemysłowe', href: '/laptopy-przemyslowe' },
     ],
   },

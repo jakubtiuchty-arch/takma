@@ -19,7 +19,9 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
   if (manufacturer && ['sunmi', 'cipherlab', 'bluebird'].includes(manufacturer.id)) {
     const title = manufacturer.id === 'sunmi'
       ? 'Produkty SUNMI — terminale mobilne, komputery POS, drukarki POS i akcesoria'
-      : `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
+      : manufacturer.id === 'bluebird'
+        ? 'Produkty Bluebird — terminale mobilne, tablety i akcesoria'
+        : `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
     return {
       title,
       description: manufacturer.seoDescription,
