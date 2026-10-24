@@ -68,7 +68,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   // Citizen POS stoi w jednej siatce z Epson i BIXOLON, więc dostaje te same kafle.
   const citizenPosImage = (product.manufacturerId === 'citizen' && product.categoryId === 'drukarki-pos') || product.id.startsWith('citizen-pos-')
   // Kioski i akcesoria do kiosków Zebra stoją w jednej siatce z SUNMI FLEX 3, więc dostają te same kafle 4:3.
-  const standardMobileImage = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) || product.categoryId === 'kioski-samoobslugowe' || !!product.subcategoryIds?.includes('akcesoria-do-kioskow')
+  // Tablety Bluebird mają płótno 1200 × 800 jak tablety Getac, więc nie dostają kafla terminala.
+  const standardMobileImage = (['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) && product.categoryId !== 'tablety-przemyslowe') || product.categoryId === 'kioski-samoobslugowe' || !!product.subcategoryIds?.includes('akcesoria-do-kioskow')
   const uniformGridImage = standardMobileImage || product.uniformImage || epsonPosImage || citizenPosImage || bixolonLabelImage || product.id === 'unitech-rp300' || datalogicScannerImage
   const gridImageFraction = standardMobileImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : (epsonPosImage || citizenPosImage) ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.id === 'unitech-rp300' ? 0.58 : datalogicHandheldImage ? 0.73 : datalogicScannerImage ? 0.62 : bixolonLabelImage ? (product.categoryId === 'akcesoria' ? 0.62 : 0.72) : product.uniformImageFraction
 
@@ -129,7 +130,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   const liveAvailability = liveStatus ?? (isZebraTerminalProduct(product) ? 'unavailable' : product.availability)
   // Brak stanu magazynowego pokazujemy jako niedostępność.
-  const isUnavailable = !product.quoteOnly && liveAvailability !== 'available'
+  const isUnavailable = !product.quoteOnly && !product.comingSoon && liveAvailability !== 'available'
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const },
@@ -137,8 +138,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     unavailable: { label: 'Niedostępny', variant: 'danger' as const },
   }
 
-  const availability = product.quoteOnly
-    ? { label: 'Na zapytanie', variant: 'info' as const }
+  const availability = product.quoteOnly || product.comingSoon
+    ? { label: product.comingSoon ? 'Zapowiedź' : 'Na zapytanie', variant: 'info' as const }
     : availabilityConfig[liveAvailability] ?? availabilityConfig.unavailable
 
   const gaItem = () => ({
@@ -365,7 +366,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   href={productHref}
                   className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                 >
-                  {product.quoteOnly ? 'Zapytaj o produkt' : 'Zobacz więcej'}
+                  {product.quoteOnly || product.comingSoon ? 'Zapytaj o produkt' : 'Zobacz więcej'}
                 </Link>
               ) : (product.variants?.length ?? 0) > 1 ? (
                 <Link
@@ -405,7 +406,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   : 'text-white bg-primary-600 hover:bg-primary-700'
               }`}
             >
-              {product.quoteOnly ? 'Zapytaj o produkt' : 'Zobacz więcej'}
+              {product.quoteOnly || product.comingSoon ? 'Zapytaj o produkt' : 'Zobacz więcej'}
             </Link>
           )}
         </div>

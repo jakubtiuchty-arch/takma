@@ -216,6 +216,7 @@ export async function GET() {
   const candidates: Candidate[] = []
   for (const product of products) {
     if (!product.images?.length) continue // Ceneo wymaga zdjęcia
+    if (product.comingSoon) continue // zapowiedź: bez ceny i bez sprzedaży
     if (product.variants && product.variants.length > 0) {
       for (const v of product.variants) candidates.push({ product, variant: v, pn: v.partNumber, id: v.partNumber })
     } else {

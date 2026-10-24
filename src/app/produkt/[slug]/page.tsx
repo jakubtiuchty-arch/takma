@@ -568,8 +568,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const variantLiveAvailability = (v: { partNumber: string; availability: keyof typeof availabilitySchemaMap }) =>
     liveSchemaOffers?.get(v.partNumber)?.availability ?? v.availability
   // Check if product has any valid price (> 0) at product or variant level (albo żywa oferta)
-  const hasValidPrice = (product.priceFrom && product.priceFrom > 0) ||
-    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer
+  // Zapowiedź nie ma oferty w JSON-LD, nawet gdyby ktoś dopisał cenę startową.
+  const hasValidPrice = !product.comingSoon && ((product.priceFrom && product.priceFrom > 0) ||
+    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer)
   const magicardOffer = getMagicardOffer(product)
 
   // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
@@ -646,7 +647,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     category: category?.name,
     sku: magicardOffer?.sku || schemaPartNumber,
     // Karta rodziny na zapytanie bez potwierdzonego PN: identyfikator sklepu nie jest MPN producenta.
-    mpn: product.quoteOnly && !specPartNumber && !product.variants?.length ? undefined : magicardOffer?.sku || schemaPartNumber,
+    mpn: (product.quoteOnly || product.comingSoon) && !specPartNumber && !product.variants?.length ? undefined : magicardOffer?.sku || schemaPartNumber,
     ...(mcAccessoryModels.length > 0 ? {
       isAccessoryOrSparePartFor: mcAccessoryModels.map(p => ({ '@id': `https://www.takma.com.pl/produkt/${p.slug}` })),
     } : {}),
@@ -1056,8 +1057,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Badge dostępności (z SmartPriceContext) siedzi w prawym górnym rogu boksu ceny */}
             <SmartPrice
               product={product}
-              badge={product.download ? undefined : product.quoteOnly ? (
-                <Badge variant="info">Na zapytanie</Badge>
+              badge={product.download ? undefined : product.quoteOnly || product.comingSoon ? (
+                <Badge variant="info">{product.comingSoon ? 'Zapowiedź' : 'Na zapytanie'}</Badge>
               ) : (
                 <ContextAvailabilityBadge
                   staticAvailability={product.availability}
@@ -1110,7 +1111,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {product.download ? (
                 <DownloadButton product={product} />
               ) : (
-                !product.quoteOnly && <AddToRFQButton product={product} />
+                !product.quoteOnly && !product.comingSoon && <AddToRFQButton product={product} />
               )}
               <AskAboutProductButton productName={product.name} productSlug={product.slug} />
             </div>

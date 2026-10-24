@@ -28,6 +28,7 @@ import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
+import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { getacLaptopProducts, getacLaptopAccessories } from './getac-laptop-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
@@ -83,6 +84,8 @@ export interface Product {
   priceFrom?: number
   /** Karta sprzedażowa bez ceny i stanu: konfigurację wyceniamy po zapytaniu. */
   quoteOnly?: boolean
+  /** Zapowiedź producenta: karta bez ceny, PN i koszyka, poza feedami; plakietka „Zapowiedź” zamiast „Na zapytanie”. */
+  comingSoon?: boolean
   /** Rabat ilościowy dla sprzedaży na sztuki: cena za sztukę od danego progu (patrz src/lib/price-tiers.ts). */
   priceTiers?: { minQty: number; priceNetto: number }[]
   /** Gotowe komplety materiałów do pierwszego wydruku na karcie drukarki: PN-y z katalogu, ceny live (audyt ZD421t, ZD-10) */
@@ -95498,6 +95501,8 @@ const rawProductList: Product[] = [
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,
+  ...bluebirdTabletProducts,
+  ...bluebirdTabletAccessories,
   ...getacLaptopProducts,
   ...getacLaptopAccessories,
   ...rfidLabelProducts,

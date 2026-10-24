@@ -965,6 +965,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Honeywell', manufacturer: 'honeywell' },
         { value: 'Brady', manufacturer: 'brady' },
         { value: 'Getac', manufacturer: 'getac' },
+        { value: 'Bluebird', manufacturer: 'bluebird' },
       ],
     },
     {
@@ -984,7 +985,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '8"', pattern: '^8[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
         { value: '8"', pattern: '\\S', specs: ['Wyświetlacz 8″'] },
-        { value: '10"', pattern: '^10[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
+        { value: '10"', pattern: '^10([,.][0-9]{1,2})?\\s*["″]', specs: ['Wyświetlacz'] },
         { value: '10"', pattern: '\\S', specs: ['Wyświetlacz 10″'] },
         { value: '11–12,5"', pattern: '^1[12][,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
         { value: '14"', pattern: '^14[,.]?[0-9]?\\s*["″]', specs: ['Wyświetlacz'] },
@@ -1006,7 +1007,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       label: 'Odporność na upadki',
       description: 'Z jakiej wysokości tablet wytrzymuje upadek na beton wg testów producenta.\n• 1,2–1,3 m — z ręki, z blatu\n• 1,5 m i więcej — z wózka, z uchwytu w aucie',
       derived: [
-        { value: '1,2–1,3 m', pattern: '(^|[^0-9,.])1[,.][0-3][0-9]? ?m', specs: ['Odporność na upadki', 'Odporność na upadek', 'Upadki', 'Odporność'] },
+        { value: '1,2–1,3 m', pattern: '(^|[^0-9,.])1[,.][23][0-9]? ?m', specs: ['Odporność na upadki', 'Odporność na upadek', 'Upadki', 'Odporność'] },
         { value: '1,5 m i więcej', pattern: '(^|[^0-9,.])(1[,.][5-9][0-9]?|2([,.][0-9])?) ?m', specs: ['Odporność na upadki', 'Odporność na upadek', 'Upadki', 'Odporność'] },
       ],
     },
@@ -1491,7 +1492,7 @@ categoryFilters['skanery-datalogic'] = [
     ],
   },
 ]
-for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady', 'tablety-getac']) {
+for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady', 'tablety-getac', 'tablety-bluebird']) {
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }
 // Drukarki etykiet — strony marek: ten sam zestaw co kategoria (Producent chowa się sam)

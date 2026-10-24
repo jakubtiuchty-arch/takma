@@ -23,6 +23,7 @@ export type ProductCardData = Pick<
   | 'variants'
   | 'priceFrom'
   | 'quoteOnly'
+  | 'comingSoon'
   | 'priceTiers'
   | 'availability'
 > & { href?: string; uniformImage?: boolean; uniformImageFraction?: number }
