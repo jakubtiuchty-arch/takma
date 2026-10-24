@@ -189,7 +189,7 @@ const zd421Hc: Product = {
   shortDescription: 'Zebra ZD421-HC — 4-calowa drukarka etykiet dla służby zdrowia, termiczna lub termotransferowa: recepty, próbki, worki z krwią, opaski dla pacjentów.',
   seoTitle: 'Zebra ZD421-HC — drukarka etykiet 4" dla służby zdrowia',
   seoDescription: 'Zebra ZD421-HC: drukarka szpitalna 4" w wersji termicznej lub termotransferowej, 203/300 dpi, Ethernet albo Wi-Fi 6. Drukarka termotransferowa Zebra ZD421-HC, ZD421-HC Zebra. PN: ZD4AH42-D0EE00EZ, ZD4AH42-D0EX02EZ, ZD4AH43-D0EE00EZ, ZD4AH42-30EE00EZ, ZD4AH42-30EX02EZ, ZD4AH43-30EE00EZ, ZD4AH43-30EX02EZ.',
-  description: `Zebra ZD421-HC to 4-calowa biurkowa drukarka etykiet dla szpitali, przychodni i laboratoriów. Zastępuje modele ZD420-HC, GK420 i GT800. W tabeli są dwie wersje: termiczna oraz termotransferowa na taśmy 74 m i 300 m. Wersja termotransferowa drukuje także bez taśmy, na materiale termicznym.
+  description: `Zebra ZD421-HC to 4-calowa biurkowa drukarka etykiet dla szpitali, przychodni i laboratoriów. Zastępuje modele ZD420-HC, GK420 i GT800. Drukarka występuje w dwóch wersjach: termicznej oraz termotransferowej na taśmy 74 m i 300 m. Wersja termotransferowa drukuje także bez taśmy, na materiale termicznym.
 
 Drukarka służy do oznaczania recept, próbek laboratoryjnych, worków z krwią i płynami infuzyjnymi, dokumentacji pacjentów oraz zasobów. Drukuje też opaski identyfikacyjne dla pacjentów.
 
