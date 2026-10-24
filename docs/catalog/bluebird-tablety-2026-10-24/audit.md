@@ -59,7 +59,7 @@ Dokument roboczy: źródła, PN, pominięte modele, sprzeczności, akcesoria, zd
 | T10 — przekątna | karta 10,95″ | Jarltech 11″ (27,94 cm) | 10,95″; filtr przekątnej poprawiony (grupa 10″) |
 | T10 — GMS | karta: „GMS / Non-GMS” na stronie | Jarltech: GMS tylko dla `A4LFW`; `ANLC` brak danych | GMS pominięte |
 | T40 Ultra — Android | wstęp: „guaranteed upgradability to Android 20” | przypis: aktualizacja wymaga programu gwarancyjnego; „Qualcomm’s roadmap” przy procesorze MediaTek | specyfikacja: Android 16; FAQ: zapowiedź 18 i 20 w ramach płatnego programu gwarancyjnego |
-| T40 Ultra — Qi | „Support 15W Wireless Charging (Qi)” | „only on WWAN SKUs” | Qi tylko w wersjach WWAN |
+| T40 Ultra — Qi | „Support 15W Wireless Charging (Qi)” | „only on WWAN SKUs” | ~~Qi tylko w wersjach WWAN~~ — błędny odczyt; dopisek należy do wiersza SIM / SAM. Qi 15 W we wszystkich wersjach (korekta: `zgodnosc-z-kartami-2026-10-24.md` §1) |
 | T40 Ultra — „Imager Window: Tempered 2mm Glass” | karta | tablet bez skanera | „szkło hartowane 2 mm” na ekranie |
 | Stacja 4-gn. T30 `204020040` — zasilacz | przewodnik T30: „Requires Power Adapter 12V/10A” | ten sam przewodnik: PN `602010013` o nazwie `PWR-ADPT-9V10A`; Jarltech `204020040`: „order separately: Power Supply and Power Cord” (bez PN); Jarltech/ERS `602010013`: 9 V / 10 A | zasilacz **poza** blokiem „Wymagane”; opis: „Stację zasila zasilacz 10 A z przewodem sieciowym EU. Model zasilacza dobierzemy przy zamówieniu.” W „Wymagane”: przewód `14948`; podkładka dla tabletu bez osłony. Karta `602010013` **bez** dopisanej zgodności z T30 (świadomie, mimo listy w briefie) |
 | `621040003` (pasek z hakiem) | Jarltech i ERS — przy T30 | przewodnik T30: inny pasek `621040007` (API nie zna) | nie dopisano do T30 |

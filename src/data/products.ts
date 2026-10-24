@@ -96245,7 +96245,7 @@ export const brandCategories: BrandCategory[] = [
     name: 'Tablety przemysłowe Bluebird',
     seoTitle: 'Tablety Bluebird z Androidem — T30 z IP65, smukły T10, T40 Ultra',
     seoDescription: 'Tablety Bluebird z Androidem: T30 10,1″ z IP65 i opcją 5G, smukły T10 10,95″ z opcją 4G LTE oraz zapowiedź T40 Ultra dla zakładów karnych. Tablet Bluebird z NFC.',
-    longDescription: 'Tablety Bluebird to tablety z Androidem dla firm: od smukłych tabletów biznesowych po urządzenia w obudowie o klasie szczelności IP65 i wyższej. Służą do obsługi klienta i płatności zbliżeniowych przez NFC, do pracy w sklepie, magazynie i dostawach, a także w ochronie zdrowia i gastronomii. Współpracują z narzędziami Bluebird BOS i popularnymi systemami EMM, a na stanowisku pracy ze stacjami ładującymi. Aktualizacje Androida wymagają płatnej usługi Bluebird Care. Tablety innych marek są w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
+    longDescription: 'Tablety Bluebird w ofercie TAKMA to tablety z Androidem dla firm: od smukłych tabletów biznesowych po urządzenia w obudowie o klasie szczelności IP65 i wyższej. Służą do obsługi klienta i płatności zbliżeniowych przez NFC, do pracy w sklepie, magazynie i dostawach, a także w ochronie zdrowia i gastronomii. Współpracują z narzędziami Bluebird BOS i popularnymi systemami EMM, a na stanowisku pracy ze stacjami ładującymi. Aktualizacje Androida wymagają płatnej usługi Bluebird Care. Tablety innych marek są w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
     // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
     faq: [],
   },

@@ -11,7 +11,7 @@ export const bluebirdTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Bluebird T30 10,1″, Android 13, opcja 5G, IP65",
     "seoDescription": "Bluebird T30: tablet przemysłowy 10,1″ z Androidem 13, Wi-Fi 6E, opcją 5G i NFC do płatności, IP65. Tablet Bluebird T30, PN: T30-ANLB, T30-A5LAW.",
     "shortDescription": "Bluebird T30 — tablet 10,1″ o grubości 11,4 mm w obudowie IP65, z Wi-Fi 6E, opcją 5G i NFC do płatności zbliżeniowych; baterię wymienia się na miejscu.",
-    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC obsługuje płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0 oraz ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i obsługuje dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a wersja T30-A5LAW dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot test MIL-STD-810H obejmuje 1,6 m. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Tablet ma 12 miesięcy gwarancji.",
+    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC obsługuje płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0 oraz ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i obsługuje dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a wersja T30-A5LAW dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki w temperaturze pokojowej, a w osłonie rugged boot upadek z 1,6 m według MIL-STD-810H. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Tablet ma 12 miesięcy gwarancji.",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -102,7 +102,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "name": "Odporność na upadki",
-        "value": "Wielokrotne upadki z 1,0 m na płytki na betonie; 1,6 m według MIL-STD-810H w osłonie rugged boot"
+        "value": "Wielokrotne upadki z 1,0 m na płytki na betonie w temperaturze pokojowej; 1,6 m według MIL-STD-810H w osłonie rugged boot"
       },
       {
         "name": "Test przewrotów",
@@ -224,7 +224,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Jaką odporność ma Bluebird T30?",
-        "answer": "Obudowa ma klasę IP65. Sam tablet wytrzymuje wielokrotne upadki z 1,0 m na płytki ułożone na betonie. Po założeniu <a href=\"/produkt/bluebird-351120036\">osłony rugged boot</a> wysokość upadku według MIL-STD-810H rośnie do 1,6 m, a test obejmuje też 300 przewrotów z 0,5 m. Tablet pracuje w temperaturze od −20°C do +50°C."
+        "answer": "Obudowa ma klasę IP65. Sam tablet wytrzymuje wielokrotne upadki z 1,0 m na płytki ułożone na betonie w temperaturze pokojowej. W <a href=\"/produkt/bluebird-351120036\">osłonie rugged boot</a> znosi upadek z 1,6 m według MIL-STD-810H i 300 przewrotów z 0,5 m. Tablet pracuje w temperaturze od −20°C do +50°C."
       },
       {
         "question": "Czym różnią się wersje Bluebird T30?",
@@ -440,7 +440,7 @@ export const bluebirdTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Czy Bluebird T10 jest tabletem wzmocnionym (rugged)?",
-        "answer": "Nie. T10 to smukły tablet biznesowy o grubości 7,4 mm. Producent nie podaje dla niego klasy szczelności IP ani testu upadku. Do pracy w pyle, wilgoci i z ryzykiem upadków przeznaczony jest <a href=\"/produkt/bluebird-t30\">Bluebird T30</a> z obudową IP65."
+        "answer": "Nie. T10 to smukły tablet biznesowy o grubości 7,4 mm. Dla T10 nie jest deklarowana klasa szczelności IP ani odporność na upadki. Do pracy w pyle, wilgoci i z ryzykiem upadków przeznaczony jest <a href=\"/produkt/bluebird-t30\">Bluebird T30</a> z obudową IP65."
       },
       {
         "question": "Do czego służy złącze POGO w Bluebird T10?",
@@ -472,9 +472,9 @@ export const bluebirdTabletProducts: Product[] = [
     "name": "Bluebird T40 Ultra",
     "seoH1": "Bluebird T40 Ultra",
     "seoTitle": "Bluebird T40 Ultra — tablet 8″ dla zakładów karnych (zapowiedź)",
-    "seoDescription": "Bluebird T40 Ultra (zapowiedź): tablet 8″ dla zakładów karnych z czujnikiem ingerencji, przezroczystym tyłem, IP68 i ładowaniem Qi w wersjach WWAN. Tablet T40 Ultra Bluebird.",
+    "seoDescription": "Bluebird T40 Ultra (zapowiedź): tablet 8″ dla zakładów karnych z czujnikiem ingerencji, przezroczystym tyłem, IP68 i ładowaniem bezprzewodowym Qi 15 W. Tablet T40 Ultra Bluebird.",
     "shortDescription": "Bluebird T40 Ultra — zapowiedziany tablet 8″ dla zakładów karnych: czujnik ingerencji, przezroczysty tył, IP68 i upadki z 2 m; w wersji podstawowej magnetyczne złącze POGO zastępuje port USB, a USB-C 2.0 jest opcją.",
-    "description": "Bluebird T40 Ultra to zapowiedziany przez producenta tablet 8″ zaprojektowany dla zakładów karnych. Sprzedaż jeszcze się nie rozpoczęła. Termin dostępności i cenę podamy na zapytanie.\n\nKonstrukcja utrudnia rozebranie tabletu i użycie jego elementów jako niebezpiecznych przedmiotów. Czujnik ingerencji od razu zgłasza próbę demontażu i działa także przy wyłączonym tablecie. Tył obudowy, domyślnie przezroczysty, zamyka 16 śrub, które odkręca się specjalnym narzędziem. Zamiast odsłoniętego portu USB tablet ma magnetyczne złącze POGO, a wersje z modemem WWAN ładują się bezprzewodowo (Qi, 15 W). Ekran chroni szkło hartowane o grubości 2 mm.\n\nOsadzeni korzystają z tabletu do wideorozmów i wiadomości, nauki, czytania e-booków, zamówień z kantyny i przeglądania dokumentów prawnych. Administrator blokuje reset do ustawień fabrycznych i głośnik, kontroluje dostęp do portów i lokalizuje tablety przez BLE, także po wyłączeniu. NFC i opcjonalny tag RFID służą do ewidencji urządzeń.\n\nProcesor MediaTek MT8873 pracuje z pamięcią 6/64 GB i Androidem 16. Obudowa ma klasę IP68 i znosi wielokrotne upadki z 2 m na beton według MIL-STD-810H. Bateria 8000 mAh zapewnia do 12 godzin pracy.",
+    "description": "Bluebird T40 Ultra to zapowiedziany przez producenta tablet 8″ zaprojektowany dla zakładów karnych. Sprzedaż jeszcze się nie rozpoczęła. Termin dostępności i cenę podamy na zapytanie.\n\nKonstrukcja utrudnia rozebranie tabletu i użycie jego elementów jako niebezpiecznych przedmiotów. Czujnik ingerencji od razu zgłasza próbę demontażu i działa także przy wyłączonym tablecie. Tył obudowy, domyślnie przezroczysty, zamyka 16 śrub, które odkręca się specjalnym narzędziem. W wersji podstawowej zamiast odsłoniętego portu USB tablet ma magnetyczne złącze POGO, a złącze USB-C 2.0 jest opcją. Tablet ładuje się też bezprzewodowo (Qi, 15 W), bez kabla. Ekran chroni szkło hartowane o grubości 2 mm.\n\nOsadzeni korzystają z tabletu do wideorozmów i wiadomości, nauki, czytania e-booków, zamówień z kantyny i przeglądania dokumentów prawnych. Administrator blokuje reset do ustawień fabrycznych i głośnik, kontroluje dostęp do portów i lokalizuje tablety przez BLE, także po wyłączeniu. NFC i opcjonalny tag RFID służą do ewidencji urządzeń.\n\nProcesor MediaTek MT8873 pracuje z pamięcią 6/64 GB i Androidem 16. Obudowa ma klasę IP68 i znosi wielokrotne upadki z 2 m na beton według MIL-STD-810H. Bateria 8000 mAh zapewnia do 12 godzin pracy.",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -580,7 +580,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "name": "Ładowanie",
-        "value": "Szybkie ładowanie 30 W; bezprzewodowe Qi 15 W na środku tylnej ścianki (wersje WWAN)"
+        "value": "Szybkie ładowanie 30 W; bezprzewodowe Qi 15 W na środku tylnej ścianki"
       },
       {
         "name": "Klasa szczelności",
@@ -662,7 +662,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Dlaczego Bluebird T40 Ultra nie ma portu USB?",
-        "answer": "Producent zastąpił odsłonięty port magnetycznym złączem POGO z USB 2.0, które służy do ładowania i transmisji danych. Wersje z modemem WWAN ładują się też bezprzewodowo (Qi, 15 W) i nie wymagają kabla, który mógłby posłużyć jako niebezpieczny przedmiot. Złącze USB-C 2.0 jest dostępne jako opcja."
+        "answer": "Producent zastąpił odsłonięty port magnetycznym złączem POGO z USB 2.0, które służy do ładowania i transmisji danych. Tablet ładuje się też bezprzewodowo (Qi, 15 W) i nie wymaga kabla, który mógłby posłużyć jako niebezpieczny przedmiot. Złącze USB-C 2.0 jest dostępne jako opcja."
       },
       {
         "question": "Do czego osadzeni używają tabletu T40 Ultra?",
@@ -691,7 +691,7 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird T30 — 204020040",
     "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird T30 (204020040) ładuje cztery tablety T30; zasilacz 10 A i przewód EU osobno, podkładki do tabletów bez osłony.",
     "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird T30 — ładuje jednocześnie cztery tablety, zasilacz 10 A i przewód sieciowy zamawia się osobno. PN 204020040.",
-    "description": "Stacja 4-gniazdowa ładuje jednocześnie do czterech tabletów [Bluebird T30](/produkt/bluebird-t30), ustawionych pionowo w gniazdach. Służy tylko do ładowania i nie ma złączy sieciowych. Otwory w spodzie pozwalają przykręcić stację do podłoża. Każdy tablet bez osłony rugged boot wymaga w gnieździe osobnej podkładki, czyli do czterech sztuk na stację. Stację zasila zasilacz 10 A z przewodem sieciowym EU. Model zasilacza dobierzemy przy zamówieniu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla tabletu T30 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird T30 (501260136)](/produkt/bluebird-501260136)\n\nZasilacza 10 A ani przewodu nie ma w zestawie ze stacją.",
+    "description": "Stacja 4-gniazdowa ładuje jednocześnie do czterech tabletów [Bluebird T30](/produkt/bluebird-t30), ustawionych pionowo w gniazdach. Służy tylko do ładowania i nie ma portów komunikacyjnych. Otwory w spodzie pozwalają przykręcić stację do podłoża. Każdy tablet bez osłony rugged boot wymaga w gnieździe osobnej podkładki, czyli do czterech sztuk na stację. Stację zasila zasilacz 10 A z przewodem sieciowym EU. Model zasilacza dobierzemy przy zamówieniu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla tabletu T30 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird T30 (501260136)](/produkt/bluebird-501260136)\n\nZasilacza 10 A ani przewodu nie ma w zestawie ze stacją.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -882,7 +882,7 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoTitle": "Osłona rugged boot Bluebird T30 — 351120036",
     "seoDescription": "Osłona rugged boot Bluebird T30 (351120036): odporność tabletu T30 na upadki do 1,6 m (MIL-STD-810H), test 300 przewrotów z 0,5 m.",
     "shortDescription": "Osłona rugged boot Bluebird T30 — zwiększa odporność tabletu na upadki do 1,6 m. PN 351120036.",
-    "description": "Osłona rugged boot zwiększa odporność tabletu [Bluebird T30](/produkt/bluebird-t30) na upadki z 1,0 m do 1,6 m według MIL-STD-810H. Z założoną osłoną T30 przechodzi też test 300 przewrotów z wysokości 0,5 m. Tablet w osłonie wstawia się do stacji ładujących T30 bez podkładki. Osłona jest potrzebna do zamocowania linki rysika: [prostej (626010004)](/produkt/bluebird-626010004) albo [spiralnej (19346)](/produkt/bluebird-19346).",
+    "description": "W osłonie rugged boot tablet [Bluebird T30](/produkt/bluebird-t30) znosi upadek z 1,6 m według MIL-STD-810H; bez niej wytrzymuje wielokrotne upadki z 1,0 m na płytki na betonie w temperaturze pokojowej. Z założoną osłoną T30 przechodzi też test 300 przewrotów z wysokości 0,5 m. Tablet w osłonie wstawia się do stacji ładujących T30 bez podkładki. Osłona jest potrzebna do zamocowania linki rysika: [prostej (626010004)](/produkt/bluebird-626010004) albo [spiralnej (19346)](/produkt/bluebird-19346).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -1049,7 +1049,7 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoTitle": "Szkło ochronne Bluebird T30 i T10 — 624010038",
     "seoDescription": "Szkło ochronne Bluebird T30 i T10 (624010038): szkło hartowane z powłoką przeciw odciskom palców do ekranów tabletów T30 i T10.",
     "shortDescription": "Szkło ochronne Bluebird T30 i T10 — szkło hartowane z powłoką przeciw odciskom palców, wspólne dla obu tabletów. PN 624010038.",
-    "description": "Szkło ochronne z hartowanego szkła nakleja się na ekran tabletu [Bluebird T30](/produkt/bluebird-t30) albo [Bluebird T10](/produkt/bluebird-t10). Chroni wyświetlacz przed zarysowaniami i częściowo przed skutkami drobnych uderzeń. Powłoka ogranicza widoczność odcisków palców. Szkło nie zastępuje osłony rugged boot, która chroni obudowę T30 przy upadkach. Oba tablety korzystają z tego samego numeru katalogowego.",
+    "description": "Szkło ochronne z hartowanego szkła nakleja się na ekran tabletu [Bluebird T30](/produkt/bluebird-t30) albo [Bluebird T10](/produkt/bluebird-t10). Częściowo chroni wyświetlacz przed skutkami drobnych uderzeń i upadków. Powłoka ogranicza widoczność odcisków palców. Szkło nie zastępuje osłony rugged boot, która chroni obudowę T30 przy upadkach. Oba tablety korzystają z tego samego numeru katalogowego.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
