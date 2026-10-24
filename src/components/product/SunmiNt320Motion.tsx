@@ -3,23 +3,24 @@
 import { useEffect, useRef, useState } from 'react'
 import s from './SunmiNt320Story.module.css'
 
-export function Nt320Animation({ name, poster, label }: { name: string; poster: string; label: string }) {
+export function Nt320Animation({ name, poster, label, loop = true }: { name: string; poster: string; label: string; loop?: boolean }) {
   const ref = useRef<HTMLVideoElement>(null)
   const [paused, setPaused] = useState(false)
+  const [ended, setEnded] = useState(false)
   useEffect(() => {
     const video = ref.current
     if (!video) return
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)')
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !paused && !preference.matches) {
+      if (entry.isIntersecting && !paused && !ended && !preference.matches) {
         video.src ||= '/images/sunmi-nt320/' + name + '.mp4'
         video.play().catch(() => {})
       } else video.pause()
     }, { threshold: 0.1 })
     observer.observe(video)
     return () => { observer.disconnect(); video.pause() }
-  }, [name, paused])
-  return <div className={s.motion}><video ref={ref} muted loop playsInline preload="none" poster={'/images/sunmi-nt320/' + poster + '.webp'} aria-label={label} /><button type="button" onClick={() => setPaused(!paused)} aria-label={(paused ? 'Wznów animację: ' : 'Wstrzymaj animację: ') + label}>{paused ? '▶ Odtwórz' : 'Ⅱ Pauza'}</button></div>
+  }, [name, paused, ended])
+  return <div className={s.motion}><video ref={ref} muted loop={loop} onEnded={() => setEnded(true)} playsInline preload="none" poster={'/images/sunmi-nt320/' + poster + '.webp'} aria-label={label} />{!ended && <button type="button" onClick={() => setPaused(!paused)} aria-label={(paused ? 'Wznów animację: ' : 'Wstrzymaj animację: ') + label}>{paused ? '▶ Odtwórz' : 'Ⅱ Pauza'}</button>}</div>
 }
 
 export function Nt320MotionTabs({ id, items }: { id: string; items: { title: string; name: string; poster: string; text: string }[] }) {
