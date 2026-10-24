@@ -85,7 +85,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
   comparisons: [
     {
       title: 'ZD510-HC czy drukarka biurkowa HC do opasek?',
-      verdict: 'ZD510-HC do szybkiej wymiany opasek bez kontaktu z nośnikiem; drukarka biurkowa HC, gdy jedno urządzenie ma drukować opaski i etykiety.',
+      verdict: 'ZD510-HC do opasek z kartridżów z automatyczną kalibracją; drukarka biurkowa HC, gdy jedno urządzenie ma drukować opaski i etykiety.',
       content: '[ZD510-HC](/produkt/zebra-zd510-hc) drukuje opaski z kartridżów Z-Band. Kartridż wkłada się od góry, a chip umożliwia automatyczną kalibrację i ustawienie prędkości druku. Drukarki biurkowe HC, np. [ZD411-HC](/produkt/zebra-zd411-hc), drukują opaski z rolki oraz etykiety, ale wymagają założenia rolki nośnika.',
     },
     {
@@ -94,7 +94,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
     },
     {
       title: 'ZD421-HC czy ZD621-HC?',
-      content: 'Oba modele drukują etykiety o szerokości do 108 mm, termicznie lub termotransferowo. [ZD621-HC](/produkt/zebra-zd621-hc) drukuje z prędkością do 203 mm/s, ma kolorowy ekran dotykowy 4,3 cala oraz w standardzie Ethernet i RS-232. Do wersji termicznej jest dostępna zamykana na klucz szafka na nośnik. [ZD421-HC](/produkt/zebra-zd421-hc) drukuje z prędkością do 152 mm/s i ma w standardzie USB oraz USB Host. Termotransferowy ZD421-HC występuje w wersji na taśmę w rolce 300 m albo w kasecie 74 m.',
+      content: 'Oba modele drukują etykiety o szerokości do 108 mm, termicznie lub termotransferowo. [ZD621-HC](/produkt/zebra-zd621-hc) drukuje z prędkością do 203 mm/s, ma kolorowy ekran dotykowy 4,3 cala oraz w standardzie Ethernet i RS-232. Do wersji termicznej jest dostępna zamykana na klucz szafka na nośnik. [ZD421-HC](/produkt/zebra-zd421-hc) drukuje z prędkością do 152 mm/s i ma w standardzie USB oraz USB Host. Termotransferowy ZD421-HC występuje w wersji na taśmę w rolce (74 m lub 300 m) albo na kasetę z taśmą 74 m.',
     },
     {
       title: 'ZQ610 Plus-HC czy ZQ620 Plus-HC?',

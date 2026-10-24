@@ -79,7 +79,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     { name: 'Wilgotność', value: 'Praca: 10–90%, przechowywanie: 5–95% (bez kondensacji)' },
     { name: 'Zgodność z normami', value: 'IEC 60950-1, IEC 62368-1, EN55022 klasa B, EN55024, EN55035, EN 300 328, EN 301 893, EN 62311, CE; ENERGY STAR' },
     { name: 'W zestawie', value: 'Drukarka, zasilacz z certyfikatem IEC 60601-1, przewód zasilający, przewód USB, skrócona instrukcja, informacje o przepisach' },
-    { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
+    { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
   ],
   applications: [
     'Etykiety przy pobieraniu próbek',
@@ -153,7 +153,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     },
     {
       question: 'Jak czyścić obudowę ZD411-HC?',
-      answer: 'Obudowa jest wykonana z tworzyw przygotowanych na środki odkażające, a przyciski mają uszczelniony panel. Tworzywo jest odporne na UV, więc drukarkę można włączyć do procedur czyszczenia z użyciem UV. Środek i sposób czyszczenia dobierz według instrukcji obsługi drukarki i procedur placówki.',
+      answer: 'Obudowa jest wykonana z tworzyw przygotowanych na środki odkażające, a przyciski mają uszczelniony panel. Tworzywo jest odporne na UV, więc drukarkę można włączyć do procedur czyszczenia z użyciem UV. Środek i sposób czyszczenia należy dobrać według instrukcji obsługi drukarki i procedur placówki.',
     },
     {
       question: 'Który wariant ma Ethernet, a który Wi-Fi?',
@@ -262,7 +262,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     { name: 'Wilgotność', value: 'Praca: 10–90%, przechowywanie: 5–95% (bez kondensacji)' },
     { name: 'Zgodność z normami', value: 'IEC 60950-1, IEC 62368-1, EN55022 klasa B, EN55024, EN55035, EN 300 328, EN 301 893, EN 62311, CE; ENERGY STAR' },
     { name: 'W zestawie', value: 'Drukarka, zasilacz z certyfikatem IEC 60601-1, przewód zasilający, przewód USB, skrócona instrukcja, informacje o przepisach; w wersji termotransferowej także puste gilze odbiorcze taśmy 25,4 i 12,7 mm oraz 2 adaptery gilzy taśmy 300 m innych producentów' },
-    { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
+    { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
   ],
   applications: [
     'Etykiety recept',
@@ -406,7 +406,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     },
     {
       question: 'Czy ZD421-HC zastąpi ZD420-HC lub GK420?',
-      answer: 'Tak. ZD421-HC jest następcą modeli ZD420-HC, GK420 i GT800. Obsługa języków ZPL i EPL pozwala zachować dotychczasowe formaty etykiet, a narzędzie Virtual Devices z pakietu Print DNA emuluje języki drukarek innych marek. ZD421-HC ma o 30% większą moc obliczeniową niż seria ZD420 i o 700% większą niż seria GK. Przed wymianą sprawdź szablony etykiet i sterownik w systemie szpitalnym.',
+      answer: 'Tak. ZD421-HC jest następcą modeli ZD420-HC, GK420 i GT800. Obsługa języków ZPL i EPL pozwala zachować dotychczasowe formaty etykiet, a narzędzie Virtual Devices z pakietu Print DNA emuluje języki drukarek innych marek. ZD421-HC ma o 30% większą moc obliczeniową niż seria ZD420 i o 700% większą niż seria GK. Przed wymianą należy sprawdzić szablony etykiet i sterownik w systemie szpitalnym.',
     },
     {
       question: 'Jaką głowicę zamówić do ZD421-HC?',
@@ -422,7 +422,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     },
     {
       question: 'Jaka gwarancja obejmuje ZD421-HC?',
-      answer: 'Gwarancja Zebra na ZD421-HC kupioną w EMEA po 1 kwietnia 2024 r. trwa 36 miesięcy. Dla głowicy obowiązuje limit roku albo miliona cali wydruku; decyduje warunek spełniony jako pierwszy. Limit dotyczy długości wydruku, a nie liczby etykiet. Ochronę można rozszerzyć kontraktem Zebra OneCare.',
+      answer: 'Dla ZD421-HC kupionej w regionie EMEA po 1.04.2024 r. Zebra przewiduje 36 miesięcy gwarancji. Dla głowicy obowiązuje limit roku albo miliona cali wydruku; decyduje warunek spełniony jako pierwszy. Limit dotyczy długości wydruku, a nie liczby etykiet. Ochronę można rozszerzyć kontraktem Zebra OneCare.',
     },
   ],
   downloads: [

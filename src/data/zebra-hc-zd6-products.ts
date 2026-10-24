@@ -12,7 +12,7 @@ export const zebraHcZd6Products: Product[] = [
     seoTitle: 'Zebra ZD611-HC — 2-calowa drukarka etykiet dla szpitali',
     seoDescription: 'Drukarka etykiet Zebra ZD611-HC dla ochrony zdrowia: 2 cale, druk termiczny lub termotransferowy, 203 lub 300 dpi, Ethernet, zasilacz IEC 60601-1. Drukarka biurkowa Zebra ZD611-HC, drukarka termiczna Zebra ZD611d-HC, drukarka termotransferowa Zebra ZD611t-HC, ZD611-HC Zebra, drukarka Zebra do szpitala. PN: ZD6AH22-D0EE00EZ, ZD6AH22-D1EE00EZ, ZD6AH22-D2EE00EZ, ZD6AH22-T0EE00EZ, ZD6AH23-D0EE00EZ, ZD6AH23-T0EE00EZ.',
     shortDescription: 'Zebra ZD611-HC — 2-calowa drukarka biurkowa dla placówek medycznych: etykiety 15–60 mm, druk do 203 mm/s, Ethernet w standardzie, uszczelnione przyciski i zasilacz IEC 60601-1.',
-    description: `Zebra ZD611-HC to 2-calowa drukarka biurkowa z serii ZD600, przygotowana do pracy w szpitalach i przychodniach. Tworzywo białej obudowy jest odporne na środki dezynfekcyjne, a uszczelnione przyciski ułatwiają czyszczenie. Obudowę można czyścić także promieniami UV. Dołączony zasilacz ma certyfikat IEC 60601-1.
+    description: `Zebra ZD611-HC to 2-calowa drukarka biurkowa z serii ZD600, przygotowana do pracy w szpitalach i przychodniach. Tworzywo białej obudowy jest odporne na środki dezynfekcyjne, a uszczelnione przyciski ułatwiają czyszczenie. Obudowa jest odporna na promieniowanie UV i nadaje się do procedur czyszczenia z użyciem UV. Dołączony zasilacz ma certyfikat IEC 60601-1.
 
 Drukarka przyjmuje materiał o szerokości 15–60 mm: etykiety z rolki lub ze składanki, materiał ciągły, kartoniki i opaski na rękę. Wersja 203 dpi drukuje z prędkością do 203 mm/s, a wersja 300 dpi do 152 mm/s. Ruchomy czujnik materiału pozwala stosować etykiety z przerwą lub z czarnym znacznikiem.
 
@@ -83,7 +83,7 @@ Każda konfiguracja ma Ethernet, USB 2.0 i USB Host. Moduł Wi-Fi 802.11ac z Blu
       { name: 'Wilgotność', value: 'Praca: 10–90%, przechowywanie: 5–95% (bez kondensacji)' },
       { name: 'W zestawie', value: 'Drukarka, zasilacz, przewód zasilający, przewód USB, skrócona instrukcja, informacje prawne; w wersji termotransferowej pusta gilza odbiorcza taśmy 12,7 mm' },
       { name: 'Zgodność z normami', value: 'IEC 60950-1, IEC 62368-1, EN 55022 klasa B, EN 55024, EN 55035, EN 61000-3-2, EN 61000-3-3, EN 300 328, EN 301 893, EN 62311, oznakowanie CE; RoHS 2011/65/UE z poprawką 2015/863, REACH SVHC 1907/2006' },
-      { name: 'Gwarancja', value: 'Co najmniej 2 lata od daty wysyłki; warunki zależą od regionu' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
     ],
     applications: [
       'Etykiety na próbki pobierane od pacjentów',
@@ -161,7 +161,7 @@ Każda konfiguracja ma Ethernet, USB 2.0 i USB Host. Moduł Wi-Fi 802.11ac z Blu
     faq: [
       {
         question: 'Czym Zebra ZD611-HC różni się od zwykłej ZD611?',
-        answer: 'Wersja HC różni się wykonaniem obudowy i zasilaniem. Obudowa jest biała, a jej tworzywo jest przystosowane do odkażania. Panel przycisków jest szczelny. Odporność na UV pozwala stosować dezynfekcję promieniami UV. Drukarka jest dostarczana z zasilaczem klasy medycznej zgodnym z IEC 60601-1.',
+        answer: 'Wersja HC różni się wykonaniem obudowy i zasilaniem. Obudowa jest biała, a jej tworzywo jest przystosowane do odkażania. Panel przycisków jest szczelny. Dzięki odporności na UV drukarkę można objąć procedurami czyszczenia z zastosowaniem UV. Drukarka jest dostarczana z zasilaczem klasy medycznej zgodnym z IEC 60601-1.',
       },
       {
         question: 'Która wersja ZD611-HC ma ekran dotykowy?',
@@ -202,7 +202,7 @@ Każda konfiguracja ma Ethernet, USB 2.0 i USB Host. Moduł Wi-Fi 802.11ac z Blu
     seoTitle: 'Zebra ZD621-HC — 4-calowa drukarka etykiet dla szpitali',
     seoDescription: 'Szpitalna drukarka etykiet Zebra ZD621-HC: 4 cale, kolorowy ekran dotykowy 4,3", wersja termiczna ZD621d-HC i termotransferowa ZD621t-HC, rozdzielczość 203/300 dpi, Ethernet i RS-232 w standardzie, zasilacz zgodny z IEC 60601-1. Drukarka etykiet Zebra ZD621-HC, drukarka biurkowa Zebra ZD621-HC, drukarka Zebra dla szpitali, ZD621-HC Zebra. PN: ZD6AH42-D0EF00EZ, ZD6AH43-D0EF00EZ, ZD6AH42-30EF00EZ, ZD6AH43-30EF00EZ, ZD6AH43-30EL02EZ.',
     shortDescription: 'Zebra ZD621-HC — 4-calowa drukarka biurkowa dla ochrony zdrowia: kolorowy ekran dotykowy 4,3 cala, druk do 203 mm/s, Ethernet i RS-232, tworzywa przystosowane do dezynfekcji i czyszczenia UV.',
-    description: `Zebra ZD621-HC to 4-calowa drukarka biurkowa przeznaczona dla ochrony zdrowia. Jest następcą serii ZD620 i ma o 30% większą moc niż drukarki ZD620. Służy do druku etykiet na leki wydawane na receptę, próbki laboratoryjne, worki z krwią i płynami infuzyjnymi, dokumentację pacjenta i sprzęt oraz do druku opasek identyfikacyjnych.
+    description: `Zebra ZD621-HC to 4-calowa drukarka biurkowa przeznaczona dla ochrony zdrowia. Jest następcą serii ZD620 i ma o 30% większą moc obliczeniową niż drukarki ZD620. Służy do druku etykiet na leki wydawane na receptę, próbki laboratoryjne, worki z krwią i płynami infuzyjnymi, dokumentację pacjenta i sprzęt oraz do druku opasek identyfikacyjnych.
 
 Każda wersja ma w standardzie kolorowy ekran dotykowy LCD 4,3 cala oraz 3 przyciski i 5 ikon LED stanu. Na ekranie są kreatory konfiguracji, animacje rozwiązywania problemów oraz wskazówki ładowania materiału i kalibracji.
 
@@ -276,7 +276,7 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
       { name: 'Wilgotność', value: 'Praca: 10–90%, przechowywanie: 5–95% (bez kondensacji)' },
       { name: 'W zestawie', value: 'Drukarka, zasilacz, przewód zasilający, przewód USB, skrócona instrukcja, informacje prawne; w wersji termotransferowej puste gilze odbiorcze taśmy (25,4 i 12,7 mm) i 2 adaptery gilz do taśm 300 m innych producentów' },
       { name: 'Zgodność z normami', value: 'IEC 60950-1, IEC 62368-1, EN 55022 klasa B, EN 55024, EN 55035, EN 61000-3-2, EN 61000-3-3, EN 300 328, EN 301 893, EN 62311, oznakowanie CE; RoHS 2011/65/UE z poprawką 2015/863' },
-      { name: 'Gwarancja', value: 'Co najmniej 2 lata od daty wysyłki; warunki zależą od regionu' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
     ],
     applications: [
       'Etykiety leków wydawanych na receptę',
@@ -356,7 +356,7 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
     faq: [
       {
         question: 'Czy komorę materiału w ZD621-HC można zamknąć na klucz?',
-        answer: 'Tak, w wersji termicznej ZD621d-HC. Komora materiału ma mechaniczny zamek z dwoma kluczami, a tylny panel ma gniazdo zabezpieczenia Kensington. Wersja termotransferowa ZD621t-HC nie ma tego zamka.',
+        answer: 'Tak, w wersji termicznej ZD621d-HC. Komora materiału ma mechaniczny zamek z dwoma kluczami, a obudowa ma gniazdo zabezpieczenia Kensington. Wersja termotransferowa ZD621t-HC nie ma tego zamka.',
       },
       {
         question: 'Jakie taśmy barwiące pasują do ZD621t-HC?',

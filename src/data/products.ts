@@ -1418,7 +1418,7 @@ Do standardowych etykiet wysyłkowych i magazynowych zwykle wystarcza 203 dpi. T
 
 ## USB, Ethernet lub Wi-Fi
 
-W tabeli znajdziesz sześć konfiguracji: po trzy dla każdej rozdzielczości. USB sprawdzi się przy jednym komputerze. Ethernet pozwala udostępnić drukarkę w sieci przewodowej. Wersje z końcówką PN EX02EZ mają Wi-Fi 802.11ac i Bluetooth 4.1. Wyposażenie sprawdzaj po pełnym numerze produktu, bo sama nazwa ZD421t nie określa łączności.
+W tabeli znajdziesz sześć konfiguracji: po trzy dla każdej rozdzielczości. USB sprawdzi się przy jednym komputerze. Ethernet pozwala udostępnić drukarkę w sieci przewodowej. Wersje z końcówką PN EX02EZ mają fabryczny moduł 802.11ax (Wi-Fi 6) z Bluetooth 5.3. Wyposażenie sprawdzaj po pełnym numerze produktu, bo sama nazwa ZD421t nie określa łączności.
 
 Interfejsy można rozbudowywać zgodnie z wyposażeniem konkretnego egzemplarza. Do pierwszej konfiguracji służy Zebra Setup Utilities, a Link-OS udostępnia narzędzia do zarządzania drukarkami. Obsługa ZPL II i EPL2 ułatwia zastąpienie starszej GK420t lub ZD420t. Przed migracją warto sprawdzić istniejący szablon, sterownik i ustawienia nośnika.
 
@@ -1543,6 +1543,9 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
         availability: 'available',
       },
     ],
+    variantAttributeTooltips: {
+      'Wi-Fi': 'Fabrycznie zamontowany moduł Wi-Fi 6 (802.11ax) z Bluetooth 5.3 — wersje z końcówką PN EX02EZ.\n\nModuł montowany u klienta (P1112640-017C) to Wi-Fi 5 (802.11ac) z Bluetooth 4.1.',
+    },
     compatibleAccessories: [
       'zebra-labels-zselect-57x19',
       'zebra-labels-zperform-70x30',
@@ -1611,7 +1614,7 @@ Drukujesz wyłącznie na papierze termicznym? Porównaj [Zebra ZD421d](/produkt/
       { question: "Jaki program do projektowania etykiet dostanę?", answer: "Bezpłatny ZebraDesigner Essentials dla Windows wystarcza do projektu etykiety z tekstem, kodem kreskowym i logo, obsługuje też pola wpisywane przy druku, datę, czas i liczniki. Płatna wersja Professional jest potrzebna dopiero przy danych z bazy albo arkusza Excel, skryptach i kodowaniu RFID. Do druku z programu magazynowego lub ERP nie potrzeba żadnego z nich: system wysyła gotowy ZPL przez sterownik albo bezpośrednio do portu drukarki." },
       { question: "Czym różni się ZD421t od ZD421d?", answer: "ZD421t ma mechanizm taśmy barwiącej i obsługuje termotransfer oraz druk termiczny bezpośredni. ZD421d drukuje tylko termicznie. Modele różnią się także obudową i częścią akcesoriów: głowice, obcinacze czy podstawy akumulatorowe dobiera się do konkretnej wersji. Trwałość wydruku zależy od nośnika, taśmy i warunków użytkowania." },
       { question: "Kiedy wybrać 203 dpi, a kiedy 300 dpi?", answer: "203 dpi zwykle wystarcza do standardowych etykiet logistycznych i większych kodów. 300 dpi daje więcej szczegółów przy drobnym tekście oraz małych kodach QR i DataMatrix. Odczyt zależy również od projektu kodu i skanera, dlatego warto sprawdzić docelową etykietę. Maksymalna prędkość wynosi odpowiednio 152 i 102 mm/s." },
-      { question: "Który wariant ma Ethernet lub Wi-Fi?", answer: "W naszej tabeli konfiguracje ZD4A042-30EE00EZ i ZD4A043-30EE00EZ mają Ethernet. ZD4A042-30EX02EZ i ZD4A043-30EX02EZ mają Wi-Fi 802.11ac oraz Bluetooth 4.1. Wersje z końcówką EM00EZ mają USB bez tych dodatków. Pełny PN pozwala rozróżnić wyposażenie nawet wtedy, gdy nazwa modelu jest taka sama." },
+      { question: "Który wariant ma Ethernet lub Wi-Fi?", answer: "W naszej tabeli konfiguracje ZD4A042-30EE00EZ i ZD4A043-30EE00EZ mają Ethernet. ZD4A042-30EX02EZ i ZD4A043-30EX02EZ mają Wi-Fi 6 (802.11ax) oraz Bluetooth 5.3. Wersje z końcówką EM00EZ mają USB bez tych dodatków. Pełny PN pozwala rozróżnić wyposażenie nawet wtedy, gdy nazwa modelu jest taka sama." },
       { question: "Czy łączność można rozbudować później?", answer: "Seria umożliwia rozbudowę o moduły komunikacyjne. Przed zakupem sprawdź zgodność modułu z numerem i wyposażeniem drukarki. Moduł bezprzewodowy montuje się przez klapkę od spodu, zgodnie z instrukcją producenta. Do ustawienia sieci można użyć Zebra Setup Utilities." },
       { question: "Jak dobrać etykiety i taśmę?", answer: "Sprawdź materiał, klej, rozmiar etykiety, średnicę rolki i rdzenia. ZD421t przyjmuje nośniki do 112 mm szerokości oraz taśmy do 110 mm szerokości i 300 m długości. Taśma woskowa jest typowym wyborem do papieru; woskowo-żywiczna i żywiczna wymagają dopasowania do podłoża oraz oczekiwanej odporności. Więcej wskazówek: [dobór taśmy termotransferowej](/poradnik/jak-dobrac-tasme-termotransferowa)." },
       { question: "Czy można drukować bez taśmy barwiącej?", answer: "Tak, w trybie termicznym bezpośrednim, na etykietach przeznaczonych do tego druku. Taśma jest potrzebna w trybie termotransferowym. Zwykły papier do termotransferu nie zastąpi papieru termicznego po wyjęciu taśmy." },
@@ -1818,6 +1821,9 @@ Szukasz wersji z drukiem trwałym (termotransferowym)? Sprawdź [Zebra ZD421t](/
         availability: 'available',
       },
     ],
+    variantAttributeTooltips: {
+      'Wi-Fi': 'Fabrycznie zamontowany moduł Wi-Fi 6 (802.11ax) z Bluetooth 5.3 — wersje z końcówką PN EX02EZ.\n\nModuł montowany u klienta (P1112640-017C) to Wi-Fi 5 (802.11ac) z Bluetooth 4.1.',
+    },
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -2842,6 +2848,9 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         availability: 'available',
       },
     ],
+    variantAttributeTooltips: {
+      'Wi-Fi': 'Fabrycznie zamontowany moduł Wi-Fi 5 (802.11ac) z Bluetooth 4.1 — wersje z końcówką PN EW02EZ.\n\nGniazdo modułu łączności pozostaje wolne, np. na moduł Ethernet.',
+    },
     compatibleAccessories: [
       'zebra-z-perform-1000d',
       'zebra-z-select-2000d',
@@ -3092,6 +3101,9 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
         availability: 'available',
       },
     ],
+    variantAttributeTooltips: {
+      'Wi-Fi': 'Fabrycznie zamontowany moduł Wi-Fi 5 (802.11ac) z Bluetooth 4.1 — wersje z końcówką PN EW02EZ.\n\nGniazdo modułu łączności pozostaje wolne, np. na moduł Ethernet.',
+    },
     compatibleAccessories: [
       'zebra-labels-zselect-57x19',
       'zebra-labels-zselect-32x25',
@@ -4369,7 +4381,7 @@ Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. W regionie EME
       { name: 'Przechowywanie kartridży', value: 'od 0 °C do 21 °C przy wilgotności 35–50% (bez kondensacji)' },
       { name: 'Normy', value: 'ENERGY STAR; FCC część 15 B, VCCI, RCM; CE: EN 55032 klasa B, EN 55024, EN 61000-3-2, EN 61000-3-3, CISPR 32; bezpieczeństwo: CB Scheme IEC 60950-1 i IEC 62368-1, TÜV, NRTL; zasilacz: IEC 60601-1:2012' },
       { name: 'W zestawie', value: 'Drukarka, zasilacz, przewód zasilający, dokumentacja' },
-      { name: 'Gwarancja', value: 'Co najmniej 2 lata od daty wysyłki; warunki zależą od regionu' },
+      { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
     ],
     applications: [
       'Opaski identyfikacyjne dla pacjentów przy przyjęciu do szpitala',
@@ -4392,15 +4404,15 @@ Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. W regionie EME
       },
       {
         question: 'Jak ładuje się opaski do ZD510-HC?',
-        answer: 'Kartridż z opaskami wkłada się do drukarki od góry. Personel nie dotyka opasek podczas ładowania ani wyjmowania kartridża. Chip w kartridżu umożliwia automatyczną kalibrację, a drukarka ustawia prędkość druku według typu opasek. Nad drukarką należy zostawić 153 mm wolnego miejsca.',
+        answer: 'Kartridż z opaskami wkłada się do drukarki od góry. Chip w kartridżu umożliwia automatyczną kalibrację, a drukarka ustawia prędkość druku według typu opasek. Nad drukarką należy zostawić 153 mm wolnego miejsca.',
       },
       {
         question: 'Czy drukarkę ZD510-HC można dezynfekować?',
-        answer: 'Tak. Obudowa ZD510-HC jest wykonana z tworzyw odpornych na środki dezynfekcyjne i promieniowanie UV, a przyciski są uszczelnione. Środki i metodę dezynfekcji należy dobrać według przewodnika Zebry „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”. Złączy, styków czytnika chipu ani wnętrza drukarki nie czyści się wilgotnymi materiałami.',
+        answer: 'Tak. Obudowa ZD510-HC jest wykonana z tworzyw odpornych na środki dezynfekcyjne i promieniowanie UV, a przyciski są uszczelnione. Środki i metodę dezynfekcji należy dobrać według przewodnika Zebry „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”. Złączy ani wnętrza drukarki nie czyści się materiałami zwilżonymi roztworem czyszczącym.',
       },
       {
         question: 'Czy ZD510-HC ma Wi-Fi albo Bluetooth?',
-        answer: 'Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. Moduł Wi-Fi 802.11ac z Bluetooth 4.1 jest montowany fabrycznie w innych wersjach drukarki. W regionie EMEA drukarka nie ma Bluetooth Low Energy ani znacznika NFC Print Touch.',
+        answer: 'Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. Dwuradiowy moduł 802.11ac i Bluetooth 4.1 Zebra montuje fabrycznie w innych wersjach drukarki. W regionie EMEA drukarka nie ma Bluetooth Low Energy ani znacznika NFC Print Touch.',
       },
       {
         question: 'Czy ZD510-HC może zastąpić drukarkę Zebra HC100?',
@@ -67572,17 +67584,18 @@ const zd510Accessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'P1100266-003' },
-      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 pkt/mm)' },
       { name: 'Typ', value: 'Głowica drukująca (printhead)' },
       { name: 'Kompatybilność', value: 'Zebra ZD510-HC' },
       { name: 'Wymiana', value: 'Bez narzędzi (tool-less)' },
+      { name: 'Gwarancja', value: 'Rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
     ],
     applications: [
       'Wymiana zużytej głowicy w drukarce ZD510-HC',
       'Zapasowa głowica do szpitalnej drukarki opasek',
     ],
     compatibleAccessories: [],
-    relatedAccessories: [],
+    relatedAccessories: ['zebra-zd510-hc'],
     downloads: [],
     createdAt: '2026-02-14',
   },
@@ -67610,10 +67623,10 @@ const zd510Accessories: Product[] = [
     ],
     applications: [
       'Wymiana zużytego wałka w drukarce ZD510-HC',
-      'Poprawa jakości druku na opaskach',
+      'Zapasowy wałek do szpitalnej drukarki opasek',
     ],
     compatibleAccessories: [],
-    relatedAccessories: [],
+    relatedAccessories: ['zebra-zd510-hc'],
     downloads: [],
     createdAt: '2026-02-14',
   },
