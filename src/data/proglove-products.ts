@@ -11,7 +11,7 @@ export const progloveProducts: Product[] = [
     "seoTitle": "ProGlove LEO — skaner noszony na dłoni, 35 g, ładowanie 1 h",
     "seoDescription": "Skaner noszony ProGlove LEO: 35 g, kody 1D i 2D z bliska, ok. 4000 skanów, ładowanie 1 h. Skaner na dłoń LEO ProGlove, PN: M009.",
     "shortDescription": "ProGlove LEO — wejściowy i najlżejszy skaner noszony ProGlove: 35 g, odczyt 1D/2D z bliska, pełne ładowanie w 1 godzinę.",
-    "description": "ProGlove LEO waży 35 g i jest najlżejszym skanerem noszonym w ofercie ProGlove. Pełne ładowanie baterii 670 mAh trwa godzinę, czyli o połowę krócej niż w modelach MARK, a jedno ładowanie wystarcza na ok. 4000 skanów. To model wejściowy, dostępny w jednej wersji: Standard Range.\n\nLEO jest przeznaczony do odczytów blisko dłoni: kompletacji, pakowania, przyjęć i wysyłek, obsługi zwrotów, inwentaryzacji oraz realizacji zamówień e-commerce i click & collect. Zielona dioda celownicza wskazuje kod, a czytnik dekoduje kody 1D i 2D, m.in. QR i Data Matrix; Code 39 o module 20 mil odczytuje z odległości do 66 cm. Każdy odczyt potwierdzają światło, dźwięk i wibracja.\n\nObudowa 50 × 45 × 17 mm ma klasę szczelności IP43. Skaner znosi kilka upadków z 2 m na beton i 2000 cykli przewracania z pół metra, a pracuje w temperaturze 0–50°C. Kody przekazuje do urządzenia z Androidem lub iOS w profilu Bluetooth HID albo przez aplikację INSIGHT Mobile; do komputera trafiają przez ProGlove Gateway podłączony do portu USB.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "ProGlove LEO waży 35 g i jest najlżejszym skanerem noszonym w ofercie ProGlove. Pełne ładowanie baterii 670 mAh trwa godzinę, czyli o połowę krócej niż w modelach MARK, a jedno ładowanie wystarcza na ok. 4000 skanów. To model wejściowy, dostępny w jednej wersji: Standard Range.\n\nLEO jest przeznaczony do odczytów blisko dłoni: kompletacji, pakowania, przyjęć i wysyłek, obsługi zwrotów, inwentaryzacji oraz realizacji zamówień e-commerce i click & collect. Zielona dioda celownicza wskazuje kod, a czytnik dekoduje kody 1D i 2D, m.in. QR i Data Matrix; Code 39 o module 20 mil odczytuje z odległości do 66 cm. Każdy odczyt potwierdzają światło, dźwięk i wibracja.\n\nObudowa 50 × 45 × 17 mm ma klasę szczelności IP43. Skaner znosi kilka upadków z 2 m na beton i 2000 cykli przewracania z pół metra, a pracuje w temperaturze 0–50°C. Kody przekazuje do urządzenia z Androidem lub iOS w profilu Bluetooth HID. Na Androidzie może też pracować z aplikacją INSIGHT Mobile, a na iOS z ProGlove SDK w aplikacji firmy; do komputera kody trafiają przez ProGlove Gateway podłączony do portu USB.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -56,7 +56,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Połączenie z systemem",
-        "value": "Android i iOS: profil HID albo INSIGHT Mobile; komputer: USB przez ProGlove Gateway"
+        "value": "Android i iOS: profil HID; Android: także INSIGHT Mobile; iOS: także ProGlove SDK; komputer: USB przez ProGlove Gateway"
       },
       {
         "name": "Spust",
@@ -165,7 +165,7 @@ export const progloveProducts: Product[] = [
     "faq": [
       {
         "question": "Czym LEO różni się od MARK Basic?",
-        "answer": "LEO jest lżejszy (35 g wobec 39–40 g) i ładuje się w 1 godzinę zamiast 2. Ma tylko zasięg Standard Range i baterię na ok. 4000 skanów. [MARK Basic](/produkt/proglove-mark-basic) ma wersję Multi Range do ok. 250 cm, baterię na ok. 8000 skanów i obudowę IP54 zamiast IP43."
+        "answer": "LEO jest lżejszy (35 g wobec 39–40 g) i ładuje się w 1 godzinę zamiast 2. Ma tylko zasięg Standard Range i baterię na ok. 4000 skanów. [MARK Basic](/produkt/proglove-mark-basic) ma wersję Multi Range z zakresem roboczym ok. 10–250 cm, baterię na ok. 8000 skanów i obudowę IP54 zamiast IP43."
       },
       {
         "question": "Czy LEO działa bez dodatkowej aplikacji?",
@@ -197,9 +197,9 @@ export const progloveProducts: Product[] = [
     "name": "ProGlove MARK Basic",
     "seoH1": "ProGlove MARK Basic",
     "seoTitle": "ProGlove MARK Basic — skaner noszony Multi Range lub Standard Range",
-    "seoDescription": "ProGlove MARK Basic: skaner noszony na dłoni, 39 g, IP54, Multi Range 10–250 cm lub Standard Range, ok. 8000 skanów. PN: M011, M007.",
-    "shortDescription": "ProGlove MARK Basic — podstawowy skaner rodziny MARK do codziennego, powtarzalnego skanowania; wersja Multi Range do 250 cm albo Standard Range do 90 cm.",
-    "description": "ProGlove MARK Basic to podstawowy model rodziny MARK w dwóch wersjach zasięgu. Multi Range (M011) z laserowym celownikiem 520 nm sam dopasowuje się do odległości od 10 do 250 cm, dlatego odczytuje zarówno etykiety na kartonach, jak i na regałach. Standard Range (M007) z celownikiem LED pracuje w zakresie 10–90 cm i jest szybszy przy częstych odczytach z bliska: przy pakowaniu, inwentaryzacji i przy kasie. Skaner służy do rutynowego skanowania w magazynie, pakowni i na linii montażowej, m.in. przy rozkładaniu towaru, paletyzacji i kompletacji.\n\nMARK Basic paruje się przez Bluetooth Low Energy z terminalem, tabletem lub smartfonem z Androidem albo iOS i przekazuje kody w profilu HID lub przez aplikację INSIGHT Mobile. Z komputerem łączy się przez ProGlove Gateway na USB. Szara obudowa ma 50 × 45 × 17 mm (Standard Range: 16 mm grubości) i waży 39–40 g. Klasa IP54 chroni ją przed pyłem i bryzgami wody; MARK Basic przechodzi test kilku upadków na beton z 2 m i 2000 przewrotów z 0,5 m. Zakres temperatury pracy to 0–50°C. Akumulator 670 mAh wystarcza na ok. 8000 odczytów i ładuje się w stacji przez 2 godziny.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "seoDescription": "ProGlove MARK Basic: skaner noszony na dłoni, 39–40 g, IP54, Multi Range 10–250 cm lub Standard Range, ok. 8000 skanów. PN: M011, M007.",
+    "shortDescription": "ProGlove MARK Basic — podstawowy skaner rodziny MARK do codziennego, powtarzalnego skanowania; wersja Multi Range z zakresem roboczym 10–250 cm albo Standard Range 10–90 cm.",
+    "description": "ProGlove MARK Basic to podstawowy model rodziny MARK w dwóch wersjach zasięgu. Multi Range (M011) z laserowym celownikiem 520 nm sam dopasowuje się do odległości od 10 do 250 cm, dlatego odczytuje zarówno etykiety na kartonach, jak i na regałach. Standard Range (M007) z celownikiem LED pracuje w zakresie 10–90 cm i jest szybszy przy częstych odczytach z bliska: przy pakowaniu, inwentaryzacji i przy kasie. Skaner służy do rutynowego skanowania w magazynie, pakowni i na linii montażowej, m.in. przy rozkładaniu towaru, paletyzacji i kompletacji.\n\nMARK Basic paruje się przez Bluetooth Low Energy z terminalem, tabletem lub smartfonem z Androidem albo iOS i przekazuje kody w profilu HID; na Androidzie także przez aplikację INSIGHT Mobile, a na iOS przez ProGlove SDK. Z komputerem łączy się przez ProGlove Gateway na USB. Szara obudowa ma 50 × 45 × 17 mm (Standard Range: 16 mm grubości) i waży 39–40 g. Klasa IP54 chroni ją przed pyłem i bryzgami wody; MARK Basic przechodzi test kilku upadków na beton z 2 m i 2000 przewrotów z 0,5 m. Zakres temperatury pracy to 0–50°C. Akumulator 670 mAh wystarcza na ok. 8000 odczytów i ładuje się w stacji przez 2 godziny.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -230,7 +230,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Zasięg odczytu",
-        "value": "Multi Range: ok. 10–250 cm (np. Code 128 15 mil 18–165 cm); Standard Range: ok. 10–90 cm (np. Code 39 20 mil 4–92 cm)"
+        "value": "Multi Range: zakres roboczy ok. 10–250 cm; np. Code 128 15 mil 18–165 cm, Code 39 100 mil do ok. 5,8 m. Standard Range: zakres roboczy ok. 10–90 cm; np. Code 39 20 mil 4–92 cm"
       },
       {
         "name": "Odczyt kodów",
@@ -246,7 +246,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Połączenie z systemem",
-        "value": "Android i iOS: profil HID albo INSIGHT Mobile; komputer: USB przez ProGlove Gateway"
+        "value": "Android i iOS: profil HID; Android: także INSIGHT Mobile; iOS: także ProGlove SDK; komputer: USB przez ProGlove Gateway"
       },
       {
         "name": "Spust",
@@ -372,7 +372,7 @@ export const progloveProducts: Product[] = [
     "faq": [
       {
         "question": "Którą wersję MARK Basic wybrać: Multi Range czy Standard Range?",
-        "answer": "Multi Range odczytuje kody w zakresie ok. 10–250 cm, więc sprawdza się w magazynie z etykietami na regałach. Standard Range pracuje w zakresie ok. 10–90 cm i jest przeznaczony do szybkich odczytów z bliska: pakowania, inwentaryzacji i handlu."
+        "answer": "Multi Range pracuje w zakresie roboczym ok. 10–250 cm, więc sprawdza się w magazynie z etykietami na regałach. Standard Range pracuje w zakresie ok. 10–90 cm i jest przeznaczony do szybkich odczytów z bliska: pakowania, inwentaryzacji i handlu."
       },
       {
         "question": "Czym MARK Basic różni się od MARK 2?",
@@ -384,7 +384,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Ile skanów wykona MARK Basic na baterii?",
-        "answer": "Jedno ładowanie wystarcza na ok. 8000 odczytów; wynik zmienia się z konfiguracją i otoczeniem. Przy pracy wielozmianowej producent wskazuje, że czasem potrzebne są dwa skanery na stanowisko, używane na zmianę."
+        "answer": "Jedno ładowanie wystarcza na ok. 8000 odczytów; wynik zmienia się z konfiguracją i otoczeniem. Przy pracy wielozmianowej czasem potrzebne są dwa skanery na stanowisko, używane na zmianę."
       },
       {
         "question": "Co jest w opakowaniu MARK Basic?",
@@ -406,7 +406,7 @@ export const progloveProducts: Product[] = [
     "seoTitle": "ProGlove MARK 2 — skaner noszony na dłoni, ok. 12 000 skanów",
     "seoDescription": "Skaner noszony ProGlove MARK 2: Standard Range lub Mid Range, ok. 12 000 skanów, praca od −20°C. MARK 2 ProGlove na dłoń, PN: M004-EU, M003-EU.",
     "shortDescription": "ProGlove MARK 2 — najczęściej używany skaner noszony ProGlove: bateria na ok. 12 000 skanów, praca od −20°C, wersje Standard Range i Mid Range.",
-    "description": "ProGlove MARK 2 to pierwotny model rodziny MARK i najczęściej używany skaner noszony ProGlove. Pomarańczowa obudowa 50 × 45 × 16 mm waży 40 g i jest cieńsza niż palec, więc skaner nie przeszkadza przy pracy w ciasnych miejscach, np. przy montażu.\n\nOd MARK Basic odróżniają go dwie cechy: akumulator 670 mAh na ok. 12 000 skanów, czyli na pracę wielozmianową, oraz praca w temperaturze od −20 do +50°C, także w chłodni. Ładowanie w stacji trwa 2 godziny. Obudowa IP54 jest odporna na kilkukrotne upadki z wysokości 2 m na beton, a każdy odczyt sygnalizują dioda, dźwięk i wibracja.\n\nWersja Mid Range (M003-EU) z celownikiem laserowym służy do wymagających zadań logistycznych; kod Code 39 20 mil czyta w zakresie 5–137 cm. Wersja Standard Range (M004-EU) odczytuje kody blisko dłoni, do ok. 90 cm, i sprawdza się przy montażu i w produkcji.\n\nMARK 2 komunikuje się z Androidem i iOS w standardzie Bluetooth Low Energy, z komputerem przez ProGlove Gateway na USB, a wersje EU mają też radio 868 MHz do ProGlove Access Point.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "ProGlove MARK 2 to klasyczny model serii MARK i najczęściej używany skaner noszony ProGlove. Pomarańczowa obudowa 50 × 45 × 16 mm waży 40 g i jest cieńsza niż palec, więc skaner nie przeszkadza przy pracy w ciasnych miejscach, np. przy montażu.\n\nOd MARK Basic odróżniają go przede wszystkim akumulator 670 mAh na ok. 12 000 skanów, czyli na pracę wielozmianową, oraz praca w temperaturze od −20 do +50°C, także w chłodni. Ładowanie w stacji trwa 2 godziny. Obudowa IP54 jest odporna na kilkukrotne upadki z wysokości 2 m na beton, a każdy odczyt sygnalizują dioda, dźwięk i wibracja.\n\nWersja Mid Range (M003-EU) z celownikiem laserowym służy do wymagających zadań logistycznych; kod Code 39 20 mil czyta w zakresie 5–137 cm. Wersja Standard Range (M004-EU) odczytuje kody blisko dłoni, do ok. 90 cm, i sprawdza się przy montażu i w produkcji.\n\nMARK 2 komunikuje się z Androidem i iOS w standardzie Bluetooth Low Energy, z komputerem przez ProGlove Gateway na USB, a wersje EU mają też radio 868 MHz do ProGlove Access Point.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -453,7 +453,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Połączenie z systemem",
-        "value": "Android i iOS: profil HID albo INSIGHT Mobile; komputer: USB przez ProGlove Gateway"
+        "value": "Android i iOS: profil HID; Android: także INSIGHT Mobile; iOS: także ProGlove SDK; komputer: USB przez ProGlove Gateway"
       },
       {
         "name": "Spust",
@@ -501,7 +501,7 @@ export const progloveProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kompletacja i sortowanie w centrach logistycznych",
+      "Kompletacja i paletyzacja w centrach logistycznych",
       "Montaż i produkcja z odczytem z bliska",
       "Kontrola jakości na linii",
       "Praca w temperaturze do −20°C"
@@ -579,7 +579,7 @@ export const progloveProducts: Product[] = [
     "faq": [
       {
         "question": "Czym różni się MARK 2 Standard Range od Mid Range?",
-        "answer": "Standard Range ma celownik LED i odczytuje kody z bliska, np. UPC-A z 4–58 cm. Mid Range ma laser klasy 2 i odczytuje dalej, np. UPC-A z 6–97 cm, a duży Code 39 100 mil do ok. 4,4 m. Producent zaleca Mid Range do logistyki, a Standard Range do montażu."
+        "answer": "Standard Range ma celownik LED i odczytuje kody z bliska, np. UPC-A z 4–58 cm. Mid Range ma laser klasy 2 i odczytuje dalej, np. UPC-A z 6–97 cm, a duży Code 39 100 mil do ok. 4,4 m. Mid Range jest przeznaczony do logistyki, a Standard Range do montażu i produkcji."
       },
       {
         "question": "Do czego służy radio 868 MHz w MARK 2?",
@@ -587,7 +587,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Czy MARK 2 może pracować w chłodni?",
-        "answer": "Tak, w zakresie od −20 do +50°C. Ładowanie odbywa się w temperaturze +5 do +40°C, więc stacja powinna stać poza strefą chłodzoną. W niskiej temperaturze producent zaleca Hand Strap lub Reel, bo Index Trigger działa od −5°C."
+        "answer": "Tak, w zakresie od −20 do +50°C. Ładowanie odbywa się w temperaturze +5 do +40°C, więc stacja powinna stać poza strefą chłodzoną. W niskiej temperaturze lepszy jest Hand Strap lub Reel, bo Index Trigger działa dopiero od −5°C."
       },
       {
         "question": "Ile skanów wykona MARK 2 na jednym ładowaniu?",
@@ -595,11 +595,11 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Czy MARK 2 zastąpi skaner ręczny?",
-        "answer": "Producent przeznacza MARK 2 właśnie do zastąpienia skanerów ręcznych. Skaner na grzbiecie dłoni nie wymaga podnoszenia i odkładania, a odczyt uruchamia spust w mocowaniu. Do kodów z dużej odległości lepszy jest skaner Multi Range, np. [MARK 3](/produkt/proglove-mark-3)."
+        "answer": "Tak. MARK 2 jest przeznaczony właśnie do zastępowania skanerów ręcznych. Skaner na grzbiecie dłoni nie wymaga podnoszenia i odkładania, a odczyt uruchamia spust w mocowaniu. Do kodów z dużej odległości lepszy jest skaner Multi Range, np. [MARK 3](/produkt/proglove-mark-3)."
       },
       {
         "question": "Jakie są alternatywy dla MARK 2?",
-        "answer": "[MARK Basic](/produkt/proglove-mark-basic) oferuje wersję Multi Range czytającą od 10 do 250 cm, ale działa dopiero od 0°C. [MARK 3](/produkt/proglove-mark-3) czyta kody do 6 m i ma szczelniejszą obudowę IP65. Skanery pierścieniowe na palec to [M3 WR10](/produkt/m3-wr10) i [M3 WR15](/produkt/m3-wr15)."
+        "answer": "[MARK Basic](/produkt/proglove-mark-basic) w wersji Multi Range odczytuje kody w zakresie roboczym od 10 do 250 cm, ale działa dopiero od 0°C. [MARK 3](/produkt/proglove-mark-3) czyta kody do 6 m i ma szczelniejszą obudowę IP65. Skanery pierścieniowe na palec to [M3 WR10](/produkt/m3-wr10) i [M3 WR15](/produkt/m3-wr15)."
       }
     ],
     "createdAt": "2026-10-24",
@@ -613,7 +613,7 @@ export const progloveProducts: Product[] = [
     "seoTitle": "ProGlove MARK 3 — skaner noszony Multi Range do 6 m, IP65",
     "seoDescription": "ProGlove MARK 3: skaner noszony na dłoni, Multi Range 10 cm–6 m, IP65, praca od −20°C, ok. 12 000 skanów. Skaner MARK 3 ProGlove, PN: M010.",
     "shortDescription": "ProGlove MARK 3 — skaner noszony z silnikiem Multi Range od 10 cm do 6 m, obudową IP65 i pracą od −20°C; do magazynu, rampy i wózków widłowych.",
-    "description": "ProGlove MARK 3 ma silnik Multi Range o rozdzielczości 2688 × 1520 z zielonym celownikiem laserowym 520 nm. Zakres roboczy sięga od 10 cm do 6 m: etykietę UPC-A skaner odczytuje z 6–180 cm, a duży kod Code 39 100 mil nawet z 14 m. ProGlove przeznacza ten model do ok. 95% procesów.\n\nJeden MARK 3 zastępuje więc kilka różnych czytników: przy pracy z wózka widłowego i z pojazdu, w cross-dockingu, przy kompletacji palet, obsłudze bagażu, przyjęciach towaru, pakowaniu, sortowaniu oraz przy montażu i sekwencjonowaniu.\n\nObudowa w klasie IP65 jest pyłoszczelna i odporna na strugi wody, dlatego skaner pracuje także na zewnątrz, a w zakresie od −20 do +50°C również w chłodni. Przy masie 39 g i wymiarach 50 × 45 × 17 mm akumulator 670 mAh daje ok. 12 000 skanów, a ładowanie trwa 2 godziny. MARK 3 łączy się z Androidem i iOS przez Bluetooth Low Energy albo z komputerem przez ProGlove Gateway; z bramką zasięg radiowy wynosi do 70 m w otwartej przestrzeni.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "ProGlove MARK 3 ma silnik Multi Range o rozdzielczości 2688 × 1520 z zielonym celownikiem laserowym 520 nm. Zakres roboczy sięga od 10 cm do 6 m: etykietę UPC-A skaner odczytuje z 6–180 cm, a duży kod Code 39 100 mil nawet z 14 m. Ten model jest przeznaczony do ok. 95% procesów.\n\nJeden MARK 3 obsługuje więc wiele zastosowań: pracę z wózka widłowego i z pojazdu, cross-docking, kompletację palet, obsługę bagażu, przyjęcia towaru, pakowanie, sortowanie, montaż i sekwencjonowanie.\n\nObudowa w klasie IP65 jest pyłoszczelna i odporna na strugi wody, dlatego skaner pracuje także na zewnątrz, a w zakresie od −20 do +50°C również w chłodni. Przy masie 39 g i wymiarach 50 × 45 × 17 mm akumulator 670 mAh daje ok. 12 000 skanów, a ładowanie trwa 2 godziny. MARK 3 łączy się z Androidem i iOS przez Bluetooth Low Energy albo z komputerem przez ProGlove Gateway; z bramką zasięg radiowy wynosi do 70 m w otwartej przestrzeni.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap ProGlove, 2 × prawa i 1 × lewa ręka, 3 szt. (G011-MIX-3)](/produkt/proglove-g011-mix-3)\n- [Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. (G006-MR-3)](/produkt/proglove-g006-mr-3)\n- [Reel ProGlove ze smyczami, 2 szt. (G008-LY-2)](/produkt/proglove-g008-ly-2)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove 2-gniazdowa z zasilaczem EU (C006-EU)](/produkt/proglove-c006-eu)\n- [Stacja ładująca ProGlove 10-gniazdowa z zasilaczem (C007-INT)](/produkt/proglove-c007-int)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -659,7 +659,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Połączenie z systemem",
-        "value": "Android i iOS: profil HID albo INSIGHT Mobile; komputer: USB przez ProGlove Gateway"
+        "value": "Android i iOS: profil HID; Android: także INSIGHT Mobile; iOS: także ProGlove SDK; komputer: USB przez ProGlove Gateway"
       },
       {
         "name": "Spust",
@@ -773,7 +773,7 @@ export const progloveProducts: Product[] = [
     "faq": [
       {
         "question": "Jaki zasięg odczytu ma ProGlove MARK 3?",
-        "answer": "Zależy od wielkości kodu. Data Matrix 10 mil MARK 3 odczytuje z 6–69 cm, Code 128 15 mil z 18–183 cm, a Code 39 100 mil do 14 m. Producent podaje zakres roboczy 10 cm–6 m."
+        "answer": "Zależy od wielkości kodu. Data Matrix 10 mil MARK 3 odczytuje z 6–69 cm, Code 128 15 mil z 18–183 cm, a Code 39 100 mil do 14 m. Zakres roboczy wynosi 10 cm–6 m."
       },
       {
         "question": "Czy MARK 3 pracuje w chłodni i na zewnątrz?",
@@ -785,15 +785,15 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Jak MARK 3 łączy się z systemem?",
-        "answer": "Bezprzewodowo, przez BLE: w profilu HID z urządzeniami z Androidem i iOS albo przez aplikację INSIGHT Mobile. Z komputerem łączy się przez [ProGlove Gateway](/produkt/proglove-x001-a007) na USB. Z Gateway zasięg radiowy wynosi do 70 m w otwartej przestrzeni i 30–40 m w budynku."
+        "answer": "Bezprzewodowo, przez BLE: w profilu HID z urządzeniami z Androidem i iOS, przez aplikację INSIGHT Mobile (Android) albo przez ProGlove SDK (iOS). Komputer odbiera kody przez [ProGlove Gateway](/produkt/proglove-x001-a007), bramkę podłączaną do portu USB. Z Gateway zasięg radiowy wynosi do 70 m w otwartej przestrzeni i 30–40 m w budynku."
       },
       {
         "question": "Czy laser MARK 3 jest bezpieczny?",
-        "answer": "MARK 3 ma laser klasy 2 według EN 60825-1 i IEC 60825-1. Producent ostrzega, aby nie patrzeć bezpośrednio w wiązkę."
+        "answer": "MARK 3 ma laser klasy 2 według EN 60825-1 i IEC 60825-1. Nie należy patrzeć bezpośrednio w wiązkę."
       },
       {
         "question": "Jaka jest alternatywa dla MARK 3?",
-        "answer": "Gdy wystarczy zasięg do ok. 250 cm i praca od 0°C, tańszy jest [MARK Basic Multi Range](/produkt/proglove-mark-basic). Ten sam zasięg do 6 m, kolorowy ekran dotykowy i Wi-Fi ma [MAI](/produkt/proglove-mai)."
+        "answer": "Gdy wystarczy zakres roboczy ok. 10–250 cm i praca od 0°C, tańszy jest [MARK Basic Multi Range](/produkt/proglove-mark-basic). Ten sam zasięg do 6 m, kolorowy ekran dotykowy i Wi-Fi ma [MAI](/produkt/proglove-mai)."
       }
     ],
     "createdAt": "2026-10-24",
@@ -991,7 +991,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Jak zintegrować MARK Display z WMS lub SAP?",
-        "answer": "Producent udostępnia WebSocket API do bezpośredniej komunikacji z serwerem, np. przez ABAP Push Channels, oraz integrację z ITS Mobile i Ivanti Wavelink. Systemy terminalowe telnet można dostosować z pomocą partnerów ProGlove: StayLinked i Ivanti."
+        "answer": "MARK Display ma WebSocket API do bezpośredniej komunikacji z serwerem, np. przez ABAP Push Channels, oraz integrację z ITS Mobile i Ivanti Wavelink. Systemy terminalowe telnet można dostosować z pomocą partnerów ProGlove: StayLinked i Ivanti."
       },
       {
         "question": "Który zasięg MARK Display wybrać?",
@@ -999,7 +999,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Czy MARK Display nadaje się do chłodni?",
-        "answer": "Nie. Zakres temperatury pracy MARK Display to 0–45°C. Od −20°C działają [MARK 2](/produkt/proglove-mark-2) i [MARK 3](/produkt/proglove-mark-3), ale nie mają ekranu."
+        "answer": "Nie. Zakres temperatury pracy MARK Display to 0–45°C. Od −20°C działają [MARK 2](/produkt/proglove-mark-2) i [MARK 3](/produkt/proglove-mark-3), ale nie mają ekranu. Ekran i pracę od −10°C ma [MAI](/produkt/proglove-mai)."
       },
       {
         "question": "Jaka jest alternatywa dla MARK Display?",
@@ -1017,7 +1017,7 @@ export const progloveProducts: Product[] = [
     "seoTitle": "ProGlove MAI — skaner noszony z ekranem dotykowym i Wi-Fi 6",
     "seoDescription": "ProGlove MAI: skaner noszony z kolorowym ekranem dotykowym AMOLED 1,95″, Wi-Fi 6 i BLE 5.4, Multi Range, IP65. MAI ProGlove, PN: M020-EU.",
     "shortDescription": "ProGlove MAI — urządzenie noszone na dłoni ze skanerem Multi Range, kolorowym ekranem dotykowym 1,95″ i czterema przyciskami; pracuje przez Wi-Fi albo Bluetooth.",
-    "description": "ProGlove MAI to urządzenie noszone na grzbiecie dłoni (wearable companion), które łączy skaner Multi Range z kolorowym ekranem dotykowym AMOLED 1,95″ (410 × 502 piksele, do 900 nitów). Ekran prowadzi pracownika krok po kroku przy kompletacji, sortowaniu, uzupełnianiu i inwentaryzacji. Pozwala potwierdzić lub poprawić ilość i zgłosić wyjątek, np. pustą lokalizację. Do dyspozycji jest ponad 80 konfigurowalnych szablonów ekranu.\n\nUrządzenie pracuje samodzielnie przez Wi-Fi 6 (2,4 i 5 GHz). Przez Bluetooth 5.4 łączy się z urządzeniem z Androidem (aplikacja INSIGHT Mobile), z iOS (SDK) albo z ProGlove Gateway. Odczyt uruchamia spust w opasce Hand Strap Gen 2; skanowanie można też przypisać do jednego z czterech programowalnych przycisków lub do ekranu. Silnik Multi Range odczytuje kody z odległości od 5 cm do 6 m. Sygnalizację zapewniają cztery kolorowe diody, głośnik 85 dB(A) i wibracje, a czujniki to 9-osiowy IMU i barometr.\n\nMAI waży 68 g, ma obudowę IP65 i przetrzymuje wielokrotne upadki z 2 m oraz tysiąc przewrotów z wysokości metra. Pracuje w temperaturze od −10 do +50°C. Bateria 1250 mAh wystarcza na 1–2 zmiany, a ładowanie w stacji Gen 2 trwa ok. 130 minut.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla MAI: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap Gen 2 ProGlove do MAI, lewa i prawa ręka, 3 szt. (G020-MIX-3)](/produkt/proglove-g020-mix-3)\n- [Hand Strap Gen 2 ProGlove do MAI, prawa ręka, 10 szt. (G020-R-10)](/produkt/proglove-g020-r-10)\n- [Hand Strap Gen 2 ProGlove do MAI, lewa ręka, 10 szt. (G020-L-10)](/produkt/proglove-g020-l-10)\n\n**Wymagane dla MAI: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz EU (C021-EU)](/produkt/proglove-c021-eu)\n- [Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz INT (C021-INT)](/produkt/proglove-c021-int)\n\nMocowania i stacje do skanerów MARK i LEO nie pasują do MAI.",
+    "description": "ProGlove MAI to urządzenie noszone na grzbiecie dłoni (wearable companion), które łączy skaner Multi Range z kolorowym ekranem dotykowym AMOLED 1,95″ (410 × 502 piksele, do 900 nitów). Ekran prowadzi pracownika krok po kroku przy kompletacji, sortowaniu, uzupełnianiu i inwentaryzacji. Pozwala potwierdzić lub poprawić ilość i zgłosić wyjątek, np. pustą lokalizację. Do dyspozycji jest ponad 80 konfigurowalnych szablonów ekranu.\n\nUrządzenie pracuje samodzielnie przez Wi-Fi 6 (2,4 i 5 GHz). Przez Bluetooth 5.4 łączy się z urządzeniem z Androidem (aplikacja INSIGHT Mobile), z iOS (SDK) albo z ProGlove Gateway. Odczyt uruchamia spust w opasce Hand Strap Gen 2; skanowanie można też przypisać do jednego z czterech programowalnych przycisków lub do ekranu. Silnik Multi Range odczytuje kody z odległości od 5 cm do 6 m. Sygnalizację zapewniają cztery kolorowe diody, głośnik 85 dB(A) i wibracje, a czujniki to 9-osiowy IMU i barometr.\n\nMAI waży 68 g, ma obudowę IP65 i przetrzymuje wielokrotne upadki z 2 m oraz tysiąc przewrotów z wysokości metra. Pracuje w temperaturze od −10 do +50°C. Bateria 1250 mAh wystarcza na 1–2 zmiany przy połączeniu Bluetooth i pracy z ekranem, dotykiem i przyciskami, a ładowanie w stacji Gen 2 trwa ok. 130 minut.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla MAI: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Hand Strap Gen 2 ProGlove do MAI, lewa i prawa ręka, 3 szt. (G020-MIX-3)](/produkt/proglove-g020-mix-3)\n- [Hand Strap Gen 2 ProGlove do MAI, prawa ręka, 10 szt. (G020-R-10)](/produkt/proglove-g020-r-10)\n- [Hand Strap Gen 2 ProGlove do MAI, lewa ręka, 10 szt. (G020-L-10)](/produkt/proglove-g020-l-10)\n\n**Wymagane dla MAI: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz EU (C021-EU)](/produkt/proglove-c021-eu)\n- [Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz INT (C021-INT)](/produkt/proglove-c021-int)\n\nMocowania i stacje do skanerów MARK i LEO nie pasują do MAI.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -1071,11 +1071,11 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Zasięg radiowy",
-        "value": "Bluetooth: 75 m w otwartej przestrzeni, 30 m w budynku; Wi-Fi 2,4 GHz: 70 m / 25 m; Wi-Fi 5 GHz: 35 m / 15 m"
+        "value": "Bluetooth: 75 m w otwartej przestrzeni, 30 m w budynku; Wi-Fi 2,4 GHz: 70 m / 25 m; Wi-Fi 5 GHz: 35 m / 15 m (w środowisku przemysłowym zasięg może być mniejszy)"
       },
       {
         "name": "Połączenie z systemem",
-        "value": "Wi-Fi samodzielnie; Android: INSIGHT Mobile (SDK, Intent, MQTT, WebSocket, klawiatura); iOS: SDK; ProGlove Gateway i Gateway Plus"
+        "value": "Wi-Fi samodzielnie; Android: INSIGHT Mobile (SDK, Intent, MQTT, WebSocket, klawiatura); iOS: SDK; ProGlove Gateway i Gateway Plus z oprogramowaniem bramki 2.16.1 lub nowszym"
       },
       {
         "name": "Spust",
@@ -1083,7 +1083,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Bateria",
-        "value": "1250 mAh Li-Po, 1–2 zmiany pracy; co najmniej 80% pojemności po 500 cyklach"
+        "value": "1250 mAh Li-Po; 1–2 zmiany przy połączeniu Bluetooth, zależnie od zastosowania; co najmniej 80% pojemności po 500 cyklach"
       },
       {
         "name": "Czas ładowania",
@@ -1183,11 +1183,11 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Na jak długo wystarcza bateria MAI?",
-        "answer": "Producent podaje 1–2 zmiany pracy z ekranem, dotykiem i przyciskami przy połączeniu Bluetooth. Wynik zależy od aplikacji i warunków. Po 500 cyklach ładowania bateria zachowuje co najmniej 80% pojemności."
+        "answer": "Bateria wystarcza na 1–2 zmiany pracy z ekranem, dotykiem i przyciskami przy połączeniu Bluetooth. Wynik zależy od aplikacji i warunków. Po 500 cyklach ładowania bateria zachowuje co najmniej 80% pojemności."
       },
       {
         "question": "Czy MAI jest sprzedawany z oprogramowaniem?",
-        "answer": "Ta karta dotyczy samego urządzenia. Pakiety MAI z oprogramowaniem i serwisem ProGlove Care przygotujemy na zapytanie. Licencję kupioną w pakiecie trzeba aktywować w ciągu 90 dni; po tym czasie producent uznaje ją za aktywną."
+        "answer": "Ta karta dotyczy samego urządzenia. Pakiety MAI z oprogramowaniem i serwisem ProGlove Care przygotujemy na zapytanie. Licencję kupioną w pakiecie trzeba aktywować w ciągu 90 dni; po tym terminie jest traktowana jako aktywna."
       },
       {
         "question": "Jaka jest alternatywa dla MAI?",
@@ -1251,7 +1251,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Pranie",
-        "value": "W 30°C, do 6 cykli"
+        "value": "W 30°C, do 6 cykli (Hand Strap 1.4 i nowsze)"
       },
       {
         "name": "Kompatybilność",
@@ -1417,7 +1417,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Pranie",
-        "value": "W 30°C, do 6 cykli"
+        "value": "W 30°C, do 6 cykli (Hand Strap 1.4 i nowsze)"
       },
       {
         "name": "Kompatybilność",
@@ -1455,7 +1455,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Index Trigger ProGlove, rozmiar S, lewa ręka, 3 szt. — G006-SL-3",
     "seoDescription": "Index Trigger ProGlove G006-SL-3: rozmiar S, lewa ręka, 3 szt. Mocowanie skanera MARK i LEO na dłoń, dla dłoni 5,5–8 cm. Spust ProGlove S lewy.",
     "shortDescription": "Index Trigger ProGlove S na lewą dłoń, trzy sztuki — dla wąskich dłoni (5,5–8 cm); spust z boku palca wskazującego, naciskany kciukiem. PN G006-SL-3.",
-    "description": "Trzy mocowania Index Trigger w rozmiarze S na lewą dłoń. Rozmiar S odpowiada szerokości dłoni od 5,5 do 8 cm, mierzonej bez rękawicy. Index Trigger zakłada się jednym ruchem, a spust z boku palca wskazującego naciska się kciukiem, dlatego producent poleca go stałym operatorom przy dużej liczbie skanów. Opakowanie po trzy sztuki pozwala sprawdzić dopasowanie przed zakupem większej partii.\n\nKlips mocowania utrzyma [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Dla MAI przewidziano inne mocowanie.",
+    "description": "Trzy mocowania Index Trigger w rozmiarze S na lewą dłoń. Rozmiar S odpowiada szerokości dłoni od 5,5 do 8 cm, mierzonej bez rękawicy. Index Trigger zakłada się jednym ruchem, a spust z boku palca wskazującego naciska się kciukiem, dlatego producent poleca go stałym operatorom przy dużej liczbie skanów. Rozmiar najlepiej dobrać po przymierzeniu mocowania na dłoni operatora.\n\nKlips mocowania utrzyma [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Dla MAI przewidziano inne mocowanie.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1617,7 +1617,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Index Trigger ProGlove, rozmiar S, lewa ręka, 10 szt. — G006-SL-10",
     "seoDescription": "Mocowanie Index Trigger ProGlove w rozmiarze S na lewą dłoń, 10 szt., PN G006-SL-10. Osobny spust dla każdego operatora skanera MARK lub LEO.",
     "shortDescription": "Dziesięć lewych mocowań Index Trigger ProGlove S, by każdy operator miał własne. Szerokość dłoni 5,5–8 cm. PN G006-SL-10.",
-    "description": "Opakowanie dziesięciu sztuk Index Trigger w rozmiarze S, przeznaczonych na lewą rękę. Dziesięć sztuk ułatwia przydzielenie każdemu operatorowi własnego mocowania, co według producenta wyraźnie wydłuża jego żywotność; w testach przemysłowych wynosi ona średnio ok. 80 zmian. Mały rozmiar obejmuje dłonie o szerokości od 5,5 do 8 cm.\n\nKażde z dziesięciu mocowań przyjmuje [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Urządzenia MAI nie da się w nim zamocować.",
+    "description": "Opakowanie dziesięciu sztuk Index Trigger w rozmiarze S, przeznaczonych na lewą rękę. Dziesięć sztuk ułatwia przydzielenie każdemu operatorowi własnego mocowania. Osobisty przydział wyraźnie wydłuża żywotność, która w testach przemysłowych wynosi średnio ok. 80 zmian. Mały rozmiar obejmuje dłonie o szerokości od 5,5 do 8 cm.\n\nKażde z dziesięciu mocowań przyjmuje [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Urządzenia MAI nie da się w nim zamocować.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1777,9 +1777,9 @@ export const progloveAccessories: Product[] = [
     "name": "Index Trigger ProGlove, rozmiar M, lewa ręka, 3 szt.",
     "seoH1": "Index Trigger ProGlove, rozmiar M, lewa ręka, 3 szt.",
     "seoTitle": "Index Trigger ProGlove, rozmiar M, lewa ręka, 3 szt. — G006-ML-3",
-    "seoDescription": "Index Trigger ProGlove M lewy, 3 sztuki, PN G006-ML-3. Spust na palec wskazujący do skanerów MARK i LEO firmy ProGlove, dłoń 8–9,5 cm.",
+    "seoDescription": "Index Trigger ProGlove M lewy, 3 sztuki, PN G006-ML-3. Spust z boku palca wskazującego do skanerów MARK i LEO firmy ProGlove, dłoń 8–9,5 cm.",
     "shortDescription": "Index Trigger ProGlove M dla leworęcznych, 3 szt.; dłoń szeroka na 8–9,5 cm, masa 20 g. PN G006-ML-3.",
-    "description": "Index Trigger w rozmiarze M na lewą rękę, trzy sztuki w opakowaniu. Rozmiar średni dotyczy dłoni o szerokości 8–9,5 cm. Jedno mocowanie M waży 20 g i jest wykonane z nylonu, poliestru, płyty MDF i kleju EVAC. Trzy sztuki wystarczają na uruchomienie jednego stanowiska z zapasem.\n\nIndex Trigger M współpracuje z [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo), ale nie z MAI.",
+    "description": "Index Trigger w rozmiarze M na lewą rękę, trzy sztuki w opakowaniu. Rozmiar średni dotyczy dłoni o szerokości 8–9,5 cm. Jedno mocowanie M waży 20 g i jest wykonane z nylonu, poliestru, płyty MDF i kleju EVAC.\n\nIndex Trigger M współpracuje z [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo), ale nie z MAI.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1858,9 +1858,9 @@ export const progloveAccessories: Product[] = [
     "name": "Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt.",
     "seoH1": "Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt.",
     "seoTitle": "Index Trigger ProGlove, rozmiar M, prawa ręka, 3 szt. — G006-MR-3",
-    "seoDescription": "Index Trigger ProGlove G006-MR-3 — rozmiar M, prawa ręka, 3 szt. Najprostszy start ze skanerem noszonym ProGlove MARK lub LEO.",
+    "seoDescription": "Index Trigger ProGlove G006-MR-3 — rozmiar M, prawa ręka, 3 szt. Mocowanie skanera noszonego ProGlove MARK lub LEO dla dłoni 8–9,5 cm.",
     "shortDescription": "Index Trigger ProGlove M na prawą rękę, trzy sztuki — średni rozmiar (8–9,5 cm) do pierwszego skanera MARK lub LEO. PN G006-MR-3.",
-    "description": "Trzy prawostronne mocowania Index Trigger M dla dłoni o szerokości od 8 do 9,5 cm. Mocowania nie pierze się w pralce; czyści się je sprayem z 70-procentowym alkoholem izopropylowym lub środkiem do tkanin i suszy przed użyciem. Producent traktuje Index Trigger jako materiał eksploatacyjny wymieniany okresowo.\n\nDo klipsa wpina się [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Jedynym mocowaniem MAI jest opaska Gen 2.",
+    "description": "Trzy prawostronne mocowania Index Trigger M dla dłoni o szerokości od 8 do 9,5 cm. Mocowania nie pierze się w pralce; czyści się je sprayem z 70-procentowym alkoholem izopropylowym lub środkiem bezpiecznym dla tkanin i suszy przed użyciem. Producent traktuje Index Trigger jako materiał eksploatacyjny wymieniany okresowo.\n\nDo klipsa wpina się [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Jedynym mocowaniem MAI jest opaska Gen 2.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2103,7 +2103,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Index Trigger ProGlove, rozmiar L, lewa ręka, 3 szt. — G006-LL-3",
     "seoDescription": "Index Trigger ProGlove L lewy, G006-LL-3, 3 szt. Duży spust ProGlove dla dłoni 9,5–11,5 cm do skanera noszonego MARK lub LEO.",
     "shortDescription": "Duży Index Trigger ProGlove L dla lewej dłoni (9,5–11,5 cm), trzy sztuki do przymiarki i startu. PN G006-LL-3.",
-    "description": "Index Trigger L dla lewej ręki w opakowaniu trzech sztuk. Duży rozmiar jest przeznaczony dla dłoni szerokich na 9,5–11,5 cm. Za luźne mocowanie ociera skórę, a za ciasne zwiększa nacisk i przyspiesza zużycie, dlatego przed zamówieniem warto zmierzyć dłoń. Numer partii jest wygrawerowany na pomarańczowym klipsie.\n\nRozmiar L przyjmuje te same skanery co S i M: [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Nie pasuje natomiast do MAI.",
+    "description": "Index Trigger L dla lewej ręki w opakowaniu trzech sztuk. Duży rozmiar jest przeznaczony dla dłoni szerokich na 9,5–11,5 cm. Za duże mocowanie szybciej się przeciera, a za ciasne zwiększa nacisk i przyspiesza zużycie, dlatego przed zamówieniem warto zmierzyć dłoń. Numer partii jest wygrawerowany na pomarańczowym klipsie.\n\nRozmiar L przyjmuje te same skanery co S i M: [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). Nie pasuje natomiast do MAI.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2265,7 +2265,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Index Trigger ProGlove, rozmiar L, lewa ręka, 10 szt. — G006-LL-10",
     "seoDescription": "Index Trigger ProGlove L na lewą rękę, 10 szt., PN G006-LL-10. Komplet spustów ProGlove dla zespołu, który pracuje skanerami MARK.",
     "shortDescription": "Lewostronny Index Trigger ProGlove w rozmiarze L, 10 sztuk; zapas mocowań na wymianę dla całego zespołu. PN G006-LL-10.",
-    "description": "Dziesięć lewostronnych mocowań Index Trigger L. Rozmiar duży obejmuje szerokość dłoni 9,5–11,5 cm; jeśli operator nosi rękawicę, wynik pomiaru zwiększa się o kilka milimetrów. Opakowanie dziesięciu sztuk pozwala wyposażyć cały zespół i wymieniać zużyte mocowania bez przestojów.\n\nDziesięć lewych mocowań L obsłuży [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo), bez MAI.",
+    "description": "Dziesięć lewostronnych mocowań Index Trigger L. Rozmiar duży obejmuje szerokość dłoni 9,5–11,5 cm; jeśli operator nosi rękawicę, wynik pomiaru zwiększa się o kilka milimetrów. Opakowanie dziesięciu sztuk pozwala wyposażyć cały zespół i mieć zapas na wymianę zużytych mocowań.\n\nDziesięć lewych mocowań L obsłuży [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo), bez MAI.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2559,7 +2559,7 @@ export const progloveAccessories: Product[] = [
       }
     ],
     "applications": [
-      "Skanowanie okazjonalne w sklepie i przy kasie"
+      "Okazjonalne skanowanie w sklepie"
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
@@ -2678,7 +2678,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Stacja ładująca ProGlove 2-gniazdowa z zasilaczem INT — C006-INT",
     "seoDescription": "Stacja ładująca ProGlove C006-INT: 2 gniazda do skanerów MARK i LEO, zasilacz z wtykami EU, UK, US i AU. Ładowarka ProGlove do oddziałów.",
     "shortDescription": "Stacja ładująca ProGlove S w zestawie INT: dwa gniazda i zasilacz z wymiennymi wtykami EU, UK, US, AU. PN C006-INT.",
-    "description": "Zestaw INT to dwugniazdowa stacja ładująca S z zasilaczem 5 V / 1,2 A i wymiennymi wtykami EU, UK, US i AU. Przydaje się firmom, które przenoszą sprzęt między krajami albo wysyłają stacje do oddziałów poza Unią Europejską. Do pracy wyłącznie w Polsce wystarcza [zestaw EU](/produkt/proglove-c006-eu).\n\nW stacji ładują się jednocześnie dwa skanery ProGlove. Obudowa ma wymiary 140 × 56 × 19 mm, waży 110 g i nie jest odporna na wodę (IP20).\n\nGniazda są dopasowane do [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo); stacja Gen 2 obsługuje MAI.",
+    "description": "Zestaw INT to dwugniazdowa stacja ładująca S z zasilaczem 5 V / 1,2 A, wymiennymi wtykami EU, UK, US i AU oraz przewodem USB. Przydaje się firmom, które przenoszą sprzęt między krajami albo wysyłają stacje do oddziałów poza Unią Europejską. Do pracy wyłącznie w Polsce wystarcza [zestaw EU](/produkt/proglove-c006-eu).\n\nW stacji ładują się jednocześnie dwa skanery ProGlove. Obudowa ma wymiary 140 × 56 × 19 mm, waży 110 g i nie jest odporna na wodę (IP20).\n\nGniazda są dopasowane do [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo); stacja Gen 2 obsługuje MAI.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2705,7 +2705,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Stacja, zasilacz z wtykami EU, UK, US i AU"
+        "value": "Stacja, zasilacz z wtykami EU, UK, US i AU, przewód USB"
       },
       {
         "name": "Liczba gniazd",
@@ -2767,7 +2767,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Stacja ładująca ProGlove 10-gniazdowa z zasilaczem — C007-INT",
     "seoDescription": "Stacja ładująca ProGlove C007-INT: 10 gniazd, zasilacz 24 V w zestawie. Ładowarka ProGlove 10-gniazdowa do floty skanerów noszonych.",
     "shortDescription": "Stacja ładująca ProGlove na 10 skanerów MARK lub LEO z zasilaczem 24 V / 1,67 A i kompletem wtyków. PN C007-INT.",
-    "description": "Stacja 10-gniazdowa ładuje jednocześnie do dziesięciu skanerów ProGlove, np. całą zmianę kompletacji; skaner MARK 2 potrzebuje w niej 2 godzin na pełne ładowanie. W zestawie jest zasilacz 24 V / 1,67 A z kompletem wtyków EU, UK, US i AU. Producent zabrania stosowania innych zasilaczy.\n\nStacja ma wymiary 298 × 203 × 25 mm i waży 840 g. Sposób montażu opisuje instrukcja użytkownika. Pracuje w temperaturze 0–45°C i ma klasę IP20, więc wymaga suchego miejsca.\n\nGniazda stacji przyjmują [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). W tej stacji nie ładuje się MAI.",
+    "description": "Stacja 10-gniazdowa ładuje jednocześnie do dziesięciu skanerów ProGlove, np. całą zmianę kompletacji; skaner MARK 2 potrzebuje w niej 2 godzin na pełne ładowanie. W zestawie jest zasilacz 24 V / 1,67 A z kompletem wtyków EU, UK, US i AU. Producent zabrania stosowania innych zasilaczy.\n\nStacja ma wymiary 298 × 203 × 25 mm i waży 840 g. Można ją przykręcić do ściany (dwa otwory w rozstawie 135 mm), zamocować na szynie DIN albo na ramieniu monitora (otwory w rozstawie 75 mm); nie należy jej montować wyżej niż 2 m. Stacja pracuje w temperaturze 0–45°C, ale ładowanie skanerów wymaga od +5 do +40°C. Ma klasę IP20, więc wymaga suchego miejsca.\n\nGniazda stacji przyjmują [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display) i [LEO](/produkt/proglove-leo). W tej stacji nie ładuje się MAI.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -2778,7 +2778,7 @@ export const progloveAccessories: Product[] = [
       "/images/products/proglove-c007-int.png"
     ],
     "imageDescriptions": [
-      "Stacja ładująca ProGlove 10-gniazdowa — dwa rzędy gniazd na skanery na wspólnej szynie"
+      "Stacja ładująca ProGlove 10-gniazdowa — dziesięć gniazd w dwóch rzędach na aluminiowej płycie montażowej"
     ],
     "tags": [
       "magazyn"
@@ -2821,6 +2821,10 @@ export const progloveAccessories: Product[] = [
         "value": "0°C do +45°C"
       },
       {
+        "name": "Temperatura ładowania",
+        "value": "+5°C do +40°C"
+      },
+      {
         "name": "Kompatybilność",
         "value": "ProGlove MARK Basic, MARK 2, MARK 3, MARK Display, LEO (także MARK One S); nie pasuje do MAI"
       }
@@ -2856,7 +2860,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Gateway ProGlove z przewodem USB — X001-A007",
     "seoDescription": "Gateway ProGlove X001-A007: połączenie skanerów MARK, LEO i MAI z komputerem przez USB HID lub CDC, do 5 skanerów. Bramka Bluetooth ProGlove.",
     "shortDescription": "ProGlove Gateway z przewodem USB — łączy skanery noszone ProGlove z komputerem z Windows lub Linux jako klawiatura lub port COM. PN X001-A007.",
-    "description": "ProGlove Gateway łączy skanery noszone z komputerem z systemem Windows lub Linux przez USB. Na komputerze działa jako klawiatura (USB HID) albo wirtualny port COM (USB CDC). Pozwala szybko parować i przełączać do 5 skanerów. Przez Wi-Fi 2,4 GHz łączy się z platformą INSIGHT, która umożliwia zdalną konfigurację i aktualizacje oprogramowania.\n\nZ Gateway zasięg radiowy skanera wynosi do 70 m w otwartej przestrzeni i 30–40 m w budynku. Gateway nie jest potrzebny, gdy skaner łączy się przez Bluetooth z telefonem, tabletem lub terminalem. Zestaw zawiera Gateway i przewód USB.\n\nWspółpracuje ze skanerami ProGlove [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display), [LEO](/produkt/proglove-leo) i [MAI](/produkt/proglove-mai).",
+    "description": "ProGlove Gateway łączy skanery noszone z komputerem z systemem Windows lub Linux przez USB. Na komputerze działa jako klawiatura (USB HID) albo wirtualny port COM (USB CDC). Łączy jednocześnie do 5 skanerów i pozwala szybko je parować i przełączać. Przez Wi-Fi 2,4 GHz łączy się z platformą INSIGHT, która umożliwia zdalną konfigurację i aktualizacje oprogramowania.\n\nZ Gateway zasięg LEO, MARK Basic, MARK 2 i MARK 3 wynosi do 70 m w otwartej przestrzeni i 30–40 m w budynku; ściany, metalowe regały i maszyny mogą go zmniejszyć. Gateway nie jest potrzebny, gdy skaner łączy się przez Bluetooth z telefonem, tabletem lub terminalem. Zestaw zawiera Gateway i przewód USB.\n\nWspółpracuje ze skanerami ProGlove [MARK Basic](/produkt/proglove-mark-basic), [MARK 2](/produkt/proglove-mark-2), [MARK 3](/produkt/proglove-mark-3), [MARK Display](/produkt/proglove-mark-display), [LEO](/produkt/proglove-leo) i [MAI](/produkt/proglove-mai). MARK Display współpracuje z Gateway przez interfejs Streams API, a MAI wymaga oprogramowania Gateway w wersji 2.16.1 lub nowszej.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -2890,7 +2894,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Liczba skanerów",
-        "value": "Do 5, przełączane"
+        "value": "Do 5 jednocześnie"
       },
       {
         "name": "Łączność",
@@ -2898,7 +2902,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Zasięg radiowy",
-        "value": "70 m w otwartej przestrzeni, 30–40 m w budynku"
+        "value": "Do 70 m w otwartej przestrzeni, 30–40 m w budynku; mniej przy ścianach, metalowych regałach i maszynach"
       },
       {
         "name": "Wymiary",
@@ -2906,7 +2910,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "ProGlove MARK Basic, MARK 2, MARK 3, MARK Display, LEO, MAI"
+        "value": "ProGlove LEO, MARK Basic, MARK 2, MARK 3; MARK Display przez Streams API; MAI z oprogramowaniem Gateway 2.16.1 lub nowszym"
       }
     ],
     "applications": [
@@ -2941,7 +2945,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Gateway Plus ProGlove — A009-EU",
     "seoDescription": "Gateway Plus ProGlove A009-EU: do 10 skanerów MARK, LEO i MAI, USB, Ethernet PoE, RS-232, Wi-Fi 2,4/5 GHz. Bramka ProGlove dla starszych systemów.",
     "shortDescription": "ProGlove Gateway Plus — bramka do 10 skanerów noszonych z wyjściem USB, Ethernet z PoE i RS-232 oraz dwuzakresowym Wi-Fi. PN A009-EU.",
-    "description": "Gateway Plus łączy jednocześnie do 10 skanerów ProGlove przez Bluetooth i przekazuje dane do systemu przez USB (HID lub CDC), Ethernet 10/100 Mb/s z zasilaniem PoE (IEEE 802.3af) albo RS-232. Ma także dwuzakresowe Wi-Fi 2,4 i 5 GHz do połączenia z INSIGHT. Złącza szeregowe pozwalają podłączyć skanery również do starszych systemów.\n\nPN A009-EU to sam korpus bramki. Do pracy potrzebny jest przewód: USB, który zasila bramkę z komputera, albo Ethernet z PoE. Połączenie RS-232 wymaga osobnych przewodów i zasilacza ProGlove, które dobierzemy na zapytanie. Nieużywane gniazda zamykają zaślepki dołączone do bramki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla Gateway Plus: przewód (jeden z) — sprzedawane osobno**\n\n- [Przewód USB do Gateway Plus ProGlove (Z001-001)](/produkt/proglove-z001-001)\n- [Przewód Ethernet z PoE do Gateway Plus ProGlove (Z009-000)](/produkt/proglove-z009-000)\n\nPrzewód Ethernet zasila bramkę tylko z przełącznika lub portu z PoE.",
+    "description": "Gateway Plus łączy przez Bluetooth do 10 skanerów ProGlove jednocześnie (liczba zależy od warunków otoczenia) i przekazuje dane do systemu przez USB (HID lub CDC), Ethernet 10/100 Mb/s z zasilaniem PoE (IEEE 802.3af) albo RS-232. Ma także dwuzakresowe Wi-Fi 2,4 i 5 GHz do połączenia z INSIGHT. Złącza szeregowe pozwalają podłączyć skanery również do starszych systemów. Z MARK Display bramka komunikuje się przez Streams API; MAI łączy się z nią od wersji oprogramowania bramki 2.16.1.\n\nPN A009-EU to sam korpus bramki. Do pracy potrzebny jest przewód: USB, który zasila bramkę z komputera, albo Ethernet z PoE. Połączenie RS-232 wymaga osobnych przewodów i zasilacza ProGlove, które dobierzemy na zapytanie. Nieużywane gniazda zamykają zaślepki dołączone do bramki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla Gateway Plus: przewód (jeden z) — sprzedawane osobno**\n\n- [Przewód USB do Gateway Plus ProGlove (Z001-001)](/produkt/proglove-z001-001)\n- [Przewód Ethernet z PoE do Gateway Plus ProGlove (Z009-000)](/produkt/proglove-z009-000)\n\nPrzewód Ethernet zasila bramkę tylko z przełącznika lub portu z PoE.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -2975,7 +2979,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Liczba skanerów",
-        "value": "Do 10 jednocześnie"
+        "value": "Do 10 jednocześnie, zależnie od warunków otoczenia"
       },
       {
         "name": "Łączność",
@@ -2983,7 +2987,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Zasięg radiowy",
-        "value": "Bluetooth: 70 m w otwartej przestrzeni, 30 m w budynku"
+        "value": "Bluetooth: do 70 m w otwartej przestrzeni, 30 m w budynku; mniej przy ścianach, metalowych regałach i maszynach"
       },
       {
         "name": "Wymiary",
@@ -3003,7 +3007,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "ProGlove MARK Basic, MARK 2, MARK 3, MARK Display, LEO, MAI"
+        "value": "ProGlove LEO, MARK Basic, MARK 2, MARK 3; MARK Display przez Streams API; MAI z oprogramowaniem bramki 2.16.1 lub nowszym"
       }
     ],
     "applications": [
@@ -3391,7 +3395,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz EU — C021-EU",
     "seoDescription": "Stacja ładująca ProGlove Gen 2 C021-EU: 2 gniazda do ProGlove MAI, zasilacz EU, ładowanie ok. 130 min. Ładowarka MAI ProGlove.",
     "shortDescription": "Stacja ładująca Gen 2 do ProGlove MAI — dwa gniazda, zasilacz EU, pełne ładowanie w ok. 130 minut. PN C021-EU.",
-    "description": "Stacja ładująca Gen 2 ładuje jednocześnie dwa urządzenia [ProGlove MAI](/produkt/proglove-mai); pełne ładowanie trwa ok. 130 minut. W zestawie EU jest zasilacz 5 V (1,2 A) z wtyczką europejską. Producent poleca tę stację tam, gdzie urządzenia są rozmieszczone przy wielu stanowiskach, a nie przechowywane centralnie.\n\nBateria MAI najlepiej znosi ładowanie w temperaturze od +18 do +30°C. Stacja pasuje wyłącznie do MAI; skanery MARK i LEO wymagają stacji pierwszej generacji.",
+    "description": "Stacja ładująca Gen 2 ładuje jednocześnie dwa urządzenia [ProGlove MAI](/produkt/proglove-mai); pełne ładowanie trwa ok. 130 minut. W zestawie EU są zasilacz 5 V (1,2 A) z wtyczką europejską i przewód USB. Producent poleca tę stację tam, gdzie urządzenia są rozmieszczone przy wielu stanowiskach, a nie przechowywane centralnie.\n\nBateria MAI najlepiej znosi ładowanie w temperaturze od +18 do +30°C. Stacja pasuje wyłącznie do MAI; skanery MARK i LEO wymagają stacji pierwszej generacji.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -3418,7 +3422,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Stacja, zasilacz z wtyczką EU"
+        "value": "Stacja, zasilacz z wtyczką EU, przewód USB"
       },
       {
         "name": "Liczba gniazd",
@@ -3480,7 +3484,7 @@ export const progloveAccessories: Product[] = [
     "seoTitle": "Stacja ładująca ProGlove Gen 2 do MAI, 2-gniazdowa, zasilacz INT — C021-INT",
     "seoDescription": "Stacja ładująca ProGlove Gen 2 C021-INT na dwa MAI, zasilacz z wtykami UK, US i AU. Ładowarka MAI ProGlove do oddziałów zagranicznych.",
     "shortDescription": "Zestaw INT stacji ładującej Gen 2 dla ProGlove MAI: zasilacz z wtykami brytyjskimi, amerykańskimi i australijskimi. PN C021-INT.",
-    "description": "Zestaw INT stacji Gen 2 ma zasilacz z wtykami UK, US i AU, więc służy do wyposażenia oddziałów w Wielkiej Brytanii, Stanach Zjednoczonych i Australii. Do gniazd w Polsce przeznaczony jest [zestaw EU](/produkt/proglove-c021-eu).\n\nStacja ma dwa gniazda dla urządzeń [ProGlove MAI](/produkt/proglove-mai), wymiary 155 × 58 × 20 mm, masę 123 g i klasę IP20.",
+    "description": "Zestaw INT stacji Gen 2 ma zasilacz z wtykami międzynarodowymi. MAI ma dopuszczenia radiowe dla EOG, Wielkiej Brytanii, USA i Kanady. Do gniazd w Polsce przeznaczony jest [zestaw EU](/produkt/proglove-c021-eu).\n\nStacja ma dwa gniazda dla urządzeń [ProGlove MAI](/produkt/proglove-mai), wymiary 155 × 58 × 20 mm, masę 123 g i klasę IP20.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -3507,7 +3511,7 @@ export const progloveAccessories: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Stacja, zasilacz z wtykami UK, US i AU"
+        "value": "Stacja, zasilacz z wtykami UK, US i AU, przewód USB"
       },
       {
         "name": "Liczba gniazd",
