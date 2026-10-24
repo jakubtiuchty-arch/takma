@@ -48,7 +48,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
 
-  const partNumbers = useMemo(() => getPartNumbers(product), [product])
+  // Zapowiedź (comingSoon) działa jak karta na zapytanie: bez stanu, ceny i koszyka.
+  const naZapytanie = product.quoteOnly || product.comingSoon
+  const partNumbers = useMemo(() => (product.comingSoon ? [] : getPartNumbers(product)), [product])
   const { stockData, loading: stockLoading } = useStockData(partNumbers)
 
   useEffect(() => {
@@ -89,13 +91,14 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   // Statyczna cena: product.priceFrom lub najtańszy wariant
   const staticPrice = useMemo(() => {
+    if (product.comingSoon) return undefined
     if (product.priceFrom) return product.priceFrom
     const variantPrices = product.variants
       ?.map(v => v.priceFrom)
       .filter((p): p is number => p != null && p > 0)
       .sort((a, b) => a - b)
     return variantPrices?.[0]
-  }, [product.priceFrom, product.variants])
+  }, [product.comingSoon, product.priceFrom, product.variants])
 
   // Live cena z API. Najpierw najtańszy wariant, który faktycznie leży na
   // magazynie — inaczej kafel obiecuje cenę konfiguracji, której nie da się
@@ -130,7 +133,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   const liveAvailability = liveStatus ?? (isZebraTerminalProduct(product) ? 'unavailable' : product.availability)
   // Brak stanu magazynowego pokazujemy jako niedostępność.
-  const isUnavailable = !product.quoteOnly && !product.comingSoon && liveAvailability !== 'available'
+  const isUnavailable = !naZapytanie && liveAvailability !== 'available'
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const },
@@ -138,7 +141,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     unavailable: { label: 'Niedostępny', variant: 'danger' as const },
   }
 
-  const availability = product.quoteOnly || product.comingSoon
+  const availability = naZapytanie
     ? { label: product.comingSoon ? 'Zapowiedź' : 'Na zapytanie', variant: 'info' as const }
     : availabilityConfig[liveAvailability] ?? availabilityConfig.unavailable
 
@@ -366,7 +369,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   href={productHref}
                   className="flex-1 flex items-center justify-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 transition-colors"
                 >
-                  {product.quoteOnly || product.comingSoon ? 'Zapytaj o produkt' : 'Zobacz więcej'}
+                  {naZapytanie ? 'Zapytaj o produkt' : 'Zobacz więcej'}
                 </Link>
               ) : (product.variants?.length ?? 0) > 1 ? (
                 <Link
@@ -406,7 +409,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                   : 'text-white bg-primary-600 hover:bg-primary-700'
               }`}
             >
-              {product.quoteOnly || product.comingSoon ? 'Zapytaj o produkt' : 'Zobacz więcej'}
+              {naZapytanie ? 'Zapytaj o produkt' : 'Zobacz więcej'}
             </Link>
           )}
         </div>

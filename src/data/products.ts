@@ -84,7 +84,7 @@ export interface Product {
   priceFrom?: number
   /** Karta sprzedażowa bez ceny i stanu: konfigurację wyceniamy po zapytaniu. */
   quoteOnly?: boolean
-  /** Zapowiedź producenta: karta bez ceny, PN i koszyka, poza feedami; plakietka „Zapowiedź” zamiast „Na zapytanie”. */
+  /** Zapowiedź producenta: karta bez ceny, PN i koszyka, poza feedami; plakietka „Zapowiedź” zamiast „Na zapytanie”. Nie wymaga quoteOnly. */
   comingSoon?: boolean
   /** Rabat ilościowy dla sprzedaży na sztuki: cena za sztukę od danego progu (patrz src/lib/price-tiers.ts). */
   priceTiers?: { minQty: number; priceNetto: number }[]
@@ -359,9 +359,9 @@ export const categories: Category[] = [
     slug: 'tablety-przemyslowe',
     name: 'Tablety przemysłowe',
     description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell, Brady i Bluebird.',
-    seoTitle: 'Tablety przemysłowe rugged Android i Windows od 3 250 zł',
+    seoTitle: 'Tablety przemysłowe rugged Android i Windows',
     seoDescription: 'Tablety Zebra ET40/ET45/ET60/ET65, Getac ZX80/F110, Honeywell RT10A — IP65-IP68, ekrany 8-14″, do magazynu, chłodni i terenu od 3 250 zł netto. Porównanie modeli, TCO 3 lata.',
-    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym, klasą ochrony IP65–IP68, odpornością na upadki z 1,2–2,4 m i certyfikatem MIL-STD-810H. W ofercie TAKMA tablety pięciu producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A), [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7 oraz Bluebird ([T30](/produkt/bluebird-t30), [T10](/produkt/bluebird-t10)). Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
+    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym. Większość tabletów w kategorii ma klasę ochrony IP65–IP68, odporność na upadki z 1,2–2,4 m i certyfikat MIL-STD-810H. W ofercie TAKMA tablety pięciu producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A), [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7 oraz Bluebird ([T30](/produkt/bluebird-t30), [T10](/produkt/bluebird-t10)). Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
     productCount: 7,
   },

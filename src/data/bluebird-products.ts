@@ -2628,7 +2628,7 @@ export const bluebirdAccessories: Product[] = [
     "seoH1": "Zasilacz sieciowy 5 V / 3 A Bluebird",
     "seoTitle": "Zasilacz sieciowy 5 V / 3 A Bluebird — 602010041",
     "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) do terminali S10, S20, S50, S70, EF551, EK430 i tabletów T30, T10; wtyczka i kabel osobno.",
-    "shortDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird — ładowanie terminala z gniazdka przez USB, z wymienną wtyczką sieciową. PN 602010041.",
+    "shortDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird — ładowanie terminala albo tabletu T30 i T10 z gniazdka przez USB, z wymienną wtyczką sieciową. PN 602010041.",
     "description": "Zasilacz sieciowy 5 V / 3 A (typ B) ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Ma wyjście USB-A i wymienne wtyczki sieciowe; w Polsce stosuje się wtyczkę EU. Z terminalem łączy go kabel USB-A – USB-C.\n\nPasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551) i [Bluebird EK430](/produkt/bluebird-ek430). Żaden z nich nie ma zasilacza w zestawie. Zasilacz ładuje też tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -3038,7 +3038,7 @@ export const bluebirdAccessories: Product[] = [
     "seoH1": "Zasilacz 12 V / 5 A do stacji Bluebird",
     "seoTitle": "Zasilacz 12 V / 5 A do stacji Bluebird — 602010025",
     "seoDescription": "Zasilacz 12 V / 5 A Bluebird (602010025): stacje 1-gniazdowe S50, S70, S20 (204010078, 204010079) i T30 (204010093); przewód EU osobno.",
-    "shortDescription": "Zasilacz 12 V / 5 A do stacji Bluebird — do stacji 1-gniazdowych S50 i S70 oraz stacji S20 z obsługą czytnika RFR. PN 602010025.",
+    "shortDescription": "Zasilacz 12 V / 5 A do stacji Bluebird — do stacji 1-gniazdowych S50, S70 i tabletu T30 oraz stacji S20 z obsługą czytnika RFR. PN 602010025.",
     "description": "Zasilacz 12 V / 5 A zasila stacje 1-gniazdowe S50 i S70 oraz te stacje S20, które przyjmują czytnik RFR albo mają Ethernet, a także stację 1-gniazdową tabletu T30. Współpracuje z:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078)](/produkt/bluebird-204010078)\n- [Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079)](/produkt/bluebird-204010079)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)](/produkt/bluebird-204010081)\n- [Stacja ładująca 1-gniazdowa Bluebird T30 (204010093)](/produkt/bluebird-204010093)\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [

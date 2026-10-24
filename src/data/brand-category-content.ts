@@ -1531,12 +1531,12 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
         'Odporność — [T30](/produkt/bluebird-t30) ma obudowę IP65 i znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot 1,6 m według MIL-STD-810H. [T10](/produkt/bluebird-t10) nie ma deklarowanej klasy szczelności ani testu upadku. Zapowiedziany [T40 Ultra](/produkt/bluebird-t40-ultra) ma IP68 i upadki z 2 m.',
         'Łączność — T30 ma Wi-Fi 6E, a wersja z 5G dodatkowo eSIM i dwuzakresowy GNSS. T10 ma Wi-Fi 5, a wersja z 4G LTE eSIM i GPS.',
         'Bateria — w T30 baterię 8000 mAh wymienia się na miejscu pracy, a [zapasową baterię](/produkt/bluebird-355040109) zamawia się osobno. W T10 bateria 8000 mAh jest zintegrowana z obudową.',
-        'Zestaw — T30 jest dostarczany bez zasilacza, wtyczki i kabla. W zestawie T10 producent przewiduje zasilacz 5 V / 3 A z wtyczką i kabel USB.',
+        'Zestaw — T30 ma w zestawie kabel USB-C i zasilacz, a T10 zasilacz 5 V / 3 A z wtyczką i kabel USB. Dodatkowe zasilacze, wtyczki EU i kable są wspólne z terminalami Bluebird.',
         'Wyposażenie — do T10 jest [klawiatura 2 w 1](/produkt/bluebird-638010002) na złączu POGO. Do T30 są stacje ładujące 1- i 4-gniazdowe, [uchwyt do wózka widłowego](/produkt/bluebird-355040121) i [pasek na dłoń](/produkt/bluebird-357010004).',
       ],
     },
     expertAuthority: 'TAKMA jest partnerem Bluebird. Dobieramy model tabletu, wersję łączności i akcesoria: zasilacze, stacje ładujące, osłony, baterie i uchwyty. W ofercie są też [terminale Bluebird](/terminale-bluebird), więc tablety i terminale w jednej firmie można konfigurować tymi samymi narzędziami BOS. Do jednego zastosowania porównujemy też tablety [Getac](/tablety-getac), [Zebra](/tablety-przemyslowe-zebra) i [Honeywell](/tablety-honeywell).',
-    technicalDeepDive: `Tablety Bluebird w ofercie TAKMA.\n\n• [T30](/produkt/bluebird-t30) (Android 13, 10,1″): WUXGA, typowo 500 nitów, Corning Gorilla Glass, Qualcomm QC4490, 6/64 GB, Wi-Fi 6E, opcja 5G z eSIM i GNSS, NFC z płatnościami zbliżeniowymi i certyfikatem Apple VAS. IP65, upadki z 1,0 m (1,6 m w osłonie rugged boot), grubość 11,4 mm, masa 650 g. Bateria 8000 mAh wymienna na miejscu; zasilacz, wtyczka i kabel sprzedawane osobno.\n\n• [T10](/produkt/bluebird-t10) (Android 14, 10,95″): 2000 × 1200, typowo 410 nitów, ośmiordzeniowy procesor Qualcomm do 2,8 GHz, 4/64 albo 6/128 GB, Wi-Fi 5, opcja 4G LTE z eSIM i GPS, NFC, złącze POGO do klawiatury. Grubość 7,4 mm, masa 492 g, bateria zintegrowana 8000 mAh. Cykl dostaw i wsparcia 3+3 lata.\n\n• [T40 Ultra](/produkt/bluebird-t40-ultra) (zapowiedź, Android 16, 8″): HD 1280 × 800, 600 nitów, szkło hartowane 2 mm, MediaTek MT8873, 6/64 GB, Wi-Fi 6E, opcja 5G, czujnik ingerencji, przezroczysty tył, magnetyczne złącze POGO, ładowanie Qi 15 W w wersjach WWAN. IP68, upadki z 2 m, masa 630 g, cykl 4+4 lata. Termin dostępności i cenę podamy na zapytanie.\n\nWszystkie trzy modele pracują w temperaturze od −20°C do +50°C. Na T30 i T10 udzielamy 12 miesięcy gwarancji.`,
+    technicalDeepDive: `Tablety Bluebird w ofercie TAKMA.\n\n• [T30](/produkt/bluebird-t30) (Android 13, 10,1″): WUXGA, typowo 500 nitów, Corning Gorilla Glass, Qualcomm QC4490, 6/64 GB, Wi-Fi 6E, opcja 5G z eSIM i GNSS, NFC z płatnościami zbliżeniowymi i certyfikatem Apple VAS. IP65, upadki z 1,0 m (1,6 m w osłonie rugged boot), grubość 11,4 mm, masa 650 g. Bateria 8000 mAh wymienna na miejscu; w zestawie zasilacz i kabel USB-C.\n\n• [T10](/produkt/bluebird-t10) (Android 14, 10,95″): 2000 × 1200, typowo 410 nitów, ośmiordzeniowy procesor Qualcomm do 2,8 GHz, 4/64 albo 6/128 GB, Wi-Fi 5, opcja 4G LTE z eSIM i GPS, NFC, złącze POGO do klawiatury. Grubość 7,4 mm, masa 492 g, bateria zintegrowana 8000 mAh. Cykl dostaw i wsparcia 3+3 lata.\n\n• [T40 Ultra](/produkt/bluebird-t40-ultra) (zapowiedź, Android 16, 8″): HD 1280 × 800, 600 nitów, szkło hartowane 2 mm, MediaTek MT8873, 6/64 GB, Wi-Fi 6E, opcja 5G, czujnik ingerencji, przezroczysty tył, magnetyczne złącze POGO, ładowanie Qi 15 W w wersjach WWAN. IP68, upadki z 2 m, masa 630 g, cykl 4+4 lata. Termin dostępności i cenę podamy na zapytanie.\n\nWszystkie trzy modele pracują w temperaturze od −20°C do +50°C. Gwarancja na T30 i T10 wynosi 12 miesięcy.`,
     useCases: [
       {
         title: 'Sklep i obsługa klienta przy półce — T30',
@@ -1563,8 +1563,8 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
           text: 'Producent zapowiada dla T30 wersje do Androida 17, a dla T10 wersje 16 i 18. Usługa aktualizacji wymaga zakupu kontraktu Bluebird Care.',
         },
         {
-          title: 'T30 bez zasilacza w zestawie',
-          text: 'Do [T30](/produkt/bluebird-t30) zamawia się osobno [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). Te same elementy pasują do terminali Bluebird.',
+          title: 'Zasilacze wspólne z terminalami Bluebird',
+          text: '[T30](/produkt/bluebird-t30) i [T10](/produkt/bluebird-t10) mają zasilacz i kabel w zestawie. Dodatkowy [zasilacz 5 V / 3 A](/produkt/bluebird-602010041) z [wtyczką EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005) to te same akcesoria, które ładują terminale Bluebird.',
         },
         {
           title: 'Stacja T30 a osłona rugged boot',
@@ -1589,15 +1589,15 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       },
       {
         question: 'Czy tablety Bluebird mają zasilacz w zestawie?',
-        answer: 'T30 nie ma zasilacza w zestawie. Do niego zamawia się [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005). W zestawie T10 producent przewiduje zasilacz 5 V / 3 A z wtyczką i kabel USB. Zestaw T40 Ultra ma obejmować zasilacz PD i kabel USB-C – USB-C.',
+        answer: 'Tak. W zestawie [T30](/produkt/bluebird-t30) są kabel USB-C i zasilacz. W zestawie T10 producent przewiduje zasilacz 5 V / 3 A z wtyczką i kabel USB. Zestaw T40 Ultra ma obejmować zasilacz PD i kabel USB-C – USB-C. Dodatkowy [zasilacz 5 V / 3 A](/produkt/bluebird-602010041), [wtyczkę EU](/produkt/bluebird-602020024) i [kabel USB-A – USB-C](/produkt/bluebird-603010005) do T30 i T10 można zamówić osobno.',
       },
       {
         question: 'Czy tablety Bluebird obsługują płatności zbliżeniowe?',
-        answer: 'Tak, wszystkie mają NFC. [T30](/produkt/bluebird-t30) obsługuje płatności zbliżeniowe ECP 1.0 i 2.0 i ma certyfikat Apple VAS. [T10](/produkt/bluebird-t10) obsługuje płatności zbliżeniowe oraz karty ISO 14443, ISO 15693 i FeliCa. T40 Ultra obsługuje płatności zbliżeniowe i ma certyfikat Google Smart Tap.',
+        answer: 'Tak, wszystkie mają NFC. [T30](/produkt/bluebird-t30) obsługuje płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0 oraz ma certyfikat Apple VAS. [T10](/produkt/bluebird-t10) obsługuje płatności zbliżeniowe oraz karty ISO 14443, ISO 15693 i FeliCa. T40 Ultra obsługuje płatności zbliżeniowe i ma certyfikat Google Smart Tap.',
       },
       {
         question: 'Jak długo tablety Bluebird otrzymują nowe wersje Androida?',
-        answer: 'T30 ma fabrycznie Androida 13, a producent zapowiada wersje do 17. T10 ma Androida 14 z zapowiedzią wersji 16 i 18 oraz cykl dostaw i wsparcia 3+3 lata. T40 Ultra ma startować z Androidem 16, z zapowiedzią wersji 18 i 20 i cyklem 4+4 lata. W każdym modelu aktualizacje wymagają płatnej usługi Bluebird.',
+        answer: 'T30 ma fabrycznie Androida 13, a producent zapowiada wersje do 17. T10 ma Androida 14 z zapowiedzią wersji 16 i 18 oraz cykl dostaw i wsparcia 3+3 lata. T40 Ultra ma startować z Androidem 16 i cyklem 4+4 lata; producent zapowiada wersje 18 i 20, ale wersje systemu mogą się zmienić. W każdym modelu aktualizacje wymagają płatnej usługi Bluebird.',
       },
       {
         question: 'Kiedy będzie dostępny Bluebird T40 Ultra?',
@@ -1619,7 +1619,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
       },
       {
         name: 'Zasilanie i ładowanie',
-        text: 'Do T30 zamów zasilacz 5 V / 3 A, wtyczkę EU i kabel. Do ładowania kilku tabletów zamów stację 4-gniazdową; zasilacz 10 A do stacji dobierzemy przy zamówieniu.',
+        text: 'T30 i T10 mają zasilacz i kabel w zestawie. Do ładowania kilku tabletów T30 zamów stację 4-gniazdową; zasilacz 10 A do stacji dobierzemy przy zamówieniu.',
       },
       {
         name: 'Ochrona i mocowanie',

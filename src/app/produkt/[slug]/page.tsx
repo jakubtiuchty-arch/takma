@@ -115,7 +115,8 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const offerStock = initialStock?.find(row => row.partNumber === (offerVariant?.partNumber ?? product.specifications.find(spec => spec.name === 'Part Number')?.value))
   const variant = pickVariant(product, pn)
   const staticNetPrice = product.slug === 'zebra-tc201' && variant ? variant.priceFrom : product.priceFrom
-  const currentNetPrice = initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : staticNetPrice
+  // Zapowiedź nie ma ceny także w meta i OG, nawet gdy dane mają cenę startową.
+  const currentNetPrice = product.comingSoon ? undefined : initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : staticNetPrice
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const variantSize = variant?.attributes['Rozmiar']
@@ -125,7 +126,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const variantSuffix = variant ? ` ${variantSize ?? ''}${variantPN ? ` — ${variantPN}` : ''}`.trim() : ''
   // Szablon layoutu dokłada „| TAKMA", więc sufiks wpisany w seoTitle trzeba zdjąć (inaczej „| TAKMA | TAKMA")
   const baseTitle = (isZebraTerminalProduct(product) ? product.seoTitle?.replace(/\s*(?:\||—|,)?\s*od\s+[\d\s.,]+\s*zł(?:\s+netto)?/ig, '') : product.seoTitle)?.replace(/\s*\|\s*TAKMA\s*$/, '')
-    ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
+    ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom && !product.comingSoon ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
   // Listingi objęte krótkim tytułem karty „Producent Model” (specyfikacja jest w meta description)
   const title = isShortTabTitleScope(product)
     ? variant ? getVariantTabTitle(product, variantPN) : getProductTabTitle(product)
@@ -147,7 +148,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const priceText = currentNetPrice ? ` Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : ''
   const variantCount = product.variants?.length ?? 0
   const variantsText = !variant && variantCount ? ` ${variantCount} ${variantCount === 1 ? 'wariant' : variantCount % 100 >= 12 && variantCount % 100 <= 14 ? 'wariantów' : [2, 3, 4].includes(variantCount % 10) ? 'warianty' : 'wariantów'}.` : ''
-  const variantPrice = initialStock !== undefined ? (currentNetPrice ? ` Cena ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
+  const variantPrice = product.comingSoon ? '' : initialStock !== undefined ? (currentNetPrice ? ` Cena ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
   const variantPrefix = variant
     ? `${product.name}${variantSize ? ` w rozmiarze ${variantSize}` : ''}${variantPN ? ` (PN: ${variantPN})` : ''}. `
     : ''
@@ -160,7 +161,9 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     : smartTruncate(fallbackDesc, 160)
 
   // OG description — more engaging for social media
-  const ogDescription = variant
+  const ogDescription = product.comingSoon
+    ? `${shortDescriptionSentence} Zapowiedź — zapytaj o dostępność w TAKMA.`
+    : variant
     ? `${variantPrefix}${shortDescriptionSentence}${variantPrice} Zamów w TAKMA.`
     : currentNetPrice
       ? `${shortDescriptionSentence} Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
@@ -247,6 +250,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     notFound()
   }
 
+  // Zapowiedź (comingSoon) działa jak karta na zapytanie: bez koszyka, ceny i oferty w JSON-LD.
+  const naZapytanie = product.quoteOnly || product.comingSoon
+
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
   const bixolonLabelProduct = (product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')) || (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || (product.manufacturerId === 'sunmi' && product.categoryId === 'drukarki-pos') || (product.manufacturerId === 'citizen' && product.categoryId === 'drukarki-pos')
   const catalogMobileTerminal = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) && product.categoryId === 'terminale-mobilne'
@@ -324,7 +330,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // (rodzic i tak jest redirectowany wyżej, to backstop dla starych slugów bez series).
   const isThermalLabel = product.subcategoryIds?.includes('etykiety-termiczne') ?? false
   const isTransferLabel = product.subcategoryIds?.includes('etykiety-termotransferowe') ?? false
-  const showVariants = !!(product.variants && product.variants.length > 0 && !isThermalLabel && !isTransferLabel)
+  // Zapowiedź nie pokazuje tabeli wariantów z cenami i koszykiem.
+  const showVariants = !!(product.variants && product.variants.length > 0 && !isThermalLabel && !isTransferLabel && !product.comingSoon)
 
   const availabilityConfig = {
     available: { label: 'Dostępny', variant: 'success' as const, description: 'Produkt dostępny od ręki' },
@@ -647,7 +654,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     category: category?.name,
     sku: magicardOffer?.sku || schemaPartNumber,
     // Karta rodziny na zapytanie bez potwierdzonego PN: identyfikator sklepu nie jest MPN producenta.
-    mpn: (product.quoteOnly || product.comingSoon) && !specPartNumber && !product.variants?.length ? undefined : magicardOffer?.sku || schemaPartNumber,
+    mpn: naZapytanie && !specPartNumber && !product.variants?.length ? undefined : magicardOffer?.sku || schemaPartNumber,
     ...(mcAccessoryModels.length > 0 ? {
       isAccessoryOrSparePartFor: mcAccessoryModels.map(p => ({ '@id': `https://www.takma.com.pl/produkt/${p.slug}` })),
     } : {}),
@@ -1057,7 +1064,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Badge dostępności (z SmartPriceContext) siedzi w prawym górnym rogu boksu ceny */}
             <SmartPrice
               product={product}
-              badge={product.download ? undefined : product.quoteOnly || product.comingSoon ? (
+              badge={product.download ? undefined : naZapytanie ? (
                 <Badge variant="info">{product.comingSoon ? 'Zapowiedź' : 'Na zapytanie'}</Badge>
               ) : (
                 <ContextAvailabilityBadge
@@ -1111,7 +1118,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               {product.download ? (
                 <DownloadButton product={product} />
               ) : (
-                !product.quoteOnly && !product.comingSoon && <AddToRFQButton product={product} />
+                !naZapytanie && <AddToRFQButton product={product} />
               )}
               <AskAboutProductButton productName={product.name} productSlug={product.slug} />
             </div>

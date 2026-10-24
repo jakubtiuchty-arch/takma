@@ -8,10 +8,10 @@ export const bluebirdTabletProducts: Product[] = [
     "slug": "bluebird-t30",
     "name": "Bluebird T30",
     "seoH1": "Bluebird T30",
-    "seoTitle": "Tablet przemysłowy Bluebird T30 10,1″ z Androidem 13, 5G, IP65",
+    "seoTitle": "Tablet przemysłowy Bluebird T30 10,1″, Android 13, opcja 5G, IP65",
     "seoDescription": "Bluebird T30: tablet przemysłowy 10,1″ z Androidem 13, Wi-Fi 6E, opcją 5G i NFC do płatności, IP65. Tablet Bluebird T30, PN: T30-ANLB, T30-A5LAW.",
     "shortDescription": "Bluebird T30 — tablet 10,1″ o grubości 11,4 mm w obudowie IP65, z Wi-Fi 6E, opcją 5G i NFC do płatności zbliżeniowych; baterię wymienia się na miejscu.",
-    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC przyjmuje płatności zbliżeniowe (ECP 1.0 i 2.0) i ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i obsługuje dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a droższa dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot test MIL-STD-810H obejmuje 1,6 m. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Tablet ma 12 miesięcy gwarancji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nTablet jest dostarczany bez zasilacza, wtyczki i kabla.",
+    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC obsługuje płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0 oraz ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i obsługuje dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a wersja T30-A5LAW dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot test MIL-STD-810H obejmuje 1,6 m. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Tablet ma 12 miesięcy gwarancji.",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -82,7 +82,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "name": "NFC",
-        "value": "ISO 14443 A/B, FeliCa, ISO 15693; HCE; płatności zbliżeniowe ECP 1.0 i 2.0; certyfikat Apple VAS"
+        "value": "ISO 14443 A/B, FeliCa, ISO 15693; HCE; płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0; certyfikat Apple VAS"
       },
       {
         "name": "Porty",
@@ -130,7 +130,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "name": "Zawartość zestawu",
-        "value": "Tablet z baterią 8000 mAh; zasilacz, wtyczkę i kabel zamawia się osobno"
+        "value": "Tablet, kabel USB-C, zasilacz"
       },
       {
         "name": "Gwarancja",
@@ -216,7 +216,7 @@ export const bluebirdTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Czy Bluebird T30 ma zasilacz w zestawie?",
-        "answer": "Nie. W pudełku jest tablet z baterią. Osobno zamawia się trzy elementy: zasilacz 5 V / 3 A, europejską wtyczkę do niego i kabel USB-A – USB-C. Kilka tabletów jednocześnie ładuje <a href=\"/produkt/bluebird-204020040\">stacja 4-gniazdowa</a>."
+        "answer": "Tak. W pudełku są tablet, kabel USB-C i zasilacz. Do ładowania kilku tabletów naraz służy <a href=\"/produkt/bluebird-204020040\">stacja 4-gniazdowa</a>."
       },
       {
         "question": "Jak wymienia się baterię w Bluebird T30?",
@@ -228,7 +228,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Czym różnią się wersje Bluebird T30?",
-        "answer": "Wspólne są Wi-Fi 6E, Bluetooth 5.2, NFC, pamięć 6/64 GB i Android 13 z usługami Google. Droższa wersja ma dodatkowo modem 5G (nano-SIM i eSIM) oraz dwuzakresowy odbiornik GNSS."
+        "answer": "Wspólne są Wi-Fi 6E, Bluetooth 5.2, NFC, pamięć 6/64 GB i Android 13 z usługami Google. Wersja T30-A5LAW ma dodatkowo modem 5G (nano-SIM i eSIM) oraz dwuzakresowy odbiornik GNSS."
       },
       {
         "question": "Czy Bluebird T30 otrzyma nowsze wersje Androida?",
@@ -448,7 +448,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Czy baterię w Bluebird T10 można wymienić?",
-        "answer": "Bateria 8000 mAh jest zintegrowana z obudową, a tablet nie obsługuje jej wymiany w trakcie pracy. T10 ładuje się przez USB-C prądem 5 V / 3 A i obsługuje też ładowanie 9 V / 2 A."
+        "answer": "Bateria 8000 mAh jest zintegrowana z obudową, a tablet nie obsługuje jej wymiany w trakcie pracy. T10 ładuje się przez USB-C (5 V / 3 A) i obsługuje też ładowanie 9 V / 2 A."
       },
       {
         "question": "Ile pamięci ma Bluebird T10?",
@@ -472,9 +472,9 @@ export const bluebirdTabletProducts: Product[] = [
     "name": "Bluebird T40 Ultra",
     "seoH1": "Bluebird T40 Ultra",
     "seoTitle": "Bluebird T40 Ultra — tablet 8″ dla zakładów karnych (zapowiedź)",
-    "seoDescription": "Bluebird T40 Ultra (zapowiedź): tablet 8″ dla zakładów karnych z czujnikiem ingerencji, przezroczystym tyłem, IP68 i ładowaniem Qi. Tablet T40 Ultra Bluebird.",
-    "shortDescription": "Bluebird T40 Ultra — zapowiedziany tablet 8″ dla zakładów karnych: czujnik ingerencji, przezroczysty tył, IP68, upadki z 2 m i magnetyczne złącze POGO zamiast portu USB.",
-    "description": "Bluebird T40 Ultra to zapowiedziany przez producenta tablet 8″ zaprojektowany dla zakładów karnych. Sprzedaż jeszcze się nie rozpoczęła. Termin dostępności i cenę podamy na zapytanie.\n\nKonstrukcja utrudnia rozebranie tabletu i użycie jego elementów jako niebezpiecznych przedmiotów. Czujnik ingerencji od razu zgłasza próbę demontażu i działa także przy wyłączonym tablecie. Tył obudowy, domyślnie przezroczysty, zamyka 16 śrub, które odkręca się specjalnym narzędziem. Zamiast odsłoniętego portu USB tablet ma magnetyczne złącze POGO, a wersje z modemem WWAN ładują się bezprzewodowo (Qi, 15 W). Ekran chroni szkło hartowane o grubości 2 mm.\n\nOsadzeni korzystają z tabletu do wideorozmów i wiadomości, nauki, czytania e-booków, zamówień z kantyny i przeglądania dokumentów prawnych. Administrator blokuje reset do ustawień fabrycznych i głośnik, kontroluje dostęp do portów i lokalizuje tablety przez BLE, NFC albo opcjonalny tag RFID.\n\nProcesor MediaTek MT8873 pracuje z pamięcią 6/64 GB i Androidem 16. Obudowa ma klasę IP68 i znosi wielokrotne upadki z 2 m na beton według MIL-STD-810H. Bateria 8000 mAh zapewnia do 12 godzin pracy.",
+    "seoDescription": "Bluebird T40 Ultra (zapowiedź): tablet 8″ dla zakładów karnych z czujnikiem ingerencji, przezroczystym tyłem, IP68 i ładowaniem Qi w wersjach WWAN. Tablet T40 Ultra Bluebird.",
+    "shortDescription": "Bluebird T40 Ultra — zapowiedziany tablet 8″ dla zakładów karnych: czujnik ingerencji, przezroczysty tył, IP68 i upadki z 2 m; w wersji podstawowej magnetyczne złącze POGO zastępuje port USB, a USB-C 2.0 jest opcją.",
+    "description": "Bluebird T40 Ultra to zapowiedziany przez producenta tablet 8″ zaprojektowany dla zakładów karnych. Sprzedaż jeszcze się nie rozpoczęła. Termin dostępności i cenę podamy na zapytanie.\n\nKonstrukcja utrudnia rozebranie tabletu i użycie jego elementów jako niebezpiecznych przedmiotów. Czujnik ingerencji od razu zgłasza próbę demontażu i działa także przy wyłączonym tablecie. Tył obudowy, domyślnie przezroczysty, zamyka 16 śrub, które odkręca się specjalnym narzędziem. Zamiast odsłoniętego portu USB tablet ma magnetyczne złącze POGO, a wersje z modemem WWAN ładują się bezprzewodowo (Qi, 15 W). Ekran chroni szkło hartowane o grubości 2 mm.\n\nOsadzeni korzystają z tabletu do wideorozmów i wiadomości, nauki, czytania e-booków, zamówień z kantyny i przeglądania dokumentów prawnych. Administrator blokuje reset do ustawień fabrycznych i głośnik, kontroluje dostęp do portów i lokalizuje tablety przez BLE, także po wyłączeniu. NFC i opcjonalny tag RFID służą do ewidencji urządzeń.\n\nProcesor MediaTek MT8873 pracuje z pamięcią 6/64 GB i Androidem 16. Obudowa ma klasę IP68 i znosi wielokrotne upadki z 2 m na beton według MIL-STD-810H. Bateria 8000 mAh zapewnia do 12 godzin pracy.",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -532,7 +532,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "name": "Obudowa",
-        "value": "Materiał trudnopalny UL94 V-1 lub lepszy; powłoka antybakteryjna"
+        "value": "Materiał trudnopalny UL94 V-1 lub lepszy; powłoka przeciwdrobnoustrojowa"
       },
       {
         "name": "Biometria",
@@ -670,7 +670,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Jaki system ma Bluebird T40 Ultra?",
-        "answer": "Fabrycznie Android 16. Producent zapowiada wersje 18 i 20, a aktualizacje są dostępne w ramach płatnego programu gwarancyjnego Bluebird. Okres dostaw i wsparcia wynosi łącznie 4+4 lata."
+        "answer": "Fabrycznie Android 16. Producent zapowiada wersje 18 i 20 w ramach płatnego programu gwarancyjnego Bluebird, przy czym wersje systemu mogą się zmienić. Okres dostaw i wsparcia wynosi łącznie 4+4 lata."
       },
       {
         "question": "Jakie są alternatywy dla Bluebird T40 Ultra?",
@@ -1059,7 +1059,7 @@ export const bluebirdTabletAccessories: Product[] = [
       "/images/products/bluebird-624010038.png"
     ],
     "imageDescriptions": [
-      "Szkło ochronne Bluebird T30 i T10 — szkło ochronne z naklejkami pomocniczymi do montażu"
+      "Szkło ochronne Bluebird T30 i T10 — szkło ochronne ze ściereczką i naklejkami pomocniczymi do montażu"
     ],
     "tags": [
       "magazyn"
@@ -1107,7 +1107,7 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoTitle": "Uchwyt do wózka widłowego Bluebird T30 — 355040121",
     "seoDescription": "Uchwyt do wózka widłowego Bluebird T30 (355040121): mocowanie tabletu T30 w wózku widłowym; wymaga zgodnej powierzchni montażowej.",
     "shortDescription": "Uchwyt do wózka widłowego Bluebird T30 — mocuje tablet w wózku widłowym, wymaga zgodnej powierzchni montażowej. PN 355040121.",
-    "description": "Uchwyt mocuje tablet [Bluebird T30](/produkt/bluebird-t30) w wózku widłowym. Dzięki temu operator może korzystać z tabletu bez trzymania go w ręku. Uchwyt ma ramiona obejmujące krawędzie tabletu oraz podstawę montażową. Do instalacji w pojeździe potrzebna jest zgodna powierzchnia montażowa. Przed zamówieniem sprawdź, czy wózek ma takie miejsce.",
+    "description": "Uchwyt mocuje tablet [Bluebird T30](/produkt/bluebird-t30) w wózku widłowym. Dzięki temu operator może korzystać z tabletu bez trzymania go w ręku. Uchwyt ma ramiona obejmujące krawędzie tabletu oraz podstawę montażową. Do instalacji w pojeździe potrzebna jest zgodna powierzchnia montażowa. Przed zamówieniem należy sprawdzić, czy wózek ma takie miejsce.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -1227,7 +1227,7 @@ export const bluebirdTabletAccessories: Product[] = [
       "/images/products/bluebird-19346.png"
     ],
     "imageDescriptions": [
-      "Linka spiralna 170 mm do rysika Bluebird — spiralna linka z pętlami na końcach"
+      "Linka spiralna 170 mm do rysika Bluebird — linka z pętlami na końcach"
     ],
     "tags": [
       "magazyn"

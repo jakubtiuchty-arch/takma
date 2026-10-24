@@ -54,6 +54,8 @@ export function SmartPriceProvider({
   const urlPn = forcedPn ?? searchParams?.get('pn') ?? null
 
   const allVariants = useMemo(() => {
+    // Zapowiedź: bez zapytania o stan i bez ceny wariantów.
+    if (product.comingSoon) return []
     if (product.variants && product.variants.length > 0) {
       return product.variants
         .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
@@ -148,7 +150,7 @@ export function SmartPriceProvider({
       }
     }
     if (allVariants.length === 0) {
-      return { displayedPn: undefined, price: product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
+      return { displayedPn: undefined, price: product.comingSoon ? undefined : product.priceFrom ?? undefined, isFallback: false, loading, stockData, partNumbers, variantName: undefined }
     }
 
     // ── PRIORYTET URL ?pn=... — klient wybrał konkretny wariant z karty na /serie/[slug]

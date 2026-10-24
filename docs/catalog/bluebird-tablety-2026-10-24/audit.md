@@ -42,7 +42,7 @@ Dokument roboczy: źródła, PN, pominięte modele, sprzeczności, akcesoria, zd
 
 | Gdzie | Źródło A | Źródło B | Decyzja w treści |
 |---|---|---|---|
-| T30 — zestaw | QG Bluebird: tablet, kabel USB-C, zasilacz | Jarltech (oba PN): „order separately: power supply unit, charging cable” | blok „Wymagane — sprzedawane osobno”: `602010041` + `602020024` + `603010005` (jak terminale) |
+| T30 — zestaw | QG Bluebird („Package Contents”): tablet, kabel USB-C, zasilacz; Levata: „incl.: cable (USB), power supply unit” | Jarltech (oba PN): „order separately: power supply unit, charging cable”; karta T30 nie podaje zawartości | **sprzeczność producent – dystrybutor**. Po audycie przyjęta wersja producenta (jak przy T10): „Zawartość zestawu” = tablet, kabel USB-C, zasilacz; bez bloku „Wymagane”. Zasilacz `602010041`, wtyczka `602020024` i kabel `603010005` zostają w akcesoriach powiązanych. Pierwotnie: blok „Wymagane — sprzedawane osobno” według Jarltech |
 | T10 — zestaw | karta: „In-box: 5V/3A charger & Plug, USB Cable”; QG: tablet, kabel USB-C, zasilacz | Jarltech `T10-A4LFW`: „incl.: battery, 8000 mAh, QSG”, bez „order separately” | bez bloku „Wymagane”; „Zawartość zestawu” według karty Bluebird. **Do potwierdzenia przy pierwszym zamówieniu** |
 | T30 — bateria | karta, specyfikacja: 8000 mAh / 30,34 Wh | karta, Key Features i strona: 8 020 mAh / 31,20 Wh | 8000 mAh tylko w specyfikacji, akcesorium baterii i FAQ marki; w krótkim opisie i opisie T30 bez liczby |
 | T30 — hot swap | karta: wymiana „on-site” | TSC EMEA: „hot-swappable” | bez hot swap; „wymiana na miejscu, bez wysyłki do serwisu” |
@@ -142,7 +142,7 @@ Sprawdzone zdanie po zdaniu: title, meta, shortDescription, opis, specyfikacja, 
 
 | Karta | SPRZECZNE | SPOZA KARTY | POMINIĘTE | NIEPRECYZYJNE |
 |---|---|---|---|---|
-| T30 | brak | GMS (nazwy PN u Jarltech); zestaw bez zasilacza i kabla (Jarltech; QG Bluebird podaje kabel i zasilacz w zestawie); 12 miesięcy gwarancji (Jarltech, zgodne z „1 year” karty) | Ethernet przez stację (brak stacji w przewodniku); pasma 5G/4G; czujniki; wibracje, szok termiczny, ESD; BOS VoIP/PTT; EAP-SIM/AKA („TC78”) | bateria: karta podaje 8000 mAh / 30,34 Wh i 8 020 mAh / 31,20 Wh — w opisie i krótkim opisie bez liczby, w specyfikacji wartość z tabeli specyfikacji |
+| T30 | zestaw: Jarltech „order separately” wobec QG Bluebird (kabel i zasilacz w zestawie) — po audycie treść według QG, p. 3 i 11 | GMS (nazwy PN u Jarltech); 12 miesięcy gwarancji (Jarltech, zgodne z „1 year” karty) | Ethernet przez stację (brak stacji w przewodniku); pasma 5G/4G; czujniki; wibracje, szok termiczny, ESD; BOS VoIP/PTT; EAP-SIM/AKA („TC78”) | bateria: karta podaje 8000 mAh / 30,34 Wh i 8 020 mAh / 31,20 Wh — w opisie i krótkim opisie bez liczby, w specyfikacji wartość z tabeli specyfikacji |
 | T10 | brak | pamięć 4/64 i 6/128 GB według PN (strona Bluebird, dystrybutorzy; karta ma literówkę „6GB/12GB”) | „64% wyższa wydajność” (marketing); czujniki; Bluebird Care TSC i SecureCare; szok termiczny, ESD | USB-C bez numeru wersji (karta 3.0, QG 2.0); temp. przechowywania −30…+70 °C zamiast zamienionych jednostek w karcie |
 | T40 Ultra | brak | — | AnTuTu ok. 670 tys.; BluebirdCare TSC i SecureCare; akcesoria „<Planning>”; pasma 5G/4G; ESD i szok termiczny | Android: specyfikacja „Android 16”, FAQ: zapowiedź 18 i 20 z zastrzeżeniem płatnego programu (zamiast „guaranteed upgradability to Android 20”) |
 | Akcesoria | brak | długości paska 1600 mm i łącznika 87 mm z nazw części w przewodniku X40/HF550X | ładowanie baterii w stacji 4-gn. (tylko Jarltech: „4x Batteries”, przewodnik T30 i zdjęcie tego nie pokazują) | stacja 4-gn.: zasilacz „10 A, model dobieramy przy zamówieniu” (p. 3) |
@@ -164,8 +164,39 @@ Porównanie opisów (`porownaj-opisy.py`, 6-gramy): urządzenia — description,
 
 ## 10. Otwarte kwestie
 
-1. Zawartość zestawu T10 (karta Bluebird: zasilacz i kabel w zestawie; Jarltech tego nie potwierdza) — sprawdzić przy pierwszym zamówieniu.
+1. Zawartość zestawu T10 i T30 (Bluebird: zasilacz i kabel w zestawie; Jarltech przy T30 pisze „order separately”, przy T10 tego nie potwierdza) — sprawdzić przy pierwszym zamówieniu.
 2. Zasilacz stacji 4-gniazdowej T30 (9 V czy 12 V / 10 A) — pytanie do Jarltech/Bluebird; po odpowiedzi dopisać PN do bloku „Wymagane” i zgodność w karcie zasilacza.
 3. T30 w filtrze „1,5 m i więcej” według wartości z osłoną rugged boot (sama obudowa: 1,0 m) — filtr nie ma grupy „do 1 m”.
 4. Brak zdjęć: bateria `355040109`, pasek `621040006`, łącznik `621060003` (logo producenta jak przy terminalach).
 5. Ceny i stany tylko z Jarltech (Ingram: prefiks `ZB`, `501260136` → `ON`); T10 bez stanu.
+
+## 11. Poprawki po audycie (24.10.2026)
+
+Audyt niezależny (fakty, akcesoria, kod, zdjęcia) wskazał sprzeczność w zestawie T30, kilka nieprecyzyjnych zdań i dwa zdjęcia z białymi plamami. Decyzje głównej sesji wdrożono tak:
+
+**Zestaw T30 (sprzeczność).** QG Bluebird („Package Contents”: T30 tablet, USB-C cable, Power adapter) i Levata podają kabel i zasilacz w pudełku. Jarltech przy obu PN pisze „order separately: power supply unit, charging cable”. Karta T30 nie podaje zawartości. Przyjęto wersję producenta, tak jak przy T10:
+- usunięty blok „Wymagane — sprzedawane osobno” i zdanie „Tablet jest dostarczany bez zasilacza, wtyczki i kabla” z opisu T30;
+- „Zawartość zestawu”: „Tablet, kabel USB-C, zasilacz”; FAQ 1 T30: „Tak. W pudełku są tablet, kabel USB-C i zasilacz…”;
+- strona marki (kryterium „Zestaw”, zestawienie techniczne, uwaga „Zasilacze wspólne z terminalami Bluebird”, FAQ o zasilaczu, krok „Zasilanie i ładowanie”) i `llms.txt` bez twierdzenia „bez zasilacza”;
+- zasilacz `602010041`, wtyczka `602020024` i kabel `603010005` zostają w `relatedAccessories` T30 jako akcesoria dodatkowe.
+Przy pierwszym zamówieniu z Jarltech sprawdzić zawartość kartonu EU (otwarta kwestia 1 dotyczy teraz T30 i T10).
+
+**Tekst:**
+- T30: NFC „płatności zbliżeniowe i odpytywanie ECP 1.0 i 2.0, certyfikat Apple VAS” (opis, specyfikacja, FAQ marki); „droższa” → „wersja T30-A5LAW” (opis, FAQ 4); `seoTitle` „…10,1″, Android 13, opcja 5G, IP65”.
+- T40 Ultra: lokalizacja tylko przez BLE (także po wyłączeniu), NFC i tag RFID do ewidencji urządzeń; Android 18 i 20 z dopiskiem „wersje systemu mogą się zmienić” przy płatnym programie (FAQ karty i FAQ marki); meta „ładowaniem Qi w wersjach WWAN”; krótki opis: POGO zastępuje port USB w wersji podstawowej, USB-C 2.0 jako opcja; „powłoka przeciwdrobnoustrojowa”.
+- T10 FAQ 3: „ładuje się przez USB-C (5 V / 3 A)”.
+- Kategoria `tablety-przemyslowe`: `longDescription` „Większość tabletów w kategorii ma klasę ochrony IP65–IP68…”; `seoTitle` bez „od 3 250 zł”.
+- `355040121`: „Przed zamówieniem należy sprawdzić…”; strona marki: „Gwarancja na T30 i T10 wynosi 12 miesięcy”.
+- Krótkie opisy wspólnych kart: `602010041` wymienia tablety T30 i T10, `602010025` stację tabletu T30.
+- Opisy zdjęć: `19346` „linka z pętlami na końcach” (zdjęcie pokazuje prostą linkę z przewodnika); `624010038` „ze ściereczką i naklejkami pomocniczymi”.
+
+**Kod (`comingSoon`):** pole działa samodzielnie. `ProductCard` i karta produktu używają `naZapytanie = quoteOnly || comingSoon`; dla `comingSoon` kafel nie pyta o stan i nie pokazuje ceny, `SmartPriceContext` nie zwraca ceny, karta nie pokazuje tabeli wariantów, a meta, tytuł zastępczy i OG nie mają ceny. OG zapowiedzi kończy się zdaniem „Zapowiedź — zapytaj o dostępność w TAKMA.”. Karty `quoteOnly` (CipherLab cOS) działają jak wcześniej.
+
+**Zdjęcia:**
+- `624010038` i `638010002`: białe plamy powstały przy wycinaniu z renderu strony przewodnika, bo skrypt zamieniał niebieskie piksele (pasek nagłówka) na biel. Nowe wycięcia z obrazów osadzonych w PDF: klawiatura z maską `smask` (przewodnik T10 s. 9), szkło z niebieską ściereczką przez wypełnienie białego tła od krawędzi (ten sam obraz w przewodnikach T10 s. 9 i T30 s. 12). Na szarym tle bez plam; 0 czysto białych pikseli na klawiaturze, na szkle tylko jasna karta do montażu.
+- `T10-ANLC.png`: grafika z karty T10 (wersja Jarltech, `bb_ds_jt_p1-004_1036x664.png`) na płótnie 1200 × 800 jak T30, skala 0,97, produkt 984 × 621 (82,0 × 77,6 %).
+- Mapy `product-image-frames.json` i `product-image-uniform-bounds.json` poprawione ręcznie (2 wpisy); wymiary w `product-image-dims.json` bez zmian.
+
+**Bez zmian (decyzja właściciela):** zdanie o zasilaczu 10 A stacji `204020040`; T30 w filtrze upadków „1,5 m i więcej” według wartości z osłoną; zdjęcie T40 Ultra w pionie.
+
+**Weryfikacja:** `porownaj-opisy.py --prefiks=bluebird-` — urządzenia i akcesoria, wszystkie 4 pola: 0 par. `npm run build` OK, `npx tsc --noEmit` 0 błędów, `check-product-images.mjs` — wszystkie pliki na miejscu. `next start -p 3158`: karty T30, T10, T40 Ultra, `/tablety-bluebird`, `/tablety-przemyslowe` i zmienione akcesoria — 200; T40 Ultra: „Zapowiedź”, „Cena na zapytanie”, bez koszyka i tabeli wariantów, JSON-LD bez `offers` i `mpn`, poza `merchant-feed` i `ceneo-feed`; `cipherlab-8000`: „Na zapytanie”, bez koszyka i `offers`, OG jak wcześniej. Na karcie T30 akcesoria: 4 kafle i „Pokaż pozostałe (12)”.
