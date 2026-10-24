@@ -206,6 +206,7 @@ export const zebraRs2100Products: Product[] = [
       "zebra-tc201-50-16000-220r"
     ],
     "relatedProducts": [
+      "zebra-rs6100",
       "m3-wr15",
       "m3-wr10",
       "proglove-leo",
@@ -831,12 +832,12 @@ export const zebraRs2100Accessories: Product[] = [
   {
     "id": "zebra-rs2100-bt-rs5x6-dngl-01",
     "slug": "zebra-rs2100-bt-rs5x6-dngl-01",
-    "name": "Adapter Bluetooth Zebra do skanerów RS2100",
-    "seoH1": "Adapter Bluetooth Zebra do skanerów RS2100",
-    "seoTitle": "Adapter Bluetooth Zebra do skanerów RS2100 — BT-RS5X6-DNGL-01",
-    "seoDescription": "Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do komputera PC przez USB: do 7 skanerów noszonych RS2100, Bluetooth 5.2. Przewód USB sprzedawany osobno.",
-    "shortDescription": "Zebra BT-RS5X6-DNGL-01 — adapter Bluetooth 5.2 podłączany przez USB do komputera; łączy do 7 skanerów noszonych RS2100. Przewód USB sprzedawany osobno.",
-    "description": "Adapter BT-RS5X6-DNGL-01 łączy skanery noszone Zebra RS2100 z komputerem stacjonarnym przez port USB. Obsługuje do siedmiu skanerów RS2100 jednocześnie. Pracownicy kilku stanowisk, np. pakowania, mogą więc przesyłać kody do jednego komputera z dużym ekranem.\n\nSkaner paruje się z adapterem, skanując kod parowania na obudowie adaptera. Skaner musi mieć wtedy ustawienia fabryczne. Po połączeniu dioda skanera gaśnie, a skaner potwierdza parowanie sygnałem dźwiękowym. Adapter można położyć na poziomej powierzchni albo zamocować pionowo.\n\nAdapter obsługuje Bluetooth 5.2 klasy 1 i 2 z profilami SPP, HID i SSI. Ma wymiary 113 × 60,1 × 31 mm, waży 98 g i pobiera 5 V DC, 200 mA. Pracuje w temperaturze od −20 do 50 °C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód USB Zebra do adaptera Bluetooth (CBA-U46-S07ZAR)](/produkt/zebra-rs2100-cba-u46-s07zar)\n\nAdapter z przewodem w jednym opakowaniu to zestaw [KT-RS5X6-BTDCBL-01](/produkt/zebra-rs2100-kt-rs5x6-btdcbl-01).",
+    "name": "Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do skanerów noszonych",
+    "seoH1": "Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do skanerów noszonych",
+    "seoTitle": "Adapter Bluetooth Zebra do skanerów noszonych RS2100, RS5100, RS6100 — BT-RS5X6-DNGL-01",
+    "seoDescription": "Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do komputera PC przez USB: do 7 skanerów noszonych RS2100, RS5100 lub RS6100, Bluetooth 5.2. Przewód USB sprzedawany osobno.",
+    "shortDescription": "Zebra BT-RS5X6-DNGL-01 — adapter Bluetooth 5.2 podłączany przez USB do komputera; łączy do 7 skanerów noszonych RS2100, RS5100 lub RS6100. Przewód USB sprzedawany osobno.",
+    "description": "Adapter BT-RS5X6-DNGL-01 łączy skanery noszone Zebra RS2100, RS5100 i RS6100 z komputerem stacjonarnym przez port USB. Obsługuje do siedmiu skanerów jednocześnie. Pracownicy kilku stanowisk, np. pakowania, mogą więc przesyłać kody do jednego komputera z dużym ekranem.\n\nSkaner paruje się z adapterem, skanując kod parowania na obudowie adaptera. Skaner musi mieć wtedy ustawienia fabryczne. Po połączeniu dioda skanera gaśnie, a skaner potwierdza parowanie sygnałem dźwiękowym. Adapter można położyć na poziomej powierzchni albo zamocować pionowo.\n\nAdapter obsługuje Bluetooth 5.2 klasy 1 i 2 z profilami SPP, HID i SSI. Ma wymiary 113 × 60,1 × 31 mm, waży 98 g i pobiera 5 V DC, 200 mA. Pracuje w temperaturze od −20 do 50 °C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód USB Zebra do adaptera Bluetooth (CBA-U46-S07ZAR)](/produkt/zebra-rs2100-cba-u46-s07zar)\n\nAdapter z przewodem w jednym opakowaniu to zestaw [KT-RS5X6-BTDCBL-01](/produkt/zebra-rs2100-kt-rs5x6-btdcbl-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -870,7 +871,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Liczba skanerów",
-        "value": "Do 7 skanerów RS2100 jednocześnie"
+        "value": "Do 7 skanerów RS2100, RS5100 lub RS6100 jednocześnie"
       },
       {
         "name": "Połączenie z komputerem",
@@ -914,7 +915,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra RS2100"
+        "value": "Zebra RS2100, Zebra RS5100, Zebra RS6100"
       }
     ],
     "applications": [
@@ -926,7 +927,8 @@ export const zebraRs2100Accessories: Product[] = [
       "zebra-rs2100-kt-rs5x6-btdcbl-01"
     ],
     "relatedProducts": [
-      "zebra-rs2100"
+      "zebra-rs2100",
+      "zebra-rs6100"
     ],
     "downloads": [
       {
@@ -952,9 +954,9 @@ export const zebraRs2100Accessories: Product[] = [
     "name": "Zestaw adaptera Bluetooth Zebra z przewodem USB",
     "seoH1": "Zestaw adaptera Bluetooth Zebra z przewodem USB",
     "seoTitle": "Zestaw adaptera Bluetooth Zebra z przewodem USB — KT-RS5X6-BTDCBL-01",
-    "seoDescription": "Zestaw Zebra KT-RS5X6-BTDCBL-01: adapter Bluetooth i przewód USB CBA-U46-S07ZAR do połączenia do 7 skanerów RS2100 z komputerem PC.",
-    "shortDescription": "Zebra KT-RS5X6-BTDCBL-01 — adapter Bluetooth z przewodem USB w jednym opakowaniu, do połączenia skanerów noszonych RS2100 z komputerem. PN KT-RS5X6-BTDCBL-01.",
-    "description": "Zestaw KT-RS5X6-BTDCBL-01 zawiera adapter Bluetooth i przewód USB CBA-U46-S07ZAR. Po podłączeniu do portu USB komputera adapter odbiera kody z maksymalnie siedmiu skanerów Zebra RS2100.\n\nKażdy skaner łączy się z adapterem po zeskanowaniu kodu parowania z obudowy adaptera. Adapter pracuje w standardzie Bluetooth 5.2, ma obudowę 113 × 60,1 × 31 mm i może stać na blacie albo być zamocowany pionowo.\n\nZestaw nie wymaga dokupowania żadnego przewodu. Sam adapter, bez przewodu, ma numer [BT-RS5X6-DNGL-01](/produkt/zebra-rs2100-bt-rs5x6-dngl-01); ten numer wybiera się, gdy przewód CBA-U46-S07ZAR jest już na miejscu.",
+    "seoDescription": "Zestaw Zebra KT-RS5X6-BTDCBL-01: adapter Bluetooth i przewód USB CBA-U46-S07ZAR do połączenia maksymalnie 7 skanerów Zebra (RS2100, RS5100, RS6100) z komputerem PC.",
+    "shortDescription": "Zebra KT-RS5X6-BTDCBL-01 — adapter Bluetooth z przewodem USB w jednym opakowaniu, do połączenia skanerów noszonych RS2100, RS5100 i RS6100 z komputerem. PN KT-RS5X6-BTDCBL-01.",
+    "description": "Zestaw KT-RS5X6-BTDCBL-01 zawiera adapter Bluetooth i przewód USB CBA-U46-S07ZAR. Po podłączeniu do portu USB komputera adapter odbiera kody z maksymalnie siedmiu skanerów Zebra RS2100, RS5100 lub RS6100.\n\nKażdy skaner łączy się z adapterem po zeskanowaniu kodu parowania z obudowy adaptera. Adapter pracuje w standardzie Bluetooth 5.2, ma obudowę 113 × 60,1 × 31 mm i może stać na blacie albo być zamocowany pionowo.\n\nZestaw nie wymaga dokupowania żadnego przewodu. Sam adapter, bez przewodu, ma numer [BT-RS5X6-DNGL-01](/produkt/zebra-rs2100-bt-rs5x6-dngl-01); ten numer wybiera się, gdy przewód CBA-U46-S07ZAR jest już na miejscu.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow"
@@ -988,7 +990,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Liczba skanerów",
-        "value": "Do 7 skanerów RS2100 jednocześnie"
+        "value": "Do 7 skanerów RS2100, RS5100 lub RS6100 jednocześnie"
       },
       {
         "name": "Połączenie z komputerem",
@@ -1032,11 +1034,11 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Zebra RS2100"
+        "value": "Zebra RS2100, Zebra RS5100, Zebra RS6100"
       }
     ],
     "applications": [
-      "Pierwsze podłączenie skanerów RS2100 do komputera"
+      "Pierwsze podłączenie skanerów noszonych Zebra do komputera"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1044,7 +1046,8 @@ export const zebraRs2100Accessories: Product[] = [
       "zebra-rs2100-cba-u46-s07zar"
     ],
     "relatedProducts": [
-      "zebra-rs2100"
+      "zebra-rs2100",
+      "zebra-rs6100"
     ],
     "downloads": [
       {
@@ -1070,9 +1073,9 @@ export const zebraRs2100Accessories: Product[] = [
     "name": "Przewód USB Zebra do adaptera Bluetooth",
     "seoH1": "Przewód USB Zebra do adaptera Bluetooth",
     "seoTitle": "Przewód USB Zebra do adaptera Bluetooth — CBA-U46-S07ZAR",
-    "seoDescription": "Przewód USB Zebra CBA-U46-S07ZAR do adaptera Bluetooth BT-RS5X6-DNGL-01, który łączy skanery noszone RS2100 z komputerem PC. Kabel USB Zebra.",
-    "shortDescription": "Zebra CBA-U46-S07ZAR — przewód USB do adaptera Bluetooth BT-RS5X6-DNGL-01, który łączy skanery noszone RS2100 z komputerem PC.",
-    "description": "Przewód CBA-U46-S07ZAR podłącza adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do portu USB komputera. Adapter jest sprzedawany bez przewodu, dlatego przy zakupie samego adaptera potrzebny jest ten przewód.\n\nPrzewód jest też częścią zestawu [KT-RS5X6-BTDCBL-01](/produkt/zebra-rs2100-kt-rs5x6-btdcbl-01), który zawiera adapter i przewód. Przy zakupie zestawu nie trzeba kupować przewodu osobno.\n\nAdapter podłączony tym przewodem obsługuje do siedmiu skanerów [Zebra RS2100](/produkt/zebra-rs2100).",
+    "seoDescription": "Przewód USB Zebra CBA-U46-S07ZAR do adaptera Bluetooth BT-RS5X6-DNGL-01, który łączy skanery noszone RS2100, RS5100 i RS6100 z komputerem PC. Kabel USB Zebra.",
+    "shortDescription": "Zebra CBA-U46-S07ZAR — przewód USB do adaptera Bluetooth BT-RS5X6-DNGL-01, który łączy z komputerem PC skanery noszone RS2100, RS5100 i RS6100.",
+    "description": "Przewód CBA-U46-S07ZAR podłącza adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do portu USB komputera. Adapter jest sprzedawany bez przewodu, dlatego przy zakupie samego adaptera potrzebny jest ten przewód.\n\nPrzewód jest też częścią zestawu [KT-RS5X6-BTDCBL-01](/produkt/zebra-rs2100-kt-rs5x6-btdcbl-01), który zawiera adapter i przewód. Przy zakupie zestawu nie trzeba kupować przewodu osobno.\n\nPrzez adapter podłączony tym przewodem pracuje jednocześnie do siedmiu skanerów: [Zebra RS2100](/produkt/zebra-rs2100), RS5100 i [Zebra RS6100](/produkt/zebra-rs6100).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1107,7 +1110,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Adapter BT-RS5X6-DNGL-01 do skanerów Zebra RS2100"
+        "value": "Adapter BT-RS5X6-DNGL-01 do skanerów Zebra RS2100, RS5100 i RS6100"
       }
     ],
     "applications": [
@@ -1119,7 +1122,8 @@ export const zebraRs2100Accessories: Product[] = [
       "zebra-rs2100-kt-rs5x6-btdcbl-01"
     ],
     "relatedProducts": [
-      "zebra-rs2100"
+      "zebra-rs2100",
+      "zebra-rs6100"
     ],
     "downloads": [
       {
