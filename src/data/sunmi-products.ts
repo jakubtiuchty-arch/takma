@@ -7,9 +7,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L3",
     "seoH1": "SUNMI L3",
     "seoTitle": "Kolektor danych SUNMI L3 — Android 14, ekran 6,75 cala",
-    "seoDescription": "Kolektor danych SUNMI L3: Android 14 z GMS, ekran 6,75 cala, 4G, NFC z dwóch stron i IP68. Wersje ze skanerem 2D SS1111 lub SE4710. Ceny netto.",
-    "shortDescription": "SUNMI L3 — kolektor danych z ekranem 6,75 cala, Androidem 14 i 4G LTE. Wersje ze skanerem SS1111, SE4710 lub bez modułu skanującego.",
-    "description": "Kolektor danych SUNMI L3 służy do inwentaryzacji, przyjęć towaru i kompletacji zamówień w sklepie, supermarkecie i magazynie. System to SUNMI OS 4.0 na Androidzie 14 z usługami Google (GMS). Ośmiordzeniowy procesor pracuje z taktowaniem do 2,2 GHz. Ekran IPS 6,75 cala ma rozdzielczość 720 × 1600 pikseli.\n\n## Skaner kodów kreskowych SS1111 lub SE4710 w czterech wersjach\n\nCztery z sześciu konfiguracji mają moduł skanujący kody kreskowe 1D i kody 2D. P09070073, P09070036 i P09070052 mają moduł SS1111, a P09070030 moduł SE4710. P09070015 i P09070072 nie mają modułu skanującego. Pamięć wynosi 3/32, 4/64 albo 6/128 GB, zależnie od PN. P09070073 i P09070030 mają z tyłu styki POGO do uchwytu spustowego. P09070052 ma gniazdo kart PSAM.\n\n## NFC z dwóch stron, 4G i obudowa IP68\n\nNFC odczytuje karty i znaczniki od strony ekranu i od tyłu obudowy. Obsługuje standardy ISO/IEC 14443 A/B, Mifare, Felica i ISO 15693 oraz płatności SoftPOS z certyfikatem EMVCo PCD L1. Wersja L3 z czytnikiem UHF RFID odczytuje do 300 znaczników na sekundę z odległości do 4 m. Oferowane konfiguracje nie mają modułu RFID. Terminal łączy się przez 4G, Bluetooth 5.2 i Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz. Obudowa 175 × 79 × 15 mm ma klasę IP68 i wytrzymuje upadek z 1,5 m na beton. Terminal waży 282 g i pracuje w temperaturze od -20 do 55°C. Wymienna bateria litowo-polimerowa 4,4 V ma 5000 mAh. Na drugą zmianę jest zapasowa [bateria X09060609](/produkt/sunmi-x09060609).\n\nTen sam ekran i wymiary ma [SUNMI M3](/produkt/sunmi-m3), ale bez modemu 4G i skanera, z obudową IP65.",
+    "seoDescription": "Kolektor danych SUNMI L3 z NFC z dwóch stron, Androidem 14 i IP68. Terminal L3 SUNMI ze skanerem SS1111 lub SE4710. PN: P09070036, P09070030, P09070073.",
+    "shortDescription": "SUNMI L3 — kolektor danych 6,75 cala z czytnikami NFC od strony ekranu i na tylnej ściance, z Androidem 14 i klasą IP68.",
+    "description": "SUNMI L3 to kolektor danych z dwoma czytnikami NFC. Czytnik przy ekranie obsługuje płatności SoftPOS z certyfikatem EMVCo PCD L1, weryfikację tożsamości i karty członkowskie. Czytnik na tylnej ściance służy np. do kontroli dostępu i potwierdzania obchodów.\n\nNa ekranie 6,75 cala o jasności 420 nitów można pracować w rękawicach. Szkło Corning Gorilla Glass i wzmocnione narożniki chronią terminal przy upadku z 1,5 m na beton. Klasa IP68 obejmuje 30 minut zanurzenia na głębokości 1,2 m, a test bębnowy 2000 upadków z 0,5 m. Ośmiordzeniowy procesor 2,2 GHz pracuje z pamięcią UFS i Androidem 14 (SUNMI OS 4.0) z usługami Google. Ogniwo 5000 mAh (4,4 V) pozwala na do 10 godzin ciągłej pracy.\n\nL3 obsługuje przyjęcia towaru, inwentaryzację, uzupełnianie półek, kompletację i wydania w handlu i łańcuchu dostaw. W ofercie jest sześć konfiguracji: z modułem SS1111 albo SE4710, z tylnymi stykami POGO do uchwytu spustowego, z gniazdem PSAM oraz dwie bez modułu skanującego. Wersji z czytnikiem UHF RFID ta oferta nie obejmuje. Na drugą zmianę jest [bateria zapasowa 5000 mAh](/produkt/sunmi-x09060609).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -121,12 +121,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SS1111 — moduł SUNMI do odczytu kodów 1D i 2D.\n• SE4710 — moduł Zebra do odczytu kodów 1D i 2D.\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
+      "Skaner": "Moduł do odczytu kodów kreskowych 1D i kodów 2D, uruchamiany przyciskami skanowania.\n\n• SS1111 (SUNMI) i SE4710 (Zebra) czytają także kody niewyraźne, uszkodzone i zniekształcone.\n\n• W wersjach bez modułu kody czyta tylny aparat 13 MP.",
+      "Wyposażenie": "Dodatkowe złącze w obudowie L3.\n\n• Tylne POGO — styki do uchwytu spustowego L3.\n\n• PSAM — gniazdo karty modułu zabezpieczeń (SAM).",
+      "Pamięć": "RAM i wbudowana pamięć Flash (UFS) terminala.\n\n• W L3: 3/32, 4/64 albo 6/128 GB.\n\n• Gniazdo microSD przyjmuje karty do 256 GB."
     },
     "downloads": [
       {
@@ -154,22 +151,35 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Inwentaryzacja w supermarkecie",
-      "Kompletacja zamówień w łańcuchu dostaw",
-      "Płatności SoftPOS przez NFC na sali sprzedaży"
+      "Przyjęcia towaru i wydania z magazynu",
+      "Uzupełnianie półek w supermarkecie",
+      "Sprawdzanie kart członkowskich klientów",
+      "Kontrola dostępu i potwierdzanie obchodów czytnikiem NFC z tyłu"
     ],
     "faq": [
       {
         "question": "Czy SUNMI L3 ma czytnik RFID?",
-        "answer": "Wersja L3 z wbudowanym modułem UHF RFID istnieje, ale nie ma jej w tej ofercie. Moduł RFID odczytuje do 300 znaczników na sekundę z odległości do 4 m. Sześć oferowanych konfiguracji ma NFC do odczytu kart i znaczników z bliska."
+        "answer": "Nie w tej ofercie. SUNMI produkuje L3 z modułem UHF RFID, który czyta do 300 znaczników na sekundę z odległości do 4 m, ale takiej wersji TAKMA nie sprzedaje. Oferowane konfiguracje odczytują karty i znaczniki z bliska przez NFC."
       },
       {
         "question": "Który SUNMI L3 współpracuje z uchwytem spustowym?",
-        "answer": "Uchwyt C14004144 wymaga tylnych styków POGO. Mają je P09070073 ze skanerem SS1111 i P09070030 ze skanerem SE4710."
+        "answer": "[Uchwyt spustowy](/produkt/sunmi-c14004144) łączy się z terminalem przez styki POGO z tyłu obudowy. Mają je dwie konfiguracje: 4/64 GB z modułem SS1111 i 6/128 GB z modułem SE4710. W tabeli wariantów są oznaczone jako „Tylne POGO”."
       },
       {
         "question": "Czy każdy SUNMI L3 ma skaner kodów kreskowych?",
-        "answer": "Nie. P09070015 (6/128 GB) i P09070072 (3/32 GB) nie mają modułu skanującego. Moduł 1D/2D mają P09070073, P09070030, P09070036 i P09070052."
+        "answer": "Nie. Dwie konfiguracje, 3/32 GB i 6/128 GB, nie mają modułu skanującego, a kody czyta w nich tylny aparat 13 MP z autofokusem. Moduł SS1111 lub SE4710 ma pozostałe cztery wersje."
+      },
+      {
+        "question": "Do czego służy NFC na tylnej ściance SUNMI L3?",
+        "answer": "Tylny czytnik odczytuje karty i znaczniki przyłożone do obudowy, np. przy kontroli dostępu i rejestracji obchodów. Czytnik przy ekranie obsługuje płatności SoftPOS i karty członkowskie. Oba pracują ze standardami ISO/IEC 14443 A/B, Mifare, Felica i ISO 15693."
+      },
+      {
+        "question": "Na ile wystarcza bateria SUNMI L3?",
+        "answer": "Bateria litowo-polimerowa 5000 mAh daje do 10 godzin ciągłej pracy i wytrzymuje ponad 800 cykli ładowania. Algorytm baterii sam przełącza tryb długiej żywotności i tryb długiej pracy. Zapasowe baterie ładuje [ładowarka na 4 baterie](/produkt/sunmi-c14004143)."
+      },
+      {
+        "question": "Czym SUNMI L3 różni się od SUNMI M3?",
+        "answer": "Obudowa ma te same wymiary, 175 × 79 × 15 mm, a ekran tę samą przekątną 6,75 cala, więc etui, szkło i stacje są wspólne. L3 ma 4G, klasę IP68 i wersje z modułem skanującym. [SUNMI M3](/produkt/sunmi-m3) w oferowanej wersji łączy się tylko przez Wi-Fi i ma klasę IP65."
       }
     ],
     "createdAt": "2026-10-21",
@@ -181,9 +191,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2Ks",
     "seoH1": "SUNMI L2Ks",
     "seoTitle": "Kolektor danych SUNMI L2Ks z klawiaturą i skanerem 2D",
-    "seoDescription": "Kolektor danych SUNMI L2Ks z klawiaturą 23 klawiszy, ekranem 4 cale i skanerem 2D do 1 m. Upadek z 1,8 m, IP68, bateria 5000 mAh. Ceny netto.",
-    "shortDescription": "SUNMI L2Ks — kolektor danych z klawiaturą, ekranem 4 cale i skanerem 1D/2D. Android 11, bateria 5000 mAh i obudowa IP68 do pracy magazynowej.",
-    "description": "Kolektor danych SUNMI L2Ks z fizyczną klawiaturą służy do inwentaryzacji, przyjęć i wydań towaru. Ilość, lokalizację i numer dokumentu wpisuje się na 23 klawiszach, bez klawiatury ekranowej. Ekran dotykowy IPS ma 4 cale i rozdzielczość 800 × 480 pikseli. Terminal ma wymiary 160 × 64,5 × 14,4 mm i waży 243,5 g.\n\n## Skaner 2D: 10 odczytów na sekundę i zasięg do 1 m\n\nModuł skanujący wykonuje 10 odczytów na sekundę i czyta kody z odległości do 1 m. Celownik laserowy wskazuje kod, który ma być odczytany. Moduł odczytuje kody porysowane, zabrudzone i pogniecione oraz kody DPM. Typ modułu zależy od wersji: SE4770 albo SS1111. Skaner uruchamiają dwa przyciski boczne.\n\n## Android 11 z GMS albo SUNMI OS, IP68 i bateria ATL\n\nP09044025 i P09044064 mają 4 GB RAM, 32 GB pamięci i usługi Google (GMS). P09044063 ma 2 GB RAM, 16 GB pamięci i SUNMI OS bez GMS. Każda wersja łączy się przez 4G, Wi-Fi w pasmach 2,4 i 5 GHz oraz Bluetooth 5.0. Obudowa ma klasę IP68, wytrzymuje upadek z 1,8 m i 3000 cykli testu bębnowego z wysokości 0,5 m. Zakres temperatury pracy to od -20 do 55°C. Wymienna bateria litowo-polimerowa ATL 3,8 V ma 5000 mAh i wystarcza do dwóch zmian. Zapasowa [bateria X09060403](/produkt/sunmi-x09060403) ładuje się poza terminalem.\n\nEkran dotykowy 5,5 cala zamiast klawiatury i upadek z 1,5 m ma [SUNMI L2s Pro](/produkt/sunmi-l2s-pro).",
+    "seoDescription": "Kolektor danych SUNMI L2Ks z klawiaturą 23 klawiszy, skanerem SE4770 lub SS1111 i IP68. Terminal L2Ks SUNMI. PN: P09044025, P09044064, P09044063.",
+    "shortDescription": "SUNMI L2Ks — kolektor danych z 23 fizycznymi klawiszami, skanerem do 1 m i obudową IP68 odporną na upadek z 1,8 m.",
+    "description": "SUNMI L2Ks to kolektor danych z 23 fizycznymi klawiszami pod ekranem 4 cale. Ekran LCD ma jasność do 650 nitów i pozostaje czytelny w bezpośrednim słońcu. Przyciski skanowania są z przodu i na obu bokach obudowy, a przycisk zasilania ma ramkę chroniącą przed przypadkowym naciśnięciem.\n\nModuł skanujący wykonuje ponad 10 odczytów na sekundę i czyta kody z odległości do 1 m. Celownik laserowy wskazuje jeden kod, nawet gdy na regale jest ich wiele obok siebie. Moduł odczytuje też kody porysowane, zabrudzone, pogniecione oraz kody DPM.\n\nObudowa ma klasę IP68 i wytrzymuje upadek z 1,8 m oraz 3000 cykli testu bębnowego z 0,5 m. Terminal waży 243,5 g. Bateria ATL o pojemności 5000 mAh starcza na dwie zmiany i 800 cykli ładowania. Dwa głośniki skierowane do użytkownika mają ponad 100 dB, a dwa mikrofony tłumią hałas, co ułatwia rozmowy PTT przy pracujących maszynach.\n\nL2Ks jest przeznaczony do sortowania paczek na taśmociągu, inwentaryzacji i kompletacji zamówień w sklepach ze świeżą żywnością. W ofercie są dwie wersje z usługami Google i pamięcią 4/32 GB oraz jedna z SUNMI OS, pamięcią 2/16 GB i eSIM.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -269,12 +279,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SE4770 — moduł Zebra do kodów 1D i 2D z celownikiem laserowym.\n\n• SS1111 — moduł SUNMI do kodów 1D i 2D.\n\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "• GMS EDLA — system z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 11, bez usług Google (GMS).",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
+      "Skaner": "Moduł skanujący kody 1D i 2D, ponad 10 odczytów na sekundę, zasięg do 1 m.\n\n• SE4770 — moduł Zebra z celownikiem laserowym.\n\n• SS1111 — moduł SUNMI.",
+      "System": "Wersja systemu na Androidzie 11.\n\n• GMS EDLA — usługi Google i Sklep Google Play, bez eSIM.\n\n• SUNMI OS — bez usług Google, z obsługą eSIM.",
+      "NFC": "Czytnik kart zbliżeniowych typu A i B, Mifare i Felica.\n\n• W L2Ks np. do zmiany cen przez przyłożenie terminala do etykiety oraz do kart identyfikacyjnych i członkowskich.",
+      "Pamięć": "RAM i pamięć Flash.\n\n• 4/32 GB w wersjach z usługami Google, 2/16 GB w wersji z SUNMI OS.\n\n• Dodatkowo gniazdo microSD."
     },
     "downloads": [
       {
@@ -299,22 +307,31 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Wpisywanie ilości z klawiatury przy inwentaryzacji",
-      "Odczyt kodów DPM na produkcji",
-      "Przyjęcia i wydania magazynowe"
+      "Sortowanie paczek na taśmociągu",
+      "Kompletacja zamówień online w sklepie ze świeżą żywnością",
+      "Inwentaryzacja z wpisywaniem ilości na klawiaturze",
+      "Rozmowy PTT w hałaśliwej hali"
     ],
     "faq": [
       {
-        "question": "Czy SUNMI L2Ks ma fizyczną klawiaturę?",
-        "answer": "Tak. Pod ekranem 4 cale są 23 fizyczne klawisze. Przycisk zasilania ma zabezpieczenie przed przypadkowym naciśnięciem."
+        "question": "Ile klawiszy ma klawiatura SUNMI L2Ks?",
+        "answer": "Pod ekranem jest 23 fizycznych klawiszy, a obok nich przycisk funkcyjny. Skanowanie uruchamia przycisk z przodu albo jeden z przycisków bocznych. Przycisk zasilania ma ramkę, która chroni go przed przypadkowym wciśnięciem."
       },
       {
-        "question": "Który SUNMI L2Ks ma usługi Google?",
-        "answer": "Usługi Google (GMS) mają P09044025 i P09044064 z pamięcią 4/32 GB. Te wersje nie obsługują eSIM. P09044063 z pamięcią 2/16 GB pracuje na SUNMI OS bez GMS i obsługuje eSIM."
+        "question": "Która wersja SUNMI L2Ks ma usługi Google i eSIM?",
+        "answer": "Obie wersje 4/32 GB mają usługi Google (GMS) i NFC, ale nie obsługują eSIM. Wersja 2/16 GB z SUNMI OS obsługuje eSIM, ale nie ma GMS ani NFC. Moduł SE4770 ma jedna z wersji GMS; pozostałe dwie mają SS1111."
       },
       {
         "question": "Na ile starcza bateria SUNMI L2Ks?",
-        "answer": "Bateria 5000 mAh wystarcza do dwóch zmian i ma 800 cykli ładowania. W wersjach z opcjonalną baterią pomocniczą 60 mAh terminal pracuje także podczas wymiany baterii głównej."
+        "answer": "Wymienna bateria ATL 5000 mAh wystarcza na dwie ośmiogodzinne zmiany przy średnim obciążeniu i ma 800 cykli ładowania. Z opcjonalną baterią pomocniczą 60 mAh terminal pracuje podczas wymiany baterii głównej. Zapasy ładuje [ładowarka na 4 baterie L2Ks](/produkt/sunmi-c14000157)."
+      },
+      {
+        "question": "Czy SUNMI L2Ks czyta kody DPM?",
+        "answer": "Tak. Moduł czyta kody DPM, czyli znakowane bezpośrednio na częściach, a także kody porysowane i poplamione. Zasięg do 1 m dotyczy kodu Code 128 o module 22,5 mil, typowego dla listów przewozowych."
+      },
+      {
+        "question": "Czym SUNMI L2Ks różni się od L2s Pro?",
+        "answer": "L2Ks ma klawiaturę 23 klawiszy, ekran 4 cale i wytrzymuje upadek z 1,8 m. [SUNMI L2s Pro](/produkt/sunmi-l2s-pro) nie ma klawiatury fizycznej, ma ekran dotykowy 5,5 cala i wytrzymuje upadek z 1,5 m. Klasę IP68 mają oba modele."
       }
     ],
     "createdAt": "2026-10-21",
@@ -326,9 +343,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2H",
     "seoH1": "SUNMI L2H",
     "seoTitle": "Kolektor danych SUNMI L2H — skaner 2D z OCR, 4G, IP67",
-    "seoDescription": "Kolektor danych SUNMI L2H ze skanerem 2D z OCR, 4G, Wi-Fi 802.11ac gotowym na Wi-Fi 6, aparatem 16 MP i obudową IP67. Pamięć 4/64 GB. Ceny netto.",
-    "shortDescription": "SUNMI L2H — kolektor danych z ekranem 5,5 cala, skanerem 2D z OCR i pamięcią 4/64 GB. 4G LTE, czytnik linii papilarnych, bateria 5000 mAh i obudowa IP67.",
-    "description": "Kolektor danych SUNMI L2H odczytuje kody kreskowe i drukowany tekst w magazynie, przy inwentaryzacji i w dostawach. Oba oferowane PN, P09030059 i P09030061, mają 4 GB RAM i 64 GB pamięci Flash. System to SUNMI OS oparty na Androidzie 11. Procesor Kryo-260 ma osiem rdzeni: cztery 2,0 GHz i cztery 1,8 GHz. Ekran 5,5 cala ma rozdzielczość 1440 × 720 pikseli.\n\n## Skaner 1D/2D z OCR, aparat 16 MP i czytnik palca\n\nModuł skanujący czyta kody 1D i 2D, także porysowane, zagięte lub zabrudzone. Rozpoznaje też drukowany tekst (OCR) w aplikacjach, które korzystają z SDK OCR od SUNMI. Aparat tylny 16 MP z autofokusem dokumentuje uszkodzony towar przy przyjęciu, a przedni ma 5 MP. Pojemnościowy czytnik linii papilarnych blokuje dostęp do terminala. Dwupasmowy GPS (L1/L5) i barometr pomagają ustalić piętro, na którym jest pracownik.\n\n## Wi-Fi 802.11ac z gotowością na Wi-Fi 6, IP67 i 245 g\n\nDo łączności L2H ma 4G, Bluetooth 5.1 i Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz. Moduł Wi-Fi jest gotowy na standard 802.11ax (Wi-Fi 6). Obudowa 154,4 × 74,6 × 17,1 mm ma klasę IP67 i wytrzymuje upadek z 1,5 m. Masa terminala wynosi 245 g, a temperatura pracy od -20 do 55°C. Wymienna bateria litowo-polimerowa 3,8 V ma 5000 mAh, a wbudowana bateria pomocnicza 60 mAh. Pasek na dłoń jest w zestawie. Terminal i zapasową baterię jednocześnie ładuje [stacja C14000144](/produkt/sunmi-c14000144).\n\nKlasę IP68 zamiast IP67 i aparat tylny 13 MP ma [SUNMI L2s Pro](/produkt/sunmi-l2s-pro) o tych samych wymiarach. Wi-Fi w L2s Pro obsługuje standardy do 802.11ac.",
+    "seoDescription": "Kolektor danych SUNMI L2H: skaner 1D/2D z OCR, GPS L1/L5 z barometrem, IP67, Android 11. Terminal L2H SUNMI 4/64 GB. PN: P09030059, P09030061.",
+    "shortDescription": "SUNMI L2H — kolektor danych ze skanerem rozpoznającym tekst (OCR), dwupasmowym GPS z barometrem i czytnikiem linii papilarnych.",
+    "description": "SUNMI L2H ma skaner, który oprócz kodów 1D i 2D rozpoznaje drukowany tekst (OCR). Aplikacja korzysta przy tym z interfejsów SDK OCR udostępnianych przez SUNMI. Moduł czyta też kody porysowane, zagięte i zabrudzone.\n\nDwupasmowy GPS (L1/L5) i barometr ustalają położenie w poziomie i w pionie. Można więc sprawdzić, na którym piętrze magazynu jest pracownik. Czytnik linii papilarnych na tylnej ściance blokuje dostęp do terminala, a zaufane środowisko wykonawcze (TEE) chroni dane firmy.\n\nObudowa ma klasę IP67, czyli wytrzymuje 30 minut zanurzenia na głębokości 1 m, i przechodzi test upadku z 1,5 m. Ekran 5,5 cala chroni szkło Corning Gorilla Glass. Bateria ATL 5000 mAh po 800 cyklach zachowuje 80% pojemności. Wbudowana bateria pomocnicza 60 mAh podtrzymuje pracę przy wymianie baterii głównej, a przy ładowaniu 18 W (Quick Charge 3.0) bateria ładuje się w 3 godziny.\n\nL2H łączy się przez 4G z agregacją pasm (Cat 13) i Wi-Fi 802.11ac przygotowane na Wi-Fi 6. Kurierzy używają go przy sortowaniu i doręczeniach, magazynierzy przy przyjęciu towaru, a sprzedawcy przy inwentaryzacji i sprzedaży mobilnej. Oba PN w ofercie mają pamięć 4/64 GB.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -395,14 +412,6 @@ export const sunmiProducts: Product[] = [
         "availability": "unavailable"
       }
     ],
-    "variantAttributeTooltips": {
-      "Skaner": "\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
-    },
     "downloads": [
       {
         "name": "Karta katalogowa SUNMI L2H (EN)",
@@ -426,22 +435,31 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Odczyt tekstu OCR z etykiet i dokumentów",
-      "Ustalanie piętra pracownika w wielopoziomowym magazynie",
-      "Zdjęcia uszkodzeń przy przyjęciu dostawy"
+      "Sortowanie i doręczanie przesyłek kurierskich",
+      "Lokalizacja pracowników na piętrach magazynu",
+      "Odczyt numerów przesyłek i dokumentów funkcją OCR",
+      "Sprzedaż mobilna w sklepie"
     ],
     "faq": [
       {
         "question": "Czy SUNMI L2H obsługuje Wi-Fi 6?",
-        "answer": "L2H pracuje w Wi-Fi 802.11 a/b/g/n/ac w pasmach 2,4 i 5 GHz. Moduł Wi-Fi ma gotowość na standard 802.11ax (Wi-Fi 6)."
+        "answer": "Moduł Wi-Fi pracuje w standardzie 802.11 a/b/g/n/ac w pasmach 2,4 i 5 GHz i jest przygotowany na 802.11ax (Wi-Fi 6). W sieci komórkowej L2H korzysta z 4G z agregacją pasm Cat 13."
       },
       {
         "question": "Czy SUNMI L2H rozpoznaje tekst (OCR)?",
-        "answer": "Tak. Moduł skanujący rozpoznaje drukowany tekst. Aplikacja musi korzystać z interfejsów SDK OCR, które udostępnia SUNMI."
+        "answer": "Tak. Skaner rozpoznaje drukowany tekst, a nie tylko kody. Aplikacja musi korzystać z SDK OCR od SUNMI; bez tego terminal czyta wyłącznie kody 1D i 2D."
       },
       {
-        "question": "Jaką pamięć ma oferowany SUNMI L2H?",
-        "answer": "P09030059 i P09030061 mają 4 GB RAM i 64 GB pamięci Flash. Konfiguracja 6/128 GB nie wchodzi do tej oferty."
+        "question": "Jak SUNMI L2H ustala piętro, na którym jest pracownik?",
+        "answer": "Terminal łączy dwupasmowy GPS (L1/L5) z barometrem. GPS wyznacza położenie w poziomie, a barometr wysokość, czyli piętro budynku. Dane przetwarza aplikacja do zarządzania pracownikami."
+      },
+      {
+        "question": "Czy w SUNMI L2H można wymienić baterię w trakcie pracy?",
+        "answer": "Tak. Wbudowana na stałe bateria pomocnicza 60 mAh podtrzymuje pracę, gdy wyjmuje się baterię główną 5000 mAh. Terminal i zapasową baterię jednocześnie ładuje [stacja z gniazdem na baterię](/produkt/sunmi-c14000144)."
+      },
+      {
+        "question": "Czym SUNMI L2H różni się od L2s Pro?",
+        "answer": "Obudowy mają te same wymiary, 154,4 × 74,6 × 17,1 mm. L2H ma aparat 16 MP, Wi-Fi przygotowane na 802.11ax, GPS L1/L5 z barometrem i czytnik linii papilarnych, a klasę szczelności IP67. [SUNMI L2s Pro](/produkt/sunmi-l2s-pro) ma IP68 i aparat 13 MP. Akcesoria są wspólne."
       }
     ],
     "createdAt": "2026-10-21",
@@ -453,9 +471,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI L2s Pro",
     "seoH1": "SUNMI L2s Pro",
     "seoTitle": "Kolektor danych SUNMI L2s Pro — 5,5 cala, skaner 1D/2D",
-    "seoDescription": "Kolektor danych SUNMI L2s Pro z ekranem 5,5 cala i Gorilla Glass, IP68 i baterią 5000 mAh. Skaner 1D/2D do 1 m z OCR lub wersja bez skanera. Ceny netto.",
-    "shortDescription": "SUNMI L2s Pro — kolektor danych z ekranem dotykowym 5,5 cala do sklepu i magazynu. Wersje ze skanerem 1D/2D lub bez osobnego modułu. Pamięć 3/32 albo 4/64 GB, bateria 5000 mAh i IP68.",
-    "description": "Kolektor danych SUNMI L2s Pro służy do inwentaryzacji, uzupełniania półek i sprawdzania stanów w sklepie i magazynie. Moduł skanujący czyta kody kreskowe z odległości do 1 m, także na wysokich regałach. Odczytuje kody porysowane, pogniecione i zabrudzone, również w mocnym świetle. Rozpoznaje też drukowany tekst (OCR).\n\n## Pięć konfiguracji L2s Pro: skaner, pamięć i GMS\n\nCztery PN mają skaner kodów 1D/2D, w tym P09064085 i P09064080 z modułem SS1111. P09064024 nie ma modułu skanującego ani usług Google. Kody czyta w nim aparat tylny 13 MP z autofokusem i lampą błyskową. P09064085 i P09064014 mają SUNMI OS na Androidzie 12 z usługami Google (GMS). P09064007, P09064024 i P09064080 pracują na SUNMI OS bez GMS. Pamięć wynosi 3/32 albo 4/64 GB. Procesor Cortex-A53 ma osiem rdzeni: cztery 2,0 GHz i cztery 1,5 GHz.\n\n## IP68, 30 minut na głębokości 1,2 m i bateria ATL\n\nObudowa ma klasę IP68 i wytrzymuje 30 minut pod wodą na głębokości 1,2 m. Terminal wytrzymuje upadek z 1,5 m. Ekran dotykowy chroni szkło Corning Gorilla Glass. Wymiary to 154,4 × 74,6 × 17,1 mm, a masa około 250 g. Terminal pracuje w temperaturze od -20 do 55°C. Łączy się przez 4G, Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz, Bluetooth 5.0 i NFC. Wymienna bateria ATL 3,8 V ma 5000 mAh. Z opcjonalnym szybkim ładowaniem 18 W ładuje się do pełna w 3 godziny. W [stacji 4-stanowiskowej C14004067](/produkt/sunmi-c14004067) terminal ładuje się w etui, z uchwytem spustowym albo z paskiem na dłoń.\n\nAparat tylny 16 MP i Wi-Fi z gotowością na 802.11ax (Wi-Fi 6), ale klasę IP67 zamiast IP68, ma [SUNMI L2H](/produkt/sunmi-l2h) o tych samych wymiarach.",
+    "seoDescription": "Kolektor danych SUNMI L2s Pro: ekran 5,5 cala, IP68, skaner 1D/2D z OCR, GMS lub SUNMI OS. Terminal L2s Pro SUNMI. PN: P09064085, P09064014, P09064024.",
+    "shortDescription": "SUNMI L2s Pro — dotykowy kolektor danych 5,5 cala, szczelny przez 30 minut na głębokości 1,2 m, ze skanerem kodów do 1 m.",
+    "description": "SUNMI L2s Pro to dotykowy kolektor danych 5,5 cala w obudowie IP68, która wytrzymuje 30 minut pod wodą na głębokości 1,2 m i upadek z 1,5 m. Ekran chroni szkło Corning Gorilla Glass.\n\nPrzemysłowy moduł skanujący czyta kody 1D i 2D z odległości do 1 m, także na wysokich regałach magazynu. Odczytuje kody porysowane, poplamione i pogniecione. Funkcję OCR można dostosować przez SDK SUNMI do odczytu numerów przesyłek, paragonów, dokumentów tożsamości i tablic rejestracyjnych.\n\nWymienne ogniwo ATL 5000 mAh ładuje się do pełna w 3 godziny, jeśli terminal ma opcjonalne ładowanie 18 W. Procesor Cortex-A53 ma osiem rdzeni (4 × 2,0 GHz i 4 × 1,5 GHz), a system to SUNMI OS na Androidzie 12. [Stacja 4-stanowiskowa](/produkt/sunmi-c14004067) ładuje terminal także w etui, z uchwytem spustowym albo z paskiem na dłoń.\n\nOferta obejmuje pięć konfiguracji: z pamięcią 3/32 lub 4/64 GB, z usługami Google lub bez nich. Cztery mają moduł skanujący. Piąta czyta kody tylko tylnym aparatem 13 MP z autofokusem i lampą błyskową.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -556,12 +574,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• SS1111 — moduł SUNMI do kodów kreskowych 1D i kodów dwuwymiarowych 2D.\n\n• Moduł 1D/2D — osobny skaner kodów, a nie aparat fotograficzny.\n\n• Bez osobnego modułu — terminal nie ma dedykowanego skanera.\n\nZasięg odczytu zależy od wielkości i jakości kodu.",
-      "System": "• GMS EDLA — system z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 12, bez usług Google (GMS).",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
+      "Skaner": "Sposób odczytu kodów 1D i 2D w L2s Pro.\n\n• SS1111 i moduł 1D/2D — skaner z zasięgiem do 1 m i obsługą OCR.\n\n• Bez osobnego modułu — kody czyta aparat 13 MP z autofokusem.",
+      "System": "SUNMI OS na Androidzie 12.\n\n• GMS EDLA — z usługami Google i Sklepem Google Play.\n\n• SUNMI OS — bez usług Google, aplikacje ze sklepu SUNMI App Store.",
+      "Pamięć": "Pamięć operacyjna i pamięć na dane L2s Pro.\n\n• 3/32 GB albo 4/64 GB.\n\n• Karta microSD do 256 GB."
     },
     "downloads": [
       {
@@ -586,22 +601,30 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Uzupełnianie półek w sklepie",
-      "Odczyt kodów na wysokich regałach",
-      "Sprawdzanie stanów z odczytem tekstu OCR"
+      "Odczyt etykiet na wysokich regałach magazynu",
+      "Rozpoznawanie numerów przesyłek i tablic rejestracyjnych (OCR)",
+      "Skanowanie z uchwytem spustowym w produkcji i logistyce"
     ],
     "faq": [
       {
         "question": "Jaką pamięć ma SUNMI L2s Pro?",
-        "answer": "4 GB RAM i 64 GB pamięci Flash mają P09064007 i P09064014. P09064085, P09064024 i P09064080 mają 3 GB RAM i 32 GB. Karta microSD może mieć do 256 GB."
+        "answer": "Dwie konfiguracje mają 4 GB RAM i 64 GB, a trzy pozostałe 3 GB RAM i 32 GB. Każdą rozszerza karta microSD do 256 GB. Wersji 6/128 GB nie ma w ofercie."
       },
       {
         "question": "Czy SUNMI L2s Pro bez skanera odczyta kod kreskowy?",
-        "answer": "Tak, ale tylko aparatem. P09064024 nie ma modułu skanującego, więc kody 1D/2D czyta aparat tylny 13 MP. Cztery pozostałe PN mają moduł skanujący z zasięgiem do 1 m."
+        "answer": "Tak, tylnym aparatem 13 MP z autofokusem i lampą błyskową. Ta wersja nie ma modułu skanującego ani usług Google. Moduł z zasięgiem do 1 m mają pozostałe cztery konfiguracje."
       },
       {
         "question": "Które wersje SUNMI L2s Pro mają usługi Google?",
-        "answer": "GMS mają P09064085 (3/32 GB, moduł SS1111) i P09064014 (4/64 GB). Trzy pozostałe wersje pracują na SUNMI OS bez usług Google."
+        "answer": "Usługi Google (GMS) mają dwie wersje: 3/32 GB z modułem SS1111 i 4/64 GB. Trzy pozostałe pracują na SUNMI OS bez Sklepu Google Play."
+      },
+      {
+        "question": "Co obejmuje ochrona IP68 w SUNMI L2s Pro?",
+        "answer": "Obudowa jest pyłoszczelna i wytrzymuje 30 minut zanurzenia na głębokości 1,2 m. Terminal przechodzi też test upadku z 1,5 m. Ekran dodatkowo chroni [szkło hartowane](/produkt/sunmi-c20000003)."
+      },
+      {
+        "question": "Czym SUNMI L2s Pro różni się od L2H?",
+        "answer": "L2s Pro ma klasę IP68, procesor Cortex-A53 i Androida 12. [SUNMI L2H](/produkt/sunmi-l2h) ma IP67, Androida 11, aparat 16 MP, barometr z GPS L1/L5 oraz czytnik odcisków palców. Etui, szkło, pasek i stacje pasują do obu modeli."
       }
     ],
     "createdAt": "2026-10-21",
@@ -613,9 +636,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI M3",
     "seoH1": "SUNMI M3",
     "seoTitle": "Terminal POS SUNMI M3 do gastronomii — Android 14, Wi-Fi",
-    "seoDescription": "Terminal POS SUNMI M3 do zamówień w restauracji: Android 14 z GMS, ekran 6,75 cala z Gorilla Glass, bateria 5000 mAh, IP65. Wersja Wi-Fi. Cena netto.",
-    "shortDescription": "SUNMI M3 — terminal mobilny POS do obsługi zamówień z ekranem 6,75 cala i Androidem 14. Pamięć 3/32 GB, Wi-Fi 5, wymienna bateria 5000 mAh i IP65.",
-    "description": "Terminal mobilny SUNMI M3 służy kelnerom do przyjmowania zamówień przy stoliku w restauracji, kawiarni lub barze. W sklepie M3 służy do obsługi kolejki klientów. Oferowana konfiguracja P09070020 ma 3 GB RAM, 32 GB pamięci Flash i Androida 14 (SUNMI OS 4.0) z usługami Google (GMS EDLA). W zestawie są zasilacz EU i przewód USB. Program do obsługi zamówień instaluje się osobno.\n\n## Ekran 6,75 cala z Gorilla Glass i łączność Wi-Fi\n\nEkran IPS 6,75 cala o rozdzielczości 720 × 1600 pikseli chroni szkło Corning Gorilla Glass. Terminal łączy się przez Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz oraz Bluetooth 5.2. P09070020 nie ma modemu 4G ani wbudowanej drukarki. Rachunek drukuje osobna drukarka podłączona do systemu lokalu. Procesor ma osiem rdzeni i taktowanie do 2,2 GHz. Aparat przedni i tylny mają po 2 MP.\n\n## IP65, upadek z 1,5 m i 800 cykli baterii\n\nObudowa ma klasę IP65, więc jest pyłoszczelna i odporna na strugi wody. Terminal wytrzymuje upadek z 1,5 m na beton. Ma wymiary 175 × 79 × 15 mm, waży 272 g i pracuje w temperaturze od -20 do 55°C. Wymienna bateria litowo-polimerowa 4,4 V ma 5000 mAh i wytrzymuje ponad 800 cykli ładowania. Po zamknięciu sali cztery terminale naraz ładuje [stacja C14004131](/produkt/sunmi-c14004131).\n\nModem 4G, klasę IP68 i wersje ze skanerem kodów w obudowie tej samej wielkości ma [SUNMI L3](/produkt/sunmi-l3).",
+    "seoDescription": "Terminal mobilny SUNMI M3 dla restauracji: Android 14, ekran 6,75 cala, IP65, Wi-Fi. Terminal do zamówień M3 SUNMI dla kelnera. PN: P09070020.",
+    "shortDescription": "SUNMI M3 — terminal do zamówień przy stoliku z ekranem 6,75 cala i obudową IP65 odporną na mąkę, opary i rozlane napoje.",
+    "description": "SUNMI M3 to terminal mobilny do obsługi sali restauracyjnej. Kelner przyjmuje na nim zamówienia, dopisuje pozycje i sprawdza dostępność dań, a w godzinach szczytu terminal wywołuje też numery kolejki. Szybę ekranu 6,75 cala (420 nitów) wykonano ze szkła Corning Gorilla Glass, a narożniki obudowy są wzmocnione.\n\nObudowa ma klasę IP65. Pyłoszczelna konstrukcja nie przepuszcza mąki ani oparów z kuchni, a obudowa jest odporna na rozlaną zupę i herbatę. M3 wytrzymuje upadek z 1,5 m na beton. Waży 272 g, a zaokrąglony kształt ułatwia trzymanie przez całą zmianę.\n\nOśmiordzeniowy procesor 2,2 GHz i pamięć UFS pracują z Androidem 14 (SUNMI OS 4.0) i usługami Google. Wymienna bateria 5000 mAh ma o 67% więcej pojemności niż poprzednik i wytrzymuje ponad 800 cykli ładowania.\n\nW ofercie jest wersja 3/32 GB z Wi-Fi 5 i Bluetooth 5.2, bez modemu komórkowego i bez NFC. Rachunek drukuje osobna drukarka w lokalu, a program do zamówień kupuje się u dostawcy oprogramowania. Po zamknięciu sali cztery terminale ładuje [stacja 4-stanowiskowa](/produkt/sunmi-c14004131).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -671,14 +694,6 @@ export const sunmiProducts: Product[] = [
         "availability": "available"
       }
     ],
-    "variantAttributeTooltips": {
-      "Skaner": "\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
-    },
     "downloads": [
       {
         "name": "Karta katalogowa SUNMI M3 (EN)",
@@ -703,22 +718,30 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Przyjmowanie zamówień przy stoliku przez Wi-Fi",
-      "Obsługa kolejki klientów w sklepie",
-      "Obsługa sali i ogródka restauracji"
+      "Wywoływanie numerów kolejki w godzinach szczytu",
+      "Przyjmowanie i uzupełnianie zamówień przy stoliku",
+      "Sprawdzanie dostępności dań podczas obsługi sali"
     ],
     "faq": [
       {
         "question": "Czy SUNMI M3 ma NFC?",
-        "answer": "NFC jest w M3 wyposażeniem opcjonalnym. Moduł NFC obsługuje płatności SoftPOS z certyfikatem EMVCo PCD L1 oraz karty Mifare i Felica. Oferowana konfiguracja P09070020 nie ma NFC."
+        "answer": "Oferowana wersja nie ma NFC. W serii M3 NFC jest opcją: czytnik przy ekranie obsługuje SoftPOS z certyfikatem EMVCo PCD L1, a klient przykłada kartę bez obracania terminala. Konfiguracji z NFC nie ma obecnie w ofercie."
       },
       {
-        "question": "Czy SUNMI M3 P09070020 łączy się przez LTE?",
-        "answer": "Nie. Ten PN nie ma modemu 4G. Z siecią lokalu łączy się przez Wi-Fi w pasmach 2,4 i 5 GHz, a z akcesoriami przez Bluetooth 5.2."
+        "question": "Czy SUNMI M3 łączy się przez sieć komórkową?",
+        "answer": "Nie. M3 nie ma modemu komórkowego, więc z siecią lokalu łączy się przez Wi-Fi 802.11ac (2,4 i 5 GHz). Z urządzeniami w pobliżu łączy się przez Bluetooth 5.2."
       },
       {
         "question": "Czy M3 zawiera aplikację gastronomiczną?",
-        "answer": "Nie. Terminal ma system SUNMI OS 4.0 z usługami Google. Aplikację do zamówień i jej licencję kupuje się u dostawcy oprogramowania."
+        "answer": "Nie. Na terminalu jest system SUNMI OS 4.0 z usługami Google, więc program do zamówień pobiera się z Google Play lub otrzymuje od dostawcy oprogramowania. Licencję programu kupuje się osobno."
+      },
+      {
+        "question": "Czy SUNMI M3 drukuje rachunki?",
+        "answer": "Nie, M3 nie ma drukarki. Zamówienie trafia z terminala do programu sprzedaży, a rachunek drukuje drukarka w lokalu. Terminal z drukarką 58 mm to [SUNMI V3](/produkt/sunmi-v3)."
+      },
+      {
+        "question": "Czym SUNMI M3 różni się od SUNMI L3?",
+        "answer": "Obudowa 175 × 79 × 15 mm i ekran 6,75 cala są w obu modelach takie same, dlatego stacje, etui i szkło pasują do obu. [SUNMI L3](/produkt/sunmi-l3) ma 4G, wyższą klasę szczelności IP68 i warianty ze skanerem. M3 waży 10 g mniej i ma IP65."
       }
     ],
     "createdAt": "2026-10-21",
@@ -730,9 +753,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3",
     "seoH1": "SUNMI V3",
     "seoTitle": "Terminal POS SUNMI V3 z drukarką 58 mm, Android, NFC",
-    "seoDescription": "Terminal POS SUNMI V3 z drukarką 58 mm do 80 mm/s, ekranem 6,75 cala i 4G. Cztery wersje: z GMS lub SUNMI OS, ze skanerem 2D lub bez. Ceny netto.",
-    "shortDescription": "SUNMI V3 — terminal POS z drukarką paragonów 58 mm do 80 mm/s i ekranem 6,75 cala. Pamięć 3/32 GB, 4G LTE i wariant z osobnym skanerem 2D.",
-    "description": "Terminal mobilny POS SUNMI V3 służy do przyjmowania zamówień i drukowania wydruków przy kliencie: w restauracji, w dostawie i w sklepie. Wbudowana drukarka termiczna drukuje paragony i etykiety na papierze 58 mm z prędkością do 80 mm/s. Mieści rolkę o średnicy do 50 mm. Ekran IPS 6,75 cala ma rozdzielczość 720 × 1600 pikseli i jasność 420 nitów.\n\n## Cztery wersje SUNMI V3: GMS, NFC i skaner 2D\n\nP06100009 i P06100077 mają usługi Google (GMS). P06100035 i P06100007 pracują na SUNMI OS bez GMS. Laserowy skaner kodów 1D/2D ma tylko P06100077. P06100007 nie ma NFC i ma aparat tylny 5 MP. Trzy pozostałe wersje mają NFC i aparat 8 MP. Każda wersja ma sześciordzeniowy procesor Qualcomm, 3 GB RAM, 32 GB pamięci i Androida 13.\n\n## 4G, dwa gniazda Nano SIM i bateria 3100 mAh\n\nV3 łączy się przez 4G, Bluetooth 5.0 i Wi-Fi 802.11ac w pasmach 2,4 i 5 GHz. Ma dwa gniazda Nano SIM, dwa gniazda PSAM i gniazdo microSD. Wymienna bateria 7,7 V ma 3100 mAh. Terminal ma wymiary 238 × 81,8 × 16,8 mm i waży 419 g z baterią. Pracuje w temperaturze od -10 do 50°C. Między zamówieniami terminal stoi w [stacji ładującej C14004112](/produkt/sunmi-c14004112).\n\nOśmiordzeniowy procesor i pamięć 4/64 GB ma [SUNMI V3H](/produkt/sunmi-v3h) w obudowie o tych samych wymiarach.",
+    "seoDescription": "Terminal mobilny z drukarką SUNMI V3: druk 58 mm do 80 mm/s, 4G, dwa Nano SIM. V3 SUNMI z GMS lub SUNMI OS. PN: P06100009, P06100077, P06100035.",
+    "shortDescription": "SUNMI V3 — terminal do ręki z drukarką 58 mm na paragony i etykiety, sześciordzeniowym procesorem i dwoma gniazdami Nano SIM.",
+    "description": "SUNMI V3 to terminal do ręki z drukarką termiczną 58 mm. Drukarka wydaje paragony niefiskalne, numery kolejki i etykiety z prędkością do 80 mm/s. Komora mieści rolkę o średnicy 50 mm, a drukarka ma lepszą ochronę przed kurzem niż w poprzedniej generacji. Algorytm SUNMI obsługuje etykiety z nadrukiem, o nietypowym kształcie, kolorowe, na cienkim podkładzie i z czarnym znacznikiem.\n\nEkran IPS 6,75 cala ma 420 nitów. Sześciordzeniowy procesor Qualcomm pracuje z 3 GB RAM, 32 GB pamięci i SUNMI OS na Androidzie 13. Terminal ma dwa gniazda Nano SIM do łączności 4G, dwa gniazda PSAM i wymienną baterię 7,7 V / 3100 mAh. Z baterią waży 419 g.\n\nW restauracji V3 drukuje numery kolejki i potwierdzenia zamówień, w punktach z bubble tea etykiety na kubki, a w sklepie służy do kompletacji, przesunięć towaru i sprzedaży mobilnej.\n\nW ofercie są cztery wersje: dwie z usługami Google i dwie z SUNMI OS. Osobny skaner laserowy 1D/2D ma jedna wersja z GMS, a wersja bez NFC ma aparat 5 MP zamiast 8 MP. Paragon fiskalny drukuje osobna kasa lub drukarka fiskalna.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -832,12 +855,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• Moduł 1D/2D — osobny skaner obrazowy do kodów kreskowych i kodów dwuwymiarowych.\n\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\n\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "• Android (GMS) — SUNMI OS z certyfikowanymi usługami Google (GMS), w tym ze sklepem Google Play.\n\n• SUNMI OS — system SUNMI oparty na Androidzie 13, bez usług Google (GMS) i bez sklepu Google Play.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
+      "System": "SUNMI OS na Androidzie 13.\n\n• Android (GMS) — z usługami Google i Sklepem Google Play.\n\n• SUNMI OS — bez usług Google; aplikacje instaluje dostawca programu.",
+      "Skaner": "Osobny skaner laserowy z celownikiem do kodów 1D i 2D.\n\n• Czyta też kody uszkodzone, pogniecione i zabrudzone.\n\n• Bez osobnego modułu — kody czyta tylny aparat z autofokusem.",
+      "NFC": "Czytnik zbliżeniowy przy ekranie V3.\n\n• Obsługuje płatności SoftPOS (EMVCo PCD L1), jeśli aplikacja operatora płatności je obsługuje.",
+      "Aparat": "Tylny aparat z autofokusem i lampą LED.\n\n• 8 MP w wersjach z NFC, 5 MP w wersji bez NFC.\n\n• W wersjach bez skanera czyta kody 1D i 2D."
     },
     "downloads": [
       {
@@ -860,22 +881,31 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Wydruk potwierdzenia zamówienia przy stoliku",
-      "Wydruk potwierdzenia dostawy u klienta",
-      "Druk etykiet 58 mm na towar"
+      "Numery kolejki w restauracji w godzinach szczytu",
+      "Etykiety na kubki w punktach z bubble tea",
+      "Obsługa zamówień z dostawą",
+      "Kompletacja i przesunięcia towaru w sklepie"
     ],
     "faq": [
       {
-        "question": "Czym SUNMI V3 różni się od V3 MIX?",
-        "answer": "V3 MIX to tablet z ekranem 10,1 cala i drukarką na papier 58 albo 80 mm, która drukuje do 70 mm/s. Waży 670–710 g i w opcjonalnej stacji pracuje też na ladzie. SUNMI V3 to terminal do ręki z ekranem 6,75 cala i drukarką 58 mm, która drukuje do 80 mm/s."
-      },
-      {
         "question": "Który SUNMI V3 ma skaner 2D?",
-        "answer": "Laserowy skaner 1D/2D ma P06100077. Trzy pozostałe wersje nie mają osobnego modułu skanującego. Kody 1D/2D czyta w nich aparat tylny z autofokusem."
+        "answer": "Laserowy skaner 1D/2D z celownikiem ma jedna wersja, z usługami Google i NFC. W trzech pozostałych kody czyta tylny aparat z autofokusem i lampą LED."
       },
       {
         "question": "Czy SUNMI V3 wystawia paragony fiskalne?",
-        "answer": "Nie. Drukarka V3 nie ma pamięci fiskalnej. Drukuje wydruki niefiskalne, na przykład potwierdzenia zamówień i etykiety. Paragon fiskalny drukuje osobna kasa albo drukarka fiskalna."
+        "answer": "Nie. Drukarka 58 mm nie ma pamięci fiskalnej. Drukuje potwierdzenia zamówień, numery kolejki i etykiety, a paragon fiskalny wystawia kasa albo drukarka fiskalna."
+      },
+      {
+        "question": "Czy SUNMI V3 obsługuje dwie karty SIM?",
+        "answer": "Tak. V3 ma dwa gniazda Nano SIM i modem 4G, a do tego gniazdo microSD i dwa gniazda PSAM. Nowszy V3H ma jedno gniazdo Nano SIM i eSIM."
+      },
+      {
+        "question": "Jaka bateria jest w SUNMI V3?",
+        "answer": "Wymienna bateria litowa 7,7 V / 3100 mAh, ta sama co w V3H. Z [drugą baterią](/produkt/sunmi-x09050774) ogniwo wymienia się bez czekania na ładowanie, a między zamówieniami terminal stoi w [stacji ładującej](/produkt/sunmi-c14004112)."
+      },
+      {
+        "question": "Czym SUNMI V3 różni się od V3H?",
+        "answer": "[SUNMI V3H](/produkt/sunmi-v3h) ma osiem rdzeni, pamięć 4/64 GB, czytnik linii papilarnych i eSIM. V3 ma procesor sześciordzeniowy, 3/32 GB i dwa gniazda Nano SIM. Drukarka 58 mm, ekran i wymiary obudowy są takie same."
       }
     ],
     "createdAt": "2026-10-21",
@@ -887,9 +917,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3H",
     "seoH1": "SUNMI V3H",
     "seoTitle": "Terminal POS SUNMI V3H z drukarką 58 mm, 4/64 GB, GMS",
-    "seoDescription": "Terminal POS SUNMI V3H z drukarką 58 mm, pamięcią 4/64 GB, GMS i czytnikiem linii papilarnych. Wersja ze skanerem 2D albo bez. Ceny netto.",
-    "shortDescription": "SUNMI V3H — terminal POS z drukarką paragonów 58 mm, pamięcią 4/64 GB i czytnikiem linii papilarnych. Dwie konfiguracje z GMS EDLA, w tym wersja ze skanerem 2D.",
-    "description": "Terminal mobilny POS SUNMI V3H łączy drukarkę 58 mm z logowaniem odciskiem palca. Pracownik odblokowuje terminal i loguje się do aplikacji jednym dotknięciem czytnika. V3H służy do obsługi zamówień w restauracji, dostaw i sprzedaży w sklepie. Obie oferowane konfiguracje mają ośmiordzeniowy procesor Qualcomm, 4 GB RAM, 64 GB pamięci i Androida 13 z usługami Google (GMS EDLA).\n\n## Drukarka 58 mm do paragonów i pięciu rodzajów etykiet\n\nDrukarka termiczna drukuje z prędkością do 80 mm/s. Przyjmuje rolkę papieru 58 mm o średnicy do 50 mm. Oprócz paragonów drukuje etykiety z nadrukiem, etykiety o nietypowym kształcie, kolorowe, na cienkim podkładzie i z czarnym znacznikiem. Drukarka nie jest fiskalna. Paragon fiskalny w lokalu drukuje osobna kasa.\n\n## P06100047 ze skanerem, eSIM i bateria 3100 mAh\n\nObie wersje mają 4G, Wi-Fi 802.11ac, Bluetooth 5.0, NFC i aparat tylny 8 MP. P06100047 ma też laserowy skaner kodów 1D/2D i przedni aparat 2 MP. Terminal ma gniazdo Nano SIM, obsługę eSIM, dwa gniazda PSAM i gniazdo microSD. Ekran 6,75 cala ma jasność 420 nitów. Bateria wymienna 7,7 V ma pojemność 3100 mAh. Terminal ma wymiary 238 × 81,8 × 16,8 mm, waży 419 g z baterią i pracuje w temperaturze od -10 do 50°C. Druga [bateria X09050774](/produkt/sunmi-x09050774) wydłuża pracę z dala od stacji.\n\nSześciordzeniowy procesor, pamięć 3/32 GB i dwa gniazda Nano SIM ma [SUNMI V3](/produkt/sunmi-v3).",
+    "seoDescription": "Terminal POS z drukarką SUNMI V3H: czytnik linii papilarnych, eSIM, 4/64 GB, usługi Google. V3H SUNMI ze skanerem 2D lub bez. PN: P06100047, P06100033.",
+    "shortDescription": "SUNMI V3H — terminal z drukarką 58 mm, logowaniem odciskiem palca, eSIM i pamięcią 4/64 GB.",
+    "description": "SUNMI V3H to terminal z drukarką 58 mm i czytnikiem linii papilarnych. Jednym dotknięciem palca pracownik odblokowuje terminal i loguje się do aplikacji. Obudowa ma 16,7 mm grubości i metaliczne wykończenie.\n\nOśmiordzeniowy procesor Qualcomm jest trzykrotnie wydajniejszy od poprzednika. Ma do dyspozycji 4 GB RAM i 64 GB pamięci UFS, a system to Android 13 z usługami Google (GMS EDLA). Oprócz gniazda Nano SIM terminal obsługuje eSIM.\n\nDrukarka termiczna drukuje do 80 mm/s na rolce 58 mm o średnicy do 50 mm. Poza paragonami niefiskalnymi obsługuje etykiety kolorowe, z czarnym znacznikiem, o nietypowym kształcie i na cienkim podkładzie. NFC przyjmuje płatności SoftPOS przez aplikację operatora, a terminal obsługuje też płatności kodem QR.\n\nV3H służy do obsługi zamówień z dostawą, przyjmowania zamówień przy stoliku i pracy na sali sprzedaży. Oferta obejmuje dwie wersje: z laserowym skanerem 1D/2D i bez niego. Jasność ekranu wynosi 420 nitów. Druga [bateria 3100 mAh](/produkt/sunmi-x09050774) wydłuża pracę z dala od stacji.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -959,12 +989,7 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Skaner": "• Moduł 1D/2D — osobny skaner obrazowy do kodów kreskowych i kodów dwuwymiarowych.\n• Bez osobnego modułu — konfiguracja nie ma dedykowanego skanera kodów. Aparat ma osobne zastosowanie.\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
+      "Skaner": "Laserowy skaner kodów 1D i 2D z celownikiem.\n\n• W V3H ma go jedna wersja, razem z przednim aparatem 2 MP.\n\n• Bez osobnego modułu — kody czyta tylny aparat 8 MP."
     },
     "downloads": [
       {
@@ -988,21 +1013,30 @@ export const sunmiProducts: Product[] = [
     "compatibleAccessories": [],
     "applications": [
       "Logowanie kelnerów odciskiem palca",
-      "Druk etykiet z czarnym znacznikiem",
-      "Płatności SoftPOS przy dostawie"
+      "Etykiety z czarnym znacznikiem na zamówienia",
+      "Płatności kartą i kodem QR przy dostawie",
+      "Obsługa klienta na sali sprzedaży"
     ],
     "faq": [
       {
         "question": "Czy wszystkie wersje SUNMI V3H mają skaner?",
-        "answer": "Nie. Skaner laserowy 1D/2D jest tylko w P06100047. W P06100033 kody 1D/2D czyta aparat tylny z autofokusem."
+        "answer": "Nie. Laserowy skaner 1D/2D ma tylko jedna z dwóch wersji; ma ona też przedni aparat 2 MP. W wersji bez skanera kody czyta tylny aparat 8 MP z autofokusem."
       },
       {
         "question": "Czy SUNMI V3H drukuje na papierze 80 mm?",
-        "answer": "Nie. Drukarka V3H przyjmuje papier 58 mm i rolkę o średnicy do 50 mm. Papier o szerokości 58–80 mm obsługuje SUNMI V3 Plus."
+        "answer": "Nie. Mechanizm przyjmuje papier 58 mm, a rolka może mieć najwyżej 50 mm średnicy. Papier o szerokości od 58 do 80 mm przyjmuje [SUNMI V3 Plus](/produkt/sunmi-v3-plus)."
+      },
+      {
+        "question": "Do czego służy czytnik linii papilarnych w SUNMI V3H?",
+        "answer": "Odciskiem palca pracownik odblokowuje terminal i loguje się do zgodnych aplikacji, bez wpisywania hasła. Czytnik mają obie oferowane wersje."
       },
       {
         "question": "Czy SUNMI V3H przyjmuje płatności zbliżeniowe?",
-        "answer": "NFC w obu wersjach obsługuje płatności SoftPOS. Rodzina V3 spełnia wymagania certyfikatu EMVCo PCD L1. Do przyjęcia płatności kartą potrzebna jest aplikacja operatora płatności."
+        "answer": "NFC w obu wersjach obsługuje SoftPOS, a rodzina V3 spełnia wymagania certyfikatu EMVCo PCD L1. Do płatności kartą potrzebna jest aplikacja operatora płatności. Kod QR do zapłaty odczyta skaner albo aparat."
+      },
+      {
+        "question": "Czym SUNMI V3H różni się od V3?",
+        "answer": "V3H ma procesor ośmiordzeniowy, 4/64 GB, czytnik linii papilarnych, eSIM i usługi Google w obu wersjach. [SUNMI V3](/produkt/sunmi-v3) ma sześć rdzeni, mniej pamięci (3/32 GB) i dwie karty Nano SIM zamiast eSIM. Akcesoria do obu modeli są wspólne."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1014,9 +1048,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI V3 Plus",
     "seoH1": "SUNMI V3 Plus",
     "seoTitle": "Terminal POS SUNMI V3 Plus z drukarką 80 mm i Wi-Fi 6E",
-    "seoDescription": "Terminal POS SUNMI V3 Plus z drukarką 58–80 mm do 100 mm/s, skanerem 2D, Androidem 14 i Wi-Fi 6E. Pamięć 4/64 GB i 4G LTE. Cena netto.",
-    "shortDescription": "SUNMI V3 Plus — terminal POS z drukarką paragonów 58–80 mm do 100 mm/s i skanerem 2D. Android 14, pamięć 4/64 GB, Wi-Fi 6E i bateria 3800 mAh.",
-    "description": "Terminal mobilny POS SUNMI V3 Plus służy do sprzedaży w terenie, obsługi zamówień na wynos, płatności przy kliencie i śledzenia produkcji. Wbudowana drukarka termiczna przyjmuje papier o szerokości od 58 do 80 mm. Drukuje z prędkością do 100 mm/s z rolek o średnicy do 60 mm, także etykiety.\n\n## P06120005: skaner 2D, aparat 13 MP i pamięć 4/64 GB\n\nOferowany PN P06120005 ma skaner kodów 2D, aparat tylny 13 MP i przedni 2 MP. Ma 4 GB RAM i 64 GB pamięci Flash, a karta microSD może mieć do 512 GB. System to SUNMI OS 4.0 na Androidzie 14. Procesor Qualcomm ma taktowanie do 2,4 GHz. Ekran IPS 6,75 cala ma jasność 420 nitów i powłokę przeciw odciskom palców.\n\n## Wi-Fi 6E, bateria 3800 mAh i upadek z 1,2 m\n\nV3 Plus łączy się przez 4G, Bluetooth 5.3 i Wi-Fi 802.11ax w pasmach 2,4, 5 i 6 GHz (Wi-Fi 6E). Pasmo 6 GHz działa tylko ze zgodnym punktem dostępowym. NFC obsługuje płatności SoftPOS z certyfikatem EMVCo PCD L1 i emulację karty (HCE). Bateria litowo-polimerowa 7,7 V / 3800 mAh jest wymienna. Terminal ma wymiary 260 × 100 × 76 mm, waży 500 g i wytrzymuje upadek z 1,2 m na beton. Zakres temperatury pracy wynosi od -10 do 50°C. Do pracy jedną ręką służy [pasek na dłoń C20000086](/produkt/sunmi-c20000086).\n\nDrukarkę na papier 58 mm, pamięć 3/32 GB i Wi-Fi 802.11ac ma [SUNMI V3](/produkt/sunmi-v3).",
+    "seoDescription": "Terminal mobilny z drukarką 80 mm SUNMI V3 Plus: druk 58–80 mm do 100 mm/s, skaner 2D, Wi-Fi 6E, Android 14. V3 Plus SUNMI, PN: P06120005.",
+    "shortDescription": "SUNMI V3 Plus — terminal z drukarką na papier od 58 do 80 mm, rolką 60 mm, skanerem 2D i Wi-Fi 6E.",
+    "description": "SUNMI V3 Plus to mobilny terminal z drukarką, która przyjmuje papier o szerokości od 58 do 80 mm. Drukuje do 100 mm/s, a rolka może mieć średnicę 60 mm. Komora mieści o około 45% więcej papieru niż w poprzedniej generacji, więc rolkę wymienia się rzadziej. Drukarka przełącza się między paragonami niefiskalnymi a etykietami, także wykrawanymi i kolorowymi.\n\nSkaner 2D czyta kody z odległości o 60% większej niż w poprzedniej generacji, w tym kody zabrudzone i ułożone obok innych. Ekran 6,75 cala ma 420 nitów i jest czytelny w mocnym świetle na zewnątrz. Konstrukcja chroni drukarkę przed pyłem i piaskiem, a terminal wytrzymuje upadek z 1,2 m.\n\nWi-Fi 6E z dwiema antenami obsługuje pasma 2,4, 5 oraz 6 GHz; pasmo 6 GHz wymaga zgodnego punktu dostępowego. Bateria 7,7 V / 3800 mAh ma cyfrowy identyfikator, a jej stan można sprawdzić zdalnie w chmurze.\n\nV3 Plus obsługuje zamówienia na wynos, płatności przy kliencie, sprzedaż w terenie i śledzenie produkcji. W ofercie jest wersja 4/64 GB z systemem SUNMI OS 4.0 (Android 14), usługami Google, 4G i NFC.",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1074,14 +1108,6 @@ export const sunmiProducts: Product[] = [
         "availability": "available"
       }
     ],
-    "variantAttributeTooltips": {
-      "Skaner": "\nZasięg zależy od wielkości i jakości kodu.",
-      "System": "GMS to usługi Google dla zgodnych aplikacji. SUNMI OS bazuje na Androidzie. Obecność Androida sama nie potwierdza dostępności GMS.",
-      "Wyposażenie": "Tylne POGO to styki do zgodnego uchwytu. PSAM to obsługa modułu zabezpieczeń; nie oznacza gotowej usługi płatniczej. Podstawowe oznacza wersję bez tych wskazanych rozszerzeń.",
-      "NFC": "NFC to odczyt zgodnych nośników z bliska. Nie oznacza czytnika UHF ani uruchomionej obsługi płatności.",
-      "Pamięć": "Pierwsza liczba oznacza RAM dla aplikacji. Druga to pamięć Flash na system, aplikacje i dane.",
-      "Aparat": "Rozdzielczość tylnego aparatu. Aparat dokumentuje towar; nie jest tym samym co osobny moduł skanujący."
-    },
     "downloads": [
       {
         "name": "Karta katalogowa SUNMI V3 Plus (EN)",
@@ -1099,22 +1125,31 @@ export const sunmiProducts: Product[] = [
     ],
     "compatibleAccessories": [],
     "applications": [
-      "Sprzedaż w terenie z wydrukiem 80 mm",
-      "Śledzenie produkcji z odczytem kodów 2D",
-      "Zamówienia na wynos z wydrukiem etykiet"
+      "Wydruk zamówień na wynos na papierze 80 mm",
+      "Sprzedaż w plenerze przy mocnym świetle",
+      "Śledzenie partii produkcji kodami 2D",
+      "Druk etykiet wykrawanych i kolorowych"
     ],
     "faq": [
       {
         "question": "Jaką szerokość papieru obsługuje SUNMI V3 Plus?",
-        "answer": "Drukarka obsługuje papier o szerokości od 58 do 80 mm. Rolka może mieć średnicę do 60 mm. Prędkość druku wynosi do 100 mm/s."
+        "answer": "Od 58 do 80 mm; średnica rolki do 60 mm. Papier 80 mm daje czytelniejszy wydruk, a rolki 58 mm nadal pasują. Prędkość druku wynosi do 100 mm/s."
       },
       {
-        "question": "Czy SUNMI V3 Plus jest kasą fiskalną?",
-        "answer": "Nie. Drukarka V3 Plus nie ma modułu fiskalnego. Na papierze do 80 mm drukuje wydruki niefiskalne, a sprzedaż fiskalną rejestruje kasa fiskalna."
+        "question": "Czy SUNMI V3 Plus może zastąpić kasę fiskalną?",
+        "answer": "Nie. Wbudowana drukarka nie ma modułu fiskalnego i wydaje tylko dokumenty niefiskalne, np. potwierdzenia zamówień i etykiety. Sprzedaż fiskalną rejestruje kasa fiskalna."
       },
       {
         "question": "Jaki pasek na dłoń pasuje do SUNMI V3 Plus?",
-        "answer": "Pasuje pasek C20000086. Ten sam pasek pasuje do SUNMI V3 i V3H."
+        "answer": "[Pasek na dłoń](/produkt/sunmi-c20000086) z antypoślizgowym wykończeniem pasuje do V3 Plus, a także do V3 i V3H. Innych akcesoriów do V3 Plus nie ma obecnie w ofercie."
+      },
+      {
+        "question": "Czy SUNMI V3 Plus pracuje w paśmie 6 GHz?",
+        "answer": "Tak. Wi-Fi 6E (802.11ax) z dwiema antenami 2×2 MIMO pracuje w pasmach 2,4, 5 i 6 GHz, ale pasmo 6 GHz wymaga zgodnego punktu dostępowego. Terminal ma też 4G i Bluetooth 5.3."
+      },
+      {
+        "question": "Czym SUNMI V3 Plus różni się od V3?",
+        "answer": "V3 Plus drukuje na papierze do 80 mm z prędkością 100 mm/s, ma skaner 2D, Androida 14, Wi-Fi 6E i baterię 3800 mAh. [SUNMI V3](/produkt/sunmi-v3) drukuje na papierze 58 mm do 80 mm/s i ma Androida 13."
       }
     ],
     "createdAt": "2026-10-21",
@@ -1126,9 +1161,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI NT220",
     "seoH1": "SUNMI NT220",
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT220 58 mm, Bluetooth",
-    "seoDescription": "Drukarka paragonów SUNMI NT220 i drukarka etykiet SUNMI w jednym: papier 30–58 mm, etykiety do 150 mm, USB-C, Bluetooth BLE. NT220 SUNMI, PN: C04060001.",
-    "shortDescription": "SUNMI NT220 — termiczna drukarka etykiet i paragonów niefiskalnych na papier 58 mm. Łączy się przez USB-C i Bluetooth BLE 5.0, drukuje do 150 mm/s w 203 dpi.",
-    "description": "SUNMI NT220 drukuje na rolce paragony niefiskalne, bony z zamówieniami i etykiety na produkty. Pracuje przy ladzie kawiarni, punktu z napojami i sklepu oraz przy wydawaniu zamówień na wynos. Wydruk przyjmuje z komputera, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Etykiety i paragony w jednej drukarce\n\nTryb etykiet albo paragonów zmienia się przyciskiem. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w języku TSPL. Papier może mieć szerokość 30–58 mm, a wbudowana regulowana prowadnica ustala położenie rolki. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Maksymalna średnica rolki wynosi 80 mm. Czujnik przerwy wykrywa odstęp między etykietami.\n\n## Złącza, druk i zasilanie\n\nDrukarka ma USB-C i Bluetooth BLE 5.0, bez Ethernetu i Wi-Fi. Port RJ12 (24 V / 1 A) steruje szufladą kasową. Do portu pasuje szuflada kasowa [SUNMI Mini C06000022](/produkt/sunmi-c06000022) z przewodem w zestawie. Głowica drukuje w rozdzielczości 203 dpi, do 150 mm/s, także kody 1D i QR. Drukarka zasila się przez złącze USB-C (5 V / 2 A DC). Zasilacza nie ma w zestawie. Masa wynosi 510 g. NT220 jest urządzeniem niefiskalnym i nie zastępuje kasy ani drukarki fiskalnej.\n\nSzybszy druk paragonów 58 mm, do 250 mm/s, z gilotyną ma [BIXOLON SRP-Q200](/produkt/bixolon-srp-q200), ale nie drukuje etykiet.",
+    "seoDescription": "Drukarka paragonów i etykiet SUNMI NT220 58 mm: ESC/POS i TSPL, USB-C, Bluetooth BLE, 150 mm/s. Drukarka etykiet NT220 SUNMI, PN: C04060001.",
+    "shortDescription": "SUNMI NT220 — kompaktowa drukarka 58 mm do paragonów i etykiet, z USB-C, Bluetooth BLE i zasilaniem przez złącze USB-C.",
+    "description": "SUNMI NT220 to drukarka termiczna 58 mm, która drukuje paragony niefiskalne i etykiety. Paragony przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL; tryb zmienia się przyciskiem FEED. Czujnik przerwy wykrywa odstęp między etykietami. Drukarka ma też czujnik braku papieru i czujnik temperatury głowicy.\n\nObudowa ma 148 × 101 × 102 mm, a drukarka waży 510 g. Wydruk przyjmuje przez USB-C z komputera albo przez Bluetooth BLE 5.0 z tabletu i telefonu z systemem Windows, Android, iOS lub Linux. Wi-Fi i Ethernetu NT220 nie ma.\n\nPapier może mieć szerokość 30–58 mm, a rolka średnicę do 80 mm. Etykieta ma 30–56 mm szerokości i 30–150 mm długości. Głowica 203 dpi drukuje do 150 mm/s, także kody 1D i QR, a jej trwałość to 50 km paragonów albo 30 km etykiet. Port RJ12 (24 V / 1 A) otwiera [szufladę kasową SUNMI Mini](/produkt/sunmi-c06000022).\n\nDrukarkę zasila złącze USB-C napięciem 5 V / 2 A. Zasilacza nie ma w zestawie. NT220 jest urządzeniem niefiskalnym.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1262,9 +1297,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne i bony przy ladzie",
-      "Etykiety na opakowania i zamówienia na wynos",
-      "Wydruk z tabletu lub telefonu przez Bluetooth"
+      "Paragony niefiskalne przy ladzie kawiarni",
+      "Etykiety na kubki i opakowania na wynos",
+      "Druk z telefonu lub tabletu przez Bluetooth",
+      "Otwieranie szuflady kasowej po wydruku"
     ],
     "variants": [
       {
@@ -1310,19 +1346,23 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Jakie etykiety obsługuje NT220?",
-        "answer": "Etykiety o szerokości 30–56 mm i długości 30–150 mm, na rolce o średnicy do 80 mm. Grubość materiału wynosi 0,06–0,10 mm. Czujnik przerwy wykrywa odstęp między etykietami."
+        "answer": "Etykiety o szerokości 30–56 mm i długości 30–150 mm; rolka może mieć do 80 mm średnicy. Grubość materiału wynosi 0,06–0,10 mm. Czujnik przerwy wykrywa odstęp między etykietami."
       },
       {
         "question": "Czy SUNMI NT220 jest drukarką fiskalną?",
-        "answer": "Nie. NT220 drukuje paragony niefiskalne, bony i etykiety wysłane z programu. Nie zastępuje kasy ani drukarki fiskalnej."
+        "answer": "Nie. NT220 nie ma pamięci fiskalnej i drukuje to, co wyśle program: bony, potwierdzenia i etykiety. Paragon fiskalny wystawia kasa fiskalna."
       },
       {
         "question": "Jak podłączyć SUNMI NT220?",
-        "answer": "Przez USB-C do komputera albo przez Bluetooth BLE 5.0 do tabletu lub telefonu. Drukarka nie ma Wi-Fi ani Ethernetu. Port RJ12 (24 V / 1 A) służy do szuflady kasowej."
+        "answer": "Do komputera przewodem USB-C, a do tabletu lub telefonu przez Bluetooth BLE 5.0. Szufladę kasową wpina się do portu RJ12 (24 V / 1 A)."
       },
       {
         "question": "Co jest w zestawie z SUNMI NT220?",
-        "answer": "Drukarka, przewód USB, prowadnica papieru i skrócona instrukcja. Zasilacza nie ma w zestawie. Drukarka zasila się przez złącze USB-C napięciem 5 V / 2 A DC."
+        "answer": "Drukarka, przewód USB, prowadnica papieru i skrócona instrukcja. Zasilacza nie ma w zestawie. Drukarka zasila się przez złącze USB-C napięciem 5 V i prądem 2 A."
+      },
+      {
+        "question": "Czym SUNMI NT220 różni się od NT320?",
+        "answer": "[SUNMI NT320](/produkt/sunmi-nt320) przyjmuje rolki do 80 mm, tnie wydruk gilotyną i ma Ethernet, a w wybranych wersjach Wi-Fi 6, skaner albo druk etykiet bez podkładu. NT220 jest mniejsza (510 g wobec 875 g) i drukuje na papierze do 58 mm przez USB-C lub Bluetooth BLE."
       }
     ],
     "createdAt": "2026-10-22",
@@ -1334,9 +1374,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI NT320",
     "seoH1": "SUNMI NT320",
     "seoTitle": "Drukarka etykiet i paragonów SUNMI NT320 80 mm, linerless",
-    "seoDescription": "Drukarka paragonów i etykiet SUNMI NT320 80 mm: linerless, skaner 2D, Wi-Fi, USB-C i Ethernet. PN: C04050006, C04050007, C04050003, C04050001, C04050011, C04050009.",
-    "shortDescription": "SUNMI NT320 — termiczna drukarka paragonów niefiskalnych i etykiet na papier do 80 mm, z USB-C i Ethernetem. Wersje z Wi-Fi i Bluetooth, skanerem 2D albo obsługą etykiet bez podkładu.",
-    "description": "SUNMI NT320 drukuje paragony niefiskalne i etykiety z podkładem, a w wersjach Linerless także etykiety bez podkładu. Pracuje przy kasie sklepu, w kawiarni i w punkcie wydawania zamówień na wynos. Wydruk przyjmuje z komputera, terminala POS, tabletu lub telefonu z systemem Windows, Android, iOS lub Linux.\n\n## Wersje NT320\n\nKażda wersja ma USB-C i Ethernet 100 Mb/s. Wersje Wi-Fi i Linerless mają dodatkowo Wi-Fi 6 i Bluetooth 5.4. Wersja ze skanerem ma z przodu moduł do kodów 1D i 2D, np. przy przyjmowaniu towaru. Hyper Wi-Fi to technologia łączności SUNMI, która wymaga konfiguracji u producenta.\n\n## Papier, zasilanie i szuflada\n\nPapier może mieć szerokość 30–80 mm, a etykieta 30–78 × 30–150 mm. W zestawie są rolka papieru 80 mm i prowadnica, którą ustawia się do węższej rolki, np. 58 mm. Paragony drukarka przyjmuje w języku poleceń ESC/POS, a etykiety w TSPL. Drukuje w 203 dpi, do 150 mm/s. Jeden przewód USB-C zasila drukarkę (5 V / 2 A DC) i przesyła dane. Drukarka pracuje ustawiona pionowo albo na boku. Port RJ12 steruje szufladą kasową, np. [SUNMI Mini C06000022](/produkt/sunmi-c06000022). Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). NT320 jest urządzeniem niefiskalnym.\n\nEtykiety bez podkładu drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii), szybciej, do 180 mm/s, i z ekranem 2 cale.",
+    "seoDescription": "Drukarka etykiet i paragonów SUNMI NT320 80 mm: etykiety bez podkładu, skaner 2D, Wi-Fi 6, druk z chmury. PN: C04050006, C04050007, C04050001.",
+    "shortDescription": "SUNMI NT320 — drukarka 80 mm do paragonów i etykiet, zasilana i podłączana jednym przewodem USB-C, w wersjach Linerless i ze skanerem.",
+    "description": "SUNMI NT320 to drukarka 80 mm, która łączy trzy rodzaje wydruku: paragony niefiskalne, etykiety z podkładem i, w wersjach Linerless, etykiety bez podkładu. Jeden przewód USB-C zasila drukarkę (5 V / 2 A) i przesyła dane, więc przy ladzie jest mniej przewodów. Drukarka pracuje ustawiona pionowo albo na boku, a dwie NT320 ułożone na boku mieści [podstawa Two-In-One](/produkt/sunmi-c20000103).\n\nWersja ze skanerem ma z przodu moduł kodów 1D i 2D, który czyta kody od 4 mil (Code 128) i od 7,5 mil (QR). Przydaje się przy wprowadzaniu towaru, płatnościach kodem QR i wydawaniu zamówień. Każda wersja ma USB-C i Ethernet 100 Mb/s, a wersje Wi-Fi także Wi-Fi 6 i Bluetooth 5.4. Hyper Wi-Fi wymaga dostosowania przez SUNMI.\n\nGilotyna wytrzymuje 1 000 000 cięć paragonów, a głowica 203 dpi 150 km wydruku przy prędkości do 150 mm/s. Program może wysyłać wydruki z chmury przez Open API (MQTT/HTTPS). Port RJ12 otwiera szufladę kasową. NT320 jest urządzeniem niefiskalnym.",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1498,9 +1538,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne i bony przy kasie",
-      "Etykiety na zamówienia na wynos i dostawy, także bez podkładu",
-      "Skanowanie kodów przy wydawaniu i przyjmowaniu towaru (wersja ze skanerem)"
+      "Paragony i etykiety z jednej drukarki przy kasie",
+      "Etykiety bez podkładu na torby z zamówieniami",
+      "Skanowanie kodów QR do płatności przy ladzie",
+      "Druk zamówień z chmury przez Open API"
     ],
     "variants": [
       {
@@ -1599,23 +1640,27 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Którą wersję SUNMI NT320 wybrać?",
-        "answer": "C04050006 ma USB-C i Ethernet. C04050007 ma dodatkowo skaner kodów 1D i 2D z przodu. C04050003 ma Wi-Fi 6 i Bluetooth 5.4 do pracy z tabletem lub telefonem. C04050001 dodatkowo drukuje etykiety bez podkładu. C04050011 i C04050009 mają Hyper Wi-Fi, które wymaga konfiguracji u producenta; C04050009 drukuje też etykiety bez podkładu."
+        "answer": "Wersja podstawowa ma USB-C i Ethernet. Wersja ze skanerem dodaje z przodu moduł kodów 1D i 2D. Wersja Wi-Fi ma Wi-Fi 6 i Bluetooth 5.4 do pracy z tabletem lub telefonem. Wersje Linerless drukują też etykiety bez podkładu, a wersje Hyper Wi-Fi wymagają dostosowania przez SUNMI."
       },
       {
         "question": "Czy SUNMI NT320 drukuje etykiety bez podkładu?",
-        "answer": "Tylko wersje Linerless: C04050001 i C04050009. Pozostałe wersje drukują paragony i etykiety z podkładem. Etykieta może mieć szerokość 30–78 mm i długość 30–150 mm."
+        "answer": "Tylko dwie wersje Linerless, oznaczone w tabeli wariantów. Każda wersja drukuje paragony i etykiety z podkładem: szerokość 30–78 mm, długość 30–150 mm."
       },
       {
         "question": "Jak zasila się SUNMI NT320?",
-        "answer": "Jednym przewodem USB-C, który zasila drukarkę napięciem 5 V / 2 A DC i przesyła dane. Przewód USB jest w zestawie razem z rolką papieru 80 mm, prowadnicą papieru i skróconą instrukcją. Zasilacza nie ma w zestawie."
+        "answer": "Przez złącze USB-C, które jednocześnie przesyła dane; wymagane zasilanie to 5 V / 2 A DC. W kartonie są przewód USB, rolka papieru 80 mm, prowadnica papieru i skrócona instrukcja, ale nie ma zasilacza."
       },
       {
-        "question": "Czy SUNMI NT320 jest drukarką fiskalną?",
-        "answer": "Nie. NT320 drukuje paragony niefiskalne, bony i etykiety wysłane z programu. Nie zastępuje kasy ani drukarki fiskalnej."
+        "question": "Czy wydruk z SUNMI NT320 jest paragonem fiskalnym?",
+        "answer": "Nie. NT320 jest drukarką niefiskalną. Drukuje bony kuchenne, potwierdzenia zamówień i etykiety wysłane z programu, a sprzedaż rejestruje urządzenie fiskalne."
       },
       {
         "question": "Czy dwie drukarki NT320 można ustawić razem?",
-        "answer": "Tak. Podstawa [SUNMI C20000103](/produkt/sunmi-c20000103) (Two-In-One Base) mieści dwie drukarki NT320 obok siebie, ułożone na boku. Podstawę kupuje się osobno. NT320 drukuje zarówno ustawiona pionowo, jak i na boku."
+        "answer": "Tak. [Podstawa Two-In-One](/produkt/sunmi-c20000103) mieści dwie drukarki NT320 ułożone na boku. Podstawę kupuje się osobno."
+      },
+      {
+        "question": "Czym SUNMI NT320 różni się od NT220?",
+        "answer": "NT320 ma szerszy papier (do 80 mm), gilotynę i sieć Ethernet. [SUNMI NT220](/produkt/sunmi-nt220) waży 510 g, przyjmuje papier do 58 mm i łączy się przez USB-C albo Bluetooth BLE 5.0."
       }
     ],
     "createdAt": "2026-10-22",
@@ -1627,9 +1672,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI T3",
     "seoH1": "SUNMI T3",
     "seoTitle": "Komputer POS SUNMI T3 15,6\", Android 13, NFC",
-    "seoDescription": "Komputer POS SUNMI T3 z ekranem dotykowym 15,6\", Androidem 13 i NFC. Dotykowy terminal stacjonarny POS SUNMI T3 bez drukarki. PN: P01280007.",
-    "shortDescription": "SUNMI T3 — komputer POS z ekranem dotykowym 15,6\" FHD, Androidem 13 z usługami Google i NFC przy ekranie. Model bez drukarki, z portem szuflady kasowej i opcjonalnym ekranem klienta.",
-    "description": "Komputer POS SUNMI T3 to stacjonarne stanowisko kasowe do sklepu, kawiarni i baru. Ekran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i powłokę ograniczającą odciski palców. Ekran można odchylić o 125°, także w stronę klienta. Czytniki NFC po obu stronach ekranu odczytują zgodne karty, np. karty członkowskie. Przycisk zasilania ma czytnik linii papilarnych.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Korpus jest z metalu odlewanego ciśnieniowo, a przewody prowadzi się wewnątrz podstawy. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007). Ekran klienta kupuje się osobno.\n\nWbudowaną drukarkę paragonów 80 mm ma [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm).",
+    "seoDescription": "Komputer POS SUNMI T3 15,6\" z NFC i Androidem 13, bez drukarki. Stanowisko kasowe T3 SUNMI do butiku, baru i kawiarni. PN: P01280007.",
+    "shortDescription": "SUNMI T3 — komputer POS 15,6\" w metalowej obudowie w kształcie litery Z, z czytnikami NFC po obu stronach ekranu, bez drukarki.",
+    "description": "SUNMI T3 to komputer POS z ekranem dotykowym 15,6\" FHD na podstawie w kształcie litery Z. Korpus z metalu odlewanego ciśnieniowo jest smukły i sztywny, a przewody biegną wewnątrz podstawy. Ekran odchyla się o 125°, także w stronę klienta.\n\nPo obu stronach ekranu są czytniki NFC do kart członkowskich, a przycisk zasilania ma czytnik linii papilarnych do szybkiego odblokowania i logowania do aplikacji. Z tyłu komputera można zamocować [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [15,6\"](/produkt/sunmi-c02020007) na złączu stykowym z blokadą.\n\nProcesor Qualcomm Kryo 265 wykonany w procesie 6 nm ma 8 rdzeni, taktowanie do 2,4 GHz i o 20% wyższą wydajność od poprzednika. Pamięć operacyjna ma 4 GB, a wbudowana 64 GB. System to Android 13 z nakładką SUNMI OS 4.0 oraz certyfikowanymi usługami Google (GMS EDLA). Z tyłu podstawy są m.in. port szuflady kasowej RJ12, port szeregowy RJ11, Ethernet i cztery porty USB typ A.\n\nT3 nie ma drukarki, więc paragony drukuje osobna [drukarka POS](/drukarki-pos). Komputer jest przeznaczony do butików, barów i kawiarni. Oferowana wersja nie ma modemu 4G.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1767,9 +1812,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w sklepie z osobną drukarką POS",
-      "Obsługa zamówień w kawiarni i barze",
-      "Odczyt kart lojalnościowych przez NFC"
+      "Kasa w butiku odzieżowym",
+      "Stanowisko przy barze z osobną drukarką bonów",
+      "Rejestracja kart członkowskich przez NFC"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1795,24 +1840,24 @@ export const sunmiProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy SUNMI T3 jest kasą fiskalną?",
-        "answer": "Nie. SUNMI T3 nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+        "question": "Czy SUNMI T3 drukuje paragony?",
+        "answer": "Nie. W T3 nie ma drukarki, a komputer nie jest urządzeniem fiskalnym. Paragony niefiskalne i bony drukuje drukarka POS podłączona przez USB lub sieć, a sprzedaż fiskalną rejestruje kasa fiskalna. Wersja z drukarką 80 mm to [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm)."
       },
       {
         "question": "Jaki ekran klienta pasuje do SUNMI T3?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Treść ekranu klienta, np. pozycje, kwotę, menu lub reklamy, ustawia program sprzedaży. Na ekranie 15,6\" lepiej widać menu i reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą."
+        "answer": "Dwa ekrany z NFC: [10,1\" HD](/produkt/sunmi-c02020008) i [15,6\" FHD](/produkt/sunmi-c02020007). Montuje się je z tyłu komputera na złączu stykowym z blokadą. Treść ekranu, np. kwotę, menu albo reklamy, ustawia program sprzedaży."
       },
       {
         "question": "Czy SUNMI T3 ma Google Play?",
-        "answer": "Tak. PN P01280007 ma system SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA). Aplikacje można instalować z Google Play i ze sklepu SUNMI App Store."
+        "answer": "Tak. T3 w tej ofercie ma SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA). Aplikacje instaluje się z Google Play albo ze sklepu SUNMI App Store."
       },
       {
         "question": "Jak podłączyć szufladę kasową do SUNMI T3?",
-        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej RJ12 z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży."
+        "answer": "Przewód szuflady wpina się do portu RJ12 z tyłu podstawy. Pasuje [szuflada SUNMI MAX](/produkt/sunmi-c06004004) z przewodem RJ12 i sterowaniem 9–24 V. Szufladę otwiera program sprzedaży."
       },
       {
-        "question": "Czym SUNMI T3 różni się od T3 80 mm?",
-        "answer": "[SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma w podstawie drukarkę termiczną 80 mm do paragonów niefiskalnych i bonów. SUNMI T3 nie ma drukarki, dlatego wydruki wymagają osobnej [drukarki POS](/drukarki-pos). Ekran, procesor, pamięć, system i złącza są takie same."
+        "question": "Czym SUNMI T3 różni się od T3 PRO?",
+        "answer": "W [SUNMI T3 PRO](/produkt/sunmi-t3-pro) pamięć jest większa (6 GB RAM, 128 GB), procesor Kryo 670 ma taktowanie 2,7 GHz, a łączność obejmuje Wi-Fi 6E. Obudowa T3 PRO jest ze stopu aluminium, a kamera ma 8 Mpx. Podstawowy T3 ma pamięć 4/64 GB, taktowanie 2,4 GHz, Wi-Fi 5 i korpus z metalu odlewanego. Ekrany klienta obu modeli nie są zamienne."
       }
     ],
     "createdAt": "2026-10-22",
@@ -1824,9 +1869,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI T3 80 mm",
     "seoH1": "SUNMI T3 80 mm",
     "seoTitle": "Komputer POS SUNMI T3 80 mm z drukarką paragonów, 15,6\"",
-    "seoDescription": "Komputer POS SUNMI T3 80 mm z drukarką paragonów 80 mm, ekranem dotykowym 15,6\" i Androidem 13. Terminal POS SUNMI T3 z drukarką. PN: P03180008.",
-    "shortDescription": "SUNMI T3 80 mm — komputer POS z wbudowaną drukarką termiczną 80 mm Seiko z automatyczną gilotyną, do 250 mm/s, i ekranem dotykowym 15,6\" FHD. Android 13 z usługami Google, NFC przy ekranie i port szuflady kasowej.",
-    "description": "Komputer POS SUNMI T3 80 mm ma w podstawie drukarkę termiczną 80 mm z mechanizmem Seiko i automatyczną gilotyną. Drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 250 mm/s. Po założeniu [prowadnicy C20000094](/produkt/sunmi-c20000094) drukuje na papierze 58 mm. Rolkę papieru zakłada się po otwarciu pokrywy drukarki. Moduł drukarki można wyjąć przy serwisie.\n\n## Ekran, procesor i system\n\nEkran IPS 15,6\" ma rozdzielczość 1920 × 1080 px i można go odchylić o 125°. Czytniki NFC są po obu stronach ekranu, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA).\n\n## Złącza i obudowa\n\nZ tyłu podstawy są złącza: zasilanie, USB-C, port szuflady kasowej RJ12, USB, port szeregowy RJ11 i Ethernet 1 Gb/s. Łączność bezprzewodowa to Wi-Fi 5 i Bluetooth 5.0. Korpus jest z metalu odlewanego ciśnieniowo. Z tyłu komputera montuje się [ekran klienta 10,1\"](/produkt/sunmi-c02020008) lub [ekran klienta 15,6\"](/produkt/sunmi-c02020007), kupowany osobno.\n\nTen sam komputer bez drukarki to [SUNMI T3](/produkt/sunmi-t3).",
+    "seoDescription": "Komputer POS z drukarką SUNMI T3 80 mm: Seiko 80 mm, gilotyna, 250 mm/s, ekran 15,6\", Android 13. Terminal T3 80 mm SUNMI, PN: P03180008.",
+    "shortDescription": "SUNMI T3 80 mm — komputer POS 15,6\" z drukarką Seiko 80 mm z gilotyną, 250 mm/s, i modułem drukarki wyjmowanym przy serwisie.",
+    "description": "SUNMI T3 80 mm to komputer POS z drukarką termiczną wbudowaną w podstawę. Mechanizm Seiko z automatyczną gilotyną drukuje do 250 mm/s, a jego trwałość to 150 km wydruku. Rolkę 80 mm zakłada się po otwarciu pokrywy z uchwytem; papier 58 mm wymaga [prowadnicy](/produkt/sunmi-c20000094). Moduł drukarki wyjmuje się w całości przy serwisie.\n\nEkran dotykowy 15,6\" FHD odchyla się o 125°. Czytniki NFC po obu stronach ekranu odczytują karty, a czytnik linii papilarnych jest w przycisku zasilania. Procesor Qualcomm Kryo 265 ma osiem rdzeni do 2,4 GHz i 4/64 GB pamięci, a oprogramowanie to SUNMI OS 4.0 z certyfikowanymi usługami Google.\n\nKomputer łączy się z siecią przez LAN 1 Gb/s albo Wi-Fi 5. Z tyłu są gniazdo szuflady (RJ12), port szeregowy RJ11, cztery porty USB typ A i USB-C. Korpus jest z metalu odlewanego ciśnieniowo, a podstawa ma 369 × 374 × 206 mm. Komputer waży 3,6 kg.\n\nDrukarka wydaje paragony niefiskalne i bony. Sprzedaż fiskalną rejestruje osobne urządzenie fiskalne obsługiwane przez program.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -1978,9 +2023,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w sklepie z wydrukiem paragonów niefiskalnych",
-      "Bony i zamówienia w kawiarni i barze",
-      "Odczyt kart lojalnościowych przez NFC"
+      "Bony kuchenne z kasy w barze",
+      "Paragony niefiskalne przy ladzie sklepu",
+      "Wydruk na węższym papierze 58 mm z prowadnicą",
+      "Kasa z szufladą otwieraną po wydruku"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2021,23 +2067,27 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czy SUNMI T3 80 mm jest kasą fiskalną?",
-        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+        "answer": "Nie. Drukarka Seiko w podstawie nie ma pamięci fiskalnej, więc drukuje paragony niefiskalne i bony. Do sprzedaży fiskalnej potrzebna jest kasa lub drukarka fiskalna obsługiwana przez program."
       },
       {
         "question": "Jaki papier pasuje do SUNMI T3 80 mm?",
-        "answer": "Drukarka przyjmuje papier termiczny 80 mm w rolkach o średnicy do 80 mm i automatycznie odcina wydruk. Papier 58 mm wymaga [prowadnicy C20000094](/produkt/sunmi-c20000094)."
+        "answer": "Papier termiczny 80 mm w rolkach o maksymalnej średnicy 80 mm; gilotyna odcina każdy wydruk. Do papieru 58 mm służy [prowadnica](/produkt/sunmi-c20000094), którą kupuje się osobno."
       },
       {
-        "question": "Jaki ekran klienta pasuje do SUNMI T3 80 mm?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020008](/produkt/sunmi-c02020008) i [15,6\" FHD C02020007](/produkt/sunmi-c02020007). Treść ekranu klienta, np. pozycje, kwotę, menu lub reklamy, ustawia program sprzedaży. Na ekranie 15,6\" lepiej widać menu i reklamy. Ekran montuje się z tyłu komputera na złączu stykowym i zabezpiecza blokadą."
+        "question": "Jaki system ma SUNMI T3 80 mm?",
+        "answer": "Android 13 z SUNMI OS 4.0 i certyfikowanymi usługami Google (GMS EDLA). Program sprzedaży instaluje się z Google Play lub ze sklepu SUNMI App Store, a komputerami zarządza się zdalnie w SUNMI DMP."
       },
       {
-        "question": "Czy SUNMI T3 80 mm ma Google Play?",
-        "answer": "Tak. PN P03180008 ma system SUNMI OS 4.0 na Androidzie 13 z usługami Google (GMS EDLA). Aplikacje można instalować z Google Play i ze sklepu SUNMI App Store."
+        "question": "Gdzie podłącza się szufladę kasową w SUNMI T3 80 mm?",
+        "answer": "Szufladę podłącza się do gniazda RJ12 na tylnej ściance podstawy. [Szuflada SUNMI MAX](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Program może otworzyć szufladę po wydruku paragonu."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI T3 80 mm?",
-        "answer": "Przewód szuflady podłącza się do portu szuflady kasowej RJ12 z tyłu podstawy. [Szuflada SUNMI MAX C06004004](/produkt/sunmi-c06004004) ma przewód RJ12 i napięcie sterujące 9–24 V. Szufladę otwiera program sprzedaży, np. po wydruku paragonu."
+        "question": "Czy do SUNMI T3 80 mm można dokupić ekran klienta?",
+        "answer": "Te same ekrany co do T3: [10,1\" HD](/produkt/sunmi-c02020008) lub [15,6\" FHD](/produkt/sunmi-c02020007), oba z NFC. Ekran mocuje się z tyłu komputera i kupuje osobno."
+      },
+      {
+        "question": "Czym SUNMI T3 80 mm różni się od T3 PRO MAX?",
+        "answer": "Mechanizm drukarki jest w obu modelach podobny: Seiko 80 mm, gilotyna, 250 mm/s. T3 80 mm ma 4/64 GB, procesor do 2,4 GHz, Wi-Fi 5 i Bluetooth 5.0. [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max) ma 6/128 GB, do 2,7 GHz, Wi-Fi 6E i Bluetooth 5.2."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2049,9 +2099,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI T3 PRO",
     "seoH1": "SUNMI T3 PRO",
     "seoTitle": "Komputer POS SUNMI T3 PRO 15,6\", Android 13, Wi-Fi 6E",
-    "seoDescription": "Komputer POS SUNMI T3 PRO: ekran dotykowy 15,6\", 6 GB RAM, Wi-Fi 6E, LAN 1 Gb/s i NFC. Terminal POS SUNMI T3 PRO bez drukarki. PN: P01240002, P01240008.",
-    "shortDescription": "SUNMI T3 PRO — komputer POS z ekranem dotykowym 15,6\" FHD, 6 GB RAM i 128 GB pamięci, Wi-Fi 6E i NFC na ekranie. Obudowa ze stopu aluminium, model bez drukarki. System SUNMI OS (Android 13) bez usług Google lub z usługami Google (GMS).",
-    "description": "Komputer POS SUNMI T3 PRO to stacjonarne stanowisko kasowe do sklepu, restauracji i kawiarni. Ekran 15,6\" FHD ma jasność 400 nitów, nie ma ramki i ma powłokę ograniczającą odciski palców. Ekran główny można odchylić o 125°. Czytnik NFC jest na ekranie głównym, a przycisk zasilania ma czytnik linii papilarnych. Kamera z przodu ma 8 Mpx.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor Qualcomm do 2,7 GHz pracuje z 6 GB RAM i 128 GB pamięci. Gniazdo microSD przyjmuje karty do 2 TB. System to SUNMI OS na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez Wi-Fi 6E (2,4, 5 i 6 GHz), Bluetooth 5.2 z BT Long Range do 200 m i LAN 1 Gb/s. Obudowa jest ze stopu aluminium, a przewody prowadzi się wewnątrz podstawy. Odłączany ekran klienta [10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004) ma NFC i przedłużacz 1,5 m. Ekran klienta kupuje się osobno. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\nW porównaniu z [SUNMI T3](/produkt/sunmi-t3) model T3 PRO ma więcej pamięci, szybszy procesor, Wi-Fi 6E, Bluetooth 5.2, kamerę 8 Mpx i obudowę ze stopu aluminium. Wbudowaną drukarkę 80 mm ma [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max).",
+    "seoDescription": "Komputer POS SUNMI T3 PRO: ekran 15,6\" bez ramki, 6/128 GB, Wi-Fi 6E, aluminiowa obudowa. Terminal T3 PRO SUNMI, PN: P01240002, P01240008.",
+    "shortDescription": "SUNMI T3 PRO — komputer POS 15,6\" bez ramki, w obudowie ze stopu aluminium, z 6 GB RAM, Wi-Fi 6E i odłączanym ekranem klienta.",
+    "description": "SUNMI T3 PRO to komputer POS z ekranem 15,6\" FHD bez ramki, w obudowie ze stopu aluminium. Ekran ma jasność 400 nitów i przezroczystą powłokę ograniczającą odciski palców, a NFC działa po przyłożeniu karty do ekranu.\n\nProcesor Qualcomm Kryo 670 (6 nm) ma osiem rdzeni do 2,7 GHz i pracuje z 6 GB RAM i 128 GB pamięci. Komputer łączy się przez LAN 1 Gb/s, Wi-Fi 6E w pasmach 2,4, 5 i 6 GHz oraz Bluetooth 5.2 z trybem Long Range do 200 m. Z przodu jest kamera 8 Mpx.\n\nStanowisko zestawia się na trzy sposoby: sam ekran 15,6\" albo z ekranem klienta [10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004). Ekran klienta ma własny czytnik NFC, a po odłączeniu stoi obok komputera na przedłużaczu 1,5 m.\n\nWersje różnią się systemem: SUNMI OS (Android 13) bez usług Google albo z usługami Google (GMS EDLA). SUNMI może nanieść na obudowę logo i kolory marki; warunki personalizacji podajemy na zapytanie. Drukarki w T3 PRO nie ma, wydruki wymagają osobnej [drukarki POS](/drukarki-pos).",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2193,9 +2243,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w sklepie z osobną drukarką POS",
-      "Obsługa zamówień w restauracji i kawiarni",
-      "Odczyt kart lojalnościowych przez NFC"
+      "Kasa restauracyjna z ekranem klienta na przedłużaczu",
+      "Stanowisko sprzedaży w barwach sieci handlowej",
+      "Odczyt kart przyłożonych do ekranu kasjera"
     ],
     "variants": [
       {
@@ -2216,7 +2266,7 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+      "Usługi Google (GMS)": "Wersja T3 PRO z usługami Google (GMS EDLA).\n\n• Sklep Google Play i konto Google na komputerze kasowym.\n\n• Ten sam sprzęt co wersja bez GMS (model L15B1)."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2241,23 +2291,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI T3 PRO różni się od SUNMI T3?",
-        "answer": "SUNMI T3 PRO ma 6 GB RAM i 128 GB pamięci, procesor do 2,7 GHz, Wi-Fi 6E, Bluetooth 5.2, kamerę 8 Mpx i obudowę ze stopu aluminium. [SUNMI T3](/produkt/sunmi-t3) ma 4 GB RAM i 64 GB pamięci, procesor do 2,4 GHz, Wi-Fi 5, Bluetooth 5.0 i kamerę 5 Mpx. Ekrany klienta do obu modeli są różne."
+        "answer": "T3 PRO ma 6 GB RAM, 128 GB pamięci, procesor Kryo 670 do 2,7 GHz, Wi-Fi 6E, Bluetooth 5.2, kamerę 8 Mpx i aluminiową obudowę. [SUNMI T3](/produkt/sunmi-t3) ma korpus z metalu odlewanego, 4/64 GB i Wi-Fi 5. Do każdego z tych modeli są inne ekrany klienta."
       },
       {
-        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
-        "answer": "Obie wersje to ten sam model L15B1 z systemem SUNMI OS na Androidzie 13. Różnią się usługami Google. P01240008 ma usługi Google (GMS EDLA) i Sklep Google Play. P01240002 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+        "question": "Którą wersję systemu wybrać w SUNMI T3 PRO?",
+        "answer": "Decyduje program sprzedaży. Jeśli instaluje się go z Google Play albo wymaga usług Google, potrzebna jest wersja GMS EDLA. Wersja bez usług Google dostaje aplikacje ze sklepu SUNMI App Store, zwykle od dostawcy programu. Sprzęt obu wersji jest ten sam (model L15B1)."
       },
       {
-        "question": "Jaki ekran klienta pasuje do SUNMI T3 PRO?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020003](/produkt/sunmi-c02020003) i [15,6\" FHD C02020004](/produkt/sunmi-c02020004). Ekran klienta można odłączyć i ustawić obok komputera na przedłużaczu 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują do T3 PRO."
+        "question": "Które ekrany klienta współpracują z SUNMI T3 PRO?",
+        "answer": "[Ekran 10,1\" HD](/produkt/sunmi-c02020003) lub [15,6\" FHD](/produkt/sunmi-c02020004) serii PRO, oba z NFC i przedłużaczem 1,5 m. Ekrany do zwykłego T3 do T3 PRO nie pasują."
       },
       {
-        "question": "Czy SUNMI T3 PRO jest kasą fiskalną?",
-        "answer": "Nie. SUNMI T3 PRO nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+        "question": "Czy SUNMI T3 PRO ma drukarkę?",
+        "answer": "Nie, T3 PRO jest komputerem bez drukarki i bez funkcji fiskalnych. Z drukarką Seiko 80 mm w podstawie jest [SUNMI T3 PRO MAX](/produkt/sunmi-t3-pro-max)."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO?",
-        "answer": "SUNMI T3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Jakie złącza ma SUNMI T3 PRO?",
+        "answer": "Trzy porty USB 2.0 typ A, port USB 3.0, USB-C, dwa porty micro USB, RJ45 (LAN 1 Gb/s), port szuflady kasowej RJ12, port szeregowy RJ11 i gniazdo zasilania. Szufladę kasową dobierzemy do złącza i napięcia sterującego na zapytanie."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2269,9 +2319,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI T3 PRO MAX",
     "seoH1": "SUNMI T3 PRO MAX",
     "seoTitle": "Komputer POS SUNMI T3 PRO MAX 15,6\" z drukarką 80 mm",
-    "seoDescription": "Komputer POS SUNMI T3 PRO MAX z drukarką Seiko 80 mm, gilotyną i ekranem dotykowym 15,6\". Terminal POS z drukarką, Wi-Fi 6E. PN: P01250004, P01250007.",
-    "shortDescription": "SUNMI T3 PRO MAX — komputer POS z wbudowaną drukarką Seiko 80 mm z gilotyną, do 250 mm/s, i ekranem dotykowym 15,6\" FHD. 6 GB RAM, Wi-Fi 6E, LAN 1 Gb/s i NFC na ekranie. System SUNMI OS (Android 13) bez usług Google lub z usługami Google (GMS).",
-    "description": "Komputer POS SUNMI T3 PRO MAX ma w podstawie drukarkę termiczną Seiko 80 mm. Drukuje paragony niefiskalne i bony z prędkością do 250 mm/s i ma automatyczną gilotynę. Rolka papieru ma średnicę do 80 mm. Głowicę drukującą łatwo wyjąć i wymienić.\n\n## Ekran, procesor i system\n\nEkran 15,6\" FHD bez ramki ma jasność 400 nitów i powłokę ograniczającą odciski palców. Ekran główny można odchylić o 125°. NFC działa na ekranie głównym, a przycisk zasilania ma czytnik linii papilarnych. Ośmiordzeniowy procesor Qualcomm do 2,7 GHz pracuje z 6 GB RAM i 128 GB pamięci. System to SUNMI OS na Androidzie 13; jedna z wersji ma usługi Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez Wi-Fi 6E (2,4, 5 i 6 GHz), Bluetooth 5.2 z BT Long Range do 200 m i LAN 1 Gb/s. Przednia kamera ma 8 Mpx. Obudowa jest ze stopu aluminium, a przewody są ukryte w podstawie. Odłączany ekran klienta [10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004) z NFC i przedłużaczem 1,5 m kupuje się osobno. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\nWzględem [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) T3 PRO MAX ma więcej pamięci, szybszy procesor, Wi-Fi 6E i Bluetooth 5.2. Ten sam komputer bez drukarki to [SUNMI T3 PRO](/produkt/sunmi-t3-pro).",
+    "seoDescription": "Komputer POS SUNMI T3 PRO MAX z drukarką Seiko 80 mm 250 mm/s, gilotyna, 6/128 GB, Wi-Fi 6E. T3 PRO MAX SUNMI, PN: P01250004, P01250007.",
+    "shortDescription": "SUNMI T3 PRO MAX — aluminiowy komputer POS z wbudowaną drukarką Seiko 80 mm i łatwo wymienną głowicą, 6 GB RAM i Wi-Fi 6E.",
+    "description": "SUNMI T3 PRO MAX łączy komputer POS 15,6\" z drukarką termiczną Seiko 80 mm w podstawie. Drukarka ma automatyczną gilotynę i drukuje do 250 mm/s z rolki o średnicy 80 mm, a jej trwałość to 150 km wydruku. Głowicę łatwo wyjąć i założyć z powrotem, co obniża koszty serwisu.\n\nEkran FHD bez ramki ma 400 nitów i odchyla się o 125°. Karty NFC przykłada się bezpośrednio do ekranu, a odcisk palca odczytuje przycisk zasilania. Procesor Kryo 670 (osiem rdzeni, do 2,7 GHz) korzysta z pamięci 6/128 GB. Obudowa jest ze stopu aluminium i ma budowę modułową.\n\nŁączność obejmuje LAN 1 Gb/s, Wi-Fi 6E z pasmem 6 GHz i Bluetooth 5.2, który w trybie Long Range sięga do 200 m. Odłączany [ekran klienta 10,1\"](/produkt/sunmi-c02020003) lub [15,6\"](/produkt/sunmi-c02020004) z przedłużaczem 1,5 m kupuje się osobno.\n\nWersja z usługami Google i wersja z samym SUNMI OS (Android 13) mają ten sam sprzęt, model L15A1. Komputer z drukarką waży 5,5 kg. Wydruki są niefiskalne.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2427,9 +2477,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w sklepie z wydrukiem paragonów niefiskalnych",
-      "Bony i zamówienia w restauracji i kawiarni",
-      "Odczyt kart lojalnościowych przez NFC"
+      "Paragony niefiskalne 80 mm przy kasie",
+      "Bony dla kuchni w restauracji w godzinach szczytu",
+      "Stanowisko z ekranem klienta ustawionym obok kasy"
     ],
     "variants": [
       {
@@ -2450,7 +2500,7 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+      "Usługi Google (GMS)": "Certyfikowane usługi Google w T3 PRO MAX.\n\n• Program sprzedaży można pobrać z Google Play.\n\n• Drukarka, ekran i pamięć są takie same jak w wersji bez GMS."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2477,23 +2527,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI T3 PRO MAX różni się od SUNMI T3 80 mm?",
-        "answer": "Oba modele mają wbudowaną drukarkę Seiko 80 mm z gilotyną, do 250 mm/s. SUNMI T3 PRO MAX ma 6 GB RAM i 128 GB pamięci, procesor do 2,7 GHz, Wi-Fi 6E i Bluetooth 5.2. [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma 4 GB RAM i 64 GB pamięci, procesor do 2,4 GHz, Wi-Fi 5 i Bluetooth 5.0. Ekrany klienta do obu modeli są różne."
+        "answer": "PRO MAX dysponuje pamięcią 6/128 GB, szybszym procesorem (2,7 GHz), Wi-Fi 6E z pasmem 6 GHz i obudową z aluminium. [SUNMI T3 80 mm](/produkt/sunmi-t3-80mm) ma 4 GB RAM, 64 GB i Wi-Fi 5. Drukarka Seiko 80 mm z gilotyną, 250 mm/s, jest w obu modelach, ale ekrany klienta nie są zamienne."
       },
       {
-        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
-        "answer": "Obie wersje to ten sam model L15A1 z systemem SUNMI OS na Androidzie 13. Różnią się usługami Google. P01250007 ma usługi Google (GMS EDLA) i Sklep Google Play. P01250004 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+        "question": "Czy głowicę drukarki w SUNMI T3 PRO MAX można wymienić?",
+        "answer": "Tak. Drukarka ma budowę modułową, a głowicę łatwo wyjąć i założyć nową. Obniża to koszty serwisu stanowiska."
       },
       {
-        "question": "Jaki ekran klienta pasuje do SUNMI T3 PRO MAX?",
-        "answer": "Pasują dwa ekrany z NFC: [10,1\" HD C02020003](/produkt/sunmi-c02020003) i [15,6\" FHD C02020004](/produkt/sunmi-c02020004). Ekran klienta można odłączyć i ustawić obok komputera na przedłużaczu 1,5 m. Ekrany C02020008 i C02020007 do SUNMI T3 nie pasują do T3 PRO MAX."
+        "question": "Wersja z GMS czy bez usług Google — który T3 PRO MAX?",
+        "answer": "Obie wersje to model L15A1 z SUNMI OS na Androidzie 13 i tą samą drukarką. Wersja GMS EDLA ma Sklep Google Play. W wersji bez GMS program sprzedaży instaluje dostawca, zwykle ze sklepu SUNMI App Store."
       },
       {
-        "question": "Czy SUNMI T3 PRO MAX jest kasą fiskalną?",
-        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+        "question": "Czy SUNMI T3 PRO MAX rejestruje sprzedaż fiskalną?",
+        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony. Sprzedaż fiskalną rejestruje kasa lub drukarka fiskalna podłączona do programu."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI T3 PRO MAX?",
-        "answer": "SUNMI T3 PRO MAX ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży, np. po wydruku paragonu. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Czy SUNMI T3 PRO MAX steruje szufladą kasową?",
+        "answer": "Szuflada łączy się z portem RJ12, a program otwiera ją np. po wydruku paragonu. Model szuflady pod to napięcie sterujące wskażemy po kontakcie."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2505,9 +2555,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI D3",
     "seoH1": "SUNMI D3",
     "seoTitle": "Komputer POS SUNMI D3 15,6\" z ekranem klienta 10,1\"",
-    "seoDescription": "Komputer POS SUNMI D3 z ekranem dotykowym 15,6\" i ekranem klienta 10,1\" w zestawie. Terminal POS SUNMI D3, Android 14, NFC, LAN 1 Gb/s. PN: P01300033.",
-    "shortDescription": "SUNMI D3 — komputer POS z ekranem dotykowym 15,6\" FHD i ekranem klienta 10,1\" w zestawie. 3 GB RAM i 32 GB pamięci, Android 14 z usługami Google, czytnik NFC w ekranie klienta i LAN 1 Gb/s. Model bez drukarki.",
-    "description": "Komputer POS SUNMI D3 to stacjonarne stanowisko kasowe z ekranem dotykowym IPS 15,6\" FHD. Zestaw zawiera dotykowy ekran klienta 10,1\" HD. Do SUNMI T3 i T3 PRO ekran klienta kupuje się osobno.\n\n## Procesor, pamięć i system\n\nOśmiordzeniowy procesor do 2,2 GHz ma moc obliczeniową AI 6 TOPS. Pracuje z 3 GB RAM i 32 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 14 z usługami Google (GMS EDLA). Zabezpieczenia systemu ograniczają ryzyko oszustw i nieuprawnionych zmian oprogramowania. Program sprzedaży łączy się z funkcjami komputera przez SDK SUNMI.\n\n## Łączność i złącza\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 6 i Bluetooth 5.4. Czytnik NFC jest w ekranie klienta. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. Przewody są ukryte w podstawie.\n\nSUNMI D3 jest przeznaczony dla sieci restauracji szybkiej obsługi, sieci sklepów convenience i pojedynczych sklepów. Stanowisko z ekranem klienta na [SUNMI T3](/produkt/sunmi-t3) wymaga dokupienia [ekranu klienta C02020008](/produkt/sunmi-c02020008).",
+    "seoDescription": "Komputer POS SUNMI D3 z ekranem klienta 10,1\" w zestawie, NFC, Android 14, Wi-Fi 6. Zestaw kasowy D3 SUNMI z dwoma ekranami. PN: P01300033.",
+    "shortDescription": "SUNMI D3 — komputer POS 15,6\" sprzedawany z ekranem klienta 10,1\" z NFC, z Androidem 14 i Wi-Fi 6.",
+    "description": "SUNMI D3 to komputer POS sprzedawany razem z ekranem klienta. Zestaw tworzą ekran główny 15,6\" FHD i dotykowy ekran 10,1\" HD od strony klienta. Czytnik NFC jest w ekranie klienta, więc kartę przykłada kupujący.\n\nProcesor ma osiem rdzeni: cztery Cortex-A72 do 2,2 GHz i cztery Cortex-A53 do 1,8 GHz. Układ AI o mocy 6 TOPS jest przygotowany na przyszłe aplikacje ze sztuczną inteligencją. Ma 3 GB RAM i 32 GB pamięci, rozszerzanej kartą microSD (do 1 TB). Oprogramowanie to SUNMI OS 4.0 na Androidzie 14 z usługami Google.\n\nWielowarstwowe zabezpieczenia systemu chronią przed oszustwami, kradzieżą i nieuprawnioną zmianą oprogramowania. SDK SUNMI skraca dostosowanie programu sprzedaży. Z siecią komunikuje się przewodem (LAN 1 Gb/s), przez Wi-Fi 6 albo Bluetooth 5.4. Szufladę kasową podłącza się do gniazda RJ12, a urządzenia szeregowe do RJ11. Przewody są ukryte w podstawie, a obudowa ma metaliczną fakturę.\n\nD3 jest przeznaczony dla sieci restauracji szybkiej obsługi, sieci sklepów convenience i pojedynczych sklepów. Komputer nie ma drukarki ani modułu fiskalnego.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2642,8 +2692,9 @@ export const sunmiProducts: Product[] = [
     ],
     "applications": [
       "Kasa w sieci restauracji szybkiej obsługi z ekranem klienta",
-      "Kasa w sieci sklepów convenience i w pojedynczym sklepie",
-      "Odczyt kart lojalnościowych przez NFC"
+      "Stanowisko w sklepie convenience",
+      "Pozycje i kwota do zapłaty na ekranie od strony klienta",
+      "Odczyt kart lojalnościowych przy ekranie klienta"
     ],
     "compatibleAccessories": [],
     "relatedAccessories": [],
@@ -2667,23 +2718,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI D3 różni się od SUNMI T3?",
-        "answer": "SUNMI D3 ma w zestawie ekran klienta 10,1\". Ma też Androida 14, Wi-Fi 6 i Bluetooth 5.4. [SUNMI T3](/produkt/sunmi-t3) ma Androida 13, Wi-Fi 5, Bluetooth 5.0, kamerę 5 Mpx i czytnik linii papilarnych. Ekran klienta do T3, [C02020008](/produkt/sunmi-c02020008) lub [C02020007](/produkt/sunmi-c02020007), kupuje się osobno. Oba modele mają ekran 15,6\" FHD. D3 ma 3 GB RAM i 32 GB pamięci, a T3 4 GB RAM i 64 GB pamięci."
+        "answer": "D3 ma w zestawie ekran klienta 10,1\" z NFC, Androida 14, Wi-Fi 6 i Bluetooth 5.4. [SUNMI T3](/produkt/sunmi-t3) ma Androida 13, Wi-Fi 5, czytniki NFC przy ekranie głównym i czytnik linii papilarnych, a ekran klienta kupuje się do niego osobno. D3 ma 3/32 GB, T3 4/64 GB."
       },
       {
         "question": "Czy ekran klienta jest w zestawie z SUNMI D3?",
-        "answer": "Tak. PN P01300033 to SUNMI D3 z dotykowym ekranem klienta 10,1\" HD (1280 × 800 px). Ekran klienta pokazuje klientowi pozycje i kwotę z programu sprzedaży. Ma czytnik NFC i dwa porty micro USB. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3."
+        "answer": "Tak. W kartonie jest dotykowy ekran klienta 10,1\" HD (1280 × 800 px) z NFC i dwoma portami micro USB. Ekrany klienta do T3 i T3 PRO do D3 nie pasują."
       },
       {
-        "question": "Czy SUNMI D3 ma Google Play?",
-        "answer": "Tak. PN P01300033 ma system SUNMI OS 4.0 na Androidzie 14 z usługami Google (GMS EDLA). Aplikacje można instalować z Google Play i ze sklepu SUNMI App Store."
+        "question": "Do czego służy układ AI 6 TOPS w SUNMI D3?",
+        "answer": "To moc obliczeniowa wbudowana w procesor, przygotowana na aplikacje z funkcjami sztucznej inteligencji. Korzysta z niej program, który takie funkcje obsługuje."
       },
       {
-        "question": "Czy SUNMI D3 jest kasą fiskalną?",
-        "answer": "Nie. SUNMI D3 nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+        "question": "Czy na SUNMI D3 zainstaluje się aplikacje z Google Play?",
+        "answer": "Tak. D3 pracuje na Androidzie 14 (SUNMI OS 4.0), a usługi Google mają certyfikat GMS EDLA. Aplikacje są też w sklepie SUNMI App Store."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI D3?",
-        "answer": "SUNMI D3 ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Czy SUNMI D3 obsłuży szufladę kasową?",
+        "answer": "Tak, przez port RJ12 z tyłu podstawy. Szufladę otwiera program sprzedaży. Model szuflady dobierzemy do napięcia sterującego na zapytanie."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2695,9 +2746,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI D3 PRO",
     "seoH1": "SUNMI D3 PRO",
     "seoTitle": "Komputer POS SUNMI D3 PRO 15,6\", Android 13, LAN 1 Gb/s",
-    "seoDescription": "Komputer POS SUNMI D3 PRO: ekran dotykowy 15,6\" FHD, 4 GB RAM, LAN 1 Gb/s i obudowa aluminiowa. Terminal POS SUNMI D3 PRO. PN: P01270001, P01270002.",
-    "shortDescription": "SUNMI D3 PRO — komputer POS z ekranem dotykowym 15,6\" FHD, 4 GB RAM i 64 GB pamięci, Androidem 13 i LAN 1 Gb/s. Obudowa aluminiowa. Wersja SUNMI OS lub z usługami Google, model bez drukarki. Ekran klienta 10,1\" z NFC kupuje się osobno.",
-    "description": "Komputer POS SUNMI D3 PRO to stacjonarne stanowisko kasowe z ekranem dotykowym 15,6\" FHD. Ekran ma cienką ramkę i obsługuje dotyk 10-punktowy. Obudowa jest aluminiowa, a przewody są ukryte w podstawie. Komputer jest przeznaczony m.in. dla restauracji i sklepów odzieżowych.\n\n## Procesor, pamięć i system\n\nSześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 4 GB RAM i 64 GB pamięci. Gniazdo microSD przyjmuje karty do 1 TB. System to SUNMI OS 4.0 na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS). W wersji z usługami Google czytnik linii papilarnych w przycisku zasilania odblokowuje komputer i loguje do konta SUNMI One ID.\n\n## Łączność i ekran klienta\n\nKomputer łączy się przez LAN 1 Gb/s, Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0. Złącza to m.in. port szuflady kasowej RJ12, port szeregowy RJ11, USB 3.0 i USB-C. [Ekran klienta 10,1\" C02020005](/produkt/sunmi-c02020005) kupuje się osobno. Zakłada się go na ramię podstawy, od strony klienta, i podłącza do komputera przez USB. Działa od razu po podłączeniu (plug-and-play). Czytnik NFC w ekranie pozwala przyjmować płatności SoftPOS, jeśli obsługują je program sprzedaży i operator płatności.\n\nNowszy [SUNMI D3](/produkt/sunmi-d3) ma Androida 14, procesor ośmiordzeniowy, Wi-Fi 6, Bluetooth 5.4 i ekran klienta z NFC w zestawie. D3 PRO jako sam komputer jest tańszy.",
+    "seoDescription": "Komputer POS SUNMI D3 PRO 15,6\" w aluminiowej obudowie, 4/64 GB, LAN 1 Gb/s, opcjonalny ekran klienta z NFC. D3 PRO SUNMI, PN: P01270001, P01270002.",
+    "shortDescription": "SUNMI D3 PRO — aluminiowy komputer POS 15,6\" z ekranem klienta zakładanym na ramię podstawy; wersja GMS loguje odciskiem palca.",
+    "description": "SUNMI D3 PRO to komputer POS 15,6\" FHD z aluminiową obudową i cienką ramką ekranu. Ekran obsługuje dotyk 10-punktowy. Podstawa i ramię mają prosty kształt, a przewody biegną wewnątrz.\n\nSześciordzeniowy procesor Qualcomm do 2,4 GHz korzysta z pamięci 4/64 GB, a karta microSD może mieć do 1 TB. System SUNMI OS 4.0 (Android 13) pozwala wdrożyć komputer zdalnie przez SUNMI DMP. W wersji z usługami Google przycisk zasilania odczytuje odcisk palca: odblokowuje komputer i loguje do konta SUNMI One ID.\n\n[Ekran klienta 10,1\"](/produkt/sunmi-c02020005) zakłada się na ramię podstawy i podłącza przewodem USB; działa od razu po podłączeniu. Ma NFC, przez które aplikacja SoftPOS może przyjmować płatności, jeśli obsługują je program sprzedaży i operator płatności. Sam komputer NFC nie ma.\n\nDo sieci podłącza się go kablem LAN 1 Gb/s lub przez Wi-Fi 5; Bluetooth ma wersję 5.0. Złącze RJ12 steruje szufladą kasową, a RJ11 jest portem szeregowym. Jest przeznaczony dla restauracji i sklepów odzieżowych. Drukarki nie ma, a całość waży 4,5 kg.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -2833,9 +2884,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w restauracji z osobną drukarką POS",
-      "Kasa w sklepie odzieżowym",
-      "Stanowisko z ekranem klienta 10,1\" z NFC (opcja)"
+      "Stanowisko kasowe w sklepie z odzieżą",
+      "Kasa restauracyjna z drukarką bonów obok",
+      "Płatności SoftPOS na ekranie klienta (opcja)",
+      "Logowanie kasjerów odciskiem palca (wersja GMS)"
     ],
     "variants": [
       {
@@ -2857,8 +2909,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania.",
-      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Odblokowuje komputer odciskiem palca i loguje do konta SUNMI One ID."
+      "Usługi Google (GMS)": "Usługi Google w D3 PRO.\n\n• Dostęp do Sklepu Google Play.\n\n• Ta wersja ma też czytnik linii papilarnych w przycisku zasilania.",
+      "Czytnik linii papilarnych": "Logowanie odciskiem palca w D3 PRO.\n\n• Czytnik w przycisku zasilania odblokowuje komputer i loguje do SUNMI One ID.\n\n• Ma go wersja z usługami Google."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2885,23 +2937,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "Czym SUNMI D3 PRO różni się od SUNMI D3?",
-        "answer": "SUNMI D3 PRO ma sześciordzeniowy procesor Qualcomm do 2,4 GHz, Androida 13, Wi-Fi 5 i Bluetooth 5.0. [SUNMI D3](/produkt/sunmi-d3) to nowszy model. Ma ośmiordzeniowy procesor do 2,2 GHz, Androida 14, Wi-Fi 6, Bluetooth 5.4 i ekran klienta 10,1\" z NFC w zestawie. Do D3 PRO [ekran klienta C02020005](/produkt/sunmi-c02020005) kupuje się osobno, a sam komputer jest tańszy od D3. Wersja D3 PRO z usługami Google ma czytnik linii papilarnych. Oba modele mają ekran 15,6\" FHD i LAN 1 Gb/s."
+        "answer": "D3 PRO ma sześciordzeniowy procesor Qualcomm, 4/64 GB, Androida 13, Wi-Fi 5 i aluminiową obudowę, a ekran klienta jest opcją. [SUNMI D3](/produkt/sunmi-d3) to nowszy model z ośmiordzeniowym procesorem, Androidem 14, Wi-Fi 6, Bluetooth 5.4 i ekranem klienta w zestawie. Oba mają ekran 15,6\" FHD i LAN 1 Gb/s."
       },
       {
-        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
-        "answer": "Obie wersje mają ten sam procesor, pamięć i system SUNMI OS 4.0 na Androidzie 13. P01270002 ma usługi Google (GMS EDLA), Sklep Google Play i czytnik linii papilarnych w przycisku zasilania. P01270001 nie ma usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+        "question": "Która wersja SUNMI D3 PRO ma czytnik linii papilarnych?",
+        "answer": "Tylko wersja z usługami Google (GMS EDLA). Czytnik w przycisku zasilania odblokowuje komputer i loguje do SUNMI One ID. Wersja bez GMS ma ten sam procesor i pamięć, a aplikacje dostaje ze sklepu SUNMI App Store."
       },
       {
-        "question": "Jaki ekran klienta pasuje do SUNMI D3 PRO?",
-        "answer": "Pasuje [ekran klienta 10,1\" HD C02020005](/produkt/sunmi-c02020005) z NFC. Ekran klienta zakłada się na ramię podstawy, od strony klienta, i podłącza do komputera przez USB. Działa od razu po podłączeniu (plug-and-play). Ekran klienta z NFC pozwala przyjmować płatności zbliżeniowe przez aplikację SoftPOS, jeśli program sprzedaży i operator płatności ją obsługują. Ekrany klienta do SUNMI T3 i T3 PRO nie pasują do D3 PRO."
+        "question": "Jak zamontować ekran klienta do SUNMI D3 PRO?",
+        "answer": "[Ekran 10,1\" HD](/produkt/sunmi-c02020005) zakłada się na ramię podstawy od strony klienta i łączy z komputerem przewodem USB. Działa od razu po podłączeniu. Ekranów klienta z serii T3 nie da się zamontować na D3 PRO."
       },
       {
-        "question": "Czy SUNMI D3 PRO jest kasą fiskalną?",
-        "answer": "Nie. SUNMI D3 PRO nie ma modułu fiskalnego ani drukarki. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna, którą obsługuje program sprzedaży."
+        "question": "Czy SUNMI D3 PRO przyjmie płatność zbliżeniową?",
+        "answer": "Sam komputer nie ma NFC. Czytnik ma opcjonalny ekran klienta, a płatność SoftPOS wymaga aplikacji, którą obsługują program sprzedaży i operator płatności."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI D3 PRO?",
-        "answer": "SUNMI D3 PRO ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Jak drukować paragony przy SUNMI D3 PRO?",
+        "answer": "Nie, D3 PRO nie ma drukarki ani modułu fiskalnego. Do wydruków podłącza się [drukarkę POS](/drukarki-pos) przez USB lub sieć, a szufladę kasową do portu RJ12."
       }
     ],
     "createdAt": "2026-10-22",
@@ -2913,9 +2965,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI D3 MINI 58 mm",
     "seoH1": "SUNMI D3 MINI 58 mm",
     "seoTitle": "Komputer POS SUNMI D3 MINI 10,1\" z drukarką 58 mm",
-    "seoDescription": "Komputer POS SUNMI D3 MINI 58 mm: ekran dotykowy 10,1\", drukarka 58 mm, skaner kodów, NFC i wersja 4G z baterią. Terminal POS SUNMI. PN: P01260026, P01260002.",
-    "shortDescription": "SUNMI D3 MINI 58 mm — kompaktowy komputer POS z ekranem dotykowym 10,1\", wbudowaną drukarką 58 mm, skanerem kodów 1D i 2D i czytnikiem NFC. Wyświetlacz klienta 2,4\", 3 GB RAM i 32 GB pamięci, SUNMI OS (Android 13). Wersja Wi-Fi lub 4G z baterią 2600 mAh.",
-    "description": "Komputer POS SUNMI D3 MINI 58 mm to kompaktowe stanowisko kasowe z ekranem dotykowym 10,1\" i wbudowaną drukarką termiczną 58 mm. Ma też skaner kodów 1D i 2D, czytnik kart zbliżeniowych NFC i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Ekran główny jest pochylony ergonomicznie.\n\n## Drukarka, procesor i system\n\nDrukarka drukuje paragony niefiskalne i bony z programu sprzedaży, z prędkością do 100 mm/s. Gumowe uszczelki chronią drukarkę przed kurzem i cieczą. Sześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 3 GB RAM i 32 GB pamięci. System to SUNMI OS na Androidzie 13 bez usług Google.\n\n## Łączność, bateria i obudowa\n\nKomputer łączy się przez LAN, Wi-Fi 5 i Bluetooth 5.0. Wersja 4G łączy się też przez sieć komórkową i ma w zestawie baterię 2600 mAh na 4 godziny pracy. W wersji Wi-Fi bateria nie wchodzi w skład zestawu. Komputer ma dwa gniazda kart PSAM. Budowa modułowa ułatwia demontaż i serwis. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\n[SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm) ma drukarkę 80 mm z gilotyną i dotykowy ekran klienta 4\", ale nie ma baterii. Stanowisko z dużym ekranem 15,6\" to [SUNMI D3](/produkt/sunmi-d3) lub [SUNMI T3](/produkt/sunmi-t3).",
+    "seoDescription": "Komputer POS SUNMI D3 MINI 58 mm z drukarką, skanerem, NFC i baterią w wersji 4G. Mały terminal POS D3 MINI SUNMI 10,1\". PN: P01260026, P01260002.",
+    "shortDescription": "SUNMI D3 MINI 58 mm — kompaktowe stanowisko kasowe 10,1\" z drukarką 58 mm, skanerem i NFC; wersja 4G ma baterię na 4 godziny.",
+    "description": "SUNMI D3 MINI 58 mm to kompaktowe stanowisko kasowe: ekran dotykowy 10,1\", drukarka 58 mm, skaner kodów i czytnik NFC w jednej obudowie 250 × 213 × 91 mm. Waży 1,1 kg. Od strony klienta jest wyświetlacz siedmiosegmentowy 2,4\", a ekran główny jest pochylony pod kątem wygodnym do pracy.\n\nWersja 4G ma w zestawie baterię 2600 mAh, która pozwala pracować do 4 godzin bez zasilacza. Wersja Wi-Fi ma gniazdo baterii, ale baterii w zestawie nie ma.\n\nDrukarka termiczna drukuje do 100 mm/s z rolki o średnicy 50 mm, a mechanizm wytrzymuje 50 km wydruku. Gumowe uszczelki chronią ją przed kurzem i cieczą. Skaner 1 Mpx czyta kody 1D i 2D, a NFC odczytuje karty z odległości do 4 cm.\n\nProcesor Qualcomm (sześć rdzeni, do 2,4 GHz) współpracuje z pamięcią UFS 2.2 o pojemności 32 GB i 3 GB RAM. Komputer działa na SUNMI OS (Android 13), który nie ma usług Google. Budowa modułowa ułatwia demontaż przy serwisie. Komputer ma dwa gniazda PSAM, złącze szuflady RJ12 i port LAN. Wydruki są niefiskalne.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -3077,9 +3129,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w małym sklepie z wydrukiem paragonów niefiskalnych 58 mm",
-      "Stanowisko sprzedaży bez Wi-Fi w wersji 4G z baterią",
-      "Odczyt kodów kreskowych i kart lojalnościowych NFC"
+      "Sprzedaż w miejscu bez stałego zasilania (wersja 4G z baterią)",
+      "Wydruk paragonów niefiskalnych 58 mm w małym punkcie",
+      "Skanowanie kodów towaru przy kasie",
+      "Odczyt kart zbliżeniowych z odległości do 4 cm"
     ],
     "variants": [
       {
@@ -3101,7 +3154,7 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "4G": "Modem 4G do łączności przez sieć komórkową na karcie SIM.\n\n• Komputer łączy się z siecią, gdy w miejscu sprzedaży nie ma Wi-Fi ani LAN.\n\n• 2 gniazda kart SIM.",
+      "4G": "Modem sieci komórkowej 2G/3G/4G.\n\n• W wersji 58 mm idzie w parze z baterią 2600 mAh, więc stanowisko może pracować do 4 godzin bez przewodów.\n\n• 2 gniazda SIM.",
       "Bateria w zestawie": "Bateria 2600 mAh w zestawie.\n\n• Do 4 godzin pracy bez zasilacza, np. przy przenoszeniu stanowiska."
     },
     "compatibleAccessories": [],
@@ -3124,23 +3177,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "SUNMI D3 MINI 58 mm czy 80 mm?",
-        "answer": "Wersja 58 mm ma drukarkę 58 mm do 100 mm/s i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Wersja 4G ma w zestawie baterię 2600 mAh. Komputer waży 1,1 kg. [SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm) ma drukarkę 80 mm z automatyczną gilotyną do 250 mm/s i dotykowy ekran klienta IPS 4\". Jest też w wersji z usługami Google (GMS). Nie ma baterii i waży 1,4 kg. Obie wersje mają ekran 10,1\", skaner kodów 1D i 2D, NFC, 3 GB RAM i 32 GB pamięci."
+        "answer": "Wersja 58 mm ma drukarkę do 100 mm/s, wyświetlacz siedmiosegmentowy 2,4\" dla klienta i waży 1,1 kg; jej wersja 4G pracuje na baterii 2600 mAh. [SUNMI D3 MINI 80 mm](/produkt/sunmi-d3-mini-80mm) drukuje z gilotyną do 250 mm/s, ma dotykowy ekran klienta 4\", występuje też z GMS i nie ma baterii."
       },
       {
         "question": "Czy SUNMI D3 MINI 58 mm działa bez Wi-Fi?",
-        "answer": "Tak. Komputer łączy się z siecią także przez LAN (RJ45). Wersja 4G (P01260002) łączy się przez sieć komórkową na karcie SIM i ma 2 gniazda kart SIM. Wersja P01260026 nie ma modemu 4G."
+        "answer": "Tak. Każda wersja ma port LAN (RJ45). Wersja 4G łączy się dodatkowo przez sieć komórkową i ma 2 gniazda SIM, a wersja Wi-Fi modemu nie ma."
       },
       {
         "question": "Czy SUNMI D3 MINI 58 mm ma baterię?",
-        "answer": "Baterię 2600 mAh w zestawie ma tylko wersja 4G (P01260002). Bateria pozwala pracować do 4 godzin bez zasilacza. Wersja Wi-Fi (P01260026) ma gniazdo baterii, ale bateria nie wchodzi w skład zestawu. W sprawie baterii do wersji Wi-Fi prosimy o kontakt."
+        "answer": "Baterię 2600 mAh na 4 godziny pracy dostarcza się tylko z wersją 4G. Wersja Wi-Fi ma gniazdo baterii, ale bateria nie wchodzi w skład zestawu; w sprawie baterii do tej wersji prosimy o kontakt."
       },
       {
-        "question": "Czy SUNMI D3 MINI 58 mm jest kasą fiskalną?",
-        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+        "question": "Czy wydruk z SUNMI D3 MINI 58 mm jest fiskalny?",
+        "answer": "Nie. Drukarka 58 mm drukuje paragony niefiskalne i bony. Program sprzedaży przekazuje sprzedaż do kasy lub drukarki fiskalnej."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI D3 MINI 58 mm?",
-        "answer": "SUNMI D3 MINI 58 mm ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Jakie kody i karty odczytuje SUNMI D3 MINI 58 mm?",
+        "answer": "Wbudowany skaner 1 Mpx czyta kody kreskowe 1D i kody 2D. Czytnik NFC odczytuje karty typu A i B, MIFARE i FeliCa z odległości do 4 cm."
       }
     ],
     "createdAt": "2026-10-22",
@@ -3152,9 +3205,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI D3 MINI 80 mm",
     "seoH1": "SUNMI D3 MINI 80 mm",
     "seoTitle": "Komputer POS SUNMI D3 MINI 10,1\" z drukarką 80 mm",
-    "seoDescription": "Komputer POS SUNMI D3 MINI 80 mm: ekran 10,1\", drukarka 80 mm z gilotyną, ekran klienta 4\", skaner i NFC. Terminal POS SUNMI. PN: P01260015, P01260022, P01260020.",
-    "shortDescription": "SUNMI D3 MINI 80 mm — kompaktowy komputer POS z ekranem dotykowym 10,1\", wbudowaną drukarką 80 mm z gilotyną, skanerem kodów 1D i 2D i czytnikiem NFC. Dotykowy ekran klienta 4\", 3 GB RAM i 32 GB pamięci. SUNMI OS (Android 13) w wersji Wi-Fi, 4G lub z usługami Google.",
-    "description": "Komputer POS SUNMI D3 MINI 80 mm to kompaktowe stanowisko kasowe z ekranem dotykowym 10,1\" i wbudowaną drukarką termiczną 80 mm. Ma też skaner kodów 1D i 2D, czytnik kart zbliżeniowych NFC i dotykowy ekran klienta IPS 4\". Ekran główny jest pochylony ergonomicznie.\n\n## Drukarka, procesor i system\n\nDrukarka z automatyczną gilotyną drukuje paragony niefiskalne i bony z prędkością do 250 mm/s. Gumowe uszczelki chronią drukarkę przed kurzem i cieczą. Sześciordzeniowy procesor Qualcomm do 2,4 GHz pracuje z 3 GB RAM i 32 GB pamięci. System to SUNMI OS na Androidzie 13, w wersji bez usług Google lub z usługami Google (GMS).\n\n## Łączność i obudowa\n\nKomputer łączy się przez LAN, Wi-Fi 5 i Bluetooth 5.0. Wersja 4G łączy się też przez sieć komórkową. Komputer ma dwa gniazda kart PSAM. Nie ma baterii i pracuje z zasilacza. Budowa modułowa ułatwia demontaż i serwis. SUNMI może nanieść na obudowę logo i kolor marki klienta. Warunki personalizacji podajemy na zapytanie.\n\n[SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) ma drukarkę 58 mm, wyświetlacz siedmiosegmentowy od strony klienta i w wersji 4G baterię w zestawie. Stanowisko z dużym ekranem 15,6\" to [SUNMI D3](/produkt/sunmi-d3) lub [SUNMI T3](/produkt/sunmi-t3).",
+    "seoDescription": "Komputer POS SUNMI D3 MINI 80 mm: drukarka 80 mm 250 mm/s z gilotyną, ekran klienta 4\", skaner, NFC. D3 MINI SUNMI, PN: P01260015, P01260022, P01260020.",
+    "shortDescription": "SUNMI D3 MINI 80 mm — kompaktowy komputer POS 10,1\" z drukarką 80 mm z gilotyną i dotykowym ekranem klienta 4\".",
+    "description": "SUNMI D3 MINI 80 mm ma w obudowie 250 × 231 × 108 mm drukarkę 80 mm z automatyczną gilotyną i prędkością 250 mm/s. Rolka papieru może mieć średnicę 60 mm, a mechanizm wytrzymuje 150 km wydruku. Uszczelki z gumy zatrzymują kurz i ciecz.\n\nKlient widzi dotykowy ekran IPS 4\" (480 × 800 px). Ekran główny 10,1\" HD jest pochylony pod innym kątem niż w wersji 58 mm, bo drukarka 80 mm zajmuje więcej miejsca. Moduł skanujący 1 Mpx rozpoznaje kody jedno- i dwuwymiarowe, a czytnik zbliżeniowy działa do 4 cm od obudowy.\n\nSześciordzeniowy Qualcomm (do 2,4 GHz) pracuje z pamięcią 3/32 GB. W ofercie są trzy wersje: Wi-Fi, 4G oraz z usługami Google (GMS EDLA); każda ma port LAN. Komputer nie ma baterii i pracuje wyłącznie z zasilacza. Waży 1,4 kg.\n\nModuły obudowy łatwo zdemontować do serwisu. Obudowę można zamówić z logo i kolorami firmy klienta; warunki podajemy na zapytanie. Wydruki z tej drukarki są niefiskalne.",
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -3312,9 +3365,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kasa w sklepie z wydrukiem paragonów niefiskalnych 80 mm",
-      "Bony i zamówienia w kawiarni, barze i restauracji",
-      "Odczyt kodów kreskowych i kart lojalnościowych NFC"
+      "Wydruk zamówień 80 mm w kawiarni",
+      "Kasa z dotykowym ekranem klienta na małej ladzie",
+      "Odczyt kodów QR i kart NFC przy kasie"
     ],
     "variants": [
       {
@@ -3344,8 +3397,8 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "4G": "Modem 4G do łączności przez sieć komórkową na karcie SIM.\n\n• Komputer łączy się z siecią, gdy w miejscu sprzedaży nie ma Wi-Fi ani LAN.\n\n• 2 gniazda kart SIM.",
-      "Usługi Google (GMS)": "Certyfikowane usługi Google (GMS EDLA) w systemie SUNMI OS na Androidzie 13.\n\n• Na komputerze są Sklep Google Play i aplikacje Google.\n\n• Wersja bez usług Google nie ma Sklepu Google Play. Aplikacje pochodzą ze sklepu SUNMI App Store i zwykle instaluje je dostawca oprogramowania."
+      "4G": "Modem 4G na kartę SIM w wersji 80 mm.\n\n• Łączność, gdy w lokalu nie ma LAN ani Wi-Fi.\n\n• Komputer nadal wymaga zasilacza, bo wersja 80 mm nie ma baterii.",
+      "Usługi Google (GMS)": "Jedyna wersja D3 MINI 80 mm z usługami Google.\n\n• Ma Sklep Google Play, ale nie ma modemu 4G."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [],
@@ -3367,23 +3420,23 @@ export const sunmiProducts: Product[] = [
     "faq": [
       {
         "question": "SUNMI D3 MINI 80 mm czy 58 mm?",
-        "answer": "Wersja 80 mm ma drukarkę 80 mm z automatyczną gilotyną do 250 mm/s i dotykowy ekran klienta IPS 4\". Jest też w wersji z usługami Google (GMS). Nie ma baterii i waży 1,4 kg. [SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) ma drukarkę 58 mm do 100 mm/s i wyświetlacz siedmiosegmentowy 2,4\" od strony klienta. Jej wersja 4G ma w zestawie baterię 2600 mAh. Komputer waży 1,1 kg. Obie wersje mają ekran 10,1\", skaner kodów 1D i 2D, NFC, 3 GB RAM i 32 GB pamięci."
+        "answer": "Wersja 80 mm drukuje do 250 mm/s z gilotyną, ma dotykowy ekran klienta IPS 4\" i wersję z usługami Google. Pracuje tylko z zasilacza i waży 1,4 kg. [SUNMI D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm) drukuje do 100 mm/s, ma wyświetlacz siedmiosegmentowy, a jej wersja 4G ma baterię."
       },
       {
-        "question": "Czy SUNMI D3 MINI 80 mm działa bez Wi-Fi?",
-        "answer": "Tak. Komputer łączy się z siecią także przez LAN (RJ45). Wersja 4G (P01260022) łączy się przez sieć komórkową na karcie SIM i ma 2 gniazda kart SIM. Wersje P01260015 i P01260020 nie mają modemu 4G."
+        "question": "Czy SUNMI D3 MINI 80 mm pracuje bez zasilacza?",
+        "answer": "Nie. Wersja 80 mm zawsze pracuje z zasilacza. Baterię 2600 mAh ma wersja 4G modelu [D3 MINI 58 mm](/produkt/sunmi-d3-mini-58mm)."
       },
       {
-        "question": "Wersja bez usług Google czy z usługami Google (GMS)?",
-        "answer": "Wszystkie wersje mają system SUNMI OS na Androidzie 13. P01260020 ma usługi Google (GMS EDLA) i Sklep Google Play, ale nie ma modemu 4G. P01260015 i P01260022 nie mają usług Google. Aplikacje pochodzą wtedy ze sklepu SUNMI App Store i zwykle instaluje je dostawca programu sprzedaży. Wybór zależy od wymagań programu sprzedaży."
+        "question": "Która wersja SUNMI D3 MINI 80 mm ma usługi Google?",
+        "answer": "Usługi Google (GMS EDLA) i Sklep Google Play ma jedna wersja, bez modemu 4G. Wersje Wi-Fi i 4G mają SUNMI OS bez usług Google; aplikacje instaluje wtedy dostawca programu."
       },
       {
-        "question": "Czy SUNMI D3 MINI 80 mm jest kasą fiskalną?",
-        "answer": "Nie. Wbudowana drukarka drukuje paragony niefiskalne i bony wysłane z programu sprzedaży. Sprzedaż fiskalną rejestruje osobna kasa fiskalna lub drukarka fiskalna."
+        "question": "Czy drukarka w SUNMI D3 MINI 80 mm drukuje paragony fiskalne?",
+        "answer": "Nie. Drukarka 80 mm z gilotyną wydaje dokumenty niefiskalne: bony, potwierdzenia i paragony z programu. Fiskalizację sprzedaży wykonuje osobna kasa lub drukarka fiskalna."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do SUNMI D3 MINI 80 mm?",
-        "answer": "SUNMI D3 MINI 80 mm ma port szuflady kasowej na złączu RJ12. Przewód szuflady podłącza się do tego portu, a szufladę otwiera program sprzedaży. Przed zakupem szuflady prosimy o kontakt. Dobierzemy szufladę do złącza i napięcia sterującego."
+        "question": "Co wyświetla ekran klienta 4\" w SUNMI D3 MINI 80 mm?",
+        "answer": "To dotykowy ekran IPS 480 × 800 px wbudowany w obudowę. Treść, np. pozycje i kwotę do zapłaty, ustawia program sprzedaży."
       }
     ],
     "createdAt": "2026-10-22",
@@ -3395,9 +3448,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI FLEX 3 KDS",
     "seoH1": "SUNMI FLEX 3 KDS",
     "seoTitle": "Ekran KDS SUNMI FLEX 3 15,6\", 18,5\" i 22\" do kuchni",
-    "seoDescription": "Ekran KDS SUNMI FLEX 3: ekran kuchenny SUNMI 15,6\", 18,5\" lub 22\", IP55, PoE, VESA. Monitor KDS z Androidem 13. PN: P11050019, P11050016, P11050010.",
-    "shortDescription": "SUNMI FLEX 3 KDS — kuchenny ekran zamówień z ekranem dotykowym 15,6\", 18,5\" lub 22\" FHD, obudową aluminiową IP55 i mocowaniem VESA 100 × 100. Działa przy mokrych dłoniach i w rękawiczkach. SUNMI OS 4.0 na Androidzie 13, 4 GB RAM i 64 GB pamięci.",
-    "description": "SUNMI FLEX 3 KDS to kuchenny ekran zamówień do restauracji, barów i punktów gastronomicznych. Jest dostępny w trzech rozmiarach: 15,6\", 18,5\" i 22\". Z programem KDS zamówienia z kasy synchronizują się automatycznie i pojawiają się na ekranie w kuchni. Program prowadzi zamówienie przez etapy: przygotowanie, gotowanie i wydanie. Duży, jasny ekran zastępuje papierowe bony.\n\nObudowa jest aluminiowa i ma ochronę IP55. Powłoka ograniczająca odciski palców ułatwia usuwanie tłuszczu. Ekran dotykowy działa przy mokrych dłoniach, w rękawiczkach i przy zabrudzeniu tłuszczem. Ekran ma mocowanie VESA 100 × 100. Zasilanie i dane może doprowadzić jeden przewód PoE.\n\nSystem to SUNMI OS 4.0 na Androidzie 13 z obsługą usług Google (GMS). Każdy rozmiar ma 4 GB RAM, 64 GB pamięci i gniazdo microSD do 1 TB. Wersja 15,6\" ma procesor Qualcomm 6 rdzeni do 2,4 GHz, ekran 250 nitów i wbudowane PoE. Wersje 18,5\" i 22\" mają procesor Qualcomm 8 rdzeni do 2,4 GHz, ekran IPS 400 nitów, czytnik linii papilarnych i zasilanie PoE przez moduł PoE SUNMI.\n\nEkran współpracuje z programem KDS zgodnym z programem sprzedaży na [komputerze POS](/komputery-pos).",
+    "seoDescription": "Ekran KDS SUNMI FLEX 3 do kuchni: 15,6\", 18,5\" lub 22\", IP55, PoE, VESA. Monitor kuchenny FLEX 3 KDS SUNMI, PN: P11050019, P11050016, P11050010.",
+    "shortDescription": "SUNMI FLEX 3 KDS — kuchenny ekran zamówień IP55, który działa przy mokrych dłoniach, w rękawiczkach i z tłuszczem na ekranie.",
+    "description": "SUNMI FLEX 3 KDS to ekran zamówień do kuchni, w rozmiarach 15,6\", 18,5\" i 22\". Zamówienia z kasy pojawiają się na nim automatycznie, a program KDS prowadzi je przez etapy przygotowania, gotowania i wydania. Papierowe bony i przekazywanie zamówień między salą a kuchnią przestają być potrzebne.\n\nEkran dotykowy reaguje na mokre dłonie, rękawiczki i palce zabrudzone tłuszczem. Aluminiowa obudowa ma klasę IP55, a powłoka ograniczająca odciski palców pozwala łatwo zetrzeć tłuszcz. Ekran montuje się na uchwycie VESA 100 × 100. W wersji 15,6\" jeden przewód PoE doprowadza zasilanie i dane, a w większych PoE wymaga [modułu PoE SUNMI](/produkt/sunmi-c12004010).\n\nWersje 18,5\" i 22\" (przekątna 21,5\") mają ekran IPS 400 nitów i procesor ośmiordzeniowy, do trzech razy wydajniejszy niż w poprzednim modelu D2s KDS. Wersja 15,6\" ma procesor sześciordzeniowy i pracuje od -10°C. Pamięć we wszystkich rozmiarach wynosi 4/64 GB, a system Android 13 obsługuje usługi Google.\n\nProgram KDS musi współpracować z programem sprzedaży; sprawdzimy to po podaniu nazwy programu.",
     "categoryId": "ekrany-kds",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -3535,9 +3588,10 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Ekran zamówień przy stanowisku kucharza",
-      "Ekran zamówień przy stanowisku wydawania",
-      "Podgląd danych o pracy kuchni w programie KDS"
+      "Kolejka zamówień przy stanowisku kucharza",
+      "Kontrola wydawania dań przy okienku",
+      "Zastąpienie papierowych bonów w kuchni",
+      "Dane o pracy kuchni na jednym ekranie"
     ],
     "variants": [
       {
@@ -3574,9 +3628,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Przekątna ekranu": "Przekątna ekranu dotykowego FHD 1920 × 1080 px.\n\n• 15,6\" — 250 nitów, najmniejsza obudowa, 2,0 kg.\n\n• 18,5\" i 21,5\" (sprzedawany jako 22\") — ekran IPS 400 nitów, procesor 8-rdzeniowy.",
+      "Przekątna ekranu": "Rozmiar ekranu kuchennego, zawsze FHD 1920 × 1080 px.\n\n• 15,6\" — 250 nitów, 2,0 kg, praca od -10°C.\n\n• 18,5\" i 22\" (21,5\") — IPS 400 nitów, procesor 8-rdzeniowy.",
       "PoE wbudowane": "Zasilanie i dane przez jeden przewód sieciowy (PoE), bez osobnego przewodu zasilającego.\n\n• W wersji 15,6\" PoE jest wbudowane.\n\n• Wersje 18,5\" i 22\" zasila się przez PoE po dodaniu modułu PoE SUNMI.",
-      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Mają go wersje 18,5\" i 22\".",
+      "Czytnik linii papilarnych": "Odcisk palca w przycisku zasilania ekranu KDS.\n\n• Mają go tylko wersje 18,5\" i 22\".",
       "Port RS485/RS232": "Port szeregowy RS485/RS232 do urządzeń z interfejsem szeregowym.\n\n• Mają go wersje 18,5\" i 22\", obok 2 portów RJ45 i 2 portów USB 2.0."
     },
     "compatibleAccessories": [],
@@ -3596,8 +3650,8 @@ export const sunmiProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Który rozmiar SUNMI FLEX 3 KDS wybrać?",
-        "answer": "Wersja 15,6\" ma najmniejszą obudowę, masę 2,0 kg i wbudowane PoE. Wersje 18,5\" i 22\" (przekątna 21,5\") mają ekran IPS 400 nitów, procesor 8-rdzeniowy i czytnik linii papilarnych. Większy ekran mieści więcej zamówień jednocześnie. Wszystkie rozmiary mają 4 GB RAM, 64 GB pamięci i ochronę IP55."
+        "question": "Czym różnią się rozmiary SUNMI FLEX 3 KDS?",
+        "answer": "Wersja 15,6\" ma najmniejszą obudowę, waży 2,0 kg i ma wbudowane PoE. Wersje 18,5\" i 22\" (przekątna 21,5\") mają ekran IPS 400 nitów, procesor 8-rdzeniowy i czytnik linii papilarnych. Na większym ekranie mieści się więcej zamówień naraz. Pamięć 4/64 GB i ochrona IP55 są wspólne."
       },
       {
         "question": "Jak zamontować SUNMI FLEX 3 KDS?",
@@ -3612,8 +3666,12 @@ export const sunmiProducts: Product[] = [
         "answer": "Ekran wymaga programu KDS, który odbiera zamówienia z programu sprzedaży. Program KDS musi działać na Androidzie 13. Zamówienia z kasy synchronizują się wtedy automatycznie. Prosimy o kontakt i podanie nazwy programu sprzedaży. Sprawdzimy, który program KDS z nim współpracuje."
       },
       {
-        "question": "Czy SUNMI FLEX 3 KDS ma Google Play?",
-        "answer": "Wszystkie rozmiary obsługują usługi Google (GMS) w systemie SUNMI OS 4.0 na Androidzie 13. Jeśli program KDS wymaga Sklepu Google Play, prosimy o kontakt przed zamówieniem. Potwierdzimy konfigurację wybranego PN."
+        "question": "Czy na SUNMI FLEX 3 KDS jest Sklep Google Play?",
+        "answer": "System SUNMI OS 4.0 (Android 13) obsługuje usługi Google we wszystkich trzech rozmiarach. Jeśli program KDS instaluje się z Google Play, przed zamówieniem potwierdzimy konfigurację danego rozmiaru."
+      },
+      {
+        "question": "Czym FLEX 3 KDS różni się od kiosku FLEX 3?",
+        "answer": "[SUNMI FLEX 3](/produkt/sunmi-flex-3) to ekran do kiosku samoobsługowego z NFC na ekranie i klasą IP54, dostępny też w rozmiarze 27\". Wersja KDS nie ma NFC, ma klasę IP55 i ekran, który reaguje na mokre dłonie."
       }
     ],
     "createdAt": "2026-10-22",
@@ -3625,9 +3683,9 @@ export const sunmiProducts: Product[] = [
     "name": "SUNMI FLEX 3",
     "seoH1": "SUNMI FLEX 3",
     "seoTitle": "Kiosk dotykowy SUNMI FLEX 3 15,6\"–27\" z NFC",
-    "seoDescription": "Kiosk samoobsługowy SUNMI FLEX 3: ekran dotykowy 15,6\", 18,5\", 22\" lub 27\" z NFC, Android 13, IP54. PN: P11050020, P11050012, P11050001, P11050006.",
-    "shortDescription": "SUNMI FLEX 3 — ekran dotykowy do kiosku samoobsługowego w rozmiarach 15,6\", 18,5\", 22\" i 27\", z NFC na ekranie. SUNMI OS 4.0 na Androidzie 13, ochrona IP54 i mocowanie VESA 100 × 100. Stojaki i moduły kiosku kupuje się osobno.",
-    "description": "SUNMI FLEX 3 to ekran dotykowy z systemem Android i NFC na ekranie, dostępny w czterech rozmiarach: 15,6\", 18,5\", 22\" i 27\". Służy do budowy kiosku samoobsługowego, kasy samoobsługowej i stanowiska kasowego. Na mocowaniu VESA 100 × 100 pracuje także na ścianie, np. jako tablica informacyjna.\n\nObudowa ma ochronę IP54. Ramka ekranu ma 16 mm, a profil obudowy 17 mm. Ekran FHD 1920 × 1080 px ma powłokę ograniczającą odciski palców. System to SUNMI OS 4.0 na Androidzie 13 z obsługą usług Google (GMS).\n\nWersja 15,6\" ma procesor 6-rdzeniowy, 4 GB RAM i 64 GB pamięci. Wersje 18,5\", 22\" i 27\" mają procesor 8-rdzeniowy, 6 GB RAM, 128 GB pamięci, Wi-Fi 6E i czytnik linii papilarnych w przycisku zasilania.\n\nStojaki podłogowe i na ladę oraz moduły, np. moduł NFC, MSR i skaner, kupuje się osobno. Są w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow). Ekran do kuchni, bez NFC, to [SUNMI FLEX 3 KDS](/produkt/sunmi-flex-3-kds).",
+    "seoDescription": "Kiosk samoobsługowy SUNMI FLEX 3: ekran dotykowy 15,6\", 18,5\", 22\" lub 27\" z NFC, IP54, Android 13. FLEX 3 SUNMI, PN: P11050001, P11050006, P11050020.",
+    "shortDescription": "SUNMI FLEX 3 — ekran kiosku samoobsługowego z NFC na ekranie, w czterech rozmiarach od 15,6\" do 27\", z ramką 16 mm.",
+    "description": "SUNMI FLEX 3 to ekran dotykowy z Androidem i NFC, z którego buduje się kiosk samoobsługowy, kasę samoobsługową albo stanowisko kasowe. Karty przykłada się bezpośrednio do ekranu. Rozmiary to 15,6\", 18,5\", 22\" i 27\".\n\nEkran FHD ma ramkę 16 mm, a płaska obudowa 17 mm grubości. Powłoka ogranicza odciski palców, a klasa ochrony to IP54. Na mocowaniu VESA 100 × 100 FLEX 3 pracuje też na ścianie lub ramieniu.\n\nWersje 18,5\", 22\" i 27\" mają procesor ośmiordzeniowy do 2,7 GHz, 6 GB RAM, 128 GB pamięci, Wi-Fi 6E i czytnik linii papilarnych. Wersja 15,6\" ma procesor sześciordzeniowy, 4/64 GB i Wi-Fi 5. Oprogramowanie systemowe to Android 13 z SUNMI OS 4.0 i obsługą usług Google.\n\nKasę samoobsługową buduje się z wersji 22\" na stojaku Retail, a kiosk zamówień w restauracji z wersji 27\" na stojaku Restaurant. Wersja 18,5\" na ramieniu VESA pokazuje instrukcje stanowiskowe w produkcji. Stojaki i moduły kupuje się osobno w kategorii [akcesoria do kiosków](/akcesoria-do-kioskow).",
     "categoryId": "kioski-samoobslugowe",
     "subcategoryIds": [],
     "manufacturerId": "sunmi",
@@ -3765,10 +3823,11 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "applications": [
-      "Kiosk zamówień w restauracji",
-      "Kasa samoobsługowa w sklepie",
-      "Stanowisko kasowe z szufladą i drukarką",
-      "Rejestracja gości i tablica informacyjna"
+      "Kiosk zamówień w restauracji (27\")",
+      "Kasa samoobsługowa w sklepie (22\")",
+      "Instrukcje stanowiskowe w zakładzie produkcyjnym (18,5\")",
+      "Rejestracja gości w biurze i placówce medycznej",
+      "Elektroniczna tablica informacyjna w szkole"
     ],
     "variants": [
       {
@@ -3819,9 +3878,9 @@ export const sunmiProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Przekątna ekranu": "Przekątna ekranu dotykowego FHD 1920 × 1080 px z NFC.\n\n• 15,6\" — 250 nitów, 2,2 kg; do stanowiska kasowego.\n\n• 18,5\", 21,5\" (sprzedawany jako 22\") i 27\" — ekran IPS 400 nitów; 22\" i 27\" SUNMI zaleca do kasy samoobsługowej i kiosku zamówień.",
+      "Przekątna ekranu": "Przekątna ekranu kiosku z NFC.\n\n• 15,6\" — 250 nitów, 2,2 kg; do stanowiska kasowego.\n\n• 18,5\", 22\" (21,5\") i 27\" — IPS 400 nitów; 22\" SUNMI zaleca do kasy samoobsługowej, a 27\" do kiosku zamówień.",
       "Pamięć": "Pamięć operacyjna (RAM) i pamięć na system i aplikacje.\n\n• 4 GB RAM / 64 GB — wersja 15,6\", procesor 6-rdzeniowy do 2,4 GHz.\n\n• 6 GB RAM / 128 GB — wersje 18,5\", 22\" i 27\", procesor 8-rdzeniowy do 2,7 GHz.",
-      "Czytnik linii papilarnych": "Czytnik linii papilarnych w przycisku zasilania.\n\n• Mają go wersje 18,5\", 22\" i 27\".",
+      "Czytnik linii papilarnych": "Czytnik w przycisku zasilania kiosku.\n\n• Mają go trzy większe rozmiary: 18,5\", 22\" i 27\".",
       "Wi-Fi 6E": "Wi-Fi 802.11ax z pasmem 6 GHz, obok pasm 2,4 i 5 GHz.\n\n• Mają je wersje 18,5\", 22\" i 27\", razem z Bluetooth 5.2.\n\n• Wersja 15,6\" ma Wi-Fi 5 (2,4 i 5 GHz) i Bluetooth 5.0."
     },
     "compatibleAccessories": [],
@@ -3863,11 +3922,11 @@ export const sunmiProducts: Product[] = [
       },
       {
         "question": "Czy SUNMI FLEX 3 wymaga programu?",
-        "answer": "Tak. Ekran ma system SUNMI OS 4.0 na Androidzie 13, ale zamówienia przyjmuje dopiero program kiosku. Program musi przesyłać zamówienia do programu sprzedaży i obsługiwać wybrany sposób płatności. Prosimy o kontakt i podanie nazwy programu sprzedaży."
+        "answer": "Tak. Ekran działa na Androidzie 13 (SUNMI OS 4.0), ale zamówienia przyjmuje dopiero program kiosku. Program musi przesyłać zamówienia do programu sprzedaży i obsługiwać wybrany sposób płatności. Nazwę programu sprzedaży prosimy podać przy zapytaniu."
       },
       {
-        "question": "Czy SUNMI FLEX 3 ma Google Play?",
-        "answer": "Wszystkie rozmiary obsługują usługi Google (GMS) w systemie SUNMI OS 4.0 na Androidzie 13. Jeśli program kiosku wymaga Sklepu Google Play, prosimy o kontakt przed zamówieniem. Potwierdzimy konfigurację wybranego PN."
+        "question": "Czy program kiosku można pobrać z Google Play na SUNMI FLEX 3?",
+        "answer": "Każdy rozmiar FLEX 3 obsługuje usługi Google w systemie SUNMI OS 4.0. Gdy program kiosku pochodzi ze Sklepu Google Play, prosimy o kontakt przed zamówieniem; potwierdzimy konfigurację wybranego PN."
       }
     ],
     "createdAt": "2026-10-22",
