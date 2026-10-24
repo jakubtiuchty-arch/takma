@@ -373,8 +373,12 @@ export const zebraRs2100Accessories: Product[] = [
       "etui-kabury-skanerow"
     ],
     "manufacturerId": "zebra",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/SG-RS2X-HMTLA-01.png"
+    ],
+    "imageDescriptions": [
+      "Mocowanie ze spustem Zebra RS2100 na lewą rękę — gniazdo skanera, paski na nadgarstek i palec (zdjęcie poglądowe)"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -537,8 +541,12 @@ export const zebraRs2100Accessories: Product[] = [
       "etui-kabury-skanerow"
     ],
     "manufacturerId": "zebra",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/SG-RS2X-HMTLA-01.png"
+    ],
+    "imageDescriptions": [
+      "Mocowanie ze spustem Zebra RS2100 na lewą rękę — jedno z dziesięciu w opakowaniu (zdjęcie poglądowe)"
+    ],
     "tags": [
       "magazyn"
     ],

@@ -100,10 +100,11 @@ Wszystkie PNG 800 × 800, przezroczyste tło (białe tło usunięte flood fillem
 | CBA-U46-S07ZAR.png | PTS Mobile (560 px) | 66% szer. |
 
 - Wszystkie zdjęcia z dłonią na zebra.com przedstawiają prawą dłoń. Zdjęcie lewego mocowania u PTS to lustrzane odbicie prawego z odwróconym napisem ZEBRA — nie użyto.
-- Bez zdjęcia (logo Zebra na kaflu, placeholder na karcie): CRD-RS2X-20SCHG-01, SG-RS2X-HMTLA-01, SG-RS2X-HMTLA-10. Dla stacji 20-gniazdowej dostępne są tylko rysunki SVG w dokumentacji i miniatury ≤ 300 px.
+- Lewe mocowania (SG-RS2X-HMTLA-01 i -10): `SG-RS2X-HMTLA-01.png` to lustrzane odbicie zdjęcia prawego mocowania z usuniętą (zretuszowaną) naklejką w gnieździe skanera (napisy ZEBRA, RS2100 MOUNT, strzałki). Opis zdjęcia: „(zdjęcie poglądowe)”, jak przy lewych mocowaniach ProGlove.
+- Bez zdjęcia (logo Zebra na kaflu, placeholder na karcie): CRD-RS2X-20SCHG-01. Dla stacji 20-gniazdowej dostępne są tylko rysunki SVG w dokumentacji i miniatury ≤ 300 px.
 - Zdjęcia PTS mają 525–560 px (poniżej progu 600 px z briefu, ale bez powiększania: skala 0,96–1,05). Do wymiany, gdy będzie dostęp do biblioteki mediów Zebry.
 - Mapę `product-image-dims.json` uzupełniono ręcznie.
-- W bloku „Wymagane” na karcie RS2100 pozycje lewych mocowań nie mają miniatury (puste miejsce zamiast zdjęcia), bo nie mają zdjęcia.
+- W bloku „Wymagane” na karcie RS2100 stacja 20-gniazdowa nie ma miniatury (puste miejsce zamiast zdjęcia), bo nie ma zdjęcia.
 - Zrzuty 1440 i 390 px (RS2100, ProGlove MARK 2, M3 WR15, podkategoria, stacje, adapter, mocowanie, ProGlove C006): scratchpad sesji `rs2100/shots/`, pomiary w `pomiar.json`.
 
 ## 8. Samokontrola z kartą katalogową

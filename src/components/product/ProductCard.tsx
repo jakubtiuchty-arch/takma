@@ -60,7 +60,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const manufacturer = getManufacturerById(product.manufacturerId)
   const inRFQ = mounted ? isInCart(product.id) : false
   const hasRealImage = product.images.length > 0 && !product.images[0].includes('placeholder')
-  // Akcesoria RS2100 bez zdjęcia ≥ 600 px (stacja 20-gniazdowa, lewe mocowania) dostają logo Zebra zamiast pustego kafla.
+  // Akcesoria RS2100 bez zdjęcia (stacja 20-gniazdowa) dostają logo Zebra zamiast pustego kafla.
   const placeholderLogo = (['brady', 'sunmi', 'citizen', 'getac', 'bluebird', 'proglove'].includes(product.manufacturerId) || product.id.startsWith('zebra-rs2100-')) && product.categoryId === 'akcesoria' ? manufacturer?.logo : undefined
   const productHref = getProductHref(product)
   // Keep RP300 catalog tiles aligned with the standard 4:3 RFID reader cards.
