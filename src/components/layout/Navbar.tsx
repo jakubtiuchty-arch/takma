@@ -121,11 +121,12 @@ const navigation: NavItem[] = [
       { name: 'Skanery Honeywell', href: '/skanery-honeywell' },
       { name: 'Skanery Datalogic', href: '/skanery-datalogic' },
       { name: 'Skanery Newland', href: '/skanery-kodow-kreskowych-newland' },
+      { name: 'Skanery ProGlove', href: '/skanery-proglove' },
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
       { name: 'Skanery ladowe', href: '/skanery-kodow-kreskowych/ladowe' },
-      { name: 'Skanery pierścieniowe', href: '/skanery-kodow-kreskowych/pierscieniowe' },
+      { name: 'Skanery pierścieniowe i noszone', href: '/skanery-kodow-kreskowych/pierscieniowe' },
     ],
   },
   {

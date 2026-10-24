@@ -880,18 +880,19 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Datalogic', manufacturer: 'datalogic' },
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
+        { value: 'ProGlove', manufacturer: 'proglove' },
       ],
     },
     {
       specKey: 'rodzaj',
       label: 'Rodzaj',
-      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth lub radio producenta; zasięg zależy od modelu i otoczenia\n• Ladowy — wbudowany w blat kasy; towar przesuwa się nad oknem\n• Prezentacyjny — stoi na blacie, kod podsuwa się pod okno\n• Pierścieniowy — na palcu, obie ręce wolne; magazyn',
+      description: 'Jak skaner pracuje.\n• Przewodowy — kabel USB do kasy lub komputera, bez ładowania\n• Bezprzewodowy — Bluetooth lub radio producenta; zasięg zależy od modelu i otoczenia\n• Ladowy — wbudowany w blat kasy; towar przesuwa się nad oknem\n• Prezentacyjny — stoi na blacie, kod podsuwa się pod okno\n• Pierścieniowy i noszony — na palcu lub na grzbiecie dłoni, obie ręce wolne; magazyn, produkcja',
       derived: [
         { value: 'Przewodowy', subcategory: 'skanery-przewodowe' },
         { value: 'Bezprzewodowy', subcategory: 'skanery-bezprzewodowe' },
         { value: 'Ladowy', subcategory: 'skanery-ladowe' },
         { value: 'Prezentacyjny', subcategory: 'skanery-prezentacyjne' },
-        { value: 'Pierścieniowy', subcategory: 'skanery-pierscieniowe' },
+        { value: 'Pierścieniowy i noszony', subcategory: 'skanery-pierscieniowe' },
       ],
     },
     {
@@ -1436,7 +1437,7 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
   categoryFilters[brand] = categoryFilters['terminale-mobilne']
 }
 // Skanery: strony marek i podkategorie dostają ten sam zestaw — grupy z jedną wartością (Producent, Rodzaj) chowają się same
-for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/ladowe', 'skanery-kodow-kreskowych/pierscieniowe']) {
+for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-proglove', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/ladowe', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
 // Skanery ladowe: Szczelność i Interfejs mają dane tylko dla części z 9 modeli, więc tu ich nie ma

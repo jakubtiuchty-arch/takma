@@ -4,6 +4,7 @@ import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { bluebirdProducts, bluebirdAccessories } from './bluebird-products'
 import { bluebirdFaq } from './bluebird-category'
 import { progloveProducts, progloveAccessories } from './proglove-products'
+import { progloveFaq } from './proglove-category'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -351,7 +352,7 @@ export const categories: Category[] = [
     description: 'Profesjonalne skanery i czytniki kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
     seoTitle: 'Skanery i czytniki kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne',
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto — Zebra, Honeywell, Newland, Datalogic. Przewodowe, bezprzewodowe i prezentacyjne do kas, aptek, magazynów i produkcji. Dobór modelu, konfiguracja i serwis.',
-    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D czterech producentów — przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne (hands-free). Do kasy i apteki wystarczy imager 2D za ok. 350 zł, do magazynu wysokiego składowania potrzebny jest zasięg powyżej 10 metrów, a na produkcji — odczyt kodów DPM wybijanych w metalu. Modele konkretnych marek zebraliśmy osobno: [skanery Zebra](/skanery-kodow-kreskowych-zebra), [Honeywell](/skanery-honeywell) i [Newland](/skanery-kodow-kreskowych-newland). Dobór modelu do stanowiska, konfiguracja symbologii i serwis w Polsce.',
+    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D kilku producentów — przewodowe (USB), bezprzewodowe (Bluetooth), prezentacyjne (hands-free) oraz noszone na dłoni. Do kasy i apteki wystarczy imager 2D za ok. 350 zł, do magazynu wysokiego składowania potrzebny jest zasięg powyżej 10 metrów, a na produkcji — odczyt kodów DPM wybijanych w metalu. Modele konkretnych marek zebraliśmy osobno: [skanery Zebra](/skanery-kodow-kreskowych-zebra), [Honeywell](/skanery-honeywell), [Newland](/skanery-kodow-kreskowych-newland) i [ProGlove](/skanery-proglove). Dobór modelu do stanowiska, konfiguracja symbologii i serwis w Polsce.',
     icon: 'scan',
     productCount: 32,
   },
@@ -1251,12 +1252,12 @@ export const subcategories: Subcategory[] = [
   {
     id: 'skanery-pierscieniowe',
     slug: 'skanery-kodow-kreskowych/pierscieniowe',
-    name: 'Skanery pierścieniowe',
+    name: 'Skanery pierścieniowe i noszone',
     parentCategoryId: 'skanery-kodow-kreskowych',
-    description: 'Skanery pierścieniowe (ring scanners) — noszone na palcu, obie ręce wolne do kompletacji. Zebra, M3 Mobile, Unitech, Honeywell, ProGlove.',
-    seoTitle: 'Skanery pierścieniowe (ring scanners) — hands-free do magazynu ',
-    seoDescription: 'Skanery pierścieniowe Zebra RS5100, ProGlove MARK, Honeywell 8680i, M3 Ring Scanner, Unitech MS652. Hands-free skanowanie w magazynie. Ceny netto, doradztwo. TAKMA.',
-    longDescription: 'Skanery pierścieniowe (ring scanners, wearable scanners) to miniaturowe czytniki kodów kreskowych noszone na palcu lub na rękawicy — obie ręce operatora pozostają wolne do podnoszenia, odkładania i pakowania towarów. Kluczowe zastosowanie: kompletacja zamówień (order picking), sortowanie paczek, inwentaryzacja, cross-docking. W ofercie TAKMA: Zebra RS5100 (1D/2D, Bluetooth, hot-swap, IP65, od ~2 500 zł), ProGlove MARK (zintegrowany z rękawicą, gateway BLE, od ~1 800 zł), Honeywell 8680i (wearable mini-mobile, Android, od ~3 500 zł), M3 Mobile Ring Scanner (kompatybilny z SM30/US30) i Unitech MS652 (kompaktowy ring BT, od ~1 200 zł). Skanery pierścieniowe zwiększają produktywność kompletacji o 20-30% w porównaniu z tradycyjnymi skanerami ręcznymi — eliminują cykl „podnieś skaner → zeskanuj → odłóż skaner". TAKMA oferuje doradztwo w doborze skanera pierścieniowego do istniejącej infrastruktury (terminale, WMS, Wi-Fi).',
+    description: 'Skanery pierścieniowe na palec i skanery noszone na grzbiecie dłoni — odczyt kodów 1D i 2D, obie ręce wolne do pracy. M3 Mobile i ProGlove.',
+    seoTitle: 'Skanery pierścieniowe i noszone na dłoni — M3 Mobile, ProGlove',
+    seoDescription: 'Skanery pierścieniowe M3 WR10 i WR15 oraz skanery noszone na dłoni ProGlove LEO, MARK i MAI. Odczyt 1D/2D, Bluetooth, obie ręce wolne. Ceny netto.',
+    longDescription: 'Skanery pierścieniowe i noszone to małe czytniki kodów kreskowych 1D i 2D mocowane na palcu albo na grzbiecie dłoni. Operator uruchamia odczyt spustem przy palcu i od razu chwyta towar obiema rękami, bez odkładania skanera. Takie skanery stosuje się przy kompletacji zamówień, sortowaniu, pakowaniu, przyjęciach i montażu. Łączą się przez Bluetooth z terminalem, tabletem lub smartfonem, a część z nich także z komputerem przez bramkę USB. Mocowania i stacje ładujące są w kategorii [akcesoria do skanerów](/akcesoria-do-skanerow).',
     icon: 'scan',
     productIds: ['m3-wr15', 'm3-wr10'],
     productCount: 2,
@@ -96119,6 +96120,17 @@ export const brandCategories: BrandCategory[] = [
   "seoDescription": "Terminale mobilne Bluebird z Androidem: dotykowe S10, S20, S50, S70 i EF551, EK430 z klawiaturą, S10 RFID i S70 ATEX. Ceny netto, PN i dostępność.",
   "longDescription": "Terminale mobilne Bluebird to przenośne komputery z Androidem do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje terminale dotykowe, terminal z klawiaturą, terminal z czytnikiem UHF RFID, wersję do stref zagrożonych wybuchem i smartfon firmowy bez skanera. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi, a wybrane wersje także przez 4G LTE lub 5G. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
   "faq": bluebirdFaq
+},
+{
+  "id": "skanery-proglove",
+  "slug": "skanery-proglove",
+  "manufacturerId": "proglove",
+  "categoryId": "skanery-kodow-kreskowych",
+  "name": "Skanery noszone ProGlove",
+  "seoTitle": "Skanery ProGlove noszone na dłoni — ceny od {cenaOd} zł",
+  "seoDescription": "Skanery kodów ProGlove noszone na dłoni od {cenaOd} zł netto: LEO, MARK Basic, MARK 2, MARK 3, MARK Display i MAI z ekranem. Mocowania, stacje i Gateway.",
+  "longDescription": "Skanery ProGlove to czytniki kodów kreskowych 1D i 2D noszone na grzbiecie dłoni. Skaner wpina się w mocowanie, a odczyt uruchamia spust w mocowaniu, więc obie ręce zostają wolne. Oferta obejmuje modele do odczytu z bliska, z zasięgiem do 6 m, z ekranem e-paper i z kolorowym ekranem dotykowym. Mocowania, stacje ładujące i bramki Gateway są w kategorii [akcesoria do skanerów](/akcesoria-do-skanerow).",
+  "faq": progloveFaq
 },
 {
   "id": "terminale-cipherlab",
