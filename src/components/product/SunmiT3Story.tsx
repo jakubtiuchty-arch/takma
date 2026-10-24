@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './SunmiT3Story.module.css'
+import { ProductMotion, ProductFilm } from './ProductMotion'
 
 const base = '/images/sunmi-t3-landing/'
 const scenes = [
@@ -18,9 +19,7 @@ function Photo({ name, alt, className = '', sizes = '(max-width: 768px) 100vw, 1
 
 export default function SunmiT3Story({ max }: { max: boolean }) {
   const [scene, setScene] = useState(0)
-  const [printView, setPrintView] = useState(0)
   const name = max ? 'T3 PRO MAX' : 'T3 PRO'
-  const printFrames = ['print_0.jpg', 'print_40.jpg', 'print_67.jpg']
   return (
     <div className={styles.story}>
       <nav className={styles.nav} aria-label="Poznaj komputer SUNMI">
@@ -44,6 +43,7 @@ export default function SunmiT3Story({ max }: { max: boolean }) {
         {[['15,6″', 'Ekran Full HD'], ['6 / 128 GB', 'RAM i pamięć'], ['2,7 GHz', 'Procesor 8-rdzeniowy'], [max ? '80 mm' : 'Wi-Fi 6E', max ? 'Drukarka Seiko' : 'Łączność bezprzewodowa']].map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
       </div>
 
+      <section className={styles.motionSection}><div className={styles.sectionHead}><p className={styles.eyebrow}>POZNAJ RODZINĘ T3 PRO</p><h2>Zobacz komputer<br /><span>w codziennej pracy.</span></h2></div><ProductFilm src="/images/sunmi-desktop-motion/t3-intro.mp4" preview="/images/sunmi-desktop-motion/t3-intro-preview.mp4" poster="/images/sunmi-desktop-motion/t3-intro-preview.webp" label="SUNMI T3 PRO" /><p className={styles.motionNote}>Film przedstawia rodzinę T3 PRO. Ekran klienta jest opcjonalny; drukarkę w podstawie ma wersja T3 PRO MAX.</p></section>
       <section id="t3-scenes" className={styles.scenes}>
         <div className={styles.sectionHead}><p className={styles.eyebrow}>ZASTOSOWANIA KOMPUTERA POS</p><h2>Do sklepu,<br /><span>restauracji i kawiarni.</span></h2></div>
         <div className={styles.sceneTabs} role="tablist" aria-label="Zastosowania SUNMI">{scenes.map((item, i) => <button key={item.title} role="tab" id={`t3-scene-tab-${i}`} aria-selected={scene === i} aria-controls="t3-scene-panel" onClick={() => setScene(i)} className={scene === i ? styles.selected : ''}>{item.title}</button>)}</div>
@@ -61,14 +61,14 @@ export default function SunmiT3Story({ max }: { max: boolean }) {
 
       <section id="t3-design" className={styles.design}>
         <div className={styles.sectionHead}><p className={styles.eyebrow}>ALUMINIOWA OBUDOWA</p><h2>Smukły ekran.<br /><span>Stabilna podstawa.</span></h2><p>Przewody są prowadzone wewnątrz podstawy. Dzięki temu łatwiej utrzymać porządek na ladzie.</p></div>
-        <div className={styles.designPhoto}><Photo name="p5-2.jpg" alt="Tylna część SUNMI T3 PRO i prowadzenie przewodów w podstawie" /></div>
+        <div className={styles.designPhoto}><Photo name="p5-2.jpg" alt="Tylna część SUNMI T3 PRO i prowadzenie przewodów w podstawie" /></div><div className={styles.designFilm}><ProductFilm src="/images/sunmi-desktop-motion/t3-design.mp4" preview="/images/sunmi-desktop-motion/t3-design-preview.mp4" poster="/images/sunmi-desktop-motion/t3-design-preview.webp" label="Konstrukcja T3 PRO" /></div>
         <div className={styles.designCaption}><span>01 — Ukryte prowadzenie przewodów</span><span>02 — Obudowa ze stopu aluminium</span><span>03 — Smukły ekran bez ramki</span></div>
       </section>
 
       <section id="t3-display" className={styles.display}>
         <div className={styles.displayIntro}><p className={styles.eyebrow}>DOTYKOWY EKRAN FULL HD</p><h2>Czytelny obraz.<br /><span>Obsługa dotykowa.</span></h2><p>Ekran 15,6″ ma rozdzielczość 1920 × 1080 px i jasność 400 nitów. Powłoka ogranicza ślady palców. Zakres odchylania 125° ułatwia dopasowanie położenia ekranu.</p><div className={styles.displayNumbers}><strong>400<span> nitów</span></strong><strong>125<span>° odchylenia</span></strong></div></div>
-        <div className={styles.displayImage}><Photo name="p5-1.jpg" alt="Dotykowy ekran SUNMI T3 PRO bez ramki" /></div>
-        <div className={styles.touchCard}><div className={styles.touchPhoto}><Photo name="p6-1.jpg" alt="Czytnik linii papilarnych na krawędzi ekranu SUNMI" /></div><div><p className={styles.eyebrow}>SZYBKI DOSTĘP</p><h3>Logowanie<br />odciskiem palca.</h3><p>Czytnik linii papilarnych w przycisku zasilania ułatwia logowanie użytkownika. Obsługa zależy od konfiguracji systemu i aplikacji.</p></div></div>
+        <div className={styles.displayImage}><ProductMotion src="/images/sunmi-desktop-motion/t3-tilt.mp4" poster="/images/sunmi-desktop-motion/t3-tilt.webp" label="Regulacja nachylenia ekranu T3 PRO" loop={false} /></div>
+        <div className={styles.touchCard}><div className={styles.touchPhoto}><ProductMotion src="/images/sunmi-desktop-motion/t3-fingerprint.mp4" poster="/images/sunmi-desktop-motion/t3-fingerprint.webp" label="Czytnik linii papilarnych T3 PRO" loop={false} /></div><div><p className={styles.eyebrow}>SZYBKI DOSTĘP</p><h3>Logowanie<br />odciskiem palca.</h3><p>Czytnik linii papilarnych w przycisku zasilania ułatwia logowanie użytkownika. Obsługa zależy od konfiguracji systemu i aplikacji.</p></div></div>
         <div className={styles.nfcCard}><div className={styles.nfcPhoto}><Photo name="p6-3-2.jpg" alt="Karta NFC przykładana do ekranu SUNMI T3 PRO" /></div><div><p className={styles.eyebrow}>NFC W EKRANIE</p><h3>Odczyt kart NFC<br />przy ekranie.</h3><p>Odczyt zgodnych kart NFC bezpośrednio przy ekranie. Płatności SoftPOS wymagają obsługiwanej aplikacji i operatora płatności.</p></div></div>
       </section>
 
@@ -79,8 +79,8 @@ export default function SunmiT3Story({ max }: { max: boolean }) {
       </section>
 
       {max ? <section id="t3-print" className={styles.print}>
-        <div className={styles.printCopy}><p className={styles.eyebrow}>DRUKARKA W PODSTAWIE T3 PRO MAX</p><h2>Potwierdzenia<br /><span>z wbudowanej drukarki.</span></h2><p>W podstawie znajduje się drukarka termiczna Seiko z automatyczną gilotyną. Obsługuje papier 80 mm i drukuje z prędkością do 250 mm/s.</p><div className={styles.printSpecs}><div><strong>80<span> mm</span></strong><small>Szerokość papieru</small></div><div><strong>250<span> mm/s</span></strong><small>Maksymalna prędkość</small></div></div><div className={styles.printTabs} aria-label="Widok modułu drukarki">{['Gotowy do druku', 'Otwarta obudowa', 'Budowa modułowa'].map((label, i) => <button key={label} aria-pressed={i === printView} className={i === printView ? styles.selected : ''} onClick={() => setPrintView(i)}>{label}</button>)}</div><p className={styles.smallNote}>Wydruki są niefiskalne. Urządzenie nie zastępuje kasy ani drukarki fiskalnej.</p></div>
-        <div className={styles.printPhoto}><Photo name={printFrames[printView]} alt={`Drukarka Seiko w SUNMI T3 PRO MAX — ${['wydruk', 'otwarty moduł', 'budowa modułowa'][printView]}`} /></div>
+        <div className={styles.printCopy}><p className={styles.eyebrow}>DRUKARKA W PODSTAWIE T3 PRO MAX</p><h2>Potwierdzenia<br /><span>z wbudowanej drukarki.</span></h2><p>W podstawie znajduje się drukarka termiczna Seiko z automatyczną gilotyną. Obsługuje papier 80 mm i drukuje z prędkością do 250 mm/s.</p><div className={styles.printSpecs}><div><strong>80<span> mm</span></strong><small>Szerokość papieru</small></div><div><strong>250<span> mm/s</span></strong><small>Maksymalna prędkość</small></div></div><p className={styles.smallNote}>Wydruki są niefiskalne. Urządzenie nie zastępuje kasy ani drukarki fiskalnej.</p></div>
+        <div className={styles.printPhoto}><ProductMotion src="/images/sunmi-desktop-motion/t3-print.mp4" poster={base+"print_0.jpg"} label="Otwieranie modułu drukarki T3 PRO MAX" loop={false} /></div>
       </section> : <section className={styles.proChoice}><div><p className={styles.eyebrow}>SWOBODA KONFIGURACJI</p><h2>Dobierz drukarkę do stanowiska.</h2><p>T3 PRO nie ma wbudowanej drukarki. Dobierz osobną drukarkę POS do wymagań programu i miejsca na ladzie.</p><Link href="/drukarki-pos" className={styles.textLink}>Dobierz drukarkę POS ↗</Link></div><div><p className={styles.eyebrow}>SZUKASZ MODELU Z WBUDOWANĄ DRUKARKĄ?</p><h3>Poznaj T3 PRO MAX.</h3><p>Wersja T3 PRO MAX ma wbudowaną drukarkę Seiko na papier 80 mm.</p><Link href="/produkt/sunmi-t3-pro-max#opis" className={styles.textLink}>Zobacz wersję PRO MAX ↗</Link></div></section>}
 
       <section className={styles.connect}>

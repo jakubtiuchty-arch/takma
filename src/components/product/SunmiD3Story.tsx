@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import s from './SunmiD3Story.module.css'
+import { ProductFilm } from './ProductMotion'
 
 const asset = (file: string) => '/images/sunmi-d3-landing/' + file
 const product = (pro: boolean, n = 1) => `/images/products/${pro ? 'P01270001' : 'P01300033'}${n > 1 ? '-' + n : ''}.png`
@@ -28,6 +29,7 @@ export default function SunmiD3Story({ pro }: { pro: boolean }) {
       <div className={s.heroImage}><Photo src={product(pro)} alt={`SUNMI ${name}${pro ? '' : ' z ekranem klienta 10,1 cala'}`} contain /></div><span className={s.modelLabel}>{pro ? 'D3 PRO / F3510' : 'D3 / F153B'}</span>
     </section>
     <div className={s.facts}>{facts.map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>
+    <section className={s.motionSection}><div className={s.head}><p className={s.eyebrow}>ZOBACZ SUNMI {name}</p><h2>Komputer POS<br /><span>przy stanowisku sprzedaży.</span></h2></div><ProductFilm src={`/images/sunmi-desktop-motion/${pro ? 'd3-pro' : 'd3'}-film.mp4`} preview={`/images/sunmi-desktop-motion/${pro ? 'd3-pro' : 'd3'}-preview.mp4`} poster={`/images/sunmi-desktop-motion/${pro ? 'd3-pro' : 'd3'}-preview.webp`} label={pro ? 'SUNMI D3 PRO' : 'Rodzina SUNMI D3'} /><p className={s.motionNote}>{pro ? 'Film przedstawia D3 PRO z wyposażeniem opcjonalnym. Ekran klienta kupujesz osobno.' : 'Film przedstawia rodzinę D3, także inne modele i konfiguracje. Oferowany D3 P01300033 ma dwa ekrany i nie ma wbudowanej drukarki.'}</p></section>
     <section id="d3-display" className={s.display}>
       <div className={s.head}><p className={s.eyebrow}>DOTYKOWY EKRAN 15,6″</p><h2>Obsługuj sprzedaż<br /><span>na ekranie Full HD.</span></h2><p>Na ekranie 15,6″ Full HD wyświetlisz katalog produktów, zamówienia i podsumowanie zakupów. Program przystosowany do obsługi dotykowej nie wymaga myszy.</p></div>
       <div className={`${s.wide} ${pro ? s.lightImage : ''}`}><Photo src={pro ? product(true,2) : asset('p2-2.jpg')} alt={`Przedni ekran SUNMI ${name}`} contain={pro} /></div>

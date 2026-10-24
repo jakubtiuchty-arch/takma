@@ -4,3 +4,5 @@
 
 .heroMax>img{width:56%!important;left:auto!important;right:0!important;object-fit:contain;object-position:center}
 @media(max-width:640px){.heroMax>img{width:100%!important;height:48%!important;object-fit:contain;object-position:center}}
+.motionSection{padding:75px 6%;background:#111216}.motionSection>div:nth-child(2){margin-top:35px}.motionNote{font-size:11px;color:#b7bbc3;line-height:1.8;max-width:800px;margin:24px auto 0!important;text-align:center}.designFilm{margin:35px 6% 0}.displayImage>div,.touchPhoto>div,.printPhoto>div{position:absolute;inset:0}.displayImage>div{background:transparent}.printPhoto>div video{object-fit:contain}@media(max-width:640px){.motionSection{padding:50px 22px}.designFilm{margin:25px 22px 0}.motionNote{font-size:10px}}
+.displayImage>div video{object-fit:cover;object-position:55% center}.display h2 span{color:#68635d}
