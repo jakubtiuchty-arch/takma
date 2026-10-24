@@ -7,9 +7,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-E301",
     "seoH1": "Citizen CT-E301",
     "seoTitle": "Drukarka paragonów Citizen CT-E301 80 mm, USB, RS-232, LAN",
-    "seoDescription": "Drukarka paragonów Citizen CT-E301 80 mm z wyjściem u góry i obudową odporną na dezynfekcję. Drukarka POS Citizen CT-E301. PN: CTE301XXEBX, CTE301X3EBX.",
-    "shortDescription": "Citizen CT-E301 — kompaktowa termiczna drukarka paragonów niefiskalnych na papier do 80 mm, z wyjściem papieru u góry. Obudowa jest odporna na środki dezynfekujące; wersje z USB albo z USB, RS-232 i Ethernetem.",
-    "description": "Drukarka Citizen CT-E301 drukuje paragony niefiskalne w handlu, gastronomii, kuchni, aptece i placówce medycznej. Pracuje też w kiosku i w systemie zarządzania kolejką. Obudowa ma 125 × 165 × 108 mm i mieści się obok szuflady kasowej albo na ladzie obok skanera.\n\n## Obudowa odporna na środki dezynfekujące\n\nObudowa jest odporna na substancje chemiczne ze środków dezynfekujących i ogranicza rozwój bakterii. Drukarka ma znak SIAA zgodny z normą ISO 22196. Do wyboru jest wersja czarna albo biała.\n\n## Wyjście papieru u góry i dwie konfiguracje portów\n\nParagon wychodzi u góry obudowy. Drukarka drukuje do 250 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Papier może mieć szerokość 80 lub 58 mm i grubość 53–85 µm, a rolka średnicę do 83 mm. Papier 58 mm wymaga przekładki. Gilotyna wykonuje cięcie pełne lub częściowe. Wersja podstawowa ma USB, a wersja rozszerzona USB, RS-232 i Ethernet. Każda wersja ma złącze szuflady kasowej i przyjmuje polecenia ESC/POS. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nTę samą obudowę, druk do 350 mm/s i gniazdo na kartę interfejsu ma [Citizen CT-E601](/produkt/citizen-ct-e601).",
+    "seoDescription": "Citizen CT-E301: drukarka paragonów do apteki i przychodni, obudowa do dezynfekcji, USB lub USB + RS-232 + LAN. Drukarka POS. PN: CTE301XXEBX, CTE301X3EBX",
+    "shortDescription": "Citizen CT-E301 — drukarka paragonów 80 mm z wyjściem u góry, w obudowie odpornej na środki dezynfekujące, ze znakiem SIAA (ISO 22196).",
+    "description": "Citizen CT-E301 to kompaktowa drukarka paragonów niefiskalnych w obudowie przygotowanej do dezynfekcji. Tworzywo wytrzymuje substancje chemiczne ze środków dezynfekujących i ogranicza rozwój bakterii, co potwierdza znak SIAA zgodny z normą ISO 22196. Drukarka jest przeznaczona m.in. dla placówek medycznych i aptek, a także dla handlu, hotelarstwa, kuchni i systemów zarządzania kolejką.\n\nObudowa ma 125 × 165 × 108 mm. Drukarkę można postawić obok szuflady kasowej, na ladzie razem ze skanerem albo wbudować w kiosk. Paragon wychodzi u góry. Rolkę o średnicy do 83 mm wkłada się od góry, bez przewlekania papieru. Druk osiąga 250 mm/s przy 203 dpi, a gilotyna tnie papier w całości albo częściowo. Serwis nie wymaga narzędzi.\n\nGniazda na kartę interfejsu nie ma, dlatego porty wybiera się przy zamówieniu. Wersja podstawowa ma samo USB, a wersja z potrójnym interfejsem także RS-232 i Ethernet; obie są czarne albo białe. Zasilacz 37AD5 jest zewnętrzny i dołączony do zestawu. Gwarancja wynosi 24 miesiące.\n\nTę samą obudowę z gniazdem karty i druk do 350 mm/s ma [Citizen CT-E601](/produkt/citizen-ct-e601).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -139,9 +139,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne w aptece i placówce medycznej",
-      "Paragony i bony w handlu, gastronomii i kuchni",
-      "Wydruki w kiosku i w systemie zarządzania kolejką"
+      "Rejestracje i gabinety w placówkach medycznych",
+      "Apteki z małą ilością miejsca na ladzie",
+      "Kioski z drukarką w zabudowie",
+      "Bilety w systemach zarządzania kolejką"
     ],
     "variants": [
       {
@@ -184,8 +185,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Porty dodatkowe": "Porty danych obok USB. W CT-E301 wybiera się je przy zakupie, bo drukarka nie ma gniazda na kartę interfejsu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień programu.\n\n• Ethernet — połączenie z przewodową siecią lokalną (LAN).",
-      "Kolor obudowy": "Kolor obudowy CT-E301.\n\n• Czarna albo biała — obie wersje mają obudowę odporną na środki dezynfekujące."
+      "Porty dodatkowe": "Porty, które wersja z potrójnym interfejsem ma obok USB.\n\n• RS-232 i Ethernet — oba w jednej drukarce: do kasy z portem szeregowym albo do sieci LAN.\n\n• Portów nie dokłada się później, bo CT-E301 nie ma gniazda karty.",
+      "Kolor obudowy": "Kolor obudowy odpornej na środki dezynfekujące.\n\n• Czarna i biała — w wersji z samym USB i w wersji z USB, RS-232 i Ethernetem."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -215,24 +216,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-E301 jest drukarką fiskalną?",
-        "answer": "Nie. CT-E301 drukuje paragony niefiskalne, bony i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
-      },
-      {
-        "question": "Którą wersję CT-E301 wybrać?",
-        "answer": "CTE301XXEBX (czarna) i CTE301XXEWX (biała) mają tylko USB. CTE301X3EBX i CTE301X3EWX mają USB, RS-232 i Ethernet. CT-E301 nie ma gniazda na kartę interfejsu, dlatego porty wybiera się przy zakupie."
+        "question": "Czym różnią się wersje Citizen CT-E301?",
+        "answer": "Wersja podstawowa ma jeden port danych: USB. Wersja z potrójnym interfejsem ma USB, RS-232 i Ethernet. Każda z nich jest dostępna w czarnej i w białej obudowie. CT-E301 nie ma gniazda karty, więc portów nie da się dołożyć po zakupie."
       },
       {
         "question": "Czy obudowę CT-E301 można dezynfekować?",
-        "answer": "Tak. Obudowa jest odporna na substancje chemiczne ze środków dezynfekujących. Drukarka ma znak SIAA zgodny z normą ISO 22196, który dotyczy ograniczania rozwoju bakterii na powierzchni."
+        "answer": "Tak. Tworzywo obudowy wytrzymuje środki dezynfekujące. Znak SIAA (ISO 22196) dotyczy ograniczania rozwoju bakterii na powierzchni obudowy."
       },
       {
-        "question": "Jaki papier przyjmuje Citizen CT-E301?",
-        "answer": "Papier termiczny 80 lub 58 mm (57,5–79,5 mm, ±0,5 mm) o grubości 53–85 µm, w rolce o średnicy do 83 mm. Papier 58 mm wymaga przekładki. Szerokość druku wynosi do 72 mm."
+        "question": "Czy CT-E301 można wbudować w kiosk?",
+        "answer": "Tak. Obudowa ma 125 × 165 × 108 mm, a papier wychodzi u góry. Poza kioskiem drukarka mieści się obok szuflady kasowej albo na ladzie przy skanerze."
       },
       {
-        "question": "Co jest w zestawie z CT-E301?",
-        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewodu danych nie ma w zestawie."
+        "question": "Czy CT-E301 drukuje na papierze 58 mm?",
+        "answer": "Tak, po założeniu przekładki. Bez niej drukarka pracuje na papierze 80 mm. Zakres szerokości wynosi 57,5–79,5 mm (±0,5 mm), a grubość papieru 53–85 µm."
+      },
+      {
+        "question": "Czy do CT-E301 trzeba dokupić przewód?",
+        "answer": "Tak, przewód danych zamawia się osobno. W pudełku są drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja."
       }
     ],
     "createdAt": "2026-10-23",
@@ -244,9 +245,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-E351",
     "seoH1": "Citizen CT-E351",
     "seoTitle": "Drukarka paragonów Citizen CT-E351 80 mm, USB, RS-232, LAN",
-    "seoDescription": "Drukarka paragonów Citizen CT-E351 80 mm, 250 mm/s, z USB i RS-232 lub LAN. Drukarka POS Citizen CT-E351 z wyjściem z przodu. PN: CTE351XXEBX, CTE351XEEBX.",
-    "shortDescription": "Citizen CT-E351 — termiczna drukarka paragonów niefiskalnych na papier do 80 mm, z wyjściem papieru z przodu. Drukuje do 250 mm/s i ma USB oraz RS-232 albo Ethernet.",
-    "description": "Drukarka Citizen CT-E351 drukuje paragony niefiskalne w sklepie, w gastronomii i w hotelu. Drukuje też bilety i numerki w systemach zarządzania kolejką. Obudowa ma 125 × 170 × 108 mm i waży 1,26 kg. Do wyboru jest wersja czarna albo biała.\n\n## Wyjście papieru z przodu i ładowanie od góry\n\nParagon wychodzi z przodu obudowy, a rolkę papieru wkłada się od góry. Drukarka drukuje do 250 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Papier może mieć szerokość 80 lub 58 mm i grubość 53–85 µm, a rolka średnicę do 83 mm. Papier 58 mm wymaga przekładki. Gilotyna wykonuje cięcie pełne lub częściowe. Czujnik wykrywa koniec papieru. Panel ma 2 przyciski i 2 diody LED, a drukarka ma wbudowany brzęczyk. Obudowa jest odporna na krople wody spadające pionowo (IPX1).\n\n## USB z RS-232 albo z Ethernetem\n\nKażda wersja ma port USB i złącze szuflady kasowej. Drugi port to RS-232 albo Ethernet, zależnie od PN. Drukarka przyjmuje polecenia ESC/POS. W zestawie jest zewnętrzny zasilacz 37AD5. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nGniazdo na kartę interfejsu, np. Wi-Fi, i druk do 300 mm/s ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "seoDescription": "Drukarka paragonów Citizen CT-E351 z wyjściem z przodu, 250 mm/s, USB + RS-232 lub USB + Ethernet. CT-E351 Citizen biała i czarna. PN: CTE351XXEBX, CTE351XEEBX",
+    "shortDescription": "Citizen CT-E351 — drukarka paragonów z wyjściem z przodu i dwoma wbudowanymi portami: USB oraz RS-232 albo Ethernet, w białej lub czarnej obudowie.",
+    "description": "Citizen CT-E351 to drukarka paragonów niefiskalnych do punktów obsługi klienta, w których sprzęt ma pasować do wystroju. Obudowa jest śnieżnobiała albo czarna, ma 125 × 170 × 108 mm i waży 1,26 kg.\n\nRolkę wkłada się od góry, a mechanizm ładowania zapobiega zacięciom papieru. Paragon wychodzi z przodu z prędkością do 250 mm/s. Klasa IPX1 oznacza odporność na krople wody spadające pionowo. Panel ma dwa przyciski i dwie diody LED, a wbudowany brzęczyk powiadamia obsługę. Tryby uśpienia i czuwania oraz zgodność z ENERGY STAR ograniczają zużycie energii. Opakowanie jest zdatne do recyklingu.\n\nOba porty są wbudowane na stałe: USB oraz, zależnie od wersji, RS-232 albo Ethernet. Do tego każda wersja ma złącze szuflady kasowej. Gniazda na kartę interfejsu, np. Wi-Fi, CT-E351 nie ma. Drukarka drukuje paragony w sklepach, hotelach i punktach usługowych, a także bilety i numerki w systemach kolejkowych. W zestawie jest zasilacz 37AD5; można też zasilać ją napięciem 24 V DC. Gwarancja: 2 lata, także na głowicę i gilotynę.\n\nGniazdo karty i druk do 300 mm/s w obudowie o tych samych wymiarach ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -380,9 +381,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne w handlu i gastronomii",
-      "Rachunki i potwierdzenia w hotelu",
-      "Bilety i numerki w systemach zarządzania kolejką"
+      "Punkty obsługi klienta w sektorze usług",
+      "Kasy w sklepach z wystrojem w bieli lub czerni",
+      "Rachunki w hotelach",
+      "Numerki i bilety kolejkowe"
     ],
     "variants": [
       {
@@ -427,8 +429,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Port dodatkowy": "Drugi port danych obok USB. W CT-E351 wybiera się go przy zakupie, bo drukarka nie ma gniazda na kartę interfejsu.\n\n• RS-232 — port szeregowy; wymaga zgodnego przewodu i ustawień programu.\n\n• Ethernet — połączenie z przewodową siecią lokalną (LAN).",
-      "Kolor obudowy": "Kolor obudowy CT-E351.\n\n• Czarna albo biała — pozostałe parametry obu wersji są takie same."
+      "Port dodatkowy": "Drugi port danych, wbudowany w CT-E351 na stałe obok USB.\n\n• RS-232 — do systemu kasowego, który drukuje przez port szeregowy.\n\n• Ethernet — do druku przez sieć LAN; karty Wi-Fi ta drukarka nie przyjmuje.",
+      "Kolor obudowy": "Śnieżnobiała albo czarna obudowa, do dopasowania drukarki do stanowiska.\n\n• Każdy kolor jest dostępny z RS-232 i z Ethernetem."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -458,24 +460,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-E351 jest drukarką fiskalną?",
-        "answer": "Nie. CT-E351 drukuje paragony niefiskalne, bilety i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Którą wersję CT-E351 wybrać: z RS-232 czy z Ethernetem?",
+        "answer": "Wersja z RS-232 łączy się z kasą lub komputerem przez port szeregowy. Wersja z Ethernetem drukuje przez sieć LAN. Obie mają też USB i złącze szuflady kasowej, a każda jest dostępna w białej i czarnej obudowie."
       },
       {
-        "question": "Jak podłączyć CT-E351 do sieci?",
-        "answer": "Port Ethernet mają wersje CTE351XEEBX (czarna) i CTE351XEEWX (biała). CT-E351 nie ma gniazda na kartę interfejsu, dlatego port sieciowy wybiera się przy zakupie. Kartę Wi-Fi przyjmują np. [CT-E601](/produkt/citizen-ct-e601) i [CT-E651](/produkt/citizen-ct-e651)."
+        "question": "Czy do CT-E351 można dodać Wi-Fi?",
+        "answer": "Nie. CT-E351 nie ma gniazda na kartę interfejsu, a port sieciowy wybiera się przy zakupie. Kartę Wi-Fi przyjmują np. [CT-E601](/produkt/citizen-ct-e601) i [CT-E651](/produkt/citizen-ct-e651)."
       },
       {
-        "question": "Jaki papier przyjmuje Citizen CT-E351?",
-        "answer": "Papier termiczny 80 lub 58 mm (59–80 mm, ±0,5 mm) o grubości 53–85 µm, w rolce o średnicy do 83 mm. Papier 58 mm wymaga przekładki. Szerokość druku wynosi do 72 mm."
+        "question": "Jak rolkę papieru zakłada się w CT-E351?",
+        "answer": "Od góry: rolkę wkłada się do komory i zamyka pokrywę. Mechanizm ładowania zapobiega zacięciom, a paragon wychodzi z przodu. Papier 58 mm wymaga przekładki."
       },
       {
-        "question": "Jak podłączyć szufladę kasową do CT-E351?",
-        "answer": "Przewód szuflady podłącza się do złącza szuflady kasowej z tyłu drukarki. Drukarka obsługuje 2 szuflady. Program otwiera szufladę poleceniem wysłanym do drukarki."
+        "question": "Ile szuflad kasowych obsługuje CT-E351?",
+        "answer": "Dwie. Przewód szuflady podłącza się do złącza z tyłu drukarki, a program otwiera szufladę poleceniem wysłanym do drukarki."
       },
       {
-        "question": "Co jest w zestawie z CT-E351?",
-        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewód USB, RS-232 lub Ethernet zamawia się osobno."
+        "question": "Jak zasila się Citizen CT-E351?",
+        "answer": "Z zewnętrznego zasilacza 37AD5, który jest w zestawie, albo napięciem 24 V DC. Przewód zasilający też jest w pudełku, a przewód USB, RS-232 lub Ethernet zamawia się osobno."
       }
     ],
     "createdAt": "2026-10-23",
@@ -487,9 +489,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S310II",
     "seoH1": "Citizen CT-S310II",
     "seoTitle": "Drukarka paragonów Citizen CT-S310II 80 mm, USB, RS-232, LAN",
-    "seoDescription": "Drukarka paragonów Citizen CT-S310II na papier 58 lub 80 mm, z wbudowanym zasilaczem. Drukarka POS Citizen CT-S310II. PN: CTS310IIEBK, CTS310IIXEEBX, CTS310IIEPW.",
-    "shortDescription": "Citizen CT-S310II — termiczna drukarka paragonów niefiskalnych na papier 58 lub 80 mm, z wyjściem papieru u góry i wbudowanym zasilaczem. Drukuje do 160 mm/s i ma USB oraz RS-232 albo Ethernet.",
-    "description": "Drukarka Citizen CT-S310II drukuje paragony niefiskalne w handlu, w gastronomii i w kuchni. Drukuje też bilety. Obudowa ma 140 × 195 × 132 mm i waży 1,9 kg. Zasilacz jest wbudowany w obudowę, dlatego na stanowisku nie ma osobnego zasilacza.\n\n## Papier 58 lub 80 mm i wyjście u góry\n\nParagon wychodzi u góry obudowy. Drukarka drukuje do 160 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Przyjmuje papier o szerokości 58 lub 80 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Funkcja Long Life Print (LLP) może wydłużyć trwałość głowicy do 200 km lub więcej. Drukarka ma 3 tryby oszczędzania papieru i spełnia wymagania ENERGY STAR.\n\n## USB z RS-232 albo z Ethernetem\n\nWersje CTS310IIEBK i CTS310IIEPW mają USB i RS-232, a wersja CTS310IIXEEBX ma USB i Ethernet. Każda wersja ma złącze szuflady kasowej i przyjmuje polecenia ESC/POS. W zestawie jest uchwyt do montażu na ścianie. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nSzybszy druk, do 250 mm/s, i wyjście papieru z przodu ma [Citizen CT-E351](/produkt/citizen-ct-e351).",
+    "seoDescription": "Ekonomiczna drukarka paragonów Citizen CT-S310II 58/80 mm z wbudowanym zasilaczem, USB + RS-232 lub Ethernet. CT-S310II Citizen. PN: CTS310IIEBK, CTS310IIXEEBX",
+    "shortDescription": "Citizen CT-S310II — ekonomiczna drukarka paragonów z wbudowanym zasilaczem ENERGY STAR, funkcją Long Life Print i trzema trybami oszczędzania papieru.",
+    "description": "Citizen CT-S310II to ekonomiczna drukarka paragonów z zasilaczem wbudowanym w obudowę. Zasilacz spełnia wymagania ENERGY STAR, a opakowanie nadaje się do recyklingu.\n\nKoszty eksploatacji ograniczają dwie funkcje. Long Life Print (LLP) może wydłużyć trwałość głowicy do 200 km lub więcej, a trzy tryby oszczędzania papieru zmniejszają zużycie rolek. Paragon wychodzi u góry z prędkością do 160 mm/s. Drukarka przyjmuje papier 58 lub 80 mm; do węższego służy przegroda z zestawu. Zacięty papier usuwa się bez narzędzi.\n\nObudowa ma 140 × 195 × 132 mm i waży 1,9 kg. W zestawie są gumowe nóżki do pracy w pozycji pionowej i zestaw do montażu na ścianie, który instaluje serwisant.\n\nWersje z RS-232, czarna i biała, mają też USB 1.1 i przewód USB w zestawie. Czarna wersja z Ethernetem łączy się z siecią LAN. Drukarka obsługuje dwie szuflady kasowe i polecenia ESC/POS. Jest przeznaczona dla handlu, kuchni, hotelarstwa i druku biletów. Producent daje 2 lata gwarancji, także na głowicę i gilotynę.\n\nSzybszy druk, do 250 mm/s, i wyjście papieru z przodu ma [Citizen CT-E351](/produkt/citizen-ct-e351).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -613,9 +615,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne w handlu i gastronomii",
-      "Bony w kuchni",
-      "Bilety"
+      "Ekonomiczne stanowiska kasowe w handlu",
+      "Bony kuchenne",
+      "Druk biletów",
+      "Rachunki w hotelarstwie"
     ],
     "variants": [
       {
@@ -650,8 +653,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Port dodatkowy": "Drugi port danych obok USB. W CT-S310II wybiera się go przy zakupie, bo drukarka nie ma gniazda na kartę interfejsu.\n\n• RS-232 — port szeregowy; w zestawie jest przewód USB.\n\n• Ethernet — połączenie z przewodową siecią lokalną (LAN).",
-      "Kolor obudowy": "Kolor obudowy CT-S310II.\n\n• Czarna — z RS-232 albo z Ethernetem.\n\n• Biała (pure white) — z RS-232."
+      "Port dodatkowy": "Port danych, który CT-S310II ma obok USB.\n\n• RS-232 — wersja z dwoma interfejsami, z przewodem USB w zestawie.\n\n• Ethernet — wersja do sieci LAN, w czarnej obudowie.",
+      "Kolor obudowy": "Kolor obudowy z wbudowanym zasilaczem.\n\n• Czarna — z RS-232 albo z Ethernetem.\n\n• Biała (pure white) — z RS-232."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [],
@@ -677,24 +680,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-S310II jest drukarką fiskalną?",
-        "answer": "Nie. CT-S310II drukuje paragony niefiskalne, bony i bilety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Co daje funkcja Long Life Print w CT-S310II?",
+        "answer": "Funkcja LLP może wydłużyć trwałość głowicy do 200 km lub więcej. Trzy tryby oszczędzania papieru dodatkowo zmniejszają zużycie rolek."
       },
       {
         "question": "Którą wersję CT-S310II wybrać?",
-        "answer": "CTS310IIEBK (czarna) i CTS310IIEPW (biała) mają USB i RS-232, a w zestawie przewód USB. CTS310IIXEEBX (czarna) ma USB i Ethernet. CT-S310II nie ma gniazda na kartę interfejsu, dlatego port wybiera się przy zakupie."
+        "answer": "Wersje z RS-232, czarna i biała (pure white), mają też USB i przewód USB w zestawie. Czarna wersja z Ethernetem łączy się z siecią lokalną. Gniazda karty nie ma, więc port wybiera się przy zakupie."
       },
       {
         "question": "Czy CT-S310II można zamontować na ścianie?",
-        "answer": "Tak. Zestaw do montażu na ścianie jest dołączony do drukarki, a montaż na ścianie wykonuje serwisant. Drukarka może też pracować pionowo, na gumowych nóżkach z zestawu."
+        "answer": "Tak. Zestaw do montażu na ścianie jest dołączony do drukarki, a montaż wykonuje serwisant. Na gumowych nóżkach z zestawu drukarka może też pracować pionowo."
       },
       {
-        "question": "Jaki papier przyjmuje Citizen CT-S310II?",
-        "answer": "Papier termiczny o szerokości 58 lub 80 mm, w rolce o średnicy do 83 mm. Papier 65–75 µm nawija się na gilzę 12 mm, a papier 75–85 µm na gilzę 25,4 mm. Do papieru 58 mm służy przegroda z zestawu."
+        "question": "Jaki papier i jakie gilzy obsługuje CT-S310II?",
+        "answer": "Rolki 58 albo 80 mm, o średnicy do 83 mm. Papier 65–75 µm nawija się na gilzę 12 mm, a 75–85 µm na gilzę 25,4 mm. Do papieru 58 mm służy przegroda z zestawu."
       },
       {
         "question": "Czy CT-S310II wymaga zasilacza zewnętrznego?",
-        "answer": "Nie. Zasilacz 100–240 V jest wbudowany w obudowę. W zestawie jest przewód zasilający."
+        "answer": "Nie. Zasilacz 100–240 V z certyfikatem ENERGY STAR jest wbudowany w obudowę, a przewód zasilający jest w zestawie."
       }
     ],
     "createdAt": "2026-10-23",
@@ -706,9 +709,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-E601",
     "seoH1": "Citizen CT-E601",
     "seoTitle": "Drukarka paragonów Citizen CT-E601 80 mm, 350 mm/s, USB",
-    "seoDescription": "Drukarka paragonów Citizen CT-E601 80 mm, 350 mm/s, gniazdo karty LAN lub Wi-Fi, Bluetooth, Lightning. Drukarka POS Citizen CT-E601. PN: CTE601XNEBX, CTE601XTEBX.",
-    "shortDescription": "Citizen CT-E601 — termiczna drukarka paragonów niefiskalnych na papier do 80 mm, drukuje do 350 mm/s. Obudowa jest odporna na środki dezynfekujące; wersje z gniazdem karty interfejsu, z Bluetoothem albo ze złączem Lightning.",
-    "description": "Drukarka Citizen CT-E601 drukuje paragony niefiskalne w handlu, gastronomii, kuchni, aptece i placówce medycznej. Pracuje też w kiosku i w systemie zarządzania kolejką. Obudowa ma 125 × 165 × 108 mm i jest odporna na środki dezynfekujące. Drukarka ma znak SIAA zgodny z normą ISO 22196.\n\n## Druk do 350 mm/s i czujnik zacięcia papieru\n\nParagon wychodzi u góry obudowy. Drukarka drukuje do 350 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Czujniki wykrywają koniec papieru, bliski koniec papieru i zacięcie papieru. Papier może mieć szerokość 80 lub 58 mm, a rolka średnicę do 83 mm. Papier 58 mm wymaga przekładki. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED.\n\n## Gniazdo karty, Bluetooth albo Lightning\n\nKażda wersja ma USB, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Wersje CTE601XNEBX i CTE601XNEWX mają gniazdo na kartę interfejsu: Ethernet, RS-232 albo Wi-Fi. W CTE601XTEBX gniazdo zajmuje moduł Bluetooth zgodny z Apple MFi, a w CTE601XAEBX moduł ze złączem Lightning. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nGniazdo na kartę interfejsu i wyjście papieru z przodu ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "seoDescription": "Citizen CT-E601: drukarka paragonów 350 mm/s z czujnikiem zacięcia, Wi-Fi lub LAN na karcie, Bluetooth MFi, Lightning. Drukarka POS CT-E601. PN: CTE601XNEBX",
+    "shortDescription": "Citizen CT-E601 — drukarka paragonów 350 mm/s z czujnikiem zacięcia papieru, obudową do dezynfekcji i gniazdem karty, Bluetoothem albo złączem Lightning.",
+    "description": "Citizen CT-E601 łączy obudowę przygotowaną do dezynfekcji z drukiem do 350 mm/s i wymiennymi interfejsami. Ma tę samą kompaktową obudowę co CT-E301 (125 × 165 × 108 mm, 1,3 kg) i wyjście papieru u góry.\n\nOprócz czujnika końca papieru drukarka ma czujnik bliskiego końca rolki i czujnik zacięcia. Stan drukarki pokazuje pięć diod LED na panelu, a brzęczyk sygnalizuje zdarzenia. Tworzywo obudowy wytrzymuje środki dezynfekujące i ma znak SIAA (ISO 22196). Dlatego CT-E601 pracuje w aptekach, przychodniach i kuchniach, a także w handlu, hotelarstwie, kioskach i systemach kolejkowych.\n\nKażda wersja ma USB 2.0, złącze szuflady i port USB 5 V / 2 A do ładowania tabletu lub telefonu. Wersje z wolnym gniazdem przyjmują kartę Ethernet, Ethernet z USB host, RS-232, USB z hubem albo Wi-Fi compact. Bluetooth zgodny z Apple MFi i złącze Lightning są dostępne jako moduły montowane fabrycznie. Białą obudowę ma wersja z gniazdem karty. Zasilacz 37AD5 jest w zestawie, a gwarancja obejmuje 2 lata.\n\nPorty wybrane na stałe, bez gniazda karty, ma [Citizen CT-E301](/produkt/citizen-ct-e301).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -842,9 +845,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne w aptece i placówce medycznej",
-      "Paragony i bony w handlu, gastronomii i kuchni",
-      "Druk z iPada lub iPhone'a przez Bluetooth albo Lightning"
+      "Stanowiska w ochronie zdrowia z regularną dezynfekcją sprzętu",
+      "Kuchnie i bary",
+      "Sprzedaż z iPada lub iPhone'a",
+      "Recepcje hotelowe"
     ],
     "variants": [
       {
@@ -889,8 +893,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Interfejs dodatkowy": "Połączenie dostępne w CT-E601 obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet, RS-232 albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — połączenie bez przewodu z komputerem, tabletem lub telefonem, także z iPadem i iPhone'em.\n\n• Lightning — połączenie z iPadem lub iPhone'em przez złącze Lightning.",
-      "Kolor obudowy": "Kolor obudowy CT-E601.\n\n• Czarna — wszystkie wersje.\n\n• Biała — w ofercie wersja z gniazdem karty interfejsu."
+      "Interfejs dodatkowy": "Złącze, które CT-E601 ma obok USB i portu ładowania 5 V / 2 A.\n\n• Gniazdo karty — wolne, do karty Ethernet, RS-232 albo Wi-Fi compact.\n\n• Bluetooth (Apple MFi) albo Lightning — moduł fabryczny z USB host, zajmuje gniazdo karty.",
+      "Kolor obudowy": "Kolor obudowy ze znakiem SIAA (ISO 22196).\n\n• Biała — tylko wersja z wolnym gniazdem karty.\n\n• Czarna — także z Bluetoothem albo Lightning."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -924,24 +928,28 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-E601 jest drukarką fiskalną?",
-        "answer": "Nie. CT-E601 drukuje paragony niefiskalne, bony i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Jakie czujniki ma Citizen CT-E601?",
+        "answer": "Czujnik końca papieru, czujnik bliskiego końca rolki i czujnik zacięcia papieru. Stan drukarki pokazuje pięć diod LED na panelu."
       },
       {
-        "question": "Jak podłączyć CT-E601 do sieci przewodowej lub Wi-Fi?",
-        "answer": "Sieć dodaje karta interfejsu w wersjach z gniazdem karty: CTE601XNEBX i CTE601XNEWX. Do sieci przewodowej służy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Kartę wkłada się w gniazdo z tyłu drukarki. W wersjach z Bluetoothem i Lightning gniazdo zajmuje moduł zamontowany fabrycznie."
+        "question": "Która karta daje CT-E601 łączność Wi-Fi?",
+        "answer": "Tak, w wersjach z wolnym gniazdem karty. Wi-Fi 2,4 i 5 GHz daje [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Z siecią przewodową drukarkę łączy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s) z portami USB host. Gniazdo jest zajęte w wersjach z modułem Bluetooth lub Lightning."
       },
       {
-        "question": "Czy CT-E601 współpracuje z iPadem i iPhone'em?",
-        "answer": "Tak. CTE601XTEBX łączy się przez Bluetooth zgodny z Apple MFi. CTE601XAEBX ma złącze Lightning: jednym przewodem przesyła dane i ładuje iPada lub iPhone'a."
+        "question": "Jak CT-E601 łączy się z iPadem i iPhone'em?",
+        "answer": "Przez Bluetooth zgodny z Apple MFi albo przez złącze Lightning, zależnie od wersji. Przewód Lightning jednocześnie przesyła dane i ładuje iPada lub iPhone'a."
       },
       {
-        "question": "Jaki papier przyjmuje Citizen CT-E601?",
-        "answer": "Papier termiczny 80 lub 58 mm (57,5–79,5 mm, ±0,5 mm) o grubości 53–85 µm, w rolce o średnicy do 83 mm. Papier 58 mm wymaga przekładki. Szerokość druku wynosi do 72 mm."
+        "question": "Do czego służy port ładowania w CT-E601?",
+        "answer": "Port USB 5 V / 2 A ładuje tablet lub telefon używany przy stanowisku. Nie steruje urządzeniami peryferyjnymi; skaner lub wyświetlacz klienta podłącza się do karty z portami USB host."
       },
       {
-        "question": "Co jest w zestawie z CT-E601?",
-        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewodu danych i kart interfejsu nie ma w zestawie."
+        "question": "Czy CT-E601 nadaje się do apteki?",
+        "answer": "Tak. Tworzywo obudowy jest odporne na środki dezynfekujące i ma znak SIAA (ISO 22196). Czujnik zacięcia papieru i pięć diod LED pokazują stan drukarki przy ladzie."
+      },
+      {
+        "question": "Co trzeba zamówić osobno do CT-E601?",
+        "answer": "Przewód danych i ewentualną kartę interfejsu. Drukarka przychodzi z zasilaczem 37AD5, przewodem zasilającym i skróconą instrukcją."
       }
     ],
     "createdAt": "2026-10-23",
@@ -953,9 +961,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-E651",
     "seoH1": "Citizen CT-E651",
     "seoTitle": "Drukarka paragonów Citizen CT-E651 80 mm, 300 mm/s, USB",
-    "seoDescription": "Drukarka paragonów Citizen CT-E651 80 mm, 300 mm/s, wyjście z przodu, gniazdo karty LAN lub Wi-Fi. Drukarka POS Citizen CT-E651. PN: CTE651XNEBX, CTE651XTEBX.",
-    "shortDescription": "Citizen CT-E651 — termiczna drukarka paragonów niefiskalnych na papier do 80 mm, z wyjściem papieru z przodu. Drukuje do 300 mm/s; ma USB, a w wersjach z gniazdem karty sieć, RS-232 lub Wi-Fi dodaje karta interfejsu. Wersje z Bluetoothem i Lightning.",
-    "description": "Drukarka Citizen CT-E651 drukuje paragony niefiskalne w handlu, gastronomii i hotelarstwie. Obudowa ma 125 × 170 × 108 mm i tę samą wysokość co szuflada kasowa, dlatego mieści się pod komputerem POS typu all-in-one albo obok szuflady.\n\n## Wyjście papieru z przodu i druk do 300 mm/s\n\nParagon wychodzi z przodu obudowy, a rolkę papieru wkłada się od góry. Wyjście z przodu chroni mechanizm przed zalaniem i okruchami. Obudowa jest odporna na krople wody spadające pionowo (IPX1). Drukarka drukuje do 300 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Papier może mieć szerokość 80 lub 58 mm, a rolka średnicę do 83 mm. Papier 58 mm wymaga przekładki. Czujniki wykrywają koniec papieru i bliski koniec papieru; położenie czujnika bliskiego końca można regulować. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED.\n\n## USB i gniazdo karty interfejsu\n\nKażda wersja ma USB 2.0 i złącze szuflady kasowej. Wersje CTE651XNEBX i CTE651XNEWX mają wolne gniazdo karty interfejsu: Ethernet, RS-232 albo Wi-Fi dodaje karta wkładana z tyłu drukarki. W wersjach CTE651XTEBX i CTE651XTEWX gniazdo zajmuje moduł Bluetooth, a w CTE651XAEBX moduł ze złączem Lightning. W zestawie jest zewnętrzny zasilacz 37AD5. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nTe same wymiary obudowy, port RS-232 albo Ethernet w standardzie i druk do 250 mm/s ma [Citizen CT-E351](/produkt/citizen-ct-e351).",
+    "seoDescription": "Citizen CT-E651, drukarka paragonów z wyjściem z przodu: 300 mm/s, IPX1, karta Wi-Fi lub LAN, Bluetooth, Lightning. CT-E651 Citizen. PN: CTE651XNEBX",
+    "shortDescription": "Citizen CT-E651 — sześcienna drukarka paragonów o wysokości szuflady kasowej, z wyjściem z przodu, drukiem do 300 mm/s i gniazdem karty interfejsu.",
+    "description": "Citizen CT-E651 ma sześcienną obudowę o tej samej wysokości co szuflada kasowa. Dzięki temu drukarka mieści się pod komputerem POS typu all-in-one albo obok szuflady. Wymiary wynoszą 125 × 170 × 108 mm.\n\nParagon wychodzi z przodu, a rolkę wkłada się od góry. Taki układ chroni mechanizm przed zalaniem i okruchami, a klasa IPX1 zabezpiecza obudowę przed kroplami spadającymi pionowo. Drukarka pracuje w handlu, gastronomii i hotelarstwie. Drukuje do 300 mm/s przy 203 dpi. Czujnik bliskiego końca papieru ma regulowane położenie.\n\nStandardem jest USB 2.0. W wersjach z wolnym gniazdem kartę Ethernet, RS-232 lub Wi-Fi compact dokupuje się wtedy, gdy stanowisko jej wymaga. W wersjach z Bluetoothem (Apple MFi) i z Lightning gniazdo zajmuje moduł montowany fabrycznie. Szufladę podłącza się złączem RJ12; drukarka obsługuje dwie szuflady. Do zestawu należy zasilacz 37AD5. Okres gwarancji to 2 lata, z głowicą i gilotyną włącznie.\n\nTę obudowę z czujnikami do druku etykiet ma [Citizen CT-E651L](/produkt/citizen-ct-e651l).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -1093,9 +1101,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne w handlu",
-      "Rachunki i potwierdzenia w hotelu i restauracji",
-      "Druk z iPada lub iPhone'a przez Bluetooth albo Lightning"
+      "Stanowiska kasowe z komputerem POS all-in-one",
+      "Lady barowe narażone na rozlane napoje i okruchy",
+      "Kasy w sklepach z drukarką obok szuflady",
+      "Obsługa gości w hotelach"
     ],
     "variants": [
       {
@@ -1150,8 +1159,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Interfejs dodatkowy": "Połączenie dostępne w CT-E651 obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet, RS-232 albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — moduł fabryczny w gnieździe karty; połączenie bez przewodu, zgodne z Apple MFi.\n\n• Lightning — moduł fabryczny w gnieździe karty; połączenie z iPadem lub iPhone'em.",
-      "Kolor obudowy": "Kolor obudowy CT-E651.\n\n• Czarna — wersje z gniazdem karty, z Bluetoothem i z Lightning.\n\n• Biała — wersje z gniazdem karty i z Bluetoothem."
+      "Interfejs dodatkowy": "Połączenie, które CT-E651 ma obok USB 2.0; od niego zależy, czy gniazdo karty jest wolne.\n\n• Gniazdo karty — wolne, do karty Ethernet, RS-232 lub Wi-Fi compact.\n\n• Bluetooth albo Lightning — moduł fabryczny w gnieździe, do druku z iPada lub iPhone'a.",
+      "Kolor obudowy": "Kolor sześciennej obudowy o wysokości szuflady kasowej.\n\n• Biała — z wolnym gniazdem karty albo z Bluetoothem.\n\n• Czarna — także z Lightning."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1185,24 +1194,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-E651 jest drukarką fiskalną?",
-        "answer": "Nie. CT-E651 drukuje paragony niefiskalne i potwierdzenia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Czy CT-E651 zmieści się pod komputerem POS all-in-one?",
+        "answer": "Tak. Obudowa ma 125 × 170 × 108 mm i tę samą wysokość co szuflada kasowa, dlatego drukarka mieści się pod komputerem all-in-one albo obok szuflady."
       },
       {
-        "question": "Jak podłączyć CT-E651 do sieci przewodowej lub Wi-Fi?",
-        "answer": "Sieć dodaje karta interfejsu w wersjach z gniazdem karty: CTE651XNEBX i CTE651XNEWX. Kartę wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Port RS-232 dodaje [karta PPS00276S](/produkt/citizen-pos-rs232-pps00276s). Karty kupuje się osobno. W wersjach z Bluetoothem i Lightning gniazdo zajmuje moduł zamontowany fabrycznie."
+        "question": "Które wersje CT-E651 mają wolne gniazdo karty?",
+        "answer": "Wersje bez modułu Bluetooth i Lightning, w czarnej i białej obudowie. Przyjmują [kartę Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s), [kartę Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), [kartę Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s) albo [kartę RS-232 PPS00276S](/produkt/citizen-pos-rs232-pps00276s). W wersjach z Bluetoothem i Lightning gniazdo zajmuje moduł fabryczny."
       },
       {
-        "question": "Czy CT-E651 współpracuje z iPadem i iPhone'em?",
-        "answer": "Tak. Wersje CTE651XTEBX i CTE651XTEWX łączą się przez Bluetooth zgodny z Apple MFi. Wersja CTE651XAEBX ma złącze Lightning, które przesyła dane i ładuje iPada lub iPhone'a."
+        "question": "Czy CT-E651 drukuje z iPada lub iPhone'a?",
+        "answer": "Tak. Moduł Bluetooth jest zgodny z Apple MFi. Wersja ze złączem Lightning łączy się przewodem, który przesyła dane i ładuje urządzenie."
       },
       {
         "question": "Czy CT-E651 drukuje etykiety?",
-        "answer": "Nie. CT-E651 drukuje na papierze paragonowym. Etykiety i paragony drukuje [Citizen CT-E651L](/produkt/citizen-ct-e651l), który ma czujniki szczeliny i czarnego znacznika."
+        "answer": "Nie, drukuje na papierze paragonowym. Etykiety i paragony drukuje [Citizen CT-E651L](/produkt/citizen-ct-e651l), wyposażony w czujnik szczeliny i czujnik czarnego znacznika."
       },
       {
-        "question": "Co jest w zestawie z CT-E651?",
-        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający i skrócona instrukcja. Przewodu danych i kart interfejsu nie ma w zestawie."
+        "question": "Jaki papier przyjmuje Citizen CT-E651?",
+        "answer": "Rolki 80 mm, a po założeniu przekładki 58 mm; zakres szerokości to 59–80 mm (±0,5 mm). Grubość papieru wynosi 53–85 µm, średnica rolki do 83 mm."
       }
     ],
     "createdAt": "2026-10-23",
@@ -1214,9 +1223,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-E651L",
     "seoH1": "Citizen CT-E651L",
     "seoTitle": "Drukarka paragonów i etykiet Citizen CT-E651L 80 mm, USB",
-    "seoDescription": "Drukarka paragonów i etykiet Citizen CT-E651L 80 mm: czujnik szczeliny i czarnego znacznika, etykiety do 200 mm/s. Drukarka POS Citizen CT-E651L. PN: CTE651XNEBXL.",
-    "shortDescription": "Citizen CT-E651L — termiczna drukarka paragonów niefiskalnych i etykiet na materiał do 80 mm, z wyjściem z przodu. Ma czujniki szczeliny i czarnego znacznika, USB i gniazdo karty interfejsu.",
-    "description": "Drukarka Citizen CT-E651L drukuje paragony niefiskalne i etykiety z jednego stanowiska. Pracuje w handlu, gastronomii i hotelarstwie, a także w aptece. Obudowa ma 125 × 170 × 108 mm i tę samą wysokość co szuflada kasowa, dlatego mieści się pod komputerem POS typu all-in-one albo obok szuflady.\n\n## Etykiety do 200 mm/s, paragony do 300 mm/s\n\nCzujniki wykrywają szczelinę między etykietami, odblaskowy czarny znacznik, koniec papieru i bliski koniec papieru; położenie czujnika bliskiego końca można regulować. Paragony drukarka drukuje do 300 mm/s, a etykiety do 200 mm/s, w rozdzielczości 203 dpi. Szerokość druku wynosi do 72 mm. Papier do paragonów ma szerokość 59–80 mm i grubość 53–85 µm. Etykiety są na podkładzie o szerokości 57,5 lub 79,5 mm; etykieta ma grubość 65–85 µm, a podkład do 60 µm. Rolka etykiet ma gilzę 25,4 mm (średnica zewnętrzna 32 mm). Etykieta może mieć długość 25–300 mm, a przerwa między etykietami 4–30 mm. Rolka ma średnicę do 83 mm. Materiał wychodzi z przodu obudowy, a rolkę wkłada się od góry. Gilotyna wykonuje cięcie pełne lub częściowe. Etykiety tnie się w przerwie między nimi, a odcinek ma co najmniej 29 mm.\n\n## USB i gniazdo karty interfejsu\n\nDrukarka ma USB 2.0, złącze szuflady kasowej i wolne gniazdo karty interfejsu. Ethernet, RS-232 albo Wi-Fi dodaje karta wkładana z tyłu drukarki. Panel ma 2 przyciski i 5 diod LED. W zestawie jest zewnętrzny zasilacz 37AD5. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nTę samą obudowę, tylko do paragonów, w wersjach z Bluetoothem i Lightning, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "seoDescription": "Drukarka etykiet i paragonów Citizen CT-E651L: czujnik szczeliny i czarnego znacznika, etykiety 57,5 lub 79,5 mm. CT-E651L Citizen. PN: CTE651XNEBXL",
+    "shortDescription": "Citizen CT-E651L — drukarka dwa w jednym: paragony do 300 mm/s i etykiety do 200 mm/s, z czujnikami szczeliny i czarnego znacznika.",
+    "description": "Citizen CT-E651L drukuje paragony i etykiety na jednym stanowisku. W trybie paragonów osiąga 300 mm/s, a w trybie etykiet 200 mm/s. Etykiety rozpoznaje czujnik szczeliny i odblaskowy czujnik czarnego znacznika.\n\nEtykiety na podkładzie mają szerokość 57,5 lub 79,5 mm, długość 25–300 mm i przerwę 4–30 mm. Rolka etykiet ma gilzę 25,4 mm. Gilotyna tnie w przerwie między etykietami, a odcinek ma co najmniej 29 mm. Do paragonów służy papier 59–80 mm o grubości 53–85 µm.\n\nObudowa ma 125 × 170 × 108 mm, tak jak w CT-E651, i wysokość szuflady kasowej. Rolkę zakłada się od góry, a materiał wychodzi z przodu. Z drukarki korzystają apteki, sklepy i hotele.\n\nW ofercie jest wersja czarna z USB 2.0 i wolnym gniazdem karty, do którego pasują karty Ethernet, RS-232 i Wi-Fi compact. Zasilacz 37AD5 znajduje się w pudełku. Na drukarkę, głowicę i gilotynę przysługuje 2-letnia gwarancja.\n\nDo samych paragonów, także w wersjach z Bluetoothem i Lightning, służy [Citizen CT-E651](/produkt/citizen-ct-e651).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -1360,9 +1369,9 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne i etykiety w aptece",
-      "Etykiety i paragony w handlu",
-      "Paragony i etykiety zamówień w hotelarstwie"
+      "Paragony i etykiety w aptece",
+      "Etykiety produktów i paragony z jednej drukarki w handlu",
+      "Paragony i etykiety w hotelarstwie"
     ],
     "variants": [
       {
@@ -1405,19 +1414,23 @@ export const citizenPosProducts: Product[] = [
     "faq": [
       {
         "question": "Czym CT-E651L różni się od CT-E651?",
-        "answer": "CT-E651L ma czujniki szczeliny i czarnego znacznika, dlatego drukuje etykiety, do 200 mm/s, oraz paragony, do 300 mm/s. [CT-E651](/produkt/citizen-ct-e651) drukuje paragony i ma też wersje z Bluetoothem i Lightning. W ofercie CT-E651L jest wersja z USB i wolnym gniazdem karty interfejsu."
+        "answer": "CT-E651L ma czujniki szczeliny i czarnego znacznika, dlatego drukuje etykiety (do 200 mm/s) i paragony (do 300 mm/s). [CT-E651](/produkt/citizen-ct-e651) drukuje tylko paragony, ale ma też wersje z Bluetoothem i Lightning. Obudowa obu modeli jest taka sama."
       },
       {
-        "question": "Czy Citizen CT-E651L jest drukarką fiskalną?",
-        "answer": "Nie. CT-E651L drukuje paragony niefiskalne i etykiety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Jakie etykiety przyjmuje Citizen CT-E651L?",
+        "answer": "Etykiety na podkładzie o szerokości 57,5 lub 79,5 mm (±0,5 mm), długości 25–300 mm i z przerwą 4–30 mm. Etykieta ma grubość 65–85 µm, podkład do 60 µm, a gilza 25,4 mm (średnica zewnętrzna 32 mm)."
       },
       {
-        "question": "Jak podłączyć CT-E651L do sieci przewodowej lub Wi-Fi?",
-        "answer": "Kartę interfejsu wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Karty kupuje się osobno."
+        "question": "Jak CT-E651L tnie etykiety?",
+        "answer": "Gilotyna tnie w przerwie między etykietami. Odcinek musi mieć co najmniej 29 mm."
       },
       {
-        "question": "Jaki materiał przyjmuje Citizen CT-E651L?",
-        "answer": "Papier do paragonów o szerokości 59–80 mm (±0,5 mm) i grubości 53–85 µm oraz etykiety na podkładzie 57,5 lub 79,5 mm. Etykieta ma grubość 65–85 µm, podkład do 60 µm, a gilza 25,4 mm (średnica zewnętrzna 32 mm). Etykieta może mieć długość 25–300 mm, a przerwa między etykietami 4–30 mm. Etykiety tnie się w przerwie, a odcinek ma co najmniej 29 mm. Rolka ma średnicę do 83 mm, a szerokość druku wynosi do 72 mm."
+        "question": "Czy CT-E651L można podłączyć do sieci?",
+        "answer": "Tak, przez kartę w wolnym gnieździe z tyłu drukarki: [Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s), [Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s) albo [Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Karty nie ma w zestawie."
+      },
+      {
+        "question": "Jakie rolki do paragonów pasują do CT-E651L?",
+        "answer": "Papier o szerokości 59–80 mm (±0,5 mm) i grubości 53–85 µm, na gilzie 12 mm. Rolka może mieć do 83 mm średnicy."
       }
     ],
     "createdAt": "2026-10-23",
@@ -1429,9 +1442,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S751",
     "seoH1": "Citizen CT-S751",
     "seoTitle": "Drukarka paragonów Citizen CT-S751 80 mm, ładowanie z przodu",
-    "seoDescription": "Drukarka paragonów Citizen CT-S751 58/80 mm: ładowanie i wyjście z przodu, 350 mm/s, montaż pod ladą. Drukarka POS Citizen CT-S751. PN: CTS751XNEBX, CTS751XTEBX.",
-    "shortDescription": "Citizen CT-S751 — termiczna drukarka paragonów niefiskalnych na papier 58 lub 80 mm, z ładowaniem i wyjściem papieru z przodu. Drukuje do 350 mm/s; pasuje pod ladę i do kiosku.",
-    "description": "Drukarka Citizen CT-S751 drukuje paragony niefiskalne i zamówienia w handlu, w hotelarstwie, w kuchni i w kiosku. Rolkę papieru wkłada się z przodu i z przodu wychodzi paragon. Drukarka pracuje więc pod ladą, obok szuflady kasowej, w zabudowie panelu albo na zajętym stanowisku pracy. Do montażu pod ladą służy [uchwyt Citizen 2000462](/produkt/citizen-pos-uchwyt-pod-lade-2000462), sprzedawany osobno.\n\n## Druk do 350 mm/s na papierze 58 lub 80 mm\n\nDrukarka drukuje do 350 mm/s w rozdzielczości 203 dpi, na szerokości do 72 mm. Przyjmuje papier 58 lub 80 mm, o grubości 53–85 µm, w rolce o średnicy do 83 mm. Wyjście z przodu chroni mechanizm przed wilgocią i ciałami obcymi. Obudowa jest odporna na krople wody spadające pionowo (IPX1). Czujniki wykrywają koniec papieru i bliski koniec papieru; położenie czujnika bliskiego końca można regulować. Gilotyna wykonuje cięcie pełne lub częściowe. Panel ma 2 przyciski i 5 diod LED. Obudowa ma 125 × 170 × 108 mm.\n\n## USB, gniazdo karty, Bluetooth albo Lightning\n\nKażda wersja ma USB 2.0, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Wersje CTS751XNEBX i CTS751XNEWX mają wolne gniazdo karty: Ethernet albo Wi-Fi dodaje karta interfejsu. W wersjach CTS751XTEBX i CTS751XTEWX gniazdo zajmuje moduł Bluetooth z certyfikatem Apple MFi — połączenie bez przewodu z iPadem i iPhone'em, a także z komputerem z Windows lub macOS i z urządzeniem z Androidem. W CTS751XAEBX gniazdo zajmuje moduł ze złączem Lightning. W zestawie jest zewnętrzny zasilacz 37AD5.\n\nŁadowanie papieru od góry i wyjście z przodu, przy druku do 300 mm/s, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
+    "seoDescription": "Citizen CT-S751: drukarka paragonów pod ladę, papier ładowany i wydawany z przodu, 350 mm/s, Bluetooth MFi lub gniazdo karty. CT-S751 Citizen. PN: CTS751XNEBX",
+    "shortDescription": "Citizen CT-S751 — drukarka paragonów z ładowaniem i wyjściem papieru z przodu, do montażu pod ladą lub w panelu, z drukiem do 350 mm/s.",
+    "description": "W Citizen CT-S751 rolkę papieru wkłada się z przodu i z przodu wychodzi paragon. Drukarka nie wymaga dostępu od góry, dlatego pracuje pod ladą, obok szuflady kasowej, w zabudowie panelu albo na stanowisku z małą ilością miejsca. Do montażu pod ladą służy [uchwyt Citizen 2000462](/produkt/citizen-pos-uchwyt-pod-lade-2000462), sprzedawany osobno.\n\nDruk do 350 mm/s skraca kolejki przy wydruku paragonów i zamówień. Wyjście z przodu zapobiega uszkodzeniom od wilgoci i ciał obcych, a obudowa ma klasę IPX1. Sygnał bliskiego końca papieru daje czujnik o regulowanym położeniu. Wymiary obudowy to 125 × 170 × 108 mm, a kolor czysto biały albo czarny. Miejsca pracy tej drukarki to handel, hotelarstwo, kuchnie i kioski.\n\nKażda wersja ma USB 2.0, port ładowania 5 V / 2 A i złącze szuflady. W wersjach z wolnym gniazdem można dodać kartę Ethernet lub Wi-Fi. Moduł Bluetooth z certyfikatem Apple MFi łączy drukarkę z iPadem, iPhone'em, komputerem z Windows lub macOS i urządzeniem z Androidem. Trzecią opcją jest złącze Lightning. W zestawie są zasilacz 37AD5 i rolka papieru. Gwarancja trwa 2 lata, łącznie z głowicą i gilotyną.\n\nŁadowanie papieru od góry, przy wyjściu z przodu i druku do 300 mm/s, ma [Citizen CT-E651](/produkt/citizen-ct-e651).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -1573,9 +1586,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Drukarka pod ladą lub obok szuflady kasowej",
-      "Wydruki w kiosku z zabudową w panelu",
-      "Paragony i zamówienia w handlu, hotelarstwie i kuchni"
+      "Montaż pod ladą",
+      "Kioski z drukarką w panelu",
+      "Druk zamówień w kuchni",
+      "Kasy w sklepach i recepcje hoteli"
     ],
     "variants": [
       {
@@ -1630,8 +1644,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Interfejs dodatkowy": "Połączenie dostępne w CT-S751 obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — moduł fabryczny z certyfikatem Apple MFi; połączenie bez przewodu z iPadem, iPhone'em, komputerem z Windows lub macOS i urządzeniem z Androidem.\n\n• Lightning — moduł fabryczny; połączenie z iPadem lub iPhone'em przez złącze Lightning.",
-      "Kolor obudowy": "Kolor obudowy CT-S751.\n\n• Czarna — wersje z gniazdem karty, z Bluetoothem i z Lightning.\n\n• Biała — wersje z gniazdem karty i z Bluetoothem."
+      "Interfejs dodatkowy": "Złącze obok USB 2.0 i portu ładowania 5 V / 2 A w CT-S751.\n\n• Gniazdo karty — wolne, na kartę Ethernet albo Wi-Fi.\n\n• Bluetooth (Apple MFi) albo Lightning — moduł fabryczny; Bluetooth działa też z Windows, macOS i Androidem.",
+      "Kolor obudowy": "Czysta biel albo czerń, do wyglądu stanowiska.\n\n• Biała — z gniazdem karty albo z Bluetoothem.\n\n• Czarna — wszystkie wersje, w tym z Lightning."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1665,24 +1679,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-S751 jest drukarką fiskalną?",
-        "answer": "Nie. CT-S751 drukuje paragony niefiskalne i zamówienia wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
-      },
-      {
         "question": "Czy CT-S751 można zamontować pod ladą?",
-        "answer": "Tak. Rolkę papieru wkłada się z przodu i z przodu wychodzi paragon, dlatego drukarka mieści się także w niedużej przestrzeni. Pracuje pod ladą, obok szuflady kasowej albo w zabudowie panelu. Do montażu pod ladą służy [uchwyt Citizen 2000462](/produkt/citizen-pos-uchwyt-pod-lade-2000462), sprzedawany osobno."
+        "answer": "Tak. Papier ładuje się i wydaje z przodu, więc drukarka nie potrzebuje miejsca nad pokrywą. Do montażu pod ladą służy [uchwyt Citizen 2000462](/produkt/citizen-pos-uchwyt-pod-lade-2000462), sprzedawany osobno. Drukarkę można też zabudować w panelu."
       },
       {
-        "question": "Jak podłączyć CT-S751 do sieci przewodowej lub Wi-Fi?",
-        "answer": "Sieć dodaje karta interfejsu w wersjach z gniazdem karty: CTS751XNEBX i CTS751XNEWX. Do sieci przewodowej służy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Karty kupuje się osobno. W wersjach z Bluetoothem i Lightning gniazdo zajmuje moduł zamontowany fabrycznie."
+        "question": "Czy do CT-S751 z Bluetoothem można dodać kartę sieciową?",
+        "answer": "Nie. W wersjach z Bluetoothem i z Lightning gniazdo karty zajmuje moduł fabryczny. Kartę przyjmują wersje z wolnym gniazdem, np. [kartę Ethernet compact PPS00591S](/produkt/citizen-pos-ethernet-pps00591s), [kartę PPZ60104S z portami USB host](/produkt/citizen-pos-lan-usb-host-ppz60104s) lub [kartę Wi-Fi PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s)."
       },
       {
-        "question": "Czy CT-S751 współpracuje z iPadem i iPhone'em?",
-        "answer": "Tak. Wersje CTS751XTEBX i CTS751XTEWX mają Bluetooth z certyfikatem Apple MFi; łączą się bez przewodu z iPadem i iPhone'em, a także z komputerem z Windows lub macOS i z urządzeniem z Androidem. Wersja CTS751XAEBX ma złącze Lightning, które przesyła dane i ładuje iPada lub iPhone'a."
+        "question": "Z jakimi urządzeniami łączy się Bluetooth w CT-S751?",
+        "answer": "Moduł ma certyfikat Apple MFi. Łączy się z iPadem i iPhone'em, a także z komputerem z Windows lub macOS i z urządzeniem z Androidem."
       },
       {
-        "question": "Co jest w zestawie z CT-S751?",
-        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający, rolka papieru i skrócona instrukcja. Wersja z Lightning ma też kątowy przewód USB. Przewód interfejsu do komputera zamawia się osobno."
+        "question": "Na jakim papierze drukuje CT-S751?",
+        "answer": "Papier termiczny 58 lub 80 mm o grubości 53–85 µm, w rolce o średnicy do 83 mm. Szerokość druku wynosi do 72 mm."
+      },
+      {
+        "question": "Co jest w pudełku z CT-S751?",
+        "answer": "Drukarka, zasilacz 37AD5, przewód zasilający, rolka papieru i skrócona instrukcja. Wersja z Lightning ma też kątowy przewód USB. Przewód do komputera zamawia się osobno."
       }
     ],
     "createdAt": "2026-10-23",
@@ -1694,9 +1708,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S851III",
     "seoH1": "Citizen CT-S851III",
     "seoTitle": "Drukarka paragonów Citizen CT-S851III 80 mm, 500 mm/s, LCD",
-    "seoDescription": "Drukarka paragonów Citizen CT-S851III: 500 mm/s, wyświetlacz LCD, wyjście z przodu, wbudowany zasilacz. Drukarka POS Citizen CT-S851III. PN: CTS851IIIS3NEBPXX.",
-    "shortDescription": "Citizen CT-S851III — termiczna drukarka paragonów niefiskalnych na papier do 83 mm, z wyświetlaczem LCD i wyjściem papieru z przodu. Drukuje do 500 mm/s; ma wbudowany zasilacz, USB i gniazdo karty interfejsu.",
-    "description": "Drukarka Citizen CT-S851III drukuje paragony niefiskalne w handlu, w hotelarstwie, w kuchni i w kiosku. Drukuje do 500 mm/s w rozdzielczości 203 dpi, na szerokości do 80 mm. Zasilacz jest wbudowany w obudowę. Obudowa ma 145 × 192 × 142 mm i waży 1,9 kg.\n\n## Wyświetlacz LCD z komunikatami\n\nWyświetlacz LCD na panelu pokazuje stan drukarki. Można na nim ustawić logo firmy i przewijane komunikaty, np. ostrzeżenie o kończącym się papierze albo informację o zamawianiu rolek. Czujnik bliskiego końca papieru wykrywa, że rolka się kończy.\n\n## Papier do 83 mm i wyjście z przodu\n\nParagon wychodzi z przodu, co chroni mechanizm przed wilgocią i ciałami obcymi. Drukarka przyjmuje papier 58, 60, 80 lub 83 mm (±1 mm), o grubości 65–75 µm albo 75–85 µm, w rolce o średnicy do 83 mm. Gilotyna wykonuje cięcie pełne lub częściowe. Wersja CTS851IIIS3NEBPXX ma USB i gniazdo na kartę interfejsu, np. Ethernet, RS-232 lub Wi-Fi. Wersja CTS851IIIS3TEBPXX ma Bluetooth zgodny z Apple MFi.\n\nŁadowanie i wyjście papieru z przodu, do montażu pod ladą, ma [Citizen CT-S751](/produkt/citizen-ct-s751).",
+    "seoDescription": "Drukarka paragonów Citizen CT-S851III 500 mm/s z wyświetlaczem LCD, papier do 83 mm. CT-S851III Citizen. PN: CTS851IIIS3NEBPXX, CTS851IIIS3TEBPXX",
+    "shortDescription": "Citizen CT-S851III — najszybsza drukarka POS Citizen w ofercie: 500 mm/s, konfigurowalny wyświetlacz LCD z logo i komunikatami, wyjście z przodu.",
+    "description": "Citizen CT-S851III drukuje paragony z prędkością do 500 mm/s. To najszybsza drukarka POS Citizen w ofercie TAKMA i nowa odsłona klasycznej drukarki z wyjściem papieru z przodu.\n\nNa panelu jest konfigurowalny wyświetlacz LCD. Pokazuje logo firmy i przewijane komunikaty, których treść ustala osoba odpowiedzialna za drukarki: ostrzeżenie o kończącym się papierze, komunikat o błędzie albo informację, jak zamówić nowe rolki. \n\nSzerokość druku wynosi do 80 mm, a papier może mieć 58, 60, 80 lub 83 mm (±1 mm) i grubość 65–75 albo 75–85 µm. Papier wychodzi z przodu, co zabezpiecza wnętrze przed wilgocią i drobnymi przedmiotami. Zasilacz jest wbudowany, więc na stanowisku nie ma osobnego zasilacza. Obudowa ma 145 × 192 × 142 mm i waży 1,9 kg.\n\nObie wersje mają USB 2.0. Pierwsza ma gniazdo na kartę Ethernet, RS-232, równoległą, USB z hubem albo Wi-Fi, a druga fabryczny Bluetooth zgodny z Apple MFi. Z CT-S851III korzystają sklepy, hotele, kuchnie i kioski. Gwarancja wynosi 24 miesiące.\n\nŁadowanie i wyjście papieru z przodu, do montażu pod ladą, ma [Citizen CT-S751](/produkt/citizen-ct-s751).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -1824,9 +1838,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony niefiskalne przy kasie o dużym ruchu",
-      "Bony w kuchni i paragony w hotelarstwie",
-      "Wydruki w kiosku"
+      "Kasy o dużym natężeniu ruchu",
+      "Paragony na papierze 83 mm",
+      "Bony w kuchniach restauracji",
+      "Wydruki w kioskach"
     ],
     "variants": [
       {
@@ -1849,7 +1864,7 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Interfejs dodatkowy": "Połączenie dostępne w CT-S851III obok USB.\n\n• Gniazdo karty — miejsce na kartę Ethernet, RS-232, równoległą albo Wi-Fi, kupowaną osobno.\n\n• Bluetooth — połączenie bez przewodu z komputerem, tabletem lub telefonem; zgodny z Apple MFi."
+      "Interfejs dodatkowy": "Połączenie obok USB 2.0 w CT-S851III z wbudowanym zasilaczem.\n\n• Gniazdo karty — na kartę Ethernet, RS-232, równoległą albo Wi-Fi.\n\n• Bluetooth zgodny z Apple MFi — moduł montowany fabrycznie."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -1881,24 +1896,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-S851III jest drukarką fiskalną?",
-        "answer": "Nie. CT-S851III drukuje paragony niefiskalne i bony wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Co można wyświetlić na LCD w CT-S851III?",
+        "answer": "Stan drukarki, logo firmy i przewijane komunikaty. Treść ustala osoba odpowiedzialna za drukarki, np. ostrzeżenie o kończącym się papierze, komunikat o błędzie albo informację o zamawianiu rolek."
       },
       {
-        "question": "Jak podłączyć CT-S851III do sieci przewodowej lub Wi-Fi?",
-        "answer": "Wersja CTS851IIIS3NEBPXX ma gniazdo na kartę interfejsu. Do sieci przewodowej służy [karta Ethernet PPS00585S](/produkt/citizen-pos-ethernet-pps00585s) albo [karta Ethernet z USB host PPS00339S](/produkt/citizen-pos-lan-usb-host-pps00339s), a do Wi-Fi [karta PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s). Karty kupuje się osobno."
+        "question": "Jak szybko drukuje Citizen CT-S851III?",
+        "answer": "Do 500 mm/s w rozdzielczości 203 dpi, na szerokości do 80 mm. To najwyższa prędkość wśród drukarek POS Citizen w ofercie TAKMA."
       },
       {
-        "question": "Co pokazuje wyświetlacz LCD w CT-S851III?",
-        "answer": "Stan drukarki i komunikaty, np. ostrzeżenie o kończącym się papierze albo o błędzie. Można też ustawić logo firmy i własne przewijane komunikaty, np. informację o zamawianiu rolek."
+        "question": "Jakie karty interfejsu pasują do CT-S851III?",
+        "answer": "W wersji z gniazdem karty: [Ethernet compact PPS00585S](/produkt/citizen-pos-ethernet-pps00585s), [Ethernet z USB host PPS00339S](/produkt/citizen-pos-lan-usb-host-pps00339s), [Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s), [RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0) i [karta równoległa TZ66802-0](/produkt/citizen-parallel-cl-s400dt). Karty kupuje się osobno."
       },
       {
-        "question": "Jaki papier przyjmuje Citizen CT-S851III?",
-        "answer": "Papier termiczny o szerokości 58, 60, 80 lub 83 mm (±1 mm), o grubości 65–75 µm albo 75–85 µm, w rolce o średnicy do 83 mm. Szerokość druku wynosi do 80 mm."
+        "question": "Jakie rolki pasują do CT-S851III?",
+        "answer": "Rolki o szerokości 58, 60, 80 lub 83 mm (±1 mm) i średnicy do 83 mm. Papier ma grubość 65–75 µm albo 75–85 µm."
       },
       {
-        "question": "Czy CT-S851III wymaga zasilacza zewnętrznego?",
-        "answer": "Nie. Wersje CTS851IIIS3NEBPXX i CTS851IIIS3TEBPXX mają zasilacz wbudowany w obudowę. W zestawie jest przewód zasilający."
+        "question": "Czy do CT-S851III potrzebny jest zasilacz?",
+        "answer": "Nie. Obie wersje mają zasilacz wbudowany w obudowę. Do drukarki dołączono przewód zasilający, rolkę papieru i skróconą instrukcję; przewód USB zamawia się osobno."
       }
     ],
     "createdAt": "2026-10-23",
@@ -1910,9 +1925,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S601IIR",
     "seoH1": "Citizen CT-S601IIR",
     "seoTitle": "Drukarka etykiet bez podkładu Citizen CT-S601IIR, liner-free",
-    "seoDescription": "Drukarka etykiet liner-free Citizen CT-S601IIR: etykiety bez podkładu MAXStick i Nakagawa 80/83 mm, 175 mm/s. Drukarka POS Citizen CT-S601IIR. PN: CTS601IIS3NEBXRX.",
-    "shortDescription": "Citizen CT-S601IIR — termiczna drukarka etykiet samoprzylepnych bez podkładu (liner-free) na materiał 80/83 mm, z cięciem częściowym. Interfejs dodaje karta kupowana osobno.",
-    "description": "Drukarka Citizen CT-S601IIR drukuje etykiety bez podkładu do oznaczeń tymczasowych (Re-stick), np. zamówień na wynos. Etykietę przykleja się od razu, bez odpadu z podkładu. Drukarka pracuje w gastronomii, w handlu, w aptece i przy biletach. To wersja drukarki CT-S601II.\n\n## Etykiety liner-free 80/83 mm\n\nDrukarka przyjmuje materiał MAXStick (Premium, 2GO i X2) oraz etykiety bez podkładu Nakagawa. Materiał ma szerokość 3 cali (80/83 mm) i grubość 65–90 µm, a rolka średnicę do 83 mm. Gilza rolki ma średnicę wewnętrzną 25,4 mm i zewnętrzną co najmniej 29,5 mm. Długość wydruku dopasowuje się do treści. Gilotyna wykonuje cięcie częściowe. Drukarka drukuje do 175 mm/s w rozdzielczości 203 dpi. Zasilacz jest wbudowany w obudowę.\n\n## Interfejs na karcie\n\nDrukarka nie ma interfejsu w standardzie. Interfejs dodaje karta wkładana w gniazdo drukarki: USB, RS-232, port równoległy, Ethernet albo Wi-Fi.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Karta interfejsu USB Citizen (TZ66803-0)](/produkt/citizen-pos-usb-tz66803-0)\n- Przewód do wybranego interfejsu\n\nPotrzebna jest jedna karta interfejsu, np. karta USB TZ66803-0, oraz przewód do wybranego interfejsu. Zamiast karty USB można wybrać [kartę RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0), [kartę równoległą TZ66802-0](/produkt/citizen-parallel-cl-s400dt), [kartę Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s) albo [kartę Ethernet PPS00585S](/produkt/citizen-pos-ethernet-pps00585s). Drukarka przyjmuje jedną kartę.\n\nEtykiety bez podkładu na materiale 40, 58 i 80 mm drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii).",
+    "seoDescription": "Drukarka etykiet bez podkładu Citizen CT-S601IIR (liner-free): MAXStick i Nakagawa 80/83 mm, 175 mm/s, wbudowany zasilacz. CT-S601IIR. PN: CTS601IIS3NEBXRX",
+    "shortDescription": "Citizen CT-S601IIR — drukarka samoprzylepnych etykiet bez podkładu (liner-free) na materiał MAXStick i Nakagawa 80/83 mm, z długością wydruku dopasowaną do treści.",
+    "description": "Citizen CT-S601IIR drukuje samoprzylepne etykiety bez podkładu (liner-free) do oznaczeń tymczasowych (Re-stick), np. zamówień na wynos. Wydrukowaną etykietę nakleja się od razu, a podkład nie trafia do odpadów. To specjalna wersja drukarki Citizen CT-S601II.\n\nDrukarka przyjmuje materiał MAXStick (Premium, 2GO i X2) oraz etykiety Nakagawa o szerokości 80/83 mm i grubości 65–90 µm. Długość wydruku dopasowuje się do treści, co jeszcze bardziej ogranicza zużycie materiału. Gilotyna wykonuje cięcie częściowe, a druk osiąga 175 mm/s przy 203 dpi. Trwałość głowicy wynosi 100 mln impulsów lub 75 km. Materiał wychodzi u góry, a etykiety odbiera się z wylotu pojedynczo. Panel ma przycisk FEED i trzy diody LED, a brzęczyk powiadamia o zdarzeniach.\n\nZasilacz jest wbudowany w obudowę o wymiarach 145 × 192 × 148 mm. Drukarka nie ma interfejsu w standardzie: łączność daje jedna karta wkładana w gniazdo, np. USB, RS-232, równoległa, Ethernet albo Wi-Fi. Jest przeznaczona dla gastronomii, handlu, aptek i druku biletów. Gwarancja: 2 lata.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Karta interfejsu USB Citizen (TZ66803-0)](/produkt/citizen-pos-usb-tz66803-0)\n- Przewód do wybranego interfejsu\n\nPotrzebna jest jedna karta interfejsu, np. karta USB TZ66803-0, oraz przewód do wybranego interfejsu. Zamiast karty USB można wybrać [kartę RS-232 TZ66801-0](/produkt/citizen-pos-rs232-tz66801-0), [kartę równoległą TZ66802-0](/produkt/citizen-parallel-cl-s400dt), [kartę Wi-Fi PPZ60108S](/produkt/citizen-pos-wifi-ppz60108s) albo [kartę Ethernet PPS00585S](/produkt/citizen-pos-ethernet-pps00585s). Drukarka przyjmuje jedną kartę.\n\nEtykiety bez podkładu na materiale 40, 58 i 80 mm drukuje też [BIXOLON SRP-S300II](/produkt/bixolon-srp-s300ii).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -2040,9 +2055,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Etykiety zamówień na wynos i w dostawie w gastronomii",
-      "Etykiety w handlu i w aptece",
-      "Bilety i etykiety samoprzylepne bez odpadu z podkładu"
+      "Etykiety na zamówienia na wynos i w dostawie",
+      "Oznaczenia tymczasowe w kuchni",
+      "Etykiety samoprzylepne w aptece",
+      "Bilety bez odpadu z podkładu"
     ],
     "variants": [
       {
@@ -2083,8 +2099,8 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Jakie etykiety przyjmuje Citizen CT-S601IIR?",
-        "answer": "Etykiety samoprzylepne bez podkładu MAXStick (Premium, 2GO i X2) oraz Nakagawa. Materiał ma szerokość 80/83 mm i grubość 65–90 µm, a rolka średnicę do 83 mm. Gilza ma średnicę wewnętrzną 25,4 mm i zewnętrzną co najmniej 29,5 mm. Najkrótszy wydruk na etykiecie bez podkładu ma 40 mm."
+        "question": "Jaki materiał liner-free obsługuje CT-S601IIR?",
+        "answer": "Etykiety samoprzylepne bez podkładu MAXStick (Premium, 2GO i X2) oraz Nakagawa. Materiał ma szerokość 80/83 mm i grubość 65–90 µm, a rolka średnicę do 83 mm. Gilza ma średnicę wewnętrzną 25,4 mm i zewnętrzną co najmniej 29,5 mm. Najkrótszy wydruk ma 40 mm."
       },
       {
         "question": "Czy CT-S601IIR działa bez dodatkowej karty?",
@@ -2095,8 +2111,12 @@ export const citizenPosProducts: Product[] = [
         "answer": "Etykiety drukuje się pojedynczo i każdą zabiera się z wylotu przed wydrukiem następnej. Etykiety pozostawione w wylocie mogą spowodować zacięcie materiału."
       },
       {
-        "question": "Czy Citizen CT-S601IIR jest drukarką fiskalną?",
-        "answer": "Nie. CT-S601IIR drukuje etykiety bez podkładu wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Czym CT-S601IIR różni się od drukarki paragonów?",
+        "answer": "Drukuje na samoprzylepnym materiale bez podkładu i tnie go częściowo. Długość wydruku dopasowuje się do treści, a gotową etykietę nakleja się od razu na opakowanie."
+      },
+      {
+        "question": "Jaką trwałość ma głowica CT-S601IIR?",
+        "answer": "100 mln impulsów lub 75 km wydruku."
       }
     ],
     "createdAt": "2026-10-23",
@@ -2108,9 +2128,9 @@ export const citizenPosProducts: Product[] = [
     "name": "Citizen CT-S4500",
     "seoH1": "Citizen CT-S4500",
     "seoTitle": "Drukarka paragonów Citizen CT-S4500 112 mm, etykiety, USB",
-    "seoDescription": "Drukarka paragonów Citizen CT-S4500 na papier do 112 mm: paragony, bilety i etykiety, skalowanie A4. Drukarka POS Citizen CT-S4500. PN: CTS4500XNEBX, CTS4500XTEBX.",
-    "shortDescription": "Citizen CT-S4500 — termiczna drukarka paragonów niefiskalnych i etykiet na papier 58–112 mm, z wyjściem z przodu. Drukuje do 200 mm/s; sterownik skaluje dokumenty A4 do szerokości papieru 4 cale.",
-    "description": "Drukarka Citizen CT-S4500 drukuje paragony niefiskalne, bilety i etykiety na papierze o szerokości do 112 mm. Pracuje w handlu, w hotelarstwie, w kiosku, w zakładach bukmacherskich i w wypożyczalniach. Sterownik kompresji skaluje dokumenty A4 i drukuje je na papierze 4 cale.\n\n## Papier do 112 mm i etykiety\n\nDrukarka drukuje do 200 mm/s w rozdzielczości 203 dpi, na szerokości do 104 mm. Przyjmuje papier o szerokości 58–112 mm i grubości 65–150 µm, w rolce o średnicy do 102 mm. Czujniki wykrywają szczelinę między etykietami, odblaskowy czarny znacznik, koniec papieru i bliski koniec papieru; położenie czujnika bliskiego końca można regulować. Etykieta może mieć szerokość 54–108 mm i długość 25–300 mm, a przerwa między etykietami 4–30 mm. Wydruk wychodzi z przodu, co chroni mechanizm przed wilgocią i ciałami obcymi. Gilotyna wykonuje cięcie pełne lub częściowe.\n\n## USB, port ładowania i gniazdo karty\n\nKażda wersja ma USB 2.0, port USB do ładowania urządzeń (5 V, 2 A) i złącze szuflady kasowej. Wersje CTS4500XNEBX i CTS4500XNEWX mają wolne gniazdo karty: Ethernet, RS-232 albo Wi-Fi dodaje karta interfejsu. W wersji CTS4500XTEBX gniazdo zajmuje moduł Bluetooth. Obudowa ma 170 × 216 × 151 mm i waży 2,5 kg. W zestawie jest zasilacz zewnętrzny. Gwarancja trwa 2 lata i obejmuje głowicę oraz gilotynę.\n\nPapier do 80 mm i etykiety, przy druku paragonów do 300 mm/s, obsługuje [Citizen CT-E651L](/produkt/citizen-ct-e651l).",
+    "seoDescription": "Drukarka paragonów 4 cale Citizen CT-S4500: papier do 112 mm, skalowanie A4, bilety i etykiety. Drukarka POS CT-S4500 Citizen. PN: CTS4500XNEBX, CTS4500XTEBX",
+    "shortDescription": "Citizen CT-S4500 — drukarka POS na papier 4 cale (do 112 mm), która skaluje dokumenty A4 i drukuje paragony, bilety oraz etykiety.",
+    "description": "Citizen CT-S4500 to drukarka POS na papier 4-calowy, która może zastąpić drukarkę A4. Sterownik kompresji skaluje dokument A4 i drukuje go na rolce o szerokości do 112 mm, na szerokości do 104 mm.\n\nDrukarka przyjmuje materiał o grubości 65–150 µm: papier do paragonów, bilety i etykiety. Czujniki szczeliny i czarnego znacznika rozpoznają etykiety o szerokości 54–108 mm i długości 25–300 mm. Paragony i etykiety wychodzą z tą samą prędkością, do 200 mm/s. Rolka może mieć średnicę do 102 mm, a pokrywa otwiera się wysoko, co ułatwia jej włożenie. Wydruk wychodzi z przodu. CT-S4500 pracuje w hotelarstwie, handlu i kioskach, w zakładach bukmacherskich i w wypożyczalniach.\n\nStandardem jest USB 2.0 i gniazdo USB, które ładuje urządzenia prądem 5 V / 2 A. Wolne gniazdo karty w wersjach bez Bluetootha mieści kartę: Ethernet, RS-232 albo Wi-Fi compact. W wersji z Bluetoothem gniazdo zajmuje moduł fabryczny. Obudowa ma 170 × 216 × 151 mm i jest biała albo czarna. Zasilacz zewnętrzny jest w zestawie. Gwarancja obejmuje 2 lata, razem z głowicą i gilotyną.\n\nParagony i etykiety na materiale do 80 mm drukuje [Citizen CT-E651L](/produkt/citizen-ct-e651l).",
     "categoryId": "drukarki-pos",
     "subcategoryIds": [],
     "manufacturerId": "citizen",
@@ -2256,9 +2276,10 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "applications": [
-      "Paragony i dokumenty na papierze 112 mm zamiast wydruku A4",
-      "Bilety i kupony w zakładach bukmacherskich i w kiosku",
-      "Etykiety i potwierdzenia w wypożyczalni i w hotelu"
+      "Zastąpienie drukarki A4 przy kasie",
+      "Kupony w zakładach bukmacherskich",
+      "Wydruki w wypożyczalniach",
+      "Bilety i etykiety w kioskach"
     ],
     "variants": [
       {
@@ -2291,8 +2312,8 @@ export const citizenPosProducts: Product[] = [
       }
     ],
     "variantAttributeTooltips": {
-      "Bluetooth": "Łączność Bluetooth zamontowana fabrycznie obok USB.\n\n• Moduł Bluetooth zajmuje gniazdo karty interfejsu.\n\n• Druk bez przewodu z komputera, tabletu lub telefonu.",
-      "Kolor obudowy": "Kolor obudowy CT-S4500.\n\n• Czarna — wersje z USB i z Bluetoothem.\n\n• Biała — wersja z USB."
+      "Bluetooth": "Moduł Bluetooth zgodny z Apple MFi, montowany fabrycznie w gnieździe karty.\n\n• Druk paragonów i etykiet do 112 mm bez przewodu.\n\n• W tej wersji nie ma wolnego gniazda na kartę Ethernet lub Wi-Fi.",
+      "Kolor obudowy": "Biel albo czerń obudowy drukarki 4-calowej.\n\n• Biała — wersja z USB i wolnym gniazdem karty.\n\n• Czarna — z gniazdem karty albo z Bluetoothem."
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
@@ -2319,24 +2340,24 @@ export const citizenPosProducts: Product[] = [
     ],
     "faq": [
       {
-        "question": "Czy Citizen CT-S4500 drukuje etykiety?",
-        "answer": "Tak. Czujniki wykrywają szczelinę między etykietami i odblaskowy czarny znacznik. Etykieta może mieć szerokość 54–108 mm i długość 25–300 mm, a przerwa między etykietami 4–30 mm. Etykiety drukarka drukuje do 200 mm/s, tak samo jak paragony. Do rolek z dużą gilzą służy oś dołączona do zestawu."
-      },
-      {
         "question": "Czy CT-S4500 wydrukuje dokument A4?",
         "answer": "Tak. Sterownik kompresji skaluje dokument A4 i drukuje go na papierze 4 cale (112 mm). Szerokość druku wynosi do 104 mm."
       },
       {
-        "question": "Jak podłączyć CT-S4500 do sieci przewodowej lub Wi-Fi?",
-        "answer": "Sieć dodaje karta interfejsu w wersjach z gniazdem karty: CTS4500XNEBX i CTS4500XNEWX. Kartę wkłada się w gniazdo z tyłu drukarki. Do sieci przewodowej służy [karta Ethernet PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [karta Ethernet z USB host PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s), a do Wi-Fi [karta PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Port RS-232 dodaje [karta PPS00276S](/produkt/citizen-pos-rs232-pps00276s). W wersji z Bluetoothem gniazdo zajmuje moduł zamontowany fabrycznie."
+        "question": "Jakie etykiety drukuje Citizen CT-S4500?",
+        "answer": "Tak. Czujniki rozpoznają szczelinę między etykietami i odblaskowy czarny znacznik. Etykieta może mieć szerokość 54–108 mm (podkład 58–112 mm), długość 25–300 mm, a przerwa 4–30 mm. Do rolek z dużą gilzą służy oś dołączona do zestawu."
       },
       {
-        "question": "Czy Citizen CT-S4500 jest drukarką fiskalną?",
-        "answer": "Nie. CT-S4500 drukuje paragony niefiskalne, bilety i etykiety wysłane z programu. Paragon fiskalny wystawia kasa fiskalna lub drukarka fiskalna."
+        "question": "Które karty sieciowe pasują do CT-S4500?",
+        "answer": "Do sieci przewodowej: [PPS00591S](/produkt/citizen-pos-ethernet-pps00591s) albo [PPZ60104S](/produkt/citizen-pos-lan-usb-host-ppz60104s) z dwoma portami USB host. Do Wi-Fi: [PPZ60112S](/produkt/citizen-pos-wifi-ppz60112s). Każda z nich wymaga wolnego gniazda karty. Port szeregowy dodaje [karta RS-232 PPS00276S](/produkt/citizen-pos-rs232-pps00276s). W wersji z Bluetoothem gniazdo jest zajęte."
       },
       {
-        "question": "Co jest w zestawie z CT-S4500?",
-        "answer": "Drukarka, zasilacz, przewód zasilający, oś do rolek z dużą gilzą, uchwyt przewodu USB, rolka papieru i skrócona instrukcja. Zasilacz zgodny z CT-S4500, sprzedawany osobno, to [Citizen PWT20035-0](/produkt/citizen-pos-zasilacz-pwt20035-0)."
+        "question": "Jaki materiał przyjmuje CT-S4500?",
+        "answer": "Papier i etykiety o szerokości 58–112 mm i grubości 65–150 µm. Maksymalna średnica rolki wynosi 102 mm."
+      },
+      {
+        "question": "Czy zasilacz CT-S4500 można kupić osobno?",
+        "answer": "Tak. Jeden zasilacz z przewodem zasilającym jest w zestawie, a zgodny zasilacz zapasowy to [Citizen PWT20035-0](/produkt/citizen-pos-zasilacz-pwt20035-0)."
       }
     ],
     "createdAt": "2026-10-23",
