@@ -92,19 +92,21 @@ Wszystkie PNG 800 × 800, przezroczyste tło (białe tło usunięte flood fillem
 | RS21C0-TS00ZWR-3.png | zebra.com, right-side-hand-cropped | 85% szer., przedramię przy lewej krawędzi |
 | RS21C0-TS00ZWR-4.png | zebra.com, top-hand-facing-cropped | 84% wys., nadgarstek przy dolnej krawędzi |
 | RS21C0-TS00ZWR-5.png | zebra.com, hand-left-side-view-cropped | 84% wys., dół kadru |
-| SG-RS2X-HMTRA-01.png | PTS Mobile, sg-rs2x-hmtra-01-lg.jpg (560 px) | 66% szer. |
+| SG-RS2X-HMTRA-01.png | biblioteka mediów Zebry, sg-rs2x-hmtra-10-photography-product-accessories-1x1 (3600 px) | 66% szer. |
+| SG-RS2X-HMTLA-01.png | lustrzane odbicie SG-RS2X-HMTRA-01.png z wyretuszowaną naklejką | 66% szer. |
 | SG-RS2X-HMTRA-01-2.png | zebra.com, hand-palm-facing (prawa dłoń) | 84% wys., dół kadru |
 | CRD-RS2X-2SCHG-01.png | PTS Mobile (560 px, render ze skanerami w gniazdach) | 68% szer. |
 | BT-RS5X6-DNGL-01.png | PTS Mobile (525 px, zdjęcie) | 62% wys. |
 | KT-RS5X6-BTDCBL-01.png | PTS Mobile (560 px) | 68% |
-| CBA-U46-S07ZAR.png | PTS Mobile (560 px) | 66% szer. |
+| CBA-U46-S07ZAR.png | biblioteka mediów Zebry, CBA-U46-S07ZAR-photography-product-accessory-connector-cable (2000 px), cień usunięty | 66% szer. |
+| CRD-RS2X-20SCHG-01.png | biblioteka mediów Zebry, crd-rs2x-20schg-01-photography-product-accessories (320 px, powiększone 1,7×) | 68% szer. |
 
 - Wszystkie zdjęcia z dłonią na zebra.com przedstawiają prawą dłoń. Zdjęcie lewego mocowania u PTS to lustrzane odbicie prawego z odwróconym napisem ZEBRA — nie użyto.
 - Lewe mocowania (SG-RS2X-HMTLA-01 i -10): `SG-RS2X-HMTLA-01.png` to lustrzane odbicie zdjęcia prawego mocowania z usuniętą (zretuszowaną) naklejką w gnieździe skanera (napisy ZEBRA, RS2100 MOUNT, strzałki). Opis zdjęcia: „(zdjęcie poglądowe)”, jak przy lewych mocowaniach ProGlove.
-- Bez zdjęcia (logo Zebra na kaflu, placeholder na karcie): CRD-RS2X-20SCHG-01. Dla stacji 20-gniazdowej dostępne są tylko rysunki SVG w dokumentacji i miniatury ≤ 300 px.
-- Zdjęcia PTS mają 525–560 px (poniżej progu 600 px z briefu, ale bez powiększania: skala 0,96–1,05). Do wymiany, gdy będzie dostęp do biblioteki mediów Zebry.
+- Biblioteka mediów Zebry (partner, 24.10.2026): stacje 2- i 20-gniazdowa mają tylko wersje 320 px; adaptera BT-RS5X6-DNGL-01 i zestawu KT nie ma. Oficjalne zdjęcie lewego mocowania (sg-rs2x-hmtla-10) to także lustrzane odbicie z odwróconym napisem ZEBRA, więc zostaje wersja z retuszem. Zasoby z biblioteki są dostępne pod tą samą ścieżką `/content/dam/zebra_dam/...` na www.zebra.com.
+- Stacja 20-gniazdowa: jedyne zdjęcie ma 320 px; powiększone 1,7× jest miękkie, ale czytelne. Wymiana, gdy Zebra opublikuje większe.
+- Zdjęcia PTS (stacja 2-gniazdowa, adapter, zestaw) mają 525–560 px; większych nie ma w bibliotece mediów Zebry.
 - Mapę `product-image-dims.json` uzupełniono ręcznie.
-- W bloku „Wymagane” na karcie RS2100 stacja 20-gniazdowa nie ma miniatury (puste miejsce zamiast zdjęcia), bo nie ma zdjęcia.
 - Zrzuty 1440 i 390 px (RS2100, ProGlove MARK 2, M3 WR15, podkategoria, stacje, adapter, mocowanie, ProGlove C006): scratchpad sesji `rs2100/shots/`, pomiary w `pomiar.json`.
 
 ## 8. Samokontrola z kartą katalogową
@@ -116,3 +118,21 @@ Sprawdzono zdanie po zdaniu: title, meta, shortDescription, opis, specyfikację,
 - NIEPRECYZYJNE (świadome uproszczenia): „Grubych rękawic roboczych nie przewidziano” (z „light gloves only”); „dioda zasilania pokazuje, że stacja jest pod napięciem” (rysunek PRG: „Power LED”).
 - POMINIĘTE: wibracje i ESD są w specyfikacji, nie w opisie; Device Tracker tylko w specyfikacji.
 - Wspólne 6-gramy (`porownaj-opisy.py`): akcesoria RS2100 — 0 par w description, shortDescription, seoDescription, faq; RS2100 vs ProGlove i M3 — 0 par.
+
+## 9. Druga kontrola z kartą katalogową i poprawki (24.10.2026, wieczór)
+
+Ponowne porównanie zdanie po zdaniu z kartą katalogową (EN/PL), PRG i QSG. Poprawione:
+
+| Miejsce | Było | Jest | Źródło |
+|---|---|---|---|
+| Opis RS2100, zasięg | zasięg UPC-A i QR bez warunku | „typowy zasięg… zależy od jakości wydruku, kontrastu i oświetlenia” | karta, przypis 2 do „Decode Ranges (Typical Working Ranges)” |
+| Opis RS2100, NFC | „Do parowania wystarczy zbliżenie NFC” | NFC tylko z obsługiwanymi urządzeniami, inaczej Scan-to-Connect | karta („supported NFC-enabled devices”), QSG („Not all Zebra devices support NFC”) |
+| Opis RS2100, upadki | 1,8 m bez warunku | „w całym zakresie temperatur pracy” | karta, Drop Specification |
+| FAQ, DataWedge | „ustawienia skanera i format danych określa DataWedge” | DataWedge przekazuje kody do aplikacji bez programowania | strona modelu (Mobility DNA) |
+| FAQ, HID | HID bez warunku | najpierw ustawienia fabryczne i kod HID z PRG | PRG, „HID Setup” |
+| FAQ, rękawice | „chwyt towaru nie zmienia się” | brak paska w poprzek dłoni → pewniejszy chwyt | karta („bare palm gripping”) |
+| Mocowania, spust | „obsługiwany palcem wskazującym”, „pod palcem” | spust na pasku palca wskazującego, od strony kciuka | QSG, rys. 2 (Slim Mount Mounted Side View) |
+| Stacja 20-gn. | „Służy tylko do ładowania” / „Funkcja: Tylko ładowanie” | usunięte | „no communication” PRG podaje tylko dla stacji 2-gniazdowej |
+
+- Zasilacz 108 W (`zebra-psu-108w`): blok „Wymagane” dzieli przewód DC według stacji — CBL-DC-381A1-01 dla stacji wielogniazdowych terminali i ładowarek baterii, CBL-DC-382A1-01 dla stacji 20-gniazdowej RS2100. Przewód sieciowy 50-16000-220R wymagany zawsze.
+

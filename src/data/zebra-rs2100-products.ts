@@ -12,7 +12,7 @@ export const zebraRs2100Products: Product[] = [
     "seoTitle": "Zebra RS2100 — skaner noszony na grzbiecie dłoni, 31 g, IP54",
     "seoDescription": "Skaner noszony Zebra RS2100: 31 g, imager 1D/2D SE4770, Bluetooth 5.2, NFC, IP54. Skaner pierścieniowy Zebra RS2100, skaner na dłoń Zebra, RS2100 Zebra. PN: RS21C0-TS00ZWR.",
     "shortDescription": "Zebra RS2100 — skaner kodów 1D/2D noszony na grzbiecie dłoni: 31 g, wysokość 14,6 mm, odkryte wnętrze dłoni, Bluetooth 5.2 i parowanie NFC.",
-    "description": "Zebra RS2100 to skaner kodów kreskowych noszony na grzbiecie dłoni. Mocowanie obejmuje nadgarstek i nasadę palca wskazującego, a wewnętrzna strona dłoni pozostaje odkryta. Pracownik chwyta więc towar gołą dłonią albo w cienkiej rękawiczce. Skaner waży 31 g i ma 14,6 mm wysokości, co ułatwia kompletację w ciasnych miejscach.\n\nImager SE4770 z technologią PRZM Intelligent Imaging czyta kody 1D i 2D, także uszkodzone, słabo wydrukowane lub zabrudzone, oraz znaki OCR-A i OCR-B. Etykietę UPC-A odczytuje z odległości 4,1–63,2 cm, a kod QR 20 mil z 2,8–44,5 cm. Odczyt potwierdzają brzęczyk i kolorowe diody widoczne w polu widzenia pracownika.\n\nRS2100 łączy się przez Bluetooth 5.2 z komputerami mobilnymi Zebra, ze smartfonami i tabletami z Androidem lub iOS oraz z komputerem PC. Do parowania wystarczy zbliżenie NFC (Tap-to-Pair) albo zeskanowanie kodu wyświetlonego przez aplikację Scan-to-Connect. [Adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01) podłączony do portu USB komputera obsługuje do siedmiu skanerów, np. na stanowiskach pakowania.\n\nBateria 480 mAh jest wbudowana, więc nie ma osobnych baterii do wymiany. Obudowa ma klasę IP54 i wytrzymuje wielokrotne upadki na beton z wysokości 1,8 m.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Mocowanie ze spustem Zebra RS2100, prawa ręka, 1 szt. (SG-RS2X-HMTRA-01)](/produkt/zebra-rs2100-sg-rs2x-hmtra-01)\n- [Mocowanie ze spustem Zebra RS2100, lewa ręka, 1 szt. (SG-RS2X-HMTLA-01)](/produkt/zebra-rs2100-sg-rs2x-hmtla-01)\n- [Mocowanie ze spustem Zebra RS2100, prawa ręka, 10 szt. (SG-RS2X-HMTRA-10)](/produkt/zebra-rs2100-sg-rs2x-hmtra-10)\n- [Mocowanie ze spustem Zebra RS2100, lewa ręka, 10 szt. (SG-RS2X-HMTLA-10)](/produkt/zebra-rs2100-sg-rs2x-hmtla-10)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01)\n- [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "Zebra RS2100 to skaner kodów kreskowych noszony na grzbiecie dłoni. Mocowanie obejmuje nadgarstek i nasadę palca wskazującego, a wewnętrzna strona dłoni pozostaje odkryta. Pracownik chwyta więc towar gołą dłonią albo w cienkiej rękawiczce. Skaner waży 31 g i ma 14,6 mm wysokości, co ułatwia kompletację w ciasnych miejscach.\n\nImager SE4770 z technologią PRZM Intelligent Imaging czyta kody 1D i 2D, także uszkodzone, słabo wydrukowane lub zabrudzone, oraz znaki OCR-A i OCR-B. Typowy zasięg odczytu kodu UPC-A (100%) wynosi 4,1–63,2 cm, a kodu QR 20 mil 2,8–44,5 cm. Zasięg zależy od jakości wydruku, kontrastu i oświetlenia. Odczyt potwierdzają brzęczyk i kolorowe diody widoczne w polu widzenia pracownika.\n\nRS2100 łączy się przez Bluetooth 5.2 z komputerami mobilnymi Zebra, ze smartfonami i tabletami z Androidem lub iOS oraz z komputerem PC. Z obsługiwanymi urządzeniami z NFC skaner paruje się po zbliżeniu (Tap-to-Pair). Z pozostałymi łączy się po zeskanowaniu kodu, który wyświetla aplikacja Scan-to-Connect. [Adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01) podłączony do portu USB komputera obsługuje do siedmiu skanerów, np. na stanowiskach pakowania.\n\nBateria 480 mAh jest wbudowana, więc nie ma osobnych baterii do wymiany. Obudowa ma klasę IP54 i wytrzymuje wielokrotne upadki na beton z wysokości 1,8 m w całym zakresie temperatur pracy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla skanera: mocowanie (jedno z) — sprzedawane osobno**\n\n- [Mocowanie ze spustem Zebra RS2100, prawa ręka, 1 szt. (SG-RS2X-HMTRA-01)](/produkt/zebra-rs2100-sg-rs2x-hmtra-01)\n- [Mocowanie ze spustem Zebra RS2100, lewa ręka, 1 szt. (SG-RS2X-HMTLA-01)](/produkt/zebra-rs2100-sg-rs2x-hmtla-01)\n- [Mocowanie ze spustem Zebra RS2100, prawa ręka, 10 szt. (SG-RS2X-HMTRA-10)](/produkt/zebra-rs2100-sg-rs2x-hmtra-10)\n- [Mocowanie ze spustem Zebra RS2100, lewa ręka, 10 szt. (SG-RS2X-HMTLA-10)](/produkt/zebra-rs2100-sg-rs2x-hmtla-10)\n\n**Wymagane dla skanera: stacja ładująca (jedna z) — sprzedawane osobno**\n\n- [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01)\n- [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "skanery-kodow-kreskowych",
     "subcategoryIds": [
       "skanery-pierscieniowe"
@@ -240,11 +240,11 @@ export const zebraRs2100Products: Product[] = [
     "faq": [
       {
         "question": "Z jakimi urządzeniami współpracuje Zebra RS2100?",
-        "answer": "RS2100 przesyła kody przez Bluetooth do komputerów mobilnych Zebra, smartfonów i tabletów z Androidem lub iOS oraz do komputerów PC. Na komputerach mobilnych Zebra ustawienia skanera i format danych określa aplikacja DataWedge. Skaner łączy się także z bazą Zebra STB3678 podłączoną do komputera."
+        "answer": "RS2100 przesyła kody przez Bluetooth do komputerów mobilnych Zebra, smartfonów i tabletów z Androidem lub iOS oraz do komputerów PC. Na komputerach mobilnych Zebra aplikacja DataWedge przekazuje odczytane kody do aplikacji biznesowych bez dodatkowego programowania. Skaner łączy się także z bazą Zebra STB3678 podłączoną do komputera."
       },
       {
         "question": "Czy RS2100 działa z iPhone'em i komputerem z Windows?",
-        "answer": "Tak. W trybie HID skaner łączy się z iPhone'em, iPadem, urządzeniem z Androidem albo komputerem z Windows jak klawiatura Bluetooth, a kod trafia do aplikacji jako wpisane znaki. Do komputera stacjonarnego można też podłączyć [adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01) przez port USB."
+        "answer": "Tak. Po przywróceniu ustawień fabrycznych i zeskanowaniu kodu HID z przewodnika Product Reference Guide skaner łączy się z iPhone'em, iPadem, urządzeniem z Androidem albo komputerem z Windows jak klawiatura Bluetooth, a kod trafia do aplikacji jako wpisane znaki. Do komputera stacjonarnego można też podłączyć [adapter Bluetooth](/produkt/zebra-rs2100-bt-rs5x6-dngl-01) przez port USB."
       },
       {
         "question": "Ile skanerów RS2100 obsługuje jeden adapter Bluetooth?",
@@ -260,7 +260,7 @@ export const zebraRs2100Products: Product[] = [
       },
       {
         "question": "Czy RS2100 nadaje się do pracy w rękawicach?",
-        "answer": "Mocowanie jest przeznaczone do pracy gołą dłonią albo w cienkich rękawiczkach. Grubych rękawic roboczych nie przewidziano. Wnętrze dłoni pozostaje odkryte, więc chwyt towaru nie zmienia się."
+        "answer": "Mocowanie jest przeznaczone do pracy gołą dłonią albo w cienkich rękawiczkach. Grubych rękawic roboczych nie przewidziano. Mocowanie nie ma paska w poprzek wnętrza dłoni, dlatego chwyt towaru jest pewniejszy."
       },
       {
         "question": "Co zawiera opakowanie RS2100?",
@@ -280,7 +280,7 @@ export const zebraRs2100Accessories: Product[] = [
     "seoH1": "Mocowanie ze spustem Zebra RS2100, prawa ręka, 1 szt.",
     "seoTitle": "Mocowanie ze spustem Zebra RS2100, prawa ręka, 1 szt. — SG-RS2X-HMTRA-01",
     "seoDescription": "Mocowanie Zebra SG-RS2X-HMTRA-01 na grzbiet prawej dłoni ze spustem do skanera RS2100. Uchwyt na dłoń Zebra RS2100 w jednym rozmiarze, 1 szt.",
-    "shortDescription": "Mocowanie Zebra SG-RS2X-HMTRA-01 na grzbiet prawej dłoni ze spustem pod palcem wskazującym do skanera RS2100. Jeden rozmiar, 1 sztuka.",
+    "shortDescription": "Mocowanie Zebra SG-RS2X-HMTRA-01 na grzbiet prawej dłoni ze spustem na pasku palca wskazującego do skanera RS2100. Jeden rozmiar, 1 sztuka.",
     "description": "Mocowanie SG-RS2X-HMTRA-01 trzyma skaner Zebra RS2100 na grzbiecie prawej dłoni. Spust skanera znajduje się w mocowaniu, przy palcu wskazującym. Sam skaner nie ma spustu, dlatego każdy RS2100 potrzebuje jednego mocowania.\n\nMocowanie ma pasek na nadgarstek i pasek na palec wskazujący, a wewnętrzna strona dłoni pozostaje odkryta. Występuje w jednym rozmiarze dla wszystkich dłoni. Jest przeznaczone do pracy gołą dłonią lub w cienkich rękawiczkach.\n\nSkaner wsuwa się do gniazda końcem z diodą, a następnie dociska przód, aż zaczepy zamkną się na wycięciach obudowy. Do ładowania skaner wyjmuje się z mocowania. Opakowanie zawiera jedno mocowanie; dziesięć sztuk ma numer [SG-RS2X-HMTRA-10](/produkt/zebra-rs2100-sg-rs2x-hmtra-10), a wersja na lewą rękę numer [SG-RS2X-HMTLA-01](/produkt/zebra-rs2100-sg-rs2x-hmtla-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
@@ -318,7 +318,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Spust",
-        "value": "Wbudowany, obsługiwany palcem wskazującym"
+        "value": "Na pasku palca wskazującego, od strony kciuka"
       },
       {
         "name": "Rozmiar",
@@ -366,7 +366,7 @@ export const zebraRs2100Accessories: Product[] = [
     "seoTitle": "Mocowanie ze spustem Zebra RS2100, lewa ręka, 1 szt. — SG-RS2X-HMTLA-01",
     "seoDescription": "Lewe mocowanie Zebra SG-RS2X-HMTLA-01 ze spustem, do noszenia skanera RS2100 na grzbiecie lewej dłoni. Uchwyt na dłoń Zebra RS2100, 1 szt.",
     "shortDescription": "Lewostronne mocowanie Zebra SG-RS2X-HMTLA-01 z wbudowanym spustem trzyma skaner RS2100 na grzbiecie lewej dłoni. Opakowanie: 1 szt.",
-    "description": "SG-RS2X-HMTLA-01 to mocowanie na lewą rękę do skanera Zebra RS2100. Skaner leży na grzbiecie lewej dłoni, a spust w mocowaniu obsługuje lewy palec wskazujący. Skaner RS2100 jest ten sam dla obu rąk; o stronie decyduje wyłącznie mocowanie.\n\nMocowanie zakłada się, przekładając dłoń przez pasek na nadgarstek, a palec wskazujący przez pasek na palec. Po dociągnięciu pasek na palec leży u nasady palca. Pasuje na każdą dłoń. Można je nosić na gołej dłoni albo na cienkiej rękawiczce.\n\nW opakowaniu jest jedno mocowanie. Dziesięć sztuk na lewą rękę ma numer [SG-RS2X-HMTLA-10](/produkt/zebra-rs2100-sg-rs2x-hmtla-10), a pojedyncze mocowanie na prawą rękę numer [SG-RS2X-HMTRA-01](/produkt/zebra-rs2100-sg-rs2x-hmtra-01).",
+    "description": "SG-RS2X-HMTLA-01 to mocowanie na lewą rękę do skanera Zebra RS2100. Skaner leży na grzbiecie lewej dłoni, a spust leży na pasku lewego palca wskazującego. Skaner RS2100 jest ten sam dla obu rąk; o stronie decyduje wyłącznie mocowanie.\n\nMocowanie zakłada się, przekładając dłoń przez pasek na nadgarstek, a palec wskazujący przez pasek na palec. Po dociągnięciu pasek na palec leży u nasady palca. Pasuje na każdą dłoń. Można je nosić na gołej dłoni albo na cienkiej rękawiczce.\n\nW opakowaniu jest jedno mocowanie. Dziesięć sztuk na lewą rękę ma numer [SG-RS2X-HMTLA-10](/produkt/zebra-rs2100-sg-rs2x-hmtla-10), a pojedyncze mocowanie na prawą rękę numer [SG-RS2X-HMTRA-01](/produkt/zebra-rs2100-sg-rs2x-hmtra-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -401,7 +401,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Spust",
-        "value": "Wbudowany, obsługiwany palcem wskazującym"
+        "value": "Na pasku palca wskazującego, od strony kciuka"
       },
       {
         "name": "Rozmiar",
@@ -449,7 +449,7 @@ export const zebraRs2100Accessories: Product[] = [
     "seoTitle": "Mocowanie ze spustem Zebra RS2100, prawa ręka, 10 szt. — SG-RS2X-HMTRA-10",
     "seoDescription": "Zestaw 10 mocowań Zebra SG-RS2X-HMTRA-10 na prawą dłoń ze spustem do skanerów RS2100. Uchwyty na dłoń Zebra RS2100 dla zespołu.",
     "shortDescription": "Pakiet 10 mocowań na prawą rękę z wbudowanym spustem do skanerów Zebra RS2100. PN SG-RS2X-HMTRA-10.",
-    "description": "Opakowanie SG-RS2X-HMTRA-10 zawiera dziesięć mocowań na prawą rękę do skanerów Zebra RS2100. Pakiet pozwala wyposażyć dziesięć skanerów jednym zamówieniem.\n\nKażde mocowanie ma wbudowany spust pod palcem wskazującym oraz dwa regulowane paski: nadgarstkowy i palcowy. Jeden rozmiar pasuje na każdą dłoń. Mocowanie nosi się na gołej dłoni lub na cienkiej rękawiczce, a wnętrze dłoni zostaje wolne.\n\nPojedyncze mocowanie na prawą rękę ma numer [SG-RS2X-HMTRA-01](/produkt/zebra-rs2100-sg-rs2x-hmtra-01). Dziesięć mocowań na lewą rękę to [SG-RS2X-HMTLA-10](/produkt/zebra-rs2100-sg-rs2x-hmtla-10).",
+    "description": "Opakowanie SG-RS2X-HMTRA-10 zawiera dziesięć mocowań na prawą rękę do skanerów Zebra RS2100. Pakiet pozwala wyposażyć dziesięć skanerów jednym zamówieniem.\n\nKażde mocowanie ma spust na pasku palca wskazującego oraz dwa regulowane paski: nadgarstkowy i palcowy. Jeden rozmiar pasuje na każdą dłoń. Mocowanie nosi się na gołej dłoni lub na cienkiej rękawiczce, a wnętrze dłoni zostaje wolne.\n\nPojedyncze mocowanie na prawą rękę ma numer [SG-RS2X-HMTRA-01](/produkt/zebra-rs2100-sg-rs2x-hmtra-01). Dziesięć mocowań na lewą rękę to [SG-RS2X-HMTLA-10](/produkt/zebra-rs2100-sg-rs2x-hmtla-10).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -486,7 +486,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Spust",
-        "value": "Wbudowany, obsługiwany palcem wskazującym"
+        "value": "Na pasku palca wskazującego, od strony kciuka"
       },
       {
         "name": "Rozmiar",
@@ -569,7 +569,7 @@ export const zebraRs2100Accessories: Product[] = [
       },
       {
         "name": "Spust",
-        "value": "Wbudowany, obsługiwany palcem wskazującym"
+        "value": "Na pasku palca wskazującego, od strony kciuka"
       },
       {
         "name": "Rozmiar",
@@ -728,15 +728,19 @@ export const zebraRs2100Accessories: Product[] = [
     "seoTitle": "Stacja ładująca Zebra RS2100 20-gniazdowa — CRD-RS2X-20SCHG-01",
     "seoDescription": "Stacja ładująca Zebra CRD-RS2X-20SCHG-01 na 20 skanerów noszonych RS2100, zasilanie 12 V z zasilacza 108 W. Ładowarka wielogniazdowa Zebra RS2100.",
     "shortDescription": "Zebra CRD-RS2X-20SCHG-01 — stacja ładująca do 20 skanerów noszonych RS2100 jednocześnie, zasilanie 12 V z zasilacza 108 W. PN CRD-RS2X-20SCHG-01.",
-    "description": "Stacja CRD-RS2X-20SCHG-01 ładuje jednocześnie do 20 skanerów Zebra RS2100. Służy tylko do ładowania. Każdy skaner przed włożeniem do gniazda wyjmuje się z mocowania, a dioda zasilania na obudowie pokazuje, że stacja jest pod napięciem.\n\nWymiary stacji wynoszą 489 × 147,7 × 81,6 mm (szer. × gł. × wys.), a masa 2 kg. Stacja pracuje w temperaturze 0–45 °C, a skanery ładują się w niej w temperaturze 5–40 °C.\n\nStację zasila napięcie 12 V, 9 A. Tor zasilania składa się z trzech elementów: zasilacza 108 W, przewodu DC między zasilaczem a stacją oraz uziemionego przewodu sieciowego. Do jednego lub dwóch skanerów wystarczy [stacja 2-gniazdowa](/produkt/zebra-rs2100-crd-rs2x-2schg-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "Stacja CRD-RS2X-20SCHG-01 ładuje jednocześnie do 20 skanerów Zebra RS2100. Każdy skaner przed włożeniem do gniazda wyjmuje się z mocowania, a dioda zasilania na obudowie pokazuje, że stacja jest pod napięciem.\n\nWymiary stacji wynoszą 489 × 147,7 × 81,6 mm (szer. × gł. × wys.), a masa 2 kg. Stacja pracuje w temperaturze 0–45 °C, a skanery ładują się w niej w temperaturze 5–40 °C.\n\nStację zasila napięcie 12 V, 9 A. Tor zasilania składa się z trzech elementów: zasilacza 108 W, przewodu DC między zasilaczem a stacją oraz uziemionego przewodu sieciowego. Do jednego lub dwóch skanerów wystarczy [stacja 2-gniazdowa](/produkt/zebra-rs2100-crd-rs2x-2schg-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
       "stacje-ladowarki-skanerow"
     ],
     "manufacturerId": "zebra",
-    "images": [],
-    "imageDescriptions": [],
+    "images": [
+      "/images/products/CRD-RS2X-20SCHG-01.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca Zebra RS2100 20-gniazdowa ze skanerami w gniazdach (skanery sprzedawane osobno)"
+    ],
     "tags": [
       "magazyn"
     ],
@@ -752,10 +756,6 @@ export const zebraRs2100Accessories: Product[] = [
       {
         "name": "Liczba gniazd",
         "value": "20 skanerów RS2100"
-      },
-      {
-        "name": "Funkcja",
-        "value": "Tylko ładowanie"
       },
       {
         "name": "Zasilanie",
@@ -1083,7 +1083,7 @@ export const zebraRs2100Accessories: Product[] = [
       "/images/products/CBA-U46-S07ZAR.png"
     ],
     "imageDescriptions": [
-      "Przewód USB Zebra CBA-U46-S07ZAR — czarny zwinięty przewód z wtykiem USB-A"
+      "Przewód USB Zebra CBA-U46-S07ZAR — czarny zwinięty przewód z wtykiem USB-A i wtykiem modułowym"
     ],
     "tags": [
       "magazyn"
