@@ -17,3 +17,5 @@ D3 PRO: d3-pro/video/video-en.mp4 + poster-en.mp4. Pozostałe sekcje producenta 
 ProductMotion: ładowanie po wejściu w widok, pauza poza ekranem, ręczna pauza trwała, reduced motion, odtwarzanie raz dla krótkich prezentacji. Pełne filmy z dźwiękiem tylko na żądanie; zapowiedzi bez dźwięku z pętlą.
 
 Kontrola TypeScript dla zmienionych komponentów, ESLint i git diff --check poprawne. Ceny, galeria i kafelki bez zmian.
+
+Publikacja: cbb408db83f82622b3f8d08cd9ea6e593b196676, Vercel dpl_BDCKLV1o7WARB6qqUFp17YYw35pA, READY. Wszystkie4karty i11plikówMP4 dostępneHTTP200. Na produkcji odtwarzanie drukarkiMAX/tilt/fingerprint readyState4bez błędów. Zachowana trasa admin/etykiety-na-magazynie (200). FLEX3opublikowany wcześniej babcf103bfea9b22c21bfb3d940236361c672ee2, READY.
