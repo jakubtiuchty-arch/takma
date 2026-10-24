@@ -112,3 +112,41 @@ Porównanie zdanie po zdaniu: tytuł, meta, krótki opis, opis, specyfikacja, FA
 - Dymek „Zasięg” w karcie (MARK Basic, MARK 2, MARK Display) opisuje zakresy ProGlove, nie globalny tekst Zebra/Datalogic.
 - Merchant feed: marka z `manufacturers.ts` (ProGlove), tytuł z prefiksem „Skaner kodów kreskowych”; skanery nie mają kategorii Google — jak pozostałe skanery.
 - Ingram: PN ProGlove dostają domyślny prefiks `ZB` (bez zmian w `ingram.ts`); ceny idą z innych źródeł API.
+
+## 11. Poprawki po audycie (24.10.2026)
+
+Audyt zewnętrzny przed publikacją; poniższe zmiany zastępują odpowiednie zapisy w p. 7–9.
+
+**Sprzeczne**
+- S1: przypadek użycia „Kompletacja i pakowanie z bliska” — najlżejszy jest tylko LEO (35 g); MARK Basic Standard Range opisany zasięgiem 10–90 cm, nie masą.
+- S2: Index Trigger — karty prawe zostają przy `proglove-g006.png` (opis „wersja na prawą rękę, na zdjęciu rozmiar M”). Karty lewe (SL/ML/LL × 3 i × 10) dostały `proglove-g006-l.png`: odbicie lustrzane, naklejka (RIGHT M, PROGLOVE INDEX TRIGGER, CE) zamaskowana kolorem tła mocowania, opis „zdjęcie poglądowe”.
+- S3: drugie zdjęcie MARK Basic — „w opasce Hand Strap i w mocowaniu Index Trigger”.
+
+**Nieprecyzyjne**
+- N1: FAQ MARK Display o HID zaczyna się od „Nie.”; bez odsyłania do kontaktu.
+- N2/N3: FAQ marki o Gateway — HID dotyczy LEO, MARK Basic, MARK 2 i MARK 3; MARK Display i MAI przez INSIGHT Mobile lub SDK, MAI także przez Wi-Fi. Akapit końcowy z tym zdaniem usunięty ze wszystkich kart.
+- N4: LEO „o połowę krócej” (1 h zamiast 2 h).
+- N5: Index Trigger SL-3, SR-3, LR-10 — spust z boku palca wskazującego, naciskany kciukiem.
+- N6: pierwsze zdjęcie MAI — pola Report i Skip na ekranie, cztery przyciski po bokach.
+- N7: Mid Range 30–150 cm opisany jako zakres optymalny (specyfikacja, dymki, FAQ, FAQ marki); z nazw i atrybutów wariantów MARK 2 i MARK Display usunięto „30–150 cm”.
+- N8: MAI — czas ładowania „ok. 130 min w stacji Gen 2”, jak karta stacji C021 (karta MAI podaje ~120 min w temperaturze pokojowej).
+- N9: G011-R-10 — pranie dotyczy Hand Strap 1.4 i nowszych.
+- N10: opisy zdjęć C021-INT i MARK 3 z dopiskiem „(sprzedawane osobno)”.
+
+**Spoza karty**: rola MARK 2 w tabeli marki „Pierwotny model serii” („The Original”). G011-MIX-3: tylko testy i pilotaże (usunięte „wyposażenie pojedynczego skanera”).
+
+**Szablonowość**
+- Opisy 6 skanerów przepisane od cechy wyróżniającej model; 2–4 akapity (LEO 3, MARK Basic 2, MARK 2 4, MARK 3 3, MARK Display 4, MAI 3), 163–186 słów. Bez zdania o gwarancji (jest w specyfikacji i FAQ marki).
+- Akapit końcowy pod blokiem „Wymagane” (40 słów, 5 kart) usunięty. Zamiast niego standardowe zdanie „Dokup tylko te elementy, których jeszcze nie masz.”, które strona ukrywa (`removeRequiredAccessoryBlocks`), a parsery bloku potrzebują akapitu po ostatniej liście.
+- Zdanie o zgodności w 20 akcesoriach napisane inaczej na każdej karcie; lista modeli bez zmian (linki tworzą kafelki urządzeń).
+- `porownaj-opisy.py` (n = 6): skanery — 0 par we wszystkich polach, także na pełnym widocznym tekście (kopia skryptu bez ucinania, z usunięciem list „Wymagane” jak na stronie). Na surowym pełnym tekście 15 par to wyłącznie identyczne listy „Wymagane” (boks zakupu). Akcesoria — wspólne wyłącznie n-gramy z listy modeli.
+
+**Styl**: usunięte 4 notatki o źródłach; „opakowanie zbiorcze” zamiast „flotowe”; jednolita pisownia Standard Range, Multi Range, Mid Range (także w nazwach wariantów i `llms.txt`).
+
+**Kategorie**: lead kategorii skanerów „…pierścieniowy lub noszony na dłoni”; podkategorie `akcesoria-do-skanerow`, `etui-kabury-skanerow`, `stacje-ladowarki-skanerow`, `kable-do-skanerow` wspominają ProGlove w opisie, SEO i opisie długim; ze wstępu kategorii skanerów usunięta cena „ok. 350 zł”.
+
+**Kod**: `RequiredAccessoryList` — nagłówek grupy „jedno z” to `<p role="heading" aria-level="3">` nad osobną listą grupy, nie `<li>`. Bez grup HTML bez zmian: 303 bloki innych marek wyrenderowane przed i po (`renderToStaticMarkup`) — identyczne.
+
+**Zdjęcia**: G011-L-10 ma zdjęcie `proglove-g011-l-10.png` (odbicie Hand Strap, etykieta RIGHT/NAME i wytłoczone znaki CE/UKCA zamaskowane kolorem klipsa) i trafia do Merchant feed. Z001-001 i Z009-000 nadal bez zdjęcia. `product-image-dims.json` uzupełniony ręcznie.
+
+**Porównanie wizualne** (`next start`, 1440 i 390 px; zrzuty w scratchpadzie `proglove-shots/`): galeria MARK 2 — produkt 314 × 353 px w polu 584 × 520 (M3 WR15: 320 × 307); na `/pierscieniowe` kafle ProGlove i M3 mają ten sam rozmiar (171 × 312 przy 390 px), a produkt zajmuje 39–43% dłuższego boku pola (M3: 36–47%); na `/skanery-proglove` kafle 299 × 421 (1440 px) i 171 × 316 (390 px). Blok „Wymagane” na MARK 2: dwie grupy z nagłówkami, 5 pozycji. Akcesoria: 4 kafle, „Pokaż pozostałe (20)”, po rozwinięciu 24, „Zwiń” wraca do 4 — tak jak na M3 WR15.

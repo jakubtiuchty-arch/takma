@@ -52,7 +52,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
     'skanery-kodow-kreskowych': {
       src: '/images/skanery-kodow-kreskowych-hero-v5.webp',
       alt: 'Skanery Zebra DS3678, Datalogic QuickScan QD2590 i Honeywell Granit Ultra 2105i nad linią przesyłek',
-      lead: 'Skanery kodów kreskowych do sklepu, magazynu i na produkcję. Wybierz model przewodowy, bezprzewodowy, prezentacyjny lub pierścieniowy. Dopasuj odczyt kodów 1D i 2D, zasięg oraz odporność do stanowiska pracy.',
+      lead: 'Skanery kodów kreskowych do sklepu, magazynu i na produkcję. Wybierz model przewodowy, bezprzewodowy, prezentacyjny, pierścieniowy lub noszony na dłoni. Dopasuj odczyt kodów 1D i 2D, zasięg oraz odporność do stanowiska pracy.',
     },
     'tablety-przemyslowe': {
       src: '/images/tablety-przemyslowe-hero-v6.webp',

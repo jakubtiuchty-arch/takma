@@ -236,7 +236,7 @@ Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwij
 - M3 SL20K (terminal z klawiaturą fizyczną, 4,7", od 2 492 zł): https://www.takma.com.pl/produkt/m3-sl20k
 - M3 WR10 / WR15 (skanery pierścieniowe na palec i na dłoń, Bluetooth, od 1 605 zł): https://www.takma.com.pl/produkt/m3-wr10
 - ProGlove LEO (najlżejszy skaner noszony, 35 g, odczyt z bliska): https://www.takma.com.pl/produkt/proglove-leo
-- ProGlove MARK 3 (skaner noszony multi range 10 cm–6 m, IP65, od −20°C): https://www.takma.com.pl/produkt/proglove-mark-3
+- ProGlove MARK 3 (skaner noszony Multi Range 10 cm–6 m, IP65, od −20°C): https://www.takma.com.pl/produkt/proglove-mark-3
 - ProGlove MAI (skaner noszony z kolorowym ekranem dotykowym i Wi-Fi 6): https://www.takma.com.pl/produkt/proglove-mai
 - Serwis terminali M3 Mobile: https://www.takma.com.pl/serwis/m3-mobile
 
