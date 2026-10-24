@@ -1514,7 +1514,7 @@ export const industryPages: IndustryPage[] = [
 <li><strong>Etykiet na worki z krwią i płynami infuzyjnymi</strong> — drukarki 4-calowe ZD421-HC i ZD621-HC.</li>
 <li><strong>Opasek identyfikacyjnych dla pacjentów</strong> — ZD510-HC z kartridżami Z-Band oraz drukarki biurkowe HC z rolki opasek.</li>
 <li><strong>Etykiet w banku krwi i etykiet na pokarm kobiecy</strong> — drukarki mobilne ZQ610 Plus-HC i ZQ620 Plus-HC.</li>
-<li><strong>Oznaczeń dokumentacji pacjenta i wyposażenia</strong> — drukarki biurkowe ZD411-HC i ZD611-HC.</li>
+<li><strong>Oznaczeń dokumentacji pacjenta i wyposażenia</strong> — drukarki biurkowe ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC.</li>
 </ul>
 
 <h3>Dobór drukarki do miejsca pracy</h3>

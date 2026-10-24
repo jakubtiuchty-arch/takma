@@ -12259,11 +12259,9 @@ PN na tej karcie wykonują nadruk bez kodowania UHF. Jeśli potrzebujesz równie
     slug: 'zebra-zq610-plus',
     name: 'Zebra ZQ610 Plus',
     shortDescription: 'Zebra ZQ610 Plus — kompaktowa mobilna drukarka etykiet 2", kolorowy wyświetlacz LCD, Wi-Fi 5/6, IP54',
-    seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — premium 2" Wi-Fi 6 | od 3 256 zł',
-    seoDescription: 'Zebra ZQ610 Plus — mobilna 2" Wi-Fi 6 dla retail, HoReCa i serwisu. BT 5.3, LCD, IP54. ZQ61-AUFAE14-00 od 3 256 zł netto.',
-    description: `Zebra ZQ610 Plus to najlepszy wybór dla handlu detalicznego i gastronomii potrzebujących kompaktowej mobilnej drukarki 2" do metek cenowych i potwierdzeń.
-
-Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
+    seoTitle: 'Mobilna drukarka Zebra ZQ610 Plus — 2", Bluetooth lub Wi-Fi, IP54',
+    seoDescription: 'Mobilna drukarka etykiet Zebra ZQ610 Plus 2" (48 mm) do handlu, magazynu i logistyki: kolorowy wyświetlacz, Bluetooth 4.2 lub Wi-Fi z Bluetooth, IP54. Drukarka mobilna Zebra ZQ610 Plus, ZQ610 Plus Zebra. PN: ZQ61-AUFAE14-00, ZQ61-AUWAE14-00.',
+    description: `Zebra ZQ610 Plus to kompaktowa mobilna drukarka etykiet i paragonów o szerokości druku 2 cale (48 mm) z serii ZQ600 Plus, zaprojektowana do szybkiego drukowania potwierdzeń, metek cenowych i etykiet produktowych w terenie.
 
 Następca modelu ZQ610 — nowa generacja z kolorowym wyświetlaczem LCD 288×240 px, ulepszonym zarządzaniem flotą przez Link-OS z Print DNA i opcjonalną łącznością Wi-Fi 6 (802.11ax) z Bluetooth 5.3. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
 
@@ -12271,7 +12269,7 @@ Bateria PowerPrecision+ 3250 mAh zapewnia druk setek etykiet na jednym ładowani
 
 Klasa ochrony IP54, odporność na upadki z 1,52 m (5 ft) na beton. Temperatura pracy od -20°C do +50°C pozwala na pracę w chłodniach i na rampach załadunkowych.
 
-Zebra ZQ610 Plus to flagowa mobilna drukarka 2-calowa z serii ZQ600 Plus, przeznaczona do profesjonalnych zastosowań w handlu detalicznym, inwentaryzacji, recepcji i serwisie terenowym. Kompaktowe wymiary (170,9 × 91,4 × 72,4 mm) i waga zaledwie 600 g czynią ją jedną z najlżejszych mobilnych drukarek na rynku.
+Zebra ZQ610 Plus to mobilna drukarka 2-calowa z serii ZQ600 Plus do zastosowań w handlu detalicznym, inwentaryzacji, recepcji i serwisie terenowym. Ma wymiary 170,9 × 91,4 × 72,4 mm i waży z baterią 600 g.
 
 Kolorowy wyświetlacz LCD (288×240 px) pokazuje stan baterii, łączność, kolejkę wydruków i komunikaty diagnostyczne. USB 2.0 Mini-B do serwisu i konfiguracji, port RS-232C (14-pin) do integracji ze starszymi systemami.
 
@@ -12279,9 +12277,7 @@ Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty ety
 
 Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Akcesoria ochronne (futerały, klipsy) mają dedykowane wersje dla serii ZQ610.
 
-Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12333,7 +12329,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'System operacyjny drukarki', value: 'Link-OS z Print DNA' },
       { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
       { name: 'Zarządzanie flotą', value: 'Link-OS, Profile Manager, Printer Management' },
-      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+      { name: 'Gwarancja', value: '12 miesięcy od daty wysyłki' },
     ],
     applications: [
       'Metki cenowe i etykiety produktowe w sklepie',
@@ -12441,15 +12437,15 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy ZQ610 Plus jest odporna na upadki i wodę?',
-        answer: 'ZQ610 Plus spełnia klasę IP54 (ochrona przed pyłem i bryzgami wody) i wytrzymuje upadek z 1,52 m (5 stóp) na beton. Temperatura pracy od -20°C do +50°C. Nie posiada certyfikatu MIL-STD — dla wymagań wojskowych polecamy modele ZQ511/ZQ521 z certyfikatem MIL-STD-810G.',
+        answer: 'ZQ610 Plus spełnia klasę IP54 (ochrona przed pyłem i bryzgami wody) i wytrzymuje wielokrotne upadki z 1,52 m (5 stóp) na beton. Temperatura pracy od -20°C do +50°C.',
       },
       {
         question: 'Jakie etykiety pasują do Zebra ZQ610 Plus?',
-        answer: 'ZQ610 Plus obsługuje etykiety termiczne (direct thermal) o szerokości 15–56 mm: samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), linerless (bez podkładu). Gilza 19 mm lub 34,9 mm, maks. średnica rolki 55,9 mm. Szerokość druku: max. 48 mm (2"). Idealna do metek cenowych, pokwitowań i etykiet produktowych.',
+        answer: 'ZQ610 Plus obsługuje etykiety termiczne (direct thermal) o szerokości 25–55,4 mm: samoprzylepne z przerwą lub czarną linią, ciągłe (paragony), linerless (bez podkładu). Gilza 19 mm lub 34,9 mm, maks. średnica rolki 55,9 mm. Szerokość druku: max. 48 mm (2"). Idealna do metek cenowych, pokwitowań i etykiet produktowych.',
       },
       {
         question: 'Czym różni się ZQ610 Plus od ZQ511?',
-        answer: 'ZQ610 Plus to drukarka 2-calowa (48 mm), ZQ511 to 3-calowa (72 mm). ZQ610 Plus ma kolorowy wyświetlacz LCD i opcję Wi-Fi 6 (ax), ale mniejszy zakres druku i niższy drop spec (1,52 m vs 2 m). ZQ511 ma certyfikat MIL-STD-810G. ZQ610 Plus jest idealna do metek cenowych i pokwitowań, ZQ511 do etykiet wysyłkowych i inwentaryzacji. Obie współdzielą baterie PowerPrecision+.',
+        answer: 'ZQ610 Plus to drukarka 2-calowa (48 mm), ZQ511 to 3-calowa (72 mm). ZQ610 Plus ma kolorowy wyświetlacz LCD i opcję Wi-Fi 6 (ax), ale mniejszy zakres druku i niższy drop spec (1,52 m vs 2 m). ZQ610 Plus służy głównie do metek cenowych i pokwitowań, a ZQ511 do etykiet wysyłkowych i inwentaryzacji. Obie współdzielą baterie PowerPrecision+.',
       },
       {
         question: 'Czy ZQ610 Plus obsługuje Wi-Fi 6?',
@@ -12473,7 +12469,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
-        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZQ610 Plus?',
@@ -12483,13 +12479,13 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     editorialReview: {
       ratingValue: 4.5,
       bestRating: 5,
-      reviewBody: 'Zebra ZQ610 Plus to najlepsza mobilna drukarka 2-calowa na rynku dla handlu detalicznego i serwisu. Wi-Fi 6 z szybkim roamingiem i BT 5.3 zapewniają niezawodną łączność w dużych obiektach. Kolorowy wyświetlacz LCD ułatwia obsługę i diagnostykę w terenie. Waga 600 g i kompaktowe wymiary pozwalają na komfortowe noszenie przez całą zmianę. Jedyny minus to mniejszy drop spec (1,52 m) vs seria ZQ500 (2 m) — ale w środowisku handlowym jest to w pełni wystarczające.',
+      reviewBody: 'Zebra ZQ610 Plus to mobilna drukarka 2-calowa dla handlu detalicznego i serwisu. Wi-Fi 6 z szybkim roamingiem i BT 5.3 zapewniają niezawodną łączność w dużych obiektach. Kolorowy wyświetlacz LCD ułatwia obsługę i diagnostykę w terenie. Waga 600 g i kompaktowe wymiary pozwalają na komfortowe noszenie przez całą zmianę. Jedyny minus to mniejszy drop spec (1,52 m) vs seria ZQ500 (2 m) — ale w środowisku handlowym jest to w pełni wystarczające.',
     },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq610-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq610plus/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa ZQ600 Plus (PL)', type: 'datasheet', url: '/datasheets/zq600-series-spec-sheet-pl-pl.pdf', size: '0,5 MB' },
     ],
-    relatedProducts: ['zebra-zq310-plus', 'zebra-zq620-plus', 'zebra-zq210'],
+    relatedProducts: ['zebra-zq610-plus-hc', 'zebra-zq310-plus', 'zebra-zq210'],
     createdAt: '2026-02-13',
     sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
   },
@@ -12498,17 +12494,15 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     slug: 'zebra-zq620-plus',
     name: 'Zebra ZQ620 Plus',
     shortDescription: 'Zebra ZQ620 Plus — mobilna drukarka etykiet 3", Wi-Fi 5/6, kolorowy wyświetlacz LCD, IP54, linerless',
-    seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3" linerless Wi-Fi 6 | od 3 621 zł',
-    seoDescription: 'Zebra ZQ620 Plus — mobilna 3" linerless Wi-Fi 6 dla logistyki i kurierów. BT 5.3, LCD, IP54. ZQ62-AUFAE14-00 od 3 621 zł netto.',
-    description: `Zebra ZQ620 Plus to najlepszy wybór dla firm logistycznych i kurierskich potrzebujących mobilnej drukarki 3" nowej generacji z Wi-Fi 6E i Bluetooth 5.3.
-
-Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
+    seoTitle: 'Mobilna drukarka Zebra ZQ620 Plus — 3", Wi-Fi 6, linerless',
+    seoDescription: 'Mobilna drukarka etykiet Zebra ZQ620 Plus 3" (72 mm) dla logistyki i kurierów: Bluetooth, Wi-Fi 5 lub Wi-Fi 6, wersja linerless, kolorowy wyświetlacz, IP54. Drukarka mobilna Zebra ZQ620 Plus, ZQ620 Plus Zebra. PN: ZQ62-AUFAE14-00, ZQ62-AUWAE14-00, ZQ62-AUXAE14-00, ZQ62-AUWBE14-00.',
+    description: `Zebra ZQ620 Plus to mobilna drukarka etykiet i paragonów o szerokości druku 3 cale (72 mm) z serii ZQ600 Plus, zaprojektowana do profesjonalnego drukowania etykiet wysyłkowych, metek cenowych i pokwitowań w terenie.
 
 Następca modelu ZQ620 — nowa generacja z kolorowym wyświetlaczem LCD 288×240 px, ulepszonym zarządzaniem flotą przez Link-OS z Print DNA i opcjonalną łącznością Wi-Fi 6 (802.11ax) z Bluetooth 5.3. Prędkość druku do 115 mm/s w rozdzielczości 203 dpi.
 
 Bateria PowerPrecision+ 3250 mAh zapewnia druk setek etykiet na jednym ładowaniu. Dostępna w wersjach: Bluetooth 4.2 only, Wi-Fi 5 (ac) + BT 4.2 oraz Wi-Fi 6 (ax) + BT 5.3 z szybkim roamingiem (Fast Transition / 802.11r). NFC (Zebra Print Touch) umożliwia parowanie jednym dotknięciem z terminalem mobilnym.
 
-Klasa ochrony IP54, odporność na upadki z 1,52 m (5 ft) na beton. Temperatura pracy od -20°C do +50°C pozwala na pracę w chłodniach i na rampach załadunkowych. Opcja druku etykiet bez podkładu (linerless) redukuje odpady o 40%.
+Klasa ochrony IP54, odporność na upadki z 1,52 m (5 ft) na beton. Temperatura pracy od -20°C do +50°C pozwala na pracę w chłodniach i na rampach załadunkowych. Wariant ZQ62-AUWBE14-00 drukuje na etykietach bez podkładu (linerless).
 
 Zebra ZQ620 Plus to 3-calowa mobilna drukarka z serii ZQ600 Plus, łącząca kompaktowe wymiary z szerokim zakresem druku 72 mm — wystarczającym do standardowych etykiet wysyłkowych, pokwitowań dostaw i metek cenowych. Następca popularnego ZQ620, kompatybilna wstecz z akcesoriami QLn320.
 
@@ -12518,9 +12512,7 @@ Pamięć 512 MB Flash (128 MB dla użytkownika) obsługuje złożone formaty ety
 
 Baterie PowerPrecision+ (3250 mAh i 6500 mAh) oraz ładowarki 1- i 3-gniazdowe są współdzielone w ramach serii ZQ500/ZQ600. Futerał ochronny P1031365-029 jest dedykowany dla ZQ620/ZQ620 Plus (3-calowy format).
 
-Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Całkowity koszt posiadania (TCO) mobilnych drukarek etykiet obejmuje koszt ribbonów (modele termotransferowe), materiałów eksploatacyjnych, baterii i serwisu. Mobilne drukarki Zebra serii ZQ oferują niższy TCO dzięki trwałej obudowie odpornej na upadki i warunki zewnętrzne — zwłaszcza modele z certyfikatem IP54/IP65.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -12564,8 +12556,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Bateria rozszerzona', value: 'PowerPrecision+ Li-Ion 6500 mAh (opcja)' },
       { name: 'Klasa ochrony', value: 'IP54' },
       { name: 'Odporność na upadki', value: '1,52 m (5 ft) na beton — wielokrotne' },
-      { name: 'Test tumble', value: '500 upadków obrotowych' },
-      { name: 'Certyfikat wojskowy', value: 'MIL-STD-810G (upadki i wstrząsy)' },
       { name: 'Temperatura pracy', value: '-20°C do +50°C' },
       { name: 'Temperatura przechowywania', value: '-25°C do +65°C' },
       { name: 'Wilgotność', value: '10–90% (bez kondensacji)' },
@@ -12576,7 +12566,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Czujniki', value: 'Przerwa i czarna linia (pozycja centralna)' },
       { name: 'Zarządzanie flotą', value: 'Link-OS, Profile Manager, Printer Management' },
       { name: 'Certyfikaty', value: 'FCC, CE, TUV, CSA, ENERGY STAR' },
-      { name: 'Gwarancja', value: '2 lata (bateria: 1 rok, głowica: 6 mies.)' },
+      { name: 'Gwarancja', value: '12 miesięcy od daty wysyłki' },
     ],
     applications: [
       'Etykiety wysyłkowe i kurierskie w dostawie',
@@ -12697,7 +12687,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy ZQ620 Plus jest odporna na upadki i wodę?',
-        answer: 'ZQ620 Plus spełnia klasę IP54 (ochrona przed pyłem i bryzgami wody), certyfikat MIL-STD-810G i wytrzymuje upadek z 1,52 m (5 stóp) na beton plus 500 upadków obrotowych (tumble). Temperatura pracy od -20°C do +50°C. Dla jeszcze wyższej odporności na upadki polecamy modele ZQ511/ZQ521 z drop spec 2–2,1 m.',
+        answer: 'ZQ620 Plus spełnia klasę IP54 (ochrona przed pyłem i bryzgami wody) i wytrzymuje wielokrotne upadki z 1,52 m (5 stóp) na beton. Temperatura pracy od -20°C do +50°C. Dla jeszcze wyższej odporności na upadki polecamy modele ZQ511/ZQ521 z drop spec 2–2,1 m.',
       },
       {
         question: 'Jakie etykiety pasują do Zebra ZQ620 Plus?',
@@ -12705,11 +12695,11 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czym różni się ZQ620 Plus od ZQ610 Plus?',
-        answer: 'ZQ620 Plus drukuje etykiety o szerokości do 72 mm (3 cale), ZQ610 Plus do 48 mm (2 cale). ZQ620 Plus jest większa (730 g vs 600 g) ale obsługuje standardowe etykiety wysyłkowe i pokwitowania 3-calowe. Obie mają kolorowy LCD, te same opcje łączności i współdzielą baterie PowerPrecision+. ZQ620 Plus oferuje też opcję druku linerless i posiada certyfikat MIL-STD-810G.',
+        answer: 'ZQ620 Plus drukuje etykiety o szerokości do 72 mm (3 cale), ZQ610 Plus do 48 mm (2 cale). ZQ620 Plus jest większa (730 g vs 600 g) ale obsługuje standardowe etykiety wysyłkowe i pokwitowania 3-calowe. Obie mają kolorowy LCD, te same opcje łączności i współdzielą baterie PowerPrecision+. ZQ620 Plus oferuje też opcję druku linerless.',
       },
       {
         question: 'Czy ZQ620 Plus obsługuje druk linerless?',
-        answer: 'Tak — wariant ZQ62-AUWBE14-00 posiada silikonowy wałek dociskowy do druku etykiet bez podkładu (linerless). Etykiety linerless redukują odpady o ok. 40% i pozwalają zmieścić więcej etykiet na rolce. Warianty z literą A (np. ZQ62-AUFAE14-00) mają standardowy wałek do etykiet z podkładem.',
+        answer: 'Tak — wariant ZQ62-AUWBE14-00 posiada silikonowy wałek dociskowy do druku etykiet bez podkładu (linerless). Etykiety linerless nie mają podkładu, który trzeba wyrzucić po oderwaniu etykiety. Warianty z literą A (np. ZQ62-AUFAE14-00) mają standardowy wałek do etykiet z podkładem.',
       },
       {
         question: 'Czy ZQ620 Plus jest kompatybilna z akcesoriami QLn320?',
@@ -12721,7 +12711,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Czy ZQ620 Plus nadaje się do pracy kuriera?',
-        answer: 'Tak — ZQ620 Plus to idealna drukarka dla kurierów drukujących pokwitowania dostawy (proof of delivery) i etykiety zwrotów. Format 3" pozwala na druk standardowych pokwitowań. IP54 chroni przed deszczem, a temperatura pracy od -20°C umożliwia dostawy zimą. Klips do paska i futerał z paskiem na ramię w akcesoriach.',
+        answer: 'Tak — ZQ620 Plus służy kurierom do drukowania pokwitowań dostawy (proof of delivery) i etykiet zwrotów. Format 3" pozwala na druk standardowych pokwitowań. IP54 chroni przed deszczem, a temperatura pracy od -20°C umożliwia dostawy zimą. Klips do paska i futerał z paskiem na ramię w akcesoriach.',
       },
       {
         question: 'Ile kosztuje eksploatacja ZQ620 Plus miesięcznie?',
@@ -12729,7 +12719,7 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       },
       {
         question: 'Gdzie serwisować mobilne drukarki Zebra w Polsce?',
-        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
+        answer: 'Serwis mobilnych drukarek Zebra w Polsce prowadzi serwis-zebry.pl — partner Zebra. Oferuje naprawę głowic drukujących, wymianę baterii i modułów komunikacyjnych, kalibrację i aktualizację firmware. Dostępna jest naprawa ekspresowa i serwis wysyłkowy w całej Polsce.',
       },
       {
         question: 'Jakie są alternatywy dla Zebra ZQ620 Plus?',
@@ -12739,13 +12729,13 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     editorialReview: {
       ratingValue: 4.6,
       bestRating: 5,
-      reviewBody: 'Zebra ZQ620 Plus to optymalny wybór dla firm potrzebujących mobilnego druku 3-calowego — od pokwitowań kurierskich po etykiety inwentaryzacyjne. Kolorowy wyświetlacz LCD, certyfikat MIL-STD-810G i opcja Wi-Fi 6 zapewniają niezawodność i nowoczesność. Kompatybilność wsteczna z QLn320 ułatwia migrację. Opcja linerless redukuje odpady i zwiększa liczbę etykiet na rolce. Waga 730 g to dobry kompromis między funkcjonalnością 3" a mobilnością.',
+      reviewBody: 'Zebra ZQ620 Plus to mobilna drukarka 3-calowa — od pokwitowań kurierskich po etykiety inwentaryzacyjne. Kolorowy wyświetlacz LCD, IP54 i opcja Wi-Fi 6 ułatwiają pracę w terenie. Kompatybilność wsteczna z QLn320 ułatwia migrację. Opcja linerless redukuje odpady i zwiększa liczbę etykiet na rolce. Waga 730 g to dobry kompromis między funkcjonalnością 3" a mobilnością.',
     },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq620-plus/instrukcja-po-polsku', size: 'Online' },
+      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq620plus/instrukcja-po-polsku', size: 'Online' },
       { name: 'Karta katalogowa ZQ600 Plus (PL)', type: 'datasheet', url: '/datasheets/zq600-series-spec-sheet-pl-pl.pdf', size: '0,5 MB' },
     ],
-    relatedProducts: ['zebra-zq511', 'zebra-zq320-plus', 'zebra-zq610-plus', 'zebra-zq630-plus'],
+    relatedProducts: ['zebra-zq620-plus-hc', 'zebra-zq511', 'zebra-zq320-plus', 'zebra-zq220-plus'],
     createdAt: '2026-02-13',
     sameAs: 'https://www.zebra.com/us/en/products/printers/mobile/zq600-plus-series.html',
   },
@@ -56240,7 +56230,7 @@ Futerał umożliwia drukowanie bez wyjmowania drukarki — otwarta góra zapewni
     specifications: [
       { name: 'Part Number', value: 'P1031365-053' },
       { name: 'Typ', value: 'Kabel RS-232C z DB9' },
-      { name: 'Kompatybilność', value: 'ZQ610, ZQ610 Plus, QLn220, ZQ610 Plus-HC, ZQ620 Plus-HC' },
+      { name: 'Kompatybilność', value: 'ZQ610 Plus, ZQ620 Plus, ZQ630 Plus, ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610, ZQ620, ZQ630, ZQ610 HC, ZQ620 HC, QLn220, QLn320, QLn420, QLn220 HC, QLn320 HC' },
     ],
     applications: ['Integracja z POS', 'Komunikacja RS-232', 'Wagi elektroniczne'],
     compatibleAccessories: [],
@@ -66692,7 +66682,7 @@ Opaski drukują drukarki Zebra ZD510-HC i HC100, termicznie, bez taśmy barwiąc
       { name: 'Opasek w opakowaniu', value: '2100 szt.' },
       { name: 'Chip w kartridżu', value: 'Automatyczna kalibracja; drukarka ustawia zaczernienie i prędkość druku' },
       { name: 'Drukarki', value: 'Zebra ZD510-HC, HC100' },
-      { name: 'Badanie MR', value: 'Uznawane za MR safe (brak metalu)' },
+      { name: 'Rezonans magnetyczny (MR)', value: 'Uznawane za MR safe (brak metalu)' },
       { name: 'Temperatura użytkowania', value: 'Od −40 °C do 60 °C (po założeniu i ok. 24 h od zapięcia)' },
       { name: 'Przechowywanie kartridży', value: 'Od 0 °C do 21 °C, wilgotność względna 35–50%, bez kondensacji' },
       { name: 'Lateks i BPA', value: 'Nie zawiera' },

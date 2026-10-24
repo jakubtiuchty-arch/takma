@@ -181,7 +181,7 @@ const zq620PlusHc: Product = {
   seoDescription: 'Mobilna drukarka Zebra ZQ620 Plus-HC dla szpitali: druk termiczny 72 mm, Wi-Fi 6 i Bluetooth 5.3, obudowa odporna na środki dezynfekcyjne, IP54. Drukarka szpitalna Zebra ZQ620 Plus-HC, drukarka etykiet ZQ620 Plus-HC Zebra. PN: ZQ62-HUXAE04-00.',
   description: `Zebra ZQ620 Plus-HC to mobilna drukarka termiczna dla ochrony zdrowia z szerokością druku 72 mm (3 cale). Służy do oznaczania worków z krwią i pokarmu kobiecego w punkcie opieki. Drukarka obsługuje również mobilne pobieranie próbek. Zastępuje model ZQ620 Healthcare.
 
-Przyjmuje materiał o szerokości 25–79 mm, a średnica rolki może wynosić do 66 mm. Drukuje w rozdzielczości 203 dpi z prędkością do 115 mm/s. Obsługuje etykiety wycinane, kartoniki i papier paragonowy.
+Przyjmuje materiał o szerokości 25–79 mm, a średnica rolki może wynosić do 66 mm. Rozdzielczość druku to 203 dpi, a prędkość sięga 115 mm/s. Obsługuje etykiety wycinane, kartoniki i papier paragonowy.
 
 Oferowana konfiguracja ma moduł Wi-Fi 6 (802.11ax) i jednocześnie działający Bluetooth 5.3. Moduł obsługuje szybki roaming 802.11r i zabezpieczenia WPA3. Po wstawieniu drukarki do stacji Ethernet dział IT może zdalnie aktualizować jej oprogramowanie i monitorować stan baterii.
 
@@ -295,7 +295,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
   faq: [
     {
       question: 'Które akcesoria do ZQ620 Plus pasują do wersji HC?',
-      answer: 'Ładowarki baterii 1-, 3- i 6-gniazdowe, przewody USB i RS-232 oraz zestawy zasilania bez baterii są wspólne dla [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) i ZQ620 Plus-HC. Baterię, zasilacz, stację Ethernet, pasek do noszenia na ramieniu oraz klipsy wersja HC ma własne, oznaczone jako Healthcare. Do ZQ620 Plus-HC wybieraj baterię i zasilacz w wersji Healthcare.',
+      answer: 'Ładowarki baterii 1-, 3- i 6-gniazdowe, przewody USB i RS-232 oraz zestawy zasilania bez baterii są wspólne dla [Zebra ZQ620 Plus](/produkt/zebra-zq620-plus) i ZQ620 Plus-HC. Baterię, zasilacz sieciowy, pasek do noszenia na ramieniu oraz klipsy wersja HC ma własne, oznaczone jako Healthcare. Stacja Ethernet pasuje w wersji standardowej i w wersji z zasilaczem IEC 60601. Do ZQ620 Plus-HC przeznaczone są bateria i zasilacz w wersji Healthcare.',
     },
     {
       question: 'Czy ZQ620 Plus-HC można włączyć do sieci szpitala i zarządzać nią zdalnie?',
@@ -311,7 +311,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     },
     {
       question: 'Jakie materiały przyjmuje ZQ620 Plus-HC?',
-      answer: 'Szerokość materiału wynosi od 25 do 79 mm, a długość etykiety od 12,7 do 813 mm. Średnica rolki może mieć do 66 mm. Zebra oferuje do tej serii etykiety IQ Color, które automatycznie oznaczają próbki pilne (STAT), oraz standardowe etykiety na próbki z papieru i polipropylenu.',
+      answer: 'Szerokość materiału wynosi od 25 do 79 mm, a długość etykiety od 12,7 do 813 mm. Średnica rolki może mieć do 66 mm. Zebra oferuje do tej serii etykiety IQ Color, które automatyzują oznaczanie próbek pilnych (STAT), oraz standardowe etykiety na próbki z papieru i polipropylenu.',
     },
     {
       question: 'Ile trwa gwarancja na ZQ620 Plus-HC?',
@@ -370,10 +370,10 @@ const hcAcAdapter: Product = {
   id: 'zebra-zasilacz-iec60601-zq6-hc-p1065668-010',
   slug: 'zebra-zasilacz-iec60601-zq6-hc-p1065668-010',
   name: 'Zasilacz Zebra IEC 60601 do ZQ610 Plus-HC / ZQ620 Plus-HC, EU — P1065668-010',
-  shortDescription: 'Zasilacz Zebra P1065668-010 zgodny z normą IEC 60601 ładuje baterię w drukarce ZQ610 Plus-HC lub ZQ620 Plus-HC. Wersja z przewodem sieciowym EU.',
+  shortDescription: 'Zasilacz Zebra P1065668-010 zgodny z normą IEC 60601 ładuje baterię w drukarce ZQ610 Plus-HC lub ZQ620 Plus-HC. Wersja z wtyczką EU.',
   description: `Zasilacz Zebra P1065668-010 podłącza mobilną drukarkę w wersji dla ochrony zdrowia do gniazda sieciowego i ładuje baterię w drukarce. Spełnia normę IEC 60601 i jest przeznaczony do stosowania w salach pacjentów. W czasie ładowania drukarka może drukować etykiety.
 
-Zasilacz pasuje do ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 HC, ZQ620 HC, QLn220 HC i QLn320 HC. Ma moc 30 W, a w zestawie jest przewód sieciowy z wtyczką EU. Drukarka i bateria są sprzedawane osobno.`,
+Zasilacz pasuje do ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 HC, ZQ620 HC, QLn220 HC i QLn320 HC. Numer P1065668-010 oznacza wersję z wtyczką EU. Drukarka i bateria są sprzedawane osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
   manufacturerId: 'zebra',
@@ -388,8 +388,7 @@ Zasilacz pasuje do ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 HC, ZQ620 HC, QLn220 HC i
     { name: 'Part Number', value: 'P1065668-010' },
     { name: 'Typ', value: 'Zasilacz sieciowy AC dla ochrony zdrowia' },
     { name: 'Norma', value: 'IEC 60601 (do stosowania w salach pacjentów)' },
-    { name: 'Moc', value: '30 W' },
-    { name: 'Przewód sieciowy', value: 'W zestawie, wtyczka EU (typ C)' },
+    { name: 'Wersja regionalna', value: 'EU' },
     { name: 'Kompatybilność', value: 'Zebra ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 HC, ZQ620 HC, QLn220 HC, QLn320 HC' },
   ],
   applications: ['Ładowanie baterii w drukarce', 'Zasilanie drukarki w sali pacjenta'],
@@ -507,7 +506,7 @@ const hcBatteryEliminatorFront: Product = {
   id: 'zebra-zasilanie-sieciowe-hc-chg-mpp-bepsac1-2',
   slug: 'zebra-zasilanie-sieciowe-hc-chg-mpp-bepsac1-2',
   name: 'Zasilanie sieciowe bez baterii Zebra IEC 60601, przewód do przodu — CHG-MPP-BEPSAC1-2',
-  shortDescription: 'Zestaw Zebra CHG-MPP-BEPSAC1-2 zasila drukarkę ZQ610 Plus-HC, ZQ620 Plus-HC lub ZQ600 Plus z sieci zamiast z baterii. Zasilacz zgodny z IEC 60601, przewód wychodzi do przodu.',
+  shortDescription: 'Zestaw Zebra CHG-MPP-BEPSAC1-2 zasila drukarkę ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 Plus lub ZQ620 Plus z sieci zamiast z baterii. Zasilacz zgodny z IEC 60601, przewód wychodzi do przodu.',
   description: `Zestaw Zebra CHG-MPP-BEPSAC1-2 zasila mobilną drukarkę bezpośrednio z sieci. Atrapę baterii wkłada się do drukarki w miejsce baterii, a zasilacz łączy ją z gniazdem sieciowym. Zasilacz spełnia normę IEC 60601 i jest przeznaczony do sal pacjentów. Zestaw służy do drukarek na wózkach medycznych i na biurkach, gdzie bateria nie jest potrzebna.
 
 W tej wersji przewód wychodzi w stronę przodu drukarki. Zestaw pasuje do ZQ610 Plus-HC, ZQ620 Plus-HC, ZQ610 Plus i ZQ620 Plus, a także do ZQ610, ZQ620, ZQ610 HC, ZQ620 HC, ZQ511, ZQ521 i ZQ521R. Drukarka widoczna na zdjęciu jest sprzedawana osobno.
