@@ -1,0 +1,55 @@
+'use client'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import shared from './SunmiD3Story.module.css'
+import mobile from './SunmiV3Story.module.css'
+import s from './SunmiV3FamilyStory.module.css'
+
+const base = '/images/sunmi-v3-family/'
+const scenes = [
+  { label: 'Restauracja', image: 'p7-2.jpg', title: 'Zamówienia bez odchodzenia od stolika', text: 'Przyjmij zamówienie w zgodnej aplikacji i wydrukuj potwierdzenie przy gościu. Terminal możesz zabrać ze sobą na salę.' },
+  { label: 'Na wynos', image: 'p7-4.jpg', title: 'Potwierdzenia i etykiety do zamówień', text: 'Drukuj bony i zgodne etykiety termiczne, na przykład do oznaczania kubków i opakowań. Funkcje wydruku zależą od programu sprzedaży.' },
+  { label: 'Sklep', image: 'p7-5.jpg', title: 'Obsługa klienta na sali sprzedaży', text: 'Sprawdź produkt, odczytaj kod i zarejestruj sprzedaż lub przesunięcie towaru. Sposób odczytu kodów zależy od wybranej wersji terminala.' },
+]
+function Photo({ src, alt, contain = false }: { src: string; alt: string; contain?: boolean }) {
+  return <Image src={src} alt={alt} fill sizes="(max-width: 640px) 100vw, 1200px" className={contain ? mobile.contain : mobile.cover} />
+}
+export default function SunmiV3FamilyStory({ high }: { high: boolean }) {
+  const [print, setPrint] = useState(0)
+  const [scene, setScene] = useState(0)
+  const model = high ? 'V3H' : 'V3'
+  const slug = high ? 'sunmi-v3h' : 'sunmi-v3'
+  const printViews = [
+    { label: 'Potwierdzenia', image: 'p7-4.jpg', title: 'Drukuj bez osobnej drukarki', text: 'Wbudowana drukarka termiczna przyjmuje papier 58 mm i rolki o średnicy do 50 mm. Drukuje z prędkością do 80 mm/s.' },
+    { label: 'Etykiety', image: 'p6-3-en.jpg', title: 'Oznaczaj produkty i zamówienia', text: 'Urządzenie obsługuje zgodne etykiety termiczne, w tym z nadrukiem i czarnym znacznikiem. Typ materiału i ustawienia dobierz do aplikacji.' },
+  ]
+  return <div className={`${shared.story} ${mobile.story} ${s.family}`}>
+    <nav className={shared.nav} aria-label={`Poznaj SUNMI ${model}`}><span>SUNMI <b>{model}</b></span><div><a href="#v3-family-print">Drukarka</a><a href="#v3-family-versions">Wersje</a><a href="#v3-family-mobile">Praca mobilna</a><a href="#warianty">Wybierz {model} ↗</a></div></nav>
+    <section className={`${mobile.hero} ${s.hero}`}><div className={mobile.heroCopy}><p className={shared.eyebrow}>MOBILNY TERMINAL Z DRUKARKĄ 58 MM</p><h2>SUNMI<br /><span>{model}</span></h2><h3>{high ? <>Obsługuj zamówienia<br />i loguj się odciskiem palca.</> : <>Przyjmuj zamówienia<br />i drukuj przy kliencie.</>}</h3><p>{high ? 'Terminal z ekranem 6,75″, pamięcią 4/64 GB i usługami Google. Czytnik linii papilarnych ułatwia dostęp do zgodnych aplikacji.' : 'Terminal z ekranem 6,75″ i pamięcią 3/32 GB. Do obsługi klientów, drukowania potwierdzeń i pracy z towarem.'}</p><a href="#v3-family-print">Poznaj możliwości <span>↓</span></a></div><div className={`${mobile.heroProduct} ${s.heroProduct}`}><Photo src={`/images/products/${slug}-front.webp`} alt={`SUNMI ${model} — terminal mobilny z drukarką 58 mm`} contain /></div><span className={mobile.heroNote}>{high ? 'V3H · 4 / 64 GB · Android 13' : 'V3 · 3 / 32 GB · Android 13'}</span></section>
+    <div className={shared.facts}>{[['6,75″','Dotykowy ekran HD+'],['58 mm','Szerokość papieru'],[high?'4 / 64 GB':'3 / 32 GB','RAM i pamięć'],[high?'Odcisk palca':'2 × Nano SIM',high?'Czytnik w obu wersjach':'Dwa gniazda kart SIM']].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>
+    <section id="v3-family-print" className={mobile.print}><div className={shared.head}><p className={shared.eyebrow}>WBUDOWANA DRUKARKA TERMICZNA</p><h2>Potwierdzenia i etykiety<br /><span>bez wracania do kasy.</span></h2><p>Wydruk przygotujesz bezpośrednio z terminala, w programie obsługującym daną funkcję.</p></div><div className={mobile.printLayout}><div className={`${mobile.printPhoto} ${s.printPhoto} ${print === 1 ? s.labels : ''}`}><Photo src={base+printViews[print].image} alt={`SUNMI ${model} — ${printViews[print].label.toLowerCase()}`} contain={print===1} /></div><div className={mobile.printCopy}><div className={mobile.tabs} role="tablist" aria-label="Wydruki rodziny V3">{printViews.map((item,i)=><button key={item.label} role="tab" id={`v3-family-print-tab-${i}`} aria-controls="v3-family-print-panel" aria-selected={print===i} onClick={()=>setPrint(i)} className={print===i?mobile.selected:''}>{item.label}</button>)}</div><div role="tabpanel" id="v3-family-print-panel" aria-labelledby={`v3-family-print-tab-${print}`}><h3>{printViews[print].title}</h3><p>{printViews[print].text}</p></div><div className={mobile.printStats}><div><strong>80<small> mm/s</small></strong><span>Maksymalna prędkość</span></div><div><strong>50<small> mm</small></strong><span>Maksymalna średnica rolki</span></div></div><p className={mobile.small}>Wydruki są niefiskalne. Terminal nie zastępuje kasy ani drukarki fiskalnej.</p></div></div></section>
+    <section className={mobile.scenes}><div className={shared.head}><p className={shared.eyebrow}>ZASTOSOWANIA SUNMI {model}</p><h2>Do gastronomii<br /><span>i sprzedaży mobilnej.</span></h2></div><div className={mobile.sceneTabs} role="tablist" aria-label="Zastosowania terminala">{scenes.map((item,i)=><button key={item.label} role="tab" id={`v3-family-scene-tab-${i}`} aria-controls="v3-family-scene-panel" aria-selected={scene===i} onClick={()=>setScene(i)} className={scene===i?mobile.selected:''}>{item.label}</button>)}</div><div className={mobile.scenePanel} role="tabpanel" id="v3-family-scene-panel" aria-labelledby={`v3-family-scene-tab-${scene}`}><div className={mobile.scenePhoto}><Photo src={base+scenes[scene].image} alt={`Rodzina SUNMI V3 — ${scenes[scene].label.toLowerCase()}`} /></div><div className={mobile.sceneCopy}><span>0{scene+1} / 03</span><h3>{scenes[scene].title}</h3><p>{scenes[scene].text}</p><p className={mobile.small}>Program i licencję dobierasz osobno.</p></div></div></section>
+    <section id="v3-family-versions" className={s.versions}><div className={shared.head}><p className={shared.eyebrow}>WYPOSAŻENIE ZALEŻY OD NUMERU PN</p><h2>Wybierz wersję<br /><span>do swojej aplikacji.</span></h2><p>{high ? 'Obie oferowane wersje V3H mają usługi Google, NFC i czytnik linii papilarnych. Różnią się wyposażeniem do odczytu kodów.' : 'V3 występuje z usługami Google lub bez nich. NFC, aparat i osobny moduł skanera zależą od wybranej wersji.'}</p></div><div className={s.versionGrid}>{(high ? [
+      ['P06100033','Odczyt kodów aparatem','Bez osobnego skanera. Tylny aparat 8 MP może odczytywać kody w zgodnej aplikacji.'],
+      ['P06100047','Osobny skaner 1D/2D','Moduł do odczytu kodów 1D i 2D oraz przedni aparat 2 MP.'],
+    ] : [
+      ['P06100007','Podstawowa wersja V3','Bez usług Google, NFC i osobnego skanera. Tylny aparat 5 MP.'],
+      ['P06100035','NFC bez usług Google','Bez osobnego skanera. Tylny aparat 8 MP i NFC.'],
+      ['P06100009','Usługi Google i NFC','Bez osobnego skanera. Tylny aparat 8 MP i usługi Google.'],
+      ['P06100077','Skaner 1D/2D i GMS','Osobny moduł skanujący, NFC, tylny aparat 8 MP i usługi Google.'],
+    ]).map(([pn,title,text])=><div key={pn}><span>{pn}</span><h3>{title}</h3><p>{text}</p><a href="#warianty">Sprawdź cenę i dostępność ↑</a></div>)}</div></section>
+    {high && <section className={s.fingerprint}><div><p className={shared.eyebrow}>CZYTNIK LINII PAPILARNYCH W V3H</p><h2>Logowanie<br /><span>odciskiem palca.</span></h2><p>Pracownik może odblokować urządzenie i zalogować się do zgodnej aplikacji bez wpisywania hasła. Czytnik mają obie oferowane wersje V3H.</p></div><div className={s.fingerprintImage}><Photo src={base+'p6-2-en-n.jpg'} alt="Czytnik linii papilarnych w rodzinie SUNMI V3H" contain /></div></section>}
+    <section id="v3-family-mobile" className={s.mobile}><div className={shared.head}><p className={shared.eyebrow}>EKRAN I OBUDOWA</p><h2>Terminal do pracy<br /><span>przy kliencie.</span></h2><p>Ekran IPS 6,75″ ma rozdzielczość 720 × 1600 px i jasność 420 nitów. Smukła obudowa z zaokrąglonymi krawędziami mieści się w dłoni.</p></div><div className={s.handImage}><Photo src={base+'p3-1.jpg'} alt="Terminal z rodziny SUNMI V3 trzymany w dłoni" /></div></section>
+    <section className={s.battery}><div className={s.batteryImage}><Photo src={base+'p9-3.jpg'} alt="Zarządzanie baterią w rodzinie SUNMI V3 — ilustracja" contain /></div><div><p className={shared.eyebrow}>WYMIENNA BATERIA</p><h2>Przygotuj zapas<br /><span>na dalszą pracę.</span></h2><strong>3100 <small>mAh</small></strong><p>Rozładowaną baterię możesz zastąpić naładowaną. Dodatkową baterię i stację ładującą kupujesz osobno.</p><div className={s.accessoryLinks}><Link href="/produkt/sunmi-x09050774">Zobacz baterię ↗</Link><Link href="/produkt/sunmi-c14004112">Zobacz stację ładującą ↗</Link><Link href="/produkt/sunmi-c20000086">Dobierz pasek na dłoń ↗</Link></div></div></section>
+    <section className={mobile.system}><div><p className={shared.eyebrow}>SYSTEM I ŁĄCZNOŚĆ</p><h2>Android 13<br /><span>do aplikacji firmowych.</span></h2><p>{high ? 'Ośmiordzeniowy procesor Qualcomm, pamięć 4/64 GB i SUNMI OS z usługami Google GMS EDLA. Dobierz zgodny program do swojej branży.' : 'Sześciordzeniowy procesor Qualcomm i pamięć 3/32 GB. Dobierz wersję systemu z usługami Google lub bez nich do wymagań programu.'}</p></div><div className={mobile.connections}>{[
+      ['4G LTE',high?'Gniazdo Nano SIM i obsługa eSIM. Potrzebujesz usługi zgodnego operatora.':'Dwa gniazda Nano SIM. Potrzebujesz kart SIM i usług operatora.'],
+      ['Wi-Fi 5','Połączenie z siecią w sklepie, restauracji lub punkcie usługowym.'],
+      ['NFC',high?'Czytnik w obu wersjach. Płatności SoftPOS wymagają zgodnej aplikacji i operatora płatności.':'Czytnik w P06100009, P06100035 i P06100077. Płatności wymagają zgodnej aplikacji i operatora płatności.'],
+      ['Bluetooth 5.0 · USB-C','Łączność ze zgodnymi akcesoriami i ładowanie terminala.'],
+    ].map(([title,text])=><div key={title}><h3>{title}</h3><p>{text}</p></div>)}</div></section>
+    <section className={s.comparison}><div><p className={shared.eyebrow}>POTRZEBUJESZ PAPIERU 80 MM?</p><h2>Poznaj V3 PLUS.</h2><p>V3 i V3H drukują na papierze 58 mm. V3 PLUS obsługuje także papier 80 mm, ma Androida 14 i Wi-Fi 6E.</p></div><Link href="/produkt/sunmi-v3-plus#opis">Zobacz SUNMI V3 PLUS ↗</Link></section>
+    <section className={`${shared.final} ${mobile.final}`}><p className={shared.eyebrow}>DOBIERZ WYPOSAŻENIE DO SWOJEJ FIRMY</p><h2>SUNMI {model}.<br /><span>Wybierz odpowiednią wersję.</span></h2><p>Sprawdź numer PN, wyposażenie oraz zgodność z programem przed wyborem terminala. Pomożemy dobrać urządzenie i akcesoria.</p><div><a href="#warianty">Zobacz wersje i ceny ↑</a><Link href={high?'/produkt/sunmi-v3#opis':'/produkt/sunmi-v3h#opis'}>Zobacz także {high?'V3':'V3H'} ↗</Link></div></section>
+  </div>
+}
