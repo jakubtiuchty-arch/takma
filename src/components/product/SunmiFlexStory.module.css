@@ -2,3 +2,7 @@
 @media(max-width:640px){.section,.dark{padding:52px 22px}.heroCopy{padding:42px 22px 0}.hero h2{font-size:57px!important}.hero h3{font-size:25px}.hero p:not(:first-child){font-size:14px}.heroPhoto{aspect-ratio:1.6}.heroPhoto img{object-fit:cover}.tabs{gap:8px}.tabs button{padding:10px 15px;font-size:12px}.caption,.specs{grid-template-columns:1fr;gap:20px}.caption h3{font-size:25px}.specs{padding-top:30px}.specs h3{font-size:36px}.grid,.modules{grid-template-columns:1fr;gap:35px}.video,.film>video{aspect-ratio:1.5}.video button{bottom:12px;right:12px;padding:8px 12px}.fullFilm{bottom:58px}.heroPhoto img{object-position:center}.note{font-size:10px!important}}
 @media(min-width:641px){.heroCopy{padding-top:32px}.hero h2{font-size:clamp(58px,6vw,84px)!important}.hero h3{font-size:29px;margin-top:14px}.hero p:not(:first-child){margin:14px auto;font-size:15px}.heroPhoto{margin-top:8px}}
 .paymentPhoto{position:relative;max-width:850px;aspect-ratio:1.52;margin:38px auto 0;overflow:hidden;border-radius:8%;clip-path:inset(1px round 8%)}.paymentPhoto img{object-fit:cover}
+
+/* Bring the product group closer while retaining the full screens and bases. */
+.heroPhoto{overflow:hidden}.heroPhoto img{transform:scale(1.3);transform-origin:50% 80%}
+@media(max-width:640px){.heroPhoto img{transform:scale(1.12)}}
