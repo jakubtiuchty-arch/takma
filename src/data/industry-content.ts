@@ -1483,244 +1483,177 @@ export const industryPages: IndustryPage[] = [
       { title: 'Katalog produktów TAKMA', href: '/katalog' },
     ],
   },
+  // Przepisana 25.10.2026: fakty z kart katalogowych Zebra HC (ZD411/ZD421/ZD611/ZD621/ZD510-HC, ZQ6 HC),
+  // karty Z-Band Direct i kart produktów; bez cen, bez deklaracji zgodności z FMD/GMP/GDP i bez nazw programów aptecznych.
   {
     slug: 'drukarki-etykiet-apteka',
     name: 'Drukarki etykiet do apteki i farmacji',
-    seoTitle: 'Drukarka etykiet do apteki i farmacji — FMD, GS1 DataMatrix',
-    seoDescription: 'Drukarki etykiet do aptek i farmacji — serializacja FMD, GS1 DataMatrix, opaski pacjenta, etykiety laboratoryjne. Zebra od 621 zł netto. Zgodność GMP/GDP.',
+    seoTitle: 'Drukarka etykiet do apteki, szpitala i laboratorium — Zebra',
+    seoDescription: 'Drukarki etykiet Zebra do apteki, szpitala i laboratorium: etykiety leków na receptę, etykiety na probówki i worki, opaski dla pacjentów. Wersje HC z obudową odporną na środki dezynfekcyjne.',
     heroHeadline: 'Drukarki etykiet do apteki, szpitala i farmacji',
-    heroSubtext: 'Profesjonalne drukarki etykiet Zebra do aptek, szpitali i laboratoriów. Serializacja leków zgodna z FMD, druk GS1 DataMatrix, opaski identyfikacyjne pacjenta, etykiety laboratoryjne. Od 621 zł netto — zgodność z GMP, GDP i wymogami sanitarnymi.',
+    heroSubtext: 'Drukarki Zebra do etykiet leków, etykiet na probówki i próbki oraz opasek identyfikacyjnych dla pacjentów. Wersje HC dla placówek medycznych mają obudowę z tworzyw odpornych na środki dezynfekcyjne.',
     tags: ['healthcare'] as ProductTag[],
-    longDescription: `<p>Apteki, szpitale i laboratoria wymagają drukarek o najwyższej precyzji i zgodności regulacyjnej. Drukarki Zebra z oferty TAKMA (od 621 zł netto) spełniają normy FMD, GMP i GDP — od etykiet recept po serializację leków i opaski pacjenta.</p>
+    longDescription: `<p>Apteka, szpital i laboratorium drukują różne oznaczenia: etykiety leków wydawanych na receptę, etykiety na probówki i próbki, etykiety na worki z krwią i płynami infuzyjnymi oraz opaski identyfikacyjne dla pacjentów. Wybór drukarki zależy od rodzaju etykiety, miejsca pracy i sposobu czyszczenia obudowy.</p>
 
-<h3>Kluczowe wymagania farmacji</h3>
+<h3>Cechy drukarek Zebra w wersji HC</h3>
 <ul>
-<li><strong>Serializacja FMD</strong> — druk GS1 DataMatrix z unikalnym numerem seryjnym, GTIN, datą ważności i numerem partii</li>
-<li><strong>Precyzja do 600 dpi</strong> — czytelność kodów 2D na etykietach o wymiarach 10x10 mm i mniejszych</li>
-<li><strong>Opaski identyfikacyjne pacjenta</strong> — Direct Thermal, hipoalergiczne, odporne na dezynfekcję</li>
-<li><strong>Etykiety laboratoryjne</strong> — odporne na kriogenię (-196°C), autoklaw i odczynniki chemiczne</li>
-<li><strong>Integracja z systemami aptecznymi</strong> — Apteo, Kamsoft, Meddis, HIS szpitalny przez ZPL II i Ethernet</li>
+<li><strong>Obudowa do częstej dezynfekcji</strong> — tworzywa przystosowane do środków dezynfekcyjnych; w ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC przyciski są uszczelnione.</li>
+<li><strong>Odporność na promieniowanie UV</strong> — obudowa drukarek biurkowych HC pozwala stosować procedury czyszczenia światłem UV.</li>
+<li><strong>Zasilacz zgodny z IEC 60601-1</strong> — w drukarkach biurkowych HC norma dotyczy zasilacza.</li>
+<li><strong>Biała obudowa</strong> — kolorystyka przyjęta dla urządzeń w placówkach medycznych.</li>
 </ul>
-
-<p>Do aptek detalicznych rekomendujemy <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (od 621 zł), do aptek szpitalnych <a href="/produkt/zebra-zd421d">ZD421d</a> i <a href="/produkt/zebra-zd621d">ZD621d</a>, a do produkcji farmaceutycznej GMP — przemysłowe <a href="/produkt/zebra-zt411">ZT411</a> i <a href="/produkt/zebra-zt610">ZT610</a>.</p>
 
 <p>Drukarki Zebra w wersji HC do szpitali, z obudową z tworzyw odpornych na środki dezynfekcyjne, są w kategorii <a href="/drukarki-dla-sluzby-zdrowia">drukarki dla służby zdrowia</a>. Drukarka opasek dla pacjentów <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski Z-Band z kartridżów.</p>`,
     definition: {
-      heading: 'Czym jest drukarka etykiet do apteki i farmacji?',
-      content: `<p>Drukarka etykiet do apteki to urządzenie klasy medycznej (healthcare grade printer) umożliwiające druk:</p>
+      heading: 'Czym jest drukarka etykiet do apteki i szpitala?',
+      content: `<p>To drukarka, która drukuje kody kreskowe, tekst i grafikę na etykietach oraz opaskach używanych w aptece i placówce medycznej. Dane do druku wysyła system apteczny, szpitalny lub laboratoryjny przez USB, sieć Ethernet, Wi-Fi albo Bluetooth. Dostępne interfejsy zależą od modelu i numeru PN.</p>
+<p>Drukarki Zebra w wersji HC służą do druku:</p>
 <ul>
-<li><strong>Etykiet recept i produktów leczniczych</strong> — zgodność z FMD (Falsified Medicines Directive), unikalny numer seryjny, data ważności, numer LOT w formacie GS1 DataMatrix</li>
-<li><strong>Opasek identyfikacyjnych pacjenta</strong> — opaski Direct Thermal z kodem kreskowym, imieniem, nazwiskiem, numerem PESEL, grupą krwi i ostrzeżeniami alergicznymi</li>
-<li><strong>Etykiet laboratoryjnych</strong> — etykiety na probówki, pojemniki na próbki, szkiełka mikroskopowe, krioprobówki (-196°C) — odporne na azot ciekły, autoklaw i odczynniki chemiczne</li>
-<li><strong>Etykiet substancji niebezpiecznych</strong> — etykiety GHS/CLP dla odczynników chemicznych, cytostatyków, substancji radioaktywnych</li>
-<li><strong>Etykiet zgodnych z GMP/GDP</strong> — znakowanie surowców farmaceutycznych, półproduktów, produktów gotowych w procesie zgodnym z Good Manufacturing Practice i Good Distribution Practice</li>
-</ul>
-<p>W odróżnieniu od drukarek ogólnego przeznaczenia, modele healthcare charakteryzują się:</p>
-<ul>
-<li><strong>Precyzją druku do 600 dpi</strong> — niezbędną do czytelności GS1 DataMatrix o wymiarach 10×10 mm i mniejszych</li>
-<li><strong>Zgodnością z protokołami HL7, FHIR, ASTM</strong> — integracja z systemami HIS (Hospital Information System), LIS (Laboratory Information System), Apteo, Kamsoft, Meddis</li>
-<li><strong>Funkcją weryfikacji druku</strong> — wbudowane skanery Visual Verify potwierdzają czytelność każdego wydrukowanego kodu 2D (krytyczne dla FMD)</li>
-<li><strong>Materiałami medycznymi</strong> — etykiety i opaski certyfikowane do użytku medycznego, wolne od lateksu, hipoalergiczne, odporne na dezynfekcję alkoholem</li>
+<li><strong>Etykiet leków na receptę</strong> — drukarki biurkowe ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC.</li>
+<li><strong>Etykiet na probówki i próbki</strong> — drukarki biurkowe HC na stanowisku pobrań oraz drukarki mobilne ZQ610 Plus-HC i ZQ620 Plus-HC przy łóżku pacjenta.</li>
+<li><strong>Etykiet na worki z krwią i płynami infuzyjnymi</strong> — drukarki 4-calowe ZD421-HC i ZD621-HC.</li>
+<li><strong>Opasek identyfikacyjnych dla pacjentów</strong> — ZD510-HC z kartridżami Z-Band oraz drukarki biurkowe HC z rolki opasek.</li>
+<li><strong>Etykiet w banku krwi i etykiet na pokarm kobiecy</strong> — drukarki mobilne ZQ610 Plus-HC i ZQ620 Plus-HC.</li>
+<li><strong>Oznaczeń dokumentacji pacjenta i wyposażenia</strong> — drukarki biurkowe ZD411-HC i ZD611-HC.</li>
 </ul>
 
-<h3>Dyrektywa FMD i serializacja leków</h3>
-<p>Od 9 lutego 2019 roku każde opakowanie leku wydawanego na receptę w Unii Europejskiej musi posiadać unikalny numer seryjny zakodowany w GS1 DataMatrix oraz zabezpieczenie anti-tamper. System EMVS (European Medicines Verification System) weryfikuje każde opakowanie przed wydaniem pacjentowi — apteka musi zeskanować kod 2D i potwierdzić autentyczność w bazie centralnej.</p>
-<p>Drukarki Zebra ZD421d i ZD621d umożliwiają <strong>generowanie wtórnych etykiet FMD</strong> (np. przy przesyłkach międzyaptecznych, dzieleniu opakowań zbiorczych, reeksporcie) — etykieta zawiera GS1 DataMatrix z zakodowanym GTIN, numerem seryjnym, datą ważności i numerem partii zgodnie z formatem określonym w Delegowanym Rozporządzeniu 2016/161.</p>
-
-<h3>Porównanie drukarek wg zastosowania w farmacji</h3>
+<h3>Dobór drukarki do miejsca pracy</h3>
 <table>
 <thead>
-<tr><th>Typ apteki/laboratorium</th><th>Główne zastosowanie</th><th>Rekomendowana drukarka</th><th>Cena od (netto)</th></tr>
+<tr><th>Miejsce pracy</th><th>Zadanie</th><th>Drukarka</th></tr>
 </thead>
 <tbody>
-<tr><td>Apteka ogólnodostępna (retail)</td><td>Etykiety recepty, cenówki OTC</td><td><a href="/produkt/zebra-zd220d">Zebra ZD220d</a></td><td>621 zł</td></tr>
-<tr><td>Apteka sieciowa</td><td>Etykiety recepty, serializacja FMD wtórna, inwentaryzacja</td><td><a href="/produkt/zebra-zd421d">Zebra ZD421d</a></td><td>1 330 zł</td></tr>
-<tr><td>Apteka szpitalna</td><td>Opaski pacjenta, etykiety leków jednostkowych, cytostatyki</td><td><a href="/produkt/zebra-zd621d">Zebra ZD621d</a></td><td>1 829 zł</td></tr>
-<tr><td>Laboratorium diagnostyczne</td><td>Etykiety na probówki, pojemniki, szkiełka</td><td><a href="/produkt/zebra-zd421t">Zebra ZD421t</a></td><td>1 638 zł</td></tr>
-<tr><td>Laboratorium badawcze</td><td>Krioprobówki, etykiety autoklaw, odczynniki</td><td><a href="/produkt/zebra-zd621t">Zebra ZD621t</a></td><td>2 048 zł</td></tr>
-<tr><td>Produkcja farmaceutyczna (GMP)</td><td>Etykiety pierwotne i wtórne, serializacja zgodna FMD</td><td><a href="/produkt/zebra-zt411">Zebra ZT411</a></td><td>5 132 zł</td></tr>
-<tr><td>Hurtownia farmaceutyczna</td><td>Etykiety wysyłkowe GDP, etykiety paletowe SSCC</td><td><a href="/produkt/zebra-zt610">Zebra ZT610</a></td><td>10 432 zł</td></tr>
+<tr><td>Apteka<br>ogólnodostępna</td><td>Etykiety leków, oznaczenia półek</td><td>Termiczna drukarka biurkowa ZD411d (2") lub ZD421d (4")</td></tr>
+<tr><td>Apteka<br>szpitalna</td><td>Etykiety leków na receptę</td><td><a href="/produkt/zebra-zd411-hc">ZD411-HC</a>, <a href="/produkt/zebra-zd421-hc">ZD421-HC</a>, <a href="/produkt/zebra-zd621-hc">ZD621-HC</a></td></tr>
+<tr><td>Izba przyjęć,<br>rejestracja</td><td>Opaski dla pacjentów</td><td><a href="/produkt/zebra-zd510-hc">ZD510-HC</a> z kartridżami Z-Band</td></tr>
+<tr><td>Punkt pobrań,<br>laboratorium</td><td>Etykiety na probówki i próbki</td><td><a href="/produkt/zebra-zd411-hc">ZD411-HC</a>, <a href="/produkt/zebra-zd611-hc">ZD611-HC</a>; przy łóżku pacjenta <a href="/produkt/zebra-zq610-plus-hc">ZQ610 Plus-HC</a></td></tr>
+<tr><td>Oddział</td><td>Etykiety na worki z krwią i płynami infuzyjnymi</td><td><a href="/produkt/zebra-zd421-hc">ZD421-HC</a>, <a href="/produkt/zebra-zd621-hc">ZD621-HC</a></td></tr>
+<tr><td>Bank krwi,<br>oddział<br>położniczy</td><td>Etykiety w banku krwi, etykiety na pokarm kobiecy</td><td>Mobilne <a href="/produkt/zebra-zq610-plus-hc">ZQ610 Plus-HC</a>, <a href="/produkt/zebra-zq620-plus-hc">ZQ620 Plus-HC</a></td></tr>
+<tr><td>Laboratorium,<br>magazyn<br>apteki</td><td>Etykiety drukowane z taśmą barwiącą</td><td>Termotransferowa ZD421t lub ZD621t</td></tr>
 </tbody>
 </table>`
     },
     buyingGuide: {
-      heading: 'Jak wybrać drukarkę etykiet do apteki? Przewodnik zakupowy',
+      heading: 'Jak wybrać drukarkę etykiet do apteki lub szpitala?',
       items: [
-        'Określ główne zastosowanie — apteka ogólnodostępna potrzebuje prostej drukarki do etykiet recept i cenówek OTC (ZD220d za 621 zł wystarczy); apteka szpitalna wymaga precyzji druku dla opasek pacjenta i etykiet leków jednostkowych (ZD621d za 1 829 zł); laboratorium musi drukować etykiety odporne na chemikalia i temperatury ekstremalne (ZD421t lub ZD621t)',
-        'Sprawdź wymagania serializacji FMD — jeśli generujesz wtórne etykiety FMD (przesyłki międzyapteczne, dzielenie opakowań), potrzebujesz drukarki z rozdzielczością min. 300 dpi zdolnej drukować GS1 DataMatrix; wszystkie modele od ZD421d wzwyż spełniają ten wymóg; do weryfikacji kodów 2D rozważ ZD621d z opcją skanera weryfikującego',
-        'Uwzględnij typ etykiet — etykiety termiczne Direct Thermal (np. opaski pacjenta, etykiety tymczasowe) wystarczą dla większości aptek szpitalnych; etykiety termotransferowe (drukarki z końcówką "t") niezbędne do etykiet trwałych na pojemnikach laboratoryjnych, odczynnikach, próbkach przechowywanych przez lata',
-        'Weź pod uwagę łączność z systemem aptecznym — Apteo, Kamsoft, Meddis, Mediporta — wszystkie obsługują drukarki Zebra przez sterownik ZPL II lub CUPS (Linux); dla aptek szpitalnych podłączonych do HIS (np. Asseco AMMS, Kamsoft Szpital) zalecana łączność Ethernet; Wi-Fi opcjonalne dla stanowisk mobilnych przy łóżku pacjenta',
-        'Rozważ objętość dzienna — mała apteka: do 50 etykiet/dzień → ZD220d; średnia apteka/przychodnia: 50–200 etykiet → ZD421d; duża apteka szpitalna/laboratorium: 200–1 000 etykiet → ZD621d; produkcja farmaceutyczna >1 000 etykiet → ZT411 lub ZT610',
-        'Planuj materiały eksploatacyjne — opaski pacjenta Direct Thermal (Z-Band) dostępne w kolorach (białe, żółte, różowe, niebieskie) do oznaczania grup ryzyka, ok. 15–25 gr/szt.; etykiety laboratoryjne odporne na kriogenię lub autoklaw (Cryo Labels) ok. 30–80 gr/szt.; standardowe etykiety termiczne 50×25 mm ok. 3–5 gr/szt.',
-        'Zadbaj o zgodność sanitarno-higieniczną — obudowa drukarki powinna być łatwa do czyszczenia i dezynfekcji (wszystkie modele Zebra ZD mają gładką powierzchnię bez szpar); dla pomieszczeń czystych klasy C i D rozważ drukarki z opcją montażu w szafce lub pokrowcem ochronnym minimalizującym pylenie podczas wymiany rolki'
+        'Rodzaj oznaczenia — opaski dla pacjentów drukuje ZD510-HC z kartridżów albo drukarka biurkowa HC z rolki opasek. Etykiety leków, probówek i worków drukują drukarki biurkowe i mobilne.',
+        'Czyszczenie obudowy — jeśli drukarka stoi w strefie, w której urządzenia regularnie się dezynfekuje, wybierz wersję HC. Przetestowane środki i metody czyszczenia opisuje przewodnik Zebry „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”.',
+        'Szerokość etykiety — drukarki 2-calowe ZD411-HC i ZD611-HC drukują do 56 mm, mobilna ZQ610 Plus-HC do 48 mm, a 4-calowe ZD421-HC i ZD621-HC do 108 mm.',
+        'Technologia druku — druk termiczny nie wymaga taśmy barwiącej. Druk termotransferowy wymaga taśmy, a trwałość wydruku zależy od zestawienia etykiety i taśmy. Sprawdź ją na docelowym materiale.',
+        'Rozdzielczość — drukarki biurkowe HC występują w wersjach 203 i 300 dpi. ZD510-HC drukuje w 300 dpi, a drukarki mobilne ZQ6 HC w 203 dpi. Przy małych etykietach 300 dpi daje 12 punktów na milimetr zamiast 8.',
+        'Łączność — drukarka w sieci apteki lub szpitala wymaga Ethernetu albo Wi-Fi. Interfejsy zależą od numeru PN. Sposób druku z programu aptecznego, szpitalnego lub laboratoryjnego uzgodnij z jego dostawcą.',
+        'Zasilanie — drukarki mobilne ZQ6 HC mają wymienną baterię 3250 mAh. Do drukarek biurkowych ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC jest dostępna opcjonalna bateria 2750 mAh.',
       ]
     },
-    expertAuthority: 'TAKMA to autoryzowany partner Zebra Technologies z wieloletnim doświadczeniem we wdrożeniach systemów etykietowania w sektorze healthcare. Obsłużyliśmy dziesiątki aptek, szpitali, laboratoriów diagnostycznych i zakładów produkcji farmaceutycznej w całej Polsce. Nasi specjaliści pomagają w doborze drukarki, konfiguracji integracji z systemem aptecznym, doborze materiałów eksploatacyjnych zgodnych z normami medycznymi oraz szkoleniu personelu. Zapewniamy serwis on-site, materiały certyfikowane do użytku medycznego (opaski Z-Band, etykiety laboratoryjne Cryo, etykiety GHS) oraz wsparcie techniczne w zakresie wymogów FMD, GMP i GDP.',
-    technicalDeepDive: `<h3>GS1 DataMatrix w serializacji leków — wymogi techniczne</h3>
-<p>Dyrektywa FMD wymaga zakodowania w GS1 DataMatrix następujących danych (Application Identifiers wg GS1):</p>
-<ul>
-<li><strong>AI (01) GTIN</strong> — Global Trade Item Number (14 cyfr, zawiera kod kraju, producenta i produktu)</li>
-<li><strong>AI (21) Numer seryjny</strong> — unikalny numer identyfikujący konkretne opakowanie (max 20 znaków alfanumerycznych)</li>
-<li><strong>AI (17) Data ważności</strong> — format RRMMDD (np. 251231 = 31 grudnia 2025)</li>
-<li><strong>AI (10) Numer partii (LOT)</strong> — identyfikator partii produkcyjnej (max 20 znaków)</li>
-</ul>
-<p>Przykładowy ciąg: <code>01058123456789001721AB123456789012173112311012345LOT</code></p>
-<p>Kod DataMatrix musi spełniać normę <strong>ISO/IEC 16022</strong> i osiągać klasę czytelności min. <strong>Grade C</strong> wg ISO/IEC 15415. Drukarki Zebra ZD421d, ZD621d, ZT411 i ZT610 w rozdzielczości 300 dpi gwarantują Grade A/B przy prawidłowo dobranych parametrach druku (temperatura głowicy, prędkość).</p>
+    expertAuthority: 'TAKMA, partner Zebra, dobiera drukarki, etykiety, opaski i taśmy dla aptek, szpitali i laboratoriów. Przed ofertą ustalamy rodzaj oznaczeń, miejsce pracy drukarki i sposób jej podłączenia do systemu placówki.',
+    technicalDeepDive: `<h3>Kody 2D na małych etykietach</h3>
+<p>Drukarki Zebra HC i ZD510-HC drukują kody 1D i 2D, w tym DataMatrix i QR Code. Na małych etykietach, np. na probówkach, wersja 300 dpi drukuje 12 punktów na milimetr, a wersja 203 dpi 8 punktów. Czytelność kodu należy sprawdzić skanerem na docelowej etykiecie.</p>
 
-<h3>Opaski identyfikacyjne pacjenta — standard HL7</h3>
-<p>Opaski identyfikacyjne (patient wristbands) drukowane w szpitalach muszą zawierać:</p>
-<ul>
-<li><strong>Imię i nazwisko pacjenta</strong></li>
-<li><strong>Numer PESEL lub ID wewnętrzny szpitala</strong></li>
-<li><strong>Data urodzenia</strong></li>
-<li><strong>Kod kreskowy lub DataMatrix</strong> — do skanowania przy podawaniu leków, pobieraniu krwi, wykonywaniu zabiegów</li>
-<li><strong>Ostrzeżenia alergiczne</strong> (opcjonalnie, na opaskach kolorowych)</li>
-</ul>
-<p>Standard <strong>HL7 ADT (Admission, Discharge, Transfer)</strong> definiuje komunikaty między systemem HIS a drukarką — po rejestracji pacjenta system automatycznie wysyła zlecenie druku opaski na przypisaną drukarkę.</p>
-<p>Materiały: opaski <strong>Z-Band Direct Thermal</strong> (Zebra) są wykonane z syntetycznego materiału odpornego na wodę, pot i dezynfekcję, z zamknięciem samoprzylepnym. Dostępne szerokości: 19 mm (dzieci), 25 mm (dorośli), 32 mm (extended info). Kolory: biały (standard), żółty (upadki), czerwony (alergie), różowy (DNR/Do Not Resuscitate), niebieski (ograniczona dieta).</p>
+<h3>Opaski dla pacjentów</h3>
+<p>ZD510-HC drukuje opaski Z-Band z kartridżów o szerokości 19,05 mm, 25,4 mm i 30,16 mm. Chip w kartridżu umożliwia automatyczną kalibrację. Opaski Z-Band Direct są dostępne w rozmiarach <a href="/produkt/zebra-zband-direct-adult">dla dorosłych</a>, <a href="/produkt/zebra-zband-direct-child">dla dzieci</a> i <a href="/produkt/zebra-zband-direct-infant">dla niemowląt</a>.</p>
+<p>Opaski Z-Band Direct nie zawierają lateksu, BPA ani metalu i są uznawane za bezpieczne w środowisku MR (MR safe). Występują też z kolorowym paskiem w siedmiu kolorach, a znaczenie kolorów ustala placówka.</p>
 
-<h3>Etykiety laboratoryjne — odporność na temperatury ekstremalne</h3>
-<p>Laboratoria diagnostyczne i badawcze wymagają etykiet odpornych na:</p>
-<table>
-<thead>
-<tr><th>Zastosowanie</th><th>Zakres temperatur</th><th>Typ etykiety</th><th>Drukarka</th></tr>
-</thead>
-<tbody>
-<tr><td>Probówki kriogeniczne (azot ciekły)</td><td>-196°C do +100°C</td><td>Cryo Labels (poliolefin)</td><td>ZD421t, ZD621t (TT + resin)</td></tr>
-<tr><td>Próbki autoklaw (sterylizacja parowa)</td><td>+121°C / 2 bar / 20 min</td><td>Autoclave Labels (poliester)</td><td>ZD421t, ZD621t (TT + resin)</td></tr>
-<tr><td>Probówki krwi (przechowywanie 4°C)</td><td>+2°C do +8°C</td><td>Etykiety termiczne DT</td><td>ZD421d, ZD621d</td></tr>
-<tr><td>Szkiełka mikroskopowe</td><td>-20°C do +60°C</td><td>Etykiety polipropylenowe</td><td>ZD421t (TT + wax/resin)</td></tr>
-<tr><td>Pojemniki odczynników chemicznych</td><td>Temperatura pokojowa + chemikalia</td><td>Etykiety foliowe + resin</td><td>ZD421t, ZD621t</td></tr>
-</tbody>
-</table>
+<h3>Druk termiczny a dane na taśmie</h3>
+<p>Druk termiczny nie zużywa taśmy barwiącej. W druku termotransferowym na zużytej taśmie zostaje odbicie wydrukowanych danych. Taśmę z danymi pacjentów należy zniszczyć według procedury ochrony danych przyjętej w placówce.</p>
 
-<h3>Zgodność z GMP i GDP — wymogi dla produkcji farmaceutycznej</h3>
-<p><strong>GMP (Good Manufacturing Practice)</strong> wymaga pełnej dokumentacji procesu etykietowania:</p>
-<ul>
-<li><strong>Walidacja drukarki</strong> — Installation Qualification (IQ), Operational Qualification (OQ), Performance Qualification (PQ)</li>
-<li><strong>Śledzenie każdej wydrukowanej etykiety</strong> — system MES/ERP musi logować datę, czas, użytkownika, wariant produktu, numer partii dla każdej etykiety</li>
-<li><strong>Weryfikacja czytelności</strong> — każdy kod 2D zweryfikowany przez skaner zewnętrzny lub Visual Verify</li>
-<li><strong>Kontrola środowiska</strong> — drukarka w pomieszczeniu kontrolowanym (np. klasa D wg EU GMP Annex 1), monitorowanie temperatury i wilgotności</li>
-</ul>
-<p><strong>GDP (Good Distribution Practice)</strong> dotyczy hurtowni i aptek szpitalnych:</p>
-<ul>
-<li><strong>Etykiety transportowe</strong> — warunki przechowywania (temperatura 2–8°C), data dostawy, numer przesyłki GDP</li>
-<li><strong>Etykiety łańcuch chłodniczy</strong> — wskaźniki kontroli temperatury, ostrzeżenia "Przechowywać w chłodni"</li>
-<li><strong>Dokumentacja FEFO</strong> — First Expired, First Out — etykiety z wyraźną datą ważności w formacie człowiekiem czytelnym + GS1 AI (17)</li>
-</ul>
-<p>Dla GMP i GDP rekomendujemy drukarki przemysłowe: <a href="/produkt/zebra-zt411">Zebra ZT411</a> (5 132 zł), <a href="/produkt/zebra-zt610">Zebra ZT610</a> (10 432 zł) — pełna metalowa obudowa, MTBF >10 000 h, integracja z systemami MES (Werum PAS-X, Körber, Rockwell FactoryTalk Batch).</p>`,
+<h3>Czyszczenie i zasilanie</h3>
+<p>Drukarki biurkowe HC, w tym ZD510-HC, mają obudowę odporną na środki dezynfekcyjne i promieniowanie UV, a ich zasilacz spełnia normę IEC 60601-1. W ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC przyciski są uszczelnione. Drukarki mobilne ZQ6 HC ładuje się z zasilacza sieciowego zgodnego z IEC 60601, który jest akcesorium.</p>
+
+<h3>Zarządzanie drukarkami</h3>
+<p>Drukarki HC współpracują z narzędziami Zebra do zdalnej konfiguracji i zarządzania (Print DNA albo Zebra DNA). Narzędzie PrintSecure pozwala skonfigurować bezpieczne połączenia i blokować nieupoważniony dostęp do drukarki.</p>`,
     useCases: [
       {
-        title: 'Apteka ogólnodostępna — etykiety recept i cenówki OTC',
-        description: 'Mała i średnia apteka ogólnodostępna drukuje etykiety na leki recepturowe (imię pacjenta, dawkowanie, data realizacji recepty, ostrzeżenia) oraz cenówki i etykiety półkowe dla leków OTC. Wystarczająca jest drukarka termiczna Zebra ZD220d (od 621 zł netto) z etykietami 50×25 mm lub 60×40 mm. Integracja z systemem aptecznym Kamsoft, Apteo, Farmacja Plus, Mediporta — etykieta drukuje się automatycznie po zatwierdzeniu recepty. Format etykiety: tekst (nazwa leku, dawkowanie, data), opcjonalnie kod kreskowy EAN-13 lub kod wewnętrzny apteki. Czas druku: 2–3 sekundy, koszt etykiety: 3–5 gr. Wolumen: 20–100 etykiet dziennie.'
+        title: 'Apteka ogólnodostępna',
+        description: 'Etykiety leków i oznaczenia półek drukuje biurkowa drukarka termiczna, np. <a href="/produkt/zebra-zd411d">Zebra ZD411d</a> (2 cale) albo <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> (4 cale). Druk termiczny nie wymaga taśmy barwiącej. Szablon etykiety przygotowuje się w programie aptecznym albo w programie ZebraDesigner.'
       },
       {
-        title: 'Apteka szpitalna — opaski identyfikacyjne pacjenta',
-        description: 'Apteka szpitalna lub oddział przyjęć drukuje opaski identyfikacyjne (patient wristbands) dla każdego pacjenta przyjmowanego do szpitala. Opaska zawiera imię, nazwisko, datę urodzenia, numer PESEL oraz kod kreskowy lub DataMatrix umożliwiający skanowanie przy podawaniu leków, pobieraniu krwi, wykonywaniu zabiegów. Rekomendowana drukarka: Zebra ZD621d (od 1 829 zł netto) z etykietami Z-Band Direct Thermal (opaski bezlateksowe, odporne na wodę i dezynfekcję, szerokość 25 mm). Integracja z systemem HIS (Hospital Information System) przez HL7 ADT — opaska drukuje się automatycznie po rejestracji pacjenta. Kolory opasek: biały (standard), żółty (ryzyko upadków), czerwony (alergie krytyczne), różowy (DNR), niebieski (dieta).'
+        title: 'Apteka szpitalna',
+        description: 'Etykiety leków na receptę drukują drukarki biurkowe HC, np. <a href="/produkt/zebra-zd421-hc">Zebra ZD421-HC</a>. Obudowę można regularnie dezynfekować, a przyciski są uszczelnione.'
       },
       {
-        title: 'Laboratorium diagnostyczne — etykiety na probówki i pojemniki',
-        description: 'Laboratorium diagnostyczne (analityka kliniczna, mikrobiologia, biochemia) drukuje etykiety na probówki z krwią, moczem, wymazy, pojemniki na tkanki i płyny ustrojowe. Etykieta zawiera: ID pacjenta, rodzaj próbki, datę i godzinę pobrania, kod kreskowy do systemu LIS (Laboratory Information System). Wymagania: etykiety odporne na wilgoć (kontakt z wodą, odczynniki), chłód (przechowywanie probówek w lodówce 2–8°C), trwałość min. 7–30 dni. Drukarka termotransferowa Zebra ZD421t (od 1 638 zł netto) z etykietami polipropylenovymi 25×12 mm lub 38×19 mm, druk z taśmą woskową lub wax/resin. Integracja z LIS (Clininet, LabOS, Comarch eLab) przez ASTM, HL7 lub TCP/IP.'
+        title: 'Izba przyjęć',
+        description: '<a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski dla pacjentów z kartridżów Z-Band. Kartridż wkłada się od góry drukarki, a chip w kartridżu umożliwia automatyczną kalibrację.'
       },
       {
-        title: 'Laboratorium badawcze — etykiety kriogeniczne i autoklaw',
-        description: 'Laboratoria badawcze, biobanki, instytuty badawcze przechowują próbki w azotu ciekłym (-196°C), zamrażarkach kriogenicznych (-80°C) lub sterylizują w autoklawie (+121°C, 2 bar). Wymagane są specjalne etykiety Cryo Labels (poliolefin, poliester) odporne na temperatury ekstremalne, bez utraty adhezji i czytelności przez lata. Drukarka termotransferowa Zebra ZD621t (od 2 048 zł netto) z taśmą żywiczną (resin ribbon) gwarantuje trwałość druku przez 10+ lat w ekstremalnych warunkach. Etykiety dostępne w formatach na probówki kriogeniczne 1,5 ml / 2 ml (etykiety typu "wrap-around" owijające probówkę), pojemniki, szkiełka mikroskopowe. Integracja z systemem LIMS (Laboratory Information Management System).'
+        title: 'Punkt pobrań i laboratorium',
+        description: 'Etykiety na probówki drukują 2-calowe drukarki biurkowe <a href="/produkt/zebra-zd411-hc">ZD411-HC</a> i <a href="/produkt/zebra-zd611-hc">ZD611-HC</a>. Drukarka mobilna <a href="/produkt/zebra-zq610-plus-hc">ZQ610 Plus-HC</a> drukuje etykietę przy łóżku pacjenta, w miejscu pobrania próbki.'
       },
       {
-        title: 'Produkcja farmaceutyczna (GMP) — serializacja pierwotna i wtórna',
-        description: 'Zakład produkcji farmaceutycznej zgodny z GMP (Good Manufacturing Practice) drukuje etykiety pierwotne na opakowania jednostkowe leków (blistery, butelki, tuby) oraz etykiety wtórne na kartony zbiorcze i palety. Każda etykieta musi zawierać unikalny numer seryjny zakodowany w GS1 DataMatrix zgodnie z FMD, datę ważności (AI 17), numer partii LOT (AI 10), GTIN (AI 01). Drukarka przemysłowa Zebra ZT411 (od 5 132 zł netto) lub ZT610 (od 10 432 zł netto) z rozdzielczością 300 dpi lub 600 dpi, opcją weryfikacji druku (Visual Verify lub zewnętrzny skaner), integracją z systemem MES (np. Werum PAS-X, Körber, Rockwell). Walidacja IQ/OQ/PQ wymagana przed uruchomieniem produkcyjnym. Materiały: etykiety papierowe lub foliowe, taśma żywiczna resin do trwałości >5 lat.'
+        title: 'Oddział i bank krwi',
+        description: 'Etykiety na worki z krwią i płynami infuzyjnymi drukują 4-calowe <a href="/produkt/zebra-zd421-hc">ZD421-HC</a> i <a href="/produkt/zebra-zd621-hc">ZD621-HC</a>. Drukarki mobilne ZQ6 HC drukują też etykiety w banku krwi i etykiety na pokarm kobiecy.'
       },
       {
-        title: 'Apteka weterynaryjna i lecznice zwierząt',
-        description: 'Apteka weterynaryjna, przychodnia lub klinika weterynaryjna drukuje etykiety na leki dla zwierząt (dawkowanie, nazwa zwierzęcia, gatunek, ostrzeżenia), opaski identyfikacyjne dla pacjentów (zwierząt hospitalizowanych), etykiety na pojemniki z próbkami (krew, mocz, kał). Wymagania są podobne do aptek humanitarnych, ale mniej rygorystyczne pod względem regulacji (brak FMD dla weterynaryjnych). Drukarka Zebra ZD421d (od 1 330 zł netto) lub ZD421t (1 638 zł netto, jeśli wymagane etykiety odporne na wilgoć i ścieranie). Integracja z systemami dla weterynarzy (VetManager, easyVET, Provet Cloud). Opaski dla zwierząt: Z-Band różne szerokości w zależności od gatunku (mały pies/kot: 19 mm, duży pies: 25–32 mm).'
+        title: 'Etykiety drukowane z taśmą',
+        description: 'Druk termotransferowy pozwala dobrać etykietę i taśmę do warunków, np. kontaktu z wilgocią. Drukują tak <a href="/produkt/zebra-zd421t">Zebra ZD421t</a>, <a href="/produkt/zebra-zd621t">Zebra ZD621t</a> oraz termotransferowe wersje ZD421-HC, ZD611-HC i ZD621-HC. Odporność wydruku trzeba sprawdzić na docelowym materiale.'
       }
     ],
     uniqueInsights: {
-      heading: 'Wiedza ekspercka: wymagania specjalne w sektorze farmaceutycznym',
+      heading: 'Co sprawdzić przed zakupem?',
       items: [
         {
-          title: 'FMD vs wtórna serializacja — kiedy apteka musi drukować GS1 DataMatrix?',
-          text: 'Pierwotna serializacja (aplikowanie kodu 2D na opakowanie leku w zakładzie produkcyjnym) to obowiązek producenta. Apteka ogólnodostępna nie drukuje kodów FMD — tylko je skanuje przed wydaniem pacjentowi i raportuje do systemu EMVS. Jednak apteka szpitalna wykonująca receptury apteczne (np. rozcieńczenia leków dla noworodków, cytostyki spersonalizowane) lub apteka dokonująca re-etykietowania (przesyłki międzyapteczne, zmiana języka etykiety przy eksporcie równoległym) MUSI generować wtórne etykiety z GS1 DataMatrix zgodnym z FMD. Do tego wymagana jest drukarka Zebra ZD421d lub wyższa (rozdzielczość 300 dpi, precyzja DataMatrix) i oprogramowanie do generowania unikalnych numerów seryjnych w systemie EMVS.'
+          title: 'Wydruk testowy na własnym materiale',
+          text: 'Przed wdrożeniem wydrukuj etykietę lub opaskę z docelowym szablonem. Sprawdź odczyt kodu skanerem, także po kontakcie ze środkami używanymi w placówce.'
         },
         {
-          title: 'Opaski pacjenta a system 5 Checks — bezpieczeństwo podawania leków',
-          text: 'Opaski identyfikacyjne pacjenta (patient wristbands) są kluczowym elementem systemu 5 Checks (5 sprawdzeń przed podaniem leku): Right Patient (właściwy pacjent), Right Drug (właściwy lek), Right Dose (właściwa dawka), Right Route (właściwa droga podania), Right Time (właściwy czas). Pielęgniarka skanuje kod kreskowy na opasce pacjenta, następnie kod na leku — system HIS weryfikuje zgodność zlecenia lekarskiego. Błąd (np. lek przypisany do innego pacjenta) wywołuje alarm. Opaska musi być czytelna przez cały czas hospitalizacji (średnio 3–7 dni), odporna na wodę (kąpiele, dezynfekcja rąk), pot i tarcie. Opaski Z-Band Direct Thermal spełniają te wymogi — czytelność do 14 dni bez degradacji.'
+          title: 'Odporność opasek Z-Band Direct',
+          text: 'Kod na opasce Z-Band Direct pozostaje czytelny po 6 godzinach w wodzie o temperaturze 40 °C. Opaski są zalecane przy kontakcie z krwią, płynami ustrojowymi i wodą. Kontakt z alkoholem, amoniakiem i wybielaczem należy sprawdzić w warunkach placówki.'
         },
         {
-          title: 'Etykiety na cytostatyki — wymogi GHS i oznaczenia cytotoksyczne',
-          text: 'Cytostatyki (leki przeciwnowotworowe) to substancje niebezpieczne wymagające oznaczeń GHS/CLP. Etykieta na worku infuzyjnym lub strzykawce musi zawierać: (1) nazwę leku i stężenie, (2) datę i godzinę przygotowania, (3) datę i godzinę podania, (4) imię i nazwisko pacjenta, (5) piktogram GHS (czaszka ze skrzyżowanymi kośćmi, wykrzyknik), (6) zwroty H i P (np. H350: może powodować raka, P280: stosować rękawice ochronne). Drukarka termotransferowa Zebra ZD621t (od 2 048 zł netto) z etykietami polipropylenovymi (odporność chemiczna) i taśmą resin (trwałość) zapewnia bezpieczeństwo i zgodność z Rozporządzeniem CLP. System HIS (np. OncoManager) generuje etykietę automatycznie po zatwierdzeniu dawki przez farmaceutę.'
+          title: 'Norma IEC 60601-1 dotyczy zasilacza',
+          text: 'W drukarkach biurkowych HC normę IEC 60601-1 spełnia zasilacz, a nie cała drukarka. Drukarkę mobilną ZQ6 HC ładuje się z zasilacza sieciowego zgodnego z IEC 60601.'
         },
         {
-          title: 'Etykiety laboratoriów akredytowanych ISO 15189 — wymagania dokumentacyjne',
-          text: 'Laboratoria medyczne akredytowane wg ISO 15189 (Medical laboratories — Requirements for quality and competence) muszą zapewnić pełną identyfikowalność każdej próbki od pobrania do wydania wyniku. Etykieta musi zawierać: unikalny ID próbki (barcode lub 2D code), ID pacjenta, datę i godzinę pobrania, inicjały osoby pobierającej, rodzaj próbki, rodzaj badania. System LIS (Laboratory Information System) generuje etykiety i raportuje każde zdarzenie (pobranie, transport, analiza, wynik). Akredytacja wymaga walidacji systemu etykietowania — drukarka musi być skalibrowana (weryfikacja rozdzielczości, kontrastu, czytelności kodów 2D), a wydruki archiwizowane (proof of print). Zebra ZD421t i ZD621t z opcją weryfikacji druku spełniają te wymagania.'
-        },
-        {
-          title: 'Materiały medyczne wolne od lateksu — wymóg dla opasek pacjenta',
-          text: 'Opaski identyfikacyjne pacjenta muszą być wolne od lateksu (latex-free) ze względu na alergię na lateks występującą u ok. 1–6% populacji (wyższy odsetek wśród personelu medycznego i pacjentów z wielokrotnymi hospitalizacjami). Opaski Z-Band Direct Thermal firmy Zebra są wykonane z syntetycznego polimeru (poliolefin) bez lateksu, hipoalergiczne, certyfikowane do użytku medycznego. Dodatkowo są odporne na chlorheksydynę, alkohol izopropylowy, podchlorynem sodu (środki dezynfekcyjne stosowane w szpitalach). Drukarka Zebra ZD621d z opcją odklejaka (peeler) przyspiesza aplikację opaski — opaska drukuje się, odkleja automatycznie i jest gotowa do założenia pacjentowi w <5 sekund.'
-        },
-        {
-          title: 'Temperatura przechowywania leków a druk etykiet ostrzegawczych',
-          text: 'Leki termolabilne (np. insuliny, szczepionki, immunoglobuliny, probiotyki) wymagają przechowywania w kontrolowanej temperaturze 2–8°C (łańcuch chłodniczy) lub -20°C (zamrażarka). Etykiety ostrzegawcze "Przechowywać w lodówce", "Nie zamrażać", "Temperatura 2–8°C" muszą być wyraźne i trwałe — odporne na kondensację (opakowanie wyjęte z lodówki pokrywa się kroplami wody). Druk termotransferowy z taśmą resin na etykietach foliowych (PP, PE) zapewnia odporność na wilgoć i ścieranie. Apteki szpitalne i hurtownie farmaceutyczne (GDP) używają dodatkowo etykiet z indykatorami temperatury (temperature indicators) — chemiczny wskaźnik zmienia kolor po przekroczeniu dopuszczalnej temperatury. Drukarka Zebra ZD421t lub ZD621t drukuje etykiety ostrzegawcze zgodne z Farmakopeą Polską i wymogami GDP.'
+          title: 'Warunki przechowywania kartridży',
+          text: 'Kartridże z opaskami do ZD510-HC należy przechowywać w temperaturze od 0 °C do 21 °C, przy wilgotności względnej od 35% do 50%.'
         }
       ]
     },
     faq: [
       {
-        question: 'Czy drukarka Zebra ZD421d nadaje się do druku etykiet FMD z kodem GS1 DataMatrix?',
-        answer: 'Tak. Zebra ZD421d w rozdzielczości 300 dpi doskonale radzi sobie z drukiem kodów GS1 DataMatrix wymaganych przez dyrektywę FMD. Kod DataMatrix o minimalnych wymiarach 10×10 mm drukowany w 300 dpi osiąga klasę czytelności Grade A/B wg ISO/IEC 15415, co jest zgodne z wymogami EMVS (European Medicines Verification System). Drukarka obsługuje generowanie DataMatrix przez język ZPL II — szablon etykiety można zaprojektować w Zebra Designer lub przekazać bezpośrednio z systemu aptecznego (Kamsoft, Apteo, Mediporta). Do weryfikacji czytelności każdego wydrukowanego kodu zalecamy opcję skanera weryfikującego lub zewnętrzny skaner 2D.'
+        question: 'Jaka drukarka etykiet do apteki?',
+        answer: 'W aptece ogólnodostępnej wystarcza biurkowa drukarka termiczna, np. <a href="/produkt/zebra-zd411d">Zebra ZD411d</a> z szerokością druku do 56 mm albo <a href="/produkt/zebra-zd421d">Zebra ZD421d</a> do etykiet 4-calowych. W aptece szpitalnej, gdzie obudowę często się dezynfekuje, stosuje się wersje HC, np. <a href="/produkt/zebra-zd411-hc">ZD411-HC</a> lub <a href="/produkt/zebra-zd421-hc">ZD421-HC</a>.'
       },
       {
-        question: 'Jakie opaski identyfikacyjne pacjenta są kompatybilne z drukarkami Zebra?',
-        answer: 'Drukarki Zebra ZD421d, ZD621d i ZD621t obsługują opaski identyfikacyjne Z-Band Direct Thermal — opaski syntetyczne, wolne od lateksu, odporne na wodę i dezynfekcję, z zamknięciem samoprzylepnym. Dostępne szerokości: 19 mm (dzieci, niemowlęta), 25 mm (dorośli, standard), 32 mm (extended — więcej miejsca na tekst i ostrzeżenia). Kolory: biały (pacjent standardowy), żółty (ryzyko upadków), czerwony (alergie krytyczne), różowy (DNR / Do Not Resuscitate), niebieski (ograniczona dieta), zielony (latex allergy). Jedna rolka zawiera ok. 350 opasek (25 mm). Cena: ok. 15–25 gr/opaska. Opaski Z-Band są certyfikowane do użytku medycznego, hipoalergiczne, bezpieczne dla skóry przez okres do 14 dni ciągłego noszenia.'
+        question: 'Czy drukarka Zebra drukuje kody DataMatrix?',
+        answer: 'Tak. Drukarki Zebra drukują kody 2D, w tym DataMatrix i QR Code. Do małych kodów wybiera się wersję 300 dpi. Czytelność kodu należy sprawdzić skanerem na docelowej etykiecie.'
       },
       {
-        question: 'Czy mogę drukować etykiety odporne na azot ciekły (-196°C) na drukarce Zebra?',
-        answer: 'Tak, ale wymagana jest drukarka termotransferowa (TT) i specjalne etykiety kriogeniczne. Zebra ZD421t (od 1 638 zł netto) lub ZD621t (od 2 048 zł netto) z taśmą żywiczną (resin ribbon) i etykietami Cryo Labels (poliolefin lub poliimid) drukują etykiety odporne na temperatury od -196°C (azot ciekły) do +100°C (autoklaw w niższych temperaturach). Etykiety Cryo Labels zachowują adhezję i czytelność przez lata przechowywania w kriobankach i biorepozytoriach. Dostępne formaty: etykiety wrap-around na probówki kriogeniczne 1,5 ml / 2 ml, etykiety prostokątne na pudełka kriogeniczne, pudełka na szkiełka. Koszt: ok. 30–80 gr/etykieta (w zależności od rozmiaru i materiału).'
+        question: 'Czym drukuje się opaski identyfikacyjne w szpitalu?',
+        answer: 'Opaski Z-Band z kartridżów drukuje <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a>. Opaski z rolki drukują drukarki biurkowe HC, np. <a href="/produkt/zebra-zd421-hc">ZD421-HC</a>. Opaski w kartridżach są w kategorii <a href="/opaski-identyfikacyjne">opaski identyfikacyjne</a>, a drukarki opasek w kategorii <a href="/drukarki-opasek">drukarki opasek</a>.'
       },
       {
-        question: 'Jak skonfigurować drukarkę Zebra z systemem aptecznym Kamsoft lub Apteo?',
-        answer: 'Konfiguracja drukarki Zebra z systemem Kamsoft lub Apteo przebiega w kilku krokach: (1) Podłącz drukarkę do komputera przez USB lub do sieci przez Ethernet. (2) Zainstaluj sterownik drukarki Zebra ZPL (dostępny na serwis-zebry.pl/sterowniki lub zebra.com/drivers). (3) W systemie Kamsoft/Apteo przejdź do Konfiguracji → Drukarki → Dodaj nową drukarkę. (4) Wybierz drukarkę Zebra z listy zainstalowanych drukarek Windows i ustaw ją jako domyślną dla etykiet. (5) Skonfiguruj szablon etykiety — większość systemów aptecznych ma predefiniowane szablony (etykieta recepty, cenówka OTC), możesz też stworzyć własny w Zebra Designer. (6) Testuj druk — wydrukuj próbną etykietę z systemu aptecznego. Czas konfiguracji: 15–30 minut. TAKMA oferuje wsparcie zdalne w konfiguracji integracji.'
+        question: 'Czy do apteki szpitalnej potrzebna jest drukarka w wersji HC?',
+        answer: 'Wersja HC jest przeznaczona do miejsc, w których obudowę regularnie się dezynfekuje. Ma tworzywa odporne na środki dezynfekcyjne. Modele biurkowe HC mają też obudowę odporną na promieniowanie UV i zasilacz zgodny z IEC 60601-1, a ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC także uszczelnione przyciski. O wyborze decydują procedury czyszczenia przyjęte w placówce.'
       },
       {
-        question: 'Czy drukarka do aptek musi spełniać jakieś normy medyczne lub sanitarne?',
-        answer: 'Drukarka etykiet stosowana w aptece nie podlega certyfikacji jako wyrób medyczny (Medical Device Directive 93/42/EEC), ponieważ nie ma bezpośredniego kontaktu z pacjentem ani nie wpływa na diagnozę/terapię. Jednak w aptekach szpitalnych i laboratoriach diagnostycznych zalecane jest przestrzeganie dobrych praktyk higienicznych: obudowa drukarki powinna być gładka, łatwa do czyszczenia i dezynfekcji (powierzchnie bez szpar, gdzie gromadzi się kurz/bakterie); drukarka powinna być umieszczona poza strefą bezpośredniego kontaktu z lekami i próbkami; wymiana rolki etykiet powinna być przeprowadzana w sposób minimalizujący pylenie. Wszystkie drukarki Zebra ZD mają gładką obudowę z tworzywa ABS odpornego na środki dezynfekcyjne (alkohol izopropylowy, chlorheksydyna). Dla pomieszczeń czystych klasy C/D (produkcja farmaceutyczna GMP) dostępne są pokrowce ochronne i montaż w szafkach.'
+        question: 'Jak podłączyć drukarkę Zebra do programu aptecznego lub szpitalnego?',
+        answer: 'Drukarkę podłącza się przez USB, Ethernet albo Wi-Fi, zależnie od wersji. Program drukuje przez sterownik Zebra albo wysyła polecenia w języku ZPL. Sposób druku z konkretnego programu należy uzgodnić z jego dostawcą.'
       },
       {
-        question: 'Ile kosztują materiały eksploatacyjne do drukarki w aptece (etykiety, opaski)?',
-        answer: 'Koszty zależą od typu etykiet i wolumenu. Etykiety termiczne standardowe 50×25 mm (etykiety recept, cenówki): ok. 3–5 gr/szt., rolka 1 000 szt. = 30–50 zł netto. Etykiety termiczne 100×150 mm (etykiety wysyłkowe GDP): ok. 5–8 gr/szt., rolka 500 szt. = 25–40 zł netto. Opaski identyfikacyjne pacjenta Z-Band Direct Thermal 25 mm: ok. 15–25 gr/szt., rolka 350 szt. = 50–90 zł netto. Etykiety laboratoryjne Cryo (kriogeniczne, autoklaw): ok. 30–80 gr/szt. w zależności od rozmiaru i materiału. Dla drukarek termotransferowych (ZD421t, ZD621t) dodatkowo taśma barwiąca (ribbon): wax 110 mm × 300 m = 80–120 zł netto (starczy na 2 000–3 000 etykiet), resin 110 mm × 300 m = 150–200 zł netto. Przy aptece szpitalnej drukującej 100 opasek pacjenta dziennie miesięczny koszt materiałów to ok. 450–750 zł netto.'
+        question: 'Którą drukarkę wybrać do punktu pobrań?',
+        answer: 'Na stanowisku pobrań etykiety na probówki drukują 2-calowe drukarki biurkowe <a href="/produkt/zebra-zd411-hc">ZD411-HC</a> i <a href="/produkt/zebra-zd611-hc">ZD611-HC</a>. Gdy etykieta ma powstać przy łóżku pacjenta, służy do tego drukarka mobilna <a href="/produkt/zebra-zq610-plus-hc">ZQ610 Plus-HC</a> z baterią. Rozmiar etykiety należy dobrać do probówek stosowanych w laboratorium.'
       },
       {
-        question: 'Czy drukarka Zebra integruje się z systemem HIS (Hospital Information System)?',
-        answer: 'Tak. Drukarki Zebra obsługują integrację z systemami HIS (np. Asseco AMMS, Kamsoft Szpital, Comarch Otis, Meddis, Clininet) przez standardowe protokoły HL7 ADT (Admission, Discharge, Transfer) i FHIR (Fast Healthcare Interoperability Resources). System HIS po rejestracji pacjenta (ADT^A01) wysyła komunikat do drukarki przypisanej do oddziału/SOR — drukarka automatycznie drukuje opaskę identyfikacyjną z danymi pacjenta (imię, nazwisko, PESEL, kod kreskowy). Integracja odbywa się przez serwer druku (print server) lub bezpośrednio przez TCP/IP (drukarka w sieci LAN, adres IP). Zebra Link-OS udostępnia REST API umożliwiające dwukierunkową komunikację (HIS → drukarka: zlecenie druku; drukarka → HIS: status, poziom materiałów, błędy). Czas wdrożenia integracji HIS-drukarka: 1–3 dni (w zależności od złożoności HIS).'
+        question: 'Czy opaski Z-Band Direct zawierają lateks?',
+        answer: 'Nie. Opaski Z-Band Direct nie zawierają lateksu ani BPA. Są dostępne w rozmiarach <a href="/produkt/zebra-zband-direct-adult">dla dorosłych</a> (25 × 279 mm), <a href="/produkt/zebra-zband-direct-child">dla dzieci</a> (25 × 178 mm) i <a href="/produkt/zebra-zband-direct-infant">dla niemowląt</a> (25 × 152 mm).'
       },
       {
-        question: 'Jaka rozdzielczość drukarki jest wymagana do druku małych etykiet laboratoryjnych?',
-        answer: 'Do małych etykiet laboratoryjnych (probówki, szkiełka mikroskopowe, krioprobówki) o wymiarach 25×12 mm, 19×6 mm lub mniejszych zalecana jest rozdzielczość 300 dpi. Etykiety zawierające kod 2D (DataMatrix lub QR) o rozmiarze modułu <0,3 mm wymagają 300 dpi dla zachowania czytelności Grade A/B. Zebra ZD421d i ZD621d w wersji 300 dpi doskonale obsługują tego typu aplikacje. Dla ekstremalnie małych etykiet (<15×10 mm) z bardzo drobnym tekstem lub mikroDataMatrix rozważ Zebra ZT411 w wersji 600 dpi (od 11 755 zł netto) — rozdzielczość 600 dpi pozwala drukować tekst o wysokości 1–2 mm z pełną czytelnością i kody 2D o module 0,15 mm. Przykład: etykieta na probówkę Eppendorf 1,5 ml ma wymiary 19×6 mm — druk w 203 dpi będzie niewyraźny, w 300 dpi — optymalny.'
-      },
-      {
-        question: 'Czy można drukować etykiety GHS (piktogramy zagrożeń) na drukarce Zebra?',
-        answer: 'Tak. Etykiety GHS/CLP z piktogramami zagrożeń (płomień, czaszka, wykrzyknik, korozja, bomba wybuchu, butelka z gazem, zagrożenie dla środowiska, zagrożenie dla zdrowia) można drukować na drukarkach Zebra z rozdzielczością 300 dpi. Piktogramy GHS są grafikami wektorowymi — w Zebra Designer można je zaimportować jako pliki PNG lub bitmap ZPL. Wymagana drukarka termotransferowa (ZD421t, ZD621t, ZT411, ZT610) z etykietami polipropylenovymi lub polietylenowymi i taśmą żywiczną (resin) — zapewnia odporność na chemikalia, UV, wilgoć i ścieranie przez minimum 5 lat (zgodnie z wymogami rozporządzenia CLP). Rozdzielczość 300 dpi gwarantuje wyraźność piktogramów i czytelność drobnego tekstu zwrotów H i P (np. H350, P280). Etykiety GHS drukowane na drukarkach Zebra stosowane są w laboratoriach chemicznych, aptekach (cytotoksyki), zakładach produkcji kosmetyków i suplementów.'
-      },
-      {
-        question: 'Jaka jest różnica między ZD421d a ZD621d dla zastosowań aptecznych?',
-        answer: 'Zebra ZD421d (od 1 330 zł netto) to drukarka mid-range — wystarczająca dla większości aptek ogólnodostępnych i małych aptek szpitalnych, wolumen do 500 etykiet/dzień, prędkość druku 152 mm/s (6 cali/s), brak wyświetlacza LCD (konfiguracja przez USB lub przeglądarkę). Zebra ZD621d (od 1 829 zł netto) to model premium — kolorowy wyświetlacz LCD 2,4" z dotykowym interfejsem (konfiguracja bezpośrednio na drukarce, bez komputera), prędkość druku 203 mm/s (8 cali/s), opcja linerless (etykiety bez podłoża silikonowego — oszczędność 15–20% materiału), cichsza praca (57 dB vs 63 dB). Dla apteki szpitalnej drukującej opaski pacjenta lub dużej apteki sieciowej (>200 etykiet/dzień) ZD621d jest lepszym wyborem — szybszy, łatwiejszy w obsłudze przez personel nieIT, bardziej odporny na intensywne użycie. Dla małej apteki ogólnodostępnej (<100 etykiet/dzień) ZD421d w pełni wystarcza.'
+        question: 'Gdzie są etykiety i taśmy do drukarek w aptece?',
+        answer: 'Etykiety do druku termicznego są w kategorii <a href="/etykiety-termiczne-zebra">etykiety termiczne Zebra</a>. Taśmy do drukarek termotransferowych są w kategorii <a href="/tasmy-termotransferowe">taśmy termotransferowe</a>.'
       }
     ],
     relatedLinks: [
-      { title: 'Kolorowe drukarki etykiet — etykiety z oznaczeniem kolorem', href: '/kolorowe-drukarki-etykiet' },
-      { title: 'Drukarki etykiet — wszystkie typy', href: '/drukarki-etykiet' },
-      { title: 'Zebra ZD220d — najtańsza drukarka do małej apteki', href: '/produkt/zebra-zd220d' },
-      { title: 'Zebra ZD421d — uniwersalna drukarka do apteki szpitalnej', href: '/produkt/zebra-zd421d' },
-      { title: 'Zebra ZD621d — premium z LCD do opasek pacjenta', href: '/produkt/zebra-zd621d' },
-      { title: 'Zebra ZD421t — termotransferowa do etykiet laboratoryjnych', href: '/produkt/zebra-zd421t' },
-      { title: 'Zebra ZD621t — drukarka do etykiet kriogenicznych', href: '/produkt/zebra-zd621t' },
-      { title: 'Zebra ZT411 — przemysłowa do produkcji farmaceutycznej GMP', href: '/produkt/zebra-zt411' },
-      { title: 'Zebra ZT610 — high-performance do serializacji FMD', href: '/produkt/zebra-zt610' },
-      { title: 'Biurkowe drukarki etykiet — pełna oferta', href: '/biurkowe-drukarki-etykiet' },
-      { title: 'Przemysłowe drukarki etykiet — modele ZT do GMP', href: '/przemyslowe-drukarki-etykiet' },
-      { title: 'Etykiety termiczne — materiały do aptek', href: '/etykiety-termiczne-zebra' },
-      { title: 'Etykiety termotransferowe papierowe', href: '/etykiety-termotransferowe-zebra/papierowe' },
-      { title: 'Opaski identyfikacyjne pacjenta Z-Band', href: '/opaski-identyfikacyjne' },
+      { title: 'Drukarki dla służby zdrowia — Zebra HC', href: '/drukarki-dla-sluzby-zdrowia' },
+      { title: 'Zebra ZD510-HC — drukarka opasek dla pacjentów', href: '/produkt/zebra-zd510-hc' },
+      { title: 'Opaski identyfikacyjne Z-Band', href: '/opaski-identyfikacyjne' },
+      { title: 'Drukarki opasek', href: '/drukarki-opasek' },
+      { title: 'Zebra ZD411d — biurkowa drukarka termiczna 2"', href: '/produkt/zebra-zd411d' },
+      { title: 'Zebra ZD421d — biurkowa drukarka termiczna 4"', href: '/produkt/zebra-zd421d' },
+      { title: 'Zebra ZD421t — biurkowa drukarka termotransferowa 4"', href: '/produkt/zebra-zd421t' },
+      { title: 'Zebra ZD621t — biurkowa drukarka termotransferowa 4"', href: '/produkt/zebra-zd621t' },
+      { title: 'Biurkowe drukarki etykiet', href: '/biurkowe-drukarki-etykiet' },
+      { title: 'Etykiety termiczne Zebra', href: '/etykiety-termiczne-zebra' },
+      { title: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
     ],
   },
 ]

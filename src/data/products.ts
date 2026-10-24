@@ -66488,228 +66488,222 @@ const foilLabels76: Product[] = foilLabel76Specs.map(s => {
 // OPASKI IDENTYFIKACYJNE ZEBRA Z-BAND
 // ============================================
 
+// Treść według karty katalogowej Z-Band Direct (ZBAND-FS, 01/2025), przewodnika Zebra Wristband Solutions Guide (2026)
+// i karty ZD510-HC (10.2025). Liczba opasek w kartridżu tylko od dystrybutorów — szczegóły w docs/catalog/zebra-hc-2026-10-25/H5.md.
 const wristbands: Product[] = [
   {
     id: 'zebra-zband-direct-adult',
     slug: 'zebra-zband-direct-adult',
     name: 'Zebra Z-Band Direct — opaski dla dorosłych (25×279 mm)',
-    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×11" do drukark ZD510-HC i HC100 — opakowanie 6 kartridży × 200 szt.',
-    description: `Zebra Z-Band Direct 10006995K to najlepszy wybór dla szpitali i placówek medycznych, które potrzebują trwałych opasek identyfikacyjnych do identyfikacji pacjentów dorosłych z kodem kreskowym.
+    shortDescription: 'Zebra Z-Band Direct 10006995K — białe opaski dla pacjentów dorosłych, 25 × 279 mm, w kartridżach do drukarek ZD510-HC i HC100; 6 kartridży po 200 opasek',
+    seoTitle: 'Opaski Zebra Z-Band Direct dla dorosłych 25 × 279 mm — 10006995K',
+    seoDescription: 'Opaski identyfikacyjne Zebra Z-Band Direct dla dorosłych, 25 × 279 mm, w kartridżach do drukarek Zebra ZD510-HC i HC100. Opaski dla pacjentów Zebra, opaski szpitalne Z-Band Direct Zebra: 6 kartridży po 200 opasek. PN: 10006995K.',
+    description: `Zebra Z-Band Direct 10006995K to białe opaski identyfikacyjne dla pacjentów dorosłych, o wymiarach 25 × 279 mm (1" × 11"). Opaski są nawinięte w kartridżach do drukarek Zebra ZD510-HC i HC100. Opakowanie zawiera 6 kartridży po 200 opasek.
 
-Opaski Z-Band Direct to ekonomiczne, termiczne opaski polipropylenowe z zapięciem samoprzylepnym (adhesive closure). Rozmiar 25,4 × 279,4 mm (1" × 11") idealny dla dorosłych pacjentów. Druk termiczny bezpośredni — bez taśmy barwiącej. Powłoka antybakteryjna (antimicrobial coating) — jedyne takie opaski na rynku.
+Opaska jest wykonana z polipropylenu do druku termicznego, więc drukarka nie potrzebuje taśmy barwiącej. Zapięcie samoprzylepne jest trwałe: zdjętej opaski nie można zapiąć ponownie. Nacięcia w opasce dodatkowo utrudniają manipulację.
 
-Kartridż Smart Chip zapewnia automatyczną kalibrację drukarki — wystarczy włożyć kartridż, a drukarka ZD510-HC lub HC100 rozpoznaje typ opaski i ustawia optymalne parametry druku. Brak kontaktu operatora z opaskami podczas ładowania i usuwania kartridża.
+Po włożeniu kartridża chip przekazuje drukarce rozmiar opasek. Drukarka sama ustawia zaczernienie i prędkość druku.
 
-Kody kreskowe pozostają czytelne przez cały czas pobytu pacjenta — odporne na wodę, mydło, pianki, alkohole i środki dezynfekcyjne stosowane w szpitalach. Testy laboratoryjne potwierdzają 2–6× większą trwałość niż u konkurencji. Bezlateksowe (latex-free).
+Kod Code 128 na opasce odczytano bez powtórzeń po 50 przetarciach alkoholem izopropylowym 70% i 91%, po 100 przetarciach betadyną i po 6 godzinach w wodzie o temperaturze 40 °C. Powłoka antymikrobowa chroni opaskę przed degradacją.
 
-Opakowanie: 6 kartridży × 200 opasek = 1 200 szt./opak. Sufiks "K" w numerze katalogowym oznacza opakowanie zbiorcze (case).
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Rozmiar dla dorosłych występuje także z kolorowym paskiem, w siedmiu kolorach. Pasek pozwala oznaczyć szczególny stan pacjenta, a znaczenie kolorów ustala placówka.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
-    priceFrom: 1080.72,
+    priceFrom: 1168.10,
     images: ['/images/products/10006995K.png'],
-    imageDescriptions: ['Zebra Z-Band Direct — opaski dla dorosłych (25×279 mm)'],
+    imageDescriptions: ['Kartridż Zebra Z-Band Direct z rolką białych opasek i chipem na boku obudowy (zdjęcie poglądowe)'],
     tags: ['healthcare'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: '10006995K' },
-      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
-      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
-      { name: 'Rozmiar opaski', value: '25,4 × 279,4 mm (1" × 11")' },
-      { name: 'Przeznaczenie', value: 'Dorośli' },
-      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
-      { name: 'Ilość w kartridżu', value: '200 szt.' },
-      { name: 'Kartridży w opakowaniu', value: '6' },
-      { name: 'Łączna ilość', value: '1 200 szt./opak.' },
+      { name: 'Rodzina', value: 'Zebra Z-Band Direct' },
+      { name: 'Rozmiar', value: 'Dla dorosłych' },
+      { name: 'Wymiary opaski', value: '25 × 279 mm (1" × 11")' },
       { name: 'Kolor', value: 'Biały' },
-      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
-      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
-      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
-      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
-      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
-      { name: 'Warianty kolorystyczne', value: 'Biały, czerwony (-1K), niebieski (-2K), zielony (-3K), fioletowy (-4K), różowy (-5K), pomarańczowy (-6K), żółty (-7K)' },
+      { name: 'Materiał', value: 'Polipropylen do druku termicznego, grubość 6,0 mil (ok. 0,15 mm) ±10%' },
+      { name: 'Powłoka', value: 'Antymikrobowa (srebrowa), chroni opaskę przed degradacją' },
+      { name: 'Zapięcie', value: 'Trwałe, samoprzylepne; nacięcia zabezpieczające' },
+      { name: 'Metoda druku', value: 'Termiczna, bez taśmy barwiącej' },
+      { name: 'Opasek w kartridżu', value: '200 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Opasek w opakowaniu', value: '1200 szt.' },
+      { name: 'Chip w kartridżu', value: 'Automatyczna kalibracja; drukarka ustawia zaczernienie i prędkość druku' },
+      { name: 'Drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Testy odczytu kodu', value: 'Woda 40 °C przez 6 h; 50 przetarć alkoholem izopropylowym 70% i 91%; 50 przetarć środkiem Purell; 100 przetarć betadyną; ponad 1000 przetarć suchą tkaniną' },
+      { name: 'Wytrzymałość na rozciąganie', value: 'Do 45 funtów (ok. 200 N)' },
+      { name: 'Temperatura użytkowania', value: 'Od −40 °C do 60 °C (po założeniu i ok. 24 h od zapięcia)' },
+      { name: 'Lateks i BPA', value: 'Nie zawiera' },
+      { name: 'Wersje z kolorowym paskiem', value: '10006995-RK (czerwony), 10006995-2K (niebieski), 10006995-3K (zielony), 10006995-4K (fioletowy), 10006995-5K (różowy), 10006995-6K (pomarańczowy), 10006995-7K (żółty)' },
     ],
     applications: [
-      'Identyfikacja pacjentów dorosłych na oddziałach szpitalnych',
-      'Izba przyjęć i SOR — szybkie drukowanie opasek przy rejestracji',
-      'Weryfikacja tożsamości przed podaniem leków (5 Praw)',
-      'Blok operacyjny — potwierdzenie tożsamości przed zabiegiem',
-      'Laboratoria — kojarzenie próbek z pacjentem',
-      'Banki krwi — identyfikacja dawców i biorców',
+      'Identyfikacja pacjentów dorosłych w szpitalu',
+      'Skanowanie opaski przy podawaniu leków i pobieraniu próbek',
+      'Oznaczanie szczególnego stanu pacjenta opaską z kolorowym paskiem',
     ],
     compatibleAccessories: [],
     relatedAccessories: [],
     faq: [
       {
-        question: 'Ile opasek Z-Band Direct jest w opakowaniu 10006995K?',
-        answer: 'Opakowanie 10006995K zawiera 6 kartridży po 200 opasek = 1 200 szt. łącznie. Sufiks "K" oznacza opakowanie zbiorcze (case). Pojedyncze kartridże są dostępne pod numerem 10006995 (bez "K").',
+        question: 'Ile opasek zawiera opakowanie Zebra 10006995K?',
+        answer: 'Opakowanie 10006995K zawiera 6 kartridży. W każdym kartridżu jest 200 opasek Z-Band Direct o wymiarach 25 × 279 mm, łącznie 1200 sztuk.',
       },
       {
-        question: 'Czy opaski Z-Band Direct są odporne na wodę i dezynfekcję?',
-        answer: 'Tak. Opaski Z-Band Direct są odporne na wodę, mydło, pianki, alkohole i środki dezynfekcyjne stosowane w szpitalach. Kody kreskowe pozostają czytelne przez cały pobyt pacjenta. Testy laboratoryjne Zebra potwierdzają 2–6× większą trwałość niż u konkurencji.',
+        question: 'Jakie numery mają opaski Z-Band Direct z kolorowym paskiem?',
+        answer: 'Wersje dla dorosłych 25 × 279 mm z kolorowym paskiem to: 10006995-RK (czerwony), 10006995-2K (niebieski), 10006995-3K (zielony), 10006995-4K (fioletowy), 10006995-5K (różowy), 10006995-6K (pomarańczowy) i 10006995-7K (żółty). Nie mają osobnych kart w sklepie, więc ofertę na nie przygotowujemy na zapytanie.',
       },
       {
-        question: 'Do jakich drukarek pasują opaski Z-Band Direct?',
-        answer: 'Opaski Z-Band Direct w kartridżach pasują do drukarek Zebra ZD510-HC (aktualna generacja) i HC100 (wycofany model). Kartridże są kompatybilne wstecz — te same wkłady działają w obu drukarkach.',
-      },
-      {
-        question: 'Czy opaski Z-Band Direct mają powłokę antybakteryjną?',
-        answer: 'Tak. Opaski Z-Band Direct posiadają unikalną powłokę antybakteryjną (antimicrobial coating) — jest to jedyny producent opasek identyfikacyjnych oferujący tę technologię. Dodatkowo opaski są bezlateksowe (latex-free).',
-      },
-      {
-        question: 'Jakie są alternatywy dla opasek Zebra Z-Band Direct?',
-        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft (najmiększe, dedykowane do neonatologii), Z-Band QuickClip (z zamknięciem klipsowym), Z-Band Fun (kolorowe, do eventów). Wśród konkurencji: SATO SoftTouch Wristbands i opaski PDC Healthcare.',
+        question: 'Czy opaska jest odporna na płyny do dezynfekcji rąk?',
+        answer: 'Kod na opasce był czytelny po 50 przetarciach środkiem Purell i alkoholem izopropylowym 70% lub 91% oraz po 100 przetarciach betadyną. Przy częstym kontakcie z alkoholem, amoniakiem albo wybielaczem trwałość opaski trzeba sprawdzić w warunkach placówki.',
       },
     ],
     downloads: [
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Zebra Z-Band Direct (EN)', type: 'datasheet', url: '/downloads/zebra-z-band-direct-karta-katalogowa-en.pdf', size: '109 KB' },
     ],
     createdAt: '2026-02-14',
-    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/hospital-wristband-patient-id-wristband.html',
   },
   {
     id: 'zebra-zband-direct-child',
     slug: 'zebra-zband-direct-child',
     name: 'Zebra Z-Band Direct — opaski dziecięce (25×178 mm)',
-    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×7" dla dzieci do drukarek ZD510-HC i HC100 — opakowanie 6 kartridży × 300 szt.',
-    description: `Zebra Z-Band Direct 10006999K to najlepszy wybór dla oddziałów pediatrycznych i klinik dziecięcych, które potrzebują wygodnych i trwałych opasek identyfikacyjnych dla małych pacjentów.
+    shortDescription: 'Zebra Z-Band Direct 10006999K — opaski pediatryczne 25 × 178 mm dla dzieci w szpitalu; opakowanie: 6 kartridży × 300 szt., druk w Zebra ZD510-HC lub HC100',
+    seoTitle: 'Opaski Zebra Z-Band Direct dziecięce 25 × 178 mm — 10006999K',
+    seoDescription: 'Opaski identyfikacyjne dla dzieci Zebra Z-Band Direct 25 × 178 mm, drukowane w Zebra ZD510-HC lub HC100. Opaski pediatryczne Zebra, opaska dziecięca Z-Band Direct Zebra bez lateksu. Opakowanie: 1800 opasek (6 × 300). PN: 10006999K.',
+    description: `Zebra Z-Band Direct 10006999K to opaski identyfikacyjne w rozmiarze pediatrycznym: 25 × 178 mm (1" × 7"). Są przeznaczone dla dzieci leczonych w szpitalu. Jeden kartridż mieści 300 opasek, a opakowanie 6 kartridży, czyli 1800 sztuk.
 
-Opaski Z-Band Direct w rozmiarze dziecięcym 25,4 × 177,8 mm (1" × 7") — krótsze niż opaski dla dorosłych, idealnie dopasowane do nadgarstków i kostek dzieci. Druk termiczny bezpośredni na polipropylenowej opasce z powłoką antybakteryjną. Zapięcie samoprzylepne, bezpieczne dla skóry dziecka. Bezlateksowe (latex-free).
+Opaski nie zawierają lateksu, co zmniejsza ryzyko reakcji alergicznej. Nie zawierają też BPA. Biały polipropylen ma srebrową powłokę antymikrobową, która chroni materiał przed degradacją.
 
-Kartridż Smart Chip — automatyczna kalibracja w drukarkach ZD510-HC i HC100. Odporne na wodę, mydło i środki dezynfekcyjne. 2–6× trwalsze niż opaski konkurencji.
+Kartridż współpracuje z drukarkami Zebra ZD510-HC oraz HC100. Drukarka odczytuje chip kartridża i rozpoznaje rozmiar opasek, dlatego po zmianie kartridża nie trzeba ręcznie ustawiać parametrów druku. Druk termiczny nie wymaga tuszu ani taśmy.
 
-Opakowanie: 6 kartridży × 300 opasek = 1 800 szt./opak.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Wydruk zachował czytelność po ponad 1000 przetarciach suchą tkaniną. Opaska wytrzymuje siłę rozciągającą do 45 funtów (ok. 200 N). Samoprzylepnego zapięcia nie da się odkleić i zapiąć ponownie, a nacięcia zabezpieczające zwiększają bezpieczeństwo zapięcia.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
-    priceFrom: 1266.05,
+    priceFrom: 1368.44,
     images: ['/images/products/10006999K.png'],
-    imageDescriptions: ['Zebra Z-Band Direct — opaski dziecięce (25×178 mm)'],
+    imageDescriptions: ['Kartridże Zebra Z-Band Direct ułożone w stos, z opisem opasek na obudowie (zdjęcie poglądowe)'],
     tags: ['healthcare'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: '10006999K' },
-      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
-      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
-      { name: 'Rozmiar opaski', value: '25,4 × 177,8 mm (1" × 7")' },
-      { name: 'Przeznaczenie', value: 'Dzieci (pediatria)' },
-      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
-      { name: 'Ilość w kartridżu', value: '300 szt.' },
-      { name: 'Kartridży w opakowaniu', value: '6' },
-      { name: 'Łączna ilość', value: '1 800 szt./opak.' },
+      { name: 'Rodzina', value: 'Zebra Z-Band Direct' },
+      { name: 'Rozmiar', value: 'Pediatryczny (dla dzieci)' },
+      { name: 'Wymiary opaski', value: '25 × 178 mm (1" × 7")' },
       { name: 'Kolor', value: 'Biały' },
-      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
-      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
-      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
-      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
-      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Materiał', value: 'Polipropylen do druku termicznego, grubość 6,0 mil (ok. 0,15 mm) ±10%' },
+      { name: 'Powłoka', value: 'Antymikrobowa (srebrowa), chroni opaskę przed degradacją' },
+      { name: 'Zapięcie', value: 'Trwałe, samoprzylepne; nacięcia zabezpieczające' },
+      { name: 'Metoda druku', value: 'Termiczna, bez taśmy barwiącej' },
+      { name: 'Opasek w kartridżu', value: '300 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Opasek w opakowaniu', value: '1800 szt.' },
+      { name: 'Chip w kartridżu', value: 'Automatyczna kalibracja; drukarka ustawia zaczernienie i prędkość druku' },
+      { name: 'Drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Testy odczytu kodu', value: 'Woda 40 °C przez 6 h; 50 przetarć alkoholem izopropylowym 70% i 91%; 50 przetarć środkiem Purell; 100 przetarć betadyną; ponad 1000 przetarć suchą tkaniną' },
+      { name: 'Wytrzymałość na rozciąganie', value: 'Do 45 funtów (ok. 200 N)' },
+      { name: 'Temperatura użytkowania', value: 'Od −40 °C do 60 °C (po założeniu i ok. 24 h od zapięcia)' },
+      { name: 'Lateks i BPA', value: 'Nie zawiera' },
     ],
     applications: [
-      'Identyfikacja pacjentów na oddziałach pediatrycznych',
-      'Izba przyjęć — rejestracja dzieci',
-      'Weryfikacja tożsamości przed podaniem leków dzieciom',
-      'Oddziały chirurgii dziecięcej',
+      'Identyfikacja dzieci przyjętych do szpitala',
+      'Przypisanie leków i próbek do pacjenta przez skanowanie kodu z opaski',
     ],
     compatibleAccessories: [],
     relatedAccessories: [],
     faq: [
       {
-        question: 'Ile opasek dziecięcych Z-Band Direct jest w opakowaniu 10006999K?',
-        answer: 'Opakowanie 10006999K zawiera 6 kartridży po 300 opasek = 1 800 szt. łącznie. Więcej opasek w kartridżu niż w wersji dla dorosłych, ponieważ opaski dziecięce są krótsze (178 mm vs 279 mm).',
+        question: 'Ile opasek dziecięcych jest w opakowaniu 10006999K?',
+        answer: 'W opakowaniu 10006999K jest 6 kartridży po 300 opasek o wymiarach 25 × 178 mm. Razem to 1800 opasek.',
       },
       {
-        question: 'Czym różnią się opaski dziecięce od dorosłych?',
-        answer: 'Opaski dziecięce Z-Band Direct (10006999K) mają rozmiar 25,4 × 177,8 mm (1" × 7") — są krótsze o 102 mm od opasek dorosłych (279 mm). Szerokość identyczna (25,4 mm). Materiał, powłoka antybakteryjna i trwałość identyczne. Kartridż mieści 300 szt. (vs 200 dla dorosłych).',
+        question: 'Czy opaski Z-Band Direct zawierają lateks?',
+        answer: 'Nie. Opaski są wolne od lateksu i BPA. Brak lateksu zmniejsza ryzyko reakcji alergicznych.',
       },
       {
-        question: 'Jakie są alternatywy dla opasek dziecięcych Zebra Z-Band Direct?',
-        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft 10015357K (najmiększe, 1"×7"), Z-Band QuickClip 10027729K (zamknięcie klipsowe). Wśród konkurencji: SATO SoftTouch i PDC Healthcare Soft.',
+        question: 'Czy po zmianie kartridża na opaski dziecięce trzeba konfigurować drukarkę?',
+        answer: 'Nie. Drukarki ZD510-HC i HC100 odczytują chip kartridża, rozpoznają rozmiar opasek i same ustawiają zaczernienie oraz prędkość. Szablon opaski w systemie szpitalnym należy jednak przygotować dla długości 178 mm.',
       },
     ],
     downloads: [
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Zebra Z-Band Direct (EN)', type: 'datasheet', url: '/downloads/zebra-z-band-direct-karta-katalogowa-en.pdf', size: '109 KB' },
     ],
     createdAt: '2026-02-14',
-    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/hospital-wristband-patient-id-wristband.html',
   },
   {
     id: 'zebra-zband-direct-infant',
     slug: 'zebra-zband-direct-infant',
     name: 'Zebra Z-Band Direct — opaski niemowlęce (25×152 mm)',
-    shortDescription: 'Opaski identyfikacyjne termiczne Z-Band Direct 1"×6" dla niemowląt do drukarek ZD510-HC i HC100 — opakowanie 6 kartridży × 350 szt.',
-    description: `Zebra Z-Band Direct 10006998K to najlepszy wybór dla oddziałów neonatologicznych i porodówek, które potrzebują bezpiecznych, delikatnych i trwałych opasek identyfikacyjnych dla noworodków.
+    shortDescription: 'Zebra Z-Band Direct 10006998K — opaski dla niemowląt 25 × 152 mm, bez metalu (MR safe); kartridże dla ZD510-HC oraz HC100, w opakowaniu 2100 opasek',
+    seoTitle: 'Opaski Zebra Z-Band Direct dla niemowląt 25 × 152 mm — 10006998K',
+    seoDescription: 'Opaski identyfikacyjne dla niemowląt Zebra Z-Band Direct 25 × 152 mm, kartridże dla drukarek Zebra ZD510-HC oraz HC100. Opaski niemowlęce Zebra, opaska dla niemowlęcia Z-Band Direct Zebra. W opakowaniu 6 kartridży, 2100 opasek. PN: 10006998K.',
+    description: `Zebra Z-Band Direct 10006998K to opaski identyfikacyjne w rozmiarze dla niemowląt. Mają wymiary 25 × 152 mm (1" × 6"). Kartridż mieści 350 opasek, a opakowanie 6 kartridży, łącznie 2100 sztuk.
 
-Opaski Z-Band Direct w rozmiarze niemowlęcym 25,4 × 152,4 mm (1" × 6") — najkrótsze w ofercie, zaprojektowane specjalnie na nadgarstki i kostki noworodków. Druk termiczny bezpośredni z powłoką antybakteryjną. Zapięcie samoprzylepne, bezlateksowe (latex-free), bezpieczne dla delikatnej skóry noworodka.
+Opaski Z-Band nie zawierają metalu. Warstwa termiczna składa się głównie z barwników leuco i wywoływaczy, a nadruki wykonano lakierami UV i farbami wodnymi. Dlatego opaski są uznawane za bezpieczne w środowisku rezonansu magnetycznego (MR safe). Nie zawierają lateksu ani BPA.
 
-Kartridż Smart Chip — automatyczna kalibracja. Kody kreskowe czytelne przez cały okres pobytu w szpitalu. Odporne na wodę, mydło, środki dezynfekcyjne.
+Po prawidłowym założeniu i ok. 24 godzinach od zapięcia opaska znosi temperaturę od −40 °C do 60 °C. Jest przeznaczona do krótkotrwałego użytku wewnątrz pomieszczeń. Kartridże należy przechowywać w temperaturze od 0 °C do 21 °C przy wilgotności względnej 35–50%.
 
-Dla skrajnie delikatnej skóry (np. wcześniaki) rekomendujemy opaski Z-Band UltraSoft — najmiększe opaski identyfikacyjne na rynku.
-
-Opakowanie: 6 kartridży × 350 opasek = 2 100 szt./opak.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Opaski drukują drukarki Zebra ZD510-HC i HC100, termicznie, bez taśmy barwiącej. Chip w kartridżu informuje drukarkę o rozmiarze opasek i umożliwia automatyczną kalibrację.`,
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['opaski-identyfikacyjne'],
     manufacturerId: 'zebra',
-    priceFrom: 1425.20,
+    priceFrom: 1540.42,
     images: ['/images/products/10006998K.png'],
-    imageDescriptions: ['Zebra Z-Band Direct — opaski niemowlęce (25×152 mm)'],
+    imageDescriptions: ['Opaski Zebra Z-Band Direct w różnych rozmiarach z wydrukowanymi danymi i kodami kreskowymi (zdjęcie poglądowe)'],
     tags: ['healthcare'],
     availability: 'available',
     isNew: false,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: '10006998K' },
-      { name: 'Typ', value: 'Z-Band Direct (termiczna bezpośrednia)' },
-      { name: 'Materiał', value: 'Polipropylen z powłoką antybakteryjną' },
-      { name: 'Rozmiar opaski', value: '25,4 × 152,4 mm (1" × 6")' },
-      { name: 'Przeznaczenie', value: 'Niemowlęta (neonatologia)' },
-      { name: 'Zapięcie', value: 'Samoprzylepne (adhesive closure)' },
-      { name: 'Ilość w kartridżu', value: '350 szt.' },
-      { name: 'Kartridży w opakowaniu', value: '6' },
-      { name: 'Łączna ilość', value: '2 100 szt./opak.' },
+      { name: 'Rodzina', value: 'Zebra Z-Band Direct' },
+      { name: 'Rozmiar', value: 'Dla niemowląt' },
+      { name: 'Wymiary opaski', value: '25 × 152 mm (1" × 6")' },
       { name: 'Kolor', value: 'Biały' },
-      { name: 'Druk', value: 'Termiczny bezpośredni (direct thermal)' },
-      { name: 'Smart Chip', value: 'Tak (automatyczna kalibracja)' },
-      { name: 'Odporność', value: 'Woda, mydło, alkohole, środki dezynfekcyjne, UV' },
-      { name: 'Bezlateksowe', value: 'Tak (latex-free)' },
-      { name: 'Kompatybilne drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Materiał', value: 'Polipropylen do druku termicznego, grubość 6,0 mil (ok. 0,15 mm) ±10%' },
+      { name: 'Powłoka', value: 'Antymikrobowa (srebrowa), chroni opaskę przed degradacją' },
+      { name: 'Zapięcie', value: 'Trwałe, samoprzylepne; nacięcia zabezpieczające' },
+      { name: 'Metoda druku', value: 'Termiczna, bez taśmy barwiącej' },
+      { name: 'Opasek w kartridżu', value: '350 szt.' },
+      { name: 'Kartridży w opakowaniu', value: '6' },
+      { name: 'Opasek w opakowaniu', value: '2100 szt.' },
+      { name: 'Chip w kartridżu', value: 'Automatyczna kalibracja; drukarka ustawia zaczernienie i prędkość druku' },
+      { name: 'Drukarki', value: 'Zebra ZD510-HC, HC100' },
+      { name: 'Badanie MR', value: 'Uznawane za MR safe (brak metalu)' },
+      { name: 'Temperatura użytkowania', value: 'Od −40 °C do 60 °C (po założeniu i ok. 24 h od zapięcia)' },
+      { name: 'Przechowywanie kartridży', value: 'Od 0 °C do 21 °C, wilgotność względna 35–50%, bez kondensacji' },
+      { name: 'Lateks i BPA', value: 'Nie zawiera' },
     ],
     applications: [
-      'Identyfikacja noworodków na oddziale neonatologicznym',
-      'Porodówki — natychmiastowa identyfikacja po porodzie',
-      'Oddziały intensywnej terapii noworodka (OITN)',
-      'Kojarzenie noworodek–matka (mother-baby matching)',
+      'Identyfikacja niemowląt w szpitalu',
+      'Odczyt kodu z opaski skanerem przy czynnościach wykonywanych u pacjenta',
     ],
     compatibleAccessories: [],
     relatedAccessories: [],
     faq: [
       {
-        question: 'Ile opasek niemowlęcych Z-Band Direct jest w opakowaniu 10006998K?',
-        answer: 'Opakowanie 10006998K zawiera 6 kartridży po 350 opasek = 2 100 szt. łącznie. Największa ilość w kartridżu spośród wszystkich rozmiarów Z-Band Direct, ponieważ opaski niemowlęce są najkrótsze (152 mm).',
+        question: 'Ile opasek niemowlęcych zawiera opakowanie 10006998K?',
+        answer: 'W opakowaniu jest 6 kartridży po 350 opasek o wymiarach 25 × 152 mm. Łącznie daje to 2100 opasek.',
       },
       {
-        question: 'Czy opaski Z-Band Direct są bezpieczne dla noworodków?',
-        answer: 'Tak. Opaski Z-Band Direct są bezlateksowe (latex-free) z powłoką antybakteryjną. Dla skrajnie delikatnej skóry (wcześniaki, OITN) rekomendujemy model Z-Band UltraSoft (10015356K) — najmiększe opaski identyfikacyjne na rynku, specjalnie zaprojektowane do neonatologii.',
+        question: 'Czy opaski Z-Band Direct zawierają metal?',
+        answer: 'Nie. Opaski są wykonane z polipropylenu i winylu, bez metalu w materiale ani na powierzchni. Z tego powodu są uznawane za bezpieczne w środowisku rezonansu magnetycznego (MR safe).',
       },
       {
-        question: 'Jakie są alternatywy dla opasek niemowlęcych Zebra Z-Band Direct?',
-        answer: 'Alternatywami są: opaski Zebra Z-Band UltraSoft 10015356K (najmiększe, 0,75"×11" dedykowane do neonatologii) i Z-Band Direct 10006997K (0,75"×11" — najwęższe, 19 mm). Wśród konkurencji: SATO SoftTouch Infant i PDC Healthcare ComfortBand.',
+        question: 'Jakie inne opaski Zebra dla niemowląt pasują do ZD510-HC?',
+        answer: 'W rozmiarze 25 × 152 mm Zebra oferuje także miękkie opaski Z-Band UltraSoft (10015358K). Opaski Z-Band Newborn (10035439K) mają wymiary 19 × 195 mm i regulowany obwód. Te produkty nie mają kart w sklepie; ofertę przygotowujemy na zapytanie.',
       },
     ],
     downloads: [
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/z-band-direct-wristbands-spec-sheet-en-us.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Zebra Z-Band Direct (EN)', type: 'datasheet', url: '/downloads/zebra-z-band-direct-karta-katalogowa-en.pdf', size: '109 KB' },
     ],
     createdAt: '2026-02-14',
-    sameAs: 'https://www.zebra.com/us/en/products/supplies/wristbands/z-band-direct.html',
+    sameAs: 'https://www.zebra.com/us/en/products/supplies/hospital-wristband-patient-id-wristband.html',
   },
 ]
 
