@@ -1,3 +1,6 @@
+import SunmiV3Story from '@/components/product/SunmiV3Story'
+import SunmiD3Story from '@/components/product/SunmiD3Story'
+import SunmiT3Story from '@/components/product/SunmiT3Story'
 import { getProductVariantTooltips } from '@/lib/product-variant-tooltips'
 import { getProductTabTitle, getVariantTabTitle, isShortTabTitleScope } from '@/lib/product-tab-title'
 import { isRfidContentProduct } from '@/lib/rfid-content'
@@ -1471,8 +1474,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>
+              {!['sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
               {(() => {
+                if (['sunmi-t3-pro', 'sunmi-t3-pro-max'].includes(product.slug)) return <SunmiT3Story max={product.slug === 'sunmi-t3-pro-max'} />
+                if (['sunmi-d3', 'sunmi-d3-pro'].includes(product.slug)) return <SunmiD3Story pro={product.slug === 'sunmi-d3-pro'} />
+                if (product.slug === 'sunmi-v3-plus') return <SunmiV3Story />
                 const series = isThermalLabel
                   ? thermalLabelSeries.find(s => s.productId === product.id)
                   : null
