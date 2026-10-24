@@ -90,7 +90,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -179,7 +179,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -263,7 +263,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -350,7 +350,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -433,7 +433,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -515,7 +515,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -600,7 +600,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -689,7 +689,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -773,7 +773,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -853,7 +853,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -941,7 +941,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1029,7 +1029,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1117,7 +1117,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1205,7 +1205,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1293,7 +1293,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1381,7 +1381,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1465,7 +1465,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1549,7 +1549,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1633,7 +1633,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1715,7 +1715,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1797,7 +1797,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1866,7 +1866,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -1932,7 +1932,7 @@ export const zebraWtMounts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],
@@ -2140,7 +2140,7 @@ export const zebraRs5000xProducts: Product[] = [
       {
         "name": "Przewodnik akcesoriów Zebra WT5400 / WT6400 (EN)",
         "type": "pdf",
-        "url": "/downloads/zebra-wt5400-wt6400-akcesoria.pdf",
+        "url": "/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf",
         "size": "4,1 MB"
       }
     ],

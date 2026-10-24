@@ -74,7 +74,7 @@ Powiązania: `relatedProducts` akcesoriów = `zebra-wt5400`, `zebra-wt6400` (kar
 - **RS5000x — masa:** karta PL dopisuje „w tym kabel”, karta EN nie. W specyfikacji bez tego dopisku.
 - **RS5000x — krótki przewód:** PN „Short Cable”; PRG: przy terminalu na biodrze potrzebna wersja z przedłużonym przewodem (tylko RS5000), przy terminalu na nadgarstku przewód podłącza się do złącza bliżej nadgarstka.
 - **RS5000x — strona modelu:** `sameAs` = strona serii RS5000 (PL), bo osobnej strony RS5000x nie ma (404).
-- **Przewodnik akcesoriów w downloads:** plik `public/downloads/zebra-wt5400-wt6400-akcesoria.pdf` (4,1 MB). Gałąź A może dodać ten sam przewodnik pod inną nazwą — integrator powinien zostawić jeden plik i ujednolicić linki.
+- **Przewodnik akcesoriów w downloads:** plik `public/downloads/zebra-wt5400-wt6400-akcesoria-en.pdf` (4,1 MB). Gałąź A może dodać ten sam przewodnik pod inną nazwą — integrator powinien zostawić jeden plik i ujednolicić linki.
 
 ## 5. Zdjęcia
 
