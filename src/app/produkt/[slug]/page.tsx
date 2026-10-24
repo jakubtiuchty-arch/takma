@@ -1,3 +1,4 @@
+import SunmiL2sProStory from '@/components/product/SunmiL2sProStory'
 import SunmiM3Story from '@/components/product/SunmiM3Story'
 import SunmiV3FamilyStory from '@/components/product/SunmiV3FamilyStory'
 import SunmiV3Story from '@/components/product/SunmiV3Story'
@@ -1476,10 +1477,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
-              {!['sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
+              {!['sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
               {(() => {
                 if (['sunmi-t3-pro', 'sunmi-t3-pro-max'].includes(product.slug)) return <SunmiT3Story max={product.slug === 'sunmi-t3-pro-max'} />
                 if (['sunmi-d3', 'sunmi-d3-pro'].includes(product.slug)) return <SunmiD3Story pro={product.slug === 'sunmi-d3-pro'} />
+                if (product.slug === 'sunmi-l2s-pro') return <SunmiL2sProStory />
                 if (product.slug === 'sunmi-m3') return <SunmiM3Story />
                 if (product.slug === 'sunmi-v3-plus') return <SunmiV3Story />
                 if (['sunmi-v3', 'sunmi-v3h'].includes(product.slug)) return <SunmiV3FamilyStory high={product.slug === 'sunmi-v3h'} />

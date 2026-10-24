@@ -1,0 +1,42 @@
+'use client'
+
+import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import shared from './SunmiD3Story.module.css'
+import mobile from './SunmiV3Story.module.css'
+import family from './SunmiV3FamilyStory.module.css'
+import s from './SunmiL2sProStory.module.css'
+
+const base = '/images/sunmi-l2s-pro/'
+const scenes = [
+  { label: 'Magazyn', image: 'p2-1-3.webp', title: 'Przyjmuj towar i kompletuj zamówienia.', text: 'Odczytaj kod produktu, sprawdź pozycję w aplikacji i zapisz ilość. Do częstego skanowania wybierz wersję z osobnym modułem 1D/2D.' },
+  { label: 'Przesyłki', image: 'p2-2-3.webp', title: 'Rejestruj paczki tam, gdzie pracujesz.', text: 'Skanuj etykiety przy sortowaniu i wydawaniu przesyłek. Poza zasięgiem Wi-Fi możesz korzystać z 4G LTE. Potrzebujesz karty SIM i usługi operatora.' },
+  { label: 'Sklep', image: 'p2-3-3.webp', title: 'Sprawdzaj towar bez odchodzenia od regału.', text: 'Odczytaj kod i otwórz informacje o produkcie w aplikacji. Zgodny program pozwoli też zapisać wynik inwentaryzacji lub sprawdzić stan magazynowy.' },
+]
+const versions = [
+  ['P09064085','3 / 32 GB · SS1111','Moduł skanujący SUNMI i usługi Google GMS EDLA.'],
+  ['P09064014','4 / 64 GB · skaner 1D/2D','Osobny moduł skanujący i usługi Google GMS EDLA.'],
+  ['P09064007','4 / 64 GB · skaner 1D/2D','Osobny moduł skanujący. SUNMI OS bez usług Google.'],
+  ['P09064080','3 / 32 GB · SS1111','Moduł skanujący SUNMI. SUNMI OS bez usług Google.'],
+  ['P09064024','3 / 32 GB · odczyt aparatem','Bez osobnego skanera i bez usług Google. Kody odczytuje tylny aparat 13 MP w zgodnej aplikacji.'],
+]
+function Photo({ name, alt, contain = false }: { name: string; alt: string; contain?: boolean }) {
+  return <Image src={base+name} alt={alt} fill quality={90} sizes="(max-width: 640px) 100vw, 1200px" className={contain?mobile.contain:mobile.cover} />
+}
+export default function SunmiL2sProStory() {
+  const [scene, setScene] = useState(0)
+  return <div className={`${shared.story} ${s.story}`}>
+    <nav className={shared.nav} aria-label="Poznaj SUNMI L2s Pro"><span>SUNMI <b>L2s PRO</b></span><div><a href="#l2s-scan">Skanowanie</a><a href="#l2s-protection">Odporność</a><a href="#l2s-versions">Wersje</a><a href="#warianty">Ceny ↗</a></div></nav>
+    <section className={s.hero}><div className={s.heroCopy}><p className={shared.eyebrow}>KOLEKTOR DANYCH DO SKLEPU I MAGAZYNU</p><h2>SUNMI<br /><span>L2s PRO</span></h2><h3>Skanuj towary.<br />Pracuj bez papierowych list.</h3><p>Dotykowy kolektor z ekranem 5,5″, łącznością 4G LTE i obudową IP68. Dobierz skaner oraz system do swojej aplikacji.</p><a href="#l2s-scan">Poznaj możliwości ↓</a></div><div className={s.heroPhoto}><Photo name="p5-1-en-2.webp" alt="SUNMI L2s Pro — kolektor danych w obudowie IP68" contain /></div><span className={s.heroNote}>Android 12 · 5 konfiguracji w ofercie</span></section>
+    <div className={shared.facts}>{[['5,5″','Dotykowy ekran IPS'],['5000 mAh','Wymienna bateria'],['IP68','Klasa szczelności'],['4G LTE','Łączność poza siecią Wi-Fi']].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div>
+    <section id="l2s-scan" className={s.scan}><div className={shared.head}><p className={shared.eyebrow}>SKANER KODÓW 1D I 2D</p><h2>Odczytuj etykiety.<br /><span>Także te zużyte i zabrudzone.</span></h2><p>Wersje z modułem skanującym odczytują kody porysowane, poplamione i pogniecione. Boczne przyciski pozwalają uruchomić skanowanie jedną ręką.</p></div><div className={s.scanPhoto}><Photo name="p4-1.webp" alt="Skanowanie kodów terminalem SUNMI L2s Pro przy regałach magazynowych" /></div><div className={s.scanDetails}><div><h3>Odczyt z odległości do 1 m</h3><p>Zasięg zależy od wielkości, rodzaju i jakości kodu. Dotyczy konfiguracji z osobnym modułem skanującym.</p></div><div><h3>OCR dla aplikacji firmowych</h3><p>Rozpoznawanie tekstu wymaga integracji programu z SDK SUNMI. Można je wykorzystać np. do odczytu numerów przesyłek.</p></div></div></section>
+    <section className={mobile.scenes}><div className={shared.head}><p className={shared.eyebrow}>OD PRZYJĘCIA TOWARU DO WYSYŁKI</p><h2>Kod produktu.<br /><span>Informacja w aplikacji.</span></h2><p>L2s Pro łączy skanowanie z pracą w programie magazynowym lub sprzedażowym. Aplikację i jej licencję dobierasz osobno.</p></div><div className={mobile.sceneTabs} role="tablist" aria-label="Zastosowania L2s Pro">{scenes.map((item,i)=><button type="button" key={item.label} role="tab" id={`l2s-scene-tab-${i}`} aria-controls="l2s-scene-panel" aria-selected={scene===i} onClick={()=>setScene(i)} className={scene===i?mobile.selected:''}>{item.label}</button>)}</div><div className={mobile.scenePanel} role="tabpanel" id="l2s-scene-panel" aria-labelledby={`l2s-scene-tab-${scene}`}><div className={mobile.scenePhoto}><Photo name={scenes[scene].image} alt={`SUNMI L2s Pro — ${scenes[scene].label.toLowerCase()}`} /></div><div className={mobile.sceneCopy}><span>0{scene+1} / 03</span><h3>{scenes[scene].title}</h3><p>{scenes[scene].text}</p></div></div></section>
+    <section id="l2s-protection" className={s.protection}><div><p className={shared.eyebrow}>PYŁ, WODA I PRZYPADKOWE UPADKI</p><h2>Obudowa do pracy<br /><span>poza biurkiem.</span></h2><p>Pyłoszczelna konstrukcja IP68 wytrzymuje zanurzenie na głębokości 1,2 m przez 30 minut. Ekran chroni szkło Corning Gorilla Glass.</p><strong>1,5 <small>m</small></strong><p className={s.note}>Wysokość upadku podczas testu.</p></div><div className={s.protectionPhoto}><Photo name="p5-1-en-2.webp" alt="SUNMI L2s Pro — ochrona przed pyłem i wodą" contain /></div></section>
+    <section className={s.battery}><div className={shared.head}><p className={shared.eyebrow}>WYMIENNA BATERIA 5000 mAh</p><h2>Przygotuj zapas energii<br /><span>na kolejne zadania.</span></h2><p>Rozładowaną baterię możesz wymienić na naładowaną. Zapasowe ogniwo kupujesz osobno. Czas pracy zależy od aplikacji, łączności i częstotliwości skanowania.</p></div><div className={s.batteryPhoto}><Photo name="p5-2.webp" alt="Wymienna bateria 5000 mAh w SUNMI L2s Pro" contain /></div><p className={s.note}>Ładowanie 18 W jest opcjonalne. Przed zakupem potwierdź obsługę tej funkcji w wybranej konfiguracji.</p><Link href="/produkt/sunmi-x09060578">Zobacz baterię zapasową ↗</Link></section>
+    <section className={shared.system}><div><p className={shared.eyebrow}>ANDROID 12 · OŚMIORDZENIOWY PROCESOR</p><h2>Skaner i aplikacja.<br /><span>W jednym urządzeniu.</span></h2><p>Procesor Cortex-A53 ma cztery rdzenie 2,0 GHz i cztery 1,5 GHz. Wybierz pamięć 3/32 lub 4/64 GB oraz wersję z usługami Google albo bez nich.</p></div><div className={shared.systemCards}>{[['Wi-Fi 5','Sieci 2,4 i 5 GHz'],['4G LTE','Połączenie z usługą operatora'],['NFC','Odczyt zgodnych kart i znaczników'],['microSD','Rozbudowa pamięci do 256 GB']].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}</div></section>
+    <section id="l2s-versions" className={family.versions}><div className={shared.head}><p className={shared.eyebrow}>PIĘĆ KONFIGURACJI</p><h2>Dobierz wyposażenie<br /><span>do sposobu pracy.</span></h2><p>Numer PN określa pamięć, moduł skanujący i dostęp do usług Google. Wersja P09064024 nie ma osobnego skanera.</p></div><div className={family.versionGrid}>{versions.map(([pn,title,text])=><div key={pn}><span>{pn}</span><h3>{title}</h3><p>{text}</p><a href="#warianty">Sprawdź cenę i dostępność ↑</a></div>)}</div></section>
+    <section className={s.charging}><div className={shared.head}><p className={shared.eyebrow}>STACJE I AKCESORIA</p><h2>Odłóż terminal.<br /><span>Naładuj cały zestaw.</span></h2><p>Opcjonalna stacja 4-stanowiskowa ładuje terminale także w etui, z uchwytem spustowym lub paskiem na dłoń. Urządzenia i akcesoria są sprzedawane osobno.</p></div><div className={s.chargingPhoto}><Photo name="p7-quad-base.webp" alt="Cztery kolektory SUNMI w opcjonalnej stacji ładującej" /></div><Link href="/produkt/sunmi-c14004067">Zobacz stację 4-stanowiskową ↗</Link></section>
+    <section className={shared.final}><p className={shared.eyebrow}>SUNMI L2s PRO DLA TWOJEJ FIRMY</p><h2>Wybierz konfigurację.<br /><span>Przygotuj stanowisko pracy.</span></h2><p>Sprawdź wymagania programu i sposób odczytu kodów. Pomożemy dobrać terminal, baterię oraz akcesoria do ładowania i ochrony.</p><div><a href="#warianty">Zobacz wersje i ceny ↑</a><a href="#akcesoria">Dobierz akcesoria ↓</a></div></section>
+  </div>
+}
