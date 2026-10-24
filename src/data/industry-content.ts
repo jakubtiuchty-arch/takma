@@ -1502,7 +1502,9 @@ export const industryPages: IndustryPage[] = [
 <li><strong>Integracja z systemami aptecznymi</strong> — Apteo, Kamsoft, Meddis, HIS szpitalny przez ZPL II i Ethernet</li>
 </ul>
 
-<p>Do aptek detalicznych rekomendujemy <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (od 621 zł), do aptek szpitalnych <a href="/produkt/zebra-zd421d">ZD421d</a> i <a href="/produkt/zebra-zd621d">ZD621d</a>, a do produkcji farmaceutycznej GMP — przemysłowe <a href="/produkt/zebra-zt411">ZT411</a> i <a href="/produkt/zebra-zt610">ZT610</a>.</p>`,
+<p>Do aptek detalicznych rekomendujemy <a href="/produkt/zebra-zd220d">Zebra ZD220d</a> (od 621 zł), do aptek szpitalnych <a href="/produkt/zebra-zd421d">ZD421d</a> i <a href="/produkt/zebra-zd621d">ZD621d</a>, a do produkcji farmaceutycznej GMP — przemysłowe <a href="/produkt/zebra-zt411">ZT411</a> i <a href="/produkt/zebra-zt610">ZT610</a>.</p>
+
+<p>Drukarki Zebra w wersji HC do szpitali, z obudową z tworzyw odpornych na środki dezynfekcyjne, są w kategorii <a href="/drukarki-dla-sluzby-zdrowia">drukarki dla służby zdrowia</a>. Drukarka opasek dla pacjentów <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski Z-Band z kartridżów.</p>`,
     definition: {
       heading: 'Czym jest drukarka etykiet do apteki i farmacji?',
       content: `<p>Drukarka etykiet do apteki to urządzenie klasy medycznej (healthcare grade printer) umożliwiające druk:</p>

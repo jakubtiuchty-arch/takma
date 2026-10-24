@@ -56,6 +56,8 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Termotransferowe drukarki etykiet: https://www.takma.com.pl/termotransferowe-drukarki-etykiet
   - Termiczne drukarki etykiet: https://www.takma.com.pl/termiczne-drukarki-etykiet
   - Mobilne drukarki etykiet: https://www.takma.com.pl/mobilne-drukarki-etykiet
+  - Drukarki dla służby zdrowia: https://www.takma.com.pl/drukarki-dla-sluzby-zdrowia — drukarki Zebra HC do szpitali, laboratoriów i aptek szpitalnych: drukarka opasek ZD510-HC z kartridżami Z-Band, biurkowe ZD411-HC, ZD611-HC, ZD421-HC i ZD621-HC oraz mobilne ZQ610 Plus-HC i ZQ620 Plus-HC. Obudowa z tworzyw odpornych na środki dezynfekcyjne; w modelach biurkowych obudowa odporna na UV i zasilacz zgodny z IEC 60601-1.
+  - Drukarki opasek identyfikacyjnych: https://www.takma.com.pl/drukarki-opasek; opaski Z-Band: https://www.takma.com.pl/opaski-identyfikacyjne
   - Drukarki etykiet BIXOLON: https://www.takma.com.pl/drukarki-etykiet-bixolon — biurkowe XD3, XD5 i SLP, przemysłowe XT3 i XT5 (do 600 dpi), mobilne XM7 i SPP-L, linerless XL5-40CT, XQ-840II z tabletem Android i RFID XD5-40tR, XT5-40NR; emulacja BPL-Z zgodna z ZPL II.
   - Drukarki RFID (druk i kodowanie etykiet RAIN UHF RFID): https://www.takma.com.pl/drukarki-rfid — biurkowe, przemysłowe 4- i 6-calowe oraz mobilne drukarki Zebra, SATO, Honeywell, TSC, Brother i BIXOLON w rozdzielczości od 203 do 609 dpi. RAIN UHF RFID opiera się na standardzie EPC UHF Gen2 v2 (ISO/IEC 18000-63), a w Europie pracuje w paśmie 865–868 MHz (ETSI). Aktualne ceny są na stronie kategorii.
   - Kolorowe drukarki etykiet Epson ColorWorks: https://www.takma.com.pl/kolorowe-drukarki-etykiet

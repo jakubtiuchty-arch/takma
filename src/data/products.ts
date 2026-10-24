@@ -12,6 +12,10 @@ import { zebraRs5100Products, zebraRs5100Accessories } from './zebra-rs5100-prod
 import { zebraWtProducts, zebraWtAccessories } from './zebra-wt-products'
 import { zebraWtMounts, zebraRs5000xProducts } from './zebra-wt-mounts'
 import { wearableTerminalCategory } from './wearable-terminal-category'
+import { healthcarePrinterCategory } from './healthcare-printer-category'
+import { zebraHcZd4Products } from './zebra-hc-zd4-products'
+import { zebraHcZd6Products } from './zebra-hc-zd6-products'
+import { zebraHcZq6Products } from './zebra-hc-zq6-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -299,10 +303,10 @@ export const categories: Category[] = [
     id: 'drukarki-opasek',
     slug: 'drukarki-opasek',
     name: 'Drukarki opasek identyfikacyjnych',
-    description: 'Dedykowane drukarki opasek identyfikacyjnych do szpitali, klinik i eventów — system kartridżowy Z-Band',
+    description: 'Drukarki opasek identyfikacyjnych dla pacjentów i gości: opaski Z-Band w kartridżach, druk termiczny bez taśmy barwiącej',
     seoTitle: 'Drukarki opasek identyfikacyjnych | Drukarka opasek szpitalnych Zebra',
-    seoDescription: 'Drukarki opasek identyfikacyjnych Zebra ZD510-HC do szpitali, klinik i eventów. System kartridżowy Z-Band, zasilacz medyczny IEC 60601-1, automatyczna kalibracja. Identyfikacja pacjentów z kodem kreskowym. Ceny od 2 674 zł netto.',
-    longDescription: 'Drukarki opasek identyfikacyjnych (wristband printers) to dedykowane urządzenia do druku termicznego na opaskach na nadgarstek. W szpitalach służą do identyfikacji pacjentów — każda opaska zawiera imię, nazwisko, kod kreskowy i dane powiązane z systemem HIS/ADT. Na eventach i w parkach rozrywki działają jako kontrola wstępu i system cashless. Zebra ZD510-HC to następca modelu HC100 — jedyna drukarka opasek z zasilaczem klasy medycznej IEC 60601-1, obudową odporną na UV i dezynfekcję oraz systemem kartridżowym Smart Chip z automatyczną kalibracją. Kompatybilna z opaskami Z-Band Direct, UltraSoft, QuickClip i Fun.',
+    seoDescription: 'Drukarka opasek identyfikacyjnych Zebra ZD510-HC dla szpitali: opaski Z-Band w kartridżach z automatyczną kalibracją, druk termiczny 300 dpi, zasilacz zgodny z IEC 60601-1. Opaski dla pacjentów i gości.',
+    longDescription: 'Drukarki opasek identyfikacyjnych drukują termicznie kody kreskowe i dane na opaskach na rękę. W szpitalu opaska z kodem kreskowym służy do identyfikacji pacjenta. W parkach rozrywki, aquaparkach i na imprezach opaski służą do identyfikacji gości. Zebra ZD510-HC drukuje opaski Z-Band z kartridżów, a chip w kartridżu umożliwia automatyczną kalibrację. Drukarka ma obudowę odporną na środki dezynfekcyjne i promieniowanie UV oraz zasilacz zgodny z normą IEC 60601-1. Drukarki etykiet i opasek z rolki dla szpitali są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
     icon: 'printer',
     productCount: 1,
   },
@@ -530,6 +534,7 @@ export const subcategories: Subcategory[] = [
     productIds: [...bixolonMobileProducts.map(p => p.id), 'tsc-alpha-40l-rfid', 'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus', 'zebra-zq630-plus', 'zebra-zq630-plus-rfid', 'zebra-zq310-plus', 'zebra-zq320-plus', 'zebra-zq220-plus', 'zebra-zq210', 'honeywell-rp2f', 'honeywell-rp4f', 'honeywell-lnx3', 'brother-rj-4230b', 'citizen-cmp-20ii', 'citizen-cmp-25l'],
     productCount: 25,
   },
+  healthcarePrinterCategory,
   rfidPrinterCategory,
   rfidTerminalCategory,
   wearableTerminalCategory,
@@ -803,10 +808,10 @@ export const subcategories: Subcategory[] = [
     slug: 'opaski-identyfikacyjne',
     name: 'Opaski identyfikacyjne',
     parentCategoryId: 'materialy-eksploatacyjne',
-    description: 'Opaski na nadgarstek do szpitali, eventów i parków rozrywki — Z-Band Direct, Z-Band Fun',
-    seoTitle: 'Opaski identyfikacyjne Zebra | Z-Band do szpitali i eventów',
-    seoDescription: 'Opaski identyfikacyjne Zebra Z-Band Direct, Z-Band Fun, Z-Band Ultra Soft. Do identyfikacji pacjentów w szpitalach, kontroli wstępu na eventach i parkach rozrywki. Drukowane na drukarkach Zebra HC100 i ZD510-HC.',
-    longDescription: 'Opaski identyfikacyjne Zebra Z-Band to bezpieczne, wygodne i trwałe rozwiązanie do identyfikacji osób. W szpitalach zapewniają precyzyjną identyfikację pacjentów z kodem kreskowym — zgodnie z wymogami akredytacji i bezpieczeństwa farmakoterapii. Na eventach i w parkach rozrywki służą jako kontrola wstępu i system cashless. Serie: Z-Band Direct (termiczne, ekonomiczne), Z-Band Fun (kolorowe, do eventów), Z-Band Ultra Soft (najdelikatniejsze, do noworodków). Drukowane na dedykowanych drukarkach opasek Zebra HC100 i ZD510-HC.',
+    description: 'Opaski na rękę Zebra Z-Band Direct w kartridżach do drukarek ZD510-HC i HC100 — dla pacjentów dorosłych, dzieci i niemowląt',
+    seoTitle: 'Opaski identyfikacyjne Zebra Z-Band dla pacjentów | Opaski szpitalne',
+    seoDescription: 'Opaski identyfikacyjne Zebra Z-Band Direct dla pacjentów: rozmiary dla dorosłych, dzieci i niemowląt, kartridże do drukarek opasek ZD510-HC i HC100. Wodoodporne, bez lateksu i BPA.',
+    longDescription: 'Opaski identyfikacyjne Zebra Z-Band Direct to opaski na rękę z polipropylenu do druku termicznego. Służą do identyfikacji pacjentów dorosłych, dzieci i niemowląt. Trwałe zapięcie samoprzylepne uniemożliwia zdjęcie i ponowne założenie opaski. Opaski są wodoodporne i nie zawierają lateksu ani BPA. Kartridże z opaskami pasują do drukarek Zebra ZD510-HC i HC100. Drukarki etykiet i opasek dla szpitali są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
     icon: 'tag',
     productIds: ['zebra-zband-direct-adult', 'zebra-zband-direct-child', 'zebra-zband-direct-infant'],
     productCount: 3,
@@ -4281,102 +4286,95 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd200-series/zd230.html',
   },
   // ---- Drukarka opasek identyfikacyjnych ----
+  // Przepisana 25.10.2026 według karty katalogowej ZD510-HC (10.2025) i User Guide P1099655-04EN.
+  // Do sprzedaży tylko PN z ceną w API; D0EE00FZ i D0EB02FZ nie mają oferty u dystrybutorów.
   {
     id: 'zebra-zd510-hc',
     slug: 'zebra-zd510-hc',
     name: 'Zebra ZD510-HC',
-    shortDescription: 'Zebra ZD510-HC — biurkowa drukarka opasek identyfikacyjnych 300 dpi, ZPL, Link-OS, Ethernet, zasilacz medyczny IEC 60601-1',
-    seoTitle: 'Drukarka opasek Zebra ZD510-HC — szpitalna HIPAA 300 dpi | od 2 674 zł',
-    seoDescription: 'Zebra ZD510-HC — drukarka opasek pacjenta dla szpitali i klinik. Z-Band, HIPAA, IEC 60601-1, 300 dpi. ZD51013-D0EE00FZ od 2 674 zł netto.',
-    description: `Zebra ZD510-HC to najlepszy wybór dla szpitali, klinik i laboratoriów, które potrzebują niezawodnej drukarki opasek identyfikacyjnych z certyfikatem medycznym i integracją z systemami ADT.
+    shortDescription: 'Zebra ZD510-HC — drukarka opasek identyfikacyjnych dla pacjentów: kartridże Z-Band, druk termiczny 300 dpi, Ethernet i zasilacz zgodny z IEC 60601-1',
+    seoTitle: 'Zebra ZD510-HC — drukarka opasek szpitalnych dla pacjentów',
+    seoDescription: 'Drukarka opasek szpitalnych Zebra ZD510-HC: opaski Z-Band w kartridżach, druk termiczny 300 dpi, USB i Ethernet, zasilacz IEC 60601-1. Drukarka do opasek dla pacjentów Zebra ZD510-HC, ZD510-HC Zebra. PN: ZD51013-D0ER00FZ (USB, Ethernet).',
+    description: `Zebra ZD510-HC to biurkowa drukarka termiczna do druku opasek identyfikacyjnych dla pacjentów. Opaski Z-Band są dostarczane w kartridżach. Kartridż wkłada się do drukarki od góry. Chip w kartridżu umożliwia automatyczną kalibrację, a drukarka sama ustawia prędkość druku dla danego typu opasek.
 
-Następca popularnego modelu HC100 — jedyna dedykowana drukarka opasek Zebra nowej generacji. Drukuje termicznie na opaski Z-Band Direct (dorosły, dziecko, niemowlę), Z-Band UltraSoft i Z-Band Fun w rozdzielczości 300 dpi z prędkością do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/eventy).
+Drukarka drukuje kody kreskowe, tekst i grafikę w rozdzielczości 300 dpi. Szerokość druku wynosi 19,05 mm, 25,4 mm albo 30,16 mm. Opaski dla służby zdrowia drukują się z prędkością 51 mm/s, a opaski Z-Band Fun i Z-Band Splash z prędkością 102 mm/s. Druk termiczny nie wymaga taśmy barwiącej.
 
-System kartridżowy (wkłady) z chipem — wystarczy włożyć wkład z opaskami, a drukarka automatycznie rozpoznaje typ i kalibruje się bez ingerencji operatora. Wymiana głowicy i wałka bez narzędzi (tool-less). Element Energy Equalizer (E3) wydłuża żywotność głowicy drukującej.
+Obudowę wykonano z tworzyw odpornych na środki dezynfekcyjne i promieniowanie UV. Jest przeznaczona do regularnej dezynfekcji. Zasilacz spełnia normę IEC 60601-1:2012. Drukarka pracuje cicho i nie przeszkadza pacjentom ani personelowi.
 
-Zasilacz klasy medycznej IEC 60601-1 w zestawie. Obudowa odporna na dezynfekcję środkami chemicznymi i UV. Certyfikat ENERGY STAR. Kompatybilna z wiodącymi systemami ADT: Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson.
-
-Platforma Link-OS z Zebra DNA: zdalne zarządzanie (Printer Profile Manager Enterprise), integracja z SOTI Connect i VMware Workspace ONE. Funkcja PrintSecure zapewnia zgodność z HIPAA. Programowanie w ZPL/ZPL II i XML z pełnym wsparciem Unicode.
-
-Interfejsy standardowe: USB 2.0, USB Host, Ethernet 10/100 i Bluetooth Low Energy (BLE). Opcjonalnie: Wi-Fi 802.11ac + Bluetooth 4.1 (wariant ZD51013-D0EB02FZ). Gwarancja producenta 2 lata (głowica 12 miesięcy).
-
-Całkowity koszt posiadania (TCO) jest równie ważny jak cena zakupu: uwzględnij koszt ribbonów (modele termotransferowe: ~0,01–0,02 zł/etykietę), materiałów eksploatacyjnych, serwisu i ewentualnej rozbudowy o moduły łączności. Biurkowe drukarki Zebra z architekturą modularną MCS obniżają TCO dzięki możliwości rozbudowy zamiast wymiany całego urządzenia.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. W regionie EMEA drukarka nie ma Bluetooth Low Energy ani znacznika NFC Print Touch. ZD510-HC obsługuje języki ZPL, ZPL II i XML oraz system Link-OS z narzędziami Zebra DNA, w tym PrintSecure. Głowicę i wałek dociskowy wymienia się bez narzędzi.`,
     categoryId: 'drukarki-opasek',
     subcategoryIds: [],
     manufacturerId: 'zebra',
-    priceFrom: 2673.59,
-    images: ['/images/products/zd510_1_s.png', '/images/products/zd510_2_s.png', '/images/products/zd510_3_s.png'],
+    priceFrom: 2402.53,
+    images: [
+      '/images/products/ZD51013-D0ER00FZ.png',
+      '/images/products/ZD51013-D0ER00FZ-2.png',
+      '/images/products/ZD51013-D0ER00FZ-3.png',
+      '/images/products/ZD51013-D0ER00FZ-4.png',
+      '/images/products/ZD51013-D0ER00FZ-5.png',
+      '/images/products/ZD51013-D0ER00FZ-6.png',
+    ],
     imageDescriptions: [
-      'Zebra ZD510-HC — widok z przodu',
-      'Zebra ZD510-HC — widok z tyłu',
-      'Zebra ZD510-HC — widok pod kątem',
+      'Drukarka opasek Zebra ZD510-HC z wydrukowaną opaską identyfikacyjną Z-Band — widok z prawej strony',
+      'Zebra ZD510-HC — widok z przodu, panel z przyciskami i szczelina wydruku opaski',
+      'Zebra ZD510-HC — widok z prawej strony, biała obudowa z tworzyw odpornych na dezynfekcję',
+      'Zebra ZD510-HC — wkładanie kartridża z opaskami od góry drukarki (kartridż sprzedawany osobno)',
+      'Zebra ZD510-HC obok wyjętego kartridża Z-Band Direct (kartridż sprzedawany osobno)',
+      'Kartridże z opaskami Z-Band Direct i Z-Band Splash do drukarki Zebra ZD510-HC (sprzedawane osobno)',
     ],
     tags: ['healthcare'],
-    availability: 'unavailable',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     keyParams: {
-      rodzajDruku: 'Termiczny bezpośredni (Direct Thermal)',
-      rozdzielczosc: '300 dpi (12 dots/mm)',
-      predkoscDruku: 'do 51 mm/s (healthcare) / 102 mm/s (eventy)',
-      szerokoscDruku: '30,2 mm (1.1875")',
-      szerokoscEtykiet: 'opaski Z-Band (kartridże)',
+      rodzajDruku: 'Termiczny (direct thermal)',
+      rozdzielczosc: '300 dpi (12 pkt/mm)',
+      predkoscDruku: '51 mm/s (opaski medyczne), 102 mm/s (Z-Band Fun i Splash)',
+      szerokoscDruku: '19,05 / 25,4 / 30,16 mm',
+      szerokoscEtykiet: 'opaski Z-Band w kartridżach',
     },
     variants: [
       {
-        partNumber: 'ZD51013-D0EE00FZ',
-        name: 'Ethernet + BLE (bez Wi-Fi)',
+        partNumber: 'ZD51013-D0ER00FZ',
+        name: 'USB, USB Host, Ethernet',
         attributes: {},
-        priceFrom: 2673.59,
-        availability: 'unavailable',
-      },
-      {
-        partNumber: 'ZD51013-D0EB02FZ',
-        name: 'Ethernet + Wi-Fi 802.11ac + Bluetooth 4.1',
-        attributes: { 'Wi-Fi': 'Tak' },
-        availability: 'unavailable',
+        priceFrom: 2402.53,
+        availability: 'available',
       },
     ],
     specifications: [
-      { name: 'Part Number', value: 'ZD51013-D0EE00FZ (bazowy)' },
-      { name: 'Metoda druku', value: 'Termiczny bezpośredni (Direct Thermal)' },
-      { name: 'Rozdzielczość', value: '300 dpi (12 dots/mm)' },
-      { name: 'Prędkość druku', value: '51 mm/s (healthcare), 102 mm/s (Z-Band Fun)' },
-      { name: 'Szerokości druku', value: '19,05 mm / 25,4 mm / 30,16 mm' },
-      { name: 'Min. długość druku', value: '76 mm (3")' },
-      { name: 'Maks. długość druku', value: '558 mm (22")' },
-      { name: 'Pamięć RAM', value: '256 MB SDRAM' },
-      { name: 'Pamięć Flash', value: '512 MB' },
-      { name: 'Języki programowania', value: 'ZPL, ZPL II, XML' },
+      { name: 'Part Number', value: 'ZD51013-D0ER00FZ' },
+      { name: 'Metoda druku', value: 'Termiczna bezpośrednia (direct thermal), bez taśmy barwiącej' },
+      { name: 'Rozdzielczość', value: '300 dpi (12 pkt/mm)' },
+      { name: 'Maks. prędkość druku', value: '51 mm/s — opaski dla służby zdrowia; 102 mm/s — Z-Band Fun i Z-Band Splash (ustawiana automatycznie według kartridża)' },
+      { name: 'Szerokości druku', value: '19,05 mm, 25,4 mm, 30,16 mm' },
+      { name: 'Długość druku', value: 'od 76 mm do 558 mm' },
+      { name: 'Nośnik', value: 'Opaski Z-Band w kartridżach z chipem (automatyczna kalibracja)' },
+      { name: 'Pamięć', value: '256 MB SDRAM, 512 MB Flash' },
+      { name: 'Języki programowania', value: 'ZPL, ZPL II, XML; ZBI 2.0 (opcja)' },
       { name: 'System operacyjny', value: 'Link-OS' },
-      { name: 'Ethernet', value: '10/100 Mbps' },
-      { name: 'USB', value: 'USB 2.0 + USB Host' },
-      { name: 'Bluetooth', value: 'BLE (standard), BT 4.1 + Wi-Fi 802.11ac (opcja)' },
-      { name: 'Zasilacz', value: 'Medyczny IEC 60601-1, 100-240 VAC' },
-      { name: 'Wymiary (S×W×G)', value: '127 × 178 × 242 mm' },
-      { name: 'Waga', value: '1,4 kg' },
-      { name: 'Temperatura pracy', value: '4,4°C do 40°C' },
-      { name: 'Temperatura przechowywania', value: '-40°C do 60°C' },
-      { name: 'Wilgotność', value: '20% do 85% (bez kondensacji)' },
-      { name: 'Certyfikaty', value: 'ENERGY STAR, IEC 60601-1, FCC Class B, CE, TUV' },
-      { name: 'Kompatybilność ADT', value: 'Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson' },
-      { name: 'Zegar RTC', value: 'Tak' },
-      { name: 'ZBI 2.0', value: 'Opcjonalny' },
-      { name: 'Kody 1D', value: 'Code 39, 93, 128, Codabar, EAN-8/13, UPC-A/E, I2of5, GS1 DataBar, Postnet' },
-      { name: 'Kody 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, MaxiCode' },
-      { name: 'Gwarancja', value: '36 miesięcy na drukarkę (EMEA, zakup po 1.04.2024), 12 miesięcy głowica' },
+      { name: 'Interfejsy', value: 'USB 2.0, USB Host, Ethernet 10/100' },
+      { name: 'Opcja fabryczna', value: 'Moduł dwuradiowy Wi-Fi 802.11ac i Bluetooth 4.1 (inny PN)' },
+      { name: 'Region EMEA', value: 'Bluetooth Low Energy i znacznik NFC Print Touch są niedostępne' },
+      { name: 'Obudowa', value: 'Podwójne ścianki, tworzywo odporne na uderzenia; tworzywa odporne na środki dezynfekcyjne i promieniowanie UV' },
+      { name: 'Zasilanie', value: 'Zasilacz uniwersalny 100–240 V AC, 50–60 Hz (PFC), zgodny z IEC 60601-1:2012' },
+      { name: 'Funkcje', value: 'Licznik długości druku, podświetlany wskaźnik niskiego poziomu i braku nośnika, czujnik uniesienia głowicy, zegar czasu rzeczywistego (RTC), Element Energy Equalizer (E3), Unicode' },
+      { name: 'Serwis', value: 'Wymiana głowicy i wałka dociskowego bez narzędzi' },
+      { name: 'Kody 1D', value: 'Codabar, Code 11, Code 39, Code 93, Code 128, EAN-8, EAN-13, EAN-14, GS1 DataBar, Industrial 2 of 5, Interleaved 2 of 5, Logmars, MSI, Plessey, Postnet, Standard 2 of 5, UPC-A, UPC-E, rozszerzenia EAN 2 i 5 cyfr' },
+      { name: 'Kody 2D', value: 'Aztec, Codablock, Code 49, Data Matrix, MaxiCode, MicroPDF417, PDF417, QR Code' },
+      { name: 'Wymiary (szer. × wys. × gł.)', value: '127 × 178 × 242 mm; nad drukarką 153 mm wolnego miejsca do załadowania kartridża' },
+      { name: 'Temperatura pracy', value: 'od 4,4 °C do 40 °C' },
+      { name: 'Temperatura przechowywania', value: 'od −40 °C do 60 °C' },
+      { name: 'Wilgotność', value: 'praca 20–85%, przechowywanie 5–85% (bez kondensacji)' },
+      { name: 'Przechowywanie kartridży', value: 'od 0 °C do 21 °C przy wilgotności 35–50% (bez kondensacji)' },
+      { name: 'Normy', value: 'ENERGY STAR; FCC część 15 B, VCCI, RCM; CE: EN 55032 klasa B, EN 55024, EN 61000-3-2, EN 61000-3-3, CISPR 32; bezpieczeństwo: CB Scheme IEC 60950-1 i IEC 62368-1, TÜV, NRTL; zasilacz: IEC 60601-1:2012' },
+      { name: 'W zestawie', value: 'Drukarka, zasilacz, przewód zasilający, dokumentacja' },
+      { name: 'Gwarancja', value: 'Co najmniej 2 lata od daty wysyłki; warunki zależą od regionu' },
     ],
     applications: [
-      'Identyfikacja pacjentów w szpitalach (SOR, oddziały, blok operacyjny)',
-      'Identyfikacja noworodków na oddziałach neonatologii',
-      'Banki krwi i laboratoria (identyfikacja próbek z pacjentem)',
-      'Apteki szpitalne (weryfikacja tożsamości przy podawaniu leków)',
-      'Kontrola wstępu na eventach i koncertach (Z-Band Fun)',
-      'Parki wodne i rozrywki (opaski wodo- i chloroodporne)',
-      'Ośrodki SPA i wellness (identyfikacja gości)',
-      'Obozy i kolonie (identyfikacja uczestników)',
+      'Opaski identyfikacyjne dla pacjentów przy przyjęciu do szpitala',
+      'Opaski dla dorosłych, dzieci i niemowląt',
+      'Opaski dla gości w parkach rozrywki, aquaparkach i na imprezach (Z-Band Fun i Z-Band Splash)',
     ],
     relatedAccessories: [
       'zebra-printhead-zd510-hc',
@@ -4389,95 +4387,39 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     ],
     faq: [
       {
-        question: 'Czym Zebra ZD510-HC różni się od starszego modelu HC100?',
-        answer: 'ZD510-HC to następca HC100 z istotnymi ulepszeniami: platforma Link-OS (zdalne zarządzanie), ZPL II zamiast EPL2, 256 MB RAM (vs 64 MB), Ethernet + BLE w standardzie, opcjonalne Wi-Fi 802.11ac, Element Energy Equalizer (E3) wydłużający żywotność głowicy, wsparcie Unicode i integracja z SOTI/Airwatch. Zachowana kompatybilność z kartridżami Z-Band.',
+        question: 'Jakie opaski drukuje Zebra ZD510-HC?',
+        answer: 'Zebra ZD510-HC drukuje białe i kolorowe opaski Z-Band w kartridżach. Opaski są dostępne w rozmiarach od niemowlęcego do dorosłego, z zapięciem samoprzylepnym albo na zatrzask. Dla pacjentów z wrażliwą skórą przeznaczone są opaski Z-Band UltraSoft. Do parków rozrywki i na imprezy służą opaski Z-Band Fun i Z-Band Splash. Opaski w ofercie TAKMA są w kategorii [opaski identyfikacyjne](/opaski-identyfikacyjne).',
       },
       {
-        question: 'Jakie opaski pasują do drukarki ZD510-HC?',
-        answer: 'ZD510-HC obsługuje wszystkie opaski Zebra Z-Band w kartridżach: Z-Band Direct (termiczne, do healthcare — dorosły, dziecko, niemowlę), Z-Band UltraSoft (najdelikatniejsze, do neonatologii), Z-Band Fun (kolorowe, do eventów i parków), Z-Band QuickClip (z zamknięciem klipsowym), Z-Band Splash (wodoodporne). Kartridże są kompatybilne wstecz z HC100.',
+        question: 'Jak ładuje się opaski do ZD510-HC?',
+        answer: 'Kartridż z opaskami wkłada się do drukarki od góry. Personel nie dotyka opasek podczas ładowania ani wyjmowania kartridża. Chip w kartridżu umożliwia automatyczną kalibrację, a drukarka ustawia prędkość druku według typu opasek. Nad drukarką należy zostawić 153 mm wolnego miejsca.',
       },
       {
-        question: 'Czy ZD510-HC jest certyfikowana do użytku w szpitalach?',
-        answer: 'Tak — zasilacz klasy medycznej IEC 60601-1 w zestawie, obudowa odporna na dezynfekcję (środki chemiczne i UV), funkcja PrintSecure zapewniająca zgodność z HIPAA. Drukarka jest kompatybilna z wiodącymi systemami ADT: Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson.',
+        question: 'Czy drukarkę ZD510-HC można dezynfekować?',
+        answer: 'Tak. Obudowa ZD510-HC jest wykonana z tworzyw odpornych na środki dezynfekcyjne i promieniowanie UV, a przyciski są uszczelnione. Środki i metodę dezynfekcji należy dobrać według przewodnika Zebry „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”. Złączy, styków czytnika chipu ani wnętrza drukarki nie czyści się wilgotnymi materiałami.',
       },
       {
-        question: 'Jak działa system kartridżowy w ZD510-HC?',
-        answer: 'Opaski Z-Band są dostarczane w kartridżach (wkładach) z wbudowanym chipem. Wystarczy włożyć kartridż do drukarki — chip automatycznie informuje drukarkę o typie opasek, szerokości i prędkości druku. Nie wymaga ręcznej kalibracji ani ustawień. Jeden kartridż Z-Band Direct Adult zawiera 200 opasek.',
+        question: 'Czy ZD510-HC ma Wi-Fi albo Bluetooth?',
+        answer: 'Wersja ZD51013-D0ER00FZ ma porty USB, USB Host i Ethernet 10/100. Moduł Wi-Fi 802.11ac z Bluetooth 4.1 jest montowany fabrycznie w innych wersjach drukarki. W regionie EMEA drukarka nie ma Bluetooth Low Energy ani znacznika NFC Print Touch.',
       },
       {
-        question: 'Ile opasek wydrukuję na jednym kartridżu?',
-        answer: 'Zależy od typu: Z-Band Direct Adult (1"×11"): 200 szt./kartridż, Child (1"×7"): 300 szt./kartridż, Infant (1"×6"): 350 szt./kartridż. Opakowanie zawiera 6 kartridży, więc jeden karton to 1200–2100 opasek w zależności od rozmiaru.',
+        question: 'Czy ZD510-HC może zastąpić drukarkę Zebra HC100?',
+        answer: 'Tak. ZD510-HC obsługuje język ZPL, co ułatwia przejście z drukarek biurkowych Zebra, w tym z HC100. Kartridże Z-Band są przeznaczone do obu drukarek. Przy przejściu z drukarki innej marki można użyć funkcji Printer Emulations z pakietu Zebra DNA.',
       },
       {
-        question: 'Czy ZD510-HC obsługuje Wi-Fi?',
-        answer: 'Wariant bazowy ZD51013-D0EE00FZ ma Ethernet + BLE. Wariant ZD51013-D0EB02FZ oferuje dodatkowo Wi-Fi 802.11ac + Bluetooth 4.1, co umożliwia bezprzewodowe drukowanie z dowolnego miejsca w szpitalu.',
-      },
-      {
-        question: 'Jakie języki programowania obsługuje ZD510-HC?',
-        answer: 'ZD510-HC obsługuje ZPL, ZPL II i XML. To istotna przewaga nad HC100 (tylko EPL2). ZPL zapewnia kompatybilność z całym ekosystemem drukarek Zebra i systemami WMS/HIS. Opcjonalnie dostępny ZBI 2.0 (Zebra BASIC Interpreter).',
-      },
-      {
-        question: 'Czy ZD510-HC nadaje się do eventów i parków rozrywki?',
-        answer: 'Tak — z opaskami Z-Band Fun (kolorowe, 7 kolorów) i Z-Band Splash (wodoodporne) drukarka pracuje z prędkością 102 mm/s (4 ips). Idealna do parków wodnych, festiwali, koncertów i wesołych miasteczek jako system kontroli wstępu i cashless.',
-      },
-      {
-        question: 'Jak wymienić głowicę w ZD510-HC?',
-        answer: 'Wymiana głowicy (P1100266-003, 300 dpi) i wałka (P1100266-008) jest beznarzędziowa (tool-less) — wystarczy otworzyć pokrywę i wymienić element w kilka sekund. Głowica ma 12 miesięcy gwarancji. Element Energy Equalizer (E3) optymalizuje dystrybucję energii i wydłuża żywotność głowicy.',
-      },
-      {
-        question: 'Gdzie serwisować drukarkę Zebra w Polsce?',
-        answer: 'Serwis drukarek Zebra w Polsce prowadzi serwis-zebry.pl — autoryzowany partner Zebra. Oferuje naprawę głowic drukujących, wymianę wałków, kalibrację i aktualizację firmware. Czas naprawy standardowej to 3–5 dni roboczych, dostępna jest również naprawa ekspresowa i wysyłkowa w całej Polsce.',
-      },
-      {
-        question: 'Jakie są alternatywy dla Zebra ZD510-HC?',
-        answer: 'Alternatywami są: starsza Zebra HC100 (wycofywana z produkcji, tylko EPL2), a w konkurencji praktycznie nie ma dedykowanych drukarek opasek — rynek jest zdominowany przez Zebra. Niektóre szpitale używają drukarek Brother TD-2130NHC z adapterem opasek, ale to rozwiązanie kompromisowe bez systemu kartridżowego.',
+        question: 'Jak dbać o głowicę drukującą ZD510-HC?',
+        answer: 'Tor nośnika czyści się kartą czyszczącą po każdych 5 wydrukowanych kartridżach. Głowicę drukującą i wałek dociskowy wymienia się bez narzędzi. Części zamienne są dostępne jako [głowica 300 dpi P1100266-003](/produkt/zebra-printhead-zd510-hc) i [wałek dociskowy P1100266-008](/produkt/zebra-platen-roller-zd510-hc).',
       },
     ],
-    comparison: {
-      title: 'Porównanie drukarek opasek identyfikacyjnych Zebra',
-      models: [
-        {
-          name: 'Zebra ZD510-HC',
-          slug: 'zebra-zd510-hc',
-          highlight: true,
-          specs: {
-            'Rozdzielczość': '300 dpi',
-            'Prędkość': '51 mm/s (HC) / 102 mm/s (Fun)',
-            'RAM / Flash': '256 / 512 MB',
-            'Języki': 'ZPL, ZPL II, XML',
-            'Łączność': 'USB, Ethernet, BLE (+ Wi-Fi opcja)',
-            'Waga': '1,4 kg',
-            'Zasilacz medyczny': 'Tak (IEC 60601-1)',
-            'Link-OS / Print DNA': 'Tak',
-            'Gwarancja': '3 lata (EMEA, zakup po 1.04.2024)',
-            'Cena od': '2 674 zł',
-          },
-        },
-        {
-          name: 'Zebra HC100 (wycofana)',
-          specs: {
-            'Rozdzielczość': '300 dpi',
-            'Prędkość': '51 mm/s',
-            'RAM / Flash': '64 / 128 MB',
-            'Języki': 'EPL2',
-            'Łączność': 'USB, Ethernet (Wi-Fi opcja)',
-            'Waga': '1,6 kg',
-            'Zasilacz medyczny': 'Tak',
-            'Link-OS / Print DNA': 'Nie',
-            'Gwarancja': '1 rok',
-            'Cena od': 'Wycofana',
-          },
-        },
-      ],
-    },
     downloads: [
-      { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd510-hc/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/zd510-hc-spec-sheet-en-us.pdf', size: 'PDF' },
-      { name: 'Specyfikacja techniczna (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/zd510-hc/spec-sheets/zd510-hc-spec-sheet-pl-pl.pdf', size: 'PDF' },
+      { name: 'Karta katalogowa Zebra ZD510-HC (PL)', type: 'datasheet', url: '/downloads/zebra-zd510-hc-karta-katalogowa-pl.pdf', size: '362 KB' },
+      { name: 'Instrukcja użytkownika ZD510 (EN)', type: 'manual', url: '/downloads/zebra-zd510-hc-instrukcja-en.pdf', size: '11,5 MB' },
+      { name: 'Sterowniki i oprogramowanie — wsparcie Zebra', type: 'driver', url: 'https://www.zebra.com/pl/pl/support-downloads/printers/desktop/zd510-hc.html', size: 'Online' },
     ],
-    relatedProducts: ['zebra-zd411d', 'zebra-zd411t', 'zebra-zd621d'],
+    relatedProducts: ['zebra-zd411-hc', 'zebra-zd611-hc', 'zebra-zd421-hc', 'zebra-zd621-hc'],
     createdAt: '2026-02-14',
-    sameAs: 'https://www.zebra.com/us/en/products/printers/desktop/zd500-series/zd510-hc.html',
+    updatedAt: '2026-10-25',
+    sameAs: 'https://www.zebra.com/pl/pl/products/printers/desktop/zd510-hc.html',
   },
   // ============================================
   // HONEYWELL PC45d — drukarka termiczna biurkowa
@@ -67617,15 +67559,11 @@ const zd510Accessories: Product[] = [
     slug: 'zebra-printhead-zd510-hc',
     name: 'Głowica drukująca Zebra ZD510-HC (300 dpi)',
     shortDescription: 'Głowica drukująca Zebra ZD510-HC (300 dpi) — oryginalna głowica drukująca 300 dpi do drukarki opasek Zebra ZD510-HC, P1100266-003',
-    description: `Oryginalna głowica drukująca Zebra P1100266-003 do drukarki opasek identyfikacyjnych ZD510-HC. Rozdzielczość 300 dpi (12 dots/mm). Wymiana bez narzędzi (tool-less) — Element Energy Equalizer (E3) wydłuża żywotność głowicy.
-
-Zalecana wymiana co ok. 50 000–100 000 opasek w zależności od intensywności użytkowania i typu materiału Z-Band. Gwarancja producenta 12 miesięcy pod warunkiem stosowania oryginalnych materiałów Zebra Z-Band.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+    description: `Oryginalna głowica drukująca Zebra P1100266-003 do drukarki opasek identyfikacyjnych ZD510-HC. Rozdzielczość 300 dpi (12 pkt/mm). Głowicę wymienia się bez narzędzi.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 679.54,
+    priceFrom: 646.17,
     images: ['/images/products/P1100266-003.png'],
     imageDescriptions: ['Głowica drukująca Zebra ZD510-HC (300 dpi)'],
     tags: ['healthcare'],
@@ -67638,8 +67576,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Typ', value: 'Głowica drukująca (printhead)' },
       { name: 'Kompatybilność', value: 'Zebra ZD510-HC' },
       { name: 'Wymiana', value: 'Bez narzędzi (tool-less)' },
-      { name: 'Żywotność', value: '~50 000–100 000 opasek' },
-      { name: 'Gwarancja', value: '12 miesięcy (oryginalne materiały)' },
     ],
     applications: [
       'Wymiana zużytej głowicy w drukarce ZD510-HC',
@@ -67655,19 +67591,15 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
     slug: 'zebra-platen-roller-zd510-hc',
     name: 'Wałek dociskowy Zebra ZD510-HC (platen roller)',
     shortDescription: 'Wałek dociskowy Zebra ZD510-HC (platen roller) — oryginalny wałek dociskowy do drukarki opasek Zebra ZD510-HC, P1100266-008',
-    description: `Oryginalny wałek dociskowy (platen roller) Zebra P1100266-008 do drukarki opasek identyfikacyjnych ZD510-HC. Wymiana bez narzędzi (tool-less) — wałek dociskowy zapewnia równomierny docisk opaski do głowicy drukującej.
-
-Zalecana wymiana przy pogorszeniu jakości druku lub nierównym nadruku. Gwarancja producenta 12 miesięcy.
-
-Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
+    description: `Oryginalny wałek dociskowy (platen roller) Zebra P1100266-008 do drukarki opasek identyfikacyjnych ZD510-HC. Wałek wymienia się bez narzędzi.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'zebra',
-    priceFrom: 554.24,
+    priceFrom: 538.55,
     images: ['/images/products/P1100266-008.png'],
     imageDescriptions: ['Wałek dociskowy Zebra ZD510-HC (platen roller)'],
     tags: ['healthcare'],
-    availability: 'available',
+    availability: 'unavailable',
     isNew: false,
     isBestseller: false,
     specifications: [
@@ -67675,7 +67607,6 @@ Specyfikacja techniczna zgodna z danymi producenta (zebra.com).`,
       { name: 'Typ', value: 'Wałek dociskowy (platen roller)' },
       { name: 'Kompatybilność', value: 'Zebra ZD510-HC' },
       { name: 'Wymiana', value: 'Bez narzędzi (tool-less)' },
-      { name: 'Gwarancja', value: '12 miesięcy' },
     ],
     applications: [
       'Wymiana zużytego wałka w drukarce ZD510-HC',
@@ -95570,6 +95501,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Drukarki Zebra HC (ZD4, ZD6, ZQ6) trafiają do podkategorii według `subcategoryIds`, w tym do „Drukarki dla służby zdrowia”.
+for (const subcategory of subcategories) {
+  const additions = [...zebraHcZd4Products, ...zebraHcZd6Products, ...zebraHcZq6Products].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95623,6 +95563,9 @@ const rawProductList: Product[] = [
   ...zebraWtAccessories,
   ...zebraWtMounts,
   ...zebraRs5000xProducts,
+  ...zebraHcZd4Products,
+  ...zebraHcZd6Products,
+  ...zebraHcZq6Products,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

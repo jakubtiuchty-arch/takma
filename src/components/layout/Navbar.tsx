@@ -106,6 +106,7 @@ const navigation: NavItem[] = [
       { name: 'Mobilne drukarki paragonów', href: '/mobilne-drukarki-paragonow' },
       { name: 'Drukarki RFID', href: '/drukarki-rfid' },
       { name: 'Drukarki kolorowe', href: '/kolorowe-drukarki-etykiet' },
+      { name: 'Drukarki dla służby zdrowia', href: '/drukarki-dla-sluzby-zdrowia' },
       { name: 'Drukarki opasek', href: '/drukarki-opasek' },
       { name: 'Drukarki kart', href: '/drukarki-kart' },
       { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },

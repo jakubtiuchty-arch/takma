@@ -9,6 +9,7 @@ import { rfidReaderContent } from './rfid-reader-category'
 import { rfidSledContent } from './rfid-sled-category'
 import { rfidTerminalContent } from './rfid-terminal-category'
 import { wearableTerminalContent } from './wearable-terminal-category'
+import { healthcarePrinterContent } from './healthcare-printer-category'
 import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
 // Rich content for subcategory pages (SEO/AEO/GEO)
@@ -137,6 +138,7 @@ export const subcategoryContent: Record<string, SubcategoryRichContent> = {
   'drukarki-rfid': rfidPrinterContent,
   'terminale-rfid': rfidTerminalContent,
   'terminale-naramienne': wearableTerminalContent,
+  'drukarki-dla-sluzby-zdrowia': healthcarePrinterContent,
   'uchwyty-rfid': rfidSledContent,
   'czytniki-rfid': rfidReaderContent,
   'biurkowe-drukarki-etykiet': {
@@ -990,114 +992,90 @@ Cena drukarki to zwykle 20–40 % wydatków w trzy lata. Resztę pochłaniają e
   // DRUKARKI OPASEK IDENTYFIKACYJNYCH
   // ============================================
   'drukarki-opasek': {
+    updatedAt: '2026-10-25',
     definition: {
       heading: 'Czym jest drukarka opasek identyfikacyjnych?',
-      content: 'Drukarka opasek identyfikacyjnych (ang. wristband printer) to dedykowane urządzenie do druku termicznego na jednorazowych opaskach na nadgarstek. W odróżnieniu od drukarek etykiet, drukarka opasek wykorzystuje system kartridżowy — gotowe wkłady z opaskami Z-Band, które wystarczy włożyć do drukarki. Smart Chip w kartridżu automatycznie kalibruje drukarkę (rozpoznaje rozmiar opaski, ustawia ciemność i prędkość druku). Operator nie musi ręcznie konfigurować żadnych parametrów. Zastosowania: identyfikacja pacjentów w szpitalach (kod kreskowy na opasce powiązany z systemem HIS/ADT), kontrola wstępu na eventach i w parkach rozrywki, identyfikacja gości w hotelach i SPA. Aktualny model: Zebra ZD510-HC (następca HC100).',
+      content: 'Drukarka opasek identyfikacyjnych drukuje kody kreskowe, tekst i grafikę na opaskach na rękę. Zebra ZD510-HC drukuje termicznie, bez taśmy barwiącej, na opaskach Z-Band dostarczanych w kartridżach. Kartridż wkłada się do drukarki od góry, a chip w kartridżu umożliwia automatyczną kalibrację. Drukarka sama ustawia prędkość druku dla danego typu opasek.\n\nW szpitalu opaska z kodem kreskowym służy do identyfikacji pacjenta. W parkach rozrywki, aquaparkach, ogrodach zoologicznych i na imprezach sportowych opaski służą do identyfikacji gości. Opaska drukowana na żądanie nie ma wartości przed wydrukiem, co ogranicza fałszowanie biletów.',
     },
     buyingGuide: {
-      heading: 'Jak wybrać drukarkę opasek identyfikacyjnych?',
+      heading: 'Jak wybrać drukarkę opasek?',
       items: [
-        'Określ zastosowanie — szpital wymaga zasilacza klasy medycznej IEC 60601-1 i obudowy odpornej na dezynfekcję UV; eventy i parki rozrywki wymagają szybszego druku (102 mm/s na Z-Band Fun) i kolorowych opasek.',
-        'Sprawdź kompatybilność z systemem informatycznym — Zebra ZD510-HC obsługuje ZPL/ZPL II i XML, jest certyfikowana do pracy z Allscripts, CareFusion, Cerner, CPSI, Epic i McKesson. Zapytaj dział IT o wymagany protokół druku.',
-        'Wybierz łączność — wersja podstawowa (ZD51013-D0EE00FZ) ma USB, Ethernet i BLE; wersja z Wi-Fi (ZD51013-D0EB02FZ) pozwala na bezprzewodowe drukowanie z wielu stanowisk. Wi-Fi jest zalecane przy dużej liczbie punktów druku.',
-        'Dobierz opaski do grupy pacjentów — Z-Band Direct dla dorosłych (25×279 mm), dzieci (25×178 mm) i niemowląt (25×152 mm). Dla neonatologii z wrażliwą skórą: Z-Band UltraSoft. Dla eventów: Z-Band Fun (kolorowe) lub Splash (wodoodporne).',
-        'Zaplanuj zapas materiałów — opakowanie zbiorcze (sufiks "K") zawiera 6 kartridży. Szpital o 500 przyjęciach/miesiąc potrzebuje ok. 1 opakowania na 2 miesiące. Głowica (P1100266-003) wymaga wymiany co 50–100 tys. opasek.',
-        'Uwzględnij zdalne zarządzanie — ZD510-HC z Link-OS umożliwia centralne zarządzanie flotą drukarek przez Printer Profile Manager Enterprise, SOTI Connect lub VMware Workspace ONE. Kluczowe przy wdrożeniach w szpitalach wielooddziałowych.',
+        'Zastosowanie — opaski dla pacjentów drukują się z prędkością 51 mm/s, a opaski Z-Band Fun i Z-Band Splash dla gości z prędkością 102 mm/s.',
+        'Łączność — wersja ZD51013-D0ER00FZ ma USB, USB Host i Ethernet 10/100. Moduł Wi-Fi 802.11ac z Bluetooth 4.1 jest montowany fabrycznie w innych wersjach drukarki.',
+        'Rozmiar opaski — opaski Z-Band są dostępne w rozmiarach dla dorosłych, dzieci i niemowląt, z zapięciem samoprzylepnym albo na zatrzask.',
+        'Integracja — drukarka obsługuje języki ZPL, ZPL II i XML. Szablon opaski przygotowuje się w systemie szpitalnym albo w programie ZebraDesigner.',
+        'Miejsce pracy — nad drukarką należy zostawić 153 mm wolnego miejsca do wymiany kartridża.',
       ],
     },
-    expertAuthority: 'TAKMA to Zebra Premier Business Partner i autoryzowane centrum serwisowe (Printer Repair Specialist). Wdrażamy systemy identyfikacji pacjentów w szpitalach w całej Polsce — od doboru drukarki i opasek, przez integrację z systemem HIS/ADT (Epic, Cerner, Allscripts), po szkolenie personelu medycznego i serwis on-site. Współpracujemy z serwis-zebry.pl — centrum serwisowym Zebra Technologies oferującym naprawy gwarancyjne i pogwarancyjne drukarek opasek.',
-    technicalDeepDive: `Zebra ZD510-HC to jedyna na rynku drukarka opasek z zasilaczem klasy medycznej IEC 60601-1:2012 — wymaganie w wielu placówkach szpitalnych. Obudowa jest odporna na regularne dezynfekowanie środkami chemicznymi (izopropanol, chlorheksydyna, betadyna) i promieniami UV — materiał nie degraduje się nawet przy wielokrotnym czyszczeniu.
+    expertAuthority: 'TAKMA jako partner Zebra dobiera drukarkę opasek, kartridże Z-Band i części zamienne. Przed zamówieniem ustalamy sposób podłączenia drukarki do systemu i rodzaj opasek.',
+    technicalDeepDive: `Zebra ZD510-HC drukuje w rozdzielczości 300 dpi. Szerokość druku wynosi 19,05 mm, 25,4 mm albo 30,16 mm, a długość druku od 76 mm do 558 mm. Drukarka ma 256 MB SDRAM, 512 MB pamięci Flash i system Link-OS.
 
-Porównanie z poprzednikiem HC100: ZD510-HC ma 4× więcej RAM (256 vs 64 MB), nowoczesną platformę Link-OS (vs legacy firmware), łączność Wi-Fi 802.11ac + BT 4.1 (vs opcja Wi-Fi b/g/n), NFC Print Touch do parowania przez dotknięcie smartfonem, Element Energy Equalizer (E3) wydłużający żywotność głowicy oraz certyfikat ENERGY STAR. Kartridże Z-Band są w 100% kompatybilne wstecz — przejście z HC100 na ZD510-HC nie wymaga zmiany opasek.
+Obudowę wykonano z tworzyw odpornych na środki dezynfekcyjne i promieniowanie UV. Zasilacz spełnia normę IEC 60601-1:2012. Druk termiczny nie wymaga taśmy barwiącej, więc w drukarce nie zostaje zużyta taśma z odbiciem danych pacjentów.
 
-Parametry druku: rozdzielczość 300 dpi (12 dots/mm), prędkość do 51 mm/s (healthcare) lub 102 mm/s (Z-Band Fun/Splash), szerokości opasek: 19,05 / 25,4 / 30,16 mm, długość druku: 76–558 mm. Pamięć: 256 MB RAM + 512 MB Flash. Języki: ZPL, ZPL II, XML, opcja ZBI 2.0. Kody kreskowe 1D (Code 128, GS1 DataBar) i 2D (QR Code, Data Matrix, PDF417).
-
-Koszty eksploatacji (TCO): opaska Z-Band Direct = ok. 0,70–0,90 zł/szt. Brak taśmy barwiącej (druk termiczny bezpośredni). Głowica P1100266-003 = ok. 680 zł, wymiana co 50–100 tys. opasek. Wałek P1100266-008 = ok. 554 zł. TCO drukarki opasek jest znacząco niższy niż druk termotransferowy na zwykłych drukarkach etykiet z opaskami adaptowanymi.`,
+Głowicę drukującą i wałek dociskowy wymienia się bez narzędzi. Tor nośnika czyści się kartą czyszczącą po każdych 5 wydrukowanych kartridżach.`,
     useCases: [
       {
-        title: 'Szpitale — identyfikacja pacjentów',
-        description: 'Drukowanie opasek z kodem kreskowym przy rejestracji pacjenta na SOR, izbie przyjęć i oddziałach. Skanowanie opaski przed podaniem leku, pobraniem krwi, badaniem diagnostycznym i zabiegiem operacyjnym. Zgodność z zasadami „5 Praw" farmakoterapii i wymogami akredytacji szpitalnej (Joint Commission, CMJ).',
+        title: 'Izba przyjęć i oddziały',
+        description: 'Druk opasek identyfikacyjnych dla pacjentów przy przyjęciu do szpitala.',
       },
       {
-        title: 'Neonatologia i porodówki',
-        description: 'Opaski niemowlęce Z-Band Direct (25×152 mm) lub ultramiękkie Z-Band UltraSoft (19×279 mm) do identyfikacji noworodków. Kojarzenie noworodek–matka (mother-baby matching) przez skanowanie kodów kreskowych. Opaski bezlateksowe z powłoką antybakteryjną.',
+        title: 'Oddziały dziecięce i noworodkowe',
+        description: 'Opaski w rozmiarach dla dzieci i niemowląt. Dla pacjentów z wrażliwą skórą przeznaczone są opaski Z-Band UltraSoft.',
       },
       {
-        title: 'Banki krwi i laboratoria',
-        description: 'Identyfikacja dawców krwi i pacjentów biorców. Opaski Z-Band z kodem kreskowym powiązanym z systemem laboratoryjnym (LIMS) eliminują ryzyko pomyłki przy pobraniu i podaniu preparatów krwiopochodnych. Kody 2D (QR/DataMatrix) na opaskach zawierają więcej danych niż tradycyjne kody 1D.',
-      },
-      {
-        title: 'Eventy, koncerty i parki rozrywki',
-        description: 'Kolorowe opaski Z-Band Fun (7 kolorów) jako kontrola wstępu i identyfikacja stref (VIP, standard, backstage). Opaski Z-Band Splash (wodoodporne) do aquaparków. Szybki druk na ZD510-HC z prędkością 102 mm/s — nawet duże eventy obsłużone bez kolejek.',
+        title: 'Parki rozrywki i imprezy',
+        description: 'Opaski dla gości w siedmiu kolorach, w wersjach jedno- i wielodniowych, np. Z-Band Fun i Z-Band Splash.',
       },
     ],
     uniqueInsights: {
       heading: 'Co warto wiedzieć przed zakupem drukarki opasek?',
       items: [
         {
-          title: 'Zasilacz medyczny to nie opcja — to wymóg',
-          text: 'Wiele szpitali wymaga zasilacza zgodnego z IEC 60601-1 przy urządzeniach używanych w pobliżu pacjentów. ZD510-HC ma go w standardzie — jedyna drukarka opasek na rynku z tym certyfikatem. Konkurencyjne drukarki (SATO WS2, Honeywell PC23d w trybie wristband) używają zasilaczy standardowych.',
+          title: 'Wersje na rynek europejski',
+          text: 'W regionie EMEA drukarka ZD510-HC nie ma Bluetooth Low Energy ani znacznika NFC Print Touch.',
         },
         {
-          title: 'Smart Chip eliminuje 90% zgłoszeń serwisowych',
-          text: 'Najczęstszą przyczyną problemów z drukarkami opasek była błędna kalibracja po wymianie mediów. Smart Chip w kartridżach Z-Band automatycznie konfiguruje ciemność, prędkość i pozycję druku — personel medyczny nie musi znać się na ustawieniach drukarki.',
+          title: 'Przejście z HC100',
+          text: 'ZD510-HC obsługuje język ZPL, co ułatwia zastąpienie drukarki HC100. Kartridże Z-Band są przeznaczone do obu drukarek.',
         },
         {
-          title: 'ZD510-HC to inwestycja na 5–7 lat',
-          text: 'Drukarka opasek nie jest urządzeniem o dużym zużyciu mechanicznym (wolumen druku w szpitalu to zwykle 50–200 opasek/dzień). Przy prawidłowej konserwacji (wymiana głowicy co 50–100 tys. opasek) ZD510-HC będzie pracować bezawaryjnie przez wiele lat.',
-        },
-        {
-          title: 'Pełna kompatybilność wstecz z HC100',
-          text: 'Jeśli szpital ma zapas kartridży Z-Band do starej HC100 — można je bez zmian użyć w nowej ZD510-HC. Przejście na nowszy model nie generuje strat materiałowych.',
-        },
-        {
-          title: 'Drukarka opasek vs drukarka etykiet z adapterem',
-          text: 'Niektóre drukarki biurkowe (ZD421-HC, ZD621-HC) obsługują opaski przez adapter — ale wymagają ręcznej kalibracji i nie mają zasilacza medycznego. Dedykowana ZD510-HC z systemem kartridżowym jest szybsza we wdrożeniu i prostsza w obsłudze dla personelu nieznającego się na drukarkach.',
+          title: 'Przechowywanie kartridży',
+          text: 'Kartridże z opaskami przechowuje się w temperaturze od 0 °C do 21 °C przy wilgotności względnej 35–50%.',
         },
       ],
     },
     faq: [
       {
-        question: 'Ile kosztuje drukarka opasek identyfikacyjnych?',
-        answer: 'Zebra ZD510-HC w wersji podstawowej (USB, Ethernet, BLE) kosztuje od 2 674 zł netto. Wersja z Wi-Fi 802.11ac + Bluetooth 4.1 od ok. 3 200 zł netto (w zależności od dostępności w Ingram). Do tego dochodzą opaski Z-Band — od 1 081 zł za opakowanie 1 200 szt. (dorosłe).',
-      },
-      {
         question: 'Jakie opaski pasują do drukarki ZD510-HC?',
-        answer: 'ZD510-HC obsługuje wszystkie opaski Zebra Z-Band w kartridżach: Direct (termiczne, do healthcare), UltraSoft (najmiększe, do neonatologii), QuickClip (zamknięcie klipsowe), Fun (kolorowe, do eventów) i Splash (wodoodporne). Rozmiary: dorosły 25×279 mm, dziecko 25×178 mm, niemowlę 25×152 mm.',
+        answer: 'Zebra ZD510-HC drukuje białe i kolorowe opaski Z-Band w kartridżach, w rozmiarach od niemowlęcego do dorosłego. Opaski dla pacjentów są w kategorii [opaski identyfikacyjne](/opaski-identyfikacyjne).',
       },
       {
-        question: 'Czy ZD510-HC jest kompatybilna z systemem szpitalnym (HIS/ADT)?',
-        answer: 'Tak. ZD510-HC jest certyfikowana do współpracy z: Allscripts, CareFusion, Cerner, CPSI, Epic i McKesson. Obsługuje języki ZPL II i XML, co zapewnia kompatybilność z praktycznie każdym systemem informatycznym szpitala. Integracja wymaga konfiguracji szablonu druku w systemie HIS.',
+        question: 'Jakie cechy ZD510-HC są ważne w szpitalu?',
+        answer: 'Obudowa [Zebra ZD510-HC](/produkt/zebra-zd510-hc) jest odporna na środki dezynfekcyjne i promieniowanie UV, a zasilacz spełnia normę IEC 60601-1. Drukarka pracuje cicho. Druk termiczny nie wymaga taśmy barwiącej, więc nie trzeba niszczyć zużytej taśmy z danymi pacjentów.',
       },
       {
-        question: 'Czym ZD510-HC różni się od starszego modelu HC100?',
-        answer: 'ZD510-HC to następca HC100 z istotnymi ulepszeniami: platforma Link-OS (zdalne zarządzanie), 256 MB RAM (vs 64 MB), Wi-Fi 802.11ac + BT 4.1 (vs opcja b/g/n), NFC Print Touch, Element Energy Equalizer (E3), certyfikat ENERGY STAR, obudowa UV-odporna. Kartridże Z-Band w 100% kompatybilne wstecz.',
+        question: 'Czy ZD510-HC ma Wi-Fi?',
+        answer: 'Wersja ZD51013-D0ER00FZ ma USB, USB Host i Ethernet 10/100. Moduł Wi-Fi 802.11ac z Bluetooth 4.1 jest montowany fabrycznie w innych wersjach drukarki.',
       },
       {
-        question: 'Czy można dezynfekować drukarkę ZD510-HC?',
-        answer: 'Tak. Obudowa ZD510-HC jest odporna na UV i środki dezynfekcyjne (izopropanol, chlorheksydyna, betadyna). Można ją regularnie czyścić silnymi preparatami chemicznymi bez degradacji materiału — kluczowe w środowisku szpitalnym z restrykcyjnymi wymogami kontroli zakażeń.',
+        question: 'Czy drukarkę opasek można dezynfekować?',
+        answer: 'Tak. Obudowa ZD510-HC jest przystosowana do regularnej dezynfekcji, a przyciski są uszczelnione. Środki i metodę dezynfekcji należy dobrać według przewodnika Zebry „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”. Złączy i wnętrza drukarki nie czyści się wilgotnymi materiałami.',
       },
       {
-        question: 'Ile kosztuje eksploatacja drukarki opasek (TCO)?',
-        answer: 'Główny koszt to kartridże Z-Band: ok. 0,70–0,90 zł za opaskę (w zależności od rozmiaru). Brak taśmy barwiącej (druk termiczny). Głowica drukująca P1100266-003 (ok. 680 zł) wymaga wymiany co 50–100 tys. opasek. Przy 100 opaskach/dzień głowica wystarczy na 1,5–3 lata.',
+        question: 'Czym ZD510-HC różni się od HC100?',
+        answer: 'ZD510-HC ma system Link-OS i obsługuje język ZPL, co ułatwia przejście z drukarki HC100. Kartridże Z-Band są przeznaczone do obu drukarek.',
       },
       {
-        question: 'Jakie są alternatywy dla drukarki opasek Zebra ZD510-HC?',
-        answer: 'Alternatywami są: SATO WS2/WS4 (kompaktowe drukarki opasek SoftTouch), Honeywell PC23d w trybie wristband (ogólnego przeznaczenia, bez zasilacza medycznego), drukarki biurkowe Zebra ZD421-HC/ZD621-HC z adapterem do opasek (wymagają ręcznej kalibracji). ZD510-HC to jedyna dedykowana drukarka opasek z zasilaczem IEC 60601-1, systemem Smart Chip i obudową UV-odporną.',
+        question: 'Gdzie są drukarki etykiet dla szpitali?',
+        answer: 'Drukarki biurkowe i mobilne Zebra HC do etykiet na probówki, leki i opasek z rolki są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
       },
     ],
-    comparisons: [
-      {
-        title: 'Zebra ZD510-HC vs HC100 (poprzednik)',
-        content: 'ZD510-HC: Link-OS, 256 MB RAM, Wi-Fi 802.11ac + BT 4.1, BLE, NFC Print Touch, E3, ENERGY STAR, obudowa UV-odporna, zasilacz IEC 60601-1, cena od 2 674 zł. HC100 (wycofana): legacy firmware, 64 MB RAM, USB + Ethernet + opcja Wi-Fi b/g/n, brak NFC, brak E3, brak ENERGY STAR. Kartridże Z-Band w 100% kompatybilne wstecz.',
-      },
-    ],
+    comparisons: [],
     howToSteps: [
-      { name: 'Określ zastosowanie i wymagania', text: 'Szpital → zasilacz medyczny IEC 60601-1 (ZD510-HC w standardzie). Event/park → szybki druk 102 mm/s (Z-Band Fun/Splash). Oba → Wi-Fi do druku z wielu stanowisk.' },
-      { name: 'Wybierz wariant drukarki', text: 'ZD51013-D0EE00FZ (USB + Ethernet + BLE, od 2 674 zł) — wystarcza do stanowisk z kablem sieciowym. ZD51013-D0EB02FZ (+ Wi-Fi + BT 4.1) — do bezprzewodowego druku z terminali mobilnych i laptopów.' },
-      { name: 'Dobierz opaski do grupy pacjentów', text: 'Dorośli → Z-Band Direct 10006995K (1 200 szt./opak.). Dzieci → 10006999K (1 800 szt.). Niemowlęta → 10006998K (2 100 szt.). Neonatologia → Z-Band UltraSoft 10015355K.' },
-      { name: 'Skonfiguruj integrację z HIS/ADT', text: 'Połącz drukarkę z siecią szpitalną (Ethernet lub Wi-Fi). Skonfiguruj szablon druku opaski w systemie HIS (Epic, Cerner itd.) — format ZPL II lub XML. Testuj druk i skanowanie kodów kreskowych.' },
-      { name: 'Zamów zapas materiałów i akcesoriów', text: 'Opaski na 3–6 miesięcy + głowica zapasowa P1100266-003 (ok. 680 zł). Wałek dociskowy P1100266-008 (ok. 554 zł) przy pogorszeniu jakości druku. Karty czyszczące 61332M do regularnej konserwacji.' },
+      { name: 'Określ zastosowanie', text: 'Ustal, czy drukarka ma drukować opaski dla pacjentów, czy opaski dla gości.' },
+      { name: 'Wybierz wersję drukarki', text: 'Wybierz numer PN z wymaganym interfejsem: Ethernet albo Wi-Fi z Bluetooth.' },
+      { name: 'Dobierz opaski', text: 'Dobierz rozmiar i rodzaj opasek Z-Band oraz zapas kartridży.' },
+      { name: 'Przygotuj szablon i wykonaj próbę', text: 'Przygotuj szablon opaski w ZPL lub XML i sprawdź odczyt kodu skanerem.' },
     ],
   },
 
@@ -1333,114 +1311,90 @@ Przykładowa kalkulacja TCO (Total Cost of Ownership) dla floty 10 mobilnych dru
     ],
   },
   'opaski-identyfikacyjne': {
+    updatedAt: '2026-10-25',
+    sectionHeadings: { technicalDeepDive: 'Parametry techniczne' },
     definition: {
-      heading: 'Czym są opaski identyfikacyjne?',
-      content: 'Opaski identyfikacyjne (ang. wristbands) to jednorazowe opaski na nadgarstek lub kostkę, na których drukarka termiczna nadrukuje imię i nazwisko, kod kreskowy (1D lub 2D), datę przyjęcia i inne dane identyfikacyjne. W szpitalach służą do precyzyjnej identyfikacji pacjentów — zgodnie z wymogami akredytacji szpitalnej i zasadami „5 Praw" podania leku (prawidłowy pacjent, lek, dawka, droga podania, pora). Na eventach, w parkach rozrywki i aquaparkach działają jako kontrola wstępu, system stref VIP i opaski cashless. Opaski Zebra Z-Band są drukowane na dedykowanych drukarkach kartridżowych ZD510-HC i HC100 — system Smart Chip automatycznie kalibruje drukarkę po włożeniu kartridża, eliminując błędy konfiguracji.',
+      heading: 'Czym są opaski identyfikacyjne Z-Band?',
+      content: 'Opaski identyfikacyjne Zebra Z-Band to opaski na rękę do druku termicznego, dostarczane w kartridżach. Drukarka [Zebra ZD510-HC](/produkt/zebra-zd510-hc) drukuje na nich kod kreskowy i dane pacjenta bez taśmy barwiącej. Kartridże są przeznaczone do drukarek ZD510-HC i HC100.\n\nZ-Band Direct to białe opaski z polipropylenu. Mają trwałe zapięcie samoprzylepne, więc zdjętej opaski nie da się założyć ponownie. Są wodoodporne, nie zawierają lateksu ani BPA i są uznawane za bezpieczne w środowisku MR.',
     },
     buyingGuide: {
       heading: 'Jak wybrać opaski identyfikacyjne?',
       items: [
-        'Określ grupę pacjentów — dorośli (25×279 mm / 1"×11"), dzieci (25×178 mm / 1"×7"), niemowlęta (25×152 mm / 1"×6"). Dla neonatologii rozważ opaski Z-Band UltraSoft — najmiększy materiał na rynku.',
-        'Wybierz typ zapięcia — Z-Band Direct: zapięcie samoprzylepne (najpopularniejsze); Z-Band QuickClip: zamknięcie klipsowe (szybsze zakładanie); Z-Band UltraSoft: samoprzylepne, ultramiękkie dla noworodków i pacjentów z wrażliwą skórą.',
-        'Sprawdź wymagania środowiskowe — standardowe Z-Band Direct wystarczą do oddziałów szpitalnych; Z-Band Fun i Splash (wodoodporne, kolorowe) do eventów, aquaparków i parków rozrywki.',
-        'Oblicz zużycie miesięczne — opakowania zbiorcze (sufiks "K") zawierają 3–6 kartridży po 175–350 opasek. Szpital o 500 przyjęciach/miesiąc potrzebuje ok. 1 opakowania Z-Band Direct Adult na 2 miesiące.',
-        'Uwzględnij powłokę antybakteryjną — opaski Zebra Z-Band posiadają unikalną powłokę antimicrobial, której nie oferuje żadna konkurencja. Jest to istotne w szpitalach z restrykcyjnymi wymogami kontroli zakażeń.',
-        'Zadbaj o drukarkę — opaski Z-Band w kartridżach są kompatybilne z Zebra ZD510-HC (aktualna generacja) i HC100 (model wycofany). Jeśli nie masz drukarki, zamów ZD510-HC z opakami — cena drukarki od 2 674 zł netto.',
+        'Rozmiar — opaski Z-Band Direct są dostępne w rozmiarach dla dorosłych, dzieci i niemowląt. Wymiary oraz liczba opasek w opakowaniu są podane na kartach produktów.',
+        'Zapięcie — Z-Band Direct ma trwałe zapięcie samoprzylepne. W rodzinie Z-Band są też opaski z zapięciem na zatrzask.',
+        'Oznaczenie stanu pacjenta — Z-Band Direct występuje także z kolorowym paskiem: czerwonym, niebieskim, zielonym, żółtym, różowym, fioletowym lub pomarańczowym.',
+        'Odporność — opaski są wodoodporne. Odporność na środki stosowane w placówce należy sprawdzić przed wdrożeniem.',
+        'Drukarka — kartridże Z-Band pasują do drukarek ZD510-HC i HC100.',
       ],
     },
-    expertAuthority: 'TAKMA to autoryzowany partner Zebra Technologies z wieloletnim doświadczeniem we wdrożeniach systemów identyfikacji pacjentów w polskich szpitalach. Nasi inżynierowie przeprowadzili wdrożenia drukarek opasek identyfikacyjnych na oddziałach: SOR, neonatologia, chirurgia, onkologia i laboratoria. Oferujemy pełne wsparcie: od doboru opaski i drukarki, przez integrację z systemem HIS/ADT, po szkolenie personelu medycznego. Współpracujemy z serwis-zebry.pl — centrum serwisowym Zebra Technologies w Polsce.',
-    technicalDeepDive: `Opaski Zebra Z-Band to jedyne na rynku opaski identyfikacyjne z powłoką antybakteryjną (antimicrobial coating). Testy laboratoryjne Zebra potwierdzają 2–6-krotnie większą trwałość nadruku w porównaniu z opaskami konkurencji — kody kreskowe pozostają skanowalne po ekspozycji na wodę, mydło, piany, alkohole, betadynę i inne środki dezynfekcyjne.
+    expertAuthority: 'TAKMA jako partner Zebra pomaga dobrać opaski Z-Band, drukarkę ZD510-HC i zapas kartridży do liczby przyjęć w placówce.',
+    technicalDeepDive: `Z-Band Direct to opaska z polipropylenu do druku termicznego, z trwałym klejem akrylowym na zapięciu. Druk nie wymaga tuszu ani taśmy barwiącej.
 
-System kartridżowy z chipem Smart Chip eliminuje problem kalibracji — po włożeniu kartridża drukarka ZD510-HC automatycznie rozpoznaje typ opaski (rozmiar, materiał) i ustawia optymalną ciemność, prędkość i pozycję druku. Operatorzy nie muszą ręcznie konfigurować parametrów, co eliminuje błędy i przestoje.
+Kod Code 128 wydrukowany przy zalecanych ustawieniach pozostaje czytelny po zanurzeniu opaski w wodzie o temperaturze 40 °C przez 6 godzin, po 1000 przetarciach suchą tkaniną, po 50 przetarciach alkoholem izopropylowym 70% i 91% oraz po 100 przetarciach betadyną. Opaska wytrzymuje siłę rozciągającą do 45 funtów (ok. 200 N).
 
-Cena pojedynczej opaski Z-Band Direct: Adult (10006995K) = ok. 0,90 zł/szt. (1 080 zł / 1 200 szt.), Child (10006999K) = ok. 0,70 zł/szt. (1 266 zł / 1 800 szt.), Infant (10006998K) = ok. 0,68 zł/szt. (1 425 zł / 2 100 szt.). Wszystkie opaski są bezlateksowe (latex-free) i MR-Safe (bezpieczne w MRI).
-
-Porównanie materiałów opasek Zebra Z-Band: Direct (polipropylen, najtańszy, zapięcie samoprzylepne) — UltraSoft (najmiększy, do noworodków, zapięcie permanentne) — QuickClip (zamknięcie klipsowe, szybkie nakładanie na dużą liczbę pacjentów) — Fun (kolorowe, 7 kolorów, do eventów) — Splash (wodoodporne, do aquaparków).`,
+Zalecane ustawienia dla drukarek z językiem ZPL: zaczernienie 22, prędkość 50 mm/s.`,
     useCases: [
       {
-        title: 'Szpitalne oddziały ogólne (SOR, interny, chirurgia)',
-        description: 'Identyfikacja pacjentów dorosłych z kodem kreskowym na opasce Z-Band Direct (25×279 mm). Skanowanie przed podaniem leku, pobraniem krwi, badaniem diagnostycznym. Zgodność z zasadami „5 Praw" farmakoterapii i wymogami akredytacji szpitalnej.',
+        title: 'Oddziały szpitalne',
+        description: 'Identyfikacja pacjentów dorosłych opaską z kodem kreskowym.',
       },
       {
-        title: 'Neonatologia i porodówki',
-        description: 'Identyfikacja noworodków opaskami Z-Band Direct Infant (25×152 mm) lub Z-Band UltraSoft (najmiększe). Kojarzenie noworodek–matka (mother-baby matching) przez skanowanie kodów kreskowych. Opaski bezlateksowe, bezpieczne dla delikatnej skóry.',
+        title: 'Oddziały dziecięce i noworodkowe',
+        description: 'Opaski w rozmiarach dla dzieci i niemowląt.',
       },
       {
-        title: 'Banki krwi i laboratoria',
-        description: 'Identyfikacja dawców krwi i pacjentów biorców. Opaski Z-Band z kodem kreskowym powiązanym z systemem laboratoryjnym eliminują ryzyko pomyłki przy pobraniu i podaniu preparatów krwiopochodnych.',
-      },
-      {
-        title: 'Eventy, koncerty i parki rozrywki',
-        description: 'Kolorowe opaski Z-Band Fun (7 kolorów) jako kontrola wstępu i rozróżnienie stref (VIP, standard, backstage). Opaski Z-Band Splash (wodoodporne) do aquaparków. Szybki druk na ZD510-HC z prędkością 102 mm/s.',
+        title: 'Oznaczanie stanu pacjenta',
+        description: 'Opaski z kolorowym paskiem pozwalają szybko rozpoznać szczególny stan pacjenta.',
       },
     ],
     uniqueInsights: {
-      heading: 'Co warto wiedzieć przed zakupem opasek identyfikacyjnych?',
+      heading: 'Co warto wiedzieć o opaskach Z-Band?',
       items: [
         {
-          title: 'Powłoka antybakteryjna to nie gadżet',
-          text: 'Opaski Z-Band Direct mają unikalną powłokę antimicrobial — potwierdzoną laboratoryjnie skuteczność przeciw bakteriom. W środowisku szpitalnym z restrykcyjnymi wymogami kontroli zakażeń jest to realny argument przy wyborze dostawcy.',
+          title: 'Zabezpieczenie zapięcia',
+          text: 'Klej uniemożliwia zdjęcie i ponowne założenie opaski. Nacięcia zabezpieczające utrudniają manipulację.',
         },
         {
-          title: 'Smart Chip eliminuje błędy kalibracji',
-          text: 'Chip w kartridżu Z-Band automatycznie konfiguruje drukarkę — prędkość, ciemność, pozycję druku. Personel medyczny nie musi znać się na ustawieniach drukarki. Każda wymiana kartridża trwa kilka sekund.',
+          title: 'Badanie MR',
+          text: 'Opaski Z-Band nie zawierają metalu i są uznawane za bezpieczne w środowisku rezonansu magnetycznego (MR safe).',
         },
         {
-          title: 'Koszt pojedynczej opaski to ok. 0,70–0,90 zł',
-          text: 'Przy opakowaniach zbiorczych (6 kartridży) koszt jednostkowy spada do 0,68 zł (niemowlęta) – 0,90 zł (dorośli). Brak taśmy barwiącej (druk termiczny) eliminuje dodatkowy materiał eksploatacyjny.',
-        },
-        {
-          title: 'Opaski HC100 i ZD510-HC są w pełni wymienne',
-          text: 'Kartridże Z-Band są kompatybilne wstecz — te same wkłady działają w starej HC100 i nowej ZD510-HC. Przejście na nowszy model drukarki nie wymaga zmiany opasek ani dostawcy materiałów.',
-        },
-        {
-          title: 'Trwałość nadruku: 2–6× lepsza niż u konkurencji',
-          text: 'Testy laboratoryjne Zebra potwierdzają, że kody kreskowe na opaskach Z-Band pozostają skanowalne 2–6 razy dłużej niż u konkurencji po ekspozycji na wodę, mydło, alkohole i środki dezynfekcyjne. Kluczowe dla szpitali z wielodniowymi pobytami pacjentów.',
+          title: 'Kartridż z PET 1',
+          text: 'Kartridż Environmentally Friendly do drukarek ZD510-HC i HC100 jest wykonany z tworzywa PET 1, które nadaje się do recyklingu.',
         },
       ],
     },
     faq: [
       {
-        question: 'Ile kosztuje opaska identyfikacyjna Zebra Z-Band?',
-        answer: 'Koszt pojedynczej opaski Z-Band Direct: dla dorosłych ok. 0,90 zł/szt. (opakowanie 10006995K = 1 200 szt. za 1 081 zł netto), dla dzieci ok. 0,70 zł/szt. (10006999K = 1 800 szt. za 1 266 zł netto), dla niemowląt ok. 0,68 zł/szt. (10006998K = 2 100 szt. za 1 425 zł netto). Ceny netto, dane z lutego 2026.',
-      },
-      {
         question: 'Do jakiej drukarki pasują opaski Z-Band?',
-        answer: 'Opaski Z-Band w kartridżach pasują do drukarek Zebra ZD510-HC (aktualna generacja, cena od 2 674 zł netto) i HC100 (model wycofany z produkcji). Kartridże są kompatybilne wstecz — te same opaski działają w obu drukarkach.',
+        answer: 'Kartridże Z-Band pasują do drukarek [Zebra ZD510-HC](/produkt/zebra-zd510-hc) i HC100. Inne drukarki etykiet i opasek dla szpitali są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
       },
       {
-        question: 'Czy opaski Z-Band są odporne na wodę i dezynfekcję?',
-        answer: 'Tak. Opaski Z-Band Direct i UltraSoft są odporne na wodę, mydło, pianki, alkohole, betadynę i inne środki dezynfekcyjne stosowane w szpitalach. Kody kreskowe pozostają skanowalne przez cały czas pobytu pacjenta — potwierdzone testami laboratoryjnymi (2–6× trwalsze niż konkurencja).',
+        question: 'Czy opaski Z-Band są odporne na wodę i alkohol?',
+        answer: 'Opaski Z-Band Direct są wodoodporne. Kod pozostaje czytelny po 50 przetarciach alkoholem izopropylowym 70% i 91% oraz po 100 przetarciach betadyną. Odporność na środki stosowane w placówce należy sprawdzić przed wdrożeniem.',
       },
       {
-        question: 'Jakie opaski wybrać do neonatologii?',
-        answer: 'Do noworodków rekomendujemy: Z-Band Direct Infant 10006998K (25×152 mm, najtańsze) lub Z-Band UltraSoft 10015356K (19×279 mm, najmiększy materiał — dedykowane do neonatologii i wcześniaków). Oba typy są bezlateksowe (latex-free) i posiadają powłokę antybakteryjną.',
+        question: 'Czy opaski zawierają lateks?',
+        answer: 'Nie. Opaski Z-Band Direct nie zawierają lateksu ani BPA.',
       },
       {
-        question: 'Ile opasek jest w jednym opakowaniu (kartonie)?',
-        answer: 'Opakowania zbiorcze (sufiks "K"): Z-Band Direct Adult (10006995K) = 6 kartridży × 200 = 1 200 szt.; Child (10006999K) = 6 × 300 = 1 800 szt.; Infant (10006998K) = 6 × 350 = 2 100 szt. Z-Band UltraSoft Adult (10015355K) = 6 × 175 = 1 050 szt.',
+        question: 'Czy zdjętą opaskę można założyć ponownie?',
+        answer: 'Nie. Trwałe zapięcie samoprzylepne uniemożliwia ponowne założenie zdjętej opaski.',
       },
       {
-        question: 'Czym różnią się opaski Z-Band Direct od Z-Band UltraSoft?',
-        answer: 'Z-Band Direct: polipropylen, zapięcie samoprzylepne, ekonomiczne — standard do oddziałów szpitalnych. Z-Band UltraSoft: najmiększy materiał na rynku, zapięcie permanentne — dedykowane do neonatologii i pacjentów z wrażliwą lub uszkodzoną skórą. Oba typy mają powłokę antybakteryjną i są bezlateksowe.',
+        question: 'Czy opaski Z-Band można stosować podczas badania MR?',
+        answer: 'Opaski Z-Band nie zawierają metalu i są uznawane za bezpieczne w środowisku rezonansu magnetycznego (MR safe).',
       },
       {
-        question: 'Jakie są alternatywy dla opasek Zebra Z-Band?',
-        answer: 'Alternatywami są: opaski SATO SoftTouch (do drukarek SATO WS2/WS4), opaski PDC Healthcare (do drukarek PDC Certis), generyczne opaski z Chin (bez powłoki antybakteryjnej). Zebra Z-Band to jedyne opaski z powłoką antimicrobial i systemem kartridżowym Smart Chip — standard w szpitalach w Polsce i Europie.',
+        question: 'Ile opasek jest w opakowaniu?',
+        answer: 'Liczba opasek w kartridżu i liczba kartridży w opakowaniu zależą od rozmiaru opaski. Dane są podane na kartach produktów.',
       },
     ],
-    comparisons: [
-      {
-        title: 'Porównanie opasek Z-Band Direct vs Z-Band UltraSoft',
-        content: 'Z-Band Direct: polipropylen, zapięcie samoprzylepne (adhesive), cena ok. 0,68–0,90 zł/szt., rozmiary dla dorosłych/dzieci/niemowląt. Z-Band UltraSoft: najmiększy materiał, zapięcie permanentne, cena ok. 1,00–1,20 zł/szt., rozmiary 1"×11" i 0,75"×11". Oba typy: powłoka antybakteryjna, Smart Chip, druk termiczny bezpośredni, kompatybilne z ZD510-HC i HC100.',
-      },
-    ],
+    comparisons: [],
     howToSteps: [
-      { name: 'Określ grupę pacjentów', text: 'Dorośli → Z-Band Direct 25×279 mm (10006995K); Dzieci → 25×178 mm (10006999K); Niemowlęta → 25×152 mm (10006998K); Neonatologia z wrażliwą skórą → Z-Band UltraSoft (10015355K/10015356K).' },
-      { name: 'Oblicz miesięczne zużycie', text: 'Policz średnią liczbę przyjęć miesięcznie × opaski na pacjenta (zazwyczaj 1 szt.). Szpital o 500 przyjęciach/mies. → 1 opakowanie Z-Band Direct Adult na 2+ miesiące (1 200 szt.).' },
-      { name: 'Sprawdź drukarkę', text: 'Opaski Z-Band wymagają drukarki Zebra ZD510-HC (zalecana, od 2 674 zł) lub HC100 (wycofana). Jeśli nie masz drukarki, zamów zestaw: drukarka + opaski.' },
-      { name: 'Skonfiguruj integrację z HIS/ADT', text: 'ZD510-HC obsługuje ZPL II i XML — kompatybilna z systemami Allscripts, CareFusion, Cerner, CPSI, Epic, McKesson. Wymaga konfiguracji szablonu druku w systemie szpitalnym.' },
-      { name: 'Zamów zapas opasek i akcesoriów', text: 'Zapas opasek na 3–6 miesięcy + głowica zapasowa (P1100266-003, ok. 680 zł) do wymiany co 50–100 tys. opasek. Wałek dociskowy (P1100266-008, ok. 554 zł) przy pogorszeniu jakości druku.' },
+      { name: 'Określ grupę pacjentów', text: 'Wybierz rozmiar opaski dla dorosłych, dzieci albo niemowląt.' },
+      { name: 'Sprawdź drukarkę', text: 'Kartridże Z-Band wymagają drukarki ZD510-HC albo HC100.' },
+      { name: 'Wykonaj próbę', text: 'Wydrukuj opaskę z docelowym szablonem i sprawdź odczyt kodu skanerem.' },
     ],
   },
   'terminale-mobilne': {
