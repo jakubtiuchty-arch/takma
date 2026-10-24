@@ -5,6 +5,7 @@ import { bluebirdProducts, bluebirdAccessories } from './bluebird-products'
 import { bluebirdFaq } from './bluebird-category'
 import { progloveProducts, progloveAccessories } from './proglove-products'
 import { progloveFaq } from './proglove-category'
+import { zebraRs2100Products, zebraRs2100Accessories } from './zebra-rs2100-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -1254,9 +1255,9 @@ export const subcategories: Subcategory[] = [
     slug: 'skanery-kodow-kreskowych/pierscieniowe',
     name: 'Skanery pierścieniowe i noszone',
     parentCategoryId: 'skanery-kodow-kreskowych',
-    description: 'Skanery pierścieniowe na palec i skanery noszone na grzbiecie dłoni — odczyt kodów 1D i 2D, obie ręce wolne do pracy. M3 Mobile i ProGlove.',
-    seoTitle: 'Skanery pierścieniowe i noszone na dłoni — M3 Mobile, ProGlove',
-    seoDescription: 'Skanery pierścieniowe M3 WR10 i WR15 oraz skanery noszone na dłoni ProGlove LEO, MARK i MAI. Odczyt 1D/2D, Bluetooth, obie ręce wolne. Ceny netto.',
+    description: 'Skanery pierścieniowe na palec i skanery noszone na grzbiecie dłoni — odczyt kodów 1D i 2D, obie ręce wolne do pracy. M3 Mobile, ProGlove i Zebra.',
+    seoTitle: 'Skanery pierścieniowe i noszone na dłoni — M3 Mobile, ProGlove, Zebra',
+    seoDescription: 'Skanery pierścieniowe M3 WR10 i WR15 oraz skanery noszone na dłoni ProGlove LEO, MARK, MAI i Zebra RS2100. Odczyt 1D/2D, Bluetooth, obie ręce wolne. Ceny netto.',
     longDescription: 'Skanery pierścieniowe i noszone to małe czytniki kodów kreskowych 1D i 2D mocowane na palcu albo na grzbiecie dłoni. Operator uruchamia odczyt spustem przy palcu i od razu chwyta towar obiema rękami, bez odkładania skanera. Takie skanery stosuje się przy kompletacji zamówień, sortowaniu, pakowaniu, przyjęciach i montażu. Łączą się przez Bluetooth z terminalem, tabletem lub smartfonem, a część z nich także z komputerem przez bramkę USB. Mocowania i stacje ładujące są w kategorii [akcesoria do skanerów](/akcesoria-do-skanerow).',
     icon: 'scan',
     productIds: ['m3-wr15', 'm3-wr10'],
@@ -1270,8 +1271,8 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'skanery-kodow-kreskowych',
     description: 'Oryginalne akcesoria do skanerów kodów kreskowych Zebra, Honeywell, Newland i ProGlove — bazy ładujące, stacje dokujące, baterie, podstawki, kable, kabury i mocowania skanerów noszonych',
     seoTitle: 'Akcesoria do skanerów kodów kreskowych | Zebra, Honeywell, Newland, ProGlove',
-    seoDescription: 'Oryginalne akcesoria do skanerów Zebra (DS2208, DS3678, DS8288, DS4678), Honeywell (Granit, Xenon), Newland (HR23, HR33) i ProGlove (mocowania, stacje ładujące, Gateway) — stacje dokujące, bazy Bluetooth, baterie, podstawki, kable USB/RS-232. Ceny netto B2B.',
-    longDescription: 'Kompletna oferta oryginalnych akcesoriów do skanerów kodów kreskowych Zebra, Honeywell i Newland. Stacje dokujące i bazy ładująco-komunikacyjne Zebra (STB3678, CR8288, CR8178, CR2278) z technologią Connect+ i IntelliStand. Baterie PowerPrecision+ Zebra i akumulatory Honeywell/Newland (2 400–3 500 mAh). Podstawki gooseneck Zebra i Smartstand Newland z auto-sense do pracy hands-free. Kable USB i RS-232 w długościach 2,1–4,6 m. Ładowarki 4-slotowe do zarządzania flotą baterii. Do skanerów noszonych ProGlove są mocowania Index Trigger, Hand Strap i Reel, stacje ładujące 2- i 10-gniazdowe, akcesoria Gen 2 do MAI oraz bramki Gateway i Gateway Plus. Każde akcesorium jest oryginalne i objęte gwarancją producenta. TAKMA — autoryzowany partner Zebra, Honeywell i Newland w Polsce.',
+    seoDescription: 'Oryginalne akcesoria do skanerów Zebra (DS2208, DS3678, DS8288, DS4678), Honeywell (Granit, Xenon), Newland (HR23, HR33) i ProGlove oraz Zebra RS2100 (mocowania, stacje ładujące, Gateway, adapter Bluetooth) — stacje dokujące, bazy Bluetooth, baterie, podstawki, kable USB/RS-232. Ceny netto B2B.',
+    longDescription: 'Kompletna oferta oryginalnych akcesoriów do skanerów kodów kreskowych Zebra, Honeywell i Newland. Stacje dokujące i bazy ładująco-komunikacyjne Zebra (STB3678, CR8288, CR8178, CR2278) z technologią Connect+ i IntelliStand. Baterie PowerPrecision+ Zebra i akumulatory Honeywell/Newland (2 400–3 500 mAh). Podstawki gooseneck Zebra i Smartstand Newland z auto-sense do pracy hands-free. Kable USB i RS-232 w długościach 2,1–4,6 m. Ładowarki 4-slotowe do zarządzania flotą baterii. Do skanerów noszonych ProGlove są mocowania Index Trigger, Hand Strap i Reel, stacje ładujące 2- i 10-gniazdowe, akcesoria Gen 2 do MAI oraz bramki Gateway i Gateway Plus. Do skanera noszonego Zebra RS2100 są mocowania ze spustem na prawą i lewą rękę, stacje ładujące 2- i 20-gniazdowe oraz adapter Bluetooth do komputera. Każde akcesorium jest oryginalne i objęte gwarancją producenta. TAKMA — autoryzowany partner Zebra, Honeywell i Newland w Polsce.',
     icon: 'package',
     productIds: [
       'honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-holster-industrial',
@@ -1320,10 +1321,10 @@ export const subcategories: Subcategory[] = [
     name: 'Stacje ładujące i ładowarki',
     parentCategoryId: 'skanery-kodow-kreskowych',
     parentSubcategoryId: 'akcesoria-do-skanerow',
-    description: 'Stacje dokujące, bazy ładująco-komunikacyjne i ładowarki wieloslotowe do skanerów Zebra, Honeywell i Newland oraz stacje ładujące do skanerów noszonych ProGlove',
+    description: 'Stacje dokujące, bazy ładująco-komunikacyjne i ładowarki wieloslotowe do skanerów Zebra, Honeywell i Newland oraz stacje ładujące do skanerów noszonych ProGlove i Zebra RS2100',
     seoTitle: 'Stacje dokujące i bazy do skanerów | Zebra STB3678, CR8288 | Honeywell CCB23 | ProGlove',
-    seoDescription: 'Stacje dokujące Zebra (STB3678, CR8288 indukcyjne, CR8178 Connect+, CR2278), bazy Honeywell CCB23 Bluetooth 100 m, ładowarki 4-slot Zebra/Honeywell/Newland, stacje ładujące ProGlove na 2 i 10 skanerów oraz stacja Gen 2 do MAI. Od 373 zł netto.',
-    longDescription: 'Stacje dokujące, bazy ładująco-komunikacyjne i ładowarki baterii do skanerów bezprzewodowych Zebra, Honeywell i Newland. Zebra STB3678 — cradle do DS3678 z ładowaniem + komunikacją USB/RS-232. Zebra CR8288 — bazy do DS8288 z ładowaniem indukcyjnym i IntelliStand. Zebra CR8178 — bazy Connect+ (bezstykowe) do DS4678/DS8178. Zebra CR2278 — baza prezentacyjna BT do DS2278. Zebra SAC3600 — ładowarka 4-slot do baterii DS3678. Honeywell CCB23 — baza Bluetooth Class 1 (100 m) do Granit Ultra 2105i. Honeywell MB4-BAT-SCN11 — ładowarka 4-slot. Newland CD3233-4C — ładowarka 4-slot do HR23/HR33 BT. ProGlove C006 i C007 — stacje ładujące na 2 i 10 skanerów MARK i LEO; ProGlove C021 — stacja Gen 2 na dwa urządzenia MAI.',
+    seoDescription: 'Stacje dokujące Zebra (STB3678, CR8288 indukcyjne, CR8178 Connect+, CR2278), bazy Honeywell CCB23 Bluetooth 100 m, ładowarki 4-slot Zebra/Honeywell/Newland, stacje ładujące ProGlove na 2 i 10 skanerów, stacja Gen 2 do MAI oraz stacje Zebra RS2100 na 2 i 20 skanerów. Od 373 zł netto.',
+    longDescription: 'Stacje dokujące, bazy ładująco-komunikacyjne i ładowarki baterii do skanerów bezprzewodowych Zebra, Honeywell i Newland. Zebra STB3678 — cradle do DS3678 z ładowaniem + komunikacją USB/RS-232. Zebra CR8288 — bazy do DS8288 z ładowaniem indukcyjnym i IntelliStand. Zebra CR8178 — bazy Connect+ (bezstykowe) do DS4678/DS8178. Zebra CR2278 — baza prezentacyjna BT do DS2278. Zebra SAC3600 — ładowarka 4-slot do baterii DS3678. Honeywell CCB23 — baza Bluetooth Class 1 (100 m) do Granit Ultra 2105i. Honeywell MB4-BAT-SCN11 — ładowarka 4-slot. Newland CD3233-4C — ładowarka 4-slot do HR23/HR33 BT. ProGlove C006 i C007 — stacje ładujące na 2 i 10 skanerów MARK i LEO; ProGlove C021 — stacja Gen 2 na dwa urządzenia MAI. Zebra CRD-RS2X-2SCHG-01 i CRD-RS2X-20SCHG-01 — stacje ładujące na 2 i 20 skanerów noszonych RS2100.',
     icon: 'zap',
     productIds: [
       'honeywell-ccb23-100bt-07n', 'honeywell-mb4-bat-scn11', 'newland-cd3233-4c', 'zebra-cradle-ds3678', 'zebra-cradle-presentation-ds3678', 'zebra-cradle-ds2278', 'zebra-cradle-presentation-ds8288', 'zebra-cradle-standard-ds8288', 'zebra-cradle-standard-cr8178', 'zebra-cradle-presentation-cr8178', 'zebra-charger-4slot-ds3600',
@@ -1355,10 +1356,10 @@ export const subcategories: Subcategory[] = [
     name: 'Kable do skanerów',
     parentCategoryId: 'skanery-kodow-kreskowych',
     parentSubcategoryId: 'akcesoria-do-skanerow',
-    description: 'Kable USB i RS-232 do skanerów Zebra i Honeywell — oryginalne, od 2,1 m do 4,6 m; przewody USB i Ethernet do ProGlove Gateway Plus',
+    description: 'Kable USB i RS-232 do skanerów Zebra i Honeywell — oryginalne, od 2,1 m do 4,6 m; przewody USB i Ethernet do ProGlove Gateway Plus oraz przewód USB do adaptera Bluetooth Zebra RS2100',
     seoTitle: 'Kable USB i RS-232 do skanerów Zebra i Honeywell | CBA-U21, CBA-U47, CBA-R07, CBL-500',
     seoDescription: 'Oryginalne kable do skanerów: Zebra CBA-U21 USB 2,1 m, CBA-U47 USB 4,6 m, CBA-R07 RS-232, CBA-U01 do DS3608. Honeywell CBL-500 USB 3 m, CBL-020 RS-232. Od 72 zł netto.',
-    longDescription: 'Oryginalne kable komunikacyjne do skanerów kodów kreskowych Zebra i Honeywell. Zebra CBA-U21-S07ZBR — USB 2,1 m do DS2208, DS4608, DS9308, DS9908. Zebra CBA-U47-S15ZAR — USB 4,6 m (dłuższa wersja). Zebra CBA-R07-S07PAR / CBA-R21-S15PAR — RS-232 2 m / 4,6 m do kas z portem COM. Zebra CBA-U01-S07ZAR / CBA-U09-C15ZAR — USB 2,1 m / 4,6 m dedykowane do skanerów ultra-rugged DS3608/DS3678. Honeywell CBL-500-300-S00 — USB 3 m do Granit, Xenon, Voyager. Honeywell CBL-020-300-C00 — RS-232 krętny 3 m. Kable ekranowane, plug-and-play. Do bramki ProGlove Gateway Plus są przewód USB Z001-001 i przewód Ethernet z PoE Z009-000.',
+    longDescription: 'Oryginalne kable komunikacyjne do skanerów kodów kreskowych Zebra i Honeywell. Zebra CBA-U21-S07ZBR — USB 2,1 m do DS2208, DS4608, DS9308, DS9908. Zebra CBA-U47-S15ZAR — USB 4,6 m (dłuższa wersja). Zebra CBA-R07-S07PAR / CBA-R21-S15PAR — RS-232 2 m / 4,6 m do kas z portem COM. Zebra CBA-U01-S07ZAR / CBA-U09-C15ZAR — USB 2,1 m / 4,6 m dedykowane do skanerów ultra-rugged DS3608/DS3678. Honeywell CBL-500-300-S00 — USB 3 m do Granit, Xenon, Voyager. Honeywell CBL-020-300-C00 — RS-232 krętny 3 m. Kable ekranowane, plug-and-play. Do bramki ProGlove Gateway Plus są przewód USB Z001-001 i przewód Ethernet z PoE Z009-000. Adapter Bluetooth Zebra BT-RS5X6-DNGL-01 do skanerów RS2100 łączy się z komputerem przewodem USB CBA-U46-S07ZAR.',
     icon: 'cable',
     productIds: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'zebra-cable-usb-ds3608', 'zebra-cable-usb-long-ds3608', 'zebra-cable-usb-ds22', 'zebra-cable-usb-long', 'zebra-cable-rs232-short', 'zebra-cable-rs232-long', 'zebra-cable-usb-li2208'],
     productCount: 9,
@@ -1369,10 +1370,10 @@ export const subcategories: Subcategory[] = [
     name: 'Etui i kabury do skanerów',
     parentCategoryId: 'skanery-kodow-kreskowych',
     parentSubcategoryId: 'akcesoria-do-skanerow',
-    description: 'Kabura na pasek do skanerów Honeywell Granit, rękawica, spust i paski do skanerów pierścieniowych M3 WR10 i WR15 oraz mocowania do skanerów noszonych ProGlove',
+    description: 'Kabura na pasek do skanerów Honeywell Granit, rękawica, spust i paski do skanerów pierścieniowych M3 WR10 i WR15 oraz mocowania do skanerów noszonych ProGlove i Zebra RS2100',
     seoTitle: 'Kabury, rękawice i mocowania do skanerów | Honeywell Granit, M3, ProGlove',
-    seoDescription: 'Kabura przemysłowa Honeywell HOLSTER-INDUSTRIAL do skanerów Granit oraz rękawica z uchwytem, spust pierścieniowy i paski do skanerów M3 WR10 i WR15. Mocowania ProGlove Index Trigger, Hand Strap i Reel do skanerów MARK i LEO oraz Hand Strap Gen 2 do MAI. Ceny netto B2B.',
-    longDescription: 'Akcesoria do noszenia skanerów kodów kreskowych. Do skanerów pistoletowych Honeywell Granit jest kabura HOLSTER-INDUSTRIAL: mocowana klipsem na pasku, trzyma skaner na biodrze, więc operator ma wolne ręce do przenoszenia paczek, obsługi wózka i kompletowania zamówień. Pasuje do Granit Ultra 2105i i 2100i oraz Granit XP 1990i i 1991i. Do skanerów pierścieniowych M3 WR10 i WR15 są rękawica z uchwytem, spust pierścieniowy zakładany na palec, pasek na dłoń i pasek na nadgarstek. Te cztery akcesoria są wspólne dla obu modeli. Skaner noszony ProGlove pracuje tylko w mocowaniu: Index Trigger w rozmiarach S, M i L na lewą lub prawą rękę, Hand Strap w jednym rozmiarze albo Reel na zwijanej lince. Do MAI służy Hand Strap Gen 2.',
+    seoDescription: 'Kabura przemysłowa Honeywell HOLSTER-INDUSTRIAL do skanerów Granit oraz rękawica z uchwytem, spust pierścieniowy i paski do skanerów M3 WR10 i WR15. Mocowania ProGlove Index Trigger, Hand Strap i Reel do skanerów MARK i LEO oraz Hand Strap Gen 2 do MAI. Mocowania ze spustem Zebra RS2100 na prawą i lewą rękę. Ceny netto B2B.',
+    longDescription: 'Akcesoria do noszenia skanerów kodów kreskowych. Do skanerów pistoletowych Honeywell Granit jest kabura HOLSTER-INDUSTRIAL: mocowana klipsem na pasku, trzyma skaner na biodrze, więc operator ma wolne ręce do przenoszenia paczek, obsługi wózka i kompletowania zamówień. Pasuje do Granit Ultra 2105i i 2100i oraz Granit XP 1990i i 1991i. Do skanerów pierścieniowych M3 WR10 i WR15 są rękawica z uchwytem, spust pierścieniowy zakładany na palec, pasek na dłoń i pasek na nadgarstek. Te cztery akcesoria są wspólne dla obu modeli. Skaner noszony ProGlove pracuje tylko w mocowaniu: Index Trigger w rozmiarach S, M i L na lewą lub prawą rękę, Hand Strap w jednym rozmiarze albo Reel na zwijanej lince. Do MAI służy Hand Strap Gen 2. Skaner Zebra RS2100 pracuje w mocowaniu ze spustem na prawą albo lewą rękę, w jednym rozmiarze.',
     icon: 'shield',
     productIds: [
       'honeywell-holster-industrial',
@@ -35096,7 +35097,7 @@ const mc33Accessories: Product[] = [
   "slug": "zebra-mc33-dc-cable-382",
   "name": "Przewód DC Zebra z uchwytem zwalniającym",
   "shortDescription": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.",
-  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n- Przewód zasila [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) z zasilacza PWR-BGA12V108W0WW. Do tej stacji służy wyłącznie przewód CBL-DC-382A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -35122,7 +35123,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01"
     },
     {
       "name": "Typ",
@@ -35145,7 +35146,8 @@ const mc33Accessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78"
+    "Akcesoria do Zebra TC78",
+    "Akcesoria do Zebra RS2100"
   ],
   "compatibleAccessories": [],
   "relatedAccessories": [
@@ -35164,7 +35166,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-DC-382A1-01?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01. "
     }
   ]
 },
@@ -56950,7 +56952,7 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01"
     }
   ],
   "applications": [
@@ -56965,7 +56967,8 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78"
+    "Akcesoria do Zebra TC78",
+    "Akcesoria do Zebra RS2100"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -56974,7 +56977,7 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     "/images/products/PWR-WUA5V12W0EU-tc22-tc27-quality-v1.png"
   ],
   "name": "Zasilacz USB-A Zebra 12 W EU",
-  "description": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla podłączenia przez USB-C — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\n**Wymagane dla podłączenia przez dolne styki MC3400 lub MC3450 — sprzedawane osobno**\n\n- [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n**Wymagane dla ładowania MC9400 lub MC9450 — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 można ładować przez przewód [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01) albo adapter [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable). Wybierz jeden przewód dopasowany do sposobu podłączenia.\n\n- Dla MC9400 i MC9450 potrzebne są adapter oraz przewód USB. Nie zastępuj adaptera przewodem do MC3400 lub MC3450.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla podłączenia przez USB-C — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\n**Wymagane dla podłączenia przez dolne styki MC3400 lub MC3450 — sprzedawane osobno**\n\n- [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n**Wymagane dla ładowania MC9400 lub MC9450 — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 można ładować przez przewód [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01) albo adapter [Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable). Wybierz jeden przewód dopasowany do sposobu podłączenia.\n\n- Dla MC9400 i MC9450 potrzebne są adapter oraz przewód USB. Nie zastępuj adaptera przewodem do MC3400 lub MC3450.\n\n- Zasilacz zasila [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01) przez przewód USB-A / USB-C CBL-TC5X-USBC2A-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "shortDescription": "Zasilacz USB-A 12 W z wtyczką europejską zasila zgodne urządzenia Zebra. Do stacji TC22 i TC27 CRD-TC2L-BS1CO-01 lub CRD-TC2L-BS1COB-01 podłącz przewód USB-A / USB-C.",
   "seoH1": "Zasilacz USB-A Zebra 12 W EU",
   "updatedAt": "2026-10-03",
@@ -58464,7 +58467,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-zasilacz-108w",
   "name": "Zasilacz sieciowy Zebra 108 W",
   "shortDescription": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.",
-  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) łączy się z zasilaczem przewodem DC [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382), a nie CBL-DC-381A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58491,7 +58494,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01"
     },
     {
       "name": "Moc",
@@ -58515,7 +58518,8 @@ const tc22Accessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78"
+    "Akcesoria do Zebra TC78",
+    "Akcesoria do Zebra RS2100"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -58531,7 +58535,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje PWR-BGA12V108W0WW?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01. "
     }
   ]
 },
@@ -76117,7 +76121,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-50-16000-220r",
   "name": "Przewód sieciowy Zebra — Europa, C13",
   "shortDescription": "Zebra 50-16000-220R — przewód sieciowy 1,8 m z uziemioną wtyczką europejską i złączem C13 do zasilaczy Zebra stacji, ładowarek i skanerów ladowych.",
-  "description": "Przewód 50-16000-220R łączy zasilacz Zebra z gniazdkiem sieciowym. Ma uziemioną wtyczkę europejską i złącze C13. Długość wynosi 1,8 m. Jest przeznaczony do zasilaczy stacji dokujących, ładowarek baterii i skanerów ladowych Zebra. Przewód nie jest zasilaczem.\n\n## Zasilacze Zebra 50 W, 108 W i 150 W\n\n[Zasilacz 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w) zasila jednogniazdowe stacje i ładowarki baterii TC22, TC27, TC201, MC3400, MC3450, MC9400, MC9450, TC53, TC58, TC73, TC78 i ET65. Ten sam zasilacz zasila skanery ladowe [Zebra MP7200](/produkt/zebra-mp7200) i [Zebra SP7208-H](/produkt/zebra-sp7208-h). [Zasilacz 108 W](/produkt/zebra-zasilacz-108w) zasila stacje wielogniazdowe TC22, TC27, MC3400, MC3450, MC9400 i MC9450. [Zasilacz 150 W 12 V](/produkt/zebra-tc201-pwr-bga12v150w1ww) zasila stacje wielostanowiskowe TC201, TC501 i TC701. [Zasilacz 150 W 24 V](/produkt/zebra-tc53-pwr-bga24v150w1ww) jest przeznaczony do TC53 / TC58.\n\n## Zestawy stacji wielostanowiskowych bez przewodu sieciowego\n\nOferowane zestawy stacji wielostanowiskowych TC201, TC53, TC73, TC501 i TC701 nie zawierają przewodu sieciowego. Dotyczy to także stacji TC501 i TC701 z końcówką -1 w numerze, które mają zasilacz 150 W w zestawie. Ten przewód zamawia się do nich osobno. [Przewód 50-16000-255R](/produkt/zebra-tc22-tc27-50-16000-255r) ma wtyczkę bez uziemienia i nie pasuje do zasilaczy 50 W ani 108 W.",
+  "description": "Przewód 50-16000-220R łączy zasilacz Zebra z gniazdkiem sieciowym. Ma uziemioną wtyczkę europejską i złącze C13. Długość wynosi 1,8 m. Jest przeznaczony do zasilaczy stacji dokujących, ładowarek baterii i skanerów ladowych Zebra. Przewód nie jest zasilaczem.\n\n## Zasilacze Zebra 50 W, 108 W i 150 W\n\n[Zasilacz 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w) zasila jednogniazdowe stacje i ładowarki baterii TC22, TC27, TC201, MC3400, MC3450, MC9400, MC9450, TC53, TC58, TC73, TC78 i ET65. Ten sam zasilacz zasila skanery ladowe [Zebra MP7200](/produkt/zebra-mp7200) i [Zebra SP7208-H](/produkt/zebra-sp7208-h). [Zasilacz 108 W](/produkt/zebra-zasilacz-108w) zasila stacje wielogniazdowe TC22, TC27, MC3400, MC3450, MC9400 i MC9450 oraz [stację 20-gniazdową skanerów RS2100](/produkt/zebra-rs2100-crd-rs2x-20schg-01). [Zasilacz 150 W 12 V](/produkt/zebra-tc201-pwr-bga12v150w1ww) zasila stacje wielostanowiskowe TC201, TC501 i TC701. [Zasilacz 150 W 24 V](/produkt/zebra-tc53-pwr-bga24v150w1ww) jest przeznaczony do TC53 / TC58.\n\n## Zestawy stacji wielostanowiskowych bez przewodu sieciowego\n\nOferowane zestawy stacji wielostanowiskowych TC201, TC53, TC73, TC501 i TC701 nie zawierają przewodu sieciowego. Dotyczy to także stacji TC501 i TC701 z końcówką -1 w numerze, które mają zasilacz 150 W w zestawie. Ten przewód zamawia się do nich osobno. [Przewód 50-16000-255R](/produkt/zebra-tc22-tc27-50-16000-255r) ma wtyczkę bez uziemienia i nie pasuje do zasilaczy 50 W ani 108 W.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -76141,12 +76145,13 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW)"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 i zasilacz PWR-BGA12V108W0WW"
     }
   ],
   "applications": [
     "Podłączenie zasilacza Zebra 50 W, 108 W lub 150 W do gniazdka",
-    "Stacje wielostanowiskowe TC201, TC501 i TC701 z zasilaczem 150 W"
+    "Stacje wielostanowiskowe TC201, TC501 i TC701 z zasilaczem 150 W",
+    "Stacja 20-gniazdowa skanerów RS2100 z zasilaczem 108 W"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -76233,7 +76238,7 @@ const tc201Accessories: Product[] = [
   "slug": "zebra-tc201-cbl-tc5x-usbc2a-01",
   "name": "Przewód USB-A / USB-C 1 m Zebra",
   "shortDescription": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.",
-  "description": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 podłącz bezpośrednio do bocznego portu USB-C. Do ładowania z sieci użyj [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu). W pojeździe użyj [Ładowarka samochodowa USB-A Zebra — 2 porty (CHG-AUTO-USB1-01)](/produkt/zebra-tc201-chg-auto-usb1-01). Wybierz jedno źródło zasilania.\n\n- MC9400 i MC9450 podłącz przez stację [Stacja USB Zebra MC9400 / MC9450 — 1 terminal i 1 bateria (CRD-MC93-2SUCHG-01)](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) lub adapter [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450). Przewód nie łączy się bezpośrednio z terminalem.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód USB-A / USB-C długości 1 m służy do komunikacji i ładowania zgodnych terminali Zebra. Do ładowania w pojeździe użyj ładowarki USB-A. Pasuje także do Zebra TC201.\n\n## Dobór i montaż\n\n- MC3400 i MC3450 podłącz bezpośrednio do bocznego portu USB-C. Do ładowania z sieci użyj [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu). W pojeździe użyj [Ładowarka samochodowa USB-A Zebra — 2 porty (CHG-AUTO-USB1-01)](/produkt/zebra-tc201-chg-auto-usb1-01). Wybierz jedno źródło zasilania.\n\n- MC9400 i MC9450 podłącz przez stację [Stacja USB Zebra MC9400 / MC9450 — 1 terminal i 1 bateria (CRD-MC93-2SUCHG-01)](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) lub adapter [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450). Przewód nie łączy się bezpośrednio z terminalem.\n\n- Skanery noszone RS2100 ładuje [Stacja ładująca Zebra RS2100 2-gniazdowa (CRD-RS2X-2SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-2schg-01). Przewód łączy stację z zasilaczem PWR-WUA5V12W0EU.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "manufacturerId": "zebra",
   "priceFrom": 37.48,
@@ -76254,7 +76259,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01"
     }
   ],
   "applications": [
@@ -76270,7 +76275,8 @@ const tc201Accessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78"
+    "Akcesoria do Zebra TC78",
+    "Akcesoria do Zebra RS2100"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -76286,7 +76292,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-TC5X-USBC2A-01?",
-      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
+      "answer": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01. "
     }
   ]
 },
@@ -95498,6 +95504,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Skaner noszony Zebra RS2100 i jego akcesoria trafiają do podkategorii według `subcategoryIds`, tak jak ProGlove.
+for (const subcategory of subcategories) {
+  const additions = [...zebraRs2100Products, ...zebraRs2100Accessories].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95540,6 +95555,8 @@ const rawProductList: Product[] = [
   ...bluebirdAccessories,
   ...progloveProducts,
   ...progloveAccessories,
+  ...zebraRs2100Products,
+  ...zebraRs2100Accessories,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,
@@ -96289,7 +96306,7 @@ export const brandCategories: BrandCategory[] = [
     // ta sama liczba co w pasku „ceny netto od … zł” pod H1.
     seoTitle: 'Skanery i czytniki kodów kreskowych Zebra — ceny od {cenaOd} zł',
     seoDescription: 'Czytniki i skanery kodów kreskowych Zebra: DS2208, DS2278, DS4608, DS3608/DS3678, LI2208. 1D i 2D, USB i Bluetooth, od {cenaOd} zł netto. Zebra Premier Partner.',
-    longDescription: 'W ofercie TAKMA są czytniki kodów kreskowych Zebra: ręczne przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne do kas. Najtańszy imager 2D to [DS2208](/produkt/zebra-ds2208) od 352 zł netto, a liniowy [LI2208](/produkt/zebra-li2208) kosztuje od 181 zł netto. LI2208 i LI3608 czytają tylko kody 1D (np. EAN-13, Code 128). Modele serii DS to imagery 2D: czytają też kody QR, Data Matrix i PDF417, także z ekranu telefonu. Do magazynów i chłodni są ultra-rugged DS3608 i bezprzewodowy DS3678, do kas prezentacyjne DS9308 i DS9908. Jako Zebra Premier Partner pomagamy dobrać model do stanowiska, konfigurujemy skanery i prowadzimy ich serwis.',
+    longDescription: 'W ofercie TAKMA są czytniki kodów kreskowych Zebra: ręczne przewodowe (USB), bezprzewodowe (Bluetooth) i prezentacyjne do kas. Najtańszy imager 2D to [DS2208](/produkt/zebra-ds2208) od 352 zł netto, a liniowy [LI2208](/produkt/zebra-li2208) kosztuje od 181 zł netto. LI2208 i LI3608 czytają tylko kody 1D (np. EAN-13, Code 128). Modele serii DS to imagery 2D: czytają też kody QR, Data Matrix i PDF417, także z ekranu telefonu. Do magazynów i chłodni są ultra-rugged DS3608 i bezprzewodowy DS3678, do kas prezentacyjne DS9308 i DS9908. Do kompletacji z wolnymi rękami służy skaner [RS2100](/produkt/zebra-rs2100) noszony na grzbiecie dłoni. Jako Zebra Premier Partner pomagamy dobrać model do stanowiska, konfigurujemy skanery i prowadzimy ich serwis.',
     faq: [
       { question: 'Jaki jest najtańszy skaner Zebra?', answer: 'Najtańszy jest liniowy [LI2208](/produkt/zebra-li2208) od 181 zł netto: czyta tylko kody 1D, łączy się przez USB, ma klasę IP52 i 5 lat gwarancji. Najtańszy imager 2D to [DS2208](/produkt/zebra-ds2208) od 352 zł netto: czyta też kody QR i Data Matrix, również z ekranów telefonów, i także ma 5 lat gwarancji. Do kas, biur, aptek i punktów nadawania paczek zwykle wybierany jest DS2208.' },
       { question: 'Czym różni się skaner 1D od 2D?', answer: 'Skaner 1D czyta tylko kody kreskowe liniowe (EAN-13, Code 128). Skaner 2D (imager) czyta zarówno kody 1D, jak i 2D (QR code, Data Matrix, PDF417) oraz kody z ekranów smartfonów. Przy nowym zakupie polecamy skanery 2D, bo kody 2D (np. na lekach i e-biletach) są coraz powszechniejsze. Liniowy [LI2208](/produkt/zebra-li2208) kosztuje od 181 zł, [DS2208](/produkt/zebra-ds2208) 2D od 352 zł.' },
