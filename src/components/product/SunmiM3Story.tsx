@@ -13,7 +13,7 @@ const scenes = [
   { label: 'Obsługa sali', image: 'p3-1.webp', title: 'Odpowiedzi na pytania gości — pod ręką.', text: 'Sprawdź w aplikacji dostępność dań i szczegóły zamówienia. M3 korzysta z sieci Wi-Fi restauracji, więc informacje możesz odczytać przy stoliku.' },
 ]
 function Photo({ name, alt, contain = false }: { name: string; alt: string; contain?: boolean }) {
-  return <Image src={base + name} alt={alt} fill sizes="(max-width: 640px) 100vw, 1200px" className={contain ? mobile.contain : mobile.cover} />
+  return <Image src={base + name} alt={alt} fill quality={95} sizes="(max-width: 640px) 100vw, 1200px" className={contain ? mobile.contain : mobile.cover} />
 }
 
 export default function SunmiM3Story() {
@@ -33,7 +33,7 @@ export default function SunmiM3Story() {
     </section>
     <section id="m3-screen" className={s.screen}>
       <div><p className={shared.eyebrow}>EKRAN 6,75″ · OBUDOWA 15 mm</p><h2>Duży ekran.<br /><span>Wygodna obsługa zamówień.</span></h2><p>Przeglądaj menu, wybieraj dania i sprawdzaj szczegóły zamówienia na ekranie IPS 6,75″. Smukła, zaokrąglona obudowa waży 272 g.</p><div className={s.metrics}><div><strong>420 <small>nitów</small></strong><span>Jasność ekranu</span></div><div><strong>720 × 1600</strong><span>Rozdzielczość ekranu w pikselach</span></div></div></div>
-      <div className={s.screenPhoto}><Photo name="display-front.webp" alt="SUNMI M3 — widok z przodu z włączonym ekranem 6,75 cala" contain /></div>
+      <div className={s.screenPhoto}><Photo name="display-complete.png" alt="SUNMI M3 — widok z przodu z włączonym ekranem 6,75 cala" contain /></div>
     </section>
     <section id="m3-battery" className={s.battery}>
       <div className={shared.head}><p className={shared.eyebrow}>WYMIENNA BATERIA 5000 mAh</p><h2>Wymień baterię.<br /><span>Wróć do obsługi gości.</span></h2><p>Gdy bateria się rozładuje, możesz zastąpić ją naładowaną zamiast czekać przy ładowarce. Zapasową baterię kupujesz osobno. Czas pracy zależy od aplikacji i ustawień terminala.</p></div>
