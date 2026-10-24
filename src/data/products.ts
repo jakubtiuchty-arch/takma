@@ -52495,7 +52495,7 @@ Idealne rozwiązanie dla drukarek zakupionych w wersji bazowej (tylko USB), któ
     specifications: [
       { name: 'Part Number', value: 'P1112640-017C' },
       { name: 'Typ', value: 'Moduł Wi-Fi' },
-      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d, ZD611d, ZD611t, ZD611R, ZD411-HC, ZD421-HC, ZD611-HC, ZD621-HC w wersji termicznej' },
+      { name: 'Kompatybilność', value: 'Zebra ZD411d, ZD411t, ZD421d, ZD421t, ZD621d, ZD611d, ZD611t, ZD611R, ZD411-HC, ZD421-HC, ZD611-HC oraz ZD621-HC w wersji termicznej' },
       { name: 'Instalacja', value: 'Slot modularny, bez narzędzi' },
     ],
     applications: ['Druk bezprzewodowy', 'Druk z urządzeń mobilnych'],
