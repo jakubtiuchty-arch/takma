@@ -11,7 +11,7 @@ export const bluebirdTabletProducts: Product[] = [
     "seoTitle": "Tablet przemysłowy Bluebird T30 10,1″ z Androidem 13, 5G, IP65",
     "seoDescription": "Bluebird T30: tablet przemysłowy 10,1″ z Androidem 13, Wi-Fi 6E, opcją 5G i NFC do płatności, IP65. Tablet Bluebird T30, PN: T30-ANLB, T30-A5LAW.",
     "shortDescription": "Bluebird T30 — tablet 10,1″ o grubości 11,4 mm w obudowie IP65, z Wi-Fi 6E, opcją 5G i NFC do płatności zbliżeniowych; baterię wymienia się na miejscu.",
-    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC przyjmuje płatności zbliżeniowe (ECP 1.0 i 2.0) i ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i reaguje na dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a droższa dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot test MIL-STD-810H obejmuje 1,6 m. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Okres gwarancji wynosi 12 miesięcy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nTablet jest dostarczany bez zasilacza, wtyczki i kabla.",
+    "description": "Bluebird T30 to 10-calowy tablet z Androidem dla firm, które chcą sprzętu o wyglądzie tabletu konsumenckiego i parametrach urządzenia firmowego. Obudowa ma 11,4 mm grubości, masę 650 g i klasę szczelności IP65.\n\nW sklepie T30 skraca kolejki przy kasie (line busting), wyszukuje towar i obsługuje zaplecze. Na produkcji rejestruje zamówienia, zwroty i zlecenia, a w magazynie wspiera kompletację. Kurierzy planują na nim trasy i potwierdzają odbiór oraz doręczenie. W administracji publicznej służy do wystawiania mandatów elektronicznych i ewidencji majątku.\n\nNFC przyjmuje płatności zbliżeniowe (ECP 1.0 i 2.0) i ma certyfikat Apple VAS. Ekran WUXGA pod szkłem Corning Gorilla Glass ma typowo 500 nitów i obsługuje dotyk w rękawicach oraz rysikiem przewodzącym. Procesor Qualcomm QC4490 współpracuje z pamięcią 6/64 GB. Obie wersje mają Wi-Fi 6E, a droższa dodaje modem 5G z eSIM i dwuzakresowy GNSS.\n\nZużytą baterię wymienia się na miejscu, bez wysyłki tabletu do serwisu. Bez osłony T30 znosi wielokrotne upadki z 1,0 m na płytki, a w osłonie rugged boot test MIL-STD-810H obejmuje 1,6 m. System Android 13 można zaktualizować do wersji 17 po zakupie kontraktu Bluebird Care. Tablet ma 12 miesięcy gwarancji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nTablet jest dostarczany bez zasilacza, wtyczki i kabla.",
     "categoryId": "tablety-przemyslowe",
     "subcategoryIds": [
       "tablety-przemyslowe"
@@ -216,7 +216,7 @@ export const bluebirdTabletProducts: Product[] = [
     "faq": [
       {
         "question": "Czy Bluebird T30 ma zasilacz w zestawie?",
-        "answer": "Nie. W pudełku jest tablet z baterią. Zasilacz 5 V / 3 A, wtyczkę EU i kabel USB-A – USB-C trzeba zamówić osobno. Kilka tabletów jednocześnie ładuje <a href=\"/produkt/bluebird-204020040\">stacja 4-gniazdowa</a>."
+        "answer": "Nie. W pudełku jest tablet z baterią. Osobno zamawia się trzy elementy: zasilacz 5 V / 3 A, europejską wtyczkę do niego i kabel USB-A – USB-C. Kilka tabletów jednocześnie ładuje <a href=\"/produkt/bluebird-204020040\">stacja 4-gniazdowa</a>."
       },
       {
         "question": "Jak wymienia się baterię w Bluebird T30?",
@@ -228,7 +228,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Czym różnią się wersje Bluebird T30?",
-        "answer": "Wspólne są Wi-Fi 6E, Bluetooth 5.2, NFC, pamięć 6/64 GB i Android 13 z usługami Google. Droższa wersja ma dodatkowo modem 5G z gniazdem nano-SIM i eSIM oraz dwuzakresowy odbiornik GNSS."
+        "answer": "Wspólne są Wi-Fi 6E, Bluetooth 5.2, NFC, pamięć 6/64 GB i Android 13 z usługami Google. Droższa wersja ma dodatkowo modem 5G (nano-SIM i eSIM) oraz dwuzakresowy odbiornik GNSS."
       },
       {
         "question": "Czy Bluebird T30 otrzyma nowsze wersje Androida?",
@@ -460,7 +460,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Jakie są alternatywy dla Bluebird T10?",
-        "answer": "Obudowę IP65, wymienną baterię i opcję 5G ma <a href=\"/produkt/bluebird-t30\">Bluebird T30</a>. Wzmocnione tablety 10″ z Androidem to także <a href=\"/produkt/getac-zx10-g2\">Getac ZX10 G2</a> i <a href=\"/produkt/honeywell-eda10a\">Honeywell EDA10A</a>."
+        "answer": "Obudowę IP65, wymienną baterię i opcję 5G ma <a href=\"/produkt/bluebird-t30\">Bluebird T30</a>. Wzmocnione tablety 10″ z Androidem to także <a href=\"/produkt/honeywell-eda10a\">Honeywell EDA10A</a> i <a href=\"/produkt/honeywell-rt10a\">Honeywell RT10A</a>."
       }
     ],
     "createdAt": "2026-10-24",
@@ -670,7 +670,7 @@ export const bluebirdTabletProducts: Product[] = [
       },
       {
         "question": "Jaki system ma Bluebird T40 Ultra?",
-        "answer": "Fabrycznie Android 16. Producent zapowiada wersje 18 i 20, a usługa aktualizacji wymaga wykupienia programu gwarancyjnego Bluebird. Okres dostaw i wsparcia wynosi łącznie 4+4 lata."
+        "answer": "Fabrycznie Android 16. Producent zapowiada wersje 18 i 20, a aktualizacje są dostępne w ramach płatnego programu gwarancyjnego Bluebird. Okres dostaw i wsparcia wynosi łącznie 4+4 lata."
       },
       {
         "question": "Jakie są alternatywy dla Bluebird T40 Ultra?",
@@ -824,8 +824,8 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoH1": "Podkładka do stacji Bluebird T30",
     "seoTitle": "Podkładka do stacji Bluebird T30 — 501260136",
     "seoDescription": "Podkładka do stacji Bluebird T30 (501260136) do tabletu T30 bez osłony rugged boot: 1 szt. na gniazdo stacji 1- i 4-gniazdowej.",
-    "shortDescription": "Podkładka do stacji Bluebird T30 — dopasowuje gniazdo stacji 1- lub 4-gniazdowej do tabletu bez osłony rugged boot. PN 501260136.",
-    "description": "Podkładka dopasowuje gniazdo stacji ładującej do tabletu [Bluebird T30](/produkt/bluebird-t30) bez osłony rugged boot. Gniazda stacji T30 bez podkładki są przewidziane dla tabletu w osłonie. Jedna podkładka obsługuje jedno gniazdo: [stacja 1-gniazdowa (204010093)](/produkt/bluebird-204010093) potrzebuje jednej sztuki, a [stacja 4-gniazdowa (204020040)](/produkt/bluebird-204020040) czterech. Tablet w [osłonie rugged boot (351120036)](/produkt/bluebird-351120036) wstawia się do stacji bez podkładki.",
+    "shortDescription": "Podkładka do stacji Bluebird T30 — potrzebna w każdym gnieździe stacji, gdy tablet nie ma osłony rugged boot. PN 501260136.",
+    "description": "Podkładka dopasowuje gniazdo stacji ładującej do tabletu [Bluebird T30](/produkt/bluebird-t30) bez osłony rugged boot. Gniazda stacji T30 bez podkładki są przewidziane dla tabletu w osłonie. Jedna podkładka obsługuje jedno gniazdo: [stacja 1-gniazdowa (204010093)](/produkt/bluebird-204010093) potrzebuje jednej sztuki, a [stacja 4-gniazdowa (204020040)](/produkt/bluebird-204020040) czterech. Tablet w [osłonie rugged boot (351120036)](/produkt/bluebird-351120036) nie wymaga podkładki.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-tabletow"
@@ -1216,7 +1216,7 @@ export const bluebirdTabletAccessories: Product[] = [
     "seoH1": "Linka spiralna 170 mm do rysika Bluebird",
     "seoTitle": "Linka spiralna 170 mm do rysika Bluebird — 19346",
     "seoDescription": "Linka spiralna 170 mm do rysika Bluebird (19346): elastyczna linka przytrzymująca rysik przy tablecie T30 w osłonie rugged boot.",
-    "shortDescription": "Linka spiralna 170 mm do rysika Bluebird — elastyczna linka do rysika, wymaga osłony rugged boot na tablecie. PN 19346.",
+    "shortDescription": "Linka spiralna 170 mm do rysika Bluebird — elastyczna spiralna linka do rysika, przypinana do osłony rugged boot. PN 19346.",
     "description": "Spiralna linka o długości 170 mm jest elastyczna i przytrzymuje rysik blisko tabletu [Bluebird T30](/produkt/bluebird-t30). Mocuje się ją do punktu mocowania na rysiku, a po stronie tabletu do osłony rugged boot. Bez założonej osłony linki nie da się przypiąć do tabletu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Osłona rugged boot Bluebird T30 (351120036)](/produkt/bluebird-351120036)\n\nLinka jest sprzedawana bez osłony.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
