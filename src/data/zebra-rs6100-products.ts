@@ -35,7 +35,7 @@ export const zebraRs6100Products: Product[] = [
       "Zebra RS6100 z pojedynczym spustem — widok z drugiej strony, żółty przycisk spustu",
       "Zebra RS6100 z podwójnym spustem — przyciski spustu po obu stronach",
       "Zebra RS6100 w mocowaniu na grzbiet dłoni, spust na palcu wskazującym (mocowanie w zestawie wersji RS61B0-KBBHZWR)",
-      "Zebra RS6100 w mocowaniu Enterprise Hand Mount na dłoni w rękawicy, spust na palcu wskazującym (owijka na dłoń sprzedawana osobno)",
+      "Zebra RS6100 w mocowaniu Enterprise Hand Mount z owijką na dłoń, założonym na rękawicę; spust przy palcu wskazującym (owijka sprzedawana osobno)",
       "Zebra RS6100 ze spustem smyczy (spust smyczy sprzedawany osobno)",
       "Zebra RS6100 z pojedynczym spustem — widok z tyłu, diody RGB"
     ],
@@ -703,7 +703,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Stacja ładująca Zebra RS6100 20-gniazdowa — CRD-RS61-20SCHG-01",
     "seoDescription": "Stacja ShareCradle Zebra CRD-RS61-20SCHG-01 ładuje 20 skanerów noszonych RS6100 naraz; wymaga zasilacza 108 W. Stacja ładująca Zebra RS6100 20-gniazdowa.",
     "shortDescription": "Zebra CRD-RS61-20SCHG-01 — stacja ShareCradle na 20 skanerów RS6100 z bateriami w skanerach; zasilacz 108 W, opcjonalny uchwyt ścienny lub do szafy rack.",
-    "description": "Stacja ShareCradle CRD-RS61-20SCHG-01 ładuje jednocześnie 20 skanerów Zebra RS6100 z bateriami w skanerach. Pięć takich stacji ładuje 100 skanerów bez stu osobnych przewodów USB. Stan ładowania pokazują diody skanerów, a dioda zasilania na stacji informuje, że stacja jest pod napięciem.\n\nStacja ma wymiary 523 × 221 × 131 mm i waży 2660 g. Pracuje w temperaturze 0–50 °C i pobiera 12 V DC z zasilacza 108 W. Opcjonalny uchwyt ShareCradle mocuje ją na ścianie lub w szafie rack. Na jedno stanowisko wystarczy [stacja 4-gniazdowa](/produkt/zebra-rs6100-crd-rs61-4schg-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)",
+    "description": "Stacja ShareCradle CRD-RS61-20SCHG-01 ładuje jednocześnie 20 skanerów Zebra RS6100 z bateriami w skanerach. Pięć takich stacji ładuje 100 skanerów bez stu osobnych przewodów USB. Stan ładowania pokazują diody skanerów, a dioda zasilania na stacji informuje, że stacja jest pod napięciem.\n\nStacja ma wymiary 523 × 221 × 131 mm i waży 2660 g. Pracuje w temperaturze 0–50 °C i pobiera 12 V DC z zasilacza 108 W. Opcjonalny uchwyt ShareCradle mocuje ją na ścianie lub w szafie rack. Na jedno stanowisko wystarczy [stacja 4-gniazdowa](/produkt/zebra-rs6100-crd-rs61-4schg-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -738,7 +738,7 @@ export const zebraRs6100Accessories: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "12 V DC; zasilacz PWR-BGA12V108W0WW, przewód DC CBL-DC-381A1-01 i przewód sieciowy 50-16000-220R sprzedawane osobno"
+        "value": "12 V DC; zasilacz PWR-BGA12V108W0WW, przewód DC CBL-DC-382A1-01 i przewód sieciowy 50-16000-220R sprzedawane osobno"
       },
       {
         "name": "Wymiary",
@@ -783,7 +783,7 @@ export const zebraRs6100Accessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "zebra-psu-108w",
-      "zebra-cable-dc-381",
+      "zebra-mc33-dc-cable-382",
       "zebra-tc201-50-16000-220r",
       "zebra-tc201-brkt-scrd-smrk-01"
     ],
@@ -930,7 +930,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Ładowarka 40 baterii Zebra RS5100 / RS6100 — SAC-RS51-40SCHG-01",
     "seoDescription": "Ładowarka Zebra SAC-RS51-40SCHG-01 mieści 40 zapasowych baterii do RS6100 i RS5100; pracuje z zasilaczem PWR-BGA12V108W0WW. Ładowarka baterii Zebra RS6100 40-gniazdowa.",
     "shortDescription": "Zebra SAC-RS51-40SCHG-01 — ładowarka 40 zapasowych baterii skanerów RS5100 i RS6100 z diodą stanu przy każdym gnieździe; zasilana z zasilacza Zebra 108 W.",
-    "description": "Ładowarka SAC-RS51-40SCHG-01 mieści 40 baterii do skanerów noszonych Zebra RS5100 i RS6100. Jest przeznaczona dla dużych zespołów, które wymieniają baterie w trakcie zmiany zamiast odstawiać skanery do stacji. Każde gniazdo ma diodę stanu ładowania, a ładowarka ma diodę zasilania.\n\nŁadowarka ma wymiary 540 × 150 × 190 mm i waży 3200 g. Zasilacz 108 W dostarcza do niej napięcie 12 V DC. Zakres temperatur pracy: 5–40 °C. Z opcjonalnym uchwytem ShareCradle można ją zamontować na ścianie albo w szafie rack.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
+    "description": "Ładowarka SAC-RS51-40SCHG-01 mieści 40 baterii do skanerów noszonych Zebra RS5100 i RS6100. Jest przeznaczona dla dużych zespołów, które wymieniają baterie w trakcie zmiany zamiast odstawiać skanery do stacji. Każde gniazdo ma diodę stanu ładowania, a ładowarka ma diodę zasilania.\n\nŁadowarka ma wymiary 540 × 150 × 190 mm i waży 3200 g. Zasilacz 108 W dostarcza do niej napięcie 12 V DC. Zakres temperatur pracy: 5–40 °C. Z opcjonalnym uchwytem ShareCradle można ją zamontować na ścianie albo w szafie rack.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -965,7 +965,7 @@ export const zebraRs6100Accessories: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "12 V DC; zasilacz PWR-BGA12V108W0WW, przewód DC CBL-DC-381A1-01 i przewód sieciowy 50-16000-220R sprzedawane osobno"
+        "value": "12 V DC; zasilacz PWR-BGA12V108W0WW, przewód DC CBL-DC-382A1-01 i przewód sieciowy 50-16000-220R sprzedawane osobno"
       },
       {
         "name": "Wymiary",
@@ -1010,7 +1010,7 @@ export const zebraRs6100Accessories: Product[] = [
     "compatibleAccessories": [],
     "relatedAccessories": [
       "zebra-psu-108w",
-      "zebra-cable-dc-381",
+      "zebra-mc33-dc-cable-382",
       "zebra-tc201-50-16000-220r",
       "zebra-tc201-brkt-scrd-smrk-01",
       "zebra-rs6100-btry-rs51-4ma-01",

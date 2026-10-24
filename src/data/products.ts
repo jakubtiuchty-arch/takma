@@ -35099,7 +35099,7 @@ const mc33Accessories: Product[] = [
   "slug": "zebra-mc33-dc-cable-382",
   "name": "Przewód DC Zebra z uchwytem zwalniającym",
   "shortDescription": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.",
-  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n- Przewód zasila [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) z zasilacza PWR-BGA12V108W0WW. Do tej stacji służy wyłącznie przewód CBL-DC-382A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód DC zasila zgodną stację pięciogniazdową z zasilacza PWR-BGA12V108W0WW. Ma czarny uchwyt do odłączania wtyku. Dobierz przewód do gniazda swojej stacji.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód jest alternatywą CBL-DC-381A1-01 do zgodnych stacji MC3400 / MC3450 z zasilaczem 108 W. Ma uchwyt zwalniający wtyk. Wybierz jeden przewód DC.\n\n- Przewód z uchwytem do zwalniania złącza jest alternatywą dla [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Nie wymaga zakupu obu przewodów.\n\n- Przewód zasila [Stacja ładująca Zebra RS2100 20-gniazdowa (CRD-RS2X-20SCHG-01)](/produkt/zebra-rs2100-crd-rs2x-20schg-01) z zasilacza PWR-BGA12V108W0WW. Do tej stacji służy wyłącznie przewód CBL-DC-382A1-01.\n\n- Z tego samego zasilacza przewód zasila [stację 20-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) i [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -35125,7 +35125,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01"
     },
     {
       "name": "Typ",
@@ -35149,7 +35149,8 @@ const mc33Accessories: Product[] = [
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
     "Akcesoria do Zebra TC78",
-    "Akcesoria do Zebra RS2100"
+    "Akcesoria do Zebra RS2100",
+    "Akcesoria do Zebra RS6100"
   ],
   "compatibleAccessories": [],
   "relatedAccessories": [
@@ -35168,7 +35169,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-DC-382A1-01?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01. "
     }
   ]
 },
@@ -58471,7 +58472,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-zasilacz-108w",
   "name": "Zasilacz sieciowy Zebra 108 W",
   "shortDescription": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.",
-  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\n**Wymagane dla stacji wielogniazdowej lub ładowarki baterii Zebra (terminale, RS6100) — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\n**Wymagane dla stacji 20-gniazdowej skanerów RS2100 — sprzedawane osobno**\n\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- Ten sam przewód CBL-DC-381A1-01 łączy zasilacz ze [stację 20-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) i z [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01).\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Zasilacz zasila zgodne stacje wielogniazdowe. Wejście: 100–240 V AC. Wyjście: 12 V DC, 9 A, 108 W. Dla stacji TC22 i TC27 użyj przewodu CBL-DC-381A1-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\n**Wymagane dla stacji wielogniazdowej terminali Zebra lub ładowarki baterii — sprzedawane osobno**\n\n- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)\n\n**Wymagane dla stacji 20-gniazdowej RS2100 lub RS6100 albo ładowarki 40 baterii RS6100 — sprzedawane osobno**\n\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Dla stacji wielogniazdowych oraz ładowarki 20 baterii MC3400 / MC3450 użyj przewodu [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381). Do zasilacza podłącz uziemiony przewód sieciowy [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r).\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- [Stację 20-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) i [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01) łączy z zasilaczem przewód CBL-DC-382A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58616,7 +58617,7 @@ const tc22Accessories: Product[] = [
   "slug": "zebra-kabel-zasilajacy-381",
   "name": "Przewód DC Zebra CBL-DC-381A1-01",
   "shortDescription": "Przewód łączy zasilacz PWR-BGA12V108W0WW z pięciogniazdową stacją TC22 lub TC27. Nie jest zasilaczem.",
-  "description": "Przewód łączy zasilacz PWR-BGA12V108W0WW z pięciogniazdową stacją TC22 lub TC27. Nie jest zasilaczem.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód zasila także stacje wielogniazdowe i ładowarkę 20 baterii MC3400 / MC3450. Użyj zasilacza 108 W.\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n- Przewód zasila też [stację 20-gniazdową skanerów RS6100](/produkt/zebra-rs6100-crd-rs61-20schg-01) i [ładowarkę 40 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-40schg-01). Oba urządzenia pracują z zasilaczem 108 W.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
+  "description": "Przewód łączy zasilacz PWR-BGA12V108W0WW z pięciogniazdową stacją TC22 lub TC27. Nie jest zasilaczem.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Przewód zasila także stacje wielogniazdowe i ładowarkę 20 baterii MC3400 / MC3450. Użyj zasilacza 108 W.\n\n- Dla stacji 4 terminali i ładowarki 16 baterii MC9400 / MC9450 użyj zasilacza 108 W oraz przewodu DC CBL-DC-381A1-01.\n\n## Zgodność z terminalami\n\nAkcesorium obsługuje Zebra TC53 / TC58 / TC53e / TC58e w zgodnej konfiguracji opisanej na tej karcie.\n\n## Zgodność z TC73 / TC78\n\nAkcesorium współpracuje z Zebra TC73 / TC78 w konfiguracji opisanej na tej karcie.",
   "categoryId": "akcesoria",
   "subcategoryIds": [
     "kable-zasilacze-terminali"
@@ -58643,7 +58644,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78"
     },
     {
       "name": "Typ",
@@ -58663,8 +58664,7 @@ const tc22Accessories: Product[] = [
     "Akcesoria do Zebra TC53e",
     "Akcesoria do Zebra TC58e",
     "Akcesoria do Zebra TC73",
-    "Akcesoria do Zebra TC78",
-    "Akcesoria do Zebra RS6100"
+    "Akcesoria do Zebra TC78"
   ],
   "compatibleAccessories": [],
   "downloads": [],
@@ -58680,7 +58680,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "question": "Z jakimi urządzeniami współpracuje CBL-DC-381A1-01?",
-      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS6100 przez stację CRD-RS61-20SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-40SCHG-01. "
+      "answer": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78. "
     }
   ]
 },
