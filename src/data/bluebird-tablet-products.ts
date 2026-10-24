@@ -176,7 +176,17 @@ export const bluebirdTabletProducts: Product[] = [
       "bluebird-602010041",
       "bluebird-602020024",
       "bluebird-603010005",
+      "bluebird-351120036",
+      "bluebird-355040109",
+      "bluebird-204020040",
+      "bluebird-204010093",
+      "bluebird-501260136",
+      "bluebird-357010004",
       "bluebird-626010007",
+      "bluebird-626010004",
+      "bluebird-19346",
+      "bluebird-624010038",
+      "bluebird-355040121",
       "bluebird-602010025",
       "bluebird-14948"
     ],
@@ -394,7 +404,12 @@ export const bluebirdTabletProducts: Product[] = [
     },
     "compatibleAccessories": [],
     "relatedAccessories": [
+      "bluebird-638010002",
+      "bluebird-351120041",
+      "bluebird-624010038",
       "bluebird-626010007",
+      "bluebird-621040006",
+      "bluebird-621060003",
       "bluebird-602010041",
       "bluebird-602020024",
       "bluebird-603010005"
@@ -667,4 +682,800 @@ export const bluebirdTabletProducts: Product[] = [
   }
 ]
 
-export const bluebirdTabletAccessories: Product[] = []
+export const bluebirdTabletAccessories: Product[] = [
+  {
+    "id": "bluebird-204020040",
+    "slug": "bluebird-204020040",
+    "name": "Stacja ładująca 4-gniazdowa Bluebird T30",
+    "seoH1": "Stacja ładująca 4-gniazdowa Bluebird T30",
+    "seoTitle": "Stacja ładująca 4-gniazdowa Bluebird T30 — 204020040",
+    "seoDescription": "Stacja ładująca 4-gniazdowa Bluebird T30 (204020040) ładuje cztery tablety T30; zasilacz 10 A i przewód EU osobno, podkładki do tabletów bez osłony.",
+    "shortDescription": "Stacja ładująca 4-gniazdowa Bluebird T30 — ładuje jednocześnie cztery tablety, zasilacz 10 A i przewód sieciowy zamawia się osobno. PN 204020040.",
+    "description": "Stacja 4-gniazdowa ładuje jednocześnie do czterech tabletów [Bluebird T30](/produkt/bluebird-t30), ustawionych pionowo w gniazdach. Służy tylko do ładowania i nie ma złączy sieciowych. Otwory w spodzie pozwalają przykręcić stację do podłoża. Każdy tablet bez osłony rugged boot wymaga w gnieździe osobnej podkładki, czyli do czterech sztuk na stację. Stację zasila zasilacz 10 A z przewodem sieciowym EU. Model zasilacza dobierzemy przy zamówieniu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla tabletu T30 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird T30 (501260136)](/produkt/bluebird-501260136)\n\nZasilacza 10 A ani przewodu nie ma w zestawie ze stacją.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-204020040.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca 4-gniazdowa Bluebird T30 — stacja z czterema gniazdami tabletów"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 939.37,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "204020040"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Liczba gniazd",
+        "value": "4 tablety"
+      },
+      {
+        "name": "Funkcja",
+        "value": "Tylko ładowanie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "10 A, sprzedawany osobno; model dobierany przy zamówieniu"
+      },
+      {
+        "name": "Montaż",
+        "value": "Otwory montażowe w spodzie"
+      },
+      {
+        "name": "Podkładka",
+        "value": "1 szt. na gniazdo dla tabletu bez osłony rugged boot"
+      }
+    ],
+    "applications": [
+      "Ładowanie kilku tabletów T30 na zapleczu lub w biurze zmiany"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-204010093",
+    "slug": "bluebird-204010093",
+    "name": "Stacja ładująca 1-gniazdowa Bluebird T30",
+    "seoH1": "Stacja ładująca 1-gniazdowa Bluebird T30",
+    "seoTitle": "Stacja ładująca 1-gniazdowa Bluebird T30 — 204010093",
+    "seoDescription": "Stacja ładująca 1-gniazdowa Bluebird T30 (204010093): jeden tablet T30 na stanowisku pracy; zasilacz 12 V / 5 A i przewód EU osobno.",
+    "shortDescription": "Stacja ładująca 1-gniazdowa Bluebird T30 — ładuje jeden tablet na stanowisku pracy, zasilacz 12 V / 5 A sprzedawany osobno. PN 204010093.",
+    "description": "Stacja 1-gniazdowa ładuje jeden tablet [Bluebird T30](/produkt/bluebird-t30) na stanowisku pracy. Tablet ładuje się po wstawieniu do gniazda, bez podłączania kabla do złącza USB-C. Stacja nie ma portów komunikacyjnych. Gdy tablet nie ma osłony rugged boot, w gnieździe montuje się jedną podkładkę.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz 12 V / 5 A do stacji Bluebird (602010025)](/produkt/bluebird-602010025)\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\n**Wymagane dla tabletu T30 bez osłony rugged boot — sprzedawane osobno**\n\n- [Podkładka do stacji Bluebird T30 (501260136)](/produkt/bluebird-501260136)\n\nPrzewód EU łączy zasilacz 12 V / 5 A z gniazdkiem sieciowym.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-204010093.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca 1-gniazdowa Bluebird T30 — stacja z jednym gniazdem i wstawionym tabletem"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 414.44,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "204010093"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Liczba gniazd",
+        "value": "1 tablet"
+      },
+      {
+        "name": "Funkcja",
+        "value": "Tylko ładowanie"
+      },
+      {
+        "name": "Zasilacz",
+        "value": "12 V / 5 A, sprzedawany osobno"
+      },
+      {
+        "name": "Podkładka",
+        "value": "1 szt. dla tabletu bez osłony rugged boot"
+      }
+    ],
+    "applications": [
+      "Ładowanie tabletu T30 na stanowisku obsługi"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-501260136",
+    "slug": "bluebird-501260136",
+    "name": "Podkładka do stacji Bluebird T30",
+    "seoH1": "Podkładka do stacji Bluebird T30",
+    "seoTitle": "Podkładka do stacji Bluebird T30 — 501260136",
+    "seoDescription": "Podkładka do stacji Bluebird T30 (501260136) do tabletu T30 bez osłony rugged boot: 1 szt. na gniazdo stacji 1- i 4-gniazdowej.",
+    "shortDescription": "Podkładka do stacji Bluebird T30 — dopasowuje gniazdo stacji 1- lub 4-gniazdowej do tabletu bez osłony rugged boot. PN 501260136.",
+    "description": "Podkładka dopasowuje gniazdo stacji ładującej do tabletu [Bluebird T30](/produkt/bluebird-t30) bez osłony rugged boot. Gniazda stacji T30 bez podkładki są przewidziane dla tabletu w osłonie. Jedna podkładka obsługuje jedno gniazdo: [stacja 1-gniazdowa (204010093)](/produkt/bluebird-204010093) potrzebuje jednej sztuki, a [stacja 4-gniazdowa (204020040)](/produkt/bluebird-204020040) czterech. Tablet w [osłonie rugged boot (351120036)](/produkt/bluebird-351120036) wstawia się do stacji bez podkładki.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-501260136.png"
+    ],
+    "imageDescriptions": [
+      "Podkładka do stacji Bluebird T30 — podkładka do gniazda stacji"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 11.07,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "501260136"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "Stacja ładująca 1-gniazdowa Bluebird T30 (204010093), Stacja ładująca 4-gniazdowa Bluebird T30 (204020040)"
+      },
+      {
+        "name": "Liczba na gniazdo",
+        "value": "1 szt."
+      }
+    ],
+    "applications": [
+      "Ładowanie w stacji tabletu T30 bez osłony"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-351120036",
+    "slug": "bluebird-351120036",
+    "name": "Osłona rugged boot Bluebird T30",
+    "seoH1": "Osłona rugged boot Bluebird T30",
+    "seoTitle": "Osłona rugged boot Bluebird T30 — 351120036",
+    "seoDescription": "Osłona rugged boot Bluebird T30 (351120036): odporność tabletu T30 na upadki do 1,6 m (MIL-STD-810H), test 300 przewrotów z 0,5 m.",
+    "shortDescription": "Osłona rugged boot Bluebird T30 — zwiększa odporność tabletu na upadki do 1,6 m. PN 351120036.",
+    "description": "Osłona rugged boot zwiększa odporność tabletu [Bluebird T30](/produkt/bluebird-t30) na upadki z 1,0 m do 1,6 m według MIL-STD-810H. Z założoną osłoną T30 przechodzi też test 300 przewrotów z wysokości 0,5 m. Tablet w osłonie wstawia się do stacji ładujących T30 bez podkładki. Osłona jest potrzebna do zamocowania linki rysika: [prostej (626010004)](/produkt/bluebird-626010004) albo [spiralnej (19346)](/produkt/bluebird-19346).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-351120036.png"
+    ],
+    "imageDescriptions": [
+      "Osłona rugged boot Bluebird T30 — tablet T30 w założonej osłonie, widok z przodu"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 110.53,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "351120036"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "Do 1,6 m według MIL-STD-810H (bez osłony: 1,0 m)"
+      },
+      {
+        "name": "Test przewrotów",
+        "value": "300 przewrotów z 0,5 m"
+      }
+    ],
+    "applications": [
+      "Ochrona tabletu T30 przy pracy w terenie i w magazynie"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-355040109",
+    "slug": "bluebird-355040109",
+    "name": "Bateria standardowa 8000 mAh Bluebird T30",
+    "seoH1": "Bateria standardowa 8000 mAh Bluebird T30",
+    "seoTitle": "Bateria standardowa 8000 mAh Bluebird T30 — 355040109",
+    "seoDescription": "Bateria standardowa 8000 mAh Bluebird T30 (355040109): zapasowa bateria Li-Po 3,89 V do tabletu T30, wymiana na miejscu bez wizyty w serwisie.",
+    "shortDescription": "Bateria standardowa 8000 mAh Bluebird T30 — zapasowa bateria litowo-polimerowa do wymiany na miejscu pracy. PN 355040109.",
+    "description": "Bateria standardowa 8000 mAh zasila tablet [Bluebird T30](/produkt/bluebird-t30). Ma ogniwa litowo-polimerowe o napięciu 3,89 V. Tablet pozwala wymienić baterię na miejscu pracy, bez wysyłki urządzenia do serwisu. Nowa bateria zastępuje dotychczasową, gdy jej żywotność dobiega końca. Bateria ma pojemność taką samą jak bateria dostarczana z tabletem.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "on-order",
+    "priceFrom": 234.83,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "355040109"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Pojemność",
+        "value": "8000 mAh"
+      },
+      {
+        "name": "Napięcie",
+        "value": "3,89 V"
+      },
+      {
+        "name": "Typ",
+        "value": "Litowo-polimerowa"
+      }
+    ],
+    "applications": [
+      "Wymiana zużytej baterii tabletu T30"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-357010004",
+    "slug": "bluebird-357010004",
+    "name": "Pasek na dłoń Bluebird T30",
+    "seoH1": "Pasek na dłoń Bluebird T30",
+    "seoTitle": "Pasek na dłoń Bluebird T30 — 357010004",
+    "seoDescription": "Pasek na dłoń Bluebird T30 (357010004) do trzymania tabletu T30 w jednej dłoni, z wbudowaną pętlą na rysik aluminiowy 626010007.",
+    "shortDescription": "Pasek na dłoń Bluebird T30 — pozwala trzymać tablet w jednej dłoni, z pętlą na rysik. PN 357010004.",
+    "description": "Pasek na dłoń ułatwia trzymanie tabletu [Bluebird T30](/produkt/bluebird-t30) w jednej dłoni. Druga ręka pozostaje wolna do obsługi ekranu, np. przy inwentaryzacji lub obsłudze klienta przy półce. Pasek ma wbudowaną pętlę na rysik, np. [rysik aluminiowy Bluebird (626010007)](/produkt/bluebird-626010007), który w ten sposób jest zawsze pod ręką.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-357010004.png"
+    ],
+    "imageDescriptions": [
+      "Pasek na dłoń Bluebird T30 — pasek z logo Bluebird i klamrą regulacyjną"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 78.74,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "357010004"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Pętla na rysik",
+        "value": "Tak"
+      }
+    ],
+    "applications": [
+      "Praca z tabletem T30 trzymanym w dłoni"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-624010038",
+    "slug": "bluebird-624010038",
+    "name": "Szkło ochronne Bluebird T30 i T10",
+    "seoH1": "Szkło ochronne Bluebird T30 i T10",
+    "seoTitle": "Szkło ochronne Bluebird T30 i T10 — 624010038",
+    "seoDescription": "Szkło ochronne Bluebird T30 i T10 (624010038): szkło hartowane z powłoką przeciw odciskom palców do ekranów tabletów T30 i T10.",
+    "shortDescription": "Szkło ochronne Bluebird T30 i T10 — szkło hartowane z powłoką przeciw odciskom palców, wspólne dla obu tabletów. PN 624010038.",
+    "description": "Szkło ochronne z hartowanego szkła nakleja się na ekran tabletu [Bluebird T30](/produkt/bluebird-t30) albo [Bluebird T10](/produkt/bluebird-t10). Chroni wyświetlacz przed zarysowaniami i częściowo przed skutkami drobnych uderzeń. Powłoka ogranicza widoczność odcisków palców. Szkło nie zastępuje osłony rugged boot, która chroni obudowę T30 przy upadkach. Oba tablety korzystają z tego samego numeru katalogowego.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-624010038.png"
+    ],
+    "imageDescriptions": [
+      "Szkło ochronne Bluebird T30 i T10 — szkło ochronne z naklejkami pomocniczymi do montażu"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 65.79,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "624010038"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30, Bluebird T10"
+      },
+      {
+        "name": "Materiał",
+        "value": "Szkło hartowane"
+      },
+      {
+        "name": "Powłoka",
+        "value": "Przeciw odciskom palców"
+      }
+    ],
+    "applications": [
+      "Ochrona ekranu tabletu T30 lub T10"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30",
+      "bluebird-t10"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-355040121",
+    "slug": "bluebird-355040121",
+    "name": "Uchwyt do wózka widłowego Bluebird T30",
+    "seoH1": "Uchwyt do wózka widłowego Bluebird T30",
+    "seoTitle": "Uchwyt do wózka widłowego Bluebird T30 — 355040121",
+    "seoDescription": "Uchwyt do wózka widłowego Bluebird T30 (355040121): mocowanie tabletu T30 w wózku widłowym; wymaga zgodnej powierzchni montażowej.",
+    "shortDescription": "Uchwyt do wózka widłowego Bluebird T30 — mocuje tablet w wózku widłowym, wymaga zgodnej powierzchni montażowej. PN 355040121.",
+    "description": "Uchwyt mocuje tablet [Bluebird T30](/produkt/bluebird-t30) w wózku widłowym. Dzięki temu operator może korzystać z tabletu bez trzymania go w ręku. Uchwyt ma ramiona obejmujące krawędzie tabletu oraz podstawę montażową. Do instalacji w pojeździe potrzebna jest zgodna powierzchnia montażowa. Przed zamówieniem sprawdź, czy wózek ma takie miejsce.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-355040121.png"
+    ],
+    "imageDescriptions": [
+      "Uchwyt do wózka widłowego Bluebird T30 — uchwyt z ramionami zaciskowymi i podstawą montażową"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 393.71,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "355040121"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Montaż",
+        "value": "Wymaga zgodnej powierzchni montażowej w pojeździe"
+      }
+    ],
+    "applications": [
+      "Praca z tabletem T30 w kabinie wózka widłowego"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-626010004",
+    "slug": "bluebird-626010004",
+    "name": "Linka prosta 350 mm do rysika Bluebird",
+    "seoH1": "Linka prosta 350 mm do rysika Bluebird",
+    "seoTitle": "Linka prosta 350 mm do rysika Bluebird — 626010004",
+    "seoDescription": "Linka prosta 350 mm do rysika Bluebird (626010004) przypina rysik do tabletu T30 w osłonie rugged boot i chroni go przed zgubieniem.",
+    "shortDescription": "Linka prosta 350 mm do rysika Bluebird — zabezpiecza rysik przed zgubieniem, wymaga osłony rugged boot na tablecie. PN 626010004.",
+    "description": "Prosta linka o długości 350 mm przypina rysik do tabletu [Bluebird T30](/produkt/bluebird-t30), aby nie zgubił się podczas pracy. Jeden koniec mocuje się w punkcie mocowania rysika, np. [rysika aluminiowego Bluebird (626010007)](/produkt/bluebird-626010007). Drugi koniec przypina się do osłony rugged boot, dlatego linka wymaga tej osłony na tablecie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Osłona rugged boot Bluebird T30 (351120036)](/produkt/bluebird-351120036)\n\nOsłona nie jest dołączona do linki.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-626010004.png"
+    ],
+    "imageDescriptions": [
+      "Linka prosta 350 mm do rysika Bluebird — prosta linka z pętlami na końcach"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 7.88,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "626010004"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Długość",
+        "value": "350 mm"
+      },
+      {
+        "name": "Typ",
+        "value": "Prosta"
+      }
+    ],
+    "applications": [
+      "Zabezpieczenie rysika przy tablecie T30"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-19346",
+    "slug": "bluebird-19346",
+    "name": "Linka spiralna 170 mm do rysika Bluebird",
+    "seoH1": "Linka spiralna 170 mm do rysika Bluebird",
+    "seoTitle": "Linka spiralna 170 mm do rysika Bluebird — 19346",
+    "seoDescription": "Linka spiralna 170 mm do rysika Bluebird (19346): elastyczna linka przytrzymująca rysik przy tablecie T30 w osłonie rugged boot.",
+    "shortDescription": "Linka spiralna 170 mm do rysika Bluebird — elastyczna linka do rysika, wymaga osłony rugged boot na tablecie. PN 19346.",
+    "description": "Spiralna linka o długości 170 mm jest elastyczna i przytrzymuje rysik blisko tabletu [Bluebird T30](/produkt/bluebird-t30). Mocuje się ją do punktu mocowania na rysiku, a po stronie tabletu do osłony rugged boot. Bez założonej osłony linki nie da się przypiąć do tabletu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Osłona rugged boot Bluebird T30 (351120036)](/produkt/bluebird-351120036)\n\nLinka jest sprzedawana bez osłony.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-19346.png"
+    ],
+    "imageDescriptions": [
+      "Linka spiralna 170 mm do rysika Bluebird — spiralna linka z pętlami na końcach"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 13.82,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "19346"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T30"
+      },
+      {
+        "name": "Długość",
+        "value": "170 mm"
+      },
+      {
+        "name": "Typ",
+        "value": "Spiralna, elastyczna"
+      }
+    ],
+    "applications": [
+      "Zabezpieczenie rysika przy tablecie T30"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t30"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-638010002",
+    "slug": "bluebird-638010002",
+    "name": "Klawiatura 2 w 1 Bluebird T10 (US QWERTY)",
+    "seoH1": "Klawiatura 2 w 1 Bluebird T10 (US QWERTY)",
+    "seoTitle": "Klawiatura 2 w 1 Bluebird T10 (US QWERTY) — 638010002",
+    "seoDescription": "Klawiatura 2 w 1 Bluebird T10 (638010002) z układem US QWERTY, podłączana do tabletu T10 przez 5-pinowe złącze POGO (UART).",
+    "shortDescription": "Klawiatura 2 w 1 Bluebird T10 (US QWERTY) — dedykowana klawiatura z układem US QWERTY, podłączana przez 5-pinowe złącze POGO. PN 638010002.",
+    "description": "Klawiatura 2 w 1 jest akcesorium zaprojektowanym dla tabletu [Bluebird T10](/produkt/bluebird-t10). Łączy się z tabletem przez 5-pinowe złącze POGO (UART) na obudowie, bez kabla. Ma układ US QWERTY. Klawiatura jest sprzedawana osobno i nie wchodzi w skład zestawu z tabletem. Z klawiaturą T10 ułatwia pracę z dokumentami i wprowadzanie dłuższych tekstów.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-638010002.png"
+    ],
+    "imageDescriptions": [
+      "Klawiatura 2 w 1 Bluebird T10 (US QWERTY) — klawiatura z podłączonym tabletem T10 na podpórce"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 374.97,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "638010002"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T10"
+      },
+      {
+        "name": "Układ klawiszy",
+        "value": "US QWERTY"
+      },
+      {
+        "name": "Złącze",
+        "value": "5-pinowe POGO (UART)"
+      }
+    ],
+    "applications": [
+      "Praca z dokumentami na tablecie T10"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t10"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-351120041",
+    "slug": "bluebird-351120041",
+    "name": "Etui ochronne Bluebird T10",
+    "seoH1": "Etui ochronne Bluebird T10",
+    "seoTitle": "Etui ochronne Bluebird T10 — 351120041",
+    "seoDescription": "Etui ochronne Bluebird T10 (351120041) chroni tablet T10 przed zarysowaniami i zabrudzeniami; wymagane do paska na ramię z łącznikiem.",
+    "shortDescription": "Etui ochronne Bluebird T10 — chroni obudowę przed zarysowaniami i zabrudzeniami, potrzebne do paska na ramię. PN 351120041.",
+    "description": "Etui ochronne zakłada się na tablet [Bluebird T10](/produkt/bluebird-t10). Chroni obudowę przed zarysowaniami i szkodliwymi substancjami z zewnątrz. Tablet jest dostarczany bez etui. Etui jest też potrzebne, aby nosić tablet na [pasku na ramię (621040006)](/produkt/bluebird-621040006): pasek przypina się do etui za pomocą [łącznika (621060003)](/produkt/bluebird-621060003).",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [
+      "/images/products/bluebird-351120041.png"
+    ],
+    "imageDescriptions": [
+      "Etui ochronne Bluebird T10 — tablet T10 w założonym etui, widok z przodu"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 39.47,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "351120041"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T10"
+      },
+      {
+        "name": "Ochrona",
+        "value": "Zarysowania i zabrudzenia obudowy"
+      }
+    ],
+    "applications": [
+      "Ochrona obudowy tabletu T10"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t10"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-621040006",
+    "slug": "bluebird-621040006",
+    "name": "Pasek na ramię 1600 mm Bluebird T10",
+    "seoH1": "Pasek na ramię 1600 mm Bluebird T10",
+    "seoTitle": "Pasek na ramię 1600 mm Bluebird T10 — 621040006",
+    "seoDescription": "Pasek na ramię 1600 mm Bluebird T10 (621040006) do noszenia tabletu T10 w etui; wymaga łącznika 621060003 i etui 351120041.",
+    "shortDescription": "Pasek na ramię 1600 mm Bluebird T10 — pasek do noszenia tabletu przez ramię, wymaga łącznika i etui. PN 621040006.",
+    "description": "Pasek o długości 1600 mm pozwala nosić tablet [Bluebird T10](/produkt/bluebird-t10) przez ramię. Pasek nie mocuje się bezpośrednio do obudowy tabletu. Potrzebne są etui ochronne T10 i łącznik paska, który łączy etui z paskiem.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Łącznik paska na ramię Bluebird T10 (621060003)](/produkt/bluebird-621060003)\n- [Etui ochronne Bluebird T10 (351120041)](/produkt/bluebird-351120041)\n\nŁącznik i etui nie są dołączone do paska.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 16.57,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "621040006"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T10"
+      },
+      {
+        "name": "Długość",
+        "value": "1600 mm"
+      }
+    ],
+    "applications": [
+      "Noszenie tabletu T10 przez ramię"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t10"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-621060003",
+    "slug": "bluebird-621060003",
+    "name": "Łącznik paska na ramię Bluebird T10",
+    "seoH1": "Łącznik paska na ramię Bluebird T10",
+    "seoTitle": "Łącznik paska na ramię Bluebird T10 — 621060003",
+    "seoDescription": "Łącznik paska na ramię Bluebird T10 (621060003), 87 mm: łączy tablet T10 w etui ochronnym z paskiem na ramię 621040006.",
+    "shortDescription": "Łącznik paska na ramię Bluebird T10 — łączy etui tabletu z paskiem na ramię 1600 mm. PN 621060003.",
+    "description": "Łącznik o długości 87 mm przypina pasek na ramię do tabletu [Bluebird T10](/produkt/bluebird-t10). Bez łącznika [pasek na ramię (621040006)](/produkt/bluebird-621040006) nie połączy się z tabletem. Łącznik wymaga etui ochronnego założonego na tablet.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Etui ochronne Bluebird T10 (351120041)](/produkt/bluebird-351120041)\n\nEtui nie jest dołączone do łącznika.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-tabletow"
+    ],
+    "manufacturerId": "bluebird",
+    "images": [],
+    "imageDescriptions": [],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 2.75,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "621060003"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Bluebird T10"
+      },
+      {
+        "name": "Długość",
+        "value": "87 mm"
+      },
+      {
+        "name": "Pasuje do",
+        "value": "Pasek na ramię 1600 mm Bluebird T10 (621040006)"
+      }
+    ],
+    "applications": [
+      "Mocowanie paska na ramię do tabletu T10"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "bluebird-t10"
+    ],
+    "downloads": [],
+    "faq": [],
+    "createdAt": "2026-10-24",
+    "updatedAt": "2026-10-24"
+  }
+]

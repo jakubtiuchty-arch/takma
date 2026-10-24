@@ -2627,13 +2627,14 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz sieciowy 5 V / 3 A Bluebird",
     "seoH1": "Zasilacz sieciowy 5 V / 3 A Bluebird",
     "seoTitle": "Zasilacz sieciowy 5 V / 3 A Bluebird — 602010041",
-    "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) do ładowania bezpośredniego, pasuje do S10, S20, S50, S70, EF551 i EK430; wtyczka i kabel osobno.",
+    "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) do terminali S10, S20, S50, S70, EF551, EK430 i tabletów T30, T10; wtyczka i kabel osobno.",
     "shortDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird — ładowanie terminala z gniazdka przez USB, z wymienną wtyczką sieciową. PN 602010041.",
-    "description": "Zasilacz sieciowy 5 V / 3 A (typ B) ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Ma wyjście USB-A i wymienne wtyczki sieciowe; w Polsce stosuje się wtyczkę EU. Z terminalem łączy go kabel USB-A – USB-C.\n\nPasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551) i [Bluebird EK430](/produkt/bluebird-ek430). Żaden z nich nie ma zasilacza w zestawie.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
+    "description": "Zasilacz sieciowy 5 V / 3 A (typ B) ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Ma wyjście USB-A i wymienne wtyczki sieciowe; w Polsce stosuje się wtyczkę EU. Z terminalem łączy go kabel USB-A – USB-C.\n\nPasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551) i [Bluebird EK430](/produkt/bluebird-ek430). Żaden z nich nie ma zasilacza w zestawie. Zasilacz ładuje też tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -2656,7 +2657,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Napięcie i prąd",
@@ -2685,7 +2686,9 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-rfr901",
-      "bluebird-rfr900"
+      "bluebird-rfr900",
+      "bluebird-t30",
+      "bluebird-t10"
     ],
     "downloads": [],
     "faq": [],
@@ -2700,11 +2703,12 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Wtyczka EU do zasilacza Bluebird 5 V / 3 A — 602020024",
     "seoDescription": "Wtyczka EU (Europlug) do zasilacza Bluebird 5 V / 3 A typ B (602020024): wymienna końcówka do gniazd sieciowych w Polsce i w UE.",
     "shortDescription": "Wtyczka EU do zasilacza Bluebird 5 V / 3 A — wymienna końcówka sieciowa do gniazd stosowanych w Polsce. PN 602020024.",
-    "description": "Wtyczka EU nakłada się na korpus zasilacza [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041) i dopasowuje go do gniazd w Polsce i w większości krajów UE. Bluebird produkuje wtyczki dla kilku regionów, dlatego zasilacz jest sprzedawany bez wtyczki.\n\nSama wtyczka nie zasila terminala. Do ładowania potrzebne są też zasilacz i [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005).",
+    "description": "Wtyczka EU nakłada się na korpus zasilacza [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041) i dopasowuje go do gniazd w Polsce i w większości krajów UE. Bluebird produkuje wtyczki dla kilku regionów, dlatego zasilacz jest sprzedawany bez wtyczki.\n\nSama wtyczka nie zasila terminala ani tabletu [Bluebird T30](/produkt/bluebird-t30) lub [Bluebird T10](/produkt/bluebird-t10). Do ładowania potrzebne są też zasilacz i [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -2727,7 +2731,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Typ wtyczki",
@@ -2752,7 +2756,9 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-rfr901",
-      "bluebird-rfr900"
+      "bluebird-rfr900",
+      "bluebird-t30",
+      "bluebird-t10"
     ],
     "downloads": [],
     "faq": [],
@@ -2767,11 +2773,12 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Kabel USB-A – USB-C Bluebird — 603010005",
     "seoDescription": "Kabel USB-A – USB-C Bluebird 1 m (603010005), USB 3.0: ładowanie i transmisja danych terminali S10, S20, S50, S70, EF551, EK430 i SF650.",
     "shortDescription": "Kabel USB-A – USB-C Bluebird — 1 m, USB 3.0, do ładowania z zasilacza lub ładowarki samochodowej i do transmisji danych. PN 603010005.",
-    "description": "Kabel USB-A – USB-C o długości 1 m przesyła prąd ładowania i dane w standardzie USB 3.0. Łączy terminal z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową [Ładowarka samochodowa Bluebird 5 V / 4 A, 2 × USB-A (602010023)](/produkt/bluebird-602010023) albo z komputerem. W stacjach EF551 z portem USB służy do komunikacji ze stacją.\n\nTerminale Bluebird nie mają kabla w zestawie. Kabel pasuje do modeli ze złączem USB-C: [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430) i [Bluebird SF650](/produkt/bluebird-sf650).",
+    "description": "Kabel USB-A – USB-C o długości 1 m przesyła prąd ładowania i dane w standardzie USB 3.0. Łączy terminal z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową [Ładowarka samochodowa Bluebird 5 V / 4 A, 2 × USB-A (602010023)](/produkt/bluebird-602010023) albo z komputerem. W stacjach EF551 z portem USB służy do komunikacji ze stacją.\n\nTerminale Bluebird nie mają kabla w zestawie. Kabel pasuje do modeli ze złączem USB-C: [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430) i [Bluebird SF650](/produkt/bluebird-sf650). Tym samym kablem ładuje się tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -2794,7 +2801,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird SF650, Bluebird RFR901, Bluebird RFR900"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird SF650, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Złącza",
@@ -2824,7 +2831,9 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-ek430",
       "bluebird-sf650",
       "bluebird-rfr901",
-      "bluebird-rfr900"
+      "bluebird-rfr900",
+      "bluebird-t30",
+      "bluebird-t10"
     ],
     "downloads": [],
     "faq": [],
@@ -2843,7 +2852,8 @@ export const bluebirdAccessories: Product[] = [
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -2866,7 +2876,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S10, Bluebird EF551, Bluebird EK430"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S10, Bluebird EF551, Bluebird EK430, Bluebird T30"
       },
       {
         "name": "Typ wtyczki",
@@ -2891,7 +2901,8 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s70",
       "bluebird-s10",
       "bluebird-ef551",
-      "bluebird-ek430"
+      "bluebird-ek430",
+      "bluebird-t30"
     ],
     "downloads": [],
     "faq": [],
@@ -3026,13 +3037,14 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz 12 V / 5 A do stacji Bluebird",
     "seoH1": "Zasilacz 12 V / 5 A do stacji Bluebird",
     "seoTitle": "Zasilacz 12 V / 5 A do stacji Bluebird — 602010025",
-    "seoDescription": "Zasilacz 12 V / 5 A Bluebird (602010025): stacje 1-gniazdowe S50, S70 i S20 (204010078, 204010079); przewód zasilający EU sprzedawany osobno.",
+    "seoDescription": "Zasilacz 12 V / 5 A Bluebird (602010025): stacje 1-gniazdowe S50, S70, S20 (204010078, 204010079) i T30 (204010093); przewód EU osobno.",
     "shortDescription": "Zasilacz 12 V / 5 A do stacji Bluebird — do stacji 1-gniazdowych S50 i S70 oraz stacji S20 z obsługą czytnika RFR. PN 602010025.",
-    "description": "Zasilacz 12 V / 5 A zasila stacje 1-gniazdowe S50 i S70 oraz te stacje S20, które przyjmują czytnik RFR albo mają Ethernet. Współpracuje z:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078)](/produkt/bluebird-204010078)\n- [Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079)](/produkt/bluebird-204010079)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)](/produkt/bluebird-204010081)\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
+    "description": "Zasilacz 12 V / 5 A zasila stacje 1-gniazdowe S50 i S70 oraz te stacje S20, które przyjmują czytnik RFR albo mają Ethernet, a także stację 1-gniazdową tabletu T30. Współpracuje z:\n\n- [Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078)](/produkt/bluebird-204010078)\n- [Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079)](/produkt/bluebird-204010079)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080)](/produkt/bluebird-204010080)\n- [Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)](/produkt/bluebird-204010081)\n- [Stacja ładująca 1-gniazdowa Bluebird T30 (204010093)](/produkt/bluebird-204010093)\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód zasilający EU Bluebird (14948)](/produkt/bluebird-14948)\n\nPrzewód nie jest dołączony do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -3055,7 +3067,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird T30"
       },
       {
         "name": "Napięcie i prąd",
@@ -3063,7 +3075,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Pasuje do",
-        "value": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078), Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079), Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080), Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081)"
+        "value": "Stacja ładująca 1-gniazdowa Bluebird S20 (także z czytnikiem RFR) (204010078), Stacja ładująca 1-gniazdowa Bluebird S20 z Ethernetem (204010079), Stacja ładująca 1-gniazdowa Bluebird S50 i S70 (204010080), Stacja ładująca 1-gniazdowa Bluebird S50 i S70 z Ethernetem (204010081), Stacja ładująca 1-gniazdowa Bluebird T30 (204010093)"
       }
     ],
     "applications": [
@@ -3073,7 +3085,8 @@ export const bluebirdAccessories: Product[] = [
     "relatedProducts": [
       "bluebird-s20",
       "bluebird-s50",
-      "bluebird-s70"
+      "bluebird-s70",
+      "bluebird-t30"
     ],
     "downloads": [],
     "faq": [],
@@ -7186,11 +7199,12 @@ export const bluebirdAccessories: Product[] = [
     "seoTitle": "Rysik aluminiowy Bluebird z końcówką z włókna — 626010007",
     "seoDescription": "Rysik aluminiowy Bluebird z końcówką z włókna (626010007) do ekranów S10, S20, S50 i S70; mieści się w pętli paska na dłoń.",
     "shortDescription": "Rysik aluminiowy Bluebird z końcówką z włókna — aluminiowy rysik z końcówką z włókna do terminali serii S. PN 626010007.",
-    "description": "Rysik ma aluminiowy korpus i końcówkę z włókna. Ułatwia podpisy i wybór małych pól na ekranie. Wsuwa się go w pętlę paska na dłoń, np. [Pasek na dłoń Bluebird S10, S20 i S50 (357010003)](/produkt/bluebird-357010003) albo [Pasek na dłoń Bluebird S70 (357010002)](/produkt/bluebird-357010002).\n\nPasuje do [Bluebird S10](/produkt/bluebird-s10), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50) i [Bluebird S70](/produkt/bluebird-s70).",
+    "description": "Rysik ma aluminiowy korpus i końcówkę z włókna. Ułatwia podpisy i wybór małych pól na ekranie. Wsuwa się go w pętlę paska na dłoń, np. [Pasek na dłoń Bluebird S10, S20 i S50 (357010003)](/produkt/bluebird-357010003) albo [Pasek na dłoń Bluebird S70 (357010002)](/produkt/bluebird-357010002).\n\nPasuje do [Bluebird S10](/produkt/bluebird-s10), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50) i [Bluebird S70](/produkt/bluebird-s70) oraz do tabletów [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10). Przy T30 rysik mieści się w pętli [paska na dłoń T30 (357010004)](/produkt/bluebird-357010004).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "etui-kabury-uchwyty",
-      "akcesoria-do-terminali"
+      "akcesoria-do-terminali",
+      "akcesoria-do-tabletow"
     ],
     "manufacturerId": "bluebird",
     "images": [
@@ -7213,7 +7227,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S10, Bluebird S20, Bluebird S50, Bluebird S70"
+        "value": "Bluebird S10, Bluebird S20, Bluebird S50, Bluebird S70, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Końcówka",
@@ -7232,7 +7246,9 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s10",
       "bluebird-s20",
       "bluebird-s50",
-      "bluebird-s70"
+      "bluebird-s70",
+      "bluebird-t30",
+      "bluebird-t10"
     ],
     "downloads": [],
     "faq": [],
