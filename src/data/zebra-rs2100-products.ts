@@ -207,6 +207,7 @@ export const zebraRs2100Products: Product[] = [
     ],
     "relatedProducts": [
       "zebra-rs6100",
+      "zebra-rs5100",
       "m3-wr15",
       "m3-wr10",
       "proglove-leo",
@@ -928,6 +929,7 @@ export const zebraRs2100Accessories: Product[] = [
     ],
     "relatedProducts": [
       "zebra-rs2100",
+      "zebra-rs5100",
       "zebra-rs6100"
     ],
     "downloads": [
@@ -1047,6 +1049,7 @@ export const zebraRs2100Accessories: Product[] = [
     ],
     "relatedProducts": [
       "zebra-rs2100",
+      "zebra-rs5100",
       "zebra-rs6100"
     ],
     "downloads": [
@@ -1123,6 +1126,7 @@ export const zebraRs2100Accessories: Product[] = [
     ],
     "relatedProducts": [
       "zebra-rs2100",
+      "zebra-rs5100",
       "zebra-rs6100"
     ],
     "downloads": [

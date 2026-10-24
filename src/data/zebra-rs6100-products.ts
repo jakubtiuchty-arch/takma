@@ -299,6 +299,7 @@ export const zebraRs6100Products: Product[] = [
     ],
     "relatedProducts": [
       "zebra-rs2100",
+      "zebra-rs5100",
       "proglove-mark-3",
       "m3-wr15",
       "proglove-mark-2"
@@ -356,7 +357,7 @@ export const zebraRs6100Products: Product[] = [
       },
       {
         "question": "Czy akcesoria do RS5100 pasują do RS6100?",
-        "answer": "Część tak. Z RS6100 działają zespoły pojedynczego i podwójnego spustu z RS5100, baterie standardowe i rozszerzone oraz ładowarki 8 i 40 baterii. Nowe mocowania Enterprise Hand Mount, na grzbiet dłoni i smyczy pasują do obu modeli. Stacje 4- i 20-gniazdowe na skanery mają osobne wersje dla każdego modelu, a stacja 2-gniazdowa jest wspólna."
+        "answer": "Część tak. Z RS6100 działają zespoły pojedynczego i podwójnego spustu z [RS5100](/produkt/zebra-rs5100), baterie standardowe i rozszerzone oraz ładowarki 8 i 40 baterii. Nowe mocowania Enterprise Hand Mount, na grzbiet dłoni i smyczy pasują do obu modeli. Stacje 4- i 20-gniazdowe na skanery mają osobne wersje dla każdego modelu, a stacja 2-gniazdowa jest wspólna."
       },
       {
         "question": "Czy RS6100 może pracować bez baterii?",
@@ -381,7 +382,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Stacja ładująca Zebra RS5100 / RS6100 2-gniazdowa — CRD-RS5X6-2SCHG-01",
     "seoDescription": "Stacja ładująca Zebra CRD-RS5X6-2SCHG-01 na dwa skanery noszone RS6100 lub RS5100, zasilanie 5 V przez przewód USB-C. Ładowarka Zebra RS6100 na stanowisko pracy.",
     "shortDescription": "Zebra CRD-RS5X6-2SCHG-01 — stacja na dwa skanery noszone RS5100 lub RS6100 z bateriami, tylko ładowanie, zasilanie 5 V, 1 A przez przewód USB-A / USB-C.",
-    "description": "Stacja CRD-RS5X6-2SCHG-01 ładuje dwa skanery Zebra RS5100 lub RS6100 razem z bateriami włożonymi do skanerów. Nie przesyła danych. Przy każdym gnieździe jest dioda, która pokazuje stan ładowania.\n\nStację zasila przewód USB-A / USB-C z zasilacza o wydajności co najmniej 5 V, 1 A. Przy słabszym zasilaczu działa tylko dolne gniazdo, a dioda górnego miga na czerwono. Stacja ma wymiary 180 × 48 × 19 mm i waży 96 g. Temperatura pracy stacji: od −20 do 50 °C. Baterie ładują się przy 5–40 °C. Stacja z przewodem i zasilaczem w jednym opakowaniu ma numer [KT-RS5X6-2SCPWR-01](/produkt/zebra-rs6100-kt-rs5x6-2scpwr-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\nDokup tylko te elementy, których jeszcze nie masz.",
+    "description": "Stacja CRD-RS5X6-2SCHG-01 ładuje dwa skanery Zebra [RS5100](/produkt/zebra-rs5100) lub RS6100 razem z bateriami włożonymi do skanerów. Nie przesyła danych. Przy każdym gnieździe jest dioda, która pokazuje stan ładowania.\n\nStację zasila przewód USB-A / USB-C z zasilacza o wydajności co najmniej 5 V, 1 A. Przy słabszym zasilaczu działa tylko dolne gniazdo, a dioda górnego miga na czerwono. Stacja ma wymiary 180 × 48 × 19 mm i waży 96 g. Temperatura pracy stacji: od −20 do 50 °C. Baterie ładują się przy 5–40 °C. Stacja z przewodem i zasilaczem w jednym opakowaniu ma numer [KT-RS5X6-2SCPWR-01](/produkt/zebra-rs6100-kt-rs5x6-2scpwr-01).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\nDokup tylko te elementy, których jeszcze nie masz.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -465,7 +466,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-kt-rs5x6-2scpwr-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -493,7 +495,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Zestaw stacji 2-gniazdowej Zebra RS5100 / RS6100 z zasilaczem — KT-RS5X6-2SCPWR-01",
     "seoDescription": "Zestaw Zebra KT-RS5X6-2SCPWR-01: stacja ładująca na dwa skanery RS6100 lub RS5100, przewód USB-A / USB-C i zasilacz. Ładowarka Zebra RS6100 z zasilaczem w komplecie.",
     "shortDescription": "Zebra KT-RS5X6-2SCPWR-01 — stacja ładująca na dwa skanery RS5100 lub RS6100 w zestawie z przewodem USB-A / USB-C CBL-TC5X-USBC2A-01 i zasilaczem.",
-    "description": "Zestaw KT-RS5X6-2SCPWR-01 zawiera stację CRD-RS5X6-2SCHG-01, przewód USB-A / USB-C CBL-TC5X-USBC2A-01 i zasilacz. Do uruchomienia stacji nie trzeba dokupować przewodu ani zasilacza.\n\nStacja obsługuje jednocześnie dwa skanery RS5100 lub RS6100 z bateriami w środku i nie przesyła danych. Stan ładowania w każdym gnieździe pokazuje osobna dioda. Stacja waży 96 g. Jej zakres temperatur pracy to −20…50 °C, a ładowanie baterii wymaga 5–40 °C. Gdy przewód i zasilacz są już na stanowisku, wystarczy sama [stacja CRD-RS5X6-2SCHG-01](/produkt/zebra-rs6100-crd-rs5x6-2schg-01).",
+    "description": "Zestaw KT-RS5X6-2SCPWR-01 zawiera stację CRD-RS5X6-2SCHG-01, przewód USB-A / USB-C CBL-TC5X-USBC2A-01 i zasilacz. Do uruchomienia stacji nie trzeba dokupować przewodu ani zasilacza.\n\nStacja obsługuje jednocześnie dwa skanery [RS5100](/produkt/zebra-rs5100) lub RS6100 z bateriami w środku i nie przesyła danych. Stan ładowania w każdym gnieździe pokazuje osobna dioda. Stacja waży 96 g. Jej zakres temperatur pracy to −20…50 °C, a ładowanie baterii wymaga 5–40 °C. Gdy przewód i zasilacz są już na stanowisku, wystarczy sama [stacja CRD-RS5X6-2SCHG-01](/produkt/zebra-rs6100-crd-rs5x6-2schg-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -563,7 +565,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-crd-rs5x6-2schg-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -816,7 +819,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Ładowarka 8 baterii Zebra RS5100 / RS6100 — SAC-RS51-8SCHG-01",
     "seoDescription": "Ładowarka Zebra SAC-RS51-8SCHG-01 na osiem baterii skanerów noszonych RS6100 i RS5100, z zasilaczem PWR-BGA12V50W0WW. Ładowarka baterii Zebra RS6100 8-gniazdowa.",
     "shortDescription": "Zebra SAC-RS51-8SCHG-01 — ładowarka na osiem baterii RS5100 / RS6100 wyjętych ze skanerów; zasilanie 12 V DC, 50 W.",
-    "description": "Ładowarka SAC-RS51-8SCHG-01 ładuje osiem zapasowych baterii skanerów Zebra RS5100 i RS6100 poza skanerem. Przy każdym gnieździe dioda pokazuje stan ładowania, a osobna dioda sygnalizuje zasilanie. Pracownik wymienia rozładowaną baterię na naładowaną z ładowarki, a skaner pozostaje w użyciu.\n\nŁadowarka ma wymiary 83,64 × 97,52 × 137,29 mm i waży 486 g. Zasilanie wynosi 12 V DC, 50 W. Ładowanie baterii jest możliwe w zakresie 10–40 °C. Nowe baterie są w trybie transportowym i aktywują się po włożeniu do ładowarki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
+    "description": "Ładowarka SAC-RS51-8SCHG-01 ładuje osiem zapasowych baterii skanerów Zebra [RS5100](/produkt/zebra-rs5100) i RS6100 poza skanerem. Przy każdym gnieździe dioda pokazuje stan ładowania, a osobna dioda sygnalizuje zasilanie. Pracownik wymienia rozładowaną baterię na naładowaną z ładowarki, a skaner pozostaje w użyciu.\n\nŁadowarka ma wymiary 83,64 × 97,52 × 137,29 mm i waży 486 g. Zasilanie wynosi 12 V DC, 50 W. Ładowanie baterii jest możliwe w zakresie 10–40 °C. Nowe baterie są w trybie transportowym i aktywują się po włożeniu do ładowarki.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -902,7 +905,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-btry-rs51-7ma-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -930,7 +934,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Ładowarka 40 baterii Zebra RS5100 / RS6100 — SAC-RS51-40SCHG-01",
     "seoDescription": "Ładowarka Zebra SAC-RS51-40SCHG-01 mieści 40 zapasowych baterii do RS6100 i RS5100; pracuje z zasilaczem PWR-BGA12V108W0WW. Ładowarka baterii Zebra RS6100 40-gniazdowa.",
     "shortDescription": "Zebra SAC-RS51-40SCHG-01 — ładowarka 40 zapasowych baterii skanerów RS5100 i RS6100 z diodą stanu przy każdym gnieździe; zasilana z zasilacza Zebra 108 W.",
-    "description": "Ładowarka SAC-RS51-40SCHG-01 mieści 40 baterii do skanerów noszonych Zebra RS5100 i RS6100. Jest przeznaczona dla dużych zespołów, które wymieniają baterie w trakcie zmiany zamiast odstawiać skanery do stacji. Każde gniazdo ma diodę stanu ładowania, a ładowarka ma diodę zasilania.\n\nŁadowarka ma wymiary 540 × 150 × 190 mm i waży 3200 g. Zasilacz 108 W dostarcza do niej napięcie 12 V DC. Zakres temperatur pracy: 5–40 °C. Z opcjonalnym uchwytem ShareCradle można ją zamontować na ścianie albo w szafie rack.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
+    "description": "Ładowarka SAC-RS51-40SCHG-01 mieści 40 baterii do skanerów noszonych Zebra [RS5100](/produkt/zebra-rs5100) i RS6100. Jest przeznaczona dla dużych zespołów, które wymieniają baterie w trakcie zmiany zamiast odstawiać skanery do stacji. Każde gniazdo ma diodę stanu ładowania, a ładowarka ma diodę zasilania.\n\nŁadowarka ma wymiary 540 × 150 × 190 mm i waży 3200 g. Zasilacz 108 W dostarcza do niej napięcie 12 V DC. Zakres temperatur pracy: 5–40 °C. Z opcjonalnym uchwytem ShareCradle można ją zamontować na ścianie albo w szafie rack.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)\n- [Przewód DC Zebra z uchwytem zwalniającym (CBL-DC-382A1-01)](/produkt/zebra-mc33-dc-cable-382)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)\n- [Bateria standardowa 480 mAh Zebra RS5100 / RS6100 (BTRY-RS51-4MA-01)](/produkt/zebra-rs6100-btry-rs51-4ma-01)\n- [Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 (BTRY-RS51-7MA-01)](/produkt/zebra-rs6100-btry-rs51-7ma-01)",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1017,7 +1021,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-btry-rs51-7ma-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -1045,7 +1050,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Bateria standardowa 480 mAh Zebra RS5100 / RS6100 — BTRY-RS51-4MA-01",
     "seoDescription": "Bateria Zebra BTRY-RS51-4MA-01 do skanerów RS6100 i RS5100: Li-Ion 480 mAh, PowerPrecision+, wystarcza na pełną zmianę. Bateria do skanera Zebra RS6100.",
     "shortDescription": "Zebra BTRY-RS51-4MA-01 — standardowa bateria Li-Ion 480 mAh PowerPrecision+ do skanerów noszonych RS5100 i RS6100, praca w temperaturze 0–50 °C.",
-    "description": "BTRY-RS51-4MA-01 to standardowa bateria litowo-jonowa 480 mAh do skanerów Zebra RS5100 i RS6100. Technologia PowerPrecision+ przekazuje dane o poziomie naładowania i stanie zużycia baterii. Narzędzie PowerPrecision Console na komputerze mobilnym Zebra wskazuje baterie, które nie utrzymają już ładunku na całą zmianę.\n\nW RS6100 bateria wystarcza na pełną zmianę i pozwala pracować w temperaturze 0–50 °C. Skaner z tą baterią waży 70 g. Ładowanie od pustej do 90% trwa poniżej 2,5 godziny przy temperaturze pokojowej, a w chłodzie (5–10 °C) do 5 godzin. Ładuje się w skanerze w stacji albo osobno w [ładowarce 8 baterii](/produkt/zebra-rs6100-sac-rs51-8schg-01) lub [40 baterii](/produkt/zebra-rs6100-sac-rs51-40schg-01). Nowa bateria jest w trybie transportowym i aktywuje się po włożeniu do stacji lub ładowarki.",
+    "description": "BTRY-RS51-4MA-01 to standardowa bateria litowo-jonowa 480 mAh do skanerów Zebra [RS5100](/produkt/zebra-rs5100) i RS6100. Technologia PowerPrecision+ przekazuje dane o poziomie naładowania i stanie zużycia baterii. Narzędzie PowerPrecision Console na komputerze mobilnym Zebra wskazuje baterie, które nie utrzymają już ładunku na całą zmianę.\n\nW RS6100 bateria wystarcza na pełną zmianę i pozwala pracować w temperaturze 0–50 °C. Skaner z tą baterią waży 70 g. Ładowanie od pustej do 90% trwa poniżej 2,5 godziny przy temperaturze pokojowej, a w chłodzie (5–10 °C) do 5 godzin. Ładuje się w skanerze w stacji albo osobno w [ładowarce 8 baterii](/produkt/zebra-rs6100-sac-rs51-8schg-01) lub [40 baterii](/produkt/zebra-rs6100-sac-rs51-40schg-01). Nowa bateria jest w trybie transportowym i aktywuje się po włożeniu do stacji lub ładowarki.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1083,6 +1088,10 @@ export const zebraRs6100Accessories: Product[] = [
         "value": "0 °C do 50 °C"
       },
       {
+        "name": "Temperatura pracy z RS5100",
+        "value": "0 °C do 50 °C"
+      },
+      {
         "name": "Masa RS6100 z baterią",
         "value": "70 g"
       },
@@ -1109,7 +1118,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-btry-rs51-7ma-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -1137,7 +1147,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Bateria rozszerzona 735 mAh Zebra RS5100 / RS6100 — BTRY-RS51-7MA-01",
     "seoDescription": "Rozszerzona bateria Zebra BTRY-RS51-7MA-01 735 mAh PowerPrecision+ do RS6100 i RS5100: dłuższe zmiany, praca od −20 °C. Bateria rozszerzona do skanera Zebra RS6100.",
     "shortDescription": "Zebra BTRY-RS51-7MA-01 — bateria rozszerzona Li-Ion 735 mAh PowerPrecision+ do skanerów RS5100 i RS6100, na dłuższe zmiany i do pracy od −20 °C.",
-    "description": "Bateria BTRY-RS51-7MA-01 ma pojemność 735 mAh, półtora raza większą niż bateria standardowa. Zasila skanery Zebra RS5100 i RS6100 przez dłuższe zmiany i pozwala im pracować w zimnie do −20 °C.\n\nZ RS6100 bateria pracuje w zakresie od −20 do 50 °C. Poniżej −10 °C skaner z tą baterią przechodzi w tryb niskiego poboru energii. RS6100 z baterią rozszerzoną waży 76 g. Technologia PowerPrecision+ informuje o naładowaniu i zużyciu baterii. Do pracy poniżej −20 °C służy [bateria do mroźni BTRY-RS5X6-6MA-01](/produkt/zebra-rs6100-btry-rs5x6-6ma-01).",
+    "description": "Bateria BTRY-RS51-7MA-01 ma pojemność 735 mAh, półtora raza większą niż bateria standardowa. Zasila skanery Zebra [RS5100](/produkt/zebra-rs5100) i RS6100 przez dłuższe zmiany i pozwala im pracować w zimnie do −20 °C.\n\nZ RS6100 bateria pracuje w zakresie od −20 do 50 °C. Poniżej −10 °C skaner z tą baterią przechodzi w tryb niskiego poboru energii. RS6100 z baterią rozszerzoną waży 76 g. Technologia PowerPrecision+ informuje o naładowaniu i zużyciu baterii. Do pracy poniżej −20 °C służy [bateria do mroźni BTRY-RS5X6-6MA-01](/produkt/zebra-rs6100-btry-rs5x6-6ma-01).",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1175,6 +1185,10 @@ export const zebraRs6100Accessories: Product[] = [
         "value": "−20 °C do 50 °C"
       },
       {
+        "name": "Temperatura pracy z RS5100",
+        "value": "−20 °C do 50 °C"
+      },
+      {
         "name": "Masa RS6100 z baterią",
         "value": "76 g"
       },
@@ -1197,7 +1211,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-btry-rs5x6-6ma-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -1225,7 +1240,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Bateria do mroźni 660 mAh Zebra RS5100 / RS6100 — BTRY-RS5X6-6MA-01",
     "seoDescription": "Bateria Zebra BTRY-RS5X6-6MA-01 do pracy w mroźni: Li-Ion 660 mAh, niebieska etykieta, RS6100 od −30 do 50 °C, RS5100 od −20 do 50 °C. Bateria do mroźni Zebra RS6100.",
     "shortDescription": "Zebra BTRY-RS5X6-6MA-01 — bateria Li-Ion 660 mAh do mroźni, z niebieską etykietą: skaner RS6100 pracuje z nią od −30 do 50 °C, a RS5100 od −20 do 50 °C.",
-    "description": "Bateria BTRY-RS5X6-6MA-01 o pojemności 660 mAh jest przeznaczona do pracy w mroźni. Niebieska etykieta odróżnia ją od baterii standardowej i rozszerzonej. Ze skanerem Zebra RS6100 zakres pracy wynosi od −30 do 50 °C, a z RS5100 od −20 do 50 °C.\n\nW temperaturze od −10 do −20 °C RS6100 przechodzi w tryb niskiego poboru energii i zachowuje domyślny 4-sekundowy czas sesji odczytu. Poniżej −20 °C czas sesji odczytu skraca się do mniej niż 1 sekundy. Wersja [Zebra RS6100](/produkt/zebra-rs6100) RS61B0-KFSSYWR jest dostarczana z tą baterią.",
+    "description": "Bateria BTRY-RS5X6-6MA-01 o pojemności 660 mAh jest przeznaczona do pracy w mroźni. Niebieska etykieta odróżnia ją od baterii standardowej i rozszerzonej. Ze skanerem Zebra RS6100 zakres pracy wynosi od −30 do 50 °C, a z [RS5100](/produkt/zebra-rs5100) od −20 do 50 °C.\n\nW temperaturze od −10 do −20 °C RS6100 przechodzi w tryb niskiego poboru energii i zachowuje domyślny 4-sekundowy czas sesji odczytu. Poniżej −20 °C czas sesji odczytu skraca się do mniej niż 1 sekundy. Wersja [Zebra RS6100](/produkt/zebra-rs6100) RS61B0-KFSSYWR jest dostarczana z tą baterią.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1284,7 +1299,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-cbl-rs5x6-adpwt-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
@@ -1312,7 +1328,7 @@ export const zebraRs6100Accessories: Product[] = [
     "seoTitle": "Adapter przewodowy Zebra RS5100 / RS6100 do WT6000 / WT6300 — CBL-RS5X6-ADPWT-01",
     "seoDescription": "Adapter przewodowy Zebra CBL-RS5X6-ADPWT-01: zasila skaner RS6100 lub RS5100 z komputera noszonego WT6000 lub WT6300, praca bez baterii i w mroźni. Kabel zasilający Zebra RS6100.",
     "shortDescription": "Zebra CBL-RS5X6-ADPWT-01 — adapter przewodowy, który zasila skaner noszony RS5100 lub RS6100 z komputera WT6000 lub WT6300; dane płyną przez Bluetooth.",
-    "description": "Adapter CBL-RS5X6-ADPWT-01 łączy skaner Zebra RS5100 lub RS6100 z komputerem noszonym Zebra WT6000 lub WT6300, zamocowanym na przedramieniu lub nadgarstku. Terminal zasila skaner przez przewód, więc skaner pracuje bez baterii. Kody nadal trafiają do terminala przez Bluetooth, a nie przez przewód.\n\nZ adapterem RS6100 może pracować w mroźni, w temperaturze −20 °C i −30 °C. Gdy WT6000 lub WT6300 ma baterię 5000 mAh, skaner nie skraca czasu sesji odczytu i utrzymuje domyślne 4 sekundy w całym zakresie temperatur. Terminal WT6000 lub WT6300 nie jest dołączony do adaptera.",
+    "description": "Adapter CBL-RS5X6-ADPWT-01 łączy skaner Zebra [RS5100](/produkt/zebra-rs5100) lub RS6100 z komputerem noszonym Zebra WT6000 lub WT6300, zamocowanym na przedramieniu lub nadgarstku. Terminal zasila skaner przez przewód, więc skaner pracuje bez baterii. Kody nadal trafiają do terminala przez Bluetooth, a nie przez przewód.\n\nZ adapterem RS6100 może pracować w mroźni, w temperaturze −20 °C i −30 °C. Gdy WT6000 lub WT6300 ma baterię 5000 mAh, skaner nie skraca czasu sesji odczytu i utrzymuje domyślne 4 sekundy w całym zakresie temperatur. Terminal WT6000 lub WT6300 nie jest dołączony do adaptera.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "akcesoria-do-skanerow",
@@ -1362,7 +1378,8 @@ export const zebraRs6100Accessories: Product[] = [
       "zebra-rs6100-btry-rs5x6-6ma-01"
     ],
     "relatedProducts": [
-      "zebra-rs6100"
+      "zebra-rs6100",
+      "zebra-rs5100"
     ],
     "downloads": [
       {
