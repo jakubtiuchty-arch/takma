@@ -1839,6 +1839,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 showDualButtons
               />
             )}
+            {/* Jedna karta z wersjami termiczną i termotransferową (np. Zebra ZD611-HC): sekcja TT niżej
+                pokazuje tylko etykiety termotransferowe, więc etykiety termiczne dokładamy osobno. */}
+            {isLabelPrinter && isTTprinter && !isColorPrinter && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
+              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} />
+            )}
             {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
