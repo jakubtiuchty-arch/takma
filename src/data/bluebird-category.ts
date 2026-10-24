@@ -11,7 +11,7 @@ export const bluebirdFaq = [
 ]
 
 export const bluebirdCategory: BrandCategoryRichContent = {
-  updatedAt: '2026-10-23',
+  updatedAt: '2026-10-24',
   contactText: 'Podaj rodzaj kodów, aplikację i sposób pracy. Dobierzemy terminal Bluebird, zasilanie oraz zgodne stacje i baterie.',
   definition: {
     heading: 'Terminale Bluebird do magazynu, sklepu i pracy w terenie',
@@ -37,18 +37,18 @@ export const bluebirdCategory: BrandCategoryRichContent = {
   modelTable: [
     { name: 'Bluebird S10', href: '/produkt/bluebird-s10', role: 'Dotykowy, podstawowy', priceFrom: '', specs: [{ label: 'Ekran', value: '5,5 cala' }, { label: 'System', value: 'Android 14' }, { label: 'Sieć', value: 'Wi-Fi, 4G LTE' }], bestFor: 'Sklep, proste zadania magazynowe i dostawy.' },
     { name: 'Bluebird S20', href: '/produkt/bluebird-s20', role: 'Dotykowy, smukły', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali' }, { label: 'Skaner', value: 'SE4710' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel i logistyka; obudowa 12,5 mm, 243 g.' },
-    { name: 'Bluebird S50', href: '/produkt/bluebird-s50', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Skaner', value: 'SE4720, SE4770, SE55' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Magazyn i logistyka; 2,4 m w osłonie.' },
-    { name: 'Bluebird S70', href: '/produkt/bluebird-s70', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Upadki', value: '3,05 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Produkcja, ciężki magazyn i teren.' },
+    { name: 'Bluebird S50', href: '/produkt/bluebird-s50', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Skaner', value: 'SE4720, SE4770, SE55' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, doręczenia i serwis terenowy; 2,4 m w osłonie.' },
+    { name: 'Bluebird S70', href: '/produkt/bluebird-s70', role: 'Dotykowy, wzmocniony', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 600 nitów' }, { label: 'Upadki', value: '3,05 m (temp. pokojowa)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, doręczenia, serwis terenowy i służby publiczne.' },
     { name: 'Bluebird S70 Explosion Protection', href: '/produkt/bluebird-s70-explosion-protection', role: 'Strefa Ex 2/22', priceFrom: '', specs: [{ label: 'Certyfikaty', value: 'ATEX, IECEx, UKEX' }, { label: 'Skaner', value: 'SE4770' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Zakłady z atmosferą wybuchową w strefie 2 i 22.' },
-    { name: 'Bluebird EF551', href: '/produkt/bluebird-ef551', role: 'Dotykowy, kompaktowy', priceFrom: '', specs: [{ label: 'Ekran', value: '5,45 cala' }, { label: 'Obudowa', value: 'Standardowa lub Rugged (EF551R)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Magazyn i handel; EF551R do upadków z 2,4 m.' },
+    { name: 'Bluebird EF551', href: '/produkt/bluebird-ef551', role: 'Dotykowy, kompaktowy', priceFrom: '', specs: [{ label: 'Ekran', value: '5,45 cala' }, { label: 'Obudowa', value: 'Standardowa lub Rugged (EF551R)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, doręczenia i ochrona zdrowia; EF551R do upadków z 2,4 m w temperaturze pokojowej.' },
     { name: 'Bluebird EK430', href: '/produkt/bluebird-ek430', role: 'Z klawiaturą', priceFrom: '', specs: [{ label: 'Klawiatura', value: '34 lub 47 klawiszy' }, { label: 'Obudowa', value: 'Prosta lub pistoletowa' }, { label: 'Skaner', value: 'SE4710, SE4850' }], bestFor: 'Kompletacja z wpisywaniem ilości i aplikacje terminalowe.' },
     { name: 'Bluebird S10 RFID', href: '/produkt/bluebird-s10-rfid', role: 'UHF RFID', priceFrom: '', specs: [{ label: 'RFID', value: '865–868 MHz (EU)' }, { label: 'Odczyt', value: 'Ponad 1300 tagów/s' }, { label: 'Zasięg', value: 'Ponad 13 m' }], bestFor: 'Inwentaryzacja towarów i majątku z tagami UHF.' },
     { name: 'Bluebird SF650', href: '/produkt/bluebird-sf650', role: 'Smartfon bez skanera', priceFrom: '', specs: [{ label: 'Ekran', value: '6,5 cala' }, { label: 'Sieć', value: '4G LTE, Wi-Fi 5' }, { label: 'Skaner', value: 'Brak' }], bestFor: 'Komunikacja i aplikacje firmowe bez odczytu kodów.' },
   ],
   useCases: [
-    { title: 'Magazyn i kompletacja', description: 'S50 i S70 mają wersje ze skanerem SE55 do kodów na regałach. EK430 ma klawiaturę do wpisywania ilości i wersję pistoletową.' },
+    { title: 'Magazyn i kompletacja', description: 'S10 obsługuje kompletację, wysyłki i przyjęcia towaru. EK430 ma klawiaturę do wpisywania ilości i wersję pistoletową.' },
     { title: 'Sklep i dostawy', description: 'S10 i S20 są lekkie i mają wersje z modemem. SF650 służy do komunikacji i aplikacji firmowych bez odczytu kodów.' },
-    { title: 'Warunki szczególne', description: 'S70 wytrzymuje upadki z 3,05 m. S70 Explosion Protection pracuje w strefie 2 i 22. S10 RFID odczytuje tagi UHF.' },
+    { title: 'Warunki szczególne', description: 'S70 wytrzymuje upadki z 3,05 m na beton w temperaturze pokojowej. S70 Explosion Protection pracuje w strefie 2 i 22. S10 RFID odczytuje tagi UHF.' },
   ],
   uniqueInsights: {
     heading: 'Co sprawdzić przed zakupem wyposażenia?',
@@ -58,7 +58,7 @@ export const bluebirdCategory: BrandCategoryRichContent = {
     ],
   },
   comparisons: [
-    { title: 'S50 czy S70?', content: '[S50](/produkt/bluebird-s50) i [S70](/produkt/bluebird-s70) mają ten sam procesor, ekran i stacje. S70 wytrzymuje upadki z 3,05 m na beton w temperaturze pokojowej i ma masę 355 g. S50 ma masę 322 g i wytrzymuje upadek z 2,4 m w osłonie ochronnej.' },
+    { title: 'S50 czy S70?', content: '[S50](/produkt/bluebird-s50) i [S70](/produkt/bluebird-s70) mają ten sam procesor, ekran i stacje. S70 wytrzymuje upadki z 3,05 m na beton w temperaturze pokojowej i z baterią standardową waży 355 g. S50 z baterią standardową waży 322 g i wytrzymuje upadek z 2,4 m w osłonie ochronnej.' },
     { title: 'EF551 czy EF551R?', content: '[EF551](/produkt/bluebird-ef551) ma obudowę standardową i masę 284,5 g. EF551R ma obudowę Rugged, masę 332 g i odporność na upadki z 2,4 m w temperaturze pokojowej. Obie wersje pasują do tych samych stacji.' },
   ],
   howToSteps: [],

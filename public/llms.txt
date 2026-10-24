@@ -330,10 +330,10 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 
 ## Terminale Bluebird
 - [Terminale Bluebird](https://www.takma.com.pl/terminale-bluebird): terminale mobilne z Androidem — dotykowe, z klawiaturą, z czytnikiem UHF RFID i do strefy Ex. Zasilacz poza SF650 sprzedawany osobno. Gwarancja 12 miesięcy.
-- Bluebird S10 (5,5", Android 14, Wi-Fi lub 4G LTE, IP68, 4500 mAh, od 1 841 zł netto): https://www.takma.com.pl/produkt/bluebird-s10
+- Bluebird S10 (5,5", Android 14, Wi-Fi, opcja 4G LTE, IP68, 4500 mAh, od 1 841 zł netto): https://www.takma.com.pl/produkt/bluebird-s10
 - Bluebird S20 (6", Android 13, SE4710, Wi-Fi 6E, opcja 5G, 243 g, od 2 601 zł netto): https://www.takma.com.pl/produkt/bluebird-s20
 - Bluebird S50 (6", 600 nitów, QC6490, SE4720/SE4770/SE55, Wi-Fi 6E, opcja 5G, od 6 053 zł netto): https://www.takma.com.pl/produkt/bluebird-s50
-- Bluebird S70 (6", wzmocniony, upadki z 3,05 m, SE4720/SE4770/SE55, Wi-Fi 6E, opcja 5G, od 7 149 zł netto): https://www.takma.com.pl/produkt/bluebird-s70
+- Bluebird S70 (6", wzmocniony, upadki z 3,05 m w temperaturze pokojowej, SE4720/SE4770/SE55, Wi-Fi 6E, opcja 5G, od 7 149 zł netto): https://www.takma.com.pl/produkt/bluebird-s70
 - Bluebird S70 Explosion Protection (ATEX, IECEx, UKEX strefa 2/22, SE4770, 5G, od 13 609 zł netto): https://www.takma.com.pl/produkt/bluebird-s70-explosion-protection
 - Bluebird EF551 i EF551R (5,45", QC6490, Wi-Fi 6E, opcja 5G, obudowa standardowa lub Rugged, od 5 481 zł netto): https://www.takma.com.pl/produkt/bluebird-ef551
 - Bluebird EK430 (klawiatura 34 lub 47 klawiszy, obudowa prosta lub pistoletowa, SE4710/SE4850, od 4 814 zł netto): https://www.takma.com.pl/produkt/bluebird-ek430
