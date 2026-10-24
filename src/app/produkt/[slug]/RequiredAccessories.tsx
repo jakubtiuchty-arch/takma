@@ -1,6 +1,6 @@
 import { products } from '@/data/products'
 import RequiredAccessoryList from './RequiredAccessoryList'
-import { getRequiredAccessoriesCopy } from '@/lib/required-accessory-copy'
+import { getRequiredAccessoriesCopy, getRequiredChoiceGroup } from '@/lib/required-accessory-copy'
 
 export interface RequiredAccessoryItem {
   id: string
@@ -71,7 +71,7 @@ export default function RequiredAccessories({ items, productName }: { items: Ret
           <p className="mt-1 text-sm leading-5 text-gray-700">{copy.description}</p>
         </div>
       </div>
-      <RequiredAccessoryList items={items} showCommonRequirement={items.some(item => !!item.condition)} />
+      <RequiredAccessoryList items={items} showCommonRequirement={items.some(item => !!item.condition && !getRequiredChoiceGroup(item.condition))} />
     </section>
   )
 }
