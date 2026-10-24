@@ -21,10 +21,12 @@ export const progloveProducts: Product[] = [
     "priceFrom": 1827.52,
     "availability": "available",
     "images": [
-      "/images/products/proglove-m009.png"
+      "/images/products/proglove-m009.png",
+      "/images/products/proglove-m009-2.png"
     ],
     "imageDescriptions": [
-      "ProGlove LEO — niebieski skaner noszony na dłoni, widok z przodu z diodami stanu"
+      "ProGlove LEO — niebieski skaner noszony na dłoni, widok z przodu z diodami stanu",
+      "ProGlove LEO zapięty w opasce Hand Strap (opaska sprzedawana osobno)"
     ],
     "tags": [
       "magazyn",
@@ -417,11 +419,15 @@ export const progloveProducts: Product[] = [
     "availability": "available",
     "images": [
       "/images/products/proglove-m004-eu.png",
-      "/images/products/proglove-m004-eu-2.png"
+      "/images/products/proglove-m004-eu-2.png",
+      "/images/products/proglove-m004-eu-3.png",
+      "/images/products/proglove-m004-eu-4.png"
     ],
     "imageDescriptions": [
       "ProGlove MARK 2 Standard Range — pomarańczowy skaner noszony, widok z przodu",
-      "ProGlove MARK 2 — wersje Standard Range i Mid Range obok siebie"
+      "ProGlove MARK 2 — wersje Standard Range i Mid Range obok siebie",
+      "ProGlove MARK 2 Mid Range w opasce Hand Strap na grzbiecie dłoni (opaska sprzedawana osobno)",
+      "ProGlove MARK 2 Mid Range na dłoni w opasce Hand Strap — widok z boku (opaska sprzedawana osobno)"
     ],
     "tags": [
       "logistyka",
@@ -623,10 +629,12 @@ export const progloveProducts: Product[] = [
     "priceFrom": 4472.71,
     "availability": "available",
     "images": [
-      "/images/products/proglove-m010.png"
+      "/images/products/proglove-m010.png",
+      "/images/products/proglove-m010-2.png"
     ],
     "imageDescriptions": [
-      "ProGlove MARK 3 Multi Range — pomarańczowy skaner zapięty w opasce Hand Strap (opaska sprzedawana osobno)"
+      "ProGlove MARK 3 Multi Range — pomarańczowy skaner zapięty w opasce Hand Strap (opaska sprzedawana osobno)",
+      "ProGlove MARK 3 na dłoni w opasce Hand Strap, z zapalonymi zielonymi diodami (opaska sprzedawana osobno)"
     ],
     "tags": [
       "magazyn",
@@ -1028,11 +1036,13 @@ export const progloveProducts: Product[] = [
     "availability": "available",
     "images": [
       "/images/products/proglove-m020-eu.png",
-      "/images/products/proglove-m020-eu-2.png"
+      "/images/products/proglove-m020-eu-2.png",
+      "/images/products/proglove-m020-eu-3.png"
     ],
     "imageDescriptions": [
       "ProGlove MAI — pomarańczowa obudowa, ekran dotykowy z komunikatem i polami Report i Skip, po bokach cztery przyciski",
-      "ProGlove MAI — ekran z lokalizacją, numerem artykułu i ilością do pobrania"
+      "ProGlove MAI — ekran z lokalizacją, numerem artykułu i ilością do pobrania",
+      "ProGlove MAI na grzbiecie dłoni w opasce Hand Strap Gen 2, ekran parowania (opaska sprzedawana osobno)"
     ],
     "tags": [
       "magazyn",

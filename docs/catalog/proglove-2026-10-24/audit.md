@@ -150,3 +150,19 @@ Audyt zewnętrzny przed publikacją; poniższe zmiany zastępują odpowiednie za
 **Zdjęcia**: G011-L-10 ma zdjęcie `proglove-g011-l-10.png` (odbicie Hand Strap, etykieta RIGHT/NAME i wytłoczone znaki CE/UKCA zamaskowane kolorem klipsa) i trafia do Merchant feed. Z001-001 i Z009-000 nadal bez zdjęcia. `product-image-dims.json` uzupełniony ręcznie.
 
 **Porównanie wizualne** (`next start`, 1440 i 390 px; zrzuty w scratchpadzie `proglove-shots/`): galeria MARK 2 — produkt 314 × 353 px w polu 584 × 520 (M3 WR15: 320 × 307); na `/pierscieniowe` kafle ProGlove i M3 mają ten sam rozmiar (171 × 312 przy 390 px), a produkt zajmuje 39–43% dłuższego boku pola (M3: 36–47%); na `/skanery-proglove` kafle 299 × 421 (1440 px) i 171 × 316 (390 px). Blok „Wymagane” na MARK 2: dwie grupy z nagłówkami, 5 pozycji. Akcesoria: 4 kafle, „Pokaż pozostałe (20)”, po rozwinięciu 24, „Zwiń” wraca do 4 — tak jak na M3 WR15.
+
+## 12. Dodatkowe zdjęcia w galeriach (24.10.2026)
+
+Pięć nowych zdjęć, wszystkie wycięte na przezroczystym tle, płótno 800 × 800 (w sklepie nie ma zdjęć produktów z tłem, więc zdjęcia z ludźmi z ulotek i press kitu pominięto):
+
+| Plik | Źródło | Skala | Ułożenie |
+|---|---|---|---|
+| `proglove-m009-2.png` (LEO w Hand Strap) | proglove.com `2023/03/mark-leo-benefits-wearit.png` | 0,62× | środek, 54 × 66% |
+| `proglove-m004-eu-3.png` (MARK 2 Mid Range na dłoni, przód) | Quickstart MARK, s. 2 | 1,20× | dosunięte do dolnej krawędzi (przedramię ucięte w źródle) |
+| `proglove-m004-eu-4.png` (MARK 2 Mid Range na dłoni, bok) | Quickstart MARK, s. 2 | 0,82× | dosunięte do dolnej krawędzi |
+| `proglove-m010-2.png` (MARK 3 na dłoni, zielone diody) | proglove.com `2024/08/connectivity-interactive-hand-image.png` (528 × 434) | 1,30× | dosunięte do dolnej krawędzi |
+| `proglove-m020-eu-3.png` (MAI na dłoni, Hand Strap Gen 2) | Quickstart MAI, s. 3 | 0,63× | dosunięte do prawej krawędzi |
+
+- Pomarańczowa obudowa z napisem „mid range” to MARK 2 Mid Range (MARK Basic ma szarą obudowę); „multi range” na pomarańczowej obudowie to MARK 3.
+- MARK Basic i MARK Display: brak kolejnych czystych wycięć (ikony 200–278 px za małe, zdjęcia ERS 275 px), galerie bez zmian.
+- `product-image-dims.json` uzupełniony ręcznie o 5 wpisów.
