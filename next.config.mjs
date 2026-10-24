@@ -61,7 +61,6 @@ const nextConfig = {
       { source: '/downloads/skorpiox5_um.pdf', destination: '/instrukcje/honeywell-ck67', permanent: true },
       { source: '/downloads/sps-ppr-px940-quick-start-guide.pdf', destination: '/instrukcje/honeywell-px940', permanent: true },
       { source: '/downloads/4250wb_4230b_pol_ug_01.pdf', destination: '/instrukcje/honeywell-rp4f/instrukcja-po-polsku', permanent: true },
-      { source: '/downloads/instrukcja-cmp-25l-en.pdf', destination: '/instrukcje/honeywell-rp2f', permanent: true },
 
       // =====================================================
       // TRAILING SLASH: stara strona WordPress miała /
