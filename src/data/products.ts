@@ -3,6 +3,7 @@ import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-product
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
 import { bluebirdProducts, bluebirdAccessories } from './bluebird-products'
 import { bluebirdFaq } from './bluebird-category'
+import { progloveProducts, progloveAccessories } from './proglove-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -87890,7 +87891,7 @@ Wymiary kompaktowej obudowy to 70,7 × 33 × 22,1 mm. Bogaty ekosystem akcesori�
       { name: 'Bateria', value: '1000 mAh, magnetyczne ładowanie one-touch' },
       { name: 'Waga', value: '29 g (skaner) / 55 g (skaner + bateria) / 70 g (z triggerem + pasek)' },
       { name: 'Wymiary', value: '70,7 × 33 × 22,1 mm' },
-      { name: 'Ochrona IP', value: 'IP65' },
+      { name: 'Klasa szczelności', value: 'IP65' },
       { name: 'Upadki', value: '1,8 m na beton' },
       { name: 'Tumble', value: '0,5 m / 2000 cykli' },
       { name: 'Temperatura pracy', value: '−20°C do +50°C' },
@@ -95487,6 +95488,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Skanery i akcesoria ProGlove trafiają do podkategorii według `subcategoryIds` (skanery noszone i akcesoria do skanerów).
+for (const subcategory of subcategories) {
+  const additions = [...progloveProducts, ...progloveAccessories].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95527,6 +95537,8 @@ const rawProductList: Product[] = [
   ...cipherlabAccessories,
   ...bluebirdProducts,
   ...bluebirdAccessories,
+  ...progloveProducts,
+  ...progloveAccessories,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,
