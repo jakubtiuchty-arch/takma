@@ -135,3 +135,10 @@ Sprawdzono zdanie po zdaniu: tytuł, meta, krótki opis, opis, specyfikację, dy
 | Typ spustu KFSSYWR | POMINIĘTE | niepotwierdzone |
 
 Kontrola unikalności (`porownaj-opisy.py`, 6-gramy, pola description, shortDescription, seoDescription, faq): RS6100 i jego akcesoria kontra RS2100, ProGlove i M3 WR10 / WR15 — 0 par.
+
+## Integracja (główna sesja, 24.10.2026)
+
+- **Przewód DC do CRD-RS61-20SCHG-01 i SAC-RS51-40SCHG-01: CBL-DC-382A1-01.** Przewodnik produktu RS6100 (07.2026, tabela 5 „Accessories”) wymaga 382A1; przewodnik akcesoriów (01.2026) podaje 381A1. Obowiązuje nowszy dokument modelu. Zasilacz 108 W: warunek przewodu 382A1 obejmuje stacje 20-gniazdowe RS2100 i RS6100 oraz ładowarkę 40 baterii; karta przewodu 381A1 bez RS6100, karta 382A1 z RS6100.
+- **Zdjęcie 5 karty skanera.** Plik biblioteki `0021/sg-rs5x6-hnmt-02-rs6100-std-battery-02` pokazuje mocowanie na grzbiet dłoni, nie Enterprise Hand Mount (nazwy plików 0021 `hnmt`/`bhmt` są w bibliotece zamienione — ustalenie agenta mocowań). Zastąpione zdjęciem Enterprise Hand Mount z owijką (`SG-RS5X6-HNMT-02-2.png`).
+- Karty mocowań, owijek, pasków, spustów i smyczy: `src/data/zebra-rs6100-mounts.ts`, dokumentacja `mocowania.md`.
+- Bateria rozszerzona: konfiguracje KESSXWR/KEDSXWR/KEENXWR mają w tabeli konfiguracji PRG i w opisach dystrybutora zakres −20–50 °C, przewodnik akcesoriów podaje pracę do −20 °C; rozdział PRG o baterii mówi, że poniżej 0 °C należy używać baterii do mroźni. Na karcie zostaje −20 °C dla baterii rozszerzonej (opis konfiguracji SKU); sprzeczność do potwierdzenia u Zebry.
