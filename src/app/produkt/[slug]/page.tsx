@@ -1,3 +1,4 @@
+import ProgloveFamilyStory from '@/components/product/ProgloveFamilyStory'
 import ProgloveMark2Story from '@/components/product/ProgloveMark2Story'
 import SunmiFlexStory from '@/components/product/SunmiFlexStory'
 import SunmiFlexKdsStory from '@/components/product/SunmiFlexKdsStory'
@@ -1485,10 +1486,15 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
-              {!['sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
+              {!['sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2', 'proglove-mark-3', 'proglove-mark-basic', 'proglove-mark-display', 'proglove-leo', 'proglove-mai'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
               {(() => {
                 if (['sunmi-t3-pro', 'sunmi-t3-pro-max'].includes(product.slug)) return <SunmiT3Story max={product.slug === 'sunmi-t3-pro-max'} />
                 if (['sunmi-d3', 'sunmi-d3-pro'].includes(product.slug)) return <SunmiD3Story pro={product.slug === 'sunmi-d3-pro'} />
+                if (product.slug === 'proglove-mark-3') return <ProgloveFamilyStory model="mark-3" />
+                if (product.slug === 'proglove-mark-basic') return <ProgloveFamilyStory model="mark-basic" />
+                if (product.slug === 'proglove-mark-display') return <ProgloveFamilyStory model="mark-display" />
+                if (product.slug === 'proglove-leo') return <ProgloveFamilyStory model="leo" />
+                if (product.slug === 'proglove-mai') return <ProgloveFamilyStory model="mai" />
                 if (product.slug === 'proglove-mark-2') return <ProgloveMark2Story />
                 if (product.slug === 'sunmi-flex-3') return <SunmiFlexStory />
                 if (product.slug === 'sunmi-flex-3-kds') return <SunmiFlexKdsStory />

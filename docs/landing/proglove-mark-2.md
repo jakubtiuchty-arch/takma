@@ -13,3 +13,5 @@ Mocowanie i ładowarka wymagane, po jednym z każdej grupy, sprzedawane osobno. 
 Zakres publikacji: podgląd lokalny do oceny. Użytkownik polecił natychmiastową publikację FLEX3 i poprawek SUNMI, następnie rozpoczęcie MARK2. MARK2 nie wysyłano na produkcję.
 
 Weryfikacja: ESLint i kontrola TypeScript nowych komponentów poprawne. Przełączniki SR/MR zmieniają PN i zakres; animacja parowania odtwarza się (readyState4). Mobile390px: scrollWidth390, brak poziomego przewijania. Kontrast nagłówków na jasnym tle skorygowany do #626b73. Screenshot outputs/proglove-mark-2-local.png w folderze rozmowy.
+
+Redakcja 24.10: konkretne polskie nagłówki i opisy zastosowań, sygnałów potwierdzenia, integracji i wyposażenia. Parametry oraz media bez zmian. Nadal podgląd lokalny.

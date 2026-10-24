@@ -4,8 +4,8 @@ import { useState } from 'react'
 import s from './ProgloveMark2Story.module.css'
 
 const ranges = [
-  { title: 'Standard Range', pn: 'M004-EU', heading: 'Gdy kod jest blisko dłoni.', text: 'Do montażu, kontroli jakości i pracy przy stanowisku. Celownik LED pomaga skierować skaner na właściwą etykietę.', range: '4–58 cm', example: 'Przykład: kod UPC-A', extra: 'Kod Code 39 o module 20 mil: około 4–92 cm.' },
-  { title: 'Mid Range', pn: 'M003-EU', heading: 'Gdy etykieta jest dalej.', text: 'Do kompletacji i zadań logistycznych. Węższe pole widzenia i celownik laserowy ułatwiają wskazanie kodu.', range: '6–97 cm', example: 'Przykład: kod UPC-A', extra: 'Kod Code 39 o module 20 mil: około 5–137 cm.' },
+  { title: 'Standard Range', pn: 'M004-EU', heading: 'Standard Range — do pracy z bliska.', text: 'Do montażu, kontroli jakości i pracy przy stanowisku. Celownik LED pomaga skierować skaner na właściwą etykietę.', range: '4–58 cm', example: 'Przykład: kod UPC-A', extra: 'Kod Code 39 o module 20 mil: około 4–92 cm.' },
+  { title: 'Mid Range', pn: 'M003-EU', heading: 'Mid Range — do większych odległości.', text: 'Do kompletacji i zadań logistycznych. Węższe pole widzenia i celownik laserowy ułatwiają wskazanie kodu.', range: '6–97 cm', example: 'Przykład: kod UPC-A', extra: 'Kod Code 39 o module 20 mil: około 5–137 cm.' },
 ]
 export function Mark2Ranges() {
   const [index, setIndex] = useState(0)
