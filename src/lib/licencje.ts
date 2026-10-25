@@ -101,12 +101,13 @@ export function czyNaZapytanie(
 }
 
 /**
- * Wariant-dodatek do licencji głównej (np. „+1 drukarka”): nie działa samodzielnie, więc nie może
- * być „ceną od” karty licencji. Rozpoznajemy go po nazwie lub atrybucie wariantu.
+ * Wariant-dodatek do licencji głównej (np. „+1 drukarka” albo opcja planu, jak baza w chmurze):
+ * nie działa samodzielnie, więc nie może być „ceną od” karty licencji. Rozpoznajemy go po nazwie
+ * lub atrybucie wariantu; opcje planu mają atrybut „Licencja: Opcja”.
  */
 export function czyDodatekLicencji(variant: { name?: string; attributes?: Record<string, string> }): boolean {
   const teksty = [variant.name ?? '', ...Object.values(variant.attributes ?? {})]
-  return teksty.some(t => /(^|\s)\+\s*\d+\s*drukar|dodatkow\S*\s+drukar|dokupieni/i.test(t))
+  return teksty.some(t => /(^|\s)\+\s*\d+\s*drukar|dodatkow\S*\s+drukar|dokupieni|^opcja$/i.test(t.trim()))
 }
 
 // ── Dane licencjobiorcy w zamówieniu ─────────────────────────────

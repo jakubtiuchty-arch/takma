@@ -145,7 +145,7 @@ Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Sta
   subcategoryIds: ['programy-do-etykiet'],
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
-  priceFrom: 390.09,
+  priceFrom: 1129.22,
   images: ['/images/products/BTP-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
   imageDescriptions: [
     'BarTender Professional — druk zdalny na smartfonie: konsola druku z dokumentami etykiet i ustawienia drukarek sieciowych',
@@ -264,7 +264,7 @@ Subskrypcja trwa 1 rok albo 3 lata i obejmuje standardowe wsparcie producenta. L
   subcategoryIds: ['programy-do-etykiet'],
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
-  priceFrom: 652.89,
+  priceFrom: 2172.2,
   images: ['/images/products/BTA-2-SUB-1YR.png', '/images/products/BTA-2-SUB-1YR-2.png'],
   imageDescriptions: [
     'BarTender Automation — Intelligent Form Builder: kreator formularza druku z polami tekstowymi, listą wyboru i przypisanym szablonem etykiety',

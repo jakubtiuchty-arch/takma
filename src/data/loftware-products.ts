@@ -28,7 +28,7 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
   categoryId: 'oprogramowanie',
   subcategoryIds: ['programy-do-etykiet'],
   manufacturerId: 'loftware',
-  priceFrom: 566.67,
+  priceFrom: 1478.25,
   licenseDelivery: 'email',
   images: ['/images/products/NSCDBA001Y.png'],
   imageDescriptions: [
@@ -141,7 +141,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   categoryId: 'oprogramowanie',
   subcategoryIds: ['programy-do-etykiet'],
   manufacturerId: 'loftware',
-  priceFrom: 788.4,
+  priceFrom: 3055.04,
   licenseDelivery: 'email',
   images: ['/images/products/NSCEBS001M.png', '/images/products/NSCDBA001Y.png'],
   imageDescriptions: [

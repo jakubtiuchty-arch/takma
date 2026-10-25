@@ -153,6 +153,8 @@ assert.equal(czyDodatekLicencji({ name: '+1 drukarka, 1 rok', attributes: {} }),
 assert.equal(czyDodatekLicencji({ name: 'Professional', attributes: { 'Licencja': 'dodatkowa drukarka' } }), true)
 assert.equal(czyDodatekLicencji({ name: 'Professional 2 drukarki', attributes: { 'Drukarki': '2' } }), false)
 assert.equal(czyDodatekLicencji({ name: 'Stanowisko', attributes: { 'Licencja': 'stanowisko' } }), false)
+assert.equal(czyDodatekLicencji({ name: 'Essentials — baza SQL w chmurze 1 GB', attributes: { 'Licencja': 'Opcja', 'Dodatek': 'Baza SQL' } }), true)
+assert.equal(czyDodatekLicencji({ name: 'Essentials — subskrypcja 1 rok, do 2 drukarek', attributes: { 'Licencja': 'Subskrypcja podstawowa', 'Drukarki': 'do 2' } }), false)
 for (const v of cardstudio.variants) assert.equal(czyDodatekLicencji(v), false, v.partNumber)
 
 // 9. Dane licencjobiorcy: zapis w uwagach i odczyt
