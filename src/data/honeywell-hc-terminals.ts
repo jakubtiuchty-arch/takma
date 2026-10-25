@@ -116,6 +116,7 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
     'honeywell-ct37-btsc-002',
     'honeywell-ct37-hs-hc-3pk',
     'honeywell-ct37-5cb-uvb-hc0',
+    'honeywell-ct30-5cb-uvn-hc0',
     'honeywell-ct37-clip-lan-hc',
     'honeywell-ct37-usbc-plug-5pk',
     'honeywell-ct37-pb-gry',
@@ -140,7 +141,7 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
     },
     {
       question: 'Jakie stacje ładujące pasują do CT37 HC?',
-      answer: 'Stacja 5-gniazdowa ładuje cztery terminale i cztery baterie: [CT37-5CB-UVN-HC0](/produkt/honeywell-ct37-5cb-uvn-hc0) przyjmuje terminal bez osłony, a [CT37-5CB-UVB-HC0](/produkt/honeywell-ct37-5cb-uvb-hc0) terminal w osłonie CT37-PB-GRY. [CT37-DB-UVN-HC0](/produkt/honeywell-ct37-db-uvn-hc0) ładuje jeden terminal i ma wyjście HDMI, Ethernet oraz porty USB. Same baterie ładuje [CT37-QBC-HC0](/produkt/honeywell-ct37-qbc-hc0). Zasilacz jest w każdym zestawie. Stacje 5-gniazdowe wymagają przewodu sieciowego ze złączem C5, pozostałe ze złączem C13.',
+      answer: 'Stacja 5-gniazdowa ładuje cztery terminale i cztery baterie: [CT37-5CB-UVN-HC0](/produkt/honeywell-ct37-5cb-uvn-hc0) przyjmuje terminal bez osłony, a [CT37-5CB-UVB-HC0](/produkt/honeywell-ct37-5cb-uvb-hc0) terminal w osłonie CT37-PB-GRY. [CT37-DB-UVN-HC0](/produkt/honeywell-ct37-db-uvn-hc0) ładuje jeden terminal i ma wyjście HDMI, Ethernet oraz porty USB. Same baterie ładuje [CT37-QBC-HC0](/produkt/honeywell-ct37-qbc-hc0). Zasilacz jest w każdym zestawie. Stacje 5-gniazdowe CT37 wymagają przewodu sieciowego ze złączem C5, pozostałe ze złączem C13. Przewodnik konfiguracji CT37 dopuszcza też stację [CT30-5CB-UVN-HC0](/produkt/honeywell-ct30-5cb-uvn-hc0) z wersji HC dla CT30 XP.',
     },
     {
       question: 'Czy CT37 HC współpracuje z uchwytem RFID lub zestawem na przedramię?',
@@ -247,6 +248,46 @@ ${CORD_C5_REQUIRED}Do terminali bez osłony służy stacja [CT37-5CB-UVN-HC0](/p
   applications: ['Ładowanie terminali używanych w osłonie'],
   compatibleAccessories: [],
   relatedAccessories: ['honeywell-3007-4683-001', 'honeywell-ct37-pb-gry', 'honeywell-ct30p-ucp-bhc'],
+  downloads: [CT37_CONFIG_GUIDE],
+  relatedProducts: CT37_HC,
+  createdAt: '2026-10-25',
+}
+
+const ct30FiveBayNonBooted: Product = {
+  id: 'honeywell-ct30-5cb-uvn-hc0',
+  slug: 'honeywell-ct30-5cb-uvn-hc0',
+  name: 'Stacja 5-gniazdowa Honeywell CT30 XP HC bez osłony (CT30-5CB-UVN-HC0)',
+  shortDescription: 'Honeywell CT30-5CB-UVN-HC0 — stacja 5-gniazdowa w wersji HC do CT30 XP HC, zgodna z CT37 HC: 4 terminale bez osłony i 4 baterie standardowe.',
+  seoTitle: 'Stacja Honeywell CT30-5CB-UVN-HC0 do CT30 XP HC i CT37 HC',
+  seoDescription: 'Honeywell CT30-5CB-UVN-HC0 — stacja ładująca HC do CT30 XP HC, zgodna z CT37 HC: cztery terminale bez osłony, ładowarka czterech baterii standardowych, zasilacz w zestawie. PN: CT30-5CB-UVN-HC0.',
+  description: `CT30-5CB-UVN-HC0 to podstawa ładująca Honeywell w wersji HC, zaprojektowana dla terminali CT30 XP HC. Przewodnik konfiguracji CT37 dopuszcza ją także do [Honeywell CT37 HC](/produkt/honeywell-ct37-hc). Ograniczenie dotyczy tylko baterii rozszerzonej, a CT37 HC pracuje z baterią standardową.
+
+Cztery gniazda przyjmują terminale bez osłony. Piąte gniazdo ładuje cztery baterie standardowe, także baterię CT37-BTSC-002. W zestawie są podstawa i zasilacz. Terminale i baterie widoczne na zdjęciu nie wchodzą w skład zestawu.
+
+## Co jest potrzebne do użycia?
+
+${CORD_C13_REQUIRED}Przewód podłącza zasilacz stacji do gniazda sieciowego.`,
+  categoryId: 'akcesoria',
+  subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
+  manufacturerId: 'honeywell',
+  priceFrom: 2556.57,
+  images: ['/images/products/CT30-5CB-UVN-HC0.png'],
+  imageDescriptions: ['Biała stacja Honeywell HC z niebieskim paskiem: cztery terminale w gniazdach i cztery baterie w ładowarce po lewej stronie'],
+  tags: ['healthcare'],
+  availability: 'available',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Part Number', value: 'CT30-5CB-UVN-HC0' },
+    { name: 'Typ', value: 'Stacja ładująca 5-gniazdowa, 4 terminale + 4 baterie, tylko ładowanie' },
+    { name: 'Terminale', value: 'Honeywell CT30 XP HC i CT37 HC bez osłony' },
+    { name: 'Baterie', value: 'Standardowe CT30 XP i CT37; bez baterii rozszerzonej' },
+    { name: 'W zestawie', value: 'Podstawa 5-gniazdowa, zasilacz' },
+    { name: 'Przewód sieciowy', value: 'Sprzedawany osobno (EU: 77900508E)' },
+  ],
+  applications: ['Ładowanie terminali CT37 HC i CT30 XP HC oraz zapasowych baterii'],
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-ih45-cord-eu', 'honeywell-ct37-btsc-002'],
   downloads: [CT37_CONFIG_GUIDE],
   relatedProducts: CT37_HC,
   createdAt: '2026-10-25',
@@ -642,6 +683,7 @@ export const honeywellHcTerminals: Product[] = [
   ct37Hc,
   fiveBayNonBooted,
   fiveBayBooted,
+  ct30FiveBayNonBooted,
   displayBase,
   quadBatteryCharger,
   battery,

@@ -436,7 +436,7 @@ export const honeywellIh45Accessories: Product[] = [
     "seoTitle": "Przewód sieciowy EU Honeywell IH45 / CT40 | TAKMA",
     "seoDescription": "Przewód sieciowy EU 77900508E, IEC320-C13, 2,5 m. Do zasilacza stacji CT40-HB-UVN-0. Stacja i zasilacz nie są częścią przewodu.",
     "shortDescription": "Przewód sieciowy EU 77900508E, IEC320-C13, 2,5 m. Do zasilacza stacji CT40-HB-UVN-0. Stacja i zasilacz nie są częścią przewodu.",
-    "description": "Przewód sieciowy EU 77900508E, IEC320-C13, 2,5 m. Do zasilacza stacji CT40-HB-UVN-0. Stacja i zasilacz nie są częścią przewodu.\n\nDobierz zestaw na karcie [Honeywell IH45](/produkt/honeywell-ih45).\n\nPasuje do zasilacza dołączonego do [stacji CT40-HB-UVN-0](/produkt/honeywell-ih45-cradle).\n\nTen sam przewód podłącza do sieci zasilacz stacji Display Base [CT37-DB-UVN-HC0](/produkt/honeywell-ct37-db-uvn-hc0) i ładowarki baterii [CT37-QBC-HC0](/produkt/honeywell-ct37-qbc-hc0) do [Honeywell CT37 HC](/produkt/honeywell-ct37-hc). Stacje 5-gniazdowe CT37 HC wymagają przewodu ze złączem C5.",
+    "description": "Przewód sieciowy EU 77900508E, IEC320-C13, 2,5 m. Do zasilacza stacji CT40-HB-UVN-0. Stacja i zasilacz nie są częścią przewodu.\n\nDobierz zestaw na karcie [Honeywell IH45](/produkt/honeywell-ih45).\n\nPasuje do zasilacza dołączonego do [stacji CT40-HB-UVN-0](/produkt/honeywell-ih45-cradle).\n\nTen sam przewód podłącza do sieci zasilacz stacji Display Base [CT37-DB-UVN-HC0](/produkt/honeywell-ct37-db-uvn-hc0) i ładowarki baterii [CT37-QBC-HC0](/produkt/honeywell-ct37-qbc-hc0) do [Honeywell CT37 HC](/produkt/honeywell-ct37-hc). Przewodnik akcesoriów CT30 XP podaje go jako przewód EU do [stacji CT30-5CB-UVN-HC0](/produkt/honeywell-ct30-5cb-uvn-hc0). Stacje 5-gniazdowe CT37 HC wymagają przewodu ze złączem C5.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali"
@@ -462,7 +462,7 @@ export const honeywellIh45Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Honeywell IH45 — warunki opisane powyżej; zasilacze CT37-DB-UVN-HC0 i CT37-QBC-HC0 (Honeywell CT37 HC)"
+        "value": "Honeywell IH45 — warunki opisane powyżej; zasilacze CT37-DB-UVN-HC0 i CT37-QBC-HC0 (Honeywell CT37 HC); stacja CT30-5CB-UVN-HC0"
       }
     ],
     "applications": [
