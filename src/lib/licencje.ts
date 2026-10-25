@@ -88,6 +88,29 @@ export function czyLicencjaElektroniczna(product: Pick<Product, 'licenseDelivery
   return product?.licenseDelivery === 'email'
 }
 
+type KartaPozycji = Pick<Product, 'licenseDelivery' | 'variants' | 'specifications'>
+
+/** Pozycja koszyka jest licencją e-mailem: karta z `licenseDelivery` i numer katalogowy tej karty. */
+export function czyPozycjaLicencji(product: KartaPozycji | undefined | null, partNumber?: string | null): boolean {
+  if (!product || !czyLicencjaElektroniczna(product) || !partNumber) return false
+  const pn = partNumber.toUpperCase()
+  return product.variants?.length
+    ? product.variants.some(v => v.partNumber.toUpperCase() === pn)
+    : product.specifications.some(s => s.name === 'Part Number' && s.value.toUpperCase() === pn)
+}
+
+/**
+ * Koszyk z samymi licencjami e-mailem: nic nie jedzie kurierem, więc dostawa 0 zł (decyzja
+ * właściciela z 25.10.2026). Koszyk mieszany (sprzęt + licencja) liczy dostawę jak dotąd —
+ * ten sam próg i koszt (lib/shipping). Kartę podaje wywołujący: ten moduł nie importuje katalogu.
+ */
+export function czyTylkoLicencje(
+  items: { productSlug?: string | null; partNumber?: string | null }[],
+  karta: (slug: string) => KartaPozycji | undefined | null,
+): boolean {
+  return items.length > 0 && items.every(item => !!item.productSlug && czyPozycjaLicencji(karta(item.productSlug), item.partNumber))
+}
+
 /** Karta albo wybrany wariant tylko „Zapytaj o cenę”: bez ceny i koszyka. */
 export function czyNaZapytanie(
   product: Pick<Product, 'quoteOnly' | 'variants'> | undefined | null,

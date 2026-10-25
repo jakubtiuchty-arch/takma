@@ -5,7 +5,7 @@ import { createOrder } from '@/lib/orders'
 import { applyQuotePricing } from '@/lib/quote-pricing'
 import { zastosujKod, oznaczKodJakoUzyty } from '@/lib/promo-codes'
 import { applyUsedDevicePricing, markUsedDevicesSold } from '@/lib/used-devices-db'
-import { przygotujUwagiZamowienia } from '@/lib/licencje-katalog'
+import { dostawaZamowienia, przygotujUwagiZamowienia } from '@/lib/licencje-katalog'
 import type { Licencjobiorca } from '@/lib/licencje'
 
 interface CheckoutItem {
@@ -47,6 +47,8 @@ export async function createCheckoutSession(
   }
   // Pozycje na zapytanie odrzucamy, a dane licencjobiorcy dopisujemy do uwag — przed zapisem zamówienia.
   notes = przygotujUwagiZamowienia(items, notes, licencjobiorca)
+  // Sam koszyk licencji e-mailem: dostawa 0 zł niezależnie od kwoty z koszyka.
+  shippingNetto = dostawaZamowienia(items, shippingNetto)
   // Pomiary czasu — diagnoza wolnego redirectu do P24 (2026-06-11: ~20-40 s)
   const t0 = Date.now()
 
@@ -122,6 +124,7 @@ export async function createProformaOrder(
   licencjobiorca?: Licencjobiorca
 ): Promise<{ orderNumber: string }> {
   notes = przygotujUwagiZamowienia(items, notes, licencjobiorca)
+  shippingNetto = dostawaZamowienia(items, shippingNetto)
   items = await applyUsedDevicePricing(await zastosujKod(await applyQuotePricing(items), promoCode))
 
   // 1. Create order in DB with status AWAITING_PAYMENT

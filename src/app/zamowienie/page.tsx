@@ -14,6 +14,7 @@ import {
   ArrowRightIcon,
   ShoppingCartIcon,
   TruckIcon,
+  MailIcon,
 } from '@/components/ui/Icons'
 import { usedSlugFromProductId } from '@/lib/used-devices'
 import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
@@ -22,7 +23,7 @@ import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
 import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase, trackPromoCodeApplied, trackPromoCodeRejected } from '@/lib/ga-events'
-import { czyLicencjaElektroniczna, czyNaZapytanie, dopiszLicencjobiorce, type Licencjobiorca } from '@/lib/licencje'
+import { czyLicencjaElektroniczna, czyNaZapytanie, czyTylkoLicencje, dopiszLicencjobiorce, LICENCJA_DOSTAWA, type Licencjobiorca } from '@/lib/licencje'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -237,6 +238,13 @@ export default function CheckoutPage() {
     [items],
   )
 
+  // Sam koszyk licencji e-mailem nie ma dostawy (0 zł); koszyk mieszany liczy dostawę jak dotąd.
+  // Ta sama reguła co na serwerze (lib/licencje-katalog → dostawaZamowienia).
+  const tylkoLicencje = useMemo(
+    () => czyTylkoLicencje(items, (slug) => products.find((p) => p.slug === slug)),
+    [items],
+  )
+
   // Pozycje tylko na zapytanie (edycje Enterprise) nie przechodzą przez koszyk — wyjątek to
   // pozycja z oferty handlowej, którą wyceniliśmy indywidualnie.
   const pozycjeNaZapytanie = useMemo(
@@ -309,7 +317,7 @@ export default function CheckoutPage() {
     return total
   }, [mounted, items, itemPrices])
 
-  const isFreeShipping = subtotalNetto >= FREE_SHIPPING_THRESHOLD
+  const isFreeShipping = tylkoLicencje || subtotalNetto >= FREE_SHIPPING_THRESHOLD
   const shippingNetto = isFreeShipping ? 0 : (items.length > 0 ? SHIPPING_COST : 0)
   const totalNetto = subtotalNetto + shippingNetto
   const vatAmount = totalNetto * 0.23
@@ -1128,8 +1136,8 @@ export default function CheckoutPage() {
 
               {isFreeShipping && (
                 <div className="flex items-center gap-2 text-xs text-green-700 bg-green-50 rounded-lg px-3 py-2">
-                  <TruckIcon size={14} />
-                  Darmowa dostawa
+                  {tylkoLicencje ? <MailIcon size={14} /> : <TruckIcon size={14} />}
+                  {tylkoLicencje ? <span>Dostawa 0 zł · <span className="whitespace-nowrap">{LICENCJA_DOSTAWA}</span></span> : 'Darmowa dostawa'}
                 </div>
               )}
 

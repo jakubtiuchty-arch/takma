@@ -1,6 +1,7 @@
 import { products, type Product } from '@/data/products'
 import {
   czyNaZapytanie,
+  czyTylkoLicencje,
   dopiszLicencjobiorce,
   poprawnyLicencjobiorca,
   zastosujRegulyLicencji,
@@ -90,4 +91,15 @@ export function przygotujUwagiZamowienia(
     throw new Error('Podaj firmę i adres e-mail użytkownika licencji — na ten adres wyślemy kod licencji.')
   }
   return dopiszLicencjobiorce(uwagi, licencjobiorca)
+}
+
+/**
+ * Koszt dostawy zamówienia po stronie serwera: sam koszyk licencji e-mailem ma dostawę 0 zł,
+ * nawet gdy koszyk przysłał inną kwotę. Pozostałe koszyki (także mieszane) — bez zmian.
+ */
+export function dostawaZamowienia(
+  items: { productSlug: string; partNumber: string }[],
+  shippingNetto: number,
+): number {
+  return czyTylkoLicencje(items, slug => products.find(p => p.slug === slug)) ? 0 : shippingNetto
 }

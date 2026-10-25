@@ -24,7 +24,9 @@ const { products } = require('../src/data/products.ts')
 const {
   LICENCJA_DOSTAWA, zastosujRegulyLicencji, jestNaStanie, czyNaZapytanie, czyLicencjaElektroniczna,
   dopiszLicencjobiorce, odczytajLicencjobiorce, poprawnyLicencjobiorca, czyDodatekLicencji,
+  czyPozycjaLicencji, czyTylkoLicencje,
 } = require('../src/lib/licencje.ts')
+const { SHIPPING_COST_NETTO, FREE_SHIPPING_FROM_NETTO } = require('../src/lib/shipping.ts')
 
 // Karty testowe dopisane do katalogu przed zbudowaniem zbiorów PN w lib/licencje-katalog
 // (bez zmian w plikach danych): licencja z wariantem na zapytanie i cała karta na zapytanie.
@@ -52,7 +54,7 @@ products.push(
     ],
   },
 )
-const { czyPnLicencji, czyPnNaZapytanie, nalozRegulyLicencji, przygotujUwagiZamowienia } = require('../src/lib/licencje-katalog.ts')
+const { czyPnLicencji, czyPnNaZapytanie, nalozRegulyLicencji, przygotujUwagiZamowienia, dostawaZamowienia } = require('../src/lib/licencje-katalog.ts')
 
 const wiersz = (pola) => ({
   partNumber: 'X', found: true, price: 1000, priceBrutto: 1230, stockPL: 0, stockDE: 0, inDelivery: 0, totalStock: 0,
@@ -187,6 +189,38 @@ for (const v of cardstudio.variants) assert.equal(czyDodatekLicencji(v), false, 
   // koszyk bez licencji: uwagi bez zmian, dane licencjobiorcy pominięte
   assert.equal(przygotujUwagiZamowienia([poz('zebra-zd421t', zwyklyPn)], 'uwagi', licencjobiorca), 'uwagi')
   assert.equal(przygotujUwagiZamowienia([poz('zebra-zd421t', zwyklyPn)], undefined, undefined), undefined)
+}
+
+// 11. Dostawa: sam koszyk licencji e-mailem = 0 zł; koszyk mieszany i sam sprzęt — jak dotąd
+{
+  const poz = (slug, partNumber) => ({ productSlug: slug, partNumber })
+  const karta = (slug) => products.find(p => p.slug === slug)
+  const licencje = [poz('zebra-cardstudio', 'CSR2S-SW00-E'), poz('bartender-professional', 'BTP-WS-SUB-1YR'), poz('loftware-cloud-designer', 'NSCDBA001Y')]
+  const sprzet = poz('zebra-zd421t', zwyklyPn)
+  assert.equal(czyPozycjaLicencji(cardstudio, 'csr2s-sw00-e'), true, 'PN bez względu na wielkość liter')
+  assert.equal(czyPozycjaLicencji(cardstudio, zwyklyPn), false, 'PN spoza karty licencji')
+  assert.equal(czyPozycjaLicencji(cardstudio, undefined), false)
+  assert.equal(czyPozycjaLicencji(karta('zebra-zd421t'), zwyklyPn), false)
+  assert.equal(czyTylkoLicencje(licencje, karta), true)
+  assert.equal(czyTylkoLicencje([licencje[0]], karta), true)
+  assert.equal(czyTylkoLicencje([...licencje, sprzet], karta), false, 'koszyk mieszany')
+  assert.equal(czyTylkoLicencje([sprzet], karta), false)
+  assert.equal(czyTylkoLicencje([], karta), false, 'pusty koszyk')
+  assert.equal(czyTylkoLicencje([poz(undefined, 'CSR2S-SW00-E')], karta), false, 'pozycja bez karty')
+  // serwer: koszyk licencji — 0 zł nawet przy kwocie kuriera z koszyka
+  assert.equal(dostawaZamowienia(licencje, SHIPPING_COST_NETTO), 0)
+  assert.equal(dostawaZamowienia(licencje, 0), 0)
+  // koszyk mieszany i sam sprzęt — kwota z koszyka bez zmian (próg i koszt jak dotąd)
+  assert.equal(dostawaZamowienia([...licencje, sprzet], SHIPPING_COST_NETTO), SHIPPING_COST_NETTO)
+  assert.equal(dostawaZamowienia([...licencje, sprzet], 0), 0)
+  assert.equal(dostawaZamowienia([sprzet], SHIPPING_COST_NETTO), SHIPPING_COST_NETTO)
+  assert.equal(SHIPPING_COST_NETTO, 25)
+  assert.equal(FREE_SHIPPING_FROM_NETTO, 1000)
+  // Szuflada koszyka rozpoznaje licencję po `electronicLicense` z /api/stock — każdy PN karty licencji
+  // musi więc dostać regułę licencji (inaczej szuflada i kasa liczyłyby dostawę różnie).
+  for (const p of products.filter(x => czyLicencjaElektroniczna(x) && !x.slug.startsWith('test-'))) {
+    for (const v of p.variants ?? []) assert.equal(czyPnLicencji(v.partNumber), true, `${p.slug} ${v.partNumber}`)
+  }
 }
 
 console.log('test-licencje: OK')

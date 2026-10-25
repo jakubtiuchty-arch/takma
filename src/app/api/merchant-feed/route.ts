@@ -14,7 +14,7 @@ import {
 import { prisma } from '@/lib/db'
 import { isValidGtin } from '@/lib/allegro/gtin'
 import { nalozRegulyLicencji } from '@/lib/licencje-katalog'
-import { czyNaZapytanie } from '@/lib/licencje'
+import { czyLicencjaElektroniczna, czyNaZapytanie } from '@/lib/licencje'
 import { gtinyDrukarkiZebra } from '@/lib/gtin-drukarek-zebra'
 
 export const runtime = 'nodejs'
@@ -76,6 +76,8 @@ function buildItem(opts: {
   itemGroupId?: string
   productType?: string
   googleProductCategory?: string
+  /** Licencja e-mailem: dostawa 0 zł zamiast stawek kuriera z ustawień konta Merchant Center */
+  bezDostawy?: boolean
 }): string {
   const lines = [
     '    <item>',
@@ -94,6 +96,7 @@ function buildItem(opts: {
   if (opts.itemGroupId) lines.push(`      <g:item_group_id>${escapeXml(opts.itemGroupId)}</g:item_group_id>`)
   if (opts.productType) lines.push(`      <g:product_type>${escapeXml(opts.productType)}</g:product_type>`)
   if (opts.googleProductCategory) lines.push(`      <g:google_product_category>${opts.googleProductCategory}</g:google_product_category>`)
+  if (opts.bezDostawy) lines.push('      <g:shipping><g:country>PL</g:country><g:price>0.00 PLN</g:price></g:shipping>')
   lines.push('    </item>')
   return lines.join('\n')
 }
@@ -328,6 +331,7 @@ export async function GET() {
       itemGroupId: c.variant ? c.product.slug : undefined,
       productType,
       googleProductCategory: kategoriaGoogle(c.product),
+      bezDostawy: czyLicencjaElektroniczna(c.product),
     }))
     seenPns.add(c.pn)
   }

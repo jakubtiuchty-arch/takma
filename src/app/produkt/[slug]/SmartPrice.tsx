@@ -10,7 +10,7 @@ import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, ShoppingCartIcon } from '@/components/ui/Icons'
-import { LICENCJA_DOSTAWA } from '@/lib/licencje'
+import { czyLicencjaElektroniczna, LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 interface SmartPriceProps {
   product: Product
@@ -63,6 +63,8 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
   // Pozycja na zapytanie nie pokazuje stanu: o dostępności informujemy w odpowiedzi na zapytanie.
   const hasStockData = !loading && stock?.found && !naZapytanie
   const licencja = !!hasStockData && !!stock!.electronicLicense
+  // Karta licencji e-mailem: zamiast paska kosztu kuriera informacja o kodzie e-mailem (dostawa 0 zł).
+  const kartaLicencji = czyLicencjaElektroniczna(product)
 
   // Cena kartonowa (taśmy + etykiety) — zakup całego opakowania wychodzi taniej za rolkę:
   // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Gdy live — cena
@@ -224,12 +226,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
           Sprawdzanie stanów magazynowych...
         </div>
       )}
-      {licencja && (
-        <div className="mt-3 flex items-center gap-2 text-sm">
-          <div className="w-2 h-2 bg-green-500 rounded-full" />
-          <span className="text-gray-600">{LICENCJA_DOSTAWA}</span>
-        </div>
-      )}
+      {/* Licencja e-mailem nie ma stanów magazynowych — sposób dostawy pokazuje wiersz dostawy niżej. */}
       {hasStockData && !licencja && (
         <div className="mt-3 space-y-1.5">
           {stock!.stockPL > 0 && (
@@ -276,7 +273,17 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
           tekst na ciemnym gradiencie po lewej. Przy ograniczonym ruchu w systemie wideo stoi na plakacie. */}
       {/* Koszt dostawy — te same progi co w koszyku (src/lib/shipping.ts). Pasek progu darmowej wysyłki:
           inna forma niż lista stanów i niż ciemne kafle poniżej; przy materiałach zachęca do większego zamówienia. */}
-      {!loading && price && (
+      {!loading && price && kartaLicencji && (
+        <div className="mt-3 pt-3 border-t border-gray-200">
+          <div className="flex items-baseline justify-between gap-3 text-xs">
+            <span className="text-gray-700">
+              Dostawa <strong className="text-green-700">0 zł</strong>
+            </span>
+            <span className="text-gray-500">{LICENCJA_DOSTAWA}</span>
+          </div>
+        </div>
+      )}
+      {!loading && price && !kartaLicencji && (
         <div className="mt-3 pt-3 border-t border-gray-200">
           <div className="flex items-baseline justify-between gap-3 text-xs">
             {isFreeShipping(price) ? (
