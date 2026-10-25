@@ -75,3 +75,13 @@ ESLint zmienionych komponentów, scoped TypeScript i git diff --check poprawne. 
 ## Poprawa zdjęcia MAI — 25.10.2026
 
 Zdjęcie hero mai-section-eight-image-one miało 212 × 255 px; API mediów producenta potwierdziło brak większego oryginału tego ujęcia. Przygotowano rekonstrukcję wysokiej rozdzielczości z imagegen na podstawie dokładnie tego zdjęcia, 1143 × 1376 px, z przezroczystością i zachowaniem frontalnego ujęcia, czterech przycisków oraz układu ekranu. Nowy plik mai-front-hq.webp dotyczy hero. Oryginały zachowane. Kontrola wizualna lokalnie; bez publikacji produkcyjnej.
+
+## Audyt rozdzielczości ProGlove — 25.10.2026
+
+Sprawdzono wszystkie statyczne media sześciu landingów i rozmiary galerii produktów. Pięć przykładowych ekranów MAI miało 212×255 / 256×212 px: widok pobierania korzysta teraz z mai-front-hq, pozostałe cztery z odrestaurowanych plików mai-screen-*-hq (około 1376 px dłuższego boku, przezroczystość). Każdy odtworzono oddzielnie w imagegen z dokładnym ekranem jako referencją; zachowano układ i treść ekranu oraz cztery przyciski. Nie podmieniono jednego ekranu na drugi.
+
+Dodatkowo wymieniono zdjęcia hero Basic (540×540) i LEO (667×507 z dużymi marginesami) na mark-basic-front-hq 1222×1287 i leo-front-hq 1003×1568. Oryginały zachowane. Kontrola konturów, oznaczeń, obudowy i proporcji z referencjami oraz w lokalnej przeglądarce.
+
+MARK 2: hero/porównanie 1280×960, zdjęcie pracy 1440×600, zdjęcia mocowań 800×800. MARK 3: hero 1280×960 i zdjęcie 1406×600. Display: hero 1280×960 i zdjęcie pracy 1440×600. Basic: pozostałe zdjęcia 1400×1400 i 800×891. LEO: pozostałe zdjęcia 1440×600 i 1280×960. MAI: zdjęcie pracy 1440×1098. Pliki te mają wystarczającą rozdzielczość dla widocznego obiektu i nie wymagają rekonstrukcji. Galeryjne obrazy produktów/akcesoriów mają 800×800. Nieużywane małe obrazki źródłowe nie są renderowane i nie były przerabiane. Plakatów oryginalnych animacji nie zastępowano generowanymi zdjęciami.
+
+Sprawdzono pięć zakładek MAI i nowe zdjęcia hero Basic/LEO w dużym widoku. Wszystkie zmiany lokalne, bez publikacji produkcyjnej.

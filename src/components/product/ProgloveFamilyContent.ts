@@ -20,7 +20,7 @@ export const progloveContent: Record<ProgloveModel,FamilyContent> = {
   final:'Podaj rodzaj i wielkość kodów oraz odległość, z której chcesz je odczytywać. Sprawdzimy, czy MARK 3 pasuje do Twoich zadań.',
  },
  'mark-basic': {
-  name:'MARK Basic',hero:'mark-basic-image',line:'Skanowanie towaru\nbez sięgania po skaner.',
+  name:'MARK Basic',hero:'mark-basic-front-hq',line:'Skanowanie towaru\nbez sięgania po skaner.',
   intro:'MARK Basic mocujesz na dłoni i uruchamiasz spustem w mocowaniu. Wybierz wersję do odczytu z bliska albo do pracy ze zmienną odległością od kodu.',
   facts:[['2 wersje','Standard Range i Multi Range'],['ok. 8000','Skanów na ładowaniu'],['39–40 g','Zależnie od wersji'],['IP54','Klasa ochrony obudowy']],movie:'mark-basic-hero-section-video-1920X1040',
   workTitle:'Do pakowania, inwentaryzacji\ni codziennej pracy w magazynie.',
@@ -50,7 +50,7 @@ export const progloveContent: Record<ProgloveModel,FamilyContent> = {
   ],
  },
  leo:{
-  name:'LEO',hero:'leo-benefit-image-1',line:'Lekki skaner\ndo etykiet z bliska.',
+  name:'LEO',hero:'leo-front-hq',line:'Lekki skaner\ndo etykiet z bliska.',
   intro:'LEO waży 35 g i odczytuje kody 1D oraz 2D. Sprawdza się przy pakowaniu, liczeniu towaru i przygotowywaniu zamówień.',
   facts:[['35 g','Masa skanera'],['1 h','Pełne ładowanie w stacji'],['ok. 4000','Skanów na ładowaniu'],['1D i 2D','Kody kreskowe i QR']],movie:'MARK-Leo-scanner_1',
   workTitle:'Odczytuj kody\npodczas pakowania i liczenia towaru.',
@@ -71,11 +71,11 @@ export const progloveContent: Record<ProgloveModel,FamilyContent> = {
   connect:'MAI może łączyć się z systemem bezpośrednio przez Wi-Fi 6 w pasmach 2,4 i 5 GHz. Może też pracować przez Bluetooth z Androidem (INSIGHT Mobile), iOS (SDK) lub bramką Gateway. Każdy sposób pracy wymaga odpowiedniej konfiguracji i integracji z aplikacją.',
   final:'Opisz, jakie zadania pracownik ma wykonywać na MAI i z jakiego systemu korzystasz. Pomożemy określić sposób integracji oraz dobrać opaskę i stację Gen 2.',
   choices:[
-   {title:'Pobieranie towaru',heading:'Lokalizacja, produkt i liczba sztuk.',text:'Pokaż pracownikowi miejsce pobrania, oznaczenie artykułu i wymaganą ilość. Kolejne informacje przesyła Twój system.',detail:'Układ ekranu można dopasować do zadania.',image:'mai-section-eight-image-one'},
-   {title:'Zmiana ilości',heading:'Potwierdź lub popraw ilość.',text:'Pracownik może wpisać liczbę sztuk na ekranie, zamiast sięgać po osobny terminal.',detail:'Obsługa danych wymaga integracji z aplikacją.',image:'mai-section-eight-image-two'},
-   {title:'Zgłoszenie problemu',heading:'Zgłoś brak towaru lub inną niezgodność.',text:'Przycisk na ekranie może przekazać do systemu informację o pustej lokalizacji albo problemie z produktem.',detail:'Rodzaje zgłoszeń ustalasz w konfiguracji procesu.',image:'mai-section-eight-image-three'},
-   {title:'Wpisywanie danych',heading:'Wprowadź dane bez dodatkowego urządzenia.',text:'Klawiatura ekranowa pozwala wpisać informacje wymagane przez aplikację, np. dane logowania.',detail:'Zakres dostępnych pól zależy od aplikacji.',image:'mai-section-eight-image-four'},
-   {title:'Kolejne zamówienie',heading:'Przejdź do następnego zadania.',text:'Po zakończeniu pracy aplikacja może wyświetlić podsumowanie lub listę kolejnych zamówień.',detail:'Widoki i przejścia wymagają skonfigurowania w systemie.',image:'mai-section-eight-image-five'},
+   {title:'Pobieranie towaru',heading:'Lokalizacja, produkt i liczba sztuk.',text:'Pokaż pracownikowi miejsce pobrania, oznaczenie artykułu i wymaganą ilość. Kolejne informacje przesyła Twój system.',detail:'Układ ekranu można dopasować do zadania.',image:'mai-front-hq'},
+   {title:'Zmiana ilości',heading:'Potwierdź lub popraw ilość.',text:'Pracownik może wpisać liczbę sztuk na ekranie, zamiast sięgać po osobny terminal.',detail:'Obsługa danych wymaga integracji z aplikacją.',image:'mai-screen-two-hq'},
+   {title:'Zgłoszenie problemu',heading:'Zgłoś brak towaru lub inną niezgodność.',text:'Przycisk na ekranie może przekazać do systemu informację o pustej lokalizacji albo problemie z produktem.',detail:'Rodzaje zgłoszeń ustalasz w konfiguracji procesu.',image:'mai-screen-three-hq'},
+   {title:'Wpisywanie danych',heading:'Wprowadź dane bez dodatkowego urządzenia.',text:'Klawiatura ekranowa pozwala wpisać informacje wymagane przez aplikację, np. dane logowania.',detail:'Zakres dostępnych pól zależy od aplikacji.',image:'mai-screen-four-hq'},
+   {title:'Kolejne zamówienie',heading:'Przejdź do następnego zadania.',text:'Po zakończeniu pracy aplikacja może wyświetlić podsumowanie lub listę kolejnych zamówień.',detail:'Widoki i przejścia wymagają skonfigurowania w systemie.',image:'mai-screen-five-hq'},
   ],
  },
 }
