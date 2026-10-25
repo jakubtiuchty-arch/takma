@@ -57,6 +57,7 @@ const navigation: NavItem[] = [
       { name: 'Kioski samoobsługowe', href: '/kioski-samoobslugowe' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
       { name: 'Terminale naramienne', href: '/terminale-naramienne' },
+      { name: 'Terminale dla służby zdrowia', href: '/terminale-dla-sluzby-zdrowia' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },

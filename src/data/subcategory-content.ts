@@ -11,6 +11,7 @@ import { rfidTerminalContent } from './rfid-terminal-category'
 import { wearableTerminalContent } from './wearable-terminal-category'
 import { healthcarePrinterContent } from './healthcare-printer-category'
 import { healthcareScannerContent } from './healthcare-scanner-category'
+import { healthcareTerminalContent } from './healthcare-terminal-category'
 import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
 // Rich content for subcategory pages (SEO/AEO/GEO)
@@ -141,6 +142,7 @@ export const subcategoryContent: Record<string, SubcategoryRichContent> = {
   'terminale-naramienne': wearableTerminalContent,
   'drukarki-dla-sluzby-zdrowia': healthcarePrinterContent,
   'skanery-dla-sluzby-zdrowia': healthcareScannerContent,
+  'terminale-dla-sluzby-zdrowia': healthcareTerminalContent,
   'uchwyty-rfid': rfidSledContent,
   'czytniki-rfid': rfidReaderContent,
   'biurkowe-drukarki-etykiet': {

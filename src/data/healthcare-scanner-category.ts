@@ -163,7 +163,7 @@ export const healthcareScannerContent: SubcategoryRichContent = {
     },
     {
       question: 'Gdzie są drukarki i opaski do identyfikacji pacjentów?',
-      answer: 'Drukarki etykiet i opasek przeznaczone dla placówek medycznych zebrano na stronie [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia). Opaski Z-Band znajdują się w dziale [opaski identyfikacyjne](/opaski-identyfikacyjne), a stacje, podstawki i przewody — w dziale [akcesoria do skanerów](/akcesoria-do-skanerow).',
+      answer: 'Drukarki etykiet i opasek przeznaczone dla placówek medycznych zebrano na stronie [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia). Opaski Z-Band znajdują się w dziale [opaski identyfikacyjne](/opaski-identyfikacyjne), a stacje, podstawki i przewody — w dziale [akcesoria do skanerów](/akcesoria-do-skanerow). Terminale mobilne z wbudowanym skanerem dla placówek medycznych są na stronie [terminale dla służby zdrowia](/terminale-dla-sluzby-zdrowia).',
     },
   ],
   howToSteps: [

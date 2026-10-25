@@ -23,6 +23,9 @@ import { healthcareScannerCategory } from './healthcare-scanner-category'
 import { zebraHcScanners } from './zebra-hc-scanners'
 import { honeywellSocketHcScanners } from './honeywell-socket-hc-scanners'
 import { datalogicNewlandHcScanners } from './datalogic-newland-hc-scanners'
+import { healthcareTerminalCategory } from './healthcare-terminal-category'
+import { honeywellHcTerminals } from './honeywell-hc-terminals'
+import { datalogicHcTerminals } from './datalogic-hc-terminals'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -545,6 +548,7 @@ export const subcategories: Subcategory[] = [
   rfidPrinterCategory,
   rfidTerminalCategory,
   wearableTerminalCategory,
+  healthcareTerminalCategory,
   rfidSledCategory,
   rfidReaderCategory,
   {
@@ -28058,7 +28062,7 @@ Typowe zastosowania kliniczne: **BCMA (Bar Code Medication Administration)** —
 
 Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i częściowo z TC22/TC27 (baterie BTRY-TC2L-2X, stacje CRD-TC2L) — jeden ekosystem akcesoriów dla mieszanej floty szpitalnej (oddziały + administracja). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Rekomendowana usługa: Zebra OneCare Special Value (SV) z naprawami uszkodzeń mechanicznych. Drukarka opasek pacjentów do skanowania przez HC20: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Pełna dokumentacja techniczna i lista akcesoriów na zebra.com oraz [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
-    subcategoryIds: ['terminale-mobilne'],
+    subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
     manufacturerId: 'zebra',
     priceFrom: 3422.19,
@@ -28258,7 +28262,7 @@ Typowe zastosowania: **opieka domowa** — pielęgniarka środowiskowa odwiedza 
 
 Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje dokujące CRD-HC2L5L-BS1CO/2S1D1B/BS5CO, ładowarka SAC-HC2L5L-4SCHG, klipsy, paski na rękę i folie ochronne. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant Wi-Fi-only bez 5G: [Zebra HC20](/produkt/zebra-hc20). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
-    subcategoryIds: ['terminale-mobilne'],
+    subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html',
     manufacturerId: 'zebra',
     priceFrom: 3673.81,
@@ -28461,7 +28465,7 @@ Typowe zastosowania: **telekonsultacje przy łóżku pacjenta** — internista w
 
 Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące (1-slot, 2-slot ShareCradle, 5-slot), ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant z 5G + GPS dla telekonsultacji w karetce: [Zebra HC55](/produkt/zebra-hc55). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
-    subcategoryIds: ['terminale-mobilne'],
+    subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html',
     manufacturerId: 'zebra',
     priceFrom: 5676.03,
@@ -28666,7 +28670,7 @@ Typowe zastosowania: **karetki S/P telekonsultacja** — paramedyk transportują
 
 Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące, ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant Wi-Fi-only z telemedycyną (bez 5G): [Zebra HC50](/produkt/zebra-hc50). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
     categoryId: 'terminale-mobilne',
-    subcategoryIds: ['terminale-mobilne'],
+    subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
     manufacturerId: 'zebra',
     priceFrom: 5927.71,
@@ -95545,6 +95549,17 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Terminale dla ochrony zdrowia (Honeywell CT37 HC, Datalogic Memor 12 HC / 17 HC, CipherLab RS38H) i ich akcesoria HC
+// trafiają do podkategorii według `subcategoryIds`, w tym do „Terminale dla służby zdrowia” i działów akcesoriów.
+for (const subcategory of subcategories) {
+  const cipherlabHc = [...cipherlabProducts, ...cipherlabAccessories].filter(product => product.id === 'cipherlab-rs38h' || product.relatedProducts?.includes('cipherlab-rs38h'))
+  const additions = [...honeywellHcTerminals, ...datalogicHcTerminals, ...cipherlabHc].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95607,6 +95622,8 @@ const rawProductList: Product[] = [
   ...zebraHcScanners,
   ...honeywellSocketHcScanners,
   ...datalogicNewlandHcScanners,
+  ...honeywellHcTerminals,
+  ...datalogicHcTerminals,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

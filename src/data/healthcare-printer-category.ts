@@ -152,7 +152,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
     },
     {
       question: 'Jak drukarka łączy się z systemem szpitalnym?',
-      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia) oraz terminale mobilne dla służby zdrowia, np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50).',
+      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia) oraz [terminale dla służby zdrowia](/terminale-dla-sluzby-zdrowia), np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50).',
     },
     {
       question: 'Czy drukarki dla służby zdrowia mają Wi-Fi i Bluetooth?',

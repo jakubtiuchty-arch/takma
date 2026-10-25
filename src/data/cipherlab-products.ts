@@ -507,11 +507,14 @@ export const cipherlabProducts: Product[] = [
     "name": "CipherLab RS38H",
     "seoH1": "CipherLab RS38H",
     "seoTitle": "CipherLab RS38H — terminal medyczny do dezynfekcji, 5G",
-    "seoDescription": "CipherLab RS38H — terminal mobilny dla szpitali: obudowa odporna na ponad 24 środki czyszczące i UV-C, przycisk SOS, skaner SE4720, 5G i Wi-Fi 6E.",
+    "seoDescription": "CipherLab RS38H — terminal mobilny dla szpitali: obudowa odporna na ponad 24 środki czyszczące i UV-C, przycisk SOS, skaner SE4720, 5G i Wi-Fi 6E. AS3858SF4NSGH.",
     "shortDescription": "CipherLab RS38H — terminal mobilny do placówek ochrony zdrowia. Obudowa odporna na dezynfekcję, skaner SE4720, ekran 6 cali, 5G i przycisk SOS.",
-    "description": "RS38H to terminal mobilny dla pielęgniarek, personelu laboratorium i rejestracji. Skanuje opaski pacjentów i probówki, a obudowa znosi częstą dezynfekcję. Zielony celownik LED skanera SE4720 jest bezpieczny w pracy przy pacjencie.\n\n## Ponad 24 środki czyszczące i światło UV-C\n\nObudowę przetestowano z ponad 24 środkami czyszczącymi, w tym z alkoholem izopropylowym i medycznym. Konstrukcja znosi też sterylizację światłem UV-C. Zaślepka USB-C chroni złącze podczas dezynfekcji. Baterię wymienia się bez zdejmowania akcesoriów.\n\n## Przycisk SOS, OCR i stacja Workstation Connect\n\nCzerwony przycisk SOS można zaprogramować do wezwania pomocy w nagłej sytuacji. Pic 'n Fill OCR przepisuje pomiary z monitorów, na przykład ciśnienie krwi i poziom cukru. Po włożeniu do stacji Workstation Connect obraz terminala pojawia się na monitorze wózka pielęgniarskiego.\n\nBateria 4500 mAh daje ponad 14 godzin pracy, a wymiana hot swap pozwala pracować przez całą dobę. Terminal ma 5G, Wi-Fi 6E, Bluetooth 5.2, NFC oraz nano SIM i eSIM. Obudowa IP65 i IP68 wytrzymuje upadki z 1,5 m na płytki ułożone na betonie. Aparat tylny ma 16 MP, a przedni 8 MP.\n\nDo RS38H oferowane są [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01), [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01), [klips ARS38CLIP0001](/produkt/cipherlab-ars38clip0001) i [pasek na dłoń ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\nWersję do magazynu i logistyki z modułem SE4770 lub SE5500 oferuje [CipherLab RS38](/produkt/cipherlab-rs38).",
+    "description": "RS38H to terminal mobilny dla pielęgniarek, personelu laboratorium i rejestracji. Skanuje opaski pacjentów i probówki, a obudowa znosi częstą dezynfekcję. Zielony celownik LED skanera SE4720 jest bezpieczny w pracy przy pacjencie.\n\n## Ponad 24 środki czyszczące i światło UV-C\n\nObudowę przetestowano z ponad 24 środkami czyszczącymi, w tym z alkoholem izopropylowym i medycznym. Konstrukcja znosi też sterylizację światłem UV-C. Zaślepka USB-C z oferty akcesoriów chroni złącze podczas dezynfekcji. Baterię wymienia się bez zdejmowania akcesoriów.\n\n## Przycisk SOS, OCR i stacja Workstation Connect\n\nCzerwony przycisk SOS można zaprogramować do wezwania pomocy w nagłej sytuacji. Pic 'n Fill OCR przepisuje pomiary z monitorów, na przykład ciśnienie krwi i poziom cukru. Po połączeniu ze [stacją roboczą ARS38WCCNHE01](/produkt/cipherlab-ars38wccnhe01) obraz z RS38H można przenieść na monitor wózka pielęgniarskiego.\n\nBateria 4500 mAh daje ponad 14 godzin pracy, a wymiana hot swap pozwala pracować przez całą dobę. Terminal ma 5G, Wi-Fi 6E, Bluetooth 5.2, NFC oraz nano SIM i eSIM. Obudowa ma szczelność IP65 i IP68, a terminal znosi wielokrotne upadki na płytki ułożone na betonie z wysokości 1,5 m. Z tyłu jest aparat 16 MP, a z przodu 8 MP.\n\nDo RS38H oferowane są [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01), [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01), [zapasowa bateria KBRS381455502](/produkt/cipherlab-kbrs381455502), [klips ARS38CLIP0001](/produkt/cipherlab-ars38clip0001) i [pasek na dłoń ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\nWersję do magazynu i logistyki z modułem SE4770 lub SE5500 oferuje [CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "terminale-mobilne",
-    "subcategoryIds": [],
+    "subcategoryIds": [
+      "terminale-mobilne",
+      "terminale-dla-sluzby-zdrowia"
+    ],
     "manufacturerId": "cipherlab",
     "images": [
       "/images/products/cipherlab-rs38h-front.webp",
@@ -537,7 +540,7 @@ export const cipherlabProducts: Product[] = [
     "specifications": [
       {
         "name": "System operacyjny",
-        "value": "Android 13, GMS; możliwość aktualizacji do Androida 18"
+        "value": "Android 13, GMS; możliwość aktualizacji do Androida 15"
       },
       {
         "name": "Pamięć",
@@ -557,7 +560,7 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "name": "Bateria",
-        "value": "4500 mAh, wymienna"
+        "value": "4500 mAh, wymienna w trybie hot swap"
       },
       {
         "name": "Klasa szczelności",
@@ -600,14 +603,17 @@ export const cipherlabProducts: Product[] = [
     "relatedAccessories": [
       "cipherlab-ars384sbhce01",
       "cipherlab-ars38chcnhe01",
+      "cipherlab-ars38wccnhe01",
+      "cipherlab-kbrs381455502",
       "cipherlab-ars38clip0001",
       "cipherlab-ars38hs000001",
       "cipherlab-bpower0000142"
     ],
     "relatedProducts": [
-      "cipherlab-rs20",
-      "cipherlab-rs36",
-      "cipherlab-rs38"
+      "cipherlab-rs38",
+      "zebra-hc55",
+      "datalogic-memor-17-hc",
+      "honeywell-ct37-hc"
     ],
     "applications": [
       "Skanowanie opasek identyfikacyjnych pacjentów",
@@ -617,7 +623,7 @@ export const cipherlabProducts: Product[] = [
     "faq": [
       {
         "question": "Jakimi środkami można czyścić RS38H?",
-        "answer": "Obudowa znosi ponad 24 środki czyszczące, między innymi alkohol izopropylowy i medyczny, oraz sterylizację UV-C. Na czas dezynfekcji złącze USB-C zamyka zaślepka."
+        "answer": "CipherLab przetestował RS38H z ponad 24 środkami czyszczącymi, między innymi z alkoholem izopropylowym i medycznym, oraz ze sterylizacją światłem UV-C. Na czas dezynfekcji złącze USB-C zamyka zaślepka, która jest akcesorium."
       },
       {
         "question": "Jak długo pracuje RS38H na jednej baterii?",
@@ -625,12 +631,12 @@ export const cipherlabProducts: Product[] = [
       },
       {
         "question": "Czy RS38H wyświetla obraz na większym monitorze?",
-        "answer": "Tak, po włożeniu do stacji Workstation Connect. Ekran terminala pojawia się wtedy na monitorze wózka pielęgniarskiego, co ułatwia wpisywanie danych do dokumentacji pacjenta."
+        "answer": "Tak, po połączeniu ze [stacją roboczą ARS38WCCNHE01](/produkt/cipherlab-ars38wccnhe01). Ekran terminala można wtedy wyświetlić na monitorze wózka pielęgniarskiego, co ułatwia wpisywanie danych do dokumentacji pacjenta."
       }
     ],
     "compatibleAccessories": [],
     "createdAt": "2026-10-21",
-    "updatedAt": "2026-10-22"
+    "updatedAt": "2026-10-25"
   },
   {
     "id": "cipherlab-rk26",
@@ -1628,6 +1634,122 @@ export const cipherlabAccessories: Product[] = [
     "updatedAt": "2026-10-22",
     "subcategoryIds": [
       "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "faq": []
+  },
+  {
+    "id": "cipherlab-ars38wccnhe01",
+    "slug": "cipherlab-ars38wccnhe01",
+    "name": "Stacja robocza CipherLab RS38H",
+    "seoH1": "Stacja Workstation Connect CipherLab RS38H z zasilaczem",
+    "seoTitle": "Stacja robocza CipherLab RS38H — Workstation Connect, ARS38WCCNHE01",
+    "seoDescription": "Stacja robocza Workstation Connect do terminala medycznego CipherLab RS38H. Obraz z terminala trafia na monitor wózka pielęgniarskiego. PN ARS38WCCNHE01.",
+    "shortDescription": "Stacja robocza CipherLab RS38H — Workstation Connect Cradle w wersji dla ochrony zdrowia, z zasilaczem EU. PN ARS38WCCNHE01.",
+    "description": "Stacja ARS38WCCNHE01 to stacja robocza Workstation Connect Cradle do terminala RS38H w wersji dla ochrony zdrowia. W zestawie jest zasilacz EU.\n\n## Ekran RS38H na monitorze wózka\n\nGdy [RS38H](/produkt/cipherlab-rs38h) jest połączony ze stacją roboczą, obraz z terminala można wyświetlić na monitorze wózka pielęgniarskiego. Duży ekran ułatwia wpisywanie danych, pracę w rozbudowanych aplikacjach i przeglądanie dokumentacji, np. przy przyjęciu i wypisie pacjenta.\n\nDo samego ładowania terminala służy [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01). Stacja robocza do terminala [RS38](/produkt/cipherlab-rs38) ma numer [ARS38WCCNNE01](/produkt/cipherlab-ars38wccnne01).",
+    "categoryId": "akcesoria",
+    "manufacturerId": "cipherlab",
+    "images": [
+      "/images/products/placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "Stacja robocza Workstation Connect CipherLab RS38H ARS38WCCNHE01"
+    ],
+    "tags": [
+      "healthcare"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 1789.45,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "ARS38WCCNHE01"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CipherLab RS38H"
+      },
+      {
+        "name": "Liczba gniazd",
+        "value": "1 terminal"
+      },
+      {
+        "name": "Zasilanie",
+        "value": "Zasilacz EU w zestawie"
+      }
+    ],
+    "downloads": [],
+    "relatedProducts": [
+      "cipherlab-rs38h"
+    ],
+    "applications": [
+      "Praca z RS38H przy wózku pielęgniarskim z monitorem"
+    ],
+    "compatibleAccessories": [],
+    "createdAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "subcategoryIds": [
+      "stacje-ladowarki-terminali",
+      "akcesoria-do-terminali"
+    ],
+    "faq": []
+  },
+  {
+    "id": "cipherlab-kbrs381455502",
+    "slug": "cipherlab-kbrs381455502",
+    "name": "Bateria 4500 mAh CipherLab RS38H",
+    "seoH1": "Bateria zapasowa 4500 mAh CipherLab RS38H",
+    "seoTitle": "Bateria CipherLab RS38H 4500 mAh — KBRS381455502",
+    "seoDescription": "Zapasowa bateria 4500 mAh do terminala medycznego CipherLab RS38H w wersji dla ochrony zdrowia. Wymiana hot swap w trakcie pracy. PN KBRS381455502.",
+    "shortDescription": "Bateria CipherLab RS38H — zapasowa bateria 4500 mAh w wersji dla ochrony zdrowia, wymieniana w trybie hot swap. PN KBRS381455502.",
+    "description": "KBRS381455502 to zapasowa bateria 4500 mAh przeznaczona dla RS38H, terminala CipherLab dla placówek medycznych.\n\n## Wymiana w trakcie pracy\n\nJedna bateria wystarcza [RS38H](/produkt/cipherlab-rs38h) na ponad 14 godzin pracy. Wymiana w trybie hot swap nie przerywa pracy terminala, a przy zmianie baterii nie trzeba zdejmować paska ani klipsa. Z naładowanymi bateriami w zapasie terminal może pracować na kolejnych zmianach. W terminalu bateria ładuje się do pełna w 2 godziny z zasilaczem QC lub PD o mocy powyżej 27 W.\n\nKilka zapasowych baterii naraz ładuje [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01).",
+    "categoryId": "akcesoria",
+    "manufacturerId": "cipherlab",
+    "images": [
+      "/images/products/placeholder.svg"
+    ],
+    "imageDescriptions": [
+      "Bateria zapasowa 4500 mAh CipherLab RS38H KBRS381455502"
+    ],
+    "tags": [
+      "healthcare"
+    ],
+    "availability": "unavailable",
+    "priceFrom": 472.7,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "KBRS381455502"
+      },
+      {
+        "name": "Zgodność",
+        "value": "CipherLab RS38H"
+      },
+      {
+        "name": "Pojemność",
+        "value": "4500 mAh"
+      },
+      {
+        "name": "Wymiana",
+        "value": "Hot swap, bez wyłączania terminala"
+      }
+    ],
+    "downloads": [],
+    "relatedProducts": [
+      "cipherlab-rs38h"
+    ],
+    "applications": [
+      "Zapasowa bateria do pracy RS38H na kolejnych zmianach"
+    ],
+    "compatibleAccessories": [],
+    "createdAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "subcategoryIds": [
+      "baterie-do-terminali",
       "akcesoria-do-terminali"
     ],
     "faq": []

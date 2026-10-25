@@ -172,6 +172,8 @@ export async function middleware(request: NextRequest) {
       'cipherlab-ars38wccnne01',
       'cipherlab-ars384sbhce01',
       'cipherlab-ars38chcnhe01',
+      'cipherlab-ars38wccnhe01',
+      'cipherlab-kbrs381455502',
       'cipherlab-ars38clip0001',
       'cipherlab-ars38hs000001',
       'cipherlab-ars35pstnnn01',

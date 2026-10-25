@@ -2241,3 +2241,22 @@ categoryFilters['skanery-dla-sluzby-zdrowia'] = [
     { value: 'Światło na kodzie', slugs: ['zebra-ds2208-hc', 'zebra-ds2278-hc', 'zebra-ds4608-hc', 'zebra-ds8208-hc', 'zebra-ds8288-hc', 'zebra-cs60-hc', 'datalogic-gryphon-gd4690-hc', 'datalogic-gryphon-gd4620-hc', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc'] },
   ] },
 ]
+
+// Terminale dla ochrony zdrowia (Zebra HC2X/HC5X, Honeywell CT37 HC, Datalogic Memor 12 HC / 17 HC, CipherLab RS38H):
+// łączność i przycisk alarmowy po slugach, bo karty pochodzą z kilku plików i mają różne nazwy wierszy specyfikacji.
+// Honeywell CT37 HC ma warianty Wi-Fi i 5G, więc jest w obu opcjach łączności.
+categoryFilters['terminale-dla-sluzby-zdrowia'] = [
+  { specKey: 'producent', label: 'Producent', derived: [
+    { value: 'Zebra', manufacturer: 'zebra' },
+    { value: 'Honeywell', manufacturer: 'honeywell' },
+    { value: 'Datalogic', manufacturer: 'datalogic' },
+    { value: 'CipherLab', manufacturer: 'cipherlab' },
+  ] },
+  { specKey: 'lacznosc', label: 'Łączność', description: 'Sieć, z którą terminal przesyła dane.\n• Tylko Wi-Fi — praca w budynku z siecią bezprzewodową placówki\n• Wi-Fi + 5G — także poza budynkiem, np. w opiece domowej i transporcie pacjentów; karta nano SIM i eSIM', derived: [
+    { value: 'Tylko Wi-Fi', slugs: ['zebra-hc20', 'zebra-hc50', 'honeywell-ct37-hc', 'datalogic-memor-12-hc'] },
+    { value: 'Wi-Fi + 5G', slugs: ['zebra-hc25', 'zebra-hc55', 'honeywell-ct37-hc', 'datalogic-memor-17-hc', 'cipherlab-rs38h'] },
+  ] },
+  { specKey: 'alarm', label: 'Przycisk alarmowy', description: 'Czerwony przycisk w obudowie terminala, który można zaprogramować, np. do wybrania numeru albo uruchomienia aplikacji. W Datalogic Memor 12 HC i 17 HC alarm uruchamia się przyciskiem programowalnym lub gestem.', derived: [
+    { value: 'W obudowie terminala', slugs: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55', 'cipherlab-rs38h'] },
+  ] },
+]

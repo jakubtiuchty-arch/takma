@@ -67,6 +67,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
 - Terminale mobilne: https://www.takma.com.pl/terminale-mobilne
   - Terminale Honeywell: https://www.takma.com.pl/terminale-honeywell
   - Terminale naramienne (komputery noszone na nadgarstku Zebra WT5400 i WT6400): https://www.takma.com.pl/terminale-naramienne
+  - Terminale dla służby zdrowia: https://www.takma.com.pl/terminale-dla-sluzby-zdrowia — dotykowe terminale mobilne z Androidem i ekranem 6" w wersjach dla ochrony zdrowia: Zebra HC20 i HC50 (Wi-Fi) oraz HC25 i HC55 (5G), Honeywell CT37 HC (Wi-Fi albo 5G), Datalogic Memor 12 HC (Wi-Fi) i Memor 17 HC (5G) oraz CipherLab RS38H (5G). Obudowy przygotowane do dezynfekcji środkami z listy producenta; czerwony przycisk alarmowy w Zebra HC2X/HC5X i CipherLab RS38H; ładowanie bezprzewodowe Qi w Datalogic Memor 12 HC i 17 HC. Skanery: https://www.takma.com.pl/skanery-dla-sluzby-zdrowia, drukarki opasek i etykiet: https://www.takma.com.pl/drukarki-dla-sluzby-zdrowia
 - Skanery kodów kreskowych: https://www.takma.com.pl/skanery-kodow-kreskowych
   - Skanery Datalogic 1D, 2D i DPM: https://www.takma.com.pl/skanery-datalogic
   - Skanery ProGlove noszone na grzbiecie dłoni (LEO, MARK Basic, MARK 2, MARK 3, MARK Display, MAI): https://www.takma.com.pl/skanery-proglove
