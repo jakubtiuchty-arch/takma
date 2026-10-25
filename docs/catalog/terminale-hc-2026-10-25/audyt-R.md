@@ -1,0 +1,69 @@
+# Audyt R — Zebra HC20 / HC25 / HC50 / HC55, 7 akcesoriów HC, sprawy (a)–(c), komórki Zebry w kategorii (25.10.2026)
+
+Gałąź `audyt/zebra-hc-r` z `produkt/zebra-hc-terminale` (2da544ef, karty przepisane przez Z1). Audyt niezależny: każde twierdzenie widoczne dla klienta porównane z dokumentem producenta, bez opierania się na `Z1.md`. Audyt przed wdrożeniem; po wdrożeniu właściciel sprawdza karty na produkcji.
+
+## Źródła (pobrane lub sprawdzone 25.10.2026)
+| Skrót | Dokument | Data / wersja | Kopia |
+|---|---|---|---|
+| SS | Zebra HC2X/HC5X Mobile Computers Product Spec Sheet EN (PL pomocniczo) | 05/14/2025 | `public/downloads/zebra-hc2x-hc5x-karta-katalogowa-en.pdf` (identyczna bajtowo z `$SP/hc4/src/zebra/hc2x-hc5x-spec-sheet-en-us.pdf`); tekst `$SP/hc4/src/audit/zebra-hc2x-hc5x-karta-katalogowa-en.txt` |
+| AG | HC2X / HC5X Healthcare Accessories Guide | Revised July 2026 | `public/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf`; tekst `…/audit/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.txt` |
+| CL | Sanitize for Safety — Cleaning and disinfecting guidelines for Zebra healthcare mobile computers and tablets | 08/05/2024 | `public/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf` |
+| ZP | zebra.com/us/en/…/hc2x-hc5x-series/hc20.html, hc25, hc50, hc55 (opis, „Commonly Used For”, kolor, OS) oraz wersje pl/pl | 25.10.2026 | `…/audit/us_hc*.html/.txt`, `pl_hc*.html/.txt` |
+| AV | Zebra „Supported Android Versions” (US EN i PL) | 25.10.2026 | `…/audit/android-us.txt`, `android-versions2.txt` |
+| RG | RFD40 Accessory Guide (Zebra, PDF z 15.09.2026) | 2026 | `public/instrukcje/zebra-rfd40-akcesoria-en.pdf` |
+| D1 / D2 | Jarltech (`jarltech.com/en/zebra-hc20…hc55`), The Barcode Warehouse (strony PN) — tylko fakty o PN | 25.10.2026 | `…/audit/dist/` |
+| API | `https://www.takma.com.pl/api/stock`, 2 wywołania, decyduje drugie | 25.10.2026 | `$SP/hc4/audR-api/r2-*.json` |
+
+## Tabela ustaleń
+| ID | Karta | Pole | Było | Jest | Źródło | Kategoria |
+|---|---|---|---|---|---|---|
+| R01 | zebra-hc20 | description, akapit 1 | „…lekarzy, farmaceutów, opiekunów domowych…” | „…lekarzy, techników laboratoryjnych i farmaceutycznych, opiekunów domowych…” | SS s. 3, „Applications — Clinical: Lab/Pharmacist technicians” (txt l. 163) | NIEPRECYZYJNE |
+| R02 | zebra-hc20 | faq 1 (przycisk alarmowy) | „…ma jedną, stałą rolę: wezwanie pomocy.” | „To osobny, programowalny przycisk do wzywania pomocy w nagłej lub zagrażającej sytuacji.” | SS s. 1: „programmable dedicated button … in emergency or duress situations” (l. 25) | NIEPRECYZYJNE |
+| R03 | zebra-hc20 | faq 6, pytanie | „Czy HC20 może zastąpić telefon oddziałowy?” | „Czy HC20 może pracować jako telefon centrali PBX?” | SS s. 3: „double as fully-featured and customizable PBX mobile handsets (optional)” (l. 152) | SPOZA |
+| R04 | zebra-hc20, hc25, hc50, hc55 | imageDescriptions (zdjęcie tyłu `hc20_2.png`) | „…czerwony przycisk alarmowy i pokrywa baterii” | „…czerwony przycisk alarmowy i wymienna bateria w tylnej ściance” | zdjęcie = zebra.com `web003/hc20-hc50-photography-website-back-facing-scanner.jpg`; AG s. 4 — zdjęcie BTRY-HC2L5L-2XMAXB to ta sama tylna ścianka z logo | NIEPRECYZYJNE |
+| R05 | zebra-hc25 | faq 2 (pasma) | „Wersja na rynki poza Ameryką Północną i Chinami … LTE w pasmach od B1 do B71, w tym B20 i B28” | „…poza Ameryką Północną, Chinami i Japonią … LTE w 19 pasmach, m.in. B1, B3, B7, B20 i B28” | SS s. 4 WWAN: North America / Rest of World / China/Japan (l. 222–226); lista ROW ma 19 pasm LTE, nie ciągły zakres | SPRZECZNE |
+| R06 | zebra-hc25 | faq 3 (sieć prywatna) | „…sieci hybrydowe łączące infrastrukturę placówki z siecią operatora” | „…Zebra przeznacza ten model także do współpracy klinicznej w szybkich prywatnych i hybrydowych systemach 5G” | SS s. 2: „high-speed private and hybrid 5G systems” (l. 98–99) — bez definicji sieci hybrydowej | SPOZA |
+| R07 | zebra-hc25 | faq 5, pytanie | „Jak noszić HC25…” | „Jak nosić HC25…” | — | STYL |
+| R08 | zebra-hc25 | variants[WCMTB-H25B6DCJ1-A6].attributes.Skaner + dymek | „Aparat” | „Brak (aparat)”; dymek: „Brak (aparat) — wersja bez skanera; kody okazjonalnie odczytuje tylny aparat…” | SS przypisy 3–4 (l. 265–267); D1 „no Scanner”, D2 „No Scanner” | NIEPRECYZYJNE |
+| R09 | zebra-hc50 | description, akapit 2 | „Najważniejszą cechą zasilania jest wymiana baterii…” | „Zasilanie wyróżnia wymiana baterii…” | zasada: bez superlatyw | STYL |
+| R10 | zebra-hc55 | description, akapit 3 | „Pamięć 8 GB / 128 GB zapewnia płynne działanie aplikacji klinicznych” | „Większa pamięć, 8 GB / 128 GB, poprawia wydajność aplikacji” | ZP HC55: „Expanded memory improves app performance” (us_hc55.txt l. 824) | NIEPRECYZYJNE |
+| R11 | zebra-hc55 | description, akapit 4 | „Obudowa jest odporna na częstą dezynfekcję zatwierdzonymi środkami.” | „Obudowa jest przygotowana do częstej dezynfekcji środkami zatwierdzonymi przez Zebrę.” | SS s. 1: „Built for Constant Disinfecting”, „disinfectant-ready” (l. 42–43); termin „odporna” zarezerwowany dla „chemical resistant” | NIEPRECYZYJNE |
+| R12 | nowa karta `zebra-zaslepka-usb-c-hc20-hc50` (id `zebra-usbc-plug-hc2l5l`) | cała karta | — | SG-HC2L5L-USBCADP5: 5 niebieskich zaślepek zamiennych, zdjęcie z AG, downloads AG + CL, SEO z PN; API: found, available | AG s. 10 (l. 386–390); CL s. 4 (l. 170–174); SS s. 1 (zaślepka a szczeliny) | sprawa (a) |
+| R13 | zebra-hc20, hc25, hc50, hc55 | relatedAccessories | brak zaślepki | + `zebra-usbc-plug-hc2l5l` | AG s. 10 | sprawa (a) |
+| R14 | 7 akcesoriów HC | seoTitle, seoDescription | brak — tytuł z szablonu z ceną („… \| 363,72 zł”) | marka + model + PN, bez cen (jak akcesoria Datalogic i Honeywell HC) | zasada: bez cen w SEO; memory „słowa kluczowe” | STYL |
+| R15 | zebra-stacja-dokujaca-5slot-hc20-hc50 | shortDescription | „…montaż w szafie rack 19" lub na ścianie.” | „…; z uchwytem BRKT-SCRD-SMRK-01 montaż w szafie rack 19" lub na ścianie.” | AG s. 3–4: „via mounting bracket SKU# BRKT-SCRD-SMRK-01” (l. 59) | NIEPRECYZYJNE |
+| R16 | zebra-stacja-dokujaca-2slot-hc20-hc50 | shortDescription | „…ładuje jeden terminal i jedną zapasową baterię.” | „…gniazdo na terminal i drugie gniazdo na zapasową baterię.” | wspólny 6-gram z 3 kartami stacji MC33/MC9400 | STYL |
+| R17 | kategoria `/terminale-dla-sluzby-zdrowia` | tabela, Zebra HC25, kolumna „Skaner” | „SE4720, białe oświetlenie, zielony celownik” | „…; wersja bez skanera — odczyt aparatem” | karta HC25 (WCMTB-H25B6DCJ1-A6); SS przypis 3 | NIEPRECYZYJNE |
+| R18 | kategoria | FAQ o gwarancji | „Zebra oferuje dodatkowo kontrakty … Special Value dla HC20 i HC25 oraz Essential i Select dla HC50 i HC55.” | „Zebra zaleca dodatkowo kontrakty … Essential lub Select dla HC50 i HC55. Przy zakupie HC50 albo HC55 w sklepie można dodać 3- lub 5-letni kontrakt Essential.” | SS s. 4 „Recommended Services” (l. 254–256); API: Z1AE-HC50XX/HC55XX-3C00/-5C00 found z `servicePlanPrice`, Z1AS-*, Z1AV-* not found | NIEPRECYZYJNE |
+
+## Sprawy otwarte Z1
+- **(a) Zaślepka USB-C SG-HC2L5L-USBCADP5** — AG (07/2026, s. 10) potwierdza ją dla HC2X/HC5X („Replacement USB-C plug that covers the bottom of HC2X / HC5X devices. Comes in a pack of 5. One plug should be included with each device”). API 2× found, available. Dodana karta (R12) i wpis w `relatedAccessories` czterech terminali (R13). Zdjęcie `SG-HC2L5L-USBCADP5.png` 800 × 800: render s. 10 AG (pdftocairo 400 dpi) + wycięcie birefnet, sprawdzone na ciemnym i białym tle; wymiary w `$SP/hc4/dims-audyt-R.json`.
+- **(b) RFD40: ADP-RFD40-TC2X-2R i CR40-1S0T-TC2-G-02** — RG (Zebra, 2026): tabela s. 3 „Zebra HC20/50 — Bluetooth Support: ADP-RFD40-TC2X-2R”, s. 7 „RFD40 Sled Bluetooth Adaptor for TC22/27 & HC20/50”, s. 18 „CR40-1S0T-TC2-G-02 … Charge Only Cradle with support for TC22/27 & HC20/50”. Zgodność z HC20 i HC50 potwierdzona; opisy w `rfd40-products.ts` są zgodne — bez zmian. HC25 i HC55 nie są w RG wymienione, więc nie dopisano. ZP: „RFID Capability: Yes with RFID sled attachment”.
+- **(c) Android** — AV (US EN i PL): HC20, HC25, HC50, HC55 — „Currently Available Android OS: A13, A14, A15”, „Final Supported Android OS: A16”. Specyfikacje i FAQ kart zgodne, bez zmian. ZP HC25 i HC55 piszą „Upgradeable to Android 16”, HC20 i HC50 odsyłają do AV — bez sprzeczności.
+
+## Sprawdzone bez uwag
+- **PN → konfiguracja**: WLMT0-H20B6BCJ1-A6 (Wi-Fi 6, SE4720, 6/64 GB, „rear alert button”, MDNA Professional, GMS, ROW), WCMTB-H25B6BCJ1-A6 (5G, Wi-Fi 6, SE4720, SIM + eSIM), WCMTB-H25B6DCJ1-A6 (5G, Wi-Fi 6, bez skanera), WLMT0-H50D8BBK1-A6 (Wi-Fi 6E, SE4720, 8/128 GB, 16 + 5 MP, hot swap, MDNA Enterprise), WCMTB-H55D8BBK1-A6 (5G, Wi-Fi 6E, SE4720, 8/128 GB, 16 + 5 MP, hot swap) — D1 + D2 zgodne.
+- **Ceny i dostępność** (API, drugie wywołanie): 5 wariantów terminali — available, `priceFrom` zgodne; akcesoria — 6 × available, SAC-HC2L5L-4SCHG on-order (0 szt. na stanie, 28 w dostawie); `servicePlans` HC50/HC55 = `servicePlanPrice` z API.
+- **Specyfikacje** (każda liczba z SS): CPU 5430 2,1 GHz; RAM/Flash; microSD 2 TB; ekran 6,0" 1080 × 2160, 450 nitów, Gorilla Glass; panel dotykowy; SE4720 białe/zielony; aparaty 16 MP / 5 MP (HC5X); przyciski; Red Duress Button z „emergency dialer”; audio; WLAN 802.11 a/b/g/n/ac/ax/d/h/i/r/k/v/w/mc, 2×2 MU-MIMO, 2402 Mb/s; zabezpieczenia i roaming; Bluetooth 5.2 klasa 2; NFC; USB 3.1 typu C; bateria 3800 mAh / 14,63 Wh, hot swap 60 s (HC5X); czujniki z zastrzeżeniem ciśnienia; IP68/IP65; 1,25 m MIL-STD-810H; 500 × 0,5 m; ESD; temperatury; wilgotność; 165 × 76,3 × 12,5 mm; 239/242 g; 30+ środków; RoHS/REACH; gwarancja 1 rok; WWAN ROW, Dual SIM/Dual Standby, VoLTE, NSA/SA, sieci prywatne; GNSS L1 + L5; Zebra DNA (Professional vs Enterprise), przypisy 5 i 7.
+- **Opisy** zdanie po zdaniu (po poprawkach R01, R09–R11) — zgodne z SS/ZP; Healthcare Blue (ZP), „5G backup” (ZP HC25), „In-home Caregiving” także dla HC20 (ZP HC20 „Commonly Used For”), przycisk z tyłu (AG s. 10, D2 „rear alert button”).
+- **FAQ**: dezynfekcja (CL: zaślepka przed czyszczeniem — HC20/HC50, bez rozpylania, składniki aktywne, wybielacz nie na stacjach, UV-C i przebarwienia), czasy ładowania i wymagane zasilacze (AG), Workstation Connect CRD-TC2L-1SNWS-01 (AG s. 11: HDMI, Ethernet, 4 × USB-A, 3,5 mm; zasilacz, przewód DC i sieciowy osobno), Device Tracker i licencje (AG s. 4), alternatywy innych marek (parametry zgodne z kartami CT37 HC, Memor 12/17 HC, RS38H w repo).
+- **comparison `HC2X_HC5X_COMPARISON`**, `variantAttributeTooltips` (poza R08), `relatedProducts` (dotykowe 6", Android, terminale HC), `applications`, `sameAs` (strony zebra.com — 200).
+- **Downloads**: 4 pliki istnieją, rozmiary realne (439 KB, 494 KB, 873 KB, 2,0 MB). Instrukcji PL na serwis-zebry.pl dla HC20/HC25/HC50/HC55 nie ma (404).
+- **Zdjęcia**: HC20 (bez przedniego aparatu, ikona Wi-Fi), HC25 (ikona 5G), HC50 (przedni aparat, Wi-Fi 6E — 2 ujęcia), HC55 (przedni aparat, 5G), `hc20_3/4` (HC20, Wi-Fi), tył `hc20_2` (plik Zebry „hc20-hc50 … back”); wycięcia czyste na ciemnym tle; udział produktu w kadrze 88% wysokości (CT37 HC 90%, Memor 12 HC 88%). Akcesoria: właściwe produkty, napisy HC2X/5X.
+- **Akcesoria** (7 kart): nazwy, PN, czasy ładowania, bloki „Wymagane” (BS1CO: PWR-WUA5V12W0EU + CBL-TC5X-USBC2A-01; 2S1D1B i 4SCHG: PWR-BGA12V50W0WW + CBL-DC-388A1-01 + 50-16000-220R; BS5CO: PWR-BGA12V108W0WW + CBL-DC-381A1-01 + 50-16000-220R), klips 162° i niezgodność z paskiem, pasek i dostęp do przycisku, kolejność zdejmowania, elementy eksploatacyjne — zgodne z AG.
+- **Unikalność** (`porownaj-opisy.py`, description/shortDescription/seoDescription/faq na `products.ts` + karty Honeywell/Datalogic/CipherLab HC): poza listami modeli („Zebra HC20, HC25, HC50 i HC55”, „jeden terminal Zebra HC20…”) 0 wspólnych 6-gramów.
+- **Testy**: `npx tsc --noEmit` — OK; `npx next build` — OK; `next start -p 3298`: 4 karty terminali, 8 kart akcesoriów i kategoria → 200; tabela wariantów bez poziomego scrolla przy 1440/1280/1024 (lokalnie brak przycisku „Pokaż niedostępne warianty”, bo `/api/stock` zwraca 500); 390 px bez poziomego scrolla; akcesoria: pierwszy rząd 4 + „Pokaż pozostałe” / „Zwiń” (12 pozycji). Zrzuty: `$SP/hc4/shots-audyt-R/`.
+
+## Rozbieżności źródeł
+1. SS: „4 ft. (1.25 m)” — 4 ft to 1,22 m; na kartach zostaje 1,25 m z SS.
+2. SS przypis 3: w Ameryce Północnej HC20/HC25 są bez skanera; w ROW wszystkie mają SE4720, a „select HC25 models” bez skanera — zgodne z PN w sklepie (D1, D2).
+3. Pasek SG-HC2L5L-HSTRP-01: AG nazywa „disinfectant ready” tylko obudowę klipsa; SS mówi o „disinfectant-ready healthcare carry clip or hand strap”. FAQ HC25 („obie części … przygotowane do dezynfekcji”) opiera się na SS — zostawione.
+4. CL wymienia krok z zaślepką USB-C dla „HC20/HC50” (nazwy rodzin); AG obejmuje zaślepką HC2X/HC5X.
+
+## Sprawy dla właściciela
+1. OneCare dla HC20/HC25: Z1AE-HC25XX-3C00 jest teraz w API (available, bez `servicePlanPrice`), Z1AE-HC20XX-3C00 found, 0 szt.; SS zaleca dla HC20/HC25 tylko Special Value (brak w API). Nie dodano — decyzja.
+2. Karty wspólne (CRD-TC2L-1SNWS-01, PWR-WUA5V12W0EU, CBL-TC5X-USBC2A-01, BRKT-SCRD-SMRK-01, PWR-BGA12V50W0WW, CBL-DC-388A1-01, PWR-BGA12V108W0WW, CBL-DC-381A1-01, 50-16000-220R) nie mają HC20/HC25/HC50/HC55 w „Kompatybilność”, choć AG je potwierdza — poza zakresem tego audytu.
+3. RFD40: adapter ADP-RFD40-TC2X-2R i stacja CR40-1S0T-TC2-G-02 są potwierdzone dla HC20/HC50 — czy dopisać je (z RFD40 Premium) do `relatedAccessories` HC20/HC50?
+4. W API są też PN z AG bez kart: CRDCUP-HC2L5L-01 / -05, BTRCUP-HC2L5L-01, CBL-TC2Y-USBC90A-01, CBL-DC-523A1-01, SW-BLE-DT-SP-3YR (0 szt.).
+5. Meta description kart terminali Zebra powstaje w `page.tsx` z `shortDescription` + ceny (pole `seoDescription` nieużywane dla `isZebraTerminalProduct`) — logika poza zakresem.
+6. Zdjęcia 7 akcesoriów HC mają 586 × 592 px (nie 800 × 800) — stan sprzed Z1.

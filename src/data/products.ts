@@ -28046,7 +28046,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     seoTitle: 'Zebra HC20 — terminal mobilny dla służby zdrowia, Wi-Fi 6',
     seoDescription: 'Zebra HC20: terminal dla szpitali, przychodni i opieki domowej z Wi-Fi 6, skanerem SE4720, czerwonym przyciskiem alarmowym i obudową do częstej dezynfekcji. Terminal mobilny Zebra HC20, kolektor danych dla służby zdrowia, komputer mobilny Zebra HC20, HC20 Zebra. PN: WLMT0-H20B6BCJ1-A6.',
     shortDescription: 'Zebra HC20 — terminal mobilny dla służby zdrowia: Wi-Fi 6, skaner SE4720 z zielonym celownikiem, czerwony przycisk alarmowy i obudowa przygotowana do dezynfekcji.',
-    description: `Zebra HC20 to kieszonkowy komputer mobilny dla personelu medycznego i niemedycznego: pielęgniarek, lekarzy, farmaceutów, opiekunów domowych, a także służb technicznych i żywienia. Pracuje w sieci Wi-Fi 6 placówki. Wbudowany skaner SE4720 odczytuje kody na opaskach pacjentów, fiolkach z lekami, materiałach, sprzęcie i tacach z posiłkami, także uszkodzone lub słabo wydrukowane.
+    description: `Zebra HC20 to kieszonkowy komputer mobilny dla personelu medycznego i niemedycznego: pielęgniarek, lekarzy, techników laboratoryjnych i farmaceutycznych, opiekunów domowych, a także służb technicznych i żywienia. Pracuje w sieci Wi-Fi 6 placówki. Wbudowany skaner SE4720 odczytuje kody na opaskach pacjentów, fiolkach z lekami, materiałach, sprzęcie i tacach z posiłkami, także uszkodzone lub słabo wydrukowane.
 
 Obudowę w kolorze Healthcare Blue wykonano z tworzyw przeznaczonych dla ochrony zdrowia i przygotowano do częstej dezynfekcji. Wyprofilowane powierzchnie i dolne listwy zmniejszają nacisk na dłoń. Port USB-C zamyka zaślepka, która ogranicza szczeliny, w których mogą gromadzić się patogeny. Ekran 6 cali reaguje na dotyk w cienkich rękawiczkach.
 
@@ -28066,7 +28066,7 @@ Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Worksta
     ],
     imageDescriptions: [
       'Zebra HC20 — widok z przodu: ekran 6 cali w białej ramce, niebieska obudowa Healthcare Blue, ikona Wi-Fi na pasku stanu',
-      'Zebra HC20 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
+      'Zebra HC20 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i wymienna bateria w tylnej ściance',
       'Zebra HC20 — widok pod kątem od lewej krawędzi z przyciskami bocznymi',
       'Zebra HC20 — widok pod kątem od prawej krawędzi z przyciskami bocznymi',
     ],
@@ -28123,12 +28123,12 @@ Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Worksta
       },
     ],
     faq: [
-      { question: 'Jak działa czerwony przycisk alarmowy w Zebra HC20?', answer: 'Przycisk znajduje się na tylnej ściance i ma jedną, stałą rolę: wezwanie pomocy. Administrator ustawia, czy po aktywacji HC20 dzwoni pod wskazany numer, czy otwiera wybraną aplikację. Sekwencja aktywacji ogranicza przypadkowe uruchomienie. Pasek na rękę SG-HC2L5L-HSTRP-01 pozostawia dostęp do przycisku.' },
+      { question: 'Jak działa czerwony przycisk alarmowy w Zebra HC20?', answer: 'Przycisk znajduje się na tylnej ściance. To osobny, programowalny przycisk do wzywania pomocy w nagłej lub zagrażającej sytuacji. Administrator ustawia, czy po aktywacji HC20 dzwoni pod wskazany numer, czy otwiera wybraną aplikację. Sekwencja aktywacji ogranicza przypadkowe uruchomienie. Pasek na rękę SG-HC2L5L-HSTRP-01 pozostawia dostęp do przycisku.' },
       { question: 'Czy Zebra HC20 obsługuje Wi-Fi 6E?', answer: 'Fabrycznie HC20 pracuje w standardzie Wi-Fi 6. Wi-Fi 6E włącza dopiero rozszerzenie licencji do Zebra DNA Enterprise. Ta sama licencja jest potrzebna do pracy ze stacją Workstation Connect. Terminal nie ma modemu komórkowego; wersją z 5G jest [Zebra HC25](/produkt/zebra-hc25).' },
       { question: 'Jak dezynfekować obudowę HC20?', answer: 'Przed czyszczeniem HC20 należy włożyć zaślepkę do portu USB-C i odłączyć zasilanie. Środek nanosi się nasączoną chusteczką lub wilgotną ściereczką, bez rozpylania na urządzenie. Dopuszczone składniki aktywne to alkohol izopropylowy, rozcieńczony podchloryn sodu, nadtlenek wodoru, chlorek amonu i łagodny płyn do naczyń. Pełna lista produktów znajduje się w pliku „Czyszczenie i dezynfekcja” w sekcji do pobrania.' },
       { question: 'Czy w HC20 baterię wymienia się bez wyłączania?', answer: 'Nie. Funkcja true hot swap, czyli praca do 60 s bez baterii, jest dostępna tylko w HC50 i HC55. W HC20 bateria 3800 mAh jest wymienna przez użytkownika. Zapasowe baterie ładuje ładowarka SAC-HC2L5L-4SCHG albo stacja CRD-HC2L5L-2S1D1B.' },
       { question: 'Jaki Android ma Zebra HC20?', answer: 'Zebra udostępnia dla HC20 Androida 13, 14 i 15. Ostatnią obsługiwaną wersją ma być Android 16. Poprawki bezpieczeństwa dostarcza usługa LifeGuard for Android, a aktualizacje można planować przez Zebra Zero Touch.' },
-      { question: 'Czy HC20 może zastąpić telefon oddziałowy?', answer: 'Tak, po instalacji oprogramowania Workcloud Communication. PTT Express zapewnia rozmowy push-to-talk przez Wi-Fi, a Enterprise Voice zamienia HC20 w słuchawkę centrali PBX. Mikrofony z tłumieniem szumów AI poprawiają zrozumiałość mowy w hałasie.' },
+      { question: 'Czy HC20 może pracować jako telefon centrali PBX?', answer: 'Tak, po instalacji oprogramowania Workcloud Communication. PTT Express zapewnia rozmowy push-to-talk przez Wi-Fi, a Enterprise Voice zamienia HC20 w słuchawkę centrali PBX. Mikrofony z tłumieniem szumów AI poprawiają zrozumiałość mowy w hałasie.' },
       { question: 'Jakie są alternatywy dla Zebra HC20?', answer: '[Zebra HC50](/produkt/zebra-hc50) ma Wi-Fi 6E, 8 GB / 128 GB, przedni aparat 5 MP i wymianę baterii bez wyłączania. [Zebra HC25](/produkt/zebra-hc25) dodaje 5G. Spośród innych marek: [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) ze skanerem N6700 oraz [Datalogic Memor 12 HC](/produkt/datalogic-memor-12-hc).' },
     ],
     applications: [
@@ -28147,6 +28147,7 @@ Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Worksta
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
+      'zebra-usbc-plug-hc2l5l',
       'zebra-tc201-crd-tc2l-1snws-01',
       'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-tc22-tc27-pwr-wua5v12w0eu',
@@ -28188,14 +28189,14 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
     ],
     imageDescriptions: [
       'Zebra HC25 — widok z przodu: ekran 6 cali, ikona sieci 5G na pasku stanu, niebieska obudowa Healthcare Blue',
-      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
+      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i wymienna bateria w tylnej ściance',
     ],
     tags: ['healthcare'],
     availability: 'available',
     isNew: true,
     isBestseller: false,
     variantAttributeTooltips: {
-      'Skaner': 'Sposób odczytu kodów kreskowych w HC25.\n\nSE4720 — wbudowany skaner 1D/2D z białym oświetleniem i zielonym celownikiem, do pracy z dużą liczbą skanów.\n\nAparat — wersja bez skanera; kody okazjonalnie odczytuje tylny aparat 16 MP z oprogramowaniem Zebra.',
+      'Skaner': 'Sposób odczytu kodów kreskowych w HC25.\n\nSE4720 — wbudowany skaner 1D/2D z białym oświetleniem i zielonym celownikiem, do pracy z dużą liczbą skanów.\n\nBrak (aparat) — wersja bez skanera; kody okazjonalnie odczytuje tylny aparat 16 MP z oprogramowaniem Zebra.',
       'Łączność': 'Sieci, z którymi łączy się terminal.\n\n5G + Wi-Fi 6 — modem 5G/LTE z nano SIM i eSIM oraz Wi-Fi 6; Wi-Fi 6E po zakupie licencji Zebra DNA Enterprise.',
     },
     specifications: [
@@ -28248,17 +28249,17 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
         priceFrom: 3503.63,
         availability: 'available',
         attributes: {
-          'Skaner': 'Aparat',
+          'Skaner': 'Brak (aparat)',
           'Łączność': '5G + Wi-Fi 6',
         },
       },
     ],
     faq: [
       { question: 'Czym różnią się dwie konfiguracje Zebra HC25?', answer: 'Tylko sposobem odczytu kodów. WCMTB-H25B6BCJ1-A6 ma wbudowany skaner SE4720, przydatny przy częstym skanowaniu opasek i leków. WCMTB-H25B6DCJ1-A6 jest bez skanera i dekoduje kody tylnym aparatem 16 MP, z oprogramowaniem dołączonym przez Zebrę. Pozostałe parametry, w tym 5G, 6 GB / 64 GB i bateria 3800 mAh, są takie same.' },
-      { question: 'Jakie pasma 5G i LTE obsługuje HC25 w Europie?', answer: 'Wersja na rynki poza Ameryką Północną i Chinami obsługuje 5G FR1 w pasmach n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78 oraz LTE w pasmach od B1 do B71, w tym B20 i B28. Modem pracuje w trybach 5G NSA i SA, z Gigabit LTE-A i agregacją pasm.' },
-      { question: 'Czy HC25 współpracuje z prywatną siecią 5G?', answer: 'Tak. Modem HC25 obsługuje prywatne sieci LTE i 5G, a także sieci hybrydowe łączące infrastrukturę placówki z siecią operatora. Do jednoczesnego korzystania z dwóch profili służą karta nano SIM i eSIM w trybie Dual SIM / Dual Standby.' },
+      { question: 'Jakie pasma 5G i LTE obsługuje HC25 w Europie?', answer: 'Wersja na rynki poza Ameryką Północną, Chinami i Japonią obsługuje 5G FR1 w pasmach n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78 oraz LTE w 19 pasmach, m.in. B1, B3, B7, B20 i B28. Modem pracuje w trybach 5G NSA i SA, z Gigabit LTE-A i agregacją pasm.' },
+      { question: 'Czy HC25 współpracuje z prywatną siecią 5G?', answer: 'Tak. Modem HC25 obsługuje prywatne sieci LTE i 5G, a Zebra przeznacza ten model także do współpracy klinicznej w szybkich prywatnych i hybrydowych systemach 5G. Do jednoczesnego korzystania z dwóch profili służą karta nano SIM i eSIM w trybie Dual SIM / Dual Standby.' },
       { question: 'Czy Zebra HC25 może działać jako stacja robocza z monitorem?', answer: 'Tak, ale w HC25 tryb Workstation Connect wymaga licencji Zebra DNA Enterprise. Stacja CRD-TC2L-1SNWS-01 ma wyjście HDMI, port Ethernet, cztery gniazda USB-A i gniazdo słuchawkowe 3,5 mm. Zasilacz, przewód DC i przewód sieciowy do stacji są sprzedawane osobno.' },
-      { question: 'Jak noszić HC25 podczas wizyt domowych?', answer: 'Zebra oferuje dla rodziny HC2X/HC5X obrotowy klips SG-HC2L5L-CLIP-01, który mocuje terminal do odzieży, oraz pasek na rękę SG-HC2L5L-HSTRP-01. Obie części mają niebieską obudowę przygotowaną do dezynfekcji. Klipsa nie można używać razem z paskiem.' },
+      { question: 'Jak nosić HC25 podczas wizyt domowych?', answer: 'Zebra oferuje dla rodziny HC2X/HC5X obrotowy klips SG-HC2L5L-CLIP-01, który mocuje terminal do odzieży, oraz pasek na rękę SG-HC2L5L-HSTRP-01. Obie części mają niebieską obudowę przygotowaną do dezynfekcji. Klipsa nie można używać razem z paskiem.' },
       { question: 'Jakie są alternatywy dla Zebra HC25?', answer: '[Zebra HC55](/produkt/zebra-hc55) łączy 5G z Wi-Fi 6E, przednim aparatem 5 MP i wymianą baterii bez wyłączania. Do pracy tylko w budynku wystarcza [Zebra HC20](/produkt/zebra-hc20). Terminale innych marek z 5G dla ochrony zdrowia to [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
     ],
     applications: [
@@ -28278,6 +28279,7 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
+      'zebra-usbc-plug-hc2l5l',
       'zebra-tc201-crd-tc2l-1snws-01',
       'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-tc22-tc27-pwr-wua5v12w0eu',
@@ -28303,7 +28305,7 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
     shortDescription: 'Zebra HC50 — terminal Wi-Fi 6E dla służby zdrowia z przednim aparatem 5 MP do telemedycyny, pamięcią 8 GB / 128 GB i wymianą baterii bez wyłączania.',
     description: `Zebra HC50 to komputer mobilny dla szpitali i przychodni, w których personel pracuje w zasięgu sieci Wi-Fi 6E. Przedni aparat 5 MP umożliwia wideokonsultacje telemedyczne z lekarzami, farmaceutami i innymi członkami zespołu opieki. Tylny aparat 16 MP służy na przykład do dokumentowania stanu rany.
 
-Najważniejszą cechą zasilania jest wymiana baterii bez wyłączania (true hot swap). Przez maksymalnie 60 s terminal działa bez baterii, więc połączenia, powiadomienia i dane aplikacji zostają zachowane. Technologia PowerPrecision pokazuje stan ogniw i ułatwia wycofanie baterii, które nie przyjmują już pełnego ładowania.
+Zasilanie wyróżnia wymiana baterii bez wyłączania (true hot swap). Przez maksymalnie 60 s terminal działa bez baterii, więc połączenia, powiadomienia i dane aplikacji zostają zachowane. Technologia PowerPrecision pokazuje stan ogniw i ułatwia wycofanie baterii, które nie przyjmują już pełnego ładowania.
 
 Pamięć operacyjna 8 GB i flash 128 GB obsługują aplikacje z rozbudowaną grafiką: zdalny podgląd parametrów życiowych pacjenta, badania obrazowe albo schematy urządzeń dla działu technicznego. Skaner SE4720 odczytuje między innymi kody UDI, co pozwala przed użyciem sprawdzić, czy sprzęt nie został wycofany.
 
@@ -28321,7 +28323,7 @@ Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkow
     imageDescriptions: [
       'Zebra HC50 — przód pod kątem z prawą krawędzią: przedni aparat 5 MP nad ekranem, ikona Wi-Fi 6E na pasku stanu',
       'Zebra HC50 — przód pod kątem z lewą krawędzią i przyciskami bocznymi, przedni aparat 5 MP',
-      'Zebra HC50 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
+      'Zebra HC50 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i wymienna bateria w tylnej ściance',
     ],
     tags: ['healthcare'],
     availability: 'available',
@@ -28401,6 +28403,7 @@ Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkow
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
+      'zebra-usbc-plug-hc2l5l',
       'zebra-tc201-crd-tc2l-1snws-01',
       'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-tc22-tc27-pwr-wua5v12w0eu',
@@ -28432,9 +28435,9 @@ Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkow
 
 Moduł komórkowy obsługuje 5G w trybach NSA i SA, Gigabit LTE-A i VoLTE. Terminal współpracuje z prywatnymi i hybrydowymi sieciami 5G, a dwa profile operatorów zapewniają karta nano SIM i eSIM. Odbiornik GNSS korzysta jednocześnie z pasm L1 i L5.
 
-Wbudowany skaner SE4720 odczytuje kody kreskowe stosowane w ochronie zdrowia, a jego białe oświetlenie i zielony celownik są przyjazne dla pacjenta. Pamięć 8 GB / 128 GB zapewnia płynne działanie aplikacji klinicznych, a baterię 3800 mAh można wymienić bez wyłączania terminala.
+Wbudowany skaner SE4720 odczytuje kody kreskowe stosowane w ochronie zdrowia, a jego białe oświetlenie i zielony celownik są przyjazne dla pacjenta. Większa pamięć, 8 GB / 128 GB, poprawia wydajność aplikacji, a baterię 3800 mAh można wymienić bez wyłączania terminala.
 
-W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest odporna na częstą dezynfekcję zatwierdzonymi środkami. Czerwony przycisk alarmowy umieszczony z tyłu można skonfigurować tak, aby łączył z wybranym numerem albo uruchamiał aplikację.`,
+W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest przygotowana do częstej dezynfekcji środkami zatwierdzonymi przez Zebrę. Czerwony przycisk alarmowy umieszczony z tyłu można skonfigurować tak, aby łączył z wybranym numerem albo uruchamiał aplikację.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
@@ -28446,7 +28449,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest o
     ],
     imageDescriptions: [
       'Zebra HC55 — widok z przodu: przedni aparat 5 MP nad ekranem 6 cali, ikona sieci 5G na pasku stanu',
-      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
+      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i wymienna bateria w tylnej ściance',
     ],
     tags: ['healthcare'],
     availability: 'available',
@@ -28525,6 +28528,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest o
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
+      'zebra-usbc-plug-hc2l5l',
       'zebra-tc201-crd-tc2l-1snws-01',
       'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-tc22-tc27-pwr-wua5v12w0eu',
@@ -58496,6 +58500,8 @@ const tc22Accessories: Product[] = [
     id: 'zebra-battery-hc2l5l',
     slug: 'zebra-bateria-hc20-hc50',
     name: 'Akumulator 3800 mAh do Zebra HC20 / HC25 / HC50 / HC55',
+    seoTitle: 'Bateria Zebra BTRY-HC2L5L-2XMAXB do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Niebieski akumulator Zebra BTRY-HC2L5L-2XMAXB 3800 mAh z PowerPrecision i nadajnikiem BLE do terminali dla służby zdrowia Zebra HC20, HC25, HC50 i HC55. Bateria zapasowa Zebra HC50, bateria HC20 Zebra. PN: BTRY-HC2L5L-2XMAXB.',
     shortDescription: 'Akumulator Zebra BTRY-HC2L5L-2XMAXB do HC20 / HC25 / HC50 / HC55 — bateria PowerPrecision 3800 mAh z nadajnikiem BLE do lokalizowania terminala.',
     description: `Bateria BTRY-HC2L5L-2XMAXB to zapasowy akumulator litowo-jonowy PowerPrecision 3800 mAh w niebieskiej obudowie, przeznaczony do terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Zebra stosuje w nim ogniwa klasy premium o dłuższym cyklu życia, a technologia PowerPrecision na bieżąco pokazuje kondycję ogniw.
 
@@ -58534,6 +58540,8 @@ W HC50 i HC55 wymiana baterii nie wymaga wyłączania terminala, który działa 
     id: 'zebra-cradle-hc2l5l-1slot',
     slug: 'zebra-stacja-dokujaca-1slot-hc20-hc50',
     name: 'Stacja ładująca 1-gniazdowa do Zebra HC20 / HC25 / HC50 / HC55',
+    seoTitle: 'Stacja Zebra CRD-HC2L5L-BS1CO do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Jednogniazdowa stacja Zebra CRD-HC2L5L-BS1CO tylko do ładowania terminala Zebra HC20, HC25, HC50 lub HC55, zasilana przez USB-C. Stacja ładująca Zebra HC20, ładowarka biurkowa HC50. PN: CRD-HC2L5L-BS1CO.',
     shortDescription: 'Stacja Zebra CRD-HC2L5L-BS1CO do HC20 / HC25 / HC50 / HC55 — jednogniazdowa stacja tylko do ładowania, zasilana przez USB-C.',
     description: `Stacja CRD-HC2L5L-BS1CO ładuje jeden terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55). Służy tylko do ładowania; transmisji danych nie obsługuje. Naładowanie baterii standardowej BLE w terminalu od zera do 80% zajmuje mniej niż 2 h 20 min. Terminal można włożyć z założonym paskiem na rękę lub klipsem.
 
@@ -58577,7 +58585,9 @@ Zasilacz z wtykiem EU i przewód USB-C łączą stację z gniazdem sieciowym.`,
     id: 'zebra-cradle-hc2l5l-2slot',
     slug: 'zebra-stacja-dokujaca-2slot-hc20-hc50',
     name: 'Stacja ładująca terminal i baterię do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B do HC20 / HC25 / HC50 / HC55 — ładuje jeden terminal i jedną zapasową baterię.',
+    seoTitle: 'Stacja Zebra CRD-HC2L5L-2S1D1B — terminal i bateria HC20 / HC50',
+    seoDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B z gniazdem na terminal Zebra HC20, HC25, HC50 lub HC55 i gniazdem na zapasową baterię BTRY-HC2L5L-2XMAXB. Stacja z ładowarką baterii Zebra HC50. PN: CRD-HC2L5L-2S1D1B.',
+    shortDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B do HC20 / HC25 / HC50 / HC55 — gniazdo na terminal i drugie gniazdo na zapasową baterię.',
     description: `Stacja CRD-HC2L5L-2S1D1B ma gniazdo na jeden terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55) oraz gniazdo na jedną zapasową baterię. Terminal z baterią standardową BLE osiąga 80% naładowania w mniej niż 1 h 20 min (licząc od zera), a bateria zapasowa — 90% w mniej niż 4 h. Terminal można włożyć z paskiem na rękę lub klipsem.
 
 ## Co jest potrzebne do użycia?
@@ -58621,7 +58631,9 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     id: 'zebra-cradle-hc2l5l-5slot',
     slug: 'zebra-stacja-dokujaca-5slot-hc20-hc50',
     name: 'Stacja ładująca 5-gniazdowa do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Stacja Zebra CRD-HC2L5L-BS5CO do HC20 / HC25 / HC50 / HC55 — ładuje do pięciu terminali, montaż w szafie rack 19" lub na ścianie.',
+    seoTitle: 'Stacja 5-gniazdowa Zebra CRD-HC2L5L-BS5CO do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Pięciogniazdowa stacja Zebra CRD-HC2L5L-BS5CO tylko do ładowania terminali Zebra HC20, HC25, HC50 i HC55; montaż w szafie rack 19" lub na ścianie z uchwytem BRKT-SCRD-SMRK-01. Stacja 5-slot Zebra HC50. PN: CRD-HC2L5L-BS5CO.',
+    shortDescription: 'Stacja Zebra CRD-HC2L5L-BS5CO do HC20 / HC25 / HC50 / HC55 — ładuje do pięciu terminali; z uchwytem BRKT-SCRD-SMRK-01 montaż w szafie rack 19" lub na ścianie.',
     description: `Stacja CRD-HC2L5L-BS5CO ładuje do pięciu terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Służy tylko do ładowania. W każdym gnieździe rozładowana bateria standardowa BLE terminala uzyskuje 80% pojemności w czasie krótszym niż 1 h 20 min. Paska na rękę ani klipsa nie trzeba przy tym zdejmować. Uchwyt BRKT-SCRD-SMRK-01 pozwala zamocować stację na ścianie albo w szafie rack 19".
 
 ## Co jest potrzebne do użycia?
@@ -58670,6 +58682,8 @@ Dokup tylko te elementy, których jeszcze nie masz.
     id: 'zebra-charger-hc2l5l-4battery',
     slug: 'zebra-ladowarka-4-baterii-hc20-hc50',
     name: 'Ładowarka 4 baterii do Zebra HC20 / HC25 / HC50 / HC55',
+    seoTitle: 'Ładowarka 4 baterii Zebra SAC-HC2L5L-4SCHG do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Biała ładowarka Zebra SAC-HC2L5L-4SCHG na cztery baterie BTRY-HC2L5L-2XMAXB terminali Zebra HC20, HC25, HC50 i HC55. Ładowarka baterii Zebra HC50, ładowarka akumulatorów HC20. PN: SAC-HC2L5L-4SCHG.',
     shortDescription: 'Ładowarka Zebra SAC-HC2L5L-4SCHG do baterii HC20 / HC25 / HC50 / HC55 — ładuje cztery baterie BTRY-HC2L5L-2XMAXB.',
     description: `Ładowarka SAC-HC2L5L-4SCHG w kolorze białym ładuje cztery baterie litowo-jonowe terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Rozładowaną baterię standardową BLE doprowadza do 90% pojemności w niecałe 4 h. Może stać samodzielnie, a na uchwycie BRKT-SCRD-SMRK-01 mieszczą się do czterech takich ładowarek.
 
@@ -58719,6 +58733,8 @@ Dokup tylko te elementy, których jeszcze nie masz.
     id: 'zebra-clip-hc2l5l',
     slug: 'zebra-klips-do-noszenia-hc20-hc50',
     name: 'Klips do noszenia do Zebra HC20 / HC25 / HC50 / HC55',
+    seoTitle: 'Klips Zebra SG-HC2L5L-CLIP-01 do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Obrotowy klips Zebra SG-HC2L5L-CLIP-01 (162°) do mocowania terminala Zebra HC20, HC25, HC50 lub HC55 na odzieży personelu; niebieska obudowa przygotowana do dezynfekcji. Klips Zebra HC50. PN: SG-HC2L5L-CLIP-01.',
     shortDescription: 'Klips Zebra SG-HC2L5L-CLIP-01 do HC20 / HC25 / HC50 / HC55 — obrotowy klips do odzieży, niebieska obudowa przygotowana do dezynfekcji.',
     description: `Klips SG-HC2L5L-CLIP-01 mocuje terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55) do odzieży personelu. Zakłada się go na górną część terminala. Klips obraca się w zakresie 162°, więc położenie terminala można dopasować do zadania.
 
@@ -58755,6 +58771,8 @@ Niebieska obudowa klipsa jest przygotowana do dezynfekcji. Klipsa nie można uż
     id: 'zebra-handstrap-hc2l5l',
     slug: 'zebra-pasek-na-reke-hc20-hc50',
     name: 'Pasek na rękę do Zebra HC20 / HC25 / HC50 / HC55',
+    seoTitle: 'Pasek na rękę Zebra SG-HC2L5L-HSTRP-01 do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Niebieski pasek na rękę Zebra SG-HC2L5L-HSTRP-01 do terminali Zebra HC20, HC25, HC50 i HC55; zostawia dostęp do przycisku alarmowego i pasuje do stacji ładujących. Pasek Zebra HC20. PN: SG-HC2L5L-HSTRP-01.',
     shortDescription: 'Pasek Zebra SG-HC2L5L-HSTRP-01 do HC20 / HC25 / HC50 / HC55 — niebieski pasek na rękę z dostępem do przycisku alarmowego.',
     description: `Pasek na rękę SG-HC2L5L-HSTRP-01 w kolorze niebieskim przeznaczono do terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Górny koniec paska jest połączony z nasadką zakładaną na górę terminala, a dolny wpina się w dolną część obudowy.
 
@@ -58785,6 +58803,44 @@ Pasek nie zasłania czerwonego przycisku alarmowego na tylnej ściance. Paska ni
       { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
     ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
+  },
+  {
+    id: 'zebra-usbc-plug-hc2l5l',
+    slug: 'zebra-zaslepka-usb-c-hc20-hc50',
+    name: 'Zaślepka portu USB-C do Zebra HC20 / HC25 / HC50 / HC55 (5 szt.)',
+    seoTitle: 'Zaślepki USB-C Zebra SG-HC2L5L-USBCADP5 do HC20 / HC25 / HC50 / HC55',
+    seoDescription: 'Opakowanie pięciu niebieskich zaślepek portu USB-C Zebra SG-HC2L5L-USBCADP5, które chronią gniazdo w terminalach medycznych Zebra HC20, HC25, HC50 i HC55. Zaślepka USB-C Zebra HC20, zaślepka portu Zebra HC50. PN: SG-HC2L5L-USBCADP5.',
+    shortDescription: 'Zaślepki Zebra SG-HC2L5L-USBCADP5 do HC20 / HC25 / HC50 / HC55 — pięć niebieskich zaślepek zamiennych, które zamykają port USB-C na dolnej krawędzi terminala.',
+    description: `Opakowanie SG-HC2L5L-USBCADP5 zawiera pięć niebieskich zaślepek zamiennych do portu USB-C terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Zaślepka zakrywa gniazdo na dolnej krawędzi obudowy. Jedna sztuka jest dołączana do każdego terminala, a opakowanie zastępuje zgubione lub zużyte egzemplarze.
+
+Przed czyszczeniem i dezynfekcją terminala zaślepkę wkłada się do gniazda, aby uniknąć uszkodzenia portu USB-C. Razem ze specjalnie zaprojektowaną obudową ogranicza szczeliny, w których mogą się gromadzić patogeny. Zaślepka jest częścią eksploatacyjną, więc w czasie pracy z terminalem trzeba liczyć się z jej wymianą.`,
+    categoryId: 'akcesoria',
+    subcategoryIds: ['etui-kabury-uchwyty'],
+    manufacturerId: 'zebra',
+    priceFrom: 18.3,
+    images: ['/images/products/SG-HC2L5L-USBCADP5.png'],
+    imageDescriptions: ['Pięć niebieskich zaślepek portu USB-C Zebra SG-HC2L5L-USBCADP5 do terminali HC2X/HC5X'],
+    tags: ['healthcare'],
+    availability: 'available',
+    isNew: true,
+    isBestseller: false,
+    specifications: [
+      { name: 'Part Number', value: 'SG-HC2L5L-USBCADP5' },
+      { name: 'Typ', value: 'Zaślepka portu USB-C na dolnej krawędzi terminala' },
+      { name: 'Zawartość opakowania', value: '5 zaślepek' },
+      { name: 'Kolor', value: 'Niebieski' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
+    ],
+    applications: ['Ochrona portu USB-C podczas czyszczenia i dezynfekcji', 'Wymiana zgubionej lub zużytej zaślepki'],
+    compatibleAccessories: [],
+    relatedAccessories: ['zebra-clip-hc2l5l', 'zebra-handstrap-hc2l5l'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+      { name: 'Czyszczenie i dezynfekcja terminali Zebra dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '873 KB' },
+    ],
+    createdAt: '2026-10-25',
     updatedAt: '2026-10-25',
   },
   {

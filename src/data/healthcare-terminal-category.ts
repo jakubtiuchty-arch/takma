@@ -48,7 +48,7 @@ export const healthcareTerminalContent: SubcategoryRichContent = {
     columns: ['Łączność', 'Skaner', 'Obudowa i czyszczenie', 'Alarm', 'Bateria i ładowanie'],
     rows: [
       { model: 'Zebra HC20', href: '/produkt/zebra-hc20', role: 'Wi-Fi, 6 GB / 64 GB, aparat tylny 16 MP', cells: ['Wi-Fi 6 (Wi-Fi 6E z licencją Zebra DNA Enterprise)', 'SE4720, białe oświetlenie, zielony celownik', 'Przygotowana do dezynfekcji, tworzywa dla ochrony zdrowia; ponad 30 środków; zaślepka USB-C', 'Czerwony przycisk alarmowy', '3800 mAh, wymienna; ładowanie dowolnym przewodem USB-C'] },
-      { model: 'Zebra HC25', href: '/produkt/zebra-hc25', role: 'Wi-Fi i sieć komórkowa, 6 GB / 64 GB', cells: ['5G, Wi-Fi 6 (Wi-Fi 6E z licencją Zebra DNA Enterprise); nano SIM i eSIM', 'SE4720, białe oświetlenie, zielony celownik', 'Przygotowana do dezynfekcji, tworzywa dla ochrony zdrowia; ponad 30 środków; zaślepka USB-C', 'Czerwony przycisk alarmowy', '3800 mAh, wymienna; ładowanie dowolnym przewodem USB-C'] },
+      { model: 'Zebra HC25', href: '/produkt/zebra-hc25', role: 'Wi-Fi i sieć komórkowa, 6 GB / 64 GB', cells: ['5G, Wi-Fi 6 (Wi-Fi 6E z licencją Zebra DNA Enterprise); nano SIM i eSIM', 'SE4720, białe oświetlenie, zielony celownik; wersja bez skanera — odczyt aparatem', 'Przygotowana do dezynfekcji, tworzywa dla ochrony zdrowia; ponad 30 środków; zaślepka USB-C', 'Czerwony przycisk alarmowy', '3800 mAh, wymienna; ładowanie dowolnym przewodem USB-C'] },
       { model: 'Zebra HC50', href: '/produkt/zebra-hc50', role: 'Wi-Fi, 8 GB / 128 GB, aparat przedni 5 MP', cells: ['Wi-Fi 6E', 'SE4720, białe oświetlenie, zielony celownik', 'Przygotowana do dezynfekcji, tworzywa dla ochrony zdrowia; ponad 30 środków; zaślepka USB-C', 'Czerwony przycisk alarmowy', '3800 mAh, wymiana bez wyłączania (true hot swap)'] },
       { model: 'Zebra HC55', href: '/produkt/zebra-hc55', role: 'Wi-Fi i sieć komórkowa, 8 GB / 128 GB, aparat przedni 5 MP', cells: ['5G, Wi-Fi 6E; nano SIM i eSIM', 'SE4720, białe oświetlenie, zielony celownik', 'Przygotowana do dezynfekcji, tworzywa dla ochrony zdrowia; ponad 30 środków; zaślepka USB-C', 'Czerwony przycisk alarmowy', '3800 mAh, wymiana bez wyłączania (true hot swap)'] },
       { model: 'Honeywell CT37 HC', href: '/produkt/honeywell-ct37-hc', role: 'Wersje Wi-Fi albo 5G, 8 GB / 128 GB, przycisk PTT', cells: ['Wi-Fi 6E albo 5G i Wi-Fi 6E (zależnie od PN)', 'Honeywell N6700', 'Obudowa i złącza przygotowane do dezynfekcji; 46 dopuszczonych środków', '—', '3846 mAh, hot swap; Quick Charge 4.0'] },
@@ -130,7 +130,7 @@ export const healthcareTerminalContent: SubcategoryRichContent = {
     },
     {
       question: 'Jaką gwarancję mają terminale dla służby zdrowia?',
-      answer: 'Zebra, Honeywell, Datalogic i CipherLab dają na te terminale roczną gwarancję producenta. Zebra oferuje dodatkowo kontrakty serwisowe Zebra OneCare: Special Value dla HC20 i HC25 oraz Essential i Select dla HC50 i HC55.',
+      answer: 'Zebra, Honeywell, Datalogic i CipherLab dają na te terminale roczną gwarancję producenta. Zebra zaleca dodatkowo kontrakty serwisowe Zebra OneCare: Special Value dla HC20 i HC25 oraz Essential lub Select dla HC50 i HC55. Przy zakupie HC50 albo HC55 w sklepie można dodać 3- lub 5-letni kontrakt Essential.',
     },
     {
       question: 'Gdzie są skanery i drukarki dla placówek medycznych?',
