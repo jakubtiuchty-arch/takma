@@ -19,6 +19,10 @@ import { zebraHcZq6Products } from './zebra-hc-zq6-products'
 import { tscHcProducts } from './tsc-hc-products'
 import { satoHcProducts } from './sato-hc-products'
 import { honeywellCitizenHcProducts } from './honeywell-citizen-hc-products'
+import { healthcareScannerCategory } from './healthcare-scanner-category'
+import { zebraHcScanners } from './zebra-hc-scanners'
+import { honeywellSocketHcScanners } from './honeywell-socket-hc-scanners'
+import { datalogicNewlandHcScanners } from './datalogic-newland-hc-scanners'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -1278,6 +1282,7 @@ export const subcategories: Subcategory[] = [
     productIds: ['m3-wr15', 'm3-wr10'],
     productCount: 2,
   },
+  healthcareScannerCategory,
   // --- Podkategorie: Akcesoria do skanerów ---
   {
     id: 'akcesoria-do-skanerow',
@@ -95527,6 +95532,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Skanery dla ochrony zdrowia (Zebra HC, Honeywell, Socket Mobile, Datalogic, Newland) i ich akcesoria trafiają do podkategorii według `subcategoryIds`, w tym do „Skanery dla służby zdrowia”.
+for (const subcategory of subcategories) {
+  const additions = [...zebraHcScanners, ...honeywellSocketHcScanners, ...datalogicNewlandHcScanners].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95586,6 +95600,9 @@ const rawProductList: Product[] = [
   ...tscHcProducts,
   ...satoHcProducts,
   ...honeywellCitizenHcProducts,
+  ...zebraHcScanners,
+  ...honeywellSocketHcScanners,
+  ...datalogicNewlandHcScanners,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

@@ -129,6 +129,7 @@ const navigation: NavItem[] = [
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
       { name: 'Skanery ladowe', href: '/skanery-kodow-kreskowych/ladowe' },
       { name: 'Skanery pierścieniowe i noszone', href: '/skanery-kodow-kreskowych/pierscieniowe' },
+      { name: 'Skanery dla służby zdrowia', href: '/skanery-dla-sluzby-zdrowia' },
     ],
   },
   {

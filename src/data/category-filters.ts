@@ -2213,3 +2213,29 @@ categoryFilters['drukarki-dla-sluzby-zdrowia'] = [
     { value: '4 cale', slugs: ['zebra-zd421-hc', 'zebra-zd621-hc', 'tsc-th240thc', 'tsc-dh240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv'] },
   ] },
 ]
+
+// Skanery dla ochrony zdrowia (Zebra HC, Honeywell, Datalogic, Newland, Socket Mobile): łączność, rodzaj i wibracja
+// po slugach, bo karty pochodzą z kilku plików i mają różne nazwy wierszy specyfikacji. Socket Mobile po slugach —
+// marka dochodzi razem z kartami.
+categoryFilters['skanery-dla-sluzby-zdrowia'] = [
+  { specKey: 'producent', label: 'Producent', derived: [
+    { value: 'Zebra', manufacturer: 'zebra' },
+    { value: 'Honeywell', manufacturer: 'honeywell' },
+    { value: 'Datalogic', manufacturer: 'datalogic' },
+    { value: 'Newland', manufacturer: 'newland' },
+    { value: 'Socket Mobile', slugs: ['socket-mobile-durascan-d745', 'socket-mobile-durascan-d765'] },
+  ] },
+  { specKey: 'lacznosc', label: 'Łączność', description: 'Sposób połączenia z komputerem lub tabletem.\n• Przewodowy — USB lub RS-232, bez ładowania; stałe stanowisko\n• Bluetooth — praca przy łóżku pacjenta, ze stacją, wózkiem lub tabletem\n• Radio 433 MHz — system STAR Datalogic z bazą', derived: [
+    { value: 'Przewodowy', slugs: ['zebra-ds2208-hc', 'zebra-ds4608-hc', 'zebra-ds8208-hc', 'honeywell-xenon-ultra-1960h', 'datalogic-gryphon-gd4690-hc', 'datalogic-gryphon-gd4620-hc', 'newland-hr33-marlin-ai-white', 'newland-hr23-dorada-ai-white'] },
+    { value: 'Bluetooth', slugs: ['zebra-ds2278-hc', 'zebra-ds8288-hc', 'zebra-cs60-hc', 'honeywell-xenon-ultra-1962h', 'datalogic-gryphon-gbt4600-hc', 'newland-hr33-marlin-ai-bt-white', 'newland-hr23-dorada-ai-bt-white', 'socket-mobile-durascan-d745', 'socket-mobile-durascan-d765'] },
+    { value: 'Radio 433 MHz', slugs: ['datalogic-gryphon-gm4600-hc'] },
+  ] },
+  { specKey: 'rodzaj', label: 'Rodzaj', description: 'Kształt skanera.\n• Pistoletowy — z rękojeścią i spustem\n• Bez rękojeści — skaner trzymany w dłoni jak pilot, z przyciskiem odczytu na górze', derived: [
+    { value: 'Pistoletowy', slugs: ['zebra-ds2208-hc', 'zebra-ds4608-hc', 'zebra-ds8208-hc', 'honeywell-xenon-ultra-1960h', 'datalogic-gryphon-gd4690-hc', 'datalogic-gryphon-gd4620-hc', 'newland-hr33-marlin-ai-white', 'newland-hr23-dorada-ai-white', 'zebra-ds2278-hc', 'zebra-ds8288-hc', 'honeywell-xenon-ultra-1962h', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc', 'newland-hr33-marlin-ai-bt-white', 'newland-hr23-dorada-ai-bt-white'] },
+    { value: 'Bez rękojeści', slugs: ['zebra-cs60-hc', 'socket-mobile-durascan-d745', 'socket-mobile-durascan-d765'] },
+  ] },
+  { specKey: 'wibracja', label: 'Ciche potwierdzenie', description: 'Potwierdzenie odczytu bez sygnału dźwiękowego, np. przy śpiącym pacjencie.\n• Wibracja — w Honeywell Xenon Ultra 1960h i Datalogic Gryphon GBT4600 HC / GM4600 HC jako opcja\n• Światło na kodzie — tryb „Do Not Disturb” Zebra DS2208-HC i DS2278-HC', derived: [
+    { value: 'Wibracja', slugs: ['zebra-ds4608-hc', 'zebra-ds8208-hc', 'zebra-ds8288-hc', 'zebra-cs60-hc', 'honeywell-xenon-ultra-1960h', 'honeywell-xenon-ultra-1962h', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc', 'newland-hr33-marlin-ai-white', 'newland-hr23-dorada-ai-white', 'newland-hr33-marlin-ai-bt-white', 'newland-hr23-dorada-ai-bt-white'] },
+    { value: 'Światło na kodzie (Do Not Disturb)', slugs: ['zebra-ds2208-hc', 'zebra-ds2278-hc'] },
+  ] },
+]

@@ -15,7 +15,7 @@ export const healthcarePrinterCategory: Subcategory = {
   description: 'Biurkowe i mobilne drukarki etykiet i opasek w wersjach dla ochrony zdrowia — Zebra, TSC, SATO, Honeywell i Citizen — do szpitali, laboratoriów i aptek szpitalnych.',
   seoTitle: 'Drukarki dla służby zdrowia i szpitali: Zebra, TSC, SATO | TAKMA',
   seoDescription: 'Drukarki dla służby zdrowia Zebra, TSC, SATO, Honeywell i Citizen: szpitalna drukarka etykiet na probówki i leki, drukarka opasek dla pacjentów, drukarki mobilne. Porównanie modeli.',
-  longDescription: 'Drukarki dla służby zdrowia to drukarki etykiet i opasek w wersjach przeznaczonych dla placówek ochrony zdrowia. Ich obudowy wykonano z tworzyw przygotowanych do częstej dezynfekcji. Zależnie od producenta mają też tworzywo antybakteryjne lub antymikrobowe, zasilacz zgodny z normą IEC 60601-1 albo obudowę odporną na promieniowanie UV. Drukują opaski dla pacjentów, etykiety na probówki i próbki oraz etykiety leków. Dane do druku wysyła system szpitalny przez sieć lub USB, a kod z opaski odczytuje [skaner kodów kreskowych](/skanery-kodow-kreskowych). Materiały do druku są w kategoriach [opaski identyfikacyjne](/opaski-identyfikacyjne) i [etykiety termiczne](/etykiety-termiczne-zebra).',
+  longDescription: 'Drukarki dla służby zdrowia to drukarki etykiet i opasek w wersjach przeznaczonych dla placówek ochrony zdrowia. Ich obudowy wykonano z tworzyw przygotowanych do częstej dezynfekcji. Zależnie od producenta mają też tworzywo antybakteryjne lub antymikrobowe, zasilacz zgodny z normą IEC 60601-1 albo obudowę odporną na promieniowanie UV. Drukują opaski dla pacjentów, etykiety na probówki i próbki oraz etykiety leków. Dane do druku wysyła system szpitalny przez sieć lub USB, a kod z opaski odczytuje [skaner kodów kreskowych](/skanery-dla-sluzby-zdrowia). Materiały do druku są w kategoriach [opaski identyfikacyjne](/opaski-identyfikacyjne) i [etykiety termiczne](/etykiety-termiczne-zebra).',
   icon: 'printer',
   productIds: [
     'zebra-zd510-hc',
@@ -152,7 +152,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
     },
     {
       question: 'Jak drukarka łączy się z systemem szpitalnym?',
-      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują skanery oraz terminale mobilne dla służby zdrowia, np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50).',
+      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia) oraz terminale mobilne dla służby zdrowia, np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50).',
     },
     {
       question: 'Czy drukarki dla służby zdrowia mają Wi-Fi i Bluetooth?',

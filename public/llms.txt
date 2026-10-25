@@ -71,6 +71,7 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Skanery Datalogic 1D, 2D i DPM: https://www.takma.com.pl/skanery-datalogic
   - Skanery ProGlove noszone na grzbiecie dłoni (LEO, MARK Basic, MARK 2, MARK 3, MARK Display, MAI): https://www.takma.com.pl/skanery-proglove
   - Skanery pierścieniowe i noszone (M3 Mobile, ProGlove, Zebra RS2100, RS5100 i RS6100): https://www.takma.com.pl/skanery-kodow-kreskowych/pierscieniowe
+  - Skanery dla służby zdrowia: https://www.takma.com.pl/skanery-dla-sluzby-zdrowia — przewodowe i bezprzewodowe skanery kodów 1D i 2D w wersjach dla ochrony zdrowia do szpitali, laboratoriów i aptek szpitalnych: Zebra DS2208-HC, DS2278-HC, DS4608-HC, DS8208-HC, DS8288-HC i CS60-HC, Honeywell Xenon Ultra 1960h i 1962h, Datalogic Gryphon 4600 HC (GD4690, GD4620, GBT4600, GM4600), Newland HR33 Marlin AI White i HR23 Dorada AI White (przewodowe i Bluetooth) oraz Socket Mobile DuraScan D745 i D765. Obudowy przygotowane do dezynfekcji (Zebra, Honeywell, Datalogic), antymikrobowe (Honeywell; Datalogic — tworzywo zgodne z ISO 22196; Newland — powłoka) albo z tworzywa medycznego (Socket Mobile); tryb nocny z wibracją w Zebra DS4608-HC, DS82-HC i CS60-HC. Drukarki opasek i etykiet: https://www.takma.com.pl/drukarki-dla-sluzby-zdrowia
   - Skanery przewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/przewodowe
   - Skanery bezprzewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/bezprzewodowe
   - Skanery prezentacyjne: https://www.takma.com.pl/skanery-kodow-kreskowych/prezentacyjne
