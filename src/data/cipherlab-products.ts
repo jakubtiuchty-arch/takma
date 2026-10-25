@@ -517,7 +517,7 @@ export const cipherlabProducts: Product[] = [
     ],
     "manufacturerId": "cipherlab",
     "images": [
-      "/images/products/cipherlab-rs38h-front.webp",
+      "/images/products/AS3858SF4NSGH.png",
       "/images/products/cipherlab-rs38h-1.webp",
       "/images/products/cipherlab-rs38h-2.webp",
       "/images/products/cipherlab-rs38h-3.webp",
