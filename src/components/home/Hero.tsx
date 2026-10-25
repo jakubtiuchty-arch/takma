@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/ui'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 import { ZEBRA_CEE_PROMO } from '@/data/promos'
+import BrandBanner, { type BannerBrand } from './BrandBanner'
 
 interface ProductSlide {
   type: 'product'
@@ -56,12 +57,16 @@ interface PromoSaleSlide {
   variant?: string
 }
 
-type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide | PromoSaleSlide
+interface BrandSlide { type: 'brand'; brand: BannerBrand; hold: number }
+
+type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide | PromoSaleSlide | BrandSlide
 
 const promoSaleActive = new Date() <= new Date(`${ZEBRA_CEE_PROMO.endDate}T23:59:59+02:00`)
 
 const slides: HeroSlide[] = [
   { type: 'info' },
+  { type: 'brand', brand: 'proglove', hold: 14000 },
+  { type: 'brand', brand: 'sunmi', hold: 14000 },
   {
     type: 'product',
     image: '/images/hero-colorworks-c8000e-v2.webp',
@@ -158,7 +163,7 @@ export default function Hero() {
   useEffect(() => {
     if (isMobile) return
     const biezacy = slides[current]
-    const czas = (biezacy.type === 'product' && biezacy.hold) || INTERVAL
+    const czas = ((biezacy.type === 'product' || biezacy.type === 'brand') && biezacy.hold) || INTERVAL
     const timer = setTimeout(next, czas)
     return () => clearTimeout(timer)
   }, [next, isMobile, current])
@@ -170,6 +175,13 @@ export default function Hero() {
   const isBanner = slide.type === 'product' && slide.noOverlay
   const isImageLeft = slide.type === 'product' && slide.imageLeft
   const sectionBg = slide.type === 'promoSale' ? '#0a0d08' : slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
+
+  if (slide.type === 'brand') return <section className="relative w-full" aria-label={slide.brand === 'proglove' ? 'ProGlove' : 'SUNMI'}>
+    <BrandBanner key={slide.brand} brand={slide.brand} />
+    <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 hidden sm:flex items-center gap-2">
+      {slides.map((_, i) => <button key={i} onClick={() => goTo(i)} aria-label={`Slajd ${i + 1}`} className={clsx('rounded-full transition-all duration-300', i === current ? 'w-8 h-2.5 bg-[#A8F000]' : 'w-2.5 h-2.5 bg-gray-400/60 hover:bg-gray-300')} />)}
+    </div>
+  </section>
 
   return (
     <section className="relative overflow-hidden w-full h-[400px] md:h-[420px] lg:h-[520px]" style={{ backgroundColor: sectionBg }}>
