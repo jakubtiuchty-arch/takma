@@ -221,8 +221,8 @@ const jsonLdFaq = {
 
 export default function HomePage() {
   // Dynamiczne bestsellery z fallback na isNew
-  // Bestsellery: mix marek (1× Honeywell, 1× Newland, 1× Brother, 1× Zebra) — jawny dobór
-  const best = ['honeywell-ct37', 'newland-hr23-dorada', 'brother-td-4t', 'zebra-zd421t']
+  // Bestsellery: jawny wybór modeli i kolejności na stronie głównej.
+  const best = ['zebra-tc201', 'datalogic-quickscan-qd2220', 'honeywell-pc42e-t', 'getac-f120']
     .map(getProductBySlug)
     .filter((p): p is NonNullable<ReturnType<typeof getProductBySlug>> => Boolean(p))
   const bestsellers = best.length >= 4
