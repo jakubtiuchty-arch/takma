@@ -95444,7 +95444,7 @@ for (const subcategory of subcategories) {
 
 // Programy do etykiet BarTender i Loftware Cloud trafiają do podkategorii według `subcategoryIds`, w tym do „Programy do etykiet”.
 for (const subcategory of subcategories) {
-  const additions = [...bartenderProducts, ...loftwareProducts].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  const additions = [...bartenderProducts, ...loftwareProducts, ...zebraDesignerProducts].filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
