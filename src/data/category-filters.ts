@@ -2196,7 +2196,7 @@ categoryFilters['drukarki-dla-sluzby-zdrowia'] = [
     { value: 'Honeywell', manufacturer: 'honeywell' },
     { value: 'Citizen', manufacturer: 'citizen' },
   ] },
-  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski z kartridżów\n• Biurkowa — etykiety i opaski z rolki na stanowisku\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii', derived: [
+  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski z kartridżów\n• Biurkowa — etykiety na stanowisku, w wielu modelach także opaski z rolki\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii', derived: [
     { value: 'Drukarka opasek', slugs: ['zebra-zd510-hc'] },
     { value: 'Biurkowa', subcategory: 'biurkowe-drukarki-etykiet' },
     { value: 'Mobilna', subcategory: 'mobilne-drukarki-etykiet' },

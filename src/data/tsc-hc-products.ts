@@ -5,7 +5,7 @@ import type { Product, ProductVariant } from './products'
 // TH240/DH240, TH220/DH220, DH220L i Alpha-30L/40L; konfiguracje PN według schematu TSC u dystrybutora.
 // Ceny i stany z /api/stock z 25.10.2026. Audyt: docs/catalog/hc-producenci-2026-10-25/J1.md
 
-const datasheetThDh = { name: 'Karta katalogowa serii TSC TH DH, w tym wersje HC (EN)', type: 'datasheet' as const, url: '/downloads/tsc-th-dh-karta-produktu-2026-en.pdf', size: '5,3 MB' }
+const datasheetThDh = { name: 'Karta katalogowa TSC TH DH (EN)', type: 'datasheet' as const, url: '/downloads/tsc-th-dh-karta-produktu-2026-en.pdf', size: '5,3 MB' }
 
 const th240thc: Product = {
   id: 'tsc-th240thc',
@@ -79,24 +79,24 @@ Wersje A001 przyjmują rolkę taśmy 300 m na gilzie 1 cala lub 110 m na gilzie 
     'Etykiety na próbki',
     'Etykiety apteczne',
     'Śledzenie pacjentów',
-    'Etykiety termotransferowe na materiałach syntetycznych',
+    'Druk termotransferowy z taśmą w rolce lub w kasecie',
   ],
   variants: [
     { partNumber: 'TH240HC-A001-0002', name: 'TH240THC, 203 dpi, rolka taśmy, USB + RS-232 + Ethernet', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Rolka 300 m' }, priceFrom: 1976.6, availability: 'unavailable' },
-    { partNumber: 'TH240HC-A001-0102', name: 'TH240THC, 203 dpi, rolka taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Rolka 300 m', 'Łączność radiowa': 'Wi-Fi + BT 5.0' }, priceFrom: 2547.56, availability: 'unavailable' },
+    { partNumber: 'TH240HC-A001-0102', name: 'TH240THC, 203 dpi, rolka taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Rolka 300 m', 'Łączność': 'Wi-Fi + BT 5.0' }, priceFrom: 2547.56, availability: 'unavailable' },
     { partNumber: 'TH340HC-A001-0002', name: 'TH340THC, 300 dpi, rolka taśmy, USB + RS-232 + Ethernet', attributes: { 'Rozdzielczość': '300 dpi', 'Taśma': 'Rolka 300 m' }, priceFrom: 2470.74, availability: 'unavailable' },
-    { partNumber: 'TH340HC-A001-0102', name: 'TH340THC, 300 dpi, rolka taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '300 dpi', 'Taśma': 'Rolka 300 m', 'Łączność radiowa': 'Wi-Fi + BT 5.0' }, priceFrom: 3044.27, availability: 'unavailable' },
+    { partNumber: 'TH340HC-A001-0102', name: 'TH340THC, 300 dpi, rolka taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '300 dpi', 'Taśma': 'Rolka 300 m', 'Łączność': 'Wi-Fi + BT 5.0' }, priceFrom: 3044.27, availability: 'unavailable' },
     { partNumber: 'TH240HC-A002-0002', name: 'TH240TRCHC, 203 dpi, kaseta taśmy, USB + RS-232 + Ethernet', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Kaseta 100 m' }, priceFrom: 1976.6, availability: 'unavailable' },
-    { partNumber: 'TH240HC-A002-0102', name: 'TH240TRCHC, 203 dpi, kaseta taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Kaseta 100 m', 'Łączność radiowa': 'Wi-Fi + BT 5.0' }, priceFrom: 2547.56, availability: 'unavailable' },
-    { partNumber: 'TH240HC-A002-0202', name: 'TH240TRCHC, 203 dpi, kaseta taśmy, Bluetooth MFi 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Kaseta 100 m', 'Łączność radiowa': 'Bluetooth MFi 5.0' }, priceFrom: 2299.21, availability: 'unavailable' },
+    { partNumber: 'TH240HC-A002-0102', name: 'TH240TRCHC, 203 dpi, kaseta taśmy, Wi-Fi + Bluetooth 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Kaseta 100 m', 'Łączność': 'Wi-Fi + BT 5.0' }, priceFrom: 2547.56, availability: 'unavailable' },
+    { partNumber: 'TH240HC-A002-0202', name: 'TH240TRCHC, 203 dpi, kaseta taśmy, Bluetooth MFi 5.0', attributes: { 'Rozdzielczość': '203 dpi', 'Taśma': 'Kaseta 100 m', 'Łączność': 'BT MFi 5.0' }, priceFrom: 2299.21, availability: 'unavailable' },
   ],
   variantAttributeTooltips: {
     'Rozdzielczość': 'Gęstość punktów głowicy drukującej.\n\n203 dpi (TH240THC) — do 203 mm/s, druk na szerokości 108 mm.\n\n300 dpi (TH340THC) — do 152 mm/s; wyraźniejszy drobny tekst i małe kody 2D.',
     'Taśma': 'Sposób zakładania taśmy barwiącej.\n\nRolka 300 m — taśma nawijana na trzpień; przyjmuje też rolki 110 m na gilzie 0,5 cala.\n\nKaseta 100 m — taśma w gotowej kasecie, wkładanej do drukarki w całości (TH240TRCHC).',
-    'Łączność radiowa': 'Fabrycznie zamontowany interfejs bezprzewodowy; USB, USB Host, RS-232 i Ethernet ma każda wersja.\n\nWi-Fi + BT 5.0 — sieć 802.11a/b/g/n/ac i Bluetooth 5.0.\n\nBluetooth MFi 5.0 — Bluetooth z certyfikatem Apple MFi, np. do druku z iPhone lub iPad.',
+    'Łączność': 'Interfejs bezprzewodowy zamontowany w danej wersji; USB, USB Host, RS-232 i Ethernet ma każda wersja.\n\nWi-Fi + BT 5.0 — sieć 802.11a/b/g/n/ac i Bluetooth 5.0.\n\nBT MFi 5.0 — Bluetooth 5.0 z certyfikatem Apple MFi, np. do druku z iPhone lub iPad.',
   },
   compatibleAccessories: [],
-  relatedAccessories: ['tsc-th-wifi', 'tsc-th-bluetooth', 'tsc-th-roll-holder'],
+  relatedAccessories: ['tsc-th-roll-holder'],
   faq: [
     {
       question: 'Czym wersja TH240TRCHC różni się od TH240THC?',
@@ -116,7 +116,7 @@ Wersje A001 przyjmują rolkę taśmy 300 m na gilzie 1 cala lub 110 m na gilzie 
     },
     {
       question: 'Czy do wersji z Ethernetem można dodać Wi-Fi?',
-      answer: 'Tak. Dealer może zamontować [moduł łączący Wi-Fi i Bluetooth 5.0](/produkt/tsc-modul-wifi-sp-th240-0041) lub [sam moduł Bluetooth 5.0](/produkt/tsc-modul-bluetooth-sp-th240-0044). Konfiguracje z końcówką PN 0102 mają moduł Wi-Fi z Bluetooth od razu, a TH240HC-A002-0202 ma fabryczny Bluetooth MFi.',
+      answer: 'Tak. Dealer może zamontować moduł łączący Wi-Fi i Bluetooth 5.0 lub sam moduł Bluetooth 5.0. Konfiguracje z końcówką PN 0102 mają moduł Wi-Fi z Bluetooth od razu, a TH240HC-A002-0202 ma fabryczny Bluetooth MFi.',
     },
     {
       question: 'Czy TH240THC drukuje szablony przygotowane dla drukarek Zebra?',
@@ -133,7 +133,7 @@ Wersje A001 przyjmują rolkę taśmy 300 m na gilzie 1 cala lub 110 m na gilzie 
   ],
   downloads: [
     datasheetThDh,
-    { name: 'Instrukcja obsługi serii TH240/DH240, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-th-dh-instrukcja-en.pdf', size: '4,5 MB' },
+    { name: 'Instrukcja TSC TH240/DH240 (EN)', type: 'manual', url: '/downloads/tsc-th-dh-instrukcja-en.pdf', size: '4,5 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/th-series-4-inch-performance-desktop-printers', size: 'Online' },
   ],
   relatedProducts: ['tsc-dh240thc', 'zebra-zd421-hc', 'zebra-zd621-hc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv'],
@@ -210,7 +210,7 @@ Każda wersja ma kolorowy ekran dotykowy 3,5 cala, zegar RTC, port Ethernet, zł
   applications: [
     'Etykiety na próbki',
     'Etykiety apteczne',
-    'Identyfikacja i śledzenie pacjentów',
+    'Śledzenie pacjentów',
     'Etykiety termiczne bez taśmy barwiącej',
   ],
   variants: [
@@ -224,7 +224,7 @@ Każda wersja ma kolorowy ekran dotykowy 3,5 cala, zegar RTC, port Ethernet, zł
     'Wi-Fi + Bluetooth': 'Moduł bezprzewodowy montowany w drukarce; porty USB, USB Host, RS-232 i Ethernet ma każda wersja.\n\nTak — sieć Wi-Fi 802.11a/b/g/n/ac oraz Bluetooth 5.0, np. do drukarki na wózku lub w miejscu bez gniazda sieciowego.',
   },
   compatibleAccessories: [],
-  relatedAccessories: ['tsc-th-wifi', 'tsc-th-bluetooth', 'tsc-th-roll-holder'],
+  relatedAccessories: ['tsc-th-roll-holder'],
   faq: [
     {
       question: 'Czy TSC DH240THC potrzebuje taśmy barwiącej?',
@@ -252,12 +252,12 @@ Każda wersja ma kolorowy ekran dotykowy 3,5 cala, zegar RTC, port Ethernet, zł
     },
     {
       question: 'Jakie drukarki można rozważyć zamiast TSC DH240THC?',
-      answer: 'Termiczną 4-calową drukarką dla ochrony zdrowia jest też [Honeywell PC45d Healthcare](/produkt/honeywell-pc45d-hc) oraz [Citizen CL-H300SV](/produkt/citizen-cl-h300sv). Wersję, która przyjmuje również taśmę barwiącą, oferuje [TSC TH240THC](/produkt/tsc-th240thc).',
+      answer: 'Etykiety 4-calowe bez taśmy drukują w placówkach medycznych także [Honeywell PC45d Healthcare](/produkt/honeywell-pc45d-hc) i [Citizen CL-H300SV](/produkt/citizen-cl-h300sv). Wersję, która przyjmuje również taśmę barwiącą, oferuje [TSC TH240THC](/produkt/tsc-th240thc).',
     },
   ],
   downloads: [
     datasheetThDh,
-    { name: 'Instrukcja obsługi serii TH240/DH240, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-th-dh-instrukcja-en.pdf', size: '4,5 MB' },
+    { name: 'Instrukcja TSC TH240/DH240 (EN)', type: 'manual', url: '/downloads/tsc-th-dh-instrukcja-en.pdf', size: '4,5 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/dh-series-4-inch-performance-desktop-printers', size: 'Online' },
   ],
   relatedProducts: ['tsc-th240thc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv', 'zebra-zd421-hc', 'zebra-zd621-hc', 'sato-ct4-lx-hc'],
@@ -345,7 +345,7 @@ Wszystkie konfiguracje mają ekran dotykowy 3,5 cala i łącza przewodowe: Ether
   ],
   variantAttributeTooltips: {
     'Rozdzielczość': 'Gęstość punktów głowicy 2-calowej.\n\n203 dpi (TH220THC) — do 203 mm/s, druk na szerokości 54 mm.\n\n300 dpi (TH320THC) — do 152 mm/s, druk na szerokości 56,9 mm; ostrzejszy drobny tekst.',
-    'Wi-Fi + Bluetooth': 'Fabrycznie dołączony moduł radiowy; Ethernet, RS-232, USB i USB Host ma każda wersja.\n\nTak — Wi-Fi 802.11a/b/g/n/ac i Bluetooth 5.0 do druku bez przewodu sieciowego.',
+    'Wi-Fi + Bluetooth': 'Moduł radiowy zamontowany w danej wersji; Ethernet, RS-232, USB i USB Host ma każda wersja.\n\nTak — Wi-Fi 802.11a/b/g/n/ac i Bluetooth 5.0 do druku bez przewodu sieciowego.',
   },
   compatibleAccessories: [],
   relatedAccessories: [],
@@ -381,7 +381,7 @@ Wszystkie konfiguracje mają ekran dotykowy 3,5 cala i łącza przewodowe: Ether
   ],
   downloads: [
     datasheetThDh,
-    { name: 'Instrukcja obsługi serii TH220/DH220, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-th220-dh220-instrukcja-en.pdf', size: '3,5 MB' },
+    { name: 'Instrukcja TSC TH220/DH220 (EN)', type: 'manual', url: '/downloads/tsc-th220-dh220-instrukcja-en.pdf', size: '3,5 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/th-series-2-inch-performance-desktop-printers', size: 'Online' },
   ],
   relatedProducts: ['tsc-dh220thc', 'tsc-dh220lhc', 'zebra-zd411-hc', 'zebra-zd611-hc', 'sato-ws2-2'],
@@ -396,7 +396,7 @@ const dh220thc: Product = {
   shortDescription: 'TSC DH220THC / DH320THC — mała drukarka termiczna 2" dla służby zdrowia: 1,6 kg, ekran dotykowy, antybakteryjna obudowa i zasilacz IEC 60601-1.',
   seoTitle: 'TSC DH220THC / DH320THC — drukarka termiczna 2" dla służby zdrowia',
   seoDescription: 'Mała drukarka termiczna TSC DH220THC i DH320THC na stanowiska w szpitalu i laboratorium: etykiety 2" bez taśmy barwiącej w rozdzielczości 203 albo 300 dpi. Drukarka etykiet TSC DH220THC, szpitalna drukarka etykiet DH320THC TSC. PN: DH220HC-A001-0002, DH220HC-A001-0102, DH320HC-A001-0002, DH320HC-A001-0102.',
-  description: `TSC DH220THC i DH320THC to 2-calowe drukarki termiczne serii DH dla placówek medycznych. Mają 138 mm szerokości, 210 mm głębokości i ważą 1,6 kg, więc zajmują niewiele miejsca na blacie. Drukują bez taśmy, na etykietach termicznych o szerokości 15–60 mm, np. przy oznaczaniu próbek, w aptece i przy identyfikacji pacjentów.
+  description: `TSC DH220THC i DH320THC to 2-calowe drukarki termiczne serii DH dla placówek medycznych. Mają 138 mm szerokości, 210 mm głębokości i ważą 1,6 kg, więc zajmują niewiele miejsca na blacie. Drukują bez taśmy, na etykietach termicznych o szerokości 15–60 mm, np. przy oznaczaniu próbek, w aptece i przy śledzeniu pacjentów.
 
 Białą obudowę wykonano z antybakteryjnego tworzywa, które można dezynfekować. Przyciski są uszczelnione, a obudowa ma podwójne ścianki. Do drukarki dołączony jest zasilacz 24 V/60 W z certyfikatem IEC 60601-1.
 
@@ -457,7 +457,7 @@ Standardowo drukarka ma Ethernet, port szeregowy, USB oraz USB Host, a PN z koń
   applications: [
     'Etykiety na próbki',
     'Etykiety apteczne',
-    'Identyfikacja pacjentów',
+    'Śledzenie pacjentów',
     'Druk termiczny na stanowiskach z małą ilością miejsca',
   ],
   variants: [
@@ -504,7 +504,7 @@ Standardowo drukarka ma Ethernet, port szeregowy, USB oraz USB Host, a PN z koń
   ],
   downloads: [
     datasheetThDh,
-    { name: 'Instrukcja obsługi serii TH220/DH220, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-th220-dh220-instrukcja-en.pdf', size: '3,5 MB' },
+    { name: 'Instrukcja TSC TH220/DH220 (EN)', type: 'manual', url: '/downloads/tsc-th220-dh220-instrukcja-en.pdf', size: '3,5 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/dh-series-2-inch-performance-desktop-printers', size: 'Online' },
   ],
   relatedProducts: ['tsc-dh220lhc', 'tsc-th220thc', 'zebra-zd411-hc', 'zebra-zd611-hc', 'sato-ws2-2'],
@@ -514,14 +514,13 @@ Standardowo drukarka ma Ethernet, port szeregowy, USB oraz USB Host, a PN z koń
 
 // DH-L HC, końcówka PN (np. 1102): pierwsza cyfra = panel (0 ekran dotykowy, 1 LED), druga = łączność
 // (1 Wi-Fi + BT, 2 Bluetooth MFi), trzecia = obsługa etykiet (1 odklejak, 2 obcinarka).
+// Łączność i obsługa etykiet w jednej kolumnie „Wyposażenie” (żaden oferowany PN nie ma obu), aby tabela mieściła się przy 1024 px.
 const dhlVariant = (pn: string, priceFrom: number): ProductVariant => {
   const dpi = pn.startsWith('DH220') ? '203 dpi' : '300 dpi'
   const [panel, radio, handling] = pn.slice(-4).split('')
   const attributes: Record<string, string> = { 'Rozdzielczość': dpi, 'Panel': panel === '1' ? 'LED' : 'Ekran dotykowy' }
-  if (radio === '1') attributes['Łączność radiowa'] = 'Wi-Fi + BT 5.0'
-  if (radio === '2') attributes['Łączność radiowa'] = 'Bluetooth MFi 5.3'
-  if (handling === '1') attributes['Obsługa etykiet'] = 'Odklejak'
-  if (handling === '2') attributes['Obsługa etykiet'] = 'Obcinarka'
+  const equipment = [radio === '1' ? 'Wi-Fi + BT 5.0' : radio === '2' ? 'BT MFi 5.3' : '', handling === '1' ? 'Odklejak' : handling === '2' ? 'Obcinarka' : ''].filter(Boolean)
+  if (equipment.length) attributes['Wyposażenie'] = equipment.join(', ')
   const model = `${pn.startsWith('DH220') ? 'DH220L' : 'DH320L'}${panel === '1' ? '' : 'T'}HC`
   const extras = [radio === '1' ? 'Wi-Fi + Bluetooth 5.0' : radio === '2' ? 'Bluetooth MFi 5.3' : 'USB + RS-232 + Ethernet', handling === '1' ? 'odklejak' : handling === '2' ? 'obcinarka' : '']
   return { partNumber: pn, name: [`${model}, ${dpi}`, ...extras.filter(Boolean)].join(', '), attributes, priceFrom, availability: 'unavailable' }
@@ -622,9 +621,8 @@ Modele DH220LHC i DH320LHC mają panel z diodą stanu i trzema ikonami. DH220LTH
   ],
   variantAttributeTooltips: {
     'Rozdzielczość': 'Rozdzielczość głowicy.\n\n203 dpi (DH220L) — do 203 mm/s na szerokości 54 mm.\n\n300 dpi (DH320L) — do 152 mm/s na szerokości 56,9 mm; do drobnych danych na opasce.',
-    'Panel': 'Sposób obsługi drukarki.\n\nLED — dioda stanu, trzy ikony i cztery przyciski (modele DH220LHC i DH320LHC).\n\nEkran dotykowy — kolorowy ekran 3,5 cala do zmiany ustawień bez komputera (DH220LTHC i DH320LTHC).',
-    'Łączność radiowa': 'Moduł bezprzewodowy w danej wersji; Ethernet, RS-232, USB i USB Host ma każda.\n\nWi-Fi + BT 5.0 — sieć 802.11a/b/g/n/ac i Bluetooth 5.0.\n\nBluetooth MFi 5.3 — Bluetooth z certyfikatem Apple MFi do druku z iPhone lub iPad.',
-    'Obsługa etykiet': 'Wyposażenie przy wylocie materiału; bez oznaczenia etykiety odrywa się ręcznie.\n\nOdklejak — oddziela etykietę od podkładu i podaje ją do naklejenia.\n\nObcinarka — gilotyna do cięcia pełnego i częściowego, np. do opasek i etykiet ciągłych.',
+    'Panel': 'Sposób obsługi drukarki.\n\nLED — dioda stanu i trzy ikony stanu (modele DH220LHC i DH320LHC).\n\nEkran dotykowy — kolorowy ekran 3,5 cala do zmiany ustawień bez komputera (DH220LTHC i DH320LTHC).',
+    'Wyposażenie': 'Moduł zamontowany w danej wersji; Ethernet, RS-232, USB i USB Host ma każda wersja.\n\nWi-Fi + BT 5.0 — sieć 802.11a/b/g/n/ac i Bluetooth 5.0.\n\nBT MFi 5.3 — Bluetooth 5.3 z certyfikatem Apple MFi do druku z iPhone lub iPad.\n\nOdklejak — oddziela etykietę od podkładu i podaje ją do naklejenia.\n\nObcinarka — gilotyna do cięcia pełnego i częściowego; bez odklejaka i obcinarki etykiety odrywa się ręcznie.',
   },
   compatibleAccessories: [],
   relatedAccessories: [],
@@ -664,7 +662,7 @@ Modele DH220LHC i DH320LHC mają panel z diodą stanu i trzema ikonami. DH220LTH
   ],
   downloads: [
     datasheetThDh,
-    { name: 'Instrukcja obsługi serii DH220L, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-dh220l-instrukcja-en.pdf', size: '2,5 MB' },
+    { name: 'Instrukcja obsługi TSC DH220L (EN)', type: 'manual', url: '/downloads/tsc-dh220l-instrukcja-en.pdf', size: '2,5 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/dh-series-2-inch-performance-desktop-printers', size: 'Online' },
   ],
   relatedProducts: ['tsc-dh220thc', 'sato-ws2-2', 'tsc-th220thc', 'zebra-zd411-hc', 'zebra-zd611-hc'],
@@ -678,7 +676,7 @@ const alpha30lhc: Product = {
   name: 'TSC Alpha-30LHC',
   shortDescription: 'TSC Alpha-30LHC — 3-calowa mobilna drukarka etykiet dla służby zdrowia: biało-szara obudowa antybakteryjna, IP54, Wi-Fi, Bluetooth i NFC, zasilacz IEC 60601-1.',
   seoTitle: 'TSC Alpha-30LHC — mobilna drukarka etykiet dla służby zdrowia',
-  seoDescription: 'Mobilna drukarka etykiet TSC Alpha-30LHC (Alpha-30L HC) dla ratownictwa medycznego i laboratoriów: druk termiczny 3", 203 dpi, IP54, bateria 3030 mAh, Wi-Fi i Bluetooth. Drukarka mobilna TSC Alpha-30LHC, Alpha-30LHC TSC. PN: A30LHC-A001-1002.',
+  seoDescription: 'Mobilna drukarka etykiet TSC Alpha-30LHC (Alpha-30L HC) dla ratownictwa medycznego i do etykietowania próbek: druk termiczny 3", 203 dpi, IP54, bateria 3030 mAh, Wi-Fi i Bluetooth. Drukarka mobilna TSC Alpha-30LHC, Alpha-30LHC TSC. PN: A30LHC-A001-1002.',
   description: `TSC Alpha-30LHC to 3-calowa mobilna drukarka termiczna w wersji dla ochrony zdrowia, z obudową w kolorze białym i szarym. Jest przeznaczona m.in. dla zespołów ratownictwa medycznego, do karetek i do etykietowania próbek. Drukuje etykiety i paragony, zasilana z baterii.
 
 Obudowa z tworzywa pokrytego gumą jest antybakteryjna i przygotowana do dezynfekcji, a uszczelnione przyciski ułatwiają jej przecieranie. Zasilacz z zestawu ma certyfikat IEC 60601-1. Ten sam certyfikat ma zasilacz opcjonalnej ładowarki na cztery baterie w wersji dla ochrony zdrowia.
@@ -720,7 +718,7 @@ Wersja A30LHC-A001-1002 łączy się przez USB-C, Wi-Fi 802.11a/b/g/n/ac i Bluet
     { name: 'Długość etykiety', value: '12,7–2794 mm; w trybie odklejania 25,4–152,4 mm' },
     { name: 'Rodzaje materiałów', value: 'Etykiety wycinane, z czarnym znacznikiem, papier paragonowy, składanka, materiał bez podkładu, materiał ciągły (nawinięcie na zewnątrz)' },
     { name: 'Czujniki', value: 'Refleksyjny, transmisyjny, czujnik odklejania, czujnik otwarcia głowicy' },
-    { name: 'Panel obsługi', value: 'Kolorowy wyświetlacz LCD 2,3 cala (320 × 240 pikseli), 2 diody (ładowanie, stan drukarki), 7 przycisków (zasilanie, podawanie, menu, nawigacja)' },
+    { name: 'Panel obsługi', value: 'Kolorowy wyświetlacz LCD 2,3 cala (320 × 240 pikseli), 2 diody (ładowanie, stan drukarki), 7 przycisków (zasilanie, podawanie/pauza, menu, nawigacja)' },
     { name: 'Interfejsy', value: 'USB-C 2.0 (tylko komunikacja), Wi-Fi 802.11a/b/g/n/ac z Bluetooth 5.0, pasywny znacznik NFC' },
     { name: 'Pamięć', value: '128 MB SDRAM, 128 MB Flash; czytnik microSD do 32 GB' },
     { name: 'Zegar czasu rzeczywistego', value: 'Standard' },
@@ -740,7 +738,7 @@ Wersja A30LHC-A001-1002 łączy się przez USB-C, Wi-Fi 802.11a/b/g/n/ac i Bluet
     'Zespoły ratownictwa medycznego',
     'Karetki',
     'Etykietowanie próbek',
-    'Paragony i potwierdzenia drukowane w terenie',
+    'Paragony drukowane w terenie',
   ],
   variants: [
     { partNumber: 'A30LHC-A001-1002', name: 'Alpha-30LHC, 203 dpi, USB-C + Wi-Fi + Bluetooth 5.0 + NFC', attributes: { 'Łączność': 'Wi-Fi + BT 5.0 + NFC' }, priceFrom: 2952.09, availability: 'available' },
@@ -781,8 +779,8 @@ Wersja A30LHC-A001-1002 łączy się przez USB-C, Wi-Fi 802.11a/b/g/n/ac i Bluet
     },
   ],
   downloads: [
-    { name: 'Karta katalogowa TSC Alpha-30L/40L, w tym Alpha-30LHC (EN)', type: 'datasheet', url: '/downloads/tsc-alpha-30l-40l-karta-produktu-en.pdf', size: '1,6 MB' },
-    { name: 'Instrukcja obsługi serii Alpha-30L/40L, w tym HC (EN)', type: 'manual', url: '/downloads/tsc-alpha-30l-40l-instrukcja-en.pdf', size: '2,3 MB' },
+    { name: 'Karta katalogowa Alpha-30L (EN)', type: 'datasheet', url: '/downloads/tsc-alpha-30l-40l-karta-produktu-en.pdf', size: '1,6 MB' },
+    { name: 'Instrukcja TSC Alpha-30L/40L (EN)', type: 'manual', url: '/downloads/tsc-alpha-30l-40l-instrukcja-en.pdf', size: '2,3 MB' },
     { name: 'Sterowniki i wsparcie TSC', type: 'driver', url: 'https://emea.tscprinters.com/en/products/alpha-series-3-inch-performance-mobile-printers', size: 'Online' },
   ],
   relatedProducts: ['zebra-zq620-plus-hc'],
