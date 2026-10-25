@@ -33,3 +33,5 @@
 - Nowe dokumenty do pobrania zapisuj na infrastrukturze TAKMA, np. w `public/datasheets/` lub `public/instrukcje/`, i podpinaj lokalne adresy. Nie kieruj przycisków pobierania PDF do serwerów producentów ani dystrybutorów.
 - Zachowuj oryginalną treść dokumentów. Adres źródłowy, wersję i datę pozyskania zapisuj w dokumentacji roboczej.
 - Przed publikacją sprawdź, czy plik jest rzeczywistym PDF, a nie stroną błędu HTML. Po wdrożeniu sprawdź pobieranie z domeny TAKMA, kod 200 i typ pliku. Nie dodawaj odnośnika do dokumentu, którego nie udało się pozyskać.
+
+- Animacje produktów: nie dodawaj widocznych nakładek „Pauza”, „Odtwórz” ani „Powtórz”. Animacje mają działać bez takich przycisków na obrazie (preferencja właściciela, 25.10.2026). Zachowaj obsługę ograniczonego ruchu i sterowanie dostępne dla technologii asystujących.

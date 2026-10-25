@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from 'react'
 import s from './ProductMotion.module.css'
 
-type MotionProps = { src: string; poster?: string; label: string; loop?: boolean; className?: string }
+type MotionProps = { src: string; poster?: string; label: string; loop?: boolean; className?: string; showControls?: boolean }
 
-export function ProductMotion({ src, poster, label, loop = true, className = '' }: MotionProps) {
+export function ProductMotion({ src, poster, label, loop = true, className = '', showControls = false }: MotionProps) {
   const ref = useRef<HTMLVideoElement>(null)
   const manuallyPaused = useRef(false)
   const [loaded, setLoaded] = useState(false)
@@ -40,7 +40,7 @@ export function ProductMotion({ src, poster, label, loop = true, className = '' 
 
   return <div className={`${s.motion} ${className}`}>
     <video ref={ref} src={loaded ? src : undefined} poster={poster} muted loop={loop} playsInline preload="none" aria-label={label} onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => { setEnded(true); setPlaying(false) }} />
-    <button type="button" onClick={toggle} aria-label={`${playing ? 'Zatrzymaj' : ended ? 'Powtórz' : 'Odtwórz'}: ${label}`}>{playing ? 'Ⅱ Pauza' : ended ? '↻ Powtórz' : '▶ Odtwórz'}</button>
+    <button className={showControls ? undefined : s.hiddenControl} type="button" onClick={toggle} aria-label={`${playing ? 'Zatrzymaj' : ended ? 'Powtórz' : 'Odtwórz'}: ${label}`}>{playing ? 'Ⅱ Pauza' : ended ? '↻ Powtórz' : '▶ Odtwórz'}</button>
   </div>
 }
 
