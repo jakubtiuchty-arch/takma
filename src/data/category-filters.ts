@@ -2260,3 +2260,20 @@ categoryFilters['terminale-dla-sluzby-zdrowia'] = [
     { value: 'W obudowie terminala', slugs: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55', 'cipherlab-rs38h'] },
   ] },
 ]
+
+// Programy do etykiet (BarTender, Loftware Cloud): filtry po slugach, bo karty licencji nie mają wspólnych wierszy
+// specyfikacji. Z filtrami strona ma ten sam układ co pozostałe podkategorie z treścią rozszerzoną, w tym tabelę porównawczą.
+categoryFilters['programy-do-etykiet'] = [
+  { specKey: 'producent', label: 'Producent', derived: [
+    { value: 'BarTender', manufacturer: 'bartender' },
+    { value: 'Loftware', manufacturer: 'loftware' },
+  ] },
+  { specKey: 'miejsce', label: 'Gdzie działa', description: 'Gdzie pracuje program.\n• Windows — program instalowany na komputerach firmy\n• Przeglądarka — projektowanie i druk z chmury; Loftware Cloud ma też Desktop Designer dla Windows', derived: [
+    { value: 'Windows', slugs: ['bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'] },
+    { value: 'Przeglądarka', slugs: ['bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'] },
+  ] },
+  { specKey: 'licencja', label: 'Licencja', description: 'Sposób liczenia licencji.\n• Na stanowisko — BarTender Workstation: 1 użytkownik na 1 komputerze, drukarki bez limitu\n• Na liczbę drukarek — limit drukarek, użytkownicy lub komputery bez limitu', derived: [
+    { value: 'Na stanowisko', slugs: ['bartender-starter', 'bartender-professional'] },
+    { value: 'Na liczbę drukarek', slugs: ['bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'] },
+  ] },
+]

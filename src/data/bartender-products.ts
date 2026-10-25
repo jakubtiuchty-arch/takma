@@ -48,7 +48,7 @@ Subskrypcja trwa 1, 3 albo 5 lat. Cena obejmuje standardowe wsparcie producenta 
   priceFrom: 751.44,
   images: ['/images/products/BTS-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
   imageDescriptions: [
-    'BarTender Starter — wybór szablonu etykiety z biblioteki BarTender, filtr według branży: motoryzacja, przemysł, life sciences, edukacja',
+    'BarTender Starter — wybór szablonu etykiety z biblioteki BarTender, filtr według branży: motoryzacja, edukacja, life sciences, produkcja',
     'BarTender 12 — grafika producenta „What’s New in BarTender 12” z numerem wersji',
   ],
   tags: [],
@@ -83,7 +83,7 @@ Subskrypcja trwa 1, 3 albo 5 lat. Cena obejmuje standardowe wsparcie producenta 
     { partNumber: 'BTS-WS-SUB-5YR', name: 'BarTender Starter — Workstation, subskrypcja 5 lat', attributes: { 'Okres': '5 lat' }, priceFrom: 3757.2, availability: 'available' },
   ],
   variantAttributeTooltips: {
-    'Okres': 'Czas, na jaki licencja BarTender Starter działa na jednym komputerze.\n\nW całym okresie obowiązuje standardowe wsparcie producenta z aktualizacjami.\n\nWarianty 3 i 5 lat nie wymagają corocznego odnawiania.',
+    'Okres': 'Czas, na jaki licencja BarTender Starter działa na jednym komputerze.\n\nSubskrypcja obejmuje standardowe wsparcie producenta z aktualizacjami.\n\nWarianty 3 i 5 lat nie wymagają corocznego odnawiania.',
   },
   compatibleAccessories: [],
   relatedProducts: powiazane('bartender-starter'),
@@ -102,7 +102,7 @@ Subskrypcja trwa 1, 3 albo 5 lat. Cena obejmuje standardowe wsparcie producenta 
     },
     {
       question: 'Co się dzieje po upływie okresu subskrypcji Starter?',
-      answer: 'Według umowy licencyjnej Seagull Software subskrypcja przedłuża się automatycznie o 12 miesięcy, jeśli klient nie złoży pisemnego wypowiedzenia na 90 dni przed końcem okresu. Klienci z Europejskiego Obszaru Gospodarczego mogą wypowiedzieć subskrypcję wcześniej, z 60-dniowym wyprzedzeniem. W sprawie przedłużenia lub zmiany edycji prosimy o zapytanie.',
+      answer: 'Według umowy licencyjnej Seagull Software subskrypcja przedłuża się automatycznie o 12 miesięcy, jeśli klient nie złoży pisemnego wypowiedzenia na 90 dni przed końcem okresu. Klienci z Europejskiego Obszaru Gospodarczego mogą na mocy unijnego Data Act wypowiedzieć subskrypcję wcześniej, z 60-dniowym wyprzedzeniem; opłaty za pozostałą część okresu pozostają wtedy należne. W sprawie przedłużenia lub zmiany edycji prosimy o zapytanie.',
     },
     {
       question: 'Czy BarTender Starter obsłuży drukarkę Zebra, Brother albo TSC?',
@@ -140,7 +140,7 @@ Główną funkcją edycji są Intelligent Templates. Szablon z warstwami i selek
 
 Professional łączy się z ponad 20 skonfigurowanymi źródłami danych i zapisuje dane zwrotnie do baz SQL. Numeracja może być alfanumeryczna, szesnastkowa lub według własnego wzorca. Formularze wprowadzania danych przyjmują wartości ze skanera i wagi. Edycja koduje znaczniki RFID i umożliwia zdalny druk przez przeglądarkę, także bez sterownika na urządzeniu użytkownika.
 
-Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Standard Maintenance & Support jest w cenie subskrypcji.`,
+Uprawnienia użytkowników i grup oraz hasła chronią dokumenty i druk. Wsparcie Standard Maintenance & Support jest w cenie subskrypcji.`,
   categoryId: 'oprogramowanie',
   subcategoryIds: ['programy-do-etykiet'],
   manufacturerId: 'bartender',
@@ -169,7 +169,7 @@ Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Sta
     { name: 'Numeracja', value: 'Alfanumeryczna, szesnastkowa i według własnych wzorców' },
     { name: 'Formularze', value: 'Formularze wprowadzania danych: wybór rekordów, dane ze skanera i wagi, zdjęcia, walidacja danych' },
     { name: 'Druk i kodowanie', value: 'Kodowanie RFID, zdalny druk przez przeglądarkę, druk zdalny bez sterownika, Drivers by Seagull' },
-    { name: 'Bezpieczeństwo', value: 'Uprawnienia oparte na rolach, ochrona dokumentów i druku hasłem' },
+    { name: 'Bezpieczeństwo', value: 'Uprawnienia użytkowników i grup, ochrona dokumentów i druku hasłem' },
     { name: 'Baza systemowa', value: 'Microsoft SQL Server 2012 lub nowszy dla funkcji System Database i History Explorer; SQL Server 2025 Express w pakiecie' },
     ...BT_WYMAGANIA,
     BT_DOSTAWA,
@@ -196,7 +196,7 @@ Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Sta
   ],
   variantAttributeTooltips: {
     'Licencja': 'Sposób liczenia licencji BarTender Professional.\n\nWorkstation — jeden użytkownik na jednym komputerze, drukarki bez limitu.\n\nNa drukarki — określona liczba drukarek, dowolna liczba użytkowników w sieci.\n\nDodatkowa drukarka — rozszerzenie posiadanej licencji Professional na drukarki.',
-    'Drukarki': 'Liczba drukarek, na których licencja pozwala drukować w tym samym czasie.\n\nDrukarka zwalnia miejsce w licencji po 7 dniach bez wydruku.\n\n+1 — jedna drukarka więcej w posiadanej licencji.',
+    'Drukarki': 'Liczba drukarek, z których może korzystać licencja Professional.\n\nBez limitu — licencja Workstation; 2, 5, 10 — licencja na drukarki, w której drukarka zwalnia miejsce po 7 dniach bez wydruku.\n\n+1 — jedna drukarka więcej w posiadanej licencji.',
     'Okres': 'Czas obowiązywania subskrypcji Professional ze standardowym wsparciem producenta.\n\nWorkstation: 1, 3 lub 5 lat; licencja na drukarki: 1 rok lub 3 lata.',
   },
   compatibleAccessories: [],
@@ -212,7 +212,7 @@ Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Sta
     },
     {
       question: 'Jak dokupić drukarkę do posiadanej licencji?',
-      answer: 'Służy do tego wariant „Dodatkowa drukarka” (BTP-PRT-SUB-1YR lub BTP-PRT-SUB-3YR). Rozszerza on istniejącą licencję Professional na drukarki o jedną drukarkę, a jego okres dopasowuje się do subskrypcji licencji głównej. Licencja Workstation nie wymaga dokupowania drukarek.',
+      answer: 'Służy do tego wariant „Dodatkowa drukarka” (BTP-PRT-SUB-1YR lub BTP-PRT-SUB-3YR). Rozszerza on istniejącą licencję Professional na drukarki o jedną drukarkę i bez niej nie działa. Licencja Workstation nie wymaga dokupowania drukarek.',
     },
     {
       question: 'Do czego służą Intelligent Templates?',
@@ -224,7 +224,7 @@ Uprawnienia oparte na rolach i hasła chronią dokumenty oraz druk. Wsparcie Sta
     },
     {
       question: 'Jak wygląda odnowienie subskrypcji Professional?',
-      answer: 'Umowa licencyjna producenta przewiduje automatyczne przedłużenie o kolejne 12 miesięcy, chyba że klient pisemnie wypowie subskrypcję 90 dni przed jej końcem. W Europejskim Obszarze Gospodarczym obowiązuje także możliwość wcześniejszego wypowiedzenia z 60-dniowym wyprzedzeniem. Przedłużenie i zmianę edycji wyceniamy na zapytanie.',
+      answer: 'Umowa licencyjna producenta przewiduje automatyczne przedłużenie o kolejne 12 miesięcy, chyba że klient pisemnie wypowie subskrypcję 90 dni przed jej końcem. W Europejskim Obszarze Gospodarczym umowa dopuszcza też wcześniejsze wypowiedzenie z 60-dniowym wyprzedzeniem, ale producent zachowuje prawo do opłat do końca bieżącego okresu. Przedłużenie i zmianę edycji wyceniamy na zapytanie.',
     },
     {
       question: 'Czy do BarTender Professional potrzebny jest SQL Server?',
@@ -330,7 +330,7 @@ Subskrypcja trwa 1 rok albo 3 lata i obejmuje standardowe wsparcie producenta. L
     },
     {
       question: 'Co zrobić, gdy liczba drukarek wzrośnie?',
-      answer: 'Licencję rozszerza się wariantem „+1” (BTA-PRT-SUB-1YR lub BTA-PRT-SUB-3YR), osobno dla każdej nowej drukarki. Okres dodatkowej drukarki jest wyrównany do subskrypcji licencji głównej. Drukarka nieużywana przez 7 dni przestaje być liczona w limicie.',
+      answer: 'Licencję rozszerza się wariantem „+1” (BTA-PRT-SUB-1YR lub BTA-PRT-SUB-3YR), osobno dla każdej nowej drukarki. Pozycja działa tylko razem z posiadaną licencją Automation. Drukarka nieużywana przez 7 dni przestaje być liczona w limicie.',
     },
     {
       question: 'Jak przebiega dostawa i aktywacja licencji Automation?',
@@ -338,7 +338,7 @@ Subskrypcja trwa 1 rok albo 3 lata i obejmuje standardowe wsparcie producenta. L
     },
     {
       question: 'Czy subskrypcja Automation odnawia się sama?',
-      answer: 'Tak, według umowy licencyjnej Seagull Software. Po zakończeniu okresu subskrypcja trwa dalej przez 12 miesięcy, chyba że licencjobiorca wypowie ją pisemnie z 90-dniowym wyprzedzeniem. W EOG dostępne jest wcześniejsze wypowiedzenie z wyprzedzeniem 60 dni. O przedłużenie albo zmianę edycji prosimy pytać przed końcem okresu.',
+      answer: 'Tak, według umowy licencyjnej Seagull Software. Po zakończeniu okresu subskrypcja trwa dalej przez 12 miesięcy, chyba że licencjobiorca wypowie ją pisemnie z 90-dniowym wyprzedzeniem. W EOG wcześniejsze wypowiedzenie z wyprzedzeniem 60 dni jest możliwe, przy czym licencjobiorca płaci za resztę okresu subskrypcji. O przedłużenie albo zmianę edycji prosimy pytać przed końcem okresu.',
     },
   ],
   downloads: [
@@ -364,7 +364,7 @@ const enterprise: Product = {
   seoDescription: 'BarTender Enterprise: program do etykiet z repozytorium Librarian, Workflow Designer, dziennikiem audytu, podpisami elektronicznymi i zapasowym serwerem licencji. Licencja BarTender Enterprise na drukarki, subskrypcja, cena na zapytanie. PN: BTE-3-SUB-1YR, BTE-5-SUB-1YR, BTE-10-SUB-1YR, BTE-20-SUB-1YR, BTE-PRT-SUB-1YR.',
   description: `BarTender Enterprise to edycja programu do etykiet Seagull Software dla organizacji, które muszą kontrolować zmiany w szablonach i rejestrować działania użytkowników. Licencja jest przypisana do liczby drukarek (3, 5, 10 lub 20) i nie ogranicza liczby użytkowników.
 
-Dokumenty i pliki przechowuje centralne repozytorium Librarian, które zapisuje kolejne wersje. Workflow Designer określa etapy zatwierdzania szablonu, zanim trafi on do produkcji. Dostęp do funkcji wyznaczają uprawnienia oparte na rolach. Dziennik audytu rejestruje zdarzenia w systemie. Podpisy elektroniczne wymagają podania danych logowania przy wybranych czynnościach, a dokumenty można szyfrować.
+Dokumenty i pliki przechowuje centralne repozytorium Librarian, które zapisuje kolejne wersje. Workflow Designer określa etapy zatwierdzania szablonu, zanim trafi on do produkcji. Dostęp do dokumentów i funkcji określa zarządzanie uprawnieniami według ról. Dziennik audytu rejestruje zdarzenia w systemie, a liczba zapisów nie jest ograniczona. Podpisy elektroniczne wymagają podania danych logowania przy wybranych czynnościach, a dokumenty można szyfrować.
 
 Ciągłość druku wspierają przełączanie zadań na inną drukarkę (printer failover) i zapasowy serwer licencji. Enterprise synchronizuje treści między instalacją lokalną a BarTender Cloud. Edycja ma integracje znane z Automation oraz Print Portal REST API, zaawansowane globalne pola bazy danych i bibliotekę wielojęzycznych tekstów Phrase Library.
 
@@ -392,8 +392,8 @@ Wdrożenie Enterprise zależy od liczby drukarek, lokalizacji i systemów do po�
     { name: 'Drukarki', value: '3, 5, 10 lub 20; rozszerzenie o kolejne drukarki' },
     { name: 'Okres subskrypcji', value: '1 rok; inne okresy na zapytanie' },
     { name: 'Wsparcie', value: 'Standard Maintenance & Support w cenie; Premium Maintenance & Support jako opcja' },
-    { name: 'Zarządzanie dokumentami', value: 'Repozytorium Librarian z kontrolą wersji, Workflow Designer, uprawnienia oparte na rolach' },
-    { name: 'Audyt i bezpieczeństwo', value: 'Dziennik audytu systemu, podpisy elektroniczne, szyfrowanie dokumentów' },
+    { name: 'Zarządzanie dokumentami', value: 'Repozytorium Librarian z kontrolą wersji, Workflow Designer, zarządzanie uprawnieniami według ról' },
+    { name: 'Audyt i bezpieczeństwo', value: 'Dziennik audytu systemu bez limitu zapisów, podpisy elektroniczne, szyfrowanie dokumentów' },
     { name: 'Ciągłość działania', value: 'Printer failover, zapasowy serwer licencji' },
     { name: 'Integracje', value: 'REST API, File Drop, e-mail, TCP/IP, monitorowanie bazy danych, .NET SDK, BarTender REST API, Print Portal REST API' },
     { name: 'Dane', value: 'Zaawansowane globalne pola bazy danych, Phrase Library — biblioteka wielojęzycznych tekstów' },
@@ -416,7 +416,7 @@ Wdrożenie Enterprise zależy od liczby drukarek, lokalizacji i systemów do po�
     { partNumber: 'BTE-PRT-SUB-1YR', name: 'BarTender Enterprise — dodatkowa drukarka, 1 rok', attributes: { 'Drukarki': '+1' }, availability: 'available' },
   ],
   variantAttributeTooltips: {
-    'Drukarki': 'Liczba drukarek objętych roczną licencją Enterprise; liczba użytkowników jest nieograniczona.\n\n+1 — kolejna drukarka do posiadanej licencji Enterprise, w okresie licencji głównej.',
+    'Drukarki': 'Liczba drukarek objętych roczną licencją Enterprise; liczba użytkowników jest nieograniczona.\n\n+1 — kolejna drukarka do posiadanej licencji Enterprise; bez niej nie działa.',
   },
   compatibleAccessories: [],
   relatedProducts: powiazane('bartender-enterprise'),
@@ -431,7 +431,7 @@ Wdrożenie Enterprise zależy od liczby drukarek, lokalizacji i systemów do po�
     },
     {
       question: 'Czym Enterprise różni się od Automation?',
-      answer: 'Obie edycje mają te same integracje. Enterprise dodaje Librarian, Workflow Designer, uprawnienia oparte na rolach, dziennik audytu, podpisy elektroniczne, szyfrowanie dokumentów, printer failover, zapasowy serwer licencji, Print Portal REST API i synchronizację z BarTender Cloud. Bez tych funkcji wystarcza [BarTender Automation](/produkt/bartender-automation).',
+      answer: 'Obie edycje mają te same integracje. Enterprise dodaje Librarian, Workflow Designer, zarządzanie uprawnieniami według ról, dziennik audytu, podpisy elektroniczne, szyfrowanie dokumentów, printer failover, zapasowy serwer licencji, Print Portal REST API i synchronizację z BarTender Cloud. Bez tych funkcji wystarcza [BarTender Automation](/produkt/bartender-automation).',
     },
     {
       question: 'Co się stanie, gdy serwer licencji BarTender będzie niedostępny?',
@@ -439,7 +439,7 @@ Wdrożenie Enterprise zależy od liczby drukarek, lokalizacji i systemów do po�
     },
     {
       question: 'Jakie dane są potrzebne do zamówienia licencji Enterprise?',
-      answer: 'Do oferty i zamówienia potrzebne są nazwa firmy licencjobiorcy oraz adres e-mail osoby, która zarejestruje licencję w BarTender Customer Portal. Kod licencji przychodzi na ten adres e-mail.',
+      answer: 'Oferta i zamówienie wymagają nazwy firmy licencjobiorcy oraz e-maila administratora licencji. Ta osoba otrzymuje kod licencji i rejestruje go w BarTender Customer Portal.',
     },
   ],
   downloads: [
@@ -493,9 +493,9 @@ Plan Enterprise dodaje gotowe konektory druku z systemów ERP i logowanie jednok
     { name: 'Producent', value: 'Seagull Software' },
     { name: 'Usługa', value: 'BarTender Cloud (SaaS), dostęp przez przeglądarkę' },
     { name: 'Plany', value: 'Essentials, Automation, Enterprise' },
-    { name: 'Model licencji', value: 'Roczna subskrypcja liczona według drukarek' },
+    { name: 'Model licencji', value: 'Subskrypcja liczona według drukarek; w sklepie plany roczne' },
     { name: 'Użytkownicy', value: 'Bez limitu' },
-    { name: 'Drukarki', value: 'Essentials: 1, 2 lub 5; Automation: 2, 3, 5 lub 20; Enterprise: od 10, rozszerzenie o kolejne drukarki' },
+    { name: 'Drukarki', value: 'Essentials: 1, 2 lub 5; Automation: 2, 3, 5 lub 20; Enterprise: według oferty, z rozszerzeniem o kolejne drukarki' },
     { name: 'Przestrzeń konta', value: 'Essentials: 2 GB; Automation i Enterprise: 5 GB' },
     { name: 'Wsparcie', value: 'Essentials: poziom Essential; Automation i Enterprise: poziom Standard, opcja Premium' },
     { name: 'Projektowanie', value: 'BarTender Cloud Designer, ponad 400 szablonów, ponad 100 symbologii kodów 1D i 2D, Intelligent Templates, Template Assistant, Font Manager' },
@@ -541,11 +541,11 @@ Plan Enterprise dodaje gotowe konektory druku z systemów ERP i logowanie jednok
     },
     {
       question: 'Czym BarTender Cloud różni się od BarTender instalowanego lokalnie?',
-      answer: 'Wersja w chmurze nie wymaga serwera w firmie, a aktualizacje producent wdraża sam. Wersje lokalne Starter, Professional, Automation i Enterprise działają na komputerach z Windows i mogą drukować bez stałego połączenia z internetem. Lokalnie dostępna jest też licencja Workstation, której BarTender Cloud nie oferuje.',
+      answer: 'Wersja w chmurze nie wymaga serwera w firmie, a aktualizacje producent wdraża sam. Wersje lokalne Starter, Professional, Automation i Enterprise działają na komputerach z Windows i drukują bez stałego połączenia z internetem. Usługa licencji subskrypcyjnej musi jednak okresowo łączyć się z serwerem aktywacji producenta. Lokalnie dostępna jest też licencja Workstation, której BarTender Cloud nie oferuje.',
     },
     {
       question: 'Jak liczone są drukarki i użytkownicy w BarTender Cloud?',
-      answer: 'Subskrypcja określa liczbę drukarek: 1, 2 lub 5 w Essentials oraz 2, 3, 5 lub 20 w Automation. Użytkowników konta może być dowolnie wielu, także spoza firmy, np. dostawców drukujących etykiety według udostępnionych szablonów.',
+      answer: 'Subskrypcja określa liczbę drukarek. W sklepie są plany Essentials na 1, 2 lub 5 drukarek oraz Automation na 2, 3, 5 lub 20 drukarek. Użytkowników konta może być dowolnie wielu, także spoza firmy, np. dostawców drukujących etykiety według udostępnionych szablonów.',
     },
     {
       question: 'Jakie dane są potrzebne do zamówienia BarTender Cloud?',
@@ -553,7 +553,7 @@ Plan Enterprise dodaje gotowe konektory druku z systemów ERP i logowanie jednok
     },
     {
       question: 'Czy subskrypcja BarTender Cloud przedłuża się automatycznie?',
-      answer: 'Warunki licencji Seagull Software przewidują przedłużenie o 12 miesięcy, jeśli subskrypcja nie zostanie wypowiedziana pisemnie co najmniej 90 dni przed jej wygaśnięciem. Klienci z EOG mogą zakończyć subskrypcję wcześniej, po 60-dniowym okresie wypowiedzenia. Zmianę planu lub liczby drukarek wyceniamy na zapytanie.',
+      answer: 'Warunki licencji Seagull Software przewidują przedłużenie o 12 miesięcy, jeśli subskrypcja nie zostanie wypowiedziana pisemnie co najmniej 90 dni przed jej wygaśnięciem. Klienci z EOG mogą zakończyć subskrypcję wcześniej, po 60-dniowym okresie wypowiedzenia, z obowiązkiem zapłaty za pozostałe miesiące okresu. Zmianę planu lub liczby drukarek wyceniamy na zapytanie.',
     },
     {
       question: 'Czy BarTender Cloud ma wersję próbną?',

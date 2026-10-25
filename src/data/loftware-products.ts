@@ -18,11 +18,11 @@ const designer: Product = {
   shortDescription: 'Loftware Cloud Designer (NiceLabel) — roczna subskrypcja programu do etykiet w chmurze: Web Designer w przeglądarce, Desktop Designer dla Windows, od 1 do 10 drukarek.',
   seoTitle: 'Loftware Cloud Designer — program do etykiet w chmurze',
   seoDescription: 'Loftware Cloud Designer: subskrypcja programu do projektowania i drukowania etykiet w chmurze, 1–10 drukarek, Web Designer i Desktop Designer. Program do projektowania etykiet Loftware, NiceLabel Cloud Designer, licencja Loftware Cloud Designer, subskrypcja NiceLabel. PN: NSCDBA001Y, NSCDAD001Y.',
-  description: `Loftware Cloud Designer to roczna subskrypcja programu do projektowania i drukowania etykiet w chmurze Loftware Cloud. Edycja jest przeznaczona dla małych i średnich firm, które drukują etykiety na kilku drukarkach.
+  description: `Loftware Cloud Designer to roczna subskrypcja Loftware Cloud, w której etykiety projektuje się i drukuje z chmury. Edycja jest przeznaczona dla małych i średnich firm, które drukują etykiety na kilku drukarkach.
 
 Pliki etykiet są zapisane w Loftware Control Center, czyli w panelu otwieranym w przeglądarce. Etykietę projektuje się w Web Designer w przeglądarce albo w programie Loftware Desktop Designer na komputerze z Windows. Ten sam plik otwiera się w obu edytorach. Gotowe etykiety drukuje się także z aplikacji Loftware Print, bez otwierania projektu. Druk zdalny działa na każdej drukarce podłączonej do komputera z programem Desktop Designer.
 
-Licencja obejmuje miejsca drukarek. Każda drukarka fizyczna lub wirtualna, np. PDF albo XPS, zajmuje jedno miejsce. Liczba komputerów i użytkowników w jednej domenie nie jest ograniczona. Subskrypcja NSCDBA001Y obejmuje jedną drukarkę, a każde rozszerzenie NSCDAD001Y dodaje kolejną, łącznie do 10.
+Licencja obejmuje miejsca drukarek. Każda drukarka fizyczna lub wirtualna, np. PDF albo XPS, zajmuje jedno miejsce. Liczba komputerów w jednej domenie nie jest ograniczona, a wszystkie używają jednego klucza licencji. Subskrypcja NSCDBA001Y obejmuje jedną drukarkę, a każde rozszerzenie NSCDAD001Y dodaje kolejną, łącznie do 10.
 
 Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etykiet program pobiera m.in. z Excela, plików tekstowych, SQL Server, Oracle, MySQL i Google Sheets. Po zakupie licencjobiorca otrzymuje zaproszenie e-mailem i loguje się kontem Microsoft albo Google.`,
   categoryId: 'oprogramowanie',
@@ -63,7 +63,7 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
     { name: 'Edycja', value: 'Loftware Cloud Designer' },
     { name: 'Model licencji', value: 'Subskrypcja na 1 rok, liczona miejscami drukarek' },
     { name: 'Drukarki', value: '1 w subskrypcji podstawowej, rozszerzenia po 1 drukarce, łącznie do 10' },
-    { name: 'Komputery i użytkownicy', value: 'Bez limitu w jednej domenie, jeden klucz licencji dla wszystkich komputerów' },
+    { name: 'Komputery', value: 'Bez limitu w jednej domenie, jeden klucz licencji dla wszystkich komputerów' },
     { name: 'Składniki', value: 'Loftware Control Center (chmura), Web Designer, Loftware Desktop Designer, Loftware Print; formularze druku w chmurze i na komputerze' },
     { name: 'Loftware Automation', value: 'Tylko wersja próbna instalowana z Desktop Designer; dalsze użycie wymaga wyższej edycji' },
     { name: 'Miejsce na etykiety', value: '1 GB w chmurze' },
@@ -100,7 +100,7 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
     },
     {
       question: 'Czy Loftware Cloud Designer działa bez internetu?',
-      answer: 'Nie. Komputery z programem Desktop Designer muszą mieć połączenie z Loftware Control Center. Zapora sieciowa musi przepuszczać ruch wychodzący do adresu konta w domenie onnicelabel.com na porcie 443.',
+      answer: 'Nie. Komputery z programem Desktop Designer muszą mieć połączenie z Loftware Control Center. Zapora sieciowa musi przepuszczać ruch wychodzący do adresu konta w domenie onnicelabel.com na portach 443 i 8080. W edycji Cloud Designer potrzebny jest też dostęp do adresu konta w domenie loftware.io.',
     },
     {
       question: 'Jakie wymagania ma komputer z Desktop Designer?',
@@ -108,7 +108,7 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
     },
     {
       question: 'Z jakimi drukarkami współpracuje program?',
-      answer: 'Loftware udostępnia bezpłatne sterowniki Windows do ponad 4500 modeli drukarek, w tym Zebra, Honeywell, TSC, SATO, Citizen, Brother, Epson, BIXOLON, Brady i Godex. Producent zaleca sterowniki Loftware w wersji 5 lub nowszej. Sterowniki są dostępne na stronie drivers.loftware.com.',
+      answer: 'Loftware udostępnia ponad 4500 bezpłatnych sterowników drukarek dla Windows, m.in. do drukarek BIXOLON, Brady, Brother, Citizen, Epson, Godex, Honeywell, SATO, TSC i Zebra. Producent zaleca sterowniki Loftware w wersji 5 lub nowszej. Sterowniki są dostępne na stronie drivers.loftware.com.',
     },
     {
       question: 'Czy Designer automatycznie drukuje etykiety z systemu firmy?',
@@ -153,7 +153,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   isNew: true,
   isBestseller: false,
   variantAttributeTooltips: {
-    'Licencja': 'Rodzaj pozycji w subskrypcji Loftware Cloud Essentials na 1 rok.\n\nSubskrypcja podstawowa — konto Essentials z formularzami Designer PowerForms i Web Client.\n\nDodatkowa drukarka i opcja — rozszerzają istniejącą subskrypcję Essentials.',
+    'Licencja': 'Rodzaj pozycji w ofercie Loftware Cloud Essentials.\n\nSubskrypcja podstawowa — roczne konto Essentials z formularzami Designer PowerForms i Web Client.\n\nDodatkowa drukarka i opcja — rozszerzają istniejącą subskrypcję Essentials.',
     'Drukarki': 'Liczba miejsc drukarek w pozycji.\n\nSubskrypcja podstawowa obejmuje do 2 drukarek, a każde rozszerzenie dodaje 1.\n\nEssentials obsługuje łącznie do 20 drukarek.',
     'Dodatek': 'Opcja dokupowana do subskrypcji Essentials.\n\nBaza SQL w chmurze 1 GB — miejsce na własne dane do etykiet w Loftware Cloud.\n\nHistoria druku 1 rok — dłuższy okres przechowywania historii zamiast standardowych 3 miesięcy.',
   },
@@ -174,7 +174,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     },
     {
       partNumber: 'NSCEDB001M',
-      name: 'Loftware Cloud Essentials — baza SQL w chmurze 1 GB, 1 rok',
+      name: 'Loftware Cloud Essentials — baza SQL w chmurze 1 GB',
       attributes: { 'Licencja': 'Opcja', 'Dodatek': 'Baza SQL w chmurze 1 GB' },
       priceFrom: 2463.75,
       availability: 'available',
@@ -192,7 +192,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     { name: 'Edycja', value: 'Loftware Cloud Essentials' },
     { name: 'Model licencji', value: 'Subskrypcja na 1 rok, liczona miejscami drukarek' },
     { name: 'Drukarki', value: 'Do 2 w subskrypcji podstawowej, rozszerzenia po 1 drukarce, łącznie do 20' },
-    { name: 'Komputery i użytkownicy', value: 'Bez limitu w jednej domenie, jeden klucz licencji' },
+    { name: 'Komputery', value: 'Bez limitu w jednej domenie, jeden klucz licencji' },
     { name: 'Projektowanie', value: 'Web Designer w przeglądarce i Loftware Desktop Designer w Windows' },
     { name: 'Formularze', value: 'Designer PowerForms (kreator aplikacji); uruchamianie w Loftware Print lub w przeglądarce przez Loftware Web Client' },
     { name: 'Druk przez przeglądarkę', value: 'Loftware Web Printing z Loftware Web Client' },
@@ -235,7 +235,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     },
     {
       question: 'Jak przebiega aktywacja po zakupie?',
-      answer: 'W zamówieniu podaje się nazwę firmy licencjobiorcy i e-mail osoby zarządzającej kontem. Na ten adres Loftware wysyła zaproszenie do konta Loftware Cloud. Logowanie odbywa się kontem Microsoft albo Google, a dalsze osoby dodaje się w Control Center.',
+      answer: 'Zamówienie zawiera nazwę firmy licencjobiorcy i e-mail osoby zarządzającej kontem. Na ten adres Loftware wysyła zaproszenie do konta Loftware Cloud. Logowanie odbywa się kontem Microsoft albo Google, a dalsze osoby dodaje się w Control Center.',
     },
     {
       question: 'Czy stanowisko operatora potrzebuje programu Desktop Designer?',
@@ -255,10 +255,10 @@ const business: Product = {
   id: 'loftware-cloud-business',
   slug: 'loftware-cloud-business',
   name: 'Loftware Cloud Business',
-  shortDescription: 'Loftware Cloud Business (NiceLabel) — subskrypcja do druku etykiet w wielu lokalizacjach: drukarki chmurowe, zarządzanie drukarkami, Cloud API. Wersje Small i Large, cena na zapytanie.',
+  shortDescription: 'Loftware Cloud Business (NiceLabel) — subskrypcja do druku etykiet na wielu drukarkach: drukarki chmurowe, zarządzanie drukarkami, Cloud API. Wersje Small i Large, cena na zapytanie.',
   seoTitle: 'Loftware Cloud Business — system etykiet w chmurze, na zapytanie',
   seoDescription: 'Loftware Cloud Business: system do zarządzania drukiem etykiet w chmurze, drukarki chmurowe, analityka druku, Cloud API i integracje z systemami firmy. Wersje Small i Large. NiceLabel Cloud Business, licencja Loftware Cloud Business. PN: NSCBSM001M, NSCBSA001M, NSCBLX001M.',
-  description: `Loftware Cloud Business to edycja Loftware Cloud dla firm, które drukują etykiety na wielu drukarkach i łączą druk z systemami biznesowymi w chmurze oraz w siedzibie firmy. Edycja ma dwie wielkości. Small (NSCBSM001M) obejmuje do 3 drukarek, a pozycja NSCBSA001M dodaje kolejne pojedynczo. Large (NSCBLX001M) obejmuje do 50 drukarek.
+  description: `Loftware Cloud Business to edycja Loftware Cloud przeznaczona do druku etykiet na wielu drukarkach, połączonego z systemami biznesowymi w chmurze oraz w siedzibie firmy. Edycja ma dwie wielkości. Small (NSCBSM001M) obejmuje do 3 drukarek, a pozycja NSCBSA001M dodaje kolejne pojedynczo. Large (NSCBLX001M) obejmuje do 50 drukarek.
 
 Business zawiera narzędzia edycji Essentials oraz funkcje do zarządzania drukiem w całej firmie. Drukarki chmurowe drukują bez sterownika i bez komputera pośredniczącego. W Control Center zarządza się drukarkami i przegląda analitykę druku. Cloud API udostępnia funkcje Loftware Cloud innym aplikacjom firmy. Integracje obejmują systemy w chmurze i systemy lokalne oraz synchronizację danych.
 
@@ -327,7 +327,7 @@ Cenę ustalamy po rozmowie o liczbie drukarek, lokalizacjach i potrzebnych integ
     { name: 'Dostarczenie licencji', value: 'Zaproszenie e-mailem do konta Loftware Cloud' },
   ],
   applications: [
-    'Centralny druk etykiet w kilku zakładach i magazynach',
+    'Druk etykiet na wielu drukarkach zarządzanych z jednego Control Center',
     'Druk z systemów ERP przez integracje i Cloud API',
     'Nadzór nad flotą drukarek i analityka druku',
     'Kontrolowane wdrażanie zmian w szablonach',
