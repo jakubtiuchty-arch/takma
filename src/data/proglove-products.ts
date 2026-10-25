@@ -1385,6 +1385,7 @@ export const progloveProducts: Product[] = [
     "variantAttributeTooltips": {},
     "compatibleAccessories": [],
     "relatedAccessories": [
+      "proglove-c008-eu",
       "proglove-mai"
     ],
     "relatedProducts": [
@@ -1416,7 +1417,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Jak ładuje się LANA?",
-        "answer": "Przez gniazdo USB-C w ok. 150 minut albo w 4-gniazdowej stacji ProGlove, przeznaczonej tylko do LANA, w ok. 180 minut. Do ładowania przez USB-C zalecany jest zasilacz zgodny ze standardem Power Delivery 3.0. Stację 4-gniazdową przygotujemy na zapytanie."
+        "answer": "Przez gniazdo USB-C w ok. 150 minut albo w [4-gniazdowej stacji ProGlove C008-EU](/produkt/proglove-c008-eu), przeznaczonej tylko do LANA, w ok. 180 minut. Do ładowania przez USB-C zalecany jest zasilacz zgodny ze standardem Power Delivery 3.0."
       },
       {
         "question": "Czy LANA wystarczy na kilka zmian?",
@@ -3805,5 +3806,104 @@ export const progloveAccessories: Product[] = [
     "faq": [],
     "createdAt": "2026-10-24",
     "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "proglove-c008-eu",
+    "slug": "proglove-c008-eu",
+    "name": "Stacja ładująca ProGlove LANA na 4 urządzenia z przewodem EU",
+    "seoH1": "Stacja ładująca ProGlove LANA na 4 urządzenia z przewodem EU",
+    "seoTitle": "Stacja ładująca ProGlove LANA na 4 urządzenia z przewodem EU — C008-EU",
+    "seoDescription": "Stacja ładująca ProGlove C008-EU: cztery gniazda dla komputera ProGlove LANA, przewód zasilający EU, pełne ładowanie ok. 180 min. Ładowarka LANA ProGlove, stacja 4-gniazdowa LANA. PN: C008-EU.",
+    "shortDescription": "Stacja ładująca ProGlove na cztery komputery LANA, z przewodem zasilającym EU. Pełne ładowanie urządzenia w stacji trwa ok. 180 minut. PN C008-EU.",
+    "description": "Stacja C008-EU ładuje jednocześnie do czterech komputerów [ProGlove LANA](/produkt/proglove-lana). Zestaw EU zawiera korpus stacji i przewód zasilający z wtyczką europejską. Stacja jest przeznaczona wyłącznie do LANA i nie ładuje skanerów ProGlove.\n\nLANA wkłada się do gniazda dolną krawędzią, na której znajdują się styki ładowania. W temperaturze pokojowej pełne ładowanie trwa ok. 180 minut. Stan ładowania pokazuje dioda LANA: czerwona oznacza ładowanie, zielona naładowanie do 100%.\n\nŁadowanie jest możliwe w temperaturze od +5 do +40 °C. Urządzenie wkłada się do stacji suchymi rękami i tylko wtedy, gdy jest suche. Między stykami nie może być ciał obcych, np. monet, spinaczy ani naklejek. Stacja ma klasę szczelności IP20, waży 630 g i stoi na gumowych nóżkach.",
+    "categoryId": "akcesoria",
+    "subcategoryIds": [
+      "akcesoria-do-terminali",
+      "stacje-ladowarki-terminali"
+    ],
+    "manufacturerId": "proglove",
+    "images": [
+      "/images/products/proglove-c008.png"
+    ],
+    "imageDescriptions": [
+      "Stacja ładująca ProGlove LANA — widok z góry na cztery gniazda i wskaźnik ładowania (komputery LANA sprzedawane osobno)"
+    ],
+    "tags": [
+      "magazyn"
+    ],
+    "availability": "available",
+    "priceFrom": 1318.82,
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Part Number",
+        "value": "C008-EU"
+      },
+      {
+        "name": "Zawartość zestawu",
+        "value": "Stacja (korpus C008), przewód zasilający z wtyczką EU"
+      },
+      {
+        "name": "Liczba gniazd",
+        "value": "4"
+      },
+      {
+        "name": "Czas ładowania",
+        "value": "Ok. 180 min (LANA, temperatura pokojowa)"
+      },
+      {
+        "name": "Sygnalizacja ładowania",
+        "value": "Dioda LANA: czerwona — ładowanie, zielona — 100%"
+      },
+      {
+        "name": "Masa",
+        "value": "630 g"
+      },
+      {
+        "name": "Klasa szczelności",
+        "value": "IP20"
+      },
+      {
+        "name": "Temperatura ładowania",
+        "value": "+5°C do +40°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "−20°C do +60°C"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Dyrektywy 2014/30/UE (EMC), 2014/35/UE (LVD), 2015/863/UE (RoHS)"
+      },
+      {
+        "name": "Kompatybilność",
+        "value": "Wyłącznie ProGlove LANA (LA-001)"
+      }
+    ],
+    "applications": [
+      "Ładowanie kilku komputerów LANA w jednym miejscu"
+    ],
+    "compatibleAccessories": [],
+    "relatedProducts": [
+      "proglove-lana"
+    ],
+    "downloads": [
+      {
+        "name": "Instrukcja użytkownika i informacje prawne ProGlove LANA ze stacją 4-gniazdową (EN)",
+        "type": "manual",
+        "url": "/datasheets/proglove-lana-instrukcja.pdf",
+        "size": "912 KB"
+      },
+      {
+        "name": "Karta katalogowa ProGlove LANA (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/proglove-lana.pdf",
+        "size": "161 KB"
+      }
+    ],
+    "faq": [],
+    "createdAt": "2026-10-25",
+    "updatedAt": "2026-10-25"
   }
 ]

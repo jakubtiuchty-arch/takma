@@ -14,6 +14,8 @@ Kategoria `terminale-mobilne`, podkategoria `terminale-naramienne` (ProGlove ofe
 | Strona produktu | https://proglove.com/products/portable-android-computer/lana/ | Aparat 16 MP, ERP/WMS/QA, praca w pojazdach, IP65 (patrz rozbieżności) |
 | Strona mocowań | https://proglove.com/products/wearable-mounts/#lana | Arm Mount: przedramię, dwa rozmiary, materiał do prania; bez PN |
 | Spartan POS (US) | https://spartanpos.com/products/la-001 | „Proglove, Lana, Portable Android Computer — LA-001” |
+| BlueStar EU, strona publiczna (25.10.2026) | https://shop.bluestoreinc.com/en/proglove-lana | LA-001 „LANA Flexible display host device for wearable scanner 3.54in Android 13”; C008 „Charging Station for LANA, 4 charging slots”; C008-EU „Charging Station for LANA, 4 charging slots, Power cord (EU)”; C008-UK z przewodem UK |
+| Spartan POS (US), C008-US | https://spartanpos.com/products/c008-us | „LANA 4-SLOT CHARGER INCLUDING US POWER CORD” (bez zdjęcia) |
 | identWERK, RLS (DE) | https://www.identwerk.de/produkte/mobile-computer/proglove-lana, https://www.rls-gmbh.de/produkte/wearables/proglove-lana-portabler-android-computer/ | Opisy LANA bez PN; identWERK: IP68, RLS: IP68 w tabeli i IP65 w tekście |
 
 Kopie robocze: katalog `lana/src/` w scratchpadzie sesji (poza repozytorium).
@@ -24,17 +26,24 @@ Kopie robocze: katalog `lana/src/` w scratchpadzie sesji (poza repozytorium).
 |---|---|---|---|
 | **LA-001** | ProGlove LANA, przenośny komputer z Androidem | Spartan POS (nazwa przy PN); API (stan w magazynie DE dystrybutora); deklaracja zgodności i instrukcja: jeden model radiowy „LANA” dopuszczony w EOG, USA, Kanadzie i Wielkiej Brytanii | found, available, 11 szt. (DE) |
 
-LA-001 nie ma regionalnej końcówki. Producent nie publikuje osobnych wersji LANA na regiony: jedno urządzenie ma oznakowanie CE, FCC i ISED. Regionalny jest tylko przewód zasilający stacji (Z010-001 = EU). Żaden europejski dystrybutor (Levata, ERS, globos.de, BlueStar bez logowania) nie pokazuje publicznie PN LA-001, więc wersji „EU” nie da się potwierdzić dwoma źródłami. Zakładam, że LA-001 to jedyny PN urządzenia.
+LA-001 nie ma regionalnej końcówki. Producent nie publikuje osobnych wersji LANA na regiony: jedno urządzenie ma oznakowanie CE, FCC i ISED. Regionalny jest tylko przewód zasilający stacji (Z010-001 = EU). **Aktualizacja 25.10.2026:** publiczna strona BlueStar EU (https://shop.bluestoreinc.com/en/proglove-lana) podaje LA-001 jako „LANA Flexible display host device for wearable scanner 3.54in Android 13” — PN potwierdzony u europejskiego dystrybutora, bez wariantów regionalnych urządzenia.
 
 ## Mocowania i ładowanie
 
 - **Arm Mount** (mocowanie na przedramię, dwa rozmiary): ProGlove nie publikuje PN. Nie ma go na stronie mocowań, w karcie „Wearables March 2026”, w docs ani u dystrybutorów. Sprawdzone w API PN zgadywane (G009–G015, G021–G031, G040, G041, warianty -S/-L) — wszystkie `found: false`. **Brak kart mocowań.**
-- **Stacja 4-gniazdowa** (tylko do LANA; 155 × 58 × 20 mm, 630 g, IP20, ładowanie 5–40 °C):
+- **Stacja 4-gniazdowa** (tylko do LANA; 630 g, IP20, ładowanie 5–40 °C; wymiary z instrukcji wątpliwe — patrz niżej):
   - C008 — korpus stacji (deklaracja zgodności), API: available, 4 szt.;
-  - C008-EU — API: available, 3 szt. Konfiguracja nieopublikowana. Różnica cen C008-EU − C008 równa się cenie Z010-001 (przewód EU), więc to najpewniej korpus z przewodem EU. Brak drugiego źródła;
+  - C008-EU — stacja z przewodem zasilającym EU (BlueStar EU: „Charging Station for LANA, 4 charging slots, Power cord (EU)”; zgodne z deklaracją zgodności: C008 + Z010-001). API 25.10.2026 (dwa wywołania): found, available, 3 szt. (DE);
   - Z010-001 — przewód zasilający EU stacji (deklaracja zgodności), API: 0 szt. → unavailable.
-  - **Brak karty stacji** (poza zakresem briefu; C008-EU bez potwierdzonej zawartości). FAQ na karcie: „Stację 4-gniazdową przygotujemy na zapytanie”.
+  - **Karta stacji dodana 25.10.2026:** `/produkt/proglove-c008-eu` (`progloveAccessories`, `akcesoria` → `akcesoria-do-terminali`, `stacje-ladowarki-terminali`). LANA: `relatedAccessories` + `proglove-c008-eu`, FAQ „Jak ładuje się LANA?” linkuje do karty stacji (usunięte „przygotujemy na zapytanie”).
 - **Blok „Wymagane”: nie.** LANA działa bez mocowania (kieszeń) i ładuje się przez USB-C (ok. 150 min). Producent zaleca zasilacz USB-C PD 3.0; zawartość opakowania (przewód, zasilacz) nie jest opublikowana.
+
+### Karta C008-EU — źródła i decyzje
+
+- Dane stacji z instrukcji LANA (Rev. A 03/26, „Technical Data: 4-Slot Charging Station” i zasady bezpieczeństwa): 4 gniazda, tylko do LANA, diody LANA (czerwona = ładowanie, zielona = 100%), 630 g, IP20, ładowanie 5–40 °C, przechowywanie −20 do 60 °C, dyrektywy EMC/LVD/RoHS, suche urządzenie i ręce, nic między stykami, gumowe nóżki (rysunek). Czas ładowania ok. 180 min — karta katalogowa LANA. Zawartość zestawu EU — BlueStar + deklaracja zgodności.
+- **Pominięte na karcie (prawdopodobny błąd w instrukcji):** wymiary „155 × 58 × 20 mm” i zasilanie „5 VDC (min. 1,2 A), przewody Z003-000/-002/-003” są identyczne z danymi 2-gniazdowej stacji Gen 2 do MAI (C021). Nie pasują do rysunku (proporcje stacji ok. 2,1 : 1 zamiast 2,7 : 1; cztery urządzenia 96,7 × 60,7 × 14,4 mm) ani do deklaracji zgodności (przewód Z010-001). Do potwierdzenia u producenta.
+- Zdjęcie `proglove-c008.png`: jedyne oficjalne ujęcie stacji to render w instrukcji LANA (osadzony obraz 311 × 151 px z maską przezroczystości, strona 1). Wyodrębniony `pdfimages`, powiększony do 576 px szerokości (72% kadru, jak C006/C021), wyostrzony, 800 × 800 PNG z przezroczystym tłem. Lekko miękki; ProGlove, docs.proglove.com, BlueStar i Spartan nie publikują zdjęcia w wyższej rozdzielczości (sprawdzone 25.10.2026). Wymiary dopisane do `product-image-dims.json`.
+- `porownaj-opisy.py` (description, shortDescription, seoDescription): 0 wspólnych 6-gramów C008-EU z katalogiem.
 
 ## Powiązania
 
