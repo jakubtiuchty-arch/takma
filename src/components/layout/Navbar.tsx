@@ -113,8 +113,6 @@ const navigation: NavItem[] = [
       { name: 'Akcesoria do drukarek', href: '/akcesoria-do-drukarek-etykiet' },
       { name: 'Nawijarki do etykiet', href: '/nawijarki-do-etykiet' },
       { name: 'Dyspensery etykiet', href: '/dyspensery-etykiet' },
-      { name: 'Programy do etykiet', href: '/programy-do-etykiet' },
-      { name: 'Programy do kart', href: '/programy-do-kart' },
     ],
   },
   {
@@ -182,15 +180,12 @@ const navigation: NavItem[] = [
     ],
   },
   {
-    name: 'Branże',
-    href: '/drukarki-etykiet-e-commerce',
+    name: 'Oprogramowanie',
+    href: '/oprogramowanie',
     children: [
-      { name: 'E-commerce i fulfillment', href: '/drukarki-etykiet-e-commerce' },
-      { name: 'Magazyn i dystrybucja', href: '/drukarki-etykiet-magazyn' },
-      { name: 'Produkcja', href: '/drukarki-etykiet-produkcja' },
-      { name: 'Logistyka i transport', href: '/drukarki-etykiet-logistyka' },
-      { name: 'Apteka i healthcare', href: '/drukarki-etykiet-apteka' },
-      { name: 'Gastronomia i HoReCa', href: '/drukarki-etykiet-gastronomia' },
+      { name: 'Wszystkie programy', href: '/oprogramowanie' },
+      { name: 'Programy do etykiet', href: '/programy-do-etykiet' },
+      { name: 'Programy do kart', href: '/programy-do-kart' },
     ],
   },
   // Sekcja sprzętu używanego czeka na premierę — patrz UZYWANE_WIDOCZNE.
