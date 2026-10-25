@@ -1,3 +1,4 @@
+import { zebraDesignerProducts } from './zebradesigner-products'
 import { sunmiProducts, sunmiAccessories } from './sunmi-products'
 import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-products'
 import { cipherlabProducts, cipherlabAccessories } from './cipherlab-products'
@@ -95516,6 +95517,7 @@ const rawProductList: Product[] = [
   ...datalogicHcTerminals,
   ...bartenderProducts,
   ...loftwareProducts,
+  ...zebraDesignerProducts,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

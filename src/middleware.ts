@@ -481,7 +481,7 @@ export async function middleware(request: NextRequest) {
       'honeywell-rt10a-ladowarka-baterii', 'honeywell-rt10a-hand-strap', 'honeywell-rt10a-folia-ochronna', 'honeywell-rt10a-zasilacz',
       'honeywell-rt10w',
       // Oprogramowanie
-      'zebra-cardstudio', 'magicard-hub',
+      'zebra-cardstudio', 'magicard-hub', 'zebra-zebradesigner-professional',
       // Karty zbliżeniowe Unique (ACSS)
       'karta-unique-iso-unqe1bn', 'karta-unique-iso-unqe1u', 'karta-unique-iso-unqe1',
       'karta-mifare-1k-iso-mfrc1', 'karta-desfire-ev1-2k-iso-mdev12', 'karta-desfire-ev1-4k-iso-mdev14', 'karta-desfire-ev1-8k-iso-mdev18',
