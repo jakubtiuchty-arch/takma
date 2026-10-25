@@ -10,6 +10,7 @@ import { timeoutSignal } from '@/lib/timeout-signal'
 import { activePromo } from '@/data/promos'
 import { getMagicardStock } from '@/lib/magicard-offer'
 import { selectProductVariant } from '@/lib/product-variant-offers'
+import { czyNaZapytanie } from '@/lib/licencje'
 
 interface SmartPriceState {
   /** Wybrany PN do wyświetlenia */
@@ -26,6 +27,8 @@ interface SmartPriceState {
   partNumbers: string[]
   /** Nazwa wariantu */
   variantName: string | undefined
+  /** Karta albo wyświetlany wariant tylko „Zapytaj o cenę” (quoteOnly): bez ceny, stanu i koszyka */
+  naZapytanie: boolean
 }
 
 const SmartPriceContext = createContext<SmartPriceState | null>(null)
@@ -58,7 +61,8 @@ export function SmartPriceProvider({
     if (product.comingSoon) return []
     if (product.variants && product.variants.length > 0) {
       return product.variants
-        .map(v => ({ partNumber: v.partNumber, price: v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
+        // Wariant „na zapytanie” nie ma ceny, nawet gdy w danych zostało priceFrom.
+        .map(v => ({ partNumber: v.partNumber, price: v.quoteOnly ? null : v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
         .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
     }
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
@@ -134,7 +138,7 @@ export function SmartPriceProvider({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pnKey, manualStockData])
 
-  const state = useMemo<SmartPriceState>(() => {
+  const wybor = useMemo<Omit<SmartPriceState, 'naZapytanie'>>(() => {
     // TC201 ma warianty bez ceny katalogowej. Nie pokazuj dla nich ceny
     // podstawowego modelu Wi-Fi, gdy dystrybutor nie podał ceny danego PN.
     const fallbackPrice = product.slug === 'zebra-tc201' ? undefined : product.priceFrom
@@ -250,6 +254,12 @@ export function SmartPriceProvider({
       variantName: best.name || undefined,
     }
   }, [allVariants, stockData, loading, partNumbers, product, urlPn])
+
+  const state = useMemo<SmartPriceState>(() => {
+    const naZapytanie = czyNaZapytanie(product, wybor.displayedPn)
+    // Karta albo wariant na zapytanie: PN zostaje (klient widzi, o co pyta), ceny nie ma.
+    return naZapytanie ? { ...wybor, price: undefined, isFallback: false, naZapytanie } : { ...wybor, naZapytanie }
+  }, [wybor, product])
 
   return (
     <SmartPriceContext.Provider value={state}>

@@ -13,6 +13,7 @@ import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selec
 import { zebraTerminalPartNumbers, stockCacheMaxAge } from '@/lib/zebra-terminal-catalog'
 import { selectTerminalPurchasePrice, ZEBRA_TERMINAL_CACHE_MAX_AGE_MS, ZEBRA_TERMINAL_PRICE_MULTIPLIER } from '@/lib/zebra-terminal-pricing'
 import { dopiszCenyPochodne, mapaKartonow, numeryPlanowSerwisowych } from '@/lib/ceny-pochodne'
+import { nalozRegulyLicencji } from '@/lib/licencje-katalog'
 
 const MARGIN = 1.10        // 10% marży — standardowa dla większości produktów
 const RIBBON_MARGIN = 1.20 // 20% marży dla taśm termotransferowych Zebra
@@ -105,12 +106,18 @@ function stockResponse(body: StockResponse['body'], init?: { status?: number; he
  * `maxWiekCacheMs` skraca ważność wpisu w StockCache — starszy idzie do
  * dystrybutorów na żywo (i zapisuje się z powrotem do cache). Sklepowi
  * wystarcza doba, ale kreator oferty sprawdza stan tuż przed wysłaniem.
+ *
+ * Reguły licencji (lib/licencje) nakładamy na odpowiedź, nie na zapis do StockCache:
+ * cache trzyma surowe dane dystrybutorów, a każdy odczyt liczy dostępność licencji
+ * od nowa. `daneDystrybutora` pomija te reguły — kreator oferty w panelu admina
+ * potrzebuje ceny edycji „na zapytanie” i rzeczywistego stanu u dystrybutora.
  */
 export async function lookupUnifiedStock(
   partNumbers: string[],
   showDebug = false,
-  opcje: { maxWiekCacheMs?: number } = {}
+  opcje: { maxWiekCacheMs?: number; daneDystrybutora?: boolean } = {}
 ): Promise<StockResponse> {
+  const regulyLicencji = (wiersz: StockInfo) => { if (!opcje.daneDystrybutora) nalozRegulyLicencji(wiersz) }
   // Dystrybutorzy bez API: jeśli cały request dotyczy ręcznie utrzymywanych
   // stanów, odpowiedz od razu i nie czekaj na integracje zewnętrzne.
   if (partNumbers.every(pn => MANUAL_STOCK_OVERRIDES.has(pn.toUpperCase()))) {
@@ -312,6 +319,7 @@ export async function lookupUnifiedStock(
       })
       results.forEach(applyStockOverrides)
       results.forEach(dopiszCeny)
+      results.forEach(regulyLicencji)
 
       // Background write-through: jeśli były override'y, zaktualizuj StockCache
       // (fire-and-forget — nie blokuje response)
@@ -674,6 +682,7 @@ export async function lookupUnifiedStock(
     })
     finalResults.forEach(applyStockOverrides)
     finalResults.forEach(dopiszCeny)
+    finalResults.forEach(regulyLicencji)
 
     const response: Record<string, unknown> = {
       results: finalResults,

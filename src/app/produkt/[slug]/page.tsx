@@ -25,6 +25,7 @@ import Image from 'next/image'
 import { getProductStock, getBundleLivePrices, getSchemaOffer, getSchemaOffers } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
 import { selectProductVariant } from '@/lib/product-variant-offers'
+import { czyNaZapytanie } from '@/lib/licencje'
 import { rfidLabelIdsForPrinter, rfidLabelRequirementForPrinter } from '@/data/rfid-label-compatibility'
 import LiveProductSchema from './LiveProductSchema'
 import {
@@ -132,7 +133,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
   const variant = pickVariant(product, pn)
   const staticNetPrice = product.slug === 'zebra-tc201' && variant ? variant.priceFrom : product.priceFrom
   // Zapowiedź nie ma ceny także w meta i OG, nawet gdy dane mają cenę startową.
-  const currentNetPrice = product.comingSoon ? undefined : initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : staticNetPrice
+  const currentNetPrice = product.comingSoon || czyNaZapytanie(product, variant?.partNumber) ? undefined : initialStock !== undefined ? (offerStock?.found ? offerStock.price : undefined) : staticNetPrice
   const category = getCategoryById(product.categoryId)
   const manufacturer = getManufacturerById(product.manufacturerId)
   const variantSize = variant?.attributes['Rozmiar']
@@ -592,8 +593,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     liveSchemaOffers?.get(v.partNumber)?.availability ?? v.availability
   // Check if product has any valid price (> 0) at product or variant level (albo żywa oferta)
   // Zapowiedź nie ma oferty w JSON-LD, nawet gdyby ktoś dopisał cenę startową.
-  const hasValidPrice = !product.comingSoon && ((product.priceFrom && product.priceFrom > 0) ||
-    (product.variants?.some(v => v.priceFrom && v.priceFrom > 0)) || !!liveOffer)
+  // Karta na zapytanie (quoteOnly) — bez oferty, jak produkty bez ceny; warianty na zapytanie
+  // odpadają niżej z listy ofert.
+  const hasValidPrice = !product.comingSoon && !product.quoteOnly && ((product.priceFrom && product.priceFrom > 0) ||
+    (product.variants?.some(v => !v.quoteOnly && v.priceFrom && v.priceFrom > 0)) || !!liveOffer)
   const magicardOffer = getMagicardOffer(product)
 
   // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
@@ -715,13 +718,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       offers: magicardOffer ?? (product.variants && product.variants.length > 0
         ? (() => {
             // Cena wariantu: dystrybutor → katalog. Musi zgadzać się z ceną na karcie.
-            const wyceny = product.variants.map((v) => ({ v, price: variantLivePrice(v) }))
+            const wyceny = product.variants.filter((v) => !v.quoteOnly).map((v) => ({ v, price: variantLivePrice(v) }))
             const zCena = wyceny.filter((x) => x.price && x.price > 0)
             const ceny = zCena.map((x) => x.price!)
             const lowPrice = ceny.length > 0 ? Math.min(...ceny) : (product.priceFrom && product.priceFrom > 0 ? product.priceFrom : undefined)
             const highPrice = ceny.length > 0 ? Math.max(...ceny) : lowPrice
             // Dostępność agregatu wynika z wariantów: dostępny > w dostawie > niedostępny
-            const dostepnosci = product.variants.map((v) => variantLiveAvailability(v))
+            const dostepnosci = wyceny.map(({ v }) => variantLiveAvailability(v))
             const dostepnoscAgregatu = dostepnosci.includes('available') ? 'available'
               : dostepnosci.includes('on-order') ? 'on-order'
               : dostepnosci.length > 0 ? 'unavailable'
@@ -732,7 +735,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             lowPrice: lowPrice!.toFixed(2),
             highPrice: (highPrice || lowPrice)!.toFixed(2),
             priceCurrency: 'PLN',
-            offerCount: product.variants.length,
+            offerCount: wyceny.length,
             availability: availabilitySchemaMap[dostepnoscAgregatu],
             priceValidUntil: priceValidUntil,
             offers: (zCena.length > 0 ? zCena : wyceny.map((x) => ({ ...x, price: product.priceFrom }))).map(({ v, price }) => ({
@@ -1136,7 +1139,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               ) : (
                 !naZapytanie && <AddToRFQButton product={product} />
               )}
-              <AskAboutProductButton productName={product.name} productSlug={product.slug} />
+              <AskAboutProductButton productName={product.name} productSlug={product.slug} label={product.quoteOnly && !product.comingSoon ? 'Zapytaj o cenę' : undefined} />
             </div>
 
             {/* Zawartość pudełka przy zakupie, zamiast 17. wiersza specyfikacji (audyt ZD421t, ZD-09) */}

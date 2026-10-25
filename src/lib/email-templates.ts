@@ -1,6 +1,7 @@
 import { quoteHasZebra } from '@/lib/quote-zebra'
 import { czyZebra } from '@/lib/device-brand'
 import { stawkaVat } from '@/lib/quotes-stawki'
+import { odczytajLicencjobiorce } from '@/lib/licencje'
 // ─── TAKMA Email Design System ───────────────────────────────────────────────
 // Profesjonalny system szablonów email B2B — table-based layout, Outlook compatible
 // Zero dependencies — plain TypeScript helpers returning HTML strings
@@ -217,6 +218,15 @@ function emailInfoAmber(content: string): string {
 
 function emailInfoCyan(content: string): string {
   return emailInfoBox(content, '#ecfeff', '#a5f3fc')
+}
+
+/** Uwagi zamówienia; dane licencjobiorcy (zapisane przez checkout na początku uwag) w osobnym boksie. */
+function emailUwagiZamowienia(notatki: string | null | undefined, etykieta: string): string {
+  const { licencjobiorca, uwagi } = odczytajLicencjobiorce(notatki)
+  return (licencjobiorca
+    ? emailInfoCyan(`<strong>Dane licencjobiorcy:</strong><br />${esc(licencjobiorca.firma)}<br />${esc(licencjobiorca.email)}`)
+    : '') +
+    (uwagi ? emailInfoAmber(`${etykieta}${esc(uwagi)}`) : '')
 }
 
 function emailTable(headers: string[], rows: string[][]): string {
@@ -494,7 +504,7 @@ export function buildOrderConfirmationEmail(data: {
         (data.paymentMethod !== 'ONLINE' ? emailBankDetails(data.orderNumber) : '') +
 
         // Uwagi klienta
-        (data.customerNotes ? emailInfoAmber(`<strong>Uwagi:</strong> ${esc(data.customerNotes)}`) : '') +
+        emailUwagiZamowienia(data.customerNotes, '<strong>Uwagi:</strong> ') +
 
         emailSignature()
       ),
@@ -693,7 +703,7 @@ export function buildAdminOrderNotificationEmail(data: {
           { label: 'P&#322;atno&#347;&#263;', value: paymentLabel },
         ]) +
 
-        (data.customerNotes ? emailInfoAmber(`<strong>Uwagi klienta:</strong><br />${esc(data.customerNotes)}`) : '') +
+        emailUwagiZamowienia(data.customerNotes, '<strong>Uwagi klienta:</strong><br />') +
 
         emailButton('Otwórz w panelu', `https://www.takma.com.pl/admin/zamowienia/${data.orderNumber}`)
       ),

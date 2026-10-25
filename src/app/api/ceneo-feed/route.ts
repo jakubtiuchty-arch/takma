@@ -13,6 +13,8 @@ import {
 } from '@/data/products'
 import { prisma } from '@/lib/db'
 import { isValidGtin } from '@/lib/allegro/gtin'
+import { nalozRegulyLicencji } from '@/lib/licencje-katalog'
+import { czyNaZapytanie } from '@/lib/licencje'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -203,10 +205,12 @@ interface Candidate {
 }
 
 interface StockRow {
+  partNumber: string
   price: number | null
   availability: string
   totalStock: number
   found: boolean
+  electronicLicense?: boolean
 }
 
 export async function GET() {
@@ -243,7 +247,9 @@ export async function GET() {
           select: { partNumber: true, ean: true },
         }),
       ])
-      for (const r of sc) stockMap.set(r.partNumber, r)
+      // Te same reguły licencji co na stronie: licencja z ceną jest dostępna mimo zerowego stanu,
+      // pozycja na zapytanie traci cenę z cache.
+      for (const r of sc) stockMap.set(r.partNumber, nalozRegulyLicencji(r))
       for (const r of eans) if (isValidGtin(r.ean)) eanMap.set(r.partNumber, r.ean)
     }
   } catch (err) {
@@ -258,6 +264,8 @@ export async function GET() {
   const offers: string[] = []
   for (const c of candidates) {
     if (seenIds.has(c.id)) continue
+    // Karta albo wariant na zapytanie (edycje Enterprise): bez ceny, więc i bez oferty.
+    if (czyNaZapytanie(c.product, c.pn)) continue
     const sc = stockMap.get(c.pn)
 
     // Cena netto: live ze StockCache (preferowana) → fallback priceFrom (statyczna).
@@ -270,7 +278,7 @@ export async function GET() {
     const availRaw = sc?.found ? sc.availability : (c.variant?.availability ?? c.product.availability)
     if (availRaw === 'unavailable') continue
     // Gdy mamy live stan — wymagamy realnej dostępności (nie płacimy CPC za braki).
-    if (sc?.found && sc.totalStock <= 0) continue
+    if (sc?.found && sc.totalStock <= 0 && !sc.electronicLicense) continue
 
     const priceBrutto = Math.round(liveNet * CENEO_MARKUP * VAT * 100) / 100
     const avail = availabilityMap[availRaw] ?? 99

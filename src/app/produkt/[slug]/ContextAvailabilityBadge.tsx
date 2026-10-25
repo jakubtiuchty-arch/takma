@@ -2,6 +2,7 @@
 
 import { Badge } from '@/components/ui'
 import { useSmartPrice } from './SmartPriceContext'
+import { jestNaStanie } from '@/lib/licencje'
 
 const config = {
   available: { label: 'Dostępny', variant: 'success' as const },
@@ -25,11 +26,13 @@ export default function ContextAvailabilityBadge({
   feminine?: boolean
   requireConfirmedStock?: boolean
 }) {
-  const { stockData, loading, displayedPn, partNumbers } = useSmartPrice()
+  const { stockData, loading, displayedPn, partNumbers, naZapytanie } = useSmartPrice()
+  // Wariant na zapytanie (np. Enterprise w karcie z innymi edycjami) — ta sama plakietka co karta quoteOnly.
+  if (naZapytanie) return <Badge variant="info">Na zapytanie</Badge>
   if (requireConfirmedStock) {
     const stock = displayedPn ? stockData.get(displayedPn) : undefined
     if (loading || !stock?.found) return <Badge variant="danger">{feminine ? 'Niedostępna' : 'Niedostępny'}</Badge>
-    const availability = stock.stockPL + stock.stockDE > 0 ? 'available' : 'unavailable'
+    const availability = jestNaStanie(stock) ? 'available' : 'unavailable'
     return <Badge variant={config[availability].variant}>{config[availability].label}</Badge>
   }
 
@@ -51,7 +54,7 @@ export default function ContextAvailabilityBadge({
   if (displayedPn) {
     const stock = stockData.get(displayedPn)
     if (stock?.found) {
-      if (stock.stockPL + stock.stockDE > 0) liveAvailability = 'available'
+      if (jestNaStanie(stock)) liveAvailability = 'available'
       else if (stock.inDelivery > 0) liveAvailability = 'on-order'
       else liveAvailability = 'unavailable'
     } else if (treatUnknownAsUnavailable) {
@@ -66,7 +69,7 @@ export default function ContextAvailabilityBadge({
       const stock = stockData.get(pn)
       if (stock?.found) {
         anyFound = true
-        if (stock.stockPL + stock.stockDE > 0) { liveAvailability = 'available'; break }
+        if (jestNaStanie(stock)) { liveAvailability = 'available'; break }
       }
     }
     if (anyFound && liveAvailability !== 'available') {

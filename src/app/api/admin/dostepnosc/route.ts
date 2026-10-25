@@ -39,7 +39,7 @@ export async function GET(request: NextRequest) {
   const wyniki = await Promise.all(
     numery.map(async (pn): Promise<[string, DostepnoscPozycji] | null> => {
       try {
-        const { body } = await lookupUnifiedStock([pn], false, { maxWiekCacheMs: MAKS_WIEK_CACHE_MS })
+        const { body } = await lookupUnifiedStock([pn], false, { maxWiekCacheMs: MAKS_WIEK_CACHE_MS, daneDystrybutora: true })
         const r = body.results?.[0]
         if (!r) return null
         return [

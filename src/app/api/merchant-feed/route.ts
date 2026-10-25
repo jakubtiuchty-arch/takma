@@ -13,6 +13,8 @@ import {
 } from '@/data/products'
 import { prisma } from '@/lib/db'
 import { isValidGtin } from '@/lib/allegro/gtin'
+import { nalozRegulyLicencji } from '@/lib/licencje-katalog'
+import { czyNaZapytanie } from '@/lib/licencje'
 import { gtinyDrukarkiZebra } from '@/lib/gtin-drukarek-zebra'
 
 export const runtime = 'nodejs'
@@ -103,10 +105,12 @@ interface Candidate {
 }
 
 interface StockRow {
+  partNumber: string
   price: number | null
   availability: string
   totalStock: number
   found: boolean
+  electronicLicense?: boolean
 }
 
 /** Kategoria z taksonomii Google (identyfikator). 952 = Artykuły biurowe > Sprzęt biurowy > Drukarki do etykiet,
@@ -248,7 +252,9 @@ export async function GET() {
           select: { partNumber: true, ean: true },
         }),
       ])
-      for (const r of sc) stockMap.set(r.partNumber, r)
+      // Te same reguły licencji co na stronie: licencja z ceną jest dostępna mimo zerowego stanu,
+      // pozycja na zapytanie traci cenę z cache.
+      for (const r of sc) stockMap.set(r.partNumber, nalozRegulyLicencji(r))
       for (const r of eans) if (isValidGtin(r.ean)) eanMap.set(r.partNumber, r.ean)
     }
   } catch (err) {
@@ -262,6 +268,8 @@ export async function GET() {
   const items: string[] = []
   for (const c of candidates) {
     if (seenPns.has(c.pn)) continue
+    // Karta albo wariant na zapytanie (edycje Enterprise) nie trafia do Merchant Center.
+    if (czyNaZapytanie(c.product, c.pn)) continue
     const sc = stockMap.get(c.pn)
     const liveNet = sc?.found && sc.price && sc.price > 0
       ? sc.price
@@ -270,7 +278,7 @@ export async function GET() {
 
     const availRaw = sc?.found ? sc.availability : (c.variant?.availability ?? c.product.availability)
     if (availRaw === 'unavailable') continue
-    if (sc?.found && sc.totalStock <= 0) continue
+    if (sc?.found && sc.totalStock <= 0 && !sc.electronicLicense) continue
 
     const priceGross = (Math.round(liveNet * VAT * 100) / 100).toFixed(2)
     const availability = availabilityMap[availRaw] || 'in_stock'

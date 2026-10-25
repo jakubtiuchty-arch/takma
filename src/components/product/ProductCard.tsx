@@ -13,6 +13,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackAddToCart, trackSelectItem } from '@/lib/ga-events'
 import { getProductImageFrameStyle, getUniformProductImageStyle, getProductImageScaleStyle } from '@/lib/product-image-frame'
+import { jestNaStanie, LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 interface ProductCardProps {
   product: ProductCardData
@@ -84,7 +85,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   const liveStatus = anyFound ? (() => {
     for (const pn of partNumbers) {
       const stock = stockData.get(pn)
-      if (stock?.found && stock.stockPL + stock.stockDE > 0) return 'available' as const
+      if (stock?.found && jestNaStanie(stock)) return 'available' as const
     }
     return 'unavailable' as const
   })() : null
@@ -104,27 +105,31 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
   // magazynie — inaczej kafel obiecuje cenę konfiguracji, której nie da się
   // kupić od ręki. Gdy nic nie ma stanu, pokazujemy najtańszą cenę katalogową.
   const displayPrice = useMemo(() => {
+    // Karta na zapytanie nie pokazuje ceny, nawet gdy dystrybutor ją podaje (edycje Enterprise).
+    if (naZapytanie) return undefined
     if (stockLoading || !anyFound) return isZebraTerminalProduct(product) ? undefined : staticPrice
     const znalezione = partNumbers
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
     const posortuj = (lista: typeof znalezione) => lista.map(s => s.price!).sort((a, b) => a - b)
-    const naStanie = posortuj(znalezione.filter(s => s.stockPL + s.stockDE > 0))
+    const naStanie = posortuj(znalezione.filter(s => jestNaStanie(s)))
     return naStanie[0] ?? posortuj(znalezione)[0] ?? (isZebraTerminalProduct(product) ? undefined : staticPrice)
-  }, [stockLoading, anyFound, partNumbers, stockData, staticPrice, product])
+  }, [naZapytanie, stockLoading, anyFound, partNumbers, stockData, staticPrice, product])
 
   // Czas wysyłki liczymy z pól stanu, nie z gotowego tekstu — ten w cache'u
   // bywa zapisany bez polskich znaków i różni się między źródłami.
   const czasWysylki = (() => {
     if (stockLoading || !anyFound) return null
-    let pl = 0, de = 0, wDrodze = 0
+    let pl = 0, de = 0, wDrodze = 0, licencja = false
     for (const pn of partNumbers) {
       const stan = stockData.get(pn)
       if (!stan?.found) continue
+      if (stan.electronicLicense) licencja = true
       pl += stan.stockPL || 0
       de += stan.stockDE || 0
       wDrodze += stan.inDelivery || 0
     }
+    if (licencja) return LICENCJA_DOSTAWA
     if (pl > 0) return 'wysyłka 24 h'
     if (de > 0) return 'wysyłka 2–3 dni'
     if (wDrodze > 0) return 'w dostawie'
@@ -165,7 +170,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
       name: product.name,
       slug: product.slug,
       image: product.images[0],
-      partNumber: product.variants?.[0]?.partNumber || product.specifications.find(s => s.name === 'Part Number')?.value,
+      // Wariant na zapytanie nie trafia do koszyka z kafla.
+      partNumber: product.variants?.find(v => !v.quoteOnly)?.partNumber || product.specifications.find(s => s.name === 'Part Number')?.value,
       priceNetto: displayPrice,
     })
   }

@@ -326,7 +326,7 @@ export default function AskAboutProductButton({
           className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-200 active:scale-[0.98]"
         >
           <MailIcon size={18} />
-          Zapytaj o produkt
+          {label || 'Zapytaj o produkt'}
         </button>
         {mounted && open && (
           <InquiryModal

@@ -7,6 +7,7 @@ import { useCartStore } from '@/store/cartStore'
 import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
 import { trackAddToCart, trackNotifyMe } from '@/lib/ga-events'
+import { jestNaStanie } from '@/lib/licencje'
 
 interface AddToRFQButtonProps {
   product: Product
@@ -109,7 +110,7 @@ function NotifyForm({ partNumber, productName, compact }: { partNumber: string; 
 export default function AddToRFQButton({ product, compact = false }: AddToRFQButtonProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
-  const { displayedPn, price, loading: stockLoading, stockData, partNumbers, variantName } = useSmartPrice()
+  const { displayedPn, price, loading: stockLoading, stockData, partNumbers, variantName, naZapytanie } = useSmartPrice()
 
   useEffect(() => {
     setMounted(true)
@@ -126,7 +127,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
     // Priorytet: WYŚWIETLANY wariant (karta wariantu). Jego stan decyduje, nie „dowolny wariant serii".
     if (displayedPn) {
       const s = stockData.get(displayedPn)
-      if (s?.found) return s.stockPL + s.stockDE <= 0
+      if (s?.found) return !jestNaStanie(s)
     }
     if (partNumbers.length > 0) {
       let anyFound = false
@@ -134,7 +135,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
         const stock = stockData.get(pn)
         if (stock?.found) {
           anyFound = true
-          if (stock.stockPL + stock.stockDE > 0) return false
+          if (jestNaStanie(stock)) return false
         }
       }
       if (anyFound) return true
@@ -164,6 +165,10 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       quantity: 1,
     })
   }
+
+  // Na zapytanie (np. edycja Enterprise): bez koszyka i bez „Powiadom o dostępności” —
+  // zostaje przycisk zapytania obok.
+  if (naZapytanie) return null
 
   // Niedostępny → "Powiadom o dostępności"
   if (isUnavailable) {

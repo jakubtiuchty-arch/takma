@@ -11,6 +11,7 @@ import OrderNotesForm from './OrderNotesForm'
 import AttributionCard from '@/components/admin/AttributionCard'
 import ShipmentTimeline from '@/components/admin/ShipmentTimeline'
 import { carrierTrackingUrl } from '@/lib/carrier-tracking'
+import { odczytajLicencjobiorce } from '@/lib/licencje'
 
 const statusLabels: Record<OrderStatus, string> = {
   PENDING_PAYMENT: 'Oczekuje na płatność',
@@ -253,12 +254,28 @@ export default async function OrderDetailPage({ params }: PageProps) {
           {/* Notes */}
           <div className="bg-white rounded-xl border border-gray-200 p-6">
             <h2 className="text-lg font-semibold mb-4">Notatki</h2>
-            {order.customerNotes && (
-              <div className="mb-4 p-3 bg-yellow-50 rounded-lg text-sm">
-                <span className="font-medium text-yellow-800">Uwagi klienta:</span>
-                <p className="mt-1 text-yellow-700">{order.customerNotes}</p>
-              </div>
-            )}
+            {(() => {
+              // Dane licencjobiorcy zapisane przez checkout na początku uwag (lib/licencje) — osobno,
+              // bo z nich zamawia się licencję u dystrybutora.
+              const { licencjobiorca, uwagi } = odczytajLicencjobiorce(order.customerNotes)
+              return (
+                <>
+                  {licencjobiorca && (
+                    <div className="mb-4 p-3 bg-blue-50 rounded-lg text-sm">
+                      <span className="font-medium text-blue-800">Dane licencjobiorcy:</span>
+                      <p className="mt-1 text-blue-700">{licencjobiorca.firma}</p>
+                      <p className="text-blue-700">{licencjobiorca.email}</p>
+                    </div>
+                  )}
+                  {uwagi && (
+                    <div className="mb-4 p-3 bg-yellow-50 rounded-lg text-sm">
+                      <span className="font-medium text-yellow-800">Uwagi klienta:</span>
+                      <p className="mt-1 text-yellow-700">{uwagi}</p>
+                    </div>
+                  )}
+                </>
+              )
+            })()}
             <OrderNotesForm orderId={order.id} currentNotes={order.adminNotes || ''} />
 
             {/* Atrybucja: droga klienta od kliknięcia */}

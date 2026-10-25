@@ -52,6 +52,7 @@ import { getProductBySlug, products } from '@/data/products'
 import { newlandMt95ProIiiAccessories } from '@/data/newland-mt95-pro-iii-accessories'
 import { bundleItemPartNumber, bundlePartNumber } from '@/lib/bundle'
 import { lookupUnifiedStock } from '@/lib/unified-stock'
+import { jestNaStanie } from '@/lib/licencje'
 import type { StockInfo } from '@/lib/ingram'
 
 /**
@@ -191,7 +192,7 @@ export const getSchemaOffer = cache(async (
     const response = await lookupUnifiedStock([partNumber])
     const row = (response.body.results ?? [])[0]
     if (!row?.found || row.price == null || row.price <= 0) return undefined
-    return { price: row.price, availability: row.stockPL + row.stockDE > 0 ? 'available' : 'unavailable' }
+    return { price: row.price, availability: jestNaStanie(row) ? 'available' : 'unavailable' }
   } catch (error) {
     console.error('[schema] brak ceny na żywo dla', partNumber, error)
     return undefined
@@ -214,7 +215,7 @@ export const getSchemaOffers = cache(async (
     const response = await lookupUnifiedStock(partNumbers)
     for (const row of response.body.results ?? []) {
       if (!row?.found || row.price == null || row.price <= 0) continue
-      out.set(row.partNumber, { price: row.price, availability: row.stockPL + row.stockDE > 0 ? 'available' : 'unavailable' })
+      out.set(row.partNumber, { price: row.price, availability: jestNaStanie(row) ? 'available' : 'unavailable' })
     }
   } catch (error) {
     console.error('[schema] brak cen na żywo dla', partNumbers.join(', '), error)

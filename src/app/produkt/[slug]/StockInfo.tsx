@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { Badge } from '@/components/ui'
 import type { StockInfo as StockInfoType } from '@/lib/ingram'
 import { timeoutSignal } from '@/lib/timeout-signal'
+import { jestNaStanie, LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 // ============================================
 // GLOBAL STOCK CACHE
@@ -183,6 +184,15 @@ export default function StockInfo({ partNumbers }: StockInfoProps) {
 
   if (!firstWithStock) return null
 
+  if (firstWithStock.electronicLicense) {
+    return (
+      <div className="mt-3 flex items-center gap-2 text-sm">
+        <div className="w-2 h-2 bg-green-500 rounded-full" />
+        <span className="text-gray-600">{LICENCJA_DOSTAWA}</span>
+      </div>
+    )
+  }
+
   return (
     <div className="mt-3 space-y-1.5">
       {firstWithStock.stockPL > 0 && (
@@ -264,7 +274,7 @@ export function LiveAvailabilityBadge({
   let hasStock = false
   for (const pn of partNumbers) {
     const stock = stockData.get(pn)
-    if (stock?.found && stock.stockPL + stock.stockDE > 0) {
+    if (stock?.found && jestNaStanie(stock)) {
       hasStock = true
       break
     }

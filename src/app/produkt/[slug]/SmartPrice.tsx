@@ -10,6 +10,7 @@ import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, ShoppingCartIcon } from '@/components/ui/Icons'
+import { LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 interface SmartPriceProps {
   product: Product
@@ -24,7 +25,7 @@ const DEVICE_CATEGORIES = new Set([
 ])
 
 export default function SmartPrice({ product, badge }: SmartPriceProps) {
-  const { displayedPn, price, loading, variantName, stockData } = useSmartPrice()
+  const { displayedPn, price, loading, variantName, stockData, naZapytanie } = useSmartPrice()
   const { addItem, updateQuantity, isInCart, openDrawer, getItem } = useCartStore()
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
@@ -59,7 +60,9 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
 
   // Stock info z kontekstu — zero osobnych fetchów
   const stock = displayedPn ? stockData.get(displayedPn) : undefined
-  const hasStockData = !loading && stock?.found
+  // Pozycja na zapytanie nie pokazuje stanu: o dostępności informujemy w odpowiedzi na zapytanie.
+  const hasStockData = !loading && stock?.found && !naZapytanie
+  const licencja = !!hasStockData && !!stock!.electronicLicense
 
   // Cena kartonowa (taśmy + etykiety) — zakup całego opakowania wychodzi taniej za rolkę:
   // niższa marża niż jednostkowa (taśmy 13% vs 20%, etykiety 10% vs 15%). Gdy live — cena
@@ -79,7 +82,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
     : undefined
   const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
   // Wariant niedostępny (brak stanu PL/EU/w drodze) → bez opcji kartonu (koszyk wyłączony).
-  const variantUnavailable = !!hasStockData && stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0
+  const variantUnavailable = !!hasStockData && !licencja && stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0
   const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll) && !variantUnavailable
   const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
   const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
@@ -135,7 +138,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
         </p>
       )}
       <div className="flex items-baseline gap-2">
-        {loading ? (
+        {loading && !naZapytanie ? (
           <span className="inline-block h-9 w-40 bg-gray-200 rounded animate-pulse" />
         ) : price ? (
           <span className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -147,7 +150,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
         {price && <span className="text-sm text-gray-500">netto{product.subcategoryIds?.includes('etykiety-rfid') ? ' / rolka' : hasTiers || isPack ? ` / ${unit}` : ''}</span>}
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
-      {(loading || price) && (
+      {((loading && !naZapytanie) || price) && (
         <p className="text-sm text-gray-400 mt-1">
           {loading ? (
             <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
@@ -215,13 +218,19 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
       )}
 
       {/* Stany magazynowe — bezpośrednio z kontekstu, bez osobnego fetcha */}
-      {loading && displayedPn && (
+      {loading && displayedPn && !naZapytanie && (
         <div className="mt-3 flex items-center gap-2 text-sm text-gray-400 animate-pulse">
           <div className="w-2 h-2 bg-gray-300 rounded-full" />
           Sprawdzanie stanów magazynowych...
         </div>
       )}
-      {hasStockData && (
+      {licencja && (
+        <div className="mt-3 flex items-center gap-2 text-sm">
+          <div className="w-2 h-2 bg-green-500 rounded-full" />
+          <span className="text-gray-600">{LICENCJA_DOSTAWA}</span>
+        </div>
+      )}
+      {hasStockData && !licencja && (
         <div className="mt-3 space-y-1.5">
           {stock!.stockPL > 0 && (
             <div className="flex items-center gap-2 text-sm">

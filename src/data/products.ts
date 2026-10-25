@@ -105,7 +105,8 @@ export interface Product {
   subcategoryIds?: string[]
   manufacturerId: string
   priceFrom?: number
-  /** Karta sprzedażowa bez ceny i stanu: konfigurację wyceniamy po zapytaniu. */
+  /** Karta sprzedażowa bez ceny, stanu i koszyka: konfigurację wyceniamy po zapytaniu („Zapytaj o cenę”),
+   *  nawet gdy API zwraca cenę (np. edycje Enterprise) — patrz lib/licencje. */
   quoteOnly?: boolean
   /** Zapowiedź producenta: karta bez ceny, PN i koszyka, poza feedami; plakietka „Zapowiedź” zamiast „Na zapytanie”. Nie wymaga quoteOnly. */
   comingSoon?: boolean
@@ -71701,6 +71702,8 @@ Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie
     imageDescriptions: ['Zebra CardStudio 2.0 — oprogramowanie do druku kart'],
     tags: ['retail'],
     availability: 'on-order',
+    // Licencja elektroniczna: z ceną u dystrybutora „dostępna, kod e-mailem” (lib/licencje)
+    licenseDelivery: 'email',
     isNew: true,
     isBestseller: false,
     specifications: [

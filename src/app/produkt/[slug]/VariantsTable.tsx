@@ -11,6 +11,8 @@ import { PlusIcon, CheckIcon, BellIcon, ChevronDownIcon } from '@/components/ui/
 import { useCartStore } from '@/store/cartStore'
 import { ProductVariant } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
+import AskAboutProductButton from './AskAboutProductButton'
+import { LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 interface VariantsTableProps {
   productSlug: string
@@ -21,11 +23,42 @@ interface VariantsTableProps {
   manufacturerId?: string
 }
 
-const availabilityConfig: Record<string, { label: string; variant: 'success' | 'warning' | 'danger' }> = {
+const availabilityConfig: Record<string, { label: string; variant: 'success' | 'warning' | 'danger' | 'info' }> = {
   available: { label: 'Dostępny', variant: 'success' },
   check: { label: 'Niedostępny', variant: 'danger' },
   'on-order': { label: 'Niedostępny', variant: 'danger' },
   unavailable: { label: 'Niedostępny', variant: 'danger' },
+}
+
+const naZapytanieConfig = { label: 'Na zapytanie', variant: 'info' as const }
+
+/** Licencja e-mailem w kolumnie „Magazyn”: krótko, pełny tekst w dymku (tabela bez poziomego przewijania). */
+function LicenseCell() {
+  return (
+    <div className="relative group">
+      <div className="flex items-center gap-1.5">
+        <div className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+        <span className="text-xs text-gray-700 whitespace-nowrap">Kod e-mailem</span>
+      </div>
+      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gray-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity z-10">
+        {LICENCJA_DOSTAWA}
+        <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900" />
+      </div>
+    </div>
+  )
+}
+
+/** Zapytanie o cenę wariantu na zapytanie — ten sam formularz co „Zapytaj o produkt”, z numerem PN w treści. */
+function QuoteButton({ productName, productSlug, variant, size }: { productName: string; productSlug: string; variant: ProductVariant; size: 'sm' | 'md' }) {
+  return (
+    <AskAboutProductButton
+      productName={`${productName} (${variant.partNumber})`}
+      productSlug={productSlug}
+      label="Zapytaj o cenę"
+      initialMessage={`Proszę o wycenę: ${productName}${variant.name ? ` — ${variant.name}` : ''} (${variant.partNumber}).`}
+      buttonClassName={`inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-300 bg-white font-medium text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:border-gray-400 transition-colors ${size === 'sm' ? 'px-3 py-1.5 text-xs' : 'px-4 py-2 text-sm'}`}
+    />
+  )
 }
 
 function StockCell({ stockPL, stockDE, inDelivery, incomingDate, loading }: { stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; loading: boolean }) {
@@ -232,7 +265,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   attributeKeys: string[]
   rowIndex: number
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; electronicLicense?: boolean }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
@@ -243,13 +276,15 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true LUB totalStock>0
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
-  const avail = liveSignal
+  // Wariant na zapytanie: bez ceny i koszyka, zamiast nich „Zapytaj o cenę” (serwer nie podaje też ceny z API).
+  const naZapytanie = !!variant.quoteOnly
+  const avail = naZapytanie ? naZapytanieConfig : liveSignal
     ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
     : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
   const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
-  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
-  const cartPrice = variant.promoPrice || livePrice
+  const isUnavailable = !naZapytanie && !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const livePrice = naZapytanie ? undefined : liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
+  const cartPrice = naZapytanie ? undefined : variant.promoPrice || livePrice
 
   return (
     <tr className={`${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-primary-50/50 transition-colors`}>
@@ -262,7 +297,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         </td>
       ))}
       <td className="px-3 py-3.5 text-sm whitespace-nowrap">
-        {stockLoading ? (
+        {stockLoading && !naZapytanie ? (
           <span className="inline-block h-4 w-20 bg-gray-200 rounded animate-pulse" />
         ) : variant.promoPrice ? (
           <div className="flex flex-col gap-0.5">
@@ -284,13 +319,21 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
         }
       </td>
       <td className="px-3 py-3.5">
-        <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} inDelivery={stock?.inDelivery ?? 0} incomingDate={stock?.incomingDate} loading={stockLoading} />
+        {naZapytanie ? (
+          <span className="text-xs text-gray-400">—</span>
+        ) : !stockLoading && stock?.electronicLicense ? (
+          <LicenseCell />
+        ) : (
+          <StockCell stockPL={stock?.stockPL ?? 0} stockDE={stock?.stockDE ?? 0} inDelivery={stock?.inDelivery ?? 0} incomingDate={stock?.incomingDate} loading={stockLoading} />
+        )}
       </td>
       <td className="px-3 py-3.5 text-center">
         <Badge variant={avail.variant}>{avail.label}</Badge>
       </td>
       <td className="sticky right-0 z-10 bg-inherit px-3 py-3.5 text-center whitespace-nowrap shadow-[-8px_0_12px_-8px_rgba(0,0,0,0.12)]">
-        {isUnavailable ? (
+        {naZapytanie ? (
+          <QuoteButton productName={productName} productSlug={productSlug} variant={variant} size="sm" />
+        ) : isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
         ) : !cartPrice ? (
           <span className="text-xs text-gray-400">Zapytaj</span>
@@ -324,7 +367,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   productImage?: string
   attributeKeys: string[]
   mounted: boolean
-  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number }>
+  stockData: Map<string, { found: boolean; stockPL: number; stockDE: number; inDelivery: number; incomingDate?: string; availability: 'available' | 'on-order' | 'unavailable'; price?: number; electronicLicense?: boolean }>
   stockLoading: boolean
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
@@ -336,13 +379,15 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true LUB totalStock>0
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
-  const avail = liveSignal
+  // Wariant na zapytanie: bez ceny i koszyka, zamiast nich „Zapytaj o cenę” (serwer nie podaje też ceny z API).
+  const naZapytanie = !!variant.quoteOnly
+  const avail = naZapytanie ? naZapytanieConfig : liveSignal
     ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
     : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
   const effectiveAvailability = liveSignal ? stock!.availability : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? 'unavailable' : variant.availability
-  const isUnavailable = !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
-  const livePrice = liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
-  const cartPrice = variant.promoPrice || livePrice
+  const isUnavailable = !naZapytanie && !stockLoading && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')
+  const livePrice = naZapytanie ? undefined : liveSignal && stock!.price ? stock!.price : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? undefined : variant.priceFrom
+  const cartPrice = naZapytanie ? undefined : variant.promoPrice || livePrice
 
   return (
     <div className="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
@@ -365,6 +410,12 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
         ))}
       </div>
 
+      {!stockLoading && !naZapytanie && stock?.electronicLicense && (
+        <div className="flex items-center gap-1 text-xs text-gray-600">
+          <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+          {LICENCJA_DOSTAWA}
+        </div>
+      )}
       {!stockLoading && stock && (stock.stockPL > 0 || stock.stockDE > 0) && (
         <div className="flex items-center gap-3 text-xs text-gray-600">
           {stock.stockPL > 0 && (
@@ -397,7 +448,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
 
       <div className="flex items-center justify-between pt-2 border-t border-gray-100">
         <div>
-          {stockLoading ? (
+          {stockLoading && !naZapytanie ? (
             <span className="inline-block h-5 w-24 bg-gray-200 rounded animate-pulse" />
           ) : variant.promoPrice ? (
               <div>
@@ -426,7 +477,9 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
             )
           }
         </div>
-        {isUnavailable ? (
+        {naZapytanie ? (
+          <QuoteButton productName={productName} productSlug={productSlug} variant={variant} size="md" />
+        ) : isUnavailable ? (
           <NotifyButton partNumber={variant.partNumber} productName={`${productName} (${variant.partNumber})`} />
         ) : (
           <Button
@@ -478,7 +531,8 @@ export default function VariantsTable({ productSlug, productName, productImage, 
       const stock = stockData.get(v.partNumber)
       const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
       const effectiveAvailability = liveSignal ? stock!.availability : v.availability
-      if (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order') {
+      // Wariant na zapytanie zostaje na liście głównej — jest w ofercie, tylko bez ceny.
+      if (!v.quoteOnly && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')) {
         unavailable.push(v)
       } else {
         available.push(v)

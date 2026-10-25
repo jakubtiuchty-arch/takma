@@ -1,5 +1,6 @@
 import type { Product } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
+import { jestNaStanie } from '@/lib/licencje'
 
 export function catalogPartNumbers(p: Pick<Product, 'variants' | 'specifications'>): string[] {
   if (p.variants?.length) return p.variants.map(v => v.partNumber)
@@ -11,7 +12,7 @@ export function catalogPartNumbers(p: Pick<Product, 'variants' | 'specifications
 export function withLiveCatalogData<T extends Pick<Product, 'variants' | 'specifications' | 'availability' | 'priceFrom'>>(p: T, data: Map<string, StockInfo>): T {
   const rows = catalogPartNumbers(p).map(pn => data.get(pn)).filter((r): r is StockInfo => !!r?.found)
   if (!rows.length) return p
-  const stocked = rows.filter(r => r.stockPL + r.stockDE > 0)
+  const stocked = rows.filter(r => jestNaStanie(r))
   const prices = (stocked.length ? stocked : rows).map(r => r.price).filter((price): price is number => !!price && price > 0)
   // A stocked item with no quote must not hide valid prices from other variants.
   const fallbackPrices = rows.map(r => r.price).filter((price): price is number => !!price && price > 0)

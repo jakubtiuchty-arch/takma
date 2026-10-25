@@ -34,6 +34,7 @@ export interface StockInfo {
   availability: 'available' | 'on-order' | 'unavailable'
   deliveryText: string
   lastSync: string
+  electronicLicense?: boolean // Licencja e-mailem: dostępna mimo zerowego stanu (lib/licencje)
 }
 
 // ============================================

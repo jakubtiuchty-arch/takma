@@ -22,6 +22,7 @@ import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
 import { createCheckoutSession, createProformaOrder } from '@/actions/checkout'
 import { trackBeginCheckout, trackAddPaymentInfo, trackPurchase, trackPromoCodeApplied, trackPromoCodeRejected } from '@/lib/ga-events'
+import { czyLicencjaElektroniczna, czyNaZapytanie, dopiszLicencjobiorce, type Licencjobiorca } from '@/lib/licencje'
 
 // ── Typy ────────────────────────────────────────────────────────
 
@@ -42,6 +43,10 @@ interface CheckoutFormData {
   shippingPostalCode: string
   shippingCity: string
   notes: string
+  /** Dane licencjobiorcy — tylko gdy koszyk zawiera licencję e-mailem */
+  licenseSameAsBuyer: boolean
+  licenseCompany: string
+  licenseEmail: string
   paymentMethod: PaymentMethod
   consent: boolean
   acceptTerms: boolean
@@ -60,6 +65,8 @@ interface FormErrors {
   shippingStreet?: string
   shippingPostalCode?: string
   shippingCity?: string
+  licenseCompany?: string
+  licenseEmail?: string
   consent?: string
   acceptTerms?: string
 }
@@ -175,6 +182,9 @@ export default function CheckoutPage() {
     shippingPostalCode: '',
     shippingCity: '',
     notes: '',
+    licenseSameAsBuyer: true,
+    licenseCompany: '',
+    licenseEmail: '',
     paymentMethod: 'online',
     consent: false,
     acceptTerms: false,
@@ -219,6 +229,26 @@ export default function CheckoutPage() {
 
   /** Numer oferty, jeśli koszyk przyszedł z linku „zamów z oferty". */
   const quoteNumber = useMemo(() => items.find((i) => i.quoteNumber)?.quoteNumber, [items])
+
+  // Licencje e-mailem (BarTender, Loftware, CardStudio): zamówienie potrzebuje danych licencjobiorcy.
+  // Rozpoznajemy je po karcie produktu, nie po polu pozycji — koszyk zapisany przed zmianą też się liczy.
+  const maLicencje = useMemo(
+    () => items.some((item) => czyLicencjaElektroniczna(products.find((p) => p.slug === item.productSlug))),
+    [items],
+  )
+
+  // Pozycje tylko na zapytanie (edycje Enterprise) nie przechodzą przez koszyk — wyjątek to
+  // pozycja z oferty handlowej, którą wyceniliśmy indywidualnie.
+  const pozycjeNaZapytanie = useMemo(
+    () => items.filter((item) => !item.quoteNumber && czyNaZapytanie(products.find((p) => p.slug === item.productSlug), item.partNumber)),
+    [items],
+  )
+
+  const licencjobiorca: Licencjobiorca | undefined = maLicencje
+    ? formData.licenseSameAsBuyer
+      ? { firma: formData.company, email: formData.email }
+      : { firma: formData.licenseCompany, email: formData.licenseEmail }
+    : undefined
 
   /** Ile sztuk objętych kodem już rozdaliśmy między pozycje koszyka. */
   const itemPrices = useMemo(() => {
@@ -386,6 +416,18 @@ export default function CheckoutPage() {
       }
     }
 
+    // Dane licencjobiorcy (gdy inne niż zamawiającego) — na ten adres trafia kod licencji
+    if (maLicencje && !formData.licenseSameAsBuyer) {
+      if (!formData.licenseCompany.trim()) {
+        newErrors.licenseCompany = 'Nazwa firmy licencjobiorcy jest wymagana'
+      }
+      if (!formData.licenseEmail.trim()) {
+        newErrors.licenseEmail = 'Adres e-mail użytkownika licencji jest wymagany'
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.licenseEmail)) {
+        newErrors.licenseEmail = 'Nieprawidłowy format adresu e-mail'
+      }
+    }
+
     if (!formData.consent) {
       newErrors.consent = 'Zgoda jest wymagana do złożenia zamówienia'
     }
@@ -404,6 +446,13 @@ export default function CheckoutPage() {
     e.preventDefault()
 
     if (!validateForm() || items.length === 0) {
+      return
+    }
+
+    if (pozycjeNaZapytanie.length > 0) {
+      setSubmitError(
+        `${pozycjeNaZapytanie.map((i) => i.productName).join(', ')} — cenę tej pozycji podajemy na zapytanie. Usuń ją z koszyka i skorzystaj z przycisku „Zapytaj o cenę” na karcie produktu.`
+      )
       return
     }
 
@@ -472,7 +521,8 @@ export default function CheckoutPage() {
           customerData,
           shippingNetto,
           formData.notes || undefined,
-          promoCode?.code
+          promoCode?.code,
+          licencjobiorca
         )
 
         // 2. Generate proforma HTML and open in new tab
@@ -504,7 +554,8 @@ export default function CheckoutPage() {
             vatAmount,
             totalBrutto,
             orderNumber: result.orderNumber,
-            notes: formData.notes || undefined,
+            // Maile pro formy dostają uwagi w tej samej postaci co zamówienie w bazie (z licencjobiorcą).
+            notes: (licencjobiorca ? dopiszLicencjobiorce(formData.notes, licencjobiorca) : formData.notes) || undefined,
           }),
         })
 
@@ -546,7 +597,8 @@ export default function CheckoutPage() {
           customerData,
           shippingNetto,
           formData.notes || undefined,
-          promoCode?.code
+          promoCode?.code,
+          licencjobiorca
         )
 
         // Koszyka NIE czyścimy tutaj — re-render pokazywał „koszyk pusty" przed
@@ -1182,6 +1234,27 @@ export default function CheckoutPage() {
 
               <Textarea label="Uwagi do zamowienia" name="notes" value={formData.notes} onChange={handleInputChange} placeholder="Dodatkowe informacje, np. preferowany termin dostawy..." rows={3} />
             </div>
+
+            {/* Dane licencjobiorcy — licencje e-mailem (BarTender, Loftware, CardStudio) */}
+            {maLicencje && (
+              <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">
+                <h2 className="text-base sm:text-lg font-semibold text-gray-900">Dane licencjobiorcy</h2>
+                <p className="text-sm text-gray-600">Kod licencji wyślemy na adres e-mail użytkownika licencji.</p>
+
+                <Checkbox
+                  label={<span className="text-sm font-medium text-gray-700">Takie same jak dane zamawiającego</span>}
+                  checked={formData.licenseSameAsBuyer}
+                  onChange={(e) => setFormData((prev) => ({ ...prev, licenseSameAsBuyer: e.target.checked }))}
+                />
+
+                {!formData.licenseSameAsBuyer && (
+                  <div className="space-y-4">
+                    <Input label="Firma licencjobiorcy" name="licenseCompany" value={formData.licenseCompany} onChange={handleInputChange} error={errors.licenseCompany} placeholder="np. ABC Sp. z o.o." required />
+                    <Input label="E-mail użytkownika licencji" name="licenseEmail" type="email" value={formData.licenseEmail} onChange={handleInputChange} error={errors.licenseEmail} placeholder="email@firma.pl" required />
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Płatność */}
             <div className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-4">

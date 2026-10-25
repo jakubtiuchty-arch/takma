@@ -16,7 +16,8 @@ export default function VariantQuickPick({ variants }: { variants: ProductVarian
   if (named.length < 2) return null
   const isOut = (pn: string) => {
     const s = stockData.get(pn)
-    return !loading && !!s?.found && s.totalStock <= 0
+    // Licencja e-mailem ma zerowy stan, a jest do kupienia (lib/licencje).
+    return !loading && !!s?.found && !s.electronicLicense && s.totalStock <= 0
   }
   return (
     <div className="lg:hidden mb-5">
@@ -24,7 +25,8 @@ export default function VariantQuickPick({ variants }: { variants: ProductVarian
       <div className="flex flex-wrap gap-2">
         {named.map(v => {
           const active = v.partNumber === displayedPn
-          const out = isOut(v.partNumber)
+          const naZapytanie = !!v.quoteOnly
+          const out = !naZapytanie && isOut(v.partNumber)
           return (
             <button
               key={v.partNumber}
@@ -37,6 +39,7 @@ export default function VariantQuickPick({ variants }: { variants: ProductVarian
             >
               {v.name}
               {out ? <span className="block text-[11px] font-normal text-gray-500">niedostępny</span> : null}
+              {naZapytanie ? <span className="block text-[11px] font-normal text-gray-500">na zapytanie</span> : null}
             </button>
           )
         })}

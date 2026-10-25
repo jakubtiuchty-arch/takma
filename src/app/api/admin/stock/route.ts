@@ -23,6 +23,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Maksymalnie 50 Part Numberow na jedno zapytanie.' }, { status: 400 })
   }
 
-  const { body, status } = await lookupUnifiedStock(partNumbers)
+  // Dane dystrybutora bez reguł sklepu: kreator wycenia też edycje „na zapytanie”.
+  const { body, status } = await lookupUnifiedStock(partNumbers, false, { daneDystrybutora: true })
   return NextResponse.json(body, { status, headers: { 'Cache-Control': 'private, no-store' } })
 }

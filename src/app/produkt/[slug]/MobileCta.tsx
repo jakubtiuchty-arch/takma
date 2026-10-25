@@ -12,8 +12,8 @@ import type { Product } from '@/data/products'
  * zapytanie o produkt. Wcześniej pasek zawsze promował tylko zapytanie i telefon.
  */
 export default function MobileCta({ product, hasVariants, bundle }: { product: Product; hasVariants: boolean; bundle?: { price: number; href: string } }) {
-  const { price, loading } = useSmartPrice()
-  const canBuy = loading || !!price
+  const { price, loading, naZapytanie } = useSmartPrice()
+  const canBuy = !naZapytanie && (loading || !!price)
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t border-gray-200 px-4 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] lg:hidden z-40">
       <div className="flex items-center gap-2">
@@ -21,7 +21,7 @@ export default function MobileCta({ product, hasVariants, bundle }: { product: P
           {canBuy ? (
             <AddToRFQButton product={product} compact />
           ) : (
-            <AskAboutProductButton productName={product.name} productSlug={product.slug} compact />
+            <AskAboutProductButton productName={product.name} productSlug={product.slug} compact label={naZapytanie && !product.comingSoon ? 'Zapytaj o cenę' : undefined} />
           )}
         </div>
         {canBuy && bundle && (
