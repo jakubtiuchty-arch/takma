@@ -516,7 +516,7 @@ export async function middleware(request: NextRequest) {
     }
 
     if (!existingSlugs.has(slug)) {
-      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('printronix-') || slug.startsWith('sato-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-') || slug.startsWith('bixolon-') || slug.startsWith('brady-') || slug.startsWith('getac-') || slug.startsWith('tsl-') || slug.startsWith('unitech-') || slug.startsWith('bluebird-') || slug.startsWith('proglove-') || slug.startsWith('socket-mobile-')
+      const isNewSiteProduct = slug.startsWith('zebra-') || slug.startsWith('datalogic-') || slug.startsWith('newland-') || slug.startsWith('honeywell-') || slug.startsWith('brother-') || slug.startsWith('tsc-') || slug.startsWith('printronix-') || slug.startsWith('sato-') || slug.startsWith('citizen-') || slug.startsWith('labelmate-') || slug.startsWith('bixolon-') || slug.startsWith('brady-') || slug.startsWith('getac-') || slug.startsWith('tsl-') || slug.startsWith('unitech-') || slug.startsWith('bluebird-') || slug.startsWith('proglove-') || slug.startsWith('socket-mobile-') || slug.startsWith('bartender-') || slug.startsWith('loftware-')
 
       if (!isNewSiteProduct) {
         return NextResponse.redirect(new URL('/produkt-przeniesiony', request.url), 301)

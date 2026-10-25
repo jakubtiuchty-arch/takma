@@ -25,6 +25,9 @@ import { honeywellSocketHcScanners } from './honeywell-socket-hc-scanners'
 import { datalogicNewlandHcScanners } from './datalogic-newland-hc-scanners'
 import { healthcareTerminalCategory } from './healthcare-terminal-category'
 import { honeywellHcTerminals } from './honeywell-hc-terminals'
+import { bartenderProducts } from './bartender-products'
+import { loftwareProducts } from './loftware-products'
+import { labelSoftwareCategory, cardSoftwareCategory } from './software-category'
 import { datalogicHcTerminals } from './datalogic-hc-terminals'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
@@ -431,12 +434,12 @@ export const categories: Category[] = [
     id: 'oprogramowanie',
     slug: 'oprogramowanie',
     name: 'Oprogramowanie',
-    description: 'Oprogramowanie do projektowania kart, etykiet i zarządzania drukarkami',
-    seoTitle: 'Oprogramowanie Zebra | CardStudio, ZebraDesigner',
-    seoDescription: 'Oprogramowanie Zebra: CardStudio 2.0 do projektowania kart plastikowych, ZebraDesigner do etykiet. Licencje Classic, Standard, Professional, Enterprise. Ceny netto B2B.',
-    longDescription: 'Oprogramowanie Zebra Technologies do projektowania i drukowania kart plastikowych oraz etykiet. Zebra CardStudio 2.0 — intuicyjne narzędzie do tworzenia identyfikatorów, kart dostępu i kart lojalnościowych z integracją baz danych, kodowaniem magnetycznym i RFID. Dostępne w wersjach Classic (podstawowa), Standard (bazy danych), Professional (zaawansowane kodowanie) i Enterprise (pełne API). ZebraDesigner — profesjonalne oprogramowanie do projektowania etykiet z kodami kreskowymi.',
+    description: 'Programy do projektowania i drukowania etykiet oraz kart plastikowych: BarTender, Loftware Cloud (NiceLabel), Zebra CardStudio i Magicard HUB',
+    seoTitle: 'Oprogramowanie do etykiet i kart — BarTender, Loftware, CardStudio',
+    seoDescription: 'Programy do drukowania etykiet BarTender i Loftware Cloud (NiceLabel) oraz programy do kart Zebra CardStudio 2.0 i Magicard HUB. Licencje elektroniczne, ceny netto.',
+    longDescription: 'Oprogramowanie do projektowania i drukowania etykiet oraz kart plastikowych. [Programy do etykiet](/programy-do-etykiet) łączą projekt etykiety z danymi z arkuszy i baz oraz drukują na drukarkach etykiet różnych producentów. Licencję liczy się według stanowisk albo drukarek. [Programy do kart](/programy-do-kart) służą do projektowania identyfikatorów i legitymacji oraz do kodowania kart na drukarkach kart. Licencje płatnych programów są elektroniczne i przychodzą e-mailem.',
     icon: 'code',
-    productCount: 4,
+    productCount: 10,
   },
 ]
 
@@ -554,6 +557,8 @@ export const subcategories: Subcategory[] = [
   rfidTerminalCategory,
   wearableTerminalCategory,
   healthcareTerminalCategory,
+  labelSoftwareCategory,
+  cardSoftwareCategory,
   rfidSledCategory,
   rfidReaderCategory,
   {
@@ -71695,6 +71700,7 @@ Dostępne w 4 wersjach:
 
 Kompatybilne z Windows 7/8/10/11. Obsługuje druk jedno- i dwustronny, kodowanie magnetyczne, RFID/NFC i smart card (w zależności od wersji).`,
     categoryId: 'oprogramowanie',
+    subcategoryIds: ['programy-do-kart'],
     manufacturerId: 'zebra',
     priceFrom: 259.60,
     images: ['/images/products/cardstudio.png'],
@@ -71750,6 +71756,7 @@ Projektant kart działa jak prosty edytor graficzny: tło, zdjęcie, logo, pola 
 
 Program działa z drukarkami Magicard Pronto100, 300, 600, D, K, E+ oraz PCP 100 i PCP FLEX+. Wymaga systemu Windows 10 lub 11 w wersji 64-bitowej. Plik instalacyjny udostępniamy z własnego serwera, bez formularza i rejestracji, w wersji otrzymanej od producenta.`,
     categoryId: 'oprogramowanie',
+    subcategoryIds: ['programy-do-kart'],
     manufacturerId: 'magicard',
     images: ['/images/products/magicard-hub.png'],
     imageDescriptions: ['Magicard HUB — bezpłatny program do projektowania kart'],
@@ -95434,6 +95441,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Programy do etykiet BarTender i Loftware Cloud trafiają do podkategorii według `subcategoryIds`, w tym do „Programy do etykiet”.
+for (const subcategory of subcategories) {
+  const additions = [...bartenderProducts, ...loftwareProducts].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
@@ -95498,6 +95514,8 @@ const rawProductList: Product[] = [
   ...datalogicNewlandHcScanners,
   ...honeywellHcTerminals,
   ...datalogicHcTerminals,
+  ...bartenderProducts,
+  ...loftwareProducts,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

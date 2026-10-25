@@ -228,6 +228,14 @@ Zwijają zadrukowaną wstęgę w równą rolkę gotową do aplikatora albo odwij
 - Labelmate UNI-CAT (dwukierunkowa, nośnik do 155 mm): https://www.takma.com.pl/produkt/labelmate-uni-cat-standard
 - Kategoria: https://www.takma.com.pl/nawijarki-do-etykiet
 
+## Oprogramowanie do etykiet i kart
+- [Oprogramowanie](https://www.takma.com.pl/oprogramowanie): programy do projektowania i drukowania etykiet oraz kart plastikowych. Licencje płatnych programów są elektroniczne i przychodzą e-mailem; przy zamówieniu podaje się firmę i e-mail użytkownika licencji.
+- [Programy do etykiet](https://www.takma.com.pl/programy-do-etykiet): BarTender (Seagull Software) w edycjach Starter, Professional, Automation i Enterprise instalowanych w Windows oraz BarTender Cloud w przeglądarce; Loftware Cloud (dawniej NiceLabel) w edycjach Designer, Essentials i Business. BarTender: licencja na stanowisko (Starter i Professional) albo na liczbę drukarek. Loftware Cloud: subskrypcja liczona miejscami drukarek, komputery bez limitu w jednej domenie.
+- [Loftware Cloud Designer](https://www.takma.com.pl/produkt/loftware-cloud-designer) (PN NSCDBA001Y subskrypcja 1 rok z 1 drukarką, NSCDAD001Y dodatkowa drukarka): Control Center w chmurze, Web Designer, Desktop Designer (Windows 11 / Server 2016–2025), Loftware Print; 1–10 drukarek, 1 GB na etykiety.
+- [Loftware Cloud Essentials](https://www.takma.com.pl/produkt/loftware-cloud-essentials) (PN NSCEBS001M subskrypcja 1 rok do 2 drukarek, NSCEAO001M dodatkowa drukarka, NSCEDB001M baza SQL 1 GB, NSCEPH001M historia druku 1 rok): formularze Designer PowerForms, druk przez Loftware Web Client, jednokierunkowa integracja z systemami lokalnymi; 2–20 drukarek.
+- [Loftware Cloud Business](https://www.takma.com.pl/produkt/loftware-cloud-business) (PN NSCBSM001M Small do 3 drukarek, NSCBSA001M dodatkowa drukarka, NSCBLX001M Large do 50 drukarek): drukarki chmurowe, zarządzanie drukarkami, analityka druku, Cloud API, integracje z systemami w chmurze i lokalnymi; cena na zapytanie.
+- [Programy do kart](https://www.takma.com.pl/programy-do-kart): Zebra CardStudio 2.0 (Classic, Standard, Professional, Enterprise) do drukarek kart Zebra i bezpłatny Magicard HUB do drukarek Magicard.
+
 ## Terminale mobilne M3 Mobile
 - Wszystkie modele M3 Mobile (9 terminali, ceny i dostępność): https://www.takma.com.pl/terminale-m3-mobile
 - M3 UL20 (kolektor danych gun z klawiaturą 28/35/53 kl., 5" FHD, IP67, SE4750/SE4850/SE5800, freezer −30°C, 34 warianty od 5 484 zł): https://www.takma.com.pl/produkt/m3-ul20
