@@ -20,7 +20,7 @@ const content = {
     eyebrow: 'URZĄDZENIA Z ANDROIDEM DLA BIZNESU',
     lines: ['Przy ladzie.', 'W ruchu.', 'W kuchni.'],
     description: 'Komputery POS, terminale mobilne, kioski i ekrany kuchenne. Dobierz sprzęt SUNMI do sklepu lub restauracji.',
-    href: '/terminale-sunmi', cta: 'Poznaj ofertę SUNMI',
+    href: '/katalog?producent=sunmi', cta: 'Poznaj ofertę SUNMI',
     chapters: ['Komputery POS', 'Terminale mobilne', 'Ekrany KDS'],
     label: 'SUNMI — komputer POS, terminal mobilny i ekran kuchenny w kolejnych ujęciach',
   },

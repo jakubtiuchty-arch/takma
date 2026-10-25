@@ -33,3 +33,5 @@ Nie generowano urządzeń ani scen AI. Wykorzystano rzeczywiste filmy producent�
 BrandBanner: jeden aktywny film na baner, lazy loading przez IntersectionObserver, pauza poza widokiem, ręczna pauza, obsługa prefers-reduced-motion, dostępne przyciski. SUNMI synchronizuje wyróżnienie hasła i rozdziałów z czasem filmu. Istniejące slajdy strony głównej pozostają; dwa banery dodano jako slajdy 2 i 3 z czasem 14 s każdy. Podgląd lokalny, bez publikacji.
 
 ESLint, scoped TypeScript i diff check poprawne. Testy odtwarzania w przeglądarce (readyState 4, brak błędów), przełączania SUNMI i szerokości mobilnej 390 px bez poziomego przewijania. Kadry sprawdzone na desktopie i telefonie. Filmy/pauza sprawdzone również w lokalnej karuzeli. Przy prefers-reduced-motion oba filmy pozostają zatrzymane na czasie 0.
+
+Publikacja ProGlove/SUNMI: dad0c96f, deployment dpl_2jRghTbbsDZyRkpi816uGiUAu3mL, READY. Oba filmy readyState 4 na produkcji. CTA SUNMI doprecyzowano do /katalog?producent=sunmi, ponieważ /terminale-sunmi obejmuje wyłącznie terminale mobilne, a baner pokazuje także POS i KDS.
