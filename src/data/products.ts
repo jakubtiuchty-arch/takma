@@ -14965,7 +14965,7 @@ const scanners: Product[] = [
 
 Imager 2D z matrycą CMOS odczytuje wszystkie popularne formaty kodów: EAN-13, Code 128, QR Code, DataMatrix, PDF417 i Aztec — w tym kody z ekranów smartfonów i tabletów (kupony, bilety, e-recepty). Szybkość dekodowania 220 skanów/s i zasięg do 36,8 cm zapewniają komfort pracy nawet przy intensywnym ruchu klientów.
 
-DS2208 spełnia wymagania dyrektywy antyfałszywkowej FMD (Falsified Medicines Directive) — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Wersja DS2208-HC z antybakteryjną obudową dedykowana jest dla placówek medycznych.
+DS2208 spełnia wymagania dyrektywy antyfałszywkowej FMD (Falsified Medicines Directive) — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Dla placówek ochrony zdrowia jest wersja [Zebra DS2208-HC](/produkt/zebra-ds2208-hc) z białą obudową przygotowaną do regularnej dezynfekcji.
 
 Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast „wpisuje" zeskanowany kod do aktywnego pola — działa z każdym programem kasowym, aptecznym, ERP i WMS bez instalacji sterowników. Zaawansowana konfiguracja przez aplikację Zebra 123Scan.
 
@@ -15082,7 +15082,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
       {
         question: 'Czy DS2208 nadaje się do apteki i spełnia wymagania FMD?',
-        answer: 'Tak — DS2208 odczytuje kody DataMatrix wymagane przez dyrektywę antyfałszywkową FMD do weryfikacji leków w systemie KOWAL/NMVS. Obsługuje również kody QR do e-recept i GS1 DataBar na opakowaniach leków. Dostępna jest wersja DS2208-HC z antybakteryjną obudową dedykowaną dla placówek medycznych.',
+        answer: 'Tak — DS2208 odczytuje kody DataMatrix wymagane przez dyrektywę antyfałszywkową FMD do weryfikacji leków w systemie KOWAL/NMVS. Obsługuje również kody QR do e-recept i GS1 DataBar na opakowaniach leków. Dla placówek ochrony zdrowia jest wersja [Zebra DS2208-HC](/produkt/zebra-ds2208-hc) z białą obudową przygotowaną do regularnej dezynfekcji.',
       },
       {
         question: 'Jak podłączyć DS2208 do komputera lub kasy fiskalnej?',
@@ -17645,7 +17645,7 @@ Bateria Li-Ion 2400 mAh — do 14 h ciągłej pracy lub 110 000 skanów na jedny
 
 Baza prezentacyjna CR2278 — automatyczne przełączanie między trybem ręcznym a hands-free (IntelliStand). Skaner odłożony do bazy skanuje automatycznie, podniesiony — wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem.
 
-IP52, upadki z 1,5 m na beton, zakres pracy 0°C do +50°C, waga 214 g. Wariant Healthcare (DS2278-HC) w białej obudowie do dezynfekcji. Gwarancja: 36 miesięcy (skaner), 12 miesięcy (bateria).
+IP52, upadki z 1,5 m na beton, zakres pracy 0°C do +50°C, waga 214 g. Model w wersji dla ochrony zdrowia to [Zebra DS2278-HC](/produkt/zebra-ds2278-hc): kolor Healthcare White, obudowa do dezynfekcji. Gwarancja: 36 miesięcy (skaner), 12 miesięcy (bateria).
 
 Koszt posiadania (TCO): skaner Zebra DS2278 z gwarancją 3 lata (dostępny OneCare do 5 lat). Bateria wymienialna i sprawna sieć serwisowa minimalizują przestoje — czas naprawy w Polsce 3–5 dni. Serwis w Polsce: serwis-zebry.pl.
 
@@ -17824,7 +17824,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       },
       {
         question: 'Czy Zebra DS2278 nadaje się do apteki?',
-        answer: 'Tak — odczytuje kody DataMatrix GS1 na lekach (zgodność z dyrektywą FMD). Wariant Healthcare DS2278-HC w białej obudowie do dezynfekcji. Bezprzewodowość Bluetooth ułatwia pracę za ladą apteczną i na wózkach aptecznych. Skanowanie kodów z opakowań leków, opaską pacjenta i recept elektronicznych.',
+        answer: 'Tak — odczytuje kody DataMatrix GS1 na lekach (zgodność z dyrektywą FMD). Do szpitali przeznaczony jest [Zebra DS2278-HC](/produkt/zebra-ds2278-hc), którego białą obudowę można regularnie dezynfekować. Bezprzewodowość Bluetooth ułatwia pracę za ladą apteczną i na wózkach aptecznych. Skanowanie kodów z opakowań leków, opaską pacjenta i recept elektronicznych.',
       },
       {
         question: 'Czym jest technologia Scan-to-Connect?',
@@ -18688,7 +18688,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         partNumber: 'DS9908-HD4000WZZWW',
-        name: 'DS9908 HD — sam skaner',
+        name: 'DS9908-HD for Labs, Alpine White — sam skaner',
         priceFrom: 1216,
         availability: 'available',
         attributes: {
@@ -18718,7 +18718,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
     ],
     variantAttributeTooltips: {
-      'Imager': 'SR (Standard Range) — uniwersalny, do standardowych kodów 1D/2D na opakowaniach i etykietach. HD (High Density) — zoptymalizowany do małych, gęsto drukowanych kodów laboratoryjnych i farmaceutycznych (np. DataMatrix GS1 na ampułkach).',
+      'Imager': 'SR (Standard Range) — uniwersalny, do standardowych kodów 1D/2D na opakowaniach i etykietach.\n\nHD (High Density) — wersja DS9908-HD for Labs w kolorze Alpine White do laboratoriów i aptek: czyta małe kody o wysokiej gęstości, np. na szkiełkach mikroskopowych, oraz kody na zakrzywionych fiolkach. Białe oświetlenie ułatwia odczyt kodów na kolorowych tackach na próbki.',
       'EAS': 'Electronic Article Surveillance — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wymaga modułu EAS w skanerze.',
     },
     compatibleAccessories: [],
@@ -18819,7 +18819,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         question: 'Czy DS9908 nadaje się do apteki (skanowanie DataMatrix GS1)?',
-        answer: 'Tak — DS9908 odczytuje kody DataMatrix GS1 na opakowaniach leków (system KOWAL/SecurPharm). Wariant HD (DS9908-HD4000WZZWW) jest zoptymalizowany do małych, gęsto drukowanych kodów laboratoryjnych i farmaceutycznych (ampułki, fiolki). Dodatkowy wariant HC (Healthcare) ma białą obudowę odporną na środki dezynfekujące.',
+        answer: 'Tak — DS9908 odczytuje kody DataMatrix GS1 na opakowaniach leków (system KOWAL/SecurPharm). Wariant HD (DS9908-HD4000WZZWW) to wersja for Labs w kolorze Alpine White do małych kodów o wysokiej gęstości i kodów na zakrzywionych fiolkach. Do jej czyszczenia Zebra dopuszcza 70% alkohol izopropylowy (także w chusteczkach) i łagodny płyn do naczyń.',
       },
       {
         question: 'Czym jest technologia Digimarc i czy warto?',
@@ -51732,7 +51732,7 @@ Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07
       { name: 'Part Number', value: 'BTRY-DS22EAB0E-00' },
       { name: 'Pojemność', value: '2400 mAh' },
       { name: 'Technologia', value: 'Li-Ion' },
-      { name: 'Kompatybilność', value: 'DS2278' },
+      { name: 'Kompatybilność', value: 'DS2278, DS2278-HC' },
     ],
     applications: ['Bateria zamienna do DS2278'],
     compatibleAccessories: [],
@@ -51829,7 +51829,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
       { name: 'Technologia', value: 'Li-Ion' },
       { name: 'Żywotność', value: '100 000 skanów / 108 h standby' },
       { name: 'Ładowanie', value: 'Indukcyjne (w stacji CR8288)' },
-      { name: 'Kompatybilność', value: 'DS8288' },
+      { name: 'Kompatybilność', value: 'DS8288, DS8288-HC' },
     ],
     applications: ['Bateria zamienna do DS8288'],
     compatibleAccessories: [],
@@ -51980,7 +51980,7 @@ Przewód łączy z komputerem lub kasą POS skanery przewodowe [DS2208](/produkt
       { name: 'Part Number', value: 'CBA-U21-S07ZBR' },
       { name: 'Typ złącza', value: 'USB Type A' },
       { name: 'Długość', value: '2,1 m (7 ft)' },
-      { name: 'Kompatybilność', value: 'DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308, Zebra SP7201-H, SP7208-H' },
+      { name: 'Kompatybilność', value: 'DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308, Zebra SP7201-H, SP7208-H; wersje dla ochrony zdrowia: DS2208-HC, DS4608-HC, DS8208-HC' },
       { name: 'Wykrywanie hosta', value: 'Automatyczne (autowykrywanie)' },
     ],
     applications: ['Skaner ręczny DS2208 lub DS4608 przy komputerze', 'Baza skanera bezprzewodowego DS2278 przy kasie', 'Skaner ladowy SP72 zasilany z portu USB'],

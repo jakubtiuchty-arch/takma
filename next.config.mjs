@@ -108,7 +108,7 @@ const nextConfig = {
       // =====================================================
       // ZEBRA SKANERY — warianty → strona główna skanera (tylko zmiana slugu)
       // =====================================================
-      { source: '/produkt/zebra-ds2208-hc/:path*', destination: '/produkt/zebra-ds2208', permanent: true },
+      // DS2208-HC ma własną stronę (wersja dla ochrony zdrowia) → redirect na DS2208 usunięty
       // DS3608 legacy slugi → XR (aktualny model)
       { source: '/produkt/zebra-ds3608', destination: '/produkt/zebra-ds3608-xr', permanent: true },
       { source: '/produkt/zebra-ds3608-er/:path*', destination: '/produkt/zebra-ds3608-xr', permanent: true },
@@ -122,9 +122,10 @@ const nextConfig = {
       // DS8108/DS8178 family — jeden skok na następcę: przewodowy DS8108 → DS8208, bezprzewodowy DS8178 → DS8288
       // (/produkt/zebra-ds8178 sam jest przekierowaniem na DS8288, dlatego nie może być tu celem)
       { source: '/produkt/zebra-ds8108/:path*', destination: '/produkt/zebra-ds8208', permanent: true },
-      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8208', permanent: true },
+      // Stare adresy wersji HC prowadzą do następców w wersji HC (DS8108-HC → DS8208-HC, DS8178-HC → DS8288-HC)
+      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8108-hc/:path*', destination: '/produkt/zebra-ds8208-hc', permanent: true },
       { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178/:path*', destination: '/produkt/zebra-ds8288', permanent: true },
-      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178-hc/:path*', destination: '/produkt/zebra-ds8288', permanent: true },
+      { source: '/produkt/czytnik-kodow-kreskowych-zebra-ds8178-hc/:path*', destination: '/produkt/zebra-ds8288-hc', permanent: true },
       // Legacy 1D laser → LI2208 (imager successor)
       { source: '/produkt/zebra-ls2208/:path*', destination: '/produkt/zebra-li2208', permanent: true },
 

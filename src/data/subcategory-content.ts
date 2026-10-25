@@ -2181,7 +2181,7 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       },
       {
         title: 'Apteka i szpital — weryfikacja leków (FMD) i identyfikacja pacjentów',
-        description: 'Skaner 2D healthcare (Zebra DS2208-HC) na ladzie aptecznej. Odczytuje kody Data Matrix z opakowań leków wymagane przez dyrektywę FMD i system KOWAL. Obudowa odporna na dezynfekcję IPA 70%. W szpitalu: skanowanie bransoletek pacjentów i leków przy łóżku.',
+        description: 'Skaner 2D w wersji dla ochrony zdrowia (Zebra DS2208-HC) na ladzie aptecznej. Odczytuje kody Data Matrix z opakowań leków wymagane przez dyrektywę FMD i system KOWAL. Obudowa jest przygotowana do regularnej dezynfekcji środkami zatwierdzonymi przez Zebrę. W szpitalu: skanowanie opasek pacjentów i leków przy łóżku.',
       },
       {
         title: 'Produkcja — kontrola jakości i śledzenie komponentów (DPM)',
@@ -2260,11 +2260,11 @@ Interfejsy: USB HID Keyboard (najpopularniejszy, plug-and-play), USB CDC/COM (po
       },
       {
         question: 'Jak czyścić skaner kodów kreskowych?',
-        answer: 'Okno optyczne: miękka ściereczka z IPA 70–99%. Obudowa: lekko wilgotna ściereczka. Modele Healthcare (Zebra DS2208-HC): dezynfekcja alkoholem i środkami na bazie amoniaku. Regularne czyszczenie (raz w tygodniu) wydłuża żywotność optyki i zapobiega pogorszeniu odczytu.',
+        answer: 'Modele standardowe: okno optyczne miękką ściereczką z IPA 70–99%, obudowę lekko wilgotną ściereczką. Wersje dla ochrony zdrowia czyści się wyłącznie środkami z listy producenta dla danej rodziny. Dla [Zebra DS2208-HC](/produkt/zebra-ds2208-hc) są to m.in. 3% roztwór nadtlenku wodoru i łagodny płyn do naczyń; alkoholu izopropylowego nie ma na tej liście. Regularne czyszczenie (raz w tygodniu) wydłuża żywotność optyki i zapobiega pogorszeniu odczytu.',
       },
       {
         question: 'Które skanery nadają się do apteki i szpitala?',
-        answer: 'Modele z certyfikatem IEC 60601-1 i odpornością na dezynfekcję: Zebra DS2208-HC, Honeywell Xenon 1900h. Cechy: jasnoszara obudowa, brak ostrych krawędzi, kabel z zaokrąglonym konektorem. W Polsce wymagane w systemach KOWAL (leki na receptę) i e-WUŚ (NFZ).',
+        answer: 'Do szpitala i przychodni przeznaczone są wersje dla ochrony zdrowia, np. [Zebra DS2208-HC](/produkt/zebra-ds2208-hc), [Zebra DS4608-HC](/produkt/zebra-ds4608-hc) i [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h). Mają białe obudowy przygotowane do regularnej dezynfekcji, a producent podaje listę zatwierdzonych środków. W aptece potrzebny jest skaner 2D, który czyta kody Data Matrix z opakowań leków.',
       },
       {
         question: 'Jakie są alternatywy dla skanera kodów kreskowych?',
@@ -2368,7 +2368,7 @@ Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszcze
       },
       {
         title: 'Apteka — recepty elektroniczne i kody GS1 na lekach',
-        description: 'Skaner 2D z kablem USB Healthcare (Zebra DS2208-HC). Zaokrąglone narożniki i obudowa bezbarwna, dezynfekcja środkami na bazie alkoholu. Odczytuje 2D kody DataMatrix z opakowań leków (GTIN, numer serii, data ważności) wymagane przez system KOWAL (PGF/Urząd Rejestracji). Połączenie USB HID – zgodność z każdym oprogramowaniem aptecznym.',
+        description: 'Skaner 2D w wersji dla ochrony zdrowia (Zebra DS2208-HC) z kablem USB. Biała obudowa jest przygotowana do regularnej dezynfekcji środkami z listy Zebry. Odczytuje 2D kody DataMatrix z opakowań leków (GTIN, numer serii, data ważności) wymagane przez system KOWAL (PGF/Urząd Rejestracji). Połączenie USB HID – zgodność z każdym oprogramowaniem aptecznym.',
       },
       {
         title: 'Biblioteka i wypożyczalnia — kody 1D na grzbietach książek',
@@ -2399,8 +2399,8 @@ Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszcze
           text: 'Domyślnie skaner wysyła tylko surowe dane kodu. Systemy WMS/ERP często wymagają dodatkowego znaku CR (Enter) na końcu transmisji, prefiksu identyfikującego typ kodu lub konwersji formatu. Konfigurację wykonuje się przez zeskanowanie kodów z instrukcji producenta.',
         },
         {
-          title: 'Skanery "medyczne" mają homologację, która ma znaczenie prawne',
-          text: 'W aptekach, przychodniach i szpitalach modele z serii Healthcare (Zebra DS2208-HC) mają certyfikat zgodności z normą IEC 60601-1 i są dopuszczone do dezynfekcji alkoholem izopropylowym – standardowe modele pod wpływem dezynfekcji żółkną i tracą szczelność. Brak homologacji może być problemem podczas audytu sanitarnego.',
+          title: 'Wersje skanerów dla ochrony zdrowia mają własne listy środków do dezynfekcji',
+          text: 'Zebra publikuje dla skanerów z dopiskiem HC osobne listy zatwierdzonych środków czyszczących i dezynfekujących dla każdej rodziny. Listy się różnią: dla DS2208-HC są to m.in. 3% roztwór nadtlenku wodoru i łagodny płyn do naczyń, a dla DS8208-HC także 91% alkohol izopropylowy. Środki spoza listy mogą uszkodzić obudowę i unieważnić gwarancję.',
         },
       ],
     },
@@ -2443,7 +2443,7 @@ Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszcze
       },
       {
         question: 'Jakie skanery przewodowe nadają się do środowisk medycznych?',
-        answer: 'Do środowisk medycznych przeznaczone są skanery z certyfikatem IEC 60601-1 oraz odpornością na środki dezynfekujące. Zebra oferuje DS2208-HC (2D, USB, do apteki i szpitala). Cechy: jasnoszara obudowa, brak ostrych krawędzi, kabel z zaokrąglonym konektorem.',
+        answer: 'Do środowisk medycznych przeznaczone są wersje dla ochrony zdrowia z obudową przygotowaną do dezynfekcji. Przewodowe modele Zebra w tej wersji to [DS2208-HC](/produkt/zebra-ds2208-hc) z trybem „Do Not Disturb”, [DS4608-HC](/produkt/zebra-ds4608-hc) z wibracją i trybem nocnym oraz [DS8208-HC](/produkt/zebra-ds8208-hc) z czujnikiem 2 MP, uszczelnionym spustem i etykietami antymikrobowymi. Mają kolor Healthcare White, a Zebra podaje dla każdej rodziny listę zatwierdzonych środków czyszczących.',
       },
       {
         question: 'Czy skaner przewodowy może odczytać kody DPM?',
