@@ -12,10 +12,11 @@ Połącz szablon z arkuszem Excel, bazą Access lub plikiem tekstowym. Inne bazy
 Professional obsługuje projektowanie i kodowanie etykiet RFID. Ta funkcja wymaga zgodnej drukarki RFID oraz odpowiednich etykiet. Sam zakup programu nie dodaje kodowania RFID do zwykłej drukarki.
 
 Jednorazowa licencja aktywacyjna działa na jednym komputerze w danym czasie. Aby przenieść ją na inne stanowisko, najpierw dezaktywuj poprzednią instalację. Program można sprawdzić przez 30 dni przed zakupem.`,
-  quoteOnly: true, licenseDelivery: 'email', availability: 'on-order', isNew: true, isBestseller: false,
+  priceFrom: 804.05, licenseDelivery: 'email', availability: 'on-order', isNew: true, isBestseller: false,
   images: ['/images/products/zebra-zebradesigner-professional-box.png', '/images/zebradesigner-landing/screen-1.jpg', '/images/zebradesigner-landing/screen-2.jpg'],
   imageDescriptions: ['ZebraDesigner Professional 3 — wizualizacja licencji elektronicznej', 'ZebraDesigner Professional — projekt etykiety logistycznej i ustawienia kodu kreskowego', 'ZebraDesigner Professional — widok programu do projektowania etykiet'],
   tags: ['magazyn', 'produkcja', 'logistyka'],
+  variants: [{ partNumber: 'ZEBRADESIGNER-PRO3', name: 'licencja bezterminowa, 1 komputer, klucz elektroniczny', attributes: { 'Licencja': 'Bezterminowa', 'Stanowiska': '1 komputer' }, priceFrom: 804.05, availability: 'on-order' }],
   specifications: [
     { name: 'Edycja', value: 'ZebraDesigner Professional 3' },
     { name: 'Licencja', value: 'Jednorazowa aktywacja; jeden komputer w danym czasie' },
@@ -41,6 +42,6 @@ Jednorazowa licencja aktywacyjna działa na jednym komputerze w danym czasie. Ab
   ],
   downloads: [{ name: 'ZebraDesigner Professional 3 — instrukcja (EN)', type: 'pdf', url: '/downloads/zebra/zebradesigner-3-professional-instrukcja-en.pdf', size: '2,3 MB' }, { name: 'ZebraDesigner 3 — instalator i wsparcie Zebra', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/software/printer-software/zebra-designer-3-downloads.html', size: 'Online' }],
   seoTitle: 'ZebraDesigner Professional 3 — licencja, etykiety i RFID',
-  seoDescription: 'Projektuj etykiety dla drukarek Zebra. Excel, Access, ODBC, kody kreskowe i RFID. ZebraDesigner Professional 3: licencja na jeden komputer, wycena TAKMA.',
+  seoDescription: 'Projektuj etykiety dla drukarek Zebra. Excel, Access, ODBC, kody kreskowe i RFID. ZebraDesigner Professional 3: licencja bezterminowa na jeden komputer. Cena i dostępność TAKMA.',
   sameAs: 'https://www.zebra.com/us/en/software/printer-software/zebradesigner.html', createdAt: '2026-10-25',
 }]

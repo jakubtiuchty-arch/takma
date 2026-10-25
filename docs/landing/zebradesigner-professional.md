@@ -13,3 +13,7 @@ Pudełko: koncepcyjna wizualizacja licencji wygenerowana imagegen, podpisana jak
 
 ## Porównanie Essentials / Professional
 Dodano sekcję bezpośrednio po hero i skrótach funkcji oraz rozszerzono FAQ. Essentials: darmowy bez klucza, tekst/grafika/kody, data/czas/liczniki, GS1-128. Professional: dodatkowo bazy/Excel/Access/tekst/ODBC, łączenie pól, VB, RFID; 30 dni dotyczy próby Professional. Potwierdzenie: https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/release-notes/zebradesigner3-essentials-professional-33078-release-notes.pdf oraz strona wsparcia ZebraDesigner 3 i strona produktu wymienione wyżej.
+
+
+## Cena i PN — korekta 25.10.2026
+Właściciel wskazał ofertę Jarltech: ZEBRADESIGNER-PRO3 (zdpro3), licencja bezterminowa, klucz elektroniczny. Publiczne API TAKMA /api/stock?pn=ZEBRADESIGNER-PRO3 potwierdza found=true, cenę sprzedaży 804,05 PLN netto / 988,98 PLN brutto oraz availability=on-order (2 w dostawie), źródło live, synchronizacja 2026-10-25T19:48:16.430Z. Usunięto quoteOnly; dodano wariant z PN dla standardowej aktualizacji ceny i dostępności przez API. Nie stosowano kursu ani marży wyliczonych ze zrzutu.
