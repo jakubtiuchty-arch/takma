@@ -204,6 +204,11 @@ export interface Product {
     /** data wydania pliku (ISO) — pokazywana przy wersji */
     releasedAt: string
   }
+  /** Licencja oprogramowania: dostępność „licencja elektroniczna e-mailem” zamiast stanu magazynowego,
+   *  a przy zamówieniu dane licencjobiorcy (firma, e-mail użytkownika licencji). */
+  licenseDelivery?: 'email'
+  /** Tylko „Zapytaj o cenę”: bez ceny i koszyka, nawet gdy API zwraca cenę (np. edycje Enterprise). */
+  quoteOnly?: boolean
   relatedProducts?: string[]
 }
 
@@ -217,6 +222,8 @@ export interface ProductVariant {
   promoPrice?: number
   promoLabel?: string
   availability: 'available' | 'on-order' | 'unavailable'
+  /** Tylko ten wariant „Zapytaj o cenę” (bez ceny i koszyka), np. Enterprise w karcie z innymi edycjami. */
+  quoteOnly?: boolean
 }
 
 export interface ProductSpecification {
