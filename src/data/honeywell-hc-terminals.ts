@@ -348,7 +348,7 @@ Opakowanie zawiera jedną baterię. Do konfiguracji z literą D służą baterie
   images: [PLACEHOLDER],
   imageDescriptions: ['Bateria Honeywell CT37-BTSC-002 3846 mAh do CT37 HC'],
   tags: ['healthcare'],
-  availability: 'unavailable',
+  availability: 'available',
   isNew: true,
   isBestseller: false,
   specifications: [
@@ -382,7 +382,7 @@ Czarny pasek CT37-HS-3PK nie współpracuje z wersją HC. Paska nie można używ
   images: [PLACEHOLDER],
   imageDescriptions: ['Szary pasek na rękę Honeywell CT37-HS-HC-3PK do CT37 HC'],
   tags: ['healthcare'],
-  availability: 'unavailable',
+  availability: 'available',
   isNew: true,
   isBestseller: false,
   specifications: [
