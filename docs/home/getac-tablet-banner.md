@@ -1,13 +1,11 @@
-# Baner tabletów Getac — podgląd lokalny
+# Baner tabletów Getac
 
-Baner ogólny kieruje do `/tablety-getac`. Hasło: „Pracuj w terenie. Wybierz Getac.” Windows i Android odnoszą się do oferty kategorii. IP66 i ekran 1200 nitów są wyraźnie przypisane do przedstawionego F120.
+Podgląd lokalny: /podglad/baner-getac. CTA: /tablety-getac.
 
-Oryginalna grafika i specyfikacja: https://www.getac.com/en/products/tablets/f120/
-Oferta producenta: https://www.getac.com/en/products/tablets/
+Aktualizacja: oryginalny film Getac Rugged Solutions „From Field to Frontline: AI-Powered Durability with Getac F120 & UX10”. Źródło: https://www.youtube.com/watch?v=SolawZiC3hk
 
-Zdjęcie producenta zachowuje wygląd urządzenia. Animacja CSS porusza kompozycją, światłem i pyłem; nie jest filmem producenta. Sterowanie pauzą, zatrzymanie poza ekranem i prefers-reduced-motion. WebP zachowuje przezroczystość oryginału.
+Montaż bez dźwięku: 14–18 s, 35–38 s, 40–43 s. Pominięto intro, plansze końcowe i napisy; przekadrowano dolną część. 10 s, H.264 MP4, faststart. Poster z tego samego materiału.
 
-Podgląd: http://localhost:3115/podglad/baner-getac
-Lokalnie również czwarty slajd strony głównej. Nie opublikowano w ramach wdrożenia ProGlove/SUNMI.
+Usunięto parametry F120, zastosowania na dole i przycisk pauzy. Zamiast ruchu statycznej grafiki użyto filmu. Odtwarzanie w pętli tylko w widocznej sekcji, przy ograniczeniu ruchu pozostaje poster.
 
-Weryfikacja: ESLint, TypeScript, git diff --check; przeglądarka 1440 px i 390 px, brak poziomego przewijania, poprawne zdjęcie i CTA, pauza oraz wyłączenie animacji przy ograniczeniu ruchu.
+Nie opublikowano tej aktualizacji — do oceny lokalnej.

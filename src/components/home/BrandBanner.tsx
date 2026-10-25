@@ -72,7 +72,7 @@ export default function BrandBanner({ brand }: { brand: BannerBrand }) {
     <div className={s.inner}>
       <div className={s.copy}>
         <div className={s.brand}><Image src={`/images/home-brands/${brand}-logo.svg`} alt={brand === 'proglove' ? 'ProGlove' : 'SUNMI'} width={156} height={36} /><span>{c.eyebrow}</span></div>
-        <h2>{c.lines.map((line, i) => <span key={line} className={(brand === 'sunmi' ? chapter === i : i === 2) ? s.highlight : ''}>{line}</span>)}</h2>
+        <h2>{c.lines.map((line, i) => <span key={line} className={(brand === 'sunmi' ? chapter === i : i === 2) ? s.highlight : ''}>{line}{i < c.lines.length - 1 ? ' ' : ''}</span>)}</h2>
         <p>{c.description}</p>
         <Link className={s.cta} href={c.href}>{c.cta}<ArrowRightIcon size={16} /></Link>
       </div>

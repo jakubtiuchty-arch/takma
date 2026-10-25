@@ -7,38 +7,38 @@ import { useEffect, useRef, useState } from 'react'
 import s from './GetacTabletBanner.module.css'
 
 export default function GetacTabletBanner() {
-  const root = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-  const [paused, setPaused] = useState(false)
-  const [reduced, setReduced] = useState(false)
+  const video = useRef<HTMLVideoElement>(null)
+  const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    const el = root.current
+    const el = video.current
     if (!el) return
     const media = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const observer = new IntersectionObserver(([entry]) => { setVisible(entry.isIntersecting); setReduced(media.matches) }, { threshold: .15 })
-    const change = () => setReduced(media.matches)
-    media.addEventListener('change', change)
+    let visible = false
+    const sync = () => {
+      if (visible && !media.matches) {
+        setLoaded(true)
+        el.play().catch(() => {})
+      } else el.pause()
+    }
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync() }, { threshold: .15 })
     observer.observe(el)
-    return () => { observer.disconnect(); media.removeEventListener('change', change) }
-  }, [])
+    media.addEventListener('change', sync)
+    document.addEventListener('visibilitychange', sync)
+    return () => { observer.disconnect(); media.removeEventListener('change', sync); document.removeEventListener('visibilitychange', sync); el.pause() }
+  }, [loaded])
 
-  const stopped = paused || reduced || !visible
-  return <div ref={root} className={s.banner} data-paused={stopped}>
+  return <div className={s.banner}>
     <div className={s.scene}>
-      <div className={s.atmosphere} aria-hidden="true" />
-      <div className={s.product}><Image src="/images/getac-home/f120-endurance.webp" alt="Oryginalny Getac F120 w dynamicznym ujęciu z pyłem i odłamkami skały" fill sizes="(max-width:767px) 100vw, 900px" quality={95} /></div>
-      <div className={s.dust} aria-hidden="true" />
-      <div className={s.light} aria-hidden="true" />
-      <div className={s.model}><span>NA ZDJĘCIU: GETAC F120</span><p><b>IP66</b><i />Ekran <b>1200 nitów</b></p></div>
+      <video ref={video} src={loaded ? '/video/brands/getac-home.mp4' : undefined} poster="/images/getac-home/video-poster.webp" muted loop playsInline preload="none" aria-label="Tablety Getac F120 i UX10 podczas pracy w terenie i zakładzie" />
     </div>
     <div className={s.inner}><div className={s.copy}>
       <Image className={s.logo} src="/images/getac-home/getac-logo.svg" alt="Getac" width={136} height={42} />
       <p className={s.eyebrow}>TABLETY PRZEMYSŁOWE · WINDOWS I ANDROID</p>
-      <h2>Pracuj<br/>w terenie.<br/><span>Wybierz Getac.</span></h2>
+      <h2>Pracuj w terenie. <span>Wybierz Getac.</span></h2>
       <p className={s.description}>Tablety do inspekcji, serwisu i pracy w pojazdach. Dobierz system, ekran i wyposażenie do swoich zadań.</p>
       <Link className={s.cta} href="/tablety-getac">Poznaj tablety Getac<ArrowRightIcon size={16} /></Link>
     </div></div>
-    <div className={s.bottom}><div><span>Serwis terenowy</span><span>Przemysł</span><span>Logistyka</span></div><button type="button" onClick={() => setPaused(v => !v)} disabled={reduced} aria-label={reduced ? 'Animacja Getac wyłączona zgodnie z ustawieniami ograniczenia ruchu' : `${stopped ? 'Odtwórz' : 'Zatrzymaj'} animację Getac`}>{stopped ? '▶' : 'Ⅱ'}<span>{reduced ? 'Ruch wyłączony' : stopped ? 'Odtwórz' : 'Pauza'}</span></button></div>
+
   </div>
 }
