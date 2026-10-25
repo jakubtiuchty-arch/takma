@@ -1,0 +1,2 @@
+.story{--accent:#a54a12;--wash:#ebe7e2}.heroPhoto img{padding:35px;filter:none}.workPhoto{aspect-ratio:1.9}.workPhoto img{filter:brightness(1.55);object-position:65% 52%}.story :global([id="pg-lana-panel"])>div:last-child{height:420px;max-width:none}.story :global([id="pg-lana-panel"]) img{object-fit:contain;transform:scale(1.35)}.story h2{text-wrap:balance}
+@media(max-width:640px){.heroPhoto img{padding:20px}.workPhoto{aspect-ratio:1.15}.workPhoto img{object-position:75% center}.story :global([id="pg-lana-panel"])>div:last-child{height:270px}}
