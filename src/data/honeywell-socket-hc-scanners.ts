@@ -26,7 +26,7 @@ const xenonUltra1960h: Product = {
 
 Każda wersja dla służby zdrowia ma obudowę w kolorze białym, antymikrobową i przygotowaną do dezynfekcji. Obudowę można regularnie czyścić wieloma środkami bez uszkodzenia skanera. Bryła ma mniej zagłębień i szczelin, w których mogą zostawać zarazki.
 
-Skaner ma tryby ograniczające hałas przy pacjencie: Patient Do-Not-Disturb, opcjonalną wibrację i Scan Lamp, czyli oświetlenie włączane tylko w razie potrzeby. Celownik z zieloną kropką ułatwia wskazanie kodu. Xenon Ultra 1960h odczytuje także kody uszkodzone i słabej jakości, co ogranicza ręczne wpisywanie danych.
+Skaner ma tryby pracy dbające o komfort pacjenta: Patient Do-Not-Disturb, opcjonalną wibrację i Scan Lamp, czyli oświetlenie włączane tylko w razie potrzeby. Celownik z zieloną kropką ułatwia wskazanie kodu. Xenon Ultra 1960h odczytuje także kody uszkodzone i słabej jakości, co ogranicza ręczne wpisywanie danych.
 
 Zestaw 1960HHD-5USB-R z ogniskowaniem HD zawiera prosty przewód USB o długości 3 m. Skaner przyjmuje przewody z instalacji Xenon XP 1950h. Producent udziela 5 lat gwarancji.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -261,7 +261,7 @@ Tryby Patient Do-Not-Disturb, wibracja i Scan Lamp ograniczają dźwięk i świa
     },
     {
       question: 'Bateria czy superkondensator — który wariant 1962h wybrać?',
-      answer: 'Superkondensator przydaje się tam, gdzie skaner często wraca do bazy, np. przy podawaniu leków i pobieraniu próbek. Ładuje się w niecałą minutę, a naładowany utrzymuje energię godzinami. Bateria Li-ion wystarcza na ok. 22 h pracy i do 80 000 odczytów, więc lepiej sprawdza się przy dłuższej pracy z dala od bazy. Ten sam skaner przyjmuje oba źródła zasilania, dlatego placówka może łączyć je w jednej flocie.',
+      answer: 'Superkondensator przydaje się tam, gdzie skaner często wraca do bazy, np. przy podawaniu leków i pobieraniu próbek. Z zasilaczem ładuje się w niecałą minutę (ze zwykłego portu USB do 4 min), a naładowany utrzymuje energię godzinami. Bateria Li-ion wystarcza na ok. 22 h pracy i do 80 000 odczytów, więc lepiej sprawdza się przy dłuższej pracy z dala od bazy. Ten sam skaner przyjmuje oba źródła zasilania, dlatego placówka może łączyć je w jednej flocie.',
     },
     {
       question: 'Jak dezynfekować Xenon Ultra 1962h i bazę?',

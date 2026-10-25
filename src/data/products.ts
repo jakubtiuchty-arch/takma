@@ -22833,9 +22833,9 @@ IP52, upadki z 1,8 m na beton (30×), tumble 1 000 obrotów (0,5 m). Praca od 0�
     shortDescription: 'Honeywell Voyager XP 1472g — bezprzewodowy skaner 2D Bluetooth do kas POS i magazynów, 210 g, IP52, zasięg BT do 100 m',
     description: `Dla kogo? Honeywell Voyager XP 1472g to bezprzewodowa wersja Bluetooth popularnego skanera [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) — do sklepów, magazynów, aptek, biur i punktów obsługi klienta wymagających mobilności. Identyczny sensor area imager 2D (1 040 × 720 px) i optyka XP. Odczyt kodów 1D, 2D (QR Code, DataMatrix, PDF417), kodów z ekranów smartfonów i Digimarc.
 
-Bluetooth 4.2 o zasięgu do 100 m przy braku przeszkód — swoboda ruchu po stanowisku kasowym, wśród regałów, przy przyjęciu towaru. Tryb Automatic Batch Mode buforuje kody w pamięci skanera gdy operator wyjdzie poza zasięg bazy — dane przesyłane automatycznie po powrocie w zasięg. Baza CCB01 obsługuje do 7 skanerów jednocześnie, interfejsy USB/RS-232/KBW.
+Bluetooth 4.2 o zasięgu do 100 m przy braku przeszkód — swoboda ruchu po stanowisku kasowym, wśród regałów, przy przyjęciu towaru. Po włączeniu trybu Automatic Batch Mode skaner zapisuje kody w pamięci, gdy operator wyjdzie poza zasięg bazy, i przesyła je automatycznie po powrocie w zasięg. Do bazy CCB01 można przypisać do 3 skanerów; baza ma interfejsy USB, RS-232, KBW i RS-485 (IBM 46xx).
 
-Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanów na jednym ładowaniu. Baterię wymienia się po odkręceniu śruby zaślepki rękojeści. Ładowanie 4,5 h w bazie CCB01. Zestaw 1472G2D-6USB-5-R ma czarną obudowę przygotowaną do dezynfekcji, którą wolno często czyścić różnymi środkami bez jej uszkodzenia. Na stałe stanowisko kasowe: przewodowy [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g). Dokumentacja: automation.honeywell.com/voyager-xp-1472g.`,
+Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanów na jednym ładowaniu. Baterię wymienia się po odkręceniu śruby zaślepki rękojeści. Ładowanie 4,5 h w bazie CCB01. Zestaw 1472G2D-6USB-5-R ma czarną obudowę przygotowaną do dezynfekcji, którą wolno często czyścić różnymi środkami bez jej uszkodzenia. Na stałe stanowisko kasowe: przewodowy [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g).`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'honeywell',
@@ -22852,7 +22852,7 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       { name: 'Celownik', value: 'Czerwony LED 624 nm' },
       { name: 'Pole widzenia', value: '39,2° (poziomo) × 27,4° (pionowo)' },
       { name: 'Bluetooth', value: 'v4.2, do 100 m w linii wzroku (zasięg zależy od otoczenia)' },
-      { name: 'Maks. skanerów na bazę', value: '7' },
+      { name: 'Maks. skanerów na bazę', value: '3 (tryb Multiple Scanner Operation)' },
       { name: 'Bateria', value: 'Li-Ion 2 400 mAh (BAT-SCN01A)' },
       { name: 'Czas pracy', value: 'Do 14 godzin' },
       { name: 'Skanów na ładowaniu', value: 'Do 50 000' },
@@ -22865,7 +22865,6 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       { name: 'Tolerancja ruchu', value: '70 cm/s (13 mil UPC)' },
       { name: 'Skanowane kody 1D', value: 'Code 39, Code 128, Code 93, EAN/UPC, Codabar, Interleaved 2 of 5, GS1 DataBar, China Post' },
       { name: 'Skanowane kody 2D', value: 'QR Code, Data Matrix, PDF417, Aztec, MaxiCode, Han Xin, DotCode, Digimarc' },
-      { name: 'OCR', value: 'Tak (OCR-A, OCR-B)' },
       { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, monitory' },
       { name: 'Interfejsy (baza)', value: 'USB HID/COM, RS-232, Keyboard Wedge, RS-485 (IBM 46XX)' },
       { name: 'Klasa szczelności', value: 'IP52' },
@@ -22956,7 +22955,7 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       },
       {
         question: 'Jaki jest zasięg Bluetooth skanera Voyager XP 1472g?',
-        answer: 'Voyager XP 1472g łączy się z bazą przez Bluetooth 4.2 na odległość do 100 m, gdy między skanerem a bazą nie ma przeszkód. Ściany, regały i maszyny skracają ten dystans. Skaner automatycznie buforuje kody w pamięci (Automatic Batch Mode), gdy wyjdzie poza zasięg bazy — przesyła je po powrocie w zasięg.',
+        answer: 'Voyager XP 1472g łączy się z bazą przez Bluetooth 4.2 na odległość do 100 m, gdy między skanerem a bazą nie ma przeszkód. Ściany, regały i maszyny skracają ten dystans. Fabrycznie tryb wsadowy jest wyłączony. Gdy działa Automatic Batch Mode, odczyty wykonane poza zasięgiem trafiają do pamięci skanera i są wysyłane do bazy po powrocie w zasięg.',
       },
       {
         question: 'Jak długo działa bateria Voyager XP 1472g?',
@@ -22964,7 +22963,7 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       },
       {
         question: 'Czy Voyager XP 1472g skanuje kody z ekranów smartfonów?',
-        answer: 'Tak — skaner odczytuje kody 1D, 2D (QR Code, DataMatrix, PDF417) z ekranów smartfonów, tabletów i monitorów. Idealny do odczytu kuponów mobilnych, biletów elektronicznych, kart lojalnościowych z aplikacji i e-recept.',
+        answer: 'Tak — skaner odczytuje kody 1D, 2D (QR Code, DataMatrix, PDF417) z ekranów smartfonów, tabletów i monitorów, np. kupony i bilety w telefonie, karty lojalnościowe w aplikacjach oraz e-recepty.',
       },
       {
         question: 'Jaka jest wytrzymałość skanera Voyager XP 1472g?',
@@ -22976,15 +22975,15 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       },
       {
         question: 'Czym różni się Honeywell Voyager XP 1472g od Zebra DS2278?',
-        answer: 'Voyager 1472g: większy zasięg BT (do 100 m; [DS2278](/produkt/zebra-ds2278) — 10 m), lepsze upadki (1,8 m vs 1,5 m), zestaw z obudową przygotowaną do dezynfekcji. DS2278: ekosystem Zebra, więcej skanów na ładowaniu (57 000 vs 50 000). Bateria i IP identyczne. Voyager 1472g wygrywa w zastosowaniach wymagających większego zasięgu BT.',
+        answer: 'Bluetooth 4.2 w Voyager XP 1472g sięga 100 m przy braku przeszkód. [Zebra DS2278](/produkt/zebra-ds2278) ma Bluetooth 4.0 z BLE: co najmniej 10 m, a do 100 m po sparowaniu z bazą CR2278. Voyager 1472g wytrzymuje 30 upadków z 1,8 m na beton, DS2278 — wielokrotne upadki z 1,5 m. Na jednym ładowaniu Voyager 1472g wykonuje do 50 000 odczytów, a DS2278 — do 110 000 przy 60 odczytach na minutę. Oba skanery mają akumulator 2400 mAh i klasę IP52. Zestaw 1472G2D-6USB-5-R ma obudowę przygotowaną do dezynfekcji.',
       },
       {
         question: 'Ile skanerów obsługuje jedna baza CCB01?',
-        answer: 'Baza CCB01-010BT-V1N obsługuje do 7 skanerów jednocześnie (sparowanych przez Bluetooth). Ładuje jeden skaner w danym momencie (kontaktowo, drop-in). Interfejsy: USB, RS-232, Keyboard Wedge, RS-485 (IBM 46XX).',
+        answer: 'Do bazy CCB01-010BT-V1N można przypisać do 3 skanerów w trybie Multiple Scanner Operation. Czwarty skaner połączy się dopiero po odłączeniu jednego z nich. Baza ładuje jeden skaner w danym momencie (kontaktowo, drop-in). Interfejsy: USB, RS-232, Keyboard Wedge, RS-485 (IBM 46XX).',
       },
       {
         question: 'Jakie są alternatywy dla Honeywell Voyager XP 1472g?',
-        answer: 'Tańsza alternatywa: [Zebra DS2278](/produkt/zebra-ds2278) (BT 4.0, zasięg 10 m). Przewodowy odpowiednik: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (identyczna optyka). Premium bezprzewodowy: [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) (wyższy sensor 1 280 × 1 080 px, superkondensator). Newland HR23 Dorada BT (BT 5.0, gwarancja 5 lat, 137 g).',
+        answer: 'Tańsza alternatywa: [Zebra DS2278](/produkt/zebra-ds2278) (BT 4.0, do 100 m z bazą CR2278). Przewodowy odpowiednik: [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (identyczna optyka). Premium bezprzewodowy: [Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962) (wyższy sensor 1 280 × 1 080 px, superkondensator). [Newland HR23 Dorada BT](/produkt/newland-hr23-dorada-bt) (BT 5.0, gwarancja 5 lat, 209 g).',
       },
     ],
     downloads: [

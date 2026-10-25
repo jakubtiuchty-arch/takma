@@ -124,7 +124,7 @@ const gd4620Hc: Product = {
   shortDescription: 'Datalogic Gryphon GD4620 HC — przewodowy skaner 2D HD z USB dla szpitali i laboratoriów: biała obudowa antymikrobowa, zasilanie 5 V, 5 lat gwarancji.',
   seoTitle: 'Datalogic Gryphon GD4620 HC — skaner kodów USB do szpitala',
   seoDescription: 'Datalogic Gryphon GD4620 HC: biały skaner kodów 2D z optyką HD i samym USB, obudowa przygotowana do dezynfekcji, tworzywo antymikrobowe ISO 22196. Skaner kodów kreskowych do szpitala Datalogic GD4620 HC, GD4620 HC Datalogic. PN: GD4620-HCK1-HD.',
-  description: `Datalogic Gryphon GD4620 HC to biały skaner 2D z przewodem USB, przeznaczony dla placówek ochrony zdrowia. Ma jedną matrycę 1,5 MP w optyce HD (High Density). Datalogic przeznacza wersję HD do kodów zwartych i złożonych. Kod EAN/UPC 13 mil skaner odczytuje z odległości do 50 cm, a symbol Data Matrix 10 mil z zakresu 0,5–20 cm.
+  description: `Datalogic Gryphon GD4620 HC to biały skaner 2D z przewodem USB, przeznaczony dla placówek ochrony zdrowia. Ma jedną matrycę 1,5 MP w optyce HD (High Density). Wersja HD jest przeznaczona do kodów zwartych i złożonych. Kod EAN/UPC 13 mil skaner odczytuje z odległości do 50 cm, a symbol Data Matrix 10 mil z zakresu 0,5–20 cm.
 
 GD4620 HC wymaga zasilania 5 V DC. Model nie ma interfejsu RS-232, dlatego pasuje do stanowisk, na których wszystkie urządzenia łączą się przez USB lub USB-C. W zestawie GD4620-HCK1-HD jest biały [przewód USB-A 90A052278](/produkt/datalogic-usb-90a052278) o długości 2 m.
 
@@ -361,7 +361,7 @@ Skaner przesyła dane wyłącznie przez bazę STAR, która łączy się z komput
   faq: [
     {
       question: 'Kiedy wybrać GM4600 HC zamiast GBT4600 HC?',
-      answer: 'GM4600 HC przesyła dane w paśmie 433 MHz przez system STAR i obsługuje do 16 skanerów na jednym odbiorniku. [GBT4600 HC](/produkt/datalogic-gryphon-gbt4600-hc) korzysta z Bluetooth 5.2, łączy do 7 skanerów z bazą i może pracować z tabletem bez bazy. GM4600 HC zawsze wymaga bazy WLC4690-HC-433.',
+      answer: 'GM4600 HC przesyła dane w paśmie 433 MHz przez system STAR i obsługuje do 16 skanerów na jednym odbiorniku. [GBT4600 HC](/produkt/datalogic-gryphon-gbt4600-hc) korzysta z Bluetooth 5.2, łączy do 7 skanerów z bazą i może pracować z tabletem bez bazy. GM4600 HC przesyła dane wyłącznie przez bazę radiową STAR 433 MHz; w wersji HC jest to WLC4690-HC-433.',
     },
     {
       question: 'Czym GM4600 HC różni się od GM4600 w kolorze czarnym?',
@@ -934,7 +934,7 @@ const hr23White: Product = {
   seoDescription: 'Newland HR23 Dorada AI Corded White: przewodowy skaner kodów 1D i 2D do placówek medycznych, antymikrobowa powłoka obudowy, AI, interfejs USB albo RS-232, 5 lat gwarancji. Skaner kodów kreskowych Newland HR23, HR23 Dorada White Newland. PN: NLS-HR2300-V2-S5-W, NLS-HR2300-V2-SA-W, NLS-HR2300-V2-S8-W.',
   description: `Newland HR23 Dorada AI Corded White to podstawowy przewodowy skaner 2D z białej serii Newland dla ochrony zdrowia. Biała obudowa ma powłokę antymikrobową. Biały kolor jest przeznaczony do placówek medycznych, w których liczą się higiena i schludny wygląd.
 
-HR23 korzysta z matrycy 800 × 640. Kod EAN-13 13 mil odczytuje z odległości 50–280 mm. Klasa szczelności obudowy to IP52. Odczytuje kody liniowe oraz PDF417, Micro PDF417, Data Matrix, QR, Micro QR i Aztec. Wykrywanie kodów przez AI pomaga przy kodach uszkodzonych, nieczytelnych, odblaskowych i na zaokrąglonych powierzchniach. Funkcja OCR standardowo rozpoznaje dane z paszportów.
+HR23 korzysta z matrycy 800 × 640. Kod EAN-13 13 mil odczytuje z odległości 50–280 mm. Klasa szczelności obudowy to IP52. Odczytuje kody liniowe oraz PDF417, Micro PDF417, Data Matrix, QR, Micro QR i Aztec. Wykrywanie kodów przez AI pomaga przy kodach uszkodzonych, zniekształconych, odblaskowych i na zaokrąglonych powierzchniach. Funkcja OCR standardowo rozpoznaje dane z paszportów.
 
 Skaner jest lekki: waży 137 g. Pracuje w temperaturze od −20 do 60 °C. Odczyt sygnalizuje dźwiękiem, diodą i wibracją. Działanie skanera można dostosować skryptami Lua albo w programie EasySet.
 
