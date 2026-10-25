@@ -28055,14 +28055,14 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     name: 'Zebra HC20',
     seoTitle: 'Zebra HC20 — terminal mobilny dla służby zdrowia, Wi-Fi 6',
     seoDescription: 'Zebra HC20: terminal dla szpitali, przychodni i opieki domowej z Wi-Fi 6, skanerem SE4720, czerwonym przyciskiem alarmowym i obudową do częstej dezynfekcji. Terminal mobilny Zebra HC20, kolektor danych dla służby zdrowia, komputer mobilny Zebra HC20, HC20 Zebra. PN: WLMT0-H20B6BCJ1-A6.',
-    shortDescription: 'Zebra HC20 — terminal mobilny dla służby zdrowia: Wi-Fi 6, skaner SE4720 z zielonym celownikiem, czerwony przycisk alarmowy i obudowa przygotowana do dezynfekcji.',
+    shortDescription: 'Zebra HC20 — terminal mobilny dla służby zdrowia: Wi-Fi 6, skaner SE4720, czerwony przycisk alarmowy i obudowa przygotowana do dezynfekcji.',
     description: `Zebra HC20 to kieszonkowy komputer mobilny dla personelu medycznego i niemedycznego: pielęgniarek, lekarzy, techników laboratoryjnych i farmaceutycznych, opiekunów domowych, a także służb technicznych i żywienia. Pracuje w sieci Wi-Fi 6 placówki. Wbudowany skaner SE4720 odczytuje kody na opaskach pacjentów, fiolkach z lekami, materiałach, sprzęcie i tacach z posiłkami, także uszkodzone lub słabo wydrukowane.
 
 Obudowę w kolorze Healthcare Blue wykonano z tworzyw przeznaczonych dla ochrony zdrowia i przygotowano do częstej dezynfekcji. Wyprofilowane powierzchnie i dolne listwy zmniejszają nacisk na dłoń. Port USB-C zamyka zaślepka, która ogranicza szczeliny, w których mogą gromadzić się patogeny. Ekran 6 cali reaguje na dotyk w cienkich rękawiczkach.
 
 Z tyłu znajduje się czerwony przycisk alarmowy. Po zaprogramowaniu łączy z wybranym numerem albo uruchamia aplikację, a sekwencja aktywacji chroni przed fałszywym alarmem. Z oprogramowaniem Workcloud Communication terminal działa jako radiotelefon PTT lub słuchawka centrali PBX.
 
-Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Workstation Connect wymagają licencji Zebra DNA Enterprise. Baterię 3800 mAh można ładować dowolnym standardowym przewodem USB-C, a stacje, baterie, klips i pasek są wspólne dla całej rodziny HC2X/HC5X.`,
+Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Workstation Connect wymagają licencji Zebra DNA Enterprise. Terminal z baterią 3800 mAh można ładować dowolnym standardowym przewodem USB-C, a stacje, baterie, klips i pasek są wspólne dla całej rodziny HC2X/HC5X.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
@@ -28267,10 +28267,10 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
     faq: [
       { question: 'Czym różnią się dwie konfiguracje Zebra HC25?', answer: 'Tylko sposobem odczytu kodów. WCMTB-H25B6BCJ1-A6 ma wbudowany skaner SE4720, przydatny przy częstym skanowaniu opasek i leków. WCMTB-H25B6DCJ1-A6 jest bez skanera i dekoduje kody tylnym aparatem 16 MP, z oprogramowaniem dołączonym przez Zebrę. Pozostałe parametry, w tym 5G, 6 GB / 64 GB i bateria 3800 mAh, są takie same.' },
       { question: 'Jakie pasma 5G i LTE obsługuje HC25 w Europie?', answer: 'Wersja na rynki poza Ameryką Północną, Chinami i Japonią obsługuje 5G FR1 w pasmach n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78 oraz LTE w 19 pasmach, m.in. B1, B3, B7, B20 i B28. Modem pracuje w trybach 5G NSA i SA, z Gigabit LTE-A i agregacją pasm.' },
-      { question: 'Czy HC25 współpracuje z prywatną siecią 5G?', answer: 'Tak. Modem HC25 obsługuje prywatne sieci LTE i 5G, a Zebra przeznacza ten model także do współpracy klinicznej w szybkich prywatnych i hybrydowych systemach 5G. Do jednoczesnego korzystania z dwóch profili służą karta nano SIM i eSIM w trybie Dual SIM / Dual Standby.' },
+      { question: 'Czy HC25 współpracuje z prywatną siecią 5G?', answer: 'Tak. Modem HC25 obsługuje prywatne sieci LTE i 5G, a Zebra przeznacza ten model także do współpracy klinicznej w szybkich prywatnych i hybrydowych systemach 5G. Karta nano SIM i eSIM pracują w trybie Dual SIM / Dual Standby.' },
       { question: 'Czy Zebra HC25 może działać jako stacja robocza z monitorem?', answer: 'Tak, ale w HC25 tryb Workstation Connect wymaga licencji Zebra DNA Enterprise. Stacja CRD-TC2L-1SNWS-01 ma wyjście HDMI, port Ethernet, cztery gniazda USB-A i gniazdo słuchawkowe 3,5 mm. Zasilacz, przewód DC i przewód sieciowy do stacji są sprzedawane osobno.' },
       { question: 'Jak nosić HC25 podczas wizyt domowych?', answer: 'Zebra oferuje dla rodziny HC2X/HC5X obrotowy klips SG-HC2L5L-CLIP-01, który mocuje terminal do odzieży, oraz pasek na rękę SG-HC2L5L-HSTRP-01. Obie części mają niebieską obudowę przygotowaną do dezynfekcji. Klipsa nie można używać razem z paskiem.' },
-      { question: 'Jakie są alternatywy dla Zebra HC25?', answer: '[Zebra HC55](/produkt/zebra-hc55) łączy 5G z Wi-Fi 6E, przednim aparatem 5 MP i wymianą baterii bez wyłączania. Do pracy tylko w budynku wystarcza [Zebra HC20](/produkt/zebra-hc20). Terminale innych marek z 5G dla ochrony zdrowia to [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
+      { question: 'Jakie są alternatywy dla Zebra HC25?', answer: '[Zebra HC55](/produkt/zebra-hc55) łączy 5G z Wi-Fi 6E, przednim aparatem 5 MP i wymianą baterii bez wyłączania. Do pracy tylko w budynku wystarcza [Zebra HC20](/produkt/zebra-hc20). Terminale innych marek z 5G dla ochrony zdrowia to [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) (wersja 5G), [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
     ],
     applications: [
       'Opieka domowa i wizyty u pacjentów',
@@ -28515,11 +28515,11 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     ],
     faq: [
       { question: 'Kiedy wybrać Zebra HC55 zamiast HC50?', answer: 'Gdy personel wychodzi poza zasięg sieci Wi-Fi placówki, na przykład na wizyty domowe lub do innych budynków. HC55 ma modem 5G z nano SIM i eSIM oraz odbiornik GNSS. Aparat przedni, pamięć 8 GB / 128 GB i wymiana baterii bez wyłączania są takie same jak w [Zebra HC50](/produkt/zebra-hc50).' },
-      { question: 'Jakie sieci komórkowe obsługuje HC55?', answer: 'W wersji na Europę HC55 pracuje w 5G FR1 (m.in. n1, n3, n7, n20, n28, n78), LTE, 3G i 2G. Obsługuje 5G NSA i SA, Gigabit LTE-A, VoLTE oraz prywatne sieci LTE i 5G. Karta nano SIM i eSIM mogą być aktywne jednocześnie (Dual SIM / Dual Standby).' },
+      { question: 'Jakie sieci komórkowe obsługuje HC55?', answer: 'W wersji na Europę HC55 pracuje w 5G FR1 (m.in. n1, n3, n7, n20, n28, n78), LTE, 3G i 2G. Obsługuje 5G NSA i SA, Gigabit LTE-A, VoLTE oraz prywatne sieci LTE i 5G. Obie karty, nano SIM i eSIM, obsługują tryb Dual SIM / Dual Standby.' },
       { question: 'Czy zgubiony Zebra HC55 da się odnaleźć?', answer: 'Bateria BTRY-HC2L5L-2XMAXB ma nadajnik BLE, dzięki któremu aplikacja Zebra Device Tracker lokalizuje terminal także po jego wyłączeniu. Licencje Device Tracker na rok (SW-BLE-DT-SP-1YR) lub trzy lata (SW-BLE-DT-SP-3YR) są sprzedawane osobno.' },
       { question: 'Jakie stacje ładujące pasują do HC55?', answer: 'Zebra ma jeden zestaw akcesoriów dla HC20, HC25, HC50 i HC55. Stacja jednogniazdowa CRD-HC2L5L-BS1CO, stacja z gniazdem na baterię CRD-HC2L5L-2S1D1B i pięciogniazdowa CRD-HC2L5L-BS5CO przyjmują terminal z klipsem lub paskiem na rękę. Każda stacja wymaga zasilacza sprzedawanego osobno.' },
       { question: 'Jaką wersję Androida obsługuje Zebra HC55?', answer: 'HC55 jest dostępny z Androidem 13, 14 lub 15. Zebra przewiduje aktualizację do Androida 16 jako wersji końcowej. Administrator może sterować dostępnością usług GMS i planować aktualizacje przez Zebra Zero Touch; LifeGuard for Android dostarcza poprawki bezpieczeństwa.' },
-      { question: 'Jakie są alternatywy dla Zebra HC55?', answer: '[Zebra HC25](/produkt/zebra-hc25) też ma 5G, lecz pamięć 6 GB / 64 GB, Wi-Fi 6, tylko tylny aparat i baterię bez funkcji true hot swap. Wśród innych marek terminale 5G dla ochrony zdrowia to [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) (wersja z modemem 5G) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
+      { question: 'Jakie są alternatywy dla Zebra HC55?', answer: '[Zebra HC25](/produkt/zebra-hc25) też ma 5G, lecz pamięć 6 GB / 64 GB, Wi-Fi 6, tylko tylny aparat i baterię bez funkcji true hot swap. Modem 5G mają też modele innych marek: [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) (wersja z modemem 5G), [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) oraz [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
     ],
     applications: [
       'Opieka domowa i telemedycyna',
@@ -58595,7 +58595,7 @@ Zasilacz z wtykiem EU i przewód USB-C łączą stację z gniazdem sieciowym.`,
     id: 'zebra-cradle-hc2l5l-2slot',
     slug: 'zebra-stacja-dokujaca-2slot-hc20-hc50',
     name: 'Stacja ładująca terminal i baterię do Zebra HC20 / HC25 / HC50 / HC55',
-    seoTitle: 'Stacja Zebra CRD-HC2L5L-2S1D1B — terminal i bateria HC20 / HC50',
+    seoTitle: 'Stacja Zebra CRD-HC2L5L-2S1D1B (terminal i bateria) do HC20 / HC25 / HC50 / HC55',
     seoDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B z gniazdem na terminal Zebra HC20, HC25, HC50 lub HC55 i gniazdem na zapasową baterię BTRY-HC2L5L-2XMAXB. Stacja z ładowarką baterii Zebra HC50. PN: CRD-HC2L5L-2S1D1B.',
     shortDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B do HC20 / HC25 / HC50 / HC55 — gniazdo na terminal i drugie gniazdo na zapasową baterię.',
     description: `Stacja CRD-HC2L5L-2S1D1B ma gniazdo na jeden terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55) oraz gniazdo na jedną zapasową baterię. Terminal z baterią standardową BLE osiąga 80% naładowania w mniej niż 1 h 20 min (licząc od zera), a bateria zapasowa — 90% w mniej niż 4 h. Terminal można włożyć z paskiem na rękę lub klipsem.
@@ -58805,7 +58805,7 @@ Pasek nie zasłania czerwonego przycisku alarmowego na tylnej ściance. Paska ni
       { name: 'Stacje', value: 'Terminal z paskiem mieści się w stacjach ładujących HC2X/HC5X' },
       { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Pewne trzymanie terminala podczas skanowania', 'Praca z terminalem w stacji bez zdejmowania paska'],
+    applications: ['Trzymanie terminala w dłoni z dostępem do przycisku alarmowego', 'Praca z terminalem w stacji bez zdejmowania paska'],
     compatibleAccessories: [],
     relatedAccessories: ['zebra-clip-hc2l5l'],
     relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
@@ -58822,7 +58822,7 @@ Pasek nie zasłania czerwonego przycisku alarmowego na tylnej ściance. Paska ni
     seoTitle: 'Zaślepki USB-C Zebra SG-HC2L5L-USBCADP5 do HC20 / HC25 / HC50 / HC55',
     seoDescription: 'Opakowanie pięciu niebieskich zaślepek portu USB-C Zebra SG-HC2L5L-USBCADP5, które chronią gniazdo w terminalach medycznych Zebra HC20, HC25, HC50 i HC55. Zaślepka USB-C Zebra HC20, zaślepka portu Zebra HC50. PN: SG-HC2L5L-USBCADP5.',
     shortDescription: 'Zaślepki Zebra SG-HC2L5L-USBCADP5 do HC20 / HC25 / HC50 / HC55 — pięć niebieskich zaślepek zamiennych, które zamykają port USB-C na dolnej krawędzi terminala.',
-    description: `Opakowanie SG-HC2L5L-USBCADP5 zawiera pięć niebieskich zaślepek zamiennych do portu USB-C terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Zaślepka zakrywa gniazdo na dolnej krawędzi obudowy. Jedna sztuka jest dołączana do każdego terminala, a opakowanie zastępuje zgubione lub zużyte egzemplarze.
+    description: `Opakowanie SG-HC2L5L-USBCADP5 zawiera pięć niebieskich zaślepek zamiennych do portu USB-C terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Zaślepka zakrywa gniazdo na dolnej krawędzi obudowy. Każdy terminal powinien mieć jedną zaślepkę, a opakowanie zastępuje zgubione lub zużyte egzemplarze.
 
 Przed czyszczeniem i dezynfekcją terminala zaślepkę wkłada się do gniazda, aby uniknąć uszkodzenia portu USB-C. Razem ze specjalnie zaprojektowaną obudową ogranicza szczeliny, w których mogą się gromadzić patogeny. Zaślepka jest częścią eksploatacyjną, więc w czasie pracy z terminalem trzeba liczyć się z jej wymianą.`,
     categoryId: 'akcesoria',

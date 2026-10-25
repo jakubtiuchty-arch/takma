@@ -118,7 +118,7 @@ export const healthcareTerminalContent: SubcategoryRichContent = {
     },
     {
       question: 'Czy terminal czyta kody z opasek pacjentów?',
-      answer: 'Tak. Każdy model w tej kategorii ma wbudowany skaner 1D/2D do kodów na opaskach identyfikacyjnych, etykietach leków i probówkach. Przed zakupem większej liczby terminali odczyt warto przetestować na opaskach używanych w placówce. Opaski i drukarki opasek mają osobne działy: [opaski identyfikacyjne](/opaski-identyfikacyjne) oraz [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
+      answer: 'Tak. Każdy model w tej kategorii jest dostępny z wbudowanym skanerem 1D/2D do kodów na opaskach identyfikacyjnych, etykietach leków i probówkach. Zebra HC25 ma też wersję bez skanera, w której kody okazjonalnie odczytuje tylny aparat. Przed zakupem większej liczby terminali odczyt warto przetestować na opaskach używanych w placówce. Opaski i drukarki opasek mają osobne działy: [opaski identyfikacyjne](/opaski-identyfikacyjne) oraz [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
     },
     {
       question: 'Czy baterię można wymienić bez wyłączania terminala?',
