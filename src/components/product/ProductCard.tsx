@@ -12,7 +12,7 @@ import { useCartStore } from '@/store/cartStore'
 import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackAddToCart, trackSelectItem } from '@/lib/ga-events'
-import { getProductImageFrameStyle, getUniformProductImageStyle } from '@/lib/product-image-frame'
+import { getProductImageFrameStyle, getUniformProductImageStyle, getProductImageScaleStyle } from '@/lib/product-image-frame'
 
 interface ProductCardProps {
   product: ProductCardData
@@ -179,7 +179,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           className="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center group relative overflow-hidden"
         >
           {hasRealImage ? (
-            <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" style={getProductImageFrameStyle(product.images[0])} sizes="96px" />
+            <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-1" style={getProductImageFrameStyle(product.images[0]) || getProductImageScaleStyle(product.images[0])} sizes="96px" />
           ) : placeholderLogo ? (
             <Image src={placeholderLogo} alt={`${manufacturer?.name} — zdjęcie akcesorium niedostępne`} width={200} height={38} className="w-3/5 h-auto grayscale opacity-30" />
           ) : (
@@ -297,7 +297,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
         className={`relative ${!uniformGridImage && getProductImageFrameStyle(product.images[0]) ? 'aspect-square' : 'aspect-[4/3]'} bg-white flex items-center justify-center overflow-hidden`}
       >
         {hasRealImage ? (
-          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={uniformGridImage ? getUniformProductImageStyle(product.images[0], 4 / 3, gridImageFraction) : getProductImageFrameStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
+          <Image src={product.images[0]} alt={product.imageDescriptions?.[0] || product.name} fill className="object-contain p-3" style={uniformGridImage ? getUniformProductImageStyle(product.images[0], 4 / 3, gridImageFraction) : getProductImageFrameStyle(product.images[0]) || getProductImageScaleStyle(product.images[0])} sizes="(max-width: 1024px) 45vw, 22vw" />
         ) : placeholderLogo ? (
           <Image src={placeholderLogo} alt={`${manufacturer?.name} — zdjęcie akcesorium niedostępne`} width={200} height={38} className="w-3/5 max-w-[160px] h-auto grayscale opacity-30" />
         ) : (

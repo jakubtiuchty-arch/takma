@@ -2,6 +2,20 @@ import type { CSSProperties } from 'react'
 import frames from '@/data/product-image-frames.json'
 import uniformBounds from '@/data/product-image-uniform-bounds.json'
 
+/** Match the front HC terminal photos to the visible height of Zebra HC55. */
+export function getProductImageScaleStyle(src: string): CSSProperties | undefined {
+  const heights: Record<string, number> = {
+    '/images/products/ct37-hc-front.png': 1089 / 1254,
+    '/images/products/memor12-hc-front.png': 1146 / 1254,
+  }
+  const height = heights[src]
+  if (!height) return undefined
+  return {
+    transform: `scale(${(1026 / 1200) / height}) translateY(-1%)`,
+    transformOrigin: 'center',
+  }
+}
+
 /** Center the physical product, rather than its transparent canvas, in square frames. */
 export function getProductImageFrameStyle(src: string, visibleFraction = 0.82 * 0.85 * 0.95): CSSProperties | undefined {
   const bounds = (frames as Record<string, number[]>)[src]

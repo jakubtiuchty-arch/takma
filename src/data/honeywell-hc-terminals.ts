@@ -32,12 +32,14 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
   manufacturerId: 'honeywell',
   priceFrom: 5644.53,
   images: [
+    '/images/products/ct37-hc-front.png',
     '/images/products/CT37-X0N-56S10HG-3.png',
     '/images/products/CT37-X0N-56S10HG-2.png',
     '/images/products/CT37-X0N-56S10HG.png',
     '/images/products/CT37-X0N-56S10HG-4.png',
   ],
   imageDescriptions: [
+    'Honeywell CT37 HC — pojedynczy biały terminal na wprost, widok od przodu na ekran i logo Honeywell',
     'Honeywell CT37 HC — dwa terminale w białej obudowie HC: tył z modułem aparatu i przód z ekranem',
     'Honeywell CT37 HC — tył białej obudowy z modułem aparatu i pokrywą baterii',
     'Honeywell CT37 HC — biały terminal dla służby zdrowia, widok z przodu pod kątem na ekran 6 cali i niebieski przycisk skanowania',

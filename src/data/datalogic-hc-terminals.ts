@@ -34,11 +34,13 @@ Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. T
   manufacturerId: 'datalogic',
   priceFrom: 2779.49,
   images: [
+    '/images/products/memor12-hc-front.png',
     '/images/products/944950027.png',
     '/images/products/944950027-2.png',
     '/images/products/944950027-3.png',
   ],
   imageDescriptions: [
+    'Datalogic Memor 12 HC — pojedynczy terminal na wprost, widok od przodu na ekran 12:00 w białej obudowie HC',
     'Datalogic Memor 12 HC — biały terminal dla służby zdrowia, widok z przodu na ekran 6 cali z ikoną Wi-Fi i widok z tyłu na aparat, diodę LED i logo Datalogic',
     'Datalogic Memor 12 HC — biała tylna ścianka z aparatem, diodą LED, logo Datalogic i pokrywą baterii (obudowa wspólna z Memor 17 HC)',
     'Datalogic Memor 12 HC — oba boki białej obudowy z miętowymi przyciskami skanowania (obudowa wspólna z Memor 17 HC)',
