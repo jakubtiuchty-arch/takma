@@ -71,3 +71,7 @@ ESLint zmienionych komponentów, scoped TypeScript i git diff --check poprawne. 
 - `mai-section-seven-image-scaled.webp` — https://proglove.com/wp-content/uploads/2025/03/mai-section-seven-image-scaled.jpg
 - `mai-section-six-image.webp` — https://proglove.com/wp-content/uploads/2025/03/mai-section-six-image.jpg
 - `mai-section-three-bg-image.webp` — https://proglove.com/wp-content/uploads/2025/03/mai-section-three-bg-image.jpg
+
+## Poprawa zdjęcia MAI — 25.10.2026
+
+Zdjęcie hero mai-section-eight-image-one miało 212 × 255 px; API mediów producenta potwierdziło brak większego oryginału tego ujęcia. Przygotowano rekonstrukcję wysokiej rozdzielczości z imagegen na podstawie dokładnie tego zdjęcia, 1143 × 1376 px, z przezroczystością i zachowaniem frontalnego ujęcia, czterech przycisków oraz układu ekranu. Nowy plik mai-front-hq.webp dotyczy hero. Oryginały zachowane. Kontrola wizualna lokalnie; bez publikacji produkcyjnej.

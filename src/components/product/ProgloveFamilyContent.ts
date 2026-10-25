@@ -61,7 +61,7 @@ export const progloveContent: Record<ProgloveModel,FamilyContent> = {
   final:'LEO jest przeznaczony do odczytów z bliska. Podaj rodzaj i wielkość etykiet oraz używaną aplikację — pomożemy sprawdzić, czy ten model będzie odpowiedni.',
  },
  mai:{
-  name:'MAI',hero:'mai-section-eight-image-one',line:'Zadania, odczyty i potwierdzenia\nna ekranie przy dłoni.',
+  name:'MAI',hero:'mai-front-hq',line:'Zadania, odczyty i potwierdzenia\nna ekranie przy dłoni.',
   intro:'MAI łączy skaner Multi Range z kolorowym ekranem dotykowym i czterema przyciskami. Połącz urządzenie z systemem, aby wyświetlać zadania i rejestrować odpowiedzi pracownika.',
   facts:[['1,95″','Kolorowy ekran dotykowy'],['Wi-Fi 6','Praca bez telefonu po integracji'],['Multi Range','Orientacyjnie 5 cm–6 m'],['68 g','Masa urządzenia']],movie:'mai-section-one-v2',
   workTitle:'Sprawdź zadanie\ni potwierdź je na ekranie.',
