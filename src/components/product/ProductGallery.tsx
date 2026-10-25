@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { getProductImageFrameStyle } from '@/lib/product-image-frame'
-import { ChevronLeftIcon, ChevronRightIcon } from '@/components/ui/Icons'
+import { ChevronLeftIcon, ChevronRightIcon, PackageIcon } from '@/components/ui/Icons'
 
 /** Obrót 360° jako ostatni slajd galerii: krótki MP4 bez dźwięku w pętli, miniatura z plakatem i znaczkiem 360°. */
 export type SpinVideo = { file: string; poster: string }
@@ -67,7 +67,7 @@ export default function ProductGallery({ images, productName, imageDescriptions,
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
               <div className="w-24 h-24 bg-gray-200 rounded-xl mx-auto mb-3 flex items-center justify-center">
-                <span className="text-gray-400 text-2xl">📷</span>
+                <PackageIcon size={40} className="text-gray-400" aria-hidden="true" />
               </div>
               <p className="text-sm text-gray-400">Zdjęcie produktu</p>
             </div>
