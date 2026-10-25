@@ -19,16 +19,16 @@ const xenonUltra1960h: Product = {
   slug: 'honeywell-xenon-ultra-1960h',
   name: 'Honeywell Xenon Ultra 1960h',
   seoH1: 'Honeywell Xenon Ultra 1960h',
-  shortDescription: 'Honeywell Xenon Ultra 1960h — przewodowy skaner 2D dla służby zdrowia: biała obudowa antymikrobowa przygotowana do dezynfekcji, tryby pracy cichej przy pacjencie.',
+  shortDescription: 'Honeywell Xenon Ultra 1960h — przewodowy skaner kodów 2D do placówek służby zdrowia: biała obudowa antymikrobowa przygotowana do dezynfekcji, tryby pracy cichej przy pacjencie.',
   seoTitle: 'Honeywell Xenon Ultra 1960h — przewodowy skaner dla służby zdrowia',
-  seoDescription: 'Skaner kodów kreskowych do szpitala Honeywell Xenon Ultra 1960h: przewodowy imager 2D, obudowa antymikrobowa przygotowana do dezynfekcji, tryb Patient Do-Not-Disturb. Skaner Honeywell 1960h, Xenon 1960h Honeywell. PN: 1960HHD-5USB-R, 1960HSR-5USB-R.',
-  description: `Honeywell Xenon Ultra 1960h to przewodowy skaner ręczny kodów 1D i 2D w wersji dla służby zdrowia. Honeywell rozwija w nim swoje wcześniejsze skanery Xenon i Xenon XP dla placówek medycznych. Model służy przy przyjęciu pacjentów, przy łóżku chorego, przy pobieraniu próbek, w aptece szpitalnej i do ewidencji zapasów.
+  seoDescription: 'Skaner kodów kreskowych do szpitala Honeywell Xenon Ultra 1960h: przewodowy imager 2D, obudowa antymikrobowa przygotowana do dezynfekcji, tryb Patient Do-Not-Disturb. Skaner Honeywell 1960h, Xenon 1960h Honeywell. PN: 1960HHD-5USB-R.',
+  description: `Honeywell Xenon Ultra 1960h to przewodowy skaner ręczny 1D/2D, odmiana serii Xenon Ultra przeznaczona dla służby zdrowia. Honeywell rozwija w nim swoje wcześniejsze skanery Xenon i Xenon XP dla placówek medycznych. Model służy przy przyjęciu pacjentów, przy łóżku chorego, przy pobieraniu próbek, w aptece szpitalnej i do ewidencji zapasów.
 
 Każda wersja dla służby zdrowia ma obudowę w kolorze białym, antymikrobową i przygotowaną do dezynfekcji. Obudowę można regularnie czyścić wieloma środkami bez uszkodzenia skanera. Bryła ma mniej zagłębień i szczelin, w których mogą zostawać zarazki.
 
 Skaner ma tryby ograniczające hałas przy pacjencie: Patient Do-Not-Disturb, opcjonalną wibrację i Scan Lamp, czyli oświetlenie włączane tylko w razie potrzeby. Celownik z zieloną kropką ułatwia wskazanie kodu. Xenon Ultra 1960h odczytuje także kody uszkodzone i słabej jakości, co ogranicza ręczne wpisywanie danych.
 
-Zestawy 1960HHD-5USB-R (ogniskowanie HD) i 1960HSR-5USB-R (ogniskowanie SR) zawierają przewód USB o długości 3 m. Skaner przyjmuje przewody z instalacji Xenon XP 1950h. Producent udziela 5 lat gwarancji.`,
+Zestaw 1960HHD-5USB-R z ogniskowaniem HD zawiera prosty przewód USB o długości 3 m. Skaner przyjmuje przewody z instalacji Xenon XP 1950h. Producent udziela 5 lat gwarancji.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-dla-sluzby-zdrowia', 'skanery-przewodowe'],
   manufacturerId: 'honeywell',
@@ -95,21 +95,12 @@ Zestawy 1960HHD-5USB-R (ogniskowanie HD) i 1960HSR-5USB-R (ogniskowanie SR) zawi
     {
       partNumber: '1960HHD-5USB-R',
       name: 'Xenon Ultra 1960h HD — zestaw z przewodem USB',
-      attributes: { 'Optyka': 'HD' },
+      attributes: {},
       priceFrom: 1348.88,
       availability: 'available',
     },
-    {
-      partNumber: '1960HSR-5USB-R',
-      name: 'Xenon Ultra 1960h SR — zestaw z przewodem USB',
-      attributes: { 'Optyka': 'SR' },
-      priceFrom: 1348.88,
-      availability: 'unavailable',
-    },
   ],
-  variantAttributeTooltips: {
-    'Optyka': 'Rodzaj optyki (ogniskowania) skanera 1960h.\n\nSR (standard range) — dłuższy zasięg: kod EAN/UPC 13 mil od 0 do 65,4 cm.\n\nHD (high density) — małe i gęste kody: Data Matrix 5 mil od 3,5 do 11,3 cm; wersja SR tego kodu nie odczytuje.',
-  },
+  variantAttributeTooltips: {},
   compatibleAccessories: [],
   relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-46-00526'],
   faq: [
@@ -154,14 +145,14 @@ const xenonUltra1962h: Product = {
   slug: 'honeywell-xenon-ultra-1962h',
   name: 'Honeywell Xenon Ultra 1962h',
   seoH1: 'Honeywell Xenon Ultra 1962h',
-  shortDescription: 'Honeywell Xenon Ultra 1962h — bezprzewodowy skaner 2D Bluetooth dla służby zdrowia: obudowa antymikrobowa przygotowana do dezynfekcji, bateria Li-ion lub superkondensator.',
+  shortDescription: 'Honeywell Xenon Ultra 1962h — skaner kodów 2D z Bluetooth do placówek służby zdrowia: obudowa antymikrobowa przygotowana do dezynfekcji, bateria Li-ion lub superkondensator.',
   seoTitle: 'Honeywell Xenon Ultra 1962h — bezprzewodowy skaner dla szpitali',
-  seoDescription: 'Bezprzewodowy skaner medyczny Honeywell Xenon Ultra 1962h: Bluetooth do 100 m, ładowanie stykowe lub bezstykowe, superkondensator ładowany w minutę. Skaner Honeywell 1962h, Xenon 1962h Honeywell, skaner opasek pacjentów. PN: 1962HHD-5USB-5-R, 1962HHD-5USB-BF-R, 1962HHD-5USB-WC-R, 1962HSR-5USB-5-R, 1962HSR-5USB-WC-R.',
+  seoDescription: 'Bezprzewodowy skaner medyczny Honeywell Xenon Ultra 1962h: Bluetooth do 100 m, ładowanie stykowe lub bezstykowe, superkondensator ładowany w minutę. Skaner Honeywell 1962h, Xenon 1962h Honeywell, skaner opasek pacjentów. PN: 1962HHD-5USB-5-R, 1962HHD-5USB-BF-R, 1962HHD-5USB-WC-R.',
   description: `Honeywell Xenon Ultra 1962h to bezprzewodowy skaner ręczny 1D/2D z łącznością Bluetooth, zaprojektowany dla placówek ochrony zdrowia. Swoboda ruchu jest ważna w ciasnych salach chorych i na oddziałach intensywnej terapii, gdzie wokół pacjenta stoi dużo aparatury. Skaner zajmuje mało miejsca i można go zamocować lub odłożyć w wielu miejscach.
 
 Wszystkie modele 1962h mają białą obudowę antymikrobową, przygotowaną do dezynfekcji. Konstrukcja ma niewiele zakamarków, w których mogłyby się gromadzić zarazki.
 
-Ten sam skaner przyjmuje baterię litowo-jonową albo superkondensator. Superkondensator ładuje się w niecałą minutę z zasilacza lub zasilanego portu USB i wystarcza na co najmniej 450 odczytów kodów UPC/EAN. Honeywell wskazuje go do podawania leków przy łóżku i pobierania próbek. Wersje z ładowaniem bezstykowym nie mają odsłoniętych styków, co ogranicza awarie spowodowane korozją.
+Ten sam skaner przyjmuje baterię litowo-jonową albo superkondensator. Superkondensator ładuje się w niecałą minutę z zasilacza lub zasilanego portu USB i wystarcza na co najmniej 450 odczytów kodów UPC/EAN. Jest przeznaczony m.in. do podawania leków przy łóżku pacjenta i pobierania próbek. Wersje z ładowaniem bezstykowym nie mają odsłoniętych styków, co ogranicza awarie spowodowane korozją.
 
 Tryby Patient Do-Not-Disturb, wibracja i Scan Lamp ograniczają dźwięk i światło przy pacjencie. Każdy zestaw zawiera bazę prezentacyjną i przewód USB 2,7 m. Gwarancja wynosi 3 lata na skaner, 5 lat na superkondensator i rok na baterię.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -238,41 +229,26 @@ Tryby Patient Do-Not-Disturb, wibracja i Scan Lamp ograniczają dźwięk i świa
     {
       partNumber: '1962HHD-5USB-5-R',
       name: 'Xenon Ultra 1962h HD — bateria Li-ion, baza stykowa, przewód USB',
-      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Stykowe' },
+      attributes: { 'Zasilanie': 'Li-ion', 'Ładowanie': 'Stykowe' },
       priceFrom: 3157.31,
       availability: 'available',
     },
     {
       partNumber: '1962HHD-5USB-BF-R',
       name: 'Xenon Ultra 1962h HD — superkondensator, baza stykowa, przewód USB',
-      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Superkondensator', 'Ładowanie': 'Stykowe' },
+      attributes: { 'Zasilanie': 'Superkondensator', 'Ładowanie': 'Stykowe' },
       priceFrom: 3172.09,
       availability: 'available',
     },
     {
       partNumber: '1962HHD-5USB-WC-R',
       name: 'Xenon Ultra 1962h HD — bateria Li-ion, baza bezstykowa, przewód USB',
-      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Bezstykowe' },
+      attributes: { 'Zasilanie': 'Li-ion', 'Ładowanie': 'Bezstykowe' },
       priceFrom: 3473.49,
-      availability: 'unavailable',
-    },
-    {
-      partNumber: '1962HSR-5USB-5-R',
-      name: 'Xenon Ultra 1962h SR — bateria Li-ion, baza stykowa, przewód USB',
-      attributes: { 'Optyka': 'SR', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Stykowe' },
-      priceFrom: 3157.75,
-      availability: 'unavailable',
-    },
-    {
-      partNumber: '1962HSR-5USB-WC-R',
-      name: 'Xenon Ultra 1962h SR — bateria Li-ion, baza bezstykowa, przewód USB',
-      attributes: { 'Optyka': 'SR', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Bezstykowe' },
-      priceFrom: 3157.75,
       availability: 'unavailable',
     },
   ],
   variantAttributeTooltips: {
-    'Optyka': 'Wersja optyki (ogniskowania) w skanerze 1962h.\n\nSR — kody o standardowej gęstości; Code 39 20 mil z odległości do 111,5 cm.\n\nHD — drobne kody; jako jedyna odczytuje Data Matrix 5 mil (3,5–11,3 cm).',
     'Zasilanie': 'Źródło energii skanera 1962h.\n\nLi-ion — bateria litowo-jonowa; do 80 000 odczytów i ok. 22 h pracy; ładowanie ok. 4,5 h.\n\nSuperkondensator — ładuje się poniżej 60 s z zasilacza, wystarcza na ok. 450 odczytów; 5 lat gwarancji.',
     'Ładowanie': 'Sposób ładowania skanera w bazie.\n\nStykowe — przez metalowe styki na końcu rękojeści.\n\nBezstykowe — bez odsłoniętych styków, co ogranicza awarie spowodowane korozją.',
   },
@@ -285,11 +261,11 @@ Tryby Patient Do-Not-Disturb, wibracja i Scan Lamp ograniczają dźwięk i świa
     },
     {
       question: 'Bateria czy superkondensator — który wariant 1962h wybrać?',
-      answer: 'Superkondensator przydaje się tam, gdzie skaner często wraca do bazy, np. przy podawaniu leków i pobieraniu próbek. Ładuje się w niecałą minutę, a naładowany utrzymuje energię przez kilka godzin. Bateria Li-ion wystarcza na ok. 22 h pracy i do 80 000 odczytów, więc lepiej sprawdza się przy dłuższej pracy z dala od bazy. Ten sam skaner przyjmuje oba źródła zasilania, dlatego placówka może łączyć je w jednej flocie.',
+      answer: 'Superkondensator przydaje się tam, gdzie skaner często wraca do bazy, np. przy podawaniu leków i pobieraniu próbek. Ładuje się w niecałą minutę, a naładowany utrzymuje energię godzinami. Bateria Li-ion wystarcza na ok. 22 h pracy i do 80 000 odczytów, więc lepiej sprawdza się przy dłuższej pracy z dala od bazy. Ten sam skaner przyjmuje oba źródła zasilania, dlatego placówka może łączyć je w jednej flocie.',
     },
     {
       question: 'Jak dezynfekować Xenon Ultra 1962h i bazę?',
-      answer: 'Obudowy skanera i bazy Healthcare są antymikrobowe i przygotowane do częstego czyszczenia. Środki dopuszczone przez Honeywell wymienia „Healthcare Disinfectant-Ready Housing Cleaning Guide”. Skaner wkłada się do bazy dopiero po wyschnięciu wszystkich elementów. Połączenie mokrych elementów może spowodować uszkodzenie nieobjęte gwarancją. Przy rygorystycznych procedurach czyszczenia producent wskazuje wersje z ładowaniem bezstykowym.',
+      answer: 'Obudowy skanera i bazy Healthcare są antymikrobowe i przygotowane do częstego czyszczenia. Środki dopuszczone przez Honeywell wymienia „Healthcare Disinfectant-Ready Housing Cleaning Guide”. Skaner wkłada się do bazy dopiero po wyschnięciu wszystkich elementów. Połączenie mokrych elementów może spowodować uszkodzenie nieobjęte gwarancją. Ładowanie bezstykowe zmniejsza ryzyko korozji, dlatego ułatwia przestrzeganie rygorystycznych procedur czyszczenia.',
     },
     {
       question: 'Jaki zasięg ma Bluetooth i ile skanerów obsługuje jedna baza?',
@@ -338,7 +314,7 @@ const zasilacz4600526: Product = {
   seoDescription: 'Zasilacz Honeywell 46-00526 z wtyczką EU, 5,2 V DC, 1,0 A, do skanerów Xenon Ultra 1960g i 1960h przy połączeniu RS-232. Zasilacz do skanera Honeywell, 46-00526 Honeywell. PN: 46-00526.',
   description: `Honeywell 46-00526 to zasilacz sieciowy z wtyczką EU do przewodowych skanerów Xenon Ultra 1960, w tym do wersji 1960h dla służby zdrowia. Daje 1,0 A przy 5,2 V DC i przyjmuje napięcie 90–255 V AC, 50–60 Hz.
 
-Zasilacz jest potrzebny przy połączeniach przewodowych, w których port hosta nie zasila skanera, np. przy przewodzie RS-232 CBL-020-300-C00. Przy połączeniu USB skaner pobiera zasilanie z komputera. Honeywell przeznacza ten zasilacz wyłącznie do skanerów przewodowych Xenon Ultra 1960. Bazy ładujące Xenon Ultra 1962 wymagają mocniejszego zasilacza 46-00536-6.`,
+Zasilacz jest potrzebny przy połączeniach przewodowych, w których port hosta nie zasila skanera, np. przy przewodzie RS-232 CBL-020-300-C00. Przy połączeniu USB skaner pobiera zasilanie z komputera. Zasilacz jest przeznaczony wyłącznie do skanerów przewodowych Xenon Ultra 1960. Do baz ładująco-komunikacyjnych Xenon Ultra 1962 służy zasilacz 46-00536-6 (5 V DC, 3 A).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
   manufacturerId: 'honeywell',
@@ -455,7 +431,7 @@ Obudowa bazy jest biała, antymikrobowa i przygotowana do dezynfekcji. Łączno�
 }
 
 // Lista środków z artykułu Socket Mobile „Medical-Grade Plastic” (dotyczy D745 i D765); w FAQ tylko odesłanie, żeby nie powielać tekstu między kartami.
-const SOCKET_SRODKI = 'Sani-Cloth HB, Sani-Cloth Plus, Super Sani-Cloth (czwartorzędowe sole amoniowe); Hepacide Quat II; chusteczki z alkoholem izopropylowym 70%; CaviWipes; Virex 256; 409 Glass and Surface Cleaner; Windex Blue; Clorox Bleach (podchloryn sodu); ocet; łagodny płyn do naczyń z wodą'
+const SOCKET_SRODKI = 'Sani-Cloth HB, Sani-Cloth Plus, Super Sani-Cloth (roztwór czwartorzędowego chlorku amoniowego); Hepacide Quat II; chusteczki z alkoholem izopropylowym 70%; CaviWipes; Virex 256; 409 Glass and Surface Cleaner; Windex Blue; Clorox Bleach (podchloryn sodu); ocet; łagodny płyn do naczyń z wodą'
 
 const durascanD745: Product = {
   id: 'socket-mobile-durascan-d745',
@@ -465,11 +441,11 @@ const durascanD745: Product = {
   shortDescription: 'Socket Mobile DuraScan D745 — kompaktowy skaner 1D/2D Bluetooth dla służby zdrowia, obudowa z tworzywa klasy medycznej, IP54, iOS, Android i Windows.',
   seoTitle: 'Socket Mobile DuraScan D745 — skaner Bluetooth dla służby zdrowia',
   seoDescription: 'Kompaktowy skaner medyczny Socket Mobile DuraScan D745: kody 1D i 2D z etykiet i ekranów, Bluetooth do iPhone, iPad i Androida, tworzywo ISO 10993, IP54. Skaner Socket Mobile D745, DuraScan D745 Socket. PN: CX3861-2892, CX3859-2890.',
-  description: `Socket Mobile DuraScan D745 to kompaktowy bezprzewodowy skaner kodów 1D i 2D przeznaczony dla placówek ochrony zdrowia. Odczytuje kody wydrukowane i wyświetlane na ekranach, także przez osłonę z tworzywa lub szkła. Przez Bluetooth łączy się z urządzeniami iOS, Android i Windows 11.
+  description: `Socket Mobile DuraScan D745 to kompaktowy czytnik Bluetooth do kodów 1D i 2D, przeznaczony dla placówek ochrony zdrowia. Odczytuje kody wydrukowane i wyświetlane na ekranach, także przez osłonę z tworzywa lub szkła. Przez Bluetooth łączy się z urządzeniami iOS, Android i Windows 11.
 
 Obudowę wykonano z tworzywa klasy medycznej, które spełnia normy ISO 10993 i EN 60529. Tworzywo znosi codzienne czyszczenie agresywnymi środkami dezynfekcyjnymi i nie pęka, nie odbarwia się, nie pęcznieje ani nie twardnieje. Uszczelnienie IP54 chroni wnętrze skanera podczas przecierania.
 
-Socket Mobile przeznacza D745 do przyjęcia pacjentów, opieki przy łóżku i pracy w aptece. Typowe zadania to identyfikacja leków i pacjentów, podawanie leków, pobieranie próbek i kontrola przetoczeń krwi. Mały skaner mieści się w kieszeni, a nosi się go także na pasku na nadgarstek lub w kaburze.
+Socket Mobile przeznacza D745 do przyjęcia pacjentów, opieki przy łóżku i pracy w aptece. Typowe zadania to identyfikacja leków i pacjentów, zarządzanie lekami, pobieranie próbek i bezpieczeństwo przetoczeń krwi. Mały skaner mieści się w kieszeni, a nosi się go także na pasku na nadgarstek lub w kaburze.
 
 Wymienna bateria wystarcza na 12-godzinną zmianę, a przycisk skanowania wytrzymuje ponad 5 mln naciśnięć. W trybie automatycznym skaner postawiony w kołysce czyta kody bez naciskania przycisku. Aplikacje z zestawem CaptureSDK obsługują D745 bez dodatkowej integracji.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -528,9 +504,9 @@ Wymienna bateria wystarcza na 12-godzinną zmianę, a przycisk skanowania wytrzy
   ],
   applications: [
     'Identyfikacja pacjentów',
-    'Identyfikacja leków i podawanie leków',
+    'Identyfikacja leków i zarządzanie lekami',
     'Pobieranie próbek',
-    'Kontrola przetoczeń krwi',
+    'Bezpieczeństwo przetoczeń krwi',
     'Przyjęcie pacjenta i apteka',
   ],
   variants: [
@@ -565,11 +541,11 @@ Wymienna bateria wystarcza na 12-godzinną zmianę, a przycisk skanowania wytrzy
     },
     {
       question: 'Jak długo działa bateria skanera D745?',
-      answer: 'Bateria litowo-polimerowa 1400 mAh wystarcza na 12-godzinną zmianę. Przy dwóch odczytach na sekundę producent podaje 85 000 odczytów w 9 h, a przy jednym odczycie co 4 s — 7000 odczytów w 19 h. Baterię można wymienić bez wysyłania skanera do serwisu.',
+      answer: 'Bateria litowo-polimerowa 1400 mAh wystarcza na 12-godzinną zmianę. Przy dwóch odczytach na sekundę daje 85 000 odczytów w 9 h, a przy jednym odczycie co 4 s — 7000 odczytów w 19 h. Baterię można wymienić bez wysyłania skanera do serwisu.',
     },
     {
       question: 'Czym DuraScan D745 różni się od D765?',
-      answer: '[Socket Mobile DuraScan D765](/produkt/socket-mobile-durascan-d765) odczytuje dodatkowo strefę MRZ dokumentów, fonty OCR i DotCode oraz kody od 3 mm. Jego odległość odczytu sięga 91,7 cm, a w D745 — 49,5 cm. D765 wytrzymuje 6 upadków z 2 m na beton. D745 wystarcza do identyfikacji pacjentów i leków oraz do odczytu kodów z ekranów.',
+      answer: '[Socket Mobile DuraScan D765](/produkt/socket-mobile-durascan-d765) odczytuje dodatkowo strefę MRZ dokumentów, DotCode i kody od 3 mm, a fonty OCR-A i OCR-B ma włączone domyślnie (w D745 trzeba je włączyć). Jego odległość odczytu sięga 91,7 cm, a w D745 — 49,5 cm. D765 wytrzymuje 6 upadków z 2 m na beton. D745 wystarcza do identyfikacji pacjentów i leków oraz do odczytu kodów z ekranów.',
     },
     {
       question: 'Co zawierają zestawy CX3861-2892 i CX3859-2890?',
@@ -604,7 +580,7 @@ const durascanD765: Product = {
 
 Skaner odczytuje wielokierunkowo kody o wielkości od 3 mm, dlatego nadaje się do oznaczeń na fiolkach i strzykawkach. Czyta kody na powierzchniach zakrzywionych i błyszczących, kody słabej jakości oraz kody z ekranów. Obsługuje też PDF417, fonty OCR i DotCode. Funkcja tolerancji ruchu przyspiesza odczyt i powiększa obszar, w którym kod zostaje rozpoznany.
 
-Obudowę z tworzywa klasy medycznej, zgodnego z ISO 10993 i EN 60529, można często czyścić agresywnymi środkami dezynfekcyjnymi. Skaner ma szczelność IP54 i wytrzymuje 6 upadków z 2 m na beton. Producent wymienia szpitale, banki krwi, apteki, placówki opieki stacjonarnej i opiekę domową.
+Obudowę z tworzywa klasy medycznej, zgodnego z ISO 10993 i EN 60529, można często czyścić agresywnymi środkami dezynfekcyjnymi. Skaner ma szczelność IP54 i wytrzymuje 6 upadków z 2 m na beton. Jest przeznaczony dla szpitali, banków krwi, aptek, placówek opieki stacjonarnej i opieki domowej.
 
 D765 współpracuje przez Bluetooth z iOS, Androidem i Windows 11, a aplikacje z CaptureSDK obsługują go od razu. Zestaw CX4374-3507 ma kołyskę ładującą, a CX4373-3506 — przewód do ładowania.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -708,7 +684,7 @@ D765 współpracuje przez Bluetooth z iOS, Androidem i Windows 11, a aplikacje z
     },
     {
       question: 'Kiedy wybrać D765 zamiast DuraScan D745?',
-      answer: 'D765 jest lepszym wyborem, gdy trzeba czytać dokumenty z MRZ, bardzo małe kody na fiolkach lub kody z większej odległości, do 91,7 cm. [Socket Mobile DuraScan D745](/produkt/socket-mobile-durascan-d745) czyta do 49,5 cm i nie obsługuje MRZ, ma natomiast przycisk o trwałości ponad 5 mln naciśnięć. Obie wersje mają obudowę z tworzywa klasy medycznej.',
+      answer: 'D765 jest lepszym wyborem, gdy trzeba czytać dokumenty z MRZ, bardzo małe kody na fiolkach lub kody z większej odległości, do 91,7 cm. [Socket Mobile DuraScan D745](/produkt/socket-mobile-durascan-d745) czyta do 49,5 cm i nie obsługuje MRZ. Obie wersje mają obudowę z tworzywa klasy medycznej.',
     },
     {
       question: 'Jakie są alternatywy dla Socket Mobile DuraScan D765?',

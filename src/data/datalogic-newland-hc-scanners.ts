@@ -6,7 +6,7 @@ import type { Product } from './products'
 // GM4600-HC-910-HP i GM4600-HC-910K1-HP pominięte (910 MHz poza UE). Dokumentacja: docs/catalog/skanery-hc-2026-10-25/S3.md
 
 const GRYPHON_DATASHEET = { name: 'Karta katalogowa Gryphon 4600 (EN)', type: 'datasheet' as const, url: '/datasheets/datalogic-gryphon-4600-en.pdf', size: '676 KB' }
-const GRYPHON_CORDED_GUIDE = { name: 'Instrukcja Gryphon GD4600 z listą środków dla modeli HC (EN)', type: 'manual' as const, url: '/instrukcje/datalogic-gryphon-corded-en.pdf', size: '3,4 MB' }
+const GRYPHON_CORDED_GUIDE = { name: 'Skrócona instrukcja Gryphon GD4600 z listą środków dla modeli HC (EN)', type: 'manual' as const, url: '/instrukcje/datalogic-gryphon-corded-en.pdf', size: '3,4 MB' }
 const GRYPHON_CORDLESS_GUIDE = { name: 'Skrócona instrukcja Gryphon GBT4600 / GM4600 i baz WLC4690 (EN)', type: 'manual' as const, url: '/instrukcje/datalogic-gryphon-cordless-en.pdf', size: '3,0 MB' }
 const GRYPHON_SAME_AS = 'https://www.datalogic.com/eng/retail-manufacturing-transportation-logistics-healthcare-gs1-digital-link-other-applications/handheld-scanners/gryphon-4600-series-pd-1147.html'
 
@@ -26,9 +26,9 @@ const gd4690Hc: Product = {
   shortDescription: 'Datalogic Gryphon GD4690 HC — przewodowy skaner kodów 2D dla szpitali, laboratoriów i aptek: obudowa White HC przygotowana do dezynfekcji, optyka HP z dwiema matrycami, złącza USB i RS-232.',
   seoTitle: 'Datalogic Gryphon GD4690 HC — skaner 2D dla służby zdrowia',
   seoDescription: 'Skaner kodów Datalogic Gryphon GD4690 HC do szpitali, laboratoriów i aptek: obudowa przygotowana do dezynfekcji z dodatkami antymikrobowymi (ISO 22196), optyka HP, USB i RS-232. Skaner medyczny Datalogic GD4690 HC, Gryphon GD4690 HC Datalogic. PN: GD4690-HCK1-HP.',
-  description: `Datalogic Gryphon GD4690 HC to przewodowy skaner 2D w białej wersji dla ochrony zdrowia. Producent wskazuje dla niego laboratoria, apteki i opiekę przy łóżku pacjenta. Skaner służy do identyfikacji pacjenta, weryfikacji leków i oznaczania próbek.
+  description: `Datalogic Gryphon GD4690 HC to przewodowy skaner 2D w białej wersji dla ochrony zdrowia. Jest przeznaczony dla laboratoriów, aptek i opieki przy łóżku pacjenta. Skaner służy do identyfikacji pacjenta, weryfikacji leków i oznaczania próbek.
 
-Obudowę przygotowano do dezynfekcji. Tworzywo zawiera dodatki antymikrobowe zgodne z ISO 22196 i jest przeznaczone do codziennego czyszczenia silnymi środkami dezynfekcyjnymi. Datalogic publikuje osobną listę środków dla białych modeli GD4600 HC.
+Obudowę przygotowano do dezynfekcji. Tworzywo zawiera dodatki antymikrobowe zgodne z ISO 22196 i jest przeznaczone do codziennego czyszczenia silnymi środkami dezynfekcyjnymi. Listę zalecanych środków dla białych modeli GD4600 HC zawiera skrócona instrukcja w plikach do pobrania.
 
 Optyka HP łączy sensor 1,5 MP z sensorem VGA. Taki układ odczytuje kody zarówno z bliska, jak i z większej odległości, także małe kody o wysokiej gęstości. Dwurdzeniowy procesor z algorytmami AI dekoduje kody uszkodzone, słabo wydrukowane, błyszczące i umieszczone na zakrzywionej powierzchni. Odczyt sygnalizują: Green Spot widoczny na kodzie, diody 3GL oraz dźwięk.
 
@@ -118,7 +118,7 @@ const gd4620Hc: Product = {
 
 GD4620 HC wymaga zasilania 5 V DC. Model nie ma interfejsu RS-232, dlatego pasuje do stanowisk, na których wszystkie urządzenia łączą się przez USB lub USB-C. W zestawie GD4620-HCK1-HD jest biały [przewód USB-A 90A052278](/produkt/datalogic-usb-90a052278) o długości 2 m.
 
-Obudowa w kolorze White HC znosi codzienne przecieranie silnymi środkami dezynfekcyjnymi. Tworzywo z dodatkami antymikrobowymi spełnia normę ISO 22196. Zalecane środki producent wymienia w instrukcji serii GD4600.
+Obudowa w kolorze White HC znosi codzienne przecieranie silnymi środkami dezynfekcyjnymi. Tworzywo z dodatkami antymikrobowymi spełnia normę ISO 22196. Wykaz preparatów do białych modeli jest w skróconej instrukcji GD4600.
 
 Dekodowanie wspierają algorytmy AI. Ułatwiają odczyt kodów zniszczonych, zniekształconych oraz kodów na lśniących lub wypukłych opakowaniach. Kod wskazuje zielony celownik LED w kształcie krzyża. Oświetlenie przełącza się między światłem ciepłym białym i czerwonym. Gwarancja Datalogic na model przewodowy wynosi 5 lat.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -152,7 +152,7 @@ Dekodowanie wspierają algorytmy AI. Ułatwiają odczyt kodów zniszczonych, zni
     { name: 'W zestawie GD4620-HCK1-HD', value: 'Skaner GD4620 HC i biały przewód USB-A 90A052278' },
     { name: 'Gwarancja producenta', value: '5 lat' },
   ],
-  applications: ['Stanowisko pielęgniarskie z komputerem USB', 'Rejestracja i przyjęcie pacjenta', 'Laboratorium', 'Apteka'],
+  applications: ['Rejestracja i przyjęcie pacjenta', 'Oznaczanie próbek', 'Laboratorium', 'Apteka'],
   variants: [
     { partNumber: 'GD4620-HCK1-HD', name: 'Zestaw: skaner HD i biały przewód USB-A', attributes: {}, priceFrom: 891.64, availability: 'available' },
   ],
@@ -165,7 +165,7 @@ Dekodowanie wspierają algorytmy AI. Ułatwiają odczyt kodów zniszczonych, zni
     },
     {
       question: 'Czym czyścić i dezynfekować GD4620 HC?',
-      answer: 'Lista Datalogic dla białych skanerów GD4600 HC obejmuje: alkohol izopropylowy 70% w chusteczkach, nadtlenek wodoru 3%, chusteczki Sani-Cloth (HB, Plus, Super) i Hepacide Quat II z czwartorzędowymi chlorkami amoniowymi, Windex Blue, Formula 409 Glass and Surface Cleaner, Virex 256, CaviWipes, preparaty Clorox z podchlorynem sodu (Clorox Bleach, Clorox Healthcare Bleach Germicidal Cleaner), ProSpray Wipes oraz wodę z delikatnym płynem do mycia naczyń. Płyn należy nanieść na ściereczkę i wycisnąć jego nadmiar. Skanera nie spryskuje się ani nie polewa. Na koniec obudowę osusza się drugą czystą ściereczką.',
+      answer: 'Lista Datalogic dla białych skanerów GD4600 HC obejmuje: alkohol izopropylowy 70% w chusteczkach, nadtlenek wodoru 3%, chusteczki Sani-Cloth HB, Sani-Cloth Plus i Super Sani-Cloth z roztworem czwartorzędowego chlorku amoniowego, wirusobójczy Hepacide Quat II, Windex Blue, Formula 409 Glass and Surface Cleaner, Virex 256, CaviWipes, preparaty Clorox z podchlorynem sodu (Clorox Bleach, Clorox Healthcare Bleach Germicidal Cleaner), ProSpray Wipes oraz wodę z delikatnym płynem do mycia naczyń. Płyn należy nanieść na ściereczkę i wycisnąć jego nadmiar. Skanera nie spryskuje się ani nie polewa. Na koniec obudowę osusza się drugą czystą ściereczką.',
     },
     {
       question: 'Co oznacza optyka HD w GD4620 HC?',
@@ -190,8 +190,8 @@ Dekodowanie wspierają algorytmy AI. Ułatwiają odczyt kodów zniszczonych, zni
   sameAs: GRYPHON_SAME_AS,
 }
 
-const KIT_TOOLTIP_BT = 'Zawartość pozycji.\n\nSkaner, baza i przewód — skaner HC z akumulatorem, baza WLC4690-HC-BT z ładowaniem indukcyjnym i biały przewód USB-A 90A052278.\n\nSam skaner — skaner HC z akumulatorem 3250 mAh, bez bazy i przewodu; do uzupełnienia lub wymiany skanera przy istniejącej bazie.'
-const KIT_TOOLTIP_433 = 'Zakres dostawy GM4600 HC.\n\nSkaner, baza i przewód — skaner, odbiornik radiowy WLC4690-HC-433 z ładowaniem indukcyjnym i biały przewód 90A052278.\n\nSam skaner — tylko skaner z akumulatorem; pracuje z posiadaną bazą WLC4690-HC-433, do której można przypisać kolejne skanery.'
+const KIT_TOOLTIP_BT = 'Zawartość pozycji.\n\nSkaner, baza i przewód — skaner HC z akumulatorem, biała baza Bluetooth z ładowaniem indukcyjnym i biały przewód USB-A.\n\nSam skaner — skaner HC z akumulatorem 3250 mAh, bez bazy i przewodu; do uzupełnienia lub wymiany skanera przy istniejącej bazie.'
+const KIT_TOOLTIP_433 = 'Zakres dostawy GM4600 HC.\n\nSkaner, baza i przewód — skaner, biały odbiornik radiowy STAR 433 MHz z ładowaniem indukcyjnym i biały przewód USB-A.\n\nSam skaner — tylko skaner z akumulatorem; pracuje z posiadaną bazą 433 MHz w wersji HC, do której można przypisać kolejne skanery.'
 
 const gbt4600Hc: Product = {
   id: 'datalogic-gryphon-gbt4600-hc',
@@ -269,7 +269,7 @@ Baza ładuje akumulator skanera. Przewód łączy bazę z komputerem.`,
     },
     {
       question: 'Jak dezynfekować GBT4600 HC?',
-      answer: 'Obudowa wersji HC jest przeznaczona do codziennego czyszczenia silnymi środkami dezynfekcyjnymi. Datalogic nie publikuje dla modeli bezprzewodowych osobnej listy środków. Przed wyborem preparatu warto potwierdzić go w TAKMA lub u producenta. Ładowanie indukcyjne nie wymaga czyszczenia styków.',
+      answer: 'Obudowa wersji HC jest przeznaczona do codziennego czyszczenia silnymi środkami dezynfekcyjnymi. Przed wyborem preparatu warto potwierdzić go w TAKMA lub u producenta. Ładowanie indukcyjne nie wymaga czyszczenia styków.',
     },
     {
       question: 'Jak zamocować bazę WLC4690-HC-BT na wózku medycznym?',
@@ -297,7 +297,7 @@ const gm4600Hc: Product = {
 
 Do jednego odbiornika można przypisać do 16 skanerów w trybie punkt–wielopunkt. Na otwartej przestrzeni łączność sięga co najmniej 50 m.
 
-Tworzywo obudowy zawiera dodatek antymikrobowy (zgodność z ISO 22196), a samą obudowę przygotowano do codziennej dezynfekcji. Baza [WLC4690-HC-433](/produkt/datalogic-gryphon-wlc4690-hc-433) jest jednocześnie odbiornikiem radiowym i ładowarką indukcyjną. Odczyt sygnalizują wibracja, Green Spot i dźwięk. Optyka HP z dwiema matrycami czyta też kody wyświetlane na ekranach urządzeń mobilnych. Skaner waży 218 g z akumulatorem, ma klasę szczelności IP52 i jest odporny na powtarzane upadki z wysokości 1,8 m na beton. Naładowanie akumulatora Li-Ion 3250 mAh z 10 do 80% zajmuje 2 h, jeśli baza ma zasilanie 12 V DC.
+Tworzywo obudowy zawiera dodatek antymikrobowy (zgodność z ISO 22196), a samą obudowę przygotowano do codziennej dezynfekcji. Baza [WLC4690-HC-433](/produkt/datalogic-gryphon-wlc4690-hc-433) jest jednocześnie odbiornikiem radiowym i ładowarką indukcyjną. Odczyt sygnalizują wibracja, Green Spot i dźwięk. Optyka HP z dwiema matrycami czyta też kody wyświetlane na ekranach urządzeń mobilnych. Skaner waży 218 g z akumulatorem, ma klasę szczelności IP52 i znosi wielokrotne upadki na beton z 1,8 m. Naładowanie akumulatora Li-Ion 3250 mAh z 10 do 80% zajmuje 2 h, jeśli baza ma zasilanie 12 V DC.
 
 GM4600-HC-433K1-HP zawiera skaner, bazę WLC4690-HC-433 i biały [przewód USB-A 90A052278](/produkt/datalogic-usb-90a052278). GM4600-HC-433-HP obejmuje tylko skaner. Model bezprzewodowy ma 3 lata gwarancji Datalogic.
 
@@ -356,7 +356,7 @@ Skaner przesyła dane wyłącznie przez bazę STAR, która łączy się z komput
     },
     {
       question: 'Jakich środków użyć do dezynfekcji GM4600 HC?',
-      answer: 'Obudowy HC Datalogic są przeznaczone do częstej dezynfekcji silnymi preparatami, ale lista środków dla modeli bezprzewodowych nie jest publikowana. Preparat warto uzgodnić z TAKMA lub z Datalogic przed wdrożeniem. Baza ładuje skaner indukcyjnie, bez odsłoniętych styków.',
+      answer: 'Obudowy HC Datalogic są przeznaczone do częstej dezynfekcji silnymi preparatami. Preparat warto uzgodnić z TAKMA lub z Datalogic przed wdrożeniem. Baza ładuje skaner indukcyjnie, bez odsłoniętych styków.',
     },
     {
       question: 'Ile trwa ładowanie akumulatora GM4600 HC?',
@@ -433,7 +433,7 @@ Komputer podłącza się do bazy złączem USB-C, USB lub RS-232. Wymaga zasilan
   images: [PLACEHOLDER],
   imageDescriptions: ['Baza STAR 433 MHz Datalogic WLC4690-HC-433 w kolorze White HC do Gryphon GM4600 HC'],
   tags: ['healthcare'],
-  availability: 'unavailable',
+  availability: 'available',
   isNew: true,
   isBestseller: false,
   specifications: [
@@ -558,7 +558,7 @@ const usbWhite: Product = {
   id: 'datalogic-usb-90a052278',
   slug: 'datalogic-usb-90a052278',
   name: 'Przewód USB-A Datalogic 90A052278, biały, 2 m',
-  shortDescription: 'Datalogic 90A052278 — biały prosty przewód USB-A 2 m ze skanerów Gryphon 4600 HC: łączy skaner GD4690 HC lub GD4620 HC albo bazę WLC4690-HC z komputerem.',
+  shortDescription: 'Datalogic 90A052278 — biały prosty przewód USB-A 2 m z zestawów Gryphon 4600 HC: łączy skaner GD4690 HC lub GD4620 HC albo bazę WLC4690-HC z komputerem.',
   seoTitle: 'Przewód USB-A Datalogic 90A052278 biały do Gryphon 4600 HC',
   seoDescription: 'Biały przewód USB-A Datalogic 90A052278 (PVC, prosty, 2 m) do skanerów Gryphon GD4690 HC, GD4620 HC i baz WLC4690-HC. PN: 90A052278.',
   description: `Datalogic 90A052278 to przewód USB-A w białej izolacji, prosty, długość 2 m. Datalogic dołącza go do wszystkich zestawów Gryphon 4600 HC: [GD4690 HC](/produkt/datalogic-gryphon-gd4690-hc), [GD4620 HC](/produkt/datalogic-gryphon-gd4620-hc), [GBT4600 HC](/produkt/datalogic-gryphon-gbt4600-hc) i [GM4600 HC](/produkt/datalogic-gryphon-gm4600-hc).
@@ -635,7 +635,7 @@ const standWhite: Product = {
   seoDescription: 'Biała podstawka Datalogic STD-G041-WH (Stand, Auto) z elastycznym ramieniem dla przewodowych Gryphon GD4690 HC i GD4620 HC. PN: STD-G041-WH.',
   description: `STD-G041-WH to biała podstawka z ramieniem z serii akcesoriów Gryphon 4600. Utrzymuje przewodowy skaner [Gryphon GD4690 HC](/produkt/datalogic-gryphon-gd4690-hc) lub [GD4620 HC](/produkt/datalogic-gryphon-gd4620-hc) nad blatem. Po włożeniu do podstawki skaner odczytuje kody automatycznie, bez naciskania spustu.
 
-Podstawka nie ładuje skanera i nie przesyła danych. Nie zastępuje baz WLC4690-HC do modeli bezprzewodowych. Producent oznacza ją jako białą, bez oznaczenia HC. Skaner i przewód są sprzedawane osobno.`,
+Podstawka nie ładuje skanera i nie przesyła danych. Nie zastępuje baz WLC4690-HC do modeli bezprzewodowych. Skaner i przewód są sprzedawane osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'datalogic',
@@ -669,7 +669,7 @@ const holderWhite: Product = {
   seoDescription: 'Biały uchwyt Datalogic HLD-G041-WH (Holder, Desk/Wall Mount) do skanerów Datalogic Gryphon 4600 HC (GD4690 HC, GD4620 HC, GBT4600 HC lub GM4600 HC). PN: HLD-G041-WH.',
   description: `HLD-G041-WH to biały uchwyt do odkładania skanera Gryphon 4600. Można go postawić na biurku albo przykręcić do ściany. W uchwycie mieści się skaner przewodowy [GD4690 HC](/produkt/datalogic-gryphon-gd4690-hc) lub [GD4620 HC](/produkt/datalogic-gryphon-gd4620-hc) i bezprzewodowy [GBT4600 HC](/produkt/datalogic-gryphon-gbt4600-hc) lub [GM4600 HC](/produkt/datalogic-gryphon-gm4600-hc).
 
-Uchwyt nie ładuje skanera bezprzewodowego. Do ładowania służą bazy WLC4690-HC. Datalogic opisuje ten uchwyt jako biały, bez oznaczenia HC.`,
+Uchwyt nie ładuje skanera bezprzewodowego. Do ładowania służą bazy WLC4690-HC.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'datalogic',
@@ -727,8 +727,8 @@ Wersja NLS-HR3300-V2-S5-W ma biały przewód USB 2 m. NLS-HR3300-V2-SA-W dodaje 
     'Newland HR33 Marlin AI Corded White — widok z przodu na okno skanera i rękojeść',
     'Newland HR33 Marlin AI Corded White — widok z boku, rękojeść i przewód',
     'Newland HR33 Marlin AI Corded White — skaner położony na boku',
-    'Newland HR33 Marlin AI Corded White — widok z tyłu z logo Newland',
-    'Newland HR33 Marlin AI Corded White — widok z góry na głowicę i rękojeść',
+    'Newland HR33 Marlin AI Corded White — widok z góry na głowicę z logo Newland',
+    'Newland HR33 Marlin AI Corded White — widok z tyłu na głowicę i rękojeść',
   ],
   tags: ['healthcare'],
   availability: 'unavailable',
@@ -768,7 +768,7 @@ Wersja NLS-HR3300-V2-S5-W ma biały przewód USB 2 m. NLS-HR3300-V2-SA-W dodaje 
   ],
   variantAttributeTooltips: {
     'Przewód': 'Przewód dołączony do HR33 Marlin AI Corded White.\n\nUSB — biały prosty przewód 2 m; skaner pracuje jako klawiatura (USB-KBW), port szeregowy (USB-CDC) albo HID-POS.\n\nRS-232 — przewód 2 m z adapterem Multiplug do systemów z portem szeregowym.',
-    'Podstawka': 'Biała regulowana podstawka NLS-STD23-33-SA-W w zestawie.\n\nUstawienie od pionowego do płaskiego; montaż na biurku albo na ścianie.',
+    'Podstawka': 'Biała regulowana podstawka Newland w zestawie.\n\nUstawienie od pionowego do płaskiego; montaż na biurku albo na ścianie.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['newland-std23-33-sa-w'],
@@ -783,11 +783,11 @@ Wersja NLS-HR3300-V2-S5-W ma biały przewód USB 2 m. NLS-HR3300-V2-SA-W dodaje 
     },
     {
       question: 'Jak czyścić HR33 Marlin AI Corded White?',
-      answer: 'Newland nie publikuje osobnej listy środków dezynfekcyjnych dla serii White. Przed czyszczeniem skaner należy odłączyć. Środek i procedurę warto ustalić z TAKMA lub z Newland na podstawie zasad higieny placówki.',
+      answer: 'Przed czyszczeniem skaner należy odłączyć i wyłączyć. Przewodnik czyszczenia Newland dla skanerów ręcznych dopuszcza chusteczki dezynfekcyjne lub preparaty, których składnikiem aktywnym jest alkohol izopropylowy (co najmniej 70%), podchloryn sodu (roztwór 8,25%), nadtlenek wodoru, chlorek amonu lub łagodny płyn do naczyń. Preparat nanosi się na miękką ściereczkę i wyciska nadmiar; płyn nie może zbierać się przy oknie, spuście ani przewodzie. Okno skanera przeciera się ściereczką niepylącą zwilżoną wodą.',
     },
     {
       question: 'Którą konfigurację HR33 AI Corded White wybrać?',
-      answer: 'NLS-HR3300-V2-S5-W to skaner z białym przewodem USB. NLS-HR3300-V2-SA-W zawiera dodatkowo białą podstawkę regulowaną. NLS-HR3300-V2-S8-W ma przewód RS-232 z adapterem Multiplug do starszych systemów z portem szeregowym.',
+      answer: 'NLS-HR3300-V2-S5-W to skaner z białym przewodem USB. NLS-HR3300-V2-SA-W zawiera dodatkowo białą podstawkę regulowaną. NLS-HR3300-V2-S8-W ma przewód RS-232 z adapterem Multiplug do systemów z portem szeregowym.',
     },
     {
       question: 'Czy HR33 AI Corded White sygnalizuje odczyt wibracją?',
@@ -815,7 +815,7 @@ const hr33BtWhite: Product = {
   shortDescription: 'Newland HR33 Marlin AI Bluetooth White — bezprzewodowy skaner 2D dla ochrony zdrowia: powłoka antymikrobowa, Bluetooth 5.0 do 100 m, wymienny akumulator 2600 mAh.',
   seoTitle: 'Newland HR33 Marlin AI Bluetooth White — skaner do szpitala',
   seoDescription: 'Bezprzewodowy skaner Newland HR33 Marlin AI Bluetooth White dla szpitali: powłoka antymikrobowa, Bluetooth 5.0, pamięć ponad 16 000 kodów, akumulator 2600 mAh, stacja w zestawie. Skaner Bluetooth Newland HR33, HR33 BT White Newland. PN: NLS-HR3300-BT-V2-W.',
-  description: `Newland HR33 Marlin AI Bluetooth White to bezprzewodowy skaner 2D w białej obudowie z powłoką antymikrobową. Newland przeznacza go do zastosowań w ochronie zdrowia i wskazuje jako następcę wycofanego HR32 Marlin Bluetooth HC.
+  description: `Newland HR33 Marlin AI Bluetooth White to bezprzewodowy skaner 2D w białej obudowie z powłoką antymikrobową. Newland przeznacza go do zastosowań w ochronie zdrowia i wskazuje jako zalecaną alternatywę dla wycofanego HR32 Marlin Bluetooth HC.
 
 Dane trafiają przez Bluetooth 5.0 do stacji komunikacyjno-ładującej, do klucza sprzętowego (dongle) albo bezpośrednio do urządzenia z Bluetooth. W otwartej przestrzeni zasięg wynosi do 100 m. Dane można wysyłać od razu po odczycie albo gromadzić w pamięci i przesłać później. Pamięć mieści ponad 16 000 kodów o długości ponad 60 bajtów.
 
@@ -840,7 +840,7 @@ Matryca 1280 × 800 z wykrywaniem kodów przez AI odczytuje kody uszkodzone i od
     'Newland HR33 Marlin AI Bluetooth White w stacji dokującej — widok z boku',
     'Newland HR33 Marlin AI Bluetooth White — widok z boku na rękojeść z akumulatorem',
     'Newland HR33 Marlin AI Bluetooth White — skaner położony na boku',
-    'Newland HR33 Marlin AI Bluetooth White — widok z tyłu z logo Newland',
+    'Newland HR33 Marlin AI Bluetooth White — widok z góry na głowicę z logo Newland',
   ],
   tags: ['healthcare'],
   availability: 'available',
@@ -870,7 +870,7 @@ Matryca 1280 × 800 z wykrywaniem kodów przez AI odczytuje kody uszkodzone i od
     { name: 'W zestawie', value: 'Skaner, stacja komunikacyjno-ładująca, przewód USB' },
     { name: 'Gwarancja producenta', value: '5 lat' },
   ],
-  applications: ['Odczyt kodów przy łóżku pacjenta bez przewodu', 'Inwentaryzacja z zapisem kodów w pamięci', 'Następca HR32 Marlin Bluetooth HC'],
+  applications: ['Odczyt kodów przy łóżku pacjenta bez przewodu', 'Inwentaryzacja z zapisem kodów w pamięci', 'Zamiennik wycofanego HR32 Marlin Bluetooth HC'],
   variants: [
     { partNumber: 'NLS-HR3300-BT-V2-W', name: 'Skaner Bluetooth ze stacją dokującą i przewodem USB', attributes: {}, priceFrom: 1005.83, availability: 'available' },
   ],
@@ -887,11 +887,11 @@ Matryca 1280 × 800 z wykrywaniem kodów przez AI odczytuje kody uszkodzone i od
     },
     {
       question: 'Jak długo działa akumulator HR33 AI Bluetooth White?',
-      answer: 'Newland podaje co najmniej 15 h pracy ciągłej przy jednym odczycie co 6 s. Ładowanie trwa do 6 h. Akumulator 2600 mAh jest wymienny.',
+      answer: 'Przy jednym odczycie co 6 s akumulator wystarcza na co najmniej 15 h pracy ciągłej. Ładowanie trwa do 6 h. Akumulator 2600 mAh jest wymienny.',
     },
     {
       question: 'Jak dezynfekować HR33 Marlin AI Bluetooth White?',
-      answer: 'Obudowa ma powłokę antymikrobową. Newland nie podaje osobnej listy preparatów dla serii White, dlatego środek należy dobrać z TAKMA lub z producentem zgodnie z procedurami placówki.',
+      answer: 'Obudowa ma powłokę antymikrobową. Newland zaleca do skanerów ręcznych środki z nadtlenkiem wodoru, chlorkiem amonu, alkoholem izopropylowym (min. 70%), podchlorynem sodu (roztwór 8,25%) lub łagodnym płynem do naczyń, nanoszone na ściereczkę albo w postaci gotowych chusteczek. Przed włożeniem do stacji skaner musi całkowicie wyschnąć. Styki ładowania czyści się patyczkiem z bawełną zwilżonym alkoholem izopropylowym.',
     },
     {
       question: 'Czy HR33 AI Bluetooth White zastępuje HR32 Marlin Bluetooth HC?',
@@ -919,7 +919,7 @@ const hr23White: Product = {
   shortDescription: 'Newland HR23 Dorada AI Corded White — podstawowy skaner 2D z przewodem USB lub RS-232 dla placówek medycznych; obudowa z powłoką antymikrobową, sygnalizacja wibracją.',
   seoTitle: 'Newland HR23 Dorada AI Corded White — skaner kodów szpitalny',
   seoDescription: 'Newland HR23 Dorada AI Corded White: przewodowy skaner kodów 1D i 2D do placówek medycznych, antymikrobowa powłoka obudowy, AI, interfejs USB albo RS-232, 5 lat gwarancji. Skaner kodów kreskowych Newland HR23, HR23 Dorada White Newland. PN: NLS-HR2300-V2-S5-W, NLS-HR2300-V2-SA-W, NLS-HR2300-V2-S8-W.',
-  description: `Newland HR23 Dorada AI Corded White to podstawowy przewodowy skaner 2D z białej serii Newland dla ochrony zdrowia. Biała obudowa ma powłokę antymikrobową. Producent opisuje ten kolor jako odpowiedni do placówek medycznych, w których liczą się higiena i schludny wygląd.
+  description: `Newland HR23 Dorada AI Corded White to podstawowy przewodowy skaner 2D z białej serii Newland dla ochrony zdrowia. Biała obudowa ma powłokę antymikrobową. Biały kolor jest przeznaczony do placówek medycznych, w których liczą się higiena i schludny wygląd.
 
 HR23 korzysta z matrycy 800 × 640. Kod EAN-13 13 mil odczytuje z odległości 50–280 mm. Klasa szczelności obudowy to IP52. Odczytuje kody liniowe oraz PDF417, Micro PDF417, Data Matrix, QR, Micro QR i Aztec. Wykrywanie kodów przez AI pomaga przy kodach uszkodzonych, nieczytelnych, odblaskowych i na zaokrąglonych powierzchniach. Funkcja OCR standardowo rozpoznaje dane z paszportów.
 
@@ -943,7 +943,7 @@ Dostępne są trzy konfiguracje: NLS-HR2300-V2-S5-W z przewodem USB 2 m, NLS-HR2
     'Newland HR23 Dorada AI Corded White — okno skanera i rękojeść, widok z przodu',
     'Newland HR23 Dorada AI Corded White — profil skanera z przewodem',
     'Newland HR23 Dorada AI Corded White — skaner leżący na boku',
-    'Newland HR23 Dorada AI Corded White — tył obudowy z logo Newland',
+    'Newland HR23 Dorada AI Corded White — widok z góry, logo Newland na głowicy',
     'Newland HR23 Dorada AI Corded White w białej podstawce NLS-STD23-33-SA-W (podstawka w zestawie SA-W lub sprzedawana osobno)',
   ],
   tags: ['healthcare'],
@@ -980,7 +980,7 @@ Dostępne są trzy konfiguracje: NLS-HR2300-V2-S5-W z przewodem USB 2 m, NLS-HR2
   ],
   variantAttributeTooltips: {
     'Przewód': 'Sposób podłączenia HR23 Dorada AI Corded White do komputera.\n\nUSB — przewód 2 m; tryby USB-KBW, USB-CDC lub HID-POS.\n\nRS-232 — prosty przewód 2 m i adapter Multiplug dla urządzeń z portem szeregowym.',
-    'Podstawka': 'Zestaw z białą podstawką NLS-STD23-33-SA-W.\n\nPodstawkę można pochylić od pozycji pionowej do płaskiej i zamocować na ścianie.',
+    'Podstawka': 'Zestaw z białą regulowaną podstawką Newland.\n\nPodstawkę można pochylić od pozycji pionowej do płaskiej i zamocować na ścianie.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['newland-std23-33-sa-w'],
@@ -991,7 +991,7 @@ Dostępne są trzy konfiguracje: NLS-HR2300-V2-S5-W z przewodem USB 2 m, NLS-HR2
     },
     {
       question: 'Jakie środki można stosować do HR23 AI Corded White?',
-      answer: 'Obudowa ma powłokę antymikrobową, ale Newland nie publikuje listy środków dezynfekcyjnych dla białej serii. Dobór preparatu należy uzgodnić z TAKMA lub z Newland i z zasadami higieny placówki.',
+      answer: 'Dopuszczalne są preparaty na bazie łagodnego płynu do naczyń, podchlorynu sodu (roztwór 8,25%), alkoholu izopropylowego (min. 70%), chlorku amonu lub nadtlenku wodoru. Tworzywo obudowy niszczą m.in. aceton, ketony, etery, toluen, benzen i zasadowe roztwory wodne lub alkoholowe. Środka nie nalewa się bezpośrednio na skaner, a przed ponownym użyciem obudowa musi wyschnąć.',
     },
     {
       question: 'Czy do HR23 AI Corded White można dokupić podstawkę?',
@@ -1042,7 +1042,7 @@ Akumulator 2600 mAh zapewnia co najmniej 15 h pracy ciągłej. Po zwolnieniu zat
     'Newland HR23 Dorada AI Bluetooth White — biały skaner bezprzewodowy, ujęcie z przodu pod kątem',
     'Newland HR23 Dorada AI Bluetooth White — przód z oknem skanera',
     'Newland HR23 Dorada AI Bluetooth White — widok z boku',
-    'Newland HR23 Dorada AI Bluetooth White — tył obudowy',
+    'Newland HR23 Dorada AI Bluetooth White — ujęcie z góry na głowicę z logo Newland',
     'Newland HR23 Dorada AI Bluetooth White w stacji dokującej z zestawu — ujęcie z przodu',
     'Newland HR23 Dorada AI Bluetooth White w stacji dokującej — ujęcie z boku',
   ],
@@ -1088,7 +1088,7 @@ Akumulator 2600 mAh zapewnia co najmniej 15 h pracy ciągłej. Po zwolnieniu zat
     },
     {
       question: 'Jak czyścić HR23 Dorada AI Bluetooth White?',
-      answer: 'Newland nie wydał osobnej listy środków dla białej serii. Rodzaj preparatu najlepiej potwierdzić z TAKMA lub z Newland, uwzględniając procedury higieniczne placówki.',
+      answer: 'Skaner wyłącza się i przeciera gotową chusteczką dezynfekcyjną albo miękką ściereczką z preparatem zawierającym nadtlenek wodoru, alkohol izopropylowy (co najmniej 70%), chlorek amonu, podchloryn sodu (roztwór 8,25%) lub łagodny płyn do naczyń. Po użyciu podchlorynu sodu pozostałości usuwa się ściereczką zwilżoną alkoholem. Skaner wkłada się do stacji dopiero po wyschnięciu.',
     },
     {
       question: 'Co zawiera NLS-HR2300-BT-V2-W?',

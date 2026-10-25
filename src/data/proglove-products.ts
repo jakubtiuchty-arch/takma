@@ -1163,8 +1163,7 @@ export const progloveProducts: Product[] = [
     ],
     "relatedProducts": [
       "proglove-mark-display",
-      "proglove-mark-3",
-      "proglove-lana"
+      "proglove-mark-3"
     ],
     "downloads": [
       {
@@ -1316,7 +1315,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "name": "Ładowanie",
-        "value": "Przewodem USB-C ok. 150 min; w stacji 4-gniazdowej ProGlove ok. 180 min (temperatura pokojowa); temperatura ładowania 0–45 °C"
+        "value": "Przewodem USB-C ok. 150 min; w stacji 4-gniazdowej ProGlove ok. 180 min (temperatura pokojowa); temperatura ładowania urządzenia 0–45 °C, w stacji 4-gniazdowej 5–40 °C"
       },
       {
         "name": "Temperatura pracy",
@@ -1385,9 +1384,10 @@ export const progloveProducts: Product[] = [
     ],
     "variantAttributeTooltips": {},
     "compatibleAccessories": [],
-    "relatedAccessories": [],
+    "relatedAccessories": [
+      "proglove-mai"
+    ],
     "relatedProducts": [
-      "proglove-mai",
       "zebra-wt5400",
       "zebra-wt6400"
     ],
@@ -1416,11 +1416,11 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Jak ładuje się LANA?",
-        "answer": "Przez gniazdo USB-C w ok. 150 minut albo w 4-gniazdowej stacji ProGlove, przeznaczonej tylko do LANA, w ok. 180 minut. Producent zaleca zasilacz USB-C zgodny ze standardem Power Delivery 3.0. Stację 4-gniazdową przygotujemy na zapytanie."
+        "answer": "Przez gniazdo USB-C w ok. 150 minut albo w 4-gniazdowej stacji ProGlove, przeznaczonej tylko do LANA, w ok. 180 minut. Do ładowania przez USB-C zalecany jest zasilacz zgodny ze standardem Power Delivery 3.0. Stację 4-gniazdową przygotujemy na zapytanie."
       },
       {
         "question": "Czy LANA wystarczy na kilka zmian?",
-        "answer": "Bateria 2500 mAh pozwala na pracę do 11 godzin, zależnie od aplikacji. Jest wbudowana, dlatego przy pracy na trzy zmiany ProGlove zaleca doładowywanie urządzenia w przerwach, zamiast wymiany baterii."
+        "answer": "Bateria 2500 mAh pozwala na pracę do 11 godzin, zależnie od aplikacji. Jest wbudowana, dlatego przy pracy na trzy zmiany zalecane jest doładowywanie urządzenia w przerwach, zamiast wymiany baterii."
       },
       {
         "question": "Czy ekran LANA można obsługiwać w rękawicach?",
@@ -1428,7 +1428,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Gdzie nie należy używać LANA?",
-        "answer": "LANA nie jest przeznaczona do stref zagrożonych wybuchem, do zastosowań medycznych ani jako środek ochrony indywidualnej. Producent przewiduje pracę przeszkolonych pracowników w kontrolowanym środowisku przemysłowym lub handlowym."
+        "answer": "LANA nie jest przeznaczona do stref zagrożonych wybuchem, do zastosowań medycznych ani jako środek ochrony indywidualnej. Jest przeznaczona dla przeszkolonych pracowników w kontrolowanym środowisku przemysłowym lub handlowym."
       },
       {
         "question": "Jaka jest gwarancja na LANA?",

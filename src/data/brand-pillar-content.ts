@@ -448,7 +448,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       'honeywell-px940',
       'honeywell-ck67',
       'honeywell-ct47',
-      'honeywell-xenon-ultra-1960g',
+      'honeywell-xenon-ultra-1960',
       'honeywell-granit-xp-1990ixr',
       'honeywell-voyager-xp-1470g',
     ],
@@ -501,7 +501,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       {
         name: 'Retail i e-commerce',
         description: 'Skanery Voyager i Xenon na kasie (gwarancja 5 lat). Terminale dotykowe CT do inwentaryzacji. Drukarki biurkowe PC do etykiet cenowych i wysyłkowych.',
-        products: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g), [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g), [PC42e-t](/produkt/honeywell-pc42e-t)',
+        products: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g), [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960), [PC42e-t](/produkt/honeywell-pc42e-t)',
       },
       {
         name: 'Produkcja',
@@ -511,7 +511,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       {
         name: 'Ochrona zdrowia',
         description: 'Skanery healthcare z obudową odporną na środki dezynfekcyjne. Terminale z certyfikacją UL/IEC do środowisk medycznych. Druk opasek identyfikacyjnych pacjentów.',
-        products: '[Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g), [CT32](/produkt/honeywell-ct32)',
+        products: '[Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960), [CT32](/produkt/honeywell-ct32)',
       },
       {
         name: 'Transport i serwis terenowy',
@@ -608,7 +608,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         question: 'Jaki skaner Honeywell do kasy lub apteki?',
-        answer: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) — ręczny 2D USB, retail i apteka, gwarancja 5 lat. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (od 569 zł) — szybszy imaging; dla szpitali jest [Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) z obudową przygotowaną do dezynfekcji. [Genesis XP 7680g](/produkt/honeywell-genesis-xp-7680g) — prezentacyjny hands-free, skanuje do 15 kodów jednocześnie. Do apteki z recepturą elektroniczną: Xenon Ultra (czyta kody 2D na ekranach telefonów).',
+        answer: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) — ręczny 2D USB, retail i apteka, gwarancja 5 lat. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960) (od 569 zł) — szybszy imaging; dla szpitali jest [Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) z obudową przygotowaną do dezynfekcji. [Genesis XP 7680g](/produkt/honeywell-genesis-xp-7680g) — prezentacyjny hands-free, skanuje do 15 kodów jednocześnie. Do apteki z recepturą elektroniczną: Xenon Ultra (czyta kody 2D na ekranach telefonów).',
       },
       {
         question: 'Czym różnią się skanery Voyager, Xenon i Granit?',
