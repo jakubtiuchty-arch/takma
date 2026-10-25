@@ -81829,7 +81829,7 @@ Ekosystem akcesoriów obejmuje uchwyt nadgarstkowy do pracy bez użycia rąk (we
       },
       {
         question: 'Czy CT37 nadaje się do środowisk wymagających dezynfekcji?',
-        answer: 'CT37 ma szczelność IP65 + IP68, więc znosi mycie i wilgoć, a ekran obsługuje pracę w rękawiczkach. Do zastosowań medycznych Honeywell oferuje osobną wersję [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) w obudowie HC.',
+        answer: 'Tak. Każda konfiguracja CT37 ma obudowę przygotowaną do dezynfekcji (Disinfectant Ready Housing) i szczelność IP65 oraz IP68, a ekran obsługuje pracę w rękawiczkach. Dla placówek ochrony zdrowia Honeywell oferuje wersję [Honeywell CT37 HC](/produkt/honeywell-ct37-hc): białą z niebieskimi akcentami, ze skanerem N6700 i z osobnymi akcesoriami HC.',
       },
       {
         question: 'Jak długo CT37 będzie wspierany aktualizacjami Androida?',

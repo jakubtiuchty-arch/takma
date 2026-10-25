@@ -38,10 +38,10 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
     '/images/products/CT37-X0N-56S10HG-4.png',
   ],
   imageDescriptions: [
-    'Honeywell CT37 HC — dwa terminale w białej obudowie HC: tył z oknem skanera i przód z ekranem',
-    'Honeywell CT37 HC — tył białej obudowy z oknem skanera N6700, aparatem i pokrywą baterii',
+    'Honeywell CT37 HC — dwa terminale w białej obudowie HC: tył z modułem aparatu i przód z ekranem',
+    'Honeywell CT37 HC — tył białej obudowy z modułem aparatu i pokrywą baterii',
     'Honeywell CT37 HC — biały terminal dla służby zdrowia, widok z przodu pod kątem na ekran 6 cali i niebieski przycisk skanowania',
-    'Honeywell CT37 HC — ujęcie z góry na okno skanera z niebieską ramką, przycisk zasilania i złącza na spodzie',
+    'Honeywell CT37 HC — dwa terminale: górna krawędź z oknem skanera N6700 w niebieskiej ramce i przyciskiem zasilania, dolna krawędź z portem USB-C',
   ],
   tags: ['healthcare'],
   availability: 'available',
@@ -132,7 +132,7 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
     },
     {
       question: 'Jak dezynfekować obudowę CT37 HC?',
-      answer: 'Obudowę i złącza zaprojektowano do częstego kontaktu z zatwierdzonymi środkami czyszczącymi stosowanymi w ochronie zdrowia. Honeywell zatwierdził 46 takich środków i publikuje ich wykaz w przewodniku czyszczenia obudów Disinfectant Ready Housing. Szara osłona CT37-PB-GRY nie jest przygotowana do dezynfekcji. Do modelu HC producent zaleca zaślepkę portu USB-C CT37-USBC-PLUG-5PK.',
+      answer: 'Obudowę i złącza zaprojektowano do częstego kontaktu z zatwierdzonymi środkami czyszczącymi stosowanymi w ochronie zdrowia. Honeywell zatwierdził dla obudowy CT37 HC 46 takich środków. Przed wdrożeniem należy porównać środki stosowane w placówce z aktualnym wykazem producenta. Szara osłona CT37-PB-GRY nie jest przygotowana do dezynfekcji. Do modelu HC producent zaleca zaślepkę portu USB-C CT37-USBC-PLUG-5PK.',
     },
     {
       question: 'Którą konfigurację CT37 HC wybrać: Wi-Fi czy 5G?',
@@ -148,7 +148,7 @@ Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i
     },
     {
       question: 'Jak długo CT37 HC otrzyma aktualizacje i jaka jest gwarancja?',
-      answer: 'Honeywell gwarantuje każdą wersję Androida od 14 do 18, z zastrzeżeniem potwierdzenia wykonalności technicznej przez Qualcomm. Gwarancja fabryczna obejmuje 12 miesięcy. Honeywell oferuje też trzyletnie kontrakty serwisowe Edge Services.',
+      answer: 'Honeywell gwarantuje każdą wersję Androida od 14 do 18, z zastrzeżeniem potwierdzenia wykonalności technicznej przez Qualcomm. Gwarancja fabryczna obejmuje 12 miesięcy. Honeywell oferuje też kontrakty serwisowe Edge Services Gold i Platinum na 3 lub 5 lat.',
     },
     {
       question: 'Jakie inne terminale dla służby zdrowia są w ofercie?',

@@ -442,7 +442,7 @@ export const honeywellIh45Accessories: Product[] = [
       "kable-zasilacze-terminali"
     ],
     "manufacturerId": "honeywell",
-    "priceFrom": 54.23,
+    "priceFrom": 54.49,
     "availability": "available",
     "isNew": true,
     "isBestseller": false,
@@ -482,6 +482,6 @@ export const honeywellIh45Accessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-19",
-    "updatedAt": "2026-10-19"
+    "updatedAt": "2026-10-25"
   }
 ]
