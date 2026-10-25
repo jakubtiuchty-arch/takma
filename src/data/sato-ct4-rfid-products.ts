@@ -4,10 +4,10 @@ const id = 'sato-ct4-lx-rfid'
 const support = 'https://www.satoeurope.com/resources/ct4-lx.php'
 const manual = 'https://www.manual.sato-global.com/printer/ct4-lx/main/index.html'
 const accessories = [
-  { key: 'wifi', pn: 'WWCT0505N', name: 'Moduł Wi-Fi i Bluetooth SATO CT4-LX', description: 'Moduł WWCT0505N dodaje Wi-Fi 802.11a/b/g/n/ac i Bluetooth 4.1 do drukarki SATO CT4-LX. Pasuje także do wersji UHF RFID. Warianty WWCT03242ZWAR i WWCT04242ZWAR mają już tę łączność i nie wymagają zakupu modułu. Montaż i konfigurację zleć serwisowi.' },
-  { key: 'rtc', pn: 'WWCT0503N', name: 'Zegar RTC SATO CT4-LX', description: 'Zestaw WWCT0503N dodaje zegar czasu rzeczywistego do SATO CT4-LX. Umożliwia druk daty i godziny na podstawie zegara urządzenia w odpowiednio przygotowanym szablonie. Warianty z końcówką ZNAR lub ZWAR mają już RTC. Montaż zleć serwisowi.' },
-  { key: 'serial', pn: 'WWCT0506N', name: 'Interfejs RS-232C SATO CT4-LX', description: 'Zestaw WWCT0506N dodaje port szeregowy RS-232C do SATO CT4-LX, także w wersji UHF RFID. Służy do połączenia z urządzeniem obsługującym ten interfejs. Dobierz osobno przewód i parametry transmisji do urządzenia nadrzędnego. Montaż zleć serwisowi.' },
-  { key: 'dispenser', pn: 'WWCT0502N', name: 'Odklejak etykiet SATO CT4-LX', description: 'Zestaw WWCT0502N oddziela etykietę od podkładu w drukarce SATO CT4-LX. Nie jest obcinakiem ani automatycznym aplikatorem. Przy etykietach RFID potwierdź długość, sztywność i położenie wkładki, a następnie sprawdź podawanie i kodowanie. Montaż zleć serwisowi.' },
+  { key: 'wifi', hc: true, pn: 'WWCT0505N', name: 'Moduł Wi-Fi i Bluetooth SATO CT4-LX', description: 'Moduł WWCT0505N dodaje Wi-Fi 802.11a/b/g/n/ac i Bluetooth 4.1 do drukarki SATO CT4-LX. Pasuje także do wersji UHF RFID. Warianty WWCT03242ZWAR i WWCT04242ZWAR mają już tę łączność i nie wymagają zakupu modułu. Montaż i konfigurację zleć serwisowi.' },
+  { key: 'rtc', hc: true, pn: 'WWCT0503N', name: 'Zegar RTC SATO CT4-LX', description: 'Zestaw WWCT0503N dodaje zegar czasu rzeczywistego do SATO CT4-LX. Umożliwia druk daty i godziny na podstawie zegara urządzenia w odpowiednio przygotowanym szablonie. Warianty z końcówką ZNAR lub ZWAR mają już RTC. Montaż zleć serwisowi.' },
+  { key: 'serial', hc: true, pn: 'WWCT0506N', name: 'Interfejs RS-232C SATO CT4-LX', description: 'Zestaw WWCT0506N dodaje port szeregowy RS-232C do SATO CT4-LX, także w wersji UHF RFID. Służy do połączenia z urządzeniem obsługującym ten interfejs. Dobierz osobno przewód i parametry transmisji do urządzenia nadrzędnego. Montaż zleć serwisowi.' },
+  { key: 'dispenser', hc: false, pn: 'WWCT0502N', name: 'Odklejak etykiet SATO CT4-LX', description: 'Zestaw WWCT0502N oddziela etykietę od podkładu w drukarce SATO CT4-LX. Nie jest obcinakiem ani automatycznym aplikatorem. Przy etykietach RFID potwierdź długość, sztywność i położenie wkładki, a następnie sprawdź podawanie i kodowanie. Montaż zleć serwisowi.' },
 ]
 export const satoCt4RfidAccessories: Product[] = accessories.map(a => ({
   id: `sato-ct4-${a.key}`, slug: `sato-ct4-lx-${a.pn.toLowerCase()}`, name: `${a.name} — ${a.pn}`,
@@ -16,8 +16,8 @@ export const satoCt4RfidAccessories: Product[] = accessories.map(a => ({
   seoTitle: `${a.name} ${a.pn} | TAKMA`, seoDescription: `${a.name}, PN ${a.pn}. Rozbudowa drukarki CT4-LX. Sprawdź zgodność, cenę i dostępność w TAKMA.`,
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'retail'],
   images: [`/images/products/sato-ct4-${a.key}.webp`], imageDescriptions: [`${a.name} — ${a.pn}, rysunek katalogowy`],
-  specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: 'SATO CT4-LX, także UHF RFID; dobór do wyposażenia i numeru seryjnego' }],
-  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
+  specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: a.hc ? 'SATO CT4-LX, także UHF RFID, oraz SATO CT4-LX-HC; dobór do wyposażenia i numeru seryjnego' : 'SATO CT4-LX, także UHF RFID; dobór do wyposażenia i numeru seryjnego' }],
+  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: a.hc ? [id, 'sato-ct4-lx-hc'] : [id],
   downloads: [{ name: 'Katalog części CT4-LX / HC4-LX (EN)', type: 'manual', url: '/downloads/sato-ct4-lx-czesci-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
