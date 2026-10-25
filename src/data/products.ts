@@ -50805,7 +50805,7 @@ const datalogicMemorAccessories: Product[] = [
     specifications: [
       { name: 'Typ', value: 'Zasilacz sieciowy AC/DC' },
       { name: 'Wymaga', value: 'Kabel zasilający 95ACC1113 (sprzedawany osobno)' },
-      { name: 'Kompatybilność', value: 'Stacje dokujące i ładowarki Memor 12/17/30/35' },
+      { name: 'Kompatybilność', value: 'Stacje dokujące i ładowarki Memor 12/17/30/35; białe stacje Memor 12 HC / 17 HC 94A150127 i 94A150141' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -51296,7 +51296,7 @@ const datalogicSkorpioAccessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Typ', value: 'Kabel USB-A do USB-C' },
-      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5' },
+      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5; stacja Memor 12 HC / 17 HC 94A150126 z zasilaczem 94ACC0383' },
     ],
     applications: [],
     compatibleAccessories: [],
