@@ -4,6 +4,11 @@ import uniformBounds from '@/data/product-image-uniform-bounds.json'
 
 /** Match the front HC terminal photos to the visible height of Zebra HC55. */
 export function getProductImageScaleStyle(src: string): CSSProperties | undefined {
+  // Original Zebra photographs have a wide white canvas. Cover crops only that
+  // canvas, preserving the complete device and the established visible height.
+  if (/\/hc(?:20|25|50|55)-front-original\.jpg$/.test(src)) {
+    return { objectFit: 'cover', transform: 'scale(0.855) translateY(-1%)', transformOrigin: 'center' }
+  }
   const heights: Record<string, number> = {
     '/images/products/ct37-hc-front.png': 1089 / 1254,
     '/images/products/memor12-hc-front.png': 1146 / 1254,

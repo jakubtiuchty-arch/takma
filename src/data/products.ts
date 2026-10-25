@@ -28069,7 +28069,7 @@ Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Worksta
     manufacturerId: 'zebra',
     priceFrom: 3626.4,
     images: [
-      '/images/products/WLMT0-H20B6BCJ1-A6.png',
+      '/images/products/hc20-front-original.jpg',
       '/images/products/hc20_2.png',
       '/images/products/hc20_3.png',
       '/images/products/hc20_4.png',
@@ -28194,7 +28194,7 @@ Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmow
     manufacturerId: 'zebra',
     priceFrom: 3503.63,
     images: [
-      '/images/products/WCMTB-H25B6BCJ1-A6.png',
+      '/images/products/hc25-front-original.jpg',
       '/images/products/hc20_2.png',
     ],
     imageDescriptions: [
@@ -28326,7 +28326,7 @@ Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkow
     manufacturerId: 'zebra',
     priceFrom: 5691.59,
     images: [
-      '/images/products/WLMT0-H50D8BBK1-A6.png',
+      '/images/products/hc50-front-original.jpg',
       '/images/products/WLMT0-H50D8BBK1-A6-2.png',
       '/images/products/hc20_2.png',
     ],
@@ -28454,7 +28454,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     manufacturerId: 'zebra',
     priceFrom: 5943.95,
     images: [
-      '/images/products/WCMTB-H55D8BBK1-A6.png',
+      '/images/products/hc55-front-original.jpg',
       '/images/products/hc20_2.png',
     ],
     imageDescriptions: [
