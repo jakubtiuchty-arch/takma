@@ -105,8 +105,7 @@ export interface Product {
   subcategoryIds?: string[]
   manufacturerId: string
   priceFrom?: number
-  /** Karta sprzedażowa bez ceny, stanu i koszyka: konfigurację wyceniamy po zapytaniu („Zapytaj o cenę”),
-   *  nawet gdy API zwraca cenę (np. edycje Enterprise) — patrz lib/licencje. */
+  /** Karta sprzedażowa bez ceny i stanu: konfigurację wyceniamy po zapytaniu. */
   quoteOnly?: boolean
   /** Zapowiedź producenta: karta bez ceny, PN i koszyka, poza feedami; plakietka „Zapowiedź” zamiast „Na zapytanie”. Nie wymaga quoteOnly. */
   comingSoon?: boolean
