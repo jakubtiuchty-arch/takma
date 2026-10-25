@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRightIcon } from '@/components/ui/Icons'
 import s from './BrandBanner.module.css'
 
 export type BannerBrand = 'proglove' | 'sunmi'
@@ -59,16 +60,6 @@ export default function BrandBanner({ brand }: { brand: BannerBrand }) {
     else el.pause()
   }
 
-  function selectChapter(index: number) {
-    const el = video.current
-    if (!el) return
-    setLoaded(true)
-    setChapter(index)
-    el.currentTime = index * 4
-    manuallyPaused.current = false
-    el.play().catch(() => {})
-  }
-
   return <div className={`${s.banner} ${s[brand]}`}>
     <div className={s.visual}>
       <video ref={video} src={loaded ? `/video/brands/${brand}-home.mp4` : undefined}
@@ -83,14 +74,11 @@ export default function BrandBanner({ brand }: { brand: BannerBrand }) {
         <div className={s.brand}><Image src={`/images/home-brands/${brand}-logo.svg`} alt={brand === 'proglove' ? 'ProGlove' : 'SUNMI'} width={156} height={36} /><span>{c.eyebrow}</span></div>
         <h2>{c.lines.map((line, i) => <span key={line} className={(brand === 'sunmi' ? chapter === i : i === 2) ? s.highlight : ''}>{line}</span>)}</h2>
         <p>{c.description}</p>
-        <Link className={s.cta} href={c.href}>{c.cta}<span aria-hidden="true">↗</span></Link>
+        <Link className={s.cta} href={c.href}>{c.cta}<ArrowRightIcon size={16} /></Link>
       </div>
     </div>
     <div className={s.bottom}>
-      <div className={s.chapters} aria-label={brand === 'sunmi' ? 'Wybierz fragment animacji SUNMI' : 'Zastosowania ProGlove'}>
-        {c.chapters.map((label, i) => brand === 'sunmi' ? <button type="button" key={label} aria-pressed={chapter === i} onClick={() => selectChapter(i)}><span>0{i + 1}</span>{label}</button> : <span key={label}>{label}</span>)}
-      </div>
-      <button className={s.pause} type="button" onClick={toggle} aria-label={`${playing ? 'Zatrzymaj' : 'Odtwórz'} animację ${brand === 'proglove' ? 'ProGlove' : 'SUNMI'}`}>{playing ? 'Ⅱ' : '▶'}<span>{playing ? 'Pauza' : 'Odtwórz'}</span></button>
+      {brand === 'proglove' && <button className={s.pause} type="button" onClick={toggle} aria-label={`${playing ? 'Zatrzymaj' : 'Odtwórz'} animację ${brand === 'proglove' ? 'ProGlove' : 'SUNMI'}`}>{playing ? 'Ⅱ' : '▶'}<span>{playing ? 'Pauza' : 'Odtwórz'}</span></button>}
     </div>
   </div>
 }

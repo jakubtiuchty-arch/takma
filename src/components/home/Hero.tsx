@@ -8,6 +8,7 @@ import { Button } from '@/components/ui'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 import { ZEBRA_CEE_PROMO } from '@/data/promos'
 import BrandBanner, { type BannerBrand } from './BrandBanner'
+import GetacTabletBanner from './GetacTabletBanner'
 
 interface ProductSlide {
   type: 'product'
@@ -57,7 +58,7 @@ interface PromoSaleSlide {
   variant?: string
 }
 
-interface BrandSlide { type: 'brand'; brand: BannerBrand; hold: number }
+interface BrandSlide { type: 'brand'; brand: BannerBrand | 'getac'; hold: number }
 
 type HeroSlide = InfoSlide | ProductSlide | MaterialsSlide | PromoSaleSlide | BrandSlide
 
@@ -67,6 +68,7 @@ const slides: HeroSlide[] = [
   { type: 'info' },
   { type: 'brand', brand: 'proglove', hold: 14000 },
   { type: 'brand', brand: 'sunmi', hold: 14000 },
+  { type: 'brand', brand: 'getac', hold: 14000 },
   {
     type: 'product',
     image: '/images/hero-colorworks-c8000e-v2.webp',
@@ -86,17 +88,6 @@ const slides: HeroSlide[] = [
   { type: 'materials' },
   {
     type: 'product',
-    image: '/images/zebra-tc501-baner-v2.webp',
-    lightArtifacts: true,
-    name: 'Zebra TC501',
-    slug: 'zebra-tc501',
-    tagline: 'Flagowy kolektor danych z AI, RFID UHF i Wi-Fi 7. Ekran AMOLED 6" 1500 nit, skaner AC670 do 30 m i Android 15 ze wsparciem do v19.',
-    imageType: 'lifestyle',
-    imageClassName: 'object-cover object-left',
-    bgColor: '#11150f',
-  },
-  {
-    type: 'product',
     image: '/images/hero-magicard-300.webp',
     video: '/video/hero-magicard-300.mp4',
     noZoom: true,
@@ -106,28 +97,6 @@ const slides: HeroSlide[] = [
     imageType: 'packshot',
     noOverlay: true,
     bgColor: '#08080c',
-  },
-  {
-    type: 'product',
-    image: '/images/hero-ct70.webp',
-    name: 'Honeywell CT70',
-    slug: 'honeywell-ct70',
-    tagline: 'Pierwszy terminal enterprise z Wi-Fi 7 i Bluetooth 6.0. Ekran 6" FHD+, ladowanie bezprzewodowe Qi, Android 15-19.',
-    imageClassName: 'object-contain object-[70%_center]',
-    imageType: 'packshot',
-    noOverlay: true,
-    bgColor: '#0a0e10',
-  },
-  {
-    type: 'product',
-    image: '/images/hero-ds8208.webp',
-    name: 'Zebra DS8288',
-    slug: 'zebra-ds8288',
-    tagline: 'Bezprzewodowy skaner premium 2D z sensorem 2 MP i Bluetooth 5.2. Ladowanie indukcyjne, FIPS 140-3, gwarancja 3 lata.',
-    imageClassName: 'object-contain object-[75%_center]',
-    imageType: 'packshot',
-    noOverlay: true,
-    bgColor: '#191e22',
   },
 ]
 
@@ -176,8 +145,8 @@ export default function Hero() {
   const isImageLeft = slide.type === 'product' && slide.imageLeft
   const sectionBg = slide.type === 'promoSale' ? '#0a0d08' : slide.type === 'materials' ? '#0d0d0d' : (slide.type === 'product' && slide.bgColor) ? slide.bgColor : '#0c1525'
 
-  if (slide.type === 'brand') return <section className="relative w-full" aria-label={slide.brand === 'proglove' ? 'ProGlove' : 'SUNMI'}>
-    <BrandBanner key={slide.brand} brand={slide.brand} />
+  if (slide.type === 'brand') return <section className="relative w-full" aria-label={slide.brand === 'getac' ? 'Tablety Getac' : slide.brand === 'proglove' ? 'ProGlove' : 'SUNMI'}>
+    {slide.brand === 'getac' ? <GetacTabletBanner /> : <BrandBanner key={slide.brand} brand={slide.brand} />}
     <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 hidden sm:flex items-center gap-2">
       {slides.map((_, i) => <button key={i} onClick={() => goTo(i)} aria-label={`Slajd ${i + 1}`} className={clsx('rounded-full transition-all duration-300', i === current ? 'w-8 h-2.5 bg-[#A8F000]' : 'w-2.5 h-2.5 bg-gray-400/60 hover:bg-gray-300')} />)}
     </div>
