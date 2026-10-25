@@ -54151,7 +54151,7 @@ Kompatybilna z modelami: Honeywell PC45d, PC45t, PC43d, PC43t oraz PD43. Montaż
       { name: 'Part Number', value: '225-783-001' },
       { name: 'Typ', value: 'Głowica drukująca (printhead)' },
       { name: 'Rozdzielczość', value: '203 dpi (8 dots/mm)' },
-      { name: 'Kompatybilność', value: 'Honeywell PC45d, PC45t, PC43d, PC43t, PD43' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d, PC45d Healthcare, PC45t, PC43d, PC43t, PD43' },
     ],
     applications: ['Wymiana zużytej głowicy', 'Serwis drukarki Honeywell PC45'],
     compatibleAccessories: [],
@@ -54210,7 +54210,7 @@ Wymiana wałka przywraca jakość druku i zapobiega problemom z podawaniem etyki
     specifications: [
       { name: 'Part Number', value: '205-187-002' },
       { name: 'Typ', value: 'Wałek dociskowy (platen roller)' },
-      { name: 'Kompatybilność', value: 'Honeywell PC45d (Direct Thermal)' },
+      { name: 'Kompatybilność', value: 'Honeywell PC45d i PC45d Healthcare (Direct Thermal)' },
     ],
     applications: ['Wymiana zużytego wałka', 'Serwis drukarki Honeywell PC45d'],
     compatibleAccessories: [],
