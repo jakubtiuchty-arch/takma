@@ -696,6 +696,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'CipherLab', manufacturer: 'cipherlab' },
         { value: 'SUNMI', manufacturer: 'sunmi' },
         { value: 'Bluebird', manufacturer: 'bluebird' },
+        { value: 'ProGlove', manufacturer: 'proglove' },
       ],
     },
     { specKey: 'system-terminala', label: 'System operacyjny', description: 'Android obsługuje zgodne aplikacje mobilne. cOS wymaga aplikacji zadaniowej dla kolektora; nie uruchamia aplikacji Android.', derived: [{value: 'Android', pattern: 'Android', specs: ['System operacyjny', 'System']}, {value: 'cOS', pattern: 'cOS', specs: ['System operacyjny']}] },

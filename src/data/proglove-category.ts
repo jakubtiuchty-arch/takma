@@ -52,6 +52,7 @@ export const progloveCategory: BrandCategoryRichContent = {
     items: [
       { title: 'Mocowanie i stacja są wymagane', text: 'Skanery LEO i MARK nie mają własnego spustu ani ładowarki. Do każdego dobiera się jedno mocowanie i stację ładującą. MAI wymaga opaski Hand Strap Gen 2 i stacji Gen 2; skanowanie można w nim przypisać także do przycisku lub ekranu.' },
       { title: 'Mocowania w opakowaniach', text: 'Index Trigger i Hand Strap są sprzedawane po 3 lub 10 sztuk, a Reel po 2 sztuki. Index Trigger występuje w rozmiarach S, M i L oraz w wersjach na lewą i prawą rękę.' },
+      { title: 'Komputer ProGlove LANA', text: 'Gdy pracownik potrzebuje większego ekranu niż na skanerze, ProGlove oferuje [LANA](/produkt/proglove-lana): przenośny komputer z Androidem 13 i ekranem 3,54″. Ma fabrycznie zainstalowaną aplikację INSIGHT Mobile, a skanery ProGlove, np. MAI, łączą się z nim bez bramki Gateway.' },
     ],
   },
   comparisons: [

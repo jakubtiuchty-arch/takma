@@ -12,9 +12,10 @@ export const wearableTerminalCategory: Subcategory = {
   "icon": "smartphone",
   "productIds": [
     "zebra-wt6400",
-    "zebra-wt5400"
+    "zebra-wt5400",
+    "proglove-lana"
   ],
-  "productCount": 2
+  "productCount": 3
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
@@ -55,7 +56,7 @@ export const wearableTerminalContent: SubcategoryRichContent = {
   },
   definition: {
     heading: 'Co to jest terminal naramienny?',
-    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa modele Zebra. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba modele nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
+    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa terminale Zebra i komputer ProGlove LANA. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba terminale Zebra nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). [ProGlove LANA](/produkt/proglove-lana) z ekranem 3,54 cala i masą 123 g nosi się na przedramieniu w mocowaniu Arm Mount albo w kieszeni, a kody odczytują w nim skanery noszone ProGlove. Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal naramienny?',

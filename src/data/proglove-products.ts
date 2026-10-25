@@ -1,6 +1,7 @@
 import type { Product } from './products'
 
 // Skanery noszone ProGlove (24.10.2026). Ceny i stany na karcie aktualizuje /api/stock; priceFrom to wartość startowa.
+// ProGlove LANA (25.10.2026) to przenośny komputer z Androidem, nie skaner: kategoria terminale-mobilne, podkategoria terminale-naramienne.
 // Skaner działa tylko z mocowaniem ProGlove i ładuje się tylko w stacji, dlatego opisy mają bloki „Wymagane … (jedno z)”.
 export const progloveProducts: Product[] = [
   {
@@ -1162,7 +1163,8 @@ export const progloveProducts: Product[] = [
     ],
     "relatedProducts": [
       "proglove-mark-display",
-      "proglove-mark-3"
+      "proglove-mark-3",
+      "proglove-lana"
     ],
     "downloads": [
       {
@@ -1185,7 +1187,7 @@ export const progloveProducts: Product[] = [
       },
       {
         "question": "Czy MAI działa bez telefonu lub terminala?",
-        "answer": "Tak. MAI może pracować samodzielnie przez Wi-Fi w pasmach 2,4 i 5 GHz. Może też łączyć się przez Bluetooth 5.4 z Androidem (INSIGHT Mobile), z iOS (SDK) albo przez Gateway lub Gateway Plus z systemem po USB, Ethernecie lub RS-232."
+        "answer": "Tak. MAI może pracować samodzielnie przez Wi-Fi w pasmach 2,4 i 5 GHz. Może też łączyć się przez Bluetooth 5.4 z Androidem (INSIGHT Mobile), z iOS (SDK) albo przez Gateway lub Gateway Plus z systemem po USB, Ethernecie lub RS-232. Urządzeniem z Androidem może być przenośny komputer [ProGlove LANA](/produkt/proglove-lana) z fabrycznie zainstalowaną aplikacją INSIGHT Mobile."
       },
       {
         "question": "Czy do MAI pasują mocowania i stacje skanerów MARK?",
@@ -1206,6 +1208,235 @@ export const progloveProducts: Product[] = [
     ],
     "createdAt": "2026-10-24",
     "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "proglove-lana",
+    "slug": "proglove-lana",
+    "name": "ProGlove LANA",
+    "seoH1": "ProGlove LANA",
+    "seoTitle": "ProGlove LANA — przenośny komputer z Androidem do skanerów ProGlove",
+    "seoDescription": "Przenośny komputer z Androidem ProGlove LANA: ekran dotykowy 3,54″, Wi-Fi 6, aparat 16 MP, IP68, 123 g, do 11 h pracy. Terminal naramienny ProGlove LANA, komputer mobilny ProGlove, LANA ProGlove. PN: LA-001.",
+    "shortDescription": "ProGlove LANA — przenośny komputer z Androidem 13 i ekranem dotykowym 3,54″ do pracy ze skanerami noszonymi ProGlove; Wi-Fi 6, aparat 16 MP, obudowa IP68, masa 123 g.",
+    "description": "ProGlove LANA to przenośny komputer z Androidem 13 (certyfikacja GMS, aktualizacja do Androida 15 i 17), który uzupełnia skanery noszone ProGlove o większy ekran. Jest przeznaczony do procesów z dużą ilością danych: obsługi wyjątków, pracy prowadzonej krok po kroku oraz aplikacji ERP, WMS i kontroli jakości.\n\nAplikacja INSIGHT Mobile jest zainstalowana fabrycznie. Skaner ProGlove, np. [MAI](/produkt/proglove-mai), paruje się z LANA bez bramki Gateway, a kody trafiają do aplikacji firmy przez SDK, Intent, MQTT, WebSocket albo jako wpisy z klawiatury. Z siecią firmową LANA łączy się przez Wi-Fi 6 (2,4 GHz oraz 5 GHz), a ze skanerami przez Bluetooth 5.\n\nKolorowy ekran 3,54″ ma rozdzielczość 960 × 640 pikseli i jasność 500 nitów; w trybie Glove Mode obsługuje się go w rękawicach ochronnych. Aparat 16 MP z lampą błyskową dokumentuje przebieg pracy i usterki. Urządzenie o masie 123 g mieści się w kieszeni, można je też nosić na przedramieniu albo zamocować, np. w pojeździe. Klasa szczelności obudowy to IP68, a odporność na upadki 1,5 m. Wbudowana bateria 2500 mAh zapewnia do 11 godzin pracy.",
+    "categoryId": "terminale-mobilne",
+    "subcategoryIds": [
+      "terminale-naramienne"
+    ],
+    "manufacturerId": "proglove",
+    "sameAs": "https://proglove.com/products/portable-android-computer/lana/",
+    "priceFrom": 3014.46,
+    "availability": "available",
+    "images": [
+      "/images/products/proglove-la-001.png",
+      "/images/products/proglove-la-001-2.png",
+      "/images/products/proglove-la-001-3.png",
+      "/images/products/proglove-la-001-4.png"
+    ],
+    "imageDescriptions": [
+      "ProGlove LANA — pomarańczowa obudowa, ekran parowania skanera Scan2Pair w aplikacji INSIGHT Mobile",
+      "ProGlove LANA w pionie — aplikacja INSIGHT Mobile z połączonym skanerem MAI (skaner sprzedawany osobno)",
+      "ProGlove LANA — krawędź z przyciskiem programowalnym, aparatem, lampą błyskową i przyciskiem zasilania",
+      "ProGlove LANA — dolna krawędź z gniazdem USB-C i stykami do stacji ładującej"
+    ],
+    "tags": [
+      "magazyn",
+      "logistyka",
+      "produkcja"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "Typ urządzenia",
+        "value": "Przenośny komputer z Androidem do pracy ze skanerami noszonymi ProGlove"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Android 13 z certyfikacją GMS; możliwa aktualizacja do Androida 15 i 17"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "3,54 cala, kolorowy TFT-LCD, 960 × 640 pikseli, 500 nitów; odświeżanie < 50 ms"
+      },
+      {
+        "name": "Panel dotykowy",
+        "value": "Pojemnościowy, obsługa w rękawicach (tryb Glove Mode); praca przy wilgotnym ekranie z założoną folią ochronną; folia odporna na zarysowania"
+      },
+      {
+        "name": "Aparat",
+        "value": "16 MP z lampą błyskową LED"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Przycisk zasilania i przycisk programowalny (spust aparatu)"
+      },
+      {
+        "name": "Powiadomienia",
+        "value": "Dioda LED RGB, głośnik 1 W, wibracje"
+      },
+      {
+        "name": "Audio",
+        "value": "Głośnik 1 W, mikrofon"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Żyroskop, akcelerometr, e-kompas, czujnik światła"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6, IEEE 802.11 a/b/g/n/ac/ax/d/h/i/k/r/v; 2,4 i 5 GHz (DFS); 2×2 MU-MIMO; WEP, WPA/WPA2 PSK, WPA3 (SAE), OWE, 802.1x EAP; szybki roaming 802.11r, OKC, PMKID"
+      },
+      {
+        "name": "Bluetooth",
+        "value": "Bluetooth 5 (BLE); profile HID i SPP (zależnie od konfiguracji)"
+      },
+      {
+        "name": "NFC",
+        "value": "13,56 MHz"
+      },
+      {
+        "name": "Nawigacja satelitarna",
+        "value": "GPS, Galileo, GLONASS, BeiDou (odbiór)"
+      },
+      {
+        "name": "Skanowanie",
+        "value": "Skanery noszone ProGlove, np. MAI, parowane w aplikacji INSIGHT Mobile, bez bramki Gateway"
+      },
+      {
+        "name": "Integracja",
+        "value": "INSIGHT Mobile (Android), zainstalowana fabrycznie: SDK, Intent, MQTT, WebSocket, tryb klawiatury; konfiguracja i zarządzanie przez platformę ProGlove INSIGHT"
+      },
+      {
+        "name": "Złącza",
+        "value": "USB-C; styki ładowania do stacji 4-gniazdowej"
+      },
+      {
+        "name": "Bateria",
+        "value": "Wbudowana Li-Po 3,85 V, 2500 mAh; do 11 h pracy (zależnie od aplikacji i warunków)"
+      },
+      {
+        "name": "Ładowanie",
+        "value": "Przewodem USB-C ok. 150 min; w stacji 4-gniazdowej ProGlove ok. 180 min (temperatura pokojowa); temperatura ładowania 0–45 °C"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "−20 °C do 50 °C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "−20 °C do 70 °C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "5–95% bez kondensacji"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,5 m (MIL-STD-810G)"
+      },
+      {
+        "name": "Odporność na przewroty",
+        "value": "1000 przewrotów z 0,5 m (MIL-STD-810G)"
+      },
+      {
+        "name": "Klasa szczelności",
+        "value": "IP68 (pyłoszczelna, odporna na ciągłe zanurzenie w wodzie głębiej niż 1 m)"
+      },
+      {
+        "name": "Wymiary",
+        "value": "96,7 × 60,7 × 14,43 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "123 g"
+      },
+      {
+        "name": "Sposób noszenia",
+        "value": "W kieszeni, na przedramieniu w mocowaniu ProGlove Arm Mount (dwa rozmiary) albo zamocowany, np. w pojeździe"
+      },
+      {
+        "name": "Zgodność",
+        "value": "Dyrektywa radiowa RED 2014/53/UE; EN 62368-1; RoHS, REACH, WEEE; transport baterii UN 38.3"
+      },
+      {
+        "name": "Elementy sprzedawane osobno",
+        "value": "Skaner ProGlove, mocowanie Arm Mount, stacja ładująca 4-gniazdowa"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy; kontrakty serwisowe ProGlove Care na 36 albo 60 miesięcy na zapytanie"
+      }
+    ],
+    "applications": [
+      "Obsługa wyjątków w procesach logistycznych",
+      "Praca prowadzona krok po kroku na ekranie",
+      "Aplikacje ERP, WMS i kontroli jakości",
+      "Zdjęcia dokumentujące przebieg pracy i usterki",
+      "Praca mobilna i w pojazdach"
+    ],
+    "variants": [
+      {
+        "partNumber": "LA-001",
+        "name": "LA-001",
+        "attributes": {},
+        "priceFrom": 3014.46,
+        "availability": "available"
+      }
+    ],
+    "variantAttributeTooltips": {},
+    "compatibleAccessories": [],
+    "relatedAccessories": [],
+    "relatedProducts": [
+      "proglove-mai",
+      "zebra-wt5400",
+      "zebra-wt6400"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa ProGlove LANA (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/proglove-lana.pdf",
+        "size": "161 KB"
+      },
+      {
+        "name": "Instrukcja użytkownika i informacje prawne ProGlove LANA (EN)",
+        "type": "manual",
+        "url": "/datasheets/proglove-lana-instrukcja.pdf",
+        "size": "912 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy ProGlove LANA ma wbudowany czytnik kodów kreskowych?",
+        "answer": "Nie. Kody odczytuje skaner noszony ProGlove, np. [MAI](/produkt/proglove-mai), połączony z LANA przez Bluetooth. Aparat 16 MP służy do zdjęć, np. uszkodzonego towaru."
+      },
+      {
+        "question": "Jak połączyć skaner ProGlove z LANA?",
+        "answer": "Po włączeniu urządzenia i wstępnej konfiguracji Androida (sieć Wi-Fi można dodać później) należy otworzyć aplikację INSIGHT Mobile i połączyć w niej skaner. Bramka Gateway ani inne urządzenie pośredniczące nie są potrzebne."
+      },
+      {
+        "question": "Jak ładuje się LANA?",
+        "answer": "Przez gniazdo USB-C w ok. 150 minut albo w 4-gniazdowej stacji ProGlove, przeznaczonej tylko do LANA, w ok. 180 minut. Producent zaleca zasilacz USB-C zgodny ze standardem Power Delivery 3.0. Stację 4-gniazdową przygotujemy na zapytanie."
+      },
+      {
+        "question": "Czy LANA wystarczy na kilka zmian?",
+        "answer": "Bateria 2500 mAh pozwala na pracę do 11 godzin, zależnie od aplikacji. Jest wbudowana, dlatego przy pracy na trzy zmiany ProGlove zaleca doładowywanie urządzenia w przerwach, zamiast wymiany baterii."
+      },
+      {
+        "question": "Czy ekran LANA można obsługiwać w rękawicach?",
+        "answer": "Tak. Tryb Glove Mode włącza się w menu Ustawienia > Ułatwienia dostępu. Z założoną folią ochronną ekran reaguje także wtedy, gdy jest wilgotny."
+      },
+      {
+        "question": "Gdzie nie należy używać LANA?",
+        "answer": "LANA nie jest przeznaczona do stref zagrożonych wybuchem, do zastosowań medycznych ani jako środek ochrony indywidualnej. Producent przewiduje pracę przeszkolonych pracowników w kontrolowanym środowisku przemysłowym lub handlowym."
+      },
+      {
+        "question": "Jaka jest gwarancja na LANA?",
+        "answer": "Gwarancja fabryczna wynosi 12 miesięcy. Serwis ProGlove Care z kontraktem na 3 lub 5 lat jest dostępny na zapytanie. Licencja oprogramowania kupiona w pakiecie z LANA podlega aktywacji w terminie 90 dni; po jego upływie ProGlove uznaje ją za aktywną."
+      }
+    ],
+    "createdAt": "2026-10-25",
+    "updatedAt": "2026-10-25"
   }
 ]
 
