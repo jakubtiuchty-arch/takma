@@ -5709,7 +5709,7 @@ export const guides: Guide[] = [
 
 <p><strong>Zebra DS2208</strong> to najpopularniejszy skaner Zebra na rynku i bezpośredni następca legendarnego LS2208. Za 352 zł netto dostajesz imager 2D z USB, 5-letnią gwarancją i kompatybilnością z akcesoriami LS2208 (kable, podstawki). Plug and Play — podłączasz kabel USB, skaner emuluje klawiaturę i natychmiast „wpisuje" kody do każdego programu kasowego, aptecznego i ERP.</p>
 
-<p><strong>Do apteki:</strong> DS2208 spełnia wymagania dyrektywy FMD — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Wersja <a href="/produkt/zebra-ds2208-hc" style="font-weight:600">DS2208-HC</a> ma białą obudowę przygotowaną do regularnej dezynfekcji. Zasięg DataMatrix 10 mil: 1,5–20,3 cm.</p>
+<p><strong>Do apteki:</strong> DS2208 odczytuje kody DataMatrix na opakowaniach leków, które służą do weryfikacji w systemie KOWAL/NMVS (dyrektywa FMD). Wersja <a href="/produkt/zebra-ds2208-hc" style="font-weight:600">DS2208-HC</a> ma białą obudowę przygotowaną do regularnej dezynfekcji. Zasięg DataMatrix 10 mil: 0,8–15,7 cm.</p>
 
 <p><strong>Zebra DS2278</strong> to bezprzewodowa wersja z Bluetooth 4.0 BLE. Bateria 2 400 mAh na 14 h pracy / 110 000 skanów. Baza prezentacyjna CR2278 automatycznie przełącza tryb ręczny ↔ hands-free. Dopłata 97 zł za wolność od kabla.</p>
 

@@ -14958,24 +14958,24 @@ const scanners: Product[] = [
     slug: 'zebra-ds2208',
     name: 'Zebra DS2208',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html',
-    seoTitle: 'Skaner kodów Zebra DS2208 — 2D imager, USB, gwarancja 5 lat | od 352 zł',
-    seoDescription: 'Zebra DS2208 (DS2208-SR00007ZZWW) — przewodowy skaner 2D USB, następca LS2208. Czyta QR, DataMatrix, e-recepty. Kasy, apteki, biura. IP52, 5 lat gwarancji. Cena od 352 zł netto.',
+    seoTitle: 'Skaner kodów Zebra DS2208 — 2D imager, USB, gwarancja 5 lat',
+    seoDescription: 'Zebra DS2208 (DS2208-SR00007ZZWW) — przewodowy skaner 2D USB, następca LS2208. Czyta QR, DataMatrix, e-recepty. Kasy, apteki, biura. IP52, 5 lat gwarancji. PN: DS2208-SR00007ZZWW, DS2208-SR7U2100SGW, DS2208-SR7U2100AZW, DS2208-SR6U2100AZW, DS2208-SR6U2100SGW.',
     shortDescription: 'Zebra DS2208 — przewodowy czytnik kodów 1D/2D USB, następca LS2208',
-    description: `Dla kogo? Zebra DS2208 to uniwersalny czytnik (skaner) kodów kreskowych 1D i 2D przeznaczony do kas fiskalnych, aptek, biur, bibliotek i lekkich stanowisk magazynowych. Bezpośredni następca legendarnego LS2208 — z pełną kompatybilnością kabli i podstawek.
+    description: `Dla kogo? Zebra DS2208 to uniwersalny czytnik (skaner) kodów kreskowych 1D i 2D przeznaczony do kas fiskalnych, aptek, biur, bibliotek i lekkich stanowisk magazynowych. Następca laserowego LS2208.
 
-Imager 2D z matrycą CMOS odczytuje wszystkie popularne formaty kodów: EAN-13, Code 128, QR Code, DataMatrix, PDF417 i Aztec — w tym kody z ekranów smartfonów i tabletów (kupony, bilety, e-recepty). Szybkość dekodowania 220 skanów/s i zasięg do 36,8 cm zapewniają komfort pracy nawet przy intensywnym ruchu klientów.
+Imager 2D z matrycą CMOS odczytuje wszystkie popularne formaty kodów: EAN-13, Code 128, QR Code, DataMatrix, PDF417 i Aztec — w tym kody z ekranów smartfonów i tabletów (kupony, bilety, e-recepty). Kod UPC 13 mil czyta z odległości do 36,8 cm, a w trybie prezentacyjnym odczytuje kody przesuwane z prędkością do 76,2 cm/s.
 
-DS2208 spełnia wymagania dyrektywy antyfałszywkowej FMD (Falsified Medicines Directive) — odczytuje kody DataMatrix na opakowaniach leków do weryfikacji w systemie KOWAL/NMVS. Dla placówek ochrony zdrowia jest wersja [Zebra DS2208-HC](/produkt/zebra-ds2208-hc) z białą obudową przygotowaną do regularnej dezynfekcji.
+DS2208 odczytuje kody DataMatrix na opakowaniach leków, które służą do weryfikacji w systemie KOWAL/NMVS (dyrektywa antyfałszywkowa FMD). Dla placówek ochrony zdrowia jest wersja [Zebra DS2208-HC](/produkt/zebra-ds2208-hc) z białą obudową przygotowaną do regularnej dezynfekcji.
 
 Plug and Play: po podłączeniu kabla USB skaner emuluje klawiaturę (HID) i natychmiast „wpisuje" zeskanowany kod do aktywnego pola — działa z każdym programem kasowym, aptecznym, ERP i WMS bez instalacji sterowników. Zaawansowana konfiguracja przez aplikację Zebra 123Scan.
 
-Koszt posiadania (TCO): skaner Zebra DS2208 z gwarancją 5 lat i odpornością IP52 na wielokrotne upadki z 1,5 m minimalizuje koszty napraw i wymiany — w 5-letnim cyklu TCO jest niższy niż tańsze skanery z gwarancją 1–2 lata. Serwis w Polsce: serwis-zebry.pl.
+Koszt posiadania (TCO): skaner Zebra DS2208 z gwarancją 5 lat i odpornością IP52 na wielokrotne upadki z 1,5 m ogranicza koszty napraw i wymiany. Serwis w Polsce: serwis-zebry.pl.
 
-Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie entry-level. Szczegółowa dokumentacja techniczna: zebra.com/ds2200-series.`,
+Gwarancja producenta: 60 miesięcy (5 lat) od daty wysyłki.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-przewodowe'],
     manufacturerId: 'zebra',
-    priceFrom: 352,
+    priceFrom: 322.51,
     images: [
       '/images/products/zebra-ds2208-2.png',
       '/images/products/zebra-ds2208.png',
@@ -14984,10 +14984,10 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       '/images/products/zebra-ds2208-white-2.png',
     ],
     imageDescriptions: [
-      'Zebra DS2208 czarny — widok z boku, kompaktowa obudowa 115 g',
+      'Zebra DS2208 czarny — widok pod kątem, kompaktowa obudowa',
       'Zebra DS2208 czarny — widok z przodu, okno skanera i uchwyt ergonomiczny',
       'Zebra DS2208 biały — widok z przodu, widoczna matryca CMOS area imager',
-      'Zebra DS2208 biały — widok z boku, obudowa Nova White',
+      'Zebra DS2208 biały — widok pod kątem, obudowa Nova White',
       'Zebra DS2208 biały — widok z drugiej strony, design ergonomiczny',
     ],
     tags: ['retail', 'magazyn', 'healthcare'],
@@ -14997,24 +14997,24 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
     specifications: [
       { name: 'Typ skanera', value: 'Imager 2D (area imager) przewodowy' },
       { name: 'Skanowane kody 1D', value: 'EAN-8, EAN-13, UPC-A/E, Code 39, Code 128, Code 93, I 2/5, GS1-128, GS1 DataBar' },
-      { name: 'Skanowane kody 2D', value: 'QR Code, DataMatrix, PDF417, Aztec, Maxicode, MicroPDF417' },
+      { name: 'Skanowane kody 2D', value: 'QR Code, Micro QR, DataMatrix, PDF417, Aztec, MaxiCode, Han Xin' },
       { name: 'Odczyt z ekranów', value: 'Tak — smartfony, tablety, LCD' },
-      { name: 'Szybkość skanowania', value: '220 skanów/s' },
+      { name: 'Tolerancja ruchu', value: 'Do 13 cm/s ręcznie; do 76,2 cm/s w trybie prezentacyjnym (UPC 13 mil)' },
       { name: 'Rozdzielczość matrycy', value: '640 × 480 px' },
-      { name: 'Zasięg skanowania', value: '1,2 – 36,8 cm (EAN-13 13 mil)' },
-      { name: 'Interfejsy', value: 'USB HID, USB COM (wirtualny RS-232), RS-232' },
+      { name: 'Zasięg skanowania', value: '1,3 – 36,8 cm (UPC 13 mil)' },
+      { name: 'Interfejsy', value: 'USB, RS-232, Keyboard Wedge, TGCS (IBM) 46XX przez RS485' },
       { name: 'Klasa ochrony IP', value: 'IP52' },
       { name: 'Odporność na upadki', value: '1,5 m na beton (wielokrotne)' },
       { name: 'Temperatura pracy', value: '0°C do +50°C' },
       { name: 'Wymiary', value: '165 × 66 × 99 mm' },
-      { name: 'Waga', value: '115 g (bez kabla)' },
+      { name: 'Waga', value: '161,6 g' },
       { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
     ],
     variants: [
       {
         partNumber: 'DS2208-SR7U2100SGW',
         name: 'DS2208 czarny — kabel USB + podstawka',
-        priceFrom: 388,
+        priceFrom: 370.1,
         availability: 'available',
         attributes: {
           'Kabel USB': 'Tak',
@@ -15024,18 +15024,17 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
       {
         partNumber: 'DS2208-SR00007ZZWW',
-        name: 'DS2208 czarny — sam skaner + podstawka',
-        priceFrom: 352,
+        name: 'DS2208 czarny — sam skaner',
+        priceFrom: 322.51,
         availability: 'available',
         attributes: {
-          'Podstawka': 'Gooseneck',
           'Kolor': 'Czarny',
         },
       },
       {
         partNumber: 'DS2208-SR7U2100AZW',
         name: 'DS2208 czarny — kabel USB (bez podstawki)',
-        priceFrom: 373,
+        priceFrom: 341.98,
         availability: 'available',
         attributes: {
           'Kabel USB': 'Tak',
@@ -15045,7 +15044,7 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       {
         partNumber: 'DS2208-SR6U2100AZW',
         name: 'DS2208 biały — kabel USB (bez podstawki)',
-        priceFrom: 373,
+        priceFrom: 341.98,
         availability: 'available',
         attributes: {
           'Kabel USB': 'Tak',
@@ -15055,8 +15054,8 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       {
         partNumber: 'DS2208-SR6U2100SGW',
         name: 'DS2208 biały — kabel USB + podstawka',
-        priceFrom: 404,
-        availability: 'available',
+        priceFrom: 370.1,
+        availability: 'on-order',
         attributes: {
           'Kabel USB': 'Tak',
           'Podstawka': 'Gooseneck',
@@ -15065,16 +15064,21 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
     ],
     applications: ['Kasy fiskalne i POS', 'Apteki (dyrektywa FMD / KOWAL)', 'Biura i administracja', 'Biblioteki', 'Magazyn — przyjęcie towaru', 'Handel detaliczny'],
+    variantAttributeTooltips: {
+      'Kabel USB': 'Przewód do komputera lub kasy dołączony do zestawu.\n\nTak — ekranowany przewód USB-A o długości 2,1 m.',
+      'Podstawka': 'Podstawka dołączona do zestawu.\n\nGooseneck — podstawka Intellistand na elastycznym wysięgniku; skaner włożony do podstawki sam przechodzi w tryb prezentacyjny.',
+      'Kolor': 'Kolor obudowy DS2208.\n\nCzarny (Twilight Black) lub biały (Nova White); parametry obu wersji są takie same. Do regularnej dezynfekcji w szpitalu służy DS2208-HC w kolorze Healthcare White.',
+    },
     compatibleAccessories: [],
     relatedAccessories: ['zebra-stand-ds22', 'zebra-cable-usb-ds22'],
     faq: [
       {
         question: 'Co to jest Zebra DS2208 i do czego służy?',
-        answer: 'Zebra DS2208 to przewodowy czytnik (imager) kodów kreskowych 1D i 2D z interfejsem USB — bezpośredni następca legendarnego modelu laserowego LS2208. Odczytuje kody EAN, QR, DataMatrix i PDF417, w tym kody z ekranów smartfonów. Przeznaczony do kas, aptek, biur, bibliotek i lekkich stanowisk magazynowych. Cena od 352 zł netto.',
+        answer: 'Zebra DS2208 to przewodowy czytnik (imager) kodów kreskowych 1D i 2D z interfejsem USB — bezpośredni następca legendarnego modelu laserowego LS2208. Odczytuje kody EAN, QR, DataMatrix i PDF417, w tym kody z ekranów smartfonów. Przeznaczony do kas, aptek, biur, bibliotek i lekkich stanowisk magazynowych.',
       },
       {
         question: 'Jaka jest różnica między Zebra DS2208 a LS2208?',
-        answer: 'LS2208 to skaner laserowy odczytujący wyłącznie kody 1D z szybkością 100 skanów/s. DS2208 to imager 2D — czyta kody 1D i 2D (QR, DataMatrix) z prędkością 220 skanów/s, a także kody z ekranów smartfonów. DS2208 zachowuje pełną kompatybilność kabli i podstawek z LS2208, co eliminuje koszty wymiany infrastruktury przy upgradzie.',
+        answer: 'LS2208 to skaner laserowy, który czyta tylko kody 1D. DS2208 to imager 2D — czyta kody 1D i 2D (QR, DataMatrix), także z ekranów smartfonów. Uniwersalna podstawka gooseneck Zebra STND-GS00UNC-04 pasuje do obu modeli.',
       },
       {
         question: 'Czy Zebra DS2208 czyta kody QR z ekranów telefonów?',
@@ -15090,15 +15094,15 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
       {
         question: 'Jaki jest zasięg skanowania DS2208?',
-        answer: 'DS2208 odczytuje kody EAN-13 z odległości 1,2 – 36,8 cm, a kody DataMatrix 10 mil (stosowane na lekach) z 1,5 – 20,3 cm. W praktyce kasowej odległość 5–30 cm zapewnia komfortową pracę bez zmęczenia nadgarstka.',
+        answer: 'DS2208 odczytuje kody UPC/EAN 13 mil z odległości 1,3 – 36,8 cm, a kody DataMatrix 10 mil (stosowane na lekach) z 0,8 – 15,7 cm. W praktyce kasowej odległość 5–30 cm zapewnia komfortową pracę bez zmęczenia nadgarstka.',
       },
       {
         question: 'Jaka jest gwarancja na Zebra DS2208?',
-        answer: 'Producent (Zebra Technologies) udziela gwarancji 60 miesięcy (5 lat) — jednej z najdłuższych w klasie entry-level. Dla porównania, większość konkurencyjnych skanerów oferuje 1–3 lata. TAKMA jako autoryzowany partner zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl.',
+        answer: 'Producent (Zebra Technologies) udziela gwarancji 60 miesięcy (5 lat) od daty wysyłki. TAKMA jako autoryzowany partner zapewnia serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl.',
       },
       {
         question: 'Czy istnieje bezprzewodowa wersja DS2208?',
-        answer: 'Tak — Zebra DS2278 to bezprzewodowa wersja z Bluetooth i bazą ładującą, idealna do inwentaryzacji i stanowisk wymagających mobilności. Obie wersje mają identyczny silnik skanujący SE4720. Skontaktuj się z nami po ofertę na DS2278.',
+        answer: 'Tak — Zebra DS2278 to bezprzewodowa wersja z Bluetooth i bazą ładującą, idealna do inwentaryzacji i stanowisk wymagających mobilności. Obie wersje mają matrycę 640 × 480 i takie same zasięgi odczytu.',
       },
       {
         question: 'Jak odporny jest Zebra DS2208?',
@@ -15110,16 +15114,16 @@ Gwarancja producenta 60 miesięcy (5 lat) — jedna z najdłuższych w klasie en
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS2208?',
-        answer: 'W zbliżonej klasie cenowej: Honeywell Voyager 1470g (2D, USB, ~500–600 zł, gwarancja 3 lata) i Datalogic [QuickScan QD2590](/produkt/datalogic-quickscan-qd2590) (2D, USB i RS-232, 5 lat gwarancji). DS2208 wyróżnia się 5-letnią gwarancją, kompatybilnością z akcesoriami LS2208 oraz szeroką bazą serwisową Zebra w Polsce.',
+        answer: 'Przewodowe skanery 2D innych marek w tej klasie to Honeywell Voyager 1470g i Datalogic [QuickScan QD2590](/produkt/datalogic-quickscan-qd2590) (USB i RS-232). Do szpitali i przychodni przeznaczona jest wersja [Zebra DS2208-HC](/produkt/zebra-ds2208-hc).',
       },
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds2208/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Scanners/General-Purpose-Scanners/Handheld-Scanners/DS2200-Series/spec-sheet/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
-      { name: 'Strona produktu Zebra DS2208 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra DS2200 (EN)', type: 'datasheet', url: '/downloads/zebra-ds2200-karta-katalogowa-en.pdf', size: '147 KB' },
+      { name: 'Przewodnik akcesoriów Zebra DS2200 (EN)', type: 'pdf', url: '/downloads/zebra-ds2200-akcesoria-en.pdf', size: '522 KB' },
     ],
     createdAt: '2022-11-05',
-    updatedAt: '2026-04-07',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-ds8208',
@@ -17632,34 +17636,34 @@ Pełna specyfikacja i certyfikaty dostępne na zebra.com/ds3678-hp.`,
     slug: 'zebra-ds2278',
     name: 'Zebra DS2278',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html',
-    seoTitle: 'Zebra DS2278 — bezprzewodowy skaner kodów 2D Bluetooth | od 449 zł',
-    seoDescription: 'Zebra DS2278 (DS2278-SR00007ZZWW) — bezprzewodowy skaner 2D Bluetooth 4.0 BLE do kas, aptek i biur. Bateria 14 h / 110 000 skanów, Scan-to-Connect, IP52. Cena od 449 zł netto.',
+    seoTitle: 'Zebra DS2278 — bezprzewodowy skaner kodów 2D Bluetooth',
+    seoDescription: 'Zebra DS2278 (DS2278-SR00007ZZWW) — bezprzewodowy skaner 2D Bluetooth 4.0 BLE do kas, aptek i biur. Bateria na 14-godzinną zmianę, 110 000 skanów, Scan-to-Connect, IP52. PN: DS2278-SR00007ZZWW, DS2278-SR7UMC00AZW, DS2278-SR7U2100PRW, DS2278-SR6U2100PRW, DS2278-SR00006ZZWW.',
     shortDescription: 'Zebra DS2278 — bezprzewodowy skaner kodów 1D/2D Bluetooth 4.0 BLE, 14 h pracy, 110 000 skanów, Scan-to-Connect, IP52, baza prezentacyjna CR2278.',
     description: `Dla kogo? Zebra DS2278 to bezprzewodowa wersja popularnego skanera DS2208 — z Bluetooth 4.0 BLE, baterią na 14 godzin pracy i technologią Scan-to-Connect. Zaprojektowany do kas sklepowych, aptek, biur, punktów obsługi klienta i wszędzie tam, gdzie kabel ogranicza swobodę pracy operatora.
 
 Sensor 640×480 px z polem widzenia 32,8°×24,8° odczytuje wszystkie kody 1D (EAN, Code 128, Code 39, GS1 DataBar) i 2D (QR Code, DataMatrix, PDF417, Aztec, MaxiCode). Odczytuje kody z ekranów smartfonów, tabletów i monitorów — kupony mobilne, bilety elektroniczne, karty lojalnościowe. Zasięg: UPC/EAN 13 mil do 36,8 cm, DataMatrix 10 mil do 15,7 cm.
 
-Bluetooth 4.0 BLE — zasięg do 10 m (Class 2) lub do 100 m z bazą prezentacyjną CR2278 (Class 1). Scan-to-Connect: parowanie z dowolnym urządzeniem Bluetooth jednym skanowaniem kodu — bez manualnej konfiguracji. Automatyczne buforowanie danych poza zasięgiem i retransmisja po powrocie.
+Bluetooth 4.0 BLE klasy 2 — zasięg co najmniej 10 m, a w parze z bazą prezentacyjną CR2278 do 100 m w otwartej przestrzeni. Scan-to-Connect: parowanie z dowolnym urządzeniem Bluetooth jednym skanowaniem kodu — bez manualnej konfiguracji.
 
-Bateria Li-Ion 2400 mAh — do 14 h ciągłej pracy lub 110 000 skanów na jednym ładowaniu. Ładowanie: przez bazę CR2278 (USB/RS232) lub bezpośrednio przez Micro USB. Z szybkim ładowaniem BC1.2 — 1 h ładowania wystarcza na całą 14-godzinną zmianę.
+Bateria Li-Ion 2400 mAh — na 14-godzinną zmianę; 110 000 skanów na jednym ładowaniu przy 60 skanach na minutę. Ładowanie: przez bazę CR2278 (USB/RS232) lub bezpośrednio przez Micro USB. Z szybkim ładowaniem BC1.2 — 1 h ładowania wystarcza na całą 14-godzinną zmianę.
 
-Baza prezentacyjna CR2278 — automatyczne przełączanie między trybem ręcznym a hands-free (IntelliStand). Skaner odłożony do bazy skanuje automatycznie, podniesiony — wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem.
+Baza prezentacyjna CR2278 — automatyczne przełączanie między trybem ręcznym a hands-free. Skaner odłożony do bazy skanuje automatycznie, podniesiony — wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem.
 
 IP52, upadki z 1,5 m na beton, zakres pracy 0°C do +50°C, waga 214 g. Model w wersji dla ochrony zdrowia to [Zebra DS2278-HC](/produkt/zebra-ds2278-hc): kolor Healthcare White, obudowa do dezynfekcji. Gwarancja: 36 miesięcy (skaner), 12 miesięcy (bateria).
 
-Koszt posiadania (TCO): skaner Zebra DS2278 z gwarancją 3 lata (dostępny OneCare do 5 lat). Bateria wymienialna i sprawna sieć serwisowa minimalizują przestoje — czas naprawy w Polsce 3–5 dni. Serwis w Polsce: serwis-zebry.pl.
+Koszt posiadania (TCO): skaner Zebra DS2278 z gwarancją 3 lata. Bateria wymienialna i sprawna sieć serwisowa minimalizują przestoje — czas naprawy w Polsce 3–5 dni. Serwis w Polsce: serwis-zebry.pl.
 
 Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'zebra',
-    priceFrom: 449,
+    priceFrom: 423.32,
     images: ['/images/products/zebra-ds2278.png', '/images/products/zebra-ds2278-2.png', '/images/products/zebra-ds2278-3.png', '/images/products/zebra-ds2278-4.png'],
     imageDescriptions: [
       'Zebra DS2278 — widok z przodu, bezprzewodowy skaner 2D Bluetooth czarny',
-      'Zebra DS2278 — widok z boku, ergonomiczny uchwyt z baterią 2400 mAh',
-      'Zebra DS2278 — widok z tyłu, okno skanera i przycisk spustu',
-      'Zebra DS2278 — widok z góry, antena Bluetooth i wskaźnik LED',
+      'Zebra DS2278 biały — widok z przodu na okno skanera i spust',
+      'Zebra DS2278 czarny — widok z przodu pod kątem, okno skanera i spust',
+      'Zebra DS2278 biały — widok pod kątem z lewej strony, okno skanera',
     ],
     tags: ['retail', 'healthcare', 'magazyn'],
     availability: 'available',
@@ -17667,9 +17671,9 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     isBestseller: false,
     specifications: [
       { name: 'Typ skanera', value: 'Area imager 2D, bezprzewodowy Bluetooth, general-purpose' },
-      { name: 'Łączność bezprzewodowa', value: 'Bluetooth 4.0 BLE (Class 2: 10 m / Class 1 z bazą: 100 m)' },
+      { name: 'Łączność bezprzewodowa', value: 'Bluetooth 4.0 BLE, klasa 2: min. 10 m; do 100 m z bazą CR2278 (otwarta przestrzeń)' },
       { name: 'Scan-to-Connect', value: 'Tak — parowanie jednym skanowaniem' },
-      { name: 'Bateria', value: 'Li-Ion 2400 mAh, do 14 h pracy / 110 000 skanów' },
+      { name: 'Bateria', value: 'Li-Ion 2400 mAh; 110 000 skanów przy 60 skanach/min lub 50 000 przy 10 skanach/min' },
       { name: 'Ładowanie', value: 'Baza CR2278 (USB/RS232) lub Micro USB bezpośrednio' },
       { name: 'Szybkie ładowanie', value: '1 h (BC1.2 USB) do 14-godz. zmiany' },
       { name: 'Sensor', value: '640 × 480 px' },
@@ -17692,44 +17696,49 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       { name: 'Waga', value: '214 g (z baterią)' },
       { name: 'Gwarancja', value: 'Skaner: 36 miesięcy, bateria: 12 miesięcy' },
     ],
-    applications: ['Kasy sklepowe i punkty POS', 'Apteki i placówki medyczne', 'Biura i back-office', 'Obsługa klienta i recepcja', 'Inwentaryzacja lekka', 'Logistyka kurierska'],
+    applications: ['Kasy sklepowe i punkty POS', 'Apteki', 'Biura i back-office', 'Obsługa klienta i recepcja', 'Inwentaryzacja lekka', 'Logistyka kurierska'],
     variants: [
       {
         partNumber: 'DS2278-SR00007ZZWW',
-        name: 'DS2278 — sam skaner, antracyt',
-        priceFrom: 449,
+        name: 'DS2278 — sam skaner, czarny',
+        priceFrom: 423.32,
         availability: 'available',
-        attributes: { 'Kolor': 'Antracyt' },
+        attributes: { 'Kolor': 'Czarny' },
       },
       {
         partNumber: 'DS2278-SR00006ZZWW',
-        name: 'DS2278 — sam skaner, jasnoszary',
-        priceFrom: 449,
-        availability: 'available',
-        attributes: { 'Kolor': 'Jasnoszary' },
+        name: 'DS2278 — sam skaner, biały',
+        priceFrom: 423.32,
+        availability: 'unavailable',
+        attributes: { 'Kolor': 'Biały' },
       },
       {
         partNumber: 'DS2278-SR7UMC00AZW',
-        name: 'DS2278 — skaner + kabel USB, antracyt',
-        priceFrom: 469,
+        name: 'DS2278 — skaner + przewód Micro USB, czarny',
+        priceFrom: 441.78,
         availability: 'available',
-        attributes: { 'Kolor': 'Antracyt', 'Kabel USB': 'Tak' },
+        attributes: { 'Kolor': 'Czarny', 'Kabel USB': 'Micro USB' },
       },
       {
         partNumber: 'DS2278-SR7U2100PRW',
-        name: 'DS2278 — zestaw USB Kit (skaner + baza + kabel USB), antracyt',
-        priceFrom: 761,
+        name: 'DS2278 — zestaw USB Kit (skaner + baza + kabel USB), czarny',
+        priceFrom: 717.49,
         availability: 'available',
-        attributes: { 'Kolor': 'Antracyt', 'Baza prezentacyjna': 'Tak', 'Kabel USB': 'Tak' },
+        attributes: { 'Kolor': 'Czarny', 'Baza prezentacyjna': 'Tak', 'Kabel USB': 'USB' },
       },
       {
         partNumber: 'DS2278-SR6U2100PRW',
-        name: 'DS2278 — zestaw USB Kit (skaner + baza + kabel USB), jasnoszary',
-        priceFrom: 761,
+        name: 'DS2278 — zestaw USB Kit (skaner + baza + kabel USB), biały',
+        priceFrom: 717.49,
         availability: 'available',
-        attributes: { 'Kolor': 'Jasnoszary', 'Baza prezentacyjna': 'Tak', 'Kabel USB': 'Tak' },
+        attributes: { 'Kolor': 'Biały', 'Baza prezentacyjna': 'Tak', 'Kabel USB': 'USB' },
       },
     ],
+    variantAttributeTooltips: {
+      'Kolor': 'Kolor obudowy DS2278.\n\nCzarny (Twilight Black) albo biały (Nova White) — kolor nie zmienia parametrów. Szpitalom Zebra oferuje DS2278-HC: obudowa Healthcare White jest przygotowana do regularnej dezynfekcji.',
+      'Kabel USB': 'Przewód dołączony do zestawu.\n\nMicro USB — ładuje skaner z portu USB lub zasilacza, bez bazy.\n\nUSB — ekranowany przewód 2,1 m, łączy bazę z komputerem.',
+      'Baza prezentacyjna': 'Baza CR2278 dołączona do zestawu.\n\nTak — ładuje baterię także w trakcie pracy, a odłożony skaner przełącza w tryb prezentacyjny.',
+    },
     compatibleAccessories: [],
     relatedAccessories: [
       'zebra-cradle-ds2278',
@@ -17758,7 +17767,6 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
             'Temp. pracy': '0°C do +50°C',
             'Waga': '214 g',
             'Gwarancja': '36 miesięcy',
-            'Cena od': '449 zł',
           },
         },
         {
@@ -17775,7 +17783,6 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
             'Temp. pracy': '0°C do +50°C',
             'Waga': '162 g',
             'Gwarancja': '60 miesięcy',
-            'Cena od': '352 zł',
           },
         },
         {
@@ -17792,7 +17799,6 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
             'Temp. pracy': '0°C do +50°C',
             'Waga': '261 g',
             'Gwarancja': '36 miesięcy',
-            'Cena od': '2 243 zł',
           },
         },
       ],
@@ -17800,7 +17806,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
     faq: [
       {
         question: 'Jaki jest zasięg Bluetooth skanera Zebra DS2278?',
-        answer: 'Bluetooth 4.0 BLE — w trybie Class 2 zasięg wynosi do 10 m. Z bazą prezentacyjną CR2278 (Class 1) zasięg wzrasta do 100 m w otwartej przestrzeni, w typowych warunkach biurowych 20–30 m. Skaner automatycznie buforuje dane poza zasięgiem i przesyła je po powrocie w strefę.',
+        answer: 'Bluetooth 4.0 BLE klasy 2 — zasięg wynosi co najmniej 10 m. W parze z bazą prezentacyjną CR2278 zasięg wzrasta do 100 m w otwartej przestrzeni. Otoczenie, np. ściany i inne urządzenia radiowe, może go zmniejszyć.',
       },
       {
         question: 'Jak długo trzyma bateria w DS2278?',
@@ -17808,15 +17814,15 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       },
       {
         question: 'Czym jest baza prezentacyjna CR2278?',
-        answer: 'CR2278-PC10004WW to baza ładująco-komunikacyjna. Skaner odłożony do bazy automatycznie przełącza się w tryb hands-free (IntelliStand) — skanuje kody przesuwane przed nim. Podniesiony wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem przez USB lub RS232.',
+        answer: 'CR2278-PC10004WW to baza ładująco-komunikacyjna. Skaner odłożony do bazy automatycznie przełącza się w tryb hands-free — skanuje kody przesuwane przed nim. Podniesiony wraca do trybu ręcznego. Baza jednocześnie ładuje baterię i komunikuje się z komputerem przez USB lub RS232.',
       },
       {
         question: 'Czym różni się DS2278 od przewodowego DS2208?',
-        answer: 'Identyczne możliwości skanowania (sensor 640×480, te same symbologie, te same zasięgi odczytu). Różnią się sposobem podłączenia: DS2278 łączy się przez Bluetooth, a DS2208 kablem. DS2278 waży nieco więcej (214 g vs 162 g) z powodu baterii. [DS2208](/produkt/zebra-ds2208) ma dłuższą gwarancję (60 vs 36 mies.) i niższą cenę (od 352 zł). DS2278 oferuje Scan-to-Connect i bazę prezentacyjną.',
+        answer: 'Identyczne możliwości skanowania (sensor 640×480, te same symbologie, te same zasięgi odczytu). Różnią się sposobem podłączenia: DS2278 łączy się przez Bluetooth, a DS2208 kablem. DS2278 waży nieco więcej (214 g vs 162 g) z powodu baterii. [DS2208](/produkt/zebra-ds2208) ma dłuższą gwarancję (60 vs 36 mies.). DS2278 oferuje Scan-to-Connect i bazę prezentacyjną.',
       },
       {
         question: 'Czy DS2278 odczytuje kody z ekranów telefonów?',
-        answer: 'Tak — DS2278 odczytuje kody QR, DataMatrix, PDF417 i 1D z ekranów LCD smartfonów, tabletów i monitorów. Adaptacyjna regulacja ekspozycji automatycznie dostosowuje parametry do świecącego ekranu. Idealne do kuponów mobilnych, biletów elektronicznych i kart lojalnościowych.',
+        answer: 'Tak — DS2278 odczytuje kody QR, DataMatrix, PDF417 i 1D z ekranów LCD smartfonów, tabletów i monitorów. Nadaje się do kuponów mobilnych, biletów elektronicznych i kart lojalnościowych.',
       },
       {
         question: 'Czy DS2278 jest kompatybilny z kasami fiskalnymi?',
@@ -17824,7 +17830,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       },
       {
         question: 'Czy Zebra DS2278 nadaje się do apteki?',
-        answer: 'Tak — odczytuje kody DataMatrix GS1 na lekach (zgodność z dyrektywą FMD). Do szpitali przeznaczony jest [Zebra DS2278-HC](/produkt/zebra-ds2278-hc), którego białą obudowę można regularnie dezynfekować. Bezprzewodowość Bluetooth ułatwia pracę za ladą apteczną i na wózkach aptecznych. Skanowanie kodów z opakowań leków, opaską pacjenta i recept elektronicznych.',
+        answer: 'Tak — odczytuje kody DataMatrix GS1 na lekach, używane do weryfikacji opakowań zgodnie z dyrektywą FMD. Do szpitali przeznaczony jest [Zebra DS2278-HC](/produkt/zebra-ds2278-hc), którego białą obudowę można regularnie dezynfekować. Bezprzewodowość Bluetooth ułatwia pracę za ladą apteczną i na wózkach aptecznych. Skanuje kody z opakowań leków i recept elektronicznych.',
       },
       {
         question: 'Czym jest technologia Scan-to-Connect?',
@@ -17832,7 +17838,7 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       },
       {
         question: 'Jaka gwarancja obejmuje DS2278?',
-        answer: 'Standardowa gwarancja producenta: skaner 36 miesięcy (3 lata), baza CR2278 36 miesięcy, bateria 12 miesięcy. Zebra oferuje rozszerzone kontrakty OneCare Essential (naprawa) lub Select (wymiana) na 3 lub 5 lat. Serwis gwarancyjny i pogwarancyjny w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl).',
+        answer: 'Standardowa gwarancja producenta: skaner 36 miesięcy (3 lata), baza CR2278 36 miesięcy, bateria 12 miesięcy. Zebra zaleca usługi serwisowe Zebra OneCare Select i Essential. Serwis gwarancyjny i pogwarancyjny w Polsce: [serwis-zebry.pl](https://www.serwis-zebry.pl).',
       },
       {
         question: 'Gdzie serwisować skaner Zebra DS2278 w Polsce?',
@@ -17840,15 +17846,16 @@ Pełna specyfikacja i certyfikaty na zebra.com/ds2278.`,
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS2278?',
-        answer: 'Wersja przewodowa: [DS2208](/produkt/zebra-ds2208) (od 352 zł) — identyczne skanowanie, bez baterii i Bluetooth, niższa cena. Premium bezprzewodowy: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł) — sensor 2 MP, szersze pole widzenia, Digimarc. Ultra-rugged bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) (od 2 111 zł) — IP65/IP68, upadki z 3 m, praca od −20°C.',
+        answer: 'Wersja przewodowa: [DS2208](/produkt/zebra-ds2208) — identyczne skanowanie, bez baterii i Bluetooth. Premium bezprzewodowy: [DS8288](/produkt/zebra-ds8288) — sensor 2 MP, szersze pole widzenia, Digimarc. Ultra-rugged bezprzewodowy: [DS3678-SR](/produkt/zebra-ds3678-sr) — IP65/IP68, upadki z 3 m, praca od −20°C. Do szpitali: [Zebra DS2278-HC](/produkt/zebra-ds2278-hc).',
       },
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds2278/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (EN)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds2200-series-spec-sheet-en-us.pdf', size: '0.5 MB' },
-      { name: 'Strona produktu Zebra DS2278 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-handheld-scanners/ds2200-series.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra DS2200 (EN)', type: 'datasheet', url: '/downloads/zebra-ds2200-karta-katalogowa-en.pdf', size: '147 KB' },
+      { name: 'Przewodnik akcesoriów Zebra DS2200 (EN)', type: 'pdf', url: '/downloads/zebra-ds2200-akcesoria-en.pdf', size: '522 KB' },
     ],
     createdAt: '2026-02-27',
+    updatedAt: '2026-10-25',
   },
 
   // ── Zebra DS8288 (NOWOŚĆ 2026 — bezprzewodowy premium 2MP, Bluetooth 5.2, PowerCap) ──
@@ -18600,22 +18607,22 @@ Dokumentacja: zebra.com/ds4600dpe.`,
     slug: 'zebra-ds9908',
     name: 'Zebra DS9908',
     sameAs: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9900-series/ds9908.html',
-    seoTitle: 'Skaner prezentacyjny Zebra DS9908 — hybrydowy hands-free, Digimarc, EAS | od 1 169 zł',
-    seoDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D do kas POS, aptek i retail. Tryb hands-free i ręczny, Digimarc, PRZM, megapikselowy sensor 1280×800, 5 lat gwarancji. Od 1 169 zł netto — TAKMA, autoryzowany partner Zebra.',
+    seoTitle: 'Skaner prezentacyjny Zebra DS9908 — hybrydowy hands-free, Digimarc, EAS',
+    seoDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D do kas POS, aptek i retail. Tryb hands-free i ręczny, Digimarc, PRZM, megapikselowy sensor 1280×800, 5 lat gwarancji. TAKMA, autoryzowany partner Zebra. PN: DS9908-SR00004ZZWW, DS9908-SR4U2100AZW, DS9908-HD4000WZZWW.',
     shortDescription: 'Zebra DS9908 — hybrydowy skaner prezentacyjny 2D, hands-free + ręczny, Digimarc, EAS, IP52',
     description: `Dla kogo? Zebra DS9908 to hybrydowy skaner prezentacyjny zaprojektowany od podstaw do pracy hands-free i ręcznej — nie jest to skaner ręczny z dostawioną podstawką, lecz urządzenie natywnie łączące oba tryby. Idealny do kas fiskalnych w handlu detalicznym, aptekach, bibliotekach, kas samoobsługowych i punktów usługowych.
 
-Automatyczne przełączanie trybów — po odłożeniu na podstawkę DS9908 ogranicza pole skanowania (aby nie odczytywać kodów z sąsiednich produktów), a po wzięciu do ręki rozszerza zasięg do 63 cm (UPC). Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging dekoduje zniszczone, wyblakłe, niskokontrastowe i błyszczące kody. Natywna obsługa Digimarc — niewidzialnych kodów kreskowych drukowanych na całym opakowaniu (standard wdrażany przez Walmart, P&G).
+Automatyczne przełączanie trybów — po odłożeniu na podstawkę DS9908 ogranicza pole skanowania (aby nie odczytywać kodów z sąsiednich produktów), a po wzięciu do ręki rozszerza zasięg do 63 cm (UPC). Megapikselowy sensor 1280×800 z technologią PRZM Intelligent Imaging dekoduje zniszczone, wyblakłe, niskokontrastowe i błyszczące kody. Natywna obsługa Digimarc — niewidzialnych kodów kreskowych drukowanych na całym opakowaniu.
 
-Opcja EAS (Electronic Article Surveillance) — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wariant HD zoptymalizowany do małych kodów laboratoryjnych i farmaceutycznych (DataMatrix GS1 na opakowaniach leków). Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485.
+Opcja EAS (Electronic Article Surveillance) — dezaktywacja plakietek antykradzieżowych Checkpoint bezpośrednio przy kasie. Wariant HD to wersja DS9908-HD for Labs w kolorze Alpine White, z białym oświetleniem: czyta małe kody o wysokiej gęstości, np. na szkiełkach mikroskopowych, i kody na zakrzywionych butelkach z lekami. Interfejsy USB, RS-232, Keyboard Wedge i TGCS (IBM) 46xx RS485.
 
-Koszt posiadania (TCO): skaner Zebra DS9908 z gwarancją 5 lat — najdłuższa w kategorii skanerów prezentacyjnych. Natywny tryb hybrydowy eliminuje potrzebę osobnego skanera ręcznego i prezentacyjnego. Serwis w Polsce: serwis-zebry.pl.
+Koszt posiadania (TCO): skaner Zebra DS9908 z gwarancją 5 lat. Natywny tryb hybrydowy eliminuje potrzebę osobnego skanera ręcznego i prezentacyjnego. Serwis w Polsce: serwis-zebry.pl.
 
-Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacyjnych. Pełna dokumentacja w języku polskim dostępna na stronie serwis-zebry.pl.`,
+Gwarancja: 60 miesięcy (5 lat) od daty wysyłki. Pełna dokumentacja w języku polskim dostępna na stronie serwis-zebry.pl.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-prezentacyjne'],
     manufacturerId: 'zebra',
-    priceFrom: 1169,
+    priceFrom: 1017.76,
     images: [
       '/images/products/zebra-ds9908-3.png',
       '/images/products/zebra-ds9908-2.png',
@@ -18638,10 +18645,10 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       { name: 'Sensor', value: 'Megapikselowy 1280 × 800 px' },
       { name: 'Procesor', value: '800 MHz' },
       { name: 'Pole widzenia', value: '48° (poziom) × 30,6° (pion)' },
-      { name: 'Prędkość skanowania', value: 'do 610 cm/s (tryb automatyczny)' },
+      { name: 'Prędkość skanowania', value: 'do 610 cm/s w trybie prezentacyjnym (UPC 13 mil, tryb zoptymalizowany)' },
       { name: 'Minimalna rozdzielczość', value: '3 mil (Code 39)' },
       { name: 'Minimalny kontrast', value: '16% różnicy reflektancji' },
-      { name: 'Oświetlenie', value: 'Amber LED 617 nm (koliste) + 2× Red LED 645 nm' },
+      { name: 'Celownik i oświetlenie', value: 'Celownik: okrąg, bursztynowa dioda LED 617 nm; oświetlenie: 2 czerwone diody LED 645 nm. DS9908-HD for Labs: zielony celownik LED 528 nm i 2 diody LED o ciepłej, białej barwie' },
       { name: 'Zasięg — UPC 13 mil', value: '0 – 62,7 cm' },
       { name: 'Zasięg — Code 128 5 mil', value: '2,5 – 18 cm' },
       { name: 'Zasięg — DataMatrix 10 mil', value: '3,3 – 23,6 cm' },
@@ -18670,7 +18677,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       {
         partNumber: 'DS9908-SR00004ZZWW',
         name: 'DS9908 SR — sam skaner',
-        priceFrom: 1169,
+        priceFrom: 1017.76,
         availability: 'available',
         attributes: {
           'Imager': 'SR',
@@ -18679,7 +18686,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       {
         partNumber: 'DS9908-SR4U2100AZW',
         name: 'DS9908 SR — zestaw z kablem USB',
-        priceFrom: 1229,
+        priceFrom: 1069.41,
         availability: 'available',
         attributes: {
           'Imager': 'SR',
@@ -18689,8 +18696,8 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       {
         partNumber: 'DS9908-HD4000WZZWW',
         name: 'DS9908-HD for Labs, Alpine White — sam skaner',
-        priceFrom: 1216,
-        availability: 'available',
+        priceFrom: 1017.76,
+        availability: 'unavailable',
         attributes: {
           'Imager': 'HD',
         },
@@ -18698,7 +18705,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       {
         partNumber: 'DS9908-SR00004ZCWW',
         name: 'DS9908 SR + EAS — sam skaner',
-        priceFrom: 1235,
+        priceFrom: 1075.16,
         availability: 'unavailable',
         attributes: {
           'Imager': 'SR',
@@ -18708,7 +18715,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       {
         partNumber: 'DS9908-SR4R0110AZE',
         name: 'DS9908 SR — zestaw z kablem RS232 + zasilacz',
-        priceFrom: 1295,
+        priceFrom: 1126.8,
         availability: 'unavailable',
         attributes: {
           'Imager': 'SR',
@@ -18743,7 +18750,6 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Upadek': '1,5 m',
             'Waga': '330 g',
             'Gwarancja': '5 lat',
-            'Cena od': '1 169 zł',
           },
         },
         {
@@ -18753,7 +18759,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Typ': 'Ręczny + podstawka',
             'Tryb hands-free': 'Z podstawką',
             'Sensor': '1280×800 (megapikselowy)',
-            'Pole widzenia': '42° H',
+            'Pole widzenia': '31,6° H',
             'Bluetooth': 'Nie',
             'RFID (opcja)': 'Nie',
             'Digimarc': 'Tak',
@@ -18762,7 +18768,6 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Upadek': '1,8 m',
             'Waga': '162 g',
             'Gwarancja': '5 lat',
-            'Cena od': '814 zł',
           },
         },
         {
@@ -18772,7 +18777,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Typ': 'Ręczny',
             'Tryb hands-free': 'Z podstawką',
             'Sensor': '640×480',
-            'Pole widzenia': '42° H',
+            'Pole widzenia': '32,8° H',
             'Bluetooth': 'Nie',
             'RFID (opcja)': 'Nie',
             'Digimarc': 'Nie',
@@ -18781,7 +18786,6 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Upadek': '1,5 m',
             'Waga': '162 g',
             'Gwarancja': '5 lat',
-            'Cena od': '352 zł',
           },
         },
         {
@@ -18799,7 +18803,6 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
             'Upadek': '1,8 m',
             'Waga': '235 g',
             'Gwarancja': '3 lata',
-            'Cena od': 'wycofany',
           },
         },
       ],
@@ -18823,7 +18826,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         question: 'Czym jest technologia Digimarc i czy warto?',
-        answer: 'Digimarc to „niewidzialne kody kreskowe" drukowane na całym opakowaniu produktu — skaner nie musi szukać kodu w konkretnym miejscu. DS9908 natywnie odczytuje Digimarc. Technologia jest wdrażana przez Walmart, Procter & Gamble i inne sieci — inwestycja w DS9908 przygotowuje sklep na przyszłość.',
+        answer: 'Digimarc to „niewidzialne kody kreskowe" drukowane na całym opakowaniu produktu — skaner nie musi szukać kodu w konkretnym miejscu. DS9908 natywnie odczytuje Digimarc.',
       },
       {
         question: 'Jak działa przełączanie między trybem ręcznym a hands-free?',
@@ -18835,11 +18838,11 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         question: 'Jaka jest gwarancja na DS9908?',
-        answer: 'Standardowa gwarancja Zebra na DS9908 wynosi 60 miesięcy (5 lat) od daty zakupu — najdłuższa w kategorii skanerów prezentacyjnych. Dodatkowo dostępne są kontrakty serwisowe Zebra OneCare z naprawą w 3 dni robocze.',
+        answer: 'Standardowa gwarancja Zebra na DS9908 wynosi 60 miesięcy (5 lat) od daty wysyłki. Zebra zaleca też usługi serwisowe Zebra OneCare Select i Essential.',
       },
       {
         question: 'Czy DS9908 można zintegrować z kasą fiskalną i systemem POS?',
-        answer: 'Tak — DS9908 obsługuje 97 układów klawiatury międzynarodowych (w tym polski). Interfejs Keyboard Wedge emuluje klawiaturę (plug & play z każdą kasą fiskalną). USB i RS-232 zapewniają kompatybilność z systemami POS (Subiekt, WMS, SAP). Konfiguracja za pomocą 123Scan (narzędzie Zebra do szybkiego wdrażania wielu skanerów).',
+        answer: 'Tak — DS9908 obsługuje ponad 90 międzynarodowych układów klawiatury (w tym polski). Interfejs Keyboard Wedge emuluje klawiaturę (plug & play z każdą kasą fiskalną). USB i RS-232 zapewniają kompatybilność z systemami POS (Subiekt, WMS, SAP). Konfiguracja za pomocą 123Scan (narzędzie Zebra do szybkiego wdrażania wielu skanerów).',
       },
       {
         question: 'Gdzie serwisować skaner Zebra DS9908 w Polsce?',
@@ -18847,15 +18850,16 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       },
       {
         question: 'Jakie są alternatywy dla Zebra DS9908?',
-        answer: 'Ekonomiczny prezentacyjny: [DS9308](/produkt/zebra-ds9308) (od 995 zł) — kompaktowy, szersze FOV, ale bez trybu ręcznego i RFID. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) (od 814 zł) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy: [DS8288](/produkt/zebra-ds8288) (od 2 243 zł, z bazą i kablem USB od 3 072 zł) — Bluetooth 5.2, ale 3 lata gwarancji zamiast 5. Zewnętrzni konkurenci: Datalogic Magellan 1500i (tańsza, ale 3 lata gwarancji), Honeywell Genesis XP 7680g.',
+        answer: 'Kompaktowy prezentacyjny: [DS9308](/produkt/zebra-ds9308) — szersze pole widzenia, ale bez trybu ręcznego i RFID. Ręczny uniwersalny: [DS4608](/produkt/zebra-ds4608) — lżejszy, ale bez natywnego hands-free. Bezprzewodowy: [DS8288](/produkt/zebra-ds8288) — Bluetooth 5.2, 3 lata gwarancji. Inni producenci: Datalogic Magellan 1500i, Honeywell Genesis XP 7680g.',
       },
     ],
     downloads: [
       { name: 'Instrukcja obsługi (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-ds9908/instrukcja-po-polsku', size: 'Online' },
-      { name: 'Karta katalogowa (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/en/spec-sheets/ds9908-ds9908r-spec-sheet-pl-pl.pdf', size: '0.5 MB' },
-      { name: 'Strona produktu Zebra DS9908 (EN)', type: 'manual', url: 'https://www.zebra.com/pl/pl/products/scanners/general-purpose-hands-free-scanners/ds9900-series/ds9908.html', size: 'Online' },
+      { name: 'Przewodnik akcesoriów Zebra DS9908 (EN)', type: 'pdf', url: '/downloads/zebra-ds9908-akcesoria-en.pdf', size: '494 KB' },
+      { name: 'Czyszczenie i dezynfekcja skanerów Zebra Healthcare i DS9908-HD for Labs (EN)', type: 'pdf', url: '/downloads/zebra-skanery-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '424 KB' },
     ],
     createdAt: '2026-02-28',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-ds9308',
@@ -51720,7 +51724,7 @@ Komunikacja z komputerem przez kabel USB (CBA-U21-S07ZBR) lub RS232 (CBA-R07-S07
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     manufacturerId: 'zebra',
-    priceFrom: 142,
+    priceFrom: 138.74,
     images: ['/images/products/BTRY-DS22EAB0E-00.png'],
     imageDescriptions: ['Akumulator Zebra BTRY-DS22EAB0E-00 Li-Ion 2400 mAh do skanera bezprzewodowego DS2278'],
     tags: ['retail'] as ProductTag[],
@@ -51815,7 +51819,7 @@ Bluetooth 5.2 BLE — parowanie i komunikacja z bazą. Stacja dołączona w wari
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     manufacturerId: 'zebra',
-    priceFrom: 262,
+    priceFrom: 256.18,
     images: ['/images/products/BTRY-DS82EAB0E-00.png'],
     imageDescriptions: ['Akumulator Zebra BTRY-DS82EAB0E-00 Li-Ion 3500 mAh do skanera bezprzewodowego DS8288'],
     tags: ['retail', 'logistyka'] as ProductTag[],
@@ -51968,7 +51972,7 @@ Przewód łączy z komputerem lub kasą POS skanery przewodowe [DS2208](/produkt
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
     manufacturerId: 'zebra',
-    priceFrom: 88,
+    priceFrom: 87.2,
     images: ['/images/products/CBA-U21-S07ZBR.png'],
     imageDescriptions: ['Przewód USB Zebra CBA-U21-S07ZBR — szary przewód z wtyczką USB-A i wtyczką modułową skanera'],
     tags: ['retail', 'magazyn'],
@@ -51979,7 +51983,7 @@ Przewód łączy z komputerem lub kasą POS skanery przewodowe [DS2208](/produkt
       { name: 'Part Number', value: 'CBA-U21-S07ZBR' },
       { name: 'Typ złącza', value: 'USB Type A' },
       { name: 'Długość', value: '2,1 m (7 ft)' },
-      { name: 'Kompatybilność', value: 'DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308, Zebra SP7201-H, SP7208-H; wersje dla ochrony zdrowia: DS2208-HC, DS4608-HC, DS8208-HC' },
+      { name: 'Kompatybilność', value: 'DS2208, DS2278, DS4678, DS8178, DS8108, DS4608, DS9308, Zebra SP7201-H, SP7208-H; wersje dla ochrony zdrowia: DS2208-HC, DS4608-HC, DS8208-HC oraz stacje skanerów DS2278-HC i DS8288-HC' },
       { name: 'Wykrywanie hosta', value: 'Automatyczne (autowykrywanie)' },
     ],
     applications: ['Skaner ręczny DS2208 lub DS4608 przy komputerze', 'Baza skanera bezprzewodowego DS2278 przy kasie', 'Skaner ladowy SP72 zasilany z portu USB'],

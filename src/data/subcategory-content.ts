@@ -2400,7 +2400,7 @@ Odporność mechaniczna: model standardowy – upadek z 1,0–1,5 m, brak uszcze
         },
         {
           title: 'Wersje skanerów dla ochrony zdrowia mają własne listy środków do dezynfekcji',
-          text: 'Zebra publikuje dla skanerów z dopiskiem HC osobne listy zatwierdzonych środków czyszczących i dezynfekujących dla każdej rodziny. Listy się różnią: dla DS2208-HC są to m.in. 3% roztwór nadtlenku wodoru i łagodny płyn do naczyń, a dla DS8208-HC także 91% alkohol izopropylowy. Środki spoza listy mogą uszkodzić obudowę i unieważnić gwarancję.',
+          text: 'Zebra publikuje dla skanerów z dopiskiem HC listy zatwierdzonych środków czyszczących i dezynfekujących: osobne dla DS2200-HC i DS4600-HC oraz wspólną dla DS82-HC, DS8100-HC i CS60-HC. Listy się różnią: dla DS2208-HC są to m.in. 3% roztwór nadtlenku wodoru i łagodny płyn do naczyń, a dla DS8208-HC także 91% alkohol izopropylowy. Środki spoza listy mogą uszkodzić obudowę i unieważnić gwarancję.',
         },
       ],
     },
