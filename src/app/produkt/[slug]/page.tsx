@@ -929,7 +929,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               <section id="pliki">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
                 {fileDownloads.length > 0 && (
-                  <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     {fileDownloads.map((download, i) => (
                       <DownloadCard key={i} download={download} />
                     ))}
@@ -962,7 +962,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   <div id="sterowniki" className="mt-8">
                     <h3 className="text-xl font-bold text-gray-900">Sterowniki</h3>
                     <p className="mt-1 mb-4 text-sm text-gray-600">Wybierz wersję dla swojego systemu operacyjnego.</p>
-                    <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                       {driverDownloads.map((download, i) => (
                         <DownloadCard key={i} download={download} />
                       ))}

@@ -20,7 +20,7 @@ export default function DownloadCard({ download }: { download: Download }) {
     <a
       href={download.url}
       {...(isExternal ? { target: '_blank', rel: externalRel } : {})}
-      className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
+      className="flex min-w-0 items-center gap-3 p-3 sm:gap-4 sm:p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group"
     >
       <div className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white transition-colors">
         <DownloadIcon size={24} />

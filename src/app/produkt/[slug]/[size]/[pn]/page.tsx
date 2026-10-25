@@ -878,7 +878,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
           {product.downloads.length > 0 && (
             <section id="pliki">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Pliki do pobrania</h2>
-              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {product.downloads.map((d, i) => {
                   const isExternal = d.url.startsWith('http')
                   return (
