@@ -31,7 +31,7 @@ Funkcja TPH Care w czasie druku kontroluje głowicę i wykrywa uszkodzone punkty
   priceFrom: 911.49,
   images: ['/images/products/TL241-A001-0002.png', '/images/products/TL241-A001-0002-2.png', '/images/products/TL241-A001-0002-3.png'],
   imageDescriptions: [
-    'TSC TL241 — czarna biurkowa drukarka etykiet 4", widok z przodu pod kątem: okienko kontroli materiału w pokrywie i włącznik z diodą',
+    'TSC TL241 — czarna biurkowa drukarka etykiet 4", widok z przodu pod kątem: okienko kontroli materiału w pokrywie i przycisk podawania z diodą',
     'TSC TL241 — widok z przodu z wydrukowaną etykietą z kodem kreskowym w szczelinie wydruku',
     'TSC TL241 — otwarta pokrywa: mechanizm głowicy z założoną taśmą barwiącą i rolka etykiet w komorze materiału',
   ],
@@ -118,7 +118,7 @@ Funkcja TPH Care w czasie druku kontroluje głowicę i wykrywa uszkodzone punkty
     },
     {
       question: 'Jak podłączyć TL341 do sieci i zarządzać nim zdalnie?',
-      answer: 'TL341 ma wbudowany port Ethernet 10/100 Mb/s oraz USB 2.0. Wersje z Wi-Fi lub Bluetooth nie są dostępne. W programie TSC Console drukarkę dodaje się po adresie IP. Program pokazuje stan urządzenia, zmienia ustawienia i aktualizuje firmware. Moduł TPH Care w tym programie pokazuje wadliwe punkty głowicy.',
+      answer: 'TL341 ma wbudowany port Ethernet 10/100 Mb/s oraz USB 2.0. Oferowana wersja nie ma Wi-Fi ani Bluetooth. W programie TSC Console drukarkę dodaje się po adresie IP. Program pokazuje stan urządzenia, zmienia ustawienia i aktualizuje firmware. Moduł TPH Care w tym programie pokazuje wadliwe punkty głowicy.',
     },
     {
       question: 'Czy głowicę w TSC TL241 można wymienić samodzielnie?',
@@ -126,7 +126,7 @@ Funkcja TPH Care w czasie druku kontroluje głowicę i wykrywa uszkodzone punkty
     },
     {
       question: 'Dlaczego w ofercie nie ma modeli TSC TL240 i TL340?',
-      answer: 'TL240 i TL340 to odmiany wyposażone wyłącznie w USB, z 16 MB pamięci Flash. Ich certyfikaty nie obejmują znaku CE. Sprzedajemy TL241 i TL341, które mają dodatkowo Ethernet, 128 MB pamięci Flash i znak CE klasy A.',
+      answer: 'TL240 i TL340 to odmiany bez portu Ethernet, z 16 MB pamięci Flash. Ich certyfikaty nie obejmują znaku CE. Sprzedajemy TL241 i TL341, które mają dodatkowo Ethernet, 128 MB pamięci Flash i znak CE klasy A.',
     },
     {
       question: 'Jakie są alternatywy dla TSC TL241?',
@@ -159,7 +159,7 @@ Do obsługi służy jeden przycisk i trójkolorowa dioda stanu. Głowicę można
   priceFrom: 1497.57,
   images: ['/images/products/DL241-A001-0002.png', '/images/products/DL241-A001-0002-2.png', '/images/products/DL241-A001-0002-3.png'],
   imageDescriptions: [
-    'TSC DL241 — czarna termiczna drukarka etykiet 4", widok z przodu pod kątem: logo TSC, przycisk z diodą w pokrywie i zielone zatrzaski',
+    'TSC DL241 — czarna termiczna drukarka etykiet 4", widok z przodu pod kątem: logo TSC, przycisk z diodą w pokrywie i zielona dźwignia otwierania pokrywy',
     'TSC DL241 — widok z przodu z etykietą z kodem kreskowym wysuwaną ze szczeliny wydruku',
     'TSC DL241 — otwarta pokrywa: rolka etykiet termicznych na trzpieniu i wysunięta taśma etykiet',
   ],
@@ -240,7 +240,7 @@ Do obsługi służy jeden przycisk i trójkolorowa dioda stanu. Głowicę można
     },
     {
       question: 'Jak zarządzać drukarką DL241 w sieci?',
-      answer: 'DL241 ma port Ethernet 10/100 Mb/s i USB 2.0; nie ma Wi-Fi ani Bluetooth. Po dodaniu drukarki po adresie IP w programie TSC Console można zmieniać prędkość i zaczernienie, wykonać kalibrację, wgrywać czcionki i aktualizować firmware.',
+      answer: 'DL241 w oferowanej wersji ma port Ethernet 10/100 Mb/s i USB 2.0. Nie ma Wi-Fi ani Bluetooth. Po dodaniu drukarki po adresie IP w programie TSC Console można zmieniać prędkość i zaczernienie, wykonać kalibrację, wgrywać czcionki i aktualizować firmware.',
     },
     {
       question: 'Co sprawdza funkcja TPH Care w DL241?',
@@ -248,7 +248,7 @@ Do obsługi służy jeden przycisk i trójkolorowa dioda stanu. Głowicę można
     },
     {
       question: 'Dlaczego w ofercie nie ma modelu TSC DL240?',
-      answer: 'Model DL240 łączy się tylko przez USB i ma 16 MB pamięci. Znak CE nie występuje na liście jego certyfikatów. Oferowany DL241 ma też port Ethernet, 8 razy więcej pamięci Flash (128 MB) i znak CE klasy A.',
+      answer: 'Model DL240 nie ma portu Ethernet i ma 16 MB pamięci Flash. Znak CE nie występuje na liście jego certyfikatów. Oferowany DL241 ma port Ethernet, 8 razy więcej pamięci Flash (128 MB) i znak CE klasy A.',
     },
     {
       question: 'Jakie są alternatywy dla TSC DL241?',
