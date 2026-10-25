@@ -197,6 +197,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     '/images/products/ZQ62-HUXAE04-00-4.png',
     '/images/products/ZQ62-HUXAE04-00-5.png',
     '/images/products/ZQ62-HUXAE04-00-6.png',
+    '/images/products/ZQ62-HUXAE04-00-7.png',
   ],
   imageDescriptions: [
     'Zebra ZQ620 Plus-HC — mobilna drukarka 3" w kolorystyce dla ochrony zdrowia, widok z przodu pod kątem',
@@ -205,6 +206,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     'Zebra ZQ620 Plus-HC z etykietą w szczelinie wydruku, na wyświetlaczu stan gotowości — widok z przodu',
     'Zebra ZQ620 Plus-HC z baterią i klipsem do paska — elementy zestawu',
     'Zebra ZQ620 Plus-HC i ZQ610 Plus-HC (z prawej, sprzedawana osobno) — porównanie wielkości',
+    'Zebra ZQ620 Plus-HC — widok pod kątem od prawego boku obudowy',
   ],
   tags: ['healthcare'],
   availability: 'available',

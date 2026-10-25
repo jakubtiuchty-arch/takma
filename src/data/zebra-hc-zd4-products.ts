@@ -29,6 +29,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     '/images/products/ZD4AH22-D0EE00EZ-3.png',
     '/images/products/ZD4AH22-D0EE00EZ-4.png',
     '/images/products/ZD4AH22-D0EE00EZ-5.png',
+    '/images/products/ZD4AH22-D0EE00EZ-6.png',
   ],
   imageDescriptions: [
     'Zebra ZD411-HC — biała drukarka termiczna 2", widok z przodu pod kątem, przezroczysta pokrywa komory etykiet',
@@ -36,6 +37,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     'Zebra ZD411-HC z wydrukowaną etykietą na próbkę, widok pod kątem',
     'Zebra ZD411-HC — widok z tyłu: gniazdo zasilania, porty USB i gniazdo modułu łączności',
     'Zebra ZD411-HC na podstawie z baterią (bateria i podstawa sprzedawane osobno)',
+    'Zebra ZD411-HC — widok pod kątem od prawego boku obudowy, z przezroczystą pokrywą komory etykiet',
   ],
   tags: ['healthcare'],
   availability: 'available',
