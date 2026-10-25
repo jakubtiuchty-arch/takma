@@ -355,7 +355,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const ribbonFormat = isRibbon ? (variant.attributes['Format'] ?? '') : ''
   const ribbonPrinterHint = !isRibbon ? null
     : /kartrid/i.test(ribbonFormat)
-      ? 'Kartridż do drukarki Zebra ZD421c z mechanizmem kartridżowym. Nie pasuje do ZD421t, ZD611t ani ZD621t z taśmą w rolce.'
+      ? 'Kartridż do drukarek Zebra ZD421c i ZD421C-HC z mechanizmem kartridżowym. Nie pasuje do ZD421t, ZD611t ani ZD621t z taśmą w rolce.'
     : /P4T/i.test(ribbonFormat)
       ? 'Rolka 30 m do drukarek mobilnych Zebra P4T i RP4T. Nie pasuje do drukarek biurkowych ani przemysłowych.'
     : ribbonCoreMm === 12
@@ -849,9 +849,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     cat === 'midRange' ? 'Mid-range' :
                     cat === 'industrial' ? 'Industrialne' : 'Mobilne'
                   // Formaty specjalne taśm mają własną, wąską zgodność niezależnie od listy serii:
-                  // kartridż CT tylko ZD421c, rolka 30 m tylko P4T/RP4T (audyt ZD421t, ZD-01)
+                  // kartridż CT tylko ZD421c i ZD421C-HC, rolka 30 m tylko P4T/RP4T (audyt ZD421t, ZD-01)
                   const models = /kartrid/i.test(ribbonFormat)
-                    ? (cat === 'desktop' ? ['ZD421c'] : [])
+                    ? (cat === 'desktop' ? ['ZD421c', 'ZD421C-HC'] : [])
                     : /P4T/i.test(ribbonFormat)
                       ? (cat === 'mobile' ? ['P4T', 'RP4T'] : [])
                       : ctx.series.compatiblePrinters[cat]

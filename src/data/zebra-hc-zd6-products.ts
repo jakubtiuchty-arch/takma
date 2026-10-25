@@ -3,6 +3,7 @@ import type { Product } from './products'
 // Drukarki biurkowe Zebra ZD611-HC i ZD621-HC dla ochrony zdrowia (25.10.2026).
 // Ceny i stany na karcie aktualizuje /api/stock; priceFrom to wartość startowa z API z 24.10.2026.
 // Tylko PN w wersji EZ z ceną w API. Konfiguracje PN, źródła i decyzje: docs/catalog/zebra-hc-2026-10-25/H2.md.
+// ZD6AH42-D0EL02EZ dodany 25.10.2026: docs/catalog/hc-producenci-2026-10-25/J4.md.
 export const zebraHcZd6Products: Product[] = [
   {
     id: 'zebra-zd611-hc',
@@ -191,7 +192,7 @@ Każda konfiguracja ma Ethernet, USB 2.0 i USB Host. Moduł Wi-Fi 802.11ac z Blu
       { name: 'Instrukcja obsługi Zebra ZD611t (PL) — także ZD611t-HC', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd611t/instrukcja-po-polsku', size: 'Online' },
       { name: 'Sterowniki i dokumentacja Zebra ZD611 / ZD611-HC', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/desktop/zd611.html', size: 'Online' },
     ],
-    relatedProducts: ['zebra-zd411-hc', 'zebra-zd611r', 'zebra-zd411d', 'zebra-zd411t'],
+    relatedProducts: ['zebra-zd411-hc', 'tsc-th220thc', 'tsc-dh220thc', 'tsc-dh220lhc', 'sato-ws2-2', 'zebra-zd611r', 'zebra-zd411d', 'zebra-zd411t'],
     createdAt: '2026-10-25',
   },
   {
@@ -200,7 +201,7 @@ Każda konfiguracja ma Ethernet, USB 2.0 i USB Host. Moduł Wi-Fi 802.11ac z Blu
     name: 'Zebra ZD621-HC',
     seoH1: 'Zebra ZD621-HC',
     seoTitle: 'Zebra ZD621-HC — 4-calowa drukarka etykiet dla szpitali',
-    seoDescription: 'Szpitalna drukarka etykiet Zebra ZD621-HC: 4 cale, kolorowy ekran dotykowy 4,3", wersja termiczna ZD621d-HC i termotransferowa ZD621t-HC, rozdzielczość 203/300 dpi, Ethernet i RS-232 w standardzie, zasilacz zgodny z IEC 60601-1. Drukarka etykiet Zebra ZD621-HC, drukarka biurkowa Zebra ZD621-HC, drukarka Zebra dla szpitali, ZD621-HC Zebra. PN: ZD6AH42-D0EF00EZ, ZD6AH43-D0EF00EZ, ZD6AH42-30EF00EZ, ZD6AH43-30EF00EZ, ZD6AH43-30EL02EZ.',
+    seoDescription: 'Szpitalna drukarka etykiet Zebra ZD621-HC: 4 cale, kolorowy ekran dotykowy 4,3", wersja termiczna ZD621d-HC i termotransferowa ZD621t-HC, rozdzielczość 203/300 dpi, Ethernet i RS-232 w standardzie, zasilacz zgodny z IEC 60601-1. Drukarka etykiet Zebra ZD621-HC, drukarka biurkowa Zebra ZD621-HC, drukarka Zebra dla szpitali, ZD621-HC Zebra. PN: ZD6AH42-D0EF00EZ, ZD6AH43-D0EF00EZ, ZD6AH42-D0EL02EZ, ZD6AH42-30EF00EZ, ZD6AH43-30EF00EZ, ZD6AH43-30EL02EZ.',
     shortDescription: 'Zebra ZD621-HC — 4-calowa drukarka biurkowa dla ochrony zdrowia: kolorowy ekran dotykowy 4,3 cala, druk do 203 mm/s, Ethernet i RS-232, tworzywa przystosowane do dezynfekcji i czyszczenia UV.',
     description: `Zebra ZD621-HC to 4-calowa drukarka biurkowa przeznaczona dla ochrony zdrowia. Jest następcą serii ZD620 i ma o 30% większą moc obliczeniową niż drukarki ZD620. Służy do druku etykiet na leki wydawane na receptę, próbki laboratoryjne, worki z krwią i płynami infuzyjnymi, dokumentację pacjenta i sprzęt oraz do druku opasek identyfikacyjnych.
 
@@ -208,7 +209,7 @@ Każda wersja ma w standardzie kolorowy ekran dotykowy LCD 4,3 cala oraz 3 przyc
 
 Obudowa ZD621-HC jest biała, łatwa w czyszczeniu i przystosowana do środków dezynfekcyjnych, a panel przycisków jest uszczelniony. Obudowa wytrzymuje czyszczenie promieniowaniem UV. Zasilacz klasy medycznej spełnia normę IEC 60601-1. Wersja termiczna ZD621d-HC ma komorę materiału zamykaną na klucz i gniazdo zabezpieczenia Kensington.
 
-Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termicznej i do 118 mm w termotransferowej. Wersja termotransferowa pracuje z taśmą 74 m lub 300 m. Ethernet, port szeregowy, USB 2.0 i USB Host są w standardzie. Konfiguracja ZD6AH43-30EL02EZ ma fabrycznie Wi-Fi 802.11ac z Bluetooth 4.1.`,
+Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termicznej i do 118 mm w termotransferowej. Wersja termotransferowa pracuje z taśmą 74 m lub 300 m. Ethernet, port szeregowy, USB 2.0 i USB Host są w standardzie. Konfiguracje ZD6AH42-D0EL02EZ i ZD6AH43-30EL02EZ mają fabrycznie Wi-Fi 802.11ac z Bluetooth 4.1.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['drukarki-dla-sluzby-zdrowia', 'biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'zebra',
@@ -259,7 +260,7 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
       { name: 'Taśma barwiąca (ZD621t-HC)', value: '300 m: średnica zewnętrzna 66 mm, gilza 25,4 mm, stosunek taśmy do materiału 1:4; 74 m: średnica zewnętrzna 34 mm, gilza 12,7 mm, stosunek 1:1; szerokość 33,8–109,2 mm' },
       { name: 'Panel obsługi', value: 'Kolorowy ekran dotykowy LCD 4,3 cala (480 × 272 px), 3 przyciski, 5 ikon stanu' },
       { name: 'Interfejsy w standardzie', value: 'Ethernet, port szeregowy, USB 2.0, USB Host; Bluetooth Low Energy 5 tylko do aplikacji Zebra do konfiguracji drukarki (Android, iOS); znacznik NFC Print Touch' },
-      { name: 'Opcje łączności', value: 'Wi-Fi 802.11ac i Bluetooth 4.1 (podwójny moduł radiowy) — montaż fabryczny (ZD6AH43-30EL02EZ) lub u klienta' },
+      { name: 'Opcje łączności', value: 'Wi-Fi 802.11ac i Bluetooth 4.1 (podwójny moduł radiowy) — montaż fabryczny (ZD6AH42-D0EL02EZ, ZD6AH43-30EL02EZ) lub u klienta' },
       { name: 'Opcje obsługi materiału', value: 'Odklejak z czujnikiem obecności etykiety; obcinak — montaż fabryczny lub u klienta' },
       { name: 'Zabezpieczenie (ZD621d-HC)', value: 'Komora materiału zamykana mechanicznym zamkiem z dwoma kluczami; gniazdo zabezpieczenia Kensington' },
       { name: 'Pamięć', value: '512 MB Flash, 256 MB SDRAM; dla użytkownika 64 MB pamięci nieulotnej i 8 MB SDRAM' },
@@ -299,6 +300,13 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
         name: 'ZD621d-HC — termiczna, 300 dpi',
         attributes: { 'Technologia druku': 'Termiczna', 'Rozdzielczość': '300 dpi' },
         priceFrom: 2453.55,
+        availability: 'unavailable',
+      },
+      {
+        partNumber: 'ZD6AH42-D0EL02EZ',
+        name: 'ZD621d-HC — termiczna, 203 dpi, Wi-Fi',
+        attributes: { 'Technologia druku': 'Termiczna', 'Rozdzielczość': '203 dpi', 'Wi-Fi': 'Tak' },
+        priceFrom: 2930.41,
         availability: 'unavailable',
       },
       {
@@ -364,7 +372,7 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
       },
       {
         question: 'Jak dodać Wi-Fi do ZD621-HC?',
-        answer: 'Fabrycznie Wi-Fi 802.11ac z Bluetooth 4.1 ma ZD6AH43-30EL02EZ. Do pozostałych wersji moduł montuje się u klienta: P1112640-017C do ZD621d-HC lub P1112640-239C do ZD621t-HC.',
+        answer: 'Fabrycznie Wi-Fi 802.11ac z Bluetooth 4.1 mają ZD6AH42-D0EL02EZ (termiczna, 203 dpi) i ZD6AH43-30EL02EZ (termotransferowa, 300 dpi). Do pozostałych wersji moduł montuje się u klienta: P1112640-017C do ZD621d-HC lub P1112640-239C do ZD621t-HC.',
       },
       {
         question: 'Czy ZD621-HC może pracować na wózku bez zasilania z sieci?',
@@ -386,7 +394,7 @@ Drukarka przyjmuje materiał o szerokości od 15 mm do 108 mm w wersji termiczne
       { name: 'Instrukcja obsługi Zebra ZD621t (PL) — także ZD621t-HC', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd621t/instrukcja-po-polsku', size: 'Online' },
       { name: 'Sterowniki i dokumentacja Zebra ZD621 / ZD621-HC', type: 'driver', url: 'https://www.zebra.com/us/en/support-downloads/printers/desktop/zd621.html', size: 'Online' },
     ],
-    relatedProducts: ['zebra-zd421-hc', 'zebra-zd621d', 'zebra-zd621t', 'zebra-zd621r'],
+    relatedProducts: ['zebra-zd421-hc', 'tsc-th240thc', 'tsc-dh240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv', 'zebra-zd621d', 'zebra-zd621t', 'zebra-zd621r'],
     createdAt: '2026-10-25',
   },
 ]

@@ -2186,9 +2186,17 @@ categoryFilters['terminale-sunmi'] = [
   { specKey: 'Klasa szczelności', label: 'Ochrona obudowy', description: 'IP65 chroni przed pyłem i strumieniami wody. IP67 i IP68 obejmują określone warunki zanurzenia. Klasa IP nie określa odporności na upadki.' },
 ]
 
-// Drukarki Zebra HC: rodzaj i technologia z podkategorii kart, szerokość po slugach (karty HC mają różne nazwy wierszy specyfikacji).
+// Drukarki dla ochrony zdrowia (Zebra, TSC, SATO, Honeywell, Citizen): producent z manufacturerId, rodzaj i technologia
+// z podkategorii kart, szerokość po slugach (karty mają różne nazwy wierszy specyfikacji).
 categoryFilters['drukarki-dla-sluzby-zdrowia'] = [
-  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski Z-Band z kartridżów\n• Biurkowa — etykiety i opaski z rolki na stanowisku\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii', derived: [
+  { specKey: 'producent', label: 'Producent', derived: [
+    { value: 'Zebra', manufacturer: 'zebra' },
+    { value: 'TSC', manufacturer: 'tsc' },
+    { value: 'SATO', manufacturer: 'sato' },
+    { value: 'Honeywell', manufacturer: 'honeywell' },
+    { value: 'Citizen', manufacturer: 'citizen' },
+  ] },
+  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski z kartridżów\n• Biurkowa — etykiety i opaski z rolki na stanowisku\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii', derived: [
     { value: 'Drukarka opasek', slugs: ['zebra-zd510-hc'] },
     { value: 'Biurkowa', subcategory: 'biurkowe-drukarki-etykiet' },
     { value: 'Mobilna', subcategory: 'mobilne-drukarki-etykiet' },
@@ -2198,10 +2206,10 @@ categoryFilters['drukarki-dla-sluzby-zdrowia'] = [
     { value: 'Termiczna', subcategory: 'termiczne-drukarki-etykiet' },
     { value: 'Termotransferowa', subcategory: 'termotransferowe-drukarki-etykiet' },
   ] },
-  { specKey: 'szerokosc', label: 'Szerokość druku', description: 'Maksymalna szerokość druku.\n• Opaski — do 30,16 mm\n• 2 cale — do 56 mm\n• 3 cale — do 72 mm\n• 4 cale — do 108 mm', derived: [
+  { specKey: 'szerokosc', label: 'Szerokość druku', description: 'Maksymalna szerokość druku.\n• Opaski z kartridżów — do 30,16 mm\n• 2 cale — ok. 48–57 mm\n• 3 cale — do 72 mm\n• 4 cale — 104–108 mm', derived: [
     { value: 'Opaski (do 30 mm)', slugs: ['zebra-zd510-hc'] },
-    { value: '2 cale', slugs: ['zebra-zd411-hc', 'zebra-zd611-hc', 'zebra-zq610-plus-hc'] },
-    { value: '3 cale', slugs: ['zebra-zq620-plus-hc'] },
-    { value: '4 cale', slugs: ['zebra-zd421-hc', 'zebra-zd621-hc'] },
+    { value: '2 cale', slugs: ['zebra-zd411-hc', 'zebra-zd611-hc', 'zebra-zq610-plus-hc', 'tsc-th220thc', 'tsc-dh220thc', 'tsc-dh220lhc', 'sato-ws2-2'] },
+    { value: '3 cale', slugs: ['zebra-zq620-plus-hc', 'tsc-alpha-30lhc'] },
+    { value: '4 cale', slugs: ['zebra-zd421-hc', 'zebra-zd621-hc', 'tsc-th240thc', 'tsc-dh240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv'] },
   ] },
 ]

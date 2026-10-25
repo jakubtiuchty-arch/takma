@@ -5,6 +5,7 @@ import type { Product } from './products'
 // opisy Zebry do PN u dystrybutorów; ceny i stany z /api/stock z 24.10.2026.
 // ZQ61-HUXAE14-00 pominięty: cyfra „1” w innych PN oznacza pasek na ramię, ale opis Zebry tego PN go nie wymienia.
 // Audyt: docs/catalog/zebra-hc-2026-10-25/H3.md
+// ZQ61-HUWAE04-00 i ZQ62-HUWAE04-00 (Wi-Fi 5 + Bluetooth 4.2) dodane 25.10.2026: docs/catalog/hc-producenci-2026-10-25/J4.md
 
 const SERIES_DATASHEET = { name: 'Karta katalogowa Zebra ZQ6 HC (PL)', type: 'datasheet' as const, url: '/datasheets/zq600-series-hc-spec-sheet-pl-pl.pdf', size: '204 KB' }
 
@@ -14,14 +15,14 @@ const zq610PlusHc: Product = {
   name: 'Zebra ZQ610 Plus-HC',
   shortDescription: 'Zebra ZQ610 Plus-HC — mobilna drukarka termiczna 2" dla ochrony zdrowia: etykiety na próbki przy łóżku pacjenta, obudowa odporna na środki dezynfekcyjne, Wi-Fi 6 lub Bluetooth.',
   seoTitle: 'Zebra ZQ610 Plus-HC — mobilna drukarka etykiet 2" dla służby zdrowia',
-  seoDescription: 'Drukarka mobilna Zebra ZQ610 Plus-HC do etykiet na próbki przy łóżku pacjenta: druk termiczny 48 mm, Wi-Fi 6 lub Bluetooth, tworzywa odporne na dezynfekcję. Drukarka etykiet Zebra ZQ610 Plus-HC, ZQ610 Plus-HC Zebra. PN: ZQ61-HUXAE04-00, ZQ61-HUFAE04-00.',
+  seoDescription: 'Drukarka mobilna Zebra ZQ610 Plus-HC do etykiet na próbki przy łóżku pacjenta: druk termiczny 48 mm, Wi-Fi 6, Wi-Fi 5 lub Bluetooth, tworzywa odporne na dezynfekcję. Drukarka etykiet Zebra ZQ610 Plus-HC, ZQ610 Plus-HC Zebra. PN: ZQ61-HUXAE04-00, ZQ61-HUWAE04-00, ZQ61-HUFAE04-00.',
   description: `Zebra ZQ610 Plus-HC to 2-calowa mobilna drukarka termiczna zaprojektowana dla ochrony zdrowia. Drukuje etykiety na próbki bezpośrednio przy łóżku pacjenta, w miejscu pobrania. Służy też do oznaczania w banku krwi. Zastępuje model ZQ610 Healthcare.
 
 Obudowę wykonano z tworzyw klasy medycznej, odpornych na środki dezynfekcyjne. Drukarkę można bezpiecznie czyścić po każdym użyciu. Z baterią waży 0,6 kg, a klips do paska jest w zestawie, dlatego pracownik nosi ją przy sobie przez całą zmianę.
 
 Rozdzielczość druku wynosi 203 dpi, szerokość do 48 mm, a prędkość do 115 mm/s. Rolka etykiet może mieć do 55,9 mm średnicy. Czujnik obecności etykiety pozwala wydawać etykiety pojedynczo w trybie odklejania.
 
-W tabeli są dwie konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3 albo z samym Bluetooth 4.2. Bezczynna drukarka przechodzi w stan uśpienia i budzi się po otrzymaniu zadania druku przez Wi-Fi lub Bluetooth. Kolorowy wyświetlacz 288 × 240 pikseli zmienia kolor, gdy drukarka wymaga obsługi, np. po otwarciu pokrywy. Zasilacz zgodny z normą IEC 60601 jest sprzedawany osobno.`,
+W tabeli są trzy konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3, z modułem Wi-Fi 5 (802.11ac) i Bluetooth 4.2 albo z samym Bluetooth 4.2. Bezczynna drukarka przechodzi w stan uśpienia i budzi się po otrzymaniu zadania druku przez Wi-Fi lub Bluetooth. Kolorowy wyświetlacz 288 × 240 pikseli zmienia kolor, gdy drukarka wymaga obsługi, np. po otwarciu pokrywy. Zasilacz zgodny z normą IEC 60601 jest sprzedawany osobno.`,
   categoryId: 'drukarki-etykiet',
   subcategoryIds: ['drukarki-dla-sluzby-zdrowia', 'mobilne-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   manufacturerId: 'zebra',
@@ -69,8 +70,8 @@ W tabeli są dwie konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3 albo z samym 
     { name: 'Obsługa materiału', value: 'Listwa do odrywania; tryb odklejania i podawania etykiet' },
     { name: 'Wyświetlacz', value: 'Kolorowy, 288 × 240 pikseli; zmiana koloru przy wstrzymaniu pracy lub błędzie; menu dostosowywane w WML' },
     { name: 'Przyciski', value: 'Nawigacja 5-kierunkowa, dwa przyciski definiowane programowo' },
-    { name: 'Łączność w oferowanych PN', value: 'ZQ61-HUXAE04-00: Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG); ZQ61-HUFAE04-00: Bluetooth 4.2 (Classic i BLE)' },
-    { name: 'Zabezpieczenia i roaming Wi-Fi', value: 'WPA3, WPA2, WPA; 802.1x; EAP-FAST, EAP-TTLS, EAP-TLS, PEAP, LEAP; szyfrowanie AES i TKIP; roaming 802.11r, 802.11k, 802.11v; buforowanie PMK, OKC' },
+    { name: 'Łączność w oferowanych PN', value: 'ZQ61-HUXAE04-00: Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG); ZQ61-HUWAE04-00: Wi-Fi 5 (802.11ac) z Bluetooth 4.2; ZQ61-HUFAE04-00: Bluetooth 4.2 (Classic i BLE)' },
+    { name: 'Zabezpieczenia i roaming Wi-Fi 6', value: 'WPA3, WPA2, WPA; 802.1x; EAP-FAST, EAP-TTLS, EAP-TLS, PEAP, LEAP; szyfrowanie AES i TKIP; roaming 802.11r, 802.11k, 802.11v; buforowanie PMK, OKC' },
     { name: 'Bluetooth 4.2 (ZQ61-HUFAE04-00)', value: 'Classic i BLE; tryby zabezpieczeń 1–4; certyfikat „Made for iPod/iPhone/iPad”; Key Bonding' },
     { name: 'Zgodne systemy mobilne', value: 'Apple iOS, Android, Windows Mobile' },
     { name: 'Interfejsy przewodowe', value: 'USB 2.0 (12 Mb/s, złącze Mini-B); RS-232C, 14 styków, do 115,2 kb/s; Ethernet 10/100 przez stację' },
@@ -110,6 +111,13 @@ W tabeli są dwie konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3 albo z samym 
       availability: 'available',
     },
     {
+      partNumber: 'ZQ61-HUWAE04-00',
+      name: 'Wi-Fi 5 (802.11ac) + Bluetooth 4.2',
+      attributes: { 'Wi-Fi': 'Wi-Fi 5', 'Bluetooth': '4.2' },
+      priceFrom: 3962.86,
+      availability: 'unavailable',
+    },
+    {
       partNumber: 'ZQ61-HUFAE04-00',
       name: 'Bluetooth 4.2',
       attributes: { 'Bluetooth': '4.2' },
@@ -118,8 +126,8 @@ W tabeli są dwie konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3 albo z samym 
     },
   ],
   variantAttributeTooltips: {
-    'Wi-Fi': 'Moduł Wi-Fi 6 (802.11ax) zainstalowany fabrycznie.\n\nPasma 2,4 i 5 GHz, szybki roaming 802.11r i zabezpieczenia WPA3 — druk z systemu szpitalnego przez sieć placówki.',
-    'Bluetooth': 'Wersja Bluetooth w drukarce.\n\n5.3 — w module z Wi-Fi 6, działa równocześnie z siecią Wi-Fi.\n\n4.2 (Classic i BLE) — jedyny moduł radiowy wersji bez Wi-Fi; parowanie z terminalem lub telefonem przez NFC Print Touch.',
+    'Wi-Fi': 'Moduł Wi-Fi zainstalowany fabrycznie — druk z systemu szpitalnego przez sieć placówki.\n\nWi-Fi 6 (802.11ax) — pasma 2,4 i 5 GHz, szybki roaming 802.11r, zabezpieczenia WPA3.\n\nWi-Fi 5 (802.11ac) — moduł dwuradiowy z Bluetooth 4.2.',
+    'Bluetooth': 'Wersja Bluetooth w drukarce.\n\n5.3 — w module z Wi-Fi 6, działa równocześnie z siecią Wi-Fi.\n\n4.2 — w module z Wi-Fi 5 albo jako jedyny moduł radiowy (Classic i BLE) wersji bez Wi-Fi; parowanie przez NFC Print Touch.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
@@ -142,8 +150,8 @@ W tabeli są dwie konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3 albo z samym 
       answer: 'Wersja HC ma obudowę z tworzyw klasy medycznej odpornych na środki dezynfekcyjne i kolorystykę przeznaczoną dla ochrony zdrowia. Ma też własne akcesoria: baterię BTRY-MPP-34MAHC1-01, zasilacz zgodny z IEC 60601, pasek na ramię i klipsy do paska. Szerokość druku 48 mm, rozdzielczość 203 dpi i prędkość 115 mm/s są takie same jak w [Zebra ZQ610 Plus](/produkt/zebra-zq610-plus).',
     },
     {
-      question: 'Który wariant wybrać: z Wi-Fi 6 czy z Bluetooth?',
-      answer: 'ZQ61-HUXAE04-00 łączy się z siecią Wi-Fi 6 placówki w pasmach 2,4 i 5 GHz i jednocześnie obsługuje Bluetooth 5.3. Taka drukarka odbiera zadania z systemu szpitalnego przez sieć. ZQ61-HUFAE04-00 ma tylko Bluetooth 4.2 i drukuje z terminala lub telefonu, z którym jest sparowana. Obie wersje można podłączyć do sieci przewodowej przez stację Ethernet.',
+      question: 'Który wariant wybrać: z Wi-Fi 6, z Wi-Fi 5 czy z Bluetooth?',
+      answer: 'ZQ61-HUXAE04-00 łączy się z siecią Wi-Fi 6 placówki w pasmach 2,4 i 5 GHz i jednocześnie obsługuje Bluetooth 5.3. Taka drukarka odbiera zadania z systemu szpitalnego przez sieć. ZQ61-HUWAE04-00 pracuje w sieci Wi-Fi 5 (802.11ac) i ma Bluetooth 4.2. ZQ61-HUFAE04-00 ma tylko Bluetooth 4.2 i drukuje z terminala lub telefonu, z którym jest sparowana. Obie wersje można podłączyć do sieci przewodowej przez stację Ethernet.',
     },
     {
       question: 'Jak dezynfekować ZQ610 Plus-HC?',
@@ -176,14 +184,14 @@ const zq620PlusHc: Product = {
   id: 'zebra-zq620-plus-hc',
   slug: 'zebra-zq620-plus-hc',
   name: 'Zebra ZQ620 Plus-HC',
-  shortDescription: 'Zebra ZQ620 Plus-HC — mobilna drukarka termiczna 3" dla ochrony zdrowia: etykiety na worki z krwią i mleko matki w punkcie opieki, Wi-Fi 6 z Bluetooth 5.3.',
+  shortDescription: 'Zebra ZQ620 Plus-HC — mobilna drukarka termiczna 3" dla ochrony zdrowia: etykiety na worki z krwią i mleko matki w punkcie opieki, Wi-Fi 6 lub Wi-Fi 5 z Bluetooth.',
   seoTitle: 'Zebra ZQ620 Plus-HC — mobilna drukarka etykiet 3" dla szpitali',
-  seoDescription: 'Mobilna drukarka Zebra ZQ620 Plus-HC dla szpitali: druk termiczny 72 mm, Wi-Fi 6 i Bluetooth 5.3, obudowa odporna na środki dezynfekcyjne, IP54. Drukarka szpitalna Zebra ZQ620 Plus-HC, drukarka etykiet ZQ620 Plus-HC Zebra. PN: ZQ62-HUXAE04-00.',
+  seoDescription: 'Mobilna drukarka Zebra ZQ620 Plus-HC dla szpitali: druk termiczny 72 mm, Wi-Fi 6 lub Wi-Fi 5 z Bluetooth, obudowa odporna na środki dezynfekcyjne, IP54. Drukarka szpitalna Zebra ZQ620 Plus-HC, drukarka etykiet ZQ620 Plus-HC Zebra. PN: ZQ62-HUXAE04-00, ZQ62-HUWAE04-00.',
   description: `Zebra ZQ620 Plus-HC to mobilna drukarka termiczna dla ochrony zdrowia z szerokością druku 72 mm (3 cale). Służy do oznaczania worków z krwią i pokarmu kobiecego w punkcie opieki. Drukarka obsługuje również mobilne pobieranie próbek. Zastępuje model ZQ620 Healthcare.
 
 Przyjmuje materiał o szerokości 25–79 mm, a średnica rolki może wynosić do 66 mm. Rozdzielczość druku to 203 dpi, a prędkość sięga 115 mm/s. Obsługuje etykiety wycinane, kartoniki i papier paragonowy.
 
-Oferowana konfiguracja ma moduł Wi-Fi 6 (802.11ax) i jednocześnie działający Bluetooth 5.3. Moduł obsługuje szybki roaming 802.11r i zabezpieczenia WPA3. Po wstawieniu drukarki do stacji Ethernet dział IT może zdalnie aktualizować jej oprogramowanie i monitorować stan baterii.
+Konfiguracja ZQ62-HUXAE04-00 ma moduł Wi-Fi 6 (802.11ax) i jednocześnie działający Bluetooth 5.3. Moduł obsługuje szybki roaming 802.11r i zabezpieczenia WPA3. ZQ62-HUWAE04-00 łączy się przez Wi-Fi 5 (802.11ac), a Bluetooth ma w wersji 4.2. Po wstawieniu drukarki do stacji Ethernet dział IT może zdalnie aktualizować jej oprogramowanie i monitorować stan baterii.
 
 Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekcję. Drukarka wytrzymuje wielokrotne upadki z wysokości 1,52 m na beton i waży z baterią 0,73 kg. Wymienna bateria PowerPrecision+ 3250 mAh ładuje się w drukarce. Seria zachowuje zgodność wsteczną z akcesoriami QLn.`,
   categoryId: 'drukarki-etykiet',
@@ -235,9 +243,9 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     { name: 'Obsługa materiału', value: 'Listwa do odrywania; tryb odklejania i podawania etykiet' },
     { name: 'Wyświetlacz', value: 'Kolorowy, 288 × 240 pikseli; zmiana koloru przy wstrzymaniu pracy lub błędzie; menu dostosowywane w WML' },
     { name: 'Przyciski', value: 'Nawigacja 5-kierunkowa, dwa przyciski definiowane programowo' },
-    { name: 'Łączność', value: 'Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG)' },
+    { name: 'Łączność w oferowanych PN', value: 'ZQ62-HUXAE04-00: Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG); ZQ62-HUWAE04-00: Wi-Fi 5 (802.11ac) z Bluetooth 4.2' },
     { name: 'Zgodne systemy mobilne', value: 'Apple iOS, Android, Windows Mobile' },
-    { name: 'Zabezpieczenia i roaming Wi-Fi', value: 'WPA3, WPA2, WPA; 802.1x; EAP-FAST, EAP-TTLS, EAP-TLS, PEAP, LEAP; szyfrowanie AES i TKIP; roaming 802.11r, 802.11k, 802.11v; buforowanie PMK, OKC' },
+    { name: 'Zabezpieczenia i roaming Wi-Fi 6', value: 'WPA3, WPA2, WPA; 802.1x; EAP-FAST, EAP-TTLS, EAP-TLS, PEAP, LEAP; szyfrowanie AES i TKIP; roaming 802.11r, 802.11k, 802.11v; buforowanie PMK, OKC' },
     { name: 'Interfejsy przewodowe', value: 'USB 2.0 (12 Mb/s, złącze Mini-B); RS-232C, 14 styków, do 115,2 kb/s; Ethernet 10/100 przez stację' },
     { name: 'NFC', value: 'Zebra Print Touch: parowanie Bluetooth i strony pomocy' },
     { name: 'Pamięć', value: '256 MB RAM; 512 MB Flash (128 MB dla użytkownika)' },
@@ -274,10 +282,17 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
       priceFrom: 4161.8,
       availability: 'available',
     },
+    {
+      partNumber: 'ZQ62-HUWAE04-00',
+      name: 'Wi-Fi 5 (802.11ac) + Bluetooth 4.2',
+      attributes: { 'Wi-Fi': 'Wi-Fi 5', 'Bluetooth': '4.2' },
+      priceFrom: 4398.1,
+      availability: 'unavailable',
+    },
   ],
   variantAttributeTooltips: {
-    'Wi-Fi': 'Moduł Wi-Fi 6 (802.11ax) zainstalowany fabrycznie, z anteną MIMO.\n\nPracuje w pasmach 2,4 i 5 GHz; roaming 802.11k, 802.11v i 802.11r pomaga utrzymać połączenie, gdy personel przemieszcza się po placówce.',
-    'Bluetooth': 'Bluetooth 5.3 w tym samym module co Wi-Fi 6.\n\nDziała równocześnie z siecią Wi-Fi, np. do druku z terminala mobilnego. Parowanie ułatwia NFC Print Touch.',
+    'Wi-Fi': 'Fabryczny moduł sieci bezprzewodowej ZQ620 Plus-HC.\n\nWi-Fi 6 (802.11ax) — antena MIMO, pasma 2,4 i 5 GHz; roaming 802.11k, 802.11v i 802.11r pomaga utrzymać połączenie, gdy personel przemieszcza się po placówce.\n\nWi-Fi 5 (802.11ac) — moduł dwuradiowy z Bluetooth 4.2.',
+    'Bluetooth': 'Bluetooth w tym samym module co Wi-Fi.\n\n5.3 — w wersji z Wi-Fi 6, działa równocześnie z siecią Wi-Fi, np. do druku z terminala mobilnego.\n\n4.2 — w wersji z Wi-Fi 5. Parowanie ułatwia NFC Print Touch.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
@@ -301,7 +316,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     },
     {
       question: 'Czy ZQ620 Plus-HC można włączyć do sieci szpitala i zarządzać nią zdalnie?',
-      answer: 'Tak. Drukarka pracuje w sieci Wi-Fi 6 i obsługuje uwierzytelnianie 802.1x, m.in. EAP-TLS i PEAP. Narzędzia PrintSecure pozwalają skonfigurować bezpieczne połączenia i blokować nieautoryzowany dostęp. Drukarką można zarządzać w Printer Profile Manager Enterprise oraz w systemach Omnisaa Workspace ONE i SOTI Connect.',
+      answer: 'Tak. ZQ62-HUXAE04-00 pracuje w sieci Wi-Fi 6 i obsługuje uwierzytelnianie 802.1x, m.in. EAP-TLS i PEAP; ZQ62-HUWAE04-00 łączy się z siecią Wi-Fi 5. Narzędzia PrintSecure pozwalają skonfigurować bezpieczne połączenia i blokować nieautoryzowany dostęp. Drukarką można zarządzać w Printer Profile Manager Enterprise oraz w systemach Omnisaa Workspace ONE i SOTI Connect.',
     },
     {
       question: 'Jak nosić ZQ620 Plus-HC podczas obchodu?',
@@ -325,7 +340,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     { name: 'Instrukcja obsługi ZQ620 Plus (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zq620plus/instrukcja-po-polsku', size: 'Online' },
     { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
   ],
-  relatedProducts: ['zebra-zq620-plus', 'zebra-zq511', 'zebra-zq320-plus', 'zebra-zq220-plus'],
+  relatedProducts: ['tsc-alpha-30lhc', 'zebra-zq620-plus', 'zebra-zq511', 'zebra-zq320-plus', 'zebra-zq220-plus'],
   createdAt: '2026-10-25',
   sameAs: 'https://www.zebra.com/pl/pl/products/printers/mobile/zq600-series/zq620-plus-hc.html',
 }

@@ -1067,7 +1067,7 @@ Głowicę drukującą i wałek dociskowy wymienia się bez narzędzi. Tor nośni
       },
       {
         question: 'Gdzie są drukarki etykiet dla szpitali?',
-        answer: 'Drukarki biurkowe i mobilne Zebra HC do etykiet na probówki, leki i opasek z rolki są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
+        answer: 'Drukarki biurkowe i mobilne Zebra HC, TSC, SATO, Honeywell i Citizen do etykiet na probówki, leki i opasek z rolki są w kategorii [drukarki dla służby zdrowia](/drukarki-dla-sluzby-zdrowia).',
       },
     ],
     comparisons: [],

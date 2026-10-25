@@ -16,6 +16,9 @@ import { healthcarePrinterCategory } from './healthcare-printer-category'
 import { zebraHcZd4Products } from './zebra-hc-zd4-products'
 import { zebraHcZd6Products } from './zebra-hc-zd6-products'
 import { zebraHcZq6Products } from './zebra-hc-zq6-products'
+import { tscHcProducts } from './tsc-hc-products'
+import { satoHcProducts } from './sato-hc-products'
+import { honeywellCitizenHcProducts } from './honeywell-citizen-hc-products'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
@@ -53035,11 +53038,11 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     specifications: [
       { name: 'Part Number', value: 'P1112640-233' },
       { name: 'Typ', value: 'Dyspenser / odklejak etykiet' },
-      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t, ZD621t-HC, ZD621R' },
+      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD421C-HC (ZD421-HC na kasety), ZD621t, ZD621t-HC, ZD621R' },
     ],
     applications: ['Odklejanie etykiet', 'Szybkie etykietowanie'],
     compatibleAccessories: [],
-    relatedAccessories: ['zebra-zd621r', 'zebra-zd621-hc'],
+    relatedAccessories: ['zebra-zd621r', 'zebra-zd621-hc', 'zebra-zd421-hc'],
     downloads: [],
     createdAt: '2025-01-01',
   },
@@ -53090,12 +53093,12 @@ Wymiana głowicy to standardowa procedura serwisowa przedłużająca żywotnoś�
     specifications: [
       { name: 'Part Number', value: 'P1112640-239C' },
       { name: 'Typ', value: 'Moduł Wi-Fi' },
-      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD621t, ZD621t-HC, ZD621R — wersja regionalna poza USA, Kanadą i Japonią' },
+      { name: 'Kompatybilność', value: 'Zebra ZD421c, ZD421C-HC (ZD421-HC na kasety), ZD621t, ZD621t-HC, ZD621R — wersja regionalna poza USA, Kanadą i Japonią' },
       { name: 'Instalacja', value: 'Slot modularny, bez narzędzi' },
     ],
     applications: ['Druk bezprzewodowy', 'Druk z urządzeń mobilnych'],
     compatibleAccessories: [],
-    relatedAccessories: ['zebra-zd621r', 'zebra-zd621-hc'],
+    relatedAccessories: ['zebra-zd621r', 'zebra-zd621-hc', 'zebra-zd421-hc'],
     downloads: [],
     createdAt: '2025-01-01',
   },
@@ -95504,9 +95507,9 @@ for (const subcategory of subcategories) {
   }
 }
 
-// Drukarki Zebra HC (ZD4, ZD6, ZQ6) trafiają do podkategorii według `subcategoryIds`, w tym do „Drukarki dla służby zdrowia”.
+// Drukarki dla ochrony zdrowia (Zebra ZD4, ZD6, ZQ6 HC, TSC, SATO, Honeywell, Citizen) trafiają do podkategorii według `subcategoryIds`, w tym do „Drukarki dla służby zdrowia”.
 for (const subcategory of subcategories) {
-  const additions = [...zebraHcZd4Products, ...zebraHcZd6Products, ...zebraHcZq6Products].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  const additions = [...zebraHcZd4Products, ...zebraHcZd6Products, ...zebraHcZq6Products, ...tscHcProducts, ...satoHcProducts, ...honeywellCitizenHcProducts].filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95569,6 +95572,9 @@ const rawProductList: Product[] = [
   ...zebraHcZd4Products,
   ...zebraHcZd6Products,
   ...zebraHcZq6Products,
+  ...tscHcProducts,
+  ...satoHcProducts,
+  ...honeywellCitizenHcProducts,
   ...epsonPosProducts,
   ...epsonPosAccessories,
   ...bixolonPosProducts,

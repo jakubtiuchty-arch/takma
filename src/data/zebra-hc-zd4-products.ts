@@ -4,6 +4,7 @@ import type { Product } from './products'
 // Konfiguracje PN: karty katalogowe ZD411-HC (03.2024) i ZD421-HC (03.2024), strony modeli PL,
 // opisy PN u dystrybutorów; ceny i stany z /api/stock z 24.10.2026.
 // Audyt: docs/catalog/zebra-hc-2026-10-25/H1.md
+// Uzupełnienia 25.10.2026 (ZD421C-HC na kasety, PN z Wi-Fi 5, ZD411-HC z Wi-Fi 6): docs/catalog/hc-producenci-2026-10-25/J4.md
 
 const zd411Hc: Product = {
   id: 'zebra-zd411-hc',
@@ -11,14 +12,14 @@ const zd411Hc: Product = {
   name: 'Zebra ZD411-HC',
   shortDescription: 'Zebra ZD411-HC — 2-calowa drukarka termiczna dla służby zdrowia: etykiety na próbki i leki, opaski dla pacjentów, obudowa odporna na środki odkażające i UV.',
   seoTitle: 'Zebra ZD411-HC — drukarka etykiet 2" dla służby zdrowia',
-  seoDescription: 'Drukarka etykiet Zebra ZD411-HC do szpitali i laboratoriów: druk termiczny 2", 203 lub 300 dpi, Ethernet albo Wi-Fi, zasilacz IEC 60601-1. Drukarka termiczna ZD411-HC Zebra. PN: ZD4AH22-D0EE00EZ, ZD4AH23-D0EE00EZ, ZD4AH22-D0EW02EZ, ZD4AH23-D0EW02EZ.',
+  seoDescription: 'Drukarka etykiet Zebra ZD411-HC do szpitali i laboratoriów: druk termiczny 2", 203 lub 300 dpi, Ethernet, Wi-Fi 5 lub Wi-Fi 6, zasilacz IEC 60601-1. Drukarka termiczna ZD411-HC Zebra. PN: ZD4AH22-D0EE00EZ, ZD4AH23-D0EE00EZ, ZD4AH22-D0EX02EZ, ZD4AH22-D0EW02EZ, ZD4AH23-D0EW02EZ.',
   description: `Zebra ZD411-HC to 2-calowa biurkowa drukarka termiczna w wersji dla placówek ochrony zdrowia. Drukuje bez taśmy barwiącej etykiety przy pobieraniu próbek, etykiety leków wydawanych na receptę, oznaczenia dokumentacji pacjentów i zasobów oraz opaski identyfikacyjne na rękę. Zajmuje mało miejsca: ma 115 mm szerokości i waży 1,0 kg.
 
 Obudowa jest biała i wykonana z tworzyw odpornych na środki odkażające. Przyciski są zamknięte w uszczelnionym panelu, co ułatwia czyszczenie. Tworzywo obudowy jest odporne na promieniowanie UV, dlatego drukarkę można czyścić według procedur z użyciem UV. Zasilacz dołączony do drukarki ma certyfikat IEC 60601-1.
 
 Przy 203 dpi drukarka pracuje z prędkością do 152 mm/s, a przy 300 dpi do 102 mm/s. Szerokość druku wynosi odpowiednio 56 i 54 mm. Materiał może mieć 15–60 mm szerokości, a rolka do 127 mm średnicy.
 
-Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wersje z Wi-Fi 802.11ac i Bluetooth 4.1. Drukarka obsługuje języki ZPL i EPL. Z opcjonalną baterią 2750 mAh można ją przewozić na wózku i drukować przez całą zmianę.`,
+Każda konfiguracja ma USB i USB Host. Sieć zapewnia, zależnie od PN, port Ethernet, Wi-Fi 6 (802.11ax) razem z Bluetooth 5.3 albo Wi-Fi 5 (802.11ac) razem z Bluetooth 4.1. Drukarka obsługuje języki ZPL i EPL. Z opcjonalną baterią 2750 mAh można ją przewozić na wózku i drukować przez całą zmianę.`,
   categoryId: 'drukarki-etykiet',
   subcategoryIds: ['drukarki-dla-sluzby-zdrowia', 'biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   manufacturerId: 'zebra',
@@ -64,7 +65,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     { name: 'Rodzaje materiałów', value: 'Rolka lub składanka; etykiety wycinane lub materiał ciągły, z czarnym znacznikiem lub bez; kartoniki; papier paragonowy; opaski na rękę' },
     { name: 'Czujniki materiału', value: 'Ruchomy czujnik refleksyjny (czarny znacznik) na całej szerokości; wielopozycyjny czujnik transmisyjny (przerwa)' },
     { name: 'Interfejsy standardowe', value: 'USB 2.0, USB Host; Bluetooth Low Energy 5 tylko do aplikacji Zebra do konfiguracji drukarki' },
-    { name: 'Łączność w oferowanych PN', value: 'D0EE00EZ: Ethernet 10/100; D0EW02EZ: Wi-Fi 802.11ac i Bluetooth 4.1' },
+    { name: 'Łączność w oferowanych PN', value: 'D0EE00EZ: Ethernet 10/100; D0EX02EZ: Wi-Fi 6 (802.11ax) i Bluetooth 5.3; D0EW02EZ: Wi-Fi 5 (802.11ac) i Bluetooth 4.1' },
     { name: 'Opcje montowane u klienta', value: 'Ethernet 10/100, port szeregowy RS-232, moduł Wi-Fi 802.11ac z Bluetooth' },
     { name: 'Obsługa materiału (opcje)', value: 'Odklejak z czujnikiem obecności etykiety (fabrycznie lub u klienta); obcinak (u klienta)' },
     { name: 'Panel obsługi', value: 'Pięć ikon stanu, trzy przyciski' },
@@ -107,6 +108,13 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
       availability: 'available',
     },
     {
+      partNumber: 'ZD4AH22-D0EX02EZ',
+      name: '203 dpi, USB + Wi-Fi 6 + Bluetooth 5.3',
+      attributes: { 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 6 + BT 5.3' },
+      priceFrom: 1861.23,
+      availability: 'available',
+    },
+    {
       partNumber: 'ZD4AH22-D0EW02EZ',
       name: '203 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
       attributes: { 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
@@ -123,7 +131,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
   ],
   variantAttributeTooltips: {
     'Rozdzielczość': 'Liczba punktów głowicy na cal szerokości druku.\n\n203 dpi — do 152 mm/s, druk na szerokości 56 mm.\n\n300 dpi — do 102 mm/s, druk na szerokości 54 mm; do drobnego tekstu na wąskich etykietach.',
-    'Łączność': 'Interfejs sieciowy zainstalowany fabrycznie; USB i USB Host ma każda wersja.\n\nEthernet — port sieci przewodowej 10/100, np. do udostępnienia drukarki stanowiskom w sieci placówki.\n\nWi-Fi 5 + BT 4.1 — moduł 802.11ac z Bluetooth 4.1; ta wersja nie ma portu Ethernet.',
+    'Łączność': 'Interfejs sieciowy zainstalowany fabrycznie; USB i USB Host ma każda wersja.\n\nEthernet — port sieci przewodowej 10/100, np. do udostępnienia drukarki stanowiskom w sieci placówki.\n\nWi-Fi 6 + BT 5.3 — fabryczny moduł 802.11ax z Bluetooth 5.3, bez portu Ethernet.\n\nWi-Fi 5 + BT 4.1 — moduł 802.11ac z Bluetooth 4.1; ta wersja również nie ma portu Ethernet.',
   },
   compatibleAccessories: [
     'zebra-z-perform-1000d',
@@ -159,7 +167,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     },
     {
       question: 'Który wariant ma Ethernet, a który Wi-Fi?',
-      answer: 'PN z końcówką D0EE00EZ mają Ethernet 10/100 oraz Bluetooth Low Energy 5 do aplikacji konfiguracyjnej Zebra. PN z końcówką D0EW02EZ mają moduł Wi-Fi 802.11ac z Bluetooth 4.1. Pozostałe interfejsy można dodać później: [moduł Ethernet](/produkt/zebra-interfejs-ethernet-zd411-zd421), [port RS-232](/produkt/zebra-interfejs-rs232-zd411-zd421) lub [moduł Wi-Fi](/produkt/zebra-modul-wifi-zd411-zd421-zd621).',
+      answer: 'PN z końcówką D0EE00EZ mają Ethernet 10/100 oraz Bluetooth Low Energy 5 do aplikacji konfiguracyjnej Zebra. PN z końcówką D0EX02EZ mają fabryczny moduł Wi-Fi 6 (802.11ax) z Bluetooth 5.3, a PN z końcówką D0EW02EZ — moduł Wi-Fi 5 (802.11ac) z Bluetooth 4.1. Pozostałe interfejsy można dodać później: [moduł Ethernet](/produkt/zebra-interfejs-ethernet-zd411-zd421), [port RS-232](/produkt/zebra-interfejs-rs232-zd411-zd421) lub [moduł Wi-Fi](/produkt/zebra-modul-wifi-zd411-zd421-zd621).',
     },
     {
       question: 'Czy ZD411-HC może pracować na baterii?',
@@ -179,7 +187,7 @@ Każda konfiguracja ma USB i USB Host. W tabeli są wersje z Ethernetem oraz wer
     { name: 'Instrukcja obsługi ZD411 (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd411d/instrukcja-po-polsku', size: 'Online' },
     { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
   ],
-  relatedProducts: ['zebra-zd611-hc', 'zebra-zd411d', 'zebra-zd510-hc'],
+  relatedProducts: ['zebra-zd611-hc', 'tsc-dh220thc', 'tsc-th220thc', 'tsc-dh220lhc', 'sato-ws2-2', 'zebra-zd411d', 'zebra-zd510-hc'],
   createdAt: '2026-10-25',
   sameAs: 'https://www.zebra.com/pl/pl/products/printers/desktop/zd400-series/zd411-hc.html',
 }
@@ -188,18 +196,18 @@ const zd421Hc: Product = {
   id: 'zebra-zd421-hc',
   slug: 'zebra-zd421-hc',
   name: 'Zebra ZD421-HC',
-  shortDescription: 'Zebra ZD421-HC — 4-calowa drukarka etykiet dla służby zdrowia, termiczna lub termotransferowa: recepty, próbki, worki z krwią, opaski dla pacjentów.',
+  shortDescription: 'Zebra ZD421-HC — 4-calowa drukarka etykiet dla służby zdrowia: termiczna, termotransferowa na rolki taśmy lub ZD421C-HC na kasety z taśmą; recepty, próbki, worki z krwią, opaski.',
   seoTitle: 'Zebra ZD421-HC — drukarka etykiet 4" dla służby zdrowia',
-  seoDescription: 'Zebra ZD421-HC: drukarka szpitalna 4" w wersji termicznej lub termotransferowej, 203/300 dpi, Ethernet albo Wi-Fi 6. Drukarka termotransferowa Zebra ZD421-HC, ZD421-HC Zebra. PN: ZD4AH42-D0EE00EZ, ZD4AH42-D0EX02EZ, ZD4AH43-D0EE00EZ, ZD4AH42-30EE00EZ, ZD4AH42-30EX02EZ, ZD4AH43-30EE00EZ, ZD4AH43-30EX02EZ.',
-  description: `Zebra ZD421-HC to 4-calowa biurkowa drukarka etykiet dla szpitali, przychodni i laboratoriów. Zastępuje modele ZD420-HC, GK420 i GT800. Drukarka występuje w dwóch wersjach: termicznej oraz termotransferowej na taśmy 74 m i 300 m. Wersja termotransferowa drukuje także bez taśmy, na materiale termicznym.
+  seoDescription: 'Zebra ZD421-HC: drukarka szpitalna 4" w wersji termicznej, termotransferowej lub na kasety z taśmą (ZD421C-HC), 203/300 dpi, Ethernet, Wi-Fi 5 albo Wi-Fi 6. Drukarka termotransferowa Zebra ZD421-HC, drukarka na kasety Zebra ZD421C-HC, ZD421-HC Zebra. PN: ZD4AH42-D0EE00EZ, ZD4AH42-D0EX02EZ, ZD4AH42-D0EW02EZ, ZD4AH43-D0EE00EZ, ZD4AH42-30EE00EZ, ZD4AH42-30EX02EZ, ZD4AH42-30EW02EZ, ZD4AH43-30EE00EZ, ZD4AH43-30EX02EZ, ZD4AH43-30EW02EZ, ZD4AH42-C0EE00EZ, ZD4AH43-C0EE00EZ, ZD4AH42-C0EW02EZ, ZD4AH43-C0EW02EZ.',
+  description: `Zebra ZD421-HC to 4-calowa biurkowa drukarka etykiet dla szpitali, przychodni i laboratoriów. Zastępuje modele ZD420-HC, GK420 i GT800. Występuje w trzech wersjach: termicznej, termotransferowej na rolki taśmy 74 m i 300 m oraz ZD421C-HC na kasety z taśmą 74 m. Kasetę zakłada się w kilka sekund, a chip w kasecie sygnalizuje, kiedy taśmę trzeba wymienić. Wersja na rolki taśmy drukuje także bez taśmy, na materiale termicznym.
 
 Drukarka służy do oznaczania recept, próbek laboratoryjnych, worków z krwią i płynami infuzyjnymi, dokumentacji pacjentów oraz zasobów. Drukuje też opaski identyfikacyjne dla pacjentów.
 
 Biała obudowa z tworzyw przygotowanych do dezynfekcji i uszczelnione przyciski ułatwiają odkażanie. Odporność obudowy na UV pozwala stosować protokoły czyszczenia z użyciem promieniowania UV. Zasilacz ma certyfikat IEC 60601-1.
 
-Rozdzielczość 203 dpi daje prędkość do 152 mm/s i szerokość druku 104 mm. Rozdzielczość 300 dpi daje do 102 mm/s i 108 mm. Wersja termiczna przyjmuje materiał o szerokości 15–108 mm, a termotransferowa 15–112 mm.
+Z głowicą 203 dpi wydruk powstaje w tempie do 152 mm/s na szerokości 104 mm. Głowica 300 dpi pracuje wolniej, do 102 mm/s, a w wersjach termicznej i rolkowej obejmuje 108 mm. Wersja na kasety przyjmuje materiał o szerokości do 118 mm.
 
-USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają Ethernet, a EX02EZ — Wi-Fi 6 (802.11ax) i Bluetooth 5.3. Opcjonalna bateria 2750 mAh i torba z paskiem na ramię pozwalają przenieść drukarkę na miejsce wydruku.`,
+USB i USB Host są w każdej konfiguracji. Końcówka PN EE00EZ oznacza Ethernet, EW02EZ — Wi-Fi 5 (802.11ac) i Bluetooth 4.1, a EX02EZ — Wi-Fi 6 (802.11ax) i Bluetooth 5.3.`,
   categoryId: 'drukarki-etykiet',
   subcategoryIds: ['drukarki-dla-sluzby-zdrowia', 'biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
   manufacturerId: 'zebra',
@@ -207,6 +215,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
   images: [
     '/images/products/ZD4AH42-D0EE00EZ.png',
     '/images/products/ZD4AH42-30EE00EZ.png',
+    '/images/products/ZD4AH42-C0EE00EZ.png',
     '/images/products/ZD4AH42-D0EE00EZ-2.png',
     '/images/products/ZD4AH42-D0EE00EZ-3.png',
     '/images/products/ZD4AH42-30EE00EZ-2.png',
@@ -215,6 +224,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
   imageDescriptions: [
     'Zebra ZD421-HC w wersji termicznej — biało-szara obudowa, widok z przodu pod kątem',
     'Zebra ZD421-HC w wersji termotransferowej — biała obudowa, widok z przodu pod kątem',
+    'Zebra ZD421C-HC (ZD421-HC na kasety z taśmą) — biała obudowa, szary panel przycisków, widok z przodu pod kątem',
     'Zebra ZD421-HC w wersji termicznej z wydrukowaną etykietą na próbkę',
     'Zebra ZD421-HC w wersji termicznej z wydrukowaną etykietą z danymi pacjenta i leku (przykładowy wzór)',
     'Zebra ZD421-HC w wersji termotransferowej, widok od lewej strony',
@@ -228,27 +238,28 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     rodzajDruku: 'Termiczny lub termotransferowy, zależnie od PN',
     rozdzielczosc: '203 lub 300 dpi',
     predkoscDruku: 'Do 152 mm/s (203 dpi); do 102 mm/s (300 dpi)',
-    szerokoscDruku: 'Do 104 mm (203 dpi); do 108 mm (300 dpi)',
-    szerokoscEtykiet: '15–108 mm (termiczna); 15–112 mm (termotransferowa)',
+    szerokoscDruku: 'Do 104 mm (203 dpi); do 108 mm (300 dpi, bez wersji na kasety)',
+    szerokoscEtykiet: '15–108 mm (termiczna); 15–112 mm (rolka taśmy); 15–118 mm (kaseta)',
   },
   specifications: [
     { name: 'Typ urządzenia', value: '4-calowa biurkowa drukarka etykiet w wersji dla ochrony zdrowia' },
-    { name: 'Metoda druku', value: 'PN z D0: termiczna bezpośrednia; PN z 30: termotransferowa na rolkę taśmy 74 lub 300 m, także termiczna bezpośrednia' },
+    { name: 'Metoda druku', value: 'PN z D0: termiczna bezpośrednia; PN z 30: termotransferowa na rolkę taśmy 74 lub 300 m, także termiczna bezpośrednia; PN z C0 (ZD421C-HC): termotransferowa z kasetą taśmy 74 m' },
     { name: 'Rozdzielczość', value: '203 dpi (8 punktów/mm) lub 300 dpi (12 punktów/mm), zależnie od PN' },
     { name: 'Prędkość druku', value: 'Do 152 mm/s przy 203 dpi; do 102 mm/s przy 300 dpi' },
-    { name: 'Szerokość druku', value: 'Do 104 mm przy 203 dpi; do 108 mm przy 300 dpi' },
+    { name: 'Szerokość druku', value: 'Do 104 mm przy 203 dpi; do 108 mm przy 300 dpi; wersja na kasety: do 104 mm przy 203 i 300 dpi' },
     { name: 'Cechy wersji dla ochrony zdrowia', value: 'Biała obudowa; tworzywa odporne na środki odkażające, łatwe w czyszczeniu; uszczelniony panel przycisków; obudowa odporna na UV, przystosowana do czyszczenia według protokołów z użyciem UV; zasilacz z certyfikatem IEC 60601-1' },
-    { name: 'Szerokość materiału', value: 'Wersja termiczna: 15–108 mm; wersja termotransferowa: 15–112 mm' },
+    { name: 'Szerokość materiału', value: 'Wersja termiczna: 15–108 mm; wersja na rolki taśmy: 15–112 mm; wersja na kasety: 15–118 mm' },
     { name: 'Długość etykiety', value: '6,4–991 mm' },
     { name: 'Rolka materiału', value: 'Średnica zewnętrzna do 127 mm; gilza 12,7 lub 25,4 mm, a z opcjonalnymi adapterami 38,1, 50,8 lub 76,2 mm' },
     { name: 'Grubość materiału', value: '0,08–0,19 mm' },
     { name: 'Rodzaje materiałów', value: 'Rolka lub składanka; etykiety wycinane lub materiał ciągły, z czarnym znacznikiem lub bez; kartoniki; papier paragonowy; opaski na rękę' },
     { name: 'Taśma barwiąca (wersja termotransferowa)', value: 'Rolka 300 m na gilzie 25,4 mm (średnica do 66 mm) lub 74 m na gilzie 12,7 mm (średnica do 34 mm); szerokość 33,8–109,2 mm' },
     { name: 'Stosunek taśmy do materiału', value: '1:4 przy taśmie 300 m; 1:1 przy taśmie 74 m' },
+    { name: 'Kaseta z taśmą (wersja C0)', value: 'Taśma 74 m o szerokości 109,2 mm w kasecie; chip w kasecie sygnalizuje konieczność wymiany taśmy' },
     { name: 'Czujniki materiału', value: 'Ruchomy czujnik refleksyjny (czarny znacznik) na całej szerokości; wielopozycyjny czujnik transmisyjny (przerwa)' },
     { name: 'Interfejsy standardowe', value: 'USB 2.0, USB Host; Bluetooth Low Energy 5 tylko do aplikacji Zebra do konfiguracji drukarki' },
-    { name: 'Łączność w oferowanych PN', value: 'EE00EZ: Ethernet 10/100; EX02EZ: Wi-Fi 6 (802.11ax) i Bluetooth 5.3' },
-    { name: 'Opcje montowane u klienta', value: 'Ethernet 10/100, port szeregowy RS-232 (DB-9), moduł Wi-Fi 802.11ac z Bluetooth 4.1' },
+    { name: 'Łączność w oferowanych PN', value: 'EE00EZ: Ethernet 10/100; EW02EZ: Wi-Fi 5 (802.11ac) i Bluetooth 4.1; EX02EZ: Wi-Fi 6 (802.11ax) i Bluetooth 5.3' },
+    { name: 'Opcje montowane u klienta', value: 'Ethernet 10/100, port szeregowy RS-232 (DB-9), moduł Wi-Fi 802.11ac z Bluetooth 4.1 (w wersji na kasety moduł P1112640-239C)' },
     { name: 'Obsługa materiału (opcje)', value: 'Odklejak z czujnikiem obecności etykiety; obcinak — oba montowane u klienta' },
     { name: 'Panel obsługi', value: 'Pięć ikon stanu, trzy przyciski' },
     { name: 'Pamięć', value: '512 MB Flash, 256 MB SDRAM; dla użytkownika 64 MB pamięci nieulotnej i 8 MB SDRAM' },
@@ -256,14 +267,14 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     { name: 'Kody 1D', value: 'Code 11, Code 39, Code 93, Code 128, ISBT-128, UPC-A, UPC-E, EAN-8, EAN-13, rozszerzenia 2- i 5-cyfrowe UPC/EAN, Plessey, Postnet, 2 z 5 (standardowy, przemysłowy, przeplatany), Logmars, MSI, Codabar, Planet Code' },
     { name: 'Kody 2D', value: 'Codablock, PDF417, Code 49, DataMatrix, MaxiCode, QR Code, MicroPDF, Aztec' },
     { name: 'Zegar czasu rzeczywistego', value: 'Tak' },
-    { name: 'Wymiary (dł. × szer. × wys.)', value: 'Wersja termiczna: 220,8 × 177,5 × 150,7 mm; wersja termotransferowa: 267 × 202 × 189 mm' },
-    { name: 'Waga', value: 'Wersja termiczna: 1,35 kg; wersja termotransferowa: 2,05 kg' },
+    { name: 'Wymiary (dł. × szer. × wys.)', value: 'Wersja termiczna: 220,8 × 177,5 × 150,7 mm; wersja na rolki taśmy: 267 × 202 × 189 mm; wersja na kasety: 254 × 202 × 177 mm' },
+    { name: 'Waga', value: 'Wersja termiczna: 1,35 kg; wersja na rolki taśmy: 2,05 kg; wersja na kasety: 2,3 kg' },
     { name: 'Zasilanie', value: '100–240 V AC, 50–60 Hz; opcjonalna bateria 2750 mAh' },
     { name: 'Temperatura pracy', value: '4,4–41°C' },
     { name: 'Temperatura przechowywania', value: '−40–60°C' },
     { name: 'Wilgotność', value: 'Praca: 10–90%, przechowywanie: 5–95% (bez kondensacji)' },
     { name: 'Zgodność z normami', value: 'IEC 60950-1, IEC 62368-1, EN55022 klasa B, EN55024, EN55035, EN 300 328, EN 301 893, EN 62311, CE; ENERGY STAR' },
-    { name: 'W zestawie', value: 'Drukarka, zasilacz z certyfikatem IEC 60601-1, przewód zasilający, przewód USB, skrócona instrukcja, informacje o przepisach; w wersji termotransferowej także puste gilze odbiorcze taśmy 25,4 i 12,7 mm oraz 2 adaptery gilzy taśmy 300 m innych producentów' },
+    { name: 'W zestawie', value: 'Drukarka, zasilacz z certyfikatem IEC 60601-1, przewód zasilający, przewód USB, skrócona instrukcja, informacje o przepisach; w wersji na rolki taśmy także puste gilze odbiorcze taśmy 25,4 i 12,7 mm oraz 2 adaptery gilzy taśmy 300 m innych producentów' },
     { name: 'Gwarancja', value: '36 miesięcy na drukarkę kupioną w regionie EMEA po 1 kwietnia 2024 r.; głowica drukująca: rok lub milion cali wydruku, zależnie od tego, co nastąpi wcześniej' },
   ],
   applications: [
@@ -290,6 +301,13 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
       availability: 'on-order',
     },
     {
+      partNumber: 'ZD4AH42-D0EW02EZ',
+      name: 'Termiczna, 203 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
+      attributes: { 'Druk': 'Termiczny', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      priceFrom: 2213.53,
+      availability: 'unavailable',
+    },
+    {
       partNumber: 'ZD4AH43-D0EE00EZ',
       name: 'Termiczna, 300 dpi, USB + Ethernet',
       attributes: { 'Druk': 'Termiczny', 'Rozdzielczość': '300 dpi', 'Łączność': 'Ethernet' },
@@ -311,6 +329,13 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
       availability: 'unavailable',
     },
     {
+      partNumber: 'ZD4AH42-30EW02EZ',
+      name: 'Termotransferowa, 203 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
+      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      priceFrom: 2438.09,
+      availability: 'unavailable',
+    },
+    {
       partNumber: 'ZD4AH43-30EE00EZ',
       name: 'Termotransferowa, 300 dpi, USB + Ethernet',
       attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '300 dpi', 'Łączność': 'Ethernet' },
@@ -324,11 +349,46 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
       priceFrom: 2515.68,
       availability: 'available',
     },
+    {
+      partNumber: 'ZD4AH43-30EW02EZ',
+      name: 'Termotransferowa, 300 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
+      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      priceFrom: 2721.81,
+      availability: 'unavailable',
+    },
+    {
+      partNumber: 'ZD4AH42-C0EE00EZ',
+      name: 'ZD421C-HC na kasety, 203 dpi, USB + Ethernet',
+      attributes: { 'Druk': 'Kaseta z taśmą', 'Rozdzielczość': '203 dpi', 'Łączność': 'Ethernet' },
+      priceFrom: 2068.34,
+      availability: 'available',
+    },
+    {
+      partNumber: 'ZD4AH43-C0EE00EZ',
+      name: 'ZD421C-HC na kasety, 300 dpi, USB + Ethernet',
+      attributes: { 'Druk': 'Kaseta z taśmą', 'Rozdzielczość': '300 dpi', 'Łączność': 'Ethernet' },
+      priceFrom: 2330.66,
+      availability: 'available',
+    },
+    {
+      partNumber: 'ZD4AH42-C0EW02EZ',
+      name: 'ZD421C-HC na kasety, 203 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
+      attributes: { 'Druk': 'Kaseta z taśmą', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      priceFrom: 2438.09,
+      availability: 'unavailable',
+    },
+    {
+      partNumber: 'ZD4AH43-C0EW02EZ',
+      name: 'ZD421C-HC na kasety, 300 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
+      attributes: { 'Druk': 'Kaseta z taśmą', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      priceFrom: 2721.81,
+      availability: 'unavailable',
+    },
   ],
   variantAttributeTooltips: {
-    'Druk': 'Metoda druku danej wersji.\n\nTermiczny — bez taśmy barwiącej, na materiale termicznym.\n\nTermotransferowy — z taśmą 74 m lub 300 m; ta wersja drukuje też bez taśmy na materiale termicznym.',
-    'Rozdzielczość': 'Liczba punktów głowicy na cal szerokości druku.\n\n203 dpi — do 152 mm/s i 104 mm szerokości druku.\n\n300 dpi — do 102 mm/s i 108 mm szerokości druku; do drobnych kodów 2D na małych etykietach.',
-    'Łączność': 'Fabryczny interfejs do pracy w sieci; porty USB i USB Host są w każdej wersji.\n\nEthernet — port 10/100 do przewodowej sieci szpitala lub przychodni.\n\nWi-Fi 6 + BT 5.3 — moduł 802.11ax z Bluetooth 5.3 do sieci bezprzewodowej i urządzeń mobilnych; bez portu Ethernet.',
+    'Druk': 'Metoda druku danej wersji.\n\nTermiczny — bez taśmy barwiącej, na materiale termicznym.\n\nTermotransferowy — z rolką taśmy 74 m lub 300 m; ta wersja drukuje też bez taśmy na materiale termicznym.\n\nKaseta z taśmą — ZD421C-HC: taśma 74 m w kasecie zakładanej w kilka sekund, materiał do 118 mm.',
+    'Rozdzielczość': 'Liczba punktów głowicy na cal szerokości druku.\n\n203 dpi — do 152 mm/s i 104 mm szerokości druku.\n\n300 dpi — do 102 mm/s i 108 mm szerokości druku (w wersji na kasety 104 mm); do drobnych kodów 2D na małych etykietach.',
+    'Łączność': 'Fabryczny interfejs do pracy w sieci; porty USB i USB Host są w każdej wersji.\n\nEthernet — port 10/100 do przewodowej sieci szpitala lub przychodni.\n\nWi-Fi 6 + BT 5.3 — moduł 802.11ax z Bluetooth 5.3 do sieci bezprzewodowej i urządzeń mobilnych; bez portu Ethernet.\n\nWi-Fi 5 + BT 4.1 — podwójny moduł radiowy 802.11ac z Bluetooth 4.1; także bez portu Ethernet.',
   },
   compatibleAccessories: [
     'zebra-labels-zselect-57x19',
@@ -389,6 +449,8 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     'zebra-dispenser-zd421d',
     'zebra-dispenser-zd421t',
     'zebra-cutter-zd421t',
+    'zebra-module-wifi-zd621t',
+    'zebra-dispenser-zd621t',
     'zebra-battery-module-zd420t',
     'zebra-module-rs232-zd421',
     'zebra-keyboard-zkdu',
@@ -404,7 +466,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     },
     {
       question: 'Co oznaczają znaki D0 i 30 w numerze PN?',
-      answer: 'D0 oznacza wersję do druku termicznego. 30 oznacza wersję termotransferową na rolki taśmy 74 i 300 m. Zebra oferuje też ZD421-HC na wkłady z taśmą (oznaczenie C0); tej wersji nie ma w tabeli wariantów. Końcówka EE00EZ oznacza Ethernet, a EX02EZ — Wi-Fi 6 z Bluetooth 5.3.',
+      answer: 'D0 oznacza wersję do druku termicznego, 30 — wersję termotransferową na rolki taśmy 74 i 300 m, a C0 — ZD421C-HC na kasety z taśmą. Cyfra 2 lub 3 przed myślnikiem to rozdzielczość 203 lub 300 dpi. Końcówka EE00EZ oznacza Ethernet, EW02EZ — Wi-Fi 5 z Bluetooth 4.1, a EX02EZ — Wi-Fi 6 z Bluetooth 5.3.',
     },
     {
       question: 'Czy ZD421-HC zastąpi ZD420-HC lub GK420?',
@@ -412,15 +474,19 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     },
     {
       question: 'Jaką głowicę zamówić do ZD421-HC?',
-      answer: 'Wersja termiczna używa głowic Healthcare: [P1112640-026 (203 dpi)](/produkt/zebra-glowica-zd421d-hc-203-p1112640-026) lub [P1112640-027 (300 dpi)](/produkt/zebra-glowica-zd421d-hc-300-p1112640-027). Wersja termotransferowa używa głowic ZD421t: [P1112640-218 (203 dpi)](/produkt/zebra-glowica-203dpi-zd421t) lub [P1112640-219 (300 dpi)](/produkt/zebra-glowica-300dpi-zd421t). Głowica musi mieć tę samą rozdzielczość co drukarka.',
+      answer: 'Wersja termiczna używa głowic Healthcare: [P1112640-026 (203 dpi)](/produkt/zebra-glowica-zd421d-hc-203-p1112640-026) lub [P1112640-027 (300 dpi)](/produkt/zebra-glowica-zd421d-hc-300-p1112640-027). Wersja na rolki taśmy używa głowic ZD421t: [P1112640-218 (203 dpi)](/produkt/zebra-glowica-203dpi-zd421t) lub [P1112640-219 (300 dpi)](/produkt/zebra-glowica-300dpi-zd421t). Wersja na kasety ma osobne głowice: P1116110-009 (203 dpi) i P1116110-010 (300 dpi). Głowica musi mieć tę samą rozdzielczość co drukarka.',
+    },
+    {
+      question: 'Jakie kasety z taśmą pasują do ZD421C-HC?',
+      answer: 'ZD421C-HC używa kaset z taśmą 74 m z serii CT11007, np. [woskowej 2300 (02300CT11007)](/produkt/zebra-2300-wax/110x74/02300CT11007), [woskowo-żywicznej 3300 (03300CT11007)](/produkt/zebra-3300-wax-resin/110x74/03300CT11007) lub [woskowej 1600 (01600CT11007)](/produkt/zebra-1600-wax/110x74/01600CT11007). Kasety nie pasują do wersji na rolki taśmy, a zwykłe rolki taśmy nie pasują do ZD421C-HC. Rodzaj taśmy dobiera się do materiału etykiety.',
     },
     {
       question: 'Czy ZD421-HC może pracować na baterii?',
-      answer: 'Tak. Bateria P1080383-603 o pojemności 2750 mAh wystarcza na pełną zmianę druku z maksymalną prędkością i współpracuje ze wszystkimi opcjami łączności oraz obsługi materiału. Montuje się ją na podstawie P1080383-601 w wersji termicznej albo P1080383-600 w wersji termotransferowej. Torba z paskiem na ramię (SG-DM-CASE1-01 do wersji termicznej, SG-DM-CASE2-01 do termotransferowej) nie mieści drukarki z zamontowanym obcinakiem lub odklejakiem.',
+      answer: 'Tak. Bateria P1080383-603 o pojemności 2750 mAh wystarcza na pełną zmianę druku z maksymalną prędkością i współpracuje ze wszystkimi opcjami łączności oraz obsługi materiału. Montuje się ją na podstawie P1080383-601 w wersji termicznej albo P1080383-600 w wersjach na rolki taśmy i na kasety. Torba z paskiem na ramię (SG-DM-CASE1-01 do wersji termicznej, SG-DM-CASE2-01 do pozostałych) nie mieści drukarki z zamontowanym obcinakiem lub odklejakiem.',
     },
     {
       question: 'Czy ZD421-HC drukuje opaski dla pacjentów?',
-      answer: 'Tak, drukarka obsługuje opaski na rękę na rolce. Opaska musi mieścić się w zakresie 15–108 mm w wersji termicznej albo 15–112 mm w wersji termotransferowej i mieć do 0,19 mm grubości. Kartridże Z-Band Direct pasują do [Zebra ZD510-HC](/produkt/zebra-zd510-hc), nie do ZD421-HC.',
+      answer: 'Tak, drukarka obsługuje opaski na rękę na rolce. Opaska musi mieścić się w zakresie 15–108 mm w wersji termicznej, 15–112 mm w wersji na rolki taśmy albo 15–118 mm w wersji na kasety i mieć do 0,19 mm grubości. Kartridże Z-Band Direct pasują do [Zebra ZD510-HC](/produkt/zebra-zd510-hc), nie do ZD421-HC.',
     },
     {
       question: 'Jaka gwarancja obejmuje ZD421-HC?',
@@ -433,7 +499,7 @@ USB i USB Host są w każdej konfiguracji. Wersje z końcówką PN EE00EZ mają 
     { name: 'Instrukcja obsługi ZD421t (PL)', type: 'manual', url: 'https://www.serwis-zebry.pl/instrukcje/zebra-zd421t/instrukcja-po-polsku', size: 'Online' },
     { name: 'Sterowniki Windows', type: 'software', url: 'https://www.serwis-zebry.pl/sterowniki', size: 'Online' },
   ],
-  relatedProducts: ['zebra-zd621-hc', 'zebra-zd421d', 'zebra-zd421t'],
+  relatedProducts: ['zebra-zd621-hc', 'tsc-th240thc', 'tsc-dh240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv', 'zebra-zd421d', 'zebra-zd421t'],
   createdAt: '2026-10-25',
   sameAs: 'https://www.zebra.com/pl/pl/products/printers/desktop/zd400-series/zd421-hc.html',
 }

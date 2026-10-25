@@ -1503,7 +1503,7 @@ export const industryPages: IndustryPage[] = [
 <li><strong>Biała obudowa</strong> — kolorystyka przyjęta dla urządzeń w placówkach medycznych.</li>
 </ul>
 
-<p>Drukarki Zebra w wersji HC do szpitali, z obudową z tworzyw odpornych na środki dezynfekcyjne, są w kategorii <a href="/drukarki-dla-sluzby-zdrowia">drukarki dla służby zdrowia</a>. Drukarka opasek dla pacjentów <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski Z-Band z kartridżów.</p>`,
+<p>Drukarki Zebra w wersji HC do szpitali, z obudową z tworzyw odpornych na środki dezynfekcyjne, są w kategorii <a href="/drukarki-dla-sluzby-zdrowia">drukarki dla służby zdrowia</a> razem z drukarkami dla ochrony zdrowia marek TSC, SATO, Honeywell i Citizen. Drukarka opasek dla pacjentów <a href="/produkt/zebra-zd510-hc">Zebra ZD510-HC</a> drukuje opaski Z-Band z kartridżów.</p>`,
     definition: {
       heading: 'Czym jest drukarka etykiet do apteki i szpitala?',
       content: `<p>To drukarka, która drukuje kody kreskowe, tekst i grafikę na etykietach oraz opaskach używanych w aptece i placówce medycznej. Dane do druku wysyła system apteczny, szpitalny lub laboratoryjny przez USB, sieć Ethernet, Wi-Fi albo Bluetooth. Dostępne interfejsy zależą od modelu i numeru PN.</p>
@@ -1643,7 +1643,7 @@ export const industryPages: IndustryPage[] = [
       }
     ],
     relatedLinks: [
-      { title: 'Drukarki dla służby zdrowia — Zebra HC', href: '/drukarki-dla-sluzby-zdrowia' },
+      { title: 'Drukarki dla służby zdrowia — Zebra, TSC, SATO, Honeywell, Citizen', href: '/drukarki-dla-sluzby-zdrowia' },
       { title: 'Zebra ZD510-HC — drukarka opasek dla pacjentów', href: '/produkt/zebra-zd510-hc' },
       { title: 'Opaski identyfikacyjne Z-Band', href: '/opaski-identyfikacyjne' },
       { title: 'Drukarki opasek', href: '/drukarki-opasek' },
