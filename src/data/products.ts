@@ -18,6 +18,7 @@ import { zebraHcZd4Products } from './zebra-hc-zd4-products'
 import { zebraHcZd6Products } from './zebra-hc-zd6-products'
 import { zebraHcZq6Products } from './zebra-hc-zq6-products'
 import { tscHcProducts } from './tsc-hc-products'
+import { tscTlDlProducts } from './tsc-tl-dl-products'
 import { satoHcProducts } from './sato-hc-products'
 import { honeywellCitizenHcProducts } from './honeywell-citizen-hc-products'
 import { healthcareScannerCategory } from './healthcare-scanner-category'
@@ -95422,6 +95423,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Drukarki TSC serii TL/DL 4" (TL241 / TL341, DL241) trafiają do podkategorii biurkowych według `subcategoryIds`.
+for (const subcategory of subcategories) {
+  const additions = tscTlDlProducts.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Skanery dla ochrony zdrowia (Zebra HC, Honeywell, Socket Mobile, Datalogic, Newland) i ich akcesoria trafiają do podkategorii według `subcategoryIds`, w tym do „Skanery dla służby zdrowia”.
 for (const subcategory of subcategories) {
   const additions = [...zebraHcScanners, ...honeywellSocketHcScanners, ...datalogicNewlandHcScanners].filter(product => product.subcategoryIds?.includes(subcategory.id))
@@ -95508,6 +95518,7 @@ const rawProductList: Product[] = [
   ...zebraHcZd6Products,
   ...zebraHcZq6Products,
   ...tscHcProducts,
+  ...tscTlDlProducts,
   ...satoHcProducts,
   ...honeywellCitizenHcProducts,
   ...zebraHcScanners,
