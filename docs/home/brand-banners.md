@@ -35,3 +35,6 @@ BrandBanner: jeden aktywny film na baner, lazy loading przez IntersectionObserve
 ESLint, scoped TypeScript i diff check poprawne. Testy odtwarzania w przeglądarce (readyState 4, brak błędów), przełączania SUNMI i szerokości mobilnej 390 px bez poziomego przewijania. Kadry sprawdzone na desktopie i telefonie. Filmy/pauza sprawdzone również w lokalnej karuzeli. Przy prefers-reduced-motion oba filmy pozostają zatrzymane na czasie 0.
 
 Publikacja ProGlove/SUNMI: dad0c96f, deployment dpl_2jRghTbbsDZyRkpi816uGiUAu3mL, READY. Oba filmy readyState 4 na produkcji. CTA SUNMI doprecyzowano do /katalog?producent=sunmi, ponieważ /terminale-sunmi obejmuje wyłącznie terminale mobilne, a baner pokazuje także POS i KDS.
+
+## Aktualizacja jakości SUNMI
+Montaż ponownie bezpośrednio z oryginalnych filmów Full HD producenta. T3 62,8–66,8 s, V3 15–19 s, KDS 7,5–10 s. Bez pośredniego pliku 1440 px i ponownego powiększania. Wynik 1920×700, H.264 CRF16, faststart; poster WebP95. Zachowano brak planszy Rebuilt i czarnego pasa. Do oceny lokalnej.

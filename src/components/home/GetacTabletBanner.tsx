@@ -35,8 +35,8 @@ export default function GetacTabletBanner() {
     <div className={s.inner}><div className={s.copy}>
       <Image className={s.logo} src="/images/getac-home/getac-logo.svg" alt="Getac" width={136} height={42} />
       <p className={s.eyebrow}>TABLETY PRZEMYSŁOWE · WINDOWS I ANDROID</p>
-      <h2>Pracuj w terenie. <span>Wybierz Getac.</span></h2>
-      <p className={s.description}>Tablety do inspekcji, serwisu i pracy w pojazdach. Dobierz system, ekran i wyposażenie do swoich zadań.</p>
+      <h2>Pracuj w terenie. <span>Wybierz Getac.</span></h2>
+      <p className={s.description}>Tablety do inspekcji, serwisu i pracy w pojazdach. Dobierz system, ekran i wyposażenie do swoich zadań.</p>
       <Link className={s.cta} href="/tablety-getac">Poznaj tablety Getac<ArrowRightIcon size={16} /></Link>
     </div></div>
 
