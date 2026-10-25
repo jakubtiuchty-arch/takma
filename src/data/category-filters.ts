@@ -893,6 +893,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
         { value: 'ProGlove', manufacturer: 'proglove' },
+        { value: 'Socket Mobile', manufacturer: 'socket-mobile' },
       ],
     },
     {

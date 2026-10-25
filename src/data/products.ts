@@ -22828,18 +22828,18 @@ IP52, upadki z 1,8 m na beton (30×), tumble 1 000 obrotów (0,5 m). Praca od 0�
     slug: 'honeywell-voyager-xp-1472g',
     name: 'Honeywell Voyager XP 1472g',
     sameAs: 'https://automation.honeywell.com/us/en/products/productivity-solutions/barcode-scanners/general-purpose-handheld/voyager-xp-1472g-general-duty-scanner',
-    seoTitle: 'Honeywell Voyager XP 1472g — skaner 2D bezprzewodowy Bluetooth | od 775 zł',
-    seoDescription: 'Honeywell Voyager XP 1472g — bezprzewodowy skaner kodów 2D Bluetooth 4.2, zasięg 30 m. Bateria 2 400 mAh, 50 000 skanów / 14 h. IP52, 1,8 m upadki, 210 g. Zestaw z bazą CCB01 i kablem USB. Cena od 775 zł netto.',
-    shortDescription: 'Honeywell Voyager XP 1472g — bezprzewodowy skaner 2D Bluetooth do kas POS i magazynów, 210 g, IP52, zasięg BT 30 m, od 775 zł',
+    seoTitle: 'Honeywell Voyager XP 1472g — skaner 2D bezprzewodowy Bluetooth',
+    seoDescription: 'Honeywell Voyager XP 1472g — bezprzewodowy skaner kodów 2D Bluetooth 4.2, zasięg 30 m. Bateria 2 400 mAh, 50 000 skanów / 14 h. IP52, 1,8 m upadki, 210 g. Zestaw z bazą CCB01 i kablem USB. PN: 1472G2D-2USB-5-R, 1472G2D-6USB-5-R (obudowa przygotowana do dezynfekcji).',
+    shortDescription: 'Honeywell Voyager XP 1472g — bezprzewodowy skaner 2D Bluetooth do kas POS i magazynów, 210 g, IP52, zasięg BT 30 m',
     description: `Dla kogo? Honeywell Voyager XP 1472g to bezprzewodowa wersja Bluetooth popularnego skanera [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) — do sklepów, magazynów, aptek, biur i punktów obsługi klienta wymagających mobilności. Identyczny sensor area imager 2D (1 040 × 720 px) i optyka XP. Odczyt kodów 1D, 2D (QR Code, DataMatrix, PDF417), kodów z ekranów smartfonów i Digimarc.
 
 Bluetooth 4.2 z zasięgiem do 30 m w linii widzenia — swoboda ruchu po stanowisku kasowym, wśród regałów, przy przyjęciu towaru. Tryb Automatic Batch Mode buforuje kody w pamięci skanera gdy operator wyjdzie poza zasięg bazy — dane przesyłane automatycznie po powrocie w zasięg. Baza CCB01 obsługuje do 7 skanerów jednocześnie, interfejsy USB/RS-232/KBW.
 
-Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanów na jednym ładowaniu. Bateria wymienna bez narzędzi. Ładowanie 4,5 h w bazie CCB01. Wersja healthcare (1472G2D-6USB-5-R) z obudową Disinfectant Ready odporną na 34 środki dezynfekcyjne. Na stałe stanowisko kasowe: przewodowy [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) od 358 zł. Dokumentacja: automation.honeywell.com/voyager-xp-1472g.`,
+Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanów na jednym ładowaniu. Bateria wymienna bez narzędzi. Ładowanie 4,5 h w bazie CCB01. Zestaw 1472G2D-6USB-5-R ma czarną obudowę przygotowaną do dezynfekcji, którą wolno często czyścić różnymi środkami bez jej uszkodzenia. Na stałe stanowisko kasowe: przewodowy [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g). Dokumentacja: automation.honeywell.com/voyager-xp-1472g.`,
     categoryId: 'skanery-kodow-kreskowych',
     subcategoryIds: ['skanery-bezprzewodowe'],
     manufacturerId: 'honeywell',
-    priceFrom: 775,
+    priceFrom: 733.81,
     images: ['/images/products/1472G2D-2USB-5-R.png'],
     imageDescriptions: ['Honeywell Voyager XP 1472g — bezprzewodowy skaner 2D Bluetooth z bazą ładująco-komunikacyjną CCB01'],
     tags: ['retail', 'logistyka', 'healthcare'],
@@ -22886,18 +22886,21 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       {
         partNumber: '1472G2D-2USB-5-R',
         name: 'Voyager XP 1472g 2D — zestaw USB (skaner + baza + kabel)',
-        priceFrom: 775,
+        priceFrom: 733.81,
         availability: 'available',
         attributes: {},
       },
       {
         partNumber: '1472G2D-6USB-5-R',
-        name: 'Voyager XP 1472g 2D Healthcare — zestaw USB, Disinfectant Ready',
-        priceFrom: 1004,
+        name: 'Voyager XP 1472g 2D — zestaw USB, czarna obudowa przygotowana do dezynfekcji',
+        priceFrom: 1630.71,
         availability: 'available',
-        attributes: { 'Disinfectant Ready': 'Tak' },
+        attributes: { 'Obudowa do dezynfekcji': 'Tak' },
       },
     ],
+    variantAttributeTooltips: {
+      'Obudowa do dezynfekcji': 'Obudowa Disinfectant Ready w zestawie 1472G2D-6USB-5-R.\n\nMożna ją regularnie czyścić wieloma środkami czyszczącymi bez uszkodzenia; kolor czarny.',
+    },
     comparison: {
       title: 'Porównanie: Honeywell Voyager XP 1472g (bezprzewodowy) vs 1470g (przewodowy)',
       models: [
@@ -22911,9 +22914,8 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
             'Bateria': '2 400 mAh / 14 h',
             'IP / Upadki': 'IP52 / 1,8 m (30×)',
             'Waga': '210 g',
-            'Healthcare': 'Tak (opcja)',
+            'Obudowa do dezynfekcji': 'Opcja (1472G2D-6USB-5-R)',
             'Gwarancja': '3 lata',
-            'Cena od': '775 zł',
             'Najlepszy do': 'Magazyn, inwentaryzacja, line busting',
           },
         },
@@ -22926,9 +22928,8 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
             'Bateria': 'Brak (zasilanie z kabla)',
             'IP / Upadki': 'IP52 / 1,8 m (30×)',
             'Waga': '130 g',
-            'Healthcare': 'Nie',
+            'Obudowa do dezynfekcji': 'W wybranych modelach',
             'Gwarancja': '5 lat',
-            'Cena od': '358 zł',
             'Najlepszy do': 'Stałe stanowisko kasowe, apteka, biuro',
           },
         },
@@ -22937,7 +22938,7 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
     applications: [
       'Sklepy i retail — skanowanie przy kasach POS, inwentaryzacja, self-checkout z mobilnością',
       'Magazyn i logistyka — przyjęcie towaru, kompletacja, weryfikacja zamówień (zasięg BT 30 m)',
-      'Apteki i opieka zdrowotna — odczyt 2D z opakowań leków, e-recept, bransoletek pacjentów (wersja HC)',
+      'Apteki — odczyt kodów 2D z opakowań leków i e-recept',
       'Biuro i administracja — zarządzanie dokumentami, korespondencja, paczki',
       'Gastronomia i eventy — odczyt QR z biletów, kuponów, kart lojalnościowych z aplikacji',
       'Line busting — skracanie kolejek, mobilne stanowiska kasowe bez kabla',
@@ -22947,11 +22948,11 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
     faq: [
       {
         question: 'Czym różni się Honeywell Voyager XP 1472g od przewodowego 1470g?',
-        answer: 'Voyager XP 1472g to bezprzewodowa wersja Bluetooth skanera [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) — identyczna optyka (area imager 1 040 × 720 px) i parametry skanowania. Różnica: 1472g komunikuje się przez Bluetooth 4.2 (zasięg do 30 m), ma baterię Li-Ion 2 400 mAh (50 000 skanów / 14 h) i bazę ładująco-komunikacyjną CCB01. Waga 210 g vs 130 g. Gwarancja 3 lata vs 5 lat. Cena 1472g od 775 zł vs 1470g od 358 zł. Na stałe stanowisko kasowe wystarczy tańszy przewodowy 1470g.',
+        answer: 'Voyager XP 1472g to bezprzewodowa wersja Bluetooth skanera [Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) — identyczna optyka (area imager 1 040 × 720 px) i parametry skanowania. Różnica: 1472g komunikuje się przez Bluetooth 4.2 (zasięg do 30 m), ma baterię Li-Ion 2 400 mAh (50 000 skanów / 14 h) i bazę ładująco-komunikacyjną CCB01. Waga 210 g vs 130 g. Gwarancja 3 lata vs 5 lat. Na stałe stanowisko kasowe wystarczy tańszy przewodowy 1470g.',
       },
       {
-        question: 'Ile kosztuje Honeywell Voyager XP 1472g?',
-        answer: 'Zestaw USB (skaner + baza ładująca CCB01 + kabel 3 m) w wersji standard (1472G2D-2USB-5-R) od 775 zł netto. Wersja healthcare Disinfectant Ready (1472G2D-6USB-5-R) od 1 004 zł netto. Ceny netto B2B, bez VAT.',
+        question: 'Jakie zestawy Honeywell Voyager XP 1472g są dostępne?',
+        answer: 'Zestaw 1472G2D-2USB-5-R zawiera skaner, bazę ładująco-komunikacyjną i prosty kabel USB 3 m. Zestaw 1472G2D-6USB-5-R to skaner z czarną obudową przygotowaną do dezynfekcji, z bazą ładująco-komunikacyjną i połączeniem USB. Aktualne ceny i stany obu zestawów pokazuje tabela wariantów.',
       },
       {
         question: 'Jaki jest zasięg Bluetooth skanera Voyager XP 1472g?',
@@ -22967,15 +22968,15 @@ Bateria Li-Ion 2 400 mAh (BAT-SCN01A) — do 14 godzin pracy i ok. 50 000 skanó
       },
       {
         question: 'Jaka jest wytrzymałość skanera Voyager XP 1472g?',
-        answer: 'IP52 (ochrona przed kurzem i kroplami), upadki z 1,8 m na beton (30 razy), tumble 1 000 obrotów (0,5 m). ESD ±15 kV. Klasa general-purpose — do POS, biura i lekkiego magazynu. Wersja healthcare (1472G2D-6USB-5-R) ma obudowę Disinfectant Ready odporną na 34 środki dezynfekcyjne.',
+        answer: 'IP52 (ochrona przed kurzem i kroplami), upadki z 1,8 m na beton (30 razy), tumble 1 000 obrotów (0,5 m). ESD ±15 kV. Klasa general-purpose — do POS, biura i lekkiego magazynu. Zestaw 1472G2D-6USB-5-R ma obudowę przygotowaną do dezynfekcji.',
       },
       {
-        question: 'Co to jest wersja Disinfectant Ready (healthcare)?',
-        answer: 'Wariant 1472G2D-6USB-5-R ma specjalną obudowę odporną na 34 zatwierdzone środki dezynfekujące (m.in. nadtlenek wodoru 3%, Clorox, Azowipe). Można czyścić wielokrotnie dziennie bez degradacji materiału. Standardowa obudowa (-2) po wielokrotnej dezynfekcji może odbarwić się i stać krucha.',
+        question: 'Czym jest obudowa przygotowana do dezynfekcji (Disinfectant Ready) w Voyager XP 1472g?',
+        answer: 'Honeywell oferuje wybrane modele Voyager XP 1472g z obudową przygotowaną do dezynfekcji. Taką obudowę można regularnie czyścić wieloma środkami czyszczącymi bez jej uszkodzenia. W ofercie ma ją zestaw 1472G2D-6USB-5-R w kolorze czarnym. Voyager XP 1472g nie jest modelem dla służby zdrowia. Do szpitali Honeywell oferuje osobne modele, np. [Xenon Ultra 1962h](/produkt/honeywell-xenon-ultra-1962h) z obudową antymikrobową.',
       },
       {
         question: 'Czym różni się Honeywell Voyager XP 1472g od Zebra DS2278?',
-        answer: 'Voyager 1472g: większy zasięg BT (30 m vs 10 m [DS2278](/produkt/zebra-ds2278)), lepsze upadki (1,8 m vs 1,5 m), wersja healthcare. DS2278: niższa cena (od 402 zł), ekosystem Zebra, więcej skanów na ładowaniu (57 000 vs 50 000). Bateria i IP identyczne. Voyager 1472g wygrywa w zastosowaniach wymagających większego zasięgu BT.',
+        answer: 'Voyager 1472g: większy zasięg BT (30 m vs 10 m [DS2278](/produkt/zebra-ds2278)), lepsze upadki (1,8 m vs 1,5 m), zestaw z obudową przygotowaną do dezynfekcji. DS2278: niższa cena (od 402 zł), ekosystem Zebra, więcej skanów na ładowaniu (57 000 vs 50 000). Bateria i IP identyczne. Voyager 1472g wygrywa w zastosowaniach wymagających większego zasięgu BT.',
       },
       {
         question: 'Ile skanerów obsługuje jedna baza CCB01?',
@@ -23102,11 +23103,11 @@ Zaprojektowana do środowisk magazynowych i produkcyjnych. Zintegrowany klips na
     slug: 'honeywell-bat-scn11',
     name: 'Honeywell BAT-SCN11 — bateria Li-ion 3 300 mAh',
     seoTitle: 'Honeywell BAT-SCN11 — bateria 3 300 mAh do skanerów Granit Ultra 2105i, Xenon Ultra | od 230 zł',
-    seoDescription: 'Bateria Honeywell BAT-SCN11 Li-ion 3 300 mAh (12 Wh) do skanerów Granit Ultra 2105i, Granit Ultra 2100i, Xenon Ultra 1962/1960. Do 100 000 skanów na ładowaniu. Cena od 230 zł netto.',
+    seoDescription: 'Bateria Honeywell BAT-SCN11 Li-ion 3 300 mAh (12 Wh) do skanerów Granit Ultra 2105i, Granit Ultra 2100i, Xenon Ultra 1962 i 1962h. Do 100 000 skanów na ładowaniu. Cena od 230 zł netto.',
     shortDescription: 'Honeywell BAT-SCN11 — bateria Li-ion 3 300 mAh do Granit Ultra 2105i/2100i, Xenon Ultra — 100 000 skanów',
     description: `Bateria zapasowa Honeywell BAT-SCN11 Li-ion 3 300 mAh (3,7 V / 12 Wh) do bezprzewodowych skanerów Honeywell nowej generacji. Do 100 000 skanów na jednym ładowaniu lub 14 godzin ciągłej pracy — idealna jako bateria zamienna na drugą zmianę.
 
-Kompatybilna z: Honeywell Granit Ultra 2105i (bezprzewodowy), Granit Ultra 2100i (przewodowy — jako zapas), Xenon Ultra 1962 (Bluetooth), Xenon Ultra 1960 (przewodowy). Wymiary: 94,7 × 22,2 × 27,1 mm, waga ok. 137 g. Gwarancja producenta 12 miesięcy.
+Kompatybilna z: Honeywell Granit Ultra 2105i (bezprzewodowy), Granit Ultra 2100i (przewodowy — jako zapas) oraz bezprzewodowymi skanerami Xenon Ultra 1962 i 1962h z ładowaniem stykowym. Wersje z ładowaniem bezstykowym używają baterii BAT-SCN11WC (czarnej) lub BAT-SCN11WCHC (białej). Wymiary: 94,7 × 22,2 × 27,1 mm, waga ok. 137 g. Gwarancja producenta 12 miesięcy.
 
 UWAGA: bateria BAT-SCN11 NIE jest kompatybilna ze starszymi skanerami Granit XP 1990i, Voyager 1202g, Xenon 1902 — te używają baterii BAT-SCN01A.`,
     categoryId: 'akcesoria',

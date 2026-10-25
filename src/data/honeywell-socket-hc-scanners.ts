@@ -1,4 +1,740 @@
 import type { Product } from './products'
 
-// Zaślepka: karty Honeywell Xenon Ultra 1960h / 1962h i Socket Mobile DuraScan D745 / D765 z akcesoriami (S2) dopisuje osobna gałąź. Plik istnieje, aby integracja w products.ts działała przed scaleniem.
-export const honeywellSocketHcScanners: Product[] = []
+// Skanery dla służby zdrowia: Honeywell Xenon Ultra 1960h i 1962h oraz Socket Mobile DuraScan D745 i D765 (25.10.2026).
+// Warianty tylko dla PN z ceną w /api/stock; priceFrom to wartość startowa, kartę aktualizuje API.
+// Źródła, konfiguracje PN, decyzje i rozbieżności dokumentów: docs/catalog/skanery-hc-2026-10-25/S2.md.
+
+const HC_CORDED = [
+  'zebra-ds2208-hc',
+  'zebra-ds4608-hc',
+  'zebra-ds8208-hc',
+  'datalogic-gryphon-gd4690-hc',
+  'datalogic-gryphon-gd4620-hc',
+  'newland-hr33-marlin-ai-white',
+  'newland-hr23-dorada-ai-white',
+]
+
+const xenonUltra1960h: Product = {
+  id: 'honeywell-xenon-ultra-1960h',
+  slug: 'honeywell-xenon-ultra-1960h',
+  name: 'Honeywell Xenon Ultra 1960h',
+  seoH1: 'Honeywell Xenon Ultra 1960h',
+  shortDescription: 'Honeywell Xenon Ultra 1960h — przewodowy skaner 2D dla służby zdrowia: biała obudowa antymikrobowa przygotowana do dezynfekcji, tryby pracy cichej przy pacjencie.',
+  seoTitle: 'Honeywell Xenon Ultra 1960h — przewodowy skaner dla służby zdrowia',
+  seoDescription: 'Skaner kodów kreskowych do szpitala Honeywell Xenon Ultra 1960h: przewodowy imager 2D, obudowa antymikrobowa przygotowana do dezynfekcji, tryb Patient Do-Not-Disturb. Skaner Honeywell 1960h, Xenon 1960h Honeywell. PN: 1960HHD-5USB-R, 1960HSR-5USB-R.',
+  description: `Honeywell Xenon Ultra 1960h to przewodowy skaner ręczny kodów 1D i 2D w wersji dla służby zdrowia. Honeywell rozwija w nim swoje wcześniejsze skanery Xenon i Xenon XP dla placówek medycznych. Model służy przy przyjęciu pacjentów, przy łóżku chorego, przy pobieraniu próbek, w aptece szpitalnej i do ewidencji zapasów.
+
+Każda wersja dla służby zdrowia ma obudowę w kolorze białym, antymikrobową i przygotowaną do dezynfekcji. Obudowę można regularnie czyścić wieloma środkami bez uszkodzenia skanera. Bryła ma mniej zagłębień i szczelin, w których mogą zostawać zarazki.
+
+Skaner ma tryby ograniczające hałas przy pacjencie: Patient Do-Not-Disturb, opcjonalną wibrację i Scan Lamp, czyli oświetlenie włączane tylko w razie potrzeby. Celownik z zieloną kropką ułatwia wskazanie kodu. Xenon Ultra 1960h odczytuje także kody uszkodzone i słabej jakości, co ogranicza ręczne wpisywanie danych.
+
+Zestawy 1960HHD-5USB-R (ogniskowanie HD) i 1960HSR-5USB-R (ogniskowanie SR) zawierają przewód USB o długości 3 m. Skaner przyjmuje przewody z instalacji Xenon XP 1950h. Producent udziela 5 lat gwarancji.`,
+  categoryId: 'skanery-kodow-kreskowych',
+  subcategoryIds: ['skanery-dla-sluzby-zdrowia', 'skanery-przewodowe'],
+  manufacturerId: 'honeywell',
+  priceFrom: 1348.88,
+  images: [
+    '/images/products/1960HHD-5USB-R.png',
+    '/images/products/1960HHD-5USB-R-2.png',
+  ],
+  imageDescriptions: [
+    'Honeywell Xenon Ultra 1960h — biały skaner ręczny dla służby zdrowia, widok pod kątem z góry, zielone diody i turkusowe obramowanie',
+    'Honeywell Xenon Ultra 1960h — widok z przodu: okno skanera w turkusowej ramce i spust',
+  ],
+  tags: ['healthcare'],
+  availability: 'available',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Typ urządzenia', value: 'Przewodowy skaner ręczny 1D/2D (imager) w wersji dla służby zdrowia' },
+    { name: 'Obudowa', value: 'Biała, antymikrobowa, przygotowana do dezynfekcji' },
+    { name: 'Tryby pracy przy pacjencie', value: 'Patient Do-Not-Disturb, wibracja (opcja), Scan Lamp; tryby ciche: Silent Mode z miganiem LED lub długim świeceniem LED, tryb nocny z bardzo cichym sygnałem' },
+    { name: 'Matryca', value: '1280 × 1080 pikseli' },
+    { name: 'Celownik', value: 'LED z zieloną kropką, 525 nm' },
+    { name: 'Oświetlenie', value: 'Białe, 2700 K' },
+    { name: 'Pole widzenia', value: '42° w poziomie, 36° w pionie' },
+    { name: 'Tolerancja ruchu (13 mil UPC)', value: 'SR i HD: do 4 m/s' },
+    { name: 'Kontrast druku', value: 'Od 15%' },
+    { name: 'Najmniejszy element', value: 'SR: 2,5 mil (1D), 5 mil (2D); HD: 2 mil (1D), 4 mil (2D)' },
+    { name: 'Obrót, pochylenie, skos', value: '±360°, ±65°, ±65°' },
+    { name: 'Odczytywane kody', value: 'Standardowe kody 1D, PDF, 2D, kody pocztowe, Digimarc, DotCode, OCR (zależnie od konfiguracji)' },
+    { name: 'Zasięg 13 mil UPC', value: 'SR: 0–654 mm; HD: 0–502 mm' },
+    { name: 'Zasięg 20 mil Code 39', value: 'SR: 4–1115 mm; HD: 4–814 mm' },
+    { name: 'Zasięg 5 mil Code 39', value: 'SR: 23–311 mm; HD: 7–295 mm' },
+    { name: 'Zasięg 10 mil Data Matrix', value: 'SR: 12–273 mm; HD: 2–249 mm' },
+    { name: 'Zasięg 5 mil Data Matrix', value: 'Tylko HD: 35–113 mm' },
+    { name: 'Jakość obrazu', value: '109 PPI na dokumencie A4' },
+    { name: 'Interfejsy', value: 'USB, Keyboard Wedge, RS-232' },
+    { name: 'Wykrywanie obiektu w podstawce', value: '7,6 cm (domyślnie), 15,2 cm po zmianie konfiguracji' },
+    { name: 'Sygnalizacja', value: 'Diody dobrego odczytu, tylne diody, brzęczyk z regulacją tonu i głośności, wibracja (opcja)' },
+    { name: 'Napięcie wejściowe', value: '4,4–5,5 V DC' },
+    { name: 'Zarządzanie', value: 'Honeywell Scanner Management Utility (SMU)' },
+    { name: 'Wymiary', value: '108,2 × 70,4 × 160,2 mm' },
+    { name: 'Masa', value: '147,2 g' },
+    { name: 'Temperatura pracy', value: '0–50°C' },
+    { name: 'Temperatura przechowywania', value: '−40–70°C' },
+    { name: 'Wilgotność', value: '0–95% (bez kondensacji)' },
+    { name: 'Odporność na upadki', value: 'Wielokrotne upadki z 1,8 m na beton w zakresie temperatur pracy; Mil Spec Drop: 3,0 m' },
+    { name: 'Test przewracania', value: '2000 przewrotów z 0,5 m' },
+    { name: 'Szczelność', value: 'IP52' },
+    { name: 'Odporność ESD', value: '±8 kV pośrednio, ±15 kV przez powietrze' },
+    { name: 'Oświetlenie otoczenia', value: '0–100 000 lx' },
+    { name: 'Zgodność z normami', value: 'EMC: EN 55032, EN 55035, EN 61000-3-2, EN 61000-3-3; bezpieczeństwo: EN 62368-1, IEC 62368-1, IEC 62471, IEC 63000 (RoHS)' },
+    { name: 'Przewody', value: 'Zgodne z przewodami skanera Xenon XP 1950h' },
+    { name: 'W zestawie', value: 'Skaner, przewód USB typu A (prosty, 3 m, CBL-500-300-S00)' },
+    { name: 'Gwarancja', value: '5 lat' },
+  ],
+  applications: [
+    'Przyjęcie pacjenta',
+    'Odczyt kodów przy łóżku pacjenta',
+    'Pobieranie próbek',
+    'Apteka szpitalna',
+    'Ewidencja zapasów i elementów',
+  ],
+  variants: [
+    {
+      partNumber: '1960HHD-5USB-R',
+      name: 'Xenon Ultra 1960h HD — zestaw z przewodem USB',
+      attributes: { 'Optyka': 'HD' },
+      priceFrom: 1348.88,
+      availability: 'available',
+    },
+    {
+      partNumber: '1960HSR-5USB-R',
+      name: 'Xenon Ultra 1960h SR — zestaw z przewodem USB',
+      attributes: { 'Optyka': 'SR' },
+      priceFrom: 1348.88,
+      availability: 'unavailable',
+    },
+  ],
+  variantAttributeTooltips: {
+    'Optyka': 'Rodzaj optyki (ogniskowania) skanera 1960h.\n\nSR (standard range) — dłuższy zasięg: kod EAN/UPC 13 mil od 0 do 65,4 cm.\n\nHD (high density) — małe i gęste kody: Data Matrix 5 mil od 3,5 do 11,3 cm; wersja SR tego kodu nie odczytuje.',
+  },
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00', 'honeywell-46-00526'],
+  faq: [
+    {
+      question: 'Czym Honeywell Xenon Ultra 1960h różni się od Xenon Ultra 1960g?',
+      answer: 'Model 1960h ma białą obudowę antymikrobową przygotowaną do dezynfekcji. Obsługuje ustawienia z rozdziału „Healthcare Settings” instrukcji, które działają tylko w Xenon Ultra 1960h i 1962h, m.in. tryby ciche i tryb nocny. Fabrycznie ma niską głośność sygnału odczytu. Wersje 1960h mają ogniskowanie SR lub HD. Model ogólnego przeznaczenia to [Honeywell Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960).',
+    },
+    {
+      question: 'Jak czyścić i dezynfekować obudowę Xenon Ultra 1960h?',
+      answer: 'Obudowa 1960h jest przygotowana do regularnej dezynfekcji wieloma środkami bez uszkodzenia skanera. Wykaz środków dopuszczonych przez Honeywell zawiera przewodnik „Healthcare Disinfectant-Ready Housing Cleaning Guide”. Skanera nie wolno zanurzać w wodzie ani w płynie czyszczącym. Na okno nie stosuje się ściereczek ściernych, a na obudowę i okno — rozpuszczalników, np. acetonu.',
+    },
+    {
+      question: 'Jak wyciszyć skaner 1960h na sali chorych?',
+      answer: 'Rozdział 5 instrukcji Xenon Ultra 196x zawiera kody programujące. Silent Mode with Flashing LED wycisza skaner, a dobry odczyt potwierdza pięciokrotnym mignięciem zielonej diody i celownika. Silent Mode with Long LED zapala diodę na 1 s. Nighttime Mode ustawia bardzo cichy sygnał, a Daytime Mode cichy. W skanerze z opcją wibracji osobny kod włącza wibrację po dobrym odczycie; jej czas ustawia się w zakresie 100–2000 ms.',
+    },
+    {
+      question: 'Jakie przewody i zasilacz pasują do Xenon Ultra 1960h?',
+      answer: 'Zestaw zawiera prosty przewód USB 3 m, dostępny też osobno jako [CBL-500-300-S00](/produkt/honeywell-cbl-500-300-s00). Do portu szeregowego służy przewód RS-232 [CBL-020-300-C00](/produkt/honeywell-cbl-020-300-c00), zasilany zewnętrznie napięciem 5 V. Do takiego połączenia Honeywell przeznacza zasilacz [46-00526](/produkt/honeywell-46-00526) z wtyczką EU. Skaner przyjmuje także przewody używane wcześniej z Xenon XP 1950h.',
+    },
+    {
+      question: 'Czy Xenon Ultra 1960h może pracować w podstawce, bez trzymania w ręce?',
+      answer: 'Tak. W podstawce skaner wykrywa obiekt w odległości 7,6 cm, a po zmianie konfiguracji 15,2 cm. Honeywell oferuje do Xenon Ultra 1960 szary stojak STND-22F00-016-6 na elastycznym ramieniu o wysokości 22 cm.',
+    },
+    {
+      question: 'Jakie są alternatywy dla Honeywell Xenon Ultra 1960h?',
+      answer: 'Inne przewodowe skanery 2D dla placówek medycznych to [Zebra DS2208-HC](/produkt/zebra-ds2208-hc), [Zebra DS4608-HC](/produkt/zebra-ds4608-hc), [Zebra DS8208-HC](/produkt/zebra-ds8208-hc), [Datalogic Gryphon GD4690-HC](/produkt/datalogic-gryphon-gd4690-hc) i [Newland HR33 Marlin AI White](/produkt/newland-hr33-marlin-ai-white). Bezprzewodową odmianą tego modelu jest [Honeywell Xenon Ultra 1962h](/produkt/honeywell-xenon-ultra-1962h). Wszystkie modele zestawia przegląd [skanerów dla służby zdrowia](/skanery-dla-sluzby-zdrowia).',
+    },
+  ],
+  downloads: [
+    { name: 'Karta katalogowa Honeywell Xenon Ultra 1960h (EN)', type: 'datasheet', url: '/downloads/honeywell/honeywell-xenon-ultra-1960h-karta-katalogowa-en.pdf', size: '563 KB' },
+    { name: 'Instrukcja szybkiego uruchomienia Xenon Ultra 1960 (EN)', type: 'manual', url: '/instrukcje/honeywell-xenon-ultra-1960-qs-en.pdf', size: '308 KB' },
+    { name: 'Instrukcja obsługi Xenon Ultra 196x (EN)', type: 'manual', url: '/instrukcje/honeywell-xenon-ultra-1960-ug-en.pdf', size: '6,1 MB' },
+    { name: 'Przewodnik akcesoriów Xenon Ultra 1960 i 1962 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-xenon-ultra-1960-1962-akcesoria-en.pdf', size: '1,6 MB' },
+  ],
+  relatedProducts: [...HC_CORDED, 'honeywell-xenon-ultra-1960'],
+  createdAt: '2026-10-25',
+  sameAs: 'https://automation.honeywell.com/gb/en/products/productivity-solutions/barcode-scanners/healthcare-scanners/xenon-ultra-1960h-healthcare-scanner',
+}
+
+const xenonUltra1962h: Product = {
+  id: 'honeywell-xenon-ultra-1962h',
+  slug: 'honeywell-xenon-ultra-1962h',
+  name: 'Honeywell Xenon Ultra 1962h',
+  seoH1: 'Honeywell Xenon Ultra 1962h',
+  shortDescription: 'Honeywell Xenon Ultra 1962h — bezprzewodowy skaner 2D Bluetooth dla służby zdrowia: obudowa antymikrobowa przygotowana do dezynfekcji, bateria Li-ion lub superkondensator.',
+  seoTitle: 'Honeywell Xenon Ultra 1962h — bezprzewodowy skaner dla szpitali',
+  seoDescription: 'Bezprzewodowy skaner medyczny Honeywell Xenon Ultra 1962h: Bluetooth do 100 m, ładowanie stykowe lub bezstykowe, superkondensator ładowany w minutę. Skaner Honeywell 1962h, Xenon 1962h Honeywell, skaner opasek pacjentów. PN: 1962HHD-5USB-5-R, 1962HHD-5USB-BF-R, 1962HHD-5USB-WC-R, 1962HSR-5USB-5-R, 1962HSR-5USB-WC-R.',
+  description: `Honeywell Xenon Ultra 1962h to bezprzewodowy skaner ręczny 1D/2D z łącznością Bluetooth, zaprojektowany dla placówek ochrony zdrowia. Swoboda ruchu jest ważna w ciasnych salach chorych i na oddziałach intensywnej terapii, gdzie wokół pacjenta stoi dużo aparatury. Skaner zajmuje mało miejsca i można go zamocować lub odłożyć w wielu miejscach.
+
+Wszystkie modele 1962h mają białą obudowę antymikrobową, przygotowaną do dezynfekcji. Konstrukcja ma niewiele zakamarków, w których mogłyby się gromadzić zarazki.
+
+Ten sam skaner przyjmuje baterię litowo-jonową albo superkondensator. Superkondensator ładuje się w niecałą minutę z zasilacza lub zasilanego portu USB i wystarcza na co najmniej 450 odczytów kodów UPC/EAN. Honeywell wskazuje go do podawania leków przy łóżku i pobierania próbek. Wersje z ładowaniem bezstykowym nie mają odsłoniętych styków, co ogranicza awarie spowodowane korozją.
+
+Tryby Patient Do-Not-Disturb, wibracja i Scan Lamp ograniczają dźwięk i światło przy pacjencie. Każdy zestaw zawiera bazę prezentacyjną i przewód USB 2,7 m. Gwarancja wynosi 3 lata na skaner, 5 lat na superkondensator i rok na baterię.`,
+  categoryId: 'skanery-kodow-kreskowych',
+  subcategoryIds: ['skanery-dla-sluzby-zdrowia', 'skanery-bezprzewodowe'],
+  manufacturerId: 'honeywell',
+  priceFrom: 3157.31,
+  images: [
+    '/images/products/1962HHD-5USB-5-R.png',
+    '/images/products/1962HHD-5USB-5-R-2.png',
+    '/images/products/1962HHD-5USB-5-R-3.png',
+    '/images/products/1962HHD-5USB-5-R-4.png',
+    '/images/products/1962HHD-5USB-5-R-5.png',
+  ],
+  imageDescriptions: [
+    'Honeywell Xenon Ultra 1962h w białej bazie prezentacyjnej, widok pod kątem z przodu',
+    'Honeywell Xenon Ultra 1962h w wersji z ładowaniem stykowym — widok pod kątem, styki na końcu rękojeści',
+    'Honeywell Xenon Ultra 1962h — widok z przodu: okno skanera w turkusowej ramce',
+    'Honeywell Xenon Ultra 1962h w wersji z ładowaniem bezstykowym — widok pod kątem, rękojeść bez styków',
+    'Honeywell Xenon Ultra 1962h w poziomej bazie biurkowej i ściennej (baza pozioma sprzedawana osobno)',
+  ],
+  tags: ['healthcare'],
+  availability: 'available',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Typ urządzenia', value: 'Bezprzewodowy skaner ręczny 1D/2D (imager) w wersji dla służby zdrowia' },
+    { name: 'Obudowa', value: 'Biała, antymikrobowa, przygotowana do dezynfekcji (Disinfectant Ready Housing we wszystkich modelach 1962h)' },
+    { name: 'Tryby pracy przy pacjencie', value: 'Patient Do-Not-Disturb, wibracja, Scan Lamp; tryby ciche skanera i bazy, tryb nocny' },
+    { name: 'Matryca', value: '1280 × 1080 pikseli' },
+    { name: 'Celownik', value: 'LED z zieloną kropką, 525 nm' },
+    { name: 'Oświetlenie', value: 'Białe, 2700 K' },
+    { name: 'Pole widzenia', value: '42° w poziomie, 36° w pionie' },
+    { name: 'Tolerancja ruchu', value: 'SR i HD: do 4 m/s' },
+    { name: 'Kontrast druku', value: 'Od 15%' },
+    { name: 'Obrót, pochylenie, skos', value: '±360°, ±65°, ±65°' },
+    { name: 'Odczytywane kody', value: 'Standardowe kody 1D, PDF, 2D, kody pocztowe, Digimarc, DotCode, OCR (zależnie od konfiguracji)' },
+    { name: 'Zasięg 13 mil UPC', value: 'SR: 0–654 mm; HD: 0–502 mm' },
+    { name: 'Zasięg 20 mil Code 39', value: 'SR: 4–1115 mm; HD: 4–814 mm' },
+    { name: 'Zasięg 10 mil QR', value: 'SR: 11–262 mm; HD: 1–230 mm' },
+    { name: 'Zasięg 5 mil Data Matrix', value: 'Tylko HD: 35–113 mm' },
+    { name: 'Jakość obrazu', value: '109 PPI na dokumencie A4' },
+    { name: 'Łączność', value: 'Bluetooth 4.2, 2,4 GHz, Adaptive Frequency Hopping; dostępny BLE' },
+    { name: 'Zasięg radiowy', value: 'Klasa 1: 100 m w linii wzroku (domyślnie); po zmianie ustawień klasa 2: 10 m' },
+    { name: 'Interfejsy hosta (baza)', value: 'USB, Keyboard Wedge, RS-232' },
+    { name: 'Bateria Li-ion', value: 'Co najmniej 3300 mAh; do 80 000 odczytów (1 odczyt/s) i ok. 22 h pracy na jednym ładowaniu; ładowanie ok. 4,5 h (z zasilaczem)' },
+    { name: 'Superkondensator', value: 'Pełne ładowanie poniżej 60 s z zasilacza lub zasilanego portu USB, poniżej 4 min z portu USB; 450 odczytów na ładowaniu; 500 000 cykli ładowania' },
+    { name: 'Zasilanie bazy', value: '2,5 W (500 mA, 5 V DC) ze standardowego portu USB; 10 W (2 A, 5 V DC) z zasilaczem; 0,75 W bez ładowania' },
+    { name: 'Wykrywanie obiektu', value: 'Konfigurowane: 7,6 lub 15,2 cm' },
+    { name: 'Sygnalizacja', value: 'Diody dobrego odczytu, tylne diody, brzęczyk z regulacją tonu i głośności, diody stanu ładowania, dioda baterii, przycisk Find My' },
+    { name: 'Wymiary skanera', value: '108,2 × 70,4 × 160,2 mm' },
+    { name: 'Wymiary bazy prezentacyjnej', value: '82,9 × 90,4 × 121,6 mm' },
+    { name: 'Masa skanera', value: 'Z baterią Li-ion: 247 g (bezstykowy: 255 g); z superkondensatorem: 218 g (bezstykowy: 227 g)' },
+    { name: 'Masa bazy prezentacyjnej', value: '214 g (bezstykowa: 220 g)' },
+    { name: 'Temperatura pracy', value: 'Skaner: 0–50°C; baza: ładowanie 5–35°C, bez ładowania 0–50°C' },
+    { name: 'Temperatura przechowywania', value: '−40–70°C' },
+    { name: 'Wilgotność', value: '0–95% (bez kondensacji)' },
+    { name: 'Odporność na upadki', value: '50 upadków z 1,8 m na beton w zakresie temperatur pracy; Mil Spec Drop: 2,4 m (8 ft)' },
+    { name: 'Test przewracania', value: '2000 przewrotów z 0,5 m' },
+    { name: 'Szczelność', value: 'Skaner: IP52; baza: IP41' },
+    { name: 'Odporność ESD', value: '±8 kV pośrednio, ±15 kV przez powietrze' },
+    { name: 'Oświetlenie otoczenia', value: '0–100 000 lx' },
+    { name: 'Zgodność z normami', value: 'EMC: EN 55032, EN 55035, EN 61000-3-2, EN 61000-3-3; bezpieczeństwo: EN 62368-1, IEC 62368-1, IEC 62471, IEC 63000 (RoHS); radio: EN 300 328' },
+    { name: 'W zestawie', value: 'Skaner, baza prezentacyjna CCB-U00-H z kubkiem stykowym 1962H-BAT-CUP lub bezstykowym 1962H-WC-CUP (zależnie od wersji), przewód USB typu A (prosty, 2,7 m)' },
+    { name: 'Gwarancja', value: 'Skaner: 3 lata; superkondensator: 5 lat; bateria Li-ion: 1 rok' },
+  ],
+  applications: [
+    'Podawanie leków przy łóżku pacjenta',
+    'Pobieranie próbek',
+    'Przyjęcie pacjenta',
+    'Apteka szpitalna',
+    'Ewidencja zapasów i elementów',
+  ],
+  variants: [
+    {
+      partNumber: '1962HHD-5USB-5-R',
+      name: 'Xenon Ultra 1962h HD — bateria Li-ion, baza stykowa, przewód USB',
+      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Stykowe' },
+      priceFrom: 3157.31,
+      availability: 'available',
+    },
+    {
+      partNumber: '1962HHD-5USB-BF-R',
+      name: 'Xenon Ultra 1962h HD — superkondensator, baza stykowa, przewód USB',
+      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Superkondensator', 'Ładowanie': 'Stykowe' },
+      priceFrom: 3172.09,
+      availability: 'available',
+    },
+    {
+      partNumber: '1962HHD-5USB-WC-R',
+      name: 'Xenon Ultra 1962h HD — bateria Li-ion, baza bezstykowa, przewód USB',
+      attributes: { 'Optyka': 'HD', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Bezstykowe' },
+      priceFrom: 3473.49,
+      availability: 'unavailable',
+    },
+    {
+      partNumber: '1962HSR-5USB-5-R',
+      name: 'Xenon Ultra 1962h SR — bateria Li-ion, baza stykowa, przewód USB',
+      attributes: { 'Optyka': 'SR', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Stykowe' },
+      priceFrom: 3157.75,
+      availability: 'unavailable',
+    },
+    {
+      partNumber: '1962HSR-5USB-WC-R',
+      name: 'Xenon Ultra 1962h SR — bateria Li-ion, baza bezstykowa, przewód USB',
+      attributes: { 'Optyka': 'SR', 'Zasilanie': 'Li-ion', 'Ładowanie': 'Bezstykowe' },
+      priceFrom: 3157.75,
+      availability: 'unavailable',
+    },
+  ],
+  variantAttributeTooltips: {
+    'Optyka': 'Wersja optyki (ogniskowania) w skanerze 1962h.\n\nSR — kody o standardowej gęstości; Code 39 20 mil z odległości do 111,5 cm.\n\nHD — drobne kody; jako jedyna odczytuje Data Matrix 5 mil (3,5–11,3 cm).',
+    'Zasilanie': 'Źródło energii skanera 1962h.\n\nLi-ion — bateria litowo-jonowa; do 80 000 odczytów i ok. 22 h pracy; ładowanie ok. 4,5 h.\n\nSuperkondensator — ładuje się poniżej 60 s z zasilacza, wystarcza na ok. 450 odczytów; 5 lat gwarancji.',
+    'Ładowanie': 'Sposób ładowania skanera w bazie.\n\nStykowe — przez metalowe styki na końcu rękojeści.\n\nBezstykowe — bez odsłoniętych styków, co ogranicza awarie spowodowane korozją.',
+  },
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-ccb-u00-h-kit', 'honeywell-ccb-ultra-horiz-hc', 'honeywell-bat-scn11', 'honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00'],
+  faq: [
+    {
+      question: 'Czym Honeywell Xenon Ultra 1962h różni się od Xenon Ultra 1962?',
+      answer: 'Wszystkie modele 1962h mają białą, antymikrobową obudowę przygotowaną do dezynfekcji. Wersja dla służby zdrowia obsługuje ustawienia „Healthcare Settings” z instrukcji, czyli tryby ciche skanera i bazy. Do 1962h przeznaczone są białe bazy Healthcare, np. CCB-U00-H i CCB-ULTRA-HORIZ-HC. Wersję bez oznaczenia „h” opisuje karta [Honeywell Xenon Ultra 1962](/produkt/honeywell-xenon-ultra-1962).',
+    },
+    {
+      question: 'Bateria czy superkondensator — który wariant 1962h wybrać?',
+      answer: 'Superkondensator przydaje się tam, gdzie skaner często wraca do bazy, np. przy podawaniu leków i pobieraniu próbek. Ładuje się w niecałą minutę, a naładowany utrzymuje energię przez kilka godzin. Bateria Li-ion wystarcza na ok. 22 h pracy i do 80 000 odczytów, więc lepiej sprawdza się przy dłuższej pracy z dala od bazy. Ten sam skaner przyjmuje oba źródła zasilania, dlatego placówka może łączyć je w jednej flocie.',
+    },
+    {
+      question: 'Jak dezynfekować Xenon Ultra 1962h i bazę?',
+      answer: 'Obudowy skanera i bazy Healthcare są antymikrobowe i przygotowane do częstego czyszczenia. Środki dopuszczone przez Honeywell wymienia „Healthcare Disinfectant-Ready Housing Cleaning Guide”. Skaner wkłada się do bazy dopiero po wyschnięciu wszystkich elementów. Połączenie mokrych elementów może spowodować uszkodzenie nieobjęte gwarancją. Przy rygorystycznych procedurach czyszczenia producent wskazuje wersje z ładowaniem bezstykowym.',
+    },
+    {
+      question: 'Jaki zasięg ma Bluetooth i ile skanerów obsługuje jedna baza?',
+      answer: 'Skaner pracuje domyślnie w klasie 1, z zasięgiem do 100 m w linii wzroku. Ustawienie klasy 2 ogranicza zasięg do 10 m. Do bazy prezentacyjnej Healthcare można podłączyć do 7 skanerów. Po wyjściu poza zasięg skaner i baza mogą włączyć alarm, a przycisk Find My na bazie uruchamia sygnał w skojarzonych skanerach.',
+    },
+    {
+      question: 'Czy do zestawu Xenon Ultra 1962h potrzebny jest zasilacz?',
+      answer: 'Zestaw zawiera skaner, bazę prezentacyjną i przewód USB 2,7 m. Baza zasilana z portu USB komputera pobiera 2,5 W. Z zasilaczem 46-00536-6 (wtyczka EU, 5 V, 3 A) otrzymuje 10 W. Wtedy superkondensator ładuje się poniżej 60 s zamiast do 4 min. Ładowanie w bazie jest możliwe w temperaturze od 5 do 35°C.',
+    },
+    {
+      question: 'Jakie bazy i części zapasowe pasują do 1962h?',
+      answer: 'Drugie stanowisko można wyposażyć w pionową bazę prezentacyjną [CCB-U00-H-KIT](/produkt/honeywell-ccb-u00-h-kit) albo poziomą bazę biurkową i ścienną [CCB-ULTRA-HORIZ-HC](/produkt/honeywell-ccb-ultra-horiz-hc). Do wersji z baterią i ładowaniem stykowym pasuje bateria [BAT-SCN11](/produkt/honeywell-bat-scn11). Baza łączy się z komputerem m.in. przewodem [CBL-500-300-S00](/produkt/honeywell-cbl-500-300-s00).',
+    },
+    {
+      question: 'Jakie są alternatywy dla Honeywell Xenon Ultra 1962h?',
+      answer: 'Podobne bezprzewodowe skanery 2D dla ochrony zdrowia to [Zebra DS2278-HC](/produkt/zebra-ds2278-hc), [Zebra DS8288-HC](/produkt/zebra-ds8288-hc), [Datalogic Gryphon GBT4600-HC](/produkt/datalogic-gryphon-gbt4600-hc), [Newland HR33 Marlin AI BT White](/produkt/newland-hr33-marlin-ai-bt-white) i kompaktowy [Socket Mobile DuraScan D765](/produkt/socket-mobile-durascan-d765). Przewodową odmianą jest [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h). Porównanie wszystkich modeli zawiera strona [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia).',
+    },
+  ],
+  downloads: [
+    { name: 'Karta katalogowa Honeywell Xenon Ultra 1962h (EN)', type: 'datasheet', url: '/downloads/honeywell/honeywell-xenon-ultra-1962h-karta-katalogowa-en.pdf', size: '591 KB' },
+    { name: 'Instrukcja szybkiego uruchomienia Xenon Ultra 1962 (EN)', type: 'manual', url: '/instrukcje/honeywell-xenon-ultra-1962-qs-en.pdf', size: '310 KB' },
+    { name: 'Instrukcja obsługi Xenon Ultra 196x (EN)', type: 'manual', url: '/instrukcje/honeywell-xenon-ultra-1962-ug-en.pdf', size: '6,1 MB' },
+    { name: 'Przewodnik akcesoriów Xenon Ultra 1960 i 1962 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-xenon-ultra-1960-1962-akcesoria-en.pdf', size: '1,6 MB' },
+  ],
+  relatedProducts: [
+    'zebra-ds2278-hc',
+    'zebra-ds8288-hc',
+    'datalogic-gryphon-gbt4600-hc',
+    'datalogic-gryphon-gm4600-hc',
+    'newland-hr33-marlin-ai-bt-white',
+    'socket-mobile-durascan-d765',
+    'honeywell-xenon-ultra-1962',
+  ],
+  createdAt: '2026-10-25',
+  sameAs: 'https://automation.honeywell.com/gb/en/products/productivity-solutions/barcode-scanners/healthcare-scanners/xenon-ultra-1962h-healthcare-scanner',
+}
+
+const XENON_HC = ['honeywell-xenon-ultra-1962h']
+
+const zasilacz4600526: Product = {
+  id: 'honeywell-46-00526',
+  slug: 'honeywell-46-00526',
+  name: 'Honeywell 46-00526 — zasilacz EU 5,2 V do skanera Xenon Ultra 1960',
+  shortDescription: 'Honeywell 46-00526 — zasilacz z wtyczką EU (5,2 V DC, 1 A) do przewodowych skanerów Honeywell Xenon Ultra 1960 i 1960h.',
+  seoTitle: 'Honeywell 46-00526 — zasilacz EU do Xenon Ultra 1960 / 1960h',
+  seoDescription: 'Zasilacz Honeywell 46-00526 z wtyczką EU, 5,2 V DC, 1,0 A, do skanerów Xenon Ultra 1960g i 1960h przy połączeniu RS-232. Zasilacz do skanera Honeywell, 46-00526 Honeywell. PN: 46-00526.',
+  description: `Honeywell 46-00526 to zasilacz sieciowy z wtyczką EU do przewodowych skanerów Xenon Ultra 1960, w tym do wersji 1960h dla służby zdrowia. Daje 1,0 A przy 5,2 V DC i przyjmuje napięcie 90–255 V AC, 50–60 Hz.
+
+Zasilacz jest potrzebny przy połączeniach przewodowych, w których port hosta nie zasila skanera, np. przy przewodzie RS-232 CBL-020-300-C00. Przy połączeniu USB skaner pobiera zasilanie z komputera. Honeywell przeznacza ten zasilacz wyłącznie do skanerów przewodowych Xenon Ultra 1960. Bazy ładujące Xenon Ultra 1962 wymagają mocniejszego zasilacza 46-00536-6.`,
+  categoryId: 'akcesoria',
+  subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
+  manufacturerId: 'honeywell',
+  priceFrom: 117.54,
+  images: ['/images/products/46-00526.png'],
+  imageDescriptions: ['Honeywell 46-00526 — zasilacz sieciowy z wtyczką EU i przewodem zakończonym wtykiem kątowym'],
+  tags: [],
+  availability: 'available',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Part Number', value: '46-00526' },
+    { name: 'Typ', value: 'Zasilacz sieciowy do połączeń przewodowych' },
+    { name: 'Wtyczka', value: 'EU' },
+    { name: 'Wyjście', value: '5,2 V DC, 1,0 A' },
+    { name: 'Wejście', value: '90–255 V AC, 50–60 Hz' },
+    { name: 'Kompatybilność', value: 'Honeywell Xenon Ultra 1960 (1960g, 1960h, 1960li); nie do baz Xenon Ultra 1962' },
+  ],
+  applications: ['Zasilanie skanera przy połączeniu RS-232'],
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-cbl-020-300-c00'],
+  downloads: [
+    { name: 'Przewodnik akcesoriów Xenon Ultra 1960 i 1962 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-xenon-ultra-1960-1962-akcesoria-en.pdf', size: '1,6 MB' },
+  ],
+  relatedProducts: ['honeywell-xenon-ultra-1960h', 'honeywell-xenon-ultra-1960'],
+  createdAt: '2026-10-25',
+}
+
+const bazaPrezentacyjnaHc: Product = {
+  id: 'honeywell-ccb-u00-h-kit',
+  slug: 'honeywell-ccb-u00-h-kit',
+  name: 'Honeywell CCB-U00-H-KIT — baza prezentacyjna Healthcare do Xenon Ultra 1962h',
+  shortDescription: 'Honeywell CCB-U00-H-KIT — pionowa baza ładująco-komunikacyjna Healthcare do bezprzewodowego skanera Xenon Ultra 1962h, biała obudowa antymikrobowa.',
+  seoTitle: 'Honeywell CCB-U00-H-KIT — baza Healthcare do Xenon Ultra 1962h',
+  seoDescription: 'Baza prezentacyjna Honeywell CCB-U00-H-KIT do skanera Xenon Ultra 1962h: ładowanie i komunikacja Bluetooth, do 7 skanerów, USB, RS-232, KBW, obudowa przygotowana do dezynfekcji. Stacja do skanera Honeywell 1962h. PN: CCB-U00-H-KIT.',
+  description: `Honeywell CCB-U00-H-KIT to pionowa baza ładująco-komunikacyjna w wersji Healthcare do skanera Xenon Ultra 1962h. Skaner stoi w niej w pozycji prezentacyjnej, ładuje się i przesyła odczyty do komputera.
+
+Obudowa bazy jest biała i antymikrobowa, a jej tworzywo przygotowano do dezynfekcji. Baza komunikuje się przez Bluetooth w klasie 1 (100 m) lub klasie 2 (10 m) i obsługuje do 7 skanerów. Z komputerem łączy się przez USB, RS-232 lub Keyboard Wedge; przewód zamawia się osobno. Kod BASLNK0 przełącza bazę w tryb samego ładowania.
+
+Zestaw CCB-U00-H-KIT jest przeznaczony do skanerów ładowanych stykowo. Wersja do ładowania bezstykowego ma numer CCB-U00-H-WCKIT.`,
+  categoryId: 'akcesoria',
+  subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
+  manufacturerId: 'honeywell',
+  priceFrom: 947.57,
+  images: ['/images/products/CCB-U00-H-KIT.png'],
+  imageDescriptions: ['Honeywell CCB-U00-H-KIT — biała baza prezentacyjna Healthcare ze skanerem Xenon Ultra 1962h (zdjęcie poglądowe, skaner sprzedawany osobno)'],
+  tags: ['healthcare'],
+  availability: 'unavailable',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Part Number', value: 'CCB-U00-H-KIT' },
+    { name: 'Typ', value: 'Pionowa baza ładująco-komunikacyjna (prezentacyjna), wersja Healthcare' },
+    { name: 'Obudowa', value: 'Biała, antymikrobowa, przygotowana do dezynfekcji' },
+    { name: 'Bluetooth', value: 'Klasa 1: 100 m; klasa 2: 10 m' },
+    { name: 'Liczba skanerów', value: 'Do 7' },
+    { name: 'Interfejsy hosta', value: 'USB, RS-232, Keyboard Wedge (przewody sprzedawane osobno)' },
+    { name: 'Tryb samego ładowania', value: 'Kod programujący BASLNK0' },
+    { name: 'Zasilanie', value: '2,5 W z portu USB; 10 W z zasilaczem 46-00536-6' },
+    { name: 'Wymiary', value: '82,9 × 90,4 × 121,6 mm' },
+    { name: 'Masa', value: '214 g' },
+    { name: 'Szczelność', value: 'IP41' },
+    { name: 'Temperatura ładowania', value: '5–35°C' },
+    { name: 'Kompatybilność', value: 'Honeywell Xenon Ultra 1962h z ładowaniem stykowym' },
+  ],
+  applications: ['Dodatkowe stanowisko ładowania skanera 1962h', 'Odczyt kodów w pozycji prezentacyjnej'],
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-cbl-500-300-s00', 'honeywell-cbl-020-300-c00'],
+  downloads: [
+    { name: 'Przewodnik akcesoriów Xenon Ultra 1960 i 1962 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-xenon-ultra-1960-1962-akcesoria-en.pdf', size: '1,6 MB' },
+  ],
+  relatedProducts: XENON_HC,
+  createdAt: '2026-10-25',
+}
+
+const bazaPoziomaHc: Product = {
+  id: 'honeywell-ccb-ultra-horiz-hc',
+  slug: 'honeywell-ccb-ultra-horiz-hc',
+  name: 'Honeywell CCB-ULTRA-HORIZ-HC — pozioma baza Healthcare do Xenon Ultra 1962h',
+  shortDescription: 'Honeywell CCB-ULTRA-HORIZ-HC — pozioma baza Healthcare na biurko lub ścianę do skanera Xenon Ultra 1962h, Bluetooth do 100 m.',
+  seoTitle: 'Honeywell CCB-ULTRA-HORIZ-HC — pozioma baza do Xenon Ultra 1962h',
+  seoDescription: 'Pozioma baza ładująco-komunikacyjna Honeywell CCB-ULTRA-HORIZ-HC na biurko lub ścianę do skanera Xenon Ultra 1962h, biała obudowa antymikrobowa. Baza Honeywell 1962h Healthcare. PN: CCB-ULTRA-HORIZ-HC.',
+  description: `Pozioma baza Honeywell CCB-ULTRA-HORIZ-HC ładuje skaner Xenon Ultra 1962h i odbiera z niego dane. Należy do akcesoriów Healthcare; stawia się ją na biurku albo montuje na ścianie. Skaner leży w bazie poziomo, ładuje się i przekazuje odczyty przez Bluetooth.
+
+Obudowa bazy jest biała, antymikrobowa i przygotowana do dezynfekcji. Łączność radiowa działa w klasie 1 na 100 m albo w klasie 2 na 10 m. Wersja do skanerów z ładowaniem bezstykowym ma numer CCB-ULT-HORIZ-HCWC.`,
+  categoryId: 'akcesoria',
+  subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
+  manufacturerId: 'honeywell',
+  priceFrom: 947.57,
+  images: ['/images/products/CCB-ULTRA-HORIZ-HC.png'],
+  imageDescriptions: ['Honeywell CCB-ULTRA-HORIZ-HC — biała pozioma baza Healthcare ze skanerem Xenon Ultra 1962h (zdjęcie poglądowe, skaner sprzedawany osobno)'],
+  tags: ['healthcare'],
+  availability: 'unavailable',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Part Number', value: 'CCB-ULTRA-HORIZ-HC' },
+    { name: 'Typ', value: 'Pozioma baza ładująco-komunikacyjna na biurko lub ścianę, wersja Healthcare' },
+    { name: 'Obudowa', value: 'Biała, antymikrobowa, przygotowana do dezynfekcji' },
+    { name: 'Bluetooth', value: 'Klasa 1: 100 m; klasa 2: 10 m' },
+    { name: 'Wymiary', value: '211,3 × 74,2 × 77,7 mm' },
+    { name: 'Masa', value: '223 g' },
+    { name: 'Temperatura ładowania', value: '5–35°C' },
+    { name: 'Kompatybilność', value: 'Honeywell Xenon Ultra 1962h z ładowaniem stykowym' },
+  ],
+  applications: ['Stanowisko ładowania na biurku lub na ścianie', 'Dodatkowa baza skanera 1962h'],
+  compatibleAccessories: [],
+  relatedAccessories: ['honeywell-cbl-500-300-s00'],
+  downloads: [
+    { name: 'Przewodnik akcesoriów Xenon Ultra 1960 i 1962 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-xenon-ultra-1960-1962-akcesoria-en.pdf', size: '1,6 MB' },
+  ],
+  relatedProducts: XENON_HC,
+  createdAt: '2026-10-25',
+}
+
+// Lista środków z artykułu Socket Mobile „Medical-Grade Plastic” (dotyczy D745 i D765); w FAQ tylko odesłanie, żeby nie powielać tekstu między kartami.
+const SOCKET_SRODKI = 'Sani-Cloth HB, Sani-Cloth Plus, Super Sani-Cloth (czwartorzędowe sole amoniowe); Hepacide Quat II; chusteczki z alkoholem izopropylowym 70%; CaviWipes; Virex 256; 409 Glass and Surface Cleaner; Windex Blue; Clorox Bleach (podchloryn sodu); ocet; łagodny płyn do naczyń z wodą'
+
+const durascanD745: Product = {
+  id: 'socket-mobile-durascan-d745',
+  slug: 'socket-mobile-durascan-d745',
+  name: 'Socket Mobile DuraScan D745',
+  seoH1: 'Socket Mobile DuraScan D745',
+  shortDescription: 'Socket Mobile DuraScan D745 — kompaktowy skaner 1D/2D Bluetooth dla służby zdrowia, obudowa z tworzywa klasy medycznej, IP54, iOS, Android i Windows.',
+  seoTitle: 'Socket Mobile DuraScan D745 — skaner Bluetooth dla służby zdrowia',
+  seoDescription: 'Kompaktowy skaner medyczny Socket Mobile DuraScan D745: kody 1D i 2D z etykiet i ekranów, Bluetooth do iPhone, iPad i Androida, tworzywo ISO 10993, IP54. Skaner Socket Mobile D745, DuraScan D745 Socket. PN: CX3861-2892, CX3859-2890.',
+  description: `Socket Mobile DuraScan D745 to kompaktowy bezprzewodowy skaner kodów 1D i 2D przeznaczony dla placówek ochrony zdrowia. Odczytuje kody wydrukowane i wyświetlane na ekranach, także przez osłonę z tworzywa lub szkła. Przez Bluetooth łączy się z urządzeniami iOS, Android i Windows 11.
+
+Obudowę wykonano z tworzywa klasy medycznej, które spełnia normy ISO 10993 i EN 60529. Tworzywo znosi codzienne czyszczenie agresywnymi środkami dezynfekcyjnymi i nie pęka, nie odbarwia się, nie pęcznieje ani nie twardnieje. Uszczelnienie IP54 chroni wnętrze skanera podczas przecierania.
+
+Socket Mobile przeznacza D745 do przyjęcia pacjentów, opieki przy łóżku i pracy w aptece. Typowe zadania to identyfikacja leków i pacjentów, podawanie leków, pobieranie próbek i kontrola przetoczeń krwi. Mały skaner mieści się w kieszeni, a nosi się go także na pasku na nadgarstek lub w kaburze.
+
+Wymienna bateria wystarcza na 12-godzinną zmianę, a przycisk skanowania wytrzymuje ponad 5 mln naciśnięć. W trybie automatycznym skaner postawiony w kołysce czyta kody bez naciskania przycisku. Aplikacje z zestawem CaptureSDK obsługują D745 bez dodatkowej integracji.`,
+  categoryId: 'skanery-kodow-kreskowych',
+  subcategoryIds: ['skanery-dla-sluzby-zdrowia', 'skanery-bezprzewodowe'],
+  manufacturerId: 'socket-mobile',
+  priceFrom: 1787.76,
+  images: [
+    '/images/products/CX3861-2892.png',
+    '/images/products/CX3861-2892-2.png',
+    '/images/products/CX3861-2892-3.png',
+    '/images/products/CX3861-2892-4.png',
+    '/images/products/CX3861-2892-5.png',
+  ],
+  imageDescriptions: [
+    'Socket Mobile DuraScan D745 — biały skaner z szarozielonymi elementami, widok pod kątem z góry, przycisk skanowania i włącznik',
+    'Socket Mobile DuraScan D745 w kołysce ładującej w wersji dla służby zdrowia (kołyska w zestawie CX3861-2892)',
+    'Socket Mobile DuraScan D745 — widok z boku pod kątem',
+    'Socket Mobile DuraScan D745 — widok od spodu, okno skanera na górnym końcu',
+    'Kołyska ładująca Socket Mobile w wersji dla służby zdrowia, bez skanera (w zestawie CX3861-2892)',
+  ],
+  tags: ['healthcare'],
+  availability: 'available',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Typ urządzenia', value: 'Kompaktowy bezprzewodowy skaner kodów 1D/2D dla służby zdrowia' },
+    { name: 'Obudowa', value: 'Tworzywo klasy medycznej spełniające normy ISO 10993 i EN 60529; szczelność IP54' },
+    { name: 'Środki czyszczące dopuszczone przez producenta', value: SOCKET_SRODKI },
+    { name: 'Odczyt', value: 'Kody 1D i 2D z papieru i ekranów, także przez tworzywo lub szkło; odczyt wielokierunkowy' },
+    { name: 'Matryca', value: '1280 × 960 pikseli' },
+    { name: 'Kąt odczytu', value: '44,5° w poziomie, 33,5° w pionie' },
+    { name: 'Kontrast druku', value: 'Od 20–25%' },
+    { name: 'Odległość odczytu', value: '3,0–49,5 cm (zależnie od wielkości kodu, symboliki i nośnika)' },
+    { name: 'Zasięg wybranych kodów', value: 'UPC-A 100%: 4,6–49,5 cm; QR 20 mil: 3,0–35,6 cm; Data Matrix 10 mil: 7,4–21,6 cm; Code 39 5 mil: 6,1–24,1 cm' },
+    { name: 'Kody domyślne 1D', value: 'Bookland EAN, Codabar, Code 128, Code 39, Code 93, EAN/JAN-13, EAN/JAN-8, GS1-128, GS1 DataBar, Interleaved 2 of 5, ISBT 128, Trioptic, UPC-A, UPC-E' },
+    { name: 'Kody domyślne 2D', value: 'Aztec, Composite, Data Matrix, GS1 Data Matrix, GS1 QR, Han Xin, MaxiCode, MicroPDF417, Micro QR, PDF417, QR' },
+    { name: 'Kody obsługiwane po włączeniu', value: 'Code 11, Matrix 2 of 5, MSI, kody pocztowe, OCR-A, OCR-B, MICR E13B' },
+    { name: 'Oświetlenie otoczenia', value: '0–100 000 lx' },
+    { name: 'Łączność', value: 'Bluetooth 2.1 + EDR, klasa 2, szyfrowanie 56-bit; zasięg do 10 m (zależnie od otoczenia i urządzenia hosta)' },
+    { name: 'Profile Bluetooth', value: 'HID (tryb Basic), SPP (tryb Application), tryb iOS Application (domyślny)' },
+    { name: 'Systemy', value: 'Apple iOS (iPhone, iPad), Android, Windows 11' },
+    { name: 'Integracja z aplikacjami', value: 'CaptureSDK w wersji 2.0.29 lub nowszej' },
+    { name: 'Tryb automatyczny', value: 'Odczyt bez naciskania przycisku po umieszczeniu w kołysce lub podstawce (Auto/Presentation Mode)' },
+    { name: 'Przycisk skanowania', value: 'Ponad 5 mln naciśnięć' },
+    { name: 'Bateria', value: 'Wymienna, litowo-polimerowa, 1400 mAh, 3,7 V, 5,55 Wh, 35 g; 500 cykli ładowania' },
+    { name: 'Czas pracy', value: 'Ponad 20 h w trybie oszczędnym; 85 000 odczytów w 9 h (2 odczyty/s); 7000 odczytów w 19 h (1 odczyt co 4 s)' },
+    { name: 'Sygnalizacja', value: 'Diody LED odczytu i ładowania, sygnały dźwiękowe' },
+    { name: 'Temperatura pracy', value: '0–45°C; ładowanie powyżej 40°C może sprawiać problemy' },
+    { name: 'Temperatura przechowywania', value: '−40–70°C' },
+    { name: 'Wilgotność', value: '95% przy 60°C (bez kondensacji)' },
+    { name: 'Test przewracania', value: '2500 cykli z 1 m na metalową płytę (IEC 60068-2-32)' },
+    { name: 'Zgodność z normami', value: 'Bezpieczeństwo: IEC 60950-1, UL 60950-1, CAN/CSA C22.2; LED: IEC 62471, EN 62471 (grupa wolna); RoHS EN 50581; EMC: CE EN 55022, EN 55024' },
+    { name: 'W zestawie CX3859-2890', value: 'Skaner, pasek na nadgarstek, przewód ładujący z wtykiem baryłkowym i wtykiem USB-A, instrukcja Get Started' },
+    { name: 'W zestawie CX3861-2892', value: 'Skaner, pasek na nadgarstek, kołyska ładująca, przewód z wtykiem baryłkowym i wtykiem USB-A, instrukcja Get Started' },
+    { name: 'Gwarancja', value: '1 rok' },
+  ],
+  applications: [
+    'Identyfikacja pacjentów',
+    'Identyfikacja leków i podawanie leków',
+    'Pobieranie próbek',
+    'Kontrola przetoczeń krwi',
+    'Przyjęcie pacjenta i apteka',
+  ],
+  variants: [
+    {
+      partNumber: 'CX3861-2892',
+      name: 'DuraScan D745 z kołyską ładującą',
+      attributes: { 'Ładowanie': 'Kołyska ładująca' },
+      priceFrom: 1867.37,
+      availability: 'available',
+    },
+    {
+      partNumber: 'CX3859-2890',
+      name: 'DuraScan D745 z przewodem ładującym',
+      attributes: { 'Ładowanie': 'Przewód USB' },
+      priceFrom: 1787.76,
+      availability: 'unavailable',
+    },
+  ],
+  variantAttributeTooltips: {
+    'Ładowanie': 'Sposób ładowania skanera D745.\n\nKołyska ładująca — w wersji dla służby zdrowia; można ją codziennie czyścić środkami dezynfekcyjnymi. W trybie automatycznym skaner w kołysce czyta kody bez przycisku.\n\nPrzewód USB — przewód z wtykiem baryłkowym, podłączany do gniazda USB-A.',
+  },
+  compatibleAccessories: [],
+  relatedAccessories: [],
+  faq: [
+    {
+      question: 'Jakimi środkami można czyścić Socket Mobile DuraScan D745?',
+      answer: 'Socket Mobile dopuszcza m.in. chusteczki Sani-Cloth, chusteczki z alkoholem izopropylowym 70%, Virex 256, Clorox Bleach i ocet; pełną listę zawiera specyfikacja na tej karcie. D745 przeciera się chusteczką dezynfekcyjną albo ściereczką zwilżoną środkiem. Środka nie wylewa się bezpośrednio na skaner, a skanera nie zanurza się w wodzie, bo może to uszkodzić mechanizm.',
+    },
+    {
+      question: 'Z jakimi urządzeniami i aplikacjami współpracuje D745?',
+      answer: 'D745 łączy się przez Bluetooth z iPhone, iPad, urządzeniami z Androidem i komputerami z Windows 11. Ma certyfikat Apple i może być w pełni sterowany przez aplikację iOS lub Android. W trybie HID działa jak klawiatura, a w trybie SPP przesyła dane przez port szeregowy. Aplikacje ze zintegrowanym CaptureSDK 2.0.29 lub nowszym obsługują go od razu.',
+    },
+    {
+      question: 'Jak długo działa bateria skanera D745?',
+      answer: 'Bateria litowo-polimerowa 1400 mAh wystarcza na 12-godzinną zmianę. Przy dwóch odczytach na sekundę producent podaje 85 000 odczytów w 9 h, a przy jednym odczycie co 4 s — 7000 odczytów w 19 h. Baterię można wymienić bez wysyłania skanera do serwisu.',
+    },
+    {
+      question: 'Czym DuraScan D745 różni się od D765?',
+      answer: '[Socket Mobile DuraScan D765](/produkt/socket-mobile-durascan-d765) odczytuje dodatkowo strefę MRZ dokumentów, fonty OCR i DotCode oraz kody od 3 mm. Jego odległość odczytu sięga 91,7 cm, a w D745 — 49,5 cm. D765 wytrzymuje 6 upadków z 2 m na beton. D745 wystarcza do identyfikacji pacjentów i leków oraz do odczytu kodów z ekranów.',
+    },
+    {
+      question: 'Co zawierają zestawy CX3861-2892 i CX3859-2890?',
+      answer: 'Oba zestawy zawierają skaner, pasek na nadgarstek, przewód z wtykiem baryłkowym i USB-A oraz instrukcję Get Started. CX3861-2892 ma dodatkowo kołyskę ładującą w wersji dla służby zdrowia, którą można codziennie dezynfekować. W kołysce skaner może pracować w trybie automatycznym.',
+    },
+    {
+      question: 'Jakie są alternatywy dla Socket Mobile DuraScan D745?',
+      answer: 'Kompaktowym skanerem dla ochrony zdrowia jest też [Zebra CS60-HC](/produkt/zebra-cs60-hc). Skanery pistoletowe Bluetooth w wersjach medycznych to [Zebra DS2278-HC](/produkt/zebra-ds2278-hc), [Honeywell Xenon Ultra 1962h](/produkt/honeywell-xenon-ultra-1962h) i [Newland HR23 Dorada AI BT White](/produkt/newland-hr23-dorada-ai-bt-white). Zestawienie modeli pokazuje kategoria [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia).',
+    },
+  ],
+  downloads: [],
+  relatedProducts: [
+    'zebra-cs60-hc',
+    'socket-mobile-durascan-d765',
+    'zebra-ds2278-hc',
+    'honeywell-xenon-ultra-1962h',
+    'newland-hr23-dorada-ai-bt-white',
+  ],
+  createdAt: '2026-10-25',
+  sameAs: 'https://www.socketmobile.com/products/d745',
+}
+
+const durascanD765: Product = {
+  id: 'socket-mobile-durascan-d765',
+  slug: 'socket-mobile-durascan-d765',
+  name: 'Socket Mobile DuraScan D765',
+  seoH1: 'Socket Mobile DuraScan D765',
+  shortDescription: 'Socket Mobile DuraScan D765 — skaner 1D/2D i MRZ z Bluetooth dla służby zdrowia: kody od 3 mm na fiolkach, dokumenty pacjenta, tworzywo klasy medycznej, IP54.',
+  seoTitle: 'Socket Mobile DuraScan D765 — skaner 2D i MRZ dla służby zdrowia',
+  seoDescription: 'Skaner medyczny Socket Mobile DuraScan D765: kody 2D od 3 mm na fiolkach i strzykawkach, odczyt MRZ paszportów, Bluetooth, tworzywo ISO 10993 i szczelność IP54. Skaner Socket Mobile D765, DuraScan D765 Socket. PN: CX4374-3507, CX4373-3506.',
+  description: `Socket Mobile DuraScan D765 to skaner Bluetooth do kodów 1D/2D dla ochrony zdrowia, który czyta także strefę MRZ dokumentów. Przy rejestracji lub przyjęciu pacjenta pobiera dane z paszportu albo prawa jazdy. Zamiast lasera ma celownik LED.
+
+Skaner odczytuje wielokierunkowo kody o wielkości od 3 mm, dlatego nadaje się do oznaczeń na fiolkach i strzykawkach. Czyta kody na powierzchniach zakrzywionych i błyszczących, kody słabej jakości oraz kody z ekranów. Obsługuje też PDF417, fonty OCR i DotCode. Funkcja tolerancji ruchu przyspiesza odczyt i powiększa obszar, w którym kod zostaje rozpoznany.
+
+Obudowę z tworzywa klasy medycznej, zgodnego z ISO 10993 i EN 60529, można często czyścić agresywnymi środkami dezynfekcyjnymi. Skaner ma szczelność IP54 i wytrzymuje 6 upadków z 2 m na beton. Producent wymienia szpitale, banki krwi, apteki, placówki opieki stacjonarnej i opiekę domową.
+
+D765 współpracuje przez Bluetooth z iOS, Androidem i Windows 11, a aplikacje z CaptureSDK obsługują go od razu. Zestaw CX4374-3507 ma kołyskę ładującą, a CX4373-3506 — przewód do ładowania.`,
+  categoryId: 'skanery-kodow-kreskowych',
+  subcategoryIds: ['skanery-dla-sluzby-zdrowia', 'skanery-bezprzewodowe'],
+  manufacturerId: 'socket-mobile',
+  priceFrom: 2504.43,
+  images: [
+    '/images/products/CX4374-3507.png',
+    '/images/products/CX4374-3507-2.png',
+    '/images/products/CX4374-3507-3.png',
+    '/images/products/CX4374-3507-4.png',
+    '/images/products/CX4374-3507-5.png',
+  ],
+  imageDescriptions: [
+    'Socket Mobile DuraScan D765 — biały skaner z szarozielonymi elementami, widok z góry pod kątem',
+    'Socket Mobile DuraScan D765 w kołysce ładującej dla służby zdrowia (kołyska w zestawie CX4374-3507)',
+    'Socket Mobile DuraScan D765 — widok z boku, okno skanera z przodu',
+    'Socket Mobile DuraScan D765 — widok od spodu',
+    'Kołyska ładująca Socket Mobile dla służby zdrowia, bez skanera (w zestawie CX4374-3507)',
+  ],
+  tags: ['healthcare'],
+  availability: 'unavailable',
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Typ urządzenia', value: 'Bezprzewodowy skaner kodów 1D/2D i MRZ dla służby zdrowia' },
+    { name: 'Obudowa', value: 'Tworzywo klasy medycznej spełniające normy ISO 10993 i EN 60529; szczelność IP54' },
+    { name: 'Środki czyszczące dopuszczone przez producenta', value: SOCKET_SRODKI },
+    { name: 'Celownik', value: 'LED (bez lasera)' },
+    { name: 'Odczyt', value: 'Kody 1D, 2D, PDF417, DotCode, fonty OCR i MRZ; kody od 3 mm; odczyt wielokierunkowy, z ekranów, z powierzchni zakrzywionych i błyszczących' },
+    { name: 'Matryca', value: '1280 × 960 pikseli' },
+    { name: 'Kąt odczytu', value: '44,5° w poziomie, 33,5° w pionie' },
+    { name: 'Kontrast druku', value: 'Od 20–25%' },
+    { name: 'Odległość odczytu', value: '4,1–91,7 cm (zależnie od wielkości kodu, symboliki i nośnika)' },
+    { name: 'Zasięg wybranych kodów', value: 'Code 39 3 mil: 5,8–14,7 cm; UPC-A 100%: 4,1–63,2 cm; Code 128 15 mil: 6,1–70,6 cm; Code 39 20 mil: 4,1–91,7 cm; Data Matrix 10 mil: 5,3–27,8 cm; QR 20 mil: 2,8–44,5 cm' },
+    { name: 'Kody domyślne 1D', value: 'Bookland EAN, Codabar, Code 128, Code 39, Code 93, EAN/JAN-13, EAN/JAN-8, GS1-128, GS1 DataBar, Interleaved 2 of 5, ISBT 128, Trioptic, UPC-A, UPC-E' },
+    { name: 'Kody domyślne 2D', value: 'Aztec, Composite, Data Matrix, DotCode, GS1 Data Matrix, GS1 QR, Han Xin, MaxiCode, MicroPDF417, Micro QR, PDF417, QR; OCR-A, OCR-B' },
+    { name: 'Oświetlenie otoczenia', value: '0–100 000 lx' },
+    { name: 'Łączność', value: 'Bluetooth 2.1 + EDR, klasa 2, szyfrowanie 56-bit; zasięg do 10 m (zależnie od otoczenia i urządzenia hosta)' },
+    { name: 'Profile Bluetooth', value: 'HID (tryb Basic), SPP (tryb Application), tryb iOS Application (domyślny)' },
+    { name: 'Systemy', value: 'Apple iOS (iPhone, iPad), Android, Windows 11' },
+    { name: 'Integracja z aplikacjami', value: 'CaptureSDK w wersji 2.0.29 lub nowszej' },
+    { name: 'Tryb automatyczny', value: 'Odczyt bez naciskania przycisku po umieszczeniu w kołysce lub podstawce (Auto/Presentation Mode)' },
+    { name: 'Bateria', value: 'Wymienna, litowo-polimerowa, 1400 mAh, 3,7 V, 5,55 Wh, 35 g; 500 cykli ładowania' },
+    { name: 'Czas pracy', value: 'Ponad 20 h w trybie oszczędnym; 85 000 odczytów w 9 h (2 odczyty/s); 7000 odczytów w 19 h (1 odczyt co 4 s)' },
+    { name: 'Sygnalizacja', value: 'Diody LED odczytu i ładowania, sygnały dźwiękowe' },
+    { name: 'Odporność na upadki', value: '6 upadków z 2 m na beton, po jednym na każdą ścianę' },
+    { name: 'Test przewracania', value: '2500 cykli z 1 m na metalową płytę (IEC 60068-2-32)' },
+    { name: 'Temperatura pracy', value: '0–45°C; ładowanie powyżej 40°C może sprawiać problemy' },
+    { name: 'Temperatura przechowywania', value: '−40–70°C' },
+    { name: 'Wilgotność', value: '95% przy 60°C (bez kondensacji)' },
+    { name: 'Zgodność z normami', value: 'Bezpieczeństwo: IEC 60950-1, UL 60950-1, CAN/CSA C22.2; LED: IEC 62471, EN 62471 (grupa wolna); RoHS EN 50581; EMC: CE EN 55022, EN 55024' },
+    { name: 'W zestawie CX4373-3506', value: 'Skaner, pasek na nadgarstek, przewód ładujący z wtykiem baryłkowym i wtykiem USB-A, instrukcja Get Started' },
+    { name: 'W zestawie CX4374-3507', value: 'Skaner, pasek na nadgarstek, kołyska ładująca, przewód z wtykiem baryłkowym i wtykiem USB-A, instrukcja Get Started' },
+    { name: 'Gwarancja', value: '1 rok' },
+  ],
+  applications: [
+    'Przyjęcie pacjenta z odczytem dokumentu tożsamości',
+    'Odczyt kodów na fiolkach i strzykawkach',
+    'Opieka przy łóżku pacjenta',
+    'Banki krwi i apteki',
+    'Opieka stacjonarna i domowa',
+  ],
+  variants: [
+    {
+      partNumber: 'CX4374-3507',
+      name: 'DuraScan D765 z kołyską ładującą',
+      attributes: { 'Ładowanie': 'Kołyska ładująca' },
+      priceFrom: 2584.08,
+      availability: 'unavailable',
+    },
+    {
+      partNumber: 'CX4373-3506',
+      name: 'DuraScan D765 z przewodem ładującym',
+      attributes: { 'Ładowanie': 'Przewód USB' },
+      priceFrom: 2504.43,
+      availability: 'unavailable',
+    },
+  ],
+  variantAttributeTooltips: {
+    'Ładowanie': 'Co służy do ładowania skanera D765.\n\nKołyska ładująca — znosi codzienną dezynfekcję; po włączeniu trybu automatycznego D765 czyta w niej kody bez przycisku.\n\nPrzewód USB — kabel z wtykiem baryłkowym po stronie skanera i wtykiem USB-A.',
+  },
+  compatibleAccessories: [],
+  relatedAccessories: [],
+  faq: [
+    {
+      question: 'Jakie dokumenty i kody odczytuje Socket Mobile DuraScan D765?',
+      answer: 'D765 czyta kody 1D i 2D, PDF417, DotCode, fonty OCR oraz strefę MRZ dokumentów. Przy przyjęciu pacjenta odczytuje dane z paszportu lub prawa jazdy. Rozpoznaje kody od 3 mm, np. na fiolkach i strzykawkach, a także kody na zakrzywionych i błyszczących powierzchniach.',
+    },
+    {
+      question: 'Jak dezynfekować skaner D765?',
+      answer: 'Obudowę D765 przeciera się chusteczką dezynfekcyjną, np. Sani-Cloth, lub ściereczką nasączoną środkiem z listy producenta podanej w specyfikacji. Płynu nie nalewa się na skaner. D765 nie wolno zanurzać w wodzie. Tworzywo klasy medycznej nie pęka i nie odbarwia się po wielokrotnym czyszczeniu.',
+    },
+    {
+      question: 'Czy D765 współpracuje z tabletem iPad lub telefonem z Androidem?',
+      answer: 'Tak. Skaner łączy się przez Bluetooth klasy 2 z urządzeniami Apple, z Androidem i z Windows 11, na odległość do ok. 10 m. Domyślnie działa w trybie iOS Application. Aplikacja z CaptureSDK odbiera dane bez dodatkowej konfiguracji, a bez integracji skaner wysyła kody jak klawiatura (HID).',
+    },
+    {
+      question: 'Ile odczytów wykona D765 na jednej baterii?',
+      answer: 'Bateria ma 1400 mAh i daje się wymienić w miejscu pracy. W trybie oszczędnym skaner czuwa ponad 20 h. Przy intensywnej pracy, dwóch odczytach na sekundę, wykonuje 85 000 odczytów w ciągu 9 godzin. Bateria wytrzymuje 500 cykli ładowania.',
+    },
+    {
+      question: 'Kiedy wybrać D765 zamiast DuraScan D745?',
+      answer: 'D765 jest lepszym wyborem, gdy trzeba czytać dokumenty z MRZ, bardzo małe kody na fiolkach lub kody z większej odległości, do 91,7 cm. [Socket Mobile DuraScan D745](/produkt/socket-mobile-durascan-d745) czyta do 49,5 cm i nie obsługuje MRZ, ma natomiast przycisk o trwałości ponad 5 mln naciśnięć. Obie wersje mają obudowę z tworzywa klasy medycznej.',
+    },
+    {
+      question: 'Jakie są alternatywy dla Socket Mobile DuraScan D765?',
+      answer: 'Podobnej wielkości skanerem dla ochrony zdrowia jest [Zebra CS60-HC](/produkt/zebra-cs60-hc). Większe bezprzewodowe skanery w wersjach medycznych to [Honeywell Xenon Ultra 1962h](/produkt/honeywell-xenon-ultra-1962h), [Zebra DS8288-HC](/produkt/zebra-ds8288-hc) i [Newland HR33 Marlin AI BT White](/produkt/newland-hr33-marlin-ai-bt-white). Pozostałe modele pokazuje przegląd [skanerów dla służby zdrowia](/skanery-dla-sluzby-zdrowia).',
+    },
+  ],
+  downloads: [],
+  relatedProducts: [
+    'zebra-cs60-hc',
+    'socket-mobile-durascan-d745',
+    'honeywell-xenon-ultra-1962h',
+    'zebra-ds8288-hc',
+    'newland-hr33-marlin-ai-bt-white',
+  ],
+  createdAt: '2026-10-25',
+  sameAs: 'https://www.socketmobile.com/products/d765',
+}
+
+// Skanery i akcesoria w jednej liście: integracja w products.ts dołącza ją do katalogu
+// i rozdziela do podkategorii według `subcategoryIds`.
+export const honeywellSocketHcScanners: Product[] = [
+  xenonUltra1960h,
+  xenonUltra1962h,
+  durascanD745,
+  durascanD765,
+  zasilacz4600526,
+  bazaPrezentacyjnaHc,
+  bazaPoziomaHc,
+]

@@ -608,7 +608,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       },
       {
         question: 'Jaki skaner Honeywell do kasy lub apteki?',
-        answer: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) — ręczny 2D USB, retail i apteka, gwarancja 5 lat. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (od 569 zł) — szybszy imaging, wersja healthcare z obudową odporną na dezynfekcję. [Genesis XP 7680g](/produkt/honeywell-genesis-xp-7680g) — prezentacyjny hands-free, skanuje do 15 kodów jednocześnie. Do apteki z recepturą elektroniczną: Xenon Ultra (czyta kody 2D na ekranach telefonów).',
+        answer: '[Voyager XP 1470g](/produkt/honeywell-voyager-xp-1470g) (od 358 zł) — ręczny 2D USB, retail i apteka, gwarancja 5 lat. [Xenon Ultra 1960g](/produkt/honeywell-xenon-ultra-1960g) (od 569 zł) — szybszy imaging; dla szpitali jest [Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) z obudową przygotowaną do dezynfekcji. [Genesis XP 7680g](/produkt/honeywell-genesis-xp-7680g) — prezentacyjny hands-free, skanuje do 15 kodów jednocześnie. Do apteki z recepturą elektroniczną: Xenon Ultra (czyta kody 2D na ekranach telefonów).',
       },
       {
         question: 'Czym różnią się skanery Voyager, Xenon i Granit?',
