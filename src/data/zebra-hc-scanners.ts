@@ -14,10 +14,10 @@ const ds2208Hc: Product = {
   id: 'zebra-ds2208-hc',
   slug: 'zebra-ds2208-hc',
   name: 'Zebra DS2208-HC',
-  shortDescription: 'Zebra DS2208-HC — przewodowy skaner 2D dla służby zdrowia: obudowa przygotowana do dezynfekcji, ciche potwierdzenie odczytu w trybie „Do Not Disturb”, kolor Healthcare White.',
+  shortDescription: 'Zebra DS2208-HC — przewodowy skaner 2D do szpitali i przychodni: obudowa przygotowana do dezynfekcji, ciche potwierdzenie odczytu w trybie „Do Not Disturb”, kolor Healthcare White.',
   seoTitle: 'Zebra DS2208-HC — przewodowy skaner 2D dla służby zdrowia',
   seoDescription: 'Skaner kodów kreskowych Zebra DS2208-HC do szpitali i przychodni: przewodowy imager 2D, obudowa przygotowana do dezynfekcji, tryb Do Not Disturb, USB i RS-232. Czytnik kodów 2D Zebra DS2208-HC, DS2208-HC Zebra. PN: DS2208-HCBU2100AZR, DS2208-HC0000BZZRW.',
-  description: `Zebra DS2208-HC to przewodowy skaner ręczny 1D i 2D w wersji dla ochrony zdrowia, z obudową w kolorze Healthcare White. Obudowa jest przygotowana do regularnej dezynfekcji na stanowiskach przy pacjencie. Skaner odczytuje kody spotykane w szpitalu: na opaskach pacjentów, fiolkach z lekami, workach do kroplówek i tackach na próbki.
+  description: `Zebra DS2208-HC to przewodowy skaner ręczny 1D i 2D przeznaczony dla ochrony zdrowia. Obudowa ma kolor Healthcare White i jest przygotowana do regularnej dezynfekcji na stanowiskach przy pacjencie. Skaner odczytuje kody spotykane w szpitalu: na opaskach pacjentów, fiolkach z lekami, workach do kroplówek i tackach na próbki.
 
 Matryca 640 × 480 pikseli i algorytmy PRZM Intelligent Imaging dekodują także słabo wydrukowane kody. Linia celownika pokazuje właściwą odległość od kodu. W trybie „Do Not Disturb” odczyt potwierdza podświetlenie kodu (Direct Decode Indicator) zamiast sygnału dźwiękowego, co ogranicza hałas przy łóżku pacjenta.
 
@@ -81,7 +81,7 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     'Identyfikacja pacjenta po opasce',
     'Wydawanie leków przy łóżku, w aptece i przy wypisie',
     'Śledzenie leków w aptece i na wózku',
-    'Oznaczanie worków do kroplówek',
+    'Odczyt kodów z worków do kroplówek',
     'Śledzenie próbek',
     'Podawanie produktów krwiopochodnych',
     'Dostęp do elektronicznej dokumentacji medycznej',
@@ -103,18 +103,18 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     },
   ],
   variantAttributeTooltips: {
-    'W zestawie': 'Elementy dołączone do skanera pod tym numerem katalogowym.\n\nPrzewód USB — łączy DS2208-HC z komputerem lub kasą; po podłączeniu skaner sam rozpoznaje typ hosta.\n\nWersja bez wpisu w tej kolumnie to sam skaner, do którego przewód kupuje się osobno.',
+    'W zestawie': 'Elementy dołączone do skanera pod tym numerem katalogowym.\n\nPrzewód USB — łączy DS2208-HC z komputerem lub kasą; po podłączeniu skaner sam rozpoznaje typ hosta.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['zebra-cable-usb-ds22', 'zebra-hc-20-71043-0br', 'zebra-hc-22-71043-0br', 'zebra-hc-21-71043-0br'],
   faq: [
     {
       question: 'Czym Zebra DS2208-HC różni się od zwykłego DS2208?',
-      answer: 'Wersja HC jest biała (Healthcare White), jej obudowę zaprojektowano z myślą o regularnej dezynfekcji, a tryb „Do Not Disturb” pozwala pracować cicho przy pacjencie. Fabrycznie jest skonfigurowany do aplikacji szpitalnych, a Zebra publikuje dla niego osobną listę dopuszczonych środków czyszczących. Wersja do handlu i biur to [Zebra DS2208](/produkt/zebra-ds2208).',
+      answer: 'Wersja HC ma obudowę w kolorze Healthcare White, zaprojektowaną z myślą o regularnej dezynfekcji. Fabrycznie jest skonfigurowana do aplikacji szpitalnych, a Zebra publikuje dla niej osobną listę dopuszczonych środków czyszczących. Matryca, interfejsy i podświetlenie kodu po odczycie (Direct Decode Indicator) nie różnią się od [Zebra DS2208](/produkt/zebra-ds2208), modelu do handlu i biur.',
     },
     {
       question: 'Jakimi środkami można czyścić i dezynfekować DS2208-HC?',
-      answer: 'Zebra dopuszcza dla serii DS2200-HC: 3% roztwór nadtlenku wodoru (97% wody), łagodny płyn do naczyń, Clorox Dispatch Hospital Cleaner Disinfectant Towels with Bleach, Clorox Healthcare Bleach Germicidal Wipes i PDI Sani-Cloth Bleach Germicidal Disposable Wipe. Trzech ostatnich środków, zawierających wybielacz, nie stosuje się na stacjach ładujących. Alkoholu izopropylowego nie ma na tej liście. Środki spoza listy mogą unieważnić gwarancję. Środka nie rozpyla się bezpośrednio na skaner, tylko nanosi zwilżoną ściereczką.',
+      answer: 'Zebra dopuszcza dla serii DS2200-HC: 3% roztwór nadtlenku wodoru (97% wody), łagodny płyn do naczyń, Clorox Dispatch Hospital Cleaner Disinfectant Towels with Bleach, Clorox Healthcare Bleach Germicidal Wipes i PDI Sani-Cloth Bleach Germicidal Disposable Wipe. Trzech ostatnich środków, zawierających wybielacz, nie stosuje się na stacjach ładujących. Alkoholu izopropylowego nie ma na tej liście. Środki spoza listy mogą unieważnić gwarancję. Na skaner nie rozpyla się środka; nakłada się go zwilżoną ściereczką albo gotową chusteczką.',
     },
     {
       question: 'Jak działa tryb „Do Not Disturb”?',
@@ -134,7 +134,7 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     },
     {
       question: 'Jakie są alternatywy dla DS2208-HC?',
-      answer: 'Bez przewodu, z baterią na 14 godzin, pracuje [Zebra DS2278-HC](/produkt/zebra-ds2278-hc). Megapikselową matrycę, celownik LED do oddziału noworodków i wibrację ma [Zebra DS4608-HC](/produkt/zebra-ds4608-hc), a czujnik 2 MP i uszczelniony spust — [Zebra DS8208-HC](/produkt/zebra-ds8208-hc). Innych producentów: [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) oraz [Datalogic Gryphon GD4620-HC](/produkt/datalogic-gryphon-gd4620-hc).',
+      answer: 'Bez przewodu, z baterią na 14 godzin, pracuje [Zebra DS2278-HC](/produkt/zebra-ds2278-hc). Megapikselową matrycę, wibrację i zielony celownik LED, który można stosować na oddziale noworodków, ma [Zebra DS4608-HC](/produkt/zebra-ds4608-hc), a czujnik 2 MP i uszczelniony spust — [Zebra DS8208-HC](/produkt/zebra-ds8208-hc). Innych producentów: [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) oraz [Datalogic Gryphon GD4620-HC](/produkt/datalogic-gryphon-gd4620-hc).',
     },
   ],
   downloads: [
@@ -152,10 +152,10 @@ const ds2278Hc: Product = {
   id: 'zebra-ds2278-hc',
   slug: 'zebra-ds2278-hc',
   name: 'Zebra DS2278-HC',
-  shortDescription: 'Zebra DS2278-HC — bezprzewodowy skaner 2D Bluetooth dla służby zdrowia: bateria na 14 godzin, stacja prezentacyjna bez osobnego zasilacza, obudowa w kolorze Healthcare White.',
+  shortDescription: 'Zebra DS2278-HC — bezprzewodowy skaner 2D do pracy przy łóżku pacjenta: Bluetooth, bateria na 14 godzin, stacja prezentacyjna bez osobnego zasilacza, obudowa w kolorze Healthcare White.',
   seoTitle: 'Zebra DS2278-HC — bezprzewodowy skaner 2D dla służby zdrowia',
   seoDescription: 'Bezprzewodowy skaner kodów Zebra DS2278-HC do szpitali: Bluetooth 4.0, bateria 2400 mAh na 14 godzin, obudowa przygotowana do dezynfekcji, stacja prezentacyjna HC White. Skaner Bluetooth Zebra DS2278-HC, DS2278-HC Zebra. PN: DS2278-HCBU2100PRR, DS2278-HC0000BZZRW.',
-  description: `Zebra DS2278-HC to bezprzewodowy skaner kodów 1D i 2D dla placówek ochrony zdrowia, w kolorze Healthcare White. Służy do pracy przy łóżku pacjenta, w aptece i na wózkach z komputerem. Obudowę przygotowano do częstej dezynfekcji.
+  description: `Zebra DS2278-HC to skaner kodów 1D i 2D bez przewodu, przeznaczony dla placówek ochrony zdrowia, w kolorze Healthcare White. Służy do pracy przy łóżku pacjenta, w aptece i na wózkach z komputerem. Obudowę przygotowano do częstej dezynfekcji.
 
 Skaner łączy się przez Bluetooth 4.0 z BLE (klasa 2, do 10 m) ze stacją prezentacyjną albo bezpośrednio z komputerem, tabletem lub smartfonem z Bluetooth. Do sparowania wystarczy zeskanowanie jednego kodu (Scan-to-Connect). Tryb Wi-Fi Friendly omija kanały, z których korzysta sieć Wi-Fi placówki.
 
@@ -174,7 +174,7 @@ Odczyt sygnalizuje światło rzucane na kod (tryb „Do Not Disturb”), dioda L
   imageDescriptions: [
     'Zebra DS2278-HC w stacji prezentacyjnej CR2278 w kolorze Healthcare White, widok z przodu',
     'Zebra DS2278-HC — bezprzewodowy skaner 2D w kolorze Healthcare White, widok pod kątem z oknem odczytu',
-    'Zebra DS2278-HC — widok pod kątem od lewej strony, uchwyt z jasnym zakończeniem ze stykami ładowania',
+    'Zebra DS2278-HC — widok z przodu na okno odczytu, spust i jasne zakończenie uchwytu',
   ],
   tags: ['healthcare'],
   availability: 'available',
@@ -228,14 +228,14 @@ Odczyt sygnalizuje światło rzucane na kod (tryb „Do Not Disturb”), dioda L
     },
   ],
   variantAttributeTooltips: {
-    'W zestawie': 'Elementy dołączone do DS2278-HC pod tym numerem katalogowym.\n\nStacja prezentacyjna — ładuje skaner i przełącza go w tryb prezentacyjny; zasilanie bierze z portu USB komputera.\n\nPrzewód USB — łączy stację z komputerem. Sam skaner paruje się bezpośrednio z urządzeniem z Bluetooth.',
+    'W zestawie': 'Elementy dołączone do DS2278-HC pod tym numerem katalogowym.\n\nStacja prezentacyjna — ładuje skaner i przełącza go w tryb prezentacyjny; zasilanie bierze z portu USB komputera.\n\nPrzewód USB — łączy stację z komputerem.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['zebra-hc-cr2278-pc1000brw', 'zebra-battery-ds2278', 'zebra-cable-usb-ds22'],
   faq: [
     {
       question: 'Czym Zebra DS2278-HC różni się od zwykłego DS2278?',
-      answer: 'Wersja dla ochrony zdrowia ma białą obudowę (Healthcare White) do częstej dezynfekcji, tryb „Do Not Disturb” i stację prezentacyjną w tym samym kolorze. Zebra publikuje dla serii DS2200-HC osobną listę dopuszczonych środków czyszczących. Wersja do handlu i magazynu to [Zebra DS2278](/produkt/zebra-ds2278).',
+      answer: 'DS2278-HC ma obudowę Healthcare White przeznaczoną do częstej dezynfekcji, ustawienia fabryczne pod aplikacje szpitalne i stację prezentacyjną w tym samym kolorze. Zebra publikuje dla serii DS2200-HC osobną listę dopuszczonych środków czyszczących. Bluetooth 4.0, baterię 2400 mAh i sygnalizację światłem na kodzie ma też wersja do handlu i magazynu — [Zebra DS2278](/produkt/zebra-ds2278).',
     },
     {
       question: 'Jakie środki czyszczące są dopuszczone do DS2278-HC i stacji?',
@@ -243,7 +243,7 @@ Odczyt sygnalizuje światło rzucane na kod (tryb „Do Not Disturb”), dioda L
     },
     {
       question: 'Czy DS2278-HC wymaga stacji?',
-      answer: 'Nie. Skaner paruje się bezpośrednio z komputerem, tabletem lub smartfonem z Bluetooth po zeskanowaniu kodu Scan-to-Connect i ładuje się przewodem Micro USB podłączonym do portu USB lub zasilacza. Stacja [CR2278-PC1000BRW](/produkt/zebra-hc-cr2278-pc1000brw) dodaje ładowanie w trakcie pracy i tryb prezentacyjny.',
+      answer: 'Nie. Skaner paruje się bezpośrednio z komputerem, tabletem lub smartfonem z Bluetooth po zeskanowaniu kodu Scan-to-Connect i ładuje się przewodem Micro USB (25-MCXUSB-01R, sprzedawany osobno) podłączonym do portu USB lub zasilacza. Stacja [CR2278-PC1000BRW](/produkt/zebra-hc-cr2278-pc1000brw) dodaje ładowanie w trakcie pracy i tryb prezentacyjny.',
     },
     {
       question: 'Jak długo pracuje bateria DS2278-HC?',
@@ -286,7 +286,7 @@ Megapikselowa matryca 1280 × 800, procesor 800 MHz i PRZM Intelligent Imaging o
 
 W trybie nocnym krótkie naciśnięcie spustu przełącza potwierdzenie między sygnałem dźwiękowym a wibracją. Funkcja Preferred Symbol przesyła tylko wskazany kod z kilku umieszczonych obok siebie, np. na worku z krwią. Multi-Code Data Formatting odczytuje kilka kodów jednym naciśnięciem spustu i wysyła je w kolejności oczekiwanej przez aplikację.
 
-Skaner ma klasę IP52 i podwójnie uszczelniony układ optyczny. Konstrukcję zaprojektowano na wielokrotne upadki z wysokości 1,8 m na beton. Gwarancja wynosi 5 lat.
+Skaner ma klasę IP52 i podwójnie uszczelniony układ optyczny. Konstrukcję zaprojektowano tak, by wytrzymywała wielokrotne upadki na beton z 1,8 m. Gwarancja wynosi 5 lat.
 
 ## Co jest potrzebne do użycia?
 
@@ -362,7 +362,7 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     },
   ],
   variantAttributeTooltips: {
-    'W zestawie': 'Co jest dołączone do DS4608-HC pod tym numerem.\n\nPrzewód USB — prosty przewód do komputera; skaner pobiera z niego zasilanie i sam rozpoznaje host.\n\nWersja bez wpisu to sam skaner — przewód USB lub RS-232 dobiera się osobno.',
+    'W zestawie': 'Co jest dołączone do DS4608-HC pod tym numerem.\n\nPrzewód USB — prosty przewód do komputera; skaner pobiera z niego zasilanie i sam rozpoznaje host.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['zebra-cable-usb-ds22', 'zebra-hc-20-71043-0br', 'zebra-hc-22-71043-0br', 'zebra-hc-21-71043-0br'],
@@ -389,11 +389,11 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     },
     {
       question: 'Jaką gwarancję ma DS4608-HC?',
-      answer: 'Zebra daje na DS4608-HC 5 lat gwarancji od daty wysyłki. Pakiety Zebra OneCare Select lub Essential obejmują dodatkowo m.in. przyspieszone naprawy.',
+      answer: 'Zebra daje na DS4608-HC 5 lat gwarancji od daty wysyłki. Jako usługi serwisowe producent zaleca dla tego modelu pakiety Zebra OneCare Select lub Essential.',
     },
     {
       question: 'Jakie są alternatywy dla DS4608-HC?',
-      answer: 'Tańszy skaner z trybem „Do Not Disturb” to [Zebra DS2208-HC](/produkt/zebra-ds2208-hc). Następca z czujnikiem 2 MP, uszczelnionym spustem i etykietami antymikrobowymi to [Zebra DS8208-HC](/produkt/zebra-ds8208-hc). Odpowiedniki innych marek: [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) i [Newland HR33 Marlin AI White](/produkt/newland-hr33-marlin-ai-white).',
+      answer: 'Tańszy skaner z trybem „Do Not Disturb” to [Zebra DS2208-HC](/produkt/zebra-ds2208-hc). Model z czujnikiem 2 MP, uszczelnionym spustem i etykietami antymikrobowymi to [Zebra DS8208-HC](/produkt/zebra-ds8208-hc). Odpowiedniki innych marek: [Honeywell Xenon Ultra 1960h](/produkt/honeywell-xenon-ultra-1960h) i [Newland HR33 Marlin AI White](/produkt/newland-hr33-marlin-ai-white).',
     },
   ],
   downloads: [
@@ -500,14 +500,14 @@ Dokup tylko te elementy, których jeszcze nie masz.`,
     },
   ],
   variantAttributeTooltips: {
-    'W zestawie': 'Dodatkowy element w opakowaniu DS8208-HC.\n\nPrzewód USB — prosty przewód USB-A do komputera, z którego skaner jest zasilany.\n\nGdy kolumna jest pusta, kupuje się sam skaner, a przewód USB lub RS-232 osobno.',
+    'W zestawie': 'Dodatkowy element w opakowaniu DS8208-HC.\n\nPrzewód USB — prosty przewód USB-A do komputera, z którego skaner jest zasilany.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['zebra-hc-stnd-gs0082c-0b', 'zebra-hc-stnd-ws0082c-0b', 'zebra-hc-cup-gs0082c-0b', 'zebra-cable-usb-ds22'],
   faq: [
     {
       question: 'Czym Zebra DS8208-HC różni się od DS8208?',
-      answer: 'DS8208-HC dodaje do platformy DS82 tworzywa Healthcare White odporne na częstą dezynfekcję, uszczelniony spust indukcyjny, etykiety antymikrobowe, zielony celownik LED, tryb nocny i lampkę stanowiska. Ma też funkcje UDI Scan+ i Blood Bag Parse+. Model do handlu to [Zebra DS8208](/produkt/zebra-ds8208).',
+      answer: 'DS8208-HC dodaje do platformy DS82 tworzywa Healthcare White odporne na częstą dezynfekcję, uszczelniony spust indukcyjny, etykiety antymikrobowe, tryb nocny i lampkę stanowiska. Ma też funkcje UDI Scan+ i Blood Bag Parse+. Czujnik 2 MP i zielony celownik LED ma również handlowy [Zebra DS8208](/produkt/zebra-ds8208).',
     },
     {
       question: 'Jakie środki są dopuszczone do czyszczenia DS8208-HC?',
@@ -591,7 +591,7 @@ Do wyboru są dwie stacje zasilane z USB: prezentacyjna na wózek z komputerem o
     { name: 'Typowy zasięg odczytu', value: 'UPC 13 mil (100%): 0,8–56,4 cm; DataMatrix 20 mil: 0–44,4 cm; QR 20 mil: 0–40,1 cm; Code 128 15 mil: 8,6–61,7 cm' },
     { name: 'Bateria PowerPrecision+', value: 'Li-Ion 3500 mAh; 100 000 odczytów przy 60 skanach na minutę lub 65 000 przy 10 skanach na minutę; 108 h pracy; pełne ładowanie: 13 h ze standardowego USB, 3,5 h z zewnętrznego 5 V lub USB-C' },
     { name: 'PowerCap', value: 'Superkondensator 1000 F; 6000 odczytów przy 60 skanach na minutę lub 4000 przy 10 skanach na minutę; 6,7 h pracy; pełne ładowanie: 60 min ze standardowego USB, 13–15 min z USB BC1.2, zewnętrznego zasilania lub USB-C' },
-    { name: 'Stacje', value: 'Standardowa (biurko, ściana, ramię): 7,3 × 7,6 × 21,1 cm, 255,3 g; prezentacyjna: 7,7 × 9,4 × 12,5 cm, 226,3 g; zasilanie 4,7–5,5 V DC z hosta lub 10,8–13,2 V DC z zewnętrznego zasilacza' },
+    { name: 'Stacje', value: 'Standardowa (biurko, ściana, ramię): 7,3 × 7,6 × 21,1 cm, 255,3 g; prezentacyjna: 7,7 × 9,4 × 12,5 cm, 226,3 g; zasilanie z hosta (standardowa 4,8–5,5 V DC, prezentacyjna 4,7–5,5 V DC) lub 10,8–13,2 V DC z zewnętrznego zasilacza' },
     { name: 'Interfejsy', value: 'USB, RS-232' },
     { name: 'Bezpieczeństwo', value: 'Certyfikat FIPS 140-3' },
     { name: 'Wymiary skanera (wys. × szer. × gł.)', value: '17,6 × 6,9 × 11,1 cm' },
@@ -663,7 +663,7 @@ Do wyboru są dwie stacje zasilane z USB: prezentacyjna na wózek z komputerem o
   faq: [
     {
       question: 'Czym Zebra DS8288-HC różni się od DS8288?',
-      answer: 'Bezprzewodowa wersja HC jest wykonana z tworzyw Healthcare White przeznaczonych do częstego odkażania. Spust indukcyjny jest w niej uszczelniony, etykiety są antymikrobowe, a celownik ma zieloną diodę LED; jest też tryb nocny. Stacje CR8288 w wersji HC mają ten sam kolor. Standardowy model to [Zebra DS8288](/produkt/zebra-ds8288).',
+      answer: 'Bezprzewodowa wersja HC jest wykonana z tworzyw Healthcare White przeznaczonych do częstego odkażania. Spust indukcyjny jest w niej uszczelniony, etykiety są antymikrobowe, a do włączenia trybu nocnego wystarczy jedno dotknięcie. Stacje CR8288 w wersji HC mają ten sam kolor. Standardowy model to [Zebra DS8288](/produkt/zebra-ds8288).',
     },
     {
       question: 'Którymi środkami można dezynfekować DS8288-HC i stacje?',
@@ -785,14 +785,14 @@ Bateria 745 mAh wystarcza na 18 godzin pracy. Skaner paruje się przez NFC i ł�
     },
   ],
   variantAttributeTooltips: {
-    'W zestawie': 'Elementy dołączone do CS60-HC w tym zestawie.\n\nStacja prezentacyjna — ładuje skaner indukcyjnie, przełącza go w tryb prezentacyjny i przechowuje ustawienia (AutoConfig).\n\nPrzewód USB — łączy stację z komputerem. Sam skaner paruje się przez Bluetooth lub NFC i ładuje na ładowarce Qi.',
+    'W zestawie': 'Elementy dołączone do CS60-HC w tym zestawie.\n\nStacja prezentacyjna — ładuje skaner indukcyjnie, przełącza go w tryb prezentacyjny i przechowuje ustawienia (AutoConfig).\n\nPrzewód USB — łączy stację z komputerem.',
   },
   compatibleAccessories: [],
   relatedAccessories: ['zebra-hc-cr6080-pc100fbww', 'zebra-hc-cbl-cs6-s07-0b', 'zebra-hc-btry-cs60eabhe-0b', 'zebra-hc-cvtr-u70060c-0b', 'zebra-hc-stnd-gs0060c-0b', 'zebra-hc-stnd-ws0060c-0b', 'zebra-hc-cup-gs0060c-0b'],
   faq: [
     {
       question: 'Jak zmienić Zebra CS60-HC w skaner przewodowy?',
-      answer: 'Wystarczy wyjąć baterię i włożyć w jej miejsce [konwerter USB CVTR-U70060C-0B](/produkt/zebra-hc-cvtr-u70060c-0b) z przewodem 2,1 m w kolorze HC White. Powrót do pracy bezprzewodowej wymaga ponownego włożenia baterii. Do wersji przewodowej Zebra oferuje [podstawkę gooseneck STND-GS0060C-0B](/produkt/zebra-hc-stnd-gs0060c-0b), jej obciążoną wersję i kubek.',
+      answer: 'Wystarczy wyjąć baterię i włożyć w jej miejsce [konwerter USB CVTR-U70060C-0B](/produkt/zebra-hc-cvtr-u70060c-0b) z przewodem 2,1 m, także w kolorze HC White. Powrót do pracy bezprzewodowej wymaga ponownego włożenia baterii. Do wersji przewodowej Zebra oferuje [podstawkę gooseneck STND-GS0060C-0B](/produkt/zebra-hc-stnd-gs0060c-0b), jej obciążoną wersję i kubek.',
     },
     {
       question: 'Jakie środki dezynfekcyjne można stosować na CS60-HC?',
@@ -804,7 +804,7 @@ Bateria 745 mAh wystarcza na 18 godzin pracy. Skaner paruje się przez NFC i ł�
     },
     {
       question: 'Ile pracuje bateria CS60-HC?',
-      answer: 'Bateria litowo-polimerowa 745 mAh wystarcza na 18 godzin pracy, czyli dłużej niż najdłuższa zmiana. Wymienia się ją bez narzędzi, a wskaźnik baterii pokazuje, kiedy trzeba ją naładować lub wymienić. Zapasowa bateria do wersji HC to [BTRY-CS60EABHE-0B](/produkt/zebra-hc-btry-cs60eabhe-0b).',
+      answer: 'Bateria litowo-polimerowa 745 mAh wystarcza na 18 godzin pracy, czyli dłużej niż najdłuższa zmiana. Wymienia się ją bez specjalnych narzędzi, a wskaźnik baterii pokazuje, kiedy trzeba ją naładować lub wymienić. Zapasowa bateria do wersji HC to [BTRY-CS60EABHE-0B](/produkt/zebra-hc-btry-cs60eabhe-0b).',
     },
     {
       question: 'Który wariant CS60-HC wybrać?',
@@ -958,7 +958,7 @@ Do czyszczenia stacji nie stosuje się środków z wybielaczem, bo powodują kor
     shortDescription: 'Podstawka gooseneck Intellistand Zebra STND-GS0082C-0B w kolorze HC White do przewodowego skanera Zebra DS8208-HC.',
     description: `STND-GS0082C-0B to podstawka Intellistand na elastycznym wysięgniku, przeznaczona do przewodowego skanera [Zebra DS8208-HC](/produkt/zebra-ds8208-hc). Kolor HC White pasuje do obudowy skanera.
 
-Podstawka trzyma skaner w pozycji do odczytu prezentacyjnego, np. przy przyjmowaniu leków w aptece szpitalnej lub oznaczaniu próbek w laboratorium. Do pracy ręcznej skaner wyjmuje się z gniazda. Wersja z obciążoną podstawą to [STND-WS0082C-0B](/produkt/zebra-hc-stnd-ws0082c-0b), a sam kubek — [CUP-GS0082C-0B](/produkt/zebra-hc-cup-gs0082c-0b).`,
+Podstawka trzyma skaner w pozycji do odczytu prezentacyjnego, np. przy przyjmowaniu leków w aptece szpitalnej lub śledzeniu próbek w laboratorium. Do pracy ręcznej skaner wyjmuje się z gniazda. Wersja z obciążoną podstawą to [STND-WS0082C-0B](/produkt/zebra-hc-stnd-ws0082c-0b), a sam kubek — [CUP-GS0082C-0B](/produkt/zebra-hc-cup-gs0082c-0b).`,
     subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     priceFrom: 163.53,
     images: ['/images/products/STND-GS0082C-0B.png'],
@@ -979,13 +979,13 @@ Podstawka trzyma skaner w pozycji do odczytu prezentacyjnego, np. przy przyjmowa
     slug: 'zebra-hc-stnd-ws0082c-0b',
     name: 'Podstawka gooseneck Zebra z obciążeniem do DS8208-HC, HC White — STND-WS0082C-0B',
     shortDescription: 'Obciążona podstawka gooseneck Intellistand Zebra STND-WS0082C-0B w kolorze HC White do skanera Zebra DS8208-HC.',
-    description: `STND-WS0082C-0B to obciążona wersja podstawki Intellistand na elastycznym wysięgniku do skanera [Zebra DS8208-HC](/produkt/zebra-ds8208-hc), w kolorze HC White. Cięższa podstawa stabilizuje skaner na blacie bez przykręcania.
+    description: `STND-WS0082C-0B to obciążona wersja podstawki Intellistand na elastycznym wysięgniku do skanera [Zebra DS8208-HC](/produkt/zebra-ds8208-hc), w kolorze HC White. Cięższa podstawa stabilizuje skaner na blacie.
 
 Skaner odłożony do podstawki pracuje w trybie prezentacyjnym, a wyjęty służy do odczytu ręcznego. Podstawka bez obciążenia ma numer [STND-GS0082C-0B](/produkt/zebra-hc-stnd-gs0082c-0b).`,
     subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     priceFrom: 204.45,
     images: ['/images/products/STND-WS0082C-0B.png'],
-    imageDescriptions: ['Obciążona podstawka gooseneck Zebra STND-WS0082C-0B w kolorze HC White, bez skanera'],
+    imageDescriptions: ['Obciążona podstawka gooseneck Zebra STND-WS0082C-0B w kolorze HC White ze skanerem DS8208-HC widocznym od tyłu (skaner sprzedawany osobno)'],
     availability: 'available',
     specifications: [
       { name: 'Part Number', value: 'STND-WS0082C-0B' },
@@ -1054,7 +1054,7 @@ Ma wymiary 7,7 × 9,4 × 12,5 cm i mieści się na wózku z komputerem. Zasilani
     shortDescription: 'Zebra CR8288-SC100FBWW — stacja standardowa DS8288-HC na biurko, ścianę lub ramię; indukcja, Bluetooth, FIPS, kolor Healthcare White.',
     description: `Stacja standardowa CR8288-SC100FBWW trzyma skaner [Zebra DS8288-HC](/produkt/zebra-ds8288-hc) pionowo albo poziomo, więc można ją postawić na biurku lub zamocować na ścianie, ramieniu albo wózku. Ładuje skaner indukcyjnie, odbiera od niego dane przez Bluetooth i ma certyfikat FIPS. Kolor: Healthcare White.
 
-Wbudowany magnes przytrzymuje skaner przy montażu pionowym. Stacja ma 7,3 × 7,6 × 21,1 cm i waży 255,3 g. Może być zasilana z USB komputera (4,8–5,5 V) lub z osobnego zasilacza 10,8–13,2 V DC. Do jej czyszczenia nie używa się środków z wybielaczem.`,
+Gdy stacja jest zamocowana, wbudowany magnes przytrzymuje skaner. Stacja ma 7,3 × 7,6 × 21,1 cm i waży 255,3 g. Może być zasilana z USB komputera (4,8–5,5 V) lub z osobnego zasilacza 10,8–13,2 V DC. Do jej czyszczenia nie używa się środków z wybielaczem.`,
     subcategoryIds: ['akcesoria-do-skanerow', 'stacje-ladowarki-skanerow'],
     priceFrom: 784.59,
     images: ['/images/products/CR8288-SC100FBWW.png'],
@@ -1166,7 +1166,7 @@ Stacja jest sprzedawana bez przewodu, dlatego przy zakupie samej stacji potrzebn
     shortDescription: 'Zapasowa bateria litowo-polimerowa Zebra BTRY-CS60EABHE-0B do skanera Zebra CS60-HC (CS6080-HC).',
     description: `BTRY-CS60EABHE-0B to zapasowa bateria litowo-polimerowa do skanera [Zebra CS60-HC](/produkt/zebra-cs60-hc). Zebra przeznacza ją do wersji CS6080-HC; zwykły CS6080-SR ma baterię o innym numerze.
 
-Baterię wymienia się bez narzędzi, co pozwala utrzymać skaner w pracy przez całą dobę. Zapasowa bateria ma styki ładowania, dlatego nie ładuje się na ładowarce Qi; ładowanie indukcyjne działa tylko wtedy, gdy bateria jest w skanerze. Zamiast baterii można włożyć [konwerter USB CVTR-U70060C-0B](/produkt/zebra-hc-cvtr-u70060c-0b) i używać skanera przewodowo.`,
+Baterię wymienia się bez specjalnych narzędzi, co pozwala utrzymać skaner w pracy przez całą dobę. Zapasowa bateria ma styki ładowania, dlatego nie ładuje się na ładowarce Qi; ładowanie indukcyjne działa tylko wtedy, gdy bateria jest w skanerze. Zamiast baterii można włożyć [konwerter USB CVTR-U70060C-0B](/produkt/zebra-hc-cvtr-u70060c-0b) i używać skanera przewodowo.`,
     subcategoryIds: ['akcesoria-do-skanerow', 'baterie-do-skanerow'],
     priceFrom: 344.73,
     images: ['/images/products/BTRY-CS60EABHE-0B.png'],
@@ -1175,7 +1175,7 @@ Baterię wymienia się bez narzędzi, co pozwala utrzymać skaner w pracy przez 
     specifications: [
       { name: 'Part Number', value: 'BTRY-CS60EABHE-0B' },
       { name: 'Typ', value: 'Bateria litowo-polimerowa' },
-      { name: 'Pojemność', value: '745 mAh według karty katalogowej CS60-HC (przewodnik akcesoriów podaje 735 mAh)' },
+      { name: 'Pojemność', value: '745 mAh' },
       { name: 'Kompatybilność', value: 'Zebra CS60-HC (CS6080-HC)' },
     ],
     applications: ['Zapasowa bateria do całodobowej pracy skanera CS60-HC'],
@@ -1236,7 +1236,7 @@ W podstawce skaner czyta kody prezentacyjnie, a po wyjęciu ręcznie. Zebra ofer
     shortDescription: 'Zebra STND-WS0060C-0B — obciążona podstawka gooseneck HC White dla CS60-HC w wersji przewodowej.',
     description: `STND-WS0060C-0B to wersja podstawki Intellistand z obciążoną podstawą do skanera [Zebra CS60-HC](/produkt/zebra-cs60-hc) pracującego przewodowo. Ma kolor HC White.
 
-Obciążona podstawa pozwala ustawić skaner na blacie bez mocowania. Kubek [CUP-GS0060C-0B](/produkt/zebra-hc-cup-gs0060c-0b) pasuje zarówno do tej podstawki, jak i do wersji bez obciążenia [STND-GS0060C-0B](/produkt/zebra-hc-stnd-gs0060c-0b).`,
+Obciążona podstawa stabilizuje skaner ustawiony na blacie. Kubek [CUP-GS0060C-0B](/produkt/zebra-hc-cup-gs0060c-0b) pasuje zarówno do tej podstawki, jak i do wersji bez obciążenia [STND-GS0060C-0B](/produkt/zebra-hc-stnd-gs0060c-0b).`,
     subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
     priceFrom: 237.88,
     images: ['/images/products/placeholder.svg'],

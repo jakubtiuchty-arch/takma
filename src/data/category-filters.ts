@@ -2236,8 +2236,8 @@ categoryFilters['skanery-dla-sluzby-zdrowia'] = [
     { value: 'Pistoletowy', slugs: ['zebra-ds2208-hc', 'zebra-ds4608-hc', 'zebra-ds8208-hc', 'honeywell-xenon-ultra-1960h', 'datalogic-gryphon-gd4690-hc', 'datalogic-gryphon-gd4620-hc', 'newland-hr33-marlin-ai-white', 'newland-hr23-dorada-ai-white', 'zebra-ds2278-hc', 'zebra-ds8288-hc', 'honeywell-xenon-ultra-1962h', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc', 'newland-hr33-marlin-ai-bt-white', 'newland-hr23-dorada-ai-bt-white'] },
     { value: 'Bez rękojeści', slugs: ['zebra-cs60-hc', 'socket-mobile-durascan-d745', 'socket-mobile-durascan-d765'] },
   ] },
-  { specKey: 'wibracja', label: 'Ciche potwierdzenie', description: 'Potwierdzenie odczytu bez sygnału dźwiękowego, np. przy śpiącym pacjencie.\n• Wibracja — w Honeywell Xenon Ultra 1960h i Datalogic Gryphon GBT4600 HC / GM4600 HC jako opcja\n• Światło na kodzie — tryb „Do Not Disturb” Zebra DS2208-HC i DS2278-HC', derived: [
+  { specKey: 'wibracja', label: 'Ciche potwierdzenie', description: 'Potwierdzenie odczytu bez sygnału dźwiękowego, np. przy śpiącym pacjencie.\n• Wibracja — w Honeywell Xenon Ultra 1960h i Datalogic Gryphon GBT4600 HC / GM4600 HC jako opcja\n• Światło na kodzie — Direct Decode Indicator w skanerach Zebra (w DS2208-HC i DS2278-HC jako tryb „Do Not Disturb”) i Green Spot w Datalogic Gryphon 4600 HC', derived: [
     { value: 'Wibracja', slugs: ['zebra-ds4608-hc', 'zebra-ds8208-hc', 'zebra-ds8288-hc', 'zebra-cs60-hc', 'honeywell-xenon-ultra-1960h', 'honeywell-xenon-ultra-1962h', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc', 'newland-hr33-marlin-ai-white', 'newland-hr23-dorada-ai-white', 'newland-hr33-marlin-ai-bt-white', 'newland-hr23-dorada-ai-bt-white'] },
-    { value: 'Światło na kodzie (Do Not Disturb)', slugs: ['zebra-ds2208-hc', 'zebra-ds2278-hc'] },
+    { value: 'Światło na kodzie', slugs: ['zebra-ds2208-hc', 'zebra-ds2278-hc', 'zebra-ds4608-hc', 'zebra-ds8208-hc', 'zebra-ds8288-hc', 'zebra-cs60-hc', 'datalogic-gryphon-gd4690-hc', 'datalogic-gryphon-gd4620-hc', 'datalogic-gryphon-gbt4600-hc', 'datalogic-gryphon-gm4600-hc'] },
   ] },
 ]

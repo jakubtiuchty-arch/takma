@@ -18661,7 +18661,7 @@ Gwarancja 60 miesięcy (5 lat) — najdłuższa w kategorii skanerów prezentacy
       { name: 'Pobór prądu', value: '321 mA (typowy)' },
       { name: 'Wymiary', value: '203 × 94 × 132 mm' },
       { name: 'Waga', value: '330 g' },
-      { name: 'Kolor', value: 'Midnight Black' },
+      { name: 'Kolor', value: 'Midnight Black; DS9908-HD for Labs (DS9908-HD4000WZZWW): Alpine White' },
       { name: 'Gwarancja producenta', value: '60 miesięcy (5 lat)' },
       { name: 'Oprogramowanie', value: 'DataCapture DNA: 123Scan, Scanner Management Service (SMS)' },
     ],
