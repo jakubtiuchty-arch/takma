@@ -1,5 +1,6 @@
 import { isRfidContentCategory } from '@/lib/rfid-content'
 import type { ReactNode } from 'react'
+import HealthcareTerminalHero from './HealthcareTerminalHero'
 import Link from 'next/link'
 import Image from 'next/image'
 import { unstable_cache } from 'next/cache'
@@ -329,6 +330,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
     url: `https://www.takma.com.pl/${subcategory.slug}`,
   }
 
+  const healthcareHero = slug === 'terminale-dla-sluzby-zdrowia'
   const hero = heroImages[slug]
   const banerSerwisu = serviceBanners[slug]
   // Podkategoria jednej marki (np. Epson ColorWorks) nie może pokazywać banera serwisu Zebry.
@@ -369,6 +371,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
       />}
 
+      {healthcareHero && <HealthcareTerminalHero />}
       {hero && (
         <section className="relative bg-slate-950 text-white overflow-hidden">
           <Image
@@ -412,8 +415,8 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
         </section>
       )}
 
-      <div className={`container-main py-8 lg:py-12 ${isRfidContentCategory(slug) ? 'rfid-text-links' : ''}`}>
-        {!hero && (
+      <div id={healthcareHero ? 'produkty' : undefined} className={`container-main py-8 lg:py-12 ${isRfidContentCategory(slug) ? 'rfid-text-links' : ''}`}>
+        {!hero && !healthcareHero && (
           <>
             {/* Breadcrumbs */}
             <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6 overflow-x-auto">
@@ -456,6 +459,8 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
             </div>
           </>
         )}
+
+        {healthcareHero && <p className="mb-8 text-gray-600 leading-relaxed"><LinkedText text={subcategory.longDescription} /></p>}
 
         {/* Sidebar + Content layout */}
         {(sidebarFilters[slug] || categoryFilters[slug]) ? (
