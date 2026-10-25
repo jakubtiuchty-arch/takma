@@ -877,6 +877,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                       ? 'h-12 lg:h-[3.6rem] w-auto'
                       : manufacturer.slug === 'brady'
                       ? 'h-7 lg:h-[2.1rem] w-auto'
+                      : manufacturer.slug === 'bartender'
+                      // Logo BarTender ma proporcje ok. 6:1 — przy h-10 wychodziło poza ekran 390 px
+                      ? 'h-6 lg:h-7 w-auto'
                       : 'h-10 lg:h-12 w-auto'}
                   />
                 </Link>

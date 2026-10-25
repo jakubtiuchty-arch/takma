@@ -45,14 +45,14 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
   variants: [
     {
       partNumber: 'NSCDBA001Y',
-      name: 'Loftware Cloud Designer — subskrypcja 1 rok, 1 drukarka',
+      name: 'subskrypcja 1 rok, 1 drukarka',
       attributes: { 'Licencja': 'Subskrypcja podstawowa', 'Drukarki': '1' },
       priceFrom: 1478.25,
       availability: 'available',
     },
     {
       partNumber: 'NSCDAD001Y',
-      name: 'Loftware Cloud Designer — dodatkowa drukarka, 1 rok',
+      name: 'dodatkowa drukarka, 1 rok',
       attributes: { 'Licencja': 'Dodatkowa drukarka', 'Drukarki': '+1' },
       priceFrom: 566.67,
       availability: 'available',
@@ -88,7 +88,7 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
   faq: [
     {
       question: 'Czym Loftware Cloud Designer różni się od Loftware Cloud Essentials?',
-      answer: 'Designer służy do projektowania i drukowania etykiet na 1–10 drukarkach. [Loftware Cloud Essentials](/produkt/loftware-cloud-essentials) obsługuje od 2 do 20 drukarek. Ma też Designer PowerForms do tworzenia formularzy, druk z przeglądarki przez Loftware Web Client, prostą integrację z lokalnymi systemami firmy oraz historię druku z 3 miesięcy.',
+      answer: 'Designer służy do projektowania i drukowania etykiet na 1–10 drukarkach. [Loftware Cloud Essentials](/produkt/loftware-cloud-essentials) obsługuje od 2 do 20 drukarek. Ma też Designer PowerForms do tworzenia formularzy, druk z formularzy przez Loftware Web Client, prostą integrację z lokalnymi systemami firmy oraz historię druku z 3 miesięcy.',
     },
     {
       question: 'Jak Loftware liczy drukarki w licencji?',
@@ -128,12 +128,12 @@ const essentials: Product = {
   id: 'loftware-cloud-essentials',
   slug: 'loftware-cloud-essentials',
   name: 'Loftware Cloud Essentials',
-  shortDescription: 'Loftware Cloud Essentials (NiceLabel) — roczna subskrypcja do druku etykiet w chmurze z formularzami Designer PowerForms i drukiem z przeglądarki, od 2 do 20 drukarek.',
+  shortDescription: 'Loftware Cloud Essentials (NiceLabel) — roczna subskrypcja do druku etykiet w chmurze z formularzami Designer PowerForms i drukiem przez Loftware Web Client, od 2 do 20 drukarek.',
   seoTitle: 'Loftware Cloud Essentials — etykiety, formularze, 2–20 drukarek',
   seoDescription: 'Loftware Cloud Essentials: program do drukowania etykiet w chmurze z formularzami dla operatorów, Web Client i integracją z systemami firmy, 2–20 drukarek. Program do etykiet Loftware, NiceLabel Cloud Essentials, subskrypcja Loftware Cloud. PN: NSCEBS001M, NSCEAO001M, NSCEDB001M, NSCEPH001M.',
   description: `Loftware Cloud Essentials to roczna subskrypcja Loftware Cloud dla firm, w których etykiety drukują operatorzy w kilku miejscach i na kilku stanowiskach. Subskrypcja podstawowa NSCEBS001M obejmuje do 2 drukarek. Rozszerzenie NSCEAO001M dodaje kolejne drukarki, łącznie do 20.
 
-Edycja zawiera wszystkie narzędzia Loftware Cloud Designer i dodaje kreator formularzy Designer PowerForms. Formularz pokazuje operatorowi tylko pola potrzebne do druku i ukrywa szczegóły techniczne szablonu. Formularze działają w aplikacji Loftware Print albo w przeglądarce, przez Loftware Web Client. Dzięki temu stanowisko druku nie wymaga instalacji programu do projektowania.
+Edycja zawiera wszystkie narzędzia Loftware Cloud Designer i dodaje kreator formularzy Designer PowerForms. Formularz pokazuje operatorowi tylko pola potrzebne do druku i ukrywa szczegóły techniczne szablonu. Formularze działają w aplikacji Loftware Print albo w cienkim kliencie Loftware Web Client. Dzięki temu stanowisko druku nie wymaga instalacji programu do projektowania.
 
 Integracja na poziomie Essentials przekazuje dane z systemów firmy zainstalowanych lokalnie do druku etykiet. Przepływ danych jest jednokierunkowy.
 
@@ -160,28 +160,28 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   variants: [
     {
       partNumber: 'NSCEBS001M',
-      name: 'Loftware Cloud Essentials — subskrypcja 1 rok, do 2 drukarek',
+      name: 'subskrypcja 1 rok, do 2 drukarek',
       attributes: { 'Licencja': 'Subskrypcja podstawowa', 'Drukarki': 'do 2' },
       priceFrom: 3055.04,
       availability: 'available',
     },
     {
       partNumber: 'NSCEAO001M',
-      name: 'Loftware Cloud Essentials — dodatkowa drukarka, 1 rok',
+      name: 'dodatkowa drukarka, 1 rok',
       attributes: { 'Licencja': 'Dodatkowa drukarka', 'Drukarki': '+1' },
       priceFrom: 788.4,
       availability: 'available',
     },
     {
       partNumber: 'NSCEDB001M',
-      name: 'Loftware Cloud Essentials — baza SQL w chmurze 1 GB',
+      name: 'baza SQL w chmurze 1 GB',
       attributes: { 'Licencja': 'Opcja', 'Dodatek': 'Baza SQL w chmurze 1 GB' },
       priceFrom: 2463.75,
       availability: 'available',
     },
     {
       partNumber: 'NSCEPH001M',
-      name: 'Loftware Cloud Essentials — historia druku 1 rok',
+      name: 'historia druku 1 rok',
       attributes: { 'Licencja': 'Opcja', 'Dodatek': 'Historia druku 1 rok' },
       priceFrom: 2463.75,
       availability: 'available',
@@ -194,8 +194,8 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     { name: 'Drukarki', value: 'Do 2 w subskrypcji podstawowej, rozszerzenia po 1 drukarce, łącznie do 20' },
     { name: 'Komputery', value: 'Bez limitu w jednej domenie, jeden klucz licencji' },
     { name: 'Projektowanie', value: 'Web Designer w przeglądarce i Loftware Desktop Designer w Windows' },
-    { name: 'Formularze', value: 'Designer PowerForms (kreator aplikacji); uruchamianie w Loftware Print lub w przeglądarce przez Loftware Web Client' },
-    { name: 'Druk przez przeglądarkę', value: 'Loftware Web Printing z Loftware Web Client' },
+    { name: 'Formularze', value: 'Designer PowerForms (kreator aplikacji); uruchamianie w Loftware Print lub w cienkim kliencie Loftware Web Client' },
+    { name: 'Druk sieciowy', value: 'Loftware Web Printing z cienkim klientem Loftware Web Client' },
     { name: 'Integracje', value: 'Poziom Essentials: jednokierunkowe przekazywanie danych z lokalnych systemów firmy do druku' },
     { name: 'Zatwierdzanie i dostęp', value: 'Jeden domyślny proces zatwierdzania, uprawnienia według ról' },
     { name: 'Miejsce na dokumenty', value: '1 GB w chmurze' },
@@ -210,7 +210,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   ],
   applications: [
     'Formularze druku dla operatorów linii i pakowania',
-    'Druk etykiet z przeglądarki bez instalacji programu',
+    'Druk z formularzy bez programu do projektowania',
     'Przekazywanie danych z lokalnego systemu do druku',
     'Wspólne zatwierdzanie zmian w szablonach etykiet',
   ],
@@ -219,7 +219,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   faq: [
     {
       question: 'Co Loftware Cloud Essentials dodaje do edycji Designer?',
-      answer: 'Essentials zawiera narzędzia [Loftware Cloud Designer](/produkt/loftware-cloud-designer). Nowe są: aplikacje formularzy budowane w Designer PowerForms, druk przez przeglądarkę w Loftware Web Client oraz integrację z lokalnymi systemami firmy. Historia druku obejmuje 3 miesiące. Liczba drukarek rośnie z 10 do 20.',
+      answer: 'Essentials zawiera narzędzia [Loftware Cloud Designer](/produkt/loftware-cloud-designer). Nowe są: aplikacje formularzy budowane w Designer PowerForms, Loftware Web Printing z cienkim klientem Loftware Web Client oraz integracja z lokalnymi systemami firmy. Historia druku obejmuje 3 miesiące. Liczba drukarek rośnie z 10 do 20.',
     },
     {
       question: 'Ile drukarek obejmuje subskrypcja i jak dodać kolejne?',
@@ -227,7 +227,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     },
     {
       question: 'Do czego służą formularze Designer PowerForms?',
-      answer: 'Formularz to prosta aplikacja do druku. Operator widzi w niej tylko potrzebne pola, a szczegóły techniczne szablonu są ukryte. Formularz może też sterować zbieraniem danych i kolejnością druku. Formularz uruchamia się w Loftware Print na komputerze albo w przeglądarce przez Loftware Web Client.',
+      answer: 'Formularz to prosta aplikacja do druku. Operator widzi w niej tylko potrzebne pola, a szczegóły techniczne szablonu są ukryte. Formularz może też sterować zbieraniem danych i kolejnością druku. Uruchamia się go w Loftware Print albo w cienkim kliencie Loftware Web Client.',
     },
     {
       question: 'Jakie opcje można dokupić do Essentials?',
@@ -239,7 +239,7 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
     },
     {
       question: 'Czy stanowisko operatora potrzebuje programu Desktop Designer?',
-      answer: 'Nie. Formularze można uruchomić w przeglądarce przez Loftware Web Client. Producent zaleca aktualne wersje Edge, Chrome, Firefox lub Safari. Aplikacje Windows, np. Loftware Print, wymagają Windows 11 lub Windows Server 2016–2025.',
+      answer: 'Nie. Do druku z formularzy wystarcza Loftware Print albo cienki klient Loftware Web Client. Obie aplikacje działają w Windows 11 lub Windows Server 2016–2025. Panel Control Center i edytor Web Designer otwiera się w aktualnej wersji przeglądarki Edge, Chrome, Firefox lub Safari.',
     },
     {
       question: 'Jakie są alternatywy dla Loftware Cloud Essentials?',
@@ -288,21 +288,21 @@ Cenę ustalamy po rozmowie o liczbie drukarek, lokalizacjach i potrzebnych integ
     {
       partNumber: 'NSCBSM001M',
       quoteOnly: true,
-      name: 'Loftware Cloud Business Small — subskrypcja, do 3 drukarek',
+      name: 'wersja Small, subskrypcja do 3 drukarek',
       attributes: { 'Wersja': 'Small', 'Licencja': 'Subskrypcja podstawowa', 'Drukarki': 'do 3' },
       availability: 'available',
     },
     {
       partNumber: 'NSCBSA001M',
       quoteOnly: true,
-      name: 'Loftware Cloud Business Small — dodatkowa drukarka',
+      name: 'wersja Small, dodatkowa drukarka',
       attributes: { 'Wersja': 'Small', 'Licencja': 'Dodatkowa drukarka', 'Drukarki': '+1' },
       availability: 'available',
     },
     {
       partNumber: 'NSCBLX001M',
       quoteOnly: true,
-      name: 'Loftware Cloud Business Large — subskrypcja, do 50 drukarek',
+      name: 'wersja Large, subskrypcja do 50 drukarek',
       attributes: { 'Wersja': 'Large', 'Licencja': 'Subskrypcja podstawowa', 'Drukarki': 'do 50' },
       availability: 'available',
     },
