@@ -207,8 +207,6 @@ export interface Product {
   /** Licencja oprogramowania: dostępność „licencja elektroniczna e-mailem” zamiast stanu magazynowego,
    *  a przy zamówieniu dane licencjobiorcy (firma, e-mail użytkownika licencji). */
   licenseDelivery?: 'email'
-  /** Tylko „Zapytaj o cenę”: bez ceny i koszyka, nawet gdy API zwraca cenę (np. edycje Enterprise). */
-  quoteOnly?: boolean
   relatedProducts?: string[]
 }
 
