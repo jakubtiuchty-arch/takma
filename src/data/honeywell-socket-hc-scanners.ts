@@ -36,10 +36,12 @@ Zestaw 1960HHD-5USB-R z ogniskowaniem HD zawiera prosty przewód USB o długośc
   images: [
     '/images/products/1960HHD-5USB-R.png',
     '/images/products/1960HHD-5USB-R-2.png',
+    '/images/products/1960HHD-5USB-R-3.png',
   ],
   imageDescriptions: [
-    'Honeywell Xenon Ultra 1960h — biały skaner ręczny dla służby zdrowia, widok pod kątem z góry, zielone diody i turkusowe obramowanie',
+    'Honeywell Xenon Ultra 1960h — widok z przodu pod kątem, okno odczytu w turkusowej ramce, spust i biała rękojeść',
     'Honeywell Xenon Ultra 1960h — widok z przodu: okno skanera w turkusowej ramce i spust',
+    'Honeywell Xenon Ultra 1960h — widok od tyłu pod kątem z góry, zielone diody i turkusowe obramowanie',
   ],
   tags: ['healthcare'],
   availability: 'available',
