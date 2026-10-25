@@ -5,7 +5,7 @@ import type { Product } from './products'
 // opisy Zebry do PN u dystrybutorów; ceny i stany z /api/stock z 24.10.2026.
 // ZQ61-HUXAE14-00 pominięty: cyfra „1” w innych PN oznacza pasek na ramię, ale opis Zebry tego PN go nie wymienia.
 // Audyt: docs/catalog/zebra-hc-2026-10-25/H3.md
-// ZQ61-HUWAE04-00 i ZQ62-HUWAE04-00 (Wi-Fi 5 + Bluetooth 4.2) dodane 25.10.2026: docs/catalog/hc-producenci-2026-10-25/J4.md
+// ZQ61-HUWAE04-00 (Wi-Fi 5 + Bluetooth 4.2) i ZQ62-HUWAE04-00 (Wi-Fi 5 + Bluetooth 4.x) dodane 25.10.2026: docs/catalog/hc-producenci-2026-10-25/J4.md, audyt-Y.md
 
 const SERIES_DATASHEET = { name: 'Karta katalogowa Zebra ZQ6 HC (PL)', type: 'datasheet' as const, url: '/datasheets/zq600-series-hc-spec-sheet-pl-pl.pdf', size: '204 KB' }
 
@@ -151,7 +151,7 @@ W tabeli są trzy konfiguracje: z modułem Wi-Fi 6 i Bluetooth 5.3, z modułem W
     },
     {
       question: 'Który wariant wybrać: z Wi-Fi 6, z Wi-Fi 5 czy z Bluetooth?',
-      answer: 'ZQ61-HUXAE04-00 łączy się z siecią Wi-Fi 6 placówki w pasmach 2,4 i 5 GHz i jednocześnie obsługuje Bluetooth 5.3. Taka drukarka odbiera zadania z systemu szpitalnego przez sieć. ZQ61-HUWAE04-00 pracuje w sieci Wi-Fi 5 (802.11ac) i ma Bluetooth 4.2. ZQ61-HUFAE04-00 ma tylko Bluetooth 4.2 i drukuje z terminala lub telefonu, z którym jest sparowana. Obie wersje można podłączyć do sieci przewodowej przez stację Ethernet.',
+      answer: 'ZQ61-HUXAE04-00 łączy się z siecią Wi-Fi 6 placówki w pasmach 2,4 i 5 GHz i jednocześnie obsługuje Bluetooth 5.3. Taka drukarka odbiera zadania z systemu szpitalnego przez sieć. ZQ61-HUWAE04-00 pracuje w sieci Wi-Fi 5 (802.11ac) i ma Bluetooth 4.2. ZQ61-HUFAE04-00 ma tylko Bluetooth 4.2 i drukuje z terminala lub telefonu, z którym jest sparowana. Każdą z trzech wersji można podłączyć do sieci przewodowej przez stację Ethernet.',
     },
     {
       question: 'Jak dezynfekować ZQ610 Plus-HC?',
@@ -191,7 +191,7 @@ const zq620PlusHc: Product = {
 
 Przyjmuje materiał o szerokości 25–79 mm, a średnica rolki może wynosić do 66 mm. Rozdzielczość druku to 203 dpi, a prędkość sięga 115 mm/s. Obsługuje etykiety wycinane, kartoniki i papier paragonowy.
 
-Konfiguracja ZQ62-HUXAE04-00 ma moduł Wi-Fi 6 (802.11ax) i jednocześnie działający Bluetooth 5.3. Moduł obsługuje szybki roaming 802.11r i zabezpieczenia WPA3. ZQ62-HUWAE04-00 łączy się przez Wi-Fi 5 (802.11ac), a Bluetooth ma w wersji 4.2. Po wstawieniu drukarki do stacji Ethernet dział IT może zdalnie aktualizować jej oprogramowanie i monitorować stan baterii.
+Konfiguracja ZQ62-HUXAE04-00 ma moduł Wi-Fi 6 (802.11ax) i jednocześnie działający Bluetooth 5.3. Moduł obsługuje szybki roaming 802.11r i zabezpieczenia WPA3. ZQ62-HUWAE04-00 ma podwójny moduł radiowy z Wi-Fi 5 (802.11ac) i Bluetooth 4.x. Po wstawieniu drukarki do stacji Ethernet dział IT może zdalnie aktualizować jej oprogramowanie i monitorować stan baterii.
 
 Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekcję. Drukarka wytrzymuje wielokrotne upadki z wysokości 1,52 m na beton i waży z baterią 0,73 kg. Wymienna bateria PowerPrecision+ 3250 mAh ładuje się w drukarce. Seria zachowuje zgodność wsteczną z akcesoriami QLn.`,
   categoryId: 'drukarki-etykiet',
@@ -243,7 +243,7 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     { name: 'Obsługa materiału', value: 'Listwa do odrywania; tryb odklejania i podawania etykiet' },
     { name: 'Wyświetlacz', value: 'Kolorowy, 288 × 240 pikseli; zmiana koloru przy wstrzymaniu pracy lub błędzie; menu dostosowywane w WML' },
     { name: 'Przyciski', value: 'Nawigacja 5-kierunkowa, dwa przyciski definiowane programowo' },
-    { name: 'Łączność w oferowanych PN', value: 'ZQ62-HUXAE04-00: Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG); ZQ62-HUWAE04-00: Wi-Fi 5 (802.11ac) z Bluetooth 4.2' },
+    { name: 'Łączność w oferowanych PN', value: 'ZQ62-HUXAE04-00: Wi-Fi 6 (802.11ax) 2,4 i 5 GHz, antena MIMO, z jednoczesnym Bluetooth 5.3 (certyfikat BT SIG); ZQ62-HUWAE04-00: Wi-Fi 5 (802.11ac) z Bluetooth 4.x' },
     { name: 'Zgodne systemy mobilne', value: 'Apple iOS, Android, Windows Mobile' },
     { name: 'Zabezpieczenia i roaming Wi-Fi 6', value: 'WPA3, WPA2, WPA; 802.1x; EAP-FAST, EAP-TTLS, EAP-TLS, PEAP, LEAP; szyfrowanie AES i TKIP; roaming 802.11r, 802.11k, 802.11v; buforowanie PMK, OKC' },
     { name: 'Interfejsy przewodowe', value: 'USB 2.0 (12 Mb/s, złącze Mini-B); RS-232C, 14 styków, do 115,2 kb/s; Ethernet 10/100 przez stację' },
@@ -284,15 +284,15 @@ Obudowa ma klasę szczelności IP54, a jej tworzywa znoszą regularną dezynfekc
     },
     {
       partNumber: 'ZQ62-HUWAE04-00',
-      name: 'Wi-Fi 5 (802.11ac) + Bluetooth 4.2',
-      attributes: { 'Wi-Fi': 'Wi-Fi 5', 'Bluetooth': '4.2' },
+      name: 'Wi-Fi 5 (802.11ac) + Bluetooth 4.x',
+      attributes: { 'Wi-Fi': 'Wi-Fi 5', 'Bluetooth': '4.x' },
       priceFrom: 4398.1,
       availability: 'unavailable',
     },
   ],
   variantAttributeTooltips: {
-    'Wi-Fi': 'Fabryczny moduł sieci bezprzewodowej ZQ620 Plus-HC.\n\nWi-Fi 6 (802.11ax) — antena MIMO, pasma 2,4 i 5 GHz; roaming 802.11k, 802.11v i 802.11r pomaga utrzymać połączenie, gdy personel przemieszcza się po placówce.\n\nWi-Fi 5 (802.11ac) — moduł dwuradiowy z Bluetooth 4.2.',
-    'Bluetooth': 'Bluetooth w tym samym module co Wi-Fi.\n\n5.3 — w wersji z Wi-Fi 6, działa równocześnie z siecią Wi-Fi, np. do druku z terminala mobilnego.\n\n4.2 — w wersji z Wi-Fi 5. Parowanie ułatwia NFC Print Touch.',
+    'Wi-Fi': 'Fabryczny moduł sieci bezprzewodowej ZQ620 Plus-HC.\n\nWi-Fi 6 (802.11ax) — antena MIMO, pasma 2,4 i 5 GHz; roaming 802.11k, 802.11v i 802.11r pomaga utrzymać połączenie, gdy personel przemieszcza się po placówce.\n\nWi-Fi 5 (802.11ac) — moduł dwuradiowy z Bluetooth 4.x.',
+    'Bluetooth': 'Bluetooth w tym samym module co Wi-Fi.\n\n5.3 — w wersji z Wi-Fi 6, działa równocześnie z siecią Wi-Fi, np. do druku z terminala mobilnego.\n\n4.x — Bluetooth 4 w wersji z Wi-Fi 5. Parowanie ułatwia NFC Print Touch.',
   },
   compatibleAccessories: [],
   relatedAccessories: [

@@ -205,7 +205,7 @@ Drukarka służy do oznaczania recept, próbek laboratoryjnych, worków z krwią
 
 Biała obudowa z tworzyw przygotowanych do dezynfekcji i uszczelnione przyciski ułatwiają odkażanie. Odporność obudowy na UV pozwala stosować protokoły czyszczenia z użyciem promieniowania UV. Zasilacz ma certyfikat IEC 60601-1.
 
-Z głowicą 203 dpi wydruk powstaje w tempie do 152 mm/s na szerokości 104 mm. Głowica 300 dpi pracuje wolniej, do 102 mm/s, a w wersjach termicznej i rolkowej obejmuje 108 mm. Wersja na kasety przyjmuje materiał o szerokości do 118 mm.
+Z głowicą 203 dpi wydruk powstaje w tempie do 152 mm/s na szerokości 104 mm. Głowica 300 dpi pracuje wolniej, do 102 mm/s, a w wersjach termicznej i na rolki taśmy obejmuje 108 mm. Wersja na kasety przyjmuje materiał o szerokości do 118 mm.
 
 USB i USB Host są w każdej konfiguracji. Końcówka PN EE00EZ oznacza Ethernet, EW02EZ — Wi-Fi 5 (802.11ac) i Bluetooth 4.1, a EX02EZ — Wi-Fi 6 (802.11ax) i Bluetooth 5.3.`,
   categoryId: 'drukarki-etykiet',
@@ -224,7 +224,7 @@ USB i USB Host są w każdej konfiguracji. Końcówka PN EE00EZ oznacza Ethernet
   imageDescriptions: [
     'Zebra ZD421-HC w wersji termicznej — biało-szara obudowa, widok z przodu pod kątem',
     'Zebra ZD421-HC w wersji termotransferowej — biała obudowa, widok z przodu pod kątem',
-    'Zebra ZD421C-HC (ZD421-HC na kasety z taśmą) — biała obudowa, szary panel przycisków, widok z przodu pod kątem',
+    'Zebra ZD421C-HC (ZD421-HC na kasety z taśmą) — biała obudowa z grafitowym przodem, szary panel przycisków, widok z przodu pod kątem',
     'Zebra ZD421-HC w wersji termicznej z wydrukowaną etykietą na próbkę',
     'Zebra ZD421-HC w wersji termicznej z wydrukowaną etykietą z danymi pacjenta i leku (przykładowy wzór)',
     'Zebra ZD421-HC w wersji termotransferowej, widok od lewej strony',
@@ -317,42 +317,42 @@ USB i USB Host są w każdej konfiguracji. Końcówka PN EE00EZ oznacza Ethernet
     {
       partNumber: 'ZD4AH42-30EE00EZ',
       name: 'Termotransferowa, 203 dpi, USB + Ethernet',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '203 dpi', 'Łączność': 'Ethernet' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '203 dpi', 'Łączność': 'Ethernet' },
       priceFrom: 2068.34,
       availability: 'available',
     },
     {
       partNumber: 'ZD4AH42-30EX02EZ',
       name: 'Termotransferowa, 203 dpi, USB + Wi-Fi 6 + Bluetooth 5.3',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 6 + BT 5.3' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 6 + BT 5.3' },
       priceFrom: 2254.13,
       availability: 'unavailable',
     },
     {
       partNumber: 'ZD4AH42-30EW02EZ',
       name: 'Termotransferowa, 203 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '203 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
       priceFrom: 2438.09,
       availability: 'unavailable',
     },
     {
       partNumber: 'ZD4AH43-30EE00EZ',
       name: 'Termotransferowa, 300 dpi, USB + Ethernet',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '300 dpi', 'Łączność': 'Ethernet' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '300 dpi', 'Łączność': 'Ethernet' },
       priceFrom: 2330.66,
       availability: 'available',
     },
     {
       partNumber: 'ZD4AH43-30EX02EZ',
       name: 'Termotransferowa, 300 dpi, USB + Wi-Fi 6 + Bluetooth 5.3',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 6 + BT 5.3' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 6 + BT 5.3' },
       priceFrom: 2515.68,
       availability: 'available',
     },
     {
       partNumber: 'ZD4AH43-30EW02EZ',
       name: 'Termotransferowa, 300 dpi, USB + Wi-Fi 5 + Bluetooth 4.1',
-      attributes: { 'Druk': 'Termotransferowy', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
+      attributes: { 'Druk': 'Termotransfer', 'Rozdzielczość': '300 dpi', 'Łączność': 'Wi-Fi 5 + BT 4.1' },
       priceFrom: 2721.81,
       availability: 'unavailable',
     },
@@ -386,7 +386,7 @@ USB i USB Host są w każdej konfiguracji. Końcówka PN EE00EZ oznacza Ethernet
     },
   ],
   variantAttributeTooltips: {
-    'Druk': 'Metoda druku danej wersji.\n\nTermiczny — bez taśmy barwiącej, na materiale termicznym.\n\nTermotransferowy — z rolką taśmy 74 m lub 300 m; ta wersja drukuje też bez taśmy na materiale termicznym.\n\nKaseta z taśmą — ZD421C-HC: taśma 74 m w kasecie zakładanej w kilka sekund, materiał do 118 mm.',
+    'Druk': 'Metoda druku danej wersji.\n\nTermiczny — bez taśmy barwiącej, na materiale termicznym.\n\nTermotransfer — z rolką taśmy 74 m lub 300 m; ta wersja drukuje też bez taśmy na materiale termicznym.\n\nKaseta z taśmą — ZD421C-HC: taśma 74 m w kasecie zakładanej w kilka sekund, materiał do 118 mm.',
     'Rozdzielczość': 'Liczba punktów głowicy na cal szerokości druku.\n\n203 dpi — do 152 mm/s i 104 mm szerokości druku.\n\n300 dpi — do 102 mm/s i 108 mm szerokości druku (w wersji na kasety 104 mm); do drobnych kodów 2D na małych etykietach.',
     'Łączność': 'Fabryczny interfejs do pracy w sieci; porty USB i USB Host są w każdej wersji.\n\nEthernet — port 10/100 do przewodowej sieci szpitala lub przychodni.\n\nWi-Fi 6 + BT 5.3 — moduł 802.11ax z Bluetooth 5.3 do sieci bezprzewodowej i urządzeń mobilnych; bez portu Ethernet.\n\nWi-Fi 5 + BT 4.1 — podwójny moduł radiowy 802.11ac z Bluetooth 4.1; także bez portu Ethernet.',
   },

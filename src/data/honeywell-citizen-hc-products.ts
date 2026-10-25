@@ -11,7 +11,7 @@ const pc45dHc: Product = {
   seoH1: 'Honeywell PC45d Healthcare',
   shortDescription: 'Honeywell PC45d Healthcare — biała drukarka termiczna 4" dla służby zdrowia: obudowa i złącza przygotowane do dezynfekcji, ekran dotykowy 3,5", Ethernet.',
   seoTitle: 'Honeywell PC45d Healthcare — drukarka etykiet dla służby zdrowia',
-  seoDescription: 'Szpitalna drukarka etykiet Honeywell PC45d Healthcare: druk termiczny 4", 203 dpi, etykiety na próbki i leki, opaski dla pacjentów. Drukarka Honeywell PC45d HC, PC45d Healthcare Honeywell. PN: PC45D100000200.',
+  seoDescription: 'Szpitalna drukarka etykiet Honeywell PC45d Healthcare: druk termiczny 4", 203 dpi, etykiety próbek laboratoryjnych i leków, opaski identyfikacyjne pacjentów. Drukarka Honeywell PC45d HC, PC45d Healthcare Honeywell. PN: PC45D100000200.',
   description: `Honeywell PC45d Healthcare to 4-calowa drukarka do druku termicznego w wersji przeznaczonej dla placówek ochrony zdrowia. Służy do oznaczania próbek laboratoryjnych i leków oraz do drukowania opasek identyfikujących pacjentów. Nie używa taśmy barwiącej.
 
 Wersja Healthcare ma białą obudowę. Obudowę i złącza zaprojektowano do częstego kontaktu ze środkami czyszczącymi i dezynfekującymi, które placówki stosują na stanowiskach pracy.
@@ -58,7 +58,7 @@ Konfiguracja PC45D100000200 ma Ethernet, USB i USB Host. Wi-Fi 6 i Bluetooth 5.2
     { name: 'Grubość materiału', value: '0,06–0,20 mm' },
     { name: 'Minimalna długość etykiety', value: '6,35 mm' },
     { name: 'Rodzaje materiałów', value: 'Opaski na rękę, kartoniki, papier paragonowy, etykiety z podkładem i bez podkładu (linerless), etykiety z czarnym znacznikiem lub przerwą' },
-    { name: 'Wykrywanie materiału', value: 'Przerwa, wycięcie, czarny znacznik, materiał ciągły; czujnik niskiego poziomu materiału' },
+    { name: 'Wykrywanie materiału', value: 'Przerwa, wycięcie, czarny znacznik, materiał ciągły; opcjonalnie czujnik niskiego poziomu materiału' },
     { name: 'Panel obsługi', value: 'Kolorowy ekran dotykowy LCD 3,5" (320 × 240), przycisk Print/Feed, dioda gotowości' },
     { name: 'Interfejsy w PC45D100000200', value: 'Ethernet 10/100 Mb/s, USB 2.0 Device, USB 2.0 Host' },
     { name: 'Łączność opcjonalna', value: 'Port szeregowy RS-232 (do 115,2 kb/s); zestaw 205-190-012: Wi-Fi 6 (802.11a/b/g/n/ac/ax), Bluetooth 5.2 i pasywny tag NFC' },
@@ -66,7 +66,7 @@ Konfiguracja PC45D100000200 ma Ethernet, USB i USB Host. Wi-Fi 6 i Bluetooth 5.2
     { name: 'Pamięć', value: '256 MB RAM, 512 MB Flash' },
     { name: 'Języki drukarki', value: 'Fingerprint, Direct Protocol, IPL, ZSim2 (ZPL-II), DPL, XML (SAP AII, Oracle WMS), PDF; aplikacje C# na drukarce' },
     { name: 'Zarządzanie', value: 'Honeywell Operational Intelligence, PrintSet 5, interfejs WWW' },
-    { name: 'Opcje (według karty katalogowej)', value: 'Odklejak z czujnikiem pobrania etykiety, obcinarka do etykiet z podkładem i bez podkładu, czujnik niskiego poziomu materiału, zewnętrzny uchwyt rolki, RFID UHF, modem komórkowy' },
+    { name: 'Opcje', value: 'Odklejak z czujnikiem pobrania etykiety, obcinarka do etykiet z podkładem i bez podkładu, czujnik niskiego poziomu materiału, zewnętrzny uchwyt rolki, RFID UHF, modem komórkowy' },
     { name: 'Wymiary (dł. × szer. × wys.)', value: '168 × 181,3 × 215,6 mm' },
     { name: 'Waga', value: '1,8 kg' },
     { name: 'Zasilanie', value: 'Zasilacz: wejście 100–240 V AC, 50–60 Hz, 1,5 A; wyjście 24 V DC, 3,15 A' },
@@ -101,7 +101,7 @@ Konfiguracja PC45D100000200 ma Ethernet, USB i USB Host. Wi-Fi 6 i Bluetooth 5.2
     },
     {
       question: 'Jakimi środkami można czyścić obudowę PC45d Healthcare?',
-      answer: 'Do drukarek biurkowych Honeywell z obudową przygotowaną do dezynfekcji dopuszczone są m.in.: chusteczki z alkoholem izopropylowym 70% (IPA 70), podchloryn sodu o stężeniu poniżej 6%, chusteczki Sani-Cloth Plus, Sani-Cloth HB i Super Sani-Cloth oraz Virex II 256. Przed czyszczeniem odłącz przewód zasilający. Nanieś środek na ściereczkę i nie dopuść do zbierania się płynu przy złączach. Częstotliwość i czas działania środka ustal według procedur placówki.',
+      answer: 'Obudowę drukarki PC45 przygotowaną do dezynfekcji można przecierać m.in. chusteczkami z alkoholem izopropylowym 70% (IPA 70), podchlorynem sodu o stężeniu poniżej 6%, chusteczkami Sani-Cloth Plus, Sani-Cloth HB i Super Sani-Cloth oraz środkiem Virex II 256. Na czas czyszczenia PC45d Healthcare wyłącza się i odłącza od niej zasilanie. Środek nanosi się na ściereczkę i przeciera tylko zewnętrzne powierzchnie z tworzywa; płyn nie może zbierać się przy złączach, a metalowe styki i złącza nie powinny mieć z nim kontaktu. Częstotliwość czyszczenia i czas działania środka określają procedury placówki oraz producent środka.',
     },
     {
       question: 'Czy PC45d Healthcare drukuje opaski dla pacjentów?',
@@ -126,10 +126,9 @@ Konfiguracja PC45D100000200 ma Ethernet, USB i USB Host. Wi-Fi 6 i Bluetooth 5.2
   ],
   downloads: [
     { name: 'Karta katalogowa Honeywell PC45d Healthcare (EN)', type: 'datasheet', url: '/downloads/honeywell/honeywell-pc45-healthcare-karta-katalogowa-en.pdf', size: '132 KB' },
-    { name: 'Instrukcja szybkiego uruchomienia PC45d / PC45t (PL)', type: 'manual', url: '/instrukcje/honeywell-pc45-qs-pl.pdf', size: '2,2 MB' },
-    { name: 'Instrukcja obsługi PC45 (EN)', type: 'manual', url: '/instrukcje/honeywell-pc45-ug-en.pdf', size: '7,2 MB' },
+    { name: 'Instrukcja szybkiego uruchomienia PC45d / PC45t (PL)', type: 'manual', url: '/instrukcje/honeywell-pc45-qs-pl.pdf', size: '2,1 MB' },
+    { name: 'Instrukcja obsługi PC45 (EN)', type: 'manual', url: '/instrukcje/honeywell-pc45-ug-en.pdf', size: '6,9 MB' },
     { name: 'Przewodnik akcesoriów PC45 (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-pc45-akcesoria-en.pdf', size: '712 KB' },
-    { name: 'Czyszczenie obudów Honeywell dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/honeywell/honeywell-healthcare-czyszczenie-obudow-en.pdf', size: '797 KB' },
   ],
   relatedProducts: ['zebra-zd421-hc', 'zebra-zd621-hc', 'citizen-cl-h300sv', 'tsc-dh240thc', 'tsc-th240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d'],
   createdAt: '2026-10-25',
@@ -148,7 +147,7 @@ const clH300sv: Product = {
 
 Citizen przeznacza ten model dla ochrony zdrowia, aptek, hotelarstwa, kuchni i handlu. W placówce medycznej drukuje opaski dla pacjentów i etykiety na próbki. Obudowa ma prostą bryłę bez trudno dostępnych zagłębień, dlatego łatwo się ją czyści. Mała podstawa mieści się na ciasnym stanowisku.
 
-Druk jest termiczny, bez taśmy barwiącej, w rozdzielczości 203 dpi i z prędkością do 200 mm/s. Szerokość wydruku sięga 104 mm, a materiał może mieć 25–118 mm szerokości. Mechanizm Hi-Lift otwiera komorę materiału, a ClickClose ją zamyka.
+Druk jest termiczny i nie wymaga taśmy barwiącej. Głowica 203 dpi pozwala drukować z prędkością do 200 mm/s. Szerokość wydruku sięga 104 mm, a materiał może mieć 25–118 mm szerokości. Mechanizm Hi-Lift otwiera komorę materiału, a ClickClose ją zamyka.
 
 Ta konfiguracja ma białą obudowę i port USB. Gniazdo karty interfejsu przyjmuje opcjonalnie Ethernet, Wi-Fi, Bluetooth, RS-232 lub USB Host z LAN. Dzięki Cross-Emulation drukarka sama rozpoznaje polecenia ZPL2 oraz DMX. Citizen udziela 2 lat gwarancji, a na głowicę 6 miesięcy albo 30 km druku.`,
   categoryId: 'drukarki-etykiet',
@@ -167,7 +166,7 @@ Ta konfiguracja ma białą obudowę i port USB. Gniazdo karty interfejsu przyjmu
     'Citizen CL-H300SV — widok z przodu: szczelina wydruku z listwą do odrywania, diody stanu i przycisk',
     'Citizen CL-H300SV z otwartą pokrywą Hi-Lift: głowica, wałek i niebieskie prowadnice rolki',
     'Citizen CL-H300SV — widok z tyłu: szczelina na składankę, port USB, port zasilania urządzeń USB, gniazdo DC 24 V, włącznik i zaślepka gniazda karty interfejsu',
-    'Citizen CL-H300SV z wydrukowanymi etykietami na próbki medyczne, widok pod kątem',
+    'Citizen CL-H300SV z wydrukowanymi małymi etykietami medycznymi z kodami kreskowymi, widok pod kątem',
   ],
   tags: ['healthcare'],
   availability: 'available',
@@ -232,11 +231,11 @@ Ta konfiguracja ma białą obudowę i port USB. Gniazdo karty interfejsu przyjmu
     },
     {
       question: 'Jak czyścić CL-H300SV?',
-      answer: 'Powierzchnię obudowy przeciera się miękką ściereczką lub wacikiem z niewielką ilością alkoholu etylowego. Nie wolno używać benzenu, acetonu, rozcieńczalnika ani innych rozpuszczalników. Nie rozpylaj środków chemicznych na drukarkę i nie dopuszczaj do zalania jej płynem.',
+      answer: 'Powierzchnię obudowy przeciera się miękką ściereczką lub wacikiem z niewielką ilością alkoholu etylowego. Nie wolno używać benzenu, acetonu, rozcieńczalnika ani innych rozpuszczalników. Środków chemicznych nie rozpyla się na drukarkę, a płyn nie może się na nią rozlać.',
     },
     {
       question: 'Czym CL-H300SV różni się od Citizen CL-E300?',
-      answer: 'CL-H300SV powstała na bazie CL-E300EX. Ma białą obudowę z tworzywa antybakteryjnego i znakiem SIAA. W standardzie ma USB oraz gniazdo opcjonalnej karty interfejsu. [Citizen CL-E300](/produkt/citizen-cl-e300) ma fabrycznie Ethernet, USB i RS-232. Obie drukują termicznie w 203 dpi z prędkością do 200 mm/s.',
+      answer: 'CL-H300SV powstała na bazie CL-E300EX. Ma białą obudowę z tworzywa antybakteryjnego i znakiem SIAA. W standardzie ma USB oraz gniazdo opcjonalnej karty interfejsu. [Citizen CL-E300](/produkt/citizen-cl-e300) ma fabrycznie Ethernet, USB i RS-232. Obie są drukarkami termicznymi 203 dpi o prędkości do 200 mm/s.',
     },
     {
       question: 'Czy CL-H300SV drukuje opaski dla pacjentów?',

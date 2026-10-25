@@ -106,7 +106,7 @@ W zestawie jest zewnętrzny zasilacz 24 V.`,
       partNumber: v.pn,
       name: `CT4-LX-HC — ${v.tt ? 'termotransferowa' : 'termiczna'}, ${v.dpi}${v.eq ? `, ${v.eq.replace('Obcinak', 'obcinak')}` : ''}`,
       attributes: {
-        'Druk': v.tt ? 'Termotransferowy' : 'Termiczny',
+        'Druk': v.tt ? 'Termotransfer' : 'Termiczny',
         'Rozdzielczość': v.dpi,
         ...(v.eq ? { 'Wyposażenie': v.eq } : {}),
       },
@@ -114,7 +114,7 @@ W zestawie jest zewnętrzny zasilacz 24 V.`,
       availability: v.inDelivery ? 'on-order' as const : 'unavailable' as const,
     })),
     variantAttributeTooltips: {
-      'Druk': 'Sposób nanoszenia nadruku w CT4-LX-HC.\n\nTermotransferowy — z taśmą barwiącą do 100 m; ta wersja drukuje też bez taśmy na materiale termicznym.\n\nTermiczny — wyłącznie na materiale termicznym, bez mechanizmu taśmy.',
+      'Druk': 'Sposób nanoszenia nadruku w CT4-LX-HC.\n\nTermotransfer — z taśmą barwiącą do 100 m; ta wersja drukuje też bez taśmy na materiale termicznym.\n\nTermiczny — wyłącznie na materiale termicznym, bez mechanizmu taśmy.',
       'Rozdzielczość': 'Gęstość punktów głowicy CT4-LX-HC.\n\n203 dpi — druk do 203 mm/s, wydruk do 2500 mm długości.\n\n305 dpi — drobniejszy tekst i kody 2D; druk do 152 mm/s, wydruk do 1500 mm długości.',
       'Wyposażenie': 'Moduły zamontowane fabrycznie w danej wersji.\n\nWi-Fi, Bluetooth — Wi-Fi 802.11a/b/g/n/ac i Bluetooth 4.1, np. do czytnika kodów w aplikacji AEP.\n\nRTC — zegar z kalendarzem; data i godzina na etykiecie pochodzą z drukarki.\n\nObcinak — odcina materiał całkowicie lub częściowo; etykieta ma wtedy co najmniej 20 mm długości.',
     },
@@ -123,11 +123,11 @@ W zestawie jest zewnętrzny zasilacz 24 V.`,
     faq: [
       {
         question: 'Jakimi środkami dezynfekcyjnymi można czyścić obudowę SATO CT4-LX-HC?',
-        answer: 'Do obudowy dopuszczone są: chlorek benzalkoniowy poniżej 0,5%, podchloryn sodu poniżej 0,5%, nadtlenek wodoru poniżej 6% oraz 100-procentowy alkohol izopropylowy. Przed czyszczeniem drukarkę należy wyłączyć i odłączyć od gniazdka, a obudowę przetrzeć w rękawiczkach bawełnianą ściereczką zwilżoną środkiem. Spryskiwanie obudowy jest niedozwolone, bo płyn może dostać się do środka przez szczeliny. Chlorek benzalkoniowy, podchloryn i nadtlenek wodoru nie mogą trafić na metalowe części, głowicę ani wałek dociskowy, bo powodują korozję.',
+        answer: 'Obudowę można czyścić czterema środkami: chlorkiem benzalkoniowym poniżej 0,5%, podchlorynem sodu poniżej 0,5%, nadtlenkiem wodoru poniżej 6% oraz 100-procentowym alkoholem izopropylowym, zawsze zgodnie z zaleceniami producenta środka. Przed czyszczeniem drukarkę należy wyłączyć i odłączyć od gniazdka, a obudowę przetrzeć w rękawiczkach bawełnianą ściereczką zwilżoną środkiem, tak aby na powierzchni nie pozostał płyn. Spryskiwanie obudowy jest niedozwolone, bo płyn może dostać się do środka przez szczeliny. Chlorek benzalkoniowy, podchloryn i nadtlenek wodoru nie mogą trafić na metalowe części, głowicę ani wałek dociskowy, bo powodują korozję; środek, który na nie trafi, trzeba od razu wytrzeć.',
       },
       {
         question: 'Czy SATO CT4-LX-HC drukuje opaski dla pacjentów?',
-        answer: 'Tak. Opaski identyfikacyjne są jednym z zastosowań CT4-LX-HC, obok etykiet aptecznych, etykiet na próbki i szkiełka oraz identyfikatorów odwiedzających. Z aplikacją AEP i czytnikiem Bluetooth drukarka może wydrukować opaskę zaraz po zeskanowaniu kodu pacjenta. Materiał może mieć 22–115 mm szerokości i 0,08–0,19 mm grubości.',
+        answer: 'Tak. Opaski identyfikacyjne są jednym z zastosowań CT4-LX-HC, obok etykiet aptecznych, etykiet na próbki i szkiełka oraz identyfikatorów odwiedzających. Z aplikacją AEP i czytnikiem kodów połączonym przez Bluetooth drukarka może też służyć do rejestracji pacjentów noszących wydrukowane na niej opaski. Materiał może mieć 22–115 mm szerokości i 0,08–0,19 mm grubości.',
       },
       {
         question: 'Które numery CT4-LX-HC mają Wi-Fi, zegar RTC albo obcinak?',
@@ -166,13 +166,13 @@ W zestawie jest zewnętrzny zasilacz 24 V.`,
     name: 'SATO WS2-2',
     seoH1: 'SATO WS2-2 (WS208-2 / WS212-2)',
     seoTitle: 'SATO WS2-2 — drukarka opasek i etykiet dla szpitali, 2 cale',
-    seoDescription: 'SATO WS2-2 (WS208-2, WS212-2): 2-calowa drukarka opasek dla pacjentów i etykiet szpitalnych, druk termiczny 203 lub 300 dpi, biała obudowa antymikrobowa przygotowana do dezynfekcji, USB i Ethernet, masa 1 kg. Drukarka opasek SATO WS2-2, drukarka etykiet SATO WS2-2, drukarka termiczna SATO WS208-2, SATO WS212-2, WS2-2 SATO, szpitalna drukarka etykiet SATO. PN: W2202-401NN-EU, W2302-401NN-EU, W2302-401DN-EU.',
+    seoDescription: 'SATO WS2-2 (WS208-2, WS212-2): 2-calowa drukarka opasek dla pacjentów i etykiet szpitalnych, druk termiczny 203 lub 300 dpi, biała obudowa antymikrobowa przygotowana do dezynfekcji, USB i Ethernet, masa 1 kg. Drukarka opasek SATO WS2-2, drukarka etykiet SATO WS2-2, drukarka termiczna SATO WS208-2, SATO WS212-2, WS2-2 SATO, szpitalna drukarka etykiet SATO. PN: W2202-401NN-EU, W2302-401NN-EU, W2302-401DN-EU, W2302-401CN-EU.',
     shortDescription: 'SATO WS2-2 — kompaktowa drukarka termiczna 2" do opasek pacjentów i etykiet szpitalnych: materiał 12–60 mm, biała obudowa antymikrobowa przygotowana do dezynfekcji, 1 kg, USB i Ethernet.',
     description: `SATO WS2-2 to 2-calowa drukarka termiczna, która drukuje opaski identyfikacyjne pacjentów i etykiety szpitalne. Jedno urządzenie obsługuje oba rodzaje materiału. Biała obudowa z tworzywa antymikrobowego jest przygotowana do dezynfekcji, dlatego drukarka może stać bezpośrednio na oddziale.
 
-Masa 1 kg pozwala przenosić drukarkę między stanowiskiem pracy a łóżkiem pacjenta. WS2-2 przyjmuje materiał o szerokości 12–60 mm, m.in. opaski, etykiety leków podawanych pacjentom, etykiety na pobraną krew i do transfuzji, etykiety próbek histopatologicznych i etykiety na posiłki. Po zmianie materiału, np. z opasek dla dorosłych na opaski dla noworodków, drukarka zaczyna druk od pierwszej etykiety, bez strat na kalibrację.
+Masa 1 kg pozwala przenosić drukarkę między stanowiskiem pracy a łóżkiem pacjenta. WS2-2 przyjmuje materiał o szerokości 12–60 mm, m.in. opaski, etykiety leków podawanych pacjentom, etykiety na pobraną krew i do transfuzji, etykiety próbek histologicznych i etykiety na posiłki. Po zmianie materiału, np. z opasek dla dorosłych na opaski dla niemowląt, drukarka zaczyna druk od pierwszej etykiety, bez strat na kalibrację.
 
-Wersja WS208-2 ma rozdzielczość 203 dpi i drukuje do 177 mm/s, a WS212-2 ma 300 dpi i drukuje do 127 mm/s. W standardzie są USB oraz Fast Ethernet z IPv4/IPv6 i WINS/NetBIOS. Obcinak, odklejak i Wi-Fi 802.11 b/g/n są opcjami. Drukarka używa języków SZPL, SEPL i SDPL. Ustawienia zmienia się narzędziem SATO, które wyszukuje drukarki w sieci, albo w przeglądarce internetowej.`,
+Wersja WS208-2 ma rozdzielczość 203 dpi i drukuje do 177 mm/s, a WS212-2 ma głowicę 300 dpi i prędkość do 127 mm/s. W standardzie są USB oraz Fast Ethernet z IPv4/IPv6 i WINS/NetBIOS. Obcinak, odklejak i Wi-Fi 802.11 b/g/n są opcjami. Drukarka używa języków SZPL, SEPL i SDPL. Ustawienia zmienia się narzędziem SATO, które wyszukuje drukarki w sieci, albo w przeglądarce internetowej.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['drukarki-dla-sluzby-zdrowia', 'biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'sato',
@@ -229,10 +229,10 @@ Wersja WS208-2 ma rozdzielczość 203 dpi i drukuje do 177 mm/s, a WS212-2 ma 30
       { name: 'Certyfikaty', value: 'CB, CE, Wireless IEEE' },
     ],
     applications: [
-      'Opaski identyfikacyjne pacjentów dorosłych i noworodków',
+      'Opaski identyfikacyjne pacjentów dorosłych i niemowląt',
       'Etykiety leków podawanych pacjentom',
-      'Etykiety na probówki z krwią i do transfuzji',
-      'Etykiety próbek histopatologicznych',
+      'Etykiety do pobrań krwi i transfuzji',
+      'Etykiety próbek histologicznych',
       'Etykiety na posiłki dla pacjentów',
     ],
     variants: [
@@ -257,17 +257,25 @@ Wersja WS208-2 ma rozdzielczość 203 dpi i drukuje do 177 mm/s, a WS212-2 ma 30
         priceFrom: 2834.66,
         availability: 'unavailable',
       },
+      {
+        partNumber: 'W2302-401CN-EU',
+        name: 'WS212-2 — 300 dpi, USB i Ethernet, obcinak',
+        attributes: { 'Rozdzielczość': '300 dpi', 'Obcinak': 'Tak' },
+        priceFrom: 3437.07,
+        availability: 'unavailable',
+      },
     ],
     variantAttributeTooltips: {
       'Rozdzielczość': 'Gęstość punktów głowicy; od niej zależy model WS2-2.\n\nWS208-2, 203 dpi — druk do 177 mm/s, materiał do 2540 mm długości.\n\nWS212-2, 300 dpi — drobniejszy tekst i kody 2D; druk do 127 mm/s, materiał do 1270 mm długości.',
       'Odklejak': 'Fabrycznie zamontowany moduł, który oddziela wydrukowaną etykietę od podkładu.\n\nPracuje przy 50 lub 76 mm/s; etykieta musi mieć co najmniej 25 mm długości.',
+      'Obcinak': 'Fabrycznie zamontowany moduł, który przecina materiał po wydruku.\n\nOdcięty odcinek musi mieć co najmniej 25 mm długości, np. etykieta na posiłek lub kartonik.',
     },
     compatibleAccessories: [],
     relatedAccessories: [],
     faq: [
       {
         question: 'Jakie opaski można drukować na SATO WS2-2?',
-        answer: 'WS2-2 drukuje opaski identyfikacyjne o szerokości od 12 do 60 mm, w tym dla dorosłych i noworodków. Najlepsza jakość wydruku jest na opaskach SATO, ale drukarka współpracuje też z większością porównywalnych opasek i etykiet termicznych innych producentów. Materiał musi mieć 0,06–0,2 mm grubości.',
+        answer: 'WS2-2 drukuje opaski identyfikacyjne o szerokości od 12 do 60 mm, w tym dla dorosłych i niemowląt. Drukarka jest dostrojona do opasek SATO, ale współpracuje też z większością porównywalnych opasek i etykiet termicznych innych producentów. Materiał musi mieć 0,06–0,2 mm grubości.',
       },
       {
         question: 'Czym różni się SATO WS208-2 od WS212-2?',
@@ -283,11 +291,11 @@ Wersja WS208-2 ma rozdzielczość 203 dpi i drukuje do 177 mm/s, a WS212-2 ma 30
       },
       {
         question: 'Czy do WS2-2 jest obcinak lub odklejak?',
-        answer: 'Tak, oba moduły są opcjami. Obcinak i odklejak wymagają materiału o długości co najmniej 25 mm. Z odklejakiem drukarka pracuje z prędkością 50 lub 76 mm/s. Wersja W2302-401DN-EU (WS212-2) ma odklejak zamontowany fabrycznie, a W2202-401NN-EU i W2302-401NN-EU są bez tych modułów.',
+        answer: 'Tak, oba moduły są opcjami. Obcinak i odklejak wymagają materiału o długości co najmniej 25 mm. Z odklejakiem drukarka pracuje z prędkością 50 lub 76 mm/s. W wersji WS212-2 W2302-401DN-EU odklejak jest zamontowany fabrycznie, a w W2302-401CN-EU — obcinak. W2202-401NN-EU i W2302-401NN-EU są bez tych modułów.',
       },
       {
         question: 'Czy zasilacz SATO WS2-2 ma certyfikat IEC 60601-1?',
-        answer: 'Nie. Ta norma nie jest podawana dla WS2-2 ani dla jej zasilacza. W pudełku są zasilacz zewnętrzny na napięcie 100–240 V AC i przewód sieciowy. Drukarka ma certyfikaty CB i CE.',
+        answer: 'Norma IEC 60601-1 nie jest podawana ani dla WS2-2, ani dla jej zasilacza. W pudełku są zasilacz zewnętrzny na napięcie 100–240 V AC i przewód sieciowy. Drukarka ma certyfikaty CB i CE.',
       },
       {
         question: 'Jakie inne 2-calowe drukarki dla służby zdrowia są w ofercie TAKMA?',
