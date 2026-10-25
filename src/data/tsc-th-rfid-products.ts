@@ -1,6 +1,9 @@
 import type { Product } from './products'
 
 const ids = ['tsc-th240r', 'tsc-th340r']
+// Wersje HC 4" (tsc-hc-products.ts): moduły radiowe i uchwyt rolki wspólne z serią TH240/DH240.
+const hcIds = ['tsc-th240thc', 'tsc-dh240thc']
+const modelNames: Record<string, string> = { 'tsc-th240r': 'TH240R', 'tsc-th340r': 'TH340R', 'tsc-th240thc': 'TH240THC / TH340THC', 'tsc-dh240thc': 'DH240THC / DH340THC' }
 const support = 'https://emea.tscprinters.com/en/products/th-series-4-inch-performance-desktop-printers'
 const datasheet = '/downloads/tsc-th-dh-karta-produktu-en.pdf'
 const manual = '/downloads/tsc-th-dh-instrukcja-en.pdf'
@@ -10,20 +13,20 @@ export const tscThRfidAccessories: Product[] = [
   {
     id: 'tsc-th-wifi', slug: 'tsc-modul-wifi-sp-th240-0041', pn: 'SP-TH240-0041', image: 'wifi',
     name: 'Moduł Wi-Fi i Bluetooth TSC TH240 EU',
-    description: 'TSC SP-TH240-0041 to moduł Wi-Fi 802.11a/b/g/n/ac i Bluetooth 5.0 w wersji EU/EMEA. Pasuje do serii TH240 i TH340, w tym TH240R oraz TH340R. Służy do rozbudowy wariantu bez łączności radiowej. Warianty TH240R-A001-0102 i TH340R-A001-0102 mają już Wi-Fi z Bluetooth, więc nie wymagają tego modułu. Montaż zleć serwisowi. Drukarka jest sprzedawana osobno. Nie kupuj jednocześnie osobnego modułu Bluetooth do tego samego gniazda.',
-    printers: ids,
+    description: 'TSC SP-TH240-0041 to moduł Wi-Fi 802.11a/b/g/n/ac i Bluetooth 5.0 w wersji EU/EMEA. Pasuje do serii TH240 i TH340, w tym TH240R oraz TH340R, a także do wersji dla ochrony zdrowia TH240THC, TH340THC, DH240THC i DH340THC. Służy do rozbudowy wariantu bez łączności radiowej. Warianty TH240R-A001-0102 i TH340R-A001-0102 oraz wersje HC z końcówką PN 0102 mają już Wi-Fi z Bluetooth, więc nie wymagają tego modułu. Montaż zleć serwisowi. Drukarka jest sprzedawana osobno. Nie kupuj jednocześnie osobnego modułu Bluetooth do tego samego gniazda.',
+    printers: [...ids, ...hcIds],
   },
   {
     id: 'tsc-th-bluetooth', slug: 'tsc-modul-bluetooth-sp-th240-0044', pn: 'SP-TH240-0044', image: 'bluetooth',
     name: 'Moduł Bluetooth TSC TH240',
-    description: 'TSC SP-TH240-0044 to moduł Bluetooth 5.0 do serii TH240 i TH340, w tym TH240R oraz TH340R. Umożliwia rozbudowę wariantu bez łączności radiowej. Nie dodaje Wi-Fi. Jest alternatywą dla modułu Wi-Fi z Bluetooth SP-TH240-0041. Warianty z fabrycznym Wi-Fi i Bluetooth nie wymagają tej części. Montaż zleć serwisowi. Drukarka jest sprzedawana osobno.',
-    printers: ids,
+    description: 'TSC SP-TH240-0044 to moduł Bluetooth 5.0 do serii TH240 i TH340, w tym TH240R oraz TH340R, a także do wersji dla ochrony zdrowia TH240THC, TH340THC, DH240THC i DH340THC. Umożliwia rozbudowę wariantu bez łączności radiowej. Nie dodaje Wi-Fi. Jest alternatywą dla modułu Wi-Fi z Bluetooth SP-TH240-0041. Warianty z fabrycznym Wi-Fi i Bluetooth nie wymagają tej części. Montaż zleć serwisowi. Drukarka jest sprzedawana osobno.',
+    printers: [...ids, ...hcIds],
   },
   {
     id: 'tsc-th-roll-holder', slug: 'tsc-uchwyt-rolki-op-com-0002', pn: 'OP-COM-0002', image: 'holder',
     name: 'Zewnętrzny uchwyt rolki TSC — gilza 3 cale',
-    description: 'TSC OP-COM-0002 to zewnętrzny uchwyt rolki etykiet ze szpindlem do gilzy 76,2 mm, czyli 3 cale. Pasuje do serii TH240 i TH340, w tym TH240R oraz TH340R. Ustawia się go za drukarką, a materiał podaje przez wejście zewnętrzne. Przed użyciem etykiet RFID sprawdź prowadzenie podkładu i kalibrację wkładki. Uchwyt nie jest napędzanym nawijakiem. Drukarka i rolka etykiet są sprzedawane osobno.',
-    printers: ids,
+    description: 'TSC OP-COM-0002 to zewnętrzny uchwyt rolki etykiet ze szpindlem do gilzy 76,2 mm, czyli 3 cale. Pasuje do serii TH240 i TH340, w tym TH240R oraz TH340R, a także do wersji dla ochrony zdrowia TH240THC, TH340THC, DH240THC i DH340THC. Ustawia się go za drukarką, a materiał podaje przez wejście zewnętrzne. Przed użyciem etykiet RFID sprawdź prowadzenie podkładu i kalibrację wkładki. Uchwyt nie jest napędzanym nawijakiem. Drukarka i rolka etykiet są sprzedawane osobno.',
+    printers: [...ids, ...hcIds],
   },
   {
     id: 'tsc-th-head-203', slug: 'tsc-glowica-ph-th240-0001', pn: 'PH-TH240-0001', image: 'head203',
@@ -42,7 +45,7 @@ export const tscThRfidAccessories: Product[] = [
   seoTitle: `${a.name} | TAKMA`, seoDescription: `${a.name}, PN ${a.pn}. Sprawdź zgodność, cenę, dostępność i wyposażenie w TAKMA.`,
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'tsc', tags: ['magazyn', 'retail'],
   images: [`/images/products/tsc-th-${a.image}.webp`], imageDescriptions: [`${a.name} — ${a.pn}${a.image === 'head300' ? '; zdjęcie poglądowe' : ''}`],
-  specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: a.printers.map(id => id === ids[0] ? 'TH240R' : 'TH340R').join(', ') }],
+  specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: a.printers.map(id => modelNames[id]).join(', ') }],
   applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: a.printers,
   downloads: [{ name: 'Instrukcja serii TH/DH, w tym RFID (EN)', type: 'manual', url: manual, size: 'PDF' }], createdAt: '2026-10-16',
 }))
