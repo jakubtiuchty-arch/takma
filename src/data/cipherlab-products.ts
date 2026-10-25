@@ -506,10 +506,10 @@ export const cipherlabProducts: Product[] = [
     "slug": "cipherlab-rs38h",
     "name": "CipherLab RS38H",
     "seoH1": "CipherLab RS38H",
-    "seoTitle": "CipherLab RS38H — terminal medyczny do dezynfekcji, 5G",
-    "seoDescription": "CipherLab RS38H — terminal mobilny dla szpitali: obudowa odporna na ponad 24 środki czyszczące i UV-C, przycisk SOS, skaner SE4720, 5G i Wi-Fi 6E. AS3858SF4NSGH.",
-    "shortDescription": "CipherLab RS38H — terminal mobilny do placówek ochrony zdrowia. Obudowa odporna na dezynfekcję, skaner SE4720, ekran 6 cali, 5G i przycisk SOS.",
-    "description": "RS38H to terminal mobilny dla pielęgniarek, personelu laboratorium i rejestracji. Skanuje opaski pacjentów i probówki, a obudowa znosi częstą dezynfekcję. Zielony celownik LED skanera SE4720 jest bezpieczny w pracy przy pacjencie.\n\n## Ponad 24 środki czyszczące i światło UV-C\n\nObudowę przetestowano z ponad 24 środkami czyszczącymi, w tym z alkoholem izopropylowym i medycznym. Konstrukcja znosi też sterylizację światłem UV-C. Zaślepka USB-C z oferty akcesoriów chroni złącze podczas dezynfekcji. Baterię wymienia się bez zdejmowania akcesoriów.\n\n## Przycisk SOS, OCR i stacja Workstation Connect\n\nCzerwony przycisk SOS można zaprogramować do wezwania pomocy w nagłej sytuacji. Pic 'n Fill OCR przepisuje pomiary z monitorów, na przykład ciśnienie krwi i poziom cukru. Po połączeniu ze [stacją roboczą ARS38WCCNHE01](/produkt/cipherlab-ars38wccnhe01) obraz z RS38H można przenieść na monitor wózka pielęgniarskiego.\n\nBateria 4500 mAh daje ponad 14 godzin pracy, a wymiana hot swap pozwala pracować przez całą dobę. Terminal ma 5G, Wi-Fi 6E, Bluetooth 5.2, NFC oraz nano SIM i eSIM. Obudowa ma szczelność IP65 i IP68, a terminal znosi wielokrotne upadki na płytki ułożone na betonie z wysokości 1,5 m. Z tyłu jest aparat 16 MP, a z przodu 8 MP.\n\nDo RS38H oferowane są [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01), [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01), [zapasowa bateria KBRS381455502](/produkt/cipherlab-kbrs381455502), [klips ARS38CLIP0001](/produkt/cipherlab-ars38clip0001) i [pasek na dłoń ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\nWersję do magazynu i logistyki z modułem SE4770 lub SE5500 oferuje [CipherLab RS38](/produkt/cipherlab-rs38).",
+    "seoTitle": "CipherLab RS38H — terminal medyczny z 5G i przyciskiem SOS",
+    "seoDescription": "CipherLab RS38H — terminal mobilny dla szpitali: obudowa przetestowana z ponad 24 środkami czyszczącymi i światłem UV-C, przycisk SOS, skaner SE4720, 5G i Wi-Fi 6E. Terminal medyczny CipherLab RS38H, RS38H CipherLab, terminal dla służby zdrowia CipherLab. PN: AS3858SF4NSGH.",
+    "shortDescription": "CipherLab RS38H — terminal mobilny do placówek ochrony zdrowia. Obudowa przygotowana do dezynfekcji, skaner SE4720, ekran 6 cali, 5G i przycisk SOS.",
+    "description": "CipherLab RS38H to terminal mobilny dla pielęgniarek, personelu laboratorium i rejestracji. Skanuje opaski pacjentów i probówki, a obudowa znosi częstą dezynfekcję. Zielony celownik LED skanera SE4720 jest bezpieczny w zastosowaniach medycznych.\n\n## Ponad 24 środki czyszczące i światło UV-C\n\nObudowę przetestowano z ponad 24 środkami czyszczącymi, w tym z alkoholem izopropylowym i medycznym. Konstrukcja znosi też sterylizację światłem UV-C. Zaślepka USB-C z oferty akcesoriów chroni złącze podczas dezynfekcji. Baterię wymienia się bez zdejmowania akcesoriów.\n\n## Przycisk SOS, OCR i stacja Workstation Connect\n\nCzerwony przycisk SOS można zaprogramować do wezwania pomocy w nagłej sytuacji. Pic 'n Fill OCR przepisuje pomiary z monitorów, na przykład ciśnienie krwi i poziom cukru. Po połączeniu ze [stacją roboczą ARS38WCCNHE01](/produkt/cipherlab-ars38wccnhe01) obraz z RS38H można przenieść na monitor wózka pielęgniarskiego.\n\nBateria 4500 mAh daje ponad 14 godzin pracy, a wymiana hot swap pozwala pracować przez całą dobę. Terminal ma 5G, Wi-Fi 6E, Bluetooth 5.2, NFC oraz nano SIM i eSIM. Obudowa ma szczelność IP65 i IP68, a terminal znosi wielokrotne upadki na płytki ułożone na betonie z wysokości 1,5 m.\n\nDo RS38H oferowane są [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01), [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01), [zapasowa bateria KBRS381455502](/produkt/cipherlab-kbrs381455502), [klips ARS38CLIP0001](/produkt/cipherlab-ars38clip0001) i [pasek na dłoń ARS38HS000001](/produkt/cipherlab-ars38hs000001).\n\nWersję do magazynu i logistyki z modułem SE4770 lub SE5500 oferuje [CipherLab RS38](/produkt/cipherlab-rs38).",
     "categoryId": "terminale-mobilne",
     "subcategoryIds": [
       "terminale-mobilne",
@@ -534,7 +534,7 @@ export const cipherlabProducts: Product[] = [
       "healthcare"
     ],
     "availability": "unavailable",
-    "priceFrom": 5535.95,
+    "priceFrom": 5570.96,
     "isNew": true,
     "isBestseller": false,
     "specifications": [
@@ -543,8 +543,12 @@ export const cipherlabProducts: Product[] = [
         "value": "Android 13, GMS; możliwość aktualizacji do Androida 15"
       },
       {
+        "name": "Procesor",
+        "value": "Qualcomm QCM4490, 8 rdzeni, 2,4 GHz"
+      },
+      {
         "name": "Pamięć",
-        "value": "8 GB RAM / 128 GB Flash"
+        "value": "8 GB RAM / 128 GB Flash; karta microSD do 1 TB"
       },
       {
         "name": "Skaner kodów",
@@ -559,12 +563,32 @@ export const cipherlabProducts: Product[] = [
         "value": "5G, Wi-Fi 6E, Bluetooth 5.2, NFC, USB-C"
       },
       {
+        "name": "Lokalizacja",
+        "value": "GPS, GLONASS, Galileo, BeiDou, QZSS (dwuzakresowy GNSS), A-GPS"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 16 MP z autofokusem PDAF i lampą LED; przedni 8 MP"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Programowalny przycisk SOS, 2 boczne przyciski skanowania, głośność +/−, włącznik"
+      },
+      {
         "name": "Bateria",
         "value": "4500 mAh, wymienna w trybie hot swap"
       },
       {
+        "name": "Ładowanie baterii",
+        "value": "2 h od 0 do 100% z zasilaczem QC 4.0 / PD 3.0 powyżej 27 W"
+      },
+      {
         "name": "Klasa szczelności",
         "value": "IP65 / IP68"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "Wielokrotne z 1,5 m na płytki na betonie (MIL-STD-810H); 1000 przewrotów z 0,5 m"
       },
       {
         "name": "Wymiary",
@@ -588,7 +612,7 @@ export const cipherlabProducts: Product[] = [
         "partNumber": "AS3858SF4NSGH",
         "name": "CipherLab RS38H",
         "attributes": {},
-        "priceFrom": 5535.95,
+        "priceFrom": 5570.96,
         "availability": "unavailable"
       }
     ],
@@ -632,6 +656,14 @@ export const cipherlabProducts: Product[] = [
       {
         "question": "Czy RS38H wyświetla obraz na większym monitorze?",
         "answer": "Tak, po połączeniu ze [stacją roboczą ARS38WCCNHE01](/produkt/cipherlab-ars38wccnhe01). Ekran terminala można wtedy wyświetlić na monitorze wózka pielęgniarskiego, co ułatwia wpisywanie danych do dokumentacji pacjenta."
+      },
+      {
+        "question": "Czy CipherLab RS38H ma przycisk alarmowy?",
+        "answer": "Tak. Czerwony przycisk SOS jest częścią obudowy. To przycisk programowalny: można go ustawić tak, aby powiadamiał personel o potrzebie pomocy w nagłej sytuacji albo w razie agresji wobec pracowników. Oprócz niego terminal ma dwa boczne przyciski skanowania, regulację głośności i włącznik."
+      },
+      {
+        "question": "Jakie inne terminale dla służby zdrowia z 5G są w ofercie?",
+        "answer": "Modem 5G mają także [Zebra HC25](/produkt/zebra-hc25), [Zebra HC55](/produkt/zebra-hc55), [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) oraz [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) w wersji 5G. Tylko z Wi-Fi pracują m.in. [Zebra HC20](/produkt/zebra-hc20), [Zebra HC50](/produkt/zebra-hc50) i [Datalogic Memor 12 HC](/produkt/datalogic-memor-12-hc)."
       }
     ],
     "compatibleAccessories": [],
@@ -1644,9 +1676,9 @@ export const cipherlabAccessories: Product[] = [
     "name": "Stacja robocza CipherLab RS38H",
     "seoH1": "Stacja Workstation Connect CipherLab RS38H z zasilaczem",
     "seoTitle": "Stacja robocza CipherLab RS38H — Workstation Connect, ARS38WCCNHE01",
-    "seoDescription": "Stacja robocza Workstation Connect do terminala medycznego CipherLab RS38H. Obraz z terminala trafia na monitor wózka pielęgniarskiego. PN ARS38WCCNHE01.",
+    "seoDescription": "Stacja robocza Workstation Connect do terminala medycznego CipherLab RS38H. Obraz z terminala można wyświetlić na monitorze wózka pielęgniarskiego. PN ARS38WCCNHE01.",
     "shortDescription": "Stacja robocza CipherLab RS38H — Workstation Connect Cradle w wersji dla ochrony zdrowia, z zasilaczem EU. PN ARS38WCCNHE01.",
-    "description": "Stacja ARS38WCCNHE01 to stacja robocza Workstation Connect Cradle do terminala RS38H w wersji dla ochrony zdrowia. W zestawie jest zasilacz EU.\n\n## Ekran RS38H na monitorze wózka\n\nGdy [RS38H](/produkt/cipherlab-rs38h) jest połączony ze stacją roboczą, obraz z terminala można wyświetlić na monitorze wózka pielęgniarskiego. Duży ekran ułatwia wpisywanie danych, pracę w rozbudowanych aplikacjach i przeglądanie dokumentacji, np. przy przyjęciu i wypisie pacjenta.\n\nDo samego ładowania terminala służy [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01). Stacja robocza do terminala [RS38](/produkt/cipherlab-rs38) ma numer [ARS38WCCNNE01](/produkt/cipherlab-ars38wccnne01).",
+    "description": "Stacja ARS38WCCNHE01 to stacja robocza Workstation Connect Cradle do terminala CipherLab RS38H, w wersji dla ochrony zdrowia. W zestawie jest zasilacz EU.\n\n## Ekran RS38H na monitorze wózka\n\nGdy [RS38H](/produkt/cipherlab-rs38h) jest połączony ze stacją roboczą, obraz z terminala można wyświetlić na monitorze wózka pielęgniarskiego. Duży ekran ułatwia wpisywanie danych, pracę w rozbudowanych aplikacjach i przeglądanie dokumentacji, np. przy przyjęciu i wypisie pacjenta.\n\nDo samego ładowania terminala służy [stacja ARS38CHCNHE01](/produkt/cipherlab-ars38chcnhe01). Stacja robocza do terminala [RS38](/produkt/cipherlab-rs38) ma numer [ARS38WCCNNE01](/produkt/cipherlab-ars38wccnne01).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [
@@ -1704,7 +1736,7 @@ export const cipherlabAccessories: Product[] = [
     "seoTitle": "Bateria CipherLab RS38H 4500 mAh — KBRS381455502",
     "seoDescription": "Zapasowa bateria 4500 mAh do terminala medycznego CipherLab RS38H w wersji dla ochrony zdrowia. Wymiana hot swap w trakcie pracy. PN KBRS381455502.",
     "shortDescription": "Bateria CipherLab RS38H — zapasowa bateria 4500 mAh w wersji dla ochrony zdrowia, wymieniana w trybie hot swap. PN KBRS381455502.",
-    "description": "KBRS381455502 to zapasowa bateria 4500 mAh przeznaczona dla RS38H, terminala CipherLab dla placówek medycznych.\n\n## Wymiana w trakcie pracy\n\nJedna bateria wystarcza [RS38H](/produkt/cipherlab-rs38h) na ponad 14 godzin pracy. Wymiana w trybie hot swap nie przerywa pracy terminala, a przy zmianie baterii nie trzeba zdejmować paska ani klipsa. Z naładowanymi bateriami w zapasie terminal może pracować na kolejnych zmianach. W terminalu bateria ładuje się do pełna w 2 godziny z zasilaczem QC lub PD o mocy powyżej 27 W.\n\nKilka zapasowych baterii naraz ładuje [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01).",
+    "description": "KBRS381455502 to zapasowa bateria 4500 mAh w wersji dla ochrony zdrowia, przeznaczona do terminala CipherLab RS38H.\n\n## Wymiana w trakcie pracy\n\nJedna bateria wystarcza [RS38H](/produkt/cipherlab-rs38h) na ponad 14 godzin pracy. Wymiana w trybie hot swap nie przerywa pracy terminala, a przy zmianie baterii nie trzeba zdejmować paska ani klipsa. Z naładowanymi bateriami w zapasie terminal może pracować na kolejnych zmianach. W terminalu bateria ładuje się do pełna w 2 godziny z zasilaczem o mocy powyżej 27 W z certyfikacją QC 4.0 lub PD 3.0.\n\nKilka zapasowych baterii naraz ładuje [ładowarka 4 baterii ARS384SBHCE01](/produkt/cipherlab-ars384sbhce01).",
     "categoryId": "akcesoria",
     "manufacturerId": "cipherlab",
     "images": [

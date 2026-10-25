@@ -26,7 +26,7 @@ const memor12Hc: Product = {
 
 Obudowę i akcesoria HC przygotowano do dezynfekcji. Odporność na środki czyszczące wskazane przez producenta dotyczy terminala, gumowej osłony i ładowarek. Pełną listę preparatów zawierają pytania i odpowiedzi poniżej.
 
-Obudowa ma grubość 13,5 mm. Ekran 6 cali chroni szkło Gorilla Glass 7, a panel dotykowy reaguje także na dotyk w rękawiczkach. Skaner Halogen DE2121-DL z dekodowaniem DeepSight odczytuje kody 1D i 2D, również uszkodzone lub zabrudzone. Zielony punkt Green Spot wyświetlany na kodzie potwierdza udany odczyt.
+Obudowa ma grubość 13,5 mm. Ekran 6 cali chroni szkło Gorilla Glass 7, a panel dotykowy reaguje także na dotyk w rękawiczkach. Skaner Halogen DE2121-DL z dekodowaniem DeepSight odczytuje kody 1D i 2D, również uszkodzone lub zabrudzone. Zielony punkt Green Spot potwierdza udany odczyt.
 
 Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. Terminal ma przycisk PTT, NFC oraz aparaty 13 MP i 8 MP. Wymienna bateria 4000 mAh ładuje się bezprzewodowo w standardzie Qi. Bezprzewodowe stacje ładujące nie mają odsłoniętych styków, co ułatwia ich czyszczenie. Datalogic zapewnia 4 + 4 lata wsparcia sprzętu i oprogramowania, a gwarancja producenta wynosi 1 rok.`,
   categoryId: 'terminale-mobilne',
@@ -39,7 +39,7 @@ Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. T
     '/images/products/944950027-3.png',
   ],
   imageDescriptions: [
-    'Datalogic Memor 12 HC — biały terminal dla służby zdrowia, widok z przodu na ekran 6 cali z ikoną Wi-Fi i widok z tyłu na aparat oraz okno skanera',
+    'Datalogic Memor 12 HC — biały terminal dla służby zdrowia, widok z przodu na ekran 6 cali z ikoną Wi-Fi i widok z tyłu na aparat, diodę LED i logo Datalogic',
     'Datalogic Memor 12 HC — biała tylna ścianka z aparatem, diodą LED, logo Datalogic i pokrywą baterii (obudowa wspólna z Memor 17 HC)',
     'Datalogic Memor 12 HC — oba boki białej obudowy z miętowymi przyciskami skanowania (obudowa wspólna z Memor 17 HC)',
   ],
@@ -97,7 +97,7 @@ Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. T
   faq: [
     {
       question: 'Czym Memor 12 HC różni się od czarnego Datalogic Memor 12?',
-      answer: 'Biała obudowa Memor 12 HC znosi dezynfekcję preparatami stosowanymi w szpitalach. Ma też własne akcesoria HC: białe stacje bezprzewodowe, gumową osłonę, jasnozielony pasek na dłoń i klips z czerwonym przyciskiem. Ekran, skaner Halogen, procesor i Wi-Fi 6E są takie same jak w [Datalogic Memor 12](/produkt/datalogic-memor-12).',
+      answer: 'Biała obudowa Memor 12 HC jest przygotowana do częstej dezynfekcji środkami z listy Datalogic. Terminal ma też własne akcesoria HC: białe stacje bezprzewodowe, gumową osłonę, jasnozielony pasek na dłoń i klips z czerwonym przyciskiem. Ekran, skaner Halogen, procesor i Wi-Fi 6E są takie same jak w [Datalogic Memor 12](/produkt/datalogic-memor-12).',
     },
     {
       question: 'Jakie środki czyszczące i dezynfekcyjne można stosować do Memor 12 HC?',
@@ -105,7 +105,7 @@ Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. T
     },
     {
       question: 'Czy Memor 12 HC ma przycisk alarmowy?',
-      answer: 'Terminal nie ma osobnego przycisku alarmowego. Połączenie alarmowe przypisuje się do przycisku programowalnego albo do gestu na ekranie. Czerwony przycisk alarmowy ma zdejmowany [klips kieszeniowy 94ACC0411](/produkt/datalogic-memor-hc-94acc0411), sprzedawany osobno.',
+      answer: 'Terminal nie ma osobnego przycisku alarmowego. Połączenie alarmowe przypisuje się do przycisku programowalnego albo do zdefiniowanego gestu. Czerwony przycisk alarmowy ma zdejmowany [klips kieszeniowy 94ACC0411](/produkt/datalogic-memor-hc-94acc0411), sprzedawany osobno.',
     },
     {
       question: 'Jak ładować Memor 12 HC?',
@@ -117,7 +117,7 @@ Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. T
     },
     {
       question: 'Jak długo Datalogic wspiera Memor 12 HC?',
-      answer: 'Producent przewiduje 4 + 4 lata wsparcia sprzętu i oprogramowania. Terminal jest dostarczany z Androidem 13 i usługami Google (GMS). Aktualizacje zabezpieczeń Androida obejmuje narzędzie Datalogic Shield.',
+      answer: 'Producent przewiduje 4 + 4 lata wsparcia sprzętu i oprogramowania. Terminal jest dostarczany z Androidem 13 i usługami Google (GMS). Aktualizacje zabezpieczeń Androida dostarcza Datalogic Shield. Datalogic oferuje tę usługę w umowach rocznych, 3-letnich i do 5 lat.',
     },
     {
       question: 'Jakie terminale dla służby zdrowia są alternatywą dla Memor 12 HC?',
@@ -137,7 +137,7 @@ const memor17Hc: Product = {
   shortDescription: 'Datalogic Memor 17 HC — terminal dla służby zdrowia z 5G i Wi-Fi 6E do pracy w szpitalu i podczas wizyt domowych: biała obudowa do dezynfekcji, eSIM, skaner Halogen 2D.',
   seoTitle: 'Datalogic Memor 17 HC — terminal 5G dla służby zdrowia',
   seoDescription: 'Datalogic Memor 17 HC: biały terminal mobilny z 5G, Wi-Fi 6E i eSIM dla szpitali i opieki domowej, obudowa przygotowana do dezynfekcji, skaner z Green Spot, Qi. Terminal dla pielęgniarek Datalogic Memor 17 HC, Memor 17 HC Datalogic, terminal medyczny 5G Datalogic. PN: 944950006, 944950023.',
-  description: `Datalogic Memor 17 HC to biały terminal dotykowy dla personelu medycznego, który pracuje w szpitalu i poza nim. Oprócz Wi-Fi 6E ma modem 5G z gniazdem nano SIM i obsługą eSIM. Łączność komórkowa utrzymuje połączenie podczas wizyt domowych u pacjentów i przy przechodzeniu między budynkami placówki. Terminal może także pracować w prywatnych sieciach 5G.
+  description: `Datalogic Memor 17 HC to biały terminal dotykowy dla personelu medycznego, który pracuje w szpitalu i poza nim. Oprócz Wi-Fi 6E ma modem 5G z gniazdem nano SIM i obsługą eSIM. Łączność komórkowa utrzymuje połączenie podczas wizyt domowych u pacjentów i przy przemieszczaniu się między placówkami medycznymi. Terminal może także pracować w prywatnych sieciach 5G.
 
 Wersja HC jest przeznaczona do ciągłej dezynfekcji. Terminal i jego akcesoria zaprojektowano tak, aby zapobiegać gromadzeniu się zarazków i bakterii na ich powierzchniach. Bateria ładuje się bezprzewodowo (Qi EPP, 7 W) w białych stacjach, które nie mają odkrytych styków.
 
@@ -178,7 +178,7 @@ Skaner Halogen DE2121-DL z technologią Green Spot ułatwia identyfikację pacje
     { name: 'Skaner', value: 'Halogen DE2121-DL 1D/2D, Green Spot, DeepSight' },
     { name: 'Aparaty', value: '13 MP z tyłu (autofokus, lampa LED), 8 MP z przodu' },
     { name: 'Łączność komórkowa', value: 'NR 5G FR1, LTE-Advanced (3GPP Rel. 16); 1 nano SIM i eSIM; VoLTE, VoNR, połączenia przez Wi-Fi' },
-    { name: 'Pasma EMEA', value: '5G: n1/2/3/5/7/8/20/25/28/38/40/41/66/77/78/79; FDD-LTE: B1/2/3/4/5/7/8/17/19/20/25/28/66; TDD-LTE: B34/38/39/40/41/42/43' },
+    { name: 'Pasma EMEA', value: '5G: n1/2/3/5/7/8/20/25/28/38/40/41/66/77/78/79; FDD-LTE: B1/2/3/4/5/7/8/17/19/20/25/28/66; TDD-LTE: B34/38/39/40/41/42/43; WCDMA: B1/2/4/5/8; GSM: 4 pasma' },
     { name: 'WLAN', value: 'Wi-Fi 6E (802.11ax), 2,4 / 5 / 6 GHz, 2×2 MIMO, WPA3 Enterprise 192-bit' },
     { name: 'Bluetooth', value: 'Bluetooth 5.3, Classic i Low Energy' },
     { name: 'NFC', value: 'Tagi typu 1–5 (ISO 14443-4 A/B, ISO 15693, MIFARE, FeliCa); emulacja karty; płatności zbliżeniowe i Apple ECP' },
@@ -196,7 +196,7 @@ Skaner Halogen DE2121-DL z technologią Green Spot ułatwia identyfikację pacje
     { name: 'Oprogramowanie', value: 'Datalogic Mobility Suite: Shield (aktualizacje zabezpieczeń), Launcher, Scan2Deploy Studio, OEMConfig, Wi-Fi Guard, Battery Manager' },
     { name: 'Gwarancja producenta', value: '1 rok' },
   ],
-  applications: ['Wizyty domowe u pacjentów', 'Identyfikacja pacjenta i śledzenie leków', 'Ewidencja sprzętu medycznego', 'Praca w kilku budynkach placówki'],
+  applications: ['Wizyty domowe u pacjentów', 'Identyfikacja pacjenta i śledzenie leków', 'Ewidencja sprzętu medycznego', 'Przemieszczanie się między placówkami medycznymi'],
   variants: [
     { partNumber: '944950006', name: 'Memor 17 HC, 5G + Wi-Fi 6E, 6 / 64 GB, Android 13 GMS, biały', attributes: { 'Pamięć': '6 / 64 GB' }, priceFrom: 3471.94, availability: 'available' },
     { partNumber: '944950023', name: 'Memor 17 HC, 5G + Wi-Fi 6E, 6 / 128 GB, SafeSwap, Android 13 GMS, biały', attributes: { 'Pamięć': '6 / 128 GB', 'SafeSwap': 'Tak' }, priceFrom: 3814.6, availability: 'available' },
@@ -264,7 +264,7 @@ const dock1Hc: Product = {
   shortDescription: 'Datalogic 94A150126 — biała jednogniazdowa stacja HC: bezprzewodowo ładuje jeden terminal Memor 12 HC albo Memor 17 HC.',
   seoTitle: 'Stacja Datalogic 94A150126 HC do Memor 12 HC / 17 HC',
   seoDescription: 'Biała stacja Datalogic 94A150126 (Single Slot Charging Dock HC) do bezprzewodowego ładowania jednego terminala Datalogic Memor 12 HC lub Memor 17 HC. Stacja ładująca Memor 17 HC. PN: 94A150126.',
-  description: `Stacja Datalogic 94A150126 ładuje bezprzewodowo jeden terminal [Memor 12 HC](/produkt/datalogic-memor-12-hc) lub [Memor 17 HC](/produkt/datalogic-memor-17-hc). Jest biała, w wersji HC. Służy tylko do ładowania i nie przesyła danych. Stacja nie ma odsłoniętych styków, co ułatwia jej czyszczenie. Odporność chemiczna wersji HC obejmuje także ładowarki.
+  description: `Stacja Datalogic 94A150126 ładuje bezprzewodowo jeden terminal [Memor 12 HC](/produkt/datalogic-memor-12-hc) lub [Memor 17 HC](/produkt/datalogic-memor-17-hc). Ma białą obudowę w wersji HC i służy wyłącznie do ładowania, bez transmisji danych. Stacja nie ma odsłoniętych styków, co ułatwia jej czyszczenie. Odporność chemiczna wersji HC obejmuje także ładowarki.
 
 ## Co jest potrzebne do użycia?
 
@@ -293,7 +293,7 @@ Aby korzystać ze stacji, potrzebny jest przewód i zasilacz z listy. Elementy t
   ],
   applications: ['Ładowanie terminala na stanowisku pielęgniarskim'],
   compatibleAccessories: [],
-  relatedAccessories: ['datalogic-cable-usbc-skorpio-94ACC0327', 'datalogic-zasilacz-usb-94acc0383', 'datalogic-memor-hc-94acc0405'],
+  relatedAccessories: ['datalogic-cable-usbc-skorpio-94ACC0327', 'datalogic-zasilacz-usb-94acc0383'],
   downloads: [HC_DATASHEET],
   relatedProducts: MEMOR_HC,
   createdAt: '2026-10-25',
@@ -335,7 +335,7 @@ Zasilacz i przewód sieciowy nie wchodzą w skład stacji.`,
   ],
   applications: ['Ładowanie kilku terminali oddziału w jednym miejscu'],
   compatibleAccessories: [],
-  relatedAccessories: ['datalogic-psu-94ACC0380', 'datalogic-przewod-zasilajacy-eu-95a051041', 'datalogic-memor-hc-94acc0405'],
+  relatedAccessories: ['datalogic-psu-94ACC0380', 'datalogic-przewod-zasilajacy-eu-95a051041'],
   downloads: [HC_DATASHEET],
   relatedProducts: MEMOR_HC,
   createdAt: '2026-10-25',
@@ -348,7 +348,7 @@ const smartDockHc: Product = {
   shortDescription: 'Datalogic 94A150141 — biała stacja Smart Docking z trybem Desktop do terminala Memor 17 HC: ładowanie i praca w środowisku biurowym.',
   seoTitle: 'Stacja Smart Docking Datalogic 94A150141 do Memor 17 HC',
   seoDescription: 'Biała stacja Datalogic Smart Docking Station M17 (94A150141) z trybem Desktop do terminala Datalogic Memor 17 HC. Stacja dokująca Memor 17 HC. PN: 94A150141.',
-  description: `Datalogic 94A150141 to biała stacja Smart Docking do terminala [Memor 17 HC](/produkt/datalogic-memor-17-hc). Pracuje w trybie Desktop. Po włożeniu terminala do stacji personel może korzystać z pełnego środowiska pulpitu, a urządzenie w tym czasie się ładuje. Jeden terminal może więc służyć do pracy mobilnej i do dokumentacji przy stanowisku.
+  description: `Datalogic 94A150141 to biała stacja Smart Docking do terminala [Memor 17 HC](/produkt/datalogic-memor-17-hc). Pracuje w trybie Desktop: obraz z terminala trafia na zewnętrzny monitor, a personel korzysta z pełnego środowiska pulpitu, podczas gdy urządzenie się ładuje. Jeden terminal może więc służyć do pracy mobilnej i do dokumentacji przy stanowisku.
 
 ## Co jest potrzebne do użycia?
 
@@ -500,7 +500,7 @@ Terminal Memor HC nie ma własnego przycisku alarmowego. Bez klipsa wezwanie ala
   manufacturerId: 'datalogic',
   priceFrom: 143.23,
   images: ['/images/products/94ACC0411.png'],
-  imageDescriptions: ['Klips kieszeniowy Datalogic 94ACC0411 — biała ramka na terminal z czerwonym przyciskiem alarmowym i obrotowym klipsem'],
+  imageDescriptions: ['Klips kieszeniowy Datalogic 94ACC0411 — biała ramka na terminal z czerwonym przyciskiem alarmowym i klipsem na odwrocie'],
   tags: ['healthcare'],
   availability: 'available',
   isNew: true,
@@ -527,7 +527,7 @@ const usbWallAdapter: Product = {
   shortDescription: 'Datalogic 94ACC0383 — zasilacz sieciowy z gniazdem USB-A i czterema wtyczkami regionalnymi do jednogniazdowych stacji Memor 12/17 i Memor 12 HC / 17 HC.',
   seoTitle: 'Zasilacz USB Datalogic 94ACC0383 do stacji Memor 12/17 HC',
   seoDescription: 'Zasilacz Datalogic 94ACC0383 (Power Wall Adapter, USB-A, 4 wtyczki regionalne) do zasilania jednogniazdowych stacji Memor 12 HC / 17 HC 94A150126 oraz 94A150128 i 94A150129 przewodem 94ACC0327. PN: 94ACC0383.',
-  description: `Datalogic 94ACC0383 to zasilacz sieciowy z gniazdem USB-A i czterema wymiennymi wtyczkami regionalnymi. Zasila jednogniazdowe stacje terminali Memor przez przewód USB-A / USB-C 94ACC0327: białą stację HC [94A150126](/produkt/datalogic-memor-hc-94a150126) oraz stacje 94A150128 i 94A150129 do Memor 12/17.
+  description: `Datalogic 94ACC0383 to zasilacz sieciowy z gniazdem USB-A i czterema wymiennymi wtyczkami regionalnymi. Zasila jednogniazdowe stacje terminali Memor przez przewód USB-A / USB-C 94ACC0327: białą stację HC [94A150126](/produkt/datalogic-memor-hc-94a150126) oraz stacje [94A150128](/produkt/datalogic-dock-1slot-memor-12) i [94A150129](/produkt/datalogic-dock-wireless-memor-12) do Memor 12/17. Z tym samym przewodem ładuje także sam terminal, również w wersji HC, przez złącze USB-C.
 
 ## Co jest potrzebne do użycia?
 
