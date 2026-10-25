@@ -46,8 +46,8 @@ Subskrypcja trwa 1, 3 albo 5 lat. Cena obejmuje standardowe wsparcie producenta 
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
   priceFrom: 751.44,
-  images: ['/images/products/BTS-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
-  imageDescriptions: [
+  images: ['/images/products/bartender-starter-box.png', '/images/products/BTS-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
+  imageDescriptions: ['BarTender Starter — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'BarTender Starter — wybór szablonu etykiety z biblioteki BarTender, filtr według branży: motoryzacja, edukacja, life sciences, produkcja',
     'BarTender 12 — grafika producenta „What’s New in BarTender 12” z numerem wersji',
   ],
@@ -146,8 +146,8 @@ Uprawnienia użytkowników i grup oraz hasła chronią dokumenty i druk. Wsparci
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
   priceFrom: 1129.22,
-  images: ['/images/products/BTP-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
-  imageDescriptions: [
+  images: ['/images/products/bartender-professional-box.png', '/images/products/BTP-WS-SUB-1YR.png', '/images/products/bartender-12.png'],
+  imageDescriptions: ['BarTender Professional — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'BarTender Professional — druk zdalny na smartfonie: konsola druku z dokumentami etykiet i ustawienia drukarek sieciowych',
     'BarTender 12 — grafika producenta „What’s New in BarTender 12” z numerem wersji',
   ],
@@ -265,8 +265,8 @@ W sklepie dostępne są subskrypcje na 1 rok albo 3 lata, ze standardowym wsparc
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
   priceFrom: 2172.2,
-  images: ['/images/products/BTA-2-SUB-1YR.png', '/images/products/BTA-2-SUB-1YR-2.png'],
-  imageDescriptions: [
+  images: ['/images/products/bartender-automation-box.png', '/images/products/BTA-2-SUB-1YR.png', '/images/products/BTA-2-SUB-1YR-2.png'],
+  imageDescriptions: ['BarTender Automation — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'BarTender Automation — Intelligent Form Builder: kreator formularza druku z polami tekstowymi, listą wyboru i przypisanym szablonem etykiety',
     'BarTender Automation — okno BarTender File Drop z listą plików zamówień CSV przekazanych do druku na drukarkach Zebra',
   ],
@@ -374,8 +374,8 @@ Wdrożenie Enterprise zależy od liczby drukarek, lokalizacji i systemów do po�
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
   quoteOnly: true,
-  images: ['/images/products/BTE-3-SUB-1YR.png', '/images/products/BTE-3-SUB-1YR-2.png'],
-  imageDescriptions: [
+  images: ['/images/products/bartender-enterprise-box.png', '/images/products/BTE-3-SUB-1YR.png', '/images/products/BTE-3-SUB-1YR-2.png'],
+  imageDescriptions: ['BarTender Enterprise — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'BarTender Enterprise — Workflow Designer: schemat zatwierdzania dokumentu „Default Approval Flow” z etapami projektu i akceptacji',
     'BarTender Enterprise — pracownik zakładu przy laptopie z otwartym przepływem zatwierdzania szablonów etykiet',
   ],
@@ -475,12 +475,12 @@ Plan Enterprise dodaje gotowe konektory druku z systemów ERP i logowanie jednok
   manufacturerId: 'bartender',
   licenseDelivery: 'email',
   priceFrom: 1478.25,
-  images: [
+  images: ['/images/products/bartender-cloud-box.png', 
     '/images/products/BTC-1-ESS-SUB-1YR.png',
     '/images/products/BTC-1-ESS-SUB-1YR-2.png',
     '/images/products/BTC-1-ESS-SUB-1YR-3.png',
   ],
-  imageDescriptions: [
+  imageDescriptions: ['BarTender Cloud — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'BarTender Cloud — strona startowa konta w przeglądarce: statystyki druku z 30 dni i lista ostatnio drukowanych dokumentów',
     'BarTender Cloud — kreator nowego dokumentu z szablonu: wybór źródła danych, m.in. Azure SQL, Microsoft Excel, Google Sheets i SAP HANA',
     'BarTender Cloud Designer — projekt etykiety logistycznej z kodami kreskowymi na monitorze w magazynie',

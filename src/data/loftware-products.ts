@@ -30,8 +30,8 @@ Konto ma 1 GB miejsca na etykiety i jedno środowisko produkcyjne. Dane do etyki
   manufacturerId: 'loftware',
   priceFrom: 1478.25,
   licenseDelivery: 'email',
-  images: ['/images/products/NSCDBA001Y.png'],
-  imageDescriptions: [
+  images: ['/images/products/loftware-cloud-designer-box.png', '/images/products/NSCDBA001Y.png'],
+  imageDescriptions: ['Loftware Cloud Designer — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'Loftware Cloud Designer — Web Designer w przeglądarce: projekt etykiety produktu z kodem Data Matrix i kodem kreskowym, po lewej panel obiektów: tekst, kod kreskowy, kształty i obraz',
   ],
   tags: ['produkcja', 'logistyka'],
@@ -143,8 +143,8 @@ Nowe i zmienione dokumenty przechodzą przez jeden domyślny proces zatwierdzani
   manufacturerId: 'loftware',
   priceFrom: 3055.04,
   licenseDelivery: 'email',
-  images: ['/images/products/NSCEBS001M.png', '/images/products/NSCDBA001Y.png'],
-  imageDescriptions: [
+  images: ['/images/products/loftware-cloud-essentials-box.png', '/images/products/NSCEBS001M.png', '/images/products/NSCDBA001Y.png'],
+  imageDescriptions: ['Loftware Cloud Essentials — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'Loftware Cloud Essentials — grafika Loftware Cloud: regały magazynowe z oznakowanymi pojemnikami i pracownik z wydrukowaną etykietą wysyłkową na kartonie',
     'Loftware Cloud Essentials — edytor Web Designer w przeglądarce z projektem etykiety produktu, kodem Data Matrix i kodem kreskowym',
   ],
@@ -270,8 +270,8 @@ Cenę ustalamy po rozmowie o liczbie drukarek, lokalizacjach i potrzebnych integ
   manufacturerId: 'loftware',
   quoteOnly: true,
   licenseDelivery: 'email',
-  images: ['/images/products/NSCBSM001M.png', '/images/products/NSCDBA001Y.png'],
-  imageDescriptions: [
+  images: ['/images/products/loftware-cloud-business-box.png', '/images/products/NSCBSM001M.png', '/images/products/NSCDBA001Y.png'],
+  imageDescriptions: ['Loftware Cloud Business — wizualizacja licencji oprogramowania, pudełko z etykietą i kodem kreskowym', 
     'Loftware Cloud Business — grafika Loftware: szafa serwerowa i zespół przy stanowiskach z monitorami, połączone świetlnymi liniami symbolizującymi druk w sieci firmy',
     'Loftware Cloud Business — edytor etykiet Web Designer w przeglądarce z projektem etykiety i panelem obiektów',
   ],
