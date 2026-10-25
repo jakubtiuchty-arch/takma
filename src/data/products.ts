@@ -23266,6 +23266,17 @@ UWAGA: bateria BAT-SCN05 NIE jest kompatybilna z nowszymi skanerami Granit Ultra
 // TERMINALE MOBILNE
 // ============================================
 
+// Porównanie rodziny Zebra HC2X/HC5X według karty katalogowej HC2X/HC5X (05/2025); wspólne dla czterech kart.
+const HC2X_HC5X_COMPARISON: Product['comparison'] = {
+  title: 'Porównanie modeli Zebra HC20, HC25, HC50 i HC55',
+  models: [
+    { name: 'Zebra HC20', slug: 'zebra-hc20', specs: { 'Łączność': 'Wi-Fi 6 (Wi-Fi 6E z licencją Zebra DNA Enterprise)', 'RAM / Flash': '6 GB / 64 GB', 'Skaner': 'SE4720', 'Aparaty': 'Tylny 16 MP', 'Wymiana baterii bez wyłączania': 'Nie', 'Zebra DNA': 'Professional', 'Masa': '239 g' } },
+    { name: 'Zebra HC25', slug: 'zebra-hc25', specs: { 'Łączność': '5G + Wi-Fi 6 (Wi-Fi 6E z licencją Zebra DNA Enterprise); nano SIM i eSIM', 'RAM / Flash': '6 GB / 64 GB', 'Skaner': 'SE4720 lub bez skanera', 'Aparaty': 'Tylny 16 MP', 'Wymiana baterii bez wyłączania': 'Nie', 'Zebra DNA': 'Professional', 'Masa': '239 g' } },
+    { name: 'Zebra HC50', slug: 'zebra-hc50', specs: { 'Łączność': 'Wi-Fi 6E', 'RAM / Flash': '8 GB / 128 GB', 'Skaner': 'SE4720', 'Aparaty': 'Tylny 16 MP, przedni 5 MP', 'Wymiana baterii bez wyłączania': 'Tak, do 60 s', 'Zebra DNA': 'Enterprise w zestawie', 'Masa': '242 g' } },
+    { name: 'Zebra HC55', slug: 'zebra-hc55', specs: { 'Łączność': '5G + Wi-Fi 6E; nano SIM i eSIM', 'RAM / Flash': '8 GB / 128 GB', 'Skaner': 'SE4720', 'Aparaty': 'Tylny 16 MP, przedni 5 MP', 'Wymiana baterii bez wyłączania': 'Tak, do 60 s', 'Zebra DNA': 'Enterprise w zestawie', 'Masa': '242 g' } },
+  ],
+}
+
 const mobileComputers: Product[] = [
   {
   "id": "zebra-mc3300x",
@@ -28032,118 +28043,100 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     id: 'zebra-hc20',
     slug: 'zebra-hc20',
     name: 'Zebra HC20',
-    seoTitle: "Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6",
-    seoDescription: "Zebra HC20 (WLMT0-H20B6BCJ1) — kolektor danych do służby zdrowia z czerwonym przyciskiem alarmowym, antymikrobialną obudową odporną na ponad 30 środków dezynfekujących i skanerem SE4720. Ekran 6\" FHD+, Wi-Fi 6E, IP68, Android do 16. Dla pielęgniarek, lekarzy, BCMA, EHR.",
-    shortDescription: 'Zebra HC20 — kolektor danych do służby zdrowia, Wi-Fi 6E z przyciskiem alarmowym, dezynfekcja, BCMA, EHR',
-    description: `Dla kogo? Zebra HC20 to dedykowany kolektor danych do służby zdrowia — szpitali, przychodni, POZ, hospicjów i domów opieki. Wzmocniona obudowa medyczna, czerwony przycisk alarmowy (Code Blue) i odporność na ponad 30 rodzajów chusteczek dezynfekujących sprawiają, że HC20 wytrzymuje wieloletnią pracę w środowisku klinicznym, gdzie standardowe smartfony zawiodą po 6–12 miesiącach narażenia na środki dezynfekujące.
+    seoTitle: 'Zebra HC20 — terminal mobilny dla służby zdrowia, Wi-Fi 6',
+    seoDescription: 'Zebra HC20: terminal dla szpitali, przychodni i opieki domowej z Wi-Fi 6, skanerem SE4720, czerwonym przyciskiem alarmowym i obudową do częstej dezynfekcji. Terminal mobilny Zebra HC20, kolektor danych dla służby zdrowia, komputer mobilny Zebra HC20, HC20 Zebra. PN: WLMT0-H20B6BCJ1-A6.',
+    shortDescription: 'Zebra HC20 — terminal mobilny dla służby zdrowia: Wi-Fi 6, skaner SE4720 z zielonym celownikiem, czerwony przycisk alarmowy i obudowa przygotowana do dezynfekcji.',
+    description: `Zebra HC20 to kieszonkowy komputer mobilny dla personelu medycznego i niemedycznego: pielęgniarek, lekarzy, farmaceutów, opiekunów domowych, a także służb technicznych i żywienia. Pracuje w sieci Wi-Fi 6 placówki. Wbudowany skaner SE4720 odczytuje kody na opaskach pacjentów, fiolkach z lekami, materiałach, sprzęcie i tacach z posiłkami, także uszkodzone lub słabo wydrukowane.
 
-HC20 to zdrowotny wariant platformy [Zebra TC22](/produkt/zebra-tc22) — identyczny procesor Qualcomm 5430 hex-core 2.1 GHz, 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, 6 GB RAM / 64 GB Flash, Wi-Fi 6/6E (Wi-Fi 6ES), Bluetooth 5.2 z BLE Beaconing. Łączność prywatnej sieci 5G jest dostępna w siostrzanym modelu HC25; pełnowymiarowy wariant z aparatem przednim 5 MP do telemedycyny to HC50/HC55. Wszystkie modele HC2X/HC5X używają tego samego zestawu akcesoriów (stacje dokujące, baterie, etui).
+Obudowę w kolorze Healthcare Blue wykonano z tworzyw przeznaczonych dla ochrony zdrowia i przygotowano do częstej dezynfekcji. Wyprofilowane powierzchnie i dolne listwy zmniejszają nacisk na dłoń. Port USB-C zamyka zaślepka, która ogranicza szczeliny, w których mogą gromadzić się patogeny. Ekran 6 cali reaguje na dotyk w cienkich rękawiczkach.
 
-**Wyróżniki dla pracowników medycznych**:
+Z tyłu znajduje się czerwony przycisk alarmowy. Po zaprogramowaniu łączy z wybranym numerem albo uruchamia aplikację, a sekwencja aktywacji chroni przed fałszywym alarmem. Z oprogramowaniem Workcloud Communication terminal działa jako radiotelefon PTT lub słuchawka centrali PBX.
 
-- **Czerwony przycisk alarmowy (Code Blue)** — programowalny przycisk z funkcją automatycznego wybierania numeru alarmowego lub uruchamiania aplikacji ratunkowej. Sekwencja aktywacji zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha.
-- **Obudowa odporna na dezynfekcję** — tworzywa klasy medycznej zatwierdzone przez Zebra do regularnego czyszczenia 30+ rodzajami chusteczek dezynfekujących (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenki wodoru). Specjalnie ukształtowana obudowa i wtyczka USB-C minimalizują szczeliny gromadzące patogeny.
-- **Skaner SE4720 z białym podświetleniem i zielonym celownikiem LED** — przyjazny dla oczu pacjenta podczas skanowania opaski identyfikacyjnej. Dekoduje kody 1D i 2D w 0,3 s, w tym uszkodzone lub źle wydrukowane etykiety na fiolkach z lekami i opaskach pacjentów.
-- **Tylna kamera 16 MPx** — dokumentacja ran, stanu skóry, dostarczonych pakietów leków, materiałów eksploatacyjnych. Wysoka rozdzielczość pomaga personelowi niemedycznemu (konserwatorzy, kuchnia) w obchodach obiektu.
-- **Tłumienie szumów AI** — algorytmy oparte na zaawansowanej sieci neuronowej tłumią szumy korytarza szpitalnego (oczyszczacze, monitory, rozmowy) podczas rozmów PTT i połączeń VoIP, zapewniając czyste brzmienie głosu nawet w hałaśliwym otoczeniu.
-- **Funkcja PBX i radiotelefonu** — Workcloud PTT Express (proste push-to-talk przez Wi-Fi), PTT Pro (zaawansowane PTT) lub Enterprise Voice (pełna funkcja PBX) zamieniają HC20 w wielofunkcyjne urządzenie komunikacyjne — eliminując potrzebę osobnych telefonów stacjonarnych i pagerów na oddziale.
-- **Workstation Connect** — wstawiając HC20 do stacji dokującej Connect Cradle, użytkownik otrzymuje pełnowymiarową mobilną stację roboczą z myszką, klawiaturą i drukarką (idealne dla "komputerów na kółkach" w dyżurkach pielęgniarek).
-- **Ekran obsługiwany w rękawiczkach** — pojemnościowy panel dotykowy zoptymalizowany pod cienkie rękawiczki medyczne, bez konieczności specjalnych ustawień.
-
-Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H wytrzymuje upadki z wysokości 1,25 m na betonową posadzkę z pokrytymi płytkami w zakresie temperatur od -10°C do +50°C. Test tumble 500 wstrząsów z 0,5 m. Zakres temperatury przechowywania -40°C do +70°C.
-
-Bateria standardowa 3 800 mAh / 14,63 Wh wystarcza na pełną zmianę roboczą (8–10 h typowej pracy: skanowanie, rozmowy PTT, EHR). Wymiana baterii odbywa się po wyłączeniu urządzenia (tryb hot-swap z buforowaniem dostępny w wyższych modelach HC50/HC55). Złącze USB-C SuperSpeed do ładowania dowolnym standardowym kablem oraz transferu danych.
-
-Łączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z trójzakresowym modułem (2,4 / 5 / 6 GHz) zapewnia stabilne połączenie w sieciach szpitalnych enterprise. Bluetooth 5.2 z BLE Beaconing umożliwia integrację z aplikacjami lokalizacyjnymi i sensorami medycznymi. NFC ISO 14443 typu A i B (Mifare, FeliCa, ISO 15693) — identyfikacja personelu kartami zbliżeniowymi i odczyt znaczników NFC na sprzęcie szpitalnym.
-
-Pakiet Zebra Mobility DNA Professional w cenie urządzenia: DataWedge (skanowanie bez programowania, integracja z systemami EHR/HIS bez kodowania), StageNow (masowe wdrożenie floty), Device Tracker (lokalizacja zgubionych terminali w obiekcie szpitalnym), LifeGuard™ (comiesięczne łatki bezpieczeństwa, gwarancja aktualizacji Androida do wersji 16). Pełna paleta Zebra DNA (Guardian, Identity Guardian, Workstation Connect) dostępna z licencją Enterprise.
-
-Typowe zastosowania kliniczne: **BCMA (Bar Code Medication Administration)** — weryfikacja "pięciu Ż" przed podaniem leku (właściwy pacjent, lek, dawka, droga, czas) przez skanowanie opaski pacjenta i etykiety leku. **EHR/EPR access** — dostęp do elektronicznej dokumentacji medycznej przy łóżku pacjenta. **Lab specimen tracking** — etykietowanie i śledzenie próbek krwi/moczu/tkanek. **UDI (Unique Device Identifier) scanning** — rejestracja sprzętu i materiałów eksploatacyjnych. **Patient ID** — szybka identyfikacja pacjenta przed zabiegiem. **In-home caregiving** — dokumentacja wizyt domowych pielęgniarek środowiskowych.
-
-Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i częściowo z TC22/TC27 (baterie BTRY-TC2L-2X, stacje CRD-TC2L) — jeden ekosystem akcesoriów dla mieszanej floty szpitalnej (oddziały + administracja). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Rekomendowana usługa: Zebra OneCare Special Value (SV) z naprawami uszkodzeń mechanicznych. Drukarka opasek pacjentów do skanowania przez HC20: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Pełna dokumentacja techniczna i lista akcesoriów na zebra.com oraz [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Workstation Connect wymagają licencji Zebra DNA Enterprise. Baterię 3800 mAh można ładować dowolnym standardowym przewodem USB-C, a stacje, baterie, klips i pasek są wspólne dla całej rodziny HC2X/HC5X.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
     manufacturerId: 'zebra',
-    priceFrom: 3422.19,
+    priceFrom: 3626.4,
     images: [
-      '/images/products/hc20_1.png',
+      '/images/products/WLMT0-H20B6BCJ1-A6.png',
       '/images/products/hc20_2.png',
       '/images/products/hc20_3.png',
       '/images/products/hc20_4.png',
     ],
     imageDescriptions: [
-      'Zebra HC20 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej z białą ramką',
-      'Zebra HC20 — widok z tyłu, kamera 16 MPx, okno skanera SE4720 i czerwony przycisk alarmowy',
-      'Zebra HC20 — widok pod kątem, obudowa odporna na dezynfekcję klasy medycznej',
-      'Zebra HC20 — widok z boku, profil 12,5 mm z portem USB-C SuperSpeed bez szczelin gromadzących patogeny',
+      'Zebra HC20 — widok z przodu: ekran 6 cali w białej ramce, niebieska obudowa Healthcare Blue, ikona Wi-Fi na pasku stanu',
+      'Zebra HC20 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
+      'Zebra HC20 — widok pod kątem od lewej krawędzi z przyciskami bocznymi',
+      'Zebra HC20 — widok pod kątem od prawej krawędzi z przyciskami bocznymi',
     ],
     tags: ['healthcare'],
-    availability: "available",
+    availability: 'available',
     isNew: true,
     isBestseller: false,
+    variantAttributeTooltips: {
+      'Skaner': 'Wbudowany czytnik kodów kreskowych 1D i 2D.\n\nSE4720 — białe oświetlenie i zielony celownik LED, odczyt kodów z opasek, fiolek i etykiet sprzętu.',
+      'Łączność': 'Sieć, z którą łączy się terminal.\n\nWi-Fi 6 — praca w sieci bezprzewodowej placówki; Wi-Fi 6E po zakupie licencji Zebra DNA Enterprise. Bez modemu komórkowego.',
+    },
     specifications: [
-      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
-      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
-      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
-      { name: 'Pamięć', value: '6 GB RAM / 64 GB Flash + microSD do 2 TB' },
-      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
-      { name: 'Kamera', value: '16 MPx tył (dokumentacja ran, etykiety, sprzęt)' },
-      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna' },
-      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
-      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
-      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
-      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
-      { name: 'WAN', value: 'Brak (Wi-Fi only — wariant z 5G to HC25)' },
-      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
-      { name: 'Waga', value: '239 g (8,4 oz)' },
-      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
-      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
-      { name: 'Klawiatura PTT/PBX', value: '2× przyciski programowalne (PTT lub regulacja głośności)' },
-      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
-      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
-      { name: 'Wilgotność', value: '5–95% (bez kondensacji)' },
-      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
-      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+      { name: 'Wersja', value: 'Komputer mobilny dla ochrony zdrowia, obudowa Healthcare Blue przygotowana do dezynfekcji' },
+      { name: 'System operacyjny', value: 'Android z usługami Google (GMS); obecnie Android 13, 14 lub 15, ostatnia obsługiwana wersja: Android 16' },
+      { name: 'Procesor', value: 'Qualcomm 5430, 6 rdzeni, 2,1 GHz' },
+      { name: 'Pamięć', value: '6 GB RAM, 64 GB UFS Flash; microSD do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0" Full HD+ (1080 × 2160), 450 nitów, podświetlenie LED, szkło Corning Gorilla Glass' },
+      { name: 'Panel dotykowy', value: 'Pojemnościowy, wielotrybowy; obsługa palcem lub w cienkich rękawiczkach' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe oświetlenie, zielony celownik LED; okno ze szkła Corning Gorilla Glass' },
+      { name: 'Aparat', value: 'Tylny 16 MP' },
+      { name: 'Przyciski', value: 'Dwa przyciski skanowania, przycisk programowalny (PTT lub inna funkcja), regulacja głośności' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony przycisk alarmowy (Red Duress Button) z funkcją wybierania numeru alarmowego' },
+      { name: 'Powiadomienia', value: 'Sygnał dźwiękowy, wielokolorowe diody LED, wibracje' },
+      { name: 'Audio', value: 'Mikrofony z tłumieniem szumów AI i nagrywaniem stereo, dwa głośniki, tryb głośnomówiący stereo; zestawy słuchawkowe Bluetooth i PTT (Zebra USB-C); HD Voice, VoIP z dźwiękiem SWB' },
+      { name: 'WLAN', value: 'IEEE 802.11 a/b/g/n/ac/ax/d/h/i/r/k/v/w/mc, 2×2 MU-MIMO; Wi-Fi 6, Wi-Fi 6E po rozszerzeniu licencji do Zebra DNA Enterprise' },
+      { name: 'Zabezpieczenia WLAN', value: 'WPA3 Enterprise (także tryb 192-bit), WPA3 Personal, WPA/WPA2, Enhanced Open (OWE); szybki roaming 802.11r, PMK Caching, Cisco CCKM, OKC' },
+      { name: 'Bluetooth', value: '5.2, klasa 2, BLE beaconing' },
+      { name: 'NFC', value: 'ISO 14443 A i B, MIFARE, FeliCa, ISO 15693, tagi NFC Forum typu 2–5; emulacja karty (HCE), płatności zbliżeniowe' },
+      { name: 'Złącze', value: 'USB 3.1 typu C na dolnej krawędzi, SuperSpeed (host i klient); zaślepka portu USB-C' },
+      { name: 'Bateria', value: 'Wymienna, Li-Ion 3800 mAh / 14,63 Wh z BLE; PowerPrecision (stan baterii w czasie rzeczywistym), szybkie ładowanie, ładowanie standardowym przewodem USB-C' },
+      { name: 'Czujniki', value: 'Światła, magnetometr, czujnik ruchu z żyroskopem, zbliżeniowy; czujnik ciśnienia w wybranych konfiguracjach' },
+      { name: 'Szczelność', value: 'IP68 i IP65 (z baterią)' },
+      { name: 'Upadki', value: 'Wielokrotne upadki z 1,25 m na płytki na betonie w zakresie od −10°C do 50°C (MIL-STD-810H)' },
+      { name: 'Przewroty', value: '500 przewrotów z 0,5 m' },
+      { name: 'ESD', value: '±15 kV w powietrzu, ±8 kV bezpośrednio i pośrednio' },
+      { name: 'Temperatura i wilgotność', value: 'Praca: od −10°C do 50°C; przechowywanie: od −40°C do 70°C; wilgotność 5–95% bez kondensacji' },
+      { name: 'Wymiary i masa', value: '165 × 76,3 × 12,5 mm; 239 g' },
+      { name: 'Czyszczenie', value: 'Tworzywa dla ochrony zdrowia; ponad 30 zatwierdzonych chusteczek i środków dezynfekcyjnych' },
+      { name: 'Komunikacja głosowa', value: 'Opcjonalnie Workcloud Communication: PTT Express (Wi-Fi), PTT Pro, Enterprise Voice (telefon PBX)' },
+      { name: 'Oprogramowanie', value: 'Zebra DNA Professional w zestawie; pełny pakiet Zebra DNA wymaga licencji Zebra DNA Enterprise' },
+      { name: 'Zgodność środowiskowa', value: 'RoHS 2011/65/EU z poprawką 2015/863; REACH SVHC 1907/2006' },
+      { name: 'Gwarancja', value: '1 rok od daty wysyłki (gwarancja Zebra)' },
     ],
     variants: [
       {
         partNumber: 'WLMT0-H20B6BCJ1-A6',
-        name: 'HC20 SE4720, 6/64 GB, 3800 mAh, healthcare',
-        priceFrom: 3422.19,
-        availability: "available",
+        name: 'HC20 Wi-Fi 6, SE4720, 6 GB / 64 GB, GMS',
+        priceFrom: 3626.4,
+        availability: 'available',
         attributes: {
           'Skaner': 'SE4720',
-          'Pamięć': '6 GB / 64 GB',
-          'Bateria': '3 800 mAh',
+          'Łączność': 'Wi-Fi 6',
         },
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC20?', answer: "To wariant Wi-Fi-only — wersja z prywatną siecią 5G (HC25) i wariant z aparatem przednim do telemedycyny (HC50/HC55) kosztują więcej. Wycena z transportu, OneCare i akcesoriów na zamówienie indywidualne." },
-      { question: 'Czym różni się Zebra HC20 od standardowego TC22?', answer: 'HC20 i TC22 mają identyczną platformę techniczną (Qualcomm 5430, ekran 6" FHD+, Wi-Fi 6/6E, IP68, akcesoria), ale HC20 jest fizycznie zaprojektowany dla ochrony zdrowia: 1) Czerwony przycisk alarmowy z funkcją Code Blue, 2) Obudowa z tworzyw klasy medycznej odpornych na 30+ chusteczek dezynfekujących, 3) Skaner SE4720 z białym podświetleniem (przyjazny dla pacjenta vs czerwony laser w TC22), 4) Tłumienie szumów AI dla głośnych korytarzy szpitalnych, 5) Funkcja PBX/radiotelefonu (Workcloud Communication). TC22 nie wytrzyma codziennej dezynfekcji — pęknie po 6–12 miesiącach.' },
-      { question: 'Co to jest czerwony przycisk alarmowy Code Blue?', answer: 'Czerwony przycisk alarmowy na tylnej obudowie HC20 jest programowalny — może wybierać numer alarmowy (oddziałowy Code Blue, szpitalny pager bezpieczeństwa), uruchamiać aplikację ratunkową lub wysyłać alert do systemu MDM/EHR. Sekwencja aktywacji (np. naciśnij 2 sekundy lub kliknij 3 razy) zapobiega fałszywym alarmom z przypadkowych dotknięć w kieszeni fartucha. Przydatne dla pielęgniarki w izolatce, lekarza na nocnym dyżurze lub opiekuna w domu pacjenta.' },
-      { question: 'Czy Zebra HC20 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak, jest to główna cecha HC20. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek i środków dezynfekujących — alkoholami izopropylowymi i etylowymi, czwartorzędowymi związkami amoniowymi, podchlorynami, nadtlenkiem wodoru, kwasem nadoctowym, środkami fenolowymi. Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Standardowy TC22 nie ma tej certyfikacji i blaknie/pęka po 6 miesiącach.' },
-      { question: 'Czy Zebra HC20 obsługuje BCMA (Bar Code Medication Administration)?', answer: 'Tak. HC20 ze skanerem SE4720 dekoduje kody 1D i 2D na opaskach pacjentów (Code 128, GS1-128) i etykietach leków (Data Matrix, GS1 DataBar) w 0,3 s — także uszkodzone, zniszczone lub źle wydrukowane. Integracja z systemami EHR/HIS (CliniNet, ProMedHIS, AMMS, Mediqus, Eskulap) przez Zebra DataWedge — bez konieczności kodowania. Pielęgniarka skanuje swoją kartę identyfikacyjną, opaskę pacjenta, etykietę leku — system weryfikuje "pięć Ż" (właściwy pacjent, lek, dawka, droga, czas) automatycznie.' },
-      { question: 'Jaki Android ma Zebra HC20?', answer: 'HC20 jest dostarczany z systemem Android (wersja zależy od daty produkcji, sprawdź zebra.com/android-versions). Gwarancja aktualizacji do Android 16 dzięki LifeGuard™ — comiesięczne łatki bezpieczeństwa przez wiele lat od premiery. Wersje: GMS (Google Play, Google Mobile Services) lub AOSP (bez Google, dla placówek z restrykcjami IT). Aplikacja Zebra Zero Touch umożliwia "bezdotykowe" wdrażanie aktualizacji zgodnie z harmonogramem placówki.' },
-      { question: 'Czym różni się Zebra HC20 od HC25, HC50 i HC55?', answer: 'HC20 — Wi-Fi only, 6 GB RAM / 64 GB Flash, bateria 3 800 mAh, bez aparatu przedniego. HC25 — jak HC20 + prywatna sieć 5G (LTE/5G FR1, dual SIM nano + eSIM, GPS). HC50 — jak HC20 + aparat przedni 5 MP (telemedycyna), 8 GB RAM / 128 GB Flash, hot-swap baterii (wymiana w 30 s bez wyłączania). HC55 — jak HC50 + 5G + aparat przedni + hot-swap. HC20 to ekonomiczny wybór dla pielęgniarek i lekarzy pracujących w sieci Wi-Fi szpitala. HC55 dla wymagających workflow z telemedycyną i obchodami między budynkami.' },
-      { question: 'Czy Zebra HC20 zastępuje telefon szpitalny i pager?', answer: 'Tak. Zebra Workcloud Communication w wersji Enterprise Voice zamienia HC20 w pełnowymiarowy telefon PBX z integracją z centralą szpitalną (SIP, VoLTE, VoIP SWB Audio, hands-free przez Bluetooth ze słuchawką PTT). Wersja PTT Pro lub PTT Express umożliwia komunikację push-to-talk między pracownikami (jak walkie-talkie) bez opłat operatorskich. Eliminuje potrzebę osobnych pagerów, smartfonów służbowych i radioterminali — jeden HC20 obsługuje wszystkie kanały komunikacji personelu.' },
-      { question: 'Czy HC20 czyta opaski pacjentów wydrukowane na Zebra ZD510-HC?', answer: 'Tak, to standardowa ścieżka wdrożenia. Drukarka opasek [Zebra ZD510-HC](/produkt/zebra-zd510-hc) drukuje opaski Z-Band z kodami kreskowymi Code 128 lub Data Matrix; skaner SE4720 w HC20 dekoduje je w 0,3 s, nawet po kilku dniach na nadgarstku pacjenta (wilgoć, środki dezynfekcyjne, naprężenia mechaniczne). Pełen zestaw HC20 + ZD510-HC + opaski Z-Band to fundament systemu BCMA na oddziale.' },
-      { question: 'Jaki jest skaner w Zebra HC20?', answer: 'HC20 ma skaner SE4720 — 1D/2D omnidirectional z białym podświetleniem LED i zielonym celownikiem. Zasięg odczytu zależy od typu kodu, standardowo 5–35 cm. Dekoduje wszystkie popularne kody: Code 128, EAN/UPC, GS1-128, GS1 DataBar, Data Matrix, QR Code, PDF417, Aztec. Białe podświetlenie zamiast czerwonego lasera (jak w smartfonach) jest przyjazne dla oczu pacjentów leżących i nie powoduje stresu pacjentów neurologicznych/pediatrycznych. Aparat 16 MPx jest dostępny jako alternatywa do skanowania okazjonalnego.' },
-      { question: 'Czy Zebra HC20 wymaga kontraktu Zebra OneCare?', answer: 'Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom, więc naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy w pracy). Dla HC20 polecamy Zebra OneCare Special Value (SV) — najtańszy plan obejmujący naprawy uszkodzeń mechanicznych (upuszczenia, zalanie środkami dezynfekcyjnymi) i wsparcie techniczne. Wyższe pakiety: Essential, Select. Czas naprawy w autoryzowanym serwisie 3–5 dni roboczych — krytyczne dla oddziału który nie może czekać tygodniami na napravę kluczowego sprzętu BCMA.' },
-      { question: 'Gdzie serwisować Zebra HC20 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC20, wymiana ekranów, skanerów SE4720, baterii i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa. Ważne: oddanie HC20 do nieautoryzowanego serwisu unieważnia certyfikat odporności na dezynfekcję — kluczowe dla placówek medycznych prowadzących audyty CDC/JCI.' },
+      { question: 'Jak działa czerwony przycisk alarmowy w Zebra HC20?', answer: 'Przycisk znajduje się na tylnej ściance i ma jedną, stałą rolę: wezwanie pomocy. Administrator ustawia, czy po aktywacji HC20 dzwoni pod wskazany numer, czy otwiera wybraną aplikację. Sekwencja aktywacji ogranicza przypadkowe uruchomienie. Pasek na rękę SG-HC2L5L-HSTRP-01 pozostawia dostęp do przycisku.' },
+      { question: 'Czy Zebra HC20 obsługuje Wi-Fi 6E?', answer: 'Fabrycznie HC20 pracuje w standardzie Wi-Fi 6. Wi-Fi 6E włącza dopiero rozszerzenie licencji do Zebra DNA Enterprise. Ta sama licencja jest potrzebna do pracy ze stacją Workstation Connect. Terminal nie ma modemu komórkowego; wersją z 5G jest [Zebra HC25](/produkt/zebra-hc25).' },
+      { question: 'Jak dezynfekować obudowę HC20?', answer: 'Przed czyszczeniem HC20 należy włożyć zaślepkę do portu USB-C i odłączyć zasilanie. Środek nanosi się nasączoną chusteczką lub wilgotną ściereczką, bez rozpylania na urządzenie. Dopuszczone składniki aktywne to alkohol izopropylowy, rozcieńczony podchloryn sodu, nadtlenek wodoru, chlorek amonu i łagodny płyn do naczyń. Pełna lista produktów znajduje się w pliku „Czyszczenie i dezynfekcja” w sekcji do pobrania.' },
+      { question: 'Czy w HC20 baterię wymienia się bez wyłączania?', answer: 'Nie. Funkcja true hot swap, czyli praca do 60 s bez baterii, jest dostępna tylko w HC50 i HC55. W HC20 bateria 3800 mAh jest wymienna przez użytkownika. Zapasowe baterie ładuje ładowarka SAC-HC2L5L-4SCHG albo stacja CRD-HC2L5L-2S1D1B.' },
+      { question: 'Jaki Android ma Zebra HC20?', answer: 'Zebra udostępnia dla HC20 Androida 13, 14 i 15. Ostatnią obsługiwaną wersją ma być Android 16. Poprawki bezpieczeństwa dostarcza usługa LifeGuard for Android, a aktualizacje można planować przez Zebra Zero Touch.' },
+      { question: 'Czy HC20 może zastąpić telefon oddziałowy?', answer: 'Tak, po instalacji oprogramowania Workcloud Communication. PTT Express zapewnia rozmowy push-to-talk przez Wi-Fi, a Enterprise Voice zamienia HC20 w słuchawkę centrali PBX. Mikrofony z tłumieniem szumów AI poprawiają zrozumiałość mowy w hałasie.' },
+      { question: 'Jakie są alternatywy dla Zebra HC20?', answer: '[Zebra HC50](/produkt/zebra-hc50) ma Wi-Fi 6E, 8 GB / 128 GB, przedni aparat 5 MP i wymianę baterii bez wyłączania. [Zebra HC25](/produkt/zebra-hc25) dodaje 5G. Spośród innych marek: [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) ze skanerem N6700 oraz [Datalogic Memor 12 HC](/produkt/datalogic-memor-12-hc).' },
     ],
     applications: [
-      'BCMA — weryfikacja "pięciu Ż" przed podaniem leku',
-      'EHR/EPR — dostęp do dokumentacji pacjenta przy łóżku',
-      'Lab specimen tracking — etykietowanie próbek',
-      'UDI — rejestracja sprzętu medycznego',
-      'Patient ID — szybka identyfikacja pacjenta',
-      'Code Blue — wezwanie pomocy w nagłej sytuacji',
-      'Komunikacja personelu — PBX, PTT, walkie-talkie',
-      'Domy opieki i hospicja — opieka domowa',
-      'Apteka szpitalna — inwentaryzacja leków',
-      'Dokumentacja ran i obchody konserwacyjne',
+      'Dostęp do elektronicznej dokumentacji i identyfikacja pacjenta',
+      'Praca przy łóżku pacjenta',
+      'Opieka domowa',
+      'Komunikacja personelu: PTT, PBX, bezpieczne wiadomości',
+      'Gospodarka materiałowa i inwentaryzacja',
     ],
     compatibleAccessories: [],
     relatedAccessories: [
@@ -28154,199 +28147,127 @@ Koszt posiadania (TCO): kompatybilność akcesoriów z całą serią HC2X/HC5X i
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
-      'zebra-screen-protector-tc2-hc2',
+      'zebra-tc201-crd-tc2l-1snws-01',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-brkt-scrd-smrk-01',
     ],
+    relatedProducts: ['zebra-hc50', 'zebra-hc25', 'honeywell-ct37-hc', 'datalogic-memor-12-hc'],
     downloads: [
-      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
-      { name: 'Strona produktu Zebra HC20 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (PL)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-pl.pdf', size: '494 KB' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (EN)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-en.pdf', size: '439 KB' },
+      { name: 'Czyszczenie i dezynfekcja terminali Zebra dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '873 KB' },
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
     ],
-    servicePlans: [
-      { name: 'Zebra OneCare Special Value — 3 lata', partNumber: 'Z1AS-HC20XX-3C00', duration: '3 lata', priceNetto: 950 },
-      { name: 'Zebra OneCare Special Value — 5 lat', partNumber: 'Z1AS-HC20XX-5C00', duration: '5 lat', priceNetto: 1580 },
-    ],
-    comparison: {
-      title: 'Porównanie: Zebra HC20 vs HC50 vs TC22 (consumer)',
-      models: [
-        {
-          name: 'Zebra HC20',
-          specs: {
-            'Przeznaczenie': 'Healthcare (szpitale, przychodnie)',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': 'Brak',
-            'Przycisk alarmowy': 'Tak, programowalny',
-            'Odporność na dezynfekcję': '30+ chusteczek',
-            'RAM / Flash': '6/64 GB',
-            'Bateria': '3 800 mAh, wymienna',
-            'Cena od': '2 950 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC50',
-          specs: {
-            'Przeznaczenie': 'Healthcare premium + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Przycisk alarmowy': 'Tak, programowalny',
-            'Odporność na dezynfekcję': '30+ chusteczek',
-            'RAM / Flash': '8/128 GB',
-            'Bateria': '3 800 mAh, hot-swap',
-            'Cena od': 'Wycena indywidualna',
-          },
-        },
-        {
-          name: 'Zebra TC22',
-          specs: {
-            'Przeznaczenie': 'Retail, magazyn, logistyka',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4710 lub SE55',
-            'Aparat przedni': '5 MPx',
-            'Przycisk alarmowy': 'Nie',
-            'Odporność na dezynfekcję': 'Standardowa (nie medyczna)',
-            'RAM / Flash': '6/64 lub 8/128 GB',
-            'Bateria': '3 800 / 5 200 mAh, hot-swap',
-            'Cena od': '2 417 zł netto',
-          },
-        },
-      ],
-    },
-    editorialReview: {
-      ratingValue: 4.6,
-      bestRating: 5,
-      reviewBody: 'Zebra HC20 to pierwszy "dostępny cenowo" kolektor danych do służby zdrowia w segmencie entry-level (2 950 zł netto vs ~5 000 zł za poprzednika TC52-HC). Czerwony przycisk Code Blue, certyfikowana odporność na 30+ środków dezynfekujących i białe podświetlenie skanera SE4720 to cechy realnie ułatwiające pracę pielęgniarki — nieobecne w żadnym smartfonie konsumenckim. Minus: tylko 1 wariant w naszej ofercie (Wi-Fi-only, 6/64 GB) — placówki potrzebujące telemedycyny powinny rozważyć HC50/HC55, a oddziały terenowe HC25 z 5G. Mimo to: dla 90% workflow pielęgniarskiego (BCMA, EHR, komunikacja) HC20 jest optymalnym wyborem cena/funkcjonalność w 2026.',
-    },
+    comparison: HC2X_HC5X_COMPARISON,
     createdAt: '2026-05-12',
-    updatedAt: "2026-10-07",
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-hc25',
     slug: 'zebra-hc25',
     name: 'Zebra HC25',
-    seoTitle: "Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS",
-    seoDescription: "Zebra HC25 (WCMTB-H25B6BCJ1) — kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, eSIM, czerwonym przyciskiem alarmowym i obudową odporną na 30+ środków dezynfekujących. Dla opieki domowej, hospicjów, pielęgniarek środowiskowych.",
-    shortDescription: 'Zebra HC25 — kolektor danych do służby zdrowia 5G/LTE z GPS, dla opieki domowej i pielęgniarek środowiskowych',
-    description: `Dla kogo? Zebra HC25 to kolektor danych do służby zdrowia dla pracowników działających **poza siecią Wi-Fi szpitala** — pielęgniarek środowiskowych, opiekunów w domach pacjentów, hospicjów domowych, pogotowia ratunkowego i transportu medycznego. Łączność 5G FR1 + 4G LTE-A zapewnia stały dostęp do systemu EHR/HIS i komunikację z dyżurką niezależnie od tego, czy pracownik jest w szpitalu, mieszkaniu pacjenta czy karetce.
+    seoTitle: 'Zebra HC25 — terminal mobilny 5G dla służby zdrowia',
+    seoDescription: 'Zebra HC25: terminal 5G i Wi-Fi 6 dla opieki domowej, transportu pacjentów i pracy między budynkami, z nano SIM i eSIM, GNSS L1/L5 i przyciskiem alarmowym. Terminal 5G Zebra HC25, kolektor danych Zebra HC25 dla służby zdrowia, HC25 Zebra. PN: WCMTB-H25B6BCJ1-A6 (SE4720), WCMTB-H25B6DCJ1-A6 (bez skanera).',
+    shortDescription: 'Zebra HC25 — terminal 5G i Wi-Fi 6 dla służby zdrowia z nano SIM, eSIM i dwupasmowym GNSS; konfiguracja ze skanerem SE4720 lub bez skanera.',
+    description: `Zebra HC25 jest przeznaczony dla personelu, który nie pozostaje w jednym budynku: pracuje w szpitalu, dojeżdża na wizyty domowe albo przechodzi między obiektami placówki. Modem 5G stanowi zapasowe łącze, gdy sieć Wi-Fi jest poza zasięgiem. Terminal obsługuje także prywatne i hybrydowe sieci 5G, z których korzystają systemy współpracy klinicznej.
 
-HC25 to wariant 5G platformy [Zebra HC20](/produkt/zebra-hc20) — wszystkie cechy healthcare zachowane (czerwony przycisk Code Blue, obudowa odporna na dezynfekcję klasy medycznej, skaner SE4720 z białym podświetleniem, tłumienie szumów AI), plus moduł WAN z dual SIM (1 nano-SIM + 1 eSIM) i precyzyjną lokalizacją GPS. Pełna kompatybilność akcesoriów z całą serią HC2X/HC5X.
+Urządzenie przyjmuje kartę nano SIM i eSIM, a dwupasmowy odbiornik GNSS (L1 i L5) ustala położenie, na przykład podczas dojazdu do pacjenta. Rozmowy push-to-talk w Workcloud Communication PTT Pro działają przez Wi-Fi i sieć komórkową, a połączenia głosowe także w VoLTE.
 
-**Co dodaje HC25 vs HC20**:
+Sklep oferuje dwie konfiguracje z pamięcią 6 GB / 64 GB. WCMTB-H25B6BCJ1-A6 ma skaner SE4720 z białym oświetleniem i zielonym celownikiem. WCMTB-H25B6DCJ1-A6 nie ma skanera — kody okazjonalnie odczytuje tylny aparat 16 MP z dołączonym oprogramowaniem Zebra.
 
-- **5G FR1 (NSA/SA) + 4G LTE-A Gigabit** — szybkie połączenie z systemami szpitalnymi przez sieć komórkową. Pasma w Polsce: 5G n1/n3/n5/n7/n8/n20/n28/n38/n40/n78. Obsługa sieci prywatnych 5G (NSA, SA) — dla szpitali wdrażających własne 5G campus.
-- **Dual SIM (nano-SIM + eSIM)** — jedna karta operatora komórkowego dla pracy zewnętrznej, druga (eSIM) dla wewnętrznej sieci szpitalnej. Pracownik nie musi wymieniać kart przy przejściu między obiektami.
-- **GPS Dual-band L1+L5** — najwyższa dokładność lokalizacji w klasie urządzeń mobilnych. Obsługa GPS, GLONASS, Galileo, BeiDou, QZSS. Dwuzakresowy GNSS (L1+L5) działa nawet w miastach z odbiciami sygnału. Critical dla pogotowia, transportu pacjentów i pielęgniarek odwiedzających kilkanaście domów dziennie.
-- **VoLTE + VoIP SWB Audio** — połączenia głosowe wysokiej jakości przez sieć komórkową, bez konieczności wożenia osobnego telefonu służbowego.
-
-**Pozostałe wyróżniki healthcare (jak HC20)**:
-
-- **Czerwony przycisk alarmowy (Code Blue)** — programowalny, z funkcją wybierania numeru alarmowego. Dla pielęgniarki w domu pacjenta to ratunek gdy pacjent stracił przytomność lub doszło do agresji.
-- **Obudowa odporna na dezynfekcję** — tworzywa medyczne zatwierdzone do 30+ środków (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy).
-- **Skaner SE4720 z białym podświetleniem i zielonym celownikiem** — przyjazny dla pacjenta, dekoduje opaski Z-Band i etykiety leków w 0,3 s.
-- **Tylna kamera 16 MPx** — dokumentacja ran, stanu skóry, sprzętu medycznego u pacjenta. Wysoka jakość zdjęć dla telekonsultacji lekarz-pacjent.
-- **Tłumienie szumów AI** — algorytmy sieci neuronowej dla rozmów w karetce, mieszkaniu pacjenta lub na ulicy.
-- **Workcloud Communication (PTT/PBX)** — push-to-talk, telefon stacjonarny PBX, push-to-talk między pracownikami terenowymi — wszystko na jednym urządzeniu.
-
-Konstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H wytrzymuje upadki z wysokości 1,25 m, 500 wstrząsów z 0,5 m. Temperatura pracy -10°C do +50°C — pracownik wynoszący terminal z ciepłego mieszkania pacjenta na mróz zimą.
-
-Bateria standardowa 3 800 mAh / 14,63 Wh wystarcza na pełną zmianę roboczą (8–10 h pracy z 5G + skanowanie + rozmowy). Wymienna, kompatybilna z całą serią HC2X/HC5X. Hot-swap dostępny w modelu HC55 (z 8 GB / 128 GB RAM + aparat przedni 5 MPx do telekonsultacji).
-
-Pakiet Mobility DNA Professional w cenie (DataWedge, StageNow, Device Tracker, LifeGuard™ aktualizacje Android do v16). Pełna paleta Zebra DNA (Guardian, Identity Guardian, Workstation Connect) dostępna z licencją Enterprise.
-
-Typowe zastosowania: **opieka domowa** — pielęgniarka środowiskowa odwiedza 5–10 pacjentów dziennie, HC25 z GPS rejestruje trasy, czas wizyt, BCMA na miejscu, dokumentacja w EHR przez 5G/LTE. **Hospicja domowe** — opiekun ma stały kontakt z lekarzem dyżurującym przez VoLTE + PTT. **Transport pacjentów** — paramedyk skanuje opaski i etykiety leków w karetce, dostęp do EHR pacjenta przed dotarciem do szpitala. **POZ z wizytami u pacjenta** — recepta elektroniczna podpisywana w mieszkaniu pacjenta, transmisja do apteki przez 5G.
-
-Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje dokujące CRD-HC2L5L-BS1CO/2S1D1B/BS5CO, ładowarka SAC-HC2L5L-4SCHG, klipsy, paski na rękę i folie ochronne. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant Wi-Fi-only bez 5G: [Zebra HC20](/produkt/zebra-hc20). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmowy na tylnej ściance pozwala szybko wezwać pomoc. Pakiet Zebra DNA Professional jest w zestawie. Do Wi-Fi 6E i pracy z Workstation Connect potrzebna jest licencja Zebra DNA Enterprise.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html',
     manufacturerId: 'zebra',
-    priceFrom: 3673.81,
+    priceFrom: 3503.63,
     images: [
-      '/images/products/hc25_1.png',
-      '/images/products/hc25_2.png',
-      '/images/products/hc25_3.png',
-      '/images/products/hc25_4.png',
+      '/images/products/WCMTB-H25B6BCJ1-A6.png',
+      '/images/products/hc20_2.png',
     ],
     imageDescriptions: [
-      'Zebra HC25 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej, z modułem 5G/LTE i GPS',
-      'Zebra HC25 — widok z tyłu, kamera 16 MPx, skaner SE4720 i czerwony przycisk alarmowy',
-      'Zebra HC25 — widok pod kątem, obudowa odporna na dezynfekcję z anteną 5G/GNSS',
-      'Zebra HC25 — widok z boku, profil 12,5 mm z portem USB-C i tackami SIM (nano + eSIM)',
+      'Zebra HC25 — widok z przodu: ekran 6 cali, ikona sieci 5G na pasku stanu, niebieska obudowa Healthcare Blue',
+      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
     ],
     tags: ['healthcare'],
-    availability: "available",
+    availability: 'available',
     isNew: true,
     isBestseller: false,
+    variantAttributeTooltips: {
+      'Skaner': 'Sposób odczytu kodów kreskowych w HC25.\n\nSE4720 — wbudowany skaner 1D/2D z białym oświetleniem i zielonym celownikiem, do pracy z dużą liczbą skanów.\n\nAparat — wersja bez skanera; kody okazjonalnie odczytuje tylny aparat 16 MP z oprogramowaniem Zebra.',
+      'Łączność': 'Sieci, z którymi łączy się terminal.\n\n5G + Wi-Fi 6 — modem 5G/LTE z nano SIM i eSIM oraz Wi-Fi 6; Wi-Fi 6E po zakupie licencji Zebra DNA Enterprise.',
+    },
     specifications: [
-      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
-      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
-      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
-      { name: 'Pamięć', value: '6 GB RAM / 64 GB Flash + microSD do 2 TB' },
-      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
-      { name: 'Kamera', value: '16 MPx tył (dokumentacja ran, etykiety, telekonsultacja)' },
-      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna' },
-      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
-      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
-      { name: 'Łączność WAN', value: '5G FR1 (NSA/SA) + 4G LTE-A Gigabit, VoLTE, sieci prywatne 5G' },
-      { name: 'GPS / GNSS', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS, Dual-band L1+L5, a-GPS' },
-      { name: 'SIM', value: '1 nano-SIM + 1 eSIM (dual SIM)' },
-      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
-      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
-      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
-      { name: 'Waga', value: '239 g (8,4 oz)' },
-      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
-      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
-      { name: 'Klawiatura PTT/PBX', value: '2× przyciski programowalne (PTT lub regulacja głośności)' },
-      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
-      { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
-      { name: 'Wilgotność', value: '5–95% (bez kondensacji)' },
-      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
-      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+      { name: 'Wersja', value: 'Komputer mobilny dla ochrony zdrowia z modemem komórkowym, obudowa Healthcare Blue przygotowana do dezynfekcji' },
+      { name: 'System operacyjny', value: 'Android z usługami Google (GMS); obecnie Android 13, 14 lub 15, ostatnia obsługiwana wersja: Android 16' },
+      { name: 'Procesor', value: 'Qualcomm 5430, 6 rdzeni, 2,1 GHz' },
+      { name: 'Pamięć', value: '6 GB RAM, 64 GB UFS Flash; microSD do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0" Full HD+ (1080 × 2160), 450 nitów, podświetlenie LED, szkło Corning Gorilla Glass' },
+      { name: 'Panel dotykowy', value: 'Pojemnościowy, wielotrybowy; obsługa palcem lub w cienkich rękawiczkach' },
+      { name: 'Skaner (WCMTB-H25B6BCJ1-A6)', value: 'SE4720 1D/2D, białe oświetlenie, zielony celownik LED; okno ze szkła Corning Gorilla Glass' },
+      { name: 'Odczyt kodów (WCMTB-H25B6DCJ1-A6)', value: 'Bez skanera; okazjonalny odczyt kodów tylnym aparatem, oprogramowanie dekodujące w zestawie' },
+      { name: 'Aparat', value: 'Tylny 16 MP' },
+      { name: 'Przyciski', value: 'Dwa przyciski skanowania, przycisk programowalny (PTT lub inna funkcja), regulacja głośności' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony przycisk alarmowy (Red Duress Button) z funkcją wybierania numeru alarmowego' },
+      { name: 'Powiadomienia', value: 'Sygnał dźwiękowy, wielokolorowe diody LED, wibracje' },
+      { name: 'Audio', value: 'Mikrofony z tłumieniem szumów AI, dwa głośniki, tryb głośnomówiący stereo; zestawy słuchawkowe Bluetooth i PTT (Zebra USB-C); połączenia komórkowe, HD Voice, VoLTE EVS, VoIP z dźwiękiem SWB' },
+      { name: 'WWAN (Europa)', value: '5G FR1: n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78; 4G: B1/2/3/4/5/7/8/13/17/20/28/38/39/40/41/42/43/66/71; 3G: 1/2/4/5/8; 2G: 850/900/1800/1900' },
+      { name: 'Funkcje sieci komórkowej', value: '5G NR Sub-6 (NSA, SA), Gigabit LTE-A, agregacja pasm LTE/NR, VoLTE, Dual SIM / Dual Standby, sieci prywatne LTE i 5G' },
+      { name: 'SIM', value: '1 nano SIM i 1 eSIM' },
+      { name: 'GNSS', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS; dwa pasma jednocześnie (L1 i L5); a-GPS, XTRA' },
+      { name: 'WLAN', value: 'IEEE 802.11 a/b/g/n/ac/ax/d/h/i/r/k/v/w/mc, 2×2 MU-MIMO; Wi-Fi 6, Wi-Fi 6E po rozszerzeniu licencji do Zebra DNA Enterprise' },
+      { name: 'Bluetooth', value: '5.2, klasa 2, BLE beaconing' },
+      { name: 'NFC', value: 'ISO 14443 A i B, MIFARE, FeliCa, ISO 15693, tagi NFC Forum typu 2–5; emulacja karty (HCE), płatności zbliżeniowe' },
+      { name: 'Złącze', value: 'USB 3.1 typu C na dolnej krawędzi, SuperSpeed (host i klient); zaślepka portu USB-C' },
+      { name: 'Bateria', value: 'Wymienna, Li-Ion 3800 mAh / 14,63 Wh z BLE; PowerPrecision, szybkie ładowanie, ładowanie standardowym przewodem USB-C' },
+      { name: 'Czujniki', value: 'Światła, magnetometr, czujnik ruchu z żyroskopem, zbliżeniowy; czujnik ciśnienia w wybranych konfiguracjach' },
+      { name: 'Szczelność', value: 'IP68 i IP65 (z baterią)' },
+      { name: 'Upadki i przewroty', value: 'Wielokrotne upadki z 1,25 m na płytki na betonie od −10°C do 50°C (MIL-STD-810H); 500 przewrotów z 0,5 m' },
+      { name: 'Temperatura i wilgotność', value: 'Praca: od −10°C do 50°C; przechowywanie: od −40°C do 70°C; wilgotność 5–95% bez kondensacji' },
+      { name: 'Wymiary i masa', value: '165 × 76,3 × 12,5 mm; 239 g' },
+      { name: 'Czyszczenie', value: 'Tworzywa dla ochrony zdrowia; ponad 30 zatwierdzonych chusteczek i środków dezynfekcyjnych' },
+      { name: 'Komunikacja głosowa', value: 'Opcjonalnie Workcloud Communication: PTT Express (Wi-Fi), PTT Pro (Wi-Fi i sieć komórkowa), Enterprise Voice (telefon PBX)' },
+      { name: 'Oprogramowanie', value: 'Zebra DNA Professional w zestawie; pełny pakiet Zebra DNA wymaga licencji Zebra DNA Enterprise' },
+      { name: 'Gwarancja', value: '1 rok od daty wysyłki (gwarancja Zebra)' },
     ],
     variants: [
       {
         partNumber: 'WCMTB-H25B6BCJ1-A6',
-        name: 'HC25 SE4720, 6/64 GB, 3800 mAh, 5G/LTE + GPS, healthcare',
-        priceFrom: 3673.81,
-        availability: "available",
+        name: 'HC25 5G + Wi-Fi 6, SE4720, 6 GB / 64 GB, GMS',
+        priceFrom: 3683.88,
+        availability: 'available',
         attributes: {
           'Skaner': 'SE4720',
-          'Pamięć': '6 GB / 64 GB',
-          'Bateria': '3 800 mAh',
-          'Łączność': '5G + GPS',
+          'Łączność': '5G + Wi-Fi 6',
+        },
+      },
+      {
+        partNumber: 'WCMTB-H25B6DCJ1-A6',
+        name: 'HC25 5G + Wi-Fi 6, bez skanera, 6 GB / 64 GB, GMS',
+        priceFrom: 3503.63,
+        availability: 'available',
+        attributes: {
+          'Skaner': 'Aparat',
+          'Łączność': '5G + Wi-Fi 6',
         },
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC25?', answer: "Wariant z 8 GB RAM, aparatem przednim 5 MPx do telemedycyny i hot-swap baterii to HC55." },
-      { question: 'Czym różni się Zebra HC25 od HC20?', answer: "HC25 to wariant HC20 z dodatkowym modułem WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). HC20 ma tylko Wi-Fi — działa wewnątrz budynku szpitala. HC25 działa wszędzie tam gdzie jest zasięg sieci komórkowej — w mieszkaniach pacjentów, karetce, transporcie. Cechy healthcare (czerwony przycisk Code Blue, obudowa odporna na dezynfekcję, skaner SE4720 z białym podświetleniem, tłumienie szumów AI) są identyczne." },
-      { question: 'Kiedy wybrać HC25 zamiast HC20?', answer: 'HC25 jest niezbędny gdy pracownik medyczny działa poza siecią Wi-Fi szpitala: 1) pielęgniarki środowiskowe odwiedzające pacjentów w domach, 2) opiekunowie hospicjów domowych, 3) paramedycy w karetce, 4) personel transportu pacjentów, 5) lekarze POZ z wizytami domowymi, 6) pracownicy ambulansów stomatologicznych/mammograficznych. HC20 wystarczy dla personelu pracującego wewnątrz szpitala/przychodni z dostępem do Wi-Fi enterprise.' },
-      { question: 'Czy Zebra HC25 obsługuje eSIM?', answer: 'Tak, HC25 ma dual SIM: 1 fizyczny slot nano-SIM + 1 eSIM (zaprogramowany cyfrowo). Pozwala mieć dwóch operatorów jednocześnie — np. komercyjny operator dla pracy zewnętrznej i wewnętrzny eSIM dla prywatnej sieci 5G szpitala. eSIM ułatwia masowe wdrożenie floty — administrator IT programuje wszystkie urządzenia zdalnie bez konieczności fizycznego włożenia karty.' },
-      { question: 'Czy GPS w HC25 działa w polskich miastach?', answer: 'Tak. HC25 ma dwuzakresowy GNSS Dual-band L1+L5 — najwyższa dokładność lokalizacji w klasie mobile. Obsługuje GPS (US), GLONASS (RU), Galileo (EU), BeiDou (CN) i QZSS (JP) — wszystkie konstelacje używane w Europie. Dual-band L1+L5 eliminuje problem odbić sygnału w gęstej zabudowie miejskiej (Warszawa, Kraków, Wrocław) — dokładność lokalizacji ok. 1-3 m vs 5-10 m w GPS jednozakresowym. a-GPS przyspiesza pierwsze fix do kilku sekund.' },
-      { question: 'Czy HC25 obsługuje sieci prywatne 5G szpitala?', answer: 'Tak, HC25 obsługuje 5G FR1 w trybach NSA (Non-Standalone) i SA (Standalone). Większe szpitale w Polsce zaczynają wdrażać prywatne sieci 5G campus z dedykowanymi pasmami (n78 3,4-3,8 GHz) i krytyczną niezawodnością. HC25 łączy się z prywatną siecią szpitala wewnątrz budynku przez eSIM, a poza budynkiem przełącza się automatycznie na publicznego operatora przez fizyczną kartę nano-SIM.' },
-      { question: 'Czy HC25 zastępuje telefon służbowy?', answer: 'Tak. HC25 z VoLTE + VoIP SWB Audio + Workcloud Communication PBX/PTT zastępuje smartfon, pager i radioterminal. Pracownik ma jedno urządzenie do: dzwonienia (sieć komórkowa lub VoIP), push-to-talk z dyżurką, dostępu do EHR/HIS, skanowania opasek i etykiet. Eliminuje 2-3 osobne urządzenia w kieszeni fartucha — i ich koszty oraz problem ładowania.' },
-      { question: 'Jaki jest skaner w HC25 i czy czyta opaski pacjentów?', answer: 'HC25 ma skaner SE4720 — 1D/2D z białym podświetleniem LED i zielonym celownikiem. Czyta opaski Z-Band z [Zebra ZD510-HC](/produkt/zebra-zd510-hc), etykiety leków (Data Matrix, GS1 DataBar), kody UDI sprzętu medycznego. Czas dekodowania 0,3 s — także zniszczone lub mokre opaski po kilku dniach na nadgarstku pacjenta. Białe podświetlenie zamiast czerwonego lasera (smartfony) jest przyjazne dla oczu pacjentów leżących.' },
-      { question: 'Czy HC25 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek i środków dezynfekujących (alkohole izopropylowe i etylowe, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide" na zebra.com.' },
-      { question: 'Jakie akcesoria są kompatybilne z Zebra HC25?', answer: 'HC25 dzieli pełen zestaw akcesoriów z HC20/HC50/HC55: bateria [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), stacje dokujące [1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50). Wszystkie z obudową medyczną.' },
-      { question: 'Czy Zebra HC25 wymaga kontraktu OneCare?', answer: 'Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom — naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni). Dla HC25 polecamy Zebra OneCare Special Value (SV) — najtańszy plan obejmujący naprawy uszkodzeń mechanicznych (upuszczenia w karetce, zalanie środkami dezynfekcyjnymi) i wsparcie techniczne. Kluczowe dla pracowników terenowych — bez kontraktu utrata terminala oznacza tygodnie przestoju w opiece domowej.' },
-      { question: 'Gdzie serwisować Zebra HC25 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC25, w tym modułu 5G/LTE, anteny GPS, ekranów, skanerów SE4720, baterii i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa. Nieautoryzowany serwis unieważnia certyfikat odporności na dezynfekcję — krytyczne dla audytów CDC/JCI.' },
+      { question: 'Czym różnią się dwie konfiguracje Zebra HC25?', answer: 'Tylko sposobem odczytu kodów. WCMTB-H25B6BCJ1-A6 ma wbudowany skaner SE4720, przydatny przy częstym skanowaniu opasek i leków. WCMTB-H25B6DCJ1-A6 jest bez skanera i dekoduje kody tylnym aparatem 16 MP, z oprogramowaniem dołączonym przez Zebrę. Pozostałe parametry, w tym 5G, 6 GB / 64 GB i bateria 3800 mAh, są takie same.' },
+      { question: 'Jakie pasma 5G i LTE obsługuje HC25 w Europie?', answer: 'Wersja na rynki poza Ameryką Północną i Chinami obsługuje 5G FR1 w pasmach n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78 oraz LTE w pasmach od B1 do B71, w tym B20 i B28. Modem pracuje w trybach 5G NSA i SA, z Gigabit LTE-A i agregacją pasm.' },
+      { question: 'Czy HC25 współpracuje z prywatną siecią 5G?', answer: 'Tak. Modem HC25 obsługuje prywatne sieci LTE i 5G, a także sieci hybrydowe łączące infrastrukturę placówki z siecią operatora. Do jednoczesnego korzystania z dwóch profili służą karta nano SIM i eSIM w trybie Dual SIM / Dual Standby.' },
+      { question: 'Czy Zebra HC25 może działać jako stacja robocza z monitorem?', answer: 'Tak, ale w HC25 tryb Workstation Connect wymaga licencji Zebra DNA Enterprise. Stacja CRD-TC2L-1SNWS-01 ma wyjście HDMI, port Ethernet, cztery gniazda USB-A i gniazdo słuchawkowe 3,5 mm. Zasilacz, przewód DC i przewód sieciowy do stacji są sprzedawane osobno.' },
+      { question: 'Jak noszić HC25 podczas wizyt domowych?', answer: 'Zebra oferuje dla rodziny HC2X/HC5X obrotowy klips SG-HC2L5L-CLIP-01, który mocuje terminal do odzieży, oraz pasek na rękę SG-HC2L5L-HSTRP-01. Obie części mają niebieską obudowę przygotowaną do dezynfekcji. Klipsa nie można używać razem z paskiem.' },
+      { question: 'Jakie są alternatywy dla Zebra HC25?', answer: '[Zebra HC55](/produkt/zebra-hc55) łączy 5G z Wi-Fi 6E, przednim aparatem 5 MP i wymianą baterii bez wyłączania. Do pracy tylko w budynku wystarcza [Zebra HC20](/produkt/zebra-hc20). Terminale innych marek z 5G dla ochrony zdrowia to [Datalogic Memor 17 HC](/produkt/datalogic-memor-17-hc) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
     ],
     applications: [
-      'Opieka domowa — pielęgniarki środowiskowe',
-      'Hospicja domowe — opiekunowie z PTT',
-      'Transport pacjentów i karetki',
-      'POZ z wizytami u pacjenta',
-      'Pogotowie ratunkowe',
-      'BCMA w mieszkaniu pacjenta',
-      'EHR/EPR przez 5G/LTE poza szpitalem',
-      'Telekonsultacja lekarz-pacjent',
-      'Recepta elektroniczna z lokalizacji terenowej',
-      'Rejestracja tras i czasów wizyt domowych (GPS)',
+      'Opieka domowa i wizyty u pacjentów',
+      'Praca między budynkami placówki',
+      'Transport pacjentów',
+      'Dostęp do dokumentacji pacjenta przez 5G',
+      'Opieka hospicyjna i paliatywna',
+      'Komunikacja zespołu: PTT przez Wi-Fi i sieć komórkową',
     ],
     compatibleAccessories: [],
     relatedAccessories: [
@@ -28357,196 +28278,119 @@ Wszystkie akcesoria HC25 są tożsame z HC20: baterie BTRY-HC2L5L-2XMAXB, stacje
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
-      'zebra-screen-protector-tc2-hc2',
+      'zebra-tc201-crd-tc2l-1snws-01',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-brkt-scrd-smrk-01',
     ],
+    relatedProducts: ['zebra-hc55', 'zebra-hc20', 'datalogic-memor-17-hc', 'cipherlab-rs38h'],
     downloads: [
-      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
-      { name: 'Strona produktu Zebra HC25 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (PL)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-pl.pdf', size: '494 KB' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (EN)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-en.pdf', size: '439 KB' },
+      { name: 'Czyszczenie i dezynfekcja terminali Zebra dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '873 KB' },
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
     ],
-    servicePlans: [
-      { name: 'Zebra OneCare Special Value — 3 lata', partNumber: 'Z1AS-HC25XX-3C00', duration: '3 lata', priceNetto: 1050 },
-      { name: 'Zebra OneCare Special Value — 5 lat', partNumber: 'Z1AS-HC25XX-5C00', duration: '5 lat', priceNetto: 1750 },
-    ],
-    comparison: {
-      title: 'Porównanie: Zebra HC25 vs HC20 vs HC55',
-      models: [
-        {
-          name: 'Zebra HC25',
-          specs: {
-            'Przeznaczenie': 'Opieka terenowa (5G + GPS)',
-            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
-            'SIM': '1 nano-SIM + 1 eSIM',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': 'Brak',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Nie',
-            'RAM / Flash': '6/64 GB',
-            'Cena od': '3 350 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC20',
-          specs: {
-            'Przeznaczenie': 'Wewnątrz szpitala (Wi-Fi only)',
-            'Łączność': 'Wi-Fi 6/6E',
-            'SIM': 'Brak',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': 'Brak',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Nie',
-            'RAM / Flash': '6/64 GB',
-            'Cena od': '2 950 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC55',
-          specs: {
-            'Przeznaczenie': 'Premium 5G + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
-            'SIM': '1 nano-SIM + 1 eSIM',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Tak (do 60 s)',
-            'RAM / Flash': '8/128 GB',
-            'Cena od': 'Wycena indywidualna',
-          },
-        },
-      ],
-    },
-    editorialReview: {
-      ratingValue: 4.7,
-      bestRating: 5,
-      reviewBody: 'Zebra HC25 to najsensowniejszy kolektor danych do służby zdrowia dla wszystkich, którzy pracują POZA siecią Wi-Fi szpitala — pielęgniarki środowiskowe, hospicja domowe, paramedycy, transport medyczny. Premium ok. 400 zł vs HC20 daje moduł 5G + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — funkcjonalność której nie sklonujesz hotspotem z prywatnego smartfona. Jakość GPS w polskich miastach jest praktycznie radarowa (1-3 m precyzji). Dla pielęgniarki odwiedzającej 8-10 pacjentów dziennie GPS + auto-logowanie wizyt może oszczędzić 30-60 min administracji dziennie. Minus: brak aparatu przedniego do telekonsultacji — to różnica vs HC55. Dla 80% scenariuszy opieki terenowej HC25 wystarczy.',
-    },
+    comparison: HC2X_HC5X_COMPARISON,
     createdAt: '2026-05-13',
-    updatedAt: "2026-10-07",
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-hc50',
     slug: 'zebra-hc50',
     name: 'Zebra HC50',
-    seoTitle: "Zebra HC50 — kolektor danych do służby zdrowia premium, telemedycyna",
-    seoDescription: "Zebra HC50 (WLMT0-H50D8BBK1) — premium kolektor danych do służby zdrowia z aparatem przednim 5 MPx do telemedycyny, hot-swap baterii (wymiana w 30 s), 8 GB RAM / 128 GB Flash, czerwonym przyciskiem alarmowym. Wi-Fi 6E, IP68, Android do 16.",
-    shortDescription: 'Zebra HC50 — premium kolektor danych do służby zdrowia, aparat przedni 5 MPx, hot-swap baterii, telemedycyna',
-    description: `Dla kogo? Zebra HC50 to premium kolektor danych do służby zdrowia dla placówek wymagających **telemedycyny** i **nieprzerwanego workflow klinicznego** — szpitali wojewódzkich, klinik uniwersyteckich, intensywnej terapii, izolatek zakaźnych i oddziałów onkologicznych. Aparat przedni 5 MPx umożliwia konsultacje wideo lekarz-pacjent przy łóżku, a technologia hot-swap baterii eliminuje przerwy w pracy podczas wymiany akumulatora.
+    seoTitle: 'Zebra HC50 — terminal Wi-Fi 6E dla służby zdrowia',
+    seoDescription: 'Zebra HC50: terminal Wi-Fi 6E dla personelu szpitala z przednim aparatem 5 MP do telekonsultacji, pamięcią 8 GB / 128 GB, skanerem SE4720 i wymianą baterii bez wyłączania. Terminal mobilny Zebra HC50, komputer mobilny dla służby zdrowia Zebra HC50, HC50 Zebra. PN: WLMT0-H50D8BBK1-A6.',
+    shortDescription: 'Zebra HC50 — terminal Wi-Fi 6E dla służby zdrowia z przednim aparatem 5 MP do telemedycyny, pamięcią 8 GB / 128 GB i wymianą baterii bez wyłączania.',
+    description: `Zebra HC50 to komputer mobilny dla szpitali i przychodni, w których personel pracuje w zasięgu sieci Wi-Fi 6E. Przedni aparat 5 MP umożliwia wideokonsultacje telemedyczne z lekarzami, farmaceutami i innymi członkami zespołu opieki. Tylny aparat 16 MP służy na przykład do dokumentowania stanu rany.
 
-HC50 to premium wariant Wi-Fi-only platformy HC2X/HC5X — wszystkie cechy healthcare zachowane z [HC20](/produkt/zebra-hc20) (czerwony przycisk Code Blue, obudowa odporna na 30+ środków dezynfekujących, skaner SE4720 z białym podświetleniem, tłumienie szumów AI), plus 4 kluczowe wzmocnienia premium.
+Najważniejszą cechą zasilania jest wymiana baterii bez wyłączania (true hot swap). Przez maksymalnie 60 s terminal działa bez baterii, więc połączenia, powiadomienia i dane aplikacji zostają zachowane. Technologia PowerPrecision pokazuje stan ogniw i ułatwia wycofanie baterii, które nie przyjmują już pełnego ładowania.
 
-**Co dodaje HC50 vs HC20**:
+Pamięć operacyjna 8 GB i flash 128 GB obsługują aplikacje z rozbudowaną grafiką: zdalny podgląd parametrów życiowych pacjenta, badania obrazowe albo schematy urządzeń dla działu technicznego. Skaner SE4720 odczytuje między innymi kody UDI, co pozwala przed użyciem sprawdzić, czy sprzęt nie został wycofany.
 
-- **Aparat przedni 5 MPx** — telekonsultacje wideo z pacjentem, telekonsylia lekarz–lekarz (np. internista konsultujący z neurochirurgiem oddalonym o 200 km), zdjęcia twarzy/oczu/skóry w trybie selfie do dokumentacji medycznej. To unikatowa funkcja — w HC20/HC25 jej brak ze względu na cenę entry-level.
-- **8 GB RAM / 128 GB Flash** (vs 6 GB / 64 GB w HC20) — dwukrotny zasób na aplikacje graficzne wymagające pamięci: wyniki badań obrazowych (RTG, USG, TK, MR), aplikacje patomorfologii cyfrowej, EKG mobile, integracja z DICOM viewer. Bez "lagowania" przy oglądaniu zdjęć radiologicznych przy łóżku pacjenta.
-- **Hot-swap baterii (do 60 s buforowania)** — wymiana baterii zajmuje 30 sekund, terminal nie wyłącza się dzięki kondensatorom podtrzymującym pamięć RAM. Pielęgniarka w trakcie 12-godzinnej zmiany wymienia baterię między obchodami i nie traci ani sesji EHR, ani aktywnego połączenia VoIP. W HC20/HC25 wymiana baterii wymaga restartu.
-- **Czujnik ciśnienia (opcja w wybranych SKU)** — wbudowany barometr/altimetr dla zaawansowanych aplikacji medycznych (monitoring oddechowy, śledzenie wysokości w transporcie helikopterem HEMS).
-
-**Pozostałe wyróżniki healthcare (identyczne z HC20)**:
-
-- Czerwony przycisk alarmowy (Code Blue) z programowalną funkcją
-- Obudowa z tworzyw klasy medycznej odporna na 30+ chusteczek dezynfekujących
-- Skaner SE4720 1D/2D z białym podświetleniem LED + zielony celownik (czas dekodowania 0,3 s)
-- Tylna kamera 16 MPx
-- Tłumienie szumów AI dla rozmów PTT/VoIP
-- Workcloud Communication PBX/PTT/Enterprise Voice
-- Obsługa ekranu w cienkich rękawiczkach medycznych
-- IP68/IP65, MIL-STD-810H, upadki z 1,25 m, tumble 500×0,5 m
-
-Łączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z trójzakresowym modułem (2,4 / 5 / 6 GHz). Bluetooth 5.2 z BLE Beaconing. NFC ISO 14443. **Bez 5G/LTE** — wariant z 5G + GPS to [Zebra HC55](/produkt/zebra-hc55).
-
-Pakiet Mobility DNA Professional w cenie (DataWedge, StageNow, Device Tracker, LifeGuard™ aktualizacje Android do v16). Pełna paleta Zebra DNA z licencją Enterprise.
-
-Typowe zastosowania: **telekonsultacje przy łóżku pacjenta** — internista wzywa neurologa do udaru, ortopedy do urazu, anestezjologa do trudnego znieczulenia. **Radiologia mobilna** — radiolog ogląda zdjęcia RTG/USG/TK na HC50 przy łóżku pacjenta zamiast wracać do gabinetu. **Telemedycyna oddziałowa** — lekarz dyżurujący konsultuje pacjentów na innych oddziałach bez fizycznego przemieszczania się. **OIOM/SOR** — szybkie sceny medyczne wymagające stabilnego workflow bez przerw na wymianę baterii.
-
-Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące (1-slot, 2-slot ShareCradle, 5-slot), ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant z 5G + GPS dla telekonsultacji w karetce: [Zebra HC55](/produkt/zebra-hc55). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkowej opłaty, dlatego tryb Workstation Connect nie wymaga dokupowania licencji. Obudowa z tworzyw dla ochrony zdrowia jest przygotowana do dezynfekcji, a na tylnej ściance znajduje się czerwony przycisk alarmowy.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html',
     manufacturerId: 'zebra',
-    priceFrom: 5676.03,
+    priceFrom: 5691.59,
     images: [
-      '/images/products/hc50_1.png',
-      '/images/products/hc50_2.png',
-      '/images/products/hc50_3.png',
-      '/images/products/hc50_4.png',
+      '/images/products/WLMT0-H50D8BBK1-A6.png',
+      '/images/products/WLMT0-H50D8BBK1-A6-2.png',
+      '/images/products/hc20_2.png',
     ],
     imageDescriptions: [
-      'Zebra HC50 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej, aparat przedni 5 MPx do telemedycyny',
-      'Zebra HC50 — widok z tyłu, kamera 16 MPx, skaner SE4720 i czerwony przycisk alarmowy',
-      'Zebra HC50 — widok pod kątem, premium obudowa odporna na dezynfekcję, hot-swap baterii',
-      'Zebra HC50 — widok z boku, profil 12,5 mm z portem USB-C i tackami baterii hot-swap',
+      'Zebra HC50 — przód pod kątem z prawą krawędzią: przedni aparat 5 MP nad ekranem, ikona Wi-Fi 6E na pasku stanu',
+      'Zebra HC50 — przód pod kątem z lewą krawędzią i przyciskami bocznymi, przedni aparat 5 MP',
+      'Zebra HC50 — tył obudowy: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
     ],
     tags: ['healthcare'],
-    availability: "available",
+    availability: 'available',
     isNew: true,
     isBestseller: false,
+    variantAttributeTooltips: {
+      'Skaner': 'Wbudowany czytnik kodów 1D i 2D.\n\nSE4720 — białe oświetlenie i zielony celownik LED; odczyt kodów na opaskach, lekach i kodów UDI na sprzęcie.',
+      'Łączność': 'Sieć bezprzewodowa terminala.\n\nWi-Fi 6E — trzy pasma: 2,4, 5 i 6 GHz, praca w sieci placówki. Bez modemu komórkowego.',
+    },
     specifications: [
-      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
-      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
-      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
-      { name: 'Pamięć', value: '8 GB RAM / 128 GB Flash + microSD do 2 TB' },
-      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
-      { name: 'Kamera tylna', value: '16 MPx (dokumentacja ran, etykiety, sprzęt medyczny)' },
-      { name: 'Kamera przednia', value: '5 MPx (telekonsultacje wideo, telekonsylia)' },
-      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna z hot-swap (do 60 s buforowania)' },
-      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
-      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
-      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
-      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
-      { name: 'WAN', value: 'Brak (Wi-Fi only — wariant z 5G to HC55)' },
-      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
-      { name: 'Waga', value: '242 g (8,5 oz)' },
-      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
-      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
-      { name: 'Hot-swap baterii', value: 'Tak — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM' },
-      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
-      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
-      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+      { name: 'Wersja', value: 'Komputer mobilny dla ochrony zdrowia, obudowa Healthcare Blue przygotowana do dezynfekcji' },
+      { name: 'System operacyjny', value: 'Android z usługami Google (GMS); obecnie Android 13, 14 lub 15, ostatnia obsługiwana wersja: Android 16' },
+      { name: 'Procesor', value: 'Qualcomm 5430, 6 rdzeni, 2,1 GHz' },
+      { name: 'Pamięć', value: '8 GB RAM, 128 GB UFS Flash; microSD do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0" Full HD+ (1080 × 2160), 450 nitów, podświetlenie LED, szkło Corning Gorilla Glass' },
+      { name: 'Panel dotykowy', value: 'Pojemnościowy, wielotrybowy; obsługa palcem lub w cienkich rękawiczkach' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe oświetlenie, zielony celownik LED; okno ze szkła Corning Gorilla Glass' },
+      { name: 'Aparaty', value: 'Tylny 16 MP, przedni 5 MP' },
+      { name: 'Przyciski', value: 'Dwa przyciski skanowania, przycisk programowalny (PTT lub inna funkcja), regulacja głośności' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony przycisk alarmowy (Red Duress Button) z funkcją wybierania numeru alarmowego' },
+      { name: 'Powiadomienia', value: 'Sygnał dźwiękowy, wielokolorowe diody LED, wibracje' },
+      { name: 'Audio', value: 'Mikrofony z tłumieniem szumów AI i nagrywaniem stereo, dwa głośniki, tryb głośnomówiący stereo; zestawy słuchawkowe Bluetooth i PTT (Zebra USB-C); HD Voice, VoIP z dźwiękiem SWB' },
+      { name: 'WLAN', value: 'IEEE 802.11 a/b/g/n/ac/ax/d/h/i/r/k/v/w/mc, 2×2 MU-MIMO; Wi-Fi 6E, pasma 2,4 / 5 / 6 GHz; do 2402 Mb/s w pasmach 5 i 6 GHz' },
+      { name: 'Zabezpieczenia WLAN', value: 'WPA3 Enterprise (także tryb 192-bit), WPA3 Personal, WPA/WPA2, Enhanced Open (OWE); szybki roaming 802.11r, PMK Caching, Cisco CCKM, OKC' },
+      { name: 'Bluetooth', value: '5.2, klasa 2, BLE beaconing' },
+      { name: 'NFC', value: 'ISO 14443 A i B, MIFARE, FeliCa, ISO 15693, tagi NFC Forum typu 2–5; emulacja karty (HCE), płatności zbliżeniowe' },
+      { name: 'Złącze', value: 'USB 3.1 typu C na dolnej krawędzi, SuperSpeed (host i klient); zaślepka portu USB-C' },
+      { name: 'Bateria', value: 'Wymienna, Li-Ion 3800 mAh / 14,63 Wh z BLE; true hot swap — do 60 s pracy bez baterii; PowerPrecision, szybkie ładowanie, ładowanie standardowym przewodem USB-C' },
+      { name: 'Czujniki', value: 'Światła, magnetometr, czujnik ruchu z żyroskopem, zbliżeniowy; czujnik ciśnienia w wybranych konfiguracjach' },
+      { name: 'Szczelność', value: 'IP68 i IP65 (z baterią)' },
+      { name: 'Upadki', value: 'Wielokrotne upadki z 1,25 m na płytki na betonie w zakresie od −10°C do 50°C (MIL-STD-810H)' },
+      { name: 'Przewroty', value: '500 przewrotów z 0,5 m' },
+      { name: 'ESD', value: '±15 kV w powietrzu, ±8 kV bezpośrednio i pośrednio' },
+      { name: 'Temperatura i wilgotność', value: 'Praca: od −10°C do 50°C; przechowywanie: od −40°C do 70°C; wilgotność 5–95% bez kondensacji' },
+      { name: 'Wymiary i masa', value: '165 × 76,3 × 12,5 mm; 242 g' },
+      { name: 'Czyszczenie', value: 'Tworzywa dla ochrony zdrowia; ponad 30 zatwierdzonych chusteczek i środków dezynfekcyjnych' },
+      { name: 'Komunikacja głosowa', value: 'Opcjonalnie Workcloud Communication: PTT Express (Wi-Fi), PTT Pro, Enterprise Voice (telefon PBX)' },
+      { name: 'Oprogramowanie', value: 'Zebra DNA Enterprise zainstalowany fabrycznie i licencjonowany bez dodatkowej opłaty' },
+      { name: 'Zgodność środowiskowa', value: 'RoHS 2011/65/EU z poprawką 2015/863; REACH SVHC 1907/2006' },
+      { name: 'Gwarancja', value: '1 rok od daty wysyłki (gwarancja Zebra)' },
     ],
     variants: [
       {
         partNumber: 'WLMT0-H50D8BBK1-A6',
-        name: 'HC50 SE4720, 8/128 GB, hot-swap, aparat przedni, healthcare',
-        priceFrom: 5676.03,
-        availability: "available",
+        name: 'HC50 Wi-Fi 6E, SE4720, 8 GB / 128 GB, aparat przedni 5 MP, GMS',
+        priceFrom: 5691.59,
+        availability: 'available',
         attributes: {
           'Skaner': 'SE4720',
-          'Pamięć': '8 GB / 128 GB',
-          'Bateria': '3 800 mAh hot-swap',
-          'Aparat przedni': '5 MPx',
+          'Łączność': 'Wi-Fi 6E',
         },
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC50?', answer: "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę." },
-      { question: 'Czym różni się Zebra HC50 od HC20?', answer: "HC50 dodaje 4 kluczowe premium-features vs HC20: 1) Aparat przedni 5 MPx do telemedycyny (telekonsultacje wideo lekarz-pacjent), 2) 8 GB RAM / 128 GB Flash zamiast 6/64 GB (dwukrotny zasób na aplikacje graficzne — RTG, USG, DICOM viewer), 3) Hot-swap baterii — wymiana w 30 s bez wyłączania urządzenia (HC20 wymaga restartu), 4) Czujnik ciśnienia (opcja w wybranych SKU) dla aplikacji medycznych. Pozostałe cechy healthcare identyczne (Code Blue, dezynfekcja, SE4720)." },
-      { question: 'Co to jest telemedycyna w HC50?', answer: 'Aparat przedni 5 MPx w HC50 umożliwia konsultacje wideo lekarz-pacjent przy łóżku oraz telekonsylia lekarz-lekarz przez sieć szpitala. Praktyczne scenariusze: 1) internista konsultuje udar mózgu z neurologiem oddalonym o 200 km, 2) anestezjolog ocenia pacjenta przed zabiegiem zdalnie, 3) lekarz dyżurujący konsultuje pacjenta na izolatce bez wchodzenia (oszczędność PPE), 4) telemedycyna domowa — opieka paliatywna w domu pacjenta. Aplikacje: Microsoft Teams Healthcare, BlueJeans Telehealth, polski TeleMedi, dedykowane systemy szpitali (np. e-konsultanci NFZ).' },
-      { question: 'Czym jest hot-swap baterii w HC50?', answer: 'Hot-swap to wymiana baterii w trakcie pracy urządzenia, bez konieczności wyłączania. W HC50 czas buforowania wynosi do 60 sekund — kondensatory podtrzymują pamięć RAM i aktywne aplikacje. Pielęgniarka w trakcie 12-godzinnej zmiany wymienia baterię między obchodami: zdejmuje rozładowaną → wkłada naładowaną w ciągu 30 s → terminal nie restartował się, sesja EHR jest aktywna, połączenie VoIP nie zostało rozłączone. Krytyczne dla intensywnej pracy klinicznej. W HC20/HC25 brak hot-swap — bateria wymaga wyłączenia urządzenia (przerwa 1-2 min).' },
-      { question: 'Czy HC50 obsługuje aplikacje DICOM (RTG, USG, TK)?', answer: 'Tak. 8 GB RAM w HC50 (vs 6 GB w HC20) zapewnia płynne działanie aplikacji DICOM viewer dostępnych na Android: m.in. RadiAnt DICOM Viewer, DroidRender, mRay, polskie wdrożenia (PixelMed, Synapse Mobility). Lekarz przy łóżku pacjenta otwiera zdjęcie RTG/USG/TK z szpitalnego PACS przez Wi-Fi 6E (do 2,4 Gbps), powiększa, analizuje. 128 GB Flash mieści offline lokalną kopię obrazów badań kluczowych pacjentów oddziału.' },
-      { question: 'Czym różni się HC50 od HC55?', answer: "HC50 jest tylko Wi-Fi — działa wewnątrz budynku szpitala. HC55 dodaje moduł 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) — działa wszędzie tam gdzie jest zasięg komórkowy. Pozostałe cechy są identyczne (aparat przedni 5 MPx, 8/128 GB, hot-swap, Code Blue). HC55 wybierz dla lekarzy karetek S/P (telekonsultacja z neurologiem podczas transportu udaru), specjalistów zespołów wyjazdowych telemedycznych, lekarzy POZ z wizytami domowymi." },
-      { question: 'Jakie placówki w Polsce używają HC50 do telemedycyny?', answer: 'HC50 trafia do Polski w drugiej połowie 2026 wraz z premierą całej linii HC2X/HC5X (poprzednia generacja TC52-HC i TC57-HC od 2019). Wczesni adopterzy w UE: niemiecka Charité Berlin (telemedycyna onkologiczna), austriacka Wiener KAV (telekonsultacje SOR), hiszpańska Hospital Vall d\'Hebron (telerehabilitacja). Polskie placówki testujące HC50: Uniwersyteckie Centrum Kliniczne w Gdańsku, Centrum Onkologii w Warszawie, Mazowiecki Szpital Specjalistyczny w Radomiu.' },
-      { question: 'Czy HC50 ma czujnik ciśnienia atmosferycznego?', answer: 'W wybranych SKU HC50 dostępny jest barometr/altimetr (czujnik ciśnienia). Praktyczne zastosowania medyczne: 1) monitoring oddechowy w aplikacjach klinicznych przy współpracy z czujnikami zewnętrznymi, 2) lokalizacja piętra w wielokondygnacyjnych szpitalach (z GPS w HC55), 3) zapis wysokości w transporcie helikopterem HEMS (zespoły ratunkowe wojewódzkich szpitali). Standardowo czujnik wbudowany w warianty pro/premium — sprawdź konkretny PN przed zakupem.' },
-      { question: 'Czy HC50 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole izopropylowe i etylowe, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala.' },
-      { question: 'Jakie akcesoria są kompatybilne z HC50?', answer: 'HC50 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC55): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50).' },
-      { question: 'Czy HC50 wymaga kontraktu OneCare?', answer: "Rekomendowany. Zebra nie udostępnia części zamiennych zewnętrznym serwisom — naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni). Albo OneCare Select z advance exchange (urządzenie zastępcze następnego dnia roboczego) — krytyczne gdy HC50 jest używany przez lekarzy dyżurujących i nie może być wyłączony z floty." },
-      { question: 'Gdzie serwisować Zebra HC50 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC50, w tym aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare — naprawa priorytetowa.' },
+      { question: 'Do czego służy przedni aparat w Zebra HC50?', answer: 'Przedni aparat 5 MP obsługuje wideopołączenia, dzięki którym personel konsultuje się zdalnie z lekarzem lub farmaceutą. Do zdjęć dokumentacyjnych służy tylny aparat 16 MP.' },
+      { question: 'Jak działa wymiana baterii bez wyłączania w HC50?', answer: 'Po wyjęciu baterii HC50 zachowuje pełne działanie przez maksymalnie 60 s. W tym czasie wkłada się naładowaną baterię BTRY-HC2L5L-2XMAXB i praca trwa dalej bez restartu, utraty połączeń i danych. Zapasowe baterie ładują ładowarka SAC-HC2L5L-4SCHG lub stacja CRD-HC2L5L-2S1D1B.' },
+      { question: 'Czy HC50 wymaga licencji Zebra DNA Enterprise?', answer: 'Nie. W HC50 pakiet Zebra DNA Enterprise jest zainstalowany i licencjonowany fabrycznie, bez dopłaty. Obejmuje to także tryb Workstation Connect ze stacją CRD-TC2L-1SNWS-01, która łączy terminal z monitorem, klawiaturą, myszą i drukarką.' },
+      { question: 'Czy Zebra HC50 odczytuje kody UDI?', answer: 'Tak. Skaner SE4720 odczytuje kody UDI bez dodatkowej konfiguracji. Personel może przed użyciem sprawdzić, czy sprzęt nie podlega wycofaniu, rozliczyć zużyte pozycje i aktualizować stany magazynowe.' },
+      { question: 'Jak czyścić Zebra HC50 i stacje ładujące?', answer: 'HC50 przed czyszczeniem odłącza się od zasilania i zamyka port USB-C zaślepką. Można użyć zatwierdzonych chusteczek lub ściereczki zwilżonej środkiem; preparatów z wybielaczem nie stosuje się na stacjach. Po czyszczeniu dopuszczalna jest dezynfekcja promieniami UV-C, która z czasem może przebarwić jasne tworzywa.' },
+      { question: 'Jakie kontrakty serwisowe są dostępne dla HC50?', answer: 'Terminal ma roczną gwarancję Zebra od daty wysyłki. Na karcie można dodać kontrakt Zebra OneCare Essential na 3 lub 5 lat.' },
+      { question: 'Jakie są alternatywy dla Zebra HC50?', answer: '[Zebra HC55](/produkt/zebra-hc55) ma te same funkcje i dodatkowo modem 5G. [Zebra HC20](/produkt/zebra-hc20) ma mniej pamięci (6 GB operacyjnej, 64 GB masowej), Wi-Fi 6 i nie ma przedniego aparatu. Z innych marek: [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) z Wi-Fi 6E i [Datalogic Memor 12 HC](/produkt/datalogic-memor-12-hc).' },
     ],
     applications: [
-      'Telekonsultacje wideo lekarz-pacjent przy łóżku',
-      'Telekonsylia lekarz-lekarz między oddziałami i szpitalami',
-      'Radiologia mobilna — RTG/USG/TK przy łóżku',
-      'OIOM/SOR — workflow bez przerw (hot-swap baterii)',
-      'Onkologia — telekonsultacje z onkologiem z 200 km',
-      'Izolatki zakaźne — konsultacja bez wchodzenia (oszczędność PPE)',
-      'BCMA przy intensywnej pracy klinicznej',
-      'EHR/EPR z aplikacjami graficznymi',
-      'DICOM viewer offline na 128 GB Flash',
-      'Telemedycyna oddziałowa',
+      'Konsultacje telemedyczne przez przedni aparat 5 MP',
+      'Identyfikacja pacjenta i podawanie leków przy łóżku',
+      'Rejestracja kodów UDI sprzętu',
+      'Podgląd parametrów życiowych i badań obrazowych',
+      'Dokumentowanie stanu ran',
+      'Praca jako stacja robocza z Workstation Connect',
     ],
     compatibleAccessories: [],
     relatedAccessories: [
@@ -28557,203 +28401,120 @@ Wszystkie akcesoria HC50 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
-      'zebra-screen-protector-tc2-hc2',
+      'zebra-tc201-crd-tc2l-1snws-01',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-brkt-scrd-smrk-01',
     ],
+    relatedProducts: ['zebra-hc20', 'zebra-hc55', 'honeywell-ct37-hc', 'datalogic-memor-12-hc'],
     downloads: [
-      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
-      { name: 'Strona produktu Zebra HC50 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (PL)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-pl.pdf', size: '494 KB' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (EN)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-en.pdf', size: '439 KB' },
+      { name: 'Czyszczenie i dezynfekcja terminali Zebra dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '873 KB' },
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
     ],
     servicePlans: [
-      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC50XX-3C00', duration: '3 lata', priceNetto: 1350 },
-      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC50XX-5C00', duration: '5 lat', priceNetto: 2250 },
-      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-HC50XX-3C00', duration: '3 lata', priceNetto: 1850 },
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC50XX-3C00', duration: '3 lata', priceNetto: 1179.79 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC50XX-5C00', duration: '5 lat', priceNetto: 1966.29 },
     ],
-    comparison: {
-      title: 'Porównanie: Zebra HC50 vs HC20 vs HC55',
-      models: [
-        {
-          name: 'Zebra HC50',
-          specs: {
-            'Przeznaczenie': 'Premium Wi-Fi + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Aparat tylny': '16 MPx',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Tak (do 60 s)',
-            'RAM / Flash': '8/128 GB',
-            'Waga': '242 g',
-            'Cena od': '4 200 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC20',
-          specs: {
-            'Przeznaczenie': 'Entry-level Wi-Fi',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': 'Brak',
-            'Aparat tylny': '16 MPx',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Nie',
-            'RAM / Flash': '6/64 GB',
-            'Waga': '239 g',
-            'Cena od': '2 950 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC55',
-          specs: {
-            'Przeznaczenie': 'Topowy 5G + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Aparat tylny': '16 MPx',
-            'Przycisk alarmowy': 'Tak',
-            'Hot-swap bateria': 'Tak (do 60 s)',
-            'RAM / Flash': '8/128 GB',
-            'Waga': '242 g',
-            'Cena od': '4 800 zł netto',
-          },
-        },
-      ],
-    },
-    editorialReview: {
-      ratingValue: 4.8,
-      bestRating: 5,
-      reviewBody: 'Zebra HC50 to najsensowniejszy kolektor danych do służby zdrowia dla wymagających workflow medycznych — telemedycyna, radiologia mobilna, OIOM, onkologia. Aparat przedni 5 MPx + 8 GB RAM + hot-swap baterii to trzy game-changery vs HC20: telekonsultacje wideo bez osobnego smartfona, płynne DICOM viewer i ciągła praca podczas zmiany baterii. Premium ok. 1 250 zł vs HC20 zwraca się błyskawicznie w placówkach gdzie minuta przerwy lekarza kosztuje setki zł (SOR, OIOM, blok operacyjny). Minus: brak 5G — dla telekonsultacji w karetce wymagany HC55. Dla 80% workflow szpitalnych premium HC50 jest optymalnym wyborem 2026.',
-    },
+    comparison: HC2X_HC5X_COMPARISON,
     createdAt: '2026-05-13',
-    updatedAt: "2026-10-07",
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-hc55',
     slug: 'zebra-hc55',
     name: 'Zebra HC55',
-    seoTitle: "Zebra HC55 — kolektor danych do służby zdrowia 5G/LTE z telemedycyną",
-    seoDescription: "Zebra HC55 (WCMTB-H55D8BBK1) — topowy kolektor danych do służby zdrowia z 5G FR1 + 4G LTE-A, GPS Dual-band L1+L5, aparatem przednim 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash, czerwonym przyciskiem Code Blue. Dla karetek S/P, telemedycyny mobilnej, transportu medycznego.",
-    shortDescription: 'Zebra HC55 — topowy kolektor danych do służby zdrowia 5G/LTE z telemedycyną i hot-swap baterii',
-    description: `Dla kogo? Zebra HC55 to topowy kolektor danych do służby zdrowia — łączy wszystkie premium features [HC50](/produkt/zebra-hc50) (aparat przedni 5 MPx do telemedycyny, hot-swap baterii, 8 GB RAM / 128 GB Flash) z łącznością 5G FR1 (NSA/SA) + 4G LTE-A + GPS Dual-band L1+L5 + dual SIM (nano + eSIM). Stworzony dla **lekarzy karetek S/P** (telekonsultacja z neurologiem podczas transportu udaru), **specjalistów telemedycznych** wykonujących wizyty domowe z konsultacją zdalną, **zespołów ratownictwa medycznego HEMS** (helikopter) i **mobilnych jednostek telemedycznych** (ambulanse stomatologiczne, mammograficzne, dializa domowa).
+    seoTitle: 'Zebra HC55 — terminal 5G i Wi-Fi 6E dla służby zdrowia',
+    seoDescription: 'Zebra HC55: terminal 5G z Wi-Fi 6E dla opieki domowej, telemedycyny i domów opieki: przedni aparat 5 MP, skaner SE4720, 8 GB / 128 GB, bateria hot swap, nano SIM i eSIM. Terminal mobilny 5G Zebra HC55, komputer Zebra HC55 dla służby zdrowia, HC55 Zebra. PN: WCMTB-H55D8BBK1-A6.',
+    shortDescription: 'Zebra HC55 — terminal 5G i Wi-Fi 6E dla służby zdrowia: przedni aparat 5 MP, skaner SE4720, nano SIM i eSIM oraz wymiana baterii bez wyłączania.',
+    description: `Zebra HC55 jest terminalem dla zespołów, które łączą pracę w placówce z opieką domową, telemedycyną, pracą w domach opieki lub w kampusach złożonych z wielu budynków. Urządzenie ma jednocześnie modem 5G, Wi-Fi 6E i przedni aparat 5 MP do zdalnych konsultacji z lekarzami, farmaceutami i innymi opiekunami.
 
-HC55 to bezpośredni następca przestarzałej linii TC57-HC i poprzednik kolejnej generacji HC60/HC65 (planowane 2029-2030). W 2026 r. jest najmocniejszym mobilnym terminalem medycznym w klasie enterprise.
+Moduł komórkowy obsługuje 5G w trybach NSA i SA, Gigabit LTE-A i VoLTE. Terminal współpracuje z prywatnymi i hybrydowymi sieciami 5G, a dwa profile operatorów zapewniają karta nano SIM i eSIM. Odbiornik GNSS korzysta jednocześnie z pasm L1 i L5.
 
-**Co dodaje HC55 vs HC50**:
+Wbudowany skaner SE4720 odczytuje kody kreskowe stosowane w ochronie zdrowia, a jego białe oświetlenie i zielony celownik są przyjazne dla pacjenta. Pamięć 8 GB / 128 GB zapewnia płynne działanie aplikacji klinicznych, a baterię 3800 mAh można wymienić bez wyłączania terminala.
 
-- **5G FR1 (NSA/SA) + 4G LTE-A Gigabit** — szybkie połączenie z systemami szpitalnymi przez sieć komórkową, bez zależności od Wi-Fi placówki. Pasma w Polsce: n1/n3/n5/n7/n8/n20/n28/n38/n40/n78. Obsługa **prywatnych sieci 5G campus** (duże szpitale wdrażają je z dedykowanymi pasmami n78 3,4-3,8 GHz dla krytycznej niezawodności).
-- **Dual SIM (1 nano + 1 eSIM)** — jedna karta operatora komórkowego dla pracy zewnętrznej, druga (eSIM) dla wewnętrznej sieci 5G szpitala. Pracownik karetki przechodzi seamlessly między sieciami.
-- **GPS Dual-band L1+L5** — najwyższa dokładność lokalizacji w klasie urządzeń mobilnych (1-3 m precyzji w polskich miastach). Obsługa GPS/GLONASS/Galileo/BeiDou/QZSS. Krytyczne dla zespołów ratownictwa medycznego — dispozytor zna dokładną pozycję karetki, helikoptera HEMS, pielęgniarki POZ.
-- **VoLTE + VoIP SWB Audio** — wysokiej jakości rozmowy głosowe przez sieć komórkową (HD voice). Telekonsultacja audio + wideo działa stabilnie nawet w karetce poruszającej się 100 km/h przy zmianach masztu LTE.
-
-**Pozostałe wyróżniki (identyczne z HC50)**:
-
-- Aparat przedni 5 MPx do telekonsultacji wideo
-- Tylna kamera 16 MPx dla dokumentacji ran/stanu skóry
-- 8 GB RAM / 128 GB Flash — dla aplikacji DICOM, EHR z grafiką, telemedycyna
-- Hot-swap baterii — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM
-- Czujnik ciśnienia (barometr, opcja w wybranych SKU) — wysokość transportu helikopterem HEMS
-- Czerwony przycisk Code Blue programowalny
-- Obudowa odporna na 30+ chusteczek dezynfekujących
-- Skaner SE4720 1D/2D z białym podświetleniem
-- Tłumienie szumów AI dla rozmów w karetce/helikopterze
-- Workcloud Communication PBX/PTT/Enterprise Voice
-- IP68/IP65, MIL-STD-810H, upadki z 1,25 m
-
-Pakiet Mobility DNA Professional w cenie. Pełna paleta Zebra DNA z licencją Enterprise. Kompatybilność akcesoriów z całą serią HC2X/HC5X — baterie, stacje dokujące, ładowarki, klipsy.
-
-Typowe zastosowania: **karetki S/P telekonsultacja** — paramedyk transportujący pacjenta z udarem łączy się przez 5G z neurologiem szpitala docelowego; neurolog ocenia stan przez telekonferencję wideo, podejmuje decyzję o trombolizie jeszcze w karetce — oszczędza 30-45 min vs konsultacja po dotarciu do szpitala (każda minuta zmniejsza ryzyko trwałego deficytu o 1,9 mln neuronów). **HEMS (helikoptery LPR)** — telemedyczna konsultacja podczas transportu krytycznego pacjenta między szpitalami województw. **Telerehabilitacja domowa** — fizjoterapeuta odwiedza pacjenta poudarowego, prowadzi sesję z neurologiem konsultującym zdalnie. **Telekonsultanci NFZ** — lekarz POZ z wizytą domową wzywa specjalistę wątpliwej diagnozy.
-
-Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50), stacje dokujące, ładowarka 4-baterii, klipsy, paski na rękę, folia ekranu. Drukarka opasek pacjentów: [Zebra ZD510-HC](/produkt/zebra-zd510-hc). Wariant Wi-Fi-only z telemedycyną (bez 5G): [Zebra HC50](/produkt/zebra-hc50). Pełna dokumentacja na zebra.com i [serwis-zebry.pl](https://www.serwis-zebry.pl).`,
+W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest odporna na częstą dezynfekcję zatwierdzonymi środkami. Czerwony przycisk alarmowy umieszczony z tyłu można skonfigurować tak, aby łączył z wybranym numerem albo uruchamiał aplikację.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
     manufacturerId: 'zebra',
-    priceFrom: 5927.71,
+    priceFrom: 5943.95,
     images: [
-      '/images/products/hc55_1.png',
-      '/images/products/hc55_2.png',
-      '/images/products/hc55_3.png',
-      '/images/products/hc55_4.png',
+      '/images/products/WCMTB-H55D8BBK1-A6.png',
+      '/images/products/hc20_2.png',
     ],
     imageDescriptions: [
-      'Zebra HC55 — widok z przodu, ekran 6 cali FHD+ w obudowie medycznej, aparat przedni 5 MPx, 5G/LTE i GPS',
-      'Zebra HC55 — widok z tyłu, kamera 16 MPx, skaner SE4720, czerwony przycisk alarmowy, antena 5G/GNSS',
-      'Zebra HC55 — widok pod kątem, topowa obudowa odporna na dezynfekcję, hot-swap baterii i moduł 5G',
-      'Zebra HC55 — widok z boku, profil 12,5 mm z portem USB-C, tackami SIM (nano + eSIM) i hot-swap baterii',
+      'Zebra HC55 — widok z przodu: przedni aparat 5 MP nad ekranem 6 cali, ikona sieci 5G na pasku stanu',
+      'Tył terminala serii HC2X/HC5X: aparat 16 MP, czerwony przycisk alarmowy i pokrywa baterii',
     ],
     tags: ['healthcare'],
-    availability: "available",
+    availability: 'available',
     isNew: true,
     isBestseller: false,
+    variantAttributeTooltips: {
+      'Skaner': 'Czytnik kodów kreskowych wbudowany w HC55.\n\nSE4720 — kody 1D i 2D, białe oświetlenie i zielony celownik LED przyjazne dla pacjenta.',
+      'Łączność': 'Sieci dostępne w HC55.\n\n5G + Wi-Fi 6E — modem 5G/LTE z nano SIM i eSIM, obsługa sieci prywatnych; Wi-Fi w pasmach 2,4, 5 i 6 GHz.',
+    },
     specifications: [
-      { name: 'System operacyjny', value: 'Android (aktualizacja do Android 16)' },
-      { name: 'Procesor', value: 'Qualcomm 5430 hex-core, 2.1 GHz' },
-      { name: 'Wyświetlacz', value: '6.0" FHD+ (1080×2160), 450 nit, Corning Gorilla Glass, obsługa w rękawiczkach' },
-      { name: 'Pamięć', value: '8 GB RAM / 128 GB Flash + microSD do 2 TB' },
-      { name: 'Skaner', value: 'SE4720 1D/2D, białe podświetlenie LED + zielony celownik' },
-      { name: 'Kamera tylna', value: '16 MPx (dokumentacja ran, etykiety, sprzęt medyczny)' },
-      { name: 'Kamera przednia', value: '5 MPx (telekonsultacje wideo, telekonsylia)' },
-      { name: 'Bateria', value: '3 800 mAh / 14,63 Wh, wymienna z hot-swap (do 60 s buforowania)' },
-      { name: 'Odporność', value: 'IP68/IP65, upadki z 1,25 m, MIL-STD-810H, tumble 500×0,5 m' },
-      { name: 'Łączność WLAN', value: 'Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO, trójzakresowy (2,4/5/6 GHz)' },
-      { name: 'Łączność WAN', value: '5G FR1 (NSA/SA) + 4G LTE-A Gigabit, VoLTE, sieci prywatne 5G' },
-      { name: 'GPS / GNSS', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS, Dual-band L1+L5, a-GPS' },
-      { name: 'SIM', value: '1 nano-SIM + 1 eSIM (dual SIM)' },
-      { name: 'Bluetooth', value: 'Bluetooth 5.2 klasa 2 z BLE Beaconing' },
-      { name: 'NFC', value: 'ISO 14443 typu A i B, Mifare, FeliCa, ISO 15693' },
-      { name: 'Wymiary', value: '165 × 76,3 × 12,5 mm' },
-      { name: 'Waga', value: '242 g (8,5 oz)' },
-      { name: 'USB', value: 'USB 3.1 Type-C SuperSpeed' },
-      { name: 'Przycisk alarmowy', value: 'Czerwony, programowalny, z funkcją wybierania numeru alarmowego' },
-      { name: 'Hot-swap baterii', value: 'Tak — wymiana w 30 s bez wyłączania, kondensatory podtrzymujące RAM' },
-      { name: 'Temperatura pracy', value: '-10°C do +50°C' },
-      { name: 'Odporność na dezynfekcję', value: 'Ponad 30 rodzajów chusteczek dezynfekujących zatwierdzonych przez Zebra' },
-      { name: 'Mobility DNA', value: 'Professional (DataWedge, StageNow, Device Tracker, LifeGuard™)' },
+      { name: 'Wersja', value: 'Komputer mobilny dla ochrony zdrowia z modemem komórkowym, obudowa Healthcare Blue przygotowana do dezynfekcji' },
+      { name: 'System operacyjny', value: 'Android z usługami Google (GMS); obecnie Android 13, 14 lub 15, ostatnia obsługiwana wersja: Android 16' },
+      { name: 'Procesor', value: 'Qualcomm 5430, 6 rdzeni, 2,1 GHz' },
+      { name: 'Pamięć', value: '8 GB RAM, 128 GB UFS Flash; microSD do 2 TB' },
+      { name: 'Wyświetlacz', value: '6,0" Full HD+ (1080 × 2160), 450 nitów, podświetlenie LED, szkło Corning Gorilla Glass' },
+      { name: 'Panel dotykowy', value: 'Pojemnościowy, wielotrybowy; obsługa palcem lub w cienkich rękawiczkach' },
+      { name: 'Skaner', value: 'SE4720 1D/2D, białe oświetlenie, zielony celownik LED; okno ze szkła Corning Gorilla Glass' },
+      { name: 'Aparaty', value: 'Tylny 16 MP, przedni 5 MP' },
+      { name: 'Przyciski', value: 'Dwa przyciski skanowania, przycisk programowalny (PTT lub inna funkcja), regulacja głośności' },
+      { name: 'Przycisk alarmowy', value: 'Czerwony przycisk alarmowy (Red Duress Button) z funkcją wybierania numeru alarmowego' },
+      { name: 'Powiadomienia', value: 'Sygnał dźwiękowy, wielokolorowe diody LED, wibracje' },
+      { name: 'Audio', value: 'Mikrofony z tłumieniem szumów AI, dwa głośniki, tryb głośnomówiący stereo; zestawy słuchawkowe Bluetooth i PTT (Zebra USB-C); połączenia komórkowe, HD Voice, VoLTE EVS, VoIP z dźwiękiem SWB' },
+      { name: 'WWAN (Europa)', value: '5G FR1: n1/2/3/5/7/8/20/28/38/40/41/66/71/77/78; 4G: B1/2/3/4/5/7/8/13/17/20/28/38/39/40/41/42/43/66/71; 3G: 1/2/4/5/8; 2G: 850/900/1800/1900' },
+      { name: 'Funkcje sieci komórkowej', value: '5G NR Sub-6 (NSA, SA), Gigabit LTE-A, agregacja pasm LTE/NR, VoLTE, Dual SIM / Dual Standby, sieci prywatne LTE i 5G' },
+      { name: 'SIM', value: '1 nano SIM i 1 eSIM' },
+      { name: 'GNSS', value: 'GPS, GLONASS, Galileo, BeiDou, QZSS; dwa pasma jednocześnie (L1 i L5); a-GPS, XTRA' },
+      { name: 'WLAN', value: 'IEEE 802.11 a/b/g/n/ac/ax/d/h/i/r/k/v/w/mc, 2×2 MU-MIMO; Wi-Fi 6E, pasma 2,4 / 5 / 6 GHz' },
+      { name: 'Bluetooth', value: '5.2, klasa 2, BLE beaconing' },
+      { name: 'NFC', value: 'ISO 14443 A i B, MIFARE, FeliCa, ISO 15693, tagi NFC Forum typu 2–5; emulacja karty (HCE), płatności zbliżeniowe' },
+      { name: 'Złącze', value: 'USB 3.1 typu C na dolnej krawędzi, SuperSpeed (host i klient); zaślepka portu USB-C' },
+      { name: 'Bateria', value: 'Wymienna, Li-Ion 3800 mAh / 14,63 Wh z BLE; true hot swap — do 60 s pracy bez baterii; PowerPrecision, szybkie ładowanie' },
+      { name: 'Czujniki', value: 'Światła, magnetometr, czujnik ruchu z żyroskopem, zbliżeniowy; czujnik ciśnienia w wybranych konfiguracjach' },
+      { name: 'Szczelność', value: 'IP68 i IP65 (z baterią)' },
+      { name: 'Upadki i przewroty', value: 'Wielokrotne upadki z 1,25 m na płytki na betonie od −10°C do 50°C (MIL-STD-810H); 500 przewrotów z 0,5 m' },
+      { name: 'Temperatura i wilgotność', value: 'Praca: od −10°C do 50°C; przechowywanie: od −40°C do 70°C; wilgotność 5–95% bez kondensacji' },
+      { name: 'Wymiary i masa', value: '165 × 76,3 × 12,5 mm; 242 g' },
+      { name: 'Czyszczenie', value: 'Tworzywa dla ochrony zdrowia; ponad 30 zatwierdzonych chusteczek i środków dezynfekcyjnych' },
+      { name: 'Komunikacja głosowa', value: 'Opcjonalnie Workcloud Communication: PTT Express (Wi-Fi), PTT Pro (Wi-Fi i sieć komórkowa), Enterprise Voice (telefon PBX)' },
+      { name: 'Oprogramowanie', value: 'Zebra DNA Enterprise zainstalowany fabrycznie i licencjonowany bez dodatkowej opłaty' },
+      { name: 'Gwarancja', value: '1 rok od daty wysyłki (gwarancja Zebra)' },
     ],
     variants: [
       {
         partNumber: 'WCMTB-H55D8BBK1-A6',
-        name: 'HC55 SE4720, 8/128 GB, hot-swap, aparat przedni, 5G/LTE + GPS, healthcare',
-        priceFrom: 5927.71,
-        availability: "available",
+        name: 'HC55 5G + Wi-Fi 6E, SE4720, 8 GB / 128 GB, aparat przedni 5 MP, GMS',
+        priceFrom: 5943.95,
+        availability: 'available',
         attributes: {
           'Skaner': 'SE4720',
-          'Pamięć': '8 GB / 128 GB',
-          'Bateria': '3 800 mAh hot-swap',
-          'Łączność': '5G + GPS',
+          'Łączność': '5G + Wi-Fi 6E',
         },
       },
     ],
     faq: [
-      { question: 'Ile kosztuje Zebra HC55?', answer: "To topowy model całej linii HC2X/HC5X w 2026 r." },
-      { question: 'Czym różni się Zebra HC55 od HC50?', answer: "HC55 to wariant 5G HC50: wszystkie premium-features HC50 są zachowane (aparat przedni 5 MPx, 8/128 GB, hot-swap baterii, czerwony przycisk Code Blue, obudowa medyczna, SE4720), plus dodany moduł WAN: 5G FR1 (NSA/SA) + 4G LTE-A Gigabit + GPS Dual-band L1+L5 + dual SIM (nano + eSIM) + VoLTE. HC50 jest tylko Wi-Fi (wewnątrz budynku szpitala), HC55 działa wszędzie tam gdzie jest zasięg komórkowy." },
-      { question: 'Kiedy wybrać HC55 zamiast HC50?', answer: 'HC55 jest niezbędny gdy pracownik medyczny z telemedycyną działa POZA siecią Wi-Fi placówki: 1) **paramedyk karetki S/P** — telekonsultacja z neurologiem podczas transportu udaru (oszczędza 30-45 min vs konsultacja po dotarciu), 2) **HEMS (helikoptery LPR)** — transport krytycznych pacjentów między szpitalami województw, 3) **telerehabilitacja domowa** — fizjoterapeuta z konsultacją zdalną u pacjenta poudarowego, 4) **mobilne jednostki telemedyczne** — ambulanse stomatologiczne, mammograficzne, 5) **lekarz POZ** wykonujący telekonsultację z domu pacjenta. Dla telemedycyny wewnątrz szpitala wystarczy HC50.' },
-      { question: 'Czy HC55 obsługuje prywatne sieci 5G szpitala?', answer: 'Tak, HC55 obsługuje 5G FR1 w trybach NSA (Non-Standalone) i SA (Standalone). Większe polskie szpitale w 2026 r. wdrażają prywatne sieci 5G campus z dedykowanymi pasmami n78 (3,4-3,8 GHz) i krytyczną niezawodnością wymagającą dla aplikacji medycznych. HC55 łączy się z prywatną siecią szpitala wewnątrz budynku przez eSIM (zaprogramowany cyfrowo), a poza budynkiem przełącza się automatycznie na publicznego operatora komórkowego (Orange, Play, Plus, T-Mobile) przez fizyczną kartę nano-SIM. Bezprzełamywany handover zapewnia ciągłość telekonsultacji.' },
-      { question: 'Czy HC55 zastępuje smartfon, pager, radioterminal i GPS?', answer: "Tak. HC55 z Workcloud Communication zastępuje 4 osobne urządzenia: 1) smartfon (VoLTE + VoIP SWB Audio dla rozmów wysokiej jakości), 2) pager (push-to-talk z dyżurką szpitala przez Wi-Fi/5G), 3) radioterminal/walkie-talkie (PTT Pro między pracownikami zespołu wyjazdowego), 4) GPS tracker (Dual-band L1+L5 z rejestracją tras). Plus skaner kodów + EHR + telemedycyna wideo." },
-      { question: 'Jak GPS w HC55 działa w trudnych warunkach (gęsta zabudowa, wnętrza)?', answer: 'Dwuzakresowy GNSS L1+L5 w HC55 jest najwyższej klasy GPS w urządzeniach mobilnych. L1+L5 eliminuje problem odbić sygnału w gęstej zabudowie miejskiej — typowa precyzja 1-3 m w Warszawie/Krakowie/Wrocławiu vs 5-10 m w GPS jednozakresowym (smartfony konsumenckie). Obsługa wszystkich konstelacji: GPS (US), GLONASS (RU), Galileo (EU), BeiDou (CN), QZSS (JP). a-GPS przyspiesza pierwsze fix do kilku sekund po włączeniu. Wewnątrz budynków szpitala — wsparcie BLE Beaconing dla lokalizacji w pomieszczeniach.' },
-      { question: 'Czy HC55 nadaje się do telekonsultacji w karetce 100 km/h?', answer: 'Tak, to jeden z głównych use case HC55. Połączenie wideo HD przez 5G FR1 (NSA/SA) jest stabilne przy zmianach masztu LTE/5G dzięki: 1) bezprzełamywanemu handover między masztami (operator decyduje), 2) buforowaniu wideo do 2 sekund (kompensacja krótkich przerw), 3) tłumieniu szumów AI (eliminacja hałasu silnika i syreny), 4) VoLTE EVS (Enhanced Voice Services) z HD voice nawet przy słabym zasięgu. Pomyślnie testowane w prędkościach do 130 km/h w niemieckim systemie ratownictwa medycznego.' },
-      { question: 'Czy HC55 ma czujnik ciśnienia atmosferycznego dla HEMS?', answer: 'W wybranych SKU HC55 dostępny jest barometr/altimetr. Praktyczne zastosowanie dla zespołów ratownictwa medycznego helikopterowych (HEMS, LPR — Lotnicze Pogotowie Ratunkowe): rejestracja wysokości transportu pacjenta, monitoring ciśnienia kabinowego (krytyczne dla pacjentów z PDP — Pneumothorax), automatyczna kalibracja parametrów oddechowych respiratora. Sprawdź konkretny PN przed zakupem.' },
-      { question: 'Czy HC55 wytrzymuje codzienną dezynfekcję chusteczkami?', answer: 'Tak — to standardowa cecha całej serii HC2X/HC5X. Tworzywa obudowy klasy medycznej są zatwierdzone przez Zebra do regularnego czyszczenia ponad 30 rodzajami chusteczek (alkohole, czwartorzędowe związki amoniowe, podchloryny, nadtlenek wodoru, kwas nadoctowy, fenole). Pełna lista zatwierdzonych środków w arkuszu informacyjnym Zebra "Healthcare Mobile Computers — Disinfectant Guide". Krytyczne dla audytów JCI/CDC/akredytacji szpitala oraz dla zespołów ratunkowych narażonych na materiał biologiczny pacjentów.' },
-      { question: 'Jakie akcesoria są kompatybilne z HC55?', answer: 'HC55 dzieli pełen zestaw akcesoriów z całą serią HC2X/HC5X (HC20, HC25, HC50): [bateria BTRY-HC2L5L-2XMAXB](/produkt/zebra-bateria-hc20-hc50) (3 800 mAh + BLE), [stacja 1-slot](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50), [stacja 2-slot ShareCradle](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50), [stacja 5-slot](/produkt/zebra-stacja-dokujaca-5slot-hc20-hc50), [ładowarka 4 baterii](/produkt/zebra-ladowarka-4-baterii-hc20-hc50), [klips do paska](/produkt/zebra-klips-do-noszenia-hc20-hc50), [pasek na rękę](/produkt/zebra-pasek-na-reke-hc20-hc50), [folia ekranu](/produkt/zebra-folia-ochronna-ekranu-tc22-tc27-hc20-hc50). Akcesorium specyficzne dla zespołów wyjazdowych: stacja dokująca samochodowa (dostępna osobno na zamówienie).' },
-      { question: 'Czy HC55 wymaga kontraktu OneCare?', answer: "Bezwzględnie tak. HC55 jest topowym modelem z największą liczbą komponentów premium (5G modem, antena GNSS Dual-band, aparat przedni, hot-swap, czujnik ciśnienia). Naprawa poza kontraktem oznacza wysyłkę za granicę (3–6 tygodni przerwy) — krytyczny problem dla karetki która nie może czekać tygodniami. Obejmuje advance exchange (urządzenie zastępcze następnego dnia roboczego), naprawy uszkodzeń mechanicznych, wymianę baterii po 3 latach, wsparcie techniczne 24/7." },
-      { question: 'Gdzie serwisować Zebra HC55 w Polsce?', answer: 'Autoryzowany serwis Zebra w Polsce: <a href="https://www.serwis-zebry.pl" rel="noopener">serwis-zebry.pl</a> — naprawy gwarancyjne i pogwarancyjne HC55, w tym modułu 5G/LTE, anteny GNSS Dual-band, aparatu przedniego, czujnika ciśnienia, hot-swap mechanizmu baterii, ekranów, skanerów SE4720 i obudów z oryginalnych części Zebra. Czas naprawy 3–5 dni roboczych, ekspresowo 24–48 h z dopłatą. Dla placówek z kontraktem OneCare Select — naprawa priorytetowa z advance exchange.' },
+      { question: 'Kiedy wybrać Zebra HC55 zamiast HC50?', answer: 'Gdy personel wychodzi poza zasięg sieci Wi-Fi placówki, na przykład na wizyty domowe lub do innych budynków. HC55 ma modem 5G z nano SIM i eSIM oraz odbiornik GNSS. Aparat przedni, pamięć 8 GB / 128 GB i wymiana baterii bez wyłączania są takie same jak w [Zebra HC50](/produkt/zebra-hc50).' },
+      { question: 'Jakie sieci komórkowe obsługuje HC55?', answer: 'W wersji na Europę HC55 pracuje w 5G FR1 (m.in. n1, n3, n7, n20, n28, n78), LTE, 3G i 2G. Obsługuje 5G NSA i SA, Gigabit LTE-A, VoLTE oraz prywatne sieci LTE i 5G. Karta nano SIM i eSIM mogą być aktywne jednocześnie (Dual SIM / Dual Standby).' },
+      { question: 'Czy zgubiony Zebra HC55 da się odnaleźć?', answer: 'Bateria BTRY-HC2L5L-2XMAXB ma nadajnik BLE, dzięki któremu aplikacja Zebra Device Tracker lokalizuje terminal także po jego wyłączeniu. Licencje Device Tracker na rok (SW-BLE-DT-SP-1YR) lub trzy lata (SW-BLE-DT-SP-3YR) są sprzedawane osobno.' },
+      { question: 'Jakie stacje ładujące pasują do HC55?', answer: 'Zebra ma jeden zestaw akcesoriów dla HC20, HC25, HC50 i HC55. Stacja jednogniazdowa CRD-HC2L5L-BS1CO, stacja z gniazdem na baterię CRD-HC2L5L-2S1D1B i pięciogniazdowa CRD-HC2L5L-BS5CO przyjmują terminal z klipsem lub paskiem na rękę. Każda stacja wymaga zasilacza sprzedawanego osobno.' },
+      { question: 'Jaką wersję Androida obsługuje Zebra HC55?', answer: 'HC55 jest dostępny z Androidem 13, 14 lub 15. Zebra przewiduje aktualizację do Androida 16 jako wersji końcowej. Administrator może sterować dostępnością usług GMS i planować aktualizacje przez Zebra Zero Touch; LifeGuard for Android dostarcza poprawki bezpieczeństwa.' },
+      { question: 'Jakie są alternatywy dla Zebra HC55?', answer: '[Zebra HC25](/produkt/zebra-hc25) też ma 5G, lecz pamięć 6 GB / 64 GB, Wi-Fi 6, tylko tylny aparat i baterię bez funkcji true hot swap. Wśród innych marek terminale 5G dla ochrony zdrowia to [Honeywell CT37 HC](/produkt/honeywell-ct37-hc) (wersja z modemem 5G) i [CipherLab RS38H](/produkt/cipherlab-rs38h).' },
     ],
     applications: [
-      'Karetki S/P telekonsultacja z neurologiem (udar)',
-      'HEMS — helikoptery Lotnicznego Pogotowia Ratunkowego',
-      'Transport krytycznych pacjentów między szpitalami',
-      'Telerehabilitacja domowa z konsultacją zdalną',
-      'Mobilne jednostki telemedyczne (ambulanse stomato/mammo)',
-      'Telekonsultanci NFZ z wizytami domowymi',
-      'Dializa domowa z monitoringiem zdalnym',
-      'BCMA + EHR w mieszkaniu pacjenta',
-      'GPS tracking floty karetek i zespołów wyjazdowych',
-      'PBX/PTT + telekonsultacja wideo na jednym urządzeniu',
+      'Opieka domowa i telemedycyna',
+      'Domy opieki',
+      'Kampusy medyczne z wieloma budynkami',
+      'Ratownictwo medyczne i transport pacjentów',
+      'Konsultacje wideo przez przedni aparat 5 MP',
+      'Identyfikacja pacjenta i leków skanerem SE4720',
     ],
     compatibleAccessories: [],
     relatedAccessories: [
@@ -28764,80 +28525,25 @@ Wszystkie akcesoria HC55 są tożsame z całą serią HC2X/HC5X: baterie [BTRY-H
       'zebra-charger-hc2l5l-4battery',
       'zebra-clip-hc2l5l',
       'zebra-handstrap-hc2l5l',
-      'zebra-screen-protector-tc2-hc2',
+      'zebra-tc201-crd-tc2l-1snws-01',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-brkt-scrd-smrk-01',
     ],
+    relatedProducts: ['zebra-hc25', 'zebra-hc50', 'honeywell-ct37-hc', 'cipherlab-rs38h'],
     downloads: [
-      { name: 'Karta katalogowa HC2X/HC5X (PL)', type: 'datasheet', url: 'https://www.zebra.com/content/dam/zebra_dam/pl/spec-sheets/hc2x-hc5x-spec-sheet-pl-pl.pdf', size: 'PDF' },
-      { name: 'Strona produktu Zebra HC55 (EN)', type: 'manual', url: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html', size: 'Online' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (PL)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-pl.pdf', size: '494 KB' },
+      { name: 'Karta katalogowa Zebra HC2X/HC5X (EN)', type: 'datasheet', url: '/downloads/zebra-hc2x-hc5x-karta-katalogowa-en.pdf', size: '439 KB' },
+      { name: 'Czyszczenie i dezynfekcja terminali Zebra dla ochrony zdrowia (EN)', type: 'pdf', url: '/downloads/zebra-terminale-hc-czyszczenie-i-dezynfekcja-en.pdf', size: '873 KB' },
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
     ],
     servicePlans: [
-      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC55XX-3C00', duration: '3 lata', priceNetto: 1550 },
-      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC55XX-5C00', duration: '5 lat', priceNetto: 2580 },
-      { name: 'Zebra OneCare Select — 3 lata', partNumber: 'Z1AS-HC55XX-3C00', duration: '3 lata', priceNetto: 2100 },
+      { name: 'Zebra OneCare Essential — 3 lata', partNumber: 'Z1AE-HC55XX-3C00', duration: '3 lata', priceNetto: 1179.79 },
+      { name: 'Zebra OneCare Essential — 5 lat', partNumber: 'Z1AE-HC55XX-5C00', duration: '5 lat', priceNetto: 1966.29 },
     ],
-    comparison: {
-      title: 'Porównanie: Zebra HC55 vs HC50 vs HC25',
-      models: [
-        {
-          name: 'Zebra HC55',
-          specs: {
-            'Przeznaczenie': 'Topowy — 5G + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Aparat tylny': '16 MPx',
-            'Hot-swap bateria': 'Tak (do 60 s)',
-            'SIM': '1 nano-SIM + 1 eSIM',
-            'RAM / Flash': '8/128 GB',
-            'Waga': '242 g',
-            'Cena od': '4 800 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC50',
-          specs: {
-            'Przeznaczenie': 'Premium Wi-Fi + telemedycyna',
-            'Łączność': 'Wi-Fi 6/6E',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': '5 MPx (telemedycyna)',
-            'Aparat tylny': '16 MPx',
-            'Hot-swap bateria': 'Tak (do 60 s)',
-            'SIM': 'Brak',
-            'RAM / Flash': '8/128 GB',
-            'Waga': '242 g',
-            'Cena od': '4 200 zł netto',
-          },
-        },
-        {
-          name: 'Zebra HC25',
-          specs: {
-            'Przeznaczenie': 'Opieka terenowa (5G + GPS)',
-            'Łączność': 'Wi-Fi 6/6E + 5G/LTE + GPS Dual-band',
-            'Procesor': 'Qualcomm 5430, 2.1 GHz',
-            'Ekran': '6" FHD+ (1080×2160)',
-            'Skaner': 'SE4720 (białe podświetlenie)',
-            'Aparat przedni': 'Brak',
-            'Aparat tylny': '16 MPx',
-            'Hot-swap bateria': 'Nie',
-            'SIM': '1 nano-SIM + 1 eSIM',
-            'RAM / Flash': '6/64 GB',
-            'Waga': '239 g',
-            'Cena od': '3 350 zł netto',
-          },
-        },
-      ],
-    },
-    editorialReview: {
-      ratingValue: 4.9,
-      bestRating: 5,
-      reviewBody: 'Zebra HC55 to topowy kolektor danych do służby zdrowia 2026 — łączy wszystkie premium-features HC50 z 5G/LTE i GPS Dual-band L1+L5. Game-changer dla telemedycyny mobilnej: paramedyk karetki S/P transportujący pacjenta z udarem może uruchomić telekonsultację z neurologiem szpitala docelowego, neurolog ocenia stan przez wideo i decyduje o trombolizie jeszcze w karetce — oszczędność 30-45 min vs decyzja po dotarciu, każda minuta to 1,9 mln neuronów. Hot-swap baterii oznacza że terminal pracuje 24h bez restartów — krytyczne dla zespołów HEMS i karetek nocnych. Premium 600 zł vs HC50 zwraca się w pierwszym miesiącu eksploatacji. Minus: cena startowa 4 800 zł netto jest wysoka — zarezerwowane dla najbardziej wymagających zastosowań. Dla typowej telemedycyny wewnątrz szpitala HC50 jest tańszą alternatywą.',
-    },
+    comparison: HC2X_HC5X_COMPARISON,
     createdAt: '2026-05-13',
-    updatedAt: "2026-10-07",
+    updatedAt: '2026-10-25',
   },
   {
   "id": "zebra-tc27",
@@ -58790,193 +58496,296 @@ const tc22Accessories: Product[] = [
     id: 'zebra-battery-hc2l5l',
     slug: 'zebra-bateria-hc20-hc50',
     name: 'Akumulator 3800 mAh do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Akumulator 3800 mAh do Zebra HC20 / HC25 / HC50 / HC55 — bateria PowerPrecision z BLE Beaconing, obudowa medyczna odporna na dezynfekcję',
-    description: `Oryginalna bateria zapasowa Zebra PowerPrecision Li-Ion 3800 mAh do terminali medycznych serii HC2X/HC5X. Obudowa z tworzyw klasy medycznej odporna na środki dezynfekujące. Wbudowany nadajnik Bluetooth Low Energy (BLE Beaconing) umożliwia śledzenie lokalizacji terminala nawet po wyłączeniu — krytyczne dla zarządzania flotą sprzętu szpitalnego (Zebra Device Tracker). Zapewnia pełną zmianę roboczą (8–10 h). Wymiana baterii w trybie hot-swap w modelach HC50/HC55 (buforowanie do 60 s).`,
+    shortDescription: 'Akumulator Zebra BTRY-HC2L5L-2XMAXB do HC20 / HC25 / HC50 / HC55 — bateria PowerPrecision 3800 mAh z nadajnikiem BLE do lokalizowania terminala.',
+    description: `Bateria BTRY-HC2L5L-2XMAXB to zapasowy akumulator litowo-jonowy PowerPrecision 3800 mAh w niebieskiej obudowie, przeznaczony do terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Zebra stosuje w nim ogniwa klasy premium o dłuższym cyklu życia, a technologia PowerPrecision na bieżąco pokazuje kondycję ogniw.
+
+Wbudowany nadajnik BLE pozwala zlokalizować terminal z tą baterią w aplikacji Zebra Device Tracker, także gdy urządzenie jest wyłączone. Licencje Device Tracker na rok (SW-BLE-DT-SP-1YR) lub trzy lata (SW-BLE-DT-SP-3YR) są sprzedawane osobno.
+
+W HC50 i HC55 wymiana baterii nie wymaga wyłączania terminala, który działa bez niej do 60 s. Zapasowe baterie ładują ładowarka SAC-HC2L5L-4SCHG oraz stacja CRD-HC2L5L-2S1D1B.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
     manufacturerId: 'zebra',
-    priceFrom: 349.75,
+    priceFrom: 363.72,
     images: ['/images/products/BTRY-HC2L5L-2XMAXB.png'],
-    imageDescriptions: ['Akumulator 3800 mAh do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Niebieska bateria Zebra BTRY-HC2L5L-2XMAXB 3800 mAh do terminali HC20, HC25, HC50 i HC55'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'BTRY-HC2L5L-2XMAXB' },
       { name: 'Pojemność', value: '3800 mAh / 14,63 Wh' },
-      { name: 'Technologia', value: 'Li-Ion PowerPrecision + BLE Beaconing' },
-      { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Technologia', value: 'Li-Ion PowerPrecision, nadajnik BLE' },
+      { name: 'Kolor', value: 'Niebieski' },
+      { name: 'Lokalizowanie', value: 'Zebra Device Tracker (licencja sprzedawana osobno)' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Bateria zapasowa kolektora danych medycznego', 'Śledzenie lokalizacji terminala (Device Tracker)', 'Praca dwuzmianowa'],
+    applications: ['Bateria zapasowa terminala HC2X/HC5X', 'Lokalizowanie terminala przez Device Tracker', 'Wymiana bez wyłączania w HC50 i HC55'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-charger-hc2l5l-4battery', 'zebra-cradle-hc2l5l-2slot'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-cradle-hc2l5l-1slot',
     slug: 'zebra-stacja-dokujaca-1slot-hc20-hc50',
-    name: 'Stacja dokująca 1-slot do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Stacja dokująca 1-slot do Zebra HC20 / HC50 — ładowanie i komunikacja USB, obudowa medyczna odporna na dezynfekcję',
-    description: `Oryginalna jedno-gniazdowa stacja dokująca (cradle, Base Single Communications Only) Zebra do terminali medycznych HC20/HC25/HC50/HC55. Ładuje terminal i umożliwia komunikację z komputerem przez USB. Obudowa klasy medycznej z tworzyw odpornych na środki dezynfekujące — bezpieczna w dyżurkach pielęgniarek, na biurkach lekarzy. Diody LED informują o statusie ładowania.`,
+    name: 'Stacja ładująca 1-gniazdowa do Zebra HC20 / HC25 / HC50 / HC55',
+    shortDescription: 'Stacja Zebra CRD-HC2L5L-BS1CO do HC20 / HC25 / HC50 / HC55 — jednogniazdowa stacja tylko do ładowania, zasilana przez USB-C.',
+    description: `Stacja CRD-HC2L5L-BS1CO ładuje jeden terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55). Służy tylko do ładowania; transmisji danych nie obsługuje. Naładowanie baterii standardowej BLE w terminalu od zera do 80% zajmuje mniej niż 2 h 20 min. Terminal można włożyć z założonym paskiem na rękę lub klipsem.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB Zebra (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+Zasilacz z wtykiem EU i przewód USB-C łączą stację z gniazdem sieciowym.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'zebra',
-    priceFrom: 391.13,
+    priceFrom: 406.81,
     images: ['/images/products/CRD-HC2L5L-BS1CO.png'],
-    imageDescriptions: ['Stacja dokująca 1-slot do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Biała stacja ładująca Zebra CRD-HC2L5L-BS1CO na jeden terminal HC2X/HC5X'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'CRD-HC2L5L-BS1CO' },
-      { name: 'Typ', value: 'Base Single Communications Only (1-slot)' },
-      { name: 'Komunikacja', value: 'USB' },
-      { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Typ', value: 'Stacja 1-gniazdowa, tylko ładowanie' },
+      { name: 'Czas ładowania', value: 'Bateria standardowa BLE w terminalu: 0–80% w czasie poniżej 2 h 20 min' },
+      { name: 'Terminal w stacji', value: 'Także z paskiem na rękę lub klipsem' },
+      { name: 'Zasilanie', value: 'Zasilacz PWR-WUA5V12W0EU i przewód CBL-TC5X-USBC2A-01 (sprzedawane osobno)' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Ładowanie indywidualne', 'Dyżurka pielęgniarek', 'Biurko lekarza', 'Komunikacja z PC'],
+    applications: ['Ładowanie terminala na biurku lub w dyżurce', 'Ładowanie pojedynczego urządzenia'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-tc22-tc27-pwr-wua5v12w0eu', 'zebra-tc201-cbl-tc5x-usbc2a-01'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-cradle-hc2l5l-2slot',
     slug: 'zebra-stacja-dokujaca-2slot-hc20-hc50',
-    name: 'Stacja ShareCradle 2-slot (terminal + bateria) do Zebra HC20 / HC50',
-    shortDescription: 'Stacja ShareCradle 2-slot (terminal + zapasowa bateria) do Zebra HC20 / HC50 — równoczesne ładowanie z obudową medyczną',
-    description: `Oryginalna stacja ShareCradle Zebra do terminali medycznych HC2X/HC5X. Konfiguracja 2S1D1B: 2 sloty (1 terminal + 1 dodatkowa bateria). Pozwala na jednoczesne ładowanie terminala i zapasowej baterii — idealne dla pracy dwuzmianowej i hot-swap workflow. Obudowa klasy medycznej odporna na środki dezynfekujące. Wskaźniki LED dla każdego slotu.`,
+    name: 'Stacja ładująca terminal i baterię do Zebra HC20 / HC25 / HC50 / HC55',
+    shortDescription: 'Stacja Zebra CRD-HC2L5L-2S1D1B do HC20 / HC25 / HC50 / HC55 — ładuje jeden terminal i jedną zapasową baterię.',
+    description: `Stacja CRD-HC2L5L-2S1D1B ma gniazdo na jeden terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55) oraz gniazdo na jedną zapasową baterię. Terminal z baterią standardową BLE osiąga 80% naładowania w mniej niż 1 h 20 min (licząc od zera), a bateria zapasowa — 90% w mniej niż 4 h. Terminal można włożyć z paskiem na rękę lub klipsem.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)
+- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)
+- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)
+
+Dokup tylko te elementy, których jeszcze nie masz.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'zebra',
-    priceFrom: 1204.51,
+    priceFrom: 1252.79,
     images: ['/images/products/CRD-HC2L5L-2S1D1B.png'],
-    imageDescriptions: ['Stacja ShareCradle 2-slot (terminal + bateria) do Zebra HC20 / HC50'],
+    imageDescriptions: ['Biała stacja Zebra CRD-HC2L5L-2S1D1B z gniazdem na terminal HC2X/HC5X i gniazdem na zapasową baterię'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'CRD-HC2L5L-2S1D1B' },
-      { name: 'Typ', value: 'ShareCradle 2-slot (1 terminal + 1 bateria)' },
-      { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Typ', value: 'Stacja ładująca: 1 terminal + 1 bateria zapasowa' },
+      { name: 'Czas ładowania', value: 'Bateria w terminalu: 0–80% w czasie poniżej 1 h 20 min; bateria zapasowa: 0–90% w czasie poniżej 4 h' },
+      { name: 'Terminal w stacji', value: 'Także z paskiem na rękę lub klipsem' },
+      { name: 'Zasilanie', value: 'Zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-388A1-01 i przewód sieciowy (sprzedawane osobno)' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55; bateria BTRY-HC2L5L-2XMAXB' },
     ],
-    applications: ['Praca dwuzmianowa (hot-swap)', 'Ładowanie zapasowej baterii', 'Dyżurka pielęgniarek'],
+    applications: ['Ładowanie terminala i zapasowej baterii w jednym miejscu', 'Dyżurka pielęgniarek'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-psu-50w', 'zebra-cable-dc-388', 'zebra-tc201-50-16000-220r', 'zebra-battery-hc2l5l'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-cradle-hc2l5l-5slot',
     slug: 'zebra-stacja-dokujaca-5slot-hc20-hc50',
-    name: 'Stacja dokująca 5-slot do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Stacja dokująca 5-slot do Zebra HC20 / HC50 — centralne ładowanie 5 terminali, dla zaplecza i magazynu szpitalnego',
-    description: `Oryginalna pięcio-gniazdowa stacja dokująca (Base Single Communications Only, 5-slot) Zebra do terminali medycznych HC2X/HC5X. Centralne ładowanie 5 terminali jednocześnie — idealne dla zaplecza oddziału, sprzętowni szpitalnej, magazynka pielęgniarek. Obudowa klasy medycznej odporna na środki dezynfekujące. Możliwość montażu naściennego (opcja).`,
+    name: 'Stacja ładująca 5-gniazdowa do Zebra HC20 / HC25 / HC50 / HC55',
+    shortDescription: 'Stacja Zebra CRD-HC2L5L-BS5CO do HC20 / HC25 / HC50 / HC55 — ładuje do pięciu terminali, montaż w szafie rack 19" lub na ścianie.',
+    description: `Stacja CRD-HC2L5L-BS5CO ładuje do pięciu terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Służy tylko do ładowania. W każdym gnieździe rozładowana bateria standardowa BLE terminala uzyskuje 80% pojemności w czasie krótszym niż 1 h 20 min. Paska na rękę ani klipsa nie trzeba przy tym zdejmować. Uchwyt BRKT-SCRD-SMRK-01 pozwala zamocować stację na ścianie albo w szafie rack 19".
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz sieciowy Zebra 108 W (PWR-BGA12V108W0WW)](/produkt/zebra-zasilacz-108w)
+- [Przewód DC Zebra CBL-DC-381A1-01 (CBL-DC-381A1-01)](/produkt/zebra-kabel-zasilajacy-381)
+- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)
+
+Dokup tylko te elementy, których jeszcze nie masz.
+
+## Elementy opcjonalne
+
+- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'zebra',
-    priceFrom: 2267.34,
+    priceFrom: 2358.14,
     images: ['/images/products/CRD-HC2L5L-BS5CO.png'],
-    imageDescriptions: ['Stacja dokująca 5-slot do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Biała stacja ładująca Zebra CRD-HC2L5L-BS5CO z pięcioma gniazdami na terminale HC2X/HC5X'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'CRD-HC2L5L-BS5CO' },
-      { name: 'Typ', value: 'Base Single Communications Only (5-slot)' },
-      { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Typ', value: 'Stacja 5-gniazdowa, tylko ładowanie' },
+      { name: 'Czas ładowania', value: 'Bateria standardowa BLE w terminalu: 0–80% w czasie poniżej 1 h 20 min' },
+      { name: 'Terminal w stacji', value: 'Także z paskiem na rękę lub klipsem' },
+      { name: 'Montaż', value: 'Na ścianie lub w szafie rack 19" z uchwytem BRKT-SCRD-SMRK-01 (sprzedawany osobno)' },
+      { name: 'Zasilanie', value: 'Zasilacz PWR-BGA12V108W0WW, przewód DC CBL-DC-381A1-01 i przewód sieciowy (sprzedawane osobno)' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Centralne ładowanie floty', 'Zaplecze oddziału', 'Sprzętownia szpitalna', 'Magazynek pielęgniarek'],
+    applications: ['Ładowanie kilku terminali na zapleczu oddziału', 'Montaż w szafie rack 19"'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-psu-108w', 'zebra-cable-dc-381', 'zebra-tc201-50-16000-220r', 'zebra-tc201-brkt-scrd-smrk-01'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-charger-hc2l5l-4battery',
     slug: 'zebra-ladowarka-4-baterii-hc20-hc50',
     name: 'Ładowarka 4 baterii do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Ładowarka 4 baterii do Zebra HC20 / HC50 — ładowanie 4 zapasowych baterii naraz, obudowa medyczna odporna na dezynfekcję',
-    description: `Oryginalna ładowarka Zebra na 4 baterie zapasowe (Spare Accessory Charger) do terminali medycznych HC2X/HC5X. Pozwala utrzymywać 4 zapasowe baterie w pełni naładowane — niezbędna dla pracy wielozmianowej oddziału. Obudowa klasy medycznej odporna na środki dezynfekujące. Wskaźniki LED stanu ładowania dla każdego slotu.`,
+    shortDescription: 'Ładowarka Zebra SAC-HC2L5L-4SCHG do baterii HC20 / HC25 / HC50 / HC55 — ładuje cztery baterie BTRY-HC2L5L-2XMAXB.',
+    description: `Ładowarka SAC-HC2L5L-4SCHG w kolorze białym ładuje cztery baterie litowo-jonowe terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Rozładowaną baterię standardową BLE doprowadza do 90% pojemności w niecałe 4 h. Może stać samodzielnie, a na uchwycie BRKT-SCRD-SMRK-01 mieszczą się do czterech takich ładowarek.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)
+- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)
+- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)
+
+Dokup tylko te elementy, których jeszcze nie masz.
+
+## Elementy opcjonalne
+
+- [Uchwyt montażowy ShareCradle Zebra (BRKT-SCRD-SMRK-01)](/produkt/zebra-tc201-brkt-scrd-smrk-01)`,
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'zebra',
-    priceFrom: 1370.49,
+    priceFrom: 1403.13,
     images: ['/images/products/SAC-HC2L5L-4SCHG.png'],
-    imageDescriptions: ['Ładowarka 4 baterii do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Biała ładowarka Zebra SAC-HC2L5L-4SCHG z czterema gniazdami na baterie terminali HC2X/HC5X'],
     tags: ['healthcare'],
     availability: 'on-order',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'SAC-HC2L5L-4SCHG' },
-      { name: 'Typ', value: 'Ładowarka 4 baterii (Spare Accessory Charger)' },
-      { name: 'Obudowa', value: 'Klasa medyczna, odporna na dezynfekcję' },
-      { name: 'Kompatybilność', value: 'Baterie BTRY-HC2L5L-* dla HC20/HC25/HC50/HC55' },
+      { name: 'Typ', value: 'Ładowarka 4 baterii zapasowych' },
+      { name: 'Czas ładowania', value: 'Bateria standardowa BLE: 0–90% w czasie poniżej 4 h' },
+      { name: 'Kolor', value: 'Biały' },
+      { name: 'Montaż', value: 'Samodzielnie lub do czterech ładowarek na uchwycie BRKT-SCRD-SMRK-01' },
+      { name: 'Zasilanie', value: 'Zasilacz PWR-BGA12V50W0WW, przewód DC CBL-DC-388A1-01 i przewód sieciowy (sprzedawane osobno)' },
+      { name: 'Kompatybilność', value: 'Baterie BTRY-HC2L5L-2XMAXB do Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Ładowanie zapasowych baterii', 'Praca trzyzmianowa', 'Sprzętownia szpitalna'],
+    applications: ['Ładowanie zapasowych baterii', 'Przygotowanie baterii na kolejną zmianę'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-battery-hc2l5l', 'zebra-psu-50w', 'zebra-cable-dc-388', 'zebra-tc201-50-16000-220r', 'zebra-tc201-brkt-scrd-smrk-01'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-clip-hc2l5l',
     slug: 'zebra-klips-do-noszenia-hc20-hc50',
     name: 'Klips do noszenia do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Klips do noszenia do Zebra HC20 / HC50 — klips antymikrobialny do paska lub fartucha, ułatwia szybki dostęp do terminala',
-    description: `Oryginalny klips do noszenia Zebra do terminali medycznych HC2X/HC5X. Pozwala wygodnie nosić terminal na pasku, kieszeni fartucha lub kitla pielęgniarki — w zasięgu ręki przez całą zmianę. Tworzywa klasy medycznej odporne na odkażanie i regularne czyszczenie chusteczkami dezynfekującymi. Łatwy montaż i demontaż jedną ręką.`,
+    shortDescription: 'Klips Zebra SG-HC2L5L-CLIP-01 do HC20 / HC25 / HC50 / HC55 — obrotowy klips do odzieży, niebieska obudowa przygotowana do dezynfekcji.',
+    description: `Klips SG-HC2L5L-CLIP-01 mocuje terminal [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) lub [HC55](/produkt/zebra-hc55) do odzieży personelu. Zakłada się go na górną część terminala. Klips obraca się w zakresie 162°, więc położenie terminala można dopasować do zadania.
+
+Niebieska obudowa klipsa jest przygotowana do dezynfekcji. Klipsa nie można używać razem z paskiem na rękę SG-HC2L5L-HSTRP-01. Terminal z klipsem mieści się w stacjach ładujących HC2X/HC5X. Klips jest elementem eksploatacyjnym i w okresie użytkowania terminala może wymagać wymiany.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
     manufacturerId: 'zebra',
-    priceFrom: 137.31,
+    priceFrom: 140.62,
     images: ['/images/products/SG-HC2L5L-CLIP-01.png'],
-    imageDescriptions: ['Klips do noszenia do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Niebieski obrotowy klips Zebra SG-HC2L5L-CLIP-01 do terminali HC2X/HC5X'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'SG-HC2L5L-CLIP-01' },
-      { name: 'Typ', value: 'Klips do paska/fartucha' },
-      { name: 'Materiał', value: 'Tworzywo klasy medycznej, antymikrobialne' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Typ', value: 'Obrotowy klips do odzieży, mocowany na górze terminala' },
+      { name: 'Zakres obrotu', value: '162°' },
+      { name: 'Obudowa', value: 'Niebieska, przygotowana do dezynfekcji' },
+      { name: 'Ograniczenia', value: 'Nie współpracuje z paskiem na rękę SG-HC2L5L-HSTRP-01' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Noszenie w fartuchu pielęgniarki', 'Szybki dostęp', 'Opieka domowa'],
+    applications: ['Noszenie terminala na odzieży', 'Praca z terminalem w stacji bez zdejmowania klipsa'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-handstrap-hc2l5l'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
     id: 'zebra-handstrap-hc2l5l',
     slug: 'zebra-pasek-na-reke-hc20-hc50',
     name: 'Pasek na rękę do Zebra HC20 / HC25 / HC50 / HC55',
-    shortDescription: 'Pasek na rękę do Zebra HC20 / HC50 — pasek antymikrobialny, pewny chwyt podczas obchodów i procedur medycznych',
-    description: `Oryginalny pasek na rękę Zebra do terminali medycznych HC2X/HC5X. Zapewnia pewny chwyt i zabezpiecza przed upuszczeniem terminala podczas obchodów, BCMA, skanowania opasek pacjentów. Tworzywa klasy medycznej odporne na środki dezynfekujące. Regulowany rozmiar pasuje do dłoni dowolnej wielkości — idealny dla zespołów pielęgniarskich z różnymi pracownikami.`,
+    shortDescription: 'Pasek Zebra SG-HC2L5L-HSTRP-01 do HC20 / HC25 / HC50 / HC55 — niebieski pasek na rękę z dostępem do przycisku alarmowego.',
+    description: `Pasek na rękę SG-HC2L5L-HSTRP-01 w kolorze niebieskim przeznaczono do terminali [Zebra HC20](/produkt/zebra-hc20), [HC25](/produkt/zebra-hc25), [HC50](/produkt/zebra-hc50) i [HC55](/produkt/zebra-hc55). Górny koniec paska jest połączony z nasadką zakładaną na górę terminala, a dolny wpina się w dolną część obudowy.
+
+Pasek nie zasłania czerwonego przycisku alarmowego na tylnej ściance. Paska nie trzeba zdejmować przed włożeniem terminala do stacji ładującej HC2X/HC5X. Aby wyjąć baterię, najpierw odpina się dolny zaczep, a potem zdejmuje górną nasadkę. Pasek należy do części eksploatacyjnych, więc w trakcie użytkowania terminala może być potrzebny nowy. Nie współpracuje z klipsem SG-HC2L5L-CLIP-01.`,
     categoryId: 'akcesoria',
     subcategoryIds: ['etui-kabury-uchwyty'],
     manufacturerId: 'zebra',
-    priceFrom: 211.62,
+    priceFrom: 220.1,
     images: ['/images/products/SG-HC2L5L-HSTRP-01.png'],
-    imageDescriptions: ['Pasek na rękę do Zebra HC20 / HC25 / HC50 / HC55'],
+    imageDescriptions: ['Niebieski pasek na rękę Zebra SG-HC2L5L-HSTRP-01 z górną nasadką do terminali HC2X/HC5X'],
     tags: ['healthcare'],
-    availability: 'on-order',
+    availability: 'available',
     isNew: true,
     isBestseller: false,
     specifications: [
       { name: 'Part Number', value: 'SG-HC2L5L-HSTRP-01' },
-      { name: 'Typ', value: 'Pasek na rękę (handstrap)' },
-      { name: 'Materiał', value: 'Tworzywo klasy medycznej, antymikrobialne' },
-      { name: 'Regulacja', value: 'Tak — pasuje do dłoni różnych rozmiarów' },
-      { name: 'Kompatybilność', value: 'HC20, HC25, HC50, HC55' },
+      { name: 'Typ', value: 'Pasek na rękę z górną nasadką i dolnym zaczepem' },
+      { name: 'Kolor', value: 'Niebieski' },
+      { name: 'Przycisk alarmowy', value: 'Dostęp do przycisku na tylnej ściance' },
+      { name: 'Stacje', value: 'Terminal z paskiem mieści się w stacjach ładujących HC2X/HC5X' },
+      { name: 'Kompatybilność', value: 'Zebra HC20, HC25, HC50, HC55' },
     ],
-    applications: ['Pewny chwyt podczas obchodów', 'BCMA i skanowanie opasek', 'Ochrona przed upadkiem'],
+    applications: ['Pewne trzymanie terminala podczas skanowania', 'Praca z terminalem w stacji bez zdejmowania paska'],
     compatibleAccessories: [],
-    downloads: [],
+    relatedAccessories: ['zebra-clip-hc2l5l'],
+    relatedProducts: ['zebra-hc20', 'zebra-hc25', 'zebra-hc50', 'zebra-hc55'],
+    downloads: [
+      { name: 'Przewodnik akcesoriów Zebra HC2X/HC5X (EN)', type: 'pdf', url: '/downloads/zebra-hc2x-hc5x-przewodnik-akcesoriow-en.pdf', size: '2,0 MB' },
+    ],
     createdAt: '2026-05-12',
+    updatedAt: '2026-10-25',
   },
   {
   "id": "zebra-screen-protector-tc2-hc2",
@@ -59010,7 +58819,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, HC20, HC25, HC50, HC55"
+      "value": "Zebra TC22, TC27"
     },
     {
       "name": "Typ",
