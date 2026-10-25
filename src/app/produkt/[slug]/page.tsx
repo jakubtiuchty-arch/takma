@@ -1463,7 +1463,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Warianty — ukryte dla etykiet termicznych (wybór wariantu odbywa się na /etykiety-termiczne-zebra/serie/[slug]) */}
             {showVariants && (
               <>
-                <VariantQuickPick variants={product.variants!} />
+                <VariantQuickPick variants={product.variants!} quoteOnly={product.quoteOnly} />
                 <VariantsTable
                   productSlug={product.slug}
                   productName={product.name}
@@ -1471,6 +1471,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   variants={product.variants!}
                   variantAttributeTooltips={getProductVariantTooltips(product)}
                   manufacturerId={product.manufacturerId}
+                  quoteOnly={product.quoteOnly}
                 />
               </>
             )}

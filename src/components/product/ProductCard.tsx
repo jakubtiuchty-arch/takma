@@ -13,7 +13,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackAddToCart, trackSelectItem } from '@/lib/ga-events'
 import { getProductImageFrameStyle, getUniformProductImageStyle, getProductImageScaleStyle } from '@/lib/product-image-frame'
-import { jestNaStanie, LICENCJA_DOSTAWA } from '@/lib/licencje'
+import { czyDodatekLicencji, jestNaStanie, LICENCJA_DOSTAWA } from '@/lib/licencje'
 
 interface ProductCardProps {
   product: ProductCardData
@@ -108,7 +108,10 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     // Karta na zapytanie nie pokazuje ceny, nawet gdy dystrybutor ją podaje (edycje Enterprise).
     if (naZapytanie) return undefined
     if (stockLoading || !anyFound) return isZebraTerminalProduct(product) ? undefined : staticPrice
+    // Dodatek do licencji („+1 drukarka”) nie jest „ceną od” karty — działa tylko z licencją główną.
+    const dodatki = new Set(product.licenseDelivery ? product.variants?.filter(czyDodatekLicencji).map(v => v.partNumber) : [])
     const znalezione = partNumbers
+      .filter(pn => !dodatki.has(pn))
       .map(pn => stockData.get(pn))
       .filter((s): s is NonNullable<typeof s> => !!s?.found && !!s?.price)
     const posortuj = (lista: typeof znalezione) => lista.map(s => s.price!).sort((a, b) => a - b)

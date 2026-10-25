@@ -23,6 +23,7 @@ export type ProductCardData = Pick<
   | 'variants'
   | 'priceFrom'
   | 'quoteOnly'
+  | 'licenseDelivery'
   | 'comingSoon'
   | 'priceTiers'
   | 'availability'

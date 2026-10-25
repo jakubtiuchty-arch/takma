@@ -10,7 +10,7 @@ import { timeoutSignal } from '@/lib/timeout-signal'
 import { activePromo } from '@/data/promos'
 import { getMagicardStock } from '@/lib/magicard-offer'
 import { selectProductVariant } from '@/lib/product-variant-offers'
-import { czyNaZapytanie } from '@/lib/licencje'
+import { czyDodatekLicencji, czyNaZapytanie } from '@/lib/licencje'
 
 interface SmartPriceState {
   /** Wybrany PN do wyświetlenia */
@@ -62,12 +62,14 @@ export function SmartPriceProvider({
     if (product.variants && product.variants.length > 0) {
       return product.variants
         // Wariant „na zapytanie” nie ma ceny, nawet gdy w danych zostało priceFrom.
-        .map(v => ({ partNumber: v.partNumber, price: v.quoteOnly ? null : v.priceFrom ?? null, name: v.name, staticAvailability: v.availability }))
-        .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity))
+        // Dodatek do licencji („+1 drukarka”) nie działa sam, więc trafia na koniec — cena w boksie
+        // to najtańsza licencja główna, a ceny wariantów zostają bez zmian.
+        .map(v => ({ partNumber: v.partNumber, price: v.quoteOnly ? null : v.priceFrom ?? null, name: v.name, staticAvailability: v.availability, dodatek: !!product.licenseDelivery && czyDodatekLicencji(v) }))
+        .sort((a, b) => Number(a.dodatek) - Number(b.dodatek) || (a.price ?? Infinity) - (b.price ?? Infinity))
     }
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
     if (pnSpec) {
-      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '', staticAvailability: product.availability ?? 'available' as const }]
+      return [{ partNumber: pnSpec.value, price: product.priceFrom ?? null, name: '', staticAvailability: product.availability ?? 'available' as const, dodatek: false }]
     }
     return []
   }, [product])
@@ -221,6 +223,7 @@ export function SmartPriceProvider({
     })
     // Sortuj: warianty z ceną live PRZED wariantami ze statyczną ceną, potem po cenie
     .sort((a, b) => {
+      if (a.dodatek !== b.dodatek) return a.dodatek ? 1 : -1
       if (a.apiFound && !b.apiFound) return -1
       if (!a.apiFound && b.apiFound) return 1
       return (a.effectivePrice ?? Infinity) - (b.effectivePrice ?? Infinity)

@@ -21,6 +21,8 @@ interface VariantsTableProps {
   variants: ProductVariant[]
   variantAttributeTooltips?: Record<string, string>
   manufacturerId?: string
+  /** Cała karta na zapytanie (quoteOnly) — każdy wariant jak wariant quoteOnly */
+  quoteOnly?: boolean
 }
 
 const availabilityConfig: Record<string, { label: string; variant: 'success' | 'warning' | 'danger' | 'info' }> = {
@@ -257,7 +259,7 @@ function AttributeLabel({ label, extraTooltips }: { label: string; extraTooltips
   )
 }
 
-function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInCart, manufacturerId }: {
+function DesktopRow({ variant, productSlug, productName, productImage, attributeKeys, rowIndex, mounted, stockData, stockLoading, addItem, isInCart, manufacturerId, quoteOnly }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -270,6 +272,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   addItem: (item: { id: string; name: string; slug: string; image?: string; partNumber: string; priceNetto?: number }) => void
   isInCart: (id: string) => boolean
   manufacturerId?: string
+  quoteOnly?: boolean
 }) {
   const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
@@ -277,7 +280,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   // Wariant na zapytanie: bez ceny i koszyka, zamiast nich „Zapytaj o cenę” (serwer nie podaje też ceny z API).
-  const naZapytanie = !!variant.quoteOnly
+  const naZapytanie = !!quoteOnly || !!variant.quoteOnly
   const avail = naZapytanie ? naZapytanieConfig : liveSignal
     ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
     : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
@@ -360,7 +363,7 @@ function DesktopRow({ variant, productSlug, productName, productImage, attribute
   )
 }
 
-function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }: {
+function MobileCard({ variant, productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId, quoteOnly }: {
   variant: ProductVariant
   productSlug: string
   productName: string
@@ -373,6 +376,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   isInCart: (id: string) => boolean
   variantAttributeTooltips?: Record<string, string>
   manufacturerId?: string
+  quoteOnly?: boolean
 }) {
   const inRFQ = mounted ? isInCart(`${productSlug}__${variant.partNumber}`) : false
   const stock = stockData.get(variant.partNumber)
@@ -380,7 +384,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   // (np. override Jarltech, który nie ustawia found). Brak sygnału → editorial fallback.
   const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
   // Wariant na zapytanie: bez ceny i koszyka, zamiast nich „Zapytaj o cenę” (serwer nie podaje też ceny z API).
-  const naZapytanie = !!variant.quoteOnly
+  const naZapytanie = !!quoteOnly || !!variant.quoteOnly
   const avail = naZapytanie ? naZapytanieConfig : liveSignal
     ? availabilityConfig[stock!.availability] ?? availabilityConfig.unavailable
     : (productSlug === 'zebra-zd421t' || isZebraTerminalSlug(productSlug)) ? { label: 'Do potwierdzenia', variant: 'warning' as const } : availabilityConfig[variant.availability] ?? availabilityConfig.unavailable
@@ -504,7 +508,7 @@ function MobileCard({ variant, productSlug, productName, productImage, attribute
   )
 }
 
-export default function VariantsTable({ productSlug, productName, productImage, variants, variantAttributeTooltips, manufacturerId }: VariantsTableProps) {
+export default function VariantsTable({ productSlug, productName, productImage, variants, variantAttributeTooltips, manufacturerId, quoteOnly }: VariantsTableProps) {
   const { addItem, isInCart } = useCartStore()
   const [mounted, setMounted] = useState(false)
   const [showUnavailable, setShowUnavailable] = useState(false)
@@ -532,18 +536,18 @@ export default function VariantsTable({ productSlug, productName, productImage, 
       const liveSignal = !!stock && (stock.found || stock.stockPL > 0 || stock.stockDE > 0 || stock.inDelivery > 0)
       const effectiveAvailability = liveSignal ? stock!.availability : v.availability
       // Wariant na zapytanie zostaje na liście głównej — jest w ofercie, tylko bez ceny.
-      if (!v.quoteOnly && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')) {
+      if (!quoteOnly && !v.quoteOnly && (effectiveAvailability === 'unavailable' || effectiveAvailability === 'on-order')) {
         unavailable.push(v)
       } else {
         available.push(v)
       }
     }
     return { availableVariants: available, unavailableVariants: unavailable }
-  }, [variants, stockData, stockLoading])
+  }, [variants, stockData, stockLoading, quoteOnly])
 
   if (variants.length === 0) return null
 
-  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId }
+  const sharedProps = { productSlug, productName, productImage, attributeKeys, mounted, stockData, stockLoading, addItem, isInCart, variantAttributeTooltips, manufacturerId, quoteOnly }
   const colCount = 5 + attributeKeys.length // PN + attrs + cena + magazyn + status + akcja
   // Przy wielu atrybutach (np. TC501: 6) tabela nie mieściła się w kolumnie —
   // ciaśniejsze odstępy i nagłówki łamane na dwie linie zamiast jednej długiej

@@ -23,7 +23,7 @@ Module._resolveFilename = function (request, ...rest) {
 const { products } = require('../src/data/products.ts')
 const {
   LICENCJA_DOSTAWA, zastosujRegulyLicencji, jestNaStanie, czyNaZapytanie, czyLicencjaElektroniczna,
-  dopiszLicencjobiorce, odczytajLicencjobiorce, poprawnyLicencjobiorca,
+  dopiszLicencjobiorce, odczytajLicencjobiorce, poprawnyLicencjobiorca, czyDodatekLicencji,
 } = require('../src/lib/licencje.ts')
 
 // Karty testowe dopisane do katalogu przed zbudowaniem zbiorów PN w lib/licencje-katalog
@@ -147,6 +147,13 @@ assert.equal(czyPnNaZapytanie('TEST-LIC-1'), false)
 for (const p of products) for (const v of p.variants ?? []) {
   if (v.quoteOnly) assert.equal(p.variants.some(x => x !== v && x.partNumber === v.partNumber && !x.quoteOnly), false, v.partNumber)
 }
+
+// 8b. Dodatek do licencji („+1 drukarka”) nie jest ceną „od” karty
+assert.equal(czyDodatekLicencji({ name: '+1 drukarka, 1 rok', attributes: {} }), true)
+assert.equal(czyDodatekLicencji({ name: 'Professional', attributes: { 'Licencja': 'dodatkowa drukarka' } }), true)
+assert.equal(czyDodatekLicencji({ name: 'Professional 2 drukarki', attributes: { 'Drukarki': '2' } }), false)
+assert.equal(czyDodatekLicencji({ name: 'Stanowisko', attributes: { 'Licencja': 'stanowisko' } }), false)
+for (const v of cardstudio.variants) assert.equal(czyDodatekLicencji(v), false, v.partNumber)
 
 // 9. Dane licencjobiorcy: zapis w uwagach i odczyt
 {

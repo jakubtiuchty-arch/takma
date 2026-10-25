@@ -9,7 +9,7 @@ import type { ProductVariant } from '@/data/products'
  * zamiast czytania tabeli po numerach PN. Klik ustawia ?pn= w adresie, a boks ceny i koszyk
  * biorą wybrany wariant z kontekstu. Na desktopie zostaje tabela.
  */
-export default function VariantQuickPick({ variants }: { variants: ProductVariant[] }) {
+export default function VariantQuickPick({ variants, quoteOnly }: { variants: ProductVariant[]; quoteOnly?: boolean }) {
   const router = useRouter()
   const { displayedPn, stockData, loading } = useSmartPrice()
   const named = variants.filter(v => v.name)
@@ -25,7 +25,7 @@ export default function VariantQuickPick({ variants }: { variants: ProductVarian
       <div className="flex flex-wrap gap-2">
         {named.map(v => {
           const active = v.partNumber === displayedPn
-          const naZapytanie = !!v.quoteOnly
+          const naZapytanie = !!quoteOnly || !!v.quoteOnly
           const out = !naZapytanie && isOut(v.partNumber)
           return (
             <button
