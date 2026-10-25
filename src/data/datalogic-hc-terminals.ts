@@ -134,7 +134,7 @@ const memor17Hc: Product = {
   id: 'datalogic-memor-17-hc',
   slug: 'datalogic-memor-17-hc',
   name: 'Datalogic Memor 17 HC',
-  shortDescription: 'Datalogic Memor 17 HC — terminal dla służby zdrowia z 5G i Wi-Fi 6E do pracy w szpitalu i podczas wizyt domowych: biała obudowa do dezynfekcji, eSIM, skaner Halogen 2D.',
+  shortDescription: 'Datalogic Memor 17 HC — terminal dla służby zdrowia z 5G i Wi-Fi 6E do pracy w szpitalu i podczas wizyt domowych: biała obudowa przygotowana do dezynfekcji, eSIM, skaner Halogen 2D.',
   seoTitle: 'Datalogic Memor 17 HC — terminal 5G dla służby zdrowia',
   seoDescription: 'Datalogic Memor 17 HC: biały terminal mobilny z 5G, Wi-Fi 6E i eSIM dla szpitali i opieki domowej, obudowa przygotowana do dezynfekcji, skaner z Green Spot, Qi. Terminal dla pielęgniarek Datalogic Memor 17 HC, Memor 17 HC Datalogic, terminal medyczny 5G Datalogic. PN: 944950006, 944950023.',
   description: `Datalogic Memor 17 HC to biały terminal dotykowy dla personelu medycznego, który pracuje w szpitalu i poza nim. Oprócz Wi-Fi 6E ma modem 5G z gniazdem nano SIM i obsługą eSIM. Łączność komórkowa utrzymuje połączenie podczas wizyt domowych u pacjentów i przy przemieszczaniu się między placówkami medycznymi. Terminal może także pracować w prywatnych sieciach 5G.
@@ -291,7 +291,7 @@ Aby korzystać ze stacji, potrzebny jest przewód i zasilacz z listy. Elementy t
     { name: 'Zasilanie', value: 'Zasilacz 94ACC0383 i przewód USB-A / USB-C 94ACC0327 (sprzedawane osobno)' },
     { name: 'Kompatybilność', value: 'Datalogic Memor 12 HC, Memor 17 HC' },
   ],
-  applications: ['Ładowanie terminala na stanowisku pielęgniarskim'],
+  applications: ['Bezprzewodowe ładowanie jednego terminala Memor 12 HC lub Memor 17 HC'],
   compatibleAccessories: [],
   relatedAccessories: ['datalogic-cable-usbc-skorpio-94ACC0327', 'datalogic-zasilacz-usb-94acc0383'],
   downloads: [HC_DATASHEET],
@@ -333,7 +333,7 @@ Zasilacz i przewód sieciowy nie wchodzą w skład stacji.`,
     { name: 'Zasilanie', value: 'Zasilacz 94ACC0380 i przewód sieciowy 95A051041 (sprzedawane osobno)' },
     { name: 'Kompatybilność', value: 'Datalogic Memor 12 HC, Memor 17 HC' },
   ],
-  applications: ['Ładowanie kilku terminali oddziału w jednym miejscu'],
+  applications: ['Bezprzewodowe ładowanie do czterech terminali Memor HC jednocześnie'],
   compatibleAccessories: [],
   relatedAccessories: ['datalogic-psu-94ACC0380', 'datalogic-przewod-zasilajacy-eu-95a051041'],
   downloads: [HC_DATASHEET],
@@ -408,7 +408,7 @@ Bateria jest przeznaczona do Memor 17 HC. Do czarnych terminali Memor 12 i Memor
     { name: 'Typ', value: 'Bateria wymienna, wersja HC' },
     { name: 'Kompatybilność', value: 'Datalogic Memor 17 HC' },
   ],
-  applications: ['Bateria zapasowa na kolejną zmianę'],
+  applications: ['Wymiana baterii w terminalu Memor 17 HC'],
   compatibleAccessories: [],
   relatedAccessories: [],
   downloads: [HC_DATASHEET],
@@ -423,7 +423,7 @@ const handStrapHc: Product = {
   shortDescription: 'Datalogic 94ACC0409 — jasnozielone paski na dłoń HC, komplet 5 sztuk; pasują do Memor 12 HC oraz Memor 17 HC.',
   seoTitle: 'Pasek na dłoń Datalogic 94ACC0409 HC do Memor HC, 5 szt.',
   seoDescription: 'Jasnozielony pasek na dłoń Datalogic 94ACC0409 (Hand Strap HC, 5 szt.) — akcesorium terminala Memor 17 HC i Memor 12 HC. PN: 94ACC0409.',
-  description: `Datalogic 94ACC0409 to pasek na dłoń w wersji HC, w kolorze jasnozielonym. Przeznaczony jest dla obu modeli HC: [Memor 17 HC](/produkt/datalogic-memor-17-hc) oraz [Memor 12 HC](/produkt/datalogic-memor-12-hc). Pasek ułatwia trzymanie terminala w jednej ręce i zmniejsza zmęczenie dłoni podczas długiej zmiany.
+  description: `Datalogic 94ACC0409 to pasek na dłoń w wersji HC, w kolorze jasnozielonym. Przeznaczony jest dla obu modeli HC: [Memor 17 HC](/produkt/datalogic-memor-17-hc) oraz [Memor 12 HC](/produkt/datalogic-memor-12-hc). Ergonomiczny pasek służy do noszenia terminala i pomaga ograniczyć zmęczenie dłoni podczas długiej zmiany.
 
 Opakowanie zawiera 5 pasków.`,
   categoryId: 'akcesoria',
@@ -443,7 +443,7 @@ Opakowanie zawiera 5 pasków.`,
     { name: 'Ilość w opakowaniu', value: '5 szt.' },
     { name: 'Kompatybilność', value: 'Datalogic Memor 12 HC, Memor 17 HC' },
   ],
-  applications: ['Praca terminalem w jednej ręce'],
+  applications: ['Noszenie terminala podczas długiej zmiany'],
   compatibleAccessories: [],
   relatedAccessories: [],
   downloads: [HC_DATASHEET],
@@ -527,7 +527,7 @@ const usbWallAdapter: Product = {
   shortDescription: 'Datalogic 94ACC0383 — zasilacz sieciowy z gniazdem USB-A i czterema wtyczkami regionalnymi do jednogniazdowych stacji Memor 12/17 i Memor 12 HC / 17 HC.',
   seoTitle: 'Zasilacz USB Datalogic 94ACC0383 do stacji Memor 12/17 HC',
   seoDescription: 'Zasilacz Datalogic 94ACC0383 (Power Wall Adapter, USB-A, 4 wtyczki regionalne) do zasilania jednogniazdowych stacji Memor 12 HC / 17 HC 94A150126 oraz 94A150128 i 94A150129 przewodem 94ACC0327. PN: 94ACC0383.',
-  description: `Datalogic 94ACC0383 to zasilacz sieciowy z gniazdem USB-A i czterema wymiennymi wtyczkami regionalnymi. Zasila jednogniazdowe stacje terminali Memor przez przewód USB-A / USB-C 94ACC0327: białą stację HC [94A150126](/produkt/datalogic-memor-hc-94a150126) oraz stacje [94A150128](/produkt/datalogic-dock-1slot-memor-12) i [94A150129](/produkt/datalogic-dock-wireless-memor-12) do Memor 12/17. Z tym samym przewodem ładuje także sam terminal, również w wersji HC, przez złącze USB-C.
+  description: `Datalogic 94ACC0383 to zasilacz sieciowy z gniazdem USB-A i czterema wymiennymi wtyczkami regionalnymi. Zasila jednogniazdowe stacje terminali Memor przez przewód USB-A / USB-C 94ACC0327: białą stację HC [94A150126](/produkt/datalogic-memor-hc-94a150126) oraz stacje [stacja 1-gniazdowa (94A150128)](/produkt/datalogic-dock-1slot-memor-12) i [stacja bezprzewodowa (94A150129)](/produkt/datalogic-dock-wireless-memor-12) do Memor 12/17. Z tym samym przewodem ładuje także sam terminal, również w wersji HC, przez złącze USB-C.
 
 ## Co jest potrzebne do użycia?
 
@@ -567,7 +567,7 @@ const powerCordEu: Product = {
   shortDescription: 'Datalogic 95A051041 — przewód sieciowy z wtyczką europejską do zasilacza 94ACC0380 (stacje i ładowarki Memor 12/17, także białe stacje HC).',
   seoTitle: 'Przewód zasilający Datalogic 95A051041 (Europa)',
   seoDescription: 'Przewód zasilający Datalogic 95A051041 (Power Cord, Europe) do zasilacza 94ACC0380, który zasila białe stacje HC 94A150127 i 94A150141 oraz stacje i ładowarki Memor 12/17. PN: 95A051041.',
-  description: `Datalogic 95A051041 to przewód sieciowy z wtyczką europejską. Łączy z gniazdem sieciowym zasilacz [94ACC0380](/produkt/datalogic-psu-memor-12), który jest sprzedawany bez przewodu. Ten zasilacz zasila między innymi białe stacje HC: czterogniazdową [94A150127](/produkt/datalogic-memor-hc-94a150127) i [Smart Docking 94A150141](/produkt/datalogic-memor-hc-94a150141).`,
+  description: `Datalogic 95A051041 to przewód sieciowy z wtyczką europejską. Łączy z gniazdem sieciowym zasilacz [zasilacz do stacji (94ACC0380)](/produkt/datalogic-psu-memor-12), który jest sprzedawany bez przewodu. Ten zasilacz zasila między innymi białe stacje HC: czterogniazdową [94A150127](/produkt/datalogic-memor-hc-94a150127) i Smart Docking [94A150141](/produkt/datalogic-memor-hc-94a150141).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'datalogic',
