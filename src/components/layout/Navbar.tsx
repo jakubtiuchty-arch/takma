@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import mega from './NavbarMegaMenu.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -222,6 +222,16 @@ function getMenuSections(item: NavItem): MenuSection[] {
 export default function Navbar() {
   const pathname = usePathname()
   const [openDesktopMenu, setOpenDesktopMenu] = useState<string | null>(null)
+  const menuCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const cancelMenuClose = () => {
+    if (menuCloseTimer.current) clearTimeout(menuCloseTimer.current)
+    menuCloseTimer.current = null
+  }
+  const scheduleMenuClose = () => {
+    cancelMenuClose()
+    menuCloseTimer.current = setTimeout(() => { setOpenDesktopMenu(null); menuCloseTimer.current = null }, 180)
+  }
+  useEffect(() => () => { if (menuCloseTimer.current) clearTimeout(menuCloseTimer.current) }, [])
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -316,7 +326,8 @@ export default function Navbar() {
                 if (item.children) {
                   return (
                     <div key={item.name} className={mega.anchor} data-desktop-menu
-                      onMouseEnter={() => { setOpenDesktopMenu(item.name); setMenuImagesArmed(true) }}
+                      onMouseEnter={() => { cancelMenuClose(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true) }}
+                      onMouseLeave={scheduleMenuClose}
                       onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setOpenDesktopMenu(null) }}
                       onKeyDown={(event) => {
                         if (event.key === 'Escape') { event.preventDefault(); setOpenDesktopMenu(null); event.currentTarget.querySelector('button')?.focus() }
@@ -332,7 +343,7 @@ export default function Navbar() {
                           onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true); const button = event.currentTarget; requestAnimationFrame(() => button.parentElement?.parentElement?.querySelector<HTMLElement>('[data-menu-panel] a')?.focus()) } }}
                         ><ChevronDownIcon size={14} className={clsx('transition-transform', openDesktopMenu === item.name && 'rotate-180')} /></button>
                       </div>
-                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, ['Terminale', 'Skanery'].includes(item.name) && mega.promotedPanel, item.name === 'Skanery' && mega.scannerPanel)} id={`nav-panel-${item.name}`} data-menu-panel>
+                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, ['Terminale', 'Skanery'].includes(item.name) && mega.promotedPanel, item.name === 'Skanery' && mega.scannerPanel)} id={`nav-panel-${item.name}`} data-menu-panel onMouseEnter={cancelMenuClose} onMouseLeave={scheduleMenuClose}>
                         <div className={mega.surface}>
                           <div className={mega.menuHeader}><strong>{item.name}</strong><Link href={item.href} className={mega.all} onClick={() => setOpenDesktopMenu(null)}>Zobacz wszystkie →</Link></div>
                           <div className={mega.body}>
