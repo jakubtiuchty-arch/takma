@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import mega from './NavbarMegaMenu.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -31,7 +32,7 @@ interface BrandLink {
 interface NavItem {
   name: string
   href: string
-  children?: { name: string; href: string }[]
+  children?: { name: string; href: string; group?: 'brand' }[]
   brandLinks?: BrandLink[]
   featuredProduct?: FeaturedProduct
 }
@@ -60,14 +61,14 @@ const navigation: NavItem[] = [
       { name: 'Terminale dla służby zdrowia', href: '/terminale-dla-sluzby-zdrowia' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },
-      { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra' },
-      { name: 'Terminale Newland', href: '/terminale-newland' },
-      { name: 'Terminale Honeywell', href: '/terminale-honeywell' },
-      { name: 'Terminale Datalogic', href: '/terminale-datalogic' },
-      { name: 'Terminale M3', href: '/terminale-m3-mobile' },
-      { name: 'Terminale CipherLab', href: '/terminale-cipherlab' },
-      { name: 'Terminale SUNMI', href: '/terminale-sunmi' },
-      { name: 'Terminale Bluebird', href: '/terminale-bluebird' },
+      { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra', group: 'brand' },
+      { name: 'Terminale Newland', href: '/terminale-newland', group: 'brand' },
+      { name: 'Terminale Honeywell', href: '/terminale-honeywell', group: 'brand' },
+      { name: 'Terminale Datalogic', href: '/terminale-datalogic', group: 'brand' },
+      { name: 'Terminale M3', href: '/terminale-m3-mobile', group: 'brand' },
+      { name: 'Terminale CipherLab', href: '/terminale-cipherlab', group: 'brand' },
+      { name: 'Terminale SUNMI', href: '/terminale-sunmi', group: 'brand' },
+      { name: 'Terminale Bluebird', href: '/terminale-bluebird', group: 'brand' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: 'Akcesoria do komputerów POS', href: '/akcesoria-do-komputerow-pos' },
       { name: 'Akcesoria do ekranów KDS', href: '/akcesoria-do-ekranow-kds' },
@@ -120,11 +121,11 @@ const navigation: NavItem[] = [
     href: '/skanery-kodow-kreskowych',
     children: [
       { name: 'Wszystkie skanery', href: '/skanery-kodow-kreskowych' },
-      { name: 'Skanery Zebra', href: '/skanery-kodow-kreskowych-zebra' },
-      { name: 'Skanery Honeywell', href: '/skanery-honeywell' },
-      { name: 'Skanery Datalogic', href: '/skanery-datalogic' },
-      { name: 'Skanery Newland', href: '/skanery-kodow-kreskowych-newland' },
-      { name: 'Skanery ProGlove', href: '/skanery-proglove' },
+      { name: 'Skanery Zebra', href: '/skanery-kodow-kreskowych-zebra', group: 'brand' },
+      { name: 'Skanery Honeywell', href: '/skanery-honeywell', group: 'brand' },
+      { name: 'Skanery Datalogic', href: '/skanery-datalogic', group: 'brand' },
+      { name: 'Skanery Newland', href: '/skanery-kodow-kreskowych-newland', group: 'brand' },
+      { name: 'Skanery ProGlove', href: '/skanery-proglove', group: 'brand' },
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },
@@ -138,11 +139,11 @@ const navigation: NavItem[] = [
     href: '/tablety-przemyslowe',
     children: [
       { name: 'Wszystkie tablety', href: '/tablety-przemyslowe' },
-      { name: 'Tablety Zebra', href: '/tablety-przemyslowe-zebra' },
-      { name: 'Tablety Honeywell', href: '/tablety-honeywell' },
-      { name: 'Tablety Brady', href: '/tablety-brady' },
-      { name: 'Tablety Getac', href: '/tablety-getac' },
-      { name: 'Tablety Bluebird', href: '/tablety-bluebird' },
+      { name: 'Tablety Zebra', href: '/tablety-przemyslowe-zebra', group: 'brand' },
+      { name: 'Tablety Honeywell', href: '/tablety-honeywell', group: 'brand' },
+      { name: 'Tablety Brady', href: '/tablety-brady', group: 'brand' },
+      { name: 'Tablety Getac', href: '/tablety-getac', group: 'brand' },
+      { name: 'Tablety Bluebird', href: '/tablety-bluebird', group: 'brand' },
       { name: 'Laptopy przemysłowe', href: '/laptopy-przemyslowe' },
     ],
   },
@@ -195,8 +196,30 @@ const navigation: NavItem[] = [
   { name: 'Kontakt', href: '/kontakt' },
 ]
 
+interface MenuSection { title: string; links: { name: string; href: string }[] }
+
+function getMenuSections(item: NavItem): MenuSection[] {
+  const links = (item.children || []).filter(link => link.href !== item.href)
+  const isBrand = (link: { group?: 'brand' }) => link.group === 'brand'
+  const accessories = links.filter(link => /akcesoria|nawijarki|dyspensery/.test(link.href))
+  const brands = item.brandLinks?.map(({ name, href }) => ({ name, href })) || links.filter(isBrand).map(link => ({ ...link, name: link.name.replace(/^(Terminale|Skanery|Tablety) /, '') }))
+  const types = links.filter(link => !isBrand(link) && !accessories.includes(link))
+  if (brands.length || accessories.length) return [
+    { title: 'Urządzenia', links: types },
+    { title: 'Producenci', links: brands },
+    { title: 'Akcesoria i wyposażenie', links: accessories },
+  ].filter(section => section.links.length)
+  if (item.name === 'Materiały') return [
+    { title: 'Etykiety i opaski', links: links.filter(link => /etykiety|opaski/.test(link.href)) },
+    { title: 'Taśmy i tusze', links: links.filter(link => /tasmy|tusze/.test(link.href)) },
+    { title: 'Karty', links: links.filter(link => /karty/.test(link.href)) },
+  ].filter(section => section.links.length)
+  return [{ title: item.name === 'Poradniki' ? 'Wiedza i instrukcje' : 'Kategorie', links }]
+}
+
 export default function Navbar() {
   const pathname = usePathname()
+  const [openDesktopMenu, setOpenDesktopMenu] = useState<string | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -217,13 +240,24 @@ export default function Navbar() {
 
   // Zamknij menu mobilne przy zmianie strony
   useEffect(() => {
+    setOpenDesktopMenu(null)
     setIsMobileMenuOpen(false)
     setIsMobileSearchOpen(false)
   }, [pathname])
 
+  useEffect(() => {
+    if (!openDesktopMenu) return
+    const closeOutside = (event: PointerEvent) => {
+      if (!(event.target instanceof Element) || !event.target.closest('[data-desktop-menu]')) setOpenDesktopMenu(null)
+    }
+    document.addEventListener('pointerdown', closeOutside)
+    return () => document.removeEventListener('pointerdown', closeOutside)
+  }, [openDesktopMenu])
+
   return (
     <>
       <header
+        onMouseLeave={() => setOpenDesktopMenu(null)}
         className={clsx(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
           isScrolled
@@ -252,7 +286,7 @@ export default function Navbar() {
         </div>
 
         {/* Main navbar */}
-        <nav className="container-main">
+        <nav className="container-main relative">
           <div className="flex items-center justify-between h-16 xl:h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center shrink-0 -ml-1 xl:-ml-3">
@@ -279,117 +313,42 @@ export default function Navbar() {
 
                 if (item.children) {
                   return (
-                    <div key={item.name} className="relative group" onMouseEnter={() => setMenuImagesArmed(true)}>
-                      <Link
-                        href={item.href}
-                        className={clsx(
-                          'text-sm font-medium transition-colors relative py-2 inline-flex items-center gap-1',
-                          isActive ? 'text-primary-600' : 'text-gray-600 hover:text-gray-900'
-                        )}
-                      >
-                        {item.name}
-                        <ChevronDownIcon size={14} className="transition-transform group-hover:rotate-180" />
-                        {isActive && (
-                          <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full" />
-                        )}
-                      </Link>
-                      <div className="absolute top-full left-0 pt-2 hidden group-hover:block z-50 before:absolute before:inset-x-0 before:-top-2 before:h-4 before:content-['']">
-                        {item.featuredProduct ? (
-                          <div className={clsx(
-                            'bg-white rounded-xl shadow-lg ring-1 ring-gray-100 flex overflow-hidden',
-                            item.brandLinks ? 'min-w-[720px]' : 'min-w-[560px]'
-                          )}>
-                            {/* Left: category links */}
-                            <div className="py-2 min-w-[220px] border-r border-gray-100 bg-white">
-                              {item.children.map((child) => (
-                                <Link
-                                  key={child.href}
-                                  href={child.href}
-                                  className={clsx(
-                                    'block px-4 py-2.5 text-sm transition-colors',
-                                    pathname === child.href
-                                      ? 'text-primary-600 bg-primary-50 font-medium'
-                                      : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
-                                  )}
-                                >
-                                  {child.name}
-                                </Link>
-                              ))}
-                            </div>
-                            {/* Middle: brand logos (if present) */}
-                            {item.brandLinks && (
-                              <div className="py-4 px-5 min-w-[160px] border-r border-gray-100 flex flex-col items-center bg-white">
-                                <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Producenci</p>
-                                <div className="space-y-1 flex flex-col items-center w-full">
-                                  {item.brandLinks.map((brand) => (
-                                    <Link
-                                      key={brand.href}
-                                      href={brand.href}
-                                      className="flex items-center justify-center px-3 py-2 rounded-lg hover:bg-primary-50 transition-colors w-full"
-                                    >
-                                      <img
-                                        loading="lazy"
-                                        src={brand.logo}
-                                        alt={brand.name}
-                                        className={clsx(brand.logoClassName || 'h-[25px]', 'w-auto opacity-70')}
-                                      />
-                                    </Link>
-                                  ))}
-                                </div>
-                              </div>
-                            )}
-                            {/* Right: featured product */}
-                            <Link
-                              href={`/produkt/${item.featuredProduct.slug}`}
-                              className="flex-1 min-w-[280px] p-5 group/featured bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 hover:from-blue-100 hover:via-purple-50 hover:to-pink-100 transition-all border-l-2 border-l-blue-200"
-                            >
-                              <div>
-                              <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-3">Polecany produkt</p>
-                              {/* CSS background zamiast <img> — obrazy menu nie mogą konkurować
-                                  o miniaturę SERP z obrazem produktu na kartach (Google wybierał
-                                  drukarkę z menu zamiast np. białej rolki etykiet) */}
-                              <div
-                                role="img"
-                                aria-label={item.featuredProduct.name}
-                                className={clsx("relative w-full mb-3 bg-contain bg-center bg-no-repeat", item.featuredProduct.imageHeight || 'h-40')}
-                                style={menuImagesArmed ? { backgroundImage: `url(${item.featuredProduct.image})` } : undefined}
-                              />
-                              <p className="text-sm font-bold text-gray-900 group-hover/featured:text-primary-600 transition-colors">
-                                {item.featuredProduct.name}
-                              </p>
-                              <p className="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed">
-                                {item.featuredProduct.shortDesc}
-                              </p>
-                              <div className="flex items-center justify-between mt-2">
-                                <p className="text-sm font-bold text-primary-600">
-                                  od {item.featuredProduct.priceFrom.toLocaleString('pl-PL')} zł <span className="text-xs font-normal text-gray-400">netto</span>
-                                </p>
-                                <span className="text-xs font-semibold text-primary-600 opacity-0 group-hover/featured:opacity-100 transition-opacity">
-                                  Zobacz →
-                                </span>
-                              </div>
-                              </div>
-                            </Link>
-                          </div>
-                        ) : (
-                          <div className="bg-white rounded-xl shadow-lg border border-gray-100 py-2 min-w-[240px]">
-                            {item.children.map((child) => (
-                              <Link
-                                key={child.href}
-                                href={child.href}
-                                className={clsx(
-                                  'block px-4 py-2.5 text-sm transition-colors',
-                                  pathname === child.href
-                                    ? 'text-primary-600 bg-primary-50 font-medium'
-                                    : 'text-gray-600 hover:bg-primary-50 hover:text-primary-600'
-                                )}
-                              >
-                                {child.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
+                    <div key={item.name} data-desktop-menu
+                      onMouseEnter={() => { setOpenDesktopMenu(item.name); setMenuImagesArmed(true) }}
+                      onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setOpenDesktopMenu(null) }}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Escape') { event.preventDefault(); setOpenDesktopMenu(null); event.currentTarget.querySelector('button')?.focus() }
+                      }}
+                    >
+                      <div className="flex items-center gap-0.5">
+                        <Link href={item.href} onFocus={() => { setOpenDesktopMenu(item.name); setMenuImagesArmed(true) }} onClick={() => setOpenDesktopMenu(null)}
+                          className={clsx('text-sm font-medium transition-colors relative py-2', isActive || openDesktopMenu === item.name ? 'text-primary-600' : 'text-gray-600 hover:text-gray-900')}
+                        >{item.name}{isActive && <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600 rounded-full" />}</Link>
+                        <button type="button" aria-label={`Rozwiń menu: ${item.name}`} aria-expanded={openDesktopMenu === item.name} aria-controls={`nav-panel-${item.name}`}
+                          className="p-1 -mr-1 rounded text-gray-500 hover:text-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600"
+                          onClick={() => { setOpenDesktopMenu(openDesktopMenu === item.name ? null : item.name); setMenuImagesArmed(true) }}
+                          onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true); const button = event.currentTarget; requestAnimationFrame(() => button.parentElement?.parentElement?.querySelector<HTMLElement>('[data-menu-panel] a')?.focus()) } }}
+                        ><ChevronDownIcon size={14} className={clsx('transition-transform', openDesktopMenu === item.name && 'rotate-180')} /></button>
                       </div>
+                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, !item.featuredProduct && mega.compact)} id={`nav-panel-${item.name}`} data-menu-panel>
+                        <div className={mega.surface}>
+                          <div className={mega.body}>
+                            {getMenuSections(item).map(section => <section key={section.title} className={clsx(mega.section, section.links.length >= 8 && mega.wide)} aria-label={section.title}>
+                              <h2 className={mega.heading}>{section.title}</h2>
+                              <div className={clsx(mega.links, section.links.length >= 8 && mega.twoColumns)}>{section.links.map(child => <Link key={child.href} href={child.href} onClick={() => setOpenDesktopMenu(null)} aria-current={pathname === child.href ? 'page' : undefined} className={clsx(mega.link, pathname === child.href && mega.active)}>{child.name}</Link>)}</div>
+                            </section>)}
+                            {item.featuredProduct && <Link href={`/produkt/${item.featuredProduct.slug}`} onClick={() => setOpenDesktopMenu(null)} className={mega.featured}>
+                              <span className={mega.featuredLabel}>Polecany produkt</span>
+                              <div role="img" aria-label={item.featuredProduct.name} className={mega.featuredImage} style={menuImagesArmed ? { backgroundImage: `url(${item.featuredProduct.image})` } : undefined} />
+                              <strong className={mega.featuredName}>{item.featuredProduct.name}</strong>
+                              <p className={mega.featuredDesc}>{item.featuredProduct.shortDesc}</p>
+                              <p className={mega.featuredPrice}>od {item.featuredProduct.priceFrom.toLocaleString('pl-PL')} zł <small>netto</small></p>
+                              <span className={mega.featuredCta}>Zobacz produkt →</span>
+                            </Link>}
+                          </div>
+                          <div className={mega.footer}><Link href={item.href} onClick={() => setOpenDesktopMenu(null)} className={mega.all}>{item.children.find(child => child.href === item.href)?.name || `Zobacz: ${item.name}`} <span aria-hidden="true">→</span></Link><span className={mega.hint}>Potrzebujesz pomocy? <Link href="/kontakt" onClick={() => setOpenDesktopMenu(null)}>Skontaktuj się z nami</Link></span></div>
+                        </div>
+                      </div>}
                     </div>
                   )
                 }
@@ -397,6 +356,8 @@ export default function Navbar() {
                 return (
                   <Link
                     key={item.name}
+                    onMouseEnter={() => setOpenDesktopMenu(null)}
+                    onFocus={() => setOpenDesktopMenu(null)}
                     href={item.href}
                     className={clsx(
                       'text-sm font-medium transition-colors relative py-2',
@@ -486,6 +447,8 @@ export default function Navbar() {
                         <>
                           <button
                             onClick={() => setExpandedMobileItem(isExpanded ? null : item.name)}
+                            aria-expanded={isExpanded}
+                            aria-controls={`mobile-submenu-${item.name}`}
                             className={clsx(
                               'flex items-center justify-between w-full px-4 py-3 rounded-lg font-medium transition-colors',
                               isActive
@@ -500,7 +463,7 @@ export default function Navbar() {
                             />
                           </button>
                           {isExpanded && (
-                            <ul className="ml-4 mt-1 space-y-0.5">
+                            <ul id={`mobile-submenu-${item.name}`} className="ml-4 mt-1 space-y-0.5">
                               {item.children.map((child) => (
                                 <li key={child.href}>
                                   <Link
