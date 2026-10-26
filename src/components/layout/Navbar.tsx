@@ -37,6 +37,8 @@ interface NavItem {
   featuredProduct?: FeaturedProduct
 }
 
+const brandLogos: Record<string, string> = {"Zebra": "/images/partners/logo_zebra.png", "Honeywell": "/images/partners/logo_honeywell.png", "Newland": "/images/partners/logo_newland.png", "Datalogic": "/images/partners/logo_datalogic.png", "M3": "/images/partners/logo_m3mobile.png", "CipherLab": "/images/manufacturers/cipherlab.webp", "SUNMI": "/images/manufacturers/sunmi.svg", "Bluebird": "/images/manufacturers/bluebird.svg", "Brady": "/images/manufacturers/brady.svg", "Getac": "/images/manufacturers/getac.svg"}
+
 const navigation: NavItem[] = [
   {
     name: 'Terminale',
@@ -257,7 +259,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        onMouseLeave={() => setOpenDesktopMenu(null)}
+
         className={clsx(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
           isScrolled
@@ -313,7 +315,7 @@ export default function Navbar() {
 
                 if (item.children) {
                   return (
-                    <div key={item.name} data-desktop-menu
+                    <div key={item.name} className={mega.anchor} data-desktop-menu
                       onMouseEnter={() => { setOpenDesktopMenu(item.name); setMenuImagesArmed(true) }}
                       onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setOpenDesktopMenu(null) }}
                       onKeyDown={(event) => {
@@ -330,23 +332,15 @@ export default function Navbar() {
                           onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true); const button = event.currentTarget; requestAnimationFrame(() => button.parentElement?.parentElement?.querySelector<HTMLElement>('[data-menu-panel] a')?.focus()) } }}
                         ><ChevronDownIcon size={14} className={clsx('transition-transform', openDesktopMenu === item.name && 'rotate-180')} /></button>
                       </div>
-                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, !item.featuredProduct && mega.compact)} id={`nav-panel-${item.name}`} data-menu-panel>
+                      {openDesktopMenu === item.name && <div className={mega.panel} id={`nav-panel-${item.name}`} data-menu-panel>
                         <div className={mega.surface}>
+                          <div className={mega.menuHeader}><strong>{item.name}</strong><Link href={item.href} className={mega.all} onClick={() => setOpenDesktopMenu(null)}>Zobacz wszystkie →</Link></div>
                           <div className={mega.body}>
-                            {getMenuSections(item).map(section => <section key={section.title} className={clsx(mega.section, section.links.length >= 8 && mega.wide)} aria-label={section.title}>
-                              <h2 className={mega.heading}>{section.title}</h2>
-                              <div className={clsx(mega.links, section.links.length >= 8 && mega.twoColumns)}>{section.links.map(child => <Link key={child.href} href={child.href} onClick={() => setOpenDesktopMenu(null)} aria-current={pathname === child.href ? 'page' : undefined} className={clsx(mega.link, pathname === child.href && mega.active)}>{child.name}</Link>)}</div>
+                            {getMenuSections(item).map(section => <section key={section.title} className={mega.section} aria-label={section.title}>
+                              <h2 className={mega.heading}>{section.title === 'Producenci' ? 'Marki' : section.title === 'Akcesoria i wyposażenie' ? 'Akcesoria' : section.title}</h2>
+                              <div className={clsx(mega.links, (section.title === 'Producenci' && section.links.length > 5) && mega.twoColumns)}>{section.links.map(child => <Link key={child.href} href={child.href} onClick={() => setOpenDesktopMenu(null)} aria-current={pathname === child.href ? 'page' : undefined} className={clsx(mega.link, section.title === 'Producenci' && mega.brandLink, pathname === child.href && mega.active)}>{section.title === 'Producenci' && (brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo) ? <Image unoptimized width={108} height={30} src={brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo || ''} alt={child.name} className={mega.brandLogo} /> : child.name}</Link>)}</div>
                             </section>)}
-                            {item.featuredProduct && <Link href={`/produkt/${item.featuredProduct.slug}`} onClick={() => setOpenDesktopMenu(null)} className={mega.featured}>
-                              <span className={mega.featuredLabel}>Polecany produkt</span>
-                              <div role="img" aria-label={item.featuredProduct.name} className={mega.featuredImage} style={menuImagesArmed ? { backgroundImage: `url(${item.featuredProduct.image})` } : undefined} />
-                              <strong className={mega.featuredName}>{item.featuredProduct.name}</strong>
-                              <p className={mega.featuredDesc}>{item.featuredProduct.shortDesc}</p>
-                              <p className={mega.featuredPrice}>od {item.featuredProduct.priceFrom.toLocaleString('pl-PL')} zł <small>netto</small></p>
-                              <span className={mega.featuredCta}>Zobacz produkt →</span>
-                            </Link>}
                           </div>
-                          <div className={mega.footer}><Link href={item.href} onClick={() => setOpenDesktopMenu(null)} className={mega.all}>{item.children.find(child => child.href === item.href)?.name || `Zobacz: ${item.name}`} <span aria-hidden="true">→</span></Link><span className={mega.hint}>Potrzebujesz pomocy? <Link href="/kontakt" onClick={() => setOpenDesktopMenu(null)}>Skontaktuj się z nami</Link></span></div>
                         </div>
                       </div>}
                     </div>
