@@ -332,7 +332,7 @@ export default function Navbar() {
                           onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true); const button = event.currentTarget; requestAnimationFrame(() => button.parentElement?.parentElement?.querySelector<HTMLElement>('[data-menu-panel] a')?.focus()) } }}
                         ><ChevronDownIcon size={14} className={clsx('transition-transform', openDesktopMenu === item.name && 'rotate-180')} /></button>
                       </div>
-                      {openDesktopMenu === item.name && <div className={mega.panel} id={`nav-panel-${item.name}`} data-menu-panel>
+                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, item.name === 'Terminale' && mega.promotedPanel)} id={`nav-panel-${item.name}`} data-menu-panel>
                         <div className={mega.surface}>
                           <div className={mega.menuHeader}><strong>{item.name}</strong><Link href={item.href} className={mega.all} onClick={() => setOpenDesktopMenu(null)}>Zobacz wszystkie →</Link></div>
                           <div className={mega.body}>
@@ -340,6 +340,11 @@ export default function Navbar() {
                               <h2 className={mega.heading}>{section.title === 'Producenci' ? 'Marki' : section.title === 'Akcesoria i wyposażenie' ? 'Akcesoria' : section.title}</h2>
                               <div className={clsx(mega.links, (section.title === 'Producenci' && section.links.length > 5) && mega.twoColumns)}>{section.links.map(child => <Link key={child.href} href={child.href} onClick={() => setOpenDesktopMenu(null)} aria-current={pathname === child.href ? 'page' : undefined} className={clsx(mega.link, section.title === 'Producenci' && mega.brandLink, pathname === child.href && mega.active)}>{section.title === 'Producenci' && (brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo) ? <Image unoptimized width={108} height={30} src={brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo || ''} alt={child.name} className={mega.brandLogo} /> : child.name}</Link>)}</div>
                             </section>)}
+                            {item.name === 'Terminale' && <Link href="https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-iii" className={mega.promo} onClick={() => setOpenDesktopMenu(null)}>
+                              <div className={mega.promoTop}><img src="/images/partners/logo_newland.png" alt="Newland"/><span>WYBRANE DLA CIEBIE</span></div>
+                              <div className={mega.promoImages}><img className={mega.promoPair} src="/images/products/newland-mt95-promo-enhanced-v1.png" alt="Newland MT95 Kambur Pro III — przód i tył"/></div>
+                              <div className={mega.promoCopy}><span className={mega.promoEyebrow}>MT95 KAMBUR PRO III</span><strong>W magazynie.<br/>I poza zasięgiem Wi-Fi.</strong><p>Terminal 5G ze skanerem 2D.<br/>Android 15. Bateria z hot-swap.</p><span className={mega.promoCta}>Poznaj MT95 <span aria-hidden="true">→</span></span></div>
+                            </Link>}
                           </div>
                         </div>
                       </div>}
