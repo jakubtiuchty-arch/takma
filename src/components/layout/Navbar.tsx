@@ -55,12 +55,12 @@ const navigation: NavItem[] = [
     },
     children: [
       { name: 'Wszystkie terminale', href: '/terminale-mobilne' },
-      { name: 'Komputery POS', href: '/komputery-pos' },
-      { name: 'Ekrany KDS', href: '/ekrany-kds' },
-      { name: 'Kioski samoobsługowe', href: '/kioski-samoobslugowe' },
       { name: 'Terminale RFID', href: '/terminale-rfid' },
       { name: 'Terminale naramienne', href: '/terminale-naramienne' },
       { name: 'Terminale dla służby zdrowia', href: '/terminale-dla-sluzby-zdrowia' },
+      { name: 'Komputery POS', href: '/komputery-pos' },
+      { name: 'Ekrany KDS', href: '/ekrany-kds' },
+      { name: 'Kioski samoobsługowe', href: '/kioski-samoobslugowe' },
       { name: 'Uchwyty RFID', href: '/uchwyty-rfid' },
       { name: 'Czytniki RFID', href: '/czytniki-rfid' },
       { name: 'Terminale Zebra', href: '/terminale-mobilne-zebra', group: 'brand' },
@@ -206,9 +206,10 @@ function getMenuSections(item: NavItem): MenuSection[] {
   const accessories = links.filter(link => /akcesoria|nawijarki|dyspensery/.test(link.href))
   const brands = item.brandLinks?.map(({ name, href }) => ({ name, href })) || links.filter(isBrand).map(link => ({ ...link, name: link.name.replace(/^(Terminale|Skanery|Tablety) /, '') }))
   const types = links.filter(link => !isBrand(link) && !accessories.includes(link))
+  if (item.name === 'Terminale') types.unshift({ name: 'Terminale', href: item.href })
   if (brands.length || accessories.length) return [
-    { title: 'Urządzenia', links: types },
     { title: 'Producenci', links: brands },
+    { title: 'Urządzenia', links: types },
     { title: 'Akcesoria i wyposażenie', links: accessories },
   ].filter(section => section.links.length)
   if (item.name === 'Materiały') return [
