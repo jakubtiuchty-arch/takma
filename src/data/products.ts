@@ -95423,7 +95423,7 @@ for (const subcategory of subcategories) {
   }
 }
 
-// Drukarki TSC serii TL/DL 4" (TL241 / TL341, DL241) trafiają do podkategorii biurkowych według `subcategoryIds`.
+// Drukarki TSC serii TL/DL 4" (TL241, TL341, DL241) trafiają do podkategorii biurkowych według `subcategoryIds`.
 for (const subcategory of subcategories) {
   const additions = tscTlDlProducts.filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
