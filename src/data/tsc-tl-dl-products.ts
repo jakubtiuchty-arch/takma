@@ -114,8 +114,8 @@ TL241 ma USB 2.0, port Ethernet 10/100 Mb/s, 128 MB pamięci Flash i 64 MB DRAM.
       answer: 'TL241 pracuje z taśmami nawiniętymi farbą na zewnątrz, szerokimi na 40–110 mm. Dłuższa taśma ma 300 m długości, rolkę o średnicy maks. 67 mm i gilzę 1". Krótsza ma 110 m, rolkę maks. 40 mm i gilzę 0,5". Trzpienie i papierowe gilzy do obu rodzajów taśmy są dołączone do drukarki.',
     },
     {
-      question: 'Czy do TL241 można zamontować obcinarkę?',
-      answer: 'Tak. Do TL241 dealer może zamontować gilotynę, która odcina etykietę w całości po wydruku. Inne opcje fabryczne i opcje montowane przez użytkownika nie są dostępne.',
+      question: 'Czy do TL241 można zamontować gilotynę?',
+      answer: 'Tak. Do TL241 dealer może zamontować gilotynę, która odcina etykietę w całości po wydruku. TSC nie przewiduje dla TL241 opcji fabrycznych ani zestawów montowanych przez użytkownika.',
     },
     {
       question: 'Czy TSC TL241 drukuje szablony przygotowane w ZPL?',
@@ -123,7 +123,7 @@ TL241 ma USB 2.0, port Ethernet 10/100 Mb/s, 128 MB pamięci Flash i 64 MB DRAM.
     },
     {
       question: 'Jak podłączyć TL241 do sieci i zarządzać nim zdalnie?',
-      answer: 'TL241 ma wbudowany port Ethernet 10/100 Mb/s oraz USB 2.0. Oferowana wersja nie ma Wi-Fi ani Bluetooth. W programie TSC Console drukarkę dodaje się po adresie IP. Program pokazuje stan urządzenia, zmienia ustawienia i aktualizuje firmware. Moduł TPH Care w tym programie pokazuje wadliwe punkty głowicy.',
+      answer: 'TL241 ma wbudowany port Ethernet 10/100 Mb/s oraz USB 2.0. Oferowana wersja nie ma Wi-Fi ani Bluetooth. W programie TSC Console drukarkę dodaje się po adresie IP. Program pokazuje stan urządzenia, zmienia ustawienia i aktualizuje firmware. Moduł TPH Care w tym programie pokazuje uszkodzone punkty głowicy.',
     },
     {
       question: 'Czy głowicę w TSC TL241 można wymienić samodzielnie?',
@@ -141,6 +141,7 @@ TL241 ma USB 2.0, port Ethernet 10/100 Mb/s, 128 MB pamięci Flash i 64 MB DRAM.
   downloads: downloadsTlDl,
   relatedProducts: ['tsc-tl341', 'tsc-dl241', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd230t', 'brother-td-4t', 'citizen-cl-e321'],
   createdAt: '2026-10-25',
+  updatedAt: '2026-10-26',
   sameAs: 'https://emea.tscprinters.com/en/products/tl-dl-series-4-inch-performance-desktop-printers',
 }
 
@@ -207,7 +208,7 @@ Do komputera podłącza się ją przewodem USB 2.0, do sieci firmowej — przez 
     },
     {
       question: 'Jakie etykiety można drukować na TSC TL341?',
-      answer: 'TL341 przyjmuje materiał szeroki na 19–118 mm, o grubości 0,06–0,19 mm, nawinięty stroną zadruku na zewnątrz na gilzę 25,4 mm. Rolka może mieć do 127 mm średnicy zewnętrznej. Obsługiwane są etykiety wycinane, materiał ciągły, papier z czarnym znacznikiem i składanka. Długość pojedynczej etykiety: 5–11 430 mm.',
+      answer: 'TL341 przyjmuje materiał szeroki na 19–118 mm, o grubości 0,06–0,19 mm, nawinięty stroną zadruku na zewnątrz na gilzę 25,4 mm. Rolka może mieć do 127 mm średnicy zewnętrznej. Obsługiwane są etykiety wycinane, materiał ciągły, składanka oraz materiał z czarnym znacznikiem. Długość pojedynczej etykiety: 5–11 430 mm.',
     },
     {
       question: 'Czy TL341 obsługuje polecenia ZPL i EPL?',
@@ -355,6 +356,7 @@ Do obsługi służy jeden przycisk i trójkolorowa dioda stanu. Głowicę można
   downloads: downloadsTlDl,
   relatedProducts: ['tsc-tl241', 'tsc-tl341', 'zebra-zd421d', 'zebra-zd230d', 'zebra-zd220d', 'honeywell-pc45d', 'brother-td-4d', 'citizen-cl-e300'],
   createdAt: '2026-10-25',
+  updatedAt: '2026-10-26',
   sameAs: 'https://emea.tscprinters.com/en/products/tl-dl-series-4-inch-performance-desktop-printers',
 }
 
