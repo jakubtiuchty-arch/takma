@@ -37,7 +37,7 @@ interface NavItem {
   featuredProduct?: FeaturedProduct
 }
 
-const brandLogos: Record<string, string> = {"Zebra": "/images/partners/logo_zebra.png", "Honeywell": "/images/partners/logo_honeywell.png", "Newland": "/images/partners/logo_newland.png", "Datalogic": "/images/partners/logo_datalogic.png", "M3": "/images/partners/logo_m3mobile.png", "CipherLab": "/images/manufacturers/cipherlab.webp", "SUNMI": "/images/manufacturers/sunmi.svg", "Bluebird": "/images/manufacturers/bluebird.svg", "Brady": "/images/manufacturers/brady.svg", "Getac": "/images/manufacturers/getac.svg"}
+const brandLogos: Record<string, string> = {"ProGlove": "/images/manufacturers/proglove.svg","Zebra": "/images/partners/logo_zebra.png", "Honeywell": "/images/partners/logo_honeywell.png", "Newland": "/images/partners/logo_newland.png", "Datalogic": "/images/partners/logo_datalogic.png", "M3": "/images/partners/logo_m3mobile.png", "CipherLab": "/images/manufacturers/cipherlab.webp", "SUNMI": "/images/manufacturers/sunmi.svg", "Bluebird": "/images/manufacturers/bluebird.svg", "Brady": "/images/manufacturers/brady.svg", "Getac": "/images/manufacturers/getac.svg"}
 
 const navigation: NavItem[] = [
   {
@@ -332,7 +332,7 @@ export default function Navbar() {
                           onKeyDown={(event) => { if (event.key === 'ArrowDown') { event.preventDefault(); setOpenDesktopMenu(item.name); setMenuImagesArmed(true); const button = event.currentTarget; requestAnimationFrame(() => button.parentElement?.parentElement?.querySelector<HTMLElement>('[data-menu-panel] a')?.focus()) } }}
                         ><ChevronDownIcon size={14} className={clsx('transition-transform', openDesktopMenu === item.name && 'rotate-180')} /></button>
                       </div>
-                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, item.name === 'Terminale' && mega.promotedPanel)} id={`nav-panel-${item.name}`} data-menu-panel>
+                      {openDesktopMenu === item.name && <div className={clsx(mega.panel, ['Terminale', 'Skanery'].includes(item.name) && mega.promotedPanel, item.name === 'Skanery' && mega.scannerPanel)} id={`nav-panel-${item.name}`} data-menu-panel>
                         <div className={mega.surface}>
                           <div className={mega.menuHeader}><strong>{item.name}</strong><Link href={item.href} className={mega.all} onClick={() => setOpenDesktopMenu(null)}>Zobacz wszystkie →</Link></div>
                           <div className={mega.body}>
@@ -340,6 +340,11 @@ export default function Navbar() {
                               <h2 className={mega.heading}>{section.title === 'Producenci' ? 'Marki' : section.title === 'Akcesoria i wyposażenie' ? 'Akcesoria' : section.title}</h2>
                               <div className={clsx(mega.links, (section.title === 'Producenci' && section.links.length > 5) && mega.twoColumns)}>{section.links.map(child => <Link key={child.href} href={child.href} onClick={() => setOpenDesktopMenu(null)} aria-current={pathname === child.href ? 'page' : undefined} className={clsx(mega.link, section.title === 'Producenci' && mega.brandLink, pathname === child.href && mega.active)}>{section.title === 'Producenci' && (brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo) ? <Image unoptimized width={108} height={30} src={brandLogos[child.name] || item.brandLinks?.find(brand => brand.name === child.name)?.logo || ''} alt={child.name} className={mega.brandLogo} /> : child.name}</Link>)}</div>
                             </section>)}
+                            {item.name === 'Skanery' && <Link href="https://www.takma.com.pl/produkt/proglove-leo" className={clsx(mega.promo, mega.leoPromo)} onClick={() => setOpenDesktopMenu(null)}>
+                              <div className={mega.promoTop}><img src="/images/manufacturers/proglove.svg" alt="ProGlove"/><span>WYBRANE DLA CIEBIE</span></div>
+                              <div className={mega.leoWorkPhoto}><img src="/images/proglove-leo-landing/leo-about-device-image.webp" alt="ProGlove LEO zamocowany na dłoni w opasce"/></div>
+                              <div className={mega.promoCopy}><span className={mega.promoEyebrow}>LEO · SKANER NOSZONY</span><strong>Skaner na dłoni.<br/>Ręce do pracy.</strong><p>Kompletuj i pakuj bez odkładania skanera.</p><div className={mega.leoFacts}><span>35 g</span><span>Kody 1D i 2D</span></div><span className={mega.promoCta}>Poznaj ProGlove LEO <span aria-hidden="true">→</span></span></div>
+                            </Link>}
                             {item.name === 'Terminale' && <Link href="https://www.takma.com.pl/produkt/newland-mt95-kambur-pro-iii" className={mega.promo} onClick={() => setOpenDesktopMenu(null)}>
                               <div className={mega.promoTop}><img src="/images/partners/logo_newland.png" alt="Newland"/><span>WYBRANE DLA CIEBIE</span></div>
                               <div className={mega.promoImages}><img className={mega.promoPair} src="/images/products/newland-mt95-promo-enhanced-v1.png" alt="Newland MT95 Kambur Pro III — przód i tył"/></div>
