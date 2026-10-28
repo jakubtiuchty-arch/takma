@@ -1,3 +1,4 @@
+import { octoberLaunchProducts } from './product-launches-2026-10'
 import { zebraDesignerProducts } from './zebradesigner-products'
 import { sunmiProducts, sunmiAccessories } from './sunmi-products'
 import { zebraKc401Products, zebraKc401Accessories } from './zebra-kc401-products'
@@ -95324,6 +95325,14 @@ for (const subcategory of subcategories) {
   }
 }
 
+for (const subcategory of subcategories) {
+  const additions = octoberLaunchProducts.filter(p => p.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Akcesoria Zebra KC401 trafiają do /akcesoria-do-kioskow według `subcategoryIds`. Uchwyt PrintKiosk
 // (zd621r) ma tę podkategorię jako drugą; przewód 450042 nie ma podkategorii, więc dopisujemy go wprost,
 // bez zmiany okruszków na jego karcie.
@@ -95493,6 +95502,7 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
+  ...octoberLaunchProducts,
   ...sunmiProducts,
   ...sunmiAccessories,
   ...zebraKc401Products,

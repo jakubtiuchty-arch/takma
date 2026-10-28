@@ -2076,8 +2076,8 @@ categoryFilters['laptopy-przemyslowe'] = [
     { value: 'AMD', pattern: '^AMD', specs: ['Procesor'] }
   ] },
   { specKey: 'wwan-laptop', label: 'Łączność komórkowa', derived: [
-    { value: 'Tak (4G LTE lub 5G)', slugs: ['getac-b360', 'getac-s410-g5', 'getac-s510'] },
-    { value: 'Nie (Wi-Fi)', slugs: ['getac-b360', 'getac-v120', 'getac-s410-g5', 'getac-s510', 'getac-s510ad'] }
+    { value: 'Tak (4G LTE lub 5G)', slugs: ['getac-b360', 'getac-s410-g5', 'getac-s510', 'getac-b360x', 'getac-b360x-pro'] },
+    { value: 'Nie (Wi-Fi)', slugs: ['getac-b360', 'getac-v120', 'getac-s410-g5', 'getac-s510', 'getac-s510ad', 'getac-b360x', 'getac-b360x-pro'] }
   ] },
   { specKey: 'cena-laptop', label: 'Cena netto', derived: [
     { value: 'do 12 000 zł', priceMax: 12000 },
