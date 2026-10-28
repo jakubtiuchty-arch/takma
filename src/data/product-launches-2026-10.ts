@@ -267,12 +267,12 @@ export const octoberLaunchProducts: Product[] = [
     "shortDescription": "Getac B360X Pro — wzmocniony laptop 14 cali, ekran 1400 nitów, Intel Core Ultra Series 3, Wi-Fi 7 i IP66. Zapowiedź na listopad 2026.",
     "description": "Getac B360X Pro to wzmocniony laptop do serwisu terenowego, energetyki, produkcji i służb publicznych. Ekran WUXGA 14 cali osiąga jasność 1400 nitów. Obsługuje dotyk także w rękawicach.\n\nProcesory Intel Core Ultra Series 3 wspierają lokalną pracę z aplikacjami AI. Wybór procesora, pamięci i dysku zależy od konfiguracji. B360X Pro może mieć oddzielny układ NVIDIA RTX PRO 500 Blackwell. Dwie baterie o zwiększonej pojemności należą do standardowego wyposażenia rodziny Pro; opcjonalna zatoka mieści trzecią baterię lub napęd DVD.\n\nObudowa spełnia IP66, MIL-STD-810H i MIL-STD-461G. Laptop jest testowany na upadek z 1,8 m podczas pracy. Wi-Fi 7 i Bluetooth 6 są standardem; GPS, LTE lub 5G zależą od konfiguracji.\n\nDostępność zapowiedziana na listopad 2026. Przed zamówieniem dobierz procesor, klawiaturę, łączność i wyposażenie. Numer PN oraz cenę podamy dla wybranej wersji.",
     "images": [
-      "/images/launches-2026-10/getac-b360x-pro-angle.webp",
-      "/images/launches-2026-10/getac-b360x-pro-front.webp"
+      "/images/launches-2026-10/getac-b360x-pro-front.webp",
+      "/images/launches-2026-10/getac-b360x-pro-angle.webp"
     ],
     "imageDescriptions": [
-      "Getac B360X Pro — otwarty laptop, widok pod kątem",
-      "Getac B360X Pro — otwarty laptop, widok z przodu"
+      "Getac B360X Pro — otwarty laptop, widok z przodu",
+      "Getac B360X Pro — otwarty laptop, widok pod kątem"
     ],
     "tags": [
       "outdoor",
