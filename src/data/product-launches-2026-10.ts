@@ -350,7 +350,7 @@ export const octoberLaunchProducts: Product[] = [
       "logistyka"
     ],
     "availability": "on-order",
-    "comingSoon": false,
+    "comingSoon": true,
     "quoteOnly": true,
     "isNew": true,
     "isBestseller": false,

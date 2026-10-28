@@ -95502,7 +95502,7 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
-  ...octoberLaunchProducts.filter(p => !(p.manufacturerId === 'sunmi' && p.comingSoon)),
+  ...octoberLaunchProducts.filter(p => !p.comingSoon),
   ...sunmiProducts,
   ...sunmiAccessories,
   ...zebraKc401Products,
@@ -95659,7 +95659,7 @@ const rawProductList: Product[] = [
   ...m3UL30Accessories,
   ...labelmateRewinders,
   ...labelmateDyspensery,
-  ...octoberLaunchProducts.filter(p => p.manufacturerId === 'sunmi' && p.comingSoon),
+  ...octoberLaunchProducts.filter(p => p.comingSoon),
 ]
 
 // ── Migracja TT: usuń 139 starych produktów (1 SKU = 1 produkt) zastąpionych
@@ -95760,6 +95760,7 @@ for (const [id, adapterId] of Object.entries({
 
 export const products: Product[] = rawProductList
   .filter((p) => !OLD_TT_PRODUCT_IDS.has(p.id) && !OLD_RIBBON_IDS.has(p.id))
+  .sort((a, b) => Number(!!a.comingSoon) - Number(!!b.comingSoon))
   .map((p) => ({
     ...p,
     compatibleAccessories: relinkAll(p.compatibleAccessories) ?? [],

@@ -366,15 +366,18 @@ export default function FilterableProductGrid({
   // Sortowanie listy. Produkty bez ceny („na zapytanie") lądują na końcu przy
   // obu kierunkach — inaczej przy „najtańsze" otwierałyby listę z zerem.
   const sortedProducts = useMemo(() => {
-    if (sortowanie === 'domyslne') return filteredProducts
+    const zapowiedziNaKoncu = (a: ProductCardData, b: ProductCardData) => Number(!!a.comingSoon) - Number(!!b.comingSoon)
     const lista = [...filteredProducts]
+    if (sortowanie === 'domyslne') return lista.sort(zapowiedziNaKoncu)
     if (sortowanie === 'nazwa') {
-      lista.sort((a, b) => a.name.localeCompare(b.name, 'pl'))
+      lista.sort((a, b) => zapowiedziNaKoncu(a, b) || a.name.localeCompare(b.name, 'pl'))
       return lista
     }
     const cena = (p: ProductCardData) => p.priceFrom || p.variants?.reduce<number | null>(
       (min, v) => (v.priceFrom && (min === null || v.priceFrom < min) ? v.priceFrom : min), null) || null
     lista.sort((a, b) => {
+      const zapowiedz = zapowiedziNaKoncu(a, b)
+      if (zapowiedz) return zapowiedz
       const ca = cena(a), cb = cena(b)
       if (ca === null && cb === null) return 0
       if (ca === null) return 1
