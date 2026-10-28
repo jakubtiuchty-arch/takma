@@ -12,12 +12,12 @@ export const octoberLaunchProducts: Product[] = [
     "categoryId": "kioski-samoobslugowe",
     "subcategoryIds": [],
     "shortDescription": "Komputer POS i kiosk z Windows. Ekrany 18,5, 21,5 lub 27 cali. Dostawy do Europy zapowiedziane od listopada 2026.",
-    "description": "SUNMI FLEX 3 WIN to komputer z Windows do stanowisk sprzedaży i kiosków samoobsługowych. Rodzina obejmuje ekrany 18,5, 21,5 oraz 27 cali. Dobierz ekran i podstawę do miejsca obsługi klienta.\n\nWindows pozwala uruchomić zgodne programy POS i aplikacje sklepowe używane już w firmie. Przed zakupem sprawdź wymagania programu, sterowników i urządzeń peryferyjnych. Nie jest to wariant z Androidem.\n\nProducent przewiduje konfiguracje na ladę, podłogowe i do gastronomii. Skaner, czytniki kart, kamery oraz moduł PoE zależą od wybranego zestawu. Zdjęcie pokazuje kilka konfiguracji rodziny; nie przedstawia jednego kompletu sprzedażowego.\n\nDostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, numer PN, cenę i termin ustalimy w ofercie.",
+    "description": "SUNMI FLEX 3 WIN to komputer z Windows do stanowisk sprzedaży i kiosków samoobsługowych. Rodzina obejmuje ekrany 18,5, 21,5 oraz 27 cali. Dobierz ekran i podstawę do miejsca obsługi klienta.\n\nWindows pozwala uruchomić zgodne programy POS i aplikacje sklepowe używane już w firmie. Przed zakupem sprawdź wymagania programu, sterowników i urządzeń peryferyjnych. Nie jest to wariant z Androidem.\n\nProducent przewiduje konfiguracje na ladę, podłogowe i do gastronomii. Skaner, czytniki kart, kamery oraz moduł PoE zależą od wybranego zestawu. Zdjęcie pokazuje konfigurację ze stojakiem podłogowym. Wyposażenie zależy od wybranego zestawu.\n\nDostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, numer PN, cenę i termin ustalimy w ofercie.",
     "images": [
-      "/images/launches-2026-10/sunmi-flex-win.png"
+      "/images/launches-2026-10/sunmi-flex-3-win-main.webp"
     ],
     "imageDescriptions": [
-      "SUNMI FLEX 3 WIN — rodzina urządzeń z Windows, pokazane konfiguracje"
+      "SUNMI FLEX 3 WIN — konfiguracja ze stojakiem podłogowym"
     ],
     "tags": [
       "retail"
@@ -72,12 +72,12 @@ export const octoberLaunchProducts: Product[] = [
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "shortDescription": "SUNMI T3 PRO WIN — komputer POS z Windows do sklepu i gastronomii. Europejskie dostawy zapowiedziane od listopada 2026.",
-    "description": "SUNMI T3 PRO WIN to komputer POS z Windows dla sklepów i lokali gastronomicznych. Umożliwia budowę stanowiska opartego na zgodnym programie sprzedażowym dla Windows.\n\nModel WIN jest alternatywą dla T3 PRO z Androidem. Wybierz go, gdy używany program sprzedażowy wymaga środowiska Windows.\n\nSUNMI DMP służy do zarządzania flotą urządzeń. Peryferia dobiera się z odpowiedniej rodziny T3. Zgodność konkretnego ekranu klienta, czytnika i drukarki wymaga doboru do konfiguracji.\n\nZdjęcie przedstawia modele T3 PRO WIN i T3 PRO MAX WIN. Dostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, cenę i termin dostawy ustalimy w ofercie.",
+    "description": "SUNMI T3 PRO WIN to komputer POS z Windows dla sklepów i lokali gastronomicznych. Umożliwia budowę stanowiska opartego na zgodnym programie sprzedażowym dla Windows.\n\nModel WIN jest alternatywą dla T3 PRO z Androidem. Wybierz go, gdy używany program sprzedażowy wymaga środowiska Windows.\n\nSUNMI DMP służy do zarządzania flotą urządzeń. Peryferia dobiera się z odpowiedniej rodziny T3. Zgodność konkretnego ekranu klienta, czytnika i drukarki wymaga doboru do konfiguracji.\n\nDostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, cenę i termin dostawy ustalimy w ofercie.",
     "images": [
-      "/images/launches-2026-10/sunmi-t3-win.png"
+      "/images/launches-2026-10/sunmi-t3-pro-win-main.webp"
     ],
     "imageDescriptions": [
-      "SUNMI T3 PRO WIN — rodzina urządzeń z Windows, pokazane konfiguracje"
+      "SUNMI T3 PRO WIN — widok z przodu"
     ],
     "tags": [
       "retail"
@@ -132,12 +132,12 @@ export const octoberLaunchProducts: Product[] = [
     "categoryId": "komputery-pos",
     "subcategoryIds": [],
     "shortDescription": "SUNMI T3 PRO MAX WIN — komputer POS z Windows do sklepu i gastronomii. Europejskie dostawy zapowiedziane od listopada 2026.",
-    "description": "SUNMI T3 PRO MAX WIN to komputer POS z Windows dla sklepów i lokali gastronomicznych. Umożliwia budowę stanowiska opartego na zgodnym programie sprzedażowym dla Windows.\n\nWersja MAX WIN należy do rodziny z drukarką w podstawie. Wybór urządzenia powinien uwzględniać wymagania wydruków i dostępne wyposażenie konkretnego zestawu.\n\nSUNMI DMP służy do zarządzania flotą urządzeń. Peryferia dobiera się z odpowiedniej rodziny T3. Zgodność konkretnego ekranu klienta, czytnika i drukarki wymaga doboru do konfiguracji.\n\nZdjęcie przedstawia modele T3 PRO WIN i T3 PRO MAX WIN. Dostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, cenę i termin dostawy ustalimy w ofercie.",
+    "description": "SUNMI T3 PRO MAX WIN to komputer POS z Windows dla sklepów i lokali gastronomicznych. Umożliwia budowę stanowiska opartego na zgodnym programie sprzedażowym dla Windows.\n\nWersja MAX WIN należy do rodziny z drukarką w podstawie. Wybór urządzenia powinien uwzględniać wymagania wydruków i dostępne wyposażenie konkretnego zestawu.\n\nSUNMI DMP służy do zarządzania flotą urządzeń. Peryferia dobiera się z odpowiedniej rodziny T3. Zgodność konkretnego ekranu klienta, czytnika i drukarki wymaga doboru do konfiguracji.\n\nDostawy do Europy są zapowiedziane od listopada 2026. Konfigurację, cenę i termin dostawy ustalimy w ofercie.",
     "images": [
-      "/images/launches-2026-10/sunmi-t3-win.png"
+      "/images/launches-2026-10/sunmi-t3-pro-max-win-main.webp"
     ],
     "imageDescriptions": [
-      "SUNMI T3 PRO MAX WIN — rodzina urządzeń z Windows, pokazane konfiguracje"
+      "SUNMI T3 PRO MAX WIN — widok z przodu"
     ],
     "tags": [
       "retail"
