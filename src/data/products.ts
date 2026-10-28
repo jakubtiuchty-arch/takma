@@ -95502,7 +95502,7 @@ const rawProductList: Product[] = [
   ...rfd40Accessories,
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
-  ...octoberLaunchProducts,
+  ...octoberLaunchProducts.filter(p => !(p.manufacturerId === 'sunmi' && p.comingSoon)),
   ...sunmiProducts,
   ...sunmiAccessories,
   ...zebraKc401Products,
@@ -95659,6 +95659,7 @@ const rawProductList: Product[] = [
   ...m3UL30Accessories,
   ...labelmateRewinders,
   ...labelmateDyspensery,
+  ...octoberLaunchProducts.filter(p => p.manufacturerId === 'sunmi' && p.comingSoon),
 ]
 
 // ── Migracja TT: usuń 139 starych produktów (1 SKU = 1 produkt) zastąpionych
