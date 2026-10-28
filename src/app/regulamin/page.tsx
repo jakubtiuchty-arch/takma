@@ -460,7 +460,7 @@ export default function RegulaminPage() {
               <p>7.3. <strong>Koszt dostawy:</strong></p>
               <ul className="list-disc list-inside ml-4 space-y-1">
                 <li>Standardowa przesyłka kurierska: <strong>25 zł netto</strong> (+ VAT 23%).</li>
-                <li><strong>Darmowa dostawa</strong> dla zamówień od <strong>500 zł netto</strong>.</li>
+                <li><strong>Darmowa dostawa</strong> dla zamówień od <strong>1000 zł netto</strong>.</li>
                 <li>Dla Towarów wielkogabarytowych koszt dostawy może być inny —
                   Sprzedawca poinformuje przed potwierdzeniem zamówienia.</li>
               </ul>
