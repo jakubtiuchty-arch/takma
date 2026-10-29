@@ -37,7 +37,7 @@ interface NavItem {
   featuredProduct?: FeaturedProduct
 }
 
-const brandLogos: Record<string, string> = {"ProGlove": "/images/manufacturers/proglove.svg","Zebra": "/images/partners/logo_zebra.png", "Honeywell": "/images/partners/logo_honeywell.png", "Newland": "/images/partners/logo_newland.png", "Datalogic": "/images/partners/logo_datalogic.png", "M3": "/images/partners/logo_m3mobile.png", "CipherLab": "/images/manufacturers/cipherlab.webp", "SUNMI": "/images/manufacturers/sunmi.svg", "Bluebird": "/images/manufacturers/bluebird.svg", "Brady": "/images/manufacturers/brady.svg", "Getac": "/images/manufacturers/getac.svg"}
+const brandLogos: Record<string, string> = {"ProGlove": "/images/manufacturers/proglove.svg","Zebra": "/images/partners/logo_zebra.png", "Honeywell": "/images/partners/logo_honeywell.png", "Newland": "/images/partners/logo_newland.png", "Datalogic": "/images/partners/logo_datalogic.png", "M3": "/images/partners/logo_m3mobile.png", "CipherLab": "/images/manufacturers/cipherlab.webp", "SUNMI": "/images/manufacturers/sunmi.svg", "Bluebird": "/images/manufacturers/bluebird.svg", "Unitech": "/images/manufacturers/unitech.svg", "Brady": "/images/manufacturers/brady.svg", "Getac": "/images/manufacturers/getac.svg"}
 
 const navigation: NavItem[] = [
   {
@@ -71,6 +71,7 @@ const navigation: NavItem[] = [
       { name: 'Terminale CipherLab', href: '/terminale-cipherlab', group: 'brand' },
       { name: 'Terminale SUNMI', href: '/terminale-sunmi', group: 'brand' },
       { name: 'Terminale Bluebird', href: '/terminale-bluebird', group: 'brand' },
+      { name: 'Terminale Unitech', href: '/terminale-unitech', group: 'brand' },
       { name: 'Akcesoria do terminali', href: '/akcesoria-do-terminali' },
       { name: 'Akcesoria do komputerów POS', href: '/akcesoria-do-komputerow-pos' },
       { name: 'Akcesoria do ekranów KDS', href: '/akcesoria-do-ekranow-kds' },

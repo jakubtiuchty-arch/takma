@@ -7,7 +7,7 @@ export const rfidTerminalCategory: Subcategory = {
   "parentCategoryId": "terminale-mobilne",
   "description": "Terminale mobilne z czytnikiem UHF RFID do inwentaryzacji i identyfikacji towarów.",
   "seoTitle": "Terminale RFID UHF do magazynu i inwentaryzacji | TAKMA",
-  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj urządzenia Zebra, Newland i Bluebird. Sprawdź europejskie PN, ceny, stany i akcesoria.",
+  "seoDescription": "Terminale RFID UHF z Androidem do inwentaryzacji i wyszukiwania towarów. Porównaj urządzenia Zebra, Newland, Bluebird i Unitech. Sprawdź europejskie PN, ceny, stany i akcesoria.",
   "longDescription": "Terminale RFID odczytują znaczniki radiowe bez celowania w kod kreskowy. W tej kategorii znajdziesz terminale Android z wbudowanym czytnikiem UHF do inwentaryzacji, identyfikacji wyposażenia i kontroli towarów. Porównaj zasięg, sposób odczytu kodów oraz łączność. Dobierz wersję europejską i akcesoria do konkretnego modelu.",
   "icon": "smartphone",
   "productIds": [
@@ -18,9 +18,10 @@ export const rfidTerminalCategory: Subcategory = {
     "zebra-mc3390xr",
     "zebra-ws501-r",
     "newland-mt93-megattera-pro-uhf",
-    "bluebird-s10-rfid"
+    "bluebird-s10-rfid",
+    "unitech-ea530-uhf"
   ],
-  "productCount": 8
+  "productCount": 9
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
@@ -29,7 +30,7 @@ export const rfidTerminalContent: SubcategoryRichContent = {
   updatedAt: '2026-10-23',
   definition: {
     heading: 'Co to jest terminal RFID?',
-    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. [Newland MT93 Megattera Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma uchwyt z czytnikiem Impinj E710, baterię 10 000 mAh i 4G. [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) ma czytnik UHF z układem Impinj E710 w uchwycie pistoletowym i pasmo 865–868 MHz. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
+    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. [Newland MT93 Megattera Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma uchwyt z czytnikiem Impinj E710, baterię 10 000 mAh i 4G. [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) ma czytnik UHF z układem Impinj E710 w uchwycie pistoletowym i pasmo 865–868 MHz. [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF z układem Impinj E310 o zasięgu do 1,8 m, skaner 1D/2D i modem 4G LTE. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal RFID do inwentaryzacji?',

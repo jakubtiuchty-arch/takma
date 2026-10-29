@@ -327,6 +327,12 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 - Bluebird S10 RFID (UHF 865–868 MHz, ponad 1300 tagów/s, zasięg ponad 13 m, od 4 000 zł netto): https://www.takma.com.pl/produkt/bluebird-s10-rfid
 - Bluebird SF650 (smartfon firmowy bez skanera kodów, 6,5", 4G LTE, od 1 509 zł netto): https://www.takma.com.pl/produkt/bluebird-sf650
 
+## Terminale Unitech
+- [Terminale Unitech](https://www.takma.com.pl/terminale-unitech): terminale mobilne z Androidem 15 i ekranem 6" — EA660, EA530 oraz EA530 UHF z czytnikiem UHF RFID. Zasilacz sprzedawany osobno. Gwarancja 12 miesięcy.
+- Unitech EA660 (6" Full HD+ 630 nitów, Wi-Fi 6E, opcja 5G, silnik skanujący do 12 m, bateria 5000 mAh, od 2 882 zł netto): https://www.takma.com.pl/produkt/unitech-ea660
+- Unitech EA530 (6" HD+, 242 g, 4G LTE lub Wi-Fi 6E, bateria 4250 mAh wymieniana bez wyłączania, od 2 166 zł netto): https://www.takma.com.pl/produkt/unitech-ea530
+- Unitech EA530 UHF (wbudowany czytnik UHF RFID Impinj E310 do 1,8 m, skaner 1D/2D, 4G LTE, od 2 637 zł netto): https://www.takma.com.pl/produkt/unitech-ea530-uhf
+
 ## Komputery POS (SUNMI)
 - [Komputery POS](https://www.takma.com.pl/komputery-pos): stacjonarne stanowiska kasowe SUNMI T3, T3 PRO, D3 i D3 PRO z ekranem dotykowym 15,6" oraz kompaktowe SUNMI D3 MINI z ekranem 10,1" i wbudowaną drukarką 58 lub 80 mm. T3 i T3 PRO mają Androida 13, NFC i czytnik linii papilarnych w przycisku zasilania. D3 ma Androida 14 i ekran klienta 10,1" z NFC w zestawie. D3 PRO ma Androida 13, obudowę aluminiową i ekran klienta z NFC do dokupienia. D3 MINI ma Androida 13, skaner kodów 1D/2D, NFC, wbudowany ekran klienta i wersje 4G. Urządzenia niefiskalne.
 - [SUNMI T3](https://www.takma.com.pl/produkt/sunmi-t3) (PN P01280007): bez drukarki, Qualcomm 8 rdzeni do 2,4 GHz, 4/64 GB, microSD do 2 TB, Wi-Fi 5, Bluetooth 5.0, Ethernet, port szuflady kasowej RJ12.

@@ -46,6 +46,9 @@ import { datalogicPowerScanProducts, datalogicPowerScanAccessories } from './dat
 import { datalogicQuickScanProducts, datalogicGryphonProducts, datalogicScannerAccessories } from './datalogic-scanners-products'
 import { unitechRp300Products, unitechRp300Accessories } from './unitech-rp300-products'
 import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
+import { unitechTerminalProducts } from './unitech-terminal-products'
+import { unitechTerminalAccessories } from './unitech-terminal-accessories'
+import { unitechFaq } from './unitech-category'
 import { rfidReaderCategory } from './rfid-reader-category'
 import { tsl3128Products } from './tsl-3128-products'
 import { tsl3138Products, tsl3138Accessories } from './tsl-3138-products'
@@ -339,7 +342,7 @@ export const categories: Category[] = [
     description: 'Wytrzymałe komputery mobilne i kolektory danych do magazynu, logistyki i produkcji',
     seoTitle: 'Terminale mobilne i kolektory danych',
     seoDescription: 'Terminale mobilne i kolektory danych do magazynu, sklepu i logistyki. Porównaj skanery, klawiatury, pamięć, łączność i dostępne konfiguracje.',
-    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab), [SUNMI](/terminale-sunmi) i [Bluebird](/terminale-bluebird). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy. Stacjonarne stanowiska kasowe z ekranem dotykowym są w kategorii [komputery POS](/komputery-pos).',
+    longDescription: 'Terminale mobilne i kolektory danych z Androidem lub cOS do magazynu, sklepu, produkcji i logistyki. Porównaj urządzenia [Zebra](/terminale-mobilne-zebra), [Honeywell](/terminale-honeywell), [Datalogic](/terminale-datalogic), [M3 Mobile](/terminale-m3-mobile), [Newland](/terminale-newland), [CipherLab](/terminale-cipherlab), [SUNMI](/terminale-sunmi), [Bluebird](/terminale-bluebird) i [Unitech](/terminale-unitech). Dobierz skaner 1D/2D, klawiaturę, pamięć oraz łączność do aplikacji i sposobu pracy. Stacjonarne stanowiska kasowe z ekranem dotykowym są w kategorii [komputery POS](/komputery-pos).',
     icon: 'smartphone',
     productCount: 23,
   },
@@ -95357,8 +95360,8 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
@@ -95477,6 +95480,7 @@ const rawProductList: Product[] = [
   ...datalogicGryphonProducts, ...datalogicScannerAccessories, ...datalogicPowerScanProducts, ...datalogicPowerScanAccessories, ...datalogicAdditionalScanners, ...datalogicAdditionalAccessories, ...datalogicMagellanProducts, ...datalogicMagellanAccessories, ...counterScannerProducts, ...counterScannerAccessories,
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
+  ...unitechTerminalProducts, ...unitechTerminalAccessories,
   ...tsl3128Products,
   ...tsl3138Products, ...tsl3138Accessories,
   ...tsl3166Products,
@@ -96125,6 +96129,17 @@ export const brandCategories: BrandCategory[] = [
   "seoDescription": "Terminale mobilne Bluebird z Androidem: dotykowe S10, S20, S50, S70 i EF551, EK430 z klawiaturą, S10 RFID i S70 ATEX. Ceny netto, PN i dostępność.",
   "longDescription": "Terminale mobilne Bluebird to przenośne komputery z Androidem do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje terminale dotykowe, terminal z klawiaturą, terminal z czytnikiem UHF RFID, wersję do stref zagrożonych wybuchem i smartfon firmowy bez skanera. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi, a wybrane wersje także przez 4G LTE lub 5G. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
   "faq": bluebirdFaq
+},
+{
+  "id": "terminale-unitech",
+  "slug": "terminale-unitech",
+  "manufacturerId": "unitech",
+  "categoryId": "terminale-mobilne",
+  "name": "Terminale mobilne Unitech",
+  "seoTitle": "Terminale Unitech — EA530, EA530 UHF i EA660 z Androidem",
+  "seoDescription": "Terminale Unitech z Androidem 15: EA530 z 4G lub Wi-Fi 6E, EA530 UHF z czytnikiem RFID oraz EA660 z 5G i skanerem do 12 m. Ceny netto, PN i dostępność.",
+  "longDescription": "Terminale mobilne Unitech to przenośne komputery z Androidem 15 do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje EA660 z opcją 5G i skanerem do 12 m, lekki EA530 z modemem 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi 6E, a wersje 4G i 5G także przez sieć komórkową. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
+  "faq": unitechFaq
 },
 {
   "id": "skanery-proglove",

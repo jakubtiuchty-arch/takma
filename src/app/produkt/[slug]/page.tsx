@@ -105,6 +105,7 @@ import VariantQuickPick from './VariantQuickPick'
 import DownloadCard from './DownloadCard'
 import { absoluteProductImageUrl, getMagicardOffer } from '@/lib/magicard-offer'
 import VideoTracker from '@/components/tracking/VideoTracker'
+import { isUnitechTerminal } from '@/lib/unitech-terminal'
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
@@ -277,7 +278,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
   const datalogicScannerContent = /^datalogic-(?:quickscan-|gryphon-|powerscan-|heron-|td11|handheld-|magellan-)/.test(product.id)
   const bixolonLabelProduct = (product.manufacturerId === 'bixolon' && ['drukarki-etykiet', 'mobilne-drukarki-paragonow', 'drukarki-pos'].includes(product.categoryId) && !product.subcategoryIds?.includes('drukarki-rfid')) || (product.manufacturerId === 'epson' && ['drukarki-pos', 'mobilne-drukarki-paragonow'].includes(product.categoryId)) || (product.manufacturerId === 'sunmi' && product.categoryId === 'drukarki-pos') || (product.manufacturerId === 'citizen' && product.categoryId === 'drukarki-pos')
-  const catalogMobileTerminal = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) && product.categoryId === 'terminale-mobilne'
+  const catalogMobileTerminal = (['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) && product.categoryId === 'terminale-mobilne') || isUnitechTerminal(product)
   // Komputery POS (SUNMI T3) dostają ten sam układ schematu i galerii co terminale z /terminale-sunmi.
   const posComputer = product.categoryId === 'komputery-pos'
   // Ekrany KDS (SUNMI FLEX 3 KDS) — ten sam układ co komputery POS, z własnym tytułem podobnych i opisem filmów.
@@ -289,7 +290,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Laptopy przemysłowe (Getac) — galeria i ceny jak tablety Getac; własny tytuł podobnych i opis filmów.
   const industrialLaptop = product.categoryId === 'laptopy-przemyslowe'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const rfidTextLinks = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || product.id.startsWith('citizen-pos-') || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
+  const rfidTextLinks = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) || isUnitechTerminal(product) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || product.id.startsWith('citizen-pos-') || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 

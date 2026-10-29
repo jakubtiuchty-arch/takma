@@ -1,6 +1,7 @@
 import { products, type Product } from '@/data/products'
 import { getManufacturerById } from '@/data/manufacturers'
 import { rfidPrinterCategory } from '@/data/rfid-printer-category'
+import { isUnitechTerminal } from '@/lib/unitech-terminal'
 
 /**
  * Tytuł karty przeglądarki dla strony produktu: „Producent Model” bez
@@ -19,7 +20,7 @@ import { rfidPrinterCategory } from '@/data/rfid-printer-category'
 const RFID_PRINTER_IDS = new Set(rfidPrinterCategory.productIds)
 
 /**
- * Produkty z listingów /terminale-sunmi, /terminale-cipherlab, /terminale-bluebird, /drukarki-pos, /komputery-pos, /ekrany-kds, /kioski-samoobslugowe,
+ * Produkty z listingów /terminale-sunmi, /terminale-cipherlab, /terminale-bluebird, /terminale-unitech, /drukarki-pos, /komputery-pos, /ekrany-kds, /kioski-samoobslugowe,
  * /drukarki-rfid, /skanery-datalogic i /skanery-kodow-kreskowych/ladowe.
  */
 export function isShortTabTitleScope(product: Product): boolean {
@@ -28,6 +29,7 @@ export function isShortTabTitleScope(product: Product): boolean {
     (manufacturerId === 'sunmi' && categoryId === 'terminale-mobilne') ||
     (manufacturerId === 'cipherlab' && categoryId === 'terminale-mobilne') ||
     (manufacturerId === 'bluebird' && categoryId === 'terminale-mobilne') ||
+    isUnitechTerminal(product) ||
     categoryId === 'drukarki-pos' ||
     categoryId === 'komputery-pos' ||
     categoryId === 'ekrany-kds' ||

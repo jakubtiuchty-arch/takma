@@ -16,7 +16,7 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
   const manufacturer = manufacturerSlug ? manufacturers.find(m => m.slug === manufacturerSlug) : null
 
   // Lista wszystkich produktów marki obejmuje także akcesoria. Nie jest zamiennikiem kategorii terminali.
-  if (manufacturer && ['sunmi', 'cipherlab', 'bluebird'].includes(manufacturer.id)) {
+  if (manufacturer && ['sunmi', 'cipherlab', 'bluebird', 'unitech'].includes(manufacturer.id)) {
     const title = manufacturer.id === 'sunmi'
       ? 'Produkty SUNMI — terminale mobilne, komputery POS, drukarki POS i akcesoria'
       : manufacturer.id === 'bluebird'

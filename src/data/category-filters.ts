@@ -699,6 +699,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'CipherLab', manufacturer: 'cipherlab' },
         { value: 'SUNMI', manufacturer: 'sunmi' },
         { value: 'Bluebird', manufacturer: 'bluebird' },
+        { value: 'Unitech', manufacturer: 'unitech' },
         { value: 'ProGlove', manufacturer: 'proglove' },
       ],
     },
@@ -801,6 +802,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Newland', manufacturer: 'newland' },
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
         { value: 'Bluebird', manufacturer: 'bluebird' },
+        { value: 'Unitech', manufacturer: 'unitech' },
       ],
     },
     {
@@ -1450,7 +1452,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
 }
 
 // Strona marki: te same filtry co kategoria (grupa Producent chowa się sama, bo ma jedną wartość)
-for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-honeywell', 'terminale-datalogic', 'terminale-m3-mobile', 'terminale-bluebird']) {
+for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-honeywell', 'terminale-datalogic', 'terminale-m3-mobile', 'terminale-bluebird', 'terminale-unitech']) {
   categoryFilters[brand] = categoryFilters['terminale-mobilne']
 }
 // Skanery: strony marek i podkategorie dostają ten sam zestaw — grupy z jedną wartością (Producent, Rodzaj) chowają się same
