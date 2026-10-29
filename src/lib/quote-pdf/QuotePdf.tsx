@@ -104,7 +104,7 @@ const s = StyleSheet.create({
   boxTitle: { fontSize: 10.5, fontWeight: 'bold', color: C.navy, marginBottom: 6 },
   condRow: { flexDirection: 'row', marginBottom: 3 },
   condLabel: { width: 120, color: C.muted },
-  condValue: { fontWeight: 'bold' },
+  condValue: { fontWeight: 'bold', flex: 1 },
   notes: { backgroundColor: '#fefce8', borderWidth: 1, borderColor: '#fde68a', borderRadius: 5, padding: 9, marginBottom: 12, color: '#78350f' },
 
   zebra: { flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderColor: C.line, borderRadius: 5, paddingVertical: 7, paddingHorizontal: 10 },
