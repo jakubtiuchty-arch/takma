@@ -21,7 +21,7 @@ const ea660: Product = {
   seoH1: 'Unitech EA660',
   seoTitle: 'Terminal mobilny Unitech EA660 6″ z Androidem 15, Wi-Fi 6E i opcją 5G',
   seoDescription: 'Terminal mobilny Unitech EA660: ekran 6″ 630 nitów, Android 15, Wi-Fi 6E, opcja 5G i skaner do 12 m. Kolektor danych i smartfon przemysłowy EA660 Unitech. PN: EA660-N56CUM3G, EA660-N5NFUM3G, EA660-L56CUM3G, EA660-L5NFUM3G.',
-  shortDescription: 'Unitech EA660 — terminal mobilny z ekranem 6″ Full HD+ o jasności 630 nitów, Wi-Fi 6E lub 5G z eSIM oraz opcjonalnym silnikiem skanującym do 12 m.',
+  shortDescription: 'Unitech EA660 — terminal mobilny z ekranem 6″ Full HD+ o jasności 630 nitów, Wi-Fi 6E, opcją 5G z eSIM i opcjonalnym silnikiem skanującym do 12 m.',
   description: `Unitech EA660 to terminal mobilny z ekranem 6″ Full HD+ (2160 × 1080) o jasności 630 nitów. Szkło Corning Gorilla Glass Victus chroni ekran, który reaguje na dotyk w rękawicach (3 mm), rysik 5,5 mm i mokry palec.
 
 Kody 1D i 2D odczytuje imager 2D. W ofercie są wersje ze standardowym silnikiem skanującym oraz z opcjonalnym silnikiem do odczytu z odległości do 12 m. Producent przeznacza go do pracy z bliska i z daleka w handlu i logistyce.
@@ -30,7 +30,7 @@ Wersje 5G mają modem 5G z eSIM i kartą nano SIM, obsługują połączenia gło
 
 Baterię 3,87 V / 5000 mAh z certyfikatem UL wymienia się bez wyłączania terminala. Stacja dokująca z portem HDMI umożliwia pracę przy zewnętrznym monitorze.
 
-Producent wymienia zastosowania w handlu, gastronomii i hotelarstwie, logistyce oraz ochronie zdrowia. Fabryczny Android 15 z certyfikatami GMS i AER ma przewidzianą aktualizację do wersji 17. Gwarancja producenta w naszej ofercie trwa 12 miesięcy.
+Terminal jest przeznaczony do handlu, gastronomii i hotelarstwa, logistyki oraz ochrony zdrowia. Fabryczny Android 15 z certyfikatami GMS i AER ma przewidzianą aktualizację do wersji 17. Gwarancja producenta w naszej ofercie trwa 12 miesięcy.
 
 ## Co jest potrzebne do użycia?
 
@@ -63,7 +63,7 @@ Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowani
     { name: 'Procesor', value: 'Qualcomm Snapdragon 4490, 64-bitowy, 8 rdzeni, do 2,4 GHz' },
     { name: 'Pamięć RAM / Flash', value: '6 GB lub 8 GB RAM (zależnie od wersji), 128 GB Flash UFS; microSD do 1 TB' },
     { name: 'Wyświetlacz', value: '6″, 18:9, Full HD+ (2160 × 1080), 630 nitów; Corning Gorilla Glass Victus; obsługa rękawic (3 mm), rysika 5,5 mm i mokrych palców' },
-    { name: 'Skaner', value: 'Imager 2D, kody 1D i 2D; silnik standardowy (SE4710) albo opcjonalny silnik do odczytu z odległości do 12 m (SE55), zależnie od PN' },
+    { name: 'Skaner', value: 'Imager 2D, kody 1D i 2D; silnik standardowy albo opcjonalny silnik dalekiego zasięgu do odczytu z odległości do 12 m, zależnie od PN' },
     { name: 'NFC / HF RFID', value: '13,56 MHz; ISO 14443 A/B, ISO 15693, MIFARE, FeliCa (ISO/IEC 18092)' },
     { name: 'Aparaty', value: 'Tylny 16 MP z autofokusem i lampą; przedni 5 MP' },
     { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/ax/d/e/h/i/k/r/v, 2×2 MU-MIMO, DBS, szybki roaming 802.11r' },
@@ -75,7 +75,9 @@ Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowani
     { name: 'Bateria', value: '3,87 V, 5000 mAh Li-ion, certyfikat UL; wymiana bez wyłączania (warm swap)' },
     { name: 'Klasa szczelności', value: 'IP65 i IP68' },
     { name: 'Odporność na upadki', value: 'Upadki z 1,5 m na beton wg MIL-STD-810H; 1,8 m w etui. Test bębnowy: 600 upadków z 0,5 m, w etui 1000 upadków z 1 m' },
-    { name: 'Temperatura pracy', value: '-20°C do +55°C (przechowywanie -40°C do +70°C bez baterii, ładowanie 0°C do +45°C)' },
+    { name: 'Temperatura pracy', value: '-20°C do +55°C' },
+    { name: 'Temperatura przechowywania', value: '-40°C do +70°C (bez baterii)' },
+    { name: 'Temperatura ładowania', value: '0°C do +45°C' },
     { name: 'Wymiary', value: '162,9 × 77 × 14,9 mm' },
     { name: 'Masa', value: '270 g ±1,5% z baterią (zależnie od konfiguracji)' },
     { name: 'Zarządzanie urządzeniami', value: 'SOTI, VMware, MoboLink; narzędzia Unitech: StageGO, OEMConfig, Enterprise Launcher, USS, KeyRemap, SDK' },
@@ -91,36 +93,36 @@ Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowani
   variants: [
     {
       partNumber: 'EA660-N56CUM3G',
-      name: 'EA660-N56CUM3G, Wi-Fi 6E, SE4710',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'SE4710' },
+      name: 'EA660-N56CUM3G, Wi-Fi 6E, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'Standardowy' },
       priceFrom: 2882.4,
       availability: 'on-order',
     },
     {
       partNumber: 'EA660-N5NFUM3G',
-      name: 'EA660-N5NFUM3G, Wi-Fi 6E, 5G, SE4710',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Skaner': 'SE4710' },
+      name: 'EA660-N5NFUM3G, Wi-Fi 6E, 5G, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Skaner': 'Standardowy' },
       priceFrom: 3204.14,
       availability: 'on-order',
     },
     {
       partNumber: 'EA660-L56CUM3G',
-      name: 'EA660-L56CUM3G, Wi-Fi 6E, SE55',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'SE55 (do 12 m)' },
+      name: 'EA660-L56CUM3G, Wi-Fi 6E, skaner do 12 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Skaner': 'Dalekiego zasięgu (do 12 m)' },
       priceFrom: 4189.28,
       availability: 'on-order',
     },
     {
       partNumber: 'EA660-L5NFUM3G',
-      name: 'EA660-L5NFUM3G, Wi-Fi 6E, 5G, SE55',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Skaner': 'SE55 (do 12 m)' },
+      name: 'EA660-L5NFUM3G, Wi-Fi 6E, 5G, skaner do 12 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Skaner': 'Dalekiego zasięgu (do 12 m)' },
       priceFrom: 4586.84,
       availability: 'on-order',
     },
   ],
   variantAttributeTooltips: {
     'Łączność': 'Sposób połączenia EA660 z siecią. Każda wersja ma Wi-Fi 6E i Bluetooth 5.2.\n\n• Wi-Fi 6E — praca w sieci firmowej w pasmach 2,4, 5 i 6 GHz. Ta wersja nie ma gniazda SIM ani GPS.\n\n• Wi-Fi 6E + 5G — dodatkowo 5G i LTE z eSIM lub kartą nano SIM, połączenia głosowe i SMS oraz GPS z L1 + L5.',
-    'Skaner': 'Silnik skanujący EA660. Obie wersje czytają kody 1D i 2D.\n\n• SE4710 — odczyt z typowej odległości, także z ekranów.\n\n• SE55 — opcjonalny silnik do odczytu z bliska i z odległości do 12 m, np. na wysokich regałach.',
+    'Skaner': 'Silnik skanujący EA660. Obie wersje czytają kody 1D i 2D.\n\n• Standardowy — odczyt z typowej odległości roboczej.\n\n• Dalekiego zasięgu (do 12 m) — opcjonalny silnik do odczytu z bliska i z daleka, np. etykiet na wysokich regałach.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
@@ -151,7 +153,7 @@ Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowani
   faq: [
     {
       question: 'Czym różnią się wersje Unitech EA660 w ofercie?',
-      answer: 'Wersje różnią się łącznością i silnikiem skanującym. Każda ma Wi-Fi 6E; wersje oznaczone 5G mają dodatkowo modem 5G, eSIM, nano SIM i GPS. Silnik standardowy (SE4710) służy do odczytu z mniejszej odległości, a silnik SE55 z odległości do 12 m.',
+      answer: 'Wersje różnią się łącznością i silnikiem skanującym. Każda ma Wi-Fi 6E; wersje oznaczone 5G mają dodatkowo modem 5G, eSIM, nano SIM i GPS. Silnik standardowy służy do odczytu z mniejszej odległości, a silnik dalekiego zasięgu z odległości do 12 m.',
     },
     {
       question: 'Jakie sieci komórkowe obsługuje EA660 w wersji 5G?',
@@ -159,11 +161,11 @@ Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowani
     },
     {
       question: 'Z jakiej odległości EA660 odczytuje kody kreskowe?',
-      answer: 'Wersje z silnikiem SE55 odczytują kody z odległości do 12 m. Wersje ze standardowym silnikiem SE4710 służą do odczytu z mniejszej odległości.',
+      answer: 'Wersje z silnikiem dalekiego zasięgu odczytują kody z odległości do 12 m. Wersje ze standardowym silnikiem służą do odczytu z mniejszej odległości. Rodzaj silnika podaje tabela wariantów.',
     },
     {
       question: 'Czy do EA660 potrzebny jest zasilacz?',
-      answer: 'Tak. W zestawie jest przewód USB-C, ale nie ma zasilacza. Do ładowania służy [zasilacz USB-C z szybkim ładowaniem](/produkt/unitech-ea-zasilacz-usb-c-eu). Producent podaje czas ładowania do pełna: 4 godziny.',
+      answer: 'Tak. W zestawie jest przewód USB-C, ale nie ma zasilacza. Do ładowania służy [zasilacz USB-C z szybkim ładowaniem](/produkt/unitech-ea-zasilacz-usb-c-eu). Pełne naładowanie tym zasilaczem trwa do 4 godzin.',
     },
     {
       question: 'Jakie stacje ładujące pasują do EA660?',
@@ -202,7 +204,7 @@ Terminal jest dostępny w wersji 4G LTE oraz w wersji tylko z Wi-Fi 6E. Wersja 4
 
 Skaner czyta kody 1D i 2D, w tym DPM (10 mil), oraz kody na ekranach telefonów i na papierze, w dowolnej orientacji. Do odczytu znaczników UHF z odległości do 25 m producent przewiduje współpracę z czytnikiem [Unitech RP300](/produkt/unitech-rp300).
 
-Producent kieruje EA530 do handlu, gastronomii i hotelarstwa oraz logistyki. System Android 15 ma certyfikat GMS i według producenta dojdzie do niego aktualizacja do wersji 17. Okres gwarancji wynosi 12 miesięcy.
+Producent kieruje EA530 do handlu i logistyki, a z czytnikiem RP300 także do śledzenia zapasów i majątku, również w serwisie w terenie. System Android 15 ma certyfikat GMS i możliwość aktualizacji do Androida 17. Okres gwarancji wynosi 12 miesięcy.
 
 ## Co jest potrzebne do użycia?
 
@@ -238,7 +240,7 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     { name: 'Skaner', value: 'Imager 2D, kody 1D i 2D, w tym DPM (10 mil); odczyt z ekranów telefonów i z papieru w dowolnej orientacji' },
     { name: 'NFC / HF RFID', value: '13,56 MHz; ISO 14443 A/B, ISO 15693, MIFARE, FeliCa (ISO/IEC 18092)' },
     { name: 'Aparaty', value: 'Tylny 16 MP z autofokusem i lampą; przedni 8 MP' },
-    { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/d/e/h/i/k/r/u/w/v/ax, DBS' },
+    { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/ax/d/e/h/i/k/r/u/w/v, DBS' },
     { name: 'Łączność', value: 'Bluetooth 5.2 BLE; wersje 4G: LTE FDD B1/2/3/4/5/7/8/12/17/19/20/28a&b/66, LTE TDD B38/39/40/41, eSIM i nano SIM' },
     { name: 'GNSS', value: 'GPS, BeiDou, GLONASS, Galileo, A-GPS (wersje 4G)' },
     { name: 'Złącza', value: 'USB 2.0 typ C z OTG; styki pogo z tyłu (uchwyt pistoletowy) i na dole (ładowanie w stacji)' },
@@ -247,7 +249,9 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     { name: 'Bateria', value: '4250 mAh Li-Polymer, bateria z pokrywą w jednej części; wymiana bez wyłączania (warm swap) w wersjach 4G i tylko z Wi-Fi' },
     { name: 'Klasa szczelności', value: 'IP65 i IP68' },
     { name: 'Odporność na upadki', value: 'Upadki z 1,5 m; 1,8 m w etui. Test bębnowy: 600 upadków z 0,5 m' },
-    { name: 'Temperatura pracy', value: '-20°C do +50°C (przechowywanie -30°C do +70°C bez baterii, ładowanie 0°C do +45°C)' },
+    { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+    { name: 'Temperatura przechowywania', value: '-30°C do +70°C (bez baterii)' },
+    { name: 'Temperatura ładowania', value: '0°C do +45°C' },
     { name: 'Wymiary', value: '161 × 76,8 × 14,15 mm' },
     { name: 'Masa', value: '242 g ±1% z baterią' },
     { name: 'Zarządzanie urządzeniami', value: 'SOTI, VMware, MoboLink; narzędzia Unitech: StageGO, OEMConfig, Enterprise Launcher, USS, KeyRemap, SDK' },
@@ -255,10 +259,9 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     { name: 'Gwarancja', value: '12 miesięcy' },
   ],
   applications: [
-    'Handel: praca przy półce i obsługa zamówień',
-    'Gastronomia i hotelarstwo',
+    'Handel: odczyt kodów z etykiet i ekranów telefonów',
     'Logistyka',
-    'Odczyt znaczników UHF z odległości do 25 m z czytnikiem RP300',
+    'Śledzenie zapasów i majątku z czytnikiem RP300 (UHF do 25 m)',
   ],
   variants: [
     {
@@ -322,7 +325,7 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     },
     {
       question: 'Jakie systemy zarządzania urządzeniami obsługuje EA530?',
-      answer: 'Producent podaje obsługę SOTI, VMware i MoboLink. Terminal ma też narzędzia Unitech: StageGO do konfiguracji na podstawie kodów kreskowych, OEMConfig dla zewnętrznych systemów MDM i Enterprise Launcher, który ogranicza dostęp do systemu Android.',
+      answer: 'EA530 współpracuje z systemami SOTI, VMware i MoboLink. Terminal ma też narzędzia Unitech: StageGO do konfiguracji na podstawie kodów kreskowych, OEMConfig dla zewnętrznych systemów MDM i Enterprise Launcher, który ogranicza dostęp do systemu Android.',
     },
     {
       question: 'Jak ładować Unitech EA530?',
@@ -349,13 +352,13 @@ const ea530Uhf: Product = {
   seoTitle: 'Terminal z czytnikiem UHF RFID Unitech EA530 UHF z Androidem 15 i 4G',
   seoDescription: 'Terminal z czytnikiem UHF RFID Unitech EA530 UHF: Impinj E310, odczyt do 1,8 m, skaner 1D/2D, 4G LTE, Wi-Fi 6E, Android 15. Kolektor danych z RFID, smartfon przemysłowy EA530 UHF Unitech. PN: EA530-YALFTM3G.',
   shortDescription: 'Unitech EA530 UHF — terminal mobilny z wbudowanym czytnikiem UHF RFID (Impinj E310, do 1,8 m), skanerem 1D/2D, 4G LTE i aplikacją TagAccess.',
-  description: `Unitech EA530 UHF to terminal mobilny, który odczytuje kody kreskowe 1D i 2D, znaczniki HF/NFC i znaczniki UHF RFID w jednym urządzeniu. Czytnik UHF z układem Impinj E310 pracuje na odległość do 1,8 m. Karta katalogowa podaje pasma 865–868 MHz (EU) i 902–928 MHz (US), zależnie od wersji terminala.
+  description: `Unitech EA530 UHF to terminal mobilny, który odczytuje kody kreskowe 1D i 2D, znaczniki HF/NFC i znaczniki UHF RFID w jednym urządzeniu. Czytnik UHF z układem Impinj E310 pracuje na odległość do 1,8 m. Unitech produkuje go w wersjach na pasmo 865–868 MHz (EU) i 902–928 MHz (US).
 
-Funkcje RFID można połączyć ze standardowym uchwytem pistoletowym. Producent przeznacza je do inwentaryzacji oraz śledzenia majątku przy wysokich regałach i w magazynach: w handlu, logistyce i serwisie w terenie.
+Funkcje RFID działają razem ze standardowym uchwytem pistoletowym. Producent przeznacza je do inwentaryzacji i śledzenia majątku w handlu, logistyce i serwisie w terenie.
 
 Aplikacja TagAccess obsługuje inwentaryzację, odczyt i zapis znaczników, blokowanie (Lock), dezaktywację (Kill) i wyszukiwanie znacznika (Find). Funkcja Data Wedge wpisuje odczytany znacznik tak, jakby pochodził z klawiatury. Aplikacja pracuje na operacjach EPC i SGTIN.
 
-Bateria 4250 mAh stanowi jedną część z pokrywą. W tym modelu nie ma wymiany baterii bez wyłączania terminala. Łączność zapewniają 4G LTE (eSIM i gniazdo nano SIM) oraz Wi-Fi 6E, a system to Android 15 z certyfikatem GMS. Zasięg odczytu UHF do 25 m daje współpraca z czytnikiem [Unitech RP300](/produkt/unitech-rp300). Producent objął terminal 12-miesięczną gwarancją.
+Bateria 4250 mAh stanowi jedną część z pokrywą. W tym modelu nie ma wymiany baterii bez wyłączania terminala. Łączność zapewniają 4G LTE (eSIM i gniazdo nano SIM) oraz Wi-Fi 6E, a system to Android 15 z certyfikatem GMS. Zasięg odczytu UHF do 25 m, potrzebny przy wysokich regałach i w magazynach, daje współpraca z czytnikiem [Unitech RP300](/produkt/unitech-rp300). Producent objął terminal 12-miesięczną gwarancją.
 
 ## Co jest potrzebne do użycia?
 
@@ -389,10 +392,10 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
     { name: 'Pamięć RAM / Flash', value: '6 GB RAM, 64 GB Flash; microSD do 1 TB' },
     { name: 'Wyświetlacz', value: '6″ HD+ (1440 × 720), 500 nitów; Corning Gorilla Glass; obsługa rysika, rękawic i mokrych palców' },
     { name: 'Skaner', value: 'Imager 2D, kody 1D i 2D, w tym DPM (10 mil)' },
-    { name: 'UHF RFID', value: 'Układ Impinj E310, odczyt do 1,8 m; pasma 865–868 MHz (EU) i 902–928 MHz (US), zależnie od wersji; aplikacja TagAccess' },
+    { name: 'UHF RFID', value: 'Układ Impinj E310, odczyt do 1,8 m; wersje na pasmo 865–868 MHz (EU) lub 902–928 MHz (US); aplikacja TagAccess' },
     { name: 'NFC / HF RFID', value: '13,56 MHz; ISO 14443 A/B, ISO 15693, MIFARE, FeliCa (ISO/IEC 18092)' },
     { name: 'Aparaty', value: 'Tylny 16 MP z autofokusem i lampą; przedni 8 MP' },
-    { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/d/e/h/i/k/r/u/w/v/ax, DBS' },
+    { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/ax/d/e/h/i/k/r/u/w/v, DBS' },
     { name: 'Łączność', value: 'Bluetooth 5.2 BLE; 4G LTE FDD B1/2/3/4/5/7/8/12/17/19/20/28a&b/66, LTE TDD B38/39/40/41; eSIM i nano SIM' },
     { name: 'GNSS', value: 'GPS, BeiDou, GLONASS, Galileo, A-GPS' },
     { name: 'Złącza', value: 'USB 2.0 typ C z OTG; styki pogo z tyłu (uchwyt pistoletowy) i na dole (ładowanie w stacji)' },
@@ -401,7 +404,9 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
     { name: 'Bateria', value: '4250 mAh Li-Polymer, bateria z pokrywą w jednej części; bez wymiany bez wyłączania (warm swap)' },
     { name: 'Klasa szczelności', value: 'IP65 i IP68' },
     { name: 'Odporność na upadki', value: 'Upadki z 1,5 m; 1,8 m w etui. Test bębnowy: 600 upadków z 0,5 m' },
-    { name: 'Temperatura pracy', value: '-20°C do +50°C (przechowywanie -30°C do +70°C bez baterii, ładowanie 0°C do +45°C)' },
+    { name: 'Temperatura pracy', value: '-20°C do +50°C' },
+    { name: 'Temperatura przechowywania', value: '-30°C do +70°C (bez baterii)' },
+    { name: 'Temperatura ładowania', value: '0°C do +45°C' },
     { name: 'Wymiary', value: '161 × 76,8 × 14,15 mm' },
     { name: 'Masa', value: '242 g ±1% z baterią' },
     { name: 'Zarządzanie urządzeniami', value: 'SOTI, VMware, MoboLink; narzędzia Unitech: StageGO, OEMConfig, Enterprise Launcher, USS, KeyRemap, SDK' },
@@ -411,7 +416,7 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
   applications: [
     'Inwentaryzacja towarów ze znacznikami UHF',
     'Śledzenie majątku i wyposażenia',
-    'Praca przy wysokich regałach w handlu i logistyce',
+    'Odczyt z wysokich regałów z czytnikiem RP300 (do 25 m)',
     'Serwis w terenie',
   ],
   variants: [
@@ -449,7 +454,7 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
   faq: [
     {
       question: 'Jakie pasmo UHF ma Unitech EA530 UHF?',
-      answer: 'Karta katalogowa podaje pasma 865–868 MHz (EU) i 902–928 MHz (US) i nie przypisuje ich do numerów PN. Przed zamówieniem prosimy o kontakt: potwierdzimy pasmo dla PN EA530-YALFTM3G.',
+      answer: 'Czytnik UHF w EA530 UHF występuje w wersjach na pasmo 865–868 MHz (EU) i 902–928 MHz (US). Przed zamówieniem prosimy o kontakt: potwierdzimy pasmo dla PN EA530-YALFTM3G.',
     },
     {
       question: 'Jaki zasięg odczytu ma wbudowany czytnik UHF?',
@@ -461,11 +466,11 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
     },
     {
       question: 'Czy w EA530 UHF można wymienić baterię bez wyłączania terminala?',
-      answer: 'Nie. Producent podaje, że model UHF nie obsługuje wymiany baterii bez wyłączania (warm swap). Bateria 4250 mAh jest wymienialna, ale terminal trzeba wyłączyć.',
+      answer: 'Nie. Model UHF nie obsługuje wymiany baterii bez wyłączania (warm swap). Baterię 4250 mAh można wymienić, ale terminal trzeba wcześniej wyłączyć.',
     },
     {
       question: 'Czy dostępna jest wersja EA530 UHF tylko z Wi-Fi?',
-      answer: 'W ofercie nie. Wersja UHF tylko z Wi-Fi jest według instrukcji producenta dostępna wyłącznie w Japonii. Oferowany PN EA530-YALFTM3G ma 4G LTE, Wi-Fi 6E i UHF.',
+      answer: 'W ofercie nie. Wersję UHF tylko z Wi-Fi Unitech sprzedaje wyłącznie w Japonii. Oferowany PN EA530-YALFTM3G ma 4G LTE, Wi-Fi 6E i UHF.',
     },
     {
       question: 'Czy EA530 UHF odczytuje także kody kreskowe i NFC?',
@@ -473,7 +478,7 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
     },
     {
       question: 'Z jakim uchwytem pistoletowym współpracuje EA530 UHF?',
-      answer: 'Producent podaje współpracę funkcji RFID ze standardowym uchwytem pistoletowym. Do EA530 oferujemy [uchwyt pistoletowy EA530](/produkt/unitech-ea530-uchwyt-pistoletowy) ze stykami pogo na tylnej ściance terminala.',
+      answer: 'Funkcje RFID działają ze standardowym uchwytem pistoletowym. Do EA530 UHF pasuje [uchwyt pistoletowy EA530](/produkt/unitech-ea530-uchwyt-pistoletowy), który łączy się z terminalem przez styki pogo na tylnej ściance.',
     },
     {
       question: 'Jakie są alternatywy dla terminala EA530 UHF?',

@@ -6,7 +6,7 @@ export const unitechFaq = [
   { question: 'Który terminal Unitech ma wbudowany czytnik UHF RFID?', answer: 'EA530 UHF ma czytnik z układem Impinj E310 i odczytuje znaczniki z odległości do 1,8 m. Terminale EA530 i EA660 mają wbudowany tylko czytnik HF/NFC; czytnik UHF Unitech RP300 o zasięgu do 25 m dołącza się do nich przez adapter.' },
   { question: 'Które terminale Unitech mają 5G, a które 4G LTE?', answer: 'Modem 5G mają wersje EA660 oznaczone 5G. EA530 i EA530 UHF mają modem 4G LTE. Wersje tylko z Wi-Fi 6E nie mają modułu SIM ani GPS.' },
   { question: 'Czy bateria w terminalu Unitech wymienia się bez wyłączania?', answer: 'Tak, w EA660 oraz w standardowych wersjach EA530 (4G i tylko z Wi-Fi). Model EA530 UHF nie obsługuje wymiany baterii bez wyłączania terminala.' },
-  { question: 'Do jakiej wersji Androida można zaktualizować terminale Unitech?', answer: 'Terminale mają fabrycznie Androida 15 i według producenta można je zaktualizować do Androida 17.' },
+  { question: 'Do jakiej wersji Androida można zaktualizować terminale Unitech?', answer: 'Terminale mają fabrycznie Androida 15 z możliwością aktualizacji do Androida 17.' },
   { question: 'Jaka jest gwarancja na terminale Unitech?', answer: 'Gwarancja na terminale Unitech w naszej ofercie wynosi 12 miesięcy.' },
 ]
 
@@ -15,7 +15,7 @@ export const unitechCategory: BrandCategoryRichContent = {
   contactText: 'Podaj rodzaj kodów, sposób łączności i aplikację. Dobierzemy terminal Unitech, zasilanie oraz zgodne stacje, baterie i uchwyty.',
   definition: {
     heading: 'Terminale Unitech z Androidem 15: EA660, EA530 i EA530 UHF',
-    content: 'Terminal mobilny Unitech łączy odczyt kodów kreskowych z aplikacją firmy i komunikuje się z nią przez Wi-Fi albo sieć komórkową. Wszystkie modele w ofercie mają ekran dotykowy 6 cali, imager 2D, czytnik HF/NFC, Android 15 z certyfikatem GMS, Bluetooth 5.2 i Wi-Fi 6E. Mają dwa przyciski skanowania, wymienną baterię, złącze USB typu C z OTG i gniazdo microSD do 1 TB. Obudowa ma klasę IP65 i IP68 i wytrzymuje upadki z 1,5 m (1,8 m w etui). Producent dołącza narzędzia do zarządzania flotą: MoboLink, StageGO, OEMConfig i Enterprise Launcher; terminale współpracują też z SOTI i VMware. Dalej opisano tylko to, co odróżnia modele.',
+    content: 'Terminal mobilny Unitech łączy odczyt kodów kreskowych z aplikacją firmy i komunikuje się z nią przez Wi-Fi albo sieć komórkową. Wszystkie modele w ofercie mają ekran dotykowy 6 cali, imager 2D, czytnik HF/NFC, Android 15 z certyfikatem GMS, Bluetooth 5.2 i Wi-Fi 6E. Mają dwa przyciski skanowania, wymienną baterię, złącze USB typu C z OTG i gniazdo microSD do 1 TB. Obudowa ma klasę IP65 i IP68 i wytrzymuje upadki z 1,5 m (1,8 m w etui). Unitech udostępnia narzędzia do zarządzania flotą: MoboLink, StageGO, OEMConfig i Enterprise Launcher; terminale współpracują też z SOTI i VMware. Dalej opisano tylko to, co odróżnia modele.',
   },
   sectionHeadings: {
     technicalDeepDive: 'Porównanie terminali Unitech',
@@ -27,7 +27,7 @@ export const unitechCategory: BrandCategoryRichContent = {
     heading: 'Jak wybrać terminal Unitech?',
     items: [
       'Łączność — wersja tylko z Wi-Fi 6E do pracy w budynku albo wersja 4G LTE (EA530) lub 5G (EA660) z eSIM i kartą nano SIM do pracy w terenie.',
-      'Odczyt — imager 2D do kodów z ekranów i papieru albo EA660 z silnikiem SE55 do odczytu z odległości do 12 m.',
+      'Odczyt — imager 2D do kodów z ekranów i papieru albo EA660 z silnikiem dalekiego zasięgu do odczytu z odległości do 12 m.',
       'RFID — EA530 UHF z wbudowanym czytnikiem UHF do 1,8 m albo czytnik RP300 do 25 m dołączony do EA530 lub EA660.',
       'Bateria — wymiana bez wyłączania w EA660 i w standardowych wersjach EA530; EA530 UHF tej funkcji nie ma.',
     ],
@@ -36,13 +36,13 @@ export const unitechCategory: BrandCategoryRichContent = {
   technicalDeepDive: 'Zestawienie obejmuje oferowane konfiguracje. Szczegóły poszczególnych PN są na kartach produktów.',
   modelTableLayout: 'tabela',
   modelTable: [
-    { name: 'Unitech EA660', href: '/produkt/unitech-ea660', role: 'Dotykowy, z opcją 5G', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 630 nitów' }, { label: 'Skaner', value: 'Standardowy lub do 12 m (SE55)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, gastronomia, logistyka i ochrona zdrowia; bateria 5000 mAh.' },
+    { name: 'Unitech EA660', href: '/produkt/unitech-ea660', role: 'Dotykowy, z opcją 5G', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 630 nitów' }, { label: 'Skaner', value: 'Standardowy lub dalekiego zasięgu (do 12 m)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, gastronomia, logistyka i ochrona zdrowia; bateria 5000 mAh.' },
     { name: 'Unitech EA530', href: '/produkt/unitech-ea530', role: 'Dotykowy, lekki', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali HD+, 500 nitów' }, { label: 'Masa', value: '242 g' }, { label: 'Sieć', value: 'Wi-Fi 6E, 4G LTE' }], bestFor: 'Handel i logistyka; bateria 4250 mAh wymieniana bez wyłączania.' },
     { name: 'Unitech EA530 UHF', href: '/produkt/unitech-ea530-uhf', role: 'UHF RFID', priceFrom: '', specs: [{ label: 'RFID', value: 'UHF, Impinj E310' }, { label: 'Odczyt', value: 'Do 1,8 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 4G LTE' }], bestFor: 'Inwentaryzacja i śledzenie majątku ze znacznikami UHF.' },
   ],
   useCases: [
     { title: 'Handel i gastronomia', description: 'EA660 i EA530 sprawdzają stany, przyjmują zamówienia i obsługują klientów przy półce. EA660 ma ekran o jasności 630 nitów.' },
-    { title: 'Logistyka i magazyn', description: 'EA660 z silnikiem SE55 czyta etykiety z odległości do 12 m. EA530 z czytnikiem RP300 odczytuje znaczniki UHF z odległości do 25 m.' },
+    { title: 'Logistyka i magazyn', description: 'EA660 z silnikiem dalekiego zasięgu czyta etykiety z odległości do 12 m. EA530 z czytnikiem RP300 odczytuje znaczniki UHF z odległości do 25 m.' },
     { title: 'Inwentaryzacja RFID', description: 'EA530 UHF odczytuje kody kreskowe i znaczniki UHF jednym urządzeniem; aplikacja TagAccess prowadzi inwentaryzację i wyszukiwanie znaczników.' },
   ],
   uniqueInsights: {
@@ -53,7 +53,7 @@ export const unitechCategory: BrandCategoryRichContent = {
     ],
   },
   comparisons: [
-    { title: 'EA660 czy EA530?', content: '[EA660](/produkt/unitech-ea660) ma ekran Full HD+ o jasności 630 nitów, procesor Snapdragon 4490, baterię 5000 mAh oraz wersje z modemem 5G i z silnikiem SE55. [EA530](/produkt/unitech-ea530) ma ekran HD+ 500 nitów, baterię 4250 mAh, modem 4G LTE i masę 242 g.' },
+    { title: 'EA660 czy EA530?', content: '[EA660](/produkt/unitech-ea660) ma ekran Full HD+ o jasności 630 nitów, procesor Snapdragon 4490, baterię 5000 mAh oraz wersje z modemem 5G i z silnikiem dalekiego zasięgu. [EA530](/produkt/unitech-ea530) ma ekran HD+ 500 nitów, baterię 4250 mAh, modem 4G LTE i masę 242 g.' },
     { title: 'EA530 czy EA530 UHF?', content: '[EA530](/produkt/unitech-ea530) wymienia baterię bez wyłączania i współpracuje z czytnikiem RP300. [EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF Impinj E310 do 1,8 m, ale nie obsługuje wymiany baterii bez wyłączania.' },
   ],
   howToSteps: [],

@@ -406,9 +406,9 @@ export const unitechRp300Accessories: Product[] = [
     "imageDescriptions": [
       "Adapter Unitech RP300 do EA530 — widok produktu"
     ],
-    "description": "Adapter 3210-900048G mocuje terminal [Unitech EA530](/produkt/unitech-ea530) lub [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) na [czytniku RP300](/produkt/unitech-rp300). Dobierz go do modelu terminala. Adapter EA660 nie zastępuje tego elementu.\n\nZestaw zawiera adapter EA530, dolny element mocujący, dwie małe i cztery duże śruby. Terminal EA530 oraz czytnik RP300 są sprzedawane osobno. Przed montażem zdejmij z terminala czarną folię. Montaż wykonaj według instrukcji RP300.",
-    "shortDescription": "Adapter Unitech 3210-900048G do montażu EA530 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
-    "seoDescription": "Adapter Unitech 3210-900048G do montażu EA530 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
+    "description": "Adapter 3210-900048G osadza terminal [Unitech EA530](/produkt/unitech-ea530) lub [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) na [czytniku RP300](/produkt/unitech-rp300). Adapter przeznaczony do EA660 nie pasuje do tych terminali.\n\nW opakowaniu jest adapter EA530 z dolnym elementem mocującym oraz komplet śrub: 2 małe i 4 duże. Terminal i czytnik kupuje się oddzielnie. Przed montażem z tylnej ścianki terminala zdejmuje się czarną folię, a kolejne kroki opisuje instrukcja RP300.",
+    "shortDescription": "Adapter Unitech 3210-900048G osadza EA530 lub EA530 UHF na czytniku RP300. W opakowaniu dolny element mocujący i komplet śrub, bez terminala i czytnika.",
+    "seoDescription": "Adapter Unitech 3210-900048G osadza EA530 lub EA530 UHF na czytniku RP300. W opakowaniu dolny element mocujący i komplet śrub, bez terminala i czytnika.",
     "seoTitle": "Adapter Unitech RP300 do EA530 — 3210-900048G | TAKMA",
     "specifications": [
       {

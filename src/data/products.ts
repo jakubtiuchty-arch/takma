@@ -96137,8 +96137,8 @@ export const brandCategories: BrandCategory[] = [
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne Unitech",
   "seoTitle": "Terminale Unitech — EA530, EA530 UHF i EA660 z Androidem",
-  "seoDescription": "Terminale Unitech z Androidem 15: EA530 z 4G lub Wi-Fi 6E, EA530 UHF z czytnikiem RFID oraz EA660 z 5G i skanerem do 12 m. Ceny netto, PN i dostępność.",
-  "longDescription": "Terminale mobilne Unitech to przenośne komputery z Androidem 15 do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje EA660 z opcją 5G i skanerem do 12 m, lekki EA530 z modemem 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi 6E, a wersje 4G i 5G także przez sieć komórkową. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
+  "seoDescription": "Terminale Unitech z Androidem 15: EA530 z 4G lub Wi-Fi 6E, EA530 UHF z czytnikiem RFID oraz EA660 z opcją 5G i skanerem do 12 m. Ceny netto, PN i dostępność.",
+  "longDescription": "Terminale mobilne Unitech to przenośne komputery z Androidem 15 do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje EA660 z opcją 5G i skanerem do 12 m, lekki EA530 z Wi-Fi 6E lub modemem 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi 6E, a wersje 4G i 5G także przez sieć komórkową. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
   "faq": unitechFaq
 },
 {

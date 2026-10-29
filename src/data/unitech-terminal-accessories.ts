@@ -12,22 +12,22 @@ const TERMINALE_EA = [EA660, EA530, EA530_UHF]
 const TERMINALE_EA530 = [EA530, EA530_UHF]
 const TAGI: Product['tags'] = ['retail', 'magazyn', 'logistyka']
 
-const KATALOG_EA660 = { name: 'Katalog akcesoriów Unitech EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-akcesoria-en.pdf', size: '1,7 MB' }
-const KATALOG_EA530 = { name: 'Katalog akcesoriów Unitech EA530 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea530-akcesoria-en.pdf', size: '1,9 MB' }
+const KATALOG_EA660 = { name: 'Katalog akcesoriów Unitech EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-akcesoria-en.pdf', size: '1,6 MB' }
+const KATALOG_EA530 = { name: 'Katalog akcesoriów Unitech EA530 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea530-akcesoria-en.pdf', size: '1,8 MB' }
 const KATALOGI_EA = [KATALOG_EA660, KATALOG_EA530]
-const QSG_STACJA_1_LADUJACA = { name: 'Skrócona instrukcja stacji 1-gniazdowej do ładowania (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-ladujaca-skrocona-instrukcja-en.pdf', size: '990 KB' }
-const QSG_STACJA_1_USB_ETHERNET = { name: 'Skrócona instrukcja stacji 1-gniazdowych USB i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-usb-ethernet-skrocona-instrukcja-en.pdf', size: '827 KB' }
-const QSG_STACJA_5 = { name: 'Skrócona instrukcja stacji 5-gniazdowych do ładowania i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-5-gniazd-skrocona-instrukcja-en.pdf', size: '809 KB' }
-const QSG_STACJA_DOKUJACA = { name: 'Skrócona instrukcja stacji dokującej (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-dokujaca-skrocona-instrukcja-en.pdf', size: '950 KB' }
-const QSG_STACJA_4_4 = { name: 'Skrócona instrukcja stacji na 4 terminale i 4 baterie EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-stacja-4-4-skrocona-instrukcja-en.pdf', size: '770 KB' }
-const QSG_LADOWARKA_EA660 = { name: 'Skrócona instrukcja ładowarki 4 baterii EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '636 KB' }
-const QSG_ETUI_EA660 = { name: 'Skrócona instrukcja etui ochronnego EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-etui-skrocona-instrukcja-en.pdf', size: '544 KB' }
-const QSG_UCHWYT_EA660 = { name: 'Skrócona instrukcja uchwytu pistoletowego EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '818 KB' }
+const QSG_STACJA_1_LADUJACA = { name: 'Skrócona instrukcja stacji 1-gniazdowej do ładowania (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-ladujaca-skrocona-instrukcja-en.pdf', size: '967 KB' }
+const QSG_STACJA_1_USB_ETHERNET = { name: 'Skrócona instrukcja stacji 1-gniazdowych USB i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-usb-ethernet-skrocona-instrukcja-en.pdf', size: '808 KB' }
+const QSG_STACJA_5 = { name: 'Skrócona instrukcja stacji 5-gniazdowych do ładowania i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-5-gniazd-skrocona-instrukcja-en.pdf', size: '790 KB' }
+const QSG_STACJA_DOKUJACA = { name: 'Skrócona instrukcja stacji dokującej (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-dokujaca-skrocona-instrukcja-en.pdf', size: '928 KB' }
+const QSG_STACJA_4_4 = { name: 'Skrócona instrukcja stacji na 4 terminale i 4 baterie EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-stacja-4-4-skrocona-instrukcja-en.pdf', size: '752 KB' }
+const QSG_LADOWARKA_EA660 = { name: 'Skrócona instrukcja ładowarki 4 baterii EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '621 KB' }
+const QSG_ETUI_EA660 = { name: 'Skrócona instrukcja etui ochronnego EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-etui-skrocona-instrukcja-en.pdf', size: '532 KB' }
+const QSG_UCHWYT_EA660 = { name: 'Skrócona instrukcja uchwytu pistoletowego EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '799 KB' }
 
-const ZASILACZ_I_PRZEWOD_USB = `**Wymagane — sprzedawane osobno**
+// Stacje 1-gniazdowe korzystają z zasilacza i przewodu USB-C terminala. Przewód jest w opakowaniu terminala, zasilacz nie.
+const ZASILACZ_USB_C = `**Wymagane — sprzedawane osobno**
 
 - [Zasilacz Unitech EA660 i EA530, wtyczka EU (1010-900074G)](/produkt/unitech-ea-zasilacz-usb-c-eu)
-- [Przewód USB 3.0 typ C Unitech EA660 i EA530 (1550-905908G)](/produkt/unitech-ea-przewod-usb-c)
 
 `
 const PRZEWOD_SIECIOWY_C13 = `**Wymagane — sprzedawane osobno**
@@ -46,7 +46,7 @@ const zasilaczUsbC: Product = {
   seoDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU i szybkim ładowaniem do terminali mobilnych Unitech EA660, EA530 oraz EA530 UHF i do stacji 1-gniazdowych. Zasilacz do terminala Unitech EA660, zasilacz Unitech EA530. PN: 1010-900074G.',
   description: `Zasilacz 1010-900074G ma wtyczkę europejską i szybkie ładowanie Quick Charge. Terminal podłącza się do niego przewodem USB-C. W opakowaniu [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) są bateria, przewód USB-C i skrócona instrukcja. Zasilacza w nich nie ma.
 
-Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zasilacz zamienny ma mieć co najmniej 15 W i szybkie ładowanie.`,
+Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -81,7 +81,7 @@ const przewodUsbC: Product = {
   shortDescription: 'Przewód Unitech 1550-905908G, USB 3.0 typ C, do terminali EA660, EA530 i EA530 UHF oraz stacji 1-gniazdowych: ładowanie przez zasilacz z szybkim ładowaniem.',
   seoTitle: 'Przewód USB-C Unitech 1550-905908G do EA660 i EA530',
   seoDescription: 'Przewód USB 3.0 typ C Unitech 1550-905908G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF oraz stacji 1-gniazdowych, z obsługą szybkiego ładowania. Przewód USB-C do Unitech EA660, kabel do Unitech EA530. PN: 1550-905908G.',
-  description: `Przewód 1550-905908G ma standard USB 3.0 i złącza USB-A oraz USB-C. Unitech opisuje go jako przewód do terminala i stacji 1-gniazdowej oraz podaje obsługę szybkiego ładowania. Sprzedawany osobno służy jako przewód zapasowy albo drugi przewód przy stanowisku ładowania z [zasilaczem 1010-900074G](/produkt/unitech-ea-zasilacz-usb-c-eu).
+  description: `Przewód 1550-905908G ma standard USB 3.0 i złącza USB-A oraz USB-C. Łączy zasilacz z terminalem albo ze stacją 1-gniazdową i obsługuje szybkie ładowanie. Sprzedawany osobno służy jako przewód zapasowy albo drugi przewód przy stanowisku ładowania z [zasilaczem 1010-900074G](/produkt/unitech-ea-zasilacz-usb-c-eu).
 
 Terminale [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) mają przewód USB-C w opakowaniu. Stacje 1-gniazdowe korzystają z takiego samego przewodu i zasilacza jak terminal.`,
   categoryId: 'akcesoria',
@@ -159,7 +159,7 @@ Terminal wchodzi do stacji z paskiem na dłoń i bez niego. Gdy ma etui lub uchw
 
 ## Co jest potrzebne do użycia?
 
-${ZASILACZ_I_PRZEWOD_USB}W zestawie jest sama stacja z wkładką. Do jej zasilania może posłużyć przewód USB-C z opakowania terminala.`,
+${ZASILACZ_USB_C}W zestawie jest sama stacja z wkładką. Stację zasila przewód USB-C z opakowania terminala; [zapasowy przewód 1550-905908G](/produkt/unitech-ea-przewod-usb-c) jest dostępny osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -197,13 +197,13 @@ const stacja1Usb: Product = {
   shortDescription: 'Stacja Unitech 5000-900130G z portem USB-C do jednego terminala EA660, EA530 lub EA530 UHF; w zestawie wkładki do obu modeli.',
   seoTitle: 'Stacja z portem USB Unitech 5000-900130G do EA660 i EA530',
   seoDescription: 'Stacja 1-gniazdowa z portem USB Unitech 5000-900130G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF: ładowanie i port USB-C, wkładki do EA660 i EA530. Stacja USB Unitech EA660, stacja Unitech EA530. PN: 5000-900130G.',
-  description: `Stacja 5000-900130G ładuje jeden terminal i ma na tylnej ściance dwa porty USB-C. Pierwszy służy do zasilania i w instrukcji nosi nazwę Charging Port. Drugi jest portem danych. Dla EA660 producent podaje obsługę USB host przez stację.
+  description: `Stacja 5000-900130G ładuje jeden terminal i ma na tylnej ściance dwa porty USB-C. Pierwszy (Charging Port) służy do zasilania, a drugi jest portem danych. EA660 może przez tę stację pracować w trybie USB host.
 
 Fabrycznie w stacji jest wkładka do [Unitech EA660](/produkt/unitech-ea660). Do [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) dołączono osobną wkładkę, którą trzeba wymienić przed użyciem. Gdy terminal ma etui albo uchwyt pistoletowy, wkładkę trzeba zdjąć.
 
 ## Co jest potrzebne do użycia?
 
-${ZASILACZ_I_PRZEWOD_USB}W pudełku jest stacja i dwie wkładki. Zasilacza ani przewodu USB-C w nim nie ma.`,
+${ZASILACZ_USB_C}W pudełku jest stacja i dwie wkładki. Zasilacza ani przewodu USB-C w nim nie ma; do zasilania stacji wystarczy przewód z zestawu terminala.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -238,13 +238,13 @@ const stacja1Ethernet: Product = {
   shortDescription: 'Stacja Unitech 5000-900131G z gniazdem Ethernet do jednego terminala EA660, EA530 lub EA530 UHF; ładowanie, port USB i USB-C.',
   seoTitle: 'Stacja z Ethernetem Unitech 5000-900131G do EA660 i EA530',
   seoDescription: 'Stacja 1-gniazdowa z Ethernetem Unitech 5000-900131G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF: gniazdo Ethernet, port USB, port USB-C i ładowanie. Stacja Ethernet Unitech EA660. PN: 5000-900131G.',
-  description: `Stacja 5000-900131G ma z tyłu gniazdo Ethernet, port USB, port USB-C do danych i port USB-C do zasilania. Producent podaje, że EA660 obsługuje Ethernet i USB host przez stację.
+  description: `Stacja 5000-900131G ma z tyłu gniazdo Ethernet, port USB, port USB-C do danych i port USB-C do zasilania. Przez tę stację EA660 korzysta z sieci przewodowej i trybu USB host.
 
 W opakowaniu są stacja z założoną wkładką do [Unitech EA660](/produkt/unitech-ea660) i jedna wkładka do [Unitech EA530](/produkt/unitech-ea530) oraz [Unitech EA530 UHF](/produkt/unitech-ea530-uhf). Przed pierwszym użyciem trzeba sprawdzić, czy wkładka pasuje do modelu terminala.
 
 ## Co jest potrzebne do użycia?
 
-${ZASILACZ_I_PRZEWOD_USB}Stacja nie ma w zestawie elementów zasilania.`,
+${ZASILACZ_USB_C}Stacja nie ma w zestawie elementów zasilania. Przewód USB-C dołączony do terminala łączy ją z zasilaczem.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -278,7 +278,7 @@ const stacja5: Product = {
   seoH1: 'Stacja ładująca 5-gniazdowa Unitech EA660 i EA530',
   shortDescription: 'Stacja ładująca Unitech 5000-900132G na pięć terminali EA660, EA530 lub EA530 UHF. Zasilacz dołączony, przewód do gniazdka kupowany osobno.',
   seoTitle: 'Stacja 5-gniazdowa Unitech 5000-900132G do EA660 i EA530',
-  seoDescription: 'Stacja ładująca 5-gniazdowa Unitech 5000-900132G dla pięciu terminali Unitech EA660, EA530 i EA530 UHF; zasilacz 12 V / 5 A dołączony. Stacja 5-slot Unitech EA660, stacja Unitech EA530. PN: 5000-900132G.',
+  seoDescription: 'Stacja ładująca 5-gniazdowa Unitech 5000-900132G z zasilaczem w pudełku ładuje naraz pięć terminali Unitech EA660, EA530 i EA530 UHF. Stacja 5-slot Unitech EA660, stacja Unitech EA530. PN: 5000-900132G.',
   description: `Stacja 5000-900132G ładuje pięć terminali jednocześnie. Zestaw obejmuje stację z założonymi wkładkami do EA660, pięć wkładek do EA530 i zasilacz 12 V / 5 A, który podłącza się do gniazda DC. Każde gniazdo ma własną wkładkę. Gniazdo przyjmie też terminal w etui lub z uchwytem; wtedy wkładkę tego gniazda zdejmuje się.
 
 Zielona dioda zasilania świeci, gdy stacja ma napięcie. Dioda ta nie zmienia stanu po włożeniu terminala, a postęp ładowania pokazuje sam terminal. Stacja przyjmuje [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf), także z paskiem na dłoń.
@@ -318,7 +318,7 @@ const stacja5Ethernet: Product = {
   seoH1: 'Stacja 5-gniazdowa z Ethernetem Unitech EA660 i EA530',
   shortDescription: 'Stacja Unitech 5000-900134G łączy ładowanie pięciu terminali EA660, EA530 lub EA530 UHF z portem Ethernet. Przewód sieciowy nie wchodzi w skład zestawu.',
   seoTitle: 'Stacja z Ethernetem Unitech 5000-900134G do EA660 i EA530',
-  seoDescription: 'Stacja 5-gniazdowa z Ethernetem Unitech 5000-900134G do ładowania pięciu terminali Unitech EA660, EA530 i EA530 UHF; zasilacz 12 V / 5 A w komplecie. Stacja Ethernet Unitech EA660. PN: 5000-900134G.',
+  seoDescription: 'Stacja 5-gniazdowa z Ethernetem Unitech 5000-900134G do ładowania pięciu terminali Unitech EA660, EA530 i EA530 UHF, z zasilaczem 12 V / 5 A. Stacja Ethernet Unitech EA660. PN: 5000-900134G.',
   description: `Stacja 5000-900134G łączy ładowanie pięciu terminali z portem Ethernet. Ma dwukolorową diodę stanu sieci: czerwone światło oznacza podłączony terminal, a migające niebieskie — połączenie danych przez Ethernet. Dioda zasilania świeci na zielono, gdy stacja jest zasilana.
 
 W pudełku są: stacja, pięć wkładek do [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) oraz zasilacz 12 V / 5 A. Wkładki do [Unitech EA660](/produkt/unitech-ea660) są już w stacji. Wkładka musi odpowiadać modelowi terminala, a po jej zdjęciu gniazdo obsługuje urządzenie w etui lub z uchwytem.
@@ -357,10 +357,10 @@ const stacjaDokujaca: Product = {
   slug: 'unitech-ea-stacja-dokujaca',
   name: 'Stacja dokująca Unitech EA660 i EA530 (5000-900142G)',
   seoH1: 'Stacja dokująca Unitech EA660 i EA530',
-  shortDescription: 'Stacja dokująca Unitech 5000-900142G do EA660, EA530 i EA530 UHF: ładowanie i tryb biurkowy z zewnętrznym monitorem, HDMI, Ethernet i trzy porty USB.',
+  shortDescription: 'Stacja dokująca Unitech 5000-900142G do EA660, EA530 i EA530 UHF: ładowanie i tryb biurkowy z zewnętrznym monitorem, HDMI, Ethernet i cztery porty USB.',
   seoTitle: 'Stacja dokująca Unitech 5000-900142G do EA660 i EA530',
   seoDescription: 'Stacja dokująca Unitech 5000-900142G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF: tryb biurkowy, monitor przez HDMI, Ethernet, porty USB, zasilacz 5 V / 6 A w zestawie. Stacja dokująca Unitech EA660. PN: 5000-900142G.',
-  description: `Stacja dokująca 5000-900142G łączy ładowanie z trybem biurkowym: terminal włożony do stacji może pracować na zewnętrznym monitorze. Stacja ma złącze HDMI, gniazdo Ethernet i trzy porty USB. Zestaw obejmuje stację z dwiema wkładkami oraz zasilacz 5 V / 6 A.
+  description: `Stacja dokująca 5000-900142G łączy ładowanie z trybem biurkowym: terminal włożony do stacji może pracować na zewnętrznym monitorze. Stacja ma złącze HDMI, gniazdo Ethernet i cztery porty USB. Zestaw obejmuje stację z dwiema wkładkami oraz zasilacz 5 V / 6 A.
 
 Wkładka „EA660” jest przeznaczona do terminala bez etui, także z paskiem na dłoń. Wkładka „EA660-B” pasuje do terminala w etui oraz z uchwytem pistoletowym. Wkładkę zdejmuje się, ściskając jej końce i unosząc ją do góry.
 
@@ -386,7 +386,7 @@ ${PRZEWOD_SIECIOWY_C13}Zasilacz 5 V / 6 A jest w zestawie, przewód do gniazdka 
     { name: 'Part Number', value: '5000-900142G' },
     { name: 'Typ', value: 'Stacja dokująca z trybem biurkowym' },
     { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF' },
-    { name: 'Złącza', value: 'HDMI, Ethernet, 3 × USB, gniazdo zasilania DC' },
+    { name: 'Złącza', value: 'HDMI, Ethernet, 4 × USB, gniazdo zasilania DC' },
     { name: 'W zestawie', value: 'Stacja z wkładkami „EA660” i „EA660-B”, zasilacz 5 V / 6 A' },
     { name: 'Przewód sieciowy', value: 'Sprzedawany osobno (EU: 1550-602333G)' },
   ],
@@ -480,7 +480,7 @@ const przewodZasilajacyEu: Product = {
   seoDescription: 'Przewód zasilający EU Unitech 1550-602333G z wtykiem Schuko i złączem IEC C13 do stacji i ładowarek terminali mobilnych Unitech EA660, EA530 i EA530 UHF. Przewód sieciowy Unitech EA660. PN: 1550-602333G.',
   description: `Przewód 1550-602333G ma po jednej stronie europejski wtyk z uziemieniem Schuko, a po drugiej gniazdo IEC C13. Łączy z siecią zasilacz [stacji 5-gniazdowych](/produkt/unitech-ea-stacja-5-slot), [stacji 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4), [ładowarek 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) i [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca). Te urządzenia mają zasilacz w zestawie, a przewodu nie.
 
-Unitech wymienia przewody dla Stanów Zjednoczonych, Wielkiej Brytanii i Unii Europejskiej. Ten numer dotyczy Unii. Przewód [1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) ma złącze C5 i należy do zasilacza czytnika RP300, więc do stacji EA nie pasuje.`,
+Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; ten numer to wersja EU. Przewód [1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) ma złącze C5 i należy do zasilacza czytnika RP300, więc do stacji EA nie pasuje.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -583,7 +583,7 @@ const bateriaEa660: Product = {
   shortDescription: 'Bateria Unitech 1400-900074G, 3,87 V i 5000 mAh, do terminala EA660: wymiana bez wyłączania terminala, certyfikat UL.',
   seoTitle: 'Bateria Unitech 1400-900074G 5000 mAh do EA660',
   seoDescription: 'Bateria Unitech 1400-900074G, 3,87 V, 5000 mAh, do terminala mobilnego Unitech EA660, z wymianą warm swap i certyfikatem UL. Bateria Unitech EA660, akumulator do EA660 Unitech. PN: 1400-900074G.',
-  description: `Bateria 1400-900074G ma napięcie 3,87 V i pojemność 5000 mAh. Unitech opisuje ją jako baterię Li-ion z certyfikatem UL. Terminal [Unitech EA660](/produkt/unitech-ea660) umożliwia jej wymianę bez wyłączania urządzenia (warm swap). W zestawie terminala jest jedna bateria; ta służy jako zapasowa lub wymienna.
+  description: `Bateria 1400-900074G ma napięcie 3,87 V i pojemność 5000 mAh. To bateria Li-ion z certyfikatem UL. Terminal [Unitech EA660](/produkt/unitech-ea660) umożliwia jej wymianę bez wyłączania urządzenia (warm swap). W zestawie terminala jest jedna bateria; ta służy jako zapasowa lub wymienna.
 
 Baterię wyjmuje się ręcznie, bez narzędzi, po zdjęciu pokrywy. W komorze baterii nie wolno umieszczać naklejek ani oznaczeń, ponieważ mogą pogorszyć szczelność i odporność na upadki. Baterie ładuje [ładowarka 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) oraz [stacja 4+4](/produkt/unitech-ea660-stacja-4-4).`,
   categoryId: 'akcesoria',
@@ -628,7 +628,7 @@ Terminal wkłada się najpierw dolną krawędzią, a następnie dociska górne n
   priceFrom: 75.66,
   images: ['/images/products/3210-900040G.png', '/images/products/3210-900040G-2.png'],
   imageDescriptions: [
-    'Etui ochronne Unitech 3210-900040G do EA660 — terminal od tyłu obok osobnego etui z otworami na aparat i okno skanera',
+    'Etui ochronne Unitech 3210-900040G do EA660 — terminal od tyłu obok osobnego etui z otworem na aparat',
     'Etui ochronne Unitech 3210-900040G do EA660 — drugie ujęcie z tyłu terminala i etui',
   ],
   tags: TAGI,
@@ -728,7 +728,7 @@ const smyczEa660: Product = {
   shortDescription: 'Smycz na nadgarstek Unitech 385892G do terminala EA660 (Wrist Lanyard).',
   seoTitle: 'Smycz na nadgarstek Unitech 385892G do EA660',
   seoDescription: 'Smycz na nadgarstek Unitech 385892G (Wrist Lanyard) do terminala mobilnego Unitech EA660. Smycz do Unitech EA660. PN: 385892G.',
-  description: `Smycz 385892G to pleciony pasek na nadgarstek z pętlą, wymieniony na liście akcesoriów [Unitech EA660](/produkt/unitech-ea660). Nie jest paskiem na dłoń ze stałym ramieniem. Ten ma numer [5400-900052G](/produkt/unitech-ea-pasek-na-dlon).
+  description: `Smycz 385892G to pleciony pasek z pętlą do noszenia [Unitech EA660](/produkt/unitech-ea660) na nadgarstku. Nie jest paskiem na dłoń ze stałym ramieniem. Ten ma numer [5400-900052G](/produkt/unitech-ea-pasek-na-dlon).
 
 Uchwyt pistoletowy [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy) ma własny pasek na nadgarstek w opakowaniu.`,
   categoryId: 'akcesoria',
@@ -879,7 +879,7 @@ const etuiEa530: Product = {
   shortDescription: 'Etui ochronne Unitech 3210-900050G do terminali EA530 i EA530 UHF: odporność na upadki z 1,8 m.',
   seoTitle: 'Etui ochronne Unitech 3210-900050G do EA530 i EA530 UHF',
   seoDescription: 'Etui ochronne Unitech 3210-900050G dla terminali EA530 i EA530 UHF podnosi odporność z 1,5 do 1,8 m. Etui Unitech EA530, osłona terminala EA530. PN: 3210-900050G.',
-  description: `Etui 3210-900050G zwiększa odporność [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) na upadki z 1,5 m do 1,8 m. Ma otwory na aparat i okno skanera.
+  description: `Etui 3210-900050G zwiększa odporność [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) na upadki z 1,5 m do 1,8 m. Ma otwór na aparat w tylnej ściance.
 
 W stacjach ładujących z wkładką zdejmowaną terminal w etui wymaga zdjęcia tej wkładki. W [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca) pracuje wtedy z wkładką „EA660-B”. Etui do EA660 ma inny numer: [3210-900040G](/produkt/unitech-ea660-etui).`,
   categoryId: 'akcesoria',
@@ -887,7 +887,7 @@ W stacjach ładujących z wkładką zdejmowaną terminal w etui wymaga zdjęcia 
   manufacturerId: 'unitech',
   priceFrom: 46.08,
   images: ['/images/products/3210-900050G.png'],
-  imageDescriptions: ['Etui ochronne Unitech 3210-900050G do EA530 — terminal od tyłu obok osobnego etui z otworami na aparat i okno skanera'],
+  imageDescriptions: ['Etui ochronne Unitech 3210-900050G do EA530 — terminal od tyłu obok osobnego etui z otworem na aparat'],
   tags: TAGI,
   availability: 'available',
   isNew: true,
@@ -916,7 +916,7 @@ const uchwytEa530: Product = {
   seoDescription: 'Uchwyt pistoletowy Unitech 5500-900115G dla EA530 i EA530 UHF wraz z paskiem na nadgarstek. Gun grip Unitech EA530. PN: 5500-900115G.',
   description: `Uchwyt 5500-900115G przeznaczony jest do [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf). Terminal łączy się z nim przez styki pogo na tylnej ściance. W opakowaniu jest pasek na nadgarstek do tego uchwytu.
 
-Unitech podaje, że EA530 UHF działa ze standardowym uchwytem pistoletowym, a odczyt kodów kreskowych i znaczników RFID odbywa się w jednym urządzeniu. Do ładowania terminala w uchwycie wkładkę stacji zdejmuje się. Uchwyt do EA660 ma inny numer: [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy).`,
+Z EA530 UHF w uchwycie kody kreskowe i znaczniki RFID odczytuje się jednym urządzeniem. Do ładowania terminala w uchwycie wkładkę stacji zdejmuje się. Uchwyt do EA660 ma inny numer: [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',

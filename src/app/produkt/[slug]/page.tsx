@@ -290,7 +290,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Laptopy przemysłowe (Getac) — galeria i ceny jak tablety Getac; własny tytuł podobnych i opis filmów.
   const industrialLaptop = product.categoryId === 'laptopy-przemyslowe'
   const datalogicScannerProduct = product.manufacturerId === 'datalogic' && product.categoryId === 'skanery-kodow-kreskowych'
-  const rfidTextLinks = ['cipherlab', 'sunmi', 'bluebird'].includes(product.manufacturerId) || isUnitechTerminal(product) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || product.id.startsWith('citizen-pos-') || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
+  // Unitech: terminale EA i ich akcesoria mają linki w tekście jak Bluebird i karty RP300/RP902 (bez zamiany nazw na PN).
+  const rfidTextLinks = ['cipherlab', 'sunmi', 'bluebird', 'unitech'].includes(product.manufacturerId) || /^epson-(?:ot-|ps-|wh-|erc|sjic33p)/.test(product.id) || product.id.startsWith('citizen-pos-') || isRfidContentProduct(product.id) || bixolonLabelProduct || product.id === 'bixolon-usb-kab-g' || product.id === 'bixolon-ser-kab-9-9' || /^bixolon-(?:pbd|pqc|pbp|pbs|pic|plc|pcc|pbl|rbc|rmb)-/.test(product.id) || datalogicScannerContent || /^zebra-(?:sp720[18]-h|mp7200)$/.test(product.id)
   const initialStock = await getProductStock(product.slug)
   const liveOffers = initialStock !== undefined
 
