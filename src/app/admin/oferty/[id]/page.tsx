@@ -165,13 +165,13 @@ export default async function QuoteDetailPage({ params }: PageProps) {
               {quote.notes && (
                 <div>
                   <h3 className="text-sm font-medium text-gray-500 mb-1">Uwagi (widoczne dla klienta)</h3>
-                  <p className="text-sm text-gray-700">{quote.notes}</p>
+                  <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-line break-words">{quote.notes}</p>
                 </div>
               )}
               {quote.internalNotes && (
                 <div className="p-3 bg-yellow-50 rounded-lg">
                   <h3 className="text-sm font-medium text-yellow-800 mb-1">Notatki wewnętrzne</h3>
-                  <p className="text-sm text-yellow-700">{quote.internalNotes}</p>
+                  <p className="text-sm leading-relaxed text-yellow-700 whitespace-pre-line break-words">{quote.internalNotes}</p>
                 </div>
               )}
             </div>

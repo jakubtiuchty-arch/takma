@@ -230,8 +230,18 @@ export function QuotePdfDoc({ q }: { q: QuotePdfData }) {
         ) : null}
 
         {q.notes ? (
-          <View style={s.notes} wrap={false}>
-            <Text><Text style={[s.bold, { color: '#92400e' }]}>Uwagi: </Text>{q.notes}</Text>
+          <View style={s.notes}>
+            <Text style={[s.bold, { color: '#92400e', marginBottom: 6 }]}>Uwagi i warunki</Text>
+            {q.notes.split(/\r?\n\s*\r?\n/).filter(Boolean).map((paragraph, i) => {
+              const [firstLine, ...rest] = paragraph.split(/\r?\n/)
+              const heading = /[A-ZĄĆĘŁŃÓŚŹŻ]/.test(firstLine) && firstLine === firstLine.toUpperCase()
+              return (
+                <Text key={i} style={{ marginBottom: 7 }}>
+                  {heading ? <Text style={s.bold}>{firstLine}{rest.length ? '\n' : ''}</Text> : firstLine}
+                  {rest.length ? `${heading ? '' : '\n'}${rest.join('\n')}` : ''}
+                </Text>
+              )
+            })}
           </View>
         ) : null}
 
