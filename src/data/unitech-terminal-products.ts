@@ -24,7 +24,7 @@ const ea660: Product = {
   shortDescription: 'Unitech EA660 — terminal mobilny z ekranem 6″ Full HD+ o jasności 630 nitów, Wi-Fi 6E, opcją 5G z eSIM i opcjonalnym silnikiem skanującym do 12 m.',
   description: `Unitech EA660 to terminal mobilny z ekranem 6″ Full HD+ (2160 × 1080) o jasności 630 nitów. Szkło Corning Gorilla Glass Victus chroni ekran, który reaguje na dotyk w rękawicach (3 mm), rysik 5,5 mm i mokry palec.
 
-Kody 1D i 2D odczytuje imager 2D. W ofercie są wersje ze standardowym silnikiem skanującym oraz z opcjonalnym silnikiem do odczytu z odległości do 12 m. Producent przeznacza go do pracy z bliska i z daleka w handlu i logistyce.
+Kody 1D i 2D odczytuje imager 2D. W ofercie są wersje ze standardowym silnikiem skanującym oraz z opcjonalnym silnikiem do odczytu z odległości do 12 m. Ten silnik odczytuje kody z bliska i z daleka, co ułatwia pracę w handlu i logistyce.
 
 Wersje 5G mają modem 5G z eSIM i kartą nano SIM, obsługują połączenia głosowe i SMS oraz odbierają sygnał GNSS na pasmach L1 i L5. Wersje tylko z Wi-Fi 6E nie mają modułu SIM ani GPS.
 
@@ -38,7 +38,7 @@ Terminal jest przeznaczony do handlu, gastronomii i hotelarstwa, logistyki oraz 
 
 - ${ZASILACZ_EU}
 
-Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowaniem ładuje terminal do pełna w 4 godziny.`,
+Przewód USB-C jest w zestawie, a zasilacza nie ma. Zasilacz z szybkim ładowaniem ładuje terminal do pełna w ciągu 4 godzin.`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: [],
   manufacturerId: 'unitech',
@@ -202,9 +202,9 @@ Obudowa ma wymiary 161 × 76,8 × 14,15 mm i waży 242 g (±1%). Ekran 6″ HD+ 
 
 Terminal jest dostępny w wersji 4G LTE oraz w wersji tylko z Wi-Fi 6E. Wersja 4G ma eSIM i gniazdo nano SIM; moduł SIM i GPS występują wyłącznie w niej.
 
-Skaner czyta kody 1D i 2D, w tym DPM (10 mil), oraz kody na ekranach telefonów i na papierze, w dowolnej orientacji. Do odczytu znaczników UHF z odległości do 25 m producent przewiduje współpracę z czytnikiem [Unitech RP300](/produkt/unitech-rp300).
+Skaner czyta kody 1D i 2D, w tym DPM (10 mil), oraz kody na ekranach telefonów i na papierze, w dowolnej orientacji. Znaczniki UHF z odległości do 25 m terminal odczytuje razem z czytnikiem [Unitech RP300](/produkt/unitech-rp300).
 
-Producent kieruje EA530 do handlu i logistyki, a z czytnikiem RP300 także do śledzenia zapasów i majątku, również w serwisie w terenie. System Android 15 ma certyfikat GMS i możliwość aktualizacji do Androida 17. Okres gwarancji wynosi 12 miesięcy.
+EA530 jest przeznaczony do handlu i logistyki, a z czytnikiem RP300 także do śledzenia zapasów i majątku, również w serwisie w terenie. System Android 15 ma certyfikat GMS i możliwość aktualizacji do Androida 17. Okres gwarancji wynosi 12 miesięcy.
 
 ## Co jest potrzebne do użycia?
 
@@ -313,7 +313,7 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     },
     {
       question: 'Czy wersja EA530 tylko z Wi-Fi ma GPS i SIM?',
-      answer: 'Nie. Moduł 4G, GPS oraz gniazda eSIM i nano SIM mają tylko wersje 4G LTE. Wersja tylko z Wi-Fi 6E łączy się z siecią firmową i nadaje się do pracy w budynku.',
+      answer: 'Nie. Moduł 4G, GPS, eSIM i gniazdo nano SIM mają tylko wersje 4G LTE. Wersja tylko z Wi-Fi 6E łączy się z siecią firmową i nadaje się do pracy w budynku.',
     },
     {
       question: 'Czy EA530 odczyta kody DPM i kody z ekranów telefonów?',
@@ -329,7 +329,7 @@ Zestaw nie zawiera zasilacza; w pudełku są terminal, bateria, przewód USB-C i
     },
     {
       question: 'Jak ładować Unitech EA530?',
-      answer: 'Przewód USB-C należy do zestawu, a [zasilacz USB-C](/produkt/unitech-ea-zasilacz-usb-c-eu) z wtyczką EU kupuje się osobno. Terminal ładuje się do pełna w 4 godziny. Zapasowe baterie ładuje [ładowarka 4 baterii](/produkt/unitech-ea530-ladowarka-baterii).',
+      answer: 'Przewód USB-C należy do zestawu, a [zasilacz USB-C](/produkt/unitech-ea-zasilacz-usb-c-eu) z wtyczką EU kupuje się osobno. Terminal ładuje się do pełna w ciągu 4 godzin. Zapasowe baterie ładuje [ładowarka 4 baterii](/produkt/unitech-ea530-ladowarka-baterii).',
     },
     {
       question: 'Czy EA530 pasuje do stacji ładującej razem z etui albo uchwytem pistoletowym?',
@@ -354,7 +354,7 @@ const ea530Uhf: Product = {
   shortDescription: 'Unitech EA530 UHF — terminal mobilny z wbudowanym czytnikiem UHF RFID (Impinj E310, do 1,8 m), skanerem 1D/2D, 4G LTE i aplikacją TagAccess.',
   description: `Unitech EA530 UHF to terminal mobilny, który odczytuje kody kreskowe 1D i 2D, znaczniki HF/NFC i znaczniki UHF RFID w jednym urządzeniu. Czytnik UHF z układem Impinj E310 pracuje na odległość do 1,8 m. Unitech produkuje go w wersjach na pasmo 865–868 MHz (EU) i 902–928 MHz (US).
 
-Funkcje RFID działają razem ze standardowym uchwytem pistoletowym. Producent przeznacza je do inwentaryzacji i śledzenia majątku w handlu, logistyce i serwisie w terenie.
+Funkcje RFID działają razem ze standardowym uchwytem pistoletowym. Są przeznaczone do inwentaryzacji i śledzenia majątku w handlu, logistyce i serwisie w terenie.
 
 Aplikacja TagAccess obsługuje inwentaryzację, odczyt i zapis znaczników, blokowanie (Lock), dezaktywację (Kill) i wyszukiwanie znacznika (Find). Funkcja Data Wedge wpisuje odczytany znacznik tak, jakby pochodził z klawiatury. Aplikacja pracuje na operacjach EPC i SGTIN.
 
@@ -396,7 +396,8 @@ Do terminala dołączono baterię, przewód USB-C i skróconą instrukcję. Zasi
     { name: 'NFC / HF RFID', value: '13,56 MHz; ISO 14443 A/B, ISO 15693, MIFARE, FeliCa (ISO/IEC 18092)' },
     { name: 'Aparaty', value: 'Tylny 16 MP z autofokusem i lampą; przedni 8 MP' },
     { name: 'Wi-Fi', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/ax/d/e/h/i/k/r/u/w/v, DBS' },
-    { name: 'Łączność', value: 'Bluetooth 5.2 BLE; 4G LTE FDD B1/2/3/4/5/7/8/12/17/19/20/28a&b/66, LTE TDD B38/39/40/41; eSIM i nano SIM' },
+    { name: 'Łączność', value: 'Bluetooth 5.2 BLE; 4G LTE FDD B1/2/3/4/5/7/8/12/17/19/20/28a&b/66, LTE TDD B38/39/40/41' },
+    { name: 'SIM', value: 'eSIM i gniazdo nano SIM' },
     { name: 'GNSS', value: 'GPS, BeiDou, GLONASS, Galileo, A-GPS' },
     { name: 'Złącza', value: 'USB 2.0 typ C z OTG; styki pogo z tyłu (uchwyt pistoletowy) i na dole (ładowanie w stacji)' },
     { name: 'Przyciski', value: '6: przycisk programowalny, dwa przyciski skanowania, głośność góra/dół, zasilanie' },

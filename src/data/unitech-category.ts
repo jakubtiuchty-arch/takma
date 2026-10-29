@@ -2,9 +2,9 @@ import type { BrandCategoryRichContent } from './brand-category-content'
 
 export const unitechFaq = [
   { question: 'Jakie terminale Unitech są w ofercie TAKMA?', answer: 'W ofercie są trzy modele z ekranem 6 cali i Androidem 15: EA660 z Wi-Fi 6E lub 5G, EA530 z Wi-Fi 6E lub 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Wszystkie mają certyfikat GMS, a EA660 także AER.' },
-  { question: 'Czy terminale Unitech mają zasilacz w zestawie?', answer: 'Nie. W zestawie są terminal, bateria, przewód USB-C i skrócona instrukcja. Zasilacz USB-C z szybkim ładowaniem sprzedajemy osobno. Terminal ładuje się do pełna w 4 godziny.' },
+  { question: 'Czy terminale Unitech mają zasilacz w zestawie?', answer: 'Nie. W zestawie są terminal, bateria, przewód USB-C i skrócona instrukcja. Zasilacz USB-C z szybkim ładowaniem sprzedajemy osobno. Terminal ładuje się do pełna w ciągu 4 godzin.' },
   { question: 'Który terminal Unitech ma wbudowany czytnik UHF RFID?', answer: 'EA530 UHF ma czytnik z układem Impinj E310 i odczytuje znaczniki z odległości do 1,8 m. Terminale EA530 i EA660 mają wbudowany tylko czytnik HF/NFC; czytnik UHF Unitech RP300 o zasięgu do 25 m dołącza się do nich przez adapter.' },
-  { question: 'Które terminale Unitech mają 5G, a które 4G LTE?', answer: 'Modem 5G mają wersje EA660 oznaczone 5G. EA530 i EA530 UHF mają modem 4G LTE. Wersje tylko z Wi-Fi 6E nie mają modułu SIM ani GPS.' },
+  { question: 'Które terminale Unitech mają 5G, a które 4G LTE?', answer: 'Modem 5G mają wersje EA660 oznaczone 5G. Modem 4G LTE ma EA530 w wersji 4G oraz EA530 UHF. Wersje tylko z Wi-Fi 6E nie mają modułu SIM ani GPS.' },
   { question: 'Czy bateria w terminalu Unitech wymienia się bez wyłączania?', answer: 'Tak, w EA660 oraz w standardowych wersjach EA530 (4G i tylko z Wi-Fi). Model EA530 UHF nie obsługuje wymiany baterii bez wyłączania terminala.' },
   { question: 'Do jakiej wersji Androida można zaktualizować terminale Unitech?', answer: 'Terminale mają fabrycznie Androida 15 z możliwością aktualizacji do Androida 17.' },
   { question: 'Jaka jest gwarancja na terminale Unitech?', answer: 'Gwarancja na terminale Unitech w naszej ofercie wynosi 12 miesięcy.' },
@@ -41,7 +41,7 @@ export const unitechCategory: BrandCategoryRichContent = {
     { name: 'Unitech EA530 UHF', href: '/produkt/unitech-ea530-uhf', role: 'UHF RFID', priceFrom: '', specs: [{ label: 'RFID', value: 'UHF, Impinj E310' }, { label: 'Odczyt', value: 'Do 1,8 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 4G LTE' }], bestFor: 'Inwentaryzacja i śledzenie majątku ze znacznikami UHF.' },
   ],
   useCases: [
-    { title: 'Handel i gastronomia', description: 'EA660 i EA530 sprawdzają stany, przyjmują zamówienia i obsługują klientów przy półce. EA660 ma ekran o jasności 630 nitów.' },
+    { title: 'Handel i gastronomia', description: 'EA660 i EA530 sprawdzają stany i obsługują klientów przy półce. EA660 przyjmuje też zamówienia klientów, jest przeznaczony także do gastronomii i hotelarstwa i ma ekran o jasności 630 nitów.' },
     { title: 'Logistyka i magazyn', description: 'EA660 z silnikiem dalekiego zasięgu czyta etykiety z odległości do 12 m. EA530 z czytnikiem RP300 odczytuje znaczniki UHF z odległości do 25 m.' },
     { title: 'Inwentaryzacja RFID', description: 'EA530 UHF odczytuje kody kreskowe i znaczniki UHF jednym urządzeniem; aplikacja TagAccess prowadzi inwentaryzację i wyszukiwanie znaczników.' },
   ],
@@ -53,8 +53,8 @@ export const unitechCategory: BrandCategoryRichContent = {
     ],
   },
   comparisons: [
-    { title: 'EA660 czy EA530?', content: '[EA660](/produkt/unitech-ea660) ma ekran Full HD+ o jasności 630 nitów, procesor Snapdragon 4490, baterię 5000 mAh oraz wersje z modemem 5G i z silnikiem dalekiego zasięgu. [EA530](/produkt/unitech-ea530) ma ekran HD+ 500 nitów, baterię 4250 mAh, modem 4G LTE i masę 242 g.' },
-    { title: 'EA530 czy EA530 UHF?', content: '[EA530](/produkt/unitech-ea530) wymienia baterię bez wyłączania i współpracuje z czytnikiem RP300. [EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF Impinj E310 do 1,8 m, ale nie obsługuje wymiany baterii bez wyłączania.' },
+    { title: 'EA660 czy EA530?', content: '[EA660](/produkt/unitech-ea660) ma ekran Full HD+ o jasności 630 nitów, procesor Snapdragon 4490, baterię 5000 mAh oraz wersje z modemem 5G i z silnikiem dalekiego zasięgu. [EA530](/produkt/unitech-ea530) ma ekran HD+ 500 nitów, baterię 4250 mAh, wersję z modemem 4G LTE i masę 242 g.' },
+    { title: 'EA530 czy EA530 UHF?', content: '[EA530](/produkt/unitech-ea530) wymienia baterię bez wyłączania, a znaczniki UHF odczytuje tylko z dołączonym czytnikiem RP300. [EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF Impinj E310 do 1,8 m, ale nie obsługuje wymiany baterii bez wyłączania. Oba modele współpracują z czytnikiem RP300 o zasięgu do 25 m.' },
   ],
   howToSteps: [],
   faq: unitechFaq,

@@ -155,7 +155,7 @@ const stacja1Ladujaca: Product = {
   seoDescription: 'Stacja ładująca 1-gniazdowa Unitech 5000-900129G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF, zasilanie USB-C, zasilacz i przewód osobno. Stacja Unitech EA660, stacja ładująca Unitech EA530. PN: 5000-900129G.',
   description: `Stacja 5000-900129G ładuje jeden terminal przez styki na jego spodzie. Służy tylko do ładowania i nie ma gniazda na baterię zapasową. Zasilanie doprowadza się do portu USB-C stacji. Zielona dioda z przodu pokazuje, że stacja ma zasilanie, a stan ładowania widać na terminalu.
 
-Terminal wchodzi do stacji z paskiem na dłoń i bez niego. Gdy ma etui lub uchwyt pistoletowy, wkładkę stacji zdejmuje się przed ładowaniem. Wkładkę zakłada się z powrotem, aż zaskoczy. Unitech zaleca zasilacz oryginalny. Zamienny powinien mieć co najmniej 15 W i obsługiwać napięcia 5 V / 3 A, 9 V / 2 A lub 12 V / 1,5 A.
+Terminal wchodzi do stacji z paskiem na dłoń i bez niego. Gdy ma etui lub uchwyt pistoletowy, wkładkę stacji zdejmuje się przed ładowaniem. Wkładkę zakłada się z powrotem, aż zaskoczy. Unitech zaleca zasilacz oryginalny. Zamienny powinien mieć co najmniej 15 W i obsługiwać ładowanie 5 V / 3 A, 9 V / 2 A i 12 V / 1,5 A.
 
 ## Co jest potrzebne do użycia?
 
@@ -197,7 +197,7 @@ const stacja1Usb: Product = {
   shortDescription: 'Stacja Unitech 5000-900130G z portem USB-C do jednego terminala EA660, EA530 lub EA530 UHF; w zestawie wkładki do obu modeli.',
   seoTitle: 'Stacja z portem USB Unitech 5000-900130G do EA660 i EA530',
   seoDescription: 'Stacja 1-gniazdowa z portem USB Unitech 5000-900130G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF: ładowanie i port USB-C, wkładki do EA660 i EA530. Stacja USB Unitech EA660, stacja Unitech EA530. PN: 5000-900130G.',
-  description: `Stacja 5000-900130G ładuje jeden terminal i ma na tylnej ściance dwa porty USB-C. Pierwszy (Charging Port) służy do zasilania, a drugi jest portem danych. EA660 może przez tę stację pracować w trybie USB host.
+  description: `Stacja 5000-900130G ładuje jeden terminal i ma na tylnej ściance dwa porty USB-C. Port oznaczony symbolem zasilania doprowadza zasilanie, a port z symbolem USB przesyła dane. EA660 może przez tę stację pracować w trybie USB host.
 
 Fabrycznie w stacji jest wkładka do [Unitech EA660](/produkt/unitech-ea660). Do [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) dołączono osobną wkładkę, którą trzeba wymienić przed użyciem. Gdy terminal ma etui albo uchwyt pistoletowy, wkładkę trzeba zdjąć.
 
@@ -516,7 +516,7 @@ const uchwytSamochodowy: Product = {
   seoDescription: 'Uchwyt samochodowy Unitech 5000-66C0001G (vehicle cradle) do terminali mobilnych Unitech EA660, EA530 i EA530 UHF, z przewodem zasilającym i obrotową podstawą. Uchwyt do auta Unitech EA660. PN: 5000-66C0001G.',
   description: `Uchwyt 5000-66C0001G mocuje terminal w pojeździe. Jest uchwytem aktywnym, czyli zasila terminal przewodem, który łączy się z gniazdem w pojeździe. W zestawie są uchwyt, przewód zasilający, obrotowa podstawa i elementy montażowe. Terminal nie wchodzi w skład zestawu.
 
-Uchwyt współpracuje z [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf). Podstawa jest obrotowa.`,
+Uchwyt współpracuje z [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -693,7 +693,7 @@ const szkloEa660: Product = {
   shortDescription: 'Szkło ochronne 9H Unitech 5400-900062G do ekranu terminala EA660; opakowanie zawiera 10 sztuk.',
   seoTitle: 'Szkło ochronne 9H Unitech 5400-900062G do EA660, 10 szt.',
   seoDescription: 'Szkło ochronne 9H Unitech 5400-900062G do ekranu EA660, 10 sztuk w opakowaniu. Szkło hartowane do Unitech EA660. PN: 5400-900062G.',
-  description: `Opakowanie 5400-900062G zawiera 10 szkieł ochronnych o twardości 9H do ekranu 6" [Unitech EA660](/produkt/unitech-ea660). Ekran terminala ma szkło Corning Gorilla Glass Victus, a szkło ochronne tworzy na nim dodatkową warstwę.
+  description: `Opakowanie 5400-900062G zawiera 10 szkieł ochronnych o twardości 9H do ekranu 6″ [Unitech EA660](/produkt/unitech-ea660). Ekran terminala ma szkło Corning Gorilla Glass Victus, a szkło ochronne tworzy na nim dodatkową warstwę.
 
 Cena dotyczy całego opakowania, nie pojedynczego szkła. Szkło do EA530 ma inny numer: [5400-900078G](/produkt/unitech-ea530-szklo-ochronne).`,
   categoryId: 'akcesoria',
@@ -762,7 +762,7 @@ const stacja44Ea660: Product = {
   shortDescription: 'Stacja Unitech 5000-900133G do EA660: cztery gniazda na terminale i cztery komory na baterie. Zasilacz jest w komplecie, a przewód sieciowy wymaga zamówienia.',
   seoTitle: 'Stacja Unitech 5000-900133G do EA660: 4 terminale i 4 baterie',
   seoDescription: 'Stacja ładująca Unitech 5000-900133G do terminali mobilnych Unitech EA660: cztery gniazda na terminale i cztery komory na baterie, zasilacz 12 V / 5 A w zestawie. Stacja 4+4 Unitech EA660. PN: 5000-900133G.',
-  description: `Stacja 5000-900133G ma cztery gniazda na terminale [Unitech EA660](/produkt/unitech-ea660) i cztery komory na [baterie 5000 mAh](/produkt/unitech-ea660-bateria). Ładuje oba rodzaje urządzeń jednocześnie. Dla EA530 Unitech przewiduje osobną stację tego typu.
+  description: `Stacja 5000-900133G ma cztery gniazda na terminale [Unitech EA660](/produkt/unitech-ea660) i cztery komory na [baterie 5000 mAh](/produkt/unitech-ea660-bateria). Ładuje oba rodzaje urządzeń jednocześnie. Do EA530 służy osobna stacja tego typu.
 
 W pudełku są stacja z wkładkami i zasilacz 12 V / 5 A. Baterii i terminali nie ma w zestawie. Baterię kładzie się tak, aby nazwa modelu i pasek baterii były po lewej stronie. Czerwona dioda baterii oznacza ładowanie, zielona pełne naładowanie, a brak światła brak wykrytej baterii. Terminal pracujący w etui albo z uchwytem pistoletowym wymaga zdjętej wkładki gniazda.
 
@@ -808,7 +808,7 @@ Dioda stanu ładowania świeci na czerwono podczas ładowania i na zielono po na
 
 ## Co jest potrzebne do użycia?
 
-${PRZEWOD_SIECIOWY_C13}Zasilacz ładowarki ma gniazdo DC, a przewód sieciowy kupuje się osobno.`,
+${PRZEWOD_SIECIOWY_C13}Wtyk zasilacza wchodzi do gniazda DC ładowarki, a przewód sieciowy kupuje się osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -953,7 +953,7 @@ const szkloEa530: Product = {
   shortDescription: 'Szkło ochronne 9H Unitech 5400-900078G do ekranu terminali EA530 i EA530 UHF; opakowanie zawiera 10 sztuk.',
   seoTitle: 'Szkło 9H Unitech 5400-900078G do EA530 i EA530 UHF (10 szt.)',
   seoDescription: 'Opakowanie 10 szkieł ochronnych 9H Unitech 5400-900078G do ekranu terminali EA530 i EA530 UHF. Folia ochronna Unitech EA530. PN: 5400-900078G.',
-  description: `Opakowanie 5400-900078G zawiera 10 szkieł ochronnych 9H do ekranu 6" HD+ terminali [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf).
+  description: `Opakowanie 5400-900078G zawiera 10 szkieł ochronnych 9H do ekranu 6″ HD+ terminali [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf).
 
 Cena dotyczy całego opakowania. Szkło ochronne do EA660 ma osobny numer: [5400-900062G](/produkt/unitech-ea660-szklo-ochronne).`,
   categoryId: 'akcesoria',
