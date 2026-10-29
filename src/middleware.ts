@@ -496,7 +496,9 @@ export async function middleware(request: NextRequest) {
       'magicard-600-duo-zestaw-startowy', 'magicard-pronto100-zestaw-startowy',
       // Zasilanie i mocowanie RAM do stacji MC9400 / MC9450
       'ram-gds-charge-v17u', 'ram-gds-charge-v18u', 'ram-101u-247-4',
-      'ram-b-166u', 'ram-b-238u', 'ram-b-166-202u',
+      'ram-b-166u', 'ram-b-238u',
+      // Uchwyt RAM z przyssawką do uchwytów samochodowych tabletów Unitech RT112
+      'ram-b-166-202u',
       // Przewody i mocowanie do skanerów ladowych Zebra SP72-H i MP7200
       'zebra-kabel-usb-5m-mp7200', 'zebra-kabel-usb-power-plus-mp7200', 'zebra-kabel-usb-power-plus-sp72',
       'zebra-kabel-zasilajacy-376', 'zebra-mocowanie-w-blacie-sp72-h',

@@ -332,8 +332,8 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 - Unitech EA660 (6" Full HD+ 630 nitów, Wi-Fi 6E, opcja 5G, silnik skanujący do 12 m, bateria 5000 mAh, od 2 882 zł netto): https://www.takma.com.pl/produkt/unitech-ea660
 - Unitech EA530 (6" HD+, 242 g, 4G LTE lub Wi-Fi 6E, bateria 4250 mAh wymieniana bez wyłączania, od 2 166 zł netto): https://www.takma.com.pl/produkt/unitech-ea530
 - Unitech EA530 UHF (wbudowany czytnik UHF RFID Impinj E310 do 1,8 m, skaner 1D/2D, 4G LTE, od 2 637 zł netto): https://www.takma.com.pl/produkt/unitech-ea530-uhf
-- Unitech HT730 Plus (4" z klawiaturą 29, 38 lub 47 klawiszy, Android 14, Wi-Fi 6E lub 5G, wersje z silnikiem do 32 m i grzałką do -30°C, od 3 451 zł netto): https://www.takma.com.pl/produkt/unitech-ht730-plus
-- Unitech HT330 (4" z klawiaturą 32 klawisze, 295 g, bateria 5200 mAh na ponad 20 godzin, Wi-Fi lub 4G LTE, od 2 078 zł netto): https://www.takma.com.pl/produkt/unitech-ht330
+- Unitech HT730 Plus (4" z klawiaturą 29, 38 lub 47 klawiszy, Android 14, Wi-Fi 6E, opcja 5G, wersje z silnikiem do 32 m i grzałką do -30°C, od 3 451 zł netto): https://www.takma.com.pl/produkt/unitech-ht730-plus
+- Unitech HT330 (4" z klawiaturą 32 klawisze, 295 g, bateria 5200 mAh na ponad 20 godzin, Wi-Fi 802.11ac, opcja 4G LTE, od 2 078 zł netto): https://www.takma.com.pl/produkt/unitech-ht330
 
 ## Komputery POS (SUNMI)
 - [Komputery POS](https://www.takma.com.pl/komputery-pos): stacjonarne stanowiska kasowe SUNMI T3, T3 PRO, D3 i D3 PRO z ekranem dotykowym 15,6" oraz kompaktowe SUNMI D3 MINI z ekranem 10,1" i wbudowaną drukarką 58 lub 80 mm. T3 i T3 PRO mają Androida 13, NFC i czytnik linii papilarnych w przycisku zasilania. D3 ma Androida 14 i ekran klienta 10,1" z NFC w zestawie. D3 PRO ma Androida 13, obudowę aluminiową i ekran klienta z NFC do dokupienia. D3 MINI ma Androida 13, skaner kodów 1D/2D, NFC, wbudowany ekran klienta i wersje 4G. Urządzenia niefiskalne.

@@ -9,17 +9,17 @@ const HT730 = 'unitech-ht730-plus'
 const HT330 = 'unitech-ht330'
 const TAGI: Product['tags'] = ['retail', 'magazyn', 'logistyka']
 
-const KATALOG_HT730 = { name: 'Katalog akcesoriów Unitech HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-akcesoria-en.pdf', size: '1,2 MB' }
-const KATALOG_HT330 = { name: 'Katalog akcesoriów Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-akcesoria-en.pdf', size: '1,4 MB' }
-const QSG_HT730_STACJA_1 = { name: 'Skrócona instrukcja stacji 1-gniazdowych HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-stacja-1-slot-skrocona-instrukcja-en.pdf', size: '736 KB' }
-const QSG_HT730_STACJA_4 = { name: 'Skrócona instrukcja stacji 4-gniazdowych HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-stacja-4-slot-skrocona-instrukcja-en.pdf', size: '799 KB' }
-const QSG_HT730_LADOWARKA = { name: 'Skrócona instrukcja ładowarki 4 baterii HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '690 KB' }
-const QSG_HT730_UCHWYT = { name: 'Skrócona instrukcja uchwytu pistoletowego HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '554 KB' }
-const QSG_HT330_STACJA_1 = { name: 'Skrócona instrukcja stacji 1-gniazdowych HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-stacja-1-slot-skrocona-instrukcja-en.pdf', size: '663 KB' }
-const QSG_HT330_LADOWARKA = { name: 'Skrócona instrukcja ładowarki 4 baterii HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '280 KB' }
-const QSG_HT330_UCHWYT = { name: 'Skrócona instrukcja uchwytu pistoletowego HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '644 KB' }
-const QSG_HT330_ETUI = { name: 'Skrócona instrukcja etui ochronnego HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-etui-skrocona-instrukcja-en.pdf', size: '123 KB' }
-const QSG_HT330_PASEK = { name: 'Skrócona instrukcja paska na dłoń HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-pasek-na-dlon-skrocona-instrukcja-en.pdf', size: '608 KB' }
+const KATALOG_HT730 = { name: 'Katalog akcesoriów Unitech HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-akcesoria-en.pdf', size: '1,1 MB' }
+const KATALOG_HT330 = { name: 'Katalog akcesoriów Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-akcesoria-en.pdf', size: '1,3 MB' }
+const QSG_HT730_STACJA_1 = { name: 'Skrócona instrukcja stacji 1-gniazdowych HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-stacja-1-slot-skrocona-instrukcja-en.pdf', size: '719 KB' }
+const QSG_HT730_STACJA_4 = { name: 'Skrócona instrukcja stacji 4-gniazdowych HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-stacja-4-slot-skrocona-instrukcja-en.pdf', size: '781 KB' }
+const QSG_HT730_LADOWARKA = { name: 'Skrócona instrukcja ładowarki 4 baterii HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '673 KB' }
+const QSG_HT730_UCHWYT = { name: 'Skrócona instrukcja uchwytu pistoletowego HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '541 KB' }
+const QSG_HT330_STACJA_1 = { name: 'Skrócona instrukcja stacji 1-gniazdowych HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-stacja-1-slot-skrocona-instrukcja-en.pdf', size: '647 KB' }
+const QSG_HT330_LADOWARKA = { name: 'Skrócona instrukcja ładowarki 4 baterii HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-ladowarka-baterii-skrocona-instrukcja-en.pdf', size: '273 KB' }
+const QSG_HT330_UCHWYT = { name: 'Skrócona instrukcja uchwytu pistoletowego HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-uchwyt-pistoletowy-skrocona-instrukcja-en.pdf', size: '629 KB' }
+const QSG_HT330_ETUI = { name: 'Skrócona instrukcja etui ochronnego HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-etui-skrocona-instrukcja-en.pdf', size: '120 KB' }
+const QSG_HT330_PASEK = { name: 'Skrócona instrukcja paska na dłoń HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-pasek-na-dlon-skrocona-instrukcja-en.pdf', size: '594 KB' }
 
 const PRZEWOD_SIECIOWY_C13 = `**Wymagane — sprzedawane osobno**
 
@@ -37,7 +37,7 @@ const bateriaHt730: Product = {
   seoDescription: 'Bateria Unitech 1400-900082G, 3,6 V, 6700 mAh, do Unitech HT730 Plus, czyli terminala z klawiaturą i skanerem. Bateria Unitech HT730 Plus, akumulator do kolektora danych HT730 Plus. PN: 1400-900082G.',
   description: `Bateria 1400-900082G ma napięcie 3,6 V i pojemność 6700 mAh. Jest baterią główną terminala [Unitech HT730 Plus](/produkt/unitech-ht730-plus), więc jako osobna pozycja służy za zapasową albo wymienną. Po jej wyjęciu aplikacje na terminalu pozostają aktywne do 1 minuty.
 
-Producent przewiduje wymianę ręczną: zatrzask zwalniający chwyta się z obu stron i unosi, a nową baterię wsuwa się od dołu i dociska. Narzędzi nie używa się. Jeśli terminal ma założony pasek na dłoń, najpierw zdejmuje się klips paska. Naklejki, znaczniki i grawerunki w gnieździe baterii mogą pogorszyć szczelność, odporność na upadki oraz zakres temperatur pracy.
+Baterię wymienia się ręcznie: zatrzask zwalniający chwyta się z obu stron i unosi, a nową baterię wsuwa się od dołu i dociska. Narzędzi nie używa się. Jeśli terminal ma założony pasek na dłoń, najpierw zdejmuje się klips paska. Naklejki, znaczniki i grawerunki w gnieździe baterii mogą pogorszyć szczelność, odporność na upadki oraz zakres temperatur pracy.
 
 Baterie zapasowe ładują się w [stacjach 1-gniazdowych](/produkt/unitech-ht730-plus-stacja-1-slot) lub w [ładowarce 4 baterii](/produkt/unitech-ht730-plus-ladowarka-baterii).`,
   categoryId: 'akcesoria',
@@ -73,7 +73,7 @@ const uchwytHt730: Product = {
   shortDescription: 'Uchwyt pistoletowy Unitech 5500-900114G do terminala HT730 Plus, także w wersji z grzałką; pasek na nadgarstek, pokrywa ochronna i 4 śruby w opakowaniu.',
   seoTitle: 'Uchwyt pistoletowy Unitech 5500-900114G do HT730 Plus',
   seoDescription: 'Uchwyt pistoletowy (gun grip) Unitech 5500-900114G do terminala Unitech HT730 Plus, także w wersji do mroźni. Uchwyt pistoletowy Unitech HT730 Plus. PN: 5500-900114G.',
-  description: `Uchwyt 5500-900114G montuje się na tylnej ściance terminala [Unitech HT730 Plus](/produkt/unitech-ht730-plus). Producent podaje, że pasuje do wersji z grzałką, przeznaczonej do chłodni i mroźni, oraz do wersji pracującej w temperaturze pokojowej. Terminala w opakowaniu nie ma.
+  description: `Uchwyt 5500-900114G montuje się na tylnej ściance terminala [Unitech HT730 Plus](/produkt/unitech-ht730-plus). Pasuje do wersji z grzałką, przeznaczonej do chłodni i mroźni, oraz do wersji pracującej w temperaturze pokojowej. Terminala w opakowaniu nie ma.
 
 W opakowaniu są uchwyt, pasek na nadgarstek, pokrywa ochronna i cztery śruby. Uchwyt przykręca się do terminala od tyłu tymi czterema śrubami. Pokrywę zaczepia się hakami o rowki pod uchwytem, aż się zatrzaśnie. Pasek przewleka się przez otwory u dołu uchwytu. Demontaż zaczyna się od zdjęcia pokrywy, a potem odkręca się śruby wkrętakiem.`,
   categoryId: 'akcesoria',
@@ -94,7 +94,7 @@ W opakowaniu są uchwyt, pasek na nadgarstek, pokrywa ochronna i cztery śruby. 
   ],
   applications: ['Skanowanie z uchwytem pistoletowym, także w chłodni'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ht730-plus-oslona-se4770', 'unitech-ht730-plus-szklo-ochronne', 'unitech-ht730-plus-pasek-na-dlon'],
+  relatedAccessories: ['unitech-ht730-plus-oslona-standardowa', 'unitech-ht730-plus-szklo-ochronne', 'unitech-ht730-plus-pasek-na-dlon'],
   downloads: [QSG_HT730_UCHWYT, KATALOG_HT730],
   relatedProducts: [HT730],
   createdAt: '2026-10-29',
@@ -108,7 +108,7 @@ const szkloHt730: Product = {
   shortDescription: 'Szkło ochronne 9H Unitech 5400-900069G do ekranu terminala HT730 Plus; opakowanie zawiera 10 sztuk.',
   seoTitle: 'Szkło ochronne Unitech 5400-900069G do HT730 Plus, 10 szt.',
   seoDescription: 'Szkło ochronne 9H Unitech 5400-900069G, 10 sztuk w opakowaniu, na ekran Unitech HT730 Plus. Szkło na ekran Unitech HT730 Plus. PN: 5400-900069G.',
-  description: `Szkło 5400-900069G zabezpiecza ekran 4″ terminala [Unitech HT730 Plus](/produkt/unitech-ht730-plus). Unitech opisuje je jako szkło ochronne o twardości 9H.
+  description: `Szkło 5400-900069G zabezpiecza ekran 4″ terminala [Unitech HT730 Plus](/produkt/unitech-ht730-plus). Szkło ma twardość 9H.
 
 Jedno opakowanie zawiera 10 sztuk. Cena na karcie dotyczy całego opakowania, a nie pojedynczej sztuki.
 
@@ -118,7 +118,7 @@ Ekran terminala obsługuje rękawice o grubości do 4 mm, mokre dłonie i rysik 
   manufacturerId: 'unitech',
   priceFrom: 315.12,
   images: ['/images/products/5400-900069G.png'],
-  imageDescriptions: ['Szkło ochronne 9H Unitech 5400-900069G do HT730 Plus — terminal z klawiaturą 47 klawiszy z przezroczystą szybą nałożoną na ekran'],
+  imageDescriptions: ['Szkło ochronne 9H Unitech 5400-900069G do HT730 Plus — terminal z klawiaturą 38 klawiszy z przezroczystym szkłem nałożonym na ekran'],
   tags: TAGI,
   availability: 'available',
   isNew: true,
@@ -131,7 +131,7 @@ Ekran terminala obsługuje rękawice o grubości do 4 mm, mokre dłonie i rysik 
   ],
   applications: ['Ochrona ekranu terminali w całej flocie'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ht730-plus-oslona-se4770', 'unitech-ht730-plus-uchwyt-pistoletowy'],
+  relatedAccessories: ['unitech-ht730-plus-oslona-standardowa', 'unitech-ht730-plus-uchwyt-pistoletowy'],
   downloads: [KATALOG_HT730],
   relatedProducts: [HT730],
   createdAt: '2026-10-29',
@@ -154,7 +154,7 @@ Pasek na dłoń jest również w zestawie terminala, więc ten numer służy do 
   priceFrom: 32.4,
   images: ['/images/products/5400-900045G.png', '/images/products/5400-900045G-2.png'],
   imageDescriptions: [
-    'Pasek na dłoń Unitech 5400-900045G do HT730 Plus — tył terminala z paskiem oraz osobno ramię mocujące i śruby',
+    'Pasek na dłoń Unitech 5400-900045G do HT730 Plus — tył terminala z założonym paskiem oraz osobno pasek z ramieniem mocującym',
     'Pasek na dłoń Unitech 5400-900045G na terminalu HT730 Plus — tył terminala trzymany w dłoni z założonym paskiem',
   ],
   tags: TAGI,
@@ -175,18 +175,18 @@ Pasek na dłoń jest również w zestawie terminala, więc ten numer służy do 
 }
 
 const oslonaStandard: Product = {
-  id: 'unitech-ht730-plus-oslona-se4770',
-  slug: 'unitech-ht730-plus-oslona-se4770',
+  id: 'unitech-ht730-plus-oslona-standardowa',
+  slug: 'unitech-ht730-plus-oslona-standardowa',
   name: 'Osłona do niskich temperatur Unitech HT730 Plus, silnik standardowy (5400-900080G)',
   seoH1: 'Osłona do niskich temperatur Unitech HT730 Plus, silnik standardowy',
-  shortDescription: 'Osłona Unitech 5400-900080G dla HT730 Plus z silnikiem standardowego zasięgu (SE4770), zgodna z niskimi temperaturami.',
-  seoTitle: 'Osłona Unitech 5400-900080G do HT730 Plus, silnik SE4770',
-  seoDescription: 'Osłona (bumper) Unitech 5400-900080G zgodna z niskimi temperaturami do terminala Unitech HT730 Plus z silnikiem standardowego zasięgu SE4770. Osłona do Unitech HT730 Plus. PN: 5400-900080G.',
-  description: `Osłona 5400-900080G (ang. bumper) jest przeznaczona dla terminali [Unitech HT730 Plus](/produkt/unitech-ht730-plus) z silnikiem skanującym standardowego zasięgu. W naszej ofercie są to wersje z silnikiem SE4770. Unitech oznacza ją jako osłonę zgodną z niskimi temperaturami.
+  shortDescription: 'Osłona Unitech 5400-900080G dla HT730 Plus z silnikiem standardowego zasięgu, zgodna z niskimi temperaturami.',
+  seoTitle: 'Osłona Unitech 5400-900080G do HT730 Plus, silnik standardowy',
+  seoDescription: 'Osłona (bumper) Unitech 5400-900080G zgodna z niskimi temperaturami do terminala Unitech HT730 Plus z silnikiem standardowego zasięgu. Osłona do Unitech HT730 Plus. PN: 5400-900080G.',
+  description: `Osłona 5400-900080G (ang. bumper) jest przeznaczona dla terminali [Unitech HT730 Plus](/produkt/unitech-ht730-plus) z silnikiem skanującym standardowego zasięgu, czyli wersji HT730-NJ… i HT730-NH…. Osłona jest zgodna z niskimi temperaturami.
 
 Z osłoną terminal wytrzymuje upadki z 2,4 m, a bez niej z 1,8 m. Część wersji terminala ma osłonę już w zestawie, ponieważ zależy to od modelu. Ten numer jest potrzebny, gdy osłonę trzeba wymienić albo założyć na urządzenie sprzedane bez niej.
 
-Dla terminali z silnikiem dalekiego zasięgu Unitech przewidział osobną [osłonę 5400-900081G](/produkt/unitech-ht730-plus-oslona-dalekiego-zasiegu).`,
+Do terminali z silnikiem dalekiego zasięgu służy osobna [osłona 5400-900081G](/produkt/unitech-ht730-plus-oslona-dalekiego-zasiegu).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -199,7 +199,7 @@ Dla terminali z silnikiem dalekiego zasięgu Unitech przewidział osobną [osło
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: '5400-900080G' },
-    { name: 'Kompatybilność', value: 'Unitech HT730 Plus z silnikiem skanującym standardowego zasięgu (SE4770)' },
+    { name: 'Kompatybilność', value: 'Unitech HT730 Plus z silnikiem skanującym standardowego zasięgu (HT730-NJ…, HT730-NH…)' },
     { name: 'Typ', value: 'Osłona (bumper) zgodna z niskimi temperaturami' },
     { name: 'Odporność na upadki z osłoną', value: '2,4 m (bez osłony 1,8 m)' },
   ],
@@ -216,14 +216,14 @@ const oslonaDalekiZasieg: Product = {
   slug: 'unitech-ht730-plus-oslona-dalekiego-zasiegu',
   name: 'Osłona do niskich temperatur Unitech HT730 Plus, silnik dalekiego zasięgu (5400-900081G)',
   seoH1: 'Osłona do niskich temperatur Unitech HT730 Plus, silnik dalekiego zasięgu',
-  shortDescription: 'Osłona Unitech 5400-900081G dla HT730 Plus z silnikiem dalekiego zasięgu (SE5880), zgodna z niskimi temperaturami.',
-  seoTitle: 'Osłona Unitech 5400-900081G do HT730 Plus, silnik SE5880',
-  seoDescription: 'Osłona (bumper) Unitech 5400-900081G zgodna z niskimi temperaturami, na wersję dalekiego zasięgu SE5880 w Unitech HT730 Plus. Osłona Unitech HT730 Plus. PN: 5400-900081G.',
-  description: `Osłona 5400-900081G (ang. bumper) jest przeznaczona dla wersji [Unitech HT730 Plus](/produkt/unitech-ht730-plus) wyposażonych w silnik dalekiego zasięgu, czyli w naszej ofercie SE5880. Na liście akcesoriów producent wymienia ją osobno od osłony dla silnika standardowego i opisuje jako zgodną z niskimi temperaturami.
+  shortDescription: 'Osłona Unitech 5400-900081G dla HT730 Plus z silnikiem dalekiego zasięgu do 32 m, zgodna z niskimi temperaturami.',
+  seoTitle: 'Osłona Unitech 5400-900081G do HT730 Plus, daleki zasięg',
+  seoDescription: 'Osłona (bumper) Unitech 5400-900081G zgodna z niskimi temperaturami, na wersję z silnikiem dalekiego zasięgu w Unitech HT730 Plus. Osłona Unitech HT730 Plus. PN: 5400-900081G.',
+  description: `Osłona 5400-900081G (ang. bumper) jest przeznaczona dla wersji [Unitech HT730 Plus](/produkt/unitech-ht730-plus) wyposażonych w silnik dalekiego zasięgu (PN HT730-LJ…), czytający etykiety oddalone nawet o 32 m. Osłona jest zgodna z niskimi temperaturami i ma inny kształt niż osłona do silnika standardowego.
 
-Karta katalogowa terminala podaje upadki z 1,8 m oraz z 2,4 m z osłoną. Zestaw terminala może zawierać osłonę lub jej nie zawierać, zależnie od modelu, więc ten numer dobiera się według wersji silnika skanującego.
+Osłona zwiększa dopuszczalną wysokość upadku terminala z 1,8 m do 2,4 m. W zestawie terminala jest ona zależnie od modelu, dlatego ten numer dobiera się według wersji silnika skanującego.
 
-Terminale ze standardowym silnikiem obsługuje [osłona 5400-900080G](/produkt/unitech-ht730-plus-oslona-se4770).`,
+Do terminali z silnikiem standardowym pasuje [osłona 5400-900080G](/produkt/unitech-ht730-plus-oslona-standardowa).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -236,13 +236,13 @@ Terminale ze standardowym silnikiem obsługuje [osłona 5400-900080G](/produkt/u
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: '5400-900081G' },
-    { name: 'Kompatybilność', value: 'Unitech HT730 Plus z silnikiem skanującym dalekiego zasięgu (SE5880)' },
+    { name: 'Kompatybilność', value: 'Unitech HT730 Plus z silnikiem skanującym dalekiego zasięgu (HT730-LJ…)' },
     { name: 'Typ', value: 'Osłona (bumper) zgodna z niskimi temperaturami' },
     { name: 'Odporność na upadki z osłoną', value: '2,4 m (bez osłony 1,8 m)' },
   ],
   applications: ['Ochrona terminala z silnikiem dalekiego zasięgu przed upadkami'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ht730-plus-oslona-se4770', 'unitech-ht730-plus-szklo-ochronne', 'unitech-ht730-plus-uchwyt-pistoletowy'],
+  relatedAccessories: ['unitech-ht730-plus-oslona-standardowa', 'unitech-ht730-plus-szklo-ochronne', 'unitech-ht730-plus-uchwyt-pistoletowy'],
   downloads: [KATALOG_HT730],
   relatedProducts: [HT730],
   createdAt: '2026-10-29',
@@ -256,9 +256,9 @@ const stacja1Ht730: Product = {
   shortDescription: 'Stacja ładująca Unitech 5000-900139G na jeden terminal HT730 Plus z gniazdem na zapasową baterię; zasilacz 5 V / 6 A w komplecie.',
   seoTitle: 'Stacja ładująca Unitech 5000-900139G do HT730 Plus',
   seoDescription: 'Stacja ładująca 1-gniazdowa Unitech 5000-900139G z gniazdem na zapasową baterię dla Unitech HT730 Plus; zasilacz w zestawie. Stacja Unitech HT730 Plus. PN: 5000-900139G.',
-  description: `Stacja 5000-900139G ma dwa gniazda: jedno ładuje terminal [Unitech HT730 Plus](/produkt/unitech-ht730-plus), drugie zapasową baterię. Służy tylko do ładowania. Stację obsługuje także wersja HT730 Plus UHF.
+  description: `Stacja 5000-900139G ma dwa gniazda: jedno ładuje terminal [Unitech HT730 Plus](/produkt/unitech-ht730-plus), drugie zapasową baterię. Służy tylko do ładowania. Pasuje także do wersji HT730 Plus UHF.
 
-W opakowaniu są stacja i zasilacz 5 V / 6 A bez przewodu sieciowego. Producent zaleca używanie zasilacza z zestawu. Producent opisuje ładowanie terminala z założoną dolną osłoną lub etui. Baterię zakłada się pod kątem 45 stopni i dociska do kliknięcia.
+W opakowaniu są stacja i zasilacz 5 V / 6 A bez przewodu sieciowego. Do zasilania stacji zalecany jest zasilacz z zestawu. Terminal ładuje się w stacji z założoną dolną osłoną lub w etui. Baterię zakłada się pod kątem 45 stopni i dociska do kliknięcia.
 
 Dioda stacji świeci na niebiesko po włączeniu zasilania. Dioda przy gnieździe baterii pokazuje ładowanie kolorem czerwonym, a pełne naładowanie niebieskim. Terminal sygnalizuje stan własną diodą: czerwona oznacza trwające ładowanie, zielona pełną baterię.
 
@@ -424,7 +424,7 @@ const stacja4Ht730: Product = {
   shortDescription: 'Stacja ładująca Unitech 5000-900089G na cztery terminale HT730 Plus, zasilacz w komplecie.',
   seoTitle: 'Stacja ładująca 4-gniazdowa Unitech 5000-900089G do HT730 Plus',
   seoDescription: 'Stacja ładująca 4-gniazdowa Unitech 5000-900089G na cztery terminale Unitech HT730 Plus, zasilacz w zestawie. Stacja wielogniazdowa Unitech HT730 Plus. PN: 5000-900089G.',
-  description: `Stacja 5000-900089G ładuje cztery terminale [Unitech HT730 Plus](/produkt/unitech-ht730-plus) w jednym zestawie gniazd. Obsługuje także HT730 Plus UHF. Służy wyłącznie do ładowania, a o stanie naładowania informuje dioda na samym terminalu.
+  description: `Stacja 5000-900089G ładuje jednocześnie do czterech terminali [Unitech HT730 Plus](/produkt/unitech-ht730-plus). Pasuje także do HT730 Plus UHF. Służy wyłącznie do ładowania, a o stanie naładowania informuje dioda na samym terminalu.
 
 Terminal można ładować na dwa sposoby: bez osłony albo z osłoną po zdjęciu wyjmowanej części stacji. Wyjmowaną część zwalnia się, dociskając kciukiem oba jej końce, i podnosi się ją. Dioda zasilania stacji świeci na czerwono, gdy stacja jest włączona.
 
@@ -505,12 +505,12 @@ const bateriaHt330: Product = {
   slug: 'unitech-ht330-bateria',
   name: 'Bateria 5200 mAh Unitech HT330 (1400-900067G)',
   seoH1: 'Bateria 5200 mAh Unitech HT330',
-  shortDescription: 'Bateria Unitech 1400-900067G, 3,85 V i 5200 mAh, do terminala HT330: ponad 20 godzin pracy według karty katalogowej.',
+  shortDescription: 'Bateria Unitech 1400-900067G, 3,85 V i 5200 mAh, do terminala HT330: ponad 20 godzin pracy, zależnie od środowiska.',
   seoTitle: 'Bateria Unitech 1400-900067G 5200 mAh do HT330',
   seoDescription: 'Bateria Unitech 1400-900067G, 3,85 V, 5200 mAh Li-ion, do Unitech HT330, kolektora danych z klawiaturą. Bateria Unitech HT330, akumulator do HT330 Unitech. PN: 1400-900067G.',
-  description: `Bateria 1400-900067G to wymienny akumulator Li-ion 3,85 V o pojemności 5200 mAh do terminala [Unitech HT330](/produkt/unitech-ht330). Karta katalogowa podaje czas pracy ponad 20 godzin, zależny od środowiska, a producent wiąże go z całą zmianą i intensywnym skanowaniem przy inwentaryzacji.
+  description: `Bateria 1400-900067G to wymienny akumulator Li-ion 3,85 V o pojemności 5200 mAh do terminala [Unitech HT330](/produkt/unitech-ht330). Czas pracy przekracza 20 godzin, zależnie od środowiska, co wystarcza na całą zmianę, także przy intensywnym skanowaniu w czasie inwentaryzacji.
 
-Terminal ładuje się do pełna w około 4,5 godziny. Przy pierwszym uruchomieniu instrukcja zaleca ładowanie przez około 24 godziny. Funkcja Battery Care pozwala ograniczyć ładowanie do 80% lub 50% pojemności; producent zaleca takie ograniczenie dla dłuższej żywotności baterii.
+Terminal ładuje się do pełna w około 4,5 godziny, a przed pierwszym użyciem ładowanie trwa około 24 godzin. Funkcja Battery Care pozwala ograniczyć ładowanie do 80% lub 50% pojemności, co wydłuża żywotność baterii.
 
 Do ładowania baterii zapasowych służą dodatkowe gniazdo [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) oraz [ładowarka 4 baterii](/produkt/unitech-ht330-ladowarka-baterii).`,
   categoryId: 'akcesoria',
@@ -547,17 +547,17 @@ const etuiHt330: Product = {
   shortDescription: 'Etui ochronne Unitech 3210-900035G do terminala HT330: upadki z 1,8 m zamiast 1,5 m.',
   seoTitle: 'Etui ochronne Unitech 3210-900035G do HT330',
   seoDescription: 'Etui ochronne (boot case) Unitech 3210-900035G dla Unitech HT330, upadki z 1,8 m. Etui do Unitech HT330, osłona Unitech HT330. PN: 3210-900035G.',
-  description: `Etui 3210-900035G zakłada się na [Unitech HT330](/produkt/unitech-ht330). Podnosi ono dopuszczalną wysokość upadku z 1,5 m do 1,8 m (test na betonie); specyfikacja terminala podaje tę wartość jako „z etui”.
+  description: `Etui 3210-900035G zakłada się na [Unitech HT330](/produkt/unitech-ht330). W etui terminal wytrzymuje upadek na beton z wysokości 1,8 m, a bez etui z 1,5 m.
 
 Terminal wsuwa się w dolną część etui, a następnie zatrzaskuje oba górne narożniki. Zdejmuje się je, podważając jeden górny narożnik, a potem drugi, i wyciągając terminal.
 
-[Uchwyt pistoletowy 5500-900100G](/produkt/unitech-ht330-uchwyt-pistoletowy) producent przewidział dla terminala bez etui. W [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) etui wymaga zdjęcia wyjmowanej pokrywy.`,
+[Uchwyt pistoletowy 5500-900100G](/produkt/unitech-ht330-uchwyt-pistoletowy) zakłada się na terminal bez etui. W [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) etui wymaga zdjęcia wyjmowanej pokrywy.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
   priceFrom: 37.22,
   images: ['/images/products/3210-900035G.png'],
-  imageDescriptions: ['Etui ochronne Unitech 3210-900035G do HT330 — tył terminala w etui obok osobnego etui z otworami na aparat i okno skanera'],
+  imageDescriptions: ['Etui ochronne Unitech 3210-900035G do HT330 — tył terminala bez etui i etui z dużym otworem na aparat, głośnik i styki pogo'],
   tags: TAGI,
   availability: 'available',
   isNew: true,
@@ -585,11 +585,11 @@ const uchwytHt330: Product = {
   shortDescription: 'Uchwyt pistoletowy Unitech 5500-900100G do terminala HT330 bez etui; połączenie przez styki pogo z tyłu terminala.',
   seoTitle: 'Uchwyt pistoletowy Unitech 5500-900100G do HT330',
   seoDescription: 'Uchwyt pistoletowy (gun grip) Unitech 5500-900100G dla Unitech HT330 użytkowanego bez etui. Uchwyt pistoletowy Unitech HT330. PN: 5500-900100G.',
-  description: `Uchwyt 5500-900100G jest oznaczony przez producenta jako uchwyt do terminala [Unitech HT330](/produkt/unitech-ht330) bez założonego etui. Terminal ma z tyłu styki pogo przeznaczone dla uchwytu pistoletowego.
+  description: `Uchwyt 5500-900100G jest przeznaczony do terminala [Unitech HT330](/produkt/unitech-ht330) bez założonego etui. Terminal ma z tyłu styki pogo przeznaczone dla uchwytu pistoletowego.
 
 Montaż polega na wsunięciu terminala w uchwyt aż do pełnego dopasowania. Demontaż: chwyta się dwa występy po bokach uchwytu, odgina je na zewnątrz i wypycha terminal do góry.
 
-Terminal w uchwycie można ładować w [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) po zdjęciu jej wyjmowanej pokrywy. Dla terminala w etui producent oferuje [etui 3210-900035G](/produkt/unitech-ht330-etui).`,
+Terminal w uchwycie można ładować w [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) po zdjęciu jej wyjmowanej pokrywy. Przed założeniem uchwytu zdejmuje się z terminala [etui 3210-900035G](/produkt/unitech-ht330-etui).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -622,7 +622,7 @@ const stacja1Ht330: Product = {
   shortDescription: 'Stacja ładująca Unitech 5000-900098G na jeden terminal HT330, z miejscem na zapasową baterię; w komplecie zasilacz 12 V / 2 A.',
   seoTitle: 'Stacja ładująca Unitech 5000-900098G do HT330',
   seoDescription: 'Stacja ładująca 1-gniazdowa Unitech 5000-900098G z gniazdem na baterię i zasilaczem 12 V / 2 A w zestawie, dla Unitech HT330. Stacja Unitech HT330. PN: 5000-900098G.',
-  description: `Stacja 5000-900098G ładuje jeden terminal [Unitech HT330](/produkt/unitech-ht330) przez styki na spodzie obudowy. Obok jest gniazdo na zapasową baterię. Dane z terminala stacja nie przesyła, bo ma je [stacja USB 5000-900099G](/produkt/unitech-ht330-stacja-1-slot-usb).
+  description: `Stacja 5000-900098G ładuje jeden terminal [Unitech HT330](/produkt/unitech-ht330) przez styki na spodzie obudowy. Obok jest gniazdo na zapasową baterię. Stacja nie przesyła danych; do tego służy [stacja USB 5000-900099G](/produkt/unitech-ht330-stacja-1-slot-usb).
 
 Terminal bez etui wchodzi do stacji z założoną wyjmowaną pokrywą. Gdy terminal ma etui lub uchwyt pistoletowy, pokrywę zdejmuje się przed ładowaniem, zginając jej rowki do środka i zsuwając ją w górę, a zakłada się z kliknięciem, dopasowując strzałki. Stację można przymocować do blatu wkrętem o średnicy do 3,0 mm.
 
@@ -666,7 +666,7 @@ const stacja1UsbHt330: Product = {
   seoDescription: 'Stacja 1-gniazdowa USB Unitech 5000-900099G z portem USB-C do wymiany danych, dla kolektora danych Unitech HT330. Stacja USB Unitech HT330. PN: 5000-900099G.',
   description: `Stacja 5000-900099G różni się od [stacji ładującej 5000-900098G](/produkt/unitech-ht330-stacja-1-slot) portem USB-C, przez który terminal [Unitech HT330](/produkt/unitech-ht330) wymienia dane z komputerem. Zasilanie doprowadza się gniazdem DC, a drugie gniazdo przyjmuje zapasową baterię.
 
-Producent opisuje obie stacje jednym wspólnym zestawem: wyjmowana pokrywa, zasilacz 12 V / 2 A i opcjonalne przewody sieciowe dla USA, UE i Wielkiej Brytanii. Przewód dla UE ma numer 1550-602333G.
+Obie stacje mają taki sam zestaw: wyjmowaną pokrywę i zasilacz 12 V / 2 A. Przewody sieciowe dla USA, UE i Wielkiej Brytanii są opcjonalne; przewód dla UE ma numer 1550-602333G.
 
 Pokrywę zdejmuje się przed ładowaniem terminala w etui lub z uchwytem pistoletowym.
 
@@ -744,7 +744,7 @@ const ladowarkaHt330: Product = {
   seoDescription: 'Ładowarka 4 baterii Unitech 5100-900035G wraz z zasilaczem, na akumulatory do Unitech HT330. Ładowarka baterii Unitech HT330. PN: 5100-900035G.',
   description: `Ładowarka 5100-900035G ładuje cztery baterie [Unitech HT330](/produkt/unitech-ht330) naraz. Baterię układa się w gnieździe nazwą modelu i paskiem do góry. Ładowarka rozpoznaje baterię i zaczyna ładowanie. Gdy rozpoznanie nie nastąpi, dioda nie świeci.
 
-Dioda zasilania świeci się na zielono. Czerwona dioda ładowania wskazuje trwające ładowanie, zielona pełną baterię, a jej brak oznacza, że baterii nie wykryto. Producent zaznacza w przewodniku akcesoriów, że baterie widoczne na zdjęciu nie wchodzą w skład zestawu. [Baterię 1400-900067G](/produkt/unitech-ht330-bateria) kupuje się osobno.
+Dioda zasilania świeci się na zielono. Czerwona dioda ładowania wskazuje trwające ładowanie, zielona pełną baterię, a jej brak oznacza, że baterii nie wykryto. Baterii nie ma w zestawie. [Baterię 1400-900067G](/produkt/unitech-ht330-bateria) kupuje się osobno.
 
 Zestaw obejmuje zasilacz 12 V / 5 A (3-pin); przewód sieciowy trzeba dokupić.
 
@@ -756,7 +756,7 @@ ${PRZEWOD_SIECIOWY_C13}`,
   manufacturerId: 'unitech',
   priceFrom: 967.31,
   images: ['/images/products/5100-900035G.png'],
-  imageDescriptions: ['Ładowarka 4 baterii Unitech 5100-900035G do HT330 — płaska ładowarka z czterema gniazdami baterii i etykietą znamionową'],
+  imageDescriptions: ['Ładowarka 4 baterii Unitech 5100-900035G do HT330 — płaska ładowarka z czterema gniazdami, w pierwszym gnieździe bateria'],
   tags: TAGI,
   availability: 'unavailable',
   isNew: true,
@@ -785,7 +785,7 @@ const szkloHt330: Product = {
   seoDescription: 'Szkło ochronne 9H Unitech 5400-900050G, opakowanie 10 sztuk, na ekran Unitech HT330. Szkło na ekran Unitech HT330. PN: 5400-900050G.',
   description: `Szkło 5400-900050G to szkło ochronne 9H do ekranu 4″ terminala [Unitech HT330](/produkt/unitech-ht330). W opakowaniu jest 10 sztuk, a cena na karcie dotyczy całego opakowania.
 
-Pojedyncze szkło ma w przewodniku akcesoriów producenta osobny numer 401639G. W naszej ofercie jest wyłącznie opakowanie 10-sztukowe.
+Pojedyncze szkło ma osobny numer 401639G, a w ofercie jest tylko opakowanie 10-sztukowe.
 
 Wyświetlacz terminala obsługuje rękawice i mokre dłonie. Obudowę chroni osobno [etui 3210-900035G](/produkt/unitech-ht330-etui).`,
   categoryId: 'akcesoria',
@@ -793,7 +793,7 @@ Wyświetlacz terminala obsługuje rękawice i mokre dłonie. Obudowę chroni oso
   manufacturerId: 'unitech',
   priceFrom: 415.29,
   images: ['/images/products/5400-900050G.png'],
-  imageDescriptions: ['Szkło ochronne 9H Unitech 5400-900050G do HT330 — terminal z klawiaturą widziany z przodu z przezroczystą szybą obok ekranu'],
+  imageDescriptions: ['Szkło ochronne 9H Unitech 5400-900050G do HT330 — terminal z klawiaturą widziany z przodu, na ekranie przezroczyste szkło'],
   tags: TAGI,
   availability: 'unavailable',
   isNew: true,
@@ -822,9 +822,9 @@ const pasekHt330: Product = {
   seoDescription: 'Pasek na dłoń Unitech 386185G dla kolektora danych Unitech HT330. Pasek na rękę Unitech HT330. PN: 386185G.',
   description: `Pasek 386185G zakłada się na dłoń przy pracy z terminalem [Unitech HT330](/produkt/unitech-ht330). Pasek jest w zestawie terminala, więc osobny numer służy do wymiany zużytego egzemplarza.
 
-Producent opisuje regulację w trzech krokach: odrywa się jedną stronę paska, ściąga się jego środkową rozciągliwą część do uzyskania potrzebnego obwodu dłoni i przykleja się pasek z powrotem. Ramię mocujące i śruby Unitech wymienia jako osobne pozycje (386239G i 381357G), a pasek ze stałym ramieniem w osobnym opakowaniu ma numer 5400-900040G.
+Obwód paska reguluje się w trzech krokach: odrywa się jedną stronę paska, ściąga się jego środkową rozciągliwą część do uzyskania potrzebnego obwodu dłoni i przykleja się pasek z powrotem. Ramię mocujące (386239G) i śruby (381357G) mają osobne numery, a komplet z paskiem, ramieniem i śrubami ma numer 5400-900040G.
 
-Terminal ma w tylnej części otwory na pasek. Etui [3210-900035G](/produkt/unitech-ht330-etui) i [stację 1-gniazdową](/produkt/unitech-ht330-stacja-1-slot) opisano na osobnych kartach.`,
+Terminal ma w tylnej części otwory na pasek.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -856,9 +856,9 @@ const rysik: Product = {
   shortDescription: 'Rysik Unitech 1979-900003G z linką sprężynową do terminali HT730 Plus i HT330.',
   seoTitle: 'Rysik Unitech 1979-900003G do HT730 Plus i HT330',
   seoDescription: 'Rysik z linką sprężynową Unitech 1979-900003G do terminali mobilnych z klawiaturą Unitech HT730 Plus i Unitech HT330. Rysik do Unitech HT730 Plus, rysik do Unitech HT330. PN: 1979-900003G.',
-  description: `Rysik 1979-900003G ma linkę sprężynową (coil strap). Unitech wymienia go w przewodnikach akcesoriów dla [HT730 Plus](/produkt/unitech-ht730-plus) i [HT330](/produkt/unitech-ht330).
+  description: `Rysik 1979-900003G ma linkę sprężynową (coil strap). Pasuje do terminali [HT730 Plus](/produkt/unitech-ht730-plus) i [HT330](/produkt/unitech-ht330).
 
-Ekran HT730 Plus obsługuje rysik 3 mm. W HT330 producent zaleca włączyć tryb rękawic, bo w innym trybie rysik 1979-900003G nie jest rozpoznawany. Tryb włącza się w Settings → Accessibility → Glove Mode.`,
+Ekran HT730 Plus obsługuje rysik 3 mm. W HT330 rysik 1979-900003G działa tylko w trybie rękawic; w trybie zwykłego dotyku ekran go nie rozpoznaje. Tryb włącza się w Settings → Accessibility → Glove Mode.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-terminali'],
   manufacturerId: 'unitech',

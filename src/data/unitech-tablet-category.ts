@@ -2,7 +2,7 @@ import type { BrandCategoryRichContent } from './brand-category-content'
 
 export const unitechTabletFaq = [
   { question: 'Który tablet Unitech wybrać do Androida, a który do Windows?', answer: 'Android 13 ma [RT112](/produkt/unitech-rt112). Windows 11 na architekturze ARM ma [RT112 Windows](/produkt/unitech-rt112-windows), a Windows 11 z procesorem Intel [TB170 Plus](/produkt/unitech-tb170-plus).' },
-  { question: 'Czy tablety Unitech mają zasilacz w zestawie?', answer: 'Tak, ale bez przewodu sieciowego. RT112 i RT112 Windows mają zasilacz USB-C, a europejski zestaw TB170 Plus zasilacz AC/DC. Przewód sieciowy EU do tabletów RT112 sprzedajemy osobno.' },
+  { question: 'Czy tablety Unitech mają zasilacz w zestawie?', answer: 'Tak, ale bez przewodu sieciowego. RT112 i RT112 Windows mają zasilacz USB-C, a europejski zestaw TB170 Plus zasilacz AC/DC. Do wszystkich trzech modeli pasuje [przewód sieciowy EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5), sprzedawany osobno.' },
   { question: 'Które tablety Unitech mają wbudowany skaner kodów?', answer: 'Skaner jest opcją części PN. RT112 i RT112 Windows mają wersje z silnikiem 2D, a TB170 Plus wersję z czytnikiem 1D/2D. Pozostałe wersje są bez skanera.' },
   { question: 'Które tablety Unitech mają modem 5G lub 4G LTE?', answer: 'RT112 i RT112 Windows mają wersje 5G, a Windows także eSIM. TB170 Plus ma wersje 4G LTE. Wersje Wi-Fi nie mają modułu komórkowego.' },
   { question: 'Jaka jest gwarancja na tablety Unitech?', answer: 'Gwarancja na tablety Unitech w naszej ofercie wynosi 12 miesięcy.' },
@@ -26,9 +26,9 @@ export const unitechTabletCategory: BrandCategoryRichContent = {
     heading: 'Jak wybrać tablet Unitech?',
     items: [
       'System — [RT112](/produkt/unitech-rt112) pracuje na Androidzie 13 z usługami Google, [RT112 Windows](/produkt/unitech-rt112-windows) na Windows 11 IoT Enterprise LTSC dla Arm64, a [TB170 Plus](/produkt/unitech-tb170-plus) na Windows 11 IoT Enterprise LTSC z procesorem Intel N200.',
-      'Odporność — RT112 i RT112 Windows mają obudowę IP67 i upadki z 1,5 m według MIL-STD-810H. TB170 Plus ma IP65 i upadki z 1,5 m według MIL-STD-810G.',
+      'Odporność — RT112 i RT112 Windows mają obudowę IP67, wytrzymują upadek z 1,5 m na beton i spełniają MIL-STD-810H. TB170 Plus ma IP65, wytrzymuje upadek z 1,5 m na beton i spełnia MIL-STD-810G.',
       'Łączność — RT112 i RT112 Windows są w wersjach Wi-Fi 6E i 5G, a Windows 5G ma także eSIM. TB170 Plus ma Wi-Fi 6E, opcję 4G LTE i port RJ45 z PXE.',
-      'Skaner — każdy model ma wersje bez skanera i ze skanerem: 2D w RT112 i RT112 Windows, 1D/2D w TB170 Plus. Według producenta opcjonalny silnik RT112 Windows czyta kody z odległości do 10 m.',
+      'Skaner — każdy model ma wersje bez skanera i ze skanerem: 2D w RT112 i RT112 Windows, 1D/2D w TB170 Plus. Opcjonalny silnik RT112 Windows czyta kody z odległości do 10 m.',
       'Bateria — RT112 i RT112 Windows mają wymienną baterię 8800 mAh, a TB170 Plus baterię 4300 mAh typu hot swap.',
     ],
   },
@@ -48,9 +48,9 @@ export const unitechTabletCategory: BrandCategoryRichContent = {
   uniqueInsights: {
     heading: 'Co sprawdzić przed zakupem tabletu Unitech?',
     items: [
-      { title: 'Zasilacz jest bez przewodu sieciowego', text: 'W zestawie RT112 i RT112 Windows jest zasilacz USB-C bez przewodu sieciowego. [Przewód EU](/produkt/unitech-przewod-sieciowy-eu-c5) kupuje się osobno. Europejski zestaw TB170 Plus ma zasilacz AC/DC bez przewodu EU i UK.' },
+      { title: 'Zasilacz jest bez przewodu sieciowego', text: 'W zestawie RT112 i RT112 Windows jest zasilacz USB-C bez przewodu sieciowego, a europejski zestaw TB170 Plus ma zasilacz AC/DC bez przewodu EU. Ten sam [przewód EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) pasuje do zasilaczy wszystkich trzech modeli i kupuje się go osobno.' },
       { title: 'Windows na ARM a Windows na procesorze Intel', text: 'RT112 Windows działa na architekturze Arm64, a system LTSC nie zawiera Microsoft Store ani aplikacji Aparat. TB170 Plus ma procesor Intel N200. Przed zakupem należy sprawdzić, czy aplikacje firmy działają na wybranej architekturze.' },
-      { title: 'NFC jest tylko w RT112 z Androidem', text: 'Moduł HF/NFC ma [RT112](/produkt/unitech-rt112). Producent podaje, że RT112 Windows nie obsługuje NFC.' },
+      { title: 'NFC jest tylko w RT112 z Androidem', text: 'Moduł HF/NFC ma [RT112](/produkt/unitech-rt112). RT112 Windows nie ma NFC; w tej rodzinie karty zbliżeniowe odczytuje tylko wersja z Androidem.' },
       { title: 'TB170 Plus ma IP65, a RT112 IP67', text: 'RT112 i RT112 Windows mają klasę IP67 i wytrzymują zanurzenie na głębokość 1 m do 30 minut. TB170 Plus ma klasę IP65 i ekran o jasności 800 nitów.' },
     ],
   },
