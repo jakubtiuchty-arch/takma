@@ -157,40 +157,6 @@ Przewód skanera MS851 ESD jest wymienny. Skanery w wersji ESD mają obudowę i 
   createdAt: '2026-10-30',
 }
 
-const podstawkaMs838: Product = {
-  id: 'unitech-ms838-podstawka',
-  slug: 'unitech-ms838-podstawka',
-  name: 'Podstawka hands-free Unitech MS838 (5200-900014G)',
-  seoH1: 'Podstawka hands-free Unitech MS838',
-  shortDescription: 'Podstawka hands-free Unitech 5200-900014G do skanerów MS838: wchodzi w skład zestawu z USB i jest osobnym akcesorium do wersji RS-232.',
-  seoTitle: 'Podstawka Unitech 5200-900014G do skanerów MS838 i MS838B',
-  seoDescription: 'Podstawka hands-free Unitech 5200-900014G do skanerów kodów MS838, MS838B i MS836B. Podstawka do skanera Unitech MS838 do pracy w trybie prezentacyjnym. PN: 5200-900014G.',
-  description: `Podstawka 5200-900014G utrzymuje skaner MS838 na blacie. Skaner czyta wtedy kody bez trzymania w dłoni, w trybie prezentacyjnym.
-
-Podstawka jest w zestawie MS838-2UCB0S-SG. Do skanera MS838-2RCB00-SG kupuje się ją osobno. Podstawka pasuje także do bezprzewodowych skanerów MS838B i MS836B.`,
-  categoryId: 'akcesoria',
-  subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
-  manufacturerId: 'unitech',
-  priceFrom: 25.77,
-  images: ['/images/products/5200-900014G.png'],
-  imageDescriptions: ['Podstawka Unitech 5200-900014G — czarna podstawka z karbowaną kolumną, w uchwycie skaner MS838 z pomarańczowym spustem'],
-  tags: ['retail'],
-  availability: 'unavailable',
-  isNew: true,
-  isBestseller: false,
-  specifications: [
-    { name: 'Part Number', value: '5200-900014G' },
-    { name: 'Typ', value: 'Podstawka hands-free do skanera ręcznego' },
-    { name: 'Zgodność', value: 'MS838, MS838B, MS836B' },
-  ],
-  applications: ['Praca ze skanerem bez trzymania w dłoni'],
-  compatibleAccessories: [],
-  relatedAccessories: [],
-  downloads: [],
-  relatedProducts: ['unitech-ms838', 'unitech-ms838b', 'unitech-ms836b'],
-  createdAt: '2026-10-30',
-}
-
 const podstawkaMs282e: Product = {
   id: 'unitech-ms282e-podstawka',
   slug: 'unitech-ms282e-podstawka',
@@ -230,6 +196,5 @@ export const unitechScannerAccessories: Product[] = [
   uchwytBiurkowyMs85x,
   etuiMs85x,
   przewodUsbMs85x,
-  podstawkaMs838,
   podstawkaMs282e,
 ]

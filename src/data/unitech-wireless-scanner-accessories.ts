@@ -356,12 +356,14 @@ const bateriaMs652: Product = {
 const podstawkaMs83x: Product = {
   id: 'unitech-ms83x-podstawka',
   slug: 'unitech-ms83x-podstawka',
-  name: 'Podstawka Hands Free Stand Unitech MS836B i MS838B (5200-900014G)',
-  seoH1: 'Podstawka Hands Free Stand Unitech MS836B i MS838B',
-  shortDescription: 'Podstawka Hands Free Stand Unitech 5200-900014G do bezprzewodowych skanerów MS836B i MS838B.',
-  seoTitle: 'Podstawka Unitech 5200-900014G do skanerów MS836B i MS838B',
-  seoDescription: 'Podstawka Hands Free Stand Unitech MS836B i MS838B, model 5200-900014G. Podstawka do skanera Unitech MS838B, stojak do skanera Unitech MS836B, MS838B Unitech podstawka. PN: 5200-900014G.',
-  description: `Hands Free Stand 5200-900014G jest podstawką dla dwóch bezprzewodowych skanerów 2,4 GHz: laserowego [Unitech MS836B](/produkt/unitech-ms836b) i obrazowego [Unitech MS838B](/produkt/unitech-ms838b). Umożliwia pracę bez trzymania skanera w dłoni. Oba modele przekazują dane do odbiornika USB na odległość do 100 m w linii widoczności i mają obudowę IP42.`,
+  name: 'Podstawka Hands Free Stand Unitech MS838, MS836B i MS838B (5200-900014G)',
+  seoH1: 'Podstawka Hands Free Stand Unitech MS838, MS836B i MS838B',
+  shortDescription: 'Podstawka Hands Free Stand Unitech 5200-900014G do przewodowego skanera MS838 oraz bezprzewodowych skanerów MS836B i MS838B.',
+  seoTitle: 'Podstawka Unitech 5200-900014G do skanerów MS838, MS836B i MS838B',
+  seoDescription: 'Podstawka Hands Free Stand Unitech MS838, MS836B i MS838B, model 5200-900014G. Podstawka do skanera Unitech MS838 i MS838B, stojak do skanera Unitech MS836B, MS838 Unitech podstawka. PN: 5200-900014G.',
+  description: `Hands Free Stand 5200-900014G utrzymuje skaner na blacie, więc kody czyta się bez trzymania go w dłoni. Pasuje do przewodowego skanera [Unitech MS838](/produkt/unitech-ms838) oraz do dwóch skanerów bezprzewodowych 2,4 GHz: laserowego [Unitech MS836B](/produkt/unitech-ms836b) i obrazowego [Unitech MS838B](/produkt/unitech-ms838b).
+
+Podstawka jest w zestawie MS838-2UCB0S-SG. Do wersji MS838-2RCB00-SG z interfejsem RS-232 kupuje się ją osobno. Modele MS836B i MS838B przekazują dane do odbiornika USB na odległość do 100 m w linii widoczności i mają obudowę IP42.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'unitech',
@@ -375,13 +377,13 @@ const podstawkaMs83x: Product = {
   specifications: [
     { name: 'Part Number', value: '5200-900014G' },
     { name: 'Typ', value: 'Podstawka Hands Free Stand' },
-    { name: 'Zgodność', value: 'Unitech MS836B, MS838B' },
+    { name: 'Zgodność', value: 'Unitech MS838, MS836B, MS838B' },
   ],
   applications: ['Praca ze skanerem odłożonym na podstawce'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ms83x-odbiornik-2-4-ghz'],
-  downloads: [UM_MS836B, UM_MS838B],
-  relatedProducts: MS83X,
+  downloads: [{ name: 'Instrukcja obsługi Unitech MS838 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms838-instrukcja-en.pdf', size: '2,3 MB' }, UM_MS836B, UM_MS838B],
+  relatedProducts: ['unitech-ms838', ...MS83X],
   createdAt: '2026-10-30',
 }
 

@@ -676,7 +676,7 @@ Zastosowania to sklepy, supermarkety, apteki i hotele.`,
     'Podstawka': 'Podstawka hands-free w zestawie.\n\n• Tak — skaner stoi na blacie i czyta kody bez trzymania w dłoni, w trybie prezentacyjnym.',
   },
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ms838-podstawka'],
+  relatedAccessories: ['unitech-ms83x-podstawka'],
   relatedProducts: ['unitech-ms852', 'unitech-ms282e', 'unitech-ms852-plus', 'zebra-ds2208', 'honeywell-voyager-xp-1470g', 'datalogic-quickscan-qd2590'],
   downloads: [
     plik('Karta katalogowa Unitech MS838 (EN)', 'unitech-ms838-karta-katalogowa-en.pdf', '922 KB', 'datasheet'),
@@ -686,7 +686,7 @@ Zastosowania to sklepy, supermarkety, apteki i hotele.`,
   faq: [
     {
       question: 'Którą wersję Unitech MS838 wybrać: USB czy RS-232?',
-      answer: 'Skaner MS838-2UCB0S-SG łączy się przez USB i ma w zestawie podstawkę hands-free. Skaner MS838-2RCB00-SG łączy się przez RS-232 i nie ma podstawki; podstawkę [Unitech 5200-900014G](/produkt/unitech-ms838-podstawka) kupuje się osobno.',
+      answer: 'Skaner MS838-2UCB0S-SG łączy się przez USB i ma w zestawie podstawkę hands-free. Skaner MS838-2RCB00-SG łączy się przez RS-232 i nie ma podstawki; podstawkę [Unitech 5200-900014G](/produkt/unitech-ms83x-podstawka) kupuje się osobno.',
     },
     {
       question: 'Czy MS838 obsługuje OPOS i JPOS?',
