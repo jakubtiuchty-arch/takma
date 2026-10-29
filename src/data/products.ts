@@ -1,3 +1,4 @@
+import { newlandApprovedProducts } from './newland-approved-2026-10'
 import { octoberLaunchProducts } from './product-launches-2026-10'
 import { zebraDesignerProducts } from './zebradesigner-products'
 import { sunmiProducts, sunmiAccessories } from './sunmi-products'
@@ -95326,7 +95327,7 @@ for (const subcategory of subcategories) {
 }
 
 for (const subcategory of subcategories) {
-  const additions = octoberLaunchProducts.filter(p => p.subcategoryIds?.includes(subcategory.id))
+  const additions = [...octoberLaunchProducts, ...newlandApprovedProducts].filter(p => p.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95503,6 +95504,7 @@ const rawProductList: Product[] = [
   ...rfidTerminalAccessories,
   ...honeywellPx65RfidAccessories,
   ...octoberLaunchProducts.filter(p => !p.comingSoon),
+  ...newlandApprovedProducts,
   ...sunmiProducts,
   ...sunmiAccessories,
   ...zebraKc401Products,
