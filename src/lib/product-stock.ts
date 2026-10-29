@@ -17,6 +17,8 @@ import { unitechRp300Products, unitechRp300Accessories } from '@/data/unitech-rp
 import { unitechRp902Products, unitechRp902Accessories } from '@/data/unitech-rp902-products'
 import { unitechTerminalProducts } from '@/data/unitech-terminal-products'
 import { unitechTerminalAccessories } from '@/data/unitech-terminal-accessories'
+import { unitechHandheldProducts } from '@/data/unitech-handheld-products'
+import { unitechHandheldAccessories } from '@/data/unitech-handheld-accessories'
 import { tsl3128Products } from '@/data/tsl-3128-products'
 import { tsl3138Products, tsl3138Accessories } from '@/data/tsl-3138-products'
 import { tsl3166Products, tsl3166Accessories } from '@/data/tsl-3166-products'
@@ -80,6 +82,8 @@ export const LIVE_OFFER_SLUGS = new Set([
   ...unitechRp902Accessories.map(product => product.slug),
   ...unitechTerminalProducts.map(product => product.slug),
   ...unitechTerminalAccessories.map(product => product.slug),
+  ...unitechHandheldProducts.map(product => product.slug),
+  ...unitechHandheldAccessories.map(product => product.slug),
   ...tsl3128Products.map(product => product.slug),
   ...tsl3138Products.map(product => product.slug),
   ...tsl3138Accessories.map(product => product.slug),

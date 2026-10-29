@@ -48,6 +48,8 @@ import { unitechRp300Products, unitechRp300Accessories } from './unitech-rp300-p
 import { unitechRp902Products, unitechRp902Accessories } from './unitech-rp902-products'
 import { unitechTerminalProducts } from './unitech-terminal-products'
 import { unitechTerminalAccessories } from './unitech-terminal-accessories'
+import { unitechHandheldProducts } from './unitech-handheld-products'
+import { unitechHandheldAccessories } from './unitech-handheld-accessories'
 import { unitechFaq } from './unitech-category'
 import { rfidReaderCategory } from './rfid-reader-category'
 import { tsl3128Products } from './tsl-3128-products'
@@ -95360,8 +95362,8 @@ for (const subcategory of subcategories) {
 
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
-  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
-    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
+  if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories, ...unitechHandheldAccessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
+    const additions = [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories, ...unitechHandheldAccessories].filter(p => subcategory.id === 'akcesoria-do-terminali' || p.subcategoryIds?.includes(subcategory.id))
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(p => p.id)]))
     subcategory.productCount = subcategory.productIds.length
   }
@@ -95481,6 +95483,7 @@ const rawProductList: Product[] = [
   ...unitechRp300Products, ...unitechRp300Accessories,
   ...unitechRp902Products, ...unitechRp902Accessories,
   ...unitechTerminalProducts, ...unitechTerminalAccessories,
+  ...unitechHandheldProducts, ...unitechHandheldAccessories,
   ...tsl3128Products,
   ...tsl3138Products, ...tsl3138Accessories,
   ...tsl3166Products,
@@ -96136,9 +96139,9 @@ export const brandCategories: BrandCategory[] = [
   "manufacturerId": "unitech",
   "categoryId": "terminale-mobilne",
   "name": "Terminale mobilne Unitech",
-  "seoTitle": "Terminale Unitech — EA530, EA530 UHF i EA660 z Androidem",
-  "seoDescription": "Terminale Unitech z Androidem 15: EA530 z 4G lub Wi-Fi 6E, EA530 UHF z czytnikiem RFID oraz EA660 z opcją 5G i skanerem do 12 m. Ceny netto, PN i dostępność.",
-  "longDescription": "Terminale mobilne Unitech to przenośne komputery z Androidem 15 do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje EA660 z opcją 5G i skanerem do 12 m, lekki EA530 z Wi-Fi 6E lub modemem 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi 6E, a wersje 4G i 5G także przez sieć komórkową. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
+  "seoTitle": "Terminale Unitech — EA660, EA530, HT730 Plus i HT330",
+  "seoDescription": "Terminale Unitech z Androidem: dotykowe EA660, EA530 i EA530 UHF oraz HT730 Plus i HT330 z klawiaturą, także do mroźni. Ceny netto, PN i dostępność.",
+  "longDescription": "Terminale mobilne Unitech to przenośne komputery z Androidem do odczytu kodów kreskowych i pracy z aplikacjami firmy. Oferta obejmuje dotykowe EA660 z opcją 5G i skanerem do 12 m, lekki EA530 z modemem 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID, a także terminale z klawiaturą: HT730 Plus z 5G, silnikiem do 32 m i wersją z grzałką do mroźni oraz HT330 z baterią na ponad 20 godzin. Terminale łączą się z systemami magazynowymi i sprzedażowymi przez Wi-Fi, a wersje 4G i 5G także przez sieć komórkową. Stacje, baterie i uchwyty dobiera się do modelu w kategorii [akcesoria do terminali](/akcesoria-do-terminali).",
   "faq": unitechFaq
 },
 {
