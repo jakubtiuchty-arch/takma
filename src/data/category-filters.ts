@@ -986,6 +986,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Brady', manufacturer: 'brady' },
         { value: 'Getac', manufacturer: 'getac' },
         { value: 'Bluebird', manufacturer: 'bluebird' },
+        { value: 'Unitech', manufacturer: 'unitech' },
       ],
     },
     {
@@ -1018,7 +1019,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'Wbudowany', pattern: '\\S', specs: ['Skaner', 'Skaner kodów'] },
         // Getac: czytnik kodów jest opcją części PN, więc model trafia do obu grup.
-        { value: 'Bez skanera', slugs: ['brady-rt710', 'getac-zx80', 'getac-zx10-g2', 'getac-ux10-g5', 'getac-f110-g7', 'getac-f120', 'getac-g140'] },
+        { value: 'Bez skanera', slugs: ['brady-rt710', 'getac-zx80', 'getac-zx10-g2', 'getac-ux10-g5', 'getac-f110-g7', 'getac-f120', 'getac-g140', 'unitech-rt112', 'unitech-rt112-windows', 'unitech-tb170-plus'] },
         { value: 'Bez skanera', notSpecs: ['Skaner', 'Skaner kodów'] },
       ],
     },
@@ -1512,7 +1513,7 @@ categoryFilters['skanery-datalogic'] = [
     ],
   },
 ]
-for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady', 'tablety-getac', 'tablety-bluebird']) {
+for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-brady', 'tablety-getac', 'tablety-bluebird', 'tablety-unitech']) {
   categoryFilters[page] = categoryFilters['tablety-przemyslowe']
 }
 // Drukarki etykiet — strony marek: ten sam zestaw co kategoria (Producent chowa się sam)

@@ -257,7 +257,8 @@ export const unitechRp300Accessories: Product[] = [
     "manufacturerId": "unitech",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "kable-zasilacze-terminali"
+      "kable-zasilacze-terminali",
+      "akcesoria-do-tabletow"
     ],
     "priceFrom": 92.04,
     "availability": "unavailable",
@@ -273,9 +274,9 @@ export const unitechRp300Accessories: Product[] = [
     "imageDescriptions": [
       "Zasilacz USB-C 45 W Unitech RP300 — widok produktu"
     ],
-    "description": "Zasilacz 1010-900072G dostarcza zasilanie USB-C Power Delivery do [RP300](/produkt/unitech-rp300) oraz [stacji jednostanowiskowej](/produkt/unitech-rp300-stacja). Ma moc 45 W i przewód zakończony USB-C.\n\nDo gniazda sieciowego potrzebujesz [przewodu EU 1550-905940G z wtykiem IEC C5](/produkt/unitech-przewod-sieciowy-eu-c5). Przewód sieciowy jest sprzedawany osobno. Nie zastępuj go przewodem IEC C13.",
-    "shortDescription": "Zasilacz Unitech 1010-900072G do RP300 i stacji: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
-    "seoDescription": "Zasilacz Unitech 1010-900072G do RP300 i stacji: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
+    "description": "Zasilacz 1010-900072G dostarcza zasilanie USB-C Power Delivery do [RP300](/produkt/unitech-rp300) oraz [stacji jednostanowiskowej](/produkt/unitech-rp300-stacja). Ma moc 45 W i przewód zakończony USB-C.\n\nDo gniazda sieciowego potrzebujesz [przewodu EU 1550-905940G z wtykiem IEC C5](/produkt/unitech-przewod-sieciowy-eu-c5). Przewód sieciowy jest sprzedawany osobno. Nie zastępuj go przewodem IEC C13.\n\nZasilacz 1010-900072G jest też wymieniony w katalogach akcesoriów tabletów [RT112](/produkt/unitech-rt112) i [RT112 Windows](/produkt/unitech-rt112-windows). Zasila [stację biurkową](/produkt/unitech-rt112-stacja-biurkowa), która wymaga zasilacza Power Delivery o mocy co najmniej 45 W.",
+    "shortDescription": "Zasilacz Unitech 1010-900072G do RP300, stacji i tabletów RT112: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
+    "seoDescription": "Zasilacz Unitech 1010-900072G do RP300, stacji i tabletów RT112: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
     "seoTitle": "Zasilacz USB-C 45 W Unitech RP300 — 1010-900072G | TAKMA",
     "specifications": [
       {
@@ -284,7 +285,7 @@ export const unitechRp300Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP300"
+        "value": "Unitech RP300, RT112, RT112 Windows; stacja biurkowa 5000-900124G"
       },
       {
         "name": "Moc",
@@ -304,7 +305,9 @@ export const unitechRp300Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "unitech-rp300"
+      "unitech-rp300",
+      "unitech-rt112",
+      "unitech-rt112-windows"
     ],
     "downloads": [
       {
@@ -312,6 +315,18 @@ export const unitechRp300Accessories: Product[] = [
         "url": "/instrukcje/unitech-rp300-akcesoria-en.pdf",
         "type": "manual",
         "size": "1082 kB"
+      },
+      {
+        "name": "Katalog akcesoriów Unitech RT112 (EN)",
+        "url": "/downloads/unitech/unitech-rt112-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "774 KB"
+      },
+      {
+        "name": "Katalog akcesoriów Unitech RT112 Windows (EN)",
+        "url": "/downloads/unitech/unitech-rt112-windows-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-20",
@@ -456,7 +471,8 @@ export const unitechRp300Accessories: Product[] = [
     "manufacturerId": "unitech",
     "categoryId": "akcesoria",
     "subcategoryIds": [
-      "kable-zasilacze-terminali"
+      "kable-zasilacze-terminali",
+      "akcesoria-do-tabletow"
     ],
     "priceFrom": 30.15,
     "availability": "on-order",
@@ -472,7 +488,7 @@ export const unitechRp300Accessories: Product[] = [
     "imageDescriptions": [
       "Przewód sieciowy EU Unitech — IEC C5, 1,8 m — widok produktu"
     ],
-    "description": "Przewód 1550-905940G łączy europejskie gniazdo sieciowe z [zasilaczem USB-C 45 W Unitech 1010-900072G](/produkt/unitech-rp300-zasilacz-45w). Ma długość 1,8 m oraz wtyk IEC C5.\n\nJest elementem zasilania [RP300](/produkt/unitech-rp300) lub jego [stacji](/produkt/unitech-rp300-stacja). Nie jest przewodem USB ani przewodem IEC C13. Zasilacz jest sprzedawany osobno.",
+    "description": "Przewód 1550-905940G łączy europejskie gniazdo sieciowe z [zasilaczem USB-C 45 W Unitech 1010-900072G](/produkt/unitech-rp300-zasilacz-45w). Ma długość 1,8 m oraz wtyk IEC C5.\n\nJest elementem zasilania [RP300](/produkt/unitech-rp300) lub jego [stacji](/produkt/unitech-rp300-stacja). Nie jest przewodem USB ani przewodem IEC C13. Zasilacz jest sprzedawany osobno.\n\nPrzewód 1550-905940G jest też wymieniony wśród akcesoriów tabletów [RT112](/produkt/unitech-rt112) i [RT112 Windows](/produkt/unitech-rt112-windows). Zestaw tych tabletów zawiera zasilacz USB-C bez przewodu sieciowego.",
     "shortDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G dla RP300. Sprawdź cenę i dostępność.",
     "seoDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G dla RP300. Sprawdź cenę i dostępność.",
     "seoTitle": "Przewód sieciowy EU Unitech — IEC C5, 1,8 m — 1550-905940G | TAKMA",
@@ -483,7 +499,7 @@ export const unitechRp300Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP300"
+        "value": "Unitech RP300, RT112, RT112 Windows"
       },
       {
         "name": "Długość",
@@ -503,7 +519,9 @@ export const unitechRp300Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "unitech-rp300"
+      "unitech-rp300",
+      "unitech-rt112",
+      "unitech-rt112-windows"
     ],
     "downloads": [
       {
@@ -511,6 +529,18 @@ export const unitechRp300Accessories: Product[] = [
         "url": "/instrukcje/unitech-rp300-akcesoria-en.pdf",
         "type": "manual",
         "size": "1082 kB"
+      },
+      {
+        "name": "Katalog akcesoriów Unitech RT112 (EN)",
+        "url": "/downloads/unitech/unitech-rt112-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "774 KB"
+      },
+      {
+        "name": "Katalog akcesoriów Unitech RT112 Windows (EN)",
+        "url": "/downloads/unitech/unitech-rt112-windows-akcesoria-en.pdf",
+        "type": "manual",
+        "size": "1,0 MB"
       }
     ],
     "createdAt": "2026-10-20",

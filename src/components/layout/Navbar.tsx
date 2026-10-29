@@ -148,6 +148,7 @@ const navigation: NavItem[] = [
       { name: 'Tablety Getac', href: '/tablety-getac', group: 'brand' },
       { name: 'Tablety Bluebird', href: '/tablety-bluebird', group: 'brand' },
       { name: 'Tablety Newland', href: '/katalog?kategoria=tablety-przemyslowe&producent=newland', group: 'brand' },
+      { name: 'Tablety Unitech', href: '/tablety-unitech', group: 'brand' },
       { name: 'Laptopy przemysłowe', href: '/laptopy-przemyslowe' },
     ],
   },

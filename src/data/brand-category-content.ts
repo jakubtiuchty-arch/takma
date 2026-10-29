@@ -2,6 +2,7 @@ import { sunmiCategory } from './sunmi-category'
 import { cipherlabCategory } from './cipherlab-category'
 import { bluebirdCategory } from './bluebird-category'
 import { unitechCategory } from './unitech-category'
+import { unitechTabletCategory } from './unitech-tablet-category'
 import { datalogicScannerCategory } from './datalogic-scanner-category'
 import { progloveCategory } from './proglove-category'
 // Rich SEO content for brand+category pages (e.g. /drukarki-etykiet-zebra)
@@ -27,6 +28,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
   'terminale-cipherlab': cipherlabCategory,
   'terminale-bluebird': bluebirdCategory,
   'terminale-unitech': unitechCategory,
+  'tablety-unitech': unitechTabletCategory,
   'skanery-datalogic': datalogicScannerCategory,
   'skanery-proglove': progloveCategory,
   'drukarki-kart-magicard': {

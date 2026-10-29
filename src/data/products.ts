@@ -64,6 +64,8 @@ import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
+import { unitechTabletProducts } from './unitech-tablet-products'
+import { unitechTabletAccessories } from './unitech-tablet-accessories'
 import { getacLaptopProducts, getacLaptopAccessories } from './getac-laptop-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
@@ -398,10 +400,10 @@ export const categories: Category[] = [
     id: 'tablety-przemyslowe',
     slug: 'tablety-przemyslowe',
     name: 'Tablety przemysłowe',
-    description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell, Brady i Bluebird.',
+    description: 'Wytrzymałe tablety przemysłowe Android i Windows do magazynu, produkcji, chłodni, służby zdrowia i pracy w terenie. Zebra, Getac, Honeywell, Brady, Bluebird i Unitech.',
     seoTitle: 'Tablety przemysłowe rugged Android i Windows',
-    seoDescription: 'Tablety przemysłowe Zebra ET40–ET65, Getac, Honeywell RT10A, Brady RT710 i Bluebird T30: Android i Windows, ekrany 8–14″, do magazynu, chłodni i terenu.',
-    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym. Większość tabletów w kategorii ma klasę ochrony IP65–IP68, odporność na upadki z 1,2–2,4 m i certyfikat MIL-STD-810H. W ofercie TAKMA tablety pięciu producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A), [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7 oraz Bluebird ([T30](/produkt/bluebird-t30), [T10](/produkt/bluebird-t10)). Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
+    seoDescription: 'Tablety przemysłowe Zebra ET40–ET65, Getac, Honeywell RT10A, Brady RT710, Bluebird T30 i Unitech RT112: Android i Windows, ekrany 8–14″, do magazynu, chłodni i terenu.',
+    longDescription: 'Tablety przemysłowe (rugged tablets) to mobilne komputery z hartowanym ekranem dotykowym. Większość tabletów w kategorii ma klasę ochrony IP65–IP68, odporność na upadki z 1,2–2,4 m i certyfikat MIL-STD-810H. W ofercie TAKMA tablety sześciu producentów: Zebra Technologies (seria ET — ET40, ET45, ET60, ET65, ET401, ET80), Getac (ZX80, ZX80W, ZX10 G2, UX10 G5, F110 G7, F120, K120 G3, G140), Honeywell (RT10A, EDA10A), [Brady RT710](/produkt/brady-rt710) z Androidem 16 i Wi-Fi 7, Bluebird ([T30](/produkt/bluebird-t30), [T10](/produkt/bluebird-t10)) oraz Unitech ([RT112](/produkt/unitech-rt112), [RT112 Windows](/produkt/unitech-rt112-windows), [TB170 Plus](/produkt/unitech-tb170-plus)). Systemy: Android 13–16 (AOSP i GMS) oraz Windows 11 Pro/IoT Enterprise. Ekrany od 8 do 14 cali z jasnością 500–1200 nit do pracy na słońcu, pojemnościowe z obsługą w rękawicach i w deszczu. Zastosowania: magazyny WMS, linie produkcyjne MES, chłodnie i mroźnie (-30°C z podgrzewanym ekranem), inspekcje terenowe, floty pojazdów, opieka zdrowotna (z dezynfekcją i certyfikatem medycznym). Opcje: czytniki kodów 1D/2D, RFID UHF, skanery paszportów, Hot Swap baterii, stacje dokujące do pojazdów, klawiatury odpinane. TAKMA jako partner oferuje doradztwo, konfigurację MDM, staging flotowy i serwis pogwarancyjny (serwis-zebry.pl).',
     icon: 'tablet',
     productCount: 7,
   },
@@ -95496,6 +95498,8 @@ const rawProductList: Product[] = [
   ...getacTabletAccessories,
   ...bluebirdTabletProducts,
   ...bluebirdTabletAccessories,
+  ...unitechTabletProducts,
+  ...unitechTabletAccessories,
   ...getacLaptopProducts,
   ...getacLaptopAccessories,
   ...rfidLabelProducts,
@@ -96269,6 +96273,18 @@ export const brandCategories: BrandCategory[] = [
     seoTitle: 'Tablety Bluebird z Androidem — T30 z IP65, smukły T10, T40 Ultra',
     seoDescription: 'Tablety Bluebird z Androidem: T30 10,1″ z IP65 i opcją 5G, smukły T10 10,95″ z opcją 4G LTE oraz zapowiedź T40 Ultra dla zakładów karnych. Tablet Bluebird z NFC.',
     longDescription: 'Tablety Bluebird w ofercie TAKMA to tablety z Androidem dla firm: od smukłych tabletów biznesowych po urządzenia w obudowie o klasie szczelności IP65 i wyższej. Służą do obsługi klienta i płatności zbliżeniowych przez NFC, do pracy w sklepie, magazynie i dostawach, a także w ochronie zdrowia i gastronomii. Współpracują z narzędziami Bluebird BOS i popularnymi systemami EMM, a na stanowisku pracy ze stacjami ładującymi. Aktualizacje Androida wymagają płatnej usługi Bluebird Care. Tablety innych marek są w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
+    // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
+    faq: [],
+  },
+  {
+    id: 'tablety-przemyslowe-unitech',
+    slug: 'tablety-unitech',
+    manufacturerId: 'unitech',
+    categoryId: 'tablety-przemyslowe',
+    name: 'Tablety przemysłowe Unitech',
+    seoTitle: 'Tablety Unitech — RT112 z Androidem lub Windows i TB170 Plus',
+    seoDescription: 'Tablety przemysłowe Unitech 10,1″: RT112 z Androidem 13 lub Windows 11 na ARM, IP67 i opcją 5G oraz TB170 Plus z Windows 11, ekranem 800 nitów i hot swap. Tablet Unitech ze skanerem.',
+    longDescription: 'Tablety Unitech w ofercie TAKMA to trzy modele z ekranem 10,1″: [RT112](/produkt/unitech-rt112) z Androidem 13, [RT112 Windows](/produkt/unitech-rt112-windows) z Windows 11 na ARM oraz [TB170 Plus](/produkt/unitech-tb170-plus) z Windows 11 na procesorze Intel. Służą do pracy w magazynie, handlu, produkcji i serwisie w terenie. Wersje różnią się skanerem kodów i modemem komórkowym. Wszystkie tablety są też w kategorii [tablety przemysłowe](/tablety-przemyslowe).',
     // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
     faq: [],
   },
