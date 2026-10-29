@@ -27,7 +27,7 @@ export const unitechRp300Products: Product[] = [
       "Unitech RP300 — sam uchwyt RFID, bez terminala i adaptera",
       "Unitech RP300 z opcjonalnym terminalem EA660 — terminal i adapter sprzedawane osobno"
     ],
-    "description": "Unitech RP300 to uchwyt UHF RFID do inwentaryzacji, wyszukiwania towarów i kontroli wyposażenia. Przesyła dane do zgodnej aplikacji na telefonie, terminalu lub komputerze. Ma moduł Impinj E710 i wymienną baterię 7000 mAh.\n\n## Dwa europejskie PN: z kodami 2D lub bez skanera\n\nRP300-37E830G nie ma skanera kodów kreskowych. Wybierz go, jeśli potrzebujesz odczytu UHF, a kody odczytujesz innym urządzeniem.\n\nRP300-37EA30G ma skaner Zebra SE4107 do kodów 1D i 2D. Pozwala obsługiwać znaczniki RFID i nadrukowane kody w jednym urządzeniu. Obie konfiguracje pracują w europejskim paśmie UHF 865–868 MHz.\n\n## Impinj E710 i odczyt UHF\n\nRP300 obsługuje EPC Class 1 Gen 2 v2 oraz funkcje Impinj Gen2X. Umożliwia odczyt i zapis zgodnych znaczników. Aplikacja TagAccess obsługuje także wyszukiwanie wybranego znacznika.\n\nMaksymalny zasięg odczytu wynosi do 25 m w warunkach testowych. Zasięg zależy od znacznika, materiału towaru, ustawionej mocy i otoczenia. Przed wdrożeniem sprawdź odczyt na używanych opakowaniach. Metal i płyny mogą zmienić skuteczność odczytu.\n\n## Bluetooth 5.3, USB-C i aplikacja\n\nBluetooth 5.3 obsługuje SPP, HID i Apple iAP2. NFC ułatwia parowanie. USB-C oraz styki pogo umożliwiają połączenie przewodowe w odpowiedniej konfiguracji. Aplikacja i urządzenie nadrzędne muszą obsługiwać wybrany interfejs oraz model czytnika.\n\nRP300 nie ma własnego ekranu ani systemu Android. Program magazynowy działa na połączonym urządzeniu. Sygnalizację zapewniają diody oraz brzęczyk. Przycisk komunikacji pozwala zmieniać tryb połączenia.\n\n## Montaż terminala EA660 lub EA530\n\nMocowanie urządzenia na RP300 wymaga właściwego adaptera. [Adapter 3210-900047G](/produkt/unitech-rp300-adapter-ea660) jest przeznaczony do EA660. [Adapter 3210-900048G](/produkt/unitech-rp300-adapter-ea530) służy do EA530.\n\nAdaptery mają inne elementy mocujące. Nie stosuj ich zamiennie. Terminal oraz adapter są sprzedawane osobno. Ujęcie z terminalem w galerii pokazuje przykład konfiguracji.\n\n## Bateria i wyposażenie do ładowania\n\nBaterię 7000 mAh można wyjąć z uchwytu. Zestaw czytnika obejmuje baterię, pasek na nadgarstek, pięć znaczników RFID i kartę z kodem QR urządzenia. Nie zawiera terminala, adaptera, zasilacza ani stacji.\n\nDo ładowania dobierz [zasilacz USB-C PD 45 W 1010-900072G](/produkt/unitech-rp300-zasilacz-45w) oraz [przewód sieciowy EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5). Zasilacz ma przewód zakończony USB-C. Przewód sieciowy z wtykiem IEC C5 zamów osobno. RP300 może jednocześnie ładować zgodny terminal Android. Ładowanie zamontowanego urządzenia iOS nie jest obsługiwane.\n\nOpcjonalna [stacja 5000-900148G](/produkt/unitech-rp300-stacja) ładuje RP300 przez styki. Możesz w niej umieścić czytnik z prawidłowo zamontowanym terminalem lub bez niego. Stacja wymaga zasilacza PD oraz przewodu sieciowego. Sam zakup stacji nie zapewnia kompletu zasilania.\n\n## Obudowa IP65 i praca w magazynie\n\nObudowa ma klasę ochrony IP65. Odporność na upadki wynosi 1,5 m w warunkach testowych. Temperatura pracy to od −20°C do +50°C. Wymiary wynoszą 172,02 × 81 × 156,36 mm. Masa wersji ze skanerem 2D wynosi 564 g.\n\nRP300 możesz wykorzystać do liczenia oznakowanych towarów, kontroli wydań oraz wyszukiwania produktu przy półce. Funkcje procesu i wymiana danych z systemem magazynowym zależą od aplikacji.\n\n## RP300 czy czytnik kieszonkowy?\n\nRP300 ma konstrukcję pistoletową i umożliwia montaż zgodnego terminala przez adapter. Jeśli potrzebujesz małego czytnika do przenoszenia w kieszeni, porównaj [Unitech RP902](/produkt/unitech-rp902).\n\nPozostałe [uchwyty RFID](/uchwyty-rfid) znajdziesz w jednej kategorii. [Terminale RFID](/terminale-rfid) mają własny ekran aplikacji i system. Do przygotowania oznaczeń sprawdź [drukarki RFID](/drukarki-rfid). Dobór etykiety do czytnika nie potwierdza zgodności rolki z drukarką.",
+    "description": "Unitech RP300 to uchwyt UHF RFID do inwentaryzacji, wyszukiwania towarów i kontroli wyposażenia. Przesyła dane do zgodnej aplikacji na telefonie, terminalu lub komputerze. Ma moduł Impinj E710 i wymienną baterię 7000 mAh.\n\n## Dwa europejskie PN: z kodami 2D lub bez skanera\n\nRP300-37E830G nie ma skanera kodów kreskowych. Wybierz go, jeśli potrzebujesz odczytu UHF, a kody odczytujesz innym urządzeniem.\n\nRP300-37EA30G ma skaner Zebra SE4107 do kodów 1D i 2D. Pozwala obsługiwać znaczniki RFID i nadrukowane kody w jednym urządzeniu. Obie konfiguracje pracują w europejskim paśmie UHF 865–868 MHz.\n\n## Impinj E710 i odczyt UHF\n\nRP300 obsługuje EPC Class 1 Gen 2 v2 oraz funkcje Impinj Gen2X. Umożliwia odczyt i zapis zgodnych znaczników. Aplikacja TagAccess obsługuje także wyszukiwanie wybranego znacznika.\n\nMaksymalny zasięg odczytu wynosi do 25 m w warunkach testowych. Zasięg zależy od znacznika, materiału towaru, ustawionej mocy i otoczenia. Przed wdrożeniem sprawdź odczyt na używanych opakowaniach. Metal i płyny mogą zmienić skuteczność odczytu.\n\n## Bluetooth 5.3, USB-C i aplikacja\n\nBluetooth 5.3 obsługuje SPP, HID i Apple iAP2. NFC ułatwia parowanie. USB-C oraz styki pogo umożliwiają połączenie przewodowe w odpowiedniej konfiguracji. Aplikacja i urządzenie nadrzędne muszą obsługiwać wybrany interfejs oraz model czytnika.\n\nRP300 nie ma własnego ekranu ani systemu Android. Program magazynowy działa na połączonym urządzeniu. Sygnalizację zapewniają diody oraz brzęczyk. Przycisk komunikacji pozwala zmieniać tryb połączenia.\n\n## Montaż terminala EA660 lub EA530\n\nMocowanie urządzenia na RP300 wymaga właściwego adaptera. [Adapter 3210-900047G](/produkt/unitech-rp300-adapter-ea660) jest przeznaczony do [Unitech EA660](/produkt/unitech-ea660). [Adapter 3210-900048G](/produkt/unitech-rp300-adapter-ea530) służy do [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf).\n\nAdaptery mają inne elementy mocujące. Nie stosuj ich zamiennie. Terminal oraz adapter są sprzedawane osobno. Ujęcie z terminalem w galerii pokazuje przykład konfiguracji.\n\n## Bateria i wyposażenie do ładowania\n\nBaterię 7000 mAh można wyjąć z uchwytu. Zestaw czytnika obejmuje baterię, pasek na nadgarstek, pięć znaczników RFID i kartę z kodem QR urządzenia. Nie zawiera terminala, adaptera, zasilacza ani stacji.\n\nDo ładowania dobierz [zasilacz USB-C PD 45 W 1010-900072G](/produkt/unitech-rp300-zasilacz-45w) oraz [przewód sieciowy EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5). Zasilacz ma przewód zakończony USB-C. Przewód sieciowy z wtykiem IEC C5 zamów osobno. RP300 może jednocześnie ładować zgodny terminal Android. Ładowanie zamontowanego urządzenia iOS nie jest obsługiwane.\n\nOpcjonalna [stacja 5000-900148G](/produkt/unitech-rp300-stacja) ładuje RP300 przez styki. Możesz w niej umieścić czytnik z prawidłowo zamontowanym terminalem lub bez niego. Stacja wymaga zasilacza PD oraz przewodu sieciowego. Sam zakup stacji nie zapewnia kompletu zasilania.\n\n## Obudowa IP65 i praca w magazynie\n\nObudowa ma klasę ochrony IP65. Odporność na upadki wynosi 1,5 m w warunkach testowych. Temperatura pracy to od −20°C do +50°C. Wymiary wynoszą 172,02 × 81 × 156,36 mm. Masa wersji ze skanerem 2D wynosi 564 g.\n\nRP300 możesz wykorzystać do liczenia oznakowanych towarów, kontroli wydań oraz wyszukiwania produktu przy półce. Funkcje procesu i wymiana danych z systemem magazynowym zależą od aplikacji.\n\n## RP300 czy czytnik kieszonkowy?\n\nRP300 ma konstrukcję pistoletową i umożliwia montaż zgodnego terminala przez adapter. Jeśli potrzebujesz małego czytnika do przenoszenia w kieszeni, porównaj [Unitech RP902](/produkt/unitech-rp902).\n\nPozostałe [uchwyty RFID](/uchwyty-rfid) znajdziesz w jednej kategorii. [Terminale RFID](/terminale-rfid) mają własny ekran aplikacji i system. Do przygotowania oznaczeń sprawdź [drukarki RFID](/drukarki-rfid). Dobór etykiety do czytnika nie potwierdza zgodności rolki z drukarką.",
     "shortDescription": "Unitech RP300: uchwyt UHF RFID z Impinj E710 i baterią 7000 mAh. Dwa PN EU: ze skanerem 2D lub bez. Porównaj ceny, stany i akcesoria.",
     "seoDescription": "Unitech RP300: uchwyt UHF RFID z Impinj E710 i baterią 7000 mAh. Dwa PN EU: ze skanerem 2D lub bez. Porównaj ceny, stany i akcesoria.",
     "seoTitle": "Unitech RP300 — uchwyt RFID, warianty EU | TAKMA",
@@ -125,7 +125,7 @@ export const unitechRp300Products: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-29",
     "relatedAccessories": [
       "unitech-rp300-stacja",
       "unitech-rp300-zasilacz-45w",
@@ -341,7 +341,7 @@ export const unitechRp300Accessories: Product[] = [
     "imageDescriptions": [
       "Adapter Unitech RP300 do EA660 — widok produktu"
     ],
-    "description": "Adapter 3210-900047G mocuje terminal Unitech EA660 na [czytniku RP300](/produkt/unitech-rp300). Dobierz go do dokładnego modelu urządzenia. Nie jest adapterem do EA530.\n\nZestaw zawiera adapter EA660, górny element mocujący, dwie małe i cztery duże śruby. Terminal EA660 oraz czytnik RP300 są sprzedawane osobno. Montaż wykonaj według instrukcji RP300.",
+    "description": "Adapter 3210-900047G mocuje terminal [Unitech EA660](/produkt/unitech-ea660) na [czytniku RP300](/produkt/unitech-rp300). Dobierz go do dokładnego modelu urządzenia. Nie jest adapterem do EA530.\n\nZestaw zawiera adapter EA660, górny element mocujący, dwie małe i cztery duże śruby. Terminal EA660 oraz czytnik RP300 są sprzedawane osobno. Montaż wykonaj według instrukcji RP300.",
     "shortDescription": "Adapter Unitech 3210-900047G do montażu EA660 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
     "seoDescription": "Adapter Unitech 3210-900047G do montażu EA660 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
     "seoTitle": "Adapter Unitech RP300 do EA660 — 3210-900047G | TAKMA",
@@ -368,7 +368,8 @@ export const unitechRp300Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "unitech-rp300"
+      "unitech-rp300",
+      "unitech-ea660"
     ],
     "downloads": [
       {
@@ -379,7 +380,7 @@ export const unitechRp300Accessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-29"
   },
   {
     "id": "unitech-rp300-adapter-ea530",
@@ -405,7 +406,7 @@ export const unitechRp300Accessories: Product[] = [
     "imageDescriptions": [
       "Adapter Unitech RP300 do EA530 — widok produktu"
     ],
-    "description": "Adapter 3210-900048G mocuje terminal Unitech EA530 na [czytniku RP300](/produkt/unitech-rp300). Dobierz go do modelu terminala. Adapter EA660 nie zastępuje tego elementu.\n\nZestaw zawiera adapter EA530, dolny element mocujący, dwie małe i cztery duże śruby. Terminal EA530 oraz czytnik RP300 są sprzedawane osobno. Montaż wykonaj według instrukcji RP300.",
+    "description": "Adapter 3210-900048G mocuje terminal [Unitech EA530](/produkt/unitech-ea530) lub [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) na [czytniku RP300](/produkt/unitech-rp300). Dobierz go do modelu terminala. Adapter EA660 nie zastępuje tego elementu.\n\nZestaw zawiera adapter EA530, dolny element mocujący, dwie małe i cztery duże śruby. Terminal EA530 oraz czytnik RP300 są sprzedawane osobno. Przed montażem zdejmij z terminala czarną folię. Montaż wykonaj według instrukcji RP300.",
     "shortDescription": "Adapter Unitech 3210-900048G do montażu EA530 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
     "seoDescription": "Adapter Unitech 3210-900048G do montażu EA530 na RP300. Element mocujący i śruby w zestawie. Terminal oraz czytnik osobno.",
     "seoTitle": "Adapter Unitech RP300 do EA530 — 3210-900048G | TAKMA",
@@ -432,7 +433,9 @@ export const unitechRp300Accessories: Product[] = [
     ],
     "compatibleAccessories": [],
     "relatedProducts": [
-      "unitech-rp300"
+      "unitech-rp300",
+      "unitech-ea530",
+      "unitech-ea530-uhf"
     ],
     "downloads": [
       {
@@ -443,7 +446,7 @@ export const unitechRp300Accessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-29"
   },
   {
     "id": "unitech-przewod-sieciowy-eu-c5",
