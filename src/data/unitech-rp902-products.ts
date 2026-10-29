@@ -219,18 +219,18 @@ export const unitechRp902Accessories: Product[] = [
     "compatibleAccessories": [],
     "id": "unitech-rp902-zasilacz",
     "slug": "unitech-rp902-zasilacz",
-    "name": "Zasilacz Unitech RP902 — 5 V / 2 A",
-    "seoH1": "Zasilacz Unitech RP902 — 5 V / 2 A",
+    "name": "Zasilacz Unitech RP902, skanerów MS i WD200 Plus — 5 V / 2 A",
+    "seoH1": "Zasilacz Unitech RP902, skanerów MS i WD200 Plus — 5 V / 2 A",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali"
     ],
     "priceFrom": 87.35,
     "availability": "available",
-    "seoTitle": "Zasilacz Unitech RP902 — 5 V / 2 A — 1010-900067G | TAKMA",
-    "seoDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902. Sprawdź cenę i stan. Przewód osobno.",
-    "shortDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902. Sprawdź cenę i stan. Przewód osobno.",
-    "description": "Zasilacz 1010-900067G zasila wyposażenie do ładowania [Unitech RP902](/produkt/unitech-rp902). Ma wyjście USB-A o napięciu 5 V i prądzie 2 A.\n\nZestaw zawiera wymienne wtyczki EU, UK, US i AU. [Przewód USB-A do USB-C](/produkt/unitech-rp902-przewod-usb-c) jest osobnym akcesorium.",
+    "seoTitle": "Zasilacz Unitech RP902, MS852B, MS652 Plus i WD200 Plus — 1010-900067G | TAKMA",
+    "seoDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, skanerów Unitech MS852B, MS852P, MS652 Plus, MS912 Plus oraz WD200 Plus. Sprawdź cenę i stan. Przewód osobno.",
+    "shortDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, skanerów Unitech MS i WD200 Plus. Sprawdź cenę i stan. Przewód osobno.",
+    "description": "Zasilacz 1010-900067G zasila wyposażenie do ładowania [Unitech RP902](/produkt/unitech-rp902). Ma wyjście USB-A o napięciu 5 V i prądzie 2 A.\n\nZestaw zawiera wymienne wtyczki EU, UK, US i AU. [Przewód USB-A do USB-C](/produkt/unitech-rp902-przewod-usb-c) jest osobnym akcesorium.\n\nTen zasilacz jest też na liście akcesoriów skanerów bezprzewodowych [MS852B](/produkt/unitech-ms852b), [MS852B Plus](/produkt/unitech-ms852b-plus), [MS852B LR](/produkt/unitech-ms852b-lr), [MS852P](/produkt/unitech-ms852p), [MS652 Plus](/produkt/unitech-ms652-plus), [MS912 Plus](/produkt/unitech-ms912-plus) i [MS912 Plus 2D](/produkt/unitech-ms912-plus-2d), a także wersji ESD [MS852B Plus ESD](/produkt/unitech-ms852b-plus-esd) i [MS851B ESD](/produkt/unitech-ms851b-esd) oraz komputera noszonego [WD200 Plus](/produkt/unitech-wd200-plus).",
     "images": [
       "/images/products/unitech-rp902-psu-v1.webp"
     ],
@@ -244,7 +244,7 @@ export const unitechRp902Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP902"
+        "value": "Unitech RP902; skanery MS852B, MS852B Plus, MS852B LR, MS852P, MS852B Plus ESD, MS851B ESD, MS652 Plus, MS912 Plus, MS912 Plus 2D; komputer noszony WD200 Plus"
       },
       {
         "name": "Wyjście",
@@ -256,7 +256,12 @@ export const unitechRp902Accessories: Product[] = [
       }
     ],
     "relatedProducts": [
-      "unitech-rp902"
+      "unitech-rp902",
+      "unitech-ms852b",
+      "unitech-ms852b-plus",
+      "unitech-ms652-plus",
+      "unitech-ms912-plus-2d",
+      "unitech-wd200-plus"
     ],
     "downloads": []
   },
@@ -333,18 +338,18 @@ export const unitechRp902Accessories: Product[] = [
     "compatibleAccessories": [],
     "id": "unitech-rp902-przewod-usb-c",
     "slug": "unitech-rp902-przewod-usb-c",
-    "name": "Przewód USB-C Unitech RP902",
-    "seoH1": "Przewód USB-C Unitech RP902",
+    "name": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus",
+    "seoH1": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali"
     ],
     "priceFrom": 22.78,
     "availability": "unavailable",
-    "seoTitle": "Przewód USB-C Unitech RP902 — 1550-905919G | TAKMA",
-    "seoDescription": "Przewód Unitech 1550-905919G do RP902: USB-A do USB-C, USB 2.0. Część zamienna do zestawu czytnika. Sprawdź cenę i stan.",
-    "shortDescription": "Przewód Unitech 1550-905919G do RP902: USB-A do USB-C, USB 2.0. Część zamienna do zestawu czytnika. Sprawdź cenę i stan.",
-    "description": "Przewód 1550-905919G łączy port USB-C [Unitech RP902](/produkt/unitech-rp902) z portem USB-A. Obsługuje USB 2.0.\n\nMoże zastąpić przewód dołączony do zestawu czytnika. [Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) jest sprzedawany osobno.",
+    "seoTitle": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus — 1550-905919G | TAKMA",
+    "seoDescription": "Przewód Unitech 1550-905919G: USB-A do USB-C, USB 2.0. Do czytnika RP902, skanera Unitech MS633 i komputera noszonego WD200 Plus. Sprawdź cenę i stan.",
+    "shortDescription": "Przewód Unitech 1550-905919G: USB-A do USB-C, USB 2.0. Do RP902, skanera MS633 i WD200 Plus. Sprawdź cenę i stan.",
+    "description": "Przewód 1550-905919G łączy port USB-C [Unitech RP902](/produkt/unitech-rp902) z portem USB-A. Obsługuje USB 2.0.\n\nMoże zastąpić przewód dołączony do zestawu czytnika. [Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) jest sprzedawany osobno.\n\nPrzewód jest też na liście akcesoriów skanera pierścieniowego [Unitech MS633](/produkt/unitech-ms633) i komputera noszonego [Unitech WD200 Plus](/produkt/unitech-wd200-plus).",
     "images": [
       "/images/products/unitech-rp902-cable-v1.webp"
     ],
@@ -358,7 +363,7 @@ export const unitechRp902Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP902"
+        "value": "Unitech RP902, MS633, WD200 Plus"
       },
       {
         "name": "Złącza",
@@ -370,7 +375,9 @@ export const unitechRp902Accessories: Product[] = [
       }
     ],
     "relatedProducts": [
-      "unitech-rp902"
+      "unitech-rp902",
+      "unitech-ms633",
+      "unitech-wd200-plus"
     ],
     "downloads": []
   }

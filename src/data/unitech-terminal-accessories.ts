@@ -15,6 +15,7 @@ const TAGI: Product['tags'] = ['retail', 'magazyn', 'logistyka']
 const KATALOG_EA660 = { name: 'Katalog akcesoriów Unitech EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-akcesoria-en.pdf', size: '1,6 MB' }
 const KATALOG_EA530 = { name: 'Katalog akcesoriów Unitech EA530 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea530-akcesoria-en.pdf', size: '1,8 MB' }
 const KATALOGI_EA = [KATALOG_EA660, KATALOG_EA530]
+const BROSZURA_WD200 = { name: 'Broszura akcesoriów Unitech WD200 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-wd200-plus-akcesoria-en.pdf', size: '783 KB' }
 const QSG_STACJA_1_LADUJACA = { name: 'Skrócona instrukcja stacji 1-gniazdowej do ładowania (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-ladujaca-skrocona-instrukcja-en.pdf', size: '967 KB' }
 const QSG_STACJA_1_USB_ETHERNET = { name: 'Skrócona instrukcja stacji 1-gniazdowych USB i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-1-gniazdo-usb-ethernet-skrocona-instrukcja-en.pdf', size: '808 KB' }
 const QSG_STACJA_5 = { name: 'Skrócona instrukcja stacji 5-gniazdowych do ładowania i Ethernet (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-stacja-5-gniazd-skrocona-instrukcja-en.pdf', size: '790 KB' }
@@ -39,14 +40,16 @@ const PRZEWOD_SIECIOWY_C13 = `**Wymagane — sprzedawane osobno**
 const zasilaczUsbC: Product = {
   id: 'unitech-ea-zasilacz-usb-c-eu',
   slug: 'unitech-ea-zasilacz-usb-c-eu',
-  name: 'Zasilacz Unitech EA660 i EA530, wtyczka EU (1010-900074G)',
-  seoH1: 'Zasilacz Unitech EA660 i EA530, wtyczka EU',
-  shortDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU do terminali EA660, EA530 i EA530 UHF: szybkie ładowanie przez przewód USB-C, zasila też stacje 1-gniazdowe.',
+  name: 'Zasilacz Unitech EA660, EA530 i WD200 Plus, wtyczka EU (1010-900074G)',
+  seoH1: 'Zasilacz Unitech EA660, EA530 i WD200 Plus, wtyczka EU',
+  shortDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU do terminali EA660, EA530, EA530 UHF i komputera noszonego WD200 Plus: ładowanie przez przewód USB-C, zasila też stacje 1-gniazdowe.',
   seoTitle: 'Zasilacz Unitech 1010-900074G do EA660, EA530 i EA530 UHF',
-  seoDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU i szybkim ładowaniem do terminali mobilnych Unitech EA660, EA530 oraz EA530 UHF i do stacji 1-gniazdowych. Zasilacz do terminala Unitech EA660, zasilacz Unitech EA530. PN: 1010-900074G.',
+  seoDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU i szybkim ładowaniem do terminali mobilnych Unitech EA660, EA530 oraz EA530 UHF, komputera noszonego Unitech WD200 Plus i do stacji 1-gniazdowych. Zasilacz do terminala Unitech EA660, zasilacz Unitech EA530, zasilacz WD200 Plus. PN: 1010-900074G.',
   description: `Zasilacz 1010-900074G ma wtyczkę europejską i szybkie ładowanie Quick Charge. Terminal podłącza się do niego przewodem USB-C. W opakowaniu [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) są bateria, przewód USB-C i skrócona instrukcja. Zasilacza w nich nie ma.
 
-Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.`,
+Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.
+
+Zasilacza nie ma też w pudełku komputera noszonego [Unitech WD200 Plus](/produkt/unitech-wd200-plus). Zasilacz 1010-900074G w wersji EU jest wskazany jako zasilacz do tego urządzenia i łączy się z nim przewodem USB-C.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -61,15 +64,15 @@ Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/
     { name: 'Part Number', value: '1010-900074G' },
     { name: 'Typ', value: 'Zasilacz sieciowy z szybkim ładowaniem' },
     { name: 'Wtyczka', value: 'EU' },
-    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF' },
-    { name: 'Połączenie z terminalem', value: 'Przewód USB-C (1550-905908G)' },
+    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF, WD200 Plus' },
+    { name: 'Połączenie z terminalem', value: 'Przewód USB-C (1550-905908G); WD200 Plus: przewód USB-C z zestawu terminala' },
     { name: 'Stacje', value: '1-gniazdowe: 5000-900129G, 5000-900130G, 5000-900131G' },
   ],
   applications: ['Ładowanie terminala przy stanowisku pracy'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ea-przewod-usb-c', 'unitech-ea-stacja-1-slot', 'unitech-ea-stacja-1-slot-usb', 'unitech-ea-stacja-1-slot-ethernet'],
-  downloads: KATALOGI_EA,
-  relatedProducts: TERMINALE_EA,
+  downloads: [...KATALOGI_EA, BROSZURA_WD200],
+  relatedProducts: [...TERMINALE_EA, 'unitech-wd200-plus'],
   createdAt: '2026-10-29',
 }
 
@@ -478,7 +481,7 @@ const przewodZasilajacyEu: Product = {
   shortDescription: 'Przewód Unitech 1550-602333G ze wtykiem Schuko i złączem IEC C13; łączy z gniazdkiem zasilacze stacji 5-gniazdowych, dokującej i ładowarek.',
   seoTitle: 'Przewód zasilający EU Unitech 1550-602333G, złącze C13',
   seoDescription: 'Przewód zasilający EU Unitech 1550-602333G z wtykiem Schuko i złączem IEC C13 do stacji i ładowarek terminali mobilnych Unitech EA660, EA530 i EA530 UHF. Przewód sieciowy Unitech EA660. PN: 1550-602333G.',
-  description: `Przewód 1550-602333G ma po jednej stronie europejski wtyk z uziemieniem Schuko, a po drugiej gniazdo IEC C13. Łączy z siecią zasilacz [stacji 5-gniazdowych](/produkt/unitech-ea-stacja-5-slot), [stacji 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4), [ładowarek 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) i [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca). Te urządzenia mają zasilacz w zestawie, a przewodu nie.
+  description: `Przewód 1550-602333G ma po jednej stronie europejski wtyk z uziemieniem Schuko, a po drugiej gniazdo IEC C13. Łączy z siecią zasilacz [stacji 5-gniazdowych](/produkt/unitech-ea-stacja-5-slot), [stacji 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4), [ładowarek 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) i [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca). Te urządzenia mają zasilacz w zestawie, a przewodu nie. Przewód jest potrzebny także do [stacji 4-gniazdowej komputera WD200 Plus](/produkt/unitech-wd200-stacja-4-slot), której zasilacz 5 V / 6 A też nie ma przewodu sieciowego.
 
 Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; ten numer to wersja EU. Przewód [1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) ma złącze C5 i należy do zasilacza czytnika RP300, więc do stacji EA nie pasuje.`,
   categoryId: 'akcesoria',
@@ -496,13 +499,13 @@ Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; t
     { name: 'Typ', value: 'Przewód sieciowy, 3 piny' },
     { name: 'Wtyk', value: 'EU, Schuko' },
     { name: 'Złącze', value: 'IEC C13' },
-    { name: 'Zgodność', value: 'Stacje 5000-900132G, 5000-900134G, 5000-900133G, 5000-900142G; ładowarki baterii 5100-900037G, 5100-900042G' },
+    { name: 'Zgodność', value: 'Stacje 5000-900132G, 5000-900134G, 5000-900133G, 5000-900142G, 5100-900030G (WD200 Plus); ładowarki baterii 5100-900037G, 5100-900042G' },
   ],
   applications: ['Podłączenie zasilacza stacji lub ładowarki do gniazdka'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ea-stacja-5-slot', 'unitech-ea-stacja-dokujaca', 'unitech-ea-zasilacz-12v-5a', 'unitech-przewod-sieciowy-eu-c5'],
+  relatedAccessories: ['unitech-ea-stacja-5-slot', 'unitech-ea-stacja-dokujaca', 'unitech-wd200-stacja-4-slot', 'unitech-ea-zasilacz-12v-5a', 'unitech-przewod-sieciowy-eu-c5'],
   downloads: KATALOGI_EA,
-  relatedProducts: TERMINALE_EA,
+  relatedProducts: [...TERMINALE_EA, 'unitech-wd200-plus'],
   createdAt: '2026-10-29',
 }
 
@@ -723,14 +726,16 @@ Cena dotyczy całego opakowania, nie pojedynczego szkła. Szkło do EA530 ma inn
 const smyczEa660: Product = {
   id: 'unitech-ea660-smycz',
   slug: 'unitech-ea660-smycz',
-  name: 'Smycz na nadgarstek Unitech EA660 (385892G)',
-  seoH1: 'Smycz na nadgarstek Unitech EA660',
-  shortDescription: 'Smycz na nadgarstek Unitech 385892G do terminala EA660 (Wrist Lanyard).',
-  seoTitle: 'Smycz na nadgarstek Unitech 385892G do EA660',
-  seoDescription: 'Smycz na nadgarstek Unitech 385892G (Wrist Lanyard) do terminala mobilnego Unitech EA660. Smycz do Unitech EA660. PN: 385892G.',
+  name: 'Smycz na nadgarstek Unitech EA660 i MS652 Plus (385892G)',
+  seoH1: 'Smycz na nadgarstek Unitech EA660 i MS652 Plus',
+  shortDescription: 'Smycz na nadgarstek Unitech 385892G (Wrist Lanyard) do terminala EA660 i skanera pierścieniowego MS652 Plus.',
+  seoTitle: 'Smycz na nadgarstek Unitech 385892G do EA660 i MS652 Plus',
+  seoDescription: 'Smycz na nadgarstek Unitech 385892G (Wrist Lanyard) do terminala mobilnego Unitech EA660 i skanera pierścieniowego Unitech MS652 Plus. Smycz do Unitech EA660, smycz do skanera MS652+. PN: 385892G.',
   description: `Smycz 385892G to pleciony pasek z pętlą do noszenia [Unitech EA660](/produkt/unitech-ea660) na nadgarstku. Nie jest paskiem na dłoń ze stałym ramieniem. Ten ma numer [5400-900052G](/produkt/unitech-ea-pasek-na-dlon).
 
-Uchwyt pistoletowy [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy) ma własny pasek na nadgarstek w opakowaniu.`,
+Uchwyt pistoletowy [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy) ma własny pasek na nadgarstek w opakowaniu.
+
+Smycz jest też na liście akcesoriów skanera pierścieniowego [Unitech MS652 Plus](/produkt/unitech-ms652-plus), którego obudowa ma otwór na smycz.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -743,14 +748,14 @@ Uchwyt pistoletowy [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy) ma 
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: '385892G' },
-    { name: 'Kompatybilność', value: 'Unitech EA660' },
+    { name: 'Kompatybilność', value: 'Unitech EA660, MS652 Plus' },
     { name: 'Typ', value: 'Smycz na nadgarstek (Wrist Lanyard)' },
   ],
   applications: ['Noszenie terminala na nadgarstku'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ea-pasek-na-dlon', 'unitech-ea660-uchwyt-pistoletowy'],
   downloads: [KATALOG_EA660],
-  relatedProducts: [EA660],
+  relatedProducts: [EA660, 'unitech-ms652-plus'],
   createdAt: '2026-10-29',
 }
 

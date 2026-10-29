@@ -6,16 +6,17 @@ export const wearableTerminalCategory: Subcategory = {
   "name": "Terminale naramienne",
   "parentCategoryId": "terminale-mobilne",
   "description": "Komputery z Androidem noszone na przedramieniu do pracy z wolnymi rękami w sklepie, magazynie i produkcji.",
-  "seoTitle": "Terminale naramienne Zebra WT5400 i WT6400 — komputery noszone na nadgarstku | TAKMA",
-  "seoDescription": "Terminal naramienny, czyli komputer noszony na nadgarstku z Androidem: Zebra WT5400 do sklepów i Zebra WT6400 do magazynu i mroźni. Terminal na rękę ze skanerem noszonym, mocowania, stacje i baterie.",
+  "seoTitle": "Terminale naramienne Zebra WT5400, WT6400 i Unitech WD200 Plus — komputery noszone na nadgarstku | TAKMA",
+  "seoDescription": "Terminal naramienny, czyli komputer noszony na nadgarstku z Androidem: Zebra WT5400 do sklepów, Zebra WT6400 do magazynu i mroźni oraz Unitech WD200 Plus do kompletacji. Terminal na rękę ze skanerem noszonym, mocowania, stacje i baterie.",
   "longDescription": "Terminal naramienny to komputer mobilny z Androidem noszony na przedramieniu w mocowaniu z paskiem. Ekran pozostaje w polu widzenia, a obie ręce są wolne do chwytania towaru. Takie terminale stosuje się przy kompletacji zamówień, przyjęciach, sortowaniu i uzupełnianiu półek w sklepach, magazynach i zakładach produkcyjnych. Kody odczytuje [skaner noszony na palcu lub dłoni](/skanery-kodow-kreskowych/pierscieniowe), połączony z terminalem przez Bluetooth albo przewodem. Mocowanie, ładowanie i skaner zamawia się osobno, razem z [akcesoriami do terminali](/akcesoria-do-terminali).",
   "icon": "smartphone",
   "productIds": [
     "zebra-wt6400",
     "zebra-wt5400",
-    "proglove-lana"
+    "proglove-lana",
+    "unitech-wd200-plus"
   ],
-  "productCount": 3
+  "productCount": 4
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
@@ -23,7 +24,7 @@ import type { SubcategoryRichContent } from './subcategory-content'
 export const wearableTerminalContent: SubcategoryRichContent = {
   updatedAt: '2026-10-24',
   comparisonTable: {
-    heading: 'Zebra WT5400 i WT6400 — porównanie',
+    heading: 'Zebra WT5400, WT6400 i Unitech WD200 Plus — porównanie',
     columns: ['Przeznaczenie', 'Ekran i klawiatura', 'Skanery', 'Złącza', 'Aparat', 'Temperatura pracy'],
     rows: [
       {
@@ -52,11 +53,24 @@ export const wearableTerminalContent: SubcategoryRichContent = {
           '−20 do 50 °C; z baterią rozszerzoną −30 do 50 °C',
         ],
       },
+      {
+        model: 'Unitech WD200 Plus',
+        href: '/produkt/unitech-wd200-plus',
+        role: 'Komputer noszony do kompletacji z wolnymi rękami.',
+        cells: [
+          'Magazyn, handel, logistyka, transport, place przeładunkowe',
+          'Ekran dotykowy 3,54 cala',
+          'Bluetooth: MS633, MS652 Plus, MS912 Plus 2D, MS926; aparat 16 MP odczytuje kody',
+          'USB-C (USB 2.0), styki POGO do stacji',
+          '16 MP z lampą',
+          '−20 do 50 °C',
+        ],
+      },
     ],
   },
   definition: {
     heading: 'Co to jest terminal naramienny?',
-    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa terminale Zebra i komputer ProGlove LANA. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba terminale Zebra nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). [ProGlove LANA](/produkt/proglove-lana) z ekranem 3,54 cala i masą 123 g nosi się na przedramieniu w mocowaniu Arm Mount albo w kieszeni, a kody odczytują połączone z nim przez Bluetooth skanery noszone ProGlove. Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
+    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa terminale Zebra, komputer Unitech WD200 Plus i komputer ProGlove LANA. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba terminale Zebra nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). [ProGlove LANA](/produkt/proglove-lana) z ekranem 3,54 cala i masą 123 g nosi się na przedramieniu w mocowaniu Arm Mount albo w kieszeni, a kody odczytują połączone z nim przez Bluetooth skanery noszone ProGlove. [Unitech WD200 Plus](/produkt/unitech-wd200-plus) ma ekran 3,54 cala i aparat 16 MP; nie ma wbudowanego skanera, więc kody czyta aparatem albo skanerem Unitech MS633, MS652 Plus, MS912 Plus 2D lub MS926. Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal naramienny?',

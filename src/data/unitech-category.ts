@@ -1,7 +1,7 @@
 import type { BrandCategoryRichContent } from './brand-category-content'
 
 export const unitechFaq = [
-  { question: 'Jakie terminale Unitech są w ofercie TAKMA?', answer: 'W ofercie są trzy modele z ekranem 6 cali i Androidem 15: EA660 z Wi-Fi 6E lub 5G, EA530 z Wi-Fi 6E lub 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Wszystkie mają certyfikat GMS, a EA660 także AER.' },
+  { question: 'Jakie terminale Unitech są w ofercie TAKMA?', answer: 'W ofercie są trzy modele z ekranem 6 cali i Androidem 15: EA660 z Wi-Fi 6E lub 5G, EA530 z Wi-Fi 6E lub 4G LTE oraz EA530 UHF z wbudowanym czytnikiem UHF RFID. Wszystkie mają certyfikat GMS, a EA660 także AER. Komputer noszony WD200 Plus jest w kategorii terminale naramienne.' },
   { question: 'Czy terminale Unitech mają zasilacz w zestawie?', answer: 'Nie. W zestawie są terminal, bateria, przewód USB-C i skrócona instrukcja. Zasilacz USB-C z szybkim ładowaniem sprzedajemy osobno. Terminal ładuje się do pełna w ciągu 4 godzin.' },
   { question: 'Który terminal Unitech ma wbudowany czytnik UHF RFID?', answer: 'EA530 UHF ma czytnik z układem Impinj E310 i odczytuje znaczniki z odległości do 1,8 m. Terminale EA530 i EA660 mają wbudowany tylko czytnik HF/NFC; czytnik UHF Unitech RP300 o zasięgu do 25 m dołącza się do nich przez adapter.' },
   { question: 'Które terminale Unitech mają 5G, a które 4G LTE?', answer: 'Modem 5G mają wersje EA660 oznaczone 5G. Modem 4G LTE ma EA530 w wersji 4G oraz EA530 UHF. Wersje tylko z Wi-Fi 6E nie mają modułu SIM ani GPS.' },
@@ -15,7 +15,7 @@ export const unitechCategory: BrandCategoryRichContent = {
   contactText: 'Podaj rodzaj kodów, sposób łączności i aplikację. Dobierzemy terminal Unitech, zasilanie oraz zgodne stacje, baterie i uchwyty.',
   definition: {
     heading: 'Terminale Unitech z Androidem 15: EA660, EA530 i EA530 UHF',
-    content: 'Terminal mobilny Unitech łączy odczyt kodów kreskowych z aplikacją firmy i komunikuje się z nią przez Wi-Fi albo sieć komórkową. Wszystkie modele w ofercie mają ekran dotykowy 6 cali, imager 2D, czytnik HF/NFC, Android 15 z certyfikatem GMS, Bluetooth 5.2 i Wi-Fi 6E. Mają dwa przyciski skanowania, wymienną baterię, złącze USB typu C z OTG i gniazdo microSD do 1 TB. Obudowa ma klasę IP65 i IP68 i wytrzymuje upadki z 1,5 m (1,8 m w etui). Unitech udostępnia narzędzia do zarządzania flotą: MoboLink, StageGO, OEMConfig i Enterprise Launcher; terminale współpracują też z SOTI i VMware. Dalej opisano tylko to, co odróżnia modele.',
+    content: 'Terminal mobilny Unitech łączy odczyt kodów kreskowych z aplikacją firmy i komunikuje się z nią przez Wi-Fi albo sieć komórkową. Terminale EA mają ekran dotykowy 6 cali, imager 2D, czytnik HF/NFC, Android 15 z certyfikatem GMS, Bluetooth 5.2 i Wi-Fi 6E. Mają dwa przyciski skanowania, wymienną baterię, złącze USB typu C z OTG i gniazdo microSD do 1 TB. Obudowa ma klasę IP65 i IP68 i wytrzymuje upadki z 1,5 m (1,8 m w etui). Unitech udostępnia narzędzia do zarządzania flotą: MoboLink, StageGO, OEMConfig i Enterprise Launcher; terminale współpracują też z SOTI i VMware. Dalej opisano tylko to, co odróżnia modele. Komputer noszony WD200 Plus z ekranem 3,54 cala jest opisany w kategorii [terminale naramienne](/terminale-naramienne).',
   },
   sectionHeadings: {
     technicalDeepDive: 'Porównanie terminali Unitech',
@@ -39,6 +39,7 @@ export const unitechCategory: BrandCategoryRichContent = {
     { name: 'Unitech EA660', href: '/produkt/unitech-ea660', role: 'Dotykowy, z opcją 5G', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali, 630 nitów' }, { label: 'Skaner', value: 'Standardowy lub dalekiego zasięgu (do 12 m)' }, { label: 'Sieć', value: 'Wi-Fi 6E, 5G' }], bestFor: 'Handel, gastronomia, logistyka i ochrona zdrowia; bateria 5000 mAh.' },
     { name: 'Unitech EA530', href: '/produkt/unitech-ea530', role: 'Dotykowy, lekki', priceFrom: '', specs: [{ label: 'Ekran', value: '6 cali HD+, 500 nitów' }, { label: 'Masa', value: '242 g' }, { label: 'Sieć', value: 'Wi-Fi 6E, 4G LTE' }], bestFor: 'Handel i logistyka; bateria 4250 mAh wymieniana bez wyłączania.' },
     { name: 'Unitech EA530 UHF', href: '/produkt/unitech-ea530-uhf', role: 'UHF RFID', priceFrom: '', specs: [{ label: 'RFID', value: 'UHF, Impinj E310' }, { label: 'Odczyt', value: 'Do 1,8 m' }, { label: 'Sieć', value: 'Wi-Fi 6E, 4G LTE' }], bestFor: 'Inwentaryzacja i śledzenie majątku ze znacznikami UHF.' },
+    { name: 'Unitech WD200 Plus', href: '/produkt/unitech-wd200-plus', role: 'Komputer noszony na nadgarstku', priceFrom: '', specs: [{ label: 'Ekran', value: '3,54 cala, 500 nitów' }, { label: 'Odczyt kodów', value: 'Aparat 16 MP lub skaner Bluetooth' }, { label: 'Sieć', value: 'Wi-Fi 6' }], bestFor: 'Kompletacja z wolnymi rękami; Android 13, IP68.' },
   ],
   useCases: [
     { title: 'Handel i gastronomia', description: 'EA660 i EA530 sprawdzają stany i obsługują klientów przy półce. EA660 przyjmuje też zamówienia klientów, jest przeznaczony także do gastronomii i hotelarstwa i ma ekran o jasności 630 nitów.' },
