@@ -35,6 +35,14 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
     const rows = await getProductStock(product.slug) ?? []
     return withLiveCatalogData(product, new Map(rows.map(row => [row.partNumber, row])))
   })) : baseProducts
+  const printerCategory = slug === 'drukarki-etykiet'
+  const gridProducts = printerCategory ? products.map(p => ({
+    id: p.id, name: p.name, slug: p.slug, images: p.images.slice(0, 1),
+    imageDescriptions: p.imageDescriptions?.slice(0, 1), manufacturerId: p.manufacturerId,
+    categoryId: p.categoryId, subcategoryIds: p.subcategoryIds, specifications: p.specifications,
+    variants: p.variants, priceFrom: p.priceFrom, quoteOnly: p.quoteOnly,
+    licenseDelivery: p.licenseDelivery, comingSoon: p.comingSoon, priceTiers: p.priceTiers, availability: p.availability,
+  })) : products
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
@@ -82,7 +90,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   }
   const hero = heroImages[slug]
 
-  const faqJsonLd = !receiptCategory && content?.faq?.length ? {
+  const faqJsonLd = !receiptCategory && !printerCategory && content?.faq?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: content.faq.map((f) => ({
@@ -120,14 +128,14 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
   const collectionJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    ...(receiptCategory ? { '@id': `https://www.takma.com.pl/${category.slug}#collection` } : {}),
+    ...((receiptCategory || printerCategory) ? { '@id': `https://www.takma.com.pl/${category.slug}#collection` } : {}),
     name: category.name,
     description: category.seoDescription,
     url: `https://www.takma.com.pl/${category.slug}`,
-    numberOfItems: products.length,
     dateModified: content?.updatedAt || '2026-02-22',
     mainEntity: {
       '@type': 'ItemList',
+      numberOfItems: products.length,
       itemListElement: products.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
@@ -136,7 +144,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
     },
   }
 
-  const speakableJsonLd = receiptCategory ? {
+  const speakableJsonLd = (receiptCategory || printerCategory) ? {
     '@context': 'https://schema.org', '@type': 'WebPage',
     '@id': `https://www.takma.com.pl/${category.slug}#webpage`,
     name: category.name, url: `https://www.takma.com.pl/${category.slug}`,
@@ -162,7 +170,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
     <>
             {/* Rich content sections */}
             {content && (
-              <div className="mt-12 space-y-10">
+              <div id={printerCategory ? "poradnik-drukarki" : undefined} className="mt-12 space-y-10 scroll-mt-32">
                 {content.modelComparison && (
                   <section aria-labelledby="model-comparison-heading">
                     <h2 id="model-comparison-heading" className="text-2xl font-bold text-gray-900 mb-4">
@@ -453,10 +461,29 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
           </p>
         </div>}
 
+        {printerCategory && (
+          <section aria-labelledby="printer-choice" className="mb-8 rounded-2xl border border-gray-200 bg-gray-50 p-5 lg:p-6">
+            <h2 id="printer-choice" className="text-xl font-semibold text-gray-900 mb-2">Jakiej drukarki etykiet szukasz?</h2>
+            <p className="text-sm text-gray-600 mb-4">Zacznij od zastosowania. Potem sprawdź format etykiety, obciążenie i zgodność z używanym programem.</p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { href: '/drukarki-etykiet-e-commerce', title: 'Przesyłki i e-commerce', text: 'Druk etykiet kurierskich. Sprawdź format szablonu przewoźnika.' },
+                { href: '/termotransferowe-drukarki-etykiet', title: 'Towary i trwałe oznaczenia', text: 'Druk z taśmą. Dobierz podłoże i barwnik do warunków użytkowania.' },
+                { href: '/przemyslowe-drukarki-etykiet', title: 'Produkcja i duże serie', text: 'Porównaj obciążenie, wielkość rolek i dostępne moduły.' },
+                { href: '/kolorowe-drukarki-etykiet', title: 'Kolorowe etykiety', text: 'Druk atramentowy. Sprawdź zgodność materiału z tuszem.' },
+              ].map(item => <Link key={item.href} href={item.href} className="rounded-xl border border-gray-200 bg-white p-4 hover:border-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">
+                <span className="block font-semibold text-primary-600 mb-1">{item.title} →</span>
+                <span className="text-sm text-gray-600">{item.text}</span>
+              </Link>)}
+            </div>
+            <a href="#poradnik-drukarki" className="inline-block mt-4 text-sm font-medium text-primary-600 underline">Technologie druku, materiały i odpowiedzi na pytania</a>
+          </section>
+        )}
+
         {/* Układ z filtrami (kategorie z konfiguracją w category-filters.ts): sidebar = nawigacja + checkboxy z licznikiem */}
         {filters ? (
           <FilterableProductGrid
-            products={products}
+            products={gridProducts}
             filters={filters}
             columns={3}
             useLivePrices={receiptCategory}

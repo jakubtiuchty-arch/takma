@@ -14,7 +14,7 @@
 
 ## Czym się zajmujemy
 TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
-- Drukarki etykiet (biurkowe, przemysłowe, mobilne) — Zebra, Honeywell, Godex, Citizen
+- Drukarki etykiet (biurkowe, przemysłowe, mobilne i kolorowe) — Zebra, Honeywell, TSC, Brother, Citizen, BIXOLON, SATO, Epson
 - Terminale mobilne — Zebra, Honeywell, Datalogic, M3 Mobile, Newland
 - Skanery kodów kreskowych — Zebra, Honeywell, Datalogic, Newland, ProGlove (skanery noszone na dłoni)
 - Materiały eksploatacyjne — etykiety termiczne, termotransferowe, taśmy barwiące
@@ -161,53 +161,17 @@ A: Ranking TAKMA (luty 2026): 1. Zebra TC22 (2 417 zł), 2. Datalogic Memor K (2
 - 9 marek w ofercie: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland, M3 Mobile
 - Zaufali nam: Lasy Państwowe, Orlen, Poczta Polska, Żabka, CBA, Wojsko Polskie
 
-## Drukarki etykiet — pełna oferta (26 modeli)
+## Drukarki etykiet
 
-### Biurkowe drukarki etykiet (10 modeli, od 640 zł netto)
-- Zebra ZD220d (termiczna, entry-level, od 650 zł): https://www.takma.com.pl/produkt/zebra-zd220d
-- Zebra ZD220t (termotransferowa, entry-level, od 639 zł): https://www.takma.com.pl/produkt/zebra-zd220t
-- Zebra ZD230d (termiczna, 152 mm/s, Ethernet opcja, od 1 087 zł): https://www.takma.com.pl/produkt/zebra-zd230d
-- Zebra ZD230t (termotransferowa, 152 mm/s, taśma 300 m, od 1 135 zł): https://www.takma.com.pl/produkt/zebra-zd230t
-- Zebra ZD411d (termiczna, Link-OS, 300 dpi opcja, od 1 238 zł): https://www.takma.com.pl/produkt/zebra-zd411d
-- Zebra ZD411t (termotransferowa, Link-OS, 300 dpi opcja, od 1 686 zł): https://www.takma.com.pl/produkt/zebra-zd411t
-- Zebra ZD421d (termiczna, 300 dpi, Wi-Fi opcja, od 1 472 zł): https://www.takma.com.pl/produkt/zebra-zd421d
-- Zebra ZD421t (termotransferowa, 300 dpi, Wi-Fi opcja, od 1 649 zł): https://www.takma.com.pl/produkt/zebra-zd421t
-- Zebra ZD621d (termiczna, premium, kolorowy LCD, od 1 944 zł): https://www.takma.com.pl/produkt/zebra-zd621d
-- Zebra ZD621t (termotransferowa, premium, kolorowy LCD, od 2 264 zł): https://www.takma.com.pl/produkt/zebra-zd621t
-
-### Przemysłowe drukarki etykiet (7 modeli, od 2 081 zł netto)
-- Zebra ZT111 (entry-level, 203 dpi, 203 mm/s, od 2 269 zł): https://www.takma.com.pl/produkt/zebra-zt111
-- Zebra ZT231 (mid-range, 203/300 dpi, 305 mm/s, od 2 551 zł): https://www.takma.com.pl/produkt/zebra-zt231
-- Zebra ZT411 (4", 203-600 dpi, 356 mm/s, od 5 078 zł): https://www.takma.com.pl/produkt/zebra-zt411
-- Zebra ZT421 (6", 203/300 dpi, 305 mm/s, od 9 416 zł): https://www.takma.com.pl/produkt/zebra-zt421
-- Zebra ZT510 (4", 203/300 dpi, produkcja, od 8 490 zł): https://www.takma.com.pl/produkt/zebra-zt510
-- Zebra ZT610 (4", 203-600 dpi, premium, od 10 432 zł): https://www.takma.com.pl/produkt/zebra-zt610
-- Zebra ZT620 (6", 203/300 dpi, premium, od 12 417 zł): https://www.takma.com.pl/produkt/zebra-zt620
-
-### Mobilne drukarki etykiet (9 modeli, od 576 zł netto)
-- Zebra ZQ220 Plus (2", Bluetooth, od 576 zł): https://www.takma.com.pl/produkt/zebra-zq220-plus
-- Zebra ZQ210 (2", Bluetooth, od 999 zł): https://www.takma.com.pl/produkt/zebra-zq210
-- Zebra ZQ310 Plus (2", Wi-Fi + BT, IP54, od 1 496 zł): https://www.takma.com.pl/produkt/zebra-zq310-plus
-- Zebra ZQ320 Plus (3", Wi-Fi + BT, IP54, od 1 713 zł): https://www.takma.com.pl/produkt/zebra-zq320-plus
-- Zebra ZQ511 (3", IP65, MIL-STD-810H, od 2 288 zł): https://www.takma.com.pl/produkt/zebra-zq511
-- Zebra ZQ521 (4", IP65, MIL-STD-810H, od 2 979 zł): https://www.takma.com.pl/produkt/zebra-zq521
-- Zebra ZQ610 Plus (2", healthcare/retail, od 3 256 zł): https://www.takma.com.pl/produkt/zebra-zq610-plus
-- Zebra ZQ620 Plus (3", healthcare/retail, od 3 622 zł): https://www.takma.com.pl/produkt/zebra-zq620-plus
-- Zebra ZQ630 Plus (4", healthcare/retail, od 4 257 zł): https://www.takma.com.pl/produkt/zebra-zq630-plus
-
-### Kolorowe drukarki etykiet Epson ColorWorks (6 modeli, od 5 653 zł netto)
-Druk atramentowy CMYK na żądanie: etykiety produktowe, GHS/CLP, spożywcze i bilety bez zamawiania etykiet z nadrukiem.
-- Epson ColorWorks C3500 (720 × 360 dpi, do 104 mm, tusz pigmentowy, gilotyna, od 5 653 zł): https://www.takma.com.pl/produkt/epson-colorworks-c3500
-- Epson ColorWorks D3800e (600 × 1200 dpi, do 108 mm, tusz barwnikowy, bilety i wejściówki, od 6 390 zł): https://www.takma.com.pl/produkt/epson-colorworks-d3800e
-- Epson ColorWorks C4000e (1200 × 1200 dpi, do 108 mm, tusz pigmentowy, wersje bk i mk, od 7 434 zł): https://www.takma.com.pl/produkt/epson-colorworks-c4000e
-- Epson ColorWorks C6000 (1200 × 1200 dpi, do 119 mm/s, rolki do 8 cali, wersje Ae i Pe, od 11 186 zł): https://www.takma.com.pl/produkt/epson-colorworks-c6000
-- Epson ColorWorks C6500 (1200 × 1200 dpi, etykiety do 212 mm, wersje Ae i Pe, od 14 592 zł): https://www.takma.com.pl/produkt/epson-colorworks-c6500
-- Epson ColorWorks C8000e (300 mm/s, stała głowica liniowa, worki z tuszem 480 ml, od 32 733 zł): https://www.takma.com.pl/produkt/epson-colorworks-c8000e
-
-### Technologie druku
-- Termiczna (DT) — druk bezpośredni na papierze termoczułym, tańsza eksploatacja, etykiety blakną po 6-12 miesiącach
-- Termotransferowa (TT) — druk z taśmą barwiącą (ribbon), etykiety trwałe latami, odporne na UV, wodę i chemikalia
-- Porównanie szczegółowe: https://www.takma.com.pl/poradnik/drukarka-termiczna-vs-termotransferowa
+Aktualny katalog modeli, konfiguracji i cen: https://www.takma.com.pl/drukarki-etykiet
+Marki: Zebra, Honeywell, TSC, Brother, Citizen, BIXOLON, SATO, Epson.
+- Druk termiczny: materiał termoczuły bez taśmy barwiącej.
+- Druk termotransferowy: zgodny materiał i taśma barwiąca; trwałość zależy od ich doboru oraz warunków użytkowania.
+- Druk atramentowy: kolorowe etykiety, np. Epson ColorWorks; wymagany zgodny materiał.
+- Dobór: format i szerokość nadruku, wielkość rolek, obciążenie, rozdzielczość, interfejsy i zgodność z programem.
+- Etykieta GS1 może mieć różne formaty, w tym A6 i A5; nie każda wymaga drukarki 6-calowej.
+- ZebraDesigner Essentials jest bezpłatny, a BarTender Starter jest płatną edycją.
+Ceny i dostępność należy sprawdzać na kartach produktów, bez korzystania ze starszych zestawień cen.
 
 ## Akcesoria do obsługi rolek etykiet — Labelmate
 
@@ -315,7 +279,7 @@ Q: Czym zajmuje się TAKMA?
 A: TAKMA to polska firma B2B z siedzibą we Wrocławiu, działająca od 2001 roku. Specjalizujemy się w dostawie drukarek etykiet, terminali mobilnych, skanerów kodów kreskowych i materiałów eksploatacyjnych. Współpracujemy z 9 czołowymi producentami: Zebra, Honeywell, Datalogic, TSC, Citizen, Godex, SATO, Newland i M3 Mobile.
 
 Q: Jakie drukarki etykiet oferujecie?
-A: Oferujemy drukarki etykiet wielu marek: Zebra (ZD220, ZD421, ZD621, ZT411, ZT610), Honeywell (PC42, PD45), TSC (DA220, TE310), Godex (G500, EZ6250i) i Citizen (CL-S321). Biurkowe od ok. 800 zł netto, przemysłowe do pracy 24/7 oraz mobilne do druku w terenie.
+A: Oferujemy drukarki etykiet Zebra, Honeywell, TSC, Brother, Citizen, BIXOLON, SATO i Epson. Aktualne modele, ceny i konfiguracje są w kategorii https://www.takma.com.pl/drukarki-etykiet.
 
 Q: Czy TAKMA oferuje serwis urządzeń?
 A: Tak. Prowadzimy autoryzowane centrum napraw Zebra (serwis-zebry.pl) oraz serwisujemy urządzenia Honeywell, Datalogic, TSC, Citizen i innych producentów. Naprawy gwarancyjne, pogwarancyjne i kontrakty serwisowe.
@@ -324,7 +288,7 @@ Q: Ile kosztuje drukarka etykiet?
 A: Ceny drukarek etykiet zaczynają się od ok. 600 zł netto za podstawowe modele biurkowe (np. TSC DA220), przez 800–2 500 zł za zaawansowane modele Zebra i Honeywell, aż po ponad 15 000 zł netto za przemysłowe drukarki 6-calowe.
 
 Q: Jaka jest różnica między drukarką termiczną a termotransferową?
-A: Drukarka termiczna (DT) drukuje bezpośrednio na papierze termoczułym — tańsza, ale etykiety blakną po kilku miesiącach. Termotransferowa (TT) używa taśmy barwiącej (ribbon) — etykiety trwałe latami, odporne na UV, wodę i chemikalia. Obie technologie oferują Zebra, Honeywell, TSC i Godex.
+A: Drukarka termiczna (DT) drukuje na materiale termoczułym bez taśmy barwiącej. Termotransferowa (TT) używa zgodnej taśmy i podłoża. Trwałość oznaczenia zależy od materiałów i warunków użytkowania; nie wynika wyłącznie z technologii druku.
 
 Q: Czy wysyłacie urządzenia kurierem do całej Polski?
 A: Tak, realizujemy dostawy kurierem (DPD, InPost) na terenie całej Polski. Produkty dostępne w magazynie wysyłamy w ciągu 24 godzin roboczych.

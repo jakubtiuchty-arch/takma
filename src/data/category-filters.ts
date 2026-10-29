@@ -613,6 +613,8 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'TSC', manufacturer: 'tsc' },
         { value: 'Citizen', manufacturer: 'citizen' },
         { value: 'Brother', manufacturer: 'brother' },
+        { value: 'Epson', manufacturer: 'epson' },
+        { value: 'SATO', manufacturer: 'sato' },
       ],
     },
     {
@@ -630,10 +632,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'technologia',
       label: 'Technologia druku',
-      description: 'Czym drukarka nanosi obraz.\n• Termiczna — bez taśmy, na papierze termicznym; etykiety krótkotrwałe: wysyłkowe, paragony, cenówki\n• Termotransferowa — z taśmą barwiącą; nadruk trwały: etykiety produktowe, magazynowe, na folii. Drukuje też termicznie',
+      description: 'Czym drukarka nanosi obraz.\n• Termiczna — bez taśmy, na papierze termicznym; etykiety krótkotrwałe: wysyłkowe, paragony, cenówki\n• Termotransferowa — z taśmą barwiącą; nadruk trwały: etykiety produktowe, magazynowe, na folii. Obsługę druku termicznego sprawdź w specyfikacji modelu',
       derived: [
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
+        { value: 'Atramentowa (kolorowa)', manufacturer: 'epson' },
       ],
     },
     {
