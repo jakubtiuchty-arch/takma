@@ -68585,6 +68585,7 @@ Zabezpieczenia obejmują uwierzytelnianie drukarki i hosta, szyfrowanie danych A
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
+    quoteOnly: true,
     priceFrom: 4312.23,
     images: ['/images/products/zc350_1.png', '/images/products/zc350_2.png', '/images/products/zc350_3.png'],
     imageDescriptions: [
@@ -71635,6 +71636,7 @@ ZC350 przyjmuje wyłącznie taśmy serii 800350. Kasety 800300 od ZC100 i ZC300 
     categoryId: 'drukarki-kart',
     subcategoryIds: [],
     manufacturerId: 'zebra',
+    quoteOnly: true,
     priceFrom: 5710,
     bundleItems: [
       { productId: 'zebra-zc350', quantity: 1, variantPn: 'ZC36-000C000EM00', note: 'Dwustronna drukarka kart, 300 dpi, USB i Ethernet, kolorowy wyświetlacz, 225 kart na godzinę w kolorze' },

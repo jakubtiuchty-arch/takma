@@ -450,7 +450,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie' && !p!.subcategoryIds?.includes('nawijarki-do-etykiet') && !p!.subcategoryIds?.includes('dyspensery-etykiet'))
 
   // Zestaw startowy: karta drukarki pokazuje boks zestawu, którego jest składnikiem (tylko urządzenia, nie taśmy/karty)
-  const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems
+  const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems && !naZapytanie
     ? products.find((p) => p.bundleItems?.some((i) => i.productId === product.id))
     : undefined
   // Ceny na żywo zestawu i składników — baner „zamiast X zł” i sekcja „Co jest w zestawie” z tego samego źródła co SmartPrice
