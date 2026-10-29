@@ -62,7 +62,7 @@ export function BundleContents({ bundle, livePrices }: { bundle: Product; livePr
       <div className="flex items-baseline justify-between gap-3 flex-wrap mb-4">
         <h2 className="text-2xl font-bold text-gray-900">Co jest w zestawie</h2>
         <p className="text-sm text-gray-500">
-          {bundle.bundleFactory ? 'Jeden numer katalogowy, jedno pudełko od producenta.' : 'Trzy pozycje, jedna cena, jedna przesyłka.'}
+          {bundle.quoteOnly ? 'Konfiguracja i wycena zestawu na zapytanie.' : bundle.bundleFactory ? 'Jeden numer katalogowy, jedno pudełko od producenta.' : 'Trzy pozycje, jedna cena, jedna przesyłka.'}
         </p>
       </div>
       <div className="grid gap-3 md:grid-cols-3">
@@ -78,7 +78,7 @@ export function BundleContents({ bundle, livePrices }: { bundle: Product; livePr
               <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-gray-700">{etykietaIlosci(product, quantity)}</span>
             </div>
             <p className="mt-1 text-sm text-gray-600">{note ?? product.shortDescription}</p>
-            {price ? (
+            {price && !bundle.quoteOnly && !product.quoteOnly ? (
               <p className="mt-auto pt-3 text-sm text-gray-500">
                 <span className="font-medium text-gray-900 tabular-nums">{fmt(price * quantity)} zł</span> netto
               </p>
@@ -92,7 +92,7 @@ export function BundleContents({ bundle, livePrices }: { bundle: Product; livePr
           {bundle.bundleExtras.join(' · ')}
         </p>
       ) : null}
-      {bundlePrice ? (
+      {bundlePrice && !bundle.quoteOnly ? (
         <div className="mt-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 sm:px-6 grid gap-4 sm:grid-cols-3 sm:items-center">
           <div>
             <p className="text-xs uppercase tracking-wide text-gray-500">{bundle.bundleFactory ? 'Kupione osobno' : 'Suma osobno'}</p>

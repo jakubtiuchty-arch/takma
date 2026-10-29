@@ -71625,8 +71625,8 @@ W komplecie nie ma kodera paska magnetycznego ani RFID; wersje z kodowaniem są 
     name: 'Zestaw startowy Zebra ZC350: drukarka dwustronna, taśma YMCKOK i 500 kart',
     shortDescription: 'Dwustronna drukarka kart Zebra ZC350, taśma YMCKOK na 200 kart zadrukowanych z obu stron i opakowanie 500 kart PVC Zebra Premier. Komplet do druku identyfikatorów w dniu dostawy.',
     seoTitle: 'Zestaw startowy Zebra ZC350 — drukarka, taśma i 500 kart',
-    seoDescription: 'Zebra ZC350 dwustronna z taśmą YMCKOK 800350-360EM i 500 kartami PVC Zebra Premier. Komplet tańszy niż trzy pozycje kupione osobno, jedna przesyłka.',
-    description: `Zebra nie sprzedaje ZC350 w wersji QuikCard, więc komplet składamy sami: dwustronna ZC350 (ZC36-000C000EM00), taśma kolorowa YMCKOK 800350-360EM i opakowanie 500 białych kart PVC Zebra Premier. Wszystko w jednej przesyłce i jednej cenie, niższej niż trzy pozycje kupione osobno.
+    seoDescription: 'Zebra ZC350 dwustronna z taśmą YMCKOK 800350-360EM i 500 kartami PVC Zebra Premier. Konfiguracja i wycena zestawu do projektu na zapytanie.',
+    description: `Zebra nie sprzedaje ZC350 w wersji QuikCard, więc komplet składamy sami: dwustronna ZC350 (ZC36-000C000EM00), taśma kolorowa YMCKOK 800350-360EM i opakowanie 500 białych kart PVC Zebra Premier. Konfigurację i cenę zestawu ustalamy indywidualnie dla projektu.
 
 ZC350 to najwyższy model serii ZC. Poza drukiem do 225 kart na godzinę w kolorze ma uwierzytelnianie drukarki i hosta, szyfrowanie danych, gniazdo Kensington i przyjmuje taśmy z zabezpieczeniami: YMCKLL z podwójną warstwą ochronną, YMCPKO z panelem perłowym i SrDYMCKO z panelem metalicznym. Do tego kodery — pasek magnetyczny, MIFARE, karta stykowa i RFID UHF — dokładane fabrycznie przy zamówieniu drukarki.
 
