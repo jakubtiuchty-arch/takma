@@ -900,6 +900,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'M3 Mobile', manufacturer: 'm3-mobile' },
         { value: 'ProGlove', manufacturer: 'proglove' },
         { value: 'Socket Mobile', manufacturer: 'socket-mobile' },
+        { value: 'Unitech', manufacturer: 'unitech' },
       ],
     },
     {
@@ -939,10 +940,11 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'upadki',
       label: 'Odporność na upadki',
-      description: 'Z jakiej wysokości skaner wytrzymuje upadek na beton.\n• do 1,5 m — kasa, biuro\n• 1,8 m — sklep, lekki magazyn\n• 2,4–3 m — wersje przemysłowe: magazyn, produkcja, rampa',
+      description: 'Z jakiej wysokości skaner wytrzymuje upadek na beton.\n• do 1,5 m — kasa, biuro\n• 1,8 m — sklep, lekki magazyn\n• 2,0–2,2 m — magazyn, produkcja\n• 2,4–3 m — wersje przemysłowe: magazyn, produkcja, rampa',
       derived: [
         { value: 'do 1,5 m', pattern: '(^|[^0-9,.])1[,.][0-5][0-9]? ?m', specs: ['Odporność na upadki', 'Upadki'] },
         { value: '1,8 m', pattern: '1[,.]8 ?m', specs: ['Odporność na upadki', 'Upadki'] },
+        { value: '2,0–2,2 m', pattern: '(^|[^0-9,.])2[,.][0-2][0-9]? ?m', specs: ['Odporność na upadki', 'Upadki'] },
         { value: '2,4–3 m (przemysłowe)', pattern: '(^|[^0-9,.])(2[,.][4-9]|3([,.]0)?) ?m', specs: ['Odporność na upadki', 'Upadki'] },
       ],
     },
@@ -1457,7 +1459,7 @@ for (const brand of ['terminale-mobilne-zebra', 'terminale-newland', 'terminale-
   categoryFilters[brand] = categoryFilters['terminale-mobilne']
 }
 // Skanery: strony marek i podkategorie dostają ten sam zestaw — grupy z jedną wartością (Producent, Rodzaj) chowają się same
-for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-proglove', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/ladowe', 'skanery-kodow-kreskowych/pierscieniowe']) {
+for (const page of ['skanery-kodow-kreskowych-zebra', 'skanery-honeywell', 'skanery-datalogic', 'skanery-kodow-kreskowych-newland', 'skanery-proglove', 'skanery-unitech', 'skanery-kodow-kreskowych/przewodowe', 'skanery-kodow-kreskowych/bezprzewodowe', 'skanery-kodow-kreskowych/prezentacyjne', 'skanery-kodow-kreskowych/ladowe', 'skanery-kodow-kreskowych/pierscieniowe']) {
   categoryFilters[page] = categoryFilters['skanery-kodow-kreskowych']
 }
 // Skanery ladowe: Szczelność i Interfejs mają dane tylko dla części z 9 modeli, więc tu ich nie ma

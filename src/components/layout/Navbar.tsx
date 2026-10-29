@@ -129,6 +129,7 @@ const navigation: NavItem[] = [
       { name: 'Skanery Datalogic', href: '/skanery-datalogic', group: 'brand' },
       { name: 'Skanery Newland', href: '/skanery-kodow-kreskowych-newland', group: 'brand' },
       { name: 'Skanery ProGlove', href: '/skanery-proglove', group: 'brand' },
+      { name: 'Skanery Unitech', href: '/skanery-unitech', group: 'brand' },
       { name: 'Skanery przewodowe', href: '/skanery-kodow-kreskowych/przewodowe' },
       { name: 'Skanery bezprzewodowe', href: '/skanery-kodow-kreskowych/bezprzewodowe' },
       { name: 'Skanery prezentacyjne', href: '/skanery-kodow-kreskowych/prezentacyjne' },

@@ -66,6 +66,10 @@ import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-prod
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
 import { unitechTabletAccessories } from './unitech-tablet-accessories'
+import { unitechScannerProducts } from './unitech-scanner-products'
+import { unitechScannerAccessories } from './unitech-scanner-accessories'
+import { unitechWirelessScannerProducts } from './unitech-wireless-scanner-products'
+import { unitechWirelessScannerAccessories } from './unitech-wireless-scanner-accessories'
 import { getacLaptopProducts, getacLaptopAccessories } from './getac-laptop-products'
 import { rfidTerminalProducts, rfidTerminalAccessories } from './rfid-terminal-products'
 import { rfidTerminalCategory } from './rfid-terminal-category'
@@ -392,7 +396,7 @@ export const categories: Category[] = [
     description: 'Profesjonalne skanery i czytniki kodów kreskowych 1D i 2D — przewodowe, bezprzewodowe i prezentacyjne. Zebra, Datalogic i inne marki.',
     seoTitle: 'Skanery i czytniki kodów kreskowych — przewodowe, bezprzewodowe, prezentacyjne',
     seoDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D od 181 zł netto — Zebra, Honeywell, Newland, Datalogic. Przewodowe, bezprzewodowe i prezentacyjne do kas, aptek, magazynów i produkcji. Dobór modelu, konfiguracja i serwis.',
-    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D kilku producentów — przewodowe (USB), bezprzewodowe (Bluetooth), prezentacyjne (hands-free) oraz noszone na dłoni. Do kasy i apteki wystarczy imager 2D, do magazynu wysokiego składowania potrzebny jest zasięg powyżej 10 metrów, a na produkcji — odczyt kodów DPM wybijanych w metalu. Modele konkretnych marek zebraliśmy osobno: [skanery Zebra](/skanery-kodow-kreskowych-zebra), [Honeywell](/skanery-honeywell), [Newland](/skanery-kodow-kreskowych-newland) i [ProGlove](/skanery-proglove). Dobór modelu do stanowiska, konfiguracja symbologii i serwis w Polsce.',
+    longDescription: 'Profesjonalne skanery i czytniki kodów kreskowych 1D/2D kilku producentów — przewodowe (USB), bezprzewodowe (Bluetooth), prezentacyjne (hands-free) oraz noszone na dłoni. Do kasy i apteki wystarczy imager 2D, do magazynu wysokiego składowania potrzebny jest zasięg powyżej 10 metrów, a na produkcji — odczyt kodów DPM wybijanych w metalu. Modele konkretnych marek zebraliśmy osobno: [skanery Zebra](/skanery-kodow-kreskowych-zebra), [Honeywell](/skanery-honeywell), [Newland](/skanery-kodow-kreskowych-newland), [ProGlove](/skanery-proglove) i [Unitech](/skanery-unitech). Dobór modelu do stanowiska, konfiguracja symbologii i serwis w Polsce.',
     icon: 'scan',
     productCount: 32,
   },
@@ -95397,6 +95401,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Skanery Unitech (przewodowe, bezprzewodowe, noszone i kieszonkowe) oraz ich akcesoria trafiają do podkategorii według `subcategoryIds`, tak jak ProGlove.
+for (const subcategory of subcategories) {
+  const additions = [...unitechScannerProducts, ...unitechScannerAccessories, ...unitechWirelessScannerProducts, ...unitechWirelessScannerAccessories].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Skaner noszony Zebra RS2100 i jego akcesoria trafiają do podkategorii według `subcategoryIds`, tak jak ProGlove.
 for (const subcategory of subcategories) {
   const additions = [...zebraRs2100Products, ...zebraRs2100Accessories].filter(product => product.subcategoryIds?.includes(subcategory.id))
@@ -95500,6 +95513,10 @@ const rawProductList: Product[] = [
   ...bluebirdTabletAccessories,
   ...unitechTabletProducts,
   ...unitechTabletAccessories,
+  ...unitechScannerProducts,
+  ...unitechScannerAccessories,
+  ...unitechWirelessScannerProducts,
+  ...unitechWirelessScannerAccessories,
   ...getacLaptopProducts,
   ...getacLaptopAccessories,
   ...rfidLabelProducts,
@@ -96158,6 +96175,18 @@ export const brandCategories: BrandCategory[] = [
   "seoDescription": "Skanery kodów ProGlove noszone na dłoni od {cenaOd} zł netto: LEO, MARK Basic, MARK 2, MARK 3, MARK Display i MAI z ekranem. Mocowania, stacje i Gateway.",
   "longDescription": "Skanery ProGlove to czytniki kodów kreskowych 1D i 2D noszone na grzbiecie dłoni. Skaner wpina się w mocowanie, a odczyt uruchamia spust w mocowaniu, więc obie ręce zostają wolne. Oferta obejmuje modele do odczytu z bliska, z zasięgiem do 6 m, z ekranem e-paper i z kolorowym ekranem dotykowym. Mocowania, stacje ładujące i bramki Gateway są w kategorii [akcesoria do skanerów](/akcesoria-do-skanerow).",
   "faq": progloveFaq
+},
+{
+  id: 'skanery-unitech',
+  slug: 'skanery-unitech',
+  manufacturerId: 'unitech',
+  categoryId: 'skanery-kodow-kreskowych',
+  name: 'Skanery kodów kreskowych Unitech',
+  seoTitle: 'Skanery Unitech — 1D, 2D, ESD i DPM, ceny od {cenaOd} zł',
+  seoDescription: 'Skanery kodów Unitech od {cenaOd} zł netto: MS852, MS852 Plus, MS852 LR do 21 m, wersje ESD i DPM, laserowe 1D i prezentacyjny TS100. Stany i akcesoria.',
+  longDescription: 'Skanery kodów kreskowych Unitech w ofercie TAKMA to ręczne czytniki 1D i 2D oraz skaner prezentacyjny TS100. Przewodowe modele serii MS85x obejmują MS852, MS852 Plus, MS852 LR dalekiego zasięgu oraz wersje ESD i DPM do stref chronionych przed wyładowaniami elektrostatycznymi. Ekonomiczne skanery do kas to MS838, MS282e, MS836 i MS250. Skanery sprzedajemy w wersjach europejskich z przewodem USB lub RS-232, zależnie od numeru PN.',
+  // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
+  faq: [],
 },
 {
   "id": "terminale-cipherlab",

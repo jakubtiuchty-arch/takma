@@ -22,7 +22,7 @@ export async function generateMetadata({ searchParams }: CatalogPageProps): Prom
       : manufacturer.id === 'bluebird'
         ? 'Produkty Bluebird — terminale mobilne, tablety i akcesoria'
         : manufacturer.id === 'unitech'
-          ? 'Produkty Unitech — terminale mobilne, tablety i akcesoria'
+          ? 'Produkty Unitech — terminale mobilne, skanery, tablety i akcesoria'
           : `Produkty ${manufacturer.name} — terminale mobilne i akcesoria`
     return {
       title,

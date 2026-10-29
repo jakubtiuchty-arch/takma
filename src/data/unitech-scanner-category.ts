@@ -1,0 +1,91 @@
+import type { BrandCategoryRichContent } from './brand-category-content'
+
+export const unitechScannerFaq = [
+  { question: 'Czym jest skaner ESD-safe i kiedy jest potrzebny?', answer: 'Skaner ESD-safe ma obudowę i przewód z tworzywa o rezystancji powierzchniowej 10⁵–10⁹ Ω/sq. Stosuje się go w strefach chronionych przed wyładowaniami elektrostatycznymi (EPA), w cleanroomach i w produkcji elektroniki. W ofercie są [MS852 Plus ESD](/produkt/unitech-ms852-plus-esd), [MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd) i [MS851 ESD](/produkt/unitech-ms851-esd). Odporność na wyładowania elektrostatyczne 8 kV i 15 kV mają wszystkie skanery serii MS85x, ale nie jest to wersja ESD-safe.' },
+  { question: 'Który skaner Unitech wybrać do kodów DPM?', answer: 'Kody grawerowane laserem, nabijane mikroudarem i drukowane atramentem na elementach czyta [Unitech MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd). Ma krzyżowy celownik laserowy, matrycę 1280 × 800 i pracuje z odległości kilku do kilkunastu centymetrów. Obudowa i przewód są w wersji ESD-safe.' },
+  { question: 'Który skaner Unitech czyta kody z największej odległości?', answer: '[Unitech MS852 LR](/produkt/unitech-ms852-lr) czyta kody z odległości od 7,6 cm do 21 m. Zasięg dotyczy odczytu ze spustem, a w trybach automatycznych jest ograniczony. Kody liniowe 1D z odległości do 4,5 m czyta [Unitech MS851 ESD](/produkt/unitech-ms851-esd).' },
+  { question: 'Czym różni się Unitech MS852 od MS852 Plus?', answer: '[MS852](/produkt/unitech-ms852) ma matrycę 1280 × 960 z migawką rolling shutter, waży 147 g i odczytuje OCR. [MS852 Plus](/produkt/unitech-ms852-plus) ma matrycę 1280 × 800 z migawką global shutter, toleruje ruch, czyta DotCode i Digimarc, waży 165 g i jest w wersjach standardowej oraz High Density.' },
+  { question: 'Czy skanery MS852 i MS852 Plus przełączają tryb pracy w podstawce?', answer: 'Nie. Wersje europejskie z końcówką PN SG i LG nie mają automatycznego przełączania trybu po włożeniu do podstawki. Tryb prezentacyjny włącza się kodem konfiguracyjnym z instrukcji obsługi, a [podstawka 5200-900009G](/produkt/unitech-ms85x-podstawka) utrzymuje skaner na blacie.' },
+  { question: 'Jak podłączyć i skonfigurować skaner Unitech?', answer: 'Skanery z interfejsem USB łączą się z komputerem lub kasą przez przewód USB. Drugi znak w numerze PN oznacza interfejs: U to USB, a R to RS-232. Parametry odczytu, tryb pracy i format danych ustawia się kodami konfiguracyjnymi z instrukcji obsługi. Instrukcje są w plikach do pobrania na kartach produktów.' },
+  { question: 'Jaka jest gwarancja na skanery Unitech?', answer: 'Skanery serii MS85x i MS282e mają 60 miesięcy gwarancji producenta, MS250 ma 24 miesiące, a MS838, MS836 i TS100 15 miesięcy.' },
+]
+
+export const unitechScannerCategory: BrandCategoryRichContent = {
+  updatedAt: '2026-10-30',
+  contactText: 'Podaj rodzaj kodów, odległość odczytu i środowisko pracy. Dobierzemy skaner Unitech, interfejs, podstawkę i przewód.',
+  definition: {
+    heading: 'Skanery kodów kreskowych Unitech: przewodowe, ESD-safe, DPM i prezentacyjne',
+    content: 'Unitech to tajwański producent ręcznych skanerów kodów kreskowych 1D i 2D oraz skanerów prezentacyjnych. W ofercie TAKMA są skanery przewodowe i bezprzewodowe, wersje ESD-safe do stref chronionych przed wyładowaniami elektrostatycznymi, skaner do kodów DPM, skaner dalekiego zasięgu oraz skaner prezentacyjny do blatu kasy.\n\nNajwiększa jest rodzina MS85x z wspólną obudową: [MS852](/produkt/unitech-ms852), [MS852 Plus](/produkt/unitech-ms852-plus), [MS852 LR](/produkt/unitech-ms852-lr), [MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd), [MS852 Plus ESD](/produkt/unitech-ms852-plus-esd) i [MS851 ESD](/produkt/unitech-ms851-esd). Skanery do kas to [MS838](/produkt/unitech-ms838), [MS282e](/produkt/unitech-ms282e), [MS836](/produkt/unitech-ms836) i [MS250](/produkt/unitech-ms250), a skaner prezentacyjny to [TS100](/produkt/unitech-ts100).\n\nCechy wspólne rodziny opisano poniżej, a na kartach produktów są tylko to, co odróżnia dany model.',
+  },
+  sectionHeadings: {
+    technicalDeepDive: 'Porównanie skanerów Unitech',
+    expertAuthority: 'Dobór skanera i wyposażenia w TAKMA',
+    useCases: 'Który skaner Unitech do danego zadania?',
+    comparisons: 'Różnice, które rozstrzygają wybór',
+  },
+  buyingGuide: {
+    heading: 'Jak wybrać skaner Unitech?',
+    items: [
+      'Rodzaj kodów — kody 2D, QR i z ekranów czytają imagery (MS852, MS838, MS282e, TS100), a kody liniowe 1D lasery [MS851 ESD](/produkt/unitech-ms851-esd) i [MS836](/produkt/unitech-ms836) oraz skaner CCD [MS250](/produkt/unitech-ms250).',
+      'Odległość — do kilkudziesięciu centymetrów wystarcza MS852 lub MS852 Plus, a do 21 m służy [MS852 LR](/produkt/unitech-ms852-lr). Skaner kontaktowy MS250 czyta do 90 mm.',
+      'Środowisko — w strefach EPA i cleanroomach potrzebna jest wersja ESD-safe. Kody DPM wymagają [MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd).',
+      'Stanowisko — skaner prezentacyjny [TS100](/produkt/unitech-ts100) stoi na blacie, a skanery ręczne można ustawić w podstawce.',
+      'Interfejs — oferowane wersje mają USB, a MS838 także RS-232. Drugi znak numeru PN oznacza interfejs.',
+    ],
+  },
+  expertAuthority: 'Pomożemy dobrać skaner Unitech do kodów, odległości odczytu i środowiska pracy. Sprawdzimy zgodność podstawek, przewodów i etui z wybranym modelem. Terminale mobilne tej marki są na stronie [terminale Unitech](/terminale-unitech), a skanery innych producentów w kategorii [skanery kodów kreskowych](/skanery-kodow-kreskowych).',
+  technicalDeepDive: 'Zestawienie obejmuje oferowane modele. Szczegóły wersji i numery PN są na kartach produktów.',
+  modelTableLayout: 'tabela',
+  modelTable: [
+    { name: 'Unitech MS852', href: '/produkt/unitech-ms852', role: 'Przewodowy 2D, IP42', priceFrom: '', specs: [{ label: 'Matryca', value: '1280 × 960, rolling shutter' }, { label: 'Odczyt', value: 'OCR, kody z ekranów' }, { label: 'Masa', value: '147 g' }], bestFor: 'Kasy w handlu, hotelarstwie i administracji.' },
+    { name: 'Unitech MS852 Plus', href: '/produkt/unitech-ms852-plus', role: 'Przewodowy 2D, global shutter', priceFrom: '', specs: [{ label: 'Matryca', value: '1280 × 800, global shutter' }, { label: 'Odczyt', value: 'DotCode, Digimarc, OCR' }, { label: 'Wersje', value: 'Standardowa i High Density' }], bestFor: 'Bilety mobilne, kupony, logistyka i produkcja.' },
+    { name: 'Unitech MS852 LR', href: '/produkt/unitech-ms852-lr', role: 'Przewodowy 2D dalekiego zasięgu', priceFrom: '', specs: [{ label: 'Zasięg', value: '7,6 cm–21 m' }, { label: 'Praca', value: 'od −20°C' }, { label: 'Zestaw', value: 'Przewód USB i przewód Y' }], bestFor: 'Etykiety na paletach i wysokich regałach.' },
+    { name: 'Unitech MS852 DPM ESD', href: '/produkt/unitech-ms852-dpm-esd', role: 'Przewodowy 2D do DPM, ESD-safe', priceFrom: '', specs: [{ label: 'Kody', value: 'DPM: laser, mikroudar, atrament' }, { label: 'Celownik', value: 'Krzyżowy laser, 60 FPS' }, { label: 'Ochrona', value: 'Obudowa i przewód ESD' }], bestFor: 'Znakowanie części w produkcji i elektronice.' },
+    { name: 'Unitech MS852 Plus ESD', href: '/produkt/unitech-ms852-plus-esd', role: 'Przewodowy 2D, High Density, ESD-safe', priceFrom: '', specs: [{ label: 'Optyka', value: 'High Density, global shutter' }, { label: 'Odczyt', value: 'OCR, DotCode, Digimarc' }, { label: 'Ochrona', value: 'Obudowa i przewód ESD' }], bestFor: 'Cleanroomy i strefy EPA.' },
+    { name: 'Unitech MS851 ESD', href: '/produkt/unitech-ms851-esd', role: 'Przewodowy laser 1D, ESD-safe', priceFrom: '', specs: [{ label: 'Skanowanie', value: '104 skany/s' }, { label: 'Zasięg', value: 'do 4,57 m' }, { label: 'Tryby', value: 'Spust, impulsowy, migowy, ciągły' }], bestFor: 'Długie kody liniowe w strefach ESD.' },
+    { name: 'Unitech MS838', href: '/produkt/unitech-ms838', role: 'Przewodowy 2D, IP52', priceFrom: '', specs: [{ label: 'Interfejs', value: 'USB albo RS-232' }, { label: 'Tryby', value: 'Spust i prezentacyjny' }, { label: 'Masa', value: '245 g' }], bestFor: 'Sklepy, apteki i hotele; wersja z podstawką.' },
+    { name: 'Unitech MS282e', href: '/produkt/unitech-ms282e', role: 'Przewodowy 2D, smukła obudowa', priceFrom: '', specs: [{ label: 'Masa', value: '125 g' }, { label: 'Tryby', value: 'Ręczny i prezentacyjny' }, { label: 'Interfejs', value: 'USB' }], bestFor: 'Kasy, karty lojalnościowe i kupony mobilne.' },
+    { name: 'Unitech MS836', href: '/produkt/unitech-ms836', role: 'Przewodowy laser 1D, IP52', priceFrom: '', specs: [{ label: 'Skanowanie', value: '100 skanów/s' }, { label: 'Tryby', value: 'Spust, prezentacyjny, auto-sensing' }, { label: 'Odczyt', value: 'szerokość 220 mm' }], bestFor: 'Odczyt kodów liniowych 1D.' },
+    { name: 'Unitech MS250', href: '/produkt/unitech-ms250', role: 'Przewodowy kontaktowy CCD 1D', priceFrom: '', specs: [{ label: 'Odczyt', value: 'od zetknięcia do 90 mm' }, { label: 'Skanowanie', value: '200 skanów/s' }, { label: 'Masa', value: '83 g' }], bestFor: 'Kasy POS, dokumenty i kontrola zapasów.' },
+    { name: 'Unitech TS100', href: '/produkt/unitech-ts100', role: 'Prezentacyjny 2D', priceFrom: '', specs: [{ label: 'Okno odczytu', value: '50° × 35°' }, { label: 'Tryb', value: 'Auto-sensing, 60 fps' }, { label: 'Podstawa', value: 'Poziomo lub pochylenie 15°' }], bestFor: 'Blat kasy w handlu i hotelarstwie.' },
+    { name: 'Unitech MS852B', href: '/produkt/unitech-ms852b', role: 'Bezprzewodowy 2D, Bluetooth, stacja', priceFrom: '', specs: [{ label: 'Łączność', value: 'Bluetooth do 100 m' }, { label: 'Matryca', value: '1280 × 960, rolling shutter' }], bestFor: 'Handel, logistyka i magazyn bez przewodu.' },
+    { name: 'Unitech MS852B Plus', href: '/produkt/unitech-ms852b-plus', role: 'Bezprzewodowy 2D, global shutter', priceFrom: '', specs: [{ label: 'Łączność', value: 'Bluetooth do 100 m' }, { label: 'Odczyt', value: 'OCR, DotCode, Digimarc' }], bestFor: 'Logistyka, inwentaryzacja i produkcja.' },
+    { name: 'Unitech MS852B LR', href: '/produkt/unitech-ms852b-lr', role: 'Bezprzewodowy 2D dalekiego zasięgu', priceFrom: '', specs: [{ label: 'Zasięg', value: 'do 21 m' }, { label: 'Łączność', value: 'Bluetooth do 100 m' }], bestFor: 'Półki wysokiego składowania i place.' },
+    { name: 'Unitech MS852P', href: '/produkt/unitech-ms852p', role: 'Bezprzewodowy 2D, 2,4 GHz', priceFrom: '', specs: [{ label: 'Łączność', value: 'Radio 2,4 GHz z odbiornikiem USB, 10 m' }, { label: 'Odczyt', value: 'OCR-A i OCR-B' }], bestFor: 'Szpital, magazyn i produkcja.' },
+    { name: 'Unitech MS852B Plus ESD', href: '/produkt/unitech-ms852b-plus-esd', role: 'Bezprzewodowy 2D, High Density, ESD-safe', priceFrom: '', specs: [{ label: 'Łączność', value: 'Bluetooth do 100 m' }, { label: 'Ochrona', value: 'Obudowa i przewód ESD' }], bestFor: 'Cleanroomy i strefy EPA.' },
+    { name: 'Unitech MS851B ESD', href: '/produkt/unitech-ms851b-esd', role: 'Bezprzewodowy laser 1D, ESD-safe', priceFrom: '', specs: [{ label: 'Łączność', value: 'Bluetooth do 100 m' }, { label: 'Zasięg', value: 'kody do 4,57 m' }], bestFor: 'Długie kody liniowe w strefach ESD.' },
+    { name: 'Unitech MS822B', href: '/produkt/unitech-ms822b', role: 'Bezprzewodowy 2D, 2,4 GHz, Bluetooth i USB-C', priceFrom: '', specs: [{ label: 'Łączność', value: 'Stacja 2,4 GHz do 100 m, Bluetooth, USB-C' }, { label: 'Obudowa', value: 'IP52' }], bestFor: 'Kasa, inwentaryzacja i serwis w terenie.' },
+    { name: 'Unitech MS838B', href: '/produkt/unitech-ms838b', role: 'Bezprzewodowy 2D, 2,4 GHz i Bluetooth', priceFrom: '', specs: [{ label: 'Łączność', value: 'Odbiornik 2,4 GHz do 100 m, Bluetooth, USB-C' }, { label: 'Praca', value: 'do 16 h' }], bestFor: 'Sklepy, supermarkety i magazyny.' },
+    { name: 'Unitech MS836B', href: '/produkt/unitech-ms836b', role: 'Bezprzewodowy laser 1D, 2,4 GHz i Bluetooth', priceFrom: '', specs: [{ label: 'Łączność', value: 'Odbiornik 2,4 GHz do 100 m, Bluetooth, USB-C' }, { label: 'Praca', value: 'do 30 h' }], bestFor: 'Kasa i kontrola zapasów.' },
+    { name: 'Unitech MS633', href: '/produkt/unitech-ms633', role: 'Pierścieniowy 2D, Bluetooth', priceFrom: '', specs: [{ label: 'Masa', value: '56 g (wersja LR 67 g)' }, { label: 'Zasięg odczytu', value: 'wersja LR do 12 m' }], bestFor: 'Obie ręce wolne: handel, logistyka i magazyn.' },
+    { name: 'Unitech MS652 Plus', href: '/produkt/unitech-ms652-plus', role: 'Pierścieniowy 2D, Bluetooth i NFC', priceFrom: '', specs: [{ label: 'Łączność', value: 'Bluetooth do 100 m, NFC' }, { label: 'Masa', value: '95 g' }], bestFor: 'Handel, logistyka i serwis w terenie.' },
+    { name: 'Unitech MS626 Plus', href: '/produkt/unitech-ms626-plus', role: 'Pierścieniowy 2D, Bluetooth 5.0', priceFrom: '', specs: [{ label: 'Masa', value: '19,4 g' }, { label: 'Skanowanie', value: '120 klatek/s' }], bestFor: 'Handel, magazyn i serwis w terenie.' },
+    { name: 'Unitech MS912 Plus 2D', href: '/produkt/unitech-ms912-plus-2d', role: 'Kieszonkowy 2D, Bluetooth 5.0', priceFrom: '', specs: [{ label: 'Masa', value: '30,7 g' }, { label: 'Łączność', value: 'Bluetooth do 20 m' }], bestFor: 'Hotelarstwo, serwis w terenie i ochrona zdrowia.' },
+    { name: 'Unitech MS912 Plus', href: '/produkt/unitech-ms912-plus', role: 'Kieszonkowy 1D, Bluetooth', priceFrom: '', specs: [{ label: 'Masa', value: '30,2 g' }, { label: 'Skanowanie', value: '650 skanów/s' }], bestFor: 'Hotelarstwo, serwis w terenie i ochrona zdrowia.' },
+    { name: 'Unitech MS926', href: '/produkt/unitech-ms926', role: 'Kieszonkowy 2D z ekranem OLED', priceFrom: '', specs: [{ label: 'Ekran', value: 'OLED 1″, 3 przyciski' }, { label: 'Łączność', value: 'Bluetooth i NFC' }], bestFor: 'Identyfikacja osób, bilety mobilne i hotelarstwo.' },
+  ],
+  useCases: [
+    { title: 'Kasa i obsługa klienta', description: '[MS852](/produkt/unitech-ms852) czyta karty lojalnościowe i kupony z ekranów, [MS282e](/produkt/unitech-ms282e) ma smukłą obudowę o masie 125 g, a [TS100](/produkt/unitech-ts100) stoi na blacie i czyta kody pokazywane przed oknem. [MS250](/produkt/unitech-ms250) czyta kody liniowe przyłożone do okna.' },
+    { title: 'Magazyn z wysokimi regałami', description: '[MS852 LR](/produkt/unitech-ms852-lr) czyta etykiety na paletach i półkach z odległości do 21 m, a przewód Y zasila go w komputerach bez portu USB 3.0.' },
+    { title: 'Produkcja elektroniki i strefy EPA', description: 'Wersje ESD-safe mają obudowę i przewód z tworzywa antystatycznego. [MS852 Plus ESD](/produkt/unitech-ms852-plus-esd) czyta kody drukowane, a [MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd) kody grawerowane i nabijane na elementach.' },
+  ],
+  uniqueInsights: {
+    heading: 'Co sprawdzić przed zakupem skanera Unitech?',
+    items: [
+      { title: 'Seria MS85x ma wspólną obudowę i akcesoria', text: 'MS852, MS852 Plus, MS852 LR, MS852 DPM ESD, MS852 Plus ESD i MS851 ESD mają obudowę 87,8 × 71,6 × 177,7 mm, spust na 10 mln naciśnięć i klasę IP42. Wspólne są [podstawka](/produkt/unitech-ms85x-podstawka), [uchwyt biurkowy i ścienny](/produkt/unitech-ms85x-uchwyt-biurkowy), [etui](/produkt/unitech-ms85x-etui) i [przewód USB z ochroną ESD](/produkt/unitech-ms85x-przewod-usb).' },
+      { title: 'ESD-safe to nie to samo co odporność na wyładowania', text: 'Wszystkie skanery MS85x są sprawne po wyładowaniu 8 kV kontaktowym i 15 kV w powietrzu. Wersja ESD-safe ma dodatkowo tworzywo antystatyczne wymieszane w masie obudowy i przewodu, więc ochrona nie ściera się jak powłoka nałożona na powierzchnię. Tworzywo jest bez chloru.' },
+      { title: 'Końcówka numeru PN', text: 'Europejskie skanery MS85x mają końcówkę SG (standard) albo LG (ESD-safe). Wersje SG i LG nie przełączają trybu pracy po włożeniu do podstawki.' },
+      { title: 'Gwarancja zależy od modelu', text: 'MS85x i MS282e mają 60 miesięcy gwarancji producenta, MS250 24 miesiące, a MS838, MS836 i TS100 15 miesięcy.' },
+    ],
+  },
+  comparisons: [
+    {
+      title: 'Unitech MS852, MS852 Plus i MS852 LR — parametry obok siebie',
+      content: '| Parametr | [MS852](/produkt/unitech-ms852) | [MS852 Plus](/produkt/unitech-ms852-plus) | [MS852 LR](/produkt/unitech-ms852-lr) |\n|---|---|---|---|\n| Matryca | 1280 × 960, rolling shutter | 1280 × 800, global shutter | 1280 × 800, global shutter |\n| Odczyt specjalny | OCR | OCR, DotCode, Digimarc | OCR, DotCode |\n| Zasięg | UPC 100%: 4,6–49,5 cm | Code 39 20 mil: do 80 cm | od 7,6 cm do 21 m |\n| Upadki | 2,1 m | 2,1 m | 1,8 m; 2,2 m w etui |\n| Temperatura pracy | od −10°C | od −10°C | od −20°C |\n| Masa | 147 g | 165 g | 184 g |',
+    },
+    { title: 'MS852 Plus ESD czy MS852 DPM ESD?', content: '[MS852 Plus ESD](/produkt/unitech-ms852-plus-esd) czyta kody drukowane i z ekranów, OCR, DotCode i Digimarc. [MS852 DPM ESD](/produkt/unitech-ms852-dpm-esd) czyta kody grawerowane, nabijane i drukowane atramentem na elementach, pracuje z bliska i ma krzyżowy celownik laserowy. Plus ESD ma interfejs USB, a DPM ESD USB w trybach HID i CDC.' },
+    { title: 'MS836 czy MS250?', content: '[MS836](/produkt/unitech-ms836) to laser 1D z szerokością odczytu 220 mm i głębią do 265 mm, w obudowie IP52. [MS250](/produkt/unitech-ms250) to skaner kontaktowy CCD, który czyta od zetknięcia do 90 mm, na szerokości 80 mm, i waży 83 g.' },
+  ],
+  howToSteps: [],
+  faq: unitechScannerFaq,
+}
