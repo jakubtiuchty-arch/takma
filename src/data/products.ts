@@ -96183,8 +96183,8 @@ export const brandCategories: BrandCategory[] = [
   categoryId: 'skanery-kodow-kreskowych',
   name: 'Skanery kodów kreskowych Unitech',
   seoTitle: 'Skanery Unitech — 1D, 2D, ESD i DPM, ceny od {cenaOd} zł',
-  seoDescription: 'Skanery kodów Unitech od {cenaOd} zł netto: MS852, MS852 Plus, MS852 LR do 21 m, wersje ESD i DPM, laserowe 1D i prezentacyjny TS100. Stany i akcesoria.',
-  longDescription: 'Skanery kodów kreskowych Unitech w ofercie TAKMA to ręczne czytniki 1D i 2D oraz skaner prezentacyjny TS100. Przewodowe modele serii MS85x obejmują MS852, MS852 Plus, MS852 LR dalekiego zasięgu oraz wersje ESD i DPM do stref chronionych przed wyładowaniami elektrostatycznymi. Ekonomiczne skanery do kas to MS838, MS282e, MS836 i MS250. Skanery sprzedajemy w wersjach europejskich z przewodem USB lub RS-232, zależnie od numeru PN.',
+  seoDescription: 'Skanery kodów Unitech od {cenaOd} zł netto: przewodowe i Bluetooth MS852 i MS852B, LR do 21 m, ESD i DPM, pierścieniowe, kieszonkowe i prezentacyjny TS100.',
+  longDescription: 'Skanery kodów kreskowych Unitech odczytują kody 1D i 2D z etykiet, dokumentów i ekranów telefonów. Oferta obejmuje ręczne skanery przewodowe z USB lub RS-232, bezprzewodowe z Bluetooth albo radiem 2,4 GHz, skanery pierścieniowe noszone na palcu, skanery kieszonkowe oraz skaner prezentacyjny TS100 na blat kasy. W rodzinie MS85x są wersje dalekiego zasięgu do 21 m, wersje ESD-safe do stref chronionych przed wyładowaniami elektrostatycznymi i wersja do kodów DPM. Podstawki, stacje, akumulatory i odbiorniki są w kategorii [akcesoria do skanerów](/akcesoria-do-skanerow).',
   // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
   faq: [],
 },

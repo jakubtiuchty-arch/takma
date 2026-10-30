@@ -49,7 +49,7 @@ const zasilaczUsbC: Product = {
 
 Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.
 
-Zasilacza nie ma też w pudełku komputera noszonego [Unitech WD200 Plus](/produkt/unitech-wd200-plus). Zasilacz 1010-900074G w wersji EU jest wskazany jako zasilacz do tego urządzenia i łączy się z nim przewodem USB-C.`,
+Zasilacza nie ma też w pudełku komputera noszonego [Unitech WD200 Plus](/produkt/unitech-wd200-plus). W wersji EU pasuje do niego ten sam zasilacz 1010-900074G, połączony z komputerem przewodem USB-C z zestawu WD200 Plus.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -735,7 +735,7 @@ const smyczEa660: Product = {
 
 Uchwyt pistoletowy [5500-900108G](/produkt/unitech-ea660-uchwyt-pistoletowy) ma własny pasek na nadgarstek w opakowaniu.
 
-Smycz jest też na liście akcesoriów skanera pierścieniowego [Unitech MS652 Plus](/produkt/unitech-ms652-plus), którego obudowa ma otwór na smycz.`,
+Ta sama smycz pasuje do skanera pierścieniowego [Unitech MS652 Plus](/produkt/unitech-ms652-plus), który ma w obudowie otwór na smycz.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['etui-kabury-uchwyty', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -751,7 +751,7 @@ Smycz jest też na liście akcesoriów skanera pierścieniowego [Unitech MS652 P
     { name: 'Kompatybilność', value: 'Unitech EA660, MS652 Plus' },
     { name: 'Typ', value: 'Smycz na nadgarstek (Wrist Lanyard)' },
   ],
-  applications: ['Noszenie terminala na nadgarstku'],
+  applications: ['Noszenie terminala lub skanera pierścieniowego na nadgarstku'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ea-pasek-na-dlon', 'unitech-ea660-uchwyt-pistoletowy'],
   downloads: [KATALOG_EA660],

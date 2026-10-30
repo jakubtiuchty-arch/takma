@@ -22,7 +22,7 @@ export const wearableTerminalCategory: Subcategory = {
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const wearableTerminalContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-24',
+  updatedAt: '2026-10-30',
   comparisonTable: {
     heading: 'Zebra WT5400, WT6400 i Unitech WD200 Plus — porównanie',
     columns: ['Przeznaczenie', 'Ekran i klawiatura', 'Skanery', 'Złącza', 'Aparat', 'Temperatura pracy'],
@@ -60,7 +60,7 @@ export const wearableTerminalContent: SubcategoryRichContent = {
         cells: [
           'Magazyn, handel, logistyka, transport, place przeładunkowe',
           'Ekran dotykowy 3,54 cala',
-          'Bluetooth: MS633, MS652 Plus, MS912 Plus 2D, MS926; aparat 16 MP odczytuje kody',
+          'Bluetooth: MS633, MS652 Plus, MS912 Plus, MS912 Plus 2D, MS926; aparat 16 MP odczytuje kody',
           'USB-C (USB 2.0), styki POGO do stacji',
           '16 MP z lampą',
           '−20 do 50 °C',
@@ -70,7 +70,7 @@ export const wearableTerminalContent: SubcategoryRichContent = {
   },
   definition: {
     heading: 'Co to jest terminal naramienny?',
-    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa terminale Zebra, komputer Unitech WD200 Plus i komputer ProGlove LANA. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba terminale Zebra nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). [ProGlove LANA](/produkt/proglove-lana) z ekranem 3,54 cala i masą 123 g nosi się na przedramieniu w mocowaniu Arm Mount albo w kieszeni, a kody odczytują połączone z nim przez Bluetooth skanery noszone ProGlove. [Unitech WD200 Plus](/produkt/unitech-wd200-plus) ma ekran 3,54 cala i aparat 16 MP; nie ma wbudowanego skanera, więc kody czyta aparatem albo skanerem Unitech MS633, MS652 Plus, MS912 Plus 2D lub MS926. Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
+    content: 'Komputer noszony na nadgarstku łączy ekran terminala z mocowaniem na rękę. Pracownik czyta zadanie na ekranie, a kod skanuje skanerem założonym na palec lub grzbiet dłoni. Nie musi odkładać urządzenia, gdy podnosi karton albo sięga do regału.\n\nW ofercie TAKMA są dwa terminale Zebra, komputer Unitech WD200 Plus i komputer ProGlove LANA. [Zebra WT5400](/produkt/zebra-wt5400) powstał do pracy w sklepach: realizacji zamówień internetowych, przyjęć na zaplecze i uzupełniania półek. Ma złącze USB-C i współpracuje ze skanerami Bluetooth. [Zebra WT6400](/produkt/zebra-wt6400) służy w magazynach, centrach dystrybucji i zakładach produkcyjnych. Do wyboru jest wersja z samym ekranem lub z klawiaturą. Terminal ma aparat 13 MP z boku obudowy, złącza do skanerów na przewód i baterię przystosowaną do mroźni (−30 °C).\n\nOba terminale Zebra nosi się w mocowaniu na nadgarstek albo w mocowaniu na pasek przy biodrze. Do odczytu kodów służą [skanery noszone](/skanery-kodow-kreskowych/pierscieniowe) [Zebra RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). [ProGlove LANA](/produkt/proglove-lana) z ekranem 3,54 cala i masą 123 g nosi się na przedramieniu w mocowaniu Arm Mount albo w kieszeni, a kody odczytują połączone z nim przez Bluetooth skanery noszone ProGlove. [Unitech WD200 Plus](/produkt/unitech-wd200-plus) ma ekran 3,54 cala i aparat 16 MP; nie ma wbudowanego skanera, więc kody czyta aparatem albo skanerem Unitech MS633, MS652 Plus, MS912 Plus, MS912 Plus 2D lub MS926. Terminal ubieralny z czytnikiem UHF RFID, mocowany na grzbiecie dłoni, jest w kategorii [terminale RFID](/terminale-rfid).',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal naramienny?',
@@ -101,8 +101,8 @@ export const wearableTerminalContent: SubcategoryRichContent = {
   ],
   faq: [
     { question: 'Czym terminal naramienny różni się od terminala trzymanego w dłoni?', answer: 'Terminal naramienny jest zamocowany na przedramieniu, więc pracownik nie odkłada go przy podnoszeniu towaru. Kody odczytuje osobny skaner noszony na palcu lub dłoni. Terminal trzymany w dłoni zajmuje jedną rękę podczas skanowania.' },
-    { question: 'Czy terminal naramienny ma wbudowany skaner kodów?', answer: 'WT5400 i WT6400 nie mają wbudowanego skanera. Kody odczytuje skaner noszony połączony przez Bluetooth lub, w przypadku WT6400, przewodem. Boczny aparat 13 MP w WT6400 wykonuje zdjęcia i może też odczytywać kody.' },
-    { question: 'Czy do terminala naramiennego trzeba dokupić mocowanie?', answer: 'Tak, w przypadku Zebra WT5400 i WT6400. Terminal jest dostarczany tylko z baterią, dlatego mocowanie na rękę lub pasek oraz sposób ładowania dobiera się przy zamówieniu. ProGlove LANA można nosić także w kieszeni, bez mocowania Arm Mount.' },
+    { question: 'Czy terminal naramienny ma wbudowany skaner kodów?', answer: 'WT5400 i WT6400 nie mają wbudowanego skanera. Kody odczytuje skaner noszony połączony przez Bluetooth lub, w przypadku WT6400, przewodem. Boczny aparat 13 MP w WT6400 wykonuje zdjęcia i może też odczytywać kody. Unitech WD200 Plus również nie ma silnika skanującego: kody czyta jego aparat 16 MP albo sparowany skaner Bluetooth Unitech.' },
+    { question: 'Czy do terminala naramiennego trzeba dokupić mocowanie?', answer: 'Tak, w przypadku Zebra WT5400 i WT6400. Terminal jest dostarczany tylko z baterią, dlatego mocowanie na rękę lub pasek oraz sposób ładowania dobiera się przy zamówieniu. W pudełku Unitech WD200 Plus są tylko komputer, przewód USB-C i skrócona instrukcja, więc uchwyt na nadgarstek oraz zasilacz albo stację zamawia się osobno. ProGlove LANA można nosić także w kieszeni, bez mocowania Arm Mount.' },
     { question: 'Jakie skanery współpracują z terminalami naramiennymi Zebra?', answer: 'Z oboma modelami współpracują skanery Bluetooth [RS2100](/produkt/zebra-rs2100), [RS5100](/produkt/zebra-rs5100) i [RS6100](/produkt/zebra-rs6100). WT6400 obsługuje też skanery przewodowe RS4000 i [RS5000x](/produkt/zebra-rs5000x).' },
     { question: 'Czy terminal naramienny można nosić na biodrze?', answer: 'Tak, w mocowaniu na pasek. Taki sposób noszenia stosuje się przy kompletacji głosowej. Dane wprowadza się wtedy skanerem albo zestawem słuchawkowym.' },
   ],

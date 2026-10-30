@@ -66,13 +66,13 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
     - Serwis kolorowych drukarek Epson: https://www.takma.com.pl/serwis-kolorowych-drukarek-epson
 - Terminale mobilne: https://www.takma.com.pl/terminale-mobilne
   - Terminale Honeywell: https://www.takma.com.pl/terminale-honeywell
-  - Terminale naramienne (komputery noszone na nadgarstku Zebra WT5400 i WT6400): https://www.takma.com.pl/terminale-naramienne
+  - Terminale naramienne (komputery noszone na nadgarstku Zebra WT5400, WT6400 i Unitech WD200 Plus): https://www.takma.com.pl/terminale-naramienne
   - Terminale dla służby zdrowia: https://www.takma.com.pl/terminale-dla-sluzby-zdrowia — dotykowe terminale mobilne z Androidem i ekranem 6" w wersjach dla ochrony zdrowia: Zebra HC20 i HC50 (Wi-Fi) oraz HC25 i HC55 (5G), Honeywell CT37 HC (Wi-Fi albo 5G), Datalogic Memor 12 HC (Wi-Fi) i Memor 17 HC (5G) oraz CipherLab RS38H (5G). Obudowy przygotowane do dezynfekcji środkami z listy producenta; czerwony przycisk alarmowy w Zebra HC2X/HC5X i CipherLab RS38H; ładowanie bezprzewodowe Qi w Datalogic Memor 12 HC i 17 HC. Skanery: https://www.takma.com.pl/skanery-dla-sluzby-zdrowia, drukarki opasek i etykiet: https://www.takma.com.pl/drukarki-dla-sluzby-zdrowia
 - Skanery kodów kreskowych: https://www.takma.com.pl/skanery-kodow-kreskowych
   - Skanery Datalogic 1D, 2D i DPM: https://www.takma.com.pl/skanery-datalogic
   - Skanery ProGlove noszone na grzbiecie dłoni (LEO, MARK Basic, MARK 2, MARK 3, MARK Display, MAI): https://www.takma.com.pl/skanery-proglove
-  - Skanery Unitech przewodowe i prezentacyjne (MS852, MS852 Plus, MS852 LR, MS852 DPM ESD, MS852 Plus ESD, MS851 ESD, MS838, MS282e, MS836, MS250, TS100): https://www.takma.com.pl/skanery-unitech
-  - Skanery pierścieniowe i noszone (M3 Mobile, ProGlove, Zebra RS2100, RS5100 i RS6100): https://www.takma.com.pl/skanery-kodow-kreskowych/pierscieniowe
+  - Skanery Unitech przewodowe, bezprzewodowe, pierścieniowe, kieszonkowe i prezentacyjne (MS852, MS852 Plus, MS852 LR, MS852 DPM ESD, MS852 Plus ESD, MS851 ESD, MS838, MS282e, MS836, MS250, TS100, MS852B, MS852B Plus, MS852B LR, MS852P, MS852B Plus ESD, MS851B ESD, MS822B, MS838B, MS836B, MS633, MS652 Plus, MS626 Plus, MS912 Plus, MS912 Plus 2D, MS926): https://www.takma.com.pl/skanery-unitech
+  - Skanery pierścieniowe i noszone (M3 Mobile, ProGlove, Unitech MS633, MS652 Plus i MS626 Plus, Zebra RS2100, RS5100 i RS6100): https://www.takma.com.pl/skanery-kodow-kreskowych/pierscieniowe
   - Skanery dla służby zdrowia: https://www.takma.com.pl/skanery-dla-sluzby-zdrowia — przewodowe i bezprzewodowe skanery kodów 1D i 2D w wersjach dla ochrony zdrowia do szpitali, laboratoriów i aptek szpitalnych: Zebra DS2208-HC, DS2278-HC, DS4608-HC, DS8208-HC, DS8288-HC i CS60-HC, Honeywell Xenon Ultra 1960h i 1962h, Datalogic Gryphon 4600 HC (GD4690, GD4620, GBT4600, GM4600), Newland HR33 Marlin AI White i HR23 Dorada AI White (przewodowe i Bluetooth) oraz Socket Mobile DuraScan D745 i D765. Obudowy przygotowane do dezynfekcji (Zebra, Honeywell, Datalogic), antymikrobowe (Honeywell; Datalogic — tworzywo zgodne z ISO 22196; Newland — powłoka) albo z tworzywa medycznego (Socket Mobile); tryb nocny i wibracja w Zebra DS4608-HC, DS82-HC i CS60-HC. Drukarki opasek i etykiet: https://www.takma.com.pl/drukarki-dla-sluzby-zdrowia
   - Skanery przewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/przewodowe
   - Skanery bezprzewodowe: https://www.takma.com.pl/skanery-kodow-kreskowych/bezprzewodowe
@@ -396,20 +396,36 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 - [Unitech TB170 Plus](https://www.takma.com.pl/produkt/unitech-tb170-plus) (PN TB170-0D62RMNG Wi-Fi; TB170-0DL2RMNG, TB170-QDL2RMNG 4G LTE): Windows 11 IoT Enterprise LTSC, Intel N200, 8 GB / 256 GB SSD, ekran IPS 800 nitów, USB-A, USB-C, RJ45 z PXE, micro HDMI, IP65, bateria 4300 mAh hot swap, opcjonalny czytnik 1D/2D.
 - Akcesoria: baterie, stacje biurkowe i pojazdowe, uchwyty samochodowe, uchwyt POS, płyta VESA, paski, rysik i pióro Digitizer Pen, szkło ochronne, ładowarka baterii TB170 Plus. Przewód sieciowy EU do RT112 sprzedawany osobno.
 
-## Skanery Unitech
-- [Skanery Unitech](https://www.takma.com.pl/skanery-unitech): ręczne skanery kodów 1D i 2D, wersje ESD-safe do stref EPA, skaner do kodów DPM, skaner dalekiego zasięgu i skaner prezentacyjny. Wersje europejskie z przewodem USB lub RS-232, zależnie od numeru PN.
+## Skanery i komputer noszony Unitech
+- [Skanery Unitech](https://www.takma.com.pl/skanery-unitech): ręczne skanery kodów 1D i 2D przewodowe (USB, w MS838 także RS-232) i bezprzewodowe (Bluetooth albo radio 2,4 GHz z odbiornikiem USB), skanery pierścieniowe i kieszonkowe, wersje ESD-safe do stref EPA, skanery do kodów DPM, skanery dalekiego zasięgu i skaner prezentacyjny. Wyposażenie zestawu zależy od numeru PN.
 - [Unitech MS852](https://www.takma.com.pl/produkt/unitech-ms852) (PN MS852-AUCB00-SG): skaner 2D 1280 × 960 z OCR, kody z ekranów telefonów, 147 g, IP42, upadki z 2,1 m.
 - [Unitech MS852 Plus](https://www.takma.com.pl/produkt/unitech-ms852-plus) (PN MS852-VUCB00-SG standard, MS852-ZUCB00-SG High Density): skaner 2D z migawką global shutter, odczyt w ruchu, DotCode, Digimarc i OCR, 165 g.
 - [Unitech MS852 LR](https://www.takma.com.pl/produkt/unitech-ms852-lr) (PN MS852-OUCB00-SG): skaner 2D dalekiego zasięgu, odczyt od 7,6 cm do 21 m, praca od −20°C, przewód USB i przewód Y w zestawie.
 - [Unitech MS852 DPM ESD](https://www.takma.com.pl/produkt/unitech-ms852-dpm-esd) (PN MS852-XUCB00-LG): skaner 2D do kodów DPM, obudowa i przewód ESD-safe, krzyżowy celownik laserowy, 60 FPS, USB HID i CDC.
 - [Unitech MS852 Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852-plus-esd) (PN MS852-ZUCB00-LG): skaner 2D High Density w wersji ESD-safe, OCR, DotCode i Digimarc, USB.
-- [Unitech MS851 ESD](https://www.takma.com.pl/produkt/unitech-ms851-esd) (PN MS851-SUCB00-LG): skaner laserowy 1D w wersji ESD-safe, 104 skany na sekundę, odczyt do 4,5 m, 147 g.
+- [Unitech MS851 ESD](https://www.takma.com.pl/produkt/unitech-ms851-esd) (PN MS851-SUCB00-LG): skaner laserowy 1D w wersji ESD-safe, 104 skany na sekundę, odczyt do 4,57 m, 147 g.
 - [Unitech MS838](https://www.takma.com.pl/produkt/unitech-ms838) (PN MS838-2UCB0S-SG USB z podstawką, MS838-2RCB00-SG RS-232): skaner 2D, IP52, upadki z 1,5 m, tryb prezentacyjny.
 - [Unitech MS282e](https://www.takma.com.pl/produkt/unitech-ms282e) (PN MS282-3UCB00-SG): smukły skaner 2D o masie 125 g, tryb ręczny i prezentacyjny, USB.
 - [Unitech MS836](https://www.takma.com.pl/produkt/unitech-ms836) (PN MS836-SUCBS0-SG): skaner laserowy 1D, trzy tryby pracy, szerokość odczytu 220 mm, IP52.
 - [Unitech MS250](https://www.takma.com.pl/produkt/unitech-ms250) (PN MS250-CUCB00-DG): skaner kontaktowy CCD 1D, odczyt do 90 mm, 200 skanów na sekundę, 83 g.
 - [Unitech TS100](https://www.takma.com.pl/produkt/unitech-ts100) (PN TS100-SUCB00-SG): skaner prezentacyjny 2D, okno odczytu 50° × 35°, auto-sensing 60 fps, podstawa kątowa, USB.
-- Akcesoria: podstawki hands-free MS85x, MS838 i MS282e, uchwyt biurkowy i ścienny MS85x, etui ochronne MS85x, przewód USB z ochroną ESD.
+- [Unitech MS852B](https://www.takma.com.pl/produkt/unitech-ms852b) (PN MS852-AUBB0C-SG): skaner 2D z Bluetooth do 100 m w otwartej przestrzeni, stacja ładująca w zestawie, akumulator 2850 mAh na do 20 godzin, 213 g.
+- [Unitech MS852B Plus](https://www.takma.com.pl/produkt/unitech-ms852b-plus) (PN MS852-VUBB0C-SG standard, MS852-ZUBB0C-SG HD): skaner 2D z Bluetooth i migawką global shutter, OCR, DotCode i Digimarc, stacja w zestawie.
+- [Unitech MS852B LR](https://www.takma.com.pl/produkt/unitech-ms852b-lr) (PN MS852-OUBB0C-SG): skaner 2D dalekiego zasięgu z Bluetooth, odczyt do 21 m, stacja w zestawie.
+- [Unitech MS852P](https://www.takma.com.pl/produkt/unitech-ms852p) (PN MS852-AUPBGC-SG): skaner 2D z radiem 2,4 GHz i odbiornikiem USB (10 m), OCR-A i OCR-B, stacja i zasilacz w zestawie.
+- [Unitech MS852B Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852b-plus-esd) (PN MS852-ZUBB0C-LG): skaner 2D High Density z Bluetooth w obudowie ESD-safe, kody DPM, stacja w zestawie.
+- [Unitech MS851B ESD](https://www.takma.com.pl/produkt/unitech-ms851b-esd) (PN MS851-SUBB0C-LG): skaner laserowy 1D z Bluetooth w obudowie ESD-safe, ponad 30 godzin pracy, stacja w zestawie.
+- [Unitech MS822B](https://www.takma.com.pl/produkt/unitech-ms822b) (PN MS822-2UBU02-SG): skaner 2D ze stacją z odbiornikiem 2,4 GHz (100 m), Bluetooth 4.2 i USB-C, IP52, ponad 40 godzin pracy.
+- [Unitech MS838B](https://www.takma.com.pl/produkt/unitech-ms838b) (PN MS838-2UBB0D-SG): skaner 2D z odbiornikiem USB 2,4 GHz (100 m), Bluetooth i USB-C, pamięć na 40 000 kodów EAN, ponad 16 godzin pracy.
+- [Unitech MS836B](https://www.takma.com.pl/produkt/unitech-ms836b) (PN MS836-SUBB0D-SG): skaner laserowy 1D, 100 skanów na sekundę, odbiornik USB 2,4 GHz (100 m), Bluetooth, ponad 30 godzin pracy.
+- [Unitech MS633](https://www.takma.com.pl/produkt/unitech-ms633) (PN MS633-DUBU00-SG, MS633-OUBU00-SG wersja LR): skaner pierścieniowy 2D z Bluetooth, 56 g (LR 67 g), wymienny akumulator 600 mAh.
+- [Unitech MS652 Plus](https://www.takma.com.pl/produkt/unitech-ms652-plus) (PN MS652-AUDB00-SG): skaner 2D noszony na dwóch palcach, Bluetooth do 100 m, parowanie NFC, 95 g.
+- [Unitech MS626 Plus](https://www.takma.com.pl/produkt/unitech-ms626-plus) (PN MS626-PUBB00-SG): skaner pierścieniowy 2D z Bluetooth 5.0, 19,4 g, 120 klatek na sekundę.
+- [Unitech MS912 Plus 2D](https://www.takma.com.pl/produkt/unitech-ms912-plus-2d) (PN MS912-2UBB00-SG): kieszonkowy skaner 2D z Bluetooth 5.0, 30,7 g.
+- [Unitech MS912 Plus](https://www.takma.com.pl/produkt/unitech-ms912-plus) (PN MS912-FUBB00-TG): kieszonkowy skaner 1D z Bluetooth, 650 skanów na sekundę, 30,2 g.
+- [Unitech MS926](https://www.takma.com.pl/produkt/unitech-ms926) (PN MS926-UUBU00-SG): kieszonkowy skaner 2D z ekranem OLED 1″, Bluetooth i NFC, 63 g.
+- [Unitech WD200 Plus](https://www.takma.com.pl/produkt/unitech-wd200-plus) (PN WD200-0F6FRM3G): komputer noszony na nadgarstku z Androidem 13 (GMS), ekran 3,54″, Wi-Fi 6, HF/NFC, aparat 16 MP, bez wbudowanego silnika skanującego (współpracuje ze skanerami Unitech przez Bluetooth), IP68. Mocowanie i zasilacz lub stacja sprzedawane osobno.
+- Akcesoria: podstawki hands-free MS85x, MS838 i MS282e, uchwyt biurkowy i ścienny MS85x, etui ochronne MS85x, przewód USB z ochroną ESD, stacje ładujące i akumulatory MS85x, odbiornik 2,4 GHz, stacje, ładowarki i akumulatory skanerów pierścieniowych, uchwyty, stacja 4-gniazdowa i paski WD200 Plus.
 
 ## Laptopy przemysłowe Getac
 - [Laptopy przemysłowe](https://www.takma.com.pl/laptopy-przemyslowe): laptopy rugged Getac z Windows 11 Pro do pracy w terenie, w pojazdach, na produkcji i w magazynie. Fully rugged (IP66, MIL-STD-810H, upadek z 1,2–1,8 m, gwarancja 3 lata Bumper-to-Bumper, także przy przypadkowych uszkodzeniach): B360 i V120. Rugged (IP53, MIL-STD-810H, upadek z 0,9 m, 3 lata gwarancji ograniczonej): S410 G5, S510 i S510AD. Praca od −29°C do +63°C. Klawiatury US, UK albo DE (QWERTZ), zależnie od PN.

@@ -18,12 +18,12 @@ const podstawkaMs85x: Product = {
   seoH1: 'Podstawka hands-free Unitech MS85x',
   shortDescription: 'Podstawka hands-free Unitech 5200-900009G do skanerów serii MS85x: utrzymuje skaner na blacie i pozwala skanować bez trzymania w dłoni.',
   seoTitle: 'Podstawka Unitech 5200-900009G do skanerów MS852, MS851 i MS852 Plus',
-  seoDescription: 'Podstawka hands-free Unitech 5200-900009G do skanerów kodów MS852, MS852 Plus, MS852 LR, MS851 ESD, MS852 DPM ESD i modeli Bluetooth serii MS85x. Podstawka do skanera Unitech MS852. PN: 5200-900009G.',
+  seoDescription: 'Podstawka hands-free Unitech 5200-900009G trzyma skaner nad blatem, aby czytać kody bez użycia rąk. Pasuje do przewodowych Unitech MS852, MS852 Plus, MS852 LR i MS851 ESD oraz bezprzewodowego MS852B. Podstawka do skanera Unitech MS852. PN: 5200-900009G.',
   description: `Podstawka 5200-900009G utrzymuje skaner serii MS85x na blacie, aby skanować kody bez trzymania skanera w dłoni.
 
 W pudełku są uchwyt skanera, przekładka, kolumna, dolna i górna płyta podstawy oraz wkręty. Uchwyt, przekładka i kolumna oraz obie płyty są fabrycznie złożone w dwie części. Obie części łączy się śrubokrętem krzyżakowym. Podstawę można przykręcić do blatu wkrętami samogwintującymi.
 
-Podstawka jest akcesorium opcjonalnym i nie wchodzi w skład zestawów skanerów.`,
+Żaden zestaw skanera serii MS85x nie zawiera tej podstawki, dlatego zamawia się ją osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'unitech',
@@ -58,7 +58,7 @@ const uchwytBiurkowyMs85x: Product = {
   seoH1: 'Uchwyt biurkowy i ścienny Unitech MS85x',
   shortDescription: 'Uchwyt Unitech 5200-900011G do skanerów serii MS85x: odkładanie skanera na biurku albo montaż na ścianie.',
   seoTitle: 'Uchwyt biurkowy i ścienny Unitech 5200-900011G do skanerów MS85x',
-  seoDescription: 'Uchwyt biurkowy i ścienny Unitech 5200-900011G do skanerów kodów MS852, MS852 Plus, MS852 LR, MS851 ESD, MS852 DPM ESD i modeli Bluetooth serii MS85x. Uchwyt na skaner Unitech MS852. PN: 5200-900011G.',
+  seoDescription: 'Przezroczysty uchwyt Unitech 5200-900011G do odkładania skanera na biurku albo montażu na ścianie. Obsługuje Unitech MS852 Plus ESD, MS852 DPM ESD, MS852B LR i pozostałe skanery serii MS85x. Uchwyt na skaner Unitech MS852. PN: 5200-900011G.',
   description: `Uchwyt 5200-900011G służy do odkładania skanera serii MS85x. Można go ustawić na biurku albo zamontować na ścianie.
 
 Przezroczysty uchwyt podtrzymuje skaner za rękojeść. Nie jest podstawką hands-free: do pracy bez trzymania skanera w dłoni służy [podstawka 5200-900009G](/produkt/unitech-ms85x-podstawka).`,
@@ -95,10 +95,10 @@ const etuiMs85x: Product = {
   seoH1: 'Etui ochronne Unitech MS85x',
   shortDescription: 'Etui ochronne Unitech 386793G do skanerów serii MS85x: osłona na upadki; w MS852 LR zwiększa odporność z 1,8 m do 2,2 m.',
   seoTitle: 'Etui ochronne Unitech 386793G do skanerów MS852 LR, MS852 i MS851',
-  seoDescription: 'Etui ochronne Unitech 386793G do skanerów kodów MS852, MS852 Plus, MS852 LR, MS851 ESD, MS852 DPM ESD i modeli Bluetooth serii MS85x. Osłona skanera Unitech MS852 LR. PN: 386793G.',
+  seoDescription: 'Żółte etui ochronne Unitech 386793G zwiększa odporność skanera MS852 LR na upadki do 2,2 m. Zakłada się je także na MS852B LR, MS851B ESD i inne modele serii MS85x. Osłona skanera Unitech MS852 LR. PN: 386793G.',
   description: `Etui 386793G chroni skaner serii MS85x przed skutkami upadku. Jest żółte i ma na powierzchni logo unitech.
 
-W skanerze MS852 LR etui zwiększa odporność na upadek z 1,8 m do 2,2 m na beton. Etui nie wchodzi w skład zestawów skanerów i jest sprzedawane osobno.`,
+Dla MS852 LR dopuszczalna wysokość upadku wynosi 1,8 m bez osłony i 2,2 m w etui. Zestawy skanerów go nie zawierają, więc zamawia się je osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'etui-kabury-skanerow'],
   manufacturerId: 'unitech',
@@ -130,16 +130,16 @@ const przewodUsbMs85x: Product = {
   seoH1: 'Przewód USB z ochroną ESD Unitech MS85x',
   shortDescription: 'Przewód USB Unitech 1550-905920G z ochroną ESD do skanerów serii MS85x: zamienny lub zapasowy przewód skanera.',
   seoTitle: 'Przewód USB Unitech 1550-905920G z ochroną ESD do skanerów MS85x',
-  seoDescription: 'Przewód USB z ochroną ESD Unitech 1550-905920G do skanerów kodów MS852, MS852 Plus, MS852 LR, MS851 ESD, MS852 DPM ESD i serii MS85x. Przewód do skanera Unitech MS852. PN: 1550-905920G.',
-  description: `Przewód 1550-905920G łączy skaner serii MS85x z portem USB komputera. Ma ochronę ESD i służy jako przewód zamienny lub zapasowy.
+  seoDescription: 'Zapasowy przewód USB Unitech 1550-905920G z ochroną ESD do skanerów MS851 ESD, MS852 Plus ESD i MS852 DPM ESD oraz innych modeli serii MS85x. Przewód do skanera Unitech MS852. PN: 1550-905920G.',
+  description: `Przewód 1550-905920G łączy skaner serii MS85x z portem USB komputera. Ma ochronę ESD (ESD enhanced) i służy jako przewód zamienny lub zapasowy.
 
-Przewód skanera MS851 ESD jest wymienny. Skanery w wersji ESD mają obudowę i przewód z tworzywa antystatycznego, dlatego w strefach EPA przewód należy wymieniać na przewód z ochroną ESD.`,
+Z jednej strony ma wtyk USB-A, a z drugiej wtyk modułowy, który wchodzi do złącza przewodu w rękojeści skanera. Dzięki temu złączu przewód skanera MS85x można odłączyć i wymienić.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
   manufacturerId: 'unitech',
   priceFrom: 23.98,
   images: ['/images/products/1550-905920G.png'],
-  imageDescriptions: ['Przewód USB Unitech 1550-905920G — czarny przewód z wtykiem USB-A z jednej strony i wtykiem RJ ze skrętką po drugiej'],
+  imageDescriptions: ['Przewód USB Unitech 1550-905920G — czarny przewód z wtykiem USB-A z jednej strony i wtykiem modułowym z osłoną przeciwzgięciową po drugiej'],
   tags: TAGI,
   availability: 'unavailable',
   isNew: true,
@@ -167,7 +167,7 @@ const podstawkaMs282e: Product = {
   seoDescription: 'Podstawka hands-free Unitech 5200-900013G do skanera kodów MS282e. Podstawka do skanera Unitech MS282e do pracy w trybie prezentacyjnym. PN: 5200-900013G.',
   description: `Podstawka 5200-900013G utrzymuje smukły skaner MS282e na giętkim ramieniu nad blatem. W podstawce skaner czyta kody w trybie prezentacyjnym, bez trzymania w dłoni.
 
-Podstawka jest opcjonalnym akcesorium i nie wchodzi w skład zestawu MS282-3UCB00-SG.`,
+Zestaw MS282-3UCB00-SG jej nie zawiera; podstawkę zamawia się osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'unitech',
