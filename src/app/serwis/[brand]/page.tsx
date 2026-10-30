@@ -108,8 +108,8 @@ export default function BrandServicePage({ params }: Props) {
           />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
             <div className="max-w-xl">
-              <div className="w-20 h-10 sm:w-24 sm:h-12 relative mb-3 opacity-90">
-                <Image src={brand.logoSrc} alt={brand.logoAlt} fill className="object-contain object-left brightness-0 invert" sizes="96px" priority />
+              <div className={`w-20 h-10 sm:w-24 sm:h-12 relative mb-3 ${brand.heroLogoOnWhite ? "bg-white rounded-md" : "opacity-90"}`}>
+                <Image src={brand.logoSrc} alt={brand.logoAlt} fill className={`object-contain ${brand.heroLogoOnWhite ? "p-1.5" : "object-left brightness-0 invert"}`} sizes="96px" priority />
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
                 {brand.heroTitle}

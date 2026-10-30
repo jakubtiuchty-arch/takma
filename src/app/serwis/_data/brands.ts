@@ -5,6 +5,7 @@ export type ServiceBrand = {
   name: string
   logoSrc: string
   logoAlt: string
+  heroLogoOnWhite?: boolean
   category: 'terminale' | 'drukarki' | 'skanery' | 'mixed'
   shortDesc: string
   products: string
@@ -50,6 +51,114 @@ export type ServiceBrand = {
 }
 
 export const serviceBrands: ServiceBrand[] = [
+  {
+  "slug": "cipherlab",
+  "heroLogoOnWhite": true,
+  "name": "CipherLab",
+  "logoSrc": "/images/manufacturers/cipherlab.webp",
+  "logoAlt": "CipherLab — serwis terminali mobilnych i kolektorów danych",
+  "category": "terminale",
+  "pricingVariant": "devices",
+  "heroImage": "/images/serwis-hero/cipherlab-hero.webp",
+  "shortDesc": "Terminale RK96, RK26, RS38, RS36 i starsze kolektory danych",
+  "products": "Terminale CipherLab RK96, RK26, RS38, RS36 i RS20 oraz starsze terminale i kolektory danych",
+  "heroTitle": "Serwis CipherLab — naprawa terminali i kolektorów danych",
+  "heroDescription": "Serwis pogwarancyjny CipherLab. Diagnozujemy ekrany, klawiatury, skanery, akumulatory i układy ładowania. Odbiór kurierem z całej Polski, wycena przed naprawą.",
+  "heroLead": "W TAKMA diagnozujemy i naprawiamy terminale CipherLab używane w magazynach, handlu, produkcji i logistyce. Obsługujemy urządzenia dotykowe oraz kolektory z klawiaturą. Sprawdzamy uszkodzenia po upadku, problemy z ładowaniem, odczytem kodów i komunikacją. Zakres naprawy, dostępność części i termin potwierdzamy po diagnostyce. Przed naprawą udostępniamy wycenę do akceptacji w panelu klienta.",
+  "metaTitle": "Serwis CipherLab — naprawa terminali i kolektorów danych | TAKMA",
+  "metaDescription": "Serwis pogwarancyjny CipherLab: RK96, RK26, RS38 i RS36. Naprawa ekranów, klawiatur, skanerów i ładowania. Odbiór kurierem, wycena przed naprawą.",
+  "crossSell": "terminale CipherLab, kolektory danych, baterie, stacje i akcesoria",
+  "relatedHeading": "Terminale CipherLab w ofercie TAKMA",
+  "relatedDescription": "Sprawdź model urządzenia i zgodne wyposażenie przed zgłoszeniem naprawy.",
+  "issuesIntro": "Typowe objawy wymagające diagnostyki sprzętu lub konfiguracji. Zakres i koszt naprawy potwierdzamy przed jej rozpoczęciem.",
+  "seriesList": [
+    {
+      "series": "Terminale klawiaturowe RK",
+      "description": "Sprawdzamy klawiaturę, przyciski, ekran, układ skanowania i ładowanie. Stan uchwytu oraz złączy oceniamy razem z terminalem.",
+      "typicalDevices": "RK96, RK96 Cold Storage, RK26"
+    },
+    {
+      "series": "Terminale dotykowe RS",
+      "description": "Diagnostyka panelu LCD, dotyku, przycisków bocznych, styków i złącza USB. Sprawdzamy także akumulator i połączenia bezprzewodowe.",
+      "typicalDevices": "RS38, RS36, RS20"
+    },
+    {
+      "series": "Starsze terminale i kolektory",
+      "description": "Możliwość naprawy zależy od usterki i dostępności podzespołów. Podaj pełny model oraz numer seryjny, aby ułatwić dobór części.",
+      "typicalDevices": "Starsze serie RK i RS oraz kolektory CipherLab"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Terminale CipherLab — oferta",
+      "href": "/terminale-cipherlab"
+    },
+    {
+      "label": "CipherLab RK96",
+      "href": "/produkt/cipherlab-rk96"
+    },
+    {
+      "label": "CipherLab RK26",
+      "href": "/produkt/cipherlab-rk26"
+    },
+    {
+      "label": "CipherLab RS38",
+      "href": "/produkt/cipherlab-rs38"
+    }
+  ],
+  "commonIssues": [
+    {
+      "title": "Pęknięty ekran lub brak reakcji na dotyk",
+      "description": "Sprawdzamy LCD, warstwę dotykową, połączenia wewnętrzne i stan obudowy. Po ocenie urządzenia przedstawiamy wycenę naprawy."
+    },
+    {
+      "title": "Klawisze lub przyciski skanowania nie reagują",
+      "description": "Diagnozujemy klawiaturę, przyciski boczne, taśmy i połączenia. Części dobieramy do konkretnego modelu i układu klawiatury."
+    },
+    {
+      "title": "Brak ładowania przez USB lub w stacji",
+      "description": "Testujemy akumulator, zasilacz, przewód, styki i złącza. Sprawdzamy, czy problem dotyczy terminala, stacji czy źródła zasilania."
+    },
+    {
+      "title": "Terminal nie odczytuje kodów",
+      "description": "Sprawdzamy okno skanera, przycisk, aktywne symbole oraz konfigurację odczytu. W razie usterki sprzętowej wyceniamy naprawę modułu."
+    },
+    {
+      "title": "Szybkie rozładowywanie lub samoczynne wyłączanie",
+      "description": "Testujemy stan akumulatora i działanie układu zasilania. Przy śladach zalania najpierw oceniamy stan elektroniki."
+    },
+    {
+      "title": "Rozłączanie Wi-Fi lub brak danych w aplikacji",
+      "description": "Sprawdzamy ustawienia sieci, systemu i przekazywania danych ze skanera. Zmiany w aplikacji magazynowej wymagają uzgodnienia z administratorem systemu."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak zgłosić terminal CipherLab do serwisu?",
+      "a": "Wypełnij formularz na tej stronie. Podaj model, numer seryjny i opis usterki. Zamówimy kuriera pod wskazany adres. Urządzenie trzeba bezpiecznie zapakować."
+    },
+    {
+      "q": "Czy otrzymam wycenę przed naprawą?",
+      "a": "Tak. Po diagnostyce udostępniamy wycenę w panelu klienta. Naprawę rozpoczynamy po zatwierdzeniu kosztu. W panelu sprawdzisz także etapy realizacji."
+    },
+    {
+      "q": "Czy prowadzicie autoryzowany serwis CipherLab?",
+      "a": "Dla CipherLab prowadzimy serwis pogwarancyjny. Przy urządzeniu objętym gwarancją najpierw należy sprawdzić warunki ochrony i sposób zgłoszenia."
+    },
+    {
+      "q": "Czy naprawiacie starsze kolektory CipherLab?",
+      "a": "Możliwość naprawy zależy od usterki i dostępności części. Podaj pełne oznaczenie modelu. Zakres, koszt i termin potwierdzamy po diagnostyce."
+    },
+    {
+      "q": "Czy naprawiacie klawiatury terminali RK96 i RK26?",
+      "a": "Diagnozujemy klawisze, przyciski i połączenia klawiatury. Dostępność odpowiedniego podzespołu oraz koszt naprawy potwierdzamy dla konkretnego urządzenia."
+    },
+    {
+      "q": "Jak przygotować terminal do wysyłki?",
+      "a": "Jeśli to możliwe, wykonaj kopię danych. Wyjmij karty SIM i microSD. Zapakuj urządzenie tak, aby nie przemieszczało się w kartonie. Przy problemach z ładowaniem opisz używany zasilacz i stację."
+    }
+  ]
+},
   {
   "slug": "sunmi",
   "name": "SUNMI",
