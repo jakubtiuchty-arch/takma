@@ -23,3 +23,15 @@
 .story .maintenance h3{font-size:30px;line-height:1.35}
 .story .eco h2{font-size:46px;line-height:1.24}
 @media(max-width:600px){.story h2,.story .hero h2,.story .displayCopy h2,.story .eco h2{font-size:30px;line-height:1.3}.story h3,.story .details h3,.story .displayFeatures h3{font-size:19px;line-height:1.4}.story .maintenance h3{font-size:26px}.story .details{grid-template-columns:1fr}.story .details p,.story .displayFeatures p{font-size:15px}.story .eyebrow{font-size:11px}.story .heroCopy>p:not(.eyebrow):not(.model){font-size:16px}}
+
+/* CL4-SXR: typography aligned with the CL4NX Plus brochure story. */
+.story.cl4Typography{font-family:var(--font-inter),sans-serif;font-size:17px;line-height:1.8}
+.story.cl4Typography h2{font-weight:600;line-height:1.3;letter-spacing:normal;font-size:clamp(30px,3.3vw,46px)}
+.story.cl4Typography .hero h2{font-size:clamp(32px,3.8vw,50px);line-height:1.3}
+.story.cl4Typography h3{font-weight:600;line-height:1.5;letter-spacing:normal}
+.story.cl4Typography p{line-height:1.8}
+.story.cl4Typography .model{font-weight:400;line-height:1.3;letter-spacing:normal}
+.story.cl4Typography .speedCopy>strong,.story.cl4Typography .precision strong,.story.cl4Typography .ecoFact strong{font-weight:600;line-height:1.2;letter-spacing:normal}
+.story.cl4Typography .eyebrow{font-weight:700;line-height:1.7}
+.story.cl4Typography .details h3,.story.cl4Typography .displayFeatures h3{font-size:20px;line-height:1.5}
+@media(max-width:600px){.story.cl4Typography h2,.story.cl4Typography .hero h2{font-size:30px;line-height:1.35}.story.cl4Typography h3,.story.cl4Typography .details h3,.story.cl4Typography .displayFeatures h3{font-size:19px;line-height:1.5}}

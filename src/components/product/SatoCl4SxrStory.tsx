@@ -6,7 +6,7 @@ function Photo({ name, alt, className = '' }: { name: string; alt: string; class
   return <div className={`${s.photo} ${className}`}><Image src={root + name + '.webp'} alt={alt} fill sizes="(max-width: 640px) 92vw, 600px" quality={95} /></div>
 }
 export default function SatoCl4SxrStory() {
-  return <div className={s.story}>
+  return <div className={`${s.story} ${s.cl4Typography}`}>
     <nav className={s.nav} aria-label="Poznaj SATO CL4-SXR"><strong>SATO <span>CL4-SXR</span></strong><div><a href="#sxr-speed">Wydajność</a><a href="#sxr-design">Konstrukcja</a><a href="#sxr-display">Obsługa</a><a href="#sxr-care">Konserwacja</a></div></nav>
     <section className={s.hero}>
       <div className={s.heroCopy}><p className={s.eyebrow}>DRUK PRZEMYSŁOWY NOWEJ GENERACJI</p><h2>Wspieraj miejsca<br/>pracy przyszłości.</h2><p className={s.model}>CL4-SXR</p><p>Precyzyjne etykiety. Szybka realizacja zleceń.<br/>Kontrola procesu na każdym stanowisku.</p><a href="#sxr-speed" className={s.arrow}>Poznaj drukarkę <span>↓</span></a></div>
