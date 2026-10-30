@@ -1501,7 +1501,7 @@ categoryFilters['skanery-datalogic'] = [
     if (def.specKey === 'upadki') return {
       ...def,
       description: 'Wysokość testu upadku na beton. Liczba upadków i warunki zależą od modelu; szczegóły sprawdzisz na karcie produktu.',
-      derived: [...(def.derived ?? []), { value: '2 m', pattern: '(^|[^0-9,.])2([,.]0)? ?m', specs: ['Odporność na upadki'] }],
+      derived: [...(def.derived ?? []).filter(rule => rule.value !== '2,0–2,2 m'), { value: '2 m', pattern: '(^|[^0-9,.])2([,.]0)? ?m', specs: ['Odporność na upadki'] }], // przedział 2,0–2,2 m dubluje tu wartość „2 m”
     }
     return def
   }),

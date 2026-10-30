@@ -23,7 +23,7 @@ const podstawkaMs85x: Product = {
 
 W pudełku są uchwyt skanera, przekładka, kolumna, dolna i górna płyta podstawy oraz wkręty. Uchwyt, przekładka i kolumna oraz obie płyty są fabrycznie złożone w dwie części. Obie części łączy się śrubokrętem krzyżakowym. Podstawę można przykręcić do blatu wkrętami samogwintującymi.
 
-Żaden zestaw skanera serii MS85x nie zawiera tej podstawki, dlatego zamawia się ją osobno.`,
+Podstawka jest akcesorium opcjonalnym i zamawia się ją osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'unitech',
@@ -38,7 +38,7 @@ W pudełku są uchwyt skanera, przekładka, kolumna, dolna i górna płyta podst
     { name: 'Part Number', value: '5200-900009G' },
     { name: 'Typ', value: 'Podstawka hands-free do skanera ręcznego' },
     { name: 'Zgodność', value: MS85X_ZGODNOSC },
-    { name: 'Zawartość pudełka', value: 'Uchwyt skanera, przekładka, kolumna, dolna i górna płyta podstawy, wkręty płaskie i samogwintujące' },
+    { name: 'Zawartość pudełka', value: 'Uchwyt skanera, przekładka, kolumna, dolna i górna płyta podstawy, śruby z łbem płaskim i wkręty samogwintujące' },
     { name: 'Montaż', value: 'Śrubokręt krzyżakowy' },
   ],
   applications: ['Praca ze skanerem bez trzymania w dłoni'],
@@ -58,10 +58,10 @@ const uchwytBiurkowyMs85x: Product = {
   seoH1: 'Uchwyt biurkowy i ścienny Unitech MS85x',
   shortDescription: 'Uchwyt Unitech 5200-900011G do skanerów serii MS85x: odkładanie skanera na biurku albo montaż na ścianie.',
   seoTitle: 'Uchwyt biurkowy i ścienny Unitech 5200-900011G do skanerów MS85x',
-  seoDescription: 'Przezroczysty uchwyt Unitech 5200-900011G do odkładania skanera na biurku albo montażu na ścianie. Obsługuje Unitech MS852 Plus ESD, MS852 DPM ESD, MS852B LR i pozostałe skanery serii MS85x. Uchwyt na skaner Unitech MS852. PN: 5200-900011G.',
+  seoDescription: 'Przezroczysty uchwyt Unitech 5200-900011G do odkładania skanera na biurku albo montażu na ścianie. Pasuje do Unitech MS852 Plus ESD, MS852 DPM ESD, MS852B LR i pozostałe skanery serii MS85x. Uchwyt na skaner Unitech MS852. PN: 5200-900011G.',
   description: `Uchwyt 5200-900011G służy do odkładania skanera serii MS85x. Można go ustawić na biurku albo zamontować na ścianie.
 
-Przezroczysty uchwyt podtrzymuje skaner za rękojeść. Nie jest podstawką hands-free: do pracy bez trzymania skanera w dłoni służy [podstawka 5200-900009G](/produkt/unitech-ms85x-podstawka).`,
+Przezroczysty uchwyt podtrzymuje skaner za rękojeść. Do pracy bez trzymania skanera w dłoni przeznaczona jest [podstawka hands-free 5200-900009G](/produkt/unitech-ms85x-podstawka).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'podstawki-do-skanerow'],
   manufacturerId: 'unitech',
@@ -133,7 +133,7 @@ const przewodUsbMs85x: Product = {
   seoDescription: 'Zapasowy przewód USB Unitech 1550-905920G z ochroną ESD do skanerów MS851 ESD, MS852 Plus ESD i MS852 DPM ESD oraz innych modeli serii MS85x. Przewód do skanera Unitech MS852. PN: 1550-905920G.',
   description: `Przewód 1550-905920G łączy skaner serii MS85x z portem USB komputera. Ma ochronę ESD (ESD enhanced) i służy jako przewód zamienny lub zapasowy.
 
-Z jednej strony ma wtyk USB-A, a z drugiej wtyk modułowy, który wchodzi do złącza przewodu w rękojeści skanera. Dzięki temu złączu przewód skanera MS85x można odłączyć i wymienić.`,
+Z jednej strony ma wtyk USB-A, a z drugiej wtyk modułowy. W skanerach przewodowych MS85x wtyk wchodzi do złącza w rękojeści, więc przewód można odłączyć i wymienić.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-skanerow', 'kable-do-skanerow'],
   manufacturerId: 'unitech',
@@ -149,7 +149,7 @@ Z jednej strony ma wtyk USB-A, a z drugiej wtyk modułowy, który wchodzi do zł
     { name: 'Typ', value: 'Przewód USB z ochroną ESD (ESD enhanced)' },
     { name: 'Zgodność', value: MS85X_ZGODNOSC },
   ],
-  applications: ['Wymiana przewodu skanera', 'Zapasowy przewód w strefach EPA'],
+  applications: ['Wymiana przewodu skanera', 'Zapasowy przewód do skanerów MS85x, także w wersjach ESD'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ms85x-podstawka', 'unitech-ms85x-uchwyt-biurkowy', 'unitech-ms85x-etui'],
   downloads: [],

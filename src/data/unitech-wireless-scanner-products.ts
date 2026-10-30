@@ -34,7 +34,6 @@ const MS633_DS = { name: 'Karta katalogowa Unitech MS633 i MS633 LR (EN)', type:
 const MS633_UM = { name: 'Instrukcja obsługi Unitech MS633 i MS633 LR (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms633-instrukcja-en.pdf', size: '5,0 MB' }
 const MS633_QSG = { name: 'Skrócona instrukcja Unitech MS633 i MS633 LR (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms633-skrocona-instrukcja-en.pdf', size: '3,2 MB' }
 const MS652_DS = { name: 'Karta katalogowa Unitech MS652 Plus (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ms652-plus-karta-katalogowa-en.pdf', size: '683 KB' }
-const MS652_UM = { name: 'Instrukcja obsługi Unitech MS652 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms652-plus-instrukcja-en.pdf', size: '4,7 MB' }
 const MS626_DS = { name: 'Karta katalogowa Unitech MS626 Plus (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ms626-plus-karta-katalogowa-en.pdf', size: '732 KB' }
 const MS626_UM = { name: 'Instrukcja obsługi Unitech MS626 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms626-plus-instrukcja-en.pdf', size: '4,0 MB' }
 const MS626_QSG = { name: 'Skrócona instrukcja Unitech MS626 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ms626-plus-skrocona-instrukcja-en.pdf', size: '757 KB' }
@@ -61,7 +60,7 @@ const ms852b: Product = {
   seoTitle: 'Skaner Bluetooth Unitech MS852B 2D ze stacją ładującą',
   seoDescription: 'Skaner kodów kreskowych Unitech MS852B: bezprzewodowy imager 2D z łącznością Bluetooth do 100 m, stacją ładującą i akumulatorem 2850 mAh. Skaner bezprzewodowy Unitech MS852B, czytnik kodów 2D MS852B Unitech. PN: MS852-AUBB0C-SG.',
   shortDescription: 'Unitech MS852B — bezprzewodowy skaner 2D z Bluetooth i stacją ładującą: matryca 1280 × 960, odczyt OCR i kodów z ekranów telefonów, do 20 godzin pracy.',
-  description: `Unitech MS852B to ręczny skaner 2D z Bluetooth do magazynu, produkcji, logistyki i ogólnego skanowania w handlu. Radzi sobie z kodami 1D i 2D na wyświetlaczach telefonów, także z kodami zniszczonymi albo wydrukowanymi w słabej jakości. Rozpoznaje też znaki OCR. Sensor 1280 × 960 pikseli z migawką typu rolling shutter rozróżnia Code 39 od 5 mil i PDF417 od 6,6 mil. Wśród symbologii są DotCode i kody pocztowe, np. Intelligent Mail, KIX i Planet.
+  description: `Unitech MS852B to ręczny skaner 2D z Bluetooth do magazynu, produkcji, logistyki i ogólnego skanowania w handlu. Czyta kody 1D i 2D wyświetlane na ekranach telefonów, także kody uszkodzone lub słabo wydrukowane. Rozpoznaje też znaki OCR. Sensor 1280 × 960 pikseli z migawką typu rolling shutter odczytuje Code 39 od 5 mil i PDF417 od 6,6 mil. Wśród symbologii są DotCode i kody pocztowe, np. Intelligent Mail, KIX i Planet.
 
 Po odłożeniu do stacji ładującej skaner sam paruje się z nią przez Bluetooth. Automatyczny tryb prezentacyjny włącza się kodem ustawień: w stacji skaner czyta bez naciskania spustu, a po wyjęciu wraca do trybu ze spustem. W trybie Auto odczyty spoza zasięgu trafiają do bufora 20 KB i są wysyłane po powrocie w zasięg. Tryb wsadowy ma do dyspozycji 7 MB.
 
@@ -114,7 +113,7 @@ Wymienny akumulator 2850 mAh daje do 20 godzin pracy, a pełne ładowanie trwa p
   faq: [
     {
       question: 'Czym MS852B różni się od MS852B Plus?',
-      answer: 'W MS852B pracuje sensor 1280 × 960 (rolling shutter), który rozróżnia Code 39 od 5 mil, a akumulator wystarcza na 20 godzin. [MS852B Plus](/produkt/unitech-ms852b-plus) ma sensor z migawką globalną o rozdzielczości 1280 × 800, czyta kody od 3 mil, pracuje ponad 25 godzin i dekoduje Digimarc.',
+      answer: 'W MS852B pracuje sensor 1280 × 960 (rolling shutter), który odczytuje Code 39 od 5 mil, a akumulator wystarcza na 20 godzin. [MS852B Plus](/produkt/unitech-ms852b-plus) ma sensor z migawką globalną o rozdzielczości 1280 × 800, czyta kody od 3 mil, pracuje ponad 25 godzin i dekoduje Digimarc.',
     },
     {
       question: 'Z jakiej odległości MS852B czyta kody?',
@@ -126,7 +125,7 @@ Wymienny akumulator 2850 mAh daje do 20 godzin pracy, a pełne ładowanie trwa p
     },
     {
       question: 'Czy do ładowania MS852B potrzebny jest zasilacz?',
-      answer: 'W zestawie z przewodem USB stacja ładuje skaner po podłączeniu do komputera. Zasilacz jest dołączany do wersji z przewodem RS-232, której nie ma w ofercie.',
+      answer: 'Zestaw z przewodem USB nie zawiera zasilacza; stację łączy się z komputerem tym przewodem. Zasilacz jest dołączany do wersji z przewodem RS-232, której nie ma w ofercie.',
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS852B?',
@@ -143,13 +142,13 @@ const ms852bPlus: Product = {
   name: 'Unitech MS852B Plus',
   seoH1: 'Unitech MS852B Plus',
   seoTitle: 'Skaner Bluetooth Unitech MS852B Plus 2D z migawką globalną',
-  seoDescription: 'Skaner kodów kreskowych Unitech MS852B Plus: bezprzewodowy imager 2D 1280 × 800 z migawką globalną, odczytem OCR, DotCode i Digimarc, wersje SR i HD. Czytnik kodów 2D MS852B Plus Unitech, skaner Bluetooth MS852B+. PN: MS852-VUBB0C-SG, MS852-ZUBB0C-SG.',
-  shortDescription: 'Unitech MS852B Plus — bezprzewodowy skaner 2D z matrycą 1280 × 800 i migawką globalną, odczytem OCR, DotCode i Digimarc; wersje SR i HD.',
+  seoDescription: 'Skaner kodów kreskowych Unitech MS852B Plus: bezprzewodowy imager 2D 1280 × 800 z migawką globalną, odczytem OCR, DotCode i Digimarc oraz stacją ładującą. Czytnik kodów 2D MS852B Plus Unitech, skaner Bluetooth MS852B+. PN: MS852-VUBB0C-SG, MS852-ZUBB0C-SG.',
+  shortDescription: 'Unitech MS852B Plus — bezprzewodowy skaner 2D z matrycą 1280 × 800 i migawką globalną, odczytem OCR, DotCode i Digimarc oraz stacją ładującą w zestawie.',
   description: `Unitech MS852B Plus to bezprzewodowy imager 2D z megapikselową matrycą 1280 × 800 i migawką globalną. Jest przeznaczony do logistyki, produkcji oraz inwentaryzacji w magazynach handlowych. Poza kodami 1D i 2D odczytuje znaki OCR, np. ze strony danych paszportu, kody DotCode stosowane na oponach i opakowaniach papierosów oraz kody Digimarc na opakowaniach detalicznych.
 
-Rozdzielczość dla kodów 1D wynosi 3 mil (0,075 mm), a odczyt jest możliwy w świetle do 100 000 luksów, czyli w pełnym słońcu. Celownik jest laserowy czerwony, a oświetlenie białe. Wersja standardowa (SR) odczytuje kod UPC 13 mil z odległości do 57,3 cm, natomiast 20-milowy Code 39 z odległości do 80 cm.
+Rozdzielczość dla kodów 1D wynosi 3 mil (0,075 mm), a odczyt jest możliwy w świetle do 100 000 luksów, czyli w pełnym słońcu. Celownik jest laserowy czerwony, a oświetlenie białe. Kod UPC 13 mil jest czytany z odległości do 57,3 cm, natomiast 20-milowy Code 39 z odległości do 80 cm.
 
-Akumulator 2850 mAh pozwala pracować ponad 25 godzin (odczyt co 5 sekund), a ładowanie trwa poniżej 6,5 godziny. Dane zeskanowane poza zasięgiem trafiają do pamięci i są przesyłane po powrocie w zasięg; tryb wsadowy korzysta z pamięci 7 MB. Oferta obejmuje wersję standardową (SR) i wersję HD do drobnych kodów.`,
+Akumulator 2850 mAh pozwala pracować ponad 25 godzin (odczyt co 5 sekund), a ładowanie trwa poniżej 6,5 godziny. Dane zeskanowane poza zasięgiem trafiają do pamięci i są przesyłane po powrocie w zasięg; tryb wsadowy korzysta z pamięci 7 MB. Karta obejmuje dwa numery PN: MS852-VUBB0C-SG i MS852-ZUBB0C-SG.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-bezprzewodowe'],
   manufacturerId: 'unitech',
@@ -166,12 +165,12 @@ Akumulator 2850 mAh pozwala pracować ponad 25 godzin (odczyt co 5 sekund), a ł
   isNew: true,
   isBestseller: false,
   specifications: [
-    { name: 'Part Number', value: 'MS852-VUBB0C-SG (SR), MS852-ZUBB0C-SG (HD)' },
-    { name: 'Typ skanera', value: 'Ręczny skaner 2D, bezprzewodowy (Bluetooth), ze stacją ładującą; wersja SR (standardowa) i HD (gęste kody)' },
+    { name: 'Part Number', value: 'MS852-VUBB0C-SG, MS852-ZUBB0C-SG' },
+    { name: 'Typ skanera', value: 'Ręczny skaner 2D, bezprzewodowy (Bluetooth), ze stacją ładującą' },
     { name: 'Matryca', value: '1280 × 800, migawka globalna' },
     { name: 'Celownik i oświetlenie', value: 'Celownik laserowy czerwony; oświetlenie białe LED' },
     { name: 'Rozdzielczość', value: '3 mil (0,075 mm) dla kodów 1D' },
-    { name: 'Głębia ostrości (SR)', value: 'UPC 13 mil: 3,4–57,3 cm; Code 39 20 mil: 3,5–80 cm; Code 39 5 mil: 7–30,1 cm; QR 15 mil: 3,3–39 cm' },
+    { name: 'Głębia ostrości', value: 'UPC 13 mil: 3,4–57,3 cm; Code 39 20 mil: 3,5–80 cm; Code 39 5 mil: 7–30,1 cm; QR 15 mil: 3,3–39 cm' },
     { name: 'Kody specjalne', value: 'OCR, DotCode, Digimarc' },
     { name: 'Kody pocztowe', value: 'Australian, British, Canadian, China, Japanese, Korea, Netherlands Post, Planet, Postnet' },
     { name: 'Odporność na światło', value: 'Do 100 000 luksów (światło słoneczne)' },
@@ -189,12 +188,9 @@ Akumulator 2850 mAh pozwala pracować ponad 25 godzin (odczyt co 5 sekund), a ł
   ],
   applications: ['Logistyka i inwentaryzacja w magazynach handlowych', 'Odczyt kodów DotCode na oponach i opakowaniach', 'Odczyt OCR dokumentów'],
   variants: [
-    { partNumber: 'MS852-VUBB0C-SG', name: 'MS852-VUBB0C-SG, wersja standardowa (SR), stacja, przewód USB', attributes: { 'Optyka': 'Standardowa (SR)' }, priceFrom: 1589.09, availability: 'unavailable' },
-    { partNumber: 'MS852-ZUBB0C-SG', name: 'MS852-ZUBB0C-SG, wersja HD, stacja, przewód USB', attributes: { 'Optyka': 'Gęste kody (HD)' }, priceFrom: 1589.09, availability: 'unavailable' },
+    { partNumber: 'MS852-VUBB0C-SG', name: 'MS852-VUBB0C-SG, stacja, przewód USB', attributes: {}, priceFrom: 1589.09, availability: 'unavailable' },
+    { partNumber: 'MS852-ZUBB0C-SG', name: 'MS852-ZUBB0C-SG, stacja, przewód USB', attributes: {}, priceFrom: 1589.09, availability: 'unavailable' },
   ],
-  variantAttributeTooltips: {
-    'Optyka': 'Silnik skanujący MS852B Plus w dwóch wersjach.\n\n• Standardowa (SR) — odczyt z większej odległości: kody UPC 13 mil do 57,3 cm, Code 39 20 mil do 80 cm.\n\n• Gęste kody (HD) — silnik do drobnych kodów, np. Data Matrix o module 6,7 mil, odczytywanych z mniejszej odległości.',
-  },
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ms85x-stacja-ladujaca', 'unitech-ms85x-bateria', 'unitech-ms85x-podstawka', 'unitech-ms85x-uchwyt-biurkowy', 'unitech-ms85x-etui', 'unitech-ms85x-przewod-usb', 'unitech-rp902-zasilacz'],
   relatedProducts: ['unitech-ms852b', 'unitech-ms852b-lr', 'unitech-ms852p', 'unitech-ms852b-plus-esd', 'datalogic-gryphon-gbt4600', 'newland-hr33-marlin-bt'],
@@ -205,8 +201,8 @@ Akumulator 2850 mAh pozwala pracować ponad 25 godzin (odczyt co 5 sekund), a ł
       answer: 'Plus rejestruje obraz migawką globalną i rozpoznaje kody już od 3 mil, a nie od 5 mil. Czas pracy rośnie z 20 do ponad 25 godzin, a lista kodów obejmuje Digimarc. Podstawowy [MS852B](/produkt/unitech-ms852b) korzysta z migawki rolling shutter.',
     },
     {
-      question: 'Którą wersję wybrać: SR czy HD?',
-      answer: 'Wersja SR czyta z większej odległości, np. kod UPC 13 mil do 57,3 cm. Wersja HD jest przeznaczona do drobnych, gęsto zadrukowanych kodów, np. Data Matrix 6,7 mil, odczytywanych z mniejszej odległości. Wersję wskazuje kolumna „Optyka” w tabeli wariantów.',
+      question: 'Czym różnią się numery MS852-VUBB0C-SG i MS852-ZUBB0C-SG?',
+      answer: 'Oba numery oznaczają MS852B Plus ze stacją ładującą i przewodem USB. Konfigurację każdego z numerów ustalamy z klientem przy zamówieniu.',
     },
     {
       question: 'Czy zasięg 100 m dotyczy odczytu kodów?',
@@ -394,11 +390,11 @@ const ms852bPlusEsd: Product = {
   name: 'Unitech MS852B Plus ESD',
   seoH1: 'Unitech MS852B Plus ESD',
   seoTitle: 'Skaner ESD Unitech MS852B Plus 2D Bluetooth do stref EPA',
-  seoDescription: 'Skaner ESD Unitech MS852B Plus: imager 2D HD z Bluetooth w obudowie antystatycznej do pomieszczeń czystych, z odczytem kodów DPM i stacją ładującą. Skaner antystatyczny Unitech MS852B Plus ESD, czytnik kodów ESD. PN: MS852-ZUBB0C-LG.',
-  shortDescription: 'Unitech MS852B Plus ESD — bezprzewodowy skaner 2D HD w obudowie antystatycznej do stref chronionych przed wyładowaniami; odczyt kodów DPM, Bluetooth, ponad 25 godzin pracy.',
+  seoDescription: 'Skaner ESD Unitech MS852B Plus: imager 2D z Bluetooth w obudowie antystatycznej do pomieszczeń czystych, z odczytem kodów DPM i stacją ładującą. Skaner antystatyczny Unitech MS852B Plus ESD, czytnik kodów ESD. PN: MS852-ZUBB0C-LG.',
+  shortDescription: 'Unitech MS852B Plus ESD — bezprzewodowy skaner 2D w obudowie antystatycznej do stref chronionych przed wyładowaniami; odczyt kodów DPM, Bluetooth, ponad 25 godzin pracy.',
   description: `Unitech MS852B Plus ESD to bezprzewodowy skaner 2D do stref chronionych przed wyładowaniami elektrostatycznymi: pomieszczeń czystych i zakładów produkcji wrażliwych na ładunki statyczne. Środek antystatyczny jest wmieszany w tworzywo obudowy i przewodu, dlatego ochrona nie ściera się jak powłoka nałożona na powierzchnię. Rezystancja powierzchniowa mieści się w zakresie 10⁵–10⁹ Ω na kwadrat, a materiał nie zawiera chloru.
 
-Silnik w wersji HD czyta kody Code 39 o module 3 mil z odległości 6,6–18,3 cm oraz kody Data Matrix 6,7 mil z 7,2–18,0 cm. Skaner obsługuje kody DPM, znaki OCR, DotCode i Digimarc. Sygnał dźwiękowy jest głośniejszy, a diody jaśniejsze, więc potwierdzenie odczytu widać i słychać także w ciemnym pomieszczeniu.
+Skaner czyta kody Code 39 o module 3 mil z odległości 6,6–18,3 cm oraz kody Data Matrix 6,7 mil z 7,2–18,0 cm. Obsługuje też kody DPM, znaki OCR, DotCode i Digimarc. Sygnał dźwiękowy jest głośniejszy, a diody jaśniejsze, więc potwierdzenie odczytu widać i słychać także w ciemnym pomieszczeniu.
 
 Ze stacją skaner komunikuje się przez Bluetooth na odległość do 100 m bez przeszkód, a stacja przekazuje dane do komputera przewodem USB. Wymienny akumulator 2850 mAh zapewnia ponad 25 godzin pracy i do 50 000 odczytów na jednym ładowaniu. Klasa szczelności to IP42, a odporność na upadek 2,1 m na beton.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -417,7 +413,7 @@ Ze stacją skaner komunikuje się przez Bluetooth na odległość do 100 m bez p
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: 'MS852-ZUBB0C-LG' },
-    { name: 'Typ skanera', value: 'Ręczny skaner 2D HD (High Density) z odczytem kodów DPM, bezprzewodowy (Bluetooth), ESD, ze stacją ładującą' },
+    { name: 'Typ skanera', value: 'Ręczny skaner 2D z odczytem kodów DPM, bezprzewodowy (Bluetooth), ESD, ze stacją ładującą' },
     { name: 'Obudowa ESD', value: 'Antystatyk wmieszany w tworzywo obudowy i przewodu; 10⁵–10⁹ Ω/sq; bez chloru' },
     { name: 'Matryca', value: '1280 × 800, migawka globalna' },
     { name: 'Rozdzielczość', value: '3 mil (0,075 mm) dla kodów 1D' },
@@ -437,7 +433,7 @@ Ze stacją skaner komunikuje się przez Bluetooth na odległość do 100 m bez p
   ],
   applications: ['Pomieszczenia czyste i strefy EPA', 'Produkcja w strefach chronionych przed wyładowaniami', 'Odczyt kodów DPM'],
   variants: [
-    { partNumber: 'MS852-ZUBB0C-LG', name: 'MS852-ZUBB0C-LG, ESD, HD, Bluetooth, stacja, przewód USB', attributes: {}, priceFrom: 2097.59, availability: 'available' },
+    { partNumber: 'MS852-ZUBB0C-LG', name: 'MS852-ZUBB0C-LG, ESD, Bluetooth, stacja, przewód USB', attributes: {}, priceFrom: 2097.59, availability: 'available' },
   ],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ms85x-stacja-ladujaca-esd', 'unitech-ms85x-bateria', 'unitech-ms85x-przewod-usb', 'unitech-ms85x-podstawka', 'unitech-ms85x-uchwyt-biurkowy', 'unitech-ms85x-etui', 'unitech-rp902-zasilacz'],
@@ -446,7 +442,7 @@ Ze stacją skaner komunikuje się przez Bluetooth na odległość do 100 m bez p
   faq: [
     {
       question: 'Czym skaner ESD różni się od zwykłego MS852B Plus?',
-      answer: 'Obudowa i przewód są wykonane z tworzywa z antystatykiem wmieszanym w materiał. Wersja ESD ma silnik HD i obsługuje kody DPM. Zwykły [MS852B Plus](/produkt/unitech-ms852b-plus) nie ma obudowy antystatycznej i występuje w wersjach SR oraz HD.',
+      answer: 'Obudowa i przewód są wykonane z tworzywa z antystatykiem wmieszanym w materiał. Wersja ESD obsługuje też kody DPM. Zwykły [MS852B Plus](/produkt/unitech-ms852b-plus) nie ma obudowy antystatycznej.',
     },
     {
       question: 'Dlaczego ochrona antystatyczna nie ściera się?',
@@ -458,7 +454,7 @@ Ze stacją skaner komunikuje się przez Bluetooth na odległość do 100 m bez p
     },
     {
       question: 'Czy skaner odczytuje kody DPM?',
-      answer: 'Tak. Silnik HD obsługuje kody DPM, czyli wybijane lub grawerowane bezpośrednio na elementach. Skaner czyta też kody OCR, DotCode i Digimarc.',
+      answer: 'Tak. Skaner obsługuje kody DPM, czyli kody wybijane lub grawerowane bezpośrednio na elementach. Skaner czyta też kody OCR, DotCode i Digimarc.',
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS852B Plus ESD?',
@@ -600,7 +596,6 @@ Matryca 1280 × 800 rejestruje 60 klatek na sekundę. EAN-13 13 mil skaner odczy
     { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
     { name: 'Wymiary i masa', value: 'Skaner 161 × 72 × 96,5 mm, 180 g; stacja 106 × 80,5 × 70 mm' },
     { name: 'Zawartość zestawu', value: 'Skaner, stacja z odbiornikiem 2,4 GHz i przewodem' },
-    { name: 'Gwarancja producenta', value: '36 miesięcy' },
   ],
   applications: ['Kasa i sprawdzanie kuponów', 'Weryfikacja danych osobowych', 'Inwentaryzacja i serwis w terenie'],
   variants: [
@@ -648,7 +643,7 @@ const ms838b: Product = {
 
 Matryca 640 × 480 pracuje z szybkością 60 klatek na sekundę. Rozpoznaje kody liniowe i dwuwymiarowe drukowane na etykietach, a przy kasie także kupony pokazane na ekranie telefonu. Zakres odczytu EAN-13 13 mil to 60–310 mm, a rozdzielczość sięga od 3 mil. Czerwona dioda wyznacza pole odczytu, a białe oświetlenie wspomaga odczyt.
 
-Poza zasięgiem skaner zapisuje w pamięci 2 MB do 40 000 kodów EAN i przesyła je po powrocie. Akumulator 18650 2600 mAh daje ponad 16 godzin pracy, a ładowanie trwa 5 godzin. Masa skanera to 200 g, klasa szczelności IP42, a odporność na upadek na beton 1,5 m. Razem ze skanerem dostarczane są odbiornik 2,4 GHz i przewód USB-C do ładowania.`,
+Poza zasięgiem skaner zapisuje w pamięci 2 MB do 40 000 kodów EAN. Zapisane kody przesyła się do komputera kodem „Upload all data” z instrukcji. Akumulator 18650 2600 mAh daje ponad 16 godzin pracy, a ładowanie trwa 5 godzin. Masa skanera to 200 g, klasa szczelności IP42, a odporność na upadek na beton 1,5 m. Razem ze skanerem dostarczane są odbiornik 2,4 GHz i przewód USB-C do ładowania.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-bezprzewodowe'],
   manufacturerId: 'unitech',
@@ -677,7 +672,7 @@ Poza zasięgiem skaner zapisuje w pamięci 2 MB do 40 000 kodów EAN i przesyła
     { name: 'Zasięg radia', value: '2,4 GHz: 100 m; Bluetooth: 10 m (w otwartej przestrzeni)' },
     { name: 'Tryby pracy', value: 'Ze spustem, buforowy' },
     { name: 'Pamięć', value: '2 MB; 40 000 kodów EAN poza zasięgiem' },
-    { name: 'Akumulator', value: 'Wymienny 18650, 2600 mAh; ładowanie ok. 5 h; praca ponad 16 h' },
+    { name: 'Akumulator', value: '18650, 2600 mAh; ładowanie ok. 5 h; praca ponad 16 h' },
     { name: 'Klasa szczelności', value: 'IP42' },
     { name: 'Odporność na upadki', value: '1,5 m na beton (sam skaner)' },
     { name: 'Temperatura pracy', value: '-10°C do +50°C' },
@@ -705,11 +700,11 @@ Poza zasięgiem skaner zapisuje w pamięci 2 MB do 40 000 kodów EAN i przesyła
     },
     {
       question: 'Ile kodów skaner przechowuje poza zasięgiem?',
-      answer: 'Pamięć 2 MB mieści 40 000 kodów EAN. Skaner wysyła je do komputera po powrocie w zasięg.',
+      answer: 'Pamięć 2 MB mieści 40 000 kodów EAN. Zapisane dane przesyła się do komputera po zeskanowaniu kodu „Upload all data” z instrukcji.',
     },
     {
       question: 'Czy do MS838B można dokupić podstawkę i drugi odbiornik?',
-      answer: 'Tak. Do skanera pasują [podstawka 5200-900014G](/produkt/unitech-ms83x-podstawka) i [odbiornik 2,4 GHz 5500-900098G](/produkt/unitech-ms83x-odbiornik-2-4-ghz). Nowy odbiornik paruje się kodem „2.4G Receiver Pairing” z instrukcji albo przytrzymaniem przycisku skanera przez około 16 sekund. Te same akcesoria obsługują [MS836B](/produkt/unitech-ms836b).',
+      answer: 'Tak. Do skanera pasują [podstawka 5200-900014G](/produkt/unitech-ms83x-podstawka) i [odbiornik 2,4 GHz 5500-900098G](/produkt/unitech-ms83x-odbiornik-2-4-ghz). Przed parowaniem nowego odbiornika wyjmuje się poprzedni, a następnie skanuje kod „2.4G Receiver Pairing” z instrukcji. Parowanie przytrzymaniem przycisku skanera przez około 16 sekund działa po włączeniu tej funkcji kodem z instrukcji; fabrycznie jest wyłączone. Te same akcesoria obsługują [MS836B](/produkt/unitech-ms836b).',
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS838B?',
@@ -760,7 +755,7 @@ Akumulator 18650 2600 mAh pozwala pracować ponad 30 godzin, a ładowanie trwa 5
     { name: 'Zasięg radia', value: '2,4 GHz: 100 m; Bluetooth: 10 m (w otwartej przestrzeni)' },
     { name: 'Tryby pracy', value: 'Ze spustem, buforowy' },
     { name: 'Pamięć', value: '16 MB; 40 000 kodów EAN poza zasięgiem' },
-    { name: 'Akumulator', value: 'Wymienny 18650, 2600 mAh; ładowanie ok. 5 h; praca ponad 30 h' },
+    { name: 'Akumulator', value: '18650, 2600 mAh; ładowanie ok. 5 h; praca ponad 30 h' },
     { name: 'Klasa szczelności', value: 'IP42' },
     { name: 'Odporność na upadki', value: '1,5 m na beton (sam skaner)' },
     { name: 'Temperatura pracy', value: '-10°C do +50°C' },
@@ -792,7 +787,7 @@ Akumulator 18650 2600 mAh pozwala pracować ponad 30 godzin, a ładowanie trwa 5
     },
     {
       question: 'Czym MS836B różni się od MS838B?',
-      answer: 'MS836B ma silnik laserowy 1D, pamięć 16 MB i czas pracy ponad 30 godzin. [MS838B](/produkt/unitech-ms838b) ma imager 2D, pamięć 2 MB i ponad 16 godzin pracy. Obudowa, radio i akcesoria są wspólne.',
+      answer: 'MS836B ma silnik laserowy 1D, pamięć 16 MB i czas pracy ponad 30 godzin. [MS838B](/produkt/unitech-ms838b) ma imager 2D, pamięć 2 MB i ponad 16 godzin pracy. Wymiary, radio i akcesoria są wspólne.',
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS836B?',
@@ -825,7 +820,7 @@ Skaner komunikuje się przez Bluetooth (HID, SPP i BLE 4.2) w zasięgu ponad 50 
   images: ['/images/products/MS633-DUBU00-SG.png', '/images/products/MS633-DUBU00-SG-2.png', '/images/products/MS633-DUBU00-SG-3.png', '/images/products/MS633-DUBU00-SG-4.png'],
   imageDescriptions: [
     'Unitech MS633 — skaner pierścieniowy widoczny z przodu pod kątem, niebieski przycisk spustu i okno skanera',
-    'Unitech MS633 — widok z boku, głowica skanera i uchwyt na palec',
+    'Unitech MS633 — widok z przodu pod kątem z drugiej strony, okno skanera i uchwyt na palec',
     'Unitech MS633 — widok od tyłu, port USB-C i uchwyt na palec z paskiem na rzep',
     'Unitech MS633 LR — wersja dalekiego zasięgu, widok z przodu pod kątem na okno skanera',
   ],
@@ -898,9 +893,9 @@ const ms652Plus: Product = {
   seoTitle: 'Skaner pierścieniowy Unitech MS652 Plus 2D z Bluetooth i NFC',
   seoDescription: 'Skaner pierścieniowy Unitech MS652 Plus: noszony na dwóch palcach skaner 2D z Bluetooth do 100 m, parowaniem NFC i pamięcią 590 000 kodów. Skaner na palec Unitech MS652 Plus, ring scanner MS652+. PN: MS652-AUDB00-SG.',
   shortDescription: 'Unitech MS652 Plus — skaner pierścieniowy 2D noszony na dwóch palcach: Bluetooth do 100 m, parowanie NFC z telefonem, pamięć do 590 000 kodów, akumulator 800 mAh.',
-  description: `Unitech MS652 Plus to skaner 2D noszony na dwóch palcach, w wersji MS652-AUDB00-SG z modułem spustu na dwa palce. Takie mocowanie zwiększa stabilność skanera na dłoni. Przycisk spustu można obrócić na drugą stronę, więc skaner pracuje na lewej i prawej ręce; moduł spustu zdejmuje się i zakłada ponownie przyciskiem zwalniającym i obrotem. Dwie podkładki na palce pozwalają dopasować skaner do dłoni.
+  description: `Unitech MS652 Plus to skaner 2D noszony na dwóch palcach, w wersji MS652-AUDB00-SG z modułem spustu na dwa palce. Takie mocowanie zwiększa stabilność skanera na dłoni. Przycisk spustu można obrócić na drugą stronę, więc skaner pracuje na lewej i prawej ręce; moduł spustu zdejmuje się i zakłada ponownie przyciskiem zwalniającym i obrotem. Podkładka na palec, złożona z dwóch sklejanych części, pozwala dopasować skaner do dłoni.
 
-Bluetooth występuje w podwójnej wersji: LE 4.2 i klasycznej 2.1 klasy 1, z zasięgiem 100 m w linii widoczności. Moduł NFC umożliwia parowanie z telefonem lub tabletem z Androidem albo iOS przez zbliżenie, gdy skaner pracuje w trybie Bluetooth HID. W trybie Auto dane zeskanowane poza zasięgiem nie giną: pamięć 7,5 MB mieści do 590 000 kodów EAN-13 i wysyła je po powrocie w zasięg.
+Bluetooth występuje w podwójnej wersji: LE 4.2 i klasycznej 2.1 klasy 1, z zasięgiem do 100 m w otwartej przestrzeni. Moduł NFC umożliwia parowanie z telefonem lub tabletem z Androidem albo iOS przez zbliżenie, gdy skaner pracuje w trybie Bluetooth HID. W trybie Auto skaner zapisuje odczyty spoza zasięgu w buforze i wysyła je po powrocie w zasięg. Pamięć skanera ma 7,5 MB i mieści do 590 000 kodów EAN-13.
 
 Matryca 1280 × 960 czyta kody 1D, 2D i PDF417 z papieru oraz z ekranów. Akumulator 800 mAh pracuje 9 godzin przy odczycie co 5 sekund i ładuje się 4 godziny przewodem USB lub w stacji. Obudowa IP42 waży 95 g. Skaner współpracuje z komputerem noszonym [Unitech WD200 Plus](/produkt/unitech-wd200-plus).`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -936,7 +931,7 @@ Matryca 1280 × 960 czyta kody 1D, 2D i PDF417 z papieru oraz z ekranów. Akumul
     { name: 'Temperatura pracy', value: '-10°C do +50°C' },
     { name: 'Temperatura przechowywania', value: '-20°C do +60°C' },
     { name: 'Wymiary i masa', value: '50 × 71 × 21 mm, 95 g' },
-    { name: 'Zawartość zestawu', value: 'Skaner, akumulator, przewód micro USB, podkładka na palec, moduł spustu' },
+    { name: 'Zawartość zestawu', value: 'Skaner z modułem spustu na dwa palce, akumulator, przewód micro USB, podkładka na palec' },
     { name: 'Gwarancja producenta', value: '15 miesięcy' },
   ],
   applications: ['Handel i hotelarstwo', 'Logistyka i serwis w terenie', 'Praca z wolnymi rękami i stabilnym mocowaniem'],
@@ -946,7 +941,7 @@ Matryca 1280 × 960 czyta kody 1D, 2D i PDF417 z papieru oraz z ekranów. Akumul
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ms652-bateria', 'unitech-ms652-stacja-usb', 'unitech-ms652-przewod-micro-usb', 'unitech-ms652-uchwyt-na-dwa-palce', 'unitech-ms652-podkladka-386268g', 'unitech-ms652-podkladka-386286g', 'unitech-ms652-pasek', 'unitech-ea660-smycz', 'unitech-rp902-zasilacz'],
   relatedProducts: ['unitech-ms633', 'unitech-ms626-plus', 'zebra-rs5100', 'zebra-rs6100', 'proglove-mark-2'],
-  downloads: [MS652_DS, MS652_UM],
+  downloads: [MS652_DS],
   faq: [
     {
       question: 'Jak sparować MS652 Plus z telefonem?',
@@ -954,7 +949,7 @@ Matryca 1280 × 960 czyta kody 1D, 2D i PDF417 z papieru oraz z ekranów. Akumul
     },
     {
       question: 'Czy dane giną po wyjściu poza zasięg?',
-      answer: 'Nie, jeśli skaner pracuje w trybie Auto. Pamięć 7,5 MB mieści do 590 000 kodów EAN-13, a skaner wysyła je po powrocie w zasięg.',
+      answer: 'Nie, jeśli skaner pracuje w trybie Auto. Skaner zapisuje wtedy odczyty w buforze, a po odzyskaniu łączności przesyła je dalej. Tryb wsadowy przechowuje dane w pamięci 7,5 MB (do 590 000 kodów EAN-13).',
     },
     {
       question: 'Czy moduł spustu można zdjąć?',
@@ -983,9 +978,9 @@ const ms626Plus: Product = {
   shortDescription: 'Unitech MS626 Plus — skaner pierścieniowy 2D o masie 19,4 g z Bluetooth 5.0, 120 klatkami na sekundę i dotykowym spustem działającym w rękawicach.',
   description: `Unitech MS626 Plus waży 19,4 g i mieści się na palcu w obudowie 27,6 × 46,2 × 26,8 mm. Jest przeznaczony do handlu, hotelarstwa, magazynów i serwisu w terenie. Dotykowy przycisk spustu działa także w rękawicach, a skaner można przestawić na lewą lub prawą rękę.
 
-Matryca 640 × 480 wykonuje do 120 klatek na sekundę i rozpoznaje kody 1D i 2D od 3 mil, także wyświetlane na ekranach telefonów i monitorów LCD. Lista kodów 2D obejmuje m.in. DotCode, Han Xin i MaxiCode. Pas odczytu ma szerokość do 75 mm; UPC 13 mil odczytuje z 65–315 mm, a Code 39 5 mil z 50–150 mm.
+Matryca 640 × 480 wykonuje do 120 klatek na sekundę i rozpoznaje kody 1D i 2D z rozdzielczością optyczną 3 mil, także wyświetlane na ekranach telefonów i monitorów LCD. Lista kodów 2D obejmuje m.in. DotCode, Han Xin i MaxiCode. Pas odczytu ma szerokość do 75 mm; UPC 13 mil odczytuje z 65–315 mm, a Code 39 5 mil z 50–150 mm.
 
-Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umożliwia pracę przez USB HID lub wirtualny port COM. Akumulator 240 mAh wystarcza na około 5 godzin, a pełne ładowanie trwa 2,5 godziny. Obudowa IP42 znosi upadki z 1,5 m. Do skanera dołączono przewód USB-C oraz pasek na rzep.`,
+Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umożliwia pracę przez USB HID lub wirtualny port COM. Akumulator 240 mAh wystarcza na do 5 godzin pracy; pełne ładowanie zajmuje 2,5 godziny. Obudowa IP42 znosi upadki z 1,5 m. Do skanera dołączono przewód USB-C oraz pasek na rzep.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-pierscieniowe'],
   manufacturerId: 'unitech',
@@ -994,10 +989,10 @@ Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umo�
   availability: 'on-order',
   images: ['/images/products/MS626-PUBB00-SG.png', '/images/products/MS626-PUBB00-SG-2.png', '/images/products/MS626-PUBB00-SG-3.png', '/images/products/MS626-PUBB00-SG-4.png'],
   imageDescriptions: [
-    'Unitech MS626 Plus — skaner pierścieniowy z żółtym panelem dotykowego spustu, widok z przodu pod kątem',
+    'Unitech MS626 Plus — skaner pierścieniowy z żółtym panelem górnym i przyciskiem funkcyjnym, widok z przodu pod kątem na okno skanera',
     'Unitech MS626 Plus — widok z boku, pasek na rzep na palec',
     'Unitech MS626 Plus — dwa skanery pierścieniowe, widok z góry i z przodu',
-    'Unitech MS626 Plus — widok z boku, żółty panel spustu i pasek na rzep',
+    'Unitech MS626 Plus — widok z boku, żółty panel z logo i pasek na rzep',
   ],
   tags: TAGI_HANDEL,
   isNew: true,
@@ -1011,7 +1006,7 @@ Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umo�
     { name: 'Głębia ostrości', value: 'Code 39 5 mil: 50–150 mm; UPC/EAN 13 mil: 65–315 mm; QR 15 mil: 35–175 mm; PDF417 6,67 mil: 55–120 mm; Data Matrix 10 mil: 50–120 mm' },
     { name: 'Kody 2D', value: 'QR, Micro QR, PDF417, MicroPDF417, Data Matrix, Aztec, MaxiCode, Han Xin, DotCode' },
     { name: 'Interfejsy', value: 'Bluetooth: HID, SPP, BLE; USB HID i USB VCP (USB-C)' },
-    { name: 'Łączność Bluetooth', value: '5.0 dual mode (klasa 2), do 20 m w otwartej przestrzeni' },
+    { name: 'Łączność Bluetooth', value: '5.0 dual mode (klasa 2), do 20 m w linii widoczności' },
     { name: 'Pamięć', value: '2 MB' },
     { name: 'Akumulator', value: '3,7 V, 240 mAh; ładowanie ok. 2,5 h; praca do 5 h' },
     { name: 'Klasa szczelności', value: 'IP42' },
@@ -1021,7 +1016,6 @@ Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umo�
     { name: 'Temperatura ładowania', value: '+10°C do +45°C' },
     { name: 'Wymiary i masa', value: '27,6 × 46,2 × 26,8 mm, 19,4 g' },
     { name: 'Zawartość zestawu', value: 'Skaner, przewód USB-C, pasek na rzep' },
-    { name: 'Gwarancja producenta', value: '15 miesięcy' },
   ],
   applications: ['Handel i hotelarstwo', 'Magazyn i serwis w terenie', 'Praca w rękawicach'],
   variants: [
@@ -1038,7 +1032,7 @@ Bluetooth 5.0 w trybie dual mode zapewnia zasięg do 20 m, a przewód USB-C umo�
     },
     {
       question: 'Jak długo pracuje akumulator MS626 Plus?',
-      answer: 'Akumulator 240 mAh wystarcza na około 5 godzin pracy. Pełne ładowanie zajmuje 2,5 godziny; akumulator ładuje się w zakresie 10–45°C.',
+      answer: 'Akumulator 240 mAh wystarcza na do 5 godzin pracy. Pełne ładowanie zajmuje 2,5 godziny; akumulator ładuje się w zakresie 10–45°C.',
     },
     {
       question: 'Czy MS626 Plus czyta kody z ekranu telefonu?',
@@ -1067,7 +1061,7 @@ const ms912Plus2d: Product = {
   shortDescription: 'Unitech MS912 Plus 2D — kieszonkowy skaner 2D o masie 30,7 g z Bluetooth 5.0 do 20 m, trybem pamięci 2 MB, funkcją iOS Hotkey i przewodem USB-C.',
   description: `Unitech MS912 Plus 2D to kieszonkowy skaner 2D o masie 30,7 g i wymiarach 72 × 30 × 20 mm. Nosi się go na smyczy lub zawiesza na szlufce paska, a obsługa ogranicza się do jednego przycisku. Zastosowania obejmują hotelarstwo, serwis w terenie i ochronę zdrowia.
 
-Silnik 2D 640 × 480 czyta kody 1D od 5 mil i kody 2D od 10 mil; UPC/EAN 13 mil z odległości 55–270 mm, QR 15 mil z 40–190 mm. Bluetooth 5.0 (klasa 2) z profilami HID i SPP działa do 20 m w otwartej przestrzeni, a funkcja iOS Hotkey przełącza klawiaturę ekranową iPhone’a lub iPada. W trybie pamięci 2 MB skaner zapisuje odczyty zamiast wysyłać je od razu, a po zakończeniu skanowania eksportuje dane do komputera przez USB.
+Silnik 2D 640 × 480 czyta kody 1D od 5 mil i kody 2D od 10 mil; UPC/EAN 13 mil z odległości 55–270 mm, QR 15 mil z 40–190 mm. Bluetooth 5.0 (klasa 2) z profilami HID i SPP działa do 20 m w linii widoczności, a funkcja iOS Hotkey przełącza klawiaturę ekranową iPhone’a lub iPada. W trybie pamięci 2 MB skaner zapisuje odczyty zamiast wysyłać je od razu, a po zakończeniu skanowania eksportuje dane do komputera przez USB.
 
 Akumulator 350 mAh wystarcza na 5000 odczytów (jeden odczyt co 5 sekund, połączenie Bluetooth). Ładowanie trwa 2 godziny przez port USB-C. Skaner wytrzymuje upadki z 1,5 m. Smycz na nadgarstek i przewód USB-C stanowią wyposażenie dołączone do skanera.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -1095,7 +1089,7 @@ Akumulator 350 mAh wystarcza na 5000 odczytów (jeden odczyt co 5 sekund, połą
     { name: 'Głębia ostrości', value: 'Code 39 5 mil: 55–100 mm; UPC/EAN 13 mil: 55–270 mm; QR 15 mil: 40–190 mm; PDF417 6,7 mil: 45–120 mm; Data Matrix 10 mil: 40–90 mm' },
     { name: 'Odporność na światło', value: 'Do 70 000 luksów (światło słoneczne)' },
     { name: 'Interfejsy', value: 'Bluetooth: HID i SPP; USB HID, USB VCP, tryb pamięci (USB-C)' },
-    { name: 'Łączność Bluetooth', value: '5.0 (klasa 2), do 20 m w otwartej przestrzeni' },
+    { name: 'Łączność Bluetooth', value: '5.0 (klasa 2), do 20 m w linii widoczności' },
     { name: 'Pamięć', value: '2 MB' },
     { name: 'Akumulator', value: '3,7 V, 350 mAh; ładowanie ok. 2 h; 5000 odczytów (1 odczyt / 5 s)' },
     { name: 'Odporność na upadki', value: '1,5 m' },
@@ -1124,7 +1118,7 @@ Akumulator 350 mAh wystarcza na 5000 odczytów (jeden odczyt co 5 sekund, połą
     },
     {
       question: 'Z jakiej odległości MS912 Plus 2D czyta kody?',
-      answer: 'Kody UPC/EAN 13 mil są czytane z odległości 55–270 mm, a kody QR 15 mil z 40–190 mm. Najdrobniejsze kody 1D mają moduł 5 mil.',
+      answer: 'Kody UPC/EAN 13 mil są czytane z odległości 55–270 mm, a kody QR 15 mil z 40–190 mm. Skaner czyta kody 1D o module od 5 mil.',
     },
     {
       question: 'Jak długo pracuje akumulator?',
@@ -1177,7 +1171,7 @@ Akumulator 350 mAh wystarcza na 6000 odczytów na jednym ładowaniu (jeden odczy
     { name: 'Głębia ostrości', value: 'Code 39 4 mil: 40–65 mm; Code 39 5 mil: 35–90 mm; Code 39 10 mil: 35–195 mm; UPC/EAN 13 mil: 35–230 mm' },
     { name: 'Odporność na światło', value: 'Do 100 000 luksów (bezpośrednie słońce)' },
     { name: 'Interfejsy', value: 'Bluetooth: HID i SPP; USB HID, USB VCP' },
-    { name: 'Łączność Bluetooth', value: '2.1+EDR, do 10 m w otwartej przestrzeni' },
+    { name: 'Łączność Bluetooth', value: '2.1+EDR, do 10 m w linii widoczności' },
     { name: 'Akumulator', value: '3,7 V, 350 mAh; 6000 odczytów na ładowanie (1 odczyt / 5 s)' },
     { name: 'Odporność na upadki', value: '1,5 m' },
     { name: 'Temperatura pracy', value: '0°C do +50°C' },
@@ -1201,7 +1195,7 @@ Akumulator 350 mAh wystarcza na 6000 odczytów na jednym ładowaniu (jeden odczy
     },
     {
       question: 'Czy MS912 Plus czyta kody z ekranu telefonu?',
-      answer: 'Tak, ale wyłącznie kod liniowy. Takie kody skaner odczytuje w każdych warunkach oświetlenia, od ciemności po bezpośrednie słońce do 100 000 luksów.',
+      answer: 'Tak, ale wyłącznie kody liniowe (1D). Skaner czyta kody w oświetleniu od całkowitej ciemności do bezpośredniego słońca (100 000 luksów).',
     },
     {
       question: 'Jaki jest zasięg Bluetooth w MS912 Plus?',
@@ -1317,7 +1311,7 @@ const wd200Plus: Product = {
   shortDescription: 'Unitech WD200 Plus — komputer noszony na nadgarstku z Androidem 13 do kompletacji z wolnymi rękami: aparat 16 MP, HF/NFC, współpraca ze skanerami Unitech MS633, MS652 Plus, MS912 Plus 2D oraz MS926.',
   description: `Unitech WD200 Plus to komputer noszony z Androidem 13 (z certyfikatem GMS), przeznaczony do intensywnej kompletacji zamówień w magazynach, handlu, logistyce, transporcie i na placach przeładunkowych. Nie ma wbudowanego silnika skanującego. Kody odczytuje aparat 16 MP z lampą błyskową, obsługiwany aplikacją USS Camera, albo sparowany skaner Bluetooth. Współpracują z nim skanery pierścieniowe [MS633](/produkt/unitech-ms633) i [MS652 Plus](/produkt/unitech-ms652-plus), kieszonkowe [MS912 Plus](/produkt/unitech-ms912-plus), [MS912 Plus 2D](/produkt/unitech-ms912-plus-2d) i [MS926](/produkt/unitech-ms926) oraz czytnik UHF RFID [RP902](/produkt/unitech-rp902).
 
-Terminal odczytuje znaczniki HF/NFC 13,56 MHz (ISO 14443A/B i ISO 15693). Dwa mikrofony i głośnik 1 W z układem Smart PA zapewniają czytelną rozmowę w hałasie. Flotą zarządzają SOTI, 42Gears, MoboLink i VMware, a narzędzia Unitech (StageGO, OEMConfig, Enterprise Launcher) przygotowują urządzenia do pracy. Aktualizacje oprogramowania dostarcza FOTA. Ośmiordzeniowy procesor współpracuje z pamięcią operacyjną 4 GB i pamięcią Flash 64 GB, a zakres temperatury pracy to −20…50°C.
+Terminal odczytuje znaczniki HF/NFC 13,56 MHz (ISO 14443A/B i ISO 15693). Dwa mikrofony i głośnik 1 W z układem Smart PA zapewniają czytelną rozmowę w hałasie. Flotą zarządzają SOTI, 42Gears, MoboLink i VMware, a narzędzia Unitech (StageGO, OEMConfig, Enterprise Launcher) przygotowują urządzenia do pracy. Oprogramowanie układowe aktualizuje się przez FOTA, a aplikacje Unitech przez narzędzie Software Update. Ośmiordzeniowy procesor współpracuje z pamięcią operacyjną 4 GB i pamięcią Flash 64 GB, a zakres temperatury pracy to −20…50°C.
 
 W pudełku są terminal, przewód USB-C i skrócona instrukcja. Mocowanie na nadgarstek oraz zasilacz albo stację ładującą kupuje się osobno.
 

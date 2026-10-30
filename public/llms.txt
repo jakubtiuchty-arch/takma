@@ -399,21 +399,21 @@ A: Tak, oferujemy bezpłatne doradztwo techniczne niezależnie od producenta. Ko
 ## Skanery i komputer noszony Unitech
 - [Skanery Unitech](https://www.takma.com.pl/skanery-unitech): ręczne skanery kodów 1D i 2D przewodowe (USB, w MS838 także RS-232) i bezprzewodowe (Bluetooth albo radio 2,4 GHz z odbiornikiem USB), skanery pierścieniowe i kieszonkowe, wersje ESD-safe do stref EPA, skanery do kodów DPM, skanery dalekiego zasięgu i skaner prezentacyjny. Wyposażenie zestawu zależy od numeru PN.
 - [Unitech MS852](https://www.takma.com.pl/produkt/unitech-ms852) (PN MS852-AUCB00-SG): skaner 2D 1280 × 960 z OCR, kody z ekranów telefonów, 147 g, IP42, upadki z 2,1 m.
-- [Unitech MS852 Plus](https://www.takma.com.pl/produkt/unitech-ms852-plus) (PN MS852-VUCB00-SG standard, MS852-ZUCB00-SG High Density): skaner 2D z migawką global shutter, odczyt w ruchu, DotCode, Digimarc i OCR, 165 g.
+- [Unitech MS852 Plus](https://www.takma.com.pl/produkt/unitech-ms852-plus) (PN MS852-VUCB00-SG, MS852-ZUCB00-SG): skaner 2D z migawką global shutter, odczyt w ruchu, DotCode, Digimarc i OCR, 165 g.
 - [Unitech MS852 LR](https://www.takma.com.pl/produkt/unitech-ms852-lr) (PN MS852-OUCB00-SG): skaner 2D dalekiego zasięgu, odczyt od 7,6 cm do 21 m, praca od −20°C, przewód USB i przewód Y w zestawie.
 - [Unitech MS852 DPM ESD](https://www.takma.com.pl/produkt/unitech-ms852-dpm-esd) (PN MS852-XUCB00-LG): skaner 2D do kodów DPM, obudowa i przewód ESD-safe, krzyżowy celownik laserowy, 60 FPS, USB HID i CDC.
-- [Unitech MS852 Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852-plus-esd) (PN MS852-ZUCB00-LG): skaner 2D High Density w wersji ESD-safe, OCR, DotCode i Digimarc, USB.
-- [Unitech MS851 ESD](https://www.takma.com.pl/produkt/unitech-ms851-esd) (PN MS851-SUCB00-LG): skaner laserowy 1D w wersji ESD-safe, 104 skany na sekundę, odczyt do 4,57 m, 147 g.
+- [Unitech MS852 Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852-plus-esd) (PN MS852-ZUCB00-LG): skaner 2D z migawką global shutter w wersji ESD-safe, OCR, DotCode i Digimarc, USB.
+- [Unitech MS851 ESD](https://www.takma.com.pl/produkt/unitech-ms851-esd) (PN MS851-SUCB00-LG): skaner laserowy 1D w wersji ESD-safe, 104 skany na sekundę, odczyt kodu Code 39 100 mil do 4,57 m, 147 g.
 - [Unitech MS838](https://www.takma.com.pl/produkt/unitech-ms838) (PN MS838-2UCB0S-SG USB z podstawką, MS838-2RCB00-SG RS-232): skaner 2D, IP52, upadki z 1,5 m, tryb prezentacyjny.
 - [Unitech MS282e](https://www.takma.com.pl/produkt/unitech-ms282e) (PN MS282-3UCB00-SG): smukły skaner 2D o masie 125 g, tryb ręczny i prezentacyjny, USB.
 - [Unitech MS836](https://www.takma.com.pl/produkt/unitech-ms836) (PN MS836-SUCBS0-SG): skaner laserowy 1D, trzy tryby pracy, szerokość odczytu 220 mm, IP52.
 - [Unitech MS250](https://www.takma.com.pl/produkt/unitech-ms250) (PN MS250-CUCB00-DG): skaner kontaktowy CCD 1D, odczyt do 90 mm, 200 skanów na sekundę, 83 g.
 - [Unitech TS100](https://www.takma.com.pl/produkt/unitech-ts100) (PN TS100-SUCB00-SG): skaner prezentacyjny 2D, okno odczytu 50° × 35°, auto-sensing 60 fps, podstawa kątowa, USB.
 - [Unitech MS852B](https://www.takma.com.pl/produkt/unitech-ms852b) (PN MS852-AUBB0C-SG): skaner 2D z Bluetooth do 100 m w otwartej przestrzeni, stacja ładująca w zestawie, akumulator 2850 mAh na do 20 godzin, 213 g.
-- [Unitech MS852B Plus](https://www.takma.com.pl/produkt/unitech-ms852b-plus) (PN MS852-VUBB0C-SG standard, MS852-ZUBB0C-SG HD): skaner 2D z Bluetooth i migawką global shutter, OCR, DotCode i Digimarc, stacja w zestawie.
+- [Unitech MS852B Plus](https://www.takma.com.pl/produkt/unitech-ms852b-plus) (PN MS852-VUBB0C-SG, MS852-ZUBB0C-SG): skaner 2D z Bluetooth i migawką global shutter, OCR, DotCode i Digimarc, stacja w zestawie.
 - [Unitech MS852B LR](https://www.takma.com.pl/produkt/unitech-ms852b-lr) (PN MS852-OUBB0C-SG): skaner 2D dalekiego zasięgu z Bluetooth, odczyt do 21 m, stacja w zestawie.
 - [Unitech MS852P](https://www.takma.com.pl/produkt/unitech-ms852p) (PN MS852-AUPBGC-SG): skaner 2D z radiem 2,4 GHz i odbiornikiem USB (10 m), OCR-A i OCR-B, stacja i zasilacz w zestawie.
-- [Unitech MS852B Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852b-plus-esd) (PN MS852-ZUBB0C-LG): skaner 2D High Density z Bluetooth w obudowie ESD-safe, kody DPM, stacja w zestawie.
+- [Unitech MS852B Plus ESD](https://www.takma.com.pl/produkt/unitech-ms852b-plus-esd) (PN MS852-ZUBB0C-LG): skaner 2D z Bluetooth i migawką global shutter w obudowie ESD-safe, kody DPM, stacja w zestawie.
 - [Unitech MS851B ESD](https://www.takma.com.pl/produkt/unitech-ms851b-esd) (PN MS851-SUBB0C-LG): skaner laserowy 1D z Bluetooth w obudowie ESD-safe, ponad 30 godzin pracy, stacja w zestawie.
 - [Unitech MS822B](https://www.takma.com.pl/produkt/unitech-ms822b) (PN MS822-2UBU02-SG): skaner 2D ze stacją z odbiornikiem 2,4 GHz (100 m), Bluetooth 4.2 i USB-C, IP52, ponad 40 godzin pracy.
 - [Unitech MS838B](https://www.takma.com.pl/produkt/unitech-ms838b) (PN MS838-2UBB0D-SG): skaner 2D z odbiornikiem USB 2,4 GHz (100 m), Bluetooth i USB-C, pamięć na 40 000 kodów EAN, ponad 16 godzin pracy.

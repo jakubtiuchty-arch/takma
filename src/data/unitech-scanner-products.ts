@@ -25,7 +25,7 @@ Optykę tworzą sensor CMOS 1280 × 960 z migawką rolling shutter, zielony celo
 
 Zasięg zależy od rodzaju kodu. UPC 100% jest czytany w przedziale 4,6–49,5 cm, QR 20 mil w przedziale 3,8–29,2 cm, a Data Matrix o module 10 mil między 7,4 a 21,6 cm. Kod może być pochylony lub odchylony o ±60° i obrócony w dowolnym kierunku.
 
-Bez przewodu obudowa ma 147 g. Mocniejszy brzęczyk i jaśniejsze diody sygnalizują odczyt nawet w ciemnym miejscu. Po podłączeniu do portu USB skaner działa od razu, bez instalowania oprogramowania; w pracy pobiera 235 mA, w czuwaniu 60 mA.
+Bez przewodu skaner waży 147 g. Mocniejszy brzęczyk i jaśniejsze diody sygnalizują odczyt nawet w ciemnym miejscu. Po podłączeniu do portu USB skaner działa od razu, bez instalowania oprogramowania; w pracy pobiera 235 mA, w czuwaniu 60 mA.
 
 W pudełku MS852-AUCB00-SG są skaner i przewód. Pracę bez trzymania w dłoni umożliwiają tryb prezentacyjny, włączany kodem konfiguracyjnym, oraz osobna podstawka.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -116,7 +116,7 @@ const ms852Plus: Product = {
   slug: 'unitech-ms852-plus',
   name: 'Unitech MS852 Plus',
   seoH1: 'Unitech MS852 Plus',
-  shortDescription: 'Unitech MS852 Plus — przewodowy skaner kodów 2D z migawką global shutter: odczyt w ruchu, DotCode, Digimarc i OCR; wersje z optyką standardową i High Density.',
+  shortDescription: 'Unitech MS852 Plus — przewodowy skaner kodów 2D z migawką global shutter: odczyt w ruchu, DotCode, Digimarc i OCR, interfejs USB.',
   seoTitle: 'Skaner 2D Unitech MS852 Plus — global shutter, DotCode, Digimarc',
   seoDescription: 'Skaner kodów kreskowych Unitech MS852 Plus: czytnik 2D z migawką global shutter, odczyt kodów w ruchu, DotCode, Digimarc i OCR, USB, IP42. Skaner Unitech MS852 Plus, MS852+ Unitech, skaner 2D do produkcji i kas. PN: MS852-VUCB00-SG, MS852-ZUCB00-SG.',
   description: `Unitech MS852 Plus czyta kody w ruchu. Matryca 1280 × 800 z migawką global shutter toleruje przesuwanie skanera i kodu, więc skaner pracuje także tam, gdzie towar nie stoi w miejscu.
@@ -127,7 +127,7 @@ Zastosowania to bilety mobilne na lotniskach, kasy z kuponami mobilnymi, logisty
 
 Skaner pobiera 252 mA w pracy i 77 mA w czuwaniu. Obudowa ma klasę ochrony IP42 i wytrzymuje upadek z 2,1 m. Kody pocztowe obejmują m.in. Australian Post, British Post i Postnet.
 
-Karta obejmuje dwie wersje optyki: standardową (MS852-VUCB00-SG) i High Density (MS852-ZUCB00-SG). Każda ma w zestawie przewód USB, a skaner waży 165 g. Żadna wersja nie przełącza trybu pracy po włożeniu do podstawki; tryb prezentacyjny włącza się kodem konfiguracyjnym.`,
+Karta obejmuje dwa numery PN: MS852-VUCB00-SG i MS852-ZUCB00-SG. Każdy ma w zestawie przewód USB, a skaner waży 165 g. Żaden z nich nie przełącza trybu pracy po włożeniu do podstawki; tryb prezentacyjny włącza się kodem konfiguracyjnym.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-przewodowe'],
   manufacturerId: 'unitech',
@@ -150,7 +150,7 @@ Karta obejmuje dwie wersje optyki: standardową (MS852-VUCB00-SG) i High Density
   isNew: true,
   isBestseller: false,
   specifications: [
-    { name: 'Typ skanera', value: 'Ręczny skaner 2D (imager), przewodowy; wersje standardowa i High Density' },
+    { name: 'Typ skanera', value: 'Ręczny skaner 2D (imager), przewodowy' },
     { name: 'Matryca', value: '1280 × 800 pikseli, migawka global shutter, tolerancja ruchu' },
     { name: 'Celownik i oświetlenie', value: 'Celownik: czerwony laser; oświetlenie: białe LED' },
     { name: 'Kody 1D', value: 'Codabar, Code 11, Code 128, Code 2 of 5, Code 39, Code 93 i 93i, EAN/JAN-13, EAN/JAN-8, IATA Code 2 of 5, Interleaved 2 of 5, Matrix 2 of 5, MSI, GS1 DataBar, UPC-A, UPC-E, Code 32 (PARAF), TLC39' },
@@ -178,12 +178,9 @@ Karta obejmuje dwie wersje optyki: standardową (MS852-VUCB00-SG) i High Density
   ],
   applications: ['Bilety mobilne na lotniskach', 'Kasy i kupony mobilne w handlu', 'Produkcja i logistyka', 'Odczyt DotCode na oponach i paczkach papierosów'],
   variants: [
-    { partNumber: 'MS852-VUCB00-SG', name: 'MS852 Plus, optyka standardowa, USB', attributes: { 'Optyka': 'Standardowa' }, priceFrom: 889.91, availability: 'unavailable' },
-    { partNumber: 'MS852-ZUCB00-SG', name: 'MS852 Plus High Density, USB', attributes: { 'Optyka': 'High Density (HD)' }, priceFrom: 937.57, availability: 'unavailable' },
+    { partNumber: 'MS852-VUCB00-SG', name: 'MS852 Plus, USB', attributes: {}, priceFrom: 889.91, availability: 'unavailable' },
+    { partNumber: 'MS852-ZUCB00-SG', name: 'MS852 Plus, USB', attributes: {}, priceFrom: 937.57, availability: 'unavailable' },
   ],
-  variantAttributeTooltips: {
-    'Optyka': 'Wersja optyki skanera MS852 Plus.\n\n• Standardowa — odczyt kodów drukowanych i z ekranów w typowych zadaniach.\n\n• High Density (HD) — odczyt kodów o bardzo małym module, czyli drobnych i gęsto drukowanych.',
-  },
   compatibleAccessories: [],
   relatedAccessories: MS85X_AKCESORIA,
   relatedProducts: ['unitech-ms852', 'unitech-ms838', 'unitech-ms282e', 'zebra-ds4608', 'newland-hr33-marlin', 'honeywell-xenon-ultra-1960'],
@@ -198,8 +195,8 @@ Karta obejmuje dwie wersje optyki: standardową (MS852-VUCB00-SG) i High Density
       answer: 'MS852 Plus ma matrycę 1280 × 800 z migawką global shutter i tolerancją ruchu, a [MS852](/produkt/unitech-ms852) matrycę 1280 × 960 z migawką rolling shutter. Tylko MS852 Plus czyta kody Digimarc. Waży 165 g, a MS852 147 g.',
     },
     {
-      question: 'Którą wersję MS852 Plus wybrać: standardową czy High Density?',
-      answer: 'Wersję High Density (MS852-ZUCB00-SG) wybiera się do kodów o bardzo małym module. Wersja standardowa (MS852-VUCB00-SG) obsługuje typowe etykiety i kody z ekranów. Zasięgi w specyfikacji nie są podane osobno dla wersji High Density.',
+      question: 'Czym różnią się numery MS852-VUCB00-SG i MS852-ZUCB00-SG?',
+      answer: 'Oba numery oznaczają MS852 Plus z interfejsem USB i przewodem USB w zestawie. Różnice w wykonaniu potwierdzamy przed realizacją zamówienia.',
     },
     {
       question: 'Do czego służy odczyt DotCode?',
@@ -247,7 +244,7 @@ Kody 1D czyta od 3 mil przy minimalnym kontraście druku 25%. Skaner waży 184 g
   imageDescriptions: [
     'Unitech MS852 LR — czarny skaner 2D dalekiego zasięgu, widok z boku na rękojeść i żółty spust',
     'Unitech MS852 LR — widok z przodu pod kątem na okno odczytu i żółty spust',
-    'Unitech MS852 LR — skaner leżący na boku, na głowicy napis LR i logo unitech',
+    'Unitech MS852 LR — widok z tyłu pod kątem na głowicę z napisem LR i logo unitech oraz rękojeść',
   ],
   tags: ['magazyn', 'logistyka', 'produkcja'],
   availability: 'unavailable',
@@ -398,7 +395,7 @@ Skaner czyta także kody drukowane 1D i 2D, m.in. QR Code, Aztec Code, Data Matr
     },
     {
       question: 'Czy MS852 DPM ESD czyta zwykłe etykiety i kody z ekranów?',
-      answer: 'Tak. Etykiety z kodami liniowymi i dwuwymiarowymi oraz kody wyświetlane na ekranach urządzeń mobilnych nie sprawiają problemu. Lista symboli jest węższa niż w [Unitech MS852 Plus ESD](/produkt/unitech-ms852-plus-esd): nie obejmuje OCR ani kodów pocztowych.',
+      answer: 'Tak. Skaner czyta większość kodów 1D i 2D z etykiet oraz z ekranów urządzeń mobilnych. Lista symboli jest węższa niż w [Unitech MS852 Plus ESD](/produkt/unitech-ms852-plus-esd): nie obejmuje OCR ani kodów pocztowych.',
     },
     {
       question: 'Z jakiej odległości MS852 DPM ESD odczytuje kody?',
@@ -410,7 +407,7 @@ Skaner czyta także kody drukowane 1D i 2D, m.in. QR Code, Aztec Code, Data Matr
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS852 DPM ESD?',
-      answer: 'Kody drukowane i z ekranów w strefach ESD czyta [Unitech MS852 Plus ESD](/produkt/unitech-ms852-plus-esd). Długie kody liniowe czyta [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Przewodowe skanery DPM innych marek to [Newland NVH300 Angler DP](/produkt/newland-nvh300) i [Datalogic PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).',
+      answer: 'Kody drukowane i z ekranów w strefach ESD czyta [Unitech MS852 Plus ESD](/produkt/unitech-ms852-plus-esd). Kody 1D z dużej odległości czyta [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Przewodowe skanery DPM innych marek to [Newland NVH300 Angler DP](/produkt/newland-nvh300) i [Datalogic PowerScan PD9531 DPM Evo](/produkt/datalogic-powerscan-pd9531-dpm).',
     },
   ],
   createdAt: '2026-10-30',
@@ -421,12 +418,12 @@ const ms852PlusEsd: Product = {
   slug: 'unitech-ms852-plus-esd',
   name: 'Unitech MS852 Plus ESD',
   seoH1: 'Unitech MS852 Plus ESD',
-  shortDescription: 'Unitech MS852 Plus ESD — przewodowy skaner 2D w wersji ESD-safe i High Density do kodów drukowanych w strefach EPA i cleanroomach; OCR, DotCode, Digimarc, USB.',
-  seoTitle: 'Skaner 2D ESD Unitech MS852 Plus ESD — High Density, USB',
-  seoDescription: 'Unitech MS852 Plus ESD — skaner kodów kreskowych 2D w wersji High Density z obudową i przewodem ESD-safe, OCR, DotCode i Digimarc, odczyt kodów w ruchu, USB. Skaner ESD Unitech MS852 Plus, MS852+ ESD Unitech do cleanroomów i stref EPA. PN: MS852-ZUCB00-LG.',
+  shortDescription: 'Unitech MS852 Plus ESD — przewodowy skaner 2D w wersji ESD-safe do kodów drukowanych w strefach EPA i cleanroomach; OCR, DotCode, Digimarc, USB.',
+  seoTitle: 'Skaner 2D ESD Unitech MS852 Plus ESD — OCR, DotCode, USB',
+  seoDescription: 'Unitech MS852 Plus ESD — skaner kodów kreskowych 2D z obudową i przewodem ESD-safe, OCR, DotCode i Digimarc, odczyt kodów w ruchu, USB. Skaner ESD Unitech MS852 Plus, MS852+ ESD Unitech do cleanroomów i stref EPA. PN: MS852-ZUCB00-LG.',
   description: `Unitech MS852 Plus ESD to skaner 2D do pomieszczeń czystych i stref produkcji chronionych przed wyładowaniami elektrostatycznymi. Optyka z serii MS852 Plus pracuje w obudowie i z przewodem z tworzywa antystatycznego.
 
-Wersja MS852-ZUCB00-LG ma optykę High Density do kodów o małym module. Sensor 1280 × 800 ma migawkę global shutter, więc ruch skanera lub kodu nie przeszkadza w odczycie. Skaner czyta kody drukowane i z ekranów telefonów, OCR, DotCode i kody Digimarc. Zasięg dla Code 39 20 mil sięga 80 cm, dla UPC 13 mil wynosi 3,4–57,3 cm, dla Data Matrix 10 mil 7,2–29,7 cm. Pobór prądu w pracy to 252 mA.
+Sensor 1280 × 800 ma migawkę global shutter, więc ruch skanera lub kodu nie przeszkadza w odczycie. Skaner czyta kody drukowane i z ekranów telefonów, OCR, DotCode i kody Digimarc. Zasięg dla Code 39 20 mil sięga 80 cm, dla UPC 13 mil wynosi 3,4–57,3 cm, dla Data Matrix 10 mil 7,2–29,7 cm. Pobór prądu w pracy to 252 mA.
 
 Tworzywo z dodatkiem antystatycznym ma rezystancję powierzchniową 10⁵–10⁹ Ω/sq. Dodatek jest wymieszany w masie tworzywa, a nie naniesiony na powierzchnię. Szczegóły ochrony ESD opisano na stronie [skanerów Unitech](/skanery-unitech).
 
@@ -449,7 +446,7 @@ Skaner ma interfejs USB i pracuje w handlu, logistyce i produkcji. Masa wynosi 1
   isNew: true,
   isBestseller: false,
   specifications: [
-    { name: 'Typ skanera', value: 'Ręczny skaner 2D High Density (imager), ESD-safe, przewodowy' },
+    { name: 'Typ skanera', value: 'Ręczny skaner 2D (imager), ESD-safe, przewodowy' },
     { name: 'Matryca', value: '1280 × 800 pikseli, migawka global shutter, tolerancja ruchu' },
     { name: 'Kody 1D', value: 'Codabar, Code 11, Code 128, Code 2 of 5, Code 39, Code 93 i 93i, EAN/JAN-13, EAN/JAN-8, IATA Code 2 of 5, Interleaved 2 of 5, Matrix 2 of 5, MSI, GS1 DataBar, UPC-A, UPC-E, Code 32 (PARAF), TLC39' },
     { name: 'Kody 2D', value: 'Codablock A, Codablock F, PDF417, MicroPDF417, Aztec Code, Data Matrix, MaxiCode, QR Code, Han Xin, Grid Matrix, DotCode' },
@@ -477,7 +474,7 @@ Skaner ma interfejs USB i pracuje w handlu, logistyce i produkcji. Masa wynosi 1
   ],
   applications: ['Cleanroomy i strefy EPA', 'Produkcja w środowiskach chronionych przed ładunkami elektrostatycznymi', 'Magazyn i logistyka w strefach ESD'],
   variants: [
-    { partNumber: 'MS852-ZUCB00-LG', name: 'MS852 Plus High Density ESD, USB', attributes: {}, priceFrom: 1207.73, availability: 'on-order' },
+    { partNumber: 'MS852-ZUCB00-LG', name: 'MS852 Plus ESD, USB', attributes: {}, priceFrom: 1207.73, availability: 'on-order' },
   ],
   compatibleAccessories: [],
   relatedAccessories: MS85X_AKCESORIA,
@@ -490,7 +487,7 @@ Skaner ma interfejs USB i pracuje w handlu, logistyce i produkcji. Masa wynosi 1
   faq: [
     {
       question: 'Czym MS852 Plus ESD różni się od MS852 Plus?',
-      answer: 'Optyka jest ta sama. Wersja ESD ma obudowę i przewód z tworzywa antystatycznego oraz wyłącznie interfejs USB. W ofercie jest jej wariant High Density (MS852-ZUCB00-LG), a [MS852 Plus](/produkt/unitech-ms852-plus) jest w wersjach standardowej i HD.',
+      answer: 'Optyka jest ta sama. Wersja ESD ma obudowę i przewód z tworzywa antystatycznego oraz interfejs USB. W ofercie jest numer MS852-ZUCB00-LG.',
     },
     {
       question: 'Czym MS852 Plus ESD różni się od MS852 DPM ESD?',
@@ -506,7 +503,7 @@ Skaner ma interfejs USB i pracuje w handlu, logistyce i produkcji. Masa wynosi 1
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS852 Plus ESD?',
-      answer: 'Kody liniowe z odległości do 4,5 m czyta [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Bez ochrony ESD ta sama optyka jest w [Unitech MS852 Plus](/produkt/unitech-ms852-plus). Z innych marek kody drukowane w 2D czytają m.in. [Zebra DS4608](/produkt/zebra-ds4608) i [Newland HR33 Marlin](/produkt/newland-hr33-marlin).',
+      answer: 'Duże kody liniowe, np. z odległości 4,57 m, czyta [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Bez ochrony ESD ta sama optyka jest w [Unitech MS852 Plus](/produkt/unitech-ms852-plus). Z innych marek kody drukowane w 2D czytają m.in. [Zebra DS4608](/produkt/zebra-ds4608) i [Newland HR33 Marlin](/produkt/newland-hr33-marlin).',
     },
   ],
   createdAt: '2026-10-30',
@@ -517,10 +514,10 @@ const ms851Esd: Product = {
   slug: 'unitech-ms851-esd',
   name: 'Unitech MS851 ESD',
   seoH1: 'Unitech MS851 ESD',
-  shortDescription: 'Unitech MS851 ESD — przewodowy skaner laserowy kodów 1D w wersji ESD-safe: 104 skany na sekundę, odczyt do 4,5 m, cztery tryby pracy, masa 147 g.',
-  seoTitle: 'Skaner laserowy ESD Unitech MS851 ESD — kody 1D do 4,5 m',
-  seoDescription: 'Skaner kodów kreskowych Unitech MS851 ESD: czytnik laserowy 1D, 104 skany na sekundę, odczyt do 4,5 m, obudowa i przewód ESD-safe, USB, IP42, 147 g. Skaner laserowy Unitech MS851 ESD, MS851 Unitech ESD do strefy EPA. PN: MS851-SUCB00-LG.',
-  description: `Unitech MS851 ESD to skaner laserowy do kodów liniowych 1D, który czyta z odległości do 4,5 m. Dla Code 39 100 mil zasięg to 4,57 m, dla Code 39 20 mil 1,17 m, a dla UPC 13 mil 63,5 cm.
+  shortDescription: 'Unitech MS851 ESD — przewodowy skaner laserowy kodów 1D w wersji ESD-safe: 104 skany na sekundę, odczyt do 4,57 m (Code 39 100 mil), cztery tryby pracy, masa 147 g.',
+  seoTitle: 'Skaner laserowy ESD Unitech MS851 ESD — kody 1D do 4,57 m',
+  seoDescription: 'Skaner kodów kreskowych Unitech MS851 ESD: czytnik laserowy 1D, 104 skany na sekundę, odczyt do 4,57 m (Code 39 100 mil), obudowa i przewód ESD-safe, USB, IP42, 147 g. Skaner laserowy Unitech MS851 ESD, MS851 Unitech ESD do strefy EPA. PN: MS851-SUCB00-LG.',
+  description: `Unitech MS851 ESD to skaner laserowy do kodów liniowych 1D, który czyta duże kody Code 39 100 mil z odległości do 4,57 m. Dla Code 39 20 mil zasięg to 1,17 m, a dla UPC 13 mil 63,5 cm.
 
 Dioda laserowa 650 nm wykonuje 104 (±12) skany na sekundę w obu kierunkach. Rozdzielczość wynosi 4 mil (0,1 mm). Skaner toleruje pochylenie ±65° i skos ±40°. Do wyboru są cztery tryby pracy: spustu, impulsowy, migowy i ciągły.
 
@@ -528,7 +525,7 @@ Masa skanera bez przewodu to 147 g, a pobór prądu w pracy poniżej 110 mA. Obu
 
 Skaner czyta m.in. Code 39, Code 128, Interleaved 2 of 5, Codabar, UPC, EAN i GS1 DataBar.
 
-Zastosowania to obieg dokumentów, handel i inwentaryzacja, a także długie kody liniowe w strefach ESD. W zestawie MS851-SUCB00-LG są skaner i przewód USB, a podstawkę kupuje się osobno.`,
+Zastosowania to obieg dokumentów, handel i inwentaryzacja, a także odczyt kodów 1D z dużej odległości w strefach ESD. W zestawie MS851-SUCB00-LG są skaner i przewód USB, a podstawkę kupuje się osobno.`,
   categoryId: 'skanery-kodow-kreskowych',
   subcategoryIds: ['skanery-przewodowe'],
   manufacturerId: 'unitech',
@@ -540,8 +537,8 @@ Zastosowania to obieg dokumentów, handel i inwentaryzacja, a także długie kod
     '/images/products/MS851-SUCB00-LG-3.png',
   ],
   imageDescriptions: [
-    'Unitech MS851 ESD — czarny skaner laserowy leżący na boku, na głowicy napis ESD i logo unitech',
-    'Unitech MS851 ESD — widok z przodu pod kątem na rękojeść i głowicę (zdjęcie poglądowe: obudowa wspólna dla serii MS85x ESD)',
+    'Unitech MS851 ESD — czarny skaner laserowy, widok z tyłu pod kątem na głowicę z napisem ESD i logo unitech',
+    'Unitech MS851 ESD — widok z góry pod kątem na głowicę i rękojeść (zdjęcie poglądowe: obudowa wspólna dla serii MS85x ESD)',
     'Unitech MS851 ESD — widok z przodu pod kątem na okno odczytu i rękojeść (zdjęcie poglądowe: obudowa wspólna dla serii MS85x ESD)',
   ],
   tags: ['produkcja', 'magazyn'],
@@ -574,7 +571,7 @@ Zastosowania to obieg dokumentów, handel i inwentaryzacja, a także długie kod
     { name: 'Gwarancja producenta', value: '60 miesięcy' },
     { name: 'Part Number', value: 'MS851-SUCB00-LG' },
   ],
-  applications: ['Obieg dokumentów', 'Handel i inwentaryzacja', 'Długie kody liniowe w strefach ESD'],
+  applications: ['Obieg dokumentów', 'Handel i inwentaryzacja', 'Odczyt kodów 1D z dużej odległości w strefach ESD'],
   variants: [
     { partNumber: 'MS851-SUCB00-LG', name: 'MS851 ESD, laser 1D, USB', attributes: {}, priceFrom: 826.33, availability: 'unavailable' },
   ],
@@ -596,7 +593,7 @@ Zastosowania to obieg dokumentów, handel i inwentaryzacja, a także długie kod
       answer: 'W trybie spustu laser świeci do zwolnienia spustu, udanego odczytu albo upływu limitu czasu. W trybie impulsowym spust uruchamia laser, który świeci do udanego odczytu lub limitu czasu. Tryby ciągły i migowy działają bez spustu. W trybie migowym zasięg odczytu jest mniejszy.',
     },
     {
-      question: 'Jaka jest różnica między zasięgiem 4,5 m a odczytem zwykłych etykiet?',
+      question: 'Jaka jest różnica między zasięgiem 4,57 m a odczytem zwykłych etykiet?',
       answer: 'Zasięg 4,57 m dotyczy kodu Code 39 o module 100 mil, czyli bardzo dużego kodu. Zwykłe etykiety UPC o module 13 mil skaner czyta do 63,5 cm.',
     },
     {
@@ -625,7 +622,7 @@ Skaner czyta kody 1D o rozdzielczości do 3 mil, także uszkodzone i słabo wydr
 
 Obudowa ma klasę IP52, a test wielokrotnych zrzutów na beton przeprowadzono z 1,5 m. Skaner waży 245 g, a spust ma trwałość 1 mln naciśnięć. Pracuje w trybie spustu oraz w trybie prezentacyjnym z automatycznym wykrywaniem kodu.
 
-Skaner obsługuje OPOS i JPOS. Dane z kodu można uzupełnić prefiksem, sufiksem i identyfikatorem kodu. Zakres temperatur pracy to −10…+50°C, a pobór prądu w pracy wynosi poniżej 142 mA.
+Skaner obsługuje OPOS i JPOS. Do danych można dodać prefiks, sufiks i identyfikator kodu oraz zmienić ich format. Zakres temperatur pracy to −10…+50°C, a pobór prądu w pracy wynosi poniżej 142 mA.
 
 Zastosowania to sklepy, supermarkety, apteki i hotele.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -793,15 +790,15 @@ Zestaw MS282-3UCB00-SG zawiera skaner i przewód USB. Podstawka jest opcjonalnym
   faq: [
     {
       question: 'Czym są tryby Sense, Pulse, Continuous i Batch w MS282e?',
-      answer: 'Sense jest ustawieniem fabrycznym: skaner rozpoczyna odczyt za każdym razem, gdy wykryje kod przed oknem. W trybie Continuous odczyty następują jeden po drugim, a naciśnięcie spustu je wstrzymuje lub wznawia. W trybie Pulse odczyt startuje po zwolnieniu spustu i trwa do zdekodowania kodu lub do końca czasu sesji. Tryb Batch powtarza odczyty, dopóki spust jest wciśnięty.',
+      answer: 'W trybie Sense skaner rozpoczyna odczyt za każdym razem, gdy wykryje kod przed oknem. W trybie Continuous odczyty następują jeden po drugim, a naciśnięcie spustu je wstrzymuje lub wznawia. W trybie Pulse odczyt startuje po zwolnieniu spustu i trwa do zdekodowania kodu lub do końca czasu sesji. Tryb Batch powtarza odczyty, dopóki spust jest wciśnięty.',
     },
     {
       question: 'Czy MS282e czyta kody z ekranów telefonów?',
-      answer: 'Tak. Kupony mobilne i karty lojalnościowe pokazane na ekranie smartfona skaner czyta tak samo jak etykiety. Radzi sobie też z kodami uszkodzonymi lub słabo wydrukowanymi.',
+      answer: 'Tak. Kupony mobilne i karty lojalnościowe pokazane na ekranie smartfona skaner czyta tak samo jak etykiety. Czyta też kody uszkodzone lub słabo wydrukowane.',
     },
     {
       question: 'Jak ustawić MS282e na stanowisku?',
-      answer: 'Do tego służy opcjonalna [podstawka Unitech 5200-900013G](/produkt/unitech-ms282e-podstawka) z giętkim ramieniem. Skaner osadzony w podstawce pracuje w trybie prezentacyjnym, a po wyjęciu nadal działa ze spustem.',
+      answer: 'Do tego służy opcjonalna [podstawka Unitech 5200-900013G](/produkt/unitech-ms282e-podstawka) z giętkim ramieniem. Skaner ma tryb prezentacyjny, w którym czyta kody bez naciskania spustu, oraz tryb ręczny ze spustem; tryb wybiera się kodem konfiguracyjnym z instrukcji.',
     },
     {
       question: 'Jak MS282e łączy się z komputerem?',
@@ -827,7 +824,7 @@ const ms836: Product = {
 
 Dioda laserowa 650 nm wykonuje 100 skanów na sekundę, a dekodowanie trwa 3,3 ms. Skaner odczytuje kody liniowe o rozdzielczości 4 mil. Szerokość odczytu wynosi 220 mm, a głębia ostrości dla kodu EAN-13 o module 13 mil sięga 10–265 mm. Kąt skanowania wynosi ±30°. Skaner czyta wyłącznie kody liniowe 1D.
 
-Obsługiwane są m.in. EAN-8, EAN-13, UPC-A, UPC-E, Code 39, Code 128, Codabar i GS1 DataBar. Dane można uzupełniać prefiksem, sufiksem i identyfikatorem kodu. Odczyt jest możliwy przy świetle otoczenia 0–100 000 lx, a kąt pochylenia i odchylenia skanera względem kodu może wynosić ±60°.
+Obsługiwane są m.in. EAN-8, EAN-13, UPC-A, UPC-E, Code 39, Code 128, Codabar i GS1 DataBar. Konfiguracja pozwala dopisać do każdego odczytu prefiks, sufiks i identyfikator kodu. Odczyt jest możliwy przy świetle otoczenia 0–100 000 lx, a kąt pochylenia i odchylenia skanera względem kodu może wynosić ±60°.
 
 Obudowa IP52 jest sprawdzona w upadkach z wysokości 1,5 m. Masa wynosi 245 g, pobór prądu w pracy poniżej 85 mA, a interfejs to USB. Skaner jest przeznaczony do handlu i hotelarstwa, a przy intensywnym skanowaniu kodów liniowych także do zadań przemysłowych.`,
   categoryId: 'skanery-kodow-kreskowych',
@@ -901,7 +898,7 @@ Obudowa IP52 jest sprawdzona w upadkach z wysokości 1,5 m. Masa wynosi 245 g, p
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS836?',
-      answer: 'W wersji ESD i z zasięgiem do 4,5 m skaner laserowy to [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Skaner kontaktowy z czujnikiem CCD to [Unitech MS250](/produkt/unitech-ms250). Kody liniowe czytają też [Newland HR15 Wahoo](/produkt/newland-hr15-wahoo) i [Zebra LI2208](/produkt/zebra-li2208).',
+      answer: 'W wersji ESD i z zasięgiem do 4,57 m (Code 39 100 mil) skaner laserowy to [Unitech MS851 ESD](/produkt/unitech-ms851-esd). Skaner kontaktowy z czujnikiem CCD to [Unitech MS250](/produkt/unitech-ms250). Kody liniowe czytają też [Newland HR15 Wahoo](/produkt/newland-hr15-wahoo) i [Zebra LI2208](/produkt/zebra-li2208).',
     },
   ],
   createdAt: '2026-10-30',
@@ -934,7 +931,7 @@ Zastosowania to kasy POS, obieg dokumentów, identyfikacja danych osobowych i ko
     '/images/products/MS250-CUCB00-DG-4.png',
   ],
   imageDescriptions: [
-    'Unitech MS250 — ciemny skaner kontaktowy z niebieskim spustem, widok z góry pod kątem na okno odczytu',
+    'Unitech MS250 — ciemny skaner kontaktowy, widok z góry pod kątem na głowicę z oknem odczytu',
     'Unitech MS250 — widok z przodu na okno odczytu i wąską rękojeść',
     'Unitech MS250 — widok z boku na zakrzywioną rękojeść i niebieski spust',
     'Unitech MS250 — widok od spodu na duży niebieski spust',
@@ -999,7 +996,7 @@ Zastosowania to kasy POS, obieg dokumentów, identyfikacja danych osobowych i ko
     },
     {
       question: 'Jakie są alternatywy dla Unitech MS250?',
-      answer: 'Laser 1D z szerokością odczytu 220 mm to [Unitech MS836](/produkt/unitech-ms836). Budżetowe skanery CCD innych marek to [Newland HR11 Aringa](/produkt/newland-hr11-aringa) i [Newland HR15 Wahoo](/produkt/newland-hr15-wahoo).',
+      answer: 'Laser 1D z szerokością odczytu 220 mm to [Unitech MS836](/produkt/unitech-ms836). Skanery 1D innych marek to [Newland HR11 Aringa](/produkt/newland-hr11-aringa) i [Newland HR15 Wahoo](/produkt/newland-hr15-wahoo).',
     },
   ],
   createdAt: '2026-10-30',
