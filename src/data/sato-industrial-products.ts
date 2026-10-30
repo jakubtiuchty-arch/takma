@@ -312,9 +312,29 @@ satoIndustrialProducts.push({
   images: ['/images/products/sato-cl4nx-plus-main.png'],
   imageDescriptions: ['SATO CL4NX Plus — przemysłowa drukarka etykiet, widok z przodu pod kątem'],
   seoTitle: 'SATO CL4NX Plus — drukarka etykiet 203, 305 i 609 dpi | TAKMA',
-  seoDescription: 'SATO CL4NX Plus: przemysłowa drukarka etykiet 104 mm, do 355 mm/s, taśma 600 m i platforma AEP. Sprawdź ceny, dostępność i akcesoria w TAKMA.',
+  seoDescription: 'SATO CL4NX Plus: przemysłowa drukarka etykiet 104 mm, 203, 305 lub 609 dpi, do 355 mm/s, taśma 600 m, tryb Micro Label i emulacja ZPL.',
   shortDescription: 'Przemysłowa drukarka termiczna i termotransferowa. Nadruk do 104 mm, prędkość do 355 mm/s, kolorowy LCD i taśma do 600 m.',
-  description: 'SATO CL4NX Plus to przemysłowa drukarka etykiet do produkcji, handlu i logistyki. Drukuje na szerokości do 104 mm. Aluminiowa konstrukcja i stalowy tor materiału wspierają pracę w wymagającym otoczeniu. Tryb Micro Label pomaga pozycjonować nadruk na małych etykietach. Kolorowy ekran LCD pokazuje stan urządzenia oraz instrukcje obsługi. Głowicę i wałek można wymienić bez narzędzi. Platforma AEP umożliwia uruchamianie aplikacji na drukarce, a SATO Online Services wspiera zdalny nadzór.',
+  description: `SATO CL4NX Plus to przemysłowa drukarka termiczna i termotransferowa do etykiet w produkcji, handlu i logistyce. Drukuje na szerokości do 104 mm w rozdzielczości 203, 305 lub 609 dpi. Ma aluminiową obudowę, stalowy tor materiału i dwuczęściową pokrywę.
+
+## Prędkość do 355 mm/s i tryb Micro Label
+
+Wersje 203 i 305 dpi drukują z prędkością do 355 mm/s, czyli 14 cali/s. Wersja 609 dpi drukuje do 152 mm/s. Najdłuższy wydruk ma odpowiednio 2500, 1500 i 400 mm. Tryb Micro Label pomaga utrzymać położenie nadruku na małych etykietach, na przykład na płytkach drukowanych i komponentach.
+
+## Etykiety 22–128 mm i taśma do 600 m
+
+Etykieta bez podkładu może mieć 22–128 mm szerokości i 0,060–0,268 mm grubości. Rolka ma do 265 mm średnicy, na gilzie 76 lub 101 mm. Taśma barwiąca ma 39,5–128 mm szerokości, gilzę 25,4 mm i do 600 m długości. Taśma o szerokości 39,5 mm może mieć najwyżej 450 m. Nawój etykiet i taśmy do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień.
+
+## Łączność i emulacja ZPL
+
+W standardzie drukarka ma USB 2.0 typu A i B, Ethernet, RS-232C, port równoległy IEEE 1284, port EXT i NFC. Wi-Fi 802.11a/b/g/n/ac w pasmach 2,4 i 5 GHz oraz Bluetooth 3.0 są opcją. Własnym językiem drukarki jest SBPL. Drukarka automatycznie rozpoznaje też emulacje SZPL, SDPL, SIPL, STCL i SEPL. SZPL to emulacja języka ZPL drukarek Zebra.
+
+## Obsługa i konserwacja
+
+Kolorowy wyświetlacz LCD 3,5 cala obsługuje się przyciskami. Pokazuje stan drukarki, komunikaty w 31 językach i 18 filmów instruktażowych. Głowicę i wałek dociskowy można wymienić bez narzędzi. Biała linia na wałku pokazuje zużycie jego powierzchni. Platforma AEP uruchamia aplikacje bezpośrednio na drukarce, a SATO Online Services (SOS) pomaga nadzorować drukarki zdalnie.
+
+## Wyposażenie dodatkowe
+
+W ofercie są wersje z ręcznym odrywaniem, z gilotyną i z odklejakiem z nawijakiem podkładu, a także z Wi-Fi lub Bluetooth. Producent oferuje też gilotynę rotacyjną, gilotynę do etykiet bez podkładu, zegar RTC, moduł RFID, zewnętrzny nawijak i osłonę zewnętrzną.`,
   subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   quoteOnly: false, priceFrom: 7946.36, availability: 'available',
   keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni', rozdzielczosc: '203 / 305 / 609 dpi', szerokoscDruku: '104 mm', szerokoscEtykiet: '22–128 mm bez podkładu', predkoscDruku: 'Do 355 mm/s przy 203 i 305 dpi' },
@@ -336,6 +356,11 @@ satoIndustrialProducts.push({
     { name: 'Konstrukcja', value: 'Aluminiowa obudowa, stalowy tor materiału, dwuczęściowa pokrywa' },
     { name: 'Wymiary', value: '271 × 457 × 321 mm (szer. × gł. × wys.)' },
     { name: 'Masa', value: '15,1 kg bez materiałów i opcji' },
+    { name: 'Procesor', value: '2 × 800 MHz: Linux i ITRON' },
+    { name: 'Czujniki', value: 'Czujnik znacznika I-mark (odbiciowy) i czujnik przerwy (prześwitowy); kontrola głowicy, czujniki końca papieru, końca taśmy i podniesienia głowicy' },
+    { name: 'Temperatura pracy', value: '0–40°C, wilgotność 30–80% bez kondensacji; z etykietami bez podkładu 5–35°C, 30–75%' },
+    { name: 'Opcje', value: 'Gilotyna, gilotyna rotacyjna, gilotyna do etykiet bez podkładu, odklejak z wbudowanym nawijakiem podkładu, zegar RTC, moduł Wi-Fi i Bluetooth, moduł RFID, nawijak zewnętrzny, osłona zewnętrzna, stanowisko kontroli kodów kreskowych' },
+    { name: 'Funkcje', value: '18 filmów instruktażowych i komunikaty w 31 językach na wyświetlaczu, tryb Micro Label, dioda LED stanu, kopiowanie danych przez pamięć USB' },
   ],
   variants: [
   {
@@ -452,10 +477,18 @@ satoIndustrialProducts.push({
   applications: ['Etykiety produktów i komponentów', 'Małe etykiety w elektronice', 'Oznaczanie kartonów i przesyłek', 'Etykiety w handlu i produkcji'],
   relatedAccessories: satoCl4nxPlusRfidAccessories.map(a => a.id),
   faq: [
-    { question: 'Czy CL4NX Plus ma ekran dotykowy?', answer: 'Nie. Kolorowy LCD 3,5 cala obsługuje się przyciskami. Ekran wyświetla komunikaty i filmy instruktażowe.' },
-    { question: 'Do czego służy tryb Micro Label?', answer: 'Pomaga utrzymać położenie nadruku na małych etykietach. Dobór materiału, ustawień i rozdzielczości wymaga uwzględnienia docelowego kodu oraz wielkości etykiety.' },
-    { question: 'Czy CL4NX Plus może pracować bez komputera?', answer: 'Tak, z odpowiednio przygotowaną aplikacją SATO AEP. Aplikacja może korzystać z danych ze skanera lub innych urządzeń peryferyjnych. Wymaga wdrożenia dla danego procesu.' },
-    { question: 'Czy Wi-Fi i kodowanie RFID są standardowe?', answer: 'Nie. Łączność bezprzewodowa i moduły RFID są opcjonalne. Pokazane tutaj standardowe drukarki nie zawierają kodera RFID.' },
+    { question: 'Jaka jest maksymalna prędkość druku SATO CL4NX Plus?', answer: 'Do 355 mm/s, czyli 14 cali/s, w wersjach 203 i 305 dpi. Wersja 609 dpi drukuje do 152 mm/s. Rzeczywista prędkość zależy od materiału, danych na etykiecie i ustawień.' },
+    { question: 'Czy CL4NX Plus drukuje etykiety przygotowane w języku ZPL?', answer: 'Tak. Oprócz własnego języka SBPL drukarka automatycznie rozpoznaje emulację SZPL, zgodną z językiem ZPL drukarek Zebra, oraz emulacje SDPL, SIPL, STCL i SEPL. Przed wymianą drukarki na linii należy wydrukować próbne etykiety z obecnego systemu.' },
+    { question: 'Jakie etykiety pasują do SATO CL4NX Plus?', answer: 'Etykiety o szerokości 22–128 mm bez podkładu i grubości 0,060–0,268 mm, w rolce o średnicy do 265 mm na gilzie 76 lub 101 mm. Drukarka przyjmuje też składankę. Rolki na gilzie 25 mm do niej nie pasują. Nawój etykietą do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień.' },
+    { question: 'Jaka taśma barwiąca pasuje do CL4NX Plus?', answer: 'Taśma o szerokości 39,5–128 mm, na gilzie 25,4 mm, o długości do 600 m. Taśma o szerokości 39,5 mm może mieć najwyżej 450 m. Barwnik może być na zewnątrz lub do wewnątrz, bez zmiany ustawień.' },
+    { question: 'Czy CL4NX Plus ma gilotynę lub odklejak?', answer: 'Tak, w wybranych wariantach. W ofercie są wersje z ręcznym odrywaniem, z gilotyną i z odklejakiem z nawijakiem podkładu. Producent oferuje też gilotynę rotacyjną, gilotynę do etykiet bez podkładu i zewnętrzny nawijak.' },
+    { question: 'Czy CL4NX Plus ma ekran dotykowy?', answer: 'Nie. Kolorowy wyświetlacz LCD 3,5 cala obsługuje się przyciskami. Ekran pokazuje komunikaty w 31 językach i 18 filmów instruktażowych.' },
+    { question: 'Do czego służy tryb Micro Label?', answer: 'Pomaga utrzymać położenie nadruku na małych etykietach, na przykład na płytkach drukowanych i komponentach elektronicznych. Rozdzielczość i materiał należy dobrać do wielkości kodu i etykiety.' },
+    { question: 'Czy CL4NX Plus może pracować bez komputera?', answer: 'Tak, z aplikacją SATO AEP, która działa bezpośrednio na drukarce. Aplikacja może korzystać z danych ze skanera lub innych urządzeń peryferyjnych. Aplikację przygotowuje się dla konkretnego procesu.' },
+    { question: 'Czy Wi-Fi i kodowanie RFID są standardowe?', answer: 'Nie. W ofercie są warianty z Wi-Fi i z Bluetooth. Moduł RFID jest opcją. Do kodowania etykiet UHF służy [SATO CL4NX Plus RFID](/produkt/sato-cl4nx-plus-rfid).' },
+    { question: 'Czym CL4NX Plus różni się od CL4-SXR?', answer: '[CL4-SXR](/produkt/sato-cl4-sxr) to nowszy model. Drukuje do 457,2 mm/s zamiast 355 mm/s i ma kolorowy ekran dotykowy 4,3 cala zamiast wyświetlacza LCD 3,5 cala obsługiwanego przyciskami. CL4NX Plus ma za to port równoległy IEEE 1284, NFC i rolkę etykiet do 265 mm zamiast 220 mm. Wysokość wydruku i rozstaw nóżek są w obu modelach takie same.' },
+    { question: 'Czym SATO CL4NX Plus różni się od Zebra ZT411?', answer: 'Obie drukarki drukują na szerokości 104 mm. CL4NX Plus drukuje do 355 mm/s, a [Zebra ZT411](/produkt/zebra-zt411) do 356 mm/s. ZT411 ma kolorowy ekran dotykowy 4,3 cala, a CL4NX Plus wyświetlacz LCD 3,5 cala z przyciskami. CL4NX Plus przyjmuje większą rolkę (265 mm zamiast 203 mm) i dłuższą taśmę (600 m zamiast 450 m). ZT411 używa języka ZPL bezpośrednio, a CL4NX Plus przez emulację SZPL.' },
+    { question: 'W jakich warunkach pracuje CL4NX Plus?', answer: 'W temperaturze 0–40°C i wilgotności 30–80% bez kondensacji. Z etykietami bez podkładu zakres wynosi 5–35°C i 30–75%.' },
   ],
   downloads: [{ name: 'Broszura SATO CL4NX Plus (PL)', type: 'datasheet', url: '/datasheets/sato-cl4nx-plus-brochure-pl.pdf', size: 'PDF' }, ...nxReference.downloads.filter(d => d.type === 'manual' && !d.url.includes('inlay'))],
   relatedProducts: ['sato-cl4-sxr', 'sato-cl6-sxr', 'zebra-zt411'],
