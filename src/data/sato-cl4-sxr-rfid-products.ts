@@ -2,10 +2,10 @@ import type { Product } from './products'
 
 const id = 'sato-cl4-sxr-rfid'
 const parts = [
-  { key: 'head-203', pn: 'R48221101', name: 'Głowica 203 dpi SATO CL4-SXR', image: 'head', match: '203 dpi' },
-  { key: 'head-305', pn: 'R48221201', name: 'Głowica 305 dpi SATO CL4-SXR', image: 'head', match: '305 dpi' },
-  { key: 'head-609', pn: 'R48221401', name: 'Głowica 609 dpi SATO CL4-SXR', image: 'head', match: '609 dpi' },
-  { key: 'platen', pn: 'R55375100', name: 'Wałek dociskowy SATO CL4-SXR', image: 'platen', match: '203, 305 i 609 dpi' },
+  { key: 'head-203', pn: 'R48221101', price: 2397.58, name: 'Głowica 203 dpi SATO CL4-SXR', image: 'head', match: '203 dpi' },
+  { key: 'head-305', pn: 'R48221201', price: 2877.06, name: 'Głowica 305 dpi SATO CL4-SXR', image: 'head', match: '305 dpi' },
+  { key: 'head-609', pn: 'R48221401', price: 6520.43, name: 'Głowica 609 dpi SATO CL4-SXR', image: 'head', match: '609 dpi' },
+  { key: 'platen', pn: 'R55375100', price: 223.80, name: 'Wałek dociskowy SATO CL4-SXR', image: 'platen', match: '203, 305 i 609 dpi' },
 ]
 export const satoCl4SxrRfidAccessories: Product[] = parts.map(a => ({
   id: `sato-cl4-sxr-${a.key}`, slug: `sato-cl4-sxr-${a.pn.toLowerCase()}`, name: `${a.name} — ${a.pn}`,
@@ -15,7 +15,7 @@ export const satoCl4SxrRfidAccessories: Product[] = parts.map(a => ({
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka'],
   images: [`/images/products/sato-cl4-sxr-${a.image}.webp`], imageDescriptions: [`${a.name} — ${a.pn}, rysunek poglądowy`],
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: `SATO CL4-SXR, także UHF RFID; ${a.match}` }],
-  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
+  priceFrom: a.price, applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
   downloads: [{ name: 'Katalog części CL4-SXR (EN)', type: 'manual', url: '/downloads/sato-cl4-sxr-czesci-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
