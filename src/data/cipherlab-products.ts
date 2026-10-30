@@ -910,14 +910,14 @@ export const cipherlabProducts: Product[] = [
     "subcategoryIds": [],
     "manufacturerId": "cipherlab",
     "images": [
-      "/images/products/cipherlab-rk96-3.webp",
       "/images/products/cipherlab-rk96-front.webp",
+      "/images/products/cipherlab-rk96-3.webp",
       "/images/products/cipherlab-rk96-1.webp",
       "/images/products/cipherlab-rk96-2.webp"
     ],
     "imageDescriptions": [
-      "CipherLab RK96 z uchwytem pistoletowym, widok z boku",
       "CipherLab RK96 — widok z przodu, klawiatura alfanumeryczna",
+      "CipherLab RK96 z uchwytem pistoletowym, widok z boku",
       "CipherLab RK96 — przód z ekranem 4,3 cala nad klawiaturą",
       "CipherLab RK96 — widok z boku"
     ],
