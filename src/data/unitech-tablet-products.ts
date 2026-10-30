@@ -55,7 +55,7 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   imageDescriptions: [
     'Unitech RT112 — widok z przodu, ekran 10,1 cala z Androidem w poziomie',
     'Unitech RT112 — widok z przodu pod kątem, przyciski na prawej krawędzi obudowy',
-    'Unitech RT112 — tył obudowy z aparatem, żółtym oknem skanera i logo unitech',
+    'Unitech RT112 — tył obudowy z aparatem, modułem skanera z żółtą etykietą ostrzegawczą lasera i logo unitech',
     'Unitech RT112 — tył obudowy pod kątem, pokrywa baterii i okno skanera',
   ],
   tags: ['magazyn', 'logistyka', 'retail'],
@@ -220,7 +220,7 @@ Tablet trafia do klienta z naklejoną osłoną ekranu, baterią, zasilaczem USB-
   imageDescriptions: [
     'Unitech RT112 Windows — widok z przodu, ekran 10,1 cala z pulpitem Windows 11',
     'Unitech RT112 Windows — widok z przodu pod kątem, ekran z pulpitem Windows 11',
-    'Unitech RT112 Windows — tył obudowy z aparatem, oknem skanera i oznaczeniem Windows on Arm',
+    'Unitech RT112 Windows — tył obudowy z aparatem, modułem skanera z żółtą etykietą ostrzegawczą lasera i oznaczeniem Windows on Arm',
   ],
   tags: ['retail', 'produkcja', 'healthcare'],
   isNew: true,
@@ -453,7 +453,7 @@ Zestaw europejski zawiera tablet z płytą montażową, baterię i zasilacz AC/D
     },
   ],
   variantAttributeTooltips: {
-    'Łączność': 'Sieci, z którymi TB170 Plus łączy się bez dodatkowych akcesoriów. Każda wersja ma Wi-Fi 6E z 2×2 MIMO i Bluetooth 5.3.\n\n• Wi-Fi 6E — wersja bez modemu komórkowego; sieć przewodowa przez port RJ45 z PXE.\n\n• 4G LTE — modem Quectel EM060K-GL i gniazdo nano-SIM.',
+    'Łączność': 'Sieci, z którymi TB170 Plus łączy się bez dodatkowych akcesoriów. Każda wersja ma Wi-Fi 6E z 2×2 MIMO, Bluetooth 5.3 i port RJ45 z PXE do sieci przewodowej.\n\n• Wi-Fi 6E — wersja bez modemu komórkowego.\n\n• 4G LTE — modem Quectel EM060K-GL i gniazdo nano-SIM.',
     'Skaner': 'Czytnik kodów w górnej krawędzi tabletu; klawisz F1 jest domyślnie jego spustem.\n\n• Skaner 1D/2D — wbudowany czytnik kodów kreskowych.\n\n• Bez skanera — klawisz F1 można zaprogramować do innej funkcji.',
   },
   compatibleAccessories: [],

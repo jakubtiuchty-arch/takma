@@ -230,7 +230,7 @@ Tablet wsuwa się w gniazdo, aż zablokuje się w stacji. Tablet RT112 Windows m
 
 ## Co jest potrzebne do użycia?
 
-W zestawie jest tylko stacja. Port zasilania USB-C znajduje się obok złącza Ethernet. Najlepiej podłączyć do niego zasilacz USB-C z zestawu tabletu z [przewodem sieciowym EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5). Drugi zasilacz, na przykład na stałe przy stacji, musi obsługiwać Power Delivery, mieć moc co najmniej 45 W i stopień 12 V / 3 A; te warunki spełnia [zasilacz 1010-900072G](/produkt/unitech-rp300-zasilacz-45w).`,
+W zestawie jest tylko stacja. Port zasilania USB-C znajduje się obok złącza Ethernet. Najlepiej podłączyć do niego zasilacz USB-C z zestawu tabletu z [przewodem sieciowym EU 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5). Drugi zasilacz, na przykład na stałe przy stacji, musi obsługiwać szybkie ładowanie Power Delivery i stopień 12 V / 3 A, a zalecana moc to co najmniej 45 W. Te warunki spełnia [zasilacz 1010-900072G](/produkt/unitech-rp300-zasilacz-45w).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-tabletow'],
   manufacturerId: 'unitech',
@@ -248,7 +248,7 @@ W zestawie jest tylko stacja. Port zasilania USB-C znajduje się obok złącza E
     { name: 'Part Number', value: '5000-900124G' },
     { name: 'Typ', value: 'Stacja biurkowa z ładowaniem przez styki POGO' },
     { name: 'Złącza', value: 'Ethernet, 4 × USB-A, USB-C z DisplayPort, port zasilania USB-C' },
-    { name: 'Zasilanie', value: 'Zasilacz USB-C z zestawu tabletu albo inny zasilacz Power Delivery, co najmniej 45 W, 12 V / 3 A' },
+    { name: 'Zasilanie', value: 'Zasilacz USB-C z zestawu tabletu albo inny zasilacz Power Delivery ze stopniem 12 V / 3 A; zalecana moc co najmniej 45 W' },
     { name: 'Zawartość zestawu', value: 'Stacja; bez zasilacza i przewodu sieciowego' },
     { name: 'Zgodność', value: 'Unitech RT112, RT112 Windows' },
   ],
@@ -396,7 +396,7 @@ const plytaVesa: Product = {
   seoDescription: 'Płyta VESA 100 × 100 mm Unitech 5400-900065G ze śrubami, dla RT112 i TB170 Plus oraz wersji Windows RT112. Adapter VESA do tabletu Unitech. PN: 5400-900065G.',
   description: `Płyta 5400-900065G ma rozstaw otworów VESA 100 × 100 mm. Pozwala przykręcić tablet do ramienia, stojaka lub innej podstawy zgodnej z tym standardem.
 
-W opakowaniu są płyta, cztery śruby motylkowe, cztery śruby M2-L10 i dwie śruby M3,5-L5. Tablety RT112 mocuje się czterema śrubami M2-L10, a TB170 Plus dodatkowo dwiema śrubami M3,5-L5. Śruby motylkowe ustawiają położenie płyty. Tylko do TB170 Plus jest też osobny [uchwyt VESA 4070-900018G](/produkt/unitech-tb170-plus-uchwyt-vesa).`,
+W opakowaniu są płyta, cztery śruby motylkowe, cztery śruby M2-L10 i dwie śruby M3,5-L5. Cztery śruby motylkowe łączą obie części płyty w układzie dla RT112 albo dla TB170 Plus. Tablety RT112 mocuje się czterema śrubami M2-L10, a TB170 Plus dodatkowo dwiema śrubami M3,5-L5. Tylko do TB170 Plus jest też osobny [uchwyt VESA 4070-900018G](/produkt/unitech-tb170-plus-uchwyt-vesa).`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-tabletow'],
   manufacturerId: 'unitech',
@@ -432,7 +432,7 @@ const ramB166202u: Product = {
   seoDescription: 'Uchwyt RAM Mounts RAM-B-166-202U z przyssawką, ramieniem dwukulowym i okrągłą płytą, rozmiar B, do montażu uchwytu samochodowego tabletów Unitech RT112 i RT112 Windows. Przyssawka do tabletu Unitech. PN: RAM-B-166-202U.',
   description: `RAM-B-166-202U to uchwyt marki RAM Mounts z przyssawką, ramieniem dwukulowym i okrągłą płytą. Przyssawka mocuje całość do gładkiej powierzchni, na przykład szyby pojazdu, a ramię dwukulowe pozwala ustawić tablet pod wybranym kątem.
 
-Uchwyt należy do mocowań tabletów RT112 i RT112 Windows. Ma rozmiar B i ramię średniej długości (Medium). Tablet nie mocuje się bezpośrednio do płyty: na płycie montuje się [uchwyt samochodowy RT112](/produkt/unitech-rt112-uchwyt-samochodowy-usb), zgodny z produktami RAM Mounts. Do tego połączenia potrzebne są cztery śruby M3 × 16 mm z łbem stożkowym, nakrętki samozabezpieczające M3 i podkładki M3; nie ma ich w zestawie uchwytu samochodowego.`,
+Uchwyt należy do mocowań tabletów RT112 i RT112 Windows. Ma rozmiar B i ramię średniej długości (Medium). Tablet nie mocuje się bezpośrednio do płyty: na płycie montuje się uchwyt samochodowy RT112 [5000-900128G](/produkt/unitech-rt112-uchwyt-samochodowy-usb) albo [5000-900125G](/produkt/unitech-rt112-uchwyt-samochodowy), zgodny z produktami RAM Mounts. Do tego połączenia potrzebne są cztery śruby M3 × 16 mm z łbem stożkowym, nakrętki samozabezpieczające M3 i podkładki M3; nie ma ich w zestawie uchwytu samochodowego.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-tabletow'],
   manufacturerId: 'ram',

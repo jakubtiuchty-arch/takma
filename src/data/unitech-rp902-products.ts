@@ -212,7 +212,7 @@ export const unitechRp902Accessories: Product[] = [
       "logistyka"
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-30",
     "applications": [
       "Inwentaryzacja RFID"
     ],
@@ -235,7 +235,7 @@ export const unitechRp902Accessories: Product[] = [
       "/images/products/unitech-rp902-psu-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz Unitech RP902 — 5 V / 2 A — widok produktu"
+      "Zasilacz Unitech 1010-900067G 5 V / 2 A — zasilacz z gniazdem USB-A i cztery wymienne wtyczki: EU, UK, US i AU"
     ],
     "specifications": [
       {
@@ -327,7 +327,7 @@ export const unitechRp902Accessories: Product[] = [
       "logistyka"
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-30",
     "applications": [
       "Inwentaryzacja RFID"
     ],
@@ -350,7 +350,7 @@ export const unitechRp902Accessories: Product[] = [
       "/images/products/unitech-rp902-cable-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód USB-C Unitech RP902 — widok produktu"
+      "Przewód Unitech 1550-905919G — zwinięty czarny przewód z wtykami USB-A i USB-C"
     ],
     "specifications": [
       {

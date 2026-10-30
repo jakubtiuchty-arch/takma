@@ -112,7 +112,7 @@ const szkloHt730: Product = {
 
 Jedno opakowanie zawiera 10 sztuk. Cena na karcie dotyczy całego opakowania, a nie pojedynczej sztuki.
 
-Ekran terminala obsługuje rękawice o grubości do 4 mm, mokre dłonie i rysik 3 mm.`,
+Ekran terminala obsługuje rękawice o grubości do 4 mm, mokry ekran i rysik 3 mm.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['akcesoria-do-terminali'],
   manufacturerId: 'unitech',

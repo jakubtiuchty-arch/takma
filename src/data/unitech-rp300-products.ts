@@ -272,9 +272,9 @@ export const unitechRp300Accessories: Product[] = [
       "/images/products/unitech-rp300-psu-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz USB-C 45 W Unitech RP300 — widok produktu"
+      "Zasilacz USB-C 45 W Unitech 1010-900072G — zasilacz z gniazdem sieciowym C6 i zwiniętym przewodem zakończonym wtykiem USB-C"
     ],
-    "description": "Zasilacz 1010-900072G dostarcza zasilanie USB-C Power Delivery do [RP300](/produkt/unitech-rp300) oraz [stacji jednostanowiskowej](/produkt/unitech-rp300-stacja). Ma moc 45 W i przewód zakończony USB-C.\n\nDo gniazda sieciowego potrzebujesz [przewodu EU 1550-905940G z wtykiem IEC C5](/produkt/unitech-przewod-sieciowy-eu-c5). Przewód sieciowy jest sprzedawany osobno. Nie zastępuj go przewodem IEC C13.\n\nTen sam zasilacz pasuje jako zapasowy do tabletów [RT112](/produkt/unitech-rt112) i [RT112 Windows](/produkt/unitech-rt112-windows). Może też zasilać [stację biurkową RT112](/produkt/unitech-rt112-stacja-biurkowa), do której zalecany jest zasilacz Power Delivery o mocy co najmniej 45 W.",
+    "description": "Zasilacz 1010-900072G dostarcza zasilanie USB-C Power Delivery do [RP300](/produkt/unitech-rp300) oraz [stacji jednostanowiskowej](/produkt/unitech-rp300-stacja). Ma moc 45 W i przewód zakończony USB-C.\n\nDo gniazda sieciowego potrzebny jest [przewód EU 1550-905940G z wtykiem IEC C5](/produkt/unitech-przewod-sieciowy-eu-c5). Przewód sieciowy jest sprzedawany osobno. Przewód IEC C13 do tego zasilacza nie pasuje.\n\nTen sam zasilacz pasuje jako zapasowy do tabletów [RT112](/produkt/unitech-rt112) i [RT112 Windows](/produkt/unitech-rt112-windows). Może też zasilać [stację biurkową RT112](/produkt/unitech-rt112-stacja-biurkowa), do której zalecany jest zasilacz Power Delivery o mocy co najmniej 45 W.",
     "shortDescription": "Zasilacz Unitech 1010-900072G do RP300, stacji i tabletów RT112: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
     "seoDescription": "Zasilacz Unitech 1010-900072G do RP300, stacji i tabletów RT112: USB-C Power Delivery, 45 W. Sprawdź cenę i stan. Przewód sieciowy IEC C5 osobno.",
     "seoTitle": "Zasilacz USB-C 45 W Unitech RP300 — 1010-900072G | TAKMA",
@@ -330,7 +330,7 @@ export const unitechRp300Accessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20"
+    "updatedAt": "2026-10-30"
   },
   {
     "id": "unitech-rp300-adapter-ea660",
@@ -486,11 +486,11 @@ export const unitechRp300Accessories: Product[] = [
       "/images/products/unitech-rp300-cord-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód sieciowy EU Unitech — IEC C5, 1,8 m — widok produktu"
+      "Przewód sieciowy EU Unitech 1550-905940G — wtyczka z uziemieniem i trójbiegunowe złącze IEC C5"
     ],
     "description": "Przewód 1550-905940G łączy europejskie gniazdo sieciowe z [zasilaczem USB-C 45 W Unitech 1010-900072G](/produkt/unitech-rp300-zasilacz-45w). Ma długość 1,8 m oraz wtyk IEC C5.\n\nJest elementem zasilania [RP300](/produkt/unitech-rp300) lub jego [stacji](/produkt/unitech-rp300-stacja). Nie jest przewodem USB ani przewodem IEC C13. Zasilacz jest sprzedawany osobno.\n\nPasuje też do zasilaczy tabletów [RT112](/produkt/unitech-rt112), [RT112 Windows](/produkt/unitech-rt112-windows) i [TB170 Plus](/produkt/unitech-tb170-plus), w tym do [zasilacza 65 W 1010-900070G](/produkt/unitech-tb170-plus-zasilacz-65w) z gniazdem C6. Zestawy tych tabletów zawierają zasilacz bez przewodu sieciowego EU.",
-    "shortDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G dla RP300. Sprawdź cenę i dostępność.",
-    "seoDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G dla RP300. Sprawdź cenę i dostępność.",
+    "shortDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G (RP300) i zasilaczy tabletów RT112, RT112 Windows i TB170 Plus. Sprawdź cenę i dostępność.",
+    "seoDescription": "Przewód sieciowy Unitech 1550-905940G: EU, IEC C5, 1,8 m. Do zasilacza 1010-900072G (RP300) i zasilaczy tabletów RT112, RT112 Windows i TB170 Plus. Sprawdź cenę i dostępność.",
     "seoTitle": "Przewód sieciowy EU Unitech — IEC C5, 1,8 m — 1550-905940G | TAKMA",
     "specifications": [
       {
@@ -545,6 +545,6 @@ export const unitechRp300Accessories: Product[] = [
       }
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-29"
+    "updatedAt": "2026-10-30"
   }
 ]
