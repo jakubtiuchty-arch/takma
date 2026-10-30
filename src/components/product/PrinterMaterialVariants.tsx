@@ -164,11 +164,6 @@ export default function PrinterMaterialVariants({
       // Formaty specjalne (kartridż ZD421c, rolki 30 m do P4T/RP4T) mają te same wymiary co zwykła rolka,
       // ale inny mechanizm — atrybut 'Format' wyklucza je z doboru do drukarek z rolką (audyt ZD-01)
       .filter(x => kind !== 'ribbon' || !x.v.attributes?.['Format'])
-      .filter(x => {
-        if (kind !== 'ribbon' || !maxRibbonLengthM) return true
-        const length = Number.parseFloat((x.v.attributes?.['Długość'] ?? '').replace(',', '.'))
-        return Number.isFinite(length) && length <= maxRibbonLengthM
-      })
       // Rdzeń (gilza): rolka musi pasować do wieszaków drukarki — np. etykiety fi76
       // nie wejdą na drukarkę biurkową (akceptuje 12/19/25 mm).
       .filter(x => coreOk(x.v))
