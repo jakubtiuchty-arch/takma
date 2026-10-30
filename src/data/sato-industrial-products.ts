@@ -53,6 +53,7 @@ satoIndustrialProducts.push({
   description: 'SATO CL6-SXR to przemysłowa drukarka termiczna i termotransferowa do szerokich etykiet logistycznych. Drukuje z prędkością do 355,6 mm/s przy 203 i 305 dpi. Standardowa szerokość nadruku wynosi 152 mm przy 203 dpi i 165,3 mm przy 305 dpi. Tryb rozszerzony zwiększa ją do 167,5 mm. Ekran dotykowy 4,3 cala, podgląd etykiety i dostęp do toru materiału ułatwiają obsługę. SATO AEP pozwala uruchamiać aplikacje bezpośrednio na drukarce. SOS wspiera monitoring i planowanie konserwacji.',
   subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   quoteOnly: false, priceFrom: 14794.70, availability: 'available',
+  images: ['/images/products/sato-cl6-sxr-main-v2.png'],
   imageDescriptions: ['SATO CL6-SXR — przemysłowa drukarka etykiet, widok z przodu pod kątem'],
   keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni', rozdzielczosc: '203 / 305 dpi', szerokoscDruku: 'Do 167,5 mm w trybie rozszerzonym; standardowo 152 / 165,3 mm', szerokoscEtykiet: '47–177 mm bez podkładu', predkoscDruku: 'Do 355,6 mm/s (14 cali/s)' },
   specifications: cl6Reference.specifications.filter(s => !['RFID', 'Rolka materiału', 'Zegar RTC', 'Łączność'].includes(s.name)).concat([
