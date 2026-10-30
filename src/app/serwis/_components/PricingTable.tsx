@@ -6,7 +6,7 @@ type ServiceRow = {
   highlight?: boolean
 }
 
-type PricingVariant = 'all' | 'printers' | 'devices' | 'cardPrinters'
+type PricingVariant = 'all' | 'printers' | 'devices' | 'cardPrinters' | 'computers'
 
 // Wspólne: diagnostyka, płyta główna, czyszczenie, Wi-Fi
 const SHARED_SERVICES: ServiceRow[] = [
@@ -64,6 +64,7 @@ const ALL_SERVICES: ServiceRow[] = [
 ]
 
 function getServices(variant: PricingVariant): ServiceRow[] {
+  if (variant === 'computers') return [{ name: 'Diagnostyka i naprawa laptopa lub tabletu', price: 'Wycena indywidualna', time: 'Po diagnostyce', warranty: 'Według zakresu naprawy' }]
   if (variant === 'printers') return [...SHARED_SERVICES, ...PRINTER_SERVICES]
   if (variant === 'devices') return [...SHARED_SERVICES, ...DEVICE_SERVICES]
   if (variant === 'cardPrinters') return [...SHARED_SERVICES, ...CARD_PRINTER_SERVICES]
@@ -71,6 +72,7 @@ function getServices(variant: PricingVariant): ServiceRow[] {
 }
 
 function getHeadline(variant: PricingVariant): { title: string; subtitle: string } {
+  if (variant === 'computers') return { title: 'Wycena naprawy laptopa lub tabletu', subtitle: 'Koszt części, robociznę i termin potwierdzamy po diagnostyce. Naprawę rozpoczynamy po akceptacji wyceny.' }
   if (variant === 'cardPrinters') {
     return {
       title: 'Cennik orientacyjny — naprawa drukarek kart',
@@ -151,7 +153,7 @@ export function PricingTable({ variant = 'all' }: { variant?: PricingVariant } =
 
         <p className="mt-4 text-sm text-gray-500 text-center">
           * Diagnostyka gratis przy zleceniu naprawy. Bez zlecenia naprawy: 99 PLN netto + koszty wysyłki.
-          Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia. Aktualizacja: luty 2026.
+          {variant === 'computers' ? 'Dokładny koszt naprawy potwierdzamy po diagnostyce urządzenia.' : 'Ceny orientacyjne netto. Dokładna wycena po diagnostyce urządzenia. Aktualizacja: luty 2026.'}
         </p>
 
         <div className="mt-8 text-center text-sm text-gray-600">

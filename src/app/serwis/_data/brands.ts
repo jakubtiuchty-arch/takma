@@ -27,7 +27,7 @@ export type ServiceBrand = {
   bannerCta?: string
   /** Override wariantu cennika. Dla marek które mają np. drukarki + terminale
    *  (jak Honeywell) ustaw 'all'. Domyślnie wyliczane z category. */
-  pricingVariant?: 'printers' | 'devices' | 'cardPrinters' | 'all'
+  pricingVariant?: 'printers' | 'devices' | 'cardPrinters' | 'all' | 'computers'
   /** Własny obraz OG (1200×630). Bez niego strona bierze wspólne /images/takma-og.png. */
   ogImage?: string
   /** Opis oferty w sekcji cross-sell; domyślnie „drukarki, terminale, skanery i akcesoria”. */
@@ -51,6 +51,109 @@ export type ServiceBrand = {
 }
 
 export const serviceBrands: ServiceBrand[] = [
+{
+  "slug": "getac",
+  "name": "Getac",
+  "logoSrc": "/images/manufacturers/getac.svg",
+  "logoAlt": "Getac — serwis laptopów i tabletów rugged",
+  "category": "mixed",
+  "pricingVariant": "computers",
+  "heroImage": "/images/serwis-hero/getac-hero.webp",
+  "shortDesc": "Laptopy B360, S410 i V120 oraz tablety F110, F120 i UX10",
+  "products": "Laptopy i tablety Getac, w tym B360, S410, V120, F110, F120 i UX10",
+  "heroTitle": "Serwis Getac — naprawa laptopów i tabletów rugged",
+  "heroDescription": "Serwis pogwarancyjny Getac. Diagnozujemy ekrany, klawiatury, porty, akumulatory i układy zasilania. Odbiór kurierem z całej Polski, wycena przed naprawą.",
+  "heroLead": "Naprawiamy laptopy i tablety Getac używane w serwisie terenowym, logistyce, przemyśle i służbach publicznych. Sprawdzamy uszkodzenia po upadku, problemy z uruchamianiem, ładowaniem oraz działaniem ekranu. Zakres naprawy, dostępność części i termin potwierdzamy po diagnostyce. Wycenę udostępniamy do akceptacji w panelu klienta.",
+  "metaTitle": "Serwis Getac — naprawa laptopów i tabletów rugged | TAKMA",
+  "metaDescription": "Pogwarancyjny serwis laptopów i tabletów Getac: B360, S410, F110, F120 i UX10. Diagnostyka ekranów, portów i zasilania. Odbiór kurierem.",
+  "crossSell": "laptopy i tablety Getac, akumulatory, stacje dokujące i akcesoria",
+  "relatedHeading": "Urządzenia Getac w ofercie TAKMA",
+  "relatedDescription": "Sprawdź oznaczenie urządzenia oraz zgodne wyposażenie.",
+  "issuesIntro": "Typowe objawy wymagające diagnostyki. Możliwość naprawy i koszt potwierdzamy dla konkretnego modelu.",
+  "seriesList": [
+    {
+      "series": "Laptopy rugged",
+      "description": "Sprawdzamy ekran, klawiaturę, zawiasy, porty i zasilanie. Oceniamy stan obudowy oraz mocowań po upadku.",
+      "typicalDevices": "B360, S410, S510, V120"
+    },
+    {
+      "series": "Tablety z systemem Windows",
+      "description": "Diagnozujemy panel dotykowy, wyświetlacz, przyciski i złącza stacji. Testujemy ładowanie oraz stan akumulatorów.",
+      "typicalDevices": "F110, F120, UX10, K120"
+    },
+    {
+      "series": "Tablety z systemem Android i starsze modele",
+      "description": "Zakres obsługi zależy od modelu, usterki i dostępności części. Podaj pełne oznaczenie oraz numer seryjny urządzenia.",
+      "typicalDevices": "ZX10 oraz starsze generacje laptopów i tabletów Getac"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Getac B360",
+      "href": "/produkt/getac-b360"
+    },
+    {
+      "label": "Getac F120",
+      "href": "/produkt/getac-f120"
+    },
+    {
+      "label": "Getac UX10 G5",
+      "href": "/produkt/getac-ux10-g5"
+    }
+  ],
+  "commonIssues": [
+    {
+      "title": "Pęknięty ekran lub niesprawny dotyk",
+      "description": "Sprawdzamy wyświetlacz, panel dotykowy i połączenia. Oceniamy także ramkę oraz mocowania, aby ustalić pełny zakres naprawy."
+    },
+    {
+      "title": "Laptop lub tablet nie uruchamia się",
+      "description": "Testujemy zasilacz, akumulatory i układ zasilania. Po diagnostyce przedstawiamy możliwy zakres naprawy elektroniki."
+    },
+    {
+      "title": "Brak ładowania lub krótki czas pracy",
+      "description": "Sprawdzamy baterie, gniazdo zasilania oraz styki. Przy problemach ze stacją uwzględniamy jej zasilacz i połączenia."
+    },
+    {
+      "title": "Uszkodzona klawiatura, zawias lub zatrzask",
+      "description": "Oceniamy klawisze, taśmy, zawiasy i elementy obudowy. Części dobieramy do modelu i generacji urządzenia."
+    },
+    {
+      "title": "Niesprawne porty lub stacja dokująca",
+      "description": "Sprawdzamy złącza USB, sieciowe i dokujące oraz ustawienia systemu. Ustalamy, czy usterka dotyczy urządzenia, przewodu czy stacji."
+    },
+    {
+      "title": "Problemy z Wi-Fi lub działaniem systemu",
+      "description": "Diagnozujemy sprzęt i konfigurację. Aktualizację lub reinstalację systemu uzgadniamy przed pracami, które mogą wpłynąć na dane."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak zgłosić urządzenie Getac do naprawy?",
+      "a": "Wypełnij formularz na tej stronie. Podaj model, numer seryjny i opis usterki. Zamówimy kuriera. Urządzenie trzeba bezpiecznie zapakować."
+    },
+    {
+      "q": "Czy otrzymam wycenę przed naprawą?",
+      "a": "Tak. Po diagnostyce udostępniamy wycenę w panelu klienta. Prace rozpoczynamy po akceptacji. W panelu sprawdzisz etapy naprawy."
+    },
+    {
+      "q": "Czy jest to autoryzowany serwis Getac?",
+      "a": "Prowadzimy serwis pogwarancyjny. Jeśli urządzenie ma aktywną gwarancję lub umowę serwisową, najpierw należy sprawdzić jej warunki."
+    },
+    {
+      "q": "Czy naprawiacie starsze generacje Getac?",
+      "a": "Możliwość naprawy zależy od usterki i dostępności części. Potrzebne jest pełne oznaczenie modelu oraz numer seryjny."
+    },
+    {
+      "q": "Czy naprawa przywraca fabryczną szczelność?",
+      "a": "Nie deklarujemy automatycznego przywrócenia fabrycznej klasy ochrony po naprawie. Stan uszczelek i obudowy oraz wymagane testy uzgadniamy indywidualnie."
+    },
+    {
+      "q": "Jak przygotować sprzęt do wysyłki?",
+      "a": "Jeśli to możliwe, wykonaj kopię danych. Wyjmij karty SIM i pamięci. Zabezpiecz urządzenie przed przemieszczaniem w kartonie. Opisz używany zasilacz i stację, jeśli problem dotyczy ładowania."
+    }
+  ]
+},
   {
   "slug": "cipherlab",
   "heroLogoOnWhite": true,
