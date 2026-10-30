@@ -35,3 +35,11 @@
 .story.cl4Typography .eyebrow{font-weight:700;line-height:1.7}
 .story.cl4Typography .details h3,.story.cl4Typography .displayFeatures h3{font-size:20px;line-height:1.5}
 @media(max-width:600px){.story.cl4Typography h2,.story.cl4Typography .hero h2{font-size:30px;line-height:1.35}.story.cl4Typography h3,.story.cl4Typography .details h3,.story.cl4Typography .displayFeatures h3{font-size:19px;line-height:1.5}}
+
+/* Keep the display size caption in its own space, clear of the product photo. */
+.story.cl4Typography .displayPhoto{display:flex;flex-direction:column;gap:28px;padding:40px 8% 0;height:auto;min-width:0}
+.story.cl4Typography .displayPhoto>span{position:static;order:-1;display:block;font-size:52px;line-height:1.2;font-weight:600}
+.story.cl4Typography .displayPhoto small{max-width:none;margin-top:10px;font-size:15px;line-height:1.6}
+.story.cl4Typography .displayPhoto .photo{height:580px;min-height:0;max-width:none;width:100%;top:auto;margin:0;flex:1}
+.story.cl4Typography .displayPhoto .photo img{object-position:center bottom}
+@media(max-width:600px){.story.cl4Typography .displayPhoto{height:460px;padding:30px 8% 0;gap:20px}.story.cl4Typography .displayPhoto>span{font-size:42px}.story.cl4Typography .displayPhoto small{font-size:14px}.story.cl4Typography .displayPhoto .photo{height:300px}}
