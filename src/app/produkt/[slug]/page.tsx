@@ -1,3 +1,4 @@
+import SatoCl4SxrStory from '@/components/product/SatoCl4SxrStory'
 import ZebraDesignerStory from '@/components/product/ZebraDesignerStory'
 import LoftwareStory from '@/components/product/LoftwareStory'
 import type { LoftwareEdition } from '@/components/product/LoftwareStoryContent'
@@ -1501,8 +1502,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
-              {!['zebra-zebradesigner-professional', 'sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2', 'proglove-mark-3', 'proglove-mark-basic', 'proglove-mark-display', 'proglove-leo', 'proglove-mai', 'proglove-lana', 'bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
+              {!['sato-cl4-sxr', 'zebra-zebradesigner-professional', 'sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2', 'proglove-mark-3', 'proglove-mark-basic', 'proglove-mark-display', 'proglove-leo', 'proglove-mai', 'proglove-lana', 'bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
               {(() => {
+                if (product.slug === 'sato-cl4-sxr') return <SatoCl4SxrStory />
                 if (product.slug === 'zebra-zebradesigner-professional') return <ZebraDesignerStory />
                 if (['loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'].includes(product.slug)) return <LoftwareStory edition={product.slug.replace('loftware-cloud-', '') as LoftwareEdition} />
                 if (['bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud'].includes(product.slug)) return <BartenderStory edition={product.slug.replace('bartender-', '') as BartenderEdition} />
