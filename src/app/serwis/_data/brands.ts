@@ -51,6 +51,113 @@ export type ServiceBrand = {
 
 export const serviceBrands: ServiceBrand[] = [
   {
+  "slug": "sunmi",
+  "name": "SUNMI",
+  "logoSrc": "/images/manufacturers/sunmi.svg",
+  "logoAlt": "SUNMI — serwis terminali mobilnych i urządzeń POS",
+  "category": "mixed",
+  "pricingVariant": "devices",
+  "heroImage": "/images/serwis-hero/sunmi-hero.webp",
+  "shortDesc": "Terminale L3, L2s Pro, L2H, L2Ks, urządzenia V3 i komputery POS",
+  "products": "Terminale SUNMI L3, L2s Pro, L2H i L2Ks, urządzenia mobilne z drukarką V3, V3H i V3 Plus oraz komputery POS",
+  "heroTitle": "Serwis SUNMI — naprawa terminali mobilnych i urządzeń POS",
+  "heroDescription": "Pogwarancyjna diagnostyka i naprawa urządzeń SUNMI. Ekrany, ładowanie, przyciski, skanery i drukarki wbudowane. Odbiór kurierem z całej Polski, wycena przed naprawą.",
+  "heroLead": "Serwis SUNMI w TAKMA obejmuje urządzenia pracujące w sklepach, magazynach, gastronomii i usługach. Diagnozujemy terminale mobilne, urządzenia z wbudowaną drukarką oraz komputery POS. Sprawdzamy uszkodzenia mechaniczne, problemy z zasilaniem, odczytem kodów i drukowaniem. Zakres naprawy, dostępność części i termin potwierdzamy po diagnostyce konkretnego modelu. Przed naprawą udostępniamy wycenę do akceptacji w panelu klienta.",
+  "metaTitle": "Serwis SUNMI — naprawa terminali i urządzeń POS | TAKMA",
+  "metaDescription": "Serwis pogwarancyjny SUNMI: L3, L2s Pro, L2H, L2Ks i V3. Naprawa ekranów, ładowania, skanerów i drukarek wbudowanych. Odbiór kurierem, wycena przed naprawą.",
+  "crossSell": "terminale mobilne SUNMI, urządzenia z drukarką, komputery POS i akcesoria",
+  "relatedHeading": "Terminale i urządzenia SUNMI w ofercie TAKMA",
+  "relatedDescription": "Sprawdź model i wyposażenie urządzenia przed zgłoszeniem naprawy.",
+  "issuesIntro": "Typowe objawy wymagające diagnostyki sprzętu lub sprawdzenia konfiguracji. Koszt naprawy potwierdzamy przed jej rozpoczęciem.",
+  "seriesList": [
+    {
+      "series": "Terminale mobilne serii L",
+      "description": "Sprawdzamy ekrany, dotyk, przyciski boczne, skanery, złącza USB i styki ładowania. Diagnozujemy także problemy z akumulatorem oraz połączeniami bezprzewodowymi.",
+      "typicalDevices": "L3, L2s Pro, L2H, L2Ks"
+    },
+    {
+      "series": "Urządzenia z wbudowaną drukarką",
+      "description": "Diagnostyka ekranu, zasilania, mechanizmu podawania papieru i jakości wydruku. Części dobieramy do modelu oraz oznaczenia urządzenia.",
+      "typicalDevices": "V3, V3H, V3 Plus"
+    },
+    {
+      "series": "Komputery POS",
+      "description": "Sprawdzamy panel dotykowy, zasilanie, porty i współpracę z urządzeniami peryferyjnymi. Możliwość naprawy i dostępność podzespołów potwierdzamy indywidualnie.",
+      "typicalDevices": "Serie T i D"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Terminale SUNMI — oferta",
+      "href": "/terminale-sunmi"
+    },
+    {
+      "label": "SUNMI L3",
+      "href": "/produkt/sunmi-l3"
+    },
+    {
+      "label": "SUNMI L2s Pro",
+      "href": "/produkt/sunmi-l2s-pro"
+    },
+    {
+      "label": "SUNMI V3",
+      "href": "/produkt/sunmi-v3"
+    }
+  ],
+  "commonIssues": [
+    {
+      "title": "Rozbity ekran lub brak reakcji na dotyk",
+      "description": "Sprawdzamy panel LCD, dotyk, połączenia wewnętrzne i obudowę. Wycenę wymiany przedstawiamy po ocenie całego urządzenia."
+    },
+    {
+      "title": "Terminal nie ładuje się lub szybko się wyłącza",
+      "description": "Testujemy akumulator, zasilacz, przewód, port USB i styki. Przy ładowaniu w stacji sprawdzamy również jej działanie i zgodność."
+    },
+    {
+      "title": "Wbudowana drukarka nie podaje papieru",
+      "description": "Sprawdzamy ułożenie rolki, zamknięcie pokrywy, czujniki i mechanizm transportu. Uszkodzenie napędu wyceniamy po diagnostyce."
+    },
+    {
+      "title": "Blady wydruk, białe linie lub brak nadruku",
+      "description": "Sprawdzamy papier, zabrudzenie głowicy, wałek i ustawienia druku. Niepełny nadruk może wynikać ze zużycia elementów mechanizmu drukującego."
+    },
+    {
+      "title": "Brak odczytu kodów lub uszkodzony przycisk skanowania",
+      "description": "Sprawdzamy okno skanera, przycisk, konfigurację odczytu i przekazywanie danych do aplikacji. W razie usterki sprzętowej przedstawiamy wycenę naprawy."
+    },
+    {
+      "title": "Urządzenie POS nie wykrywa akcesoriów",
+      "description": "Testujemy złącza, zasilanie i przewody. Sprawdzamy, czy problem dotyczy sprzętu, ustawień systemu czy konfiguracji aplikacji sprzedażowej."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak zgłosić urządzenie SUNMI do naprawy?",
+      "a": "Wypełnij formularz na tej stronie. Podaj model, numer seryjny i opis usterki. Zamówimy kuriera pod wskazany adres. Urządzenie trzeba bezpiecznie zapakować."
+    },
+    {
+      "q": "Czy otrzymam wycenę przed naprawą?",
+      "a": "Tak. Po diagnostyce udostępniamy wycenę w panelu klienta. Naprawę rozpoczynamy po akceptacji. W panelu widoczne są także etapy realizacji."
+    },
+    {
+      "q": "Czy serwis SUNMI jest autoryzowany?",
+      "a": "Dla SUNMI prowadzimy serwis pogwarancyjny. W przypadku sprzętu objętego gwarancją najpierw należy sprawdzić warunki ochrony oraz sposób zgłoszenia."
+    },
+    {
+      "q": "Czy naprawiacie drukarkę wbudowaną w SUNMI V3?",
+      "a": "Diagnozujemy mechanizm druku, podawanie papieru i jakość nadruku. Możliwość naprawy oraz dostępność części potwierdzamy po sprawdzeniu urządzenia."
+    },
+    {
+      "q": "Czy serwis obejmuje aplikację sprzedażową i obsługę płatności?",
+      "a": "Zakres tej usługi dotyczy sprzętu. Zmiany w aplikacji sprzedażowej, konfiguracja płatności i funkcji fiskalnych wymagają osobnego uzgodnienia z dostawcą aplikacji lub operatorem."
+    },
+    {
+      "q": "Co przygotować przed wysyłką?",
+      "a": "Jeśli to możliwe, wykonaj kopię danych. Wyjmij karty SIM i microSD oraz rolkę papieru. Zapakuj urządzenie tak, aby nie przemieszczało się w kartonie. Przy problemach z zasilaniem opisz używany zasilacz i stację."
+    }
+  ]
+},
+  {
     slug: 'unitech',
     name: 'Unitech',
     logoSrc: '/images/manufacturers/unitech.svg',
