@@ -79,16 +79,16 @@ const RequiredAccessories = require('../src/app/produkt/[slug]/RequiredAccessori
 const { getRequiredAccessoryConditionText } = require('../src/lib/required-accessory-copy.ts');
 const requiredHtml = p => renderToStaticMarkup(createElement(RequiredAccessories, { items: getRequiredAccessories(p.description), productName: p.name }));
 const cableHtml = requiredHtml(byId.get('zebra-cable-usbc-et4x'));
-assert(cableHtml.includes('Do zasilania stacji lub ładowarki potrzebujesz zasilacza.'));
+assert(cableHtml.includes('Do zasilania stacji lub ładowarki wymagany jest zasilacz.'));
 assert(cableHtml.includes('Przy połączeniu przewodu z komputerem nie jest potrzebny.'));
 assert(!cableHtml.includes('Aby korzystać z tego produktu'));
 const beltHolster = products.find(p => p.description.includes('**Wymagane dla noszenia przy biodrze'));
 assert(requiredHtml(beltHolster).includes('Dobierz elementy do sposobu użycia.'));
-assert(!requiredHtml(beltHolster).includes('potrzebujesz poniższych elementów'));
+assert(!requiredHtml(beltHolster).includes('wymagane są poniższe elementy'));
 const usbDock = products.find(p => p.description.includes('**Wymagane — sprzedawane osobno**') && p.description.includes('**Wymagane dla połączenia USB'));
-assert(requiredHtml(usbDock).includes('Sprawdź, których elementów potrzebujesz.'));
+assert(requiredHtml(usbDock).includes('Sprawdź, które elementy są potrzebne.'));
 const plainDock = byId.get('zebra-tc201-crd-tcvtb-1d');
-assert(requiredHtml(plainDock).includes('Aby korzystać ze stacji, potrzebujesz poniższych elementów.'));
+assert(requiredHtml(plainDock).includes('Do korzystania ze stacji wymagane są poniższe elementy.'));
 for (const p of products) for (const item of getRequiredAccessories(p.description)) {
   if (!item.condition) continue;
   const sentence = getRequiredAccessoryConditionText(item.condition);

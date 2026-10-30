@@ -21,12 +21,12 @@ export function getRequiredAccessoryConditionText(condition: string): string {
     return 'Zasilacz jest potrzebny do zasilania zgodnej stacji TC201, TC501 lub TC701 albo ładowarki baterii CRDCUP-TC5A7A-4B.'
   }
   if (/^TC\d/.test(condition)) {
-    return `Jeśli używasz terminala ${condition.replace(' i ', ' lub ')}, potrzebujesz tego elementu.`
+    return `Ten element jest wymagany do pracy z terminalem ${condition.replace(' i ', ' lub ')}.`
   }
   if (/^stacji\b/.test(condition)) {
-    return `Jeśli używasz ${condition}, potrzebujesz tego elementu.`
+    return `Ten element jest wymagany do korzystania ze ${condition}.`
   }
-  return `Do ${condition} potrzebujesz tego elementu.`
+  return `Ten element jest wymagany do ${condition}.`
 }
 
 export function getRequiredAccessoriesCopy(conditions: (string | undefined)[], subject: string) {
@@ -44,7 +44,7 @@ export function getRequiredAccessoriesCopy(conditions: (string | undefined)[], s
   }
   if (conditions.length > 0 && conditions.every(condition => condition === stationPowerCondition)) {
     return {
-      heading: 'Do zasilania stacji lub ładowarki potrzebujesz zasilacza.',
+      heading: 'Do zasilania stacji lub ładowarki wymagany jest zasilacz.',
       description: 'Zasilacz jest sprzedawany osobno. Przy połączeniu przewodu z komputerem nie jest potrzebny.',
     }
   }
@@ -60,19 +60,19 @@ export function getRequiredAccessoriesCopy(conditions: (string | undefined)[], s
   if (choices.includes('codziennego ładowania baterii') && choices.includes('ładowania przez port Micro-USB')) {
     return {
       heading: 'Wybierz jeden sposób ładowania.',
-      description: 'Możesz użyć ładowarki baterii lub przewodu Micro-USB. Potrzebujesz tylko jednego z tych rozwiązań. Elementy są sprzedawane osobno.',
+      description: 'Wystarczy jedno z tych rozwiązań: ładowarka baterii lub przewód Micro-USB. Elementy są sprzedawane osobno.',
     }
   }
   if (choices.length === 1 && choices[0] === 'lokalizowania wyłączonego terminala') {
     return {
-      heading: 'Do lokalizowania wyłączonego terminala potrzebujesz licencji.',
+      heading: 'Do lokalizowania wyłączonego terminala wymagana jest licencja.',
       description: 'Licencja jest sprzedawana osobno. Nie jest potrzebna do zwykłego używania ani ładowania baterii.',
     }
   }
   if (choices.includes('ładowania z gniazda sieciowego') && choices.includes('ładowania w pojeździe')) {
     return {
       heading: 'Wybierz sposób zasilania do ładowania.',
-      description: 'Wybierz zasilacz sieciowy lub ładowarkę samochodową. Do połączenia USB z komputerem nie potrzebujesz tych zasilaczy.',
+      description: 'Wybierz zasilacz sieciowy lub ładowarkę samochodową. Przy połączeniu USB z komputerem te zasilacze nie są potrzebne.',
     }
   }
   if (powerChoices.length > 1 || mountChoices.length > 1) {
@@ -88,17 +88,17 @@ export function getRequiredAccessoriesCopy(conditions: (string | undefined)[], s
   if (choices.filter(condition => /^TC\d/.test(condition)).length > 1) {
     return {
       heading: 'Dobierz elementy do modelu terminala.',
-      description: 'Wybierz elementy dla swojego modelu terminala. Elementy są sprzedawane osobno.',
+      description: 'Wybierz elementy zgodne z modelem terminala. Elementy są sprzedawane osobno.',
     }
   }
   if (conditions.some(Boolean)) {
     return {
-      heading: conditions.every(Boolean) ? 'Dobierz elementy do sposobu użycia.' : 'Sprawdź, których elementów potrzebujesz.',
+      heading: conditions.every(Boolean) ? 'Dobierz elementy do sposobu użycia.' : 'Sprawdź, które elementy są potrzebne.',
       description: 'Elementy te są sprzedawane osobno. Przy każdym elemencie podajemy, kiedy jest potrzebny.',
     }
   }
   return {
-    heading: `Aby korzystać ${subject}, potrzebujesz poniższych elementów.`,
+    heading: `Do korzystania ${subject} wymagane są poniższe elementy.`,
     description: 'Elementy te nie są dołączone do zestawu.',
   }
 }

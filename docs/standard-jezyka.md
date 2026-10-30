@@ -16,7 +16,7 @@ Polskie teksty stosują adaptację zasad ASD-STE100. Nie nazywaj ich formalnie z
 - Podaj model, wersję systemu, PN i jednostkę tam, gdzie rozstrzygają zgodność. Zachowuj oryginalny zapis PN.
 - Rozróżnij: zawartość zestawu, elementy wymagane, elementy opcjonalne i części zamienne. Nie przedstawiaj alternatywnych konfiguracji jako listy elementów do kupienia łącznie.
 - Długie wyliczenia zamieniaj na listy. Każde wymagane akcesorium podaj osobno, z linkiem do jego karty, jeśli taka karta istnieje.
-- Pisz „Aby korzystać ze stacji, potrzebujesz poniższych elementów”. Podaj osobno: „Elementy te nie są dołączone do zestawu”. Dostosuj nazwę urządzenia do opisywanego produktu.
+- Wymagania podawaj bezosobowo, bez drugiej osoby: „Do korzystania ze stacji wymagane są poniższe elementy”. Podaj osobno: „Elementy te nie są dołączone do zestawu”. Dostosuj nazwę urządzenia do opisywanego produktu.
 - Nie usuwaj warunków zgodności, ograniczeń, parametrów ani ostrzeżeń w celu skrócenia tekstu. Nie dopisuj niepotwierdzonych właściwości.
 - Nie umieszczaj informacji o źródłach ani procesie weryfikacji w opisie dla klienta. Zapisuj je w dokumentacji roboczej.
 

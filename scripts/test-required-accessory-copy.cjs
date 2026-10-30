@@ -33,6 +33,11 @@ for(const p of products.filter(p=>ids.has(p.id))){
  assert(!clean(p.description).includes('**Wymagane'),p.id+': orphaned requirement heading');
  for(const item of items){if(item.condition){conditions++;assert(sentence(item.condition).endsWith('.'));}if(!item.slug)generic++;}
 }
+// Blok „Wymagane” mówi bezosobowo: bez „potrzebujesz”, „możesz”, „używasz”, „swojego”.
+const secondPerson=/potrzebujesz|możesz|musisz|używasz|\bswoj/i;
+for(const p of products){const items=getRequiredAccessories(p.description);if(!items.length)continue;const c=copy(items.map(i=>i.condition),'z tego produktu');
+ assert(!secondPerson.test(c.heading+' '+c.description),p.id+': second person in block copy');
+ for(const item of items)if(item.condition)assert(!secondPerson.test(sentence(item.condition)),p.id+': second person in condition');}
 const genericHtml=renderToStaticMarkup(createElement(List,{items:[{id:'base',slug:'',name:'Posiadana baza ShareCradle',availability:'unavailable',categoryId:'akcesoria',manufacturerId:'zebra'}]}));
 assert(!/Niedostępny|Cena na zapytanie|Do koszyka|Sprawdzanie dostępności/.test(genericHtml));
 assert(genericHtml.includes('Dobierz element do posiadanego zestawu.'));
