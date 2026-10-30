@@ -1,0 +1,36 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import s from './SatoCl4SxrStory.module.css'
+
+export default function SatoCl6SxrStory() {
+  return <div className={s.story}>
+    <nav className={s.nav} aria-label="Poznaj SATO CL6-SXR"><strong>SATO <span>CL6-SXR</span></strong><div><a href="#cl6-width">Szerokie etykiety</a><a href="#cl6-display">Obsługa</a><a href="#cl6-care">Integracja</a></div></nav>
+    <section className={s.hero}>
+      <div className={s.heroCopy}><p className={s.eyebrow}>DRUK PRZEMYSŁOWY W SZERSZYM FORMACIE</p><h2>Więcej miejsca<br/>na etykiecie.</h2><p className={s.model}>CL6-SXR</p><p>Oznaczaj kartony, palety i duże opakowania.<br/>Szeroki nadruk. Czytelne dane logistyczne.</p><a href="#cl6-width" className={s.arrow}>Poznaj drukarkę <span>↓</span></a></div>
+      <div className={s.heroProduct} style={{ mixBlendMode: 'multiply', maskImage: 'linear-gradient(to right, transparent, black 12%, black 88%, transparent), linear-gradient(to bottom, transparent, black 18%, black 82%, transparent)', maskComposite: 'intersect' }}><Image src="/images/products/sato-cl6-sxr-rfid-final.webp" alt="SATO CL6-SXR — szeroka przemysłowa drukarka etykiet" fill sizes="(max-width:640px) 90vw, 650px" quality={95}/></div>
+      <div className={s.heroFooter}><span>Do 167,5 mm w trybie rozszerzonym</span><span>203 · 305 dpi</span><span>SATO AEP · SOS</span></div>
+    </section>
+    <section id="cl6-width" className={s.speed}>
+      <div className={s.title}><p className={s.eyebrow}>KARTONY · PALETY · PRODUKCJA</p><h2>Szeroki nadruk.<br/><span>Tempo Twojej linii.</span></h2><p>Umieść kody, dane produktu i oznaczenia logistyczne na jednej etykiecie. CL6-SXR obsługuje materiał o szerokości 47–177 mm bez podkładu.</p></div>
+      <div className={s.speedPanel}><div className={s.photo}><Image src="/images/products/sato-cl6-sxr-rfid-final.webp" alt="CL6-SXR z szeroką etykietą — widok mechanizmu drukującego" fill sizes="(max-width:640px) 90vw, 600px" quality={95}/></div><div className={s.speedCopy}><span className={s.overline}>DO</span><strong>14<span>cali/s</span></strong><p className={s.blue}>355,6 mm/s przy 203 i 305 dpi</p><p>Taśma barwiąca do 600 m i rolka etykiet do 220 mm pozwalają drukować długie serie bez częstego uzupełniania materiałów.</p><small>Prędkość zależy od materiału, danych i ustawień druku.</small></div></div>
+      <div className={s.details}>{[
+        ['01', '152 mm', 'Standardowa szerokość nadruku przy 203 dpi.'],
+        ['02', '165,3 mm', 'Standardowa szerokość nadruku przy 305 dpi.'],
+        ['03', '167,5 mm', 'Maksymalna szerokość w trybie rozszerzonym przy obu rozdzielczościach.'],
+        ['04', '600 m taśmy', 'Mniej przerw na wymianę materiałów podczas drukowania długich serii.'],
+      ].map(([n,t,p])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{p}</p></article>)}</div>
+      <div className={s.precision}><div><strong>±0,3<span> mm</span></strong><h3>Położenie nadruku pod kontrolą.</h3></div><div><p>Tryb wysokiej precyzji wspiera powtarzalne pozycjonowanie tekstów, kodów i grafiki. Prowadnice oraz czujniki pomagają utrzymać materiał we właściwym położeniu.</p><small>Dokładność podana przez producenta dotyczy określonych materiałów i warunków pracy. Rzeczywisty wynik wymaga sprawdzenia dla używanej etykiety.</small></div></div>
+    </section>
+    <section id="cl6-display" className={s.display}>
+      <div className={s.displayPhoto}><div className={s.photo}><Image src="/images/sato-cl4-sxr/display.webp" alt="Wspólny dla serii CL-SXR kolorowy panel dotykowy 4,3 cala" fill sizes="(max-width:640px) 90vw, 600px" quality={95}/></div><span>4,3″<small>kolorowy ekran dotykowy</small></span></div>
+      <div className={s.displayCopy}><p className={s.eyebrow}>KONTROLA NA STANOWISKU</p><h2>Etykieta na ekranie.<br/>Zanim trafi na karton.</h2><div className={s.displayFeatures}><article><h3>Podgląd przed wydrukiem.</h3><p>Sprawdź układ etykiety na ekranie i ogranicz błędy przed rozpoczęciem serii.</p></article><article><h3>Obsługa w rękawicach.</h3><p>Rezystancyjny ekran dotykowy reaguje także podczas pracy w rękawicach roboczych.</p></article><article><h3>Własny układ skrótów.</h3><p>Dopasuj ekran do czynności wykonywanych przez operatora. Instrukcje ekranowe i głośnik pomagają w obsłudze.</p></article></div></div>
+    </section>
+    <section id="cl6-care" className={s.care}>
+      <div className={s.title}><p className={s.eyebrow}>OD STANOWISKA DO CAŁEJ FLOTY</p><h2>Włącz drukarkę<br/><span>w swój proces.</span></h2><p>USB, Gigabit Ethernet, RS-232C i port EXT pozwalają połączyć CL6-SXR z urządzeniami stanowiska. Emulacje języków wspierają integrację z istniejącym systemem etykietowania.</p></div>
+      <div className={s.careGrid}><article><span className={s.serviceBadge}>AEP</span><h3>Druk bez stałego połączenia z PC.</h3><p>Aplikacja SATO AEP działa bezpośrednio na drukarce. Może korzystać z danych wprowadzanych przez skaner i inne urządzenia peryferyjne.</p><small>Aplikacja i integracja wymagają przygotowania do konkretnego procesu.</small></article><article><span className={s.serviceBadge}>SOS</span><h3>Zaplanuj obsługę urządzeń.</h3><p>SATO Online Services wspiera zdalny monitoring i analizę danych operacyjnych. Informacje o zużyciu pomagają zaplanować konserwację.</p><small>Usługa wymaga konfiguracji i połączenia z siecią. Funkcje predykcyjne nie gwarantują wykrycia każdej usterki.</small></article></div>
+      <div className={s.title}><h3>Wyposażenie do Twojego zadania.</h3><p>Opcjonalny obcinak, odklejak i moduł UHF RFID dobiera się do materiału oraz sposobu pracy. Łączność Wi-Fi i Bluetooth wymaga odpowiedniego wyposażenia.</p></div>
+    </section>
+    <section className={s.eco}><div><p className={s.eyebrow}>MNIEJ STRAT PRZY ZMIANIE ROLKI</p><h2>Wykorzystaj<br/>pierwszą etykietę.</h2><p>Czujnik wykrywa pierwszą etykietę po założeniu materiału. Drukarka może przywrócić jej położenie i ograniczyć liczbę pustych etykiet.</p><small>Działanie zależy od materiału i ustawień.</small><div className={s.ecoFact}><strong>≈36%</strong><span>elementów z tworzywa sztucznego<br/>pochodzi z recyklingu</span></div></div></section>
+    <section className={s.final}><p className={s.eyebrow}>SATO CL6-SXR W TWOJEJ FIRMIE</p><h2>Od szerokiej etykiety<br/>do gotowej przesyłki.</h2><p>Dobierz rozdzielczość do wielkości kodów i tekstu. Dopasuj materiał, taśmę barwiącą i sposób odbioru etykiet do stanowiska.</p><div><a href="#warianty">Dobierz drukarkę ↑</a><a href="#akcesoria">Zobacz akcesoria ↓</a><Link href="/datasheets/sato-cl-sxr-brochure-pl.pdf" target="_blank">Broszura SATO (PL) ↗</Link></div></section>
+  </div>
+}

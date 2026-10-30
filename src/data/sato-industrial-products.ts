@@ -1,6 +1,9 @@
 import type { Product } from './products'
 import { satoCl4SxrRfidProducts, satoCl4SxrRfidAccessories } from './sato-cl4-sxr-rfid-products'
 
+import { satoCl6SxrRfidProducts, satoCl6SxrRfidAccessories } from './sato-cl6-sxr-rfid-products'
+const cl6Reference = satoCl6SxrRfidProducts[0]
+
 const reference = satoCl4SxrRfidProducts[0]
 export const satoIndustrialProducts: Product[] = [{
   ...reference,
@@ -39,3 +42,191 @@ export const satoIndustrialProducts: Product[] = [{
   relatedProducts: ['sato-cl4-sxr-rfid', 'sato-cl4nx-plus-rfid', 'zebra-zt411'],
   sameAs: 'https://www.satoeurope.com/pl/products/industrial-printers.php#cl4-sxr', createdAt: '2026-10-30',
 }]
+
+
+satoIndustrialProducts.push({
+  ...cl6Reference,
+  id: 'sato-cl6-sxr', slug: 'sato-cl6-sxr', name: 'SATO CL6-SXR', seoH1: 'SATO CL6-SXR',
+  seoTitle: 'SATO CL6-SXR — przemysłowa drukarka szerokich etykiet | TAKMA',
+  seoDescription: 'SATO CL6-SXR: nadruk do 167,5 mm w trybie rozszerzonym, 203 lub 305 dpi, prędkość do 355,6 mm/s. Ceny, warianty EU i akcesoria w TAKMA.',
+  shortDescription: '6-calowa drukarka przemysłowa do etykiet kartonów, palet i produktów. Druk do 167,5 mm w trybie rozszerzonym, 203 lub 305 dpi, taśma do 600 m.',
+  description: 'SATO CL6-SXR to przemysłowa drukarka termiczna i termotransferowa do szerokich etykiet logistycznych. Drukuje z prędkością do 355,6 mm/s przy 203 i 305 dpi. Standardowa szerokość nadruku wynosi 152 mm przy 203 dpi i 165,3 mm przy 305 dpi. Tryb rozszerzony zwiększa ją do 167,5 mm. Ekran dotykowy 4,3 cala, podgląd etykiety i dostęp do toru materiału ułatwiają obsługę. SATO AEP pozwala uruchamiać aplikacje bezpośrednio na drukarce. SOS wspiera monitoring i planowanie konserwacji.',
+  subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
+  quoteOnly: false, priceFrom: 14794.70, availability: 'available',
+  imageDescriptions: ['SATO CL6-SXR — przemysłowa drukarka etykiet, widok z przodu pod kątem'],
+  keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni', rozdzielczosc: '203 / 305 dpi', szerokoscDruku: 'Do 167,5 mm w trybie rozszerzonym; standardowo 152 / 165,3 mm', szerokoscEtykiet: '47–177 mm bez podkładu', predkoscDruku: 'Do 355,6 mm/s (14 cali/s)' },
+  specifications: cl6Reference.specifications.filter(s => !['RFID', 'Rolka materiału', 'Zegar RTC', 'Łączność'].includes(s.name)).concat([
+    { name: 'Rolka materiału', value: 'Średnica do 220 mm; gilza 76 lub 101 mm; szerokość materiału 47–177 mm bez podkładu' },
+    { name: 'Dokładność pozycjonowania', value: 'Do ±0,3 mm w trybie wysokiej precyzji; zależy od materiału i warunków pracy' },
+    { name: 'Interfejsy standardowe', value: 'USB typu B, 2 × USB Host typu A, Gigabit Ethernet, RS-232C, EXT' },
+    { name: 'Łączność opcjonalna', value: 'Wi-Fi 6E, Wi-Fi Direct i Bluetooth 5.2; wymagają odpowiedniego wyposażenia' },
+    { name: 'RFID', value: 'Opcjonalny moduł UHF; nie jest wyposażeniem standardowym' },
+  ]),
+  variants: [
+    {
+        "partNumber": "WWCLXA042",
+        "name": "203 dpi, ręczne odrywanie, RTC, przewód EU",
+        "priceFrom": 14794.7,
+        "availability": "available",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Ręczne odrywanie"
+        }
+    },
+    {
+        "partNumber": "WWCLXB042",
+        "name": "305 dpi, ręczne odrywanie, RTC, przewód EU",
+        "priceFrom": 16863.35,
+        "availability": "available",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Ręczne odrywanie"
+        }
+    },
+    {
+        "partNumber": "WWCLXA10ZNAREU",
+        "name": "203 dpi, obcinak, RTC, przewód EU",
+        "priceFrom": 18324.13,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Obcinak"
+        }
+    },
+    {
+        "partNumber": "WWCLXA10ZWAREU",
+        "name": "203 dpi, obcinak, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 19732.32,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Obcinak"
+        }
+    },
+    {
+        "partNumber": "WWCLXA20ZNAREU",
+        "name": "203 dpi, odklejak z nawijakiem podkładu, RTC, przewód EU",
+        "priceFrom": 17383.82,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+        }
+    },
+    {
+        "partNumber": "WWCLXA20ZWAREU",
+        "name": "203 dpi, odklejak z nawijakiem podkładu, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 19215.37,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+        }
+    },
+    {
+        "partNumber": "WWCLXA30ZNAREU",
+        "name": "203 dpi, odklejak, RTC, przewód EU",
+        "priceFrom": 16256.38,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Odklejak"
+        }
+    },
+    {
+        "partNumber": "WWCLXA00ZWAREU",
+        "name": "203 dpi, ręczne odrywanie, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 16207.38,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "203 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Ręczne odrywanie"
+        }
+    },
+    {
+        "partNumber": "WWCLXB10ZNAREU",
+        "name": "305 dpi, obcinak, RTC, przewód EU",
+        "priceFrom": 20392.77,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Obcinak"
+        }
+    },
+    {
+        "partNumber": "WWCLXB10ZWAREU",
+        "name": "305 dpi, obcinak, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 21800.98,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Obcinak"
+        }
+    },
+    {
+        "partNumber": "WWCLXB20ZNAREU",
+        "name": "305 dpi, odklejak z nawijakiem podkładu, RTC, przewód EU",
+        "priceFrom": 19452.44,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+        }
+    },
+    {
+        "partNumber": "WWCLXB20ZWAREU",
+        "name": "305 dpi, odklejak z nawijakiem podkładu, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 21284.0,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+        }
+    },
+    {
+        "partNumber": "WWCLXB30ZNAREU",
+        "name": "305 dpi, odklejak, RTC, przewód EU",
+        "priceFrom": 18325.0,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C",
+            "Obsługa etykiet": "Odklejak"
+        }
+    },
+    {
+        "partNumber": "WWCLXB00ZWAREU",
+        "name": "305 dpi, ręczne odrywanie, Wi-Fi i Bluetooth, RTC, przewód EU",
+        "priceFrom": 18275.99,
+        "availability": "unavailable",
+        "attributes": {
+            "Rozdzielczość": "305 dpi",
+            "Łączność": "USB, Ethernet, RS-232C, Wi-Fi, Bluetooth",
+            "Obsługa etykiet": "Ręczne odrywanie"
+        }
+    }
+],
+  relatedAccessories: satoCl6SxrRfidAccessories.map(a => a.id),
+  applications: ['Etykiety logistyczne kartonów i palet', 'Oznaczanie opakowań zbiorczych', 'Szerokie etykiety produktów i komponentów'],
+  faq: [
+    { question: 'Jak szeroko drukuje SATO CL6-SXR?', answer: 'Standardowo do 152 mm przy 203 dpi i 165,3 mm przy 305 dpi. Tryb rozszerzony zwiększa szerokość nadruku do 167,5 mm w obu rozdzielczościach. Nie należy mylić szerokości nadruku z szerokością materiału, która wynosi 47–177 mm bez podkładu.' },
+    { question: 'Czy CL6-SXR osiąga taką samą prędkość przy 203 i 305 dpi?', answer: 'Tak. Maksymalna prędkość wynosi 355,6 mm/s, czyli 14 cali/s, przy obu rozdzielczościach. Rzeczywista prędkość zależy od etykiet, taśmy, danych i ustawień.' },
+    { question: 'Czy CL6-SXR ma Wi-Fi i RFID?', answer: 'To wyposażenie opcjonalne. Wi-Fi i Bluetooth są dostępne w odpowiednio wyposażonych drukarkach. Kodowanie etykiet UHF RFID wymaga modułu UHF oraz doboru i testu materiału.' },
+    { question: 'Czym CL6-SXR różni się od CL4-SXR?', answer: 'CL6-SXR obsługuje szerszy nadruk: do 167,5 mm w trybie rozszerzonym, wobec 104 mm w CL4-SXR. CL6-SXR ma rozdzielczość 203 lub 305 dpi i prędkość do 355,6 mm/s. CL4-SXR oferuje również 609 dpi oraz do 457,2 mm/s przy 203 dpi.' },
+  ],
+  downloads: [{ name: 'Broszura SATO CL4-SXR / CL6-SXR (PL)', type: 'datasheet', url: '/datasheets/sato-cl-sxr-brochure-pl.pdf', size: '7,6 MB' }, ...cl6Reference.downloads.filter(d => d.type !== 'datasheet')],
+  relatedProducts: ['sato-cl4-sxr', 'sato-cl6-sxr-rfid', 'zebra-zt421'],
+  sameAs: 'https://www.satoeurope.com/pl/products/industrial-printers.php#cl6-sxr', createdAt: '2026-10-30',
+})

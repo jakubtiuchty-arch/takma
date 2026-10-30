@@ -2,10 +2,10 @@ import type { Product } from './products'
 
 const id = 'sato-cl6-sxr-rfid'
 const parts = [
-  { key: 'head-203', pn: 'R49015101', name: 'Głowica 203 dpi SATO CL6-SXR', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R49015101 do drukarki SATO CL6-SXR 203 dpi, także z UHF RFID. Nie pasuje do wersji 305 dpi i nie służy do zmiany rozdzielczości urządzenia.' },
-  { key: 'head-305', pn: 'R49015201', name: 'Głowica 305 dpi SATO CL6-SXR', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R49015201 do drukarki SATO CL6-SXR 305 dpi, także z UHF RFID. Nie pasuje do wersji 203 dpi i nie służy do zmiany rozdzielczości urządzenia.' },
-  { key: 'platen', pn: 'R55373100', name: 'Wałek dociskowy SATO CL6-SXR', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R55373100 do SATO CL6-SXR, także z UHF RFID. Pasuje do wersji 203 i 305 dpi sprzedawanych w Europie.' },
-  { key: 'cutter', pn: 'WWCLXD100', name: 'Obcinak SATO CL6-SXR', image: 'cutter', match: 'CL6-SXR; dobór do materiału i wyposażenia', description: 'Zestaw obcinaka gilotynowego WWCLXD100 do SATO CL6-SXR. Przed zastosowaniem z RFID sprawdź długość etykiety i położenie wkładki. Obcinak musi ciąć między wkładkami. Warianty z kodem A0 mają fabryczny obcinak i nie wymagają jego ponownego zakupu.' },
+  { key: 'head-203', pn: 'R49015101', price: 2610.73, name: 'Głowica 203 dpi SATO CL6-SXR', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R49015101 do drukarki SATO CL6-SXR 203 dpi, także z UHF RFID. Nie pasuje do wersji 305 dpi i nie służy do zmiany rozdzielczości urządzenia.' },
+  { key: 'head-305', pn: 'R49015201', price: 3676.32, name: 'Głowica 305 dpi SATO CL6-SXR', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R49015201 do drukarki SATO CL6-SXR 305 dpi, także z UHF RFID. Nie pasuje do wersji 203 dpi i nie służy do zmiany rozdzielczości urządzenia.' },
+  { key: 'platen', pn: 'R55373100', price: 330.36, name: 'Wałek dociskowy SATO CL6-SXR', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R55373100 do SATO CL6-SXR, także z UHF RFID. Pasuje do wersji 203 i 305 dpi sprzedawanych w Europie.' },
+  { key: 'cutter', pn: 'WWCLXD100', price: 3524.98, name: 'Obcinak SATO CL6-SXR', image: 'cutter', match: 'CL6-SXR; dobór do materiału i wyposażenia', description: 'Zestaw obcinaka gilotynowego WWCLXD100 do SATO CL6-SXR. Przed zastosowaniem z RFID sprawdź długość etykiety i położenie wkładki. Obcinak musi ciąć między wkładkami. Warianty z kodem A0 mają fabryczny obcinak i nie wymagają jego ponownego zakupu.' },
 ]
 export const satoCl6SxrRfidAccessories: Product[] = parts.map(a => ({
   id: `sato-cl6-sxr-${a.key}`, slug: `sato-cl6-sxr-${a.pn.toLowerCase()}`, name: `${a.name} — ${a.pn}`,
@@ -15,7 +15,7 @@ export const satoCl6SxrRfidAccessories: Product[] = parts.map(a => ({
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka'],
   images: [`/images/products/sato-cl6-sxr-${a.image}-catalog.webp`], imageDescriptions: [`${a.name} — ${a.pn}, rysunek poglądowy`],
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: `SATO CL6-SXR; ${a.match}` }],
-  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
+  priceFrom: a.price, applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
   downloads: [{ name: 'Katalog części CL6-SXR (EN)', type: 'manual', url: '/downloads/sato-cl6-sxr-czesci-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
