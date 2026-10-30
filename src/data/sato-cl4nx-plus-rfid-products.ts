@@ -2,10 +2,10 @@ import type { Product } from './products'
 
 const id = 'sato-cl4nx-plus-rfid'
 const parts = [
-  { key: 'head-203', pn: 'R37901800', name: 'Głowica 203 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R37901800 do SATO CL4NX Plus 203 dpi, także z UHF RFID. Nie pasuje do wersji 305 dpi i nie służy do zmiany rozdzielczości drukarki.' },
-  { key: 'head-305', pn: 'R37901900', name: 'Głowica 305 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R37901900 do SATO CL4NX Plus 305 dpi, także z UHF RFID. Nie pasuje do wersji 203 dpi i nie służy do zmiany rozdzielczości drukarki.' },
-  { key: 'platen', pn: 'R37901501', name: 'Wałek dociskowy SATO CL4NX Plus', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R37901501 do SATO CL4NX Plus, także z UHF RFID. Wskaźnik Pure Line pomaga ocenić zużycie powierzchni wałka.' },
-  { key: 'cutter', pn: 'WWCL05100', name: 'Gilotyna SATO CL4NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw gilotyny WWCL05100 do SATO CL4NX Plus. Przy RFID ustaw cięcie między wkładkami. Gilotyna obsługuje materiał o grubości 0,060–0,268 mm. Grube etykiety On-Metal mogą przekraczać ten zakres. Przed zamówieniem podaj nam grubość etykiety. Ten zestaw nie jest obcinakiem rotacyjnym WWCLP5500.' },
+  { key: 'head-203', pn: 'R37901800', price: 2397.58, name: 'Głowica 203 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R37901800 do SATO CL4NX Plus 203 dpi, także z UHF RFID. Nie pasuje do wersji 305 dpi i nie służy do zmiany rozdzielczości drukarki.' },
+  { key: 'head-305', pn: 'R37901900', price: 2877.06, name: 'Głowica 305 dpi SATO CL4NX Plus', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R37901900 do SATO CL4NX Plus 305 dpi, także z UHF RFID. Nie pasuje do wersji 203 dpi i nie służy do zmiany rozdzielczości drukarki.' },
+  { key: 'platen', pn: 'R37901501', price: 223.8, name: 'Wałek dociskowy SATO CL4NX Plus', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R37901501 do SATO CL4NX Plus, także z UHF RFID. Wskaźnik Pure Line pomaga ocenić zużycie powierzchni wałka.' },
+  { key: 'cutter', pn: 'WWCL05100', price: 2293.47, name: 'Gilotyna SATO CL4NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw gilotyny WWCL05100 do SATO CL4NX Plus. Przy RFID ustaw cięcie między wkładkami. Gilotyna obsługuje materiał o grubości 0,060–0,268 mm. Grube etykiety On-Metal mogą przekraczać ten zakres. Przed zamówieniem podaj nam grubość etykiety. Ten zestaw nie jest obcinakiem rotacyjnym WWCLP5500.' },
 ]
 
 export const satoCl4nxPlusRfidAccessories: Product[] = parts.map(a => ({
@@ -16,7 +16,7 @@ export const satoCl4nxPlusRfidAccessories: Product[] = parts.map(a => ({
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka'],
   images: [`/images/products/sato-cl4nx-plus-${a.image}.webp`], imageDescriptions: [`${a.name} — ${a.image === 'head' ? 'widok głowicy z serii CL4NX Plus' : a.pn}`],
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: `SATO CL4NX Plus; ${a.match}` }],
-  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
+  priceFrom: a.price, applications: [], availability: 'available', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id, 'sato-cl4nx-plus'],
   downloads: [{ name: 'Katalog części CL4NX Plus (EN)', type: 'manual', url: '/downloads/sato-cl4nx-plus-czesci-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
