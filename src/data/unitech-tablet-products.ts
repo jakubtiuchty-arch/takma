@@ -23,15 +23,15 @@ const rt112: Product = {
   name: 'Unitech RT112',
   seoH1: 'Unitech RT112',
   seoTitle: 'Tablet przemysłowy Unitech RT112 10,1″ z Androidem 13, opcja 5G, IP67',
-  seoDescription: 'Tablet przemysłowy Unitech RT112: ekran 10,1″, Android 13 z GMS i AER, Wi-Fi 6E lub 5G, opcjonalny skaner 2D, NFC, IP67 i wymienna bateria 8800 mAh. Tablet wzmocniony i tablet ze skanerem kodów RT112 Unitech. PN: RT112-0A6FUMDG, RT112-QA6FUMDG, RT112-0ANFUMDG, RT112-QANFUMDG.',
-  shortDescription: 'Unitech RT112 — tablet przemysłowy 10,1″ z Androidem 13, Wi-Fi 6E lub 5G, opcjonalnym skanerem 2D i NFC; wymienna bateria 8800 mAh, obudowa IP67.',
-  description: `Unitech RT112 to tablet z Androidem 13 dla pracowników, którzy skanują towar i od razu sprawdzają jego stan w systemie firmy albo składają zamówienie online dla klienta. Producent wskazuje zastosowania w magazynie, handlu, logistyce, produkcji, transporcie i serwisie w terenie.
+  seoDescription: 'Tablet przemysłowy Unitech RT112: ekran 10,1″, Android 13 z GMS i AER, Wi-Fi 6E i opcja 5G, opcjonalny skaner 2D, NFC, IP67 i wymienna bateria 8800 mAh. Tablet wzmocniony i tablet ze skanerem kodów RT112 Unitech. PN: RT112-0A6FUMDG, RT112-QA6FUMDG, RT112-0ANFUMDG, RT112-QANFUMDG.',
+  shortDescription: 'Unitech RT112 — tablet przemysłowy 10,1″ z Androidem 13, Wi-Fi 6E, opcją 5G, opcjonalnym skanerem 2D i NFC; wymienna bateria 8800 mAh, obudowa IP67.',
+  description: `Unitech RT112 to tablet z Androidem 13 dla pracowników, którzy skanują towar i od razu sprawdzają jego stan w systemie firmy albo składają zamówienie online dla klienta. Jest przeznaczony do pracy w magazynie, handlu, logistyce, produkcji, transporcie i serwisie w terenie.
 
-System ma certyfikaty Google GMS i Android Enterprise Recommended, a producent przewiduje aktualizację do Androida 16. Procesor Qualcomm 5430 należy do platformy 5G IoT o długim cyklu życia.
+System ma certyfikaty Google GMS i Android Enterprise Recommended oraz możliwość aktualizacji do Androida 16. Procesor Qualcomm 5430 należy do platformy IoT o długim cyklu życia.
 
 Wersje ze skanerem czytają kody 1D i 2D, także Dot Code, Grid Matrix i Han Xin, oraz kody pocztowe. Moduł HF/NFC obsługuje ISO 14443, ISO 15693, MIFARE i FeliCa. Aparat 13 MP współpracuje z Google ARCore i Depth API.
 
-Wersje 5G przesyłają dane, SMS i głos, także przez VoNR, oraz odbierają sygnał GNSS. Bateria 8800 mAh jest wymienna, a funkcja Battery Care ogranicza jej ładowanie do 80% lub 50%, co według producenta wydłuża trwałość. Do noszenia tabletu służą obrotowy pasek na dłoń i pasek na ramię.
+Wersje 5G przesyłają dane, SMS i głos, także przez VoNR, oraz odbierają sygnał GNSS. Bateria 8800 mAh jest wymienna. Funkcja Battery Care zatrzymuje ładowanie na poziomie 80% lub 50%, co wydłuża żywotność baterii przy częstym ładowaniu. Do noszenia tabletu służą obrotowy pasek na dłoń i pasek na ramię.
 
 ## Co jest potrzebne do użycia?
 
@@ -55,7 +55,7 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   imageDescriptions: [
     'Unitech RT112 — widok z przodu, ekran 10,1 cala z Androidem w poziomie',
     'Unitech RT112 — widok z przodu pod kątem, przyciski na prawej krawędzi obudowy',
-    'Unitech RT112 — tył obudowy z aparatem, żółtym oknem skanera i logo unitech',
+    'Unitech RT112 — tył obudowy z aparatem, modułem skanera z żółtą etykietą ostrzegawczą lasera i logo unitech',
     'Unitech RT112 — tył obudowy pod kątem, pokrywa baterii i okno skanera',
   ],
   tags: ['magazyn', 'logistyka', 'retail'],
@@ -78,10 +78,11 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
     { name: 'Przyciski', value: '6: zasilanie, głośność +/−, dwa przyciski skanowania, jeden przycisk programowalny' },
     { name: 'Audio', value: 'Dwa głośniki, dwa mikrofony z redukcją szumów i tła' },
     { name: 'Czujniki', value: 'Żyroskop, akcelerometr, kompas elektroniczny, czujnik światła i czujnik zbliżeniowy' },
-    { name: 'Bateria', value: 'Wymienna, 8800 mAh; pełne ładowanie w około 4 godziny; limit ładowania 80% lub 50% (Battery Care)' },
+    { name: 'Bateria', value: 'Wymienna, 8800 mAh; pełne ładowanie w ciągu 4 godzin; limit ładowania 80% lub 50% (Battery Care)' },
     { name: 'Klasa szczelności', value: 'IP67 (zanurzenie na głębokość 1 m do 30 minut)' },
     { name: 'Odporność na upadki', value: '1,5 m na beton; MIL-STD-810H, Method 516.8, Procedure IV' },
     { name: 'Temperatura pracy', value: 'Od −20°C do +55°C' },
+    { name: 'Temperatura ładowania', value: 'Od 0°C do +40°C' },
     { name: 'Temperatura przechowywania', value: 'Od −40°C do +70°C (bez baterii)' },
     { name: 'Wilgotność', value: '5%–95% bez kondensacji' },
     { name: 'Wymiary', value: '260 × 165 × 12 mm' },
@@ -134,11 +135,11 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   },
   compatibleAccessories: [],
   relatedAccessories: [
-    'unitech-przewod-sieciowy-eu-c5',
     'unitech-rt112-bateria',
     'unitech-rt112-stacja-biurkowa',
     'unitech-rt112-pasek-na-dlon',
     'unitech-rt112-uchwyt-samochodowy-usb',
+    'unitech-przewod-sieciowy-eu-c5',
     'unitech-rt112-uchwyt-samochodowy',
     'unitech-rt112-szklo-ochronne',
     'unitech-rt112-pasek-na-ramie',
@@ -161,11 +162,11 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
     },
     {
       question: 'Jak długo pracuje bateria RT112 i jak ją wymienić?',
-      answer: 'Producent podaje do 17 godzin pracy na jednym ładowaniu, zależnie od funkcji i środowiska. Aby wymienić baterię, przesuń w górę cztery zatrzaski pokrywy, zdejmij pokrywę, przytrzymaj zatrzask u dołu i unieś baterię za pasek. Zapasową baterię opisuje karta [baterii 8800 mAh](/produkt/unitech-rt112-bateria).',
+      answer: 'Do 17 godzin na jednym ładowaniu, zależnie od używanych funkcji i warunków pracy. Przy wymianie przesuwa się w górę cztery zatrzaski pokrywy i zdejmuje pokrywę, a potem przytrzymuje zatrzask u dołu i unosi baterię za pasek. Zapasowa bateria to [1400-900077G 8800 mAh](/produkt/unitech-rt112-bateria).',
     },
     {
       question: 'Do czego służy limit ładowania w RT112?',
-      answer: 'Funkcja Battery Care w ustawieniach baterii pozwala przerwać ładowanie na poziomie 80% albo 50%. Producent zaleca niższy limit przy częstym ładowaniu, a przy długim przechowywaniu stan naładowania około 50%.',
+      answer: 'Funkcja Battery Care w ustawieniach baterii pozwala przerwać ładowanie na poziomie 80% albo 50%. Limit 50% jest przeznaczony do pracy z częstym ładowaniem. Baterię odkładaną na dłużej najlepiej przechowywać naładowaną do około 50%.',
     },
     {
       question: 'Czy RT112 bez skanera może czytać kody kreskowe?',
@@ -173,7 +174,7 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
     },
     {
       question: 'Czy RT112 obsługuje połączenia głosowe w sieci 5G?',
-      answer: 'Tak. Producent potwierdza obsługę VoNR (Voice over New Radio), która poprawia jakość dźwięku i skraca opóźnienie rozmowy w sieci 5G. Funkcja dotyczy wersji z modemem 5G.',
+      answer: 'Tak. RT112 obsługuje VoNR (Voice over New Radio), które poprawia jakość dźwięku i skraca opóźnienie rozmowy w sieci 5G. Funkcja dotyczy wersji z modemem 5G.',
     },
     {
       question: 'Jakie są alternatywy dla Unitech RT112?',
@@ -191,12 +192,12 @@ const rt112Windows: Product = {
   seoH1: 'Unitech RT112 Windows',
   seoTitle: 'Tablet przemysłowy Unitech RT112 Windows 10,1″, Windows 11 na ARM, IP67',
   seoDescription: 'Tablet przemysłowy Unitech RT112 Windows: Windows 11 IoT Enterprise LTSC na ARM, ekran 10,1″, procesor Qualcomm 6490, 8 GB RAM, IP67, opcja 5G z eSIM i skaner 2D. Tablet z Windows 11 i tablet wzmocniony RT112 Windows Unitech. PN: RT112-0D6FUMDG, RT112-QD6FUMDG, RT112-0DNFUMDG, RT112-QDNFUMDG.',
-  shortDescription: 'Unitech RT112 Windows — tablet przemysłowy 10,1″ z Windows 11 na ARM, pracą bez baterii przy zasilaniu przez styki POGO, opcją 5G z eSIM i skanerem 2D; IP67, 690 g.',
-  description: `Unitech RT112 Windows łączy pełny system Windows 11 z obudową o grubości 12 mm, masie 690 g i klasie IP67. System to Windows 11 IoT Enterprise LTSC dla architektury Arm64 (Windows on Arm), a procesor Qualcomm 6490 współpracuje z pamięcią 8 GB RAM i 128 GB Flash. Producent wskazuje zastosowania: kasy POS, hotelarstwo, opieka nad pacjentem, magazyn i produkcja.
+  shortDescription: 'Unitech RT112 Windows — tablet przemysłowy 10,1″ z Windows 11 na ARM i pracą bez baterii przy zasilaniu przez styki POGO; wersje 5G z eSIM, skaner 2D w części wersji, IP67, 690 g.',
+  description: `Unitech RT112 Windows łączy pełny system Windows 11 z obudową o grubości 12 mm, masie 690 g i klasie IP67. System to Windows 11 IoT Enterprise LTSC dla architektury Arm64 (Windows on Arm), a procesor Qualcomm 6490 współpracuje z pamięcią 8 GB RAM i 128 GB Flash. Tablet jest przeznaczony do kas POS, hotelarstwa, opieki nad pacjentem, magazynów i produkcji.
 
-Tablet działa także bez baterii, jeśli zasilanie dochodzi przez styki POGO. Producent zaleca ten tryb w kioskach, na liniach produkcyjnych i w pojazdach oraz wskazuje stację biurkową i uchwyt samochodowy jako źródła zasilania. Unika się wtedy zużycia baterii przy ciągłym ładowaniu w wysokiej temperaturze.
+Tablet działa także bez baterii, jeśli zasilanie dochodzi przez styki POGO. Ten tryb sprawdza się w kioskach, na liniach produkcyjnych i w pojazdach, gdzie prąd dostarcza stacja biurkowa lub uchwyt samochodowy. Odpada wtedy ryzyko puchnięcia i zużycia baterii od ciągłego ładowania w wysokiej temperaturze.
 
-Wersja 5G ma eSIM i gniazdo nano-SIM, a sieć eSIM zmienia się kodem QR lub kodem aktywacyjnym przez Wi-Fi. Opcjonalny silnik 2D czyta według producenta kody z odległości do 10 m; jego ustawienia są w aplikacji ScanBridge. Ekran ma fabrycznie naklejoną osłonę.
+Wersja 5G ma eSIM i gniazdo nano-SIM, a sieć eSIM zmienia się kodem QR lub kodem aktywacyjnym przez Wi-Fi. Opcjonalny silnik 2D czyta kody z odległości do 10 m, a jego ustawienia są w aplikacji ScanBridge, wbudowanej w system. Ekran ma fabrycznie naklejoną osłonę i reaguje na dotyk w rękawicach roboczych.
 
 ## Co jest potrzebne do użycia?
 
@@ -204,7 +205,7 @@ Wersja 5G ma eSIM i gniazdo nano-SIM, a sieć eSIM zmienia się kodem QR lub kod
 
 - ${PRZEWOD_EU}
 
-W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu sieciowego w zestawie nie ma.`,
+Tablet trafia do klienta z naklejoną osłoną ekranu, baterią, zasilaczem USB-C i skróconą instrukcją. Przewód sieciowy trzeba kupić osobno.`,
   categoryId: 'tablety-przemyslowe',
   subcategoryIds: ['tablety-przemyslowe'],
   manufacturerId: 'unitech',
@@ -219,7 +220,7 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   imageDescriptions: [
     'Unitech RT112 Windows — widok z przodu, ekran 10,1 cala z pulpitem Windows 11',
     'Unitech RT112 Windows — widok z przodu pod kątem, ekran z pulpitem Windows 11',
-    'Unitech RT112 Windows — tył obudowy z aparatem, oknem skanera i oznaczeniem Windows on Arm',
+    'Unitech RT112 Windows — tył obudowy z aparatem, modułem skanera z żółtą etykietą ostrzegawczą lasera i oznaczeniem Windows on Arm',
   ],
   tags: ['retail', 'produkcja', 'healthcare'],
   isNew: true,
@@ -240,10 +241,11 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
     { name: 'Przyciski', value: '6: zasilanie, głośność +/−, dwa przyciski skanowania, jeden przycisk programowalny' },
     { name: 'Audio', value: 'Dwa głośniki, dwa mikrofony z redukcją szumów i tła' },
     { name: 'Czujniki', value: 'Żyroskop, akcelerometr, kompas elektroniczny, czujnik światła i czujnik zbliżeniowy' },
-    { name: 'Bateria', value: 'Wymienna, 8800 mAh; tryb pracy bez baterii przy zasilaniu przez styki POGO' },
+    { name: 'Bateria', value: 'Wymienna, 8800 mAh; pełne ładowanie w ciągu 4 godzin; tryb pracy bez baterii przy zasilaniu przez styki POGO' },
     { name: 'Klasa szczelności', value: 'IP67 (zanurzenie na głębokość 1 m do 30 minut)' },
     { name: 'Odporność na upadki', value: '1,5 m na beton; MIL-STD-810H, Method 516.8, Procedure IV' },
     { name: 'Temperatura pracy', value: 'Od −20°C do +55°C' },
+    { name: 'Temperatura ładowania', value: 'Od 0°C do +40°C' },
     { name: 'Temperatura przechowywania', value: 'Od −40°C do +70°C (bez baterii)' },
     { name: 'Wilgotność', value: '5%–95% bez kondensacji' },
     { name: 'Wymiary', value: '260 × 165 × 12 mm' },
@@ -292,15 +294,15 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   ],
   variantAttributeTooltips: {
     'Łączność': 'Sieci, z którymi RT112 Windows łączy się bez dodatkowych akcesoriów. Każda wersja ma Wi-Fi 6E i Bluetooth 5.2.\n\n• 5G — modem Sub-6 GHz z obsługą 4G, 3G i 2G oraz gniazdo nano-SIM; dane, SMS i głos.\n\n• eSIM — profil sieci zmienia się kodem QR lub kodem aktywacyjnym przez Wi-Fi; tylko w wersjach 5G.\n\n• GNSS — odbiornik GPS, BeiDou, GLONASS, Galileo, QZSS i SBAS; tylko w wersjach 5G.',
-    'Skaner': 'Silnik skanujący znajduje się w górnej krawędzi tabletu. Ustawienia kodów i znaków końca danych są w aplikacji ScanBridge.\n\n• Skaner 2D (do 10 m) — silnik opcjonalny; według producenta czyta kody z odległości do 10 m.\n\n• Bez skanera — tablet do programów Windows; kody czyta zewnętrzny skaner.',
+    'Skaner': 'Silnik skanujący znajduje się w górnej krawędzi tabletu. Ustawienia kodów i znaków końca danych są w aplikacji ScanBridge.\n\n• Skaner 2D (do 10 m) — opcjonalny silnik czyta kody 1D, 2D i pocztowe z odległości do 10 m.\n\n• Bez skanera — wersja bez wbudowanego silnika skanującego.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
-    'unitech-przewod-sieciowy-eu-c5',
     'unitech-rt112-bateria',
     'unitech-rt112-stacja-biurkowa',
     'unitech-rt112-pasek-na-dlon',
     'unitech-rt112-uchwyt-samochodowy-usb',
+    'unitech-przewod-sieciowy-eu-c5',
     'unitech-rt112-uchwyt-samochodowy',
     'unitech-rt112-szklo-ochronne',
     'unitech-rt112-pasek-na-ramie',
@@ -315,15 +317,15 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
   faq: [
     {
       question: 'Czy Unitech RT112 Windows ma moduł NFC?',
-      answer: 'Nie. Producent podaje, że wersja z Windows nie obsługuje NFC. Moduł HF/NFC ma tablet z Androidem: [Unitech RT112](/produkt/unitech-rt112).',
+      answer: 'Nie. Wersja z Windows nie ma modułu NFC. Moduł HF/NFC ma tablet z Androidem: [Unitech RT112](/produkt/unitech-rt112).',
     },
     {
       question: 'Jakiego systemu używa RT112 Windows i czego w nim brakuje?',
-      answer: 'Tablet ma Windows 11 IoT Enterprise LTSC 2024 (Entry) dla Arm64. System LTSC jest przeznaczony do stabilnych instalacji i nie zawiera Microsoft Store, Cortany ani aplikacji konsumenckich; aplikacji Aparat też brak. Microsoft Edge zwykle jest dostępny. Windows Hello z rozpoznawaniem twarzy nie działa, bo wymaga kamery IR.',
+      answer: 'Tablet ma Windows 11 IoT Enterprise LTSC 2024 (Entry) dla Arm64. System LTSC jest przeznaczony do stabilnych instalacji i nie zawiera Microsoft Store, Cortany ani aplikacji konsumenckich; aplikacji Aparat też brak. Przeglądarka Microsoft Edge zwykle pozostaje w systemie. Windows Hello z rozpoznawaniem twarzy nie działa, bo wymaga kamery IR.',
     },
     {
       question: 'Jak działa tryb pracy bez baterii?',
-      answer: 'Tablet włącza się i pracuje normalnie bez baterii, jeśli ma stabilne zasilanie przez styki POGO. Na stanowiskach stałych służy do tego [stacja biurkowa](/produkt/unitech-rt112-stacja-biurkowa), a w wózkach widłowych i ciężarówkach [uchwyt samochodowy](/produkt/unitech-rt112-uchwyt-samochodowy-usb). Producent zaleca uchwyt zamiast przewodu USB, który może się poluzować od drgań.',
+      answer: 'Tablet włącza się i pracuje normalnie bez baterii, jeśli ma stabilne zasilanie przez styki POGO. Na stanowiskach stałych służy do tego [stacja biurkowa](/produkt/unitech-rt112-stacja-biurkowa), a w wózkach widłowych i ciężarówkach [uchwyt samochodowy](/produkt/unitech-rt112-uchwyt-samochodowy-usb). W pojeździe uchwyt jest pewniejszy niż przewód USB, który może się poluzować od drgań.',
     },
     {
       question: 'Czym różnią się wersje RT112 Windows w ofercie?',
@@ -335,7 +337,7 @@ W zestawie są tablet, bateria, zasilacz USB-C i skrócona instrukcja. Przewodu 
     },
     {
       question: 'Czy do zasilacza RT112 Windows potrzebny jest osobny przewód?',
-      answer: 'Tak, zestaw zawiera zasilacz USB-C bez przewodu do gniazda sieciowego. Producent wymienia przewody EU, UK i US jako akcesoria opcjonalne; dla gniazda europejskiego służy [przewód 1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5).',
+      answer: 'Tak. Zasilacz USB-C z zestawu ma gniazdo na przewód sieciowy, a sam przewód jest akcesorium opcjonalnym w wersjach EU, UK i US. Do gniazdka w Polsce pasuje [przewód EU 1550-905940G o długości 1,8 m](/produkt/unitech-przewod-sieciowy-eu-c5).',
     },
     {
       question: 'Jakie są alternatywy dla Unitech RT112 Windows?',
@@ -354,13 +356,21 @@ const tb170Plus: Product = {
   seoTitle: 'Tablet przemysłowy Unitech TB170 Plus 10,1″ z Windows 11, ekran 800 nitów, hot swap',
   seoDescription: 'Tablet przemysłowy Unitech TB170 Plus: Windows 11 IoT Enterprise LTSC, Intel N200, ekran 10,1″ 800 nitów, bateria hot swap, RJ45, IP65, opcja skanera 1D/2D i 4G LTE. Tablet wzmocniony TB170 Plus Unitech z Windows 11. PN: TB170-0D62RMNG, TB170-0DL2RMNG, TB170-QDL2RMNG.',
   shortDescription: 'Unitech TB170 Plus — tablet przemysłowy 10,1″ z Windows 11, procesorem Intel N200, ekranem 800 nitów, portami USB, HDMI i RJ45 oraz baterią wymienianą bez wyłączania.',
-  description: `Unitech TB170 Plus to tablet z Windows 11 IoT Enterprise LTSC na procesorze Intel Alder Lake-N N200, który producent kieruje do produkcji, serwisu w terenie i magazynów. Ma 8 GB pamięci LPDDR5, dysk SSD 256 GB i moduł TPM 2.0.
+  description: `Unitech TB170 Plus to tablet z Windows 11 IoT Enterprise LTSC na procesorze Intel Alder Lake-N N200, przeznaczony do produkcji, serwisu w terenie i magazynów. Ma 8 GB pamięci LPDDR5, dysk SSD 256 GB i moduł TPM 2.0.
 
-Złącza odpowiadają wyposażeniu komputera: USB-A, USB-C z DisplayPort i zasilaniem Power Delivery, Gigabit Ethernet RJ45 z obsługą PXE, micro HDMI, czytnik microSDXC i gniazdo audio. Gniazdo Kensington umożliwia zabezpieczenie tabletu zamkiem.
+Złącza odpowiadają wyposażeniu komputera: USB-A, USB-C z DisplayPort i zasilaniem Power Delivery, Gigabit Ethernet RJ45 z obsługą PXE, micro HDMI, czytnik microSDXC i gniazdo audio. Gniazdo Kensington umożliwia przypięcie tabletu linką z zamkiem.
 
-Ekran IPS 10,1″ o jasności 800 nitów jest czytelny w słońcu i obsługuje dotyk 10-punktowy w rękawicach oraz na mokro. Opcjonalne pióro Digitizer Pen z dwoma przyciskami, prawym klikiem i gumką, służy do notatek, podpisów i adnotacji.
+Ekran IPS 10,1″ o jasności 800 nitów jest czytelny w słońcu i obsługuje dotyk 10-punktowy w rękawicach oraz na mokro. Opcjonalne pióro Digitizer Pen ma dwa przyciski boczne: prawy klik i gumkę. Pozwala robić notatki, składać podpisy i nanosić adnotacje na ekranie.
 
-Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 142 mAh. Wersje różnią się czytnikiem kodów 1D/2D w górnej krawędzi i modemem 4G LTE. Wymienna płyta montażowa z tyłu przyjmuje podpórkę, a stacje biurkowa i pojazdowa służą do pracy na stałym stanowisku.`,
+Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 142 mAh. Wersje różnią się czytnikiem kodów 1D/2D w górnej krawędzi i modemem 4G LTE. Zdejmowana płyta montażowa z tyłu przyjmuje podpórkę, a stacje biurkowa i pojazdowa służą do pracy na stałym stanowisku.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- ${PRZEWOD_EU}
+
+Zestaw europejski zawiera tablet z płytą montażową, baterię i zasilacz AC/DC bez przewodu sieciowego EU.`,
   categoryId: 'tablety-przemyslowe',
   subcategoryIds: ['tablety-przemyslowe'],
   manufacturerId: 'unitech',
@@ -403,11 +413,12 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
     { name: 'Klasa szczelności', value: 'IP65' },
     { name: 'Odporność na upadki', value: '1,5 m na beton; MIL-STD-810G' },
     { name: 'Temperatura pracy', value: 'Od −10°C do +50°C' },
+    { name: 'Temperatura ładowania', value: 'Od 0°C do +40°C' },
     { name: 'Temperatura przechowywania', value: 'Od −20°C do +60°C' },
     { name: 'Wilgotność', value: '5%–95%' },
     { name: 'Wymiary', value: '283 × 192 × 15 mm' },
     { name: 'Masa', value: '990 g' },
-    { name: 'Zawartość zestawu', value: 'Tablet z płytą montażową, bateria, zasilacz AC/DC, skrócona instrukcja; bez przewodu sieciowego EU i UK' },
+    { name: 'Zawartość zestawu', value: 'Zestaw europejski: tablet z płytą montażową, bateria, zasilacz AC/DC; przewód sieciowy EU sprzedawany osobno' },
     { name: 'Certyfikaty', value: 'CE' },
     { name: 'Gwarancja', value: '12 miesięcy' },
     { name: 'Part Number', value: 'TB170-0D62RMNG, TB170-0DL2RMNG, TB170-QDL2RMNG' },
@@ -442,7 +453,7 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
     },
   ],
   variantAttributeTooltips: {
-    'Łączność': 'Sieci, z którymi TB170 Plus łączy się bez dodatkowych akcesoriów. Każda wersja ma Wi-Fi 6E z 2×2 MIMO i Bluetooth 5.3.\n\n• Wi-Fi 6E — wersja bez modemu komórkowego; sieć przewodowa przez port RJ45 z PXE.\n\n• 4G LTE — modem Quectel EM060K-GL i gniazdo nano-SIM.',
+    'Łączność': 'Sieci, z którymi TB170 Plus łączy się bez dodatkowych akcesoriów. Każda wersja ma Wi-Fi 6E z 2×2 MIMO, Bluetooth 5.3 i port RJ45 z PXE do sieci przewodowej.\n\n• Wi-Fi 6E — wersja bez modemu komórkowego.\n\n• 4G LTE — modem Quectel EM060K-GL i gniazdo nano-SIM.',
     'Skaner': 'Czytnik kodów w górnej krawędzi tabletu; klawisz F1 jest domyślnie jego spustem.\n\n• Skaner 1D/2D — wbudowany czytnik kodów kreskowych.\n\n• Bez skanera — klawisz F1 można zaprogramować do innej funkcji.',
   },
   compatibleAccessories: [],
@@ -451,6 +462,7 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
     'unitech-tb170-plus-pioro',
     'unitech-tb170-plus-stacja-biurkowa',
     'unitech-tb170-plus-ladowarka-baterii',
+    'unitech-przewod-sieciowy-eu-c5',
     'unitech-tb170-plus-stacja-pojazdowa',
     'unitech-tb170-plus-zasilacz-pojazdowy',
     'unitech-tb170-plus-pasek-na-dlon',
@@ -467,7 +479,7 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
   faq: [
     {
       question: 'Czy zestaw TB170 Plus zawiera przewód do gniazda sieciowego?',
-      answer: 'Nie. Zestaw europejski ma zasilacz AC/DC bez przewodu sieciowego EU i UK. Przewody 3-pin EU, US i UK producent wymienia jako osobne akcesoria. Zapasowy zasilacz opisuje karta [zasilacza 65 W](/produkt/unitech-tb170-plus-zasilacz-65w).',
+      answer: 'Nie. Zestaw europejski ma zasilacz AC/DC, ale bez przewodu sieciowego. Do gniazdka w Polsce służy [przewód EU 1550-905940G z wtykiem C5](/produkt/unitech-przewod-sieciowy-eu-c5). Zapasowy zasilacz to [1010-900070G o mocy 65 W](/produkt/unitech-tb170-plus-zasilacz-65w).',
     },
     {
       question: 'Czym różnią się wersje TB170 Plus w ofercie?',
@@ -475,11 +487,11 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
     },
     {
       question: 'Jak wymienić baterię TB170 Plus bez wyłączania tabletu?',
-      answer: 'Bateria 4300 mAh jest typu hot-swappable, więc wymiana nie przerywa pracy. Po włożeniu nowej baterii trzeba zablokować zatrzask na tylnej ściance, bo bez tego ekran się nie włączy. Zapasową baterię opisuje karta [baterii 4300 mAh](/produkt/unitech-tb170-plus-bateria).',
+      answer: 'Bateria 4300 mAh jest typu hot-swappable, więc wymiana nie przerywa pracy. Po włożeniu nowej baterii trzeba zablokować zatrzask na tylnej ściance, bo bez tego ekran się nie włączy. Zapasowa bateria ma numer [1400-900068G](/produkt/unitech-tb170-plus-bateria).',
     },
     {
       question: 'Jakie opcje pamięci ma TB170 Plus?',
-      answer: 'Wersje w ofercie mają 8 GB RAM i dysk 256 GB. Producent podaje też opcje z 16 GB RAM oraz dyskiem 512 GB lub 1 TB. Takich konfiguracji nie ma w ofercie; o ich dostępność można zapytać.',
+      answer: 'Wersje w ofercie mają 8 GB RAM i dysk 256 GB. Model występuje też w konfiguracjach z 16 GB RAM oraz dyskiem 512 GB lub 1 TB. Nie ma ich w sklepie, ale o ich dostępność można zapytać.',
     },
     {
       question: 'Czy TB170 Plus można zasilać przez port USB-C?',
@@ -487,7 +499,7 @@ Bateria 7,68 V / 4300 mAh jest typu hot-swappable, a bateria podtrzymująca ma 1
     },
     {
       question: 'Co można zamontować na płycie montażowej z tyłu tabletu?',
-      answer: 'Płytę odkręca się śrubokrętem, a do niej mocuje się [podpórkę](/produkt/unitech-tb170-plus-podporka) albo uchwyt snap mount 4070-900015G. Do stałego mocowania producent przewiduje także [płytę VESA](/produkt/unitech-tablet-plyta-vesa) i [uchwyt POS](/produkt/unitech-tablet-uchwyt-pos), zgodne z TB170 Plus.',
+      answer: 'Płytę odkręca się śrubokrętem, a do niej mocuje się [podpórkę](/produkt/unitech-tb170-plus-podporka) albo uchwyt snap mount 4070-900015G. Do stałego mocowania służą też [płyta VESA](/produkt/unitech-tablet-plyta-vesa) i [uchwyt POS](/produkt/unitech-tablet-uchwyt-pos), które przykręca się do tabletu dołączonymi śrubami.',
     },
     {
       question: 'Jakie są alternatywy dla Unitech TB170 Plus?',

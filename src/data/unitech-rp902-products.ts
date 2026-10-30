@@ -28,7 +28,7 @@ export const unitechRp902Products: Product[] = [
     "seoTitle": "Unitech RP902 — kieszonkowy czytnik UHF RFID | TAKMA",
     "seoDescription": "Unitech RP902, PN RP902-33E8S0G: kieszonkowy czytnik UHF 865–868 MHz, Bluetooth 5.0 i IP65. Sprawdź cenę, stan i akcesoria.",
     "shortDescription": "Unitech RP902, PN RP902-33E8S0G: kieszonkowy czytnik UHF 865–868 MHz, Bluetooth 5.0 i IP65. Sprawdź cenę, stan i akcesoria.",
-    "description": "Unitech RP902 to kieszonkowy czytnik UHF RFID do identyfikacji towarów i wyposażenia. Odczyty trafiają przez Bluetooth do aplikacji na smartfonie, terminalu albo komputerze. Czytnik waży 106 g i mieści się w kieszeni.\n\n## Europejski PN RP902-33E8S0G\n\nTa wersja pracuje w paśmie 865–868 MHz. Obsługuje znaczniki EPC Class 1 Gen 2 oraz ISO/IEC 18000-6C. Czytnik umożliwia odczyt wielu znaczników, zapis danych i wyszukiwanie wybranego znacznika w zgodnej aplikacji.\n\nZasięg odczytu wynosi do 2 m. Wynik zależy od znacznika, materiału towaru, orientacji etykiety i otoczenia. Regulowana moc radiowa dochodzi do 27 dBm. Antena ma polaryzację liniową. Przed wdrożeniem dobrze jest wykonać próbę odczytu na oznakowanych produktach.\n\n## Bluetooth 5.0 i aplikacja magazynowa\n\nBluetooth 5.0 obsługuje profile HID, SPP i BLE. Sposób przesyłania danych zależy od aplikacji oraz systemu urządzenia nadrzędnego. Dostępne narzędzia i SDK pozwalają integrować odczyty z rozwiązaniami dla Androida i Windows.\n\nRP902 nie uruchamia aplikacji Android. Ma wyświetlacz statusu o przekątnej 0,96 cala, trzy przyciski, sygnalizację dźwiękową oraz wibracje. Ekran pomaga sprawdzić stan czytnika. Nie zastępuje ekranu programu magazynowego.\n\nOferowany RP902-33E8S0G nie ma skanera kodów kreskowych. Kody EAN lub QR odczytuje skaner urządzenia nadrzędnego. Obsługę obu źródeł danych musi zapewniać aplikacja.\n\n## Bateria, ładowanie i zawartość zestawu\n\nZestaw czytnika zawiera baterię oraz przewód USB. Wymienna bateria 1150 mAh pracuje przy napięciu 3,7 V. Czytnik ma port USB-C.\n\n[Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) nie wchodzi w skład zestawu. Do ładowania po odłożeniu czytnika służy [stacja 5000-900096G](/produkt/unitech-rp902-stacja). Stacja ma także miejsce na zapasową baterię.\n\n[Zapasowa bateria 1400-900066G](/produkt/unitech-rp902-bateria) i [przewód USB 1550-905919G](/produkt/unitech-rp902-przewod-usb-c) są dostępne jako osobne akcesoria. Telefon, komputer i licencja programu magazynowego nie są częścią zestawu czytnika.\n\n## Obudowa IP65 i praca przy półce\n\nWymiary RP902 wynoszą 109 × 51 × 28 mm. Szczelność obudowy odpowiada klasie IP65, a czytnik wytrzymuje upadek z 1,2 m w warunkach testowych. Pracuje w temperaturze od −10°C do +50°C.\n\nNiewielki czytnik służy do kontroli wyposażenia, liczenia oznakowanych produktów i wyszukiwania towaru przy półce. Odczyt RFID nie wymaga widoczności nadrukowanego kodu. Metal, płyny i układ towarów mogą jednak zmienić skuteczność odczytu.\n\n## Czytnik kieszonkowy czy terminal RFID?\n\nRP902 to mały czytnik zewnętrzny do urządzenia, które ma już aplikację. Odczyty z RP902 może przyjmować także terminal [Unitech EA660](/produkt/unitech-ea660) lub [Unitech EA530](/produkt/unitech-ea530) z aplikacją obsługującą czytnik. [Uchwyty RFID](/uchwyty-rfid) mają inną konstrukcję i mogą wymagać adaptera do terminala. [Terminale RFID](/terminale-rfid) łączą system, ekran aplikacji i czytnik w jednym urządzeniu.\n\nPozostałe urządzenia tego typu są w kategorii [Czytniki RFID](/czytniki-rfid). Etykiety RFID do oznaczania towarów drukują [drukarki RFID](/drukarki-rfid). Zgodność etykiety z czytnikiem nie potwierdza zgodności jej rolki z drukarką.",
+    "description": "Unitech RP902 to kieszonkowy czytnik UHF RFID do identyfikacji towarów i wyposażenia. Odczyty trafiają przez Bluetooth do aplikacji na smartfonie, terminalu albo komputerze. Czytnik waży 106 g i mieści się w kieszeni.\n\n## Europejski PN RP902-33E8S0G\n\nTa wersja pracuje w paśmie 865–868 MHz. Obsługuje znaczniki EPC Class 1 Gen 2 oraz ISO/IEC 18000-6C. Czytnik umożliwia odczyt wielu znaczników, zapis danych i wyszukiwanie wybranego znacznika w zgodnej aplikacji.\n\nZasięg odczytu wynosi do 2 m. Wynik zależy od znacznika, materiału towaru, orientacji etykiety i otoczenia. Regulowana moc radiowa dochodzi do 27 dBm. Antena ma polaryzację liniową. Przed wdrożeniem dobrze jest wykonać próbę odczytu na oznakowanych produktach.\n\n## Bluetooth 5.0 i aplikacja magazynowa\n\nBluetooth 5.0 obsługuje profile HID, SPP i BLE. Sposób przesyłania danych zależy od aplikacji oraz systemu urządzenia nadrzędnego. Dostępne narzędzia i SDK pozwalają integrować odczyty z rozwiązaniami dla Androida i Windows.\n\nRP902 nie uruchamia aplikacji Android. Ma wyświetlacz statusu o przekątnej 0,96 cala, trzy przyciski, sygnalizację dźwiękową oraz wibracje. Ekran pomaga sprawdzić stan czytnika. Nie zastępuje ekranu programu magazynowego.\n\nOferowany RP902-33E8S0G nie ma skanera kodów kreskowych. Kody EAN lub QR odczytuje skaner urządzenia nadrzędnego. Obsługę obu źródeł danych musi zapewniać aplikacja.\n\n## Bateria, ładowanie i zawartość zestawu\n\nZestaw czytnika zawiera baterię oraz przewód USB. Wymienna bateria 1150 mAh pracuje przy napięciu 3,7 V. Czytnik ma port USB-C.\n\n[Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) nie wchodzi w skład zestawu. Do ładowania po odłożeniu czytnika służy [stacja 5000-900096G](/produkt/unitech-rp902-stacja). Stacja ma także miejsce na zapasową baterię.\n\n[Zapasowa bateria 1400-900066G](/produkt/unitech-rp902-bateria) i [przewód USB 1550-905919G](/produkt/unitech-rp902-przewod-usb-c) są dostępne jako osobne akcesoria. Telefon, komputer i licencja programu magazynowego nie są częścią zestawu czytnika.\n\n## Obudowa IP65 i praca przy półce\n\nWymiary RP902 wynoszą 109 × 51 × 28 mm. Szczelność obudowy odpowiada klasie IP65, a czytnik wytrzymuje upadek z 1,2 m w warunkach testowych. Pracuje w temperaturze od −10°C do +50°C.\n\nNiewielki czytnik służy do kontroli wyposażenia, liczenia oznakowanych produktów i wyszukiwania towaru przy półce. Odczyt RFID nie wymaga widoczności nadrukowanego kodu. Metal, płyny i układ towarów mogą jednak zmienić skuteczność odczytu.\n\n## Czytnik kieszonkowy czy terminal RFID?\n\nRP902 to mały czytnik zewnętrzny do urządzenia, które ma już aplikację. Odczyty z RP902 może przyjmować także terminal [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530), [Unitech HT730 Plus](/produkt/unitech-ht730-plus) lub [Unitech HT330](/produkt/unitech-ht330) z aplikacją obsługującą czytnik. [Uchwyty RFID](/uchwyty-rfid) mają inną konstrukcję i mogą wymagać adaptera do terminala. [Terminale RFID](/terminale-rfid) łączą system, ekran aplikacji i czytnik w jednym urządzeniu.\n\nPozostałe urządzenia tego typu są w kategorii [Czytniki RFID](/czytniki-rfid). Etykiety RFID do oznaczania towarów drukują [drukarki RFID](/drukarki-rfid). Zgodność etykiety z czytnikiem nie potwierdza zgodności jej rolki z drukarką.",
     "images": [
       "/images/products/unitech-rp902-main-v1.webp",
       "/images/products/unitech-rp902-rear-v1.webp"
@@ -212,30 +212,30 @@ export const unitechRp902Accessories: Product[] = [
       "logistyka"
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-30",
     "applications": [
       "Inwentaryzacja RFID"
     ],
     "compatibleAccessories": [],
     "id": "unitech-rp902-zasilacz",
     "slug": "unitech-rp902-zasilacz",
-    "name": "Zasilacz Unitech RP902, skanerów MS i WD200 Plus — 5 V / 2 A",
-    "seoH1": "Zasilacz Unitech RP902, skanerów MS i WD200 Plus — 5 V / 2 A",
+    "name": "Zasilacz Unitech RP902, HT330, skanerów MS i WD200 Plus — 5 V / 2 A",
+    "seoH1": "Zasilacz Unitech RP902, HT330, skanerów MS i WD200 Plus — 5 V / 2 A",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali"
     ],
-    "priceFrom": 87.35,
+    "priceFrom": 87.85,
     "availability": "available",
-    "seoTitle": "Zasilacz Unitech RP902, MS852B, MS652 Plus i WD200 Plus — 1010-900067G | TAKMA",
-    "seoDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, skanerów Unitech MS852B, MS852P, MS652 Plus, MS912 Plus oraz WD200 Plus. Przewód osobno.",
-    "shortDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, skanerów bezprzewodowych Unitech i komputera WD200 Plus. Przewód osobno.",
-    "description": "Zasilacz 1010-900067G zasila wyposażenie do ładowania [Unitech RP902](/produkt/unitech-rp902). Ma wyjście USB-A o napięciu 5 V i prądzie 2 A.\n\nZestaw zawiera wymienne wtyczki EU, UK, US i AU. [Przewód USB-A do USB-C](/produkt/unitech-rp902-przewod-usb-c) jest osobnym akcesorium.\n\nTen sam zasilacz współpracuje ze skanerami bezprzewodowymi [MS852B](/produkt/unitech-ms852b), [MS852B Plus](/produkt/unitech-ms852b-plus), [MS852B LR](/produkt/unitech-ms852b-lr), [MS852P](/produkt/unitech-ms852p), [MS652 Plus](/produkt/unitech-ms652-plus), [MS912 Plus](/produkt/unitech-ms912-plus) i [MS912 Plus 2D](/produkt/unitech-ms912-plus-2d), a także wersji ESD [MS852B Plus ESD](/produkt/unitech-ms852b-plus-esd) i [MS851B ESD](/produkt/unitech-ms851b-esd) oraz komputera noszonego [WD200 Plus](/produkt/unitech-wd200-plus).",
+    "seoTitle": "Zasilacz Unitech RP902, HT330, MS852B i WD200 Plus — 1010-900067G | TAKMA",
+    "seoDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, terminala mobilnego z klawiaturą Unitech HT330, skanerów Unitech MS852B, MS852P, MS652 Plus, MS912 Plus oraz WD200 Plus. Zasilacz Unitech HT330. Przewód osobno.",
+    "shortDescription": "Zasilacz Unitech 1010-900067G: USB-A, 5 V / 2 A, wtyczki EU, UK, US i AU. Do RP902, terminala HT330, skanerów bezprzewodowych Unitech i komputera WD200 Plus. Przewód osobno.",
+    "description": "Zasilacz 1010-900067G zasila wyposażenie do ładowania [Unitech RP902](/produkt/unitech-rp902). Ma wyjście USB-A o napięciu 5 V i prądzie 2 A.\n\nTen sam zasilacz ładuje przez przewód USB-C terminal [Unitech HT330](/produkt/unitech-ht330). Przewód jest w zestawie terminala, a zasilacza w nim nie ma.\n\nZestaw zawiera wymienne wtyczki EU, UK, US i AU. [Przewód USB-A do USB-C](/produkt/unitech-rp902-przewod-usb-c) jest osobnym akcesorium.\n\nZasilacz współpracuje też ze skanerami bezprzewodowymi [MS852B](/produkt/unitech-ms852b), [MS852B Plus](/produkt/unitech-ms852b-plus), [MS852B LR](/produkt/unitech-ms852b-lr), [MS852P](/produkt/unitech-ms852p), [MS652 Plus](/produkt/unitech-ms652-plus), [MS912 Plus](/produkt/unitech-ms912-plus) i [MS912 Plus 2D](/produkt/unitech-ms912-plus-2d), a także wersji ESD [MS852B Plus ESD](/produkt/unitech-ms852b-plus-esd) i [MS851B ESD](/produkt/unitech-ms851b-esd) oraz komputera noszonego [WD200 Plus](/produkt/unitech-wd200-plus).",
     "images": [
       "/images/products/unitech-rp902-psu-v1.webp"
     ],
     "imageDescriptions": [
-      "Zasilacz Unitech RP902 — 5 V / 2 A — widok produktu"
+      "Zasilacz Unitech 1010-900067G 5 V / 2 A — zasilacz z gniazdem USB-A i cztery wymienne wtyczki: EU, UK, US i AU"
     ],
     "specifications": [
       {
@@ -244,7 +244,7 @@ export const unitechRp902Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP902; skanery MS852B, MS852B Plus, MS852B LR, MS852P, MS852B Plus ESD, MS851B ESD, MS652 Plus, MS912 Plus, MS912 Plus 2D; komputer noszony WD200 Plus"
+        "value": "Unitech RP902, Unitech HT330; skanery MS852B, MS852B Plus, MS852B LR, MS852P, MS852B Plus ESD, MS851B ESD, MS652 Plus, MS912 Plus, MS912 Plus 2D; komputer noszony WD200 Plus"
       },
       {
         "name": "Wyjście",
@@ -257,6 +257,7 @@ export const unitechRp902Accessories: Product[] = [
     ],
     "relatedProducts": [
       "unitech-rp902",
+      "unitech-ht330",
       "unitech-ms852b",
       "unitech-ms852b-plus",
       "unitech-ms652-plus",
@@ -331,30 +332,30 @@ export const unitechRp902Accessories: Product[] = [
       "logistyka"
     ],
     "createdAt": "2026-10-20",
-    "updatedAt": "2026-10-20",
+    "updatedAt": "2026-10-30",
     "applications": [
       "Inwentaryzacja RFID"
     ],
     "compatibleAccessories": [],
     "id": "unitech-rp902-przewod-usb-c",
     "slug": "unitech-rp902-przewod-usb-c",
-    "name": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus",
-    "seoH1": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus",
+    "name": "Przewód USB-C Unitech RP902, HT330, MS633 i WD200 Plus",
+    "seoH1": "Przewód USB-C Unitech RP902, HT330, MS633 i WD200 Plus",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali"
     ],
-    "priceFrom": 22.78,
+    "priceFrom": 22.91,
     "availability": "unavailable",
-    "seoTitle": "Przewód USB-C Unitech RP902, MS633 i WD200 Plus — 1550-905919G | TAKMA",
-    "seoDescription": "Przewód Unitech 1550-905919G: USB-A do USB-C, USB 2.0. Do czytnika RP902, skanera Unitech MS633 i komputera noszonego WD200 Plus.",
-    "shortDescription": "Przewód Unitech 1550-905919G: USB-A do USB-C, USB 2.0. Zapasowy przewód do RP902, skanera pierścieniowego MS633 i komputera noszonego WD200 Plus.",
-    "description": "Przewód 1550-905919G łączy port USB-C [Unitech RP902](/produkt/unitech-rp902) z portem USB-A. Obsługuje USB 2.0.\n\nMoże zastąpić przewód dołączony do zestawu czytnika. [Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) jest sprzedawany osobno.\n\nTym samym przewodem ładuje się i podłącza do komputera skaner pierścieniowy [Unitech MS633](/produkt/unitech-ms633) oraz komputer noszony [Unitech WD200 Plus](/produkt/unitech-wd200-plus); oba mają przewód USB-C w zestawie.",
+    "seoTitle": "Przewód USB-C Unitech RP902, HT330, MS633 i WD200 Plus — 1550-905919G | TAKMA",
+    "seoDescription": "Przewód Unitech 1550-905919G, USB-A do USB-C, USB 2.0: część zamienna do czytnika RP902, kolektora danych Unitech HT330, skanera Unitech MS633 i komputera noszonego WD200 Plus. Przewód USB-C Unitech HT330.",
+    "shortDescription": "Przewód Unitech 1550-905919G do RP902, HT330, MS633 i WD200 Plus: USB-A do USB-C, USB 2.0. Część zamienna do zestawu.",
+    "description": "Przewód 1550-905919G łączy port USB-C [Unitech RP902](/produkt/unitech-rp902) z portem USB-A. Obsługuje USB 2.0.\n\nTaki sam przewód jest w zestawie terminala [Unitech HT330](/produkt/unitech-ht330). Ten numer może zastąpić przewód dołączony do zestawu czytnika lub terminala. [Zasilacz 5 V / 2 A](/produkt/unitech-rp902-zasilacz) jest sprzedawany osobno.\n\nTym samym przewodem ładuje się i podłącza do komputera skaner pierścieniowy [Unitech MS633](/produkt/unitech-ms633) oraz komputer noszony [Unitech WD200 Plus](/produkt/unitech-wd200-plus); oba mają przewód USB-C w zestawie.",
     "images": [
       "/images/products/unitech-rp902-cable-v1.webp"
     ],
     "imageDescriptions": [
-      "Przewód USB-C Unitech RP902 — widok produktu"
+      "Przewód Unitech 1550-905919G — zwinięty czarny przewód z wtykami USB-A i USB-C"
     ],
     "specifications": [
       {
@@ -363,7 +364,7 @@ export const unitechRp902Accessories: Product[] = [
       },
       {
         "name": "Zgodność",
-        "value": "Unitech RP902, MS633, WD200 Plus"
+        "value": "Unitech RP902, HT330, MS633, WD200 Plus"
       },
       {
         "name": "Złącza",
@@ -376,6 +377,7 @@ export const unitechRp902Accessories: Product[] = [
     ],
     "relatedProducts": [
       "unitech-rp902",
+      "unitech-ht330",
       "unitech-ms633",
       "unitech-wd200-plus"
     ],

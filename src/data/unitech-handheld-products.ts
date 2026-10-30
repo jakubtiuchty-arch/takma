@@ -4,40 +4,40 @@ import type { Product } from './products'
 // priceFrom to wartość startowa, ceny i stany na karcie aktualizuje API.
 // Dokumentacja: docs/catalog/unitech-terminale-2026-10-29/U3.md
 
-const HT730_DATASHEET = { name: 'Karta katalogowa Unitech HT730 Plus (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht730-plus-karta-katalogowa-en.pdf', size: '1,9 MB' }
-const HT730_WIFI_DATASHEET = { name: 'Karta katalogowa Unitech HT730 Plus Wi-Fi (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht730-plus-wifi-karta-katalogowa-en.pdf', size: '2,0 MB' }
-const HT730_MANUAL_29 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 29 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-29-instrukcja-en.pdf', size: '4,6 MB' }
-const HT730_MANUAL_38 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 38 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-38-instrukcja-en.pdf', size: '4,6 MB' }
-const HT730_MANUAL_47 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 47 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-47-instrukcja-en.pdf', size: '4,5 MB' }
-const HT730_ACCESSORIES = { name: 'Katalog akcesoriów Unitech HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-akcesoria-en.pdf', size: '1,2 MB' }
-const HT330_DATASHEET = { name: 'Karta katalogowa Unitech HT330 (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht330-karta-katalogowa-en.pdf', size: '1,2 MB' }
-const HT330_WIFI_DATASHEET = { name: 'Karta katalogowa Unitech HT330 Wi-Fi (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht330-wifi-karta-katalogowa-en.pdf', size: '1,1 MB' }
-const HT330_MANUAL = { name: 'Instrukcja obsługi Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-instrukcja-en.pdf', size: '3,7 MB' }
-const HT330_WIFI_MANUAL = { name: 'Instrukcja obsługi Unitech HT330 Wi-Fi (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-wifi-instrukcja-en.pdf', size: '3,5 MB' }
-const HT330_ACCESSORIES = { name: 'Katalog akcesoriów Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-akcesoria-en.pdf', size: '1,4 MB' }
+const HT730_DATASHEET = { name: 'Karta katalogowa Unitech HT730 Plus (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht730-plus-karta-katalogowa-en.pdf', size: '1,8 MB' }
+const HT730_WIFI_DATASHEET = { name: 'Karta katalogowa Unitech HT730 Plus Wi-Fi (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht730-plus-wifi-karta-katalogowa-en.pdf', size: '1,9 MB' }
+const HT730_MANUAL_29 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 29 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-29-instrukcja-en.pdf', size: '4,4 MB' }
+const HT730_MANUAL_38 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 38 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-38-instrukcja-en.pdf', size: '4,4 MB' }
+const HT730_MANUAL_47 = { name: 'Instrukcja obsługi Unitech HT730 Plus, 47 klawiszy (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-47-instrukcja-en.pdf', size: '4,2 MB' }
+const HT730_ACCESSORIES = { name: 'Katalog akcesoriów Unitech HT730 Plus (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht730-plus-akcesoria-en.pdf', size: '1,1 MB' }
+const HT330_DATASHEET = { name: 'Karta katalogowa Unitech HT330 (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht330-karta-katalogowa-en.pdf', size: '1,1 MB' }
+const HT330_WIFI_DATASHEET = { name: 'Karta katalogowa Unitech HT330 Wi-Fi (EN)', type: 'datasheet' as const, url: '/downloads/unitech/unitech-ht330-wifi-karta-katalogowa-en.pdf', size: '1,0 MB' }
+const HT330_MANUAL = { name: 'Instrukcja obsługi Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-instrukcja-en.pdf', size: '3,5 MB' }
+const HT330_WIFI_MANUAL = { name: 'Instrukcja obsługi Unitech HT330 Wi-Fi (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-wifi-instrukcja-en.pdf', size: '3,3 MB' }
+const HT330_ACCESSORIES = { name: 'Katalog akcesoriów Unitech HT330 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ht330-akcesoria-en.pdf', size: '1,3 MB' }
 
 const ht730Plus: Product = {
   id: 'unitech-ht730-plus',
   slug: 'unitech-ht730-plus',
   name: 'Unitech HT730 Plus',
   seoH1: 'Unitech HT730 Plus',
-  seoTitle: 'Terminal Unitech HT730 Plus z klawiaturą, Android 14, 5G i Wi-Fi 6E',
-  seoDescription: 'Terminal mobilny z klawiaturą Unitech HT730 Plus: ekran 4″, Android 14, Wi-Fi 6E lub 5G z eSIM, wersje z grzałką do −30°C i z silnikiem do 32 m. Kolektor danych HT730 Plus Unitech. PN: HT730-NJ6122BG, HT730-NJ61U2BG, HT730-NH6122BG, HT730-NH61U2BG, HT730-NJN122BG, HT730-NJN1U2BG, HT730-LJ6122BG, HT730-LJ61U2BG, HT730-LJ6142BG, HT730-LJN122BG, HT730-LJN1U2BG.',
-  shortDescription: 'Unitech HT730 Plus — terminal mobilny z klawiaturą i ekranem 4″, Wi-Fi 6E lub 5G, z wersjami z silnikiem do 32 m i grzałką do −30°C.',
+  seoTitle: 'Terminal Unitech HT730 Plus z klawiaturą, Android 14, Wi-Fi 6E i opcja 5G',
+  seoDescription: 'Terminal mobilny z klawiaturą Unitech HT730 Plus: ekran 4″, Android 14, Wi-Fi 6E, opcja 5G z eSIM, wersje z grzałką do −30°C i z silnikiem do 32 m. Kolektor danych HT730 Plus Unitech. PN: HT730-NJ6122BG, HT730-NJ61U2BG, HT730-NH6122BG, HT730-NH61U2BG, HT730-NJN122BG, HT730-NJN1U2BG, HT730-LJ6122BG, HT730-LJ61U2BG, HT730-LJ6142BG, HT730-LJN122BG, HT730-LJN1U2BG.',
+  shortDescription: 'Unitech HT730 Plus — terminal mobilny z klawiaturą i ekranem 4″, Wi-Fi 6E i opcją 5G, z wersjami z silnikiem do 32 m i grzałką do −30°C.',
   description: `Unitech HT730 Plus (2nd Gen) to terminal mobilny z klawiaturą, zaprojektowany do obsługi jedną ręką w magazynie, logistyce i serwisie w terenie. Pracuje pod Androidem 14 z certyfikatami GMS i AER, z możliwością aktualizacji do Androida 16, na procesorze Qualcomm Snapdragon 4490.
 
-W wersjach z silnikiem skanującym dalekiego zasięgu producent podaje odczyt kodów z odległości do 32 m. Skaner jest pochylony o 30° dla wygodnej pozycji dłoni. Odczytuje kody jednowymiarowe i dwuwymiarowe, między innymi DotCode, a także znaki OCR: OCR-A, OCR-B i E13B.
+Wersje z silnikiem skanującym dalekiego zasięgu odczytują kody z odległości do 32 m. Skaner jest pochylony o 30° dla wygodnej pozycji dłoni. Odczytuje kody jednowymiarowe i dwuwymiarowe, między innymi DotCode, kody pocztowe oraz znaki OCR: OCR-A, OCR-B i E13B.
 
-Wersje z grzałką działają w zakresie temperatur −30°C…+50°C. Moduł grzewczy zapobiega skraplaniu się pary wodnej, a producent wskazuje chłodnie, dystrybucję żywności i logistykę farmaceutyczną.
+Wersje z grzałką działają w zakresie temperatur −30°C…+50°C. Moduł grzewczy zapobiega skraplaniu się pary wodnej, dlatego te wersje są przeznaczone do chłodni, dystrybucji żywności i logistyki farmaceutycznej.
 
-Wersje 5G mają eSIM oraz gniazdo micro SIM, a wszystkie wersje Wi-Fi 6E. Klawiatura ma 29, 38 lub 47 klawiszy, przy czym 47 klawiszy występuje tylko w wersjach z Wi-Fi. Po wyjęciu baterii 6700 mAh aplikacje pozostają aktywne do 1 minuty. Obudowa IP65 / IP67 wytrzymuje upadki z 1,8 m, a z osłoną z 2,4 m. Gwarancja obejmuje 12 miesięcy.
+Wi-Fi 6E jest w każdej wersji, a modem 5G z eSIM i gniazdem micro SIM w wersjach oznaczonych 5G. Klawiatura ma 29, 38 lub 47 klawiszy, przy czym 47 klawiszy występuje tylko w wersjach z Wi-Fi. Po wyjęciu baterii 6700 mAh aplikacje pozostają aktywne do 1 minuty. Obudowa IP65 / IP67 wytrzymuje upadki z 1,8 m, a z osłoną z 2,4 m. Gwarancja obejmuje 12 miesięcy.
 
 ## Co jest potrzebne do użycia?
 
 **Wymagane — sprzedawane osobno**
 
-- [Zasilacz USB-C, wtyczka EU (1010-900074G)](/produkt/unitech-ea-zasilacz-usb-c-eu)
-- [Przewód USB 3.0 typ C (1550-905908G)](/produkt/unitech-ea-przewod-usb-c)
+- [Zasilacz Unitech EA660, EA530 i HT730 Plus, wtyczka EU (1010-900074G)](/produkt/unitech-ea-zasilacz-usb-c-eu)
+- [Przewód USB 3.0 typ C Unitech EA660, EA530 i HT730 Plus (1550-905908G)](/produkt/unitech-ea-przewod-usb-c)
 
 W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłona zależy od modelu. Przewodu USB-C ani zasilacza w zestawie nie ma. Terminal można też ładować w [stacji 1-gniazdowej](/produkt/unitech-ht730-plus-stacja-1-slot), która ma zasilacz w opakowaniu, a przewód sieciowy osobno.`,
   categoryId: 'terminale-mobilne',
@@ -55,7 +55,7 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
   imageDescriptions: [
     'Unitech HT730 Plus — widok z przodu, ekran 4 cale i klawiatura 29-klawiszowa',
     'Unitech HT730 Plus — widok z przodu pod kątem, przycisk skanowania z boku obudowy',
-    'Unitech HT730 Plus — tył obudowy z baterią i okienkiem skanera u góry',
+    'Unitech HT730 Plus — tył obudowy z baterią, głośnikiem i etykietą ostrzegawczą lasera skanera u góry',
     'Unitech HT730 Plus — trzy układy klawiatury obok siebie: 29, 38 i 47 klawiszy',
   ],
   tags: ['magazyn', 'logistyka', 'produkcja'],
@@ -67,12 +67,12 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
     { name: 'Pamięć RAM / Flash', value: '6 GB RAM, 128 GB UFS; microSD (SD, SDHC, SDXC) do 256 GB' },
     { name: 'Wyświetlacz', value: '4″ TFT-LCD WVGA (800 × 480), 400 nitów; ekran pojemnościowy z obsługą rękawic do 4 mm, mokrego ekranu i rysika 3 mm' },
     { name: 'Klawiatura', value: '29 klawiszy numerycznych, 38 klawiszy numerycznych z funkcyjnymi albo 47 klawiszy (tylko wersje z Wi-Fi), zależnie od PN; lewy i prawy przycisk skanowania' },
-    { name: 'Skaner', value: 'Zebra SE4770 (standardowy zasięg) albo SE5880 (daleki zasięg, do 32 m), zależnie od PN; pochylenie 30°; kody 1D, 2D, DotCode, pocztowe i OCR (OCR-A, OCR-B, E13B)' },
+    { name: 'Skaner', value: 'Silnik standardowy albo dalekiego zasięgu (do 32 m), zależnie od PN; pochylenie 30°; kody 1D, 2D, DotCode, pocztowe i OCR (OCR-A, OCR-B, E13B)' },
     { name: 'NFC / HF RFID', value: '13,56 MHz; ISO 14443 A/B, ISO 15693, NFC, MIFARE, FeliCa' },
     { name: 'Aparat', value: 'Tylny 16 MP z autofokusem i lampą LED; ARCore' },
-    { name: 'WLAN', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/d/h/i/k/r/v/ax, MIMO 2×2, DBS, szybki roaming; WPA3, WPA2; w pasmach 5150–5350 MHz i 5945–6425 MHz tylko w pomieszczeniach' },
-    { name: 'WWAN', value: 'Wersje 5G: 5G NR Sub-6 GHz (m.in. n1, n3, n7, n8, n20, n28, n38, n78), 4G LTE, 3G i 2G; połączenia głosowe' },
-    { name: 'SIM', value: 'Wersje 5G: micro SIM i eSIM' },
+    { name: 'WLAN', value: 'Wi-Fi 6E (2,4 / 5 / 6 GHz), IEEE 802.11 a/b/g/n/ac/ax/d/h/i/k/r/v, MIMO 2×2, DBS, szybki roaming; WPA3, WPA2; w pasmach 5150–5350 MHz i 5945–6425 MHz tylko w pomieszczeniach' },
+    { name: 'Łączność komórkowa', value: 'Wersje 5G: 5G NR Sub-6 GHz (m.in. n1, n3, n7, n8, n20, n28, n38, n78), 4G LTE, 3G i 2G; połączenia głosowe' },
+    { name: 'Karta SIM', value: 'Wersje 5G: micro SIM i eSIM' },
     { name: 'Bluetooth', value: 'Bluetooth 5.2' },
     { name: 'GNSS', value: 'Wersje 5G: GPS, GLONASS, Galileo, BeiDou, L1 + L5' },
     { name: 'Złącza', value: 'USB-C do komputera; styki pogo z OTG do stacji' },
@@ -98,78 +98,78 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
   variants: [
     {
       partNumber: 'HT730-NJ6122BG',
-      name: 'HT730-NJ6122BG, Wi-Fi 6E, 29 klawiszy, SE4770',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Skaner': 'SE4770' },
+      name: 'HT730-NJ6122BG, Wi-Fi 6E, 29 klawiszy, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Wyposażenie': 'Skaner standardowy' },
       priceFrom: 3459.6,
       availability: 'on-order',
     },
     {
       partNumber: 'HT730-NJ61U2BG',
-      name: 'HT730-NJ61U2BG, Wi-Fi 6E, 38 klawiszy, SE4770',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Skaner': 'SE4770' },
+      name: 'HT730-NJ61U2BG, Wi-Fi 6E, 38 klawiszy, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Wyposażenie': 'Skaner standardowy' },
       priceFrom: 3451.43,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-NH6122BG',
-      name: 'HT730-NH6122BG, Wi-Fi 6E, 29 klawiszy, SE4770, z grzałką',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Skaner': 'SE4770', 'Grzałka': 'Tak' },
+      name: 'HT730-NH6122BG, Wi-Fi 6E, 29 klawiszy, skaner standardowy, z grzałką',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Wyposażenie': 'Skaner standardowy, grzałka' },
       priceFrom: 3908.49,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-NH61U2BG',
-      name: 'HT730-NH61U2BG, Wi-Fi 6E, 38 klawiszy, SE4770, z grzałką',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Skaner': 'SE4770', 'Grzałka': 'Tak' },
+      name: 'HT730-NH61U2BG, Wi-Fi 6E, 38 klawiszy, skaner standardowy, z grzałką',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Wyposażenie': 'Skaner standardowy, grzałka' },
       priceFrom: 4050.49,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-NJN122BG',
-      name: 'HT730-NJN122BG, Wi-Fi 6E, 5G, 29 klawiszy, SE4770',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '29', 'Skaner': 'SE4770' },
+      name: 'HT730-NJN122BG, Wi-Fi 6E, 5G, 29 klawiszy, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '29', 'Wyposażenie': 'Skaner standardowy' },
       priceFrom: 3923,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-NJN1U2BG',
-      name: 'HT730-NJN1U2BG, Wi-Fi 6E, 5G, 38 klawiszy, SE4770',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '38', 'Skaner': 'SE4770' },
+      name: 'HT730-NJN1U2BG, Wi-Fi 6E, 5G, 38 klawiszy, skaner standardowy',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '38', 'Wyposażenie': 'Skaner standardowy' },
       priceFrom: 3913.95,
       availability: 'available',
     },
     {
       partNumber: 'HT730-LJ6122BG',
-      name: 'HT730-LJ6122BG, Wi-Fi 6E, 29 klawiszy, SE5880',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Skaner': 'SE5880, do 32 m' },
+      name: 'HT730-LJ6122BG, Wi-Fi 6E, 29 klawiszy, skaner do 32 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '29', 'Wyposażenie': 'Skaner do 32 m' },
       priceFrom: 5319.28,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-LJ61U2BG',
-      name: 'HT730-LJ61U2BG, Wi-Fi 6E, 38 klawiszy, SE5880',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Skaner': 'SE5880, do 32 m' },
+      name: 'HT730-LJ61U2BG, Wi-Fi 6E, 38 klawiszy, skaner do 32 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '38', 'Wyposażenie': 'Skaner do 32 m' },
       priceFrom: 5310.82,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-LJ6142BG',
-      name: 'HT730-LJ6142BG, Wi-Fi 6E, 47 klawiszy, SE5880',
-      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '47', 'Skaner': 'SE5880, do 32 m' },
+      name: 'HT730-LJ6142BG, Wi-Fi 6E, 47 klawiszy, skaner do 32 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E', 'Klawisze': '47', 'Wyposażenie': 'Skaner do 32 m' },
       priceFrom: 5328.81,
       availability: 'on-order',
     },
     {
       partNumber: 'HT730-LJN122BG',
-      name: 'HT730-LJN122BG, Wi-Fi 6E, 5G, 29 klawiszy, SE5880',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '29', 'Skaner': 'SE5880, do 32 m' },
+      name: 'HT730-LJN122BG, Wi-Fi 6E, 5G, 29 klawiszy, skaner do 32 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '29', 'Wyposażenie': 'Skaner do 32 m' },
       priceFrom: 5627.09,
       availability: 'unavailable',
     },
     {
       partNumber: 'HT730-LJN1U2BG',
-      name: 'HT730-LJN1U2BG, Wi-Fi 6E, 5G, 38 klawiszy, SE5880',
-      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '38', 'Skaner': 'SE5880, do 32 m' },
+      name: 'HT730-LJN1U2BG, Wi-Fi 6E, 5G, 38 klawiszy, skaner do 32 m',
+      attributes: { 'Łączność': 'Wi-Fi 6E + 5G', 'Klawisze': '38', 'Wyposażenie': 'Skaner do 32 m' },
       priceFrom: 5618.83,
       availability: 'available',
     },
@@ -177,8 +177,7 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
   variantAttributeTooltips: {
     'Łączność': 'Sposób połączenia HT730 Plus z siecią. Każda wersja ma Wi-Fi 6E i Bluetooth 5.2.\n\n• Wi-Fi 6E — praca w sieci firmowej w pasmach 2,4, 5 i 6 GHz; ta wersja nie ma gniazda SIM ani GPS.\n\n• Wi-Fi 6E + 5G — dodatkowo 5G i LTE z eSIM lub kartą micro SIM, połączenia głosowe i GPS z L1 + L5.',
     'Klawisze': 'Liczba fizycznych klawiszy pod ekranem.\n\n• 29 — klawiatura numeryczna.\n\n• 38 — klawiatura numeryczna z klawiszami funkcyjnymi.\n\n• 47 — klawiatura z literami; tylko w wersjach z Wi-Fi.',
-    'Skaner': 'Silnik skanujący HT730 Plus, pochylony o 30°; czyta kody 1D i 2D.\n\n• SE4770 — silnik standardowego zasięgu.\n\n• SE5880 — silnik dalekiego zasięgu; producent podaje odczyt z odległości do 32 m.',
-    'Grzałka': 'Wersja do pracy w chłodni i mroźni.\n\n• Moduł grzewczy zapobiega skraplaniu się pary wodnej; praca w zakresie od -30°C do +50°C.',
+    'Wyposażenie': 'Silnik skanujący i moduł grzewczy w danej wersji HT730 Plus. Skaner jest pochylony o 30° i czyta kody 1D, 2D, DotCode i OCR.\n\n• Skaner standardowy — odczyt kodów z bliska, np. przy półce i stole kompletacji.\n\n• Skaner do 32 m — silnik dalekiego zasięgu do etykiet na wysokich regałach.\n\n• Grzałka — wersja do chłodni i mroźni: praca od -30°C do +50°C, moduł grzewczy zapobiega skraplaniu się pary wodnej.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
@@ -193,7 +192,7 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
     'unitech-ht730-plus-stacja-4-slot-ethernet',
     'unitech-ht730-plus-ladowarka-baterii',
     'unitech-ht730-plus-szklo-ochronne',
-    'unitech-ht730-plus-oslona-se4770',
+    'unitech-ht730-plus-oslona-standardowa',
     'unitech-ht730-plus-oslona-dalekiego-zasiegu',
     'unitech-ht730-plus-pasek-na-dlon',
     'unitech-rysik-z-linka',
@@ -207,15 +206,15 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
   faq: [
     {
       question: 'Czym różnią się wersje Unitech HT730 Plus w ofercie?',
-      answer: 'Różnice dotyczą łączności, klawiatury, silnika skanującego i grzałki. Wi-Fi 6E mają wszystkie wersje, a modem 5G z eSIM, gniazdem micro SIM i GPS tylko wersje oznaczone 5G. Klawiatura ma 29, 38 lub 47 klawiszy, a 47 klawiszy jest tylko w wersjach z Wi-Fi. Silnik SE4770 ma standardowy zasięg, a SE5880 daleki. Wersje HT730-NH… mają grzałkę do pracy w mroźni.',
+      answer: 'Różnice dotyczą łączności, klawiatury, silnika skanującego i grzałki. Wi-Fi 6E mają wszystkie wersje, a modem 5G z eSIM, gniazdem micro SIM i GPS tylko wersje oznaczone 5G. Klawiatura ma 29, 38 lub 47 klawiszy, a 47 klawiszy jest tylko w wersjach z Wi-Fi. Silnik standardowy mają wersje HT730-NJ… i HT730-NH…, a silnik dalekiego zasięgu wersje HT730-LJ…. Wersje HT730-NH… mają grzałkę do pracy w mroźni.',
     },
     {
       question: 'Z jakiej odległości HT730 Plus odczytuje kody kreskowe?',
-      answer: 'Wersje z silnikiem SE5880 (PN HT730-LJ…) odczytują kody z odległości do 32 m, według danych producenta. Wersje z silnikiem SE4770 (PN HT730-NJ… i HT730-NH…) mają standardowy zasięg. Skaner jest pochylony o 30°.',
+      answer: 'Wersje z silnikiem dalekiego zasięgu (PN HT730-LJ…) odczytują kody z odległości do 32 m. Wersje z silnikiem standardowym (PN HT730-NJ… i HT730-NH…) mają zwykły zasięg. Skaner jest pochylony o 30°.',
     },
     {
       question: 'Czy HT730 Plus pracuje w chłodni i mroźni?',
-      answer: 'Tak, w wersjach z grzałką (PN HT730-NH6122BG i HT730-NH61U2BG). Pracują w temperaturze od -30°C do +50°C, a moduł grzewczy zapobiega skraplaniu się pary wodnej. Wersje bez grzałki pracują od -20°C do +50°C. Do wersji z grzałką pasuje [uchwyt pistoletowy](/produkt/unitech-ht730-plus-uchwyt-pistoletowy), a osłony do niskich temperatur są osobne dla [silnika standardowego](/produkt/unitech-ht730-plus-oslona-se4770) i [dalekiego zasięgu](/produkt/unitech-ht730-plus-oslona-dalekiego-zasiegu).',
+      answer: 'Tak, w wersjach z grzałką (PN HT730-NH6122BG i HT730-NH61U2BG). Pracują w temperaturze od -30°C do +50°C, a moduł grzewczy zapobiega skraplaniu się pary wodnej. Wersje bez grzałki pracują od -20°C do +50°C. Do wersji z grzałką pasuje [uchwyt pistoletowy](/produkt/unitech-ht730-plus-uchwyt-pistoletowy), a osłony do niskich temperatur są osobne dla [silnika standardowego](/produkt/unitech-ht730-plus-oslona-standardowa) i [dalekiego zasięgu](/produkt/unitech-ht730-plus-oslona-dalekiego-zasiegu).',
     },
     {
       question: 'Jakie sieci komórkowe obsługuje HT730 Plus w wersji 5G?',
@@ -223,7 +222,7 @@ W zestawie są terminal, bateria, pasek na dłoń i skrócona instrukcja; osłon
     },
     {
       question: 'Czy do HT730 Plus potrzebny jest zasilacz i przewód USB-C?',
-      answer: 'Tak. W zestawie nie ma ani zasilacza, ani przewodu USB-C. Potrzebne są [zasilacz USB-C z wtyczką EU](/produkt/unitech-ea-zasilacz-usb-c-eu) i [przewód USB 3.0 typ C](/produkt/unitech-ea-przewod-usb-c). Producent zaleca oryginalny przewód i zasilacz Unitech.',
+      answer: 'Tak. W zestawie nie ma ani zasilacza, ani przewodu USB-C. Potrzebne są [zasilacz Unitech z wtyczką EU 1010-900074G](/produkt/unitech-ea-zasilacz-usb-c-eu) i [przewód USB 3.0 typ C 1550-905908G](/produkt/unitech-ea-przewod-usb-c). Do ładowania zalecane są oryginalne przewód USB-C i zasilacz Unitech.',
     },
     {
       question: 'Jakie stacje i ładowarki pasują do HT730 Plus?',
@@ -250,19 +249,19 @@ const ht330: Product = {
   seoTitle: 'Terminal Unitech HT330 z klawiaturą, Android 12, bateria na 20 godzin',
   seoDescription: 'Terminal mobilny z klawiaturą Unitech HT330: ekran 4″, 32 klawisze, Android 12, bateria 5200 mAh na ponad 20 godzin, masa 295 g. Kolektor danych HT330 Unitech. PN: HT330-QA62UM3G, HT330-NAL2UM3G.',
   shortDescription: 'Unitech HT330 — lekki terminal mobilny z klawiaturą 32 klawisze, baterią 5200 mAh na ponad 20 godzin pracy i wersją 4G LTE lub tylko z Wi-Fi.',
-  description: `Unitech HT330 (2nd Gen) to terminal z klawiaturą, który producent opisuje jako urządzenie na całą zmianę pracy. Wymienna bateria 3,85 V / 5200 mAh zapewnia według karty katalogowej ponad 20 godzin pracy, na przykład przy intensywnej inwentaryzacji, a ładowanie do pełna trwa 4,5 godziny.
+  description: `Unitech HT330 (2nd Gen) to terminal z klawiaturą przeznaczony do pracy przez całą zmianę. Wymienna bateria 3,85 V / 5200 mAh wystarcza na ponad 20 godzin pracy, zależnie od środowiska, na przykład przy intensywnej inwentaryzacji. Ładowanie do pełna trwa 4,5 godziny.
 
-Obudowa waży 295 g z baterią. Pod ekranem 4″ jest 32 klawisze z podświetleniem: cyfry, klawisze funkcyjne i kierunkowe. Skaner jest pochylony o 25°. Silnik zależy od wersji: wersja 4G LTE ma silnik Zebra SE4710, a wersja tylko z Wi-Fi silnik CM30.
+Obudowa waży 295 g z baterią. Pod ekranem 4″ są 32 klawisze z podświetleniem: cyfry, klawisze funkcyjne i kierunkowe. Skaner jest pochylony o 25°. Silnik zależy od wersji: wersja 4G LTE ma silnik Zebra SE4710, a wersja tylko z Wi-Fi silnik CM30.
 
 Terminal ma klasę IP67, wytrzymuje upadki z 1,5 m (z etui z 1,8 m) i pracuje w temperaturze od −20°C do +60°C. Wersja 4G LTE ma dwa gniazda nano SIM i przedni aparat 5 MP. Android 12 z certyfikatem GMS współpracuje z systemami SOTI, Ivanti Wavelink, 42Gears i MoboLink.
 
-Producent wymienia zastosowania w handlu, transporcie i logistyce oraz produkcji. Okres gwarancji producenta wynosi 12 miesięcy.
+Terminal obsługuje zadania od sprawdzania stanów po wysyłkę w handlu, transporcie i logistyce oraz w produkcji. Okres gwarancji wynosi 12 miesięcy.
 
 ## Co jest potrzebne do użycia?
 
 **Wymagane — sprzedawane osobno**
 
-- [Zasilacz 5 V / 2 A (1010-900067G)](/produkt/unitech-rp902-zasilacz)
+- [Zasilacz Unitech RP902 i HT330 — 5 V / 2 A (1010-900067G)](/produkt/unitech-rp902-zasilacz)
 
 W zestawie są terminal, bateria, pasek na dłoń, przewód USB-C i skrócona instrukcja. Zasilacza w zestawie nie ma.`,
   categoryId: 'terminale-mobilne',
@@ -295,10 +294,10 @@ W zestawie są terminal, bateria, pasek na dłoń, przewód USB-C i skrócona in
     { name: 'Skaner', value: 'Zebra SE4710 (wersja 4G LTE) albo CM30 (wersja tylko z Wi-Fi); pochylenie 25°; kody 1D i 2D' },
     { name: 'Aparaty', value: 'Tylny 13 MP z PDAF i lampą LED; przedni 5 MP (wersja 4G LTE)' },
     { name: 'WLAN', value: 'Wi-Fi 802.11 a/b/g/n/ac/d/e/h/i/j/k/r/v, 2,4 + 5 GHz, szybki roaming, hotspot' },
-    { name: 'WWAN', value: 'Wersja 4G LTE: LTE FDD B1/2/3/4/5/7/8/12/17/20/28/66, LTE TDD B38/39/40/41, 3G WCDMA B1/2/4/5/8, 2G GSM B2/3/5/8' },
-    { name: 'SIM', value: 'Wersja 4G LTE: dwa gniazda nano SIM' },
+    { name: 'Łączność komórkowa', value: 'Wersja 4G LTE: LTE FDD B1/2/3/4/5/7/8/12/17/20/28/66, LTE TDD B38/39/40/41, 3G WCDMA B1/2/4/5/8, 2G GSM B2/3/5/8' },
+    { name: 'Karta SIM', value: 'Wersja 4G LTE: dwa gniazda nano SIM' },
     { name: 'Bluetooth', value: 'Bluetooth 5' },
-    { name: 'GNSS', value: 'Wersja 4G LTE: GPS / AGPS, GLONASS, BeiDou, Galileo' },
+    { name: 'GNSS', value: 'GPS / AGPS, GLONASS, BeiDou, Galileo' },
     { name: 'Złącza', value: 'USB-C 2.0 z OTG; styki pogo z tyłu (uchwyt pistoletowy) i na dole (ładowanie w stacji)' },
     { name: 'Audio', value: 'Głośnik 1 W (90 dB z 10 cm); dwa mikrofony (wersja 4G LTE) lub jeden (wersja tylko z Wi-Fi)' },
     { name: 'Bateria', value: '3,85 V, 5200 mAh Li-ion, wymienna; ponad 20 godzin pracy zależnie od środowiska; ładowanie do pełna ok. 4,5 godziny' },
@@ -336,16 +335,16 @@ W zestawie są terminal, bateria, pasek na dłoń, przewód USB-C i skrócona in
     },
   ],
   variantAttributeTooltips: {
-    'Łączność': 'Sposób połączenia HT330 z siecią. Każda wersja ma Wi-Fi 802.11ac i Bluetooth 5.\n\n• Wi-Fi — sieć firmowa w pasmach 2,4 i 5 GHz.\n\n• Wi-Fi + 4G LTE — dodatkowo dwa gniazda nano SIM, GPS i przedni aparat 5 MP.',
+    'Łączność': 'Sposób połączenia HT330 z siecią. Każda wersja ma Wi-Fi 802.11ac i Bluetooth 5.\n\n• Wi-Fi — sieć firmowa w pasmach 2,4 i 5 GHz.\n\n• Wi-Fi + 4G LTE — dodatkowo modem LTE, dwa gniazda nano SIM, przedni aparat 5 MP i drugi mikrofon.',
     'Skaner': 'Silnik skanujący HT330, pochylony o 25°; czyta kody 1D i 2D.\n\n• Zebra SE4710 — w wersji z 4G LTE.\n\n• CM30 — w wersji tylko z Wi-Fi; minimalna długość kodów Code 39 i Codabar to 4 znaki.',
   },
   compatibleAccessories: [],
   relatedAccessories: [
-    'unitech-rp902-zasilacz',
     'unitech-ht330-etui',
     'unitech-ht330-uchwyt-pistoletowy',
     'unitech-ht330-bateria',
     'unitech-ht330-stacja-1-slot',
+    'unitech-rp902-zasilacz',
     'unitech-ht330-stacja-1-slot-usb',
     'unitech-ht330-ladowarka-baterii',
     'unitech-ht330-szklo-ochronne',
@@ -362,15 +361,15 @@ W zestawie są terminal, bateria, pasek na dłoń, przewód USB-C i skrócona in
   faq: [
     {
       question: 'Czym różnią się dwie wersje Unitech HT330?',
-      answer: 'Wersja HT330-NAL2UM3G ma 4G LTE, dwa gniazda nano SIM, GPS, przedni aparat 5 MP, dwa mikrofony i silnik Zebra SE4710. Wersja HT330-QA62UM3G działa tylko w sieci Wi-Fi, ma jeden mikrofon i silnik CM30. Klawiatura, ekran, bateria i obudowa są w obu wersjach takie same.',
+      answer: 'Wersja HT330-NAL2UM3G ma 4G LTE, dwa gniazda nano SIM, przedni aparat 5 MP, dwa mikrofony i silnik Zebra SE4710. Wersja HT330-QA62UM3G działa tylko w sieci Wi-Fi, ma jeden mikrofon i silnik CM30. Klawiatura, ekran, bateria i obudowa są w obu wersjach takie same.',
     },
     {
       question: 'Jak długo HT330 pracuje na jednej baterii?',
-      answer: 'Karta katalogowa podaje ponad 20 godzin pracy na baterii 3,85 V / 5200 mAh, zależnie od środowiska. Ładowanie do pełna trwa około 4,5 godziny. Funkcja Battery Care pozwala ograniczyć ładowanie do 80% lub 50% pojemności. Zapasową baterię ładuje się w [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) albo w [ładowarce 4 baterii](/produkt/unitech-ht330-ladowarka-baterii).',
+      answer: 'Bateria 3,85 V / 5200 mAh wystarcza na ponad 20 godzin pracy, zależnie od środowiska. Ładowanie do pełna trwa około 4,5 godziny. Funkcja Battery Care pozwala ograniczyć ładowanie do 80% lub 50% pojemności. Zapasową baterię ładuje się w [stacji 1-gniazdowej](/produkt/unitech-ht330-stacja-1-slot) albo w [ładowarce 4 baterii](/produkt/unitech-ht330-ladowarka-baterii).',
     },
     {
       question: 'Jaki silnik skanujący ma HT330?',
-      answer: 'Zależy od wersji: HT330-NAL2UM3G ma silnik Zebra SE4710, a HT330-QA62UM3G silnik CM30. Oba są pochylone o 25°. Silnik CM30 ma domyślną minimalną długość kodów Code 39 i Codabar równą 4 znaki i nie pozwala ustawić 3 lub mniej; dla takich kodów producent zaleca wersję 4G z silnikiem SE4710.',
+      answer: 'Zależy od wersji: HT330-NAL2UM3G ma silnik Zebra SE4710, a HT330-QA62UM3G silnik CM30. Oba są pochylone o 25°. Silnik CM30 ma domyślną minimalną długość kodów Code 39 i Codabar równą 4 znaki i nie pozwala ustawić 3 lub mniej. Krótsze kody odczytuje wersja 4G z silnikiem SE4710.',
     },
     {
       question: 'Czy do HT330 potrzebny jest zasilacz?',
@@ -382,7 +381,7 @@ W zestawie są terminal, bateria, pasek na dłoń, przewód USB-C i skrócona in
     },
     {
       question: 'Jak działa rysik 1979-900003G w HT330?',
-      answer: 'Producent podaje, że rysik [1979-900003G](/produkt/unitech-rysik-z-linka) działa po włączeniu trybu rękawic w ustawieniach dostępności terminala (Settings → Accessibility → Glove Mode). W trybie zwykłego dotyku rysik nie jest rozpoznawany.',
+      answer: 'Rysik [1979-900003G](/produkt/unitech-rysik-z-linka) działa po włączeniu trybu rękawic w ustawieniach dostępności terminala (Settings → Accessibility → Glove Mode). W trybie zwykłego dotyku rysik nie jest rozpoznawany.',
     },
     {
       question: 'Jaka jest alternatywa dla Unitech HT330?',

@@ -10,6 +10,8 @@ const EA530 = 'unitech-ea530'
 const EA530_UHF = 'unitech-ea530-uhf'
 const TERMINALE_EA = [EA660, EA530, EA530_UHF]
 const TERMINALE_EA530 = [EA530, EA530_UHF]
+const HT730 = 'unitech-ht730-plus'
+const HT330 = 'unitech-ht330'
 const TAGI: Product['tags'] = ['retail', 'magazyn', 'logistyka']
 
 const KATALOG_EA660 = { name: 'Katalog akcesoriów Unitech EA660 (EN)', type: 'manual' as const, url: '/downloads/unitech/unitech-ea660-akcesoria-en.pdf', size: '1,6 MB' }
@@ -28,7 +30,7 @@ const QSG_UCHWYT_EA660 = { name: 'Skrócona instrukcja uchwytu pistoletowego EA6
 // Stacje 1-gniazdowe korzystają z zasilacza i przewodu USB-C terminala. Przewód jest w opakowaniu terminala, zasilacz nie.
 const ZASILACZ_USB_C = `**Wymagane — sprzedawane osobno**
 
-- [Zasilacz Unitech EA660 i EA530, wtyczka EU (1010-900074G)](/produkt/unitech-ea-zasilacz-usb-c-eu)
+- [Zasilacz Unitech EA660, EA530 i HT730 Plus, wtyczka EU (1010-900074G)](/produkt/unitech-ea-zasilacz-usb-c-eu)
 
 `
 const PRZEWOD_SIECIOWY_C13 = `**Wymagane — sprzedawane osobno**
@@ -40,14 +42,14 @@ const PRZEWOD_SIECIOWY_C13 = `**Wymagane — sprzedawane osobno**
 const zasilaczUsbC: Product = {
   id: 'unitech-ea-zasilacz-usb-c-eu',
   slug: 'unitech-ea-zasilacz-usb-c-eu',
-  name: 'Zasilacz Unitech EA660, EA530 i WD200 Plus, wtyczka EU (1010-900074G)',
-  seoH1: 'Zasilacz Unitech EA660, EA530 i WD200 Plus, wtyczka EU',
-  shortDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU do terminali EA660, EA530, EA530 UHF i komputera noszonego WD200 Plus: ładowanie przez przewód USB-C, zasila też stacje 1-gniazdowe.',
-  seoTitle: 'Zasilacz Unitech 1010-900074G do EA660, EA530 i EA530 UHF',
-  seoDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU i szybkim ładowaniem do terminali mobilnych Unitech EA660, EA530 oraz EA530 UHF, komputera noszonego Unitech WD200 Plus i do stacji 1-gniazdowych. Zasilacz do terminala Unitech EA660, zasilacz Unitech EA530, zasilacz WD200 Plus. PN: 1010-900074G.',
-  description: `Zasilacz 1010-900074G ma wtyczkę europejską i szybkie ładowanie Quick Charge. Terminal podłącza się do niego przewodem USB-C. W opakowaniu [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) są bateria, przewód USB-C i skrócona instrukcja. Zasilacza w nich nie ma.
+  name: 'Zasilacz Unitech EA660, EA530, HT730 Plus i WD200 Plus, wtyczka EU (1010-900074G)',
+  seoH1: 'Zasilacz Unitech EA660, EA530, HT730 Plus i WD200 Plus, wtyczka EU',
+  shortDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU do terminali EA660, EA530, EA530 UHF, HT730 Plus i komputera noszonego WD200 Plus: szybkie ładowanie przez przewód USB-C, zasila też stacje 1-gniazdowe EA.',
+  seoTitle: 'Zasilacz Unitech 1010-900074G do EA660, EA530 i HT730 Plus',
+  seoDescription: 'Zasilacz Unitech 1010-900074G z wtyczką EU i szybkim ładowaniem do terminali mobilnych Unitech EA660, EA530, EA530 UHF i HT730 Plus, komputera noszonego Unitech WD200 Plus oraz do stacji 1-gniazdowych EA. Zasilacz do terminala Unitech EA660, zasilacz Unitech EA530, zasilacz Unitech HT730 Plus, zasilacz WD200 Plus. PN: 1010-900074G.',
+  description: `Zasilacz 1010-900074G ma wtyczkę europejską i szybkie ładowanie Quick Charge. Terminal podłącza się do niego przewodem USB-C. W opakowaniu [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) są bateria, przewód USB-C i skrócona instrukcja. Zasilacza w nich nie ma. Terminal [Unitech HT730 Plus](/produkt/unitech-ht730-plus) jest sprzedawany bez zasilacza i bez przewodu USB-C, więc do niego potrzebny jest też [przewód 1550-905908G](/produkt/unitech-ea-przewod-usb-c).
 
-Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.
+Ten zasilacz z przewodem USB-C zasila także stacje 1-gniazdowe EA: [ładującą](/produkt/unitech-ea-stacja-1-slot), [z portem USB](/produkt/unitech-ea-stacja-1-slot-usb) i [z Ethernetem](/produkt/unitech-ea-stacja-1-slot-ethernet). Dla stacji Unitech zaleca zasilacz oryginalny. Zamiennik musi mieć moc min. 15 W i funkcję szybkiego ładowania.
 
 Zasilacza nie ma też w pudełku komputera noszonego [Unitech WD200 Plus](/produkt/unitech-wd200-plus). W wersji EU pasuje do niego ten sam zasilacz 1010-900074G, połączony z komputerem przewodem USB-C z zestawu WD200 Plus.`,
   categoryId: 'akcesoria',
@@ -64,29 +66,31 @@ Zasilacza nie ma też w pudełku komputera noszonego [Unitech WD200 Plus](/produ
     { name: 'Part Number', value: '1010-900074G' },
     { name: 'Typ', value: 'Zasilacz sieciowy z szybkim ładowaniem' },
     { name: 'Wtyczka', value: 'EU' },
-    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF, WD200 Plus' },
+    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF, HT730 Plus, WD200 Plus' },
     { name: 'Połączenie z terminalem', value: 'Przewód USB-C (1550-905908G); WD200 Plus: przewód USB-C z zestawu terminala' },
-    { name: 'Stacje', value: '1-gniazdowe: 5000-900129G, 5000-900130G, 5000-900131G' },
+    { name: 'Stacje', value: '1-gniazdowe EA: 5000-900129G, 5000-900130G, 5000-900131G' },
   ],
   applications: ['Ładowanie terminala przy stanowisku pracy'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ea-przewod-usb-c', 'unitech-ea-stacja-1-slot', 'unitech-ea-stacja-1-slot-usb', 'unitech-ea-stacja-1-slot-ethernet'],
   downloads: [...KATALOGI_EA, BROSZURA_WD200],
-  relatedProducts: [...TERMINALE_EA, 'unitech-wd200-plus'],
+  relatedProducts: [...TERMINALE_EA, HT730, 'unitech-wd200-plus'],
   createdAt: '2026-10-29',
 }
 
 const przewodUsbC: Product = {
   id: 'unitech-ea-przewod-usb-c',
   slug: 'unitech-ea-przewod-usb-c',
-  name: 'Przewód USB 3.0 typ C Unitech EA660 i EA530 (1550-905908G)',
-  seoH1: 'Przewód USB 3.0 typ C Unitech EA660 i EA530',
-  shortDescription: 'Przewód Unitech 1550-905908G, USB 3.0 typ C, do terminali EA660, EA530 i EA530 UHF oraz stacji 1-gniazdowych: ładowanie przez zasilacz z szybkim ładowaniem.',
-  seoTitle: 'Przewód USB-C Unitech 1550-905908G do EA660 i EA530',
-  seoDescription: 'Przewód USB 3.0 typ C Unitech 1550-905908G do terminali mobilnych Unitech EA660, EA530 i EA530 UHF oraz stacji 1-gniazdowych, z obsługą szybkiego ładowania. Przewód USB-C do Unitech EA660, kabel do Unitech EA530. PN: 1550-905908G.',
+  name: 'Przewód USB 3.0 typ C Unitech EA660, EA530 i HT730 Plus (1550-905908G)',
+  seoH1: 'Przewód USB 3.0 typ C Unitech EA660, EA530 i HT730 Plus',
+  shortDescription: 'Przewód Unitech 1550-905908G, USB 3.0 typ C, do terminali EA660, EA530, EA530 UHF i HT730 Plus oraz stacji 1-gniazdowych EA: ładowanie przez zasilacz z szybkim ładowaniem.',
+  seoTitle: 'Przewód USB-C Unitech 1550-905908G do EA660, EA530 i HT730 Plus',
+  seoDescription: 'Przewód USB 3.0 typ C Unitech 1550-905908G do terminali mobilnych Unitech EA660, EA530, EA530 UHF i HT730 Plus oraz stacji 1-gniazdowych EA, z obsługą szybkiego ładowania. Przewód USB-C do Unitech EA660, kabel do Unitech EA530, przewód USB-C do Unitech HT730 Plus. PN: 1550-905908G.',
   description: `Przewód 1550-905908G ma standard USB 3.0 i złącza USB-A oraz USB-C. Łączy zasilacz z terminalem albo ze stacją 1-gniazdową i obsługuje szybkie ładowanie. Sprzedawany osobno służy jako przewód zapasowy albo drugi przewód przy stanowisku ładowania z [zasilaczem 1010-900074G](/produkt/unitech-ea-zasilacz-usb-c-eu).
 
-Terminale [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) mają przewód USB-C w opakowaniu. Stacje 1-gniazdowe korzystają z takiego samego przewodu i zasilacza jak terminal.`,
+Terminale [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) mają przewód USB-C w opakowaniu. Stacje 1-gniazdowe EA korzystają z takiego samego przewodu i zasilacza jak terminal.
+
+W opakowaniu [Unitech HT730 Plus](/produkt/unitech-ht730-plus) przewodu USB-C nie ma, więc do ładowania tego terminala ten przewód kupuje się osobno.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -100,14 +104,14 @@ Terminale [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unit
   specifications: [
     { name: 'Part Number', value: '1550-905908G' },
     { name: 'Typ', value: 'Przewód USB 3.0, złącze typu C' },
-    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF; stacje 1-gniazdowe' },
+    { name: 'Zgodność', value: 'Unitech EA660, EA530, EA530 UHF, HT730 Plus; stacje 1-gniazdowe EA' },
     { name: 'Ładowanie', value: 'Z obsługą szybkiego ładowania' },
   ],
   applications: ['Zapasowy przewód do ładowania terminala'],
   compatibleAccessories: [],
   relatedAccessories: ['unitech-ea-zasilacz-usb-c-eu', 'unitech-ea-stacja-1-slot'],
   downloads: KATALOGI_EA,
-  relatedProducts: TERMINALE_EA,
+  relatedProducts: [...TERMINALE_EA, HT730],
   createdAt: '2026-10-29',
 }
 
@@ -404,12 +408,12 @@ ${PRZEWOD_SIECIOWY_C13}Zasilacz 5 V / 6 A jest w zestawie, przewód do gniazdka 
 const zasilaczStacjiDokujacej: Product = {
   id: 'unitech-ea-zasilacz-stacji-dokujacej',
   slug: 'unitech-ea-zasilacz-stacji-dokujacej',
-  name: 'Zasilacz 5 V / 6 A do stacji dokującej Unitech (1010-900043G)',
-  seoH1: 'Zasilacz 5 V / 6 A do stacji dokującej Unitech',
-  shortDescription: 'Zasilacz Unitech 1010-900043G, 5 V / 6 A, do stacji dokującej 5000-900142G terminali EA660, EA530 i EA530 UHF; część zamienna.',
-  seoTitle: 'Zasilacz 5 V / 6 A Unitech 1010-900043G do stacji dokującej',
-  seoDescription: 'Zasilacz 5 V / 6 A Unitech 1010-900043G do stacji dokującej 5000-900142G terminali mobilnych Unitech EA660, EA530 i EA530 UHF. Zasilacz stacji dokującej Unitech EA660. PN: 1010-900043G.',
-  description: `Zasilacz 1010-900043G ma parametry 5 V / 6 A i zasila [stację dokującą 5000-900142G](/produkt/unitech-ea-stacja-dokujaca). Taki zasilacz jest już w pudełku stacji, więc ten numer służy jako część zamienna.
+  name: 'Zasilacz 5 V / 6 A do stacji Unitech EA i HT730 Plus (1010-900043G)',
+  seoH1: 'Zasilacz 5 V / 6 A do stacji Unitech EA i HT730 Plus',
+  shortDescription: 'Zasilacz Unitech 1010-900043G, 5 V / 6 A, do stacji dokującej 5000-900142G terminali EA660, EA530 i EA530 UHF oraz do stacji 1-gniazdowych HT730 Plus; część zamienna.',
+  seoTitle: 'Zasilacz 5 V / 6 A Unitech 1010-900043G do stacji EA i HT730 Plus',
+  seoDescription: 'Zasilacz 5 V / 6 A Unitech 1010-900043G do stacji dokującej 5000-900142G terminali mobilnych Unitech EA660, EA530 i EA530 UHF oraz do stacji 1-gniazdowych Unitech HT730 Plus. Zasilacz stacji dokującej Unitech EA660, zasilacz stacji Unitech HT730 Plus. PN: 1010-900043G.',
+  description: `Zasilacz 1010-900043G ma parametry 5 V / 6 A i zasila [stację dokującą 5000-900142G](/produkt/unitech-ea-stacja-dokujaca). Taki zasilacz jest już w pudełku stacji, więc ten numer służy jako część zamienna. Ten sam zasilacz należy do stacji 1-gniazdowych [Unitech HT730 Plus](/produkt/unitech-ht730-plus): [ładującej](/produkt/unitech-ht730-plus-stacja-1-slot), [USB](/produkt/unitech-ht730-plus-stacja-1-slot-usb) i [Ethernet](/produkt/unitech-ht730-plus-stacja-1-slot-ethernet).
 
 Zasilacz nie zastępuje przewodu sieciowego. Do gniazdka potrzebny jest [przewód 1550-602333G](/produkt/unitech-przewod-zasilajacy-eu-3pin). Stację obsługują terminale [Unitech EA660](/produkt/unitech-ea660), [Unitech EA530](/produkt/unitech-ea530) i [Unitech EA530 UHF](/produkt/unitech-ea530-uhf).`,
   categoryId: 'akcesoria',
@@ -424,16 +428,16 @@ Zasilacz nie zastępuje przewodu sieciowego. Do gniazdka potrzebny jest [przewó
   isBestseller: false,
   specifications: [
     { name: 'Part Number', value: '1010-900043G' },
-    { name: 'Typ', value: 'Zasilacz do stacji dokującej' },
+    { name: 'Typ', value: 'Zasilacz do stacji dokującej i stacji 1-gniazdowych' },
     { name: 'Napięcie i prąd', value: '5 V / 6 A' },
-    { name: 'Zgodność', value: 'Stacja dokująca 5000-900142G' },
+    { name: 'Zgodność', value: 'Stacja dokująca EA 5000-900142G; stacje 1-gniazdowe HT730 Plus: 5000-900139G, 5000-900140G, 5000-900141G' },
     { name: 'Przewód sieciowy', value: 'Sprzedawany osobno (EU: 1550-602333G)' },
   ],
-  applications: ['Wymiana zasilacza stacji dokującej'],
+  applications: ['Wymiana zasilacza stacji dokującej lub stacji 1-gniazdowej HT730 Plus'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ea-stacja-dokujaca', 'unitech-przewod-zasilajacy-eu-3pin'],
+  relatedAccessories: ['unitech-ea-stacja-dokujaca', 'unitech-ht730-plus-stacja-1-slot', 'unitech-przewod-zasilajacy-eu-3pin'],
   downloads: KATALOGI_EA,
-  relatedProducts: TERMINALE_EA,
+  relatedProducts: [...TERMINALE_EA, HT730],
   createdAt: '2026-10-29',
 }
 
@@ -442,10 +446,12 @@ const zasilacz12v: Product = {
   slug: 'unitech-ea-zasilacz-12v-5a',
   name: 'Zasilacz 12 V / 5 A do stacji wielogniazdowych Unitech (1010-900068G)',
   seoH1: 'Zasilacz 12 V / 5 A do stacji wielogniazdowych Unitech',
-  shortDescription: 'Zasilacz Unitech 1010-900068G, 12 V / 5 A: część zamienna dla wielogniazdowych stacji i ładowarek baterii EA660 oraz EA530.',
+  shortDescription: 'Zasilacz Unitech 1010-900068G, 12 V / 5 A: część zamienna dla wielogniazdowych stacji i ładowarek baterii EA660, EA530, HT730 Plus oraz HT330.',
   seoTitle: 'Zasilacz 12 V / 5 A Unitech 1010-900068G do stacji i ładowarek',
-  seoDescription: 'Zasilacz 12 V / 5 A Unitech 1010-900068G do wielogniazdowych stacji i ładowarek baterii terminali mobilnych Unitech EA660, EA530 i EA530 UHF. Zasilacz stacji Unitech EA660. PN: 1010-900068G.',
+  seoDescription: 'Zasilacz 12 V / 5 A Unitech 1010-900068G do wielogniazdowych stacji i ładowarek baterii terminali mobilnych Unitech EA660, EA530, EA530 UHF, HT730 Plus i HT330. Zasilacz stacji Unitech EA660, zasilacz ładowarki Unitech HT730 Plus. PN: 1010-900068G.',
   description: `Zasilacz 1010-900068G, 12 V / 5 A, zasila stacje wielogniazdowe do terminali Unitech: [5-gniazdową do ładowania](/produkt/unitech-ea-stacja-5-slot), [5-gniazdową z Ethernetem](/produkt/unitech-ea-stacja-5-slot-ethernet), [stację 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4) i ładowarki baterii: [do EA660](/produkt/unitech-ea660-ladowarka-baterii) oraz [do EA530](/produkt/unitech-ea530-ladowarka-baterii).
+
+Zasila też stacje 4-gniazdowe [Unitech HT730 Plus](/produkt/unitech-ht730-plus) ([ładującą](/produkt/unitech-ht730-plus-stacja-4-slot) i [Ethernet](/produkt/unitech-ht730-plus-stacja-4-slot-ethernet)), [ładowarkę 4 baterii HT730 Plus](/produkt/unitech-ht730-plus-ladowarka-baterii) i [ładowarkę 4 baterii HT330](/produkt/unitech-ht330-ladowarka-baterii).
 
 Każde z tych urządzeń ma taki zasilacz w pudełku. Osobny numer jest potrzebny po uszkodzeniu zasilacza. Zasilacz podłącza się do gniazda DC urządzenia, a do sieci łączy go [przewód 1550-602333G](/produkt/unitech-przewod-zasilajacy-eu-3pin).`,
   categoryId: 'akcesoria',
@@ -462,14 +468,14 @@ Każde z tych urządzeń ma taki zasilacz w pudełku. Osobny numer jest potrzebn
     { name: 'Part Number', value: '1010-900068G' },
     { name: 'Typ', value: 'Zasilacz do stacji wielogniazdowych' },
     { name: 'Napięcie i prąd', value: '12 V / 5 A' },
-    { name: 'Zgodność', value: 'Stacje 5000-900132G, 5000-900134G, 5000-900133G; ładowarki baterii 5100-900037G, 5100-900042G' },
+    { name: 'Zgodność', value: 'Stacje EA 5000-900132G, 5000-900134G, 5000-900133G; ładowarki baterii EA 5100-900037G, 5100-900042G; stacje HT730 Plus 5000-900089G, 5000-900091G; ładowarki baterii 5100-900040G (HT730 Plus) i 5100-900035G (HT330)' },
     { name: 'Przewód sieciowy', value: 'Sprzedawany osobno (EU: 1550-602333G)' },
   ],
   applications: ['Wymiana zasilacza stacji lub ładowarki baterii'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-przewod-zasilajacy-eu-3pin', 'unitech-ea-stacja-5-slot', 'unitech-ea660-stacja-4-4'],
+  relatedAccessories: ['unitech-przewod-zasilajacy-eu-3pin', 'unitech-ea-stacja-5-slot', 'unitech-ea660-stacja-4-4', 'unitech-ht730-plus-stacja-4-slot', 'unitech-ht330-ladowarka-baterii'],
   downloads: KATALOGI_EA,
-  relatedProducts: TERMINALE_EA,
+  relatedProducts: [...TERMINALE_EA, HT730, HT330],
   createdAt: '2026-10-29',
 }
 
@@ -478,12 +484,12 @@ const przewodZasilajacyEu: Product = {
   slug: 'unitech-przewod-zasilajacy-eu-3pin',
   name: 'Przewód zasilający EU Unitech, wtyk Schuko – złącze C13 (1550-602333G)',
   seoH1: 'Przewód zasilający EU Unitech, wtyk Schuko – złącze C13',
-  shortDescription: 'Przewód Unitech 1550-602333G ze wtykiem Schuko i złączem IEC C13; łączy z gniazdkiem zasilacze stacji 5-gniazdowych, dokującej i ładowarek.',
+  shortDescription: 'Przewód Unitech 1550-602333G ze wtykiem Schuko i złączem IEC C13; łączy z gniazdkiem zasilacze stacji i ładowarek terminali EA, HT730 Plus i HT330.',
   seoTitle: 'Przewód zasilający EU Unitech 1550-602333G, złącze C13',
-  seoDescription: 'Przewód zasilający EU Unitech 1550-602333G z wtykiem Schuko i złączem IEC C13 do stacji i ładowarek terminali mobilnych Unitech EA660, EA530 i EA530 UHF. Przewód sieciowy Unitech EA660. PN: 1550-602333G.',
-  description: `Przewód 1550-602333G ma po jednej stronie europejski wtyk z uziemieniem Schuko, a po drugiej gniazdo IEC C13. Łączy z siecią zasilacz [stacji 5-gniazdowych](/produkt/unitech-ea-stacja-5-slot), [stacji 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4), [ładowarek 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) i [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca). Te urządzenia mają zasilacz w zestawie, a przewodu nie. Przewód jest potrzebny także do [stacji 4-gniazdowej komputera WD200 Plus](/produkt/unitech-wd200-stacja-4-slot), której zasilacz 5 V / 6 A też nie ma przewodu sieciowego.
+  seoDescription: 'Przewód zasilający EU Unitech 1550-602333G z wtykiem Schuko i złączem IEC C13 do stacji i ładowarek terminali mobilnych Unitech EA660, EA530, EA530 UHF, HT730 Plus i HT330 oraz komputera noszonego WD200 Plus. Przewód sieciowy Unitech EA660, przewód do stacji Unitech HT730 Plus i HT330, przewód do stacji Unitech WD200 Plus. PN: 1550-602333G.',
+  description: `Przewód 1550-602333G ma po jednej stronie europejski wtyk z uziemieniem Schuko, a po drugiej gniazdo IEC C13. Łączy z siecią zasilacz [stacji 5-gniazdowych](/produkt/unitech-ea-stacja-5-slot), [stacji 4+4 do EA660](/produkt/unitech-ea660-stacja-4-4), [ładowarek 4 baterii](/produkt/unitech-ea660-ladowarka-baterii) i [stacji dokującej](/produkt/unitech-ea-stacja-dokujaca). Te urządzenia mają zasilacz w zestawie, a przewodu nie. Tak samo jest ze stacjami i ładowarkami baterii [Unitech HT730 Plus](/produkt/unitech-ht730-plus) i [Unitech HT330](/produkt/unitech-ht330), np. [stacją 1-gniazdową HT730 Plus](/produkt/unitech-ht730-plus-stacja-1-slot) i [stacją 1-gniazdową HT330](/produkt/unitech-ht330-stacja-1-slot). Przewód jest potrzebny także do [stacji 4-gniazdowej komputera WD200 Plus](/produkt/unitech-wd200-stacja-4-slot), której zasilacz 5 V / 6 A też nie ma przewodu sieciowego.
 
-Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; ten numer to wersja EU. Przewód [1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) ma złącze C5 i należy do zasilacza czytnika RP300, więc do stacji EA nie pasuje.`,
+Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; ten numer to wersja EU. Przewód [1550-905940G](/produkt/unitech-przewod-sieciowy-eu-c5) ma złącze C5 i należy do zasilaczy czytnika RP300 i tabletów Unitech, więc do stacji EA i HT nie pasuje.`,
   categoryId: 'akcesoria',
   subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
   manufacturerId: 'unitech',
@@ -499,13 +505,13 @@ Przewód występuje w wersjach dla USA, Wielkiej Brytanii i Unii Europejskiej; t
     { name: 'Typ', value: 'Przewód sieciowy, 3 piny' },
     { name: 'Wtyk', value: 'EU, Schuko' },
     { name: 'Złącze', value: 'IEC C13' },
-    { name: 'Zgodność', value: 'Stacje 5000-900132G, 5000-900134G, 5000-900133G, 5000-900142G, 5100-900030G (WD200 Plus); ładowarki baterii 5100-900037G, 5100-900042G' },
+    { name: 'Zgodność', value: 'Stacje EA 5000-900132G, 5000-900134G, 5000-900133G, 5000-900142G; ładowarki baterii EA 5100-900037G, 5100-900042G; stacje HT730 Plus 5000-900139G, 5000-900140G, 5000-900141G, 5000-900089G, 5000-900091G; ładowarki baterii 5100-900040G (HT730 Plus) i 5100-900035G (HT330); stacje HT330 5000-900098G, 5000-900099G; stacja WD200 Plus 5100-900030G' },
   ],
   applications: ['Podłączenie zasilacza stacji lub ładowarki do gniazdka'],
   compatibleAccessories: [],
-  relatedAccessories: ['unitech-ea-stacja-5-slot', 'unitech-ea-stacja-dokujaca', 'unitech-wd200-stacja-4-slot', 'unitech-ea-zasilacz-12v-5a', 'unitech-przewod-sieciowy-eu-c5'],
+  relatedAccessories: ['unitech-ea-stacja-5-slot', 'unitech-ea-stacja-dokujaca', 'unitech-wd200-stacja-4-slot', 'unitech-ea-zasilacz-12v-5a', 'unitech-przewod-sieciowy-eu-c5', 'unitech-ht730-plus-stacja-1-slot', 'unitech-ht330-stacja-1-slot'],
   downloads: KATALOGI_EA,
-  relatedProducts: [...TERMINALE_EA, 'unitech-wd200-plus'],
+  relatedProducts: [...TERMINALE_EA, HT730, HT330, 'unitech-wd200-plus'],
   createdAt: '2026-10-29',
 }
 
