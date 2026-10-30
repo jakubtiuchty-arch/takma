@@ -57,7 +57,7 @@ export const serviceBrands: ServiceBrand[] = [
     logoAlt: 'Unitech — serwis terminali, skanerów i tabletów',
     category: 'mixed',
     pricingVariant: 'devices',
-    heroImage: '/images/serwis-hero/unitech-hero.webp',
+    heroImage: '/images/serwis-hero/unitech-hero-v3.webp',
     shortDesc: 'Terminale EA660, EA530, HT730 Plus, skanery MS852 i tablety RT112',
     products: 'Terminale Unitech EA660, EA530, HT730 Plus i HT330, skanery MS852, MS838 i MS836 oraz tablety RT112 i TB170 Plus',
     heroTitle: 'Serwis Unitech — naprawa terminali, skanerów i tabletów',
