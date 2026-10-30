@@ -1,3 +1,4 @@
+import SatoCl6nxPlusStory from '@/components/product/SatoCl6nxPlusStory'
 import SatoCl4nxPlusStory from '@/components/product/SatoCl4nxPlusStory'
 import SatoCl6SxrStory from '@/components/product/SatoCl6SxrStory'
 import SatoCl4SxrStory from '@/components/product/SatoCl4SxrStory'
@@ -1436,7 +1437,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Do pobrania
                 </a>
               )}
-              {product.slug === 'sato-cl4-sxr' && accessoriesNav}
+              {['sato-cl4-sxr', 'sato-cl6nx-plus'].includes(product.slug) && accessoriesNav}
               {(showLabelsNav || showFoilNav || showRibbonNav || rfidLabelIds.length > 0 || onMetalLabelIds.length > 0) && (
                 <a
                   href={isColorPrinter ? '#tusze' : rfidLabelIds.length > 0 ? '#etykiety-rfid' : onMetalLabelIds.length > 0 ? '#etykiety-rfid-on-metal' : '#etykiety-papierowe'}
@@ -1469,7 +1470,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Oprogramowanie
                 </a>
               )}
-              {product.slug !== 'sato-cl4-sxr' && accessoriesNav}
+              {!['sato-cl4-sxr', 'sato-cl6nx-plus'].includes(product.slug) && accessoriesNav}
               {relatedDispensers.length > 0 && (
                 <a
                   href="#dyspensery"
@@ -1529,8 +1530,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Opis — dla etykiet termicznych bogaty content z thermal-label-series */}
             <section id="opis">
-              {!['sato-cl4nx-plus', 'sato-cl6-sxr', 'sato-cl4-sxr', 'zebra-zebradesigner-professional', 'sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2', 'proglove-mark-3', 'proglove-mark-basic', 'proglove-mark-display', 'proglove-leo', 'proglove-mai', 'proglove-lana', 'bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
+              {!['sato-cl6nx-plus', 'sato-cl4nx-plus', 'sato-cl6-sxr', 'sato-cl4-sxr', 'zebra-zebradesigner-professional', 'sunmi-t3-pro', 'sunmi-t3-pro-max', 'sunmi-d3', 'sunmi-d3-pro', 'sunmi-v3-plus', 'sunmi-v3', 'sunmi-v3h', 'sunmi-m3', 'sunmi-l2s-pro', 'sunmi-l2h', 'sunmi-l2ks', 'sunmi-l3', 'sunmi-nt220', 'sunmi-nt320', 'sunmi-flex-3-kds', 'sunmi-flex-3', 'proglove-mark-2', 'proglove-mark-3', 'proglove-mark-basic', 'proglove-mark-display', 'proglove-leo', 'proglove-mai', 'proglove-lana', 'bartender-starter', 'bartender-professional', 'bartender-automation', 'bartender-enterprise', 'bartender-cloud', 'loftware-cloud-designer', 'loftware-cloud-essentials', 'loftware-cloud-business'].includes(product.slug) && <h2 className="text-2xl font-bold text-gray-900 mb-4">Opis produktu</h2>}
               {(() => {
+                if (product.slug === 'sato-cl6nx-plus') return <SatoCl6nxPlusStory />
                 if (product.slug === 'sato-cl4nx-plus') return <SatoCl4nxPlusStory />
                 if (product.slug === 'sato-cl6-sxr') return <SatoCl6SxrStory />
                 if (product.slug === 'sato-cl4-sxr') return <SatoCl4SxrStory />
@@ -1858,7 +1860,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* FAQ i pliki: przy faq-last renderowane fizycznie na końcu (czytnik ekranu i klawiatura = kolejność wizualna) */}
             {!faqLast && faqAndFilesJsx}
 
-            {product.slug === 'sato-cl4-sxr' && relatedAccessoriesSection}
+            {['sato-cl4-sxr', 'sato-cl6nx-plus'].includes(product.slug) && relatedAccessoriesSection}
 
             {/* Etykiety — dobór wg technologii i szerokości głowicy:
                 a) drukarka DT (termiczna, w tym mobilne) → PrinterCompatibleLabels — etykiety
@@ -2008,7 +2010,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {product.slug !== 'sato-cl4-sxr' && relatedAccessoriesSection}
+            {!['sato-cl4-sxr', 'sato-cl6nx-plus'].includes(product.slug) && relatedAccessoriesSection}
 
             {/* Dyspensery — osobne urządzenia stanowiskowe, nie części drukarki */}
             {relatedDispensers.length > 0 && (

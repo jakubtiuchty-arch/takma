@@ -1,3 +1,4 @@
+import { satoCl6nxPlusRfidProducts, satoCl6nxPlusRfidAccessories } from './sato-cl6nx-plus-rfid-products'
 import { satoCl4nxPlusRfidProducts, satoCl4nxPlusRfidAccessories } from './sato-cl4nx-plus-rfid-products'
 import type { Product } from './products'
 import { satoCl4SxrRfidProducts, satoCl4SxrRfidAccessories } from './sato-cl4-sxr-rfid-products'
@@ -493,4 +494,140 @@ W ofercie są wersje z ręcznym odrywaniem, z gilotyną i z odklejakiem z nawija
   downloads: [{ name: 'Broszura SATO CL4NX Plus (PL)', type: 'datasheet', url: '/datasheets/sato-cl4nx-plus-brochure-pl.pdf', size: 'PDF' }, ...nxReference.downloads.filter(d => d.type === 'manual' && !d.url.includes('inlay'))],
   relatedProducts: ['sato-cl4-sxr', 'sato-cl6-sxr', 'zebra-zt411'],
   sameAs: 'https://www.satoeurope.com/pl/products/industrial-printers.php#cl4nx-plus', createdAt: '2026-10-30',
+})
+
+const nx6Reference = satoCl6nxPlusRfidProducts[0]
+satoIndustrialProducts.push({
+  ...nx6Reference,
+  id: 'sato-cl6nx-plus', slug: 'sato-cl6nx-plus', name: 'SATO CL6NX Plus', seoH1: 'SATO CL6NX Plus',
+  seoTitle: 'SATO CL6NX Plus — przemysłowa drukarka etykiet 6 cali | TAKMA',
+  seoDescription: 'SATO CL6NX Plus: druk etykiet do 167,5 mm, 203 lub 305 dpi, taśma 600 m, AEP i SOS. Sprawdź ceny, stany EU i akcesoria w TAKMA.',
+  shortDescription: '6-calowa drukarka przemysłowa do szerokich etykiet produktów, kartonów i palet. Nadruk do 167,5 mm, 203 lub 305 dpi i taśma do 600 m.',
+  description: 'SATO CL6NX Plus to przemysłowa drukarka termiczna i termotransferowa do szerokich etykiet. Obsługuje nadruk do 167,5 mm. Metalowa obudowa ze składaną pokrywą ułatwia ustawienie urządzenia na ograniczonej przestrzeni. Inteligentna głowica monitoruje zużycie i przebieg, a wałek Pure Line ma wizualny wskaźnik zużycia. Kolorowy ekran LCD wyświetla instrukcje wideo. Platforma AEP umożliwia przygotowanie aplikacji działającej na drukarce. SATO Online Services wspiera zdalny nadzór i planowanie konserwacji.',
+  subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
+  quoteOnly: false, priceFrom: 14794.68, availability: 'available',
+  images: ['/images/products/sato-cl6nx-plus-main.png'],
+  imageDescriptions: ['SATO CL6NX Plus — przemysłowa drukarka szerokich etykiet, widok z przodu pod kątem'],
+  keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni', rozdzielczosc: '203 / 305 dpi', szerokoscDruku: 'Do 167,5 mm', szerokoscEtykiet: '47–177 mm bez podkładu', predkoscDruku: 'Do 254 mm/s przy 203 dpi; 203 mm/s przy 305 dpi' },
+  specifications: [
+    { name: 'Metoda druku', value: 'Termotransferowy i termiczny bezpośredni' },
+    { name: 'Rozdzielczość', value: '203 lub 305 dpi' },
+    { name: 'Szerokość nadruku', value: 'Do 167,5 mm' },
+    { name: 'Prędkość druku', value: 'Do 254 mm/s przy 203 dpi; do 203 mm/s przy 305 dpi' },
+    { name: 'Długość nadruku', value: 'Do 2500 mm przy 203 dpi; 1500 mm przy 305 dpi' },
+    { name: 'Materiał', value: 'Szerokość 47–177 mm bez podkładu, 50–180 mm z podkładem; grubość 0,060–0,268 mm' },
+    { name: 'Rolka materiału', value: 'Średnica do 220 mm, opcjonalne ustawienie do 254 mm; gilza 76 lub 101 mm' },
+    { name: 'Taśma barwiąca', value: 'Do 600 m, przy szerokości 59 mm do 450 m; szerokość 59–177 mm; średnica rolki do 90 mm' },
+    { name: 'Wyświetlacz', value: 'Kolorowy LCD TFT 3,5 cala, 320 × 240 pikseli; obsługa przyciskami' },
+    { name: 'Interfejsy standardowe', value: 'USB 2.0 typu A i B, Ethernet IPv4/IPv6, RS-232C, IEEE 1284, EXT, NFC' },
+    { name: 'Łączność opcjonalna', value: 'Wi-Fi 802.11a/b/g/n/ac 2,4 i 5 GHz, Wi-Fi Direct; Bluetooth 3.0' },
+    { name: 'Emulacje', value: 'SBPL, SZPL, SDPL, SIPL, STCL, SEPL' },
+    { name: 'Pamięć', value: 'CPU1: 2 GB ROM i 256 MB RAM; CPU2: 4 MB ROM i 64 MB RAM' },
+    { name: 'Integracja', value: 'SATO AEP, SOS, SOTI Connect, PDF Direct Printing i App Storage; wymagają odpowiedniej konfiguracji' },
+    { name: 'Warunki pracy', value: '0–40°C; wilgotność 30–80% bez kondensacji' },
+    { name: 'Wymiary', value: '338 × 457 × 321 mm (szer. × gł. × wys.)' },
+    { name: 'Masa', value: '20,3 kg' },
+  ],
+  variants: [
+  {
+    "partNumber": "WWCLPA02NEU",
+    "name": "203 dpi, ręczne odrywanie, przewód EU",
+    "priceFrom": 14794.68,
+    "availability": "available",
+    "attributes": {
+      "Rozdzielczość": "203 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Ręczne odrywanie"
+    }
+  },
+  {
+    "partNumber": "WWCLPB02NEU",
+    "name": "305 dpi, ręczne odrywanie, przewód EU",
+    "priceFrom": 16863.32,
+    "availability": "available",
+    "attributes": {
+      "Rozdzielczość": "305 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Ręczne odrywanie"
+    }
+  },
+  {
+    "partNumber": "WWCLPA12ZNANEU",
+    "name": "203 dpi, gilotyna, przewód EU",
+    "priceFrom": 18324.13,
+    "availability": "available",
+    "attributes": {
+      "Rozdzielczość": "203 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Gilotyna"
+    }
+  },
+  {
+    "partNumber": "WWCLPA02ZWANEU",
+    "name": "203 dpi, ręczne odrywanie, Wi-Fi, przewód EU",
+    "priceFrom": 16207.38,
+    "availability": "available",
+    "attributes": {
+      "Rozdzielczość": "203 dpi",
+      "Łączność": "USB, Ethernet, RS-232C, Wi-Fi",
+      "Obsługa etykiet": "Ręczne odrywanie"
+    }
+  },
+  {
+    "partNumber": "WWCLPA22ZNAREU",
+    "name": "203 dpi, odklejak z nawijakiem podkładu, RTC, przewód EU",
+    "priceFrom": 17383.82,
+    "availability": "unavailable",
+    "attributes": {
+      "Rozdzielczość": "203 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+    }
+  },
+  {
+    "partNumber": "WWCLPB12ZNANEU",
+    "name": "305 dpi, gilotyna, przewód EU",
+    "priceFrom": 20392.77,
+    "availability": "unavailable",
+    "attributes": {
+      "Rozdzielczość": "305 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Gilotyna"
+    }
+  },
+  {
+    "partNumber": "WWCLPB22ZNAREU",
+    "name": "305 dpi, odklejak z nawijakiem podkładu, RTC, przewód EU",
+    "priceFrom": 19452.44,
+    "availability": "unavailable",
+    "attributes": {
+      "Rozdzielczość": "305 dpi",
+      "Łączność": "USB, Ethernet, RS-232C",
+      "Obsługa etykiet": "Odklejak z nawijakiem podkładu"
+    }
+  },
+  {
+    "partNumber": "WWCLPB02ZWANEU",
+    "name": "305 dpi, ręczne odrywanie, Wi-Fi, przewód EU",
+    "priceFrom": 18275.99,
+    "availability": "unavailable",
+    "attributes": {
+      "Rozdzielczość": "305 dpi",
+      "Łączność": "USB, Ethernet, RS-232C, Wi-Fi",
+      "Obsługa etykiet": "Ręczne odrywanie"
+    }
+  }
+],
+  relatedAccessories: satoCl6nxPlusRfidAccessories.map(a => a.id),
+  applications: ['Szerokie etykiety logistyczne', 'Oznaczanie kartonów i palet', 'Etykiety produktów i komponentów', 'Identyfikacja w produkcji i handlu'],
+  faq: [
+    { question: 'Jak szeroki nadruk obsługuje SATO CL6NX Plus?', answer: 'Do 167,5 mm. Szerokość etykiet bez podkładu wynosi 47–177 mm, a materiału z podkładem 50–180 mm. Szerokość nadruku i szerokość materiału to różne parametry.' },
+    { question: 'Czy CL6NX Plus drukuje z taką samą prędkością przy 203 i 305 dpi?', answer: 'Nie. Maksimum przy 203 dpi wynosi 254 mm/s, a przy 305 dpi 203 mm/s. Rzeczywista prędkość zależy od materiału, danych oraz ustawień.' },
+    { question: 'Czy ekran CL6NX Plus jest dotykowy?', answer: 'Nie. Kolorowy LCD 3,5 cala obsługuje się fizycznymi przyciskami. Ekran pokazuje stan urządzenia i filmy instruktażowe.' },
+    { question: 'Czy Wi-Fi i RFID są standardowe?', answer: 'Nie. Wi-Fi i Bluetooth to opcje. Standardowe drukarki pokazane na tej karcie nie mają kodera RFID. Do kodowania UHF służy osobno wyposażona drukarka.' },
+    { question: 'Czy CL6NX Plus może drukować bez komputera?', answer: 'Tak, z aplikacją SATO AEP przygotowaną do konkretnego procesu. Dane mogą pochodzić ze skanera, klawiatury lub wagi. Takie połączenie wymaga konfiguracji i wdrożenia.' },
+  ],
+  downloads: [{ name: 'Broszura SATO CL6NX Plus (PL)', type: 'datasheet', url: '/datasheets/sato-cl6nx-plus-brochure-pl.pdf', size: 'PDF' }, ...nx6Reference.downloads.filter(d => d.type === 'manual' && !d.url.includes('inlay'))],
+  relatedProducts: ['sato-cl4nx-plus', 'sato-cl6-sxr', 'zebra-zt421'],
+  sameAs: 'https://www.satoeurope.com/pl/products/industrial-printers.php#cl6nx-plus', createdAt: '2026-10-30',
 })

@@ -2,10 +2,10 @@ import type { Product } from './products'
 
 const id = 'sato-cl6nx-plus-rfid'
 const parts = [
-  { key: 'head-203', pn: 'R38747500', name: 'Głowica 203 dpi SATO CL6NX Plus', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R38747500 do SATO CL6NX Plus 203 dpi, także z UHF RFID. Dobierz ją do wersji 203 dpi.' },
-  { key: 'head-305', pn: 'R38747600', name: 'Głowica 305 dpi SATO CL6NX Plus', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R38747600 do SATO CL6NX Plus 305 dpi, także z UHF RFID. Dobierz ją do wersji 305 dpi.' },
-  { key: 'platen', pn: 'R38353500', name: 'Wałek dociskowy SATO CL6NX Plus', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R38353500 do SATO CL6NX Plus, także z UHF RFID. Wskaźnik Pure Line pomaga ocenić zużycie powierzchni wałka.' },
-  { key: 'cutter', pn: 'WWCL95100', name: 'Gilotyna SATO CL6NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw gilotyny WWCL95100 do SATO CL6NX Plus. Przy RFID ustaw cięcie między wkładkami. Gilotyna obsługuje materiał o grubości 0,060–0,268 mm. Nie przecinaj wkładek RFID. Przed montażem potwierdź zgodność wybranego materiału.' },
+  { key: 'head-203', pn: 'R38747500', price: 2610.73, stock: 74, name: 'Głowica 203 dpi SATO CL6NX Plus', image: 'head', match: 'Wersja 203 dpi', description: 'Głowica R38747500 do SATO CL6NX Plus 203 dpi, także z UHF RFID. Dobierz ją do wersji 203 dpi.' },
+  { key: 'head-305', pn: 'R38747600', price: 3676.32, stock: 23, name: 'Głowica 305 dpi SATO CL6NX Plus', image: 'head', match: 'Wersja 305 dpi', description: 'Głowica R38747600 do SATO CL6NX Plus 305 dpi, także z UHF RFID. Dobierz ją do wersji 305 dpi.' },
+  { key: 'platen', pn: 'R38353500', price: 330.36, stock: 105, name: 'Wałek dociskowy SATO CL6NX Plus', image: 'platen', match: '203 i 305 dpi', description: 'Wałek dociskowy R38353500 do SATO CL6NX Plus, także z UHF RFID. Wskaźnik Pure Line pomaga ocenić zużycie powierzchni wałka.' },
+  { key: 'cutter', pn: 'WWCL95100', price: 3524.98, stock: 0, name: 'Gilotyna SATO CL6NX Plus', image: 'cutter', match: '203 i 305 dpi; dobór do materiału', description: 'Zestaw gilotyny WWCL95100 do SATO CL6NX Plus. Przy RFID ustaw cięcie między wkładkami. Gilotyna obsługuje materiał o grubości 0,060–0,268 mm. Nie przecinaj wkładek RFID. Przed montażem potwierdź zgodność wybranego materiału.' },
 ]
 
 export const satoCl6nxPlusRfidAccessories: Product[] = parts.map(a => ({
@@ -16,7 +16,7 @@ export const satoCl6nxPlusRfidAccessories: Product[] = parts.map(a => ({
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'sato', tags: ['magazyn', 'logistyka'],
   images: [`/images/products/sato-cl6nx-plus-${a.image}.webp`], imageDescriptions: [`${a.name} — ${a.image === 'head' ? 'widok głowicy z serii CL6NX Plus' : a.pn}`],
   specifications: [{ name: 'Part Number', value: a.pn }, { name: 'Zgodność', value: `SATO CL6NX Plus; ${a.match}` }],
-  applications: [], availability: 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id],
+  priceFrom: a.price, applications: [], availability: a.stock > 0 ? 'available' : 'unavailable', isNew: false, isBestseller: false, compatibleAccessories: [], relatedAccessories: [id, 'sato-cl6nx-plus'],
   downloads: [{ name: 'Katalog części CL6NX Plus (EN)', type: 'manual', url: '/downloads/sato-cl6nx-plus-czesci-en.pdf', size: 'PDF' }], createdAt: '2026-10-16',
 }))
 
