@@ -52,6 +52,7 @@ export type ServiceBrand = {
 export const serviceBrands: ServiceBrand[] = [
   {
     slug: 'bluebird',
+    heroImage: '/images/serwis-hero/bluebird-hero.webp',
     relatedHeading: 'Terminale i czytniki Bluebird w ofercie TAKMA',
     relatedDescription: 'Sprawdź modele urządzeń i zgodne wyposażenie przed zgłoszeniem naprawy.',
     issuesIntro: 'Najczęstsze objawy wymagające diagnostyki terminala. Zakres i koszt naprawy potwierdzamy przed jej rozpoczęciem.',
