@@ -2,3 +2,24 @@
 .story .hero{background-image:linear-gradient(90deg,#eef2f5b3,transparent 70%),url('/images/sato-cl4-sxr/silver-bg.webp')}.story .heroCopy>p:not(.eyebrow):not(.model){color:#3b4652}.story .heroCopy .eyebrow{color:#006b9f}.machinePair img,.maintenance .photo img{mix-blend-mode:multiply}.story .heroCopy .arrow{border-bottom-color:#798895}
 @media(max-width:600px){.story .hero h2{font-size:34px}.story .heroProduct{height:310px}}
 .displayPhoto{background:#e3e8ed}.displayPhoto .photo img{mix-blend-mode:multiply}.displayPhoto>span{color:#007eae}.displayPhoto small{color:#526270}
+
+/* Readable typography: no compressed tracking or synthetic intermediate weights. */
+.story{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.75}
+.story h2,.story h3,.story strong,.story .model{letter-spacing:normal}
+.story h2{font-size:clamp(30px,3.7vw,48px);font-weight:700;line-height:1.24}
+.story .hero h2{font-size:clamp(32px,4vw,52px);line-height:1.24}
+.story h3{font-weight:700;line-height:1.4}
+.story p{line-height:1.75}
+.story .model{font-size:clamp(44px,5.5vw,72px);line-height:1.2;font-weight:400}
+.story small{font-size:13px;line-height:1.7}
+.story .eyebrow{font-weight:700;letter-spacing:.08em;line-height:1.6}
+.story .details h3,.story .displayFeatures h3{font-size:20px;line-height:1.4}
+.story .details p,.story .displayFeatures p{font-size:15px;line-height:1.75}
+.story .details p{color:#4c5866}.story .displayFeatures p{color:#d1d8e2}
+.story .title>p:last-child:not(.eyebrow),.story .speedCopy>p:not(.blue),.story .careGrid p,.story .maintenance p:last-child,.story .final>p:not(.eyebrow){color:#4d5966;font-size:16px;line-height:1.75}
+.story .speedCopy>strong,.story .precision strong,.story .ecoFact strong{letter-spacing:normal;line-height:1.15}
+.story .speedCopy>strong span{letter-spacing:normal}
+.story .displayCopy h2{font-size:clamp(30px,3.4vw,44px);line-height:1.24}
+.story .maintenance h3{font-size:30px;line-height:1.35}
+.story .eco h2{font-size:46px;line-height:1.24}
+@media(max-width:600px){.story h2,.story .hero h2,.story .displayCopy h2,.story .eco h2{font-size:30px;line-height:1.3}.story h3,.story .details h3,.story .displayFeatures h3{font-size:19px;line-height:1.4}.story .maintenance h3{font-size:26px}.story .details{grid-template-columns:1fr}.story .details p,.story .displayFeatures p{font-size:15px}.story .eyebrow{font-size:11px}.story .heroCopy>p:not(.eyebrow):not(.model){font-size:16px}}
