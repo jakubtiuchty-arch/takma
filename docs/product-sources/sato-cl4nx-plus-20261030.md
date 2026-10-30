@@ -19,3 +19,5 @@
 - Fotografia główna: istniejący ostry asset CL4NX Plus 1254 px bez znaczka RFID.
 - Duże obrazy z oryginalnego PDF wyodrębnione bezpośrednio: xref 609 (2489×2661, zastosowania), 122 (1015×1446, otwarty mechanizm). Nie są to powiększone wycinki strony PDF.
 - Dedykowana opowieść w kolorach SATO. Inter, wagi 400/600/700, normalny tracking, nagłówki 1,25–1,5 i tekst 1,8. Specyfikacja, PN i akcesoria w standardowych oddzielnych sekcjach.
+
+- Dopasowanie skali zdjęcia głównego: built-in image_gen, referencja istniejące sato-cl4nx-plus-rfid.webp. Prompt: zachowaj konstrukcję 1:1, perspektywę, oznaczenia i wydruk; tło przezroczyste, bez cienia, pełny obiekt w kwadratowym kadrze około 82% wysokości. Wynik `sato-cl4nx-plus-main.png`, alpha zachowana; źródłowe zdjęcie RFID i zdjęcie w opisie bez zmian.

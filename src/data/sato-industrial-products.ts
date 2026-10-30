@@ -237,6 +237,7 @@ const nxReference = satoCl4nxPlusRfidProducts[0]
 satoIndustrialProducts.push({
   ...nxReference,
   id: 'sato-cl4nx-plus', slug: 'sato-cl4nx-plus', name: 'SATO CL4NX Plus', seoH1: 'SATO CL4NX Plus',
+  images: ['/images/products/sato-cl4nx-plus-main.png'],
   imageDescriptions: ['SATO CL4NX Plus — przemysłowa drukarka etykiet, widok z przodu pod kątem'],
   seoTitle: 'SATO CL4NX Plus — drukarka etykiet 203, 305 i 609 dpi | TAKMA',
   seoDescription: 'SATO CL4NX Plus: przemysłowa drukarka etykiet 104 mm, do 355 mm/s, taśma 600 m i platforma AEP. Sprawdź ceny, dostępność i akcesoria w TAKMA.',
