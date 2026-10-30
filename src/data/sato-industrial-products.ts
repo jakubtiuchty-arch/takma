@@ -501,9 +501,29 @@ satoIndustrialProducts.push({
   ...nx6Reference,
   id: 'sato-cl6nx-plus', slug: 'sato-cl6nx-plus', name: 'SATO CL6NX Plus', seoH1: 'SATO CL6NX Plus',
   seoTitle: 'SATO CL6NX Plus — przemysłowa drukarka etykiet 6 cali | TAKMA',
-  seoDescription: 'SATO CL6NX Plus: druk etykiet do 167,5 mm, 203 lub 305 dpi, taśma 600 m, AEP i SOS. Sprawdź ceny, stany EU i akcesoria w TAKMA.',
+  seoDescription: 'SATO CL6NX Plus: przemysłowa drukarka etykiet 6 cali, nadruk do 167,5 mm, 203 lub 305 dpi, do 254 mm/s, taśma 600 m i emulacja ZPL.',
   shortDescription: '6-calowa drukarka przemysłowa do szerokich etykiet produktów, kartonów i palet. Nadruk do 167,5 mm, 203 lub 305 dpi i taśma do 600 m.',
-  description: 'SATO CL6NX Plus to przemysłowa drukarka termiczna i termotransferowa do szerokich etykiet. Obsługuje nadruk do 167,5 mm. Metalowa obudowa ze składaną pokrywą ułatwia ustawienie urządzenia na ograniczonej przestrzeni. Inteligentna głowica monitoruje zużycie i przebieg, a wałek Pure Line ma wizualny wskaźnik zużycia. Kolorowy ekran LCD wyświetla instrukcje wideo. Platforma AEP umożliwia przygotowanie aplikacji działającej na drukarce. SATO Online Services wspiera zdalny nadzór i planowanie konserwacji.',
+  description: `SATO CL6NX Plus to przemysłowa drukarka termiczna i termotransferowa do szerokich etykiet na produkty, kartony i palety. Drukuje na szerokości do 167,5 mm w rozdzielczości 203 lub 305 dpi. Ma metalową obudowę ze składaną pokrywą.
+
+## Prędkość do 254 mm/s i tryb Micro Label
+
+Wersja 203 dpi drukuje z prędkością 51–254 mm/s, czyli 2–10 cali/s. Wersja 305 dpi drukuje z prędkością 51–203 mm/s, czyli 2–8 cali/s. Najdłuższy wydruk ma 2500 mm przy 203 dpi i 1500 mm przy 305 dpi. Tryb Micro Label pomaga utrzymać położenie nadruku na małych etykietach.
+
+## Etykiety 47–177 mm i taśma do 600 m
+
+Etykieta bez podkładu może mieć 47–177 mm szerokości i 0,060–0,268 mm grubości. Rolka ma do 220 mm średnicy, a po zmianie ustawienia do 254 mm, na gilzie 76 lub 101 mm. Taśma barwiąca ma 59–177 mm szerokości i do 600 m długości. Taśma o szerokości 59 mm może mieć najwyżej 450 m. Nawój etykiet do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień.
+
+## Łączność i emulacja ZPL
+
+W standardzie drukarka ma USB 2.0 typu A i B, Ethernet, RS-232C, port równoległy IEEE 1284, port EXT i NFC. Wi-Fi 802.11a/b/g/n/ac w pasmach 2,4 i 5 GHz oraz Bluetooth 3.0 są opcją. Własnym językiem drukarki jest SBPL. Drukarka automatycznie rozpoznaje też emulacje SZPL, SDPL, SIPL, STCL i SEPL. SZPL to emulacja języka ZPL drukarek Zebra. Funkcja PDF Direct Printing drukuje pliki PDF bez sterownika.
+
+## Obsługa i konserwacja
+
+Kolorowy wyświetlacz LCD 3,5 cala obsługuje się przyciskami. Pokazuje stan drukarki, komunikaty w 31 językach i 18 filmów instruktażowych. Głowicę i wałek dociskowy można wymienić bez narzędzi. Biała linia na wałku pokazuje zużycie jego powierzchni, a głowica zapisuje dane o swoim przebiegu. Platforma AEP uruchamia aplikacje bezpośrednio na drukarce. SATO Online Services (SOS) i SOTI Connect pomagają nadzorować drukarki zdalnie.
+
+## Wyposażenie dodatkowe
+
+W ofercie są wersje z ręcznym odrywaniem, z gilotyną i z odklejakiem z nawijakiem podkładu, a także z Wi-Fi. Producent oferuje też zegar RTC, czytnik kodów kreskowych i moduł RFID UHF.`,
   subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   quoteOnly: false, priceFrom: 14794.68, availability: 'available',
   images: ['/images/products/sato-cl6nx-plus-main.png'],
@@ -527,6 +547,10 @@ satoIndustrialProducts.push({
     { name: 'Warunki pracy', value: '0–40°C; wilgotność 30–80% bez kondensacji' },
     { name: 'Wymiary', value: '338 × 457 × 321 mm (szer. × gł. × wys.)' },
     { name: 'Masa', value: '20,3 kg' },
+    { name: 'Procesor', value: '2 × 800 MHz: Linux i ITRON' },
+    { name: 'Czujniki', value: 'Czujnik znacznika I-mark (odbiciowy) i czujnik przerwy (prześwitowy); kontrola głowicy, czujniki końca papieru, końca taśmy i podniesienia głowicy' },
+    { name: 'Opcje', value: 'Gilotyna, odklejak z wbudowanym nawijakiem podkładu, zegar RTC, moduł Wi-Fi i Bluetooth, czytnik kodów kreskowych, moduł RFID UHF' },
+    { name: 'Funkcje', value: '18 filmów instruktażowych i komunikaty w 31 językach na wyświetlaczu, tryb Micro Label, PDF Direct Printing, dioda LED stanu, kopiowanie danych przez pamięć USB' },
   ],
   variants: [
   {
@@ -621,11 +645,18 @@ satoIndustrialProducts.push({
   relatedAccessories: satoCl6nxPlusRfidAccessories.map(a => a.id),
   applications: ['Szerokie etykiety logistyczne', 'Oznaczanie kartonów i palet', 'Etykiety produktów i komponentów', 'Identyfikacja w produkcji i handlu'],
   faq: [
-    { question: 'Jak szeroki nadruk obsługuje SATO CL6NX Plus?', answer: 'Do 167,5 mm. Szerokość etykiet bez podkładu wynosi 47–177 mm, a materiału z podkładem 50–180 mm. Szerokość nadruku i szerokość materiału to różne parametry.' },
-    { question: 'Czy CL6NX Plus drukuje z taką samą prędkością przy 203 i 305 dpi?', answer: 'Nie. Maksimum przy 203 dpi wynosi 254 mm/s, a przy 305 dpi 203 mm/s. Rzeczywista prędkość zależy od materiału, danych oraz ustawień.' },
-    { question: 'Czy ekran CL6NX Plus jest dotykowy?', answer: 'Nie. Kolorowy LCD 3,5 cala obsługuje się fizycznymi przyciskami. Ekran pokazuje stan urządzenia i filmy instruktażowe.' },
-    { question: 'Czy Wi-Fi i RFID są standardowe?', answer: 'Nie. Wi-Fi i Bluetooth to opcje. Standardowe drukarki pokazane na tej karcie nie mają kodera RFID. Do kodowania UHF służy osobno wyposażona drukarka.' },
+    { question: 'Jak szeroki nadruk obsługuje SATO CL6NX Plus?', answer: 'Do 167,5 mm w obu rozdzielczościach. Etykieta bez podkładu może mieć 47–177 mm szerokości. Szerokość nadruku i szerokość materiału to różne parametry.' },
+    { question: 'Jaka jest maksymalna prędkość druku CL6NX Plus?', answer: 'Do 254 mm/s, czyli 10 cali/s, przy 203 dpi i do 203 mm/s, czyli 8 cali/s, przy 305 dpi. Ustawienie domyślne to 152 mm/s. Rzeczywista prędkość zależy od materiału, danych na etykiecie i ustawień.' },
+    { question: 'Czy CL6NX Plus drukuje etykiety logistyczne A6 i A5?', answer: 'Tak. Etykiety A6 (105 × 148 mm) i A5 (148 × 210 mm), stosowane jako etykiety logistyczne GS1 na kartony i palety, mieszczą się w szerokości nadruku 167,5 mm. Na drukarce 4-calowej, takiej jak [SATO CL4NX Plus](/produkt/sato-cl4nx-plus), etykieta A5 się nie zmieści.' },
+    { question: 'Czy CL6NX Plus drukuje etykiety przygotowane w języku ZPL?', answer: 'Tak. Oprócz własnego języka SBPL drukarka automatycznie rozpoznaje emulację SZPL, zgodną z językiem ZPL drukarek Zebra, oraz emulacje SDPL, SIPL, STCL i SEPL. Przed wymianą drukarki na linii należy wydrukować próbne etykiety z obecnego systemu.' },
+    { question: 'Jakie etykiety pasują do SATO CL6NX Plus?', answer: 'Etykiety o szerokości 47–177 mm bez podkładu i grubości 0,060–0,268 mm, w rolce o średnicy do 220 mm, a po zmianie ustawienia do 254 mm, na gilzie 76 lub 101 mm. Drukarka przyjmuje też składankę. Etykiety węższe niż 47 mm i rolki na gilzie 25 mm do niej nie pasują.' },
+    { question: 'Jaka taśma barwiąca pasuje do CL6NX Plus?', answer: 'Taśma o szerokości 59–177 mm i długości do 600 m. Taśma o szerokości 59 mm może mieć najwyżej 450 m. Taśma powinna być nieco szersza od etykiety, aby chronić głowicę.' },
+    { question: 'Czy CL6NX Plus ma gilotynę lub odklejak?', answer: 'Tak, w wybranych wariantach. W ofercie są wersje z ręcznym odrywaniem, z gilotyną i z odklejakiem z nawijakiem podkładu.' },
+    { question: 'Czy ekran CL6NX Plus jest dotykowy?', answer: 'Nie. Kolorowy wyświetlacz LCD 3,5 cala obsługuje się przyciskami. Ekran pokazuje stan urządzenia, komunikaty w 31 językach i 18 filmów instruktażowych.' },
+    { question: 'Czy Wi-Fi i RFID są standardowe?', answer: 'Nie. W ofercie są warianty z Wi-Fi. Moduł RFID UHF jest opcją. Do kodowania etykiet UHF służy [SATO CL6NX Plus RFID](/produkt/sato-cl6nx-plus-rfid).' },
     { question: 'Czy CL6NX Plus może drukować bez komputera?', answer: 'Tak, z aplikacją SATO AEP przygotowaną do konkretnego procesu. Dane mogą pochodzić ze skanera, klawiatury lub wagi. Takie połączenie wymaga konfiguracji i wdrożenia.' },
+    { question: 'Czym CL6NX Plus różni się od CL6-SXR?', answer: '[CL6-SXR](/produkt/sato-cl6-sxr) to nowszy model. Drukuje do 355,6 mm/s w obu rozdzielczościach i ma kolorowy ekran dotykowy 4,3 cala zamiast wyświetlacza LCD 3,5 cala obsługiwanego przyciskami. CL6NX Plus ma za to port równoległy IEEE 1284, NFC i opcję rolki do 254 mm. Obie drukarki drukują na szerokości do 167,5 mm i przyjmują etykiety 47–177 mm.' },
+    { question: 'Czym SATO CL6NX Plus różni się od Zebra ZT421?', answer: 'Obie drukarki drukują szerokie etykiety. [Zebra ZT421](/produkt/zebra-zt421) drukuje do 305 mm/s i ma kolorowy ekran dotykowy 4,3 cala. CL6NX Plus drukuje do 254 mm/s przy 203 dpi i ma wyświetlacz LCD 3,5 cala z przyciskami. CL6NX Plus przyjmuje większą rolkę (220 mm, po zmianie ustawienia 254 mm, zamiast 203 mm) i dłuższą taśmę (600 m zamiast 450 m). ZT421 używa języka ZPL bezpośrednio, a CL6NX Plus przez emulację SZPL.' },
   ],
   downloads: [{ name: 'Broszura SATO CL6NX Plus (PL)', type: 'datasheet', url: '/datasheets/sato-cl6nx-plus-brochure-pl.pdf', size: 'PDF' }, ...nx6Reference.downloads.filter(d => d.type === 'manual' && !d.url.includes('inlay'))],
   relatedProducts: ['sato-cl4nx-plus', 'sato-cl6-sxr', 'zebra-zt421'],
