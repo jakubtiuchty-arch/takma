@@ -996,6 +996,25 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     </>
   )
 
+  const accessoriesNav = (relatedAccessories.length > 0 && !isColorPrinter && (
+                <a
+                  href="#akcesoria"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
+                </a>
+              ))
+
+  const relatedAccessoriesSection = (relatedAccessories.length > 0 && !isColorPrinter && (
+              <RelatedProducts
+                id="akcesoria"
+                title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
+                products={(product.id === 'zebra-ws501-r' || product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.some(id => id === 'uchwyty-rfid' || id === 'czytniki-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true, uniformImageFraction: (product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.some(id => id === 'uchwyty-rfid' || id === 'czytniki-rfid')) ? 0.66 : undefined })) : relatedAccessories as typeof products}
+                initialLimit={4}
+                showDualButtons
+              />
+            ))
+
   return (
     <SmartPriceProvider key={product.slug} product={product} initialStock={initialStock}>
       <ViewItemTracker
@@ -1410,6 +1429,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Do pobrania
                 </a>
               )}
+              {product.slug === 'sato-cl4-sxr' && accessoriesNav}
               {(showLabelsNav || showFoilNav || showRibbonNav || rfidLabelIds.length > 0 || onMetalLabelIds.length > 0) && (
                 <a
                   href={isColorPrinter ? '#tusze' : rfidLabelIds.length > 0 ? '#etykiety-rfid' : onMetalLabelIds.length > 0 ? '#etykiety-rfid-on-metal' : '#etykiety-papierowe'}
@@ -1442,14 +1462,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   Oprogramowanie
                 </a>
               )}
-              {relatedAccessories.length > 0 && !isColorPrinter && (
-                <a
-                  href="#akcesoria"
-                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
-                >
-                  {isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                </a>
-              )}
+              {product.slug !== 'sato-cl4-sxr' && accessoriesNav}
               {relatedDispensers.length > 0 && (
                 <a
                   href="#dyspensery"
@@ -1838,6 +1851,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* FAQ i pliki: przy faq-last renderowane fizycznie na końcu (czytnik ekranu i klawiatura = kolejność wizualna) */}
             {!faqLast && faqAndFilesJsx}
 
+            {product.slug === 'sato-cl4-sxr' && relatedAccessoriesSection}
+
             {/* Etykiety — dobór wg technologii i szerokości głowicy:
                 a) drukarka DT (termiczna, w tym mobilne) → PrinterCompatibleLabels — etykiety
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
@@ -1983,16 +1998,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               />
             )}
 
-            {/* Akcesoria / Powiązane produkty */}
-            {relatedAccessories.length > 0 && !isColorPrinter && (
-              <RelatedProducts
-                id="akcesoria"
-                title={isDevice ? 'Akcesoria' : 'Powiązane produkty'}
-                products={(product.id === 'zebra-ws501-r' || product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.some(id => id === 'uchwyty-rfid' || id === 'czytniki-rfid')) ? (relatedAccessories as typeof products).map(item => ({ ...item, uniformImage: true, uniformImageFraction: (product.id === 'newland-mt93-megattera-pro-uhf' || product.subcategoryIds?.some(id => id === 'uchwyty-rfid' || id === 'czytniki-rfid')) ? 0.66 : undefined })) : relatedAccessories as typeof products}
-                initialLimit={4}
-                showDualButtons
-              />
-            )}
+            {product.slug !== 'sato-cl4-sxr' && relatedAccessoriesSection}
 
             {/* Dyspensery — osobne urządzenia stanowiskowe, nie części drukarki */}
             {relatedDispensers.length > 0 && (
