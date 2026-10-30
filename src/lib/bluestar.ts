@@ -312,19 +312,29 @@ async function zapytajOdpornie(partNumbers: string[]): Promise<BlueStarPriceItem
 // GŁÓWNA FUNKCJA — SPRAWDZANIE STANÓW
 // ============================================
 
+function numerDlaBlueStar(pn: string): boolean {
+  const s = pn.trim()
+  return s.length > 0 && s.length <= 50 && !s.includes(',') && !s.includes('"')
+}
+
 export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockInfo[]> {
   const now = new Date().toISOString()
 
-  // Sprawdź cache
+  // Sprawdź cache. Numerów, których BlueStar nie przyjmie (lista po przecinku,
+  // cudzysłów, ponad 50 znaków), nie wysyłamy — odrzuciłyby całą paczkę i
+  // wymusiły zapytania o każdy numer osobno.
   const uncached: string[] = []
   for (const pn of partNumbers) {
-    if (!getCached(pn)) {
-      uncached.push(pn)
+    if (getCached(pn)) continue
+    if (!numerDlaBlueStar(pn)) {
+      setCached(pn, makeEmptyResult(pn, now))
+      continue
     }
+    uncached.push(pn)
   }
 
   if (uncached.length === 0) {
-    return partNumbers.map(pn => getCached(pn)!)
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
   }
 
   // Error cooldown

@@ -10,6 +10,7 @@ import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
 import { selectPurchasePrice, resolveBlueStarUnitPrice } from '@/lib/price-selection'
 import { wykryjAnomalie, zapiszIZglosAnomalie, type Anomalia } from '@/lib/price-watchdog'
+import { rozbijNumeryKatalogowe } from '@/lib/part-number-list'
 
 export const maxDuration = 300 // 5 minutes
 
@@ -49,6 +50,10 @@ async function getEurPlnRate(): Promise<number> {
  * Jarltech miał i cenę, i stan (US300D-T2CWRE-HF: 898,81 EUR, 50 szt.).
  * M3 sprzedaje wyłącznie przez Jarltech, więc cena zawsze pochodzi stamtąd —
  * selectPurchasePrice i tak wybierze jedyne dostępne źródło.
+ *
+ * Wartości pól rozbijamy na pojedyncze numery (lib/part-number-list) — lista
+ * wariantów w jednym polu nigdy nie dostawała ceny i co przebieg zajmowała
+ * początek kolejki.
  */
 function collectAllPartNumbers(): string[] {
   const pnSet = new Set<string>()
@@ -57,20 +62,20 @@ function collectAllPartNumbers(): string[] {
     // From variants
     if (product.variants) {
       for (const v of product.variants) {
-        pnSet.add(v.partNumber)
+        for (const pn of rozbijNumeryKatalogowe(v.partNumber)) pnSet.add(pn)
       }
     }
 
     // From specifications (accessories with Part Number)
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-    if (pnSpec) {
-      pnSet.add(pnSpec.value)
+    for (const pn of rozbijNumeryKatalogowe(pnSpec?.value)) {
+      pnSet.add(pn)
     }
 
     // From service plans
     if (product.servicePlans) {
       for (const sp of product.servicePlans) {
-        pnSet.add(sp.partNumber)
+        for (const pn of rozbijNumeryKatalogowe(sp.partNumber)) pnSet.add(pn)
       }
     }
   }
@@ -89,19 +94,28 @@ export async function GET(request: NextRequest) {
 
   // Kolejność ma znaczenie: pełna pula nie mieści się w maxDuration, a sync szedł
   // zawsze w kolejności products.ts — ogon listy (m.in. M3) nigdy nie dostawał ceny.
-  // Najpierw numery bez ceny w StockCache, potem od najdawniej odświeżanych.
+  // Poziomy: 0 — numery bez wpisu w StockCache, 1 — bez ceny i nieodświeżane od
+  // doby, 2 — pozostałe; w obrębie poziomu od najdawniej odświeżanych. Numer bez
+  // ceny sprawdzony niedawno trafia do zwykłej rotacji — wcześniej numery, których
+  // nie prowadzi żaden dystrybutor, otwierały każdy przebieg i blokowały resztę.
   const stanCache = new Map(
     (await prisma.stockCache.findMany({ select: { partNumber: true, price: true, lastSync: true } }))
       .map((r) => [r.partNumber, r]),
   )
+  const DOBA_MS = 24 * 60 * 60 * 1000
+  const poziom = (r: { price: number | null; lastSync: Date } | undefined) => {
+    if (!r) return 0
+    if (r.price == null && startTime - r.lastSync.getTime() > DOBA_MS) return 1
+    return 2
+  }
   // Terminale mają osobny pełny synchronizator z aktualnymi ofertami wszystkich źródeł.
   // Ten przebieg nie może zastąpić ich ceną z wielodniowego cache Jarltech.
   const allPNs = [...wszystkiePNs].filter(pn => !zebraTerminalPartNumbers.has(pn)).sort((a, b) => {
     const ra = stanCache.get(a)
     const rb = stanCache.get(b)
-    const bezCenyA = !ra || ra.price == null ? 0 : 1
-    const bezCenyB = !rb || rb.price == null ? 0 : 1
-    if (bezCenyA !== bezCenyB) return bezCenyA - bezCenyB
+    const poziomA = poziom(ra)
+    const poziomB = poziom(rb)
+    if (poziomA !== poziomB) return poziomA - poziomB
     return (ra?.lastSync?.getTime() ?? 0) - (rb?.lastSync?.getTime() ?? 0)
   })
 

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { lookupStock } from '@/lib/jarltech'
 import { products } from '@/data/products'
+import { rozbijNumeryKatalogowe } from '@/lib/part-number-list'
 
 export const maxDuration = 300 // 5 minutes — now syncs ALL products, not just M3
 
@@ -13,24 +14,23 @@ export async function GET(request: NextRequest) {
   }
 
   // Collect ALL PNs from ALL products (Jarltech carries Zebra, Honeywell, Newland, M3 etc.)
+  // Pola bywają listą numerów lub numerem z dopiskiem — rozbijamy je (lib/part-number-list).
   const allPNs: string[] = []
 
   for (const product of products) {
     // From variants
     if (product.variants) {
       for (const v of product.variants) {
-        allPNs.push(v.partNumber)
+        allPNs.push(...rozbijNumeryKatalogowe(v.partNumber))
       }
     }
     // From specifications (accessories with Part Number)
     const pnSpec = product.specifications.find(s => s.name === 'Part Number')
-    if (pnSpec && !allPNs.includes(pnSpec.value)) {
-      allPNs.push(pnSpec.value)
-    }
+    allPNs.push(...rozbijNumeryKatalogowe(pnSpec?.value))
     // From service plans
     if (product.servicePlans) {
       for (const sp of product.servicePlans) {
-        allPNs.push(sp.partNumber)
+        allPNs.push(...rozbijNumeryKatalogowe(sp.partNumber))
       }
     }
   }
