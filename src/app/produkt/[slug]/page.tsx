@@ -69,6 +69,7 @@ import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
 import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariants'
+import { printerMinLabelCoreMm } from '@/lib/printer-label-core'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
@@ -402,6 +403,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const printerLabelCore: string[] | undefined = product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
     ? ['12', '19', '25']
     : undefined
+  // Wyjątek od „przemysłowe mieszczą każdą gilzę”: gdy karta drukarki podaje tylko gilzy od 76 mm
+  // (np. SATO CL4-SXR: 76 lub 101 mm), rolki na gilzie 25 mm do niej nie pasują.
+  const printerMinCore = printerLabelCore ? undefined : printerMinLabelCoreMm(product.specifications)
+  const printerMinLabelCore = printerMinCore !== undefined && printerMinCore >= 76 ? printerMinCore : undefined
   // Szerokość druku (głowicy) w mm — szukamy w wielu polach, bo część drukarek ma to
   // tylko w keyParams.szerokoscDruku, a nie w specifications (np. Honeywell PD45/PM45).
   const printWidthMm = (() => {
@@ -1875,10 +1880,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Jedna karta z wersjami termiczną i termotransferową (np. Zebra ZD611-HC): sekcja TT niżej
                 pokazuje tylko etykiety termotransferowe, więc etykiety termiczne dokładamy osobno. */}
             {isLabelPrinter && isTTprinter && !isColorPrinter && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
-              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} />
+              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} />
             )}
             {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
-              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} />
+              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
               <PrinterMaterialVariants
                 id="etykiety-papierowe"
@@ -1888,6 +1893,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printerSlug={product.slug}
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
+                minLabelCoreMm={printerMinLabelCore}
               />
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
@@ -1911,6 +1917,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printerSlug={product.slug}
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
+                minLabelCoreMm={printerMinLabelCore}
               />
             ) : compatibleFoilLabels.length > 0 ? (
               <RelatedProducts

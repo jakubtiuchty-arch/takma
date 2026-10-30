@@ -10,6 +10,7 @@ import { useCartStore } from '@/store/cartStore'
 import { Badge } from '@/components/ui'
 import { ArrowRightIcon, PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
+import { labelVariantCoreMm } from '@/lib/printer-label-core'
 
 /**
  * Domyślne 8 najpopularniejszych wariantów etykiet (Z-Perform 1000D bestseller) — wszystkie
@@ -238,10 +239,13 @@ function labelWidthMm(rozmiar?: string): number | null {
 export default function PrinterCompatibleLabels({
   printerSlug,
   printWidthMm,
+  minLabelCoreMm,
   sectionId = 'etykiety-papierowe',
 }: {
   printerSlug?: string
   printWidthMm?: number
+  /** Najmniejsza gilza (mm) z karty drukarki przemysłowej — rolki o mniejszej gilzie odpadają */
+  minLabelCoreMm?: number
   /** Inna kotwica, gdy na karcie jest też sekcja etykiet termotransferowych (drukarka w wersjach DT i TT) */
   sectionId?: string
 }) {
@@ -253,9 +257,10 @@ export default function PrinterCompatibleLabels({
     const w = labelWidthMm(rozmiar)
     return w == null || w <= printWidthMm + 2
   }
+  const coreFits = (v: ProductVariant) => !minLabelCoreMm || (labelVariantCoreMm(v) ?? minLabelCoreMm) >= minLabelCoreMm
   let candidates = bestsellers
     .map(getVariantData)
-    .filter((v): v is VariantData => v !== null && fits(v.variant.attributes['Rozmiar']))
+    .filter((v): v is VariantData => v !== null && fits(v.variant.attributes['Rozmiar']) && coreFits(v.variant))
 
   // Zawsze powiększamy pulę z Z-Perform 1000D — po sprawdzeniu stanu pokażemy tylko
   // DOSTĘPNE, więc potrzeba więcej kandydatów (mieszczących się w głowicy).
@@ -265,7 +270,7 @@ export default function PrinterCompatibleLabels({
     const seen = new Set(candidates.map(v => v.variant.partNumber))
     const extra = (zp?.variants ?? [])
       .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
-      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && !seen.has(x.v.partNumber))
+      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && coreFits(x.v) && !seen.has(x.v.partNumber))
       .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
       .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
     candidates = [...candidates, ...extra].slice(0, 16)

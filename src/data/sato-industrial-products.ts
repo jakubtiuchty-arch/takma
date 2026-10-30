@@ -10,12 +10,32 @@ export const satoIndustrialProducts: Product[] = [{
   ...reference,
   id: 'sato-cl4-sxr', slug: 'sato-cl4-sxr', name: 'SATO CL4-SXR', seoH1: 'SATO CL4-SXR',
   seoTitle: 'SATO CL4-SXR — przemysłowa drukarka etykiet 104 mm | TAKMA',
-  seoDescription: 'SATO CL4-SXR: druk do 457,2 mm/s, 203, 305 lub 609 dpi, ekran 4,3 cala i taśma 600 m. Przemysłowa drukarka etykiet. Dobór konfiguracji w TAKMA.',
+  seoDescription: 'SATO CL4-SXR: przemysłowa drukarka etykiet 104 mm, do 457,2 mm/s, 203, 305 lub 609 dpi, ekran dotykowy 4,3 cala, taśma 600 m i emulacja ZPL.',
   shortDescription: 'Przemysłowa drukarka etykiet do produkcji i logistyki. Nadruk do 104 mm, prędkość do 457,2 mm/s, ekran dotykowy 4,3 cala i taśma barwiąca do 600 m.',
-  description: 'SATO CL4-SXR to przemysłowa drukarka termiczna i termotransferowa do etykiet produktów, opakowań i przesyłek. Drukuje na szerokości do 104 mm. Aluminiowa konstrukcja, ekran dotykowy i dostęp do mechanizmu ułatwiają codzienną obsługę. Maksymalna prędkość zależy od rozdzielczości: 457,2 mm/s przy 203 dpi, 406,4 mm/s przy 305 dpi i 152,4 mm/s przy 609 dpi. Tryb wysokiej precyzji zapewnia dokładność pozycjonowania do ±0,3 mm w warunkach określonych przez producenta. SATO AEP pozwala uruchamiać aplikacje bezpośrednio na drukarce. SOS wspiera zdalny nadzór oraz planowanie konserwacji.',
+  description: `SATO CL4-SXR to przemysłowa drukarka termiczna i termotransferowa do etykiet produktów, opakowań i przesyłek. Drukuje na szerokości do 104 mm w rozdzielczości 203, 305 lub 609 dpi. Ma aluminiową konstrukcję i kolorowy ekran dotykowy 4,3 cala.
+
+## Prędkość do 457,2 mm/s i dokładność ±0,3 mm
+
+Wersja 203 dpi drukuje z prędkością 50,8–457,2 mm/s, czyli 2–18 cali/s. Wersja 305 dpi osiąga do 406,4 mm/s, a wersja 609 dpi do 152,4 mm/s. Najdłuższy wydruk ma odpowiednio 2500, 1500 i 400 mm. W trybie wysokiej precyzji drukarka utrzymuje położenie nadruku z dokładnością do ±0,3 mm. Producent podaje tę wartość na podstawie testów wewnętrznych, dlatego wynik zależy od materiału.
+
+## Etykiety 22–128 mm i taśma do 600 m
+
+Etykieta bez podkładu może mieć 22–128 mm szerokości i 60–268 μm grubości. Rolka ma do 220 mm średnicy, na gilzie 76 lub 101 mm. Drukarka przyjmuje etykiety w rolce i w składance oraz materiał ciągły. Taśma barwiąca ma do 600 m długości, 39,5–128 mm szerokości i gilzę 25,4 mm. Nawój etykiet i taśmy do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień. Czujnik zapobiegania stratom pozwala drukować od pierwszej etykiety na nowej rolce.
+
+## Łączność i emulacja ZPL
+
+W standardzie drukarka ma USB typu B, dwa porty USB typu A (z przodu i z tyłu), Ethernet 10/100/1000, RS-232C i port EXT. Wi-Fi 6E w pasmach 2,4, 5 i 6 GHz oraz Bluetooth 5.2 wymagają dodatkowego modułu. Własnym językiem drukarki jest SBPL. Drukarka automatycznie rozpoznaje też emulacje SZPL, SDPL, SIPL, STCL, SEPL, SMGL, SPGL i SFPL. SZPL to emulacja języka ZPL drukarek Zebra. Sterowniki są dostępne dla Windows 11 i Windows Server 2016–2025, a dla macOS i Linuksa przez CUPS.
+
+## Konserwacja, SOS i AEP
+
+Szeroko otwierana pokrywa daje dostęp do głowicy, wałka i toru materiału. Elementy obsługi mają niebieski kolor. Drukarka sama sprawdza głowicę i ostrzega przed końcem etykiet i taśmy. SATO Online Services (SOS) zbiera dane o pracy drukarek i pomaga zaplanować wymianę głowicy. Platforma AEP uruchamia aplikacje bezpośrednio na drukarce. Około 34% masy elementów z tworzywa sztucznego pochodzi z recyklingu.
+
+## Wyposażenie dodatkowe
+
+Warianty w sklepie mają ręczne odrywanie etykiet. Jako opcje są dostępne: obcinak, obcinak rotacyjny, odklejak z wewnętrznym nawijakiem podkładu, obcinak do etykiet bez podkładu, moduły RFID UHF i HF, moduł Wi-Fi z Bluetooth oraz zewnętrzny nawijak RWG500.`,
   subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
   quoteOnly: false, priceFrom: 7946.36, availability: 'available', isNew: true,
-  images: ['/images/products/sato-cl4-sxr-rfid.webp', '/images/sato-cl4-sxr/open.webp', '/images/sato-cl4-sxr/closed.webp'],
+  images: ['/images/products/sato-cl4-sxr.webp', '/images/sato-cl4-sxr/open.webp', '/images/sato-cl4-sxr/closed.webp'],
   imageDescriptions: ['SATO CL4-SXR — widok z przodu pod kątem z wydrukowaną etykietą', 'SATO CL4-SXR — otwarty mechanizm i tor materiału', 'SATO CL4-SXR — boczne okno kontroli rolki'],
   keyParams: { rodzajDruku: 'Termotransferowy i termiczny bezpośredni', rozdzielczosc: '203 / 305 / 609 dpi', szerokoscDruku: '104 mm', szerokoscEtykiet: '22–128 mm (bez szerokości podkładu)', predkoscDruku: 'Do 457,2 mm/s (203 dpi)' },
   specifications: reference.specifications.filter(s => !['RFID', 'Zegar RTC', 'Łączność', 'Prędkość nadruku', 'Rolka materiału'].includes(s.name)).concat([
@@ -25,6 +45,13 @@ export const satoIndustrialProducts: Product[] = [{
     { name: 'Interfejsy standardowe', value: 'USB typu B, 2 × USB Host typu A, Gigabit Ethernet, RS-232C, EXT' },
     { name: 'Łączność opcjonalna', value: 'Wi-Fi 6E, Wi-Fi Direct i Bluetooth 5.2; wymagają odpowiedniego wyposażenia' },
     { name: 'RFID', value: 'Opcjonalne moduły UHF lub HF; nie są wyposażeniem standardowym' },
+    { name: 'Maksymalna długość wydruku', value: '2500 mm (203 dpi), 1500 mm (305 dpi), 400 mm (609 dpi)' },
+    { name: 'Grubość materiału', value: '60–268 μm (0,06–0,28 mm)' },
+    { name: 'Czujniki', value: 'Czujnik znacznika (odbiciowy), dwa czujniki przerwy (prześwitowe), czujnik zapobiegania stratom etykiet, czujnik kończącego się materiału; czujniki kończącej się i końca taśmy' },
+    { name: 'Procesor', value: 'ARM Cortex-A53, 4 rdzenie' },
+    { name: 'Sterowniki', value: 'Windows 11, Windows Server 2016–2025; macOS i Linux przez CUPS' },
+    { name: 'Temperatura pracy', value: '0–40°C, wilgotność 20–85% bez kondensacji; z odklejakiem 5–35°C, 30–80%' },
+    { name: 'Opcje', value: 'Obcinak, obcinak rotacyjny, odklejak z wewnętrznym nawijakiem, obcinak do etykiet bez podkładu, moduł RFID UHF lub HF, Wi-Fi i Bluetooth, nawijak zewnętrzny RWG500' },
   ]),
   variants: [
     { partNumber: 'WWCLX1042', name: '203 dpi, RTC, przewód zasilający EU', priceFrom: 7946.36, availability: 'available', attributes: { 'Rozdzielczość': '203 dpi', 'Łączność': 'USB, Ethernet, RS-232C', 'Obsługa etykiet': 'Ręczne odrywanie' } },
@@ -34,12 +61,21 @@ export const satoIndustrialProducts: Product[] = [{
   relatedAccessories: satoCl4SxrRfidAccessories.map(a => a.id),
   applications: ['Etykiety produktów i komponentów', 'Etykiety opakowań i przesyłek', 'Oznaczanie w produkcji i logistyce'],
   faq: [
-    { question: 'Jaka jest maksymalna prędkość druku CL4-SXR?', answer: 'Przy 203 dpi wynosi 457,2 mm/s, przy 305 dpi 406,4 mm/s, a przy 609 dpi 152,4 mm/s. Wynik zależy od materiału, danych i ustawień.' },
-    { question: 'Czy CL4-SXR drukuje bez komputera?', answer: 'Platforma SATO AEP pozwala uruchamiać aplikacje bezpośrednio na drukarce. Wymaga przygotowania i konfiguracji aplikacji dla danego procesu.' },
-    { question: 'Czy Wi-Fi i RFID są standardowym wyposażeniem?', answer: 'Nie. Wi-Fi, Bluetooth oraz moduły UHF lub HF RFID to opcje. Ich dobór zależy od konfiguracji urządzenia.' },
-    { question: 'Co oznacza dokładność ±0,3 mm?', answer: 'To dokładność pozycjonowania nadruku w trybie wysokiej precyzji, uzyskana przez producenta na wybranych etykietach w określonych warunkach. Rzeczywisty wynik zależy od materiału i warunków pracy.' },
+    { question: 'Jaka jest maksymalna prędkość druku SATO CL4-SXR?', answer: 'Do 457,2 mm/s, czyli 18 cali/s, w wersji 203 dpi. Wersja 305 dpi drukuje do 406,4 mm/s, a wersja 609 dpi do 152,4 mm/s. Rzeczywista prędkość zależy od materiału, danych na etykiecie i ustawień.' },
+    { question: 'Czy CL4-SXR drukuje etykiety przygotowane w języku ZPL?', answer: 'Tak. Oprócz własnego języka SBPL drukarka automatycznie rozpoznaje emulację SZPL, zgodną z językiem ZPL drukarek Zebra, oraz emulacje SDPL, SIPL, STCL, SEPL, SMGL, SPGL i SFPL. Przed wymianą drukarki na linii należy wydrukować próbne etykiety z obecnego systemu.' },
+    { question: 'Jakie etykiety pasują do SATO CL4-SXR?', answer: 'Etykiety o szerokości 22–128 mm bez podkładu i grubości 60–268 μm, w rolce o średnicy do 220 mm na gilzie 76 lub 101 mm. Drukarka przyjmuje też składankę i materiał ciągły. Etykiety na gilzie 25 mm do niej nie pasują. Nawój etykietą do wewnątrz lub na zewnątrz nie wymaga zmiany ustawień.' },
+    { question: 'Jaka taśma barwiąca pasuje do CL4-SXR?', answer: 'Taśma o długości do 600 m i szerokości 39,5–128 mm, na gilzie 25,4 mm. Barwnik może być na zewnątrz lub do wewnątrz, bez zmiany ustawień. Taśma powinna być nieco szersza od etykiety, aby chronić głowicę.' },
+    { question: 'Czy CL4-SXR ma obcinak lub odklejak?', answer: 'Warianty WWCLX1042, WWCLX2042 i WWCLX3042 mają ręczne odrywanie etykiet. Obcinak, obcinak rotacyjny, odklejak z wewnętrznym nawijakiem podkładu i obcinak do etykiet bez podkładu są dostępne jako zestawy opcjonalne. Zewnętrzny nawijak to model RWG500.' },
+    { question: 'Czy Wi-Fi i RFID są standardowym wyposażeniem?', answer: 'Nie. Wi-Fi 6E z Bluetooth 5.2 oraz moduły RFID UHF i HF to opcje. Do kodowania etykiet UHF służy wersja [SATO CL4-SXR RFID](/produkt/sato-cl4-sxr-rfid).' },
+    { question: 'Czy CL4-SXR drukuje bez komputera?', answer: 'Tak, przez platformę SATO AEP, która uruchamia aplikacje bezpośrednio na drukarce. Aplikację przygotowuje się i konfiguruje dla konkretnego procesu.' },
+    { question: 'Czym SATO CL4-SXR różni się od CL4NX Plus?', answer: 'CL4-SXR drukuje do 457,2 mm/s, a [CL4NX Plus](/produkt/sato-cl4nx-plus-rfid) do 355 mm/s. CL4-SXR ma kolorowy ekran dotykowy 4,3 cala zamiast wyświetlacza LCD 3,5 cala. Wysokość wydruku i rozstaw nóżek są takie same jak w serii CL4NX, dlatego nowa drukarka pasuje do istniejących instalacji.' },
+    { question: 'Czym SATO CL4-SXR różni się od Zebra ZT411?', answer: 'Obie drukarki drukują na szerokości 104 mm i mają kolorowy ekran dotykowy 4,3 cala. CL4-SXR drukuje do 457,2 mm/s przy 203 dpi, a [Zebra ZT411](/produkt/zebra-zt411) do 356 mm/s. CL4-SXR przyjmuje też większą rolkę (220 mm zamiast 203 mm) i dłuższą taśmę (600 m zamiast 450 m). ZT411 używa języka ZPL bezpośrednio, a CL4-SXR przez emulację SZPL.' },
+    { question: 'Jakie systemy obsługuje sterownik CL4-SXR?', answer: 'Producent udostępnia sterowniki dla Windows 11 oraz Windows Server 2016, 2019, 2022 i 2025. Na komputerach z macOS i Linuksem drukarka działa przez sterowniki CUPS. Odnośnik do sterowników jest w sekcji „Pliki do pobrania”.' },
+    { question: 'W jakich warunkach pracuje CL4-SXR?', answer: 'W temperaturze 0–40°C i wilgotności 20–85% bez kondensacji przy druku ciągłym, z odrywaniem i z obcinakiem. Z odklejakiem zakres wynosi 5–35°C i 30–80%, a z obcinakiem do etykiet bez podkładu 5–35°C i 30–75%.' },
+    { question: 'Co oznacza dokładność ±0,3 mm?', answer: 'To dokładność położenia nadruku w trybie wysokiej precyzji, uzyskana przez producenta w testach wewnętrznych na wybranych etykietach. Rzeczywisty wynik zależy od materiału i warunków pracy.' },
+    { question: 'Jaka jest gwarancja na SATO CL4-SXR?', answer: 'Producent daje 2 lata ograniczonej gwarancji. Zakres zależy od regionu, numeru katalogowego i warunków gwarancji SATO.' },
   ],
-  downloads: [{ name: 'Broszura SATO CL4-SXR / CL6-SXR (PL)', type: 'datasheet', url: '/datasheets/sato-cl-sxr-brochure-pl.pdf', size: '7,6 MB' }, ...reference.downloads.filter(d => d.type !== 'datasheet')],
+  downloads: [{ name: 'Broszura SATO CL4-SXR / CL6-SXR (PL)', type: 'datasheet', url: '/datasheets/sato-cl-sxr-brochure-pl.pdf', size: '7,6 MB' }, { name: 'Karta katalogowa CL4-SXR / CL6-SXR (EN)', type: 'datasheet', url: '/downloads/sato-cl4-sxr-karta-en.pdf', size: 'PDF' }, ...reference.downloads.filter(d => d.type !== 'datasheet')],
   relatedProducts: ['sato-cl4-sxr-rfid', 'sato-cl4nx-plus-rfid', 'zebra-zt411'],
   sameAs: 'https://www.satoeurope.com/pl/products/industrial-printers.php#cl4-sxr', createdAt: '2026-10-30',
 }]

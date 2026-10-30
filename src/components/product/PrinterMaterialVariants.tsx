@@ -9,6 +9,7 @@ import { useCartStore } from '@/store/cartStore'
 import { Badge } from '@/components/ui'
 import { ArrowRightIcon, PlusIcon, CheckIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
+import { labelVariantCoreMm } from '@/lib/printer-label-core'
 
 /**
  * Konkretne WARIANTY materiałów (etykiety TT papierowe/foliowe, taśmy) dobrane do
@@ -107,7 +108,7 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
 }
 
 export default function PrinterMaterialVariants({
-  id, title, productIds, kind, printWidthMm, requiredCore, perSeries = 3, maxTotal = 8, printerSlug, description,
+  id, title, productIds, kind, printWidthMm, requiredCore, minLabelCoreMm, perSeries = 3, maxTotal = 8, printerSlug, description,
 }: {
   id: string
   title: string
@@ -119,6 +120,9 @@ export default function PrinterMaterialVariants({
    *  ('12' biurkowa / '25' przemysłowa). Etykiety: lista akceptowanych gilz
    *  (np. biurkowe ['12','19','25'] — bez 76 mm). Brak → bez filtra. */
   requiredCore?: string | string[]
+  /** Etykiety: najmniejsza gilza (mm) z karty drukarki przemysłowej, np. 76 dla SATO CL4-SXR.
+   *  Odrzuca rolki o mniejszej gilzie; etykiety bez znanej gilzy zostają. */
+  minLabelCoreMm?: number
   perSeries?: number
   maxTotal?: number
   /** Slug drukarki, z której karty pochodzi lista — trafia do linku etykiety jako ?drukarka= */
@@ -158,6 +162,7 @@ export default function PrinterMaterialVariants({
       // Rdzeń (gilza): rolka musi pasować do wieszaków drukarki — np. etykiety fi76
       // nie wejdą na drukarkę biurkową (akceptuje 12/19/25 mm).
       .filter(x => coreOk(x.v))
+      .filter(x => !minLabelCoreMm || kind !== 'label' || (labelVariantCoreMm(x.v) ?? minLabelCoreMm) >= minLabelCoreMm)
       .sort((a, b) => (b.w! - a.w!))
       .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
       .map(x => ({ product, variant: x.v, title: t }))

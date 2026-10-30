@@ -172,6 +172,8 @@ Marki: Zebra, Honeywell, TSC, Brother, Citizen, BIXOLON, SATO, Epson.
 - Dobór: format i szerokość nadruku, wielkość rolek, obciążenie, rozdzielczość, interfejsy i zgodność z programem.
 - Etykieta GS1 może mieć różne formaty, w tym A6 i A5; nie każda wymaga drukarki 6-calowej.
 - ZebraDesigner Essentials jest bezpłatny, a BarTender Starter jest płatną edycją.
+- SATO CL4-SXR (przemysłowa drukarka etykiet 104 mm, 203/305/609 dpi, do 457,2 mm/s, emulacja ZPL): https://www.takma.com.pl/produkt/sato-cl4-sxr
+- SATO CL6-SXR (szerokie etykiety do 167,5 mm, 203/305 dpi, do 355,6 mm/s): https://www.takma.com.pl/produkt/sato-cl6-sxr
 Ceny i dostępność należy sprawdzać na kartach produktów, bez korzystania ze starszych zestawień cen.
 
 ## Akcesoria do obsługi rolek etykiet — Labelmate
