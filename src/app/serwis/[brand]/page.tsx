@@ -246,7 +246,7 @@ export default function BrandServicePage({ params }: Props) {
             Najczęstsze usterki {brand.name} — i jak je naprawiamy
           </h2>
           <p className="text-sm text-gray-500 mb-8">
-            Poniżej realne przypadki z naszego serwisu. Jeśli masz podobny problem — zgłoś urządzenie, darmowa diagnostyka w 48h.
+            {brand.issuesIntro ?? 'Poniżej realne przypadki z naszego serwisu. Jeśli masz podobny problem — zgłoś urządzenie, darmowa diagnostyka w 48h.'}
           </p>
           <div className="space-y-4">
             {brand.commonIssues.map((issue, i) => (
@@ -269,10 +269,10 @@ export default function BrandServicePage({ params }: Props) {
         <section className="bg-gray-50 py-12 sm:py-16 border-b border-gray-100">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 mb-3">
-              Instrukcje, części i drukarki {brand.name}
+              {brand.relatedHeading ?? `Instrukcje, części i drukarki ${brand.name}`}
             </h2>
             <p className="text-sm text-gray-500 mb-6">
-              Zanim wyślesz urządzenie: skrócone instrukcje po polsku z kodami błędów, zestawy czyszczące i karty produktów.
+              {brand.relatedDescription ?? 'Zanim wyślesz urządzenie: skrócone instrukcje po polsku z kodami błędów, zestawy czyszczące i karty produktów.'}
             </p>
             <ul className="grid gap-2 sm:grid-cols-2">
               {brand.relatedLinks.map(l => (

@@ -33,6 +33,9 @@ export type ServiceBrand = {
   crossSell?: string
   /** Linki do kart produktów, instrukcji i stron marki renderowane pod usterkami. */
   relatedLinks?: Array<{ label: string; href: string }>
+  relatedHeading?: string
+  relatedDescription?: string
+  issuesIntro?: string
   commonIssues: Array<{ title: string; description: string }>
   faqs: Array<{ q: string; a: string }>
   metaTitle: string
@@ -47,6 +50,53 @@ export type ServiceBrand = {
 }
 
 export const serviceBrands: ServiceBrand[] = [
+  {
+    slug: 'bluebird',
+    relatedHeading: 'Terminale i czytniki Bluebird w ofercie TAKMA',
+    relatedDescription: 'Sprawdź modele urządzeń i zgodne wyposażenie przed zgłoszeniem naprawy.',
+    issuesIntro: 'Najczęstsze objawy wymagające diagnostyki terminala. Zakres i koszt naprawy potwierdzamy przed jej rozpoczęciem.',
+    name: 'Bluebird',
+    logoSrc: '/images/manufacturers/bluebird.svg',
+    logoAlt: 'Bluebird — serwis terminali mobilnych i czytników RFID',
+    category: 'terminale',
+    pricingVariant: 'devices',
+    shortDesc: 'Terminale S10, S20, S50, S70, EF551, EK430 i czytniki RFID',
+    products: 'Terminale Bluebird S10, S20, S50, S70, EF551, EK430, SF650 oraz czytniki RFID RFR900 i RFR901',
+    heroTitle: 'Serwis Bluebird — naprawa terminali mobilnych i czytników RFID',
+    heroDescription: 'Naprawiamy pogwarancyjnie terminale Bluebird: ekrany, złącza ładowania, przyciski i moduły skanowania. Obsługujemy zgłoszenia z całej Polski. Wycena przed naprawą.',
+    heroLead: 'Serwis Bluebird w TAKMA obejmuje diagnostykę i naprawy terminali używanych w magazynach, handlu, produkcji i pracy terenowej. Sprawdzamy urządzenia po upadku, problemy z ładowaniem, odczytem kodów i łącznością. Zakres naprawy, dostępność części i termin potwierdzamy po diagnostyce konkretnego modelu. Przed rozpoczęciem naprawy udostępniamy wycenę do akceptacji w panelu klienta.',
+    metaTitle: 'Serwis Bluebird — naprawa terminali i czytników RFID | TAKMA',
+    metaDescription: 'Serwis pogwarancyjny Bluebird: S10, S20, S50, S70, EF551 i EK430. Naprawa ekranów, ładowania i skanerów. Wycena przed naprawą, odbiór kurierem w całej Polsce.',
+    crossSell: 'terminale Bluebird, czytniki RFID, baterie i stacje ładujące',
+    seriesList: [
+      { series: 'Terminale dotykowe serii S', description: 'Diagnostyka ekranów, dotyku, przycisków skanowania, złączy i styków ładowania. Sprawdzamy także działanie skanera oraz połączeń bezprzewodowych.', typicalDevices: 'S10, S20, S50, S70' },
+      { series: 'Terminale EF551 i SF650', description: 'Naprawy uszkodzeń mechanicznych, problemów z zasilaniem i komunikacją. Dobór części zależy od pełnego oznaczenia urządzenia.', typicalDevices: 'EF551, SF650' },
+      { series: 'Terminale z klawiaturą EK430', description: 'Diagnostyka klawiatury, ekranu, przycisków, modułu skanowania i uchwytu. Testujemy ładowanie w stacji i pracę z aplikacją magazynową.', typicalDevices: 'EK430' },
+      { series: 'Urządzenia UHF RFID', description: 'Sprawdzamy zasilanie, przyciski i komunikację czytnika z terminalem. Naprawę modułu RFID i dostępność części potwierdzamy indywidualnie.', typicalDevices: 'S10 RFID, RFR900, RFR901' },
+    ],
+    relatedLinks: [
+      { label: 'Terminale Bluebird — oferta', href: '/terminale-bluebird' },
+      { label: 'Bluebird S20', href: '/produkt/bluebird-s20' },
+      { label: 'Bluebird EK430', href: '/produkt/bluebird-ek430' },
+      { label: 'Bluebird S10 RFID', href: '/produkt/bluebird-s10-rfid' },
+    ],
+    commonIssues: [
+      { title: 'Pęknięty ekran lub brak reakcji na dotyk', description: 'Sprawdzamy panel LCD, warstwę dotykową i połączenia wewnętrzne. Wycena uwzględnia stan obudowy oraz dostępność panelu do danego modelu.' },
+      { title: 'Terminal nie ładuje się przez USB lub w stacji', description: 'Testujemy akumulator, zasilacz, przewód, złącze USB i styki ładowania. Pozwala to odróżnić usterkę terminala od uszkodzenia stacji lub zasilania.' },
+      { title: 'Skaner nie odczytuje kodów albo nie przesyła danych', description: 'Sprawdzamy okno skanera, przyciski, ustawienia odczytu i sposób przekazywania danych do aplikacji. W razie usterki sprzętowej wyceniamy naprawę modułu.' },
+      { title: 'Przyciski lub klawiatura EK430 nie działają', description: 'Diagnozujemy przyciski boczne, klawiaturę i taśmy połączeniowe. Zakres wymiany dobieramy do stanu urządzenia.' },
+      { title: 'Rozłączanie Wi-Fi lub Bluetooth', description: 'Sprawdzamy profil sieci, ustawienia systemu i połączenia antenowe. Testy pomagają ustalić, czy problem dotyczy sprzętu, konfiguracji czy sieci w miejscu pracy.' },
+      { title: 'Krótki czas pracy lub samoczynne wyłączanie', description: 'Testujemy akumulator oraz układ zasilania. W przypadku śladów zalania najpierw oceniamy stan elektroniki i możliwość naprawy.' },
+    ],
+    faqs: [
+      { q: 'Jak zgłosić terminal Bluebird do naprawy?', a: 'Wypełnij formularz na tej stronie. Podaj model, numer seryjny i opis usterki. Zorganizujemy odbiór kurierem; urządzenie trzeba odpowiednio zapakować. Etapy naprawy i wycena są dostępne w panelu klienta.' },
+      { q: 'Czy otrzymam wycenę przed naprawą?', a: 'Tak. Po diagnostyce przedstawiamy zakres i koszt naprawy do akceptacji w panelu klienta. Naprawę rozpoczynamy po zatwierdzeniu wyceny.' },
+      { q: 'Czy naprawiacie terminale Bluebird spoza aktualnej oferty?', a: 'Możliwość naprawy starszego modelu zależy od usterki i dostępności części. Podaj pełne oznaczenie urządzenia w zgłoszeniu. Potwierdzimy zakres po diagnostyce.' },
+      { q: 'Czy serwis Bluebird jest autoryzowany?', a: 'Dla urządzeń Bluebird prowadzimy serwis pogwarancyjny. Naprawy gwarancyjne i zgłoszenia objęte BluebirdCare wymagają sprawdzenia warunków ochrony danego urządzenia.' },
+      { q: 'Co zrobić przed wysłaniem urządzenia?', a: 'Jeśli to możliwe, wykonaj kopię danych. Wyjmij karty SIM i microSD. Zapakuj terminal tak, aby nie przemieszczał się w kartonie. Przy problemach z ładowaniem zaznacz w zgłoszeniu, z jakiej stacji i zasilacza korzystasz.' },
+      { q: 'Czy naprawa obejmuje aplikację magazynową?', a: 'Sprawdzamy działanie terminala i ustawienia odczytu kodów. Zmiany w aplikacji magazynowej lub systemie WMS wymagają osobnego uzgodnienia z jego administratorem.' },
+    ],
+  },
   {
     slug: 'honeywell',
     name: 'Honeywell',
