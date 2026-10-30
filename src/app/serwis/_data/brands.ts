@@ -52,6 +52,110 @@ export type ServiceBrand = {
 
 export const serviceBrands: ServiceBrand[] = [
 {
+  "slug": "bixolon",
+  "name": "Bixolon",
+  "logoSrc": "/images/manufacturers/bixolon.jpg",
+  "logoAlt": "Bixolon — serwis drukarek etykiet i paragonów",
+  "heroLogoOnWhite": true,
+  "category": "drukarki",
+  "pricingVariant": "printers",
+  "heroImage": "/images/serwis-hero/bixolon-hero.webp",
+  "shortDesc": "Drukarki etykiet XD, XT i SLP, drukarki POS SRP oraz mobilne SPP i XM7",
+  "products": "Drukarki etykiet Bixolon XD, XT i SLP, drukarki paragonów SRP oraz drukarki mobilne SPP i XM7",
+  "heroTitle": "Serwis Bixolon — naprawa drukarek etykiet i paragonów",
+  "heroDescription": "Serwis pogwarancyjny Bixolon. Diagnozujemy jakość druku, podawanie etykiet, obcinaki, zasilanie i połączenia. Odbiór kurierem z całej Polski, wycena przed naprawą.",
+  "heroLead": "Naprawiamy drukarki Bixolon używane w magazynach, sklepach, gastronomii i transporcie. Obsługujemy drukarki etykiet, drukarki paragonów oraz urządzenia mobilne. Sprawdzamy mechanizm druku, czujniki, zasilanie i komunikację. Zakres prac, dostępność części i termin potwierdzamy po diagnostyce. Wycenę udostępniamy do akceptacji w panelu klienta.",
+  "metaTitle": "Serwis Bixolon — naprawa drukarek etykiet i paragonów | TAKMA",
+  "metaDescription": "Serwis pogwarancyjny Bixolon: drukarki XD, XT, SLP, SRP, SPP i XM7. Naprawa głowic, wałków, obcinaków i zasilania. Odbiór kurierem, wycena przed naprawą.",
+  "crossSell": "drukarki etykiet Bixolon, drukarki POS, drukarki mobilne i akcesoria",
+  "relatedHeading": "Drukarki Bixolon w ofercie TAKMA",
+  "relatedDescription": "Sprawdź model drukarki i zgodne wyposażenie.",
+  "issuesIntro": "Typowe objawy wymagające sprawdzenia materiałów, ustawień lub mechanizmu drukarki. Koszt naprawy potwierdzamy przed rozpoczęciem prac.",
+  "seriesList": [
+    {
+      "series": "Biurkowe i przemysłowe drukarki etykiet",
+      "description": "Sprawdzamy głowice, wałki, czujniki etykiet oraz napęd taśmy barwiącej. Diagnozujemy także problemy z kalibracją i podawaniem materiału.",
+      "typicalDevices": "XD3, XD5, XT3, XT5, SLP-DX, SLP-TX"
+    },
+    {
+      "series": "Drukarki paragonów POS",
+      "description": "Diagnozujemy mechanizm termiczny, obcinak, czujniki papieru i zasilanie. Sprawdzamy połączenie z komputerem lub systemem sprzedaży.",
+      "typicalDevices": "SRP-350, SRP-380, SRP-Q, SRP-S"
+    },
+    {
+      "series": "Drukarki mobilne",
+      "description": "Testujemy akumulator, styki ładowania, zatrzaski pokrywy i mechanizm druku. Sprawdzamy komunikację bezprzewodową dostępną w danym urządzeniu.",
+      "typicalDevices": "SPP-L, SPP-R, XM7"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Bixolon XT5-40",
+      "href": "/produkt/bixolon-xt5-40"
+    },
+    {
+      "label": "Bixolon XD5-40t",
+      "href": "/produkt/bixolon-xd5-40t"
+    },
+    {
+      "label": "Bixolon XM7-40",
+      "href": "/produkt/bixolon-xm7-40"
+    }
+  ],
+  "commonIssues": [
+    {
+      "title": "Białe linie lub blady wydruk",
+      "description": "Sprawdzamy głowicę, wałek, materiał i ustawienia druku. Ustalamy, czy wystarczy czyszczenie, czy potrzebna jest wymiana części."
+    },
+    {
+      "title": "Drukarka pomija etykiety lub zgłasza brak papieru",
+      "description": "Diagnozujemy czujniki, prowadzenie materiału i kalibrację. Sprawdzamy typ etykiet oraz ustawienia przerwy lub czarnego znacznika."
+    },
+    {
+      "title": "Zacięty papier lub niesprawny obcinak",
+      "description": "Sprawdzamy tor papieru, ostrze i napęd obcinaka. Zakres naprawy zależy od wyposażenia konkretnej drukarki."
+    },
+    {
+      "title": "Taśma barwiąca marszczy się lub nie przesuwa",
+      "description": "Sprawdzamy prowadzenie i napęd taśmy, jej szerokość oraz dobór do materiału. Dotyczy to drukarek termotransferowych."
+    },
+    {
+      "title": "Brak zasilania lub ładowania",
+      "description": "Testujemy zasilacz, złącza i elektronikę. W drukarkach mobilnych sprawdzamy również baterię oraz styki ładowania."
+    },
+    {
+      "title": "Brak wydruku przez USB, sieć lub Bluetooth",
+      "description": "Sprawdzamy interfejs, przewody, sterownik i ustawienia. Zmiany w aplikacji sprzedażowej lub magazynowej wymagają uzgodnienia z jej administratorem."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Jak zgłosić drukarkę Bixolon do serwisu?",
+      "a": "Wypełnij formularz na tej stronie. Podaj model, numer seryjny i opis usterki. Zamówimy kuriera. Drukarkę trzeba bezpiecznie zapakować."
+    },
+    {
+      "q": "Czy otrzymam wycenę przed naprawą?",
+      "a": "Tak. Po diagnostyce udostępniamy wycenę w panelu klienta. Naprawę rozpoczynamy po akceptacji kosztu. W panelu sprawdzisz także etapy realizacji."
+    },
+    {
+      "q": "Czy serwis Bixolon jest autoryzowany?",
+      "a": "Dla Bixolon prowadzimy serwis pogwarancyjny. Jeśli drukarka ma aktywną gwarancję, najpierw należy sprawdzić warunki jej obsługi."
+    },
+    {
+      "q": "Czy wymieniacie głowice i wałki drukarek Bixolon?",
+      "a": "Sprawdzamy stan głowicy oraz wałka. Dobór części zależy od modelu i rozdzielczości drukarki. Dostępność i cenę potwierdzamy po diagnostyce."
+    },
+    {
+      "q": "Czy naprawiacie drukarki paragonów i drukarki mobilne?",
+      "a": "Diagnozujemy drukarki POS serii SRP oraz drukarki mobilne SPP i XM7. Możliwość naprawy zależy od usterki oraz dostępności części."
+    },
+    {
+      "q": "Jak przygotować drukarkę do wysyłki?",
+      "a": "Wyłącz drukarkę i odłącz przewody. Wyjmij luźną rolkę oraz taśmę barwiącą. Zabezpiecz urządzenie w kartonie. Przy problemach z jakością druku dołącz próbkę wydruku."
+    }
+  ]
+},
+{
   "slug": "getac",
   "name": "Getac",
   "logoSrc": "/images/manufacturers/getac.svg",
