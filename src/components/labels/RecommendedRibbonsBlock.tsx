@@ -7,6 +7,7 @@ import { ArrowRightIcon } from '@/components/ui/Icons'
 import LiveRibbonPrice, { LiveRibbonAvailability, LiveRibbonProvider, LiveRibbonCartActions } from './LiveRibbonPrice'
 import { ribbonNameToSlug } from '@/lib/ribbon-name-to-slug'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import { printerMaxRibbonLengthM } from '@/lib/printer-label-core'
 import { getRibbonSeriesBySlug } from '@/data/transfer-ribbon-series'
 import {
   getProductBySlug,
@@ -61,7 +62,9 @@ function resolvePrinter(slug: string | null): PrinterCtx | undefined {
   const widthSpec = specs.find(s => /szeroko[śs][ćc] ta[śs]my|szeroko[śs][ćc] ribbon/i.test(s.name))?.value ?? ''
   const coreText = specs.filter(s => /ta[śs]m|ribbon/i.test(s.name)).map(s => s.value).join(' ')
   const lengths = Array.from(lengthSpec.matchAll(/(\d{2,4})\s*m\b/g)).map(m => parseInt(m[1], 10))
-  const maxRibbonLengthM = lengths.length ? Math.max(...lengths) : (printerClass === 'desktop' ? 300 : undefined)
+  // Bez wiersza „długość taśmy” czytamy długość z pozostałych wierszy taśmy (SATO: „Taśma barwiąca: Do 600 m; …”)
+  const maxRibbonLengthM = lengths.length ? Math.max(...lengths)
+    : printerMaxRibbonLengthM(specs) ?? (printerClass === 'desktop' ? 300 : undefined)
   const widths = Array.from(widthSpec.matchAll(/(\d{2,3}(?:[.,]\d)?)\s*mm/g)).map(m => parseFloat(m[1].replace(',', '.')))
   // Zebra pisze 109,2 mm (4,3"), a własne taśmy 110 mm (4,33") — zaokrąglamy do pełnych mm dla czytelności
   const maxRibbonWidthMm = widths.length ? Math.ceil(Math.max(...widths)) : undefined

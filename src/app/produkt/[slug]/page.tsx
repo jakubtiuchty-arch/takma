@@ -69,7 +69,7 @@ import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
 import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariants'
-import { printerMinLabelCoreMm } from '@/lib/printer-label-core'
+import { printerMaxRibbonLengthM, printerMinLabelCoreMm, printerMinLabelWidthMm } from '@/lib/printer-label-core'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
@@ -171,11 +171,14 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     return lastSpace > 0 ? truncated.slice(0, lastSpace) + '…' : truncated
   }
 
+  // Cena w opisach zawsze z groszami: „14 794,70 zł”, nie „14 794,7 zł”
+  const formatPln = (amount: number) => amount.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+
   // SEO: dedykowany opis lub fallback na dynamiczny — uzupełniony rozmiarem wariantu
-  const priceText = currentNetPrice ? ` Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : ''
+  const priceText = currentNetPrice ? ` Od ${formatPln(currentNetPrice)} zł netto.` : ''
   const variantCount = product.variants?.length ?? 0
   const variantsText = !variant && variantCount ? ` ${variantCount} ${variantCount === 1 ? 'wariant' : variantCount % 100 >= 12 && variantCount % 100 <= 14 ? 'wariantów' : [2, 3, 4].includes(variantCount % 10) ? 'warianty' : 'wariantów'}.` : ''
-  const variantPrice = product.comingSoon ? '' : initialStock !== undefined ? (currentNetPrice ? ` Cena ${currentNetPrice.toLocaleString('pl-PL')} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${variant.priceFrom.toLocaleString('pl-PL')} zł netto.` : priceText
+  const variantPrice = product.comingSoon ? '' : initialStock !== undefined ? (currentNetPrice ? ` Cena ${formatPln(currentNetPrice)} zł netto.` : '') : variant?.priceFrom ? ` Cena od ${formatPln(variant.priceFrom)} zł netto.` : priceText
   const variantPrefix = variant
     ? `${product.name}${variantSize ? ` w rozmiarze ${variantSize}` : ''}${variantPN ? ` (PN: ${variantPN})` : ''}. `
     : ''
@@ -193,7 +196,7 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
     : variant
     ? `${variantPrefix}${shortDescriptionSentence}${variantPrice} Zamów w TAKMA.`
     : currentNetPrice
-      ? `${shortDescriptionSentence} Od ${currentNetPrice.toLocaleString('pl-PL')} zł netto. Sprawdź warianty i zamów w TAKMA.`
+      ? `${shortDescriptionSentence} Od ${formatPln(currentNetPrice)} zł netto. Sprawdź warianty i zamów w TAKMA.`
       : `${shortDescriptionSentence} Sprawdź i zamów w TAKMA.`
 
   // OG image — pełny URL z domeną (nie relative path) i prawdziwe wymiary pliku
@@ -407,6 +410,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // (np. SATO CL4-SXR: 76 lub 101 mm), rolki na gilzie 25 mm do niej nie pasują.
   const printerMinCore = printerLabelCore ? undefined : printerMinLabelCoreMm(product.specifications)
   const printerMinLabelCore = printerMinCore !== undefined && printerMinCore >= 76 ? printerMinCore : undefined
+  // Zakres szerokości etykiet i długość taśmy z karty drukarki: SATO CL6-SXR przyjmuje etykiety od 47 mm
+  // i taśmę do 600 m, więc nie polecamy etykiet 32 mm ani taśm 900 m.
+  const printerMinLabelWidth = printerMinLabelWidthMm(product)
+  const printerMaxRibbonLength = printerMaxRibbonLengthM(product.specifications)
   // Szerokość druku (głowicy) w mm — szukamy w wielu polach, bo część drukarek ma to
   // tylko w keyParams.szerokoscDruku, a nie w specifications (np. Honeywell PD45/PM45).
   const printWidthMm = (() => {
@@ -1895,10 +1902,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {/* Jedna karta z wersjami termiczną i termotransferową (np. Zebra ZD611-HC): sekcja TT niżej
                 pokazuje tylko etykiety termotransferowe, więc etykiety termiczne dokładamy osobno. */}
             {isLabelPrinter && isTTprinter && !isColorPrinter && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
-              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} />
+              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             )}
             {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
-              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} />
+              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
               <PrinterMaterialVariants
                 id="etykiety-papierowe"
@@ -1909,6 +1916,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
                 minLabelCoreMm={printerMinLabelCore}
+                minLabelWidthMm={printerMinLabelWidth}
               />
             ) : compatibleConsumables.length > 0 ? (
               <RelatedProducts
@@ -1933,6 +1941,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
                 minLabelCoreMm={printerMinLabelCore}
+                minLabelWidthMm={printerMinLabelWidth}
               />
             ) : compatibleFoilLabels.length > 0 ? (
               <RelatedProducts
@@ -1953,6 +1962,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 kind="ribbon"
                 printWidthMm={printWidthMm}
                 requiredCore={printerRibbonCore}
+                maxRibbonLengthM={printerMaxRibbonLength}
               />
             )}
 

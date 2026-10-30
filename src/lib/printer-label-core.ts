@@ -40,3 +40,53 @@ export function labelVariantCoreMm(v: ProductVariant): number | undefined {
   const m = raw?.match(/\d+(?:[.,]\d+)?/)
   return m ? parseFloat(m[0].replace(',', '.')) : undefined
 }
+
+// Zakres „A–B mm” (półpauza lub łącznik). Wymiar w calach („(1"–4,6")”) nie ma „mm”, więc go nie łapiemy.
+const MM_RANGE = /(\d+(?:[.,]\d+)?)\s*[–-]\s*\d+(?:[.,]\d+)?\s*mm(?![a-z])/g
+// Fragmenty specyfikacji o średnicy rolki, gilzie lub długości etykiety nie mówią o szerokości
+const NOT_WIDTH = /średnic|gilz|rdze|długo/i
+
+function rangeMinsMm(text: string): number[] {
+  return Array.from(text.matchAll(MM_RANGE)).map(m => parseFloat(m[1].replace(',', '.')))
+}
+
+/**
+ * Najmniejsza szerokość etykiety (mm) z karty drukarki albo undefined, gdy karta podaje tylko maksimum.
+ * Źródła: keyParams.szerokoscEtykiet („47–177 mm bez podkładu”) oraz specyfikacje materiału/rolki,
+ * we fragmentach (między „;”) ze słowem „szerokość” albo w specyfikacji o nazwie „Szerokość …”.
+ * Kilka zakresów (np. odrywanie i odklejanie) → najmniejsze minimum, bo drukarka przyjmie taką etykietę
+ * w co najmniej jednej konfiguracji.
+ */
+export function printerMinLabelWidthMm(product: { specifications?: ProductSpecification[]; keyParams?: { szerokoscEtykiet?: string } }): number | undefined {
+  const mins = rangeMinsMm(product.keyParams?.szerokoscEtykiet ?? '')
+  for (const s of product.specifications ?? []) {
+    if (!/materia|rolk|nośnik|medi|etykiet/i.test(s.name) || RIBBON_SPEC.test(s.name)) continue
+    const widthName = /szeroko/i.test(s.name)
+    for (const part of s.value.split(';')) {
+      if (/szeroko/i.test(part) || (widthName && !NOT_WIDTH.test(part))) mins.push(...rangeMinsMm(part))
+    }
+  }
+  return mins.length ? Math.min(...mins) : undefined
+}
+
+/**
+ * Najdłuższa taśma barwiąca (m) z karty drukarki albo undefined. Czyta specyfikacje o nazwie z „taśm”/„ribbon”
+ * („Do 600 m”, „450 m na rdzeniu 25,4 mm”, „74 m … lub 300 m …”) i bierze największą liczbę metrów;
+ * milimetry („gilza 25,4 mm”) i stopy pomija.
+ */
+export function printerMaxRibbonLengthM(specs: ProductSpecification[] | undefined): number | undefined {
+  const lengths: number[] = []
+  for (const s of specs ?? []) {
+    if (!RIBBON_SPEC.test(s.name)) continue
+    for (const m of Array.from(s.value.matchAll(/(\d+(?:[.,]\d+)?)\s*m(?![a-ząćęłńóśźż])/gi))) lengths.push(parseFloat(m[1].replace(',', '.')))
+  }
+  return lengths.length ? Math.max(...lengths) : undefined
+}
+
+/** Długość taśmy w wariancie (m): atrybut 'Długość', a gdy go brak — drugi wymiar „156×900” z rozmiaru lub nazwy. */
+export function ribbonVariantLengthM(v: ProductVariant): number | undefined {
+  const attr = v.attributes?.['Długość']?.match(/(\d+(?:[.,]\d+)?)\s*m(?![a-z])/)
+  if (attr) return parseFloat(attr[1].replace(',', '.'))
+  const size = (v.attributes?.['Rozmiar'] ?? v.name ?? '').match(/\d+(?:[.,]\d+)?\s*[×xX]\s*(\d+(?:[.,]\d+)?)/)
+  return size ? parseFloat(size[1].replace(',', '.')) : undefined
+}

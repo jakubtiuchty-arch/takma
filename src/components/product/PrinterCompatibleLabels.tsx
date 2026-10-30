@@ -240,22 +240,26 @@ export default function PrinterCompatibleLabels({
   printerSlug,
   printWidthMm,
   minLabelCoreMm,
+  minLabelWidthMm,
   sectionId = 'etykiety-papierowe',
 }: {
   printerSlug?: string
   printWidthMm?: number
   /** Najmniejsza gilza (mm) z karty drukarki przemysłowej — rolki o mniejszej gilzie odpadają */
   minLabelCoreMm?: number
+  /** Najmniejsza szerokość etykiety (mm) z karty drukarki — węższe etykiety odpadają */
+  minLabelWidthMm?: number
   /** Inna kotwica, gdy na karcie jest też sekcja etykiet termotransferowych (drukarka w wersjach DT i TT) */
   sectionId?: string
 }) {
   const bestsellers = getBestsellerVariants(printerSlug)
   // Filtr szerokości głowicy — etykieta nie może być szersza niż głowica drukarki
   // (np. drukarka 2"/56 mm nie dostaje etykiet 102 mm). Tolerancja 2 mm.
+  // Od dołu: etykieta węższa niż minimum z karty drukarki (SATO CL6-SXR: 47 mm) też odpada.
   const fits = (rozmiar?: string) => {
-    if (!printWidthMm) return true
     const w = labelWidthMm(rozmiar)
-    return w == null || w <= printWidthMm + 2
+    if (w == null) return true
+    return (!printWidthMm || w <= printWidthMm + 2) && (!minLabelWidthMm || w >= minLabelWidthMm)
   }
   const coreFits = (v: ProductVariant) => !minLabelCoreMm || (labelVariantCoreMm(v) ?? minLabelCoreMm) >= minLabelCoreMm
   let candidates = bestsellers
@@ -270,7 +274,7 @@ export default function PrinterCompatibleLabels({
     const seen = new Set(candidates.map(v => v.variant.partNumber))
     const extra = (zp?.variants ?? [])
       .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
-      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && coreFits(x.v) && !seen.has(x.v.partNumber))
+      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && (!minLabelWidthMm || x.w! >= minLabelWidthMm) && coreFits(x.v) && !seen.has(x.v.partNumber))
       .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
       .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
     candidates = [...candidates, ...extra].slice(0, 16)
