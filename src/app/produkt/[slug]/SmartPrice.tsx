@@ -8,7 +8,7 @@ import { useSmartPrice } from './SmartPriceContext'
 import { useCartStore } from '@/store/cartStore'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
-import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
+import { rolekWKartonieSatoKlient, liczbaKartonow } from '@/lib/sato-karton-klient'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, ShoppingCartIcon } from '@/components/ui/Icons'
 import { czyLicencjaElektroniczna, LICENCJA_DOSTAWA } from '@/lib/licencje'
@@ -238,12 +238,12 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
       {/* Licencja e-mailem nie ma stanów magazynowych — sposób dostawy pokazuje wiersz dostawy niżej. */}
       {hasStockData && !licencja && (
         <div className="mt-3 space-y-1.5">
-          {/* Taśmy SATO: bez liczby sztuk — dystrybutor nie mówi, czy podaje rolki, czy kartony. */}
+          {/* Taśmy SATO: stan u dystrybutora jest w kartonach (ta sama jednostka co cena). */}
           {stock!.stockPL > 0 && (
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-green-500 rounded-full" />
               <span className="text-gray-600">
-                Magazyn PL: <strong className="text-gray-900">{rolekSato ? 'dostępna' : `${stock!.stockPL} szt.`}</strong>
+                Magazyn PL: <strong className="text-gray-900">{rolekSato ? liczbaKartonow(stock!.stockPL) : `${stock!.stockPL} szt.`}</strong>
                 <span className="text-gray-400 ml-1">— wysyłka 24h</span>
               </span>
             </div>
@@ -252,7 +252,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-yellow-500 rounded-full" />
               <span className="text-gray-600">
-                Magazyn EU: <strong className="text-gray-900">{rolekSato ? 'dostępna' : `${stock!.stockDE} szt.`}</strong>
+                Magazyn EU: <strong className="text-gray-900">{rolekSato ? liczbaKartonow(stock!.stockDE) : `${stock!.stockDE} szt.`}</strong>
                 <span className="text-gray-400 ml-1">— wysyłka 2-3 dni</span>
               </span>
             </div>
@@ -261,7 +261,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-blue-500 rounded-full" />
               <span className="text-gray-600">
-                W drodze{rolekSato ? null : <>: <strong className="text-gray-900">{stock!.inDelivery} szt.</strong></>}
+                W drodze: <strong className="text-gray-900">{rolekSato ? liczbaKartonow(stock!.inDelivery) : `${stock!.inDelivery} szt.`}</strong>
                 {/* Przy pozycjach z magazynu podajemy termin wysyłki, a tutaj dotąd nie było go wcale.
                     Dystrybutor nie przekazuje daty dostawy per numer katalogowy, więc zamiast jej
                     zmyślać mówimy wprost, kiedy klient ją pozna. */}

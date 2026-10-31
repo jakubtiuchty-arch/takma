@@ -1,6 +1,7 @@
 import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { MARZA_KARTONU } from '@/lib/ceny-pochodne'
+import { liczbaKartonow } from '@/lib/sato-karton-klient'
 
 /**
  * Taśmy SATO sprzedajemy wyłącznie w pełnych kartonach: jednostka sprzedaży = 1 karton.
@@ -53,18 +54,29 @@ export function bruttoZNetto(netto: number): number {
   return Math.round(netto * VAT * 100) / 100
 }
 
+/** Stan taśm SATO jest w kartonach: „(6 szt.)” w tekście dostawy → „(6 kartonów)”. */
+export function tekstDostawySato(pn: string, tekst: string): string
+export function tekstDostawySato(pn: string, tekst: string | null | undefined): string | null | undefined
+export function tekstDostawySato(pn: string, tekst: string | null | undefined): string | null | undefined {
+  if (!tekst || !czyKartonowySato(pn)) return tekst
+  return tekst.replace(/\((\d+) szt\.\)/g, (_, n: string) => `(${liczbaKartonow(Number(n))})`)
+}
+
 /**
- * Nadpisuje cenę wiersza stanu (StockInfo albo wiersz StockCache) ceną kartonu SATO.
- * Wiersze zapisane przed wdrożeniem mają w `price` cenę za rolkę, więc cena zawsze
- * powstaje od nowa z `ingramPrice`; bez niego — cena na zapytanie. Inne PN bez zmian.
+ * Nadpisuje cenę wiersza stanu (StockInfo albo wiersz StockCache) ceną kartonu SATO
+ * i liczbę w tekście dostawy — kartonami. Wiersze zapisane przed wdrożeniem mają
+ * w `price` cenę za rolkę, więc cena zawsze powstaje od nowa z `ingramPrice`;
+ * bez niego — cena na zapytanie. Inne PN bez zmian.
  */
 export function przeliczCeneSato<T extends {
   partNumber: string
   price?: number | null
   priceBrutto?: number | null
   ingramPrice?: number | null
+  deliveryText?: string | null
 }>(wiersz: T): T {
   if (!czyKartonowySato(wiersz.partNumber)) return wiersz
+  if (wiersz.deliveryText) wiersz.deliveryText = tekstDostawySato(wiersz.partNumber, wiersz.deliveryText) as T['deliveryText']
   const netto = cenaKartonuSato(wiersz.ingramPrice, wiersz.partNumber)
   // Wiersz bazy ma null w pustych polach, StockInfo — undefined; brak ceny zapisujemy tak samo.
   const brak = wiersz.ingramPrice === null || wiersz.price === null ? null : undefined

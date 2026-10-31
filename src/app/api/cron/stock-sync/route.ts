@@ -5,7 +5,7 @@ import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { czyKartonowySato, cenaKartonuSato, dzielnikPakietuBlueStar } from '@/lib/sato-karton'
+import { czyKartonowySato, cenaKartonuSato, dzielnikPakietuBlueStar, tekstDostawySato } from '@/lib/sato-karton'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
@@ -318,6 +318,8 @@ export async function GET(request: NextRequest) {
             availability = 'unavailable'
             deliveryText = 'Niedostępny'
           }
+          // Taśmy SATO: stan u dystrybutora jest w kartonach
+          deliveryText = tekstDostawySato(pn, deliveryText)
 
           // Ręczne korekty per PN (np. przedsprzedaż — patrz lib/stock-overrides)
           const o = applyStockOverrides({ partNumber: pn, found: true, availability, deliveryText, stockPL, stockDE, totalStock, inDelivery })

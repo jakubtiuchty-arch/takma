@@ -3,7 +3,7 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { czyKartonowySato, cenaKartonuSato, przeliczCeneSato, dzielnikPakietuBlueStar } from '@/lib/sato-karton'
+import { czyKartonowySato, cenaKartonuSato, przeliczCeneSato, dzielnikPakietuBlueStar, tekstDostawySato } from '@/lib/sato-karton'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { rfidLabelPartNumbers } from '@/data/rfid-label-products'
 import type { StockInfo } from '@/lib/ingram'
@@ -590,6 +590,8 @@ export async function lookupUnifiedStock(
         availability = 'unavailable'
         deliveryText = 'Niedostepny'
       }
+      // Taśmy SATO: stan u dystrybutora jest w kartonach
+      deliveryText = tekstDostawySato(pn, deliveryText)
 
       // ETA dostawy — Jarltech jako jedyny dostarcza daty
       const incomingDate = jlFound ? jl!.incomingDate : undefined
