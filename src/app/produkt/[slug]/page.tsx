@@ -51,7 +51,7 @@ import {
   variantSizeSlug,
 } from '@/data/products'
 import { getTransferLabelSeriesByProductId } from '@/data/transfer-label-series'
-import { getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
+import { getAnyRibbonSeriesByProductId, ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { ProductGallery } from '@/components/product'
 import { Badge } from '@/components/ui'
 import {
@@ -344,8 +344,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       const series = getTransferLabelSeriesByProductId(product.id)
       if (series) permanentRedirect(`/etykiety-termotransferowe-zebra/${series.subcategory}/serie/${series.slug}`)
     } else if (isRibbonProduct(product)) {
-      const series = getRibbonSeriesByProductId(product.id)
-      if (series) permanentRedirect(`/tasmy-termotransferowe/serie/${series.slug}`)
+      const series = getAnyRibbonSeriesByProductId(product.id)
+      if (series) permanentRedirect(ribbonSeriesUrl(series))
     }
   }
 
@@ -430,8 +430,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     return undefined
   })()
   // Taśmy barwiące do drukarek TT — 3 podstawowe serie (wosk / wosk-żywica / żywica).
+  // Drukarki SATO dostają taśmy SATO, pozostałe — taśmy Zebra.
+  const isSatoPrinter = product.manufacturerId === 'sato'
+  const printerRibbonIds = isSatoPrinter
+    ? ['sato-swx95', 'sato-swr100', 'sato-srs100']
+    : ['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']
   const printerRibbons = isTTprinter
-    ? ['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']
+    ? printerRibbonIds
         .map((id) => products.find((p) => p.id === id))
         .filter(Boolean)
     : []
@@ -1164,8 +1169,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               )
             })()}
 
-            {/* Promocja ZipShip na kartach materiałów (etykiety/taśmy) — znika po 31.12 */}
-            {(isThermalLabel || isTransferLabel || isRibbonProduct(product)) && (
+            {/* Promocja ZipShip na kartach materiałów Zebry (etykiety/taśmy) — znika po 31.12 */}
+            {(isThermalLabel || isTransferLabel || isRibbonProduct(product)) && product.manufacturerId === 'zebra' && (
               <ZipShipBanner context={product.name} variant="card" />
             )}
 
@@ -1959,8 +1964,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {printerRibbons.length > 0 && (
               <PrinterMaterialVariants
                 id="tasmy-barwiace"
-                title="Taśmy termotransferowe"
-                productIds={['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']}
+                title={isSatoPrinter ? 'Taśmy termotransferowe SATO' : 'Taśmy termotransferowe'}
+                productIds={printerRibbonIds}
                 kind="ribbon"
                 printWidthMm={printWidthMm}
                 requiredCore={printerRibbonCore}

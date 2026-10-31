@@ -5,6 +5,7 @@ import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
+import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
@@ -280,7 +281,7 @@ export async function GET(request: NextRequest) {
           let ingramPrice: number | undefined
 
           if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-            const marginForPN = isRibbon ? RIBBON_MARGIN : isLabel ? LABEL_MARGIN : MARGIN
+            const marginForPN = isRibbon || isSatoRibbonPN(pn) ? RIBBON_MARGIN : isLabel ? LABEL_MARGIN : MARGIN
             price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
             priceBrutto = Math.round(price * VAT * 100) / 100
             ingramPrice = bestRawPricePLN

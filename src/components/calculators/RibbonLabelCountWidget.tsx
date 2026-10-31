@@ -52,7 +52,7 @@ export default function RibbonLabelCountWidget({
       </div>
 
       <div className="flex items-center gap-3 mb-2">
-        <label className="text-sm text-amber-900 min-w-[140px]">Wysokość Twojej etykiety:</label>
+        <label className="text-sm text-amber-900 min-w-[140px]">Wysokość etykiety:</label>
         <input
           type="range"
           min={10}
@@ -60,7 +60,7 @@ export default function RibbonLabelCountWidget({
           step={1}
           value={h}
           onChange={(e) => setH(parseInt(e.target.value))}
-          className="flex-1"
+          className="flex-1 min-w-0"
         />
         <span className="font-medium text-amber-950 min-w-[70px] text-right">{h} mm</span>
       </div>
@@ -79,7 +79,7 @@ export default function RibbonLabelCountWidget({
       </div>
 
       <div className="p-4 bg-white rounded-lg">
-        <div className="text-xs text-gray-500 mb-1">Z tej rolki wydrukujesz</div>
+        <div className="text-xs text-gray-500 mb-1">Liczba etykiet z tej rolki</div>
         <div className="text-3xl font-medium text-amber-950 leading-tight">
           {fmt(result.count)}
         </div>

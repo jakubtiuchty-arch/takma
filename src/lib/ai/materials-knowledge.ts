@@ -1,6 +1,6 @@
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
-import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { allRibbonSeries, ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { stripMarkdown } from '@/lib/strip-markdown'
 
 /**
@@ -58,7 +58,7 @@ export function buildMaterialsKnowledge(): string {
   if (_cached) return _cached
   const parts: string[] = []
 
-  parts.push('# KATALOG MATERIAŁÓW EKSPLOATACYJNYCH TAKMA (Zebra) — INDEKS\n')
+  parts.push('# KATALOG MATERIAŁÓW EKSPLOATACYJNYCH TAKMA (Zebra; taśmy barwiące Zebra i SATO) — INDEKS\n')
   parts.push('Trzy grupy: (1) etykiety termiczne — druk bezpośredni, bez taśmy; (2) etykiety termotransferowe — wymagają taśmy barwiącej, trwały nadruk; (3) taśmy barwiące (ribbony) do druku termotransferowego.')
   parts.push('To skrócony indeks (parametry różnicujące). Po PEŁNĄ specyfikację, FAQ i atesty serii użyj getMaterialSeries(slug). Po dobór ROZMIARU użyj findClosestSize(slug, szer, wys). Po cenę/dostępność użyj checkMaterialStock(PN).\n')
 
@@ -73,8 +73,8 @@ export function buildMaterialsKnowledge(): string {
   }
 
   parts.push('\n## TAŚMY BARWIĄCE / RIBBONY (do druku termotransferowego)')
-  for (const s of transferRibbonSeries) {
-    parts.push(serialize(s, 'tasma', `/tasmy-termotransferowe/serie/${s.slug}`))
+  for (const s of allRibbonSeries) {
+    parts.push(serialize(s, 'tasma', ribbonSeriesUrl(s)))
   }
 
   _cached = parts.join('\n')

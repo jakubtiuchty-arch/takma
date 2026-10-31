@@ -2,7 +2,7 @@ import { tool } from 'ai'
 import { z } from 'zod'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
-import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { allRibbonSeries, ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { products } from '@/data/products'
 import { stripMarkdown } from '@/lib/strip-markdown'
 
@@ -26,7 +26,7 @@ function allMaterials(): MatEntry[] {
   _all = [
     ...thermalLabelSeries.map(s => ({ type: 'etykieta termiczna' as const, url: `/etykiety-termiczne-zebra/serie/${s.slug}`, s })),
     ...transferLabelSeries.map(s => ({ type: 'etykieta termotransferowa' as const, url: `/etykiety-termotransferowe-zebra/${s.subcategory}/serie/${s.slug}`, s })),
-    ...transferRibbonSeries.map(s => ({ type: 'taśma barwiąca' as const, url: `/tasmy-termotransferowe/serie/${s.slug}`, s })),
+    ...allRibbonSeries.map(s => ({ type: 'taśma barwiąca' as const, url: ribbonSeriesUrl(s), s })),
   ]
   return _all
 }
@@ -315,7 +315,10 @@ export const getPrinterMaterials = tool({
         wskazowka: `Dobierz rozmiar do szerokości głowicy — ${widthNote}. Taśma powinna być nieco szersza niż etykieta. Do konkretnego rozmiaru użyj findClosestSize.`,
         etykietyPapierowe: seriesByProductIds(['zebra-z-perform-1000t', 'zebra-z-select-2000t']),
         etykietyFoliowe: seriesByProductIds(['zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver']),
-        tasmy: seriesByProductIds(['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']),
+        // Drukarki SATO — taśmy SATO (jak na karcie drukarki), pozostałe — taśmy Zebra.
+        tasmy: seriesByProductIds(p.manufacturerId === 'sato'
+          ? ['sato-swx95', 'sato-swr100', 'sato-srs100']
+          : ['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']),
       }
     }
     return {

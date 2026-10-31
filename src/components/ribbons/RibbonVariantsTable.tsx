@@ -20,6 +20,8 @@ interface Props {
   manufacturerName?: string
   /** Stock żywy ze StockCache, pobrany po stronie serwera — zasila SSR realnymi cenami. */
   initialStock?: StockInfo[]
+  /** Przykładowy numer katalogowy w polu wyszukiwania (domyślnie PN taśmy Zebra 2300). */
+  examplePn?: string
 }
 
 /** Bezpieczne wyciągnięcie atrybutu */
@@ -129,12 +131,15 @@ export default function RibbonVariantsTable({
   seriesTitle,
   manufacturerName = 'Zebra',
   initialStock,
+  examplePn = '02300BK11045',
 }: Props) {
-  // Stan filtrów — taśma: Szerokość / Długość / Rdzeń
+  // Stan filtrów — taśma: Szerokość / Długość / Rdzeń / Nawój (Nawój tylko taśmy z tym atrybutem, np. SATO)
   const [search, setSearch] = useState('')
   const [filterSzerokosc, setFilterSzerokosc] = useState<Set<number>>(new Set())
   const [filterDlugosc, setFilterDlugosc] = useState<Set<number>>(new Set())
   const [filterRdzen, setFilterRdzen] = useState<Set<string>>(new Set())
+  const [filterNawoj, setFilterNawoj] = useState<Set<string>>(new Set())
+  const hasNawoj = useMemo(() => variants.some(v => !!attr(v, 'Nawój')), [variants])
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE)
   // Mobile: panel filtrów zwinięty domyślnie, żeby produkty były od razu widoczne. Desktop (lg) zawsze widoczny.
   const [showFilters, setShowFilters] = useState(false)
@@ -142,7 +147,7 @@ export default function RibbonVariantsTable({
   /**
    * Cross-filtering: opcje danego filtra liczymy z wariantów pasujących do POZOSTAŁYCH filtrów.
    */
-  type FilterKey = 'sz' | 'dl' | 'rd' | 's'
+  type FilterKey = 'sz' | 'dl' | 'rd' | 'nw' | 's'
   const matchesExcept = useCallback(
     (v: ProductVariant, except: FilterKey | null) => {
       const w = parseNumber(attr(v, 'Szerokość'))
@@ -154,6 +159,7 @@ export default function RibbonVariantsTable({
         if (l === null || !filterDlugosc.has(l)) return false
       }
       if (except !== 'rd' && filterRdzen.size > 0 && !filterRdzen.has(attr(v, 'Rdzeń'))) return false
+      if (except !== 'nw' && filterNawoj.size > 0 && !filterNawoj.has(attr(v, 'Nawój'))) return false
       if (except !== 's' && search.trim()) {
         const q = search.toLowerCase()
         const matchesPn = v.partNumber.toLowerCase().includes(q)
@@ -163,7 +169,7 @@ export default function RibbonVariantsTable({
       }
       return true
     },
-    [filterSzerokosc, filterDlugosc, filterRdzen, search],
+    [filterSzerokosc, filterDlugosc, filterRdzen, filterNawoj, search],
   )
 
   // Opcje filtrów — dynamic na podstawie aktualnego stanu pozostałych filtrów
@@ -197,6 +203,16 @@ export default function RibbonVariantsTable({
     return Array.from(set).sort((a, b) => (parseInt(a) || 0) - (parseInt(b) || 0))
   }, [variants, matchesExcept])
 
+  const nawojOpts = useMemo(() => {
+    const set = new Set<string>()
+    variants.forEach(v => {
+      if (!matchesExcept(v, 'nw')) return
+      const n = attr(v, 'Nawój')
+      if (n) set.add(n)
+    })
+    return Array.from(set).sort()
+  }, [variants, matchesExcept])
+
   const toggleSzerokosc = (val: number) => {
     const next = new Set(filterSzerokosc)
     next.has(val) ? next.delete(val) : next.add(val)
@@ -213,6 +229,12 @@ export default function RibbonVariantsTable({
     const next = new Set(filterRdzen)
     next.has(val) ? next.delete(val) : next.add(val)
     setFilterRdzen(next)
+    setVisibleCount(INITIAL_VISIBLE)
+  }
+  const toggleNawoj = (val: string) => {
+    const next = new Set(filterNawoj)
+    next.has(val) ? next.delete(val) : next.add(val)
+    setFilterNawoj(next)
     setVisibleCount(INITIAL_VISIBLE)
   }
   const onSearchChange = (val: string) => {
@@ -306,13 +328,15 @@ export default function RibbonVariantsTable({
     setFilterSzerokosc(new Set())
     setFilterDlugosc(new Set())
     setFilterRdzen(new Set())
+    setFilterNawoj(new Set())
     setVisibleCount(INITIAL_VISIBLE)
   }
   const activeFilterCount =
     (search ? 1 : 0) +
     filterSzerokosc.size +
     filterDlugosc.size +
-    filterRdzen.size
+    filterRdzen.size +
+    filterNawoj.size
   const hasFilters = activeFilterCount > 0
 
   return (
@@ -357,7 +381,7 @@ export default function RibbonVariantsTable({
           <div>
             <label className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5 flex items-center gap-1.5">
               Szukaj rozmiaru / PN
-              <InfoTooltip text="Wpisz fragment szerokości, długości (np. '110' lub '450') lub numeru katalogowego (Part Number, np. '02300BK11045')." />
+              <InfoTooltip text={`Szerokość (np. 110), długość (np. 450) albo numer katalogowy (np. ${examplePn}).`} />
             </label>
             <div className="relative">
               <SearchIcon size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -365,7 +389,7 @@ export default function RibbonVariantsTable({
                 type="search"
                 value={search}
                 onChange={e => onSearchChange(e.target.value)}
-                placeholder="np. 110 lub 02300BK11045"
+                placeholder={`np. 110 lub ${examplePn}`}
                 className="w-full pl-8 pr-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-primary-400 focus:ring-1 focus:ring-primary-200"
               />
               {search && (
@@ -383,7 +407,7 @@ export default function RibbonVariantsTable({
           {szerokoscOpts.length > 1 && (
             <FilterCheckboxGroup
               label="Szerokość"
-              info="Szerokość taśmy w mm — powinna być o 2–5 mm szersza niż etykieta. Np. 110 mm taśma do etykiety 102–108 mm."
+              info="Szerokość taśmy w mm. Taśma powinna być o 2–5 mm szersza niż etykieta, np. taśma 110 mm do etykiety 102–108 mm."
               options={szerokoscOpts.map(String)}
               selected={new Set(Array.from(filterSzerokosc).map(String))}
               onToggle={s => toggleSzerokosc(parseFloat(s))}
@@ -394,7 +418,7 @@ export default function RibbonVariantsTable({
           {dlugoscOpts.length > 1 && (
             <FilterCheckboxGroup
               label="Długość"
-              info="Długość rolki taśmy w metrach. Desktop typowo 74 m, mid-range/przemysłowe 300–900 m. Sprawdź maksymalną pojemność drukarki."
+              info="Długość rolki taśmy w metrach. Drukarki biurkowe przyjmują zwykle 74–100 m, przemysłowe 300–600 m. Limit podaje specyfikacja drukarki."
               options={dlugoscOpts.map(String)}
               selected={new Set(Array.from(filterDlugosc).map(String))}
               onToggle={s => toggleDlugosc(parseFloat(s))}
@@ -409,6 +433,16 @@ export default function RibbonVariantsTable({
               options={rdzenOpts}
               selected={filterRdzen}
               onToggle={toggleRdzen}
+            />
+          )}
+
+          {hasNawoj && nawojOpts.length > 0 && (
+            <FilterCheckboxGroup
+              label="Nawój"
+              info="OUT — warstwa barwiąca na zewnątrz rolki, IN — do wewnątrz. Kierunek nawoju musi pasować do drukarki."
+              options={nawojOpts}
+              selected={filterNawoj}
+              onToggle={toggleNawoj}
             />
           )}
         </div>
@@ -525,6 +559,7 @@ function VariantCard({
   const sz = attr(v, 'Szerokość')
   const dl = attr(v, 'Długość')
   const rdzen = attr(v, 'Rdzeń')
+  const nawoj = attr(v, 'Nawój')
   const hasImage = !!productImage
 
   // Live nadpisuje editorial gdy dystrybutor zwrócił realny sygnał: found=true (dane produktowe/cenowe)
@@ -578,7 +613,7 @@ function VariantCard({
         </div>
 
         <h4 className="text-sm sm:text-base font-bold text-gray-900 leading-snug mb-1">
-          {seriesTitle} {sizeLabel}
+          {seriesTitle} {sizeLabel}{nawoj && `, ${nawoj}`}
           {color && (
             <span className="inline-flex items-center gap-1 align-baseline">
               {' — '}
@@ -596,6 +631,8 @@ function VariantCard({
         <p className="text-xs text-gray-500 mb-3 flex items-center gap-1.5 flex-wrap">
           {rdzen && <span>Rdzeń: <span className="font-medium text-gray-700">{rdzen}</span></span>}
           {rdzen && <span aria-hidden className="text-gray-300">·</span>}
+          {nawoj && <span>Nawój: <span className="font-medium text-gray-700">{nawoj}</span></span>}
+          {nawoj && <span aria-hidden className="text-gray-300">·</span>}
           <span className="font-mono">{v.partNumber}</span>
         </p>
 

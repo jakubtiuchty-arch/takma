@@ -162,6 +162,7 @@ const navigation: NavItem[] = [
       { name: 'Etykiety termiczne', href: '/etykiety-termiczne-zebra' },
       { name: 'Etykiety RFID Zebra', href: '/etykiety-rfid-zebra' },
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
+      { name: 'Taśmy termotransferowe SATO', href: '/tasmy-termotransferowe-sato' },
       { name: 'Etykiety do drukarek kolorowych', href: '/etykiety-do-kolorowych-drukarek' },
       { name: 'Tusze do drukarek kolorowych', href: '/tusze-do-kolorowych-drukarek' },
       { name: 'Opaski identyfikacyjne', href: '/opaski-identyfikacyjne' },

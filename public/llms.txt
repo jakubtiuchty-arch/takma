@@ -80,6 +80,15 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
   - Skanery ladowe (wbudowane w blat kasy; poziome i dwuokienkowe Datalogic Magellan, Zebra SP72-H i MP7200): https://www.takma.com.pl/skanery-kodow-kreskowych/ladowe
 - Materiały eksploatacyjne: https://www.takma.com.pl/materialy-eksploatacyjne
   - Taśmy termotransferowe Zebra (woskowe, woskowo-żywiczne, żywiczne — dobór do etykiety i drukarki): https://www.takma.com.pl/tasmy-termotransferowe
+  - Taśmy termotransferowe SATO (8 serii: woskowe SWX, woskowo-żywiczne SWR, żywiczne SRS; linie Value, Flex, Flow; 61 rozmiarów): https://www.takma.com.pl/tasmy-termotransferowe-sato
+    - SATO SWX85 (taśma woskowa Value, papier, do 400 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swx85
+    - SATO SWX95 (taśma woskowa Flex, papier gładki i szorstki, do 400 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swx95
+    - SATO SWX100 (wosk wzbogacony żywicą Flex, papier i RFID, do 250 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swx100
+    - SATO SWX-MAX (taśma woskowa Flow, rolka 800 m w średnicy rolki 600 m): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swx-max
+    - SATO SWR85 (taśma woskowo-żywiczna Value, do 400 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swr85
+    - SATO SWR100 (taśma woskowo-żywiczna Flex, do 300 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/swr100
+    - SATO SRS85 (taśma żywiczna Value, folie PET/PP/PE, UL 969): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/srs85
+    - SATO SRS100 (taśma żywiczna Flex, folie syntetyczne, do 300 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/srs100
   - Etykiety termiczne Zebra (direct thermal, bez taśmy — papierowe, foliowe, linerless): https://www.takma.com.pl/etykiety-termiczne-zebra
   - Etykiety termotransferowe Zebra (papierowe, foliowe, specjalne): https://www.takma.com.pl/etykiety-termotransferowe-zebra
 - Serwis i naprawa: https://www.takma.com.pl/serwis

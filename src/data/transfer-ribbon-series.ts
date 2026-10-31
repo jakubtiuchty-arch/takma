@@ -115,6 +115,18 @@ export interface RibbonSeries {
 
  // ── DOWNLOADS: specyfikacja techniczna do pobrania ────────────
  downloads?: { name: string; type: string; url: string; size?: string }[]
+
+ // ── MARKA (taśmy SATO korzystają z tego samego typu) ──────────
+ /** Producent serii; brak = 'zebra'. */
+ brand?: 'zebra' | 'sato'
+ /** Linia SATO (Value / Flex / Flow) — etykieta chipa na kafelku huba. */
+ line?: 'Value' | 'Flex' | 'Flow'
+ /** Gdy podane, sekcja drukarek na stronie serii pokazuje te grupy zamiast 4 kafelków Zebra
+  *  (biurkowe / mid-range / industrialne / mobilne). href = link do karty drukarki w sklepie. */
+ printerGroups?: { label: string; models: { name: string; href?: string }[] }[]
+ /** Daty do TechArticle; brak = dotychczasowe '2026-05-29'. */
+ datePublished?: string
+ dateModified?: string
 }
 
 /* ═════════════════════════════════════════════════════════════════

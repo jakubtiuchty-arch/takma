@@ -115,7 +115,9 @@ function deriveModel(product: Product, variant?: ProductVariant): string {
     .replace(/^Etykiety\s+\w+\s+Zebra\s+/i, '')
     .replace(/^Taśm[ay]\s+termotransferow[ae]\s+Zebra\s+/i, '')
     .replace(/^Zebra\s+/i, '')
-    .trim()
+  // Taśmy SATO: „Taśma termotransferowa SATO SWX95” → model „SWX95”
+  if (product.manufacturerId === 'sato') base = base.replace(/^Taśma\s+termotransferowa\s+SATO\s+/i, '')
+  base = base.trim()
   const size = variant?.attributes?.['Rozmiar']
   if (size && !base.includes(size)) base += ` ${size}`
   return base.trim().slice(0, 80)

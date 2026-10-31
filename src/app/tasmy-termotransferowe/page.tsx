@@ -10,7 +10,8 @@ import {
   ShieldCheckIcon,
 } from '@/components/ui/Icons'
 import CommonDefinitionsSchema from '@/components/schemas/CommonDefinitions'
-import { stripMarkdown } from '@/lib/strip-markdown'
+import LinkedText from '@/components/ui/LinkedText'
+import RibbonSeriesBannerCard from '@/components/ribbons/RibbonSeriesBannerCard'
 
 const SLUG = 'tasmy-termotransferowe'
 const siteUrl = 'https://www.takma.com.pl'
@@ -38,83 +39,6 @@ function positioningLabel(p: RibbonSeries['positioning']): string {
     : p === 'specjalistyczna' ? 'Specjalistyczna'
     : p === 'ekonomiczna' ? 'Ekonomiczna'
     : 'Standard'
-}
-
-/** Pojedynczy kafelek modelu taśmy — dwa rozmiary (large dla bestsellerów). */
-function BannerCard({
-  series: s,
-  size = 'normal',
-  className = '',
-}: {
-  series: RibbonSeries
-  size?: 'normal' | 'large'
-  className?: string
-}) {
-  const isLarge = size === 'large'
-  // Tapeta ze zdjęciem tylko na flagowcach (duże karty). Mała karta używa radial-gradientu,
-  // nawet jeśli seria ma `heroImage` (to zdjęcie służy wyłącznie hero strony serii).
-  const hasImage = isLarge && Boolean(s.heroImage)
-  return (
-    <Link
-      href={`/tasmy-termotransferowe/serie/${s.slug}`}
-      className={`group relative h-full overflow-hidden bg-white border border-slate-200 rounded-xl hover:border-[#A8F000] hover:shadow-lg transition-all flex flex-col ${
-        isLarge ? 'p-7' : 'p-5'
-      } ${className}`}
-    >
-      {hasImage ? (
-        // Tapeta — obraz wypełnia całą kartę (bg-cover bg-center). Półprzezroczysty biały
-        // overlay (75%) nad obrazem zapewnia czytelność tekstu pełnej szerokości karty.
-        <>
-          <span
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-[1.02]"
-            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.cardImagePosition ?? s.heroImagePosition ?? '50% center' }}
-          />
-          <span
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none bg-white/75"
-          />
-        </>
-      ) : (
-        // Bez obrazu — subtelny radial gradient z prawego-dolnego rogu z accent koloru serii
-        <span
-          aria-hidden="true"
-          className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
-          style={{
-            background: `radial-gradient(ellipse 65% 35% at bottom right, ${s.accent}55 0%, ${s.accent}1A 40%, transparent 80%)`,
-          }}
-        />
-      )}
-
-      <div className="relative z-10 flex flex-col h-full">
-        {/* Chip + strzałka */}
-        <div className="flex items-center justify-between mb-3">
-          <span className="inline-flex items-center text-[11px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-slate-100 text-slate-700">
-            {isLarge ? 'Bestseller' : positioningLabel(s.positioning)}
-          </span>
-          <ArrowRightIcon
-            size={isLarge ? 18 : 16}
-            className="text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 transition-all"
-          />
-        </div>
-
-        {/* Title */}
-        <h4 className={`font-bold text-gray-900 leading-tight mb-2 ${isLarge ? 'text-2xl' : 'text-lg'}`}>
-          {s.title}
-        </h4>
-
-        {/* Tagline */}
-        <p className={`text-gray-700 leading-snug flex-1 ${isLarge ? 'text-base' : 'text-sm'}`}>
-          {stripMarkdown(s.tagline)}
-        </p>
-
-        {/* Cena od */}
-        <p className={`mt-3 text-gray-500 ${isLarge ? 'text-sm' : 'text-xs'}`}>
-          od <span className="font-semibold text-gray-900">{s.priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł</span> netto
-        </p>
-      </div>
-    </Link>
-  )
 }
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -306,6 +230,9 @@ export default function Page() {
           <p className="text-gray-600 max-w-2xl">
             Każdy model Zebra ma inne przeznaczenie. Kliknij wybrany, żeby zobaczyć pełną specyfikację, warianty rozmiarowe, kompatybilne drukarki i etykiety, do których jest polecany.
           </p>
+          <p className="text-gray-600 max-w-2xl mt-2">
+            <LinkedText text="Taśmy SATO w liniach Value, Flex i Flow są w osobnym katalogu: [taśmy termotransferowe SATO](/tasmy-termotransferowe-sato)." />
+          </p>
         </div>
 
         {/* ── 3 sekcje wg kategorii: flagowiec (duży, col-span-2) + reszta w rzędzie obok ── */}
@@ -319,8 +246,11 @@ export default function Page() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-stretch">
                   {flag && (
-                    <BannerCard
+                    <RibbonSeriesBannerCard
                       series={flag}
+                      href={`/tasmy-termotransferowe/serie/${flag.slug}`}
+                      chip="Bestseller"
+                      priceFrom={flag.priceFrom}
                       size="large"
                       className="sm:col-span-2 lg:col-span-2"
                     />
@@ -328,7 +258,15 @@ export default function Page() {
                   {rest.map(slug => {
                     const s = seriesBySlug(slug)
                     if (!s) return null
-                    return <BannerCard key={s.slug} series={s} />
+                    return (
+                      <RibbonSeriesBannerCard
+                        key={s.slug}
+                        series={s}
+                        href={`/tasmy-termotransferowe/serie/${s.slug}`}
+                        chip={positioningLabel(s.positioning)}
+                        priceFrom={s.priceFrom}
+                      />
+                    )
                   })}
                 </div>
               </div>

@@ -107,6 +107,7 @@ import { newlandMt95KamburProIii } from './newland-mt95-kambur-pro-iii'
 import { newlandMt95ProIiiAccessories } from './newland-mt95-pro-iii-accessories'
 import { transferLabelProducts } from './transfer-label-products'
 import { transferRibbonProducts } from './transfer-ribbon-products'
+import { satoRibbonProducts } from './sato-ribbon-products'
 import { OLD_TT_PRODUCT_IDS, OLD_TT_ID_TO_SERIES } from './transfer-label-migration'
 import { findSearchModel, modelProductIds, orderModelProducts } from '../lib/model-search'
 import { findPartNumberSearch, filterPartNumberProducts } from '../lib/part-number-search'
@@ -839,6 +840,20 @@ export const subcategories: Subcategory[] = [
     icon: 'tag',
     productIds: ['zebra-1600-wax','zebra-2100-wax','zebra-2300-wax','zebra-5319-wax','zebra-3200-wax-resin','zebra-3300-wax-resin','zebra-3400-wax-resin','zebra-5555-wax-resin','zebra-4800-resin','zebra-5095-resin','zebra-5100-resin','zebra-8000-chemresist'],
     productCount: 12,
+  },
+  {
+    id: 'tasmy-termotransferowe-sato',
+    slug: 'tasmy-termotransferowe-sato',
+    name: 'Taśmy termotransferowe SATO',
+    parentCategoryId: 'materialy-eksploatacyjne',
+    description: 'Taśmy barwiące SATO: woskowe SWX, woskowo-żywiczne SWR i żywiczne SRS w liniach Value, Flex i Flow',
+    // Ten sam tytuł i opis co w satoRibbonHub (src/data/sato-ribbon-hub.ts).
+    seoTitle: 'Taśmy termotransferowe SATO | woskowe, woskowo-żywiczne, żywiczne',
+    seoDescription: 'Taśmy termotransferowe SATO: woskowe SWX, woskowo-żywiczne SWR i żywiczne SRS w liniach Value, Flex i Flow. 61 rozmiarów, gilza ½″ lub 1″, nawój IN i OUT.',
+    longDescription: 'Taśmy barwiące SATO: woskowe SWX, woskowo-żywiczne SWR i żywiczne SRS w liniach Value, Flex i Flow',
+    icon: 'tag',
+    productIds: ['sato-swx85', 'sato-swx95', 'sato-swx100', 'sato-swx-max', 'sato-swr85', 'sato-swr100', 'sato-srs85', 'sato-srs100'],
+    productCount: 8,
   },
   {
     id: 'opaski-identyfikacyjne',
@@ -95649,6 +95664,7 @@ const rawProductList: Product[] = [
   ...foilLabels76,
   ...transferLabelProducts,
   ...transferRibbonProducts,
+  ...satoRibbonProducts,
   ...ribbons,
   ...cardPrinters,
   ...cardRibbons,

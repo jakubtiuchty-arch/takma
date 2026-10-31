@@ -19,6 +19,9 @@ import {
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries } from '@/data/transfer-label-series'
 import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { getSatoRibbonSeriesByProductId } from '@/data/sato-ribbon-series'
+import { ribbonSeriesUrl } from '@/data/ribbon-series-registry'
+import { satoPrintersForRibbon, satoPrinterGroupsForRibbon } from '@/data/sato-ribbon-printers'
 
 // Kontekst serii — normalizuje różnice między etykietą termiczną (DT), etykietą
 // termotransferową (TT) a taśmą termotransferową (ribbon): landing serii, breadcrumb,
@@ -30,6 +33,7 @@ function getLabelContext(product: Product) {
       series: thermal,
       isTransfer: false as const,
       isRibbon: false as const,
+      brand: 'zebra' as const,
       categoryLabel: 'Etykiety termiczne',
       categoryUrl: '/etykiety-termiczne-zebra',
       seriesUrl: `/etykiety-termiczne-zebra/serie/${thermal.slug}`,
@@ -42,6 +46,7 @@ function getLabelContext(product: Product) {
       series: transfer,
       isTransfer: true as const,
       isRibbon: false as const,
+      brand: 'zebra' as const,
       categoryLabel: 'Etykiety termotransferowe',
       categoryUrl: '/etykiety-termotransferowe-zebra',
       subcategoryLabel:
@@ -58,9 +63,23 @@ function getLabelContext(product: Product) {
       series: ribbon,
       isTransfer: false as const,
       isRibbon: true as const,
+      brand: 'zebra' as const,
       categoryLabel: 'Taśmy termotransferowe',
       categoryUrl: '/tasmy-termotransferowe',
       seriesUrl: `/tasmy-termotransferowe/serie/${ribbon.slug}`,
+      recommendedRibbons: undefined,
+    }
+  }
+  const satoRibbon = getSatoRibbonSeriesByProductId(product.id)
+  if (satoRibbon) {
+    return {
+      series: satoRibbon,
+      isTransfer: false as const,
+      isRibbon: true as const,
+      brand: 'sato' as const,
+      categoryLabel: 'Taśmy termotransferowe SATO',
+      categoryUrl: '/tasmy-termotransferowe-sato',
+      seriesUrl: ribbonSeriesUrl(satoRibbon),
       recommendedRibbons: undefined,
     }
   }
@@ -93,6 +112,7 @@ import { SmartPriceProvider } from '../../SmartPriceContext'
 import ContextAvailabilityBadge from '../../ContextAvailabilityBadge'
 import ViewItemTracker from '../../ViewItemTracker'
 import RibbonLabelCountWidget from '@/components/calculators/RibbonLabelCountWidget'
+import PrinterCategoryCard from '@/components/ribbons/PrinterCategoryCard'
 import { parseLengthFromAttribute } from '@/lib/ribbon-math'
 
 const siteUrl = 'https://www.takma.com.pl'
@@ -164,7 +184,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return lastSpace > 0 ? truncated.slice(0, lastSpace) + '…' : truncated
   }
 
-  const desc = smartTruncate(
+  // Taśmy SATO: opis z doborem do drukarek SATO. Przy przekroczeniu 160 znaków lista modeli
+  // jest skracana od końca, żeby zdanie kończyło się kropką, a nie uciętą nazwą.
+  const satoMetaSeries = isRibbonMeta && product.manufacturerId === 'sato'
+    ? getSatoRibbonSeriesByProductId(product.id)
+    : undefined
+  const satoMetaDesc = (() => {
+    if (!satoMetaSeries) return null
+    const head = `${product.name} ${sizeLabel} (PN ${pn}), gilza ${gilza}.`
+    const modele = satoPrintersForRibbon(variant, satoMetaSeries.line).map(p => p.model)
+    if (modele.length === 0) return `${head} Dobór do drukarki potwierdza doradca TAKMA.`
+    for (let n = modele.length; n > 0; n--) {
+      const text = `${head} Drukarki SATO: ${modele.slice(0, n).join(', ')}.`
+      if (text.length <= 160 || n === 1) return text
+    }
+    return head
+  })()
+  const desc = satoMetaDesc ?? smartTruncate(
     `${product.name}${rozmiar ? ` w rozmiarze ${rozmiar}` : ''}${gilza ? `, rdzeń ${gilza}` : ''} — PN ${pn}.${priceText ? ` Cena${priceText}.` : ''} ${product.shortDescription} Wysyłka z PL, doradztwo i próbki.`,
     160,
   )
@@ -227,6 +263,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   // Wersja wariantu (np. 8000D Jewelry: ze skrzydełkami / bez skrzydełek) — różnicuje warianty
   // o identycznym rozmiarze. Wyświetlana w "Kluczowych parametrach", nie w nazwie.
   const wersja = variant.attributes['Wersja']
+  // Taśmy: szerokość/długość do schematu; nawój i liczba rolek w opakowaniu (SATO) też w parametrach.
+  const szerokoscAttr = variant.attributes['Szerokość']
+  const dlugoscAttr = variant.attributes['Długość']
+  const nawoj = variant.attributes['Nawój']
+  const rolekWOpakowaniu = variant.attributes['Rolek w opakowaniu']
+  const isSato = ctx?.brand === 'sato'
   const url = `${siteUrl}/produkt/${product.slug}/${size}/${pn}`
 
   // Etykieta rozmiaru — fallback na nazwę wariantu/PN gdy brak Rozmiar (część wariantów TT)
@@ -271,7 +313,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     description: `${product.name}${rozmiar ? ` w rozmiarze ${rozmiar}` : ''}${gilza ? `, rdzeń ${gilza}` : ''}. ${product.shortDescription}`,
     image: product.images.map((i) => `${siteUrl}${i}`),
     brand: manufacturer ? { '@type': 'Brand', name: manufacturer.name } : undefined,
-    manufacturer: manufacturer
+    manufacturer: isSato
+      ? { '@type': 'Organization', name: 'SATO', url: 'https://www.satoeurope.com' }
+      : manufacturer
       ? {
           '@type': 'Organization',
           name: manufacturer.id === 'zebra' ? 'Zebra Technologies' : manufacturer.name,
@@ -289,8 +333,12 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     },
     additionalProperty: [
       ...(rozmiar ? [{ '@type': 'PropertyValue', name: 'Rozmiar', value: rozmiar }] : []),
+      ...(szerokoscAttr ? [{ '@type': 'PropertyValue', name: 'Szerokość', value: szerokoscAttr }] : []),
+      ...(dlugoscAttr ? [{ '@type': 'PropertyValue', name: 'Długość', value: dlugoscAttr }] : []),
       ...(gilza ? [{ '@type': 'PropertyValue', name: 'Rdzeń', value: gilza }] : []),
+      ...(nawoj ? [{ '@type': 'PropertyValue', name: 'Nawój', value: nawoj }] : []),
       ...(qtyInRoll ? [{ '@type': 'PropertyValue', name: 'Etykiet w rolce', value: qtyInRoll }] : []),
+      ...(rolekWOpakowaniu ? [{ '@type': 'PropertyValue', name: 'Rolek w opakowaniu', value: rolekWOpakowaniu }] : []),
       { '@type': 'PropertyValue', name: 'Part Number', value: variant.partNumber },
       ...(typDruku ? [{ '@type': 'PropertyValue', name: 'Typ druku', value: typDruku }] : []),
       ...(materialSpec ? [{ '@type': 'PropertyValue', name: 'Materiał', value: materialSpec }] : []),
@@ -353,7 +401,16 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
   const ribbonCoreMm = isRibbon && gilza ? (parseInt(gilza, 10) || null) : null
   // Formaty specjalne (atrybut 'Format') mają własną zgodność: kartridż tylko ZD421c, rolka 30 m tylko P4T/RP4T
   const ribbonFormat = isRibbon ? (variant.attributes['Format'] ?? '') : ''
+  // SATO: dobór z tabeli zgodności drukarek SATO (gilza, nawój, szerokość, długość).
+  const satoSeries = isSato ? getSatoRibbonSeriesByProductId(product.id) : undefined
+  const satoPrinters = isSato ? satoPrintersForRibbon(variant, satoSeries?.line) : []
+  const satoPrinterGroups = isSato ? satoPrinterGroupsForRibbon(variant, satoSeries?.line) : []
+  const SATO_NO_PRINTER_TEXT = 'Tej kombinacji szerokości, długości i nawoju nie ma w tabeli zgodności drukarek SATO. Zgodność z drukarką potwierdza doradca TAKMA.'
   const ribbonPrinterHint = !isRibbon ? null
+    : isSato
+      ? satoPrinters.length > 0
+        ? `Gilza ${gilza} (${ribbonCoreMm === 12 ? '½″' : '1″'}), nawój ${nawoj}, długość ${rollLength} m — drukarki SATO: ${satoPrinters.map(p => p.model).join(', ')}.`
+        : SATO_NO_PRINTER_TEXT
     : /kartrid/i.test(ribbonFormat)
       ? 'Kartridż do drukarek Zebra ZD421c i ZD421C-HC z mechanizmem kartridżowym. Nie pasuje do ZD421t, ZD611t ani ZD621t z taśmą w rolce.'
     : /P4T/i.test(ribbonFormat)
@@ -398,7 +455,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             '@type': 'HowToStep',
             position: 2,
             name: 'Określ wysokość etykiety',
-            text: 'Wpisz wysokość Twojej etykiety w mm (np. 80 mm dla typowej etykiety magazynowej).',
+            text: 'Należy podać wysokość etykiety w mm (np. 80 mm dla typowej etykiety magazynowej).',
           },
           {
             '@type': 'HowToStep',
@@ -481,9 +538,11 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
 
           {/* Product info */}
           <div className="min-w-0 lg:sticky lg:top-24 lg:self-start lg:pt-10">
+            {/* min-w-0 + max-w logo: na telefonie długie słowo w H1 i szerokie logo (np. SATO)
+                poszerzały kolumnę ponad ekran i ucinały logo oraz kalkulator. */}
             <div className="flex items-start justify-between gap-4">
-              <div className="mb-4">
-                <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900">
+              <div className="mb-4 min-w-0">
+                <h1 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-gray-900 break-words">
                   {product.name} <span className="text-gray-700">{sizeLabel}{colorLabel ? ` ${colorLabel}` : ''}</span>
                 </h1>
                 <p className="text-sm xs:text-base lg:text-lg font-medium text-gray-500 mt-1">
@@ -493,15 +552,15 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
               {manufacturer?.logo && (
                 <Link
                   href={`/${manufacturer.slug}`}
-                  className="flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity mt-1"
+                  className="flex-shrink-0 max-w-[20%] lg:max-w-none opacity-70 hover:opacity-100 transition-opacity mt-1"
                   title={`Wszystkie produkty ${manufacturer.name}`}
                 >
                   <img
                     src={manufacturer.logo}
                     alt={`Logo ${manufacturer.name}`}
                     className={manufacturer.slug === 'magicard'
-                      ? 'h-12 lg:h-[3.6rem] w-auto'
-                      : 'h-10 lg:h-12 w-auto'}
+                      ? 'h-12 lg:h-[3.6rem] w-auto max-w-full object-contain'
+                      : 'h-10 lg:h-12 w-auto max-w-full object-contain'}
                   />
                 </Link>
               )}
@@ -519,7 +578,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             />
 
             {/* Promocja Zebra na materiały — kafel-szuflada pod boxem ceny (znika po 31.12) */}
-            <ZipShipBanner context={`${product.name} ${variant.partNumber}`} variant="card" />
+            {product.manufacturerId === 'zebra' && (
+              <ZipShipBanner context={`${product.name} ${variant.partNumber}`} variant="card" />
+            )}
 
             <div className="space-y-3">
               <AddToRFQButton product={product} />
@@ -559,6 +620,20 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                   <div>
                     <dt className="text-sm text-gray-500">Etykiet w rolce</dt>
                     <dd className="font-medium text-gray-900">{qtyInRoll}</dd>
+                  </div>
+                )}
+                {nawoj && (
+                  <div>
+                    <dt className="text-sm text-gray-500">Nawój</dt>
+                    <dd className="font-medium text-gray-900">
+                      {nawoj === 'IN' ? 'IN — warstwa barwiąca do wewnątrz' : nawoj === 'OUT' ? 'OUT — warstwa barwiąca na zewnątrz' : nawoj}
+                    </dd>
+                  </div>
+                )}
+                {rolekWOpakowaniu && (
+                  <div>
+                    <dt className="text-sm text-gray-500">Rolek w opakowaniu</dt>
+                    <dd className="font-medium text-gray-900">{rolekWOpakowaniu}</dd>
                   </div>
                 )}
                 {typDruku && (
@@ -611,8 +686,8 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                   {rollLength ? <>, długość rolki <strong>{rollLength} m</strong></> : null}.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  Pełną specyfikację techniczną modelu {ctx.series.title}, atesty, porównania z innymi
-                  taśmami Zebra oraz dobór do konkretnych etykiet znajdziesz w przewodniku po serii.
+                  Pełna specyfikacja techniczna modelu {ctx.series.title}, atesty, porównanie z innymi
+                  taśmami {isSato ? 'SATO' : 'Zebra'} i dobór do etykiet są w przewodniku po serii.
                 </p>
                 <p className="mt-6">
                   <Link
@@ -728,14 +803,27 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
                     <span>
                       Długość rolki <strong>{rollLength} m</strong>
                       {ribbonCoreMm === 25 ? ' — format przemysłowy.' : ribbonCoreMm === 12 ? ' — format biurkowy.' : '.'}{' '}
-                      Liczbę etykiet z tej rolki policzysz kalkulatorem zużycia taśmy powyżej.
+                      Liczbę etykiet z tej rolki pokazuje kalkulator zużycia taśmy powyżej.
                     </span>
                   </li>
                 )}
-                <li className="flex items-start gap-3 text-gray-700">
-                  <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
-                  <span>Konstrukcja nawój zewnętrzny (Outside Coated) — pasuje do drukarek Zebra bez dodatkowej konfiguracji.</span>
-                </li>
+                {isSato ? (
+                  nawoj === 'OUT' || nawoj === 'IN' ? (
+                    <li className="flex items-start gap-3 text-gray-700">
+                      <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>
+                        {nawoj === 'OUT'
+                          ? 'Nawój OUT: warstwa barwiąca na zewnątrz rolki.'
+                          : 'Nawój IN: warstwa barwiąca do wewnątrz rolki. Drukarka musi przyjmować taśmy IN (np. CL4NX Plus, CL6NX Plus, CL4-SXR, CL6-SXR).'}
+                      </span>
+                    </li>
+                  ) : null
+                ) : (
+                  <li className="flex items-start gap-3 text-gray-700">
+                    <CheckIcon size={20} className="text-green-500 flex-shrink-0 mt-0.5" />
+                    <span>Konstrukcja nawój zewnętrzny (Outside Coated) — pasuje do drukarek Zebra bez dodatkowej konfiguracji.</span>
+                  </li>
+                )}
               </ul>
             </section>
           )}
@@ -834,8 +922,37 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             </section>
           )}
 
+          {/* Kompatybilne drukarki SATO — dobór tego rozmiaru z tabeli zgodności */}
+          {ctx && isSato && (
+            <section id="kompatybilne-drukarki">
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Kompatybilne drukarki SATO</h2>
+              {satoPrinterGroups.length > 0 ? (
+                <>
+                  <p className="text-gray-600 mb-6 text-sm">
+                    {product.name} {sizeLabel} pasuje do drukarek SATO, w których zgadzają się gilza, nawój, szerokość i maksymalna długość taśmy.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {satoPrinterGroups.map(group => (
+                      <PrinterCategoryCard key={group.label} title={group.label} models={group.models} />
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <>
+                  <p className="text-gray-600 mb-4 text-sm">{SATO_NO_PRINTER_TEXT}</p>
+                  <Link
+                    href="/kontakt"
+                    className="inline-flex items-center gap-1 text-primary-600 font-semibold hover:underline"
+                  >
+                    Zapytaj o dobór <ArrowRightIcon size={14} />
+                  </Link>
+                </>
+              )}
+            </section>
+          )}
+
           {/* Kompatybilne drukarki (z serii) */}
-          {ctx && (
+          {ctx && !isSato && (
             <section id="kompatybilne-drukarki">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Kompatybilne drukarki Zebra</h2>
               <p className="text-gray-600 mb-6 text-sm">
@@ -909,7 +1026,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
         <div className="flex items-center gap-2">
           <div className="flex-1 min-w-0">
             <AskAboutProductButton
-              productName={`${product.name} ${rozmiar} (PN ${variant.partNumber})`}
+              productName={`${product.name} ${sizeLabel} (PN ${variant.partNumber})`}
               productSlug={product.slug}
               compact
             />

@@ -3,6 +3,7 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
+import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { rfidLabelPartNumbers } from '@/data/rfid-label-products'
 import type { StockInfo } from '@/lib/ingram'
@@ -244,7 +245,7 @@ export async function lookupUnifiedStock(
           const newStockDE = Math.max(c.stockDE, item.inventory)
           const inDelivery = Math.max(c.inDelivery, item.incomingQty)
           const newTotalStock = c.stockPL + newStockDE + inDelivery
-          const margin = isRibbonPN(item.partNumber) ? RIBBON_MARGIN : isLabelPN(item.partNumber) ? LABEL_MARGIN : MARGIN
+          const margin = isRibbonPN(item.partNumber) || isSatoRibbonPN(item.partNumber) ? RIBBON_MARGIN : isLabelPN(item.partNumber) ? LABEL_MARGIN : MARGIN
           const price = c.price ?? (item.unitPrice ? Math.round(item.unitPrice * await getEurPlnRate() * margin * 100) / 100 : null)
           freshCache.set(item.partNumber, {
             ...c,
@@ -557,7 +558,7 @@ export async function lookupUnifiedStock(
       let ingramPrice: number | undefined
 
       if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-        const marginForPN = zebraTerminalPartNumbers.has(pn) ? ZEBRA_TERMINAL_PRICE_MULTIPLIER : isRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
+        const marginForPN = zebraTerminalPartNumbers.has(pn) ? ZEBRA_TERMINAL_PRICE_MULTIPLIER : isRibbonPN(pn) || isSatoRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
         price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
         priceBrutto = Math.round(price * VAT * 100) / 100
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN

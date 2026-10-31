@@ -13,7 +13,9 @@ import { manuals, docSlug, PL_MANUAL_SLUG } from '@/data/manuals'
 import { industryPages } from '@/data/industry-content'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { transferLabelSeries, getTransferLabelSeriesByProductId } from '@/data/transfer-label-series'
-import { transferRibbonSeries, getRibbonSeriesByProductId } from '@/data/transfer-ribbon-series'
+import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
+import { satoRibbonSeries } from '@/data/sato-ribbon-series'
+import { getAnyRibbonSeriesByProductId, ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { isRibbonProduct } from '@/data/products'
 import { brandCategoryContent } from '@/data/brand-category-content'
 import { brandPillarContent } from '@/data/brand-pillar-content'
@@ -74,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const przekierowujeNaSerie = (product: (typeof products)[number]) =>
     (isThermalLabelProduct(product) && thermalLabelSeries.some(s => s.productId === product.id)) ||
     (isTransferLabelProduct(product) && !!getTransferLabelSeriesByProductId(product.id)) ||
-    (isRibbonProduct(product) && !!getRibbonSeriesByProductId(product.id))
+    (isRibbonProduct(product) && !!getAnyRibbonSeriesByProductId(product.id))
 
   const productPages: MetadataRoute.Sitemap = products
     .filter((product) => !przekierowujeNaSerie(product))
@@ -90,6 +92,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const reworkedLandingLastMod: Record<string, Date> = {
     'etykiety-rfid-zebra': new Date('2026-10-15'),
     'tasmy-termotransferowe': new Date('2026-05-31'),
+    // Hub taśm SATO wchodzi tu jako podkategoria 'tasmy-termotransferowe-sato'.
+    'tasmy-termotransferowe-sato': new Date('2026-10-31'),
     'etykiety-termiczne-zebra': new Date('2026-06-03'),
     'kolorowe-drukarki-etykiet': new Date('2026-09-20'),
     'tusze-do-kolorowych-drukarek': new Date('2026-09-20'),
@@ -223,6 +227,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${baseUrl}/tasmy-termotransferowe/serie/${s.slug}`,
     lastModified: ribbonLastMod,
   }))
+  // Taśmy SATO — 8 stron serii (hub jest w subcategoryPages); warianty wchodzą przez isRibbonProduct niżej.
+  const satoRibbonSeriesPages: MetadataRoute.Sitemap = satoRibbonSeries.map((s) => ({
+    url: `${baseUrl}${ribbonSeriesUrl(s)}`,
+    lastModified: new Date('2026-10-31'),
+  }))
   const ribbonVariantPages: MetadataRoute.Sitemap = products
     .filter(isRibbonProduct)
     .flatMap((p) =>
@@ -267,6 +276,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...transferSeriesPages,
     ...transferVariantPages,
     ...ribbonSeriesPages,
+    ...satoRibbonSeriesPages,
     ...ribbonVariantPages,
   ]
 }
