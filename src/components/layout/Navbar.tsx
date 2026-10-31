@@ -99,6 +99,7 @@ const navigation: NavItem[] = [
       { name: 'BIXOLON', href: '/drukarki-etykiet-bixolon', logo: '/images/manufacturers/bixolon.jpg' },
       { name: 'Epson', href: '/kolorowe-drukarki-etykiet', logo: '/images/partners/logo_epson.png' },
       { name: 'Magicard by Brady', href: '/drukarki-kart-magicard', logo: '/images/partners/logo_magicard.png', logoClassName: 'h-[38px]' },
+      { name: 'SATO', href: '/sato', logo: '/images/partners/logo_sato.jpg' },
     ],
     children: [
       { name: 'Wszystkie drukarki', href: '/drukarki-etykiet' },
