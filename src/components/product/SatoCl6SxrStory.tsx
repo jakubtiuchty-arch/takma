@@ -4,7 +4,7 @@ import s from './SatoCl4SxrStory.module.css'
 import hero from './SatoCl6SxrHero.module.css'
 
 export default function SatoCl6SxrStory() {
-  return <div className={s.story}>
+  return <div className={`${s.story} ${hero.story}`}>
     <nav className={s.nav} aria-label="Poznaj SATO CL6-SXR"><strong>SATO <span>CL6-SXR</span></strong><div><a href="#cl6-width">Szerokie etykiety</a><a href="#cl6-display">Obsługa</a><a href="#cl6-care">Integracja</a></div></nav>
     <section className={`${s.hero} ${hero.hero}`}>
       <div className={s.heroCopy}><p className={s.eyebrow}>DRUK PRZEMYSŁOWY W SZERSZYM FORMACIE</p><h2>Nadruk do 167,5 mm<br/>na kartonach i paletach.</h2><p className={s.model}>CL6-SXR</p><p>Etykiety na kartony, palety i duże opakowania.<br/>Szeroki nadruk. Czytelne dane logistyczne.</p><a href="#cl6-width" className={s.arrow}>Więcej o drukarce <span>↓</span></a></div>
