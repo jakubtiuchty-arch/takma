@@ -189,7 +189,7 @@ Nadruk woskowy ma niską odporność na ścieranie i rozpuszczalniki. Do etykiet
       v('Y59110300234', 110, 450, 'IN', '25,4 mm', 10),
       v('Y59110300237', 154, 450, 'OUT', '25,4 mm', 10),
       v('Y59110300236', 154, 450, 'IN', '25,4 mm', 10),
-    ],
+    ].map(variant => ({ ...variant, image: `/images/sato-ribbons/swx95/${parseFloat(variant.attributes['Szerokość'])}x${parseFloat(variant.attributes['Długość'])}.png` })),
     downloads: [karta('SWX95', 'sato-swx95-datasheet-en.pdf', '0,2 MB'), KATALOG],
     seoTitle: 'SATO SWX95 — taśma woskowa Flex do papieru',
     seoDescription: 'Taśma woskowa SATO SWX95 (linia Flex): papier gładki i szorstki, druk do 400 mm/s, 13 rozmiarów 35–154 mm, rolki 74–450 m, gilza ½″ lub 1″, nawój IN i OUT.',

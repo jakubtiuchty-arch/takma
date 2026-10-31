@@ -486,11 +486,11 @@ export default function RibbonVariantsTable({
               {visible.map(v => {
                 // Per-variant image: industrial dla ≥ 200 m, desktop dla < 200 m.
                 const lengthM = parseNumber(attr(v, 'Długość')) ?? 0
-                const variantImage = lengthM >= 200
+                const variantImage = v.image ?? (lengthM >= 200
                   ? (productImageIndustrial ?? productImage)
                   : lengthM > 0
                     ? (productImageDesktop ?? productImage)
-                    : productImage
+                    : productImage)
                 return (
                   <VariantCard
                     key={v.partNumber}

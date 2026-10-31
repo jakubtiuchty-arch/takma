@@ -231,6 +231,8 @@ export interface Product {
 }
 
 export interface ProductVariant {
+  /** Zdjęcie dopasowane do wymiarów konkretnego wariantu. */
+  image?: string
   partNumber: string
   name: string
   attributes: Record<string, string>
@@ -96108,6 +96110,7 @@ export function parseLabelCore(rdzen: string | undefined): number | null {
  *  industrial (300/450 m, gilza 25 mm). Zapobiega pokazywaniu krótkiej desktop rolki
  *  na karcie wariantu industrial 450 m i odwrotnie. */
 export function getRibbonVariantImage(product: Product, variant: ProductVariant): string | undefined {
+  if (variant.image) return variant.image
   const length = parseFloat(variant.attributes['Długość']?.match(/(\d+)/)?.[1] ?? '0')
   const isIndustrial = length >= 200
   if (isIndustrial && product.imageIndustrial) return product.imageIndustrial
