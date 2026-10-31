@@ -31,6 +31,7 @@ export default function RibbonSeriesBannerCard({
   productImage?: string
 }) {
   const isLarge = size === 'large'
+  const cardAccent = s.cardAccent ?? s.accent
   // Tapeta ze zdjęciem tylko na flagowcach (duże karty). Mała karta używa radial-gradientu,
   // nawet jeśli seria ma `heroImage` (to zdjęcie służy wyłącznie hero strony serii).
   const hasImage = showImage && isLarge && Boolean(s.heroImage)
@@ -48,12 +49,15 @@ export default function RibbonSeriesBannerCard({
           <span
             aria-hidden="true"
             className={`absolute inset-0 pointer-events-none bg-no-repeat ${s.cardImageFit === 'contain' ? 'bg-contain' : 'bg-cover'} transition-transform duration-300 group-hover:scale-[1.02]`}
-            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.cardImagePosition ?? s.heroImagePosition ?? '50% center' }}
+            style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.cardImagePosition ?? s.heroImagePosition ?? '50% center', backgroundSize: s.cardImageScale ? `auto ${s.cardImageScale * 100}%` : undefined }}
           />
           <span
             aria-hidden="true"
             className="absolute inset-0 pointer-events-none bg-white/75"
           />
+          {s.cardAccent && (
+            <span aria-hidden="true" className="absolute inset-0 pointer-events-none opacity-80" style={{ background: `radial-gradient(ellipse 65% 35% at bottom right, ${cardAccent}55 0%, ${cardAccent}1A 40%, transparent 80%)` }} />
+          )}
         </>
       ) : (
         // Bez obrazu — subtelny radial gradient z prawego-dolnego rogu z accent koloru serii
@@ -61,7 +65,7 @@ export default function RibbonSeriesBannerCard({
           aria-hidden="true"
           className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-80 group-hover:opacity-100"
           style={{
-            background: `radial-gradient(ellipse 65% 35% at bottom right, ${s.accent}55 0%, ${s.accent}1A 40%, transparent 80%)`,
+            background: `radial-gradient(ellipse 65% 35% at bottom right, ${cardAccent}55 0%, ${cardAccent}1A 40%, transparent 80%)`,
           }}
         />
       )}
