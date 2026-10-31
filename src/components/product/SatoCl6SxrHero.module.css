@@ -1,0 +1,7 @@
+.hero.hero{display:block;min-height:660px;background:#d9dee4 url('/images/sato-cl4-sxr/cl6-hero-integrated.png') center/cover no-repeat}
+.hero.hero>div:first-child{width:46%;padding:54px 0 110px 5%}
+.hero.hero h2{font-size:clamp(30px,3vw,44px);line-height:1.25}
+.hero.hero>div:first-child>p:nth-of-type(2){font-size:64px;margin:24px 0 18px}
+.hero.hero>div:first-child>p:last-of-type{font-size:15px;max-width:400px}
+@media(max-width:800px){.hero.hero{min-height:580px}.hero.hero h2{font-size:32px}.hero.hero>div:first-child>p:nth-of-type(2){font-size:50px}}
+@media(max-width:600px){.hero.hero{min-height:0;background-size:auto 330px;background-position:75% bottom;background-color:#e1e5ea;padding-bottom:330px}.hero.hero>div:first-child{width:100%;padding:35px 7% 25px;background:linear-gradient(#e1e5ea,#e1e5eae8)}.hero.hero h2{font-size:30px}.hero.hero>div:last-child{bottom:0;background:#e4e8eceb}.hero.hero>div:first-child>p:nth-of-type(2){font-size:48px}}

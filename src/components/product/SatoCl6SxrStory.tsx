@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import s from './SatoCl4SxrStory.module.css'
+import hero from './SatoCl6SxrHero.module.css'
 
 export default function SatoCl6SxrStory() {
   return <div className={s.story}>
     <nav className={s.nav} aria-label="Poznaj SATO CL6-SXR"><strong>SATO <span>CL6-SXR</span></strong><div><a href="#cl6-width">Szerokie etykiety</a><a href="#cl6-display">Obsługa</a><a href="#cl6-care">Integracja</a></div></nav>
-    <section className={s.hero}>
+    <section className={`${s.hero} ${hero.hero}`}>
       <div className={s.heroCopy}><p className={s.eyebrow}>DRUK PRZEMYSŁOWY W SZERSZYM FORMACIE</p><h2>Nadruk do 167,5 mm<br/>na kartonach i paletach.</h2><p className={s.model}>CL6-SXR</p><p>Etykiety na kartony, palety i duże opakowania.<br/>Szeroki nadruk. Czytelne dane logistyczne.</p><a href="#cl6-width" className={s.arrow}>Więcej o drukarce <span>↓</span></a></div>
-      <div className={s.heroProduct} style={{ mixBlendMode: 'multiply', maskImage: 'linear-gradient(to right, transparent, black 12%, black 88%, transparent), linear-gradient(to bottom, transparent, black 18%, black 82%, transparent)', maskComposite: 'intersect' }}><Image src="/images/products/sato-cl6-sxr-rfid-final.webp" alt="SATO CL6-SXR — szeroka przemysłowa drukarka etykiet" fill sizes="(max-width:640px) 90vw, 650px" quality={95}/></div>
+
       <div className={s.heroFooter}><span>Do 167,5 mm w trybie rozszerzonym</span><span>203 · 305 dpi</span><span>SATO AEP · SOS</span></div>
     </section>
     <section id="cl6-width" className={s.speed}>
