@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { RibbonSeries } from '@/data/transfer-ribbon-series'
 import { ArrowRightIcon } from '@/components/ui/Icons'
 import { stripMarkdown } from '@/lib/strip-markdown'
@@ -13,6 +14,7 @@ export default function RibbonSeriesBannerCard({
   className = '',
   showImage = true,
   priceUnit,
+  productImage,
 }: {
   series: RibbonSeries
   href: string
@@ -25,6 +27,8 @@ export default function RibbonSeriesBannerCard({
   showImage?: boolean
   /** Dopisek po „netto”, np. „za karton” (taśmy SATO sprzedawane tylko w kartonach). */
   priceUnit?: string
+  /** Osobne zdjęcie produktu na białym tle, niezależne od tapety hero. */
+  productImage?: string
 }) {
   const isLarge = size === 'large'
   // Tapeta ze zdjęciem tylko na flagowcach (duże karty). Mała karta używa radial-gradientu,
@@ -73,6 +77,12 @@ export default function RibbonSeriesBannerCard({
             className="text-slate-400 group-hover:text-slate-900 group-hover:translate-x-0.5 transition-all"
           />
         </div>
+
+        {productImage && (
+          <div className="relative h-40 w-full mb-4 bg-white rounded-lg">
+            <Image src={productImage} alt={`Taśma termotransferowa ${s.title}`} fill sizes="(min-width: 1024px) 240px, (min-width: 640px) 50vw, 100vw" className="object-contain p-2" />
+          </div>
+        )}
 
         {/* Title */}
         <h4 className={`font-bold text-gray-900 leading-tight mb-2 ${isLarge ? 'text-2xl' : 'text-lg'}`}>

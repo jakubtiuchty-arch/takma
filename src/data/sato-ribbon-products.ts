@@ -14,9 +14,18 @@ import type { Product, ProductSpecification, ProductVariant } from './products'
 
 type Nawoj = 'IN' | 'OUT'
 
+// Rozmiary przygotowane wcześniej dla SWX95; te same rolki są używane w innych seriach.
+const SWX95_IMAGE_SIZES = new Set(['35x300', '45x450', '65x74', '65x450', '83x450', '110x74', '110x100', '110x300', '110x450', '154x450'])
+
+function ribbonSizeImage(width: number, length: number): string {
+  const size = `${width}x${length}`
+  return `/images/sato-ribbons/${SWX95_IMAGE_SIZES.has(size) ? 'swx95' : 'sizes'}/${size}.png`
+}
+
 function v(partNumber: string, szerokoscMm: number, dlugoscM: number, nawoj: Nawoj, gilza: '12,7 mm' | '25,4 mm', rolek: number): ProductVariant {
   return {
     partNumber,
+    image: ribbonSizeImage(szerokoscMm, dlugoscM),
     name: `${szerokoscMm} mm × ${dlugoscM} m, ${nawoj}`,
     availability: 'on-order',
     attributes: {
@@ -50,7 +59,7 @@ function wspolne(typ: 'woskowe' | 'woskowo-zywiczne' | 'zywiczne'): Pick<Product
     categoryId: 'materialy-eksploatacyjne',
     subcategoryIds: ['tasmy-termotransferowe', 'tasmy-termotransferowe-sato', `tasmy-termotransferowe-${typ}`],
     manufacturerId: 'sato',
-    images: [ZDJECIE],
+    images: [ribbonSizeImage(110, 450), ZDJECIE],
     availability: 'on-order',
     isNew: true,
     isBestseller: false,
@@ -189,7 +198,7 @@ Nadruk woskowy ma niską odporność na ścieranie i rozpuszczalniki. Do etykiet
       v('Y59110300234', 110, 450, 'IN', '25,4 mm', 10),
       v('Y59110300237', 154, 450, 'OUT', '25,4 mm', 10),
       v('Y59110300236', 154, 450, 'IN', '25,4 mm', 10),
-    ].map(variant => ({ ...variant, image: `/images/sato-ribbons/swx95/${parseFloat(variant.attributes['Szerokość'])}x${parseFloat(variant.attributes['Długość'])}.png` })),
+    ],
     downloads: [karta('SWX95', 'sato-swx95-datasheet-en.pdf', '0,2 MB'), KATALOG],
     seoTitle: 'SATO SWX95 — taśma woskowa Flex do papieru',
     seoDescription: 'Taśma woskowa SATO SWX95 (linia Flex): papier gładki i szorstki, druk do 400 mm/s, 13 rozmiarów 35–154 mm, rolki 74–450 m, gilza ½″ lub 1″, nawój IN i OUT.',
@@ -279,6 +288,7 @@ Barwnik topi się w temperaturze 65°C. Maksymalna prędkość druku wynosi 400 
 
 Rolki 800 m z nawojem OUT o szerokości 83, 110 i 154 mm oraz rolki 450 m z nawojem IN o szerokości 154 i 273 mm. Gilza 25,4 mm (1″).`,
     ...wspolne('woskowe'),
+    images: [ribbonSizeImage(110, 800), ZDJECIE],
     tags: ['logistyka', 'magazyn', 'produkcja'],
     specifications: [
       spec('Typ taśmy', 'Woskowa (wax)'),

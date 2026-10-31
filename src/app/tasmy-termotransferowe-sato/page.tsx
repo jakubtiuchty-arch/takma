@@ -241,6 +241,7 @@ export default async function Page() {
                       size="large"
                       className="sm:col-span-2 lg:col-span-2"
                       showImage={false}
+                      productImage={getProductBySlug(flag.productId)?.images[0]}
                     />
                   )}
                   {rest.map(slug => {
@@ -252,6 +253,7 @@ export default async function Page() {
                         series={s}
                         href={ribbonSeriesUrl(s)}
                         chip={`Linia ${s.line}`}
+                        productImage={getProductBySlug(s.productId)?.images[0]}
                         priceFrom={priceFromOf(s.slug)}
                         priceUnit="za karton"
                       />
