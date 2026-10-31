@@ -240,7 +240,6 @@ export default async function Page() {
                       priceUnit="za karton"
                       size="large"
                       className="sm:col-span-2 lg:col-span-2"
-                      showImage={false}
                     />
                   )}
                   {rest.map(slug => {

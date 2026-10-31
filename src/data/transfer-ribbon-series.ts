@@ -74,6 +74,7 @@ export interface RibbonSeries {
  /** Opcjonalny override pozycji tła TYLKO dla kafelka na liście (BannerCard).
      Gdy brak — używa `heroImagePosition`. Pozwala przesunąć kadr na kafelku niezależnie od hero. */
  cardImagePosition?: string
+ cardImageFit?: 'cover' | 'contain'
  /** Opcjonalny gradient tła sekcji hero — używaj gdy zdjęcie ma jasne tło, żeby uniknąć
      ostrego przejścia między czarnym bg-slate-950 a tłem fotografii. CSS linear-gradient. */
  heroBackgroundGradient?: string

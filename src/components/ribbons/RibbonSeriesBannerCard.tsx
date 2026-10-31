@@ -23,7 +23,7 @@ export default function RibbonSeriesBannerCard({
   priceFrom?: number | null
   size?: 'normal' | 'large'
   className?: string
-  /** false → bez tapety ze zdjęciem także na dużym kafelku (hub SATO: heroImage służy tylko hero serii). */
+  /** false → bez tapety ze zdjęciem także na dużym kafelku. */
   showImage?: boolean
   /** Dopisek po „netto”, np. „za karton” (taśmy SATO sprzedawane tylko w kartonach). */
   priceUnit?: string
@@ -47,7 +47,7 @@ export default function RibbonSeriesBannerCard({
         <>
           <span
             aria-hidden="true"
-            className="absolute inset-0 pointer-events-none bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            className={`absolute inset-0 pointer-events-none bg-no-repeat ${s.cardImageFit === 'contain' ? 'bg-contain' : 'bg-cover'} transition-transform duration-300 group-hover:scale-[1.02]`}
             style={{ backgroundImage: `url('${s.heroImage}')`, backgroundPosition: s.cardImagePosition ?? s.heroImagePosition ?? '50% center' }}
           />
           <span
