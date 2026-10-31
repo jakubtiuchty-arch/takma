@@ -37,3 +37,5 @@
 
 .story.story .eyebrow{font-size:11px;font-weight:600;line-height:1.6;letter-spacing:.08em}
 .story.story .displayPhoto small{font-weight:400;letter-spacing:normal}
+
+.story.story .displayPhoto img{object-fit:contain;object-position:center;mix-blend-mode:normal}
