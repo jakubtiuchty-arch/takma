@@ -5,7 +5,7 @@ import { lookupStock as ingramLookup } from '@/lib/ingram'
 import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
+import { czyKartonowySato, cenaKartonuSato, dzielnikPakietuBlueStar } from '@/lib/sato-karton'
 import type { StockInfo } from '@/lib/ingram'
 import type { BlueStarStockInfo } from '@/lib/bluestar'
 import { applyStockOverrides } from '@/lib/stock-overrides'
@@ -245,9 +245,8 @@ export async function GET(request: NextRequest) {
           const isRibbon = isRibbonPN(pn)
           const isLabel = !isRibbon && isLabelPN(pn)
           // BlueStar `unitPrice` bywa ceną pakietu → dziel przez multipleQty (gdy podane).
-          const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
-            ? bs.multipleQty
-            : (isRibbon ? 12 : 1)
+          // Taśmy SATO: bez multipleQty dzielimy przez liczbę rolek w kartonie (lib/sato-karton).
+          const bsPackagingUnit = dzielnikPakietuBlueStar(pn, bs?.multipleQty, isRibbon)
           // Jarltech: cena ZA SZTUKĘ (potwierdzone: 03300GS08407 = 2 EUR = Ingram per-szt).
           // NIE dzielimy — gdyby gdzieś była ceną pakietu, wyjdzie za wysoka i min() ją pominie.
           const jarltechPackagingUnit = 1
@@ -281,9 +280,12 @@ export async function GET(request: NextRequest) {
           let ingramPrice: number | undefined
 
           if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-            const marginForPN = isRibbon || isSatoRibbonPN(pn) ? RIBBON_MARGIN : isLabel ? LABEL_MARGIN : MARGIN
-            price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
-            priceBrutto = Math.round(price * VAT * 100) / 100
+            const marginForPN = isRibbon ? RIBBON_MARGIN : isLabel ? LABEL_MARGIN : MARGIN
+            // Taśmy SATO: w StockCache cena kartonu (jednostka sprzedaży = karton, lib/sato-karton).
+            price = czyKartonowySato(pn)
+              ? cenaKartonuSato(bestRawPricePLN, pn)
+              : Math.round(bestRawPricePLN * marginForPN * 100) / 100
+            priceBrutto = price === undefined ? undefined : Math.round(price * VAT * 100) / 100
             ingramPrice = bestRawPricePLN
           }
 

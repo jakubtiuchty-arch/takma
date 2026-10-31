@@ -2,6 +2,7 @@ import { quoteHasZebra } from '@/lib/quote-zebra'
 import { czyZebra } from '@/lib/device-brand'
 import { stawkaVat } from '@/lib/quotes-stawki'
 import { odczytajLicencjobiorce } from '@/lib/licencje'
+import { jednostkaIlosci } from '@/lib/sato-karton'
 // ─── TAKMA Email Design System ───────────────────────────────────────────────
 // Profesjonalny system szablonów email B2B — table-based layout, Outlook compatible
 // Zero dependencies — plain TypeScript helpers returning HTML strings
@@ -439,7 +440,7 @@ export function buildOrderConfirmationEmail(data: {
     return `
       <tr>
         <td style="padding:10px 0;font-size:14px;color:#1e293b;border-bottom:1px solid #f3f4f6">${label}</td>
-        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity} szt.</td>
+        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity} ${jednostkaIlosci(i.partNumber)}</td>
         <td style="padding:10px 0;font-size:14px;font-weight:600;color:#1e293b;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.totalNetto)} z&#322;</td>
       </tr>`
   }).join('')
@@ -542,7 +543,7 @@ export function buildProformaEmail(data: {
       <tr>
         <td style="padding:10px 8px;font-size:13px;color:#6b7280;border-bottom:1px solid #f3f4f6;text-align:center">${idx + 1}</td>
         <td style="padding:10px 0;font-size:14px;color:#1e293b;border-bottom:1px solid #f3f4f6">${label}</td>
-        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity}&nbsp;szt.</td>
+        <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:center">${i.quantity}&nbsp;${jednostkaIlosci(i.partNumber)}</td>
         <td style="padding:10px 8px;font-size:14px;color:#374151;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.priceNetto)}&nbsp;z&#322;</td>
         <td style="padding:10px 0;font-size:14px;font-weight:600;color:#1e293b;border-bottom:1px solid #f3f4f6;text-align:right">${fmtPLN(i.totalNetto)}&nbsp;z&#322;</td>
       </tr>`

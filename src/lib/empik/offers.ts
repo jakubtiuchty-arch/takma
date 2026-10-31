@@ -26,6 +26,9 @@ export function collectEmpikCandidates(): EmpikCandidate[] {
   const seen = new Set<string>()
   for (const product of products) {
     if (!isMaterial(product)) continue
+    // Taśmy SATO sprzedajemy tylko w kartonach (cena w StockCache = karton), a karty Empika
+    // dotyczą pojedynczych rolek — oferta miałaby cenę kartonu przy karcie rolki.
+    if (product.manufacturerId === 'sato') continue
     if (product.variants?.length) {
       for (const v of product.variants) {
         if (seen.has(v.partNumber)) continue

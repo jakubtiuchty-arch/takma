@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/db'
 import type { StockInfo } from '@/lib/ingram'
+import { przeliczCeneSato } from '@/lib/sato-karton'
 
 /**
  * Ceny + dostępność wariantów serii czytane bezpośrednio ze StockCache (te same dane,
@@ -17,12 +18,13 @@ export async function getSeriesStock(partNumbers: string[]): Promise<StockInfo[]
     const rows = await prisma.stockCache.findMany({
       where: { partNumber: { in: partNumbers } },
       select: {
-        partNumber: true, found: true, price: true, priceBrutto: true,
+        partNumber: true, found: true, price: true, priceBrutto: true, ingramPrice: true,
         stockPL: true, stockDE: true, inDelivery: true, totalStock: true,
         availability: true, deliveryText: true, lastSync: true,
       },
     })
-    return rows.map(r => ({
+    // Taśmy SATO: cena kartonu z ceny zakupu; sama cena zakupu nie wychodzi z tej funkcji.
+    return rows.map(przeliczCeneSato).map(r => ({
       partNumber: r.partNumber,
       found: r.found,
       price: r.price ?? undefined,

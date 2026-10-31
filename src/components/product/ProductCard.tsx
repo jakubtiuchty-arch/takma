@@ -1,6 +1,7 @@
 'use client'
 
 import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
+import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -52,6 +53,8 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
 
   // Zapowiedź (comingSoon) działa jak karta na zapytanie: bez stanu, ceny i koszyka.
   const naZapytanie = product.quoteOnly || product.comingSoon
+  // Taśmy SATO: cena (live) dotyczy kartonu, nie rolki.
+  const kartonSato = product.manufacturerId === 'sato' && (product.subcategoryIds?.includes('tasmy-termotransferowe') ?? false)
   const partNumbers = useMemo(() => (product.comingSoon ? [] : getPartNumbers(product)), [product])
   const { stockData, loading: stockLoading } = useStockData(partNumbers)
 
@@ -169,14 +172,19 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
     e.preventDefault()
     e.stopPropagation()
     trackAddToCart(gaItem())
+    const pnDoKoszyka = product.variants?.find(v => !v.quoteOnly)?.partNumber || product.specifications.find(s => s.name === 'Part Number')?.value
+    // Taśmy SATO: sprzedaż tylko w kartonach — nazwa pozycji mówi, że to karton.
+    const rolekSato = rolekWKartonieSatoKlient(product.manufacturerId, pnDoKoszyka)
+    const wariantDoKoszyka = product.variants?.find(v => v.partNumber === pnDoKoszyka)
     addItem({
       id: product.id,
-      name: product.name,
+      name: rolekSato ? `${product.name}${wariantDoKoszyka ? ` ${wariantDoKoszyka.name}` : ''} — karton ${rolekSato} rolek` : product.name,
       slug: product.slug,
       image: product.images[0],
       // Wariant na zapytanie nie trafia do koszyka z kafla.
-      partNumber: product.variants?.find(v => !v.quoteOnly)?.partNumber || product.specifications.find(s => s.name === 'Part Number')?.value,
+      partNumber: pnDoKoszyka,
       priceNetto: displayPrice,
+      ...(rolekSato ? { jednostka: 'karton' as const, sztukWJednostce: rolekSato } : {}),
     })
   }
 
@@ -220,7 +228,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 <p className="text-lg font-bold text-gray-900 whitespace-nowrap">
                   {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                 </p>
-                <span className="text-xs text-gray-500">netto</span>
+                <span className="text-xs text-gray-500">{kartonSato ? 'netto/karton' : 'netto'}</span>
               </div>
             ) : (
               <span className="text-sm text-gray-500">Cena na zapytanie</span>
@@ -266,7 +274,7 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
           ) : displayPrice ? (
             <span className="text-sm font-bold text-gray-900">
               {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-              <span className="text-xs font-normal text-gray-500 ml-0.5">zł</span>
+              <span className="text-xs font-normal text-gray-500 ml-0.5">{kartonSato ? 'zł/karton' : 'zł'}</span>
             </span>
           ) : (
             <span className="text-xs text-gray-500">Na zapytanie</span>
@@ -346,7 +354,9 @@ export default function ProductCard({ product, variant = 'grid', showDualButtons
                 {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
               </span>
               <span className="text-xs text-gray-500 ml-0.5 sm:ml-1">
-                {product.subcategoryIds?.includes('karty-plastikowe')
+                {kartonSato
+                  ? 'netto/karton'
+                  : product.subcategoryIds?.includes('karty-plastikowe')
                   ? 'netto/opak.'
                   : product.priceTiers
                     ? 'netto/szt.'

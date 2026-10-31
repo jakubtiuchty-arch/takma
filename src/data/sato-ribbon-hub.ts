@@ -14,7 +14,7 @@ export const satoRibbonHub: SatoRibbonHub = {
   h1: 'Taśmy termotransferowe SATO',
   heroIntro: 'Oryginalne taśmy barwiące SATO do druku termotransferowego na etykietach papierowych i foliowych. **8 serii w 3 liniach**: Value do ekonomicznego druku na co dzień, Flex do różnych materiałów i zastosowań oraz Flow do długich serii z rzadszą wymianą taśmy. Taśmy woskowe SWX służą do papieru, woskowo-żywiczne SWR do etykiet narażonych na tarcie, a żywiczne SRS do folii syntetycznych.',
   badges: ['8 serii, 61 rozmiarów', 'Linie Value, Flex i Flow', 'Doradztwo w doborze'],
-  modelsIntro: 'Seria określa skład taśmy (wosk, wosk-żywica lub żywica) i linię SATO. Strona serii pokazuje parametry techniczne, pasujące drukarki SATO i wszystkie rozmiary. Każdy rozmiar ma osobną kartę z ceną, dostępnością i doborem do drukarki.',
+  modelsIntro: 'Seria określa skład taśmy (wosk, wosk-żywica lub żywica) i linię SATO. Strona serii pokazuje parametry techniczne, pasujące drukarki SATO i wszystkie rozmiary. Każdy rozmiar ma osobną kartę z ceną kartonu, dostępnością i doborem do drukarki. Taśmy SATO są w sprzedaży tylko w pełnych kartonach.',
   sections: [
     { label: 'Woskowe', flagship: 'swx95', rest: ['swx85', 'swx100', 'swx-max'] },
     { label: 'Woskowo-żywiczne', flagship: 'swr100', rest: ['swr85'] },
@@ -141,7 +141,7 @@ export const satoRibbonHub: SatoRibbonHub = {
     { question: 'Czy taśma 800 m zmieści się w drukarce z limitem 600 m?', answer: 'Tylko taśma SATO SWX-MAX z linii Flow. Ma folię PET 3,35 μm, więc rolka 800 m ma średnicę standardowej rolki 600 m. Standardowa rolka 800 m ma większą średnicę i nie mieści się w takiej drukarce.' },
     { question: 'Jak dobrać szerokość taśmy SATO do etykiety?', answer: 'Taśma powinna być nieco szersza od etykiety, aby osłonić głowicę przed kontaktem z podłożem, np. etykieta 102 mm → taśma 110 mm, etykieta 150 mm → taśma 154 mm. Szerokość taśmy musi też mieścić się w zakresie drukarki.' },
     { question: 'Czy taśmy SATO pasują do drukarek innych producentów?', answer: 'Taśma SATO pasuje do drukarki innego producenta, gdy zgadzają się gilza, nawój, szerokość i maksymalna długość rolki. Dobór do konkretnego modelu potwierdza doradca TAKMA.' },
-    { question: 'Czy taśmy SATO można kupić na sztuki?', answer: 'Tak. Taśmy SATO są w sprzedaży na pojedyncze rolki i w pełnych kartonach. Karton ma od 5 do 50 rolek, zależnie od rozmiaru, a cena za rolkę w kartonie jest niższa. Liczba rolek w kartonie jest na karcie każdego rozmiaru.' },
+    { question: 'Czy taśmy SATO można kupić na sztuki?', answer: 'Nie. Taśmy SATO są w sprzedaży tylko w pełnych kartonach. Karton ma od 5 do 50 rolek, zależnie od rozmiaru. Cena na karcie rozmiaru dotyczy całego kartonu, a obok jest podana cena za rolkę.' },
     { question: 'Czy taśmy SATO mają atest kontaktu z żywnością?', answer: 'Tak. SWX85, SWX95, SWX-MAX, SWR85, SWR100 i SRS85 mają zgodność z rozporządzeniem UE 1935/2004/WE i przepisami FDA. SWX100 i SRS100 mają atest kontaktu z żywnością ISEGA.' },
     { question: 'Jak przechowywać taśmy termotransferowe SATO?', answer: 'Do 12 miesięcy w oryginalnym opakowaniu, w wilgotności 20–80%. Temperatura: 5–35°C, a dla SWX100 i SRS100 5–30°C.' },
   ],

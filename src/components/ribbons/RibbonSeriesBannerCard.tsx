@@ -12,6 +12,7 @@ export default function RibbonSeriesBannerCard({
   size = 'normal',
   className = '',
   showImage = true,
+  priceUnit,
 }: {
   series: RibbonSeries
   href: string
@@ -22,6 +23,8 @@ export default function RibbonSeriesBannerCard({
   className?: string
   /** false → bez tapety ze zdjęciem także na dużym kafelku (hub SATO: heroImage służy tylko hero serii). */
   showImage?: boolean
+  /** Dopisek po „netto”, np. „za karton” (taśmy SATO sprzedawane tylko w kartonach). */
+  priceUnit?: string
 }) {
   const isLarge = size === 'large'
   // Tapeta ze zdjęciem tylko na flagowcach (duże karty). Mała karta używa radial-gradientu,
@@ -84,7 +87,7 @@ export default function RibbonSeriesBannerCard({
         {/* Cena od */}
         {priceFrom ? (
           <p className={`mt-3 text-gray-500 ${isLarge ? 'text-sm' : 'text-xs'}`}>
-            od <span className="font-semibold text-gray-900">{priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł</span> netto
+            od <span className="font-semibold text-gray-900">{priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł</span> netto{priceUnit ? ` ${priceUnit}` : ''}
           </p>
         ) : null}
       </div>

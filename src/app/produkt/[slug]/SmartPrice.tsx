@@ -8,6 +8,7 @@ import { useSmartPrice } from './SmartPriceContext'
 import { useCartStore } from '@/store/cartStore'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
+import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 import { Button } from '@/components/ui'
 import { PlusIcon, CheckIcon, ShoppingCartIcon } from '@/components/ui/Icons'
 import { czyLicencjaElektroniczna, LICENCJA_DOSTAWA } from '@/lib/licencje'
@@ -85,9 +86,10 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
   const cartonPerRoll = cartonPerRollRaw ? Math.round(cartonPerRollRaw * 100) / 100 : undefined
   // Wariant niedostępny (brak stanu PL/EU/w drodze) → bez opcji kartonu (koszyk wyłączony).
   const variantUnavailable = !!hasStockData && !licencja && stock!.stockPL === 0 && stock!.stockDE === 0 && stock!.inDelivery === 0
-  const showCarton = !!(cartonQty && cartonQty > 1 && cartonPerRoll) && !variantUnavailable
+  // Taśmy SATO: sprzedaż tylko w kartonach — `price` to już cena kartonu, bez osobnej opcji kartonu.
+  const rolekSato = rolekWKartonieSatoKlient(product.manufacturerId, displayedPn)
+  const showCarton = !rolekSato && !!(cartonQty && cartonQty > 1 && cartonPerRoll) && !variantUnavailable
   const cartonId = displayedPn ? `${displayedPn}__karton` : undefined
-  const cartonInCart = mounted && cartonId ? isInCart(cartonId) : false
 
   // Rabat ilościowy (sprzedaż na sztuki): progi z danych produktu, ilość w koszyku do podświetlenia progu
   const tiers = product.priceTiers ?? []
@@ -115,8 +117,9 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
     openDrawer()
   }
 
+  // Każde kliknięcie dodaje cały karton: pozycja ma krok ilości = liczba sztuk w kartonie.
   const handleAddCarton = () => {
-    if (!cartonId || !showCarton || cartonInCart) return
+    if (!cartonId || !showCarton) return
     addItem({
       id: cartonId,
       name: `${product.name}${variantName ? ` ${variantName}` : ''} — karton (${cartonQty} szt.)`,
@@ -125,8 +128,8 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
       partNumber: displayedPn,
       priceNetto: cartonPerRoll,
       categoryId: product.categoryId,
+      quantityStep: cartonQty!,
     })
-    updateQuantity(cartonId, cartonQty!)
     openDrawer()
   }
 
@@ -152,12 +155,18 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
         {price && <span className="text-sm text-gray-500">netto{product.subcategoryIds?.includes('etykiety-rfid') ? ' / rolka' : hasTiers || isPack ? ` / ${unit}` : ''}</span>}
         {DEVICE_CATEGORIES.has(product.categoryId) && <PriceTooltip />}
       </div>
+      {/* Taśmy SATO: cena dotyczy kartonu — liczba rolek i cena za rolkę pod ceną */}
+      {!loading && price && rolekSato && (
+        <p className="text-sm text-gray-600 mt-1">
+          za karton {rolekSato} rolek · {fmt(Math.round((price / rolekSato) * 100) / 100)} zł netto za rolkę
+        </p>
+      )}
       {((loading && !naZapytanie) || price) && (
         <p className="text-sm text-gray-400 mt-1">
           {loading ? (
             <span className="inline-block h-4 w-28 bg-gray-200 rounded animate-pulse" />
           ) : (
-            <>{(price! * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto</>
+            <>{(price! * 1.23).toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł brutto{rolekSato ? ' za karton' : ''}</>
           )}
         </p>
       )}
@@ -210,11 +219,11 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
           </p>
           <Button
             size="sm"
-            variant={cartonInCart ? 'secondary' : 'primary'}
+            variant="primary"
             onClick={handleAddCarton}
-            leftIcon={cartonInCart ? <CheckIcon size={16} /> : <PlusIcon size={16} />}
+            leftIcon={<PlusIcon size={16} />}
           >
-            {cartonInCart ? 'Karton w koszyku' : 'Zamów karton'}
+            Zamów karton
           </Button>
         </div>
       )}
@@ -229,11 +238,12 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
       {/* Licencja e-mailem nie ma stanów magazynowych — sposób dostawy pokazuje wiersz dostawy niżej. */}
       {hasStockData && !licencja && (
         <div className="mt-3 space-y-1.5">
+          {/* Taśmy SATO: bez liczby sztuk — dystrybutor nie mówi, czy podaje rolki, czy kartony. */}
           {stock!.stockPL > 0 && (
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-green-500 rounded-full" />
               <span className="text-gray-600">
-                Magazyn PL: <strong className="text-gray-900">{stock!.stockPL} szt.</strong>
+                Magazyn PL: <strong className="text-gray-900">{rolekSato ? 'dostępna' : `${stock!.stockPL} szt.`}</strong>
                 <span className="text-gray-400 ml-1">— wysyłka 24h</span>
               </span>
             </div>
@@ -242,7 +252,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-yellow-500 rounded-full" />
               <span className="text-gray-600">
-                Magazyn EU: <strong className="text-gray-900">{stock!.stockDE} szt.</strong>
+                Magazyn EU: <strong className="text-gray-900">{rolekSato ? 'dostępna' : `${stock!.stockDE} szt.`}</strong>
                 <span className="text-gray-400 ml-1">— wysyłka 2-3 dni</span>
               </span>
             </div>
@@ -251,7 +261,7 @@ export default function SmartPrice({ product, badge }: SmartPriceProps) {
             <div className="flex items-center gap-2 text-sm">
               <div className="w-2 h-2 bg-blue-500 rounded-full" />
               <span className="text-gray-600">
-                W drodze: <strong className="text-gray-900">{stock!.inDelivery} szt.</strong>
+                W drodze{rolekSato ? null : <>: <strong className="text-gray-900">{stock!.inDelivery} szt.</strong></>}
                 {/* Przy pozycjach z magazynu podajemy termin wysyłki, a tutaj dotąd nie było go wcale.
                     Dystrybutor nie przekazuje daty dostawy per numer katalogowy, więc zamiast jej
                     zmyślać mówimy wprost, kiedy klient ją pozna. */}

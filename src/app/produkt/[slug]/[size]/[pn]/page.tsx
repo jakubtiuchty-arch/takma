@@ -22,6 +22,7 @@ import { transferRibbonSeries } from '@/data/transfer-ribbon-series'
 import { getSatoRibbonSeriesByProductId } from '@/data/sato-ribbon-series'
 import { ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { satoPrintersForRibbon, satoPrinterGroupsForRibbon } from '@/data/sato-ribbon-printers'
+import { rolekWKartonieSato } from '@/lib/sato-karton'
 
 // Kontekst serii — normalizuje różnice między etykietą termiczną (DT), etykietą
 // termotransferową (TT) a taśmą termotransferową (ribbon): landing serii, breadcrumb,
@@ -305,6 +306,7 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
       ? 'https://schema.org/InStock'
       : availabilityMap[variant.availability]
 
+  const rolekSatoSchema = isSato ? rolekWKartonieSato(variant.partNumber) : null
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -353,7 +355,8 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
             url,
             sku: variant.partNumber,
             mpn: variant.partNumber,
-            name: variantH1,
+            // Taśmy SATO: cena oferty to cena kartonu (sprzedaż tylko w kartonach).
+            name: rolekSatoSchema ? `${variantH1} — karton ${rolekSatoSchema} rolek` : variantH1,
             price: schemaOfferPrice.toFixed(2),
             priceCurrency: 'PLN',
             availability: schemaAvailability,

@@ -8,6 +8,7 @@ import { Product } from '@/data/products'
 import { useSmartPrice } from './SmartPriceContext'
 import { trackAddToCart, trackNotifyMe } from '@/lib/ga-events'
 import { jestNaStanie } from '@/lib/licencje'
+import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 
 interface AddToRFQButtonProps {
   product: Product
@@ -118,7 +119,11 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
 
   // Produkt z wariantami: osobna pozycja koszyka per PN (jak w tabeli wariantów), z nazwą konfiguracji
   const cartId = displayedPn && product.variants?.length ? `${product.slug}__${displayedPn}` : product.id
-  const cartName = variantName && product.variants?.length ? `${product.name} — ${variantName}` : product.name
+  // Taśmy SATO: 1 szt. w koszyku = 1 karton, cena = cena kartonu.
+  const rolekSato = rolekWKartonieSatoKlient(product.manufacturerId, displayedPn)
+  const cartName = rolekSato
+    ? `${product.name}${variantName ? ` ${variantName}` : ''} — karton ${rolekSato} rolek`
+    : variantName && product.variants?.length ? `${product.name} — ${variantName}` : product.name
   const inRFQ = mounted ? isInCart(cartId) : false
 
   // Sprawdź czy produkt jest niedostępny (live dane lub statyczna availability)
@@ -156,6 +161,7 @@ export default function AddToRFQButton({ product, compact = false }: AddToRFQBut
       priceNetto: price,
       priceTiers: product.priceTiers,
       categoryId: product.categoryId,
+      ...(rolekSato ? { jednostka: 'karton' as const, sztukWJednostce: rolekSato } : {}),
     })
     trackAddToCart({
       item_id: product.id,

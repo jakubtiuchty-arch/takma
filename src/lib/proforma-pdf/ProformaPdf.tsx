@@ -1,6 +1,7 @@
 import React from 'react'
 import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
 import { stawkaVat } from '@/lib/quotes-stawki'
+import { jednostkaIlosci } from '@/lib/sato-karton'
 
 /**
  * Pro forma jako PDF (react-pdf) — załącznik do maila z pro formą. Dział
@@ -165,7 +166,7 @@ export function ProformaPdfDoc({ p }: { p: ProformaPdfData }) {
               <Text style={s.name}>{it.name}</Text>
               {it.partNumber ? <Text style={s.pn}>PN: {it.partNumber}</Text> : null}
             </View>
-            <Text style={s.colQty}>{it.quantity} szt.</Text>
+            <Text style={s.colQty}>{it.quantity} {jednostkaIlosci(it.partNumber)}</Text>
             <Text style={[s.colPrice, s.bold]}>{pln(it.priceNetto)}</Text>
             <Text style={s.colVat}>{stawka}%</Text>
             <Text style={[s.colTotal, s.bold]}>{pln(it.totalNetto)}</Text>

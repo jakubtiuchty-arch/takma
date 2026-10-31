@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui'
 import { ArrowRightIcon, PlusIcon, CheckIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
 import { labelVariantCoreMm, ribbonVariantLengthM } from '@/lib/printer-label-core'
+import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 
 /**
  * Konkretne WARIANTY materiałów (etykiety TT papierowe/foliowe, taśmy) dobrane do
@@ -21,6 +22,7 @@ function cleanTitle(name: string): string {
   return name
     .replace(/^Etykiety\s+\w+\s+Zebra\s+/i, '')
     .replace(/^Taśma\s+termotransferowa\s+Zebra\s+/i, '')
+    .replace(/^Taśma\s+termotransferowa\s+SATO\s+/i, 'SATO ')
     .replace(/^Etykiety\s+Zebra\s+/i, '')
     .replace(/^Zebra\s+/i, '')
 }
@@ -63,13 +65,20 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
   const href = kind === 'rfid'
     ? `/produkt/${product.slug}?pn=${encodeURIComponent(variant.partNumber)}`
     : `/produkt/${product.slug}/${variantSizeSlug(variant)}/${variant.partNumber}${kind === 'label' && printerSlug ? `?drukarka=${printerSlug}` : ''}`
-  const fullName = `Zebra ${title} ${size}`.trim()
+  // Taśmy SATO: sprzedaż tylko w kartonach — cena i pozycja koszyka dotyczą kartonu.
+  const rolekSato = rolekWKartonieSatoKlient(product.manufacturerId, variant.partNumber)
+  const fullName = rolekSato
+    ? `${title} ${size} — karton ${rolekSato} rolek`.trim()
+    : `Zebra ${title} ${size}`.trim()
   const cartId = `${product.slug}__${variant.partNumber}`
   const inCart = mounted ? isInCart(cartId) : false
 
   const add = (e: React.MouseEvent) => {
     e.preventDefault(); e.stopPropagation()
-    addItem({ id: cartId, name: fullName, slug: product.slug, image: img, partNumber: variant.partNumber, priceNetto: price, categoryId: 'materialy-eksploatacyjne' })
+    addItem({
+      id: cartId, name: fullName, slug: product.slug, image: img, partNumber: variant.partNumber, priceNetto: price, categoryId: 'materialy-eksploatacyjne',
+      ...(rolekSato ? { jednostka: 'karton' as const, sztukWJednostce: rolekSato } : {}),
+    })
   }
 
   return (
@@ -79,7 +88,7 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
           : <div className="text-slate-300 text-xs">brak zdjęcia</div>}
       </Link>
       <div className="p-3 flex flex-col flex-1">
-        <div className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">ZEBRA</div>
+        <div className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">{product.manufacturerId === 'sato' ? 'SATO' : 'ZEBRA'}</div>
         <Link href={href} className="font-semibold text-sm text-gray-900 leading-snug mb-1 hover:text-primary-700">
           {title} {size}
         </Link>
@@ -88,7 +97,7 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
           {price ? (
             <div className="text-base font-bold text-gray-900 mb-2">
               {price.toLocaleString('pl-PL', { minimumFractionDigits: 2 })} zł
-              <span className="text-xs font-normal text-gray-500"> netto/{kind === 'ribbon' ? 'rolka' : 'rolka'}</span>
+              <span className="text-xs font-normal text-gray-500"> {rolekSato ? `netto/karton (${rolekSato} rolek)` : `netto/${kind === 'ribbon' ? 'rolka' : 'rolka'}`}</span>
             </div>
           ) : <div className="text-sm text-gray-400 mb-2">{stockLoading ? '…' : 'Zapytaj o cenę'}</div>}
           <div className="flex gap-1.5">

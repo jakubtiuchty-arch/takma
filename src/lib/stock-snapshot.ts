@@ -1,4 +1,5 @@
 import { prisma } from '@/lib/db'
+import { przeliczCeneSato } from '@/lib/sato-karton'
 
 /**
  * Migawka StockCache do renderowania po stronie serwera (schema.org na stronach
@@ -33,9 +34,10 @@ async function load(): Promise<Map<string, StockSnapshotRow>> {
   try {
     const rows = await prisma.stockCache.findMany({
       where: { found: true },
-      select: { partNumber: true, price: true, availability: true, totalStock: true },
+      select: { partNumber: true, price: true, ingramPrice: true, availability: true, totalStock: true },
     })
-    for (const r of rows) {
+    // Taśmy SATO: cena kartonu z ceny zakupu (stare wiersze mają cenę za rolkę).
+    for (const r of rows.map(przeliczCeneSato)) {
       map.set(r.partNumber.toUpperCase(), {
         price: r.price ?? null,
         availability: r.availability ?? null,

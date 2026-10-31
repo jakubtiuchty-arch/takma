@@ -30,6 +30,8 @@ interface SearchResult {
   availability?: 'available' | 'on-order' | 'unavailable'
   categoryId?: string
   partNumber?: string // PN do live price lookup
+  /** Taśmy SATO: cena (live) dotyczy kartonu */
+  cenaZaKarton?: boolean
   /** Pełny href docelowy — używany dla wariantów etykiet (/produkt/[slug]/[size]/[pn])
    *  zamiast slug-only routingu. Gdy undefined, navigate korzysta z /produkt/[slug]. */
   href?: string
@@ -128,7 +130,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
         return // efekt uruchomi wyszukiwanie ponownie, gdy indeks dojedzie
       }
       const { index: searchIndex, categories, katalog } = dane
-      const { variantSizeSlug, isThermalLabelProduct, isTransferLabelProduct } = katalog
+      const { variantSizeSlug, isThermalLabelProduct, isTransferLabelProduct, isRibbonProduct } = katalog
 
       const queryLower = q.toLowerCase().trim()
       const queryNormalized = queryLower.replace(/\s+/g, '')
@@ -206,6 +208,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             categoryId: product.categoryId,
             partNumber: matchedVariant.partNumber,
             href: variantHref,
+            cenaZaKarton: product.manufacturerId === 'sato' && isRibbonProduct(product),
           })
         } else {
           // Use the original PN spelling for stock lookup and the visible label.
@@ -225,6 +228,7 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
             availability: product.availability,
             categoryId: product.categoryId,
             partNumber: firstVariantPN,
+            cenaZaKarton: product.manufacturerId === 'sato' && isRibbonProduct(product),
           })
         }
       }
@@ -497,6 +501,9 @@ export default function SearchBar({ fullWidth = false, onSearch }: SearchBarProp
                           <span className="text-sm font-semibold text-gray-900 tabular-nums">
                             {displayPrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                           </span>
+                        )}
+                        {displayPrice && result.cenaZaKarton && (
+                          <span className="text-[11px] text-gray-500">netto/karton</span>
                         )}
                       </div>
                     </button>

@@ -1,6 +1,7 @@
 import type { Product } from '@/data/products'
 import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
 import { labelCartonQty } from '@/data/label-carton-qty'
+import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
 
 /**
  * Ceny sprzedaży liczone z ceny zakupu, a nie z ceny za sztukę.
@@ -52,6 +53,8 @@ export function mapaKartonow(produkty: ProduktDoCen[]): Map<string, RodzajKarton
       ...p.specifications.filter(s => s.name === 'Part Number').map(s => s.value),
     ]
     for (const pn of numery) {
+      // Taśmy SATO: cena w `price` to już cena kartonu (lib/sato-karton), osobnej opcji kartonu nie ma.
+      if (isSatoRibbonPN(pn)) continue
       const sztukWKartonie = rodzaj === 'tasma' ? ribbonCartonQty(pn) : labelCartonQty(pn)
       if (sztukWKartonie && sztukWKartonie > 1) mapa.set(pn, rodzaj)
     }

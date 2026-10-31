@@ -237,6 +237,7 @@ export default async function Page() {
                       href={ribbonSeriesUrl(flag)}
                       chip={`Linia ${flag.line}`}
                       priceFrom={priceFromOf(flag.slug)}
+                      priceUnit="za karton"
                       size="large"
                       className="sm:col-span-2 lg:col-span-2"
                       showImage={false}
@@ -252,6 +253,7 @@ export default async function Page() {
                         href={ribbonSeriesUrl(s)}
                         chip={`Linia ${s.line}`}
                         priceFrom={priceFromOf(s.slug)}
+                        priceUnit="za karton"
                       />
                     )
                   })}

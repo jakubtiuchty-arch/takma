@@ -4,6 +4,8 @@ import { tierPrice, type PriceTier } from '@/lib/price-tiers'
 import type { Product, ProductVariant } from '@/data/products'
 
 import { ribbonNameToSlug } from '@/lib/ribbon-name-to-slug'
+import { ribbonCartonQty } from '@/data/ribbon-carton-qty'
+import { labelCartonQty } from '@/data/label-carton-qty'
 
 /**
  * Katalog na żądanie.
@@ -106,6 +108,30 @@ export interface CartItem {
   /** Numer oferty, z której pochodzi pozycja — cena jest wtedy zamrożona
    *  (kasa nie podmienia jej na żywą) i weryfikowana po stronie serwera. */
   quoteNumber?: string
+  /** Krok ilości: karton Zebry (`__karton`) liczy się w rolkach, ale zmienia się o cały karton. */
+  quantityStep?: number
+  /** Jednostka sprzedaży: taśmy SATO — 1 szt. w koszyku = 1 karton. Brak = sztuka. */
+  jednostka?: 'karton'
+  /** Liczba rolek w kartonie (przy `jednostka: 'karton'`). */
+  sztukWJednostce?: number
+}
+
+/**
+ * Krok ilości pozycji. Pozycje kartonowe zapisane przed dodaniem `quantityStep`
+ * (localStorage) dostają krok z liczby sztuk w kartonie po PN.
+ */
+export function krokIlosci(item: Pick<CartItem, 'productId' | 'partNumber' | 'quantityStep'>): number {
+  if (item.quantityStep && item.quantityStep > 1) return item.quantityStep
+  if (item.productId.endsWith('__karton') && item.partNumber) {
+    const sztuk = ribbonCartonQty(item.partNumber) ?? labelCartonQty(item.partNumber)
+    if (sztuk && sztuk > 1) return sztuk
+  }
+  return 1
+}
+
+/** Ilość zaokrąglona w górę do wielokrotności kroku (minimum = krok). */
+function ilosciZKrokiem(quantity: number, krok: number): number {
+  return Math.max(krok, Math.ceil(quantity / krok) * krok)
 }
 
 /** Kod rabatowy wpisany w koszyku — dane przyjęte z weryfikacji na serwerze. */
@@ -134,6 +160,10 @@ interface CartStore {
     priceNetto?: number
     priceTiers?: PriceTier[]
     categoryId?: string
+    /** Krok ilości (karton Zebry: liczba sztuk w kartonie). Nowa pozycja startuje od kroku. */
+    quantityStep?: number
+    jednostka?: 'karton'
+    sztukWJednostce?: number
   }) => void
   /** Zastępuje zawartość koszyka pozycjami z oferty (link „zamów z oferty" w mailu). */
   loadFromQuote: (quoteNumber: string, items: Omit<CartItem, 'note' | 'quoteNumber'>[]) => void
@@ -188,11 +218,11 @@ export const useCartStore = create<CartStore>()(
         const existingItem = items.find((item) => item.productId === product.id)
 
         if (existingItem) {
-          // Zwieksz ilosc jesli juz istnieje
+          // Zwieksz ilosc jesli juz istnieje (karton: o cały karton)
           set({
             items: items.map((item) =>
               item.productId === product.id
-                ? repriceForQuantity({ ...item, quantity: item.quantity + 1 })
+                ? repriceForQuantity({ ...item, quantity: item.quantity + krokIlosci(item) })
                 : item
             ),
           })
@@ -208,9 +238,11 @@ export const useCartStore = create<CartStore>()(
                 productSlug: product.slug,
                 productImage: product.image,
                 partNumber: product.partNumber,
-                quantity: 1,
+                quantity: product.quantityStep && product.quantityStep > 1 ? product.quantityStep : 1,
                 note: '',
                 priceNetto: product.priceNetto,
+                ...(product.quantityStep && product.quantityStep > 1 ? { quantityStep: product.quantityStep } : {}),
+                ...(product.jednostka ? { jednostka: product.jednostka, sztukWJednostce: product.sztukWJednostce } : {}),
                 ...(hasTiers ? { priceTiers: product.priceTiers, basePriceNetto: product.priceNetto } : {}),
                 categoryId: product.categoryId,
               },
@@ -247,7 +279,9 @@ export const useCartStore = create<CartStore>()(
 
         set({
           items: get().items.map((item) =>
-            item.productId === productId ? repriceForQuantity({ ...item, quantity }) : item
+            item.productId === productId
+              ? repriceForQuantity({ ...item, quantity: ilosciZKrokiem(quantity, krokIlosci(item)) })
+              : item
           ),
         })
       },

@@ -5,6 +5,7 @@ import { transferLabelSeries } from '@/data/transfer-label-series'
 import { allRibbonSeries, ribbonSeriesUrl } from '@/data/ribbon-series-registry'
 import { products } from '@/data/products'
 import { stripMarkdown } from '@/lib/strip-markdown'
+import { rolekWKartonieSato } from '@/lib/sato-karton'
 
 function getBaseUrl(): string {
   if (process.env.NEXT_PUBLIC_BASE_URL) return process.env.NEXT_PUBLIC_BASE_URL
@@ -217,9 +218,11 @@ export const checkMaterialStock = tool({
       : stockEU > 0
         ? 'magazyn EU — wysyłka 2-3 dni'
         : null
+    // Taśmy SATO: sprzedaż tylko w kartonach — cena dotyczy kartonu.
+    const rolekSato = rolekWKartonieSato(partNumber)
     return {
       partNumber,
-      name: `${product?.name ?? ''} ${variant.name}`.trim(),
+      name: `${product?.name ?? ''} ${variant.name}${rolekSato ? ` — karton ${rolekSato} rolek` : ''}`.trim(),
       // Bez żywej ceny lepiej nie podawać żadnej niż podać nieaktualną z katalogu.
       price: live?.price ?? null,
       status: available ? 'Dostępna' : 'Niedostępna',
@@ -234,7 +237,7 @@ export const prepareCartItem = tool({
   description: 'Przygotuj pozycję do dodania do koszyka (konkretny rozmiar materiału). Zwraca dane; klient potwierdzi dodanie w interfejsie. Użyj, gdy klient chce kupić/dodać konkretny wariant.',
   inputSchema: z.object({
     partNumber: z.string().describe('Part Number wariantu do dodania'),
-    quantity: z.number().optional().default(1).describe('Liczba sztuk/rolek'),
+    quantity: z.number().optional().default(1).describe('Liczba sztuk/rolek (taśmy SATO: liczba kartonów)'),
   }),
   execute: async ({ partNumber, quantity }) => {
     const { product, variant } = findVariant(partNumber)
@@ -242,17 +245,20 @@ export const prepareCartItem = tool({
     const live = await liveStock(partNumber)
     const price = live?.price ?? null
     if (!price) return { error: 'Brak ceny dla tego wariantu — zaproponuj kontakt.' }
+    // Taśmy SATO: 1 szt. = 1 karton, cena = cena kartonu.
+    const rolekSato = rolekWKartonieSato(partNumber)
     return {
       // payload do koszyka (klient woła cartStore.addItem po potwierdzeniu)
       cartItem: {
         id: `${product.slug}__${partNumber}`,
-        name: `${product.name} ${variant.name}`.trim(),
+        name: `${product.name} ${variant.name}${rolekSato ? ` — karton ${rolekSato} rolek` : ''}`.trim(),
         slug: product.slug,
         image: product.images?.[0] ?? null,
         partNumber,
         priceNetto: price,
         categoryId: product.categoryId,
         quantity: quantity ?? 1,
+        ...(rolekSato ? { jednostka: 'karton' as const, sztukWJednostce: rolekSato } : {}),
       },
     }
   },

@@ -17,7 +17,7 @@ import {
   MailIcon,
 } from '@/components/ui/Icons'
 import { usedSlugFromProductId } from '@/lib/used-devices'
-import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
+import { useCartStore, krokIlosci, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
 import { products, type Product } from '@/data/products'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import LiveRibbonPrice, { LiveRibbonProvider } from '@/components/labels/LiveRibbonPrice'
@@ -1338,6 +1338,15 @@ function CartItemRow({
 }) {
   const unitPrice = livePrice ?? item.priceNetto ?? findProductPrice(item.productId)
   const lineTotal = unitPrice ? unitPrice * item.quantity : null
+  // Karton (krok > 1): wpisana ilość zaokrągla się w górę do pełnych kartonów dopiero po wyjściu
+  // z pola — przy zaokrąglaniu na każdym znaku nie dałoby się wpisać liczby wielocyfrowej.
+  const krok = krokIlosci(item)
+  const [wpisanaIlosc, setWpisanaIlosc] = useState<string | null>(null)
+  const zatwierdzIlosc = () => {
+    if (wpisanaIlosc === null) return
+    onUpdateQuantity(item.productId, parseInt(wpisanaIlosc) || krok)
+    setWpisanaIlosc(null)
+  }
 
   return (
     <li className="p-3 sm:p-6">
@@ -1381,8 +1390,11 @@ function CartItemRow({
           {/* Cena jednostkowa */}
           {unitPrice && (
             <p className="text-sm text-gray-600 mt-1">
-              {formatPrice(unitPrice)} zl netto / szt.
+              {formatPrice(unitPrice)} zl netto / {item.jednostka === 'karton' ? 'kart.' : 'szt.'}
             </p>
+          )}
+          {item.jednostka === 'karton' && item.sztukWJednostce && (
+            <p className="text-xs text-gray-500">za karton {item.sztukWJednostce} rolek</p>
           )}
 
           {/* Ilość — używka jest jedną sztuką, więc licznika nie pokazujemy wcale */}
@@ -1392,7 +1404,7 @@ function CartItemRow({
           <div className="flex items-center gap-2 mt-3">
             <span className="text-xs text-gray-500">Ilość:</span>
             <button
-              onClick={() => onUpdateQuantity(item.productId, item.quantity - 1)}
+              onClick={() => onUpdateQuantity(item.productId, item.quantity - krok)}
               className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 hover:border-gray-300 transition-colors"
               aria-label="Zmniejsz ilość"
             >
@@ -1400,15 +1412,20 @@ function CartItemRow({
             </button>
             <input
               type="number"
-              value={item.quantity}
+              value={wpisanaIlosc ?? item.quantity}
               onChange={(e) =>
-                onUpdateQuantity(item.productId, parseInt(e.target.value) || 1)
+                krok > 1
+                  ? setWpisanaIlosc(e.target.value)
+                  : onUpdateQuantity(item.productId, parseInt(e.target.value) || 1)
               }
-              min="1"
+              onBlur={zatwierdzIlosc}
+              onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }}
+              min={krok}
+              step={krok}
               className="w-14 h-7 text-center border border-gray-200 rounded-md text-sm focus:outline-none focus:border-primary-500"
             />
             <button
-              onClick={() => onUpdateQuantity(item.productId, item.quantity + 1)}
+              onClick={() => onUpdateQuantity(item.productId, item.quantity + krok)}
               className="w-7 h-7 rounded-md border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 hover:border-gray-300 transition-colors"
               aria-label="Zwiększ ilość"
             >

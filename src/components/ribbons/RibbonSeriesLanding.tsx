@@ -261,6 +261,7 @@ export default async function RibbonSeriesLanding({ series }: { series: RibbonSe
             seriesTitle={series.title}
             manufacturerName={copy.manufacturerName}
             examplePn={brand === 'sato' ? product.variants[0].partNumber : undefined}
+            manufacturerId={product.manufacturerId}
             initialStock={seriesStock}
           />
         </section>
@@ -542,7 +543,7 @@ export default async function RibbonSeriesLanding({ series }: { series: RibbonSe
               </h2>
               <p className="text-gray-600 text-sm">
                 {priceFrom
-                  ? <>{variantCount} wariantów rozmiarowych od {priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł netto.</>
+                  ? <>{variantCount} wariantów rozmiarowych od {priceFrom.toLocaleString('pl-PL', { maximumFractionDigits: 0 })} zł netto{brand === 'sato' ? ' za karton' : ''}.</>
                   : <>{variantCount} wariantów rozmiarowych.</>}{' '}
                 Doradzimy w doborze i wyślemy próbki.
               </p>

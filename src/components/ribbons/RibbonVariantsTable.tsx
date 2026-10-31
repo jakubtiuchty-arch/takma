@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { ribbonSizeSlug, type ProductVariant } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 import { timeoutSignal } from '@/lib/timeout-signal'
+import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 import { ChevronDownIcon, HelpCircleIcon, SearchIcon, CloseIcon } from '@/components/ui/Icons'
 
 interface Props {
@@ -22,6 +23,8 @@ interface Props {
   initialStock?: StockInfo[]
   /** Przykładowy numer katalogowy w polu wyszukiwania (domyślnie PN taśmy Zebra 2300). */
   examplePn?: string
+  /** Producent — taśmy SATO mają cenę za karton (dopisek z liczbą rolek). */
+  manufacturerId?: string
 }
 
 /** Bezpieczne wyciągnięcie atrybutu */
@@ -132,6 +135,7 @@ export default function RibbonVariantsTable({
   manufacturerName = 'Zebra',
   initialStock,
   examplePn = '02300BK11045',
+  manufacturerId,
 }: Props) {
   // Stan filtrów — taśma: Szerokość / Długość / Rdzeń / Nawój (Nawój tylko taśmy z tym atrybutem, np. SATO)
   const [search, setSearch] = useState('')
@@ -495,6 +499,7 @@ export default function RibbonVariantsTable({
                     productImage={variantImage}
                     seriesTitle={seriesTitle}
                     manufacturerName={manufacturerName}
+                    rolekWKartonie={rolekWKartonieSatoKlient(manufacturerId, v.partNumber)}
                     stockInfo={stockMap.get(v.partNumber)}
                     stockLoading={stockLoading && !stockMap.has(v.partNumber)}
                   />
@@ -545,6 +550,7 @@ function VariantCard({
   productImage,
   seriesTitle,
   manufacturerName,
+  rolekWKartonie,
   stockInfo,
   stockLoading,
 }: {
@@ -553,6 +559,8 @@ function VariantCard({
   productImage?: string
   seriesTitle: string
   manufacturerName: string
+  /** Taśmy SATO: liczba rolek w kartonie — cena dotyczy całego kartonu. */
+  rolekWKartonie?: number | null
   stockInfo?: StockInfo
   stockLoading?: boolean
 }) {
@@ -647,13 +655,16 @@ function VariantCard({
 
         {/* Cena */}
         <div className="mt-auto pt-3 border-t border-slate-100">
-          <div className="flex items-baseline gap-1.5 mb-3 min-h-[28px]">
+          <div className={`flex items-baseline gap-1.5 mb-3 min-h-[28px]${rolekWKartonie ? ' flex-wrap gap-y-0' : ''}`}>
             {livePrice ? (
               <>
                 <span className="text-lg sm:text-xl font-bold text-gray-900">
                   {livePrice.toLocaleString('pl-PL', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} zł
                 </span>
                 <span className="text-xs sm:text-sm text-gray-500">netto</span>
+                {rolekWKartonie && (
+                  <span className="basis-full text-xs text-gray-500">karton {rolekWKartonie} rolek</span>
+                )}
               </>
             ) : (
               <span className="text-gray-400 text-sm">Zapytaj o cenę</span>

@@ -153,7 +153,7 @@ export const satoRibbonSeries: RibbonSeries[] = [
       { question: 'Czy SWX85 drukuje na folii?', answer: 'Nie. W ocenie SATO materiały syntetyczne mają 1 na 5. Na folie PET, PP i PE służy taśma żywiczna SRS85 lub SRS100, a na część folii taśma woskowo-żywiczna SWR85 lub SWR100.' },
       { question: 'Czy SWX85 ma atest kontaktu z żywnością?', answer: 'Tak. Taśma spełnia wymagania rozporządzenia UE 1935/2004/WE i przepisów FDA (USA), a także REACH/SVHC, RoHS i California Proposition 65.' },
       { question: 'Jak przechowywać taśmę SWX85?', answer: 'Do 12 miesięcy w temperaturze 5–35°C i wilgotności 20–80%, w oryginalnym opakowaniu.' },
-      { question: 'Ile rolek jest w opakowaniu SWX85?', answer: 'Każdy rozmiar SWX85 jest pakowany po 10 rolek. Taśmę można kupić na rolki albo w pełnym kartonie, w niższej cenie za rolkę.' },
+      { question: 'Ile rolek jest w opakowaniu SWX85?', answer: 'Każdy rozmiar SWX85 jest pakowany po 10 rolek. Taśmy SATO są w sprzedaży tylko w pełnych kartonach.' },
     ],
     recommendedForLabels: [],
     downloads: karta('SWX85', 'sato-swx85-datasheet-en.pdf'),

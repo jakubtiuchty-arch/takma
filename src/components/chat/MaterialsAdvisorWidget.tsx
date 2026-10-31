@@ -62,6 +62,8 @@ function renderText(text: string) {
 interface CartPayload {
   id: string; name: string; slug: string; image?: string | null
   partNumber: string; priceNetto: number; categoryId: string; quantity: number
+  /** Taśmy SATO: pozycja = karton */
+  jednostka?: 'karton'; sztukWJednostce?: number
 }
 
 function CartButton({ item }: { item: CartPayload }) {
@@ -74,6 +76,7 @@ function CartButton({ item }: { item: CartPayload }) {
       id: item.id, name: item.name, slug: item.slug,
       image: item.image ?? undefined, partNumber: item.partNumber,
       priceNetto: item.priceNetto, categoryId: item.categoryId,
+      ...(item.jednostka ? { jednostka: item.jednostka, sztukWJednostce: item.sztukWJednostce } : {}),
     })
     trackAdvisorAddToCart(item.name, item.partNumber)
     if (item.quantity > 1) updateQuantity(item.id, item.quantity)

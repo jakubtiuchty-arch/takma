@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import { CloseIcon, TrashIcon, MinusIcon, PlusIcon, ArrowRightIcon } from '@/components/ui/Icons'
 import { Button } from '@/components/ui'
-import { useCartStore, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
+import { useCartStore, krokIlosci, type CartItem, type AppliedPromoCode } from '@/store/cartStore'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { trackRemoveFromCart, trackViewCart } from '@/lib/ga-events'
 import { LICENCJA_DOSTAWA } from '@/lib/licencje'
@@ -293,6 +293,9 @@ export default function RFQDrawer() {
                               <span className="text-xs font-normal text-gray-400 ml-1">netto</span>
                             </p>
                           ) : null}
+                          {item.jednostka === 'karton' && item.sztukWJednostce && (
+                            <p className="text-xs text-gray-500">za karton {item.sztukWJednostce} rolek</p>
+                          )}
 
                           {/* Quantity controls — używka to jedna sztuka, bez licznika */}
                           {item.productId.startsWith('uzywane__') ? (
@@ -300,7 +303,7 @@ export default function RFQDrawer() {
                           ) : (
                           <div className="flex items-center gap-2 mt-2">
                             <button
-                              onClick={() => updateQuantity(item.productId, item.quantity - 1)}
+                              onClick={() => updateQuantity(item.productId, item.quantity - krokIlosci(item))}
                               className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-colors"
                               aria-label="Zmniejsz ilość"
                             >
@@ -310,13 +313,13 @@ export default function RFQDrawer() {
                               {item.quantity}
                             </span>
                             <button
-                              onClick={() => updateQuantity(item.productId, item.quantity + 1)}
+                              onClick={() => updateQuantity(item.productId, item.quantity + krokIlosci(item))}
                               className="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-colors"
                               aria-label="Zwiększ ilość"
                             >
                               <PlusIcon size={16} />
                             </button>
-                            <span className="text-sm text-gray-500 ml-1">szt.</span>
+                            <span className="text-sm text-gray-500 ml-1">{item.jednostka === 'karton' ? 'kart.' : 'szt.'}</span>
 
                             {/* Kwota za pozycję */}
                             {unitPrice && item.quantity > 1 && (

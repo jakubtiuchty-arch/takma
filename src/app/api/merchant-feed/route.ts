@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { przeliczCeneSato, rolekWKartonieSato } from '@/lib/sato-karton'
 import {
   products,
   getCategoryById,
@@ -248,7 +249,7 @@ export async function GET() {
       const [sc, eans] = await Promise.all([
         prisma.stockCache.findMany({
           where: { partNumber: { in: chunk } },
-          select: { partNumber: true, price: true, availability: true, totalStock: true, found: true },
+          select: { partNumber: true, price: true, ingramPrice: true, availability: true, totalStock: true, found: true },
         }),
         prisma.productEan.findMany({
           where: { partNumber: { in: chunk.map(s => s.toUpperCase()) } },
@@ -257,7 +258,8 @@ export async function GET() {
       ])
       // Te same reguły licencji co na stronie: licencja z ceną jest dostępna mimo zerowego stanu,
       // pozycja na zapytanie traci cenę z cache.
-      for (const r of sc) stockMap.set(r.partNumber, nalozRegulyLicencji(r))
+      // Taśmy SATO: cena kartonu przeliczona z ceny zakupu (lib/sato-karton), cena zakupu nie trafia do feedu.
+      for (const { ingramPrice: _cenaZakupu, ...r } of sc.map(przeliczCeneSato)) stockMap.set(r.partNumber, nalozRegulyLicencji(r))
       for (const r of eans) if (isValidGtin(r.ean)) eanMap.set(r.partNumber, r.ean)
     }
   } catch (err) {
@@ -313,7 +315,9 @@ export async function GET() {
 
     // "Uchwyt pistoletowy" wyzwala klasyfikator GMC "Guns and Parts" (odrzucenie) —
     // w feedzie neutralna nazwa; na stronie produktu nazwa bez zmian
-    const rawTitle = tytulBazowy(c.product, c.variant)
+    // Taśmy SATO: sprzedaż tylko w kartonach — cena dotyczy kartonu, więc tytuł to mówi.
+    const rolekSato = rolekWKartonieSato(c.pn)
+    const rawTitle = `${tytulBazowy(c.product, c.variant)}${rolekSato ? `, karton ${rolekSato} rolek` : ''}`
     const typ = typUrzadzenia(c.product)
     const title = truncate(`${typ ? `${typ} ` : ''}${rawTitle}`.replace(/uchwyt pistoletowy/gi, 'Rękojeść skanera (trigger)'), 146) // truncate dopisuje „...”, limit Google to 150 znaków
 

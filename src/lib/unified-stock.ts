@@ -3,7 +3,7 @@ import { lookupStock as bluestarLookup } from '@/lib/bluestar'
 import { lookupStock as jarltechLive } from '@/lib/jarltech'
 import { prisma } from '@/lib/db'
 import { isRibbonPN } from '@/data/transfer-ribbon-products'
-import { isSatoRibbonPN } from '@/data/sato-ribbon-products'
+import { czyKartonowySato, cenaKartonuSato, przeliczCeneSato, dzielnikPakietuBlueStar } from '@/lib/sato-karton'
 import { products, isLabelPN, getCatalogNetPrice } from '@/data/products'
 import { rfidLabelPartNumbers } from '@/data/rfid-label-products'
 import type { StockInfo } from '@/lib/ingram'
@@ -171,7 +171,9 @@ export async function lookupUnifiedStock(
     const overriddenPNs: string[] = []
 
     const freshCache = new Map<string, typeof cachedRows[0]>()
-    for (const row of cachedRows) {
+    for (const wiersz of cachedRows) {
+      // Taśmy SATO: cena kartonu zawsze z ceny zakupu (stare wiersze mają cenę za rolkę).
+      const row = przeliczCeneSato({ ...wiersz })
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
       if (age >= stockCacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000)) continue
       // Nowe materiały RFID były odpytywane przed rejestracją w katalogu etykiet.
@@ -245,8 +247,11 @@ export async function lookupUnifiedStock(
           const newStockDE = Math.max(c.stockDE, item.inventory)
           const inDelivery = Math.max(c.inDelivery, item.incomingQty)
           const newTotalStock = c.stockPL + newStockDE + inDelivery
-          const margin = isRibbonPN(item.partNumber) || isSatoRibbonPN(item.partNumber) ? RIBBON_MARGIN : isLabelPN(item.partNumber) ? LABEL_MARGIN : MARGIN
-          const price = c.price ?? (item.unitPrice ? Math.round(item.unitPrice * await getEurPlnRate() * margin * 100) / 100 : null)
+          const margin = isRibbonPN(item.partNumber) ? RIBBON_MARGIN : isLabelPN(item.partNumber) ? LABEL_MARGIN : MARGIN
+          // Karton SATO: cena tylko z ceny zakupu w cache (już przeliczona wyżej), bez ceny za rolkę z Jarltecha.
+          const price = czyKartonowySato(item.partNumber)
+            ? c.price
+            : c.price ?? (item.unitPrice ? Math.round(item.unitPrice * await getEurPlnRate() * margin * 100) / 100 : null)
           freshCache.set(item.partNumber, {
             ...c,
             found: true,
@@ -319,6 +324,7 @@ export async function lookupUnifiedStock(
         }
       })
       results.forEach(applyStockOverrides)
+      results.forEach(przeliczCeneSato)
       results.forEach(dopiszCeny)
       results.forEach(regulyLicencji)
 
@@ -518,9 +524,8 @@ export async function lookupUnifiedStock(
       //   (PN 3011713: 29,87 EUR/rolkę) → NIE dziel.
       // INGRAM: zawsze cena per-szt. (PLN) → nigdy nie dzielimy.
       const isRibbon = isRibbonPN(pn)
-      const bsPackagingUnit = bs?.multipleQty && bs.multipleQty > 1
-        ? bs.multipleQty
-        : (isRibbon ? 12 : 1)
+      // Taśmy SATO: bez multipleQty dzielimy przez liczbę rolek w kartonie (lib/sato-karton).
+      const bsPackagingUnit = dzielnikPakietuBlueStar(pn, bs?.multipleQty, isRibbon)
       // Jarltech: cena ZA SZTUKĘ (potwierdzone: 03300GS08407 = 2 EUR = Ingram per-szt). NIE dzielimy.
       const jarltechPackagingUnit = 1
 
@@ -558,9 +563,12 @@ export async function lookupUnifiedStock(
       let ingramPrice: number | undefined
 
       if (bestRawPricePLN != null && bestRawPricePLN > 0) {
-        const marginForPN = zebraTerminalPartNumbers.has(pn) ? ZEBRA_TERMINAL_PRICE_MULTIPLIER : isRibbonPN(pn) || isSatoRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
-        price = Math.round(bestRawPricePLN * marginForPN * 100) / 100
-        priceBrutto = Math.round(price * VAT * 100) / 100
+        const marginForPN = zebraTerminalPartNumbers.has(pn) ? ZEBRA_TERMINAL_PRICE_MULTIPLIER : isRibbonPN(pn) ? RIBBON_MARGIN : isLabelPN(pn) ? LABEL_MARGIN : MARGIN
+        // Taśmy SATO: jednostka sprzedaży = karton (lib/sato-karton).
+        price = czyKartonowySato(pn)
+          ? cenaKartonuSato(bestRawPricePLN, pn)
+          : Math.round(bestRawPricePLN * marginForPN * 100) / 100
+        priceBrutto = price === undefined ? undefined : Math.round(price * VAT * 100) / 100
         ingramPrice = bestRawPricePLN // Najlepsza cena zakupu PLN
       }
 
@@ -682,6 +690,7 @@ export async function lookupUnifiedStock(
       }
     })
     finalResults.forEach(applyStockOverrides)
+    finalResults.forEach(przeliczCeneSato)
     finalResults.forEach(dopiszCeny)
     finalResults.forEach(regulyLicencji)
 
