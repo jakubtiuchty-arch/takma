@@ -167,11 +167,27 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
           </div>
         </section>
 
+        {data.portfolio && (
+          <section className="mb-14" aria-labelledby="sato-portfolio">
+            <h2 id="sato-portfolio" className="text-xl lg:text-2xl font-bold text-gray-900 mb-3">Pełna oferta {manufacturer.name}</h2>
+            <p className="text-gray-600 leading-relaxed mb-6 max-w-3xl">{data.portfolio.intro}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {data.portfolio.items.map(item => (
+                <article key={item.name} className="rounded-xl border border-gray-200 p-5">
+                  <h3 className="font-semibold text-gray-900 mb-2">{item.name}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                </article>
+              ))}
+            </div>
+            <Link href="/kontakt" className="inline-flex items-center gap-2 text-primary-600 font-medium mt-5">Zapytaj o dobór rozwiązania <ArrowRightIcon size={16} /></Link>
+          </section>
+        )}
+
         {/* Featured products */}
         {featuredProducts.length > 0 && (
           <section className="mb-14">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-xl lg:text-2xl font-bold text-gray-900">Popularne produkty {manufacturer.name}</h2>
+              <h2 className="text-xl lg:text-2xl font-bold text-gray-900">{data.featuredTitle ?? `Popularne produkty ${manufacturer.name}`} </h2>
             </div>
             <ProductGrid products={featuredProducts} />
           </section>
@@ -219,12 +235,12 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         {data.technologies.length > 0 && (
           <section className="mb-14">
             <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
-              {manufacturerId === 'magicard' ? 'Technologie Magicard' : `Ekosystem oprogramowania ${manufacturer.name}`}
+              {data.technologiesTitle ?? (manufacturerId === 'magicard' ? 'Technologie Magicard' : `Ekosystem oprogramowania ${manufacturer.name}`)}
             </h2>
             <p className="text-gray-500 text-sm mb-6 max-w-2xl">
-              {manufacturerId === 'magicard'
+              {data.technologiesIntro ?? (manufacturerId === 'magicard'
                 ? 'Rozwiązania, które pomagają zabezpieczyć kartę, dane użyte do jej wydruku i cały proces personalizacji.'
-                : `Każde urządzenie ${manufacturer.name} ma wbudowane oprogramowanie, które odróżnia je od konsumenckich tabletów i telefonów. Oto kluczowe platformy.`}
+                : `Każde urządzenie ${manufacturer.name} ma wbudowane oprogramowanie, które odróżnia je od konsumenckich tabletów i telefonów. Oto kluczowe platformy.`)}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {data.technologies.map((tech, i) => (
@@ -434,7 +450,7 @@ export default function BrandPillarPage({ manufacturerId }: BrandPillarPageProps
         </section>
 
         {/* Service banner */}
-        <ServiceBanner categoryId="drukarki-etykiet" manufacturerId={manufacturerId} />
+        {data.showServiceBanner !== false && <ServiceBanner categoryId="drukarki-etykiet" manufacturerId={manufacturerId} />}
 
       </div>
     </>

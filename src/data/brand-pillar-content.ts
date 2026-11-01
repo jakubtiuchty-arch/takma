@@ -1,3 +1,5 @@
+import { satoBrandContent } from './sato-brand-content'
+
 // ============================================
 // BRAND PILLAR PAGE CONTENT
 // ============================================
@@ -11,6 +13,11 @@ export interface CategoryTile {
 
 export interface BrandPillarData {
   updatedAt?: string
+  featuredTitle?: string
+  technologiesTitle?: string
+  technologiesIntro?: string
+  showServiceBanner?: boolean
+  portfolio?: { intro: string; items: { name: string; description: string }[] }
   heroText: string
   categoryTiles: CategoryTile[]
   featuredSlugs: string[]
@@ -28,6 +35,7 @@ export interface BrandPillarData {
 }
 
 export const brandPillarContent: Record<string, BrandPillarData> = {
+  sato: satoBrandContent,
   brady: {
   "heroText": "Tablety przemysłowe Brady i zgodne akcesoria do magazynu, produkcji oraz pracy na wózku. Porównaj warianty RT710, ceny i dostępność. Dobierz baterię, stację oraz klawiaturę.",
   "categoryTiles": [

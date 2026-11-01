@@ -31,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Brand pillar pages
   const brandPillarPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/sato`, lastModified: new Date('2026-11-01') },
     { url: `${baseUrl}/brady`, lastModified: new Date('2026-10-18') },
     { url: `${baseUrl}/magicard`, lastModified: new Date('2026-09-04') },
     { url: `${baseUrl}/zebra`, lastModified: new Date('2026-03-12') },
