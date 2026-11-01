@@ -1,0 +1,80 @@
+import type { BrandCategoryRichContent } from './brand-category-content'
+
+export const satoPrinterCategory: BrandCategoryRichContent = {
+  updatedAt: '2026-11-01',
+  sectionHeadings: {
+    technicalDeepDive: 'Porównaj rodziny drukarek SATO',
+    useCases: 'Dobór drukarki SATO do stanowiska pracy',
+    comparisons: 'Format, rozdzielczość i sposób druku',
+    expertAuthority: 'Dobór całego stanowiska etykietowania',
+    howToSteps: 'Od projektu etykiety do uruchomienia drukarki',
+  },
+  technicalDeepDive: 'W katalogu są urządzenia przemysłowe, modele kompaktowe i konfiguracje RFID. Poniższe zestawienie pokazuje ich rolę. Szczegółowe parametry i wyposażenie sprawdź na karcie wybranego PN.',
+  modelTableLayout: 'tabela',
+  modelTable: [
+    { name: 'SATO CL4-SXR', href: '/produkt/sato-cl4-sxr', role: 'Przemysłowa, format 4 cale', priceFrom: '', specs: [{ label: 'Rodzina', value: 'CL-SXR' }, { label: 'Zastosowanie', value: 'etykiety produktowe i magazynowe' }], bestFor: 'Produkcja i magazyn, gdy wystarcza węższy format etykiety.' },
+    { name: 'SATO CL6-SXR', href: '/produkt/sato-cl6-sxr', role: 'Przemysłowa, format 6 cali', priceFrom: '', specs: [{ label: 'Rodzina', value: 'CL-SXR' }, { label: 'Zastosowanie', value: 'szersze etykiety logistyczne' }], bestFor: 'Kartony, palety i wzory wymagające większej szerokości nadruku.' },
+    { name: 'SATO CL4NX Plus', href: '/produkt/sato-cl4nx-plus', role: 'Przemysłowa, format 4 cale', priceFrom: '', specs: [{ label: 'Rodzina', value: 'CLNX Plus' }, { label: 'Zastosowanie', value: 'stanowiska produkcyjne i logistyczne' }], bestFor: 'Nowe stanowisko lub rozbudowa floty korzystającej z rodziny CLNX Plus.' },
+    { name: 'SATO CL6NX Plus', href: '/produkt/sato-cl6nx-plus', role: 'Przemysłowa, format 6 cali', priceFrom: '', specs: [{ label: 'Rodzina', value: 'CLNX Plus' }, { label: 'Zastosowanie', value: 'szerokie etykiety' }], bestFor: 'Duże opakowania i etykiety z rozbudowanym układem danych.' },
+    { name: 'SATO CT4-LX RFID', href: '/produkt/sato-ct4-lx-rfid', role: 'Kompaktowa z RFID', priceFrom: '', specs: [{ label: 'Stanowisko', value: 'biurko lub lada' }, { label: 'RFID', value: 'zgodnie z konfiguracją' }], bestFor: 'Drukowanie i kodowanie etykiet na stanowisku z ograniczonym miejscem.' },
+    { name: 'SATO CT4-LX-HC', href: '/produkt/sato-ct4-lx-hc', role: 'Do ochrony zdrowia', priceFrom: '', specs: [{ label: 'Zastosowanie', value: 'etykiety medyczne' }, { label: 'Dobór', value: 'według nośnika i PN' }], bestFor: 'Identyfikacja próbek i materiałów w placówkach medycznych.' },
+    { name: 'SATO WS2-2', href: '/produkt/sato-ws2-2', role: 'Kompaktowa, format 2 cale', priceFrom: '', specs: [{ label: 'Zastosowanie', value: 'ochrona zdrowia' }, { label: 'Format', value: 'wąskie nośniki' }], bestFor: 'Stanowisko identyfikacji pacjenta po dobraniu zgodnych etykiet lub opasek.' },
+  ],
+  buyingGuide: {
+    heading: 'Jak wybrać drukarkę SATO? Sześć decyzji przed zakupem',
+    items: [
+      'Wymiar etykiety i szerokość nadruku. Rozmiar rolki nie określa jeszcze pola, które można zadrukować. Sprawdź szerokość nośnika, rzeczywistą szerokość projektu oraz marginesy. Do małego oznaczenia produktu nie potrzebujesz urządzenia 6-calowego; szeroka etykieta paletowa może go wymagać.',
+      'Nakład i organizacja zmiany. Policz etykiety dziennie, długość serii i liczbę wymian rolki. Ważne jest również to, czy operator pobiera po jednej etykiecie, czy drukuje całą partię. Prędkość maksymalna nie określa wydajności kompletnego stanowiska.',
+      'Rozdzielczość i treść kodu. Rozmiar najmniejszego tekstu oraz modułu kodu wpływa na wybór głowicy. Gęsty DataMatrix wymaga oceny liczby danych i dostępnego pola. Wyższa rozdzielczość nie naprawi złego projektu ani niewłaściwego materiału.',
+      'Trwałość oznaczenia. Ustal czas użytkowania etykiety, temperaturę, kontakt z wodą, środkami chemicznymi i tarcie. Na tej podstawie wybierz materiał oraz druk termiczny lub termotransferowy. Przy termotransferze trzeba dopasować również taśmę.',
+      'Źródło danych i połączenie. Określ, czy projekt powstaje na komputerze, czy dane przychodzą z ERP lub WMS. Sprawdź sterownik, język komend, interfejs oraz sposób wysyłania zlecenia. Przy zmianie marki drukarki zaplanuj próbę istniejącego szablonu.',
+      'Wyposażenie stanowiska. Odklejak, obcinak, nawijak, moduł RFID i łączność bezprzewodowa nie są wymienne między wszystkimi modelami. Porównuj konkretne PN oraz zawartość zestawu, a nie tylko nazwę rodziny.',
+    ],
+  },
+  useCases: [
+    { title: 'Produkcja i oznaczanie partii', description: 'Na stanowisku produkcyjnym liczą się powtarzalny odczyt kodu i trwałość oznaczenia. Porównaj CL4-SXR z CL4NX Plus. Uwzględnij pył, częstotliwość wymian materiałów i sposób odbioru etykiety przez operatora.' },
+    { title: 'Magazyn i wysyłka', description: 'Etykiety jednostkowe i kartonowe dobierz do rzeczywistego szablonu. Jeśli potrzebujesz szerszego pola, sprawdź CL6-SXR i CL6NX Plus. Przetestuj druk z WMS, skanowanie i powtórny wydruk po przerwaniu serii.' },
+    { title: 'Palety i duże opakowania', description: 'Zacznij od wymaganego wzoru etykiety logistycznej. Sprawdź szerokość nadruku, wielkość kodu, orientację i miejsce naklejenia. Sam wybór szerszej drukarki nie zapewnia poprawności danych SSCC.' },
+    { title: 'Próbki i identyfikacja pacjentów', description: 'CT4-LX-HC i WS2-2 uzupełniają ofertę medyczną. Przed zakupem określ typ etykiety lub opaski, wymagania czyszczenia i sposób przekazywania danych. Materiał musi odpowiadać zastosowaniu.' },
+    { title: 'Druk i kodowanie RFID', description: 'Wybierz konfigurację RFID, jeśli poza widocznym nadrukiem trzeba zapisać dane w znaczniku. Sprawdź standard, położenie inlayu i odległość między znacznikami. Próba powinna obejmować zapis oraz późniejszy odczyt.' },
+    { title: 'Małe stanowisko robocze', description: 'Przy ograniczonym miejscu porównaj model kompaktowy z przemysłowym razem z zapasem materiałów i akcesoriami. Pozostaw przestrzeń na otwarcie obudowy, wymianę rolki, przewody i wygodne pobieranie etykiet.' },
+  ],
+  definition: {
+    heading: 'Drukarka jest częścią systemu identyfikacji',
+    content: 'Wybór urządzenia zaczyna się od oznaczenia, które ma powstać. Ta sama drukarka może drukować różne etykiety, ale ich trwałość zależy od materiału, kleju i taśmy. Na jakość kodu wpływają także projekt, ustawienia oraz stan głowicy.\n\nSATO oferuje więcej niż drukarki: materiały, metkownice, rozwiązania RFID i oprogramowanie opisujemy na [stronie marki SATO](/sato). Ta kategoria skupia się na urządzeniach z katalogu TAKMA i prowadzi do ich konfiguracji. Pozostałych rodzin producenta nie przedstawiamy jako dostępnych modeli sklepowych.',
+  },
+  comparisons: [
+    { title: 'Drukarka 4-calowa czy 6-calowa?', verdict: 'Wybierz szerokość według pola nadruku w gotowym projekcie.', content: 'Format 4 cale jest punktem wyjścia do wielu etykiet produktowych i magazynowych. Format 6 cali daje więcej miejsca na rozbudowane etykiety opakowań. Nie należy utożsamiać szerokości papieru z maksymalną szerokością nadruku.\n\nPorównując [CL4-SXR](/produkt/sato-cl4-sxr) z [CL6-SXR](/produkt/sato-cl6-sxr), uwzględnij też koszt materiału i miejsce na stanowisku. Szersza drukarka nie musi być korzystniejsza przy wąskich etykietach.' },
+    { title: 'Druk termiczny czy termotransferowy?', verdict: 'Sposób druku dobierz do nośnika i wymaganej trwałości.', content: 'Druk termiczny wymaga materiału termoczułego i nie zużywa taśmy barwiącej. Termotransfer przenosi warstwę barwiącą z taśmy na etykietę. Pozwala dobierać zestaw materiałów do trudniejszych warunków, lecz wynik zależy od ich zgodności.\n\nDla papieru i folii potrzebne mogą być różne taśmy. Sprawdź [serie SATO](/tasmy-termotransferowe-sato), a przed zamówieniem większej partii oceń przyczepność i odporność nadruku.' },
+    { title: '203, 300 czy 600 dpi?', verdict: 'Zacznij od najmniejszego elementu projektu, nie od najwyższej liczby dpi.', content: 'Wyższa rozdzielczość daje więcej punktów na tej samej długości. Pomaga odwzorować drobne elementy, ale nie zastępuje poprawnego wymiarowania kodu. Ostateczny wybór wymaga uwzględnienia danych, wielkości symbolu i warunków odczytu.\n\nRozdzielczości różnią się między modelami i PN. Prędkość, głowica i parametry projektu również mogą się różnić. Nie zakładaj, że każda konfiguracja danej rodziny jest oferowana w każdej rozdzielczości.' },
+    { title: 'CL-SXR czy CLNX Plus?', verdict: 'Porównaj konfigurację, zgodność z aplikacją i obsługę stanowiska.', content: 'Obie rodziny obejmują drukarki przemysłowe. Przy rozbudowie istniejącej floty sprawdź zgodność szablonów, akcesoriów i procedur operatora. W nowym wdrożeniu porównaj wymagane interfejsy, parametry i wyposażenie.\n\nNie przenoś automatycznie akcesoriów lub ustawień z jednego modelu na drugi. Karta konkretnego PN jest podstawą porównania.' },
+  ],
+  uniqueInsights: {
+    heading: 'Materiały i akcesoria: co sprawdzić razem z drukarką',
+    items: [
+      { title: 'Taśma i etykieta jako komplet', text: 'Szerokość taśmy musi odpowiadać nośnikowi i wymaganiom drukarki. Długość nawoju i gilza decydują o fizycznej zgodności. Wybór wosku, mieszanki lub żywicy zależy od podłoża i warunków użytkowania.' },
+      { title: 'Odklejak i sposób podawania', text: 'Odklejak pomaga odbierać pojedyncze etykiety. Trzeba sprawdzić wymagania dotyczące podkładu, długości etykiety i ewentualnego nawijania podkładu. Nie każdy zestaw zawiera wszystkie potrzebne elementy.' },
+      { title: 'Obcinak a materiał', text: 'Zgodność obcinaka dotyczy nie tylko modelu drukarki, ale także rodzaju i grubości materiału. Ustal miejsce cięcia i wymagania obsługi. Nie zakładaj możliwości cięcia przez dowolną warstwę kleju.' },
+      { title: 'Utrzymanie jakości druku', text: 'Zaplanuj czyszczenie głowicy i toru materiału według instrukcji urządzenia. Zbyt wysoka energia druku nie jest uniwersalnym sposobem poprawy kodu; sprawdź najpierw materiał, taśmę, prędkość i stan elementów.' },
+    ],
+  },
+  howToSteps: [
+    { name: 'Określ etykietę i dane', text: 'Zapisz wymiar, treść kodu, minimalny tekst i warunki użytkowania. Ustal również wymagania odbiorcy etykiety.' },
+    { name: 'Dobierz model i PN', text: 'Porównaj pole nadruku, rozdzielczość, interfejsy i wyposażenie. Sprawdź, które opcje są już zawarte w konfiguracji.' },
+    { name: 'Sprawdź materiały i aplikację', text: 'Dobierz etykietę oraz taśmę, zainstaluj właściwy sterownik i przygotuj szablon. Skontroluj sposób pobierania danych z systemu.' },
+    { name: 'Wykonaj próbę procesu', text: 'Sprawdź wydruk, odczyt kodu, kolejne etykiety, wznowienie zadania i odbiór materiału. Dla RFID dołącz zapis i odczyt znacznika.' },
+    { name: 'Zapisz ustawienia stanowiska', text: 'Zachowaj zatwierdzony projekt i ustawienia materiału. Przygotuj instrukcję wymiany rolki oraz zasady czyszczenia dla operatora.' },
+  ],
+  expertAuthority: 'Dobór obejmuje drukarkę, konfigurację, etykietę, taśmę i akcesoria. W zapytaniu warto wskazać format, nakład i aplikację, z której ma być uruchamiany druk. Dzięki temu można porównać konkretne PN, zamiast zestawiać urządzenia o różnym wyposażeniu.',
+  contactText: 'Dobierzemy model, szerokość druku, materiał i wyposażenie do Twojego stanowiska. Porównamy konkretne konfiguracje SATO.',
+  faq: [
+    { question: 'Czy każda drukarka SATO obsługuje termotransfer?', answer: 'Nie zakładaj tego na podstawie samej marki. Sprawdź technologię druku w wybranym PN. Druk termotransferowy wymaga mechanizmu prowadzenia taśmy oraz zgodnego materiału.' },
+    { question: 'Czy 600 dpi gwarantuje odczyt małego DataMatrix?', answer: 'Nie. Znaczenie mają liczba danych, wielkość modułu, strefa ciszy, kontrast i jakość materiału. Rozdzielczość dobiera się do projektu; sam odczyt skanerem nie zastępuje weryfikacji jakości kodu, jeśli jest wymagana.' },
+    { question: 'Które modele wybrać do szerokich etykiet?', answer: 'Porównaj [CL6-SXR](/produkt/sato-cl6-sxr) i [CL6NX Plus](/produkt/sato-cl6nx-plus). Sprawdź rzeczywistą maksymalną szerokość nadruku dla wybranej konfiguracji i ustawień.' },
+    { question: 'Czy drukarka RFID tworzy system agregacji?', answer: 'Nie. Druk i kodowanie znacznika to funkcje urządzenia. Powiązanie produktów z kartonami i paletami wymaga odpowiedniego oprogramowania oraz rejestrowania zdarzeń w procesie.' },
+    { question: 'Czy akcesoria pasują do całej rodziny SATO?', answer: 'Nie. Obcinaki, odklejaki, nawijaki i moduły komunikacyjne dobiera się do konkretnego modelu oraz PN. Listę zgodnych produktów sprawdzisz w sekcji akcesoriów na karcie drukarki.' },
+    { question: 'Jakie materiały są potrzebne do rozpoczęcia druku?', answer: 'Potrzebujesz zgodnego nośnika, a przy termotransferze również taśmy. Dodatkowo sprawdź przewody, oprogramowanie i zawartość zestawu. Dostępność rolki startowej nie oznacza kompletu materiałów do produkcji.' },
+    { question: 'Czy można zastąpić inną drukarkę modelem SATO bez zmian?', answer: 'Wymaga to sprawdzenia języka komend, sterownika, szablonu i sposobu komunikacji. Zaplanuj test faktycznego zlecenia z aplikacji. Sama zgodność interfejsu USB lub Ethernet nie wystarcza.' },
+    { question: 'Gdzie sprawdzić cenę i dostępność?', answer: 'Aktualne informacje znajdują się przy wariantach na karcie produktu. Porównuj ceny dla tego samego wyposażenia, a przy zakupie akcesoriów sprawdź również elementy wymagane do ich montażu.' },
+  ],
+}

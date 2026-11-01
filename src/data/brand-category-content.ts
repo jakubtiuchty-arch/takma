@@ -1,3 +1,4 @@
+import { satoPrinterCategory } from './sato-printer-category'
 import { sunmiCategory } from './sunmi-category'
 import { cipherlabCategory } from './cipherlab-category'
 import { bluebirdCategory } from './bluebird-category'
@@ -25,6 +26,7 @@ export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHead
 }
 
 export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
+  'drukarki-sato': satoPrinterCategory,
   'terminale-sunmi': sunmiCategory,
   'terminale-cipherlab': cipherlabCategory,
   'terminale-bluebird': bluebirdCategory,

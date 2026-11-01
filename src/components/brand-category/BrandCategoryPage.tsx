@@ -182,7 +182,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const allProducts = getProductsByBrandCategory(bc)
   const subcats = getSubcategoriesForCategory(bc.categoryId)
   const content = brandCategoryContent[slug]
-  const catalogSeo = ['skanery-datalogic', 'drukarki-etykiet-bixolon', 'terminale-cipherlab', 'terminale-sunmi', 'terminale-bluebird', 'terminale-unitech', 'skanery-unitech'].includes(bc.slug)
+  const catalogSeo = ['drukarki-sato', 'skanery-datalogic', 'drukarki-etykiet-bixolon', 'terminale-cipherlab', 'terminale-sunmi', 'terminale-bluebird', 'terminale-unitech', 'skanery-unitech'].includes(bc.slug)
 
   // Subcats with products from this manufacturer
   const subcatsWithProducts = subcats
