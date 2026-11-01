@@ -4,7 +4,7 @@ export const satoBrandContent: BrandPillarData = {
   updatedAt: '2026-11-01',
   heroText: 'SATO łączy drukarki z materiałami do znakowania, technologią RFID i oprogramowaniem. Oferta obejmuje etykiety i metki, taśmy termotransferowe, opaski identyfikacyjne oraz metkownice ręczne. W TAKMA porównasz drukarki, serie taśm i zgodne akcesoria. Pozostałe rozwiązania dobierzemy do zastosowania w Twojej firmie.',
   categoryTiles: [
-    { categoryId: 'drukarki-etykiet', name: 'Drukarki SATO', href: '/katalog?producent=sato&kategoria=drukarki-etykiet', description: 'Modele przemysłowe, kompaktowe, medyczne oraz konfiguracje RFID.' },
+    { categoryId: 'drukarki-etykiet', name: 'Drukarki SATO', href: '/drukarki-sato', description: 'Modele przemysłowe, kompaktowe, medyczne oraz konfiguracje RFID.' },
     { categoryId: 'materialy-eksploatacyjne', name: 'Taśmy termotransferowe SATO', href: '/tasmy-termotransferowe-sato', description: 'Osiem serii woskowych, woskowo-żywicznych i żywicznych. Wybierz rozmiar i rodzaj nadruku.' },
     { categoryId: 'akcesoria', name: 'Akcesoria SATO', href: '/katalog?producent=sato&kategoria=akcesoria', description: 'Elementy wyposażenia do konkretnych drukarek. Sprawdź zgodność modelu i numer PN.' },
   ],

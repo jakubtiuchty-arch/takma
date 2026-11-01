@@ -96135,6 +96135,20 @@ export function getProductsByTags(tags: ProductTag[]): Product[] {
 // ============================================
 
 export const brandCategories: BrandCategory[] = [
+  {
+    id: 'drukarki-sato', slug: 'drukarki-sato', manufacturerId: 'sato', categoryId: 'drukarki-etykiet',
+    name: 'Drukarki SATO',
+    seoTitle: 'Drukarki SATO — przemysłowe, kompaktowe i RFID',
+    seoDescription: 'Porównaj drukarki etykiet SATO: CL4-SXR, CL6-SXR, CL4NX Plus, CL6NX Plus, CT4-LX i WS2-2. Ceny, dostępność, konfiguracje RFID i zgodne akcesoria.',
+    longDescription: 'Drukarki etykiet SATO do produkcji, magazynu, logistyki i ochrony zdrowia. Porównaj modele przemysłowe, kompaktowe oraz konfiguracje RFID. Wybierz format etykiety, rozdzielczość i wyposażenie według konkretnego numeru PN.',
+    detailedDescription: 'Rodziny CL4-SXR i CL4NX Plus służą do przemysłowego druku etykiet w formacie 4 cali. CL6-SXR i CL6NX Plus pozwalają drukować szersze etykiety, np. na kartony i palety. Maksymalna szerokość nadruku zależy od modelu i ustawień.\n\nCT4-LX-HC i WS2-2 uzupełniają ofertę urządzeń do zastosowań medycznych. Konfiguracje RFID wymagają odpowiedniego modułu kodującego oraz zgodnych znaczników. Sama obsługa kodów kreskowych nie oznacza obsługi RFID.\n\nDo druku termotransferowego dobierz [taśmę SATO](/tasmy-termotransferowe-sato) do materiału etykiety. Sprawdź również szerokość, długość nawoju, gilzę i stronę barwiącą. Obcinak, odklejak i pozostałe akcesoria muszą pasować do wybranego modelu. Szerszą ofertę materiałów i rozwiązań producenta poznasz na [stronie marki SATO](/sato).',
+    faq: [
+      { question: 'Jaką drukarkę SATO wybrać na etykiety logistyczne?', answer: 'Najpierw sprawdź wymiary wzoru etykiety i wymaganą szerokość nadruku. Porównaj CL4-SXR i CL4NX Plus, a do szerszych etykiet CL6-SXR i CL6NX Plus. Rozdzielczość i wyposażenie wybierz według PN.' },
+      { question: 'Czy wszystkie drukarki SATO kodują RFID?', answer: 'Nie. Potrzebna jest konfiguracja z modułem RFID oraz zgodne znaczniki. Przed zakupem sprawdź obsługiwany standard, materiał i położenie znacznika.' },
+      { question: 'Gdzie znaleźć taśmy i akcesoria?', answer: 'Zgodne akcesoria są na kartach poszczególnych drukarek. Serie woskowe, woskowo-żywiczne i żywiczne znajdziesz w [taśmach termotransferowych SATO](/tasmy-termotransferowe-sato).' },
+    ],
+  },
+
 {
   "id": "terminale-sunmi",
   "slug": "terminale-sunmi",
