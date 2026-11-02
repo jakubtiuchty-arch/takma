@@ -23,12 +23,12 @@ export const satoPrinterCategory: BrandCategoryRichContent = {
   buyingGuide: {
     heading: 'Jak wybrać drukarkę SATO? Sześć decyzji przed zakupem',
     items: [
-      'Wymiar etykiety i szerokość nadruku. Rozmiar rolki nie określa jeszcze pola, które można zadrukować. Sprawdź szerokość nośnika, rzeczywistą szerokość projektu oraz marginesy. Do małego oznaczenia produktu nie potrzebujesz urządzenia 6-calowego; szeroka etykieta paletowa może go wymagać.',
-      'Nakład i organizacja zmiany. Policz etykiety dziennie, długość serii i liczbę wymian rolki. Ważne jest również to, czy operator pobiera po jednej etykiecie, czy drukuje całą partię. Prędkość maksymalna nie określa wydajności kompletnego stanowiska.',
-      'Rozdzielczość i treść kodu. Rozmiar najmniejszego tekstu oraz modułu kodu wpływa na wybór głowicy. Gęsty DataMatrix wymaga oceny liczby danych i dostępnego pola. Wyższa rozdzielczość nie naprawi złego projektu ani niewłaściwego materiału.',
-      'Trwałość oznaczenia. Ustal czas użytkowania etykiety, temperaturę, kontakt z wodą, środkami chemicznymi i tarcie. Na tej podstawie wybierz materiał oraz druk termiczny lub termotransferowy. Przy termotransferze trzeba dopasować również taśmę.',
-      'Źródło danych i połączenie. Określ, czy projekt powstaje na komputerze, czy dane przychodzą z ERP lub WMS. Sprawdź sterownik, język komend, interfejs oraz sposób wysyłania zlecenia. Przy zmianie marki drukarki zaplanuj próbę istniejącego szablonu.',
-      'Wyposażenie stanowiska. Odklejak, obcinak, nawijak, moduł RFID i łączność bezprzewodowa nie są wymienne między wszystkimi modelami. Porównuj konkretne PN oraz zawartość zestawu, a nie tylko nazwę rodziny.',
+      'Wymiar etykiety i szerokość nadruku — Rozmiar rolki nie określa jeszcze pola, które można zadrukować. Sprawdź szerokość nośnika, rzeczywistą szerokość projektu oraz marginesy. Do małego oznaczenia produktu nie potrzebujesz urządzenia 6-calowego; szeroka etykieta paletowa może go wymagać.',
+      'Nakład i organizacja zmiany — Policz etykiety dziennie, długość serii i liczbę wymian rolki. Ważne jest również to, czy operator pobiera po jednej etykiecie, czy drukuje całą partię. Prędkość maksymalna nie określa wydajności kompletnego stanowiska.',
+      'Rozdzielczość i treść kodu — Rozmiar najmniejszego tekstu oraz modułu kodu wpływa na wybór głowicy. Gęsty DataMatrix wymaga oceny liczby danych i dostępnego pola. Wyższa rozdzielczość nie naprawi złego projektu ani niewłaściwego materiału.',
+      'Trwałość oznaczenia — Ustal czas użytkowania etykiety, temperaturę, kontakt z wodą, środkami chemicznymi i tarcie. Na tej podstawie wybierz materiał oraz druk termiczny lub termotransferowy. Przy termotransferze trzeba dopasować również taśmę.',
+      'Źródło danych i połączenie — Określ, czy projekt powstaje na komputerze, czy dane przychodzą z ERP lub WMS. Sprawdź sterownik, język komend, interfejs oraz sposób wysyłania zlecenia. Przy zmianie marki drukarki zaplanuj próbę istniejącego szablonu.',
+      'Wyposażenie stanowiska — Odklejak, obcinak, nawijak, moduł RFID i łączność bezprzewodowa nie są wymienne między wszystkimi modelami. Porównuj konkretne PN oraz zawartość zestawu, a nie tylko nazwę rodziny.',
     ],
   },
   useCases: [
