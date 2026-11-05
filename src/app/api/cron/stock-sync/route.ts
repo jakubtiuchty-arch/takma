@@ -206,7 +206,7 @@ export async function GET(request: NextRequest) {
 
           if (!ingFound && !bsFound && !jtFound) {
             // Błąd źródła to nie „nie ma takiego PN” — nie kasujemy ceny z poprzedniego przebiegu.
-            if (ing?.bladZrodla || ingramResult.status === 'rejected' || bluestarResult.status === 'rejected') {
+            if (ing?.bladZrodla || bs?.bladZrodla || ingramResult.status === 'rejected' || bluestarResult.status === 'rejected') {
               pominieteBledy++
               continue
             }

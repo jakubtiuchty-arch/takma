@@ -494,7 +494,7 @@ export async function lookupUnifiedStock(
       // Jesli zaden dystrybutor nie ma danych
       if (!ingFound && !bsFound && !jlFound) {
         // 429, timeout albo cooldown u któregoś źródła to nie „nie ma takiego PN”.
-        const bladZrodla = !!ing?.bladZrodla || ingramResult.status === 'rejected' || bladBluestar || bladJarltech
+        const bladZrodla = !!ing?.bladZrodla || !!bs?.bladZrodla || ingramResult.status === 'rejected' || bladBluestar || bladJarltech
         return {
           partNumber: pn,
           found: false,

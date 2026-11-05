@@ -45,6 +45,9 @@ export interface BlueStarStockInfo {
   availability: 'available' | 'on-order' | 'unavailable'
   deliveryText: string
   lastSync: string
+  // BlueStar nie odpowiedział (HTTP, timeout, cooldown, brak konfiguracji) — to nie jest „nie ma takiego PN”.
+  // Wynik z tym polem nie może nadpisać dobrej ceny w StockCache.
+  bladZrodla?: true
 }
 
 interface TokenResponse {
@@ -173,9 +176,9 @@ function enqueue<T>(fn: () => Promise<T>): Promise<T> {
 /**
  * `blad` to komunikat, który BlueStar zwraca z kodem 200 obok pustej listy —
  * np. gdy jednego numeru z paczki nie prowadzi. Błędy HTTP i sieci zostają
- * błędami: pusta lista bez komunikatu i blokada ERROR_COOLDOWN.
+ * błędami: pusta lista bez komunikatu, `bladPolaczenia` i blokada ERROR_COOLDOWN.
  */
-async function sendPriceRequest(partNumbers: string[]): Promise<{ items: BlueStarPriceItem[]; blad?: string }> {
+async function sendPriceRequest(partNumbers: string[]): Promise<{ items: BlueStarPriceItem[]; blad?: string; bladPolaczenia?: true }> {
   try {
     const token = await getAccessToken()
 
@@ -231,7 +234,7 @@ async function sendPriceRequest(partNumbers: string[]): Promise<{ items: BlueSta
       const errorText = await response.text()
       console.error(`[BlueStar Price] HTTP ${response.status}: ${errorText}`)
       lastErrorAt = Date.now()
-      return { items: [] }
+      return { items: [], bladPolaczenia: true }
     }
 
     const data: BlueStarPriceResponse = await response.json()
@@ -257,7 +260,7 @@ async function sendPriceRequest(partNumbers: string[]): Promise<{ items: BlueSta
       console.error('[BlueStar Price] Błąd:', error)
     }
     lastErrorAt = Date.now()
-    return { items: [] }
+    return { items: [], bladPolaczenia: true }
   }
 }
 
@@ -285,27 +288,33 @@ function numeryZKomunikatu(komunikat: string, numery: string[]): string[] {
  * pozostałym, a numer dostępny tylko w BlueStar lądował w sklepie jako „brak
  * danych z dystrybutora". Wyrzucamy wskazany numer i pytamy o resztę; gdy
  * komunikat nikogo nie wskazuje, pytamy o każdy numer osobno.
+ *
+ * `bezOdpowiedzi` to numery, o które nie udało się zapytać przez błąd połączenia —
+ * dla nich brak w `items` nie znaczy „nie ma takiego PN”.
  */
-async function zapytajOdpornie(partNumbers: string[]): Promise<BlueStarPriceItem[]> {
+async function zapytajOdpornie(partNumbers: string[]): Promise<{ items: BlueStarPriceItem[]; bezOdpowiedzi: Set<string> }> {
+  const bezOdpowiedzi = new Set<string>()
   let doZapytania = partNumbers
   for (let proba = 0; proba < partNumbers.length && doZapytania.length > 0; proba++) {
-    const { items, blad } = await enqueue(() => sendPriceRequest(doZapytania))
-    if (items.length > 0 || !blad || doZapytania.length === 1) return items
+    const { items, blad, bladPolaczenia } = await enqueue(() => sendPriceRequest(doZapytania))
+    if (bladPolaczenia) doZapytania.forEach((pn) => bezOdpowiedzi.add(pn))
+    if (items.length > 0 || !blad || doZapytania.length === 1) return { items, bezOdpowiedzi }
 
     const odrzucone = numeryZKomunikatu(blad, doZapytania)
     if (odrzucone.length === 0) {
       console.warn(`[BlueStar] Paczka odrzucona bez wskazania numeru — pytam o ${doZapytania.length} PN pojedynczo`)
       const pojedynczo: BlueStarPriceItem[] = []
       for (const pn of doZapytania) {
-        const { items: jeden } = await enqueue(() => sendPriceRequest([pn]))
+        const { items: jeden, bladPolaczenia: bladJednego } = await enqueue(() => sendPriceRequest([pn]))
+        if (bladJednego) bezOdpowiedzi.add(pn)
         pojedynczo.push(...jeden)
       }
-      return pojedynczo
+      return { items: pojedynczo, bezOdpowiedzi }
     }
     console.warn(`[BlueStar] Paczka odrzucona przez ${odrzucone.join(', ')} — ponawiam bez nich`)
     doZapytania = doZapytania.filter((pn) => !odrzucone.includes(pn))
   }
-  return []
+  return { items: [], bezOdpowiedzi }
 }
 
 // ============================================
@@ -340,9 +349,9 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
   // Error cooldown
   if (isErrorCooldown()) {
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, true))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, true))
   }
 
   // Sprawdź konfigurację (czytane z process.env przy każdym wywołaniu)
@@ -350,22 +359,23 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
   if (!clientId || !clientSecret) {
     console.warn('[BlueStar] Brak konfiguracji (BLUESTAR_CLIENT_ID/SECRET)')
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, true))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, true))
   }
 
   console.log(`[BlueStar] Sprawdzam ${uncached.length} PN: ${uncached.join(', ')}`)
 
   // Kolejka — jeden request na raz
-  const items = await zapytajOdpornie(uncached)
+  const { items, bezOdpowiedzi } = await zapytajOdpornie(uncached)
 
-  // Jeśli brak wyników
+  // Jeśli brak wyników. Flaga błędu zostaje w cache — kolejne wywołanie w tej samej
+  // lambdzie nie może odczytać błędu połączenia jako „nie ma takiego PN”.
   if (items.length === 0) {
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, bezOdpowiedzi.has(pn)))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, bezOdpowiedzi.has(pn)))
   }
 
   // Mapuj wyniki po itemNo (Part Number)
@@ -381,7 +391,7 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
     const found = byItemNo.get(pn.toUpperCase()) ?? (matches.length === 1 ? matches[0] : undefined)
 
     if (!found || found.unitPrice <= 0) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, !found && bezOdpowiedzi.has(pn)))
       continue
     }
 
@@ -440,7 +450,7 @@ export async function lookupStock(partNumbers: string[]): Promise<BlueStarStockI
   return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
 }
 
-function makeEmptyResult(pn: string, now: string): BlueStarStockInfo {
+function makeEmptyResult(pn: string, now: string, bladZrodla = false): BlueStarStockInfo {
   return {
     partNumber: pn,
     found: false,
@@ -452,5 +462,6 @@ function makeEmptyResult(pn: string, now: string): BlueStarStockInfo {
     availability: 'unavailable',
     deliveryText: 'Brak danych z dystrybutora',
     lastSync: now,
+    ...(bladZrodla ? { bladZrodla: true as const } : {}),
   }
 }
