@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { etykietaPowiazania } from '@/lib/koncesja-etykieta'
+import { kwotaDoEdycji, parsujKwotePln } from '@/lib/kwota-pln'
 import { useQuoteStore, type QuoteItemData } from '@/store/quoteStore'
 
 function formatPrice(grosze: number): string {
@@ -9,19 +10,22 @@ function formatPrice(grosze: number): string {
 }
 
 function PriceInput({ value, onChange }: { value: number; onChange: (grosze: number) => void }) {
-  const [localValue, setLocalValue] = useState((value / 100).toFixed(2))
+  const [localValue, setLocalValue] = useState(kwotaDoEdycji(value))
 
   useEffect(() => {
-    setLocalValue((value / 100).toFixed(2))
+    setLocalValue(kwotaDoEdycji(value))
   }, [value])
 
+  // Po zatwierdzeniu pole zawsze pokazuje to, co trafi do oferty — także gdy
+  // zapisana kwota się nie zmieniła i useEffect nie odpali.
   const commit = () => {
-    const val = parseFloat(localValue)
-    if (!isNaN(val) && val >= 0) {
-      onChange(Math.round(val * 100))
-    } else {
-      setLocalValue((value / 100).toFixed(2))
+    const grosze = parsujKwotePln(localValue)
+    if (grosze === null) {
+      setLocalValue(kwotaDoEdycji(value))
+      return
     }
+    onChange(grosze)
+    setLocalValue(kwotaDoEdycji(grosze))
   }
 
   return (

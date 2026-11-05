@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useQuoteStore } from '@/store/quoteStore'
+import { parsujKwotePln } from '@/lib/kwota-pln'
 
 export default function ManualItemForm() {
   const addItem = useQuoteStore((s) => s.addItem)
@@ -10,9 +11,10 @@ export default function ManualItemForm() {
   const [priceNetto, setPriceNetto] = useState('')
   const [quantity, setQuantity] = useState('1')
 
+  const purchasePrice = parsujKwotePln(priceNetto) // PLN → grosze, null = błędny wpis
+
   const handleAdd = () => {
-    if (!name.trim() || !priceNetto) return
-    const purchasePrice = Math.round(parseFloat(priceNetto) * 100) // PLN → grosze
+    if (!name.trim() || purchasePrice === null) return
     addItem({
       source: 'manual',
       productName: name.trim(),
@@ -53,13 +55,13 @@ export default function ManualItemForm() {
           />
         </div>
         <div className="col-span-2">
+          {/* tekst, nie number — w części przeglądarek pole liczbowe nie przyjmuje „9,29" */}
           <input
-            type="number"
+            type="text"
+            inputMode="decimal"
             value={priceNetto}
             onChange={(e) => setPriceNetto(e.target.value)}
             placeholder="Cena netto"
-            min="0"
-            step="0.01"
             className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
           />
         </div>
@@ -76,7 +78,7 @@ export default function ManualItemForm() {
           <button
             type="button"
             onClick={handleAdd}
-            disabled={!name.trim() || !priceNetto}
+            disabled={!name.trim() || purchasePrice === null}
             className="w-full px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 disabled:opacity-50"
           >
             Dodaj

@@ -18,7 +18,10 @@ export function productPartNumbers(p: Product): string[] {
 
   const spec = p.specifications?.find((s) => /^(part number|numer katalogowy|pn)$/i.test(s.name))
   if (!spec) return []
-  return spec.value.split(/[\/,;]/).map((x) => x.trim()).filter(Boolean)
+  // Kilka numerów w jednym polu: przecinek, średnik albo ukośnik ze spacjami
+  // („PH-286MT-0001 / 98-0350060-01LF"). Ukośnik bez spacji należy do numeru
+  // („MDEV34/UNQ", „MB300YMCKO/S") — wcześniej ucinało go do „MDEV34".
+  return spec.value.split(/\s+\/\s+|[,;]/).map((x) => x.trim()).filter(Boolean)
 }
 
 function buildIndex() {
