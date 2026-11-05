@@ -126,8 +126,9 @@ export default async function TransferSeriesPage({ params }: PageProps) {
   // Product + AggregateOffer — lowPrice = series.priceFrom (zgodny z widocznym na
   // stronie "od X zł netto"). offerCount = liczba wariantów rozmiarowych.
   // Google wymaga priceValidUntil w Offer/AggregateOffer dla rich snippets ceny (od 2024).
+  // Bez ceny serii nie emitujemy Product — Google traktuje Product bez offers jako błąd krytyczny.
   const priceValidUntil = new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0]
-  const productSchema = {
+  const productSchema = priceFrom ? {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: `Etykiety termotransferowe Zebra ${series.title}`,
@@ -135,26 +136,22 @@ export default async function TransferSeriesPage({ params }: PageProps) {
     brand: { '@type': 'Brand', name: 'Zebra Technologies' },
     category: 'Etykiety termotransferowe',
     ...(product?.images?.[0] ? { image: product.images[0] } : {}),
-    ...(priceFrom
-      ? {
-          offers: {
-            '@type': 'AggregateOffer',
-            priceCurrency: 'PLN',
-            lowPrice: priceFrom,
-            priceValidUntil,
-            offerCount: variantCount || undefined,
-            seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
-          },
-        }
-      : {}),
-  }
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'PLN',
+      lowPrice: priceFrom,
+      priceValidUntil,
+      offerCount: variantCount || undefined,
+      seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+    },
+  } : null
 
   return (
     <main className="bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      {productSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />}
       <CommonDefinitionsSchema />
 
       {/* ── HERO ── */}

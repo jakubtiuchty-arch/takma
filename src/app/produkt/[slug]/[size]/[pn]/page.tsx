@@ -307,7 +307,9 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
       : availabilityMap[variant.availability]
 
   const rolekSatoSchema = isSato ? rolekWKartonieSato(variant.partNumber) : null
-  const productSchema = {
+  // Bez ceny nie emitujemy Product — Google traktuje Product bez offers jako błąd krytyczny.
+  // ProductGroup w isVariantOf nie potrzebuje własnej oferty.
+  const productSchema = schemaOfferPrice ? {
     '@context': 'https://schema.org',
     '@type': 'Product',
     url,
@@ -348,25 +350,21 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
     // Cena do schema: najpierw live ze StockCache, potem statyczny priceFrom.
     // Bez tego warianty bez `priceFrom` szły w świat jako produkty bez ceny —
     // Google robił z nich oferty w Merchant Center i odrzucał je hurtowo.
-    ...(schemaOfferPrice
-      ? {
-          offers: {
-            '@type': 'Offer',
-            url,
-            sku: variant.partNumber,
-            mpn: variant.partNumber,
-            // Taśmy SATO: cena oferty to cena kartonu (sprzedaż tylko w kartonach).
-            name: rolekSatoSchema ? `${variantH1} — karton ${rolekSatoSchema} rolek` : variantH1,
-            price: schemaOfferPrice.toFixed(2),
-            priceCurrency: 'PLN',
-            availability: schemaAvailability,
-            itemCondition: 'https://schema.org/NewCondition',
-            priceValidUntil,
-            seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
-          },
-        }
-      : {}),
-  }
+    offers: {
+      '@type': 'Offer',
+      url,
+      sku: variant.partNumber,
+      mpn: variant.partNumber,
+      // Taśmy SATO: cena oferty to cena kartonu (sprzedaż tylko w kartonach).
+      name: rolekSatoSchema ? `${variantH1} — karton ${rolekSatoSchema} rolek` : variantH1,
+      price: schemaOfferPrice.toFixed(2),
+      priceCurrency: 'PLN',
+      availability: schemaAvailability,
+      itemCondition: 'https://schema.org/NewCondition',
+      priceValidUntil,
+      seller: { '@type': 'Organization', name: 'TAKMA', url: siteUrl },
+    },
+  } : null
 
   // ── JSON-LD: BreadcrumbList ────────────────────────────────────────
   const crumbs: { name: string; item: string }[] = [
@@ -478,10 +476,10 @@ export default async function ThermalLabelVariantPage({ params }: PageProps) {
         itemCategory={product.categoryId}
         price={variant.priceFrom ?? product.priceFrom}
       />
-      <script
+      {productSchema && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
+      />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

@@ -33,7 +33,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { getProductStock, getBundleLivePrices, getSchemaOffer, getSchemaOffers } from '@/lib/product-stock'
 import productImageDims from '@/data/product-image-dims.json'
-import { selectProductVariant } from '@/lib/product-variant-offers'
+import { productVariantSchema, selectProductVariant } from '@/lib/product-variant-offers'
 import { czyNaZapytanie } from '@/lib/licencje'
 import { rfidLabelIdsForPrinter, rfidLabelRequirementForPrinter } from '@/data/rfid-label-compatibility'
 import LiveProductSchema from './LiveProductSchema'
@@ -596,18 +596,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     if (product.manufacturerId === 'magicard') return { '@id': `https://www.takma.com.pl/produkt/${p!.slug}` }
     const live = liveSchemaOffers?.get(partNumberOf(p!) ?? '')
     const price = live?.price ?? (p!.priceFrom && p!.priceFrom > 0 ? p!.priceFrom : undefined)
+    // Zagnieżdżony Product bez ceny to dla Google błąd „brak offers” — wtedy samo odwołanie do karty.
+    if (!price) return { '@id': `https://www.takma.com.pl/produkt/${p!.slug}` }
     return {
       '@type': 'Product' as const,
       name: p!.name,
       url: `https://www.takma.com.pl/produkt/${p!.slug}`,
-      ...(price ? {
-        offers: {
-          '@type': 'Offer' as const,
-          price: price.toFixed(2),
-          priceCurrency: 'PLN',
-          availability: availabilitySchemaMap[live?.availability ?? p!.availability],
-        },
-      } : {}),
+      offers: {
+        '@type': 'Offer' as const,
+        price: price.toFixed(2),
+        priceCurrency: 'PLN',
+        availability: availabilitySchemaMap[live?.availability ?? p!.availability],
+      },
     }
   })
 
@@ -623,9 +623,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Zapowiedź nie ma oferty w JSON-LD, nawet gdyby ktoś dopisał cenę startową.
   // Karta na zapytanie (quoteOnly) — bez oferty, jak produkty bez ceny; warianty na zapytanie
   // odpadają niżej z listy ofert.
-  const hasValidPrice = !product.comingSoon && !product.quoteOnly && ((product.priceFrom && product.priceFrom > 0) ||
-    (product.variants?.some(v => !v.quoteOnly && v.priceFrom && v.priceFrom > 0)) || !!liveOffer)
+  // Wariant bez statycznego priceFrom, ale z ceną dystrybutora (akcesoria M3, Newland HR, Zebra ET401)
+  // też się liczy — karta pokazuje tę cenę, a bez niej Product szedł do Google bez offers.
   const magicardOffer = getMagicardOffer(product)
+  const hasValidPrice = !product.comingSoon && !product.quoteOnly && ((product.priceFrom && product.priceFrom > 0) ||
+    (product.variants?.some(v => !v.quoteOnly && (variantLivePrice(v) ?? 0) > 0)) || !!liveOffer || !!magicardOffer)
 
   // VideoObject dla filmów natywnych z datą publikacji (tylko te, które mają `published`)
   const toIsoDuration = (title: string) => { const m = title.match(/(\d+):(\d{2})\s*$/); return m ? `PT${parseInt(m[1], 10)}M${parseInt(m[2], 10)}S` : undefined }
@@ -796,6 +798,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     } : {}),
   }
 
+  // Product bez offers, review i aggregateRating to w Search Console błąd krytyczny („Należy określić
+  // właściwość offers…”). Karta bez żadnej ceny (zapowiedź, na zapytanie, brak u dystrybutorów) nie
+  // emituje Product wcale — zostają BreadcrumbList, WebPage i FAQPage.
+  // SoftwareApplication ma zawsze ofertę 0 zł.
+  const emitujProdukt = !!product.download || hasValidPrice || !!product.editorialReview
+  // Karty z ceną żywą: ten sam schemat co w LiveProductSchema (z tego samego snapshotu), żeby
+  // WebPage.mainEntity wskazywało węzeł, który faktycznie jest na stronie.
+  const liveProductSchema = liveOffers ? productVariantSchema(product, initialStock ?? []) : null
+  const productSchemaId = liveOffers
+    ? liveProductSchema?.['@id']
+    : emitujProdukt && productJsonLd['@id'] ? productJsonLd['@id'] : undefined
+
   // JSON-LD: BreadcrumbList
   // Drukarki RFID nie są podstroną marki: „Drukarki etykiet Zebra › Drukarki RFID” sugerowało
   // kategorię samych Zebr, a SATO i BIXOLON (bez strony marki) miały krótszą ścieżkę.
@@ -845,7 +859,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     },
     ...((catalogMobileTerminal || posComputer || kdsDisplay || kioskDisplay || datalogicScannerProduct || bixolonLabelProduct) ? {
       '@id': `https://www.takma.com.pl/produkt/${product.slug}#webpage`,
-      mainEntity: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#${liveOffers && (product.variants?.length ?? 0) > 1 ? 'product-group' : 'product'}` },
+      ...(productSchemaId ? { mainEntity: { '@id': productSchemaId } } : {}),
       breadcrumb: { '@id': `https://www.takma.com.pl/produkt/${product.slug}#breadcrumb` },
       inLanguage: 'pl-PL',
     } : {
@@ -1036,7 +1050,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         itemCategory={product.categoryId}
         price={product.priceFrom}
       />
-      {liveOffers ? <LiveProductSchema product={product} /> : <script
+      {liveOffers ? <LiveProductSchema product={product} /> : emitujProdukt && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />}

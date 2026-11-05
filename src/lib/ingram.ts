@@ -35,6 +35,9 @@ export interface StockInfo {
   deliveryText: string
   lastSync: string
   electronicLicense?: boolean // Licencja e-mailem: dostępna mimo zerowego stanu (lib/licencje)
+  // Dystrybutor nie odpowiedział (429, timeout, cooldown) — to nie jest „nie ma takiego PN”.
+  // Wynik z tym polem nie może nadpisać dobrej ceny w StockCache.
+  bladZrodla?: true
 }
 
 // ============================================
@@ -268,7 +271,7 @@ function parsePnAResponse(xml: string): { products: PnAProduct[]; errors: string
 // WYSYŁANIE ŻĄDANIA
 // ============================================
 
-async function sendPnARequest(xmlBody: string): Promise<{ products: PnAProduct[]; errors: string[] }> {
+async function sendPnARequest(xmlBody: string): Promise<{ products: PnAProduct[]; errors: string[]; bladPolaczenia?: true }> {
   try {
     const controller = new AbortController()
     const timeoutId = setTimeout(() => controller.abort(), 30000) // 30s timeout
@@ -303,7 +306,7 @@ async function sendPnARequest(xmlBody: string): Promise<{ products: PnAProduct[]
     if (!response.ok) {
       console.error(`[Ingram PnA] HTTP ${response.status}: ${response.statusText}`)
       lastErrorAt = Date.now()
-      return { products: [], errors: [`HTTP ${response.status}`] }
+      return { products: [], errors: [`HTTP ${response.status}`], bladPolaczenia: true }
     }
 
     console.log(`[Ingram PnA] Odpowiedź: ${xmlText.length} znaków`)
@@ -324,7 +327,7 @@ async function sendPnARequest(xmlBody: string): Promise<{ products: PnAProduct[]
       console.error('[Ingram PnA] Błąd:', error)
     }
     lastErrorAt = Date.now()
-    return { products: [], errors: ['Timeout lub błąd połączenia'] }
+    return { products: [], errors: ['Timeout lub błąd połączenia'], bladPolaczenia: true }
   }
 }
 
@@ -354,17 +357,17 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
   // Error cooldown — nie zalewaj API po błędzie
   if (isErrorCooldown()) {
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, true))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, true))
   }
 
   if (!INGRAM_API_KEY) {
     console.warn('[Ingram PnA] Brak INGRAM_API_KEY')
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, true))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, true))
   }
 
   // Konwertuj Part Numbery na Ingram ItemID
@@ -374,7 +377,7 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
   console.log(`[Ingram PnA] Sprawdzam ${uncached.length} PN: ${uncached.join(', ')}`)
 
   // Kolejka — jeden request na raz, żeby nie zalewać Ingram
-  const { products, errors } = await enqueue(() => sendPnARequest(xmlBody))
+  const { products, errors, bladPolaczenia } = await enqueue(() => sendPnARequest(xmlBody))
 
   // Błąd jednej pozycji może ukryć inne numery w odpowiedzi zbiorczej.
   // Sprawdź brakujące pozycje osobno przed zapisaniem negatywnego wyniku.
@@ -387,13 +390,16 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
     }
   }
 
-  // Jeśli same błędy i żadnych produktów — oznacz cooldown
+  // Jeśli same błędy i żadnych produktów — oznacz cooldown.
+  // Błąd pozycji (line_errors) to odpowiedź „nie ma takiego numeru”; HTTP, timeout i błąd całego
+  // zapytania to awaria źródła, która nie może skasować ceny zapisanej wcześniej.
   if (products.length === 0 && errors.length > 0) {
     lastErrorAt = Date.now()
+    const bladZrodla = !!bladPolaczenia || !errors.some(error => error.includes('line_errors'))
     for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
+      setCached(pn, makeEmptyResult(pn, now, bladZrodla))
     }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, bladZrodla))
   }
 
   // Mapuj produkty na Part Numbery po VPN i ItemID
@@ -487,7 +493,7 @@ export async function lookupStock(partNumbers: string[]): Promise<StockInfo[]> {
   return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
 }
 
-function makeEmptyResult(pn: string, now: string): StockInfo {
+function makeEmptyResult(pn: string, now: string, bladZrodla = false): StockInfo {
   return {
     partNumber: pn,
     found: false,
@@ -498,6 +504,7 @@ function makeEmptyResult(pn: string, now: string): StockInfo {
     availability: 'unavailable',
     deliveryText: 'Brak danych z dystrybutora',
     lastSync: now,
+    ...(bladZrodla ? { bladZrodla: true as const } : {}),
   }
 }
 

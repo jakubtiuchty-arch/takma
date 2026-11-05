@@ -132,6 +132,8 @@ export async function GET(request: NextRequest) {
   const suspectPrices: string[] = []
   let found = 0
   let errors = 0
+  // PN bez danych przy błędzie dystrybutora (429, timeout, cooldown) — stary wiersz zostaje
+  let pominieteBledy = 0
   // Stróż cen: anomalie z tego przebiegu i numery zsynchronizowane z ceną
   const anomalie: Anomalia[] = []
   const przetworzone: string[] = []
@@ -203,6 +205,11 @@ export async function GET(request: NextRequest) {
           const jtFound = !!jt
 
           if (!ingFound && !bsFound && !jtFound) {
+            // Błąd źródła to nie „nie ma takiego PN” — nie kasujemy ceny z poprzedniego przebiegu.
+            if (ing?.bladZrodla || ingramResult.status === 'rejected' || bluestarResult.status === 'rejected') {
+              pominieteBledy++
+              continue
+            }
             // No data from any distributor
             await prisma.stockCache.upsert({
               where: { partNumber: pn },
@@ -372,7 +379,7 @@ export async function GET(request: NextRequest) {
   }
 
   const elapsed = Math.round((Date.now() - startTime) / 1000)
-  console.log(`[Stock Sync] Done in ${elapsed}s: ${synced}/${allPNs.length} synced, ${found} found, ${errors} errors`)
+  console.log(`[Stock Sync] Done in ${elapsed}s: ${synced}/${allPNs.length} synced, ${found} found, ${errors} errors, ${pominieteBledy} pominiętych (błąd dystrybutora)`)
 
   // Stróż cen — mail tylko o nowych anomaliach (lib/price-watchdog)
   let straznik: Awaited<ReturnType<typeof zapiszIZglosAnomalie>> | { blad: string } | null = null
@@ -393,6 +400,7 @@ export async function GET(request: NextRequest) {
     synced,
     found,
     errors,
+    pominieteBledy,
     // PN-y, przy których cena Ingrama była odstająca — warto zgłosić dystrybutorowi
     suspectIngramPrices: suspectPrices,
     przerwanoNaLimicieCzasu: przerwano,

@@ -390,6 +390,7 @@ export async function lookupUnifiedStock(
     // ============================================
 
     // Jarltech: read from DB cache (synced by daily cron, not live)
+    let bladOdczytuJarltech = false
     const jarltechFromCache = async (): Promise<JarltechStockInfo[]> => {
       try {
         const cached = await prisma.jarltechStockCache.findMany({
@@ -428,6 +429,7 @@ export async function lookupUnifiedStock(
         }))]
       } catch (err) {
         console.error('[API /stock] Jarltech cache read error:', err)
+        bladOdczytuJarltech = true
         return []
       }
     }
@@ -475,6 +477,10 @@ export async function lookupUnifiedStock(
 
     const now = new Date().toISOString()
 
+    // Awaria całego źródła (odrzucona obietnica, błąd odczytu cache Jarltech) dotyczy każdego PN w partii.
+    const bladBluestar = bluestarResult.status === 'rejected'
+    const bladJarltech = jarltechResult.status === 'rejected' || bladOdczytuJarltech
+
     // Merge per PN (only uncached PNs — cached ones handled separately)
     const results: StockInfo[] = uncachedPNs.map(pn => {
       const ing = ingramMap.get(pn)
@@ -487,6 +493,8 @@ export async function lookupUnifiedStock(
 
       // Jesli zaden dystrybutor nie ma danych
       if (!ingFound && !bsFound && !jlFound) {
+        // 429, timeout albo cooldown u któregoś źródła to nie „nie ma takiego PN”.
+        const bladZrodla = !!ing?.bladZrodla || ingramResult.status === 'rejected' || bladBluestar || bladJarltech
         return {
           partNumber: pn,
           found: false,
@@ -497,6 +505,7 @@ export async function lookupUnifiedStock(
           availability: 'unavailable' as const,
           deliveryText: 'Brak danych z dystrybutora',
           lastSync: now,
+          ...(bladZrodla ? { bladZrodla: true as const } : {}),
         }
       }
 
@@ -612,12 +621,37 @@ export async function lookupUnifiedStock(
         lastSync: now,
       }
     })
+    // Błąd dystrybutora nie kasuje ceny: gdy StockCache ma dla PN wiersz found: true (także
+    // przeterminowany), oddajemy dane z niego. 4–5.11.2026 Ingram zwracał 429 przy falach renderów
+    // Googlebota, a write-through found: false zdejmował ceny z kart.
+    for (let i = 0; i < results.length; i++) {
+      if (!results[i].bladZrodla) continue
+      const zapisany = cachedRows.find(w => w.partNumber === results[i].partNumber && w.found)
+      if (!zapisany) continue
+      const c = przeliczCeneSato({ ...zapisany })
+      results[i] = {
+        partNumber: c.partNumber,
+        found: c.found,
+        price: c.price ?? undefined,
+        priceBrutto: c.priceBrutto ?? undefined,
+        ingramPrice: c.ingramPrice ?? undefined,
+        stockPL: c.stockPL,
+        stockDE: c.stockDE,
+        inDelivery: c.inDelivery,
+        totalStock: c.totalStock,
+        availability: normalizujDostepnosc(c.availability),
+        deliveryText: c.deliveryText ?? 'Brak danych',
+        lastSync: c.lastSync.toISOString(),
+        bladZrodla: true,
+      }
+    }
     results.forEach(applyStockOverrides)
 
     // Write-through: save live results to StockCache for future requests
     // Fire-and-forget — don't block the response
+    // Wyniki z błędem źródła pomijamy: stary wiersz zostaje, a błąd nie zatruwa cache.
     const cacheWrite = Promise.all(
-      results.map(r =>
+      results.filter(r => !r.bladZrodla).map(r =>
         prisma.stockCache.upsert({
           where: { partNumber: r.partNumber },
           create: {

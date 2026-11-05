@@ -87,6 +87,8 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
   if (!product.variants?.length || (detailedProduct && product.variants.length === 1)) {
     const partNumber = product.variants?.[0]?.partNumber ?? product.specifications?.find(spec => spec.name === 'Part Number')?.value
     const oferta = ofertaZeStanu(partNumber ? stock.get(partNumber) : undefined, url, priceValidUntil, rfidTerminal)
+    // Bez ceny Product nie przechodzi walidacji Google (brak offers) — nie emitujemy go wcale.
+    if (!oferta) return null
     return {
       '@context': 'https://schema.org',
       '@type': 'Product',
@@ -103,6 +105,16 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
     }
   }
 
+  // W hasVariant tylko warianty z potwierdzoną ceną: wariant bez offers to ten sam błąd w Search
+  // Console („hasVariant.offers”). Gdy żaden wariant nie ma ceny, nie ma też ProductGroup.
+  const wariantyZCena = (product.variants ?? []).flatMap(variant => {
+    const row = stock.get(variant.partNumber)
+    const variantUrl = `${url}?pn=${encodeURIComponent(variant.partNumber)}`
+    const oferta = ofertaZeStanu(row, variantUrl, priceValidUntil, rfidTerminal)
+    return oferta ? [{ variant, variantUrl, oferta }] : []
+  })
+  if (wariantyZCena.length === 0) return null
+
   return {
     '@context': 'https://schema.org',
     '@type': 'ProductGroup',
@@ -115,29 +127,23 @@ export function productVariantSchema(product: Product, rows: StockInfo[]) {
     ...facts,
     ...(images.length ? { image: images } : {}),
     ...(product.sameAs ? { sameAs: product.sameAs } : {}),
-    hasVariant: (product.variants ?? []).map(variant => {
-      const row = stock.get(variant.partNumber)
-      const variantUrl = `${url}?pn=${encodeURIComponent(variant.partNumber)}`
-      const hasPrice = row?.found && row.price != null && row.price > 0
-      return {
-        '@type': 'Product',
-        '@id': `${url}#${variant.partNumber}`,
-        name: `${product.name} ${variant.name}`,
-        description: `${product.shortDescription.trim().replace(/[.!?]+$/, '')}. Wariant: ${variant.name.trim().replace(/[.!?]+$/, '')}.`,
-        sku: variant.partNumber,
-        mpn: variant.partNumber,
-        ...(variant.gtin13 ? { gtin13: variant.gtin13 } : {}),
-        url: variantUrl,
-        ...(images.length ? { image: images } : {}),
-        brand: marka.brand,
-        isVariantOf: { '@id': `${url}#product-group` },
-        additionalProperty: [
-          ...commonProperties.filter(property => (sunmiTerminal || posComputer || kdsDisplay || kioskDisplay || property.name !== 'Pamięć') && !(property.name in variant.attributes)),
-          ...Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
-        ],
-        // Bez potwierdzonej ceny nie tworzymy pozornej oferty ani dostępności.
-        ...(hasPrice ? { offers: ofertaZeStanu(row, variantUrl, priceValidUntil, rfidTerminal) } : {}),
-      }
-    }),
+    hasVariant: wariantyZCena.map(({ variant, variantUrl, oferta }) => ({
+      '@type': 'Product',
+      '@id': `${url}#${variant.partNumber}`,
+      name: `${product.name} ${variant.name}`,
+      description: `${product.shortDescription.trim().replace(/[.!?]+$/, '')}. Wariant: ${variant.name.trim().replace(/[.!?]+$/, '')}.`,
+      sku: variant.partNumber,
+      mpn: variant.partNumber,
+      ...(variant.gtin13 ? { gtin13: variant.gtin13 } : {}),
+      url: variantUrl,
+      ...(images.length ? { image: images } : {}),
+      brand: marka.brand,
+      isVariantOf: { '@id': `${url}#product-group` },
+      additionalProperty: [
+        ...commonProperties.filter(property => (sunmiTerminal || posComputer || kdsDisplay || kioskDisplay || property.name !== 'Pamięć') && !(property.name in variant.attributes)),
+        ...Object.entries(variant.attributes).map(([name, value]) => ({ '@type': 'PropertyValue', name, value })),
+      ],
+      offers: oferta,
+    })),
   }
 }
