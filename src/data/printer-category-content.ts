@@ -1,18 +1,18 @@
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const printerCategoryContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-29',
+  updatedAt: '2026-11-06',
   sectionHeadings: {
     expertAuthority: 'Dobór drukarki i materiałów w TAKMA',
     technicalDeepDive: 'Wydajność i koszt druku',
     comparisons: 'Marki i zgodność z oprogramowaniem',
   },
   definition: {
-    heading: 'Do czego służy drukarka etykiet?',
-    content: 'Drukarka etykiet nanosi tekst, grafikę i kody kreskowe na etykiety z rolki lub materiału składanego. Służy do oznaczania przesyłek, towarów, wyposażenia i próbek. Druk termiczny wykorzystuje materiał termoczuły bez taśmy barwiącej. Druk termotransferowy przenosi barwnik z taśmy na zgodny materiał. Kolorowe drukarki atramentowe tworzą nadruk z kilku tuszów.\n\nWybierz konstrukcję biurkową, przemysłową lub mobilną według miejsca pracy, formatu etykiety i obciążenia. Trwałość oznaczenia zależy od całego zestawu: technologii druku, podłoża, taśmy lub tuszu, kleju oraz warunków użytkowania.',
+    heading: 'Do czego służy drukarka do etykiet?',
+    content: 'Drukarka do etykiet nanosi tekst, grafikę i kody kreskowe na etykiety samoprzylepne z rolki lub materiał składany. Służy do oznaczania przesyłek, towarów, wyposażenia i próbek. Druk termiczny wykorzystuje materiał termoczuły bez taśmy barwiącej. Druk termotransferowy przenosi barwnik z taśmy na zgodny materiał. Kolorowe drukarki atramentowe tworzą nadruk z kilku tuszów.\n\nWybierz konstrukcję biurkową, przemysłową lub mobilną według miejsca pracy, formatu etykiety i obciążenia. Trwałość oznaczenia zależy od całego zestawu: technologii druku, podłoża, taśmy lub tuszu, kleju oraz warunków użytkowania.',
   },
   buyingGuide: {
-    heading: 'Jak wybrać drukarkę etykiet?',
+    heading: 'Jak wybrać drukarkę do etykiet?',
     items: [
       'Format — sprawdź szerokość nadruku, szerokość materiału z podkładem, średnicę rolki i gilzy. To różne parametry. Etykieta musi zmieścić się w drukarce, a jej projekt w obszarze nadruku.',
       'Obciążenie — podaj liczbę etykiet dziennie oraz największą serię drukowaną bez przerwy. Uwzględnij czas na zmianę materiałów, przetwarzanie danych i odklejanie. Dobierz model do tego procesu.',
@@ -43,6 +43,7 @@ export const printerCategoryContent: SubcategoryRichContent = {
   },
   faq: [
     { question: 'Jaka drukarka etykiet do firmy?', answer: 'Dobierz model do formatu etykiety, największej serii wydruków, wymaganej trwałości i używanego programu. Porównaj [drukarki biurkowe](/biurkowe-drukarki-etykiet), [przemysłowe](/przemyslowe-drukarki-etykiet) lub [mobilne](/mobilne-drukarki-etykiet). Sam dzienny wolumen nie opisuje całego obciążenia.' },
+    { question: 'Jaka drukarka do naklejek i etykiet samoprzylepnych?', answer: 'Naklejki z tekstem, kodem kreskowym lub kodem QR drukuje drukarka do etykiet samoprzylepnych na rolce. Czarny nadruk daje drukarka [termiczna](/termiczne-drukarki-etykiet) albo [termotransferowa](/termotransferowe-drukarki-etykiet). Kolorowe naklejki z grafiką i zdjęciami drukuje [kolorowa drukarka etykiet](/kolorowe-drukarki-etykiet), np. Epson ColorWorks. Zwykła drukarka biurowa drukuje naklejki tylko na arkuszach etykiet.' },
     { question: 'Drukarka termiczna czy termotransferowa?', answer: '[Drukarka termiczna](/termiczne-drukarki-etykiet) drukuje na materiale termoczułym bez taśmy barwiącej. [Drukarka termotransferowa](/termotransferowe-drukarki-etykiet) wymaga zgodnej taśmy i materiału. Trwałość obu oznaczeń zależy od nośnika i warunków użytkowania. Obsługę druku termicznego w modelu TT potwierdź w jego specyfikacji.' },
     { question: 'Ile kosztuje drukarka etykiet?', answer: 'Cena zależy od modelu, rozdzielczości, interfejsów i wyposażenia. Aktualne ceny netto są przy produktach i ich wariantach. Do porównania kosztu pracy dolicz etykiety, taśmy lub tusze oraz obsługę. Konfiguracje bez ceny wyceniamy po zapytaniu.' },
     { question: 'Czy drukarka etykiet może drukować w kolorze?', answer: 'Tak. [Kolorowe drukarki etykiet](/kolorowe-drukarki-etykiet), np. Epson ColorWorks, używają tuszów CMYK. Druk termiczny działa bez taśmy barwiącej na materiale termoczułym. W druku termotransferowym kolor zależy od wybranej taśmy. Nie zastępuje to pełnokolorowego druku atramentowego.' },

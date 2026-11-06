@@ -463,14 +463,14 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
 
         {printerCategory && (
           <section aria-labelledby="printer-choice" className="mb-8 rounded-2xl border border-gray-200 bg-gray-50 p-5 lg:p-6">
-            <h2 id="printer-choice" className="text-xl font-semibold text-gray-900 mb-2">Jakiej drukarki etykiet szukasz?</h2>
-            <p className="text-sm text-gray-600 mb-4">Zacznij od zastosowania. Potem sprawdź format etykiety, obciążenie i zgodność z używanym programem.</p>
+            <h2 id="printer-choice" className="text-xl font-semibold text-gray-900 mb-2">Drukarki do etykiet według zastosowania</h2>
+            <p className="text-sm text-gray-600 mb-4">Wybór zaczyna się od zastosowania. Następnie należy sprawdzić format etykiety, obciążenie i zgodność z używanym programem.</p>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { href: '/drukarki-etykiet-e-commerce', title: 'Przesyłki i e-commerce', text: 'Druk etykiet kurierskich. Sprawdź format szablonu przewoźnika.' },
-                { href: '/termotransferowe-drukarki-etykiet', title: 'Towary i trwałe oznaczenia', text: 'Druk z taśmą. Dobierz podłoże i barwnik do warunków użytkowania.' },
-                { href: '/przemyslowe-drukarki-etykiet', title: 'Produkcja i duże serie', text: 'Porównaj obciążenie, wielkość rolek i dostępne moduły.' },
-                { href: '/kolorowe-drukarki-etykiet', title: 'Kolorowe etykiety', text: 'Druk atramentowy. Sprawdź zgodność materiału z tuszem.' },
+                { href: '/drukarki-etykiet-e-commerce', title: 'Przesyłki i e-commerce', text: 'Druk etykiet kurierskich w formacie szablonu przewoźnika.' },
+                { href: '/termotransferowe-drukarki-etykiet', title: 'Towary i trwałe oznaczenia', text: 'Druk z taśmą. Podłoże i barwnik dobiera się do warunków użytkowania.' },
+                { href: '/przemyslowe-drukarki-etykiet', title: 'Produkcja i duże serie', text: 'Modele do pracy ciągłej, dużych rolek i dodatkowych modułów.' },
+                { href: '/kolorowe-drukarki-etykiet', title: 'Kolorowe etykiety', text: 'Druk atramentowy na materiale zgodnym z tuszem.' },
               ].map(item => <Link key={item.href} href={item.href} className="rounded-xl border border-gray-200 bg-white p-4 hover:border-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">
                 <span className="block font-semibold text-primary-600 mb-1">{item.title} →</span>
                 <span className="text-sm text-gray-600">{item.text}</span>
