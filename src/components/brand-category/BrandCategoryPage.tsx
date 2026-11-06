@@ -128,7 +128,7 @@ function ContactBlock({ heading, text }: { heading: string; text: string }) {
           href="/kontakt"
           className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 bg-primary-50 hover:bg-primary-100 rounded-lg px-4 py-2.5 transition-colors"
         >
-          Napisz do nas
+          Formularz kontaktowy
         </Link>
         <a href="mailto:takma@takma.com.pl" className="text-sm text-gray-500 hover:text-primary-600 transition-colors">
           takma@takma.com.pl
@@ -474,8 +474,8 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 </section>
 
                 <ContactBlock
-                  heading="Nie wiesz, który model wybrać?"
-                  text={content.contactText ?? `Dobierzemy konfigurację do waszej aplikacji i magazynu — skaner, klawiaturę, baterię i akcesoria. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.`}
+                  heading="Pomoc w doborze modelu"
+                  text={content.contactText ?? `Dobierzemy konfigurację do aplikacji i magazynu — skaner, klawiaturę, baterię i akcesoria. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.`}
                 />
 
                 <section id="o-marce" className="scroll-mt-24 definition-content">
@@ -621,7 +621,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
             <ServiceBanner categoryId={bc.categoryId} manufacturerId={bc.manufacturerId} />
 
             <ContactBlock
-              heading="Wybierasz sprzęt dla firmy?"
+              heading="Zakupy dla firm"
               text="Przygotujemy ofertę na całą flotę razem z akcesoriami i wsparciem. Zwykle odpowiadamy tego samego dnia."
             />
 

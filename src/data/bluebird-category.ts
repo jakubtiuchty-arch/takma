@@ -12,7 +12,7 @@ export const bluebirdFaq = [
 
 export const bluebirdCategory: BrandCategoryRichContent = {
   updatedAt: '2026-10-24',
-  contactText: 'Podaj rodzaj kodów, aplikację i sposób pracy. Dobierzemy terminal Bluebird, zasilanie oraz zgodne stacje i baterie.',
+  contactText: 'W zapytaniu wystarczy rodzaj kodów, aplikacja i sposób pracy. Dobierzemy terminal Bluebird, zasilanie oraz zgodne stacje i baterie.',
   definition: {
     heading: 'Terminale Bluebird do magazynu, sklepu i pracy w terenie',
     content: 'Bluebird produkuje terminale mobilne z Androidem i czytniki RFID. Terminal łączy skaner kodów z aplikacją firmy i komunikuje się z nią przez Wi-Fi albo sieć komórkową. Modele dotykowe mają ekrany od 5,45 do 6,5 cala. Model z klawiaturą ma ekran 4,3 cala i klawiaturę numeryczną albo alfanumeryczną. W ofercie są też terminal z czytnikiem UHF RFID, wersja z certyfikatem ATEX i smartfon firmowy bez skanera.',

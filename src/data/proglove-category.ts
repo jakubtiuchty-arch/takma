@@ -11,7 +11,7 @@ export const progloveFaq = [
 
 export const progloveCategory: BrandCategoryRichContent = {
   updatedAt: '2026-10-24',
-  contactText: 'Podaj rodzaj kodów, odległość odczytu i urządzenie, z którym skaner ma współpracować. Dobierzemy skaner ProGlove, mocowania i stacje ładujące.',
+  contactText: 'W zapytaniu wystarczy rodzaj kodów, odległość odczytu i urządzenie, z którym skaner ma współpracować. Dobierzemy skaner ProGlove, mocowania i stacje ładujące.',
   definition: {
     heading: 'Skanery ProGlove noszone na grzbiecie dłoni',
     content: 'ProGlove produkuje skanery kodów kreskowych noszone na grzbiecie dłoni. Skaner wpina się w mocowanie, a odczyt uruchamia spust w mocowaniu (w MAI także przycisk lub ekran), więc obie ręce zostają wolne do pracy z towarem. Skanery łączą się przez Bluetooth z terminalem, tabletem lub smartfonem, a z komputerem przez bramkę Gateway. Modele różnią się zasięgiem odczytu, liczbą skanów na jednym ładowaniu, odpornością obudowy i ekranem. Skaner pracuje tylko z mocowaniem ProGlove i ładuje się tylko w stacji ProGlove.',

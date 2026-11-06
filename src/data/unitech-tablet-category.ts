@@ -11,7 +11,7 @@ export const unitechTabletFaq = [
 
 export const unitechTabletCategory: BrandCategoryRichContent = {
   updatedAt: '2026-10-29',
-  contactText: 'Podaj system, miejsce pracy i sposób skanowania. Dobierzemy tablet Unitech, wersję łączności oraz zasilanie, stacje i uchwyty.',
+  contactText: 'W zapytaniu wystarczy system, miejsce pracy i sposób skanowania. Dobierzemy tablet Unitech, wersję łączności oraz zasilanie, stacje i uchwyty.',
   definition: {
     heading: 'Tablety Unitech 10,1″: RT112 z Androidem lub Windows i TB170 Plus z Windows 11',
     content: 'Tablet przemysłowy Unitech to komputer z ekranem dotykowym 10,1″ i obudową do pracy w magazynie, handlu, produkcji i serwisie. W ofercie są trzy modele.\n\n[RT112](/produkt/unitech-rt112) ma Androida 13, a [RT112 Windows](/produkt/unitech-rt112-windows) Windows 11 na ARM. Oba mają obudowę IP67 i wymienną baterię 8800 mAh.\n\n[TB170 Plus](/produkt/unitech-tb170-plus) ma Windows 11 na procesorze Intel, ekran 800 nitów, porty jak w komputerze i baterię wymienianą bez wyłączania, w obudowie IP65.\n\nKażdy model występuje w wersjach ze skanerem kodów lub bez niego. Dalej opisano tylko to, co odróżnia modele.',

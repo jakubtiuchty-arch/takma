@@ -19,7 +19,7 @@ import { SubcategoryRichContent } from './subcategory-content'
  */
 export type BrandCategoryRichContent = Omit<SubcategoryRichContent, 'sectionHeadings'> & {
   sectionHeadings?: NonNullable<SubcategoryRichContent['sectionHeadings']> & { tco?: string }
-  /** tekst bloku „Nie wiesz, który model wybrać?” — domyślny opisuje terminale */
+  /** tekst bloku „Pomoc w doborze modelu” — domyślny opisuje terminale */
   contactText?: string
   /** 'tabela' — zestawienie `modelTable` jako tabela HTML (model, parametry, cena netto, zastosowanie) zamiast kart */
   modelTableLayout?: 'tabela'
@@ -159,7 +159,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
   },
   'drukarki-etykiet-zebra': {
     updatedAt: '2026-09-25',
-    contactText: 'Dobierzemy model, rozdzielczość i materiały do waszych etykiet — od drukarki na biurko po linię produkcyjną. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.',
+    contactText: 'Dobierzemy model, rozdzielczość i materiały do etykiet — od drukarki na biurko po linię produkcyjną. Doradzamy po polsku, z Wrocławia, i sami serwisujemy to, co sprzedajemy.',
     definition: {
       heading: 'Serie drukarek etykiet Zebra: ZD, ZT i ZQ',
       content:
@@ -1531,7 +1531,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
   },
   'tablety-bluebird': {
     updatedAt: '2026-10-24',
-    contactText: 'Opisz miejsce pracy i aplikację. Dobierzemy tablet Bluebird, wersję łączności oraz zasilanie, stacje, osłony i baterie.',
+    contactText: 'W zapytaniu wystarczy opis miejsca pracy i aplikacji. Dobierzemy tablet Bluebird, wersję łączności oraz zasilanie, stacje, osłony i baterie.',
     definition: {
       heading: 'Tablety Bluebird: obudowa IP65, smukły tablet biznesowy i zapowiedź dla zakładów karnych',
       content: 'Bluebird, firma z grupy TSC Auto ID, produkuje tablety dla firm. W ofercie TAKMA są trzy modele z Androidem.\n\n[T30](/produkt/bluebird-t30) to tablet 10,1″ w obudowie IP65, z baterią wymienianą na miejscu pracy, Wi-Fi 6E i opcją 5G.\n\n[T10](/produkt/bluebird-t10) to smukły tablet biznesowy 10,95″ o grubości 7,4 mm, z opcją 4G LTE. Producent nie deklaruje dla niego klasy szczelności ani odporności na upadki.\n\n[T40 Ultra](/produkt/bluebird-t40-ultra) to zapowiedziany tablet 8″ dla zakładów karnych, z obudową IP68 i czujnikiem ingerencji. Termin dostępności i cenę podamy na zapytanie.\n\nKażdy model ma NFC i narzędzia BOS do konfiguracji oraz zarządzania (Provisioning, Kiosk, Wi-Fine, NEST).',

@@ -66,7 +66,7 @@ export const satoPrinterCategory: BrandCategoryRichContent = {
     { name: 'Zapisz ustawienia stanowiska', text: 'Zachowaj zatwierdzony projekt i ustawienia materiału. Przygotuj instrukcję wymiany rolki oraz zasady czyszczenia dla operatora.' },
   ],
   expertAuthority: 'Dobór obejmuje drukarkę, konfigurację, etykietę, taśmę i akcesoria. W zapytaniu warto wskazać format, nakład i aplikację, z której ma być uruchamiany druk. Dzięki temu można porównać konkretne PN, zamiast zestawiać urządzenia o różnym wyposażeniu.',
-  contactText: 'Dobierzemy model, szerokość druku, materiał i wyposażenie do Twojego stanowiska. Porównamy konkretne konfiguracje SATO.',
+  contactText: 'Dobierzemy model, szerokość druku, materiał i wyposażenie do stanowiska pracy. Porównamy konkretne konfiguracje SATO.',
   faq: [
     { question: 'Czy każda drukarka SATO obsługuje termotransfer?', answer: 'Nie zakładaj tego na podstawie samej marki. Sprawdź technologię druku w wybranym PN. Druk termotransferowy wymaga mechanizmu prowadzenia taśmy oraz zgodnego materiału.' },
     { question: 'Czy 600 dpi gwarantuje odczyt małego DataMatrix?', answer: 'Nie. Znaczenie mają liczba danych, wielkość modułu, strefa ciszy, kontrast i jakość materiału. Rozdzielczość dobiera się do projektu; sam odczyt skanerem nie zastępuje weryfikacji jakości kodu, jeśli jest wymagana.' },
