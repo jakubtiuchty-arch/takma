@@ -75,7 +75,7 @@ Szybsza wersja 203 dpi, [Brother TD-4650TNWBR](/produkt/brother-td-4650tnwbr), d
     faq: [
       { question: 'Jak długą etykietę wydrukuje TD-4750TNWBR?', answer: 'Do 11 430 mm na jednym wydruku. Wersja 203 dpi, TD-4650TNWBR, drukuje do 25 400 mm.' },
       { question: 'Co ustala kalibracja RFID w TD-4750TNWBR?', answer: 'Typ układu, moc zapisu i odczytu oraz miejsce kodowania na etykiecie. Antenę ustawia się wcześniej ręcznie, suwakiem Antenna Slide.' },
-      { question: 'Jaki rozstaw wkładek zapewnia płynną pracę TD-4750TNWBR?', answer: 'Powyżej 25,4 mm. Przy mniejszym rozstawie drukarka może cofać materiał i drukuje wolniej. Minimalny rozstaw wynosi 15,875 mm.' },
+      { question: 'Przy jakim rozstawie wkładek TD-4750TNWBR pracuje płynnie?', answer: 'Powyżej 25,4 mm. Przy mniejszym rozstawie drukarka może cofać materiał i drukuje wolniej. Minimalny rozstaw wynosi 15,875 mm.' },
     ],
     applications: ['Etykiety RFID z małym kodem 2D i drobnym tekstem', 'Kodowanie etykiet UHF 300 dpi na stanowisku biurowym'],
     specifications: [
@@ -136,7 +136,7 @@ export const brotherRfidProducts: Product[] = [
 export const brotherRfidAdditionalAccessories: Product[] = [{
   id: 'brother-td4t-roll-holder', slug: 'brother-uchwyt-rolki-pa-rh-001', name: 'Uchwyt rolki Brother PA-RH-001',
   shortDescription: 'Zewnętrzny uchwyt rolki Brother PA-RH-001 do drukarek TD-4T, w tym TD-4650TNWBR i TD-4750TNWBR.',
-  description: 'Brother PA-RH-001 to zewnętrzny uchwyt rolki materiału do drukarek TD-4T. Podaje materiał przez tylną szczelinę drukarki i pozwala korzystać z większej rolki. Pasuje do TD-4420TN, TD-4520TN, TD-4650TNWB, TD-4750TNWB, TD-4650TNWBR i TD-4750TNWBR. Uchwyt jest sprzedawany osobno. Drukarka i materiał nie są częścią zestawu. Przy etykietach RFID sprawdź zgodność wkładki, położenie anteny i kalibrację urządzenia.',
+  description: 'Brother PA-RH-001 to zewnętrzny uchwyt rolki materiału do drukarek TD-4T. Podaje materiał przez tylną szczelinę drukarki i pozwala korzystać z większej rolki. Pasuje do TD-4420TN, TD-4520TN, TD-4650TNWB, TD-4750TNWB, TD-4650TNWBR i TD-4750TNWBR. Uchwyt jest sprzedawany osobno. Drukarka i materiał nie są częścią zestawu. Przy etykietach RFID należy sprawdzić zgodność wkładki, położenie anteny i kalibrację urządzenia.',
   categoryId: 'akcesoria', subcategoryIds: ['akcesoria-do-drukarek-etykiet'], manufacturerId: 'brother',
   images: ['/images/products/brother-pa-rh-001.webp'], imageDescriptions: ['Brother PA-RH-001 — zewnętrzny uchwyt rolki do drukarek TD-4T'],
   specifications: [{ name: 'Part Number', value: 'PARH001' }, { name: 'Model', value: 'PA-RH-001' }, { name: 'Zgodność', value: 'TD-4420TN, TD-4520TN, TD-4650TNWB, TD-4750TNWB, TD-4650TNWBR, TD-4750TNWBR' }],

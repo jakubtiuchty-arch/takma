@@ -22,7 +22,7 @@ Zwykły materiał może mieć 0,06–0,28 mm grubości. Etykiety RFID na metal m
 
 ## Zasilacz 90 W w obudowie
 
-Zasilacz jest wbudowany w drukarkę. W pudełku są przewód zasilający, przewód USB i gilza. Złącza to USB 2.0 typu B, USB Host do klawiatury lub skanera, RS-232 i Ethernet 10/100. Wi-Fi 802.11a/b/g/n zapewnia opcjonalny [moduł PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002). Obcinacz i odklejak serii TJ nie są przeznaczone do etykiet RFID.
+Zasilacz jest wbudowany w drukarkę. W pudełku są przewód zasilający, przewód USB i gilza. Złącza to USB 2.0 typu B, USB Host do klawiatury lub skanera, RS-232 i Ethernet 10/100. Wi-Fi 802.11a/b/g/n dodaje opcjonalny [moduł PA-WI-002](/produkt/brother-modul-wifi-pa-wi-002). Obcinacz i odklejak serii TJ nie są przeznaczone do etykiet RFID.
 
 [Brother TJ-4121TNR](/produkt/brother-tj-4121tnr) ma głowicę 300 dpi i drukuje do 177,8 mm/s.`,
     faq: [

@@ -5076,17 +5076,17 @@ Specyfikacja techniczna zgodna z danymi producenta.`,
     slug: 'brother-td-4d',
     name: 'Brother TD-4D',
     shortDescription: 'Brother TD-4D — biurkowa drukarka etykiet termiczna 4 cale, 203/300 dpi, do 203 mm/s, emulacja ZPL II, 3-letnia gwarancja z głowicą i wałkiem, BarTender w zestawie',
-    seoTitle: 'Brother TD-4D — drukarka etykiet termiczna | od 1 250 zł',
-    seoDescription: 'Brother TD-4D — biurkowa drukarka termiczna 4", 203/300 dpi, do 203 mm/s. Emulacja ZPL II, BarTender gratis, 3-letnia gwarancja z głowicą. Od 1 250 zł. TAKMA.',
-    description: `Dla kogo? Brother TD-4D to profesjonalna biurkowa drukarka etykiet termicznych 4 cale, stworzona z myślą o firmach e-commerce, punktach nadawczych, sklepach detalicznych, aptekach, gabinetach lekarskich i małych magazynach — wszędzie tam, gdzie liczy się niezawodny druk etykiet kurierskich, cenowych, kodów kreskowych, paragonów i opasek identyfikacyjnych przy niskich kosztach eksploatacji.
+    seoTitle: 'Brother TD-4D',
+    seoDescription: 'Brother TD-4D — biurkowa drukarka termiczna 4", 203/300 dpi, do 203 mm/s. Emulacja ZPL II, BarTender gratis, 3-letnia gwarancja z głowicą. TAKMA.',
+    description: `Dla kogo? Brother TD-4D to profesjonalna biurkowa drukarka etykiet termicznych 4 cale, stworzona z myślą o firmach e-commerce, punktach nadawczych, sklepach detalicznych, aptekach, gabinetach lekarskich i małych magazynach — wszędzie tam, gdzie drukuje się etykiety kurierskie, cenowe, kody kreskowe, paragony i opaski identyfikacyjne przy niskich kosztach eksploatacji.
 
 Brother TD-4D to seria czterech modeli biurkowych drukarek etykiet pracujących w technologii druku termicznego bezpośredniego (direct thermal). Drukarka nie wymaga taśmy barwiącej (ribbona) — obraz powstaje bezpośrednio na papierze termicznym, co obniża koszty eksploatacji i upraszcza obsługę. Seria TD-4D oferuje dwie rozdzielczości: 203 dpi (modele TD-4410D i TD-4420DN, prędkość do 203 mm/s) oraz 300 dpi (modele TD-4520DN i TD-4550DNWB, prędkość do 152 mm/s). Wszystkie modele obsługują etykiety o szerokości od 19 do 118 mm na rolkach o średnicy do 127 mm.
 
-Kluczową przewagą Brother TD-4D jest emulacja ZPL II, CPCL i DPL — drukarka jest kompatybilna z szablonami etykiet zaprojektowanymi dla drukarek Zebra, co umożliwia bezproblemową migrację z modeli [Zebra ZD220d](/produkt/zebra-zd220d), [Zebra ZD421d](/produkt/zebra-zd421d) czy GK420d bez zmiany oprogramowania. W zestawie z drukarką dostarczany jest program BarTender UltraLite (licencja o wartości ponad 1 000 zł) oraz P-touch Editor do projektowania etykiet — oba bezpłatnie. Drukarka obsługuje kody kreskowe 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, GS1-128, GS1 DataBar) i 2D (QR Code, DataMatrix, PDF417, Aztec, MaxiCode), spełniając wymagania standardów GS1 i etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Opcjonalne akcesoria — odklejak etykiet (PALP002) i obcinarka (PACU001) — montowane samodzielnie przez użytkownika, rozszerzają funkcjonalność drukarki. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
+Brother TD-4D emuluje języki ZPL II, CPCL i DPL — drukarka jest kompatybilna z szablonami etykiet zaprojektowanymi dla drukarek Zebra, co ułatwia zastąpienie modeli [Zebra ZD220d](/produkt/zebra-zd220d), [Zebra ZD421d](/produkt/zebra-zd421d) czy GK420d bez zmiany oprogramowania. W zestawie z drukarką dostarczany jest program BarTender UltraLite oraz P-touch Editor do projektowania etykiet — oba bezpłatnie. Drukarka obsługuje kody kreskowe 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, GS1-128, GS1 DataBar) i 2D (QR Code, DataMatrix, PDF417, Aztec, MaxiCode), spełniając wymagania standardów GS1 i etykiet kurierskich InPost, DPD, DHL, UPS i GLS. Opcjonalne akcesoria — odklejak etykiet (PALP002) i obcinarka (PACU001) — montowane samodzielnie przez użytkownika, rozszerzają funkcjonalność drukarki. Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Brother TD-4D współpracuje z platformami e-commerce i systemami logistycznymi: BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Integracja odbywa się przez sterownik drukarki (Windows/Linux) lub emulację ZPL — systemy wysyłające etykiety w formacie ZPL do dowolnej drukarki Zebra będą działały z Brother TD-4D bez modyfikacji. Brother TD-4D to jedna z najtańszych drukarek etykiet 4 cale na rynku — tańsza niż Zebra ZD421d o 222 zł, szybsza o 34% (203 vs 152 mm/s). Tania drukarka etykiet do paczek, łącząca niską cenę zakupu z brakiem kosztów taśmy barwiącej i 3-letnią gwarancją obejmującą głowicę drukującą.
+Brother TD-4D współpracuje z platformami e-commerce i systemami logistycznymi: BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Integracja odbywa się przez sterownik drukarki (Windows/Linux) lub emulację ZPL — systemy wysyłające etykiety w formacie ZPL do dowolnej drukarki Zebra będą działały z Brother TD-4D bez modyfikacji. Modele 203 dpi drukują do 203 mm/s, a Zebra ZD421d do 152 mm/s. Druk termiczny nie wymaga taśmy barwiącej.
 
-Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukującą i wałek dociskowy (po rejestracji na brother.pl) — to najdłuższa gwarancja w klasie biurkowych drukarek etykiet, obejmująca elementy eksploatacyjne, które u konkurencji ([Zebra](/drukarki-etykiet), [Honeywell PC45d](/produkt/honeywell-pc45d)) są wyłączone z gwarancji lub objęte gwarancją maksymalnie 6–12 miesięcy. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 3 lata. Obejmuje drukarkę, głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5132,7 +5132,7 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       { name: 'Wilgotność pracy', value: '20–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz (zasilacz w zestawie)' },
       { name: 'Nośniki', value: 'Etykiety, etykiety ciągłe, przywieszki, paragony, opaski na rękę, fan-fold' },
-      { name: 'Gwarancja', value: '36 miesięcy (drukarka + głowica + wałek, po rejestracji)' },
+      { name: 'Gwarancja', value: '3 lata; głowica do 30 km wydruku, wałek dociskowy do 50 km' },
     ],
     applications: [
       'Etykiety kurierskie i wysyłkowe (InPost, DPD, DHL, UPS, GLS, Pocztex)',
@@ -5205,11 +5205,11 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       },
       {
         question: 'Jaka jest gwarancja na Brother TD-4D?',
-        answer: 'Brother udziela 3-letniej gwarancji (36 miesięcy) na drukarki serii TD-4D po bezpłatnej rejestracji na stronie brother.pl. Gwarancja obejmuje drukarkę, głowicę drukującą i wałek dociskowy — to unikalna oferta na rynku, ponieważ konkurenci (Zebra, Honeywell) standardowo udzielają 12–24 miesięcy gwarancji, a głowice i wałki są wyłączone lub objęte krótszą gwarancją. Bez rejestracji gwarancja wynosi 24 miesiące.',
+        answer: 'Gwarancja producenta na drukarki serii TD-4D wynosi 3 lata. Obejmuje drukarkę, głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Gwarancja nie obejmuje materiałów eksploatacyjnych.',
       },
       {
         question: 'Czym się różnią modele Brother TD-4410D, TD-4420DN, TD-4520DN i TD-4550DNWB?',
-        answer: 'Seria Brother TD-4D obejmuje 4 modele różniące się rozdzielczością i łącznością. TD-4410D (203 dpi, 203 mm/s, USB + RS-232) — najtańszy model bazowy. TD-4420DN (203 dpi, 203 mm/s, USB + RS-232 + Ethernet) — wersja sieciowa do współdzielenia. TD-4520DN (300 dpi, 152 mm/s, USB + RS-232 + Ethernet) — wyższa rozdzielczość do małych kodów 2D. TD-4550DNWB (300 dpi, 152 mm/s, USB + Ethernet + Wi-Fi + Bluetooth + LCD) — pełna łączność bezprzewodowa z wyświetlaczem. Wszystkie modele mają identyczną obudowę, wagę (2,08 kg) i obsługują te same nośniki.',
+        answer: 'Seria Brother TD-4D obejmuje 4 modele różniące się rozdzielczością i łącznością. TD-4410D (203 dpi, 203 mm/s, USB + RS-232) — model bazowy. TD-4420DN (203 dpi, 203 mm/s, USB + RS-232 + Ethernet) — wersja sieciowa do współdzielenia. TD-4520DN (300 dpi, 152 mm/s, USB + RS-232 + Ethernet) — wyższa rozdzielczość do małych kodów 2D. TD-4550DNWB (300 dpi, 152 mm/s, USB + Ethernet + Wi-Fi + Bluetooth + LCD) — pełna łączność bezprzewodowa z wyświetlaczem. Wszystkie modele mają identyczną obudowę, wagę (2,08 kg) i obsługują te same nośniki.',
       },
       {
         question: 'Czy można dodać odklejak lub obcinarkę do Brother TD-4D?',
@@ -5217,11 +5217,11 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       },
       {
         question: 'Czy Brother TD-4D drukuje etykiety kurierskie InPost, DPD i DHL?',
-        answer: 'Tak. Brother TD-4D obsługuje standardowe etykiety kurierskie 100x150 mm (format A6) i 100x200 mm wymagane przez InPost, DPD, DHL, UPS, GLS i Pocztex. Rozdzielczość 203 dpi zapewnia czytelność kodów kreskowych 1D (Code 128) i 2D (QR Code, DataMatrix, PDF417) dla skanerów kurierów. Modele 203 dpi (TD-4410D, TD-4420DN) drukują etykietę kurierską w niespełna sekundę (prędkość 203 mm/s). Drukarka współpracuje z BaseLinker, Allegro, Amazon i innymi platformami e-commerce.',
+        answer: 'Tak. Brother TD-4D obsługuje standardowe etykiety kurierskie 100x150 mm (format A6) i 100x200 mm wymagane przez InPost, DPD, DHL, UPS, GLS i Pocztex. Przy 203 dpi kody kreskowe 1D (Code 128) i 2D (QR Code, DataMatrix, PDF417) są czytelne dla skanerów kurierów. Modele 203 dpi (TD-4410D, TD-4420DN) drukują etykietę kurierską w niespełna sekundę (prędkość 203 mm/s). Drukarka współpracuje z BaseLinker, Allegro, Amazon i innymi platformami e-commerce.',
       },
       {
         question: 'Co to jest BarTender i czy jest w zestawie z Brother TD-4D?',
-        answer: 'BarTender to profesjonalne oprogramowanie do projektowania i druku etykiet firmy Seagull Scientific, stosowane w tysiącach firm na świecie. Licencja BarTender UltraLite jest dołączona bezpłatnie do każdej drukarki Brother TD-4D — to oszczędność ponad 1 000 zł w porównaniu z osobnym zakupem. Dodatkowo w zestawie jest P-touch Editor — intuicyjny edytor etykiet Brother z szablonami i obsługą kodów kreskowych. Drukarka obsługuje także projektowanie etykiet w ZebraDesigner (przez emulację ZPL II) i innych programach kompatybilnych z ZPL.',
+        answer: 'BarTender to profesjonalne oprogramowanie do projektowania i druku etykiet firmy Seagull Scientific, stosowane w tysiącach firm na świecie. Licencja BarTender UltraLite jest dołączona bezpłatnie do każdej drukarki Brother TD-4D. Dodatkowo w zestawie jest P-touch Editor — intuicyjny edytor etykiet Brother z szablonami i obsługą kodów kreskowych. Drukarka obsługuje także projektowanie etykiet w ZebraDesigner (przez emulację ZPL II) i innych programach kompatybilnych z ZPL.',
       },
       {
         question: 'Jak Brother TD-4D wypada pod względem prędkości w porównaniu z Zebra ZD421d?',
@@ -5229,23 +5229,15 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
       },
       {
         question: 'Czy Brother TD-4D drukuje opaski identyfikacyjne na rękę?',
-        answer: 'Tak. Brother TD-4D obsługuje druk opasek identyfikacyjnych na rękę (wristbands), stosowanych w szpitalach, na eventach i w parkach rozrywki. Drukarka akceptuje opaski o szerokości od 19 do 118 mm. W połączeniu z emulacją ZPL II i integracją z systemami HIS (Hospital Information System) Brother TD-4D stanowi ekonomiczną alternatywę dla dedykowanych drukarek opasek Zebra HC100/ZD510-HC. Model TD-4550DNWB z Wi-Fi i Bluetooth umożliwia bezprzewodowy druk opasek bezpośrednio z tabletu na stanowisku rejestracji pacjentów.',
-      },
-      {
-        question: 'Ile kosztuje Brother TD-4D?',
-        answer: 'Ceny Brother TD-4D zaczynają się od 1 250 zł netto za model bazowy TD-4410D (203 dpi, USB + RS-232). TD-4420DN z Ethernet kosztuje ok. 1 572 zł netto, TD-4520DN z rozdzielczością 300 dpi — ok. 1 900 zł netto, a flagowy TD-4550DNWB z Wi-Fi, Bluetooth i LCD — ok. 2 030 zł netto. To jedna z najtańszych drukarek etykiet 4 cale na rynku — dla porównania Zebra ZD421d kosztuje od 1 472 zł, a Honeywell PC45d od ok. 1 400 zł netto. Wszystkie ceny netto PLN, aktualne na dzień publikacji.',
+        answer: 'Tak. Brother TD-4D obsługuje druk opasek identyfikacyjnych na rękę (wristbands), stosowanych w szpitalach, na eventach i w parkach rozrywki. Drukarka akceptuje opaski o szerokości od 19 do 118 mm. W połączeniu z emulacją ZPL II i integracją z systemami HIS (Hospital Information System) Brother TD-4D może zastąpić dedykowane drukarki opasek Zebra HC100/ZD510-HC. Model TD-4550DNWB z Wi-Fi i Bluetooth umożliwia bezprzewodowy druk opasek bezpośrednio z tabletu na stanowisku rejestracji pacjentów.',
       },
       {
         question: 'Czy Brother TD-4D działa z BaseLinker, Allegro i innymi platformami e-commerce?',
         answer: 'Tak. Brother TD-4D współpracuje z BaseLinker, Allegro, Amazon Seller Central, Shoper, PrestaShop, WooCommerce, IdoSell i Magento. Drukarka instaluje się jako standardowa drukarka Windows/Linux — każdy system, który drukuje etykiety (PDF, ZPL, EPL), będzie z nią współpracował. Dzięki emulacji ZPL II, konfiguracje etykiet zaprojektowane dla drukarek Zebra działają na Brother TD-4D bez modyfikacji. Model TD-4420DN z Ethernet umożliwia współdzielenie drukarki w sieci między wieloma stanowiskami pakowania.',
       },
       {
-        question: 'Jaki jest TCO Brother TD-4D vs Zebra ZD421d na 3 lata?',
-        answer: 'Brother TD-4D ma niższy TCO (Total Cost of Ownership) niż Zebra ZD421d w perspektywie 3-letniej. Zakup drukarki: Brother TD-4410D od 1 250 zł vs Zebra ZD421d od 1 472 zł (różnica 222 zł). Głowica wymienna: Brother PAHU2001 vs Zebra P1112640-019 — obie w zbliżonej cenie, ale Brother obejmuje głowicę 3-letnią gwarancją, więc przy normalnej eksploatacji wymiana nie jest potrzebna. Koszt mediów identyczny — obie drukarki używają standardowych etykiet termicznych. Podsumowanie: Brother TD-4D oszczędza ok. 200–500 zł na zakupie + eliminuje ryzyko kosztu wymiany głowicy dzięki 3-letniej gwarancji.',
-      },
-      {
         question: 'Jakie są alternatywy dla Brother TD-4D?',
-        answer: 'Alternatywami w klasie biurkowych drukarek termicznych 4 cale są: Zebra ZD421d (od 1 472 zł, modułowa architektura MCS, Link-OS), Zebra ZD220d (od 650 zł, budżetowa, tylko USB), Honeywell PC45d (od 1 400 zł, modułowa, Ethernet opcja), TSC DA220 (od 800 zł, ekonomiczna). Brother TD-4D wyróżnia się 3-letnią gwarancją z głowicą, BarTender w zestawie, emulacją ZPL II i prędkością 203 mm/s — przy konkurencyjnej cenie od 1 250 zł netto.',
+        answer: 'Alternatywami w klasie biurkowych drukarek termicznych 4 cale są: Zebra ZD421d (modułowa architektura MCS, Link-OS), Zebra ZD220d (tylko USB), Honeywell PC45d (modułowa, Ethernet jako opcja) i TSC DA220. Brother TD-4D ma 3-letnią gwarancję z głowicą, BarTender w zestawie, emulację ZPL II i prędkość do 203 mm/s.',
       },
     ],
     comparison: {
@@ -5265,7 +5257,6 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
             'Bluetooth': '—',
             'Wi-Fi': '—',
             'LCD': '—',
-            'Cena od': '1 250 zł',
           },
         },
         {
@@ -5280,7 +5271,6 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
             'Bluetooth': '—',
             'Wi-Fi': '—',
             'LCD': '—',
-            'Cena od': '1 572 zł',
           },
         },
         {
@@ -5295,7 +5285,6 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
             'Bluetooth': '—',
             'Wi-Fi': '—',
             'LCD': '—',
-            'Cena od': '1 900 zł',
           },
         },
         {
@@ -5310,7 +5299,6 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
             'Bluetooth': 'v4.2',
             'Wi-Fi': '2,4 + 5 GHz',
             'LCD': 'Tak',
-            'Cena od': '2 030 zł',
           },
         },
       ],
@@ -5330,17 +5318,17 @@ Producent udziela 3-letniej gwarancji obejmującej drukarkę, głowicę drukują
     slug: 'brother-td-2020a',
     name: 'Brother TD-2020A',
     shortDescription: 'Brother TD-2020A — kompaktowa drukarka etykiet termiczna 2 cale, 203 dpi, 152,4 mm/s, USB, emulacja ZPL II, P-touch Editor w zestawie',
-    seoTitle: 'Brother TD-2020A — najtańsza drukarka etykiet 2" | od 461 zł',
-    seoDescription: 'Brother TD-2020A — najtańsza drukarka etykiet 2", 203 dpi, 152 mm/s. Emulacja ZPL II, P-touch Editor gratis. Cenówki, kody, paragony. Od 461 zł netto. TAKMA.',
-    description: `Dla kogo? Brother TD-2020A to mała, tania drukarka etykiet 2 cale — drukarka do cenówek, metek cenowych, kodów kreskowych i paragonów. Zaprojektowana jako drukarka POS dla punktów sprzedaży, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet przy minimalnym zajmowaniu miejsca na biurku. Sprawdź wszystkie [biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet) w ofercie TAKMA.
+    seoTitle: 'Brother TD-2020A',
+    seoDescription: 'Brother TD-2020A — drukarka etykiet 2", 203 dpi, 152 mm/s. Emulacja ZPL II, P-touch Editor gratis. Cenówki, kody, paragony. TAKMA.',
+    description: `Dla kogo? Brother TD-2020A to mała drukarka etykiet 2 cale — drukarka do cenówek, metek cenowych, kodów kreskowych i paragonów. Zaprojektowana jako drukarka POS dla punktów sprzedaży, przychodni lekarskich, aptek, laboratoriów i małych biur — wszędzie tam, gdzie potrzebny jest szybki druk małych etykiet przy minimalnym zajmowaniu miejsca na biurku. Zobacz też [biurkowe drukarki etykiet](/biurkowe-drukarki-etykiet).
 
 Brother TD-2020A to model bazowy serii TD-2000 — drukarka termiczna bezpośrednia (direct thermal) o rozdzielczości 203 dpi i prędkości druku do 152,4 mm/s (6 ips). Drukuje etykiety i paragony o szerokości do 63 mm (druk do 56 mm). Kompaktowe wymiary (110 × 215 × 172 mm) i waga zaledwie 1,32 kg sprawiają, że drukarka metek cenowych Brother TD-2020A zajmuje minimalną przestrzeń na stanowisku pracy. Drukarka jest zasilana z sieci (zasilacz 100–240V w zestawie) — nie wymaga baterii.
 
-Brother TD-2020A emuluje język ZPL II (P-touch Template 2.0), co umożliwia współpracę z systemami POS zaprojektowanymi dla drukarek Zebra. W zestawie dostarczany jest program P-touch Editor do projektowania etykiet z szablonami i kodami kreskowymi. Drukarka obsługuje kody 1D (Code 39, Code 128, EAN-13, UPC-A, ITF, GS1-128) i 2D (QR Code, DataMatrix, PDF417). Łączy się przez USB 2.0 (mini-B) — port szeregowy RS-232C dostępny przez opcjonalną przejściówkę PA-SCA-001. Szukasz drukarki z szerszym drukiem? Sprawdź [Brother TD-4D](/produkt/brother-td-4d) (4 cale), [Zebra ZD220d](/produkt/zebra-zd220d) (4 cale, od 639 zł) lub nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
+Brother TD-2020A emuluje język ZPL II (P-touch Template 2.0), co umożliwia współpracę z systemami POS zaprojektowanymi dla drukarek Zebra. W zestawie dostarczany jest program P-touch Editor do projektowania etykiet z szablonami i kodami kreskowymi. Drukarka obsługuje kody 1D (Code 39, Code 128, EAN-13, UPC-A, ITF, GS1-128) i 2D (QR Code, DataMatrix, PDF417). Łączy się przez USB 2.0 (mini-B) — port szeregowy RS-232C dostępny przez opcjonalną przejściówkę PA-SCA-001. Szerszy druk, do 4 cali, mają [Brother TD-4D](/produkt/brother-td-4d) i [Zebra ZD220d](/produkt/zebra-zd220d). Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Brother TD-2020A działa z systemami POS i kasowymi: Comarch POS, Subiekt 123, PC-Market, SmallBusiness oraz innymi systemami obsługującymi druk ZPL II przez USB. W handlu detalicznym drukarka do cenówek Brother TD-2020A drukuje metki cenowe z kodem EAN-13, nazwą produktu i datą ważności. W aptekach — etykiety na leki z dawkowaniem i kodem kreskowym. Drukarka etykiet do apteki Brother TD-2020A spełnia wymagania farmaceutyczne dzięki rozdzielczości 203 dpi i obsłudze kodów DataMatrix.
+Brother TD-2020A działa z systemami POS i kasowymi: Comarch POS, Subiekt 123, PC-Market, SmallBusiness oraz innymi systemami obsługującymi druk ZPL II przez USB. W handlu detalicznym drukarka do cenówek Brother TD-2020A drukuje metki cenowe z kodem EAN-13, nazwą produktu i datą ważności. W aptekach — etykiety na leki z dawkowaniem i kodem kreskowym. Drukarka obsługuje kody DataMatrix w rozdzielczości 203 dpi.
 
-Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najtańszych drukarek etykiet 2 cale na rynku — od 461 zł netto. Tania drukarka etykiet Brother TD-2020A kosztuje mniej niż [Zebra ZD220d](/produkt/zebra-zd220d) (od 639 zł) i [Honeywell PC42e-t](/produkt/honeywell-pc42e-t) (od ~900 zł). Producent udziela gwarancji po rejestracji na brother.pl. Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 3 lata. Obejmuje głowicę drukującą do 30 km wydruku i wałek dociskowy do 30 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termiczne-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5421,7 +5409,7 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
     faq: [
       {
         question: 'Czym jest Brother TD-2020A i do czego służy?',
-        answer: 'Brother TD-2020A to kompaktowa biurkowa drukarka etykiet termicznych o szerokości druku do 56 mm (2 cale). Drukuje etykiety, metki cenowe, kody kreskowe, paragony i pokwitowania bez taśmy barwiącej — obraz powstaje bezpośrednio na papierze termicznym. Idealna do punktów sprzedaży, aptek, przychodni, laboratoriów i małych biur, gdzie potrzebna jest mała, szybka i tania drukarka etykiet.',
+        answer: 'Brother TD-2020A to kompaktowa biurkowa drukarka etykiet termicznych o szerokości druku do 56 mm (2 cale). Drukuje etykiety, metki cenowe, kody kreskowe, paragony i pokwitowania bez taśmy barwiącej — obraz powstaje bezpośrednio na papierze termicznym. Służy w punktach sprzedaży, aptekach, przychodniach, laboratoriach i małych biurach.',
       },
       {
         question: 'Jakie etykiety pasują do Brother TD-2020A?',
@@ -5432,44 +5420,40 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
         answer: 'Tak. Brother TD-2020A obsługuje P-touch Template 2.0 z emulacją ZPL II, co umożliwia współpracę z systemami POS, WMS i ERP zaprojektowanymi dla drukarek Zebra. Drukarka rozumie również komendy Raster i ESC/P. Migracja z małej drukarki Zebra (np. GX420d, ZD220d w trybie 2") na Brother TD-2020A zazwyczaj nie wymaga zmiany oprogramowania.',
       },
       {
-        question: 'Ile kosztuje Brother TD-2020A?',
-        answer: 'Brother TD-2020A kosztuje od 461 zł netto (ok. 567 zł brutto). To najtańsza drukarka etykiet w ofercie TAKMA i jedna z najtańszych drukarek 2 cale na rynku. W cenie: drukarka, zasilacz, kabel USB i oprogramowanie P-touch Editor. Dla porównania: Zebra ZD220d (4 cale) kosztuje od 650 zł, a Brother TD-4410D (4 cale) od 1 250 zł netto.',
-      },
-      {
         question: 'Czym się różni Brother TD-2020A od TD-2120N i TD-2130N?',
-        answer: 'TD-2020A to model bazowy serii TD-2000 — ma USB i opcjonalny RS-232C, ale NIE obsługuje żadnych dodatkowych akcesoriów. TD-2120N (203 dpi) i TD-2130N (300 dpi) dodają: Ethernet LAN, port USB Host, możliwość instalacji opcjonalnego LCD z panelem dotykowym (PA-TDU-001), odklejaka etykiet (PA-LP-001), akumulatora (PA-BT-4000LI), Wi-Fi (PA-WI-001) i Bluetooth (PA-BI-001). Jeśli potrzebujesz łączności sieciowej lub akcesoriów — wybierz TD-2120N lub TD-2130N.',
+        answer: 'TD-2020A to model bazowy serii TD-2000 — ma USB i opcjonalny RS-232C, ale NIE obsługuje żadnych dodatkowych akcesoriów. TD-2120N (203 dpi) i TD-2130N (300 dpi) dodają: Ethernet LAN, port USB Host, możliwość instalacji opcjonalnego LCD z panelem dotykowym (PA-TDU-001), odklejaka etykiet (PA-LP-001), akumulatora (PA-BT-4000LI), Wi-Fi (PA-WI-001) i Bluetooth (PA-BI-001). Łączność sieciową i akcesoria mają TD-2120N i TD-2130N.',
       },
       {
         question: 'Czym się różni Brother TD-2020A od TD-4410D?',
-        answer: 'Brother TD-2020A to drukarka 2-calowa (druk do 56 mm), a TD-4410D to drukarka 4-calowa (druk do 104 mm). TD-2020A jest mniejsza (110×215×172 mm vs 180×224×155 mm), lżejsza (1,32 kg vs 2,08 kg) i tańsza (461 zł vs 1 250 zł). TD-4410D jest szybsza (203 mm/s vs 152 mm/s), ma więcej pamięci (256 MB RAM vs 64 MB) i obsługuje etykiety kurierskie 100x150 mm. TD-2020A jest lepsza do małych etykiet, metek i paragonów; TD-4410D do etykiet wysyłkowych i magazynowych.',
+        answer: 'Brother TD-2020A to drukarka 2-calowa (druk do 56 mm), a TD-4410D to drukarka 4-calowa (druk do 104 mm). TD-2020A jest mniejsza (110×215×172 mm vs 180×224×155 mm) i lżejsza (1,32 kg vs 2,08 kg). TD-4410D jest szybsza (203 mm/s vs 152 mm/s), ma więcej pamięci (256 MB RAM vs 64 MB) i obsługuje etykiety kurierskie 100x150 mm. TD-2020A jest lepsza do małych etykiet, metek i paragonów; TD-4410D do etykiet wysyłkowych i magazynowych.',
       },
       {
         question: 'Czy Brother TD-2020A może drukować paragony?',
-        answer: 'Tak. Brother TD-2020A obsługuje druk ciągły na rolkach papieru termicznego, co umożliwia drukowanie paragonów, pokwitowań i potwierdzeń transakcji. Maksymalna szerokość papieru to 63 mm, a długość wydruku do 1 000 mm. Drukarka współpracuje z systemami POS (Point of Sale) przez USB. Prędkość druku 152,4 mm/s zapewnia szybkie wydawanie paragonów bez opóźnień na kasie. Do paragonów 58 i 80 mm z gilotyną służą [drukarki POS](/drukarki-pos).',
+        answer: 'Tak. Brother TD-2020A obsługuje druk ciągły na rolkach papieru termicznego, co umożliwia drukowanie paragonów, pokwitowań i potwierdzeń transakcji. Maksymalna szerokość papieru to 63 mm, a długość wydruku do 1 000 mm. Drukarka współpracuje z systemami POS (Point of Sale) przez USB. Prędkość druku wynosi do 152,4 mm/s. Do paragonów 58 i 80 mm z gilotyną służą [drukarki POS](/drukarki-pos).',
       },
       {
         question: 'Czy Brother TD-2020A ma Wi-Fi lub Bluetooth?',
-        answer: 'Nie. Brother TD-2020A to model bazowy z łącznością USB 2.0 i opcjonalnym RS-232C (przez przejściówkę). Nie obsługuje Wi-Fi ani Bluetooth — te opcje są dostępne tylko w modelach TD-2120N i TD-2130N (jako opcjonalne moduły PA-WI-001 i PA-BI-001). Jeśli potrzebujesz łączności bezprzewodowej, wybierz wyższy model z serii TD-2000.',
+        answer: 'Nie. Brother TD-2020A to model bazowy z łącznością USB 2.0 i opcjonalnym RS-232C (przez przejściówkę). Nie obsługuje Wi-Fi ani Bluetooth — te opcje są dostępne tylko w modelach TD-2120N i TD-2130N (jako opcjonalne moduły PA-WI-001 i PA-BI-001). Łączność bezprzewodową mają wyższe modele serii TD-2000.',
       },
       {
         question: 'Czy Brother TD-2020A drukuje kody kreskowe i QR Code?',
-        answer: 'Tak. Brother TD-2020A obsługuje kody kreskowe 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar, GS1-128) i 2D (QR Code, DataMatrix, PDF417, MaxiCode). Rozdzielczość 203 dpi zapewnia czytelność kodów dla skanerów ręcznych. Drukarka renderuje kody wewnętrznie — nie wymaga grafiki z komputera, co przyspiesza druk.',
+        answer: 'Tak. Brother TD-2020A obsługuje kody kreskowe 1D (Code 39, Code 128, EAN-13, EAN-8, UPC-A, UPC-E, ITF, Codabar, GS1-128) i 2D (QR Code, DataMatrix, PDF417, MaxiCode). Przy 203 dpi kody są czytelne dla skanerów ręcznych. Drukarka renderuje kody wewnętrznie — nie wymaga grafiki z komputera, co przyspiesza druk.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TD-2020A?',
-        answer: 'Alternatywy w klasie kompaktowych drukarek etykiet 2 cale: Zebra ZD220d (od 650 zł, 4 cale ale obsługuje też wąskie media), Brother TD-2120N (od ~700 zł, z Ethernet i opcjonalnymi akcesoriami), Honeywell PC42e-t (od ~900 zł, 4 cale). W klasie drukarek mobilnych 2 cale: Zebra ZQ220 Plus (od ~1 200 zł, bateryjna). Brother TD-2020A wyróżnia się najniższą ceną (461 zł), kompaktowymi wymiarami i emulacją ZPL II.',
+        answer: 'Alternatywy w klasie kompaktowych drukarek etykiet: Zebra ZD220d (4 cale, obsługuje też wąskie media), Brother TD-2120N (z Ethernetem i opcjonalnymi akcesoriami), Honeywell PC42e-t (4 cale). W klasie drukarek mobilnych 2 cale: Zebra ZQ220 Plus (bateryjna). Brother TD-2020A ma kompaktowe wymiary i emulację ZPL II.',
       },
       {
         question: 'Czy Brother TD-2020A nadaje się do drukowania cenówek i metek?',
-        answer: 'Tak. Brother TD-2020A to jedna z najpopularniejszych drukarek do cenówek i metek cenowych w handlu detalicznym. Drukuje etykiety samoprzylepne o szerokości do 63 mm — idealne formaty to 57x32 mm (standardowa cenówka) i 50x30 mm (mała metka produktowa). Prędkość 152 mm/s pozwala wydrukować setki cenówek w kilka minut. Oprogramowanie P-touch Editor w zestawie umożliwia projektowanie metek z ceną, kodem kreskowym EAN-13, nazwą produktu i datą ważności.',
+        answer: 'Tak. Brother TD-2020A drukuje cenówki i metki cenowe na etykietach samoprzylepnych o szerokości do 63 mm, np. 57x32 mm (standardowa cenówka) i 50x30 mm (mała metka produktowa). Prędkość 152 mm/s pozwala wydrukować setki cenówek w kilka minut. Oprogramowanie P-touch Editor w zestawie umożliwia projektowanie metek z ceną, kodem kreskowym EAN-13, nazwą produktu i datą ważności.',
       },
       {
         question: 'Czy Brother TD-2020A działa z systemami POS i kasami fiskalnymi?',
-        answer: 'Tak. Brother TD-2020A łączy się z systemami POS (Point of Sale) przez USB 2.0 i opcjonalnie RS-232C. Emulacja ZPL II zapewnia kompatybilność z większością systemów kasowych i POS. Drukarka obsługuje druk paragonów, pokwitowań i potwierdzeń transakcji na papierze ciągłym (do 1 000 mm). Popularne systemy POS kompatybilne z TD-2020A: Comarch POS, Subiekt 123, PC-Market, SmallBusiness.',
+        answer: 'Tak. Brother TD-2020A łączy się z systemami POS (Point of Sale) przez USB 2.0 i opcjonalnie RS-232C. Dzięki emulacji ZPL II drukarka współpracuje z systemami kasowymi i POS przygotowanymi dla drukarek Zebra. Drukarka obsługuje druk paragonów, pokwitowań i potwierdzeń transakcji na papierze ciągłym (do 1 000 mm). Popularne systemy POS kompatybilne z TD-2020A: Comarch POS, Subiekt 123, PC-Market, SmallBusiness.',
       },
       {
         question: 'Jaki jest koszt eksploatacji Brother TD-2020A (TCO)?',
-        answer: 'Brother TD-2020A to drukarka termiczna bezpośrednia (direct thermal) — nie wymaga taśmy barwiącej (ribbon), co eliminuje największy koszt eksploatacji. Jedyny materiał eksploatacyjny to etykiety termiczne — standardowa rolka 57x32 mm (1 000 szt.) kosztuje ok. 15–20 zł, czyli ok. 0,02 zł za etykietę. Przy druku 500 etykiet dziennie miesięczny koszt materiałów to ok. 200–300 zł. Dla porównania: drukarka termotransferowa (np. Zebra ZD220t) wymaga dodatkowo taśmy ribbon (ok. 80 zł/rolka), co podnosi koszt o ok. 30–40%. Głowica termiczna TD-2020A jest zaprojektowana na 50 km druku.',
+        answer: 'Brother TD-2020A to drukarka termiczna bezpośrednia (direct thermal) — nie wymaga taśmy barwiącej (ribbon). Materiałem eksploatacyjnym są tylko etykiety termiczne. Drukarka termotransferowa, np. Zebra ZD220t, wymaga dodatkowo taśmy barwiącej. Gwarancja obejmuje głowicę drukującą do 30 km wydruku.',
       },
     ],
     comparison: {
@@ -5480,7 +5464,6 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
           slug: 'brother-td-2020a',
           highlight: true,
           specs: {
-            'Cena od': '461 zł',
             'Szerokość druku': '56 mm (2")',
             'Rozdzielczość': '203 dpi',
             'Prędkość': '152 mm/s',
@@ -5495,7 +5478,6 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
           name: 'Zebra ZD411d',
           slug: 'zebra-zd411d',
           specs: {
-            'Cena od': '1 238 zł',
             'Szerokość druku': '56 mm (2")',
             'Rozdzielczość': '203/300 dpi',
             'Prędkość': '152 mm/s',
@@ -5524,11 +5506,11 @@ Brother TD-2020A to najtańsza drukarka etykiet w ofercie TAKMA i jedna z najta�
     slug: 'brother-td-4t',
     name: 'Brother TD-4T',
     shortDescription: 'Biurkowa drukarka etykiet Brother TD-4T bez kodera RFID. Wersje 203 i 300 dpi, Ethernet oraz warianty z Wi-Fi, Bluetooth i ekranem LCD.',
-    seoTitle: 'Brother TD-4T — drukarka etykiet termotransferowa | TAKMA',
-    seoDescription: 'Brother TD-4T do druku etykiet termotransferowych i termicznych. Wybierz 203 lub 300 dpi oraz łączność. Porównaj cztery warianty bez kodera RFID.',
+    seoTitle: 'Brother TD-4T',
+    seoDescription: 'Brother TD-4T do druku etykiet termotransferowych i termicznych. Wersje 203 i 300 dpi, cztery warianty łączności, bez kodera RFID.',
     description: `Brother TD-4T to seria biurkowych drukarek do nadruku etykiet produktów, opakowań i przesyłek. Ta karta obejmuje cztery warianty TN i TNWB bez kodera RFID.
 
-Druk termotransferowy wymaga taśmy barwiącej. Wybierz materiał etykiety i taśmę do wymaganej odporności nadruku. Druk termiczny bezpośredni korzysta z etykiet termoczułych i nie wymaga taśmy.
+Druk termotransferowy wymaga taśmy barwiącej. Materiał etykiety i taśmę dobiera się do wymaganej odporności nadruku. Druk termiczny bezpośredni korzysta z etykiet termoczułych i nie wymaga taśmy.
 
 TD-4420TN ma 203 dpi i drukuje z prędkością do 152 mm/s. TD-4520TN ma 300 dpi i drukuje do 127 mm/s. Oba modele mają USB, USB Host, RS-232 i Ethernet.
 
@@ -5536,11 +5518,11 @@ TD-4650TNWB ma 203 dpi i drukuje do 203 mm/s. TD-4750TNWB ma 300 dpi i drukuje d
 
 Szerokość druku wynosi do 108 mm przy 203 dpi oraz do 105,7 mm przy 300 dpi. Drukarki obsługują materiał o szerokości 20–112 mm i wewnętrzne rolki o średnicy do 127 mm. Taśma barwiąca może mieć do 300 m długości.
 
-Język FBPL-EZD obsługuje EPL, ZPL, ZPL II i DPL. Przed zmianą drukarki sprawdź szablon i ustawienia materiału. Zgodność języka poleceń nie potwierdza automatycznie zgodności każdego szablonu lub systemu.
+Język FBPL-EZD obsługuje EPL, ZPL, ZPL II i DPL. Przed zmianą drukarki należy sprawdzić szablon i ustawienia materiału. Zgodność języka poleceń nie potwierdza automatycznie zgodności każdego szablonu lub systemu.
 
-Jeśli potrzebujesz kodowania UHF RFID, wybierz osobną wersję [Brother TD-4650TNWBR](/produkt/brother-td-4650tnwbr) lub [Brother TD-4750TNWBR](/produkt/brother-td-4750tnwbr). Warianty TN i TNWB wykonują tylko nadruk.
+Do kodowania UHF RFID służą osobne wersje [Brother TD-4650TNWBR](/produkt/brother-td-4650tnwbr) lub [Brother TD-4750TNWBR](/produkt/brother-td-4750tnwbr). Warianty TN i TNWB wykonują tylko nadruk.
 
-Zewnętrzny uchwyt PA-RH-001 podaje materiał z większej rolki. Obcinak PA-CU-003 i odklejak PA-LP-004 służą do zwykłych etykiet. Montaż obcinaka i odklejaka zleć sprzedawcy lub serwisowi. Etykiety, taśmy i dodatkowe akcesoria są sprzedawane osobno.`,
+Zewnętrzny uchwyt PA-RH-001 podaje materiał z większej rolki. Obcinak PA-CU-003 i odklejak PA-LP-004 służą do zwykłych etykiet. Obcinak i odklejak montuje sprzedawca lub serwis. Etykiety, taśmy i dodatkowe akcesoria są sprzedawane osobno.`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['biurkowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -5635,9 +5617,9 @@ Zewnętrzny uchwyt PA-RH-001 podaje materiał z większej rolki. Obcinak PA-CU-0
       },
     ],
     variantAttributeTooltips: {
-      'Rozdzielczość': 'Rozdzielczość określa szczegółowość nadruku. Warianty 300 dpi wybierz do drobniejszego tekstu i kodów.',
+      'Rozdzielczość': 'Rozdzielczość określa szczegółowość nadruku. Warianty 300 dpi służą do drobniejszego tekstu i kodów.',
       'Wi-Fi': 'Wi-Fi jest wbudowane w TD-4650TNWB i TD-4750TNWB. Modele TD-4420TN i TD-4520TN korzystają z połączeń przewodowych.',
-      'Bluetooth': 'Bluetooth jest wbudowany w warianty TNWB. Sprawdź zgodność połączenia z używanym urządzeniem i aplikacją.',
+      'Bluetooth': 'Bluetooth jest wbudowany w warianty TNWB. Zgodność połączenia zależy od urządzenia i aplikacji.',
     },
     compatibleAccessories: [
       'zebra-labels-zperform1000-57x32',
@@ -5646,11 +5628,11 @@ Zewnętrzny uchwyt PA-RH-001 podaje materiał z większej rolki. Obcinak PA-CU-0
     ],
     relatedAccessories: ['brother-td4t-cutter', 'brother-td4t-peeler', 'brother-td4t-roll-holder', 'labelmate-mc-11', 'labelmate-cat-3-standard', 'labelmate-cat-3-chuck', 'labelmate-ld-115-rs', 'labelmate-ld-115-u'],
     faq: [
-      { question: 'Czy te warianty Brother TD-4T kodują etykiety RFID?', answer: 'Nie. Cztery warianty TN i TNWB na tej karcie wykonują nadruk. Do kodowania UHF RFID wybierz [TD-4650TNWBR](/produkt/brother-td-4650tnwbr) lub [TD-4750TNWBR](/produkt/brother-td-4750tnwbr).' },
+      { question: 'Czy te warianty Brother TD-4T kodują etykiety RFID?', answer: 'Nie. Cztery warianty TN i TNWB na tej karcie wykonują nadruk. Do kodowania UHF RFID służą [TD-4650TNWBR](/produkt/brother-td-4650tnwbr) lub [TD-4750TNWBR](/produkt/brother-td-4750tnwbr).' },
       { question: 'Które warianty mają Wi-Fi i Bluetooth?', answer: 'TD-4650TNWB i TD-4750TNWB mają Wi-Fi, Bluetooth oraz kolorowy ekran LCD. TD-4420TN i TD-4520TN mają połączenia przewodowe i nie mają ekranu LCD.' },
       { question: 'Czy Brother TD-4T wymaga taśmy barwiącej?', answer: 'Druk termotransferowy wymaga taśmy. Druk termiczny bezpośredni wymaga etykiety termoczułej i nie wymaga taśmy. Dobierz materiał do oczekiwanej trwałości nadruku.' },
-      { question: 'Kiedy wybrać rozdzielczość 300 dpi?', answer: 'Wybierz 300 dpi do drobniejszego tekstu i małych kodów. Prędkość oraz szerokość nadruku zależą od konkretnego wariantu. Porównaj parametry przed zamówieniem.' },
-      { question: 'Czy szablony ZPL zadziałają na Brother TD-4T?', answer: 'Drukarka obsługuje emulacje ZPL i ZPL II w języku FBPL-EZD. Przed wdrożeniem sprawdź konkretny szablon, czcionki i ustawienia materiału.' },
+      { question: 'Kiedy wybrać rozdzielczość 300 dpi?', answer: 'Rozdzielczość 300 dpi służy do drobniejszego tekstu i małych kodów. Prędkość oraz szerokość nadruku zależą od konkretnego wariantu. Parametry wariantów podaje tabela na karcie.' },
+      { question: 'Czy szablony ZPL zadziałają na Brother TD-4T?', answer: 'Drukarka obsługuje emulacje ZPL i ZPL II w języku FBPL-EZD. Przed wdrożeniem należy sprawdzić konkretny szablon, czcionki i ustawienia materiału.' },
     ],
     comparison: { title: 'Porównanie wariantów Brother TD-4T bez RFID', models: [
       { name: 'TD-4420TN', specs: { 'Rozdzielczość': '203 dpi', 'Prędkość nadruku': 'do 152 mm/s', 'Szerokość druku': '108 mm', 'Wi-Fi / Bluetooth': 'Nie', 'Ekran LCD': 'Brak' } },
@@ -8167,17 +8149,17 @@ Gwarancja na drukarkę w regionie EMEA wynosi 24 miesiące. Obcinacz i części 
     slug: 'brother-tj-4020tn',
     name: 'Brother TJ-4020TN',
     shortDescription: 'Brother TJ-4020TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 203 dpi, 254 mm/s, taśmy 450 m, panel LED, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4020TN — drukarka 203 dpi | od 3 057 zł',
-    seoDescription: 'Brother TJ-4020TN — drukarka etykiet 4", 203 dpi, 254 mm/s, LED. Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 3 057 zł netto | TAKMA.',
-    description: `Dla kogo? Brother TJ-4020TN to najtańszy model w serii półprzemysłowych drukarek etykiet Brother TJ — idealny dla firm produkcyjnych, magazynów i centrów dystrybucyjnych, które potrzebują wytrzymałej drukarki 4" z dużą pojemnością mediów i emulacją ZPL II, ale nie wymagają ekranu dotykowego ani rozdzielczości 300 dpi. Brother TJ-4020TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
+    seoTitle: 'Brother TJ-4020TN',
+    seoDescription: 'Brother TJ-4020TN — drukarka etykiet 4", 203 dpi, 254 mm/s, LED. Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji | TAKMA.',
+    description: `Dla kogo? Brother TJ-4020TN to model bazowy serii półprzemysłowych drukarek etykiet Brother TJ dla firm produkcyjnych, magazynów i centrów dystrybucyjnych, które potrzebują wytrzymałej drukarki 4" z dużą pojemnością mediów i emulacją ZPL II, ale nie wymagają ekranu dotykowego ani rozdzielczości 300 dpi. Brother TJ-4020TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
-Brother TJ-4020TN to model bazowy serii TJ z rozdzielczością 203 dpi i prędkością druku do 254 mm/s (10 ips). Panel sterowania LED z 4 wskaźnikami i 2 przyciskami — prosty i niezawodny. Kompaktowe wymiary (248 × 436 × 274 mm) i metalowa konstrukcja zapewniają trwałość w wymagających warunkach. Potrzebujesz ekranu dotykowego 3,5"? Wybierz [Brother TJ-4021TN](/produkt/brother-tj-4021tn). Potrzebujesz wyższej rozdzielczości 300 dpi? Sprawdź [Brother TJ-4120TN](/produkt/brother-tj-4120tn) lub [TJ-4121TN](/produkt/brother-tj-4121tn) z ekranem dotykowym.
+Brother TJ-4020TN to model bazowy serii TJ z rozdzielczością 203 dpi i prędkością druku do 254 mm/s (10 ips). Panel sterowania LED ma 4 wskaźniki i 2 przyciski. Obudowa ma wymiary 248 × 436 × 274 mm i metalową konstrukcję. Ekran dotykowy 3,5" ma [Brother TJ-4021TN](/produkt/brother-tj-4021tn), a rozdzielczość 300 dpi — [Brother TJ-4120TN](/produkt/brother-tj-4120tn) i [TJ-4121TN](/produkt/brother-tj-4121tn) z ekranem dotykowym.
 
-Kluczowa przewaga Brother TJ-4020TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych, co redukuje częstotliwość wymiany i przestoje na linii produkcyjnej. Drukarka obsługuje taśmy woskowe, woskowo-żywiczne i żywiczne o szerokości 40–110 mm — do etykiet papierowych, syntetycznych (PP, PE) i foliowych.
+Brother TJ-4020TN przyjmuje więcej materiału niż drukarki biurkowe: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych, co redukuje częstotliwość wymiany i przestoje na linii produkcyjnej. Drukarka obsługuje taśmy woskowe, woskowo-żywiczne i żywiczne o szerokości 40–110 mm — do etykiet papierowych, syntetycznych (PP, PE) i foliowych.
 
-Brother TJ-4020TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002) dla instalacji bezprzewodowych. W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool do zdalnego zarządzania flotą drukarek. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) lub porównaj z [drukarkami przemysłowymi Zebra](/przemyslowe-drukarki-etykiet).
+Brother TJ-4020TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002) dla instalacji bezprzewodowych. W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool do zdalnego zarządzania flotą drukarek. Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) i [drukarki przemysłowe](/przemyslowe-drukarki-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 5 lat. Obejmuje głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8227,7 +8209,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'W zestawie', value: 'Drukarka, kabel zasilający, kabel USB, rdzeń papierowy 1", dokumentacja' },
-      { name: 'Gwarancja', value: '5 lat return-to-base (po rejestracji na brother.pl)' },
+      { name: 'Gwarancja', value: '5 lat; głowica do 30 km wydruku, wałek dociskowy do 50 km' },
     ],
     applications: [
       'Etykiety produktowe na liniach produkcyjnych (produkcja, pakowanie)',
@@ -8266,7 +8248,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '3 057 zł',
           },
         },
         {
@@ -8281,7 +8262,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '3 803 zł',
           },
         },
         {
@@ -8296,7 +8276,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '4 109 zł',
           },
         },
         {
@@ -8311,7 +8290,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '4 780 zł',
           },
         },
       ],
@@ -8329,7 +8307,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4020TN różni się od TJ-4021TN?',
-        answer: 'Brother TJ-4020TN i [TJ-4021TN](/produkt/brother-tj-4021tn) mają identyczną rozdzielczość 203 dpi i prędkość 254 mm/s. Różnica to panel sterowania: TJ-4020TN ma panel LED z 4 wskaźnikami i 2 przyciskami (od 3 057 zł), a TJ-4021TN kolorowy ekran dotykowy 3,5" z 6 przyciskami nawigacyjnymi (od 3 803 zł). Ekran umożliwia konfigurację drukarki, podgląd statusu i ustawienia sieci bez komputera. Jeśli drukarka jest zarządzana zdalnie przez sieć, panel LED w TJ-4020TN jest wystarczający.',
+        answer: 'Brother TJ-4020TN i [TJ-4021TN](/produkt/brother-tj-4021tn) mają identyczną rozdzielczość 203 dpi i prędkość 254 mm/s. Różnica to panel sterowania: TJ-4020TN ma panel LED z 4 wskaźnikami i 2 przyciskami, a TJ-4021TN kolorowy ekran dotykowy 3,5" z 6 przyciskami nawigacyjnymi. Ekran umożliwia konfigurację drukarki, podgląd statusu i ustawienia sieci bez komputera. Jeśli drukarka jest zarządzana zdalnie przez sieć, panel LED w TJ-4020TN jest wystarczający.',
       },
       {
         question: 'Jakie taśmy termotransferowe pasują do Brother TJ-4020TN?',
@@ -8338,10 +8316,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       {
         question: 'Czy Brother TJ-4020TN obsługuje emulację ZPL (Zebra)?',
         answer: 'Tak. Brother TJ-4020TN obsługuje emulację ZPL II, EPL2 i DPL (tryb FBPL-EZD), dzięki czemu jest kompatybilna z szablonami etykiet zaprojektowanymi dla drukarek Zebra (ZT231, ZT111, ZT410, S4M). Migracja z drukarki Zebra na Brother TJ nie wymaga zmiany oprogramowania — wystarczy skonfigurować tryb emulacji.',
-      },
-      {
-        question: 'Ile kosztuje Brother TJ-4020TN?',
-        answer: 'Brother TJ-4020TN (203 dpi, LED) kosztuje od 3 057 zł netto — to najtańszy model w serii TJ. Dla porównania: [TJ-4021TN](/produkt/brother-tj-4021tn) z ekranem dotykowym od 3 803 zł, [TJ-4120TN](/produkt/brother-tj-4120tn) z rozdzielczością 300 dpi od 4 109 zł, [TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran) od 4 780 zł. [Zebra ZT231](/produkt/zebra-zt231) (203 dpi) kosztuje od ok. 2 551 zł, ale Brother TJ oferuje taśmy 450 m i 5-letnią gwarancję.',
       },
       {
         question: 'Jakie rolki etykiet pasują do Brother TJ-4020TN?',
@@ -8353,11 +8327,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4020TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'Brother TJ-4020TN i [Zebra ZT231](/produkt/zebra-zt231) to drukarki półprzemysłowe 4 cale 203 dpi. TJ-4020TN: taśmy 450 m, 254 mm/s, 128 MB RAM, 5 lat gwarancji, od 3 057 zł. ZT231: taśmy 300–450 m, 304 mm/s, 512 MB RAM, Link-OS, opcjonalny RFID UHF, od 2 551 zł. ZT231 dla ekosystemu Zebra i zdalnego zarządzania, TJ-4020TN dla niższego TCO i dłuższej gwarancji.',
+        answer: 'Brother TJ-4020TN i [Zebra ZT231](/produkt/zebra-zt231) to drukarki półprzemysłowe 4 cale 203 dpi. TJ-4020TN: taśmy 450 m, 254 mm/s, 128 MB RAM, 5 lat gwarancji. ZT231: taśmy 300–450 m, 304 mm/s, 512 MB RAM, Link-OS, opcjonalny RFID UHF. ZT231 pasuje do floty Zebra i zdalnego zarządzania, TJ-4020TN — tam, gdzie liczy się dłuższa taśma i gwarancja.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4020TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi: [Zebra ZT231](/produkt/zebra-zt231) (od 2 551 zł, Link-OS, RFID opcja), [Zebra ZT111](/produkt/zebra-zt111) (od 2 700 zł, budżetowa). Wersje z wyższą rozdzielczością: [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, od 4 109 zł), z ekranem dotykowym: [Brother TJ-4021TN](/produkt/brother-tj-4021tn) (od 3 803 zł). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t) (od 1 496 zł, biurkowa TT).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi: [Zebra ZT231](/produkt/zebra-zt231) (Link-OS, RFID jako opcja), [Zebra ZT111](/produkt/zebra-zt111). Wersje z wyższą rozdzielczością: [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi), z ekranem dotykowym: [Brother TJ-4021TN](/produkt/brother-tj-4021tn). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t) (biurkowa, termotransferowa).',
       },
     ],
     relatedProducts: ['brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
@@ -8370,19 +8344,19 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4021tn',
     name: 'Brother TJ-4021TN',
     shortDescription: 'Brother TJ-4021TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 203 dpi, 254 mm/s, ekran dotykowy 3,5", taśmy 450 m, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4021TN — drukarka 203 dpi LCD | od 3 803 zł',
-    seoDescription: 'Brother TJ-4021TN — drukarka etykiet 4", 203 dpi, 254 mm/s, ekran dotykowy 3,5". Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 3 803 zł | TAKMA.',
+    seoTitle: 'Brother TJ-4021TN',
+    seoDescription: 'Brother TJ-4021TN — drukarka etykiet 4", 203 dpi, 254 mm/s, ekran dotykowy 3,5". Taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji | TAKMA.',
     description: `Dla kogo? Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala w serii półprzemysłowych drukarek Brother TJ — przeznaczona dla firm, które potrzebują wygodnej konfiguracji i podglądu statusu drukarki bezpośrednio na wyświetlaczu, bez komputera. Brother TJ-4021TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
-Do druku i kodowania etykiet UHF RFID wybierz [Brother TJ-4021TNR](/produkt/brother-tj-4021tnr). Model TJ-4021TN nie ma kodera RFID.
+Do druku i kodowania etykiet UHF RFID służy [Brother TJ-4021TNR](/produkt/brother-tj-4021tnr). Model TJ-4021TN nie ma kodera RFID.
 
-Brother TJ-4021TN oferuje rozdzielczość 203 dpi i prędkość druku do 254 mm/s (10 ips) — identycznie jak bazowy model [TJ-4020TN](/produkt/brother-tj-4020tn). Kluczowa różnica to kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi: konfiguracja sieci, podgląd statusu druku, ustawienia czujników i kalibracja — bezpośrednio na panelu drukarki. Potrzebujesz rozdzielczości 300 dpi? Sprawdź [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (LED) lub [TJ-4121TN](/produkt/brother-tj-4121tn) (ekran dotykowy + 300 dpi).
+Brother TJ-4021TN oferuje rozdzielczość 203 dpi i prędkość druku do 254 mm/s (10 ips) — identycznie jak bazowy model [TJ-4020TN](/produkt/brother-tj-4020tn). Różnica to kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi: konfiguracja sieci, podgląd statusu druku, ustawienia czujników i kalibracja — bezpośrednio na panelu drukarki. Rozdzielczość 300 dpi mają [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (LED) i [TJ-4121TN](/produkt/brother-tj-4121tn) (ekran dotykowy + 300 dpi).
 
-Kluczowa przewaga Brother TJ-4021TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych, co redukuje częstotliwość wymiany i przestoje na linii produkcyjnej. Drukarka obsługuje taśmy woskowe, woskowo-żywiczne i żywiczne o szerokości 40–110 mm.
+Brother TJ-4021TN przyjmuje więcej materiału niż drukarki biurkowe: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych, co redukuje częstotliwość wymiany i przestoje na linii produkcyjnej. Drukarka obsługuje taśmy woskowe, woskowo-żywiczne i żywiczne o szerokości 40–110 mm.
 
-Brother TJ-4021TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) lub porównaj z [drukarkami przemysłowymi Zebra](/przemyslowe-drukarki-etykiet).
+Brother TJ-4021TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) i [drukarki przemysłowe](/przemyslowe-drukarki-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 5 lat. Obejmuje głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8433,7 +8407,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'W zestawie', value: 'Drukarka, kabel zasilający, kabel USB, rdzeń papierowy 1", dokumentacja' },
-      { name: 'Gwarancja', value: '5 lat return-to-base (po rejestracji na brother.pl)' },
+      { name: 'Gwarancja', value: '5 lat; głowica do 30 km wydruku, wałek dociskowy do 50 km' },
     ],
     applications: [
       'Etykiety produktowe na liniach produkcyjnych (produkcja, pakowanie)',
@@ -8471,7 +8445,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '3 057 zł',
           },
         },
         {
@@ -8487,7 +8460,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '3 803 zł',
           },
         },
         {
@@ -8502,7 +8474,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '4 109 zł',
           },
         },
         {
@@ -8517,7 +8488,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '4 780 zł',
           },
         },
       ],
@@ -8535,7 +8505,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4021TN różni się od TJ-4020TN?',
-        answer: 'Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala i 6 przyciskami nawigacyjnymi (od 3 803 zł), podczas gdy [TJ-4020TN](/produkt/brother-tj-4020tn) ma panel LED z 4 wskaźnikami (od 3 057 zł). Rozdzielczość (203 dpi) i prędkość druku (254 mm/s) są identyczne. Ekran dotykowy umożliwia konfigurację sieci, kalibrację czujników i podgląd statusu bez komputera.',
+        answer: 'Brother TJ-4021TN to wersja z kolorowym ekranem dotykowym 3,5 cala i 6 przyciskami nawigacyjnymi, a [TJ-4020TN](/produkt/brother-tj-4020tn) ma panel LED z 4 wskaźnikami. Rozdzielczość (203 dpi) i prędkość druku (254 mm/s) są identyczne. Ekran dotykowy umożliwia konfigurację sieci, kalibrację czujników i podgląd statusu bez komputera.',
       },
       {
         question: 'Jakie taśmy termotransferowe pasują do Brother TJ-4021TN?',
@@ -8543,11 +8513,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Czy ekran dotykowy w TJ-4021TN jest potrzebny?',
-        answer: 'Ekran dotykowy 3,5" w Brother TJ-4021TN jest przydatny, gdy drukarka jest obsługiwana lokalnie przez operatora — umożliwia konfigurację sieci, kalibrację, podgląd statusu i zmianę ustawień bez komputera. Jeśli drukarka jest zarządzana zdalnie przez Brother Printer Management Tool, panel LED w [TJ-4020TN](/produkt/brother-tj-4020tn) jest wystarczający, a różnica w cenie to ok. 746 zł.',
-      },
-      {
-        question: 'Ile kosztuje Brother TJ-4021TN?',
-        answer: 'Brother TJ-4021TN (203 dpi, ekran dotykowy 3,5") kosztuje od 3 803 zł netto. Dla porównania: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED) od 3 057 zł, [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, LED) od 4 109 zł, [TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran) od 4 780 zł. [Zebra ZT231](/produkt/zebra-zt231) z ekranem 4,3" kosztuje od ok. 2 551 zł.',
+        answer: 'Ekran dotykowy 3,5" w Brother TJ-4021TN jest przydatny, gdy drukarka jest obsługiwana lokalnie przez operatora — umożliwia konfigurację sieci, kalibrację, podgląd statusu i zmianę ustawień bez komputera. Jeśli drukarka jest zarządzana zdalnie przez Brother Printer Management Tool, panel LED w [TJ-4020TN](/produkt/brother-tj-4020tn) jest wystarczający.',
       },
       {
         question: 'Czy Brother TJ-4021TN obsługuje emulację ZPL?',
@@ -8555,11 +8521,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4021TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'Oba modele to drukarki półprzemysłowe 4" 203 dpi. TJ-4021TN: ekran dotykowy 3,5", taśmy 450 m, 254 mm/s, 5 lat gwarancji, od 3 803 zł. [ZT231](/produkt/zebra-zt231): ekran 4,3" w standardzie, 304 mm/s, 512 MB RAM, Link-OS, opcja RFID, od 2 551 zł. Brother TJ lepszy pod względem TCO i gwarancji, ZT231 pod względem ekosystemu zarządzania i prędkości.',
+        answer: 'Oba modele to drukarki półprzemysłowe 4" 203 dpi. TJ-4021TN: ekran dotykowy 3,5", taśmy 450 m, 254 mm/s, 5 lat gwarancji. [ZT231](/produkt/zebra-zt231): ekran 4,3" w standardzie, 304 mm/s, 512 MB RAM, Link-OS, opcja RFID. Brother TJ ma dłuższą taśmę i gwarancję, ZT231 — zarządzanie flotą i wyższą prędkość.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4021TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) (ekran 4,3", od 2 551 zł). Wersja bez ekranu: [Brother TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł). Wyższa rozdzielczość z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi, od 4 780 zł). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t) (od 1 496 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 203 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) (ekran 4,3"). Wersja bez ekranu: [Brother TJ-4020TN](/produkt/brother-tj-4020tn) (LED). Wyższa rozdzielczość z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi). W niższej klasie: [Brother TD-4T](/produkt/brother-td-4t).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
@@ -8572,17 +8538,17 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4120tn',
     name: 'Brother TJ-4120TN',
     shortDescription: 'Brother TJ-4120TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 300 dpi, 178 mm/s, taśmy 450 m, panel LED, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4120TN — drukarka 300 dpi | od 4 109 zł',
-    seoDescription: 'Brother TJ-4120TN — drukarka etykiet 4", 300 dpi, 178 mm/s, LED. Kody 2D, taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji. Od 4 109 zł netto | TAKMA.',
+    seoTitle: 'Brother TJ-4120TN',
+    seoDescription: 'Brother TJ-4120TN — drukarka etykiet 4", 300 dpi, 178 mm/s, LED. Kody 2D, taśmy 450 m, ZPL II, Ethernet, 5 lat gwarancji | TAKMA.',
     description: `Dla kogo? Brother TJ-4120TN to wersja z rozdzielczością 300 dpi w serii półprzemysłowych drukarek Brother TJ — dedykowana do druku małych etykiet, kodów 2D (QR, DataMatrix), drobnego tekstu i grafiki wymagającej wyższej precyzji. Brother TJ-4120TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
-Brother TJ-4120TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i szerokością druku 105,7 mm. Panel sterowania LED z 4 wskaźnikami i 2 przyciskami — prosty i niezawodny. Potrzebujesz ekranu dotykowego? Sprawdź [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran 3,5"). Wystarczy Ci 203 dpi? Tańsze modele: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran dotykowy, od 3 803 zł).
+Brother TJ-4120TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i szerokością druku 105,7 mm. Panel sterowania LED ma 4 wskaźniki i 2 przyciski. Ekran dotykowy ma [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (300 dpi + ekran 3,5"). Modele 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED) i [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran dotykowy).
 
-Kluczowa przewaga Brother TJ-4120TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych. Rozdzielczość 300 dpi zapewnia czytelne kody DataMatrix i QR nawet w rozmiarach poniżej 10 × 10 mm.
+Brother TJ-4120TN przyjmuje więcej materiału niż drukarki biurkowe: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala) — to ponad dwukrotnie więcej materiału niż w drukarkach biurkowych. W rozdzielczości 300 dpi kody DataMatrix i QR są czytelne także w rozmiarach poniżej 10 × 10 mm.
 
-Brother TJ-4120TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
+Brother TJ-4120TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 5 lat. Obejmuje głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8633,7 +8599,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'W zestawie', value: 'Drukarka, kabel zasilający, kabel USB, rdzeń papierowy 1", dokumentacja' },
-      { name: 'Gwarancja', value: '5 lat return-to-base (po rejestracji na brother.pl)' },
+      { name: 'Gwarancja', value: '5 lat; głowica do 30 km wydruku, wałek dociskowy do 50 km' },
     ],
     applications: [
       'Etykiety produktowe na liniach produkcyjnych (produkcja, pakowanie)',
@@ -8671,7 +8637,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '3 057 zł',
           },
         },
         {
@@ -8686,7 +8651,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '3 803 zł',
           },
         },
         {
@@ -8702,7 +8666,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '4 109 zł',
           },
         },
         {
@@ -8717,7 +8680,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '4 780 zł',
           },
         },
       ],
@@ -8735,15 +8697,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4120TN różni się od TJ-4020TN?',
-        answer: 'Brother TJ-4120TN to wersja z rozdzielczością 300 dpi (od 4 109 zł), podczas gdy [TJ-4020TN](/produkt/brother-tj-4020tn) ma 203 dpi (od 3 057 zł). Wyższa rozdzielczość oznacza ostrzejsze kody 2D, mniejsze etykiety i drobniejszy tekst, ale niższą prędkość druku: 178 mm/s vs 254 mm/s. Szerokość druku też się różni: 105,7 mm (300 dpi) vs 107 mm (203 dpi). Oba modele mają panel LED.',
+        answer: 'Brother TJ-4120TN to wersja z rozdzielczością 300 dpi, a [TJ-4020TN](/produkt/brother-tj-4020tn) ma 203 dpi. Wyższa rozdzielczość oznacza ostrzejsze kody 2D, mniejsze etykiety i drobniejszy tekst, ale niższą prędkość druku: 178 mm/s vs 254 mm/s. Szerokość druku też się różni: 105,7 mm (300 dpi) vs 107 mm (203 dpi). Oba modele mają panel LED.',
       },
       {
         question: 'Kiedy warto wybrać 300 dpi zamiast 203 dpi?',
-        answer: 'Rozdzielczość 300 dpi w Brother TJ-4120TN jest potrzebna do: małych kodów 2D (DataMatrix, QR) poniżej 10×10 mm, etykiet z drobnym tekstem (poniżej 6 pt), etykiet na przewody i kable z bardzo małym drukiem, grafiki i logotypów wymagających szczegółowości. Jeśli drukujesz standardowe etykiety kurierskie 102×150 mm z kodami 1D, 203 dpi ([TJ-4020TN](/produkt/brother-tj-4020tn)) jest wystarczające i szybsze.',
-      },
-      {
-        question: 'Ile kosztuje Brother TJ-4120TN?',
-        answer: 'Brother TJ-4120TN (300 dpi, LED) kosztuje od 4 109 zł netto. Wersja z ekranem dotykowym: [TJ-4121TN](/produkt/brother-tj-4121tn) od 4 780 zł. Tańsze modele 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zł, [TJ-4021TN](/produkt/brother-tj-4021tn) od 3 803 zł.',
+        answer: 'Rozdzielczość 300 dpi w Brother TJ-4120TN jest potrzebna do: małych kodów 2D (DataMatrix, QR) poniżej 10×10 mm, etykiet z drobnym tekstem (poniżej 6 pt), etykiet na przewody i kable z bardzo małym drukiem, grafiki i logotypów wymagających szczegółowości. Do standardowych etykiet kurierskich 102×150 mm z kodami 1D wystarcza 203 dpi ([TJ-4020TN](/produkt/brother-tj-4020tn)), a druk jest szybszy.',
       },
       {
         question: 'Czy Brother TJ-4120TN obsługuje emulację ZPL?',
@@ -8751,11 +8709,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4120TN wypada w porównaniu z Zebra ZT231 300 dpi?',
-        answer: 'TJ-4120TN: 300 dpi, 178 mm/s, taśmy 450 m, 128 MB RAM, panel LED, 5 lat gwarancji, od 4 109 zł. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, taśmy 300–450 m, 512 MB RAM, ekran 4,3", Link-OS, od ~3 600 zł. ZT231 jest szybszy i ma więcej RAM, Brother TJ ma dłuższą gwarancję i dłuższe taśmy.',
+        answer: 'TJ-4120TN: 300 dpi, 178 mm/s, taśmy 450 m, 128 MB RAM, panel LED, 5 lat gwarancji. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, taśmy 300–450 m, 512 MB RAM, ekran 4,3", Link-OS. ZT231 jest szybszy i ma więcej RAM, Brother TJ ma dłuższą gwarancję i dłuższe taśmy.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4120TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (od ~3 600 zł, Link-OS), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi (od ~4 800 zł). Wersja z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn) (od 4 780 zł). Tańsze 203 dpi: [Brother TJ-4020TN](/produkt/brother-tj-4020tn) (od 3 057 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (Link-OS), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi. Wersja z ekranem: [Brother TJ-4121TN](/produkt/brother-tj-4121tn). Wersja 203 dpi: [Brother TJ-4020TN](/produkt/brother-tj-4020tn).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4121tn', 'zebra-zt231', 'zebra-zt111'],
@@ -8768,19 +8726,19 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     slug: 'brother-tj-4121tn',
     name: 'Brother TJ-4121TN',
     shortDescription: 'Brother TJ-4121TN — półprzemysłowa drukarka etykiet 4", termotransferowa, 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, emulacja ZPL II, Ethernet',
-    seoTitle: 'Brother TJ-4121TN — drukarka 300 dpi LCD | od 4 780 zł',
-    seoDescription: 'Brother TJ-4121TN — drukarka etykiet 4", 300 dpi, 178 mm/s, ekran 3,5". Kody 2D, taśmy 450 m, ZPL II, 5 lat gwarancji. Od 4 780 zł netto | TAKMA.',
+    seoTitle: 'Brother TJ-4121TN',
+    seoDescription: 'Brother TJ-4121TN — drukarka etykiet 4", 300 dpi, 178 mm/s, ekran 3,5". Kody 2D, taśmy 450 m, ZPL II, 5 lat gwarancji | TAKMA.',
     description: `Dla kogo? Brother TJ-4121TN to flagowy model w serii półprzemysłowych drukarek Brother TJ — łączy rozdzielczość 300 dpi z kolorowym ekranem dotykowym 3,5 cala. Przeznaczony dla firm, które potrzebują precyzyjnego druku małych etykiet, kodów 2D i grafiki z jednoczesną wygodą obsługi bezpośrednio na wyświetlaczu. Brother TJ-4121TN drukuje etykiety termotransferowe (z taśmą barwiącą) i termiczne (bez ribbona).
 
-Do druku i kodowania etykiet UHF RFID wybierz [Brother TJ-4121TNR](/produkt/brother-tj-4121tnr). Model TJ-4121TN nie ma kodera RFID.
+Do druku i kodowania etykiet UHF RFID służy [Brother TJ-4121TNR](/produkt/brother-tj-4121tnr). Model TJ-4121TN nie ma kodera RFID.
 
-Brother TJ-4121TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi. Model łączy rozdzielczość 300 dpi z ekranem dotykowym. Jeśli wystarczy Ci 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED, od 3 057 zł) lub [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran, od 3 803 zł). Jeśli 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (LED, od 4 109 zł).
+Brother TJ-4121TN oferuje rozdzielczość 300 dpi (12 dots/mm) z prędkością druku do 178 mm/s (7 ips) i kolorowy ekran dotykowy 3,5 cala z 6 przyciskami nawigacyjnymi. Model łączy rozdzielczość 300 dpi z ekranem dotykowym. Modele 203 dpi: [TJ-4020TN](/produkt/brother-tj-4020tn) (LED) i [TJ-4021TN](/produkt/brother-tj-4021tn) (ekran). Model 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (LED).
 
-Kluczowa przewaga Brother TJ-4121TN nad drukarkami biurkowymi to duża pojemność mediów: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala). Rozdzielczość 300 dpi zapewnia czytelne kody DataMatrix i QR nawet w rozmiarach poniżej 10 × 10 mm — kluczowe w produkcji elektroniki, farmacji i etykietowaniu przewodów.
+Brother TJ-4121TN przyjmuje więcej materiału niż drukarki biurkowe: rolki etykiet do 203 mm (8 cali) średnicy i taśmy termotransferowe o długości 450 m (rdzeń 1 cala). W rozdzielczości 300 dpi kody DataMatrix i QR są czytelne także w rozmiarach poniżej 10 × 10 mm, np. w produkcji elektroniki, farmacji i przy oznaczaniu przewodów.
 
-Brother TJ-4121TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Szukasz odpowiedniej drukarki? Sprawdź nasz [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
+Brother TJ-4121TN emuluje języki ZPL II, EPL2 i DPL (FBPL-EZD) — szablony etykiet z systemów zaprojektowanych dla drukarek [Zebra ZT231](/produkt/zebra-zt231), [ZT111](/produkt/zebra-zt111) czy starszych Zebra S4M działają bez zmian. Standardowe interfejsy: USB 2.0, USB Host, RS-232C i Ethernet 10/100 Mbps. Opcjonalnie moduł Wi-Fi 802.11 a/b/g/n (PA-WI-002). W zestawie BarTender Ultra Lite Edition i Brother Printer Management Tool. Więcej o doborze modelu: [poradnik: jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet).
 
-Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.pl). Porównaj wszystkie [drukarki etykiet Brother](/drukarki-etykiet-brother) w ofercie TAKMA. Specyfikacja techniczna zgodna z danymi producenta.`,
+Gwarancja producenta wynosi 5 lat. Obejmuje głowicę drukującą do 30 km wydruku i wałek dociskowy do 50 km. Pozostałe modele: [drukarki etykiet Brother](/drukarki-etykiet-brother).`,
     categoryId: 'drukarki-etykiet',
     subcategoryIds: ['przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'],
     manufacturerId: 'brother',
@@ -8831,7 +8789,7 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       { name: 'Wilgotność pracy', value: '25–85% (bez kondensacji)' },
       { name: 'Zasilanie', value: '100–240V AC, 50/60 Hz' },
       { name: 'W zestawie', value: 'Drukarka, kabel zasilający, kabel USB, rdzeń papierowy 1", dokumentacja' },
-      { name: 'Gwarancja', value: '5 lat return-to-base (po rejestracji na brother.pl)' },
+      { name: 'Gwarancja', value: '5 lat; głowica do 30 km wydruku, wałek dociskowy do 50 km' },
     ],
     applications: [
       'Etykiety produktowe na liniach produkcyjnych (produkcja, pakowanie)',
@@ -8869,7 +8827,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '3 057 zł',
           },
         },
         {
@@ -8884,7 +8841,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '3 803 zł',
           },
         },
         {
@@ -8899,7 +8855,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,2 kg',
-            'Cena od': '4 109 zł',
           },
         },
         {
@@ -8915,7 +8870,6 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
             'Ethernet': 'Tak',
             'Wi-Fi': 'Opcja',
             'Waga': '9,4 kg',
-            'Cena od': '4 780 zł',
           },
         },
       ],
@@ -8933,15 +8887,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
     faq: [
       {
         question: 'Czym Brother TJ-4121TN różni się od TJ-4120TN?',
-        answer: 'Brother TJ-4121TN to wersja z kolorowym ekranem dotykowym 3,5 cala (od 4 780 zł), podczas gdy [TJ-4120TN](/produkt/brother-tj-4120tn) ma panel LED (od 4 109 zł). Oba modele mają rozdzielczość 300 dpi i prędkość 178 mm/s. Ekran umożliwia konfigurację, kalibrację i podgląd statusu bez komputera.',
+        answer: 'Brother TJ-4121TN to wersja z kolorowym ekranem dotykowym 3,5 cala, a [TJ-4120TN](/produkt/brother-tj-4120tn) ma panel LED. Oba modele mają rozdzielczość 300 dpi i prędkość 178 mm/s. Ekran umożliwia konfigurację, kalibrację i podgląd statusu bez komputera.',
       },
       {
         question: 'Kiedy warto wybrać Brother TJ-4121TN?',
-        answer: 'Brother TJ-4121TN to najlepszy wybór, gdy potrzebujesz jednocześnie: rozdzielczości 300 dpi do małych kodów 2D i drobnego tekstu ORAZ ekranu dotykowego do wygodnej obsługi. Jeśli nie potrzebujesz 300 dpi: [TJ-4021TN](/produkt/brother-tj-4021tn) (203 dpi + ekran, od 3 803 zł). Jeśli nie potrzebujesz ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi + LED, od 4 109 zł).',
-      },
-      {
-        question: 'Ile kosztuje Brother TJ-4121TN?',
-        answer: 'Brother TJ-4121TN (300 dpi, ekran dotykowy) kosztuje od 4 780 zł netto — to flagowy model serii TJ. Tańsze warianty: [TJ-4120TN](/produkt/brother-tj-4120tn) (300 dpi, LED) od 4 109 zł, [TJ-4021TN](/produkt/brother-tj-4021tn) (203 dpi, ekran) od 3 803 zł, [TJ-4020TN](/produkt/brother-tj-4020tn) (203 dpi, LED) od 3 057 zł.',
+        answer: 'Brother TJ-4121TN łączy rozdzielczość 300 dpi do małych kodów 2D i drobnego tekstu z ekranem dotykowym do obsługi przy drukarce. Model 203 dpi z ekranem: [TJ-4021TN](/produkt/brother-tj-4021tn). Model 300 dpi bez ekranu: [TJ-4120TN](/produkt/brother-tj-4120tn).',
       },
       {
         question: 'Czy Brother TJ-4121TN obsługuje emulację ZPL?',
@@ -8949,11 +8899,11 @@ Producent udziela 5-letniej gwarancji return-to-base (po rejestracji na brother.
       },
       {
         question: 'Jak Brother TJ-4121TN wypada w porównaniu z Zebra ZT231?',
-        answer: 'TJ-4121TN: 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, 5 lat gwarancji, od 4 780 zł. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, ekran 4,3", 512 MB RAM, Link-OS, opcja RFID, od ~3 600 zł. ZT231 jest tańszy, szybszy i ma większy ekosystem, Brother TJ ma dłuższą gwarancję.',
+        answer: 'TJ-4121TN: 300 dpi, 178 mm/s, ekran dotykowy 3,5", taśmy 450 m, 5 lat gwarancji. [ZT231](/produkt/zebra-zt231) 300 dpi: 203 mm/s, ekran 4,3", 512 MB RAM, Link-OS, opcja RFID. ZT231 jest szybszy i ma narzędzia do zarządzania flotą, Brother TJ ma dłuższą gwarancję i taśmę.',
       },
       {
         question: 'Jakie są alternatywy dla Brother TJ-4121TN?',
-        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (ekran 4,3", od ~3 600 zł), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi (od ~4 800 zł). Wersja bez ekranu: [Brother TJ-4120TN](/produkt/brother-tj-4120tn) (od 4 109 zł). Tańsze 203 dpi: [Brother TJ-4021TN](/produkt/brother-tj-4021tn) z ekranem (od 3 803 zł).',
+        answer: 'W klasie półprzemysłowych drukarek 4" 300 dpi z ekranem: [Zebra ZT231](/produkt/zebra-zt231) 300 dpi (ekran 4,3"), [Honeywell PD45](/produkt/honeywell-pd45) 300 dpi. Wersja bez ekranu: [Brother TJ-4120TN](/produkt/brother-tj-4120tn). Wersja 203 dpi z ekranem: [Brother TJ-4021TN](/produkt/brother-tj-4021tn).',
       },
     ],
     relatedProducts: ['brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'zebra-zt231', 'zebra-zt111'],
@@ -14421,15 +14371,15 @@ Natywna obsługa ZPL-II, CPCL, ESC/P, ESC/POS i XSim umożliwia migrację z druk
     slug: 'brother-rj-4230b',
     name: 'Brother RJ-4230B',
     shortDescription: 'Brother RJ-4230B — mobilna drukarka etykiet 4", IP54, Bluetooth, ZPL/CPCL, bateria Li-Ion',
-    seoTitle: 'Mobilna drukarka Brother RJ-4230B — 4" IP54 BT | od 2 353 zł',
-    seoDescription: 'Brother RJ-4230B — mobilna drukarka etykiet 4", IP54, BT 4.2, ZPL/CPCL, 203 dpi, 127 mm/s. Wi-Fi: RJ-4250WB. Od 2 353 zł netto. TAKMA.',
-    description: `Dla kogo? Brother RJ-4230B to [mobilna drukarka etykiet](/mobilne-drukarki-etykiet) 4-calowa dla firm kurierskich, logistycznych i serwisowych, które potrzebują wytrzymałej drukarki przenośnej z szerokim drukiem do 104 mm i emulacją ZPL/CPCL — w atrakcyjnej cenie poniżej 2 400 zł netto. Tańsza alternatywa dla [Zebra ZQ521](/produkt/zebra-zq521) z porównywalną specyfikacją.
+    seoTitle: 'Brother RJ-4230B',
+    seoDescription: 'Brother RJ-4230B — mobilna drukarka etykiet 4", IP54, BT 4.2, ZPL/CPCL, 203 dpi, 127 mm/s. Wi-Fi: RJ-4250WB. TAKMA.',
+    description: `Dla kogo? Brother RJ-4230B to [mobilna drukarka etykiet](/mobilne-drukarki-etykiet) 4-calowa dla firm kurierskich, logistycznych i serwisowych, które potrzebują wytrzymałej drukarki przenośnej z szerokim drukiem do 104 mm i emulacją ZPL/CPCL. Alternatywa dla [Zebra ZQ521](/produkt/zebra-zq521) o zbliżonej specyfikacji.
 
 Brother RJ-4230B drukuje etykiety samoprzylepne, paragony i etykiety ciągłe z prędkością do 127 mm/s (5 ips) w rozdzielczości 203 dpi na nośnikach o szerokości do 118 mm. Szerokość druku 104 mm obejmuje standardowe etykiety wysyłkowe 4×6 cali stosowane przez firmy kurierskie (DPD, InPost, DHL, UPS). Bluetooth 4.2 (MFi) i NFC (Wireless Direct) umożliwiają szybkie parowanie z terminalami mobilnymi, smartfonami Android/iOS i tabletami.
 
-Obudowa z certyfikatem IP54 wytrzymuje upadki z 2,1 m na beton (MIL-STD-810G) i pracuje w temperaturze od -20°C do +55°C. Opcjonalny [egzoszkielet PA-BEK-001CG](/produkt/brother-rj-egzoszkielet) dodatkowo chroni drukarkę w ekstremalnych warunkach terenowych. Wymienna [bateria Li-Ion PA-BT-006](/produkt/brother-rj-bateria) (1 860 mAh, 14,4 V) zapewnia ok. 200 m ciągłego wydruku na jednym ładowaniu. Bateria jest sprzedawana osobno — do pracy mobilnej trzeba ją dokupić lub użyć [zasilacza PA-AD-600AEU](/produkt/brother-rj-zasilacz) do pracy stacjonarnej.
+Obudowa z certyfikatem IP54 wytrzymuje upadki z 2,1 m na beton (MIL-STD-810G) i pracuje w temperaturze od -20°C do +55°C. Opcjonalny [egzoszkielet PA-BEK-001CG](/produkt/brother-rj-egzoszkielet) dodatkowo chroni drukarkę w ekstremalnych warunkach terenowych. Wymienna [bateria Li-Ion PA-BT-006](/produkt/brother-rj-bateria) (1 860 mAh, 14,4 V) wystarcza na ok. 200 m ciągłego wydruku na jednym ładowaniu. Bateria jest sprzedawana osobno — do pracy mobilnej trzeba ją dokupić lub użyć [zasilacza PA-AD-600AEU](/produkt/brother-rj-zasilacz) do pracy stacjonarnej.
 
-Brother RJ-4230B emuluje języki ZPL i CPCL — bezproblemowa migracja z drukarek Zebra bez zmiany oprogramowania. Tryb AirPrint i kompatybilność z systemami WMS/ERP/TMS. Wersja RJ-4250WB dodaje moduł Wi-Fi 802.11 a/b/g/n do druku przez sieć firmową. Obie wersje obsługują druk bez podkładu (linerless) z opcjonalną głowicą. Gwarancja Brother na RJ-4230B wynosi 3 lata po rejestracji na brother.pl.
+Brother RJ-4230B emuluje języki ZPL i CPCL, co ułatwia zastąpienie drukarek Zebra bez zmiany oprogramowania. Tryb AirPrint i kompatybilność z systemami WMS/ERP/TMS. Wersja RJ-4250WB dodaje moduł Wi-Fi 802.11 a/b/g/n do druku przez sieć firmową. Obie wersje obsługują druk bez podkładu (linerless) z opcjonalną głowicą. Gwarancja producenta na RJ-4230B wynosi 3 lata.
 
 Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukarki-etykiet/mobilne/rj4230b) na stronie producenta. Pełna oferta [drukarek etykiet Brother](/drukarki-etykiet-brother) w TAKMA. Poradnik [jak wybrać drukarkę etykiet](/poradnik/jak-wybrac-drukarke-etykiet) pomoże dobrać model.`,
     categoryId: 'drukarki-etykiet',
@@ -14505,18 +14455,17 @@ Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukar
       'Wi-Fi': 'Wi-Fi 802.11 a/b/g/n (2,4/5 GHz) — druk przez sieć firmową bez konieczności parowania z telefonem.\n\nWersja bez Wi-Fi (RJ-4230B) łączy się tylko przez Bluetooth 4.2.',
     },
     faq: [
-      { question: 'Jaka jest szerokość druku Brother RJ-4230B?', answer: 'Brother RJ-4230B to drukarka 4-calowa o maksymalnej szerokości druku 104 mm (4,07"). Obsługuje nośniki od 25,4 do 118 mm — w tym standardowe etykiety wysyłkowe 4×6 cali. Dla porównania: [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) ma taką samą szerokość druku (104 mm), ale wyższą cenę.' },
-      { question: 'Jaka jest prędkość druku Brother RJ-4230B?', answer: 'Brother RJ-4230B drukuje z prędkością do 127 mm/s (5 ips) w rozdzielczości 203 dpi. Na równi z [Zebra ZQ521](/produkt/zebra-zq521) i [Honeywell RP4f](/produkt/honeywell-rp4f), ale znacznie taniej. Wystarczająca prędkość do druku etykiet wysyłkowych i paragonów w terenie.' },
-      { question: 'Czym różni się RJ-4230B od RJ-4250WB?', answer: 'RJ-4230B (RJ4230BZ1) ma Bluetooth 4.2 + NFC — łączność tylko bezprzewodowa punkt-punkt. RJ-4250WB (RJ4250WBZ1) dodaje Wi-Fi 802.11 a/b/g/n (2,4/5 GHz) — druk przez sieć firmową, zdalną konfigurację i zarządzanie flotą. Różnica w cenie to ok. 474 zł netto. Reszta specyfikacji (prędkość, IP54, bateria, wymiary) jest identyczna.' },
+      { question: 'Jaka jest szerokość druku Brother RJ-4230B?', answer: 'Brother RJ-4230B to drukarka 4-calowa o maksymalnej szerokości druku 104 mm (4,07"). Obsługuje nośniki od 25,4 do 118 mm — w tym standardowe etykiety wysyłkowe 4×6 cali. Dla porównania: [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) ma taką samą szerokość druku (104 mm).' },
+      { question: 'Jaka jest prędkość druku Brother RJ-4230B?', answer: 'Brother RJ-4230B drukuje z prędkością do 127 mm/s (5 ips) w rozdzielczości 203 dpi. Tak samo jak [Zebra ZQ521](/produkt/zebra-zq521) i [Honeywell RP4f](/produkt/honeywell-rp4f). Wystarczająca prędkość do druku etykiet wysyłkowych i paragonów w terenie.' },
+      { question: 'Czym różni się RJ-4230B od RJ-4250WB?', answer: 'RJ-4230B (RJ4230BZ1) ma Bluetooth 4.2 + NFC — łączność tylko bezprzewodowa punkt-punkt. RJ-4250WB (RJ4250WBZ1) dodaje Wi-Fi 802.11 a/b/g/n (2,4/5 GHz) — druk przez sieć firmową, zdalną konfigurację i zarządzanie flotą. Reszta specyfikacji (prędkość, IP54, bateria, wymiary) jest identyczna.' },
       { question: 'Czy Brother RJ-4230B jest wodoodporna?', answer: 'Brother RJ-4230B ma klasę ochrony IP54 — ochrona przed pyłem i bryzgami wody ze wszystkich kierunków. Wytrzymuje upadki z 2,1 m na beton (MIL-STD-810G) i pracuje w temperaturze od -20°C do +55°C. Opcjonalny [egzoszkielet PA-BEK-001CG](/produkt/brother-rj-egzoszkielet) dodatkowa ochrona mechaniczna. [Zebra ZQ521](/produkt/zebra-zq521) ma identyczny IP54 i 2 m drop spec.' },
-      { question: 'Jak długo trzyma bateria Brother RJ-4230B?', answer: 'Wymienna bateria Li-Ion [PA-BT-006](/produkt/brother-rj-bateria) (14,4 V, 1 860 mAh) zapewnia ok. 200 m ciągłego wydruku — to ok. 500–700 standardowych etykiet wysyłkowych 4×6" na jednym ładowaniu. Czas ładowania ok. 3 godzin. Bateria NIE jest dołączona do drukarki — trzeba ją dokupić osobno.' },
+      { question: 'Jak długo trzyma bateria Brother RJ-4230B?', answer: 'Wymienna bateria Li-Ion [PA-BT-006](/produkt/brother-rj-bateria) (14,4 V, 1 860 mAh) wystarcza na ok. 200 m ciągłego wydruku — to ok. 500–700 standardowych etykiet wysyłkowych 4×6" na jednym ładowaniu. Czas ładowania ok. 3 godzin. Bateria NIE jest dołączona do drukarki — trzeba ją dokupić osobno.' },
       { question: 'Czy Brother RJ-4230B obsługuje język ZPL (Zebra)?', answer: 'Tak — Brother RJ-4230B natywnie emuluje ZPL II i CPCL. Migracja z drukarek Zebra ([ZQ521](/produkt/zebra-zq521), [ZQ630 Plus](/produkt/zebra-zq630-plus)) nie wymaga zmiany oprogramowania ani formatów etykiet. Obsługuje także ESC/P i P-touch Template do tworzenia własnych szablonów.' },
       { question: 'Czy Brother RJ-4230B działa z iPhone i iPad?', answer: 'Tak — Brother RJ-4230B ma certyfikat Apple MFi (Made for iPhone/iPad) i łączy się z urządzeniami iOS przez Bluetooth 4.2. Działa również z Androidem (BT + NFC do szybkiego parowania), Windows i Linux. AirPrint pozwala drukować bezpośrednio z iOS bez instalacji sterowników.' },
       { question: 'Czy bateria jest w zestawie z Brother RJ-4230B?', answer: 'Nie — bateria [PA-BT-006](/produkt/brother-rj-bateria) jest sprzedawana osobno. W zestawie z drukarką znajdują się: przewód USB, pasek na ramię, oprogramowanie na CD i dokumentacja. Do pracy potrzebna jest bateria lub zasilacz sieciowy [PA-AD-600AEU](/produkt/brother-rj-zasilacz). Zalecamy zakup co najmniej 2 baterii do pracy zmianowej.' },
-      { question: 'Ile kosztuje Brother RJ-4230B?', answer: 'Brother RJ-4230B (RJ4230BZ1, Bluetooth) kosztuje od 2 353 zł netto. Wersja z Wi-Fi — Brother RJ-4250WB (RJ4250WBZ1) — od 2 826 zł netto. Do tego dochodzi bateria [PA-BT-006](/produkt/brother-rj-bateria) ok. 585 zł i opcjonalnie ładowarka [PA-BC-003](/produkt/brother-rj-ladowarka) ok. 467 zł. TCO jest niższy niż [Zebra ZQ521](/produkt/zebra-zq521) dzięki niższej cenie bazowej.' },
-      { question: 'Jaka gwarancja na Brother RJ-4230B?', answer: 'Brother RJ-4230B ma 3-letnią gwarancję producenta po rejestracji na brother.pl (standardowo 1 rok, rozszerzenie do 3 lat bezpłatne). Gwarancja obejmuje drukarkę i głowicę drukującą. Dla porównania: [Zebra ZQ521](/produkt/zebra-zq521) ma 1 rok gwarancji (rozszerzenie przez OneCare), [Honeywell RP4f](/produkt/honeywell-rp4f) — 1 rok. Brother oferuje najdłuższą gwarancję w klasie [mobilnych drukarek etykiet](/mobilne-drukarki-etykiet).' },
-      { question: 'Brother RJ-4230B vs Zebra ZQ521 — która lepsza?', answer: 'Brother RJ-4230B (od 2 353 zł): tańsza o ~750 zł, 3 lata gwarancji z głowicą, IP54, 2,1 m drop, emulacja ZPL II. [Zebra ZQ521](/produkt/zebra-zq521) (od 3 099 zł): bateria PowerPrecision+ 3 250 mAh (vs 1 860 mAh Brother), 721 g (vs 850 g), Link-OS do zarządzania flotą, lepsza integracja z terminalami Zebra. Brother wygrywa ceną i gwarancją. Zebra wygrywa baterią, wagą i ekosystemem. Dla floty 1–5 drukarek → Brother. Dla floty 10+ z terminalami Zebra → [ZQ521](/produkt/zebra-zq521).' },
-      { question: 'Jakie są alternatywy dla Brother RJ-4230B?', answer: 'W klasie [mobilnych drukarek 4-calowych](/mobilne-drukarki-etykiet): [Zebra ZQ521](/produkt/zebra-zq521) (premium, IP54, 2 m drop, PowerPrecision+, ale droższa), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (najszersza gama akcesoriów, ale najdroższa), [Honeywell RP4f](/produkt/honeywell-rp4f) (hot-swap bateria, 2 m drop). Brother RJ-4230B oferuje najlepszy stosunek cena/jakość w segmencie 4-calowym z emulacją ZPL. Pełna oferta [drukarek Brother](/drukarki-etykiet-brother).' },
+      { question: 'Jaka gwarancja na Brother RJ-4230B?', answer: 'Gwarancja producenta na Brother RJ-4230B wynosi 3 lata. Dla porównania: [Zebra ZQ521](/produkt/zebra-zq521) ma 1 rok gwarancji (rozszerzenie przez OneCare), [Honeywell RP4f](/produkt/honeywell-rp4f) — 1 rok. Zobacz też [mobilne drukarki etykiet](/mobilne-drukarki-etykiet).' },
+      { question: 'Brother RJ-4230B vs Zebra ZQ521 — która lepsza?', answer: 'Brother RJ-4230B: 3 lata gwarancji, IP54, upadki z 2,1 m, emulacja ZPL II. [Zebra ZQ521](/produkt/zebra-zq521): bateria PowerPrecision+ 3 250 mAh (vs 1 860 mAh Brother), 721 g (vs 850 g), Link-OS do zarządzania flotą, integracja z terminalami Zebra. Brother ma dłuższą gwarancję, Zebra — większą baterię, mniejszą masę i narzędzia do zarządzania flotą. Do floty z terminalami Zebra pasuje [ZQ521](/produkt/zebra-zq521).' },
+      { question: 'Jakie są alternatywy dla Brother RJ-4230B?', answer: 'W klasie [mobilnych drukarek 4-calowych](/mobilne-drukarki-etykiet): [Zebra ZQ521](/produkt/zebra-zq521) (IP54, upadki z 2 m, PowerPrecision+), [Zebra ZQ630 Plus](/produkt/zebra-zq630-plus) (szeroka gama akcesoriów), [Honeywell RP4f](/produkt/honeywell-rp4f) (wymiana baterii bez wyłączania, upadki z 2 m). Brother RJ-4230B to 4-calowa drukarka z emulacją ZPL. Pełna oferta [drukarek Brother](/drukarki-etykiet-brother).' },
     ],
     comparison: {
       title: 'Porównanie mobilnych drukarek 4-calowych — RJ-4230B vs ZQ521 vs RP4f',
@@ -14534,7 +14483,6 @@ Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukar
             'Łączność': 'BT 4.2, NFC, USB, Wi-Fi (opcja)',
             'IP / upadki': 'IP54, 2,1 m MIL-STD',
             'Wyświetlacz': 'Brak',
-            'Cena od': '2 353 zł',
             'Najlepszy do': 'Kurier, etykiety 4×6", niska cena',
           },
         },
@@ -14550,7 +14498,6 @@ Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukar
             'Łączność': 'BT 4.1, NFC, USB, Wi-Fi ac (opcja)',
             'IP / upadki': 'IP54, 2 m na beton',
             'Wyświetlacz': 'Brak',
-            'Cena od': '3 099 zł',
             'Najlepszy do': 'Kurier, magazyn, premium IP54',
           },
         },
@@ -14566,7 +14513,6 @@ Pełna [specyfikacja techniczna RJ-4230B](https://www.brother.pl/drukarki/drukar
             'Łączność': 'BT 5.0, NFC, USB, Wi-Fi 5 (opcja)',
             'IP / upadki': 'IP54, 2 m na beton',
             'Wyświetlacz': 'LED statusu',
-            'Cena od': '3 563 zł',
             'Najlepszy do': 'Logistyka, duża bateria, hot-swap',
           },
         },
@@ -82524,7 +82470,7 @@ const brotherPrinterAccessories: Product[] = [
     slug: 'brother-td4d-obcinarka',
     name: 'Obcinarka Brother PACU001',
     shortDescription: 'Obcinarka Brother PACU001 — automatyczna gilotyna do drukarek Brother TD-4D (TD-4410D, TD-4420DN, TD-4520DN, TD-4550DNWB)',
-    description: 'Oryginalna obcinarka (gilotyna) Brother PACU001 do drukarek serii TD-4D. Automatycznie odcina etykietę po wydruku — idealna do paragonów, biletów i etykiet o zmiennej długości. Montaż samodzielny przez użytkownika bez narzędzi — wystarczy wymienić standardową pokrywę przednią. Kompatybilna z modelami TD-4410D, TD-4420DN, TD-4520DN i TD-4550DNWB.',
+    description: 'Oryginalna obcinarka (gilotyna) Brother PACU001 do drukarek serii TD-4D. Automatycznie odcina etykietę po wydruku — do paragonów, biletów i etykiet o zmiennej długości. Montaż samodzielny przez użytkownika bez narzędzi — wystarczy wymienić standardową pokrywę przednią. Kompatybilna z modelami TD-4410D, TD-4420DN, TD-4520DN i TD-4550DNWB.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
@@ -82900,7 +82846,7 @@ const brotherPrinterAccessories: Product[] = [
     slug: 'brother-rj-bateria',
     name: 'Bateria Brother PA-BT-006',
     shortDescription: 'Bateria Brother PA-BT-006 — wymienna bateria Li-Ion 14,4 V do drukarek Brother RJ-4230B i RJ-4250WB',
-    description: 'Oryginalna wymienna bateria litowo-jonowa Brother PA-BT-006 do mobilnych drukarek etykiet Brother RJ-4230B i RJ-4250WB. Pojemność 1 860 mAh (14,4 V) zapewnia ok. 200 m ciągłego wydruku. Czas ładowania ok. 3 godzin w ładowarce PA-BC-003 lub ok. 4 godzin przez zasilacz PA-AD-600AEU. Bateria NIE jest dołączona do drukarki — wymagany osobny zakup.',
+    description: 'Oryginalna wymienna bateria litowo-jonowa Brother PA-BT-006 do mobilnych drukarek etykiet Brother RJ-4230B i RJ-4250WB. Pojemność 1 860 mAh (14,4 V) wystarcza na ok. 200 m ciągłego wydruku. Czas ładowania ok. 3 godzin w ładowarce PA-BC-003 lub ok. 4 godzin przez zasilacz PA-AD-600AEU. Bateria NIE jest dołączona do drukarki — wymagany osobny zakup.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
@@ -82931,7 +82877,7 @@ const brotherPrinterAccessories: Product[] = [
     slug: 'brother-rj-ladowarka',
     name: 'Ładowarka Brother PA-BC-003',
     shortDescription: 'Ładowarka Brother PA-BC-003 — stacja ładująca baterię PA-BT-006 do drukarek Brother RJ-4230B i RJ-4250WB',
-    description: 'Oryginalna stacja ładowania baterii Brother PA-BC-003 do mobilnych drukarek etykiet Brother RJ-4230B i RJ-4250WB. Ładuje baterię PA-BT-006 w ok. 3 godziny poza drukarką — idealna do pracy zmianowej. Dioda LED informuje o stanie ładowania. Zasilacz sieciowy w zestawie.',
+    description: 'Oryginalna stacja ładowania baterii Brother PA-BC-003 do mobilnych drukarek etykiet Brother RJ-4230B i RJ-4250WB. Ładuje baterię PA-BT-006 w ok. 3 godziny poza drukarką — przydatna przy pracy zmianowej. Dioda LED informuje o stanie ładowania. Zasilacz sieciowy w zestawie.',
     categoryId: 'akcesoria',
     subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
     manufacturerId: 'brother',
