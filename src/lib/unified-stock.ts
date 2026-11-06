@@ -112,11 +112,16 @@ function stockResponse(body: StockResponse['body'], init?: { status?: number; he
  * cache trzyma surowe dane dystrybutorów, a każdy odczyt liczy dostępność licencji
  * od nowa. `daneDystrybutora` pomija te reguły — kreator oferty w panelu admina
  * potrzebuje ceny edycji „na zapytanie” i rzeczywistego stanu u dystrybutora.
+ *
+ * `tylkoCache` czyta wyłącznie StockCache (bez względu na wiek wpisu) i JarltechStockCache:
+ * żadnych zapytań do Ingrama, BlueStar ani Jarltecha na żywo i żadnych zapisów do cache.
+ * PN bez wpisu wraca jako `found: false`. Strona marki pyta o setki PN naraz — odświeżanie
+ * ich na żywo powtarzało 429 z Ingrama i wyczerpanie połączeń bazy (4.11.2026).
  */
 export async function lookupUnifiedStock(
   partNumbers: string[],
   showDebug = false,
-  opcje: { maxWiekCacheMs?: number; daneDystrybutora?: boolean } = {}
+  opcje: { maxWiekCacheMs?: number; daneDystrybutora?: boolean; tylkoCache?: boolean } = {}
 ): Promise<StockResponse> {
   const regulyLicencji = (wiersz: StockInfo) => { if (!opcje.daneDystrybutora) nalozRegulyLicencji(wiersz) }
   // Dystrybutorzy bez API: jeśli cały request dotyczy ręcznie utrzymywanych
@@ -175,7 +180,7 @@ export async function lookupUnifiedStock(
       // Taśmy SATO: cena kartonu zawsze z ceny zakupu (stare wiersze mają cenę za rolkę).
       const row = przeliczCeneSato({ ...wiersz })
       const age = cacheCheckTime.getTime() - row.lastSync.getTime()
-      if (age >= stockCacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000)) continue
+      if (!opcje.tylkoCache && (age >= stockCacheMaxAge(row.partNumber, CACHE_MAX_AGE_MS) || (!row.found && age >= 5 * 60 * 1000))) continue
       // Nowe materiały RFID były odpytywane przed rejestracją w katalogu etykiet.
       // Stary wpis ma marżę urządzeń 10%. Odśwież go, aby wszystkie kanały używały 15% dla rolek.
       if (rfidLabelPartNumbers.has(row.partNumber) && row.ingramPrice && row.price &&
@@ -186,7 +191,7 @@ export async function lookupUnifiedStock(
       if (catalogPrice && row.price && row.price > catalogPrice * 3) continue
 
       const j = jarltechCacheMap.get(row.partNumber)
-      if (zebraTerminalPartNumbers.has(row.partNumber) && (!j || j.lastSync.getTime() > row.lastSync.getTime())) continue
+      if (!opcje.tylkoCache && zebraTerminalPartNumbers.has(row.partNumber) && (!j || j.lastSync.getTime() > row.lastSync.getTime())) continue
       // Potwierdzony wpis Jarltech musi zastąpić wcześniejsze nieznalezienie,
       // również przy zerowym zapasie i oczekiwanej dostawie.
       if (j?.found && !row.found) continue
@@ -225,7 +230,7 @@ export async function lookupUnifiedStock(
     // Listing mieszany: limit 3 PN. Newland: do 24 PN, concurrency 4 w integracji. Timeout 10s.
     // Fire-and-forget write-through do JarltechStockCache dla przyszłych requestów.
     // ============================================
-    const liveFallbackCandidates = Array.from(freshCache.values())
+    const liveFallbackCandidates = opcje.tylkoCache ? [] : Array.from(freshCache.values())
       .filter(c => !jarltechCacheMap.has(c.partNumber) && (c.availability !== 'available' || newlandPNs.has(c.partNumber)))
       .sort((a, b) => Number(newlandPNs.has(b.partNumber)) - Number(newlandPNs.has(a.partNumber)))
       .slice(0, partNumbers.every(pn => newlandPNs.has(pn)) ? 24 : 3)
@@ -304,10 +309,21 @@ export async function lookupUnifiedStock(
     // If all PNs are in fresh cache, serve from cache (skip live API calls)
     const uncachedPNs = partNumbers.filter(pn => !freshCache.has(pn))
 
-    if (uncachedPNs.length === 0) {
-      // All PNs are in fresh cache — fast path
+    if (uncachedPNs.length === 0 || opcje.tylkoCache) {
+      // All PNs are in fresh cache — fast path (przy `tylkoCache` także z brakami: found: false)
       const results: StockInfo[] = partNumbers.map(pn => {
-        const c = freshCache.get(pn)!
+        const c = freshCache.get(pn)
+        if (!c) return {
+          partNumber: pn,
+          found: false,
+          stockPL: 0,
+          stockDE: 0,
+          inDelivery: 0,
+          totalStock: 0,
+          availability: 'unavailable' as const,
+          deliveryText: 'Brak danych z dystrybutora',
+          lastSync: cacheCheckTime.toISOString(),
+        }
         return {
           partNumber: c.partNumber,
           found: c.found,
@@ -330,7 +346,7 @@ export async function lookupUnifiedStock(
 
       // Background write-through: jeśli były override'y, zaktualizuj StockCache
       // (fire-and-forget — nie blokuje response)
-      if (overriddenPNs.length > 0) {
+      if (overriddenPNs.length > 0 && !opcje.tylkoCache) {
         Promise.all(
           overriddenPNs.map(pn => {
             const c = freshCache.get(pn)!

@@ -182,11 +182,12 @@ interface BrandCategoryPageProps {
 }
 
 /**
- * Wiersze StockCache dla PN-ów strony marki — jedno zapytanie na stronę, godzina w cache (ISR).
- * Błąd rzuca wyjątek, żeby pusty wynik nie został zapamiętany na godzinę.
+ * Wiersze StockCache dla PN-ów strony marki — tylko odczyt cache (`tylkoCache`), bez odpytywania
+ * dystrybutorów: strona marki ma setki PN, a odświeżanie ich na żywo kończyło się 429 z Ingrama.
+ * Godzina w cache (ISR); błąd rzuca wyjątek, żeby pusty wynik nie został zapamiętany na godzinę.
  */
 const wierszeCenMarki = unstable_cache(async (numery: string[]): Promise<StockInfo[]> => {
-  const { body, status } = await lookupUnifiedStock(numery)
+  const { body, status } = await lookupUnifiedStock(numery, false, { tylkoCache: true })
   if (status !== 200 || !body.results) throw new Error(`stock ${status}`)
   // Ceny zakupu u dystrybutora nie mogą trafić do HTML ani do cache strony.
   return body.results.map(({ ingramPrice: _cenaZakupu, ...wiersz }) => wiersz)
