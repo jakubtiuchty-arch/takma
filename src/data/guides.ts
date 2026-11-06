@@ -8618,8 +8618,8 @@ export const guides: Guide[] = [
   slug: 'brother-rj-4230b-vs-zebra-zq521',
   title: 'Brother RJ-4230B vs Zebra ZQ521 — którą drukarkę mobilną 4" wybrać?',
   seoTitle: 'Brother RJ-4230B vs Zebra ZQ521 — porównanie drukarek mobilnych 4"',
-  seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Brother RJ-4230B od 2 353 zł, Zebra ZQ521 od 2 979 zł. Która lepsza do magazynu, kuriera, leśnictwa, pracy terenowej? Drukarka mobilna dla Lasów Państwowych, nadleśnictw, geodezji. RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
-  excerpt: 'Brother RJ-4230B to kompaktowa drukarka mobilna 4" z Bluetooth od 2 353 zł. Zebra ZQ521 oferuje WiFi ac, BT 5.2, opcjonalne RFID i egzoszkielet IP65 od 2 979 zł. Porównanie kluczowych kryteriów decyzyjnych: wytrzymałość, łączność, bateria, zarządzanie flotą i koszty eksploatacji.',
+  seoDescription: 'Porównanie Brother RJ-4230B i Zebra ZQ521 — drukarki mobilne 4 cale. Wytrzymałość, łączność WiFi/BT, bateria, RFID, zarządzanie flotą, ceny netto. Która lepsza do magazynu, kuriera, leśnictwa, pracy terenowej? Drukarka mobilna dla Lasów Państwowych, nadleśnictw, geodezji. RJ-4230B Brother, ZQ521 Zebra, drukarka mobilna 4" porównanie. PN: RJ4230BZ1, ZQ52-BUE0010-00, ZQ52-BUE001E-00.',
+  excerpt: 'Brother RJ-4230B to kompaktowa drukarka mobilna 4" z Bluetooth. Zebra ZQ521 oferuje WiFi ac, BT 5.2, opcjonalne RFID i egzoszkielet IP65 od 2 979 zł. Porównanie kluczowych kryteriów decyzyjnych: wytrzymałość, łączność, bateria, zarządzanie flotą i koszty eksploatacji.',
   category: 'porownanie',
   tags: ['drukarki-etykiet', 'mobilne', 'brother', 'zebra', 'rj-4230b', 'zq521', 'porownanie', '4-cale', 'lesnictwo', 'praca-terenowa'],
   publishedAt: '2026-03-17',
@@ -8632,7 +8632,7 @@ export const guides: Guide[] = [
       id: 'wprowadzenie',
       heading: 'Brother RJ-4230B vs Zebra ZQ521 — TL;DR',
       content: `
-<p><strong>Brother RJ-4230B</strong> to kompaktowa drukarka mobilna 4" z łącznością Bluetooth 4.2, idealna do prostych wdrożeń w handlu i serwisie terenowym — od 2 353 zł netto. <strong>Zebra ZQ521</strong> oferuje WiFi 802.11ac, Bluetooth 5.2, opcjonalne RFID UHF i wyższą odporność (MIL-STD-810G) — od 2 979 zł netto. Zebra jest lepszym wyborem dla dużych flot i pracy w wymagających warunkach, Brother — gdy liczy się cena i prostota wdrożenia.</p>
+<p><strong>Brother RJ-4230B</strong> to kompaktowa drukarka mobilna 4" z łącznością Bluetooth 4.2, do prostych wdrożeń w handlu i serwisie terenowym. <strong>Zebra ZQ521</strong> oferuje WiFi 802.11ac, Bluetooth 5.2, opcjonalne RFID UHF i wyższą odporność (MIL-STD-810G) — od 2 979 zł netto. Zebra jest lepszym wyborem dla dużych flot i pracy w wymagających warunkach, Brother — gdy liczy się cena i prostota wdrożenia.</p>
 
 <p>Oba modele drukują termicznie w rozdzielczości 203 dpi z prędkością do 127 mm/s na papierze o szerokości do 104 mm. Na pierwszy rzut oka — specyfikacja druku jest identyczna. Kluczowe różnice leżą w łączności bezprzewodowej, wytrzymałości mechanicznej, ekosystemie zarządzania i opcjach rozszerzeń. Ten poradnik pomoże Ci zdecydować, który model lepiej pasuje do Twojego scenariusza użycia.</p>
 `
@@ -8648,7 +8648,6 @@ export const guides: Guide[] = [
     <tr><th>Parametr</th><th>Brother RJ-4230B</th><th>Zebra ZQ521</th></tr>
   </thead>
   <tbody>
-    <tr><td>Cena netto od</td><td><strong>2 353 zł</strong></td><td>2 979 zł</td></tr>
     <tr><td>Szerokość druku</td><td>104 mm</td><td>104 mm</td></tr>
     <tr><td>Prędkość druku</td><td>127 mm/s</td><td>127 mm/s</td></tr>
     <tr><td>Waga z baterią</td><td>850 g</td><td><strong>790 g</strong></td></tr>
@@ -8726,7 +8725,7 @@ export const guides: Guide[] = [
 
 <p>Kluczowa różnica w infrastrukturze ładowania: Zebra oferuje 4-gniazdowe stacje ładujące baterie (SAC-MPP-8BCHGUS1-01) i ładowarki kołyskowe, co jest istotne przy zarządzaniu flotą z rotacją baterii między zmianami. Brother korzysta z prostszego modelu — ładowanie przez zasilacz sieciowy lub adapter samochodowy.</p>
 
-<p>Brother ma natomiast unikalną opcję: adapter zasilania stałego (battery eliminator) pozwalający pracować bez baterii na stałym zasilaniu — przydatne w pojazdach lub stacjonarnych punktach druku.</p>
+<p>Brother ma natomiast opcję: adapter zasilania stałego (battery eliminator) pozwalający pracować bez baterii na stałym zasilaniu — przydatne w pojazdach lub stacjonarnych punktach druku.</p>
 
 <p><strong>Wniosek praktyczny:</strong></p>
 <ul>
@@ -8782,7 +8781,7 @@ export const guides: Guide[] = [
 
 <h3>Brother RJ-4230B sprawdzi się, gdy:</h3>
 <ul>
-  <li>Szukasz sprawdzonej drukarki 4" w niższej cenie (od 2 353 zł netto — o 26% taniej niż Zebra)</li>
+  <li>Potrzebna jest drukarka 4" w niższej cenie niż Zebra</li>
   <li>Twoje zastosowanie to głównie parowanie Bluetooth z telefonem lub tabletem</li>
   <li>Potrzebujesz prostego wdrożenia bez rozbudowanej infrastruktury sieciowej WiFi</li>
   <li>Cenisz 3-letnią gwarancję z głowicą drukującą w cenie</li>
@@ -8810,7 +8809,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Która drukarka mobilna 4 cale jest lepsza do magazynu?',
-      answer: 'Zależy od skali wdrożenia. Dla małych magazynów z parowaniem Bluetooth z telefonem — Brother RJ-4230B wystarczy i kosztuje od 2 353 zł. Dla dużych obiektów z siecią WiFi i centralnym zarządzaniem drukarkami — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> sprawdzi się lepiej dzięki WiFi 802.11ac, roamingowi 802.11r i ekosystemowi Zebra DNA.'
+      answer: 'Zależy od skali wdrożenia. Dla małych magazynów z parowaniem Bluetooth z telefonem — Brother RJ-4230B wystarczy. Dla dużych obiektów z siecią WiFi i centralnym zarządzaniem drukarkami — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> sprawdzi się lepiej dzięki WiFi 802.11ac, roamingowi 802.11r i ekosystemowi Zebra DNA.'
     },
     {
       question: 'Czy Zebra ZQ521 drukuje etykiety RFID?',
@@ -8834,7 +8833,7 @@ export const guides: Guide[] = [
     },
     {
       question: 'Która drukarka mobilna jest lepsza dla leśnika — do pracy w Lasach Państwowych?',
-      answer: 'Do oznaczania drewna, druku kwitów wywozowych i inwentaryzacji drzewostanów w nadleśnictwach wystarczy parowanie Bluetooth z telefonem — WiFi w lesie nie ma. <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> (od 2 353 zł) sprawdzi się w lecie i jesieni. Na zimowe zrywki i mokre warunki — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> z egzoszkieletem (IP65, -20 C) i baterią 6 500 mAh daje większy zapas bezpieczeństwa i autonomii.'
+      answer: 'Do oznaczania drewna, druku kwitów wywozowych i inwentaryzacji drzewostanów w nadleśnictwach wystarczy parowanie Bluetooth z telefonem — WiFi w lesie nie ma. <a href="/produkt/brother-rj-4230b">Brother RJ-4230B</a> sprawdzi się w lecie i jesieni. Na zimowe zrywki i mokre warunki — <a href="/produkt/zebra-zq521">Zebra ZQ521</a> z egzoszkieletem (IP65, -20 C) i baterią 6 500 mAh daje większy zapas bezpieczeństwa i autonomii.'
     }
   ],
 

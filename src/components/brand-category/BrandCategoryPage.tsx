@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { unstable_cache } from 'next/cache'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
@@ -18,6 +19,11 @@ import { brandCategoryContent } from '@/data/brand-category-content'
 import ServiceBanner from '@/components/ui/ServiceBanner'
 import LinkedText from '@/components/ui/LinkedText'
 import { najnizszaCena, zlote, wstawCeneOd } from '@/lib/cena-od'
+import { lookupUnifiedStock } from '@/lib/unified-stock'
+import { catalogPartNumbers } from '@/lib/catalog-live'
+import { jestNaStanie } from '@/lib/licencje'
+import type { StockInfo } from '@/lib/ingram'
+import type { Product } from '@/data/products'
 
 /** Strip Markdown links from text for schema JSON-LD (Google doesn't parse Markdown) */
 function stripMarkdownLinks(text: string): string {
@@ -175,7 +181,42 @@ interface BrandCategoryPageProps {
   slug: string
 }
 
-export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
+/**
+ * Wiersze StockCache dla PN-ów strony marki — jedno zapytanie na stronę, godzina w cache (ISR).
+ * Błąd rzuca wyjątek, żeby pusty wynik nie został zapamiętany na godzinę.
+ */
+const wierszeCenMarki = unstable_cache(async (numery: string[]): Promise<StockInfo[]> => {
+  const { body, status } = await lookupUnifiedStock(numery)
+  if (status !== 200 || !body.results) throw new Error(`stock ${status}`)
+  // Ceny zakupu u dystrybutora nie mogą trafić do HTML ani do cache strony.
+  return body.results.map(({ ingramPrice: _cenaZakupu, ...wiersz }) => wiersz)
+}, ['ceny-strony-marki'], { revalidate: 3600 })
+
+/**
+ * Najniższa cena netto na żywo w pasku pod H1: oferty na stanie mają pierwszeństwo, jak na kaflu.
+ * Bez danych od dystrybutora zwraca null — statyczny `priceFrom` bywa nieaktualny, więc nie jest
+ * fallbackiem (Brother pokazywał „od 461 zł” przy TD-2020A za 231 zł).
+ */
+async function najnizszaCenaNaZywo(produkty: Product[]): Promise<number | null> {
+  try {
+    const numery = Array.from(new Set(produkty.flatMap(catalogPartNumbers))).sort()
+    if (!numery.length) return null
+    const dane = new Map((await wierszeCenMarki(numery)).map(w => [w.partNumber, w]))
+    const ceny: number[] = []
+    for (const p of produkty) {
+      const wiersze = catalogPartNumbers(p).map(pn => dane.get(pn)).filter((w): w is StockInfo => !!w?.found)
+      const naStanie = wiersze.filter(w => jestNaStanie(w))
+      const zCena = (naStanie.length ? naStanie : wiersze).map(w => w.price).filter((c): c is number => !!c && c > 0)
+      if (zCena.length) ceny.push(Math.min(...zCena))
+    }
+    return ceny.length ? Math.min(...ceny) : null
+  } catch (error) {
+    console.error('[strona marki] brak cen na żywo', error)
+    return null
+  }
+}
+
+export default async function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
   const bc = getBrandCategoryBySlug(slug)!
   const category = getCategoryById(bc.categoryId)!
   const manufacturer = getManufacturerById(bc.manufacturerId)!
@@ -220,16 +261,16 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
     availability: p.availability,
   }))
 
-  // Pasek faktów pod H1 — zadanie użytkownika z wyszukiwarki to modele i ceny.
-  // `najnizszaCena` liczy też cenę w tytule strony (`wstawCeneOd`), więc obie liczby są te same.
-  const najtansza = najnizszaCena(allProducts)
+  // Pasek faktów pod H1 — zadanie użytkownika z wyszukiwarki to modele i ceny. Cena tylko na żywo.
+  const najtansza = await najnizszaCenaNaZywo(allProducts)
   // Pusta cena w zestawieniu modeli = cena „od” z karty produktu, na którą prowadzi wiersz.
   const cenaModelu = (m: { href: string; priceFrom: string }) => {
     if (m.priceFrom) return m.priceFrom
     const cena = najnizszaCena(allProducts.filter(p => `/produkt/${p.slug}` === m.href))
     return cena === null ? '' : `od ${zlote(cena)} zł`
   }
-  const zKlawiatura = allProducts.filter(p => p.specifications.some(sp => /^Klawiatur/i.test(sp.name))).length
+  // Liczba modeli z klawiaturą ma sens tylko przy terminalach (na drukarkach liczyła etykieciarki).
+  const zKlawiatura = bc.categoryId === 'terminale-mobilne' ? allProducts.filter(p => p.specifications.some(sp => /^Klawiatur/i.test(sp.name))).length : 0
 
   // Schema JSON-LD
   const breadcrumbJsonLd = {
@@ -727,7 +768,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
               </a>
               {content?.updatedAt && (
                 <span className="text-xs text-gray-400">
-                  {catalogSeo ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
+                  opis zaktualizowano {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </span>
               )}
             </div>
@@ -758,7 +799,7 @@ export default function BrandCategoryPage({ slug }: BrandCategoryPageProps) {
                 {najtansza && <> · ceny netto od {zlote(najtansza)} zł</>}
                 {zKlawiatura > 0 && <> · klawiatura fizyczna w {zKlawiatura} {wModelach(zKlawiatura)}</>}
                 {content?.updatedAt && (
-                  <span className="text-gray-500"> · {catalogSeo ? 'opis zaktualizowano' : 'ceny sprawdzone'} {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                  <span className="text-gray-500"> · opis zaktualizowano {new Date(content.updatedAt).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 )}
               </p>
             </div>
