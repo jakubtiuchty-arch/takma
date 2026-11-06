@@ -550,47 +550,55 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   </SekcjaZwijana>
                 </section>
 
-                <section className="bg-gray-50 rounded-xl p-6">
-                  <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
-                  <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
-                </section>
+                {content.expertAuthority && (
+                  <section className="bg-gray-50 rounded-xl p-6">
+                    <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
+                    <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
+                  </section>
+                )}
 
-                <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
-                  <SekcjaZwijana etykieta="Rozwiń opis">
-                    <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
-                  </SekcjaZwijana>
-                </section>
+                {content.technicalDeepDive && (
+                  <section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
+                    <SekcjaZwijana etykieta="Rozwiń opis">
+                      <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
+                    </SekcjaZwijana>
+                  </section>
+                )}
 
-                <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
-                  <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {content.useCases.map((uc, i) => (
-                      <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
-                        <h3 className="font-semibold text-gray-900 mb-2 text-sm">{uc.title}</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{uc.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                  </SekcjaZwijana>
-                </section>
+                {content.useCases.length > 0 && (
+                  <section>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
+                    <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {content.useCases.map((uc, i) => (
+                        <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
+                          <h3 className="font-semibold text-gray-900 mb-2 text-sm">{uc.title}</h3>
+                          <p className="text-gray-600 text-sm leading-relaxed">{uc.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                    </SekcjaZwijana>
+                  </section>
+                )}
 
-                <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
-                  <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
-                  <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
-                  <div className="space-y-4">
-                    {content.uniqueInsights.items.map((item, i) => (
-                      <div key={i}>
-                        <h3 className="font-semibold text-gray-900 text-sm mb-1">
-                          {i + 1}. {item.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
-                      </div>
-                    ))}
-                  </div>
-                  </SekcjaZwijana>
-                </section>
+                {content.uniqueInsights.items.length > 0 && (
+                  <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                    <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
+                    <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
+                    <div className="space-y-4">
+                      {content.uniqueInsights.items.map((item, i) => (
+                        <div key={i}>
+                          <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                            {i + 1}. {item.title}
+                          </h3>
+                          <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                    </SekcjaZwijana>
+                  </section>
+                )}
 
                 {content.comparisons.length > 0 && (
                   <section>
@@ -802,47 +810,55 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                     </SekcjaZwijana>
                   </section>
 
-                  <section className="bg-gray-50 rounded-xl p-6">
-                    <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
-                    <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
-                  </section>
+                  {content.expertAuthority && (
+                    <section className="bg-gray-50 rounded-xl p-6">
+                      <h2 className="text-lg font-bold text-gray-900 mb-2">{content.sectionHeadings?.expertAuthority ?? 'Dlaczego TAKMA?'}</h2>
+                      <p className="text-gray-600 leading-relaxed text-sm sm:text-justify">{content.expertAuthority}</p>
+                    </section>
+                  )}
 
-                  <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
-                    <SekcjaZwijana etykieta="Rozwiń opis">
-                    <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
-                  </SekcjaZwijana>
-                  </section>
-
-                  <section>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
-                    <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {content.useCases.map((uc, i) => (
-                        <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
-                          <h3 className="font-semibold text-gray-900 mb-2 text-sm">{uc.title}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">{uc.description}</p>
-                        </div>
-                      ))}
-                    </div>
+                  {content.technicalDeepDive && (
+                    <section>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-3">{content.sectionHeadings?.technicalDeepDive ?? 'Parametry techniczne i koszty'}</h2>
+                      <SekcjaZwijana etykieta="Rozwiń opis">
+                      <RichText text={content.technicalDeepDive} className="text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                     </SekcjaZwijana>
-                  </section>
+                    </section>
+                  )}
 
-                  <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
-                    <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
-                    <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
-                    <div className="space-y-4">
-                      {content.uniqueInsights.items.map((item, i) => (
-                        <div key={i}>
-                          <h3 className="font-semibold text-gray-900 text-sm mb-1">
-                            {i + 1}. {item.title}
-                          </h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
-                        </div>
-                      ))}
-                    </div>
-                    </SekcjaZwijana>
-                  </section>
+                  {content.useCases.length > 0 && (
+                    <section>
+                      <h2 className="text-2xl font-bold text-gray-900 mb-4">{content.sectionHeadings?.useCases ?? 'Scenariusze zastosowań'}</h2>
+                      <SekcjaZwijana etykieta="Pokaż wszystkie scenariusze">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {content.useCases.map((uc, i) => (
+                          <div key={i} className="bg-white border border-gray-200 rounded-xl p-5">
+                            <h3 className="font-semibold text-gray-900 mb-2 text-sm">{uc.title}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{uc.description}</p>
+                          </div>
+                        ))}
+                      </div>
+                      </SekcjaZwijana>
+                    </section>
+                  )}
+
+                  {content.uniqueInsights.items.length > 0 && (
+                    <section className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                      <h2 className="text-xl font-bold text-gray-900 mb-4">{content.uniqueInsights.heading}</h2>
+                      <SekcjaZwijana etykieta="Pokaż pozostałe" tlo="from-amber-50">
+                      <div className="space-y-4">
+                        {content.uniqueInsights.items.map((item, i) => (
+                          <div key={i}>
+                            <h3 className="font-semibold text-gray-900 text-sm mb-1">
+                              {i + 1}. {item.title}
+                            </h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                          </div>
+                        ))}
+                      </div>
+                      </SekcjaZwijana>
+                    </section>
+                  )}
 
                   {content.comparisons.length > 0 && (
                     <section>

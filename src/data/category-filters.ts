@@ -535,6 +535,61 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
+  // Etykieciarki P-touch: specyfikacje kart mają różne nazwy wierszy (np. „Szerokości taśm TZe”
+  // i „Szerokość taśmy”), dlatego każda reguła wymienia wszystkie warianty nazwy.
+  'etykieciarki': [
+    {
+      specKey: 'seria',
+      label: 'Seria',
+      derived: [
+        { value: 'PT-H', namePattern: 'PT-H\\d' },
+        { value: 'PT-D', namePattern: 'PT-D\\d' },
+        { value: 'PT-E', namePattern: 'PT-E\\d' },
+        { value: 'PT-P', namePattern: 'PT-P\\d' },
+      ],
+    },
+    {
+      specKey: 'szerokosc-tasmy',
+      label: 'Maks. szerokość taśmy',
+      derived: [
+        { value: '12 mm', pattern: '\\b12 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+        { value: '18 mm', pattern: '\\b18 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+        { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+        { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+      ],
+    },
+    {
+      specKey: 'klawiatura',
+      label: 'Klawiatura',
+      derived: [
+        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny', specs: ['Klawiatura'] },
+        { value: 'Bez klawiatury', pattern: '^brak', specs: ['Klawiatura i wyświetlacz'] },
+        { value: 'Bez klawiatury', pattern: 'bez klawiatury', specs: ['Typ urządzenia'] },
+        { value: 'Bez klawiatury', slugs: ['brother-pt-p910bt', 'brother-pt-p950nw'] },
+      ],
+    },
+    {
+      specKey: 'lacznosc',
+      label: 'Łączność',
+      derived: [
+        { value: 'USB', pattern: 'USB', specs: ['Interfejs', 'Interfejsy', 'Łączność', 'USB'] },
+        { value: 'Bluetooth', pattern: 'Bluetooth', specs: ['Interfejsy', 'Łączność'] },
+        { value: 'Bluetooth', pattern: '^(?!opcja)', specs: ['Bluetooth'] },
+        { value: 'Wi-Fi', pattern: 'Wi-Fi', specs: ['Interfejsy', 'Wi-Fi'] },
+        { value: 'Ethernet', pattern: '100', specs: ['Sieć przewodowa'] },
+        { value: 'Bez połączenia', pattern: '^brak', specs: ['Łączność'] },
+        { value: 'Bez połączenia', pattern: 'praca samodzielna', specs: ['Typ urządzenia'] },
+      ],
+    },
+    {
+      specKey: 'obcinak',
+      label: 'Obcinak',
+      derived: [
+        { value: 'Automatyczny', pattern: 'automatyczn|nacina', specs: ['Obcinak', 'Obcinacz', 'Obcinarka'] },
+        { value: 'Ręczny', pattern: 'ręczn', specs: ['Obcinak', 'Obcinacz', 'Obcinarka'] },
+      ],
+    },
+  ],
   'kolorowe-drukarki-etykiet': [
     {
       specKey: 'klasa',

@@ -5,6 +5,7 @@ import { bluebirdProducts, bluebirdAccessories } from '@/data/bluebird-products'
 import { epsonPosProducts, epsonPosAccessories } from '@/data/epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from '@/data/bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from '@/data/citizen-pos-products'
+import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptouch'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from '@/data/bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from '@/data/bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from '@/data/bixolon-label-products'
@@ -76,6 +77,7 @@ export const LIVE_OFFER_SLUGS = new Set([
   ...epsonPosProducts.map(p => p.slug), ...epsonPosAccessories.map(p => p.slug),
   ...bixolonPosProducts.map(p => p.slug), ...bixolonPosAccessories.map(p => p.slug),
   ...citizenPosProducts.map(p => p.slug), ...citizenPosAccessories.map(p => p.slug),
+  ...brotherQlProducts.map(p => p.slug), ...brotherPtouchProducts.map(p => p.slug),
   ...bixolonReceiptProducts.map(p => p.slug), ...bixolonReceiptAccessories.map(p => p.slug),
   ...bixolonMobileProducts.map(p => p.slug), ...bixolonMobileAccessories.map(p => p.slug),
   ...bixolonLabelProducts.map(p => p.slug), ...bixolonLabelAccessories.map(p => p.slug),

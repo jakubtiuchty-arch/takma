@@ -37,6 +37,7 @@ import { datalogicHcTerminals } from './datalogic-hc-terminals'
 import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
+import { brotherQlProducts, brotherPtouchProducts } from './brother-ql-ptouch'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from './bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from './bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from './bixolon-label-products'
@@ -500,7 +501,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
+    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
     productCount: 32,
   },
   {
@@ -549,7 +550,7 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki termiczne (direct thermal) — druk etykiet bez taśmy barwiącej. Niższe koszty eksploatacji, do etykiet wysyłkowych, cenówek i biletów. Zebra, Honeywell, TSC.',
     longDescription: 'Drukarki termiczne bezpośrednie (direct thermal) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — nie wymagają taśmy barwiącej, obraz powstaje bezpośrednio na specjalnym papierze termicznym pod wpływem ciepła z głowicy. To oznacza niższe koszty eksploatacji i prostszą obsługę. Idealne rozwiązanie do etykiet wysyłkowych, kurierskich, paragonów i oznaczeń tymczasowych, gdzie trwałość wydruku nie jest kluczowa.',
     icon: 'printer',
-    productIds: ['sato-cl6nx-plus', 'sato-cl4nx-plus', 'sato-cl6-sxr', 'sato-cl4-sxr', ...bixolonMobileProducts.map(p => p.id), ...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('termiczne-drukarki-etykiet')).map(p => p.id), 'tsc-alpha-40l-rfid',
+    productIds: ['sato-cl6nx-plus', 'sato-cl4nx-plus', 'sato-cl6-sxr', 'sato-cl4-sxr', ...bixolonMobileProducts.map(p => p.id), ...brotherQlProducts.map(p => p.id), ...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('termiczne-drukarki-etykiet')).map(p => p.id), 'tsc-alpha-40l-rfid',
       'zebra-zd220d', 'zebra-zd230d', 'zebra-zd411d', 'zebra-zd421d', 'zebra-zd621d', 'honeywell-pc45d', 'brother-td-4d', 'brother-td-2020a', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-e720dt', 'citizen-cl-s400dt',
       // Drukarki mobilne (direct thermal) — dopisane 19.09.2026
       'zebra-zq511', 'zebra-zq511-rfid', 'zebra-zq521', 'zebra-zq521-rfid', 'zebra-zq610-plus', 'zebra-zq620-plus',
@@ -593,6 +594,19 @@ export const subcategories: Subcategory[] = [
     icon: 'printer',
     productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
     productCount: 6,
+  },
+  {
+    id: 'etykieciarki',
+    slug: 'etykieciarki',
+    name: 'Etykieciarki',
+    parentCategoryId: 'drukarki-etykiet',
+    description: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm: z klawiaturą, z Bluetooth i do komputera',
+    seoTitle: 'Etykieciarki Brother P-touch — ręczne i do komputera',
+    seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm: z klawiaturą, z Bluetooth i do komputera. Modele dla biura, elektryków i instalatorów sieci.',
+    longDescription: 'Etykieciarka drukuje etykiety na kasecie z taśmą TZe: podłoże, barwnik i laminat są w jednym wkładzie, a laminat chroni nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch do biura oraz modele PT-E dla elektryków i instalatorów sieci.',
+    icon: 'printer',
+    productIds: brotherPtouchProducts.map(p => p.id),
+    productCount: brotherPtouchProducts.length,
   },
   {
     id: 'akcesoria-do-drukarek-etykiet',
@@ -95597,6 +95611,8 @@ const rawProductList: Product[] = [
   ...bixolonPosAccessories,
   ...citizenPosProducts,
   ...citizenPosAccessories,
+  ...brotherQlProducts,
+  ...brotherPtouchProducts,
   ...bixolonReceiptProducts,
   ...bixolonReceiptAccessories,
   ...bixolonMobileProducts,
@@ -96642,22 +96658,11 @@ export const brandCategories: BrandCategory[] = [
     manufacturerId: 'brother',
     categoryId: 'drukarki-etykiet',
     name: 'Drukarki etykiet Brother',
-    seoTitle: 'Drukarki etykiet Brother od 461 zł — gwarancja 5 lat',
-    seoDescription: 'Drukarki etykiet Brother: biurkowe TD, półprzemysłowe TJ i mobilna RJ. Emulacja ZPL II, BarTender gratis, gwarancja 3–5 lat z głowicą. Od 461 zł. TAKMA.',
-    longDescription: 'Kompletna oferta drukarek etykiet Brother w jednym miejscu — od kompaktowej 2-calowej TD-2020A (od 461 zł netto) po półprzemysłową TJ-4121TN z ekranem dotykowym (do 4 780 zł). Brother to najpoważniejsza alternatywa dla Zebry na polskim rynku drukarek etykiet, wyróżniająca się najdłuższą gwarancją na rynku (3 lata TD / 5 lat TJ — obejmuje głowicę i wałek dociskowy), emulacją ZPL II we wszystkich modelach (migracja z Zebry bez zmiany oprogramowania) oraz darmowym BarTender UltraLite w zestawie. TAKMA jako autoryzowany partner Brother oferuje pełne wsparcie: dobór modelu, konfigurację, integrację z WMS/ERP, testy kompatybilności szablonów ZPL i serwis.',
-    faq: [
-      { question: 'Ile kosztuje drukarka etykiet Brother?', answer: 'Ceny drukarek Brother zaczynają się od 461 zł netto za [TD-2020A](/produkt/brother-td-2020a) (biurkowa 2"). Seria [TD-4D](/produkt/brother-td-4d) (biurkowa 4", termiczna) od 1 250 zł. Seria [TD-4T](/produkt/brother-td-4t) (biurkowa 4", termotransferowa) od 1 496 zł. Półprzemysłowe TJ: [TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zł do [TJ-4121TN](/produkt/brother-tj-4121tn) od 4 780 zł. Mobilna [RJ-4230B](/produkt/brother-rj-4230b) od 2 353 zł.' },
-      { question: 'Czy drukarka Brother jest kompatybilna z systemami Zebra (ZPL)?', answer: 'Tak — wszystkie drukarki Brother ([TD-2020A](/produkt/brother-td-2020a), [TD-4D](/produkt/brother-td-4d), [TD-4T](/produkt/brother-td-4t), serie TJ i [RJ-4230B](/produkt/brother-rj-4230b)) emulują ZPL II. Szablony z drukarek Zebra ZD/ZT działają bez zmian w 95% przypadków. TD-4T i TJ obsługują dodatkowo EPL2, DPL i CPCL. Przed migracją z Zebry warto przetestować 3–5 kluczowych szablonów — TAKMA oferuje testy kompatybilności.' },
-      { question: 'Czym Brother TD-4D różni się od TD-4T?', answer: '[TD-4D](/produkt/brother-td-4d) to seria termiczna (bez taśmy) — tańsza eksploatacja, wydruk blaknie w 6–12 mies. [TD-4T](/produkt/brother-td-4t) to seria termotransferowa — drukuje na taśmie woskowej/żywicznej, etykiety trwałe latami. TD-4T ma opcję RFID UHF, Wi-Fi, Bluetooth i LCD. TD-4D do etykiet kurierskich, TD-4T do etykiet produktowych, GHS, produkcji.' },
-      { question: 'Czym drukarki Brother TD (biurkowe) różnią się od TJ (półprzemysłowe)?', answer: 'Seria TD (od 461 zł) to drukarki biurkowe z plastikową obudową, taśmami 300 m, do 1 000 etykiet/dzień, gwarancja 3 lata. Seria TJ ([TJ-4020TN](/produkt/brother-tj-4020tn) od 3 057 zł) to drukarki półprzemysłowe z metalową obudową, taśmami 450 m, do 5 000 etykiet/dzień, prędkość do 254 mm/s, gwarancja 5 lat.' },
-      { question: 'Czy Brother TJ-4020TN to alternatywa dla Zebra ZT231?', answer: 'Tak — obie to półprzemysłowe 4" 203 dpi. [Brother TJ-4020TN](/produkt/brother-tj-4020tn): 5 lat gwarancji z głowicą, taśmy 450 m, 254 mm/s, od 3 057 zł. [Zebra ZT231](/produkt/zebra-zt231): Link-OS, opcja RFID, 304 mm/s, od 2 551 zł. Brother tańszy w TCO (gwarancja + BarTender gratis), Zebra lepsza w zarządzaniu flotą i skalowaniu.' },
-      { question: 'Jaką gwarancję mają drukarki Brother?', answer: '3 lata (seria TD) i 5 lat (seria TJ) po rejestracji na brother.pl. Gwarancja obejmuje drukarkę, głowicę drukującą i wałek dociskowy — unikalny na rynku. Zebra i Honeywell wykluczają głowicę z gwarancji lub oferują max 12 miesięcy proporcjonalnie. Przy koszcie głowicy 400–1 200 zł to realna oszczędność w TCO.' },
-      { question: 'Czy Brother TD-4T obsługuje etykiety RFID?', answer: 'Tak. [TD-4650TNWBR](/produkt/brother-td-4650tnwbr) i [TD-4750TNWBR](/produkt/brother-td-4750tnwbr) mają wbudowany koder UHF RFID. Wersje TN i TNWB na karcie TD-4T służą wyłącznie do nadruku. Ceny i stany znajdziesz na kartach poszczególnych modeli.' },
-      { question: 'Jaka drukarka Brother do e-commerce i paczek?', answer: '[TD-4D (TD-4420DN)](/produkt/brother-td-4d) od 1 250 zł — termiczna 4", Ethernet, ZPL II, BarTender gratis. Drukuje etykiety kurierskie 100×150 mm dla InPost, DPD, DHL, UPS. Kompatybilna z BaseLinker, Allegro, Amazon. Szybsza niż [Zebra ZD220d](/produkt/zebra-zd220d) (203 vs 102 mm/s) i z 3-letnią gwarancją na głowicę. Tańsza opcja: [TD-2020A](/produkt/brother-td-2020a) od 461 zł (etykiety 2").' },
-      { question: 'Czy mogę zamienić Zebra ZD220 na Brother TD-4D?', answer: 'Tak — emulacja ZPL II, identyczny format etykiet 4". [Brother TD-4D](/produkt/brother-td-4d) drukuje szybciej (203 vs 102 mm/s [ZD220](/produkt/zebra-zd220d)), ma 3-letnią gwarancję z głowicą i BarTender gratis. TD-4D od 1 250 zł vs ZD220 od 639 zł — ale z uwzględnieniem TCO (głowica, oprogramowanie) Brother może być tańszy po 2 latach.' },
-      { question: 'Jakie akcesoria są dostępne do drukarek Brother?', answer: 'Obcinarki automatyczne (PACU001, PACU003, PACU004), odklejaki/dispensery (PALP002, PALP004, PALP005), głowice 203 dpi (PAHU2001, BPAHA2L004), głowice 300 dpi (PAHU3001, BPAHA3L004), wałki dociskowe (PAPR2001, PAPR3001, BPAPRL004). Dla [RJ-4230B](/produkt/brother-rj-4230b): [bateria PA-BT-006](/produkt/brother-rj-bateria), [ładowarka PA-BC-003](/produkt/brother-rj-ladowarka), [zasilacz PA-AD-600AEU](/produkt/brother-rj-zasilacz). Wszystko w [akcesoriach Brother](/akcesoria-do-drukarek-etykiet).' },
-      { question: 'Jaka mobilna drukarka Brother do pracy w terenie?', answer: '[Brother RJ-4230B](/produkt/brother-rj-4230b) (od 2 353 zł) — mobilna drukarka etykiet 4" z IP54, Bluetooth 4.2, NFC i odpornością na upadki z 2,1 m (MIL-STD-810G). Drukuje etykiety kurierskie 100x100 mm w terenie. Wersja [RJ-4250WB](/produkt/brother-rj-4230b) dodaje Wi-Fi. Emulacja ZPL II i CPCL. Sprawdź [mobilne drukarki etykiet](/mobilne-drukarki-etykiet) w ofercie TAKMA.' },
-    ],
+    seoTitle: 'Drukarki etykiet Brother — QL, P-touch, TD, TJ i RJ',
+    seoDescription: 'Drukarki etykiet Brother: QL na rolki DK, etykieciarki P-touch na taśmy TZe, biurkowe TD, półprzemysłowe TJ i mobilne RJ. Dobór modelu i materiałów.',
+    longDescription: 'Brother produkuje drukarki etykiet w pięciu seriach. QL drukuje etykiety adresowe, wysyłkowe i identyfikatory z rolek DK o szerokości do 62 mm albo do 103,6 mm. P-touch to etykieciarki i drukarki na laminowane taśmy TZe o szerokości od 3,5 do 36 mm, do oznaczania kabli, półek, segregatorów i urządzeń. TD to biurkowe drukarki etykiet 2- i 4-calowych, TJ — półprzemysłowe do pracy ciągłej, a RJ — mobilne do druku w terenie. Serie TD, TJ i RJ emulują język ZPL II. QL i P-touch drukują z programu P-touch Editor i aplikacji Brother, a etykieciarki z klawiaturą — bez komputera.',
+    // FAQ strony jest w brand-category-content.ts; to pole wyświetla się tylko bez tamtej treści.
+    faq: [],
   },
   {
     id: 'drukarki-etykiet-tsc',

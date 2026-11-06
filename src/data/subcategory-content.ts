@@ -3386,6 +3386,37 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   // ============================================
   // KOLOROWE DRUKARKI ETYKIET (Epson ColorWorks) — 19.09.2026
   // ============================================
+  // Etykieciarki Brother P-touch (taśmy TZe). Sekcje bez treści szablon pomija.
+  'etykieciarki': {
+    updatedAt: '2026-11-07',
+    definition: {
+      heading: 'Do czego służy etykieciarka?',
+      content: 'Etykieciarka oznacza przedmioty, które wymagają trwałego i czytelnego opisu: segregatory, półki, szuflady, przewody, gniazda, rozdzielnice i urządzenia. Nadruk powstaje termotransferowo pod warstwą laminatu taśmy TZe. Szerokość taśmy wynosi od 3,5 mm do 12, 18, 24 lub 36 mm, zależnie od modelu.\n\nTaśmy TZe mają różne podłoża i kolory, a modele PT-E310BTVP, PT-E560BTVP, PT-P900Wc i PT-P950NW drukują też na rurkach termokurczliwych HSe. Do etykiet adresowych i wysyłkowych służą drukarki [Brother QL](/drukarki-etykiet-brother) na rolkach DK.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać etykieciarkę?',
+      items: [
+        'Szerokość taśmy — modele PT-H110 i PT-E110 przyjmują taśmy do 12 mm, PT-D410 i PT-E310BTVP do 18 mm, PT-D610BTVP, PT-E560BTVP i PT-P710BT do 24 mm, a PT-P900Wc, PT-P950NW i PT-E920BT do 36 mm.',
+        'Sposób obsługi — modele z klawiaturą drukują bez komputera. Modele bez klawiatury, np. PT-P710BT i PT-E920BT, drukują z komputera lub z aplikacji na smartfonie.',
+        'Zastosowanie — seria PT-E ma szablony do kabli, paneli krosowych i płyt czołowych. Do oznaczeń biurowych służą serie PT-H i PT-D.',
+        'Zasilanie — część modeli działa na baterie, część ma akumulator Li-ion. Zasilacz bywa w zestawie albo jako akcesorium; zawartość opakowania podaje karta modelu.',
+        'Materiały — rurki termokurczliwe HSe i kasety FLe obsługują tylko wybrane modele. Przed zakupem należy sprawdzić listę materiałów na karcie modelu.',
+      ],
+    },
+    expertAuthority: '',
+    technicalDeepDive: '',
+    useCases: [],
+    uniqueInsights: { heading: '', items: [] },
+    faq: [
+      { question: 'Czym różni się etykieciarka od drukarki etykiet?', answer: 'Etykieciarka drukuje na kasetach z taśmą TZe, w których nadruk jest pod warstwą laminatu. Drukarka etykiet drukuje na rolkach etykiet, np. [Brother QL](/drukarki-etykiet-brother) na rolkach DK albo [drukarki termiczne](/termiczne-drukarki-etykiet) na rolkach do 4 cali. Etykieciarka służy do oznaczeń trwałych, a drukarka etykiet do szybkiego druku serii etykiet.' },
+      { question: 'Jaka etykieciarka do biura?', answer: 'Do opisów segregatorów, półek i szuflad wystarczają modele z klawiaturą z serii PT-H i PT-D. [PT-D410](/produkt/brother-pt-d410) drukuje na taśmach do 18 mm, a [PT-D610BTVP](/produkt/brother-pt-d610bt) do 24 mm i z Bluetooth.' },
+      { question: 'Jaka etykieciarka dla elektryka?', answer: 'Seria PT-E ma szablony owijek i flag kablowych, paneli krosowych i płyt czołowych. [PT-E310BTVP](/produkt/brother-pt-e310bt) i [PT-E560BTVP](/produkt/brother-pt-e560bt) drukują też na rurkach termokurczliwych HSe. [PT-E920BT](/produkt/brother-pt-e920bt) przyjmuje taśmy do 36 mm i kasety FLe do flag kablowych.' },
+      { question: 'Czy etykieciarkę można podłączyć do komputera?', answer: 'Tak, modele z USB, Wi-Fi lub Ethernet drukują z programu P-touch Editor. [PT-P900Wc](/produkt/brother-pt-p900wc) i [PT-P950NW](/produkt/brother-pt-p950nw) drukują serie etykiet z danych z arkusza kalkulacyjnego. Modele z Bluetooth drukują z aplikacji Brother na smartfonie.' },
+      { question: 'Jakie taśmy pasują do etykieciarki Brother?', answer: 'Etykieciarki Brother P-touch używają kaset TZe. Maksymalną szerokość taśmy i obsługę rurek HSe podaje karta modelu.' },
+    ],
+    comparisons: [],
+    howToSteps: [],
+  },
   'kolorowe-drukarki-etykiet': {
   "updatedAt": "2026-10-21",
   "sectionHeadings": {
