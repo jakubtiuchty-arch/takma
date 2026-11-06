@@ -128,6 +128,10 @@ function toIngramItemId(partNumber: string): string {
   if (upper.startsWith('CL') || upper.startsWith('CT-S') || upper.startsWith('CX') || upper.startsWith('1000') || upper.startsWith('2000')) return 'CZ' + upper
   // Brother products (TD/TJ printers, PA accessories, BPA service parts)
   if (upper.startsWith('TD') || /^TJ\d/.test(upper) || upper.startsWith('PA') || /^BPA(?:HA|PRL)/.test(upper)) return 'DI' + upper
+  // Brother QL i P-touch (QL820NWBCZG1, PTE560BTVPRG1, PTD410RG1, PTP710BTZG1). Bez tego wpadały
+  // w domyślne 'ZB' i karta pokazywała „brak danych”. Cyfra po literach serii odcina Honeywella
+  // (PD45, PM45, PX940 nie mają „T” na drugiej pozycji).
+  if (/^QL\d/.test(upper) || /^PT[A-Z]{1,2}\d/.test(upper)) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
   if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
   // Datalogic — skanery ręczne. Ich kody katalogowe zaczynają się od liter, więc do 21.09.2026
