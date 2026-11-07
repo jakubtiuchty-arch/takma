@@ -1378,6 +1378,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es",
+      "brother-tc-4"
+    ],
     "relatedProducts": [
       "brother-pt-h110",
       "brother-pt-d200bw"
@@ -1517,6 +1521,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es",
+      "brother-tc-4"
+    ],
     "relatedProducts": [
       "brother-pt-h105",
       "brother-pt-h500",
@@ -1665,6 +1673,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ba-e001"
+    ],
     "relatedProducts": [
       "brother-pt-h110",
       "brother-pt-d610bt"
@@ -1830,6 +1841,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es",
+      "brother-tc-4"
+    ],
     "relatedProducts": [
       "brother-pt-d210",
       "brother-pt-d410"
@@ -1989,6 +2004,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es",
+      "brother-tc-4"
+    ],
     "relatedProducts": [
       "brother-pt-d200bw",
       "brother-pt-d410"
@@ -2697,6 +2716,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es",
+      "brother-tc-4"
+    ],
     "relatedProducts": [
       "brother-pt-e310bt",
       "brother-pt-e560bt"
@@ -2912,6 +2935,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ba-e001",
+      "brother-pa-ad-004"
+    ],
     "relatedProducts": [
       "brother-pt-e110",
       "brother-pt-e560bt"
@@ -3129,6 +3156,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ba-e001",
+      "brother-pa-ad-004"
+    ],
     "relatedProducts": [
       "brother-pt-e310bt",
       "brother-pt-e920bt"
@@ -3292,6 +3323,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-bt-005",
+      "brother-bpa-cc7-700"
+    ],
     "relatedProducts": [
       "brother-pt-e920bt",
       "brother-pt-p710bt"
@@ -3459,6 +3494,10 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-bt-003",
+      "brother-bpa-cc9-900"
+    ],
     "relatedProducts": [
       "brother-pt-e720bt",
       "brother-pt-p950nw"
@@ -3576,6 +3615,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ad-24es"
+    ],
     "relatedProducts": [
       "brother-pt-p710bt",
       "brother-pt-p910bt"
@@ -3703,6 +3745,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-bt-005"
+    ],
     "relatedProducts": [
       "brother-pt-p300bt",
       "brother-pt-p910bt",
@@ -3855,6 +3900,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-bt-003"
+    ],
     "relatedProducts": [
       "brother-pt-p710bt",
       "brother-pt-e920bt"
@@ -3987,6 +4035,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-ba-e001"
+    ],
     "relatedProducts": [
       "brother-pt-p710bt",
       "brother-pt-p900wc"
@@ -4161,6 +4212,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-sca-001"
+    ],
     "relatedProducts": [
       "brother-pt-p950nw",
       "brother-pt-p750w"
@@ -4347,6 +4401,9 @@ export const brotherPtouchProducts: Product[] = [
       }
     ],
     "compatibleAccessories": [],
+    "relatedAccessories": [
+      "brother-pa-sca-001"
+    ],
     "relatedProducts": [
       "brother-pt-p900wc",
       "brother-pt-e920bt"

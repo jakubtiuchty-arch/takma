@@ -38,6 +38,7 @@ import { epsonPosProducts, epsonPosAccessories } from './epson-pos-products'
 import { bixolonPosProducts, bixolonPosAccessories } from './bixolon-pos-products'
 import { citizenPosProducts, citizenPosAccessories } from './citizen-pos-products'
 import { brotherQlProducts, brotherPtouchProducts } from './brother-ql-ptouch'
+import { brotherQlPtouchAccessories } from './brother-ql-ptouch-akcesoria'
 import { bixolonReceiptProducts, bixolonReceiptAccessories } from './bixolon-receipt-products'
 import { bixolonMobileProducts, bixolonMobileAccessories } from './bixolon-mobile-products'
 import { bixolonLabelProducts, bixolonLabelAccessories } from './bixolon-label-products'
@@ -95341,6 +95342,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Akcesoria Brother do etykieciarek P-touch trafiają do akcesoriów drukarek etykiet według `subcategoryIds`.
+for (const subcategory of subcategories) {
+  const additions = brotherQlPtouchAccessories.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Akcesoria terminali RFID są dostępne także przez standardowe podkategorie akcesoriów.
 for (const subcategory of subcategories) {
   if (subcategory.id === 'akcesoria-do-terminali' || [...rfidTerminalAccessories, ...rfd40Accessories, ...rfd90Accessories, ...datalogic3138Accessories, ...honeywellIh45Accessories, ...newlandMt93UhfAccessories, ...tsl3166Accessories, ...tsl3138Accessories, ...unitechRp902Accessories, ...unitechRp300Accessories, ...unitechTerminalAccessories, ...unitechHandheldAccessories].some(p => p.subcategoryIds?.includes(subcategory.id))) {
@@ -95555,6 +95565,7 @@ const rawProductList: Product[] = [
   ...citizenPosAccessories,
   ...brotherQlProducts,
   ...brotherPtouchProducts,
+  ...brotherQlPtouchAccessories,
   ...bixolonReceiptProducts,
   ...bixolonReceiptAccessories,
   ...bixolonMobileProducts,

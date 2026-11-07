@@ -1639,7 +1639,7 @@ categoryFilters['akcesoria-do-drukarek-etykiet'] = [
       { value: 'Nawijaki', namePattern: '^(?!składany rdzeń).*nawijak' },
       { value: 'Interfejsy sieciowe i komunikacyjne', namePattern: 'wi-?fi|ethernet|rs-?232|\\bLPT\\b|równoległ|parallel|interfejs' },
       { value: 'Moduły RFID, konwertery, klawiatury', namePattern: 'rfid|konwerter|klawiatur' },
-      { value: 'Baterie, ładowarki i zasilacze', namePattern: 'bateri|ładowark|zasilacz' },
+      { value: 'Baterie, ładowarki i zasilacze', namePattern: 'bateri|akumulator|ładowark|zasilacz' },
       { value: 'Etui i osłony', namePattern: 'etui|futerał|egzoszkielet' },
       { value: 'Uchwyty, klipsy i stacje dokujące', namePattern: 'klips|uchwyt|stacj[aęi] (dokując|samochodow)' },
       { value: 'Kable i adaptery', namePattern: 'kabel|adapter(?! rdzeni)' },

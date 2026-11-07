@@ -132,6 +132,9 @@ function toIngramItemId(partNumber: string): string {
   // w domyślne 'ZB' i karta pokazywała „brak danych”. Cyfra po literach serii odcina Honeywella
   // (PD45, PM45, PX940 nie mają „T” na drugiej pozycji).
   if (/^QL\d/.test(upper) || /^PT[A-Z]{1,2}\d/.test(upper)) return 'DI' + upper
+  // Akcesoria P-touch bez prefiksu PA: zasilacz AD-24ES, akumulator BA-E001 i ostrze TC-4. Tylko cały
+  // numer, bo TC4 bez tego trafiałby do reguły Symbol-heritage niżej, a 'TC' to też terminale Zebra.
+  if (['AD24ESEU', 'BAE001', 'TC4'].includes(upper)) return 'DI' + upper
   // Datalogic products (terminals/scanners 94xxxx, 99xxxx)
   if (upper.startsWith('94') || upper.startsWith('99')) return 'DT' + upper
   // Datalogic — skanery ręczne. Ich kody katalogowe zaczynają się od liter, więc do 21.09.2026
