@@ -1577,6 +1577,23 @@ for (const page of ['tablety-przemyslowe-zebra', 'tablety-honeywell', 'tablety-b
 for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'drukarki-etykiet-tsc', 'drukarki-etykiet-citizen', 'drukarki-etykiet-brother', 'drukarki-etykiet-bixolon']) {
   categoryFilters[page] = categoryFilters['drukarki-etykiet']
 }
+// Brother: pięć rodzin o różnych materiałach (rolki DK, taśmy TZe, etykiety TD/TJ/RJ), więc „Seria” idzie
+// przed wspólnym zestawem. Obiekty filtrów są te same co w kategorii — późniejsze dopiski (BIXOLON) trafiają i tu.
+categoryFilters['drukarki-etykiet-brother'] = [
+  {
+    specKey: 'seria',
+    label: 'Seria',
+    description: 'Rodzina modeli Brother.\n• QL — biurkowe drukarki etykiet na rolki DK: etykiety do 62 mm, w QL-1100c i QL-1110NWBc do 103,6 mm\n• P-touch (PT) — etykieciarki i drukarki na taśmy TZe do 36 mm\n• TD — biurkowe drukarki etykiet 2 i 4 cale\n• TJ — przemysłowe drukarki etykiet 4 cale\n• RJ — mobilne drukarki etykiet na baterię',
+    derived: [
+      { value: 'QL', namePattern: '\\bQL-\\d' },
+      { value: 'P-touch (PT)', namePattern: '\\bPT-[A-Z]' },
+      { value: 'TD', namePattern: '\\bTD-\\d' },
+      { value: 'TJ', namePattern: '\\bTJ-\\d' },
+      { value: 'RJ', namePattern: '\\bRJ-\\d' },
+    ],
+  },
+  ...categoryFilters['drukarki-etykiet'],
+]
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
 
 /**
