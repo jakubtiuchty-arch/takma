@@ -579,6 +579,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Ethernet', pattern: '100', specs: ['Sieć przewodowa'] },
         { value: 'Bez połączenia', pattern: '^brak', specs: ['Łączność'] },
         { value: 'Bez połączenia', pattern: 'praca samodzielna', specs: ['Typ urządzenia'] },
+        { value: 'Bez połączenia', slugs: ['brother-pt-h110'] },
       ],
     },
     {
@@ -1579,6 +1580,15 @@ for (const page of ['drukarki-etykiet-zebra', 'drukarki-etykiet-honeywell', 'dru
 }
 // Brother: pięć rodzin o różnych materiałach (rolki DK, taśmy TZe, etykiety TD/TJ/RJ), więc „Seria” idzie
 // przed wspólnym zestawem. Obiekty filtrów są te same co w kategorii — późniejsze dopiski (BIXOLON) trafiają i tu.
+// Wyjątek: „Szerokość druku” to kopia, bo QL drukuje do 58,93–60,96 mm (rolki DK 62 mm), a zakres
+// „do 56 mm” z kategorii ich nie łapie. Kopia nie zmienia zestawu /drukarki-etykiet.
+const szerokoscBrother = (filter: FilterDefinition): FilterDefinition => ({
+  ...filter,
+  description: filter.description?.replace('• 2 cale (do 56 mm) — małe etykiety, paragony, opaski', '• 2 cale (do 62 mm) — małe etykiety, etykiety adresowe, paragony, opaski'),
+  derived: filter.derived?.map(rule => rule.value === '2 cale (do 56 mm)'
+    ? { ...rule, value: '2 cale (do 62 mm)', pattern: '(^|[^0-9,])(4[0-9]|5[0-9]|6[0-2])(,[0-9]+)? ?mm' }
+    : rule),
+})
 categoryFilters['drukarki-etykiet-brother'] = [
   {
     specKey: 'seria',
@@ -1592,7 +1602,7 @@ categoryFilters['drukarki-etykiet-brother'] = [
       { value: 'RJ', namePattern: '\\bRJ-\\d' },
     ],
   },
-  ...categoryFilters['drukarki-etykiet'],
+  ...categoryFilters['drukarki-etykiet'].map(filter => filter.specKey === 'szerokosc' ? szerokoscBrother(filter) : filter),
 ]
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
 
