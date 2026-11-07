@@ -78,8 +78,8 @@ export const brotherQlProducts: Product[] = [
         "value": "60,96 mm"
       },
       {
-        "name": "Maks. długość etykiety",
-        "value": "1 m"
+        "name": "Długość etykiety",
+        "value": "do 1 m"
       },
       {
         "name": "Obcinarka",
@@ -94,6 +94,10 @@ export const brotherQlProducts: Product[] = [
         "value": "rolki DK: taśma ciągła i etykiety wycinane"
       },
       {
+        "name": "Materiały DK",
+        "value": "etykiety wycinane: DK-11201 (29 × 90 mm), DK-11208 (38 × 90 mm), DK-11209 (29 × 62 mm), DK-11202 (62 × 100 mm), DK-11203 (17 × 87 mm), DK-11204 (17 × 54 mm), DK-11221 (23 × 23 mm), DK-11207 (Ø 58 mm, folia), DK-11219 (Ø 12 mm), DK-11218 (Ø 24 mm), DK-11234 (60 × 86 mm); taśmy ciągłe papierowe (30,48 m): DK-22214 (12 mm), DK-22210 (29 mm), DK-22225 (38 mm), DK-22223 (50 mm), DK-N55224 (54 mm, nieprzylepna), DK-22205 (62 mm), DK-44205 (62 mm, klej usuwalny), DK-44605 (62 mm, żółta, klej usuwalny); taśmy ciągłe foliowe (15,24 m): DK-22211 (29 mm), DK-22212 (62 mm), DK-22606 (62 mm, żółta), DK-22113 (62 mm, przezroczysta)"
+      },
+      {
         "name": "Interfejsy",
         "value": "USB 2.0 Full Speed (złącze mini-B)"
       },
@@ -106,7 +110,7 @@ export const brotherQlProducts: Product[] = [
         "value": "220–240 V AC, zasilacz wbudowany"
       },
       {
-        "name": "Wymiary",
+        "name": "Wymiary (szer. × gł. × wys.)",
         "value": "128 × 221 × 153 mm"
       },
       {
@@ -131,7 +135,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Systemy operacyjne",
-        "value": "Windows 7, 8, 8.1, 10; macOS 10.12–10.15"
+        "value": "Windows 7, 8, 8.1, 10; macOS 10.12–10.15; Linux"
       },
       {
         "name": "Kody kreskowe (P-touch Editor)",
@@ -200,7 +204,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-700",
     "seoDescription": "Brother QL-700: drukarka etykiet DK 12–62 mm, 150 mm/s (93 etykiety/min), 300 × 600 dpi, USB, obcinarka, P-touch Editor Lite bez sterownika.",
     "shortDescription": "Drukarka etykiet z USB i wbudowanym programem P-touch Editor Lite: na komputerze z Windows drukuje bez instalacji sterownika. Rolki DK 12–62 mm, do 150 mm/s (93 etykiety/min), obcinarka.",
-    "description": "Brother QL-700 to biurkowa drukarka etykiet z interfejsem USB. Służy do druku etykiet adresowych, oznaczeń, identyfikatorów i etykiet z kodami kreskowymi. Drukarka ma wymiary 128 × 221 × 153 mm i waży 1,12 kg.\n\nKomputer z Windows rozpoznaje podłączoną drukarkę jako dysk USB z programem P-touch Editor Lite. Program uruchamia się z tego dysku, więc projekt i wydruk etykiety nie wymagają instalacji sterownika ani oprogramowania.\n\nDrukarka drukuje do 150 mm/s, czyli 93 standardowe etykiety adresowe na minutę. Rozdzielczość wynosi 300 × 300 dpi, a w trybie wysokiej rozdzielczości 300 × 600 dpi. Druk jest termiczny, jednokolorowy.\n\nQL-700 przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka typu gilotynowego odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są dwie rolki startowe: 100 etykiet DK-11201 (29 × 90 mm) i 8 m taśmy ciągłej 62 mm.\n\nPełny program P-touch Editor dodaje do etykiet obrazy, ramki i kody kreskowe, m.in. CODE128, EAN-13, QR Code i Data Matrix. Dodatek do Microsoft Word, Excel i Outlook drukuje adresy prosto z tych programów. Druk czarno-czerwony obsługują modele serii QL-800.",
+    "description": "Brother QL-700 to biurkowa drukarka etykiet z interfejsem USB. Służy do druku etykiet adresowych, oznaczeń, identyfikatorów i etykiet z kodami kreskowymi. Drukarka ma wymiary 128 × 221 × 153 mm i waży 1,12 kg.\n\nKomputer z Windows rozpoznaje podłączoną drukarkę jako dysk USB z programem P-touch Editor Lite. Program uruchamia się z tego dysku, więc projekt i wydruk etykiety nie wymagają instalacji sterownika ani oprogramowania.\n\nDrukarka drukuje do 150 mm/s, czyli 93 standardowe etykiety adresowe na minutę. Rozdzielczość wynosi 300 × 300 dpi, a w trybie wysokiej rozdzielczości 300 × 600 dpi. Druk jest termiczny, jednokolorowy.\n\nQL-700 przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka typu gilotynowego odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są dwie rolki startowe: 100 etykiet DK-11201 (29 × 90 mm) i 8 m taśmy ciągłej 62 mm.\n\nPełny, bezpłatny program P-touch Editor dodaje do etykiet obrazy, ramki i kody kreskowe, m.in. CODE128, EAN-13, QR Code i Data Matrix. Do wyboru jest zestaw gotowych szablonów etykiet do zastosowań biurowych i domowych. Dodatek do Microsoft Word, Excel i Outlook drukuje adresy prosto z tych programów. Druk czarno-czerwony obsługują modele serii QL-800.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -265,6 +269,10 @@ export const brotherQlProducts: Product[] = [
         "value": "rolki DK: taśma ciągła i etykiety wycinane"
       },
       {
+        "name": "Materiały DK",
+        "value": "etykiety wycinane: DK-11201 (29 × 90 mm), DK-11208 (38 × 90 mm), DK-11209 (29 × 62 mm), DK-11202 (62 × 100 mm), DK-11203 (17 × 87 mm), DK-11204 (17 × 54 mm), DK-11221 (23 × 23 mm), DK-11207 (Ø 58 mm, folia), DK-11219 (Ø 12 mm), DK-11218 (Ø 24 mm), DK-11234 (60 × 86 mm); taśmy ciągłe papierowe (30,48 m): DK-22214 (12 mm), DK-22210 (29 mm), DK-22225 (38 mm), DK-22223 (50 mm), DK-N55224 (54 mm, nieprzylepna), DK-22205 (62 mm), DK-44205 (62 mm, klej usuwalny), DK-44605 (62 mm, żółta, klej usuwalny); taśmy ciągłe foliowe (15,24 m): DK-22211 (29 mm), DK-22212 (62 mm), DK-22606 (62 mm, żółta), DK-22113 (62 mm, przezroczysta)"
+      },
+      {
         "name": "Interfejsy",
         "value": "USB 2.0 Full Speed (złącze mini-B)"
       },
@@ -298,7 +306,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Systemy operacyjne",
-        "value": "Windows Vista, 7, 8, 8.1, 10; OS X 10.10–10.12"
+        "value": "Windows, macOS, Linux"
       },
       {
         "name": "Kody kreskowe (P-touch Editor)",
@@ -347,7 +355,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-800",
     "seoDescription": "Brother QL-800: drukarka etykiet DK 12–62 mm, druk czarno-czerwony (DK-22251), 148 mm/s, 300 × 600 dpi, USB, wbudowany P-touch Editor Lite.",
     "shortDescription": "Drukarka etykiet z USB i drukiem w kolorze czarnym i czerwonym na rolce DK-22251, bez tuszu i tonera. Rolki DK 12–62 mm, do 148 mm/s (93 etykiety/min), 300 × 600 dpi, wbudowany P-touch Editor Lite.",
-    "description": "Brother QL-800 to biurkowa drukarka etykiet z interfejsem USB i drukiem w dwóch kolorach. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym, bez tuszu i tonera. Czerwony nadruk wyróżnia np. datę przydatności, alergeny lub ostrzeżenie na etykiecie paczki.\n\nW druku czarnym drukarka osiąga 148 mm/s, czyli 93 standardowe etykiety adresowe na minutę. Druk czarno-czerwony ma prędkość 24 mm/s, co odpowiada 15 etykietom na minutę. Rozdzielczość wynosi 300 × 300 dpi, a w trybie wysokiej rozdzielczości 300 × 600 dpi.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są rolki startowe: 100 etykiet DK-11201 (29 × 90 mm) i 5 m taśmy DK-22251.\n\nPo podłączeniu kablem USB komputer widzi drukarkę jak pamięć USB z programem P-touch Editor Lite, bez instalacji sterownika. Ten program drukuje tylko na czarno. Pełny P-touch Editor dla Windows i macOS drukuje w dwóch kolorach i pobiera dane z plików CSV, Excel oraz Access.\n\nQL-800 ma zasilacz wbudowany w obudowę i łączy się z komputerem wyłącznie przez USB. Model QL-810Wc dodaje Wi-Fi i AirPrint, a QL-820NWBc także Ethernet, Bluetooth i wyświetlacz LCD. Oba te modele drukują na czarno z prędkością 176 mm/s.",
+    "description": "Brother QL-800 to biurkowa drukarka etykiet z interfejsem USB i drukiem w dwóch kolorach. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym, bez tuszu i tonera. Czerwony nadruk wyróżnia np. datę przydatności, alergeny lub ostrzeżenie na etykiecie paczki.\n\nW druku czarnym drukarka osiąga 148 mm/s, czyli 93 standardowe etykiety adresowe na minutę. Druk czarno-czerwony ma prędkość 24 mm/s, co odpowiada 15 etykietom na minutę. Rozdzielczość wynosi 300 × 300 dpi, a w trybie wysokiej rozdzielczości 300 × 600 dpi.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są rolki startowe: 100 etykiet DK-11201 (29 × 90 mm) i 5 m taśmy DK-22251.\n\nPo podłączeniu kablem USB komputer widzi drukarkę jak pamięć USB z programem P-touch Editor Lite, bez instalacji sterownika. Ten program drukuje tylko na czarno. Pełny P-touch Editor dla Windows i macOS drukuje w dwóch kolorach. Wersja dla Windows pobiera dane z plików CSV, Excel i Access.\n\nQL-800 ma zasilacz wbudowany w obudowę i łączy się z komputerem wyłącznie przez USB. Model QL-810Wc dodaje Wi-Fi i AirPrint, a QL-820NWBc także Ethernet, Bluetooth i wyświetlacz LCD. Oba te modele drukują na czarno z prędkością 176 mm/s.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -361,7 +369,7 @@ export const brotherQlProducts: Product[] = [
     ],
     "imageDescriptions": [
       "Brother QL-800 — drukarka etykiet, widok pod kątem",
-      "Brother QL-800 — widok z przodu"
+      "Brother QL-800 — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -391,7 +399,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Maks. szerokość druku",
-        "value": "58 mm"
+        "value": "58,93 mm"
       },
       {
         "name": "Długość etykiety",
@@ -408,6 +416,10 @@ export const brotherQlProducts: Product[] = [
       {
         "name": "Nośniki",
         "value": "rolki DK: taśma ciągła i etykiety wycinane"
+      },
+      {
+        "name": "Materiały DK",
+        "value": "etykiety wycinane: DK-11201 (29 × 90 mm), DK-11208 (38 × 90 mm), DK-11209 (29 × 62 mm), DK-11202 (62 × 100 mm), DK-11203 (17 × 87 mm), DK-11204 (17 × 54 mm), DK-11221 (23 × 23 mm), DK-11207 (Ø 58 mm, folia), DK-11219 (Ø 12 mm), DK-11218 (Ø 24 mm), DK-11234 (60 × 86 mm); taśmy ciągłe papierowe (30,48 m): DK-22214 (12 mm), DK-22210 (29 mm), DK-22225 (38 mm), DK-22223 (50 mm), DK-N55224 (54 mm, nieprzylepna), DK-22205 (62 mm), DK-44205 (62 mm, klej usuwalny), DK-44605 (62 mm, żółta, klej usuwalny); taśmy ciągłe foliowe (15,24 m): DK-22211 (29 mm), DK-22212 (62 mm), DK-22606 (62 mm, żółta), DK-22113 (62 mm, przezroczysta); taśma do druku czarno-czerwonego: DK-22251 (62 mm, 15,24 m)"
       },
       {
         "name": "Interfejsy",
@@ -447,7 +459,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Systemy operacyjne",
-        "value": "Windows, macOS, Linux (wersje: support.brother.com)"
+        "value": "Windows, macOS, Linux"
       },
       {
         "name": "Kody kreskowe (P-touch Editor)",
@@ -480,10 +492,10 @@ export const brotherQlProducts: Product[] = [
     ],
     "downloads": [
       {
-        "name": "Karta katalogowa (DE)",
+        "name": "Karta katalogowa serii QL-800 (EN)",
         "type": "datasheet",
         "url": "/downloads/brother-ql-800-karta-katalogowa.pdf",
-        "size": "436 KB"
+        "size": "2,8 MB"
       }
     ],
     "sameAs": "https://store.brother.pl/devices/label-printer/ql/ql800",
@@ -497,7 +509,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-810Wc",
     "seoDescription": "Brother QL-810Wc: drukarka etykiet DK 12–62 mm z Wi-Fi i AirPrint, druk czarno-czerwony, 176 mm/s (110 etykiet/min), 300 × 600 dpi, USB.",
     "shortDescription": "Drukarka etykiet z Wi-Fi, AirPrint i USB oraz drukiem w kolorze czarnym i czerwonym na rolce DK-22251. Rolki DK 12–62 mm, do 176 mm/s (110 etykiet/min), druk z komputera, smartfona i tabletu.",
-    "description": "Brother QL-810Wc to drukarka etykiet z interfejsami USB i Wi-Fi (IEEE 802.11b/g/n, Wireless Direct). Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem. Na urządzeniach mobilnych działa aplikacja Brother iPrint&Label i funkcja AirPrint.\n\nW druku czarnym drukarka osiąga 176 mm/s, czyli 110 standardowych etykiet adresowych na minutę. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym z prędkością 24 mm/s (15 etykiet na minutę). Przez AirPrint dostępny jest tylko druk czarny. Rozdzielczość wynosi 300 × 300 dpi, w trybie wysokiej rozdzielczości 300 × 600 dpi.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są rolki startowe: 100 etykiet DK-11201 i 5 m taśmy DK-22251.\n\nWbudowany program P-touch Editor Lite uruchamia się z pamięci drukarki po podłączeniu kablem USB, bez instalacji. Pełny P-touch Editor dla Windows i macOS ma dodatek do Word, Excel i Outlook. Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows, iOS i Androida.\n\nWzględem QL-800 model QL-810Wc dodaje Wi-Fi, AirPrint i szybszy druk czarny: 176 mm/s zamiast 148 mm/s. Obsługuje opcjonalną bazę akumulatorową PA-BU-001 do pracy bez zasilania sieciowego. Ethernet, Bluetooth i wyświetlacz LCD ma model QL-820NWBc.",
+    "description": "Brother QL-810Wc to drukarka etykiet z interfejsami USB i Wi-Fi (IEEE 802.11b/g/n, Wireless Direct). Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem. Na urządzeniach mobilnych działa aplikacja Brother iPrint&Label i funkcja AirPrint.\n\nW druku czarnym drukarka osiąga 176 mm/s, czyli 110 standardowych etykiet adresowych na minutę. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym z prędkością 24 mm/s (15 etykiet na minutę). Przez AirPrint dostępny jest tylko druk czarny. Rozdzielczość wynosi 300 × 300 dpi, w trybie wysokiej rozdzielczości 300 × 600 dpi.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 62 mm, z taśmą ciągłą lub z etykietami wycinanymi. Automatyczna obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m. W zestawie są rolki startowe: 100 etykiet DK-11201 i 5 m taśmy DK-22251.\n\nWbudowany program P-touch Editor Lite uruchamia się z pamięci drukarki po podłączeniu kablem USB, bez instalacji. Pełny P-touch Editor działa w systemach Windows i macOS. Wersja dla Windows ma dodatek do Word, Excel i Outlook. Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows, iOS i Androida.\n\nWzględem QL-800 model QL-810Wc dodaje Wi-Fi, AirPrint i szybszy druk czarny: 176 mm/s zamiast 148 mm/s. Obsługuje opcjonalną bazę akumulatorową PA-BU-001 do pracy bez zasilania sieciowego. Ethernet, Bluetooth i wyświetlacz LCD ma model QL-820NWBc.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -543,7 +555,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Maks. szerokość druku",
-        "value": "58 mm"
+        "value": "60,96 mm"
       },
       {
         "name": "Długość etykiety",
@@ -560,6 +572,10 @@ export const brotherQlProducts: Product[] = [
       {
         "name": "Nośniki",
         "value": "rolki DK: taśma ciągła i etykiety wycinane"
+      },
+      {
+        "name": "Materiały DK",
+        "value": "etykiety wycinane: DK-11201 (29 × 90 mm), DK-11208 (38 × 90 mm), DK-11209 (29 × 62 mm), DK-11202 (62 × 100 mm), DK-11203 (17 × 87 mm), DK-11204 (17 × 54 mm), DK-11221 (23 × 23 mm), DK-11207 (Ø 58 mm, folia), DK-11219 (Ø 12 mm), DK-11218 (Ø 24 mm), DK-11234 (60 × 86 mm); taśmy ciągłe papierowe (30,48 m): DK-22214 (12 mm), DK-22210 (29 mm), DK-22225 (38 mm), DK-22223 (50 mm), DK-N55224 (54 mm, nieprzylepna), DK-22205 (62 mm), DK-44205 (62 mm, klej usuwalny), DK-44605 (62 mm, żółta, klej usuwalny); taśmy ciągłe foliowe (15,24 m): DK-22211 (29 mm), DK-22212 (62 mm), DK-22606 (62 mm, żółta), DK-22113 (62 mm, przezroczysta); taśma do druku czarno-czerwonego: DK-22251 (62 mm, 15,24 m)"
       },
       {
         "name": "Interfejsy",
@@ -599,7 +615,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Oprogramowanie",
-        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook, P-touch Editor Lite (wbudowany, Windows), Brother iPrint&Label (iOS, Android)"
+        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook (Windows), P-touch Editor Lite (wbudowany, Windows), Brother iPrint&Label (iOS, Android)"
       },
       {
         "name": "SDK",
@@ -672,7 +688,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-820NWBc",
     "seoDescription": "Brother QL-820NWBc: drukarka etykiet DK 12–62 mm, USB, LAN, Wi-Fi, Bluetooth 5.2, LCD, druk czarno-czerwony, 176 mm/s, druk bez komputera.",
     "shortDescription": "Sieciowa drukarka etykiet z USB, Ethernet, Wi-Fi i Bluetooth 5.2, wyświetlaczem LCD i drukiem czarno-czerwonym. Drukuje szablony z pamięci bez komputera. Rolki DK 12–62 mm, do 176 mm/s.",
-    "description": "Brother QL-820NWBc łączy się przez USB 2.0, Ethernet 10/100BASE-TX, Wi-Fi (IEEE 802.11b/g/n, Wireless Direct) i Bluetooth 5.2. Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem. Obsługuje AirPrint i aplikację Brother iPrint&Label, ma certyfikat MFi.\n\nPodświetlany graficzny wyświetlacz LCD 320 × 120 punktów i panel przycisków służą do konfiguracji i druku bez komputera. W pamięci 6 MB drukarka przechowuje do 255 szablonów zaprojektowanych w P-touch Editor. Szablony mogą się aktualizować automatycznie z serwera FTP.\n\nW druku czarnym drukarka osiąga 176 mm/s, czyli 110 standardowych etykiet adresowych na minutę. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym z prędkością 24 mm/s. Rozdzielczość wynosi 300 × 300 dpi, w trybie wysokiej rozdzielczości 300 × 600 dpi. Obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m.\n\nDo integracji z systemami służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows (b-PAC), iOS i Androida. P-touch Editor dla Windows i macOS ma dodatek do Word, Excel i Outlook. Z opcjonalną bazą akumulatorową PA-BU-001 drukarka drukuje do 4300 etykiet czarnych na jednym ładowaniu.\n\nWersja QL-820NWBcVM (QL820NWBCVMXX1) to zestaw do druku identyfikatorów gości i uczestników wydarzeń. Zawiera drukarkę i trzy rolki DK-N55224 z nieprzylepną taśmą papierową 54 mm × 30,48 m, na około 1000 identyfikatorów. Wersja QL820NWBCZG1 ma rolki startowe DK-11201 (100 etykiet) i DK-22251 (5 m).",
+    "description": "Brother QL-820NWBc łączy się przez USB 2.0, Ethernet 10/100BASE-TX, Wi-Fi (IEEE 802.11b/g/n, Wireless Direct) i Bluetooth 5.2. Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem. Obsługuje AirPrint i aplikację Brother iPrint&Label, ma certyfikat MFi.\n\nPodświetlany graficzny wyświetlacz LCD 320 × 120 punktów i panel przycisków służą do konfiguracji i druku bez komputera. W pamięci 6 MB drukarka przechowuje do 255 szablonów zaprojektowanych w P-touch Editor. Szablony mogą się aktualizować automatycznie z serwera FTP.\n\nW druku czarnym drukarka osiąga 176 mm/s, czyli 110 standardowych etykiet adresowych na minutę. Na rolce DK-22251 drukuje w kolorze czarnym i czerwonym z prędkością 24 mm/s. Rozdzielczość wynosi 300 × 300 dpi, w trybie wysokiej rozdzielczości 300 × 600 dpi. Obcinarka odcina etykiety z taśmy ciągłej o długości od 12,7 mm do 1 m.\n\nDo integracji z systemami służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows (b-PAC), iOS i Androida. P-touch Editor działa w systemach Windows i macOS. Wersja dla Windows ma dodatek do Word, Excel i Outlook. Z opcjonalną bazą akumulatorową PA-BU-001 drukarka drukuje do 4300 etykiet czarnych na jednym ładowaniu.\n\nWersja QL-820NWBcVM (QL820NWBCVMXX1) to zestaw do druku identyfikatorów gości i uczestników wydarzeń. Zawiera drukarkę i trzy rolki DK-N55224 z nieprzylepną taśmą papierową 54 mm × 30,48 m, na około 1000 identyfikatorów. Wersja QL820NWBCZG1 ma rolki startowe DK-11201 (100 etykiet) i DK-22251 (5 m).",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -726,7 +742,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Maks. szerokość druku",
-        "value": "58 mm"
+        "value": "60,96 mm"
       },
       {
         "name": "Długość etykiety",
@@ -743,6 +759,10 @@ export const brotherQlProducts: Product[] = [
       {
         "name": "Nośniki",
         "value": "rolki DK: taśma ciągła i etykiety wycinane"
+      },
+      {
+        "name": "Materiały DK",
+        "value": "etykiety wycinane: DK-11201 (29 × 90 mm), DK-11208 (38 × 90 mm), DK-11209 (29 × 62 mm), DK-11202 (62 × 100 mm), DK-11203 (17 × 87 mm), DK-11204 (17 × 54 mm), DK-11221 (23 × 23 mm), DK-11207 (Ø 58 mm, folia), DK-11219 (Ø 12 mm), DK-11218 (Ø 24 mm), DK-11234 (60 × 86 mm); taśmy ciągłe papierowe (30,48 m): DK-22214 (12 mm), DK-22210 (29 mm), DK-22225 (38 mm), DK-22223 (50 mm), DK-N55224 (54 mm, nieprzylepna), DK-22205 (62 mm), DK-44205 (62 mm, klej usuwalny), DK-44605 (62 mm, żółta, klej usuwalny); taśmy ciągłe foliowe (15,24 m): DK-22211 (29 mm), DK-22212 (62 mm), DK-22606 (62 mm, żółta), DK-22113 (62 mm, przezroczysta); taśma do druku czarno-czerwonego: DK-22251 (62 mm, 15,24 m)"
       },
       {
         "name": "Interfejsy",
@@ -802,7 +822,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Oprogramowanie",
-        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook, Brother iPrint&Label (iOS, Android)"
+        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook (Windows), Brother iPrint&Label (iOS, Android)"
       },
       {
         "name": "SDK",
@@ -889,7 +909,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-1100c",
     "seoDescription": "Brother QL-1100c: drukarka etykiet DK do 103,6 mm, 110 mm/s, 300 dpi, USB, etykiety wysyłkowe 102 × 152 mm, druk etykiet FBA z PDF.",
     "shortDescription": "Drukarka etykiet z USB do rolek DK o szerokości do 103,6 mm (druk 101,6 mm). Etykiety wysyłkowe 102 × 152 mm i 103 × 164 mm, do 110 mm/s, długość do 3 m, druk etykiet FBA z pliku PDF.",
-    "description": "Brother QL-1100c to drukarka etykiet z głowicą o szerokości 101,6 mm (4 cale), podłączana przez USB do komputera PC lub Mac. Drukuje papierowe etykiety samoprzylepne na paczki, koperty i przesyłki pocztowe. Szerokość 4 cali odpowiada etykietom z programów wysyłkowych kurierów i przewoźników.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 103,6 mm. Obejmuje to etykiety wysyłkowe 102 × 152 mm (DK-11241) i 103 × 164 mm (DK-11247) oraz taśmy ciągłe 102 i 103 mm. W zestawie jest 41 etykiet DK-11247 i 8,1 m taśmy ciągłej DK-22205 o szerokości 62 mm.\n\nDrukarka drukuje do 110 mm/s, czyli 69 standardowych etykiet adresowych na minutę, w rozdzielczości 300 × 300 dpi. Etykieta z taśmy ciągłej może mieć od 25,4 mm do 3 m przy druku z Windows lub macOS. Automatyczna obcinarka odcina pojedyncze etykiety albo całą serię.\n\nFunkcja wydruku z przycięciem (tylko Windows) wyodrębnia etykiety z kodami kreskowymi z pliku PDF lub arkusza A4 i drukuje je pojedynczo. W ten sposób powstają etykiety zgodne z wymaganiami usługi Amazon FBA (Fulfilled by Amazon). Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows.\n\nEtykiety projektuje się w P-touch Editor dla Windows i macOS albo we wbudowanym P-touch Editor Lite. Na Androidzie drukuje aplikacja iPrint&Label przez kabel USB. Model QL-1110NWBc o tej samej szerokości druku dodaje Wi-Fi, Bluetooth i Ethernet.",
+    "description": "Brother QL-1100c to drukarka etykiet z głowicą o szerokości 101,6 mm (4 cale), podłączana przez USB do komputera PC lub Mac. Drukuje papierowe etykiety samoprzylepne na paczki, koperty i przesyłki pocztowe. Szerokość 4 cali odpowiada etykietom z programów wysyłkowych kurierów i przewoźników.\n\nDrukarka przyjmuje rolki DK o szerokości od 12 do 103,6 mm. Obejmuje to etykiety wysyłkowe 102 × 152 mm (DK-11241) i 103 × 164 mm (DK-11247) oraz taśmy ciągłe 102 i 103 mm. W zestawie jest 41 etykiet DK-11247 i 8,1 m taśmy ciągłej DK-22205 o szerokości 62 mm.\n\nDrukarka drukuje do 110 mm/s, czyli 69 standardowych etykiet adresowych na minutę, w rozdzielczości 300 × 300 dpi. Etykieta z taśmy ciągłej może mieć od 25,4 mm do 3 m przy druku z Windows lub macOS. Drukarka ma automatyczną obcinarkę. Drukuje jedną etykietę albo wiele etykiet naraz.\n\nFunkcja wydruku z przycięciem (tylko Windows) wyodrębnia etykiety z kodami kreskowymi z pliku PDF lub arkusza A4 i drukuje je pojedynczo. W ten sposób powstają etykiety zgodne z wymaganiami usługi Amazon FBA (Fulfilled by Amazon). Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows.\n\nEtykiety projektuje się w P-touch Editor dla Windows i macOS albo w P-touch Editor Lite dla Windows. Na Androidzie drukuje aplikacja iPrint&Label przez kabel USB. Model QL-1110NWBc o tej samej szerokości druku dodaje Wi-Fi, Bluetooth i Ethernet.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -980,7 +1000,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Oprogramowanie",
-        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook, P-touch Editor Lite (wbudowany, Windows), Brother iPrint&Label (tylko Android, przez kabel USB)"
+        "value": "P-touch Editor (Windows, macOS), dodatek do Microsoft Word, Excel i Outlook, P-touch Editor Lite (Windows), Brother iPrint&Label (tylko Android, przez kabel USB)"
       },
       {
         "name": "SDK",
@@ -1008,7 +1028,7 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Kody kreskowe (P-touch Editor)",
-        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13, EAN-8, ISBN-2, ISBN-5, Laser Barcode, POSTNET, RSS (GS1 DataBar), Aztec Code, PDF417, QR Code, Data Matrix, MaxiCode, IMB"
+        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13, EAN-8, ISBN-2, ISBN-5, Laser Barcode, POSTNET, RSS (GS1 DataBar), Aztec Code (tylko Windows), PDF417, QR Code, Data Matrix, MaxiCode, IMB"
       },
       {
         "name": "Zawartość opakowania",
@@ -1053,7 +1073,7 @@ export const brotherQlProducts: Product[] = [
     "seoTitle": "Brother QL-1110NWBc",
     "seoDescription": "Brother QL-1110NWBc: drukarka etykiet DK do 103,6 mm, USB, LAN, Wi-Fi, Bluetooth 5.2, AirPrint, 110 mm/s, etykiety 102 × 152 mm, FBA z PDF.",
     "shortDescription": "Sieciowa drukarka etykiet do rolek DK o szerokości do 103,6 mm (druk 101,6 mm): USB, Ethernet, Wi-Fi i Bluetooth 5.2, AirPrint i MFi. Etykiety wysyłkowe 102 × 152 mm, do 110 mm/s, druk etykiet FBA z PDF.",
-    "description": "Brother QL-1110NWBc to drukarka etykiet z głowicą o szerokości 101,6 mm (4 cale) i czterema interfejsami. Łączy się przez USB 2.0, Ethernet 10/100BASE-TX, Wi-Fi (IEEE 802.11b/g/n, Wireless Direct) i Bluetooth 5.2. Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem.\n\nDrukarka obsługuje AirPrint (iOS i macOS) i ma certyfikat MFi. Na smartfonach i tabletach działa aplikacja Brother iPrint&Label. Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows, iOS i Androida.\n\nQL-1110NWBc przyjmuje rolki DK o szerokości od 12 do 103,6 mm. Obejmuje to etykiety wysyłkowe 102 × 152 mm (DK-11241) i 103 × 164 mm (DK-11247). Drukuje do 110 mm/s, czyli 69 standardowych etykiet adresowych na minutę, w rozdzielczości 300 × 300 dpi. Etykieta z taśmy ciągłej może mieć do 3 m przy druku z Windows lub macOS.\n\nFunkcja wydruku z przycięciem (tylko Windows) wyodrębnia etykiety z kodami kreskowymi z pliku PDF lub arkusza A4 i drukuje je pojedynczo. Etykiety z kodami kreskowymi spełniają wymagania usługi Amazon FBA (Fulfilled by Amazon). Szablony etykiet można wgrywać do drukarki przez FTP.\n\nOd modelu QL-1100c różni się interfejsami Ethernet, Wi-Fi i Bluetooth oraz zestawami SDK dla iOS i Androida. Szerokość druku, prędkość i obsługiwane rolki DK są w obu modelach takie same. W zestawie jest 41 etykiet DK-11247 i 8,1 m taśmy ciągłej DK-22205 o szerokości 62 mm.",
+    "description": "Brother QL-1110NWBc to drukarka etykiet o szerokości druku 101,6 mm (4 cale) z czterema interfejsami. Łączy się przez USB 2.0, Ethernet 10/100BASE-TX, Wi-Fi (IEEE 802.11b/g/n, Wireless Direct) i Bluetooth 5.2. Drukuje z komputerów PC i Mac oraz ze smartfonów i tabletów z iOS lub Androidem.\n\nDrukarka obsługuje AirPrint (iOS i macOS) i ma certyfikat MFi. Na smartfonach i tabletach działa aplikacja Brother iPrint&Label. Do integracji służą polecenia ESC/P, P-touch Template i Raster oraz SDK dla Windows, iOS i Androida.\n\nQL-1110NWBc przyjmuje rolki DK o szerokości od 12 do 103,6 mm. Obejmuje to etykiety wysyłkowe 102 × 152 mm (DK-11241) i 103 × 164 mm (DK-11247). Drukuje do 110 mm/s, czyli 69 standardowych etykiet adresowych na minutę, w rozdzielczości 300 × 300 dpi. Etykieta z taśmy ciągłej może mieć do 3 m przy druku z Windows lub macOS.\n\nFunkcja wydruku z przycięciem (tylko Windows) wyodrębnia etykiety z kodami kreskowymi z pliku PDF lub arkusza A4 i drukuje je pojedynczo. Etykiety z kodami kreskowymi spełniają wymagania usługi Amazon FBA (Fulfilled by Amazon). Szablony etykiet można wgrywać do drukarki przez FTP.\n\nOd modelu QL-1100c różni się interfejsami Ethernet, Wi-Fi i Bluetooth oraz zestawami SDK dla iOS i Androida. Szerokość druku, prędkość i obsługiwane rolki DK są w obu modelach takie same. W zestawie jest 41 etykiet DK-11247 i 8,1 m taśmy ciągłej DK-22205 o szerokości 62 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "biurkowe-drukarki-etykiet",
@@ -1176,11 +1196,11 @@ export const brotherQlProducts: Product[] = [
       },
       {
         "name": "Kody kreskowe wbudowane w drukarkę",
-        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13 (JAN13), EAN-8, GS1 DataBar (RSS), PDF417, QR Code, Data Matrix, MaxiCode, CODE93, POSTNET, UPC-E Extension"
+        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13 (JAN13), EAN-8, GS1 DataBar (RSS), PDF417, QR Code, Data Matrix, MaxiCode, CODE93, POSTNET, UPC-E Extension, MSI, Aztec"
       },
       {
         "name": "Kody kreskowe (P-touch Editor)",
-        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13, EAN-8, ISBN-2, ISBN-5, Laser Barcode, POSTNET, RSS (GS1 DataBar), Aztec Code, PDF417, QR Code, Data Matrix, MaxiCode, IMB"
+        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13, EAN-8, ISBN-2, ISBN-5, Laser Barcode, POSTNET, RSS (GS1 DataBar), Aztec Code (tylko Windows), PDF417, QR Code, Data Matrix, MaxiCode, IMB"
       },
       {
         "name": "Zawartość opakowania",
@@ -1228,7 +1248,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-H105",
     "seoDescription": "Brother P-touch PT-H105 — ręczna etykieciarka na taśmy TZe 3,5–12 mm, klawiatura ABC, 180 dpi, 20 mm/s, zasilanie z 6 baterii AAA lub zasilacza.",
     "shortDescription": "Ręczna etykieciarka na taśmy TZe o szerokości od 3,5 do 12 mm. Ma klawiaturę w układzie alfabetycznym ABC, wyświetlacz na 12 znaków, ręczną obcinarkę i zasilanie z 6 baterii AAA.",
-    "description": "Brother P-touch PT-H105 to ręczna etykieciarka na laminowane taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Głowica 180 dpi drukuje z prędkością do 20 mm/s. Wysokość nadruku wynosi do 9 mm, a etykieta mieści 2 wiersze tekstu.\n\nLitery na klawiaturze ułożono alfabetycznie, w układzie ABC. Klawiatura ma 54 klawisze. Wyświetlacz LCD pokazuje 12 znaków w jednym wierszu oraz podgląd tekstu i długości etykiety. Menu obsługuje 20 języków, w tym polski.\n\nEtykieciarka ma jedną czcionkę w 3 rozmiarach i 3 szerokościach, 8 stylów tekstu, 7 ramek i 178 symboli. Tryb Deco oferuje 12 wzorów etykiet dekoracyjnych, a funkcja Auto-Design — 9 gotowych układów. Funkcja etykiet na kable drukuje etykiety typu flaga. Pamięć przechowuje 9 etykiet do ponownego wydruku.\n\nZasilanie pochodzi z 6 baterii alkalicznych AAA (LR03) albo z zasilacza sieciowego AD-24ES. Baterie i zasilacz nie wchodzą w skład zestawu. Ręczna obcinarka odcina etykietę po wydruku. Urządzenie waży 390 g i nie łączy się z komputerem ani ze smartfonem.\n\nEtykiety z PT-H105 oznaczają segregatory, półki, szafy, kable, wtyczki, płyty CD i identyfikatory. W porównaniu z PT-H110 model PT-H105 nie numeruje etykiet i nie drukuje w odbiciu lustrzanym. PT-H110 ma 3 czcionki i pamięć 15 etykiet. Oba modele drukują na taśmach TZe do 12 mm.",
+    "description": "Brother P-touch PT-H105 to ręczna etykieciarka na laminowane taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Głowica 180 dpi drukuje z prędkością do 20 mm/s. Wysokość nadruku wynosi do 9 mm, a etykieta mieści 2 wiersze tekstu.\n\nLitery na klawiaturze ułożono alfabetycznie, w układzie ABC. Klawiatura ma 54 klawisze. Wyświetlacz LCD pokazuje 12 znaków w jednym wierszu oraz podgląd tekstu i długości etykiety. Menu obsługuje 20 języków, w tym polski.\n\nEtykieciarka ma jedną czcionkę w 3 rozmiarach i 3 szerokościach, 8 stylów tekstu, 7 ramek i 178 symboli. Tryb Deco oferuje 12 wzorów etykiet dekoracyjnych, a funkcja Auto-Design — 9 gotowych układów. Funkcja etykiet na kable drukuje etykiety typu flaga. Pamięć mieści 9 etykiet, łącznie do 720 znaków.\n\nZasilanie pochodzi z 6 baterii alkalicznych AAA (LR03) albo z zasilacza sieciowego AD-24ES. Baterie i zasilacz nie wchodzą w skład zestawu. Ręczna obcinarka odcina etykietę po wydruku. Urządzenie waży 390 g i nie łączy się z komputerem ani ze smartfonem.\n\nEtykiety z PT-H105 oznaczają segregatory, półki, szafy, kable, wtyczki, płyty CD i identyfikatory. W porównaniu z PT-H110 model PT-H105 nie numeruje etykiet i nie drukuje w odbiciu lustrzanym. PT-H110 ma 3 czcionki i pamięć 15 etykiet. Oba modele drukują na taśmach TZe do 12 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -1304,6 +1324,10 @@ export const brotherPtouchProducts: Product[] = [
         "value": "tak (flaga)"
       },
       {
+        "name": "Funkcje druku",
+        "value": "kopie 1–9, druk pionowy, podkreślenie; bez numerowania i bez druku lustrzanego"
+      },
+      {
         "name": "Pamięć etykiet",
         "value": "9 lokalizacji (720 znaków)"
       },
@@ -1322,6 +1346,10 @@ export const brotherPtouchProducts: Product[] = [
       {
         "name": "Zasilanie",
         "value": "6 × AAA (LR03, alkaliczne) lub zasilacz sieciowy AD-24ES (oba poza zestawem)"
+      },
+      {
+        "name": "Automatyczne wyłączanie",
+        "value": "tak"
       },
       {
         "name": "Obcinarka",
@@ -1455,10 +1483,6 @@ export const brotherPtouchProducts: Product[] = [
         "value": "graficzny LCD, 1 wiersz × 16 znaków, 58 × 23 mm"
       },
       {
-        "name": "Łączność",
-        "value": "brak (praca samodzielna)"
-      },
-      {
         "name": "Zasilanie",
         "value": "6 × AAA (LR03 alkaliczne lub HR03 Ni-MH) lub zasilacz sieciowy AD-24ES (poza zestawem)"
       },
@@ -1503,7 +1527,7 @@ export const brotherPtouchProducts: Product[] = [
         "name": "Karta katalogowa (EN)",
         "type": "datasheet",
         "url": "/downloads/brother-pt-h110-karta-katalogowa.pdf",
-        "size": "1,0 MB"
+        "size": "2,9 MB"
       }
     ],
     "sameAs": "https://store.brother.pl/devices/label-printer/p-touch/pt/pth110",
@@ -1517,7 +1541,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-H500",
     "seoDescription": "Brother P-touch PT-H500 — etykieciarka na taśmy TZe 3,5–24 mm, USB 2.0, podświetlany wyświetlacz, automatyczna obcinarka, do 30 mm/s.",
     "shortDescription": "Ręczna etykieciarka na taśmy TZe od 3,5 do 24 mm z automatyczną obcinarką i podświetlanym wyświetlaczem. Pracuje samodzielnie albo z komputerem przez USB. Zasilanie z baterii AA, akumulatora lub zasilacza.",
-    "description": "Brother P-touch PT-H500 to ręczna etykieciarka na taśmy TZe o szerokości 3,5, 6, 9, 12, 18 i 24 mm. Wysokość nadruku sięga 18 mm. Na taśmie 24 mm etykieta mieści do 7 wierszy, a na taśmie 12 mm — do 3 wierszy.\n\nPodświetlany graficzny wyświetlacz LCD pokazuje podgląd etykiety przed wydrukiem. Klawiatura ma 70 klawiszy. Automatyczna obcinarka odcina etykietę po wydruku. Głowica 180 dpi drukuje do 30 mm/s z zasilacza i do 20 mm/s na bateriach.\n\nBez komputera etykieciarka oferuje 14 czcionek, 99 ramek, 618 symboli i 9 rodzajów kodów kreskowych. Ma 18 szablonów, 24 układy blokowe, numerowanie i funkcję oznaczania kabli. Pamięć przechowuje 50 etykiet po 280 znaków.\n\nPrzez port USB 2.0 etykieciarka współpracuje z komputerem z systemem Windows lub Mac. W programie Brother P-touch Editor etykieta może zawierać czcionki TrueType, obrazy JPG, BMP i TIFF oraz 21 rodzajów kodów, także 2D. Program pobiera dane z plików Excel, Access, CSV i TXT.\n\nZasilanie pochodzi z 6 baterii AA (alkalicznych LR6 lub Ni-MH HR6), z akumulatora litowo-jonowego BA-E001 albo z zasilacza sieciowego AD-E001. Akumulator i zasilacz są opcjonalne. W porównaniu z PT-H110 model PT-H500 obsługuje taśmy 18 i 24 mm, ma automatyczną obcinarkę i port USB. Waży 830 g.",
+    "description": "Brother P-touch PT-H500 to ręczna etykieciarka na taśmy TZe o szerokości 3,5, 6, 9, 12, 18 i 24 mm. Wysokość nadruku sięga 18 mm. Na taśmie 24 mm etykieta mieści do 7 wierszy, a na taśmie 12 mm — do 3 wierszy.\n\nPodświetlany graficzny wyświetlacz LCD pokazuje podgląd etykiety przed wydrukiem. Klawiatura ma 70 klawiszy. Automatyczna obcinarka odcina etykietę po wydruku. Głowica 180 dpi drukuje do 30 mm/s z zasilacza i do 20 mm/s na bateriach.\n\nBez komputera etykieciarka oferuje 14 czcionek, 99 ramek, 618 symboli i 9 rodzajów kodów kreskowych. Ma 18 szablonów, 24 układy blokowe, numerowanie i funkcję oznaczania kabli. Pamięć mieści 50 etykiet i łącznie do 2800 znaków. Jedna etykieta ma do 280 znaków.\n\nPrzez port USB 2.0 etykieciarka współpracuje z komputerem z systemem Windows lub Mac. W programie Brother P-touch Editor etykieta może zawierać czcionki TrueType, obrazy JPG, BMP i TIFF oraz 21 rodzajów kodów, także 2D. Program pobiera dane z plików Excel, Access, CSV i TXT.\n\nZasilanie pochodzi z 6 baterii AA (alkalicznych LR6 lub Ni-MH HR6), z akumulatora litowo-jonowego BA-E001 albo z zasilacza sieciowego AD-E001. Akumulator i zasilacz są opcjonalne. W porównaniu z PT-H110 model PT-H500 obsługuje taśmy 18 i 24 mm, ma automatyczną obcinarkę i port USB. Waży 830 g.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -1583,8 +1607,16 @@ export const brotherPtouchProducts: Product[] = [
         "value": "9 protokołów (urządzenie); 21 protokołów 1D/2D (P-touch Editor)"
       },
       {
+        "name": "Funkcje druku",
+        "value": "numerowanie do 99, kopie do 99, druk pionowy, druk obrócony, do 5 bloków tekstu, etykiety na kable"
+      },
+      {
+        "name": "Szablony",
+        "value": "18 szablonów, 24 układy blokowe"
+      },
+      {
         "name": "Pamięć etykiet",
-        "value": "50 etykiet, do 280 znaków na etykietę"
+        "value": "50 etykiet, do 280 znaków na etykietę, łącznie do 2800 znaków"
       },
       {
         "name": "Klawiatura",
@@ -1654,9 +1686,9 @@ export const brotherPtouchProducts: Product[] = [
     "slug": "brother-pt-d200bw",
     "name": "Brother P-touch PT-D200BW",
     "seoTitle": "Brother P-touch PT-D200BW",
-    "seoDescription": "Brother P-touch PT-D200BW — biurkowa etykieciarka na taśmy TZe 3,5–12 mm, 14 czcionek, tryb Deco, pamięć 30 etykiet.",
-    "shortDescription": "Biurkowa etykieciarka na taśmy TZe od 3,5 do 12 mm z klawiaturą. Ma 14 czcionek, 617 symboli, 97 ramek, tryb Deco i pamięć 30 etykiet. Wersja VP ma zasilacz i walizkę.",
-    "description": "Brother P-touch PT-D200BW to biurkowa etykieciarka na laminowane taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Głowica 180 dpi drukuje z prędkością do 20 mm/s. Wysokość nadruku sięga 9 mm, a etykieta mieści 2 wiersze. Obudowa ma kolorystykę czarno-białą.\n\nKlawiatura ma 61 klawiszy w układzie. Graficzny wyświetlacz o wymiarach 70 × 17 mm pokazuje 15 znaków oraz podgląd tekstu i długości etykiety. Menu obsługuje 20 języków, w tym polski.\n\nDo edycji służy 14 czcionek, 9 stylów, 3 rozmiary i 3 szerokości znaków, 617 symboli i 97 ramek. Tryb Deco drukuje 12 wzorów etykiet dekoracyjnych, a 6 szablonów służy do identyfikatorów. Etykieciarka numeruje etykiety, drukuje do 9 kopii, tekst w pionie i w odbiciu lustrzanym.\n\nPamięć przechowuje 30 etykiet po 80 znaków. Długość etykiety można ustawić w zakresie 30–300 mm. Ręczna obcinarka odcina etykietę po wydruku. Zasilanie pochodzi z 6 baterii alkalicznych AAA (LR03) albo z zasilacza sieciowego AD-24ES.\n\nW wersji PT-D200BW baterie i zasilacz nie wchodzą w skład zestawu. Wersja PT-D200BWVP zawiera zasilacz AD-24ES i twardą walizkę na urządzenie. Etykiety oznaczają segregatory, szafy, półki, kable, płyty CD i identyfikatory. Model PT-D210 ma 27 szablonów i etykiety wzorzyste o długości do 999 mm.",
+    "seoDescription": "Brother P-touch PT-D200BW — kompaktowa etykieciarka na taśmy TZe 3,5–12 mm, 14 czcionek, tryb Deco, pamięć 30 etykiet.",
+    "shortDescription": "Kompaktowa etykieciarka na taśmy TZe od 3,5 do 12 mm z klawiaturą. Ma 14 czcionek, 617 symboli, 97 ramek, tryb Deco i pamięć 30 etykiet. Wersja VP ma zasilacz i walizkę.",
+    "description": "Brother P-touch PT-D200BW to kompaktowa etykieciarka na laminowane taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Głowica 180 dpi drukuje z prędkością do 20 mm/s. Wysokość nadruku sięga 9 mm, a etykieta mieści 2 wiersze. Obudowa ma kolorystykę czarno-białą.\n\nKlawiatura ma 61 klawiszy. Graficzny wyświetlacz o wymiarach 70 × 17 mm pokazuje 15 znaków oraz podgląd tekstu i długości etykiety. Menu obsługuje 20 języków, w tym polski.\n\nDo edycji służy 14 czcionek, 9 stylów, 3 rozmiary i 3 szerokości znaków, 617 symboli i 97 ramek. Tryb Deco drukuje 12 wzorów etykiet dekoracyjnych, a 6 szablonów służy do identyfikatorów. Etykieciarka numeruje etykiety, drukuje do 9 kopii, tekst w pionie i w odbiciu lustrzanym.\n\nPamięć przechowuje 30 etykiet po 80 znaków. Długość etykiety można ustawić w zakresie 30–300 mm. Ręczna obcinarka odcina etykietę po wydruku. Zasilanie pochodzi z 6 baterii alkalicznych AAA (LR03) albo z zasilacza sieciowego AD-24ES.\n\nW wersji PT-D200BW baterie i zasilacz nie wchodzą w skład zestawu. Wersja PT-D200BWVP zawiera zasilacz AD-24ES i twardą walizkę na urządzenie. Etykiety oznaczają segregatory, szafy, półki, kable, płyty CD i identyfikatory. Model PT-D210 ma 27 szablonów i etykiety wzorzyste o długości do 999 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -1687,7 +1719,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Typ urządzenia",
-        "value": "biurkowa etykieciarka"
+        "value": "kompaktowa etykieciarka z klawiaturą"
       },
       {
         "name": "Technologia druku",
@@ -1963,10 +1995,10 @@ export const brotherPtouchProducts: Product[] = [
     ],
     "downloads": [
       {
-        "name": "Karta katalogowa (DE)",
+        "name": "Karta katalogowa PT-D210VP (EN)",
         "type": "datasheet",
         "url": "/downloads/brother-pt-d210-karta-katalogowa.pdf",
-        "size": "5,6 MB"
+        "size": "15,5 MB"
       }
     ],
     "sameAs": "https://store.brother.pl/devices/label-printer/p-touch/pt/ptd210",
@@ -1980,7 +2012,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-D410",
     "seoDescription": "Brother P-touch PT-D410: drukarka etykiet z klawiaturą, taśmy TZe 3,5–18 mm, 180 dpi, 20 mm/s, USB i P-touch Editor. Wersja VP z zasilaczem.",
     "shortDescription": "Biurkowa drukarka etykiet z klawiaturą i graficznym wyświetlaczem LCD. Drukuje na taśmach TZe od 3,5 do 18 mm z prędkością do 20 mm/s, a przez USB współpracuje z programem P-touch Editor.",
-    "description": "PT-D410 to biurkowa drukarka etykiet do domowego biura i małej firmy. Etykiety powstają bez komputera, z klawiatury z 65 gumowymi klawiszami. Graficzny wyświetlacz LCD 128 × 48 punktów pokazuje 2 wiersze po 16 znaków i podgląd etykiety przed wydrukiem.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12 i 18 mm. Druk termotransferowy ma rozdzielczość 180 dpi i prędkość do 20 mm/s. Wysokość wydruku sięga 15,8 mm, a na taśmie 18 mm mieści się do 5 wierszy. Etykietę odcina wbudowany obcinak ręczny.\n\nWbudowany edytor ma 15 czcionek, 120 ramek, 700 symboli i 30 gotowych układów etykiet. Osobny tryb przygotowuje etykiety do oznaczania kabli. Drukarka tworzy 9 rodzajów kodów kreskowych, w tym EAN-13, CODE128 i GS1-128. W pamięci zostaje do 50 etykiet po 280 znaków.\n\nPT-D410 łączy się z komputerem tylko przez USB — nie ma modułu Bluetooth ani Wi-Fi. Po podłączeniu do komputera z systemem Windows lub macOS etykiety projektuje się w programie P-touch Editor. Program dodaje do etykiet logo, symbole i kody kreskowe.\n\nDrukarkę zasila 6 baterii AA, alkalicznych lub Ni-MH, albo zasilacz sieciowy AD-E001A. Baterii nie ma w zestawie. Wersja PT-D410VP ma w zestawie zasilacz, walizkę, kabel USB i taśmę TZe 18 mm o długości 4 m.",
+    "description": "PT-D410 to biurkowa drukarka etykiet do domowego biura i małej firmy. Etykiety powstają bez komputera, z klawiatury z 65 gumowymi klawiszami. Graficzny wyświetlacz LCD 128 × 48 punktów pokazuje 2 wiersze po 16 znaków i podgląd etykiety przed wydrukiem.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12 i 18 mm. Druk termotransferowy ma rozdzielczość 180 dpi i prędkość do 20 mm/s. Wysokość wydruku sięga 15,8 mm, a na taśmie 18 mm mieści się do 5 wierszy. Etykietę odcina wbudowany obcinak ręczny.\n\nWbudowany edytor ma 15 czcionek, 120 ramek, 700 symboli i 30 gotowych układów etykiet. W trybie automatycznego formatowania drukarka przygotowuje też etykiety do oznaczania kabli. Drukarka tworzy 9 rodzajów kodów kreskowych, w tym EAN-13, CODE128 i GS1-128. W pamięci zostaje do 50 etykiet po 280 znaków.\n\nPT-D410 łączy się z komputerem tylko przez USB — nie ma modułu Bluetooth ani Wi-Fi. Po podłączeniu do komputera z systemem Windows lub macOS etykiety projektuje się w programie P-touch Editor. Program dodaje do etykiet logo, symbole i kody kreskowe.\n\nDrukarkę zasila 6 baterii alkalicznych AA (LR6) albo zasilacz sieciowy AD-E001A. Baterii nie ma w zestawie. Wersja PT-D410VP ma w zestawie zasilacz, walizkę, kabel USB i taśmę TZe 18 mm o długości 4 m.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -2045,7 +2077,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Wyświetlacz",
-        "value": "LCD graficzny 128 × 48 punktów, 16 znaków × 2 wiersze, podgląd wydruku"
+        "value": "LCD graficzny 128 × 48 punktów, 58 × 21 mm, 16 znaków × 2 wiersze, podgląd wydruku"
       },
       {
         "name": "Interfejs",
@@ -2065,7 +2097,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Szablony",
-        "value": "30 gotowych układów, tryb oznaczania kabli"
+        "value": "30 gotowych układów; oznaczanie kabli w trybie automatycznego formatowania"
       },
       {
         "name": "Pamięć etykiet",
@@ -2081,7 +2113,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "6 × AA (LR6 lub Ni-MH, brak w zestawie) lub zasilacz sieciowy AD-E001A"
+        "value": "6 × AA (alkaliczne LR6, brak w zestawie) lub zasilacz sieciowy AD-E001A"
       },
       {
         "name": "Automatyczne wyłączanie",
@@ -2216,7 +2248,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Wyświetlacz",
-        "value": "LCD graficzny 320 × 120 punktów, 20 znaków × 2 wiersze, podgląd wydruku"
+        "value": "LCD graficzny 320 × 120 punktów, 60 × 26 mm, 20 znaków × 2 wiersze, podgląd wydruku"
       },
       {
         "name": "Interfejsy",
@@ -2240,7 +2272,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Szablony",
-        "value": "30 gotowych układów, tryb oznaczania kabli"
+        "value": "30 gotowych układów; oznaczanie kabli w trybie automatycznego formatowania"
       },
       {
         "name": "Pamięć etykiet",
@@ -2256,7 +2288,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "zasilacz sieciowy AD-E001A (w zestawie) lub 6 × AA (LR6 lub Ni-MH, brak w zestawie)"
+        "value": "zasilacz sieciowy AD-E001A (w zestawie) lub 6 × AA (alkaliczne LR6, brak w zestawie)"
       },
       {
         "name": "Kolor obudowy",
@@ -2401,7 +2433,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Szablony",
-        "value": "175 gotowych układów, tryb oznaczania kabli"
+        "value": "175 gotowych układów; oznaczanie kabli w trybie automatycznego formatowania"
       },
       {
         "name": "Pamięć etykiet",
@@ -2417,7 +2449,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Zasilanie",
-        "value": "zasilacz sieciowy AD-E001A (w zestawie) lub 6 × AA (LR6 lub Ni-MH, brak w zestawie)"
+        "value": "zasilacz sieciowy AD-E001A (w zestawie) lub 6 × AA (alkaliczne LR6, brak w zestawie)"
       },
       {
         "name": "Kolor obudowy",
@@ -2472,8 +2504,8 @@ export const brotherPtouchProducts: Product[] = [
     "name": "Brother P-touch PT-E110",
     "seoTitle": "Brother P-touch PT-E110",
     "seoDescription": "Brother P-touch PT-E110: ręczna drukarka etykiet dla elektryków. Taśmy TZe do 12 mm, 180 dpi, blok numeryczny, zasilanie z baterii AAA lub zasilacza.",
-    "shortDescription": "Ręczna drukarka etykiet dla elektryków i instalatorów teletechnicznych, drukująca na taśmach TZe od 3,5 do 12 mm. Ma klawiaturę z osobnym blokiem numerycznym i klawisze szablonów kablowych.",
-    "description": "PT-E110 to ręczna drukarka etykiet do oznaczania instalacji elektrycznych i teletechnicznych. Opisuje gniazda, łączniki, płyty czołowe, kable, rury osłonowe i rozdzielnice. Obsługuje taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Szersze taśmy, do 18 i 24 mm, obsługują modele PT-E310BTVP i PT-E560BTVP.\n\nKlawiatura ma osobny blok numeryczny. Numery gniazd i łączników wpisuje się jednym palcem. Klawisze szablonów tworzą etykiety ogólne, etykiety na płyty czołowe, owijki kablowe i flagi kablowe. Funkcja numeracji drukuje serię etykiet z kolejnymi numerami, na przykład A001, A002, A003.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Etykieta mieści 2 wiersze tekstu, a wysokość druku sięga 9 mm. Graficzny wyświetlacz LCD pokazuje podgląd etykiety przed drukiem. Pamięć mieści 9 etykiet, łącznie do 720 znaków. Do wyboru jest 200 symboli, w tym elektryczne, teleinformatyczne i audio-wideo.\n\nPT-E110 pracuje samodzielnie, bez połączenia z komputerem. Zasilanie pochodzi z 6 baterii alkalicznych AAA albo z zasilacza sieciowego AD-24ES. Taśmę odcina ręczny obcinacz. Drukarka waży 0,4 kg i ma wymiary 111 × 58 × 204 mm.\n\nWersja PT-E110 zawiera kasetę z taśmą TZe 12 mm, czarny druk na białym tle, 4 m. Wersja PT-E110VP zawiera zasilacz sieciowy AD-24ES, twardą walizkę i taśmę TZe Flexi ID 9 mm, czarny druk na białym tle, 8 m.",
+    "shortDescription": "Ręczna drukarka etykiet dla elektryków i instalatorów teletechnicznych, drukująca na taśmach TZe od 3,5 do 12 mm. Ma klawiaturę z osobnym blokiem numerycznym i klawisze szablonów etykiet.",
+    "description": "PT-E110 to ręczna drukarka etykiet do oznaczania instalacji elektrycznych i teletechnicznych. Opisuje gniazda, łączniki, płyty czołowe, kable, rury osłonowe i rozdzielnice. Obsługuje taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Szersze taśmy, do 18 i 24 mm, obsługują modele PT-E310BTVP i PT-E560BTVP.\n\nKlawiatura ma układ komputerowy i osobny blok numeryczny. Numery gniazd i łączników wpisuje się jednym palcem. Klawisze szablonów tworzą etykiety ogólne, etykiety na płyty czołowe, owijki kablowe i flagi kablowe. Funkcja numeracji drukuje serię etykiet z kolejnymi numerami, na przykład A001, A002, A003.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Etykieta mieści 2 wiersze tekstu, a wysokość druku sięga 9 mm. Graficzny wyświetlacz LCD pokazuje podgląd etykiety przed drukiem. Pamięć mieści 9 etykiet, łącznie do 720 znaków. Do wyboru jest 200 symboli, w tym elektryczne, teleinformatyczne i audio-wideo.\n\nPT-E110 pracuje samodzielnie, bez połączenia z komputerem. Zasilanie pochodzi z 6 baterii alkalicznych AAA albo z zasilacza sieciowego AD-24ES. Taśmę odcina ręczny obcinacz. Drukarka waży 0,4 kg i ma wymiary 111 × 58 × 204 mm.\n\nWersja PT-E110 zawiera kasetę z taśmą TZe 12 mm, czarny druk na białym tle, 4 m. Wersja PT-E110VP zawiera zasilacz sieciowy, twardą walizkę i taśmę TZe Flexi ID 9 mm, czarny druk na białym tle, 8 m.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -2570,7 +2602,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Klawiatura",
-        "value": "osobny blok numeryczny"
+        "value": "układ komputerowy, osobny blok numeryczny"
       },
       {
         "name": "Wyświetlacz",
@@ -2642,7 +2674,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Akcesoria opcjonalne",
-        "value": "obcinacz TC-4, zasilacz sieciowy AD-24ES"
+        "value": "wymienne ostrze obcinacza TC-4, zasilacz sieciowy AD-24ES"
       }
     ],
     "applications": [],
@@ -2688,7 +2720,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-E310BTVP",
     "seoDescription": "Brother P-touch PT-E310BTVP: drukarka etykiet z Bluetooth, taśmy TZe do 18 mm, rurki HSe, akumulator Li-ion, aplikacja Pro Label Tool, walizka.",
     "shortDescription": "Ręczna drukarka etykiet z Bluetooth dla elektryków i instalatorów sieci. Drukuje na taśmach TZe do 18 mm i rurkach termokurczliwych HSe, ma akumulator Li-ion i walizkę w zestawie.",
-    "description": "PT-E310BTVP to ręczna drukarka etykiet do instalacji elektrycznych i teleinformatycznych. Oznacza kable, przewody, łączniki, gniazda, znaki ostrzegawcze, panele fotowoltaiczne i sprzęt AV. Obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12 i 18 mm. Model PT-E110 drukuje do 12 mm, a PT-E560BTVP do 24 mm.\n\nSześć klawiszy aplikacji otwiera szablony etykiet: ogólnych, na płyty czołowe, owijek kablowych, flag kablowych, paneli krosowych i łączówek. W menu są też tryby rurki termokurczliwej i zaawansowanej numeracji. Etykieta mieści do 5 wierszy tekstu. Do wyboru jest 476 symboli, 7 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7 i 17,7 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0 i 11,2 mm. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, ścieranie, chemikalia i skrajne temperatury.\n\nBluetooth 5.0 łączy drukarkę ze smartfonem lub tabletem z aplikacją Brother Pro Label Tool. Przez USB-C drukarka współpracuje z programem P-touch Editor na komputerze. Aplikacja iLink&Label przesyła identyfikatory kabli z projektu Fluke Networks LinkWare Live.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Ręczny obcinacz ma tryb pauzy przed cięciem, który ogranicza straty taśmy. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera akumulator, kabel USB-C, walizkę i taśmę TZe z mocnym klejem 18 mm.",
+    "description": "PT-E310BTVP to ręczna drukarka etykiet do instalacji elektrycznych i teleinformatycznych. Oznacza kable, przewody, łączniki, gniazda, znaki ostrzegawcze, panele fotowoltaiczne i sprzęt AV. Obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12 i 18 mm. Model PT-E110 obsługuje taśmy do 12 mm, a PT-E560BTVP do 24 mm.\n\nSześć klawiszy aplikacji otwiera szablony etykiet: ogólnych, na płyty czołowe, owijek kablowych, flag kablowych, paneli krosowych i łączówek. Drukarka ma też funkcje rurki termokurczliwej i zaawansowanej numeracji. Etykieta mieści do 5 wierszy tekstu. Do wyboru jest 476 symboli, 7 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7 i 17,7 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0 i 11,2 mm. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, ścieranie, chemikalia i skrajne temperatury.\n\nBluetooth 5.0 łączy drukarkę ze smartfonem lub tabletem z aplikacją Brother Pro Label Tool. Przez USB-C drukarka współpracuje z programem P-touch Editor na komputerze. Aplikacja iLink&Label przesyła identyfikatory kabli z projektu Fluke Networks LinkWare Live.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Ręczny obcinacz ma tryb pauzy przed cięciem, który ogranicza straty taśmy. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera akumulator, kabel USB-C, walizkę i taśmę TZe z mocnym klejem 18 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -2903,7 +2935,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-E560BTVP",
     "seoDescription": "Brother P-touch PT-E560BTVP: drukarka etykiet z Bluetooth, taśmy TZe do 24 mm, rurki HSe, obcinacz z nacinaniem, do 30 mm/s, akumulator Li-ion.",
     "shortDescription": "Ręczna drukarka etykiet z Bluetooth dla elektryków i instalatorów sieci. Drukuje na taśmach TZe do 24 mm i rurkach termokurczliwych HSe, ma automatyczny obcinacz z nacinaniem etykiet.",
-    "description": "PT-E560BTVP to ręczna drukarka etykiet do instalacji elektrycznych i sieciowych. Oznacza znaki ostrzegawcze, łączniki, przewody, rozdzielnice, łączówki, szafy i okablowanie CAT5E oraz CAT6A. Obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Na taśmie 24 mm etykieta mieści do 7 wierszy tekstu.\n\nAutomatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu. Nacięte etykiety wychodzą jednym paskiem i zachowują kolejność. Z zasilaczem USB-PD PA-AD-004 drukarka drukuje do 30 mm/s, a z akumulatora do 20 mm/s. Model PT-E310BTVP ma obcinacz ręczny i drukuje do 18 mm.\n\nKlawiatura ma 70 gumowych klawiszy, w tym 6 klawiszy szablonów etykiet: ogólnych, na płyty czołowe, owijek i flag kablowych, paneli krosowych i łączówek. Podświetlany wyświetlacz graficzny 240 × 120 punktów pokazuje podgląd etykiety. Do wyboru jest 476 symboli, 14 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0, 11,2 i 21,0 mm. W menu jest też tryb taśmy samolaminującej do owijania kabli.\n\nBluetooth 5.0 łączy drukarkę z aplikacją Brother Pro Label Tool na Androidzie i iOS. Przez USB-C drukarka współpracuje z programem P-touch Editor. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera kabel USB-C, walizkę, taśmę TZe Flexi ID 12 mm i taśmę TZe z mocnym klejem 24 mm.",
+    "description": "PT-E560BTVP to ręczna drukarka etykiet do instalacji elektrycznych i sieciowych. Oznacza znaki ostrzegawcze, łączniki, przewody, rozdzielnice, łączówki, szafy i okablowanie CAT5E oraz CAT6A. Obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Na taśmie 24 mm etykieta mieści do 7 wierszy tekstu.\n\nAutomatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu. Nacięte etykiety wychodzą jednym paskiem i zachowują kolejność. Z zasilaczem USB-PD PA-AD-004 drukarka drukuje do 30 mm/s, a z akumulatora do 20 mm/s. Model PT-E310BTVP ma obcinacz ręczny i obsługuje taśmy do 18 mm.\n\nKlawiatura ma 70 gumowych klawiszy, w tym 6 klawiszy szablonów etykiet: ogólnych, na płyty czołowe, owijek i flag kablowych, paneli krosowych i łączówek. Podświetlany wyświetlacz graficzny 240 × 120 punktów pokazuje podgląd etykiety. Do wyboru jest 476 symboli, 14 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0, 11,2 i 21,0 mm. Drukarka ma też tryb taśmy samolaminującej do owijania kabli. Obsługuje taśmy Pro Tape, odporne na wodę, ścieranie, chemikalia i skrajne temperatury.\n\nBluetooth 5.0 łączy drukarkę z aplikacją Brother Pro Label Tool na Androidzie i iOS. Przez USB-C drukarka współpracuje z programem P-touch Editor. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera kabel USB-C, walizkę, taśmę TZe Flexi ID 12 mm i taśmę TZe z mocnym klejem 24 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3120,7 +3152,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-E720BT",
     "seoDescription": "Brother P-touch PT-E720BT (CUBE Pro): drukarka etykiet z Bluetooth i akumulatorem, taśmy TZe do 24 mm, 180 dpi, aplikacja Pro Label Tool, 0,64 kg.",
     "shortDescription": "Kompaktowa drukarka etykiet P-touch CUBE Pro dla instalatorów, sterowana ze smartfona przez Bluetooth lub z komputera przez USB. Drukuje na taśmach TZe do 24 mm w rozdzielczości 180 dpi.",
-    "description": "PT-E720BT to przenośna drukarka etykiet z serii P-touch CUBE Pro. Nie ma klawiatury ani wyświetlacza, na obudowie jest przycisk zasilania i diody stanu. Etykiety projektuje się w aplikacji Brother Pro Label Tool na smartfonie albo w programie P-touch Editor 6 na komputerze.\n\nDrukarka służy do oznaczania instalacji elektrycznych: znaków ostrzegawczych, paneli fotowoltaicznych, sprzętu AV, kabli i przewodów. Aplikacja Brother Pro Label Tool zawiera szablony etykiet ostrzegawczych i oznaczeń kabli. Szablony kabli, paneli krosowych, płyt czołowych i rozdzielnic pobiera się z serwera Brother w chmurze.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Drukuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Wysokość druku sięga 18 mm, a długość etykiety 1000 mm. Automatyczny obcinacz odcina każdą etykietę. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-005 o pojemności 1750 mAh. Akumulator ładuje się przez USB Micro-B z komputera albo z ładowarki USB. Drukarka waży 0,64 kg i ma wymiary 128 × 67 × 128 mm. Większy model PT-E920BT drukuje na taśmach do 36 mm w 360 dpi.\n\nW zestawie jest kabel USB i taśma TZe-S651 24 mm z mocnym klejem, czarny druk na żółtym tle. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, chemikalia, ścieranie i skrajne temperatury. Jako akcesorium dostępny jest pasek na ramię ze zintegrowaną torbą.",
+    "description": "PT-E720BT to przenośna drukarka etykiet z serii P-touch CUBE Pro. Nie ma klawiatury ani wyświetlacza, na obudowie jest przycisk zasilania i diody stanu. Etykiety projektuje się w aplikacji Brother Pro Label Tool na smartfonie albo w programie P-touch Editor 6 na komputerze.\n\nDrukarka służy do oznaczania instalacji elektrycznych: znaków ostrzegawczych, paneli fotowoltaicznych, sprzętu AV, kabli i przewodów. Aplikacja Brother Pro Label Tool zawiera szablony etykiet ostrzegawczych i oznaczeń kabli. Szablony kabli, paneli krosowych, płyt czołowych i rozdzielnic pobiera się z serwera Brother w chmurze.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Drukuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Wysokość druku sięga 18 mm, a długość etykiety 1000 mm. Obcinacz jest automatyczny, z mechanizmem nożycowym. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-005 o pojemności 1750 mAh. Akumulator ładuje się przez USB Micro-B z komputera albo z ładowarki USB. Drukarka waży 0,64 kg i ma wymiary 128 × 67 × 128 mm. Większy model PT-E920BT drukuje na taśmach do 36 mm w 360 dpi.\n\nW zestawie jest kabel USB i taśma TZe-S651 24 mm z mocnym klejem, czarny druk na żółtym tle. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, chemikalia, ścieranie i skrajne temperatury. Jako akcesorium dostępny jest pasek na ramię ze zintegrowaną torbą.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3179,7 +3211,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Taśmy HGe",
-        "value": "3,5, 6, 9, 12, 18, 24 mm"
+        "value": "6, 9, 12, 18, 24 mm"
       },
       {
         "name": "Maksymalna długość etykiety",
@@ -3247,7 +3279,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Akcesoria opcjonalne",
-        "value": "akumulator PA-BT-005; pasek na ramię ze zintegrowaną torbą"
+        "value": "akumulator PA-BT-005; futerał ochronny z paskiem na ramię BPA-CC7-700"
       }
     ],
     "applications": [],
@@ -3283,7 +3315,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-E920BT",
     "seoDescription": "Brother P-touch PT-E920BT (CUBE Pro): drukarka etykiet 360 dpi z Bluetooth, taśmy TZe do 36 mm, kasety FLe, obcinacz z nacinaniem, akumulator Li-ion.",
     "shortDescription": "Przenośna drukarka etykiet P-touch CUBE Pro dla instalatorów elektrycznych i sieciowych. Drukuje w 360 dpi na taśmach TZe do 36 mm, ma Bluetooth i automatyczny obcinacz z nacinaniem.",
-    "description": "PT-E920BT to przenośna drukarka etykiet z serii P-touch CUBE Pro, bez klawiatury i wyświetlacza. Etykiety projektuje się w aplikacji Brother Pro Label Tool albo w programie P-touch Editor 6. Drukarka łączy się z telefonem i komputerem przez Bluetooth 5.0 albo USB-C.\n\nDrukarka służy do oznaczania znaków ostrzegawczych, rozdzielnic, przewodów, paneli krosowych i okablowania CAT5E oraz CAT6A. Szablony etykiet kabli, płyt czołowych, rozdzielnic i urządzeń sieciowych pobiera się z serwera Brother w chmurze. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 36 mm. Głowica 360 dpi drukuje do 32 mm wysokości z prędkością do 20 mm/s. Model PT-E720BT drukuje w 180 dpi i obsługuje taśmy do 24 mm.\n\nAutomatyczny obcinacz z nacinaniem wydaje serię etykiet na jednym pasku podkładu. Taki pasek ułatwia oznaczanie wielu kabli po kolei w dużych instalacjach. Drukarka obsługuje też kasety FLe z wycinanymi etykietami do flag kablowych.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-003 o pojemności 1750 mAh. Drukarka waży 1,17 kg i ma wymiary 138 × 94 × 138 mm. W zestawie jest kabel USB i taśma TZe-S661 36 mm z mocnym klejem, czarny druk na żółtym tle.",
+    "description": "PT-E920BT to przenośna drukarka etykiet z serii P-touch CUBE Pro, bez klawiatury i wyświetlacza. Etykiety projektuje się w aplikacji Brother Pro Label Tool albo w programie P-touch Editor 6. Drukarka łączy się z telefonem i komputerem przez Bluetooth 5.0 albo USB-C.\n\nDrukarka służy do oznaczania znaków ostrzegawczych, rozdzielnic, przewodów, paneli krosowych i okablowania CAT5E oraz CAT6A. Szablony etykiet kabli, płyt czołowych, rozdzielnic i urządzeń sieciowych pobiera się z serwera Brother w chmurze. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 36 mm. Współpracuje z taśmami Pro Tape, odpornymi na wodę, ścieranie, chemikalia i skrajne temperatury. Głowica 360 dpi drukuje do 32 mm wysokości z prędkością do 20 mm/s. Model PT-E720BT drukuje w 180 dpi i obsługuje taśmy do 24 mm.\n\nAutomatyczny obcinacz z nacinaniem wydaje serię etykiet na jednym pasku podkładu. Taki pasek ułatwia oznaczanie wielu kabli po kolei w dużych instalacjach. Drukarka obsługuje też kasety FLe z wycinanymi etykietami do flag kablowych.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-003 o pojemności 1750 mAh. Drukarka waży 1,17 kg i ma wymiary 138 × 94 × 138 mm. W zestawie jest kabel USB i taśma TZe-S661 36 mm z mocnym klejem, czarny druk na żółtym tle.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3342,7 +3374,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Taśmy HGe",
-        "value": "3,5, 6, 9, 12, 18, 24, 36 mm"
+        "value": "6, 9, 12, 18, 24, 36 mm"
       },
       {
         "name": "Kasety FLe (etykiety wycinane)",
@@ -3414,7 +3446,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Akcesoria opcjonalne",
-        "value": "akumulator PA-BT-003; ładowarka akumulatora PA-BC-002 (zasilacz osobno); pasek na ramię ze zintegrowaną torbą"
+        "value": "akumulator PA-BT-003; futerał ochronny z paskiem na ramię BPA-CC9-900"
       }
     ],
     "applications": [],
@@ -3450,7 +3482,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-P300BT",
     "seoDescription": "Brother P-touch PT-P300BT (CUBE): drukarka etykiet ze smartfonu przez Bluetooth, taśmy TZe 3,5–12 mm, 180 dpi, 20 mm/s, zasilanie 6 × AAA.",
     "shortDescription": "Kompaktowa drukarka etykiet P-touch CUBE obsługiwana ze smartfonu przez Bluetooth. Drukuje na taśmach TZe o szerokości od 3,5 do 12 mm z prędkością do 20 mm/s. Pracuje na 6 bateriach AAA.",
-    "description": "PT-P300BT (P-touch CUBE) to drukarka etykiet bez klawiatury i wyświetlacza. Etykiety projektuje się na smartfonie lub tablecie w aplikacji P-touch Design&Print 2 albo Brother iPrint&Label. Drukarka łączy się z urządzeniem mobilnym przez Bluetooth 2.1 + EDR i ma certyfikat Apple MFi.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Druk termotransferowy ma rozdzielczość 180 dpi i prędkość do 20 mm/s. Wysokość wydruku sięga 9 mm, a etykieta mieści do 2 wierszy. Taśmę odcina się ręcznie dźwignią odcinarki.\n\nDrukarka służy do oznaczania segregatorów, kabli i przewodów oraz do etykiet w kuchni, domowym biurze, szkole, garażu i ogrodzie. Aplikacja pokazuje w podglądzie rzeczywiste kolory tekstu i tła. Na taśmach wstążkowych powstają zawieszki do prezentów.\n\nDrukarkę zasila 6 baterii alkalicznych AAA (LR03) lub akumulatorów Ni-MH AAA (HR03). Baterii nie ma w zestawie. Do pracy stacjonarnej służy opcjonalny zasilacz sieciowy AD-24ES. Obudowa ma wymiary 115 × 61 × 115 mm, a drukarka bez baterii waży 0,38 kg.\n\nW porównaniu z PT-P710BT model drukuje na węższych taśmach, do 12 mm, i nie ma portu USB do komputera. PT-P710BT ma wbudowany akumulator, a PT-P300BT pracuje na bateriach AAA. W zestawie jest kaseta z taśmą TZe 12 mm o długości 4 m.",
+    "description": "PT-P300BT (P-touch CUBE) to drukarka etykiet bez klawiatury i wyświetlacza. Etykiety projektuje się na smartfonie lub tablecie w aplikacji P-touch Design&Print 2 albo Brother iPrint&Label. Drukarka łączy się z urządzeniem mobilnym przez Bluetooth 2.1 + EDR i ma certyfikat Apple MFi.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Druk termotransferowy ma rozdzielczość 180 dpi i prędkość do 20 mm/s. Wysokość wydruku sięga 9 mm, a etykieta mieści do 2 wierszy. Taśmę odcina się ręcznie dźwignią odcinarki. Laminowane taśmy TZe chronią nadruk przed ścieraniem, cieczami, temperaturą, chemikaliami i promieniowaniem słonecznym.\n\nDrukarka służy do oznaczania segregatorów, kabli i przewodów oraz do etykiet w kuchni, domowym biurze, magazynie, szkole, garażu i ogrodzie. Aplikacja ma gotowe szablony i ramki. Aplikacja pokazuje w podglądzie rzeczywiste kolory tekstu i tła. Drukarka drukuje też na satynowych wstążkach ze złotym nadrukiem i na taśmach z wzorami ozdobnymi.\n\nDrukarkę zasila 6 baterii alkalicznych AAA (LR03) lub akumulatorów Ni-MH AAA (HR03). Baterii nie ma w zestawie. Drukarka może też pracować z opcjonalnym zasilaczem sieciowym AD-24ES. Obudowa ma wymiary 115 × 61 × 115 mm, a drukarka bez baterii waży 0,38 kg.\n\nW porównaniu z PT-P710BT model drukuje na węższych taśmach, do 12 mm, i nie ma portu USB do komputera. PT-P710BT ma wbudowany akumulator, a PT-P300BT pracuje na bateriach AAA. W zestawie jest kaseta z taśmą TZe 12 mm o długości 4 m.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3567,7 +3599,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-P710BT",
     "seoDescription": "Brother P-touch PT-P710BT (CUBE Plus): drukarka etykiet na taśmy TZe 3,5–24 mm, USB i Bluetooth, akumulator ładowany przez USB, automatyczny obcinak.",
     "shortDescription": "Drukarka etykiet P-touch CUBE Plus na taśmy TZe do 24 mm. Łączy się z komputerem przez USB i ze smartfonem przez Bluetooth. Ma wbudowany akumulator litowo-jonowy ładowany przez USB i automatyczny obcinak.",
-    "description": "PT-P710BT (P-touch CUBE Plus) to kompaktowa drukarka etykiet do biura, bez klawiatury i wyświetlacza. Etykiety projektuje się na komputerze w programie P-touch Editor albo na smartfonie i tablecie w aplikacjach Brother iPrint&Label i P-touch Design&Print 2.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Wysokość wydruku sięga 18 mm, a długość etykiety — 500 mm. Druk ma rozdzielczość 180 dpi, a w trybie wysokiej rozdzielczości 180 × 360 dpi. Prędkość druku wynosi do 20 mm/s.\n\nWbudowany akumulator litowo-jonowy 3,6 V / 1870 mAh ładuje się przez port USB komputera lub ładowarkę USB. Jedno ładowanie wystarcza na wydruk 5–6 kaset z taśmą. Akumulator jest przewidziany na 500 cykli ładowania.\n\nPort USB 2.0 łączy drukarkę z komputerem Windows lub Mac. Bluetooth z profilem SPP i certyfikatem Apple MFi obsługuje urządzenia z systemem iOS i Android. P-touch Editor dodaje do etykiet obrazy, logo, ramki i kody kreskowe, w tym QR i Data Matrix, oraz pobiera dane z plików Excel i CSV.\n\nAutomatyczny obcinak odcina każdą etykietę po wydruku. Drukarka ma wymiary 128 × 67 × 128 mm i waży 0,64 kg. W porównaniu z PT-P300BT model obsługuje taśmy do 24 mm, ma port USB i akumulator zamiast baterii AAA.",
+    "description": "PT-P710BT (P-touch CUBE Plus) to kompaktowa drukarka etykiet do biura, bez klawiatury i wyświetlacza. Etykiety projektuje się na komputerze w programie P-touch Editor albo na smartfonie i tablecie w aplikacjach Brother iPrint&Label i P-touch Design&Print 2.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Wysokość wydruku sięga 18 mm, a długość etykiety — 500 mm. Druk ma rozdzielczość 180 dpi, a w trybie wysokiej rozdzielczości 180 × 360 dpi. Prędkość druku wynosi do 20 mm/s.\n\nWbudowany akumulator litowo-jonowy 3,6 V / 1870 mAh ładuje się przez port USB komputera lub ładowarkę USB. Ładowarki USB nie ma w zestawie. Jedno ładowanie wystarcza na wydruk 5–6 kaset z taśmą. Akumulator jest przewidziany na 500 cykli ładowania.\n\nPort USB 2.0 łączy drukarkę z komputerem Windows lub Mac. Bluetooth z profilem SPP i certyfikatem Apple MFi obsługuje urządzenia z systemem iOS i Android. P-touch Editor dodaje do etykiet obrazy, logo, ramki i kody kreskowe, w tym QR i Data Matrix, oraz pobiera dane z plików Excel i CSV.\n\nAutomatyczny obcinak wykonuje cięcie pełne. Drukarka ma wymiary 128 × 67 × 128 mm i waży 0,64 kg. W porównaniu z PT-P300BT model obsługuje taśmy do 24 mm, ma port USB i akumulator zamiast baterii AAA.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3627,6 +3659,10 @@ export const brotherPtouchProducts: Product[] = [
       {
         "name": "Oprogramowanie",
         "value": "P-touch Editor (Windows, Mac), dodatek do Microsoft Word, Excel i Outlook"
+      },
+      {
+        "name": "Kody kreskowe (P-touch Editor)",
+        "value": "CODE39, CODE128, GS1-128 (UCC/EAN-128), ITF (I-2/5), CODABAR (NW-7), UPC-A, UPC-E, EAN-13, EAN-8, ISBN-2, ISBN-5, Laser Barcode, POSTNET, RSS (GS1 DataBar), PDF417, QR Code, Data Matrix, MaxiCode, IMB; Aztec Code tylko w wersji dla Windows"
       },
       {
         "name": "Aplikacje mobilne",
@@ -3712,7 +3748,7 @@ export const brotherPtouchProducts: Product[] = [
       "Brother P-touch PT-P910BT — widok pod kątem z drugiej strony",
       "Drukarka Brother PT-P910BT w biurze, sterowana ze smartfona",
       "Drukarka Brother PT-P910BT na ladzie sklepu, projekt etykiety w telefonie",
-      "Drukarka Brother PT-P910BT i słoik z etykietą wydrukowaną na taśmie TZe"
+      "Drukarka Brother PT-P910BT, słoik z etykietą i projekt etykiety w smartfonie"
     ],
     "tags": [
       "retail"
@@ -3754,7 +3790,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Obcinacz",
-        "value": "pełne cięcie i nacinanie etykiety bez podkładu"
+        "value": "pełne cięcie lub nacinanie samej etykiety bez przecinania podkładu"
       },
       {
         "name": "USB",
@@ -3767,6 +3803,10 @@ export const brotherPtouchProducts: Product[] = [
       {
         "name": "Oprogramowanie",
         "value": "P-touch Editor (Windows, Mac; łączenie z Excelem tylko w wersji Windows), aplikacje P-touch Design&Print 2 i iPrint&Label (iOS, Android)"
+      },
+      {
+        "name": "SDK",
+        "value": "SDK dla Windows, iOS i Androida"
       },
       {
         "name": "Systemy operacyjne",
@@ -3798,7 +3838,7 @@ export const brotherPtouchProducts: Product[] = [
       },
       {
         "name": "Zawartość opakowania",
-        "value": "drukarka PT-P910BT (biała), taśma TZe 36 mm czarny na białym (4 m), akumulator PA-BT-003 (zainstalowany), kabel USB-A na USB-C, skrócona instrukcja instalacji, informacje o gwarancji, instrukcja bezpieczeństwa"
+        "value": "drukarka PT-P910BT (biała), taśma TZe 36 mm czarny na białym (4 m), akumulator PA-BT-003 (zainstalowany), kabel USB-A na USB-C, dokumentacja (skrócona instrukcja instalacji, instrukcja bezpieczeństwa)"
       },
       {
         "name": "Akcesoria opcjonalne",
@@ -3837,7 +3877,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-P750W",
     "seoDescription": "Brother P-touch PT-P750W: drukarka etykiet z Wi-Fi, NFC i USB, taśmy TZe 3,5–24 mm, 30 mm/s, automatyczny obcinak z półcięciem, P-touch Editor.",
     "shortDescription": "Drukarka etykiet na taśmy TZe do 24 mm z Wi-Fi, NFC i USB. Drukuje z komputera, smartfona i tabletu z prędkością do 30 mm/s. Automatyczny obcinak wykonuje cięcie pełne i półcięcie.",
-    "description": "PT-P750W to biurkowa drukarka etykiet bez klawiatury do wspólnej pracy w biurze. Wbudowane Wi-Fi (IEEE 802.11b/g/n) udostępnia drukarkę wielu użytkownikom w sieci. Tryb Wireless Direct łączy drukarkę bezpośrednio ze smartfonem lub tabletem.\n\nEtykiety projektuje się w programie P-touch Editor na komputerze Windows lub Mac albo w aplikacji Brother iPrint&Label na urządzeniach z systemem iOS i Android. Smartfon z Androidem i NFC łączy się z drukarką po dotknięciu znacznika NFC. Przycisk Editor Lite uruchamia program P-touch Editor Lite przez kabel USB.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12, 18 i 24 mm. Wysokość wydruku sięga 18,1 mm, a długość etykiety wynosi od 24 do 600 mm. Prędkość druku z zasilaczem sieciowym sięga 30 mm/s. Drukarka rozpoznaje szerokość i kolor włożonej taśmy.\n\nAutomatyczny obcinak wykonuje cięcie pełne albo półcięcie. Półcięcie przecina etykietę bez podkładu, dzięki czemu etykieta łatwiej się odkleja. P-touch Editor korzysta z czcionek TrueType zainstalowanych w komputerze, importuje obrazy i pobiera dane z plików Excel, CSV i TXT.\n\nDrukarka pracuje z zasilacza sieciowego AD-E001 z zestawu, na 6 bateriach AA albo z opcjonalnym akumulatorem litowo-jonowym BA-E001. Z akumulatorem drukarka pracuje jako urządzenie przenośne, na przykład przy oznaczaniu wyposażenia w budynku. W porównaniu z PT-P710BT model ma Wi-Fi, NFC i półcięcie.",
+    "description": "PT-P750W to biurkowa drukarka etykiet bez klawiatury do wspólnej pracy w biurze. Wbudowane Wi-Fi (IEEE 802.11b/g/n) udostępnia drukarkę wielu użytkownikom w sieci. Tryb Wireless Direct łączy drukarkę bezpośrednio ze smartfonem lub tabletem. Drukarka służy do oznaczania segregatorów, dokumentów w archiwum, nośników danych, półek, kabli i wyposażenia biura.\n\nEtykiety projektuje się w programie P-touch Editor na komputerze Windows lub Mac albo w aplikacji Brother iPrint&Label na urządzeniach z systemem iOS i Android. Smartfon z Androidem i NFC łączy się z drukarką po dotknięciu znacznika NFC. Przycisk Editor Lite uruchamia program P-touch Editor Lite przez kabel USB.\n\nDrukarka obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12, 18 i 24 mm. Drukuje też na rurkach termokurczliwych HSe. Na rurce obszar druku jest mniejszy niż na taśmie. Wysokość wydruku sięga 18,1 mm. W aplikacji iPrint&Label długość etykiety ustawia się w zakresie 24–600 mm. Prędkość druku z zasilaczem sieciowym sięga 30 mm/s. Drukarka rozpoznaje szerokość i kolor włożonej taśmy.\n\nAutomatyczny obcinak wykonuje cięcie pełne albo półcięcie. Półcięcie ułatwia odklejanie etykiet i zmniejsza straty taśmy. P-touch Editor korzysta z czcionek TrueType zainstalowanych w komputerze, importuje obrazy i pobiera dane z plików Excel, CSV i TXT. Program ma kreator etykiet do kabli.\n\nDrukarka pracuje z zasilacza sieciowego AD-E001 z zestawu, na 6 bateriach AA albo z opcjonalnym akumulatorem litowo-jonowym BA-E001. Z akumulatorem drukarka pracuje jako urządzenie przenośne, na przykład przy oznaczaniu wyposażenia w budynku. W porównaniu z PT-P710BT model ma Wi-Fi, NFC i półcięcie.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -3873,12 +3913,16 @@ export const brotherPtouchProducts: Product[] = [
         "value": "3,5; 6; 9; 12; 18; 24 mm"
       },
       {
+        "name": "Rurki termokurczliwe HSe",
+        "value": "tak; obszar druku mniejszy niż na taśmie TZe"
+      },
+      {
         "name": "Maksymalna wysokość wydruku",
         "value": "18,1 mm"
       },
       {
         "name": "Długość etykiety",
-        "value": "24–600 mm"
+        "value": "24–600 mm (ustawienie w aplikacji iPrint&Label)"
       },
       {
         "name": "Obcinak",
@@ -3966,7 +4010,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-P900Wc",
     "seoDescription": "Brother P-touch PT-P900Wc: drukarka etykiet na taśmy TZe 3,5–36 mm, rurki HSe i etykiety FLe, 360 dpi, 60 mm/s, Wi-Fi, USB, obcinak z półcięciem.",
     "shortDescription": "Drukarka etykiet na taśmy TZe do 36 mm, rurki termokurczliwe HSe i etykiety FLe. Drukuje z rozdzielczością 360 dpi i prędkością do 60 mm/s. Ma Wi-Fi, Wi-Fi Direct, USB i obcinak z półcięciem.",
-    "description": "PT-P900Wc to biurkowa drukarka etykiet bez klawiatury do pracy z komputerem, tabletem i smartfonem. Służy do zarządzania obiektami, archiwizacji dokumentów i znakowania środków trwałych. Drukuje też etykiety na kable, płyty czołowe i rozdzielnice elektryczne.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 36 mm. Drukuje też na rurkach termokurczliwych HSe o szerokości 5,2, 9, 11,2, 21 i 31 mm oraz na etykietach FLe 21 × 45 mm. Wysokość wydruku sięga 32 mm, a etykieta mieści do 17 wierszy.\n\nDruk ma rozdzielczość 360 dpi i prędkość do 60 mm/s. Długość etykiety wynosi od 4 do 1000 mm. Automatyczny obcinak odcina etykietę w całości albo przecina samą etykietę bez podkładu. Kopie i numerowanie obejmują zakres od 1 do 999.\n\nWi-Fi w trybie infrastruktury (IEEE 802.11b/g/n, WPS 2.0) udostępnia drukarkę wielu urządzeniom. Wi-Fi Direct (IEEE 802.11n) łączy drukarkę bezpośrednio z innym urządzeniem. Port USB obsługuje komputery Windows i Mac. Opcjonalna przejściówka PA-SCA-001 dodaje port szeregowy RS-232C do druku poleceniami ESC/P.\n\nEtykiety projektuje się w programie P-touch Editor oraz w aplikacjach Brother iPrint&Label i Pro Label Tool. Program pobiera dane z arkusza kalkulacyjnego i drukuje serie etykiet. Drukarka przyjmuje polecenia ESC/P, P-touch Template i Raster, a pamięć flash 6 MB mieści 99 szablonów. W porównaniu z PT-P750W model obsługuje taśmy 36 mm, rurki HSe i etykiety FLe oraz drukuje dwa razy szybciej.",
+    "description": "PT-P900Wc to biurkowa drukarka etykiet bez klawiatury do pracy z komputerem, tabletem i smartfonem. Służy do zarządzania obiektami, archiwizacji dokumentów i znakowania środków trwałych. Drukuje też etykiety na kable, płyty czołowe i rozdzielnice elektryczne.\n\nDrukarka obsługuje taśmy TZe i HGe o szerokości od 3,5 do 36 mm. Drukuje też na rurkach termokurczliwych HSe o szerokości 5,2, 9, 11,2, 21 i 31 mm oraz na etykietach FLe 21 × 45 mm. Wysokość wydruku sięga 32 mm, a etykieta mieści do 17 wierszy.\n\nDruk ma rozdzielczość 360 dpi i prędkość do 60 mm/s. Długość etykiety wynosi od 4 do 1000 mm. Automatyczny obcinak odcina etykietę w całości albo przecina samą etykietę bez podkładu. Kopie i numerowanie obejmują zakres od 1 do 999.\n\nWi-Fi w trybie infrastruktury (IEEE 802.11b/g/n, WPS 2.0) udostępnia drukarkę wielu urządzeniom. Wi-Fi Direct (IEEE 802.11n) łączy drukarkę bezpośrednio z innym urządzeniem. Port USB obsługuje komputery Windows i Mac. Opcjonalna przejściówka PA-SCA-001 dodaje port szeregowy RS-232C do druku poleceniami ESC/P. Z opcjonalną bazą zasilającą PA-BB-002 i akumulatorem PA-BT-4000LI drukarka pracuje jako urządzenie mobilne.\n\nEtykiety projektuje się w programie P-touch Editor oraz w aplikacjach Brother iPrint&Label i Pro Label Tool. Program pobiera dane z arkusza kalkulacyjnego i drukuje serie etykiet. Drukarka przyjmuje polecenia ESC/P, P-touch Template i Raster, a pamięć flash 6 MB mieści 99 szablonów. W porównaniu z PT-P750W model obsługuje taśmy 36 mm i etykiety FLe oraz drukuje dwa razy szybciej.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -4007,6 +4051,10 @@ export const brotherPtouchProducts: Product[] = [
         "value": "3,5; 6; 9; 12; 18; 24; 36 mm"
       },
       {
+        "name": "Taśmy HGe",
+        "value": "3,5; 6; 9; 12; 18; 24; 36 mm"
+      },
+      {
         "name": "Rurki termokurczliwe HSe",
         "value": "5,2; 9; 11,2; 21; 31 mm"
       },
@@ -4035,6 +4083,10 @@ export const brotherPtouchProducts: Product[] = [
         "value": "1–999"
       },
       {
+        "name": "Druk pionowy / lustrzany",
+        "value": "tak / tak"
+      },
+      {
         "name": "Klawiatura i wyświetlacz",
         "value": "brak — obsługa z komputera lub aplikacji mobilnej"
       },
@@ -4053,6 +4105,10 @@ export const brotherPtouchProducts: Product[] = [
       {
         "name": "Aplikacje mobilne",
         "value": "Brother iPrint&Label, Brother Pro Label Tool (iOS, Android)"
+      },
+      {
+        "name": "SDK",
+        "value": "SDK dla Windows, iOS i Androida"
       },
       {
         "name": "Systemy operacyjne",
@@ -4083,8 +4139,16 @@ export const brotherPtouchProducts: Product[] = [
         "value": "1,48 kg"
       },
       {
+        "name": "Języki",
+        "value": "20, w tym polski"
+      },
+      {
         "name": "Zawartość opakowania",
         "value": "drukarka, taśma TZe 36 mm × 8 m (czarny nadruk na białym tle), zasilacz sieciowy, przewód zasilający, kabel USB, dokumentacja"
+      },
+      {
+        "name": "Akcesoria opcjonalne",
+        "value": "akumulator Li-ion PA-BT-4000LI, baza zasilająca PA-BB-002, przejściówka szeregowa PA-SCA-001, zasilacz sieciowy AD9100ESA"
       }
     ],
     "applications": [],
@@ -4120,7 +4184,7 @@ export const brotherPtouchProducts: Product[] = [
     "seoTitle": "Brother P-touch PT-P950NW",
     "seoDescription": "Brother P-touch PT-P950NW: biurkowa drukarka etykiet z LAN i Wi-Fi, 360 dpi, do 60 mm/s, taśmy TZe do 36 mm, rurki HSe i etykiety FLe.",
     "shortDescription": "Biurkowa drukarka etykiet z siecią LAN, Wi-Fi i USB. Drukuje w 360 dpi z prędkością do 60 mm/s na taśmach TZe do 36 mm, rurkach termokurczliwych HSe i etykietach FLe.",
-    "description": "PT-P950NW to biurkowa drukarka etykiet do pracy z komputerem i siecią firmową. Drukarka służy do opisywania wyposażenia obiektów, archiwizacji dokumentów i oznaczania środków trwałych. Port LAN 10/100 Base-TX udostępnia drukarkę wielu użytkownikom. Wi-Fi działa w trybie infrastruktury, Wi-Fi Direct i z WPS 2.0.\n\nDrukarka pracuje w rozdzielczości 360 dpi z prędkością do 60 mm/s, czyli dwa razy szybciej niż PT-E560BTVP z zasilaczem. Obsługuje taśmy TZe o szerokości od 3,5 do 36 mm, z wysokością druku do 32 mm. Etykieta ma od 4 do 1000 mm długości i do 17 wierszy tekstu. Automatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu.\n\nOprócz taśm TZe drukarka obsługuje rurki termokurczliwe HSe w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Kasety FLe zawierają wycinane etykiety 21 × 45 mm do flag kablowych, w kolorze białym, żółtym lub zielonym.\n\nProgram P-touch Editor łączy projekt z danymi z arkusza Excel (Windows) lub pliku CSV (Mac) i drukuje serie etykiet. Aplikacje iPrint&Label i Cable Label Tool działają na iOS i Androidzie. Tryb P-touch Template i pakiet b-PAC SDK pozwalają drukować etykiety z własnych systemów.\n\nW zestawie jest zasilacz sieciowy, kabel USB i taśma TZe 36 mm, czarny druk na białym tle, 8 m. Opcjonalna baza PA-BB-002 z akumulatorem PA-BT4000LI pozwala drukować bez gniazdka. Moduł PA-BI-002 dodaje Bluetooth dla skanerów kodów kreskowych. Panel dotykowy PA-TDU-003 drukuje zapisane szablony bez komputera.",
+    "description": "PT-P950NW to biurkowa drukarka etykiet do pracy z komputerem i siecią firmową. Drukarka służy do opisywania wyposażenia obiektów, archiwizacji dokumentów i oznaczania środków trwałych. Port LAN 10/100 Base-TX udostępnia drukarkę wielu użytkownikom. Wi-Fi działa w trybie infrastruktury, Wi-Fi Direct i z WPS 2.0.\n\nDrukarka pracuje w rozdzielczości 360 dpi z prędkością do 60 mm/s, czyli dwa razy szybciej niż PT-E560BTVP z zasilaczem. Obsługuje taśmy TZe o szerokości od 3,5 do 36 mm, z wysokością druku do 32 mm. Etykieta ma od 4 do 1000 mm długości i do 17 wierszy tekstu. Automatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu.\n\nOprócz taśm TZe drukarka obsługuje rurki termokurczliwe HSe w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Kasety FLe zawierają wycinane etykiety 21 × 45 mm do flag kablowych, w kolorze białym, żółtym lub zielonym.\n\nProgram P-touch Editor łączy projekt z danymi z plików Excel, CSV i TXT, baz Access oraz serwerów MSDE/SQL i drukuje serie etykiet. Na komputerze Mac źródłem danych jest plik CSV. Aplikacje iPrint&Label i Cable Label Tool działają na iOS i Androidzie. Tryb P-touch Template i pakiet b-PAC SDK pozwalają drukować etykiety z własnych systemów.\n\nW zestawie jest zasilacz sieciowy, kabel USB i taśma TZe 36 mm, czarny druk na białym tle, 8 m. Opcjonalna baza PA-BB-002 z akumulatorem PA-BT4000LI pozwala drukować bez gniazdka. Moduł PA-BI-002 dodaje Bluetooth dla skanerów kodów kreskowych. Panel dotykowy PA-TDU-003 drukuje zapisane szablony bez komputera. Wbudowany zegar panelu dodaje do etykiet bieżącą lub przyszłą datę i godzinę.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
       "etykieciarki"
@@ -4227,6 +4291,10 @@ export const brotherPtouchProducts: Product[] = [
       {
         "name": "Oprogramowanie",
         "value": "P-touch Editor (PC/Mac), aplikacje iPrint&Label i Cable Label Tool (iOS/Android), b-PAC SDK dla Windows"
+      },
+      {
+        "name": "Bazy danych (P-touch Editor)",
+        "value": "Windows: Excel, CSV, TXT, Access, MSDE/SQL; Mac: CSV"
       },
       {
         "name": "Pamięć szablonów",
