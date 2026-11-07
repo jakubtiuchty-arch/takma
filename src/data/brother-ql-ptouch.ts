@@ -20,15 +20,15 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-600b-przod.png",
-      "/images/products/brother-ql-600b-lewy-skos.png",
-      "/images/products/brother-ql-600b-prawy-skos.png",
-      "/images/products/brother-ql-600g-przod.png",
-      "/images/products/brother-ql-600g-lewy-skos.png",
-      "/images/products/brother-ql-600g-prawy-skos.png",
-      "/images/products/brother-ql-600r-przod.png",
-      "/images/products/brother-ql-600r-lewy-skos.png",
-      "/images/products/brother-ql-600r-prawy-skos.png",
+      "/images/products/brother/ql-600b-1.png",
+      "/images/products/brother/ql-600b-2.png",
+      "/images/products/brother/ql-600b-3.png",
+      "/images/products/brother/ql-600g-1.png",
+      "/images/products/brother/ql-600g-2.png",
+      "/images/products/brother/ql-600g-3.png",
+      "/images/products/brother/ql-600r-1.png",
+      "/images/products/brother/ql-600r-2.png",
+      "/images/products/brother/ql-600r-3.png",
       "/images/products/brother-ql-600-etykieta-adresowa.webp",
       "/images/products/brother-ql-600-identyfikator.webp",
       "/images/products/brother-ql-600-segregatory.webp",
@@ -36,15 +36,15 @@ export const brotherQlProducts: Product[] = [
       "/images/products/brother-ql-600-kartony.webp"
     ],
     "imageDescriptions": [
-      "Brother QL-600B — niebieska drukarka etykiet, widok z przodu",
-      "Brother QL-600B, widok z lewej strony pod kątem",
-      "Brother QL-600B, widok z prawej strony pod kątem",
-      "Brother QL-600G — szara drukarka etykiet, widok z przodu",
-      "Brother QL-600G, widok z lewej strony pod kątem",
-      "Brother QL-600G, widok z prawej strony pod kątem",
-      "Brother QL-600R — czerwona drukarka etykiet, widok z przodu",
-      "Brother QL-600R, widok z lewej strony pod kątem",
-      "Brother QL-600R, widok z prawej strony pod kątem",
+      "Brother QL-600B (niebieska) — drukarka etykiet, widok pod kątem",
+      "Brother QL-600B (niebieska) — widok z przodu",
+      "Brother QL-600B (niebieska) — widok pod kątem z drugiej strony",
+      "Brother QL-600G (szara) — drukarka etykiet, widok pod kątem",
+      "Brother QL-600G (szara) — widok z przodu",
+      "Brother QL-600G (szara) — widok pod kątem z drugiej strony",
+      "Brother QL-600R (czerwona) — drukarka etykiet, widok pod kątem",
+      "Brother QL-600R (czerwona) — widok z przodu",
+      "Brother QL-600R (czerwona) — widok pod kątem z drugiej strony",
       "Etykieta adresowa z drukarki Brother QL-600 na kopercie",
       "Identyfikator gościa wydrukowany na etykiecie DK",
       "Etykiety grzbietowe na segregatorach",
@@ -209,14 +209,14 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-700-przod.png",
-      "/images/products/brother-ql-700-lewy-skos.png",
-      "/images/products/brother-ql-700-prawy-skos.png"
+      "/images/products/brother/ql-700-1.png",
+      "/images/products/brother/ql-700-2.png",
+      "/images/products/brother/ql-700-3.png"
     ],
     "imageDescriptions": [
-      "Brother QL-700 — drukarka etykiet, widok z przodu",
-      "Brother QL-700, widok z lewej strony pod kątem",
-      "Brother QL-700, widok z prawej strony pod kątem"
+      "Brother QL-700 — drukarka etykiet, widok pod kątem",
+      "Brother QL-700 — widok z przodu",
+      "Brother QL-700 — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -356,12 +356,12 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-800-lewy-skos.png",
-      "/images/products/brother-ql-800-prawy-skos.png"
+      "/images/products/brother/ql-800-1.png",
+      "/images/products/brother/ql-800-2.png"
     ],
     "imageDescriptions": [
-      "Brother QL-800, widok z lewej strony pod kątem",
-      "Brother QL-800, widok z prawej strony pod kątem"
+      "Brother QL-800 — drukarka etykiet, widok pod kątem",
+      "Brother QL-800 — widok z przodu"
     ],
     "tags": [
       "retail"
@@ -506,14 +506,14 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-810wc-przod.png",
-      "/images/products/brother-ql-810wc-lewy-skos.png",
-      "/images/products/brother-ql-810wc-prawy-skos.png"
+      "/images/products/brother/ql-810wc-1.png",
+      "/images/products/brother/ql-810wc-2.png",
+      "/images/products/brother/ql-810wc-3.png"
     ],
     "imageDescriptions": [
-      "Brother QL-810Wc z wydrukowanymi etykietami, widok z przodu",
-      "Brother QL-810Wc, widok z lewej strony pod kątem",
-      "Brother QL-810Wc, widok z prawej strony pod kątem"
+      "Brother QL-810Wc — drukarka etykiet, widok pod kątem",
+      "Brother QL-810Wc — widok z przodu, z etykietami czarno-czerwonymi",
+      "Brother QL-810Wc — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -681,18 +681,18 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-820nwbc-przod.png",
-      "/images/products/brother-ql-820nwbc-lewy-skos.png",
-      "/images/products/brother-ql-820nwbc-prawy-skos.png",
-      "/images/products/brother-ql-820nwbcvm-zestaw.png",
+      "/images/products/brother/ql-820nwbc-1.png",
+      "/images/products/brother/ql-820nwbc-2.png",
+      "/images/products/brother/ql-820nwbc-3.png",
+      "/images/products/brother/ql-820nwbcvm-zestaw.png",
       "/images/products/brother-ql-820nwbc-wydruk-z-laptopa.webp",
       "/images/products/brother-ql-820nwbc-ethernet.webp",
       "/images/products/brother-ql-820nwbc-lada-sklepowa.webp"
     ],
     "imageDescriptions": [
-      "Brother QL-820NWBc z wyświetlaczem LCD, widok z przodu",
-      "Brother QL-820NWBc, widok z lewej strony pod kątem",
-      "Brother QL-820NWBc, widok z prawej strony pod kątem",
+      "Brother QL-820NWBc — drukarka etykiet, widok pod kątem",
+      "Brother QL-820NWBc — widok z przodu, wyświetlacz LCD",
+      "Brother QL-820NWBc — widok pod kątem z drugiej strony",
       "Zestaw Brother QL-820NWBcVM: drukarka i trzy rolki DK-N55224",
       "Etykieta z nadrukiem czarnym i czerwonym z drukarki Brother QL-820NWBc",
       "Podłączanie kabla sieciowego do drukarki Brother QL-820NWBc",
@@ -898,14 +898,14 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-1100c-przod.png",
-      "/images/products/brother-ql-1100c-lewy-skos.png",
-      "/images/products/brother-ql-1100c-prawy-skos.png"
+      "/images/products/brother/ql-1100c-1.png",
+      "/images/products/brother/ql-1100c-2.png",
+      "/images/products/brother/ql-1100c-3.png"
     ],
     "imageDescriptions": [
-      "Brother QL-1100c — drukarka etykiet do 103,6 mm, widok z przodu",
-      "Brother QL-1100c, widok z lewej strony pod kątem",
-      "Brother QL-1100c, widok z prawej strony pod kątem"
+      "Brother QL-1100c — drukarka etykiet, widok pod kątem",
+      "Brother QL-1100c — widok z przodu",
+      "Brother QL-1100c — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "logistyka",
@@ -1062,14 +1062,14 @@ export const brotherQlProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-ql-1110nwbc-przod.png",
-      "/images/products/brother-ql-1110nwbc-lewy-skos.png",
-      "/images/products/brother-ql-1110nwbc-prawy-skos.png"
+      "/images/products/brother/ql-1110nwbc-1.png",
+      "/images/products/brother/ql-1110nwbc-2.png",
+      "/images/products/brother/ql-1110nwbc-3.png"
     ],
     "imageDescriptions": [
-      "Brother QL-1110NWBc — sieciowa drukarka etykiet do 103,6 mm, widok z przodu",
-      "Brother QL-1110NWBc, widok z lewej strony pod kątem",
-      "Brother QL-1110NWBc, widok z prawej strony pod kątem"
+      "Brother QL-1110NWBc — drukarka etykiet, widok pod kątem",
+      "Brother QL-1110NWBc — widok z przodu",
+      "Brother QL-1110NWBc — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "logistyka",
@@ -1236,14 +1236,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-h105-przod.png",
-      "/images/products/brother-pt-h105-lewy-skos.png",
-      "/images/products/brother-pt-h105-prawy-skos.png"
+      "/images/products/brother/pt-h105-1.png",
+      "/images/products/brother/pt-h105-2.png",
+      "/images/products/brother/pt-h105-3.png"
     ],
     "imageDescriptions": [
-      "Etykieciarka Brother P-touch PT-H105 z przodu — biało-szara obudowa, wyświetlacz LCD i klawiatura w układzie ABC",
-      "Brother PT-H105 w ujęciu z lewej — ręczna etykieciarka na taśmy TZe do 12 mm",
-      "Brother PT-H105 w ujęciu z prawej — wyświetlacz LCD i klawiatura alfabetyczna"
+      "Brother P-touch PT-H105 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-H105 — widok z przodu",
+      "Brother P-touch PT-H105 — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -1381,12 +1381,12 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-h110-lewy-skos.png",
-      "/images/products/brother-pt-h110-prawy-skos.png"
+      "/images/products/brother/pt-h110-1.png",
+      "/images/products/brother/pt-h110-2.png"
     ],
     "imageDescriptions": [
-      "Brother PT-H110 w ujęciu z lewej — wyświetlacz LCD i klawiatura z rzędem cyfr",
-      "Brother PT-H110 w ujęciu z prawej — ręczna etykieciarka na taśmy TZe do 12 mm"
+      "Brother P-touch PT-H110 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-H110 — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -1525,12 +1525,12 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-h500-przod.png",
-      "/images/products/brother-pt-h500-prawy-skos.png"
+      "/images/products/brother/pt-h500-1.png",
+      "/images/products/brother/pt-h500-2.png"
     ],
     "imageDescriptions": [
-      "Etykieciarka Brother P-touch PT-H500 z przodu — grafitowa obudowa i wyświetlacz z podglądem etykiety",
-      "Brother PT-H500 w ujęciu z prawej — podświetlany wyświetlacz, klawiatura i klawisze funkcyjne"
+      "Brother P-touch PT-H500 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-H500 — widok z przodu"
     ],
     "tags": [
       "retail"
@@ -1664,11 +1664,15 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-d200bw-przod.png",
-      "/images/products/brother-pt-d200bwvp-walizka.png"
+      "/images/products/brother/pt-d200bw-1.png",
+      "/images/products/brother/pt-d200bw-2.png",
+      "/images/products/brother/pt-d200bw-3.png",
+      "/images/products/brother/pt-d200bwvp-walizka.png"
     ],
     "imageDescriptions": [
-      "Etykieciarka Brother P-touch PT-D200BW z przodu — czarno-biała obudowa, wyświetlacz LCD i klawiatura",
+      "Brother P-touch PT-D200BW — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-D200BW — widok z przodu",
+      "Brother P-touch PT-D200BW — widok pod kątem z drugiej strony",
       "Zestaw Brother PT-D200BWVP — etykieciarka, zasilacz AD-24ES i taśma w otwartej walizce"
     ],
     "tags": [
@@ -1825,14 +1829,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-d210-przod.png",
-      "/images/products/brother-pt-d210-lewy-skos.png",
-      "/images/products/brother-pt-d210-prawy-skos.png"
+      "/images/products/brother/pt-d210-1.png",
+      "/images/products/brother/pt-d210-2.png",
+      "/images/products/brother/pt-d210-3.png"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-D210 w czarnej obudowie, widok z przodu",
-      "Brother PT-D210 w ujęciu z lewej — wyświetlacz graficzny i klawiatura",
-      "Brother PT-D210 w ujęciu z prawej — biurkowa etykieciarka na taśmy TZe do 12 mm"
+      "Brother P-touch PT-D210 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-D210 — widok z przodu",
+      "Brother P-touch PT-D210 — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -1984,16 +1988,16 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-d410-przod.png",
-      "/images/products/brother-pt-d410-lewy-skos.png",
-      "/images/products/brother-pt-d410-prawy-skos.png",
-      "/images/products/brother-pt-d410vp-zestaw.png",
+      "/images/products/brother/pt-d410-1.png",
+      "/images/products/brother/pt-d410-2.png",
+      "/images/products/brother/pt-d410-3.png",
+      "/images/products/brother/pt-d410vp-zestaw.png",
       "/images/products/brother-pt-d410-oznaczanie-kabli.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-D410 — biała drukarka etykiet z klawiaturą i wyświetlaczem LCD, widok z przodu",
-      "Drukarka etykiet Brother PT-D410 w widoku z lewej strony",
-      "Drukarka etykiet Brother PT-D410 w widoku z prawej strony z wylotem taśmy",
+      "Brother P-touch PT-D410 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-D410 — widok z przodu",
+      "Brother P-touch PT-D410 — widok pod kątem z drugiej strony",
       "Zestaw Brother PT-D410VP: drukarka etykiet, walizka, zasilacz, taśma TZe i kabel USB",
       "Brother PT-D410 na biurku i kabel USB oznaczony etykietą z taśmy TZe"
     ],
@@ -2155,16 +2159,16 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-d460btvp-przod.png",
-      "/images/products/brother-pt-d460btvp-lewy-skos.png",
-      "/images/products/brother-pt-d460btvp-prawy-skos.png",
-      "/images/products/brother-pt-d460btvp-zestaw.png",
+      "/images/products/brother/pt-d460bt-1.png",
+      "/images/products/brother/pt-d460bt-2.png",
+      "/images/products/brother/pt-d460bt-3.png",
+      "/images/products/brother/pt-d460btvp-zestaw.png",
       "/images/products/brother-pt-d460btvp-druk-ze-smartfona.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-D460BTVP — czarna drukarka etykiet z klawiaturą i wyświetlaczem graficznym, widok z przodu",
-      "Drukarka etykiet Brother PT-D460BTVP w widoku z lewej strony",
-      "Drukarka etykiet Brother PT-D460BTVP w widoku z prawej strony z wylotem taśmy",
+      "Brother P-touch PT-D460BTVP — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-D460BTVP — widok z przodu",
+      "Brother P-touch PT-D460BTVP — widok pod kątem z drugiej strony",
       "Zestaw Brother PT-D460BTVP: drukarka etykiet, futerał, zasilacz, taśma TZe i kabel USB",
       "Brother PT-D460BTVP na biurku i smartfon z projektem etykiety z kodem kreskowym"
     ],
@@ -2316,16 +2320,16 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-d610btvp-przod.png",
-      "/images/products/brother-pt-d610btvp-lewy-skos.png",
-      "/images/products/brother-pt-d610btvp-prawy-skos.png",
-      "/images/products/brother-pt-d610btvp-zestaw.png",
+      "/images/products/brother/pt-d610bt-1.png",
+      "/images/products/brother/pt-d610bt-2.png",
+      "/images/products/brother/pt-d610bt-3.png",
+      "/images/products/brother/pt-d610btvp-zestaw.png",
       "/images/products/brother-pt-d610btvp-przy-komputerze.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-D610BTVP — czarna drukarka etykiet z klawiaturą i kolorowym wyświetlaczem, widok z przodu",
-      "Drukarka etykiet Brother PT-D610BTVP w widoku z lewej strony",
-      "Drukarka etykiet Brother PT-D610BTVP w widoku z prawej strony z wylotem taśmy",
+      "Brother P-touch PT-D610BTVP — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-D610BTVP — widok z przodu",
+      "Brother P-touch PT-D610BTVP — widok pod kątem z drugiej strony",
       "Zestaw Brother PT-D610BTVP: drukarka etykiet, futerał, zasilacz, taśma TZe 24 mm i kabel USB",
       "Brother PT-D610BTVP przy laptopie i kable oznaczone etykietami z taśmy TZe"
     ],
@@ -2477,20 +2481,20 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-e110-przod.png",
-      "/images/products/brother-pt-e110-lewy-skos.png",
-      "/images/products/brother-pt-e110-prawy-skos.png",
-      "/images/products/brother-pt-e110vp-zestaw.png",
-      "/images/products/brother-pt-e110vp-walizka.png",
+      "/images/products/brother/pt-e110-1.png",
+      "/images/products/brother/pt-e110-2.png",
+      "/images/products/brother/pt-e110-3.png",
+      "/images/products/brother/pt-e110vp-zestaw.png",
+      "/images/products/brother/pt-e110vp-walizka.png",
       "/images/products/brother-pt-e110-rozdzielnica.webp",
       "/images/products/brother-pt-e110-czujka.webp",
       "/images/products/brother-pt-e110-etykieta-na-profilu.webp",
       "/images/products/brother-pt-e110-naklejanie-etykiety.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-E110, widok z przodu z klawiaturą i wyświetlaczem LCD",
-      "Brother P-touch PT-E110, widok skośny z lewej strony",
-      "Brother P-touch PT-E110, widok skośny z prawej strony",
+      "Brother P-touch PT-E110 — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-E110 — widok z przodu",
+      "Brother P-touch PT-E110 — widok pod kątem z drugiej strony",
       "Zestaw Brother P-touch PT-E110VP z walizką, zasilaczem i kasetą z taśmą",
       "Otwarta walizka zestawu Brother P-touch PT-E110VP z drukarką w środku",
       "Instalator oznacza zabezpieczenia w rozdzielnicy drukarką Brother P-touch PT-E110",
@@ -2692,17 +2696,17 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-e310btvp-przod.png",
-      "/images/products/brother-pt-e310btvp-lewy-skos.png",
-      "/images/products/brother-pt-e310btvp-prawy-skos.png",
-      "/images/products/brother-pt-e310btvp-zestaw.png",
+      "/images/products/brother/pt-e310bt-1.png",
+      "/images/products/brother/pt-e310bt-2.png",
+      "/images/products/brother/pt-e310bt-3.png",
+      "/images/products/brother/pt-e310btvp-zestaw.png",
       "/images/products/brother-pt-e310btvp-kable-sieciowe.webp",
       "/images/products/brother-pt-e310btvp-etykieta-ostrzegawcza.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-E310BTVP, widok z przodu",
-      "Brother P-touch PT-E310BTVP, widok skośny z lewej strony",
-      "Brother P-touch PT-E310BTVP, widok skośny z prawej strony",
+      "Brother P-touch PT-E310BTVP — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-E310BTVP — widok z przodu",
+      "Brother P-touch PT-E310BTVP — widok pod kątem z drugiej strony",
       "Zestaw Brother P-touch PT-E310BTVP z walizką i akcesoriami",
       "Kable sieciowe oznaczone etykietami owijkowymi z taśmy TZe",
       "Żółta etykieta ostrzegawcza 230 V na obudowie urządzenia"
@@ -2907,18 +2911,18 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-e560btvp-przod.png",
-      "/images/products/brother-pt-e560btvp-lewy-skos.png",
-      "/images/products/brother-pt-e560btvp-prawy-skos.png",
-      "/images/products/brother-pt-e560btvp-zestaw.png",
+      "/images/products/brother/pt-e560bt-1.png",
+      "/images/products/brother/pt-e560bt-2.png",
+      "/images/products/brother/pt-e560bt-3.png",
+      "/images/products/brother/pt-e560btvp-zestaw.png",
       "/images/products/brother-pt-e560btvp-rozdzielnica.webp",
       "/images/products/brother-pt-e560btvp-kable-sieciowe.webp",
       "/images/products/brother-pt-e560btvp-etykieta-ostrzegawcza.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-E560BTVP, widok z przodu z klawiaturą i wyświetlaczem",
-      "Brother P-touch PT-E560BTVP, widok skośny z lewej strony",
-      "Brother P-touch PT-E560BTVP, widok skośny z prawej strony",
+      "Brother P-touch PT-E560BTVP — etykieciarka, widok pod kątem",
+      "Brother P-touch PT-E560BTVP — widok z przodu",
+      "Brother P-touch PT-E560BTVP — widok pod kątem z drugiej strony",
       "Zestaw Brother P-touch PT-E560BTVP z walizką, akumulatorem, kablem USB-C i dwiema taśmami",
       "Rozdzielnica z zabezpieczeniami opisanymi etykietami z taśmy TZe",
       "Kable sieciowe LAN oznaczone etykietami owijkowymi",
@@ -3124,17 +3128,17 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-e720bt-przod.png",
-      "/images/products/brother-pt-e720bt-lewy-skos.png",
-      "/images/products/brother-pt-e720bt-prawy-skos.png",
+      "/images/products/brother/pt-e720bt-1.png",
+      "/images/products/brother/pt-e720bt-2.png",
+      "/images/products/brother/pt-e720bt-3.png",
       "/images/products/brother-pt-e720bt-etykieta-ostrzegawcza.webp",
       "/images/products/brother-pt-e720bt-kable-sieciowe.webp",
       "/images/products/brother-pt-e720bt-rozlacznik.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-E720BT CUBE Pro, widok z przodu",
-      "Brother P-touch PT-E720BT, widok skośny z wylotem taśmy",
-      "Brother P-touch PT-E720BT, tył obudowy z okienkiem kasety",
+      "Brother P-touch PT-E720BT — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-E720BT — widok z przodu",
+      "Brother P-touch PT-E720BT — widok pod kątem, strona z okienkiem kasety",
       "Żółta etykieta ostrzegawcza 400 V na szafie elektrycznej",
       "Kable sieciowe oznaczone etykietami owijkowymi z taśmy TZe",
       "Etykieta rozdzielnicy pod wyłącznikiem obrotowym"
@@ -3287,17 +3291,17 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-e920bt-przod.png",
-      "/images/products/brother-pt-e920bt-lewy-skos.png",
-      "/images/products/brother-pt-e920bt-prawy-skos.png",
+      "/images/products/brother/pt-e920bt-1.png",
+      "/images/products/brother/pt-e920bt-2.png",
+      "/images/products/brother/pt-e920bt-3.png",
       "/images/products/brother-pt-e920bt-panel-krosowy.webp",
       "/images/products/brother-pt-e920bt-etykieta-ostrzegawcza.webp",
       "/images/products/brother-pt-e920bt-flagi-kablowe.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-E920BT CUBE Pro, widok z przodu",
-      "Brother P-touch PT-E920BT, widok skośny z wylotem taśmy",
-      "Brother P-touch PT-E920BT, tył obudowy z okienkiem kasety",
+      "Brother P-touch PT-E920BT — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-E920BT — widok z przodu",
+      "Brother P-touch PT-E920BT — widok pod kątem, strona z okienkiem kasety",
       "Kabel Cat6a z etykietą owijkową przy panelu krosowym",
       "Żółta etykieta ostrzegawcza 400 V na szafie elektrycznej",
       "Kable światłowodowe oznaczone etykietą flagową"
@@ -3454,14 +3458,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p300bt-bok.png",
-      "/images/products/brother-pt-p300bt-lewy-skos.png",
-      "/images/products/brother-pt-p300bt-prawy-skos.png"
+      "/images/products/brother/pt-p300bt-1.png",
+      "/images/products/brother/pt-p300bt-2.png",
+      "/images/products/brother/pt-p300bt-3.png"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-P300BT (CUBE), widok z boku z wylotem taśmy",
-      "Drukarka etykiet Brother PT-P300BT z napisem P-TOUCH CUBE na pokrywie",
-      "Drukarka etykiet Brother PT-P300BT z okienkiem kasety z taśmą TZe"
+      "Brother P-touch PT-P300BT — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-P300BT — widok z boku, szczelina wyjścia etykiety",
+      "Brother P-touch PT-P300BT — widok pod kątem, strona z okienkiem kasety"
     ],
     "tags": [
       "retail"
@@ -3571,12 +3575,12 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p710bt-lewy-skos.png",
-      "/images/products/brother-pt-p710bt-prawy-skos.png"
+      "/images/products/brother/pt-p710bt-1.png",
+      "/images/products/brother/pt-p710bt-2.png"
     ],
     "imageDescriptions": [
-      "Drukarka etykiet Brother PT-P710BT w widoku z lewej strony z wylotem taśmy",
-      "Drukarka etykiet Brother PT-P710BT z okienkiem kasety z taśmą TZe 24 mm"
+      "Brother P-touch PT-P710BT — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-P710BT — widok pod kątem, strona z okienkiem kasety"
     ],
     "tags": [
       "retail"
@@ -3695,17 +3699,17 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p910bt-przod.png",
-      "/images/products/brother-pt-p910bt-lewy-skos.png",
-      "/images/products/brother-pt-p910bt-prawy-skos.png",
+      "/images/products/brother/pt-p910bt-1.png",
+      "/images/products/brother/pt-p910bt-2.png",
+      "/images/products/brother/pt-p910bt-3.png",
       "/images/products/brother-pt-p910bt-biuro.webp",
       "/images/products/brother-pt-p910bt-sklep.webp",
       "/images/products/brother-pt-p910bt-sloiki.webp"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-P910BT, widok z przodu",
-      "Brother P-touch PT-P910BT CUBE Pro, biała obudowa, widok skośny",
-      "Brother P-touch PT-P910BT z wychodzącą wydrukowaną etykietą",
+      "Brother P-touch PT-P910BT — drukarka etykiet, widok pod kątem, z wysuniętą etykietą",
+      "Brother P-touch PT-P910BT — widok z przodu",
+      "Brother P-touch PT-P910BT — widok pod kątem z drugiej strony",
       "Drukarka Brother PT-P910BT w biurze, sterowana ze smartfona",
       "Drukarka Brother PT-P910BT na ladzie sklepu, projekt etykiety w telefonie",
       "Drukarka Brother PT-P910BT i słoik z etykietą wydrukowaną na taśmie TZe"
@@ -3841,14 +3845,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p750w-przod.png",
-      "/images/products/brother-pt-p750w-lewy-skos.png",
-      "/images/products/brother-pt-p750w-prawy-skos.png"
+      "/images/products/brother/pt-p750w-1.png",
+      "/images/products/brother/pt-p750w-2.png",
+      "/images/products/brother/pt-p750w-3.png"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-P750W — czarna drukarka etykiet z Wi-Fi, widok z przodu z wylotem taśmy",
-      "Drukarka etykiet Brother PT-P750W w widoku z lewej strony",
-      "Drukarka etykiet Brother PT-P750W z okienkiem kasety z taśmą TZe"
+      "Brother P-touch PT-P750W — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-P750W — widok z przodu",
+      "Brother P-touch PT-P750W — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "retail"
@@ -3970,14 +3974,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p900wc-przod.png",
-      "/images/products/brother-pt-p900wc-lewy-skos.png",
-      "/images/products/brother-pt-p900wc-prawy-skos.png"
+      "/images/products/brother/pt-p900wc-1.png",
+      "/images/products/brother/pt-p900wc-2.png",
+      "/images/products/brother/pt-p900wc-3.png"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-P900Wc — czarna drukarka etykiet do 36 mm z Wi-Fi, widok z przodu",
-      "Drukarka etykiet Brother PT-P900Wc w widoku z lewej strony",
-      "Drukarka etykiet Brother PT-P900Wc w widoku z prawej strony"
+      "Brother P-touch PT-P900Wc — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-P900Wc — widok z przodu",
+      "Brother P-touch PT-P900Wc — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "magazyn",
@@ -4124,14 +4128,14 @@ export const brotherPtouchProducts: Product[] = [
     "manufacturerId": "brother",
     "availability": "unavailable",
     "images": [
-      "/images/products/brother-pt-p950nw-przod.png",
-      "/images/products/brother-pt-p950nw-lewy-skos.png",
-      "/images/products/brother-pt-p950nw-prawy-skos.png"
+      "/images/products/brother/pt-p950nw-1.png",
+      "/images/products/brother/pt-p950nw-2.png",
+      "/images/products/brother/pt-p950nw-3.png"
     ],
     "imageDescriptions": [
-      "Brother P-touch PT-P950NW, widok z przodu",
-      "Brother P-touch PT-P950NW, widok skośny z lewej strony",
-      "Brother P-touch PT-P950NW, widok skośny z prawej strony"
+      "Brother P-touch PT-P950NW — drukarka etykiet, widok pod kątem",
+      "Brother P-touch PT-P950NW — widok z przodu",
+      "Brother P-touch PT-P950NW — widok pod kątem z drugiej strony"
     ],
     "tags": [
       "magazyn",

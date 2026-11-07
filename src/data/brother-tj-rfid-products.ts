@@ -69,7 +69,12 @@ export const brotherTjRfidProducts: Product[] = [
     id: slug, slug, name: `Brother ${model}`, seoH1: `Brother ${model}`,
     ...tjCopy[model],
     categoryId: 'drukarki-etykiet', subcategoryIds: ['drukarki-rfid', 'przemyslowe-drukarki-etykiet', 'termotransferowe-drukarki-etykiet'], manufacturerId: 'brother',
-    images: ['/images/products/brother-tj-rfid-framed.webp'], imageDescriptions: [`Brother ${model} — przemysłowa drukarka RFID z ekranem dotykowym i przednią osłoną toru RFID`],
+    images: ['/images/products/brother/tj-ekran-1.png', '/images/products/brother/tj-ekran-2.png', '/images/products/brother/tj-ekran-3.png'],
+    imageDescriptions: [
+      `Brother ${model} — drukarka etykiet RFID, widok pod kątem`,
+      `Brother ${model} — widok z przodu, ekran dotykowy`,
+      `Brother ${model} — widok pod kątem, pokrywa z okienkiem`,
+    ],
     tags: ['magazyn', 'logistyka', 'produkcja'], availability: 'unavailable', isNew: true, isBestseller: false,
     specifications: [
       { name: 'Part Number', value: pn }, { name: 'Rozdzielczość', value: `${dpi} dpi` },
