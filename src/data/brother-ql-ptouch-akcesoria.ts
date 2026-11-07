@@ -114,8 +114,9 @@ Zestawy PT-E310BTVP i PT-E560BTVP nie zawierają zasilacza. Zasilacz ładuje [ak
 ## Prędkość druku
 
 Z zasilaczem PT-E560BT drukuje z prędkością do 30 mm/s. Na samym akumulatorze PT-E560BT drukuje do 20 mm/s. PT-E310BT drukuje do 20 mm/s przy obu źródłach zasilania.`,
-    // Jedyne zdjęcie całego zasilacza w galerii producenta pokazuje wtyczkę brytyjską, a karta dotyczy wersji EU.
-    images: [],
+    // Zbliżenie zamiast pełnego zdjęcia: jedyne pełne zdjęcie producenta pokazuje wtyczkę brytyjską, a karta dotyczy wersji EU.
+    images: ['/images/products/brother/pa-ad-004-1.png'],
+    imageDescriptions: ['Brother PA-AD-004 — zasilacz z przewodem USB Type-C, zbliżenie'],
     tags: ['produkcja'],
     specifications: [
       { name: 'Part Number', value: 'PAAD004EU' },
