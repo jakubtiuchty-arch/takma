@@ -104,6 +104,7 @@ import { getBrandBySlug as getServiceBrandBySlug, brandUrl } from '@/app/serwis/
 import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
+import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptouch'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
 import VariantQuickPick from './VariantQuickPick'
@@ -118,6 +119,8 @@ interface ProductPageProps {
 }
 
 const accessoryNavigation = buildAccessoryNavigation(products)
+// Brother QL drukuje na rolkach DK, a P-touch na taśmach TZe, więc etykiety Zebry do nich nie pasują.
+const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
 function pickVariant(product: ReturnType<typeof getProductBySlug>, pn: string | string[] | undefined) {
@@ -394,6 +397,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Kolorowa drukarka (Epson ColorWorks): etykiety Zebry do niej nie pasują, w miejscu sekcji etykiet
   // idą tusze i nośniki z compatibleAccessories.
   const isColorPrinter = product.subcategoryIds?.includes('kolorowe-drukarki-etykiet') ?? false
+  const brotherWlasneMaterialy = brotherWlasneMaterialyIds.has(product.id)
   // Wymagany rdzeń taśmy: przemysłowe = 25 mm (1"), biurkowe = 12 mm (1/2").
   // Rolka 12 mm nie wejdzie na wieszaki przemysłówki i odwrotnie — filtrujemy rekomendowane taśmy.
   const printerRibbonCore = product.subcategoryIds?.includes('przemyslowe-drukarki-etykiet')
@@ -453,7 +457,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     : []
 
   // Widoczność kotwic nawigacji = sekcje materiałów, które faktycznie się renderują niżej.
-  const showLabelsNav = (isLabelPrinter && !isTTprinter) || (isTTprinter && ttPaperIds.length > 0) || compatibleConsumables.length > 0
+  const showLabelsNav = (isLabelPrinter && !isTTprinter && !brotherWlasneMaterialy) || (isTTprinter && ttPaperIds.length > 0) || compatibleConsumables.length > 0
   const showFoilNav = (isTTprinter && ttFoilIds.length > 0) || compatibleFoilLabels.length > 0
   const showRibbonNav = printerRibbons.length > 0
 
@@ -1235,7 +1239,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                         </li>
                       ))}
                     </ul>
-                    {isLabelPrinter && (
+                    {isLabelPrinter && !brotherWlasneMaterialy && (
                       <div className="px-4 py-3 border-t border-slate-200 flex items-center justify-between gap-3 flex-wrap text-sm">
                         <span className="text-gray-600">{isColorPrinter ? 'Tusze i rolka startowa w zestawie; kolejne etykiety dokupujesz osobno' : `Bez etykiet${isTTprinter ? ' i taśmy' : ''}: dokupujesz osobno`}</span>
                         {product.starterKits?.length ? (
@@ -1885,7 +1889,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 a) drukarka DT (termiczna, w tym mobilne) → PrinterCompatibleLabels — etykiety
                    termiczne filtrowane do szerokości głowicy (live cena/dostępność)
                 b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
-                c) drukarki kart/opasek → RelatedProducts (taśmy/opaski) */}
+                c) drukarki kart/opasek → RelatedProducts (taśmy/opaski)
+                Wyjątek: Brother QL i P-touch nie mają sekcji etykiet (własne rolki DK i taśmy TZe). */}
             {rfidLabelIds.length > 0 && (
               <PrinterMaterialVariants
                 id="etykiety-rfid"
@@ -1922,10 +1927,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
             {/* Jedna karta z wersjami termiczną i termotransferową (np. Zebra ZD611-HC): sekcja TT niżej
                 pokazuje tylko etykiety termotransferowe, więc etykiety termiczne dokładamy osobno. */}
-            {isLabelPrinter && isTTprinter && !isColorPrinter && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
+            {isLabelPrinter && isTTprinter && !isColorPrinter && !brotherWlasneMaterialy && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
               <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             )}
-            {isLabelPrinter && !isTTprinter && !isColorPrinter ? (
+            {brotherWlasneMaterialy ? null : isLabelPrinter && !isTTprinter && !isColorPrinter ? (
               <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
               <PrinterMaterialVariants
