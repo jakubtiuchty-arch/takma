@@ -405,7 +405,8 @@ export const rfidTerminalProducts: Product[] = [
       "zebra-tc201-hdst-usbc-ptt1-01"
     ],
     "relatedProducts": [
-      "zebra-tc22r"
+      "zebra-tc22r",
+      "bluebird-x40"
     ],
     "faq": [
       {

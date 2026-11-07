@@ -19,18 +19,19 @@ export const rfidTerminalCategory: Subcategory = {
     "zebra-ws501-r",
     "newland-mt93-megattera-pro-uhf",
     "bluebird-s10-rfid",
+    "bluebird-x40",
     "unitech-ea530-uhf"
   ],
-  "productCount": 9
+  "productCount": 10
 }
 
 import type { SubcategoryRichContent } from './subcategory-content'
 
 export const rfidTerminalContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-23',
+  updatedAt: '2026-11-07',
   definition: {
     heading: 'Co to jest terminal RFID?',
-    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. [Newland MT93 Megattera Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma uchwyt z czytnikiem Impinj E710, baterię 10 000 mAh i 4G. [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) ma czytnik UHF z układem Impinj E710 w uchwycie pistoletowym i pasmo 865–868 MHz. [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF z układem Impinj E310 o zasięgu do 1,8 m, skaner 1D/2D i modem 4G LTE. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
+    content: 'Terminal RFID to komputer mobilny z czytnikiem znaczników radiowych. Łączy odczyt z aplikacją magazynową, ekranem i komunikacją z systemem firmy. UHF RFID pozwala identyfikować oznakowane towary bez celowania w nadruk kodu kreskowego.\n\nW tej kategorii znajdziesz urządzenia z wbudowanym UHF RFID. [Zebra TC22R](/produkt/zebra-tc22r) służy do szybkiego odczytu wielu znaczników. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) ma obudowę smartfona, łączność 5G i czytnik do pracy z małej odległości. [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid) łączy wbudowany UHF krótkiego zasięgu ze skanerem SE4720 i Wi-Fi 6E. [Zebra MC3330xR](/produkt/zebra-mc3330xr) i [MC3390xR](/produkt/zebra-mc3390xr) mają fizyczną klawiaturę oraz wbudowany UHF. [Zebra WS501-R](/produkt/zebra-ws501-r) to terminal ubieralny do pracy na dłoni. [Newland MT93 Megattera Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma uchwyt z czytnikiem Impinj E710, baterię 10 000 mAh i 4G. [Bluebird S10 RFID](/produkt/bluebird-s10-rfid) ma czytnik UHF z układem Impinj E710 w uchwycie pistoletowym i pasmo 865–868 MHz. [Bluebird X40](/produkt/bluebird-x40) ma format smartfona, ekran AMOLED 6,11 cala, 5G i wbudowany czytnik UHF do ok. 1,2 m, który odczytuje do 50 tagów na sekundę. [Unitech EA530 UHF](/produkt/unitech-ea530-uhf) ma wbudowany czytnik UHF z układem Impinj E310 o zasięgu do 1,8 m, skaner 1D/2D i modem 4G LTE. Samo NFC w zwykłym terminalu nie oznacza obsługi etykiet UHF.\n\nDo przygotowania oznaczeń dobierz [drukarkę RFID](/drukarki-rfid) i [etykiety RFID](/etykiety-rfid-zebra). Zgodność czytnika z protokołem nie potwierdza jeszcze parametrów druku ani możliwości kodowania etykiety w konkretnej drukarce.',
   },
   buyingGuide: {
     heading: 'Jak wybrać terminal RFID do inwentaryzacji?',
@@ -57,6 +58,7 @@ export const rfidTerminalContent: SubcategoryRichContent = {
   comparisons: [
     { title: 'MT93 Pro UHF czy TC22R?', content: '[Newland MT93 Pro UHF](/produkt/newland-mt93-megattera-pro-uhf) ma Android 13, pamięć 4/64 GB, modem 4G i baterię 10 000 mAh. [Zebra TC22R](/produkt/zebra-tc22r) to alternatywa z ekranem 6 cali i innym wyposażeniem. Porównaj zgodność aplikacji oraz sposób ładowania.' },
     { title: 'TC22R czy EM45 RFID?', content: '[TC22R](/produkt/zebra-tc22r) ma uchwyt pistoletowy, skaner SE4710 i czytnik do szybkiego liczenia znaczników. [EM45 RFID](/produkt/zebra-em45-rfid) ma format smartfona, 5G i UHF do 1,2 m. Wybór zależy od sposobu pracy.' },
+    { title: 'X40 czy EM45 RFID?', content: '[Bluebird X40](/produkt/bluebird-x40) i [Zebra EM45 RFID](/produkt/zebra-em45-rfid) mają wbudowany UHF do 1,2 m, 5G i Wi-Fi 6E. X40 odczytuje do 50 tagów/s, ma ekran AMOLED 6,11 cala i pracuje od -20°C. EM45 RFID odczytuje do 20 tagów/s i ma ekran 6,7 cala.' },
   ],
   faq: [
     { question: 'Czy terminal RFID działa bez widocznego kodu kreskowego?', answer: 'Tak. UHF RFID odczytuje układ radiowy znacznika. Odczyt nadal zależy od rodzaju etykiety, materiału i otoczenia.' },

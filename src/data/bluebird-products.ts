@@ -1345,7 +1345,8 @@ export const bluebirdProducts: Product[] = [
       "zebra-tc22r",
       "newland-mt93-megattera-pro-uhf",
       "zebra-tc53e-rfid",
-      "zebra-em45-rfid"
+      "zebra-em45-rfid",
+      "bluebird-x40"
     ],
     "downloads": [
       {
@@ -1379,6 +1380,239 @@ export const bluebirdProducts: Product[] = [
     ],
     "createdAt": "2026-10-23",
     "updatedAt": "2026-10-24"
+  },
+  {
+    "id": "bluebird-x40",
+    "slug": "bluebird-x40",
+    "name": "Bluebird X40",
+    "seoH1": "Bluebird X40",
+    "seoTitle": "Terminal RFID Bluebird X40 z UHF, ekranem AMOLED 6,11″ i 5G",
+    "seoDescription": "Bluebird X40: terminal z Androidem 14, wbudowanym UHF RFID (do 1,2 m, 50 tagów/s), AMOLED 6,11″, 5G, Wi-Fi 6E i IP68. 199 g. PN: X40-A5LGWRW.",
+    "shortDescription": "Bluebird X40 — terminal w formacie smartfona z wbudowanym czytnikiem UHF RFID, ekranem AMOLED 6,11″, 5G i Wi-Fi 6E. Waży 199 g i ma klasę IP68.",
+    "description": "Bluebird X40 to dotykowy terminal z Androidem 14 i wbudowanym czytnikiem UHF RFID. Ma format smartfona: wymiary 155,2 × 74,2 × 12 mm i masę 199 g. Obsługuje się go jedną ręką.\n\nCzytnik UHF odczytuje do 50 tagów na sekundę z odległości do ok. 1,2 m. To czytnik krótkiego zasięgu. Sprzedawca sprawdza nim towar na półce, weryfikuje produkt przy kasie i liczy zapasy w sklepie. Wersja X40-A5LGWRW pracuje w europejskim paśmie ETSI 865–868 MHz. Do inwentaryzacji tysięcy tagów z kilku metrów służy czytnik z uchwytem pistoletowym, np. [Bluebird S10 RFID](/produkt/bluebird-s10-rfid).\n\nKody 1D i 2D odczytuje aparat 8 MP z autofokusem PDAF, zielonym celownikiem LED i oświetleniem 50°. Czujnik ToF przyspiesza ustawianie ostrości, a skaner czyta kilka kodów jednocześnie. Skanowanie uruchamiają dwustopniowe przyciski na obu bokach obudowy. X40 nie ma osobnego modułu skanującego. Terminal z modułem SE4710 to [Bluebird S20](/produkt/bluebird-s20).\n\nEkran AMOLED 6,11″ ma rozdzielczość 1080 × 2340 i jasność 400 nitów, a w trybie zewnętrznym 600 nitów. Reaguje na palec, rękawicę i rysik, a krople wody nie wywołują fałszywych dotknięć. Ekran chroni szkło Corning Gorilla Glass z powłoką przeciw odciskom palców. Okno skanera ma Gorilla Glass 5.\n\nNFC odczytuje karty ISO 14443 A i B, FeliCa i ISO 15693 od strony ekranu. Obsługuje emulację kart (HCE), EMV Contactless L1, Apple VAS, Google Smart Tap i CPoC. Z aplikacją płatniczą zgodną z CPoC terminal przyjmuje płatności zbliżeniowe bez osobnego czytnika kart.\n\nProcesor Qualcomm QC6490 ma 8 rdzeni, taktowanie 2,7 GHz i moc 12,15 TOPS (INT8) do obliczeń AI na urządzeniu. Pamięć to 6 GB LPDDR5 i 128 GB UFS 3.1. Karta microSD dodaje do 2 TB. X40 łączy się przez Wi-Fi 6E z anteną 2×2 MU-MIMO, Bluetooth 5.3 i 5G. Sieć komórkowa działa z nano-SIM albo eSIM w trybie Dual SIM Dual Standby, także w prywatnych sieciach LTE i 5G. Położenie wyznacza GNSS: GPS, GLONASS, Galileo, BeiDou i QZSS.\n\nBateria 4320 mAh (16,72 Wh) obsługuje szybkie ładowanie. Pracownik wymienia ją sam w trybie warm swap, bez utraty połączenia z siecią. Na dole obudowy jest złącze USB-C 3.1 OTG i styki ładowania, z boku drugie styki, a z tyłu 8-pinowe złącze komunikacyjne. Połączenie Ethernet zapewnia stacja z portem Ethernet. X40 korzysta z akcesoriów modelu Bluebird HF550X, m.in. ze stacji 1- i 4-gniazdowych.\n\nObudowa ma klasę IP68. Terminal wytrzymuje upadki z 1,5 m na płytki na betonie w temperaturze od −10°C do +50°C, zgodnie z MIL-STD-810H. W osłonie Rugged Case wytrzymuje upadki z 1,8 m. Test przewrotów z 0,5 m obejmuje 300 cykli bez osłony i 600 cykli w osłonie. X40 pracuje w temperaturze od −20°C do +50°C.\n\nPakiet BOS konfiguruje i nadzoruje terminale. BOS Provisioning przygotowuje urządzenie z pliku konfiguracyjnego albo po zeskanowaniu kodu QR. BOS NEST zarządza grupami urządzeń i dostępem użytkowników. BOS PTT i BOS VoIP obsługują rozmowy przez Wi-Fi. Rozmowę PTT uruchamia osobny przycisk. BOS DeviceFinder pomaga odnaleźć zgubiony terminal. X40 współpracuje z systemami EMM AirWatch, MobileIron, MobiControl, 42Gears i Scalefusion oraz z oprogramowaniem RFID Nedap, Checkpoint, Sensormatic i Mojix.\n\nW handlu X40 służy do sprawdzania cen i stanów, kontroli przy kasie i inwentaryzacji cyklicznej. W hotelach przyjmuje zamówienia i obsługuje karty lojalnościowe. Na lotniskach weryfikuje bilety przy odprawie i wejściu na pokład. Kurierzy potwierdzają nim odbiór i doręczenie przesyłek, a szpitale używają go w aptece i do śledzenia pacjentów.\n\nFabrycznie X40 ma Androida 14. Zapowiedziane są aktualizacje do Androida 16 i 18. Na terminal udzielamy 12 miesięcy gwarancji.\n\n## Co jest potrzebne do użycia?\n\n**Ładowanie z gniazdka — sprzedawane osobno**\n\n- [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041)\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)",
+    "categoryId": "terminale-mobilne",
+    "subcategoryIds": [],
+    "manufacturerId": "bluebird",
+    "sameAs": "https://www.bluebirdcorp.com/products/RFID-Solutions/Short-Range-RFID/X40",
+    "priceFrom": 3337.05,
+    "availability": "on-order",
+    "images": [
+      "/images/products/X40-A5LGWRW.png",
+      "/images/products/X40-A5LGWRW-2.png",
+      "/images/products/X40-A5LGWRW-3.png"
+    ],
+    "imageDescriptions": [
+      "Bluebird X40 — widok z przodu, ekran AMOLED 6,11 cala",
+      "Bluebird X40 — przód pod kątem, prawy bok z przyciskiem skanowania",
+      "Bluebird X40 — tył pod kątem: aparat 50 MP i oznaczenie anteny RFID"
+    ],
+    "tags": [
+      "retail",
+      "logistyka",
+      "healthcare"
+    ],
+    "isNew": true,
+    "isBestseller": false,
+    "specifications": [
+      {
+        "name": "RFID",
+        "value": "UHF, wbudowany; wersja ETSI, 865–868 MHz (Europa)"
+      },
+      {
+        "name": "Szybkość odczytu RFID",
+        "value": "Do 50 tagów/s"
+      },
+      {
+        "name": "Zasięg odczytu RFID",
+        "value": "Do ok. 1,2 m"
+      },
+      {
+        "name": "System operacyjny",
+        "value": "Android 14; zapowiedziane aktualizacje do Androida 16 i 18"
+      },
+      {
+        "name": "Procesor",
+        "value": "Qualcomm Snapdragon QC6490, 8 rdzeni, 2,7 GHz; 12,15 TOPS (INT8)"
+      },
+      {
+        "name": "Pamięć RAM / Flash",
+        "value": "6 GB LPDDR5 / 128 GB UFS 3.1; microSD do 2 TB"
+      },
+      {
+        "name": "Wyświetlacz",
+        "value": "6,11″ AMOLED, 1080 × 2340; 400 nitów, w trybie zewnętrznym 600 nitów"
+      },
+      {
+        "name": "Panel dotykowy",
+        "value": "Pojemnościowy; palec, rękawica, rysik (sprzedawany osobno); odporny na krople wody; Corning Gorilla Glass z powłoką przeciw odciskom"
+      },
+      {
+        "name": "Skaner",
+        "value": "Aparat 8 MP z autofokusem PDAF i czujnikiem ToF; zielony celownik LED, oświetlenie 50°; odczyt kilku kodów naraz; okno Gorilla Glass 5"
+      },
+      {
+        "name": "Aparaty",
+        "value": "Tylny 50 MP z autofokusem PDAF, OIS i lampą LED; przedni 8 MP"
+      },
+      {
+        "name": "Wi-Fi",
+        "value": "Wi-Fi 6E (802.11 a/b/g/n/ac/ax), 2×2 MU-MIMO, do 1200 Mb/s"
+      },
+      {
+        "name": "Łączność",
+        "value": "5G, Wi-Fi 6E, Bluetooth 5.3, NFC; Ethernet w stacji z portem Ethernet"
+      },
+      {
+        "name": "SIM",
+        "value": "nano-SIM + eSIM, Dual SIM Dual Standby"
+      },
+      {
+        "name": "GNSS",
+        "value": "GPS, GLONASS, Galileo, BeiDou, QZSS; a-GPS"
+      },
+      {
+        "name": "NFC",
+        "value": "ISO 14443 A/B, FeliCa, ISO 15693; emulacja kart (HCE); EMV Contactless L1, Apple VAS, Google Smart Tap, CPoC"
+      },
+      {
+        "name": "Złącza",
+        "value": "USB-C 3.1 OTG, 8-pinowe złącze komunikacyjne z tyłu, styki ładowania na dole i z boku"
+      },
+      {
+        "name": "Przyciski",
+        "value": "Zasilanie, głośność, dwustopniowe przyciski skanowania po obu bokach, przycisk PTT"
+      },
+      {
+        "name": "Audio",
+        "value": "3 mikrofony z redukcją szumów, głośnik, zestawy słuchawkowe USB-C i Bluetooth, HD Voice"
+      },
+      {
+        "name": "Biometria",
+        "value": "Rozpoznawanie twarzy; czytnik linii papilarnych w boku obudowy w wybranych wersjach"
+      },
+      {
+        "name": "Czujniki",
+        "value": "Światła, zbliżeniowy, akcelerometr, e-kompas, żyroskop, ciśnienia"
+      },
+      {
+        "name": "Bateria",
+        "value": "Wymienna, 3,87 V, 4320 mAh / 16,72 Wh; wymiana w trybie warm swap; szybkie ładowanie"
+      },
+      {
+        "name": "Klasa szczelności",
+        "value": "IP68"
+      },
+      {
+        "name": "Odporność na upadki",
+        "value": "1,5 m na płytki na betonie (od -10°C do +50°C, MIL-STD-810H); 1,8 m w osłonie Rugged Case"
+      },
+      {
+        "name": "Test przewrotów",
+        "value": "300 cykli z 0,5 m; 600 cykli w osłonie Rugged Case"
+      },
+      {
+        "name": "Temperatura pracy",
+        "value": "-20°C do +50°C"
+      },
+      {
+        "name": "Temperatura przechowywania",
+        "value": "-40°C do +70°C"
+      },
+      {
+        "name": "Wilgotność",
+        "value": "95% bez kondensacji"
+      },
+      {
+        "name": "Wymiary",
+        "value": "155,2 × 74,2 × 12 mm"
+      },
+      {
+        "name": "Masa",
+        "value": "199 g"
+      },
+      {
+        "name": "Oprogramowanie",
+        "value": "BOS: Provisioning, NEST, Kiosk, OTA Update, DeviceFinder, IP Wedge, PowerManager, WiFine, PTT, VoIP, FastRead"
+      },
+      {
+        "name": "Gwarancja",
+        "value": "12 miesięcy"
+      }
+    ],
+    "applications": [
+      "Sprawdzanie cen i stanów na sali sprzedaży",
+      "Weryfikacja towaru z tagiem UHF przy kasie",
+      "Inwentaryzacja cykliczna w sklepie",
+      "Odprawa pasażerów i kontrola bagażu",
+      "Potwierdzanie odbioru i doręczenia przesyłek",
+      "Obsługa apteki szpitalnej i śledzenie pacjentów"
+    ],
+    "variants": [
+      {
+        "partNumber": "X40-A5LGWRW",
+        "name": "X40-A5LGWRW, 6/128 GB, 5G, UHF RFID ETSI (Europa)",
+        "attributes": {},
+        "priceFrom": 3337.05,
+        "availability": "on-order"
+      }
+    ],
+    "variantAttributeTooltips": {},
+    "compatibleAccessories": [],
+    "relatedAccessories": [
+      "bluebird-602010041",
+      "bluebird-602020024",
+      "bluebird-603010005"
+    ],
+    "relatedProducts": [
+      "bluebird-s10-rfid",
+      "zebra-em45-rfid",
+      "zebra-tc53e-rfid",
+      "bluebird-s20"
+    ],
+    "downloads": [
+      {
+        "name": "Karta katalogowa Bluebird X40 (EN)",
+        "type": "datasheet",
+        "url": "/datasheets/bluebird-x40.pdf",
+        "size": "305 KB"
+      }
+    ],
+    "faq": [
+      {
+        "question": "Jaki zasięg ma czytnik RFID w Bluebird X40?",
+        "answer": "Wbudowany czytnik UHF odczytuje tagi z odległości do ok. 1,2 m, z szybkością do 50 tagów na sekundę. Rzeczywisty zasięg zależy od tagu, materiału opakowania i otoczenia."
+      },
+      {
+        "question": "W jakim paśmie RFID pracuje X40-A5LGWRW?",
+        "answer": "W europejskim paśmie ETSI 865–868 MHz. Wersji na pasmo 900 MHz (X40-A5LCWRN) nie oferujemy, bo nie jest przeznaczona do pracy w Unii Europejskiej."
+      },
+      {
+        "question": "Czy Bluebird X40 ma skaner kodów kreskowych?",
+        "answer": "Kody 1D i 2D odczytuje aparat 8 MP z autofokusem, czujnikiem ToF i zielonym celownikiem LED. X40 nie ma osobnego modułu skanującego. Terminal Bluebird z modułem SE4710 to [S20](/produkt/bluebird-s20)."
+      },
+      {
+        "question": "Czym X40 różni się od Bluebird S10 RFID?",
+        "answer": "X40 ma format smartfona, waży 199 g i czyta tagi z bliska, do ok. 1,2 m. [S10 RFID](/produkt/bluebird-s10-rfid) ma uchwyt pistoletowy z czytnikiem o zasięgu ponad 13 m i szybkości ponad 1300 tagów/s. X40 sprawdza pojedyncze towary przy kliencie, a S10 RFID liczy duże ilości tagów w magazynie."
+      },
+      {
+        "question": "Bluebird X40 czy Zebra EM45 RFID?",
+        "answer": "Oba terminale mają wbudowany UHF do 1,2 m, 5G i Wi-Fi 6E. X40 odczytuje do 50 tagów/s, ma ekran AMOLED 6,11″ i pracuje od −20°C. [Zebra EM45 RFID](/produkt/zebra-em45-rfid) odczytuje do 20 tagów/s, ma ekran 6,7″, pamięć 8/128 GB i pracuje od 0°C."
+      },
+      {
+        "question": "Ile pamięci ma X40-A5LGWRW?",
+        "answer": "6 GB RAM LPDDR5 i 128 GB pamięci UFS 3.1. Karta microSD dodaje do 2 TB."
+      },
+      {
+        "question": "Czy baterię X40 można wymienić w trakcie pracy?",
+        "answer": "Tak. Bateria 4320 mAh jest wymienna i obsługuje tryb warm swap, więc terminal nie traci połączenia z siecią podczas wymiany. Obsługuje też szybkie ładowanie."
+      },
+      {
+        "question": "Czy X40 przyjmuje płatności zbliżeniowe?",
+        "answer": "NFC w X40 obsługuje EMV Contactless L1, Apple VAS, Google Smart Tap i CPoC. Płatności kartą na samym terminalu wymagają aplikacji płatniczej zgodnej z CPoC."
+      }
+    ],
+    "createdAt": "2026-11-07",
+    "updatedAt": "2026-11-07"
   },
   {
     "id": "bluebird-ef551",
@@ -2630,9 +2864,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Zasilacz sieciowy 5 V / 3 A Bluebird",
     "seoH1": "Zasilacz sieciowy 5 V / 3 A Bluebird",
     "seoTitle": "Zasilacz sieciowy 5 V / 3 A Bluebird — 602010041",
-    "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) do terminali S10, S20, S50, S70, EF551, EK430 i tabletów T30, T10; wtyczka i kabel osobno.",
+    "seoDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird (602010041) do terminali S10, S20, S50, S70, EF551, EK430, X40 i tabletów T30, T10; wtyczka i kabel osobno.",
     "shortDescription": "Zasilacz sieciowy 5 V / 3 A Bluebird — ładowanie terminala albo tabletu T30 i T10 z gniazdka przez USB, z wymienną wtyczką sieciową. PN 602010041.",
-    "description": "Zasilacz sieciowy 5 V / 3 A (typ B) ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Ma wyjście USB-A i wymienne wtyczki sieciowe; w Polsce stosuje się wtyczkę EU. Z terminalem łączy go kabel USB-A – USB-C.\n\nPasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551) i [Bluebird EK430](/produkt/bluebird-ek430). Żaden z nich nie ma zasilacza w zestawie. Zasilacz ładuje też tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10); tablety mają własny zasilacz w zestawie, więc ten służy jako zapasowy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
+    "description": "Zasilacz sieciowy 5 V / 3 A (typ B) ładuje terminal Bluebird bezpośrednio z gniazdka, bez stacji. Ma wyjście USB-A i wymienne wtyczki sieciowe; w Polsce stosuje się wtyczkę EU. Z terminalem łączy go kabel USB-A – USB-C.\n\nPasuje do terminali [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430) i [Bluebird X40](/produkt/bluebird-x40). Żaden z nich nie ma zasilacza w zestawie. Zasilacz ładuje też tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10); tablety mają własny zasilacz w zestawie, więc ten służy jako zapasowy.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Wtyczka EU do zasilacza Bluebird 5 V / 3 A (602020024)](/produkt/bluebird-602020024)\n- [Kabel USB-A – USB-C Bluebird (603010005)](/produkt/bluebird-603010005)\n\nWtyczka i kabel nie są dołączone do zasilacza.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2660,7 +2894,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird X40, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Napięcie i prąd",
@@ -2686,6 +2920,7 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s70-explosion-protection",
       "bluebird-s10",
       "bluebird-s10-rfid",
+      "bluebird-x40",
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-rfr901",
@@ -2734,7 +2969,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird X40, Bluebird EF551, Bluebird EK430, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Typ wtyczki",
@@ -2756,6 +2991,7 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s70-explosion-protection",
       "bluebird-s10",
       "bluebird-s10-rfid",
+      "bluebird-x40",
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-rfr901",
@@ -2774,9 +3010,9 @@ export const bluebirdAccessories: Product[] = [
     "name": "Kabel USB-A – USB-C Bluebird",
     "seoH1": "Kabel USB-A – USB-C Bluebird",
     "seoTitle": "Kabel USB-A – USB-C Bluebird — 603010005",
-    "seoDescription": "Kabel USB-A – USB-C Bluebird 1 m (603010005), USB 3.0: ładowanie i transmisja danych terminali S10, S20, S50, S70, EF551, EK430 i SF650.",
+    "seoDescription": "Kabel USB-A – USB-C Bluebird 1 m (603010005), USB 3.0: ładowanie i transmisja danych terminali S10, S20, S50, S70, EF551, EK430, SF650 i X40.",
     "shortDescription": "Kabel USB-A – USB-C Bluebird — 1 m, USB 3.0, do ładowania z zasilacza lub ładowarki samochodowej i do transmisji danych. PN 603010005.",
-    "description": "Kabel USB-A – USB-C o długości 1 m przesyła prąd ładowania i dane w standardzie USB 3.0. Łączy terminal z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową [Ładowarka samochodowa Bluebird 5 V / 4 A, 2 × USB-A (602010023)](/produkt/bluebird-602010023) albo z komputerem. W stacjach EF551 z portem USB służy do komunikacji ze stacją.\n\nTerminale Bluebird nie mają kabla w zestawie. Kabel pasuje do modeli ze złączem USB-C: [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430) i [Bluebird SF650](/produkt/bluebird-sf650). Tym samym kablem ładuje się tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10), które mają własny kabel w zestawie.",
+    "description": "Kabel USB-A – USB-C o długości 1 m przesyła prąd ładowania i dane w standardzie USB 3.0. Łączy terminal z zasilaczem [Zasilacz sieciowy 5 V / 3 A Bluebird (602010041)](/produkt/bluebird-602010041), z ładowarką samochodową [Ładowarka samochodowa Bluebird 5 V / 4 A, 2 × USB-A (602010023)](/produkt/bluebird-602010023) albo z komputerem. W stacjach EF551 z portem USB służy do komunikacji ze stacją.\n\nTerminale Bluebird nie mają kabla w zestawie. Kabel pasuje do modeli ze złączem USB-C: [Bluebird S10](/produkt/bluebird-s10), [Bluebird S10 RFID](/produkt/bluebird-s10-rfid), [Bluebird S20](/produkt/bluebird-s20), [Bluebird S50](/produkt/bluebird-s50), [Bluebird S70](/produkt/bluebird-s70), [Bluebird S70 Explosion Protection](/produkt/bluebird-s70-explosion-protection), [Bluebird EF551](/produkt/bluebird-ef551), [Bluebird EK430](/produkt/bluebird-ek430), [Bluebird SF650](/produkt/bluebird-sf650) i [Bluebird X40](/produkt/bluebird-x40). Tym samym kablem ładuje się tablety [Bluebird T30](/produkt/bluebird-t30) i [Bluebird T10](/produkt/bluebird-t10), które mają własny kabel w zestawie.",
     "categoryId": "akcesoria",
     "subcategoryIds": [
       "kable-zasilacze-terminali",
@@ -2804,7 +3040,7 @@ export const bluebirdAccessories: Product[] = [
       },
       {
         "name": "Kompatybilność",
-        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird EF551, Bluebird EK430, Bluebird SF650, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
+        "value": "Bluebird S20, Bluebird S50, Bluebird S70, Bluebird S70 Explosion Protection, Bluebird S10, Bluebird S10 RFID, Bluebird X40, Bluebird EF551, Bluebird EK430, Bluebird SF650, Bluebird RFR901, Bluebird RFR900, Bluebird T30, Bluebird T10"
       },
       {
         "name": "Złącza",
@@ -2830,6 +3066,7 @@ export const bluebirdAccessories: Product[] = [
       "bluebird-s70-explosion-protection",
       "bluebird-s10",
       "bluebird-s10-rfid",
+      "bluebird-x40",
       "bluebird-ef551",
       "bluebird-ek430",
       "bluebird-sf650",
