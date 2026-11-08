@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/db'
-import { kursEur } from '@/lib/koncesje'
+import { kursEur, czyPozaTradeUp } from '@/lib/koncesje'
 import { etykietaPowiazania } from '@/lib/koncesja-etykieta'
 import ImportKoncesji from './ImportKoncesji'
 import WierszPozycji from './WierszPozycji'
@@ -36,6 +36,9 @@ export default async function KoncesjePage() {
     // Lista Trade UP nie ma cen ani limitów — tylko rabat od ceny katalogowej,
     // z której kwotę liczy dopiero kreator oferty.
     const tradeUp = k.source === 'TRADEUP'
+    // Drukarki kart Zebra wyłączone z Trade UP (8.11.2026) — lista z bazy może
+    // je jeszcze mieć, ale kreator oferty ich nie podpowiada, więc i tu nie stoją.
+    const pozycje = tradeUp ? k.items.filter((i) => !czyPozaTradeUp(i.partNumber, i.description)) : k.items
     const nazwaDokumentu =
       k.source === 'CENNIK'
         ? `cennik ${k.distributor ?? k.requestId}`
@@ -75,7 +78,7 @@ export default async function KoncesjePage() {
                 {k.source === 'CENNIK'
                   ? `${k.items.length} ${k.items.length === 1 ? 'pozycja' : k.items.length < 5 ? 'pozycje' : 'pozycji'} w cenniku`
                   : tradeUp
-                    ? `${k.items.length} numerów w programie · rabat od ceny katalogowej producenta`
+                    ? `${pozycje.length} numerów w programie · rabat od ceny katalogowej producenta`
                     : `zakup przez ${k.distributor || '—'}`}
               </p>
               <p className="text-sm mt-1 text-gray-500">
@@ -122,26 +125,31 @@ export default async function KoncesjePage() {
         </summary>
 
         {tradeUp ? (
-          <table className="w-full text-sm border-t border-gray-200">
-            <thead className="bg-gray-50 text-gray-500">
-              <tr>
-                <th className="text-left font-medium px-5 py-2">Numer katalogowy</th>
-                <th className="text-left font-medium px-3 py-2">Rodzina</th>
-                <th className="text-right font-medium px-5 py-2">Rabat od ceny katalogowej</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              {k.items.map((i) => (
-                <tr key={i.id}>
-                  <td className="px-5 py-2 font-mono text-gray-900">{i.partNumber}</td>
-                  <td className="px-3 py-2 text-gray-500">{i.description ?? '—'}</td>
-                  <td className="px-5 py-2 text-right tabular-nums text-gray-900">
-                    {i.discountPct != null ? `${i.discountPct.toLocaleString('pl-PL')} %` : '—'}
-                  </td>
+          <>
+            <table className="w-full text-sm border-t border-gray-200">
+              <thead className="bg-gray-50 text-gray-500">
+                <tr>
+                  <th className="text-left font-medium px-5 py-2">Numer katalogowy</th>
+                  <th className="text-left font-medium px-3 py-2">Rodzina</th>
+                  <th className="text-right font-medium px-5 py-2">Rabat od ceny katalogowej</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {pozycje.map((i) => (
+                  <tr key={i.id}>
+                    <td className="px-5 py-2 font-mono text-gray-900">{i.partNumber}</td>
+                    <td className="px-3 py-2 text-gray-500">{i.description ?? '—'}</td>
+                    <td className="px-5 py-2 text-right tabular-nums text-gray-900">
+                      {i.discountPct != null ? `${i.discountPct.toLocaleString('pl-PL')} %` : '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="px-5 py-2 text-xs text-gray-500 border-t border-gray-100">
+              Bez drukarek kart Zebra — wyłączone 8.11.2026.
+            </p>
+          </>
         ) : (
           <table className="w-full text-sm border-t border-gray-200">
             <thead className="bg-gray-50 text-gray-500">

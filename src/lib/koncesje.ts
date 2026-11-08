@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/db'
 import { lookupStock } from '@/lib/bluestar'
+import { lookupUnifiedStock } from '@/lib/unified-stock'
 
 /**
  * Koncesje cenowe Zebry (Price Concession).
@@ -332,6 +333,16 @@ export const czyListaTradeUp = (tekst: string) =>
   /Part\s+Number/i.test(tekst)
 
 /**
+ * Drukarki kart Zebra (ZC100, ZC300, ZC350) nie korzystają z Trade UP — decyzja
+ * z 8.11.2026: rabat z listy dawał cenę wyższą od zwykłego zakupu
+ * u dystrybutorów. Rozpoznajemy je po numerze albo po linii produktów „Card”
+ * w opisie z listy („ZC300 · Card”), gdyby kolejna lista dodała model spoza ZC.
+ */
+export function czyPozaTradeUp(partNumber: string, opis?: string | null): boolean {
+  return /^ZC\d/i.test(partNumber) || (opis ?? '').split('·').some((c) => /^card\b/i.test(c.trim()))
+}
+
+/**
  * Tekst musi pochodzić z ekstrakcji sklejającej sąsiadujące kawałki komórki
  * (tekstZPdf w trybie komórek), bo PDF zapisuje numer katalogowy jako kilka
  * elementów tekstu. Wiersz ma wtedy cztery kolumny:
@@ -352,10 +363,12 @@ export function parsujListeTradeUp(tekst: string): { rewizja?: string; items: Po
     widziane.add(pn)
     const opis = k.slice(0, -2)
     if (/^new$/i.test(opis[0] ?? '')) opis.shift() // kolumna „Status" z nowszych list
+    // Rodzina mówi handlowcowi więcej niż linia produktów, więc stoi pierwsza.
+    const description = [opis[opis.length - 1], opis.slice(0, -1).join(' ')].filter(Boolean).join(' · ') || undefined
+    if (czyPozaTradeUp(pn, description)) continue
     items.push({
       partNumber: pn,
-      // Rodzina mówi handlowcowi więcej niż linia produktów, więc stoi pierwsza.
-      description: [opis[opis.length - 1], opis.slice(0, -1).join(' ')].filter(Boolean).join(' · ') || undefined,
+      description,
       minQty: 1,
       unitPrice: 0,
       discountPct: Number(rabat.replace(',', '.')),
@@ -461,6 +474,8 @@ export interface TrafienieKoncesji {
   /** Warunki dokumentu wpisane przy imporcie — stoją pod podpowiedzią. */
   uwagi: string | null
   opis: string | null
+  /** Zwykła cena zakupu w groszach, do porównania z ceną specjalną; null = brak danych. */
+  zwyklyZakupPln: number | null
 }
 
 /**
@@ -478,23 +493,48 @@ async function cenaKatalogowa(partNumber: string): Promise<number | null> {
 }
 
 /**
+ * Zwykła cena zakupu w groszach — ta sama, którą /api/admin/stock podaje
+ * kreatorowi oferty jako `ingramPrice`. Cena specjalna nie zawsze jest od niej
+ * niższa (Trade UP na części skanerów wychodzi drożej), a bez porównania
+ * kreator proponowałby wpisanie zawyżonego kosztu do oferty.
+ */
+async function zwyklyZakup(partNumber: string): Promise<number | null> {
+  try {
+    const { body } = await lookupUnifiedStock([partNumber], false, { daneDystrybutora: true })
+    const wiersz = body.results?.find((r) => r.partNumber.toUpperCase() === partNumber.toUpperCase())
+    return wiersz?.ingramPrice && wiersz.ingramPrice > 0 ? Math.round(wiersz.ingramPrice * 100) : null
+  } catch {
+    return null
+  }
+}
+
+/**
  * Aktywne koncesje dla numeru katalogowego. Zwraca posortowane od najtańszej —
  * bywa, że ten sam PN ma koncesję i dla TAKMY, i dla Scantera. Pozycje bez
  * policzalnej ceny idą na koniec.
  */
 export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKoncesji[]> {
   const teraz = new Date()
-  const pozycje = await prisma.priceConcessionItem.findMany({
+  const wszystkie = await prisma.priceConcessionItem.findMany({
     where: {
       partNumber: { equals: partNumber, mode: 'insensitive' },
       concession: { startDate: { lte: teraz }, endDate: { gte: teraz } },
     },
     include: { concession: true },
   })
+  // Lista wgrana przed decyzją z 8.11.2026 nadal ma drukarki kart w bazie —
+  // odcinamy je tutaj, żeby nie zmieniać danych. Inne źródła cen zostają.
+  const pozycje = wszystkie.filter(
+    (p) => !(p.concession.source === 'TRADEUP' && czyPozaTradeUp(p.partNumber, p.description))
+  )
   if (pozycje.length === 0) return []
 
   const tradeUp = pozycje.some((p) => p.concession.source === 'TRADEUP')
-  const [kurs, katalog] = await Promise.all([kursEur(), tradeUp ? cenaKatalogowa(partNumber) : Promise.resolve(null)])
+  const [kurs, katalog, zwyklyZakupPln] = await Promise.all([
+    kursEur(),
+    tradeUp ? cenaKatalogowa(partNumber) : Promise.resolve(null),
+    zwyklyZakup(partNumber),
+  ])
 
   const wynik: TrafienieKoncesji[] = pozycje.map((p) => {
     const source = zrodloCeny(p.concession.source)
@@ -527,6 +567,7 @@ export async function koncesjeDlaPn(partNumber: string): Promise<TrafienieKonces
       cenaKatalogowa: source === 'TRADEUP' ? katalog : p.listPrice,
       uwagi: p.concession.note,
       opis: p.description,
+      zwyklyZakupPln,
     }
   })
 

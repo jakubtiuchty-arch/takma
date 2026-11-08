@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { getSessionFromCookie } from '@/lib/auth'
 import { sendEmail } from '@/lib/email'
-import { kursEur, adresPrzypomnienia } from '@/lib/koncesje'
+import { kursEur, adresPrzypomnienia, czyPozaTradeUp } from '@/lib/koncesje'
 import { buildKoncesjeWygasajaEmail } from '@/lib/email-templates'
 
 /**
@@ -69,6 +69,9 @@ export async function GET(request: NextRequest) {
 
   const wyniki: { adres: string; dokumentow: number; ok: boolean; blad?: string }[] = []
 
+  // Ta sama liczba co w panelu: drukarki kart Zebra wyłączone z Trade UP 8.11.2026.
+  const numeryTradeUp = (k: Dokument) => k.items.filter((i) => !czyPozaTradeUp(i.partNumber, i.description)).length
+
   for (const [adres, lista] of Array.from(wgAdresu.entries())) {
     const html = buildKoncesjeWygasajaEmail({
       dokumenty: lista.map((k) => ({
@@ -76,7 +79,7 @@ export async function GET(request: NextRequest) {
           k.source === 'JARLTECH'
             ? `Oferta Jarltecha ${k.docNumber ?? ''} do koncesji ${k.requestId} — ${k.reseller}`
             : k.source === 'TRADEUP'
-              ? `Program Zebra Trade UP — lista${k.revision ? ` z ${k.revision}` : ''}, ${k.items.length} numerów`
+              ? `Program Zebra Trade UP — lista${k.revision ? ` z ${k.revision}` : ''}, ${numeryTradeUp(k)} numerów`
               : k.source === 'CENNIK'
                 ? `Cennik ${k.distributor ?? k.requestId} — ${k.reseller}`
                 : `Koncesja ${k.requestId}${k.revision ? ` rev. ${k.revision}` : ''} — ${k.reseller}`,

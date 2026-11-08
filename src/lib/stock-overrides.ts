@@ -169,24 +169,15 @@ interface StockLike {
  * Ręcznie ustalona cena sprzedaży netto per Part Number.
  *
  * Normalnie cena wychodzi z ceny zakupu razy marża, więc podąża za cennikiem
- * dystrybutora. Tu ustawiamy ją wprost, bo wynika z decyzji handlowej, a nie
- * z bieżącego kosztu — przykładem jest Zebra Trade UP, gdzie zakup jest niższy
- * od standardowego, ale **tylko przy zamówieniu z voucherem i oddaniu starego
- * sprzętu**. Bez tej ścieżki kupujemy drożej i sprzedaż poniżej kosztu.
+ * dystrybutora. Tu ustawiamy ją wprost, gdy wynika z decyzji handlowej, a nie
+ * z bieżącego kosztu.
  *
- * Dlatego każdy wpis musi mieć powód i datę, a przy wygaśnięciu promocji
- * (Trade UP: 31.12.2026) trzeba go usunąć, żeby cena wróciła do rachunku
- * z żywego kosztu.
+ * Dlatego każdy wpis musi mieć powód i datę, a gdy decyzja przestaje
+ * obowiązywać (np. kończy się promocja), trzeba go usunąć, żeby cena wróciła
+ * do rachunku z żywego kosztu.
  */
-export const MANUAL_NET_PRICES = new Map<string, { netto: number; powod: string }>([
-  [
-    'ZC32-000C000EM00',
-    {
-      netto: 4573,
-      powod: 'Zebra Trade UP (rabat 62 %, zakup 4163 zł) — cena na pierwsze miejsce w rankingu Ceneo; wymaga vouchera i oddania starego sprzętu. Ustawione 22.09.2026, wygasa z promocją 31.12.2026.',
-    },
-  ],
-])
+// Pusta od 8.11.2026: drukarki kart Zebra liczymy z zakupu i standardowej marży.
+export const MANUAL_NET_PRICES = new Map<string, { netto: number; powod: string }>()
 
 export function applyStockOverrides<T extends StockLike>(row: T): T {
   const partNumber = row.partNumber.toUpperCase()

@@ -62,6 +62,8 @@ export interface TrafienieKoncesji {
   rabatPct: number | null
   cenaKatalogowa: number | null
   uwagi: string | null
+  /** Zwykła cena zakupu w groszach (ta z /api/admin/stock); null = brak danych. */
+  zwyklyZakupPln: number | null
 }
 
 /** Stan u dystrybutorów z /api/admin/dostepnosc. */
@@ -189,65 +191,76 @@ function ItemRow({
             wtedy widać obie, bo mówią o innej kwocie. Trade UP podaje rabat,
             a kwotę serwer liczy z bieżącej ceny katalogowej; gdy BlueStar jej
             nie zna, zostaje sam rabat i nie ma czego wstawić jako zakupu. */}
-        {koncesje.map((koncesja) => (
-          <div key={`${koncesja.source}-${koncesja.requestId}`} className="mt-1 px-1 text-xs leading-relaxed">
-            <span className="text-emerald-700 font-medium">
-              {koncesja.source === 'TRADEUP'
-                ? koncesja.unitPricePln > 0
-                  ? 'Cena z Trade UP '
-                  : 'Trade UP'
-                : koncesja.source === 'CENNIK'
-                  ? 'Cena z cennika '
-                  : 'Cena specjalna '}
-              {koncesja.unitPricePln > 0 &&
-                (koncesja.currency === 'PLN'
-                  ? `${formatPrice(koncesja.unitPricePln)} zł`
-                  : `${formatPrice(koncesja.unitPrice)} ${koncesja.currency} ≈ ${formatPrice(koncesja.unitPricePln)} zł`)}
-            </span>
-            <span className="text-gray-500">
-              {koncesja.source === 'TRADEUP' ? (
-                <>
-                  {koncesja.rabatPct != null ? ` — ${koncesja.rabatPct.toLocaleString('pl-PL')} % od ceny katalogowej` : ' — rabat od ceny katalogowej'}
-                  {koncesja.cenaKatalogowa != null
-                    ? ` ${formatPrice(koncesja.cenaKatalogowa)} ${koncesja.currency}`
-                    : ' (BlueStar nie podał ceny katalogowej — kwotę potwierdź u dystrybutora)'}
-                  , lista {koncesja.revision ? `z ${koncesja.revision}` : 'programu'}, program jeszcze {koncesja.dniDoKonca} dni
-                </>
-              ) : koncesja.source === 'CENNIK' ? (
-                <>
-                  {` — cennik ${koncesja.distributor ?? koncesja.requestId}, obowiązuje jeszcze ${koncesja.dniDoKonca} dni`}
-                </>
-              ) : (
-                <>
-                  {koncesja.source === 'JARLTECH'
-                    ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} na ${etykietaPowiazania(koncesja.requestId)}`
-                    : ` — koncesja ${koncesja.requestId}`}
-                  {' '}({koncesja.reseller}
-                  {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
-                  {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
-                  , ważna jeszcze {koncesja.dniDoKonca} dni
-                </>
+        {koncesje.map((koncesja) => {
+          // Cena specjalna bywa wyższa od zwykłego zakupu (Trade UP na części
+          // skanerów) — wtedy ostrzegamy i nie proponujemy jej jako kosztu.
+          const zwykly = koncesja.zwyklyZakupPln ?? 0
+          const drozej = koncesja.unitPricePln > 0 && zwykly > 0 && koncesja.unitPricePln >= zwykly
+          return (
+            <div key={`${koncesja.source}-${koncesja.requestId}`} className="mt-1 px-1 text-xs leading-relaxed">
+              <span className="text-emerald-700 font-medium">
+                {koncesja.source === 'TRADEUP'
+                  ? koncesja.unitPricePln > 0
+                    ? 'Cena z Trade UP '
+                    : 'Trade UP'
+                  : koncesja.source === 'CENNIK'
+                    ? 'Cena z cennika '
+                    : 'Cena specjalna '}
+                {koncesja.unitPricePln > 0 &&
+                  (koncesja.currency === 'PLN'
+                    ? `${formatPrice(koncesja.unitPricePln)} zł`
+                    : `${formatPrice(koncesja.unitPrice)} ${koncesja.currency} ≈ ${formatPrice(koncesja.unitPricePln)} zł`)}
+              </span>
+              <span className="text-gray-500">
+                {koncesja.source === 'TRADEUP' ? (
+                  <>
+                    {koncesja.rabatPct != null ? ` — rabat ${koncesja.rabatPct.toLocaleString('pl-PL')} % od ceny katalogowej` : ' — rabat od ceny katalogowej'}
+                    {koncesja.cenaKatalogowa != null
+                      ? ` ${formatPrice(koncesja.cenaKatalogowa)} ${koncesja.currency}`
+                      : ' (BlueStar nie podał ceny katalogowej — kwotę potwierdź u dystrybutora)'}
+                    , lista {koncesja.revision ? `z ${koncesja.revision}` : 'programu'}, program jeszcze {koncesja.dniDoKonca} dni
+                  </>
+                ) : koncesja.source === 'CENNIK' ? (
+                  <>
+                    {` — cennik ${koncesja.distributor ?? koncesja.requestId}, obowiązuje jeszcze ${koncesja.dniDoKonca} dni`}
+                  </>
+                ) : (
+                  <>
+                    {koncesja.source === 'JARLTECH'
+                      ? ` — oferta Jarltecha ${koncesja.docNumber ?? ''} na ${etykietaPowiazania(koncesja.requestId)}`
+                      : ` — koncesja ${koncesja.requestId}`}
+                    {' '}({koncesja.reseller}
+                    {koncesja.endUser ? `, ${koncesja.endUser}` : ''})
+                    {koncesja.pozostaloSztuk != null ? `, zostało ${koncesja.pozostaloSztuk} szt.` : ''}
+                    , ważna jeszcze {koncesja.dniDoKonca} dni
+                  </>
+                )}
+              </span>
+              {drozej && (
+                <span className="text-amber-700">
+                  {` — drożej niż zwykły zakup (${formatPrice(zwykly)} zł) o ${Math.round(((koncesja.unitPricePln - zwykly) / zwykly) * 100)} %`}
+                </span>
               )}
-            </span>
-            {koncesja.unitPricePln > 0 && item.purchasePrice !== koncesja.unitPricePln && (
-              <button
-                type="button"
-                onClick={() => updateItem(item.id, { purchasePrice: koncesja.unitPricePln })}
-                className="ml-2 text-emerald-700 underline hover:text-emerald-800"
-              >
-                użyj jako ceny zakupu
-              </button>
-            )}
-            {/* Warunki są te same dla każdej pozycji z dokumentu — rozwinięte
-                pod każdym numerem zajmowałyby pół tabeli. */}
-            {koncesja.uwagi && (
-              <details className="text-gray-400">
-                <summary className="cursor-pointer select-none hover:text-gray-600">warunki</summary>
-                <p className="mt-0.5">{koncesja.uwagi}</p>
-              </details>
-            )}
-          </div>
-        ))}
+              {!drozej && koncesja.unitPricePln > 0 && item.purchasePrice !== koncesja.unitPricePln && (
+                <button
+                  type="button"
+                  onClick={() => updateItem(item.id, { purchasePrice: koncesja.unitPricePln })}
+                  className="ml-2 text-emerald-700 underline hover:text-emerald-800"
+                >
+                  użyj jako ceny zakupu
+                </button>
+              )}
+              {/* Warunki są te same dla każdej pozycji z dokumentu — rozwinięte
+                  pod każdym numerem zajmowałyby pół tabeli. */}
+              {koncesja.uwagi && (
+                <details className="text-gray-400">
+                  <summary className="cursor-pointer select-none hover:text-gray-600">warunki</summary>
+                  <p className="mt-0.5">{koncesja.uwagi}</p>
+                </details>
+              )}
+            </div>
+          )
+        })}
       </td>
       <td className="px-3 py-2 w-20">
         <input
