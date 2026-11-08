@@ -725,11 +725,11 @@ export const guides: Guide[] = [
 <tr><td><strong>Wymiary</strong></td><td>165 × 76,3 × 12,5 mm</td><td>165 × 77,95 × 12,5 mm</td></tr>
 <tr><td><strong>Waga</strong></td><td>236 g</td><td>245 g (270 g z rozszerzoną baterią)</td></tr>
 <tr><td><strong>System operacyjny</strong></td><td>Android (do Android 16)</td><td>Android (nowsza platforma, dłuższe wsparcie)</td></tr>
-<tr style="background:#e8f5e9"><td><strong>Akcesoria</strong></td><td>Seria TC2L</td><td>Wstecznie zgodne z większością akcesoriów TC22/TC27 (baterie, stacje)</td></tr>
+<tr style="background:#e8f5e9"><td><strong>Akcesoria</strong></td><td>Seria TC2L</td><td>Wspólne baterie z TC22/TC27; własne stacje CRD-TCVT i CRD-TCVTB, ładowarka baterii SAC-TCVT-4B; ShareCradle TC22/TC27 po wymianie gniazda</td></tr>
 </tbody>
 </table>
 
-<p><strong>Kluczowy wniosek:</strong> TC201 to nie kosmetyczny lifting, lecz pełnoprawna nowa generacja. Nowy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G w jednym urządzeniu, skaner sięgający 30 m, wyższa odporność i certyfikaty bezpieczeństwa, jakich w TC22 nie znajdziesz. A mimo to zachowuje zgodność z większością akcesoriów TC22/TC27 — co znacząco obniża koszt migracji.</p>`
+<p><strong>Kluczowy wniosek:</strong> TC201 to nie kosmetyczny lifting, lecz pełnoprawna nowa generacja. Nowy procesor, Wi-Fi 7, Bluetooth 6, opcjonalne 5G w jednym urządzeniu, skaner sięgający 30 m, wyższa odporność i certyfikaty bezpieczeństwa, jakich w TC22 nie znajdziesz. Baterie BTRY-TC2L-2XMAXX-01 i BTRY-TC2L-3XMAXX-01 pasują do TC22, TC27 i TC201. Stacja ShareCradle po TC22 i TC27 przyjmie TC201 po wymianie gniazda.</p>`
     },
     {
       id: 'co-nowego',
@@ -803,22 +803,22 @@ export const guides: Guide[] = [
     {
       id: 'akcesoria-bateria',
       heading: 'Bateria i akcesoria — migracja z TC22/TC27 bez wymiany całej infrastruktury',
-      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>TC201 jest wstecznie zgodny z większością akcesoriów TC22 i TC27 — w tym z bateriami i stacjami ładowania. To kluczowa zaleta: firma z flotą TC22/TC27 może wdrażać TC201 stopniowo, bez wymiany całej infrastruktury ładowania od zera. Baterie: 3 800 mAh i 5 200 mAh, wymiana hot-swap (wybrane SKU).</strong></p>
+      content: `<p style="background:#f8fee6;border-left:4px solid #A8F000;padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px"><strong>Baterie BTRY-TC2L-2XMAXX-01 i BTRY-TC2L-3XMAXX-01 pasują do TC22, TC27 i TC201. TC201 ma własne stacje CRD-TCVT i CRD-TCVTB, ładowarkę baterii SAC-TCVT-4B oraz zasilacz 45 W z przewodem USB-C – USB-C. Stacja ShareCradle po TC22 i TC27 przyjmie TC201 po wymianie gniazda na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 z wkładką TC201. Firma z flotą TC22/TC27 może wdrażać TC201 stopniowo i zachować podstawy stacji. Baterie: 3 800 mAh i 5 200 mAh, wymiana hot-swap (wybrane SKU).</strong></p>
 
-<p><strong>Największą barierą przy zmianie generacji terminali zwykle nie jest cena samego urządzenia, lecz koszt wymiany akcesoriów</strong> — stacji, baterii, etui, ładowarek. Zebra rozwiązała to w TC201, zachowując zgodność z większością osprzętu TC22/TC27.</p>
+<p><strong>Największą barierą przy zmianie generacji terminali zwykle nie jest cena samego urządzenia, lecz koszt wymiany akcesoriów</strong> — stacji, baterii, etui, ładowarek. W TC201 Zebra zachowała wspólne baterie z TC22/TC27, a podstawy stacji ShareCradle przyjmują TC201 po wymianie gniazda.</p>
 
 <table>
 <thead><tr><th>Element</th><th>Zebra TC22</th><th>Zebra TC201</th></tr></thead>
 <tbody>
 <tr><td><strong>Baterie</strong></td><td>3 800 / 5 200 mAh</td><td>3 800 mAh (14,63 Wh) / 5 200 mAh (20,02 Wh) — zgodne z TC22/TC27</td></tr>
-<tr><td><strong>Wymiana baterii</strong></td><td>Hot-swap</td><td>Hot-swap (wybrane SKU)</td></tr>
-<tr><td><strong>Stacje ładowania</strong></td><td>Seria TC2L</td><td>Zgodne z większością stacji TC22/TC27; nowe ShareCradle wysokiej gęstości</td></tr>
+<tr><td><strong>Wymiana baterii</strong></td><td>Po wyłączeniu terminala</td><td>Hot-swap (wybrane SKU)</td></tr>
+<tr><td><strong>Stacje ładowania</strong></td><td>Seria TC2L</td><td>Własne stacje CRD-TCVT i CRD-TCVTB; ShareCradle TC22/TC27 po wymianie gniazda na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 z wkładką TC201</td></tr>
 <tr><td><strong>Etui (boot)</strong></td><td>SG-TC2L-BOOT-01</td><td>Nowe etui ochronne (zwiększa odporność na upadki)</td></tr>
 <tr><td><strong>Trigger handle / uchwyt</strong></td><td>TRG-TC2L-SNP1-01</td><td>Modułowe uchwyty: trigger handle, mocowanie naramienne</td></tr>
 </tbody>
 </table>
 
-<p><strong>Co to oznacza w praktyce:</strong> jeśli masz dziś flotę TC22 lub TC27 ze stacjami i zapasem baterii, wdrożenie TC201 nie wymaga kupowania wszystkiego od nowa. Baterie i większość stacji ładowania przejdą do nowych urządzeń. Doposażyć trzeba głównie etui ochronne (nowa, twardsza konstrukcja) oraz — jeśli wybierasz nowy skaner — odpowiedni uchwyt. To realnie obniża koszt migracji względem sytuacji, w której nowa generacja zrywa zgodność z osprzętem (jak miało to miejsce przy przejściu z TC21/TC26 na TC22/TC27).</p>
+<p><strong>Co to oznacza w praktyce:</strong> flota TC22 lub TC27 ze stacjami i zapasem baterii nie wymaga kupowania wszystkiego od nowa. Baterie przechodzą do TC201 bez zmian. Podstawy stacji ShareCradle zostają, a gniazda wymienia się na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 z wkładką TC201. TC201 ma własną ładowarkę baterii SAC-TCVT-4B i zasilacz 45 W z przewodem USB-C – USB-C. Nowe są także etui ochronne (twardsza konstrukcja) oraz — przy nowym skanerze — odpowiedni uchwyt.</p>
 
 <p>Zasilanie ciągłe (perpetual power) z wymianą baterii hot-swap pozwala utrzymać terminal w pracy przez całą zmianę bez wyłączania — operator podmienia baterię w kilka sekund, a urządzenie podtrzymuje stan z bufora.</p>`
     },
@@ -847,7 +847,7 @@ export const guides: Guide[] = [
 </ul>
 
 <h3>Masz już flotę TC22/TC27?</h3>
-<p>Nie ma potrzeby wymiany sprawnych urządzeń. TC201 warto wprowadzać <strong>stopniowo</strong> — przy rozbudowie floty lub wymianie najbardziej zużytych sztuk. Dzięki zgodności baterii i większości stacji ładowania nowe TC201 wpasują się w istniejącą infrastrukturę bez budowania jej od zera. Mieszana flota TC22 + TC201 będzie współdzielić część osprzętu.</p>
+<p>Nie ma potrzeby wymiany sprawnych urządzeń. TC201 warto wprowadzać <strong>stopniowo</strong> — przy rozbudowie floty lub wymianie najbardziej zużytych sztuk. Dzięki wspólnym bateriom i podstawom stacji ShareCradle z wymiennymi gniazdami nowe TC201 wpasują się w istniejącą infrastrukturę bez budowania jej od zera. Mieszana flota TC22 + TC201 będzie współdzielić część osprzętu.</p>
 
 <p>Nie masz pewności, który wariant i ile sztuk 5G naprawdę potrzebujesz? <a href="/kontakt">Skontaktuj się z nami</a> — pomożemy dobrać konfigurację i policzyć koszt posiadania dla Twojej floty, a TC201 możesz u nas zarezerwować przed premierą.</p>`
     },
@@ -925,7 +925,7 @@ export const guides: Guide[] = [
 </div>
 </div>
 
-<p><strong>Masz już TC22 lub TC27?</strong> Nie wymieniaj sprawnych urządzeń — wprowadzaj TC201 stopniowo, korzystając ze zgodności baterii i stacji ładowania. <a href="/kontakt">Skontaktuj się z nami</a>, a dobierzemy konfigurację i policzymy koszt posiadania dla Twojej floty.</p>
+<p><strong>Masz już TC22 lub TC27?</strong> Nie wymieniaj sprawnych urządzeń — wprowadzaj TC201 stopniowo, korzystając ze wspólnych baterii i podstaw stacji ShareCradle (po wymianie gniazda). <a href="/kontakt">Skontaktuj się z nami</a>, a dobierzemy konfigurację i policzymy koszt posiadania dla Twojej floty.</p>
 
 <p>Powiązane artykuły: <a href="/poradnik/zebra-tc22-vs-tc27">Zebra TC22 vs TC27 — porównanie</a> · <a href="/poradnik/jak-wybrac-terminal-mobilny">Jak wybrać terminal mobilny? Poradnik 2026</a> · <a href="/poradnik/top-10-terminali-mobilnych-2026">Top 10 terminali mobilnych 2026</a>.</p>`
     }
@@ -938,7 +938,7 @@ export const guides: Guide[] = [
     { question: 'Czy warto czekać na TC201, czy kupić TC22 teraz?', answer: 'Kup TC22 teraz, jeśli potrzebujesz terminali od ręki, pracujesz wewnątrz budynku z Wi-Fi i zależy Ci na najniższej cenie. Poczekaj na TC201, jeśli kupujesz flotę na 5–7 lat, potrzebujesz 5G i GPS w jednym urządzeniu, skanera dalekiego zasięgu (do 30 m), certyfikatów bezpieczeństwa albo pracy w mrozie do -20°C.' },
     { question: 'Czy TC201 ma 5G?', answer: 'Tak — w wariancie z modułem WWAN. TC201 obsługuje 5G NR Sub-6 (Release 17), Gigabit LTE-A, jeden SIM fizyczny plus Dual eSIM oraz dwuzakresową nawigację satelitarną L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). To istotna różnica względem TC22, który ma wyłącznie Wi-Fi — w obecnej serii 5G oferuje dopiero osobny model TC27.' },
     { question: 'Jaki skaner ma Zebra TC201?', answer: 'TC201 oferuje trzy skanery: SR500 (zakres standardowy), AC670 Advanced Range, który odczytuje kody z odległości do 30 m i robi kolorowe zdjęcia w wysokiej rozdzielczości, oraz SR560 z głowicą pod kątem 60° do ergonomicznego skanowania. Skaner dalekiego zasięgu TC201 sięga znacznie dalej niż SE55 w TC22 (do 7,6 m).' },
-    { question: 'Czy akcesoria TC22 i TC27 pasują do TC201?', answer: 'Tak — TC201 jest wstecznie zgodny z większością akcesoriów TC22 i TC27, w tym z bateriami (3 800 i 5 200 mAh) oraz stacjami ładowania. Dzięki temu firma z flotą TC22/TC27 może wdrażać TC201 stopniowo, bez wymiany całej infrastruktury. Doposażyć trzeba głównie etui ochronne (nowa, twardsza konstrukcja) i uchwyt do wybranego skanera.' },
+    { question: 'Czy akcesoria TC22 i TC27 pasują do TC201?', answer: 'Częściowo. Baterie BTRY-TC2L-2XMAXX-01 i BTRY-TC2L-3XMAXX-01 pasują do TC22, TC27 i TC201. TC201 ma własne stacje CRD-TCVT i CRD-TCVTB, ładowarkę baterii SAC-TCVT-4B oraz zasilacz 45 W z przewodem USB-C – USB-C. Stacja ShareCradle po TC22 i TC27 przyjmie TC201 po wymianie gniazda na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 z wkładką TC201. Nowe są także etui ochronne (twardsza konstrukcja) i uchwyt do wybranego skanera.' },
     { question: 'Czy Zebra TC201 jest wodoodporny?', answer: 'Tak. TC201 ma klasę ochrony IP68 (pyłoszczelność i zanurzenie) oraz IP65 (strumień wody) — tak jak TC22. Dodatkowo to najbardziej wytrzymały terminal serii TC2: upadki na beton z 1,53 m (do 1,83 m w temperaturze pokojowej, z etui do 2,13 m), 750 upadków w teście tumble i praca w zakresie -20°C do +50°C. Ekran i okno skanera chroni Corning Gorilla Glass.' },
     { question: 'Jaki procesor ma TC201?', answer: 'TC201 napędza Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura, która daje nawet 150% wyższą wydajność niż starsze terminale TC2x (w tym TC22 z układem Qualcomm 5430). W praktyce to płynniejsza praca wielu aplikacji jednocześnie i zapas mocy na rozwiązania wykorzystujące AI w chmurze. Wariant 8/128 GB korzysta z szybkiej pamięci UFS 3.1.' },
     { question: 'Czy TC201 obsługuje RFID?', answer: 'Tak, w wybranych konfiguracjach TC201 ma zintegrowany czytnik UHF RFID — odczytuje ponad 200 tagów na sekundę z odległości do 1,2 m, z funkcją precyzyjnego namierzania pojedynczego towaru. W TC22 RFID realizuje się dopiero nakładką RFD40. Warianty RFID dla TC201 na rynku europejskim planowane są na koniec 2026 roku.' },
@@ -5137,7 +5137,7 @@ export const guides: Guide[] = [
 
 <div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:16px;border-radius:8px;margin:16px 0">
 <p style="margin:0;font-weight:600">Chłodnia i mroźnia — tylko MC9400</p>
-<p style="margin:8px 0 0 0">MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do <strong>-30°C</strong>. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. Jeśli masz operacje w chłodni, MC9400 to jedyny wybór.</p>
+<p style="margin:8px 0 0 0">MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FRZ-01, 5 000 mAh) pracuje do <strong>-30°C</strong>. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. Jeśli masz operacje w chłodni, MC9400 to jedyny wybór.</p>
 </div>`
     },
     {
@@ -5335,7 +5335,7 @@ export const guides: Guide[] = [
 
 <h3>Z MC9300 → MC9400</h3>
 <ul>
-<li><strong>Baterie</strong> — pełna kompatybilność (BTRY-MC93-STN-01, BTRY-MC93-FZ-01)</li>
+<li><strong>Baterie</strong> — pełna kompatybilność (BTRY-MC93-STN-01, BTRY-MC93-FRZ-01)</li>
 <li><strong>Stacje dokujące</strong> — pasują (CRD-MC93-2SUCHG-01, CRD-MC93-4SCHG-01)</li>
 <li><strong>Ładowarki baterii</strong> — pasują (SAC-MC93-4SCHG-01, SAC-MC93-16SCHG-01)</li>
 <li><strong>Obudowy i holstery</strong> — kompatybilne (SG-MC93-RBTG-01, SG-MC9X-SHLSTG-01)</li>
@@ -5461,12 +5461,12 @@ export const guides: Guide[] = [
     { question: 'Co to jest terminal mobilny Zebra MC9400?', answer: 'Zebra MC9400 to najwytrzymalszy kolektor danych (terminal mobilny) Zebra klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30,5 m i procesorem QCS4490 (2,4 GHz). IP65+IP68, upadki z 3,65 m, praca w chłodni do -30°C, 743 g. Cena od 8 482 zł netto. Następca modelu MC9300.' },
     { question: 'Czym się różni kolektor danych Zebra MC3400 od MC9400?', answer: 'MC3400 i MC9400 mają identyczny procesor Qualcomm QCS4490 (2,4 GHz), Wi-Fi 6E, Bluetooth 5.3 i skanery SE58 Extended Range do 30,5 m. Główne różnice: MC9400 ma 7 wymiennych klawiatur (vs 3 w MC3400), IP65+IP68 (vs IP65/IP67), upadki z 3,65 m (vs 2,4 m), pracuje do -30°C z baterią freezer (vs -20°C) i kosztuje od 8 482 zł (vs 4 637 zł). MC3400 jest lżejszy (528 g vs 743 g) i ma dłuższe wsparcie Android (do 18 vs 17).' },
     { question: 'Ile kosztuje Zebra MC3400 vs MC9400?', answer: 'Zebra MC3400 kosztuje od 4 637 zł netto (SE55, 29 kl., 4/64 GB) do 5 734 zł (SE58, kamera, 6/128 GB). Zebra MC9400 kosztuje od 8 482 zł netto (SE4770, 58 kl.) do 8 296 zł (SE58, kamera). Różnica cen: MC9400 jest o 67% droższy w najtańszych wariantach. Na flocie 50 terminali oszczędność na MC3400 vs MC9400 wynosi ~139 700 zł netto na 3 lata (z OneCare).' },
-    { question: 'Który terminal do chłodni — MC3400 czy MC9400?', answer: 'Do chłodni i mroźni tylko MC9400. MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) pracuje do -30°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. IP65+IP68 chroni przed wilgocią i kondensatem w zmiennych temperaturach.' },
+    { question: 'Który terminal do chłodni — MC3400 czy MC9400?', answer: 'Do chłodni i mroźni tylko MC9400. MC3400 działa od -20°C — nie nadaje się do mroźni (-25°C do -30°C). MC9400 z baterią freezer (BTRY-MC93-FRZ-01, 5 000 mAh) pracuje do -30°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu przy przejściach chłodnia↔hala. IP65+IP68 chroni przed wilgocią i kondensatem w zmiennych temperaturach.' },
     { question: 'Jaką klawiaturę wybrać w MC3400?', answer: 'MC3400 oferuje 3 klawiatury: 29 kl. (numeryczna — szybkie ilości), 38 kl. (funkcyjna z Tab/Enter/strzałkami — najpopularniejsza w WMS, rekomendowana), 47 kl. (alfanumeryczna A-Z — gdy operator wpisuje kody tekstowe). Klawiaturę wybiera się przy zakupie — nie można jej wymienić w terenie. Klawisze są 20% większe niż w MC3300x i zoptymalizowane do pracy w rękawicach.' },
     { question: 'Czy MC9400 ma wymienne klawiatury?', answer: 'Tak — MC9400 ma 7 wymiennych klawiatur hot-swap (wymiana bez narzędzi w terenie): 29 kl. (numeryczna), 34 kl. (rozszerzona), 43 kl. (funkcyjna F1-F12), 53 kl. STD (najpopularniejsza w WMS), 53 kl. VT (emulacja terminala), 53 kl. 5250 (IBM AS/400), 58 kl. (alfanumeryczna). Ten sam terminal może obsługiwać różne procesy: rano kompletacja (53 kl.), po południu inwentaryzacja (29 kl.).' },
     { question: 'Jaki skaner do magazynu wysokiego składowania — SE55 czy SE58?', answer: 'SE55 Advanced Range (zasięg do 12,2 m) — wystarczający do regałów średniego składowania (do 8 m), dostępny tylko w MC3400, najtańsza opcja z zielonym laserem IntelliFocus. SE58 Extended Range (do 30,5 m) — do magazynów z regałami powyżej 10 m, eliminuje potrzebę drabiny. SE58 jest 7× bardziej widoczny niż tradycyjny laser. Oba skanery są dostępne w MC3400, w MC9400 tylko SE4770 i SE58.' },
     { question: 'Czy akcesoria MC3300x pasują do MC3400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC33-70MA, BTRY-MC3X-70MA), stacje dokujące (CRD-MC33-2SUCHG, CRD-MC33-5SCHG), ładowarki baterii (SAC-MC33-4SCHG, SAC-MC33-20SCHG), kable USB (CBL-MC33-USBCHG) — wszystko pasuje do MC3400. Migracja z MC3300x nie wymaga wymiany infrastruktury ładowania.' },
-    { question: 'Czy akcesoria MC9300 pasują do MC9400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC93-STN-01, BTRY-MC93-FZ-01), stacje dokujące, ładowarki, obudowy gumowe (SG-MC93-RBTG-01), holstery (SG-MC9X-SHLSTG-01) i wymienne klawiatury MC9300 — wszystko pasuje do MC9400 bez zmian. Oszczędność 30–40% kosztów wdrożenia.' },
+    { question: 'Czy akcesoria MC9300 pasują do MC9400?', answer: 'Tak — pełna kompatybilność wsteczna. Baterie (BTRY-MC93-STN-01, BTRY-MC93-FRZ-01), stacje dokujące, ładowarki, obudowy gumowe (SG-MC93-RBTG-01), holstery (SG-MC9X-SHLSTG-01) i wymienne klawiatury MC9300 — wszystko pasuje do MC9400 bez zmian. Oszczędność 30–40% kosztów wdrożenia.' },
     { question: 'Jaki jest koszt posiadania (TCO) MC3400 vs MC9400 na 3 lata?', answer: 'TCO na 3 lata (terminal SE58 + obudowa + bateria zapasowa + OneCare Essential): MC3400 ~7 473 zł/szt., MC9400 ~10 267 zł/szt. Różnica: ~2 794 zł na sztuce (+37%). Na flocie 50 terminali oszczędność MC3400: ~139 700 zł netto. MC9400 zwraca się w ciężkim przemyśle, gdzie mniejszy wskaźnik awarii (3,65 m vs 2,4 m upadki) redukuje koszty napraw.' },
     { question: 'Czy MC3400 i MC9400 obsługują 5G?', answer: 'Nie — MC3400 i MC9400 to wersje wyłącznie Wi-Fi 6E. Warianty z 5G/LTE i GPS: Zebra MC3450 (od 5 572 zł, dopłata ~1 011 zł) i Zebra MC9450 (od 8 594 zł, dopłata ~956 zł). Oba 5G obsługują sieci publiczne i prywatne (CBRS/FR1), dual SIM (nano + eSIM) i nawigację satelitarną GPS/GLONASS/Galileo/BeiDou.' },
     { question: 'Jaki Android mają MC3400 i MC9400?', answer: 'Oba terminale mają fabrycznie Android 14 (GMS). MC3400 z 6 GB RAM: upgrade do Android 18 (4 generacje). MC9400: upgrade do Android 17 (3 generacje). Zebra LifeGuard™ zapewnia regularne łatki bezpieczeństwa przez cały cykl życia. Pakiet Mobility DNA (DataWedge, StageNow, Device Tracker) jest wliczony w cenę obu terminali.' },

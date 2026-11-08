@@ -23287,7 +23287,7 @@ const mobileComputers: Product[] = [
   "seoTitle": "Zebra MC3300x — kolektor danych / terminal mobilny z klawiaturą",
   "seoDescription": "Zebra MC3300x (MC330L) — kolektor danych z klawiaturą do magazynów i produkcji.",
   "shortDescription": "Zebra MC3300x — terminal mobilny z klawiaturą fizyczną i skanerem dalekiego zasięgu, do magazynów wysokiego składowania",
-  "description": "Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.\n\nNastępca bestsellerowej serii MC3200, MC3300x bazuje na ośmiordzeniowym procesorze Qualcomm Snapdragon 660 (2,2 GHz) z 4 GB RAM i 32 GB Flash (MicroSD do 512 GB SDXC). Wyświetlacz 4\" WVGA (800×480) z Gorilla Glass obsługuje dotyk palcem i w rękawicach roboczych. System Android 11 z pakietem Mobility DNA i gwarancją aktualizacji zabezpieczeń LifeGuard™.\n\nTrzy obudowy do wyboru: pistoletowa (Gun) z uchwytem spustowym do szybkiego skanowania seryjnego; prosta (Straight Shooter) — kompaktowa forma do noszenia w ręce; obrotowa głowica (Rotating Head) — głowica skanera obraca się o 45° do odczytu kodów pod kątem na liniach montażowych. Trzy klawiatury: 29-klawiszowa numeryczna, 38-klawiszowa funkcyjna z kalkulatorem, 47-klawiszowa alfanumeryczna.\n\nWybierz skaner według środowiska pracy: SE965 (laser 1D) do tradycyjnych kodów kreskowych na krótkim dystansie; SE4770 (imager 2D, zasięg do 71 cm) — standard do etykiet magazynowych, kodów QR i DataMatrix; SE4770 DPM — wersja do odczytu kodów grawerowanych bezpośrednio na częściach metalowych i plastikowych (Direct Part Marking); SE4850 Extended Range (zasięg do 21,3 m) — do skanowania etykiet na najwyższych regałach bez wózka widłowego. Opcjonalnie: kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy.\n\nKonstrukcja IP64 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton, 500 upadków z 0,5 m w teście tumble, zakres temperatur od -20°C do +50°C. Wymienne baterie PowerPrecision+: 5 200 mAh (standard, ~10 h) lub 7 000 mAh (rozszerzona, ~14 h). Łączność Wi-Fi 802.11ac 2×2 MU-MIMO, Bluetooth 5.0, NFC.\n\nPakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: [Zebra TC53](/produkt/zebra-tc53).\n\nKoszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą [MC3400](/produkt/zebra-mc3400) — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).",
+  "description": "Dla kogo? Zebra MC3300x to wytrzymały terminal mobilny z fizyczną klawiaturą, zaprojektowany dla operatorów magazynów wysokiego składowania, centrów dystrybucyjnych, linii produkcyjnych i zakładów cross-dockingowych — wszędzie tam, gdzie szybkie wprowadzanie danych (numery partii, kody lokalizacji, ilości) wymaga klawiszy zamiast klawiatury ekranowej, a skanowanie kodów z górnych regałów (do 21 metrów) wymaga skanera dalekiego zasięgu.\n\nNastępca bestsellerowej serii MC3200, MC3300x bazuje na ośmiordzeniowym procesorze Qualcomm Snapdragon 660 (2,2 GHz) z 4 GB RAM i 32 GB Flash (MicroSD do 512 GB SDXC). Wyświetlacz 4\" WVGA (800×480) z Gorilla Glass obsługuje dotyk palcem i w rękawicach roboczych. System Android 11 z pakietem Mobility DNA i gwarancją aktualizacji zabezpieczeń LifeGuard™.\n\nTrzy obudowy do wyboru: pistoletowa (Gun) z uchwytem spustowym do szybkiego skanowania seryjnego; prosta (Straight Shooter) — kompaktowa forma do noszenia w ręce; obrotowa głowica (Rotating Head) — głowica skanera obraca się o 45° do odczytu kodów pod kątem na liniach montażowych. Trzy klawiatury: 29-klawiszowa numeryczna, 38-klawiszowa funkcyjna z kalkulatorem, 47-klawiszowa alfanumeryczna.\n\nWybierz skaner według środowiska pracy: SE965 (laser 1D) do tradycyjnych kodów kreskowych na krótkim dystansie; SE4770 (imager 2D, zasięg do 71 cm) — standard do etykiet magazynowych, kodów QR i DataMatrix; SE4770 DPM — wersja do odczytu kodów grawerowanych bezpośrednio na częściach metalowych i plastikowych (Direct Part Marking); SE4850 Extended Range (zasięg do 21,3 m) — do skanowania etykiet na najwyższych regałach bez wózka widłowego. Opcjonalnie: kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy.\n\nKonstrukcja IP64 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton, 500 upadków z 0,5 m w teście tumble, zakres temperatur od -20°C do +50°C. W zestawie jest wymienna bateria PowerPrecision+ 7 000 mAh (~14 h). Starsze baterie 5 200 mAh i 2 740 mAh są sprzedawane osobno. Łączność Wi-Fi 802.11ac 2×2 MU-MIMO, Bluetooth 5.0, NFC.\n\nPakiet Mobility DNA w cenie: DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zgubionych terminali), LifeGuard™ (łatki bezpieczeństwa). Wersja dotykowa bez klawiatury: [Zebra TC53](/produkt/zebra-tc53).\n\nKoszt posiadania (TCO): baterie PowerPrecision+, stacje dokujące, ładowarki i holstery MC3300x są w pełni kompatybilne z następcą [MC3400](/produkt/zebra-mc3400) — migracja na nowszą generację nie wymaga wymiany infrastruktury ładowania. Inwestycja w akcesoria MC3300x chroni budżet przy przyszłym upgrade. MC3300x to jeden z najczęściej wdrażanych kolektorów danych Zebra w polskich magazynach — sprawdzona platforma z szeroką bazą akcesoriów i serwisem w Polsce (serwis-zebry.pl).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Przewód USB-A z adapterem Zebra MC3300x / MC3400 / MC3450 — 1,52 m (CBL-MC33-USBCHG-01)](/produkt/zebra-mc33-usb-cable)\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\nW pudełku są terminal i bateria PowerPrecision+ 7000 mAh. Przewód zakłada się na złącze w dolnej części MC3300x. [Stacja CRD-MC33-2SUCHG-01](/produkt/zebra-mc33-cradle-1slot) ładuje terminal i jedną baterię zapasową. [Zasilacz 50 W](/produkt/zebra-zasilacz-50w), [przewód DC](/produkt/zebra-kabel-zasilajacy-388) i [przewód sieciowy](/produkt/zebra-tc201-50-16000-220r) do stacji są sprzedawane osobno. [Zestaw KT-CRD-MC33-2SUCHG-01](/produkt/zebra-mc3400-kt-crd-mc33-2suchg-01) zawiera stację, zasilacz i przewód DC. Przewód sieciowy do tego zestawu jest sprzedawany osobno.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -23807,7 +23807,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Jaka bateria pasuje do MC3300x i ile trzyma?",
-      "answer": "MC3300x obsługuje dwie baterie PowerPrecision+: standardową 5 200 mAh (~10 godzin ciągłej pracy) i rozszerzoną 7 000 mAh (~14 godzin). Baterie są wymienne bez wyłączania urządzenia (warm swap). Do ładowania wymagana jest stacja dokująca lub ładowarka baterii (kupowana osobno). Baterie mają chip diagnostyczny — aplikacja PowerPrecision pokazuje stan zdrowia i prognozuje konieczność wymiany."
+      "answer": "W zestawie MC3300x jest bateria PowerPrecision+ 7 000 mAh (~14 godzin ciągłej pracy). Starsze baterie 5 200 mAh i 2 740 mAh są sprzedawane osobno. Baterie są wymienne bez wyłączania urządzenia (warm swap). Terminal ładuje stacja albo przewód CBL-MC33-USBCHG-01 z zasilaczem PWR-WUA5V12W0EU. Ładowarka baterii ładuje tylko baterie. Baterie mają chip diagnostyczny — aplikacja PowerPrecision pokazuje stan zdrowia i prognozuje konieczność wymiany."
     },
     {
       "question": "Jaki system Android obsługuje MC3300x?",
@@ -23851,6 +23851,7 @@ const mobileComputers: Product[] = [
     "zebra-mc33-battery-7000",
     "zebra-mc33-holster",
     "zebra-mc33-usb-cable",
+    "zebra-tc22-tc27-pwr-wua5v12w0eu",
     "zebra-mc33-cradle-1slot",
     "zebra-mc33-battery-charger-4slot",
     "zebra-mc33-cradle-5slot",
@@ -23944,7 +23945,7 @@ const mobileComputers: Product[] = [
   "seoTitle": "Zebra MC3400 — kolektor danych z klawiaturą",
   "seoDescription": "Następca MC3300x.",
   "shortDescription": "Zebra MC3400 — kolektor danych z fizyczną klawiaturą w obudowie pistoletowej lub prostej, Wi-Fi 6E, skaner do 30 m, IP65/IP67, następca MC3300x",
-  "description": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowych serii Zebra MC3300 i [MC3300x](/produkt/zebra-mc3300x). Cena, 14 konfiguracji w TAKMA.\n\nKluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.\n\nTrzy skanery do wyboru: SE55 Advanced Range (do 12,2 m — regały średniego składowania), SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — eliminuje konieczność używania drabin w magazynach wysokiego składowania). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna z kalkulatorem — najpopularniejsza) i 47-klawiszowa (alfanumeryczna A-Z) — kluczowa przewaga tego kolektora danych nad terminalami dotykowymi.\n\nPodwójna klasa ochrony IP65/IP67 — pierwszy kolektor danych z serii MC3000 z pełną wodoodpornością: mycie pod bieżącą wodą i zanurzenie do 1 m (MC3300x miał jedynie IP64). Upadki z 2,4 m na beton (+33% vs MC3300x), 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — wymiana bez wyłączania urządzenia, pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18 (wersja 6 GB RAM). Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja z 5G/LTE i GPS: [Zebra MC3450](/produkt/zebra-mc3450). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3400. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3400 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.",
+  "description": "Zebra MC3400 to kolektor danych (terminal mobilny) nowej generacji z fizyczną klawiaturą i skanerem kodów kreskowych 2D. Zaprojektowany dla operatorów magazynów, centrów dystrybucji, linii produkcyjnych i punktów cross-dockingu — wszędzie tam, gdzie szybkie wprowadzanie danych z klawiatury i niezawodne skanowanie kodów kreskowych decydują o wydajności operacji. Następca bestsellerowych serii Zebra MC3300 i [MC3300x](/produkt/zebra-mc3300x). Cena, 14 konfiguracji w TAKMA.\n\nKluczowa przewaga kolektora danych MC3400 nad poprzednikiem: procesor Qualcomm 4490 (2,4 GHz) dostarcza 2,5-krotnie większą moc obliczeniową niż Snapdragon 660 w MC3300x, przy jednoczesnym wzroście pamięci RAM do 6 GB i Flash do 128 GB. Wi-Fi 6E (triband 2,4/5/6 GHz) zapewnia do 3× szybszy transfer niż Wi-Fi 5 w poprzedniku — krytyczne w magazynach z 200+ urządzeniami w sieci.\n\nTrzy skanery do wyboru: SE55 Advanced Range (do 12,2 m — regały średniego składowania), SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — eliminuje konieczność używania drabin w magazynach wysokiego składowania). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna z kalkulatorem — najpopularniejsza) i 47-klawiszowa (alfanumeryczna A-Z) — kluczowa przewaga tego kolektora danych nad terminalami dotykowymi.\n\nPodwójna klasa ochrony IP65/IP67 — pierwszy kolektor danych z serii MC3000 z pełną wodoodpornością: mycie pod bieżącą wodą i zanurzenie do 1 m (MC3300x miał jedynie IP64). Upadki z 2,4 m na beton (+33% vs MC3300x), 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — wymiana bez wyłączania urządzenia, pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18 (wersja 6 GB RAM). Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja z 5G/LTE i GPS: [Zebra MC3450](/produkt/zebra-mc3450). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3400. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3400 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nW pudełku są terminal i bateria litowo-jonowa. Wersja Straight ma dodatkowo pasek na rękę. MC3400 ma gniazdo USB-C pod zaślepką. Ten sam zasilacz pasuje do [przewodu CBL-MC33-USBCHG-01](/produkt/zebra-mc33-usb-cable), który łączy się ze stykami na spodzie terminala. W pojeździe przewód USB-C współpracuje z [ładowarką samochodową CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01). [Stacja CRD-MC33-2SUCHG-01](/produkt/zebra-mc33-cradle-1slot) potrzebuje [zasilacza 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego](/produkt/zebra-tc201-50-16000-220r). [Zestaw KT-CRD-MC33-2SUCHG-01](/produkt/zebra-mc3400-kt-crd-mc33-2suchg-01) ma stację, zasilacz i przewód DC w jednym opakowaniu.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -24618,7 +24619,7 @@ const mobileComputers: Product[] = [
   "seoTitle": "Zebra MC3450 — kolektor danych 5G z klawiaturą",
   "seoDescription": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę.",
   "shortDescription": "Zebra MC3450 — terminal mobilny 5G z klawiaturą, Wi-Fi 6E, GPS, skaner do 30 m, IP65/IP67",
-  "description": "Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.\n\nIdentyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż [MC3300x](/produkt/zebra-mc3300x)) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.\n\nCztery opcje skanerów: SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — skanowanie kontenerów na placu bez drabiny). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna) i 47-klawiszowa (alfanumeryczna A-Z). Dwie obudowy: Straight Shooter (prosta, 442 g) i Gun (pistoletowa, 528 g).\n\nPodwójna klasa ochrony IP65/IP67 — pełna wodoodporność: deszcz, mycie pod bieżącą wodą, zanurzenie. Upadki z 2,4 m na beton, 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC3400](/produkt/zebra-mc3400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3450. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3450 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.",
+  "description": "Dla kogo? Zebra MC3450 to wytrzymały terminal mobilny 5G nowej generacji z fizyczną klawiaturą, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — yard management na placach kontenerowych, weryfikacja ładunków w portach, inwentaryzacja pojazdów na dużych placach, logistyka terenowa i zarządzanie dostawami last-mile.\n\nIdentyczne parametry jak MC3400 (procesor Qualcomm 4490, 2,4 GHz — 2,5× szybszy niż [MC3300x](/produkt/zebra-mc3300x)) plus moduł 5G/LTE: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou. MC3450 to jedyny terminal Zebra z fizyczną klawiaturą i łącznością 5G — gdy operator musi pracować na zewnątrz budynku, gdzie Wi-Fi nie sięga.\n\nCztery opcje skanerów: SE4770 Standard Range (indoor/outdoor z celownikiem laserowym), SE58 Extended Range z zielonym laserem IntelliFocus (do 30,5 m — skanowanie kontenerów na placu bez drabiny). Trzy klawiatury: 29-klawiszowa (numeryczna), 38-klawiszowa (funkcyjna) i 47-klawiszowa (alfanumeryczna A-Z). Dwie obudowy: Straight Shooter (prosta, 442 g) i Gun (pistoletowa, 528 g).\n\nPodwójna klasa ochrony IP65/IP67 — pełna wodoodporność: deszcz, mycie pod bieżącą wodą, zanurzenie. Upadki z 2,4 m na beton, 4 000 cykli tumble z 1 m. Bateria 7 000 mAh z hot-swap — pełna zmiana 10–14 h. Android 14 z gwarancją aktualizacji do Android 18. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy.\n\nTerminal współpracuje ze zgodnymi stacjami i ładowarkami MC3300x. Osłonę i paski dobierz do wersji pistoletowej lub prostej. Starsze baterie MC3300 mogą obniżyć szczelność terminala. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC3400](/produkt/zebra-mc3400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, Enterprise Home Screen, LifeGuard™.\n\nZgodne stacje i ładowarki MC3300x można wykorzystać z MC3450. Osłonę, kaburę i pasek dobierz do wersji terminala. Starsze baterie MC3300 7000 mAh i 5200 mAh mogą obniżyć szczelność terminala. Dla MC3450 wybierz baterię BTRY-MC3X-70MA-01 lub BTRY-MC3X-7BLE-01.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nZestaw MC3450 obejmuje terminal z baterią litowo-jonową. Pasek na rękę jest w pudełku tylko w wersji Straight. Gniazdo USB-C terminala przyjmuje przewód z listy. Zamiast przewodu USB-C można użyć [przewodu z nakładką CBL-MC33-USBCHG-01](/produkt/zebra-mc33-usb-cable) z tym samym zasilaczem. Ładowanie z gniazda zapalniczki zapewnia [ładowarka CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01). Na stanowisku stałym pracuje [stacja jednogniazdowa CRD-MC33-2SUCHG-01](/produkt/zebra-mc33-cradle-1slot) z [zasilaczem PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w), [przewodem DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodem sieciowym 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -25242,7 +25243,7 @@ const mobileComputers: Product[] = [
   "seoTitle": "Zebra MC9400 — kolektor danych ultra-rugged",
   "seoDescription": "Aktualną cenę znajdziesz przy wybranym numerze PN. Jeśli cena nie jest widoczna, poproś o wycenę.",
   "shortDescription": "Zebra MC9400 — flagowy kolektor danych ultra-rugged z 7 klawiaturami, skanerem do 30 m, IP65+IP68, upadki 3,65 m, następca MC9300",
-  "description": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30 m i ochroną IP65+IP68 — do magazynów wysokiego składowania, chłodni (-30°C) i ciężkiego przemysłu. Następca MC9300, Android 14→17. 20 konfiguracji w TAKMA.\n\nDla kogo? Zebra MC9400 to flagowy kolektor danych (terminal mobilny) klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.\n\nKolektor danych MC9400 to następca serii MC9300: procesor Qualcomm QCS4490 octa-core 2,4 GHz dostarcza 2× większą moc obliczeniową niż poprzednik, z 6 GB RAM i 128 GB Flash UFS (microSD do 2 TB). Wyświetlacz 4,3\" WVGA (800×480) z Gorilla Glass o jasności 600 nit — czytelny w pełnym słońcu i w chłodniach z parującymi okularami. Dotyk w rękawicach roboczych i mokrych dłoniach. Wi-Fi 6E (triband 2,4/5/6 GHz), Bluetooth 5.3, NFC. Android 14 z gwarancją aktualizacji do Android 17.\n\nSiedem wymiennych klawiatur (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa numeryczna rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa (najpopularniejsza w WMS), 53-klawiszowa VT (emulacja terminala), 53-klawiszowa 5250 (emulacja IBM AS/400), 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, z wyczuwalnym klikiem — do pracy w rękawicach na każdej zmianie.\n\nKolektor danych MC9400 oferuje dwa skanery: SE4770 Standard Range — imager 2D do skanowania na krótkim i średnim dystansie, idealne do retail i logistyki bliskiego zasięgu. SE58 Extended Range z zielonym laserem IntelliFocus — zasięg do 30,5 m (100 ft), 7× bardziej widoczny niż tradycyjny laser, do skanowania etykiet na najwyższych regałach magazynów wysokiego składowania bez drabiny i wózka widłowego.\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.\n\nOpcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: [Zebra MC9450](/produkt/zebra-mc9450). Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Kolektor danych Zebra MC9400 z Android 14 i gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.",
+  "description": "Zebra MC9400 to kolektor danych klasy ultra-rugged z 7 wymiennymi klawiaturami, skanerem SE58 do 30 m i ochroną IP65+IP68 — do magazynów wysokiego składowania, chłodni (-30°C) i ciężkiego przemysłu. Następca MC9300, Android 14→17. 20 konfiguracji w TAKMA.\n\nDla kogo? Zebra MC9400 to flagowy kolektor danych (terminal mobilny) klasy ultra-rugged z siedmioma wymiennymi klawiaturami, zaprojektowany dla najbardziej wymagających środowisk przemysłowych — magazynów wysokiego składowania, chłodni (-30°C), portów, zakładów produkcyjnych, centrów logistycznych i dużych fabryk — wszędzie tam, gdzie wymagana jest bezwzględna niezawodność, skanowanie kodów na dystansie do 30 metrów i wielozmianowa praca w ekstremalnych warunkach temperaturowych.\n\nKolektor danych MC9400 to następca serii MC9300: procesor Qualcomm QCS4490 octa-core 2,4 GHz dostarcza 2× większą moc obliczeniową niż poprzednik, z 6 GB RAM i 128 GB Flash UFS (microSD do 2 TB). Wyświetlacz 4,3\" WVGA (800×480) z Gorilla Glass o jasności 600 nit — czytelny w pełnym słońcu i w chłodniach z parującymi okularami. Dotyk w rękawicach roboczych i mokrych dłoniach. Wi-Fi 6E (triband 2,4/5/6 GHz), Bluetooth 5.3, NFC. Android 14 z gwarancją aktualizacji do Android 17.\n\nSiedem wymiennych klawiatur (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa numeryczna rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa (najpopularniejsza w WMS), 53-klawiszowa VT (emulacja terminala), 53-klawiszowa 5250 (emulacja IBM AS/400), 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, z wyczuwalnym klikiem — do pracy w rękawicach na każdej zmianie.\n\nKolektor danych MC9400 oferuje dwa skanery: SE4770 Standard Range — imager 2D do skanowania na krótkim i średnim dystansie, idealne do retail i logistyki bliskiego zasięgu. SE58 Extended Range z zielonym laserem IntelliFocus — zasięg do 30,5 m (100 ft), 7× bardziej widoczny niż tradycyjny laser, do skanowania etykiet na najwyższych regałach magazynów wysokiego składowania bez drabiny i wózka widłowego.\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton (najwyższy w klasie), 6 000 cykli tumble z 1 m, zakres temperatur od -20°C do +50°C (standardowa bateria) i od -30°C do +50°C (bateria freezer). Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do lokalizacji w magazynie) i 5 000 mAh freezer (certyfikowana do pracy w mroźniach -30°C). Warm-swap — wymiana baterii bez restartu urządzenia.\n\nOpcjonalna kamera tylna 13 MP do dokumentacji fotograficznej, OCR i skanowania dowodów dostawy. Zebra Identity Guardian — biometryczne logowanie rozpoznawaniem twarzy. Wersja z 5G/LTE i GPS: [Zebra MC9450](/produkt/zebra-mc9450). Kolektor danych MC9400 zawiera pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność wsteczna z akcesoriami MC9300 — baterie, stacje dokujące, ładowarki, holstery pasują bez zmian. Migracja z MC9300 na MC9400 nie wymaga wymiany infrastruktury ładowania — oszczędność do 40% kosztów wdrożenia w porównaniu z zakupem kompletnie nowego ekosystemu. Kolektor danych Zebra MC9400 z Android 14 i gwarancją aktualizacji do wersji 17 (3 generacje) = minimum 8 lat wsparcia od Zebra LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\nW pudełku są terminal i bateria PowerPrecision+. Adapter zatrzaskuje się na złączu w dolnej części MC9400. Gniazdo USB-C jest w adapterze. Przewód USB-C łączy się z adapterem, a nie z obudową terminala. [Stacja CRD-MC93-2SUCHG-01](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) ładuje terminal i baterię zapasową. Do stacji potrzebne są [zasilacz 50 W](/produkt/zebra-zasilacz-50w), [przewód DC](/produkt/zebra-kabel-zasilajacy-388) i [przewód sieciowy](/produkt/zebra-tc201-50-16000-220r). W pojeździe adapter i przewód USB-C pracują z [ładowarką samochodową CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -25587,7 +25588,7 @@ const mobileComputers: Product[] = [
     },
     {
       "question": "Czy kolektor danych MC9400 działa w chłodniach (-30°C)?",
-      "answer": "Tak — z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) kolektor danych MC9400 pracuje w temperaturach od -30°C do +50°C. Bateria standardowa (7 000 mAh) działa od -20°C do +50°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu w przejściach chłodnia/hala. Konstrukcja IP65+IP68: pełna odporność na wilgoć, kondensat i mycie."
+      "answer": "Tak — z baterią freezer (BTRY-MC93-FRZ-01, 5 000 mAh) kolektor danych MC9400 pracuje w temperaturach od -30°C do +50°C. Bateria standardowa (7 000 mAh) działa od -20°C do +50°C. Wyświetlacz 600 nit z ogrzewaniem zapobiega parowaniu w przejściach chłodnia/hala. Konstrukcja IP65+IP68: pełna odporność na wilgoć, kondensat i mycie."
     },
     {
       "question": "Czy MC9400 obsługuje 5G?",
@@ -25807,16 +25808,25 @@ const mobileComputers: Product[] = [
     name: 'Datalogic Skorpio X40',
     seoTitle: 'Datalogic Skorpio X40 — terminal mobilny / kolektor danych | od 5 225 zł',
     seoDescription: 'Datalogic Skorpio X40 — nowy kolektor danych do magazynu, retail i produkcji. Następca Skorpio X5: Wi-Fi 6E, Android 15→19, Green Spot, imager do 10 m, klawiatury 29/39/48, ładowanie bezprzewodowe. Od 5 225 zł netto, dostępny w dystrybucji.',
-    shortDescription: 'Datalogic Skorpio X40 — następca Skorpio X5: Wi-Fi 6E, Android 15 (do 19), Green Spot, 2D imager SR/LR do 10 m, 3 klawiatury, odpinany uchwyt pistoletowy, ładowanie bezprzewodowe Qi',
+    shortDescription: 'Datalogic Skorpio X40 — następca Skorpio X5: Wi-Fi 6E, Android 15 (do 19), Green Spot, 2D imager SR/LR do 10 m, 3 klawiatury, odpinany uchwyt pistoletowy, wersja z ładowaniem bezprzewodowym Qi',
     description: `Dla kogo? Datalogic Skorpio X40 to terminal mobilny z fizyczną klawiaturą zaprojektowany do intensywnego skanowania w handlu detalicznym, lekkim magazynie i produkcji — inwentaryzacja i uzupełnianie półek, kompletacja zamówień e-commerce, przyjęcia towaru, kontrola cen, prace na wózkach i przy linii produkcyjnej. Następca popularnego Skorpio X5 — z pełną kompatybilnością z jego stacjami dokującymi i akcesoriami, więc wymiana floty nie wymaga wymiany infrastruktury.
 
 Kompaktowa, wyważona konstrukcja (445 g) leży naturalnie w dłoni i ogranicza zmęczenie operatora podczas całej zmiany. Odpinany w terenie uchwyt pistoletowy pozwala w kilka sekund przejść między pracą ręczną a intensywnym skanowaniem „z pistoletu" — bez narzędzi i bez wizyty w serwisie. Trzy układy klawiatury (29 numeryczna, 39 funkcyjno-numeryczna, 48 alfanumeryczna) z dużymi, szeroko rozstawionymi klawiszami sprawdzają się także w rękawicach roboczych.
 
 Dwa silniki skanujące Halogen z technologią Green Spot — patentem Datalogic, który rzuca zielone potwierdzenie odczytu wprost na etykietę, więc operator nie musi zerkać na ekran: wersja Standard Range do typowych dystansów oraz Extended Range odczytująca kody nawet z 10 metrów (najwyższe regały, palety na placu). Ekran 4" WVGA w szkle Gorilla Glass czytelny w hali i na zewnątrz, obsługa dotyku w rękawicach i przy zachlapaniu.
 
-Pod maską: Qualcomm 4490 octa-core 2,4 GHz, 6 GB RAM i 128 GB UFS, Wi-Fi 6/6E z szybkim roamingiem, Bluetooth 5.3 i NFC. Android 15 z certyfikacją Android Enterprise Recommended i aktualizacjami aż do Androida 19 — flota nie zestarzeje się po dwóch latach. Bateria 7 000 mAh z wymianą hot-swap (dane aplikacji nie giną przy zmianie baterii) wytrzymuje pracę 24/7, a obok ładowania stykowego jest pełnoprawne ładowanie bezprzewodowe Qi — koniec z czyszczeniem i zużyciem pinów w stacjach.
+Pod maską: Qualcomm 4490 octa-core 2,4 GHz, 6 GB RAM i 128 GB UFS, Wi-Fi 6/6E z szybkim roamingiem, Bluetooth 5.3 i NFC. Android 15 z certyfikacją Android Enterprise Recommended i aktualizacjami aż do Androida 19 — flota nie zestarzeje się po dwóch latach. Bateria 7 000 mAh z wymianą hot-swap (dane aplikacji nie giną przy zmianie baterii) wytrzymuje pracę 24/7. Wersje ze stykami ładują się w stacjach stykowych. Wersja 946400011 nie ma styków i ładuje się bezprzewodowo (Qi).
 
-Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-STD-810H), 3 000 cykli tumble, praca od -20°C do +50°C, odporność na środki czyszczące i oleje przemysłowe. Wersja z łącznością komórkową 5G i GPS to [Datalogic Skorpio X45](/produkt/datalogic-skorpio-x45). Zarządzanie flotą przez Datalogic Connect oraz zgodność z SOTI, Intune, VMware Workspace ONE i Ivanti Velocity.`,
+Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-STD-810H), 3 000 cykli tumble, praca od -20°C do +50°C, odporność na środki czyszczące i oleje przemysłowe. Wersja z łącznością komórkową 5G i GPS to [Datalogic Skorpio X45](/produkt/datalogic-skorpio-x45). Zarządzanie flotą przez Datalogic Connect oraz zgodność z SOTI, Intune, VMware Workspace ONE i Ivanti Velocity.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Skorpio X40 ma w zestawie baterię 7000 mAh i nakładki na klawiaturę. Wersje kompaktowe mają pasek na rękę. Wersje z uchwytem pistoletowym mają smycz. Trzy terminale ze stykami ładuje [stacja 94A150110](/produkt/datalogic-dock-skorpio-x5-3slot-ethernet) z [zasilaczem 91ACC0048](/produkt/datalogic-zasilacz-skorpio-x5) i [przewodem 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041). Wersja 946400011 nie ma styków i ładuje się w [stacji bezprzewodowej 94A150106](/produkt/datalogic-dock-skorpio-x5-bezprzewodowa). Stacja bezprzewodowa wymaga tego samego zasilacza i przewodu.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
@@ -25888,7 +25898,7 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
       { question: 'Co to jest Green Spot?', answer: 'Green Spot to opatentowana przez Datalogic technologia potwierdzania odczytu: po poprawnym zeskanowaniu na etykiecie pojawia się zielony punkt światła. Operator nie musi odrywać wzroku od towaru ani zerkać na ekran — przy seryjnym skanowaniu setek kodów dziennie realnie przyspiesza to pracę i eliminuje wątpliwości, czy kod „wszedł".' },
       { question: 'Którą klawiaturę wybrać — 29, 39 czy 48 klawiszy?', answer: '29 klawiszy (numeryczna) — gdy operator wpisuje głównie ilości. 39 klawiszy (funkcyjno-numeryczna z F1–F12) — najpopularniejsza w WMS i emulacji terminala (Ivanti Velocity, StayLinked); to jej szukaj, jeśli nie masz pewności. 48 klawiszy (alfanumeryczna) — gdy wpisuje się też tekst: uwagi, kody literowe, numery dokumentów. Wszystkie mają duże, szeroko rozstawione klawisze do pracy w rękawicach.' },
       { question: 'Czy uchwyt pistoletowy można zdjąć?', answer: 'Tak — uchwyt pistoletowy Skorpio X40 jest odpinany w terenie, bez narzędzi. Jedno urządzenie obsłuży pracę ręczną (445 g) i intensywne skanowanie seryjne „z pistoletu" (575 g). To zmiana względem Skorpio X5, gdzie konfiguracja gun była stała.' },
-      { question: 'Czy Skorpio X40 ma ładowanie bezprzewodowe?', answer: 'Tak — obok klasycznego ładowania stykowego i USB-C, Skorpio X40 obsługuje ładowanie bezprzewodowe Qi 10 W (standard WPC EPP). Bezprzewodowe stacje eliminują zużycie pinów, zbieranie się brudu na stykach i związane z tym serwisowanie — przy flocie kilkudziesięciu terminali to odczuwalna oszczędność.' },
+      { question: 'Czy Skorpio X40 ma ładowanie bezprzewodowe?', answer: 'Tylko wersja 946400011. Ta wersja nie ma styków i ładuje się bezprzewodowo w standardzie Qi 10 W (WPC EPP). Pozostałe wersje ładują się przez styki i USB-C. Bezprzewodowe stacje eliminują zużycie pinów, zbieranie się brudu na stykach i związane z tym serwisowanie — przy flocie kilkudziesięciu terminali to odczuwalna oszczędność.' },
       { question: 'Czy stacje dokujące Skorpio X5 pasują do X40?', answer: 'Tak — Skorpio X40 ma pełną kompatybilność wsteczną ze stacjami dokującymi i akcesoriami Skorpio X5 (stacje 1- i 3-stanowiskowe, ładowarki baterii). Wymieniając flotę X5 na X40 zostajesz przy dotychczasowej infrastrukturze ładowania.' },
       { question: 'Czy Skorpio X40 nadaje się do chłodni?', answer: 'Skorpio X40 pracuje od -20°C do +50°C i ma szczelność IP65/IP67, więc sprawdzi się w chłodniach i strefach przyjęć zimnych. Do mroźni głębokiego mrożenia (-30°C) rekomendujemy terminale z dedykowanymi bateriami freezer, np. Zebra MC9450 — pomożemy dobrać sprzęt do konkretnej temperatury pracy.' },
       { question: 'Jakie są alternatywy dla Skorpio X40?', answer: 'W tej klasie: Zebra MC3450 (od 5 572 zł, wymienne klawiatury, opcja 5G w MC3400) i Honeywell CK67. Skorpio X40 wyróżnia Green Spot, odpinany uchwyt pistoletowy, ładowanie bezprzewodowe w standardzie przemysłowym i bardzo długi cykl życia Androida (do wersji 19). Jeśli potrzebujesz większej odporności (upadki z 3,65 m, IP68), zobacz [Zebra MC9450](/produkt/zebra-mc9450).' },
@@ -25917,9 +25927,18 @@ Wytrzymałość klasy przemysłowej: IP65 i IP67, upadki z 2,4 m na beton (MIL-S
 
 Moduł komórkowy obsługuje 5G NR (FR1), LTE-Advanced i sieci prywatne (CBRS) — z dual SIM w układzie nano SIM + eSIM, więc flotę można zdalnie przełączać między operatorami bez wyjmowania kart. Pełna nawigacja satelitarna GPS/Galileo/GLONASS/BeiDou z dwuzakresowym odbiornikiem L1 + L5 daje precyzyjną lokalizację pojazdów i przesyłek nawet w gęstej zabudowie, a barometr wspiera lokalizację piętrową (Z-axis) w obiektach wielokondygnacyjnych.
 
-Poza łącznością X45 jest identyczny ze Skorpio X40 — i to jest jego siła: kompaktowa konstrukcja 210 × 75 × 27 mm leżąca naturalnie w dłoni, trzy klawiatury (29/39/48 klawiszy) do pracy w rękawicach, odpinany w terenie uchwyt pistoletowy, imager 2D z zielonym potwierdzeniem odczytu Green Spot, ekran 4" w szkle Gorilla Glass, bateria 7 000 mAh hot-swap, ładowanie stykowe i bezprzewodowe Qi oraz wytrzymałość IP65/IP67 z upadkami z 2,4 m. Qualcomm 4490, 6/128 GB, Wi-Fi 6/6E i Android 15 z aktualizacjami do Androida 19 dają flocie zapas technologiczny na lata.
+Poza łącznością X45 jest identyczny ze Skorpio X40 — i to jest jego siła: kompaktowa konstrukcja 210 × 75 × 27 mm leżąca naturalnie w dłoni, trzy klawiatury (29/39/48 klawiszy) do pracy w rękawicach, odpinany w terenie uchwyt pistoletowy, imager 2D z zielonym potwierdzeniem odczytu Green Spot, ekran 4" w szkle Gorilla Glass, bateria 7 000 mAh hot-swap, ładowanie stykowe oraz wytrzymałość IP65/IP67 z upadkami z 2,4 m. Qualcomm 4490, 6/128 GB, Wi-Fi 6/6E i Android 15 z aktualizacjami do Androida 19 dają flocie zapas technologiczny na lata.
 
-Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dzielą ten sam ekosystem, więc flota mieszana (magazyn na X40, teren na X45) korzysta z jednej infrastruktury ładowania, jednych uchwytów i jednego zarządzania przez Datalogic Connect lub Twój MDM (SOTI, Intune, Workspace ONE, Ivanti).`,
+Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dzielą ten sam ekosystem, więc flota mieszana (magazyn na X40, teren na X45) korzysta z jednej infrastruktury ładowania, jednych uchwytów i jednego zarządzania przez Datalogic Connect lub Twój MDM (SOTI, Intune, Workspace ONE, Ivanti).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Skorpio X45 trafia do klienta z baterią 7000 mAh, smyczą i nakładkami na klawiaturę. Żadna wersja X45 nie ładuje się bezprzewodowo. Do trzech terminali X45 naraz ładuje [stacja 3-gniazdowa 94A150110](/produkt/datalogic-dock-skorpio-x5-3slot-ethernet). Stację zasila [zasilacz 91ACC0048](/produkt/datalogic-zasilacz-skorpio-x5) z [przewodem sieciowym 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
@@ -25951,7 +25970,7 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
       { name: 'Klawiatura', value: '29 numeryczna / 39 funkcyjno-numeryczna / 48 alfanumeryczna' },
       { name: 'Skaner', value: 'Halogen 2D z Green Spot (potwierdzenie odczytu na etykiecie)' },
       { name: 'Kamera', value: '13 MP z autofocusem i doświetleniem LED' },
-      { name: 'Bateria', value: '7 000 mAh (25,4 Wh), hot-swap, USB-C, ładowanie stykowe lub bezprzewodowe Qi 10 W' },
+      { name: 'Bateria', value: '7 000 mAh (25,4 Wh), hot-swap, USB-C, ładowanie stykowe' },
       { name: 'Czujniki', value: 'Akcelerometr, żyroskop, magnetometr, czujnik zbliżeniowy i światła, barometr (Z-axis)' },
       { name: 'Odporność', value: 'IP65 + IP67, upadki z 2,4 m na beton (MIL-STD-810H), 3 000 cykli tumble' },
       { name: 'Temperatura pracy', value: 'Od -20°C do +50°C' },
@@ -25975,9 +25994,9 @@ Stacje dokujące i akcesoria Skorpio X5 pasują bez zmian — a X40 i X45 dziel�
       { question: 'Jak dokładny jest GPS w Skorpio X45?', answer: 'X45 używa dwuzakresowego odbiornika GNSS (L1 + L5) z obsługą GPS, Galileo, GLONASS i BeiDou oraz A-GPS. Drugi zakres L5 znacząco poprawia dokładność w trudnych warunkach — gęsta zabudowa miejska, doki załadunkowe, parkingi wielopoziomowe. Dodatkowy barometr pozwala określić kondygnację (Z-axis) w budynkach wielopiętrowych.' },
       { question: 'Czy Skorpio X45 działa w sieciach prywatnych 5G?', answer: 'Tak — X45 obsługuje publiczne sieci 5G/LTE wszystkich operatorów oraz sieci prywatne, w tym CBRS (4G i 5G). To istotne dla dużych zakładów i centrów logistycznych budujących własną infrastrukturę komórkową zamiast gęstego Wi-Fi.' },
       { question: 'Którą klawiaturę wybrać?', answer: '29 klawiszy (numeryczna) — szybkie wpisywanie ilości. 39 klawiszy (funkcyjno-numeryczna z F1–F12) — najpopularniejsza w WMS i emulacji terminala; bezpieczny wybór domyślny. 48 klawiszy (alfanumeryczna) — gdy operator wpisuje też tekst. Wszystkie trzy warianty X45 mają uchwyt pistoletowy (odpinany w terenie, bez narzędzi).' },
-      { question: 'Czy stacje dokujące Skorpio X5 i X40 pasują do X45?', answer: 'Tak — X45 dzieli infrastrukturę ładowania ze Skorpio X40 i X5: stacje 1- i 3-stanowiskowe (stykowe i bezprzewodowe), ładowarki baterii i uchwyty pasują bez zmian. Flota mieszana X40 (magazyn) + X45 (teren) korzysta z jednych doków i jednego zarządzania.' },
+      { question: 'Czy stacje dokujące Skorpio X5 i X40 pasują do X45?', answer: 'Tak — X45 dzieli infrastrukturę ładowania ze Skorpio X40 i X5: stacje 1- i 3-stanowiskowe ze stykami, ładowarki baterii i uchwyty pasują bez zmian. Flota mieszana X40 (magazyn) + X45 (teren) korzysta z jednych doków i jednego zarządzania.' },
       { question: 'Kiedy Skorpio X45 będzie dostępny?', answer: 'Skorpio X45 jest w przedsprzedaży — Datalogic uruchamia dostawy do dystrybucji, a pierwsze sztuki wysyłamy po premierze (orientacyjnie 2-4 tygodnie). Przyjmujemy zamówienia przedpremierowe i rezerwacje flotowe — przy większych wdrożeniach warto zarezerwować pulę z pierwszej dostawy.' },
-      { question: 'Jakie są alternatywy dla Skorpio X45?', answer: 'W klasie terminali 5G z klawiaturą: [Zebra MC9450](/produkt/zebra-mc9450) (ultra-rugged, od 8 594 zł — cięższy i droższy, za to IP68 i upadki z 3,65 m) oraz Zebra MC3450. X45 wygrywa wagą (445 g vs 743 g), ceną, Green Spotem i ładowaniem bezprzewodowym. Jeśli łączność komórkowa nie jest potrzebna — [Skorpio X40](/produkt/datalogic-skorpio-x40) za ok. 760 zł mniej.' },
+      { question: 'Jakie są alternatywy dla Skorpio X45?', answer: 'W klasie terminali 5G z klawiaturą: [Zebra MC9450](/produkt/zebra-mc9450) (ultra-rugged, od 8 594 zł — cięższy i droższy, za to IP68 i upadki z 3,65 m) oraz Zebra MC3450. X45 wygrywa wagą (445 g vs 743 g), ceną i Green Spotem. Jeśli łączność komórkowa nie jest potrzebna — [Skorpio X40](/produkt/datalogic-skorpio-x40) za ok. 760 zł mniej.' },
     ],
     applications: [
       'Dostawy bezpośrednie do sklepów (DSD) — skanowanie i rozliczenia u klienta przez 5G',
@@ -26005,9 +26024,18 @@ Trzy silniki skanujące do wyboru: Standard Range do typowych dystansów, Long R
 
 Ekran 4,3" o jasności 600 nitów w szkle Gorilla Glass 7 pozostaje czytelny w pełnym słońcu na placu. Trzy podświetlane klawiatury (31 numeryczna, 41 funkcyjno-numeryczna, 53 alfanumeryczna) z dużymi klawiszami do pracy w grubych rękawicach i w ciemnych strefach hali. Odpinany w terenie uchwyt pistoletowy zamienia terminal ręczny w skaner do pracy seryjnej w kilka sekund.
 
-Konstrukcja bez kompromisów: IP65 i IP68 (pełna wodoszczelność), upadki z 2,8 m na beton w pełnym zakresie temperatur (MIL-STD-810H), 4 000 cykli tumble, praca od -20°C do +50°C i odporność na chemię przemysłową. Bateria 7 000 mAh hot-swap, ładowanie stykowe i bezprzewodowe Qi. Pod maską Qualcomm 4490, 8 GB RAM / 128 GB, Wi-Fi 6/6E i Android 15 z aktualizacjami do Androida 19.
+Konstrukcja bez kompromisów: IP65 i IP68 (pełna wodoszczelność), upadki z 2,8 m na beton w pełnym zakresie temperatur (MIL-STD-810H), 4 000 cykli tumble, praca od -20°C do +50°C i odporność na chemię przemysłową. Bateria 7 000 mAh hot-swap. Wersje 946600010–946600014 ładują się bezprzewodowo (Qi), a pozostałe przez styki. Pod maską Qualcomm 4490, 8 GB RAM / 128 GB, Wi-Fi 6/6E i Android 15 z aktualizacjami do Androida 19.
 
-Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastrukturę z całą rodziną Skorpio X40/X45 i Falcon X65. Wersja z łącznością komórkową 5G i GPS: [Datalogic Falcon X65](/produkt/datalogic-falcon-x65). Zarządzanie przez Datalogic Connect i każdy większy MDM (SOTI, Intune, Workspace ONE, Ivanti).`,
+Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastrukturę z całą rodziną Skorpio X40/X45 i Falcon X65. Wersja z łącznością komórkową 5G i GPS: [Datalogic Falcon X65](/produkt/datalogic-falcon-x65). Zarządzanie przez Datalogic Connect i każdy większy MDM (SOTI, Intune, Workspace ONE, Ivanti).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+W pudełku Falcon X60 są bateria 7000 mAh i nakładki klawiatury. Wersje kompaktowe 946600009 i 946600014 mają pasek na rękę. Pozostałe wersje mają uchwyt pistoletowy i smycz. Wersje 946600010–946600014 ładują się bezprzewodowo w [stacji 94A150106](/produkt/datalogic-dock-skorpio-x5-bezprzewodowa). Wersje ze stykami ładuje [stacja 3-gniazdowa 94A150110](/produkt/datalogic-dock-skorpio-x5-3slot-ethernet). Obie stacje wymagają [zasilacza 91ACC0048](/produkt/datalogic-zasilacz-skorpio-x5) i [przewodu 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
@@ -26081,7 +26109,7 @@ Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastruktu
       { question: 'Czy stacje dokujące Skorpio X5 pasują do Falcona X60?', answer: 'Tak — Falcon X60 ma pełną kompatybilność ze stacjami dokującymi i ładowarkami Skorpio X5. Rodzina Skorpio X40/X45 i Falcon X60/X65 dzieli jedną infrastrukturę ładowania — flota mieszana (Skorpio do kompletacji, Falcon na wózki) nie wymaga dublowania doków.' },
       { question: 'Czy Falcon X60 ma ładowanie bezprzewodowe?', answer: 'Tak — wybrane warianty (946600010-014) ładują się bezprzewodowo w standardzie Qi 10 W (WPC EPP), w tej samej cenie co odpowiedniki stykowe. Bezprzewodowe stacje eliminują zużycie pinów i czyszczenie styków — przy intensywnej, wielozmianowej eksploatacji to mniej serwisu i przestojów.' },
       { question: 'Czy Falcon X60 działa w chłodni?', answer: 'Falcon X60 pracuje od -20°C do +50°C z pełną szczelnością IP65/IP68 i podświetlaną klawiaturą (przydatna w słabo oświetlonych komorach). Do mroźni głębokiego mrożenia (-30°C) rekomendujemy [Zebra MC9450](/produkt/zebra-mc9450) z baterią freezer.' },
-      { question: 'Jakie są alternatywy dla Falcona X60?', answer: 'Bezpośredni konkurent: Zebra MC9400 (ultra-rugged, IP68, skaner SE58 do 30 m, od ok. 7 600 zł) i [Zebra MC9450](/produkt/zebra-mc9450) (wersja 5G). Falcon X60 kontruje niższą ceną, spustem TrueAim, Green Spotem i ładowaniem bezprzewodowym w standardzie. W portfolio Datalogic: [Skorpio X40](/produkt/datalogic-skorpio-x40) (lżejszy, tańszy) i [Falcon X65](/produkt/datalogic-falcon-x65) (5G + GPS).' },
+      { question: 'Jakie są alternatywy dla Falcona X60?', answer: 'Bezpośredni konkurent: Zebra MC9400 (ultra-rugged, IP68, skaner SE58 do 30 m, od ok. 7 600 zł) i [Zebra MC9450](/produkt/zebra-mc9450) (wersja 5G). Falcon X60 kontruje niższą ceną, spustem TrueAim, Green Spotem i wersjami z ładowaniem bezprzewodowym. W portfolio Datalogic: [Skorpio X40](/produkt/datalogic-skorpio-x40) (lżejszy, tańszy) i [Falcon X65](/produkt/datalogic-falcon-x65) (5G + GPS).' },
     ],
     applications: [
       'Magazyny wysokiego składowania — imager XLR czyta kody z 20 m',
@@ -26107,9 +26135,18 @@ Stacje dokujące Skorpio X5 pasują bez zmian — Falcon X60 dzieli infrastruktu
 
 Moduł komórkowy obsługuje 5G NR (FR1), LTE-Advanced i sieci prywatne (CBRS) z dual SIM (nano SIM + eSIM) — flotę można aktywować i przełączać między operatorami zdalnie. Nawigacja GPS/Galileo/GLONASS/BeiDou z dwuzakresowym odbiornikiem L1 + L5 daje dokładną pozycję między kontenerami i w gęstej zabudowie, a barometr dodaje lokalizację piętrową (Z-axis).
 
-Poza łącznością to pełnoprawny Falcon: imager XLR czytający kody nawet z 20 metrów (Green Spot widoczny z 10 m), dwustopniowy spust TrueAim, ekran 4,3" o jasności 600 nitów w Gorilla Glass 7 czytelny w pełnym słońcu, podświetlane klawiatury 31/41/53, odpinany uchwyt pistoletowy, IP65/IP68, upadki z 2,8 m, bateria 7 000 mAh hot-swap i ładowanie bezprzewodowe Qi. Qualcomm 4490, 8/128 GB, Android 15 z aktualizacjami do Androida 19.
+Poza łącznością to pełnoprawny Falcon: imager XLR czytający kody nawet z 20 metrów (Green Spot widoczny z 10 m), dwustopniowy spust TrueAim, ekran 4,3" o jasności 600 nitów w Gorilla Glass 7 czytelny w pełnym słońcu, podświetlane klawiatury 31/41/53, odpinany uchwyt pistoletowy, IP65/IP68, upadki z 2,8 m i bateria 7 000 mAh hot-swap. Tylko wersja 946650006 ładuje się bezprzewodowo (Qi). Qualcomm 4490, 8/128 GB, Android 15 z aktualizacjami do Androida 19.
 
-Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują do Falcona X65, Falcona X60 i Skorpio X40/X45. Kompaktowa wersja 5G do lżejszych zadań terenowych: [Skorpio X45](/produkt/datalogic-skorpio-x45).`,
+Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują do Falcona X65, Falcona X60 i Skorpio X40/X45. Kompaktowa wersja 5G do lżejszych zadań terenowych: [Skorpio X45](/produkt/datalogic-skorpio-x45).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Falcon X65 trafia do klienta z baterią 7000 mAh, smyczą i nakładkami klawiatury. Tylko wersja 946650006 ładuje się bezprzewodowo, w [stacji 94A150106](/produkt/datalogic-dock-skorpio-x5-bezprzewodowa). Pozostałe wersje X65 mają styki dla [stacji 3-gniazdowej 94A150110](/produkt/datalogic-dock-skorpio-x5-3slot-ethernet). Każda z tych stacji pracuje z [zasilaczem 91ACC0048](/produkt/datalogic-zasilacz-skorpio-x5) i [przewodem sieciowym EU 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'datalogic',
@@ -26169,7 +26206,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
       { question: 'Ile kosztuje Datalogic Falcon X65?', answer: 'Ceny Datalogic Falcon X65 zaczynają się od 7 062 zł netto (Standard Range 5G, uchwyt pistoletowy — klawiatura 31, 41 lub 53 klawisze w tej samej cenie). Wersje z imagerem XLR (odczyt do 20 m): od 7 880 zł. Dopłata za 5G i GPS względem Falcona X60 to ok. 870 zł netto. Przy flotach 5+ sztuk przygotowujemy wyceny projektowe.' },
       { question: 'Czym Falcon X65 różni się od Falcona X60?', answer: 'X65 = X60 + łączność komórkowa i lokalizacja: 5G NR/LTE-Advanced (także sieci prywatne CBRS), dual SIM (nano + eSIM), GPS/Galileo/GLONASS/BeiDou z dwuzakresowym L1+L5 oraz barometr. Reszta identyczna: imager XLR do 20 m, TrueAim, ekran 600 nitów GG7, podświetlane klawiatury, IP65/IP68, upadki z 2,8 m. X60 do hali, X65 gdy operacje wychodzą na plac i w teren.' },
       { question: 'Czym Falcon X65 różni się od Skorpio X45?', answer: 'Obie wersje 5G, ale inna klasa: Falcon X65 ma większy i jaśniejszy ekran (4,3"/600 nitów vs 4"/450), imager XLR do 20 m (Skorpio: maks. 10 m), spust TrueAim, podświetlane klawiatury, IP68, upadki z 2,8 m (vs 2,4 m) i 8 GB RAM (vs 6 GB). Skorpio X45 jest lżejszy (445 vs 550 g) i tańszy o ok. 990 zł. Skorpio do kompletacji i DSD, Falcon na place, doki i wózki.' },
-      { question: 'Falcon X65 czy Zebra MC9450 — co wybrać?', answer: 'Obie klasy premium 5G z klawiaturą. [Zebra MC9450](/produkt/zebra-mc9450) (od 8 594 zł): skaner SE58 do 30,5 m, upadki z 3,65 m, 7 wymiennych klawiatur, bateria freezer do -30°C. Falcon X65 (od 7 062 zł): lżejszy o ~190 g, spust TrueAim, Green Spot, ładowanie bezprzewodowe Qi w standardzie i tańszy o ~1 530 zł. Do ekstremów (mroźnie, 30-metrowe regały) — MC9450; do twardej codziennej logistyki plac-magazyn — Falcon X65.' },
+      { question: 'Falcon X65 czy Zebra MC9450 — co wybrać?', answer: 'Obie klasy premium 5G z klawiaturą. [Zebra MC9450](/produkt/zebra-mc9450) (od 8 594 zł): skaner SE58 do 30,5 m, upadki z 3,65 m, 7 wymiennych klawiatur, bateria freezer do -30°C. Falcon X65: lżejszy o ~190 g, spust TrueAim, Green Spot, wersja 946650006 z ładowaniem bezprzewodowym Qi i niższa cena. Do ekstremów (mroźnie, 30-metrowe regały) — MC9450; do twardej codziennej logistyki plac-magazyn — Falcon X65.' },
       { question: 'Czy Falcon X65 ma eSIM?', answer: 'Tak — dual SIM: 1× nano SIM + 1× eSIM. Flotę z eSIM aktywuje się i przełącza między operatorami zdalnie, bez fizycznego dostępu do urządzeń rozsianych po oddziałach czy pojazdach.' },
       { question: 'Czy Falcon X65 działa w prywatnych sieciach 5G?', answer: 'Tak — obsługuje publiczne 5G/LTE oraz sieci prywatne, w tym CBRS (4G i 5G). Duże porty, huby logistyczne i zakłady budujące własną infrastrukturę komórkową mogą podłączyć Falcona X65 bezpośrednio do swojej sieci prywatnej.' },
       { question: 'Czy stacje dokujące Skorpio X5 pasują do Falcona X65?', answer: 'Tak — pełna kompatybilność. Cała rodzina (Skorpio X40/X45, Falcon X60/X65) dzieli stacje dokujące i ładowarki Skorpio X5 — jedna infrastruktura dla floty mieszanej hala + plac.' },
@@ -26195,7 +26232,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "seoTitle": "Zebra MC9450 — kolektor danych 5G z GPS / terminal ultra-rugged",
   "seoDescription": "Zebra MC9450 (MC945B) — kolektor danych ultra-rugged 5G z GPS do placów, portów i logistyki terenowej. Następca MC9300: 7 klawiatur, skaner SE58 do 30 m, IP68, -30°C.",
   "shortDescription": "Zebra MC9450 — flagowy terminal ultra-rugged 5G z GPS, 7 klawiaturami, skanerem do 30 m, IP65+IP68, następca MC9300",
-  "description": "Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.\n\nIdentyczne parametry jak MC9400 (procesor Qualcomm QCS4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB Flash UFS, Wi-Fi 6E, ekran 4,3\" WVGA 600 nit) plus moduł 5G NR Sub-6: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou/NavIC. MC9450 to jedyny ultra-rugged terminal Zebra z klawiaturą, 5G i GPS — gdy operator musi pracować na zewnątrz, gdzie Wi-Fi nie sięga, a lokalizacja GPS jest kluczowa.\n\nWymienne klawiatury (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa i 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, zoptymalizowane do pracy w rękawicach roboczych i w temperaturach od -30°C do +50°C. Dwa skanery: SE4770 Standard Range i SE58 Extended Range z zielonym laserem IntelliFocus (zasięg do 30,5 m / 100 ft).\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton, 6 000 cykli tumble z 1 m. Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do śledzenia lokalizacji) i 5 000 mAh freezer (certyfikowana do -30°C). Warm-swap — wymiana baterii bez restartu.\n\nPełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące, ładowarki baterii, holstery — migracja z MC9300 bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC9400](/produkt/zebra-mc9400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra MC9450 to flagowy terminal mobilny klasy ultra-rugged z 5G, GPS i wymiennymi klawiaturami, zaprojektowany dla operacji logistycznych wymagających łączności komórkowej poza zasięgiem Wi-Fi — zarządzanie placami kontenerowymi (yard management), porty morskie, inwentaryzacja pojazdów na dużych placach, logistyka terenowa, dystrybucja i operacje cross-dockingowe na zewnątrz budynków.\n\nIdentyczne parametry jak MC9400 (procesor Qualcomm QCS4490 octa-core 2,4 GHz, 6 GB RAM, 128 GB Flash UFS, Wi-Fi 6E, ekran 4,3\" WVGA 600 nit) plus moduł 5G NR Sub-6: obsługa sieci publicznych i prywatnych 5G (CBRS/FR1), dual SIM (nano SIM + eSIM), nawigacja satelitarna GPS/GLONASS/Galileo/BeiDou/NavIC. MC9450 to jedyny ultra-rugged terminal Zebra z klawiaturą, 5G i GPS — gdy operator musi pracować na zewnątrz, gdzie Wi-Fi nie sięga, a lokalizacja GPS jest kluczowa.\n\nWymienne klawiatury (hot-swap bez narzędzi): 29-klawiszowa numeryczna, 34-klawiszowa rozszerzona, 43-klawiszowa funkcyjna, 53-klawiszowa standardowa i 58-klawiszowa pełna alfanumeryczna. Klawisze podświetlane, wzmocnione, zoptymalizowane do pracy w rękawicach roboczych i w temperaturach od -30°C do +50°C. Dwa skanery: SE4770 Standard Range i SE58 Extended Range z zielonym laserem IntelliFocus (zasięg do 30,5 m / 100 ft).\n\nKonstrukcja ultra-rugged IP65 + IP68 z certyfikacją MIL-STD-810H: upadki z 3,65 m na beton, 6 000 cykli tumble z 1 m. Trzy opcje baterii: 7 000 mAh standardowa, 7 000 mAh BLE (z beaconem do śledzenia lokalizacji) i 5 000 mAh freezer (certyfikowana do -30°C). Warm-swap — wymiana baterii bez restartu.\n\nPełna kompatybilność wsteczna z akcesoriami MC9300: baterie, stacje dokujące, ładowarki baterii, holstery — migracja z MC9300 bez wymiany infrastruktury. Wersja wyłącznie Wi-Fi (bez 5G/GPS): [Zebra MC9400](/produkt/zebra-mc9400). Pakiet Mobility DNA w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™. Szczegółowa dokumentacja techniczna na zebra.com i serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Adapter USB-C do ładowania Zebra MC9400 / MC9450 (CBL-MC93-USBCHG-01)](/produkt/zebra-kabel-usb-mc9400-mc9450)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\nZestaw MC9450 zawiera terminal z baterią PowerPrecision+. Adapter CBL-MC93-USBCHG-01 obsługuje ładowanie i komunikację USB. Alternatywą jest [stacja jednogniazdowa CRD-MC93-2SUCHG-01](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) z gniazdem baterii zapasowej. Stacja korzysta z [zasilacza PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego 50-16000-220R](/produkt/zebra-tc201-50-16000-220r). Do ładowania w samochodzie służy [ładowarka CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01) z tym samym adapterem i przewodem.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -26521,7 +26558,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czy MC9450 działa w chłodniach i mroźniach (-30°C)?",
-      "answer": "Tak — z baterią freezer (BTRY-MC93-FZ-01, 5 000 mAh) MC9450 pracuje od -30°C do +50°C. Bateria standardowa: od -20°C do +50°C. Wyświetlacz 600 nit z ogrzewaniem. IP65+IP68 — pełna odporność na wilgoć i kondensat. Warm-swap — wymiana baterii bez restartu."
+      "answer": "Tak — z baterią freezer (BTRY-MC93-FRZ-01, 5 000 mAh) MC9450 pracuje od -30°C do +50°C. Bateria standardowa: od -20°C do +50°C. Wyświetlacz 600 nit z ogrzewaniem. IP65+IP68 — pełna odporność na wilgoć i kondensat. Warm-swap — wymiana baterii bez restartu."
     },
     {
       "question": "Czym się różni MC9450 od MC3450?",
@@ -26694,7 +26731,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "seoTitle": "Zebra EM45 — smartfon biznesowy 5G, IP68",
   "seoDescription": "Zebra EM45 (EM45B1) — smartfon enterprise 5G: Wi-Fi 6E, 50 MP OIS, IP68+IP65+MIL-STD-810H, bateria 4 750 mAh / 25 h, COPE, AI NPU.",
   "shortDescription": "Zebra EM45 — enterprise mobile w formie smartfona, 6,7\" FHD+ 120 Hz, 5G, Wi-Fi 6E, aparat 50 MP, NFC, AI (NPU), COPE",
-  "description": "Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.\n\nEM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7\" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — według Zebra najwyższa specyfikacja aparatu w historii urządzeń handheld tej marki.\n\nŁączność obejmuje 5G Sub-6 (NSA/SA), Wi-Fi 6E tri-band (2,4 / 5 / 6 GHz) z 2×2 MU-MIMO, Bluetooth 5.3 i NFC z certyfikacją Apple VAS / ECP 2.0 do płatności zbliżeniowych i identyfikacji. Bateria 4 750 mAh PowerPrecision zapewnia do 25 godzin pracy, a szybkie ładowanie uzupełnia 50 % w 30 minut. Dual SIM (nano-SIM + eSIM) i tryb COPE (Corporate Owned, Personally Enabled) pozwalają na oddzielny profil firmowy i osobisty na jednym urządzeniu.\n\nKonstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz MIL-STD-810H — upadki z 1,5 m na beton z etui ochronnym, 600 tumble'ów z 0,5 m. Skanowanie kodów 1D/2D kamerowe z algorytmami Zebra Advanced Decoder Library. Ekosystem Zebra Mobility DNA (DataWedge, StageNow, LifeGuard, Device Tracker, Identity Guardian) zapewnia centralne zarządzanie flotą, bezpieczeństwo OTA i szybkie wdrażanie. Wsparcie LifeGuard for Android gwarantuje wieloletnie aktualizacje bezpieczeństwa przez cały cykl życia urządzenia.\n\nKoszt posiadania (TCO): Android z wieloletnim wsparciem LifeGuard OTA — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.\n\nZebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: [Zebra EM45 — przewodnik zakupowy](/poradnik/zebra-em45-enterprise-mobile-computer). Pełna oferta [terminali mobilnych Zebra](/terminale-mobilne-zebra). Dokumentacja techniczna: www.zebra.com/em45.",
+  "description": "Dla kogo? Zebra EM45 Enterprise Mobile to korporacyjny komputer mobilny nowej generacji w formie smukłego smartfona (10,7 mm grubości, 243 g), zaprojektowany dla menedżerów sklepów, sprzedawców, kurierów, serwisantów terenowych i koordynatorów logistyki — pracowników, którzy potrzebują jednego urządzenia łączącego niezawodność Zebra z estetyką i intuicyjnością konsumenckiego smartfona.\n\nEM45 wyposażono w procesor Qualcomm 5430 octa-core (2,2 GHz) z dedykowanym NPU (Neural Processing Unit) do zadań AI na urządzeniu — tłumaczenia, transkrypcja, analiza wizualna półek i etykiet. Wyświetlacz 6,7\" Full HD+ (2400 × 1080) z odświeżaniem 120 Hz, oleofobową powłoką i obsługą rękawic zapewnia komfort pracy w każdych warunkach. Aparat tylny 50 MP z OIS (optyczna stabilizacja) i nagrywaniem 4K@30 fps umożliwia dokumentację fotograficzną usterek, produktów i dokumentów w jakości profesjonalnej — według Zebra najwyższa specyfikacja aparatu w historii urządzeń handheld tej marki.\n\nŁączność obejmuje 5G Sub-6 (NSA/SA), Wi-Fi 6E tri-band (2,4 / 5 / 6 GHz) z 2×2 MU-MIMO, Bluetooth 5.3 i NFC z certyfikacją Apple VAS / ECP 2.0 do płatności zbliżeniowych i identyfikacji. Bateria 4 750 mAh PowerPrecision zapewnia do 25 godzin pracy, a szybkie ładowanie uzupełnia 50 % w 30 minut. Dual SIM (nano-SIM + eSIM) i tryb COPE (Corporate Owned, Personally Enabled) pozwalają na oddzielny profil firmowy i osobisty na jednym urządzeniu.\n\nKonstrukcja spełnia normy IP65 + IP68 (ochrona przed kurzem i zanurzeniem) oraz MIL-STD-810H — upadki z 1,5 m na beton z etui ochronnym, 600 tumble'ów z 0,5 m. Skanowanie kodów 1D/2D kamerowe z algorytmami Zebra Advanced Decoder Library. Ekosystem Zebra Mobility DNA (DataWedge, StageNow, LifeGuard, Device Tracker, Identity Guardian) zapewnia centralne zarządzanie flotą, bezpieczeństwo OTA i szybkie wdrażanie. Wsparcie LifeGuard for Android gwarantuje wieloletnie aktualizacje bezpieczeństwa przez cały cykl życia urządzenia.\n\nKoszt posiadania (TCO): Android z wieloletnim wsparciem LifeGuard OTA — najdłuższy cykl wsparcia bezpieczeństwa w klasie smartfonów enterprise. Tryb COPE eliminuje potrzebę kupowania osobnego telefonu prywatnego i służbowego dla pracownika — jedno urządzenie zamiast dwóch = niższy TCO floty.\n\nZebra EM45 jest certyfikowany Android Enterprise Recommended (AER) i Google ARCore. Więcej o zastosowaniach EM45 i porównaniu ze smartfonami Samsung A56 i Motorolą ThinkPhone: [Zebra EM45 — przewodnik zakupowy](/poradnik/zebra-em45-enterprise-mobile-computer). Pełna oferta [terminali mobilnych Zebra](/terminale-mobilne-zebra). Dokumentacja techniczna: www.zebra.com/em45.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n\nEM45 ma wbudowaną baterię. W pudełku jest przewód USB-C. Zasilacza sieciowego w pudełku nie ma. Zapasowy przewód USB-C to [CBL-EC5X-USBC3A-01](/produkt/zebra-cable-usbc-et4x).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -26868,6 +26905,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   ],
   "compatibleAccessories": [],
   "relatedAccessories": [
+    "zebra-tc201-pwr-wua5v45w1eu",
     "zebra-em45-workstation-cradle",
     "zebra-em45-exoskeleton",
     "zebra-em45-screen-protector",
@@ -27022,7 +27060,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "slug": "zebra-tc201",
   "name": "Zebra TC201",
   "shortDescription": "Zebra TC201 to terminal mobilny z Wi-Fi 7 i Bluetooth 6. Warianty 5G mają łączność komórkową. Do wyboru jest skaner SR500, AC670 lub wersja bez skanera.",
-  "description": "Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu.\n\nSercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka\" jak w poprzedniej generacji (TC22 vs TC27).\n\nEkran 6\" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie, a szkłem Corning Gorilla Glass chronione są dwa najbardziej narażone elementy: wyświetlacz i okno skanera. Panel dotykowy działa w rękawiczkach i odrzuca krople wody. Skaner SR500 z żółtym celownikiem LED obsługuje kody 1D/2D, a AC670 Advanced Range czyta kody z 30 m i robi zdjęcia w kolorze — operator nie schyla się i nie wchodzi na drabinę, żeby zeskanować etykietę. Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem), 750 cykli tumble i pracę od -20°C do +50°C — to najodporniejszy terminal w historii serii TC2.\n\nTC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria oraz Android Strongbox z układem Secure Element (wybrane warianty) — wymagane w administracji publicznej, finansach i ochronie zdrowia. NFC z certyfikatami Apple VAS i Google Smart Tap obsługuje płatności zbliżeniowe i karty lojalnościowe, a audio z redukcją szumów opartą na AI zapewnia czysty głos w rozmowach i aplikacjach głosowych nawet w hałaśliwej hali. Zintegrowany czytnik UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m, tryb „licznika Geigera\" do szukania konkretnej sztuki) pojawi się w wariantach EMEA planowo w IV kwartale 2026.\n\nW cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device Central), a Workcloud Sync potrafi zamienić TC201 w radiotelefon push-to-talk i słuchawkę centrali PBX — jedno urządzenie zastępuje trzy. Migracja z floty TC22/TC27 nie wymaga wymiany infrastruktury: baterie wskazane dla TC201 są kompatybilne, a starsze stacje ShareCradle wymagają odpowiednich gniazd wymiennych z wkładką TC201. Pełne omówienie nowości: [Zebra TC201 — przewodnik](/poradnik/zebra-tc201).",
+  "description": "Zebra TC201 to terminal mobilny (kolektor danych) czwartej generacji serii TC2x — następca bestsellerowych [TC21](/produkt/zebra-tc22), [TC22](/produkt/zebra-tc22), TC26 i [TC27](/produkt/zebra-tc27), który po raz pierwszy w tej klasie łączy 5G i Wi-Fi 7 w jednym urządzeniu.\n\nSercem TC201 jest procesor Qualcomm Dragonwing Q-6690 (do 2,0 GHz) — nowa architektura o wydajności wyższej nawet o 150% względem starszych terminali TC2x. Wariant WWAN (TC201G) łączy modem 5G NR Sub-6 (Rel-17) z Gigabit LTE-A, Wi-Fi 7 (tri-band, 2×2 MU-MIMO, MLO) i Bluetooth 6.0 — do tego fizyczny SIM, dual eSIM oraz dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS). Kurier, serwisant i magazynier dostają jedną platformę zamiast wyboru „Wi-Fi albo komórka\" jak w poprzedniej generacji (TC22 vs TC27).\n\nEkran 6\" FHD+ (2160×1080, 450 nitów) jest laminowany optycznie, a szkłem Corning Gorilla Glass chronione są dwa najbardziej narażone elementy: wyświetlacz i okno skanera. Panel dotykowy działa w rękawiczkach i odrzuca krople wody. Skaner SR500 z żółtym celownikiem LED obsługuje kody 1D/2D, a AC670 Advanced Range czyta kody z 30 m i robi zdjęcia w kolorze — operator nie schyla się i nie wchodzi na drabinę, żeby zeskanować etykietę. Obudowa IP68/IP65 znosi upadki z 1,53 m na beton (do 2,13 m z bootem), 750 cykli tumble i pracę od -20°C do +50°C — to najodporniejszy terminal w historii serii TC2.\n\nTC201 celuje też w sektory regulowane: certyfikaty FIPS 140-3 i Common Criteria oraz Android Strongbox z układem Secure Element (wybrane warianty) — wymagane w administracji publicznej, finansach i ochronie zdrowia. NFC z certyfikatami Apple VAS i Google Smart Tap obsługuje płatności zbliżeniowe i karty lojalnościowe, a audio z redukcją szumów opartą na AI zapewnia czysty głos w rozmowach i aplikacjach głosowych nawet w hałaśliwej hali. Zintegrowany czytnik UHF RFID (ponad 200 tagów/s, zasięg do 1,2 m, tryb „licznika Geigera\" do szukania konkretnej sztuki) pojawi się w wariantach EMEA planowo w IV kwartale 2026.\n\nW cenie terminala jest pakiet Zebra DNA Core (m.in. Enterprise Browser, Device Central), a Workcloud Sync potrafi zamienić TC201 w radiotelefon push-to-talk i słuchawkę centrali PBX — jedno urządzenie zastępuje trzy. Przy migracji z floty TC22/TC27 baterie zostają. Podstawy stacji ShareCradle też zostają, ale potrzebują gniazd wymiennych z wkładką TC201. Pełne omówienie nowości: [Zebra TC201 — przewodnik](/poradnik/zebra-tc201).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n- [Przewód USB-C Zebra — 1 m (CBL-EC5X-USBC3A-01)](/produkt/zebra-cable-usbc-et4x)\n\nKażdy wariant TC201 ma w pudełku baterię standardową albo rozszerzoną. Zasilacza i przewodu do ładowania w pudełku nie ma. Ten zasilacz z przewodem zasila też stację 1-gniazdową. Terminal bez osłony pasuje do [stacji CRD-TCVT-1D](/produkt/zebra-tc201-crd-tcvt-1d). Terminal w [osłonie SG-TCVT-BOOT-01](/produkt/zebra-tc201-sg-tcvt-boot-01) wymaga [stacji CRD-TCVTB-1D](/produkt/zebra-tc201-crd-tcvtb-1d). W pojeździe TC201 ładuje [ładowarka samochodowa CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01) z [przewodem USB-A / USB-C (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01).\n",
   "categoryId": "terminale-mobilne",
   "manufacturerId": "zebra",
   "tags": [
@@ -27391,7 +27429,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Czy TC201 działa z akcesoriami po TC22 i TC27?",
-      "answer": "Tak — TC201 zachowuje kompatybilność z akcesoriami TC22/TC27, w tym z bateriami i stacjami ładowania. Przy migracji floty istniejące ładowarki i stacje przechodzą do nowych urządzeń, co znacząco obniża koszt wdrożenia."
+      "answer": "Częściowo. Baterie BTRY-TC2L-2XMAXX-01 i BTRY-TC2L-3XMAXX-01 pasują do TC22, TC27 i TC201. TC201 ma własne stacje CRD-TCVT i CRD-TCVTB, ładowarkę baterii SAC-TCVT-4B oraz zasilacz 45 W z przewodem USB-C – USB-C. Stacja ShareCradle po TC22 i TC27 przyjmie TC201 po wymianie gniazda na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 z wkładką TC201."
     },
     {
       "question": "Czy bateria w TC201 jest wymienna? Co z hot swap?",
@@ -27617,7 +27655,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
   "seoTitle": "Zebra TC22 — kolektor danych / terminal mobilny Wi-Fi 6E",
   "seoDescription": "Zebra TC22 (WLMT0-T22) — kolektor danych Wi-Fi 6E do magazynów, retail i aptek. WLMT0-T22B6ABC2-A6.",
   "shortDescription": "Zebra TC22 — komputer mobilny Wi-Fi 6E z ekranem 6\" i skanerem 1D/2D, następca TC21",
-  "description": "Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.\n\nTrzecia generacja bestsellerowej serii TC2x ([następca Zebra TC21](https://tc22.pl/#przewagi)) oferuje duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, wydajny procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM, oraz system Android z gwarancją aktualizacji do Androida 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC21.\n\nWybierz skaner według potrzeb: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na wysokich regałach magazynowych bez użycia drabiny. Skaner enterprise dekoduje kody 1D i 2D w 0,3 s — nawet zniszczone, zadrukowane lub wyświetlane na ekranie. Dla porównania: aparat smartfona potrzebuje 2–4 s na dobrze widoczny kod — [interaktywne porównanie wszystkich 7 wariantów TC22](https://tc22.pl/#porownanie) pomoże dobrać konfigurację.\n\nKonstrukcja o 10% cieńsza niż TC21, z ergonomicznym profilem redukującym nacisk na dłoń podczas wielogodzinnej pracy. Obudowa IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui ochronnym), test tumble 500 upadków z 0,5 m, zakres temperatur od -10°C do +50°C. Wymienne baterie PowerPrecision: 3 800 mAh (standard, ~10 h) lub 5 200 mAh (rozszerzona, ~14 h) z technologią hot-swap — wymiana w 5 sekund bez wyłączania urządzenia.\n\nŁączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps, Bluetooth 5.2 i NFC (Apple VAS, Google SmartTap — obsługa płatności zbliżeniowych i kart lojalnościowych). Kamera 16 MP z tyłu i 5 MP z przodu. USB 3.1 Type-C SuperSpeed. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zagubionych terminali), LifeGuard™ (comiesięczne łatki bezpieczeństwa). Zarządzanie flotą przez MDM: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — baterie, stacje ładowania, etui i uchwyty pistoletowe są identyczne dla obu modeli. Migracja z TC21 nie wymaga wymiany infrastruktury ładowania (nowe akcesoria TC2L). Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC27](/produkt/zebra-tc27). Szczegółowa dokumentacja techniczna dostępna na zebra.com, [lista akcesoriów i interaktywna prezentacja modelu na tc22.pl](https://tc22.pl/#akcesoria) oraz w [serwis-zebry.pl](https://www.serwis-zebry.pl).",
+  "description": "Dla kogo? Zebra TC22 to ekonomiczny terminal mobilny klasy enterprise, zaprojektowany dla małych i średnich firm szukających wytrzymałego urządzenia do pracy w sklepie, magazynie, aptece lub przychodni — w cenie zbliżonej do smartfona konsumenckiego, ale z wieloletnią żywotnością i profesjonalnym skanerem kodów kreskowych.\n\nTrzecia generacja bestsellerowej serii TC2x ([następca Zebra TC21](https://tc22.pl/#przewagi)) oferuje duży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, wydajny procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM, oraz system Android z gwarancją aktualizacji do Androida 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC21.\n\nWybierz skaner według potrzeb: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na wysokich regałach magazynowych bez użycia drabiny. Skaner enterprise dekoduje kody 1D i 2D w 0,3 s — nawet zniszczone, zadrukowane lub wyświetlane na ekranie. Dla porównania: aparat smartfona potrzebuje 2–4 s na dobrze widoczny kod — [interaktywne porównanie wszystkich 7 wariantów TC22](https://tc22.pl/#porownanie) pomoże dobrać konfigurację.\n\nKonstrukcja o 10% cieńsza niż TC21, z ergonomicznym profilem redukującym nacisk na dłoń podczas wielogodzinnej pracy. Obudowa IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui ochronnym), test tumble 500 upadków z 0,5 m, zakres temperatur od -10°C do +50°C. Wymienne baterie PowerPrecision: 3 800 mAh (standard, ~10 h) lub 5 200 mAh (rozszerzona, ~14 h).\n\nŁączność Wi-Fi 6/6E (802.11ax) 2×2 MU-MIMO z prędkością do 2,4 Gbps, Bluetooth 5.2 i NFC (Apple VAS, Google SmartTap — obsługa płatności zbliżeniowych i kart lojalnościowych). Kamera 16 MP z tyłu i 5 MP z przodu. USB 3.1 Type-C SuperSpeed. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge (skanowanie bez programowania), StageNow (masowa konfiguracja floty), Device Tracker (lokalizacja zagubionych terminali), LifeGuard™ (comiesięczne łatki bezpieczeństwa). Zarządzanie flotą przez MDM: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC22 i TC27 — baterie, stacje ładowania, etui i uchwyty pistoletowe są identyczne dla obu modeli. Przy migracji z TC21 podstawy stacji ShareCradle zostają, a gniazda wymienia się na CRDCUP-TC2L1C-01 lub CRDCUP-TC2L1CB-01 (terminal w osłonie). Gniazda są też w wersjach z Ethernetem: CRDCUP-TC2L1E-01 i CRDCUP-TC2L1EB-01. W ładowarce baterii TC21/TC26 wymienia się gniazdo na CRDCUP-TC2L4B-01. Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC27](/produkt/zebra-tc27). Szczegółowa dokumentacja techniczna dostępna na zebra.com, [lista akcesoriów i interaktywna prezentacja modelu na tc22.pl](https://tc22.pl/#akcesoria) oraz w [serwis-zebry.pl](https://www.serwis-zebry.pl).\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nBateria jest w pudełku razem z terminalem TC22. Zasilacz i przewód USB nie są częścią zestawu. Przewód ładuje terminal przez port USB-C i przesyła dane do komputera. [Stacja 1-gniazdowa CRD-TC2L-BS1CO-01](/produkt/zebra-stacja-dokujaca-1slot-tc22-tc27) pracuje z tym samym zasilaczem i przewodem. Po wyjęciu wkładki ta stacja przyjmuje także terminal w [osłonie SG-TC2L-BOOT-01](/produkt/zebra-etui-gumowe-tc22-tc27).\n",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -27672,7 +27710,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "name": "Bateria",
-      "value": "3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna hot-swap"
+      "value": "3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna"
     },
     {
       "name": "Odporność",
@@ -27805,7 +27843,7 @@ Wspólna infrastruktura z całą rodziną: stacje dokujące Skorpio X5 pasują d
     },
     {
       "question": "Jak długo działa bateria w Zebra TC22?",
-      "answer": "Bateria standardowa 3 800 mAh zapewnia ok. 10 godzin typowej pracy (Wi-Fi + skanowanie). Bateria rozszerzona 5 200 mAh wystarcza na ok. 14 godzin. Obie baterie są wymienne hot-swap — pracownik wymienia baterię w 5 sekund bez wyłączania urządzenia. Technologia PowerPrecision podaje dokładne metryki stanu baterii w czasie rzeczywistym."
+      "answer": "Bateria standardowa 3 800 mAh zapewnia ok. 10 godzin typowej pracy (Wi-Fi + skanowanie). Bateria rozszerzona 5 200 mAh wystarcza na ok. 14 godzin. Obie baterie są wymienne. Baterię wymienia się po wyłączeniu terminala. Technologia PowerPrecision podaje dokładne metryki stanu baterii w czasie rzeczywistym."
     },
     {
       "question": "Czy Zebra TC22 obsługuje płatności zbliżeniowe?",
@@ -28053,7 +28091,16 @@ Obudowę w kolorze Healthcare Blue wykonano z tworzyw przeznaczonych dla ochrony
 
 Z tyłu znajduje się czerwony przycisk alarmowy. Po zaprogramowaniu łączy z wybranym numerem albo uruchamia aplikację, a sekwencja aktywacji chroni przed fałszywym alarmem. Z oprogramowaniem Workcloud Communication terminal działa jako radiotelefon PTT lub słuchawka centrali PBX.
 
-Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Workstation Connect wymagają licencji Zebra DNA Enterprise. Terminal z baterią 3800 mAh można ładować dowolnym standardowym przewodem USB-C, a stacje, baterie, klips i pasek są wspólne dla całej rodziny HC2X/HC5X.`,
+Fabrycznie jest dostępny pakiet Zebra DNA Professional. Wi-Fi 6E i tryb Workstation Connect wymagają licencji Zebra DNA Enterprise. Terminal z baterią 3800 mAh można ładować dowolnym standardowym przewodem USB-C, a stacje, baterie, klips i pasek są wspólne dla całej rodziny HC2X/HC5X.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+W pudełku są terminal i bateria PowerPrecision 3800 mAh z nadajnikiem BLE. Przewód USB-C ładuje HC20 bezpośrednio z zasilacza. Ten sam komplet zasila [stację 1-gniazdową CRD-HC2L5L-BS1CO](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50). [Stacja CRD-HC2L5L-2S1D1B](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50) ma dodatkowe gniazdo baterii zapasowej. Jej zasilanie tworzą [zasilacz 50 W](/produkt/zebra-zasilacz-50w), [przewód DC](/produkt/zebra-kabel-zasilajacy-388) i [przewód sieciowy](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc20.html',
@@ -28178,7 +28225,16 @@ Urządzenie przyjmuje kartę nano SIM i eSIM, a dwupasmowy odbiornik GNSS (L1 i 
 
 Sklep oferuje dwie konfiguracje z pamięcią 6 GB / 64 GB. WCMTB-H25B6BCJ1-A6 ma skaner SE4720 z białym oświetleniem i zielonym celownikiem. WCMTB-H25B6DCJ1-A6 nie ma skanera — kody okazjonalnie odczytuje tylny aparat 16 MP z dołączonym oprogramowaniem Zebra.
 
-Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmowy na tylnej ściance pozwala szybko wezwać pomoc. Pakiet Zebra DNA Professional jest w zestawie. Do Wi-Fi 6E i pracy z Workstation Connect potrzebna jest licencja Zebra DNA Enterprise.`,
+Obudowa jest przygotowana do regularnej dezynfekcji, a czerwony przycisk alarmowy na tylnej ściance pozwala szybko wezwać pomoc. Pakiet Zebra DNA Professional jest w zestawie. Do Wi-Fi 6E i pracy z Workstation Connect potrzebna jest licencja Zebra DNA Enterprise.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+Zestaw HC25 obejmuje terminal i baterię PowerPrecision z nadajnikiem BLE. Gniazdo USB-C na dolnej krawędzi służy do ładowania. Do ładowania na biurku służy [stacja jednogniazdowa CRD-HC2L5L-BS1CO](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50) z tym samym przewodem i zasilaczem. [Stacja z gniazdem baterii CRD-HC2L5L-2S1D1B](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50) pracuje z [zasilaczem PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w), [przewodem DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodem sieciowym 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc25.html',
@@ -28310,7 +28366,16 @@ Zasilanie wyróżnia wymiana baterii bez wyłączania (true hot swap). Przez mak
 
 Pamięć operacyjna 8 GB i flash 128 GB obsługują aplikacje z rozbudowaną grafiką: zdalny podgląd parametrów życiowych pacjenta, badania obrazowe albo schematy urządzeń dla działu technicznego. Skaner SE4720 odczytuje między innymi kody UDI, co pozwala przed użyciem sprawdzić, czy sprzęt nie został wycofany.
 
-Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkowej opłaty, dlatego tryb Workstation Connect nie wymaga dokupowania licencji. Obudowa z tworzyw dla ochrony zdrowia jest przygotowana do dezynfekcji, a na tylnej ściance znajduje się czerwony przycisk alarmowy.`,
+Zebra DNA Enterprise jest zainstalowany fabrycznie i licencjonowany bez dodatkowej opłaty, dlatego tryb Workstation Connect nie wymaga dokupowania licencji. Obudowa z tworzyw dla ochrony zdrowia jest przygotowana do dezynfekcji, a na tylnej ściance znajduje się czerwony przycisk alarmowy.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+HC50 trafia do klienta z baterią PowerPrecision 3800 mAh. Zasilacz z przewodem USB-C ładuje terminal bez stacji. [Stacja CRD-HC2L5L-BS1CO](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50) wymaga tego samego zasilacza i przewodu. Terminal razem z baterią zapasową ładuje [stacja CRD-HC2L5L-2S1D1B](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50). Ta wersja stacji potrzebuje [zasilacza sieciowego 50 W](/produkt/zebra-zasilacz-50w), [przewodu DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) oraz [przewodu sieciowego EU](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc50.html',
@@ -28438,7 +28503,16 @@ Moduł komórkowy obsługuje 5G w trybach NSA i SA, Gigabit LTE-A i VoLTE. Termi
 
 Wbudowany skaner SE4720 odczytuje kody kreskowe stosowane w ochronie zdrowia, a jego białe oświetlenie i zielony celownik są przyjazne dla pacjenta. Większa pamięć, 8 GB / 128 GB, poprawia wydajność aplikacji, a baterię 3800 mAh można wymienić bez wyłączania terminala.
 
-W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest przygotowana do częstej dezynfekcji środkami zatwierdzonymi przez Zebrę. Czerwony przycisk alarmowy umieszczony z tyłu można skonfigurować tak, aby łączył z wybranym numerem albo uruchamiał aplikację.`,
+W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest przygotowana do częstej dezynfekcji środkami zatwierdzonymi przez Zebrę. Czerwony przycisk alarmowy umieszczony z tyłu można skonfigurować tak, aby łączył z wybranym numerem albo uruchamiał aplikację.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+W opakowaniu HC55 są terminal i bateria 3800 mAh z nadajnikiem BLE. Do ładowania z gniazdka służy zasilacz USB-A z przewodem USB-C. Alternatywą jest [jednogniazdowa stacja CRD-HC2L5L-BS1CO](/produkt/zebra-stacja-dokujaca-1slot-hc20-hc50) z tym samym zasilaniem. [Stacja na terminal i baterię CRD-HC2L5L-2S1D1B](/produkt/zebra-stacja-dokujaca-2slot-hc20-hc50) korzysta z [zasilacza PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w), [przewodu DC 388A1](/produkt/zebra-kabel-zasilajacy-388) i [przewodu sieciowego C13](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
     sameAs: 'https://www.zebra.com/us/en/products/mobile-computers/handheld/hc2x-hc5x-series/hc55.html',
@@ -28557,7 +28631,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC27 — kolektor danych / terminal mobilny 5G z GPS",
   "seoDescription": "Zebra TC27 (WCMTB-T27) — kolektor danych 5G/LTE z GPS do logistyki terenowej i kurierów.",
   "shortDescription": "Zebra TC27 — komputer mobilny 5G/Wi-Fi 6E z GPS, następca TC26, do pracy w terenie",
-  "description": "Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.\n\nBliźniacze urządzenie do [Zebra TC22](/produkt/zebra-tc22) (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.\n\nDuży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM. Android z gwarancją aktualizacji do wersji 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC26.\n\nSkaner do wyboru: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na regałach i paletach z odległości. Skaner enterprise dekoduje kody w 0,3 s — 5–10× szybciej niż aparat smartfona.\n\nObudowa IP68/IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui), 500 tumble z 0,5 m, temperatura pracy -10°C do +50°C. Wymienne baterie PowerPrecision hot-swap: 3 800 mAh (~10 h) lub 5 200 mAh (~14 h). Waga zaledwie 236 g — lżejszy niż wiele smartfonów premium.\n\nŁączność 5G FR1 (NSA/SA) + 4G LTE-A zapewnia stabilne połączenie z systemem TMS, ERP lub CRM w czasie rzeczywistym — śledzenie przesyłek, potwierdzanie dostawy, raportowanie wizyt. GPS z dokładnością dual-band (L1+L5) rejestruje trasy i czas pracy. VoLTE dla połączeń głosowych bez dodatkowego telefonu.\n\nPakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC27 i TC22 — baterie, stacje ładowania, etui i trigger handle są identyczne dla obu modeli. Jeden ekosystem akcesoriów dla floty mieszanej Wi-Fi + 5G. Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja Wi-Fi-only bez 5G: Zebra TC22. Szczegółowa dokumentacja na zebra.com i serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC27 to terminal mobilny klasy enterprise z łącznością 5G/4G LTE i GPS, zaprojektowany dla pracowników terenowych — kurierów, serwisantów, przedstawicieli handlowych, inspektorów — którzy potrzebują wytrzymałego urządzenia ze skanerem kodów kreskowych i stałym dostępem do systemów firmowych poza zasięgiem Wi-Fi.\n\nBliźniacze urządzenie do [Zebra TC22](/produkt/zebra-tc22) (identyczny procesor, ekran, skanery, wytrzymałość), rozszerzone o moduł 5G FR1 z Gigabit LTE-A, dual SIM (nano + eSIM) oraz lokalizację GPS/GLONASS/Galileo/BeiDou z dwuzakresowym GNSS. TC27 łączy stylistykę i cenę smartfona z funkcjami biznesowymi klasy enterprise.\n\nDuży 6-calowy wyświetlacz FHD+ (1080×2160) z Corning Gorilla Glass, procesor Qualcomm 5430 hex-core 2.1 GHz z 6 lub 8 GB RAM. Android z gwarancją aktualizacji do wersji 16. Dwukrotnie wyższa wydajność obliczeniowa w porównaniu z poprzednią generacją TC26.\n\nSkaner do wyboru: SE4710 (standard, zasięg do 35 cm) do codziennego skanowania, lub SE55 Advanced Range (zasięg od 10 cm do 7,6 m) do skanowania towarów na regałach i paletach z odległości. Skaner enterprise dekoduje kody w 0,3 s — 5–10× szybciej niż aparat smartfona.\n\nObudowa IP68/IP65 z certyfikacją MIL-STD-810H: upadki z 1,5 m na beton (z etui), 500 tumble z 0,5 m, temperatura pracy -10°C do +50°C. Wymienne baterie PowerPrecision: 3 800 mAh (~10 h) lub 5 200 mAh (~14 h). Waga zaledwie 236 g — lżejszy niż wiele smartfonów premium.\n\nŁączność 5G FR1 (NSA/SA) + 4G LTE-A zapewnia stabilne połączenie z systemem TMS, ERP lub CRM w czasie rzeczywistym — śledzenie przesyłek, potwierdzanie dostawy, raportowanie wizyt. GPS z dokładnością dual-band (L1+L5) rejestruje trasy i czas pracy. VoLTE dla połączeń głosowych bez dodatkowego telefonu.\n\nPakiet Mobility DNA Professional w cenie: DataWedge, StageNow, Device Tracker, LifeGuard™.\n\nKoszt posiadania (TCO): pełna kompatybilność akcesoriów TC27 i TC22 — baterie, stacje ładowania, etui i trigger handle są identyczne dla obu modeli. Jeden ekosystem akcesoriów dla floty mieszanej Wi-Fi + 5G. Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Wersja Wi-Fi-only bez 5G: Zebra TC22. Szczegółowa dokumentacja na zebra.com i serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nOpakowanie TC27 zawiera terminal i baterię. Ładowarki sieciowej i przewodu USB w opakowaniu nie ma. W samochodzie ten sam przewód działa z [ładowarką samochodową CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01). [Stacja 1-gniazdowa CRD-TC2L-BS1CO-01](/produkt/zebra-stacja-dokujaca-1slot-tc22-tc27) ładuje TC27 z tego samego zasilacza i przewodu.\n",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -28612,7 +28686,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     },
     {
       "name": "Bateria",
-      "value": "3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna hot-swap"
+      "value": "3 800 mAh (standard) lub 5 200 mAh (rozszerzona), wymienna"
     },
     {
       "name": "Odporność",
@@ -28754,7 +28828,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     },
     {
       "question": "Jak długo działa bateria w Zebra TC27 z 5G?",
-      "answer": "Bateria standardowa 3 800 mAh zapewnia ok. 8–10 godzin pracy z 5G (moduł LTE/5G zużywa więcej energii niż Wi-Fi). Bateria rozszerzona 5 200 mAh wydłuża czas do ok. 12–14 godzin. Dla kurierów z całodniową trasą rekomendujemy baterię 5 200 mAh lub baterię zapasową z wymianą hot-swap w trakcie dnia."
+      "answer": "Bateria standardowa 3 800 mAh zapewnia ok. 8–10 godzin pracy z 5G (moduł LTE/5G zużywa więcej energii niż Wi-Fi). Bateria rozszerzona 5 200 mAh wydłuża czas do ok. 12–14 godzin. Dla kurierów z całodniową trasą rekomendujemy baterię 5 200 mAh lub baterię zapasową. Baterię wymienia się po wyłączeniu terminala."
     },
     {
       "question": "Czy TC27 może zastąpić telefon służbowy?",
@@ -28991,7 +29065,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC53 — kolektor danych / terminal mobilny Wi-Fi 6E",
   "seoDescription": "Zebra TC53 (TC5301) — kolektor danych Wi-Fi 6E do magazynów, logistyki i produkcji.",
   "shortDescription": "Zebra TC53 — wydajny terminal mobilny z WiFi 6E, ekranem 6\" FHD i procesorem Qualcomm 6490, następca TC52",
-  "description": "Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.\n\nNastępca bestsellerowej serii TC52/TC52x: procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC52x), 6-calowy wyświetlacz Full HD (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard, zasięg bliski) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Oba skanery dekodują 1D i 2D w ułamku sekundy, nawet zniszczone, zadrukowane lub wyświetlane na ekranie.\n\nKonstrukcja klasy wytrzymałości IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~12 h) lub 7000 mAh (rozszerzona, ~18 h) z technologią warm/hot swap — wymiana baterii bez wyłączania urządzenia i utraty sesji.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem (2,4 + 5 + 6 GHz), Bluetooth 5.2, NFC (Apple VAS, Google SmartTap). Kamera 16 MP z tyłu (autofokus, HDR, latarka) i 8 MP z przodu. USB 3.0 Type-C + USB 2.0 Host (tył). Dual-Band GNSS. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Opcjonalnie: Zebra Dimensioning — funkcja wymiarowania paczek kamerą urządzenia (eliminuje statyczne stanowisko pomiarowe). Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC53 są kompatybilne z TC58, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC53 to flagowy terminal mobilny klasy enterprise, zaprojektowany dla dużych magazynów, centrów dystrybucyjnych, fabryk i sieci handlowych, które potrzebują maksymalnej wydajności skanowania, łączności WiFi 6E i wieloletniej niezawodności w warunkach intensywnej eksploatacji — z budżetem na urządzenie klasy premium.\n\nNastępca bestsellerowej serii TC52/TC52x: procesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC52x), 6-calowy wyświetlacz Full HD (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody, od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard, zasięg bliski) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Oba skanery dekodują 1D i 2D w ułamku sekundy, nawet zniszczone, zadrukowane lub wyświetlane na ekranie.\n\nKonstrukcja klasy wytrzymałości IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~12 h) lub 7000 mAh (rozszerzona, ~18 h) z technologią warm/hot swap — wymiana baterii bez wyłączania urządzenia i utraty sesji.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem (2,4 + 5 + 6 GHz), Bluetooth 5.2, NFC (Apple VAS, Google SmartTap). Kamera 16 MP z tyłu (autofokus, HDR, latarka) i 8 MP z przodu. USB 3.0 Type-C + USB 2.0 Host (tył). Dual-Band GNSS. MicroSD do 2 TB.\n\nPakiet Mobility DNA Professional (w cenie urządzenia): DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Opcjonalnie: Zebra Dimensioning — funkcja wymiarowania paczek kamerą urządzenia (eliminuje statyczne stanowisko pomiarowe). Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC53 są kompatybilne z TC58, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Wersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nW pudełku TC53 są terminal i bateria 4680 mAh. Zasilacz i przewód USB nie wchodzą w skład zestawu TC53. Zamiast przewodu można użyć stacji 1-gniazdowej [CRD-NGTC5N-2SC1B do terminala bez osłony](/produkt/zebra-tc53-crd-ngtc5n-2sc1b) albo [CRD-NGTC5B-2SC1B do terminala w osłonie](/produkt/zebra-tc53-crd-ngtc5b-2sc1b). Zestaw stacji zawiera zasilacz i przewód DC. Do gniazdka stację podłącza [przewód sieciowy 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -29328,7 +29402,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC58 — kolektor danych 5G",
   "seoDescription": "Zebra TC58 — kolektor danych 5G/LTE do logistyki i serwisu terenowego. WiFi 6E, Qualcomm 6490, skaner SE55 12 m, IP68.",
   "shortDescription": "Zebra TC58 — terminal mobilny 5G z WiFi 6E, ekranem 6\" FHD i procesorem Qualcomm 6490, wersja TC53 z łącznością komórkową",
-  "description": "Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490 i skanerem SE55 do 12 m. Następca TC57, kompatybilny z akcesoriami TC53. Android z aktualizacjami do v16. 6 konfiguracji od 6 751 do (cena zależy od wariantu).\n\nDla kogo? Zebra TC58 to kolektor danych (terminal mobilny) z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.\n\nWersja bliźniacza [Zebra TC53](/produkt/zebra-tc53) z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC57x), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard range) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Wariant premium z czujnikiem czasu przelotu (ToF) umożliwia wymiarowanie paczek kamerą.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~15 h z 5G) lub 7000 mAh (rozszerzona, ~22 h) z warm/hot swap.\n\nPakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Zebra TC58 to kolektor danych (terminal mobilny) klasy enterprise z łącznością 5G/LTE, procesorem Qualcomm 6490 i skanerem SE55 do 12 m. Następca TC57, kompatybilny z akcesoriami TC53. Android z aktualizacjami do v16. 6 konfiguracji od 6 751 do (cena zależy od wariantu).\n\nDla kogo? Zebra TC58 to kolektor danych (terminal mobilny) z łącznością 5G/4G LTE, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — z budżetem na urządzenie klasy enterprise.\n\nWersja bliźniacza [Zebra TC53](/produkt/zebra-tc53) z pełną łącznością komórkową: 5G FR1 (n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 6490 octa-core 2,7 GHz (o 60% szybszy od TC57x), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 4 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android z gwarancją aktualizacji do Androida 16.\n\nWybierz skaner według potrzeb: SE4720 (standard range) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z technologią IntelliFocus (zasięg od 10 cm do 12 m) — skanuje kody na najwyższych regałach bez drabiny, a sekundę później odczyta drobny kod na etykiecie w ręce. Wariant premium z czujnikiem czasu przelotu (ToF) umożliwia wymiarowanie paczek kamerą.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: wielokrotne upadki z 1,8 m na beton, tumble test 1000×0,5 m (bez etui) i 1000×1,0 m (z etui), zakres temperatur od -20°C do +50°C. Wymienna bateria PowerPrecision+ 4680 mAh (standard, ~15 h z 5G) lub 7000 mAh (rozszerzona, ~22 h) z warm/hot swap.\n\nPakiet Mobility DNA Professional: DataWedge, StageNow, Device Tracker, LifeGuard, Workforce Connect Push-to-Talk. Zarządzanie flotą: SOTI, VMware, Microsoft Intune, Zebra DNA Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC58 z Android i gwarancją aktualizacji do Android 16 = minimum 4 lata wsparcia LifeGuard™. Baterie PowerPrecision+ TC58 są kompatybilne z TC53, [TC73](/produkt/zebra-tc73) i [TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty. Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nTC58 jest dostarczany z baterią 4680 mAh. Elementów do ładowania z gniazdka w zestawie nie ma. W pojeździe ten sam przewód współpracuje z [ładowarką samochodową USB-A CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01). Terminal i baterię zapasową ładuje też stacja [CRD-NGTC5N-2SC1B bez osłony](/produkt/zebra-tc53-crd-ngtc5n-2sc1b) lub [CRD-NGTC5B-2SC1B w osłonie](/produkt/zebra-tc53-crd-ngtc5b-2sc1b). Stacja wymaga [przewodu sieciowego 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -29802,7 +29876,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC53e — terminal kodów kreskowych Wi-Fi 6E | TAKMA",
   "seoDescription": "Zebra TC53e z Wi-Fi 6E i skanerem kodów SE4720 lub SE55. Porównaj wersje pamięci, ceny, dostępność i zgodne akcesoria.",
   "shortDescription": "Terminal Android z Wi-Fi 6E i skanerem kodów SE4720 lub SE55. Ekran 6 cali, wymienna bateria i kilka wersji pamięci.",
-  "description": "Zebra TC53e to terminal Android do odczytu kodów kreskowych w magazynie, sklepie i centrum dystrybucyjnym. Łączy skaner 1D/2D z ekranem dotykowym 6 cali i Wi-Fi 6E.\n\nWybierz skaner SE4720 do pracy z bliska lub SE55 do odczytu kodów z większej odległości. Dostępne wersje różnią się pamięcią oraz baterią. Szczegóły konfiguracji sprawdzisz w tabeli numerów PN.\n\nProcesor Qualcomm 4490 ma osiem rdzeni i częstotliwość 2,4 GHz. Ekran 1080 × 2160 pikseli ma jasność 600 nitów. Aparaty 16 MP z tyłu i 8 MP z przodu służą do dokumentowania pracy oraz rozmów wideo.\n\nTerminal obsługuje Wi-Fi 6E, Bluetooth 5.3, NFC i USB-C. Nie ma modemu 5G. Jeśli potrzebujesz łączności komórkowej, porównaj [Zebra TC58e](/produkt/zebra-tc58e).\n\nObudowa z baterią ma klasę ochrony IP65 i IP68. Terminal wytrzymuje upadki z 1,8 m na płytki na betonie. Z opcjonalną osłoną odporność wynosi do 2,4 m na beton. Temperatura pracy wynosi od −20°C do +50°C.\n\nDobierz baterię, stację i osłonę do wybranego PN. Wybierz stację do terminala bez osłony lub w osłonie. Zasilacz i przewody zależą od zestawu stacji.\n\nPokazane konfiguracje TC530E nie mają wbudowanego czytnika UHF. Do pracy z etykietami radiowymi wybierz osobny [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid). NFC nie zastępuje czytnika UHF.",
+  "description": "Zebra TC53e to terminal Android do odczytu kodów kreskowych w magazynie, sklepie i centrum dystrybucyjnym. Łączy skaner 1D/2D z ekranem dotykowym 6 cali i Wi-Fi 6E.\n\nWybierz skaner SE4720 do pracy z bliska lub SE55 do odczytu kodów z większej odległości. Dostępne wersje różnią się pamięcią oraz baterią. Szczegóły konfiguracji sprawdzisz w tabeli numerów PN.\n\nProcesor Qualcomm 4490 ma osiem rdzeni i częstotliwość 2,4 GHz. Ekran 1080 × 2160 pikseli ma jasność 600 nitów. Aparaty 16 MP z tyłu i 8 MP z przodu służą do dokumentowania pracy oraz rozmów wideo.\n\nTerminal obsługuje Wi-Fi 6E, Bluetooth 5.3, NFC i USB-C. Nie ma modemu 5G. Jeśli potrzebujesz łączności komórkowej, porównaj [Zebra TC58e](/produkt/zebra-tc58e).\n\nObudowa z baterią ma klasę ochrony IP65 i IP68. Terminal wytrzymuje upadki z 1,8 m na płytki na betonie. Z opcjonalną osłoną odporność wynosi do 2,4 m na beton. Temperatura pracy wynosi od −20°C do +50°C.\n\nKażda wersja ma baterię w zestawie; stację i osłonę dobiera się do wersji terminala. Wybierz stację do terminala bez osłony lub w osłonie. Zasilacz i przewody zależą od zestawu stacji.\n\nPokazane konfiguracje TC530E nie mają wbudowanego czytnika UHF. Do pracy z etykietami radiowymi wybierz osobny [Zebra TC53e-RFID](/produkt/zebra-tc53e-rfid). NFC nie zastępuje czytnika UHF.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nKażda wersja TC53e ma w pudełku baterię 4680 mAh. W wersjach TC530E-0T1E6B1B00-A6 i TC530E-0T1K7B1B00-A6 jest to bateria BLE. Ładowarki sieciowej i przewodu USB-C w zestawie nie ma. Alternatywą dla przewodu jest stacja z gniazdem baterii zapasowej: [CRD-NGTC5N-2SC1B](/produkt/zebra-tc53-crd-ngtc5n-2sc1b) dla terminala bez osłony lub [CRD-NGTC5B-2SC1B](/produkt/zebra-tc53-crd-ngtc5b-2sc1b) dla terminala w osłonie. Przewód sieciowy do stacji to [50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -30232,7 +30306,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC58e — kolektor danych / terminal mobilny 5G essential",
   "seoDescription": "Zebra TC58e (TC58BE) — kolektor danych 5G/LTE do logistyki terenowej i serwisu.",
   "shortDescription": "Zebra TC58e — terminal mobilny 5G z WiFi 6E, ekranem 6\" FHD+ i procesorem Qualcomm 4490, wersja TC53e z łącznością komórkową 5G/LTE",
-  "description": "Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy [TC58](/produkt/zebra-tc58).\n\nWersja bliźniacza [Zebra TC53e](/produkt/zebra-tc53e) z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i energooszczędniejszy od 6490 w TC58), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17.\n\nTrzy skanery do wyboru: SE4720 (standard range) do codziennego skanowania, SE4770 (indoor/outdoor) z doskonałą pracą w pełnym słońcu, lub SE55 Advanced Range z IntelliFocus (do 12 m). Warianty z Security Chip zapewniają dodatkową ochronę danych korporacyjnych.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton (2,4 m z etui Rugged Boot), tumble test 1000×0,5 m i 1000×1,0 m z etui, zakres temperatur od -20°C do +50°C. Bateria PowerPrecision+ 4680 mAh (standard) lub 7000 mAh (rozszerzona) z warm swap. Czujnik ciśnienia atmosferycznego (barometr) — niedostępny w TC53e.\n\nBluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Certyfikat EPEAT Gold, 25% plastiku z recyklingu.\n\nKoszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC58). Akcesoria ShareCradle kompatybilne z [TC53](/produkt/zebra-tc53)/TC58/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Dokumentacja: zebra.com i serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC58e to terminal mobilny z łącznością 5G/4G LTE i WiFi 6E, zaprojektowany dla firm kurierskich, serwisantów terenowych, pracowników magazynów rozproszonych i operatorów logistycznych, którzy potrzebują niezawodnej łączności komórkowej poza zasięgiem WiFi — w przystępniejszej cenie niż flagowy [TC58](/produkt/zebra-tc58).\n\nWersja bliźniacza [Zebra TC53e](/produkt/zebra-tc53e) z pełną łącznością komórkową: 5G FR1 Gen 2 (n1/n2/n3/n5/n7/n8/n12/n20/n26/n28/n38/n40/n41/n66/n71/n77/n78) + 4G LTE + 3G + 2G. Obsługa nano SIM + eSIM — możliwość pracy na dwóch operatorach jednocześnie. Dual-Band GNSS (GPS L1+L5, GLONASS, Galileo, BeiDou) z a-GPS zapewnia precyzyjną lokalizację do 1 metra na zewnątrz budynków.\n\nProcesor Qualcomm 4490 octa-core 2,4 GHz (nowszy i energooszczędniejszy od 6490 w TC58), 6-calowy wyświetlacz Full HD+ (1080×2160) o jasności 600 nitów z obsługą rękawiczek i odrzucaniem kropel wody. Od 6 do 8 GB RAM i do 128 GB pamięci Flash (UFS). System Android 13 z gwarancją aktualizacji do Androida 17.\n\nTrzy skanery do wyboru: SE4720 (standard range) do codziennego skanowania, SE4770 (indoor/outdoor) z doskonałą pracą w pełnym słońcu, lub SE55 Advanced Range z IntelliFocus (do 12 m). Warianty z Security Chip zapewniają dodatkową ochronę danych korporacyjnych.\n\nKonstrukcja IP68 + IP65 z certyfikacją MIL-STD-810H: upadki z 1,8 m na beton (2,4 m z etui Rugged Boot), tumble test 1000×0,5 m i 1000×1,0 m z etui, zakres temperatur od -20°C do +50°C. Bateria PowerPrecision+ 4680 mAh (standard) lub 7000 mAh (rozszerzona) z warm swap. Czujnik ciśnienia atmosferycznego (barometr) — niedostępny w TC53e.\n\nBluetooth 5.3, NFC, WiFi 6E 2×2 MU-MIMO, kamera 16 MP (tył) i 8 MP (przód), USB 3.1 Type-C. Certyfikat EPEAT Gold, 25% plastiku z recyklingu.\n\nKoszt posiadania (TCO): Android 13 z gwarancją aktualizacji do Android 17 = minimum 5 lat wsparcia LifeGuard™ (o rok dłużej niż TC58). Akcesoria ShareCradle kompatybilne z [TC53](/produkt/zebra-tc53)/TC58/[TC73](/produkt/zebra-tc73)/[TC78](/produkt/zebra-tc78) — jedna infrastruktura ładowania dla całej floty mieszanej. Dokumentacja: zebra.com i serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nBateria jest w pudełku każdego TC58e. Pojemność baterii zależy od wersji: 4680 mAh albo 7000 mAh. Zasilacz i przewód zamawia się osobno. Do ładowania w samochodzie służy [ładowarka USB-A do gniazda zapalniczki CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01) z tym samym przewodem. Na biurku terminal ładuje [stacja CRD-NGTC5N-2SC1B](/produkt/zebra-tc53-crd-ngtc5n-2sc1b) albo, dla terminala w osłonie, [stacja CRD-NGTC5B-2SC1B](/produkt/zebra-tc53-crd-ngtc5b-2sc1b). Każda z tych stacji wymaga [przewodu sieciowego 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -30717,7 +30791,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC501 — kolektor danych z AI i RFID",
   "seoDescription": "Zebra TC501 — kolektor danych z AI, RFID UHF, Wi-Fi 7, AMOLED 1500 nit.",
   "shortDescription": "Zebra TC501 — terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6\" AMOLED 1500 nit, następca TC53/TC58",
-  "description": "Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Baterie i uchwyty TC53 nie pasują do TC501. Zgodne stacje ShareCradle TC53 / TC58 można dostosować przez wymianę wkładki. Dobierz SHIM-CRD-TC5A do terminala bez osłony lub SHIM-CRD-TC5AB do terminala z osłoną. Szczegółowa specyfikacja techniczna i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC501 to flagowy kolektor danych (terminal mobilny) nowej generacji, zaprojektowany jako następca TC52/[TC53](/produkt/zebra-tc53) dla firm, które potrzebują najnowszej technologii AI, RFID i Wi-Fi 7 w jednym urządzeniu — od dużych magazynów i centrów logistycznych, przez sieci handlowe, po szpitale i zakłady produkcyjne.\n\nWydajność i AI na pierwszej linii. Procesor Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym silnikiem AI (NPU) zapewnia 300% więcej mocy obliczeniowej niż TC53. Przetwarzanie AI odbywa się lokalnie — rozpoznawanie produktów, weryfikacja etykiet, OCR bez chmury, zgodnie z RODO. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z opcją rozszerzenia microSD do 2 TB.\n\nEkran AMOLED — pierwszy w klasie enterprise. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów — 2,5× jaśniejszy niż IPS w TC53 (600 nit). Doskonale czytelny w pełnym słońcu, z głęboką czernią zmniejszającą zmęczenie oczu na długich zmianach. Szkło Corning Gorilla Glass Victus, panel dotykowy reagujący w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF — bez dodatkowych modułów. TC501 to pierwszy terminal z serii TC5x z wbudowanym czytnikiem RFID UHF w KAŻDEJ konfiguracji. Odczyt ponad 200 tagów na sekundę z zasięgu do 2 metrów. Do długiego zasięgu (9+ m) można podłączyć sled RFD40/RFD90. W TC53 RFID wymagał osobnego modułu — teraz jest w standardzie.\n\nTrzy silniki skanowania do każdego zadania. SR500 (Standard Range) — skanowanie z bliska, kasa, lada, kompletacja. SR560 — ulepszony finder 2D, szybsze dekodowanie uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje kody na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP do dokumentacji fotograficznej.\n\nŁączność przyszłości. Wi-Fi 7 (802.11be) z 2×2 MU-MIMO i MLO — przepustowość 2× wyższa niż Wi-Fi 6E, stabilność w gęstych środowiskach z setkami urządzeń. Bluetooth 6.0 z większym zasięgiem. NFC do identyfikacji pracowników i tagów. Wersje WAN (TC501G) dodają 5G Release 17, dual eSIM, CBRS i GPS z potrójną bandą GNSS.\n\nWytrzymałość klasy enterprise. Obudowa IP68+IP65 — pyłoszczelna, wodoodporna (zanurzenie + strumień pod ciśnieniem). Upadki z 2,4 m na beton (2,7 m z rugged boot) wg MIL-STD-810H. 2–4× więcej tumbles niż TC53. Temperatura pracy od -20°C do +50°C. Bateria 5000 mAh (standard) lub 7240 mAh (rozszerzona), wymienna hot-swap — szybkie ładowanie 0→70% w 45 minut.\n\nAndroid 15 z najdłuższym wsparciem. Gwarancja aktualizacji do 4 kolejnych wersji systemu. LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA w cenie: StageNow, Device Tracker, Enterprise Home Screen. Kompatybilny z MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Kolektor danych Zebra TC501 z Android 15 i gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ — najdłuższy cykl życia w klasie. Baterie i uchwyty TC53 nie pasują do TC501. Zgodne stacje ShareCradle TC53 / TC58 można dostosować przez wymianę wkładki. Dobierz SHIM-CRD-TC5A do terminala bez osłony lub SHIM-CRD-TC5AB do terminala z osłoną. Szczegółowa specyfikacja techniczna i instrukcja obsługi w języku polskim dostępne na stronie serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n- [Przewód USB-C Zebra — 1 m (CBL-EC5X-USBC3A-01)](/produkt/zebra-cable-usbc-et4x)\n\nOpakowanie TC501 zawiera baterię. Zasilacz i przewód USB-C są poza zestawem. Ten sam zasilacz i przewód zasilają stacje 1-gniazdowe [CRDCUP-TC5A-1DF](/produkt/zebra-tc501-crdcup-tc5a-1df) i [CRD-TC5A-2SC1B](/produkt/zebra-tc501-crd-tc5a-2sc1b). Druga stacja ma też gniazdo baterii zapasowej. Obie stacje są przeznaczone do terminala bez osłony.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -31291,7 +31365,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC701 — terminal ultra-rugged z RFID i AI ",
   "seoDescription": "Zebra TC701 — ultra-rugged terminal z RFID UHF, AI NPU i ekranem AMOLED 1500 nit.",
   "shortDescription": "Zebra TC701 — ultra-wytrzymały terminal mobilny z AI, RFID UHF, Wi-Fi 7 i ekranem 6\" AMOLED 1500 nit, następca TC73/TC78",
-  "description": "Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC73/TC78 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.\n\nNajwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).\n\nProcesor AI i pamięć klasy premium. Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym NPU do przetwarzania AI on-device — rozpoznawanie produktów, OCR numerów VIN i opon, weryfikacja etykiet bez chmury. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z microSD do 2 TB.\n\nEkran AMOLED 1500 nit — czytelny wszędzie. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów. Doskonale czytelny w pełnym słońcu i pod oświetleniem halogenowym w hali. Gorilla Glass Victus, panel dotykowy w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF w standardzie. Wbudowany czytnik RAIN RFID UHF w KAŻDEJ konfiguracji — odczyt ponad 200 tagów na sekundę z zasięgu do 2 m. Do długiego zasięgu (9+ m) sled RFD40/RFD90. Eliminacja osobnych modułów — mniej sprzętu, mniej awarii.\n\nDwa silniki skanowania. SR560 — ulepszone skanowanie 2D z szybkim dekodowaniem uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje etykiety na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP i czujnikiem Time-of-Flight do pomiaru wymiarów paczek (dimensioning).\n\nWi-Fi 7, 5G i łączność przyszłości. Wi-Fi 7 (802.11be) z MLO — do 5,7 Gbps, stabilność w gęstych środowiskach. Wersje 5G z dual eSIM i CBRS. Bluetooth 6.0, NFC (Apple VAS, Google SmartTap), GPS z potrójną bandą GNSS. Portfel zbliżeniowy (contactless wallet) — obsługa płatności i kart lojalnościowych.\n\nBaterie współdzielone z TC501. Bateria standardowa ma 5000 mAh, a rozszerzona 7240 mAh. Można je wymienić bez wyłączania terminala. Ładowanie bezprzewodowe wymaga TC701 WAN, baterii BTRY-TC5A7A-WC-01 i zgodnej ładowarki. TC701 Wi-Fi nie obsługuje tej funkcji. Zgodna szybka stacja ładuje baterię standardową od 0 do 70% w około 45 minut.\n\nAndroid 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA Professional w cenie: StageNow, Device Tracker, Enterprise Home Screen. MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000– (cena zależy od wariantu)/urządzenie). Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.\n\nWersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja techniczna i instrukcja obsługi dostępne na stronie serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC701 to ultra-wytrzymały (ultra-rugged) terminal mobilny nowej generacji, zaprojektowany jako następca TC73/TC78 dla firm pracujących w najtrudniejszych warunkach — chłodnie, doki załadunkowe, magazyny mrożone, porty, kopalnie, budowy i praca outdoorowa w ekstremalnych temperaturach od -20°C do +50°C.\n\nNajwyższa wytrzymałość w klasie. Obudowa IP68+IP65 certyfikowana MIL-STD-810H z przetrwalnością upadków z 3,66 m (12 ft) na beton — 50% więcej niż TC501 (2,4 m). Test tumble 3 500 cykli z 1 m (3,5× więcej niż [TC53](/produkt/zebra-tc53)). Test szoku termicznego — cykl mrożenie/nagrzewanie bez restartu. Gorilla Glass Victus na wyświetlaczu i okienku skanera. Waga zaledwie 284 g z baterią standardową — lżejszy od poprzednika [TC73](/produkt/zebra-tc73) (349 g).\n\nProcesor AI i pamięć klasy premium. Qualcomm Dragonwing Q-6690 (8 rdzeni, do 2,9 GHz) z dedykowanym NPU do przetwarzania AI on-device — rozpoznawanie produktów, OCR numerów VIN i opon, weryfikacja etykiet bez chmury. Pamięć 8 GB/128 GB lub 12 GB/256 GB (UFS 3.1) z microSD do 2 TB.\n\nEkran AMOLED 1500 nit — czytelny wszędzie. Wyświetlacz 6\" Full HD+ (2160×1080) z matrycą AMOLED i jasnością 1500 nitów. Doskonale czytelny w pełnym słońcu i pod oświetleniem halogenowym w hali. Gorilla Glass Victus, panel dotykowy w rękawicach i z mokrymi palcami.\n\nZintegrowany RFID UHF w standardzie. Wbudowany czytnik RAIN RFID UHF w KAŻDEJ konfiguracji — odczyt ponad 200 tagów na sekundę z zasięgu do 2 m. Do długiego zasięgu (9+ m) sled RFD40/RFD90. Eliminacja osobnych modułów — mniej sprzętu, mniej awarii.\n\nDwa silniki skanowania. SR560 — ulepszone skanowanie 2D z szybkim dekodowaniem uszkodzonych kodów. AC670 (Advanced Color) — zasięg do 30 m, kolorowy imager, skanuje etykiety na najwyższych regałach bez drabiny. Kamera tylna 50 MP z opcją ultrawide 13 MP i czujnikiem Time-of-Flight do pomiaru wymiarów paczek (dimensioning).\n\nWi-Fi 7, 5G i łączność przyszłości. Wi-Fi 7 (802.11be) z MLO — do 5,7 Gbps, stabilność w gęstych środowiskach. Wersje 5G z dual eSIM i CBRS. Bluetooth 6.0, NFC (Apple VAS, Google SmartTap), GPS z potrójną bandą GNSS. Portfel zbliżeniowy (contactless wallet) — obsługa płatności i kart lojalnościowych.\n\nBaterie współdzielone z TC501. Bateria standardowa ma 5000 mAh, a rozszerzona 7240 mAh. Można je wymienić bez wyłączania terminala. Ładowanie bezprzewodowe wymaga TC701 WAN, baterii BTRY-TC5A7A-WC-01 i zgodnej ładowarki. TC701 Wi-Fi nie obsługuje tej funkcji. Zgodna szybka stacja ładuje baterię standardową od 0 do 70% w około 45 minut.\n\nAndroid 15 z długim wsparciem. Aktualizacja do Android 19 (4 generacje). LifeGuard for Android — comiesięczne łatki bezpieczeństwa OTA. Mobility DNA Professional w cenie: StageNow, Device Tracker, Enterprise Home Screen. MDM: SOTI, Intune, VMware, Zebra Cloud.\n\nKoszt posiadania (TCO): Android 15 z gwarancją aktualizacji do Android 19 (4 generacje) = minimum 8 lat wsparcia LifeGuard™ z comiesięcznymi łatkami OTA. Baterie hot-swap współdzielone z TC501 — jeden magazyn baterii obsługuje całą flotę. RFID UHF w każdej konfiguracji eliminuje osobny czytnik RFID (oszczędność ~2 000– (cena zależy od wariantu)/urządzenie). Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana obudowy i baterii.\n\nWersja enterprise (lżejsza, upadki 2,4 m, tańsza): [Zebra TC501](/produkt/zebra-tc501). Szczegółowa specyfikacja techniczna i instrukcja obsługi dostępne na stronie serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz Zebra USB-C 45 W EU (PWR-WUA5V45W1EU)](/produkt/zebra-tc201-pwr-wua5v45w1eu)\n- [Przewód USB-C Zebra — 1 m (CBL-EC5X-USBC3A-01)](/produkt/zebra-cable-usbc-et4x)\n\nTC701 ma w pudełku baterię. Do ładowania z sieci brakuje zasilacza i przewodu USB-C. [Stacja CRD-TC7A-2SC1B](/produkt/zebra-tc701-cradle-2slot-1battery) ładuje terminal i baterię zapasową. Szybkie ładowanie samego terminala zapewnia [stacja CRDCUP-TC7A-1DF](/produkt/zebra-tc701-crdcup-tc7a-1df). Każda z nich pracuje z zasilaczem 45 W i przewodem USB-C z listy powyżej.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -31784,7 +31858,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC73 — kolektor danych / terminal mobilny ultra-rugged WiFi 6E upadki 3 m",
   "seoDescription": "Zebra TC73 (TC7301) — ultra-rugged kolektor danych z WiFi 6E do ciężkiej produkcji, chłodni i doków załadunkowych. Qualcomm 6490, IP68+IP65, upadki 3,05 m, -20°C do +50°C. 3 konfiguracje.",
   "shortDescription": "Zebra TC73 — ultra-wytrzymały terminal mobilny WiFi 6E z procesorem Qualcomm 6490, ekranem 6\" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC53",
-  "description": "Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.\n\nTC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — ale w obudowie ultra-rugged: odporność na upadki z 3,05 m na beton (vs 1,8 m w TC53), tumble test 2000×1,0 m (vs 1000×0,5 m), uchwyt o 20% cieńszy niż poprzedni TC72 przy zachowaniu ekstremalnej wytrzymałości. Procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz Full HD+ (1080×2160) z Gorilla Glass i obsługą rękawiczek.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF i funkcję Zebra Dimensioning (wymiarowanie paczek).\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/[TC58](/produkt/zebra-tc58) — łatwa migracja.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem, Bluetooth 5.2, NFC, Dual-Band GNSS. Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk. USB 3.0 Type-C + USB 2.0 Host. Pakiet Mobility DNA Professional w cenie urządzenia.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58 (BTRY-NGTC5TC7-*) — jeden pool baterii dla całej floty mieszanej. Wytrzymałość 3,05 m redukuje liczbę uszkodzeń w ciężkim terenie — niższe koszty napraw. Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana ekranu i obudowy.\n\nWersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra-tc78). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC53](/produkt/zebra-tc53). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC73 to ultra-wytrzymały terminal mobilny klasy ultra-rugged, zaprojektowany dla ciężkiej produkcji, doków załadunkowych, chłodni, magazynów mrożonych, warsztatów i prac outdoorowych, gdzie urządzenia narażone są na upadki, wibracje, skrajne temperatury i kontakt z wodą — z budżetem na urządzenie klasy premium o najwyższej wytrzymałości.\n\nTC73 jest bliźniaczym modelem TC53 (ten sam procesor, RAM, skanery, WiFi) — ale w obudowie ultra-rugged: odporność na upadki z 3,05 m na beton (vs 1,8 m w TC53), tumble test 2000×1,0 m (vs 1000×0,5 m), uchwyt o 20% cieńszy niż poprzedni TC72 przy zachowaniu ekstremalnej wytrzymałości. Procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz Full HD+ (1080×2160) z Gorilla Glass i obsługą rękawiczek.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania na poziomie ręki, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF i funkcję Zebra Dimensioning (wymiarowanie paczek).\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm/hot swap — wymiana bez wyłączania urządzenia. Baterie współdzielone z TC53/[TC58](/produkt/zebra-tc58) — łatwa migracja.\n\nŁączność WiFi 6E (802.11ax) 2×2 MU-MIMO z trójpasmowym roamingiem, Bluetooth 5.2, NFC, Dual-Band GNSS. Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk. USB 3.0 Type-C + USB 2.0 Host. Pakiet Mobility DNA Professional w cenie urządzenia.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58 (BTRY-NGTC5TC7-*) — jeden pool baterii dla całej floty mieszanej. Wytrzymałość 3,05 m redukuje liczbę uszkodzeń w ciężkim terenie — niższe koszty napraw. Zebra OneCare Essential/3 lata — naprawa priorytetowa, wymiana ekranu i obudowy.\n\nWersja bliźniacza z łącznością 5G/4G LTE i GPS: [Zebra TC78](/produkt/zebra-tc78). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC53](/produkt/zebra-tc53). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nW zestawie TC73 jest bateria 4680 mAh. Zasilacz i przewód USB są sprzedawane osobno. [Stacja CRD-NGTC7-2SC1B](/produkt/zebra-tc73-crd-ngtc7-2sc1b) ładuje terminal i jedną baterię zapasową. Jej zestaw zawiera zasilacz i przewód DC. [Przewód sieciowy 50-16000-220R](/produkt/zebra-tc201-50-16000-220r) jest poza zestawem stacji.",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -31910,7 +31984,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     },
     {
       "question": "Czym różni się TC73 od TC78?",
-      "answer": "TC73 i TC78 to bliźniacze urządzenia o identycznej obudowie ultra-rugged, procesorze i wytrzymałości. Jedyna różnica: TC73 ma wyłącznie WiFi 6E, a TC78 dodaje łączność 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcję ładowania bezprzewodowego (Qi). TC73 wystarczy do pracy wewnątrz budynku z WiFi. TC78 jest potrzebny dla pracowników terenowych bez WiFi."
+      "answer": "TC73 i TC78 to bliźniacze urządzenia o identycznej obudowie ultra-rugged, procesorze i wytrzymałości. Jedyna różnica: TC73 ma wyłącznie WiFi 6E, a TC78 dodaje łączność 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcję ładowania bezprzewodowego. TC73 wystarczy do pracy wewnątrz budynku z WiFi. TC78 jest potrzebny dla pracowników terenowych bez WiFi."
     },
     {
       "question": "Jaki skaner wybrać: SE4770 czy SE55?",
@@ -32127,7 +32201,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   "seoTitle": "Zebra TC78 — kolektor danych / terminal mobilny ultra-rugged 5G upadki 3 m",
   "seoDescription": "Zebra TC78 (TC78B1) — ultra-rugged kolektor danych 5G/LTE z WiFi 6E do serwisu terenowego, logistyki i outdooru. Qualcomm 6490, IP68+IP65, upadki 3,05 m, dual SIM, GPS. 5 konfiguracji.",
   "shortDescription": "Zebra TC78 — ultra-wytrzymały terminal mobilny 5G/LTE z WiFi 6E, ekranem 6\" FHD+ i odpornością na upadki z 3 m, wersja ultra-rugged TC58",
-  "description": "Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.\n\nTC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcją ładowania bezprzewodowego (Qi). Ten sam procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz FHD+ z Gorilla Glass i ta sama obudowa ultra-rugged z odpornością na upadki z 3,05 m na beton.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje OIS w kamerze 16 MP, czujnik ToF, Zebra Dimensioning i ładowanie bezprzewodowe.\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z [TC53](/produkt/zebra-tc53)/TC58/TC73.\n\nŁączność 5G FR1 + 4G LTE z dual SIM (nano + eSIM), WiFi 6E (802.11ax) 2×2 MU-MIMO, Bluetooth 5.2, NFC, Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou). Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58/TC73 — jeden pool baterii dla floty mieszanej. Dual SIM (nano + eSIM) eliminuje koszt osobnego routera w pojeździe. Wytrzymałość 3,05 m redukuje koszty napraw przy pracy w terenie. Zebra OneCare Essential/3 lata z naprawą priorytetową.\n\nWersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.",
+  "description": "Dla kogo? Zebra TC78 to ultra-wytrzymały terminal mobilny z łącznością 5G/4G LTE klasy ultra-rugged, zaprojektowany dla serwisantów terenowych, kierowców, pracowników doków załadunkowych, inspektorów i operatorów logistycznych pracujących w ekstremalnych warunkach — na deszczu, w mrozie, na budowie — gdzie urządzenie musi wytrzymać upadki z dużej wysokości, wibracje i kontakt z wodą, a jednocześnie zapewniać łączność komórkową poza zasięgiem WiFi.\n\nTC78 jest bliźniaczym modelem TC73 z dodatkową łącznością 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcją ładowania bezprzewodowego. Ten sam procesor Qualcomm 6490 octa-core 2,7 GHz, 6-calowy wyświetlacz FHD+ z Gorilla Glass i ta sama obudowa ultra-rugged z odpornością na upadki z 3,05 m na beton.\n\nWybierz skaner według potrzeb: SE4770 (standard, szerokie pole widzenia, zasięg do 60 cm) do codziennego skanowania, lub SE55 Advanced Range z IntelliFocus (zasięg od 10 cm do 12,2 m) — skanuje kody na najwyższych regałach bez drabiny. Wariant Premium dodaje OIS w kamerze 16 MP, czujnik ToF i Zebra Dimensioning. Premium obsługuje ładowanie bezprzewodowe, ale wymaga osobno kupionej baterii BTRY-NGTC5TC7-44MAWC-01 i stacji pojazdowej CRD-TC78-WCVC-01. W pudełku jest bateria 4680 mAh.\n\nKonstrukcja klasy IP68 + IP65, certyfikacja MIL-STD-810H: wielokrotne upadki z 3,05 m na beton (temp. pokojowa) i 2,4 m w pełnym zakresie temperatur, tumble test 2000×1,0 m, praca od -20°C do +50°C. Baterie PowerPrecision+ 4 680 mAh lub 7 000 mAh z warm swap — współdzielone z [TC53](/produkt/zebra-tc53)/TC58/TC73.\n\nŁączność 5G FR1 + 4G LTE z dual SIM (nano + eSIM), WiFi 6E (802.11ax) 2×2 MU-MIMO, Bluetooth 5.2, NFC, Dual-Band GNSS (GPS, GLONASS, Galileo, BeiDou). Audio: 3 mikrofony z redukcją szumów, 2 głośniki, Push-to-Talk.\n\nKoszt posiadania (TCO): Android z gwarancją aktualizacji do Android 16 + LifeGuard comiesięczne łatki OTA. Baterie PowerPrecision+ współdzielone z TC53/TC58/TC73 — jeden pool baterii dla floty mieszanej. Dual SIM (nano + eSIM) eliminuje koszt osobnego routera w pojeździe. Wytrzymałość 3,05 m redukuje koszty napraw przy pracy w terenie. Zebra OneCare Essential/3 lata z naprawą priorytetową.\n\nWersja bliźniacza WiFi-only: [Zebra TC73](/produkt/zebra-tc73). Wersja enterprise (lżejsza, tańsza, upadki 1,8 m): [Zebra TC58](/produkt/zebra-tc58). Szczegółowa dokumentacja dostępna na zebra.com oraz w serwis-zebry.pl.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)\n\nTC78 jest sprzedawany z baterią 4680 mAh. Zestaw nie zawiera zasilacza ani przewodu USB. [Ładowarka samochodowa CHG-AUTO-USB1-01](/produkt/zebra-tc201-chg-auto-usb1-01) z tym samym przewodem ładuje terminal w pojeździe. Na biurko alternatywą jest [stacja 1-gniazdowa CRD-NGTC7-2SC1B](/produkt/zebra-tc73-crd-ngtc7-2sc1b). Do jej zasilacza potrzebny jest [przewód sieciowy 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).",
   "categoryId": "terminale-mobilne",
   "subcategoryIds": [
     "terminale-mobilne"
@@ -32211,7 +32285,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
   ],
   "variantAttributeTooltips": {
     "Skaner": "SE4770 — skaner standardowego zasięgu (do 60 cm), szerokie pole widzenia i maksymalna tolerancja ruchu. Do codziennego skanowania na wyciągnięcie ręki.\n\nSE55 — skaner dalekiego zasięgu z IntelliFocus (od 10 cm do 12,2 m). Skanuje kody na najwyższych regałach bez drabiny.",
-    "Wersja": "Standard — skaner + pamięć, bateria warm-swap.\n\nPremium — dodatkowo: OIS w kamerze, czujnik ToF, Zebra Dimensioning, ładowanie bezprzewodowe Qi, bateria hot-swap."
+    "Wersja": "Standard — skaner + pamięć, bateria warm-swap.\n\nPremium — dodatkowo: OIS w kamerze, czujnik ToF, Zebra Dimensioning, obsługa ładowania bezprzewodowego (osobna bateria i stacja), bateria hot-swap."
   },
   "variants": [
     {
@@ -32277,7 +32351,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     },
     {
       "question": "Czym różni się TC78 od TC73?",
-      "answer": "TC78 i TC73 to bliźniacze urządzenia ultra-rugged o identycznej obudowie i wytrzymałości. Jedyna różnica: TC73 ma wyłącznie WiFi 6E, a TC78 dodaje 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcję ładowania bezprzewodowego Qi. TC73 wystarczy do pracy w budynku z WiFi. TC78 jest konieczny dla pracowników terenowych bez WiFi."
+      "answer": "TC78 i TC73 to bliźniacze urządzenia ultra-rugged o identycznej obudowie i wytrzymałości. Jedyna różnica: TC73 ma wyłącznie WiFi 6E, a TC78 dodaje 5G Sub-6 + 4G LTE, dual SIM (nano + eSIM), GPS/GNSS i opcję ładowania bezprzewodowego. TC73 wystarczy do pracy w budynku z WiFi. TC78 jest konieczny dla pracowników terenowych bez WiFi."
     },
     {
       "question": "Jaki skaner wybrać: SE4770 czy SE55?",
@@ -32285,7 +32359,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
     },
     {
       "question": "Czym jest wariant Premium TC78?",
-      "answer": "Wariant Premium (PN z E2A8A) dodaje: optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF, Zebra Dimensioning (wymiarowanie paczek kamerą), ładowanie bezprzewodowe Qi oraz baterie hot-swap. Idealny dla firm kurierskich wymagających wymiarowania paczek w terenie i szybkiego ładowania w pojeździe."
+      "answer": "Wariant Premium (PN z E2A8A) dodaje: optyczną stabilizację obrazu (OIS) w kamerze 16 MP, czujnik ToF, Zebra Dimensioning (wymiarowanie paczek kamerą), obsługę ładowania bezprzewodowego oraz baterie hot-swap. Ładowanie bezprzewodowe wymaga osobno kupionej baterii BTRY-NGTC5TC7-44MAWC-01 i stacji pojazdowej CRD-TC78-WCVC-01. Idealny dla firm kurierskich wymagających wymiarowania paczek w terenie i szybkiego ładowania w pojeździe."
     },
     {
       "question": "Czy Zebra TC78 jest wodoodporny?",
@@ -32480,7 +32554,7 @@ W zestawie jest Zebra DNA Enterprise, licencjonowany bez opłaty. Obudowa jest p
           "Ekran": "6\" FHD+ (1080×2160), Gorilla Glass",
           "Skaner": "SE4770 / SE55",
           "RAM / Flash": "4–8 GB / 64–128 GB",
-          "Łączność": "Wi-Fi 6E, 5G, GPS, dual SIM, Qi",
+          "Łączność": "Wi-Fi 6E, 5G, GPS, dual SIM",
           "Bluetooth": "5.2",
           "Bateria": "4 680 / 7 000 mAh, warm swap",
           "Odporność": "IP68, upadki 3,05 m, tumble 2000×1,0 m",
@@ -32516,7 +32590,16 @@ Obudowa IP65 (pełna pyłoszczelność + ochrona przed strumieniami wody) i odpo
 
 Wymienna bateria PowerPrecision: standardowa 3 500 mAh (~12 h pracy) lub rozszerzona 4 900 mAh (~17 h). Technologia Warm Swap umożliwia wymianę baterii bez wyłączania urządzenia. System Android 10 z aktualizacją do Androida 14, pakiet Mobility DNA (DataWedge, StageNow, Device Tracker) i zarządzanie flotą przez MDM (SOTI, VMware, Intune).
 
-Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2200 a MC2700 — jedna infrastruktura ładowania dla obu modeli. Wersja z łącznością LTE/GPS do pracy w terenie: [Zebra MC2700](/produkt/zebra-mc2700). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2200 a MC2700 — jedna infrastruktura ładowania dla obu modeli. Wersja z łącznością LTE/GPS do pracy w terenie: [Zebra MC2700](/produkt/zebra-mc2700). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+W pudełku są terminal, bateria PowerPrecision i założony pasek na rękę. Przewód USB-C podłącza się do gniazda na spodzie MC2200. [Stacja 1-gniazdowa USB CRD-MC2X-1SCU-01](/produkt/zebra-stacja-dokujaca-1slot-mc2200-mc2700) korzysta z tego samego przewodu i zasilacza. [Stacja CRD-MC2X-2SUCHG-01](/produkt/zebra-stacja-dokujaca-1slot-bateria-mc2200-mc2700) ładuje także baterię zapasową. Do niej potrzebne są [zasilacz 50 W](/produkt/zebra-zasilacz-50w), [przewód DC](/produkt/zebra-kabel-zasilajacy-388) i [przewód sieciowy](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -32609,6 +32692,8 @@ Koszt posiadania (TCO): Android 10 z gwarancją aktualizacji do Android 14 = min
     applications: ['Magazyn — przyjęcia, wydania, inwentaryzacja', 'Retail — weryfikacja cen i stanów', 'Lekka produkcja — kontrola jakości', 'Apteki i przychodnie', 'Logistyka — kompletacja zamówień', 'Chłodnie i mroźnie (-20°C)'],
     compatibleAccessories: [],
     relatedAccessories: [
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-mc2x-battery-3500',
       'zebra-mc2x-battery-4900',
       'zebra-mc2x-cradle-1slot',
@@ -32696,7 +32781,16 @@ Obudowa IP65 z odpornością na wielokrotne upadki z 1.52 m na beton (MIL-STD 81
 
 Wymienna bateria PowerPrecision: standardowa 3 500 mAh (~12 h) lub rozszerzona 4 900 mAh (~17 h) z technologią Warm Swap. System Android 10 z aktualizacją do Androida 14, pakiet Mobility DNA, zarządzanie flotą MDM. Łączność: Wi-Fi 802.11ac + LTE Cat 6 (EMEA bands) + Bluetooth 5.0 + GPS + opcjonalnie NFC.
 
-Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2700 a MC2200 — jedna infrastruktura ładowania dla obu modeli. Wersja wyłącznie Wi-Fi (niższa cena, do pracy wewnątrz budynku): [Zebra MC2200](/produkt/zebra-mc2200). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.`,
+Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = minimum 5 lat wsparcia LifeGuard™. Pełna kompatybilność akcesoriów MC2x między MC2700 a MC2200 — jedna infrastruktura ładowania dla obu modeli. Wersja wyłącznie Wi-Fi (niższa cena, do pracy wewnątrz budynku): [Zebra MC2200](/produkt/zebra-mc2200). Szczegółowa dokumentacja techniczna dostępna na zebra.com oraz w serwis-zebry.pl.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)
+- [Przewód USB-A / USB-C 1 m Zebra (CBL-TC5X-USBC2A-01)](/produkt/zebra-tc201-cbl-tc5x-usbc2a-01)
+
+Zestaw zawiera terminal, baterię PowerPrecision oraz fabrycznie zamontowany pasek na rękę. MC2700 ładuje się przez złącze USB-C na dolnej krawędzi obudowy. Alternatywą jest [stacja dokująca USB CRD-MC2X-1SCU-01](/produkt/zebra-stacja-dokujaca-1slot-mc2200-mc2700) zasilana tym samym kompletem. [Stacja z gniazdem baterii CRD-MC2X-2SUCHG-01](/produkt/zebra-stacja-dokujaca-1slot-bateria-mc2200-mc2700) pracuje z [zasilaczem PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w), [przewodem DC CBL-DC-388A1-01](/produkt/zebra-kabel-zasilajacy-388) i [przewodem sieciowym 50-16000-220R](/produkt/zebra-tc201-50-16000-220r).`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     manufacturerId: 'zebra',
@@ -32803,6 +32897,8 @@ Koszt posiadania (TCO): Android 11 z gwarancją aktualizacji do Android 14 = min
     applications: ['Logistyka terenowa — dostawy, odbiory', 'Kurierzy i kierowcy — skanowanie + GPS', 'Porty i terminale kontenerowe', 'Serwis i inspekcje w terenie', 'Kontrola dostaw i przyjęć towaru', 'Gospodarki magazynowe outdoor'],
     compatibleAccessories: [],
     relatedAccessories: [
+      'zebra-tc22-tc27-pwr-wua5v12w0eu',
+      'zebra-tc201-cbl-tc5x-usbc2a-01',
       'zebra-mc2x-battery-3500',
       'zebra-mc2x-battery-4900',
       'zebra-mc2x-cradle-1slot',
@@ -34185,7 +34281,7 @@ const mc33Accessories: Product[] = [
   {
   "id": "zebra-mc33-usb-cable",
   "slug": "zebra-mc33-usb-cable",
-  "name": "Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m",
+  "name": "Przewód USB-A z adapterem Zebra MC3300x / MC3400 / MC3450 — 1,52 m",
   "shortDescription": "Przewód z adapterem podłącza się do dolnych styków terminala. Służy do ładowania i komunikacji USB. Ma złącze USB-A i długość około 1,52 m.",
   "description": "Przewód z adapterem podłącza się do dolnych styków terminala. Służy do ładowania i komunikacji USB. Ma złącze USB-A i długość około 1,52 m.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane dla ładowania z gniazda sieciowego — sprzedawane osobno**\n\n- [Zasilacz USB-A Zebra 12 W EU (PWR-WUA5V12W0EU)](/produkt/zebra-tc22-tc27-pwr-wua5v12w0eu)\n\n**Wymagane dla ładowania w pojeździe — sprzedawane osobno**\n\n- [Ładowarka samochodowa USB-A Zebra — 2 porty (CHG-AUTO-USB1-01)](/produkt/zebra-tc201-chg-auto-usb1-01)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Dobór i montaż\n\n- Wybierz źródło zasilania odpowiednie do miejsca użycia. Do komunikacji USB podłącz przewód do zgodnego portu komputera.",
   "categoryId": "akcesoria",
@@ -34213,7 +34309,7 @@ const mc33Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra MC3400, MC3450, MC3300x, MC3300ax"
+      "value": "Zebra MC3400, MC3450, MC3300x, MC3300ax, MC3330xR, MC3390xR"
     },
     {
       "name": "Typ",
@@ -34227,7 +34323,7 @@ const mc33Accessories: Product[] = [
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2024-01-15",
-  "seoH1": "Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m",
+  "seoH1": "Przewód USB-A z adapterem Zebra MC3300x / MC3400 / MC3450 — 1,52 m",
   "updatedAt": "2026-10-03",
   "seoTitle": "Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m | CBL-MC33-USBCHG-01",
   "seoDescription": "CBL-MC33-USBCHG-01. Przewód USB-A z adapterem Zebra MC3400 / MC3450 — 1,52 m. Dobierz wymagane elementy zasilania.",
@@ -34245,7 +34341,7 @@ const mc33Accessories: Product[] = [
   {
   "id": "zebra-mc33-cradle-1slot",
   "slug": "zebra-mc33-cradle-1slot",
-  "name": "Stacja USB Zebra MC3400 / MC3450 — 1 terminal i 1 bateria",
+  "name": "Stacja USB Zebra MC3300x / MC3400 / MC3450 — 1 terminal i 1 bateria",
   "shortDescription": "Stacja ładuje jeden terminal i jedną zapasową baterię. Obsługuje komunikację USB po podłączeniu osobnego przewodu Micro-USB. Nie obsługuje Ethernetu.",
   "description": "Stacja ładuje jeden terminal i jedną zapasową baterię. Obsługuje komunikację USB po podłączeniu osobnego przewodu Micro-USB. Nie obsługuje Ethernetu.\n\n## Co jest potrzebne do użycia?\n\n**Wymagane — sprzedawane osobno**\n\n- [Zasilacz sieciowy Zebra 50 W (PWR-BGA12V50W0WW)](/produkt/zebra-zasilacz-50w)\n- [Przewód DC Zebra CBL-DC-388A1-01 (CBL-DC-388A1-01)](/produkt/zebra-kabel-zasilajacy-388)\n- [Przewód sieciowy Zebra — Europa, C13 (50-16000-220R)](/produkt/zebra-tc201-50-16000-220r)\n\nDokup tylko te elementy, których jeszcze nie masz.\n\n## Elementy opcjonalne\n\n- [Przewód synchronizacji Micro USB Zebra (25-124330-01R)](/produkt/zebra-tc22-tc27-25-124330-01r)",
   "categoryId": "akcesoria",
@@ -34303,7 +34399,7 @@ const mc33Accessories: Product[] = [
   "compatibleAccessories": [],
   "downloads": [],
   "createdAt": "2024-01-15",
-  "seoH1": "Stacja USB Zebra MC3400 / MC3450 — 1 terminal i 1 bateria",
+  "seoH1": "Stacja USB Zebra MC3300x / MC3400 / MC3450 — 1 terminal i 1 bateria",
   "updatedAt": "2026-10-03",
   "seoTitle": "Stacja USB Zebra MC3400 / MC3450 — 1 terminal i 1 bateria | CRD-MC33-2SUCHG-01",
   "seoDescription": "CRD-MC33-2SUCHG-01. Stacja USB Zebra MC3400 / MC3450 — 1 terminal i 1 bateria. Dobierz wymagane elementy zasilania.",
@@ -49362,9 +49458,18 @@ const datalogicMobileComputers: Product[] = [
 
 Skaner Halogen DE2121-DL z technologią DeepSight i Green Spot odczytuje kody 1D/2D natychmiastowo — nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranie. Wizualny sygnał Green Spot potwierdza poprawny odczyt zielonym punktem na kodzie, eliminując błędy przy kompletacji zamówień. Technologia GS1 Digital Link-readiness przygotowuje firmę na nowy standard kodów 2D zastępujący tradycyjne kody kreskowe.
 
-Unikalna technologia SafeSwap pozwala na wymianę baterii 4000 mAh bez wyłączania terminala — wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany. Trzy metody ładowania: szybkie USB-C, stacja dokująca z Ethernet lub bezprzewodowe Qi 7W. Bateria wystarcza na pełną zmianę roboczą (8+ godzin intensywnego skanowania).
+Unikalna technologia SafeSwap pozwala na wymianę baterii 4000 mAh bez wyłączania terminala — wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany. Trzy metody ładowania: szybkie USB-C, stacja dokująca lub bezprzewodowe Qi 7W. Stacje 94A150128 i 94A150129 tylko ładują. Ethernet mają stacje 94A150123 i 94A150132. Bateria wystarcza na pełną zmianę roboczą (8+ godzin intensywnego skanowania).
 
-Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. System Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia sprzętowego i software'owego) — najdłuższy lifecycle w segmencie cenowym do 3 000 PLN. Pełna dokumentacja techniczna dostępna na stronie producenta datalogic.com.`,
+Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. System Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia sprzętowego i software'owego) — najdłuższy lifecycle w segmencie cenowym do 3 000 PLN. Pełna dokumentacja techniczna dostępna na stronie producenta datalogic.com.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+W opakowaniu Memor 12 jest bateria 4000 mAh. Przewodu USB-C ani zasilacza nie ma w zestawie Memor 12. Ten sam przewód i zasilacz zasilają [stację 1-gniazdową 94A150128](/produkt/datalogic-dock-1slot-memor-12). W [osłonie 94ACC0404](/produkt/datalogic-boot-memor-12) terminal wchodzi do stacji bez adaptera.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-12-17-pd-1102.html',
@@ -49499,11 +49604,11 @@ Wersja Wi-Fi-only z łącznością Wi-Fi 6/6E, Bluetooth 5.3 i NFC Multi-Side. S
       { question: 'Ile kosztuje Datalogic Memor 12?', answer: 'Datalogic Memor 12 (PN: 944950001) kosztuje od 2 687 PLN netto w konfiguracji Wi-Fi 6E, 6 GB RAM, 64 GB Flash. Całkowity koszt posiadania (TCO) na 5 lat — z uwzględnieniem stacji dokującej (~1 200 PLN), baterii zapasowej (~350 PLN) i etui ochronnego (~250 PLN) — wynosi ok. 4 500 PLN, czyli ~75 PLN/miesiąc na terminal.' },
       { question: 'Czym różni się Datalogic Memor 12 od Memor 17?', answer: 'Datalogic Memor 12 to wersja Wi-Fi-only — idealna do pracy wewnątrz budynków. Datalogic Memor 17 dodaje łączność komórkową 5G/4G LTE z obsługą nano-SIM i eSIM oraz barometr (określanie piętra w budynkach wielokondygnacyjnych). Oba modele mają GPS dual-band (A-GPS, Galileo, BeiDou), identyczną obudowę (13,5 mm, 245 g), ekran, skaner Halogen DE2121, baterię 4000 mAh z SafeSwap i wsparcie Android 13→18. Różnica w cenie: Memor 12 od 2 687 PLN vs [Memor 17](/produkt/datalogic-memor-17) od 2 991 PLN netto.' },
       { question: 'Czy Datalogic Memor 12 obsługuje wymianę baterii bez wyłączania (hot-swap)?', answer: 'Tak — Datalogic Memor 12 wyposażony jest w technologię SafeSwap. Wewnętrzna bateria buforowa podtrzymuje zasilanie podczas wymiany głównej baterii 4000 mAh, więc terminal nie wymaga restartu. Sesja aplikacji i połączenie Wi-Fi zostają zachowane. Czas wymiany: ~10 sekund. To unikalna cecha Datalogic — konkurencyjny Zebra TC22 nie obsługuje hot-swap i wymaga restartu przy wymianie baterii.' },
-      { question: 'Jak długo działa bateria Datalogic Memor 12?', answer: 'Bateria Li-Ion 4000 mAh (14,98 Wh) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem. Trzy metody ładowania: szybkie USB-C (kabel w zestawie), stacja dokująca z Ethernet (przewodowa lub bezprzewodowa) lub bezprzewodowe Qi EPP 7W. Pełne ładowanie przez USB-C: ok. 3 godziny. Bateria jest wymienna (SafeSwap) — z zapasową baterią terminal pracuje non-stop przez cały dzień na dwie zmiany.' },
+      { question: 'Jak długo działa bateria Datalogic Memor 12?', answer: 'Bateria Li-Ion 4000 mAh (14,98 Wh) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem. Trzy metody ładowania: szybkie USB-C (przewodu nie ma w zestawie), stacja dokująca (ze stykami lub bezprzewodowa) lub bezprzewodowe Qi EPP 7W. Stacje 94A150128 i 94A150129 tylko ładują. Ethernet mają stacje 94A150123 i 94A150132. Pełne ładowanie przez USB-C: ok. 3 godziny. Bateria jest wymienna (SafeSwap) — z zapasową baterią terminal pracuje non-stop przez cały dzień na dwie zmiany.' },
       { question: 'Czy Datalogic Memor 12 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Memor 12 obsługuje ładowanie bezprzewodowe Qi EPP o mocy 7W. Wystarczy położyć terminal na dedykowanej stacji dokującej Datalogic (opcja bezprzewodowa) lub na dowolnej ładowarce Qi. Bezprzewodowe ładowanie eliminuje zużycie złącza USB-C i ułatwia obsługę floty urządzeń — pracownik odkłada terminal na podstawkę bez podłączania kabla.' },
       { question: 'Czy Datalogic Memor 12 jest wodoodporny?', answer: 'Datalogic Memor 12 ma podwójną certyfikację IP65 (pyłoszczelny, strumień wody) i IP67 (zanurzenie do 1 m na 30 minut). Wytrzymuje upadki z 1,3 m na beton (1,5 m z gumowym bootem ochronnym) oraz 500 tumble z 0,5 m wg IEC 60068-2-32. Certyfikacja MIL-STD-810H potwierdza odporność na wibracje, szok termiczny i wilgotność. Ekran Gorilla Glass 7 z optical bonding chroni przed zarysowaniami i odrzuca krople wody.' },
       { question: 'Do jakiej wersji Androida można zaktualizować Memor 12?', answer: 'Datalogic Memor 12 pracuje na systemie Android 13 GMS (Google Mobile Services) z gwarancją aktualizacji do Android 18. To oznacza 4+4 lata wsparcia: 4 lata aktualizacji systemu + 4 lata łatek bezpieczeństwa. Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) zapewnia zarządzanie flotą, zdalną konfigurację i Enterprise QR Code Enrollment. Terminal jest kompatybilny z MDM: SOTI MobiControl, VMware Workspace ONE, Microsoft Intune.' },
-      { question: 'Jakie akcesoria są dostępne do Datalogic Memor 12?', answer: 'Główne akcesoria Datalogic Memor 12: stacja dokująca z Ethernet (przewodowa lub bezprzewodowa), 4-slotowa stacja ładowania, wielogniazdowa ładowarka baterii, ładowarka samochodowa, etui z paskiem na rękę (belt holster), uchwyt pistoletowy (trigger handle), opaska na przedramię (wearable holder). Stację dokującą i baterię zapasową kupuje się osobno — nie są w zestawie z terminalem. Wszystkie akcesoria są wspólne dla Memor 12 i Memor 17.' },
+      { question: 'Jakie akcesoria są dostępne do Datalogic Memor 12?', answer: 'Główne akcesoria Datalogic Memor 12: stacja dokująca ze stykami lub bezprzewodowa (tylko ładowanie; Ethernet mają stacje 94A150123 i 94A150132), 4-slotowa stacja ładowania, wielogniazdowa ładowarka baterii, ładowarka samochodowa, etui z paskiem na rękę (belt holster), uchwyt pistoletowy (trigger handle), opaska na przedramię (wearable holder). Stację dokującą i baterię zapasową kupuje się osobno — nie są w zestawie z terminalem. Wszystkie akcesoria są wspólne dla Memor 12 i Memor 17.' },
       { question: 'Datalogic Memor 12 vs Zebra TC22 — który wybrać?', answer: 'Datalogic Memor 12 wygrywa: SafeSwap hot-swap baterii (TC22 wymaga restartu), ładowanie bezprzewodowe Qi (TC22 nie ma), ekran FHD+ z Gorilla Glass 7 (TC22 ma HD+ z GG5), dłuższe wsparcie Android 13→18 (TC22: 14→16). Zebra TC22 wygrywa: niższa cena (od 2 417 PLN vs 2 687 PLN), wyższa odporność IP68 (vs IP67), większy ekosystem akcesoriów Zebra, skaner SE55 z zasięgiem do 7,6 m (Halogen DE2121 do ~1 m). Rekomendacja: Memor 12 dla aptek i retailu (ergonomia, Qi, SafeSwap). TC22 dla magazynów z istniejącą infrastrukturą Zebra.' },
       { question: 'Gdzie serwisować Datalogic Memor 12 w Polsce?', answer: 'Serwis Datalogic w Polsce realizowany jest przez autoryzowane centra serwisowe. Standardowa gwarancja producenta: 12 miesięcy. Dostępne kontrakty Datalogic Shield na 1, 3 lub 5 lat — obejmują naprawy sprzętu, wymianę części i wsparcie techniczne. Czas naprawy: 5–10 dni roboczych. Dla klientów TAKMA oferujemy wsparcie w obsłudze gwarancji i organizacji serwisu.' },
       { question: 'Jakie są alternatywy dla Datalogic Memor 12?', answer: 'Alternatywy w segmencie cenowym 2 000–4 000 PLN netto: Zebra TC22 (od 2 417 PLN — tańszy, IP68, ekosystem Zebra), Zebra TC27 (od 2 690 PLN — z 5G/LTE i GPS, bliźniak TC22), [Datalogic Memor 17](/produkt/datalogic-memor-17) (od 2 991 PLN — identyczny jak Memor 12 ale z 5G), Datalogic Memor 30 (od 4 869 PLN — wytrzymalszy, IP68, bateria 4680 mAh, opcja skanera ER do 10 m). Dla niższego budżetu: Zebra TC22 w konfiguracji SE4710 od 2 417 PLN. Dla większej wytrzymałości: Datalogic Memor 30 z IP68.' },
@@ -49528,7 +49633,16 @@ Identyczna obudowa jak Datalogic Memor 12 — zaledwie 13,5 mm grubości i 245 g
 
 Skaner Halogen DE2121-DL z technologią DeepSight i Green Spot odczytuje kody 1D/2D natychmiastowo — nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranie. Technologia GS1 Digital Link-readiness przygotowuje firmę na nowy standard kodów 2D. SafeSwap umożliwia wymianę baterii 4000 mAh bez wyłączania terminala. Trzy metody ładowania: szybkie USB-C, stacja dokująca lub bezprzewodowe Qi 7W.
 
-Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia). NFC Multi-Side do płatności zbliżeniowych i identyfikacji. Pełna dokumentacja techniczna dostępna na stronie producenta datalogic.com.`,
+Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia). NFC Multi-Side do płatności zbliżeniowych i identyfikacji. Pełna dokumentacja techniczna dostępna na stronie producenta datalogic.com.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Memor 17 ma w pudełku baterię 4000 mAh z ładowaniem bezprzewodowym. Zestaw nie obejmuje przewodu USB-C i zasilacza. Przewód 94ACC0327 i zasilacz 94ACC0383 zasilają też [stację 94A150128](/produkt/datalogic-dock-1slot-memor-12). Terminal w [obudowie ochronnej 94ACC0404](/produkt/datalogic-boot-memor-12) wchodzi do tej stacji bez wkładki.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-12-17-pd-1102.html',
@@ -49671,7 +49785,7 @@ Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia). NFC Mult
       { question: 'Czy Datalogic Memor 17 ma GPS i nawigację?', answer: 'Tak — Datalogic Memor 17 ma GPS dual-band (L1+L5) z systemami Galileo dual-band i BeiDou oraz barometr do precyzyjnego określania piętra w budynkach. A-GPS przyspiesza first fix. Dual-band oznacza wyższą dokładność (~1 m) niż standardowy GPS (~5 m) — kluczowe dla nawigacji kurierów i serwisantów terenowych. Barometr jest unikalny dla Memor 17 — Memor 12 go nie posiada.' },
       { question: 'Czy Datalogic Memor 17 jest wodoodporny?', answer: 'Datalogic Memor 17 ma podwójną certyfikację IP65 (pyłoszczelny, strumień wody) i IP67 (zanurzenie do 1 m na 30 minut). Wytrzymuje upadki z 1,3 m na beton (1,5 m z gumowym bootem ochronnym) oraz 500 tumble z 0,5 m wg IEC 60068-2-32. Certyfikacja MIL-STD-810H potwierdza odporność na wibracje, szok termiczny i wilgotność. Ekran Gorilla Glass 7 z optical bonding chroni przed zarysowaniami.' },
       { question: 'Datalogic Memor 17 vs Zebra TC27 — który wybrać?', answer: 'Datalogic Memor 17 wygrywa: SafeSwap hot-swap baterii (TC27 wymaga restartu), ładowanie bezprzewodowe Qi 7W (TC27 nie ma), ekran FHD+ z Gorilla Glass 7 (TC27 ma HD+ z GG5), dłuższe wsparcie Android 13→18 (TC27: 14→16), barometr (TC27 nie ma). Zebra TC27 wygrywa: niższa cena (od 2 690 PLN vs 2 991 PLN), wyższa odporność IP68 (vs IP67), upadki z 1,5 m (vs 1,3 m), większy ekosystem akcesoriów Zebra, skaner SE55 z zasięgiem do 7,6 m. Rekomendacja: Memor 17 dla kurierów i serwisantów (Qi, SafeSwap, barometr, GG7). TC27 dla magazynów i firm z infrastrukturą Zebra.' },
-      { question: 'Jakie akcesoria są dostępne do Datalogic Memor 17?', answer: 'Wszystkie akcesoria Memor 12/17 są kompatybilne z oboma modelami. Główne: stacja dokująca z Ethernet (przewodowa 94A150128 lub bezprzewodowa 94A150129), ładowarka 4-slotowa baterii (94ACC0392), bateria zapasowa 4000 mAh z Qi (94ACC0410), obudowa ochronna rubber boot (94ACC0404), uchwyt pistoletowy (94ACC0406), kabura na pasek (94ACC0377), pasek na rękę 5 szt. (94ACC0408), folia ochronna 5 szt. (94ACC0391). Stacja i bateria nie są w zestawie — kupuje się osobno.' },
+      { question: 'Jakie akcesoria są dostępne do Datalogic Memor 17?', answer: 'Wszystkie akcesoria Memor 12/17 są kompatybilne z oboma modelami. Główne: stacja dokująca ze stykami 94A150128 lub bezprzewodowa 94A150129 (obie tylko ładują; 94A150129 wymaga adaptera 94ACC0394), ładowarka 4-slotowa baterii (94ACC0392), bateria zapasowa 4000 mAh z Qi (94ACC0410), obudowa ochronna rubber boot (94ACC0404), uchwyt pistoletowy (94ACC0406), kabura na pasek (94ACC0377), pasek na rękę 5 szt. (94ACC0408), folia ochronna 5 szt. (94ACC0391). Stacja i bateria nie są w zestawie — kupuje się osobno.' },
       { question: 'Czy Datalogic Memor 17 obsługuje płatności NFC?', answer: 'Tak — Datalogic Memor 17 ma NFC Multi-Side z obsługą Apple ECP (Enhanced Contactless Polling) i card emulation. Multi-Side oznacza, że NFC działa z wielu stron urządzenia — nie trzeba precyzyjnie przykładać karty. Terminal może przyjmować płatności zbliżeniowe (z odpowiednim oprogramowaniem POS), skanować tagi NFC i odczytywać karty identyfikacyjne. W trybie card emulation terminal sam działa jak karta zbliżeniowa.' },
       { question: 'Jakie są alternatywy dla Datalogic Memor 17?', answer: 'Alternatywy z 5G/LTE w segmencie 2 500–5 500 PLN netto: [Zebra TC27](/produkt/zebra-tc27) (od 2 690 PLN — tańszy, IP68, ekosystem Zebra, bez Qi i SafeSwap), [Datalogic Memor 12](/produkt/datalogic-memor-12) (od 2 687 PLN — identyczny ale bez 5G, Wi-Fi-only), [Honeywell CT47](/produkt/honeywell-ct47) (od ~5 500 PLN — Snapdragon 778G, 5,5" FHD, IP68). Bez 5G za niższy budżet: [Zebra TC22](/produkt/zebra-tc22) (od 2 417 PLN, Wi-Fi-only, IP68).' },
     ],
@@ -49693,7 +49807,16 @@ Kluczowa przewaga: podwójna certyfikacja IP68 (zanurzenie >30 min), bateria o 1
 
 Warianty: Memor 30 (Wi-Fi 6E) do pracy wewnątrz budynków i Memor 35 (Wi-Fi 6E + 5G/LTE + GPS) do pracy w terenie — identyczna obudowa i ekosystem akcesoriów. Skaner Standard Range (SR) do ~1 m lub Extended Range (ER) do 10 m. NFC 360° Multi-Side do identyfikacji i płatności. Android 13 z gwarancją aktualizacji do Android 18.
 
-Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
+Pełna dokumentacja techniczna na stronie producenta datalogic.com.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Memor 30 trafia do klienta z baterią 4680 mAh. Zasilacza i przewodu USB-C nie ma w pudełku. [Stacja 94A150128](/produkt/datalogic-dock-1slot-memor-12) korzysta z tego samego przewodu i zasilacza. Terminal w [osłonie 94ACC0374](/produkt/datalogic-boot-memor-30) nie wymaga adaptera w stacji.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-30-35-pd-1104.html',
@@ -49840,7 +49963,7 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
       { question: 'Jak daleko skanuje Datalogic Memor 30?', answer: 'Dwa warianty skanera: Standard Range Halogen DE2121-DL (zasięg do ~1 m — codzienna praca przy półce) lub Extended Range Halogen DE2121-ER z DeepSight (zasięg od 5 cm do 10 m — skanowanie kodów na regałach bez drabiny). Oba skanery odczytują 1D i 2D, nawet uszkodzone, słabo wydrukowane lub wyświetlane na ekranie. Green Spot zapewnia wizualne potwierdzenie odczytu.' },
       { question: 'Czy Datalogic Memor 30 jest wodoodporny?', answer: 'Tak — podwójna certyfikacja IP65 (pyłoszczelny, strumień wody) i IP68 (zanurzenie poniżej 1 m na ponad 30 minut). Dodatkowo MIL-STD-810H: odporność na wibracje, szok termiczny, wilgotność. Upadki z 1,8 m na beton (z rubber boot do 2,4 m). Gorilla Glass 5 chroni ekran. Terminal sprawdza się w deszczu, zapylonych halach i mokrych środowiskach chłodniczych (-20°C).' },
       { question: 'Jak długo działa bateria Datalogic Memor 30?', answer: 'Bateria Li-Ion 4680 mAh SafeSwap zapewnia ok. 10-12 godzin intensywnej pracy ze skanowaniem i Wi-Fi. SafeSwap = wymiana baterii bez wyłączania terminala (wewnętrzny bufor podtrzymuje zasilanie ~10 sekund). Trzy metody ładowania: USB-C, stacja dokująca lub bezprzewodowe Qi 7W. Z zapasową baterią terminal pracuje non-stop na dwie zmiany.' },
-      { question: 'Czy Datalogic Memor 30 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Memor 30 ma wbudowane ładowanie bezprzewodowe Qi 7W. Stacja bezprzewodowa Datalogic (94A150129) lub dowolna ładowarka Qi. Eliminuje zużycie portu USB-C i upraszcza zarządzanie flotą — pracownik odkłada terminal na pad bez podłączania kabla. Memor 30 to jeden z niewielu terminali enterprise z Qi charging.' },
+      { question: 'Czy Datalogic Memor 30 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Memor 30 ma wbudowane ładowanie bezprzewodowe Qi 7W. Stacja bezprzewodowa Datalogic (94A150129) z wymaganym adapterem 94ACC0400 lub dowolna ładowarka Qi. Eliminuje zużycie portu USB-C i upraszcza zarządzanie flotą — pracownik odkłada terminal na pad bez podłączania kabla. Memor 30 to jeden z niewielu terminali enterprise z Qi charging.' },
       { question: 'Datalogic Memor 30 vs Zebra TC53 — który wybrać?', answer: 'Datalogic Memor 30 wygrywa: niższa cena (od 4 869 vs 6 418 PLN), ładowanie bezprzewodowe Qi 7W, SafeSwap hot-swap baterii, dłuższe wsparcie Android 13→18 (vs 14→16), dedykowany przycisk PTT. [Zebra TC53](/produkt/zebra-tc53) wygrywa: szybszy procesor QCS6490 (2,7 vs 2,4 GHz), jaśniejszy ekran 600 nit (vs 500 nit), skaner SE55 do 12 m (vs 10 m), opcja baterii 7000 mAh, ekosystem Mobility DNA. Rekomendacja: Memor 30 gdy priorytetem jest cena i Qi. TC53 gdy potrzebujesz najwyższej wydajności i ekosystemu Zebra.' },
       { question: 'Do jakiej wersji Androida można zaktualizować Memor 30?', answer: 'Datalogic Memor 30 pracuje na Android 13 GMS z gwarancją aktualizacji do Android 18 — to 5 generacji systemu, jedne z najdłuższych cykli wsparcia w branży. Comiesięczne patche bezpieczeństwa. Kompatybilność z MDM: SOTI, VMware, Microsoft Intune. Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) zapewnia zdalne zarządzanie flotą.' },
       { question: 'Jakie są alternatywy dla Datalogic Memor 30?', answer: 'Tańsze: [Datalogic Memor 12](/produkt/datalogic-memor-12) (od 2 687 PLN — lżejszy, IP67, skaner SR), [Zebra TC22](/produkt/zebra-tc22) (od 2 417 PLN — IP68, ekosystem Zebra). Podobna klasa: [Zebra TC53](/produkt/zebra-tc53) (od 6 418 PLN — szybszy procesor, SE55 do 12 m), [Datalogic Memor 17](/produkt/datalogic-memor-17) (od 2 991 PLN — z 5G, ale IP67). Wyższa klasa: [Honeywell CK67](/produkt/honeywell-ck67) (od 7 765 PLN — gun z klawiaturą, FlexRange XLR do 24 m). Z 5G: Memor 35 (wariant na tej stronie, od 5 775 PLN).' },
@@ -49865,7 +49988,16 @@ Identyczna obudowa jak Datalogic Memor 30 — IP65/IP68, upadki z 1,8 m na beton
 
 Opcja skanera Extended Range Halogen DE2121-ER z DeepSight — zasięg od 5 cm do 10 m — eliminuje potrzebę drabiny przy skanowaniu kodów na wysokich regałach w magazynach przesyłkowych. NFC 360° Multi-Side do płatności zbliżeniowych i identyfikacji. Android 13 z gwarancją aktualizacji do Android 18 (4+4 lata wsparcia).
 
-Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
+Pełna dokumentacja techniczna na stronie producenta datalogic.com.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+W zestawie Memor 35 jest bateria 4680 mAh z ładowaniem bezprzewodowym. Przewód USB-C i zasilacz nie są dołączone. [Stacja 1-gniazdowa 94A150128](/produkt/datalogic-dock-1slot-memor-12) przyjmuje Memor 35 w [osłonie 94ACC0374](/produkt/datalogic-boot-memor-30). Stacja działa z przewodem i zasilaczem z listy powyżej.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/memor-30-35-pd-1104.html',
@@ -50036,13 +50168,27 @@ Pełna dokumentacja techniczna na stronie producenta datalogic.com.`,
     shortDescription: 'Datalogic Skorpio X5 — kolektor danych z klawiaturą fizyczną, skaner 2D XLR do 20 m, Qi 15W',
     description: `Dla kogo? Datalogic Skorpio X5 to wytrzymały kolektor danych z klawiaturą fizyczną — przeznaczony do magazynów, centrów dystrybucji, hal produkcyjnych i operacji logistycznych, gdzie operatorzy potrzebują ergonomicznego urządzenia z niezawodnym skanowaniem w rękawicach i pełnowymiarową klawiaturą do szybkiego wprowadzania danych. Więcej o wyborze kolektora: [Jak wybrać terminal mobilny? Poradnik 2026](/poradnik/jak-wybrac-terminal-mobilny).
 
-Kluczowa przewaga: największy w klasie ekran 4,3 cala z Gorilla Glass 3, trzy warianty klawiatury (28-klawiszowa numeryczna, 38-klawiszowa funkcyjna, 47-klawiszowa alfanumeryczna) i bezprzewodowe ładowanie Qi 15W — unikalne w segmencie kolektorów danych z klawiaturą. Opcja skanera 2D XLR (Extra Long Range) odczytuje kody z odległości do 20 metrów — do magazynów wysokiego składowania bez drabiny.
+Kluczowa przewaga: największy w klasie ekran 4,3 cala z Gorilla Glass 3 i trzy warianty klawiatury (28-klawiszowa numeryczna, 38-klawiszowa funkcyjna, 47-klawiszowa alfanumeryczna). Wersja 943500050 ładuje się bezprzewodowo (Qi 15W). Pozostałe wersje ładują się przez styki i USB-C. Opcja skanera 2D XLR (Extra Long Range) odczytuje kody z odległości do 20 metrów — do magazynów wysokiego składowania bez drabiny.
 
 Dwie wersje obudowy: Handheld (488 g, bateria 3460 mAh) do kompletacji przy półce i Pistol Grip (600 g, bateria 6080 mAh) z uchwytem spustowym do intensywnego skanowania seryjnego na rampach załadunkowych. Hot-swap baterii umożliwia wymianę bez wyłączania terminala. Kamera tylna 13 MP do dokumentacji fotograficznej i OCR.
 
 Kolektor danych Datalogic Skorpio X5 integruje się z systemami WMS (SAP EWM, Comarch WMS, Microsoft Dynamics 365) oraz platformami e-commerce (BaseLinker, Shoper). Datalogic Mobility Suite (Shield, Scan2Deploy, OEMConfig) umożliwia masowe wdrożenie i zarządzanie flotą kolektorów. System Android 10 GMS z aktualizacją do Android 11 i certyfikatem Android Enterprise Recommended — Datalogic zapewnia regularne patche bezpieczeństwa.
 
-Szukasz kolektora danych do [inwentaryzacji](/poradnik/kolektor-danych-do-inwentaryzacji)? Datalogic Skorpio X5 z Pistol Grip i skanerem XLR 20 m to jedno z najlepszych rozwiązań na rynku. Porównanie z innymi kolektorami — patrz [kategoria terminale mobilne](/terminale-mobilne). Dokumentacja techniczna na stronie producenta datalogic.com.`,
+Szukasz kolektora danych do [inwentaryzacji](/poradnik/kolektor-danych-do-inwentaryzacji)? Datalogic Skorpio X5 z Pistol Grip i skanerem XLR 20 m to jedno z najlepszych rozwiązań na rynku. Porównanie z innymi kolektorami — patrz [kategoria terminale mobilne](/terminale-mobilne). Dokumentacja techniczna na stronie producenta datalogic.com.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla terminala: stacja ładująca (jedna z) — sprzedawane osobno**
+
+- [Stacja 1-gniazdowa ze stykami Datalogic Skorpio X5 (94A150107)](/produkt/datalogic-dock-skorpio-x5-przewodowa)
+- [Stacja 1-gniazdowa bezprzewodowa Datalogic Skorpio X5 (94A150106)](/produkt/datalogic-dock-skorpio-x5-bezprzewodowa)
+
+**Wymagane dla stacji — sprzedawane osobno**
+
+- [Zasilacz do stacji Datalogic (91ACC0048)](/produkt/datalogic-zasilacz-skorpio-x5)
+- [Przewód zasilający Datalogic z wtyczką europejską (95A051041)](/produkt/datalogic-przewod-zasilajacy-eu-95a051041)
+
+Skorpio X5 Handheld ma w zestawie baterię standardową 3460 mAh i pasek na rękę. Wersja Pistol Grip ma baterię rozszerzoną 6080 mAh i smycz. Zasilacz USB-C do gniazdka nie wchodzi w skład zestawu. Stacja 94A150107 ładuje wersje ze stykami. Wersja 943500050 nie ma styków i ładuje się w stacji 94A150106. [Przewód 94ACC0327](/produkt/datalogic-kabel-usb-c-skorpio-x5) ładuje X5 z portu USB komputera.`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-mobilne'],
     sameAs: 'https://www.datalogic.com/eng/retail-manufacturing-transportation-logistics-healthcare-gs1-digital-link/mobile-computers/skorpio-x5-pd-887.html',
@@ -50232,8 +50378,8 @@ Szukasz kolektora danych do [inwentaryzacji](/poradnik/kolektor-danych-do-inwent
       { question: 'Ile kosztuje Datalogic Skorpio X5?', answer: 'Datalogic Skorpio X5 kosztuje od 4 858 PLN netto w konfiguracji Handheld z czytnikiem 1D i klawiaturą 28-klawiszową (PN: 943500001). Wersja Pistol Grip z czytnikiem 2D SR od 5 538 PLN, a z czytnikiem 2D XLR (zasięg do 20 m) od 6 411 PLN netto. TCO na 5 lat z dock\'iem, rubber bootem, zapasową baterią i zasilaczem: ok. 6 500–8 200 PLN, czyli ~108–137 PLN/miesiąc na terminal.' },
       { question: 'Jaki jest maksymalny zasięg skanera Datalogic Skorpio X5?', answer: 'Datalogic Skorpio X5 jest dostępny z trzema typami skanerów: 1D Linear Imager (zasięg do ~50 cm, tylko kody 1D), 2D SR Standard Range (zasięg do 70 cm, kody 1D i 2D) oraz 2D XLR Extra Long Range (zasięg do 20 m dla kodu 100 mil i do 10 m dla 40 mil). Skaner XLR eliminuje potrzebę drabiny i wózka widłowego — operator skanuje kody z poziomu podłogi na regałach do 6. poziomu.' },
       { question: 'Czym różni się Skorpio X5 Handheld od Pistol Grip?', answer: 'Handheld — kompaktowa forma do noszenia w ręce lub na pasku, bateria standardowa 3 460 mAh (~8h pracy), waga 488 g. Pistol Grip — uchwyt pistoletowy ze spustem do szybkiego skanowania seryjnego na rampach i w sortowniach, bateria rozszerzona 6 080 mAh (~14h pracy), waga ~600 g. Oba warianty mają identyczny ekran, procesor, Wi-Fi i łączność. Wybór zależy od intensywności skanowania: Handheld do kompletacji przy półce, Pistol Grip do intensywnych operacji logistycznych.' },
-      { question: 'Czy Datalogic Skorpio X5 ma ładowanie bezprzewodowe?', answer: 'Tak — Datalogic Skorpio X5 to jeden z nielicznych terminali z klawiaturą obsługujący ładowanie bezprzewodowe Qi o mocy 15W. Wystarczy położyć terminal na bezprzewodowej stacji dokującej Datalogic (94A150106) lub dowolnej ładowarce Qi. Moc 15W to ponad 2× więcej niż w [Datalogic Memor 30](/produkt/datalogic-memor-30) (7W Qi), co przekłada się na szybsze ładowanie.' },
-      { question: 'Jak długo działa bateria Datalogic Skorpio X5?', answer: 'Bateria standardowa 3 460 mAh (Handheld) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem i Wi-Fi. Bateria rozszerzona 6 080 mAh (Pistol Grip) — ok. 14 godzin, co wystarcza na dwie pełne zmiany. Obie baterie obsługują hot-swap — wymiana bez wyłączania terminala. Trzy metody ładowania: Qi 15W (bezprzewodowe), stacja dokująca (pogo-pin) lub USB Type-C.' },
+      { question: 'Czy Datalogic Skorpio X5 ma ładowanie bezprzewodowe?', answer: 'Tylko wersja 943500050. Ta wersja ładuje się bezprzewodowo (Qi 15W) w stacji Datalogic 94A150106 lub w ładowarce Qi. Pozostałe wersje ładują się przez styki w stacji 94A150107 i przez USB-C. Moc 15W to ponad 2× więcej niż w [Datalogic Memor 30](/produkt/datalogic-memor-30) (7W Qi), co przekłada się na szybsze ładowanie.' },
+      { question: 'Jak długo działa bateria Datalogic Skorpio X5?', answer: 'Bateria standardowa 3 460 mAh (Handheld) zapewnia ok. 8 godzin intensywnej pracy ze skanowaniem i Wi-Fi. Bateria rozszerzona 6 080 mAh (Pistol Grip) — ok. 14 godzin, co wystarcza na dwie pełne zmiany. Obie baterie obsługują hot-swap — wymiana bez wyłączania terminala. Wersja 943500050 ładuje się bezprzewodowo (Qi 15W). Pozostałe wersje ładują się w stacji ze stykami (pogo-pin) lub przez USB Type-C.' },
       { question: 'Czy Datalogic Skorpio X5 działa w mroźni?', answer: 'Tak — Datalogic Skorpio X5 pracuje w temperaturach od -20°C do +50°C. Klawiatura fizyczna umożliwia obsługę w grubych rękawicach roboczych — nie trzeba zdejmować rękawic do wprowadzania danych jak w przypadku terminali dotykowych. Ekran 4,3" z Gorilla Glass 3 obsługuje dotyk palcem i w rękawicach. IP65 chroni przed pyłem i strumieniami wody.' },
       { question: 'Jakie klawiatury są dostępne w Datalogic Skorpio X5?', answer: 'Trzy warianty klawiatury: 28-klawiszowa numeryczna — szybkie wprowadzanie ilości i numerów lokalizacji (magazyn, inwentaryzacja). 38-klawiszowa funkcyjna — klawisze funkcyjne F1-F10 i kalkulator, idealna dla WMS z wieloma skrótami. 47-klawiszowa alfanumeryczna — pełny alfabet, numery seryjne, kody produktów, adresy — do logistyki i serwisu terenowego. Podświetlenie klawiszy do pracy w słabym oświetleniu.' },
       { question: 'Ile waży Datalogic Skorpio X5?', answer: 'Wersja Handheld: 488 g z baterią standardową 3 460 mAh. Wersja Pistol Grip: ok. 600 g z baterią rozszerzoną 6 080 mAh. Dla porównania: [Zebra MC3300x](/produkt/zebra-mc3300x) waży 490–645 g (zbliżona klasa), a [Datalogic Memor 30](/produkt/datalogic-memor-30) (bez klawiatury) 314 g.' },
@@ -50241,7 +50387,7 @@ Szukasz kolektora danych do [inwentaryzacji](/poradnik/kolektor-danych-do-inwent
       { question: 'Jakie są alternatywy dla Datalogic Skorpio X5?', answer: 'Z klawiaturą: [Zebra MC3300x](/produkt/zebra-mc3300x) (od 5 779 PLN — Mobility DNA, obrotowa głowica, SE4850 21 m). Bez klawiatury (dotykowe): [Datalogic Memor 30](/produkt/datalogic-memor-30) (od 4 869 PLN — IP68, Halogen ER 10 m, lżejszy 314 g), [Zebra TC53](/produkt/zebra-tc53) (od 6 418 PLN — SE55 12 m, 600 nit, QCS6490). Wyższa klasa z klawiaturą: Zebra MC9400 (ultra-rugged, skaner do 30,5 m, 7 klawiatur, od ~11 000 PLN).' },
       { question: 'Czy Datalogic Skorpio X5 to dobry kolektor danych do magazynu?', answer: 'Tak — Datalogic Skorpio X5 to kolektor danych zaprojektowany do intensywnej pracy magazynowej. Skaner 2D XLR odczytuje kody z odległości do 20 m (6. poziom regałów bez drabiny), klawiatura fizyczna pozwala na pracę w rękawicach ochronnych, a IP65 chroni przed pyłem i strumieniami wody. Wersja Pistol Grip z baterią 6 080 mAh zapewnia 14h pracy na jednej zmianie. Bezprzewodowe ładowanie Qi 15W skraca przerwy między zmianami. Więcej: [Kolektor danych do inwentaryzacji — poradnik](/poradnik/kolektor-danych-do-inwentaryzacji).' },
       { question: 'Jak kolektor Datalogic Skorpio X5 integruje się z WMS?', answer: 'Kolektor Datalogic Skorpio X5 pracuje pod Android 10 GMS z certyfikatem Android Enterprise Recommended. Integracja z WMS: natywne aplikacje Android, Datalogic Enterprise Browser (HTML5) lub emulatory terminali. Kompatybilny z: SAP EWM, Comarch WMS, Microsoft Dynamics 365, Simple WMS, SoftwareStudio. Datalogic Scan2Deploy umożliwia masową konfigurację kolektorów — jedno skanowanie kodu QR i terminal jest gotowy do pracy. [TAKMA](/kontakt) pomaga w konfiguracji i wdrożeniu.' },
-      { question: 'Jaki jest TCO kolektora danych Datalogic Skorpio X5 na 5 lat?', answer: 'TCO kolektora danych Datalogic Skorpio X5 na 5 lat: terminal od 4 858 PLN + dock bezprzewodowy Qi ~980 PLN + zapasowa bateria ~350 PLN + rubber boot ~180 PLN + zasilacz ~120 PLN = łącznie ok. 6 500–8 200 PLN w zależności od konfiguracji. To ~108–137 PLN/miesiąc na stanowisko — jeden z najtańszych kolektorów danych z XLR 20 m na rynku. Dla porównania: [Zebra MC3300x](/produkt/zebra-mc3300x) od 5 779 PLN + akcesoria = TCO ~8 500–10 500 PLN/5 lat.' },
+      { question: 'Jaki jest TCO kolektora danych Datalogic Skorpio X5 na 5 lat?', answer: 'TCO kolektora danych Datalogic Skorpio X5 na 5 lat obejmuje terminal, stację dokującą, zapasową baterię, osłonę gumową (rubber boot) i zasilacz. Wersja 943500001 ładuje się w stacji ze stykami 94A150107. Stację bezprzewodową 94A150106 obsługuje tylko wersja 943500050. Dla porównania: [Zebra MC3300x](/produkt/zebra-mc3300x) z akcesoriami ma wyższy TCO w tym samym okresie.' },
     ],
     downloads: [
       { name: 'Karta katalogowa Skorpio X5 (EN)', type: 'datasheet', url: 'https://www.datalogic.com/upload/catalog/ds-SkorpioX5-EN.pdf', size: 'Online' },
@@ -50751,9 +50897,9 @@ const datalogicSkorpioAccessories: Product[] = [
   {
     id: 'datalogic-dock-skorpio-wireless-94A150106',
     slug: 'datalogic-dock-skorpio-x5-bezprzewodowa',
-    name: 'Datalogic Stacja dokująca bezprzewodowa 1-slotowa Skorpio X5',
-    shortDescription: 'Datalogic 94A150106 — stacja dokująca 1-slotowa z ładowaniem bezprzewodowym Qi do Skorpio X5',
-    description: 'Stacja dokująca 1-slotowa z ładowaniem bezprzewodowym Qi do terminali Datalogic Skorpio X5. Ładowanie Qi 15W bez kontaktu — wystarczy położyć terminal na stacji. Kompaktowa konstrukcja do stanowiska pracy. Wymaga zasilacza 91ACC0048 (sprzedawany osobno).',
+    name: 'Stacja 1-gniazdowa bezprzewodowa Datalogic Skorpio X5',
+    shortDescription: 'Datalogic 94A150106 — stacja 1-gniazdowa z ładowaniem bezprzewodowym Qi do wersji Skorpio X5, Skorpio X40, Falcon X60 i Falcon X65 bez styków',
+    description: 'Stacja 1-gniazdowa z ładowaniem bezprzewodowym Qi 15W. Ładuje tylko wersje terminali bez styków: Skorpio X5 943500050, Skorpio X40 946400011, Falcon X60 946600010–946600014 i Falcon X65 946650006. Wersje ze stykami ładują stacje stykowe. Kompaktowa konstrukcja do stanowiska pracy. Wymaga zasilacza 91ACC0048 i przewodu sieciowego 95A051041, sprzedawanych osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
     manufacturerId: 'datalogic',
@@ -50767,8 +50913,8 @@ const datalogicSkorpioAccessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Typ', value: 'Stacja dokująca 1-slotowa z ładowaniem bezprzewodowym Qi' },
-      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5 (Handheld i Pistol Grip)' },
-      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 (osobno)' },
+      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5 943500050, Skorpio X40 946400011, Falcon X60 946600010–946600014, Falcon X65 946650006 (wersje z ładowaniem bezprzewodowym)' },
+      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 i przewód sieciowy 95A051041 (osobno)' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -50778,9 +50924,9 @@ const datalogicSkorpioAccessories: Product[] = [
   {
     id: 'datalogic-dock-skorpio-wired-94A150107',
     slug: 'datalogic-dock-skorpio-x5-przewodowa',
-    name: 'Datalogic Stacja dokująca przewodowa 1-slotowa Skorpio X5',
+    name: 'Stacja 1-gniazdowa ze stykami Datalogic Skorpio X5',
     shortDescription: 'Datalogic 94A150107 — stacja dokująca 1-slotowa z ładowaniem pogo-pin do Skorpio X5',
-    description: 'Stacja dokująca 1-slotowa z ładowaniem przewodowym pogo-pin do terminali Datalogic Skorpio X5. Stabilne połączenie elektryczne zapewnia niezawodne ładowanie. Kompaktowa konstrukcja do stanowiska pracy. Wymaga zasilacza 91ACC0048 (sprzedawany osobno).',
+    description: 'Stacja 1-gniazdowa ze stykami pogo-pin do wersji Datalogic Skorpio X5 ze stykami. Stabilne połączenie elektryczne zapewnia niezawodne ładowanie. Kompaktowa konstrukcja do stanowiska pracy. Zasilacz 91ACC0048 i przewód sieciowy 95A051041 są sprzedawane osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
     manufacturerId: 'datalogic',
@@ -50794,8 +50940,8 @@ const datalogicSkorpioAccessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Typ', value: 'Stacja dokująca 1-slotowa z ładowaniem przewodowym (pogo-pin)' },
-      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5 (Handheld i Pistol Grip)' },
-      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 (osobno)' },
+      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5 ze stykami (Handheld i Pistol Grip)' },
+      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 i przewód sieciowy 95A051041 (osobno)' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -50805,9 +50951,9 @@ const datalogicSkorpioAccessories: Product[] = [
   {
     id: 'datalogic-dock-skorpio-3slot-94A150110',
     slug: 'datalogic-dock-skorpio-x5-3slot-ethernet',
-    name: 'Datalogic Stacja dokująca 3-slotowa Ethernet Skorpio X5',
-    shortDescription: 'Datalogic 94A150110 — stacja dokująca 3-slotowa z Ethernet do Skorpio X5',
-    description: 'Stacja dokująca 3-slotowa z portem Ethernet do terminali Datalogic Skorpio X5. Umożliwia jednoczesne ładowanie 3 terminali z dostępem do sieci LAN. Idealna do stanowisk wymiany zmianowej — pracownicy odkładają terminale i odbierają naładowane. Wymaga zasilacza 91ACC0048 (sprzedawany osobno).',
+    name: 'Stacja 3-gniazdowa ze stykami i Ethernetem Datalogic',
+    shortDescription: 'Datalogic 94A150110 — stacja 3-gniazdowa ze stykami i portem Ethernet do Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60 i Falcon X65',
+    description: 'Stacja 3-gniazdowa z portem Ethernet do wersji ze stykami terminali Datalogic Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60 i Falcon X65. Umożliwia jednoczesne ładowanie 3 terminali z dostępem do sieci LAN. Stację zasila zasilacz 91ACC0048 z przewodem sieciowym 95A051041. Oba elementy są sprzedawane osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
     manufacturerId: 'datalogic',
@@ -50822,8 +50968,8 @@ const datalogicSkorpioAccessories: Product[] = [
     specifications: [
       { name: 'Typ', value: 'Stacja dokująca 3-slotowa z Ethernet' },
       { name: 'Porty', value: 'Ethernet RJ-45' },
-      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5 (Handheld i Pistol Grip)' },
-      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 (osobno)' },
+      { name: 'Kompatybilność', value: 'Datalogic Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60, Falcon X65 (wersje ze stykami)' },
+      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 i przewód sieciowy 95A051041 (osobno)' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -50903,8 +51049,8 @@ const datalogicSkorpioAccessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Typ', value: 'Ładowarka 4-slotowa (tylko baterie)' },
-      { name: 'Kompatybilność', value: 'Baterie 91ACC0092 (3460 mAh) i 91ACC0093 (6080 mAh)' },
-      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 (osobno)' },
+      { name: 'Kompatybilność', value: 'Baterie 91ACC0092 (3460 mAh) i 91ACC0093 (6080 mAh); baterie Datalogic Skorpio X40, Skorpio X45, Falcon X60, Falcon X65' },
+      { name: 'Wymagane akcesoria', value: 'Zasilacz 91ACC0048 i przewód sieciowy 95A051041 (osobno)' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -50914,9 +51060,9 @@ const datalogicSkorpioAccessories: Product[] = [
   {
     id: 'datalogic-psu-skorpio-91ACC0048',
     slug: 'datalogic-zasilacz-skorpio-x5',
-    name: 'Datalogic Zasilacz do stacji dokujących Skorpio X5',
-    shortDescription: 'Datalogic 91ACC0048 — zasilacz AC/DC do stacji dokujących i ładowarek Skorpio X5',
-    description: 'Oryginalny zasilacz Datalogic do stacji dokujących i ładowarek baterii Skorpio X5. Wymagany do obsługi stacji 1-slotowej (94A150106/107), 3-slotowej (94A150110) i ładowarki 4-slotowej (94ACC0274). Kabel zasilający w zestawie.',
+    name: 'Zasilacz do stacji Datalogic',
+    shortDescription: 'Datalogic 91ACC0048 — zasilacz AC/DC do stacji i ładowarki baterii Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60 i Falcon X65',
+    description: 'Oryginalny zasilacz Datalogic do stacji dokujących i ładowarek baterii Skorpio X5. Wymagany do obsługi stacji 1-slotowej (94A150106/107), 3-slotowej (94A150110) i ładowarki 4-slotowej (94ACC0274). Stacja 3-gniazdowa 94A150110 i ładowarka 94ACC0274 obsługują też Skorpio X40, Skorpio X45, Falcon X60 i Falcon X65. Stacja bezprzewodowa 94A150106 ładuje wersje tych terminali bez styków. Przewód sieciowy 95A051041 jest sprzedawany osobno.',
     categoryId: 'akcesoria',
     subcategoryIds: ['kable-zasilacze-terminali', 'akcesoria-do-terminali'],
     manufacturerId: 'datalogic',
@@ -50930,7 +51076,7 @@ const datalogicSkorpioAccessories: Product[] = [
     isBestseller: false,
     specifications: [
       { name: 'Typ', value: 'Zasilacz AC/DC' },
-      { name: 'Kompatybilność', value: 'Stacje 94A150106, 94A150107, 94A150110, ładowarka 94ACC0274' },
+      { name: 'Kompatybilność', value: 'Stacje 94A150106 (wersje bez styków: Skorpio X5, Skorpio X40, Falcon X60, Falcon X65), 94A150107 (Skorpio X5), 94A150110 (Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60, Falcon X65), ładowarka 94ACC0274' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -50992,7 +51138,7 @@ const datalogicSkorpioAccessories: Product[] = [
   {
     id: 'datalogic-cable-usbc-skorpio-94ACC0327',
     slug: 'datalogic-kabel-usb-c-skorpio-x5',
-    name: 'Datalogic Kabel USB-A do USB-C 1,2 m do Memor 12/17 i Skorpio X5',
+    name: 'Kabel USB-A – USB-C Datalogic 1,2 m',
     shortDescription: 'Datalogic 94ACC0327 — kabel USB-A do USB-C o długości 1,2 m do terminali Memor 12/17 (także HC) i Skorpio X5',
     description: 'Kabel Datalogic 94ACC0327 ma wtyki USB-A i USB-C oraz długość 1,2 m. Z zasilaczem USB 94ACC0383 ładuje terminal Datalogic Memor 12 lub Memor 17, także w wersji HC, z gniazda sieciowego. W ten sam sposób łączy zasilacz 94ACC0383 z jednogniazdowymi stacjami 94A150128 i 94A150129 oraz z białą stacją HC 94A150126. Terminal Datalogic Skorpio X5 można tym kablem ładować z portu USB komputera i podłączyć do komputera w celu przesyłania danych.',
     categoryId: 'akcesoria',
@@ -51009,7 +51155,7 @@ const datalogicSkorpioAccessories: Product[] = [
     specifications: [
       { name: 'Typ', value: 'Kabel USB-A do USB-C' },
       { name: 'Długość', value: '1,2 m' },
-      { name: 'Kompatybilność', value: 'Datalogic Memor 12/17 (także HC) i Skorpio X5; z zasilaczem 94ACC0383: stacje Memor 12/17 94A150128 i 94A150129, stacja Memor 12 HC / 17 HC 94A150126' },
+      { name: 'Kompatybilność', value: 'Datalogic Memor 12/17 (także HC), Memor 30/35, Skorpio X5, Skorpio X40, Skorpio X45, Falcon X60 i Falcon X65; z zasilaczem 94ACC0383: stacje Memor 12/17 94A150128 i 94A150129, stacja Memor 12 HC / 17 HC 94A150126' },
     ],
     applications: [],
     compatibleAccessories: [],
@@ -56653,7 +56799,7 @@ const tc22Tc27AdditionalAccessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (przewód CBL-TC5X-USBC2A-01) | Zebra WT6400 (przewód CBL-NGWT-USBCHG-01)"
+      "value": "Zebra TC22, TC27 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (przewód CBL-TC5X-USBC2A-01) | Zebra WT6400 (przewód CBL-NGWT-USBCHG-01) | Zebra MC3300x (przewód CBL-MC33-USBCHG-01) | Zebra MC2200 / MC2700 (przewód CBL-TC5X-USBC2A-01) | Zebra HC20 / HC25 / HC50 / HC55 (przewód CBL-TC5X-USBC2A-01) | Zebra MC3330xR / MC3390xR (przewód CBL-MC33-USBCHG-01) | Zebra WS501-R (przewód CBL-WS5X-USBA-01) | Zebra RFD40, RFD9030, RFD9090 (przewód USB-C) | Zebra TC22R, TC53e-RFID (przewód CBL-TC5X-USBC2A-01)"
     }
   ],
   "applications": [
@@ -58132,7 +58278,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra MP7200 (z przewodem CBL-DC-388A1-01) | Zebra SP7208-H — port AUX (z przewodem CBL-DC-376A1-01) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01"
+      "value": "Zebra TC22, TC27, TC201, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra MP7200 (z przewodem CBL-DC-388A1-01) | Zebra SP7208-H — port AUX (z przewodem CBL-DC-376A1-01) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01 | Zebra RFD40, RFD9030, RFD9090 przez stację lub nakładkę USB CBL-RFD49-USB1-01"
     },
     {
       "name": "Moc",
@@ -58252,7 +58398,7 @@ const tc22Accessories: Product[] = [
   {
   "id": "zebra-cable-dc-388",
   "slug": "zebra-kabel-zasilajacy-388",
-  "name": "Przewód DC Zebra CBL-DC-388A1-01",
+  "name": "Przewód DC Zebra",
   "shortDescription": "Przewód łączy zasilacz PWR-BGA12V50W0WW ze zgodną stacją jednogniazdową lub ładowarką baterii TC22 i TC27. Pasuje także do zgodnej ładowarki baterii Zebra ET65.",
   "description": "CBL-DC-388A1-01 to przewód DC do [zasilacza Zebra 50 W PWR-BGA12V50W0WW](/produkt/zebra-zasilacz-50w). Służy do jednogniazdowych stacji i ładowarek baterii terminali Zebra. Przy kasie bez portu USB Power Plus łączy ten sam zasilacz ze skanerem ladowym [Zebra MP7200](/produkt/zebra-mp7200).\n\n## Stacje i ładowarki TC22, MC3400, MC9400, TC53 i ET65 na przewód 388A1\n\nPrzewód zasila [stację TC22 / TC27 na terminal i baterię](/produkt/zebra-stacja-ladowania-1terminal-1bateria-tc22-tc27), [stację USB / Ethernet TC22 / TC27](/produkt/zebra-stacja-dokujaca-ethernet-tc22-tc27) i [ładowarkę 4 baterii TC22 / TC27](/produkt/zebra-ladowarka-4-akumulatory-tc22-tc27). Zasila też [stację USB MC3400 / MC3450](/produkt/zebra-mc33-cradle-1slot), [ładowarkę 4 baterii MC3400 / MC3450](/produkt/zebra-mc33-battery-charger-4slot) i [ładowarkę 8 baterii zestawu HS3100](/produkt/zebra-mc3400-sac-hs3100-b8-01). Dla MC9400 / MC9450 przewód pasuje do [stacji USB](/produkt/zebra-stacja-1slot-usb-mc9400-mc9450) i [ładowarki 4 baterii](/produkt/zebra-ladowarka-baterii-4slot-mc9400-mc9450). Ten sam przewód zasila [ładowarkę 4 baterii TC53 / TC58 / TC73 / TC78](/produkt/zebra-tc53-sac-ngtc5tc7-4schg), [ładowarkę 2 baterii ET65](/produkt/zebra-charger-et6x-2slot) oraz zgodne stacje i ładowarki MC3300x. Zasila też stacje 4-gniazdowe skanerów [RS5100](/produkt/zebra-rs5100-crd-rs51-4schg-01) i [RS6100](/produkt/zebra-rs6100-crd-rs61-4schg-01) oraz [ładowarkę 8 baterii RS5100 / RS6100](/produkt/zebra-rs6100-sac-rs51-8schg-01). Łączy też zasilacz 50 W ze [stacją 1-gniazdową](/produkt/zebra-wt-crd-wt5x6-1s1bc-01) i [ładowarką 4 baterii](/produkt/zebra-wt-sac-wt5x6-4sc-01) terminali naramiennych WT5400 / WT6400. Stacje Workstation Connect wymagają innego przewodu: [CBL-DC-388A2-01](/produkt/zebra-et6x-cbl-dc-388a2-01). Przewód nie zastępuje przewodu DC do stacji zasilanych zasilaczem 108 W.",
   "categoryId": "akcesoria",
@@ -58281,7 +58427,7 @@ const tc22Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra MC3300x, TC73, TC78 przez zgodne stacje lub ładowarki | Zebra MP7200 (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01"
+      "value": "Zebra TC22, TC27, ET65 (zgodne stacje lub ładowarki) | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra MC3300x, TC73, TC78 przez zgodne stacje lub ładowarki | Zebra MP7200 (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 | Zebra WT5400 / WT6400 przez stację CRD-WT5X6-1S1BC-01 lub ładowarkę baterii SAC-WT5X6-4SC-01 | Zebra RFD40, RFD9030, RFD9090 przez stację lub nakładkę USB CBL-RFD49-USB1-01"
     },
     {
       "name": "Typ",
@@ -58304,7 +58450,7 @@ const tc22Accessories: Product[] = [
   "createdAt": "2026-02-15",
   "seoTitle": "Przewód DC Zebra do zasilacza 50 W | CBL-DC-388A1-01",
   "seoDescription": "Przewód DC Zebra CBL-DC-388A1-01 łączy zasilacz 50 W z jednogniazdową stacją lub ładowarką baterii TC22, MC3400, MC9400, ET65 i ze skanerem MP7200.",
-  "seoH1": "Przewód DC Zebra CBL-DC-388A1-01",
+  "seoH1": "Przewód DC Zebra",
   "updatedAt": "2026-10-24",
   "faq": [
     {
@@ -76005,7 +76151,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 i zasilacz PWR-BGA12V108W0WW | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 (zasilacz 50 W) lub CRD-RS51-20SCHG-01 (zasilacz 108 W) | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 (zasilacz 50 W) lub CRD-RS61-20SCHG-01 (zasilacz 108 W) | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 (zasilacz 50 W) lub SAC-RS51-40SCHG-01 (zasilacz 108 W) | Zebra WT5400 / WT6400 przez stacje i ładowarki baterii (zasilacz 50 W lub 108 W)"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra TC501 | Zebra TC701 | Zebra MP7200, SP7208-H (z zasilaczem PWR-BGA12V50W0WW) | Zebra RS2100 przez stację CRD-RS2X-20SCHG-01 i zasilacz PWR-BGA12V108W0WW | Zebra RS5100 przez stację CRD-RS51-4SCHG-01 (zasilacz 50 W) lub CRD-RS51-20SCHG-01 (zasilacz 108 W) | Zebra RS6100 przez stację CRD-RS61-4SCHG-01 (zasilacz 50 W) lub CRD-RS61-20SCHG-01 (zasilacz 108 W) | Zebra RS5100 / RS6100 przez ładowarkę baterii SAC-RS51-8SCHG-01 (zasilacz 50 W) lub SAC-RS51-40SCHG-01 (zasilacz 108 W) | Zebra WT5400 / WT6400 przez stacje i ładowarki baterii (zasilacz 50 W lub 108 W) | Zebra RFD40, RFD9030, RFD9090 (z zasilaczem PWR-BGA12V50W0WW)"
     }
   ],
   "applications": [
@@ -76121,7 +76267,7 @@ const tc201Accessories: Product[] = [
     },
     {
       "name": "Kompatybilność",
-      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (złącze USB-C)"
+      "value": "Zebra TC22, TC27, TC201 | Zebra MC3400, MC3450 | Zebra MC9400, MC9450 przez zgodną konfigurację | Zebra TC53 / TC58 / TC53e / TC58e | Zebra TC73 / TC78 | Zebra RS2100 przez stację CRD-RS2X-2SCHG-01 | Zebra RS5100 / RS6100 przez stację CRD-RS5X6-2SCHG-01 | Zebra WT5400 (złącze USB-C) | Zebra MC2200 / MC2700 | Zebra HC20 / HC25 / HC50 / HC55 | Zebra TC22R, TC53e-RFID | Zebra RFD40"
     }
   ],
   "applications": [
@@ -79306,7 +79452,14 @@ Ekran 4" IPS WVGA (480×800) ze szkłem Gorilla Glass 3 obsługuje dotyk w ręka
 
 N7 Cachalot Pro II dostępny jest z Androidem 11 lub 13 — oba z certyfikatem Google Android Enterprise Recommended (AER), gwarantującym aktualizacje bezpieczeństwa i kompatybilność z systemami MDM. Bezpłatny system Ndevor firmy Newland umożliwia zdalne zarządzanie flotą urządzeń. Wszystkie warianty wyposażone są w 4 GB RAM, 64 GB Flash, Wi-Fi ac, Bluetooth 5.0, 4G LTE, NFC i GPS.
 
-Koszt posiadania (TCO): Android 11 lub 13 z aktualizacjami bezpieczeństwa w ramach platformy AER. Bateria 5 100 mAh wymienialna przez użytkownika — brak kosztów serwisu przy wymianie ogniwa. Bezpłatny MDM Ndevor eliminuje koszt licencji na zarządzanie flotą. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.`,
+Koszt posiadania (TCO): Android 11 lub 13 z aktualizacjami bezpieczeństwa w ramach platformy AER. Bateria 5 100 mAh wymienialna przez użytkownika — brak kosztów serwisu przy wymianie ogniwa. Bezpłatny MDM Ndevor eliminuje koszt licencji na zarządzanie flotą. Szczegółowe informacje techniczne, instrukcje obsługi oraz narzędzia deweloperskie dostępne są w oficjalnej dokumentacji Newland AIDC na stronie newland-id.com.
+
+## Co jest potrzebne do użycia?
+
+Każdy wariant N7 Cachalot Pro II ma w pudełku baterię, przewód USB i zasilacz z wymiennymi wtykami. Pasek na dłoń i folia na ekran też są w zestawie.
+
+Opcjonalna [stacja dokująca CDN7-C](/produkt/newland-cdn7-c) ładuje terminal na biurku. [Ładowarka CDN7-4B](/produkt/newland-cdn7-4b) ładuje cztery baterie poza terminalem.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'newland',
     priceFrom: 3346,
@@ -79493,7 +79646,14 @@ Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich k
 
 Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria 5 000 mAh wymienialna przez użytkownika bez narzędzi — brak przestojów przy wymianie. Bezpłatny MDM Ndevor eliminuje koszt licencji na zarządzanie flotą. Gwarancja 2 lata z opcją przedłużenia do 5 lat (Comprehensive Service).
 
-W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US) — kompletny zestaw do natychmiastowego uruchomienia. Opcjonalne akcesoria: dodatkowa bateria, adapter AC, pasek na rękę, etui ochronne wzmocnione, folia hartowana, stacja dokująca z ładowaniem, stacja ładowania 4 baterii. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor (zdalna konfiguracja, instalacja aplikacji, śledzenie GPS, czyszczenie danych). Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service).`,
+W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US) — kompletny zestaw do natychmiastowego uruchomienia. Opcjonalne akcesoria: dodatkowa bateria, adapter AC, pasek na rękę, etui ochronne wzmocnione, folia hartowana, stacja dokująca z ładowaniem, stacja ładowania 4 baterii. Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor (zdalna konfiguracja, instalacja aplikacji, śledzenie GPS, czyszczenie danych). Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service).
+
+## Co jest potrzebne do użycia?
+
+W pudełku NLS-MT9300-W4-AS są bateria, przewód USB-C i zasilacz z kompletem wymiennych wtyczek. Do zestawu należą też etui, folia na ekran i pasek na dłoń.
+
+[Stacja NLS-MCD9350-01](/produkt/newland-mcd9350-01) jest akcesorium opcjonalnym. Zasilacz ADP710 albo AD60-D-M do tej stacji jest sprzedawany osobno.
+`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
@@ -79536,7 +79696,7 @@ W zestawie: terminal MT93, bateria 5 000 mAh, etui ochronne, folia na ekran, pas
       { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
       { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
       { name: 'MDM', value: 'Newland Ndevor (bezpłatny)' },
-      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, zasilacz z wymiennymi wtykami, bateria' },
     ],
     applications: ['Inwentaryzacja w terenie z 4G LTE', 'Dostawy i logistyka miejska', 'Serwis polowy i instalacje', 'Kompletacja zamówień w magazynie', 'Identyfikacja NFC i kontrola dostępu', 'Retail — obsługa klienta na hali sprzedaży'],
     priceFrom: 2295,
@@ -79587,7 +79747,14 @@ Obudowa IP65 — pełna ochrona przed pyłem i strumieniami wody ze wszystkich k
 
 W zestawie: terminal, bateria 5 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat. Wersja z IP67, Android Enterprise Recommended i 6 GB RAM: Newland MT93 Megattera Pro.
 
-Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria 5 000 mAh wymienialna przez użytkownika bez narzędzi. Wi-Fi 6E zwiększa przepustowość i redukuje zrywanie połączeń w gęstych sieciach — niższe koszty operacyjne WMS. Bezpłatny MDM Ndevor eliminuje koszt licencji.`,
+Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria 5 000 mAh wymienialna przez użytkownika bez narzędzi. Wi-Fi 6E zwiększa przepustowość i redukuje zrywanie połączeń w gęstych sieciach — niższe koszty operacyjne WMS. Bezpłatny MDM Ndevor eliminuje koszt licencji.
+
+## Co jest potrzebne do użycia?
+
+Zestaw NLS-MT9300-W4-SS zawiera baterię, przewód USB-C i zasilacz z wymiennymi wtykami. Terminal ma też w opakowaniu etui, pasek na dłoń i folię ochronną.
+
+Ładowanie na biurku zapewnia opcjonalna [stacja NLS-MCD9350-01](/produkt/newland-mcd9350-01). Ta stacja wymaga osobnego zasilacza.
+`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
@@ -79629,7 +79796,7 @@ Koszt posiadania (TCO): Android 13 GMS z aktualizacjami bezpieczeństwa. Bateria
       { name: 'ESD', value: '±15 kV (powietrze), ±8 kV (kontakt)' },
       { name: 'Temperatura przechowywania', value: '-40°C do +70°C' },
       { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
-      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, zasilacz z wymiennymi wtykami, bateria' },
     ],
     applications: ['Magazyn z infrastrukturą Wi-Fi 6E', 'Centrum logistyczne z gęstą siecią WLAN', 'Dostawy i logistyka miejska z 4G LTE', 'Inwentaryzacja w terenie', 'Hala produkcyjna z setkami urządzeń w sieci', 'Retail — obsługa klienta na hali sprzedaży'],
     priceFrom: 2207,
@@ -79678,7 +79845,14 @@ Obudowa IP67 — pełna pyłoszczelność i odporność na zanurzenie w wodzie d
 
 W zestawie: terminal, bateria 6 000 mAh, etui ochronne, folia na ekran, pasek na rękę, kabel USB-C, adapter z wieloma wtyczkami (EU/UK/US). Zarządzanie flotą przez bezpłatną platformę MDM Newland Ndevor. Gwarancja producenta 2 lata z opcją przedłużenia do 3 lub 5 lat (Comprehensive Service). Wersja ekonomiczna bez 5G: Newland MT93 Megattera Standard.
 
-Koszt posiadania (TCO): Android 13 AER z aktualizacjami bezpieczeństwa i gwarantowaną kompatybilnością z MDM enterprise. Bateria 6 000 mAh (o 20% większa niż MT93) wymienialna przez użytkownika — całodzienna praca bez przerwy na ładowanie. IP67 eliminuje ryzyko uszkodzenia przez wodę. Bezpłatny MDM Ndevor i 5G przyszłościowe połączenie bez wymiany sprzętu.`,
+Koszt posiadania (TCO): Android 13 AER z aktualizacjami bezpieczeństwa i gwarantowaną kompatybilnością z MDM enterprise. Bateria 6 000 mAh (o 20% większa niż MT93) wymienialna przez użytkownika — całodzienna praca bez przerwy na ładowanie. IP67 eliminuje ryzyko uszkodzenia przez wodę. Bezpłatny MDM Ndevor i 5G przyszłościowe połączenie bez wymiany sprzętu.
+
+## Co jest potrzebne do użycia?
+
+W pudełku NLS-MT9556-W5 są bateria, przewód USB-C i zasilacz sieciowy z wymiennymi wtykami. Etui, pasek na dłoń i folia na ekran są również w zestawie.
+
+[Stacja NLS-MCD95-1C](/produkt/newland-mcd95-1c) jest opcją do ładowania na biurku. [Ładowarka NLS-MCD95-4B](/produkt/newland-mcd95-4b) ładuje cztery zapasowe baterie.
+`,
     categoryId: 'terminale-mobilne',
     subcategoryIds: ['terminale-newland'],
     manufacturerId: 'newland',
@@ -79720,7 +79894,7 @@ Koszt posiadania (TCO): Android 13 AER z aktualizacjami bezpieczeństwa i gwaran
       { name: 'Certyfikaty', value: 'Android Enterprise Recommended (AER), GMS' },
       { name: 'MDM', value: 'Newland Ndevor (bezpłatny), SOTI, AirWatch, 42 Gears' },
       { name: 'Gwarancja', value: '2 lata (opcja +1 lub +3 lata)' },
-      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, adapter EU, bateria' },
+      { name: 'W zestawie', value: 'Etui, folia, pasek na rękę, kabel USB-C, zasilacz z wymiennymi wtykami, bateria' },
     ],
     applications: ['Centrum logistyczne z infrastrukturą 5G', 'Sieć retail — obsługa klienta na hali sprzedaży', 'Dostawy last-mile i logistyka miejska', 'Serwis polowy z łącznością 5G', 'Inwentaryzacja w terenie z GPS', 'Hospitality i obsługa eventów'],
     priceFrom: 3546,
@@ -80149,7 +80323,7 @@ const honeywellMobileComputers: Product[] = [
     shortDescription: 'Honeywell CT70 — terminal mobilny 6" z Wi-Fi 7, BT 6.0, skanerem FlexRange i Qi, pierwszy enterprise z Wi-Fi 7',
     description: `Dla kogo? Honeywell CT70 to terminal mobilny klasy enterprise z ekranem 6" FHD+ i procesorem Qualcomm QCM6690 (2,9 GHz, 8 rdzeni, NPU do AI na krawędzi), zaprojektowany dla wymagających operacji w magazynach, centrach logistycznych, na liniach produkcyjnych oraz w handlu detalicznym. CT70 jest pierwszym terminalem enterprise z Wi-Fi 7 (802.11be) i Bluetooth 6.0 — zapewniając najniższe opóźnienia i najwyższą przepustowość bezprzewodową w klasie rugged.
 
-Kluczowe przewagi CT70 nad konkurencją: Wi-Fi 7 z Multi-Link Operation (MLO) i tri-band 2,4/5/6 GHz — idealne dla gęstych sieci magazynowych z setkami urządzeń. Bluetooth 6.0 (Class 1.5 + BLE) zapewnia niezawodne połączenie z drukarkami etykiet, headsetami i skanerami ring. Gorilla Glass Victus na ekranie — najnowsze, najwytrzymalsze szkło ochronne dostępne w terminalu enterprise. Ładowanie bezprzewodowe Qi (bateria CT70-BTWC-001) — wystarczy położyć na ładowarce, bez stacji dokującej. Hot-swap baterii — wymiana bez wyłączania urządzenia, ciągłość pracy na zmianach 24/7.
+Kluczowe przewagi CT70 nad konkurencją: Wi-Fi 7 z Multi-Link Operation (MLO) i tri-band 2,4/5/6 GHz — idealne dla gęstych sieci magazynowych z setkami urządzeń. Bluetooth 6.0 (Class 1.5 + BLE) zapewnia niezawodne połączenie z drukarkami etykiet, headsetami i skanerami ring. Gorilla Glass Victus na ekranie — najnowsze, najwytrzymalsze szkło ochronne dostępne w terminalu enterprise. Ładowanie bezprzewodowe Qi wymaga osobnej baterii CT70-BTWC-001. Wersje w ofercie mają baterię standardową. Hot-swap baterii — wymiana bez wyłączania urządzenia, ciągłość pracy na zmianach 24/7.
 
 Warianty: CT70 dostępny jest z dwoma typami skanerów — Standard Range (S0703, laser czerwony, zasięg do 1 m) i FlexRange (S0803, laser zielony, zasięg do 5+ m). Wersje Wi-Fi only (L0N) oraz 5G + GPS + eSIM (X1N) z dual SIM (nano + eSIM), CBRS i LTE Advanced. Opcjonalnie: zintegrowany czytnik RFID UHF (warianty X1R). Wszystkie warianty: 8 GB RAM LPDDR5, 128 GB Flash UFS 3.1, microSD do 2 TB.
 
@@ -80157,7 +80331,16 @@ Platforma Honeywell Mobility Edge gwarantuje wsparcie od Android 15 do Android 1
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami od Android 15 do Android 19 — 5 generacji OS bez wymiany sprzętu. Ładowanie bezprzewodowe Qi eliminuje zużycie mechaniczne złącza USB. Operational Intelligence monitoruje stan baterii w czasie rzeczywistym, redukując koszty awarii.
 
-Pełna specyfikacja techniczna na stronie producenta.`,
+Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja dokująca Display Dock do Honeywell CT70 (CT70-DB-UVX-0)](/produkt/honeywell-ct70-stacja-dokujaca-display)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+CT70 trafia do klienta z baterią standardową 4775 mAh i paskiem na rękę. Przewodu USB-C i zasilacza sieciowego nie ma w pudełku. Stacja Display Dock ma własny zasilacz.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -80276,11 +80459,11 @@ Pełna specyfikacja techniczna na stronie producenta.`,
       { question: 'Czym różni się Honeywell CT70 od Zebra TC58?', answer: 'CT70 oferuje Wi-Fi 7 (vs Wi-Fi 6E w TC58), Bluetooth 6.0 (vs 5.2), ładowanie bezprzewodowe Qi, opcjonalny RFID UHF, Gorilla Glass Victus i procesor QCM6690 (2,9 GHz vs 2,7 GHz). Zebra TC58 wygrywa lżejszą wagą (293 g vs 310 g), skanerem SE55 IntelliFocus (12+ m zasięgu vs 5 m FlexRange) i aparatem 16 MP (vs 13 MP). CT70 lepszy dla firm stawiających na przyszłościową łączność. TC58 lepszy dla skanowania z dużej odległości.' },
       { question: 'Czym różni się skaner Standard Range od FlexRange w CT70?', answer: 'Standard Range (S0703): laser czerwony, zasięg do 1 m — do pracy na kasie, w aptece, na linii produkcyjnej. FlexRange (S0803): laser zielony, zasięg do 5+ m — do skanowania etykiet na wysokich regałach, paletach i kontenerach bez drabiny. FlexRange obsługuje też DPM (kody grawerowane na metalu). Różnica cenowa: ok. 280 zł netto. W magazynach z regałami >2 m rekomendujemy FlexRange.' },
       { question: 'Czy Honeywell CT70 ma 5G?', answer: 'Tak — warianty CT70-X1N (5G + Wi-Fi 7) obsługują 5G FR1 (pasma n1-n79), LTE Advanced i CBRS (prywatne sieci 5G/LTE). Dual SIM: nano SIM + eSIM. GPS: dual-band GNSS (GPS, GLONASS, Galileo, BeiDou). Warianty CT70-L0N mają tylko Wi-Fi 7 (bez 5G/GPS/SIM) — tańsze o ok. 420 zł netto. 5G warto gdy: praca w terenie, field service, transport, brak Wi-Fi.' },
-      { question: 'Jak długo trzyma bateria w CT70?', answer: 'CT70 oferuje 3 typy baterii: standardowa 4 775 mAh (pełna zmiana 8-10 h), rozszerzona 7 692 mAh (12-16 h, grubsza obudowa +5,6 mm) i bezprzewodowa 4 775 mAh (Qi). Wszystkie z hot-swap — wymiana bez wyłączania urządzenia. Do pracy wielozmianowej: bateria zapasowa CT70-BTSC-001 + ładowarka 4-gniazdowa CT70-QBC-2. Honeywell oferuje też ładowarkę 16-gniazdową CT70-16BAY-BAT do dużych flot.' },
+      { question: 'Jak długo trzyma bateria w CT70?', answer: 'CT70 oferuje 3 typy baterii: standardowa 4 775 mAh (pełna zmiana 8-10 h), rozszerzona 7 692 mAh (12-16 h, grubsza obudowa +5,6 mm) i bezprzewodowa 4 775 mAh (Qi). Wszystkie z hot-swap — wymiana bez wyłączania urządzenia. Do pracy wielozmianowej: bateria zapasowa CT70-BTSC-001 + ładowarka 4-gniazdowa CT70-QBC-0. Honeywell oferuje też ładowarkę 16-gniazdową CT70-16BAY-BAT do dużych flot.' },
       { question: 'Czy CT70 obsługuje ładowanie bezprzewodowe?', answer: 'Tak — z baterią CT70-BTWC-001 (4 775 mAh, Qi BPP + EPP). Wystarczy położyć terminal na dowolnej ładowarce Qi lub dedykowanym doku bezprzewodowym CT70-VD-WL-SPK. Ładowanie Qi eliminuje potrzebę stacji dokującej z pinami kontaktowymi — mniej zużycia mechanicznego, dłuższa żywotność. W wariantach z baterią standardową (CS) ładowanie Qi nie jest dostępne — wymaga baterii wireless (CW).' },
       { question: 'Jaki system operacyjny ma CT70?', answer: 'Android 15 z gwarancją aktualizacji do Android 19 dzięki platformie Honeywell Mobility Edge. To do 5 generacji systemu operacyjnego bez wymiany sprzętu — najdłuższa ścieżka aktualizacji w klasie rugged. Mobility Edge zapewnia: wspólny BSP dla całej floty, LifeGuard security patches, zero-touch enrollment i kompatybilność z Google Mobile Services (GMS).' },
       { question: 'Czy CT70 jest wodoodporny?', answer: 'Tak — IP65 (pyłoszczelny, strumień wody) + IP68 (zanurzenie). Upadki z 2,4 m na beton (z obudową ochronną CT70-PB-GRY) lub 1,8 m bez obudowy. >3 000 tumble w testach MIL-STD-810H. Temperatura pracy: -20°C do +50°C — nadaje się do chłodni (z baterią rozszerzoną) i pracy na zewnątrz w upale. Gorilla Glass Victus chroni ekran przed zarysowaniami i uderzeniami.' },
-      { question: 'Jakie akcesoria są dostępne do CT70?', answer: 'Baterie: standardowa CT70-BTSC-001 (4 775 mAh), rozszerzona CT70-BTEC-001 (7 692 mAh), bezprzewodowa CT70-BTWC-001. Stacje dokujące: 1-gniazdowa CT70-HB-UVX, Ethernet CT70-EB-UVX, 4-gniazdowa CT70-CB-UVX, 5-gniazdowa CT70-5CB-UVX. Ładowarki baterii: 4-gniazdowa CT70-QBC-2, 16-gniazdowa CT70-16BAY-BAT. Ochrona: boot CT70-PB-GRY, folia CT70-SP-1, holster CT70-HST-1. Ergonomia: scan handle CT70-SH-UVB, wearable kit CT70-WS-KIT. Dok samochodowy: CT70-VD-WD.' },
+      { question: 'Jakie akcesoria są dostępne do CT70?', answer: 'Baterie: standardowa CT70-BTSC-001 (4 775 mAh), rozszerzona CT70-BTEC-001 (7 692 mAh), bezprzewodowa CT70-BTWC-001. Stacje dokujące: 1-gniazdowa CT70-HB-UVX, Ethernet CT70-EB-UVX, 4-gniazdowa CT70-CB-UVX, 5-gniazdowa CT70-5CB-UVX. Ładowarki baterii: 4-gniazdowa CT70-QBC-0, 16-gniazdowa CT70-16BAY-BAT. Ochrona: boot CT70-PB-GRY, folia CT70-SP-1, holster CT70-HST-1. Ergonomia: scan handle CT70-SH-UVB, wearable kit CT70-WS-KIT. Dok samochodowy: CT70-VD-WD.' },
       { question: 'Gdzie serwisować Honeywell CT70 w Polsce?', answer: 'Serwis Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe. Czas naprawy: 5–10 dni roboczych. Dla klientów z kontraktem serwisowym dostępna jest naprawa priorytetowa.' },
       { question: 'Jakie są alternatywy dla Honeywell CT70?', answer: 'W segmencie premium rugged 6": Zebra TC58 (od ok. 4 500 zł, SE55 do 12+ m, lżejszy 293 g, ekosystem Mobility DNA) i Zebra TC78 (upadki 3,05 m, wariant chłodniczy). W segmencie budżetowym: Zebra TC53 (od ok. 3 200 zł, mniejszy ekosystem), Datalogic Memor 35 (od ok. 2 800 zł). W segmencie gun: Zebra MC9400 (SE58 do 30+ m, 3,5" ekran, 765 g). CT70 wyróżnia się Wi-Fi 7, BT 6.0, Qi i opcjonalnym RFID UHF — żaden konkurent nie oferuje tego zestawu.' },
     ],
@@ -80301,7 +80484,16 @@ Platforma Honeywell Mobility Edge gwarantuje bezpieczeństwo i długi cykl życi
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarancją aktualizacji Android 14→18 — 5 lat bez wymiany sprzętu. Kompatybilność z akcesoriami EDA52 chroni inwestycję w infrastrukturę stacji dokujących. Waga 269 g (najlżejszy terminal 6" w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy.
 
-Pełna specyfikacja techniczna na stronie producenta.`,
+Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja dokująca do Honeywell CT32 (non-booted) (CT32-HB-UVN-0)](/produkt/honeywell-ct32-stacja-dokujaca)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+W zestawie CT32 są bateria i przewód USB do ładowania. Zasilacza sieciowego USB nie ma w zestawie. Przewód z zestawu ładuje terminal z portu USB komputera. CT32 w osłonie CT32-PB-STD ładuje [stacja CT32-HB-UVB-0](/produkt/honeywell-ct32-stacja-dokujaca-booted).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -80426,7 +80618,7 @@ Pełna specyfikacja techniczna na stronie producenta.`,
       { question: 'Czy CT32 jest następcą EDA52?', answer: 'Tak — CT32 zastępuje linię EDA52 w portfolio Honeywell. Kluczowe ulepszenia: nowszy procesor QCS4490 (vs Snapdragon 680), Wi-Fi 6E (vs Wi-Fi 6), Android 14→18 (vs 12→15), skaner FlexRange S0803 (vs S0703 only w EDA52), Quick Charge 4.0 i nowy design HUE. CT32 zachowuje kompatybilność wsteczną z akcesoriami EDA52 dzięki Universal Dock Platform — stacje dokujące wymagają jedynie nowej wkładki (cup).' },
       { question: 'Jaki skaner ma Honeywell CT32?', answer: 'CT32 w standardzie wyposażony jest w skaner Honeywell S0703 Standard Range — imager 1D/2D do skanowania z typowej odległości roboczej. Opcjonalnie: FlexRange S0803 z zielonym laserem (lepiej widoczny w jasnym świetle) i zasięgiem do 11 m (35 stóp) — do skanowania etykiet na wysokich regałach bez drabiny. FlexRange obsługuje kody DPM (grawerowane). Warianty z FlexRange oznaczone innym sufiksem PN.' },
       { question: 'Czy CT32 jest wodoodporny?', answer: 'Tak — IP65 (pyłoszczelny, strumień wody) + IP68 (zanurzenie). Upadki z 1,8 m na beton (z bootem TPU CT32-PB-STD) lub 1,5 m bez boota. 1 000 tumble z 0,5 m wg IEC 60068-2-32. Temperatura pracy: -20°C do +50°C — nadaje się do chłodni i pracy na zewnątrz. Gorilla Glass 5 chroni ekran. Opcjonalna folia CT32-SP-10PK (10 szt.) dla dodatkowej ochrony w ekstremalnych warunkach.' },
-      { question: 'Jakie akcesoria są dostępne do CT32?', answer: 'Baterie: standardowa 50172021-001 (4 500 mAh), rozszerzona 50183310-001. Stacje dokujące: 1-gniazdowa CT32-HB-UVN-0 (non-booted) i CT32-HB-UVB-0 (booted). Ładowarki 4-gniazdowe: CT32-CB-UVN-0 (non-booted), CT32-CB-UVB-0 (booted). Ochrona: boot TPU CT32-PB-STD, folia CT32-SP-10PK, scan handle CT32-SH-UVN. Ergonomia: hand strap EDA52-HS-10PK, wrist strap EDA52-WS-10PK. Ładowarka baterii: EDA52-QBC-1 (4 sloty). Akcesoria EDA52 kompatybilne wstecznie (Universal Dock Platform).' },
+      { question: 'Jakie akcesoria są dostępne do CT32?', answer: 'Baterie: standardowa 50172021-001 (4 500 mAh) i 50183310-001 (4 500 mAh, wersja US). Stacje dokujące: 1-gniazdowa CT32-HB-UVN-0 (non-booted) i CT32-HB-UVB-0 (booted). Ładowarki 4-gniazdowe: CT32-CB-UVN-0 (non-booted), CT32-CB-UVB-0 (booted). Ochrona: boot TPU CT32-PB-STD, folia CT32-SP-10PK, scan handle CT32-SH-UVN. Ergonomia: hand strap EDA52-HS-10PK, wrist strap EDA52-WS-10PK. Ładowarka baterii: EDA52-QBC-1 (4 sloty). Akcesoria EDA52 kompatybilne wstecznie (Universal Dock Platform).' },
       { question: 'Gdzie serwisować Honeywell CT32 w Polsce?', answer: 'Serwis Honeywell w Polsce realizowany jest przez autoryzowane centra serwisowe. Czas naprawy: 5–10 dni roboczych. Dla klientów z kontraktem serwisowym dostępna jest naprawa priorytetowa.' },
       { question: 'Jakie są alternatywy dla Honeywell CT32?', answer: 'W segmencie performance 6": Zebra TC22 (od 2 417 zł, SE55 do 7,6 m, 236 g, Mobility DNA), Zebra TC27 (5G, od 3 254 zł, 248 g). W segmencie premium: Honeywell CT70 (od 7 265 zł, Wi-Fi 7, BT 6.0, RFID opcja), Zebra TC53 (od 3 200 zł, SE4720). W segmencie budżetowym: Datalogic Memor 12 (od ok. 2 200 zł, 5,5"). CT32 wyróżnia się FlexRange do 11 m, kompatybilnością z EDA52 i najdłuższą ścieżką Android (14→18).' },
     ],
@@ -80447,7 +80639,7 @@ Trzy opcje skanera — dobierz do zastosowania: Model bazowy wyposażony jest w 
 
 Pięć wariantów klawiatury: CK67 dostępny jest z klawiaturami: 30-klawiszową numeryczną (szybkie wprowadzanie ilości, kompletacja), 38-klawiszową funkcyjną (retail, inwentaryzacja), 42-klawiszową alfanumeryczną (uniwersalna), 51-klawiszową alfanumeryczną z pełnym ABC (wyszukiwanie, teksty, WMS) i 53-klawiszową rozszerzoną (pełna alfanumeryczna z klawiszami funkcyjnymi F1-F12). Wszystkie klawiatury podświetlane, z wyczuwalnym skokiem klawiszy — do obsługi w grubych rękawicach magazynowych. W naszej ofercie dostępne są warianty z klawiaturą 51-klawiszową; inne opcje na zamówienie w tej samej cenie.
 
-Bateria 7 000 mAh z hot-swap: CK67 wyposażony jest w baterię Li-Ion 7 000 mAh — najwyższą pojemność w klasie gun tego rozmiaru. Producent deklaruje do 28 godzin pracy w typowym scenariuszu magazynowym (skanowanie + Wi-Fi + wyświetlacz co 15 s). Technologia hot-swap pozwala wymienić baterię bez wyłączania terminala — kluczowe na zmianach 24/7. Ładowanie Quick Charge 3.0 w pełni naładuje baterię w ok. 4 godziny. Dla flot wielozmianowych rekomendujemy ładowarkę 4-gniazdową CK6X-UCBC-4B (ładuje 4 baterie jednocześnie).
+Bateria 7 000 mAh z hot-swap: CK67 wyposażony jest w baterię Li-Ion 7 000 mAh — najwyższą pojemność w klasie gun tego rozmiaru. Producent deklaruje do 28 godzin pracy w typowym scenariuszu magazynowym (skanowanie + Wi-Fi + wyświetlacz co 15 s). Technologia hot-swap pozwala wymienić baterię bez wyłączania terminala — kluczowe na zmianach 24/7. Ładowanie Quick Charge 3.0 w pełni naładuje baterię w ok. 4 godziny. Dla flot wielozmianowych rekomendujemy wkładkę CK6X-UCBC-4B na 4 baterie do ładowarek CK6X-BC-4BAY-0 i CK6X-BC-16BAY-0.
 
 Wi-Fi 6E + opcjonalne 5G: Warianty CK67-X0N oferują Wi-Fi 6E (802.11ax) z tri-band 2,4/5/6 GHz, 2×2 MU-MIMO i Bluetooth 5.3 — optymalną łączność w nowoczesnych sieciach magazynowych. Warianty CK67-X1N dodają moduł 5G NR (SA/NSA) z dual SIM (nano + eSIM), LTE CAT13 i GPS/GLONASS/Galileo/BeiDou — do pracy w terenie, transporcie i lokalizacjach bez infrastruktury Wi-Fi. 5G zapewnia ultra-niskie opóźnienia (<10 ms) i przepustowość do 1 Gbps DL — wystarczającą do streamingu wideo HD z kamery terminala do centralnego systemu. Potrzebujesz terminala 5G z ekranem dotykowym zamiast klawiatury? Zobacz [Zebra TC78](/produkt/zebra-tc78) — terminal gun touch 5G.
 
@@ -80457,7 +80649,16 @@ Platforma Mobility Edge: CK67 działa na Android 14 z gwarantowaną ścieżką a
 
 Koszt posiadania (TCO): bateria 7 000 mAh hot-swap z deklarowanym czasem pracy do 28 godzin eliminuje konieczność posiadania dużego zapasu baterii w magazynach. Platforma Mobility Edge z gwarancją Android 14→18 — 4 generacje OS bez wymiany sprzętu. Waga 508 g (vs 765 g MC9400) redukuje zmęczenie pracowników przy wielogodzinnej pracy. Kolektor danych CK67 oferuje najlepszy stosunek cena/czas pracy w segmencie ultra-rugged gun.
 
-Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact, DataConsult WMS.net), ERP (SAP, Comarch ERP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro Fulfillment). Emulacja terminala (Velocity by Ivanti, StayLinked) umożliwia migrację z legacy systemów (Windows CE/Mobile) bez przepisywania aplikacji. Zero-touch enrollment pozwala wdrożyć flotę 100+ kolektorów danych w jeden dzień. Pełna specyfikacja techniczna na stronie producenta (honeywell.com).`,
+Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact, DataConsult WMS.net), ERP (SAP, Comarch ERP, Subiekt GT) i platformami e-commerce (BaseLinker, Allegro Fulfillment). Emulacja terminala (Velocity by Ivanti, StayLinked) umożliwia migrację z legacy systemów (Windows CE/Mobile) bez przepisywania aplikacji. Zero-touch enrollment pozwala wdrożyć flotę 100+ kolektorów danych w jeden dzień. Pełna specyfikacja techniczna na stronie producenta (honeywell.com).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja ładowania CK67 Non-Booted (CK67-HB-UVN-0)](/produkt/honeywell-ck67-stacja-ladowania-non-booted)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+Opakowanie CK67 zawiera baterię 7000 mAh, pasek na rękę i przewód USB-C. Zasilacz sieciowy nie wchodzi w skład zestawu. Z komputera terminal ładuje się przez dołączony przewód USB-C. Stacja CK67-HB-UVN-0 przyjmuje terminal bez osłony. CK67 w osłonie CK67-PB-1 ładuje [stacja CK67-HB-UVB-0](/produkt/honeywell-ck67-stacja-ladowania-booted).`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'produkcja', 'outdoor'],
@@ -80640,13 +80841,13 @@ Honeywell CK67 współpracuje z systemami WMS (SAP WM/EWM, Comarch WMS, Logifact
       { question: 'Ile kosztuje Honeywell CK67?', answer: 'Ceny Honeywell CK67 zaczynają się od 8 595 zł netto (wariant Wi-Fi 6E, skaner SR S0703, klawiatura 51-klawiszowa). Wariant z FlexRange: 8 025 zł, FlexRange XLR: 8 331 zł. Wersje 5G: od 8 607 zł (SR) do 9 189 zł (FlexRange XLR). Inne opcje klawiatury (30/38/42/53 klawisze) dostępne w tych samych cenach na zamówienie. Ceny netto, aktualizowane codziennie.' },
       { question: 'Czym różnią się skanery SR, FlexRange i FlexRange XLR w CK67?', answer: 'S0703 Standard Range (SR) — laser czerwony, zasięg do ok. 1 m, do skanowania etykiet z typowej odległości na półkach i taśmociągach. FlexRange — laser zielony (lepiej widoczny w jasnym świetle), podwójny tryb pracy: bliski odczyt małych kodów 2D/DPM + daleki zasięg do 5 m, idealny do regałów średniej wysokości. FlexRange XLR — ultra-daleki zasięg do 24 m (80 ft), do skanowania kodów na najwyższych regałach magazynów wysokiego składowania i kontenerach. Różnica cenowa: SR → FlexRange +260 zł, FlexRange → XLR +306 zł.' },
       { question: 'Czy CK67 obsługuje 5G?', answer: 'Tak — warianty CK67-X1N wyposażone są w moduł 5G NR (SA/NSA) z LTE CAT13, dual SIM (nano + eSIM) i GPS/GLONASS/Galileo/BeiDou. 5G zapewnia ultra-niskie opóźnienia (<10 ms) i przepustowość do 1 Gbps DL — do pracy w terenie, transporcie i lokalizacjach bez Wi-Fi. Warianty CK67-X0N mają tylko Wi-Fi 6E — tańsze o ok. 842 zł netto. 5G rekomendowane gdy: praca outdoor, field service, magazyny bez infrastruktury bezprzewodowej.' },
-      { question: 'Jak długo działa bateria CK67?', answer: 'CK67 wyposażony jest w baterię Li-Ion 7 000 mAh — producent deklaruje do 28 godzin pracy w typowym scenariuszu magazynowym (skanowanie + Wi-Fi + wyświetlacz co 15 s). Technologia hot-swap pozwala wymienić baterię bez wyłączania terminala. Ładowanie Quick Charge 3.0 w ok. 4 godziny. Do pracy wielozmianowej: bateria zapasowa CK67-BTSC-001 (363 zł) + ładowarka 4-gniazdowa CK6X-UCBC-4B (116 zł). W mroźni (-30°C) bateria zachowuje >70% pojemności.' },
+      { question: 'Jak długo działa bateria CK67?', answer: 'CK67 wyposażony jest w baterię Li-Ion 7 000 mAh — producent deklaruje do 28 godzin pracy w typowym scenariuszu magazynowym (skanowanie + Wi-Fi + wyświetlacz co 15 s). Technologia hot-swap pozwala wymienić baterię bez wyłączania terminala. Ładowanie Quick Charge 3.0 w ok. 4 godziny. Do pracy wielozmianowej: bateria zapasowa CK67-BTSC-001 + wkładka CK6X-UCBC-4B na 4 baterie do ładowarki CK6X-BC-4BAY-0 lub CK6X-BC-16BAY-0. W mroźni (-30°C) bateria zachowuje >70% pojemności.' },
       { question: 'Czy CK67 nadaje się do mroźni?', answer: 'Tak — CK67 w standardzie działa w temperaturach od -20°C do +50°C. Wersja Cold Storage rozszerza zakres do -30°C. Terminal nie wymaga „rozgrzewania" po wyjściu z mroźni — wyświetlacz pozostaje czytelny, bateria zachowuje >70% pojemności, a Gorilla Glass 7 zapobiega parowaniu. IP65+IP68 chroni przed wilgocią i skropleniami. Do mroźni rekomendujemy wariant z FlexRange XLR — pozwala skanować kody z dużej odległości bez zdejmowania grubych rękawic.' },
       { question: 'Ile opcji klawiatury ma CK67?', answer: 'CK67 oferuje 5 wariantów klawiatury fizycznej: 30-klawiszowa numeryczna (szybkie wprowadzanie ilości, kompletacja), 38-klawiszowa funkcyjna (retail, inwentaryzacja), 42-klawiszowa alfanumeryczna (uniwersalna), 51-klawiszowa pełna alfanumeryczna z ABC (wyszukiwanie, teksty, WMS) i 53-klawiszowa rozszerzona z klawiszami F1-F12. Wszystkie podświetlane, z wyczuwalnym skokiem klawiszy do obsługi w grubych rękawicach. W naszej ofercie online warianty z klawiaturą 51-kl.; inne dostępne na zamówienie w tej samej cenie.' },
       { question: 'Czym CK67 różni się od CK65?', answer: 'CK67 to następca CK65 na platformie Mobility Edge nowej generacji. Kluczowe ulepszenia: procesor QCS4490 (vs 660 w CK65), Android 14→18 (vs 8.1→12 w CK65), Wi-Fi 6E (vs Wi-Fi 5), Bluetooth 5.3 (vs 5.0), Gorilla Glass 7 (vs 3), Quick Charge 3.0, opcjonalne 5G i NFC. CK67 zachowuje format gun, klawiaturę fizyczną i baterię 7 000 mAh z hot-swap. Skaner FlexRange XLR w CK67 oferuje zasięg do 24 m (vs 15 m EX20 w CK65). CK67 to naturalna migracja dla flot CK65.' },
       { question: 'CK67 czy Zebra MC9400 — co wybrać?', answer: 'MC9400 wygrywa ultra-dalekim skanerem SE58 (30+ m vs 24 m XLR), szerokim ekosystemem Zebra Mobility DNA i większym ekranem dotykowym 3,5" z klawiaturą. CK67 wygrywa lżejszą wagą (508 g vs 765 g, -34%), dłuższym czasem pracy (28 h vs 17 h), nowszą łącznością Wi-Fi 6E (vs Wi-Fi 6), niższą ceną wejścia (7 765 vs ~9 500 zł) i dłuższą ścieżką Android (14→18 vs 14→17). CK67 lepszy dla firm szukających lekkiego gun terminala z długim czasem pracy. MC9400 lepszy do ultra-dalekiego skanowania w magazynach >20 m i firm z ekosystemem Zebra.' },
       { question: 'Jaki system Android ma CK67?', answer: 'CK67 działa na Android 14 z gwarantowaną ścieżką aktualizacji do Android 18 dzięki platformie Honeywell Mobility Edge — 4 generacje OS bez wymiany sprzętu. Mobility Edge zapewnia: wspólny BSP dla całej floty, regularne patche bezpieczeństwa LifeGuard, zero-touch enrollment, Google Mobile Services (GMS) i integrację z MDM (SOTI, Ivanti, VMware). Procesor QCS4490 z AI Engine obsługuje inference na krawędzi — do rozpoznawania kodów uszkodzonych i OCR.' },
-      { question: 'Jakie akcesoria są dostępne do CK67?', answer: 'Bateria: CK67-BTSC-001 (7 000 mAh, 363 zł). Obudowa ochronna: CK67-PB-1 (rubber boot, 144 zł). Uchwyt pistoletowy: CK67-SCH (592 zł). Stacje ładowania: CK67-HB-UVN-0 (1-gniazdowa non-booted z Ethernet, 676 zł), CK67-HB-UVB-0 (1-gniazdowa booted, 676 zł). Ładowarka baterii: CK6X-UCBC-4B (4 sloty, 116 zł). Szkło ochronne: CK67-SP-1PK (31 zł). Kabura: 815-087-001 (381 zł). Charging cup: CK67-UCP-B (booted, 135 zł), CK67-UCP-N (non-booted, 135 zł).' },
+      { question: 'Jakie akcesoria są dostępne do CK67?', answer: 'Bateria: CK67-BTSC-001 (7 000 mAh, 363 zł). Obudowa ochronna: CK67-PB-1 (rubber boot, 144 zł). Uchwyt pistoletowy: CK67-SCH (592 zł). Stacje ładowania: CK67-HB-UVN-0 (1-gniazdowa non-booted, tylko ładowanie), CK67-HB-UVB-0 (1-gniazdowa booted). Ethernet ma stacja CK67-EB-UVN-0. Wkładka na 4 baterie: CK6X-UCBC-4B (do ładowarek CK6X-BC-4BAY-0 i CK6X-BC-16BAY-0). Szkło ochronne: CK67-SP-1PK (31 zł). Kabura: 815-087-001 (381 zł). Charging cup: CK67-UCP-B (booted, 135 zł), CK67-UCP-N (non-booted, 135 zł).' },
       { question: 'Gdzie serwisować CK67 w Polsce?', answer: 'Honeywell CK67 objęty jest standardową gwarancją 1-roczną producenta z opcją przedłużenia do 3 lub 5 lat (Gold/Platinum Service Plan). Serwis gwarancyjny i pogwarancyjny realizowany jest przez autoryzowanych partnerów Honeywell w Polsce. Dostępne są kontrakty serwisowe z gwarantowanym czasem reakcji (SLA) — do uzgodnienia indywidualnie. W przypadku dużych flot rekomendujemy kontrakt Platinum z naprawą on-site lub wymianą urządzenia w 24 h.' },
       { question: 'Jakie są alternatywy dla Honeywell CK67?', answer: 'W segmencie ultra-rugged gun: Zebra MC9400 (od ~9 500 zł, SE58 do 30+ m, 765 g, Mobility DNA) — najpopularniejsza alternatywa z najdłuższym zasięgiem skanera. Zebra MC9450 (RFID UHF + gun, od ~13 000 zł). W segmencie gun budżetowym: Zebra MC3400/MC3450 (od ~5 000 zł, lżejszy 490 g, zasięg do 12 m). W segmencie Honeywell: CK65 (poprzednia generacja, wycofywany), CT70 z scan handle (premium 6" touch, od 7 265 zł). CK67 wyróżnia się najlepszym stosunkiem cena/funkcje w klasie ultra-rugged gun z klawiaturą fizyczną i FlexRange XLR.' },
       { question: 'Czy kolektor danych Honeywell CK67 współpracuje z systemami WMS i ERP?', answer: 'Tak. Honeywell CK67 (kolektor danych) działa na Android 14 z Google Mobile Services — kompatybilny z każdym systemem WMS i ERP obsługującym urządzenia Android. Popularne systemy WMS w Polsce współpracujące z CK67: SAP WM/EWM, Comarch WMS, Asseco Softlab WMS, Logifact, DataConsult WMS.net, Quantum qguar WMS i Consafe Astro WMS. Emulacja terminala (np. Velocity by Ivanti) umożliwia korzystanie z aplikacji telnetowych z legacy systemów. Honeywell Operational Intelligence monitoruje stan urządzeń, baterii i łączności w czasie rzeczywistym — dział IT widzi flotę kolektorów na jednym dashboardzie.' },
@@ -80694,15 +80895,15 @@ const ct32Accessories: Product[] = [
   {
     id: 'honeywell-ct32-battery-extended',
     slug: 'honeywell-ct32-bateria-rozszerzona',
-    name: 'Bateria rozszerzona do Honeywell CT32',
-    shortDescription: 'Bateria rozszerzona do Honeywell CT32 — bateria o zwiększonej pojemności do pracy wielozmianowej',
-    description: 'Bateria rozszerzona Honeywell do terminala CT32 o zwiększonej pojemności dla wydłużonego czasu pracy. Wymienna w trybie hot-swap. Idealna do pracy wielozmianowej i zastosowań wymagających ciągłej dostępności urządzenia. Kompatybilna ze stacjami dokującymi CT32 i ładowarką EDA52-QBC-1.',
+    name: 'Bateria 4500 mAh do Honeywell CT32 (wersja US)',
+    shortDescription: 'Bateria 4500 mAh do Honeywell CT32 (wersja US) — bateria zapasowa do pracy wielozmianowej',
+    description: 'Bateria Honeywell 4500 mAh do terminala CT32 w wersji US. Wymienna w trybie hot-swap. Idealna do pracy wielozmianowej i zastosowań wymagających ciągłej dostępności urządzenia. Kompatybilna ze stacjami dokującymi CT32 i ładowarką EDA52-QBC-1.',
     categoryId: 'akcesoria',
     subcategoryIds: ['baterie-do-terminali'],
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail'],
     images: ['/images/products/50183310-001.png'],
-    imageDescriptions: ['Bateria rozszerzona do terminala Honeywell CT32'],
+    imageDescriptions: ['Bateria 4500 mAh do terminala Honeywell CT32 (wersja US)'],
     specifications: [
       { name: 'Part Number', value: '50183310-001' },
       { name: 'Technologia', value: 'Li-Ion, wymienna, hot-swap' },
@@ -80722,8 +80923,8 @@ const ct32Accessories: Product[] = [
     id: 'honeywell-ct32-home-base-non-booted',
     slug: 'honeywell-ct32-stacja-dokujaca',
     name: 'Stacja dokująca do Honeywell CT32 (non-booted)',
-    shortDescription: 'Stacja dokująca do Honeywell CT32 (non-booted) — Home Base 1-gniazdowa, ładowanie i komunikacja USB/Ethernet',
-    description: 'Stacja dokująca Honeywell Home Base do terminala CT32 w wersji non-booted (bez obudowy ochronnej). Umożliwia ładowanie terminala oraz komunikację przez USB i opcjonalnie Ethernet. Kompatybilna z platformą Universal Dock — wymaga jedynie odpowiedniego cup-a dla danego modelu. Idealna na stanowiska stacjonarne, biurka i recepcje.',
+    shortDescription: 'Stacja dokująca do Honeywell CT32 (non-booted) — Home Base 1-gniazdowa, ładowanie i komunikacja USB',
+    description: 'Stacja dokująca Honeywell Home Base do terminala CT32 w wersji non-booted (bez obudowy ochronnej). Umożliwia ładowanie terminala oraz komunikację przez USB. Stacja nie ma portu Ethernet; Ethernet ma stacja CT32-EB-UVN-0. Kompatybilna z platformą Universal Dock — wymaga jedynie odpowiedniego cup-a dla danego modelu. Idealna na stanowiska stacjonarne, biurka i recepcje. Stacja ładuje terminal bez osłony i jedną baterię zapasową. Zasilacz jest w zestawie, przewodu sieciowego EU ([77900508E](/produkt/honeywell-ih45-cord-eu)) w zestawie nie ma.',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-dokujace'],
     manufacturerId: 'honeywell',
@@ -80734,7 +80935,7 @@ const ct32Accessories: Product[] = [
       { name: 'Part Number', value: 'CT32-HB-UVN-0' },
       { name: 'Typ', value: 'Home Base 1-gniazdowa (Non-Booted)' },
       { name: 'Ładowanie', value: 'Tak — terminal' },
-      { name: 'Komunikacja', value: 'USB, opcjonalnie Ethernet' },
+      { name: 'Komunikacja', value: 'USB' },
       { name: 'Kompatybilność', value: 'Honeywell CT32 (bez boota)' },
     ],
     applications: ['Stanowisko stacjonarne', 'Ładowanie terminala', 'Biuro'],
@@ -81304,22 +81505,21 @@ const ck67Accessories: Product[] = [
   {
     id: 'honeywell-ck67-home-base-nb',
     slug: 'honeywell-ck67-stacja-ladowania-non-booted',
-    name: 'Stacja ładowania CK67 Non-Booted z Ethernet',
-    shortDescription: 'Stacja ładowania CK67 Non-Booted z Ethernet — 1-gniazdowa stacja dokująca z Ethernet do CK67 bez obudowy ochronnej',
-    description: 'Stacja ładowania Honeywell CK67-HB-UVN-0 (Home Base) do terminala CK67 bez obudowy ochronnej. 1-gniazdowa stacja dokująca z portem Ethernet RJ-45 do synchronizacji danych i aktualizacji oprogramowania przez sieć przewodową. Ładowanie terminala i dodatkowej baterii jednocześnie. Kompaktowa konstrukcja na biurko. Zasilacz sprzedawany osobno lub w zestawie.',
+    name: 'Stacja ładowania CK67 Non-Booted',
+    shortDescription: 'Stacja ładowania CK67 Non-Booted — 1-gniazdowa stacja ładująca do CK67 bez obudowy ochronnej',
+    description: 'Stacja ładowania Honeywell CK67-HB-UVN-0 (Home Base) do terminala CK67 bez obudowy ochronnej. 1-gniazdowa stacja tylko ładuje i nie ma portu Ethernet. Port Ethernet ma stacja CK67-EB-UVN-0. Ładowanie terminala i dodatkowej baterii jednocześnie. Kompaktowa konstrukcja na biurko. W zestawie jest zasilacz. [Przewód sieciowy EU 77900508E](/produkt/honeywell-ih45-cord-eu) jest sprzedawany osobno.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka'],
     images: ['/images/products/CK67-HB-UVN-0.png'],
-    imageDescriptions: ['Stacja ładowania 1-gniazdowa Honeywell CK67-HB-UVN-0 non-booted z portem Ethernet'],
+    imageDescriptions: ['Stacja ładowania 1-gniazdowa Honeywell CK67-HB-UVN-0 non-booted'],
     specifications: [
       { name: 'Part Number', value: 'CK67-HB-UVN-0' },
       { name: 'Typ', value: 'Home Base, 1 gniazdko terminala + 1 gniazdko baterii' },
-      { name: 'Ethernet', value: 'RJ-45 10/100/1000' },
       { name: 'Wersja', value: 'Non-booted (bez obudowy ochronnej)' },
       { name: 'Kompatybilność', value: 'Honeywell CK67' },
     ],
-    applications: ['Ładowanie terminala', 'Synchronizacja Ethernet', 'Biurko/stanowisko'],
+    applications: ['Ładowanie terminala', 'Biurko/stanowisko'],
     priceFrom: 676,
     availability: 'available',
     isNew: true,
@@ -81335,7 +81535,7 @@ const ck67Accessories: Product[] = [
     slug: 'honeywell-ck67-stacja-ladowania-booted',
     name: 'Stacja ładowania CK67 Booted',
     shortDescription: 'Stacja ładowania CK67 Booted — 1-gniazdowa stacja dokująca do CK67 z obudową ochronną',
-    description: 'Stacja ładowania Honeywell CK67-HB-UVB-0 (Home Base) do terminala CK67 z zamontowaną obudową ochronną (rubber boot CK67-PB-1). 1-gniazdowa stacja dokująca — nie trzeba zdejmować boota przed ładowaniem. Ładowanie terminala i dodatkowej baterii jednocześnie. Dedykowana do środowisk, w których terminal jest zawsze w obudowie ochronnej (magazyn, produkcja).',
+    description: 'Stacja ładowania Honeywell CK67-HB-UVB-0 (Home Base) do terminala CK67 z zamontowaną obudową ochronną (rubber boot CK67-PB-1). 1-gniazdowa stacja dokująca — nie trzeba zdejmować boota przed ładowaniem. Ładowanie terminala i dodatkowej baterii jednocześnie. Dedykowana do środowisk, w których terminal jest zawsze w obudowie ochronnej (magazyn, produkcja). Zestaw zawiera zasilacz, a [przewód sieciowy EU 77900508E](/produkt/honeywell-ih45-cord-eu) trzeba dokupić.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka'],
@@ -81361,18 +81561,18 @@ const ck67Accessories: Product[] = [
   {
     id: 'honeywell-ck67-battery-cup-4',
     slug: 'honeywell-ck67-ladowarka-4-baterii',
-    name: 'Ładowarka 4 baterii CK6X',
-    shortDescription: 'Ładowarka 4 baterii CK6X — 4-gniazdowa ładowarka baterii do terminali Honeywell CK65/CK67',
-    description: 'Ładowarka Honeywell CK6X-UCBC-4B na 4 baterie do terminali CK65 i CK67. Jednoczesne ładowanie 4 baterii 7 000 mAh — kluczowe akcesorium do pracy wielozmianowej w magazynach i centrach logistycznych. Kompaktowa konstrukcja na biurko lub ścianę. LED status ładowania dla każdego gniazdka. Kompatybilna z bateriami CK67-BTSC-001 i bateriami CK65.',
+    name: 'Wkładka na 4 baterie do ładowarki Honeywell CK6X',
+    shortDescription: 'Wkładka na 4 baterie do ładowarki Honeywell CK6X — do ładowarek CK6X-BC-4BAY-0 i CK6X-BC-16BAY-0, baterie terminali CK65/CK67',
+    description: 'Wkładka Honeywell CK6X-UCBC-4B na 4 baterie do terminali CK65 i CK67. Wkładkę montuje się w ładowarce CK6X-BC-4BAY-0 lub CK6X-BC-16BAY-0. Wkładka nie jest samodzielną ładowarką. Ładowarka z wkładką ładuje jednocześnie 4 baterie 7 000 mAh do pracy wielozmianowej w magazynach i centrach logistycznych. LED status ładowania dla każdego gniazdka. Kompatybilna z bateriami CK67-BTSC-001 i bateriami CK65.',
     categoryId: 'akcesoria',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'produkcja'],
     images: ['/images/products/placeholder.svg'],
-    imageDescriptions: ['Ładowarka 4-gniazdowa na baterie Honeywell CK6X-UCBC-4B do terminali CK65/CK67'],
+    imageDescriptions: ['Wkładka na 4 baterie Honeywell CK6X-UCBC-4B do ładowarek CK6X'],
     specifications: [
       { name: 'Part Number', value: 'CK6X-UCBC-4B' },
       { name: 'Liczba gniazdek', value: '4' },
-      { name: 'Kompatybilność', value: 'Honeywell CK65, CK67 (baterie 7 000 mAh)' },
+      { name: 'Kompatybilność', value: 'Honeywell CK65, CK67 (baterie 7 000 mAh); ładowarki CK6X-BC-4BAY-0, CK6X-BC-16BAY-0' },
       { name: 'Wskaźnik LED', value: 'Tak, osobny dla każdego gniazdka' },
     ],
     applications: ['Praca wielozmianowa', 'Ładowanie baterii zapasowych', 'Duże floty'],
@@ -81578,7 +81778,16 @@ Skaner FlexRange S0803 z jasnozielonym laserem celowniczym czyta kody 1D/2D z od
 
 Łączność w wariancie WWAN: 5G (NSA/SA, prywatne sieci 5G i CBRS) + Gigabit LTE, eSIM + nano SIM, dual SIM/dual standby i dwuzakresowy GNSS L1/L5 (GPS, GLONASS, Galileo, BeiDou, QZSS, NavIC) — komplet dla kurierów i pracowników terenowych. Wszystkie warianty mają Wi-Fi 6E (tri-band, 2×2 MU-MIMO), Bluetooth 5.3 z drugim radiem BLE oraz NFC z obsługą płatności zbliżeniowych (ECP 1.0/2.0). Układ Secure Element chroni wrażliwe dane przed atakami sprzętowymi.
 
-Ekosystem akcesoriów obejmuje uchwyt nadgarstkowy do pracy bez użycia rąk (wearable), uchwyt pistoletowy do intensywnego skanowania, uchwyt z czytnikiem RFID do szybkiej inwentaryzacji, boot ochronny (upadki do 2,1 m) oraz ładowarki na platformie Universal Dock — wspólnej dla kolejnych terminali Honeywell.`,
+Ekosystem akcesoriów obejmuje uchwyt nadgarstkowy do pracy bez użycia rąk (wearable), uchwyt pistoletowy do intensywnego skanowania, uchwyt z czytnikiem RFID do szybkiej inwentaryzacji, boot ochronny (upadki do 2,1 m) oraz ładowarki na platformie Universal Dock — wspólnej dla kolejnych terminali Honeywell.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja z wyjściem HDMI Honeywell CT37 HC (CT37-DB-UVN-HC0)](/produkt/honeywell-ct37-db-uvn-hc0)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+W pudełku CT37 są bateria i pasek na rękę. Przewodu USB-C, zasilacza i rysika nie ma w zestawie. Stacja CT37-DB-UVN-HC0 ma białą obudowę wersji HC. Stacja przyjmuje CT37 bez osłony z baterią standardową lub rozszerzoną.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['retail', 'logistyka', 'magazyn'],
@@ -81789,7 +81998,16 @@ Bateria: standardowa 4 775 mAh (pełna zmiana 10-12 h), rozszerzona 7 692 mAh (1
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowanymi aktualizacjami systemu Android — wieloletnie wsparcie bez wymiany sprzętu. Wspólna bateria 4 775 mAh / 7 692 mAh z CT40 i CT45 chroni inwestycję w zapas baterii. IP65+IP68 z dropem 3,0 m redukuje koszty napraw i wymian — średni czas życia terminala 5+ lat. Waga 314 g minimalizuje zmęczenie pracowników na długich zmianach.
 
-Pełna specyfikacja techniczna na stronie producenta.`,
+Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja Honeywell IH45 / CT40 (CT40-HB-UVN-0)](/produkt/honeywell-ih45-cradle)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+CT47 ma w zestawie baterię, przewód USB-A / USB-C, pasek na rękę i śrubę T6 do pokrywy kart. Zasilacza USB nie ma w opakowaniu. Przewód z pudełka ładuje CT47 z gniazda USB komputera. Stacja CT40-HB-UVN-0 przyjmuje CT47 bez osłony i ładuje zapasową baterię.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja', 'outdoor'],
@@ -81961,7 +82179,7 @@ Pełna specyfikacja techniczna na stronie producenta.`,
       { question: 'Czym różni się skaner SR, FlexRange i FlexRange XLR?', answer: 'Standard Range (SR, S0703): do 50 cm — kasa, lada, kompletacja bliskiego zasięgu. FlexRange (S0803): bliski + daleki do 5 m — regały średniej wysokości, podwójny tryb pracy. FlexRange XLR (S0E03): 8 cm – 24 m — najwyższe regały magazynów wysokiego składowania bez drabiny. Różnice cenowe: SR→FlexRange +490 zł, SR→XLR +860 zł. W magazynach z regałami >3 m rekomendujemy FlexRange XLR.' },
       { question: 'Czy Honeywell CT47 ma 5G?', answer: 'Tak — warianty CT47-X1N mają 5G NR Sub-6 GHz + LTE + CBRS + GPS/GNSS z dual SIM (nano + eSIM). Warianty CT47-X0N mają tylko Wi-Fi 6E (bez 5G/GPS). Dopłata za 5G: ok. 620 zł netto. 5G rekomendowane do: field service, transport, kurierzy, lokalizacje bez Wi-Fi.' },
       { question: 'Jaki system operacyjny ma CT47?', answer: 'CT47 działa na platformie Honeywell Mobility Edge z systemem Android i gwarantowanymi wieloletnimi aktualizacjami bezpieczeństwa. Zero-touch enrollment, integracja z MDM (SOTI, Ivanti, VMware), Operational Intelligence do monitoringu floty w czasie rzeczywistym.' },
-      { question: 'Jak długo trzyma bateria w CT47?', answer: 'CT47 oferuje 3 opcje baterii: standardowa 4 775 mAh (10-12 h pracy), rozszerzona 7 692 mAh (16+ h, grubsza obudowa), bezprzewodowa 4 680 mAh (Qi). Wszystkie z hot-swap — wymiana bez wyłączania. Bateria rozszerzona rekomendowana do pracy wielozmianowej. Ładowarka 4-gniazdowa CT40-CB-UVB dostępna osobno.' },
+      { question: 'Jak długo trzyma bateria w CT47?', answer: 'CT47 oferuje 3 opcje baterii: standardowa 4 775 mAh (10-12 h pracy), rozszerzona 7 692 mAh (16+ h, grubsza obudowa), bezprzewodowa 4 680 mAh (Qi). Wszystkie z hot-swap — wymiana bez wyłączania. Bateria rozszerzona rekomendowana do pracy wielozmianowej. Baterie ładuje ładowarka CT40-QBC-0. CT40-CB-UVB-0 to stacja na 4 terminale w osłonie.' },
       { question: 'Ile waży Honeywell CT47?', answer: 'CT47 waży 314 g z baterią standardową 4 775 mAh i 358 g z baterią rozszerzoną 7 692 mAh. To format zbliżony do smartfona — smukły (15,2 mm), jednoręczna obsługa bez zmęczenia. Lżejszy od CK62 (440 g) i MC3400 (490 g), cięższy od CT32 (269 g).' },
       { question: 'Czy CT47 nadaje się do pracy na zewnątrz?', answer: 'Tak. CT47 ma IP65+IP68 (pyłoszczelny + wodoodporny, zanurzenie), MIL-STD-810H (3,0 m drop z bootem), temperatura pracy -20°C do +50°C. Ekran 550 nitów czytelny w słońcu. Warianty 5G z GPS/GLONASS/Galileo do nawigacji i śledzenia. Idealny do field service, transportu i kurierów.' },
       { question: 'Gdzie serwisować Honeywell CT47 w Polsce?', answer: 'Serwis Honeywell w Polsce realizowany jest przez autoryzowanych partnerów serwisowych. Honeywell oferuje kontrakty Gold (3 lub 5 lat, naprawa standardowa) i Platinum (3 lub 5 lat, naprawa ekspresowa z urządzeniem zastępczym). Informacje o serwisie na stronie honeywell.com.' },
@@ -81987,7 +82205,7 @@ const ct47Accessories: Product[] = [
       { name: 'Part Number', value: 'CT47-PB-1' },
       { name: 'Typ', value: 'Obudowa ochronna (rubber boot)' },
       { name: 'Materiał', value: 'TPU' },
-      { name: 'Kompatybilność', value: 'Honeywell CT47' },
+      { name: 'Kompatybilność', value: 'Honeywell CT47, Honeywell IH45' },
     ],
     applications: ['Ochrona przed upadkami', 'Praca magazynowa', 'Zwiększenie drop z 2,4 m do 3,0 m'],
     priceFrom: 63,
@@ -82107,7 +82325,16 @@ Bateria 7 000 mAh z hot-swap: CK62 korzysta z tej samej baterii co CK67 (CK67-BT
 
 Koszt posiadania (TCO): platforma Mobility Edge z gwarantowaną ścieżką aktualizacji Android 14→18 — 5 generacji OS bez wymiany sprzętu. Współdzielona bateria z CK67 (CK67-BTSC-001) i ładowarki CK6X — floty mieszane CK62+CK67 korzystają z tej samej infrastruktury ładowania. Waga 440 g (najlżejszy terminal gun w klasie) redukuje zmęczenie pracowników i koszty wypadków przy pracy w długich zmianach.
 
-Pełna specyfikacja techniczna na stronie producenta.`,
+Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja ładowania 1-gniazdowa CK62 (CK62-HB-UVN-0)](/produkt/honeywell-ck62-stacja-ladowania-1-gniazdowa)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+Zestaw CK62 zawiera baterię 7000 mAh, przewód USB-C i pasek na rękę. Zasilacz sieciowy nie jest dołączony do terminala. Dołączony przewód USB-C pozwala ładować CK62 z portu USB komputera. Stacja CK62-HB-UVN-0 przyjmuje terminal bez osłony i ładuje jedną zapasową baterię.`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'honeywell',
     tags: ['magazyn', 'logistyka', 'retail', 'produkcja'],
@@ -82259,8 +82486,8 @@ const ck62Accessories: Product[] = [
     id: 'honeywell-ck62-homebase',
     slug: 'honeywell-ck62-stacja-ladowania-1-gniazdowa',
     name: 'Stacja ładowania 1-gniazdowa CK62',
-    shortDescription: 'Stacja ładowania 1-gniazdowa CK62 — Home Base z Ethernet i USB do ładowania i synchronizacji',
-    description: 'Stacja ładowania Honeywell CK62-HB-UVN-0 (Home Base) na 1 terminal CK62. Ładuje terminal i zapewnia łączność przewodową: Ethernet RJ-45 do synchronizacji danych i aktualizacji firmware, port USB do komunikacji z komputerem. Kompaktowa konstrukcja na biurko. Uniwersalna wersja kompatybilna z terminalem z obudową i bez.',
+    shortDescription: 'Stacja ładowania 1-gniazdowa CK62 — Home Base z USB do ładowania terminala bez osłony',
+    description: 'Stacja ładowania Honeywell CK62-HB-UVN-0 (Home Base) na 1 terminal CK62. Ładuje terminal i ma port USB do komunikacji z komputerem. Stacja nie ma portu Ethernet. Kompaktowa konstrukcja na biurko. Stacja przyjmuje terminal tylko bez osłony. Zestaw obejmuje stację, gniazdo CK62-UCP-N, gniazdo baterii i zasilacz. Do zasilacza potrzebny jest osobny [przewód sieciowy EU 77900508E](/produkt/honeywell-ih45-cord-eu).',
     categoryId: 'akcesoria',
     subcategoryIds: ['stacje-ladowarki-terminali'],
     manufacturerId: 'honeywell',
@@ -82270,9 +82497,8 @@ const ck62Accessories: Product[] = [
     specifications: [
       { name: 'Part Number', value: 'CK62-HB-UVN-0' },
       { name: 'Typ', value: 'Home Base, 1 gniazdko terminala' },
-      { name: 'Ethernet', value: 'RJ-45 10/100/1000' },
       { name: 'USB', value: 'USB Type-A do komunikacji z PC' },
-      { name: 'Kompatybilność', value: 'Honeywell CK62 (uniwersalna wersja)' },
+      { name: 'Kompatybilność', value: 'Honeywell CK62 (bez osłony)' },
     ],
     applications: ['Ładowanie terminala', 'Synchronizacja danych', 'Biurko stanowisko pracy'],
     priceFrom: 677,
@@ -85914,7 +86140,12 @@ Kluczowe przewagi M3 SM24: hot-swap baterii 4000 mAh (wymiana bez wyłączania u
 
 Warianty: SM24 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM24 X (Wi-Fi + 4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 2000 tumble wg MIL-STD-810H, praca od -20°C do +50°C.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami i uproszczonego wdrożenia. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Gdzie kupić M3 SM24? Zamów bezpośrednio w TAKMA lub skontaktuj się po indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami i uproszczonego wdrożenia. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Gdzie kupić M3 SM24? Zamów bezpośrednio w TAKMA lub skontaktuj się po indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+Każdy SM24 ma w zestawie baterię 4000 mAh. Zasilacz SM2X-PWSP-CEU z przewodem USB jest osobnym akcesorium.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -85992,7 +86223,7 @@ M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack 
       { question: 'Jaki skaner ma M3 SM24?', answer: 'SM24 jest wyposażony w imager 2D CM60E — odczytuje kody 1D (EAN, Code128, Code39), 2D (QR, DataMatrix, PDF417) i kody z ekranów. Jeden skaner bez wariantów zasięgu — upraszcza wdrożenie i serwis.' },
       { question: 'Jak długo M3 Mobile wspiera aktualizacje Androida?', answer: 'M3 Mobile deklaruje wsparcie SM24 od Android 16 do Android 18 (3 generacje). Dla porównania: Zebra TC22/TC27 — LifeGuard 10 lat (do 2034), Honeywell CT32 — Mobility Edge do Android 18. SM24 ma krótszy deklarowany cykl wsparcia niż Zebra, porównywalny z Honeywellem.' },
       { question: 'Do czego nadaje się M3 SM24?', answer: 'Kompletacja zamówień e-commerce (WMS, BaseLinker), przyjęcia i wydania towaru w magazynie, inwentaryzacja z czytnikiem 2D CM60E, obsługa klienta w retail (sprawdzanie cen, dostępności), logistyka ostatniej mili (model X z LTE/GPS). SM24 to ekonomiczna alternatywa dla Zebra TC22/TC27 z większą pamięcią i hot-swap baterii.' },
-      { question: 'Jakie akcesoria są dostępne do M3 SM24?', answer: 'Bateria standardowa 4000 mAh (SX2X-BATT-S40), stacja dokująca 2-gniazdowa (SX2X-2CRD-C00), stacja dokująca 2-gniazdowa z ładowarką baterii (SX2X-2CRD-CC0), zasilacz EU (SM2X-PWSP-2EU). Opcjonalnie: bateria rozszerzona 6000 mAh, boot ochronny (zwiększa odporność na upadki z 1,5 m do 1,8 m).' },
+      { question: 'Jakie akcesoria są dostępne do M3 SM24?', answer: 'Bateria standardowa 4000 mAh (SX2X-BATT-S40), stacja dokująca 2-gniazdowa (SM2X-2CRD-C00), stacja dokująca 2-gniazdowa z ładowarką baterii (SX2X-2CRD-CC0), zasilacz EU (SM2X-PWSP-2EU). Opcjonalnie: bateria rozszerzona 6000 mAh, boot ochronny (zwiększa odporność na upadki z 1,5 m do 1,8 m).' },
       { question: 'Jakie są alternatywy dla M3 SM24?', answer: '[Zebra TC22](/produkt/zebra-tc22) (od 2 417 zł) — tańsza, FHD+, IP68, LifeGuard 10 lat, Mobility DNA. [Zebra TC27](/produkt/zebra-tc27) (od 2 690 zł) — jak TC22 + 5G + GPS. [Honeywell CT32](/produkt/honeywell-ct32) (od 3 775 zł) — hot-swap, FlexRange do 15 m, 5G, Mobility Edge. [M3 SM25](/produkt/m3-sm25) — wyższy model z 5G, FHD+ i skanerem SE5500. SM24 wyróżnia się 8 GB RAM, hot-swap w niższej cenie niż CT32 i nowszym Androidem 16.' },
       { question: 'Gdzie kupić M3 SM24 w Polsce?', answer: 'M3 SM24 kupisz bezpośrednio w TAKMA — partner M3 Mobile w Polsce. Oferujemy doradztwo w doborze wariantu (SM24 W vs X), konfigurację M3 Speedpack, urządzenia demo do testów pilotażowych oraz serwis gwarancyjny i pogwarancyjny. Skontaktuj się telefonicznie lub przez formularz na stronie /kontakt.' },
       { question: 'Jaka gwarancja na M3 SM24 i gdzie serwis?', answer: 'M3 SM24 objęty jest 1-roczną gwarancją bazową (Basic). Opcjonalnie: M3 Speed Care 3 lata (SM24-SPST-FB3) lub 5 lat (SM24-SPST-FB5) — ochrona przypadkowa, czas naprawy 7 dni, gwarancja baterii 1 rok. Kontrakt trzeba wykupić w ciągu 45 dni. Naprawy gwarancyjne realizuje M3Mobile GmbH (Niemcy), TAKMA koordynuje proces w Polsce. Szczegóły: [M3 Speed Care — przewodnik](/poradnik/m3-speed-care-kontrakty-serwisowe).' },
@@ -86105,7 +86336,12 @@ Kluczowe przewagi M3 SM25 nad tańszym [SM24](/produkt/m3-sm24): ekran FHD+ zami
 
 Warianty: SM25 W (Wi-Fi only) do pracy w zasięgu sieci bezprzewodowej, SM25 X (Wi-Fi + 5G/4G LTE + GPS) z dual SIM (nano + eSIM) do pracy w terenie i logistyki mobilnej. Oba warianty: Gorilla Glass 5, IP67, upadki z 1,5 m (1,8 m z bootem ochronnym), 1000 tumble wg MIL-STD-810H, praca od -20°C do +50°C, hot-swap baterii 4000/6000 mAh.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Premiera M3 SM25 w Polsce: czerwiec 2026 — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Premiera M3 SM25 w Polsce: czerwiec 2026 — skontaktuj się z TAKMA po rezerwację i indywidualną wycenę. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+Bateria 4000 mAh jest częścią zestawu SM25. Do ładowania przez USB-C służy zasilacz SM2X-PWSP-CEU z przewodem, sprzedawany osobno.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     priceFrom: 3653.36,
@@ -86286,7 +86522,16 @@ Kluczowe przewagi M3 SM30: procesor QCM6490 (ten sam co w Zebra TC53e) z wydajno
 
 Warianty: SM300E (Wi-Fi 6E only) do pracy w zasięgu sieci bezprzewodowej, SM305E (Wi-Fi 6E + 5G/4G LTE + GPS) z eSIM do pracy w terenie i logistyki mobilnej. Oba warianty: Android 14 z gwarantowaną aktualizacją do Android 18, BLE 5.3 z Beaconing (działa nawet po wyłączeniu urządzenia), USB 3.1 OTG, NFC z emulacją kart, praca od -20°C do +55°C.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-C M3 SM30 (SM30-PWSP-CEU)](/produkt/m3-sm30-zasilacz-usb-c)
+
+Zestaw SM30 zawiera baterię 5000 mAh, ale nie ma w nim zasilacza. Przewód USB jest w komplecie z zasilaczem SM30-PWSP-CEU. Terminal można też ładować w [stacji 1-gniazdowej SM30-1CRD-C00](/produkt/m3-sm30-stacja-dokujaca-1) z [zasilaczem SM30-PWSP-2EU](/produkt/m3-sm30-zasilacz-2slot).
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -86507,7 +86752,16 @@ Kluczowe przewagi M3 SL20: ekran 5,5" z Gorilla Glass (obsługa rękawic i mokry
 
 Dwa warianty pamięci M3 SL20: 4/64 GB (SL204C-T2CHSE-HF-01) do podstawowych zadań WMS i inwentaryzacji, 8/128 GB (SL204C-T2CHSE-HF-03) do wymagających aplikacji z dużą ilością danych. Oba z Wi-Fi 5 (802.11ac), Bluetooth 5.0 BLE, NFC (ISO 14443 A/B, Mifare, HCE), kamera 13 MP + 5 MP, GPS/GLONASS/Galileo/BeiDou, dual SIM (nano + eSIM). Android 13 z aktualizacjami do Android 15, M3 Speedpack do zarządzania urządzeniami. Terminal mobilny M3 SL20 Android do magazynu i logistyki w cenie smartfona.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Opcjonalne kontrakty serwisowe M3 Speed Care: 3-letni (SL20-SPST-FB3) i 5-letni (SL20-SPST-FB5).`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Opcjonalne kontrakty serwisowe M3 Speed Care: 3-letni (SL20-SPST-FB3) i 5-letni (SL20-SPST-FB5).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB-C M3 SL20+ (SL20-PWSP-CEU)](/produkt/m3-sl20-zasilacz-usb-c)
+
+W pudełku SL20+ są bateria, pasek na dłoń i folia ochronna. Zasilacz SL20-PWSP-CEU ma w komplecie przewód z wtykiem USB-C. Alternatywą jest [stacja 1-gniazdowa SL20-1CRD-C00](/produkt/m3-sl20-stacja-dokujaca-1), zasilana przez [zasilacz SL20-PWSP-2EU](/produkt/m3-sl20-zasilacz-2slot).
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -86718,7 +86972,16 @@ Kluczowe przewagi M3 SL20K: 30 klawiszy fizycznych z podświetleniem + 5 program
 
 Wariant L2KX4C: 4G LTE + Wi-Fi 5 + GPS + Bluetooth 5.0 + NFC. Kamera tylna 13 MP do dokumentacji fotograficznej uszkodzeń i etykiet, przednia 5 MP do wideokonferencji. Android 13 z aktualizacjami do Android 15, karta microSD do 256 GB, USB 2.0 OTG. Opcjonalny uchwyt pistoletowy (trigger handle) do intensywnego skanowania.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Zasilacz USB M3 SL20K (SL2K-PWSP-CEU)](/produkt/m3-sl20k-zasilacz-usb-c)
+
+Pudełko SL20K zawiera baterię 5200 mAh. Zasilacza i przewodu USB w nim nie ma. Przewód USB-C – USB-A jest częścią zestawu SL2K-PWSP-CEU. Na biurku terminal ładuje [stacja SL2K-1CRD-C00](/produkt/m3-sl20k-stacja-dokujaca-1), która wymaga [zasilacza SL2K-PWSP-2EU](/produkt/m3-sl20k-zasilacz-2slot).
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -87315,7 +87578,17 @@ Dla kogo? M3 US20 to terminal zaprojektowany dla firm potrzebujących niezawodne
 
 Kluczowe przewagi M3 US20: hot-swap baterii 6700 mAh (wymiana bez wyłączania, sesje BT/WWAN/WLAN utrzymane), IP65, upadki z 1,8 m wg MIL-STD-810G, 2000× tumble z 1 m. Szeroki wybór skanerów — SE4770 (standard 2D), SE4770 pod kątem 45° (ergonomiczne skanowanie), SE5500 Smart Focus (daleki zasięg do 15 m), SE4850 ERI (Long Range) i SE4750. Kamera tylna 16 MP z autofokusem. Dwie wersje łączności: US20W (Wi-Fi a/b/g/n/ac) i US20X (Wi-Fi + 4G LTE + GPS).
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. Bogaty ekosystem akcesoriów: stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. Bogaty ekosystem akcesoriów: stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Stacja 2-gniazdowa USB M3 US20 / US30 (US20-2CRD-CU0)](/produkt/m3-us20-stacja-dokujaca-2-usb)
+- [Zasilacz do stacji 2-gniazdowej i ładowarki 4 baterii M3 US20 / US30 (US20-PWSP-2EU)](/produkt/m3-us20-zasilacz-2slot)
+
+US20 ma w zestawie baterię, ale nie ma w nim stacji ani zasilacza. Ten sam zasilacz pasuje do [stacji 2-gniazdowej z Ethernetem US20-2CRD-EC0](/produkt/m3-us20-stacja-dokujaca-2-eth). Przez port USB terminal ładuje [zasilacz US20-PWSP-U00](/produkt/m3-us20-zasilacz-usb). Przewód USB-A – USB-C do tego zasilacza jest osobnym akcesorium.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -87520,7 +87793,17 @@ Dla kogo? M3 US30 to terminal zaprojektowany dla firm potrzebujących niezawodne
 
 Kluczowe przewagi M3 US30 vs [US20](/produkt/m3-us20): Android 13 (z 10), Wi-Fi 6 802.11ax (z ac), nowy skaner SE5800 (następca SE5500 z rozszerzonym zasięgiem i wyższą szybkością), 4 typy klawiatury (nowa: funkcyjno-numeryczna 38 klawiszy). Zachowana konstrukcja: hot-swap baterii 6700 mAh (wymiana bez wyłączania, sesje BT/WLAN utrzymane), IP65, upadki z 1,8 m wg MIL-STD-810G, 2000× tumble z 1 m. Skanery: SE4770 (standard 2D), SE5500 Smart Focus (daleki zasięg do 15 m), SE5800 (najnowszy, rozszerzony zasięg). Kamera tylna 16 MP z autofokusem.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. US30 jest w pełni kompatybilny z akcesoriami US20 — stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise z platformą M3 Speedpack do zarządzania urządzeniami. US30 jest w pełni kompatybilny z akcesoriami US20 — stacje dokujące 2- i 5-gniazdowe z Ethernet, ładowarki 4- i 20-gniazdowe baterii, uchwyty pistoletowe, stacja wózkowa z zasilaniem 24-96V, kabury i booty ochronne. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Pełna specyfikacja techniczna na stronie producenta.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Stacja 2-gniazdowa USB M3 US20 / US30 (US20-2CRD-CU0)](/produkt/m3-us20-stacja-dokujaca-2-usb)
+- [Zasilacz do stacji 2-gniazdowej i ładowarki 4 baterii M3 US20 / US30 (US20-PWSP-2EU)](/produkt/m3-us20-zasilacz-2slot)
+
+Zestaw US30 obejmuje baterię 6700 mAh, pasek na dłoń i folię na ekran. Stacja US20-2CRD-CU0 ładuje terminal i zapasową baterię. US30 obsługuje też ładowanie przez port USB-C z [zasilacza US20-PWSP-U00](/produkt/m3-us20-zasilacz-usb). Do tego sposobu potrzebny jest osobny przewód USB-A – USB-C.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -88425,7 +88708,7 @@ const m3US20Accessories: Product[] = [
   {
     id: 'm3-us20-stacja-dokujaca-2-usb',
     slug: 'm3-us20-stacja-dokujaca-2-usb',
-    name: 'Stacja dokująca 2-gniazdowa USB M3 US20',
+    name: 'Stacja 2-gniazdowa USB M3 US20 / US30',
     priceFrom: 371.37,
     shortDescription: 'Stacja dokująca 2-gniazdowa M3 US20 — ładowanie terminala + baterii, USB host/client',
     description: `Stacja dokująca 2-gniazdowa USB (US20-2CRD-CU0) do terminali M3 US20/US30. Gniazdo główne ładuje terminal, drugie gniazdo ładuje baterię zapasową (US20-BATT-E67). Złącze DC, USB host/client. Wymiary: 105 × 154 × 86 mm. Wymaga zasilacza US20-PWSP-2XX (12V/3A, sprzedawany osobno). Kompatybilna z M3 US20 i US30.`,
@@ -88775,7 +89058,7 @@ const m3US20Accessories: Product[] = [
   {
     id: 'm3-us20-zasilacz-2slot',
     slug: 'm3-us20-zasilacz-2slot',
-    name: 'Zasilacz do stacji 2-gniazdowej / ładowarki 4 baterii M3 US20',
+    name: 'Zasilacz do stacji 2-gniazdowej i ładowarki 4 baterii M3 US20 / US30',
     priceFrom: 137.39,
     shortDescription: 'Zasilacz 12VDC/3A do stacji 2-gniazdowych i ładowarki 4 baterii M3 US20',
     description: `Zasilacz (US20-PWSP-2EU) do stacji dokujących 2-gniazdowych (US20-2CRD-CU0, US20-2CRD-EC0) i ładowarki 4 baterii (US20-04BC-C00) terminali M3 US20/US30. Wejście: 100-240VAC, wyjście: 12VDC/3A. Wtyczka EU. Wymagany do pracy stacji i ładowarki — sprzedawany osobno.`,
@@ -88792,7 +89075,7 @@ const m3US20Accessories: Product[] = [
       { name: 'Wejście', value: '100-240VAC' },
       { name: 'Wyjście', value: '12VDC / 3A' },
       { name: 'Wtyczka', value: 'EU' },
-      { name: 'Kompatybilność', value: 'US20-2CRD-CU0, US20-2CRD-EC0 (stacje 2-gniazdowe), US20-04BC-C00 (ładowarka 4 baterii)' },
+      { name: 'Kompatybilność', value: 'M3 US20, US30: US20-2CRD-CU0, US20-2CRD-EC0 (stacje 2-gniazdowe), US20-04BC-C00 (ładowarka 4 baterii)' },
     ],
     faq: [],
     availability: 'available' as const,
@@ -90009,7 +90292,17 @@ Kluczowe cechy M3 UL20: procesor 2,0–2,2 GHz Octa-core, pamięć 2 GB / 16 GB 
 
 Warianty skanerów: Zebra SE4750 (zasięg standardowy — picking, skanowanie z ręki), Zebra SE4850 (daleki zasięg — regały paletowe) lub Zebra SE5800/SE58 (ultra daleki zasięg — modele FX). Wersja UL20F Freezer działa od −30°C z podgrzewaniem ekranu i okna skanera. Nowsze modele UL20 FX oferują: skaner SE5800, USB-C, Bluetooth 5.3, Wi-Fi 6 (802.11ax), hot-swap baterii, 8 GB / 128 GB pamięci. Android 9/10 (modele standardowe) lub Android 10 (modele FX).
 
-M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacje dokujące, ładowarki baterii, booty ochronne) są w pełni kompatybilne z UL30. M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack (platforma MDM do zdalnego zarządzania, aktualizacji firmware i konfiguracji terminali M3 Mobile). TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Jeśli potrzebujesz nowszego modelu z NPU AI i Wi-Fi 6E, sprawdź [M3 UL30](/produkt/m3-ul30).`,
+M3 UL20 jest poprzednikiem [M3 UL30](/produkt/m3-ul30) — akcesoria UL20 (stacje dokujące, ładowarki baterii, booty ochronne) są w pełni kompatybilne z UL30. M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack (platforma MDM do zdalnego zarządzania, aktualizacji firmware i konfiguracji terminali M3 Mobile). TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny. Jeśli potrzebujesz nowszego modelu z NPU AI i Wi-Fi 6E, sprawdź [M3 UL30](/produkt/m3-ul30).
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Stacja 2-gniazdowa USB M3 UL20 / UL30 (UL20-2CRD-CU0)](/produkt/m3-ul30-stacja-dokujaca-2-usb)
+- [Zasilacz do stacji 2-gniazdowej M3 UL20 / UL30 (UL20-PWSP-2EU)](/produkt/m3-ul30-zasilacz-2slot)
+
+UL20 ładuje się w stacji dokującej. Stacja i jej zasilacz są osobnymi akcesoriami. Stacja UL20-2CRD-CU0 ma gniazdo terminala i gniazdo zapasowej baterii. [Wersja z Ethernetem UL20-2CRD-EU0](/produkt/m3-ul30-stacja-dokujaca-2-ethernet) korzysta z tego samego zasilacza.
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -90445,7 +90738,17 @@ Kluczowe przewagi M3 UL30: procesor Qualcomm QCS6490 (2,7 GHz, 8 rdzeni, litogra
 
 Warianty skanerów: Zebra SE4770 (zasięg standardowy do ~92 cm — picking, skanowanie z ręki) lub Zebra SE5800 (daleki zasięg do 15 m — regały paletowe, high-bay). Wersja UL30F (Frozen) — terminal do chłodni i mroźni od −30°C z podgrzewaniem okna skanera i podświetlenia LCD. Terminal mobilny z klawiaturą M3 UL30 jest certyfikowany IP67 i MIL-STD-810H z upadkami z 3,0 m (z boot) na beton. Android 14 z gwarancją aktualizacji do Android 18 (4 generacje OS). Terminal Android do magazynu z klawiaturą fizyczną.
 
-M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny.`,
+M3 Mobile (Korea, zał. 2000) to producent enterprise terminali mobilnych z platformą M3 Speedpack do zarządzania urządzeniami. TAKMA jest partnerem M3 Mobile w Polsce — zapewniamy doradztwo, konfigurację, serwis gwarancyjny (1 rok) i pogwarancyjny.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Stacja 2-gniazdowa USB M3 UL20 / UL30 (UL20-2CRD-CU0)](/produkt/m3-ul30-stacja-dokujaca-2-usb)
+- [Zasilacz do stacji 2-gniazdowej M3 UL20 / UL30 (UL20-PWSP-2EU)](/produkt/m3-ul30-zasilacz-2slot)
+
+W pudełku UL30 są terminal i bateria 6700 mAh. Stacja UL20-2CRD-CU0 ładuje jednocześnie terminal i zapasową baterię. Do kilku terminali służy [stacja 8-gniazdowa UL20-8CRD-C00](/produkt/m3-ul30-stacja-dokujaca-8) z [zasilaczem UL20-PWSP-8EU](/produkt/m3-ul30-zasilacz-8slot).
+`,
     categoryId: 'terminale-mobilne',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['terminale-mobilne'],
@@ -90718,10 +91021,10 @@ const m3UL30Accessories: Product[] = [
   {
     id: 'm3-ul30-stacja-dokujaca-2-usb',
     slug: 'm3-ul30-stacja-dokujaca-2-usb',
-    name: 'Stacja dokująca 2-gniazdowa USB M3 UL30',
+    name: 'Stacja 2-gniazdowa USB M3 UL20 / UL30',
     priceFrom: 476.8,
     shortDescription: 'Stacja dokująca 2-gniazdowa USB M3 UL30/UL20 — USB Host + USB-C Client',
-    description: `Stacja dokująca 2-gniazdowa (UL20-2CRD-CU0) do terminali M3 UL30 i UL20. Ładuje 2 terminale jednocześnie, porty USB Host i USB-C Client. Wymaga zasilacza UL20-PWSP-2EU (sprzedawany osobno). Kompatybilna z M3 UL20 i UL30.`,
+    description: `Stacja dokująca 2-gniazdowa (UL20-2CRD-CU0) do terminali M3 UL30 i UL20. Ładuje terminal i zapasową baterię, porty USB Host i USB-C Client. Wymaga zasilacza UL20-PWSP-2EU (sprzedawany osobno). Kompatybilna z M3 UL20 i UL30.`,
     categoryId: 'akcesoria',
     manufacturerId: 'm3-mobile',
     subcategoryIds: ['stacje-ladowarki-terminali', 'akcesoria-do-terminali'],
@@ -90729,7 +91032,7 @@ const m3UL30Accessories: Product[] = [
     images: ['/images/products/UL20-2CRD-CU0.png'],
     imageDescriptions: ['Stacja dokująca 2-gniazdowa USB do terminali M3 UL30 i UL20 — widok z przodu'],
     seoTitle: 'Stacja dokująca 2-gniazdowa USB M3 UL30 — UL20-2CRD-CU0',
-    seoDescription: 'Stacja dokująca 2-gniazdowa USB (UL20-2CRD-CU0) do terminali M3 UL30 i UL20. USB Host + USB-C Client. Ładowanie 2 terminali jednocześnie.',
+    seoDescription: 'Stacja dokująca 2-gniazdowa USB (UL20-2CRD-CU0) do terminali M3 UL30 i UL20. USB Host + USB-C Client. Ładowanie terminala i zapasowej baterii.',
     specifications: [
       { name: 'Part Number', value: 'UL20-2CRD-CU0' },
       { name: 'Liczba gniazd', value: '2' },
@@ -91139,7 +91442,7 @@ const m3UL30Accessories: Product[] = [
   {
     id: 'm3-ul30-zasilacz-2slot',
     slug: 'm3-ul30-zasilacz-2slot',
-    name: 'Zasilacz do stacji 2-gniazdowej M3 UL30',
+    name: 'Zasilacz do stacji 2-gniazdowej M3 UL20 / UL30',
     priceFrom: 137.39,
     shortDescription: 'Zasilacz 12VDC/3A do stacji 2-gniazdowej i ładowarki 4 baterii M3 UL30/UL20',
     description: `Zasilacz (UL20-PWSP-2EU) do stacji dokującej 2-gniazdowej (UL20-2CRD-CU0/EU0) i ładowarki 4 baterii (UL20-04BC-C00). Wejście 100-240VAC, wyjście 12VDC/3A. Wersja EU.`,
@@ -91155,7 +91458,7 @@ const m3UL30Accessories: Product[] = [
       { name: 'Part Number', value: 'UL20-PWSP-2EU' },
       { name: 'Wejście', value: '100-240VAC' },
       { name: 'Wyjście', value: '12VDC/3A' },
-      { name: 'Kompatybilność', value: 'UL20-2CRD-CU0, UL20-2CRD-EU0, UL20-04BC-C00' },
+      { name: 'Kompatybilność', value: 'M3 UL20, UL30: UL20-2CRD-CU0, UL20-2CRD-EU0, UL20-04BC-C00' },
     ],
     faq: [],
     availability: 'available' as const,

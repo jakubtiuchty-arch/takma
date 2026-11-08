@@ -28,7 +28,16 @@ Obudowę i akcesoria HC przygotowano do dezynfekcji. Odporność na środki czys
 
 Obudowa ma grubość 13,5 mm. Ekran 6 cali chroni szkło Gorilla Glass 7, a panel dotykowy reaguje także na dotyk w rękawiczkach. Skaner Halogen DE2121-DL z dekodowaniem DeepSight odczytuje kody 1D i 2D, również uszkodzone lub zabrudzone. Zielony punkt Green Spot potwierdza udany odczyt.
 
-Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. Terminal ma przycisk PTT, NFC oraz aparaty 13 MP i 8 MP. Wymienna bateria 4000 mAh ładuje się bezprzewodowo w standardzie Qi. Bezprzewodowe stacje ładujące nie mają odsłoniętych styków, co ułatwia ich czyszczenie. Datalogic zapewnia 4 + 4 lata wsparcia sprzętu i oprogramowania, a gwarancja producenta wynosi 1 rok.`,
+Połączenie alarmowe uruchamia przycisk programowalny albo zdefiniowany gest. Terminal ma przycisk PTT, NFC oraz aparaty 13 MP i 8 MP. Wymienna bateria 4000 mAh ładuje się bezprzewodowo w standardzie Qi. Bezprzewodowe stacje ładujące nie mają odsłoniętych styków, co ułatwia ich czyszczenie. Datalogic zapewnia 4 + 4 lata wsparcia sprzętu i oprogramowania, a gwarancja producenta wynosi 1 rok.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+W zestawie Memor 12 HC jest bateria 4000 mAh z ładowaniem bezprzewodowym. Przewodu USB-C i zasilacza nie ma w opakowaniu. Jeden terminal ładuje bezprzewodowo [biała stacja 94A150126](/produkt/datalogic-memor-hc-94a150126). Ta stacja pracuje z tym samym przewodem i zasilaczem. Cztery terminale ładuje [stacja 94A150127](/produkt/datalogic-memor-hc-94a150127) z [zasilaczem 94ACC0380](/produkt/datalogic-psu-memor-12) i [przewodem sieciowym 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041).`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
   manufacturerId: 'datalogic',
@@ -145,7 +154,16 @@ Wersja HC jest przeznaczona do ciągłej dezynfekcji. Terminal i jego akcesoria 
 
 Są dwie konfiguracje z 6 GB RAM. Wersja 944950006 ma 64 GB pamięci flash. Wersja 944950023 ma 128 GB i baterię z funkcją SafeSwap, która chroni dane aplikacji podczas wymiany baterii.
 
-Skaner Halogen DE2121-DL z technologią Green Spot ułatwia identyfikację pacjenta, śledzenie leków i ewidencję sprzętu. Wezwanie alarmowe można przypisać do programowalnego przycisku lub do gestu. Biały klips 94ACC0411 z czerwonym przyciskiem alarmowym jest sprzedawany osobno. W stacji Smart Docking 94A150141 terminal pracuje w trybie Desktop. Producent udziela 1 roku gwarancji.`,
+Skaner Halogen DE2121-DL z technologią Green Spot ułatwia identyfikację pacjenta, śledzenie leków i ewidencję sprzętu. Wezwanie alarmowe można przypisać do programowalnego przycisku lub do gestu. Biały klips 94ACC0411 z czerwonym przyciskiem alarmowym jest sprzedawany osobno. W stacji Smart Docking 94A150141 terminal pracuje w trybie Desktop. Producent udziela 1 roku gwarancji.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane — sprzedawane osobno**
+
+- [Kabel USB-A – USB-C Datalogic 1,2 m (94ACC0327)](/produkt/datalogic-kabel-usb-c-skorpio-x5)
+- [Zasilacz sieciowy USB-A Datalogic z wtyczkami regionalnymi (94ACC0383)](/produkt/datalogic-zasilacz-usb-94acc0383)
+
+Memor 17 HC trafia do klienta z baterią 4000 mAh. Zestaw nie zawiera przewodu ani zasilacza. Biała [stacja 94A150126](/produkt/datalogic-memor-hc-94a150126) korzysta z tego samego przewodu i zasilacza. [Stacja Smart Docking 94A150141](/produkt/datalogic-memor-hc-94a150141) uruchamia tryb Desktop. Ta stacja wymaga [zasilacza 94ACC0380](/produkt/datalogic-psu-memor-12) i [przewodu EU 95A051041](/produkt/datalogic-przewod-zasilajacy-eu-95a051041).`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
   manufacturerId: 'datalogic',
@@ -552,7 +570,7 @@ Przewód łączy zasilacz ze stacją i nie wchodzi w skład zestawu.`,
     { name: 'Part Number', value: '94ACC0383' },
     { name: 'Typ', value: 'Zasilacz sieciowy z gniazdem USB-A' },
     { name: 'Wtyczki', value: '4 wymienne wtyczki regionalne' },
-    { name: 'Kompatybilność', value: 'Stacje 1-gniazdowe 94A150126 (Memor 12 HC / 17 HC), 94A150128 i 94A150129 (Memor 12/17) z przewodem 94ACC0327' },
+    { name: 'Kompatybilność', value: 'Stacje 1-gniazdowe 94A150126 (Memor 12 HC / 17 HC), 94A150128 i 94A150129 (Memor 12/17) z przewodem 94ACC0327; terminale Datalogic Skorpio X40, Skorpio X45, Falcon X60, Falcon X65, Memor 30 i Memor 35 z przewodem 94ACC0327' },
   ],
   applications: ['Zasilanie stacji jednogniazdowej'],
   compatibleAccessories: [],
@@ -583,7 +601,7 @@ const powerCordEu: Product = {
   specifications: [
     { name: 'Part Number', value: '95A051041' },
     { name: 'Typ', value: 'Przewód zasilający, wtyczka europejska' },
-    { name: 'Kompatybilność', value: 'Zasilacz Datalogic 94ACC0380' },
+    { name: 'Kompatybilność', value: 'Zasilacz Datalogic 94ACC0380; zasilacz 91ACC0048 do stacji Datalogic Skorpio X5' },
   ],
   applications: ['Podłączenie zasilacza stacji do sieci'],
   compatibleAccessories: [],

@@ -26,7 +26,16 @@ Wersja HC ma skaner Honeywell N6700 siódmej generacji z diodowym celownikiem. O
 
 Akumulator 3846 mAh wymienia się bez wyłączania terminala. Do rozmów w zespole służą przycisk Push to Talk, głośnik i trzy mikrofony z redukcją szumów. Układ Secure Element oddziela przetwarzanie wrażliwych danych od pozostałych aplikacji.
 
-Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i Wi-Fi 6E. Obie konfiguracje mają pamięć operacyjną 8 GB i pamięć flash 128 GB. Platforma Mobility Edge przewiduje kolejne wersje systemu Android, od 14 do 18. W zestawie są bateria i zaślepka portu USB-C. Stacje Universal Dock, ładowarka baterii, klips i pasek mają osobne wersje HC.`,
+Oferta obejmuje CT37-X0N-56S10HG z Wi-Fi 6E oraz CT37-X1N-56S10HG z modemem 5G i Wi-Fi 6E. Obie konfiguracje mają pamięć operacyjną 8 GB i pamięć flash 128 GB. Platforma Mobility Edge przewiduje kolejne wersje systemu Android, od 14 do 18. W zestawie są bateria i zaślepka portu USB-C. Stacje Universal Dock, ładowarka baterii, klips i pasek mają osobne wersje HC.
+
+## Co jest potrzebne do użycia?
+
+**Wymagane dla ładowania w stacji — sprzedawane osobno**
+
+- [Stacja z wyjściem HDMI Honeywell CT37 HC (CT37-DB-UVN-HC0)](/produkt/honeywell-ct37-db-uvn-hc0)
+- [Przewód sieciowy EU Honeywell (77900508E)](/produkt/honeywell-ih45-cord-eu)
+
+W pudełku CT37 HC są bateria CT37-BTSC-002 i zaślepka portu USB-C. Przewodu USB-C, zasilacza i paska na rękę nie ma w zestawie. Do wersji HC pasuje [pasek na rękę CT37-HS-HC-3PK](/produkt/honeywell-ct37-hs-hc-3pk). Cztery terminale i cztery baterie naraz ładuje [stacja 5-gniazdowa CT37-5CB-UVN-HC0](/produkt/honeywell-ct37-5cb-uvn-hc0) z [przewodem C5 3007-4683-001](/produkt/honeywell-3007-4683-001).`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: ['terminale-mobilne', 'terminale-dla-sluzby-zdrowia'],
   manufacturerId: 'honeywell',

@@ -32,23 +32,18 @@ Ekran ma przekątną 6 cali i rozdzielczość 720 × 1440 pikseli. Szkło Gorill
 
 Obudowa ma klasę ochrony IP67. Terminal wytrzymuje upadek z wysokości 1,5 m na beton. Temperatura pracy wynosi od −20 do +50°C.
 
-## Co zawiera zestaw NLS-MT9557-W5?
-
-- Terminal MT95 Kambur Pro III.
-- Baterię 5100 mAh.
-- Zasilacz z wtykami EU i UK.
-- Przewód USB-C.
-- Osłonę ochronną.
-- Pasek na rękę.
-- Folię ochronną na ekran.
-
-Do ładowania przez USB-C nie musisz dokupować zasilacza ani przewodu. Stacja ładująca, zapasowa bateria i uchwyt pistoletowy są opcjonalne. Nie są dołączone do zestawu.
-
 ## Akcesoria i obsługa
 
 Przy doborze akcesoriów używaj numeru PN terminala: NLS-MT9557-W5. Stacja NLS-MCD9557-1C, bateria NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01 są przeznaczone do wersji Pro III. Nie dobieraj akcesoriów wyłącznie po nazwie MT95. Starszy Kambur Pro II ma inne numery części.
 
-Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarządzania Ndevor. Plan aktualizacji bezpieczeństwa obejmuje okres do IV kwartału 2029 roku.`,
+Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarządzania Ndevor. Plan aktualizacji bezpieczeństwa obejmuje okres do IV kwartału 2029 roku.
+
+## Co jest potrzebne do użycia?
+
+Terminal NLS-MT9557-W5 ma w opakowaniu baterię 5100 mAh, przewód USB-C i zasilacz z wtykami EU i UK. Osłona, pasek na rękę i folia na ekran są również w komplecie.
+
+Opcjonalna [stacja NLS-MCD9557-1C](/produkt/newland-nls-mcd9557-1c) nie ma zasilacza w zestawie. W pojeździe terminal ładuje [ładowarka samochodowa NLS-CPA-UNIV](/produkt/newland-nls-cpa-univ).
+`,
   categoryId: 'terminale-mobilne',
   subcategoryIds: ['terminale-newland'],
   manufacturerId: 'newland',
@@ -108,12 +103,12 @@ Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarzą
   relatedAccessories: newlandMt95ProIiiAccessoryIds,
   relatedProducts: ['zebra-tc22', 'zebra-tc501'],
   faq: [
-    { question: 'Czy MT95 Kambur Pro III obsługuje 5G i eSIM?', answer: 'Tak. Wariant NLS-MT9557-W5 obsługuje 5G, kartę nano-SIM i eSIM. Umożliwia połączenia głosowe i transmisję danych. Potrzebujesz aktywnej usługi operatora.' },
+    { question: 'Czy MT95 Kambur Pro III obsługuje 5G i eSIM?', answer: 'Tak. Wariant NLS-MT9557-W5 obsługuje 5G, kartę nano-SIM i eSIM. Umożliwia połączenia głosowe i transmisję danych. Wymaga aktywnej usługi operatora.' },
     { question: 'Czy zestaw zawiera zasilacz i przewód?', answer: 'Tak. Zestaw NLS-MT9557-W5 zawiera zasilacz EU/UK i przewód USB-C. Zawiera także baterię, osłonę, pasek na rękę i folię na ekran. Stacja ładująca jest opcjonalna.' },
     { question: 'Jaką baterię ma MT95 Kambur Pro III?', answer: 'Bateria ma pojemność 5100 mAh. Obsługuje wymianę hot-swap bez wyłączania terminala. Port USB-C umożliwia ładowanie o mocy do 18 W.' },
     { question: 'Do czego służy MT95 Kambur Pro III?', answer: 'Newland MT95 Kambur Pro III służy do odczytu kodów w magazynie, sklepie i podczas dostaw. Obsługuje kody 1D i 2D. Sieć 5G umożliwia przesyłanie danych poza zasięgiem firmowego Wi-Fi.' },
     { question: 'Jakie kody odczytuje MT95 Kambur Pro III?', answer: 'Skaner CM60E w terminalu Newland MT95 Kambur Pro III odczytuje kody 1D i 2D, między innymi EAN, QR, Data Matrix i PDF417. Funkcja Acuscan pomaga wybrać jeden kod, gdy kilka kodów znajduje się obok siebie.' },
-    { question: 'Czy akcesoria Kambur Pro II pasują do Pro III?', answer: 'Nie zakładaj zgodności na podstawie nazwy MT95. Dla Pro III przewidziano między innymi stację NLS-MCD9557-1C, baterię NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01. Sprawdź PN przed zamówieniem.' },
+    { question: 'Czy akcesoria Kambur Pro II pasują do Pro III?', answer: 'Zgodności nie należy zakładać na podstawie nazwy MT95. Dla Pro III przewidziano między innymi stację NLS-MCD9557-1C, baterię NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01. Akcesoria dobiera się do PN terminala.' },
   ],
   comparison: {
     title: 'Porównaj: Zebra TC22, Newland MT95 Kambur Pro III i Zebra TC501',
