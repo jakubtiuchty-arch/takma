@@ -1342,11 +1342,11 @@ export const bluebirdProducts: Product[] = [
       "bluebird-355040127"
     ],
     "relatedProducts": [
+      "bluebird-x40",
       "zebra-tc22r",
       "newland-mt93-megattera-pro-uhf",
       "zebra-tc53e-rfid",
-      "zebra-em45-rfid",
-      "bluebird-x40"
+      "zebra-em45-rfid"
     ],
     "downloads": [
       {
