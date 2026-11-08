@@ -1284,7 +1284,7 @@ Zalecane ustawienia dla drukarek z językiem ZPL: zaczernienie 22, prędkość 5
   'terminale-mobilne': {
     definition: {
       heading: 'Co to jest terminal mobilny (kolektor danych)?',
-      content: 'Terminal mobilny (kolektor danych, ang. mobile computer / handheld terminal) to wytrzymały komputer przenośny z wbudowanym skanerem kodów kreskowych, zaprojektowany do profesjonalnej pracy w magazynie, logistyce, produkcji, handlu detalicznym i służbie zdrowia. W odróżnieniu od zwykłych smartfonów, terminale mobilne klasy enterprise posiadają: skanery 1D/2D klasy przemysłowej (SE4710, SE4770, SE55) skanujące zniszczone i zadrukowane kody z odległości do 60 cm, obudowy odporne na upadki z 1,2–2,4 m na beton i klasy ochrony IP65/IP67/IP68, wymienne baterie hot-swap (3 100–7 000 mAh) na 10–14 godzin pracy, oraz system Android klasy enterprise z 5–10-letnim wsparciem aktualizacji bezpieczeństwa (GMS/AOSP). Terminale mobilne obsługują Wi-Fi 6/6E, Bluetooth 5.1, NFC i opcjonalnie 4G LTE/5G. Zarządzanie flotą odbywa się przez MDM (Mobile Device Management) i OEMConfig. Ceny terminali mobilnych enterprise zaczynają się od ok. 2 417 zł netto za modele entry-level (Zebra TC22) do ponad 15 000 zł za urządzenia z klawiaturą fizyczną i rozszerzonym zasięgiem skanowania (Zebra MC3400).',
+      content: 'Terminal mobilny (kolektor danych, ang. mobile computer / handheld terminal) to wytrzymały komputer przenośny z wbudowanym skanerem kodów kreskowych, zaprojektowany do profesjonalnej pracy w magazynie, logistyce, produkcji, handlu detalicznym i służbie zdrowia. W odróżnieniu od zwykłych smartfonów, terminale mobilne klasy enterprise posiadają: skanery 1D/2D klasy przemysłowej (SE4710, SE4770, SE55) skanujące zniszczone i zadrukowane kody z odległości do 60 cm, obudowy odporne na upadki z 1,2–2,4 m na beton i klasy ochrony IP65/IP67/IP68, wymienne baterie hot-swap (3 100–7 000 mAh) na 10–14 godzin pracy, oraz system Android klasy enterprise z 5–10-letnim wsparciem aktualizacji bezpieczeństwa (GMS/AOSP). Terminale mobilne obsługują Wi-Fi 6/6E, Bluetooth 5.1, NFC i opcjonalnie 4G LTE/5G. Zarządzanie flotą odbywa się przez MDM (Mobile Device Management) i OEMConfig. Najniższy pułap cenowy zajmują modele entry-level (Zebra TC22), a najwyższy urządzenia z klawiaturą fizyczną i rozszerzonym zasięgiem skanowania (Zebra MC3400).',
     },
     buyingGuide: {
       heading: 'Jak wybrać terminal mobilny?',
@@ -1293,10 +1293,10 @@ Zalecane ustawienia dla drukarek z językiem ZPL: zaczernienie 22, prędkość 5
         'Typ skanera — SE4710: standardowy imager 1D/2D, zasięg do 35 cm, idealna do magazynu. SE4770: rozszerzony zasięg do 60 cm, skanowanie z daleka (wysokie regały, palety). SE55: skaner nowej generacji z IntelliFocus — odczyt kodów od 10 cm do 7,6 m. Do prostych zastosowań (retail, inwentaryzacja) wystarczy SE4710.',
         'Dotykowy czy z klawiaturą fizyczną — ekran dotykowy (TC22, TC52): intuicyjny, lżejszy, szybszy onboarding pracowników. Klawiatura fizyczna (MC3300): niezbędna do intensywnego wprowadzania danych liczbowych (numery partii, ilości) — znacznie szybsza niż klawiatura ekranowa.',
         'Łączność — Wi-Fi 6/6E: standard do pracy wewnątrz magazynu/sklepu z infrastrukturą bezprzewodową. 4G LTE: konieczne dla pracowników terenowych (serwis, dostawy) bez dostępu do Wi-Fi. 5G: przyszłościowe, najniższe opóźnienia — dla automatyzacji i IoT.',
-        'System operacyjny — Android 13/14 GMS (Google Mobile Services): pełny dostęp do Google Play, Chrome, Gmail. Android AOSP: bez usług Google, dla środowisk zamkniętych. Zawsze sprawdź Lifecycle — Zebra gwarantuje 5–10 lat wsparcia bezpieczeństwa.',
+        'System operacyjny — Android 13/14 GMS (Google Mobile Services): pełny dostęp do Google Play, Chrome, Gmail. Android AOSP: bez usług Google, dla środowisk zamkniętych. Przed zakupem należy sprawdzić Lifecycle — Zebra gwarantuje 5–10 lat wsparcia bezpieczeństwa.',
         'Bateria — modele entry (TC22): 3 100 mAh, ~10 h pracy. Modele enterprise (TC52/MC3300): 5 200–7 000 mAh, ~14 h. Kluczowe: wymienna bateria hot-swap — bez wyłączania urządzenia, ciągła praca na wielu zmianach.',
         'Zarządzanie flotą (MDM) — Zebra oferuje darmowe narzędzie LifeGuard™ do aktualizacji bezpieczeństwa i OEMConfig do zdalnej konfiguracji. Dla flot 50+ urządzeń MDM (SOTI, VMware, Microsoft Intune) to wymóg, nie opcja.',
-        'Budżet i TCO — entry-level (TC22, od 2 417 zł): mały i średni biznes, prosty skan + Wi-Fi. Mid-range (TC53, od ~5 500 zł): duży magazyn, serwis, healthcare. Premium (MC3400, od ~8 000 zł): produkcja, klawiatura, max wydajność. Pamiętaj o kosztach akcesoriów (stacje ładowania, baterie, etuia) — to 20–30% ceny urządzenia.',
+        'Budżet i TCO — entry-level (TC22): mały i średni biznes, prosty skan + Wi-Fi. Mid-range (TC53): duży magazyn, serwis, healthcare. Premium (MC3400): produkcja, klawiatura, max wydajność. Do budżetu trzeba doliczyć akcesoria (stacje ładowania, baterie, etuia) — to 20–30% ceny urządzenia.',
       ],
     },
     expertAuthority: 'TAKMA to autoryzowany Premier Business Partner Zebra Technologies z ponad 25-letnim doświadczeniem w branży AutoID. Wdrożyliśmy setki terminali mobilnych w polskich magazynach, centrach dystrybucji, szpitalach i zakładach produkcyjnych — od firm z 5 urządzeniami po floty 500+ terminali zarządzanych centralnie przez MDM. Jako Printer Repair Specialist Zebra oferujemy nie tylko sprzedaż, ale także konfigurację, szkolenie pracowników, integrację z WMS/ERP i wieloletni serwis gwarancyjny i pogwarancyjny we współpracy z serwis-zebry.pl — największym centrum serwisowym Zebra w Polsce. Każda rekomendacja na tej stronie opiera się na realnych danych z wdrożeń, nie na kartach katalogowych.',
@@ -1308,7 +1308,7 @@ Obudowy terminali mobilnych przechodzą certyfikację MIL-STD-810H (standard woj
 
 System Android klasy enterprise (Zebra Mobility DNA) rozszerza standardowy Android o pakiet narzędzi: StageNow (masowa konfiguracja), Workforce Connect (komunikacja push-to-talk), DataWedge (konfiguracja skanera bez programowania), Device Tracker (lokalizacja zaginionych urządzeń). LifeGuard™ for Android zapewnia comiesięczne łatki bezpieczeństwa przez 5–10 lat od premiery urządzenia — krytyczne w środowiskach podlegających regulacjom (healthcare, finanse).
 
-Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 000 zł × 20 = 120 000 zł) + baterie zapasowe (350 zł × 40 = 14 000 zł) + stacje ładowania 5-gniazdowe (3 500 zł × 4 = 14 000 zł) + etuia ochronne (200 zł × 20 = 4 000 zł) + MDM licencja roczna (50 zł × 20 × 3 = 3 000 zł) = łączny TCO ~155 000 zł, tj. ~215 zł/miesiąc/terminal. Dla porównania: smartfon konsumencki (1 500 zł × 20 = 30 000 zł) wymienia się co 12–18 miesięcy z powodu uszkodzeń → TCO 3 lata: 60 000–90 000 zł + koszty przestojów, utracone skanowania, brak MDM. Terminal enterprise jest tańszy w 3-letnim TCO mimo wyższej ceny zakupu.`,
+Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52) obejmuje 20 urządzeń, 40 baterii zapasowych, 4 stacje ładowania 5-gniazdowe, 20 etui ochronnych i licencje MDM na każdy rok. Smartfony konsumenckie wymienia się co 12–18 miesięcy z powodu uszkodzeń, więc w ciągu 3 lat flotę 20 smartfonów kupuje się dwa albo trzy razy, a do tego dochodzą koszty przestojów, utracone skanowania i brak MDM. Terminal enterprise jest tańszy w 3-letnim TCO mimo wyższej ceny zakupu.`,
     useCases: [
       {
         title: 'Magazyn WMS — kompletacja, przyjęcie i wydanie towaru',
@@ -1336,11 +1336,11 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
     ],
     uniqueInsights: {
-      heading: 'Czego nie powiedzą Ci o terminalach mobilnych',
+      heading: 'Czego zwykle nie mówi się o terminalach mobilnych',
       items: [
         {
           title: 'TCO terminala enterprise vs smartfona — terminal wygrywa po 18 miesiącach',
-          text: 'Smartfon konsumencki kosztuje 1 500 zł, ale wymaga wymiany co 12–18 miesięcy z powodu pęknięcia ekranu, awarii baterii lub braku aktualizacji. Terminal Zebra TC22 kosztuje od 2 417 zł, ale służy 5+ lat z wymienną baterią i wsparciem bezpieczeństwa LifeGuard. W 3-letnim TCO (zakup + wymiana + akcesoria + przestoje) terminal jest tańszy o 30–50%. Dodaj do tego stratę czasu na wolniejszy skaner smartfona (2–4 s vs 0,3 s) — przy 500 skanowaniach dziennie to 30 minut straconego czasu na zmianę.',
+          text: 'Smartfon konsumencki ma niższą cenę zakupu, ale wymaga wymiany co 12–18 miesięcy z powodu pęknięcia ekranu, awarii baterii lub braku aktualizacji. Terminal Zebra TC22 ma wyższą cenę zakupu, ale służy 5+ lat z wymienną baterią i wsparciem bezpieczeństwa LifeGuard. W 3-letnim TCO (zakup + wymiana + akcesoria + przestoje) terminal wychodzi taniej niż smartfon. Do tego dochodzi strata czasu na wolniejszy skaner smartfona (2–4 s vs 0,3 s) — przy 500 skanowaniach dziennie to 30 minut straconego czasu na zmianę.',
         },
         {
           title: 'Android enterprise vs konsumencki — to zupełnie inny system',
@@ -1356,14 +1356,14 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
         },
         {
           title: 'IP67 nie chroni przed upadkami — to osobna specyfikacja',
-          text: 'Częsty błąd: „mój terminal jest IP67, więc jest niezniszczalny". IP67 chroni przed pyłem i zanurzeniem w wodzie — ale nie mówi NIC o odporności na upadki. Drop spec (np. 1,8 m na beton, test MIL-STD-810H) to osobna certyfikacja. Terminal z IP67 bez drop spec może nie przeżyć upadku z ręki pracownika. Zawsze sprawdzaj oba parametry.',
+          text: 'Częsty błąd: „mój terminal jest IP67, więc jest niezniszczalny". IP67 chroni przed pyłem i zanurzeniem w wodzie — ale nie mówi NIC o odporności na upadki. Drop spec (np. 1,8 m na beton, test MIL-STD-810H) to osobna certyfikacja. Terminal z IP67 bez drop spec może nie przeżyć upadku z ręki pracownika. Oba parametry trzeba sprawdzać razem.',
         },
       ],
     },
     faq: [
       {
         question: 'Ile kosztuje terminal mobilny (kolektor danych)?',
-        answer: 'Ceny terminali mobilnych enterprise zaczynają się od ok. 2 417 zł netto za modele entry-level (Zebra TC22) przez ok. 5 500–7 000 zł za mid-range (TC53, TC58) do 10 000–15 000 zł za modele premium z klawiaturą fizyczną (MC3400). Cena zależy od: skanera (SE4710 vs SE55), łączności (Wi-Fi vs Wi-Fi + 5G/LTE), rozmiaru baterii i wariantu obudowy. Ceny netto, dane z lutego 2026.',
+        answer: 'Ceny terminali mobilnych enterprise rosną od modeli entry-level (Zebra TC22) przez mid-range (TC53, TC58) do modeli premium z klawiaturą fizyczną (MC3400). Cena zależy od: skanera (SE4710 vs SE55), łączności (Wi-Fi vs Wi-Fi + 5G/LTE), rozmiaru baterii i wariantu obudowy.',
       },
       {
         question: 'Czym różni się terminal mobilny od zwykłego smartfona?',
@@ -1371,11 +1371,11 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         question: 'Jaki terminal mobilny do magazynu?',
-        answer: 'Do magazynu rekomendujemy: mały magazyn (do 500 skanowań/dzień) → Zebra TC22 (Wi-Fi 6E, SE4710, IP68, od 2 417 zł). Średni magazyn z WMS → TC53 (Wi-Fi 6E, SE55 z zasięgiem do 7,6 m, IP68, wymienne baterie, od ~5 500 zł). Duży magazyn z wysokimi regałami → TC53 z SE55 lub MC3400 z SE4850. Kluczowe: terminal musi obsługiwać język programowania Twojego WMS (ZPL, CPCL, SAP ITSmobile).',
+        answer: 'Do magazynu rekomendujemy: mały magazyn (do 500 skanowań/dzień) → Zebra TC22 (Wi-Fi 6E, SE4710, IP68). Średni magazyn z WMS → TC53 (Wi-Fi 6E, SE55 z zasięgiem do 7,6 m, IP68, wymienne baterie). Duży magazyn z wysokimi regałami → TC53 z SE55 lub MC3400 z SE4850. Kluczowe: terminal musi obsługiwać język programowania używanego WMS (ZPL, CPCL, SAP ITSmobile).',
       },
       {
         question: 'Jak wybrać kolektor danych do inwentaryzacji?',
-        answer: 'Do inwentaryzacji najważniejsze to: 1) Szybki skaner 1D/2D — minimum SE4710, do inwentaryzacji regałowej SE4770 z zasięgiem 60 cm. 2) Waga poniżej 300 g (bez baterii) — pracownik trzyma urządzenie cały dzień. 3) Bateria na 10+ godzin lub wymienna hot-swap. 4) Wi-Fi do transmisji danych w czasie rzeczywistym do systemu ERP. 5) Aplikacja inwentaryzacyjna (Zebra DataWedge + dowolna apka Android). Rekomendacja: Zebra TC22 (lekki, szybki, przystępna cena) lub TC52 (rozszerzony zasięg skanowania).',
+        answer: 'Do inwentaryzacji najważniejsze to: 1) Szybki skaner 1D/2D — minimum SE4710, do inwentaryzacji regałowej SE4770 z zasięgiem 60 cm. 2) Waga poniżej 300 g (bez baterii) — pracownik trzyma urządzenie cały dzień. 3) Bateria na 10+ godzin lub wymienna hot-swap. 4) Wi-Fi do transmisji danych w czasie rzeczywistym do systemu ERP. 5) Aplikacja inwentaryzacyjna (Zebra DataWedge + dowolna apka Android). Rekomendacja: Zebra TC22 (lekki i szybki) lub TC52 (rozszerzony zasięg skanowania).',
       },
       {
         question: 'Terminal mobilny z klawiaturą czy dotykowy?',
@@ -1395,7 +1395,7 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         question: 'Jaki system operacyjny mają terminale mobilne?',
-        answer: 'Współczesne terminale mobilne enterprise działają na Android 13 lub 14 (GMS — Google Mobile Services lub AOSP — bez usług Google). Zebra gwarantuje wsparcie bezpieczeństwa LifeGuard przez minimum 5 lat (modele TC), a niektóre serie do 10 lat od premiery. Aplikacje można pobierać z Google Play (GMS) lub wgrywać przez MDM (AOSP). Windows Mobile/CE został wycofany — nie kupuj terminali z systemem Windows.',
+        answer: 'Współczesne terminale mobilne enterprise działają na Android 13 lub 14 (GMS — Google Mobile Services lub AOSP — bez usług Google). Zebra gwarantuje wsparcie bezpieczeństwa LifeGuard przez minimum 5 lat (modele TC), a niektóre serie do 10 lat od premiery. Aplikacje można pobierać z Google Play (GMS) lub wgrywać przez MDM (AOSP). Windows Mobile/CE został wycofany — terminali z systemem Windows nie warto już kupować.',
       },
       {
         question: 'Jak zarządzać flotą terminali mobilnych (MDM)?',
@@ -1403,41 +1403,41 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         question: 'Terminal mobilny Wi-Fi czy z 4G LTE?',
-        answer: 'Wi-Fi (TC22, TC52): wystarczający gdy terminal pracuje wyłącznie wewnątrz budynku z siecią bezprzewodową — magazyn, sklep, szpital, fabryka. Niższy koszt (~500–1 000 zł mniej). 4G LTE (TC27, TC57): konieczny dla pracowników terenowych bez dostępu do Wi-Fi — kurierzy, serwisanci, inwentaryzacja w terenie. Wyższy koszt + karta SIM z abonamentem. Reguła: jeśli terminal nigdy nie opuszcza budynku → Wi-Fi. Jeśli wyjeżdża w teren → 4G LTE.',
+        answer: 'Wi-Fi (TC22, TC52): wystarczający gdy terminal pracuje wyłącznie wewnątrz budynku z siecią bezprzewodową — magazyn, sklep, szpital, fabryka. Niższy koszt zakupu niż w wersji 4G LTE. 4G LTE (TC27, TC57): konieczny dla pracowników terenowych bez dostępu do Wi-Fi — kurierzy, serwisanci, inwentaryzacja w terenie. Wyższy koszt + karta SIM z abonamentem. Reguła: jeśli terminal nigdy nie opuszcza budynku → Wi-Fi. Jeśli wyjeżdża w teren → 4G LTE.',
       },
       {
         question: 'Czym różni się terminal mobilny od skanera kodów kreskowych?',
-        answer: 'Skaner kodów kreskowych to urządzenie wejściowe — odczytuje kody i przesyła dane do komputera (przez USB/BT). Nie ma ekranu, systemu operacyjnego ani aplikacji. Terminal mobilny to kompletny komputer przenośny: ma ekran, Android, Wi-Fi, skaner, aplikacje — działa samodzielnie bez komputera. Skaner: ~500–2 000 zł, prosty odczyt kodów. Terminal: ~3 000–15 000 zł, pełne aplikacje WMS/ERP na urządzeniu. Do prostego skanowania przy komputerze → skaner. Do pracy w ruchu z aplikacją → terminal.',
+        answer: 'Skaner kodów kreskowych to urządzenie wejściowe — odczytuje kody i przesyła dane do komputera (przez USB/BT). Nie ma ekranu, systemu operacyjnego ani aplikacji. Terminal mobilny to kompletny komputer przenośny: ma ekran, Android, Wi-Fi, skaner, aplikacje — działa samodzielnie bez komputera. Skaner: prosty odczyt kodów i niższy koszt zakupu. Terminal: pełne aplikacje WMS/ERP na urządzeniu i wyższy koszt zakupu. Do prostego skanowania przy komputerze → skaner. Do pracy w ruchu z aplikacją → terminal.',
       },
       {
         question: 'Jak długo służy terminal mobilny?',
-        answer: 'Terminale mobilne klasy enterprise (Zebra TC/MC) służą 5–7 lat w typowych warunkach magazynowych. Kluczowe czynniki trwałości: wymienna bateria (wymiana co 12–24 miesiące, ~350 zł), aktualizacje bezpieczeństwa LifeGuard (5–10 lat od premiery), serwis gwarancyjny Zebra OneCare (rozszerzony do 5 lat). Smartfon konsumencki w tych samych warunkach służy 12–18 miesięcy. Terminale z klawiaturą fizyczną (MC3300) mogą służyć nawet 8+ lat dzięki braku ruchomych elementów dotykowych.',
+        answer: 'Terminale mobilne klasy enterprise (Zebra TC/MC) służą 5–7 lat w typowych warunkach magazynowych. Kluczowe czynniki trwałości: wymienna bateria (wymiana co 12–24 miesiące), aktualizacje bezpieczeństwa LifeGuard (5–10 lat od premiery), serwis gwarancyjny Zebra OneCare (rozszerzony do 5 lat). Smartfon konsumencki w tych samych warunkach służy 12–18 miesięcy. Terminale z klawiaturą fizyczną (MC3300) mogą służyć nawet 8+ lat dzięki braku ruchomych elementów dotykowych.',
       },
       {
         question: 'Czy terminal mobilny obsługuje RFID?',
-        answer: 'Standardowe terminale mobilne (TC22, TC52, MC3300) NIE mają wbudowanego czytnika RFID UHF — obsługują NFC (13,56 MHz) do identyfikacji pracowników i tagów bliskiego zasięgu. Do skanowania RFID UHF (860–960 MHz) potrzebna jest nakładka RFID (sled) — np. Zebra RFD40 lub RFD90 — montowana na terminalu. Nakładka dodaje ~2 000–4 000 zł do kosztu, ale umożliwia skanowanie 100–700 tagów na sekundę z odległości do 9 m.',
+        answer: 'Standardowe terminale mobilne (TC22, TC52, MC3300) NIE mają wbudowanego czytnika RFID UHF — obsługują NFC (13,56 MHz) do identyfikacji pracowników i tagów bliskiego zasięgu. Do skanowania RFID UHF (860–960 MHz) potrzebna jest nakładka RFID (sled) — np. Zebra RFD40 lub RFD90 — montowana na terminalu. Nakładka zwiększa koszt wyposażenia stanowiska, ale umożliwia skanowanie 100–700 tagów na sekundę z odległości do 9 m.',
       },
       {
         question: 'Jakie akcesoria są potrzebne do terminala mobilnego?',
-        answer: 'Podstawowe akcesoria: 1) Bateria zapasowa (~350 zł) — obowiązkowa przy pracy wielozmianowej. 2) Stacja ładowania 1-gniazdowa (~600 zł) lub 5-gniazdowa (~3 500 zł) do flot. 3) Etui ochronne (~200 zł) — dodatkowa ochrona w agresywnym środowisku. 4) Rysik/pasek na dłoń (~50–100 zł) — zabezpieczenie przed upuszczeniem. 5) Uchwyt samochodowy (~400 zł) — dla kierowców i serwisantów. Łączny koszt akcesoriów to 20–30% ceny terminala.',
+        answer: 'Podstawowe akcesoria: 1) Bateria zapasowa — obowiązkowa przy pracy wielozmianowej. 2) Stacja ładowania 1-gniazdowa lub 5-gniazdowa do flot. 3) Etui ochronne — dodatkowa ochrona w agresywnym środowisku. 4) Rysik/pasek na dłoń — zabezpieczenie przed upuszczeniem. 5) Uchwyt samochodowy — dla kierowców i serwisantów. Łączny koszt akcesoriów to 20–30% ceny terminala.',
       },
       {
         question: 'Jakie są alternatywy dla terminali mobilnych Zebra?',
-        answer: 'Na polskim rynku dostępni są także: Datalogic (Memor 11/12/20/30/35, Skorpio X5 — włoski producent, dobra jakość, nieco niższe ceny), Honeywell (CT40/CT60, EDA51/EDA52 — amerykański, silny w logistyce), Keyence (BT-W100/BT-A500 — japoński, specjalizacja w produkcji). Zebra dominuje w Polsce z ~40–50% udziałem rynkowym dzięki: najszerszemu portfolio, darmowym narzędziom Mobility DNA, 10-letniemu wsparciu LifeGuard i rozbudowanej sieci serwisowej. TAKMA jako Premier Partner Zebra rekomenduje modele TC/MC — najlepsze wsparcie serwisowe w Polsce.',
+        answer: 'Na polskim rynku dostępni są także: Datalogic (Memor 11/12/20/30/35, Skorpio X5 — włoski producent, dobra jakość), Honeywell (CT40/CT60, EDA51/EDA52 — amerykański, silny w logistyce), Keyence (BT-W100/BT-A500 — japoński, specjalizacja w produkcji). Zebra dominuje w Polsce z ~40–50% udziałem rynkowym dzięki: najszerszemu portfolio, darmowym narzędziom Mobility DNA, 10-letniemu wsparciu LifeGuard i rozbudowanej sieci serwisowej. TAKMA jako Premier Partner Zebra rekomenduje modele TC/MC — najlepsze wsparcie serwisowe w Polsce.',
       },
       {
         question: 'Jakie terminale i kolektory danych Zebra są w ofercie?',
-        answer: 'W kategorii [terminale mobilne Zebra](/terminale-mobilne-zebra) jest ponad 20 modeli: dotykowe TC22, TC27, TC53e i TC58e, terminale gun z klawiaturą MC3400 i MC9400 do magazynu, ekonomiczne MC2200 i MC2700 oraz medyczne HC25, HC50 i HC55. Terminal Zebra kosztuje od 2 261 zł netto.',
+        answer: 'W kategorii [terminale mobilne Zebra](/terminale-mobilne-zebra) jest ponad 20 modeli: dotykowe TC22, TC27, TC53e i TC58e, terminale gun z klawiaturą MC3400 i MC9400 do magazynu, kompaktowe MC2200 i MC2700 z klawiaturą oraz medyczne HC25, HC50 i HC55. Cenę i dostępność każdego modelu Zebra podajemy na jego karcie.',
       },
     ],
     comparisons: [
       {
         title: 'Terminal mobilny vs smartfon — porównanie do pracy w magazynie',
-        content: 'Terminal enterprise (Zebra TC52): skaner SE4770 — 0,3 s na skan, zasięg 60 cm; IP67 + upadki 1,8 m; bateria wymienna 5 200 mAh, 14 h pracy; Android z LifeGuard (10 lat wsparcia); MDM (zdalne zarządzanie flotą); cena ~6 000 zł, żywotność 5–7 lat → TCO 3 lata: ~7 750 zł. Smartfon konsumencki (Samsung A55): aparat jako skaner — 2–4 s na skan, zasięg 10–15 cm; Gorilla Glass ale brak IP67/MIL-STD; bateria wbudowana 5 000 mAh, 8 h; Android z 4-letnim wsparciem; ograniczone MDM; cena ~1 800 zł, żywotność 12–18 mies. → TCO 3 lata: ~5 400 zł + przestoje + wolniejszy skan. Wniosek: terminal jest droższy na start, ale tańszy w TCO i radykalnie wydajniejszy.',
+        content: 'Terminal enterprise (Zebra TC52): skaner SE4770 — 0,3 s na skan, zasięg 60 cm; IP67 + upadki 1,8 m; bateria wymienna 5 200 mAh, 14 h pracy; Android z LifeGuard (10 lat wsparcia); MDM (zdalne zarządzanie flotą); żywotność 5–7 lat, czyli jeden zakup na 3 lata. Smartfon konsumencki (Samsung A55): aparat jako skaner — 2–4 s na skan, zasięg 10–15 cm; Gorilla Glass ale brak IP67/MIL-STD; bateria wbudowana 5 000 mAh, 8 h; Android z 4-letnim wsparciem; ograniczone MDM; żywotność 12–18 mies., czyli dwa albo trzy zakupy na 3 lata, do tego przestoje i wolniejszy skan. Wniosek: terminal jest droższy na start, ale tańszy w TCO i radykalnie wydajniejszy.',
       },
       {
         title: 'Zebra TC22 vs TC52 — entry-level vs mid-range',
-        content: 'TC22: ekran 6", SE4710 lub SE55 (zasięg do 7,6 m), IP68/IP65, upadki 1,5 m, bateria 3 800/5 200 mAh, Wi-Fi 6E, Android do v16, cena od 2 417 zł. TC53: ekran 6", SE4720 lub SE55, IP68/IP65, upadki 1,5 m, bateria 4 680/7 000 mAh (wymienna hot-swap), Wi-Fi 6E, Android do v16, cena od ~5 500 zł. Rekomendacja: TC22 wystarczy do retailu, lekkiej inwentaryzacji, healthcare. TC53 do dużych magazynów z WMS, pracy wielozmianowej, wysokich regałów (SE55), oraz środowisk wymagających baterii na cały dzień.',
+        content: 'TC22: ekran 6", SE4710 lub SE55 (zasięg do 7,6 m), IP68/IP65, upadki 1,5 m, bateria 3 800/5 200 mAh, Wi-Fi 6E, Android do v16. TC53: ekran 6", SE4720 lub SE55, IP68/IP65, upadki 1,5 m, bateria 4 680/7 000 mAh (wymienna hot-swap), Wi-Fi 6E, Android do v16. Rekomendacja: TC22 wystarczy do retailu, lekkiej inwentaryzacji, healthcare. TC53 do dużych magazynów z WMS, pracy wielozmianowej, wysokich regałów (SE55), oraz środowisk wymagających baterii na cały dzień.',
       },
       {
         title: 'Terminal dotykowy vs terminal z klawiaturą fizyczną',
@@ -1445,18 +1445,18 @@ Przykładowa kalkulacja TCO (3 lata, flota 20 terminali TC52): urządzenia (6 00
       },
       {
         title: 'Wi-Fi 6 vs 4G LTE w terminalu mobilnym',
-        content: 'Wi-Fi 6 (802.11ax): prędkość do 1,2 Gbps, opóźnienie <10 ms, zasięg wewnątrz budynku, brak kosztów karty SIM — standard do magazynu, sklepu, szpitala, fabryki. Modele: TC22, TC52, MC3300. 4G LTE: prędkość do 300 Mbps, opóźnienie ~30 ms, zasięg wszędzie (sieć komórkowa), koszt SIM ~30–50 zł/mies. — konieczny dla serwisu terenowego, kurierów, inwentaryzacji w terenie. Modele: TC27, TC57. Rekomendacja: 80% wdrożeń to Wi-Fi (praca w budynku). 4G LTE wybierz tylko gdy terminal opuszcza zasięg Wi-Fi.',
+        content: 'Wi-Fi 6 (802.11ax): prędkość do 1,2 Gbps, opóźnienie <10 ms, zasięg wewnątrz budynku, brak kosztów karty SIM — standard do magazynu, sklepu, szpitala, fabryki. Modele: TC22, TC52, MC3300. 4G LTE: prędkość do 300 Mbps, opóźnienie ~30 ms, zasięg wszędzie (sieć komórkowa), miesięczny abonament za kartę SIM — konieczny dla serwisu terenowego, kurierów, inwentaryzacji w terenie. Modele: TC27, TC57. Rekomendacja: 80% wdrożeń to Wi-Fi (praca w budynku). 4G LTE ma sens tylko wtedy, gdy terminal opuszcza zasięg Wi-Fi.',
       },
       {
         title: 'Zebra vs Datalogic vs Honeywell — porównanie producentów terminali',
-        content: 'Zebra (TC/MC): ~40–50% rynku w PL, najszersze portfolio, darmowe narzędzia Mobility DNA, 10-letni LifeGuard, najlepsza sieć serwisowa w Polsce (serwis-zebry.pl). Datalogic (Memor/Skorpio): ~15–20% rynku, włoska jakość, nieco niższe ceny (10–15%), dobry skaner, ale mniejsze portfolio i krótszy support (5 lat). Honeywell (CT/EDA): ~15–20% rynku, silny w logistyce i healthcare USA, w Polsce mniejsze wsparcie serwisowe. Rekomendacja TAKMA: Zebra dla nowych wdrożeń (najlepszy ekosystem i wsparcie w Polsce). Datalogic jako alternatywa budżetowa. Honeywell rozważ przy kompatybilności z istniejącą flotą.',
+        content: 'Zebra (TC/MC): ~40–50% rynku w PL, najszersze portfolio, darmowe narzędzia Mobility DNA, 10-letni LifeGuard, najlepsza sieć serwisowa w Polsce (serwis-zebry.pl). Datalogic (Memor/Skorpio): ~15–20% rynku, włoska jakość, dobry skaner, ale mniejsze portfolio i krótszy support (5 lat). Honeywell (CT/EDA): ~15–20% rynku, silny w logistyce i healthcare USA, w Polsce mniejsze wsparcie serwisowe. Rekomendacja TAKMA: Zebra dla nowych wdrożeń (najlepszy ekosystem i wsparcie w Polsce). Datalogic jako alternatywa dla Zebry. Honeywell warto rozważyć przy kompatybilności z istniejącą flotą.',
       },
     ],
     howToSteps: [
-      { name: 'Zdefiniuj środowisko i procesy', text: 'Odpowiedz na pytania: Gdzie będzie pracował terminal? (magazyn, sklep, teren, produkcja). Jakie procesy obsługuje? (kompletacja WMS, inwentaryzacja, skanowanie przesyłek). Ile skanowań dziennie? (<200 → entry, 200–500 → mid, >500 → premium). Czy potrzebna klawiatura fizyczna?' },
-      { name: 'Wybierz model i konfigurację', text: 'Entry: TC22 (Wi-Fi, SE4710, IP65) ~3 400 zł — retail, lekka inwentaryzacja. Mid: TC52 (Wi-Fi 6, SE4770, IP67) ~6 000 zł — magazyn z WMS, healthcare. Teren: TC57 (Wi-Fi + 4G LTE, SE4770, IP67) ~7 500 zł — kurier, serwis. Produkcja: MC3300 (klawiatura, SE4850, IP67) ~12 000 zł — intensywne wpisywanie danych.' },
-      { name: 'Zamów akcesoria do floty', text: 'Na każdy terminal: bateria zapasowa (~350 zł). Na każde 5 terminali: stacja ładowania 5-gniazdowa (~3 500 zł) + stacja na 5 baterii (~1 500 zł). Opcjonalnie: etuia ochronne, rysiki, paski na dłoń, uchwyty samochodowe. Budżet akcesoriów: 20–30% wartości terminali.' },
-      { name: 'Skonfiguruj i wdróż', text: 'Masowa konfiguracja Zebra StageNow: sieć Wi-Fi, profil MDM, aplikacje WMS, ustawienia skanera DataWedge — konfiguracja 100 terminali w jednej sesji. Zainstaluj aplikacje WMS/ERP z Google Play lub przez MDM. Przeszkol pracowników (0,5–1 dzień). Uruchom pilotaż na 5–10 urządzeniach przed pełnym wdrożeniem.' },
+      { name: 'Zdefiniuj środowisko i procesy', text: 'Na tym etapie trzeba odpowiedzieć na pytania: Gdzie będzie pracował terminal? (magazyn, sklep, teren, produkcja). Jakie procesy obsługuje? (kompletacja WMS, inwentaryzacja, skanowanie przesyłek). Ile skanowań dziennie? (<200 → entry, 200–500 → mid, >500 → premium). Czy potrzebna klawiatura fizyczna?' },
+      { name: 'Wybierz model i konfigurację', text: 'Entry: TC22 (Wi-Fi, SE4710, IP65) — retail, lekka inwentaryzacja. Mid: TC52 (Wi-Fi 6, SE4770, IP67) — magazyn z WMS, healthcare. Teren: TC57 (Wi-Fi + 4G LTE, SE4770, IP67) — kurier, serwis. Produkcja: MC3300 (klawiatura, SE4850, IP67) — intensywne wpisywanie danych.' },
+      { name: 'Zamów akcesoria do floty', text: 'Na każdy terminal: bateria zapasowa. Na każde 5 terminali: stacja ładowania 5-gniazdowa + stacja na 5 baterii. Opcjonalnie: etuia ochronne, rysiki, paski na dłoń, uchwyty samochodowe. Budżet akcesoriów: 20–30% wartości terminali.' },
+      { name: 'Skonfiguruj i wdróż', text: 'Masowa konfiguracja Zebra StageNow: sieć Wi-Fi, profil MDM, aplikacje WMS, ustawienia skanera DataWedge — konfiguracja 100 terminali w jednej sesji. Aplikacje WMS/ERP instaluje się z Google Play lub przez MDM. Szkolenie pracowników trwa 0,5–1 dnia. Przed pełnym wdrożeniem prowadzi się pilotaż na 5–10 urządzeniach.' },
       { name: 'Zarządzaj i serwisuj flotę', text: 'MDM do zdalnego zarządzania (SOTI, VMware, Intune). Aktualizacje bezpieczeństwa LifeGuard co miesiąc. Wymiana baterii co 12–24 miesiące. Gwarancja Zebra OneCare (3–5 lat). Serwis pogwarancyjny: TAKMA + serwis-zebry.pl. Device Tracker do lokalizacji zaginionych terminali.' },
     ],
   },

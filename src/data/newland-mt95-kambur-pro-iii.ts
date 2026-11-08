@@ -5,7 +5,7 @@ export const newlandMt95KamburProIii: Product = {
   id: 'newland-mt95-kambur-pro-iii',
   slug: 'newland-mt95-kambur-pro-iii',
   name: 'Newland MT95 Kambur Pro III',
-  shortDescription: 'Newland MT95 Kambur Pro III odczytuje kody 1D i 2D skanerem CM60E. Ma system Android 15, 5G, eSIM i Wi-Fi 6. Baterię 5100 mAh możesz wymienić bez wyłączania terminala. Zestaw zawiera zasilacz i przewód USB-C.',
+  shortDescription: 'Newland MT95 Kambur Pro III odczytuje kody 1D i 2D skanerem CM60E. Ma system Android 15, 5G, eSIM i Wi-Fi 6. Baterię 5100 mAh wymienia się bez wyłączania terminala. Zestaw zawiera zasilacz i przewód USB-C.',
   description: `Newland MT95 Kambur Pro III to terminal mobilny do skanowania kodów w magazynie, sklepie i podczas dostaw. Obsługuje kody 1D i 2D. Sieć 5G umożliwia przesyłanie danych poza zasięgiem firmowego Wi-Fi.
 
 ## Skanowanie kodów i praca z aplikacjami
@@ -14,11 +14,11 @@ Skaner CM60E odczytuje między innymi kody EAN, QR, Data Matrix i PDF417. Celown
 
 Terminal korzysta z systemu Android 15 i usług Google Mobile Services. Ma certyfikację Android Enterprise Recommended. Procesor ma osiem rdzeni i częstotliwość 2,4 GHz.
 
-Terminal ma 6 GB pamięci RAM i 64 GB pamięci na dane. Kartą microSD możesz rozszerzyć pamięć o maksymalnie 2 TB.
+Terminal ma 6 GB pamięci RAM i 64 GB pamięci na dane. Pamięć rozszerza karta microSD o pojemności do 2 TB.
 
 ## Łączność w budynku i w terenie
 
-Wi-Fi 6 obsługuje pasma 2,4 i 5 GHz. Wariant NLS-MT9557-W5 obsługuje połączenia głosowe i transmisję danych przez sieć komórkową. Możesz użyć karty nano-SIM lub eSIM. Aby korzystać z sieci komórkowej, potrzebujesz aktywnej usługi operatora.
+Wi-Fi 6 obsługuje pasma 2,4 i 5 GHz. Wariant NLS-MT9557-W5 obsługuje połączenia głosowe i transmisję danych przez sieć komórkową. Terminal przyjmuje kartę nano-SIM albo eSIM. Praca w sieci komórkowej wymaga aktywnej usługi operatora.
 
 Bluetooth 5.2 umożliwia połączenie z urządzeniami bezprzewodowymi. Odbiornik GNSS obsługuje GPS, Galileo, BeiDou i GLONASS.
 
@@ -34,7 +34,7 @@ Obudowa ma klasę ochrony IP67. Terminal wytrzymuje upadek z wysokości 1,5 m na
 
 ## Akcesoria i obsługa
 
-Przy doborze akcesoriów używaj numeru PN terminala: NLS-MT9557-W5. Stacja NLS-MCD9557-1C, bateria NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01 są przeznaczone do wersji Pro III. Nie dobieraj akcesoriów wyłącznie po nazwie MT95. Starszy Kambur Pro II ma inne numery części.
+Akcesoria dobiera się według numeru PN terminala: NLS-MT9557-W5. Stacja NLS-MCD9557-1C, bateria NLS-BTY-MT9557-01 i uchwyt NLS-MPG9557-01 są przeznaczone do wersji Pro III. Sama nazwa MT95 nie wystarcza do wyboru akcesoriów. Starszy Kambur Pro II ma inne numery części.
 
 Gwarancja standardowa obejmuje 2 lata. Terminal współpracuje z systemem zarządzania Ndevor. Plan aktualizacji bezpieczeństwa obejmuje okres do IV kwartału 2029 roku.
 
@@ -119,7 +119,7 @@ Opcjonalna [stacja NLS-MCD9557-1C](/produkt/newland-nls-mcd9557-1c) nie ma zasil
     ],
   },
   seoTitle: 'Newland MT95 Kambur Pro III — terminal 5G, 2D | TAKMA',
-  seoDescription: 'Newland MT95 Kambur Pro III to terminal 5G ze skanerem 2D i Androidem 15. Zestaw zawiera zasilacz i przewód USB-C. Sprawdź cenę i dostępność.',
+  seoDescription: 'Newland MT95 Kambur Pro III to terminal 5G ze skanerem 2D i Androidem 15. Zestaw zawiera zasilacz i przewód USB-C. Aktualna cena i dostępność przy PN NLS-MT9557-W5.',
   downloads: [
     { name: 'Karta katalogowa MT95 Kambur Pro III (EN)', type: 'datasheet', url: '/datasheets/newland-mt95-kambur-pro-iii-en.pdf', size: 'PDF' },
     { name: 'Instrukcja obsługi MT95 Kambur Pro III (EN)', type: 'manual', url: '/instrukcje/newland-mt95-kambur-pro-iii-ug-en.pdf', size: '6,3 MB' },
