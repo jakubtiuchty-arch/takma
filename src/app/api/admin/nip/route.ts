@@ -1,48 +1,51 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getSessionFromCookie } from '@/lib/auth'
+import { GusError, lookupGus, normalizeNip } from '@/lib/gus-regon'
+
+export const maxDuration = 45
 
 export async function GET(request: NextRequest) {
-  const nip = request.nextUrl.searchParams.get('nip')
+  if (!await getSessionFromCookie()) {
+    return NextResponse.json({ error: 'Brak autoryzacji' }, { status: 401 })
+  }
+  const nip = normalizeNip(request.nextUrl.searchParams.get('nip') || '')
+  if (!nip) return NextResponse.json({ error: 'Nieprawidłowy NIP. Sprawdź wszystkie 10 cyfr.' }, { status: 400 })
 
-  if (!nip || !/^\d{10}$/.test(nip.replace(/-/g, ''))) {
-    return NextResponse.json({ error: 'Nieprawidłowy NIP' }, { status: 400 })
+  let gusProblem: 'not-configured' | 'unavailable' | null = null
+  try {
+    const company = await lookupGus(nip)
+    if (company) return NextResponse.json(company)
+  } catch (error) {
+    gusProblem = error instanceof GusError ? error.code : 'unavailable'
+    // Never log upstream responses, API keys or session identifiers.
+    console.error('[NIP Lookup] GUS:', gusProblem)
   }
 
-  const cleanNip = nip.replace(/-/g, '')
-  const today = new Date().toISOString().split('T')[0]
-
+  // Preserve VAT lookups during GUS outages or until its key is configured.
   try {
-    const res = await fetch(
-      `https://wl-api.mf.gov.pl/api/search/nip/${cleanNip}?date=${today}`,
-      { next: { revalidate: 86400 } } // cache 24h
-    )
-
-    if (!res.ok) {
-      if (res.status === 400) {
-        return NextResponse.json({ error: 'NIP nie znaleziony' }, { status: 404 })
-      }
-      throw new Error(`White List API returned ${res.status}`)
-    }
-
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Warsaw' }).format(new Date())
+    const res = await fetch(`https://wykazpodatnikowvat.mf.gov.pl/api/search/nip/${nip}?date=${today}`, {
+      cache: 'no-store', signal: AbortSignal.timeout(7000),
+    })
+    if (!res.ok) throw new Error('MF unavailable')
     const data = await res.json()
     const subject = data.result?.subject
-
-    if (!subject) {
-      return NextResponse.json({ error: 'Brak danych dla tego NIP' }, { status: 404 })
+    if (subject?.name && subject.nip === nip) {
+      return NextResponse.json({
+        name: subject.name, nip, address: subject.workingAddress || subject.residenceAddress || '',
+        regon: subject.regon, krs: subject.krs, statusVat: subject.statusVat, source: 'mf',
+      })
     }
-
-    return NextResponse.json({
-      name: subject.name,
-      nip: subject.nip,
-      address: subject.workingAddress || subject.residenceAddress || '',
-      regon: subject.regon,
-      krs: subject.krs,
-      statusVat: subject.statusVat,
-    })
-  } catch (error) {
-    console.error('[NIP Lookup Error]', error)
-    return NextResponse.json(
-      { error: 'Błąd podczas pobierania danych z API Ministerstwa Finansów' },
-      { status: 500 }
-    )
+  } catch {
+    return NextResponse.json({ error: 'Nie udało się pobrać danych z rejestrów. Spróbuj ponownie lub wpisz dane ręcznie.' }, { status: 503 })
   }
+
+  if (gusProblem) {
+    return NextResponse.json({
+      error: gusProblem === 'not-configured'
+        ? 'Brak klucza GUS w konfiguracji. Wykaz VAT nie zwrócił danych. Dane instytucji możesz wpisać ręcznie.'
+        : 'GUS jest chwilowo niedostępny, a wykaz VAT nie zwrócił danych. Spróbuj ponownie lub wpisz dane ręcznie.',
+    }, { status: 503 })
+  }
+  return NextResponse.json({ error: 'Nie znaleziono podmiotu dla tego NIP. Sprawdź numer lub wpisz dane ręcznie.' }, { status: 404 })
 }

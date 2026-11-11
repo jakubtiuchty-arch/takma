@@ -8,6 +8,7 @@ export default function NipLookup() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [historyInfo, setHistoryInfo] = useState('')
+  const [registryInfo, setRegistryInfo] = useState('')
   /** NIP-y już sprawdzone w historii — żeby nie odpytywać w kółko przy każdym znaku. */
   const checkedNips = useRef(new Set<string>())
 
@@ -27,6 +28,7 @@ export default function NipLookup() {
         if (!data.found) return
 
         const current = useQuoteStore.getState().client
+        if ((current.nip || '').replace(/[\s-]/g, '') !== nip) return
         const filled: Record<string, string> = {}
         for (const key of ['company', 'contact', 'email', 'phone', 'address'] as const) {
           if (!current[key] && data.client[key]) filled[key] = data.client[key]
@@ -42,7 +44,7 @@ export default function NipLookup() {
   }, [client.nip, setClient])
 
   const lookupNip = async () => {
-    const nip = client.nip?.replace(/-/g, '')
+    const nip = client.nip?.replace(/[\s-]/g, '')
     if (!nip || nip.length !== 10) {
       setError('Wpisz 10-cyfrowy NIP')
       return
@@ -50,10 +52,13 @@ export default function NipLookup() {
 
     setLoading(true)
     setError('')
+    setRegistryInfo('')
 
     try {
       const res = await fetch(`/api/admin/nip?nip=${nip}`)
       const data = await res.json()
+      const current = useQuoteStore.getState().client
+      if ((current.nip || '').replace(/[\s-]/g, '') !== nip) return
 
       if (!res.ok) {
         setError(data.error || 'Nie znaleziono')
@@ -61,10 +66,11 @@ export default function NipLookup() {
       }
 
       setClient({
-        company: data.name || client.company,
-        address: data.address || client.address,
+        company: data.name || current.company,
+        address: data.address || current.address,
         nip: data.nip || nip,
       })
+      setRegistryInfo(data.source === 'gus' ? 'Dane pobrane z rejestru REGON (GUS).' : 'Dane pobrane z wykazu VAT Ministerstwa Finansów.')
     } catch {
       setError('Błąd połączenia z API')
     } finally {
@@ -82,7 +88,12 @@ export default function NipLookup() {
           <input
             type="text"
             value={client.nip || ''}
-            onChange={(e) => setClient({ nip: e.target.value })}
+            onChange={(e) => {
+              setClient({ nip: e.target.value })
+              setError('')
+              setHistoryInfo('')
+              setRegistryInfo('')
+            }}
             placeholder="000-000-00-00"
             className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
           />
@@ -94,12 +105,13 @@ export default function NipLookup() {
             disabled={loading}
             className="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm font-medium hover:bg-gray-900 disabled:opacity-50 whitespace-nowrap"
           >
-            {loading ? 'Szukam...' : 'Pobierz z GUS'}
+            {loading ? 'Szukam...' : 'Pobierz dane'}
           </button>
         </div>
       </div>
       {error && <p className="text-xs text-red-600">{error}</p>}
-      {historyInfo && !error && <p className="text-xs text-green-700">{historyInfo}</p>}
+      {registryInfo && !error && <p className="text-xs text-green-700">{registryInfo}</p>}
+      {historyInfo && !error && !registryInfo && <p className="text-xs text-green-700">{historyInfo}</p>}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="md:col-span-2">
