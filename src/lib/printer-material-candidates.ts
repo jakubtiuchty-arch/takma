@@ -131,6 +131,29 @@ function widthMm(v: ProductVariant): number | null {
   return null
 }
 
+// Taśmy krótsze niż 74 m to próbki i rolki testowe (np. 110 m × 50 m), a nie to, czego szuka klient drukarki.
+const FULL_RIBBON_MIN_M = 74
+
+/**
+ * Kolejność taśm w serii: najpierw pełne rolki (od 74 m), potem krótsze i próbki; w grupie od najszerszej,
+ * a przy tej samej szerokości od najdłuższej. Warianty o tej samej szerokości, długości i gilzie pokazujemy
+ * raz: PN z „GT” (gilza z wycięciami do Zebra GT800) tylko wtedy, gdy nie ma wersji ze standardową gilzą —
+ * inaczej klient widział dwa identyczne kafelki „110×300 mm/m, rdzeń 25 mm” z różnymi cenami.
+ */
+function ribbonOrder<T extends { v: ProductVariant; w: number | null }>(list: T[]): T[] {
+  const len = (x: T) => ribbonVariantLengthM(x.v)
+  const full = (x: T) => (len(x) ?? FULL_RIBBON_MIN_M) >= FULL_RIBBON_MIN_M
+  const sorted = [...list].sort((a, b) =>
+    Number(full(b)) - Number(full(a)) || b.w! - a.w! || (len(b) ?? 0) - (len(a) ?? 0) || Number(/GT/.test(a.v.partNumber)) - Number(/GT/.test(b.v.partNumber)))
+  const seen = new Set<string>()
+  return sorted.filter(x => {
+    const key = `${x.w}|${len(x) ?? '?'}|${x.v.attributes?.['Rdzeń'] ?? x.v.attributes?.['Rdzeń (gilza)'] ?? ''}`
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 export interface MaterialPick { product: Product; variant: ProductVariant; title: string }
 export type MaterialKind = 'label' | 'ribbon' | 'rfid'
 
@@ -187,9 +210,11 @@ export function materialVariantCandidates({ productIds, kind, printWidthMm, requ
       .filter(x => !minLabelWidthMm || kind !== 'label' || x.w! >= minLabelWidthMm)
       .filter(x => !maxRibbonLengthM || kind !== 'ribbon' || (ribbonVariantLengthM(x.v) ?? 0) <= maxRibbonLengthM)
       .sort((a, b) => (b.w! - a.w!))
+    const ordered = kind === 'ribbon' ? ribbonOrder(fitting) : fitting
+    const picked = ordered
       .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
       .map(x => ({ product, variant: x.v, title: t }))
-    if (fitting.length) groups.push(fitting)
+    if (picked.length) groups.push(picked)
   }
   // Przeplatanie round-robin: kolumna 0 = po jednym wariancie z każdej serii, potem kolumna 1, itd.
   const picks: MaterialPick[] = []
