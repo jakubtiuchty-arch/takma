@@ -9,7 +9,7 @@ import { useCartStore } from '@/store/cartStore'
 import { Badge } from '@/components/ui'
 import { ArrowRightIcon, PlusIcon, CheckIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
-import { labelVariantCoreMm, ribbonVariantLengthM } from '@/lib/printer-label-core'
+import { materialVariantCandidates, type MaterialKind, type MaterialPick } from '@/lib/printer-material-candidates'
 import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
 
 /**
@@ -18,27 +18,6 @@ import { rolekWKartonieSatoKlient } from '@/lib/sato-karton-klient'
  * głowicy. Odpowiednik PrinterCompatibleLabels, ale dla podanych serii (nie hardkod DT).
  */
 
-function cleanTitle(name: string): string {
-  return name
-    .replace(/^Etykiety\s+\w+\s+Zebra\s+/i, '')
-    .replace(/^Taśma\s+termotransferowa\s+Zebra\s+/i, '')
-    .replace(/^Taśma\s+termotransferowa\s+SATO\s+/i, 'SATO ')
-    .replace(/^Etykiety\s+Zebra\s+/i, '')
-    .replace(/^Zebra\s+/i, '')
-}
-
-/** Szerokość wariantu w mm: etykieta z 'Rozmiar', taśma z 'Szerokość'. */
-function widthMm(v: ProductVariant): number | null {
-  const r = v.attributes['Rozmiar']
-  if (r) { const m = r.match(/(\d+(?:[.,]\d+)?)\s*[×xX]/); if (m) return parseFloat(m[1].replace(',', '.')) }
-  const s = v.attributes['Szerokość']
-  if (s) { const m = s.match(/(\d+(?:[.,]\d+)?)/); if (m) return parseFloat(m[1].replace(',', '.')) }
-  return null
-}
-
-interface Pick { product: Product; variant: ProductVariant; title: string }
-type MaterialKind = 'label' | 'ribbon' | 'rfid'
-
 const AVAIL = {
   available: { label: 'Dostępny', variant: 'success' as const },
   'on-order': { label: 'Niedostępny', variant: 'danger' as const },
@@ -46,7 +25,7 @@ const AVAIL = {
 }
 
 function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
-  pick: Pick; kind: MaterialKind; stockInfo?: StockInfo; stockLoading: boolean; printerSlug?: string
+  pick: MaterialPick; kind: MaterialKind; stockInfo?: StockInfo; stockLoading: boolean; printerSlug?: string
 }) {
   const { product, variant, title } = pick
   const { addItem, isInCart } = useCartStore()
@@ -117,7 +96,7 @@ function Card({ pick, kind, stockInfo, stockLoading, printerSlug }: {
 }
 
 export default function PrinterMaterialVariants({
-  id, title, productIds, kind, printWidthMm, requiredCore, minLabelCoreMm, minLabelWidthMm, maxRibbonLengthM, perSeries = 3, maxTotal = 8, printerSlug, description,
+  id, title, productIds, kind, printWidthMm, requiredCore, minLabelCoreMm, maxLabelCoreMm, minLabelWidthMm, maxRibbonLengthM, perSeries = 3, maxTotal = 8, printerSlug, description,
 }: {
   id: string
   title: string
@@ -132,6 +111,9 @@ export default function PrinterMaterialVariants({
   /** Etykiety: najmniejsza gilza (mm) z karty drukarki przemysłowej, np. 76 dla SATO CL4-SXR.
    *  Odrzuca rolki o mniejszej gilzie; etykiety bez znanej gilzy zostają. */
   minLabelCoreMm?: number
+  /** Etykiety: największa gilza (mm, włącznie) z reguły `printerLabelCoreRule`, np. 35,9 dla Zebra ZQ620 Plus.
+   *  Odrzuca rolki o większej gilzie; etykiety bez znanej gilzy zostają. */
+  maxLabelCoreMm?: number
   /** Etykiety: najmniejsza szerokość (mm) z karty drukarki, np. 47 dla SATO CL6-SXR. Węższe odpadają. */
   minLabelWidthMm?: number
   /** Taśmy: najdłuższa rolka (m) z karty drukarki, np. 600 dla SATO CL6-SXR. Dłuższe odpadają;
@@ -142,56 +124,7 @@ export default function PrinterMaterialVariants({
   /** Slug drukarki, z której karty pochodzi lista — trafia do linku etykiety jako ?drukarka= */
   printerSlug?: string
 }) {
-  // Czy rdzeń (gilza) wariantu pasuje do drukarki. Czyta 'Rdzeń' lub 'Rdzeń (gilza)'.
-  // Taśmy: zachowanie jak dotąd (rdzeń musi zaczynać się od wymaganej wartości; brak → odrzuć).
-  // Etykiety: dopasowanie po liczbie gilzy; rolki bez gilzy liczbowej (fanfold) — nie odrzucamy.
-  const coreOk = (v: ProductVariant): boolean => {
-    if (!requiredCore) return true
-    const allowed = Array.isArray(requiredCore) ? requiredCore : [requiredCore]
-    const core = String(v.attributes?.['Rdzeń'] ?? v.attributes?.['Rdzeń (gilza)'] ?? '').trim()
-    if (kind === 'ribbon') return allowed.some(a => core.startsWith(a))
-    const num = core.match(/\d+/)?.[0]
-    if (!num) return true
-    return allowed.some(a => num.startsWith(a))
-  }
-  // Z każdej serii bierzemy kilka wariantów mieszczących się w szerokości głowicy,
-  // od najszerszego (najbardziej uniwersalny dla danej drukarki).
-  // Taśma jest zwykle nieco szersza niż głowica (104 mm głowica → ~110 mm taśma),
-  // więc dla taśm dajemy większą tolerancję niż dla etykiet.
-  const tol = kind === 'ribbon' ? 12 : kind === 'rfid' ? 0 : 2
-  // Budujemy listy per-seria, a potem przeplatamy je round-robin (najpierw po 1 z każdej serii,
-  // potem po 2…) — żeby rekomendacje pokazywały różnorodność klas (np. wosk / wosk-żywica / żywica),
-  // a nie były zdominowane przez jedną serię.
-  const groups: Pick[][] = []
-  for (const pid of productIds) {
-    const product = products.find(p => p.id === pid)
-    if (!product?.variants) continue
-    const t = cleanTitle(product.name)
-    const fitting = product.variants
-      .map(v => ({ v, w: widthMm(v) ?? (kind === 'rfid' ? widthMm({ ...v, attributes: { Rozmiar: v.name ?? '' } }) : null) }))
-      .filter(x => x.w != null && (!printWidthMm || x.w <= printWidthMm + tol))
-      // Formaty specjalne (kartridż ZD421c, rolki 30 m do P4T/RP4T) mają te same wymiary co zwykła rolka,
-      // ale inny mechanizm — atrybut 'Format' wyklucza je z doboru do drukarek z rolką (audyt ZD-01)
-      .filter(x => kind !== 'ribbon' || !x.v.attributes?.['Format'])
-      // Rdzeń (gilza): rolka musi pasować do wieszaków drukarki — np. etykiety fi76
-      // nie wejdą na drukarkę biurkową (akceptuje 12/19/25 mm).
-      .filter(x => coreOk(x.v))
-      .filter(x => !minLabelCoreMm || kind !== 'label' || (labelVariantCoreMm(x.v) ?? minLabelCoreMm) >= minLabelCoreMm)
-      .filter(x => !minLabelWidthMm || kind !== 'label' || x.w! >= minLabelWidthMm)
-      .filter(x => !maxRibbonLengthM || kind !== 'ribbon' || (ribbonVariantLengthM(x.v) ?? 0) <= maxRibbonLengthM)
-      .sort((a, b) => (b.w! - a.w!))
-      .slice(0, Math.max(perSeries, 8)) // głębsza pula — po stanie pokażemy tylko dostępne
-      .map(x => ({ product, variant: x.v, title: t }))
-    if (fitting.length) groups.push(fitting)
-  }
-  // Przeplatanie round-robin: kolumna 0 = po jednym wariancie z każdej serii, potem kolumna 1, itd.
-  const picks: Pick[] = []
-  const maxLen = groups.reduce((m, g) => Math.max(m, g.length), 0)
-  for (let i = 0; i < maxLen; i++) {
-    for (const g of groups) if (g[i]) picks.push(g[i])
-  }
-  // Pula kandydatów większa niż wyświetlamy — po sprawdzeniu stanu pokazujemy tylko dostępne.
-  const candidates = picks.slice(0, 24)
+  const candidates = materialVariantCandidates({ productIds, kind, printWidthMm, requiredCore, minLabelCoreMm, maxLabelCoreMm, minLabelWidthMm, maxRibbonLengthM, perSeries })
   const partNumbers = candidates.map(p => p.variant.partNumber)
   const { stockData, loading } = useStockData(partNumbers)
   const [mobileExpanded, setMobileExpanded] = useState(false)

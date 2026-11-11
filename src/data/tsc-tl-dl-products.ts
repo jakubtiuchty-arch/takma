@@ -139,7 +139,7 @@ TL241 ma USB 2.0, port Ethernet 10/100 Mb/s, 128 MB pamięci Flash i 64 MB DRAM.
     },
   ],
   downloads: downloadsTlDl,
-  relatedProducts: ['tsc-tl341', 'tsc-dl241', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd230t', 'brother-td-4t', 'citizen-cl-e321'],
+  relatedProducts: ['tsc-tl341', 'tsc-dl241', 'tsc-te210', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd230t', 'brother-td-4t', 'citizen-cl-e321'],
   createdAt: '2026-10-25',
   updatedAt: '2026-10-26',
   sameAs: 'https://emea.tscprinters.com/en/products/tl-dl-series-4-inch-performance-desktop-printers',
@@ -232,7 +232,7 @@ Do komputera podłącza się ją przewodem USB 2.0, do sieci firmowej — przez 
     },
   ],
   downloads: downloadsTlDl,
-  relatedProducts: ['tsc-tl241', 'tsc-dl241', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd230t', 'brother-td-4t', 'citizen-cl-e321'],
+  relatedProducts: ['tsc-tl241', 'tsc-dl241', 'tsc-te210', 'zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'zebra-zd230t', 'brother-td-4t', 'citizen-cl-e321'],
   createdAt: '2026-10-26',
   sameAs: 'https://emea.tscprinters.com/en/products/tl-dl-series-4-inch-performance-desktop-printers',
 }

@@ -4,71 +4,12 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { products, thermalSizeSlug, type Product, type ProductVariant } from '@/data/products'
-import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 import { useCartStore } from '@/store/cartStore'
 import { Badge } from '@/components/ui'
 import { ArrowRightIcon, PlusIcon, CheckIcon, BellIcon } from '@/components/ui/Icons'
 import type { StockInfo } from '@/lib/ingram'
-import { labelVariantCoreMm } from '@/lib/printer-label-core'
-
-/**
- * Domyślne 8 najpopularniejszych wariantów etykiet (Z-Perform 1000D bestseller) — wszystkie
- * ≤102 mm szerokości, pasują do drukarek 4". Stosowane dla większości drukarek termicznych.
- */
-const DEFAULT_VARIANTS = [
-  { productId: 'zebra-z-perform-1000d', partNumber: '3002908' },    // 102×38 mm — adresowe
-  { productId: 'zebra-z-perform-1000d', partNumber: '3002654' },    // 102×64 mm — produktowe
-  { productId: 'zebra-z-perform-1000d', partNumber: '3007096-T' },  // 102×152 mm — paczkomaty
-  { productId: 'zebra-z-perform-1000d', partNumber: '3007891' },    // 102×178 mm — wysyłkowe XL
-  { productId: 'zebra-z-perform-1000d', partNumber: '3005807' },    // 76×51 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3006307-T' },  // 57×32 mm — cenówki
-  { productId: 'zebra-z-perform-1000d', partNumber: '3004996' },    // 51×25 mm — identyfikacja
-  { productId: 'zebra-z-perform-1000d', partNumber: '3002549' },    // 32×25 mm — małe produkty
-] as const
-
-/**
- * Override dla drukarek entry-level (ZD220d/ZD230d/ZD421d) — Z-Essentials najpierw, bo to
- * najtańsze etykiety w portfolio i naturalny pairing dla budget drukarek.
- */
-const ESSENTIALS_FIRST_VARIANTS = [
-  { productId: 'zebra-z-essentials-1000d', partNumber: 'ZIPZED3018655XL' },  // 102×152 z topcoat
-  { productId: 'zebra-z-essentials-500d', partNumber: 'ZIPZED3018654XL' },   // 102×152 budget
-  { productId: 'zebra-z-perform-1000d', partNumber: '3002908' },             // 102×38 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3002654' },             // 102×64 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3007891' },             // 102×178 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3005807' },             // 76×51 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3006307-T' },           // 57×32 mm
-  { productId: 'zebra-z-perform-1000d', partNumber: '3004996' },             // 51×25 mm
-] as const
-
-const ESSENTIALS_FIRST_PRINTERS = new Set([
-  'zebra-zd220d',
-  'zebra-zd230d',
-  'zebra-zd421d',
-])
-
-function getBestsellerVariants(printerSlug?: string) {
-  if (printerSlug && ESSENTIALS_FIRST_PRINTERS.has(printerSlug)) {
-    return ESSENTIALS_FIRST_VARIANTS
-  }
-  return DEFAULT_VARIANTS
-}
-
-interface VariantData {
-  product: Product
-  variant: ProductVariant
-  seriesTitle: string
-}
-
-function getVariantData(spec: { productId: string; partNumber: string }): VariantData | null {
-  const product = products.find(p => p.id === spec.productId)
-  if (!product) return null
-  const variant = product.variants?.find(v => v.partNumber === spec.partNumber)
-  if (!variant) return null
-  const series = thermalLabelSeries.find(s => s.productId === spec.productId)
-  return { product, variant, seriesTitle: series?.title ?? product.name.replace(/^Etykiety termiczne Zebra /, '') }
-}
+import { thermalLabelCandidates } from '@/lib/printer-material-candidates'
 
 const AVAILABILITY_CONFIG = {
   available: { label: 'Dostępny', variant: 'success' as const },
@@ -230,56 +171,29 @@ function VariantCard({
  * konkretnych wariantów rozmiarowych (PN, nie serii) z live ceną i dostępnością z API
  * Ingram/BlueStar/Jarltech. Każda karta linkuje do /produkt/{seria}?pn={PN}.
  */
-/** Parsuje szerokość etykiety (mm) z atrybutu „Rozmiar" (np. „102×38 mm" → 102). */
-function labelWidthMm(rozmiar?: string): number | null {
-  const m = rozmiar?.match(/(\d+(?:[.,]\d+)?)\s*[×xX]/)
-  return m ? parseFloat(m[1].replace(',', '.')) : null
-}
-
 export default function PrinterCompatibleLabels({
   printerSlug,
   printWidthMm,
+  requiredCore,
   minLabelCoreMm,
+  maxLabelCoreMm,
   minLabelWidthMm,
   sectionId = 'etykiety-papierowe',
 }: {
   printerSlug?: string
   printWidthMm?: number
-  /** Najmniejsza gilza (mm) z karty drukarki przemysłowej — rolki o mniejszej gilzie odpadają */
+  /** Dozwolone gilze etykiet (np. biurkowe ['12', '19', '25'] — bez 76 mm); reguła z `printerLabelCoreRule` */
+  requiredCore?: string[]
+  /** Najmniejsza gilza (mm) z karty drukarki — rolki o mniejszej gilzie odpadają; reguła z `printerLabelCoreRule` */
   minLabelCoreMm?: number
+  /** Największa gilza (mm, włącznie) — rolki o większej gilzie odpadają (Zebra ZQ620 Plus: gilza do 34,9 mm); reguła z `printerLabelCoreRule` */
+  maxLabelCoreMm?: number
   /** Najmniejsza szerokość etykiety (mm) z karty drukarki — węższe etykiety odpadają */
   minLabelWidthMm?: number
   /** Inna kotwica, gdy na karcie jest też sekcja etykiet termotransferowych (drukarka w wersjach DT i TT) */
   sectionId?: string
 }) {
-  const bestsellers = getBestsellerVariants(printerSlug)
-  // Filtr szerokości głowicy — etykieta nie może być szersza niż głowica drukarki
-  // (np. drukarka 2"/56 mm nie dostaje etykiet 102 mm). Tolerancja 2 mm.
-  // Od dołu: etykieta węższa niż minimum z karty drukarki (SATO CL6-SXR: 47 mm) też odpada.
-  const fits = (rozmiar?: string) => {
-    const w = labelWidthMm(rozmiar)
-    if (w == null) return true
-    return (!printWidthMm || w <= printWidthMm + 2) && (!minLabelWidthMm || w >= minLabelWidthMm)
-  }
-  const coreFits = (v: ProductVariant) => !minLabelCoreMm || (labelVariantCoreMm(v) ?? minLabelCoreMm) >= minLabelCoreMm
-  let candidates = bestsellers
-    .map(getVariantData)
-    .filter((v): v is VariantData => v !== null && fits(v.variant.attributes['Rozmiar']) && coreFits(v.variant))
-
-  // Zawsze powiększamy pulę z Z-Perform 1000D — po sprawdzeniu stanu pokażemy tylko
-  // DOSTĘPNE, więc potrzeba więcej kandydatów (mieszczących się w głowicy).
-  {
-    const zp = products.find(p => p.id === 'zebra-z-perform-1000d')
-    const series = thermalLabelSeries.find(s => s.productId === 'zebra-z-perform-1000d')
-    const seen = new Set(candidates.map(v => v.variant.partNumber))
-    const extra = (zp?.variants ?? [])
-      .map(v => ({ v, w: labelWidthMm(v.attributes['Rozmiar']) }))
-      .filter(x => x.w != null && (!printWidthMm || x.w! <= printWidthMm + 2) && (!minLabelWidthMm || x.w! >= minLabelWidthMm) && coreFits(x.v) && !seen.has(x.v.partNumber))
-      .sort((a, b) => (b.w! - a.w!)) // najszersze mieszczące się najpierw
-      .map(x => ({ product: zp!, variant: x.v, seriesTitle: series?.title ?? 'Z-Perform 1000D' }))
-    candidates = [...candidates, ...extra].slice(0, 16)
-  }
-
+  const candidates = thermalLabelCandidates({ printerSlug, printWidthMm, requiredCore, minLabelCoreMm, maxLabelCoreMm, minLabelWidthMm })
   const partNumbers = candidates.map(v => v.variant.partNumber)
   const { stockData, loading: stockLoading } = useStockData(partNumbers)
 

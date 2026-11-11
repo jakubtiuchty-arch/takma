@@ -70,7 +70,8 @@ import ServicePlansBox from './ServicePlansBox'
 import RelatedProducts from './RelatedProducts'
 import PrinterCompatibleLabels from '@/components/product/PrinterCompatibleLabels'
 import PrinterMaterialVariants from '@/components/product/PrinterMaterialVariants'
-import { printerMaxRibbonLengthM, printerMinLabelCoreMm, printerMinLabelWidthMm } from '@/lib/printer-label-core'
+import { materialVariantCandidates, thermalLabelCandidates } from '@/lib/printer-material-candidates'
+import { printerLabelCoreRule, printerMaxRibbonLengthM, printerMinLabelWidthMm, printerRibbonCoresMm } from '@/lib/printer-label-core'
 import VariantsTable from './VariantsTable'
 import StockInfo from './StockInfo'
 import SmartPrice from './SmartPrice'
@@ -398,23 +399,29 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // idą tusze i nośniki z compatibleAccessories.
   const isColorPrinter = product.subcategoryIds?.includes('kolorowe-drukarki-etykiet') ?? false
   const brotherWlasneMaterialy = brotherWlasneMaterialyIds.has(product.id)
-  // Wymagany rdzeń taśmy: przemysłowe = 25 mm (1"), biurkowe = 12 mm (1/2").
-  // Rolka 12 mm nie wejdzie na wieszaki przemysłówki i odwrotnie — filtrujemy rekomendowane taśmy.
-  const printerRibbonCore = product.subcategoryIds?.includes('przemyslowe-drukarki-etykiet')
-    ? '25'
-    : product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
-      ? '12'
-      : undefined
-  // Rdzeń (gilza) ETYKIET: biurkowe akceptują małe gilzy (12/19/25 mm) — NIE 76 mm
-  // (etykieta fi76 fizycznie nie wejdzie na drukarkę desktop). Przemysłowe i pozostałe:
-  // bez filtra (mieszczą każdą gilzę, w tym 25 mm na adapterze).
-  const printerLabelCore: string[] | undefined = product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
-    ? ['12', '19', '25']
-    : undefined
-  // Wyjątek od „przemysłowe mieszczą każdą gilzę”: gdy karta drukarki podaje tylko gilzy od 76 mm
-  // (np. SATO CL4-SXR: 76 lub 101 mm), rolki na gilzie 25 mm do niej nie pasują.
-  const printerMinCore = printerLabelCore ? undefined : printerMinLabelCoreMm(product.specifications)
-  const printerMinLabelCore = printerMinCore !== undefined && printerMinCore >= 76 ? printerMinCore : undefined
+  // Wymagany rdzeń taśmy. Najpierw gilze z karty (`ribbonCoresMm`), potem z wiersza specyfikacji taśmy:
+  // TSC TL241 przyjmuje 300 m na gilzie 1" lub 110 m na gilzie 0,5", Brother TD-4T tylko gilzę 25,4 mm,
+  // więc stała reguła „biurkowa = 12 mm” polecała rolki, które do nich nie wejdą. Gdy karta nie podaje
+  // gilzy: przemysłowe = 25 mm (1"), biurkowe = 12 mm (1/2").
+  const ribbonCoresFromSpecs = printerRibbonCoresMm(product.specifications)
+  const printerRibbonCore: string | string[] | undefined = product.ribbonCoresMm?.length
+    ? product.ribbonCoresMm.map(String)
+    : ribbonCoresFromSpecs.length
+      ? ribbonCoresFromSpecs.map(String)
+      : product.subcategoryIds?.includes('przemyslowe-drukarki-etykiet')
+        ? '25'
+        : product.subcategoryIds?.includes('biurkowe-drukarki-etykiet')
+          ? '12'
+          : undefined
+  // Rdzeń (gilza) ETYKIET — jedna reguła dla etykiet termicznych i termotransferowych (`printerLabelCoreRule`):
+  // biurkowe 12/19/25 mm i minimum z karty (TE210: od 25,4 mm), gilza od ponad 26 mm → brak sekcji etykiet;
+  // przemysłowe i pozostałe bez filtra, chyba że karta podaje tylko gilze od 76 mm (SATO CL4-SXR).
+  // Od góry: nie większa niż największa gilza z karty, a w mobilnych bez gilzy — mniejsza niż połowa komory.
+  const labelCoreRule = printerLabelCoreRule(product)
+  const printerLabelCore = labelCoreRule.allowedCores
+  const printerMinLabelCore = labelCoreRule.minCoreMm
+  const printerMaxLabelCore = labelCoreRule.maxCoreMm
+  const labelsDontFit = labelCoreRule.labelsDontFit
   // Zakres szerokości etykiet i długość taśmy z karty drukarki: SATO CL6-SXR przyjmuje etykiety od 47 mm
   // i taśmę do 600 m, więc nie polecamy etykiet 32 mm ani taśm 900 m.
   const printerMinLabelWidth = printerMinLabelWidthMm(product)
@@ -449,17 +456,31 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Zebra do każdej drukarki, a TT bez etykiet nie ma sensu.
   const STANDARD_TT_PAPER = ['zebra-z-perform-1000t', 'zebra-z-select-2000t']
   const STANDARD_TT_FOIL = ['zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver']
-  const ttPaperIds = isTTprinter
+  const ttPaperIds = isTTprinter && !labelsDontFit
     ? (compatibleConsumables.length ? compatibleConsumables.map((c) => c!.id) : STANDARD_TT_PAPER)
     : []
-  const ttFoilIds = isTTprinter
+  const ttFoilIds = isTTprinter && !labelsDontFit
     ? (compatibleFoilLabels.length ? compatibleFoilLabels.map((c) => c!.id) : STANDARD_TT_FOIL)
     : []
 
-  // Widoczność kotwic nawigacji = sekcje materiałów, które faktycznie się renderują niżej.
-  const showLabelsNav = (isLabelPrinter && !isTTprinter && !brotherWlasneMaterialy) || (isTTprinter && ttPaperIds.length > 0) || compatibleConsumables.length > 0
-  const showFoilNav = (isTTprinter && ttFoilIds.length > 0) || compatibleFoilLabels.length > 0
-  const showRibbonNav = printerRibbons.length > 0
+  // Sekcje materiałów renderujemy tylko z co najmniej jednym kandydatem po filtrach gilzy i szerokości
+  // (stan magazynowy sprawdza komponent w przeglądarce). Ten sam dobór co w komponentach, więc np.
+  // TSC Alpha-30LHC (gilza 12,7 mm) nie dostaje pustej sekcji etykiet ani linku do niej w nawigacji.
+  const thermalLabelsFit = thermalLabelCandidates({ printerSlug: product.slug, printWidthMm, requiredCore: printerLabelCore, minLabelCoreMm: printerMinLabelCore, maxLabelCoreMm: printerMaxLabelCore, minLabelWidthMm: printerMinLabelWidth }).length > 0
+  const ttLabelsFit = (productIds: string[]) => materialVariantCandidates({ productIds, kind: 'label', printWidthMm, requiredCore: printerLabelCore, minLabelCoreMm: printerMinLabelCore, maxLabelCoreMm: printerMaxLabelCore, minLabelWidthMm: printerMinLabelWidth }).length > 0
+  const rfidSection = rfidLabelIds.length > 0 && materialVariantCandidates({ productIds: rfidLabelIds, kind: 'rfid', printWidthMm }).length > 0
+  const onMetalSection = onMetalLabelIds.length > 0 && materialVariantCandidates({ productIds: onMetalLabelIds, kind: 'rfid', printWidthMm }).length > 0
+  const thermalSection = isLabelPrinter && isTTprinter && !isColorPrinter && !brotherWlasneMaterialy && !labelsDontFit && (product.subcategoryIds?.includes('termiczne-drukarki-etykiet') ?? false) && thermalLabelsFit
+  // #etykiety-papierowe: etykiety termiczne (drukarka DT), etykiety papierowe TT albo lista z compatibleAccessories
+  const dtLabelPrinter = !brotherWlasneMaterialy && isLabelPrinter && !isTTprinter && !isColorPrinter
+  const ttPaperSection = isTTprinter && ttPaperIds.length > 0 && ttLabelsFit(ttPaperIds)
+  const paperSection = brotherWlasneMaterialy ? false
+    : dtLabelPrinter ? !labelsDontFit && thermalLabelsFit
+      : isTTprinter && ttPaperIds.length > 0 ? ttPaperSection
+        : compatibleConsumables.length > 0
+  const ttFoilSection = isTTprinter && ttFoilIds.length > 0 && ttLabelsFit(ttFoilIds)
+  const foilSection = isTTprinter && ttFoilIds.length > 0 ? ttFoilSection : compatibleFoilLabels.length > 0
+  const ribbonSection = printerRibbons.length > 0 && materialVariantCandidates({ productIds: printerRibbonIds, kind: 'ribbon', printWidthMm, requiredCore: printerRibbonCore, maxRibbonLengthM: printerMaxRibbonLength }).length > 0
 
   // Akcesoria — grupowane wg kategorii
   const allRelated = (product.relatedAccessories || [])
@@ -475,6 +496,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const relatedRewinders = allRelated.filter((p) => p!.subcategoryIds?.includes('nawijarki-do-etykiet'))
   const relatedDispensers = allRelated.filter((p) => p!.subcategoryIds?.includes('dyspensery-etykiet'))
   const relatedAccessories = allRelated.filter((p) => !p!.subcategoryIds?.includes('karty-pcv') && p!.categoryId !== 'oprogramowanie' && !p!.subcategoryIds?.includes('nawijarki-do-etykiet') && !p!.subcategoryIds?.includes('dyspensery-etykiet'))
+  // Link „Materiały eksploatacyjne” prowadzi do pierwszej sekcji materiałów na stronie (kolejność jak niżej
+  // w treści); gdy żadnej nie ma, linku nie ma.
+  const materialsAnchor = ([
+    [rfidSection, 'etykiety-rfid'],
+    [onMetalSection, 'etykiety-rfid-on-metal'],
+    [isColorPrinter && relatedAccessories.length > 0, 'tusze'],
+    [thermalSection, 'etykiety-termiczne'],
+    [paperSection, 'etykiety-papierowe'],
+    [foilSection, 'etykiety-foliowe'],
+    [ribbonSection, 'tasmy-barwiace'],
+  ] as const).find(([ok]) => ok)?.[1]
 
   // Zestaw startowy: karta drukarki pokazuje boks zestawu, którego jest składnikiem (tylko urządzenia, nie taśmy/karty)
   const starterBundle = product.categoryId === 'drukarki-kart' && !product.bundleItems && !naZapytanie
@@ -1461,9 +1493,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 </a>
               )}
               {['sato-cl4-sxr', 'sato-cl6nx-plus'].includes(product.slug) && accessoriesNav}
-              {(showLabelsNav || showFoilNav || showRibbonNav || rfidLabelIds.length > 0 || onMetalLabelIds.length > 0) && (
+              {materialsAnchor && (
                 <a
-                  href={isColorPrinter ? '#tusze' : rfidLabelIds.length > 0 ? '#etykiety-rfid' : onMetalLabelIds.length > 0 ? '#etykiety-rfid-on-metal' : '#etykiety-papierowe'}
+                  href={`#${materialsAnchor}`}
                   className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
                 >
                   {isColorPrinter ? 'Tusze i etykiety' : product.categoryId === 'drukarki-kart' ? 'Taśmy' : product.categoryId === 'drukarki-opasek' ? 'Opaski' : 'Materiały eksploatacyjne'}
@@ -1891,7 +1923,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 b) drukarka TT → etykiety papierowe termotransferowe (compatibleAccessories)
                 c) drukarki kart/opasek → RelatedProducts (taśmy/opaski)
                 Wyjątek: Brother QL i P-touch nie mają sekcji etykiet (własne rolki DK i taśmy TZe). */}
-            {rfidLabelIds.length > 0 && (
+            {rfidSection && (
               <PrinterMaterialVariants
                 id="etykiety-rfid"
                 title="Etykiety RFID"
@@ -1905,7 +1937,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printerSlug={product.slug}
               />
             )}
-            {onMetalLabelIds.length > 0 && (
+            {onMetalSection && (
               <PrinterMaterialVariants
                 id="etykiety-rfid-on-metal"
                 title="Etykiety RFID na metal — do wersji ZT411 On-Metal"
@@ -1927,13 +1959,13 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             )}
             {/* Jedna karta z wersjami termiczną i termotransferową (np. Zebra ZD611-HC): sekcja TT niżej
                 pokazuje tylko etykiety termotransferowe, więc etykiety termiczne dokładamy osobno. */}
-            {isLabelPrinter && isTTprinter && !isColorPrinter && !brotherWlasneMaterialy && product.subcategoryIds?.includes('termiczne-drukarki-etykiet') && (
-              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
+            {thermalSection && (
+              <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} requiredCore={printerLabelCore} minLabelCoreMm={printerMinLabelCore} maxLabelCoreMm={printerMaxLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             )}
-            {brotherWlasneMaterialy ? null : isLabelPrinter && !isTTprinter && !isColorPrinter ? (
-              <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} minLabelCoreMm={printerMinLabelCore} minLabelWidthMm={printerMinLabelWidth} />
+            {brotherWlasneMaterialy ? null : dtLabelPrinter ? (
+              !paperSection ? null : <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} requiredCore={printerLabelCore} minLabelCoreMm={printerMinLabelCore} maxLabelCoreMm={printerMaxLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
-              <PrinterMaterialVariants
+              !ttPaperSection ? null : <PrinterMaterialVariants
                 id="etykiety-papierowe"
                 title="Etykiety papierowe termotransferowe"
                 productIds={ttPaperIds}
@@ -1942,6 +1974,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
                 minLabelCoreMm={printerMinLabelCore}
+                maxLabelCoreMm={printerMaxLabelCore}
                 minLabelWidthMm={printerMinLabelWidth}
               />
             ) : compatibleConsumables.length > 0 ? (
@@ -1958,7 +1991,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
 
             {/* Etykiety foliowe termotransferowe — konkretne warianty dobrane do głowicy */}
             {isTTprinter && ttFoilIds.length > 0 ? (
-              <PrinterMaterialVariants
+              !ttFoilSection ? null : <PrinterMaterialVariants
                 id="etykiety-foliowe"
                 title="Etykiety foliowe termotransferowe"
                 productIds={ttFoilIds}
@@ -1967,6 +2000,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 printWidthMm={printWidthMm}
                 requiredCore={printerLabelCore}
                 minLabelCoreMm={printerMinLabelCore}
+                maxLabelCoreMm={printerMaxLabelCore}
                 minLabelWidthMm={printerMinLabelWidth}
               />
             ) : compatibleFoilLabels.length > 0 ? (
@@ -1980,7 +2014,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             ) : null}
 
             {/* Taśmy barwiące — wymagane do druku termotransferowego (konkretne warianty) */}
-            {printerRibbons.length > 0 && (
+            {ribbonSection && (
               <PrinterMaterialVariants
                 id="tasmy-barwiace"
                 title={isSatoPrinter ? 'Taśmy termotransferowe SATO' : 'Taśmy termotransferowe'}

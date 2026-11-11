@@ -22,6 +22,7 @@ import { zebraHcZd6Products } from './zebra-hc-zd6-products'
 import { zebraHcZq6Products } from './zebra-hc-zq6-products'
 import { tscHcProducts } from './tsc-hc-products'
 import { tscTlDlProducts } from './tsc-tl-dl-products'
+import { tscTeProducts } from './tsc-te-products'
 import { satoHcProducts } from './sato-hc-products'
 import { honeywellCitizenHcProducts } from './honeywell-citizen-hc-products'
 import { healthcareScannerCategory } from './healthcare-scanner-category'
@@ -160,6 +161,11 @@ export interface Product {
   variants?: ProductVariant[]
   compatibleAccessories: string[]
   compatibleFoilLabels?: string[]
+  /** Gilze (mm) taśm barwiących polecanych na karcie drukarki, gdy sama specyfikacja nie wystarcza.
+   *  Np. TSC TE210 przyjmuje taśmę 300 m na gilzie 1" i 110 m na gilzie 0,5", ale w zestawie ma tylko
+   *  trzpienie 1"; taśma 0,5" wejdzie bez trzpienia tylko na gilzie z wycięciami, więc polecamy [25].
+   *  Ma pierwszeństwo przed odczytem ze specyfikacji i regułą według podkategorii. */
+  ribbonCoresMm?: number[]
   relatedAccessories?: string[]
   faq?: { question: string; answer: string }[]
   comparison?: {
@@ -95657,6 +95663,15 @@ for (const subcategory of subcategories) {
   }
 }
 
+// Drukarka TSC TE210 (seria TE200 4") trafia do podkategorii biurkowych według `subcategoryIds`, tak jak TL/DL.
+for (const subcategory of subcategories) {
+  const additions = tscTeProducts.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  if (additions.length) {
+    subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
+    subcategory.productCount = subcategory.productIds.length
+  }
+}
+
 // Skanery dla ochrony zdrowia (Zebra HC, Honeywell, Socket Mobile, Datalogic, Newland) i ich akcesoria trafiają do podkategorii według `subcategoryIds`, w tym do „Skanery dla służby zdrowia”.
 for (const subcategory of subcategories) {
   const additions = [...zebraHcScanners, ...honeywellSocketHcScanners, ...datalogicNewlandHcScanners].filter(product => product.subcategoryIds?.includes(subcategory.id))
@@ -95755,6 +95770,7 @@ const rawProductList: Product[] = [
   ...zebraHcZq6Products,
   ...tscHcProducts,
   ...tscTlDlProducts,
+  ...tscTeProducts,
   ...satoHcProducts,
   ...honeywellCitizenHcProducts,
   ...zebraHcScanners,
