@@ -37,13 +37,13 @@ export interface BrandPillarData {
 export const brandPillarContent: Record<string, BrandPillarData> = {
   sato: satoBrandContent,
   brady: {
-  "heroText": "Drukarki etykiet Brady do oznaczania kabli, rozdzielnic i paneli krosowych oraz tablet przemysłowy RT710 z akcesoriami. Porównaj M210 z klawiaturą i M211 sterowaną ze smartfona. Sprawdź zestawy, ceny i dostępność.",
+  "heroText": "Drukarki etykiet Brady do oznaczania kabli, rozdzielnic i paneli krosowych, etykieciarka laboratoryjna M210-LAB oraz tablet przemysłowy RT710 z akcesoriami. Porównaj M210 z klawiaturą i M211 sterowaną ze smartfona. Sprawdź zestawy, ceny i dostępność.",
   "categoryTiles": [
     {
       "categoryId": "drukarki-etykiet",
       "name": "Drukarki etykiet Brady",
       "href": "/katalog?producent=brady&kategoria=drukarki-etykiet",
-      "description": "M210 z klawiaturą i M211 z Bluetooth na kasety M21 do 19 mm."
+      "description": "M210 z klawiaturą, M211 z Bluetooth i laboratoryjna M210-LAB na kasety M21 do 19 mm."
     },
     {
       "categoryId": "tablety-przemyslowe",
@@ -55,12 +55,13 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       "categoryId": "akcesoria",
       "name": "Akcesoria Brady",
       "href": "/katalog?producent=brady&kategoria=akcesoria",
-      "description": "Baterie, stacje, klawiatury i elementy montażowe do RT710."
+      "description": "Akumulatory, zasilacze i walizki do M210 i M211 oraz baterie, stacje, klawiatury i elementy montażowe do RT710."
     }
   ],
   "featuredSlugs": [
     "brady-m210",
     "brady-m211",
+    "brady-m210-lab",
     "brady-rt710"
   ],
   "technologies": [
@@ -72,7 +73,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     {
       "name": "Kasety M21",
       "badge": "Materiały",
-      "description": "Kasety z etykietą i taśmą barwiącą do M210 i M211. Ponad 90 rodzajów, szerokość do 19,05 mm."
+      "description": "Kasety z etykietą i taśmą barwiącą do M210, M211 i M210-LAB. Ponad 90 rodzajów, szerokość do 19,05 mm."
     },
     {
       "name": "Mobility Edge",
@@ -92,6 +93,11 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       "products": "M211 z aplikacją Express Labels"
     },
     {
+      "name": "Laboratorium",
+      "description": "Etykiety na fiolki, probówki, szkiełka i szalki, także do ciekłego azotu i odporne na chemikalia.",
+      "products": "M210-LAB z kasetami laboratoryjnymi M21"
+    },
+    {
       "name": "Magazyn",
       "description": "Listy kompletacyjne i inwentaryzacja na ekranie tabletu.",
       "products": "RT710 ze skanerem S0703 lub S0803 FlexRange"
@@ -99,8 +105,8 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   ],
   "timeline": [],
   "aboutParagraphs": [
-    "Brady dostarcza urządzenia i materiały do identyfikacji, gromadzenia danych oraz obsługi procesów przemysłowych. W ofercie TAKMA są drukarki etykiet Brady M210 i M211 oraz tablet RT710 z akcesoriami.",
-    "M210 i M211 drukują na tych samych kasetach M21 o szerokości do 19,05 mm. M210 ma klawiaturę i kreatory etykiet, a M211 drukuje z aplikacji na smartfonie przez Bluetooth.",
+    "Brady dostarcza urządzenia i materiały do identyfikacji, gromadzenia danych oraz obsługi procesów przemysłowych. W ofercie TAKMA są drukarki etykiet Brady M210, M211 i M210-LAB oraz tablet RT710 z akcesoriami.",
+    "M210, M211 i M210-LAB drukują na tych samych kasetach M21 o szerokości do 19,05 mm. M210 ma klawiaturę i kreatory etykiet, a M211 drukuje z aplikacji na smartfonie przez Bluetooth. M210-LAB ma klawiaturę oraz kreatory dla fiolek, probówek i szkiełek.",
     "RT710 łączy ekran 10,1 cala z Androidem 16, Wi-Fi 7 i obudową IP66/IP68. Konfiguracje różnią się pamięcią, skanerem i zawartością zestawu. Wybierz konkretny numer PN przed zamówieniem."
   ],
   "partnership": [],
@@ -110,7 +116,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   "whyBuyItems": [
     {
       "title": "Dobór konfiguracji",
-      "text": "Sprawdź zawartość zestawu przy konkretnym PN. Zestawy M210 różnią się kasetami, M211 jest w kartonie albo w walizce, a RT710 różni się skanerem i pamięcią."
+      "text": "Sprawdź zawartość zestawu przy konkretnym PN. Zestawy M210 różnią się kasetami, M211 i M210-LAB są w kartonie albo w walizce, a RT710 różni się skanerem i pamięcią."
     },
     {
       "title": "Zgodne akcesoria",
@@ -124,11 +130,15 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   "faq": [
     {
       "question": "Jakie produkty Brady są w TAKMA?",
-      "answer": "Oferujemy drukarki etykiet [Brady M210](/produkt/brady-m210) i [Brady M211](/produkt/brady-m211) do oznaczania kabli oraz tablet przemysłowy RT710 z bateriami, stacjami, klawiaturami i elementami montażowymi."
+      "answer": "Oferujemy drukarki etykiet [Brady M210](/produkt/brady-m210) i [Brady M211](/produkt/brady-m211) do oznaczania kabli, etykieciarkę laboratoryjną [Brady M210-LAB](/produkt/brady-m210-lab), kasety M21 i akcesoria do tych drukarek oraz tablet przemysłowy RT710 z bateriami, stacjami, klawiaturami i elementami montażowymi."
     },
     {
       "question": "Czym różni się Brady M210 od M211?",
       "answer": "Obie drukarki drukują w rozdzielczości 203 dpi na kasetach M21 o szerokości do 19,05 mm. M210 ma klawiaturę ABC, ekran i 11 kreatorów etykiet i działa bez telefonu. M211 nie ma klawiatury: etykiety projektuje się w aplikacji Brady Express Labels i wysyła przez Bluetooth. M211 ma automatyczną obcinarkę, a M210 ręczną."
+    },
+    {
+      "question": "Do czego służy Brady M210-LAB?",
+      "answer": "[Brady M210-LAB](/produkt/brady-m210-lab) to etykieciarka laboratoryjna z klawiaturą. Ma typy etykiet i kreatory dla fiolek, probówek i szkiełek oraz znacznik daty i godziny. Drukuje na laboratoryjnych kasetach M21, np. z [polipropylenu M21-750-7425](/produkt/brady-m21-750-7425) na fiolki i szalki. Parametry druku są takie same jak w M210."
     },
     {
       "question": "Czy tablet RT710 jest dostępny z 5G?",
@@ -149,6 +159,10 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       "href": "/etykieciarki"
     },
     {
+      "title": "Drukarki dla służby zdrowia",
+      "href": "/drukarki-dla-sluzby-zdrowia"
+    },
+    {
       "title": "Dobierz wariant Brady RT710",
       "href": "/produkt/brady-rt710"
     },
@@ -158,7 +172,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     }
   ],
   "technologiesTitle": "Technologie Brady",
-  "technologiesIntro": "Drukarki M210 i M211 korzystają z tych samych kaset M21. Tablet RT710 działa na platformie Mobility Edge."
+  "technologiesIntro": "Drukarki M210, M211 i M210-LAB korzystają z tych samych kaset M21. Tablet RT710 działa na platformie Mobility Edge."
 },
   zebra: {
     heroText: 'Drukarki etykiet, terminale mobilne, skanery kodów kreskowych, tablety przemysłowe, materiały eksploatacyjne i akcesoria — pełna oferta Zebra Technologies z cenami netto i dostawą z magazynu w Polsce.',
