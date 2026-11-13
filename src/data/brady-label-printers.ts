@@ -69,7 +69,7 @@ export const bradyLabelPrinters: Product[] = [
       { name: 'Zawartość zestawu M210-KIT EU', value: 'walizka, drukarka M210, akumulator litowo-jonowy, zasilacz z przewodem EU, kaseta M21-750-499' },
       { name: 'Zawartość zestawu M210-ELEC-KIT EU', value: 'jak M210-KIT EU oraz kasety M21-1000-427 i M21-750-595-YL' },
       { name: 'Zawartość zestawu M210-DATA-KIT EU', value: 'jak M210-KIT EU oraz kasety M21-1250-427 i M21-250-423' },
-      { name: 'Akcesoria opcjonalne', value: 'akumulator 170420, zasilacz EU 110416, walizka 170421, zaczep do paska 170385, magnes 170425, miękki futerał 150617, akcesorium wielofunkcyjne 170424 (magnes, latarka, podstawka, zacisk; wymaga 2 baterii AAA)' },
+      { name: 'Akcesoria opcjonalne', value: 'akumulator M210-BATTERY (170420), zasilacz BMP21-AC EUR (110416), zaczep do paska M21-BELTCLIP (170385), magnes M21-MAGNET (170425), walizka M210-HC (170421), miękki futerał BMP-SC-1 (150617), akcesorium wielofunkcyjne M210-TOOL (170424): magnes, latarka, podstawka, mocowanie przy pasku i na słupie, wymaga 2 baterii AAA' },
       { name: 'Numery artykułów Brady', value: 'M210-KIT EU: 311307; M210-ELEC-KIT EU: 311311; M210-DATA-KIT EU: 311314' },
     ],
     variants: [
@@ -87,7 +87,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Jakie są alternatywy dla Brady M210?', answer: 'Do druku z telefonu przez Bluetooth służy [Brady M211](/produkt/brady-m211) na te same kasety M21. Brother oferuje drukarki z klawiaturą na taśmy TZe: [PT-E110](/produkt/brother-pt-e110) na taśmy do 12 mm i [PT-E310BTVP](/produkt/brother-pt-e310bt) na taśmy do 18 mm i rurki termokurczliwe HSe. Wszystkie modele są w kategorii [drukarki do oznaczania kabli](/drukarki-do-oznaczania-kabli).' },
     ],
     compatibleAccessories: ['brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-1000-427', 'brady-m21-1250-427', 'brady-m21-750-499', 'brady-m21-499-tb', 'brady-m21-250-423', 'brady-m21-750-595-yl'],
-    relatedAccessories: [],
+    relatedAccessories: ['brady-m210-battery', 'brady-bmp21-ac-eur', 'brady-m21-beltclip', 'brady-m21-magnet', 'brady-m210-hc', 'brady-bmp-sc-1', 'brady-m210-tool'],
     relatedProducts: ['brady-m211', 'brother-pt-e110', 'brother-pt-e310bt'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brady-m210-karta-katalogowa.pdf', size: '535 KB' },
@@ -159,7 +159,7 @@ export const bradyLabelPrinters: Product[] = [
       { name: 'Gwarancja', value: '2 lata' },
       { name: 'Zawartość opakowania M211-EU-UK-US', value: 'drukarka z wewnętrznym akumulatorem, kaseta M21-750-499, zasilacz z wtyczkami EU, UK i US, kabel USB-C, skrócona instrukcja' },
       { name: 'Zawartość zestawu M211-KIT-EU-UK-US', value: 'walizka, drukarka z wewnętrznym akumulatorem, kaseta M21-750-499, zasilacz z wtyczkami EU, UK i US, kabel USB-C, zaczep do paska, powerbank, skrócona instrukcja' },
-      { name: 'Akcesoria opcjonalne', value: 'zaczep do paska 170385, walizka 170386, magnes 170425, powerbank 176499, zasilacz 176501' },
+      { name: 'Akcesoria opcjonalne', value: 'powerbank M211-M511-POWER (176499), zasilacz M211-M511-EU-UK-AC (176501), zaczep do paska M21-BELTCLIP (170385), magnes M21-MAGNET (170425), walizka M211-HC (170386), miękki futerał BMP-SC-1 (150617)' },
       { name: 'Numery artykułów Brady', value: 'M211-EU-UK-US: 170381; M211-KIT-EU-UK-US: 170390' },
     ],
     variants: [
@@ -176,7 +176,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Jakie są alternatywy dla Brady M211?', answer: 'Do pracy bez telefonu służy [Brady M210](/produkt/brady-m210) z klawiaturą ABC na te same kasety M21. Brother oferuje [PT-E720BT](/produkt/brother-pt-e720bt), który także drukuje z aplikacji na smartfonie, na taśmach TZe do 24 mm. Wszystkie modele są w kategorii [drukarki do oznaczania kabli](/drukarki-do-oznaczania-kabli).' },
     ],
     compatibleAccessories: ['brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-1000-427', 'brady-m21-1250-427', 'brady-m21-750-499', 'brady-m21-499-tb', 'brady-m21-250-423', 'brady-m21-750-595-yl'],
-    relatedAccessories: [],
+    relatedAccessories: ['brady-m211-m511-power', 'brady-m211-m511-eu-uk-ac', 'brady-m21-beltclip', 'brady-m21-magnet', 'brady-m211-hc', 'brady-bmp-sc-1'],
     relatedProducts: ['brady-m210', 'brother-pt-e720bt'],
     downloads: [
       { name: 'Karta katalogowa (PL)', type: 'datasheet', url: '/downloads/brady-m211-karta-katalogowa.pdf', size: '660 KB' },

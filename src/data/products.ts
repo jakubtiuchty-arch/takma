@@ -68,6 +68,7 @@ import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { bradyLabelPrinters } from './brady-label-printers'
 import { bradyM21Kasety } from './brady-m21-kasety'
+import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -95571,9 +95572,9 @@ for (const subcategory of subcategories) {
   }
 }
 
-// Akcesoria Brother do etykieciarek P-touch trafiają do akcesoriów drukarek etykiet według `subcategoryIds`.
+// Akcesoria Brother do etykieciarek P-touch i akcesoria Brady do M210 i M211 trafiają do akcesoriów drukarek etykiet według `subcategoryIds`.
 for (const subcategory of subcategories) {
-  const additions = brotherQlPtouchAccessories.filter(product => product.subcategoryIds?.includes(subcategory.id))
+  const additions = [...brotherQlPtouchAccessories, ...bradyAkcesoria].filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95732,6 +95733,7 @@ const rawProductList: Product[] = [
   ...bradyRt710Products,
   ...bradyLabelPrinters,
   ...bradyM21Kasety,
+  ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,
