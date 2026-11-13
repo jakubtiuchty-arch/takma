@@ -547,6 +547,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'PT-E', namePattern: 'PT-E\\d' },
         { value: 'PT-P', namePattern: 'PT-P\\d' },
         { value: 'Brady M21x', namePattern: 'Brady M21[01]' },
+        { value: 'Brady M510', namePattern: 'Brady M510' },
       ],
     },
     {
@@ -558,13 +559,14 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '19 mm', pattern: '19,05 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+        { value: '38 mm', pattern: '38,1 mm', specs: ['Maksymalna szerokość etykiety'] },
       ],
     },
     {
       specKey: 'klawiatura',
       label: 'Klawiatura',
       derived: [
-        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny', specs: ['Klawiatura'] },
+        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny|QWERTY|układ ABC', specs: ['Klawiatura'] },
         { value: 'Bez klawiatury', pattern: '^brak', specs: ['Klawiatura i wyświetlacz'] },
         { value: 'Bez klawiatury', pattern: 'bez klawiatury', specs: ['Typ urządzenia'] },
         { value: 'Bez klawiatury', slugs: ['brother-pt-p910bt', 'brother-pt-p950nw'] },
@@ -603,13 +605,14 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '19 mm', pattern: '19,05 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+        { value: '38 mm', pattern: '38,1 mm', specs: ['Maksymalna szerokość etykiety'] },
       ],
     },
     {
       specKey: 'klawiatura',
       label: 'Klawiatura',
       derived: [
-        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny', specs: ['Klawiatura'] },
+        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny|QWERTY|układ ABC', specs: ['Klawiatura'] },
         { value: 'Bez klawiatury', pattern: '^brak', specs: ['Klawiatura i wyświetlacz'] },
         { value: 'Bez klawiatury', pattern: 'bez klawiatury', specs: ['Typ urządzenia'] },
         { value: 'Bez klawiatury', slugs: ['brother-pt-p910bt', 'brother-pt-p950nw'] },
@@ -1693,10 +1696,10 @@ categoryFilters['akcesoria-do-drukarek-etykiet'] = [
       // „Składany rdzeń do nawijaka” to część nawijaka, nie nawijak — ląduje w „Prowadnice, rdzenie”
       { value: 'Nawijaki', namePattern: '^(?!składany rdzeń).*nawijak' },
       { value: 'Interfejsy sieciowe i komunikacyjne', namePattern: 'wi-?fi|ethernet|rs-?232|\\bLPT\\b|równoległ|parallel|interfejs' },
-      { value: 'Moduły RFID, konwertery, klawiatury', namePattern: 'rfid|konwerter|klawiatur' },
+      { value: 'Moduły RFID, konwertery, klawiatury', namePattern: 'rfid|konwerter|klawiatur|emulator' },
       { value: 'Baterie, ładowarki i zasilacze', namePattern: 'bateri|akumulator|ładowark|zasilacz|powerbank' },
       { value: 'Etui i osłony', namePattern: 'etui|futerał|egzoszkielet|walizk' },
-      { value: 'Uchwyty, klipsy i stacje dokujące', namePattern: 'klips|uchwyt|stacj[aęi] (dokując|samochodow)|zaczep|magnes|wielofunkcyjn' },
+      { value: 'Uchwyty, klipsy i stacje dokujące', namePattern: 'klips|uchwyt|stacj[aęi] (dokując|samochodow)|zaczep|magnes|haczyk|wielofunkcyjn' },
       { value: 'Kable i adaptery', namePattern: 'kabel|adapter(?! rdzeni)' },
       { value: 'Prowadnice, rdzenie i pozostałe części', namePattern: 'prowadnic|rdze|mega door|kalibracyjn' },
     ],

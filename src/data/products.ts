@@ -68,6 +68,7 @@ import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { bradyLabelPrinters } from './brady-label-printers'
 import { bradyM21Kasety } from './brady-m21-kasety'
+import { bradyM45Kasety } from './brady-m45-kasety'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -610,13 +611,13 @@ export const subcategories: Subcategory[] = [
     slug: 'etykieciarki',
     name: 'Etykieciarki',
     parentCategoryId: 'drukarki-etykiet',
-    description: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady na kasety M21: z klawiaturą, z Bluetooth i do komputera',
+    description: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady na kasety M21 do 19 mm oraz M4 i M5 do 38 mm: z klawiaturą, z Bluetooth i do komputera',
     seoTitle: 'Etykieciarki Brother P-touch i Brady — ręczne i do komputera',
-    seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady M210, M211 na kasety M21. Modele z klawiaturą, z Bluetooth i do komputera, dla biura i elektryków.',
-    longDescription: 'Etykieciarka drukuje etykiety z kasety, w której są materiał etykiety i barwnik, a w taśmach laminowanych także laminat chroniący nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch na taśmy TZe oraz Brady na kasety M21.',
+    seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm oraz Brady M210, M211 i M510 na kasety do 38 mm. Modele z klawiaturą, z Bluetooth i do komputera, dla biura i elektryków.',
+    longDescription: 'Etykieciarka drukuje etykiety z kasety, w której są materiał etykiety i barwnik, a w taśmach laminowanych także laminat chroniący nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch na taśmy TZe oraz Brady na kasety M21 (do 19 mm) i M4/M5 (do 38 mm).',
     icon: 'printer',
-    productIds: [...brotherPtouchProducts.map(p => p.id), 'brady-m210', 'brady-m210-lab', 'brady-m211'],
-    productCount: brotherPtouchProducts.length + 3,
+    productIds: [...brotherPtouchProducts.map(p => p.id), 'brady-m210', 'brady-m210-lab', 'brady-m211', 'brady-m510'],
+    productCount: brotherPtouchProducts.length + 4,
   },
   {
     id: 'drukarki-do-oznaczania-kabli',
@@ -625,11 +626,11 @@ export const subcategories: Subcategory[] = [
     parentCategoryId: 'drukarki-etykiet',
     description: 'Drukarki etykiet do opisu kabli, listew zaciskowych i rozdzielnic: owijki, flagi kablowe i rurki termokurczliwe',
     seoTitle: 'Drukarka do kabli i oznaczników kablowych dla elektryka',
-    seoDescription: 'Drukarka do oznaczania i opisywania kabli dla elektryka: oznaczniki kablowe, owijki, flagi, koszulki termokurczliwe, etykiety na listwy zaciskowe. Brady M210, M211 i Brother P-touch.',
+    seoDescription: 'Drukarka do oznaczania i opisywania kabli dla elektryka: oznaczniki kablowe, owijki, flagi, koszulki termokurczliwe, etykiety na listwy zaciskowe. Brady M210, M211, M510 i Brother P-touch.',
     longDescription: 'Drukarka do oznaczania kabli, nazywana też drukarką oznaczników kablowych albo etykieciarką do kabli, drukuje oznaczniki, które owija się wokół kabla, mocuje jako flagę albo nasuwa na kabel jako koszulkę termokurczliwą. Druk jest termotransferowy. Na taśmach laminowanych i owijkach samolaminujących warstwa ochronna chroni nadruk przed ścieraniem i wilgocią. Elektrycy opisują nią kable, listwy zaciskowe, bezpieczniki i rozdzielnice. Instalatorzy sieci oznaczają kable krosowe, panele krosowe i gniazda. Modele ręczne mają klawiaturę i szablony etykiet kablowych, a modele z Bluetooth drukują z aplikacji na smartfonie. Do opisów biurowych służą [etykieciarki](/etykieciarki).',
     icon: 'printer',
-    productIds: ['brady-m210', 'brady-m211', 'brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw'],
-    productCount: 9,
+    productIds: ['brady-m210', 'brady-m211', 'brady-m510', 'brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw'],
+    productCount: 10,
   },
   {
     id: 'akcesoria-do-drukarek-etykiet',
@@ -95733,6 +95734,7 @@ const rawProductList: Product[] = [
   ...bradyRt710Products,
   ...bradyLabelPrinters,
   ...bradyM21Kasety,
+  ...bradyM45Kasety,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,

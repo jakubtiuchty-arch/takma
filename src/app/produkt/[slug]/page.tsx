@@ -108,6 +108,7 @@ import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptouch'
 import { bradyLabelPrinters } from '@/data/brady-label-printers'
 import { BRADY_OZNACZNIKI_KABLI_IDS, BRADY_ETYKIETY_LAB_IDS, BRADY_DRUKARKI_LAB_IDS } from '@/data/brady-m21-kasety'
+import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
 import VariantQuickPick from './VariantQuickPick'
@@ -123,6 +124,9 @@ interface ProductPageProps {
 
 const accessoryNavigation = buildAccessoryNavigation(products)
 // Brother QL drukuje na rolkach DK, P-touch na taśmach TZe, a Brady M210 i M211 na kasetach M21, więc etykiety Zebry do nich nie pasują.
+// Kasety Brady M21 (M210, M211) i M4/M5 (M510) w tych samych grupach sekcji kaset.
+const KASETY_NA_KABLE_IDS = new Set([...Array.from(BRADY_OZNACZNIKI_KABLI_IDS), ...Array.from(BRADY_M45_KABLE_IDS)])
+const KASETY_LAB_IDS = new Set([...Array.from(BRADY_ETYKIETY_LAB_IDS), ...Array.from(BRADY_M45_LAB_IDS)])
 const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts, ...bradyLabelPrinters].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
@@ -485,9 +489,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Kasety Brady M21 w sekcjach: zakładane na kabel, etykiety ogólne i etykiety laboratoryjne.
   // Drukarka laboratoryjna (M210-LAB) pokazuje najpierw etykiety laboratoryjne, pozostałe drukarki — kable.
   const kasetyGrupy = kasetySection ? (() => {
-    const naKable = compatibleConsumables.filter((p) => BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id))
-    const laboratoryjne = compatibleConsumables.filter((p) => BRADY_ETYKIETY_LAB_IDS.has(p!.id))
-    const pozostale = compatibleConsumables.filter((p) => !BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id) && !BRADY_ETYKIETY_LAB_IDS.has(p!.id))
+    const naKable = compatibleConsumables.filter((p) => KASETY_NA_KABLE_IDS.has(p!.id))
+    const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
+    const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id))
     const grupy = BRADY_DRUKARKI_LAB_IDS.has(product.id)
       ? [
           { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: laboratoryjne },
