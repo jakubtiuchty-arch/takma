@@ -86,7 +86,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Czym różnią się zestawy Brady M210?', answer: 'Wszystkie trzy zestawy EU zawierają walizkę, drukarkę, akumulator litowo-jonowy, zasilacz i kasetę M21-750-499. Zestaw dla elektryków M210-ELEC-KIT EU ma dodatkowo kasety M21-1000-427 i M21-750-595-YL. Zestaw teleinformatyczny M210-DATA-KIT EU ma dodatkowo kasety M21-1250-427 i M21-250-423.' },
       { question: 'Jakie są alternatywy dla Brady M210?', answer: 'Do druku z telefonu przez Bluetooth służy [Brady M211](/produkt/brady-m211) na te same kasety M21. Brother oferuje drukarki z klawiaturą na taśmy TZe: [PT-E110](/produkt/brother-pt-e110) na taśmy do 12 mm i [PT-E310BTVP](/produkt/brother-pt-e310bt) na taśmy do 18 mm i rurki termokurczliwe HSe. Wszystkie modele są w kategorii [drukarki do oznaczania kabli](/drukarki-do-oznaczania-kabli).' },
     ],
-    compatibleAccessories: ['brady-m21-750-499', 'brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-499-tb', 'brady-m21-1000-427', 'brady-m21-750-595-yl', 'brady-m21-1250-427', 'brady-m21-250-423'],
+    compatibleAccessories: ['brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-1000-427', 'brady-m21-1250-427', 'brady-m21-750-499', 'brady-m21-499-tb', 'brady-m21-250-423', 'brady-m21-750-595-yl'],
     relatedAccessories: [],
     relatedProducts: ['brady-m211', 'brother-pt-e110', 'brother-pt-e310bt'],
     downloads: [
@@ -175,7 +175,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Ile etykiet wydrukuje Brady M211 na jednym ładowaniu?', answer: 'Do 300 etykiet. Akumulator litowo-jonowy 1100 mAh jest wbudowany w drukarkę. Ładuje się z zasilacza albo przez USB, np. z laptopa lub gniazda w pojeździe. Zestaw M211-KIT-EU-UK-US ma dodatkowo powerbank.' },
       { question: 'Jakie są alternatywy dla Brady M211?', answer: 'Do pracy bez telefonu służy [Brady M210](/produkt/brady-m210) z klawiaturą ABC na te same kasety M21. Brother oferuje [PT-E720BT](/produkt/brother-pt-e720bt), który także drukuje z aplikacji na smartfonie, na taśmach TZe do 24 mm. Wszystkie modele są w kategorii [drukarki do oznaczania kabli](/drukarki-do-oznaczania-kabli).' },
     ],
-    compatibleAccessories: ['brady-m21-750-499', 'brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-499-tb', 'brady-m21-1000-427', 'brady-m21-750-595-yl', 'brady-m21-1250-427', 'brady-m21-250-423'],
+    compatibleAccessories: ['brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-1000-427', 'brady-m21-1250-427', 'brady-m21-750-499', 'brady-m21-499-tb', 'brady-m21-250-423', 'brady-m21-750-595-yl'],
     relatedAccessories: [],
     relatedProducts: ['brady-m210', 'brother-pt-e720bt'],
     downloads: [

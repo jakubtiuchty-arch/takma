@@ -353,3 +353,7 @@ export const bradyM21Kasety: Product[] = [...kasety.map((k): Product => ({
 })), bradyPermaSleeve, bradyQuickFlag, bradyListwyZaciskowe]
 
 export const BRADY_M21_KASETY_IDS = bradyM21Kasety.map((p) => p.id)
+
+// Kasety zakładane na kabel (owijki, flagi, koszulki). Na kartach M210 i M211 mają osobną sekcję
+// „Owijki, flagi i koszulki na kable”; pozostałe kasety idą do „Etykiety na listwy, panele i urządzenia”.
+export const BRADY_OZNACZNIKI_KABLI_IDS = new Set(['brady-m21-permasleeve', 'brady-m21-223-483', 'brady-m21-1000-427', 'brady-m21-1250-427'])
