@@ -1972,6 +1972,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   id="kasety"
                   title="Kasety z etykietami"
                   products={compatibleConsumables as typeof products}
+                  // pierwszy rząd (4 kasety) + „Pokaż pozostałe” / „Zwiń”, jak akcesoria na innych kartach
+                  initialLimit={4}
                   showDualButtons
                 />
               ) : null
