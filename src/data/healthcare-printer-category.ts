@@ -148,7 +148,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
     },
     {
       question: 'Jaka drukarka do etykiet na probówki?',
-      answer: 'Do etykiet na probówki służą m.in. drukarki 2-calowe: biurkowe [Zebra ZD411-HC](/produkt/zebra-zd411-hc), [ZD611-HC](/produkt/zebra-zd611-hc), [TSC DH220THC](/produkt/tsc-dh220thc) i [SATO WS2-2](/produkt/sato-ws2-2) oraz mobilna [Zebra ZQ610 Plus-HC](/produkt/zebra-zq610-plus-hc). Drukarka mobilna drukuje etykietę przy łóżku pacjenta, w miejscu pobrania. Rozmiar i materiał etykiety należy dobrać do probówek stosowanych w laboratorium.',
+      answer: 'Do etykiet na probówki służą m.in. drukarki 2-calowe: biurkowe [Zebra ZD411-HC](/produkt/zebra-zd411-hc), [ZD611-HC](/produkt/zebra-zd611-hc), [TSC DH220THC](/produkt/tsc-dh220thc) i [SATO WS2-2](/produkt/sato-ws2-2) oraz mobilna [Zebra ZQ610 Plus-HC](/produkt/zebra-zq610-plus-hc). Drukarka mobilna drukuje etykietę przy łóżku pacjenta, w miejscu pobrania. Rozmiar i materiał etykiety należy dobrać do probówek stosowanych w laboratorium. Do ręcznego druku etykiet na fiolki, probówki i szkiełka służy etykieciarka [Brady M210-LAB](/produkt/brady-m210-lab) z kasetami laboratoryjnymi M21.',
     },
     {
       question: 'Jak drukarka łączy się z systemem szpitalnym?',
