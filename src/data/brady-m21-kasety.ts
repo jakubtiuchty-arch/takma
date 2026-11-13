@@ -156,7 +156,81 @@ const kasety: Kaseta[] = [
   },
 ]
 
-export const bradyM21Kasety: Product[] = kasety.map((k) => ({
+export const bradyPermaSleeve: Product = {
+  id: 'brady-m21-permasleeve',
+  slug: 'brady-m21-permasleeve',
+  name: 'Koszulki termokurczliwe Brady PermaSleeve M21 — kasety do M210 i M211',
+  seoTitle: 'Brady PermaSleeve M21 — koszulki termokurczliwe do M210 i M211',
+  seoDescription: 'Koszulki termokurczliwe Brady PermaSleeve B-342 w kasetach M21 do drukarek M210 i M211: skurcz 3:1, kable od 1,17 do 8,13 mm, biały lub żółty. PN: M21-125-C-342, M21-187-C-342, M21-250-C-342, M21-375-C-342-YL.',
+  shortDescription: 'Brady PermaSleeve — kasety M21 z koszulkami termokurczliwymi z poliolefiny B-342 do drukarek Brady M210 i M211. Skurcz 3:1, cztery średnice na kable od 1,17 do 8,13 mm, czarny nadruk na białym lub żółtym tle.',
+  description: 'Brady PermaSleeve to koszulki termokurczliwe z poliolefiny B-342 w kasetach M21, z taśmą barwiącą R4300. Drukarka M210 lub M211 drukuje oznaczenie na płaskiej koszulce. Koszulkę nasuwa się na kabel przed podłączeniem końcówki, a po podgrzaniu kurczy się w stosunku 3:1 i zaciska na kablu.\n\nKasety różnią się średnicą koszulki: 3,18, 4,75, 6,35 i 9,53 mm. Zakres średnic kabla wynosi od 1,17 do 8,13 mm, czyli od 22 do 4 AWG. Nadruk jest czarny na białym albo żółtym tle. Każda kaseta mieści 2,13 m koszulki.\n\nMateriał jest samogasnący i odporny na promieniowanie UV, chemikalia, paliwa i oleje. Nadruk jest odporny na ścieranie i blaknięcie. Zakres temperatury pracy wynosi od −55 do 135 °C. Materiał ma uznanie UL 224 i spełnia SAE AS23053/5 (klasa 1), SAE AS-81531 oraz MIL-STD-202.',
+  categoryId: 'materialy-eksploatacyjne',
+  subcategoryIds: [],
+  manufacturerId: 'brady',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/bmp21-plus-series-permasleeve-heat-shrink-tubing-cps-3069439',
+  quoteOnly: true,
+  availability: 'unavailable',
+  images: [
+    '/images/products/brady/m21-permasleeve.png',
+    '/images/products/brady/m21-permasleeve-zolta.png',
+    '/images/products/brady-m21-permasleeve-kable.webp',
+    '/images/products/brady-m21-permasleeve-listwa.webp',
+  ],
+  imageDescriptions: [
+    'Kaseta Brady PermaSleeve M21-250-C-342 z białą koszulką termokurczliwą',
+    'Kaseta Brady PermaSleeve M21-250-C-342-YL z żółtą koszulką termokurczliwą',
+    'Kable oznaczone koszulkami termokurczliwymi PermaSleeve',
+    'Kable przy listwie zaciskowej oznaczone koszulkami PermaSleeve',
+  ],
+  tags: ['produkcja'],
+  isNew: true,
+  isBestseller: false,
+  specifications: [
+    { name: 'Typ', value: 'Kaseta z koszulką termokurczliwą i taśmą barwiącą' },
+    { name: 'Materiał', value: 'poliolefina termokurczliwa B-342, samogasnąca' },
+    { name: 'Współczynnik skurczu', value: '3:1' },
+    { name: 'Średnica koszulki', value: '3,18 / 4,75 / 6,35 / 9,53 mm, zależnie od wersji' },
+    { name: 'Zakres średnic kabla', value: 'od 1,17 do 8,13 mm (22–4 AWG), zależnie od wersji' },
+    { name: 'Szerokość koszulki na płasko', value: '5,97 / 8,51 / 11,15 / 16,38 mm' },
+    { name: 'Długość w kasecie', value: '2,13 m' },
+    { name: 'Kolor', value: 'czarny nadruk na białym lub żółtym tle' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Temperatura pracy', value: 'od −55 do 135 °C' },
+    { name: 'Odporność', value: 'promieniowanie UV, chemikalia, paliwa, oleje, ścieranie, blaknięcie' },
+    { name: 'Normy', value: 'UL 224, SAE AS23053/5 (klasa 1), SAE AS-81531, MIL-STD-202' },
+    { name: 'REACH (SVHC)', value: 'M21-187-C-342 i M21-250-C-342 zawierają substancję z listy kandydackiej SVHC (DBDPE). Pozostałe wersje jej nie zawierają.' },
+    { name: 'Taśma barwiąca', value: 'R4300 (w kasecie)' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_M21 },
+    { name: 'Numery artykułów Brady', value: 'M21-125-C-342: 110923; M21-125-C-342-YL: 139750; M21-187-C-342: 110924; M21-187-C-342-YL: 139751; M21-250-C-342: 110925; M21-250-C-342-YL: 139752; M21-375-C-342-YL: 139753' },
+  ],
+  variants: [
+    { partNumber: 'M21-125-C-342', name: 'Brady PermaSleeve M21 — koszulka 3,18 mm, biała', attributes: { 'Średnica kabla': '1,17–2,79 mm', Kolor: 'Biały' }, availability: 'unavailable' },
+    { partNumber: 'M21-125-C-342-YL', name: 'Brady PermaSleeve M21 — koszulka 3,18 mm, żółta', attributes: { 'Średnica kabla': '1,17–2,79 mm', Kolor: 'Żółty' }, availability: 'unavailable' },
+    { partNumber: 'M21-187-C-342', name: 'Brady PermaSleeve M21 — koszulka 4,75 mm, biała', attributes: { 'Średnica kabla': '1,57–3,81 mm', Kolor: 'Biały' }, availability: 'unavailable' },
+    { partNumber: 'M21-187-C-342-YL', name: 'Brady PermaSleeve M21 — koszulka 4,75 mm, żółta', attributes: { 'Średnica kabla': '1,57–3,81 mm', Kolor: 'Żółty' }, availability: 'unavailable' },
+    { partNumber: 'M21-250-C-342', name: 'Brady PermaSleeve M21 — koszulka 6,35 mm, biała', attributes: { 'Średnica kabla': '2,39–5,46 mm', Kolor: 'Biały' }, availability: 'unavailable' },
+    { partNumber: 'M21-250-C-342-YL', name: 'Brady PermaSleeve M21 — koszulka 6,35 mm, żółta', attributes: { 'Średnica kabla': '2,39–5,46 mm', Kolor: 'Żółty' }, availability: 'unavailable' },
+    { partNumber: 'M21-375-C-342-YL', name: 'Brady PermaSleeve M21 — koszulka 9,53 mm, żółta', attributes: { 'Średnica kabla': '3,18–8,13 mm', Kolor: 'Żółty' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    'Średnica kabla': 'Zakres średnic kabla, na którym koszulka zaciska się po podgrzaniu.\n\nPrzed skurczem koszulka ma średnicę 3,18, 4,75, 6,35 albo 9,53 mm i kurczy się w stosunku 3:1.',
+    Kolor: 'Kolor tła koszulki. Nadruk jest zawsze czarny.\n\nNajwiększy rozmiar, 9,53 mm, jest tylko w kolorze żółtym.',
+  },
+  faq: [
+    { question: 'Czy koszulki PermaSleeve pasują do Brady M211?', answer: 'Tak. Wszystkie kasety PermaSleeve M21 pasują do drukarek [Brady M210](/produkt/brady-m210), M210-LAB i [Brady M211](/produkt/brady-m211) oraz do starszych BMP21, BMP21-PLUS i BMP21-LAB.' },
+    { question: 'Jak dobrać rozmiar koszulki do kabla?', answer: 'Rozmiar wybiera się według średnicy kabla w izolacji. M21-125-C-342 pasuje do kabli od 1,17 do 2,79 mm, M21-187-C-342 od 1,57 do 3,81 mm, M21-250-C-342 od 2,39 do 5,46 mm, a M21-375-C-342-YL od 3,18 do 8,13 mm. Koszulkę nasuwa się przed podłączeniem końcówki kabla.' },
+    { question: 'Czym koszulka różni się od owijki samolaminującej?', answer: 'Koszulka trzyma się kabla bez kleju, bo zaciska się na nim po podgrzaniu. Trzeba ją nasunąć, zanim kabel zostanie podłączony. Owijkę samolaminującą, np. [M21-1000-427](/produkt/brady-m21-1000-427), nakleja się także na kabel już podłączony.' },
+  ],
+  applications: ['Oznaczanie kabli koszulkami termokurczliwymi', 'Oznaczenia elektryczne'],
+  compatibleAccessories: [],
+  relatedAccessories: [],
+  relatedProducts: ['brady-m210', 'brady-m211'],
+  downloads: [],
+  createdAt: '2026-11-13',
+  updatedAt: '2026-11-13',
+}
+
+export const bradyM21Kasety: Product[] = [...kasety.map((k): Product => ({
   ...k,
   slug: k.id,
   categoryId: 'materialy-eksploatacyjne',
@@ -173,6 +247,6 @@ export const bradyM21Kasety: Product[] = kasety.map((k) => ({
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
-}))
+})), bradyPermaSleeve]
 
 export const BRADY_M21_KASETY_IDS = bradyM21Kasety.map((p) => p.id)

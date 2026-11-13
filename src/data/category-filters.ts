@@ -641,7 +641,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       specKey: 'rurki-hse',
       label: 'Rurki termokurczliwe',
       derived: [
-        { value: 'Drukuje na rurkach HSe', pattern: '.', specs: ['Rurki termokurczliwe HSe 2:1', 'Rurki termokurczliwe HSe'] },
+        { value: 'Tak', pattern: '.', specs: ['Rurki termokurczliwe HSe 2:1', 'Rurki termokurczliwe HSe', 'Koszulki termokurczliwe'] },
       ],
     },
   ],
