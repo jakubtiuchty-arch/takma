@@ -615,8 +615,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady M210, M211 na kasety M21. Modele z klawiaturą, z Bluetooth i do komputera, dla biura i elektryków.',
     longDescription: 'Etykieciarka drukuje etykiety z kasety, w której są materiał etykiety i barwnik, a w taśmach laminowanych także laminat chroniący nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch na taśmy TZe oraz Brady na kasety M21.',
     icon: 'printer',
-    productIds: [...brotherPtouchProducts.map(p => p.id), 'brady-m210', 'brady-m211'],
-    productCount: brotherPtouchProducts.length + 2,
+    productIds: [...brotherPtouchProducts.map(p => p.id), 'brady-m210', 'brady-m210-lab', 'brady-m211'],
+    productCount: brotherPtouchProducts.length + 3,
   },
   {
     id: 'drukarki-do-oznaczania-kabli',

@@ -107,7 +107,7 @@ import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptouch'
 import { bradyLabelPrinters } from '@/data/brady-label-printers'
-import { BRADY_OZNACZNIKI_KABLI_IDS } from '@/data/brady-m21-kasety'
+import { BRADY_OZNACZNIKI_KABLI_IDS, BRADY_ETYKIETY_LAB_IDS, BRADY_DRUKARKI_LAB_IDS } from '@/data/brady-m21-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
 import VariantQuickPick from './VariantQuickPick'
@@ -482,9 +482,25 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         : compatibleConsumables.length > 0
   // Drukarki na własne materiały (kasety Brady M21) pokazują swoje kasety z compatibleAccessories.
   const kasetySection = brotherWlasneMaterialy && compatibleConsumables.length > 0
-  // Kasety Brady M21 w dwóch sekcjach: zakładane na kabel (owijki, flagi, koszulki) i etykiety ciągłe.
-  const kasetyNaKable = kasetySection ? compatibleConsumables.filter((p) => BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id)) : []
-  const kasetyEtykiety = kasetySection ? compatibleConsumables.filter((p) => !BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id)) : []
+  // Kasety Brady M21 w sekcjach: zakładane na kabel, etykiety ogólne i etykiety laboratoryjne.
+  // Drukarka laboratoryjna (M210-LAB) pokazuje najpierw etykiety laboratoryjne, pozostałe drukarki — kable.
+  const kasetyGrupy = kasetySection ? (() => {
+    const naKable = compatibleConsumables.filter((p) => BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id))
+    const laboratoryjne = compatibleConsumables.filter((p) => BRADY_ETYKIETY_LAB_IDS.has(p!.id))
+    const pozostale = compatibleConsumables.filter((p) => !BRADY_OZNACZNIKI_KABLI_IDS.has(p!.id) && !BRADY_ETYKIETY_LAB_IDS.has(p!.id))
+    const grupy = BRADY_DRUKARKI_LAB_IDS.has(product.id)
+      ? [
+          { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: laboratoryjne },
+          { klucz: 'etykiety', tytul: 'Etykiety ogólne', pozycje: pozostale },
+          { klucz: 'kable', tytul: 'Owijki, flagi, koszulki i zawieszki na kable', pozycje: naKable },
+        ]
+      : [
+          { klucz: 'kable', tytul: 'Owijki, flagi, koszulki i zawieszki na kable', pozycje: naKable },
+          { klucz: 'etykiety', tytul: 'Etykiety na listwy, panele i urządzenia', pozycje: pozostale },
+          { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: laboratoryjne },
+        ]
+    return grupy.filter((g) => g.pozycje.length > 0)
+  })() : []
   const ttFoilSection = isTTprinter && ttFoilIds.length > 0 && ttLabelsFit(ttFoilIds)
   const foilSection = isTTprinter && ttFoilIds.length > 0 ? ttFoilSection : compatibleFoilLabels.length > 0
   const ribbonSection = printerRibbons.length > 0 && materialVariantCandidates({ productIds: printerRibbonIds, kind: 'ribbon', printWidthMm, requiredCore: printerRibbonCore, maxRibbonLengthM: printerMaxRibbonLength }).length > 0
@@ -1975,24 +1991,16 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 <>
                   {/* Pierwsza sekcja ma id „kasety” — na nią prowadzi link „Materiały eksploatacyjne”.
                       initialLimit 4: pierwszy rząd + „Pokaż pozostałe” / „Zwiń”, jak akcesoria na innych kartach. */}
-                  {kasetyNaKable.length > 0 && (
+                  {kasetyGrupy.map((g, i) => (
                     <RelatedProducts
-                      id="kasety"
-                      title="Owijki, flagi, koszulki i zawieszki na kable"
-                      products={kasetyNaKable as typeof products}
+                      key={g.klucz}
+                      id={i === 0 ? 'kasety' : `kasety-${g.klucz}`}
+                      title={g.tytul}
+                      products={g.pozycje as typeof products}
                       initialLimit={4}
                       showDualButtons
                     />
-                  )}
-                  {kasetyEtykiety.length > 0 && (
-                    <RelatedProducts
-                      id={kasetyNaKable.length > 0 ? 'kasety-etykiety' : 'kasety'}
-                      title="Etykiety na listwy, panele i urządzenia"
-                      products={kasetyEtykiety as typeof products}
-                      initialLimit={4}
-                      showDualButtons
-                    />
-                  )}
+                  ))}
                 </>
               ) : null
             ) : dtLabelPrinter ? (

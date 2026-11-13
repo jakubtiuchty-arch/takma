@@ -28,7 +28,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Akumulator zapasowy do drukarki M210', 'Praca drukarki bez baterii AA'],
     relatedAccessories: ['brady-bmp21-ac-eur', 'brady-m210-hc'],
-    relatedProducts: ['brady-m210'],
+    relatedProducts: ['brady-m210', 'brady-m210-lab'],
     faq: [
       { question: 'Czy akumulator M210-BATTERY ładuje się w drukarce?', answer: 'Nie. Akumulator wyjmuje się z drukarki i ładuje z zasilacza sieciowego Brady. Gdy drukarka jest podłączona do zasilacza, akumulator w drukarce się nie ładuje.' },
       { question: 'Czy M210-BATTERY pasuje do drukarki Brady M211?', answer: 'Nie. [Brady M211](/produkt/brady-m211) ma wbudowany akumulator 1100 mAh, który ładuje się przez USB-C. Do ładowania M211 z dala od gniazdka służy [powerbank M211-M511-POWER](/produkt/brady-m211-m511-power).' },
@@ -57,7 +57,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Zasilanie drukarki M210 z sieci', 'Ładowanie akumulatora M210-BATTERY'],
     relatedAccessories: ['brady-m210-battery'],
-    relatedProducts: ['brady-m210'],
+    relatedProducts: ['brady-m210', 'brady-m210-lab'],
     faq: [
       { question: 'Czy zasilacz BMP21-AC EUR ładuje akumulator w drukarce?', answer: 'Nie. Akumulator M210-BATTERY ładuje się tylko po wyjęciu z drukarki. Wtedy zasilacz podłącza się bezpośrednio do akumulatora. Podłączony do drukarki zasilacz tylko ją zasila.' },
     ],
@@ -85,7 +85,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Noszenie drukarki przy pasku narzędziowym', 'Praca z wolnymi rękami'],
     relatedAccessories: ['brady-m21-magnet'],
-    relatedProducts: ['brady-m210', 'brady-m211'],
+    relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
     faq: [
       { question: 'Czy zaczep M21-BELTCLIP pasuje do M210 i do M211?', answer: 'Tak. Ten sam zaczep pasuje do drukarek [Brady M210](/produkt/brady-m210), M210-LAB i [Brady M211](/produkt/brady-m211).' },
     ],
@@ -113,7 +113,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Mocowanie drukarki na drzwiach rozdzielnicy', 'Praca przy panelach i konstrukcjach stalowych'],
     relatedAccessories: ['brady-m21-beltclip', 'brady-m210-tool'],
-    relatedProducts: ['brady-m210', 'brady-m211'],
+    relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
     faq: [
       { question: 'Do jakich powierzchni przymocuje się drukarka z magnesem M21-MAGNET?', answer: 'Do powierzchni stalowych, które przyciąga magnes, np. drzwi rozdzielnic, paneli i belek dwuteowych.' },
     ],
@@ -139,7 +139,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Przechowywanie drukarki M210 z kasetami', 'Transport drukarki na miejsce pracy'],
     relatedAccessories: ['brady-bmp-sc-1'],
-    relatedProducts: ['brady-m210'],
+    relatedProducts: ['brady-m210', 'brady-m210-lab'],
     faq: [
       { question: 'Czy walizka M210-HC pasuje do drukarki Brady M211?', answer: 'Nie. M210-HC jest przeznaczona do M210, M210-LAB i drukarek z serii BMP21. Do M211 służy [walizka M211-HC](/produkt/brady-m211-hc).' },
     ],
@@ -166,7 +166,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Noszenie drukarki w terenie', 'Drukarka i narzędzia w jednej torbie'],
     relatedAccessories: ['brady-m210-hc', 'brady-m211-hc'],
-    relatedProducts: ['brady-m210', 'brady-m211'],
+    relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
     faq: [
       { question: 'Czym różni się futerał BMP-SC-1 od walizki M210-HC lub M211-HC?', answer: 'BMP-SC-1 to miękka torba z paskiem na ramię do noszenia drukarki w terenie. [Walizka M210-HC](/produkt/brady-m210-hc) ma wkład piankowy na drukarkę M210, kasety i zasilacz. [Walizka M211-HC](/produkt/brady-m211-hc) chroni drukarkę M211 przed uderzeniami i kurzem.' },
     ],
@@ -193,7 +193,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Mocowanie drukarki na słupie lub przy pasku', 'Praca w słabo oświetlonych miejscach'],
     relatedAccessories: ['brady-m21-magnet', 'brady-m21-beltclip'],
-    relatedProducts: ['brady-m210'],
+    relatedProducts: ['brady-m210', 'brady-m210-lab'],
     faq: [
       { question: 'Czy M210-TOOL pasuje do drukarki Brady M211?', answer: 'Nie. M210-TOOL jest przeznaczone do M210, M210-LAB i drukarek z serii BMP21. Do M211 pasują [magnes M21-MAGNET](/produkt/brady-m21-magnet) i [zaczep M21-BELTCLIP](/produkt/brady-m21-beltclip).' },
     ],

@@ -21,7 +21,7 @@ const wspolne: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufacturerId' 
   isBestseller: false,
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m210', 'brady-m211'],
+  relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
@@ -582,6 +582,198 @@ export const bradyWinylDoPrzeklejania: Product = {
   applications: ['Oznaczenia 5S i lean', 'Oznaczenia magazynowe i inwentaryzacja', 'Oznaczenia, które się zmienia'],
 }
 
+// Kasety laboratoryjne (z karty katalogowej M210-LAB): B-7425, B-461, B-488, B-403. 13.11.2026.
+const relatedLab: Product['relatedProducts'] = ['brady-m210-lab', 'brady-m210', 'brady-m211']
+
+export const bradyPolipropylenLab: Product = {
+  ...wspolne,
+  relatedProducts: relatedLab,
+  tags: ['healthcare'],
+  id: 'brady-m21-750-7425',
+  slug: 'brady-m21-750-7425',
+  name: 'Etykiety laboratoryjne Brady M21-750-7425 — polipropylen na fiolki i szkiełka, 9,53–19,05 mm',
+  seoTitle: 'Brady M21-750-7425 — etykiety z polipropylenu na fiolki do M210-LAB',
+  seoDescription: 'Kasety Brady M21-7425 z polipropylenem B-7425 na fiolki, probówki, szkiełka i płytki dołkowe: od −80 do 70 °C, ciekły azot, autoklaw. Do M210-LAB, M210 i M211. PN: M21-750-7425, M21-500-7425, M21-375-7425.',
+  shortDescription: 'Brady M21-750-7425, M21-500-7425 i M21-375-7425 — kasety z taśmą z białego polipropylenu B-7425 na fiolki, probówki, szkiełka i płytki dołkowe. Do zamrażarki, ciekłego azotu i autoklawu. Do drukarek Brady M210-LAB, M210 i M211.',
+  description: 'Kasety Brady M21-7425 zawierają ciągłą taśmę z białego polipropylenu B-7425 i taśmę barwiącą R4300. Etykiety służą do oznaczania fiolek, probówek, szkiełek mikroskopowych i płytek dołkowych. Kaseta M21-750-7425 jest w opakowaniu drukarki M210-LAB.\n\nMateriał wytrzymuje zamrażarkę, ciekły azot, kąpiel w wodzie o temperaturze 100 °C i sterylizację w autoklawie. Zakres temperatury pracy wynosi od −80 do 70 °C. Etykieta jest odporna na chemikalia, rozpuszczalniki i rozmazanie. Do zamrażarki i ciekłego azotu etykietę nakleja się przed zamrożeniem.\n\nTrwały klej akrylowy jest przeznaczony na gładkie powierzchnie. Kasety różnią się szerokością taśmy: 9,53, 12,7 albo 19,05 mm. Każda kaseta ma 6,4 m taśmy.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/bmp21-plus-series-chemical-temperature-resistant-labels-cps-3069452',
+  images: ['/images/products/brady/m21-750-7425.png', '/images/products/brady-m21-7425-szalka.webp'],
+  imageDescriptions: [
+    'Kaseta Brady M21-750-7425 z białą taśmą z polipropylenu 19,05 mm',
+    'Etykieta Brady z polipropylenu naklejana na szalkę Petriego w laboratorium',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Kaseta z ciągłą taśmą etykietową i taśmą barwiącą' },
+    { name: 'Materiał', value: 'polipropylen B-7425' },
+    { name: 'Kolor', value: 'czarny nadruk na białym tle' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Szerokość', value: '9,53 / 12,7 / 19,05 mm, zależnie od wersji' },
+    { name: 'Długość', value: '6,4 m' },
+    { name: 'Grubość', value: '0,102 mm' },
+    { name: 'Klej', value: 'trwały, akrylowy; na gładkie powierzchnie' },
+    { name: 'Temperatura pracy', value: 'od −80 do 70 °C' },
+    { name: 'Warunki pracy', value: 'zamrażarka, ciekły azot, kąpiel wodna 100 °C, autoklaw' },
+    { name: 'Naklejanie', value: 'przed zamrożeniem, gdy etykieta trafi do zamrażarki lub ciekłego azotu' },
+    { name: 'Odporność', value: 'chemikalia, rozpuszczalniki, rozmazanie, niskie i wysokie temperatury' },
+    { name: 'Zastosowania w laboratorium', value: 'fiolki, probówki, szkiełka, płytki dołkowe' },
+    { name: 'Taśma barwiąca', value: 'R4300 (w kasecie)' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_M21 },
+    { name: 'Numery artykułów Brady', value: 'M21-375-7425: 121014; M21-500-7425: 121015; M21-750-7425: 121016' },
+  ],
+  variants: [
+    { partNumber: 'M21-750-7425', name: 'Brady M21-750-7425 — polipropylen 19,05 mm', attributes: { Szerokość: '19,05 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-500-7425', name: 'Brady M21-500-7425 — polipropylen 12,7 mm', attributes: { Szerokość: '12,7 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-375-7425', name: 'Brady M21-375-7425 — polipropylen 9,53 mm', attributes: { Szerokość: '9,53 mm' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    Szerokość: 'Szerokość taśmy z polipropylenu. Długość etykiety ustawia się w drukarce albo w kreatorze fiolki.\n\nKaseta 19,05 mm jest w opakowaniu drukarki M210-LAB.',
+  },
+  faq: [
+    { question: 'Kiedy nakleić etykietę M21-7425 na fiolkę do zamrażarki?', answer: 'Przed zamrożeniem. Do zamrażarki i ciekłego azotu etykietę nakleja się na fiolkę albo probówkę, zanim trafi ona do niskiej temperatury. Materiał wytrzymuje też autoklaw i kąpiel w wodzie o temperaturze 100 °C.' },
+    { question: 'Czy kaseta M21-750-7425 jest w zestawie z drukarką?', answer: 'Tak. Kaseta M21-750-7425 jest w opakowaniu [Brady M210-LAB](/produkt/brady-m210-lab), w wersji w kartonie i w zestawie M210-LAB-KIT EU.' },
+  ],
+  applications: ['Fiolki i probówki', 'Szkiełka mikroskopowe', 'Płytki dołkowe i szalki'],
+}
+
+export const bradyPoliesterKriogeniczny: Product = {
+  ...wspolne,
+  relatedProducts: relatedLab,
+  tags: ['healthcare'],
+  id: 'brady-m21-750-461-aw',
+  slug: 'brady-m21-750-461-aw',
+  name: 'Etykiety kriogeniczne Brady M21-750-461-AW — samolaminujący poliester na probówki',
+  seoTitle: 'Brady M21-750-461-AW — etykiety do ciekłego azotu na probówki, M210-LAB',
+  seoDescription: 'Kasety Brady M21-461 z cienkim samolaminującym poliestrem B-461 na probówki i fiolki kriogeniczne: od −196 do 110 °C, ciekły azot, autoklaw. Do M210-LAB, M210 i M211. PN: M21-750-461-AW, M21-500-461, M21-375-461.',
+  shortDescription: 'Brady M21-750-461-AW, M21-500-461 i M21-375-461 — kasety z bardzo cienkim, białym samolaminującym poliestrem B-461 na fiolki i probówki, także kriogeniczne. Od −196 do 110 °C. Do drukarek Brady M210-LAB, M210 i M211.',
+  description: 'Kasety Brady M21-461 zawierają ciągłą taśmę z cienkiego, samolaminującego poliestru B-461 i taśmę barwiącą R4300. Etykiety służą do oznaczania fiolek i probówek, także kriogenicznych, stożkowych, PCR i probówek typu Eppendorf. Materiał ma grubość 0,048 mm, więc etykieta nie blokuje probówki w statywie ani w wirówce.\n\nDo ciekłego azotu etykietę owija się wokół probówki tak, aby zachodziła na siebie. Materiał wytrzymuje też zamrażarkę, kąpiel w wodzie o temperaturze 100 °C i autoklaw. Zakres temperatury pracy wynosi od −196 do 110 °C.\n\nTrwały, mocny klej akrylowy jest przeznaczony na gładkie powierzchnie. Kasety mają szerokość 9,53, 12,7 albo 19,05 mm i 6,4 m taśmy.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/bmp21-plus-series-extreme-temperature-resistant-labels-cps-3081062',
+  images: ['/images/products/brady/m21-750-461-aw.png', '/images/products/brady-m21-461-probowka.webp'],
+  imageDescriptions: [
+    'Kaseta Brady M21-750-461-AW z cienkim poliestrem samolaminującym 19,05 mm',
+    'Probówka kriogeniczna z etykietą Brady z poliestru B-461',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Kaseta z ciągłą taśmą etykietową i taśmą barwiącą' },
+    { name: 'Materiał', value: 'poliester samolaminujący B-461' },
+    { name: 'Kolor', value: 'czarny nadruk na białym tle' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Szerokość', value: '9,53 / 12,7 / 19,05 mm, zależnie od wersji' },
+    { name: 'Długość', value: '6,4 m' },
+    { name: 'Grubość', value: '0,048 mm' },
+    { name: 'Klej', value: 'trwały, akrylowy, mocny; na gładkie powierzchnie' },
+    { name: 'Temperatura pracy', value: 'od −196 do 110 °C' },
+    { name: 'Warunki pracy', value: 'zamrażarka, ciekły azot (etykieta owinięta na zakładkę), kąpiel wodna 100 °C, autoklaw' },
+    { name: 'Zastosowania w laboratorium', value: 'fiolki i probówki kriogeniczne, probówki stożkowe, PCR i Eppendorf, wirówki' },
+    { name: 'Taśma barwiąca', value: 'R4300 (w kasecie)' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_M21 },
+    { name: 'Numery artykułów Brady', value: 'M21-375-461: 110931; M21-500-461: 110932; M21-750-461-AW: 110933' },
+  ],
+  variants: [
+    { partNumber: 'M21-750-461-AW', name: 'Brady M21-750-461-AW — poliester kriogeniczny 19,05 mm', attributes: { Szerokość: '19,05 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-500-461', name: 'Brady M21-500-461 — poliester kriogeniczny 12,7 mm', attributes: { Szerokość: '12,7 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-375-461', name: 'Brady M21-375-461 — poliester kriogeniczny 9,53 mm', attributes: { Szerokość: '9,53 mm' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    Szerokość: 'Szerokość taśmy z poliestru B-461. Długość etykiety dobiera się do obwodu probówki.\n\nWszystkie kasety mają 6,4 m taśmy.',
+  },
+  faq: [
+    { question: 'Czy etykiety M21-461 nadają się do ciekłego azotu?', answer: 'Tak, jeśli etykieta jest owinięta wokół probówki tak, aby zachodziła na siebie. Materiał pracuje w temperaturze od −196 do 110 °C. Do drukowania takich etykiet służy m.in. [Brady M210-LAB](/produkt/brady-m210-lab).' },
+  ],
+  applications: ['Fiolki i probówki kriogeniczne', 'Probówki PCR i Eppendorf', 'Probówki stożkowe'],
+}
+
+export const bradyPoliesterChemoodporny: Product = {
+  ...wspolne,
+  relatedProducts: relatedLab,
+  tags: ['healthcare'],
+  id: 'brady-m21-750-488',
+  slug: 'brady-m21-750-488',
+  name: 'Etykiety na szkiełka Brady M21-750-488 — poliester odporny na chemikalia, 9,53–19,05 mm',
+  seoTitle: 'Brady M21-750-488 — etykiety na szkiełka odporne na ksylen, M210-LAB',
+  seoDescription: 'Kasety Brady M21-488 z białym poliestrem B-488 na szkiełka mikroskopowe: odporne na DMSO, etanol i krótki kontakt z ksylenem, od −40 do 160 °C. Do M210-LAB, M210 i M211. PN: M21-750-488, M21-500-488, M21-375-488.',
+  shortDescription: 'Brady M21-750-488, M21-500-488 i M21-375-488 — kasety z białym poliestrem B-488 odpornym na chemikalia, do oznaczania szkiełek mikroskopowych i płytek dołkowych. Do drukarek Brady M210-LAB, M210 i M211.',
+  description: 'Kasety Brady M21-488 zawierają ciągłą taśmę z białego poliestru B-488 i taśmę barwiącą R4300. Etykiety służą do oznaczania szkiełek mikroskopowych, płytek dołkowych i innego wyposażenia laboratorium. Są odporne na dimetylosulfotlenek (DMSO), etanol i krótkotrwały kontakt z ksylenem.\n\nMateriał pracuje w temperaturze od −40 do 160 °C. Wytrzymuje zamrażarkę i autoklaw. Jest odporny na ścieranie, paliwa i oleje. Trwały klej akrylowy trzyma etykietę na płaskich, gładkich powierzchniach. Etykietę nakleja się w temperaturze od 10 °C.\n\nKasety mają szerokość 9,53, 12,7 albo 19,05 mm i 6,4 m taśmy. Nadruk jest czarny na białym, matowym tle.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/bmp21-plus-series-solvent-resistant-laboratory-labels-cps-3069447',
+  images: ['/images/products/brady/m21-750-488.png'],
+  imageDescriptions: ['Kaseta Brady M21-750-488 z białą taśmą z poliestru odpornego na chemikalia'],
+  specifications: [
+    { name: 'Typ', value: 'Kaseta z ciągłą taśmą etykietową i taśmą barwiącą' },
+    { name: 'Materiał', value: 'poliester B-488' },
+    { name: 'Kolor', value: 'czarny nadruk na białym tle' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Szerokość', value: '9,53 / 12,7 / 19,05 mm, zależnie od wersji' },
+    { name: 'Długość', value: '6,4 m' },
+    { name: 'Grubość', value: '0,091 mm' },
+    { name: 'Klej', value: 'trwały, akrylowy; na płaskie, gładkie powierzchnie' },
+    { name: 'Temperatura pracy', value: 'od −40 do 160 °C' },
+    { name: 'Minimalna temperatura naklejania', value: '10 °C' },
+    { name: 'Warunki pracy', value: 'zamrażarka, autoklaw' },
+    { name: 'Odporność chemiczna', value: 'DMSO, etanol, krótkotrwały kontakt z ksylenem, paliwa, oleje' },
+    { name: 'Zastosowania w laboratorium', value: 'szkiełka mikroskopowe, płytki dołkowe, wyposażenie laboratorium' },
+    { name: 'Taśma barwiąca', value: 'R4300 (w kasecie)' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_M21 },
+    { name: 'Numery artykułów Brady', value: 'M21-375-488: 110934; M21-500-488: 110935; M21-750-488: 110936' },
+  ],
+  variants: [
+    { partNumber: 'M21-750-488', name: 'Brady M21-750-488 — poliester chemoodporny 19,05 mm', attributes: { Szerokość: '19,05 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-500-488', name: 'Brady M21-500-488 — poliester chemoodporny 12,7 mm', attributes: { Szerokość: '12,7 mm' }, availability: 'unavailable' },
+    { partNumber: 'M21-375-488', name: 'Brady M21-375-488 — poliester chemoodporny 9,53 mm', attributes: { Szerokość: '9,53 mm' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    Szerokość: 'Szerokość taśmy z poliestru B-488. Długość etykiety ustawia się w drukarce.\n\nWąska taśma 9,53 mm mieści się na polu opisowym szkiełka.',
+  },
+  faq: [
+    { question: 'Na jakie chemikalia są odporne etykiety M21-488?', answer: 'Na dimetylosulfotlenek (DMSO) i etanol oraz na krótkotrwały kontakt z ksylenem. Materiał jest też odporny na paliwa i oleje. Etykiety drukuje się m.in. na [Brady M210-LAB](/produkt/brady-m210-lab).' },
+  ],
+  applications: ['Szkiełka mikroskopowe', 'Płytki dołkowe', 'Wyposażenie laboratorium'],
+}
+
+export const bradyPapierRozpuszczalny: Product = {
+  ...wspolne,
+  relatedProducts: relatedLab,
+  tags: ['healthcare'],
+  id: 'brady-m21-750-403',
+  slug: 'brady-m21-750-403',
+  name: 'Etykiety rozpuszczalne w wodzie Brady M21-750-403 — papier B-403, 12,7 i 19,05 mm',
+  seoTitle: 'Brady M21-750-403 — etykiety rozpuszczalne w wodzie do M210-LAB',
+  seoDescription: 'Kasety Brady M21-403 z papierem B-403 rozpuszczalnym w wodzie: etykieta znika w ciepłej wodzie w 30 sekund bez śladów kleju, 12,7 lub 19,05 mm. Do M210-LAB, M210 i M211. PN: M21-750-403, M21-500-403.',
+  shortDescription: 'Brady M21-750-403 i M21-500-403 — kasety z papierem B-403 rozpuszczalnym w wodzie. W ciepłej wodzie etykieta rozpuszcza się w 30 sekund i nie zostawia kleju. Do krótkotrwałych oznaczeń szkła i pojemników. Do drukarek Brady M210-LAB, M210 i M211.',
+  description: 'Kasety Brady M21-403 zawierają ciągłą taśmę z białego papieru B-403 rozpuszczalnego w wodzie i taśmę barwiącą R4300. Etykieta jest samoprzylepna i łatwo się ją nakleja. W ciepłej wodzie całkowicie rozpuszcza się w ciągu 30 sekund. Nie uszkadza powierzchni i nie zostawia śladów kleju.\n\nEtykiety służą do krótkotrwałego oznaczania szkła laboratoryjnego, pojemników i innych przedmiotów wielokrotnego użytku. Usuwanie etykiet zajmuje mniej czasu, a rozpuszczony papier ogranicza czyszczenie filtrów i odpływów. Materiał pracuje w temperaturze od −70 do 100 °C. Klej jest przeznaczony na gładkie powierzchnie.\n\nKaseta M21-750-403 ma 6,4 m taśmy o szerokości 19,05 mm, a M21-500-403 ma 7,62 m taśmy o szerokości 12,7 mm.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/water-soluble-paper-labels-ribbon-for-m210-m211-bmp21-plus-printers-cps-4292043',
+  images: ['/images/products/brady/m21-750-403.png', '/images/products/brady-m21-403-kolba.webp'],
+  imageDescriptions: [
+    'Kaseta Brady M21-750-403 z papierem rozpuszczalnym w wodzie 19,05 mm',
+    'Etykieta Brady z papieru B-403 rozpuszczająca się na kolbie pod strumieniem wody',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Kaseta z ciągłą taśmą etykietową i taśmą barwiącą' },
+    { name: 'Materiał', value: 'papier B-403 rozpuszczalny w wodzie' },
+    { name: 'Kolor', value: 'czarny nadruk na białym tle' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Szerokość', value: '12,7 mm (M21-500-403) lub 19,05 mm (M21-750-403)' },
+    { name: 'Długość', value: '7,62 m (M21-500-403) lub 6,4 m (M21-750-403)' },
+    { name: 'Grubość', value: '0,076 mm' },
+    { name: 'Klej', value: 'akrylowy, rozpuszczalny w wodzie; na gładkie powierzchnie' },
+    { name: 'Rozpuszczanie', value: 'całkowite, w ciepłej wodzie w ciągu 30 s, bez śladów kleju' },
+    { name: 'Temperatura pracy', value: 'od −70 do 100 °C' },
+    { name: 'Taśma barwiąca', value: 'R4300 (w kasecie)' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_M21 },
+    { name: 'Numery artykułów Brady', value: 'M21-500-403: 152248; M21-750-403: 149608' },
+  ],
+  variants: [
+    { partNumber: 'M21-750-403', name: 'Brady M21-750-403 — papier rozpuszczalny 19,05 mm × 6,4 m', attributes: { Szerokość: '19,05 mm', Długość: '6,4 m' }, availability: 'unavailable' },
+    { partNumber: 'M21-500-403', name: 'Brady M21-500-403 — papier rozpuszczalny 12,7 mm × 7,62 m', attributes: { Szerokość: '12,7 mm', Długość: '7,62 m' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    Szerokość: 'Szerokość taśmy z papieru rozpuszczalnego w wodzie. Długość etykiety ustawia się w drukarce.',
+    Długość: 'Ilość taśmy w kasecie.\n\nWęższa kaseta ma więcej taśmy: 7,62 m zamiast 6,4 m.',
+  },
+  faq: [
+    { question: 'Jak usunąć etykietę M21-403?', answer: 'Etykietę wystarczy zmoczyć ciepłą wodą. Rozpuszcza się całkowicie w ciągu 30 sekund, nie uszkadza powierzchni i nie zostawia kleju. Etykiety drukuje się m.in. na [Brady M210-LAB](/produkt/brady-m210-lab).' },
+  ],
+  applications: ['Szkło laboratoryjne wielokrotnego użytku', 'Krótkotrwałe oznaczenia pojemników', 'Przedmioty, które się myje'],
+}
+
 export const bradyPermaSleeve: Product = {
   id: 'brady-m21-permasleeve',
   slug: 'brady-m21-permasleeve',
@@ -650,7 +842,7 @@ export const bradyPermaSleeve: Product = {
   applications: ['Oznaczanie kabli koszulkami termokurczliwymi', 'Oznaczenia elektryczne'],
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m210', 'brady-m211'],
+  relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
@@ -697,7 +889,7 @@ export const bradyQuickFlag: Product = {
   applications: ['Flagi na kable i przewody', 'Oznaczenia elektryczne i teleinformatyczne', 'Kody kreskowe na kablach'],
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m210', 'brady-m211'],
+  relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
@@ -753,7 +945,7 @@ export const bradyListwyZaciskowe: Product = {
   applications: ['Oznaczanie listew zaciskowych', 'Oznaczenia elektryczne', 'Panele krosowe'],
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m210', 'brady-m211'],
+  relatedProducts: ['brady-m210', 'brady-m211', 'brady-m210-lab'],
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
@@ -771,6 +963,10 @@ export const bradyM21Kasety: Product[] = [
   bradyPoliesterWykrawane,
   bradyPoliesterPrzezroczysty,
   bradyWinylDoPrzeklejania,
+  bradyPolipropylenLab,
+  bradyPoliesterKriogeniczny,
+  bradyPoliesterChemoodporny,
+  bradyPapierRozpuszczalny,
   bradyPermaSleeve,
   bradyQuickFlag,
   bradyListwyZaciskowe,
@@ -781,3 +977,9 @@ export const BRADY_M21_KASETY_IDS = bradyM21Kasety.map((p) => p.id)
 // Kasety zakładane na kabel (owijki, flagi, koszulki, zawieszki). Na kartach M210 i M211 mają osobną sekcję
 // „Owijki, flagi, koszulki i zawieszki na kable”; pozostałe kasety idą do „Etykiety na listwy, panele i urządzenia”.
 export const BRADY_OZNACZNIKI_KABLI_IDS = new Set(['brady-m21-permasleeve', 'brady-m21-1000-427', 'brady-m21-223-483', 'brady-m21-427-wykrawane', 'brady-m21-bradygrip', 'brady-m21-224-109'])
+
+// Kasety laboratoryjne — osobna sekcja „Etykiety laboratoryjne” na kartach drukarek M21.
+export const BRADY_ETYKIETY_LAB_IDS = new Set(['brady-m21-750-7425', 'brady-m21-750-461-aw', 'brady-m21-750-488', 'brady-m21-750-403'])
+
+// Drukarki laboratoryjne pokazują etykiety laboratoryjne jako pierwszą sekcję kaset.
+export const BRADY_DRUKARKI_LAB_IDS = new Set(['brady-m210-lab'])
