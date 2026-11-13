@@ -591,6 +591,57 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       ],
     },
   ],
+  'drukarki-do-oznaczania-kabli': [
+    {
+      specKey: 'szerokosc-tasmy',
+      label: 'Maks. szerokość taśmy',
+      derived: [
+        { value: '12 mm', pattern: '\\b12 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+        { value: '18 mm', pattern: '\\b18 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+        { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+        { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+      ],
+    },
+    {
+      specKey: 'klawiatura',
+      label: 'Klawiatura',
+      derived: [
+        { value: 'Z klawiaturą', pattern: 'klawisz|blok numeryczny', specs: ['Klawiatura'] },
+        { value: 'Bez klawiatury', pattern: '^brak', specs: ['Klawiatura i wyświetlacz'] },
+        { value: 'Bez klawiatury', pattern: 'bez klawiatury', specs: ['Typ urządzenia'] },
+        { value: 'Bez klawiatury', slugs: ['brother-pt-p910bt', 'brother-pt-p950nw'] },
+      ],
+    },
+    {
+      specKey: 'lacznosc',
+      label: 'Łączność',
+      derived: [
+        { value: 'USB', pattern: 'USB', specs: ['Interfejs', 'Interfejsy', 'Łączność', 'USB'] },
+        { value: 'Bluetooth', pattern: 'Bluetooth', specs: ['Interfejsy', 'Łączność'] },
+        { value: 'Bluetooth', pattern: '^(?!opcja)', specs: ['Bluetooth'] },
+        { value: 'Wi-Fi', pattern: 'Wi-Fi', specs: ['Interfejsy', 'Wi-Fi'] },
+        { value: 'Ethernet', pattern: '100', specs: ['Sieć przewodowa'] },
+        { value: 'Bez połączenia', pattern: '^brak', specs: ['Łączność'] },
+        { value: 'Bez połączenia', pattern: 'praca samodzielna', specs: ['Typ urządzenia'] },
+        { value: 'Bez połączenia', slugs: ['brother-pt-h110'] },
+      ],
+    },
+    {
+      specKey: 'obcinak',
+      label: 'Obcinak',
+      derived: [
+        { value: 'Automatyczny', pattern: 'automatyczn|nacina', specs: ['Obcinak', 'Obcinacz', 'Obcinarka'] },
+        { value: 'Ręczny', pattern: 'ręczn', specs: ['Obcinak', 'Obcinacz', 'Obcinarka'] },
+      ],
+    },
+    {
+      specKey: 'rurki-hse',
+      label: 'Rurki termokurczliwe',
+      derived: [
+        { value: 'Drukuje na rurkach HSe', pattern: '.', specs: ['Rurki termokurczliwe HSe 2:1', 'Rurki termokurczliwe HSe'] },
+      ],
+    },
+  ],
   'kolorowe-drukarki-etykiet': [
     {
       specKey: 'klasa',

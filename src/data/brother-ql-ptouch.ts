@@ -2527,7 +2527,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-E110 to ręczna drukarka etykiet do oznaczania instalacji elektrycznych i teletechnicznych. Opisuje gniazda, łączniki, płyty czołowe, kable, rury osłonowe i rozdzielnice. Obsługuje taśmy TZe o szerokości 3,5, 6, 9 i 12 mm. Szersze taśmy, do 18 i 24 mm, obsługują modele PT-E310BTVP i PT-E560BTVP.\n\nKlawiatura ma układ komputerowy i osobny blok numeryczny. Numery gniazd i łączników wpisuje się jednym palcem. Klawisze szablonów tworzą etykiety ogólne, etykiety na płyty czołowe, owijki kablowe i flagi kablowe. Funkcja numeracji drukuje serię etykiet z kolejnymi numerami, na przykład A001, A002, A003.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Etykieta mieści 2 wiersze tekstu, a wysokość druku sięga 9 mm. Graficzny wyświetlacz LCD pokazuje podgląd etykiety przed drukiem. Pamięć mieści 9 etykiet, łącznie do 720 znaków. Do wyboru jest 200 symboli, w tym elektryczne, teleinformatyczne i audio-wideo.\n\nPT-E110 pracuje samodzielnie, bez połączenia z komputerem. Zasilanie pochodzi z 6 baterii alkalicznych AAA albo z zasilacza sieciowego AD-24ES. Taśmę odcina ręczny obcinacz. Drukarka waży 0,4 kg i ma wymiary 111 × 58 × 204 mm.\n\nWersja PT-E110 zawiera kasetę z taśmą TZe 12 mm, czarny druk na białym tle, 4 m. Wersja PT-E110VP zawiera zasilacz sieciowy, twardą walizkę i taśmę TZe Flexi ID 9 mm, czarny druk na białym tle, 8 m.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -2746,7 +2747,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-E310BTVP to ręczna drukarka etykiet do instalacji elektrycznych i teleinformatycznych. Oznacza kable, przewody, łączniki, gniazda, znaki ostrzegawcze, panele fotowoltaiczne i sprzęt AV. Obsługuje taśmy TZe o szerokości 3,5, 6, 9, 12 i 18 mm. Model PT-E110 obsługuje taśmy do 12 mm, a PT-E560BTVP do 24 mm.\n\nSześć klawiszy aplikacji otwiera szablony etykiet: ogólnych, na płyty czołowe, owijek kablowych, flag kablowych, paneli krosowych i łączówek. Drukarka ma też funkcje rurki termokurczliwej i zaawansowanej numeracji. Etykieta mieści do 5 wierszy tekstu. Do wyboru jest 476 symboli, 7 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7 i 17,7 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0 i 11,2 mm. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, ścieranie, chemikalia i skrajne temperatury.\n\nBluetooth 5.0 łączy drukarkę ze smartfonem lub tabletem z aplikacją Brother Pro Label Tool. Przez USB-C drukarka współpracuje z programem P-touch Editor na komputerze. Aplikacja iLink&Label przesyła identyfikatory kabli z projektu Fluke Networks LinkWare Live.\n\nDrukarka pracuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Ręczny obcinacz ma tryb pauzy przed cięciem, który ogranicza straty taśmy. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera akumulator, kabel USB-C, walizkę i taśmę TZe z mocnym klejem 18 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -2965,7 +2967,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-E560BTVP to ręczna drukarka etykiet do instalacji elektrycznych i sieciowych. Oznacza znaki ostrzegawcze, łączniki, przewody, rozdzielnice, łączówki, szafy i okablowanie CAT5E oraz CAT6A. Obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Na taśmie 24 mm etykieta mieści do 7 wierszy tekstu.\n\nAutomatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu. Nacięte etykiety wychodzą jednym paskiem i zachowują kolejność. Z zasilaczem USB-PD PA-AD-004 drukarka drukuje do 30 mm/s, a z akumulatora do 20 mm/s. Model PT-E310BTVP ma obcinacz ręczny i obsługuje taśmy do 18 mm.\n\nKlawiatura ma 70 gumowych klawiszy, w tym 6 klawiszy szablonów etykiet: ogólnych, na płyty czołowe, owijek i flag kablowych, paneli krosowych i łączówek. Podświetlany wyświetlacz graficzny 240 × 120 punktów pokazuje podgląd etykiety. Do wyboru jest 476 symboli, 14 czcionek oraz kody QR i Data Matrix.\n\nDrukarka obsługuje rurki termokurczliwe HSe o skurczu 2:1 w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Rurki termokurczliwe HSe o skurczu 3:1 mają rozmiary 5,2, 9,0, 11,2 i 21,0 mm. Drukarka ma też tryb taśmy samolaminującej do owijania kabli. Obsługuje taśmy Pro Tape, odporne na wodę, ścieranie, chemikalia i skrajne temperatury.\n\nBluetooth 5.0 łączy drukarkę z aplikacją Brother Pro Label Tool na Androidzie i iOS. Przez USB-C drukarka współpracuje z programem P-touch Editor. Zasilanie pochodzi z akumulatora litowo-jonowego BA-E001. Zestaw VP zawiera kabel USB-C, walizkę, taśmę TZe Flexi ID 12 mm i taśmę TZe z mocnym klejem 24 mm.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -3186,7 +3189,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-E720BT to przenośna drukarka etykiet z serii P-touch CUBE Pro. Nie ma klawiatury ani wyświetlacza, na obudowie jest przycisk zasilania i diody stanu. Etykiety projektuje się w aplikacji Brother Pro Label Tool na smartfonie albo w programie P-touch Editor 6 na komputerze.\n\nDrukarka służy do oznaczania instalacji elektrycznych: znaków ostrzegawczych, paneli fotowoltaicznych, sprzętu AV, kabli i przewodów. Aplikacja Brother Pro Label Tool zawiera szablony etykiet ostrzegawczych i oznaczeń kabli. Szablony kabli, paneli krosowych, płyt czołowych i rozdzielnic pobiera się z serwera Brother w chmurze.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 24 mm. Drukuje w rozdzielczości 180 dpi z prędkością do 20 mm/s. Wysokość druku sięga 18 mm, a długość etykiety 1000 mm. Obcinacz jest automatyczny, z mechanizmem nożycowym. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-005 o pojemności 1750 mAh. Akumulator ładuje się przez USB Micro-B z komputera albo z ładowarki USB. Drukarka waży 0,64 kg i ma wymiary 128 × 67 × 128 mm. Większy model PT-E920BT drukuje na taśmach do 36 mm w 360 dpi.\n\nW zestawie jest kabel USB i taśma TZe-S651 24 mm z mocnym klejem, czarny druk na żółtym tle. Drukarka współpracuje z taśmami Pro Tape, odpornymi na wodę, chemikalia, ścieranie i skrajne temperatury. Jako akcesorium dostępny jest pasek na ramię ze zintegrowaną torbą.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -3353,7 +3357,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-E920BT to przenośna drukarka etykiet z serii P-touch CUBE Pro, bez klawiatury i wyświetlacza. Etykiety projektuje się w aplikacji Brother Pro Label Tool albo w programie P-touch Editor 6. Drukarka łączy się z telefonem i komputerem przez Bluetooth 5.0 albo USB-C.\n\nDrukarka służy do oznaczania znaków ostrzegawczych, rozdzielnic, przewodów, paneli krosowych i okablowania CAT5E oraz CAT6A. Szablony etykiet kabli, płyt czołowych, rozdzielnic i urządzeń sieciowych pobiera się z serwera Brother w chmurze. Na etykietach można drukować kody QR, kody kreskowe i logo.\n\nDrukarka obsługuje taśmy TZe o szerokości od 3,5 do 36 mm. Współpracuje z taśmami Pro Tape, odpornymi na wodę, ścieranie, chemikalia i skrajne temperatury. Głowica 360 dpi drukuje do 32 mm wysokości z prędkością do 20 mm/s. Model PT-E720BT drukuje w 180 dpi i obsługuje taśmy do 24 mm.\n\nAutomatyczny obcinacz z nacinaniem wydaje serię etykiet na jednym pasku podkładu. Taki pasek ułatwia oznaczanie wielu kabli po kolei w dużych instalacjach. Drukarka obsługuje też kasety FLe z wycinanymi etykietami do flag kablowych.\n\nZasilanie pochodzi z akumulatora litowo-jonowego PA-BT-003 o pojemności 1750 mAh. Drukarka waży 1,17 kg i ma wymiary 138 × 94 × 138 mm. W zestawie jest kabel USB i taśma TZe-S661 36 mm z mocnym klejem, czarny druk na żółtym tle.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -4064,7 +4069,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-P900Wc to biurkowa drukarka etykiet bez klawiatury do pracy z komputerem, tabletem i smartfonem. Służy do zarządzania obiektami, archiwizacji dokumentów i znakowania środków trwałych. Drukuje też etykiety na kable, płyty czołowe i rozdzielnice elektryczne.\n\nDrukarka obsługuje taśmy TZe i HGe o szerokości od 3,5 do 36 mm. Drukuje też na rurkach termokurczliwych HSe o szerokości 5,2, 9, 11,2, 21 i 31 mm oraz na etykietach FLe 21 × 45 mm. Wysokość wydruku sięga 32 mm, a etykieta mieści do 17 wierszy.\n\nDruk ma rozdzielczość 360 dpi i prędkość do 60 mm/s. Długość etykiety wynosi od 4 do 1000 mm. Automatyczny obcinak odcina etykietę w całości albo przecina samą etykietę bez podkładu. Kopie i numerowanie obejmują zakres od 1 do 999.\n\nWi-Fi w trybie infrastruktury (IEEE 802.11b/g/n, WPS 2.0) udostępnia drukarkę wielu urządzeniom. Wi-Fi Direct (IEEE 802.11n) łączy drukarkę bezpośrednio z innym urządzeniem. Port USB obsługuje komputery Windows i Mac. Opcjonalna przejściówka PA-SCA-001 dodaje port szeregowy RS-232C do druku poleceniami ESC/P. Z opcjonalną bazą zasilającą PA-BB-002 i akumulatorem PA-BT-4000LI drukarka pracuje jako urządzenie mobilne.\n\nEtykiety projektuje się w programie P-touch Editor oraz w aplikacjach Brother iPrint&Label i Pro Label Tool. Program pobiera dane z arkusza kalkulacyjnego i drukuje serie etykiet. Drukarka przyjmuje polecenia ESC/P, P-touch Template i Raster, a pamięć flash 6 MB mieści 99 szablonów. W porównaniu z PT-P750W model obsługuje taśmy 36 mm i etykiety FLe oraz drukuje dwa razy szybciej.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",
@@ -4241,7 +4247,8 @@ export const brotherPtouchProducts: Product[] = [
     "description": "PT-P950NW to biurkowa drukarka etykiet do pracy z komputerem i siecią firmową. Drukarka służy do opisywania wyposażenia obiektów, archiwizacji dokumentów i oznaczania środków trwałych. Port LAN 10/100 Base-TX udostępnia drukarkę wielu użytkownikom. Wi-Fi działa w trybie infrastruktury, Wi-Fi Direct i z WPS 2.0.\n\nDrukarka pracuje w rozdzielczości 360 dpi z prędkością do 60 mm/s, czyli dwa razy szybciej niż PT-E560BTVP z zasilaczem. Obsługuje taśmy TZe o szerokości od 3,5 do 36 mm, z wysokością druku do 32 mm. Etykieta ma od 4 do 1000 mm długości i do 17 wierszy tekstu. Automatyczny obcinacz odcina całą etykietę albo nacina ją bez przecinania podkładu.\n\nOprócz taśm TZe drukarka obsługuje rurki termokurczliwe HSe w rozmiarach 5,8, 8,8, 11,7, 17,7 i 23,6 mm. Kasety FLe zawierają wycinane etykiety 21 × 45 mm do flag kablowych, w kolorze białym, żółtym lub zielonym.\n\nProgram P-touch Editor łączy projekt z danymi z plików Excel, CSV i TXT, baz Access oraz serwerów MSDE/SQL i drukuje serie etykiet. Na komputerze Mac źródłem danych jest plik CSV. Aplikacje iPrint&Label i Cable Label Tool działają na iOS i Androidzie. Tryb P-touch Template i pakiet b-PAC SDK pozwalają drukować etykiety z własnych systemów.\n\nW zestawie jest zasilacz sieciowy, kabel USB i taśma TZe 36 mm, czarny druk na białym tle, 8 m. Opcjonalna baza PA-BB-002 z akumulatorem PA-BT4000LI pozwala drukować bez gniazdka. Moduł PA-BI-002 dodaje Bluetooth dla skanerów kodów kreskowych. Panel dotykowy PA-TDU-003 drukuje zapisane szablony bez komputera. Wbudowany zegar panelu dodaje do etykiet bieżącą lub przyszłą datę i godzinę.",
     "categoryId": "drukarki-etykiet",
     "subcategoryIds": [
-      "etykieciarki"
+      "etykieciarki",
+      "drukarki-do-oznaczania-kabli"
     ],
     "manufacturerId": "brother",
     "availability": "unavailable",

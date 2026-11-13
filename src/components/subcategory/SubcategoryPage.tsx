@@ -539,9 +539,9 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                             {hasDash ? (
                               <>
                                 <strong className="text-gray-900">{item.substring(0, dashIndex)}</strong>
-                                {item.substring(dashIndex)}
+                                <LinkedText text={item.substring(dashIndex)} />
                               </>
-                            ) : item}
+                            ) : <LinkedText text={item} />}
                           </span>
                         </li>
                       )
@@ -799,9 +799,9 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                               {hasDash ? (
                                 <>
                                   <strong className="text-gray-900">{item.substring(0, dashIndex)}</strong>
-                                  {item.substring(dashIndex)}
+                                  <LinkedText text={item.substring(dashIndex)} />
                                 </>
-                              ) : item}
+                              ) : <LinkedText text={item} />}
                             </span>
                           </li>
                         )

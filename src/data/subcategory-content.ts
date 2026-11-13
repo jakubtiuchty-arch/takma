@@ -3388,7 +3388,7 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   // ============================================
   // Etykieciarki Brother P-touch (taśmy TZe). Sekcje bez treści szablon pomija.
   'etykieciarki': {
-    updatedAt: '2026-11-07',
+    updatedAt: '2026-11-13',
     definition: {
       heading: 'Do czego służy etykieciarka?',
       content: 'Etykieciarka oznacza przedmioty, które wymagają trwałego i czytelnego opisu: segregatory, półki, szuflady, przewody, gniazda, rozdzielnice i urządzenia. Nadruk powstaje termotransferowo pod warstwą laminatu taśmy TZe. Szerokość taśmy wynosi od 3,5 mm do 12, 18, 24 lub 36 mm, zależnie od modelu.\n\nTaśmy TZe mają różne podłoża i kolory, a modele PT-E310BTVP, PT-E560BTVP, PT-P900Wc i PT-P950NW drukują też na rurkach termokurczliwych HSe. Do etykiet adresowych i wysyłkowych służą drukarki [Brother QL](/drukarki-etykiet-brother) na rolkach DK.',
@@ -3410,9 +3410,40 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
     faq: [
       { question: 'Czym różni się etykieciarka od drukarki etykiet?', answer: 'Etykieciarka drukuje na kasetach z taśmą TZe, w których nadruk jest pod warstwą laminatu. Drukarka etykiet drukuje na rolkach etykiet, np. [Brother QL](/drukarki-etykiet-brother) na rolkach DK albo [drukarki termiczne](/termiczne-drukarki-etykiet) na rolkach do 4 cali. Etykieciarka służy do oznaczeń trwałych, a drukarka etykiet do szybkiego druku serii etykiet.' },
       { question: 'Jaka etykieciarka do biura?', answer: 'Do opisów segregatorów, półek i szuflad wystarczają modele z klawiaturą z serii PT-H i PT-D. [PT-D410](/produkt/brother-pt-d410) drukuje na taśmach do 18 mm, a [PT-D610BTVP](/produkt/brother-pt-d610bt) do 24 mm i z Bluetooth.' },
-      { question: 'Jaka etykieciarka dla elektryka?', answer: 'Seria PT-E ma szablony owijek i flag kablowych, paneli krosowych i płyt czołowych. [PT-E310BTVP](/produkt/brother-pt-e310bt) i [PT-E560BTVP](/produkt/brother-pt-e560bt) drukują też na rurkach termokurczliwych HSe. [PT-E920BT](/produkt/brother-pt-e920bt) przyjmuje taśmy do 36 mm i kasety FLe do flag kablowych.' },
+      { question: 'Jaka etykieciarka dla elektryka?', answer: 'Modele dla elektryków i instalatorów sieci są zebrane w kategorii [drukarki do oznaczania kabli](/drukarki-do-oznaczania-kabli). Seria PT-E ma szablony owijek i flag kablowych, paneli krosowych i płyt czołowych. [PT-E310BTVP](/produkt/brother-pt-e310bt) i [PT-E560BTVP](/produkt/brother-pt-e560bt) drukują też na rurkach termokurczliwych HSe. [PT-E920BT](/produkt/brother-pt-e920bt) przyjmuje taśmy do 36 mm i kasety FLe do flag kablowych.' },
       { question: 'Czy etykieciarkę można podłączyć do komputera?', answer: 'Tak, modele z USB, Wi-Fi lub Ethernet drukują z programu P-touch Editor. [PT-P900Wc](/produkt/brother-pt-p900wc) i [PT-P950NW](/produkt/brother-pt-p950nw) drukują serie etykiet z danych z arkusza kalkulacyjnego. Modele z Bluetooth drukują z aplikacji Brother na smartfonie.' },
       { question: 'Jakie taśmy pasują do etykieciarki Brother?', answer: 'Etykieciarki Brother P-touch używają kaset TZe. Maksymalną szerokość taśmy i obsługę rurek HSe podaje karta modelu.' },
+    ],
+    comparisons: [],
+    howToSteps: [],
+  },
+  // Drukarki do oznaczania kabli — 13.11.2026 (na start Brother PT-E i PT-P z rurkami HSe; później Brady M210/M211).
+  'drukarki-do-oznaczania-kabli': {
+    updatedAt: '2026-11-13',
+    definition: {
+      heading: 'Jakie oznaczniki kablowe drukuje drukarka?',
+      content: 'Oznacznik dobiera się do kształtu i miejsca kabla. Owijkę kablową drukuje się na elastycznej taśmie TZe Flexi ID i owija wokół kabla. Szablon owijki powtarza tekst na długości etykiety, więc opis widać z każdej strony kabla. Flaga kablowa owija kabel, a dwa końce etykiety sklejają się w chorągiewkę z opisem.\n\nRurkę termokurczliwą HSe nasuwa się na kabel przed podłączeniem, a po podgrzaniu zaciska się na kablu. Rurki HSe mają współczynnik skurczu 2:1 lub 3:1. Na listwy zaciskowe, panele krosowe i płyty czołowe drukuje się etykiety z równymi odstępami między polami. Taśma TZe z mocnym klejem trzyma się na chropowatych powierzchniach, np. na obudowach rozdzielnic.',
+    },
+    buyingGuide: {
+      heading: 'Jak wybrać drukarkę do oznaczania kabli?',
+      items: [
+        'Rurki termokurczliwe — na rurkach HSe drukują [PT-E310BTVP](/produkt/brother-pt-e310bt), [PT-E560BTVP](/produkt/brother-pt-e560bt), [PT-P900Wc](/produkt/brother-pt-p900wc) i [PT-P950NW](/produkt/brother-pt-p950nw). PT-E110, PT-E720BT i PT-E920BT nie drukują na rurkach.',
+        'Szerokość taśmy — [PT-E110](/produkt/brother-pt-e110) przyjmuje taśmy do 12 mm, PT-E310BTVP do 18 mm, PT-E560BTVP i [PT-E720BT](/produkt/brother-pt-e720bt) do 24 mm, a [PT-E920BT](/produkt/brother-pt-e920bt), PT-P900Wc i PT-P950NW do 36 mm.',
+        'Praca przy szafie albo seria z komputera — PT-E110, PT-E310BTVP i PT-E560BTVP mają klawiaturę i drukują bez komputera. PT-E720BT i PT-E920BT nie mają klawiatury i drukują z aplikacji Brother Pro Label Tool na smartfonie. PT-P950NW drukuje serie oznaczników z plików Excel i CSV w programie P-touch Editor.',
+        'Obcinacz — PT-E560BTVP, PT-E920BT, PT-P900Wc i PT-P950NW mają automatyczny obcinacz z nacinaniem, które ułatwia zdjęcie etykiety z podkładu. PT-E720BT ma obcinacz automatyczny, a PT-E110 i PT-E310BTVP — ręczny.',
+        'Zasilanie — PT-E310BTVP i PT-E560BTVP mają w zestawie akumulator Li-ion. PT-E720BT i PT-E920BT mają akumulator ładowany przez USB. PT-E110 działa na 6 baterii AAA albo z zasilacza AD-24ES. PT-P900Wc i PT-P950NW pracują z zasilacza, a akumulator PA-BT-4000LI jest opcją.',
+      ],
+    },
+    expertAuthority: '',
+    technicalDeepDive: '',
+    useCases: [],
+    uniqueInsights: { heading: '', items: [] },
+    faq: [
+      { question: 'Jaka drukarka do oznaczania kabli dla elektryka?', answer: 'Przy rozdzielnicy najwygodniej pracuje się drukarką z klawiaturą i szablonami kablowymi. [PT-E310BTVP](/produkt/brother-pt-e310bt) drukuje na taśmach do 18 mm i na rurkach HSe. [PT-E560BTVP](/produkt/brother-pt-e560bt) drukuje na taśmach do 24 mm i ma automatyczny obcinacz. Najprostszy model z klawiaturą to [PT-E110](/produkt/brother-pt-e110) na taśmy do 12 mm.' },
+      { question: 'Czym różni się rurka termokurczliwa od owijki kablowej?', answer: 'Rurkę termokurczliwą HSe nasuwa się na kabel przed podłączeniem końcówki, a po podgrzaniu zaciska się na kablu. Rurka nie ma kleju, więc nie odkleja się. Owijkę kablową można nakleić także na kabel, który jest już podłączony.' },
+      { question: 'Czy drukarka do kabli drukuje kody QR?', answer: 'PT-E310BTVP, PT-E560BTVP, PT-E720BT, PT-E920BT, PT-P900Wc i PT-P950NW drukują kody kreskowe i kody QR. PT-E110 nie drukuje kodów.' },
+      { question: 'Jakie taśmy do drukarki do oznaczania kabli?', answer: 'Drukarki Brother P-touch drukują na kasetach TZe. Do owijek kablowych służy elastyczna taśma TZe Flexi ID, a do chropowatych powierzchni taśma z mocnym klejem. Rurki termokurczliwe to osobne kasety HSe. Kasety FLe z wyciętymi etykietami flagowymi obsługują PT-E920BT, PT-P900Wc i PT-P950NW.' },
+      { question: 'Czy oznaczniki można drukować ze smartfona?', answer: 'Tak. PT-E310BTVP, PT-E560BTVP, PT-E720BT i PT-E920BT łączą się ze smartfonem przez Bluetooth i drukują z aplikacji Brother Pro Label Tool na Androidzie i iOS.' },
     ],
     comparisons: [],
     howToSteps: [],
