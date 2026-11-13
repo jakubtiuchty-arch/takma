@@ -112,14 +112,14 @@ export const bradyLabelPrinters: Product[] = [
     quoteOnly: true,
     availability: 'unavailable',
     images: [
-      '/images/products/brady/m211-1.png',
-      '/images/products/brady/m211-2.png',
+      '/images/products/brady/m211-przod.png',
+      '/images/products/brady/m211-tyl.png',
       '/images/products/brady/m211-kit-eu-uk-us-zestaw.png',
       '/images/products/brady-m211-pasek.webp',
       '/images/products/brady-m211-szafa-rack.webp',
     ],
     imageDescriptions: [
-      'Brady M211 — drukarka etykiet i smartfon z aplikacją Express Labels',
+      'Brady M211 — drukarka etykiet z kasetą M21, widok z przodu pod kątem',
       'Brady M211 — tył obudowy z metalowym zaczepem do paska',
       'Zestaw Brady M211-KIT-EU-UK-US: walizka, drukarka, powerbank, zaczep do paska i zasilacz',
       'Brady M211 w dłoni przy pasku podczas druku etykiety',
