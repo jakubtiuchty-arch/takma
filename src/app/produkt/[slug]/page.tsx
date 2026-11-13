@@ -1978,7 +1978,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                   {kasetyNaKable.length > 0 && (
                     <RelatedProducts
                       id="kasety"
-                      title="Owijki, flagi i koszulki na kable"
+                      title="Owijki, flagi, koszulki i zawieszki na kable"
                       products={kasetyNaKable as typeof products}
                       initialLimit={4}
                       showDualButtons

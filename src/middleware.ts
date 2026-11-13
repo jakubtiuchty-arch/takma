@@ -46,6 +46,8 @@ export async function middleware(request: NextRequest) {
     // Google (/produkt/zebra-zd421/) szedł przez trzy przekierowania.
     '/produkt/zebra-zd421': '/produkt/zebra-zd421t',
     '/produkt/zebra-zd420': '/produkt/zebra-zd421t',
+    // Brady M21-1250-427 jest wariantem karty owijek samolaminujących M21-427 (13.11.2026)
+    '/produkt/brady-m21-1250-427': '/produkt/brady-m21-1000-427',
   }
   // Wariant z końcowym slashem Next normalizuje własnym 308 ZANIM dojdzie tutaj
   // (adres z indeksu Google, /produkt/zebra-zd421/, kosztuje więc jeden przeskok
