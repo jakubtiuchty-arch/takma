@@ -109,7 +109,7 @@ export const bradyLabelPrinters: Product[] = [
     shortDescription: 'Brady M210-LAB — ręczna drukarka etykiet laboratoryjnych z klawiaturą ABC, następca BMP21-LAB. Drukuje na kasetach M21 o szerokości do 19 mm etykiety na fiolki, probówki, szkiełka i szalki, bez komputera.',
     description: 'Brady M210-LAB to ręczna drukarka etykiet dla laboratoriów badawczych, uczelnianych i klinicznych. Zastępuje model BMP21-LAB. Pracuje samodzielnie: etykietę projektuje się na klawiaturze ABC i drukuje bez komputera.\n\nOprogramowanie drukarki jest przygotowane do pracy w laboratorium. Typ etykiety „Fiolka” sam ustawia długość etykiety według wybranego rozmiaru fiolki. Drukarka ma też kreatory dla szkiełek i probówek, symbole laboratoryjne i greckie, znacznik daty i godziny oraz automatyczną numerację. Długość etykiety można ustawić na stałe. Kody Data Matrix i QR mieszczą dużo danych na małej etykiecie.\n\nM210-LAB drukuje termotransferowo na kasetach M21 o szerokości do 19,05 mm. Do laboratorium są m.in. etykiety z polipropylenu na fiolki i szalki, cienki samolaminujący poliester na probówki do ciekłego azotu, poliester odporny na chemikalia do szkiełek i papier rozpuszczalny w wodzie.\n\nWersja w kartonie zawiera drukarkę, kasetę M21-750-7425 i skróconą instrukcję. Zestaw M210-LAB-KIT EU ma dodatkowo walizkę, akumulator i zasilacz.',
     categoryId: 'drukarki-etykiet',
-    subcategoryIds: ['etykieciarki'],
+    subcategoryIds: ['etykieciarki', 'drukarki-dla-sluzby-zdrowia'],
     manufacturerId: 'brady',
     sameAs: 'https://www.brady.eu/label-printers/m210-lab-kit-eu-pid-311319',
     quoteOnly: true,

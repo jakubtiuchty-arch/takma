@@ -7,15 +7,17 @@ import type { SubcategoryRichContent } from './subcategory-content'
 // Parametry w treści według kart katalogowych: Zebra ZD411/ZD421 (2024), ZD611/ZD621, ZD510-HC (10.2025), ZQ6 HC (01.2026);
 // TSC TH DH (04.2026) i Alpha-30L/40L (01.2024); SATO CT4-LX-HC (04.2023) i WS2-2 (11.2024);
 // Honeywell PC45 Healthcare (Rev A 01/24); Citizen CL-H300SV (05.2026). Źródła: docs/catalog/hc-producenci-2026-10-25/J4.md.
+// Od 13.11.2026 także etykieciarka laboratoryjna Brady M210-LAB (karta w brady-label-printers.ts, karta katalogowa PL 2025).
+// M210-LAB nie ma obudowy przygotowanej do dezynfekcji, dlatego zdania o obudowie dotyczą „wersji dla ochrony zdrowia”.
 export const healthcarePrinterCategory: Subcategory = {
   id: 'drukarki-dla-sluzby-zdrowia',
   slug: 'drukarki-dla-sluzby-zdrowia',
   name: 'Drukarki dla służby zdrowia',
   parentCategoryId: 'drukarki-etykiet',
-  description: 'Biurkowe i mobilne drukarki etykiet i opasek w wersjach dla ochrony zdrowia — Zebra, TSC, SATO, Honeywell i Citizen — do szpitali, laboratoriów i aptek szpitalnych.',
+  description: 'Biurkowe i mobilne drukarki etykiet i opasek w wersjach dla ochrony zdrowia — Zebra, TSC, SATO, Honeywell i Citizen — oraz etykieciarka laboratoryjna Brady M210-LAB. Do szpitali, laboratoriów i aptek szpitalnych.',
   seoTitle: 'Drukarki dla służby zdrowia i szpitali: Zebra, TSC, SATO | TAKMA',
-  seoDescription: 'Drukarki dla służby zdrowia Zebra, TSC, SATO, Honeywell i Citizen: szpitalna drukarka etykiet na probówki i leki, drukarka opasek dla pacjentów, drukarki mobilne. Porównanie modeli.',
-  longDescription: 'Drukarki dla służby zdrowia to drukarki etykiet i opasek w wersjach przeznaczonych dla placówek ochrony zdrowia. Ich obudowy wykonano z tworzyw przygotowanych do częstej dezynfekcji. Zależnie od producenta mają też tworzywo antybakteryjne lub antymikrobowe, zasilacz zgodny z normą IEC 60601-1 albo obudowę odporną na promieniowanie UV. Drukują opaski dla pacjentów, etykiety na probówki i próbki oraz etykiety leków. Dane do druku wysyła system szpitalny przez sieć lub USB, a kod z opaski odczytuje [skaner kodów kreskowych](/skanery-dla-sluzby-zdrowia). Materiały do druku są w kategoriach [opaski identyfikacyjne](/opaski-identyfikacyjne) i [etykiety termiczne](/etykiety-termiczne-zebra).',
+  seoDescription: 'Drukarki dla służby zdrowia Zebra, TSC, SATO, Honeywell, Citizen i Brady: szpitalna drukarka etykiet na probówki i leki, drukarka opasek dla pacjentów, drukarki mobilne. Porównanie modeli.',
+  longDescription: 'Drukarki dla służby zdrowia to drukarki etykiet i opasek w wersjach przeznaczonych dla placówek ochrony zdrowia. Obudowy drukarek w wersjach dla ochrony zdrowia wykonano z tworzyw przygotowanych do częstej dezynfekcji. Zależnie od producenta mają też tworzywo antybakteryjne lub antymikrobowe, zasilacz zgodny z normą IEC 60601-1 albo obudowę odporną na promieniowanie UV. Drukują opaski dla pacjentów, etykiety na probówki i próbki oraz etykiety leków. Etykieciarka laboratoryjna [Brady M210-LAB](/produkt/brady-m210-lab) drukuje bez komputera etykiety na fiolki, probówki i szkiełka. Dane do druku wysyła system szpitalny przez sieć lub USB, a kod z opaski odczytuje [skaner kodów kreskowych](/skanery-dla-sluzby-zdrowia). Materiały do druku są w kategoriach [opaski identyfikacyjne](/opaski-identyfikacyjne) i [etykiety termiczne](/etykiety-termiczne-zebra).',
   icon: 'printer',
   productIds: [
     'zebra-zd510-hc',
@@ -35,12 +37,13 @@ export const healthcarePrinterCategory: Subcategory = {
     'sato-ct4-lx-hc',
     'honeywell-pc45d-hc',
     'citizen-cl-h300sv',
+    'brady-m210-lab',
   ],
-  productCount: 17,
+  productCount: 18,
 }
 
 export const healthcarePrinterContent: SubcategoryRichContent = {
-  updatedAt: '2026-10-25',
+  updatedAt: '2026-11-13',
   sectionHeadings: {
     technicalDeepDive: 'Obudowa, tworzywo i zasilacz',
     useCases: 'Zastosowania w placówce',
@@ -49,11 +52,11 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
   },
   definition: {
     heading: 'Czym różni się drukarka dla służby zdrowia od zwykłej drukarki etykiet?',
-    content: 'Wersje dla ochrony zdrowia różnią się od modeli podstawowych przede wszystkim obudową. Wszystkie drukarki w tej kategorii mają tworzywa przygotowane do regularnego przecierania środkami dezynfekcyjnymi. Pozostałe cechy zależą od producenta. Drukarki TSC mają obudowę antybakteryjną, drukarki SATO — obudowę antymikrobową, a [Citizen CL-H300SV](/produkt/citizen-cl-h300sv) — obudowę z jonami srebra i znakiem SIAA zgodnym z normą ISO 22196. Zasilacz zgodny z normą IEC 60601-1 mają biurkowe drukarki Zebra HC oraz drukarki TSC HC, a uszczelnione przyciski — biurkowe drukarki Zebra HC i drukarki TSC HC. Obudowę odporną na promieniowanie UV mają biurkowe drukarki Zebra HC. [Honeywell PC45d Healthcare](/produkt/honeywell-pc45d-hc) ma obudowę i złącza przygotowane do dezynfekcji.\n\nW kategorii są trzy rodzaje urządzeń. [Zebra ZD510-HC](/produkt/zebra-zd510-hc) drukuje opaski z kartridżów. Drukarki biurkowe 2- i 4-calowe drukują etykiety, a większość z nich także opaski z rolki; [SATO WS2-2](/produkt/sato-ws2-2) drukuje jednym urządzeniem opaski pacjentów i etykiety na oddziale. Drukarki mobilne [Zebra ZQ610 Plus-HC](/produkt/zebra-zq610-plus-hc), [ZQ620 Plus-HC](/produkt/zebra-zq620-plus-hc) i [TSC Alpha-30LHC](/produkt/tsc-alpha-30lhc) pracują na baterii i drukują etykiety w miejscu opieki nad pacjentem.',
+    content: 'Wersje dla ochrony zdrowia różnią się od modeli podstawowych przede wszystkim obudową. Wszystkie drukarki w wersjach dla ochrony zdrowia mają tworzywa przygotowane do regularnego przecierania środkami dezynfekcyjnymi. Pozostałe cechy zależą od producenta. Drukarki TSC mają obudowę antybakteryjną, drukarki SATO — obudowę antymikrobową, a [Citizen CL-H300SV](/produkt/citizen-cl-h300sv) — obudowę z jonami srebra i znakiem SIAA zgodnym z normą ISO 22196. Zasilacz zgodny z normą IEC 60601-1 mają biurkowe drukarki Zebra HC oraz drukarki TSC HC, a uszczelnione przyciski — biurkowe drukarki Zebra HC i drukarki TSC HC. Obudowę odporną na promieniowanie UV mają biurkowe drukarki Zebra HC. [Honeywell PC45d Healthcare](/produkt/honeywell-pc45d-hc) ma obudowę i złącza przygotowane do dezynfekcji.\n\nW kategorii są cztery rodzaje urządzeń. [Zebra ZD510-HC](/produkt/zebra-zd510-hc) drukuje opaski z kartridżów. Drukarki biurkowe 2- i 4-calowe drukują etykiety, a większość z nich także opaski z rolki; [SATO WS2-2](/produkt/sato-ws2-2) drukuje jednym urządzeniem opaski pacjentów i etykiety na oddziale. Drukarki mobilne [Zebra ZQ610 Plus-HC](/produkt/zebra-zq610-plus-hc), [ZQ620 Plus-HC](/produkt/zebra-zq620-plus-hc) i [TSC Alpha-30LHC](/produkt/tsc-alpha-30lhc) pracują na baterii i drukują etykiety w miejscu opieki nad pacjentem. Etykieciarka laboratoryjna [Brady M210-LAB](/produkt/brady-m210-lab) ma klawiaturę i drukuje bez komputera etykiety na fiolki, probówki i szkiełka.',
   },
   comparisonTable: {
     heading: 'Porównanie drukarek dla służby zdrowia',
-    intro: 'Podstawowe parametry modeli w grupach: drukarka opasek, biurkowe 2-calowe, biurkowe 4-calowe i mobilne. Konfiguracje i numery PN są na kartach produktów.',
+    intro: 'Podstawowe parametry modeli w grupach: drukarka opasek, biurkowe 2-calowe, biurkowe 4-calowe, mobilne i etykieciarka laboratoryjna. Konfiguracje i numery PN są na kartach produktów.',
     columns: ['Szerokość druku', 'Technologia druku', 'Rozdzielczość', 'Prędkość maks.', 'Łączność w standardzie'],
     rows: [
       { model: 'Zebra ZD510-HC', href: '/produkt/zebra-zd510-hc', role: 'Biurkowa drukarka opasek z kartridżami Z-Band', cells: ['19,05 / 25,4 / 30,16 mm', 'Termiczna', '300 dpi', '51 mm/s (opaski medyczne)', 'USB, USB Host, Ethernet'] },
@@ -73,6 +76,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
       { model: 'Zebra ZQ610 Plus-HC', href: '/produkt/zebra-zq610-plus-hc', role: 'Mobilna 2", praca przy łóżku pacjenta', cells: ['do 48 mm', 'Termiczna', '203 dpi', '115 mm/s', 'Bluetooth, USB, RS-232; Wi-Fi w wersjach dwuradiowych'] },
       { model: 'Zebra ZQ620 Plus-HC', href: '/produkt/zebra-zq620-plus-hc', role: 'Mobilna 3", praca przy łóżku pacjenta', cells: ['do 72 mm', 'Termiczna', '203 dpi', '115 mm/s', 'Bluetooth, USB, RS-232; Wi-Fi w wersjach dwuradiowych'] },
       { model: 'TSC Alpha-30LHC', href: '/produkt/tsc-alpha-30lhc', role: 'Mobilna 3", obudowa IP54', cells: ['72 mm', 'Termiczna', '203 dpi', '127 mm/s', 'USB-C, Bluetooth 5.0, NFC; Wi-Fi zależnie od wersji'] },
+      { model: 'Brady M210-LAB', href: '/produkt/brady-m210-lab', role: 'Ręczna etykieciarka laboratoryjna z klawiaturą', cells: ['16 mm (kasety M21 do 19,05 mm)', 'Termotransferowa', '203 dpi', '10 mm/s', 'Brak, praca bez komputera'] },
     ],
     note: 'Prędkość drukarek biurkowych dostępnych w dwóch rozdzielczościach dotyczy 203 dpi; przy 300 i 305 dpi jest niższa. ZD510-HC drukuje tylko w 300 dpi. Szerokość druku 2-calowych drukarek Zebra przy 300 dpi wynosi 54 mm, a 4-calowych przy 203 dpi 104 mm (ZD421C-HC na kasety: 104 mm przy obu rozdzielczościach). Dodatkowe interfejsy zależą od numeru PN.',
   },
@@ -82,8 +86,8 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
       'Opaski czy etykiety — opaski z kartridżów drukuje Zebra ZD510-HC. SATO WS2-2 drukuje opaski pacjentów i etykiety z rolki. Inne drukarki biurkowe drukują opaski z rolki, jeśli producent wymienia je wśród obsługiwanych materiałów danego modelu.',
       'Szerokość druku — drukarki 2-calowe (ok. 54–57 mm) służą m.in. do etykiet na probówki. Drukarki 4-calowe (104–108 mm) drukują także większe etykiety, np. na worki z krwią i płynami infuzyjnymi.',
       'Technologia druku — druk termiczny nie wymaga taśmy barwiącej. Z taśmą drukują wersje termotransferowe: Zebra ZD421-HC, ZD611-HC i ZD621-HC, TSC TH220THC i TH240THC oraz SATO CT4-LX-HC. Odporność wydruku zależy od zestawienia etykiety i taśmy.',
-      'Obudowa i zasilacz — wszystkie modele mają obudowę przygotowaną do dezynfekcji. Jeśli placówka wymaga tworzywa antybakteryjnego lub antymikrobowego, zasilacza z certyfikatem IEC 60601-1 albo obudowy odpornej na UV, należy sprawdzić kartę konkretnego modelu, bo producenci wyposażają drukarki różnie.',
-      'Miejsce pracy — drukarka biurkowa pracuje na stanowisku, np. w rejestracji lub w punkcie pobrań. Drukarka mobilna z baterią drukuje etykiety przy łóżku pacjenta.',
+      'Obudowa i zasilacz — wszystkie drukarki w wersjach dla ochrony zdrowia mają obudowę przygotowaną do dezynfekcji. Etykieciarka Brady M210-LAB nie ma takiej obudowy. Jeśli placówka wymaga tworzywa antybakteryjnego lub antymikrobowego, zasilacza z certyfikatem IEC 60601-1 albo obudowy odpornej na UV, należy sprawdzić kartę konkretnego modelu, bo producenci wyposażają drukarki różnie.',
+      'Miejsce pracy — drukarka biurkowa pracuje na stanowisku, np. w rejestracji lub w punkcie pobrań. Drukarka mobilna z baterią drukuje etykiety przy łóżku pacjenta. Etykieciarka Brady M210-LAB pracuje na bateriach AA lub akumulatorze i drukuje etykiety bez komputera, np. przy stole laboratoryjnym.',
       'Łączność — drukarka w sieci szpitalnej wymaga Ethernetu albo Wi-Fi. Interfejsy zależą od numeru PN, a w wielu modelach moduł łączności można zamontować później.',
       'Materiały — opaski i etykiety należy dobrać do drukarki i technologii druku. Kartridże z opaskami Z-Band są przeznaczone wyłącznie do drukarek Zebra ZD510-HC i HC100.',
     ],
@@ -92,7 +96,7 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
   technicalDeepDive: 'Tworzywa przygotowane do dezynfekcji pozwalają regularnie przecierać obudowę środkami stosowanymi na oddziale. Środki i metody czyszczenia należy dobrać według dokumentacji producenta danego modelu. Zebra publikuje przewodnik „Guide To Disinfecting and Cleaning Zebra Healthcare Printers”, a Honeywell — przewodnik czyszczenia obudów przygotowanych do dezynfekcji z osobną listą środków dla drukarek biurkowych dla ochrony zdrowia.\n\nObudowa antybakteryjna lub antymikrobowa to inna cecha niż przygotowanie do dezynfekcji: dotyczy samego tworzywa. TSC opisuje obudowy drukarek HC jako antybakteryjne, a SATO stosuje obudowę antymikrobową w CT4-LX-HC i WS2-2. Citizen CL-H300SV ma obudowę ze znakiem SIAA zgodnym z normą ISO 22196, a tworzywo zawiera jony srebra. Obudowę czyści się według procedur placówki niezależnie od rodzaju tworzywa.\n\nZgodność z normą IEC 60601-1 dotyczy zasilacza, a nie całej drukarki. IEC 60601-1 to norma bezpieczeństwa medycznych urządzeń elektrycznych. Zasilacz z certyfikatem IEC 60601-1 mają biurkowe drukarki Zebra ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC oraz drukarki TSC HC, w tym mobilna Alpha-30LHC. Zasilacz Zebra ZD510-HC jest zgodny z normą IEC 60601-1:2012. Baterię drukarek mobilnych Zebra ZQ6 HC ładuje się w drukarce z zasilacza zgodnego z IEC 60601, sprzedawanego osobno. SATO, Honeywell i Citizen nie podają tej normy dla swoich modeli.\n\nDruk termiczny nie wymaga taśmy barwiącej, więc w drukarce nie zostaje zużyta taśma z odbiciem wydrukowanych danych. Przy druku termotransferowym zużytą taśmę należy zabezpieczyć lub zniszczyć zgodnie z zasadami ochrony danych placówki.',
   useCases: [
     { title: 'Izba przyjęć i rejestracja', description: 'Druk opasek identyfikacyjnych dla pacjentów przy przyjęciu: z kartridżów w Zebra ZD510-HC albo z rolki w drukarce biurkowej, np. SATO WS2-2.' },
-    { title: 'Laboratorium i punkt pobrań', description: 'Etykiety na probówki i próbki drukowane na stanowisku pobrań drukarką 2-calową albo drukarką mobilną przy łóżku pacjenta.' },
+    { title: 'Laboratorium i punkt pobrań', description: 'Etykiety na probówki i próbki drukowane na stanowisku pobrań drukarką 2-calową albo drukarką mobilną przy łóżku pacjenta. Etykiety na fiolki, probówki i szkiełka drukuje też etykieciarka Brady M210-LAB.' },
     { title: 'Apteka szpitalna', description: 'Etykiety leków drukowane na drukarkach biurkowych dla ochrony zdrowia.' },
     { title: 'Worki z krwią i płynami infuzyjnymi', description: 'Etykiety na worki drukowane na drukarkach 4-calowych.' },
     { title: 'Bank krwi i pokarm kobiecy', description: 'Etykiety do zarządzania krwią i do oznaczania pokarmu kobiecego drukowane drukarką mobilną w miejscu opieki nad pacjentem.' },
@@ -132,11 +136,11 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
   faq: [
     {
       question: 'Czym drukarka dla służby zdrowia różni się od zwykłej drukarki etykiet?',
-      answer: 'Wszystkie modele w tej kategorii mają obudowę z tworzyw przygotowanych do częstej dezynfekcji. Część z nich ma też obudowę antybakteryjną lub antymikrobową (TSC, SATO, Citizen), zasilacz zgodny z normą IEC 60601-1 (biurkowe Zebra HC, TSC HC) albo obudowę odporną na UV (biurkowe Zebra HC). Wyposażenie konkretnego modelu jest opisane na jego karcie.',
+      answer: 'Wszystkie drukarki w wersjach dla ochrony zdrowia mają obudowę z tworzyw przygotowanych do częstej dezynfekcji. Część z nich ma też obudowę antybakteryjną lub antymikrobową (TSC, SATO, Citizen), zasilacz zgodny z normą IEC 60601-1 (biurkowe Zebra HC, TSC HC) albo obudowę odporną na UV (biurkowe Zebra HC). Wyposażenie konkretnego modelu jest opisane na jego karcie.',
     },
     {
       question: 'Czy drukarkę dla służby zdrowia można dezynfekować?',
-      answer: 'Tak. Obudowy drukarek w tej kategorii są przystosowane do regularnej dezynfekcji. Przetestowane środki i metody czyszczenia opisują przewodniki producentów, np. przewodnik Zebry dla drukarek HC i przewodnik Honeywell dla obudów przygotowanych do dezynfekcji. Procedurę czyszczenia należy sprawdzić przed wdrożeniem drukarki na oddziale.',
+      answer: 'Tak. Obudowy drukarek w wersjach dla ochrony zdrowia są przystosowane do regularnej dezynfekcji. Przetestowane środki i metody czyszczenia opisują przewodniki producentów, np. przewodnik Zebry dla drukarek HC i przewodnik Honeywell dla obudów przygotowanych do dezynfekcji. Procedurę czyszczenia należy sprawdzić przed wdrożeniem drukarki na oddziale. Etykieciarka laboratoryjna Brady M210-LAB nie ma obudowy przygotowanej do dezynfekcji.',
     },
     {
       question: 'Czym obudowa antybakteryjna różni się od obudowy przygotowanej do dezynfekcji?',
@@ -152,24 +156,24 @@ export const healthcarePrinterContent: SubcategoryRichContent = {
     },
     {
       question: 'Jak drukarka łączy się z systemem szpitalnym?',
-      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia) oraz [terminale dla służby zdrowia](/terminale-dla-sluzby-zdrowia), np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50).',
+      answer: 'Drukarka odbiera dane przez USB, Ethernet, Wi-Fi albo Bluetooth, zależnie od modelu i wersji. Format opaski lub etykiety przygotowuje się w systemie szpitalnym w języku drukarki, np. ZPL, albo w programie do projektowania etykiet. Integrację z systemem HIS lub LIS należy uzgodnić z jego dostawcą. Kody z opasek i etykiet odczytują [skanery dla służby zdrowia](/skanery-dla-sluzby-zdrowia) oraz [terminale dla służby zdrowia](/terminale-dla-sluzby-zdrowia), np. [Zebra HC20](/produkt/zebra-hc20) i [Zebra HC50](/produkt/zebra-hc50). Etykieciarka Brady M210-LAB nie łączy się z systemem: etykietę wpisuje się na klawiaturze.',
     },
     {
       question: 'Czy drukarki dla służby zdrowia mają Wi-Fi i Bluetooth?',
-      answer: 'To zależy od modelu i numeru PN. Do biurkowych drukarek Zebra ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC, drukarek TSC TH/DH HC, SATO CT4-LX-HC i Honeywell PC45d Healthcare jest dostępny moduł Wi-Fi z Bluetooth, a do SATO WS2-2 — moduł Wi-Fi. Zebra ZD510-HC ma Wi-Fi z Bluetooth tylko w wersji fabrycznej. Citizen CL-H300SV przyjmuje karty interfejsu z Wi-Fi lub Bluetooth. Drukarki mobilne Zebra ZQ6 HC występują w wersjach z Wi-Fi i Bluetooth albo z samym Bluetooth, a TSC Alpha-30LHC — w wersji z Wi-Fi i Bluetooth 5.0.',
+      answer: 'To zależy od modelu i numeru PN. Do biurkowych drukarek Zebra ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC, drukarek TSC TH/DH HC, SATO CT4-LX-HC i Honeywell PC45d Healthcare jest dostępny moduł Wi-Fi z Bluetooth, a do SATO WS2-2 — moduł Wi-Fi. Zebra ZD510-HC ma Wi-Fi z Bluetooth tylko w wersji fabrycznej. Citizen CL-H300SV przyjmuje karty interfejsu z Wi-Fi lub Bluetooth. Drukarki mobilne Zebra ZQ6 HC występują w wersjach z Wi-Fi i Bluetooth albo z samym Bluetooth, a TSC Alpha-30LHC — w wersji z Wi-Fi i Bluetooth 5.0. Brady M210-LAB nie ma łączności i drukuje bez komputera.',
     },
     {
       question: 'Czy drukarki dla służby zdrowia mogą pracować na baterii?',
-      answer: 'Tak, część z nich. Drukarki mobilne Zebra ZQ6 HC mają wymienną baterię PowerPrecision+ 3250 mAh, a TSC Alpha-30LHC baterię 3030 mAh. Do drukarek biurkowych Zebra ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC jest dostępna opcjonalna bateria 2750 mAh, a do drukarek TSC TH/DH w wersjach HC — stacja baterii BP-4000. Pozostałe drukarki biurkowe pracują z zasilaczem sieciowym.',
+      answer: 'Tak, część z nich. Drukarki mobilne Zebra ZQ6 HC mają wymienną baterię PowerPrecision+ 3250 mAh, a TSC Alpha-30LHC baterię 3030 mAh. Do drukarek biurkowych Zebra ZD411-HC, ZD421-HC, ZD611-HC i ZD621-HC jest dostępna opcjonalna bateria 2750 mAh, a do drukarek TSC TH/DH w wersjach HC — stacja baterii BP-4000. Etykieciarka Brady M210-LAB działa na 6 bateriach AA, akumulatorze lub zasilaczu. Pozostałe drukarki biurkowe pracują z zasilaczem sieciowym.',
     },
     {
       question: 'Gdzie są opaski i etykiety do tych drukarek?',
-      answer: 'Opaski Z-Band są w kategorii [opaski identyfikacyjne](/opaski-identyfikacyjne). Etykiety termiczne są w kategorii [etykiety termiczne](/etykiety-termiczne-zebra), a taśmy do druku termotransferowego w kategorii [taśmy termotransferowe](/tasmy-termotransferowe).',
+      answer: 'Opaski Z-Band są w kategorii [opaski identyfikacyjne](/opaski-identyfikacyjne). Etykiety termiczne są w kategorii [etykiety termiczne](/etykiety-termiczne-zebra), a taśmy do druku termotransferowego w kategorii [taśmy termotransferowe](/tasmy-termotransferowe). Kasety M21 do Brady M210-LAB, np. [etykiety z polipropylenu M21-750-7425](/produkt/brady-m21-750-7425), są na karcie drukarki.',
     },
   ],
   howToSteps: [
     { name: 'Określ zastosowanie', text: 'Ustal, czy drukarka ma drukować opaski dla pacjentów, etykiety na probówki, etykiety leków czy etykiety na worki.' },
-    { name: 'Wybierz rodzaj drukarki', text: 'Wybierz drukarkę opasek, drukarkę biurkową 2- lub 4-calową albo drukarkę mobilną do pracy przy łóżku pacjenta.' },
+    { name: 'Wybierz rodzaj drukarki', text: 'Wybierz drukarkę opasek, drukarkę biurkową 2- lub 4-calową, drukarkę mobilną do pracy przy łóżku pacjenta albo etykieciarkę laboratoryjną do ręcznego druku etykiet.' },
     { name: 'Sprawdź obudowę i zasilacz', text: 'Porównaj wymagania placówki z kartą modelu: tworzywo przygotowane do dezynfekcji, tworzywo antybakteryjne lub antymikrobowe, zasilacz z certyfikatem IEC 60601-1.' },
     { name: 'Dobierz wersję i materiały', text: 'Wybierz numer PN z wymaganym interfejsem. Dobierz opaski, etykiety i taśmy, a potem wykonaj próbę druku i skanowania.' },
   ],

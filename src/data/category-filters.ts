@@ -2342,22 +2342,26 @@ categoryFilters['drukarki-dla-sluzby-zdrowia'] = [
     { value: 'SATO', manufacturer: 'sato' },
     { value: 'Honeywell', manufacturer: 'honeywell' },
     { value: 'Citizen', manufacturer: 'citizen' },
+    { value: 'Brady', manufacturer: 'brady' },
   ] },
-  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski z kartridżów\n• Biurkowa — etykiety na stanowisku, w wielu modelach także opaski z rolki\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii', derived: [
+  { specKey: 'rodzaj', label: 'Rodzaj drukarki', description: 'Miejsce pracy i rodzaj nośnika.\n• Drukarka opasek — opaski z kartridżów\n• Biurkowa — etykiety na stanowisku, w wielu modelach także opaski z rolki\n• Mobilna — etykiety przy łóżku pacjenta, zasilanie z baterii\n• Etykieciarka laboratoryjna — klawiatura, druk bez komputera na kasetach M21', derived: [
     { value: 'Drukarka opasek', slugs: ['zebra-zd510-hc'] },
     { value: 'Biurkowa', subcategory: 'biurkowe-drukarki-etykiet' },
     { value: 'Mobilna', subcategory: 'mobilne-drukarki-etykiet' },
+    { value: 'Etykieciarka laboratoryjna', slugs: ['brady-m210-lab'] },
   ] },
   { specKey: 'technologia', label: 'Technologia druku', description: 'Sposób druku.\n• Termiczna — bez taśmy barwiącej\n• Termotransferowa — z taśmą barwiącą', derived: [
     { value: 'Termiczna', slugs: ['zebra-zd510-hc'] },
     { value: 'Termiczna', subcategory: 'termiczne-drukarki-etykiet' },
     { value: 'Termotransferowa', subcategory: 'termotransferowe-drukarki-etykiet' },
+    { value: 'Termotransferowa', slugs: ['brady-m210-lab'] },
   ] },
-  { specKey: 'szerokosc', label: 'Szerokość druku', description: 'Maksymalna szerokość druku.\n• Opaski z kartridżów — do 30,16 mm\n• 2 cale — ok. 48–57 mm\n• 3 cale — do 72 mm\n• 4 cale — 104–108 mm', derived: [
+  { specKey: 'szerokosc', label: 'Szerokość druku', description: 'Maksymalna szerokość druku.\n• Opaski z kartridżów — do 30,16 mm\n• 2 cale — ok. 48–57 mm\n• 3 cale — do 72 mm\n• 4 cale — 104–108 mm\n• Kasety M21 — etykiety do 19,05 mm, druk do 16 mm', derived: [
     { value: 'Opaski (do 30 mm)', slugs: ['zebra-zd510-hc'] },
     { value: '2 cale', slugs: ['zebra-zd411-hc', 'zebra-zd611-hc', 'zebra-zq610-plus-hc', 'tsc-th220thc', 'tsc-dh220thc', 'tsc-dh220lhc', 'sato-ws2-2'] },
     { value: '3 cale', slugs: ['zebra-zq620-plus-hc', 'tsc-alpha-30lhc'] },
     { value: '4 cale', slugs: ['zebra-zd421-hc', 'zebra-zd621-hc', 'tsc-th240thc', 'tsc-dh240thc', 'sato-ct4-lx-hc', 'honeywell-pc45d-hc', 'citizen-cl-h300sv'] },
+    { value: 'Kasety do 19 mm', slugs: ['brady-m210-lab'] },
   ] },
 ]
 
