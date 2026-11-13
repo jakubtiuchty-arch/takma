@@ -67,6 +67,7 @@ import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
 import { bradyLabelPrinters } from './brady-label-printers'
+import { bradyM21Kasety } from './brady-m21-kasety'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -95730,6 +95731,7 @@ const rawProductList: Product[] = [
   ...newlandMt93UhfAccessories,
   ...bradyRt710Products,
   ...bradyLabelPrinters,
+  ...bradyM21Kasety,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,

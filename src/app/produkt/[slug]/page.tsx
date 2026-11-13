@@ -106,6 +106,7 @@ import { getManualByProductSlug } from '@/data/manuals'
 import ViewItemTracker from './ViewItemTracker'
 import { thermalLabelSeries } from '@/data/thermal-label-series'
 import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptouch'
+import { bradyLabelPrinters } from '@/data/brady-label-printers'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
 import VariantQuickPick from './VariantQuickPick'
@@ -120,8 +121,8 @@ interface ProductPageProps {
 }
 
 const accessoryNavigation = buildAccessoryNavigation(products)
-// Brother QL drukuje na rolkach DK, a P-touch na taśmach TZe, więc etykiety Zebry do nich nie pasują.
-const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts].map((p) => p.id))
+// Brother QL drukuje na rolkach DK, P-touch na taśmach TZe, a Brady M210 i M211 na kasetach M21, więc etykiety Zebry do nich nie pasują.
+const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts, ...bradyLabelPrinters].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
 function pickVariant(product: ReturnType<typeof getProductBySlug>, pn: string | string[] | undefined) {
@@ -478,6 +479,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     : dtLabelPrinter ? !labelsDontFit && thermalLabelsFit
       : isTTprinter && ttPaperIds.length > 0 ? ttPaperSection
         : compatibleConsumables.length > 0
+  // Drukarki na własne materiały (kasety Brady M21) pokazują swoje kasety z compatibleAccessories.
+  const kasetySection = brotherWlasneMaterialy && compatibleConsumables.length > 0
   const ttFoilSection = isTTprinter && ttFoilIds.length > 0 && ttLabelsFit(ttFoilIds)
   const foilSection = isTTprinter && ttFoilIds.length > 0 ? ttFoilSection : compatibleFoilLabels.length > 0
   const ribbonSection = printerRibbons.length > 0 && materialVariantCandidates({ productIds: printerRibbonIds, kind: 'ribbon', printWidthMm, requiredCore: printerRibbonCore, maxRibbonLengthM: printerMaxRibbonLength }).length > 0
@@ -504,6 +507,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     [isColorPrinter && relatedAccessories.length > 0, 'tusze'],
     [thermalSection, 'etykiety-termiczne'],
     [paperSection, 'etykiety-papierowe'],
+    [kasetySection, 'kasety'],
     [foilSection, 'etykiety-foliowe'],
     [ribbonSection, 'tasmy-barwiace'],
   ] as const).find(([ok]) => ok)?.[1]
@@ -1962,7 +1966,16 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
             {thermalSection && (
               <PrinterCompatibleLabels sectionId="etykiety-termiczne" printerSlug={product.slug} printWidthMm={printWidthMm} requiredCore={printerLabelCore} minLabelCoreMm={printerMinLabelCore} maxLabelCoreMm={printerMaxLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             )}
-            {brotherWlasneMaterialy ? null : dtLabelPrinter ? (
+            {brotherWlasneMaterialy ? (
+              kasetySection ? (
+                <RelatedProducts
+                  id="kasety"
+                  title="Kasety z etykietami"
+                  products={compatibleConsumables as typeof products}
+                  showDualButtons
+                />
+              ) : null
+            ) : dtLabelPrinter ? (
               !paperSection ? null : <PrinterCompatibleLabels printerSlug={product.slug} printWidthMm={printWidthMm} requiredCore={printerLabelCore} minLabelCoreMm={printerMinLabelCore} maxLabelCoreMm={printerMaxLabelCore} minLabelWidthMm={printerMinLabelWidth} />
             ) : isTTprinter && ttPaperIds.length > 0 ? (
               !ttPaperSection ? null : <PrinterMaterialVariants
