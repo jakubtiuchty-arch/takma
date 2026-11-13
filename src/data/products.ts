@@ -66,6 +66,7 @@ import { rfd90Products, rfd90Accessories } from './rfd90-products'
 import { rfd40Products, rfd40Accessories } from './rfd40-products'
 import { rfidSledCategory } from './rfid-sled-category'
 import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-products'
+import { bradyLabelPrinters } from './brady-label-printers'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -607,13 +608,13 @@ export const subcategories: Subcategory[] = [
     slug: 'etykieciarki',
     name: 'Etykieciarki',
     parentCategoryId: 'drukarki-etykiet',
-    description: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm: z klawiaturą, z Bluetooth i do komputera',
-    seoTitle: 'Etykieciarki Brother P-touch — ręczne i do komputera',
-    seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm: z klawiaturą, z Bluetooth i do komputera. Modele dla biura, elektryków i instalatorów sieci.',
-    longDescription: 'Etykieciarka drukuje etykiety na kasecie z taśmą TZe: podłoże, barwnik i laminat są w jednym wkładzie, a laminat chroni nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch do biura oraz modele PT-E dla elektryków i instalatorów sieci.',
+    description: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady na kasety M21: z klawiaturą, z Bluetooth i do komputera',
+    seoTitle: 'Etykieciarki Brother P-touch i Brady — ręczne i do komputera',
+    seoDescription: 'Etykieciarki Brother P-touch na taśmy TZe 3,5–36 mm i Brady M210, M211 na kasety M21. Modele z klawiaturą, z Bluetooth i do komputera, dla biura i elektryków.',
+    longDescription: 'Etykieciarka drukuje etykiety z kasety, w której są materiał etykiety i barwnik, a w taśmach laminowanych także laminat chroniący nadruk przed ścieraniem i wilgocią. Modele z klawiaturą drukują bez komputera. Modele z Bluetooth drukują z aplikacji na smartfonie, a modele biurkowe — z komputera przez USB, Wi-Fi lub sieć. W ofercie są etykieciarki Brother P-touch na taśmy TZe oraz Brady na kasety M21.',
     icon: 'printer',
-    productIds: brotherPtouchProducts.map(p => p.id),
-    productCount: brotherPtouchProducts.length,
+    productIds: [...brotherPtouchProducts.map(p => p.id), 'brady-m210', 'brady-m211'],
+    productCount: brotherPtouchProducts.length + 2,
   },
   {
     id: 'drukarki-do-oznaczania-kabli',
@@ -625,8 +626,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarki do oznaczania kabli dla elektryków i instalatorów: owijki, flagi kablowe, oznaczniki na rurkach termokurczliwych. Modele z klawiaturą i z Bluetooth.',
     longDescription: 'Drukarka do oznaczania kabli drukuje oznaczniki, które owija się wokół kabla, mocuje jako flagę albo nasuwa na kabel jako rurkę termokurczliwą. Druk jest termotransferowy. Na taśmach laminowanych laminat chroni nadruk przed ścieraniem i wilgocią. Elektrycy oznaczają nią kable, listwy zaciskowe, bezpieczniki i rozdzielnice. Instalatorzy sieci oznaczają kable krosowe, panele krosowe i gniazda. Modele ręczne mają klawiaturę i szablony etykiet kablowych, a modele z Bluetooth drukują z aplikacji na smartfonie. Do opisów biurowych służą [etykieciarki](/etykieciarki).',
     icon: 'printer',
-    productIds: ['brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw'],
-    productCount: 7,
+    productIds: ['brady-m210', 'brady-m211', 'brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw'],
+    productCount: 9,
   },
   {
     id: 'akcesoria-do-drukarek-etykiet',
@@ -95728,6 +95729,7 @@ const rawProductList: Product[] = [
   ...newlandMt93UhfProducts,
   ...newlandMt93UhfAccessories,
   ...bradyRt710Products,
+  ...bradyLabelPrinters,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,

@@ -546,6 +546,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'PT-D', namePattern: 'PT-D\\d' },
         { value: 'PT-E', namePattern: 'PT-E\\d' },
         { value: 'PT-P', namePattern: 'PT-P\\d' },
+        { value: 'Brady M21x', namePattern: 'Brady M21[01]' },
       ],
     },
     {
@@ -554,6 +555,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '12 mm', pattern: '\\b12 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
         { value: '18 mm', pattern: '\\b18 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
+        { value: '19 mm', pattern: '19,05 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
       ],
@@ -598,6 +600,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: '12 mm', pattern: '\\b12 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
         { value: '18 mm', pattern: '\\b18 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
+        { value: '19 mm', pattern: '19,05 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '24 mm', pattern: '\\b24 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
       ],
