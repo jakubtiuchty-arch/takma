@@ -35,7 +35,7 @@ export const bradyLabelPrinters: Product[] = [
     tags: ['produkcja'],
     isNew: true,
     isBestseller: false,
-    applications: [],
+    applications: ['Oznaczanie przewodów i kabli w rozdzielnicach', 'Skrzynki bezpiecznikowe i listwy zaciskowe', 'Panele krosownicze i okablowanie teleinformatyczne', 'Koszulki termokurczliwe PermaSleeve na przewody', 'Oznaczenia ogólnoprzemysłowe bez komputera'],
     specifications: [
       { name: 'Typ urządzenia', value: 'Ręczna drukarka etykiet z klawiaturą, praca samodzielna (bez połączenia z komputerem)' },
       { name: 'Technologia druku', value: 'Termotransfer' },
@@ -129,7 +129,7 @@ export const bradyLabelPrinters: Product[] = [
     tags: ['healthcare'],
     isNew: true,
     isBestseller: false,
-    applications: [],
+    applications: ['Fiolki i szalki laboratoryjne', 'Probówki przechowywane w ciekłym azocie', 'Szkiełka mikroskopowe', 'Oznaczenia tymczasowe na papierze rozpuszczalnym w wodzie', 'Laboratoria badawcze, uczelniane i kliniczne'],
     specifications: [
       { name: 'Typ urządzenia', value: 'Ręczna drukarka etykiet laboratoryjnych z klawiaturą, praca samodzielna (bez połączenia z komputerem)' },
       { name: 'Technologia druku', value: 'Termotransfer' },
@@ -225,7 +225,7 @@ export const bradyLabelPrinters: Product[] = [
     tags: ['produkcja'],
     isNew: true,
     isBestseller: false,
-    applications: [],
+    applications: ['Druk etykiet z telefonu w miejscu pracy', 'Oznaczenia elektryczne i teleinformatyczne', 'Koszulki termokurczliwe PermaSleeve na przewody', 'Etykiety projektowane w biurze i drukowane na obiekcie'],
     specifications: [
       { name: 'Typ urządzenia', value: 'przenośna drukarka etykiet bez klawiatury i wyświetlacza, sterowana ze smartfona' },
       { name: 'Technologia druku', value: 'Termotransfer' },
@@ -319,7 +319,7 @@ export const bradyLabelPrinters: Product[] = [
     tags: ['produkcja'],
     isNew: true,
     isBestseller: false,
-    applications: [],
+    applications: ['Znaczniki przewodów, flagi i koszulki termokurczliwe', 'Kostki przyłączeniowe, panele krosownicze i płyty przednie', 'Skrzynki bezpieczników', 'Etykiety laboratoryjne na fiolki i probówki', 'Oznaczenia z symbolami GHS/CLP i ISO', 'Serie etykiet z tabeli danych'],
     specifications: [
       { name: 'Typ urządzenia', value: 'Przenośna drukarka etykiet z klawiaturą QWERTY; druk bez komputera albo z komputera przez USB' },
       { name: 'Technologia druku', value: 'Termotransfer' },

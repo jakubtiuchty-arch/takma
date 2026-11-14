@@ -1476,18 +1476,23 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
               >
                 Opis
               </a>
-              <a
-                href="#specyfikacja"
-                className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
-              >
-                Specyfikacja
-              </a>
-              <a
-                href="#zastosowania"
-                className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
-              >
-                Zastosowania
-              </a>
+              {/* Zakładki tylko dla sekcji, które są na karcie — inaczej link prowadzi donikąd. */}
+              {product.specifications.length > 0 && (
+                <a
+                  href="#specyfikacja"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Specyfikacja
+                </a>
+              )}
+              {product.applications.length > 0 && (
+                <a
+                  href="#zastosowania"
+                  className="px-1.5 py-3 sm:px-2 sm:py-4 text-sm font-medium text-gray-500 hover:text-gray-700 border-b-2 border-transparent hover:border-gray-300 whitespace-nowrap"
+                >
+                  Zastosowania
+                </a>
+              )}
               {product.comparison && (
                 <a
                   href="#porownanie"
