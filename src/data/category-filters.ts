@@ -306,9 +306,9 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Do jakiego obciążenia drukarka jest zbudowana.\n• Biurkowa — rolki do 127 mm, kilkaset etykiet dziennie; sklep, biuro, mały magazyn\n• Przemysłowa — rolki 200 mm, metalowa konstrukcja, praca ciągła na kilka zmian; produkcja, logistyka',
       derived: [
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brady-s3100', 'brady-s3700'] },
+        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45'] },
+        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700'] },
       ],
     },
     {
@@ -386,6 +386,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'TSC', manufacturer: 'tsc' },
         { value: 'Citizen', manufacturer: 'citizen' },
         { value: 'Brother', manufacturer: 'brother' },
+        { value: 'Brady', manufacturer: 'brady' },
       ],
     },
     {
@@ -418,6 +419,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'do 199 mm/s', pattern: '(^|[^0-9,])(1[0-9][0-9]|[1-9][0-9])(,[0-9])? ?mm/s', specs: ['Prędkość druku', 'Szybkość druku'] },
         { value: '200–299 mm/s', pattern: '(^|[^0-9,])2[0-9][0-9](,[0-9])? ?mm/s', specs: ['Prędkość druku', 'Szybkość druku'] },
         { value: '300 mm/s i więcej', pattern: '(^|[^0-9,])3[0-9][0-9](,[0-9])? ?mm/s', specs: ['Prędkość druku', 'Szybkość druku'] },
+        { value: 'do 199 mm/s', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -482,8 +484,6 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
-        { value: 'Termotransferowa (z taśmą)', slugs: ['brady-s3100', 'brady-s3700'] },
-        { value: 'Atramentowa (kolorowa)', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -663,6 +663,14 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
   ],
   'kolorowe-drukarki-etykiet': [
     {
+      specKey: 'producent',
+      label: 'Producent',
+      derived: [
+        { value: 'Epson', manufacturer: 'epson' },
+        { value: 'Brady', manufacturer: 'brady' },
+      ],
+    },
+    {
       specKey: 'klasa',
       label: 'Klasa urządzenia',
       description: 'Do jakiego obciążenia drukarka jest zbudowana.\n• Biurkowa — od kilkudziesięciu do kilkuset etykiet dziennie, stoi na blacie obok stanowiska\n• Przemysłowa — druk całymi zmianami, większe rolki, cięższa obudowa i gwarancja z serwisem u klienta',
@@ -678,6 +686,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'do 108 mm (4 cale)', pattern: '10[48] ?mm', specs: ['Szerokość druku'] },
         { value: 'do 212 mm (8 cali)', pattern: '212 ?mm', specs: ['Szerokość druku'] },
+        { value: 'do 108 mm (4 cale)', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -688,6 +697,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'do 100 mm/s', pattern: '(8[0-9]|9[0-9]|100) ?mm/s', specs: ['Prędkość druku'] },
         { value: '100–150 mm/s', pattern: '(10[1-9]|1[1-4][0-9]) ?mm/s', specs: ['Prędkość druku'] },
         { value: 'powyżej 150 mm/s', pattern: '(1[5-9][0-9]|[2-9][0-9]{2}) ?mm/s', specs: ['Prędkość druku'] },
+        { value: 'do 100 mm/s', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -707,6 +717,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Gilotyna', pattern: 'automatyczna|w zestawie|w standardzie', specs: ['Gilotyna'] },
         { value: 'Gilotyna', pattern: 'gilotyn', specs: ['Wersje'] },
         { value: 'Odklejak (wersja Pe)', pattern: 'odklejak', specs: ['Wersje'] },
+        { value: 'Gilotyna', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -750,9 +761,9 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Gdzie drukarka pracuje.\n• Biurkowa — przy komputerze lub w sieci, rolki do 127 mm; sklep, biuro, mały magazyn\n• Przemysłowa — rolki 200 mm, metalowa konstrukcja, praca ciągła; produkcja, logistyka\n• Mobilna — na baterię, przy pasku lub w aucie; kurierzy, inwentaryzacja',
       derived: [
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'], notSpecs: ['Bateria', 'Bateria standardowa'] },
-        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a', 'brady-s3100', 'brady-s3700', 'brady-j7300'] },
+        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45'] },
+        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-j7300'] },
         { value: 'Mobilna (na baterię)', pattern: '\\S', specs: ['Bateria', 'Bateria standardowa'] },
       ],
     },

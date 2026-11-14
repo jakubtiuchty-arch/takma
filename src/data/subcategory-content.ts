@@ -3459,10 +3459,10 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   },
   "definition": {
     "heading": "Co to jest kolorowa drukarka etykiet?",
-    "content": "Kolorowa drukarka etykiet drukuje tekst, kody i grafikę na zgodnym materiale z rolki. Oferowane modele Epson ColorWorks używają druku atramentowego CMYK. Wybór rodziny zależy od szerokości nadruku, rodzaju tuszu, wielkości rolki i sposobu podania etykiety.\n\nDo nadruku do 104 mm porównaj C3500. C4000e oferuje rozdzielczość do 1200 × 1200 dpi. C6000 występuje z gilotyną lub odklejakiem, a C6500 drukuje do 212 mm. C8000e osiąga do 300 mm/s przy szerokości do 108 mm. D3800e wyróżnia tusz barwnikowy.\n\nTa kategoria pomaga porównać urządzenia do etykiet. Tusze i etykiety kupisz w osobnych działach; parametry oraz PN sprawdzisz na karcie wybranego modelu."
+    "content": "Kolorowa drukarka etykiet drukuje tekst, kody i grafikę na zgodnym materiale z rolki. Oferowane modele Epson ColorWorks i Brady J7300 drukują atramentowo w kolorach CMYK. Wybór rodziny zależy od szerokości nadruku, rodzaju tuszu, wielkości rolki i sposobu podania etykiety.\n\nDo nadruku do 104 mm porównaj C3500. C4000e oferuje rozdzielczość do 1200 × 1200 dpi. C6000 występuje z gilotyną lub odklejakiem, a C6500 drukuje do 212 mm. C8000e osiąga do 300 mm/s przy szerokości do 108 mm. D3800e wyróżnia tusz barwnikowy. Brady J7300 drukuje w 4800 dpi na etykietach Brady do druku atramentowego, także laboratoryjnych i odpornych na mycie.\n\nTa kategoria pomaga porównać urządzenia do etykiet. Tusze i etykiety kupisz w osobnych działach; parametry oraz PN sprawdzisz na karcie wybranego modelu."
   },
   "comparisonTable": {
-    "heading": "Sześć modeli ColorWorks — czym się różnią",
+    "heading": "Sześć modeli ColorWorks i Brady J7300 — czym się różnią",
     "intro": "Porównaj obszar nadruku, tryb maksymalnej prędkości, rodzaj tuszu i format rolki. Zgodność materiału sprawdź dla konkretnego PN oraz wersji Ae lub Pe.",
     "columns": [
       "Szerokość druku",
@@ -3548,6 +3548,19 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
           "600 × 1200 dpi",
           "SJIC48P, 480 ml, pigment",
           "8 cali",
+          "Gilotyna"
+        ]
+      },
+      {
+        "model": "Brady J7300",
+        "href": "/produkt/brady-j7300",
+        "role": "Etykiety przemysłowe i laboratoryjne Brady",
+        "cells": [
+          "101,6 mm",
+          "30,48 mm/s",
+          "4800 dpi",
+          "P-CMY-1 32 ml i P-K-1 35 ml",
+          "6 cali",
           "Gilotyna"
         ]
       }

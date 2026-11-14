@@ -518,8 +518,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt', 'brady-s3100', 'brady-s3700', 'brady-j7300'],
-    productCount: 35,
+    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
+    productCount: 32,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -535,8 +535,10 @@ export const subcategories: Subcategory[] = [
       'zebra-zt231', 'zebra-zt231-rfid', 'zebra-zt111', 'zebra-zt411', 'zebra-zt411-rfid', 'zebra-zt421', 'zebra-zt421-rfid', 'zebra-zt510', 'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e720', 'citizen-cl-e720dt', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
+      // Dopisane 14.11.2026 — drukarki znaków i etykiet Brady
+      'brady-s3100', 'brady-s3700', 'brady-j7300',
     ],
-    productCount: 55,
+    productCount: 58,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -610,10 +612,10 @@ export const subcategories: Subcategory[] = [
     description: 'Drukarki etykiet w pełnym kolorze na żądanie: tusz pigmentowy CMYK, etykiety produktowe, GHS i bilety',
     seoTitle: "Kolorowe drukarki etykiet — porównanie Epson ColorWorks",
     seoDescription: "Kolorowe drukarki etykiet Epson ColorWorks: porównaj nadruk 104–212 mm, pigment i tusz barwnikowy, gilotynę oraz odklejak. Modele, PN i ceny.",
-    longDescription: 'Kolorowe drukarki etykiet drukują w pełnym kolorze na żądanie, więc etykieta z logo, zdjęciem produktu albo piktogramem ostrzegawczym powstaje na miejscu, w takim nakładzie, jaki jest dziś potrzebny. To piąty typ [drukarek etykiet](/drukarki-etykiet) obok biurkowych, przemysłowych, mobilnych i termicznych. W ofercie jest sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s — a do każdego [tusze](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek).',
+    longDescription: 'Kolorowe drukarki etykiet drukują w pełnym kolorze na żądanie, więc etykieta z logo, zdjęciem produktu albo piktogramem ostrzegawczym powstaje na miejscu, w takim nakładzie, jaki jest dziś potrzebny. To piąty typ [drukarek etykiet](/drukarki-etykiet) obok biurkowych, przemysłowych, mobilnych i termicznych. W ofercie jest sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s — a do każdego [tusze](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek). Uzupełnia je przemysłowa [Brady J7300](/produkt/brady-j7300), która drukuje na etykietach Brady do druku atramentowego.',
     icon: 'printer',
-    productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e'],
-    productCount: 6,
+    productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e', 'brady-j7300'],
+    productCount: 7,
   },
   {
     id: 'etykieciarki',
