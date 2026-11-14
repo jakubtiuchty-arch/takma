@@ -112,6 +112,7 @@ import { BRADY_M6_KABLE_IDS, BRADY_M6_LAB_IDS, BRADY_M6_TASMY_IDS } from '@/data
 import { BRADY_B30_CIAGLE_IDS, BRADY_B30_ZESTAWY_IDS, BRADY_B30_TASMY_IDS } from '@/data/brady-b30-grupy'
 import { BRADY_J7300_TUSZE_IDS, BRADY_J7300_LAB_IDS, BRADY_J7300_ZAWIESZKI_IDS } from '@/data/brady-j7300-grupy'
 import { BRADY_J4000_TUSZE_IDS, BRADY_J4000_LAB_IDS, BRADY_J4000_LAMINATY_IDS, BRADY_J4000_ZAWIESZKI_IDS } from '@/data/brady-j4000-grupy'
+import { BRADY_B33_PRZEWODY_IDS, BRADY_B33_ELEKTRONIKA_IDS, BRADY_B33_LAB_IDS, BRADY_B33_OGOLNE_IDS } from '@/data/brady-b33-grupy'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -501,8 +502,26 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
     const tasmy = compatibleConsumables.filter((p) => TASMY_BARWIACE_IDS.has(p!.id))
     const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
-    // Drukarki S3100, S3700 i i3300 (materiały B30): taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące.
-    if (product.id === 'brady-s3100' || product.id === 'brady-s3700' || product.id === 'brady-i3300') {
+    // Przemysłowa i3300: najpierw seria B33 (przewody, elektronika, laboratorium, etykiety ogólne), potem materiały B30 i taśmy.
+    if (product.id === 'brady-i3300') {
+      const zB33 = (ids: Set<string>) => compatibleConsumables.filter((p) => ids.has(p!.id))
+      const ciagleI = compatibleConsumables.filter((p) => BRADY_B30_CIAGLE_IDS.has(p!.id))
+      const zestawyI = compatibleConsumables.filter((p) => BRADY_B30_ZESTAWY_IDS.has(p!.id))
+      const b33 = new Set([...Array.from(BRADY_B33_PRZEWODY_IDS), ...Array.from(BRADY_B33_ELEKTRONIKA_IDS), ...Array.from(BRADY_B33_LAB_IDS), ...Array.from(BRADY_B33_OGOLNE_IDS)])
+      const etykietyI = compatibleConsumables.filter((p) => !b33.has(p!.id) && !BRADY_B30_CIAGLE_IDS.has(p!.id) && !BRADY_B30_ZESTAWY_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
+      return [
+        { klucz: 'przewody', tytul: 'Oznaczanie przewodów i kabli (B33)', pozycje: zB33(BRADY_B33_PRZEWODY_IDS) },
+        { klucz: 'elektronika', tytul: 'Elektronika i płytki drukowane (B33)', pozycje: zB33(BRADY_B33_ELEKTRONIKA_IDS) },
+        { klucz: 'lab', tytul: 'Etykiety laboratoryjne (B33)', pozycje: zB33(BRADY_B33_LAB_IDS) },
+        { klucz: 'ogolne', tytul: 'Etykiety znamionowe i ogólne (B33)', pozycje: zB33(BRADY_B33_OGOLNE_IDS) },
+        { klucz: 'ciagle', tytul: 'Taśmy ciągłe do znaków i oznaczeń (B30)', pozycje: ciagleI },
+        { klucz: 'etykiety', tytul: 'Etykiety, znaki i zawieszki (B30)', pozycje: etykietyI },
+        { klucz: 'zestawy', tytul: 'Zestawy materiałów (B30)', pozycje: zestawyI },
+        { klucz: 'tasmy', tytul: 'Taśmy barwiące', pozycje: tasmy },
+      ].filter((g) => g.pozycje.length > 0)
+    }
+    // Drukarki znaków S3100 i S3700 (materiały B30): taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące.
+    if (product.id === 'brady-s3100' || product.id === 'brady-s3700') {
       const ciagle = compatibleConsumables.filter((p) => BRADY_B30_CIAGLE_IDS.has(p!.id))
       const zestawyB30 = compatibleConsumables.filter((p) => BRADY_B30_ZESTAWY_IDS.has(p!.id))
       const etykietyB30 = compatibleConsumables.filter((p) => !BRADY_B30_CIAGLE_IDS.has(p!.id) && !BRADY_B30_ZESTAWY_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))

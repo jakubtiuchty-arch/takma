@@ -3,6 +3,7 @@ import { BRADY_M6_DO_M610, BRADY_M6_DO_M710 } from './brady-m6-grupy'
 import { BRADY_B30_DO_S3100, BRADY_B30_DO_S3700, BRADY_B30_DO_I3300 } from './brady-b30-grupy'
 import { BRADY_J7300_MATERIALY } from './brady-j7300-grupy'
 import { BRADY_J4000_MATERIALY } from './brady-j4000-grupy'
+import { BRADY_B33_DO_I3300 } from './brady-b33-grupy'
 
 // Drukarki etykiet Brady M210, M210-LAB i M211 (kasety M21) oraz M510 (kasety M4 i M5). Brady nie ma cen ani stanów w /api/stock,
 // dlatego karty są na zapytanie (quoteOnly) do czasu cennika partnerskiego. 13.11.2026.
@@ -1507,7 +1508,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Czym różnią się wersje Brady i3300?', answer: 'Wszystkie mają Wi-Fi, Ethernet i USB. i3300-C-EU-WF ma pakiet Brady Workstation Basic Suite, i3300-C-EU-W-BWS pakiet Safety & Facility Identification, a i3300-SPS-EU-WF czytnik kodów Xenon 1900HD i pakiet Scan & Print do druku etykiet po zeskanowaniu kodu.' },
       { question: 'Brady i3300 czy S3100 — którą drukarkę wybrać?', answer: 'Obie drukują w 300 dpi na materiałach B30. i3300 jest lżejsza (5,2 kg), drukuje szybciej (101,6 mm/s) i przyjmuje też serię B33 do oznaczania przewodów, laboratoriów i elektroniki. [Brady S3100](/produkt/brady-s3100) ma klawiaturę i drukuje znaki bez komputera.' },
     ],
-    compatibleAccessories: BRADY_B30_DO_I3300,
+    compatibleAccessories: [...BRADY_B33_DO_I3300, ...BRADY_B30_DO_I3300],
     relatedAccessories: ['brady-b31-wiper', 'brady-b31-cct', 'brady-pck-6', 'brady-b30-trolley', 'brady-squeegee-036612', 'brady-m-script-adapt-int'],
     relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-m710'],
     downloads: [

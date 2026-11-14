@@ -76,6 +76,7 @@ import { bradyM6Materialy } from './brady-m6-grupy'
 import { bradyB30Materialy } from './brady-b30-grupy'
 import { bradyJ7300Materialy } from './brady-j7300-grupy'
 import { bradyJ4000Materialy } from './brady-j4000-grupy'
+import { bradyB33Materialy } from './brady-b33-grupy'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -95755,6 +95756,7 @@ const rawProductList: Product[] = [
   ...bradyB30Materialy,
   ...bradyJ7300Materialy,
   ...bradyJ4000Materialy,
+  ...bradyB33Materialy,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
