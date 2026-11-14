@@ -1,6 +1,6 @@
 import type { Product } from './products'
 
-// Akcesoria Brady do drukarek etykiet M210, M211, M410 i M510: zasilanie, mocowanie, przenoszenie i łączność.
+// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510 i M511: zasilanie, mocowanie, przenoszenie i łączność.
 // Brady nie ma cen ani stanów w /api/stock, więc karty są na zapytanie, jak kasety M21. 13.11.2026.
 
 type Akcesorium = Pick<Product, 'id' | 'name' | 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'images' | 'imageDescriptions' | 'specifications' | 'applications' | 'relatedAccessories' | 'relatedProducts' | 'faq' | 'gtin13'> & { sameAs: string }
@@ -254,7 +254,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Ładowanie drukarki M211 w terenie i w pojeździe', 'Ładowanie telefonu lub tabletu z aplikacją do etykiet'],
     relatedAccessories: ['brady-m211-m511-eu-uk-ac', 'brady-m211-hc'],
-    relatedProducts: ['brady-m211'],
+    relatedProducts: ['brady-m211', 'brady-m511'],
     faq: [
       { question: 'Ile razy powerbank naładuje drukarkę Brady M211?', answer: 'Do 3 razy. Jedno ładowanie [Brady M211](/produkt/brady-m211) wystarcza na wydruk do 300 etykiet.' },
       { question: 'Czy M211-M511-POWER zastępuje powerbank M211-POWER?', answer: 'Tak. Model M211-POWER jest wycofany. M211-M511-POWER ma tę samą pojemność 10 000 mAh i pasuje do drukarek M211 i M511.' },
@@ -286,7 +286,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Zasilanie i ładowanie drukarki M211 z sieci', 'Ładowanie drukarki z gniazda USB w pojeździe lub laptopie'],
     relatedAccessories: ['brady-m211-m511-power'],
-    relatedProducts: ['brady-m211'],
+    relatedProducts: ['brady-m211', 'brady-m511'],
     faq: [
       { question: 'Czy drukarkę Brady M211 można ładować z gniazda USB w samochodzie?', answer: 'Tak. Przewód USB-C podłącza się przez przejściówkę z USB-A na USB-C do gniazda USB w pojeździe lub w laptopie. Takie ładowanie trwa zwykle dłużej niż z zasilacza sieciowego.' },
     ],
@@ -412,7 +412,7 @@ const akcesoria: Akcesorium[] = [
     seoTitle: 'Brady M51-MAGNET — magnes do drukarek etykiet M510 i M511',
     seoDescription: 'Magnes Brady M51-MAGNET do drukarek etykiet M510 i M511: drukarka trzyma się metalowej obudowy szafy lub maszyny, ręce zostają wolne. Śruby w komplecie. Nr art. 176449.',
     shortDescription: 'Brady M51-MAGNET — magnes przykręcany z tyłu drukarek etykiet Brady M510 i M511. Drukarka trzyma się metalowej powierzchni, np. drzwi rozdzielnicy, a obie ręce zostają wolne.',
-    description: 'Brady M51-MAGNET to magnes mocowany z tyłu drukarek etykiet M510 i M511. Z magnesem drukarka trzyma się metalowej powierzchni, np. drzwi rozdzielnicy, obudowy szafy sterowniczej albo maszyny. Podczas oznaczania przewodów obie ręce zostają wolne, a drukarka jest blisko miejsca pracy.\n\nMagnes ma dwa okrągłe elementy magnetyczne na czarnej płytce. Wymiary to 114,4 × 66 × 15,6 mm. W opakowaniu są magnes i śruby do mocowania.\n\nZestawy M510-KIT-EU i M510-KIT-EU-BWS mają magnes w komplecie.',
+    description: 'Brady M51-MAGNET to magnes mocowany z tyłu drukarek etykiet M510 i M511. Z magnesem drukarka trzyma się metalowej powierzchni, np. drzwi rozdzielnicy, obudowy szafy sterowniczej albo maszyny. Podczas oznaczania przewodów obie ręce zostają wolne, a drukarka jest blisko miejsca pracy.\n\nMagnes ma dwa okrągłe elementy magnetyczne na czarnej płytce. Wymiary to 114,4 × 66 × 15,6 mm. W opakowaniu są magnes i śruby do mocowania.\n\nZestawy M510-KIT-EU i M510-KIT-EU-BWS mają magnes w komplecie. Ma go też zestaw drukarki M511-EU-UK-KIT.',
     images: ['/images/products/brady/m51-magnet.png', '/images/products/brady/m51-magnet-m510.png'],
     imageDescriptions: ['Magnes Brady M51-MAGNET na czarnej płytce z dwoma elementami magnetycznymi', 'Magnes M51-MAGNET przykręcony z tyłu drukarki etykiet Brady M510'],
     specifications: [
@@ -427,7 +427,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Praca z drukarką przy rozdzielnicy i szafie sterowniczej', 'Drukarka na obudowie maszyny podczas oznaczania przewodów'],
     relatedAccessories: ['brady-m51-hook', 'brady-m510-hc'],
-    relatedProducts: ['brady-m510'],
+    relatedProducts: ['brady-m510', 'brady-m511'],
     faq: [
       { question: 'Czy magnes M51-MAGNET pasuje do drukarki Brady M210?', answer: 'Nie. M51-MAGNET pasuje do [Brady M510](/produkt/brady-m510) i M511. Do drukarek M210 i M211 służy [magnes M21-MAGNET](/produkt/brady-m21-magnet).' },
     ],
@@ -439,7 +439,7 @@ const akcesoria: Akcesorium[] = [
     seoTitle: 'Brady M51-HOOK — haczyk do zawieszania drukarki M510 i M511',
     seoDescription: 'Haczyk do zawieszania Brady M51-HOOK do drukarek etykiet M510 i M511: drukarka wisi na krawędzi szafy, drabiny lub wózka. Srebrny, metalowy. Nr art. 176450.',
     shortDescription: 'Brady M51-HOOK — metalowy haczyk mocowany z tyłu drukarek etykiet Brady M510 i M511. Drukarkę zawiesza się na krawędzi szafy, drabiny, półki lub wózka narzędziowego.',
-    description: 'Brady M51-HOOK to metalowy haczyk mocowany z tyłu drukarek etykiet M510 i M511. Drukarkę z haczykiem zawiesza się na krawędzi szafy, drabiny, półki lub wózka narzędziowego. Drukarka jest pod ręką, a nie leży na podłodze ani na niestabilnej powierzchni.\n\nHaczyk jest srebrny i ma wymiary 58 × 59,4 × 12,43 mm. Na niemetalowych powierzchniach zastępuje magnes M51-MAGNET.\n\nZestawy M510-KIT-EU i M510-KIT-EU-BWS mają haczyk w komplecie.',
+    description: 'Brady M51-HOOK to metalowy haczyk mocowany z tyłu drukarek etykiet M510 i M511. Drukarkę z haczykiem zawiesza się na krawędzi szafy, drabiny, półki lub wózka narzędziowego. Drukarka jest pod ręką, a nie leży na podłodze ani na niestabilnej powierzchni.\n\nHaczyk jest srebrny i ma wymiary 58 × 59,4 × 12,43 mm. Na niemetalowych powierzchniach zastępuje magnes M51-MAGNET.\n\nZestawy M510-KIT-EU i M510-KIT-EU-BWS mają haczyk w komplecie. Ma go też zestaw drukarki M511-EU-UK-KIT.',
     images: ['/images/products/brady/m51-hook.png', '/images/products/brady/m51-hook-m510.png'],
     imageDescriptions: ['Metalowy haczyk do zawieszania Brady M51-HOOK', 'Haczyk M51-HOOK zamocowany z tyłu drukarki etykiet Brady M510'],
     specifications: [
@@ -453,7 +453,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Zawieszenie drukarki na drabinie lub wózku narzędziowym', 'Praca przy szafie bez metalowej obudowy'],
     relatedAccessories: ['brady-m51-magnet', 'brady-m510-hc'],
-    relatedProducts: ['brady-m510'],
+    relatedProducts: ['brady-m510', 'brady-m511'],
     faq: [
       { question: 'Czy haczyk M51-HOOK jest w zestawie z drukarką Brady M510?', answer: 'Jest w zestawach M510-KIT-EU i M510-KIT-EU-BWS, razem z [magnesem M51-MAGNET](/produkt/brady-m51-magnet). Drukarka [Brady M510](/produkt/brady-m510) w kartonie (M510-EU) nie ma haczyka.' },
     ],
@@ -504,7 +504,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Druk etykiet z systemów wysyłających polecenia ZPL', 'Wymiana drukarki ZPL na drukarkę Brady bez zmiany szablonów w systemie'],
     relatedAccessories: ['brady-usb-cable-103788'],
-    relatedProducts: ['brady-m510', 'brady-m410'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511'],
     faq: [
       { question: 'Czy Brady M510 drukuje w języku ZPL?', answer: 'Tak, z akcesorium Brady Script Emulator for ZPL. Bez emulatora [Brady M510](/produkt/brady-m510) drukuje z programu Brady Workstation albo z programów innych firm przez sterownik Windows.' },
     ],
@@ -652,6 +652,33 @@ const akcesoria: Akcesorium[] = [
       { question: 'Czy haczyk M410-HOOK pasuje do Brady M510?', answer: 'Nie. Do [Brady M510](/produkt/brady-m510) i M511 służy haczyk [M51-HOOK](/produkt/brady-m51-hook). M410-HOOK pasuje do [Brady M410](/produkt/brady-m410) i BMP41.' },
     ],
     sameAs: 'https://www.brady.eu/label-printers/utility-hook-for-m410-printer-pid-m410-hook',
+  },
+  {
+    id: 'brady-m511-hc',
+    name: 'Walizka Brady M511-HC do drukarki etykiet M511',
+    seoTitle: 'Brady M511-HC — twarda walizka do drukarki etykiet M511',
+    seoDescription: 'Twarda walizka Brady M511-HC do drukarki etykiet M511 z akcesoriami i kasetami M4 i M5. Chroni przed uderzeniami i pyłem. Niebieska. Nr art. 176448.',
+    shortDescription: 'Brady M511-HC — twarda walizka do przenoszenia i przechowywania drukarki etykiet Brady M511 razem z kasetami i akcesoriami. Zestaw M511-EU-UK-KIT jest dostarczany w walizce.',
+    description: 'Brady M511-HC to plastikowa walizka transportowa do drukarki etykiet M511. W środku mieszczą się drukarka, kasety z etykietami i akcesoria, np. zasilacz i powerbank. Walizka osłania sprzęt przed uderzeniami i pyłem, a technik zabiera wszystko na obiekt w jednym bagażu.\n\nNiebieska walizka ma rączkę do noszenia. Na zewnątrz mierzy 431,8 × 444,5 × 165,1 mm.\n\nWersje M511-EU-UK-US i M511-EU-UK-BWS drukarki są dostarczane w kartonie. Zestaw M511-EU-UK-KIT ma walizkę w komplecie.',
+    images: ['/images/products/brady/m511-hc.png'],
+    imageDescriptions: ['Niebieska twarda walizka Brady M511-HC z rączką, widok pod kątem'],
+    specifications: [
+      { name: 'Part Number', value: 'M511-HC' },
+      { name: 'Numer artykułu Brady', value: '176448' },
+      { name: 'Typ', value: 'Twarda walizka transportowa' },
+      { name: 'Materiał', value: 'tworzywo sztuczne' },
+      { name: 'Wymiary', value: '431,8 × 444,5 × 165,1 mm' },
+      { name: 'Kolor', value: 'niebieski' },
+      { name: 'Zgodne drukarki', value: 'M511' },
+    ],
+    applications: ['Przewóz drukarki M511 z kasetami i akcesoriami', 'Przechowywanie drukarki w warsztacie lub samochodzie serwisowym'],
+    relatedAccessories: ['brady-m211-m511-power', 'brady-m211-m511-eu-uk-ac'],
+    relatedProducts: ['brady-m511'],
+    faq: [
+      { question: 'Czy walizka M511-HC jest w zestawie z drukarką Brady M511?', answer: 'Tak, w zestawie M511-EU-UK-KIT. Wersje M511-EU-UK-US i M511-EU-UK-BWS drukarki [Brady M511](/produkt/brady-m511) są w kartonie.' },
+      { question: 'Jaka walizka pasuje do drukarki Brady M510?', answer: 'Do [Brady M510](/produkt/brady-m510) służy [walizka M510-HC](/produkt/brady-m510-hc). Brady podaje M511-HC jako walizkę do M511.' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/m511-hard-case-pid-m511-hc',
   },
 ]
 

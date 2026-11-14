@@ -38,13 +38,13 @@ const OWIJKI_427: [string, string, string, boolean][] = [
 
 export const bradyM45Owijki427: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5c-1000-427',
   slug: 'brady-m5c-1000-427',
-  name: 'Owijki samolaminujące Brady M5C-1000-427 — kasety M4 i M5 do M410 i M510',
+  name: 'Owijki samolaminujące Brady M5C-1000-427 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady M5C-1000-427 — owijki samolaminujące na kable do M510',
   seoDescription: 'Owijki z winylu samolaminującego Brady B-427 do M510: 20 rozmiarów i taśma ciągła, przewody 2–36,4 mm, od −70 do 70 °C. PN: M5C-1000-427, M5-32-427, M4-91-427.',
-  shortDescription: 'Brady M5C-1000-427 i 26 innych kaset M4 i M5 zawierają owijki z winylu samolaminującego B-427, których przezroczysta część zakrywa nadruk na przewodzie. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M5C-1000-427 i 26 innych kaset M4 i M5 zawierają owijki z winylu samolaminującego B-427, których przezroczysta część zakrywa nadruk na przewodzie. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady z materiałem B-427 zawierają owijki z winylu samolaminującego. Każda owijka składa się z białego pola nadruku i dłuższej, przezroczystej części. Po owinięciu przewodu przezroczysta warstwa przykrywa napis i chroni go przed ścieraniem. Giętki winyl dobrze układa się na przewodach o małej średnicy. Klej jest trwały i akrylowy. Dobrze trzyma się gładkiej i szorstkiej powierzchni. Wykończenie jest matowe.\n\nRodzina obejmuje 23 kasety z owijkami wykrawanymi i 4 kasety z taśmą ciągłą. Owijki wykrawane mają od 6,35 × 27,94 mm do 38,1 × 152,4 mm, od 40 do 360 sztuk w kasecie. Taśma ciągła ma szerokość od 19,05 do 38,1 mm i długość 7,62 m. Jej pole nadruku ma 9,53 albo 12,7 mm, a długość owijki wybiera się przy wydruku. Trzy rozmiary w kasetach M4 są także z żółtym polem nadruku. Owijki z tej rodziny pasują do przewodów od 2 do 36,4 mm średnicy.\n\nWinyl B-427 jest trudnopalny. Znosi kontakt z chemikaliami, olejem i wodą, a także wilgoć i działanie pogody. Dopuszczalna temperatura pracy owijek to od −70 do 70 °C. Materiał jest przeznaczony również do zamrażarek i ciekłego azotu. Drukarka M410 obsługuje tylko kasety M4 i M4C. Kasety M5 i M5C są przeznaczone do M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/self-laminating-vinyl-wire-cable-labels-for-m410-m510-m511-printers-cps-4661486',
   images: [
@@ -109,13 +109,13 @@ export const bradyM45Owijki427: Product = {
 
 export const bradyM45Owijki417: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5-116-417',
   slug: 'brady-m5-116-417',
-  name: 'Owijki samolaminujące o zwiększonej przyczepności Brady M5-116-417 — kasety M4 i M5 do M410 i M510',
+  name: 'Owijki samolaminujące o zwiększonej przyczepności Brady M5-116-417 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady M5-116-417 — owijki o zwiększonej przyczepności do M510',
   seoDescription: 'Owijki Brady B-417 z winylu samolaminującego do M510: mocny klej na cienkie przewody i izolację z PTFE, silikonu, PVC. PN: M5-116-417, M4-11-417, M4-49-417.',
-  shortDescription: 'Brady M5-116-417 i siedem kaset M4 zawierają owijki z winylu samolaminującego B-417 z klejem o zwiększonej przyczepności do izolacji przewodów. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M5-116-417 i siedem kaset M4 zawierają owijki z winylu samolaminującego B-417 z klejem o zwiększonej przyczepności do izolacji przewodów. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady B-417 zawierają owijki z winylu samolaminującego z klejem o zwiększonej przyczepności. Owijka długo trzyma się cienkich przewodów, także przy dużej wilgotności powietrza. Klej akrylowy przylega do izolacji z PTFE (teflonu), silikonu i PVC oraz do przewodów w oplocie. Opis przewodu trafia na białe pole. Po nawinięciu przezroczysta część owijki pokrywa ten napis.\n\nW rodzinie jest osiem rozmiarów owijek. Najmniejsza ma 12,7 × 19,05 mm i jest po 360 sztuk w kasecie. Największa, 38,1 × 63,5 mm, jest po 80 sztuk. Pole nadruku ma wysokość 9,53, 12,7 albo 19,05 mm. Owijki obejmują przewody o średnicy od 2 do 14,2 mm.\n\nWinyl B-417 jest samogasnący i ma matową powierzchnię. Napisy są czarne, a tło białe. Owijki zachowują właściwości w zakresie od −40 do 70 °C. Kaseta M5-116-417 pasuje do drukarek M510 i M511. Siedem kaset M4 działa w M410, M510 i M511. Owijki stosuje się w szafach sterowniczych, rozdzielnicach i wiązkach przewodów.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/high-adhesion-self-laminating-vinyl-wire-wraps-for-m410-m510-m511-printers-cps-4661485',
   images: [
@@ -168,13 +168,13 @@ export const bradyM45Owijki417: Product = {
 
 export const bradyM45Obrotowe427: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4-203-ro-427',
   slug: 'brady-m4-203-ro-427',
-  name: 'Obrotowe owijki winylowe Brady M4-203-RO-427 — kasety M4 do M410 i M510',
+  name: 'Obrotowe owijki winylowe Brady M4-203-RO-427 — kasety M4 do M410, M510 i M511',
   seoTitle: 'Brady M4-203-RO-427 — obrotowe owijki na przewody do M510',
   seoDescription: 'Obrotowe owijki z winylu B-427 do M510: etykieta obraca się na przewodzie, napis widać z każdej strony. PN: M4-203-RO-427, M4-209-RO-427, M4-211-RO-427.',
-  shortDescription: 'Brady M4-203-RO-427 i cztery inne kasety M4 zawierają obrotowe owijki z winylu samolaminującego B-427, które obracają się wokół przewodu. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M4-203-RO-427 i cztery inne kasety M4 zawierają obrotowe owijki z winylu samolaminującego B-427, które obracają się wokół przewodu. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady RO-427 zawierają owijki obrotowe z winylu samolaminującego B-427. Owijka luźno obejmuje przewód i może się na nim obracać. Dzięki temu napis można odczytać z każdej strony przewodu. Wydruk powstaje na białym polu, a reszta owijki jest przezroczysta. Wydrukowany opis zakrywa przezroczysta warstwa winylu, która chroni go przed uszkodzeniem.\n\nW rodzinie jest pięć rozmiarów. Owijki mają szerokość 12,7 albo 25,4 mm i długość od 30,48 do 69,85 mm. Kaseta mieści od 70 do 150 owijek. Pole nadruku ma wysokość 12,7, 17,78 albo 27,94 mm. Owijki są przeznaczone do przewodów o średnicy od 2 do 8,07 mm. Owijki mają białe pole nadruku i czarny napis.\n\nMatowy winyl B-427 jest trudnopalny i odporny na działanie chemikaliów, oleju i wody. Znosi też wilgoć i zmienne warunki pogodowe. Zakres temperatury pracy wynosi od −70 do 70 °C, a materiał wytrzymuje zamrażarkę i ciekły azot. Wszystkie kasety mają numery M4 i działają w drukarkach M410, M510 i M511. Owijki obrotowe stosuje się w instalacjach elektrycznych i w okablowaniu teleinformatycznym.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/rotating-vinyl-wire-labels-for-m410-m510-m511-printers-cps-4661484',
   images: [
@@ -226,13 +226,13 @@ export const bradyM45Obrotowe427: Product = {
 
 export const bradyM45PermaSleeve7641: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4c-375-7641',
   slug: 'brady-m4c-375-7641',
-  name: 'Bezhalogenowe koszulki termokurczliwe Brady PermaSleeve M4C-375-7641 — kasety M4 do M410 i M510',
+  name: 'Bezhalogenowe koszulki termokurczliwe Brady PermaSleeve M4C-375-7641 — kasety M4 do M410, M510 i M511',
   seoTitle: 'Brady PermaSleeve M4C-375-7641 — koszulki bezhalogenowe do M510',
   seoDescription: 'Koszulki PermaSleeve B-7641 do M510: bezhalogenowa poliolefina o niskiej emisji dymu, skurcz 2:1, EN 45545-2. PN: M4C-375-7641, M4C-250-7641, M4C-187-7641.',
-  shortDescription: 'Brady PermaSleeve M4C-375-7641 i siedem innych kaset M4C zawierają ciągłą koszulkę termokurczliwą z bezhalogenowej poliolefiny B-7641 o niskiej emisji dymu. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady PermaSleeve M4C-375-7641 i siedem innych kaset M4C zawierają ciągłą koszulkę termokurczliwą z bezhalogenowej poliolefiny B-7641 o niskiej emisji dymu. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady PermaSleeve B-7641 zawierają ciągłą koszulkę termokurczliwą z poliolefiny. Materiał jest bezhalogenowy i przy spalaniu wydziela mało dymu. Koszulki służą do oznaczania przewodów w pojazdach transportu publicznego i na statkach. Drukarka nanosi czarny napis na koszulkę przed jej założeniem. Wydrukowaną koszulkę zakłada się na przewód, a potem obkurcza opalarką. Jej średnica maleje o połowę, a koszulka trwale obejmuje izolację.\n\nKażda kaseta ma 1,68 m koszulki. Długość pojedynczego oznacznika wybiera się przy projektowaniu etykiety. Dostępne są cztery średnice koszulki: 3,18, 4,75, 6,35 i 9,53 mm. Na płasko koszulka ma szerokość od 5,97 do 16,38 mm. Każda średnica jest w wersji białej i żółtej. Koszulki pasują do przewodów od 1,57 do 8,13 mm średnicy.\n\nKoszulka jest trudnopalna, samogasnąca i matowa. Jest odporna na chemikalia, korozję i wilgoć. Wytrzymuje też promieniowanie UV i działanie czynników atmosferycznych. Koszulka wytrzymuje temperaturę od −55 do 105 °C. Materiał spełnia EN 45545-2 (wymaganie 24, kategoria HL3) i BS 6853 (kategoria pojazdu 1A). Kasety M4C działają w drukarkach M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/permasleeve-low-smoke-zero-halogen-heat-shrink-labels-for-m410-m510-m511-printers-cps-4661493',
   images: [
@@ -288,13 +288,13 @@ export const bradyM45PermaSleeve7641: Product = {
 
 export const bradyM45QuickFlag: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4-214-483',
   slug: 'brady-m4-214-483',
-  name: 'Flagi kablowe Brady QuickFlag M4-214-483 — kaseta M4 do M410 i M510',
+  name: 'Flagi kablowe Brady QuickFlag M4-214-483 — kaseta M4 do M410, M510 i M511',
   seoTitle: 'Brady QuickFlag M4-214-483 — flagi na przewody do M510',
   seoDescription: 'Kaseta Brady QuickFlag do M510: 140 flag z poliestru B-483A na przewody 1,52–6,35 mm, mocny klej kauczukowy, od −40 do 120 °C. PN: M4-214-483, nr art. 170965.',
-  shortDescription: 'Brady QuickFlag M4-214-483 — kaseta ze 140 flagami z błyszczącego poliestru B-483A na przewody o średnicy od 1,52 do 6,35 mm. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady QuickFlag M4-214-483 — kaseta ze 140 flagami z błyszczącego poliestru B-483A na przewody o średnicy od 1,52 do 6,35 mm. Do drukarek Brady M410, M510 i M511.',
   description: 'Kaseta Brady QuickFlag M4-214-483 zawiera 140 wykrawanych etykiet z białego poliestru B-483A. Z każdej etykiety powstaje jednostronna flaga na przewodzie. Klejąca część etykiety zwęża się w stronę końca. Po sklejeniu krawędzie flagi pokrywają się, a klej nie wystaje poza flagę. Na zwężonej części jest bardzo mocny, trwały klej kauczukowy.\n\nEtykieta ma wymiary 25,4 × 50,8 mm. Pole nadruku ma 25,4 × 25,4 mm, a nadruk jest czarny na błyszczącym białym tle. Flaga pasuje do przewodów o średnicy od 1,52 do 6,35 mm. Na fladze mieści się opis obwodu albo kod kreskowy. Flagi stosuje się w instalacjach elektrycznych, w sieciach teleinformatycznych i przy ewidencji wyposażenia. W kasecie jest też taśma barwiąca R6000HF.\n\nPoliester B-483A wytrzymuje temperaturę od −40 do 120 °C. Znosi ścieranie, kontakt z chemikaliami, wilgoć, promieniowanie UV i czynniki atmosferyczne. Ma też odporność na korozję. Klej przylega również do podłoży chropowatych oraz tworzyw o niskiej energii powierzchniowej. Materiał jest uznany przez UL i zaakceptowany przez CSA. Kaseta M4 działa w drukarkach M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/m410-bmp41-m510-bmp51-bmp53-m511-quickflag-tapered-wire-cable-flag-labels-pid-m4-214-483',
   images: ['/images/products/brady/m4-214-483.png'],
@@ -329,13 +329,13 @@ export const bradyM45QuickFlag: Product = {
 
 export const bradyM45FlagiNylon499: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5-152-499',
   slug: 'brady-m5-152-499',
-  name: 'Flagi nylonowe na kable Brady M5-152-499 — kasety M4 i M5 do M410 i M510',
+  name: 'Flagi nylonowe na kable Brady M5-152-499 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady M5-152-499 — nylonowe flagi na kable do M510',
   seoDescription: 'Flagi kablowe z tkaniny nylonowej Brady B-499 do M510: agresywny klej akrylowy, od −40 do 90 °C, autoklaw i ciekły azot. PN: M5-152-499, M4-141-499.',
-  shortDescription: 'Brady M5-152-499 i M4-141-499 — kasety z etykietami na flagi kablowe z tkaniny nylonowej B-499 z agresywnym, trwałym klejem akrylowym. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M5-152-499 i M4-141-499 — kasety z etykietami na flagi kablowe z tkaniny nylonowej B-499 z agresywnym, trwałym klejem akrylowym. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady M5-152-499 i M4-141-499 zawierają wykrawane etykiety z tkaniny nylonowej B-499 do tworzenia flag na kablach. Etykieta okrąża przewód, a jej końce skleja się ze sobą. Powstaje flaga z napisem, którą widać z daleka. Nylon jest giętki i dobrze układa się na małych promieniach. Klej akrylowy jest agresywny i trwały. Przylega do podłoży gładkich i szorstkich, także do tworzyw o niskiej energii powierzchniowej.\n\nKaseta M5-152-499 ma 160 etykiet 38,1 × 31,75 mm. Kaseta M4-141-499 ma 90 dłuższych etykiet 25,4 × 57,15 mm. Napisy są czarne na matowej, białej tkaninie. Grubość tkaniny wynosi 0,166 mm. Flagi służą też do oznaczania elementów urządzeń i miejsc w magazynie.\n\nDopuszczalna temperatura pracy tkaniny B-499 to od −40 do 90 °C. Wytrzymuje autoklaw, zamrażarkę i ciekły azot. Jest odporna na ścieranie, chemikalia, wilgoć, UV i warunki atmosferyczne. Materiał jest bezhalogenowy (DIN VDE 0472 część 815). Posiada uznanie UL oraz akceptację CSA. Kasetę M5 obsługują drukarki M510 i M511, a kasetę M4 także M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/aggressive-adhesive-multi-purpose-nylon-flag-labels-ribbon-for-m410-m510-m511-printers-cps-3081042',
   images: [
@@ -381,13 +381,13 @@ export const bradyM45FlagiNylon499: Product = {
 
 export const bradyM45Zawieszki109: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5-12-109',
   slug: 'brady-m5-12-109',
-  name: 'Zawieszki na kable Brady M5-12-109 — kasety M4 i M5 do M410 i M510',
+  name: 'Zawieszki na kable Brady M5-12-109 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady M5-12-109 — zawieszki z polietylenu na kable do M510',
   seoDescription: 'Zawieszki Brady B-109 do M510: polietylen bez kleju, odporny na rozdarcie, mocowany opaskami kablowymi. PN: M5-12-109, M5-22-109, M4-230-109, M4-61-109.',
-  shortDescription: 'Brady M5-12-109 i trzy inne kasety M4 i M5 zawierają zawieszki z polietylenu B-109 bez kleju, odporne na rozdarcie. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M5-12-109 i trzy inne kasety M4 i M5 zawierają zawieszki z polietylenu B-109 bez kleju, odporne na rozdarcie. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady B-109 zawierają wykrawane zawieszki z białego polietylenu. Zawieszka nie ma warstwy kleju. Na kablu mocuje się ją dwiema opaskami kablowymi, których nie ma w kasecie. Po przecięciu opasek zawieszkę zdejmuje się i zastępuje nową. Zawieszki oznaczają kable wielożyłowe, wiązki przewodów i urządzenia.\n\nW rodzinie są cztery rozmiary. Kaseta M5-12-109 ma 80 zawieszek 76,2 × 19,05 mm z polem nadruku 55,88 × 19,05 mm. Kaseta M5-22-109 ma 180 zawieszek 25,4 × 76,2 mm. Kasety M4 mają po 80 zawieszek 12,7 × 76,2 mm albo 12,7 × 50,8 mm. Zawieszki są białe, matowe, z czarnym nadrukiem. Taśmę barwiącą R4300 umieszczono w tej samej kasecie.\n\nPolietylen B-109 ma grubość 0,216 mm i jest odporny na rozdarcie. Materiał znosi kontakt z chemikaliami i wilgocią. Jest też odporny na promieniowanie UV i zmienną pogodę. Zakres temperatury pracy zawieszek to od −40 do 49 °C. Zawieszki można zakładać w chłodzie. Zawieszki stosuje się również przy blokadach LOTO. Kasety M5 pasują do M510 i M511, a kasety M4 również do M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/multi-purpose-tear-resistant-tags-ribbon-for-m410-m510-m511-printers-cps-5221470',
   images: [
@@ -437,10 +437,10 @@ export const bradyM45FlagiFT: Product = {
   ...wspolne,
   id: 'brady-m5-01-425-ft',
   slug: 'brady-m5-01-425-ft',
-  name: 'Flagi na kable światłowodowe Brady M5-01-425-FT — kaseta M5 do M510',
+  name: 'Flagi na kable światłowodowe Brady M5-01-425-FT — kaseta M5 do M510 i M511',
   seoTitle: 'Brady M5-01-425-FT — flagi na kable światłowodowe do M510',
   seoDescription: 'Kaseta Brady M5-01-425-FT do M510: 200 flag z polipropylenu B-425D na cienkie kable światłowodowe i danych, od −80 do 130 °C. PN: M5-01-425-FT, nr art. 170860.',
-  shortDescription: 'Brady M5-01-425-FT — kaseta z 200 flagami z matowego polipropylenu B-425D na cienkie kable światłowodowe i teleinformatyczne. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5-01-425-FT — kaseta z 200 flagami z matowego polipropylenu B-425D na cienkie kable światłowodowe i teleinformatyczne. Do drukarek Brady M510 i M511.',
   description: 'Kaseta Brady M5-01-425-FT zawiera 200 wykrawanych etykiet z białego polipropylenu B-425D. Z każdej etykiety powstaje flaga na cienkim kablu światłowodowym albo kablu danych. Flaga odstaje od kabla, więc opis jest dobrze widoczny w gęstym okablowaniu. Trwały klej akrylowy mocno trzyma złożoną flagę. Flagi stosuje się także przy ewidencji i inwentaryzacji okablowania.\n\nEtykieta ma 30 × 40,01 mm, a pole nadruku 29,97 × 20,02 mm. Pole nadruku zajmuje więc połowę wysokości etykiety. Druga część etykiety służy do zamocowania flagi na kablu. Drukarka nanosi czarny napis na białe, matowe tło. Na fladze można wydrukować tekst albo kod kreskowy. Taśma barwiąca R4300 jest w kasecie.\n\nPolipropylen B-425D pracuje w temperaturze od −80 do 130 °C. Jest odporny na chemikalia i rozpuszczalniki, w tym oleje i wodę. Materiał jest bezhalogenowy zgodnie z DIN VDE 0472 część 815. Etykiety mają uznanie UL jako komponent oraz akceptację CSA. Kaseta ma numer M5, więc działa tylko w drukarkach M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/m510-bmp51-bmp53-m511-label-printer-fibre-optic-labels-pid-m5-01-425-ft',
   images: ['/images/products/brady/m5-01-425-ft.png'],
@@ -474,13 +474,13 @@ export const bradyM45FlagiFT: Product = {
 
 export const bradyM45PFlag: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4-1-425-fp',
   slug: 'brady-m4-1-425-fp',
-  name: 'Flagi na cienkie kable Brady P-flag M4-1-425-FP — kaseta M4 do M410 i M510',
+  name: 'Flagi na cienkie kable Brady P-flag M4-1-425-FP — kaseta M4 do M410, M510 i M511',
   seoTitle: 'Brady P-flag M4-1-425-FP — flagi na patchcordy do M510',
   seoDescription: 'Kaseta Brady M4-1-425-FP do M510: 120 etykiet P-flag z polipropylenu B-425D na patchcordy i cienkie kable, opis z dwóch stron. PN: M4-1-425-FP, nr art. 177005.',
-  shortDescription: 'Brady P-flag M4-1-425-FP — kaseta ze 120 etykietami z matowego polipropylenu B-425D, z których powstają flagi na patchcordach i cienkich kablach. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady P-flag M4-1-425-FP — kaseta ze 120 etykietami z matowego polipropylenu B-425D, z których powstają flagi na patchcordach i cienkich kablach. Do drukarek Brady M410, M510 i M511.',
   description: 'Kaseta Brady M4-1-425-FP zawiera 120 wykrawanych etykiet typu P-flag z białego polipropylenu B-425D. Etykietę owija się wokół cienkiego kabla, na przykład patchcordu, i skleja w flagę. Etykieta ma dwa pola nadruku. Drugi napis jest obrócony, więc po złożeniu opis widać z obu stron flagi.\n\nEtykieta ma 20,02 × 29,97 mm. Napis jest czarny, a tło białe i matowe. Grubość polipropylenu wynosi 0,1194 mm. Opis na odstającej fladze łatwo znaleźć wśród wielu patchcordów. Trwały klej akrylowy utrzymuje flagę na kablu. Flagi służą do oznaczania kabli teleinformatycznych i elementów urządzeń. Przydają się też przy ewidencji środków trwałych i inwentaryzacji.\n\nEtykiety z B-425D wytrzymują temperaturę od −80 do 130 °C. Większość popularnych chemikaliów, oleje i woda nie zmieniają wyglądu etykiety. Materiał jest odporny na rozpuszczalniki i dobrze przyjmuje nadruk termotransferowy. Na etykietach można drukować także kody kreskowe. Razem z etykietami kaseta zawiera taśmę barwiącą R4300. Kaseta ma numer M4 i działa w drukarkach M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/p-flag-matt-polypropylene-labels-for-m410-m510-m511-printers-pid-m4-1-425-fp',
   images: ['/images/products/brady/m4-1-425-fp.png'],

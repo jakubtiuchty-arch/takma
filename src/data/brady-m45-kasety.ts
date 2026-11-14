@@ -21,7 +21,7 @@ export const wspolne: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufactu
   isBestseller: false,
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m510'],
+  relatedProducts: ['brady-m510', 'brady-m511'],
   downloads: [],
   createdAt: '2026-11-13',
   updatedAt: '2026-11-13',
@@ -29,13 +29,13 @@ export const wspolne: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufactu
 
 export const bradyM45PermaSleeve: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5-375-1-342',
   slug: 'brady-m5-375-1-342',
-  name: 'Koszulki termokurczliwe Brady PermaSleeve M5-375-1-342 — kasety M4 i M5 do M410 i M510',
+  name: 'Koszulki termokurczliwe Brady PermaSleeve M5-375-1-342 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady PermaSleeve M5-375-1-342 — koszulki termokurczliwe do M510',
   seoDescription: 'Koszulki PermaSleeve B-342 do Brady M510: skurcz 3:1, przewody 1,17–8,13 mm, odcinki lub koszulka ciągła 2,13 m. PN: M5-375-1-342, M5-250-1-342, M4C-250-342.',
-  shortDescription: 'Brady PermaSleeve M5-375-1-342 i pozostałe kasety M4 i M5 z koszulkami termokurczliwymi z poliolefiny B-342. Skurcz 3:1, przewody od 1,17 do 8,13 mm. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady PermaSleeve M5-375-1-342 i pozostałe kasety M4 i M5 z koszulkami termokurczliwymi z poliolefiny B-342. Skurcz 3:1, przewody od 1,17 do 8,13 mm. Do drukarek Brady M410, M510 i M511.',
   description: 'W kasetach Brady PermaSleeve M4 i M5 jest termokurczliwa koszulka z poliolefiny B-342. Drukarka nanosi napis na spłaszczoną koszulkę. Oznaczoną koszulkę zakłada się na przewód, zanim zostanie zaciśnięta końcówka. Pod wpływem ciepła średnica koszulki zmniejsza się trzykrotnie, a koszulka ściśle obejmuje izolację.\n\nRodzina ma trzy formy. Kasety M5 mają 80 odcinków o długości 25,4 mm, a kasety M4 mają 80 odcinków o długości 19,05 mm. Kasety M4C mają 2,13 m koszulki ciągłej, białej albo żółtej. W tej formie długość oznacznika ustawia się w drukarce. Średnica koszulki wynosi 3,18, 4,75, 6,35 albo 9,53 mm. Łącznie rodzina obejmuje przewody o średnicy od 1,17 do 8,13 mm.\n\nPoliolefina B-342 jest trudnopalna i ma matowe wykończenie. Koszulka pracuje w temperaturze od −55 do 135 °C. Materiał spełnia SAE AS-81531 i SAE-AMS-DTL-23053/5 (klasa 1) oraz ma uznanie UL 224. Odcinki M5 są przeznaczone tylko do drukarek M510 i M511, a kasety M4 i M4C działają też w M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/permasleeve-heat-shrink-labels-for-m410-m510-m511-printers-cps-3081044',
   images: [
@@ -101,13 +101,13 @@ export const bradyM45PermaSleeve: Product = {
 
 export const bradyM45CleanLift: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5-103-498',
   slug: 'brady-m5-103-498',
-  name: 'Etykiety winylowe do przeklejania Brady CleanLift M5-103-498 — kasety M4 i M5 do M410 i M510',
+  name: 'Etykiety winylowe do przeklejania Brady CleanLift M5-103-498 — kasety M4 i M5 do M410, M510 i M511',
   seoTitle: 'Brady CleanLift M5-103-498 — etykiety do przeklejania do M510',
   seoDescription: 'Brady CleanLift B-498 do M510: etykiety z tkaniny winylowej z klejem do przeklejania, 8 rozmiarów. PN: M5-103-498, M4-11-498, M4-49-498, M4-91-498.',
-  shortDescription: 'Brady CleanLift M5-103-498 i kasety M4-498 — wykrawane etykiety z tkaniny winylowej B-498. Klej pozwala odkleić etykietę i nakleić ją ponownie. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady CleanLift M5-103-498 i kasety M4-498 — wykrawane etykiety z tkaniny winylowej B-498. Klej pozwala odkleić etykietę i nakleić ją ponownie. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady CleanLift zawierają wykrawane etykiety z tkaniny winylowej B-498. Klej kauczukowy pozwala odkleić etykietę i nakleić ją w innym miejscu. Dzięki temu oznaczenie można poprawić albo przenieść po zmianie w instalacji. Tkanina winylowa jest giętka i układa się na przewodach oraz zaokrąglonych powierzchniach. Wykończenie jest półbłyszczące, a nadruk czarny na białym tle.\n\nW rodzinie jest osiem rozmiarów, od 12,7 × 12,7 mm do 48,26 × 25,4 mm. Kaseta mieści od 100 do 240 etykiet. Sześć rozmiarów owija się wokół przewodu. Najmniejsze etykiety obejmują przewody od 4 mm, a etykieta 25,4 × 38,1 mm obejmuje przewody do 20,19 mm.\n\nTkanina B-498 ma uznanie UL i jest przeznaczona do pracy od −40 do 80 °C. Kaseta M5-103-498 z etykietami 25,4 × 31,75 mm działa tylko w M510 i M511. Siedem kaset M4 obsługuje także drukarka M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/repositionable-multi-purpose-vinyl-cloth-labels-for-m410-m510-m511-printers-cps-4661496',
   images: [
@@ -193,13 +193,13 @@ const WYKRAWANE_595: [string, string, string][] = [
 
 export const bradyM45Winyl: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5c-1500-595-wt-bk',
   slug: 'brady-m5c-1500-595-wt-bk',
-  name: 'Etykiety winylowe Brady M5C-1500-595-WT-BK — kasety B-595 na zewnątrz do M410 i M510',
+  name: 'Etykiety winylowe Brady M5C-1500-595-WT-BK — kasety B-595 na zewnątrz do M410, M510 i M511',
   seoTitle: 'Brady M5C-1500-595-WT-BK — etykiety winylowe B-595 do M510',
   seoDescription: 'Winyl Brady B-595 do M510 na zewnątrz: taśma 6,35–38,1 mm w 10 wersjach kolorów i etykiety wykrawane, BS 5609. PN: M5C-1500-595-WT-BK, M4C-1000-595-YL-BK.',
-  shortDescription: 'Brady M5C-1500-595-WT-BK i pozostałe kasety M4 i M5 z winylem B-595 do pracy na zewnątrz. Taśma ciągła od 6,35 do 38,1 mm w 10 wersjach kolorów oraz etykiety wykrawane. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady M5C-1500-595-WT-BK i pozostałe kasety M4 i M5 z winylem B-595 do pracy na zewnątrz. Taśma ciągła od 6,35 do 38,1 mm w 10 wersjach kolorów oraz etykiety wykrawane. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady z winylem B-595 służą do trwałych oznaczeń w zakładzie i na zewnątrz budynków. Winyl ma błyszczącą powierzchnię i mocny, trwały klej akrylowy. Etykiety są przeznaczone do trudnych warunków. Materiał spełnia wymagania BS 5609, sekcje 2 i 3. Etykiety pracują w zakresie temperatur od −40 do 82 °C.\n\nWiększość kaset ma taśmę ciągłą o szerokości od 6,35 do 38,1 mm. Długość etykiety ustawia się w drukarce. Taśma kolorowa i biała ma 7,62 m, a przezroczysta 6,1 m. Szerokości 12,7, 19,05, 25,4 i 38,1 mm są w 10 wersjach kolorów, także z czerwonym nadrukiem na białym tle. Na przezroczystym tle nadruk jest czarny albo biały. W rodzinie jest też sześć kaset z białymi etykietami wykrawanymi, od 12,7 × 12,7 mm do 25,4 × 76,2 mm.\n\nKaseta M5C-1500-595-WT-BK z białą taśmą 38,1 mm jest w zestawach drukarki M510. Kasety z numerem M5 lub M5C współpracują z M510 i M511. Kasety M4 i M4C można stosować w M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/all-weather-permanent-adhesive-vinyl-labels-for-m410-m510-m511-printers-cps-3069495',
   images: [
@@ -262,13 +262,13 @@ export const bradyM45Winyl: Product = {
 
 export const bradyM45ToughBond422: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m5c-1500-422',
   slug: 'brady-m5c-1500-422',
-  name: 'Etykiety poliestrowe Brady ToughBond M5C-1500-422 — kasety B-422 do M410 i M510',
+  name: 'Etykiety poliestrowe Brady ToughBond M5C-1500-422 — kasety B-422 do M410, M510 i M511',
   seoTitle: 'Brady ToughBond M5C-1500-422 — etykiety poliestrowe do M510',
   seoDescription: 'Poliester Brady ToughBond B-422 do M510: taśma 9,53–38,1 mm × 7,62 m lub etykiety wykrawane, od −40 do 100 °C. PN: M5C-1500-422, M4C-1000-422, M4-49-422.',
-  shortDescription: 'Brady ToughBond M5C-1500-422 i kasety M4-422 — etykiety z białego poliestru B-422 z agresywnym klejem akrylowym. Taśma ciągła albo etykiety wykrawane. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady ToughBond M5C-1500-422 i kasety M4-422 — etykiety z białego poliestru B-422 z agresywnym klejem akrylowym. Taśma ciągła albo etykiety wykrawane. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady ToughBond B-422 zawierają etykiety z białego, błyszczącego poliestru. Materiał ma agresywny, trwały klej akrylowy. Etykieta mocno trzyma się powierzchni chropowatych i tworzyw sztucznych. Dlatego nadaje się do oznaczania obudów, paneli, części i środków trwałych. Nadruk jest czarny, a na poliestrze dobrze drukują się teksty, symbole i kody kreskowe.\n\nPoliester B-422 jest bezhalogenowy i odporny na wysoką temperaturę. Pracuje w zakresie od −40 do 100 °C. Materiał ma akceptację CSA i uznanie UL.\n\nSześć kaset ma taśmę ciągłą o długości 7,62 m. Szerokość taśmy wynosi 9,53, 12,07, 12,7, 15,88, 25,4 albo 38,1 mm, a długość etykiety określa się przy projektowaniu. Pięć kaset M4 ma etykiety wykrawane, od 12,7 × 12,7 mm do 19,05 × 38,1 mm, od 180 do 480 sztuk w kasecie. Najszersza kaseta, M5C-1500-422 (38,1 mm), działa w drukarkach M510 i M511. Pozostałe kasety mają numery M4 i M4C, więc pasują też do M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/aggressive-adhesive-multi-purpose-polyester-labels-for-m410-m510-m511-printers-cps-4661490',
   images: [
@@ -325,13 +325,13 @@ export const bradyM45ToughBond422: Product = {
 
 export const bradyM45BradyGrip: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4c-500-414',
   slug: 'brady-m4c-500-414',
-  name: 'Etykiety BradyGrip Brady M4C-500-414 na opaski VELCRO — kasety M4C do M410 i M510',
+  name: 'Etykiety BradyGrip Brady M4C-500-414 na opaski VELCRO — kasety M4C do M410, M510 i M511',
   seoTitle: 'Brady BradyGrip M4C-500-414 — etykiety na opaski VELCRO do M510',
   seoDescription: 'Brady BradyGrip B-414 do M510: etykiety z haczykami VELCRO na opaski wiązek kabli, 6,35–19,05 mm × 3,66 m. PN: M4C-250-414, M4C-500-414, M4C-750-414.',
-  shortDescription: 'Brady BradyGrip M4C-250-414, M4C-500-414 i M4C-750-414 — kasety z taśmą z poliestru B-414 z haczykami VELCRO do oznaczania wiązek kabli. Do drukarek Brady M410 i M510, także M511.',
+  shortDescription: 'Brady BradyGrip M4C-250-414, M4C-500-414 i M4C-750-414 — kasety z taśmą z poliestru B-414 z haczykami VELCRO do oznaczania wiązek kabli. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady BradyGrip M4C-414 zawierają taśmę z poliestru B-414 z haczykami VELCRO na spodniej stronie. Materiał nie ma kleju. Wydrukowaną etykietę dociska się do opaski z pętelkami, np. VELCRO ONE-WRAP, owiniętej wokół wiązki przewodów. Haczyki trzymają etykietę na opasce.\n\nEtykietę można zdjąć i założyć ponownie w innym miejscu. Po zmianach w szafie albo w trasie kablowej wystarczy wydrukować nowy opis i wymienić samą etykietę. Opaska zostaje na wiązce. Opaski nie wchodzą w skład kasety.\n\nTaśma ma szerokość 6,35, 12,7 albo 19,05 mm i długość 3,66 m. Długość pojedynczej etykiety wybiera się przy projektowaniu. Tło etykiety jest białe i matowe, a nadruk czarny. Dopuszczalna temperatura pracy wynosi od −40 do 50 °C. Wszystkie trzy kasety mają numery M4C i działają w drukarkach M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/bradygrip-print-on-hook-labels-featuring-velcro-brand-hook-m410-m510-m511-printers-cps-4022802',
   images: [
@@ -376,13 +376,13 @@ export const bradyM45BradyGrip: Product = {
 
 export const bradyM45ToughBond483: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   id: 'brady-m4-60-483',
   slug: 'brady-m4-60-483',
-  name: 'Etykiety poliestrowe Brady ToughBond M4-60-483 — kasety B-483A z klejem kauczukowym do M410 i M510',
+  name: 'Etykiety poliestrowe Brady ToughBond M4-60-483 — kasety B-483A z klejem kauczukowym do M410, M510 i M511',
   seoTitle: 'Brady ToughBond M4-60-483 — etykiety z mocnym klejem do M510',
   seoDescription: 'Poliester Brady ToughBond B-483A z mocnym klejem kauczukowym do M510: 3 rozmiary etykiet wykrawanych, do 120 °C. PN: M4-60-483, M4-61-483, M4-47-483.',
-  shortDescription: 'Brady ToughBond M4-60-483, M4-61-483 i M4-47-483 — kasety z wykrawanymi etykietami z poliestru B-483A z bardzo mocnym klejem kauczukowym. Do drukarek Brady M410 i M510, także M511.',
+  shortDescription: 'Brady ToughBond M4-60-483, M4-61-483 i M4-47-483 — kasety z wykrawanymi etykietami z poliestru B-483A z bardzo mocnym klejem kauczukowym. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady ToughBond M4-483 zawierają wykrawane etykiety z białego poliestru B-483A. Trwały klej kauczukowy ma bardzo dużą siłę przylegania. Etykieta trzyma się także powierzchni chropowatych i tworzyw sztucznych. Etykiety służą do oznaczania urządzeń, obudów, regałów i części.\n\nBiały poliester ma błyszczącą powierzchnię i czarny nadruk. Materiał jest odporny na wysoką i niską temperaturę. Etykiety wytrzymują temperaturę od −40 do 120 °C. Materiał B-483A uzyskał uznanie UL i akceptację CSA.\n\nW rodzinie są trzy rozmiary etykiet: 25,4 × 50,8 mm (140 sztuk w kasecie), 12,7 × 50,8 mm (80 sztuk) i 25,4 × 12,7 mm (480 sztuk). Długie etykiety mieszczą kilka wierszy tekstu albo kod kreskowy z opisem. Etykiety mają stały rozmiar, więc oznaczenia w całej instalacji są jednakowe. Każda z trzech kaset ma numer M4, więc obsługują je drukarki M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/ultra-aggressive-adhesive-multi-purpose-polyester-labels-for-m410-m510-m511-printers-cps-4661495',
   images: [
@@ -427,14 +427,14 @@ export const bradyM45ToughBond483: Product = {
 
 export const bradyM45FreezerBondz: Product = {
   ...wspolne,
-  relatedProducts: ['brady-m510', 'brady-m410'],
+  relatedProducts: ['brady-m510', 'brady-m511', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5-113-490',
   slug: 'brady-m5-113-490',
-  name: 'Etykiety kriogeniczne Brady FreezerBondz M5-113-490 — kasety B-490 do M410 i M510',
+  name: 'Etykiety kriogeniczne Brady FreezerBondz M5-113-490 — kasety B-490 do M410, M510 i M511',
   seoTitle: 'Brady FreezerBondz M5-113-490 — etykiety do ciekłego azotu, M510',
   seoDescription: 'Brady FreezerBondz B-490 do M510: matowy poliester do zamrażarek i ciekłego azotu, od −196 do 130 °C. PN: M5-113-490, M5-112-490, M5-114-490, M4-124-490.',
-  shortDescription: 'Brady FreezerBondz M5-113-490 i pozostałe kasety B-490 — wykrawane etykiety z matowego poliestru do zamrażarek i ciekłego azotu, od −196 do 130 °C. Do drukarek Brady M410 i M510.',
+  shortDescription: 'Brady FreezerBondz M5-113-490 i pozostałe kasety B-490 — wykrawane etykiety z matowego poliestru do zamrażarek i ciekłego azotu, od −196 do 130 °C. Do drukarek Brady M410, M510 i M511.',
   description: 'Kasety Brady FreezerBondz zawierają wykrawane etykiety z matowego poliestru B-490. Etykiety służą do oznaczania próbek, które trafiają do zamrażarek i do ciekłego azotu. Agresywny, trwały klej akrylowy jest przeznaczony do naklejania w niskiej temperaturze. Materiał pracuje w zakresie od −196 do 130 °C i nadaje się do przechowywania kriogenicznego.\n\nNa matowym poliestrze drukuje się tekst i kody kreskowe. Etykiety są białe, a nadruk czarny. Nadają się na probówki, fiolki, pudełka i statywy przechowywane w niskiej temperaturze.\n\nW rodzinie jest sześć rozmiarów. Kasety M5 mają etykiety 31,75 × 9,53 mm (360 sztuk), 44,45 × 25,4 mm (180), 38,1 × 55,88 mm (140) i 38,1 × 95,25 mm (80 sztuk). Kasety M4 mają etykiety 12,7 × 41,91 mm i 45,72 × 15,24 mm, po 180 sztuk. Etykiety M5 drukuje się na M510 i M511. Kasety M4 można stosować również w M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/freezerbondz-cryogenic-matte-polyester-labels-for-m410-m510-m511-printers-cps-4661494',
   images: [
